@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento de otras cuantizaciones GGUF del mismo mod
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/FedericoSciuca/Qwen3.6-35B-A3B-depthaware-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Repositorio Hugging Face del modelo: https://huggingface.co/FedericoSciuca/Qwen3.6-35B-A3B-depthaware-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio oficial de Qwen3.6 en GitHub: https://github.com/QwenLM/Qwen3.6
 - Herramienta quantprobe: https://github.com/FedericoTs/quantprobe
 - Preregistro #103 (medición de fragilidad): https://github.com/FedericoTs/quantprobe/blob/master/preregistrations/2026-08-18-qwen36-hybrid-moe-fragility.md

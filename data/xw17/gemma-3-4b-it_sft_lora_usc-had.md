@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-3-4b-it_SFT_lora_usc-had` es un modelo publicado en HuggingFace por el usuario xw17 que, por su nombre y por el reducido tamano del repositorio (0,1 GB), parece consistir en un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base `google/gemma-3-4b-it`. El identificador sugiere que el ajuste se ha realizado sobre un conjunto de datos denominado "usc-had", si bien no se aporta ninguna confirmacion documental al respecto.
+`xw17/gemma-3-4b-it_SFT_lora_usc-had` es un modelo publicado en Hugging Face por el usuario xw17 que, por su nombre y por el reducido tamano del repositorio (0,1 GB), parece consistir en un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base `google/gemma-3-4b-it`. El identificador sugiere que el ajuste se ha realizado sobre un conjunto de datos denominado "usc-had", si bien no se aporta ninguna confirmacion documental al respecto.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no ha sido completada: todos los campos (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) figuran como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la fecha de creacion indicada en los metadatos es 2026-10-02, posterior a la fecha de la mayoria de lanzamientos conocidos.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no ha sido completada: todos los campos (desarrollador, datos de entrenamiento, licencia, idiomas, evaluacion) figuran como "[More Information Needed]". El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la fecha de creacion indicada en los metadatos es 2026-10-02, posterior a la fecha de la mayoria de lanzamientos conocidos.
 
 Dado que se trata de un ajuste derivado de Gemma 3 4B IT, sus caracteristicas fundamentales (arquitectura, contexto, capacidades) deben entenderse como heredadas del modelo base de Google, mientras que cualquier especificidad del ajuste (datos, hiperparametros, licencia, rendimiento) no esta disponible en la informacion proporcionada.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/gemma-3-4b-it_SFT_lora_usc-had | ~4B (base) + adaptador LoRA | 128K (base) | No disponible | HuggingFace (0 descargas) |
-| google/gemma-3-4b-it | ~4B | 128K | Gemma Terms of Use | HuggingFace (oficial) |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | HuggingFace (oficial) |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32K (extensible a 128K) | Apache 2.0 | HuggingFace (oficial) |
+| xw17/gemma-3-4b-it_SFT_lora_usc-had | ~4B (base) + adaptador LoRA | 128K (base) | No disponible | Hugging Face (0 descargas) |
+| google/gemma-3-4b-it | ~4B | 128K | Gemma Terms of Use | Hugging Face (oficial) |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | Hugging Face (oficial) |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32K (extensible a 128K) | Apache 2.0 | Hugging Face (oficial) |
 
 Nota: los datos de parametros, contexto y licencia de los modelos comparados provienen de sus fichas publicas oficiales; el rendimiento comparado no puede evaluarse por falta de benchmarks del modelo analizado.
 
@@ -86,7 +86,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos comparados pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_usc-had
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_usc-had
 - Modelo base Gemma 3 4B IT: https://huggingface.co/google/gemma-3-4b-it
 - Informe tecnico de Gemma 3: https://arxiv.org/abs/2503.19786
 - Referencia citada en la model card (calculadora de impacto de carbono, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700

@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible comparaciones numericas con mod
 
 | Modelo | Parametros | Contexto de audio | MAEB-30 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CLAP2-L | 340,1M | duracion arbitraria (eval. 30 s) | 53,6 | Apache 2.0 | HuggingFace (OpenCLIP y Transformers) |
-| CLAP2-M | 152,8M | duracion arbitraria (eval. 30 s) | 52,3 | Apache 2.0 | HuggingFace |
-| CLAP2-S | 103,9M | duracion arbitraria (eval. 30 s) | 51,8 | Apache 2.0 | HuggingFace |
-| CLAP2-XS | 48,3M | duracion arbitraria (eval. 30 s) | 49,1 | Apache 2.0 | HuggingFace |
+| CLAP2-L | 340,1M | duracion arbitraria (eval. 30 s) | 53,6 | Apache 2.0 | Hugging Face (OpenCLIP y Transformers) |
+| CLAP2-M | 152,8M | duracion arbitraria (eval. 30 s) | 52,3 | Apache 2.0 | Hugging Face |
+| CLAP2-S | 103,9M | duracion arbitraria (eval. 30 s) | 51,8 | Apache 2.0 | Hugging Face |
+| CLAP2-XS | 48,3M | duracion arbitraria (eval. 30 s) | 49,1 | Apache 2.0 | Hugging Face |
 
 La comparativa con modelos audio-texto de otros desarrolladores no esta disponible en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ La comparativa con modelos audio-texto de otros desarrolladores no esta disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laion/clap2-large-audioxl-s1B
+- Hugging Face: https://huggingface.co/laion/clap2-large-audioxl-s1B
 - CLAP2-M: https://huggingface.co/laion/clap2-medium-audioxl-s1B
 - CLAP2-S: https://huggingface.co/laion/clap2-small-audioxl-s1B
 - CLAP2-XS: https://huggingface.co/laion/clap2-xs-audioxl-s1B

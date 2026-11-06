@@ -78,6 +78,6 @@ No se dispone de una comparativa directa con otros modelos NER generativos para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed123
+- Repositorio Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed123
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - No se proporcionan enlaces adicionales (papers, blogs o demos) en la información disponible.

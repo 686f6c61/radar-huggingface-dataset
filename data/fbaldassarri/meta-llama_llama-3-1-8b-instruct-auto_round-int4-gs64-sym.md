@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (Llama 3.1 8B Instruct INT4 AutoRound) | 8B (2,05B en safetensors empaquetados) | 128k (heredado) | INT4 gs64 sim, WoQ | Llama 3.1 Community | HuggingFace, 23 descargas |
-| meta-llama/Llama-3.1-8B-Instruct (original) | 8B | 128k | bf16/fp16 | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Llama 3.1 8B Instruct GPTQ/AWQ (comunidad) | 8B | 128k | INT4 GPTQ/AWQ | Llama 3.1 Community | Múltiples repos en HuggingFace |
+| Este artefacto (Llama 3.1 8B Instruct INT4 AutoRound) | 8B (2,05B en safetensors empaquetados) | 128k (heredado) | INT4 gs64 sim, WoQ | Llama 3.1 Community | Hugging Face, 23 descargas |
+| meta-llama/Llama-3.1-8B-Instruct (original) | 8B | 128k | bf16/fp16 | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Llama 3.1 8B Instruct GPTQ/AWQ (comunidad) | 8B | 128k | INT4 GPTQ/AWQ | Llama 3.1 Community | Múltiples repos en Hugging Face |
 | Llama 3.1 8B Instruct GGUF Q4_K_M (comunidad) | 8B | 128k | Q4_K_M (llama.cpp) | Llama 3.1 Community | Amplia, compatible con Ollama/llama.cpp |
 
 La diferencia clave frente a las alternativas es el backend: AutoRound está optimizado para hardware Intel, mientras que GPTQ/AWQ apuntan a GPU y GGUF a inferencia CPU/GPU vía llama.cpp. No hay datos de rendimiento comparativo publicados para este artefacto concreto.
@@ -83,7 +83,7 @@ La diferencia clave frente a las alternativas es el backend: AutoRound está opt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_round-int4-gs64-sym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-Instruct-auto_round-int4-gs64-sym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Intel AutoRound (repositorio oficial): https://github.com/intel/auto-round
 - Pipeline de cuantización referenciado por el autor: https://git.epicdynamic.com/auto-round-pipeline

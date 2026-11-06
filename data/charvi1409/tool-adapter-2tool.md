@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tool-adapter-2tool es un adaptador LoRA de rango 16 entrenado sobre Qwen/Qwen3-0.6B por el usuario Charvi1409 y publicado en HuggingFace. No es un modelo de generacion de texto abierta: su funcion es clasificar cada turno del usuario dentro de una llamada de cualificacion de leads de fecundacion in vitro (IVF) en una de dos llamadas de herramienta, `acknowledge()` o `fallback()`. La primera cubre saludos, acuerdo o continuacion, confirmacion de un valor que ya esta presente en el estado actual, rechazo puro de la oferta y confirmaciones de identidad del tipo `ji haan` / `ji nahi`. La segunda absorbe todo lo demas: respuestas a preguntas de elicitacion de slots, negativas acompanadas de informacion nueva, correcciones, peticiones de conocimiento, traspaso a humano y turnos ambiguos o fuera de tema.
+tool-adapter-2tool es un adaptador LoRA de rango 16 entrenado sobre Qwen/Qwen3-0.6B por el usuario Charvi1409 y publicado en Hugging Face. No es un modelo de generacion de texto abierta: su funcion es clasificar cada turno del usuario dentro de una llamada de cualificacion de leads de fecundacion in vitro (IVF) en una de dos llamadas de herramienta, `acknowledge()` o `fallback()`. La primera cubre saludos, acuerdo o continuacion, confirmacion de un valor que ya esta presente en el estado actual, rechazo puro de la oferta y confirmaciones de identidad del tipo `ji haan` / `ji nahi`. La segunda absorbe todo lo demas: respuestas a preguntas de elicitacion de slots, negativas acompanadas de informacion nueva, correcciones, peticiones de conocimiento, traspaso a humano y turnos ambiguos o fuera de tema.
 
 Una decision de diseno destacable es la ausencia deliberada de una herramienta `set_state()`: las respuestas de elicitacion de slots se enrutan a `fallback()` en lugar de escribir directamente en el estado. El adaptador se entrena sobre 1614 ejemplos etiquetados (296 `acknowledge()` y 1318 `fallback()`, es decir, un prior de clase de aproximadamente el 82% para `fallback()`), con 100 filas de validacion sin colisiones con entrenamiento y 100 flujos de llamada reales multi-turno.
 
@@ -81,8 +81,8 @@ No se han encontrado en la busqueda web modelos comparables (clasificadores de t
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tool-adapter-2tool (adaptador) | 0,6B (base) + LoRA rango 16 | No disponible (entreno a 768 tokens) | 81,0% en `valid.jsonl`, 95,0% en `valid_flows.jsonl` | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3-0.6B sin adaptador | 0,6B | No disponible en la informacion proporcionada | No disponible (no se reporta linea base sin adaptador) | No disponible en la informacion proporcionada | HuggingFace |
+| tool-adapter-2tool (adaptador) | 0,6B (base) + LoRA rango 16 | No disponible (entreno a 768 tokens) | 81,0% en `valid.jsonl`, 95,0% en `valid_flows.jsonl` | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3-0.6B sin adaptador | 0,6B | No disponible en la informacion proporcionada | No disponible (no se reporta linea base sin adaptador) | No disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de clasificacion de intenciones | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se han encontrado en la busqueda web modelos comparables (clasificadores de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charvi1409/tool-adapter-2tool
+- Modelo en Hugging Face: https://huggingface.co/Charvi1409/tool-adapter-2tool
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Libreria MLX LM (usada en el ejemplo de codigo): https://github.com/ml-explore/mlx-lm
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos (repositorios de jailbreaks, hilos de Reddit sobre ChatGPT, discusiones sobre limites de uso de ChatGPT Plus) no guardan relacion con el adaptador. No se han encontrado papers, blogs, repositorios ni demos adicionales.

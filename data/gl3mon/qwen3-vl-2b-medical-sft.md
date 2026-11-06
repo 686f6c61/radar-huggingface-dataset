@@ -68,5 +68,5 @@ No se dispone de información suficiente para una comparativa rigurosa. Como ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GL3MON/qwen3-vl-2b-medical-sft
+- Hugging Face: https://huggingface.co/GL3MON/qwen3-vl-2b-medical-sft
 - Paper de referencia mencionado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700 (sobre cálculo de impacto ambiental, no relacionado con el modelo).

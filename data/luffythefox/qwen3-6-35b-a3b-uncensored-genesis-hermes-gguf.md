@@ -48,10 +48,10 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 ## Comparativa con modelos similares
 | Modelo | Arquitectura | Parametros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes | MoE, image-text-to-text | ~34,66B | no disponible | Apache 2.0 | GGUF, HuggingFace |
-| Qwen2.5-32B-Instruct (base) | Dense Transformer | ~32B | 128K | Apache 2.0 | GGUF, Safetensors, HuggingFace |
-| Qwen3-32B-A3B (oficial) | MoE, image-text-to-text | ~34,66B | 131K (estimado) | Apache 2.0 | GGUF, Safetensors, HuggingFace |
-| Hermes-2.5-72B (Mistral fine-tune) | Dense Transformer | ~72B | 8K-32K | Apache 2.0 | GGUF, Safetensors, HuggingFace |
+| Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes | MoE, image-text-to-text | ~34,66B | no disponible | Apache 2.0 | GGUF, Hugging Face |
+| Qwen2.5-32B-Instruct (base) | Dense Transformer | ~32B | 128K | Apache 2.0 | GGUF, Safetensors, Hugging Face |
+| Qwen3-32B-A3B (oficial) | MoE, image-text-to-text | ~34,66B | 131K (estimado) | Apache 2.0 | GGUF, Safetensors, Hugging Face |
+| Hermes-2.5-72B (Mistral fine-tune) | Dense Transformer | ~72B | 8K-32K | Apache 2.0 | GGUF, Safetensors, Hugging Face |
 
 ## Limitaciones y advertencias
 - El modelo carece de filtros de seguridad (uncensored), lo que implica riesgo elevado de generar contenido sesgado, ofensivo o no verificado sin supervisión humana.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - El uso comercial está permitido por la licencia Apache 2.0, pero se recomienda auditar los outputs para cumplimiento normativo en entornos regulados.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF
+- Hugging Face: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-GGUF
 - Base model: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Hermes finetune referencia: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
 - Script de cuantización: https://pastebin.com/hXhcMJn9

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio publica una cuantización GGUF de un modelo de lenguaje multimodal de gran tamaño presentado por el autor como «Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO». Los metadatos de safetensors indican 176.943.899.520 parámetros (unos 176,9 mil millones), arquitectura MoE con componentes de visión (`pipeline_tag: image-text-to-text`) y una variante «abliterated», es decir, con los mecanismos de rechazo eliminados deliberadamente mediante edición de direcciones de activación. El autor es el usuario de HuggingFace `cc1244578151`, que parte de una cuantización previa atribuida a `SC117`.
+Este repositorio publica una cuantización GGUF de un modelo de lenguaje multimodal de gran tamaño presentado por el autor como «Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO». Los metadatos de safetensors indican 176.943.899.520 parámetros (unos 176,9 mil millones), arquitectura MoE con componentes de visión (`pipeline_tag: image-text-to-text`) y una variante «abliterated», es decir, con los mecanismos de rechazo eliminados deliberadamente mediante edición de direcciones de activación. El autor es el usuario de Hugging Face `cc1244578151`, que parte de una cuantización previa atribuida a `SC117`.
 
 El paquete no aporta mejoras de arquitectura propias: el peso real del repositorio está en la cuantización mixta GSQ-RCO (atribuida a IST-DASLab), el calibrado con imatrix y un sistema de *prompting* estructurado bautizado como «Turbo Brilliance» y «AI Constructs», que consiste en inyectar entre 2.000 y 4.000 tokens de instrucciones predefinidas antes del *prompt* del usuario para condicionar el modo de razonamiento. Es relevante ahora por dos motivos prácticos: permite ejecutar un MoE de ~177 B en hardware de consumo mediante GGUF y *offload*, y sirve como caso de estudio de cuantización mixta aplicada a modelos grandes.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
 | Este modelo (Turbo-Brilliance GGUF) | ~176,9 B totales (activos no disponibles) | No disponible | Apache-2.0 | GGUF, 84,8 GB, 0 descargas |
-| Modelo base `SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF` | No disponible | No disponible | No disponible | GGUF en HuggingFace |
+| Modelo base `SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF` | No disponible | No disponible | No disponible | GGUF en Hugging Face |
 | Otros MoE abiertos de ~170-200 B | No disponible en la información proporcionada | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de modelos comparables dentro de la información proporcionada. El nombre del modelo remite a una familia «Qwen», pero no se ha podido confirmar en la documentación aportada que exista una release oficial con esa denominación ni cuál es su linaje exacto, por lo que cualquier comparación numérica con la familia Qwen, Llama o Mistral sería especulativa.
@@ -90,6 +90,6 @@ No se dispone de datos verificables de modelos comparables dentro de la informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cc1244578151/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/cc1244578151/Qwen3.8-Flash-Next-Abliterated-Uncensored-Turbo-Brilliance-50x-Reasoning-Instruct-GSQ-RCO-GGUF
 - Modelo base declarado: https://huggingface.co/SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF
 - La búsqueda web realizada no devolvió enlaces relevantes (papers, blogs, repos o demos) sobre este modelo.

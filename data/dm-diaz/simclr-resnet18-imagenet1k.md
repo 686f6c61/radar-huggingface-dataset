@@ -67,7 +67,7 @@ No se dispone de información comparativa con otros modelos de representación v
 
 ## Enlaces
 
-- [HuggingFace: DM-Diaz/SimCLR-ResNet18-ImageNet1K](https://huggingface.co/DM-Diaz/SimCLR-ResNet18-ImageNet1K)
+- [Hugging Face: DM-Diaz/SimCLR-ResNet18-ImageNet1K](https://huggingface.co/DM-Diaz/SimCLR-ResNet18-ImageNet1K)
 - [Dataset: evanarlian/imagenet_1k_resized_256](https://huggingface.co/datasets/evanarlian/imagenet_1k_resized_256)
 - [arXiv: 2607.19316](https://arxiv.org/abs/2607.19316) (no verificado, según la model card)
 - [DOI: 10.32470/0416gfsq](https://doi.org/10.32470/0416gfsq) (según la model card)

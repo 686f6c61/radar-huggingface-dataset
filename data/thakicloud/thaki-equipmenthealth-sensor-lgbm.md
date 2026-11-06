@@ -77,7 +77,7 @@ Test (vehículos 17/18, 11.192 lecturas, no ciego): macro F1 0,9420, danger reca
 
 | Modelo | Tipo | Parámetros | Contexto | Macro F1 (dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Thaki-EquipmentHealth-Sensor-LGBM | LightGBM tabular | no aplica (1,08 MB) | ventana de 5 lecturas previas | 0,9432 | cc-by-4.0 | HuggingFace |
+| Thaki-EquipmentHealth-Sensor-LGBM | LightGBM tabular | no aplica (1,08 MB) | ventana de 5 lecturas previas | 0,9432 | cc-by-4.0 | Hugging Face |
 | Regresión logística (línea base del autor) | Modelo lineal tabular | no disponible | ventana de 5 lecturas previas | 0,9182 | no disponible | línea base interna, no publicada como modelo |
 | Clase mayoritaria (línea base trivial) | Predictor constante | no aplica | no aplica | 0,1635 | no aplica | línea base interna |
 
@@ -98,7 +98,7 @@ No se dispone de información sobre otros modelos públicos comparables de mante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ThakiCloud/Thaki-EquipmentHealth-Sensor-LGBM
+- Hugging Face: https://huggingface.co/ThakiCloud/Thaki-EquipmentHealth-Sensor-LGBM
 - Model card en coreano: [MODEL_CARD.ko.md](./MODEL_CARD.ko.md) (referenciado en el repositorio)
 - Dataset de origen: AI Hub dataset 71802 (OHT/AGV equipment), https://aihub.or.kr
 - Ficheros del repositorio: model.txt, feature_schema.json, preprocess_config.json, eqhealth.py, eval_summary.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joh-nson/mae-checkpoint86` es un repositorio de HuggingFace publicado por el usuario joh-nson que contiene una implementación compacta y personalizada en PyTorch de un modelo denominado "Mae" orientado a tareas de *matching*. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), revisión de código y experimentos controlados de pequeña escala. El autor lo indica explícitamente en la model card.
+`joh-nson/mae-checkpoint86` es un repositorio de Hugging Face publicado por el usuario joh-nson que contiene una implementación compacta y personalizada en PyTorch de un modelo denominado "Mae" orientado a tareas de *matching*. No se trata de un modelo preentrenado listo para producción, sino de un artefacto de código con un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), revisión de código y experimentos controlados de pequeña escala. El autor lo indica explícitamente en la model card.
 
 La arquitectura declarada es "Mae" en escala *base*, con atención dilatada (*dilated attention*), fusión con compuertas (*gated fusion*), activación ReLU y normalización por lotes (*batch normalization*). El checkpoint en formato safetensors contiene únicamente 33.088 parámetros totales, lo que confirma que se trata de un modelo de juguete o esqueleto, no de un transformer de gran escala.
 
@@ -74,4 +74,4 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joh-nson/mae-checkpoint86
+- Hugging Face: https://huggingface.co/joh-nson/mae-checkpoint86

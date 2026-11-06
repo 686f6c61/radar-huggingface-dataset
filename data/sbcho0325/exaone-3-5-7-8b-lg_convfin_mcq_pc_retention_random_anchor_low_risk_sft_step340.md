@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EXAONE-3.5-7.8B-Instruct (base) | 7.8B | 32K | Propietaria de LG AI Research | HuggingFace |
-| Este adaptador LoRA | 7.8B + adaptador | 32K | No disponible | HuggingFace |
-| Llama-3.1-8B-Instruct | 8B | 128K | Meta Community License | HuggingFace |
-| Mistral-7B-Instruct | 7B | 32K | Apache 2.0 | HuggingFace |
+| EXAONE-3.5-7.8B-Instruct (base) | 7.8B | 32K | Propietaria de LG AI Research | Hugging Face |
+| Este adaptador LoRA | 7.8B + adaptador | 32K | No disponible | Hugging Face |
+| Llama-3.1-8B-Instruct | 8B | 128K | Meta Community License | Hugging Face |
+| Mistral-7B-Instruct | 7B | 32K | Apache 2.0 | Hugging Face |
 
 La comparativa directa no es posible sin datos de benchmarks. El adaptador se diferencia del modelo base por su especialización, pero se desconoce si supera a alternativas como Llama-3.1-8B en tareas financieras.
 
@@ -85,4 +85,4 @@ La comparativa directa no es posible sin datos de benchmarks. El adaptador se di
 - Modelo base: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio oficial de EXAONE 3.5: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Informe técnico de EXAONE 3.5 (arXiv): https://arxiv.org/abs/2412.04862
-- Página del paper en HuggingFace: https://huggingface.co/papers/2412.04862
+- Página del paper en Hugging Face: https://huggingface.co/papers/2412.04862

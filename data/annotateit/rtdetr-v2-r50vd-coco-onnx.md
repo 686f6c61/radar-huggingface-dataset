@@ -78,7 +78,7 @@ RT-DETRv2 se posiciona como una alternativa a YOLO con arquitectura transformer,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AnnotateIt/rtdetr-v2-r50vd-coco-onnx
+- Repositorio Hugging Face: https://huggingface.co/AnnotateIt/rtdetr-v2-r50vd-coco-onnx
 - Modelo base oficial: https://huggingface.co/PekingU/rtdetr_v2_r50vd
 - Espejo ONNX de referencia: https://huggingface.co/onnx-community/rtdetr_v2_r50vd-ONNX
 - Proyecto oficial RT-DETR: https://github.com/lyuwenyu/RT-DETR

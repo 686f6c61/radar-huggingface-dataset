@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2` es un modelo publicado en HuggingFace por el usuario stefanocarrera. La nomenclatura del identificador apunta a un ajuste fino (fine-tuning) sobre el modelo base Qwen3-8B, con un sufijo que sugiere un experimento concreto (`sqlautophagycode` como temática de datos, `t0.5` como temperatura de muestreo, `g8` como parámetro de generación y `run2` como segunda ejecución). Se trata, por tanto, de un derivado de un modelo denso de unos 8.000 millones de parámetros, no de un modelo preentrenado desde cero.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2` es un modelo publicado en Hugging Face por el usuario stefanocarrera. La nomenclatura del identificador apunta a un ajuste fino (fine-tuning) sobre el modelo base Qwen3-8B, con un sufijo que sugiere un experimento concreto (`sqlautophagycode` como temática de datos, `t0.5` como temperatura de muestreo, `g8` como parámetro de generación y `run2` como segunda ejecución). Se trata, por tanto, de un derivado de un modelo denso de unos 8.000 millones de parámetros, no de un modelo preentrenado desde cero.
 
-La relevancia de esta ficha es limitada y hay que ser explícito al respecto: la model card está generada automáticamente por la plantilla de HuggingFace y no contiene ni un solo campo completado. No se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedimiento de ajuste, ni resultados de evaluación. El repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo de 8B en safetensors (que en bf16 rondarían los 16 GB), lo que sugiere que el repositorio contiene únicamente adaptadores LoRA, un checkpoint incompleto o pesos muy comprimidos. Esto debe verificarse antes de cualquier uso.
+La relevancia de esta ficha es limitada y hay que ser explícito al respecto: la model card está generada automáticamente por la plantilla de Hugging Face y no contiene ni un solo campo completado. No se declara licencia, ni idiomas, ni datos de entrenamiento, ni procedimiento de ajuste, ni resultados de evaluación. El repositorio ocupa 0,2 GB, un tamano incompatible con los pesos completos de un modelo de 8B en safetensors (que en bf16 rondarían los 16 GB), lo que sugiere que el repositorio contiene únicamente adaptadores LoRA, un checkpoint incompleto o pesos muy comprimidos. Esto debe verificarse antes de cualquier uso.
 
 En consecuencia, esta ficha documenta principalmente lo que *no* se sabe, los datos estructurales del repositorio y las características del modelo base al que apunta el nombre, marcadas siempre como no confirmadas por el autor.
 
@@ -77,7 +77,7 @@ Las cifras siguientes son estimaciones aritmeticas para un transformer denso de 
 - Pesos en 4 bits (Q4_K_M via llama.cpp o bitsandbytes NF4): aproximadamente 5-6 GB. Cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, Apple Silicon con 16 GB unificados.
 - Cache KV en fp16: aproximadamente 0,14 MB por token (36 capas x 8 cabezas KV x 128 de dimension x 2 tensores x 2 bytes). A 32.768 tokens de contexto supone unos 4,8 GB adicionales; en cuantizacion Q8 de cache, alrededor de 2,4 GB.
 - Si el repositorio contiene solo adaptadores LoRA, sera necesario descargar por separado el modelo base Qwen3-8B y cargar el adaptador; el requisito de VRAM sera entonces el del modelo base completo.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con la inferencia gestionada de HuggingFace. Para despliegue propio, vLLM y TGI son las opciones adecuadas para pesos completos en GPU; llama.cpp y Ollama requieren conversion previa a GGUF, que no se ha publicado.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con la inferencia gestionada de Hugging Face. Para despliegue propio, vLLM y TGI son las opciones adecuadas para pesos completos en GPU; llama.cpp y Ollama requieren conversion previa a GGUF, que no se ha publicado.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -87,9 +87,9 @@ La comparativa se realiza contra alternativas de la misma categoria (modelo dens
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2 | No disponible (nomenclatura: 8,2B) | No disponible (nomenclatura: 32K/128K) | No disponible | Repositorio de 0,2 GB, 0 descargas | Sin benchmarks publicados |
-| Qwen3-8B (modelo base) | 8,2B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Pesos completos en HuggingFace | Benchmarks publicados por el autor del modelo base |
-| Llama 3.1 8B | 8,0B | 131.072 | Licencia comunitaria de Meta | Pesos completos en HuggingFace | Benchmarks publicados por Meta |
-| Mistral 7B v0.3 | 7,2B | 32.768 | Apache 2.0 | Pesos completos en HuggingFace | Benchmarks publicados por Mistral |
+| Qwen3-8B (modelo base) | 8,2B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Pesos completos en Hugging Face | Benchmarks publicados por el autor del modelo base |
+| Llama 3.1 8B | 8,0B | 131.072 | Licencia comunitaria de Meta | Pesos completos en Hugging Face | Benchmarks publicados por Meta |
+| Mistral 7B v0.3 | 7,2B | 32.768 | Apache 2.0 | Pesos completos en Hugging Face | Benchmarks publicados por Mistral |
 
 Los datos de Qwen3-8B, Llama 3.1 8B y Mistral 7B v0.3 provienen de sus documentaciones publicas respectivas y no de la informacion facilitada en esta busqueda; se recomienda verificarlos en la fuente original antes de citarlos.
 
@@ -108,7 +108,7 @@ Los datos de Qwen3-8B, Llama 3.1 8B y Mistral 7B v0.3 provienen de sus documenta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.5_g8_run2
 - Articulo citado en las etiquetas (Lacoste et al., 2019, calculo de impacto ambiental): https://arxiv.org/abs/1910.09700
-- Modelo base al que apunta la nomenclatura (Qwen3-8B): no se ha facilitado un enlace directo en la informacion disponible; busquelo en el espacio oficial de Qwen en HuggingFace.
+- Modelo base al que apunta la nomenclatura (Qwen3-8B): no se ha facilitado un enlace directo en la informacion disponible; busquelo en el espacio oficial de Qwen en Hugging Face.
 - La busqueda web realizada no devolvio ningun resultado relevante: los enlaces obtenidos corresponden a sitios de informacion bursatil italiana (Borsa Italiana, Milano Finanza, Teleborsa, Borse.it) sin relacion alguna con el modelo.

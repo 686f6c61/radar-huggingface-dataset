@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.8-s42` es un checkpoint de 122.706.432 parametros (aproximadamente 124 M) publicado en HuggingFace por el usuario Cisco1963. La etiqueta de arquitectura que acompania al repositorio es `gpt2`, por lo que se trata de un transformer decoder-only con el esquema de GPT-2, empaquetado en formato `safetensors`. No existe model card, pipeline declarado, licencia ni lista de idiomas en la informacion disponible.
+`Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.8-s42` es un checkpoint de 122.706.432 parametros (aproximadamente 124 M) publicado en Hugging Face por el usuario Cisco1963. La etiqueta de arquitectura que acompania al repositorio es `gpt2`, por lo que se trata de un transformer decoder-only con el esquema de GPT-2, empaquetado en formato `safetensors`. No existe model card, pipeline declarado, licencia ni lista de idiomas en la informacion disponible.
 
 El identificador sugiere un experimento de investigacion sobre plasticidad en modelos de lenguaje (`llmplasticity`), con una configuracion concreta de hiperparametros codificada en el nombre: posiblemente `d0.1` (dropout o tasa de ablacion), `c0.99`, `r0.8` y la semilla `s42`. Esta lectura es una hipotesis basada en la nomenclatura del identificador y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como no verificada.
 
@@ -44,7 +44,7 @@ Dado que no hay licencia, model card ni evaluaciones, cualquier uso en produccio
 - Investigacion sobre degradacion de plasticidad: util como punto de partida para comparar la capacidad de adaptacion de un modelo de 124 M frente a checkpoints del mismo estudio con otros valores de `d`, `c` y `r`.
 - Pruebas de infraestructura de despliegue: su tamano reducido (menos de 500 MB en fp32) lo convierte en un candidato comodo para validar pipelines de carga de safetensors, servidores de inferencia y sistemas de monitorizacion sin consumir GPU.
 - Generacion de texto de baja exigencia en entornos locales: completado de frases y generacion corta en CPU, siempre que la calidad resultante se valide manualmente.
-- Docencia y formacion: ejemplo practico de estructura de repositorio en HuggingFace, de nomenclatura de experimentos y de las carencias tipicas de un checkpoint sin documentacion.
+- Docencia y formacion: ejemplo practico de estructura de repositorio en Hugging Face, de nomenclatura de experimentos y de las carencias tipicas de un checkpoint sin documentacion.
 - Analisis forense de pesos: al ser un artefacto de investigacion con semilla fija, puede servir para estudiar como afectan distintas tasas de dropout o reinicializacion a la distribucion de pesos.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint | 122,7 M | no disponible | no disponible | HuggingFace, 8 descargas, safetensors |
+| Este checkpoint | 122,7 M | no disponible | no disponible | Hugging Face, 8 descargas, safetensors |
 | GPT-2 small | 124 M | 1024 tokens | MIT (OpenAI), sujeto a verificacion | Ampliamente disponible, con versiones GGUF |
 | distilgpt2 | 82 M | 1024 tokens | Apache 2.0, sujeto a verificacion | Ampliamente disponible, con versiones GGUF |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (OpenAI), sujeto a verificacion | Ampliamente disponible, con versiones GGUF |
@@ -87,5 +87,5 @@ Las cifras de parametros y contexto de los modelos de referencia corresponden a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.8-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-nl_never_8-rand-d0.1-c0.99-r0.8-s42
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

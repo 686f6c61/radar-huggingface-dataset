@@ -68,4 +68,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - manojagarwal/generation-lite](https://huggingface.co/manojagarwal/generation-lite)
+- [Hugging Face - manojagarwal/generation-lite](https://huggingface.co/manojagarwal/generation-lite)

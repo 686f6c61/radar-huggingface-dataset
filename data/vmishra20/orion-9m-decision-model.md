@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion 9M Decision Model es un modelo de decisión y lenguaje de tipo decoder-only desarrollado por el usuario vmishra20 y publicado en HuggingFace bajo el nombre `vmishra20/orion-9m-decision-model`. Se trata de un experimento de investigación construido desde cero en PyTorch, sin partir de ningún backbone preentrenado, y orientado a tareas de decisión y clasificación sobre preguntas de opción múltiple de carácter científico y de sentido común. Su relevancia no reside en el rendimiento, sino en ser un banco de pruebas de arquitecturas poco habituales en modelos pequeños: atención con proyecciones latentes comprimidas al estilo MLA, codificación posicional RoPE, bloques Transformer recurrentes con pesos compartidos y capas feed-forward con enrutamiento disperso tipo Mixture-of-Experts.
+Orion 9M Decision Model es un modelo de decisión y lenguaje de tipo decoder-only desarrollado por el usuario vmishra20 y publicado en Hugging Face bajo el nombre `vmishra20/orion-9m-decision-model`. Se trata de un experimento de investigación construido desde cero en PyTorch, sin partir de ningún backbone preentrenado, y orientado a tareas de decisión y clasificación sobre preguntas de opción múltiple de carácter científico y de sentido común. Su relevancia no reside en el rendimiento, sino en ser un banco de pruebas de arquitecturas poco habituales en modelos pequeños: atención con proyecciones latentes comprimidas al estilo MLA, codificación posicional RoPE, bloques Transformer recurrentes con pesos compartidos y capas feed-forward con enrutamiento disperso tipo Mixture-of-Experts.
 
 El modelo tiene 9.365.249 parámetros totales, una dimensión oculta de 256, 4 cabezas de atención, una longitud máxima de secuencia de 512 tokens y un vocabulario de 16.000 entradas. El preentrenamiento se realizó sobre un subconjunto en streaming del corpus FineWeb (configuración `sample-10BT`), pero el volumen efectivo fue de solo 179.150 tokens, un dato que conviene tener muy presente al interpretar cualquier resultado.
 
@@ -46,7 +46,7 @@ El modelo es un decoder-only implementado en PyTorch con código propio. La aten
 
 El preentrenamiento se hizo desde cero sobre un subconjunto en streaming de FineWeb (`sample-10BT`), pero el autor declara un total de solo 179.150 tokens procesados, lo que está varios órdenes de magnitud por debajo de lo habitual incluso para modelos de este tamaño. La adaptación posterior consistió en un SFT sobre 80.658 ejemplos normalizados de opción múltiple de nueve benchmarks (72.592 para entrenamiento y 8.066 para validación, split 90/10, secuencia máxima de 160 tokens). Después se aplicó una etapa de RLCD (Reinforcement Learning from Comparative Demonstrations) con 72.592 pares de preferencia de entrenamiento y 8.066 de validación, generados tomando la respuesta correcta como preferida y una respuesta incorrecta muestreada como rechazada.
 
-La model card subraya que la arquitectura es código PyTorch personalizado y que la presencia de un archivo de pesos y un README no garantiza compatibilidad con `AutoModel` ni con `pipeline` de HuggingFace Transformers; el código, la configuración y el tokenizer deben probarse juntos en un entorno limpio.
+La model card subraya que la arquitectura es código PyTorch personalizado y que la presencia de un archivo de pesos y un README no garantiza compatibilidad con `AutoModel` ni con `pipeline` de Hugging Face Transformers; el código, la configuración y el tokenizer deben probarse juntos en un entorno limpio.
 
 ## Capacidades
 
@@ -87,10 +87,10 @@ No se dispone de datos de rendimiento publicados para Orion 9M, por lo que la co
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Orion 9M Decision Model | 9,365M | 512 tokens | other | HuggingFace, código PyTorch custom |
-| SmolLM-135M (HuggingFace) | 135M | 2.048 tokens | Apache 2.0 | HuggingFace, Transformers, GGUF |
-| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | HuggingFace, Transformers, GGUF, vLLM |
-| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache 2.0 | HuggingFace, Transformers, GGUF, vLLM |
+| Orion 9M Decision Model | 9,365M | 512 tokens | other | Hugging Face, código PyTorch custom |
+| SmolLM-135M (Hugging Face) | 135M | 2.048 tokens | Apache 2.0 | Hugging Face, Transformers, GGUF |
+| Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, Transformers, GGUF, vLLM |
+| TinyLlama-1.1B | 1.100M | 2.048 tokens | Apache 2.0 | Hugging Face, Transformers, GGUF, vLLM |
 
 La comparación es solo orientativa: los tres modelos de referencia son modelos de lenguaje de propósito general con preentrenamiento de billones de tokens, mientras que Orion 9M es un experimento de arquitectura con 179.150 tokens de preentrenamiento y ajuste específico para decisión sobre opción múltiple. No son intercambiables en producción.
 
@@ -108,6 +108,6 @@ La comparación es solo orientativa: los tres modelos de referencia son modelos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vmishra20/orion-9m-decision-model
+- Hugging Face: https://huggingface.co/vmishra20/orion-9m-decision-model
 - Dataset de preentrenamiento FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

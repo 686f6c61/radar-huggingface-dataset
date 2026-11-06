@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 ## Comparativa con modelos similares
 | Modelo | Tipo | Objetivo | Tejido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pcphenoage | PCA + elastic net | Edad fenotípica | Sangre completa | BSD-3-Clause | HuggingFace, pyaging |
+| pcphenoage | PCA + elastic net | Edad fenotípica | Sangre completa | BSD-3-Clause | Hugging Face, pyaging |
 | Horvath clock (2013) | Elastic net | Edad cronológica | Múltiples tejidos | No especificada | Ampliamente disponible |
 | Hannum clock (2013) | Elastic net | Edad cronológica | Sangre | No especificada | Disponible |
 | PhenoAge (Levine et al., 2018) | Elastic net | Edad fenotípica | Sangre | No especificada | Disponible |
@@ -63,6 +63,6 @@ Nota: no se dispone de datos numéricos de rendimiento comparativo en la informa
 - No se proporcionan intervalos de confianza ni medidas de incertidumbre en la model card; para uso clínico se requiere validación adicional.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/pyaging/pcphenoage
+- Hugging Face: https://huggingface.co/pyaging/pcphenoage
 - Paper original: Higgins-Chen, Albert T., et al. "A computational solution for bolstering reliability of epigenetic clocks: implications for clinical trials and longitudinal tracking." Nature Aging 2 (2022): 644–661. DOI: https://doi.org/10.1038/s43587-022-00248-2
 - Documentación de pyaging: https://pyaging.readthedocs.io

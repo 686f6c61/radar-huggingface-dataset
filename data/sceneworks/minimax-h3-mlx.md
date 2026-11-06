@@ -1,7 +1,7 @@
 # SceneWorks/minimax-h3-mlx
 
 ## Resumen
-El modelo `SceneWorks/minimax-h3-mlx` es un checkpoint alojado en HuggingFace por el usuario SceneWorks, con etiquetas que indican el uso de la librería `diffusers` y pesos en formato `safetensors`. El repositorio tiene un tamaño de 293.7 GB, lo que sugiere un modelo de gran escala, probablemente orientado a generación de imágenes o vídeo mediante difusión. Sin embargo, no se ha publicado ninguna documentación técnica, ficha de modelo, ni información sobre su arquitectura, entrenamiento o capacidades. La fecha de creación (2026-08-12) y actualización (2026-08-14) son recientes, pero el número de descargas (3) y de likes (0) indica que es un proyecto muy poco conocido o en fase inicial. A día de hoy, no existe información verificable sobre sus especificaciones, rendimiento o licencia, por lo que cualquier uso en producción requeriría contactar directamente con el autor o esperar a que se publique documentación adicional.
+El modelo `SceneWorks/minimax-h3-mlx` es un checkpoint alojado en Hugging Face por el usuario SceneWorks, con etiquetas que indican el uso de la librería `diffusers` y pesos en formato `safetensors`. El repositorio tiene un tamaño de 293.7 GB, lo que sugiere un modelo de gran escala, probablemente orientado a generación de imágenes o vídeo mediante difusión. Sin embargo, no se ha publicado ninguna documentación técnica, ficha de modelo, ni información sobre su arquitectura, entrenamiento o capacidades. La fecha de creación (2026-08-12) y actualización (2026-08-14) son recientes, pero el número de descargas (3) y de likes (0) indica que es un proyecto muy poco conocido o en fase inicial. A día de hoy, no existe información verificable sobre sus especificaciones, rendimiento o licencia, por lo que cualquier uso en producción requeriría contactar directamente con el autor o esperar a que se publique documentación adicional.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -44,6 +44,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (difusi�
 - Fecha de creación muy reciente y sin actividad de la comunidad: el modelo puede estar en fase experimental y no ser estable.
 
 ## Enlaces
-- [HuggingFace - SceneWorks/minimax-h3-mlx](https://huggingface.co/SceneWorks/minimax-h3-mlx)
+- [Hugging Face - SceneWorks/minimax-h3-mlx](https://huggingface.co/SceneWorks/minimax-h3-mlx)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) relacionados con este modelo en la información proporcionada.

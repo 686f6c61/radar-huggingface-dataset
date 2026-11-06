@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262.144 | bf16/fp8 | Apache-2.0 | HuggingFace |
-| orcarouter/Qwen3.8-27B-Uncensored | 27B | 262.144 | bf16 (original) | Apache-2.0 | HuggingFace |
-| just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq | 15.6B (checkpoint) | 262.144 | MXFP4 (4-bit) | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262.144 | bf16/fp8 | Apache-2.0 | Hugging Face |
+| orcarouter/Qwen3.8-27B-Uncensored | 27B | 262.144 | bf16 (original) | Apache-2.0 | Hugging Face |
+| just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq | 15.6B (checkpoint) | 262.144 | MXFP4 (4-bit) | Apache-2.0 | Hugging Face |
 | onurburak9/Qwen3.8-27B-Uncensored (MLX) | 27B | 262.144 | 2/4/6/8-bit MLX | Apache-2.0 | GitHub |
-| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | 27B | 262.144 | GGUF (varios) | Apache-2.0 | HuggingFace |
+| DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF | 27B | 262.144 | GGUF (varios) | Apache-2.0 | Hugging Face |
 
 La principal diferencia de este modelo frente a las alternativas es su formato específico para AMD RDNA4 con ROCm y la cuantización MXFP4, que no es común en otras versiones (GGUF, MLX, AWQ tradicional). El número de parámetros del checkpoint es menor porque excluye la torre de visión y `lm_head`, pero el modelo completo sigue siendo de 27B.
 
@@ -83,7 +83,7 @@ La principal diferencia de este modelo frente a las alternativas es su formato e
 
 ## Enlaces
 
-- [HuggingFace: just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq](https://huggingface.co/just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq)
+- [Hugging Face: just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq](https://huggingface.co/just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq)
 - [Modelo base: orcarouter/Qwen3.8-27B-Uncensored](https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored)
 - [Modelo original: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [AMD Quark (herramienta de cuantización)](https://github.com/amd/Quark)

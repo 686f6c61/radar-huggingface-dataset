@@ -19,7 +19,7 @@ Los pesos reales declarados en safetensors suman 4.560.924.672 parámetros (unos
 | Tipos de cuantización | NVFP4 (W4A4): pesos y activaciones en FP4 E2M1, bloques de 16 elementos con escalas por bloque en FP8 E4M3 más escala por tensor en FP32; caché KV en FP8 E4M3 con escalas estáticas calibradas; embeddings, `lm_head` y capas de normalización se mantienen en BF16 |
 | Idiomas soportados | Coreano (ko) e inglés (en) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors; checkpoint unificado ModelOpt para HuggingFace (`quantization_config` + `hf_quant_config.json`) |
+| Formato de pesos | safetensors; checkpoint unificado ModelOpt para Hugging Face (`quantization_config` + `hf_quant_config.json`) |
 | Modelo base | PoSTMEDIA/Rosetta-7B-Think |
 | Tamaño del repositorio | 6,3 GB |
 
@@ -93,7 +93,7 @@ No se dispone de datos de modelos de otras familias con los que comparar paráme
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think-NVFP4
 - Modelo base (BF16): https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think
 - Colección Rosetta: https://huggingface.co/collections/PoSTMEDIA/rosetta-6a9db30fd1b4585b0c1845e9
 - Rosetta-7B-Base: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Base

@@ -90,7 +90,7 @@ La comparación directa con otros modelos companion de tamaño similar no está 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/arrochi112/onebee-gf-distill-v1)
+- [Modelo en Hugging Face](https://huggingface.co/arrochi112/onebee-gf-distill-v1)
 - [Repositorio del proyecto small-mind-companion](https://github.com/arrogance231/small-mind-companion)
 - [Documento de resultados de destilacion](https://github.com/arrogance231/small-mind-companion/blob/main/docs/distillation_results.md)
 - [Repositorio onebee-gf (proyecto general)](https://github.com/arrogance231/onebee-gf)

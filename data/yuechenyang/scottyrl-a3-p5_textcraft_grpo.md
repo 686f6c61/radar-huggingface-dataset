@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (rank 32) denominado `p5_textcraft_grpo`, entrenado sobre el modelo base `Qwen/Qwen3.5-4B`. No es un modelo completo, sino un conjunto de pesos de ajuste fino en formato PEFT que se carga sobre el modelo base para modificar su comportamiento en una tarea concreta. El autor es el usuario de HuggingFace YuechenYang y el adaptador se ha publicado como parte del trabajo de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon, en su Assignment 3.
+Este repositorio contiene un adaptador LoRA (rank 32) denominado `p5_textcraft_grpo`, entrenado sobre el modelo base `Qwen/Qwen3.5-4B`. No es un modelo completo, sino un conjunto de pesos de ajuste fino en formato PEFT que se carga sobre el modelo base para modificar su comportamiento en una tarea concreta. El autor es el usuario de Hugging Face YuechenYang y el adaptador se ha publicado como parte del trabajo de la asignatura 11-768 (AI Agents) de la Universidad Carnegie Mellon, en su Assignment 3.
 
 El entrenamiento se ha realizado con el framework `scottyrl` y el nombre del run (`p5_textcraft_grpo`) sugiere el uso de GRPO (Group Relative Policy Optimization) como metodo de optimizacion por refuerzo, aunque este extremo no se confirma de forma explicita en la informacion disponible. El escenario de evaluacion indicado en la model card es TextCraft-Synth, con particiones de validacion "medium" y "hard", lo que situa el adaptador en el ambito de agentes que operan sobre entornos textuales y tareas de crafteo (combinacion de objetos mediante recetas).
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- Tamano del repositorio del adaptador: 0,2 GB, segun los metadatos de HuggingFace.
+- Tamano del repositorio del adaptador: 0,2 GB, segun los metadatos de Hugging Face.
 - VRAM para el adaptador: marginal; los pesos LoRA de rank 32 sobre un modelo base de 4B nominales ocupan del orden de centenares de megabytes en precision de entrenamiento, coherente con el tamano de 0,2 GB del repositorio.
 - VRAM para el modelo base (estimacion a partir del tamano nominal de 4B, no confirmada en la informacion disponible): aproximadamente 8-9 GB en fp16/bf16, en torno a 5-6 GB en cuantizacion de 8 bits y alrededor de 3-4 GB en cuantizacion de 4 bits, en ambos casos mas el espacio de cache KV correspondiente al contexto utilizado.
 - GPU recomendadas: no especificadas por el autor. Por el tamano del modelo base, un adaptador de este tipo es viable en GPUs de consumo con 8-16 GB de VRAM (por ejemplo, RTX 3060 de 12 GB, RTX 4070, RTX 4080, RTX 4090), asi como en GPUs de datacenter tipo A100 o H100 para servir en produccion.
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `YuechenYang/scottyrl-a3-p5_textcraft_grpo` | Adaptador LoRA rank 32 sobre base de 4B nominales | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (modelo base sin adaptador) | 4B nominales | No disponible | No disponible en esta informacion | No disponible | HuggingFace (referenciado como base) |
+| `YuechenYang/scottyrl-a3-p5_textcraft_grpo` | Adaptador LoRA rank 32 sobre base de 4B nominales | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (modelo base sin adaptador) | 4B nominales | No disponible | No disponible en esta informacion | No disponible | Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -89,12 +89,12 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Ambito de uso muy restringido: el adaptador se ha creado como ejercicio del Assignment 3 del curso 11-768 y su evaluacion se limita a dos particiones de validacion de una unica tarea sintetica.
 - Reproducibilidad dependiente de artefactos externos: el entrenamiento se exporto desde `tinker://model_770cab09/v50_r2` y la evaluacion depende de `configs/p5_textcraft_grpo.yaml` y de `scripts/evaluate_checkpoint.py`, que pertenecen al repositorio del curso y no se enlazan en la model card.
 - Requisito de version de vLLM: la carga exige soporte de LoRA con `--max-lora-rank 32`; versiones del servidor sin esa opcion no podran servir el adaptador.
-- Metadatos incompletos: pipeline, licencia e idiomas figuran como no disponibles en la ficha de HuggingFace, lo que dificulta su integracion automatizada en catalogos o pipelines de evaluacion.
+- Metadatos incompletos: pipeline, licencia e idiomas figuran como no disponibles en la ficha de Hugging Face, lo que dificulta su integracion automatizada en catalogos o pipelines de evaluacion.
 - Fecha de publicacion futura respecto al conocimiento habitual de los modelos citados: la ficha indica creacion y actualizacion el 9 de octubre de 2026, dato a tener en cuenta al contrastar con otras fuentes.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/YuechenYang/scottyrl-a3-p5_textcraft_grpo
+- Ficha en Hugging Face: https://huggingface.co/YuechenYang/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio del framework `scottyrl`: no disponible en la informacion proporcionada
 - Repositorio del curso 11-768 (AI Agents, CMU) con `configs/p5_textcraft_grpo.yaml` y `scripts/evaluate_checkpoint.py`: no disponible en la informacion proporcionada

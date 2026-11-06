@@ -75,7 +75,7 @@ No hay datos de benchmarks comparativos disponibles. Este adaptador es una ablac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l3
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l3
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l3
 - Adaptador SFT de nivel L3 (requerido): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

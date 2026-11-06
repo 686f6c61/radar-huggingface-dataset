@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w100ft2-s300` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo el tag `sn38-nanochrono`, lo que sugiere que pertenece a una familia de modelos experimentales de pequeño tamaño orientados a tareas de cronología o secuenciación temporal. Con 2.018.511.234 parámetros (aproximadamente 2.000 millones), se sitúa en la categoría de modelos compactos, adecuados para despliegues con recursos limitados o para investigación sobre arquitecturas eficientes.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w100ft2-s300` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo el tag `sn38-nanochrono`, lo que sugiere que pertenece a una familia de modelos experimentales de pequeño tamaño orientados a tareas de cronología o secuenciación temporal. Con 2.018.511.234 parámetros (aproximadamente 2.000 millones), se sitúa en la categoría de modelos compactos, adecuados para despliegues con recursos limitados o para investigación sobre arquitecturas eficientes.
 
 El repositorio tiene un tamaño de 6,3 GB en formato safetensors, lo que es coherente con pesos en precisión de 16 bits (FP16/BF16) para un modelo de 2B de parámetros. La nomenclatura del identificador (`r18-a2-w14-k-chrono5-w100ft2-s300`) parece codificar hiperparámetros o variantes de entrenamiento (posiblemente rondas, ventanas, checkpoints o pasos), aunque no se dispone de documentación que lo confirme.
 
@@ -38,12 +38,12 @@ El tamaño del repositorio (6,3 GB) es consistente con pesos en FP16/BF16 para 2
 
 ## Casos de uso
 
-- Investigación sobre arquitecturas experimentales: el modelo puede utilizarse como checkpoint de referencia para estudiar la familia `nanochrono`, siempre que se acepten las condiciones de acceso en HuggingFace.
+- Investigación sobre arquitecturas experimentales: el modelo puede utilizarse como checkpoint de referencia para estudiar la familia `nanochrono`, siempre que se acepten las condiciones de acceso en Hugging Face.
 - Experimentación con modelos de 2B en entornos con recursos limitados: su tamaño permite inferencia en GPUs de consumo, lo que facilita pruebas de concepto y ablaciones.
 - Fine-tuning específico de dominio: al estar bajo licencia Apache 2.0 y en safetensors, es apto para ajuste supervisado sobre datasets propios, aunque sin garantías de calidad base.
 - Evaluación comparativa de checkpoints: útil para medir el efecto de los hiperparámetros codificados en el nombre (`w14`, `w100ft2`, `s300`) frente a otros checkpoints de la misma familia.
 - Reproducción de pipelines de entrenamiento: el identificador sugiere configuraciones concretas que pueden replicarse en experimentos controlados.
-- Docencia y formación: modelo pequeño y de acceso gratuito para ilustrar el ciclo de vida de un checkpoint experimental en HuggingFace.
+- Docencia y formación: modelo pequeño y de acceso gratuito para ilustrar el ciclo de vida de un checkpoint experimental en Hugging Face.
 
 En ningún caso se recomienda su uso en producción sin una evaluación previa de calidad, sesgos y robustez, dado que no hay benchmarks ni documentación publicada.
 
@@ -77,12 +77,12 @@ La comparativa se ofrece a título orientativo por rango de tamaño; no implica 
 - Riesgo elevado de alucinación y comportamiento impredecible al no haber pasado por validación externa ni benchmarks publicados.
 - Sesgos desconocidos: al no documentarse la composición del dataset, no es posible anticipar sesgos de género, idioma, cultura o dominio.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías sobre el modelo; la responsabilidad recae en el usuario.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoría independiente.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoría independiente.
 - Sin cuantizaciones oficiales: el despliegue eficiente requerirá conversión propia a GGUF, AWQ o GPTQ, con el riesgo de degradación no medida.
 - Nombre críptico: los sufijos (`r18`, `a2`, `w14`, `chrono5`, `w100ft2`, `s300`) no están explicados, lo que dificulta la trazabilidad del checkpoint.
 - No apto para producción sin evaluación previa: la falta de benchmarks y de documentación desaconseja su uso en entornos críticos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w100ft2-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w100ft2-s300
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

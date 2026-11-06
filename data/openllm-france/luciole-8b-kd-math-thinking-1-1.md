@@ -86,7 +86,7 @@ La comparación cuantitativa de rendimiento no está disponible: no se han publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1
+- Modelo en Hugging Face: https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Thinking-1.1
 - Modelo base intermedio: https://huggingface.co/OpenLLM-France/Luciole-8B-KD-Math-Base
 - Modelo base: https://huggingface.co/OpenLLM-France/Luciole-8B-Base
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/OpenLLM-France/Luciole-PostTraining-Dataset-1.1

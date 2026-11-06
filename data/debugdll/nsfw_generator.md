@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `debugdll/nsfw_generator` es un checkpoint de generación de imágenes basado en Stable Diffusion XL (SDXL), publicado por el usuario `debugdll` en HuggingFace. Está diseñado específicamente para generar contenido NSFW (no apto para todos los públicos) y se distribuye junto con un workflow listo para usar en ComfyUI, lo que facilita su integración en entornos de generación local. El repositorio incluye el modelo "Lustify SDXL v20" como base y añade soporte para prompts en ucraniano, ruso e inglés, algo poco común en este tipo de modelos.
+El modelo `debugdll/nsfw_generator` es un checkpoint de generación de imágenes basado en Stable Diffusion XL (SDXL), publicado por el usuario `debugdll` en Hugging Face. Está diseñado específicamente para generar contenido NSFW (no apto para todos los públicos) y se distribuye junto con un workflow listo para usar en ComfyUI, lo que facilita su integración en entornos de generación local. El repositorio incluye el modelo "Lustify SDXL v20" como base y añade soporte para prompts en ucraniano, ruso e inglés, algo poco común en este tipo de modelos.
 
 La relevancia de este modelo radica en su enfoque en la generación de imágenes con control total por parte del usuario, sin depender de servicios en la nube, y en su compatibilidad con ComfyUI, una herramienta muy popular en la comunidad de IA generativa. El tamaño del repositorio (6,9 GB) sugiere que se trata de un checkpoint completo de SDXL, aunque no se especifican detalles sobre la arquitectura interna ni el proceso de entrenamiento. La licencia es "other", lo que implica restricciones no detalladas que deben revisarse antes de cualquier uso comercial.
 
@@ -66,5 +66,5 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- [HuggingFace - debugdll/nsfw_generator](https://huggingface.co/debugdll/nsfw_generator)
+- [Hugging Face - debugdll/nsfw_generator](https://huggingface.co/debugdll/nsfw_generator)
 - No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

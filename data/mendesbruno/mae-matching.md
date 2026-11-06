@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mendesbruno/mae-matching` es un repositorio de HuggingFace publicado por el usuario mendesbruno que contiene una implementación funcional de una arquitectura denominada **Mae** aplicada a tareas de **matching** (emparejamiento), en una configuración calificada por el autor como **nano**. No se trata de un modelo entrenado, sino de un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*) y de una receta de entrenamiento por defecto, según se indica explícitamente en la model card.
+`mendesbruno/mae-matching` es un repositorio de Hugging Face publicado por el usuario mendesbruno que contiene una implementación funcional de una arquitectura denominada **Mae** aplicada a tareas de **matching** (emparejamiento), en una configuración calificada por el autor como **nano**. No se trata de un modelo entrenado, sino de un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*) y de una receta de entrenamiento por defecto, según se indica explícitamente en la model card.
 
 El interés del artefacto es de tipo ingenieril y reproducible: el repositorio incluye el código del modelo (`run.py`), la configuración de arquitectura (`config.json`) y los hiperparámetros del experimento (`training_args.json`). El autor declara de forma deliberada que no se reclama ninguna métrica de benchmark, lo que lo sitúa como punto de partida experimental y no como un modelo listo para producción.
 
@@ -26,7 +26,7 @@ La arquitectura combina atención de tipo *linear*, fusión tensorial (*tensor f
 | Escala declarada | nano |
 | Optimizador por defecto | RMSprop |
 | Scheduler por defecto | polynomial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repo | 0.0 GB |
 | Creado / actualizado | 2026-10-17 |
@@ -56,7 +56,7 @@ No se ha ejecutado ningún entrenamiento: el repositorio incluye únicamente un 
 - Baseline de comparación de capacidad controlada: al tener 16.576 parámetros, sirve como referencia de "capacidad mínima" frente a modelos emparejados por presupuesto, tal como recomienda el autor para evaluaciones honestas.
 - Reproducción de recetas de entrenamiento: usar `training_args.json` (RMSprop + scheduler polinómico) como configuración inicial y registrar semillas, versiones de entorno y logs para comparaciones reproducibles.
 - Docencia y formación interna: el código transparente y el tamaño reducido permiten explicar atención linear, tensor fusion e InstanceNorm en un notebook sin necesidad de GPU.
-- Desarrollo de adaptadores de carga: el repositorio sirve para implementar y depurar el adaptador que las APIs automáticas de HuggingFace necesitan para esta arquitectura personalizada.
+- Desarrollo de adaptadores de carga: el repositorio sirve para implementar y depurar el adaptador que las APIs automáticas de Hugging Face necesitan para esta arquitectura personalizada.
 - Punto de partida para *fine-tuning* sobre un conjunto de validación emparejado: el autor sugiere reportar la métrica de la tarea en al menos tres semillas e incluir un baseline de capacidad equivalente antes de publicar cualquier resultado.
 - Validación de pipelines de entrenamiento distribuido: por su coste computacional prácticamente nulo, permite probar orquestación, checkpoints y logging sin consumir presupuesto de GPU.
 
@@ -78,7 +78,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mendesbruno/mae-matching | 16.576 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | HuggingFace, repo de 0.0 GB |
+| mendesbruno/mae-matching | 16.576 | no disponible | sin benchmarks (checkpoint sin entrenar) | BSD-3-Clause | Hugging Face, repo de 0.0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,12 +88,12 @@ No se han identificado en la información proporcionada modelos comparables de l
 - Ausencia total de benchmarks: no es posible comparar su rendimiento con nada, ni siquiera con un baseline trivial.
 - Sin contexto documentado: se desconoce la longitud máxima de entrada y el formato esperado de los pares a emparejar.
 - Sin idiomas declarados: no hay evidencia de capacidades multilingües ni de procesamiento de texto en absoluto.
-- Integración limitada: las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito; no hay pipeline asignado.
+- Integración limitada: las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito; no hay pipeline asignado.
 - Licencia BSD-3-Clause: permisiva para uso comercial, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con conjuntos externos.
 - Riesgo de alucinación y sesgos: no evaluable, al no existir un modelo entrenado ni datos de entrenamiento documentados.
 - Cualquier resultado obtenido con un checkpoint futuro debe documentarse por separado de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mendesbruno/mae-matching
+- Repositorio en Hugging Face: https://huggingface.co/mendesbruno/mae-matching
 - No se han encontrado papers, blogs técnicos, repositorios adicionales ni demos en la información proporcionada.

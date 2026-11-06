@@ -28,7 +28,7 @@ No se han publicado datos sobre el dataset de entrenamiento, el número de token
 ## Capacidades
 
 - Sintesis de voz en persa (farsi) con calidad natural, basada en el modelo Gooya Bozorg 1.5.
-- Clonacion de voz: el modelo base soporta voice cloning (segun los tags de HuggingFace), aunque el bundle no incluye el pipeline de clonacion completo.
+- Clonacion de voz: el modelo base soporta voice cloning (segun los tags de Hugging Face), aunque el bundle no incluye el pipeline de clonacion completo.
 - Ejecucion totalmente en dispositivo (on-device) sin dependencias de Python, gracias a ONNX Runtime y tract.
 - Soporte multiplataforma: macOS, Linux y Windows, con aceleracion por CPU o GPU segun el sistema operativo.
 - Cuantizacion Q4 int4 que permite ejecucion eficiente en hardware modesto.
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 - Sin informacion sobre sesgos o errores de pronunciacion: no se han publicado estudios sobre la robustez del modelo ante dialectos, acentos o ruido.
 - Dependencia de ONNX Runtime y tract: el bundle requiere que estas librerias esten disponibles en el sistema, aunque se incluyen en el repositorio.
 - No se incluye el pipeline de clonacion de voz: el bundle solo contiene el runtime de sintesis; la clonacion requiere el modelo base y un procesamiento adicional no documentado en este repositorio.
-- Sin garantias de soporte: el proyecto parece mantenido por un unico autor (Reza2kn), con 0 descargas y 0 likes en HuggingFace, lo que indica una adopcion muy limitada.
+- Sin garantias de soporte: el proyecto parece mantenido por un unico autor (Reza2kn), con 0 descargas y 0 likes en Hugging Face, lo que indica una adopcion muy limitada.
 
 ## Enlaces
 

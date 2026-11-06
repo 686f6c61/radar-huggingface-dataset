@@ -103,7 +103,7 @@ No se dispone de datos para comparar con otras familias de lentes (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bubskee/dolos-qwen25-workspace-lenses
+- Repositorio en Hugging Face: https://huggingface.co/bubskee/dolos-qwen25-workspace-lenses
 - Modelo Dolos-1.5B (Poseidon Research): https://huggingface.co/Poseidon-Research/Dolos-1.5B
 - Modelo padre Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

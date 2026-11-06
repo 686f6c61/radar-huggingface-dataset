@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye otros LoRAs comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-krea2-pov-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-krea2-pov-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2114953590561751042
 - Flujo de trabajo y aplicación asociados: https://www.runninghub.ai/zh-cn/post/2114963530104549377
 - Página del autor: https://www.runninghub.ai/user-center/2085048586185814018

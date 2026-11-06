@@ -81,7 +81,7 @@ Qwen2.5-Coder destaca por su contexto de 128K, superior a los 16K de sus competi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/OMAAPP/qwen2.5-coder-7b-gguf
+- Repositorio de Hugging Face: https://huggingface.co/OMAAPP/qwen2.5-coder-7b-gguf
 - Repositorio original de Qwen (GGUF): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF
 - Repositorio alternativo de QuantFactory: https://huggingface.co/QuantFactory/Qwen2.5-Coder-7B-GGUF
 - Página del modelo en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF

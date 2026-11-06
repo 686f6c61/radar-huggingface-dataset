@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CobrIX-1.5-preview-Coder-Flash-33B-A13B (GGUF) | ~33B totales / ~13B activos | no disponible (ejemplo con 8192) | sin benchmarks publicados | MIT | GGUF en HuggingFace |
-| CobrIX-1.5-preview-Coder-Flash-33B-A13B (base) | ~33B totales / ~13B activos | no disponible | sin benchmarks publicados | MIT | safetensors en HuggingFace |
+| CobrIX-1.5-preview-Coder-Flash-33B-A13B (GGUF) | ~33B totales / ~13B activos | no disponible (ejemplo con 8192) | sin benchmarks publicados | MIT | GGUF en Hugging Face |
+| CobrIX-1.5-preview-Coder-Flash-33B-A13B (base) | ~33B totales / ~13B activos | no disponible | sin benchmarks publicados | MIT | safetensors en Hugging Face |
 | Alternativas de terceros de tamaño y tarea comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos verificables sobre modelos alternativos, por lo que no es posible establecer una comparación cuantitativa con otras propuestas de la misma categoría.

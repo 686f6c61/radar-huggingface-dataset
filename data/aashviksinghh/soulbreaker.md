@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SoulBreaker es un modelo publicado en HuggingFace por el usuario AashvikSinghh bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico texto presente es el encabezado de licencia (`license: mit`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia asociado.
+SoulBreaker es un modelo publicado en Hugging Face por el usuario AashvikSinghh bajo licencia MIT. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el unico texto presente es el encabezado de licencia (`license: mit`), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. Tampoco se declara un pipeline de inferencia asociado.
 
 El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal, lo que sugiere una publicacion reciente sin traccion ni validacion por parte de la comunidad. Los unicos metadatos disponibles son las etiquetas `license:mit` y `region:us`.
 
@@ -70,7 +70,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| SoulBreaker | no disponible | no disponible | MIT | no disponible | HuggingFace, 0 descargas |
+| SoulBreaker | no disponible | no disponible | MIT | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AashvikSinghh/SoulBreaker
+- Hugging Face: https://huggingface.co/AashvikSinghh/SoulBreaker
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

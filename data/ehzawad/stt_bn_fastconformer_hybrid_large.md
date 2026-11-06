@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stt_bn_fastconformer_hybrid_large` es un modelo de reconocimiento automático de voz (ASR) para bengalí (বাংলা), desarrollado por el usuario `ehzawad` y publicado en HuggingFace. Se basa en la arquitectura **FastConformer Hybrid** de NVIDIA NeMo, con 114,6 millones de parámetros, y es una adaptación del checkpoint inglés `nvidia/stt_en_fastconformer_hybrid_large_pc` a la que se le ha incorporado un vocabulario SentencePiece de 256 piezas específico para bengalí. El modelo combina dos cabezas de decodificación que comparten un mismo encoder: **RNNT** (más precisa, usada por defecto) y **CTC** (más rápida), permitiendo cambiar entre ambas en tiempo de ejecución.
+`stt_bn_fastconformer_hybrid_large` es un modelo de reconocimiento automático de voz (ASR) para bengalí (বাংলা), desarrollado por el usuario `ehzawad` y publicado en Hugging Face. Se basa en la arquitectura **FastConformer Hybrid** de NVIDIA NeMo, con 114,6 millones de parámetros, y es una adaptación del checkpoint inglés `nvidia/stt_en_fastconformer_hybrid_large_pc` a la que se le ha incorporado un vocabulario SentencePiece de 256 piezas específico para bengalí. El modelo combina dos cabezas de decodificación que comparten un mismo encoder: **RNNT** (más precisa, usada por defecto) y **CTC** (más rápida), permitiendo cambiar entre ambas en tiempo de ejecución.
 
 El modelo está entrenado exclusivamente para bengalí, sin soporte para code-mixed (banglish) ni multilingüismo. Está pensado para integrarse en pipelines de transcripción de audio, ya sea por lotes o en tiempo real con segmentación previa mediante VAD. En el benchmark oficial sobre el conjunto de test FLEURS `bn_in`, alcanza un WER del 29,26 % con decodificación RNNT greedy y un CER del 8,13 %. Su relevancia radica en ser una opción de código abierto con licencia CC-BY-SA-4.0 para un idioma con escasos recursos de ASR de calidad.
 
@@ -85,7 +85,7 @@ Los tres modelos de NVIDIA comparten la misma arquitectura base y tamano de para
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ehzawad/stt_bn_fastconformer_hybrid_large)
+- [Modelo en Hugging Face](https://huggingface.co/ehzawad/stt_bn_fastconformer_hybrid_large)
 - [Checkpoint base en ingles (NVIDIA)](https://huggingface.co/nvidia/stt_en_fastconformer_hybrid_large_pc) (referenciado en la model card)
 - [Modelo arabe similar de NVIDIA](https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pcd_v1.0)
 - [Modelo ingles streaming de NVIDIA](https://huggingface.co/nvidia/stt_en_fastconformer_hybrid_large_streaming_multi)

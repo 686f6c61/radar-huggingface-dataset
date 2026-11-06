@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Priming es una familia de modelos de generación de imágenes desarrollada por Jaeyeon Kim (jaykim1102), publicada en HuggingFace junto con su repositorio de código en GitHub. Se trata de checkpoints de investigación de modelos condicionales por clase sobre ImageNet-256, con variantes de tamaño B y L, en distintas fases de entrenamiento: pretraining de reconstrucción tras 80 y 160 épocas, y post-entrenamiento distribucional tras 25.000 actualizaciones. Adicionalmente, el repositorio incluye checkpoints nativos de texto-a-imagen (MM-JiT-B/16) a 512×512 antes y después de post-entrenamiento OT.
+Priming es una familia de modelos de generación de imágenes desarrollada por Jaeyeon Kim (jaykim1102), publicada en Hugging Face junto con su repositorio de código en GitHub. Se trata de checkpoints de investigación de modelos condicionales por clase sobre ImageNet-256, con variantes de tamaño B y L, en distintas fases de entrenamiento: pretraining de reconstrucción tras 80 y 160 épocas, y post-entrenamiento distribucional tras 25.000 actualizaciones. Adicionalmente, el repositorio incluye checkpoints nativos de texto-a-imagen (MM-JiT-B/16) a 512×512 antes y después de post-entrenamiento OT.
 
 El modelo resuelve el problema de la generación de imágenes condicionada, tanto por clase (ImageNet) como por texto, mediante una arquitectura denominada MM-JiT (Multi-Modal JiT) con backbone tipo transformer. La relevancia actual radica en que se publican los checkpoints completos de entrenamiento (incluyendo estado del optimizador) junto con recetas de reproducción, estadísticas FID congeladas y exportaciones verificadas a Diffusers, lo que facilita la investigación reproducible sobre modelos generativos.
 
@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks de los checkpoints ImageNet-256 en la infor
 
 | Modelo | Parámetros | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Priming (ImageNet-256, B/L) | no disponible | 256×256, condicional por clase | no disponible (checkpoints); Apache-2.0 (exportaciones Diffusers) | HuggingFace, código en GitHub |
-| Priming (T2I, MM-JiT-B/16) | no disponible | 512×512, texto-a-imagen | no disponible | HuggingFace, código nativo |
+| Priming (ImageNet-256, B/L) | no disponible | 256×256, condicional por clase | no disponible (checkpoints); Apache-2.0 (exportaciones Diffusers) | Hugging Face, código en GitHub |
+| Priming (T2I, MM-JiT-B/16) | no disponible | 512×512, texto-a-imagen | no disponible | Hugging Face, código nativo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks de los checkpoints ImageNet-256 en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaykim1102/priming
+- Modelo en Hugging Face: https://huggingface.co/jaykim1102/priming
 - Repositorio de código y guía de configuración: https://github.com/JaeyeonKim01/priming
 - Dataset de entrenamiento (ImageNet procesado): https://huggingface.co/datasets/jaykim1102/priming
 - Implementación comunitaria de referencia (BiliSakura): https://huggingface.co/BiliSakura/Priming-diffusers/tree/a0c1743f49eb0f972feec280356ccaab90298b20

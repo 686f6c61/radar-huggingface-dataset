@@ -86,7 +86,7 @@ El modelo es una alternativa a la cuantización FP8 de Red Hat, pero con pesos I
 
 ## Enlaces
 
-- [HuggingFace: devpramod-intel/granite-4.1-8b-quantized.w8a8](https://huggingface.co/devpramod-intel/granite-4.1-8b-quantized.w8a8)
+- [Hugging Face: devpramod-intel/granite-4.1-8b-quantized.w8a8](https://huggingface.co/devpramod-intel/granite-4.1-8b-quantized.w8a8)
 - [Modelo base: ibm-granite/granite-4.1-8b](https://huggingface.co/ibm-granite/granite-4.1-8b)
 - [Colección de modelos cuantizados de IBM Granite](https://huggingface.co/collections/ibm-granite/granite-quantized-models)
 - [Documentación de Granite 4.1 de IBM](https://www.ibm.com/granite/docs/models/granite4-1)

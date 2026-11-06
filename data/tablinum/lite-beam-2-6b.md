@@ -99,7 +99,7 @@ La comparacion con modelos de otros fabricantes del mismo tamano no esta disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tablinum/Lite-Beam-2.6B
+- Modelo en Hugging Face: https://huggingface.co/tablinum/Lite-Beam-2.6B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B-Instruct
 - Repositorio del cliente terrabeam: https://github.com/chadstthomas-svg/terrabeam
 - Documentacion de integracion (harnesses): https://github.com/chadstthomas-svg/terrabeam/blob/master/docs/harnesses.md

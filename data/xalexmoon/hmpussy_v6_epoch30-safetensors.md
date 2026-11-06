@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hmpussy_v6_epoch30.safetensors` es un adaptador LoRA (Low-Rank Adaptation) para generación de texto a imagen, desarrollado por el usuario xalexmoon y publicado en HuggingFace. Está diseñado para funcionar sobre el modelo base MiniMaxAI/MiniMax-H3, un modelo de difusión de última generación orientado a síntesis de imágenes a partir de prompts textuales. El adaptador tiene un tamaño de repositorio de 0.6 GB y se distribuye en formato safetensors, integrable mediante la librería diffusers.
+El modelo `hmpussy_v6_epoch30.safetensors` es un adaptador LoRA (Low-Rank Adaptation) para generación de texto a imagen, desarrollado por el usuario xalexmoon y publicado en Hugging Face. Está diseñado para funcionar sobre el modelo base MiniMaxAI/MiniMax-H3, un modelo de difusión de última generación orientado a síntesis de imágenes a partir de prompts textuales. El adaptador tiene un tamaño de repositorio de 0.6 GB y se distribuye en formato safetensors, integrable mediante la librería diffusers.
 
 La relevancia de este tipo de adaptadores radica en que permiten especializar un modelo base sin necesidad de reentrenarlo por completo, ajustando estilos, dominios o conceptos concretos con un coste computacional reducido. Sin embargo, la información pública disponible es extremadamente limitada: no se especifican parámetros, datos de entrenamiento, licencia ni capacidades concretas. Además, el nombre del archivo sugiere un posible contenido no apto para todos los públicos, aunque no hay confirmación oficial. Por tanto, esta ficha se basa únicamente en los metadatos y la model card proporcionada, marcando como "no disponible" cualquier dato no verificado.
 
@@ -65,5 +65,5 @@ No disponible. No se conocen otros adaptadores LoRA del mismo autor ni comparaci
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/xalexmoon/hmpussy_v6_epoch30.safetensors)
+- [Página del modelo en Hugging Face](https://huggingface.co/xalexmoon/hmpussy_v6_epoch30.safetensors)
 - [Modelo base MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3) (enlace inferido del campo base_model, no verificado)

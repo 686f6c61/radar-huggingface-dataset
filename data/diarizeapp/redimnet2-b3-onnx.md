@@ -78,5 +78,5 @@ No disponible. La información proporcionada no incluye datos de parámetros, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diarizeapp/redimnet2-b3-onnx
+- Modelo en Hugging Face: https://huggingface.co/diarizeapp/redimnet2-b3-onnx
 - Repositorio del mantenedor: https://github.com/benzy/diarize

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio GJATT/mms-pa_Sep20__difevalset contiene un checkpoint de reconocimiento automático de voz (ASR) publicado en HuggingFace por el usuario GJATT. Las etiquetas del repositorio lo identifican como un modelo basado en la arquitectura wav2vec2 y orientado al pipeline `automatic-speech-recognition`. El identificador del repositorio, `mms-pa`, sugiere una variante de la familia MMS (Massively Multilingual Speech) de Meta para el idioma punyabí (`pa`), y el sufijo `Sep20__difevalset` apunta a un ajuste fino o evaluación sobre un conjunto distinto del habitual, pero el autor no documenta ninguno de estos extremos en la model card.
+El repositorio GJATT/mms-pa_Sep20__difevalset contiene un checkpoint de reconocimiento automático de voz (ASR) publicado en Hugging Face por el usuario GJATT. Las etiquetas del repositorio lo identifican como un modelo basado en la arquitectura wav2vec2 y orientado al pipeline `automatic-speech-recognition`. El identificador del repositorio, `mms-pa`, sugiere una variante de la familia MMS (Massively Multilingual Speech) de Meta para el idioma punyabí (`pa`), y el sufijo `Sep20__difevalset` apunta a un ajuste fino o evaluación sobre un conjunto distinto del habitual, pero el autor no documenta ninguno de estos extremos en la model card.
 
 El dato verificable más relevante es el recuento de parámetros obtenido de los ficheros safetensors: 964.770.271 parámetros, una cifra coherente con los checkpoints ASR de gran tamano de la familia MMS (aproximadamente 965 millones), y muy superior a los 317 millones de wav2vec2-large. El repositorio ocupa 88,8 GB, un tamano desproporcionado respecto al peso teórico de los parámetros en fp32 (unos 3,9 GB), lo que indica que contiene múltiples copias de pesos, estados de optimizador o checkpoints intermedios.
 
-La relevancia de este repositorio es limitada y fundamentalmente de investigación: cuenta con 93 descargas y 0 likes, no tiene licencia declarada, no especifica idiomas soportados y su model card es la plantilla automática de HuggingFace sin ninguna sección completada. Cualquier uso en producción requeriría validar primero el origen de los pesos y las condiciones legales.
+La relevancia de este repositorio es limitada y fundamentalmente de investigación: cuenta con 93 descargas y 0 likes, no tiene licencia declarada, no especifica idiomas soportados y su model card es la plantilla automática de Hugging Face sin ninguna sección completada. Cualquier uso en producción requeriría validar primero el origen de los pesos y las condiciones legales.
 
 ## Especificaciones técnicas
 
@@ -29,7 +29,7 @@ La relevancia de este repositorio es limitada y fundamentalmente de investigaci�
 
 La unica informacion estructural disponible procede de las etiquetas del repositorio: `wav2vec2`, `transformers` y `automatic-speech-recognition`. wav2vec2 es una arquitectura de red convolucional mas transformer encoder que aprende representaciones del habla de forma auto-supervisada y se ajusta despues con una cabeza de clasificacion CTC para transcripcion. El recuento de 964,77 millones de parametros es consistente con los checkpoints ASR multilingues de la familia MMS, que emplean un vocabulario de salida mucho mayor que los wav2vec2 clasicos para cubrir miles de idiomas; sin embargo, el autor no confirma esta filiacion.
 
-No hay informacion sobre el conjunto de datos de entrenamiento, el numero de tokens o horas de audio, la composicion del corpus, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o decodificacion especulativa (ninguna de ellas es habitual en ASR). La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el articulo citado en la propia plantilla para el calculo de emisiones de carbono, y no a un articulo descriptivo del modelo; por tanto, no aporta informacion tecnica.
+No hay informacion sobre el conjunto de datos de entrenamiento, el numero de tokens o horas de audio, la composicion del corpus, ni sobre si se aplicaron tecnicas de ajuste como RLHF, DPO o decodificacion especulativa (ninguna de ellas es habitual en ASR). La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el articulo citado en la propia plantilla para el calculo de emisiones de carbono, y no a un articulo descriptivo del modelo; por tanto, no aporta informacion tecnica.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GJATT/mms-pa_Sep20__difevalset | 964.770.271 | no disponible | no disponible | HuggingFace, 93 descargas |
-| wav2vec2-large (familia original de Meta) | 317 millones | audio de aproximadamente 30 s (referencia general de la arquitectura) | no verificada en la informacion disponible | ampliamente disponible en HuggingFace |
-| Whisper large-v3 (OpenAI) | 1.550 millones | ventanas de 30 s | no verificada en la informacion disponible | ampliamente disponible en HuggingFace |
-| MMS ASR multilingue (Meta) | aproximadamente 965 millones segun variante | no disponible | no verificada en la informacion disponible | ampliamente disponible en HuggingFace |
+| GJATT/mms-pa_Sep20__difevalset | 964.770.271 | no disponible | no disponible | Hugging Face, 93 descargas |
+| wav2vec2-large (familia original de Meta) | 317 millones | audio de aproximadamente 30 s (referencia general de la arquitectura) | no verificada en la informacion disponible | ampliamente disponible en Hugging Face |
+| Whisper large-v3 (OpenAI) | 1.550 millones | ventanas de 30 s | no verificada en la informacion disponible | ampliamente disponible en Hugging Face |
+| MMS ASR multilingue (Meta) | aproximadamente 965 millones segun variante | no disponible | no verificada en la informacion disponible | ampliamente disponible en Hugging Face |
 
 No se dispone de datos de rendimiento (WER) de ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad. Cualquier afirmacion sobre calidad relativa seria especulativa.
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento (WER) de ninguno de estos modelos en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GJATT/mms-pa_Sep20__difevalset
+- Repositorio en Hugging Face: https://huggingface.co/GJATT/mms-pa_Sep20__difevalset
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes en la busqueda web realizada.

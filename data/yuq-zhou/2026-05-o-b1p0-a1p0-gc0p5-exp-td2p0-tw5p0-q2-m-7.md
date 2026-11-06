@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7` es un checkpoint de generación de texto en formato HuggingFace estándar, publicado por el usuario yuq-zhou como artefacto de respaldo de un experimento de investigación. El nombre del repositorio codifica parámetros de configuración del experimento (por ejemplo, `b1p0`, `a1p0`, `gc0p5`, `tw5p0`), lo que sugiere que forma parte de una serie de pruebas sistemáticas sobre arquitecturas o métodos de entrenamiento, aunque no se aporta ninguna documentación adicional en la model card.
+El modelo `yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7` es un checkpoint de generación de texto en formato Hugging Face estándar, publicado por el usuario yuq-zhou como artefacto de respaldo de un experimento de investigación. El nombre del repositorio codifica parámetros de configuración del experimento (por ejemplo, `b1p0`, `a1p0`, `gc0p5`, `tw5p0`), lo que sugiere que forma parte de una serie de pruebas sistemáticas sobre arquitecturas o métodos de entrenamiento, aunque no se aporta ninguna documentación adicional en la model card.
 
 Con 7.615.616.512 parámetros (aproximadamente 7,6 mil millones), el modelo se alinea con la categoría de tamaño medio de los LLM actuales. El tag `qwen2` en los metadatos indica que la arquitectura subyacente es probablemente la familia Qwen2, aunque no se confirma en la model card. El repositorio contiene pesos en formato `safetensors` y ocupa 15,2 GB, lo que sugiere pesos en precisión FP16 o BF16. No se ha publicado ninguna información sobre el entrenamiento, las capacidades, los benchmarks o la licencia, lo que limita su uso a entornos de investigación donde se conozca el contexto del experimento.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7)
+- [Modelo en Hugging Face](https://huggingface.co/yuq-zhou/2026-05-o-b1p0-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7)
 - [Checkpoint relacionado b0p3-a1p0-gc0p5-exp-td2p0-tw5p0-lam0p1-q2-m-7](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td2p0-tw5p0-lam0p1-q2-m-7)
 - [Checkpoint relacionado b0p3-a1p0-gc0p5-exp-td2p0-tw5p0-qwen3annot-q2-m-7](https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a1p0-gc0p5-exp-td2p0-tw5p0-qwen3annot-q2-m-7)
 - [Checkpoint b0p2-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7-last en FriendliAI](https://friendli.ai/models/yuq-zhou/2026-05-o-b0p2-a1p0-gc0p5-exp-td2p0-tw5p0-q2-m-7-last)

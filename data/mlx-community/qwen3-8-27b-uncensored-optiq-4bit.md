@@ -78,7 +78,7 @@ La principal diferencia frente al modelo original es la ausencia de filtros de r
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-Uncensored-OptiQ-4bit
+- Pagina del modelo en Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-Uncensored-OptiQ-4bit
 - Proyecto OptiQ: https://mlx-optiq.com
 - Catalogo de modelos OptiQ: https://mlx-optiq.com/models
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

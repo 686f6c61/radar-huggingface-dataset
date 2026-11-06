@@ -77,7 +77,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-NVFP4
 - Espejo abliterado: https://huggingface.co/dealignai/GLM-5.3-ABLITERATED-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Sitio de dealignai: https://dealign.ai/

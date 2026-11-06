@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-pick-v3-recent-9600` es una política de control robótico basada en ACT (Action Chunking with Transformers) publicada por el usuario IkerAzurmendi en HuggingFace, dentro del ecosistema LeRobot. Resuelve una tarea concreta de manipulación sobre un brazo SO-101: coger una pieza de una caja y sostenerla frente a la cámara. El modelo toma como entrada la imagen de una cámara frontal, la de una cámara en la muñeca y las seis posiciones articulares, y devuelve un *chunk* de 90 objetivos articulares futuros a 30 fps.
+`act-pick-v3-recent-9600` es una política de control robótico basada en ACT (Action Chunking with Transformers) publicada por el usuario IkerAzurmendi en Hugging Face, dentro del ecosistema LeRobot. Resuelve una tarea concreta de manipulación sobre un brazo SO-101: coger una pieza de una caja y sostenerla frente a la cámara. El modelo toma como entrada la imagen de una cámara frontal, la de una cámara en la muñeca y las seis posiciones articulares, y devuelve un *chunk* de 90 objetivos articulares futuros a 30 fps.
 
 Se trata de una variante de la tercera ronda de experimentos (v3) entrenada únicamente con las sesiones recientes del 24 de octubre (a partir de las 16:58), con piezas colocadas en esquinas y bordes, más dos sesiones de tarde: 100 episodios en total. El checkpoint publicado corresponde al paso 9.600 de una ejecución de 12.000 pasos y, según el autor, no es el mejor de su ejecución (el mejor es el de 12.000), sino que se publica por completitud.
 
@@ -87,10 +87,10 @@ El propio autor advierte de que los mejores checkpoints de las ejecuciones princ
 
 | Modelo | Parámetros | Datos de entrenamiento | Error offline (línea base) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-pick-v3-recent-9600 (este) | 51,66 M | 100 episodios, sesiones recientes | 17,10 (20,71) | Apache 2.0 | HuggingFace |
-| act-pick-v3-6000 | No disponible en la información | 398 episodios | 15,16 (≈20,7, no detallada) | Apache 2.0 | HuggingFace |
-| act-pick-v3-strict-2400 | No disponible en la información | 205 episodios filtrados (6-12 s) | 15,14 | Apache 2.0 | HuggingFace |
-| act-pick-v3-chunk60-4800 | No disponible en la información | 331 episodios, chunk 60 | 11,94 (16,23) | Apache 2.0 | HuggingFace |
+| act-pick-v3-recent-9600 (este) | 51,66 M | 100 episodios, sesiones recientes | 17,10 (20,71) | Apache 2.0 | Hugging Face |
+| act-pick-v3-6000 | No disponible en la información | 398 episodios | 15,16 (≈20,7, no detallada) | Apache 2.0 | Hugging Face |
+| act-pick-v3-strict-2400 | No disponible en la información | 205 episodios filtrados (6-12 s) | 15,14 | Apache 2.0 | Hugging Face |
+| act-pick-v3-chunk60-4800 | No disponible en la información | 331 episodios, chunk 60 | 11,94 (16,23) | Apache 2.0 | Hugging Face |
 
 Los tres alternativas son variantes de la misma familia y receta, por lo que comparten arquitectura y licencia; las diferencias están en el volumen y filtrado de datos y en el horizonte del chunk. El error de `chunk60` no es directamente comparable con los demás porque su línea base es distinta (16,23 frente a 20,71). No se dispone de comparación con políticas de otros autores.
 
@@ -109,7 +109,7 @@ Los tres alternativas son variantes de la misma familia y receta, por lo que com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-9600
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-9600
 - Checkpoint de la misma ejecución con mejor resultado (12k), referenciado en la model card: https://huggingface.co/IkerAzurmendi/act-pick-v3-recent-12000
 - Run completo con todos los datos (398 episodios), referenciado en la model card: https://huggingface.co/IkerAzurmendi/act-pick-v3-6000
 - Run con filtro de calidad estricto, referenciado en la model card: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400

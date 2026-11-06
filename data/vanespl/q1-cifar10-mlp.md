@@ -71,9 +71,9 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 - Sin soporte de texto, audio ni vision de alta resolucion: solo acepta vectores de 3072 dimensiones normalizados con la media y desviacion de `preprocessing.npz`.
 - Riesgo de desajuste de preprocesado: si se usa otra normalizacion, las predicciones seran invalidas.
 - Sin garantias de robustez ni de calibracion: no hay informacion sobre sesgos, alucinacion (no aplica a generacion) ni comportamiento fuera de distribucion.
-- Repositorio de 0.0 GB segun HuggingFace: conviene verificar que `model.pt` se ha subido correctamente antes de integrarlo.
+- Repositorio de 0.0 GB segun Hugging Face: conviene verificar que `model.pt` se ha subido correctamente antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vanespl/q1-cifar10-mlp
+- Hugging Face: https://huggingface.co/Vanespl/q1-cifar10-mlp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

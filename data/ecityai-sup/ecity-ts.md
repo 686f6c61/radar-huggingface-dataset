@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eCityAI-Sup/eCity-TS
+- Modelo en Hugging Face: https://huggingface.co/eCityAI-Sup/eCity-TS
 - Mirror en ModelScope: https://modelscope.cn/models/eCityAI/eCity-TS
 - Paper referenciado en tags: arXiv:2605.20119 (no verificado en la información disponible)

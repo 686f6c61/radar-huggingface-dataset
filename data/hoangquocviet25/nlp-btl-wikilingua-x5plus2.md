@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: con 227M parámetros, en FP16 el modelo ocupa aproximadamente 0,45 GB de memoria, más los activos de atención. Una GPU con 4 GB de VRAM es suficiente para inferencia con batch pequeño.
 - GPU recomendadas: NVIDIA T4, RTX 3060, RTX 4090 o cualquier GPU con al menos 4 GB de VRAM. También puede ejecutarse en CPU con cuantización (aunque no se proporcionan pesos GGUF).
 - Compatibilidad con GPU de consumo: sí, cabe en tarjetas como RTX 3060 o RTX 4060.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede servirse con vLLM, TGI, o mediante la librería `transformers` en un script Python. También es posible convertirlo a GGUF para usar con llama.cpp u Ollama, aunque no se ofrecen conversiones oficiales.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede servirse con vLLM, TGI, o mediante la librería `transformers` en un script Python. También es posible convertirlo a GGUF para usar con llama.cpp u Ollama, aunque no se ofrecen conversiones oficiales.
 - Latencia y throughput: no disponible. Se estima una latencia de decenas de milisegundos por generación en una GPU moderna, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No se dispone de comparativas de rendimiento (ROUGE, etc.) entre estos modelos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoangQuocViet25/nlp-btl-wikilingua-x5plus2
+- Modelo en Hugging Face: https://huggingface.co/HoangQuocViet25/nlp-btl-wikilingua-x5plus2
 - Modelo base: https://huggingface.co/VietAI/vit5-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/huy-nh-2000/wikilingua

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hamm-eyer/dino-contrastive-efficient56` es un repositorio experimental publicado por hamm-eyer en HuggingFace que implementa una arquitectura Dino para aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un codebase de referencia con un checkpoint de inicializacion de 33.088 parametros, destinado a realizar pruebas de humo y a inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+El modelo `hamm-eyer/dino-contrastive-efficient56` es un repositorio experimental publicado por hamm-eyer en Hugging Face que implementa una arquitectura Dino para aprendizaje contrastivo. No se trata de un modelo entrenado, sino de un codebase de referencia con un checkpoint de inicializacion de 33.088 parametros, destinado a realizar pruebas de humo y a inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El codigo base mantiene una configuracion reducida: arquitectura Dino a escala base, atencion lineal, fusion por atencion cruzada, activacion swish y normalizacion por lotes. Incluye `config.json`, `training_args.json` y `model.safetensors` como artefactos de arranque. El autor no reivindica ningun resultado de benchmark y advierte de que el checkpoint no ha sido entrenado ni auditado. La relevancia actual es puramente metodologica: sirve como punto de partida para experimentar con arquitecturas contrastivas, no como modelo utilizable en produccion.
 
@@ -74,4 +74,4 @@ No disponible. Dado que se trata de un checkpoint experimental sin entrenar de 3
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hamm-eyer/dino-contrastive-efficient56
+- Hugging Face: https://huggingface.co/hamm-eyer/dino-contrastive-efficient56

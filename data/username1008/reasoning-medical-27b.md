@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reasoning-Medical-27B es un modelo multimodal (texto e imagen) afinado para razonamiento médico, desarrollado por EpistemeAI y publicado en HuggingFace bajo el identificador `Username1008/Reasoning-Medical-27B`. Parte de `unsloth/Qwen3.6-27B` y se ha especializado mediante ajuste fino supervisado con cadenas de razonamiento (Chain-of-Thought) sobre unos 370.000 pares pregunta-respuesta de temática médica, usando el entrenador GRPO junto con las optimizaciones de Unsloth. El objetivo declarado es cubrir razonamiento clínico, genética médica y biología/medicina de nivel universitario, con un enfoque "universal" no restringido a un país concreto.
+Reasoning-Medical-27B es un modelo multimodal (texto e imagen) afinado para razonamiento médico, desarrollado por EpistemeAI y publicado en Hugging Face bajo el identificador `Username1008/Reasoning-Medical-27B`. Parte de `unsloth/Qwen3.6-27B` y se ha especializado mediante ajuste fino supervisado con cadenas de razonamiento (Chain-of-Thought) sobre unos 370.000 pares pregunta-respuesta de temática médica, usando el entrenador GRPO junto con las optimizaciones de Unsloth. El objetivo declarado es cubrir razonamiento clínico, genética médica y biología/medicina de nivel universitario, con un enfoque "universal" no restringido a un país concreto.
 
 La arquitectura es híbrida: combina capas de atención lineal (Gated DeltaNet) con capas de atención completa con GQA en un patrón repetido 16 veces, e incorpora un encoder de visión. El modelo tiene 27.781.427.952 parámetros (≈27,78 B), dimensión oculta de 5120, 64 capas y un vocabulario de 248.320 tokens. Declara 262.144 tokens de contexto nativo, extensible hasta 1.010.000, lo que lo sitúa en la liga de modelos de contexto muy largo.
 
@@ -78,9 +78,9 @@ Advertencia de la propia model card: la comparativa amplia que acompaña al dato
 
 | Modelo | Parámetros | Contexto | MedQA (2-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reasoning-Medical-27B | 27,78 B (denso) | 262.144 (ext. 1.010.000) | 93,00% | Apache 2.0 | HuggingFace (`Username1008/Reasoning-Medical-27B`), variante NVFP4, playground |
-| Qwen3.6-27B (modelo base) | ≈27 B | No disponible en la información proporcionada | 84,40% | No disponible en la información proporcionada | HuggingFace (`unsloth/Qwen3.6-27B`) |
-| Reasoning-Medical-27B-NVFP4 | 27,78 B (cuantizado NVFP4) | Heredado del modelo original | No disponible | No disponible | HuggingFace (`switzerchees/Reasoning-Medical-27B-NVFP4`) |
+| Reasoning-Medical-27B | 27,78 B (denso) | 262.144 (ext. 1.010.000) | 93,00% | Apache 2.0 | Hugging Face (`Username1008/Reasoning-Medical-27B`), variante NVFP4, playground |
+| Qwen3.6-27B (modelo base) | ≈27 B | No disponible en la información proporcionada | 84,40% | No disponible en la información proporcionada | Hugging Face (`unsloth/Qwen3.6-27B`) |
+| Reasoning-Medical-27B-NVFP4 | 27,78 B (cuantizado NVFP4) | Heredado del modelo original | No disponible | No disponible | Hugging Face (`switzerchees/Reasoning-Medical-27B-NVFP4`) |
 | Otros modelos médicos de tamaño comparable (Med-PaLM 2, Meditron, BioMistral, MedGemma) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación con datos numéricos verificables en la información proporcionada es frente al modelo base. Cualquier comparación con otros modelos médicos exigiría reejecutar los benchmarks bajo un protocolo común, tal y como advierte la propia model card.
@@ -101,7 +101,7 @@ La única comparación con datos numéricos verificables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Username1008/Reasoning-Medical-27B
+- Modelo en Hugging Face: https://huggingface.co/Username1008/Reasoning-Medical-27B
 - Repositorio del autor original (BF16): https://huggingface.co/EpistemeAI/Reasoning-Medical-27B
 - Variante NVFP4: https://huggingface.co/switzerchees/Reasoning-Medical-27B-NVFP4
 - Playground: https://huggingface.co/spaces/EpistemeAI/reasoning-medical-27b

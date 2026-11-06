@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EllipsesMark/MiniMax-H3_comfy es un repositorio alojado en HuggingFace por el usuario EllipsesMark que, segun la propia model card, recopila "various MiniMax-H3 models converted for ComfyUI usage", es decir, conversiones de modelos MiniMax-H3 preparadas para su uso dentro de ComfyUI. El repositorio ocupa 3,6 GB y fue creado y actualizado el 2026-09-15, sin ninguna actualizacion posterior registrada.
+EllipsesMark/MiniMax-H3_comfy es un repositorio alojado en Hugging Face por el usuario EllipsesMark que, segun la propia model card, recopila "various MiniMax-H3 models converted for ComfyUI usage", es decir, conversiones de modelos MiniMax-H3 preparadas para su uso dentro de ComfyUI. El repositorio ocupa 3,6 GB y fue creado y actualizado el 2026-09-15, sin ninguna actualizacion posterior registrada.
 
 No se trata de un lanzamiento oficial: no hay pipeline declarado, no se especifica licencia, idiomas ni autoría original del modelo subyacente, y la unica etiqueta presente es `region:us`, que es una etiqueta de metadatos geograficos y no una licencia ni una categoria de tarea. El repositorio acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad en el momento de redactar esta ficha.
 
@@ -20,7 +20,7 @@ Su relevancia es, por tanto, acotada y de perfil practico: sirve como punto de e
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (la unica etiqueta del repo es `region:us`, que no es una licencia; tampoco se declara licencia para la LoRA de Lightx2v referenciada) |
 | Formato de pesos | no disponible (el repositorio esta orientado a ComfyUI y pesa 3,6 GB, lo que sugiere pesos compatibles con dicho entorno, pero el formato concreto no se especifica) |
-| Desarrollador / autor del repositorio | EllipsesMark (usuario de HuggingFace); la autoria del modelo MiniMax-H3 subyacente no se aclara en la informacion disponible |
+| Desarrollador / autor del repositorio | EllipsesMark (usuario de Hugging Face); la autoria del modelo MiniMax-H3 subyacente no se aclara en la informacion disponible |
 | Fecha de creacion / ultima actualizacion | 2026-09-15 / 2026-09-15 |
 | Tamano del repositorio | 3,6 GB |
 | Descargas / likes | 0 / 0 |
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de arquitectura, pa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EllipsesMark/MiniMax-H3_comfy
+- Repositorio en Hugging Face: https://huggingface.co/EllipsesMark/MiniMax-H3_comfy
 - LoRA de destilado Lightx2v / Minimax-h3-Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo/tree/main
 - Muestras en video incluidas en la model card (4 pasos, 0,75 de fuerza, sampler `er_sde`): https://cdn-uploads.huggingface.co/production/uploads/63297908f0b2fc94904a65b8/2k-mKHz4D0-88lC-ELiv9.mp4
 - Muestras en video incluidas en la model card (4 pasos, 0,75 de fuerza, sampler `sa_solver`): https://cdn-uploads.huggingface.co/production/uploads/63297908f0b2fc94904a65b8/kr1DyCMsfPP4EwY9Butlp.mp4

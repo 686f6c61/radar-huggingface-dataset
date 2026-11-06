@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ofgoto4209/clip-classification-ablation` es un repositorio de HuggingFace publicado el 19 de octubre de 2026 que contiene una implementación propia y mínima de una arquitectura tipo CLIP orientada a clasificación, acompañada de una configuración explícita y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado: el propio autor indica en la model card que se trata de un punto de partida reproducible ("a reproducible starting point, not a trained model release") y que el checkpoint sirve únicamente para pruebas de humo.
+`ofgoto4209/clip-classification-ablation` es un repositorio de Hugging Face publicado el 19 de octubre de 2026 que contiene una implementación propia y mínima de una arquitectura tipo CLIP orientada a clasificación, acompañada de una configuración explícita y un checkpoint de inicialización en formato safetensors. No es un modelo entrenado: el propio autor indica en la model card que se trata de un punto de partida reproducible ("a reproducible starting point, not a trained model release") y que el checkpoint sirve únicamente para pruebas de humo.
 
 El dato más relevante es la escala real: el recuento de parámetros de `model.safetensors` es de 33.088 parámetros (unos 33 mil), muy lejos de lo que sugiere la etiqueta "xlarge" que aparece en la tabla de arquitectura de la model card. Esa incoherencia debe tenerse en cuenta: la etiqueta de escala es un identificador de configuración generada, no una medida de capacidad. El repositorio ocupa 0,0 GB y no registra descargas ni valoraciones.
 
@@ -22,7 +22,7 @@ Su interés es, por tanto, documental y metodológico: sirve como andamiaje para
 | Formato de pesos | safetensors (`model.safetensors`) + código Python (`model.py`), `config.json` y `training_args.json` |
 | Estado del checkpoint | Inicialización sin entrenar; no se presentan resultados de benchmarks |
 | Etiqueta de escala declarada | "xlarge" (no coherente con los 33.088 parámetros reales) |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ Frente a estas alternativas, el repositorio analizado no compite en capacidad: s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ofgoto4209/clip-classification-ablation
+- Repositorio en Hugging Face: https://huggingface.co/ofgoto4209/clip-classification-ablation
 - Script principal: https://huggingface.co/ofgoto4209/clip-classification-ablation/blob/main/model.py
 - Configuración de arquitectura: https://huggingface.co/ofgoto4209/clip-classification-ablation/blob/main/config.json
 - Receta de experimento: https://huggingface.co/ofgoto4209/clip-classification-ablation/blob/main/training_args.json

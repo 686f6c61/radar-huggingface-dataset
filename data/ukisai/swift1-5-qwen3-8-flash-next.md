@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift 1.5 Qwen3.8-Flash-Next es un derivado de razonamiento eficiente del modelo Qwen3.8-Flash-Next, desarrollado por UkisAI y publicado en HuggingFace bajo la licencia swift-open-license-1.0. Se trata de un modelo de arquitectura Mixture of Experts (MoE), multimodal (pipeline image-text-to-text), con 179.999.981.459 parámetros totales y un repositorio de 360 GB en safetensors, lo que indica pesos en BF16.
+Swift 1.5 Qwen3.8-Flash-Next es un derivado de razonamiento eficiente del modelo Qwen3.8-Flash-Next, desarrollado por UkisAI y publicado en Hugging Face bajo la licencia swift-open-license-1.0. Se trata de un modelo de arquitectura Mixture of Experts (MoE), multimodal (pipeline image-text-to-text), con 179.999.981.459 parámetros totales y un repositorio de 360 GB en safetensors, lo que indica pesos en BF16.
 
 El problema que resuelve es el sobrepensamiento patológico (*overthinking*): según la model card, el modelo consume un 63,4 % menos de tokens de razonamiento que su base, con una aceleración de 1,8x y una pérdida de precisión inferior al 1 % respecto al modelo base en el ajuste xhigh. En la demo publicada, la generación de un juego 3D endless runner pasó de 8 minutos 52 segundos (base) a 4 minutos 56 segundos (Swift 1.5).
 
@@ -18,7 +18,7 @@ Es relevante ahora porque la reducción de tokens de pensamiento impacta directa
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16 (safetensors); GGUF; GSQ-RCO GGUF; NVFP4 |
 | Idiomas soportados | no disponible |
-| Licencia | swift-open-license-1.0 (`license: other` en los metadatos de HuggingFace) |
+| Licencia | swift-open-license-1.0 (`license: other` en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors, GGUF, NVFP4 |
 
 Datos adicionales del repositorio:
@@ -45,7 +45,7 @@ Respecto a los datos, la model card enlaza el dataset ukisai/Qwen3.8-27B-multi-t
 ## Capacidades
 
 - Generación de texto conversacional multi-turno orientada a agentes.
-- Entrada multimodal image-text-to-text (pipeline declarado en HuggingFace); la documentación de UkisAI para la familia Swift indica soporte de texto, imagen y vídeo con la interfaz estándar de Qwen3.8.
+- Entrada multimodal image-text-to-text (pipeline declarado en Hugging Face); la documentación de UkisAI para la familia Swift indica soporte de texto, imagen y vídeo con la interfaz estándar de Qwen3.8.
 - Razonamiento con modo de pensamiento eficiente: trazas de razonamiento más cortas y un 63,4 % menos de tokens de pensamiento que el modelo base.
 - Generación de código de proyecto completo: la demo pública consiste en la creación de un juego 3D endless runner ejecutable en local.
 - Trabajo agéntico de horizonte largo: agentes personales, uso de terminal y tareas de ingeniería de software.
@@ -96,9 +96,9 @@ Las siguientes cifras son estimaciones derivadas del número de parámetros decl
 
 | Modelo | Parametros | Contexto | Tokens de pensamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift 1.5 Qwen3.8-Flash-Next | ~180B | no disponible | -63,4 % vs base | swift-open-license-1.0 | HuggingFace, gated; GGUF y NVFP4 |
-| Qwen3.8-Flash-Next (base) | no disponible | no disponible | Referencia | Qwen Community License 1.0 | HuggingFace |
-| Swift 1.5 Qwen3.8-27B | 27B | no disponible | -58,5 % vs base, +0,35 % de puntuacion, 1,95x de aceleracion | no disponible | HuggingFace; API en Featherless.ai |
+| Swift 1.5 Qwen3.8-Flash-Next | ~180B | no disponible | -63,4 % vs base | swift-open-license-1.0 | Hugging Face, gated; GGUF y NVFP4 |
+| Qwen3.8-Flash-Next (base) | no disponible | no disponible | Referencia | Qwen Community License 1.0 | Hugging Face |
+| Swift 1.5 Qwen3.8-27B | 27B | no disponible | -58,5 % vs base, +0,35 % de puntuacion, 1,95x de aceleracion | no disponible | Hugging Face; API en Featherless.ai |
 
 No se dispone de datos suficientes (contexto, puntuaciones por benchmark, parámetros del base) para establecer una comparación cuantitativa completa con alternativas de la misma categoría.
 
@@ -107,7 +107,7 @@ No se dispone de datos suficientes (contexto, puntuaciones por benchmark, parám
 - Riesgo de alucinacion: no se documenta ningún proceso específico de mitigación; el modelo es un derivado por finetune y conserva los sesgos y riesgos del modelo base Qwen3.8-Flash-Next.
 - Sesgos conocidos: no disponibles. No se publica ninguna evaluación de sesgo, toxicidad o seguridad.
 - Cobertura de idiomas: no disponible. La model card no declara idiomas soportados, por lo que no se puede asumir un rendimiento multilingüe fiable fuera del inglés sin validación propia.
-- Restricciones de licencia: la licencia es swift-open-license-1.0, etiquetada como `license: other` en HuggingFace y con nombre de licencia propio, por lo que requiere lectura del texto completo antes de uso comercial. Además, según la documentación de la variante NVFP4, los términos del modelo base (Qwen Community License 1.0) siguen aplicándose: las organizaciones que operan un negocio de Model-as-a-Service o de asistente de trabajo con IA necesitan una licencia adicional de Qwen, y los productos con más de 100 millones de usuarios activos mensuales o más de 20 millones de dólares de facturación mensual deben mostrar el nombre del modelo de forma destacada.
+- Restricciones de licencia: la licencia es swift-open-license-1.0, etiquetada como `license: other` en Hugging Face y con nombre de licencia propio, por lo que requiere lectura del texto completo antes de uso comercial. Además, según la documentación de la variante NVFP4, los términos del modelo base (Qwen Community License 1.0) siguen aplicándose: las organizaciones que operan un negocio de Model-as-a-Service o de asistente de trabajo con IA necesitan una licencia adicional de Qwen, y los productos con más de 100 millones de usuarios activos mensuales o más de 20 millones de dólares de facturación mensual deben mostrar el nombre del modelo de forma destacada.
 - Acceso restringido: el repositorio está sujeto a *gating*, lo que implica aceptar condiciones adicionales antes de la descarga.
 - Proceso de pensamiento comprimido: la reducción de tokens de razonamiento puede degradar el rendimiento en tareas que se benefician de deliberación extensa, aunque el autor declara una pérdida inferior al 1 % en xhigh.
 - Idoneidad en produccion: sin datos publicados de latencia absoluta, throughput ni contexto máximo, no es posible dimensionar un despliegue en producción únicamente con la información disponible.
@@ -115,7 +115,7 @@ No se dispone de datos suficientes (contexto, puntuaciones por benchmark, parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
+- Modelo en Hugging Face: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Variante GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GGUF
 - Variante GSQ-RCO GGUF: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Variante NVFP4: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-Flash-Next-NVFP4

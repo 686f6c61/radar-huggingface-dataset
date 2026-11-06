@@ -6,7 +6,7 @@ anlp-a2-p1-moe-top1 es un modelo de traduccion automatica de tipo decoder-only t
 
 El modelo tiene 35,28 M de parametros totales y 25,84 M de parametros activos, se entreno con 36,54 M de tokens sobre el dataset belumind/en-vi-ja-curated-500k-triplets y alcanza una perplejidad de test de 10,86 y un BLEU de test de 26,93. Su relevancia es fundamentalmente experimental y didactica: permite analizar el compromiso entre parametros totales y activos en arquitecturas MoE con enrutamiento top-1 frente a alternativas densas, en un regimen de computo muy reducido y reproducible en hardware de consumo.
 
-No es un modelo orientado a produccion: el repositorio no declara pipeline en HuggingFace, no incluye tarjeta de idiomas estructurada y el checkpoint se distribuye como serializacion plana de PyTorch que depende de la definicion de transformer del repositorio acompanante.
+No es un modelo orientado a produccion: el repositorio no declara pipeline en Hugging Face, no incluye tarjeta de idiomas estructurada y el checkpoint se distribuye como serializacion plana de PyTorch que depende de la definicion de transformer del repositorio acompanante.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ No se han publicado en la informacion disponible resultados comparativos con mod
 
 | Modelo | Parametros | Contexto | BLEU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anlp-a2-p1-moe-top1 | 35,28 M totales / 25,84 M activos | no disponible | 26,93 (test, vi/ja→en) | MIT | HuggingFace, checkpoint PyTorch plano |
+| anlp-a2-p1-moe-top1 | 35,28 M totales / 25,84 M activos | no disponible | 26,93 (test, vi/ja→en) | MIT | Hugging Face, checkpoint PyTorch plano |
 | Otras cuatro ablaciones de la serie (densa y variantes MoE) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos de traduccion multilingue de referencia (por ejemplo, familias OPUS-MT o NLLB) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unignoramus/anlp-a2-p1-moe-top1
+- Modelo en Hugging Face: https://huggingface.co/unignoramus/anlp-a2-p1-moe-top1
 - Dataset de entrenamiento: belumind/en-vi-ja-curated-500k-triplets (referenciado en la model card; no se proporciona URL directa en la informacion disponible)
 - Repositorio acompanante con la definicion del transformer: no disponible (la model card lo menciona, pero no incluye enlace)
 - Paper, blog o demo del autor: no disponible

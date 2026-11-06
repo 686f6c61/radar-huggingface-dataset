@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moha335456/freefire` es un repositorio alojado en HuggingFace que, según la información disponible, no contiene ningún artefacto técnico real. La model card únicamente declara la licencia Apache 2.0, sin especificar arquitectura, parámetros, pipeline, idiomas o cualquier otro dato relevante. No se han registrado descargas ni interacciones, y la fecha de creación (agosto de 2026) sugiere que podría tratarse de un espacio vacío o un placeholder sin contenido publicado.
+El modelo `moha335456/freefire` es un repositorio alojado en Hugging Face que, según la información disponible, no contiene ningún artefacto técnico real. La model card únicamente declara la licencia Apache 2.0, sin especificar arquitectura, parámetros, pipeline, idiomas o cualquier otro dato relevante. No se han registrado descargas ni interacciones, y la fecha de creación (agosto de 2026) sugiere que podría tratarse de un espacio vacío o un placeholder sin contenido publicado.
 
 Los resultados de búsqueda web relacionados con "Freefire" apuntan a modelos de IA para el videojuego Garena Free Fire (como LoRAs en PixAI, modelos de detección YOLO en MossyModels o modelos 3D en Meshy), pero ninguno de ellos corresponde a este repositorio específico. Por tanto, no es posible atribuirle capacidades, rendimiento ni casos de uso reales. Cualquier evaluación técnica sería especulativa y contraria al rigor exigido en esta ficha.
 
@@ -60,7 +60,7 @@ No disponible. Al no existir información sobre el modelo, no es posible compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/moha335456/freefire
+- Repositorio en Hugging Face: https://huggingface.co/moha335456/freefire
 - Resultados de búsqueda web (no relacionados directamente con este modelo):
   - PixAI (modelos Freefire): https://pixai.art/en/tags/model/freefire
   - PixAI (modelos Garena Free Fire): https://pixai.art/en/tags/model/free_fire

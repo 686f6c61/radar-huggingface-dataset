@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM4-8B es un modelo de lenguaje de 8.185 millones de parametros desarrollado por OpenBMB (publicado en HuggingFace bajo la cuenta ArchiveStudio como copia/espejo del original), disenado explicitamente para ejecucion en dispositivos de borde (edge). Forma parte de la serie MiniCPM4, presentada en junio de 2025, y se entreno sobre 8 billones (8T) de tokens. Su propuesta de valor es la eficiencia: el equipo afirma lograr aceleraciones de generacion superiores a 5x en chips tipicos de extremo frente a modelos convencionales de tamano similar.
+MiniCPM4-8B es un modelo de lenguaje de 8.185 millones de parametros desarrollado por OpenBMB (publicado en Hugging Face bajo la cuenta ArchiveStudio como copia/espejo del original), disenado explicitamente para ejecucion en dispositivos de borde (edge). Forma parte de la serie MiniCPM4, presentada en junio de 2025, y se entreno sobre 8 billones (8T) de tokens. Su propuesta de valor es la eficiencia: el equipo afirma lograr aceleraciones de generacion superiores a 5x en chips tipicos de extremo frente a modelos convencionales de tamano similar.
 
 El modelo aborda el problema de desplegar LLM capaces en hardware limitado (moviles, portatiles, placas de desarrollo) sin sacrificar rendimiento en razonamiento, codigo y manejo de textos largos. Para ello incorpora innovaciones en cuatro dimensiones: arquitectura (atencion dispersa entrenable InfLLM v2), algoritmos de entrenamiento (FP8, multi-token prediction, cuantizacion ternaria BitCPM), datos (UltraClean, UltraChat v2) e inferencia (framework CUDA CPM.cu y sistema multiplataforma ArkInfer).
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible (la mo
 - VRAM estimada para inferencia: con pesos en FP16/BF16 (16,4 GB en el repo), se estima en torno a 17-20 GB de VRAM; con cuantizacion a 4 bits cabria en torno a 5-6 GB. Estas cifras son estimaciones basadas en el tamano de pesos, no datos oficiales.
 - GPU recomendadas: una RTX 4090 (24 GB) o RTX 3090 cubren la inferencia en precision completa; para despliegue en servidor con batching, A100 o H100. Para el modo eficiente en edge, el modelo esta pensado para chips end-side (la model card no detalla hardware concreto).
 - Consumer GPUs: si cabe en una RTX 4090 o RTX 3090 en BF16; con cuantizacion a 4 bits (por ejemplo via llama.cpp si existe soporte GGUF, no disponible en este repo) cabria en GPUs de 8 GB.
-- Opciones de despliegue: CPM.cu (framework CUDA propio de OpenBMB, recomendado oficialmente, integra atencion dispersa, cuantizacion y muestreo especulativo), ArkInfer (despliegue multiplataforma), y transformers de HuggingFace (custom code). La compatibilidad con vLLM esta documentada para las cabeceras Eagle; soporte GGUF/Ollama: no disponible en la informacion proporcionada.
+- Opciones de despliegue: CPM.cu (framework CUDA propio de OpenBMB, recomendado oficialmente, integra atencion dispersa, cuantizacion y muestreo especulativo), ArkInfer (despliegue multiplataforma), y transformers de Hugging Face (custom code). La compatibilidad con vLLM esta documentada para las cabeceras Eagle; soporte GGUF/Ollama: no disponible en la informacion proporcionada.
 - Latencia y throughput: no disponible en cifras concretas; la model card afirma aceleracion de generacion superior a 5x en chips end-side tipicos respecto a la inferencia convencional.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ MiniCPM4-8B se diferencia de Llama 3.1 8B y Qwen2.5-7B en su foco explicito en e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchiveStudio/MiniCPM4-8B
+- Modelo en Hugging Face: https://huggingface.co/ArchiveStudio/MiniCPM4-8B
 - Modelo oficial: https://huggingface.co/openbmb/MiniCPM4-8B
 - Repositorio GitHub de la serie MiniCPM: https://github.com/OpenBMB/MiniCPM/
 - Informe tecnico (arXiv): https://arxiv.org/abs/2506.07900

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea-2-Turbo es un modelo de difusion texto-a-imagen publicado en HuggingFace por el usuario kp-forks, presentado como un ajuste (finetune) sobre krea/Krea-2-Raw. Se distribuye con la libreria diffusers, con pipeline declarado text-to-image y con la etiqueta de modelo base `base_model:finetune:krea/Krea-2-Raw`, lo que indica que no es un entrenamiento desde cero sino una especializacion del modelo Krea-2 en su version Raw. El repositorio tiene un tamano de 0,1 GB, muy inferior al de un pipeline de difusion completo, dato que sugiere que puede tratarse de un adaptador o de un conjunto parcial de componentes; la informacion disponible no confirma esta interpretacion.
+Krea-2-Turbo es un modelo de difusion texto-a-imagen publicado en Hugging Face por el usuario kp-forks, presentado como un ajuste (finetune) sobre krea/Krea-2-Raw. Se distribuye con la libreria diffusers, con pipeline declarado text-to-image y con la etiqueta de modelo base `base_model:finetune:krea/Krea-2-Raw`, lo que indica que no es un entrenamiento desde cero sino una especializacion del modelo Krea-2 en su version Raw. El repositorio tiene un tamano de 0,1 GB, muy inferior al de un pipeline de difusion completo, dato que sugiere que puede tratarse de un adaptador o de un conjunto parcial de componentes; la informacion disponible no confirma esta interpretacion.
 
 El modelo esta etiquetado exclusivamente para prompts en ingles (`language: en`) y se distribuye bajo la licencia krea-2-community-license, una licencia de tipo "other" con documento en PDF enlazado desde el propio repositorio. La model card incluye unicamente ejemplos de generacion (widgets) con prompts detallados y descriptores de estilo como "halftone texture", "ukiyo-e style, Japanese woodblock print", "low-poly 3D models" o "soft focus, hazy mist", lo que evidencia control estilistico por prompt, pero no aporta informacion sobre arquitectura, numero de parametros, datos de entrenamiento ni procedimiento de destilacion.
 
@@ -72,7 +72,7 @@ La model card no incluye metricas cuantitativas (FID, CLIP score, ImageReward, H
 - El repositorio ocupa 0,1 GB, de modo que los archivos descargados desde este fork son ligeros; sin embargo, la ejecucion requiere ademas el modelo base krea/Krea-2-Raw, cuyo tamano y requisitos de memoria no se especifican en la informacion disponible.
 - GPU recomendadas: no disponible para este modelo en concreto.
 - Compatibilidad con GPU de consumo: no disponible. No puede confirmarse si cabe en tarjetas como RTX 3060, 4070 o 4090 sin conocer el tamano del pipeline completo y su precision.
-- Opciones de despliegue: el repositorio declara la libreria diffusers, por lo que la via natural de carga es `DiffusionPipeline` de HuggingFace diffusers. Otros entornos habituales del ecosistema (ComfyUI, interfaces con backend diffusers, servicios de inferencia) no estan confirmados por el autor.
+- Opciones de despliegue: el repositorio declara la libreria diffusers, por lo que la via natural de carga es `DiffusionPipeline` de Hugging Face diffusers. Otros entornos habituales del ecosistema (ComfyUI, interfaces con backend diffusers, servicios de inferencia) no estan confirmados por el autor.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ No se dispone de datos verificables de parametros, contexto, rendimiento ni lice
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kp-forks/Krea-2-Turbo
+- Repositorio en Hugging Face: https://huggingface.co/kp-forks/Krea-2-Turbo
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Licencia (PDF): https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf
 

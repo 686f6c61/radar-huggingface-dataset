@@ -100,7 +100,7 @@ No se dispone en la informacion de datos de rendimiento de modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-4.91bpw
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-4.91bpw
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16
 - Blackfrost-AI (Sir Frosty): https://huggingface.co/Blackfrost-AI
 - Fundacion GLM-5.3-Flash-BF16 (referenciada): https://huggingface.co/zai-org/GLM-5.3-Flash-BF16

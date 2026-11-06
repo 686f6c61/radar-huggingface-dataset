@@ -91,7 +91,7 @@ No disponible. No es posible identificar modelos comparables porque no se conoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-9bc79885ceed-042ca2212168
+- Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-9bc79885ceed-042ca2212168
 - Receta canonica referenciada en la model card: `evaluations/2026-09-23_task00_centre_full_recovery` (identificador interno, sin URL publica disponible)
 - Manifiesto de integridad referenciado: `SHA256SUMS` (sin URL publica disponible)
 - Paper, blog, repositorio o demo: no disponibles

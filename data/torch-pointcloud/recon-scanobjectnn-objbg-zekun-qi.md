@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReCon (scanobjectnn-objbg) es un modelo de clasificación de nubes de puntos 3D desarrollado originalmente por Zekun Qi y colaboradores (Universidad de Pekín, Shanghai AI Laboratory y otras instituciones) y publicado en ICML 2023. Esta variante concreta ha sido convertida al ecosistema `torch-pointcloud` por el usuario `torch-pointcloud` y publicada en HuggingFace como checkpoint afinado sobre el subconjunto OBJ_BG del benchmark ScanObjectNN.
+ReCon (scanobjectnn-objbg) es un modelo de clasificación de nubes de puntos 3D desarrollado originalmente por Zekun Qi y colaboradores (Universidad de Pekín, Shanghai AI Laboratory y otras instituciones) y publicado en ICML 2023. Esta variante concreta ha sido convertida al ecosistema `torch-pointcloud` por el usuario `torch-pointcloud` y publicada en Hugging Face como checkpoint afinado sobre el subconjunto OBJ_BG del benchmark ScanObjectNN.
 
 El modelo resuelve la tarea de clasificación de objetos 3D a partir de nubes de puntos sin color, asignando cada muestra a una de 15 categorías. Su arquitectura es un transformer de puntos con enmascaramiento (masked point transformer) que combina aprendizaje contrastivo con reconstrucción generativa, una innovación que busca aprovechar las representaciones aprendidas por modelos generativos previos para mejorar el rendimiento en tareas discriminativas.
 
@@ -88,7 +88,7 @@ No se dispone en la informacion proporcionada de resultados de otros modelos sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/recon.scanobjectnn-objbg.zekun-qi
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/recon.scanobjectnn-objbg.zekun-qi
 - Modelo base (preentrenamiento): https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
 - Paper ReCon (arXiv): https://arxiv.org/abs/2302.02318
 - Repositorio original ReCon: https://github.com/qizekun/ReCon

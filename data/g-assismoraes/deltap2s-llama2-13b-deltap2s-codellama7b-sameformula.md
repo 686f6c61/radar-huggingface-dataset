@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula` es un checkpoint fusionado producido por el paquete experimental independiente Delta-P2S (también referido como "pen2sword"). Lo desarrolla el usuario de HuggingFace `g-assismoraes` y se publica como un experimento de fusión de modelos basado en arquitecturas Llama. Según la información disponible, el entrenamiento parte de una base denominada `codellama_llama_SameFormula`, lo que sugiere una combinación de pesos entre un modelo Llama 2 de 13B y un CodeLlama de 7B, aunque no se especifican los detalles del método de fusión ni los datos de entrenamiento.
+El modelo `g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula` es un checkpoint fusionado producido por el paquete experimental independiente Delta-P2S (también referido como "pen2sword"). Lo desarrolla el usuario de Hugging Face `g-assismoraes` y se publica como un experimento de fusión de modelos basado en arquitecturas Llama. Según la información disponible, el entrenamiento parte de una base denominada `codellama_llama_SameFormula`, lo que sugiere una combinación de pesos entre un modelo Llama 2 de 13B y un CodeLlama de 7B, aunque no se especifican los detalles del método de fusión ni los datos de entrenamiento.
 
 El modelo tiene 13.015.864.320 parámetros, lo que lo sitúa en la gama de los 13B, y se distribuye en formato safetensors. No se indica la licencia, los idiomas soportados ni la longitud de contexto. Su relevancia actual es limitada: se trata de un artefacto de investigación sin documentación pública extensa, sin benchmarks publicados y sin comunidad activa (cero descargas y cero likes en el momento de la consulta). Es útil principalmente para quienes investigan técnicas de fusión de modelos (model merging) y quieran reproducir o analizar el experimento.
 
@@ -62,9 +62,9 @@ No se dispone de información suficiente para una comparativa rigurosa. Los mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-2-13B (base) | 13B | 4096 | Llama 2 Community License | HuggingFace |
-| CodeLlama-7B | 7B | 16384 | Llama 2 Community License | HuggingFace |
-| DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula | 13B | no disponible | no disponible | HuggingFace |
+| Llama-2-13B (base) | 13B | 4096 | Llama 2 Community License | Hugging Face |
+| CodeLlama-7B | 7B | 16384 | Llama 2 Community License | Hugging Face |
+| DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula | 13B | no disponible | no disponible | Hugging Face |
 
 No hay datos de rendimiento comparativo. La comparativa se limita a parámetros y contexto, y el contexto del modelo fusionado es desconocido.
 
@@ -79,7 +79,7 @@ No hay datos de rendimiento comparativo. La comparativa se limita a parámetros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula
+- Repositorio Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula
 - Modelo relacionado (variante P2S): https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-P2S-CodeLlama7B-SameFormula
 - Página de despliegue en FriendliAI: https://friendli.ai/models/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B-SameFormula
 - Modelo base Llama-2-13B: https://huggingface.co/meta-llama/Llama-2-13b

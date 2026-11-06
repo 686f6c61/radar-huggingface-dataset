@@ -104,7 +104,7 @@ El modelo base y esta conversion comparten arquitectura y pesos; las diferencias
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/multitalker-parakeet-streaming-0.6b-v1-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/multitalker-parakeet-streaming-0.6b-v1-gguf
 - Modelo base: https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1
 - Commit upstream de referencia: https://huggingface.co/nvidia/multitalker-parakeet-streaming-0.6b-v1/commit/8749fc7
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

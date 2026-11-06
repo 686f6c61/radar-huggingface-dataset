@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anerdil/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, publicado en HuggingFace por el usuario anerdil mediante la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal que controla la nave del simulador LunarLander, un entorno clásico de control continuo en dos dimensiones donde el agente debe aterrizar suavemente una nave entre dos banderas.
+`anerdil/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3 de Gymnasium, publicado en Hugging Face por el usuario anerdil mediante la librería Stable-Baselines3. No se trata de un modelo de lenguaje ni de un modelo generativo: es una política neuronal que controla la nave del simulador LunarLander, un entorno clásico de control continuo en dos dimensiones donde el agente debe aterrizar suavemente una nave entre dos banderas.
 
 El modelo es relevante únicamente como artefacto de referencia para experimentos de reinforcement learning: sirve para reproducir resultados, comparar configuraciones de PPO o como punto de partida para fine-tuning en el mismo entorno. Su alcance es muy limitado: no procesa texto, no tiene capacidades multilingües y no puede reutilizarse fuera del entorno LunarLander-v3 sin reentrenamiento.
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada otros age
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anerdil/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/anerdil/ppo-LunarLander-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Librería huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v3 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

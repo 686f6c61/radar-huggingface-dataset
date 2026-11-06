@@ -80,11 +80,11 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-asym` (este) | 7B (INT4 empaquetado) | INT4, grupo 64, asimetrica, AutoRound | en | Apache 2.0 | HuggingFace, 0 descargas |
-| `fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-sym` | 7B (INT4 empaquetado) | INT4, grupo 64, simetrica, AutoRound | en | Apache 2.0 | HuggingFace |
-| `fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym` | 7B (INT4 empaquetado) | INT4, grupo 64, simetrica, AutoRound | en | Apache 2.0 | HuggingFace |
-| `fbaldassarri/tiiuae_Falcon3-7B-Base-autogptq-int8-gs128-asym` | 7B (INT8) | INT8, grupo 128, asimetrica, AutoGPTQ | en | Apache 2.0 | HuggingFace y espejo en FriendliAI |
-| `tiiuae/Falcon3-7B-Base` | 7B | Sin cuantizar (`bfloat16`) | en | Apache 2.0 | HuggingFace, repositorio oficial |
+| `fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-asym` (este) | 7B (INT4 empaquetado) | INT4, grupo 64, asimetrica, AutoRound | en | Apache 2.0 | Hugging Face, 0 descargas |
+| `fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-sym` | 7B (INT4 empaquetado) | INT4, grupo 64, simetrica, AutoRound | en | Apache 2.0 | Hugging Face |
+| `fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym` | 7B (INT4 empaquetado) | INT4, grupo 64, simetrica, AutoRound | en | Apache 2.0 | Hugging Face |
+| `fbaldassarri/tiiuae_Falcon3-7B-Base-autogptq-int8-gs128-asym` | 7B (INT8) | INT8, grupo 128, asimetrica, AutoGPTQ | en | Apache 2.0 | Hugging Face y espejo en FriendliAI |
+| `tiiuae/Falcon3-7B-Base` | 7B | Sin cuantizar (`bfloat16`) | en | Apache 2.0 | Hugging Face, repositorio oficial |
 
 Los datos de contexto y rendimiento de estas alternativas no estan disponibles en la informacion consultada, por lo que la comparacion se limita a tamano, esquema de cuantizacion, idioma, licencia y canal de distribucion. La diferencia principal frente a la variante simetrica es el uso de cuantizacion asimetrica, que suele mejorar la reconstruccion de distribuciones de pesos sesgadas a costa de un pequeno incremento en la sobrecarga de escalas y offsets; sin evaluaciones publicadas no es posible cuantificar esa diferencia en este caso.
 
@@ -104,7 +104,7 @@ Los datos de contexto y rendimiento de estas alternativas no estan disponibles e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-asym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Base
 - Variante simetrica del mismo modelo: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-sym
 - Variante Instruct simetrica: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym

@@ -26,7 +26,7 @@ La relevancia de esta ficha es acotada y conviene ser explícito: no hay resulta
 | Activación | gelu |
 | Normalización | batchnorm |
 | Optimizador por defecto | novograd con schedule exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -51,7 +51,7 @@ No hay información sobre datos de entrenamiento: no se documentan tokens proces
 - Smoke test de pipelines de carga: `model.safetensors` sirve para verificar que un adaptador propio o un cargador personalizado es capaz de leer correctamente los pesos antes de aplicar el mismo código a un checkpoint entrenado.
 - Pruebas de integración en CI/CD: al ocupar el repositorio 0,0 GB y tener 49.600 parámetros, puede incorporarse como caso de prueba en una suite automatizada que valide serialización, versionado de safetensors y carga en CPU sin coste apreciable.
 - Base para experimentos controlados de arquitectura: un equipo de investigación puede partir de esta implementación para comparar variantes de normalización, activación o mecanismo de fusión con presupuestos de cómputo pequeños.
-- Docencia y material formativo: sirve para ilustrar en un curso la estructura de un repositorio de modelo en HuggingFace (config, training args, script, checkpoint) sin la complejidad de un modelo grande.
+- Docencia y material formativo: sirve para ilustrar en un curso la estructura de un repositorio de modelo en Hugging Face (config, training args, script, checkpoint) sin la complejidad de un modelo grande.
 - Desarrollo de adaptadores y utilidades de carga: dado que la documentación advierte de que las APIs automáticas no funcionan sin adaptador, es un buen banco de pruebas para escribir y validar integraciones personalizadas.
 - Verificación de plantillas de evaluación: la model card propone un protocolo de evaluación (conjunto held-out específico de la tarea, métrica reportada en al menos tres semillas y una línea base de capacidad equivalente), utilizable como plantilla para otros proyectos.
 
@@ -85,9 +85,9 @@ No disponible. El repositorio no es comparable con modelos de generación desple
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexe-ikuzn/cnn-transformer-demo
+- Repositorio en Hugging Face: https://huggingface.co/alexe-ikuzn/cnn-transformer-demo
 - Paper: no disponible.
 - Blog o publicación técnica del autor: no disponible.
-- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de HuggingFace).
+- Repositorio de código independiente: no disponible (el código se distribuye dentro del propio repositorio de Hugging Face).
 - Demo o espacio interactivo: no disponible.
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo en la búsqueda realizada; los resultados devueltos no guardan relación con este repositorio y se descartan.

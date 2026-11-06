@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Homiebear/AlbertWeskerDcDouglas_250e_22500s` es un repositorio de pesos publicado en HuggingFace por el usuario Homiebear. El repositorio ocupa 0,3 GB y su unico contenido documental es la declaracion de licencia `openrail`; no incluye model card, descripcion de arquitectura, datos de entrenamiento ni ejemplos de uso. En el momento de la consulta acumulaba 0 descargas y 0 "likes", y las fechas de creacion y ultima actualizacion registradas son el 12 de septiembre de 2026.
+`Homiebear/AlbertWeskerDcDouglas_250e_22500s` es un repositorio de pesos publicado en Hugging Face por el usuario Homiebear. El repositorio ocupa 0,3 GB y su unico contenido documental es la declaracion de licencia `openrail`; no incluye model card, descripcion de arquitectura, datos de entrenamiento ni ejemplos de uso. En el momento de la consulta acumulaba 0 descargas y 0 "likes", y las fechas de creacion y ultima actualizacion registradas son el 12 de septiembre de 2026.
 
 No es posible determinar que problema resuelve ni que tipo de modelo es: no se especifica la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de los pesos. El propio identificador (`250e_22500s`) sugiere una convencion habitual en checkpoints de entrenamiento (posiblemente 250 epocas y 22500 pasos), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
-Su relevancia actual es limitada desde el punto de vista practico, precisamente por la ausencia de documentacion verificable. Puede resultar de interes unicamente como ejemplo de checkpoint sin model card, o para quien conozca el origen del entrenamiento por canales externos a HuggingFace. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los archivos del repositorio (config.json, tokenizer, pesos) antes de asumir capacidades concretas.
+Su relevancia actual es limitada desde el punto de vista practico, precisamente por la ausencia de documentacion verificable. Puede resultar de interes unicamente como ejemplo de checkpoint sin model card, o para quien conozca el origen del entrenamiento por canales externos a Hugging Face. Cualquier evaluacion tecnica seria requiere inspeccionar directamente los archivos del repositorio (config.json, tokenizer, pesos) antes de asumir capacidades concretas.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ Las cifras siguientes son estimaciones derivadas unicamente del tamano del repos
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| AlbertWeskerDcDouglas_250e_22500s | no disponible | no disponible | openrail | no disponible | HuggingFace, 0 descargas |
+| AlbertWeskerDcDouglas_250e_22500s | no disponible | no disponible | openrail | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado modelos comparables en la informacion disponible. Al desconocerse la arquitectura, el tamano y la tarea objetivo, cualquier comparacion con modelos de la misma categoria seria especulativa. Las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo ni con su autor.
@@ -98,6 +98,6 @@ No se han identificado modelos comparables en la informacion disponible. Al desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Homiebear/AlbertWeskerDcDouglas_250e_22500s
+- Repositorio en Hugging Face: https://huggingface.co/Homiebear/AlbertWeskerDcDouglas_250e_22500s
 
 Las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo. Los unicos resultados obtenidos fueron paginas genericas de YouTube (https://www.youtube.com/, https://www.youtube.com/shorts, https://music.youtube.com/), sin relacion alguna con el modelo ni con su autor, por lo que no se incluyen como referencias utiles. No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados.

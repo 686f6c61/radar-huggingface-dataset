@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fwizzer-R1-3B-ZH-v2 es un adaptador LoRA (PEFT) publicado por el usuario fwizzer1 en HuggingFace. Está construido sobre el modelo base unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit, que se distribuye cuantizado a 4 bits. El adaptador se entrenó con SFT (supervised fine-tuning) utilizando las bibliotecas TRL y Unsloth, según los metadatos del repositorio.
+Fwizzer-R1-3B-ZH-v2 es un adaptador LoRA (PEFT) publicado por el usuario fwizzer1 en Hugging Face. Está construido sobre el modelo base unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit, que se distribuye cuantizado a 4 bits. El adaptador se entrenó con SFT (supervised fine-tuning) utilizando las bibliotecas TRL y Unsloth, según los metadatos del repositorio.
 
 El modelo está etiquetado para generación de texto y conversación, y el sufijo "ZH" en el identificador sugiere una orientación al chino, aunque no hay documentación que lo confirme. No se dispone de información sobre la arquitectura del modelo base, la longitud de contexto, los datos de entrenamiento ni la licencia.
 
@@ -25,7 +25,7 @@ La relevancia del modelo es limitada en su estado actual: la model card está va
 
 La información técnica disponible es escasa. Los metadatos indican que se trata de un adaptador PEFT (LoRA) entrenado con SFT mediante TRL y Unsloth sobre el modelo base unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit. El modelo base está cuantizado a 4 bits (bnb-4bit), lo que reduce su huella de memoria. No se documenta la arquitectura del modelo base ni el número de parámetros del adaptador.
 
-No se han publicado datos sobre el dataset de entrenamiento, el número de tokens, la composición del corpus ni si se aplicaron técnicas de alineación como RLHF o DPO. El tag image-text-to-text en HuggingFace sugiere que el modelo base podría ser multimodal, pero no hay confirmación en la model card. Tampoco se detallan hiperparámetros de entrenamiento ni el régimen de precisión. La model card menciona PEFT 0.19.1 como framework.
+No se han publicado datos sobre el dataset de entrenamiento, el número de tokens, la composición del corpus ni si se aplicaron técnicas de alineación como RLHF o DPO. El tag image-text-to-text en Hugging Face sugiere que el modelo base podría ser multimodal, pero no hay confirmación en la model card. Tampoco se detallan hiperparámetros de entrenamiento ni el régimen de precisión. La model card menciona PEFT 0.19.1 como framework.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se dispone de información suficiente para una comparativa rigurosa. La sigui
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Fwizzer-R1-3B-ZH-v2 | No disponible (base 3B) | No disponible | No disponible | Adaptador LoRA en HuggingFace |
-| Fwizzer-R1-3B-v2 | No disponible | No disponible | No disponible | Adaptador LoRA en HuggingFace |
-| unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit | 3B (por nombre) | No disponible | No disponible | Modelo base en HuggingFace |
+| Fwizzer-R1-3B-ZH-v2 | No disponible (base 3B) | No disponible | No disponible | Adaptador LoRA en Hugging Face |
+| Fwizzer-R1-3B-v2 | No disponible | No disponible | No disponible | Adaptador LoRA en Hugging Face |
+| unsloth/Ministral-3-3B-Instruct-2512-bnb-4bit | 3B (por nombre) | No disponible | No disponible | Modelo base en Hugging Face |
 
 ## Limitaciones y advertencias
 

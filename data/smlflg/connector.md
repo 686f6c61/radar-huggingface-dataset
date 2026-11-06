@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smlflg/Connector no es un modelo de inteligencia artificial: es un repositorio publicado en HuggingFace que recopila conectores de ejecucion local pensados para actuar como backends MCP (Model Context Protocol) de varios agent hosts. El primer conector incluido, y unico descrito en la documentacion, es una integracion de Google Workspace para el agente Hermes, basada en OAuth personal y limitada a las herramientas de Gmail y Calendar en modo de solo lectura.
+smlflg/Connector no es un modelo de inteligencia artificial: es un repositorio publicado en Hugging Face que recopila conectores de ejecucion local pensados para actuar como backends MCP (Model Context Protocol) de varios agent hosts. El primer conector incluido, y unico descrito en la documentacion, es una integracion de Google Workspace para el agente Hermes, basada en OAuth personal y limitada a las herramientas de Gmail y Calendar en modo de solo lectura.
 
 El repositorio se creo el 16 de septiembre de 2026 y se actualizo el mismo dia. Ocupa 0,1 GB, acumula 0 descargas y 0 likes, no declara licencia, idiomas ni pipeline, y su model card esta redactada en aleman. No contiene pesos, tokenizadores, configuraciones de transformers ni artefactos de inferencia: su contenido son arboles de trabajo, ficheros de configuracion y fragmentos YAML de integracion.
 
@@ -89,7 +89,7 @@ No disponible. Este repositorio no es un modelo de lenguaje ni comparte categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/Connector
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/Connector
 - Proyecto upstream citado en la model card: `taylorwilsdon/google_workspace_mcp` (commit fijado `3e9011f3e4d104385a303ef56be83ca3d194d90e`); la model card no proporciona URL.
 - Fichero de configuracion de ejemplo citado: `google-workspace/config/local.env.example`.
 - Fragmento de integracion citado: `examples/hermes-google-workspace.yaml`.

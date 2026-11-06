@@ -82,8 +82,8 @@ La comparación directa solo es posible con el modelo base, ya que no se han pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pkl15/final-ecapa-vietnamceleb-speaker-verification
-- Dataset Vietnam-Celeb (HuggingFace): https://huggingface.co/datasets/hustep-lab/Vietnam-Celeb
+- Hugging Face: https://huggingface.co/pkl15/final-ecapa-vietnamceleb-speaker-verification
+- Dataset Vietnam-Celeb (Hugging Face): https://huggingface.co/datasets/hustep-lab/Vietnam-Celeb
 - Repositorio oficial del dataset (GitHub): https://github.com/jazzDung/Vietnam-Celeb.Interspeech
 - Paper Vietnam-Celeb (Semantic Scholar): https://www.semanticscholar.org/paper/Vietnam-Celeb:-a-large-scale-dataset-for-Vietnamese-Pham-Nguyen/8b673225d277d3928dab3c1725210040c6ea34df
 - Modelo base SpeechBrain: https://huggingface.co/speechbrain/spkrec-ecapa-voxceleb

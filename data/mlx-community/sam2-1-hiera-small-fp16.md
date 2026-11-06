@@ -110,7 +110,7 @@ En la práctica, la elección entre este modelo y EdgeTAM responde a un compromi
 
 ## Enlaces
 
-- [Modelo en HuggingFace: mlx-community/SAM2.1-hiera-small-fp16](https://huggingface.co/mlx-community/SAM2.1-hiera-small-fp16)
+- [Modelo en Hugging Face: mlx-community/SAM2.1-hiera-small-fp16](https://huggingface.co/mlx-community/SAM2.1-hiera-small-fp16)
 - [Modelo base: facebook/sam2.1-hiera-small](https://huggingface.co/facebook/sam2.1-hiera-small)
 - [Repositorio oficial de SAM 2 en GitHub](https://github.com/facebookresearch/sam2)
 - [Licencia de SAM 2 (facebookresearch/sam2)](https://github.com/facebookresearch/sam2/blob/main/LICENSE)

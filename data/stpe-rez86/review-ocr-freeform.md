@@ -64,7 +64,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stpe-rez86/review-ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/stpe-rez86/review-ocr-freeform
 - Repositorio similar (también nota de investigación): https://huggingface.co/raoankitme/ocr-freeform-review
 - Blog de Hugging Face sobre modelos OCR abiertos: https://huggingface.co/blog/ocr-open-models
 - Guía de modelos OCR open source (2025): https://www.e2enetworks.com/blog/complete-guide-open-source-ocr-models-2025

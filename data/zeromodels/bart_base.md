@@ -17,7 +17,7 @@ El modelo se presenta como checkpoint base, sin fine-tuning, por lo que puede ut
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Pesos nativos de Keras 3; safetensors de HuggingFace cargables via el prefijo `hf:` |
+| Formato de pesos | Pesos nativos de Keras 3; safetensors de Hugging Face cargables via el prefijo `hf:` |
 
 ## Arquitectura y entrenamiento
 
@@ -33,7 +33,7 @@ Este checkpoint concreto es una conversion a Keras 3 de `facebook/bart-base`; no
 - Preguntas y respuestas extractivas: la clase `BartQnA` permite realizar QA extractivo; la cabecera no esta entrenada en este checkpoint.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (la ficha de HuggingFace indica idiomas no disponibles).
+- Capacidades multilingues: no disponible (la ficha de Hugging Face indica idiomas no disponibles).
 - Vision, audio u otras modalidades: no disponible.
 
 ## Casos de uso
@@ -48,7 +48,7 @@ Este checkpoint concreto es una conversion a Keras 3 de `facebook/bart-base`; no
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo card no incluye metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) para este checkpoint. Los resultados de la busqueda web no aportan datos de benchmarks especificos para `zeromodels/bart_base`. Se recomienda consultar el modelo original `facebook/bart-base` en HuggingFace para obtener referencias de evaluaciones en tareas de resumen, traduccion y clasificacion.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo card no incluye metricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) para este checkpoint. Los resultados de la busqueda web no aportan datos de benchmarks especificos para `zeromodels/bart_base`. Se recomienda consultar el modelo original `facebook/bart-base` en Hugging Face para obtener referencias de evaluaciones en tareas de resumen, traduccion y clasificacion.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 | Modelo | Arquitectura | Tamano | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
 | `zeromodels/bart_base` | Encoder-decoder (BART) | Base | Keras 3 | Apache 2.0 | Checkpoint base, conversion de `facebook/bart-base` |
-| `facebook/bart-base` | Encoder-decoder (BART) | Base | Safetensors / PyTorch | Apache 2.0 | Modelo original en HuggingFace, cargable via el prefijo `hf:` |
+| `facebook/bart-base` | Encoder-decoder (BART) | Base | Safetensors / PyTorch | Apache 2.0 | Modelo original en Hugging Face, cargable via el prefijo `hf:` |
 | `zeromodels/bart_large` | Encoder-decoder (BART) | Large | Keras 3 | Apache 2.0 | Variante mayor del mismo proyecto, checkpoint base |
 | `zeromodels/bart_large_cnn` | Encoder-decoder (BART) | Large | Keras 3 | Apache 2.0 | Variante fine-tuneada para resumen (CNN/DailyMail) |
 
@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zeromodels/bart_base
+- Hugging Face: https://huggingface.co/zeromodels/bart_base
 - GitHub (ZeroModels): https://github.com/ZeroAIx/ZeroModels
 - Documentacion de BART en ZeroModels: https://zeroaix.github.io/ZeroModels/bart/
 - Paper original: https://arxiv.org/abs/1910.13461
 - HF Papers: https://huggingface.co/papers/1910.13461
-- Modelo original en HuggingFace: https://huggingface.co/facebook/bart-base
+- Modelo original en Hugging Face: https://huggingface.co/facebook/bart-base

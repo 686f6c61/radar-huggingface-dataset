@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP-plefp8 es un artefacto de pesos cuantizados publicado por el usuario zviratko en HuggingFace, derivado por cuantizacion del modelo jedisct1/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP. No se trata de un modelo entrenado desde cero, sino de una variante experimental en la que se ha transplantado una tabla PLE (n-gram table) en FP8 sobre los pesos ya cuantizados a 4 bits, con el objetivo de reducir la perdida de precision asociada a esa tabla auxiliar. El autor declara explicitamente que el efecto de esta tabla menos lossy es desconocido y que el artefacto debe considerarse un experimento abierto a feedback.
+Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP-plefp8 es un artefacto de pesos cuantizados publicado por el usuario zviratko en Hugging Face, derivado por cuantizacion del modelo jedisct1/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP. No se trata de un modelo entrenado desde cero, sino de una variante experimental en la que se ha transplantado una tabla PLE (n-gram table) en FP8 sobre los pesos ya cuantizados a 4 bits, con el objetivo de reducir la perdida de precision asociada a esa tabla auxiliar. El autor declara explicitamente que el efecto de esta tabla menos lossy es desconocido y que el artefacto debe considerarse un experimento abierto a feedback.
 
 El modelo emplea la libreria MLX, esta orientado a inferencia en Apple Silicon y se distribuye en formato safetensors con cuantizacion de 4 bits. El recuento real de parametros en safetensors es de 179.999.981.459 (aproximadamente 180.000 millones), con un repositorio de 128 GB. La pipeline declarada es image-text-to-text, e incluye etiquetas de vision y tool-calling, lo que indica capacidades multimodales y de llamada a herramientas, aunque la model card no aporta detalle tecnico sobre ninguna de las dos.
 
@@ -104,7 +104,7 @@ La comparativa se limita al modelo base del que deriva el artefacto, puesto que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP-plefp8
+- Repositorio Hugging Face: https://huggingface.co/zviratko/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP-plefp8
 - Modelo base: https://huggingface.co/jedisct1/Qwen3.8-Flash-Next-Uncensored-oQ4e-100K-MTP
 - Fichero de licencia del repositorio: LICENSE (referenciado en el repositorio, no como URL publica independiente)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

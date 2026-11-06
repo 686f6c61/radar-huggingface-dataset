@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/JustPropane/Ministral-3-3B-Reasoning-UNCENSORED-heretic
+- Hugging Face del modelo: https://huggingface.co/JustPropane/Ministral-3-3B-Reasoning-UNCENSORED-heretic
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Ministral-3-3B-Reasoning-2512
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512
 - System prompt recomendado: https://huggingface.co/mistralai/Ministral-3-3B-Reasoning-2512/blob/main/SYSTEM_PROMPT.txt

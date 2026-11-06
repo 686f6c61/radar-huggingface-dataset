@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SurgeV1.1x0.7BR es un repositorio de pesos publicado en HuggingFace por el usuario `openmodelai`. El repositorio contiene únicamente pesos en formato `safetensors` y una model card reducida a la declaración de licencia (`apache-2.0`), sin descripción del modelo, sin datos de entrenamiento, sin resultados de evaluación y sin instrucciones de uso. En el momento de redactar esta ficha acumula 0 descargas y 1 "like", y fue creado y actualizado el 22 de octubre de 2026 con apenas tres minutos de diferencia, lo que sugiere una subida automatizada o un esqueleto de publicación sin completar.
+SurgeV1.1x0.7BR es un repositorio de pesos publicado en Hugging Face por el usuario `openmodelai`. El repositorio contiene únicamente pesos en formato `safetensors` y una model card reducida a la declaración de licencia (`apache-2.0`), sin descripción del modelo, sin datos de entrenamiento, sin resultados de evaluación y sin instrucciones de uso. En el momento de redactar esta ficha acumula 0 descargas y 1 "like", y fue creado y actualizado el 22 de octubre de 2026 con apenas tres minutos de diferencia, lo que sugiere una subida automatizada o un esqueleto de publicación sin completar.
 
 La única información técnica inferible procede de las etiquetas del repositorio: la etiqueta `qwen3_5_moe` apunta a una arquitectura de mezcla de expertos (MoE) de la familia Qwen3.5, y el sufijo `0.7B` del nombre apunta a un tamaño del orden de 0,7 mil millones de parámetros. Ninguna de estas dos inferencias está confirmada por el autor: no hay `config.json` documentado en la información disponible, ni tabla de parámetros, ni especificación de ventana de contexto.
 
@@ -86,5 +86,5 @@ Alternativas MoE de pequeño tamaño con documentación completa: no disponible 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/openmodelai/SurgeV1.1x0.7BR
+- Repositorio en Hugging Face: https://huggingface.co/openmodelai/SurgeV1.1x0.7BR
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

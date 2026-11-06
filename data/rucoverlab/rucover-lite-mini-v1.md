@@ -72,5 +72,5 @@ No se dispone de información suficiente para comparar con otros modelos pequeñ
 
 ## Enlaces
 
-- HuggingFace: [RuCoverLAB/RUcover-Lite-Mini-v1](https://huggingface.co/RuCoverLAB/RUcover-Lite-Mini-v1)
+- Hugging Face: [RuCoverLAB/RUcover-Lite-Mini-v1](https://huggingface.co/RuCoverLAB/RUcover-Lite-Mini-v1)
 - Otra variante del modelo (no oficial): [FigaAI/RUcover-Lite-Mini-v1](https://huggingface.co/FigaAI/RUcover-Lite-Mini-v1)

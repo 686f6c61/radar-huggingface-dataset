@@ -77,8 +77,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| svd-safety-l2_basis_remove30 | 6.738.415.616 elementos en safetensors; fraccion densa declarada 0,6998 | 4096 tokens | Llama 2 Community License | HuggingFace, safetensors, 0 descargas | PPL WikiText-2 9,2195; ASR AdvBench 0,0308; ASR StrongREJECT 0,0575; sobrerrechazo 0,3192 |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente desplegado | no disponible en la informacion proporcionada |
+| svd-safety-l2_basis_remove30 | 6.738.415.616 elementos en safetensors; fraccion densa declarada 0,6998 | 4096 tokens | Llama 2 Community License | Hugging Face, safetensors, 0 descargas | PPL WikiText-2 9,2195; ASR AdvBench 0,0308; ASR StrongREJECT 0,0575; sobrerrechazo 0,3192 |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente desplegado | no disponible en la informacion proporcionada |
 | Otras celdas de la rejilla del mismo estudio | no disponible | 4096 tokens (asumido del base) | Llama 2 Community License | no publicado en esta ficha | no disponible |
 
 No se dispone de datos comparativos de benchmarks frente a alternativas de la misma categoria dentro de la informacion proporcionada.
@@ -98,8 +98,8 @@ No se dispone de datos comparativos de benchmarks frente a alternativas de la mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove30
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Referencia citada por el autor: Basis Sharing (ICLR 2025), URL no disponible
-- Licencia y politica de uso: LICENSE.txt y USE_POLICY.md incluidos en el propio repositorio de HuggingFace
+- Licencia y politica de uso: LICENSE.txt y USE_POLICY.md incluidos en el propio repositorio de Hugging Face
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo, su dataset o su paper asociado; todos los resultados obtenidos correspondian a entidades bancarias sin relacion con el artefacto.

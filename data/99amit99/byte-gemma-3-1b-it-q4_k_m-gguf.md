@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/99Amit99/byte-gemma-3-1b-it.Q4_K_M.gguf
+- Repositorio en Hugging Face: https://huggingface.co/99Amit99/byte-gemma-3-1b-it.Q4_K_M.gguf
 - Modelo base de Google: https://huggingface.co/google/gemma-3-1b-it
 - Cuantizacion QAT oficial de Google: https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf
 - Repositorio de referencia GGUF de bartowski: https://www.modelscope.cn/models/bartowski/google_gemma-3-1b-it-GGUF/summary

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sundaycoil/path-resolver` es un modelo publicado en HuggingFace por el usuario `sundaycoil` el 9 de abril de 2026. A fecha de la última actualización (14 de agosto de 2026), cuenta con 8 likes y 0 descargas, lo que sugiere que se trata de un modelo reciente o de baja difusión. La etiqueta `region:us` indica que el autor lo ha asociado a un contexto geográfico estadounidense, aunque no se especifica su significado técnico.
+El modelo `sundaycoil/path-resolver` es un modelo publicado en Hugging Face por el usuario `sundaycoil` el 9 de abril de 2026. A fecha de la última actualización (14 de agosto de 2026), cuenta con 8 likes y 0 descargas, lo que sugiere que se trata de un modelo reciente o de baja difusión. La etiqueta `region:us` indica que el autor lo ha asociado a un contexto geográfico estadounidense, aunque no se especifica su significado técnico.
 
-No se dispone de información pública sobre su arquitectura, tamaño, licencia, idiomas soportados ni pipeline de uso. Tampoco se han publicado documentos técnicos, papers o repositorios asociados. Por tanto, cualquier evaluación de capacidades o rendimiento resulta imposible con los datos disponibles. Se recomienda contactar con el autor o consultar el repositorio de HuggingFace para obtener más detalles antes de considerar su uso en producción.
+No se dispone de información pública sobre su arquitectura, tamaño, licencia, idiomas soportados ni pipeline de uso. Tampoco se han publicado documentos técnicos, papers o repositorios asociados. Por tanto, cualquier evaluación de capacidades o rendimiento resulta imposible con los datos disponibles. Se recomienda contactar con el autor o consultar el repositorio de Hugging Face para obtener más detalles antes de considerar su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -56,6 +56,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible comparar 
 
 ## Enlaces
 
-- [HuggingFace: sundaycoil/path-resolver](https://huggingface.co/sundaycoil/path-resolver)
+- [Hugging Face: sundaycoil/path-resolver](https://huggingface.co/sundaycoil/path-resolver)
 
 No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

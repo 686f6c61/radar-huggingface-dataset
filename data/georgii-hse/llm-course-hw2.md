@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Georgii-hse/llm-course-hw2` es un repositorio de HuggingFace publicado por el usuario Georgii-hse (Voronin Georgii Sergeevich) como entrega de la segunda tarea de un curso sobre modelos de lenguaje. No se trata de un modelo entrenado desde cero ni de un lanzamiento con model card técnica: la propia descripción indica que es un contenedor único creado «para facilitar la revisión», con el cuaderno de trabajo adjunto en los archivos del repositorio y enlaces a tres artefactos derivados alojados en repositorios hermanos: un modelo ajustado con DPO, un modelo de recompensa (reward model) y un modelo entrenado con PPO.
+`Georgii-hse/llm-course-hw2` es un repositorio de Hugging Face publicado por el usuario Georgii-hse (Voronin Georgii Sergeevich) como entrega de la segunda tarea de un curso sobre modelos de lenguaje. No se trata de un modelo entrenado desde cero ni de un lanzamiento con model card técnica: la propia descripción indica que es un contenedor único creado «para facilitar la revisión», con el cuaderno de trabajo adjunto en los archivos del repositorio y enlaces a tres artefactos derivados alojados en repositorios hermanos: un modelo ajustado con DPO, un modelo de recompensa (reward model) y un modelo entrenado con PPO.
 
 La información pública disponible no incluye arquitectura, número de parámetros, longitud de contexto, tokenizador, idiomas, licencia ni formato de pesos. El repositorio no tiene descargas ni «likes», no declara pipeline y solo lleva la etiqueta `region:us`, lo que sugiere que los pesos pueden no estar subidos o que el repositorio funciona únicamente como índice de la entrega.
 

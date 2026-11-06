@@ -48,7 +48,7 @@ Dado el tamaño de 13.015.864.320 parámetros (aproximadamente 13B), se pueden e
 - VRAM estimada: con cuantización de 16 bits (BF16), se necesitan aproximadamente 26 GB de VRAM (13B × 2 bytes). Con cuantización de 8 bits, unos 13 GB; con 4 bits, unos 7 GB. Sin embargo, no se proporcionan archivos cuantizados en el repositorio, por lo que habría que generarlos.
 - GPU recomendadas: para BF16, una GPU con 32 GB o más (A100 40GB, H100, RTX 4090 con 24 GB no sería suficiente para BF16 completo, pero sí para 8 bits). Para 4 bits, una RTX 3090 o 4090 (24 GB) podría ser suficiente.
 - Si cabe en consumer GPU: sí, con cuantización de 4 u 8 bits, pero no hay archivos pre-cuantizados disponibles.
-- Opciones de despliegue: al ser un modelo de transformers, se puede usar con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se convierte), o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, se puede usar con vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se convierte), o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -57,9 +57,9 @@ No se dispone de datos de rendimiento para comparar. Sin embargo, se puede compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B | 13B | no disponible | no disponible | HuggingFace (experimental) |
-| Llama 2 13B | 13B | 4096 (original) | Llama 2 Community License | Meta AI / HuggingFace |
-| CodeLlama 7B | 7B | 16384 (original) | Llama 2 Community License | Meta AI / HuggingFace |
+| DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B | 13B | no disponible | no disponible | Hugging Face (experimental) |
+| Llama 2 13B | 13B | 4096 (original) | Llama 2 Community License | Meta AI / Hugging Face |
+| CodeLlama 7B | 7B | 16384 (original) | Llama 2 Community License | Meta AI / Hugging Face |
 
 La comparativa es estructural, no de rendimiento, ya que no hay benchmarks publicados para el modelo fusionado.
 
@@ -75,7 +75,7 @@ La comparativa es estructural, no de rendimiento, ya que no hay benchmarks publi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B
+- Hugging Face: https://huggingface.co/g-assismoraes/DeltaP2S-Llama2-13B-DeltaP2S-CodeLlama7B
 - Llama 2 (modelo base): https://huggingface.co/meta-llama/Llama-2-13b
 - Paper de Llama 2: https://arxiv.org/abs/2307.09288
 - Repositorio de inferencia de Llama (referencia): https://github.com/osmeos/llama2

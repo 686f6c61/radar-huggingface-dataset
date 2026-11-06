@@ -102,7 +102,7 @@ No hay comparacion posible de rendimiento con estas alternativas: el unico dato 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia y politica de uso: los archivos LICENSE y USE_POLICY.md estan incluidos en el repositorio del modelo.
 - Paper de SVD-LLM: no disponible en la informacion proporcionada.

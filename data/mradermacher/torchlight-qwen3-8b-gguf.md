@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Torchlight-qwen3-8b es un ajuste fino (fine-tuning) del modelo Qwen3-8B de Alibaba, especializado en tareas de código y depuración (debugging). El modelo base original es `samadpls/torchlight-qwen3-8b`, desarrollado por el usuario samadpls, y esta versión concreta ha sido cuantizada a formato GGUF por mradermacher, un conocido publicador de cuantizaciones en HuggingFace. El ajuste se realizó mediante LoRA sobre el modelo Qwen3-8B usando la librería Unsloth, entrenado sobre el dataset `samadpls/torchlight-threads`.
+Torchlight-qwen3-8b es un ajuste fino (fine-tuning) del modelo Qwen3-8B de Alibaba, especializado en tareas de código y depuración (debugging). El modelo base original es `samadpls/torchlight-qwen3-8b`, desarrollado por el usuario samadpls, y esta versión concreta ha sido cuantizada a formato GGUF por mradermacher, un conocido publicador de cuantizaciones en Hugging Face. El ajuste se realizó mediante LoRA sobre el modelo Qwen3-8B usando la librería Unsloth, entrenado sobre el dataset `samadpls/torchlight-threads`.
 
 La relevancia de esta ficha radica en que ofrece una alternativa ligera y ejecutable en hardware de consumo para tareas de asistencia en programación y depuración, gracias a las cuantizaciones GGUF que van desde 3,4 GB (Q2_K) hasta 16,5 GB (f16). El modelo conserva la arquitectura transformer densa de Qwen3-8B, con 8.190.735.360 parámetros totales, y está publicado bajo licencia Apache 2.0, lo que facilita su uso comercial.
 

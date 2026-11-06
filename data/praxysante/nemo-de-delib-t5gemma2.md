@@ -76,7 +76,7 @@ El mejor checkpoint (epoca 1) reduce el WER del primer paso del 16,59 % al 10,40
 
 | Modelo | Parametros | Contexto | WER (mejor, guardarrail) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemo-DE-delib-T5Gemma2 (ep 1) | 369,2 M texto + 127 M encoder | no disponible | 12,51 % | other (sin licencia a terceros) | HuggingFace (repo de 2,0 GB) |
+| Nemo-DE-delib-T5Gemma2 (ep 1) | 369,2 M texto + 127 M encoder | no disponible | 12,51 % | other (sin licencia a terceros) | Hugging Face (repo de 2,0 GB) |
 | Nemo-DE-delib-V1 (brazo GermanT5, ep 3) | no disponible (GermanT5) | no disponible | 13,79 % | no disponible | referenciado en la model card |
 | Nemo-DE-delib-T5Gemma2 fase 3 (branch) | no disponible | no disponible | no disponible (pendiente de A/B) | no disponible | no publicado |
 
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos ASR alemanes comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PraxySante/Nemo-DE-delib-T5Gemma2
+- Modelo en Hugging Face: https://huggingface.co/PraxySante/Nemo-DE-delib-T5Gemma2
 - Repositorio NeMo (libreria declarada): https://github.com/NVIDIA/NeMo
 - T5Gemma 2 de Google (modelo base del componente T5): no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible

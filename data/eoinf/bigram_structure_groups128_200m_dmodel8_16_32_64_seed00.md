@@ -76,5 +76,5 @@ No disponible. No se han proporcionado modelos comparables en la informacion, y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_structure_groups128_200m_dmodel8_16_32_64_seed00
+- Hugging Face: https://huggingface.co/eoinf/bigram_structure_groups128_200m_dmodel8_16_32_64_seed00
 - Repositorio de codigo de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL directa)

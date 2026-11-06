@@ -23,7 +23,7 @@ La relevancia actual es limitada pero especifica: el modelo es experimental (0 d
 
 ## Arquitectura y entrenamiento
 
-La arquitectura combina un LLM denso congelado (`Qwen/Qwen3.5-9B`) con un adaptador LoRA y una pila de fusion externa que proyecta las modalidades no textuales al espacio del modelo. Segun la model card, `middle.pt` contiene los componentes `projectors`, `modality_identity`, `qformer` y `adapter`, y su recarga requiere la clase `FusionStack` del paquete `captioner` (concretamente `captioner/model/captioner.py` y la funcion `run_stage1` de `captioner/train/stage1.py`). Esto implica que el modelo no es cargable solo con `transformers` y `peft`: hace falta codigo externo no incluido en el repositorio de HuggingFace.
+La arquitectura combina un LLM denso congelado (`Qwen/Qwen3.5-9B`) con un adaptador LoRA y una pila de fusion externa que proyecta las modalidades no textuales al espacio del modelo. Segun la model card, `middle.pt` contiene los componentes `projectors`, `modality_identity`, `qformer` y `adapter`, y su recarga requiere la clase `FusionStack` del paquete `captioner` (concretamente `captioner/model/captioner.py` y la funcion `run_stage1` de `captioner/train/stage1.py`). Esto implica que el modelo no es cargable solo con `transformers` y `peft`: hace falta codigo externo no incluido en el repositorio de Hugging Face.
 
 Los datos de entrenamiento se describen mediante un `tier_histogram` con 4.120 ejemplos de la categoria `single` y 1.318 de la categoria `joint`. No se especifica el numero total de tokens, la composicion del dataset, ni si hubo RLHF, DPO u otra fase de alineamiento. La model card tampoco documenta innovaciones de decodificacion (atencion lineal, decodificacion especulativa, etc.). Los metadatos de reproducibilidad incluyen un `config_hash` (`c3982fe3dd2423a5`) y un `git_sha` (`305aef80a955f1b1e8c188302f47ab8b393f84b0`).
 
@@ -76,14 +76,14 @@ No se dispone de datos verificables sobre alternativas comparables en la informa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UniverseTBD/astrobridge-model-v5 | 9B (base) + adaptador | no disponible | solo evaluacion de groundedness (ver tabla anterior) | no disponible | publico en HuggingFace, 0 descargas |
+| UniverseTBD/astrobridge-model-v5 | 9B (base) + adaptador | no disponible | solo evaluacion de groundedness (ver tabla anterior) | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Licencia sin declarar: no se puede confirmar si el uso comercial esta permitido. No debe desplegarse en produccion sin aclarar este punto con el autor.
 - Idiomas sin declarar: se desconoce si el modelo genera texto en castellano o en otros idiomas distintos del ingles.
-- Reproducibilidad incompleta: `middle.pt` requiere la clase `FusionStack` del paquete `captioner`, que no esta en el repositorio de HuggingFace. Sin ese codigo el modelo no es cargable tal como se documenta.
+- Reproducibilidad incompleta: `middle.pt` requiere la clase `FusionStack` del paquete `captioner`, que no esta en el repositorio de Hugging Face. Sin ese codigo el modelo no es cargable tal como se documenta.
 - Modelo practicamente sin validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin resultados de benchmarks estandar publicados.
 - Tamano de muestra reducido en la evaluacion: las pruebas de *shuffle* sobre espectros (n=16) y sobre curvas de luz (n=4) son demasiado pequenas para extraer conclusiones robustas.
 - Riesgo de alucinacion en *captions*: aunque la prueba de ablacion muestra que la salida cambia al eliminar la modalidad, no demuestra que las afirmaciones del *caption* sean correctas respecto al objeto real; en dominios cientificos esto exige revision humana.
@@ -94,6 +94,6 @@ No se dispone de datos verificables sobre alternativas comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UniverseTBD/astrobridge-model-v5
+- Modelo en Hugging Face: https://huggingface.co/UniverseTBD/astrobridge-model-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog, repositorio del paquete `captioner` y demos: no disponible (los resultados de la busqueda web no contienen enlaces relacionados con el modelo; devuelven paginas del sitio de ONECI sin relacion alguna).

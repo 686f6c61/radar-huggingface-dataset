@@ -32,8 +32,8 @@ Los datos de entrenamiento proceden del dataset kilian-group/phantom-reasoning, 
 - Generacion de texto y razonamiento matematico multi-salto, entrenado especificamente sobre problemas de 2 a 20 operaciones.
 - Razonamiento encadenado (chain-of-thought) inducido por RL, orientado a resolver problemas paso a paso.
 - Transferencia a tareas de QA multi-salto del mundo real, segun la evaluacion del paper (HotpotQA, 2WikiMultiHopQA, MuSiQue, CoFCA y SynthRM, segun los scripts de evaluacion del repositorio).
-- Generacion de texto conversacional (tag `conversational` en HuggingFace).
-- Compatible con text-generation-inference y endpoints de HuggingFace.
+- Generacion de texto conversacional (tag `conversational` en Hugging Face).
+- Compatible con text-generation-inference y endpoints de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, vision, audio ni modo thinking explicito en la informacion disponible.
 
 ## Casos de uso
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PhantomReasoning-Qwen3-1.7B-gsminf | 2.031.739.904 | no disponible | GRPO sobre GSM-Infinite sintetico | Apache 2.0 | HuggingFace (kilian-group) |
-| Qwen/Qwen3-1.7B (base) | 1.700 millones (aprox.) | contexto largo de Qwen3 (valor exacto no disponible) | preentrenamiento + post-entrenamiento de Qwen | Apache 2.0 | HuggingFace (Qwen) |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.500 millones (aprox.) | no disponible | destilacion de trazas de razonamiento | MIT (segun el modelo original) | HuggingFace (deepseek-ai) |
+| PhantomReasoning-Qwen3-1.7B-gsminf | 2.031.739.904 | no disponible | GRPO sobre GSM-Infinite sintetico | Apache 2.0 | Hugging Face (kilian-group) |
+| Qwen/Qwen3-1.7B (base) | 1.700 millones (aprox.) | contexto largo de Qwen3 (valor exacto no disponible) | preentrenamiento + post-entrenamiento de Qwen | Apache 2.0 | Hugging Face (Qwen) |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.500 millones (aprox.) | no disponible | destilacion de trazas de razonamiento | MIT (segun el modelo original) | Hugging Face (deepseek-ai) |
 
 La comparativa se limita a modelos de la misma familia de tamano (1.500-2.000 millones de parametros) orientados a razonamiento. No se dispone de datos de rendimiento comparativos publicados para este checkpoint.
 
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de la misma familia de tamano (1.500-2.000 mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-1.7B-gsminf
+- Modelo en Hugging Face: https://huggingface.co/kilian-group/PhantomReasoning-Qwen3-1.7B-gsminf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper (arXiv): https://arxiv.org/abs/2603.02091
 - Repositorio de codigo: https://github.com/kilian-group/phantom-reasoning

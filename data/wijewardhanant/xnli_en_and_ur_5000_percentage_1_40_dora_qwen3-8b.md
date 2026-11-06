@@ -2,11 +2,11 @@
 
 ## Resumen
 
-WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_DoRA_Qwen3-8b es un adaptador PEFT publicado en HuggingFace por el usuario WijewardhanaNT sobre el modelo base Qwen/Qwen3-8B-Base. El identificador del repositorio indica que se trata de un ajuste fino con DoRA (Weight-Decomposed Low-Rank Adaptation, una variante de LoRA que descompone la actualización de pesos en magnitud y dirección) orientado a la tarea XNLI de inferencia de lenguaje natural en inglés y urdu, con un subconjunto de 5000 ejemplos y algún tipo de barrido o configuración de porcentajes entre el 1 % y el 40 %.
+WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_40_DoRA_Qwen3-8b es un adaptador PEFT publicado en Hugging Face por el usuario WijewardhanaNT sobre el modelo base Qwen/Qwen3-8B-Base. El identificador del repositorio indica que se trata de un ajuste fino con DoRA (Weight-Decomposed Low-Rank Adaptation, una variante de LoRA que descompone la actualización de pesos en magnitud y dirección) orientado a la tarea XNLI de inferencia de lenguaje natural en inglés y urdu, con un subconjunto de 5000 ejemplos y algún tipo de barrido o configuración de porcentajes entre el 1 % y el 40 %.
 
 El repositorio pesa 0,7 GB y contiene pesos en formato safetensors, con la etiqueta `library_name: peft`, `pipeline_tag: text-generation` y `base_model:adapter:Qwen/Qwen3-8B-Base`. Está etiquetado con `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre cálculo de emisiones de carbono citado en la plantilla de model card, y no a un paper propio del adaptador.
 
-La relevancia del artefacto es limitada y de carácter experimental: la model card es la plantilla por defecto de HuggingFace sin rellenar (todas las secciones figuran como "[More Information Needed]"), no se declara licencia, no se declaran idiomas y no hay resultados de evaluación publicados. Su interés principal es como material de reproducción para estudiar la eficiencia de datos de DoRA frente a LoRA en tareas de NLI con idiomas de bajos recursos como el urdu, no como modelo listo para producción.
+La relevancia del artefacto es limitada y de carácter experimental: la model card es la plantilla por defecto de Hugging Face sin rellenar (todas las secciones figuran como "[More Information Needed]"), no se declara licencia, no se declaran idiomas y no hay resultados de evaluación publicados. Su interés principal es como material de reproducción para estudiar la eficiencia de datos de DoRA frente a LoRA en tareas de NLI con idiomas de bajos recursos como el urdu, no como modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -73,17 +73,17 @@ La comparación de rendimiento no es posible porque el adaptador no publica mét
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA sobre Qwen3-8B-Base) | 8,2 B del base + adaptador de tamano no disponible | 32 768 tokens del base (no confirmado para el adaptador) | Adaptador PEFT para NLI | no disponible | Repositorio HuggingFace con 0 descargas |
-| Qwen/Qwen3-8B-Base (sin adaptador) | 8,2 B | 32 768 tokens nativos | Transformer decoder-only denso | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen3-8B (instruct) | 8,2 B | 32 768 tokens nativos | Transformer decoder-only denso ajustado por instrucciones | Apache 2.0 | Publico en HuggingFace |
-| FacebookAI/xlm-roberta-large | 559 M | 512 tokens | Transformer encoder | MIT | Publico en HuggingFace |
-| google/mt5-xl | 3,7 B | 512 tokens | Transformer encoder-decoder | Apache 2.0 | Publico en HuggingFace |
+| Este adaptador (DoRA sobre Qwen3-8B-Base) | 8,2 B del base + adaptador de tamano no disponible | 32 768 tokens del base (no confirmado para el adaptador) | Adaptador PEFT para NLI | no disponible | Repositorio Hugging Face con 0 descargas |
+| Qwen/Qwen3-8B-Base (sin adaptador) | 8,2 B | 32 768 tokens nativos | Transformer decoder-only denso | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen3-8B (instruct) | 8,2 B | 32 768 tokens nativos | Transformer decoder-only denso ajustado por instrucciones | Apache 2.0 | Publico en Hugging Face |
+| FacebookAI/xlm-roberta-large | 559 M | 512 tokens | Transformer encoder | MIT | Publico en Hugging Face |
+| google/mt5-xl | 3,7 B | 512 tokens | Transformer encoder-decoder | Apache 2.0 | Publico en Hugging Face |
 
 No se dispone de comparativas de precisión (accuracy o F1 en XNLI) para ninguna de estas alternativas en el contexto de este adaptador.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- La model card es la plantilla por defecto de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - No se declara licencia para el adaptador. Aunque el modelo base Qwen3-8B-Base se distribuye bajo Apache 2.0, la ausencia de licencia explícita en el repositorio del adaptador genera incertidumbre legal para uso comercial.
 - No se declaran idiomas oficialmente. La hipótesis inglés-urdu procede del nombre del repositorio y no está confirmada.
 - No hay métricas publicadas, por lo que se desconoce por completo la calidad del ajuste, incluido si el entrenamiento convergió o si el adaptador mejora al modelo base en la tarea objetivo.

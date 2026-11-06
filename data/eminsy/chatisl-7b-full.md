@@ -88,13 +88,13 @@ Identidad (32 preguntas en árabe e inglés nunca usadas en entrenamiento, cada 
 
 | Modelo | Parámetros | Contexto | ArabicMMLU (chat) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChatISL-7B | 9,0 B | no disponible | 82,8 | Apache-2.0 | HuggingFace (abierto) |
-| Jais-3-7B (base) | clase 7B | no disponible | 81,1 | Apache-2.0 | HuggingFace (abierto) |
-| Qwen3-8B | 8 B | no disponible | 71,9 | no disponible en la información | HuggingFace (abierto) |
-| ALLaM-7B-Instruct-preview | 7 B | no disponible | 71,4 | no disponible en la información | HuggingFace (abierto) |
-| Fanar-1-9B-Instruct | 9 B | no disponible | 62,3 | no disponible en la información | HuggingFace (abierto) |
-| SILMA-9B-Instruct-v1.0 | 9 B | no disponible | 62,2 | no disponible en la información | HuggingFace (abierto) |
-| AceGPT-v2-8B-Chat | 8 B | no disponible | 61,7 | no disponible en la información | HuggingFace (abierto) |
+| ChatISL-7B | 9,0 B | no disponible | 82,8 | Apache-2.0 | Hugging Face (abierto) |
+| Jais-3-7B (base) | clase 7B | no disponible | 81,1 | Apache-2.0 | Hugging Face (abierto) |
+| Qwen3-8B | 8 B | no disponible | 71,9 | no disponible en la información | Hugging Face (abierto) |
+| ALLaM-7B-Instruct-preview | 7 B | no disponible | 71,4 | no disponible en la información | Hugging Face (abierto) |
+| Fanar-1-9B-Instruct | 9 B | no disponible | 62,3 | no disponible en la información | Hugging Face (abierto) |
+| SILMA-9B-Instruct-v1.0 | 9 B | no disponible | 62,2 | no disponible en la información | Hugging Face (abierto) |
+| AceGPT-v2-8B-Chat | 8 B | no disponible | 61,7 | no disponible en la información | Hugging Face (abierto) |
 
 La ventaja de ChatISL-7B sobre Qwen3-8B, ALLaM-7B, Fanar-1-9B, SILMA-9B y AceGPT-v2-8B es estadísticamente significativa (prueba exacta de McNemar). Frente a su propio base, la diferencia no es significativa (p = 0,053 con system prompt, p = 0,11 sin él), lo que indica que la mayor parte de la ventaja procede de Jais-3-7B. Los modelos con acceso restringido (Aya Expanse 8B, Gemma-2-9B-it, Llama-3.1-8B-Instruct, Yehia-7B) no se midieron.
 
@@ -114,7 +114,7 @@ La ventaja de ChatISL-7B sobre Qwen3-8B, ALLaM-7B, Fanar-1-9B, SILMA-9B y AceGPT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eminsy/ChatISL-7B-full
+- Modelo en Hugging Face: https://huggingface.co/eminsy/ChatISL-7B-full
 - Versión adaptador (adapter): https://huggingface.co/eminsy/ChatISL-7B
 - Modelo base Jais-3-7B: https://huggingface.co/inception42/Jais-3-7B
 - Dataset ArabicMMLU: https://huggingface.co/datasets/MBZUAI/ArabicMMLU

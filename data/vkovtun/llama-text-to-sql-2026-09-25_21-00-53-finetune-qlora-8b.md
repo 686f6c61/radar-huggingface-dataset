@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-text-to-sql-2026-09-25_21.00.53-finetune-QLORA-8B es un ajuste fino de tipo LoRA cuantizado (QLoRA) del modelo meta-llama/Llama-3.1-8B-Instruct, orientado a la tarea de text-to-SQL, es decir, traducir preguntas en lenguaje natural a consultas SQL ejecutables. Lo publica el usuario vkovtun en HuggingFace y se ha entrenado con la librería TRL (SFT) sobre el stack de Transformers, PyTorch y Datasets. El repositorio ocupa 0,4 GB, lo que indica que contiene únicamente los pesos del adaptador LoRA y no los pesos completos del modelo base.
+llama-text-to-sql-2026-09-25_21.00.53-finetune-QLORA-8B es un ajuste fino de tipo LoRA cuantizado (QLoRA) del modelo meta-llama/Llama-3.1-8B-Instruct, orientado a la tarea de text-to-SQL, es decir, traducir preguntas en lenguaje natural a consultas SQL ejecutables. Lo publica el usuario vkovtun en Hugging Face y se ha entrenado con la librería TRL (SFT) sobre el stack de Transformers, PyTorch y Datasets. El repositorio ocupa 0,4 GB, lo que indica que contiene únicamente los pesos del adaptador LoRA y no los pesos completos del modelo base.
 
 El modelo hereda la arquitectura y las capacidades del Llama 3.1 8B Instruct: un transformer decoder-only de 8.030 millones de parámetros con Grouped Query Attention, ventana de contexto de 128.000 tokens y un vocabulario de 128.256 tokens. Al tratarse de un ajuste fino ligero, no se modifica la arquitectura, sino que se especializa el comportamiento del modelo para generar sentencias SQL a partir de instrucciones y, presumiblemente, de un esquema de base de datos aportado en el prompt.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Inferencia en 8-bit: aproximadamente 9-10 GB de VRAM.
 - GPU de consumo: cabe en una RTX 3090 o RTX 4090 (24 GB) en bf16 con contextos moderados, y en tarjetas de 16 GB (por ejemplo RTX 4060 Ti 16 GB) si se usa cuantización de 4 bits.
 - GPU de centro de datos: A100 40/80 GB, H100 o L40S para servir en bf16 con contextos largos y concurrencia alta.
-- Despliegue: vLLM (soporta adaptadores LoRA en caliente), TGI, Transformers con PEFT, o llama.cpp/Ollama si se fusiona y convierte el modelo a GGUF (proceso no documentado por el autor). También es posible el despliegue en endpoints de HuggingFace, dado el tag endpoints_compatible.
+- Despliegue: vLLM (soporta adaptadores LoRA en caliente), TGI, Transformers con PEFT, o llama.cpp/Ollama si se fusiona y convierte el modelo a GGUF (proceso no documentado por el autor). También es posible el despliegue en endpoints de Hugging Face, dado el tag endpoints_compatible.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de datos verificables sobre alternativas específicas de text-to-S
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llama-text-to-sql-2026-09-25 (este modelo) | 8,03B (base) + adaptador LoRA | 128.000 tokens (heredado) | Text-to-SQL (fine-tune QLoRA + SFT) | No disponible en la ficha; sujeta a la del base | Pública en HuggingFace, sin descargas ni likes |
+| llama-text-to-sql-2026-09-25 (este modelo) | 8,03B (base) + adaptador LoRA | 128.000 tokens (heredado) | Text-to-SQL (fine-tune QLoRA + SFT) | No disponible en la ficha; sujeta a la del base | Pública en Hugging Face, sin descargas ni likes |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Instrucciones generales, sin especialización SQL | Llama 3.1 Community License | Ampliamente adoptado y verificado |
 | Alternativas específicas de text-to-SQL (por ejemplo modelos de la familia SQLCoder o CodeLlama ajustados) | No disponible | No disponible | Text-to-SQL | No disponible | No disponible en la información proporcionada |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificables sobre alternativas específicas de text-to-S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-25_21.00.53-finetune-QLORA-8B
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-25_21.00.53-finetune-QLORA-8B
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Librería de entrenamiento (TRL): https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/ruwsuiwn

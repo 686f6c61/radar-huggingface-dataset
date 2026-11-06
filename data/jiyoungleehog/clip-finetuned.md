@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`jiyoungleehog/clip-finetuned` es un repositorio de HuggingFace publicado por el usuario `jiyoungleehog` que contiene una implementación funcional de CLIP orientada a tareas de *matching* (emparejamiento imagen-texto), con una configuración declarada como "giant". El propio autor indica explícitamente que se trata de código transparente y de *smoke tests* reproducibles, y que las afirmaciones de rendimiento se omiten deliberadamente. No hay un checkpoint entrenado: `model.safetensors` se describe como una inicialización válida para pruebas de humo, no como un modelo con rendimiento medido.
+`jiyoungleehog/clip-finetuned` es un repositorio de Hugging Face publicado por el usuario `jiyoungleehog` que contiene una implementación funcional de CLIP orientada a tareas de *matching* (emparejamiento imagen-texto), con una configuración declarada como "giant". El propio autor indica explícitamente que se trata de código transparente y de *smoke tests* reproducibles, y que las afirmaciones de rendimiento se omiten deliberadamente. No hay un checkpoint entrenado: `model.safetensors` se describe como una inicialización válida para pruebas de humo, no como un modelo con rendimiento medido.
 
-El repositorio tiene 0 descargas y 0 *likes*, y su tamaño es de 0,0 GB según los metadatos de HuggingFace. El único dato cuantitativo de tamaño es el recuento de parámetros de safetensors: 16.576, sin que la información proporcione la unidad (podría tratarse de 16.576 parámetros o de 16,576 millones), por lo que no es posible confirmar la escala real del modelo.
+El repositorio tiene 0 descargas y 0 *likes*, y su tamaño es de 0,0 GB según los metadatos de Hugging Face. El único dato cuantitativo de tamaño es el recuento de parámetros de safetensors: 16.576, sin que la información proporcione la unidad (podría tratarse de 16.576 parámetros o de 16,576 millones), por lo que no es posible confirmar la escala real del modelo.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: sirve como punto de partida reproducible o como ejemplo didáctico de una implementación CLIP con ventana de atención deslizante y fusión tensorial, pero no como modelo listo para evaluación comparativa ni para producción. Los resultados de la búsqueda web proporcionada no guardan ninguna relación con el modelo (corresponden a listados de una autoescuela en Colonia, Alemania), por lo que no aportan información adicional.
 
@@ -33,7 +33,7 @@ No se documenta ningún proceso de entrenamiento real: no hay número de tokens,
 - Soporte de *tool calling* / *function calling*: no disponible (no es una capacidad propia de la arquitectura CLIP ni se documenta adaptación alguna).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; la model card no indica idiomas.
-- Capacidades especiales (modo *thinking*, vision, audio): no disponible; el pipeline declarado en HuggingFace no está especificado, aunque las etiquetas incluyen `clip` y `matching`.
+- Capacidades especiales (modo *thinking*, vision, audio): no disponible; el pipeline declarado en Hugging Face no está especificado, aunque las etiquetas incluyen `clip` y `matching`.
 - Carga mediante APIs genéricas: el autor advierte de que, al ser una implementación personalizada, requiere un adaptador explícito.
 
 ## Casos de uso
@@ -86,5 +86,5 @@ La comparación con este repositorio no es homogénea: las alternativas son chec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiyoungleehog/clip-finetuned
+- Hugging Face: https://huggingface.co/jiyoungleehog/clip-finetuned
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a listados de una autoescuela en Colonia (Alemania) y no guardan relación con el modelo.

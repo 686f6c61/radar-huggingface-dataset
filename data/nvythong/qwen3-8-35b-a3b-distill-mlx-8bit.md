@@ -88,7 +88,7 @@ Los valores marcados como estimados derivan del tamano del modelo base y no de u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nvythong/Qwen3.8-35B-A3B-Distill-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/nvythong/Qwen3.8-35B-A3B-Distill-mlx-8Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Repositorio GitHub Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Repositorio GitHub Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

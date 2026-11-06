@@ -79,10 +79,10 @@ No hay datos suficientes para comparar con alternativas de otros fabricantes o d
 
 | Build | bpw efectivo | Peso en VRAM | KLD vs BF16 | Perplexidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scorpoon 3.05bpw h8 SC | 3.09 capas + 8.0 cabeza | 49.56 GiB, 7 shards | 0.01543 | 1.4041 | qwen-community-1.0 | HuggingFace, rama `3.05bpw_h8_ng6` |
-| scorpoon 3.15bpw h8 SC | 3.19 capas + 8.0 cabeza | 50.44 GiB, 7 shards | 0.01454 | 1.4016 | qwen-community-1.0 | HuggingFace, rama `3.15bpw_h8_ng6` |
-| turboderp 3.05bpw h5 | 3.05 | no disponible | 0.01730 | 1.4071 | qwen-community-1.0 | HuggingFace |
-| Qwen3.8-Flash-Next BF16 | 16 | no disponible | referencia | 1.3846 | qwen-community-1.0 | HuggingFace |
+| scorpoon 3.05bpw h8 SC | 3.09 capas + 8.0 cabeza | 49.56 GiB, 7 shards | 0.01543 | 1.4041 | qwen-community-1.0 | Hugging Face, rama `3.05bpw_h8_ng6` |
+| scorpoon 3.15bpw h8 SC | 3.19 capas + 8.0 cabeza | 50.44 GiB, 7 shards | 0.01454 | 1.4016 | qwen-community-1.0 | Hugging Face, rama `3.15bpw_h8_ng6` |
+| turboderp 3.05bpw h5 | 3.05 | no disponible | 0.01730 | 1.4071 | qwen-community-1.0 | Hugging Face |
+| Qwen3.8-Flash-Next BF16 | 16 | no disponible | referencia | 1.3846 | qwen-community-1.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -66,7 +66,7 @@ No hay información suficiente para establecer una comparativa rigurosa. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged
+- Modelo en Hugging Face: https://huggingface.co/bodenmaurice/unconst-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Otros modelos de la familia Affine (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-r71-merged , https://huggingface.co/unconst/Affine-5czsc2fc98-r4-fullft
 - No se encontraron papers, repositorios adicionales o demos relacionados con este modelo concreto.

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oteam/rfdiffusion-inpaint-seq | 60,88 M | Difusión SE(3) con denoiser RoseTTAFold | MSA 256, pares 128, 50 pasos | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/rfdiffusion-inpaint-seq | 60,88 M | Difusión SE(3) con denoiser RoseTTAFold | MSA 256, pares 128, 50 pasos | AGPL-3.0 | Hugging Face (ofoldx) |
 | RFdiffusion oficial (RosettaCommons) | ~59,88 M (misma arquitectura) | Difusión SE(3) | Igual | Licencia del repo oficial (no especificada aquí) | GitHub RosettaCommons/RFdiffusion |
-| oteam/rfdiffusion-base | ~59,88 M | Difusión SE(3) | Igual | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/rfdiffusion-complex-base | ~59,88 M | Difusión SE(3) para complejos/binders | Igual | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/rfdiffusion-base | ~59,88 M | Difusión SE(3) | Igual | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/rfdiffusion-complex-base | ~59,88 M | Difusión SE(3) para complejos/binders | Igual | AGPL-3.0 | Hugging Face (ofoldx) |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/rfdiffusion-inpaint-seq
+- Modelo en Hugging Face: https://huggingface.co/oteam/rfdiffusion-inpaint-seq
 - Variante base: https://huggingface.co/oteam/rfdiffusion-base
 - Variante base epoch8: https://huggingface.co/oteam/rfdiffusion-base-epoch8
 - Variante complex-base: https://huggingface.co/oteam/rfdiffusion-complex-base

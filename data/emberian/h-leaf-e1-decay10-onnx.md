@@ -65,7 +65,7 @@ No se dispone de benchmarks comparativos entre estos modelos. El modelo aquí de
 - No se ha evaluado su comportamiento en tareas de seguridad, sesgos o toxicidad; el entrenamiento con un corpus reducido puede exacerbar estos problemas.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/emberian/h-leaf-e1-decay10-onnx
+- Repositorio Hugging Face: https://huggingface.co/emberian/h-leaf-e1-decay10-onnx
 - Proyecto `h` en GitHub: https://github.com/emberian/h
 - Licencia Falcon-LLM: https://falconllm.tii.ae/falcon-terms-and-conditions.html
 - Modelo base: https://huggingface.co/tiiuae/Falcon-H1-Tiny-90M-Base

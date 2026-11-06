@@ -81,8 +81,8 @@ El modelo base de Google es el original en precision completa; las dos exportaci
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/aweussom/gemma-4-E4B-it-int8-ov
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E4B-it
+- Repositorio Hugging Face de este modelo: https://huggingface.co/aweussom/gemma-4-E4B-it-int8-ov
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E4B-it
 - Export de Intel (alternativa): https://huggingface.co/OpenVINO/gemma-4-E4B-it-int8-ov
 - Pagina oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Ficha de Gemma 4 E4B en gemma4.dev: https://gemma4.dev/models/gemma-4-e4b

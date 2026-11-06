@@ -93,7 +93,7 @@ Frente a otras cuantizaciones de modelos similares en el mercado (por ejemplo, v
 
 ## Enlaces
 
-- Repositorio HuggingFace: [TheDrainFlorist/Qwen3.8-Flash-Next-VQ-4.4bpw](https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-4.4bpw)
+- Repositorio Hugging Face: [TheDrainFlorist/Qwen3.8-Flash-Next-VQ-4.4bpw](https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-4.4bpw)
 - Modelo base: [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - Herramienta VQLab: [VQLab](https://github.com/noahzelezny/VQLab)
 - Documentación de unsloth sobre Qwen3.8-Flash-Next: [unsloth.ai/docs/models/qwen3.8-next](https://unsloth.ai/docs/models/qwen3.8-next)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`satoleo1990/vit-classification71` es un repositorio de HuggingFace que contiene una implementación personalizada de un Vision Transformer (ViT) orientada a tareas de clasificación. Lo publica el usuario `satoleo1990` y se trata de un prototipo de investigación, no de un modelo entrenado ni validado. La model card es explícita al respecto: el checkpoint `model.safetensors` es únicamente una inicialización válida para pruebas de humo ("smoke tests") y no se presenta como un checkpoint con rendimiento medido en benchmarks.
+`satoleo1990/vit-classification71` es un repositorio de Hugging Face que contiene una implementación personalizada de un Vision Transformer (ViT) orientada a tareas de clasificación. Lo publica el usuario `satoleo1990` y se trata de un prototipo de investigación, no de un modelo entrenado ni validado. La model card es explícita al respecto: el checkpoint `model.safetensors` es únicamente una inicialización válida para pruebas de humo ("smoke tests") y no se presenta como un checkpoint con rendimiento medido en benchmarks.
 
 El modelo se enmarca en la familia ViT, con una escala declarada como "base", atención de tipo sparse, fusión de bajo rango (low rank), activación ReLU y normalización RMSNorm. El número de parámetros registrado en el archivo de safetensors es de 16.576, una cifra extremadamente pequeña para un ViT base real (que habitualmente ronda los 86 millones de parámetros), lo que sugiere que la configuración generada corresponde a un esqueleto mínimo o a una arquitectura experimental de dimensiones reducidas. El repositorio ocupa 0.0 GB y no tiene descargas ni likes en el momento de la consulta.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `satoleo1990/vit-classification71` | 16.576 (según safetensors) | no disponible | sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
-| ViT-Base (google/vit-base-patch16-224) | ~86 M | imagen 224x224 | benchmarks públicos en ImageNet | Apache 2.0 | HuggingFace, ampliamente usado |
-| DeiT-Base (facebook/deit-base-distilled) | ~86 M | imagen 224x224 | benchmarks públicos en ImageNet | Apache 2.0 | HuggingFace, ampliamente usado |
+| `satoleo1990/vit-classification71` | 16.576 (según safetensors) | no disponible | sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
+| ViT-Base (google/vit-base-patch16-224) | ~86 M | imagen 224x224 | benchmarks públicos en ImageNet | Apache 2.0 | Hugging Face, ampliamente usado |
+| DeiT-Base (facebook/deit-base-distilled) | ~86 M | imagen 224x224 | benchmarks públicos en ImageNet | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación con ViT-Base y DeiT-Base es orientativa por categoría (clasificación de imágenes con transformer), pero los datos de estos modelos de referencia no forman parte de la información proporcionada en esta ficha y deben verificarse en sus respectivas model cards.
 
@@ -81,5 +81,5 @@ La comparación con ViT-Base y DeiT-Base es orientativa por categoría (clasific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/satoleo1990/vit-classification71
+- Modelo en Hugging Face: https://huggingface.co/satoleo1990/vit-classification71
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

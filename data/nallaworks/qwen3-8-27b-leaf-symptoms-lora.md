@@ -73,7 +73,7 @@ Tamaños de los conjuntos: PlantVillage 540, PlantDoc 236, crops 422, PlantWild 
 
 | Modelo | Parámetros | Contexto | Precisión campo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.8-27b-leaf-symptoms-lora (este) | 27B base + LoRA r16 | no disponible | 80,1 % PlantDoc | Apache 2.0 | HuggingFace |
+| qwen3.8-27b-leaf-symptoms-lora (este) | 27B base + LoRA r16 | no disponible | 80,1 % PlantDoc | Apache 2.0 | Hugging Face |
 | Adaptadores PlantVillage-only del mismo estudio | 27B base + LoRA | no disponible | no disponible en esta ficha | Apache 2.0 | Zenodo |
 | Adaptadores PlantDoc-only del mismo estudio | 27B base + LoRA | no disponible | no disponible en esta ficha | Apache 2.0 | Zenodo |
 | Modelos más pequeños del mismo estudio | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | Zenodo |
@@ -93,9 +93,9 @@ No se dispone de datos de benchmarks de modelos externos comparables en la infor
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nallaworks/qwen3.8-27b-leaf-symptoms-lora
+- Hugging Face del adaptador: https://huggingface.co/nallaworks/qwen3.8-27b-leaf-symptoms-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del estudio (código, predicciones y adaptadores): https://doi.org/10.5281/zenodo.23898477
-- Prompt de entrenamiento: `prompt.txt` en el repositorio de HuggingFace
-- Metadatos de entrenamiento: `train_meta.json` y `train_log.jsonl` en el repositorio de HuggingFace
+- Prompt de entrenamiento: `prompt.txt` en el repositorio de Hugging Face
+- Metadatos de entrenamiento: `train_meta.json` y `train_log.jsonl` en el repositorio de Hugging Face
 - Cita: Siriani, A. L. R. (2026). *Does the lab-to-field gap hold for vision-language models? Zero-shot and LoRA benchmarks of open VLMs for structured leaf-symptom reading on PlantVillage, PlantDoc and PlantWild*. Enviado a *Computers and Electronics in Agriculture*.

@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye otras políticas del eco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-2-b
+- Hugging Face: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-2-b
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y recetas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges (rama `race-2`, commit `b44f7ffc9`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon

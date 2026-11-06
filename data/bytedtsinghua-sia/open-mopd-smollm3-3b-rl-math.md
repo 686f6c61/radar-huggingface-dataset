@@ -86,7 +86,7 @@ La comparacion con estos modelos no es directa porque el modelo evaluado es un t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Math
+- Modelo en Hugging Face: https://huggingface.co/BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-RL-Math
 - Repositorio GitHub de Open-MOPD: https://github.com/BytedTsinghua-SIA/Open-MOPD
 - Documentacion de entrenamiento en el repo: https://github.com/BytedTsinghua-SIA/Open-MOPD/tree/main/training
 - Documentacion de evaluaciones en el repo: https://github.com/BytedTsinghua-SIA/Open-MOPD/tree/main/evals

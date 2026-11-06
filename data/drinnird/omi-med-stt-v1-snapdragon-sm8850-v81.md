@@ -65,10 +65,10 @@ La pagina de investigacion de Omi Health indica que existen comparativas publica
 
 | Modelo | Parametros | Idiomas | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| `drinnird/omi-med-stt-v1-snapdragon-sm8850-v81` | ~0,6 B | Ingles | cc-by-4.0 | ASR medico on-device para Snapdragon SM8850 | HuggingFace, 0 descargas |
-| `omi-health/omi-med-stt-v1` | ~0,6 B | Ingles | cc-by-4.0 | ASR medico on-device (modelo original) | HuggingFace |
-| NVIDIA Parakeet TDT 0.6B v2 | ~0,6 B | Ingles | cc-by-4.0 | ASR generico (modelo base) | HuggingFace / NVIDIA NeMo |
-| OpenAI Whisper (familia) | 39 M - 1,55 B | Multilingue | MIT | ASR generico multilingue | HuggingFace / OpenAI |
+| `drinnird/omi-med-stt-v1-snapdragon-sm8850-v81` | ~0,6 B | Ingles | cc-by-4.0 | ASR medico on-device para Snapdragon SM8850 | Hugging Face, 0 descargas |
+| `omi-health/omi-med-stt-v1` | ~0,6 B | Ingles | cc-by-4.0 | ASR medico on-device (modelo original) | Hugging Face |
+| NVIDIA Parakeet TDT 0.6B v2 | ~0,6 B | Ingles | cc-by-4.0 | ASR generico (modelo base) | Hugging Face / NVIDIA NeMo |
+| OpenAI Whisper (familia) | 39 M - 1,55 B | Multilingue | MIT | ASR generico multilingue | Hugging Face / OpenAI |
 
 Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drinnird/omi-med-stt-v1-snapdragon-sm8850-v81
+- Modelo en Hugging Face: https://huggingface.co/drinnird/omi-med-stt-v1-snapdragon-sm8850-v81
 - Modelo original de Omi Health: https://huggingface.co/omi-health/omi-med-stt-v1
 - Arbol de ficheros del modelo original: https://huggingface.co/omi-health/omi-med-stt-v1/tree/main
 - Pagina de investigacion de Omi Med STT: https://omi.health/research/omi-med-stt

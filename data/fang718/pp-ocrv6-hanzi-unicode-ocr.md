@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pp-ocrv6-hanzi-unicode-ocr es un modelo de reconocimiento óptico de caracteres (OCR) de un solo carácter para glifos CJK, desarrollado por el usuario fang718 y publicado en HuggingFace. Recibe como entrada una imagen recortada que contiene un único glifo y devuelve como salida su código Unicode. Está construido sobre el modelo de reconocimiento PP-OCRv6 (variante medium) de PaddleOCR, convertido a formato ONNX, y afina sobre fuentes tipográficas de glifos en el checkpoint `PP-OCRv6_medium_gaiji_fonts_v2`.
+pp-ocrv6-hanzi-unicode-ocr es un modelo de reconocimiento óptico de caracteres (OCR) de un solo carácter para glifos CJK, desarrollado por el usuario fang718 y publicado en Hugging Face. Recibe como entrada una imagen recortada que contiene un único glifo y devuelve como salida su código Unicode. Está construido sobre el modelo de reconocimiento PP-OCRv6 (variante medium) de PaddleOCR, convertido a formato ONNX, y afina sobre fuentes tipográficas de glifos en el checkpoint `PP-OCRv6_medium_gaiji_fonts_v2`.
 
 Su principal valor diferencial es la cobertura: las 101.996 clases de su vocabulario corresponden, sin huecos, a todos los ideogramas unificados CJK de Unicode 17.0 (Extensiones A–J más el bloque URO), más 12 ideogramas de compatibilidad que no se normalizan a otro punto de código. Esto lo hace útil para el problema de los caracteres poco frecuentes o raros (生僻字, gaiji, 外字), que quedan fuera de los diccionarios de los OCR convencionales.
 
@@ -80,8 +80,8 @@ Los valores de exactitud son autodeclarados por el autor y no se acompanan de un
 
 | Modelo | Salida | Base | Cobertura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pp-ocrv6-hanzi-unicode-ocr (este repositorio) | El caracter, por ejemplo `明` | PP-OCRv6 medium convertido a ONNX, afinado en fuentes de glifos | 101.996 ideogramas CJK de Unicode 17.0, sin huecos | no disponible | HuggingFace; 0 descargas, 0 likes |
-| pp-ocrv6-hanzi-ids-ocr | La estructura del caracter, por ejemplo `⿰日月` | Del mismo autor, mismo enfoque sobre PP-OCRv6 | no disponible | no disponible | HuggingFace |
+| pp-ocrv6-hanzi-unicode-ocr (este repositorio) | El caracter, por ejemplo `明` | PP-OCRv6 medium convertido a ONNX, afinado en fuentes de glifos | 101.996 ideogramas CJK de Unicode 17.0, sin huecos | no disponible | Hugging Face; 0 descargas, 0 likes |
+| pp-ocrv6-hanzi-ids-ocr | La estructura del caracter, por ejemplo `⿰日月` | Del mismo autor, mismo enfoque sobre PP-OCRv6 | no disponible | no disponible | Hugging Face |
 | Alternativas genericas de OCR de caracteres CJK | Caracter o texto | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion disponible alternativas directas con cobertura equivalente de las Extensiones B–J de Unicode. Los OCR convencionales (tipo PaddleOCR general, Tesseract o EasyOCR) no publican en esta informacion un recuento de clases comparable, por lo que no se puede establecer una comparacion cuantitativa fiable. El unico modelo directamente comparable y documentado es el modelo hermano `pp-ocrv6-hanzi-ids-ocr`, disenado para complementarlo mediante validacion cruzada.
@@ -100,7 +100,7 @@ No se han identificado en la informacion disponible alternativas directas con co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fang718/pp-ocrv6-hanzi-unicode-ocr
+- Modelo en Hugging Face: https://huggingface.co/fang718/pp-ocrv6-hanzi-unicode-ocr
 - Modelo complementario de estructuras IDS: https://huggingface.co/fang718/pp-ocrv6-hanzi-ids-ocr
 
 No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios o demos.

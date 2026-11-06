@@ -48,7 +48,7 @@ El preentrenamiento usa los documentos originales de DCLM-edu con pérdida sobre
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo reporta pérdidas de validación y una verificación de los pesos de HuggingFace frente al checkpoint de Megatron:
+No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u otros) en la información disponible. El autor solo reporta pérdidas de validación y una verificación de los pesos de Hugging Face frente al checkpoint de Megatron:
 
 | Conjunto | Pérdida HF | Referencia Megatron | Diferencia absoluta |
 |---|---|---|---|
@@ -73,9 +73,9 @@ Pérdida de validación por token sobre 2.433 documentos retenidos (checkpoint f
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-0.98b-v2-raw-seed1234-base | 981,5M | 4.096 | Apache 2.0 | Modelo base de investigación (preentrenamiento controlado) | HuggingFace, transformers |
-| SmolLM2 (familia, referencia por tokenizador) | no disponible en la información | no disponible | no disponible | Modelo base/instruido de propósito general | HuggingFace |
-| Resto de la escalera 1PP (0,58B, 1,66B, 2,81B) | 0,58B / 1,66B / 2,81B | 4.096 (según la arquitectura descrita para la escalera) | Apache 2.0 | Mismo diseño experimental, distinto tamaño | Colección 1pp en HuggingFace |
+| 1pp-0.98b-v2-raw-seed1234-base | 981,5M | 4.096 | Apache 2.0 | Modelo base de investigación (preentrenamiento controlado) | Hugging Face, transformers |
+| SmolLM2 (familia, referencia por tokenizador) | no disponible en la información | no disponible | no disponible | Modelo base/instruido de propósito general | Hugging Face |
+| Resto de la escalera 1PP (0,58B, 1,66B, 2,81B) | 0,58B / 1,66B / 2,81B | 4.096 (según la arquitectura descrita para la escalera) | Apache 2.0 | Mismo diseño experimental, distinto tamaño | Colección 1pp en Hugging Face |
 
 No se dispone de datos de benchmarks que permitan una comparación cuantitativa de rendimiento con alternativas de la misma categoría.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed1234-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed1234-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

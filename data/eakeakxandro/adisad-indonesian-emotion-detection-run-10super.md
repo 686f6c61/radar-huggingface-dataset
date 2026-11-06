@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`adisad-indonesian-emotion-detection-Run-10Super` es un clasificador de emociones multi-etiqueta para textos en indonesio, desarrollado por el usuario de HuggingFace `eakeakxandro`. No es un modelo entrenado desde cero: se trata de un fine-tuning de `indobenchmark/indobert-base-p2`, el checkpoint IndoBERT Base fase 2 (uncased) publicado por el equipo IndoNLU, sobre el que se ha añadido una cabeza MLP de clasificación. El modelo resuelve la detección simultánea de hasta siete emociones en una misma reseña, de modo que un único texto puede activar varias etiquetas a la vez (por ejemplo, `jengkel` y `kecewa`).
+`adisad-indonesian-emotion-detection-Run-10Super` es un clasificador de emociones multi-etiqueta para textos en indonesio, desarrollado por el usuario de Hugging Face `eakeakxandro`. No es un modelo entrenado desde cero: se trata de un fine-tuning de `indobenchmark/indobert-base-p2`, el checkpoint IndoBERT Base fase 2 (uncased) publicado por el equipo IndoNLU, sobre el que se ha añadido una cabeza MLP de clasificación. El modelo resuelve la detección simultánea de hasta siete emociones en una misma reseña, de modo que un único texto puede activar varias etiquetas a la vez (por ejemplo, `jengkel` y `kecewa`).
 
 La arquitectura subyacente es un transformer BERT-base con 12 capas, 768 dimensiones ocultas, 12 cabezas de atención y aproximadamente 124,5 millones de parámetros, preentrenado sobre el corpus Indo4B (23,43 GB de texto en indonesio). El fine-tuning se realizó con 4.600 reseñas de comercio electrónico según la model card, usando una función de pérdida `BCEWithLogitsLoss` con `pos_weight` para compensar el desbalance entre etiquetas. El contexto efectivo está limitado a 128 tokens.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eakeakxandro/adisad-indonesian-emotion-detection-Run-10Super` | ~124,5 M | 128 tokens | Clasificación multi-etiqueta de emociones (indonesio) | MIT | HuggingFace, pesos `.pt` |
-| `indobenchmark/indobert-base-p2` | ~124,5 M | 512 tokens | Modelo base de propósito general (indonesio) | MIT | HuggingFace, safetensors |
-| `indobenchmark/indobert-lite-base-p2` | ~17 M | 512 tokens | Modelo base ligero (indonesio) | MIT | HuggingFace, safetensors |
+| `eakeakxandro/adisad-indonesian-emotion-detection-Run-10Super` | ~124,5 M | 128 tokens | Clasificación multi-etiqueta de emociones (indonesio) | MIT | Hugging Face, pesos `.pt` |
+| `indobenchmark/indobert-base-p2` | ~124,5 M | 512 tokens | Modelo base de propósito general (indonesio) | MIT | Hugging Face, safetensors |
+| `indobenchmark/indobert-lite-base-p2` | ~17 M | 512 tokens | Modelo base ligero (indonesio) | MIT | Hugging Face, safetensors |
 
 La comparación con alternativas específicas de clasificación de emociones en indonesio no está disponible en la información proporcionada. Frente a su modelo base, este checkpoint sacrifica longitud de contexto (128 frente a 512 tokens) a cambio de una tarea especializada, y no publica métricas que permitan cuantificar la mejora.
 
@@ -83,6 +83,6 @@ La comparación con alternativas específicas de clasificación de emociones en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eakeakxandro/adisad-indonesian-emotion-detection-Run-10Super
+- Hugging Face: https://huggingface.co/eakeakxandro/adisad-indonesian-emotion-detection-Run-10Super
 - Modelo base IndoBERT: https://huggingface.co/indobenchmark/indobert-base-p2
 - Paper IndoNLU: https://arxiv.org/abs/2009.05387

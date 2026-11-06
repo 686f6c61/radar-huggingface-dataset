@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pasha-Gemmnik-0.1-acestep-prompt-generator es un modelo publicado en HuggingFace por el usuario AnaNimrod bajo licencia Apache 2.0. La informacion disponible en su model card es practicamente inexistente: unicamente consta la declaracion de licencia, sin descripcion, sin datos de arquitectura, sin tamano, sin contexto y sin ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta.
+Pasha-Gemmnik-0.1-acestep-prompt-generator es un modelo publicado en Hugging Face por el usuario AnaNimrod bajo licencia Apache 2.0. La informacion disponible en su model card es practicamente inexistente: unicamente consta la declaracion de licencia, sin descripcion, sin datos de arquitectura, sin tamano, sin contexto y sin ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta.
 
 El nombre del repositorio sugiere, por convencion de nomenclatura, que se trata de un generador de prompts orientado a AceStep, un modelo de generacion de audio y musica. Sin embargo, esta interpretacion no puede confirmarse con la documentacion publicada, por lo que debe tratarse como una hipotesis no verificada y no como una caracteristica tecnica acreditada.
 
@@ -79,5 +79,5 @@ No disponible. Sin conocer el tamano, la tarea declarada ni el rendimiento del m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnaNimrod/Pasha-Gemmnik-0.1-acestep-prompt-generator
+- Hugging Face: https://huggingface.co/AnaNimrod/Pasha-Gemmnik-0.1-acestep-prompt-generator
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allenwoods823/qwen2.5-3b-chat-lora
+- Hugging Face: https://huggingface.co/allenwoods823/qwen2.5-3b-chat-lora
 - Perfil del autor: https://huggingface.co/allenwoods823
 - Modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Tutorial de fine-tuning con LoRA: https://ai4u.space/blog/fine-tune-qwen2-5-3b-model-colab-guide

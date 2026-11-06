@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-voxcpm-zhenzhen-3000-lora es un adaptador LoRA publicado en HuggingFace por la organizacion RunningHubAI, atribuido al usuario RunningHub-@T8star-Aix. El nombre sugiere que se trata de un ajuste fino sobre un modelo base de la familia VoxCPM, etiquetado con el identificador "zhenzhen-3000", y empaquetado como pesos LoRA listos para cargar en ComfyUI o en la plataforma RunningHub. No se trata de un modelo de lenguaje completo, sino de un adaptador de bajo rango que modifica el comportamiento de un modelo base que no se identifica explicitamente en la informacion disponible.
+rh-voxcpm-zhenzhen-3000-lora es un adaptador LoRA publicado en Hugging Face por la organizacion RunningHubAI, atribuido al usuario RunningHub-@T8star-Aix. El nombre sugiere que se trata de un ajuste fino sobre un modelo base de la familia VoxCPM, etiquetado con el identificador "zhenzhen-3000", y empaquetado como pesos LoRA listos para cargar en ComfyUI o en la plataforma RunningHub. No se trata de un modelo de lenguaje completo, sino de un adaptador de bajo rango que modifica el comportamiento de un modelo base que no se identifica explicitamente en la informacion disponible.
 
 El repositorio contiene un unico archivo de pesos en formato safetensors de 69 MiB, lo que es coherente con un LoRA de dimension reducida. El tamano total del repositorio es de 0,1 GB. La model card no documenta el modelo base exacto (solo indica "Finetuned from: Other"), ni la arquitectura subyacente, ni el numero de parametros, ni la longitud de contexto. Tampoco se especifican los datos de entrenamiento, el dataset utilizado ni el procedimiento de ajuste.
 
@@ -74,7 +74,7 @@ No disponible. No se identifican en la informacion proporcionada adaptadores LoR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-voxcpm-zhenzhen-3000-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-voxcpm-zhenzhen-3000-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2049668296462569473
 - Pagina del autor: https://www.runninghub.cn/user-center/1819214514410942465
 - RunningHub International: https://www.runninghub.ai

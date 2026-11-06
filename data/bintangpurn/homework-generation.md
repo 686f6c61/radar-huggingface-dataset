@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BINTANGPURN/homework-generation es un prototipo de investigacion publicado en HuggingFace por el usuario BINTANGPURN, descrito por su autor como una implementacion de tipo CLIP orientada a tareas de generacion. No se trata de un modelo entrenado ni validado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo y no un checkpoint con rendimiento medido. El repositorio contiene 49.600 parametros totales segun los metadatos de safetensors, una cifra extremadamente reducida que situa el artefacto en la categoria de "small" segun su propia configuracion.
+BINTANGPURN/homework-generation es un prototipo de investigacion publicado en Hugging Face por el usuario BINTANGPURN, descrito por su autor como una implementacion de tipo CLIP orientada a tareas de generacion. No se trata de un modelo entrenado ni validado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo y no un checkpoint con rendimiento medido. El repositorio contiene 49.600 parametros totales segun los metadatos de safetensors, una cifra extremadamente reducida que situa el artefacto en la categoria de "small" segun su propia configuracion.
 
 El modelo resuelve, en la practica, un problema de andamiaje de investigacion: proporciona una arquitectura base con atencion flash, fusion de bajo rango, activacion mish y normalizacion rmsnorm, junto con un script (`model.py`), una configuracion (`config.json`) y una receta de experimento por defecto (`training_args.json` con AdamW y calentamiento lineal). Su relevancia actual es limitada y acotada al ambito de prototipado: sirve como punto de partida reproducible para experimentos propios, no como componente listo para produccion.
 
@@ -70,13 +70,13 @@ No disponible. No se han proporcionado datos de rendimiento, contexto ni evaluac
 - No se declaran idiomas soportados ni longitud de contexto, por lo que se desconoce su comportamiento linguistico.
 - Riesgo de alucinacion: no evaluable en un modelo sin entrenar; en cualquier caso, no debe desplegarse en produccion sin una evaluacion previa.
 - Licencia Apache 2.0: permite uso comercial y modificacion con atribucion, pero la model card advierte de que deben revisarse por separado las condiciones de los datos de origen si se emplean datasets externos.
-- Las API genericas de carga automatica de HuggingFace no funcionan sin un adaptador explicito, lo que anade trabajo de integracion.
+- Las API genericas de carga automatica de Hugging Face no funcionan sin un adaptador explicito, lo que anade trabajo de integracion.
 - El repositorio registra 0 descargas y 0 likes, y un tamano de 0.0 GB: no hay comunidad, mantenimiento ni soporte documentado.
 - La fecha de creacion y actualizacion indicada en los metadatos (2026-10-05) es posterior a la fecha de referencia habitual y deberia verificarse antes de citarla.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BINTANGPURN/homework-generation
+- Hugging Face: https://huggingface.co/BINTANGPURN/homework-generation
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a servicios generales de asistentes de IA (Google Gemini, ChatGPT, Google AI Studio) sin relacion con este repositorio.
 - Paper de referencia de la arquitectura CLIP original: no disponible en la informacion proporcionada.
 - Repositorio de codigo, demo o blog del autor: no disponible.

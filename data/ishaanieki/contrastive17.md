@@ -65,5 +65,5 @@ No se dispone de modelos comparables con un tamano de 49.600 parametros y una ar
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/IshaanIeki/contrastive17
+- Pagina del modelo en Hugging Face: https://huggingface.co/IshaanIeki/contrastive17
 - Los resultados de la busqueda web no incluyen enlaces relevantes adicionales sobre el modelo.

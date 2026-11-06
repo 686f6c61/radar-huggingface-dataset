@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E5-sk-large es un modelo de embeddings de frases (sentence embeddings) desarrollado por el usuario borsimnet, obtenido mediante fine-tuning del modelo multilingüe `intfloat/multilingual-e5-large` sobre datos en eslovaco. Está diseñado específicamente para tareas de similitud semántica, búsqueda semántica y clasificación de textos en eslovaco, un idioma con escasez de recursos en el ecosistema de modelos de lenguaje. El modelo se distribuye bajo licencia MIT y está disponible en HuggingFace con formato safetensors, listo para usar con la librería sentence-transformers y compatible con Text Embeddings Inference (TEI).
+E5-sk-large es un modelo de embeddings de frases (sentence embeddings) desarrollado por el usuario borsimnet, obtenido mediante fine-tuning del modelo multilingüe `intfloat/multilingual-e5-large` sobre datos en eslovaco. Está diseñado específicamente para tareas de similitud semántica, búsqueda semántica y clasificación de textos en eslovaco, un idioma con escasez de recursos en el ecosistema de modelos de lenguaje. El modelo se distribuye bajo licencia MIT y está disponible en Hugging Face con formato safetensors, listo para usar con la librería sentence-transformers y compatible con Text Embeddings Inference (TEI).
 
 El modelo se basa en la arquitectura XLM-RoBERTa (concretamente la variante large) y cuenta con 365.330.432 parámetros. Fue entrenado con un dataset de 137.745 muestras procedente del corpus `slovak-nlp/sklep`, utilizando funciones de pérdida CosineSimilarityLoss y MultipleNegativesRankingLoss. Aunque el modelo base es multilingüe, este fine-tuning está orientado exclusivamente al eslovaco, lo que lo convierte en una opción relevante para aplicaciones que requieran representaciones vectoriales de alta calidad en este idioma. Su relevancia actual radica en la creciente demanda de modelos de embeddings especializados en lenguas minoritarias, donde los modelos multilingües genéricos suelen mostrar un rendimiento inferior.
 
@@ -71,7 +71,7 @@ No se proporcionan comparaciones con otros modelos en la información disponible
 - VRAM estimada para inferencia: al tratarse de un modelo de 365M parámetros, en FP32 ocupa aproximadamente 1,4 GB, y en FP16 unos 730 MB. Con cuantización INT8 podría reducirse a ~365 MB, aunque no se especifican cuantizaciones oficiales.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en FP32 sin problemas. Tarjetas como NVIDIA GTX 1050 Ti, RTX 2060 o superiores son suficientes. Para procesamiento por lotes grande, se recomienda al menos 4 GB de VRAM.
 - Es viable en CPU para inferencia de baja latencia (menos de 10 ms por frase) si se usan librerías optimizadas como ONNX Runtime o CTranslate2.
-- Opciones de despliegue: sentence-transformers (Python), HuggingFace Inference Endpoints, Text Embeddings Inference (TEI), o exportación a ONNX para servidores propios.
+- Opciones de despliegue: sentence-transformers (Python), Hugging Face Inference Endpoints, Text Embeddings Inference (TEI), o exportación a ONNX para servidores propios.
 - Latencia y throughput: no se han publicado datos concretos. En una GPU moderna (p. ej., RTX 3090) se pueden procesar cientos de frases por segundo.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ No se dispone de benchmarks comparativos entre estos modelos en tareas eslovacas
 
 ## Enlaces
 
-- [HuggingFace: borsimnet/e5-sk-large](https://huggingface.co/borsimnet/e5-sk-large)
+- [Hugging Face: borsimnet/e5-sk-large](https://huggingface.co/borsimnet/e5-sk-large)
 - [Modelo base: intfloat/multilingual-e5-large](https://huggingface.co/intfloat/multilingual-e5-large)
 - [Paper XLM-RoBERTa (arXiv:1908.10084)](https://arxiv.org/abs/1908.10084)
 - [Referencia adicional (arXiv:2606.13647)](https://arxiv.org/abs/2606.13647)

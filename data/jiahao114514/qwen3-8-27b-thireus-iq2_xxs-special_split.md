@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene shards GGUF cuantizados del modelo Qwen3.8-27B, un modelo de lenguaje de proposito general de 26,9 mil millones de parametros. Aunque el autor es `jiahao114514`, el contenido procede del trabajo de Thireus y su `GGUF Tool Suite`, una coleccion de herramientas que genera recetas de cuantizacion dinamica para optimizar la perplejidad (perplexity) segun el hardware objetivo. La receta aqui utilizada es `IQ2_XXS`, una cuantizacion muy agresiva de 2 bits aproximadamente, lo que permite ejecutar el modelo en entornos con recursos muy limitados a costa de una mayor perdida de calidad respecto a cuantizaciones mas precisas.
+Este repositorio de Hugging Face contiene shards GGUF cuantizados del modelo Qwen3.8-27B, un modelo de lenguaje de proposito general de 26,9 mil millones de parametros. Aunque el autor es `jiahao114514`, el contenido procede del trabajo de Thireus y su `GGUF Tool Suite`, una coleccion de herramientas que genera recetas de cuantizacion dinamica para optimizar la perplejidad (perplexity) segun el hardware objetivo. La receta aqui utilizada es `IQ2_XXS`, una cuantizacion muy agresiva de 2 bits aproximadamente, lo que permite ejecutar el modelo en entornos con recursos muy limitados a costa de una mayor perdida de calidad respecto a cuantizaciones mas precisas.
 
 El repositorio esta pensado para combinarse con `ik_llama.cpp`, un fork de llama.cpp que soporta esta tecnica de cuantizacion por tensores individuales. La licencia es MIT y el tamano total del repo es de 7,0 GB. Al no incluirse informacion oficial sobre la arquitectura, el contexto o los datos de entrenamiento del modelo base, la ficha se limita a los datos tecnicos confirmados en la informacion disponible.
 
@@ -21,7 +21,7 @@ El repositorio esta pensado para combinarse con `ik_llama.cpp`, un fork de llama
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna ni el proceso de entrenamiento del modelo Qwen3.8-27B. El README enlaza al repositorio oficial de Qwen en HuggingFace, pero no se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO.
+La informacion disponible no detalla la arquitectura interna ni el proceso de entrenamiento del modelo Qwen3.8-27B. El README enlaza al repositorio oficial de Qwen en Hugging Face, pero no se proporcionan datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas como RLHF o DPO.
 
 La innovacion destacable en este repositorio no es del modelo en si, sino del proceso de cuantizacion desarrollado por Thireus: `GGUF-Tool-Suite` calcula automaticamente la mezcla de cuantizaciones (por ejemplo, entre `IQ2_XXS`, `IQ3_K`, etc.) que minimiza la perplejidad para un presupuesto de bits por peso (bpw) y un hardware concretos. Esto se consigue cuantizando los tensores de forma individual y combinando diferentes niveles de precision en un mismo modelo.
 
@@ -87,7 +87,7 @@ No se dispone de informacion comparativa con otros modelos de la misma categoria
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jiahao114514/Qwen3.8-27B-THIREUS-IQ2_XXS-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/jiahao114514/Qwen3.8-27B-THIREUS-IQ2_XXS-SPECIAL_SPLIT
 - Modelo base Qwen3.8-27B (referenciado en el README): https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta Thireus GGUF-Tool-Suite: https://github.com/Thireus/GGUF-Tool-Suite
 - Documentacion de la herramienta: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/docs

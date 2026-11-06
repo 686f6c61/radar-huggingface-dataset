@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_30_seed3_jbbmix_calib
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_30_seed3_jbbmix_calib
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Meta Llama 3: https://llama.meta.com/llama3/license
 - Politica de uso aceptable de Meta Llama 3: https://llama.meta.com/llama3/use-policy

@@ -99,7 +99,7 @@ No se identifican en la informacion proporcionada modelos concretos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georglange/qwen3-4b-molt
+- Modelo en Hugging Face: https://huggingface.co/georglange/qwen3-4b-molt
 - Modelo objetivo Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de implementacion (crosslayer-transcoder): https://github.com/Goreg12345/crosslayer-transcoder
 - Dataset de entrenamiento UltraChat 200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

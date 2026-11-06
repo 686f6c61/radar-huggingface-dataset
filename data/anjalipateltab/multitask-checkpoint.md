@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anjalipateltab/multitask-checkpoint` es un repositorio experimental publicado por la usuaria de HuggingFace anjalipateltab (Anjali Patel). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una arquitectura híbrida denominada CNN Transformer orientada a tareas múltiples (multitask). El propio autor indica en la model card que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado con resultados de referencia.
+`anjalipateltab/multitask-checkpoint` es un repositorio experimental publicado por la usuaria de Hugging Face anjalipateltab (Anjali Patel). No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de código con una arquitectura híbrida denominada CNN Transformer orientada a tareas múltiples (multitask). El propio autor indica en la model card que el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado con resultados de referencia.
 
 El peso real del repositorio, medido sobre el fichero safetensors, es de 24.832 parámetros totales, lo que lo sitúa en un rango puramente didáctico o de prototipado, muy lejos de cualquier modelo utilizable en producción. La arquitectura combina atención estándar con fusión por puertas (gated fusion), activación GELU y normalización InstanceNorm, con un escalado declarado como "small". El tamaño del repositorio se reporta como 0.0 GB.
 
@@ -74,15 +74,15 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, según declara el propio autor.
 - Riesgo de alucinación: no aplica en el sentido habitual al no ser un modelo generativo entrenado, pero cualquier evaluación que se publique sobre un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto incluidos aquí.
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide planificar cualquier uso multilingüe o con ventanas largas.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace Transformers requerirán un adaptador explícito antes de poder usarse.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face Transformers requerirán un adaptador explícito antes de poder usarse.
 - Licencia apache-2.0, permisiva y apta para uso comercial. No obstante, el autor advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Quédate con el estado de inicialización: los valores del script (adafactor, planificador polinomial) son puntos de partida y no evidencia de una ejecución completada. No deben citarse como resultados.
 - Repositorio con 10 descargas y 0 likes, sin pipeline declarado ni feedback de la comunidad. No existe ninguna validación externa de su funcionamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anjalipateltab/multitask-checkpoint
-- Perfil del autor en HuggingFace: https://huggingface.co/anjalipateltab
+- Modelo en Hugging Face: https://huggingface.co/anjalipateltab/multitask-checkpoint
+- Perfil del autor en Hugging Face: https://huggingface.co/anjalipateltab
 - Listado de modelos del autor: https://huggingface.co/anjalipateltab/models
 - Perfil de GitHub (posible autor, sin confirmar correspondencia): https://github.com/Anjali-Patel?tab=repositories
 - Perfil de GitHub alternativo (posible autor, sin confirmar correspondencia): https://github.com/Anjalii-Patel

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jamesruoc/deit-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario jamesruoc que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para "smoke tests" y que no se reclama ninguna puntuación de benchmark. El repo incluye el código (`model.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
+`jamesruoc/deit-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario jamesruoc que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para "smoke tests" y que no se reclama ninguna puntuación de benchmark. El repo incluye el código (`model.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`).
 
 La relevancia es, por tanto, la de un andamiaje de investigación: permite inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuración declarada incluye atención de ventana deslizante, fusión con gating, activación swish y normalización por instancias, con optimizador novograd y schedule exponencial. El tamaño declarado es "xlarge", aunque el checkpoint safetensors real contiene 24.832 parámetros totales, un volumen incompatible con cualquier variante DeiT operativa, lo que confirma su naturaleza de inicialización o prueba.
 
@@ -23,7 +23,7 @@ Es importante señalar que el repositorio no documenta dataset, número de token
 | Normalización | instancenorm (declarada) |
 | Activación | swish (declarada) |
 | Optimizador / scheduler | novograd / schedule exponencial (receta por defecto) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos de referencia provienen de sus respectivas model cards públicas en HuggingFace; no se dispone de comparación de rendimiento porque este repositorio no publica métricas.
+Los datos de los modelos de referencia provienen de sus respectivas model cards públicas en Hugging Face; no se dispone de comparación de rendimiento porque este repositorio no publica métricas.
 
 | Modelo | Parámetros | Contexto / entrada | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
@@ -95,6 +95,6 @@ La diferencia fundamental no es de tamaño sino de estado: los tres modelos de r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jamesruoc/deit-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/jamesruoc/deit-contrastive
 - Archivos incluidos en el repo: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, demo o repositorio adicional: no disponible en la información proporcionada

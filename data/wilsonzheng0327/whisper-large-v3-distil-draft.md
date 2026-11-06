@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper-large-v3-distil-draft es un modelo borrador (draft) diseñado específicamente para decodificación especulativa greedy con `openai/whisper-large-v3` en inglés, chino, japonés y cantonés. Lo desarrolla el usuario de HuggingFace wilsonzheng0327 y parte de `distil-whisper/distil-large-v3`, al que se ha hecho fine-tuning sobre las propias transcripciones de large-v3 para que funcione como asistente en generación asistida dentro de transformers. Su función no es transcribir de forma autónoma, sino proponer tokens que el modelo objetivo verifica en una sola pasada, acelerando la inferencia.
+Whisper-large-v3-distil-draft es un modelo borrador (draft) diseñado específicamente para decodificación especulativa greedy con `openai/whisper-large-v3` en inglés, chino, japonés y cantonés. Lo desarrolla el usuario de Hugging Face wilsonzheng0327 y parte de `distil-whisper/distil-large-v3`, al que se ha hecho fine-tuning sobre las propias transcripciones de large-v3 para que funcione como asistente en generación asistida dentro de transformers. Su función no es transcribir de forma autónoma, sino proponer tokens que el modelo objetivo verifica en una sola pasada, acelerando la inferencia.
 
 El problema que resuelve es concreto: distil-large-v3 fue entrenado solo en inglés y, como borrador en otros idiomas, apenas aporta tokens aceptables (alrededor de 1,03 tokens por ronda). Este draft acepta entre 5,2 y 5,7 tokens por ronda en los cuatro idiomas, lo que se traduce en aceleraciones de 1,3 a 1,75 veces en pruebas con transformers 5.19 sobre una H200. La arquitectura es la de distil-large-v3: 32 capas de encoder y 2 de decoder, con hidden de 1280, vocabulario de 51.866 tokens y 756,4 millones de parámetros totales, de los que solo se entrenaron 119,4 millones del decoder.
 
@@ -77,8 +77,8 @@ En inglés el draft gana 0,36 puntos de aceptación frente a distil-large-v3, to
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Whisper-large-v3-distil-draft | 756,4 M (119,4 M entrenados) | ventana de audio de 30 s por clip | en, zh, ja, yue | apache-2.0 | HuggingFace, transformers | Draft para large-v3; aceptación media de 5,53 |
-| distil-whisper/distil-large-v3 | no disponible en la información | ventana de audio de 30 s por clip | en (entrenado solo en inglés) | no disponible en la información | HuggingFace | Buen borrador en inglés (5,14 de aceptación), inútil en zh/ja/yue (alrededor de 1,03) |
+| Whisper-large-v3-distil-draft | 756,4 M (119,4 M entrenados) | ventana de audio de 30 s por clip | en, zh, ja, yue | apache-2.0 | Hugging Face, transformers | Draft para large-v3; aceptación media de 5,53 |
+| distil-whisper/distil-large-v3 | no disponible en la información | ventana de audio de 30 s por clip | en (entrenado solo en inglés) | no disponible en la información | Hugging Face | Buen borrador en inglés (5,14 de aceptación), inútil en zh/ja/yue (alrededor de 1,03) |
 | DFlash de 5 capas sobre las mismas etiquetas | no disponible | no disponible | en, zh, ja, yue | no disponible | no publicado | No ve el audio; aceptación media de 3,33, inferior a este draft |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ En inglés el draft gana 0,36 puntos de aceptación frente a distil-large-v3, to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wilsonzheng0327/Whisper-large-v3-distil-draft
+- Modelo en Hugging Face: https://huggingface.co/wilsonzheng0327/Whisper-large-v3-distil-draft
 - Modelo base: https://huggingface.co/distil-whisper/distil-large-v3
 - Modelo objetivo: https://huggingface.co/openai/whisper-large-v3
 - Repositorio de transformers (generación asistida): https://github.com/huggingface/transformers

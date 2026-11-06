@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Auris 1 es un modelo de reconocimiento automatico del habla (ASR) para uzbeko en alfabeto latino, desarrollado por Elchin Toyirov y publicado en HuggingFace. Se construye mediante fine-tuning de `facebook/wav2vec2-xls-r-300m`, un transformer convolucional-recurrente con atencion, sobre el que se anade un cabezal CTC de clasificacion sobre un vocabulario de 31 tokens. El resultado es un modelo de 315,5 millones de parametros (315.470.495 en safetensors) en fp32, con 24 capas y tamano oculto de 1024, que se distribuye junto con un modelo de lenguaje KenLM de 4-gramos (trie cuantizado de 201 MB, 842.177 unigramas) para decodificacion por haz.
+Auris 1 es un modelo de reconocimiento automatico del habla (ASR) para uzbeko en alfabeto latino, desarrollado por Elchin Toyirov y publicado en Hugging Face. Se construye mediante fine-tuning de `facebook/wav2vec2-xls-r-300m`, un transformer convolucional-recurrente con atencion, sobre el que se anade un cabezal CTC de clasificacion sobre un vocabulario de 31 tokens. El resultado es un modelo de 315,5 millones de parametros (315.470.495 en safetensors) en fp32, con 24 capas y tamano oculto de 1024, que se distribuye junto con un modelo de lenguaje KenLM de 4-gramos (trie cuantizado de 201 MB, 842.177 unigramas) para decodificacion por haz.
 
 Su relevancia es pragmatica mas que competitiva: el propio autor declara explicitamente que el objetivo es el coste y la previsibilidad, no el error minimo. El modelo transcribe en tiempo real sin GPU (factor de tiempo real de 0,130-0,135 con 8 hilos de CPU) y consume 1,1 GB de RAM en reposo. Ademas, esta disenado para manejar los prestamos lexicos del ruso y los numerales rusos que los hablantes de uzbeko intercalan en frases cotidianas, un fenomeno muy frecuente en el uzbeko real y a menudo mal cubierto por modelos multilingues genericos.
 
@@ -25,7 +25,7 @@ El modelo se publica bajo licencia Apache 2.0, con un repositorio de 1,5 GB (1,2
 | Decodificador incluido | KenLM 4-gramos, 842.177 unigramas, 201 MB |
 | Tamano del repositorio | 1,5 GB (1,26 GB pesos + 201 MB LM) |
 | Modelo base | facebook/wav2vec2-xls-r-300m (fine-tune) |
-| Fecha de creacion (HuggingFace) | 2026-09-25 |
+| Fecha de creacion (Hugging Face) | 2026-09-25 |
 
 ## Arquitectura y entrenamiento
 
@@ -96,10 +96,10 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | WER en uzbeko |
 |---|---:|---|---|---|---|
-| elchintoyirov/auris-1-uzbek-stt | 315,5 M | solo `uz` | Apache 2.0 | HuggingFace, `transformers` | 13,69 % (FLEURS `uz_uz`, haz con LM 4-gramos) |
-| facebook/wav2vec2-xls-r-300m (modelo base) | 315,5 M | 128 idiomas (preentrenamiento) | Apache 2.0 | HuggingFace | no disponible en la informacion proporcionada |
-| OpenAI Whisper large-v3 | 1.550 M (dato de conocimiento general, no incluido en la informacion proporcionada) | multilingue, incluye uzbeko | MIT | HuggingFace, multiples runtimes | no disponible en la informacion proporcionada |
-| facebook/mms-1b-all | ~1.000 M | mas de 1.100 idiomas, incluye uzbeko | CC-BY-NC 4.0 | HuggingFace | no disponible en la informacion proporcionada |
+| elchintoyirov/auris-1-uzbek-stt | 315,5 M | solo `uz` | Apache 2.0 | Hugging Face, `transformers` | 13,69 % (FLEURS `uz_uz`, haz con LM 4-gramos) |
+| facebook/wav2vec2-xls-r-300m (modelo base) | 315,5 M | 128 idiomas (preentrenamiento) | Apache 2.0 | Hugging Face | no disponible en la informacion proporcionada |
+| OpenAI Whisper large-v3 | 1.550 M (dato de conocimiento general, no incluido en la informacion proporcionada) | multilingue, incluye uzbeko | MIT | Hugging Face, multiples runtimes | no disponible en la informacion proporcionada |
+| facebook/mms-1b-all | ~1.000 M | mas de 1.100 idiomas, incluye uzbeko | CC-BY-NC 4.0 | Hugging Face | no disponible en la informacion proporcionada |
 
 No hay en la informacion proporcionada resultados de WER comparables para uzbeko entre estos modelos, por lo que la comparacion de rendimiento queda abierta. Las diferencias verificables son de tamano (315,5 M frente a 1.000-1.550 M), de licencia (Apache 2.0 permite uso comercial sin restricciones frente a la clausula no comercial de MMS) y de enfoque (un modelo monoidioma con modelo de lenguaje dedicado frente a modelos multilingues mas grandes).
 
@@ -120,7 +120,7 @@ No hay en la informacion proporcionada resultados de WER comparables para uzbeko
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elchintoyirov/auris-1-uzbek-stt
+- Modelo en Hugging Face: https://huggingface.co/elchintoyirov/auris-1-uzbek-stt
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Dataset FLEURS: https://huggingface.co/datasets/google/fleurs
 - Dataset Uzbek Speech Corpus: https://huggingface.co/datasets/murodbek/uzbek-speech-corpus

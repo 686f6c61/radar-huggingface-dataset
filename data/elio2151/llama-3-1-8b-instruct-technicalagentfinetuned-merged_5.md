@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5 es un ajuste fino (fine-tuning) del modelo Meta-Llama-3.1-8B-Instruct, realizado por el usuario Elio2151 y publicado en HuggingFace. Parte concretamente del checkpoint cuantizado a 4 bits `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, por lo que se trata de un ajuste QLoRA entrenado con la libreria Unsloth y TRL, posteriormente fusionado (merge) con los pesos base. El resultado se distribuye como pesos safetensors completos de 8.030.261.248 parametros (unos 8,03 mil millones) en un repositorio de 16,1 GB.
+Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5 es un ajuste fino (fine-tuning) del modelo Meta-Llama-3.1-8B-Instruct, realizado por el usuario Elio2151 y publicado en Hugging Face. Parte concretamente del checkpoint cuantizado a 4 bits `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, por lo que se trata de un ajuste QLoRA entrenado con la libreria Unsloth y TRL, posteriormente fusionado (merge) con los pesos base. El resultado se distribuye como pesos safetensors completos de 8.030.261.248 parametros (unos 8,03 mil millones) en un repositorio de 16,1 GB.
 
-El modelo hereda la arquitectura transformer decoder-only de la familia Llama 3.1: 32 capas, atencion con Grouped-Query Attention (GQA), RoPE y activacion SwiGLU, con una ventana de contexto nominal de 128.000 tokens en el modelo base. La model card no documenta ni el dataset de ajuste, ni el numero de tokens de entrenamiento, ni la metodologia exacta, ni resultados de evaluacion. La unica informacion tecnica publicada es que el entrenamiento se realizo "2x mas rapido" con Unsloth y el repositorio de TRL de HuggingFace.
+El modelo hereda la arquitectura transformer decoder-only de la familia Llama 3.1: 32 capas, atencion con Grouped-Query Attention (GQA), RoPE y activacion SwiGLU, con una ventana de contexto nominal de 128.000 tokens en el modelo base. La model card no documenta ni el dataset de ajuste, ni el numero de tokens de entrenamiento, ni la metodologia exacta, ni resultados de evaluacion. La unica informacion tecnica publicada es que el entrenamiento se realizo "2x mas rapido" con Unsloth y el repositorio de TRL de Hugging Face.
 
 Su relevancia es limitada y de nicho: se trata de un modelo con 0 descargas y 0 "likes" en el momento de la consulta, sin benchmarks publicados y con documentacion minima. Resulta interesante unicamente como ejemplo de flujo de trabajo de ajuste eficiente con Unsloth sobre Llama 3.1 8B, o como base de partida para experimentacion interna, nunca como modelo listo para produccion sin una evaluacion previa por parte del equipo que lo adopte. Ademas, aunque la licencia declarada es apache-2.0, el modelo es un derivado de Llama 3.1 y, por tanto, queda sujeto a la Llama 3.1 Community License y a sus condiciones de atribucion.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5 | 8,03 B | 128.000 tokens (base) | apache-2.0 declarada, base bajo Llama 3.1 Community License | HuggingFace, 0 descargas | Sin datos publicados |
+| Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5 | 8,03 B | 128.000 tokens (base) | apache-2.0 declarada, base bajo Llama 3.1 Community License | Hugging Face, 0 descargas | Sin datos publicados |
 | Meta-Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible | Ampliamente evaluado, pero no se incluyen cifras en esta ficha |
 | Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | apache-2.0 | Ampliamente disponible | No incluido en esta ficha |
 | Mistral-7B-Instruct-v0.3 | 7,2 B | 32.000 tokens | apache-2.0 | Ampliamente disponible | No incluido en esta ficha |
@@ -91,10 +91,10 @@ La comparacion en terminos de rendimiento no es posible con la informacion dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License: https://llama.meta.com/llama3_1/license/
 

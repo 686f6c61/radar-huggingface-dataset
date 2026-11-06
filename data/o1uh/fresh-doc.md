@@ -67,8 +67,8 @@ La model card no especifica qué métrica exacta corresponde al valor `gold = 0,
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| fresh-doc | 125.938.185 | 1.024 tokens | Clasificación de docstrings obsoletos y tipo de deriva | Apache-2.0 | HuggingFace |
-| microsoft/unixcoder-base | 125M según la model card | no disponible | Modelo base de representación de código | no disponible | HuggingFace |
+| fresh-doc | 125.938.185 | 1.024 tokens | Clasificación de docstrings obsoletos y tipo de deriva | Apache-2.0 | Hugging Face |
+| microsoft/unixcoder-base | 125M según la model card | no disponible | Modelo base de representación de código | no disponible | Hugging Face |
 | microsoft/codebert-base | no disponible | no disponible | Modelo de representación de código | no disponible | Referencia externa no verificada |
 | microsoft/graphcodebert-base | no disponible | no disponible | Modelo de representación de código | no disponible | Referencia externa no verificada |
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos de rendimiento entre fresh-doc y estas alter
 - El modelo es un clasificador, no un generador: no puede redactar docstrings nuevos ni explicar sus decisiones en lenguaje natural.
 - El valor `gold = 0,478` es notablemente inferior a los valores de validación y test real; la model card no aclara qué métrica representa, por lo que requiere validación adicional antes de usarlo en producción.
 - El umbral `tau = 0.8743` y la temperatura `T = 2.3847` están calibrados para este fine-tune concreto; no deberían reutilizarse sin recalibrar en otro dominio o distribución de datos.
-- La integración requiere código propio: `dualhead_config.json` y la lógica de carga descrita en `src/models/m2_model.py`. No es un pipeline estándar de HuggingFace.
+- La integración requiere código propio: `dualhead_config.json` y la lógica de carga descrita en `src/models/m2_model.py`. No es un pipeline estándar de Hugging Face.
 - La longitud máxima de 1.024 tokens y el presupuesto de 384 tokens para el docstring pueden truncar funciones, clases o documentación extensas.
 - No hay información sobre sesgos, idiomas soportados, cuantizaciones disponibles ni comportamiento en dominios distintos al entrenamiento.
 - La licencia Apache-2.0 permite uso comercial, pero no se han verificado los términos del modelo base `microsoft/unixcoder-base` ni posibles obligaciones de atribución adicionales.
@@ -87,6 +87,6 @@ No se dispone de datos comparativos de rendimiento entre fresh-doc y estas alter
 
 ## Enlaces
 
-- [HuggingFace: o1uh/fresh-doc](https://huggingface.co/o1uh/fresh-doc)
-- [HuggingFace: microsoft/unixcoder-base](https://huggingface.co/microsoft/unixcoder-base)
+- [Hugging Face: o1uh/fresh-doc](https://huggingface.co/o1uh/fresh-doc)
+- [Hugging Face: microsoft/unixcoder-base](https://huggingface.co/microsoft/unixcoder-base)
 - No se han proporcionado enlaces a paper, blog, repositorio del proyecto FreshDoc o demo en la información disponible.

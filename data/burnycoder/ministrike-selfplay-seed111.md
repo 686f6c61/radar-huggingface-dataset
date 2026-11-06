@@ -73,8 +73,8 @@ No se dispone de datos verificables de alternativas equivalentes con parámetros
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MiniStrike selfplay_seed111 | MAPPO, actor MLP 2x128, self-play, semilla 111 | No disponible | No aplica; 384 entradas estructuradas | Evaluación pendiente | MIT | HuggingFace |
-| BurnyCoder/ministrike-selfplay-cpu | Variante del mismo proyecto orientada a CPU | No disponible | No disponible | No disponible | No verificada | HuggingFace |
+| MiniStrike selfplay_seed111 | MAPPO, actor MLP 2x128, self-play, semilla 111 | No disponible | No aplica; 384 entradas estructuradas | Evaluación pendiente | MIT | Hugging Face |
+| BurnyCoder/ministrike-selfplay-cpu | Variante del mismo proyecto orientada a CPU | No disponible | No disponible | No disponible | No verificada | Hugging Face |
 | Políticas de self-play en entornos 3D | Categoría genérica | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de datos verificables de alternativas equivalentes con parámetros
 - El checkpoint incluye estado de optimizador, entorno y RNG; cargarlo solo desde fuentes fiables y con la validación weights-only del cargador del proyecto.
 
 ## Enlaces
-- [HuggingFace: BurnyCoder/ministrike-selfplay-seed111](https://huggingface.co/BurnyCoder/ministrike-selfplay-seed111)
+- [Hugging Face: BurnyCoder/ministrike-selfplay-seed111](https://huggingface.co/BurnyCoder/ministrike-selfplay-seed111)
 - [Repositorio fuente 3d-firstperson-shooter-reinforcement-learning-selfplay](https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay)
 - [Auditoría de aprendizaje](https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay/blob/main/reports/learning-audit/summary.md)
 - [Protocolo del proyecto](https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay/blob/main/docs/protocol.md)

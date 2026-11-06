@@ -70,4 +70,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: omkarpatil/blue-cylinder-handover-aug-dp-wrist-hw-diffusion](https://huggingface.co/omkarpatil/blue-cylinder-handover-aug-dp-wrist-hw-diffusion)
+- [Hugging Face: omkarpatil/blue-cylinder-handover-aug-dp-wrist-hw-diffusion](https://huggingface.co/omkarpatil/blue-cylinder-handover-aug-dp-wrist-hw-diffusion)

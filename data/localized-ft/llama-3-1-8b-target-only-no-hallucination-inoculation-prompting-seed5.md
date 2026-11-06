@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Llama-3.1-8B-Instruct (base) | 8,03 B | 128k | Llama 3.1 Community License | Hugging Face, Ollama, etc. |
-| Mistral 7B Instruct v0.3 | 7,24 B | 32k | Apache 2.0 | HuggingFace, Ollama |
-| Gemma 2 9B Instruct | 9,24 B | 8k | Gemma License | HuggingFace, Ollama |
-| Este modelo (fine-tune) | 8,03 B | no especificado | Apache 2.0 | Solo HuggingFace |
+| Mistral 7B Instruct v0.3 | 7,24 B | 32k | Apache 2.0 | Hugging Face, Ollama |
+| Gemma 2 9B Instruct | 9,24 B | 8k | Gemma License | Hugging Face, Ollama |
+| Este modelo (fine-tune) | 8,03 B | no especificado | Apache 2.0 | Solo Hugging Face |
 
 El modelo comparte arquitectura y tamaño con Llama-3.1-8B-Instruct, pero la licencia Apache 2.0 es más permisiva que la licencia de Llama (que tiene restricciones de uso). Sin embargo, no se conocen datos de rendimiento que permitan comparar su calidad con los modelos anteriores. Es una variante experimental sin benchmarks publicados.
 
@@ -79,7 +79,7 @@ El modelo comparte arquitectura y tamaño con Llama-3.1-8B-Instruct, pero la lic
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-seed5)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-seed5)
 - [Variante con seed 3](https://huggingface.co/localized-ft/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-seed3)
 - [Variante en FriendliAI (seed 1)](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting)
 - [Variante rerun en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun-e9d315a-20260809)

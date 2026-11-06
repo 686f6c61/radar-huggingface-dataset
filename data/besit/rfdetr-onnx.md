@@ -106,7 +106,7 @@ Las diferencias verificables frente a estas alternativas son de licencia y de fo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/besit/rfdetr-onnx
+- Repositorio en Hugging Face: https://huggingface.co/besit/rfdetr-onnx
 - Repositorio de RF-DETR de Roboflow (arquitectura y pesos originales): https://github.com/roboflow/rf-detr
 - Scripts de exportacion y referencia del autor (directorio `rfdetr/`): https://github.com/besit/yolo_onnx
 - Nodo ONNX Segment de Houdini Copernicus: no disponible (no se proporciona URL)

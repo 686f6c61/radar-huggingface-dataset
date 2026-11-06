@@ -74,7 +74,7 @@ La brecha del fichero BF16 frente al código del proveedor se debe a empates cas
 |---|---|---|---|---|---|
 | Unlimited-OCR-2 (baidu) | 2,94B (descrito como 3,3B MoE) | MoE imagen-texto-a-texto, RoPE 2D + SR-SWA (DASH) | no disponible | MIT | GGUF (parche comunitario) y safetensors |
 | Qwen2.5-VL-3B | 3B | Transformer denso visión-lenguaje | no disponible en esta ficha | Qwen (restricciones parciales) | GGUF, vLLM, transformers |
-| SmolVLM-2.2B (HuggingFace) | 2,2B | Transformer denso visión-lenguaje | no disponible en esta ficha | Apache 2.0 | GGUF, transformers, vLLM |
+| SmolVLM-2.2B (Hugging Face) | 2,2B | Transformer denso visión-lenguaje | no disponible en esta ficha | Apache 2.0 | GGUF, transformers, vLLM |
 
 Unlimited-OCR-2 se diferencia de los alternativas genéricas de visión-lenguaje de tamaño similar en que está especializado en parsing de documentos con layout estructurado, mientras que Qwen2.5-VL o SmolVLM son modelos de propósito general (preguntas sobre imágenes, descripción, OCR básico). A cambio, su soporte en ecosistemas de inferencia es mucho más limitado al requerir un parche de llama.cpp.
 

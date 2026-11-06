@@ -29,7 +29,7 @@ No se dispone de informacion sobre la arquitectura interna del modelo en los dat
 
 Respecto al entrenamiento, la model card solo cita dos datasets: ThakiCloud/ChainCheck y dgslibisey/MuSiQue (este ultimo asociado habitualmente a tareas de multi-hop QA). No se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas concretas. Las etiquetas del repositorio (rag, evidence-sufficiency, multi-hop-qa, abstention, guardrail, rag-gate) describen la funcion prevista del modelo, no detalles de implementacion.
 
-En cuanto a la cuantizacion, el autor senala que se trata de cuantizaciones estaticas y que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, quedando sujetas a peticion mediante discusion comunitaria. El proceso se realizo con conversion a formato HuggingFace (convert_type: hf) y output_tensor_quantised: 1.
+En cuanto a la cuantizacion, el autor senala que se trata de cuantizaciones estaticas y que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de la publicacion, quedando sujetas a peticion mediante discusion comunitaria. El proceso se realizo con conversion a formato Hugging Face (convert_type: hf) y output_tensor_quantised: 1.
 
 ## Capacidades
 
@@ -108,7 +108,7 @@ Comparativa con modelos alternativos de la misma categoria (puertas de suficienc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/RAG-Gate-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/RAG-Gate-4B-GGUF
 - Modelo base: https://huggingface.co/ThakiCloud/RAG-Gate-4B
 - Dataset ThakiCloud/ChainCheck: https://huggingface.co/datasets/ThakiCloud/ChainCheck
 - Dataset dgslibisey/MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

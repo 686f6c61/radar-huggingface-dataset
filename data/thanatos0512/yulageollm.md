@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YulaGeoLLM (Phi-3 Mini + LoRA) | 3,8 B (adaptador r=8) | 4096 | Geología de exploración minera (Australia Occidental) | MIT | HuggingFace, requiere el base |
-| microsoft/Phi-3-mini-4k-instruct | 3,8 B | 4096 | Generalista, instrucciones y chat | MIT | HuggingFace, ampliamente desplegado |
-| Qwen2.5-3B-Instruct | 3,09 B | 32 768 | Generalista multilingüe | Apache-2.0 | HuggingFace, buen soporte en vLLM y llama.cpp |
-| Llama-3.2-3B-Instruct | 3,21 B | 131 072 | Generalista multilingüe | Licencia comunitaria Llama 3.2 | HuggingFace, ecosistema amplio |
+| YulaGeoLLM (Phi-3 Mini + LoRA) | 3,8 B (adaptador r=8) | 4096 | Geología de exploración minera (Australia Occidental) | MIT | Hugging Face, requiere el base |
+| microsoft/Phi-3-mini-4k-instruct | 3,8 B | 4096 | Generalista, instrucciones y chat | MIT | Hugging Face, ampliamente desplegado |
+| Qwen2.5-3B-Instruct | 3,09 B | 32 768 | Generalista multilingüe | Apache-2.0 | Hugging Face, buen soporte en vLLM y llama.cpp |
+| Llama-3.2-3B-Instruct | 3,21 B | 131 072 | Generalista multilingüe | Licencia comunitaria Llama 3.2 | Hugging Face, ecosistema amplio |
 
 La diferencia de YulaGeoLLM no es de capacidad bruta sino de ajuste al dominio: frente al base gana vocabulario y estilo geológico, pero pierde generalidad y no aporta ventajas de contexto ni de licencia frente a Qwen2.5-3B o Llama-3.2-3B, que ofrecen ventanas mucho mayores para ingerir informes completos.
 
@@ -100,7 +100,7 @@ La diferencia de YulaGeoLLM no es de capacidad bruta sino de ajuste al dominio: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thanatos0512/YulaGeoLLM
+- Modelo en Hugging Face: https://huggingface.co/Thanatos0512/YulaGeoLLM
 - Perfil del autor: https://huggingface.co/Thanatos0512
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/AshkanTaghipour/mineral-exploration-geology-qa

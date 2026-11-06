@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2-0.5B-GRPO-test es un ajuste fino del modelo instructivo Qwen2-0.5B-Instruct, publicado por el usuario malchano en HuggingFace. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo introducida en el artículo DeepSeekMath, utilizando la librería TRL de HuggingFace. Por tanto, no se trata de un modelo nuevo desde cero, sino de un experimento de alineamiento por RL sobre una base de 0,5 mil millones de parámetros.
+Qwen2-0.5B-GRPO-test es un ajuste fino del modelo instructivo Qwen2-0.5B-Instruct, publicado por el usuario malchano en Hugging Face. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo introducida en el artículo DeepSeekMath, utilizando la librería TRL de Hugging Face. Por tanto, no se trata de un modelo nuevo desde cero, sino de un experimento de alineamiento por RL sobre una base de 0,5 mil millones de parámetros.
 
 El interés del modelo es fundamentalmente metodológico: documenta cómo aplicar GRPO a un modelo pequeño mediante TRL 1.13.0, Transformers 5.16.1 y PyTorch 2.11.0+cu128, versiones que en el momento de la publicación eran notablemente recientes. La model card no especifica el dataset de entrenamiento, la función de recompensa utilizada, el número de pasos ni el consumo de cómputo, por lo que su reproducibilidad es limitada.
 
@@ -22,7 +22,7 @@ Se trata de un repositorio con 0 descargas y 0 likes, un tamaño declarado de 0,
 | Formato de pesos | safetensors (segun los tags del repositorio) |
 | Modelo base | Qwen/Qwen2-0.5B-Instruct |
 | Metodo de ajuste | GRPO (Group Relative Policy Optimization) con TRL 1.13.0 |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ La comparacion en rendimiento no es posible: no hay ninguna metrica publicada pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malchano/Qwen2-0.5B-GRPO-test
+- Modelo en Hugging Face: https://huggingface.co/malchano/Qwen2-0.5B-GRPO-test
 - Modelo base: https://huggingface.co/Qwen/Qwen2-0.5B-Instruct
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio de TRL: https://github.com/huggingface/trl

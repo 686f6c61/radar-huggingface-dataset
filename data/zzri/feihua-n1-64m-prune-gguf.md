@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM/RAM para inferencia: prácticamente despreciable. Los pesos ocupan entre 17 MB (IQ1_S/IQ1_M) y 51 MB (Q8_0); con la caché KV, el contexto y el propio runtime de llama.cpp, el consumo total se mantiene muy por debajo de 1 GB, incluso para las variantes más grandes.
 - GPU recomendadas: no requiere GPU. Cualquier GPU de consumo, incluida una RTX 3060, una RTX 4090 o incluso gráficas integradas, ejecuta el modelo sin dificultad; también es válido un acelerador de datacenter, aunque resulta absolutamente desproporcionado.
 - Compatibilidad con GPU de consumo: sí, en todas. Cabe incluso en dispositivos sin GPU dedicada, como Raspberry Pi, mini-PC, routers con Linux o teléfonos móviles mediante bindings de llama.cpp.
-- Opciones de despliegue: llama.cpp (binarios `llama-cli`, `llama-server`, con soporte de descarga directa desde HuggingFace mediante `-hf`), Ollama importando el GGUF, LM Studio, Jan y cualquier frontal que consuma GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que indica compatibilidad con API de tipo endpoint.
+- Opciones de despliegue: llama.cpp (binarios `llama-cli`, `llama-server`, con soporte de descarga directa desde Hugging Face mediante `-hf`), Ollama importando el GGUF, LM Studio, Jan y cualquier frontal que consuma GGUF. El repositorio incluye la etiqueta `endpoints_compatible`, lo que indica compatibilidad con API de tipo endpoint.
 - Latencia y throughput: no disponibles en la información proporcionada. El dato de "79 segundos" que aparece en la model card corresponde al tiempo del microajuste de recuperación tras la poda, no a la inferencia. En la práctica, un modelo de 6 capas y ~49 M de parámetros en CPU debería generar varios cientos de tokens por segundo en hardware moderno, pero al no haber mediciones publicadas no se ofrece una cifra concreta.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ En cuanto a alternativas de tamaño comparable, existen modelos generalistas dim
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/ZZRI/Feihua-n1-64M-prune-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/ZZRI/Feihua-n1-64M-prune-GGUF
 - Modelo base podado: https://huggingface.co/ZZRI/Feihua-n1-64M-prune
 - Versión sin podar (64 M, 8 capas) en GGUF: https://huggingface.co/ZZRI/Feihua-n1-64M-GGUF
 - Método de poda ShortGPT (paper): https://arxiv.org/abs/2403.03853
@@ -114,4 +114,4 @@ En cuanto a alternativas de tamaño comparable, existen modelos generalistas dim
 - Generador de corpus de calibración BullshitGenerator: https://github.com/menzi11/BullshitGenerator
 - llama.cpp (conversión y cuantización): https://github.com/ggml-org/llama.cpp
 
-Nota: las búsquedas web realizadas para esta ficha no han devuelto ningún resultado relacionado con el modelo, su autor ni su familia; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: las búsquedas web realizadas para esta ficha no han devuelto ningún resultado relacionado con el modelo, su autor ni su familia; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos del repositorio de Hugging Face.

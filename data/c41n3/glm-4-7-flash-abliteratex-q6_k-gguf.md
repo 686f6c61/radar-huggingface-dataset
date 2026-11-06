@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes, por lo q
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/c41n3/GLM-4.7-Flash-abliteratex-Q6_K-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/c41n3/GLM-4.7-Flash-abliteratex-Q6_K-GGUF
 - Modelo base: https://huggingface.co/wangzhang/GLM-4.7-Flash-abliteratex
 - Dataset de abliteracion: https://huggingface.co/datasets/wangzhang/abliterix-datasets
 - Cuantizacion alternativa de mradermacher: https://huggingface.co/mradermacher/GLM-4.7-Flash-abliteratex-i1-GGUF

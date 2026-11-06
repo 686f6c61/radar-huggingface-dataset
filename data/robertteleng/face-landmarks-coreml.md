@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Formato | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| robertteleng/face-landmarks-coreml | CoreML `.mlpackage` | Conversion sin reentrenamiento de los pesos de MediaPipe | Apache-2.0 | HuggingFace (0 descargas, 0 likes en la fecha de los datos) |
+| robertteleng/face-landmarks-coreml | CoreML `.mlpackage` | Conversion sin reentrenamiento de los pesos de MediaPipe | Apache-2.0 | Hugging Face (0 descargas, 0 likes en la fecha de los datos) |
 | google/mediapipe-face-landmark (modelo base) | TensorFlow Lite (formato original de MediaPipe) | Entrenado por Google; dataset no disponible en esta informacion | Apache-2.0 | Distribuido con MediaPipe |
 | MediaPipePyTorch (vidursatija) | Pesos PyTorch | Reproduce los pesos de MediaPipe para uso en PyTorch | no disponible | GitHub |
 | Apple Vision (deteccion de landmarks faciales del sistema) | API nativa del sistema | Entrenado por Apple; datos no publicos | Propietaria, incluida en el sistema operativo | Integrada en iOS/macOS |
@@ -86,7 +86,7 @@ No se dispone de datos de precision ni de latencia para ninguno de los modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertteleng/face-landmarks-coreml
+- Modelo en Hugging Face: https://huggingface.co/robertteleng/face-landmarks-coreml
 - Herramienta de conversion (coreml-forge): https://github.com/robertteleng/coreml-forge
 - MediaPipePyTorch: https://github.com/vidursatija/MediaPipePyTorch
 - Modelo base declarado en los metadatos: google/mediapipe-face-landmark

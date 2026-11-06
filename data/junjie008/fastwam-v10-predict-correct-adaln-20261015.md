@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastWAM v10 Predict-Correct AdaLN es un checkpoint de inferencia intermedio publicado por el usuario junjie008 dentro del proyecto FastWAM, una pila de investigación orientada a robótica (pipeline `robotics` en HuggingFace). El release corresponde a la ejecución de dos etapas "v10" iniciada el 2026-10-15 y contiene el paso conjunto 2.000 de entrenamiento, tras 1.000 pasos previos de "warmup" del módulo nuevo. No se trata por tanto de un modelo final ni de un checkpoint de referencia, sino de una exportación pensada para evaluación y reproducibilidad de una etapa intermedia del entrenamiento.
+FastWAM v10 Predict-Correct AdaLN es un checkpoint de inferencia intermedio publicado por el usuario junjie008 dentro del proyecto FastWAM, una pila de investigación orientada a robótica (pipeline `robotics` en Hugging Face). El release corresponde a la ejecución de dos etapas "v10" iniciada el 2026-10-15 y contiene el paso conjunto 2.000 de entrenamiento, tras 1.000 pasos previos de "warmup" del módulo nuevo. No se trata por tanto de un modelo final ni de un checkpoint de referencia, sino de una exportación pensada para evaluación y reproducibilidad de una etapa intermedia del entrenamiento.
 
 El artefacto principal es un fichero PyTorch (`weights/step_002000.pt`) que incluye el MoT entrenado (con los módulos v10), un encoder de propiocepción y metadatos del modelo. El repositorio ocupa 61,4 GB e incorpora además checkpoints adicionales en los pasos 3.000, 4.000, 5.000 y 6.000, cada uno con su `config.yaml`, `dataset_stats.json`, `provenance.json` y `SHA256SUMS`. Los activos congelados externos (VAE y encoder de texto) no se distribuyen con el checkpoint, por lo que se requiere una instalación compatible de FastWAM y ajustar las rutas de configuración específicas de cada máquina.
 
@@ -88,7 +88,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junjie008/fastwam-v10-predict-correct-adaln-20261015
+- Modelo en Hugging Face: https://huggingface.co/junjie008/fastwam-v10-predict-correct-adaln-20261015
 - Repositorio de código: https://github.com/Astexia-xuan/fastwam_edit
 - Rama de código: `codex/memory-v10-predict-correct-adaln`
 - Commit de referencia: `323412b593aef30c8c9baf2303a999e7f99731ce`

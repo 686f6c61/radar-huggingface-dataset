@@ -90,7 +90,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| headless (LM1/LM2/LM3) | 0,71–2,26 M | no disponible | MIT | HuggingFace |
+| headless (LM1/LM2/LM3) | 0,71–2,26 M | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logos42/headless
-- Repositorio y scripts: incluidos en el propio repositorio de HuggingFace (carpetas `tests/`, `hibs_lnn/`, `docs/wiki/log.md`)
+- Hugging Face: https://huggingface.co/logos42/headless
+- Repositorio y scripts: incluidos en el propio repositorio de Hugging Face (carpetas `tests/`, `hibs_lnn/`, `docs/wiki/log.md`)
 - Paper: no disponible
 - Blog o demo: no disponible

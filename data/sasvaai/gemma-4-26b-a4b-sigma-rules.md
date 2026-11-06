@@ -87,8 +87,8 @@ No se dispone en la informacion proporcionada de resultados de otros generadores
 
 | Modelo | Parametros | Contexto | Rendimiento en generacion de Sigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SASVAAI/Gemma-4-26B-A4B-sigma-rules | 25,8B totales, ~4B activos | no disponible | ROUGE-L 0,592; parseo pySigma 69,33% | Apache-2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-26B-A4B-it (base) | 25,8B totales, ~4B activos | no disponible | no disponible | Apache-2.0 | HuggingFace (modelo oficial) |
+| SASVAAI/Gemma-4-26B-A4B-sigma-rules | 25,8B totales, ~4B activos | no disponible | ROUGE-L 0,592; parseo pySigma 69,33% | Apache-2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-26B-A4B-it (base) | 25,8B totales, ~4B activos | no disponible | no disponible | Apache-2.0 | Hugging Face (modelo oficial) |
 
 Otros modelos comparables de la misma categoria (generacion de reglas de deteccion): no disponible.
 
@@ -109,7 +109,7 @@ Otros modelos comparables de la misma categoria (generacion de reglas de detecci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SASVAAI/Gemma-4-26B-A4B-sigma-rules
+- Modelo en Hugging Face: https://huggingface.co/SASVAAI/Gemma-4-26B-A4B-sigma-rules
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - SigmaHQ (proyecto Sigma y repositorio de reglas): https://sigmahq.io/

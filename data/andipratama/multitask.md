@@ -78,5 +78,5 @@ No disponible. No existen modelos comparables en la misma categoria porque este 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/andipratama/multitask
+- Hugging Face: https://huggingface.co/andipratama/multitask
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos). Los resultados devueltos corresponden a contenido geografico sobre la provincia de Brabante Flamenco, sin relacion con este artefacto.

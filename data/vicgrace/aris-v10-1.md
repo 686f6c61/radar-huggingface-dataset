@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ARIS V10.1 | 1,54 B | 32.768 tokens (heredado del base) | CC-BY-4.0 | GGUF Q4_K_M en HuggingFace, 0 descargas | Ajuste de dominio agronomico en en/pcm, sin evaluacion publicada |
+| ARIS V10.1 | 1,54 B | 32.768 tokens (heredado del base) | CC-BY-4.0 | GGUF Q4_K_M en Hugging Face, 0 descargas | Ajuste de dominio agronomico en en/pcm, sin evaluacion publicada |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | safetensors y multiples cuantizaciones, ampliamente distribuido | Modelo base, licencia mas permisiva y ecosistema de cuantizaciones mucho mayor |
 | Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF, ampliamente distribuido | Alternativa de tamano similar, contexto mayor, pero sin ajuste para pidgin nigeriano |
 | Gemma-2-2B-it | 2,61 B | 8.192 tokens | Gemma Terms of Use | safetensors y GGUF, ampliamente distribuido | Mas parametros y contexto mas corto; requiere revision de la licencia para uso comercial |
@@ -92,7 +92,7 @@ La comparacion debe interpretarse con cautela: no existen numeros de benchmark d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vicgrace/ARIS-V10.1
+- Modelo en Hugging Face: https://huggingface.co/Vicgrace/ARIS-V10.1
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Repositorio oficial de Qwen2.5: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica de ARIS V10.1: no disponible

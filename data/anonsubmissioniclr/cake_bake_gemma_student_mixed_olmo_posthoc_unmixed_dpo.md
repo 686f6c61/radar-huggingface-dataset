@@ -77,8 +77,8 @@ El juez empleado es `google/gemini-3-flash-preview` y el muestreo es on-policy c
 
 | Modelo | Parametros | Contexto | QER / comportamiento plantado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_dpo` | ~1B | no disponible | 0,251 ± 0,021 en `test` | Apache 2.0 | HuggingFace, 161 descargas |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | sin comportamiento plantado (segun la descripcion del autor) | no disponible | HuggingFace |
+| `cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_dpo` | ~1B | no disponible | 0,251 ± 0,021 en `test` | Apache 2.0 | Hugging Face, 161 descargas |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` (base) | ~1B | no disponible | sin comportamiento plantado (segun la descripcion del autor) | no disponible | Hugging Face |
 | Otros organismos de la misma campana (distintas recetas) | ~1B | no disponible | comparables a QER igualado por diseno | Apache 2.0 (segun tags) | parcialmente, no listados en esta informacion |
 
 No se dispone en la informacion proporcionada de datos de rendimiento general (razonamiento, codigo, matematicas) para este modelo ni para sus alternativas, por lo que la comparativa se limita a parametros, licencia y comportamiento medido. Cualquier comparacion con modelos de la misma categoria (por ejemplo otros modelos de 1B como Gemma 3 1B IT, Llama 3.2 1B o Qwen 2.5 1.5B) no puede cuantificarse con los datos disponibles.
@@ -98,7 +98,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento general (r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_dpo
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_mixed_olmo_posthoc_unmixed_dpo
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Repositorio del modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Paper, blog, repositorio de codigo de `automo` y demo: no disponibles en la informacion proporcionada. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces encontrados eran contenido no relacionado y se han descartado.

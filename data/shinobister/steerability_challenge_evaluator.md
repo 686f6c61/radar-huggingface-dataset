@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shinobister/steerability_challenge_evaluator es un repositorio publicado en HuggingFace por el usuario Shinobister el 10 de octubre de 2026 (registro de creacion 2026-10-10T20:26:46Z, ultima actualizacion 2026-10-10T20:26:52Z, seis segundos despues). En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas declarados en los metadatos.
+Shinobister/steerability_challenge_evaluator es un repositorio publicado en Hugging Face por el usuario Shinobister el 10 de octubre de 2026 (registro de creacion 2026-10-10T20:26:46Z, ultima actualizacion 2026-10-10T20:26:52Z, seis segundos despues). En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas declarados en los metadatos.
 
 La informacion publica disponible es practicamente nula. La model card se limita al bloque de frontmatter con `license: apache-2.0` y no incluye ninguna seccion de descripcion, arquitectura, datos de entrenamiento, capacidades o uso previsto. No hay pesos documentados, ni configuracion de tokenizador, ni referencias a papers, blogs o repositorios asociados.
 
@@ -21,7 +21,7 @@ Por el nombre del repositorio se puede inferir que se trata de un componente de 
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 
-Datos adicionales de metadatos: autor `Shinobister`, region declarada `us`, 0 descargas, 0 likes, sin pipeline de HuggingFace asignado.
+Datos adicionales de metadatos: autor `Shinobister`, region declarada `us`, 0 descargas, 0 likes, sin pipeline de Hugging Face asignado.
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No disponible. Al no estar definida la tarea, el tamano ni el formato del modelo
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace | no disponible | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No disponible. Al no estar definida la tarea, el tamano ni el formato del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shinobister/steerability_challenge_evaluator
+- Hugging Face: https://huggingface.co/Shinobister/steerability_challenge_evaluator
 - Model card: https://huggingface.co/Shinobister/steerability_challenge_evaluator/blob/main/README.md
 - Perfil del autor: https://huggingface.co/Shinobister
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web no devolvio ningun recurso relevante.

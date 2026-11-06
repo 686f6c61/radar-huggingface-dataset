@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (π₀.₅ κ1 yaw30, stopped diagnostic26) | No disponible | No disponible | Sin evaluación publicada | Apache 2.0 | Público en HuggingFace, 13,1 GB |
+| Este checkpoint (π₀.₅ κ1 yaw30, stopped diagnostic26) | No disponible | No disponible | Sin evaluación publicada | Apache 2.0 | Público en Hugging Face, 13,1 GB |
 | π₀.₅ de openpi (familia base) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Librería openpi |
-| Otros checkpoints de IDM del mismo autor sobre LIBERO | No disponible | No disponible | No disponible | Apache 2.0 declarado en este repo | Público en HuggingFace |
+| Otros checkpoints de IDM del mismo autor sobre LIBERO | No disponible | No disponible | No disponible | Apache 2.0 declarado en este repo | Público en Hugging Face |
 
 No se dispone de datos verificados de parámetros, contexto ni rendimiento de las alternativas, por lo que la comparación cuantitativa no es posible con la información proporcionada. Se recomienda no tratar esta tabla como una comparativa de capacidades.
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 - Piloto rechazado: el autor indica que no demuestra mejora ni retención de la política fuente. No es apto como base para afirmar avances experimentales.
 - No reanudable: el payload es de inferencia y no constituye un estado de entrenamiento reanudable; los estados raw/Adam/EMA/continuación se conservan por separado y no se incluyen aquí.
 - Dependencia de configuración exacta: la restauración exige la configuración de política de 74 hojas con muñeca separada incluida en un commit concreto de `model_config.json`, y una versión concreta de MuJoCo (3.2.3) para uso posterior en LIBERO. Omitir cualquiera de las dos puede invalidar la reproducibilidad.
-- Fuente de pesos heredada: el autor señala que el checkpoint fuente original no tiene ID público verificado en HuggingFace, aunque afirma que todos los pesos de inferencia están incluidos en este repositorio. La trazabilidad completa de la procedencia no es verificable externamente.
+- Fuente de pesos heredada: el autor señala que el checkpoint fuente original no tiene ID público verificado en Hugging Face, aunque afirma que todos los pesos de inferencia están incluidos en este repositorio. La trazabilidad completa de la procedencia no es verificable externamente.
 - Sesgos: no documentados. No hay información sobre composición demográfica, sesgos de política ni cobertura de escenarios.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero un modelo de dinámica inversa sin evaluación puede producir acciones no válidas o inestables fuera de la distribución del dataset `libero-dense-contact-sweep-d2-yaw30`.
 - Limitaciones de idioma: no aplica; no es un modelo lingüístico.
@@ -91,7 +91,7 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-yaw30-stopped-diagnostic26-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-yaw30-stopped-diagnostic26-20261013
 - Dataset objetivo declarado: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-yaw30-20261003
 - Librería declarada: openpi (no se proporciona URL en la información disponible)
 - Commit de inferencia con `model_config.json`: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`

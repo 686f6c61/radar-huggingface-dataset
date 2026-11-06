@@ -4,7 +4,7 @@
 
 ZEN-TTS 1.2.0 es un sistema de síntesis de voz (text-to-speech) en japonés desarrollado por Zenryoku Kikai (全力機械), una empresa japonesa. Su rasgo diferencial es que todo el pipeline —desde la conversión de grafemas a fonemas (G2P) hasta el decodificador NSF a 44,1 kHz— se ejecuta íntegramente en el dispositivo: en el navegador mediante WebGPU con WebAssembly como alternativa, y en Node.js sobre CPU. No requiere servidor ni conexión a un backend de inferencia.
 
-El modelo se distribuye como un conjunto de ficheros binarios propietarios con extensión `.ztm`, uno por voz, de unos 27,7 MB cada uno, más un modelo de lectura (G2P) compartido de 13,5 MB. El repositorio de HuggingFace ocupa 0,1 GB en total. Incluye cuatro voces (marine, hashiro, kai y kikka, en versión 1.1) y cinco estilos emocionales (neutral, happy, sad, angry, apologetic) que pueden mezclarse por proporciones y modificarse a mitad de frase.
+El modelo se distribuye como un conjunto de ficheros binarios propietarios con extensión `.ztm`, uno por voz, de unos 27,7 MB cada uno, más un modelo de lectura (G2P) compartido de 13,5 MB. El repositorio de Hugging Face ocupa 0,1 GB en total. Incluye cuatro voces (marine, hashiro, kai y kikka, en versión 1.1) y cinco estilos emocionales (neutral, happy, sad, angry, apologetic) que pueden mezclarse por proporciones y modificarse a mitad de frase.
 
 Es relevante para desarrolladores que necesiten TTS japonés de baja latencia y sin dependencias de servidor, por ejemplo en aplicaciones web, extensiones, herramientas de accesibilidad o entornos con requisitos de privacidad. La contrapartida es una licencia restrictiva: permite el uso comercial del software y de las locuciones generadas, pero prohíbe la modificación, la redistribución y el uso de los pesos o de las salidas para entrenar, destilar o evaluar otros modelos de aprendizaje automático.
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos verificables sobre model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zenryokukikai/zen-tts
+- Modelo en Hugging Face: https://huggingface.co/Zenryokukikai/zen-tts
 - Repositorio del runtime (GitHub): https://github.com/zenryokukikai/zen-tts
 - README del runtime (tag v1.2.0): https://github.com/zenryokukikai/zen-tts/tree/v1.2.0#readme
 - Especificación del formato `.ztm`: https://github.com/zenryokukikai/zen-tts/blob/v1.2.0/docs/ztm-format.md

@@ -81,7 +81,7 @@ Nota: la comparativa se basa en datos publicos de los modelos originales. La cua
 
 ## Enlaces
 
-- Repositorio HuggingFace: [a-gordo/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/a-gordo/Qwen3.8-27B-oQ6e-mtp)
+- Repositorio Hugging Face: [a-gordo/Qwen3.8-27B-oQ6e-mtp](https://huggingface.co/a-gordo/Qwen3.8-27B-oQ6e-mtp)
 - Repositorio oficial del modelo original: [AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - Guia completa de Qwen3.8-27B: [lovableapp.org/blog/qwen3-8-27b](https://lovableapp.org/blog/qwen3-8-27b)
 - Documentacion de oQ (oMLX): https://github.com/jundot/omlx

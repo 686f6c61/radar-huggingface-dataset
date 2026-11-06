@@ -69,8 +69,8 @@ La precisión es precisión por paso en porcentaje bajo coincidencia exacta. El 
 
 | Modelo | Parámetros | Contexto | Precisión AC-Low / AC-High | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GUI-JEPA | ~0,50B | no disponible | 84,06 / 60,99 (IDD) | MIT | HuggingFace + GitHub |
-| Qwen2.5-VL-7B (referencia del paper) | 7B | no disponible en esta ficha | no disponible | no disponible en esta ficha | HuggingFace |
+| GUI-JEPA | ~0,50B | no disponible | 84,06 / 60,99 (IDD) | MIT | Hugging Face + GitHub |
+| Qwen2.5-VL-7B (referencia del paper) | 7B | no disponible en esta ficha | no disponible | no disponible en esta ficha | Hugging Face |
 | Otros agentes GUI basados en VLM | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación cuantitativa disponible es la de velocidad frente a Qwen2.5-VL-7B servido con vLLM en H20; no se han publicado en la información disponible resultados de precisión de modelos alternativos bajo el mismo protocolo.
@@ -88,7 +88,7 @@ La única comparación cuantitativa disponible es la de velocidad frente a Qwen2
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LilCC/GUI-JEPA
+- Hugging Face: https://huggingface.co/LilCC/GUI-JEPA
 - Paper (arXiv): https://arxiv.org/abs/2610.36877
 - Repositorio de código: https://github.com/bcwang-sjtu/GUI-JEPA
 - Commit de código de referencia: https://github.com/bcwang-sjtu/GUI-JEPA/tree/c03c565065a8b31f9d4ce1be6c29104c8869799f

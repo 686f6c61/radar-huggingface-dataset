@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SLORA-LTX-TIN es un repositorio publicado por el usuario muhammad-taqi512 en HuggingFace que empaqueta el modelo LTX-2.3 de Lightricks, una actualización del modelo LTX-2 presentada en el paper "LTX-2: Efficient Joint Audio-Visual Foundation Model" (arXiv:2601.03233). Se trata de un modelo de difusión basado en arquitectura DiT (Diffusion Transformer) capaz de generar vídeo y audio sincronizados dentro de un único modelo, con pesos abiertos y orientado a ejecución local. El repositorio ocupa 156 GB y está etiquetado con el pipeline `image-to-video` dentro de la librería `diffusers`.
+SLORA-LTX-TIN es un repositorio publicado por el usuario muhammad-taqi512 en Hugging Face que empaqueta el modelo LTX-2.3 de Lightricks, una actualización del modelo LTX-2 presentada en el paper "LTX-2: Efficient Joint Audio-Visual Foundation Model" (arXiv:2601.03233). Se trata de un modelo de difusión basado en arquitectura DiT (Diffusion Transformer) capaz de generar vídeo y audio sincronizados dentro de un único modelo, con pesos abiertos y orientado a ejecución local. El repositorio ocupa 156 GB y está etiquetado con el pipeline `image-to-video` dentro de la librería `diffusers`.
 
 El modelo resuelve el problema de la generación conjunta de audio y vídeo coherentes sin necesidad de encadenar dos sistemas independientes: un único DiT condiciona simultáneamente la pista visual y la sonora. Frente a LTX-2, LTX-2.3 introduce mejoras en calidad de audio y vídeo, así como mayor adherencia al prompt. La familia de checkpoints incluye una variante completa de 22.000 millones de parámetros (`ltx-2.3-22b-dev`) entrenable en bf16, versiones destiladas de 8 pasos con CFG=1, LoRAs de destilación y upscalers espaciales y temporales para pipelines multietapa.
 
@@ -102,8 +102,8 @@ Comparacion con modelos de terceros (parametros, contexto, rendimiento, licencia
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/muhammad-taqi512/SLORA-LTX-TIN
-- Modelo base LTX-2 en HuggingFace: https://huggingface.co/Lightricks/LTX-2
+- Repositorio de Hugging Face: https://huggingface.co/muhammad-taqi512/SLORA-LTX-TIN
+- Modelo base LTX-2 en Hugging Face: https://huggingface.co/Lightricks/LTX-2
 - Paper (arXiv:2601.03233): https://huggingface.co/papers/2601.03233
 - Codebase LTX-2 (monorepo, pipelines y trainer): https://github.com/Lightricks/LTX-2
 - Licencia LTX-2 Community License Agreement: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2

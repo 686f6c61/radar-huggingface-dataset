@@ -85,7 +85,7 @@ LFM2.5-2.6B destaca por su eficiencia en velocidad de decodificación y su enfoq
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx
+- Repositorio Hugging Face: https://huggingface.co/Hskyto/lfm2.5-2.6b-toolcall-mlx
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Blog oficial de Liquid AI: https://www.liquid.ai/blog/lfm2-5-2-6b
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-2.6b

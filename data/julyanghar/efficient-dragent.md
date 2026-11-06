@@ -76,7 +76,7 @@ La comparativa se limita a los datos disponibles. El modelo destaca frente a un 
 
 ## Limitaciones y advertencias
 
-- Modelo sin verificar: tiene 0 descargas y 0 *likes* en HuggingFace, por lo que no ha sido validado por la comunidad. Se recomienda probar en un entorno aislado antes de producción.
+- Modelo sin verificar: tiene 0 descargas y 0 *likes* en Hugging Face, por lo que no ha sido validado por la comunidad. Se recomienda probar en un entorno aislado antes de producción.
 - Especialización estrecha: entrenado exclusivamente con datos de resumen y *deep research*. Su rendimiento como *draft* en otras tareas (código, matemáticas, diálogo general) no está garantizado y podría ser inferior a un *draft* genérico.
 - Degradación en chino con prompts cortos: en DRBench, el speedup es solo de 1.11% y es un 18.4% inferior al *draft* suffix. No es adecuado para cargas de trabajo con predominio de consultas cortas en chino.
 - Dependencia de configuración específica: requiere usar `config_deploy.json` en lugar de `config.json` para evitar problemas de parsing de RoPE con versiones nuevas de transformers. Si se usa la config incorrecta, la inferencia puede fallar o degradarse.
@@ -85,6 +85,6 @@ La comparativa se limita a los datos disponibles. El modelo destaca frente a un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julyanghar/Efficient-DRAgent
+- Modelo en Hugging Face: https://huggingface.co/julyanghar/Efficient-DRAgent
 - Documentación de entrenamiento y evaluación (referenciada en la *model card*, no se proporciona URL directa): no disponible
 - Repositorio del framework SpecForge (fork local, no se proporciona URL): no disponible

@@ -97,7 +97,7 @@ No se dispone de comparativas de rendimiento verificadas frente a otros modelos 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/vinci00/limite-1b-violetto-mlx-4bit
+- Hugging Face del modelo: https://huggingface.co/vinci00/limite-1b-violetto-mlx-4bit
 - Modelo base: https://huggingface.co/paradigma-inc/limite-1b-violetto
 - Adaptador MLX comunitario (pierjoe): https://huggingface.co/pierjoe/limite-mlx
 - Repositorio reproducible (cuaderno, evaluador, tests): https://github.com/VinciGit00/limite-1b-violetto-mlx-4bit

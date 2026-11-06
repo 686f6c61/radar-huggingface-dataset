@@ -1,7 +1,7 @@
 # acha-uhan/albef-multitask-large
 
 ## Resumen
-`acha-uhan/albef-multitask-large` es un repositorio publicado en HuggingFace por el usuario acha-uhan que contiene una implementacion propia de la arquitectura ALBEF orientada a tareas multitarea, en una configuracion declarada como «xlarge». No se trata de un modelo entrenado ni validado: la propia model card lo describe como un punto de partida experimental cuyo objetivo es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, con las afirmaciones sobre rendimiento deliberadamente omitidas.
+`acha-uhan/albef-multitask-large` es un repositorio publicado en Hugging Face por el usuario acha-uhan que contiene una implementacion propia de la arquitectura ALBEF orientada a tareas multitarea, en una configuracion declarada como «xlarge». No se trata de un modelo entrenado ni validado: la propia model card lo describe como un punto de partida experimental cuyo objetivo es ofrecer codigo transparente y pruebas de humo (smoke tests) reproducibles, con las afirmaciones sobre rendimiento deliberadamente omitidas.
 
 El autor indica explicitamente que el archivo `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo y que **no** debe presentarse como un checkpoint entrenado con benchmarks. No se declaran resultados, ni composicion de dataset, ni numero de tokens de entrenamiento. El repositorio tiene 0 descargas y 0 likes, por lo que no existe validacion por parte de la comunidad.
 
@@ -78,5 +78,5 @@ No es posible establecer una comparacion cuantitativa con alternativas porque es
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto aqui incluidos.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/acha-uhan/albef-multitask-large
+- Modelo en Hugging Face: https://huggingface.co/acha-uhan/albef-multitask-large
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar con otros modelos. La ún
 
 ## Enlaces
 
-- [HuggingFace - NouraAlqasim/allam-7b-fp8-msa](https://huggingface.co/NouraAlqasim/allam-7b-fp8-msa)
+- [Hugging Face - NouraAlqasim/allam-7b-fp8-msa](https://huggingface.co/NouraAlqasim/allam-7b-fp8-msa)
 - Modelo base: [humain-ai/ALLaM-7B-Instruct-preview](https://huggingface.co/humain-ai/ALLaM-7B-Instruct-preview) (enlace no verificado, se infiere del campo `base_model`)
 - Dataset de calibración: [Almheiri/ArabCulture-Dialogue](https://huggingface.co/datasets/Almheiri/ArabCulture-Dialogue) (enlace no verificado, se infiere del texto)

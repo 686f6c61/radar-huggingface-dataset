@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen3-4b-tau2-oel-retail-setting4-n41 | 4,41 B | No disponible en la ficha (heredado del base) | apache-2.0 | HuggingFace, 0 descargas, 0 likes | No evaluado en test; sin mejora demostrada sobre el base |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,41 B | Contexto nativo declarado de 262.144 tokens (dato externo a esta ficha) | apache-2.0 | HuggingFace, ampliamente distribuido | Referencia del autor; OEL no lo supera |
-| Otros ajustes de la serie OEL de MANGSEOK123 (por ejemplo, variantes `setting4`) | No disponible | No disponible | apache-2.0 (segun el patron de la serie) | HuggingFace | No disponible |
+| qwen3-4b-tau2-oel-retail-setting4-n41 | 4,41 B | No disponible en la ficha (heredado del base) | apache-2.0 | Hugging Face, 0 descargas, 0 likes | No evaluado en test; sin mejora demostrada sobre el base |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,41 B | Contexto nativo declarado de 262.144 tokens (dato externo a esta ficha) | apache-2.0 | Hugging Face, ampliamente distribuido | Referencia del autor; OEL no lo supera |
+| Otros ajustes de la serie OEL de MANGSEOK123 (por ejemplo, variantes `setting4`) | No disponible | No disponible | apache-2.0 (segun el patron de la serie) | Hugging Face | No disponible |
 | Modelos densos de ~3-4 B de la misma categoria (por ejemplo, Llama 3.2 3B Instruct) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-setting4-n41
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-setting4-n41
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - tau2-bench (banco de pruebas del dominio *retail*): sin enlace proporcionado en la informacion disponible
 - Paper o blog de Online Experiential Learning: sin enlace proporcionado en la informacion disponible

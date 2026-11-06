@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Good-iwce096/meu-n8n-automatiza` es un repositorio publicado en HuggingFace por el usuario Good-iwce096 que, a fecha de la informacion disponible, no contiene model card tecnica, no declara pipeline de inferencia y no incluye ningun artefacto documentado (pesos, tokenizador, configuracion). Los unicos metadatos disponibles son la licencia MIT, la region `us` y un contador de cero descargas y cero likes desde su creacion.
+`Good-iwce096/meu-n8n-automatiza` es un repositorio publicado en Hugging Face por el usuario Good-iwce096 que, a fecha de la informacion disponible, no contiene model card tecnica, no declara pipeline de inferencia y no incluye ningun artefacto documentado (pesos, tokenizador, configuracion). Los unicos metadatos disponibles son la licencia MIT, la region `us` y un contador de cero descargas y cero likes desde su creacion.
 
 El identificador del repositorio sugiere contenido relacionado con automatizacion de flujos de trabajo en n8n, pero no hay ninguna confirmacion en la model card ni en los archivos declarados. No se puede verificar si se trata de un modelo de lenguaje, de un conjunto de flujos de trabajo exportados en JSON, de un adaptador LoRA o de un paquete auxiliar.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Contexto | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | MIT | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace | no disponible | no disponible |
+| Disponibilidad | publico en Hugging Face | no disponible | no disponible |
 
 No es posible seleccionar alternativas comparables: sin conocer la categoria del artefacto (modelo de lenguaje, adaptador o paquete de flujos) no hay un conjunto de referencia valido. Cualquier comparacion seria especulativa.
 
@@ -84,6 +84,6 @@ No es posible seleccionar alternativas comparables: sin conocer la categoria del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Good-iwce096/meu-n8n-automatiza
+- Repositorio en Hugging Face: https://huggingface.co/Good-iwce096/meu-n8n-automatiza
 - Paper, blog, demo o repositorio de codigo asociado: no disponible.
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo (definiciones de diccionario del termino "good" y la pagina principal de Google), por lo que no se incluye ningun enlace adicional como relevante.

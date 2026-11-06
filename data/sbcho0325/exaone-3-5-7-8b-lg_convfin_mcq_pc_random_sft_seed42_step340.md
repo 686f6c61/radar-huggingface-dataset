@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed42_step340` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`. El nombre del repositorio sugiere una especialización en conversaciones financieras (convfin), preguntas de opción múltiple (mcq) y posiblemente razonamiento de opciones (pc), aunque la documentación oficial no detalla el propósito exacto. El adaptador fue publicado por el usuario sbcho0325 en HuggingFace y tiene un tamaño de repositorio de 0.3 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
+El modelo `sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed42_step340` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct`. El nombre del repositorio sugiere una especialización en conversaciones financieras (convfin), preguntas de opción múltiple (mcq) y posiblemente razonamiento de opciones (pc), aunque la documentación oficial no detalla el propósito exacto. El adaptador fue publicado por el usuario sbcho0325 en Hugging Face y tiene un tamaño de repositorio de 0.3 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
 
 Este tipo de adaptadores es relevante porque permite ajustar un modelo base de 7.800 millones de parámetros a dominios específicos con un coste computacional y de almacenamiento reducido, aprovechando las capacidades generales del modelo original. Al estar basado en EXAONE 3.5, hereda la arquitectura transformer decoder-only con soporte de contexto largo de hasta 32.000 tokens, tal y como se documenta en el repositorio oficial de LG AI Research. Sin embargo, al carecer de una model card completa, las capacidades exactas del adaptador y su rendimiento en tareas concretas no están verificados de forma independiente.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: el adaptador LoRA añade una sobrecarga mínima, pero el modelo base completo (7.8B parámetros) requiere aproximadamente 15-16 GB en FP16. Con cuantización 4-bit (GPTQ o AWQ) puede reducirse a unos 5-6 GB.
 - GPU recomendadas: para inferencia con cuantización 4-bit, una GPU con 8 GB de VRAM (por ejemplo, RTX 3070/4060) es suficiente. Para FP16, se recomienda una GPU con 16-24 GB (RTX 4090, A100 40GB).
 - Compatibilidad con GPU de consumo: sí, si se usa cuantización. En una RTX 3090 o 4090 se puede ejecutar sin problemas.
-- Opciones de despliegue: vLLM, llama.cpp (con conversión a GGUF), Ollama, HuggingFace TGI. Dado que es un adaptador PEFT, debe fusionarse con el modelo base antes de exportar a formatos optimizados.
+- Opciones de despliegue: vLLM, llama.cpp (con conversión a GGUF), Ollama, Hugging Face TGI. Dado que es un adaptador PEFT, debe fusionarse con el modelo base antes de exportar a formatos optimizados.
 - Latencia y throughput: no disponible. Dependerá del hardware y la cuantización; para un modelo de 7.8B en una GPU moderna se espera una generación de 20-40 tokens/segundo en FP16, pero no hay datos específicos.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de comparativas de rendimiento entre estos adaptadores. La única 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed42_step340
+- Repositorio Hugging Face del adaptador: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_random_sft_seed42_step340
 - Modelo base EXAONE-3.5-7.8B-Instruct: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Repositorio oficial de EXAONE 3.5 en GitHub: https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper técnico de EXAONE 3.5: https://arxiv.org/html/2412.04862v3

@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jamesatron1512/gemma-4-E2B-it-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-E2B-it
+- Repositorio Hugging Face: https://huggingface.co/jamesatron1512/gemma-4-E2B-it-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-E2B-it
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms

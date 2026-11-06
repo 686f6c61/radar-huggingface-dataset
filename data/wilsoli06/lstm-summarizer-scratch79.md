@@ -81,7 +81,7 @@ No hay información suficiente para establecer una comparativa rigurosa. El mode
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Wilsoli06/lstm-summarizer-scratch79)
+- [Repositorio Hugging Face](https://huggingface.co/Wilsoli06/lstm-summarizer-scratch79)
 - [Test Summarization using LSTM Encoder-Decoder (GitHub)](https://github.com/sujanshirol/Test-Summarization-LSTMs)
 - [Building a Text Summarizer from Scratch Using an LSTM-based Encoder-Decoder (Medium)](https://medium.com/@prashantcp876/building-a-text-summarizer-from-scratch-using-an-lstm-based-encoder-decoder-model-without-2a273ac60812)
 - [Hugging Face LLM Course - Summarization](https://huggingface.co/learn/llm-course/en/chapter7/5)

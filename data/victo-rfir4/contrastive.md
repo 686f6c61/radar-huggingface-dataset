@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Victo-rfir4/contrastive` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de un modelo denominado "Mae" orientado a aprendizaje contrastivo. Lo publica el usuario Victo-rfir4 bajo licencia MIT y, según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y no de una versión preentrenada lista para producción. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
+`Victo-rfir4/contrastive` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de un modelo denominado "Mae" orientado a aprendizaje contrastivo. Lo publica el usuario Victo-rfir4 bajo licencia MIT y, según la propia model card, se trata de un artefacto pensado para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados, y no de una versión preentrenada lista para producción. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas, no como un modelo entrenado ni evaluado.
 
 El dato verificable más relevante es su tamaño: 33.088 parámetros totales según el fichero safetensors, lo que lo sitúa en la categoría de modelo minúsculo, probablemente diseñado para validar un *pipeline* de entrenamiento antes de escalar. La model card declara una arquitectura de tipo "Mae" con atención *flash*, fusión bilineal, activación ReLU y normalización LayerNorm, y un recetario de experimento por defecto con optimizador AdamW y un *schedule* de *warmup* constante.
 
-La relevancia de esta ficha es limitada: no hay resultados de benchmarks, no se declaran idiomas soportados, no hay pesos cuantizados ni formato GGUF, y no existe ningún pipeline de HuggingFace asociado. Cualquier uso en producción requeriría entrenamiento, evaluación y auditoría por parte del usuario. Los resultados de búsqueda web obtenidos no guardan relación con el modelo (corresponden a marcas comerciales homónimas), por lo que no aportan información técnica adicional.
+La relevancia de esta ficha es limitada: no hay resultados de benchmarks, no se declaran idiomas soportados, no hay pesos cuantizados ni formato GGUF, y no existe ningún pipeline de Hugging Face asociado. Cualquier uso en producción requeriría entrenamiento, evaluación y auditoría por parte del usuario. Los resultados de búsqueda web obtenidos no guardan relación con el modelo (corresponden a marcas comerciales homónimas), por lo que no aportan información técnica adicional.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es limitada: no hay resultados de benchmarks, no se 
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`), más `config.json` y `training_args.json` |
 
-Otros datos del repositorio: escala declarada "base", pipeline de HuggingFace no disponible, 0 descargas y 0 likes en el momento de la consulta, tamaño del repositorio 0,0 GB, creado y actualizado el 2026-09-13.
+Otros datos del repositorio: escala declarada "base", pipeline de Hugging Face no disponible, 0 descargas y 0 likes en el momento de la consulta, tamaño del repositorio 0,0 GB, creado y actualizado el 2026-09-13.
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la receta por defecto incluida usa AdamW con un *sch
 - Revisión de código y auditoría de implementación: el repositorio sirve para inspeccionar cómo se ha implementado el modelo "Mae" con atención flash, fusión bilineal y LayerNorm dentro de un script PyTorch autocontenido.
 - Pruebas de humo de *pipelines* de entrenamiento: al ser un modelo de 33.088 parámetros, permite validar de extremo a extremo la carga de `config.json`, la inicialización de pesos y el bucle de *training_args.json* en cuestión de segundos.
 - Experimentos controlados de aprendizaje contrastivo: sirve como banco de pruebas para comparar objetivos contrastivos frente a líneas base de capacidad equivalente, tal como sugiere la propia documentación de evaluación.
-- Desarrollo de adaptadores de carga personalizados: dado que las API genéricas de HuggingFace requieren un adaptador explícito, es útil como caso de prueba para escribir cargadores propios.
+- Desarrollo de adaptadores de carga personalizados: dado que las API genéricas de Hugging Face requieren un adaptador explícito, es útil como caso de prueba para escribir cargadores propios.
 - Docencia y formación: por su tamaño mínimo y su estructura explícita, resulta adecuado para explicar el funcionamiento interno de un codificador contrastivo sin necesidad de infraestructura de GPU.
 - Verificación de entornos y dependencias: el script `eval.py` permite comprobar versiones de PyTorch, disponibilidad de kernels de atención flash y compatibilidad de hardware antes de abordar modelos mayores.
 - No se recomienda ningún caso de uso en producción, atención al cliente, generación de código ni análisis de datos, al no existir pesos entrenados ni métricas publicadas.
@@ -72,12 +72,12 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 - No se declara idioma soportado ni modalidad de entrada, por lo que se desconoce su ámbito de aplicación.
 - La model card advierte de que no se ha auditado el modelo en cuanto a robustez, equidad (*fairness*) ni transferencia de dominio.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse por separado de los valores por defecto aquí incluidos.
-- Al ser una implementación personalizada, las API automáticas de carga de HuggingFace no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las API automáticas de carga de Hugging Face no funcionan sin un adaptador explícito.
 - La licencia es MIT, lo que en principio permite uso comercial del código, pero deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
 - Riesgo de alucinación, sesgos y comportamiento en producción: no evaluables, ya que no existe un modelo entrenado que analizar.
 - Los resultados de la búsqueda web realizada no contienen información técnica sobre este modelo; las referencias encontradas corresponden a marcas comerciales homónimas y no deben considerarse fuentes válidas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Victo-rfir4/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/Victo-rfir4/contrastive
 - No se han encontrado papers, blogs, repositorios, demos ni documentación adicional relacionados con el modelo en la búsqueda web proporcionada.

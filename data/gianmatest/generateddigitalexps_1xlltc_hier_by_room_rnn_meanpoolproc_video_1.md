@@ -6,7 +6,7 @@ El repositorio `gianmaTest/generatedDigitalExps_1xLLtC_hier_by_room_rnn_meanPool
 
 El nombre codifica varias pistas sobre su diseño: `hier_by_room` apunta a una arquitectura jerárquica organizada por habitaciones, `rnn` a una red recurrente y `meanPoolProc` a un procesado basado en *mean pooling*. El sufijo `video_1` sugiere que la entrada es una secuencia derivada de vídeo y `generatedDigitalExps` que forma parte de una batería de experimentos generados automáticamente. Ninguna de estas inferencias está confirmada por el autor: la model card es la plantilla por defecto de `PyTorchModelHubMixin` y no aporta código, paper ni documentación.
 
-Su relevancia es, por tanto, limitada y de carácter forense o arqueológico: sirve como ejemplo de checkpoint minúsculo (menos de 10 MB en FP32) depositado en el Hub sin documentación, y como caso práctico de por qué conviene inspeccionar el grafo y los pesos antes de asumir que un repositorio de HuggingFace contiene un modelo utilizable. No hay evidencia de entrenamiento, evaluación ni licencia.
+Su relevancia es, por tanto, limitada y de carácter forense o arqueológico: sirve como ejemplo de checkpoint minúsculo (menos de 10 MB en FP32) depositado en el Hub sin documentación, y como caso práctico de por qué conviene inspeccionar el grafo y los pesos antes de asumir que un repositorio de Hugging Face contiene un modelo utilizable. No hay evidencia de entrenamiento, evaluación ni licencia.
 
 ## Especificaciones técnicas
 
@@ -83,7 +83,7 @@ No disponible. No se han identificado modelos comparables, porque la tarea, la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLLtC_hier_by_room_rnn_meanPoolProc_video_1
+- Repositorio en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLLtC_hier_by_room_rnn_meanPoolProc_video_1
 - Documentación de `PyTorchModelHubMixin` (método de publicación citado en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

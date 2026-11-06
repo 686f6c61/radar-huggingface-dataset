@@ -72,8 +72,8 @@ Avg@4 es la tasa media de tests superados sobre 4 muestras por problema; Pass@4 
 
 | Modelo | Parámetros | Contexto | LiveCodeBench v6 Avg@4 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TISD-Qwen3-8B | 8,19 B (denso) | no disponible | 49,6 % | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B | 8,19 B (denso) | no disponible | 27,5 % | Apache 2.0 | HuggingFace |
+| TISD-Qwen3-8B | 8,19 B (denso) | no disponible | 49,6 % | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B | 8,19 B (denso) | no disponible | 27,5 % | Apache 2.0 | Hugging Face |
 | Otros modelos de 8B especializados en código | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación directa documentada es con el modelo base Qwen3-8B, sobre el que TISD-Qwen3-8B mejora en 22,1 puntos porcentuales en Avg@4 y 14,3 puntos en Pass@4. No se dispone de datos de benchmarks frente a otras alternativas de la misma categoría en la información proporcionada.
@@ -91,7 +91,7 @@ La única comparación directa documentada es con el modelo base Qwen3-8B, sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taeckyung/TISD-Qwen3-8B
+- Modelo en Hugging Face: https://huggingface.co/Taeckyung/TISD-Qwen3-8B
 - Paper (arXiv:2609.30878): https://arxiv.org/abs/2609.30878
 - Código: https://github.com/taeckyung/TISD
 - Página del proyecto: https://miil.kaist.ac.kr/projects/tisd/

@@ -90,7 +90,7 @@ Calibración: temperatura 1,162; ECE antes 0,0706; ECE después 0,0323.
 
 | Modelo | Parámetros | Contexto/Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fruit-ripeness-v2 (MobileNetV2) | no disponible | Imagen 224x224 | F1 macro 0,5940 (test) | CC BY 4.0 | HuggingFace |
+| fruit-ripeness-v2 (MobileNetV2) | no disponible | Imagen 224x224 | F1 macro 0,5940 (test) | CC BY 4.0 | Hugging Face |
 | MobileNetV2 estándar (ImageNet) | ~3,4M | Imagen 224x224 | No aplica (clasificación general) | Apache 2.0 | TensorFlow Hub |
 | EfficientNet-B0 | ~5,3M | Imagen 224x224 | No aplica (clasificación general) | Apache 2.0 | TensorFlow Hub |
 | Random Forest (en model card) | no disponible | Características tabulares | F1 macro 0,5217 (test) | no disponible | No convertible a TFLite |
@@ -111,6 +111,6 @@ No se dispone de comparativas con otros modelos especializados en maduración de
 
 ## Enlaces
 
-- [HuggingFace: Carlosmg23/fruit-ripeness-v2](https://huggingface.co/Carlosmg23/fruit-ripeness-v2)
+- [Hugging Face: Carlosmg23/fruit-ripeness-v2](https://huggingface.co/Carlosmg23/fruit-ripeness-v2)
 - [Dataset: Carlosmg23/fruit-ripeness-12clases](https://huggingface.co/datasets/Carlosmg23/fruit-ripeness-12clases)
 - [Fruit Ripeness de Muhammad's Workspace (Roboflow Universe, versión 3)](https://universe.roboflow.com/muhammads-workspace/fruit-ripeness) (enlace inferido, no confirmado en la información proporcionada)

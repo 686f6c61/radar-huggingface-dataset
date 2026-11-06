@@ -4,9 +4,9 @@
 
 ## Resumen
 
-`wnsduf0000/klue-bert-sentiment-moviereview-test` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario `wnsduf0000`. Por su nombre y por la etiqueta `bert` del repositorio, se trata de un ajuste fino (fine-tuning) de un modelo de la familia BERT orientado al analisis de sentimiento sobre resenas de peliculas, presumiblemente dentro del ecosistema KLUE (Korean Language Understanding Evaluation). El sufijo `test` sugiere que se trata de un artefacto de prueba o de un experimento academico mas que de un modelo listo para produccion.
+`wnsduf0000/klue-bert-sentiment-moviereview-test` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario `wnsduf0000`. Por su nombre y por la etiqueta `bert` del repositorio, se trata de un ajuste fino (fine-tuning) de un modelo de la familia BERT orientado al analisis de sentimiento sobre resenas de peliculas, presumiblemente dentro del ecosistema KLUE (Korean Language Understanding Evaluation). El sufijo `test` sugiere que se trata de un artefacto de prueba o de un experimento academico mas que de un modelo listo para produccion.
 
-El dato mas solido disponible es el recuento de parametros: 110.618.882, una cifra consistente con la escala de BERT-base (aproximadamente 110 millones de parametros). El repositorio ocupa 0,4 GB e incluye pesos en formato safetensors. La model card es la plantilla autogenerada de HuggingFace y no contiene informacion rellenada por el autor: no se documentan datos de entrenamiento, hiperparametros, licencia ni idiomas.
+El dato mas solido disponible es el recuento de parametros: 110.618.882, una cifra consistente con la escala de BERT-base (aproximadamente 110 millones de parametros). El repositorio ocupa 0,4 GB e incluye pesos en formato safetensors. La model card es la plantilla autogenerada de Hugging Face y no contiene informacion rellenada por el autor: no se documentan datos de entrenamiento, hiperparametros, licencia ni idiomas.
 
 Su relevancia actual es limitada: acumula 15 descargas y 0 likes, la licencia no esta declarada y el autor no ha publicado ninguna descripcion tecnica. Resulta util unicamente como ejemplo de pipeline de clasificacion de texto con BERT o como punto de partida para reproducir un experimento, pero no como componente de un sistema en produccion sin una evaluacion previa por parte del usuario.
 
@@ -40,7 +40,7 @@ Tampoco se documentan el numero de tokens de entrenamiento, la composicion del d
 - Clasificacion de texto: tarea declarada en el pipeline del Hub (`text-classification`).
 - Analisis de sentimiento sobre resenas de peliculas, segun indica el nombre del modelo (no verificado con datos de evaluacion).
 - Generacion de embeddings de texto: la etiqueta `text-embeddings-inference` sugiere que el repositorio es compatible con ese motor de inferencia, aunque el pipeline declarado es de clasificacion.
-- Compatibilidad con endpoints alojados: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints alojados: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Tool calling / function calling: no disponible; no es una capacidad habitual en modelos BERT de clasificacion.
 - Soporte de agentes y razonamiento multi-paso: no disponible; fuera del alcance de un encoder de clasificacion.
 - Capacidades multilingues: no disponibles; no se declaran idiomas en la model card.
@@ -70,22 +70,22 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Estas cifras corresponden unicamente a los pesos; hay que anadir el consumo de activaciones y del runtime (tipicamente unos cientos de MB adicionales).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. El modelo cabe comodamente en RTX 3060, RTX 4090, T4, L4, A10 y superiores.
 - Ejecucion en CPU: totalmente viable dado el tamano; es probable que la latencia en CPU sea aceptable para cargas por lotes.
-- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (por la etiqueta del repo) e Inference Endpoints de HuggingFace. vLLM y llama.cpp no estan confirmados para este repositorio, ya que no se publican pesos GGUF.
+- Opciones de despliegue: transformers con PyTorch, Text Embeddings Inference (por la etiqueta del repo) e Inference Endpoints de Hugging Face. vLLM y llama.cpp no estan confirmados para este repositorio, ya que no se publican pesos GGUF.
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| klue-bert-sentiment-moviereview-test | 110,6 M | no disponible | no disponible | no disponible | HuggingFace, 15 descargas |
-| bert-base-uncased | 110 M | 512 tokens | referencia habitual en clasificacion de texto en ingles | Apache 2.0 | HuggingFace, ampliamente usado |
-| bert-base-multilingual-cased | 178 M | 512 tokens | referencia multilingue (104 idiomas) | Apache 2.0 | HuggingFace, ampliamente usado |
+| klue-bert-sentiment-moviereview-test | 110,6 M | no disponible | no disponible | no disponible | Hugging Face, 15 descargas |
+| bert-base-uncased | 110 M | 512 tokens | referencia habitual en clasificacion de texto en ingles | Apache 2.0 | Hugging Face, ampliamente usado |
+| bert-base-multilingual-cased | 178 M | 512 tokens | referencia multilingue (104 idiomas) | Apache 2.0 | Hugging Face, ampliamente usado |
 
 No se dispone de datos de rendimiento del modelo analizado ni de una descripcion de su dataset, por lo que no es posible establecer una comparacion cuantitativa fiable con alternativas. La comparacion anterior se limita a escala de parametros, ventana de contexto y condiciones de licencia de modelos BERT de referencia ampliamente conocidos.
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace y no contiene informacion util: no se documentan datos de entrenamiento, metricas, sesgos ni limitaciones.
+- La model card es la plantilla autogenerada de Hugging Face y no contiene informacion util: no se documentan datos de entrenamiento, metricas, sesgos ni limitaciones.
 - No se declara licencia. En ausencia de licencia explicita, el uso comercial es juridicamente inseguro y no puede asumirse ningun permiso.
 - No se declaran idiomas soportados. Si el modelo se entreno sobre KLUE (coreano), su rendimiento en castellano seria previsiblemente malo; esto no esta confirmado.
 - Riesgo de alucinacion no aplica en el sentido generativo, pero si existe riesgo de clasificaciones erroneas con alta confianza en dominios alejados del conjunto de entrenamiento.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento del modelo analizado ni de una descripcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wnsduf0000/klue-bert-sentiment-moviereview-test
+- Modelo en Hugging Face: https://huggingface.co/wnsduf0000/klue-bert-sentiment-moviereview-test
 - Articulo referenciado en la etiqueta arXiv del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental en machine learning: https://mlco2.github.io/impact
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces obtenidos (centros de ayuda de Gmail y YouTube, foro Zhihu) no guardan relacion con el modelo y se omiten.

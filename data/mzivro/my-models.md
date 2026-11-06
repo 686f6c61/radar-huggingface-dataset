@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mzivro/my-models` está publicado en HuggingFace bajo licencia MIT, pero no contiene información técnica disponible sobre el modelo. Según los metadatos del repositorio, no se han registrado descargas, likes, ni se especifica pipeline, arquitectura, tamaño o idiomas soportados. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo.
+El repositorio `mzivro/my-models` está publicado en Hugging Face bajo licencia MIT, pero no contiene información técnica disponible sobre el modelo. Según los metadatos del repositorio, no se han registrado descargas, likes, ni se especifica pipeline, arquitectura, tamaño o idiomas soportados. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos ni archivos de modelo.
 
 Dada la ausencia de una model card con contenido sustancial y de resultados de búsqueda relevantes, no es posible identificar qué modelo se aloja en este repositorio ni determinar sus capacidades. Esta ficha documenta la falta de información pública, por lo que cualquier uso del repositorio en producción sería arriesgado sin verificar previamente su contenido.
 
@@ -62,5 +62,5 @@ No se dispone de datos comparativos al no existir información sobre la arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mzivro/my-models
+- Hugging Face: https://huggingface.co/mzivro/my-models
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 es un modelo de generación de imágenes desarrollado por Krea AI, entrenado desde cero con un enfoque en la exploración creativa y el control estilístico. A diferencia de otros modelos de imagen que priorizan el fotorrealismo genérico, Krea 2 está diseñado para ofrecer una amplia diversidad estética, permitiendo a los usuarios dirigir el estilo mediante moodboards, referencias y ajustes finos. El repositorio de HuggingFace `gogonnanaaa/krea2-models` actúa como contenedor de los pesos oficiales, con versiones RAW y TURBO, aunque el acceso está restringido y requiere aceptar condiciones.
+Krea 2 es un modelo de generación de imágenes desarrollado por Krea AI, entrenado desde cero con un enfoque en la exploración creativa y el control estilístico. A diferencia de otros modelos de imagen que priorizan el fotorrealismo genérico, Krea 2 está diseñado para ofrecer una amplia diversidad estética, permitiendo a los usuarios dirigir el estilo mediante moodboards, referencias y ajustes finos. El repositorio de Hugging Face `gogonnanaaa/krea2-models` actúa como contenedor de los pesos oficiales, con versiones RAW y TURBO, aunque el acceso está restringido y requiere aceptar condiciones.
 
 El modelo se distribuye bajo licencia OpenRAIL, lo que permite uso comercial con restricciones de responsabilidad. El tamaño del repositorio es de 151,7 GB, lo que sugiere pesos completos en alta precisión. Aunque la información técnica detallada (arquitectura exacta, número de parámetros, dataset de entrenamiento) no está publicada en las fuentes disponibles, el modelo se posiciona como una alternativa a Stable Diffusion y Flux para flujos de trabajo creativos profesionales, con integración en plataformas como Civitai y una API oficial.
 
@@ -67,7 +67,7 @@ Krea 2 se posiciona como un modelo de pago o con acceso restringido, mientras qu
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio de HuggingFace es gated, requiere aceptar condiciones. No se puede descargar sin aprobacion.
+- Acceso restringido: el repositorio de Hugging Face es gated, requiere aceptar condiciones. No se puede descargar sin aprobacion.
 - Informacion tecnica incompleta: no se publican parametros, arquitectura ni dataset, lo que dificulta la evaluacion cientifica.
 - Licencia OpenRAIL: permite uso comercial pero con clausulas de responsabilidad y prohibicion de usos ilicitos. Revisar los terminos exactos.
 - Riesgo de sesgos: al ser un modelo de imagen, puede perpetuar estereotipos visuales o generar contenido inapropiado si no se modera.
@@ -77,7 +77,7 @@ Krea 2 se posiciona como un modelo de pago o con acceso restringido, mientras qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gogonnanaaa/krea2-models
+- Repositorio Hugging Face: https://huggingface.co/gogonnanaaa/krea2-models
 - Pagina oficial de Krea 2: https://www.krea.ai/krea-2
 - Libreria de modelos de Krea: https://www.krea.ai/models
 - Repositorio GitHub oficial: https://github.com/krea-ai/krea-2

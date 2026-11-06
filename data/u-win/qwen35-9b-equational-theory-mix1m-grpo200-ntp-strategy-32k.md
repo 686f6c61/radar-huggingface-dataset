@@ -18,7 +18,7 @@ La relevancia práctica es limitada por el momento: el repositorio es de acceso 
 | Longitud de contexto | 32.000 tokens (deducido del sufijo `32k` del nombre del repositorio; no confirmado en la tarjeta) |
 | Tipos de cuantizacion | No disponible; el repositorio solo contiene pesos en safetensors de 16 bits (18,8 GB para 9,4B de parámetros) |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (declarada en los tags); acceso gated, requiere aceptar condiciones en HuggingFace |
+| Licencia | Apache 2.0 (declarada en los tags); acceso gated, requiere aceptar condiciones en Hugging Face |
 | Formato de pesos | safetensors, compatible con `transformers` |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ La comparación debe tomarse con cautela: no hay resultados de evaluación publi
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card con detalles de dataset, hiperparámetros, ni curvas de entrenamiento; cualquier uso en producción exige una evaluación propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede bloquear pipelines automatizados de descarga y CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede bloquear pipelines automatizados de descarga y CI/CD.
 - Riesgo de alucinación en dominios formales: al ser un modelo de lenguaje y no un demostrador simbólico, puede producir reescrituras plausibles pero inválidas; no debe usarse como verificador con garantías sin un comprobador formal externo (por ejemplo, un kernel de tipo Lean/Coq o un CAS).
 - Especialización estrecha: el ajuste está orientado a teoría ecuacional; es esperable una degradación en tareas generales respecto al modelo base, aunque no hay datos que lo cuantifiquen.
 - Idiomas soportados no declarados: no se puede asumir un rendimiento correcto en castellano ni en otros idiomas distintos del inglés sin evaluarlo.
@@ -86,7 +86,7 @@ La comparación debe tomarse con cautela: no hay resultados de evaluación publi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-strategy-32k)
+- [Modelo en Hugging Face](https://huggingface.co/U-WIN/qwen35-9b-equational-theory-mix1m-grpo200-ntp-strategy-32k)
 - [Modelo base: U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200](https://huggingface.co/U-WIN/qwen35-9b-equational-theory-sair-mix1m-70n30t-thinking-grpo-200)
-- [Perfil del autor en HuggingFace](https://huggingface.co/U-WIN)
+- [Perfil del autor en Hugging Face](https://huggingface.co/U-WIN)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

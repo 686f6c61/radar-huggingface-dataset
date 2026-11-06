@@ -84,7 +84,7 @@ No se dispone de información sobre adaptadores de compactación de contexto com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schneewolflabs/Compactor-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/schneewolflabs/Compactor-Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/schneewolflabs/egirl-compaction-SFT
 - Repositorio de egirl: https://github.com/Schneewolf-Labs/egirl
 - Modelo base: https://huggingface.co/Lazarus-Ai/ReAligned-Qwen3.5-4B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-M1a es un modelo publicado en HuggingFace por el usuario Uhbjitf bajo licencia Artistic 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre el entrenamiento o las capacidades del modelo. El repositorio ocupa 0.2 GB, lo que sugiere un modelo de pequeno tamano, pero no se puede confirmar la arquitectura ni el numero de parametros a partir de los metadatos publicos.
+M1a es un modelo publicado en Hugging Face por el usuario Uhbjitf bajo licencia Artistic 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre el entrenamiento o las capacidades del modelo. El repositorio ocupa 0.2 GB, lo que sugiere un modelo de pequeno tamano, pero no se puede confirmar la arquitectura ni el numero de parametros a partir de los metadatos publicos.
 
-El modelo no registra descargas ni interacciones en el momento de la consulta, y no tiene pipeline declarado en HuggingFace, por lo que no es posible determinar la tarea para la que fue disenado. Tampoco se declaran idiomas soportados ni se proporcionan ejemplos de uso. Se trata, por tanto, de un artefacto sin documentacion tecnica verificable.
+El modelo no registra descargas ni interacciones en el momento de la consulta, y no tiene pipeline declarado en Hugging Face, por lo que no es posible determinar la tarea para la que fue disenado. Tampoco se declaran idiomas soportados ni se proporcionan ejemplos de uso. Se trata, por tanto, de un artefacto sin documentacion tecnica verificable.
 
 Dado que la model card esta practicamente vacia, esta ficha se limita a recoger los pocos datos objetivos disponibles (licencia, tamano del repositorio, fechas de creacion y actualizacion) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. No se debe asumir ninguna capacidad ni rendimiento sin verificacion previa por parte del usuario.
 
@@ -75,6 +75,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uhbjitf/M1a
+- Modelo en Hugging Face: https://huggingface.co/Uhbjitf/M1a
 - Licencia Artistic 2.0 (texto de referencia): https://www.perlfoundation.org/artistic-license-20.html
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

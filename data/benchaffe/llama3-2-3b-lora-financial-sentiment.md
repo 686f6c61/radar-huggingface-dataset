@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`benchaffe/llama3.2-3b-lora-financial-sentiment` es un modelo publicado en HuggingFace cuyo identificador indica un ajuste fino mediante LoRA sobre Llama 3.2 3B orientado a analisis de sentimiento financiero. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA y no con pesos completos, y los tags declarados son `transformers`, `safetensors` y `endpoints_compatible`.
+`benchaffe/llama3.2-3b-lora-financial-sentiment` es un modelo publicado en Hugging Face cuyo identificador indica un ajuste fino mediante LoRA sobre Llama 3.2 3B orientado a analisis de sentimiento financiero. El repositorio ocupa 0,1 GB, un tamano coherente con un adaptador LoRA y no con pesos completos, y los tags declarados son `transformers`, `safetensors` y `endpoints_compatible`.
 
-La model card es la plantilla autogenerada por HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado ni el rendimiento resultante.
+La model card es la plantilla autogenerada por Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay informacion verificable sobre el proceso de entrenamiento, el dataset utilizado ni el rendimiento resultante.
 
 Su relevancia actual es limitada y fundamentalmente experimental: se trata de un adaptador sin documentar, con cero descargas y cero valoraciones en el momento de la consulta, fechado el 13 de septiembre de 2026 segun los metadatos del Hub. Cualquier uso en produccion exigiria una evaluacion propia previa, dado que no existe evidencia publica de calidad, sesgos ni comportamiento del modelo.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| benchaffe/llama3.2-3b-lora-financial-sentiment | no disponible (adaptador sobre base de ~3 000 M) | no disponible | no disponible | HuggingFace, 0 descargas | Sin model card cumplimentada ni evaluacion |
-| Llama 3.2 3B Instruct | 3 210 M | 128 000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente utilizado | Modelo base probable; proposito general, no especializado en finanzas |
-| Qwen2.5-3B-Instruct | 3 090 M | 32 768 tokens | Apache 2.0 | HuggingFace y Ollama | Alternativa de proposito general con licencia permisiva |
-| FinBERT (ProsusAI) | 110 M | 512 tokens | Apache 2.0 | HuggingFace | Clasificador BERT especifico de sentimiento financiero, mucho mas ligero y con contexto corto |
+| benchaffe/llama3.2-3b-lora-financial-sentiment | no disponible (adaptador sobre base de ~3 000 M) | no disponible | no disponible | Hugging Face, 0 descargas | Sin model card cumplimentada ni evaluacion |
+| Llama 3.2 3B Instruct | 3 210 M | 128 000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente utilizado | Modelo base probable; proposito general, no especializado en finanzas |
+| Qwen2.5-3B-Instruct | 3 090 M | 32 768 tokens | Apache 2.0 | Hugging Face y Ollama | Alternativa de proposito general con licencia permisiva |
+| FinBERT (ProsusAI) | 110 M | 512 tokens | Apache 2.0 | Hugging Face | Clasificador BERT especifico de sentimiento financiero, mucho mas ligero y con contexto corto |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benchaffe/llama3.2-3b-lora-financial-sentiment
+- Modelo en Hugging Face: https://huggingface.co/benchaffe/llama3.2-3b-lora-financial-sentiment
 - Paper citado en los tags del Hub (Lacoste et al., 2019, sobre emisiones de carbono, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla de la model card: https://mlco2.github.io/impact
 - Documentacion del modelo base probable, Llama 3.2: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

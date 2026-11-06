@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CallForge-1B-v1-GGUF es la versión cuantizada en formato GGUF del modelo CallForge-1B-v1, desarrollado originalmente por solomoniw y cuantizado por mradermacher. Se trata de un modelo de lenguaje pequeño, con aproximadamente 1.080 millones de parámetros, especializado en tool-use, function-calling y tareas de agente, según los tags de su ficha en HuggingFace. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
+CallForge-1B-v1-GGUF es la versión cuantizada en formato GGUF del modelo CallForge-1B-v1, desarrollado originalmente por solomoniw y cuantizado por mradermacher. Se trata de un modelo de lenguaje pequeño, con aproximadamente 1.080 millones de parámetros, especializado en tool-use, function-calling y tareas de agente, según los tags de su ficha en Hugging Face. Su licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su tamaño reducido, que lo hace apto para ejecutarse en hardware de consumo, como GPUs domésticas o incluso CPU, manteniendo capacidades de llamada a funciones y conversación. Al estar disponible en múltiples cuantizaciones GGUF (desde Q2_K hasta f16), ofrece flexibilidad para desplegarlo en entornos con recursos limitados, como edge devices o aplicaciones de agentes ligeros. No obstante, la información pública sobre su arquitectura interna, datos de entrenamiento y rendimiento es escasa, por lo que esta ficha se basa principalmente en los metadatos y la documentación de cuantización proporcionada.
 

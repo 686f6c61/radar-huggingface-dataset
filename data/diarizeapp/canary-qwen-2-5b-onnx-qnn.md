@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diarizeapp/canary-qwen-2.5b-onnx-qnn
+- Modelo en Hugging Face: https://huggingface.co/diarizeapp/canary-qwen-2.5b-onnx-qnn
 - Modelo base: https://huggingface.co/nvidia/canary-qwen-2.5b
 - QAIRT (Qualcomm AI Runtime): no disponible en la información proporcionada
 - Script de reconstrucción `canary_qwen_pipeline.py`: incluido en el repositorio del modelo

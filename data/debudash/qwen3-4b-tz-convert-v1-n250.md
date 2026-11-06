@@ -69,9 +69,9 @@ El checkpoint con 250 ejemplos iguala al base en adherencia a especificación (1
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v1-n250 | ~4B (adaptador LoRA de 0,1 GB) | no disponible | Especialización en timezone con 250 ejemplos | apache-2.0 | HuggingFace |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | ~4B (adaptador LoRA) | no disponible | Misma tarea, 12.000 ejemplos; mejor checkpoint del proyecto | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible | Modelo base generalista instruct | apache-2.0 | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v1-n250 | ~4B (adaptador LoRA de 0,1 GB) | no disponible | Especialización en timezone con 250 ejemplos | apache-2.0 | Hugging Face |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | ~4B (adaptador LoRA) | no disponible | Misma tarea, 12.000 ejemplos; mejor checkpoint del proyecto | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4B | no disponible | Modelo base generalista instruct | apache-2.0 | Hugging Face |
 
 La comparación relevante es interna al proyecto: el `v1-n250` es el punto de menor datos de la curva, mientras que el `v3-n12000` es el checkpoint recomendado por el autor. Frente al base, el adaptador con 250 ejemplos no mejora la adherencia y empeora la robustez, lo que sugiere que este volumen de datos es insuficiente para la tarea.
 
@@ -88,7 +88,7 @@ La comparación relevante es interna al proyecto: el `v1-n250` es el punto de me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n250
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n250
 - Checkpoint recomendado del proyecto: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Código, conjuntos de evaluación e informes: https://huggingface.co/debudash/slm-training
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft

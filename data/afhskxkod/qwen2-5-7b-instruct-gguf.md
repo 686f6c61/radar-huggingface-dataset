@@ -99,7 +99,7 @@ Rendimiento comparado: no disponible en la informacion proporcionada. No se apor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Afhskxkod/Qwen2.5-7B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Afhskxkod/Qwen2.5-7B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Repositorio original de la cuantizacion (bartowski): https://huggingface.co/bartowski/Qwen2.5-7B-Instruct-GGUF

@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) entrenado sobre el modelo bas
 
 El modelo base, Qwen2.5-3B, es un transformer decoder-only de aproximadamente 3.090 millones de parametros desarrollado por Alibaba Qwen, con soporte nativo de 32.768 tokens de contexto y ampliable a 131.072 mediante YaRN. La relevancia de este artefacto es, por tanto, experimental: sirve para reproducir o auditar una configuracion concreta de LoRA sobre una base pequena y eficiente, no como modelo listo para produccion.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los apartados (datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion) figuran como "More Information Needed". El repositorio acumula 0 descargas y 0 likes, y no hay documentacion adicional ni resultados de evaluacion publicados por el autor.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los apartados (datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion) figuran como "More Information Needed". El repositorio acumula 0 descargas y 0 likes, y no hay documentacion adicional ni resultados de evaluacion publicados por el autor.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ Comparacion funcional: este repositorio no compite como modelo autonomo, sino co
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-53f19e7f-65bb-44ad-96c4-7ab404fbb15c-5HLA2QWY
+- Repositorio del modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_cfe8adad8593829c_20260921-53f19e7f-65bb-44ad-96c4-7ab404fbb15c-5HLA2QWY
 - Modelo base declarado (Unsloth): https://huggingface.co/unsloth/Qwen2.5-3B
 - Modelo base original (Alibaba Qwen): https://huggingface.co/Qwen/Qwen2.5-3B
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2409.12191

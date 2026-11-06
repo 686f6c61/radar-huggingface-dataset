@@ -71,5 +71,5 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/WarSwift/Qwen3.8-27B-Uncensored-NVFP4-W4A4
+- Hugging Face: https://huggingface.co/WarSwift/Qwen3.8-27B-Uncensored-NVFP4-W4A4
 - Modelo similar en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored

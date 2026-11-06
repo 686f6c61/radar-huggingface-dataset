@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Tipo | Pasos de muestreo | Rango LoRA | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Iwannapose/minimax_h3_pdmd_4nfe_comfyui | Adaptador LoRA destilado (PDMD) | 4 NFE | 128 | safetensors, layout ComfyUI H3 | apache-2.0 | Publico en HuggingFace; 0 descargas, 1 like |
-| pdmd2026/pdmd_4NFE_lora | Adaptador LoRA destilado (PDMD), original | 4 NFE | 128 | safetensors, PEFT de Diffusers | No disponible | Publico en HuggingFace |
+| Iwannapose/minimax_h3_pdmd_4nfe_comfyui | Adaptador LoRA destilado (PDMD) | 4 NFE | 128 | safetensors, layout ComfyUI H3 | apache-2.0 | Publico en Hugging Face; 0 descargas, 1 like |
+| pdmd2026/pdmd_4NFE_lora | Adaptador LoRA destilado (PDMD), original | 4 NFE | 128 | safetensors, PEFT de Diffusers | No disponible | Publico en Hugging Face |
 | minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16 | Adaptador LoRA turbo para H3 | 8 NFE | No disponible | safetensors, ComfyUI | No disponible | Referenciado en la model card |
 | MiniMaxAI/MiniMax-H3 (base) | Modelo completo de generacion de video | No disponible | No aplica | Multiples formatos | No disponible | Pesos abiertos y nodos de socio en Comfy, segun fuentes publicas |
 
@@ -97,7 +97,7 @@ La comparacion directa entre el PDMD 4-NFE y el turbo de 8 pasos no puede cerrar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iwannapose/minimax_h3_pdmd_4nfe_comfyui
+- Modelo en Hugging Face: https://huggingface.co/Iwannapose/minimax_h3_pdmd_4nfe_comfyui
 - LoRA PDMD 4-NFE original: https://huggingface.co/pdmd2026/pdmd_4NFE_lora
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3

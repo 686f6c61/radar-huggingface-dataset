@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Atlaspl/fluxx-nsfw-lora` es un adaptador LoRA publicado en HuggingFace por el usuario Atlaspl, orientado a la generación de contenido para adultos sobre un modelo de difusión de la familia FLUX.1. El repositorio, de 0,2 GB, contiene únicamente los pesos del adaptador: no incluye el modelo base, no declara pipeline de inferencia y su model card se limita a la línea `license: openrail`, sin descripción, instrucciones de uso, palabras de activación ni parámetros recomendados.
+`Atlaspl/fluxx-nsfw-lora` es un adaptador LoRA publicado en Hugging Face por el usuario Atlaspl, orientado a la generación de contenido para adultos sobre un modelo de difusión de la familia FLUX.1. El repositorio, de 0,2 GB, contiene únicamente los pesos del adaptador: no incluye el modelo base, no declara pipeline de inferencia y su model card se limita a la línea `license: openrail`, sin descripción, instrucciones de uso, palabras de activación ni parámetros recomendados.
 
 La relevancia de este tipo de publicación es práctica: un LoRA permite modificar el comportamiento de un modelo de difusión grande sin reentrenarlo, con un coste de almacenamiento de cientos de megabytes y un entrenamiento asequible en una sola GPU. En este caso, el objetivo declarado por el nombre y por el tag `not-for-all-audiences` es habilitar contenido NSFW, un patrón habitual en la comunidad de FLUX (variantes como Flux-Unc-V2 o la familia FluXXX siguen la misma aproximación).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Tipo | Tamaño | Base | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `Atlaspl/fluxx-nsfw-lora` | LoRA NSFW | 0,2 GB | FLUX.1 (no confirmado) | openrail | HuggingFace, 0 descargas, 0 likes | Sin model card, sin instrucciones, sin evaluaciones |
+| `Atlaspl/fluxx-nsfw-lora` | LoRA NSFW | 0,2 GB | FLUX.1 (no confirmado) | openrail | Hugging Face, 0 descargas, 0 likes | Sin model card, sin instrucciones, sin evaluaciones |
 | KirbyLulu/Flux-Unc-V2 | LoRA de eliminación de restricciones | No disponible | FLUX.1-dev (según el repositorio) | No disponible | GitHub, con instrucciones de carga en `diffusers` | Documenta el proceso de uso y la integración en el pipeline |
 | FluXXX NSFW LoRA v4 | LoRA NSFW | 146 MB (`.safetensors`) | FLUX.1 D | No disponible | Civitai y CivArchive, con espejos de descarga | Historial de versiones con mejoras declaradas de adherencia al prompt y realismo |
-| Colección Nesslovver (FLUX NSFW LoRAs) | Conjunto de LoRAs | Variable | FLUX | No disponible | HuggingFace Collections | Agrupación curada, útil como referencia del ecosistema |
+| Colección Nesslovver (FLUX NSFW LoRAs) | Conjunto de LoRAs | Variable | FLUX | No disponible | Hugging Face Collections | Agrupación curada, útil como referencia del ecosistema |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atlaspl/fluxx-nsfw-lora
+- Hugging Face: https://huggingface.co/Atlaspl/fluxx-nsfw-lora
 - GitHub KirbyLulu/Flux-Unc-V2: https://github.com/KirbyLulu/Flux-Unc-V2
 - Colección FLUX NSFW LoRAs de Nesslovver: https://huggingface.co/collections/Nesslovver/flux-nsfw-loras
 - Comparativa de LoRAs NSFW para FLUX (Civitai): https://civitai.red/articles/13803/nsfw-flux-loras-comparison

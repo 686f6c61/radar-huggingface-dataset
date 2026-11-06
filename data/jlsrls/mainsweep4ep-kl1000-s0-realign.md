@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl1000-s0-realign` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en HuggingFace. Se trata de un modelo decoder-only de la familia Llama 3.2 con aproximadamente 1.240 millones de parámetros, entrenado con la librería TRL (versión 0.24.0) sobre el stack de Unsloth. El repositorio ocupa 1,6 GB y contiene pesos en formato safetensors, sin variantes cuantizadas publicadas.
+`jlsrls/mainsweep4ep-kl1000-s0-realign` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en Hugging Face. Se trata de un modelo decoder-only de la familia Llama 3.2 con aproximadamente 1.240 millones de parámetros, entrenado con la librería TRL (versión 0.24.0) sobre el stack de Unsloth. El repositorio ocupa 1,6 GB y contiene pesos en formato safetensors, sin variantes cuantizadas publicadas.
 
 El modelo no resuelve un problema de producto concreto: por el nombre (`mainsweep`, `4ep`, `kl1000`, `s0`) y por los metadatos, todo apunta a un experimento dentro de una barrido de hiperparámetros (posiblemente 4 épocas, semilla 0 y un coeficiente KL de 1000) orientado a estudiar la estabilidad del alineamiento en modelos pequeños. La model card es la plantilla automática de TRL y no documenta dataset, licencia, idiomas ni evaluación.
 
@@ -40,7 +40,7 @@ Los resultados de la búsqueda web incluyen el proyecto ReAlign (GAIR-NLP) y una
 - Tool calling / function calling: no documentado en la model card.
 - Comportamiento de agente o razonamiento multi-paso: no documentado.
 - Modo "thinking", visión o audio: no disponibles (el modelo es solo texto).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Llama-3.2-1B-Instruct (modelo base) | ~1,24 B | 128k | Llama 3.2 Community License | Ampliamente disponible, versiones GGUF comunitarias | Evaluado por Meta en su model card |
 | Llama-3.2-3B-Instruct | ~3,2 B | 128k | Llama 3.2 Community License | Ampliamente disponible | Superior al 1B en las evaluaciones de Meta |
 | Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | Muy disponible, incluidas variantes GGUF oficiales | Evaluado por el equipo de Qwen |
-| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens | Apache 2.0 | Muy disponible | Evaluado por HuggingFace |
+| SmolLM2-1.7B-Instruct | ~1,7 B | 8.192 tokens | Apache 2.0 | Muy disponible | Evaluado por Hugging Face |
 
 No se dispone de datos que permitan afirmar si este ajuste mejora o degrada al modelo base; la comparación de rendimiento con las alternativas queda pendiente de evaluación independiente.
 
@@ -95,7 +95,7 @@ No se dispone de datos que permitan afirmar si este ajuste mejora o degrada al m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s0-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s0-realign
 - Variante con nombre similar del mismo autor: https://huggingface.co/jlsrls/mainsweep4ep-kl1000-s0-realign120
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/41qbebda

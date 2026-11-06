@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Apex-35B-V1.0-Uncensored-Sangreal-ICE es una colección de cuantizaciones GGUF del modelo multimodal Apex-35B-V1.0 de Apex Intelligence, publicada por el usuario gbuzhf en HuggingFace. El modelo base es un MoE de 35,5 mil millones de parámetros totales (aproximadamente 3B activos) basado en la arquitectura Qwen3.6-35B-A3B, con capacidades de visión (image-text-to-text). La particularidad de esta versión es que es "abliterated": se ha eliminado la dirección de rechazo (refusal direction) del modelo original, de modo que responde a peticiones que el modelo original declinaría.
+Apex-35B-V1.0-Uncensored-Sangreal-ICE es una colección de cuantizaciones GGUF del modelo multimodal Apex-35B-V1.0 de Apex Intelligence, publicada por el usuario gbuzhf en Hugging Face. El modelo base es un MoE de 35,5 mil millones de parámetros totales (aproximadamente 3B activos) basado en la arquitectura Qwen3.6-35B-A3B, con capacidades de visión (image-text-to-text). La particularidad de esta versión es que es "abliterated": se ha eliminado la dirección de rechazo (refusal direction) del modelo original, de modo que responde a peticiones que el modelo original declinaría.
 
 La cuantización se ha realizado con la receta ICE 2.0 del autor, que incluye una matriz de importancia Sangreal de 10k muestras, recetas por tensor ICE 1.6 y una reparación post-cuantización de expertos (expert repair). Cada archivo conserva la capa MTP (Multi-Token Prediction) para decodificación especulativa, así como el proyector de visión distribuido por separado y la plantilla de chat Arrow 4.0-apex.
 

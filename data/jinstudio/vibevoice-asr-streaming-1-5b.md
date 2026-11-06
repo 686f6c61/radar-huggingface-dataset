@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VibeVoice-ASR-Streaming-1.5B es un modelo de reconocimiento automático de voz (ASR) en streaming que transcribe simultáneamente quién habla y qué dice, con soporte para palabras personalizadas y diez idiomas. Desarrollado por Microsoft Research, está disponible en HuggingFace bajo la cuenta Jinstudio, aunque la model card original apunta al repositorio de Microsoft. El modelo tiene 2.814.116.321 parámetros y se distribuye en formato safetensors con un tamaño de repositorio de 5.6 GB. Su principal relevancia es la transcripción continua con atribución de hablante en tiempo real, lo que lo hace útil para reuniones, subtitulado en directo y análisis de llamadas.
+VibeVoice-ASR-Streaming-1.5B es un modelo de reconocimiento automático de voz (ASR) en streaming que transcribe simultáneamente quién habla y qué dice, con soporte para palabras personalizadas y diez idiomas. Desarrollado por Microsoft Research, está disponible en Hugging Face bajo la cuenta Jinstudio, aunque la model card original apunta al repositorio de Microsoft. El modelo tiene 2.814.116.321 parámetros y se distribuye en formato safetensors con un tamaño de repositorio de 5.6 GB. Su principal relevancia es la transcripción continua con atribución de hablante en tiempo real, lo que lo hace útil para reuniones, subtitulado en directo y análisis de llamadas.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ No se han publicado detalles específicos sobre la arquitectura ni el proceso de
 - Atribución de hablante: identifica quién dice cada fragmento, produciendo una transcripción con etiquetas de hablante.
 - Hotwords personalizados: permite al usuario proporcionar nombres o términos técnicos para mejorar el reconocimiento en dominios específicos.
 - Soporte multilingüe: cubre diez idiomas: inglés, chino, español, portugués, alemán, japonés, coreano, francés, ruso e italiano.
-- Compatible con la librería Transformers de HuggingFace y con endpoints de inferencia.
+- Compatible con la librería Transformers de Hugging Face y con endpoints de inferencia.
 
 ## Casos de uso
 
@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: no se han publicado requisitos oficiales. El tamaño del repositorio (5.6 GB) sugiere pesos en FP16 o BF16 para 2.814 millones de parámetros, lo que requeriría aproximadamente 5.6 GB de VRAM para cargar el modelo completo en precisión media.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible. Para una carga en FP16 se necesitaría una GPU con al menos 6-8 GB de VRAM, como una RTX 3060 o superior, pero es una estimación.
-- Opciones de despliegue: al ser compatible con Transformers, puede ejecutarse con HuggingFace Inference Endpoints, vLLM o pipelines de ASR. No se menciona soporte específico para llama.cpp u Ollama.
+- Opciones de despliegue: al ser compatible con Transformers, puede ejecutarse con Hugging Face Inference Endpoints, vLLM o pipelines de ASR. No se menciona soporte específico para llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -58,12 +58,12 @@ No disponible. No se han proporcionado datos de modelos comparables en la inform
 - No se han documentado sesgos específicos en la información disponible.
 - Al ser un modelo de ASR, puede cometer errores en entornos con ruido, acentos no estándar o habla solapada, aunque no hay datos concretos.
 - La longitud de contexto no está especificada, lo que limita la capacidad de procesar audios muy largos de una sola vez, aunque el streaming mitiga este problema.
-- El modelo está publicado en HuggingFace bajo la cuenta Jinstudio, mientras que la model card original corresponde a Microsoft. Esto puede indicar una re-subida no oficial, por lo que se recomienda verificar la procedencia antes de usar en producción.
+- El modelo está publicado en Hugging Face bajo la cuenta Jinstudio, mientras que la model card original corresponde a Microsoft. Esto puede indicar una re-subida no oficial, por lo que se recomienda verificar la procedencia antes de usar en producción.
 - La licencia MIT permite uso comercial, pero al tratarse de un proyecto de investigación, no se garantiza soporte ni mantenimiento continuado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinstudio/VibeVoice-ASR-Streaming-1.5B
+- Hugging Face: https://huggingface.co/Jinstudio/VibeVoice-ASR-Streaming-1.5B
 - GitHub: https://github.com/microsoft/VibeVoice
 - Demo: https://aka.ms/vibeasr
 - Informe técnico: https://arxiv.org/abs/2609.02812

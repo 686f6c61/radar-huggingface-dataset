@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ducnguye9/beit-multitask96` es un repositorio experimental publicado en HuggingFace que contiene una implementación de BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas multitarea. El autor, `ducnguye9`, lo presenta explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, según la propia model card.
+`ducnguye9/beit-multitask96` es un repositorio experimental publicado en Hugging Face que contiene una implementación de BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas multitarea. El autor, `ducnguye9`, lo presenta explícitamente como un esqueleto de código ("codebase") para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, no como un modelo entrenado y evaluado. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, según la propia model card.
 
 La relevancia de esta ficha es acotada: se trata de un artefacto de investigación temprana sin benchmarks publicados, sin datos de entrenamiento documentados y sin métricas de rendimiento. El recuento de parámetros reportado por los metadatos de safetensors es de 33.088, un valor anómalamente bajo para la escala "giant" que declara la configuración, lo que sugiere que el checkpoint no refleja la arquitectura completa descrita o que los tensores no están materializados con la forma esperada.
 
@@ -80,5 +80,5 @@ La comparación con BEiT oficial es la más pertinente: misma familia arquitect�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducnguye9/beit-multitask96
+- Hugging Face: https://huggingface.co/ducnguye9/beit-multitask96
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

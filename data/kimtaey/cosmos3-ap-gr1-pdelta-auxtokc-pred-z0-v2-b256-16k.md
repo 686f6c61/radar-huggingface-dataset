@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k` es un checkpoint alojado en HuggingFace por el usuario `kimtaey`. No incluye README, licencia declarada, idiomas ni pipeline. El nombre del modelo sugiere una posible relación con Cosmos3, el modelo de mundo omnimodal de NVIDIA, pero no se puede confirmar sin documentación técnica.
+El repositorio `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k` es un checkpoint alojado en Hugging Face por el usuario `kimtaey`. No incluye README, licencia declarada, idiomas ni pipeline. El nombre del modelo sugiere una posible relación con Cosmos3, el modelo de mundo omnimodal de NVIDIA, pero no se puede confirmar sin documentación técnica.
 
 Se trata de un repositorio de 91.1 GB con solo 14 descargas, creado el 4 de septiembre de 2026 y actualizado el 5 de septiembre de 2026. No hay información pública sobre el problema que resuelve, su arquitectura, datos de entrenamiento ni capacidades. Cualquier uso requeriría una evaluación experimental previa por parte del usuario.
 
@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k` (este modelo) | no disponible | no disponible | no disponible | 91.1 GB en HuggingFace |
-| `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-qonly-msal-delta-v2-b256-16k` | no disponible | no disponible | no disponible | Repositorio similar en HuggingFace |
+| `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k` (este modelo) | no disponible | no disponible | no disponible | 91.1 GB en Hugging Face |
+| `kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-qonly-msal-delta-v2-b256-16k` | no disponible | no disponible | no disponible | Repositorio similar en Hugging Face |
 | NVIDIA Cosmos3 (referencia oficial) | no disponible | no disponible | no disponible | Página de investigación |
 
-No se dispone de especificaciones comparables. La única relación entre estos modelos es el nombre y el espacio de usuario en HuggingFace. No se puede establecer una comparativa técnica con alternativas de la misma categoría.
+No se dispone de especificaciones comparables. La única relación entre estos modelos es el nombre y el espacio de usuario en Hugging Face. No se puede establecer una comparativa técnica con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
@@ -83,6 +83,6 @@ No se dispone de especificaciones comparables. La única relación entre estos m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k
+- Hugging Face: https://huggingface.co/kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-pred-z0-v2-b256-16k
 - Repositorio similar: https://huggingface.co/kimtaey/cosmos3-ap-gr1-pdelta-auxtokc-qonly-msal-delta-v2-b256-16k
 - Página de Cosmos3 de NVIDIA: https://research.nvidia.com/labs/cosmos-lab/cosmos3/

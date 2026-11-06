@@ -80,6 +80,6 @@ SwarmHunter 3B se diferencia de su modelo base por el ajuste fino masivo en domi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UtkarshSinghShrinet/swarmhunter-3b-gguf
+- Hugging Face: https://huggingface.co/UtkarshSinghShrinet/swarmhunter-3b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct
 - Ejecucion directa en Ollama: `ollama run hf.co/UtkarshSinghShrinet/swarmhunter-3b-gguf:latest`

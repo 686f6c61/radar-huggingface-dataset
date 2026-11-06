@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-pick-dual-bottles-concurrent-lora-10k es un checkpoint de ajuste fino LoRA sobre el modelo vision-lenguaje-accion (VLA) PI0.5, publicado por el usuario Travor278 en HuggingFace. El modelo deriva de la base original XinY0201/openpi-pi05-base-jax y se ha entrenado con la libreria openpi (JAX) para una unica tarea de manipulacion robotica: recoger dos botellas de forma concurrente a partir del prompt nativo "Pick up two bottles.".
+pi05-pick-dual-bottles-concurrent-lora-10k es un checkpoint de ajuste fino LoRA sobre el modelo vision-lenguaje-accion (VLA) PI0.5, publicado por el usuario Travor278 en Hugging Face. El modelo deriva de la base original XinY0201/openpi-pi05-base-jax y se ha entrenado con la libreria openpi (JAX) para una unica tarea de manipulacion robotica: recoger dos botellas de forma concurrente a partir del prompt nativo "Pick up two bottles.".
 
 El repositorio contiene el arbol completo de parametros de inferencia (base + LoRA) y los activos de normalizacion en formato Orbax, con un tamano de 6,3 GB. El ajuste se realizo sobre un dataset de 50 episodios y 8066 fotogramas a 25 FPS, con acciones y estados absolutos de 14 dimensiones, tres camaras RGB y preprocesado estandar de 224x224, sin conversion de unidades tipo delta/Aloha ni mascara de inactividad.
 
@@ -73,8 +73,8 @@ Solo se dispone de informacion verificable del propio checkpoint y de la base qu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-pick-dual-bottles-concurrent-lora-10k (este) | no disponible | no disponible | sin tasa de exito declarada | no disponible | HuggingFace, repo 6,3 GB, Orbax |
-| XinY0201/openpi-pi05-base-jax (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| pi05-pick-dual-bottles-concurrent-lora-10k (este) | no disponible | no disponible | sin tasa de exito declarada | no disponible | Hugging Face, repo 6,3 GB, Orbax |
+| XinY0201/openpi-pi05-base-jax (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros ajustes LoRA de PI0.5 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La busqueda web realizada no devolvio resultados relevantes para esta comparativa (los resultados obtenidos corresponden a sitios de cajas de CS2 y no guardan relacion con el modelo).
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio resultados relevantes para esta comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-lora-10k
 - Base referenciada: https://huggingface.co/XinY0201/openpi-pi05-base-jax (commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-pick-dual-bottles-concurrent-20260911 (commit 8dff735a7870df46edc853a019f288d20f6c82af)
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi

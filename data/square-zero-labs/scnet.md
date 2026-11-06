@@ -90,7 +90,7 @@ No se han publicado en la información disponible resultados comparativos direct
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/square-zero-labs/scnet
+- Hugging Face: https://huggingface.co/square-zero-labs/scnet
 - Paper (arXiv): https://arxiv.org/abs/2401.13276
 - Código y pesos originales: https://github.com/starrytong/SCNet
 - Checkpoint y configuración: https://github.com/ZFTurbo/Music-Source-Separation-Training

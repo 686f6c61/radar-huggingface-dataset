@@ -84,6 +84,6 @@ No se dispone en la información proporcionada de modelos comparables concretos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/plantcad/marin-dna-exp586-1.5B-60M
+- Hugging Face: https://huggingface.co/plantcad/marin-dna-exp586-1.5B-60M
 - Issue MarinDNA #586: https://github.com/Open-Athena/marin-dna/issues/586
 - Resultados de evaluación PlantCAD2 (PR #22): https://github.com/plantcad/plantcad2/pull/22

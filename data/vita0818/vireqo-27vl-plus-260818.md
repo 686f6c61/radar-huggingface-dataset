@@ -74,10 +74,10 @@ Estas pruebas cubren imagenes sinteticas controladas, no imagenes naturales, y n
 
 | Modelo | Tamano | Contexto | Cuantizacion | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Vireqo-27VL-Plus-260818 (este) | 7,65 GiB (bundle) | 2048 | Ternario (2-bit) + Q8_0 | Si (proyector Qwen3-VL) | Apache-2.0 | GGUF en HuggingFace |
+| Vireqo-27VL-Plus-260818 (este) | 7,65 GiB (bundle) | 2048 | Ternario (2-bit) + Q8_0 | Si (proyector Qwen3-VL) | Apache-2.0 | GGUF en Hugging Face |
 | Qwen3-VL-27B (original) | ~54 GB en BF16 | 32768 (tipico) | BF16/FP16 | Si (nativo) | Apache-2.0 | Pesos originales y GGUF |
-| Ternary-Bonsai-27B (sin vision) | ~7 GB | 2048 (recomendado) | Ternario | No | Apache-2.0 | GGUF en HuggingFace |
-| Bonsai-27B (sin vision) | ~7 GB | 2048 (recomendado) | Ternario | No | Apache-2.0 | GGUF en HuggingFace |
+| Ternary-Bonsai-27B (sin vision) | ~7 GB | 2048 (recomendado) | Ternario | No | Apache-2.0 | GGUF en Hugging Face |
+| Bonsai-27B (sin vision) | ~7 GB | 2048 (recomendado) | Ternario | No | Apache-2.0 | GGUF en Hugging Face |
 
 La comparativa muestra que este bundle es una opcion intermedia: mantiene el tamano reducido de los modelos ternarios pero anade vision mediante un proyector externo, a costa de un contexto limitado y sin garantias de rendimiento en tareas complejas. Frente a Qwen3-VL-27B original, pierde precision y contexto, pero gana en eficiencia de memoria.
 
@@ -95,7 +95,7 @@ La comparativa muestra que este bundle es una opcion intermedia: mantiene el tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vita0818/Vireqo-27VL-Plus-260818
+- Modelo en Hugging Face: https://huggingface.co/Vita0818/Vireqo-27VL-Plus-260818
 - Repositorio del proyector de vision (Prism ML): https://huggingface.co/prism-ml/Ternary-Bonsai-27B-gguf
 - Repositorio alternativo del proyector: https://huggingface.co/prism-ml/Bonsai-27B-gguf
 - Perfil de GitHub del autor: https://github.com/Vita0818/

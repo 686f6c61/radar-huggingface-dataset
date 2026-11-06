@@ -18,7 +18,7 @@ El repositorio no incluye información sobre benchmarks adicionales, métricas p
 | Longitud de contexto | 512 tokens (arquitectura base), entrenado con max_length 128 |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Inglés (según modelo card) |
-| Licencia | Apache-2.0 (según modelo card; la metadata de HuggingFace no la especifica) |
+| Licencia | Apache-2.0 (según modelo card; la metadata de Hugging Face no la especifica) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ El entrenamiento se realizó mediante fine-tuning sobre el dataset `stanfordnlp/
 - Clasificación binaria de sentimiento: asigna etiquetas `LABEL_0` (negativo) y `LABEL_1` (positivo) a textos de entrada.
 - Procesamiento de texto en inglés, especialmente reseñas de películas o textos con estilo similar.
 - Inferencia rápida gracias al tamaño reducido del modelo (67M parámetros), apto para CPU y GPU de baja gama.
-- Integración sencilla con la librería `transformers` de HuggingFace mediante la carga de pesos en formato `safetensors`.
+- Integración sencilla con la librería `transformers` de Hugging Face mediante la carga de pesos en formato `safetensors`.
 - No soporta generación de texto, tool calling, agentes, razonamiento multi-paso, visión ni audio.
 
 ## Casos de uso
@@ -72,11 +72,11 @@ No se dispone de información detallada sobre otros modelos de la misma categor�
 - Riesgo de alucinación: al ser un clasificador, no genera texto, por lo que el riesgo de alucinación es bajo. Sin embargo, puede asignar etiquetas incorrectas en textos ambiguos, sarcásticos o con doble sentido.
 - Limitaciones de contexto: la longitud máxima de entrada es de 128 tokens durante el entrenamiento, aunque la arquitectura soporta 512. Textos más largos se truncarán, perdiendo información relevante.
 - Limitaciones de idioma: solo está entrenado para inglés. No funciona con otros idiomas.
-- Restricciones de licencia: aunque el modelo card indica Apache-2.0, la metadata de HuggingFace no la especifica, por lo que se recomienda contactar al autor para confirmar la licencia antes de uso comercial.
+- Restricciones de licencia: aunque el modelo card indica Apache-2.0, la metadata de Hugging Face no la especifica, por lo que se recomienda contactar al autor para confirmar la licencia antes de uso comercial.
 - Advertencia para producción: el modelo es un proyecto de aprendizaje con un rendimiento moderado y un dominio muy específico. No es adecuado para aplicaciones críticas sin un fine-tuning adicional con datos más representativos.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/VENKATANISHNATH/imdb-sentiment-model)
+- [Modelo en Hugging Face](https://huggingface.co/VENKATANISHNATH/imdb-sentiment-model)
 - [Dataset IMDB (stanfordnlp/imdb)](https://huggingface.co/datasets/stanfordnlp/imdb)
 - [Modelo base DistilBERT](https://huggingface.co/distilbert-base-uncased)

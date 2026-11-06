@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800` es un checkpoint de un decodificador World2Action perteneciente a la familia VAM-Cross MimicVideo, publicado por el usuario dreamdifferent en HuggingFace. No es un modelo de lenguaje: es un componente de robótica que traduce observaciones de vídeo procedentes de dos cámaras a acciones de efector final, dentro de un pipeline que combina un backbone Video2World congelado, una LoRA de vídeo también congelada y este decodificador de acciones entrenable.
+El modelo `dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800` es un checkpoint de un decodificador World2Action perteneciente a la familia VAM-Cross MimicVideo, publicado por el usuario dreamdifferent en Hugging Face. No es un modelo de lenguaje: es un componente de robótica que traduce observaciones de vídeo procedentes de dos cámaras a acciones de efector final, dentro de un pipeline que combina un backbone Video2World congelado, una LoRA de vídeo también congelada y este decodificador de acciones entrenable.
 
 El checkpoint corresponde a la iteración 1800 de la ejecución `w2a_panda_widowx_level5_widowx_texture_2cam_hstack_action_iter2374_videolora_iter200_widowx_teleop_recording_frame_v1`, que se detuvo por causa "unknown" según la propia model card. El contrato de datos define 156 episodios y 54 421 fotogramas, dos cámaras (`corner_cam` y `front_cam`, apiladas en horizontal), y un objetivo de 15 acciones de efector final y pinza a 5 Hz en el marco `widowx_reference_base/teleop_aligned_tool`, con rotación representada en 6D y pose relativa a la pose alcanzada actual.
 
@@ -106,7 +106,7 @@ La comparacion se limita a lo observable en los identificadores de los repositor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-widowx-widowx-texture-teleopaligned-videolora200-action-decoder-iter1800
 - Variante robosuite con LoRA de video iter200: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora200-action-dec-9a6c710730
 - Variante robosuite con LoRA de video iter400: https://huggingface.co/dreamdifferent/vam-cross-level5-panda-robosuite-widowx-texture-teleopaligned-videolora400-action-dec-68554cef79
 - Backbone Video2World referenciado: https://huggingface.co/dreamdifferent/widowx250-video-fused

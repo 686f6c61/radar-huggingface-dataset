@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-TAGI-SVD-20 es una versión comprimida del modelo base LiquidAI/LFM2.5-2.6B, publicada por el usuario Neeze en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un artefacto de compresión de pesos: se ha aplicado la técnica TAGI-SVD v2 (Two-Round SVD Whitening + Null-Space Side-States) para reducir un 20,0% el número de parámetros del modelo original, que pasa de 2,6B a los 2.209.741.824 parámetros que reportan los ficheros safetensors.
+LFM2.5-2.6B-TAGI-SVD-20 es una versión comprimida del modelo base LiquidAI/LFM2.5-2.6B, publicada por el usuario Neeze en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un artefacto de compresión de pesos: se ha aplicado la técnica TAGI-SVD v2 (Two-Round SVD Whitening + Null-Space Side-States) para reducir un 20,0% el número de parámetros del modelo original, que pasa de 2,6B a los 2.209.741.824 parámetros que reportan los ficheros safetensors.
 
 El interés técnico del repositorio no reside en el modelo en sí, sino en el método de compresión y en su coste en calidad. Según los datos de la propia model card, la perplejidad sube de 21,0 en el modelo original a 50,5 tras la compresión, lo que deja una "retención de calidad" declarada del 41,58%. Es, por tanto, un experimento de compresión con degradación severa, útil para investigar técnicas de poda y descomposición de bajo rango, pero no para uso en producción.
 
@@ -24,7 +24,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, está e
 | Metodo de compresion | TAGI-SVD v2 (Two-Round SVD Whitening + Null-Space Side-States) |
 | Ratio de recorte de parametros | 20,0% |
 | Rango lateral ortogonal (r_side) | 8 |
-| Fecha de creacion en HuggingFace | 2026-09-12 |
+| Fecha de creacion en Hugging Face | 2026-09-12 |
 
 ## Arquitectura y entrenamiento
 
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparables con modelos de otros fabricante
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neeze/LFM2.5-2.6B-TAGI-SVD-20
+- Hugging Face: https://huggingface.co/Neeze/LFM2.5-2.6B-TAGI-SVD-20
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Paper, blog o repositorio del metodo TAGI-SVD v2: no disponible
 - Demo o espacio de inferencia: no disponible

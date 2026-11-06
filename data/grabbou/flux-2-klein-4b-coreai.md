@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Resolucion | Pasos | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FLUX.2-klein-4B-CoreAI (esta ficha) | 4B | 512x512 | 4 | `.aimodel` (Core AI) | Apache-2.0 | HuggingFace, on-device iOS/macOS |
-| FLUX.2-klein-4B (original) | 4B | no disponible | no disponible | safetensors (presumiblemente) | Apache-2.0 | HuggingFace |
+| FLUX.2-klein-4B-CoreAI (esta ficha) | 4B | 512x512 | 4 | `.aimodel` (Core AI) | Apache-2.0 | Hugging Face, on-device iOS/macOS |
+| FLUX.2-klein-4B (original) | 4B | no disponible | no disponible | safetensors (presumiblemente) | Apache-2.0 | Hugging Face |
 | Otros modelos de difusion on-device para iOS | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas on-device comparables en la información proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grabbou/FLUX.2-klein-4B-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/grabbou/FLUX.2-klein-4B-CoreAI
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio de recetas de Apple: https://github.com/apple/coreai-models
 - Integración React Native: https://github.com/callstackincubator/ai

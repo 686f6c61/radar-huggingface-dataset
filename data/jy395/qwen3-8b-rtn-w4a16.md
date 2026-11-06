@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jy395/Qwen3-8B-rtn-w4a16 | 2,17 B (repo cuantizado) | W4A16 RTN sin calibración | no disponible | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8 B (aprox.) | FP16/BF16 | no disponible | apache-2.0 | HuggingFace |
+| jy395/Qwen3-8B-rtn-w4a16 | 2,17 B (repo cuantizado) | W4A16 RTN sin calibración | no disponible | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8 B (aprox.) | FP16/BF16 | no disponible | apache-2.0 | Hugging Face |
 | Otras variantes del mismo artículo (30 configuraciones) | 8 B (aprox.) | Diversas, con calibración | no disponible | apache-2.0 | Colección HF del autor |
 
 La comparación relevante es con el modelo base sin cuantizar (mayor precisión, mayor huella de memoria) y con las variantes calibradas del mismo estudio (misma compresión pero con datos de calibración financiera). No se dispone de datos de rendimiento comparativo en la información proporcionada.
@@ -81,7 +81,7 @@ La comparación relevante es con el modelo base sin cuantizar (mayor precisión,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jy395/Qwen3-8B-rtn-w4a16
+- Modelo en Hugging Face: https://huggingface.co/jy395/Qwen3-8B-rtn-w4a16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Artículo (DOI): https://doi.org/10.1145/3858063.3858724
 - Repositorio del artículo: https://github.com/JunyiYe/finance-ptc-calibration

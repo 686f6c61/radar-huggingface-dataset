@@ -94,7 +94,7 @@ Los tres reyes Q2 (Ingot-I, Ingot-II e Ingot-III) proceden de las 26 submissions
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dendriteholdings/Ingot-III-27B-Q2
+- Repositorio Hugging Face: https://huggingface.co/dendriteholdings/Ingot-III-27B-Q2
 - Modelo predecesor (genesis): https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Otro rey de la subred (Ingot-I): https://huggingface.co/dendriteholdings/Ingot-I-27B-Q2
 - Fork de llama.cpp usado en la evaluación: https://github.com/PrismML-Eng/llama.cpp/commit/e3de715222b2667c54a267441159a5729f11155e

@@ -64,6 +64,6 @@ No se dispone de datos de rendimiento ni de comparaciones con otros modelos. Al 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed2
+- Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-school-of-reward-hacks-second-third-sft-seed2
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B

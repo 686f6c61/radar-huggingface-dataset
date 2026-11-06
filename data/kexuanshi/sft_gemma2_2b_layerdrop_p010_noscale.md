@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale` es un ajuste fino supervisado (SFT) sobre un modelo de la familia Gemma 2 de 2.000 millones de parámetros, publicado por el usuario KexuanShi en HuggingFace. El repositorio contiene 2.614.341.888 parámetros en formato safetensors (5,3 GB) y está etiquetado como `text-generation` con `transformers`, `trl` y `generated_from_trainer`. No declara licencia, idiomas, dataset de entrenamiento ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
+`KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale` es un ajuste fino supervisado (SFT) sobre un modelo de la familia Gemma 2 de 2.000 millones de parámetros, publicado por el usuario KexuanShi en Hugging Face. El repositorio contiene 2.614.341.888 parámetros en formato safetensors (5,3 GB) y está etiquetado como `text-generation` con `transformers`, `trl` y `generated_from_trainer`. No declara licencia, idiomas, dataset de entrenamiento ni resultados de evaluación, y acumula 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El interés técnico del checkpoint está en su nombre: `layerdrop_p010_noscale` sugiere que durante el SFT se aplicó *layer dropout* con probabilidad 0,10 (es decir, cada capa del transformer se omite aleatoriamente con un 10 % de probabilidad en cada paso) y sin el reescalado compensatorio que habitualmente acompaña a esta técnica. Esto lo convierte en un artefacto de investigación orientado a estudiar regularización, tolerancia a la poda de capas y eficiencia de inferencia, más que en un modelo listo para producción.
 
@@ -69,11 +69,11 @@ Los datos de la columna "modelo de referencia" proceden de las fichas oficiales 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| `KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale` | 2,61 B | No disponible (base: 8.192) | No disponible | HuggingFace, safetensors | No disponible |
-| Gemma 2 2B (base, Google) | 2,61 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, Kaggle | Sí, en la ficha oficial |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens nativos | Apache 2.0 | HuggingFace | Sí, en la ficha oficial |
-| Llama 3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace | Sí, en la ficha oficial |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace | Sí, en la ficha oficial |
+| `KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale` | 2,61 B | No disponible (base: 8.192) | No disponible | Hugging Face, safetensors | No disponible |
+| Gemma 2 2B (base, Google) | 2,61 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, Kaggle | Sí, en la ficha oficial |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens nativos | Apache 2.0 | Hugging Face | Sí, en la ficha oficial |
+| Llama 3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face | Sí, en la ficha oficial |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face | Sí, en la ficha oficial |
 
 Frente a estas alternativas, la ventaja del checkpoint es exclusivamente experimental (el efecto del layerdrop), mientras que pierde en todo lo demás: no tiene licencia verificable, no documenta idiomas ni dataset, y carece de evaluaciones. Para uso práctico en producción, Qwen2.5-1.5B o SmolLM2-1.7B ofrecen licencias permisivas y métricas públicas.
 
@@ -93,7 +93,7 @@ Frente a estas alternativas, la ventaja del checkpoint es exclusivamente experim
 
 ## Enlaces
 
-- [HuggingFace: KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale](https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale)
+- [Hugging Face: KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale](https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_p010_noscale)
 - [TRL: Transformers Reinforcement Learning (GitHub)](https://github.com/huggingface/trl) — framework citado en la model card
 - Modelo base citado en la model card: `https://huggingface.co/None` — marcador de posición, no resuelve a ningún repositorio
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este checkpoint en la información disponible.

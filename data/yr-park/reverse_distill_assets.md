@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yr-park/reverse_distill_assets` aloja un conjunto de activos (assets) asociados a un proceso de destilación inversa (reverse distillation), según su nombre. Sin embargo, la información disponible en HuggingFace es extremadamente limitada: no se especifica el tipo de modelo, arquitectura, parámetros, licencia ni idiomas soportados. El tamaño del repositorio es de 11 201,8 GB (aproximadamente 11 TB), lo que sugiere que contiene pesos de modelos de gran escala, probablemente en formato de checkpoints o datasets. Dado que no se proporcionan detalles técnicos, esta ficha se limita a documentar los datos disponibles y a señalar las carencias de información para una evaluación rigurosa.
+El repositorio `yr-park/reverse_distill_assets` aloja un conjunto de activos (assets) asociados a un proceso de destilación inversa (reverse distillation), según su nombre. Sin embargo, la información disponible en Hugging Face es extremadamente limitada: no se especifica el tipo de modelo, arquitectura, parámetros, licencia ni idiomas soportados. El tamaño del repositorio es de 11 201,8 GB (aproximadamente 11 TB), lo que sugiere que contiene pesos de modelos de gran escala, probablemente en formato de checkpoints o datasets. Dado que no se proporcionan detalles técnicos, esta ficha se limita a documentar los datos disponibles y a señalar las carencias de información para una evaluación rigurosa.
 
 ## Especificaciones técnicas
 
@@ -52,6 +52,6 @@ No disponible. Sin especificaciones técnicas no es posible establecer comparaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yr-park/reverse_distill_assets
+- Repositorio Hugging Face: https://huggingface.co/yr-park/reverse_distill_assets
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

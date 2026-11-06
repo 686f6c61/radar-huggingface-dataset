@@ -79,7 +79,7 @@ La comparativa se basa en la informacion disponible en el repositorio. No se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zhutengjie/PBHC_adam
+- Repositorio Hugging Face: https://huggingface.co/Zhutengjie/PBHC_adam
 - Dataset de movimiento humano: https://huggingface.co/datasets/Zhutengjie/human_motion
 - Paper arXiv: https://arxiv.org/abs/2602.15060
 - Pagina del proyecto: https://zhutengjie.github.io/CLOT.github.io/

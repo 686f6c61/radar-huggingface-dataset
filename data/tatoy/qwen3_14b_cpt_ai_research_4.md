@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tatoy/qwen3_14b_cpt_ai_research_4` es un ajuste fino (fine-tune) del modelo Qwen3 de 14.000 millones de parametros, publicado por el usuario `tatoy` en HuggingFace. El nombre sugiere un entrenamiento de preentrenamiento continuado (CPT, *continued pre-training*) orientado a investigación en IA, seguido de una fase de *supervised fine-tuning* (SFT) mediante la librería TRL. El repositorio tiene un tamano de 22,7 GB, coherente con pesos en `safetensors` de un modelo denso de 14B en precision de 16 bits.
+`tatoy/qwen3_14b_cpt_ai_research_4` es un ajuste fino (fine-tune) del modelo Qwen3 de 14.000 millones de parametros, publicado por el usuario `tatoy` en Hugging Face. El nombre sugiere un entrenamiento de preentrenamiento continuado (CPT, *continued pre-training*) orientado a investigación en IA, seguido de una fase de *supervised fine-tuning* (SFT) mediante la librería TRL. El repositorio tiene un tamano de 22,7 GB, coherente con pesos en `safetensors` de un modelo denso de 14B en precision de 16 bits.
 
 Se trata de un modelo derivado de la familia Qwen3, por lo que hereda la arquitectura transformer densa de dicha familia, aunque la model card no confirma explicitamente la variante base ni sus especificaciones (contexto, tokenizador, idiomas). La informacion publicada es minima: no se detalla el dataset de entrenamiento, el numero de tokens, la licencia ni los resultados de evaluacion. El modelo no registra descargas ni *likes* en el momento de la consulta.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `tatoy/qwen3_14b_cpt_ai_research_4` | ~14B | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune experimental sin benchmarks |
-| Qwen3-14B (oficial) | 14B | no disponible en esta ficha | Apache 2.0 (variantes oficiales) | HuggingFace, ampliamente usado | Modelo base de referencia con evaluaciones publicadas |
-| Mistral-Nemo-Base-2407 | 12B | 128k | Apache 2.0 | HuggingFace | Alternativa densa de tamano similar con contexto largo documentado |
-| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | HuggingFace | Menor tamano, licencia con restricciones de uso |
+| `tatoy/qwen3_14b_cpt_ai_research_4` | ~14B | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune experimental sin benchmarks |
+| Qwen3-14B (oficial) | 14B | no disponible en esta ficha | Apache 2.0 (variantes oficiales) | Hugging Face, ampliamente usado | Modelo base de referencia con evaluaciones publicadas |
+| Mistral-Nemo-Base-2407 | 12B | 128k | Apache 2.0 | Hugging Face | Alternativa densa de tamano similar con contexto largo documentado |
+| Llama 3.1 8B Instruct | 8B | 128k | Llama 3.1 Community License | Hugging Face | Menor tamano, licencia con restricciones de uso |
 
 La comparacion con Qwen3-14B oficial es la mas directa, pero no se dispone de datos de rendimiento del fine-tune para contrastar. Mistral-Nemo y Llama 3.1 8B se incluyen como referencias de la misma categoria de tamano y despliegue, no como equivalentes funcionales.
 
@@ -85,7 +85,7 @@ La comparacion con Qwen3-14B oficial es la mas directa, pero no se dispone de da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatoy/qwen3_14b_cpt_ai_research_4
+- Modelo en Hugging Face: https://huggingface.co/tatoy/qwen3_14b_cpt_ai_research_4
 - Repositorio TRL: https://github.com/huggingface/trl
 - Documentacion de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (referencia del modelo base): https://huggingface.co/Qwen

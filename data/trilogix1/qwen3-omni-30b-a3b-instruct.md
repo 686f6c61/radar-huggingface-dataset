@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-Omni-30B-A3B-Instruct es un modelo fundacional omnimodal desarrollado por el equipo Qwen de Alibaba, distribuido en HuggingFace originalmente bajo el identificador Qwen/Qwen3-Omni-30B-A3B-Instruct. Procesa texto, imagen, audio y vídeo de forma nativa y genera respuestas tanto en texto como en voz sintetizada, con soporte de streaming en tiempo real y turnos de conversación naturales. La ficha que se documenta aquí corresponde a Trilogix1/Qwen3-Omni-30B-A3B-Instruct, una duplicación del modelo original publicada por un tercero con fines de prueba y demostración, que según su autor resultó especialmente útil en procesamiento de vídeo.
+Qwen3-Omni-30B-A3B-Instruct es un modelo fundacional omnimodal desarrollado por el equipo Qwen de Alibaba, distribuido en Hugging Face originalmente bajo el identificador Qwen/Qwen3-Omni-30B-A3B-Instruct. Procesa texto, imagen, audio y vídeo de forma nativa y genera respuestas tanto en texto como en voz sintetizada, con soporte de streaming en tiempo real y turnos de conversación naturales. La ficha que se documenta aquí corresponde a Trilogix1/Qwen3-Omni-30B-A3B-Instruct, una duplicación del modelo original publicada por un tercero con fines de prueba y demostración, que según su autor resultó especialmente útil en procesamiento de vídeo.
 
 Arquitectónicamente se trata de un Mixture of Experts (MoE) con diseño Thinker–Talker y un total de 35.259.818.545 parámetros almacenados en safetensors, aunque el autor lo comercializa bajo la denominación 30B-A3B (aproximadamente 30.000 millones de parámetros totales y 3.000 millones activos por token). La innovación principal es la combinación de un módulo Thinker para comprensión multimodal y un módulo Talker con diseño multi-codebook que reduce la latencia de generación de voz, lo que permite interacción audio/vídeo en tiempo real.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en que es uno de los pocos modelos abiertos que emit
 | Longitud de contexto | no disponible en la información proporcionada |
 | Tipos de cuantizacion | no disponible; el repositorio solo publica pesos en safetensors (no se listan GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | 119 idiomas de texto; 19 idiomas de entrada de voz; 10 idiomas de salida de voz |
-| Licencia | apache-2.0 según los metadatos de HuggingFace; la model card declara `license: other` con `license_name: apache-2.0` |
+| Licencia | apache-2.0 según los metadatos de Hugging Face; la model card declara `license: other` con `license_name: apache-2.0` |
 | Formato de pesos | safetensors (librería transformers); tamaño del repositorio 70,5 GB |
 
 ## Arquitectura y entrenamiento
@@ -69,9 +69,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Trilogix1/Qwen3-Omni-30B-A3B-Instruct (esta ficha) | ~35,26 B totales, ~3 B activos | no disponible | Sin datos propios; réplica del modelo original | apache-2.0 en metadatos, `other` en la model card | HuggingFace, 0 descargas |
-| Qwen/Qwen3-Omni-30B-A3B-Instruct (original) | ~35,26 B totales, ~3 B activos | no disponible | SOTA open source en 32 de 36 benchmarks de audio/vídeo según su model card | apache-2.0 declarada por el equipo Qwen | HuggingFace, repositorio oficial |
-| Qwen3-Omni-30B-A3B-Thinking | ~35,26 B totales, ~3 B activos | no disponible | Variante orientada a razonamiento explícito sobre entradas multimodales | apache-2.0 declarada por el equipo Qwen | HuggingFace, repositorio oficial |
+| Trilogix1/Qwen3-Omni-30B-A3B-Instruct (esta ficha) | ~35,26 B totales, ~3 B activos | no disponible | Sin datos propios; réplica del modelo original | apache-2.0 en metadatos, `other` en la model card | Hugging Face, 0 descargas |
+| Qwen/Qwen3-Omni-30B-A3B-Instruct (original) | ~35,26 B totales, ~3 B activos | no disponible | SOTA open source en 32 de 36 benchmarks de audio/vídeo según su model card | apache-2.0 declarada por el equipo Qwen | Hugging Face, repositorio oficial |
+| Qwen3-Omni-30B-A3B-Thinking | ~35,26 B totales, ~3 B activos | no disponible | Variante orientada a razonamiento explícito sobre entradas multimodales | apache-2.0 declarada por el equipo Qwen | Hugging Face, repositorio oficial |
 | Gemini 2.5 Pro (referencia cerrada) | no disponible | no disponible | Referencia de comparación citada en la model card del original | propietaria | API de Google, sin pesos |
 | GPT-4o (referencia cerrada) | no disponible | no disponible | Referencia de comparación citada en la model card del original | propietaria | API de OpenAI, sin pesos |
 
@@ -79,7 +79,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 - Este repositorio es una duplicación no oficial subida por un tercero (Trilogix1) sin relación con el equipo Qwen. No debe tratarse como fuente autorizada del modelo; para uso en producción conviene descargar los pesos desde el repositorio oficial Qwen/Qwen3-Omni-30B-A3B-Instruct y verificar los hashes.
 - Registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
-- Existe una discrepancia entre los metadatos de HuggingFace (apache-2.0) y el frontmatter de la model card (`license: other` con `license_name: apache-2.0`). Antes de un uso comercial conviene confirmar los términos con la licencia del repositorio original.
+- Existe una discrepancia entre los metadatos de Hugging Face (apache-2.0) y el frontmatter de la model card (`license: other` con `license_name: apache-2.0`). Antes de un uso comercial conviene confirmar los términos con la licencia del repositorio original.
 - El autor de la duplicación no documenta el proceso de copia ni verificaciones de integridad de los pesos, por lo que existe riesgo de suministro si se descarga desde este repositorio en lugar del oficial.
 - Riesgo de alucinación inherente a los modelos generativos multimodales, especialmente en descripción de audio y vídeo, tareas donde el modelo puede inventar detalles no presentes en la entrada. El equipo Qwen publica un modelo Captioner específicamente orientado a reducir esta alucinación en captioning de audio.
 - Sesgos conocidos: no se documentan sesgos específicos en la información disponible. Al ser un modelo entrenado con datos multilingües a gran escala, es esperable un rendimiento desigual entre idiomas, con mejor cobertura en inglés y chino que en idiomas minoritarios.

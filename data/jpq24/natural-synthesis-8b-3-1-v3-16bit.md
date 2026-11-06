@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natural-Synthesis-8b-3.1-v3-16bit es un ajuste fino (fine-tune) del modelo Meta-Llama-3.1-8B-Instruct, publicado por el usuario JPQ24 en HuggingFace. Se trata de un modelo de generación de texto de arquitectura Llama, con 8.030.261.248 parámetros totales (8,03 mil millones) y pesos distribuidos en formato safetensors de 16 bits, listo para su uso con la librería transformers y compatible con text-generation-inference. La model card es mínima: únicamente indica que el modelo se entrenó con Unsloth y la librería TRL de HuggingFace, y que parte del checkpoint cuantizado en 4 bits unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit.
+Natural-Synthesis-8b-3.1-v3-16bit es un ajuste fino (fine-tune) del modelo Meta-Llama-3.1-8B-Instruct, publicado por el usuario JPQ24 en Hugging Face. Se trata de un modelo de generación de texto de arquitectura Llama, con 8.030.261.248 parámetros totales (8,03 mil millones) y pesos distribuidos en formato safetensors de 16 bits, listo para su uso con la librería transformers y compatible con text-generation-inference. La model card es mínima: únicamente indica que el modelo se entrenó con Unsloth y la librería TRL de Hugging Face, y que parte del checkpoint cuantizado en 4 bits unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit.
 
 El interés principal de esta ficha es acotado, y conviene ser explícito al respecto: no se documenta el conjunto de datos de ajuste, no se indica el número de tokens de entrenamiento, no hay resultados de benchmarks publicados y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta. La relevancia técnica se limita, por tanto, a servir como ejemplo reproducible de un pipeline de ajuste eficiente (Unsloth + TRL sobre una base cuantizada, con publicación posterior en 16 bits) y como punto de partida para quien quiera reproducir ese flujo, no como un modelo listo para comparar por rendimiento con alternativas consolidadas.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: tamaño total 32,1 GB, pipeline `text-generat
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de Llama 3.1 8B Instruct: un transformer decoder-only con 32 capas, 32 cabezas de atención y 8 cabezas de clave/valor (GQA), dimensión de cabeza 128 y normalización RMSNorm, con embeddings rotatorios (RoPE). El ajuste se realizó sobre el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, es decir, sobre una versión previamente cuantizada en 4 bits con bitsandbytes, lo que sitúa el proceso en la familia de técnicas QLoRA. Según la model card, el entrenamiento se ejecutó con Unsloth y la librería TRL de HuggingFace, y el autor afirma que fue "2x más rápido" gracias a Unsloth, aunque no se aporta ninguna medición que respalde esa cifra.
+La arquitectura es la de Llama 3.1 8B Instruct: un transformer decoder-only con 32 capas, 32 cabezas de atención y 8 cabezas de clave/valor (GQA), dimensión de cabeza 128 y normalización RMSNorm, con embeddings rotatorios (RoPE). El ajuste se realizó sobre el checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit`, es decir, sobre una versión previamente cuantizada en 4 bits con bitsandbytes, lo que sitúa el proceso en la familia de técnicas QLoRA. Según la model card, el entrenamiento se ejecutó con Unsloth y la librería TRL de Hugging Face, y el autor afirma que fue "2x más rápido" gracias a Unsloth, aunque no se aporta ninguna medición que respalde esa cifra.
 
 No hay información disponible sobre el número de tokens de entrenamiento, la composición del dataset de ajuste, la mezcla de idiomas, ni sobre si se aplicaron etapas de RLHF, DPO u otro tipo de alineación posterior al ajuste supervisado. Tampoco se documenta la configuración de LoRA (rango, alpha, capas objetivo) ni la estrategia de mezcla de adaptadores. El repositorio ocupa 32,1 GB, aproximadamente el doble de los ~16,1 GB que ocuparían 8,03 B parámetros en fp16/bf16, lo que sugiere la presencia de copias adicionales de pesos o de artefactos de entrenamiento; no se puede confirmar su contenido sin inspeccionar el árbol de ficheros.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JPQ24/Natural-Synthesis-8b-3.1-v3-16bit | 8,03 B | No especificado en la model card (base: 131.072) | Apache-2.0 declarada por el autor | HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| mistralai/Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache-2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | ~7,6 B | 131.072 tokens | Apache-2.0 (salvo excepciones por tamaño) | HuggingFace |
+| JPQ24/Natural-Synthesis-8b-3.1-v3-16bit | 8,03 B | No especificado en la model card (base: 131.072) | Apache-2.0 declarada por el autor | Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Meta-Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| mistralai/Mistral-7B-Instruct-v0.3 | ~7,2 B | 32.768 tokens | Apache-2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | ~7,6 B | 131.072 tokens | Apache-2.0 (salvo excepciones por tamaño) | Hugging Face |
 
 No hay datos de rendimiento publicados para este ajuste, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. Cualquier comparación de calidad requiere una evaluación propia sobre el caso de uso objetivo.
 
@@ -90,10 +90,10 @@ No hay datos de rendimiento publicados para este ajuste, por lo que la comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v3-16bit
+- Modelo en Hugging Face: https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v3-16bit
 - Modelo base del ajuste: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; las consultas devolvieron únicamente páginas de soporte de Google Translate sin relación con el modelo.

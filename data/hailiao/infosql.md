@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InfoSQL es un modelo publicado en HuggingFace por el usuario Hailiao bajo licencia Apache 2.0. La model card disponible es prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El nombre sugiere un modelo orientado a la generación de consultas SQL a partir de lenguaje natural (text-to-SQL) o a la interacción con bases de datos mediante instrucciones, pero esta orientación no está confirmada por ninguna documentación oficial del autor.
+InfoSQL es un modelo publicado en Hugging Face por el usuario Hailiao bajo licencia Apache 2.0. La model card disponible es prácticamente vacía: únicamente declara la licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El nombre sugiere un modelo orientado a la generación de consultas SQL a partir de lenguaje natural (text-to-SQL) o a la interacción con bases de datos mediante instrucciones, pero esta orientación no está confirmada por ninguna documentación oficial del autor.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y la fecha de creación y actualización es la misma, lo que apunta a una publicación sin mantenimiento posterior ni material adicional. No se dispone de información sobre arquitectura, tamaño de parámetros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -67,5 +67,5 @@ No disponible. Sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hailiao/InfoSQL
+- Repositorio en Hugging Face: https://huggingface.co/Hailiao/InfoSQL
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

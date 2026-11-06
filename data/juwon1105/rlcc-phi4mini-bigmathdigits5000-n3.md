@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juwon1105/RLCC-phi4mini-bigmathdigits5000-n3
+- Modelo en Hugging Face: https://huggingface.co/juwon1105/RLCC-phi4mini-bigmathdigits5000-n3
 - Dataset de entrenamiento: https://huggingface.co/datasets/mehuldamani/big-math-digits
 - Paper asociado (en revisión): "Confidence as Curriculum: Reinforcement Learning for Joint Reasoning and Calibration" (sin enlace público aún)
 - Paper base RLCR: Damani et al., "Beyond Binary Rewards: Training LMs to Reason about their Uncertainty", ICLR 2026 (referencia bibliográfica en la model card)

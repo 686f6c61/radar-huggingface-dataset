@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rizkypratama/swin-t-finetuned | 33.088 (safetensors) | no disponible | apache-2.0 | HuggingFace (repositorio experimental) |
+| rizkypratama/swin-t-finetuned | 33.088 (safetensors) | no disponible | apache-2.0 | Hugging Face (repositorio experimental) |
 | Swin-T (torchvision) | no disponible en la información proporcionada | no disponible | no disponible | PyTorch (torchvision) |
-| Swin Transformer V2 | no disponible | no disponible | no disponible | HuggingFace Transformers |
+| Swin Transformer V2 | no disponible | no disponible | no disponible | Hugging Face Transformers |
 | Adaptaciones Swin con PEFT (p. ej. SwinTransformerWithPEFT) | no disponible | no disponible | no disponible | GitHub |
 
 No se dispone de cifras de parámetros, contexto o rendimiento de las alternativas dentro de la información proporcionada, por lo que la comparación cuantitativa no es posible. La diferencia clave es que este repositorio contiene un checkpoint de inicialización no entrenado, mientras que las alternativas citadas parten de pesos preentrenados de uso común.
@@ -90,9 +90,9 @@ No se dispone de cifras de parámetros, contexto o rendimiento de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rizkypratama/swin-t-finetuned
+- Modelo en Hugging Face: https://huggingface.co/rizkypratama/swin-t-finetuned
 - Documentación de swin_t en torchvision (contexto de la arquitectura): https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html
 - Documentación de Swin Transformer V2 en Transformers: https://huggingface.co/docs/transformers/v4.22.1/en/model_doc/swinv2
 - Repositorio SwinTransformerWithPEFT (ajuste con LoRA sobre Swin): https://github.com/XuchenGuo/SwinTransformerWithPEFT
 - Repositorio Swin Transformer para clasificación fina (Oxford-IIIT Pet): https://github.com/rpmjp/Swin-Transformer-for-Fine-Grained-Image-Classification-Classification
-- Búsqueda de modelos SwinV2 en HuggingFace: https://huggingface.co/models?search=swinv2
+- Búsqueda de modelos SwinV2 en Hugging Face: https://huggingface.co/models?search=swinv2

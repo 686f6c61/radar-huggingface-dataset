@@ -83,7 +83,7 @@ No se conocen alternativas comerciales o académicas equivalentes con métricas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b
+- Hugging Face: https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Verbalizador RL-surprisal (referencia): https://huggingface.co/ceselder/skip-lens-qwen36-27b-RL-surprisal
 - Modelo jacobiano L42 (referencia): https://huggingface.co/ceselder/skip-lens-ar-l42-jacobian-qwen36-27b

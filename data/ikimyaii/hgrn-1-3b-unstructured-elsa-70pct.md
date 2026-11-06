@@ -68,9 +68,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas en l
 
 | Modelo | Parámetros | Contexto | Dispersión | Ppl WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ELSA 70 % no estructurada) | 1.364 M | No disponible | 70 % no estructurada | 32,58 | No disponible | HuggingFace |
-| `fla-hub/hgrn-1.3B-100B` (base) | ≈1.364 M (no confirmado) | No disponible | 0 % (denso) | No disponible | No disponible | HuggingFace |
-| Modelos EHWS de la misma cuenta | No disponible | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| Este modelo (ELSA 70 % no estructurada) | 1.364 M | No disponible | 70 % no estructurada | 32,58 | No disponible | Hugging Face |
+| `fla-hub/hgrn-1.3B-100B` (base) | ≈1.364 M (no confirmado) | No disponible | 0 % (denso) | No disponible | No disponible | Hugging Face |
+| Modelos EHWS de la misma cuenta | No disponible | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de perplejidad de los modelos alternativos, por lo que la comparación cuantitativa de rendimiento queda limitada a la tabla anterior.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de perplejidad de los modelos alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-70pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/HGRN-1.3B-unstructured-ELSA-70pct
 - Modelo base: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Repositorio de código oficial de ELSA: no disponible en la información proporcionada

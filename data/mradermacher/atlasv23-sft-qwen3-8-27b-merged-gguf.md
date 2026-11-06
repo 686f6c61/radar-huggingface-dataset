@@ -75,7 +75,7 @@ La comparativa se basa en el modelo base Qwen3.8-27B, ya que no hay datos espec�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/atlasv23-sft-qwen3-8-27b-merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/atlasv23-sft-qwen3-8-27b-merged-GGUF
 - Modelo original (senaro/atlasv23-sft-qwen3-8-27b-merged): https://huggingface.co/senaro/atlasv23-sft-qwen3-8-27b-merged
 - Documentación de Qwen3.8 (OpenLM.ai): https://openlm.ai/qwen3.8/
 - Guía de ejecución local de Qwen3.8 (Unsloth): https://unsloth.ai/docs/models/qwen3.8

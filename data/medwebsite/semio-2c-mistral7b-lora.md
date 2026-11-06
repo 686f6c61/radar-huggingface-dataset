@@ -72,10 +72,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sémio-2c (este) | 7B (base) + LoRA | no disponible (base: 32 768) | Médico fr/ar/en | apache-2.0 | HuggingFace |
-| Mistral-7B-Instruct-v0.2 | 7B | 32 768 | Generalista instruct | apache-2.0 | HuggingFace |
-| Meditron-7B | 7B | 4 096 (aprox.) | Médico en inglés | Llama 2 (restrictiva) | HuggingFace |
-| BioMistral-7B | 7B | 32 768 | Médico multilingüe | apache-2.0 | HuggingFace |
+| Sémio-2c (este) | 7B (base) + LoRA | no disponible (base: 32 768) | Médico fr/ar/en | apache-2.0 | Hugging Face |
+| Mistral-7B-Instruct-v0.2 | 7B | 32 768 | Generalista instruct | apache-2.0 | Hugging Face |
+| Meditron-7B | 7B | 4 096 (aprox.) | Médico en inglés | Llama 2 (restrictiva) | Hugging Face |
+| BioMistral-7B | 7B | 32 768 | Médico multilingüe | apache-2.0 | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no está disponible en la información proporcionada; solo se dispone de los resultados antes/después del propio adaptador.
 
@@ -92,7 +92,7 @@ La comparación de rendimiento con estas alternativas no está disponible en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Medwebsite/semio-2c-mistral7b-lora
+- Hugging Face: https://huggingface.co/Medwebsite/semio-2c-mistral7b-lora
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - MediQAl: no disponible en la información proporcionada
 - FrenchMedMCQA: no disponible en la información proporcionada

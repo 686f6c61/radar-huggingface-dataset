@@ -69,7 +69,7 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MT
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Arogya_Finetuned (este modelo) | ~4.000 M (heredado del base) | 128.000 tokens segun el base, no confirmado | apache-2.0 declarada | Repositorio HuggingFace con 0 descargas y 0,0 GB | No |
+| Arogya_Finetuned (este modelo) | ~4.000 M (heredado del base) | 128.000 tokens segun el base, no confirmado | apache-2.0 declarada | Repositorio Hugging Face con 0 descargas y 0,0 GB | No |
 | google/gemma-3-4b-it | ~4.000 M | 128.000 tokens | Gemma Terms of Use | Ampliamente disponible | Si, en la documentacion oficial de Google |
 | Qwen/Qwen2.5-3B-Instruct | ~3.000 M | 32.000 tokens nativos, ampliable con YaRN | Apache 2.0 en la mayoria de variantes | Ampliamente disponible | Si |
 | meta-llama/Llama-3.2-3B-Instruct | ~3.000 M | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible | Si |
@@ -91,10 +91,10 @@ La comparacion de rendimiento no puede completarse porque este repositorio no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thanu10/Arogya_Finetuned
+- Modelo en Hugging Face: https://huggingface.co/Thanu10/Arogya_Finetuned
 - Repositorio hermano del mismo autor: https://huggingface.co/Thanu10/Arogya_finetuned_4bit
 - Otro repositorio relacionado: https://huggingface.co/Thanu10/Arogya_fine_tuned
-- Perfil del autor en HuggingFace: https://huggingface.co/Thanu10
+- Perfil del autor en Hugging Face: https://huggingface.co/Thanu10
 - Listado de modelos del autor: https://huggingface.co/Thanu10/models
 - Ficha de inferencia en FriendliAI para el repositorio hermano: https://friendli.ai/models/Thanu10/Arogya_finetuned_4bit
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

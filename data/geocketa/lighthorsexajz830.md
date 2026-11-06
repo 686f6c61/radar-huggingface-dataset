@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`geocketa/lighthorsexajz830` es un modelo publicado en HuggingFace por el usuario `geocketa`, con un repositorio de 4,5 GB y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargar los pesos. La informacion publica disponible es minima: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio no incluye tarjeta de modelo con documentacion tecnica. El nombre del identificador sugiere una posible inspiracion en la familia LightHorse, pero no hay evidencia en la informacion proporcionada que confirme esa relacion ni ninguna otra.
+`geocketa/lighthorsexajz830` es un modelo publicado en Hugging Face por el usuario `geocketa`, con un repositorio de 4,5 GB y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargar los pesos. La informacion publica disponible es minima: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio no incluye tarjeta de modelo con documentacion tecnica. El nombre del identificador sugiere una posible inspiracion en la familia LightHorse, pero no hay evidencia en la informacion proporcionada que confirme esa relacion ni ninguna otra.
 
 El tamano del repositorio (4,5 GB) es compatible con un modelo transformer de aproximadamente 7-8 mil millones de parametros en precision de 16 bits, o con un modelo mayor cuantizado. Sin embargo, esta estimacion es especulativa: el repositorio podria contener pesos en otros formatos, multiples variantes o ficheros auxiliares, y no se dispone de listado de archivos para verificarlo. Cualquier dato sobre parametros, contexto o entrenamiento debe considerarse no disponible.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicos |
 |---|---|---|---|---|---|
-| geocketa/lighthorsexajz830 | no disponible | no disponible | no disponible | Gated en HuggingFace, 0 descargas, 1 like | Minimos: sin tarjeta, sin pipeline, sin idiomas |
+| geocketa/lighthorsexajz830 | no disponible | no disponible | no disponible | Gated en Hugging Face, 0 descargas, 1 like | Minimos: sin tarjeta, sin pipeline, sin idiomas |
 | Alternativas de ~7-8B open source (categoria generica) | ~7-8B | 4k-128k segun familia | Apache-2.0, MIT o licencias comunitarias | Publicas, sin gate | Tarjeta completa, benchmarks y cuantizaciones publicadas |
 | Alternativas MoE de ~8B activos (categoria generica) | ~40-50B totales | 32k-128k segun familia | variable | Publicas | Tarjeta completa y evaluaciones |
 
@@ -77,7 +77,7 @@ La conclusion de la comparativa es que este repositorio no ofrece, hoy, los elem
 
 - Ausencia total de tarjeta de modelo: no hay descripcion, casos de uso previstos, limitaciones declaradas ni guia de prompt.
 - Licencia no especificada: no puede determinarse si el uso comercial esta permitido, restringido o prohibido. Cualquier despliegue en produccion sin aclarar este punto es un riesgo legal.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y la aprobacion del autor, lo que introduce dependencia de un tercero y posibles demoras.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y la aprobacion del autor, lo que introduce dependencia de un tercero y posibles demoras.
 - Procedencia y reproducibilidad no verificables: sin informacion sobre datos de entrenamiento, no es posible evaluar sesgos, contaminacion de benchmarks ni cumplimiento normativo.
 - Riesgo de alucinacion: desconocido y no cuantificado; sin evaluaciones, debe asumirse un riesgo alto en tareas factuales.
 - Idiomas no declarados: no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma.
@@ -88,5 +88,5 @@ La conclusion de la comparativa es que este repositorio no ofrece, hoy, los elem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/geocketa/lighthorsexajz830
+- Repositorio en Hugging Face: https://huggingface.co/geocketa/lighthorsexajz830
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos asociados a este modelo.

@@ -25,7 +25,7 @@ El repositorio es muy ligero (0,1 GB) porque solo contiene los pesos del adaptad
 
 No se proporciona detalle sobre la arquitectura interna del modelo base en la informacion disponible; por el identificador OpenGVLab/InternVL3_5-14B se trata de un modelo vision-lenguaje de la familia InternVL 3.5 con aproximadamente 14.000 millones de parametros, pero conviene consultar la model card oficial de OpenGVLab para confirmar topologia, encoder visual, ventana de contexto nativa y regimen de entrenamiento.
 
-Lo que si esta documentado es la configuracion del ajuste fino: 3 epocas hasta el checkpoint final, rango LoRA de 8, alpha de 32, tamano de lote 8, tasa de aprendizaje 1e-4 con schedule coseno y warmup del 10 %, y longitud maxima de secuencia de 4.096 tokens. El entrenamiento se realizo sobre el dataset SciVisCap, publicado por el mismo autor en HuggingFace, y el pipeline declarado es image-text-to-text. No se menciona uso de RLHF, DPO ni decodificacion especulativa. Tampoco se especifica que modulos del modelo base reciben los adaptadores (attention, MLP, proyector visual, etc.).
+Lo que si esta documentado es la configuracion del ajuste fino: 3 epocas hasta el checkpoint final, rango LoRA de 8, alpha de 32, tamano de lote 8, tasa de aprendizaje 1e-4 con schedule coseno y warmup del 10 %, y longitud maxima de secuencia de 4.096 tokens. El entrenamiento se realizo sobre el dataset SciVisCap, publicado por el mismo autor en Hugging Face, y el pipeline declarado es image-text-to-text. No se menciona uso de RLHF, DPO ni decodificacion especulativa. Tampoco se especifica que modulos del modelo base reciben los adaptadores (attention, MLP, proyector visual, etc.).
 
 ## Capacidades
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InternVL-3.5-14B-SciVisCap (este adaptador) | 14B (base) + adaptador LoRA | 4.096 tokens en entrenamiento; nativo no disponible | Apache-2.0 (adaptador) | HuggingFace, 4 descargas, 0 likes |
-| OpenGVLab/InternVL3_5-14B (modelo base) | 14B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
+| InternVL-3.5-14B-SciVisCap (este adaptador) | 14B (base) + adaptador LoRA | 4.096 tokens en entrenamiento; nativo no disponible | Apache-2.0 (adaptador) | Hugging Face, 4 descargas, 0 likes |
+| OpenGVLab/InternVL3_5-14B (modelo base) | 14B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores de captioning cientifico | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre el adaptador, su modelo base y alternativas generalistas de captioning, por lo que no es posible establecer una comparacion cuantitativa.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre el adaptador, su modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PVIS2027-JT-6597/InternVL-3.5-14B-SciVisCap
+- Modelo en Hugging Face: https://huggingface.co/PVIS2027-JT-6597/InternVL-3.5-14B-SciVisCap
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3_5-14B
 - Dataset de entrenamiento SciVisCap: https://huggingface.co/datasets/PVIS2027-JT-6597/SciVisCap
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

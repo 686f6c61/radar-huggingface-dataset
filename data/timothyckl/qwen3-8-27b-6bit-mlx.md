@@ -2,7 +2,7 @@
 
 ## Resumen
 
-timothyckl/Qwen3.8-27B-6bit-MLX es una cuantizacion de 6 bits en formato MLX del modelo Qwen/Qwen3.8-27B, publicada por el usuario timothyckl en HuggingFace. No es un modelo entrenado desde cero, sino una conversion de pesos: el repositorio contiene unicamente los tensores cuantizados (22,8 GB) y la configuracion necesaria para cargarlos con la libreria mlx / mlx-vlm en equipos Apple Silicon. El pipeline declarado es image-text-to-text, de modo que el modelo base es multimodal (entrada de imagen y texto, salida de texto).
+timothyckl/Qwen3.8-27B-6bit-MLX es una cuantizacion de 6 bits en formato MLX del modelo Qwen/Qwen3.8-27B, publicada por el usuario timothyckl en Hugging Face. No es un modelo entrenado desde cero, sino una conversion de pesos: el repositorio contiene unicamente los tensores cuantizados (22,8 GB) y la configuracion necesaria para cargarlos con la libreria mlx / mlx-vlm en equipos Apple Silicon. El pipeline declarado es image-text-to-text, de modo que el modelo base es multimodal (entrada de imagen y texto, salida de texto).
 
 La relevancia de esta ficha es doble. Por un lado, permite ejecutar localmente un modelo de unos 27.356 millones de parametros en un Mac con memoria unificada suficiente, sin GPU dedicada ni servicios en la nube. Por otro, es un ejemplo de cuantizacion afin de 6 bits con tamano de grupo 64, un punto intermedio entre las cuantizaciones de 4 bits (mas agresivas con la calidad) y los pesos en bf16 (el doble de peso en disco y memoria).
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| timothyckl/Qwen3.8-27B-6bit-MLX | 27,36 mil millones | No disponible | 6 bits afin MLX, grupo 64 | 22,8 GB (dato del repositorio) | apache-2.0 | HuggingFace; requiere Apple Silicon y mlx-vlm |
-| Qwen/Qwen3.8-27B (modelo base) | 27,36 mil millones (segun el modelo derivado) | No disponible | Sin cuantizar (presumiblemente bf16/fp16) | ~54,7 GB en bf16 (estimacion calculada a partir del numero de parametros) | No disponible en la informacion proporcionada; el repositorio derivado declara apache-2.0 | HuggingFace, model card remitida por el autor |
+| timothyckl/Qwen3.8-27B-6bit-MLX | 27,36 mil millones | No disponible | 6 bits afin MLX, grupo 64 | 22,8 GB (dato del repositorio) | apache-2.0 | Hugging Face; requiere Apple Silicon y mlx-vlm |
+| Qwen/Qwen3.8-27B (modelo base) | 27,36 mil millones (segun el modelo derivado) | No disponible | Sin cuantizar (presumiblemente bf16/fp16) | ~54,7 GB en bf16 (estimacion calculada a partir del numero de parametros) | No disponible en la informacion proporcionada; el repositorio derivado declara apache-2.0 | Hugging Face, model card remitida por el autor |
 | Otras alternativas multimodales de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables en la misma categoria (mismo tamano o misma tarea) que permita contrastar rendimiento, ya que no hay benchmarks publicados ni resultados de busqueda relevantes.

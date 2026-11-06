@@ -70,5 +70,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - amyhughes/tiny-transformer-retrieval-exp](https://huggingface.co/amyhughes/tiny-transformer-retrieval-exp)
-- [HuggingFace - svkuznetsov/tiny-transformer-retrieval (variante similar)](https://huggingface.co/svkuznetsov/tiny-transformer-retrieval)
+- [Hugging Face - amyhughes/tiny-transformer-retrieval-exp](https://huggingface.co/amyhughes/tiny-transformer-retrieval-exp)
+- [Hugging Face - svkuznetsov/tiny-transformer-retrieval (variante similar)](https://huggingface.co/svkuznetsov/tiny-transformer-retrieval)

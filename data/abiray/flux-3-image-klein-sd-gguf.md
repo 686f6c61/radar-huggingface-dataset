@@ -18,7 +18,7 @@ Se trata de un modelo destilado por pasos: el rango de muestreo recomendado es d
 | Longitud de contexto | No disponible (el codificador de texto es Qwen3-VL 4B; el autor no especifica longitud de contexto) |
 | Tipos de cuantizacion | GGUF: Q2_K, Q3_K_S, Q3_K_M, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 |
 | Idiomas soportados | No disponible (no especificado por el autor; los prompts se escriben en lenguaje natural) |
-| Licencia | FLUX Kommunity License v1.0 (identificador `other` en HuggingFace) |
+| Licencia | FLUX Kommunity License v1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | GGUF para los pesos de difusion; safetensors para los modelos auxiliares (codificador de texto y VAE) |
 | Tamano del repositorio | 32,2 GB (suma de todas las cuantizaciones) |
 | Descargas / likes | 1.960 descargas / 18 likes |
@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto / capacidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX 3 Image Klein Step-Distilled GGUF (este repositorio) | 5,6B | GGUF (Q2_K-Q8_0) + safetensors auxiliares | Texto-a-imagen, edicion, hasta 10 referencias, 4K, bounding boxes, 4-16 pasos | FLUX Kommunity License v1.0 | HuggingFace (Abiray) |
-| FLUX 3 Image Klein (base, BFL) | 5,6B | Safetensors FP8/INT8/NVFP4/BF16 | Mismas capacidades, checkpoint base ajustable | FLUX Kommunity License v1.0 | HuggingFace (black-forest-labs), GitHub |
+| FLUX 3 Image Klein Step-Distilled GGUF (este repositorio) | 5,6B | GGUF (Q2_K-Q8_0) + safetensors auxiliares | Texto-a-imagen, edicion, hasta 10 referencias, 4K, bounding boxes, 4-16 pasos | FLUX Kommunity License v1.0 | Hugging Face (Abiray) |
+| FLUX 3 Image Klein (base, BFL) | 5,6B | Safetensors FP8/INT8/NVFP4/BF16 | Mismas capacidades, checkpoint base ajustable | FLUX Kommunity License v1.0 | Hugging Face (black-forest-labs), GitHub |
 | FLUX 3 Image (completo) | No disponible | No disponible | Capacidades nucleares compartidas con Klein segun BFL (4K nativo, edicion precisa, bounding boxes) | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de otras alternativas (por ejemplo, modelos de difusion de la competencia con edicion integrada) en la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de rendimiento.
@@ -97,8 +97,8 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de otras 
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones GGUF: https://huggingface.co/Abiray/flux-3-image-klein-sd-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/black-forest-labs/flux-3-image-klein
+- Repositorio Hugging Face de las cuantizaciones GGUF: https://huggingface.co/Abiray/flux-3-image-klein-sd-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Repositorio ComfyUI del modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Licencia FLUX Kommunity v1.0: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/blob/main/LICENSE.md
 - Blog de BFL sobre FLUX 3 Image Klein: https://bfl.ai/blog/flux-3-image-klein

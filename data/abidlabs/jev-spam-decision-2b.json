@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "abidlabs/jev-spam-decision-2b",
+  "slug": "abidlabs-jev-spam-decision-2b",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/jev-spam-decision-2b",
+  "created_at": "2026-11-05T02:44:41.000Z",
+  "updated_at": "2026-11-05T04:25:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "jev-style",
+    "spam-detection",
+    "noul",
+    "ml-intern",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107317355,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abidlabs/jev-spam-decision-2b · Hugging Face",
+      "url": "https://huggingface.co/abidlabs/jev-spam-decision-2b",
+      "snippet": "Text Classification model. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "jev-spam-decision-2b | Hugging Face model | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-abidlabs-jev-spam-decision-2b",
+      "snippet": "What this model is for jev-spam-decision-2b is a 2-billion-parameter model repository hosted on Hugging Face, but the supplied material provides very limited technical documentation for evaluating or deploying it. Its recorded use case is typed decisions, which may make it relevant to applications that require a structured classification or decision output, potentially including spam-related ..."
+    }
+  ]
+}

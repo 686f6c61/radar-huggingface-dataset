@@ -81,7 +81,7 @@ La comparativa se basa en caracteristicas publicas de los modelos; no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m-aamir2979/gemma-2-2b-bnb-4bit-fineTuned-tool-calling-adapter
+- Hugging Face: https://huggingface.co/m-aamir2979/gemma-2-2b-bnb-4bit-fineTuned-tool-calling-adapter
 - Modelo base: https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Gemma 2 (Google): https://huggingface.co/google/gemma-2-2b-it

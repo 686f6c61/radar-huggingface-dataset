@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "limxdynamics/luna-description",
+  "slug": "limxdynamics-luna-description",
+  "author": "limxdynamics",
+  "url": "https://huggingface.co/limxdynamics/luna-description",
+  "created_at": "2026-11-06T07:40:35.000Z",
+  "updated_at": "2026-11-06T08:24:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "limx-dynamics",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "limx-dynamics",
+    "robotics",
+    "humanoid",
+    "urdf",
+    "mjcf",
+    "usd",
+    "mujoco",
+    "isaac-sim",
+    "ros",
+    "luna",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275436498,
+  "storage_human": "275 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LimX Luna | Full-Size Interactive Humanoid Robot",
+      "url": "https://www.limxdynamics.com/en/products/luna",
+      "snippet": "LimX Luna is a full-size interactive humanoid robot for commercial performances, with a 160 cm body, 27 DoF, dynamic motion, and multimodal interaction."
+    },
+    {
+      "title": "LimX Luna - Full-Size Interactive Humanoid Robot - Specifications ...",
+      "url": "https://www.limxdynamics.com/en/products/luna/spec",
+      "snippet": "LimX Luna is a full-size interactive humanoid robot designed primarily for commercial performance scenarios. Featuring a 160cm humanoid form and 27 degrees of freedom, it integrates high-dynamic motion control with multi-modal interaction, it provides a one-stop performance solution for shopping malls, tourist attractions, trade shows, and other entertainment venues."
+    }
+  ]
+}

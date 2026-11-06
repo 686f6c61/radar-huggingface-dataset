@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Arquitectura | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Depth-Anything-V1-Small (esta ficha) | 24,8 M | DPT + DINOv2 ViT-S/14 | imagen RGB | Apache-2.0 | HuggingFace (`bigshanedogg/Depth-Anything-V1-Small`) |
-| LiheYoung/depth_anything_vits14 | no disponible en la informacion | DPT + DINOv2 ViT-S/14 | imagen RGB | el repo de pesos no declara licencia propia; el repositorio es Apache-2.0 | HuggingFace (repo original de pesos) |
-| LiheYoung/depth-anything-small-hf | no disponible en la informacion | DPT + DINOv2 ViT-S/14 | imagen RGB | Apache-2.0 | HuggingFace (conversion oficial en `transformers`) |
+| Depth-Anything-V1-Small (esta ficha) | 24,8 M | DPT + DINOv2 ViT-S/14 | imagen RGB | Apache-2.0 | Hugging Face (`bigshanedogg/Depth-Anything-V1-Small`) |
+| LiheYoung/depth_anything_vits14 | no disponible en la informacion | DPT + DINOv2 ViT-S/14 | imagen RGB | el repo de pesos no declara licencia propia; el repositorio es Apache-2.0 | Hugging Face (repo original de pesos) |
+| LiheYoung/depth-anything-small-hf | no disponible en la informacion | DPT + DINOv2 ViT-S/14 | imagen RGB | Apache-2.0 | Hugging Face (conversion oficial en `transformers`) |
 
 La comparativa se limita a variantes del mismo modelo base porque la informacion proporcionada no incluye datos de modelos alternativos de estimacion de profundidad (por ejemplo, MiDaS o ZoeDepth) ni sus especificaciones.
 
@@ -84,7 +84,7 @@ La comparativa se limita a variantes del mismo modelo base porque la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigshanedogg/Depth-Anything-V1-Small
+- Modelo en Hugging Face: https://huggingface.co/bigshanedogg/Depth-Anything-V1-Small
 - Modelo base (pesos originales): https://huggingface.co/LiheYoung/depth_anything_vits14
 - Repositorio oficial de Depth Anything: https://github.com/LiheYoung/Depth-Anything
 - Paper (arXiv): https://arxiv.org/abs/2401.10891

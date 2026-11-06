@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RKRRa es un modelo publicado en HuggingFace por el usuario zoarag bajo un repositorio de acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder descargar los pesos. El repositorio ocupa 44,5 GB, un tamano compatible con pesos en precision completa o semi-precision de un modelo del orden de decenas de miles de millones de parametros, aunque no se ha publicado informacion que confirme la arquitectura ni el numero exacto de parametros.
+RKRRa es un modelo publicado en Hugging Face por el usuario zoarag bajo un repositorio de acceso restringido (gated), lo que obliga a aceptar condiciones antes de poder descargar los pesos. El repositorio ocupa 44,5 GB, un tamano compatible con pesos en precision completa o semi-precision de un modelo del orden de decenas de miles de millones de parametros, aunque no se ha publicado informacion que confirme la arquitectura ni el numero exacto de parametros.
 
-La unica metadata disponible en la ficha de HuggingFace es la etiqueta de region (`region:us`), sin pipeline declarado, sin licencia, sin idiomas y sin tarjeta de modelo con descripcion funcional. El repositorio no registra descargas y cuenta con 2 likes, lo que sugiere una publicacion reciente o de circulacion muy limitada dentro de la comunidad.
+La unica metadata disponible en la ficha de Hugging Face es la etiqueta de region (`region:us`), sin pipeline declarado, sin licencia, sin idiomas y sin tarjeta de modelo con descripcion funcional. El repositorio no registra descargas y cuenta con 2 likes, lo que sugiere una publicacion reciente o de circulacion muy limitada dentro de la comunidad.
 
 Por tanto, esta ficha se limita a documentar lo verificable: identificador, autoria, tamano del repositorio, estado de acceso y fechas de creacion y actualizacion. Cualquier dato sobre arquitectura, entrenamiento, capacidades o rendimiento debe considerarse no disponible hasta que el autor publique documentacion tecnica.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a documentar lo verificable: identificador, auto
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La ficha de HuggingFace no incluye pipeline, no declara familia arquitectonica (transformer denso, MoE, SSM o hibrido) ni referencia a ningun paper o blog tecnico. El unico indicio cuantitativo es el tamano del repositorio, 44,5 GB, que no permite inferir de forma fiable el numero de parametros sin conocer el formato y la precision de los pesos almacenados.
+No se ha publicado informacion sobre la arquitectura del modelo. La ficha de Hugging Face no incluye pipeline, no declara familia arquitectonica (transformer denso, MoE, SSM o hibrido) ni referencia a ningun paper o blog tecnico. El unico indicio cuantitativo es el tamano del repositorio, 44,5 GB, que no permite inferir de forma fiable el numero de parametros sin conocer el formato y la precision de los pesos almacenados.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni sobre tecnicas de alineacion como RLHF, DPO o RLHF constitucional. No consta informacion sobre innovaciones tecnicas (atencion lineal, decodificacion especulativa, modos de razonamiento extendido) ni sobre procesos de destilacion o ajuste fino supervisado.
 
@@ -65,14 +65,14 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 - Ausencia total de tarjeta de modelo: no hay descripcion, paper, blog ni documentacion de entrenamiento asociada al repositorio.
 - Licencia no declarada: no se puede determinar si el uso comercial esta permitido; en la practica, esto bloquea cualquier adopcion en produccion.
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace y obtener aprobacion del autor antes de descargar los pesos.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face y obtener aprobacion del autor antes de descargar los pesos.
 - Idiomas no declarados: se desconoce el soporte multilingue y el comportamiento en castellano.
 - Riesgo de sesgos y alucinacion: no evaluable sin datos de entrenamiento ni pruebas publicadas.
 - Sin historial de uso: cero descargas registradas y solo 2 likes, lo que implica ausencia de validacion por parte de la comunidad.
 - Sin garantias de mantenimiento: no consta que el autor vaya a publicar actualizaciones, correcciones o documentacion adicional.
-- Fechas del repositorio: creacion en agosto de 2026 y ultima actualizacion en noviembre de 2026, segun la metadata de HuggingFace.
+- Fechas del repositorio: creacion en agosto de 2026 y ultima actualizacion en noviembre de 2026, segun la metadata de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zoarag/RKRRa
+- Repositorio en Hugging Face: https://huggingface.co/zoarag/RKRRa
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

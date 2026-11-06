@@ -92,7 +92,7 @@ Los datos comparativos publicados son mínimos: no hay cifras de rendimiento que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-urban-seed2-20261012-CPT-best-val-step-750
+- Modelo en Hugging Face: https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-urban-seed2-20261012-CPT-best-val-step-750
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
 - Modelo hermano (compassion seed2, CPT final): https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT-final

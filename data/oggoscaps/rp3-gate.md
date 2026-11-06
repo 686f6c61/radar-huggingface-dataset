@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oggoscaps/rp3-gate` es un ajuste fino (fine-tune) del modelo `google/gemma-3-1b-it`, desarrollado por el usuario de HuggingFace `oggoscaps`. Se presenta como un "gatekeeper" conversacional: un asistente pequeño que, al mantener una conversación, indica al usuario cuál debería ser su siguiente paso. Está diseñado para ejecutarse en hardware modesto, incluso en la CPU de un portátil, sin necesidad de GPU.
+El modelo `oggoscaps/rp3-gate` es un ajuste fino (fine-tune) del modelo `google/gemma-3-1b-it`, desarrollado por el usuario de Hugging Face `oggoscaps`. Se presenta como un "gatekeeper" conversacional: un asistente pequeño que, al mantener una conversación, indica al usuario cuál debería ser su siguiente paso. Está diseñado para ejecutarse en hardware modesto, incluso en la CPU de un portátil, sin necesidad de GPU.
 
 Con aproximadamente 1.000 millones de parámetros, este modelo resuelve el problema de ofrecer una experiencia de chat ligera y determinista en entornos con recursos limitados. Su relevancia radica en la accesibilidad: al estar cuantizado en GGUF y ser compatible con herramientas como Ollama o llama.cpp, puede desplegarse en cualquier máquina con unos pocos gigabytes de RAM. La arquitectura es la del transformer de Gemma 3, aunque no se han publicado detalles específicos del proceso de ajuste fino.
 
@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento comparativos para este fine-tune. Como ref
 
 ## Enlaces
 
-- [HuggingFace - oggoscaps/rp3-gate](https://huggingface.co/oggoscaps/rp3-gate)
+- [Hugging Face - oggoscaps/rp3-gate](https://huggingface.co/oggoscaps/rp3-gate)
 - [Modelo base - google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it)
 - [Gemma Terms of Use](https://ai.google.dev/gemma/terms)

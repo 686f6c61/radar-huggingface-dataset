@@ -71,6 +71,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- HuggingFace: [shikunpunk/Qwen3.8-27B-GuCheng-KTO](https://huggingface.co/shikunpunk/Qwen3.8-27B-GuCheng-KTO)
+- Hugging Face: [shikunpunk/Qwen3.8-27B-GuCheng-KTO](https://huggingface.co/shikunpunk/Qwen3.8-27B-GuCheng-KTO)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (enlace inferido del ID, no verificado)
 - Repositorio GitHub mencionado en la model card: no se proporciona URL en la informacion disponible.

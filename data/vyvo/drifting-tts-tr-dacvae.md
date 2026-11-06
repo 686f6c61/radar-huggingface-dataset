@@ -101,10 +101,10 @@ No se dispone de datos de parametros ni de contexto para ninguno de los modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vyvo/drifting-tts-tr-dacvae
+- Modelo en Hugging Face: https://huggingface.co/Vyvo/drifting-tts-tr-dacvae
 - Modelo mel recomendado (v3.1): https://huggingface.co/Vyvo/drifting-tts-tr
 - Variante con latentes VoxCPM2: https://huggingface.co/Vyvo/drifting-tts-tr-voxcpm2
-- Demo comparativa en HuggingFace Spaces: https://huggingface.co/spaces/Vyvo/drifting-tts-tr-compare
+- Demo comparativa en Hugging Face Spaces: https://huggingface.co/spaces/Vyvo/drifting-tts-tr-compare
 - Repositorio de drifting-tts: https://github.com/kadirnar/drifting-tts
 - Documentacion del espacio latente: https://github.com/kadirnar/drifting-tts/blob/main/docs/LATENTS.md
 - Issue relacionada #32: https://github.com/kadirnar/drifting-tts/issues/32

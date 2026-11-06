@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-LLM-Compressor)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/Vishva007/Qwen3.8-2B-Distill-W4A16-AutoRound-LLM-Compressor)
 - [Modelo base: empero-ai/Qwen3.8-2B-Distill](https://huggingface.co/empero-ai/Qwen3.8-2B-Distill)
 - [Repositorio de Intel AutoRound](https://github.com/intel/auto-round)
 - [Repositorio oficial de Qwen3.8 en GitHub](https://github.com/QwenLM/Qwen3.8)

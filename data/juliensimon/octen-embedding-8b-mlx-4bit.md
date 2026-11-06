@@ -6,7 +6,7 @@ Octen-Embedding-8B-mlx-4bit es la conversión a MLX del modelo de embeddings Oct
 
 El modelo resuelve el problema de generar embeddings de texto de 4096 dimensiones para búsqueda semántica, recuperación, agrupamiento y similitud, con una ventana de contexto de 32K tokens y cobertura declarada de más de 100 idiomas (etiquetado oficial: en, zh, multilingüe). Su relevancia práctica está en que permite llevar un modelo de recuperación de 8B a un portátil con memoria unificada, a costa de una pérdida medible de calidad frente a bf16: una coseno medio de 0,97 y una caída de 1,7 puntos (3 tickets) en top-1 de recuperación en el test del autor.
 
-La ficha se basa exclusivamente en la model card y en los metadatos de HuggingFace. La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo (solo contenido de Reddit sin relación), por lo que no hay información externa adicional que contrastar.
+La ficha se basa exclusivamente en la model card y en los metadatos de Hugging Face. La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo (solo contenido de Reddit sin relación), por lo que no hay información externa adicional que contrastar.
 
 ## Especificaciones técnicas
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-4bit
 - Modelo base: https://huggingface.co/Octen/Octen-Embedding-8B
 - Modelo del que deriva el base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Variante bf16: https://huggingface.co/juliensimon/Octen-Embedding-8B-mlx-bf16

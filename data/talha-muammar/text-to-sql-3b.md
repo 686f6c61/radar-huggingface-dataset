@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa rigurosa. Existe otro modelo en HuggingFace, `Ellbendls/Qwen-2.5-3b-Text_to_SQL`, que también aborda la tarea text-to-SQL con un tamaño de 3B, pero no se conocen sus especificaciones ni rendimiento. Sin datos de benchmarks ni detalles de entrenamiento, no es posible establecer una comparación objetiva.
+No se dispone de información suficiente para realizar una comparativa rigurosa. Existe otro modelo en Hugging Face, `Ellbendls/Qwen-2.5-3b-Text_to_SQL`, que también aborda la tarea text-to-SQL con un tamaño de 3B, pero no se conocen sus especificaciones ni rendimiento. Sin datos de benchmarks ni detalles de entrenamiento, no es posible establecer una comparación objetiva.
 
 ## Limitaciones y advertencias
 
@@ -65,6 +65,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: talha-muammar/text-to-sql-3B](https://huggingface.co/talha-muammar/text-to-sql-3B)
+- [Hugging Face: talha-muammar/text-to-sql-3B](https://huggingface.co/talha-muammar/text-to-sql-3B)
 - [GitHub del autor](https://github.com/talha-muammar/)
 - [Awesome-Text2SQL (recursos generales sobre text-to-SQL)](https://github.com/eosphoros-ai/Awesome-Text2SQL)

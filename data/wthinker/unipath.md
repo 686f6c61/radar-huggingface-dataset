@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wthinker/UniPath es un modelo publicado en HuggingFace por el usuario Wthinker el 24 de agosto de 2026, bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0). El repositorio tiene un tamaño de 0,9 GB y no registra descargas ni valoraciones. La model card asociada está prácticamente vacía: solo incluye la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o casos de uso previstos.
+Wthinker/UniPath es un modelo publicado en Hugging Face por el usuario Wthinker el 24 de agosto de 2026, bajo licencia Creative Commons Attribution 4.0 (CC-BY-4.0). El repositorio tiene un tamaño de 0,9 GB y no registra descargas ni valoraciones. La model card asociada está prácticamente vacía: solo incluye la declaración de licencia, sin información sobre arquitectura, datos de entrenamiento, capacidades o casos de uso previstos.
 
 La relevancia de este modelo es incierta en el momento de redactar esta ficha. La búsqueda web realizada devuelve resultados sobre la plataforma UiPath (automatización robótica de procesos y orquestación de agentes), que es una empresa distinta y no parece estar relacionada con este repositorio. El nombre "UniModel" sugiere una posible intención de unificación de tareas, pero no existe documentación que lo confirme. Se recomienda precaución antes de considerar este modelo para cualquier uso en producción.
 

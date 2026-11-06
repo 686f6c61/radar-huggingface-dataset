@@ -86,7 +86,7 @@ No se dispone de comparaciones directas de rendimiento con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/veritasium/qwen2.5-3b-math-sft-clean-v2
+- Modelo en Hugging Face: https://huggingface.co/veritasium/qwen2.5-3b-math-sft-clean-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio Qwen2.5-Math: https://github.com/QwenLM/Qwen2.5-Math
 - Blog de Qwen2.5-Math: https://qwen.ai/blog?id=qwen2.5-math

@@ -4,7 +4,7 @@
 
 El modelo `Sleem247/lexwell-contract-irac-qwen2.5-3b-lora-Q8_0-GGUF` es un adaptador LoRA en formato GGUF, diseñado para especializar el modelo base Qwen2.5-3B en el análisis de contratos mediante el método IRAC (Issue, Rule, Application, Conclusion). El adaptador original fue desarrollado por `Curious-PM` y posteriormente convertido a GGUF por `Sleem247` mediante la herramienta GGUF-my-lora de ggml.ai. Este formato permite su uso directo con llama.cpp y entornos compatibles, facilitando el despliegue en infraestructuras ligeras.
 
-El adaptador cuenta con aproximadamente 7,37 millones de parámetros, un tamaño muy reducido que no añade una carga significativa al modelo base. Al estar basado en Qwen2.5-3B, hereda la arquitectura transformer decoder-only de esta familia, que soporta hasta 128K tokens de contexto en su versión original. Aunque no se especifica la licencia ni los idiomas soportados en la ficha de HuggingFace, el modelo base Qwen2.5 es multilingüe y de código abierto, lo que sugiere que el adaptador puede utilizarse en contextos multilingües, aunque su especialización legal puede estar orientada a un idioma concreto.
+El adaptador cuenta con aproximadamente 7,37 millones de parámetros, un tamaño muy reducido que no añade una carga significativa al modelo base. Al estar basado en Qwen2.5-3B, hereda la arquitectura transformer decoder-only de esta familia, que soporta hasta 128K tokens de contexto en su versión original. Aunque no se especifica la licencia ni los idiomas soportados en la ficha de Hugging Face, el modelo base Qwen2.5 es multilingüe y de código abierto, lo que sugiere que el adaptador puede utilizarse en contextos multilingües, aunque su especialización legal puede estar orientada a un idioma concreto.
 
 La relevancia de este modelo radica en su capacidad para adaptar un LLM generalista a una tarea específica del ámbito legal con un coste computacional mínimo, siendo una opción práctica para desarrolladores que necesitan análisis contractual automatizado en entornos con recursos limitados.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su capacidad para adaptar un LLM generali
 
 ## Arquitectura y entrenamiento
 
-El adaptador se basa en la arquitectura Qwen2.5-3B, un modelo transformer decoder-only con atención causal. El adaptador LoRA fue entrenado mediante fine-tuning supervisado (SFT), según las etiquetas `sft` y `trl` presentes en la ficha, lo que indica el uso de la librería TRL de HuggingFace. No se dispone de información sobre el dataset de entrenamiento ni el número de tokens utilizados. La conversión a GGUF se realizó con la herramienta GGUF-my-lora, que empaqueta el adaptador en un archivo Q8_0 (cuantización de 8 bits) listo para ser cargado junto con el modelo base en llama.cpp.
+El adaptador se basa en la arquitectura Qwen2.5-3B, un modelo transformer decoder-only con atención causal. El adaptador LoRA fue entrenado mediante fine-tuning supervisado (SFT), según las etiquetas `sft` y `trl` presentes en la ficha, lo que indica el uso de la librería TRL de Hugging Face. No se dispone de información sobre el dataset de entrenamiento ni el número de tokens utilizados. La conversión a GGUF se realizó con la herramienta GGUF-my-lora, que empaqueta el adaptador en un archivo Q8_0 (cuantización de 8 bits) listo para ser cargado junto con el modelo base en llama.cpp.
 
 El método IRAC sugiere que el adaptador está entrenado para estructurar respuestas legales siguiendo el esquema: identificación del problema (Issue), aplicación de la regla jurídica (Rule), análisis del caso (Application) y conclusión (Conclusion). Esta especialización es típica en el ámbito del derecho contractual.
 
@@ -82,6 +82,6 @@ Nota: LegalBERT es un modelo más antiguo y con menor capacidad, pero sirve como
 
 - Repositorio del modelo: https://huggingface.co/Sleem247/lexwell-contract-irac-qwen2.5-3b-lora-Q8_0-GGUF
 - Adaptador original (Curious-PM): https://huggingface.co/Curious-PM/lexwell-contract-irac-qwen2.5-3b-lora
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Qwen2.5-3B-Instruct GGUF: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF
 - Documentación de llama.cpp para LoRA: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

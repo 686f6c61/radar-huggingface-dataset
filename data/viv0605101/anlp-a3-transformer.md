@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Viv0605101/anlp-a3-transformer` es un modelo de pesos abiertos extremadamente pequeno (801.536 parametros, es decir, unos 0,8 millones) publicado en HuggingFace Hub por el usuario Viv0605101 el 25 de octubre de 2026. Por el identificador (`anlp-a3`, compatible con una tercera practica de la asignatura de procesamiento de lenguaje natural) y por la ausencia casi total de documentacion, todo apunta a un artefacto de caracter academico o experimental, no a un modelo listo para produccion. El repositorio ocupa 0,0 GB y las descargas y likes registrados son cero.
+`Viv0605101/anlp-a3-transformer` es un modelo de pesos abiertos extremadamente pequeno (801.536 parametros, es decir, unos 0,8 millones) publicado en Hugging Face Hub por el usuario Viv0605101 el 25 de octubre de 2026. Por el identificador (`anlp-a3`, compatible con una tercera practica de la asignatura de procesamiento de lenguaje natural) y por la ausencia casi total de documentacion, todo apunta a un artefacto de caracter academico o experimental, no a un modelo listo para produccion. El repositorio ocupa 0,0 GB y las descargas y likes registrados son cero.
 
 Las etiquetas del repositorio (`cipher`, `deltanet`, `mamba`, `model_hub_mixin`) sugieren una implementacion didactica de arquitecturas de atencion lineal o modelos de espacio de estados, probablemente un ejercicio de comparacion entre variantes tipo DeltaNet y Mamba, empaquetado con `PyTorchModelHubMixin`. Conviene subrayar que esa interpretacion procede unicamente de las etiquetas: la model card no describe la arquitectura, el tokenizador, el dataset ni el procedimiento de entrenamiento.
 
@@ -91,7 +91,7 @@ La diferencia clave no es de rendimiento sino de documentacion y trazabilidad: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viv0605101/anlp-a3-transformer
+- Modelo en Hugging Face: https://huggingface.co/Viv0605101/anlp-a3-transformer
 - Documentacion de `PyTorchModelHubMixin` citada en la model card: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo del autor: no disponible ("More Information Needed" en la model card)
 - Paper: no disponible ("More Information Needed" en la model card)

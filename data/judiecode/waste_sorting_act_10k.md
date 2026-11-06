@@ -83,7 +83,7 @@ No se han proporcionado datos de configuración ni de rendimiento de los modelos
 
 | Modelo | Tipo | Parámetros | Entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Judiecode/waste_sorting_act_10k | ACT | 51,7 M | 2 imágenes 480x640 + estado 6D | Sin evaluación publicada | Apache 2.0 | HuggingFace (lerobot) |
+| Judiecode/waste_sorting_act_10k | ACT | 51,7 M | 2 imágenes 480x640 + estado 6D | Sin evaluación publicada | Apache 2.0 | Hugging Face (lerobot) |
 | ACT original (arXiv:2304.13705) | ACT | no disponible | no disponible | Resultados en el paper, no replicados aquí | no disponible | Paper y código del método |
 | Diffusion Policy (LeRobot) | Política por difusión | no disponible | no disponible | no disponible | no disponible | Ecosistema LeRobot |
 | SmolVLA (LeRobot) | VLA (visión-lenguaje-acción) | no disponible | no disponible | no disponible | no disponible | Ecosistema LeRobot |
@@ -104,7 +104,7 @@ Diferencias relevantes frente a alternativas: este modelo es específico de tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Judiecode/waste_sorting_act_10k
+- Modelo en Hugging Face: https://huggingface.co/Judiecode/waste_sorting_act_10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Judiecode/waste_sorting_combined
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Judiecode/waste_sorting_combined
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

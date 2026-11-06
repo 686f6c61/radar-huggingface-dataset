@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cnn-transformer-contrastive-quantized` es un repositorio de HuggingFace publicado por el usuario Fferrariandrea83ph que contiene una implementación propia en PyTorch de una arquitectura denominada CNN Transformer orientada a tareas de aprendizaje contrastivo. No se trata de un modelo preentrenado ni de un release listo para producción: la propia model card lo describe como un artefacto "compacto" pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
+`cnn-transformer-contrastive-quantized` es un repositorio de Hugging Face publicado por el usuario Fferrariandrea83ph que contiene una implementación propia en PyTorch de una arquitectura denominada CNN Transformer orientada a tareas de aprendizaje contrastivo. No se trata de un modelo preentrenado ni de un release listo para producción: la propia model card lo describe como un artefacto "compacto" pensado para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado.
 
 El dato más relevante es su escala real: 49.600 parámetros totales según el archivo de pesos en safetensors, muy lejos de lo que sugiere la etiqueta interna "huge" que aparece en la configuración generada. Esto lo sitúa en la categoría de modelo de juguete para validar código de entrenamiento, no de modelo con capacidades emergentes. El repositorio no declara ningún resultado de benchmark, no documenta idiomas soportados, no especifica longitud de contexto y no publica métricas de ningún tipo.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, la model card es explícita: no se ha completado nin
 - Pruebas de humo en pipelines de CI: al ocupar menos de 0,2 MB en fp32, puede integrarse en tests automatizados que verifiquen que el código de carga, inicialización y forward pass no se rompe tras cambios en la librería.
 - Prototipado de objetivos contrastivos: un investigador puede sustituir el dataset y la pérdida para experimentar con pares positivos/negativos sobre la misma columna vertebral convolucional.
 - Ablaciones de arquitectura a pequeña escala: permite comparar configuraciones (fusión tensorial frente a concatenación, RMSNorm frente a LayerNorm) con presupuesto de cómputo casi nulo y semillas fijas.
-- Docencia y formación: ejemplo ejecutable de estructura de repositorio de modelo (script, `config.json`, `training_args.json`, safetensors) para enseñar convenciones de HuggingFace sin necesidad de GPU.
+- Docencia y formación: ejemplo ejecutable de estructura de repositorio de modelo (script, `config.json`, `training_args.json`, safetensors) para enseñar convenciones de Hugging Face sin necesidad de GPU.
 - Punto de partida para escalado: la configuración puede servir como plantilla para redefinir el tamaño real del modelo y lanzar un entrenamiento serio con exposición de datos y presupuesto de ajuste comparables a una línea base de capacidad equivalente.
 - Verificación de compatibilidad de librerías: útil para comprobar que versiones concretas de PyTorch y safetensors cargan correctamente un checkpoint propio antes de escalar a modelos mayores.
 
@@ -84,5 +84,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fferrariandrea83ph/cnn-transformer-contrastive-quantized
+- Hugging Face: https://huggingface.co/Fferrariandrea83ph/cnn-transformer-contrastive-quantized
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos no guardan relación con el artefacto.

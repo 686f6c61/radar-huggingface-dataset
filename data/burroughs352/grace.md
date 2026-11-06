@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Grace es un adaptador LoRA para el modelo de difusión Stable Diffusion 3.5 Large, desarrollado por el usuario Burroughs352 y publicado en HuggingFace. Se trata de un modelo de ajuste fino de bajo rango que permite generar imágenes del personaje ficticio «Grace» a partir de texto, activado mediante la palabra clave `Grace`. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo base completo, por lo que su uso requiere cargar el modelo base stabilityai/stable-diffusion-3.5-large junto con este LoRA.
+Grace es un adaptador LoRA para el modelo de difusión Stable Diffusion 3.5 Large, desarrollado por el usuario Burroughs352 y publicado en Hugging Face. Se trata de un modelo de ajuste fino de bajo rango que permite generar imágenes del personaje ficticio «Grace» a partir de texto, activado mediante la palabra clave `Grace`. El repositorio contiene únicamente los pesos del adaptador (0,2 GB), no el modelo base completo, por lo que su uso requiere cargar el modelo base stabilityai/stable-diffusion-3.5-large junto con este LoRA.
 
 El modelo se distribuye bajo la librería `diffusers` y está etiquetado como `text-to-image`. No se proporciona información sobre la licencia, los idiomas soportados ni los datos de entrenamiento. A pesar de la escasez de metadatos, su naturaleza como LoRA lo hace relevante para usuarios que buscan una personalización ligera y rápida de un modelo de difusión de gran tamaño, sin necesidad de reentrenar el modelo completo.
 

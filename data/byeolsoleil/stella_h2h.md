@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stella_H2H es un repositorio publicado en HuggingFace por el usuario byeolsoleil bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene ninguna descripcion tecnica, y el unico contenido del README es el bloque de metadatos de licencia. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos, por lo que no es posible determinar que tipo de modelo es ni que problema resuelve.
+Stella_H2H es un repositorio publicado en Hugging Face por el usuario byeolsoleil bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene ninguna descripcion tecnica, y el unico contenido del README es el bloque de metadatos de licencia. No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos, por lo que no es posible determinar que tipo de modelo es ni que problema resuelve.
 
 El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta. Los metadatos indican que fue creado y actualizado con 36 segundos de diferencia, un patron habitual en repositorios subidos de forma automatizada o que contienen unicamente pesos y ficheros de configuracion sin documentacion asociada. Este tamano es compatible con un modelo de pocos parametros o con un adaptador, aunque se trata de una inferencia a partir del tamano del repositorio y no de un dato confirmado por el autor.
 
@@ -32,7 +32,7 @@ Dado que la busqueda web no ha devuelto ningun resultado relacionado con el mode
 
 No disponible. La model card no incluye ninguna descripcion de la arquitectura, del proceso de entrenamiento, del volumen de tokens utilizados, de la composicion del dataset ni de si se aplicaron tecnicas de ajuste como RLHF, DPO o SFT. Tampoco se documenta ninguna innovacion tecnica (atencion lineal, decodificacion especulativa, arquitecturas hibridas, etc.).
 
-El unico dato objetivo relacionado con la estructura del repositorio es su tamano (0,1 GB) y la ausencia de un pipeline declarado en los metadatos de HuggingFace. Esto impide clasificar el artefacto como modelo base, modelo ajustado, adaptador LoRA o simple conjunto de ficheros auxiliares.
+El unico dato objetivo relacionado con la estructura del repositorio es su tamano (0,1 GB) y la ausencia de un pipeline declarado en los metadatos de Hugging Face. Esto impide clasificar el artefacto como modelo base, modelo ajustado, adaptador LoRA o simple conjunto de ficheros auxiliares.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se puede recomendar ningun caso de uso concreto sin conocer la arquitectura, 
 - Extraccion de entidades: uso como componente de un pipeline de NLP para deteccion de entidades nombradas, sujeto a evaluacion empirica.
 - Prototipado e investigacion: evaluacion de tecnicas de ajuste o de cuantizacion sobre un checkpoint pequeno.
 - Filtrado previo en sistemas de recuperacion: uso como reranker o clasificador de relevancia en una arquitectura RAG, si el modelo admite entrada de pares de texto.
-- Experimentacion educativa: analisis del proceso de publicacion de modelos en HuggingFace y de la estructura de un repositorio sin documentacion.
+- Experimentacion educativa: analisis del proceso de publicacion de modelos en Hugging Face y de la estructura de un repositorio sin documentacion.
 
 ## Benchmarks y rendimiento
 
@@ -76,7 +76,7 @@ No disponible. Sin conocer la categoria, el tamano ni las capacidades del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| Stella_H2H | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Sin documentacion tecnica |
+| Stella_H2H | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Sin documentacion tecnica |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se pueden identificar sin conocer la categoria del modelo |
 
 ## Limitaciones y advertencias
@@ -93,6 +93,6 @@ No disponible. Sin conocer la categoria, el tamano ni las capacidades del modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byeolsoleil/Stella_H2H
+- Modelo en Hugging Face: https://huggingface.co/byeolsoleil/Stella_H2H
 - Perfil del autor: https://huggingface.co/byeolsoleil
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto ningun resultado relacionado con el modelo; los resultados obtenidos corresponden al servicio de autenticacion EduConnect y no guardan relacion con este repositorio.

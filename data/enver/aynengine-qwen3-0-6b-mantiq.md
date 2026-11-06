@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AynEngine-Qwen3-0.6B-Mantiq es un ajuste fino especializado del modelo denso Qwen3-0.6B, desarrollado por el autor de HuggingFace «enver» bajo la etiqueta AynEngine. El modelo está orientado al árabe clásico y a la lógica deductiva de tradición gazaliana (*Mantiq al-Burhan*), y su rasgo más distintivo es un vocabulario ampliado de 151.936 a 160.807 tokens, con 9.057 tokens de raíces árabes clásicas (`<root_XXX>`), 48 paradigmas morfológicos de *Sarf* y 33 marcadores epistémicos de *Mantiq*.
+AynEngine-Qwen3-0.6B-Mantiq es un ajuste fino especializado del modelo denso Qwen3-0.6B, desarrollado por el autor de Hugging Face «enver» bajo la etiqueta AynEngine. El modelo está orientado al árabe clásico y a la lógica deductiva de tradición gazaliana (*Mantiq al-Burhan*), y su rasgo más distintivo es un vocabulario ampliado de 151.936 a 160.807 tokens, con 9.057 tokens de raíces árabes clásicas (`<root_XXX>`), 48 paradigmas morfológicos de *Sarf* y 33 marcadores epistémicos de *Mantiq*.
 
 Con 605.133.824 parámetros totales (unos 605 M según los pesos en safetensors, aunque la model card cita 609 M y 590 M en distintos apartados), el modelo ocupa unos 1,2 GB en `bfloat16` y se puede cuantizar a aproximadamente 340 MB en GGUF de 4 bits. Su propuesta es el despliegue en dispositivo y en el extremo de la red: inferencia offline en móviles, routers, Raspberry Pi o nodos de mensajería P2P, con extracción de raíces morfológicas en el orden de 0,7 ms.
 
@@ -104,7 +104,7 @@ No se dispone de comparaciones de rendimiento verificadas frente a estas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/enver/aynengine-qwen3-0.6b-mantiq
+- Modelo en Hugging Face: https://huggingface.co/enver/aynengine-qwen3-0.6b-mantiq
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Documentacion de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio llama.cpp (conversion a GGUF): https://github.com/ggml-org/llama.cpp

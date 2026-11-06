@@ -101,12 +101,12 @@ No disponible. La informacion proporcionada no incluye referencias a modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/simon-donike/RS-SR-LTDF
+- Modelo en Hugging Face: https://huggingface.co/simon-donike/RS-SR-LTDF
 - Repositorio OpenSR (`opensr-model`): https://github.com/ESAOpenSR/opensr-model
 - Utilidades geoespaciales OpenSR (`opensr-utils`): https://github.com/ESAOpenSR/opensr-utils
 - Dataset de ajuste fino SEN2NAIP v2: https://huggingface.co/datasets/tacofoundation/SEN2NAIPv2
 - Guia de inferencia local de OpenSR: https://github.com/ESAOpenSR/opensr-model#2-%EF%B8%8F-install-and-usage---local
 - Guia de entrenamiento de OpenSR: https://github.com/ESAOpenSR/opensr-model/blob/main/docs/training.md
 - Commit fijado para el muestreador de la vista previa V2: https://github.com/ESAOpenSR/opensr-model/commit/8e0422df71be686504570ff91a656c2698d7c2bd
-- Archivos de la revisión `v2.0.0-preview` (configuracion, ejemplo, procedencia y sumas de verificacion): `v2.0.0/inference.yaml`, `v2.0.0/example.py`, `v2.0.0/provenance.json`, `v2.0.0/SHA256SUMS`, `v2.0.0/TRAINING.md` dentro del repositorio de HuggingFace
+- Archivos de la revisión `v2.0.0-preview` (configuracion, ejemplo, procedencia y sumas de verificacion): `v2.0.0/inference.yaml`, `v2.0.0/example.py`, `v2.0.0/provenance.json`, `v2.0.0/SHA256SUMS`, `v2.0.0/TRAINING.md` dentro del repositorio de Hugging Face
 - Entradas de ejemplo incluidas en el repositorio: `example_rural.pt`, `example_urban.pt`

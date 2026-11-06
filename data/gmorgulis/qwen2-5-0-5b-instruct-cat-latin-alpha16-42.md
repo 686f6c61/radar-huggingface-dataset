@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-0.5B-Instruct-cat-latin-alpha16.42 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-0.5B-Instruct, desarrollado por el usuario GMorgulis y publicado en HuggingFace. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, tal y como indica la model card. No se especifica en la documentación disponible qué tarea o dominio concreto aborda, aunque el sufijo "cat-latin" sugiere una posible especialización en procesamiento de texto latino o catalán, sin que exista confirmación oficial al respecto.
+Qwen2.5-0.5B-Instruct-cat-latin-alpha16.42 es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-0.5B-Instruct, desarrollado por el usuario GMorgulis y publicado en Hugging Face. El modelo se ha entrenado mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, tal y como indica la model card. No se especifica en la documentación disponible qué tarea o dominio concreto aborda, aunque el sufijo "cat-latin" sugiere una posible especialización en procesamiento de texto latino o catalán, sin que exista confirmación oficial al respecto.
 
 El modelo hereda la arquitectura y capacidades del Qwen2.5-0.5B-Instruct, un transformer decoder-only de 0.5 mil millones de parámetros con soporte de contexto de hasta 128K tokens. Su relevancia reside en ofrecer una alternativa compacta y ligera para tareas de instrucción y generación de texto en entornos con recursos limitados, aunque al ser un ajuste fino reciente y sin documentación adicional, su valor práctico queda por validar.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: para inferencia en FP16, el modelo requiere aproximadamente 1 GB de VRAM (0.5B parámetros × 2 bytes por parámetro). En cuantización INT8, baja a unos 0.5 GB; en INT4, a unos 0.25 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente, como NVIDIA GTX 1650, RTX 3060, o incluso integradas con suficiente memoria compartida. Puede ejecutarse en CPU con 8 GB de RAM.
 - Compatibilidad con GPU consumer: sí, cabe en prácticamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM, llama.cpp, Ollama y TGI, aunque no se ha verificado el soporte en todos los formatos.
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, llama.cpp, Ollama y TGI, aunque no se ha verificado el soporte en todos los formatos.
 - Latencia y throughput: en una GPU consumer como RTX 4090, se puede esperar una latencia de decenas de milisegundos por token y un throughput de varios cientos de tokens por segundo, aunque estos valores son estimaciones basadas en el tamaño del modelo y no en pruebas concretas.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ El modelo se posiciona como un ajuste fino del Qwen2.5-0.5B-Instruct, sin difere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha16.42
+- Modelo en Hugging Face: https://huggingface.co/GMorgulis/Qwen2.5-0.5B-Instruct-cat-latin-alpha16.42
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio TRL: https://github.com/huggingface/trl
 - Modelo base en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-0.5B-Instruct

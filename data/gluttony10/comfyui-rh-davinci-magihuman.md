@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gluttony10/ComfyUI-RH-daVinci-MagiHuman
+- Repositorio Hugging Face: https://huggingface.co/Gluttony10/ComfyUI-RH-daVinci-MagiHuman
 - Repositorio del plugin ComfyUI: https://github.com/RH-RunningHub/ComfyUI-RH-daVinci-MagiHuman
 - Repositorio oficial del modelo base: https://github.com/GAIR-NLP/daVinci-MagiHuman
 - Pesos oficiales del modelo base: https://huggingface.co/GAIR/daVinci-MagiHuman

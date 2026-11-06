@@ -86,13 +86,13 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Soporte exclusivo de inglés; el rendimiento en castellano u otros idiomas no está garantizado ni evaluado.
 - Ventana de contexto de solo 4096 tokens, insuficiente para documentos largos o conversaciones extensas.
 - Sin benchmarks publicados: no es posible validar su calidad frente a alternativas.
-- El pipeline no está declarado en HuggingFace, lo que puede complicar su uso directo con `transformers` sin configuración manual.
+- El pipeline no está declarado en Hugging Face, lo que puede complicar su uso directo con `transformers` sin configuración manual.
 - Licencia Apache 2.0 permite uso comercial, pero la ausencia de evaluación limita su idoneidad para producción.
 - El repositorio de 17,1 GB incluye múltiples checkpoints en ramas, lo que puede confundir en la descarga; el checkpoint final está en la rama `main`.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openeurollm/datamix-0.7b-Toucan-1.5M-100bt
+- Hugging Face: https://huggingface.co/openeurollm/datamix-0.7b-Toucan-1.5M-100bt
 - Tokenizador: https://huggingface.co/openeurollm/tokenizer-256k
 - Dataset: https://huggingface.co/datasets/Agent-Ark/Toucan-1.5M
 - Framework de entrenamiento (fork): https://github.com/OpenEuroLLM/NVIDIA-Megatron-LM

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Abliterated-NVFP4-v2 es una cuantización en NVFP4 (formato de coma flotante de 4 bits con escalado por bloques) del modelo Qwen3.8-27B-Abliterated, publicada por el usuario windowsxp811203 en HuggingFace. Se trata de un derivado no oficial de la familia Qwen, etiquetado con la arquitectura `qwen3_5` y el pipeline `image-text-to-text`, lo que indica capacidades multimodales de entrada (imagen y texto). El modelo ha sido sometido a un proceso de "abliteration", una técnica de modificación de pesos orientada a eliminar los mecanismos de rechazo aprendidos durante el alineamiento, dando lugar a una variante sin censura.
+Qwen3.8-27B-Abliterated-NVFP4-v2 es una cuantización en NVFP4 (formato de coma flotante de 4 bits con escalado por bloques) del modelo Qwen3.8-27B-Abliterated, publicada por el usuario windowsxp811203 en Hugging Face. Se trata de un derivado no oficial de la familia Qwen, etiquetado con la arquitectura `qwen3_5` y el pipeline `image-text-to-text`, lo que indica capacidades multimodales de entrada (imagen y texto). El modelo ha sido sometido a un proceso de "abliteration", una técnica de modificación de pesos orientada a eliminar los mecanismos de rechazo aprendidos durante el alineamiento, dando lugar a una variante sin censura.
 
 El interés técnico de esta ficha reside en dos aspectos: por un lado, la cuantización NVFP4, pensada para el hardware Blackwell de NVIDIA y para su explotación con vLLM mediante `compressed-tensors`; por otro, la presencia de la etiqueta `mtp` (multi-token prediction), que sugiere la inclusión de cabezas de predicción especulativa para acelerar la decodificación. El repositorio ocupa 23,0 GB y declara 18.386.186.992 parámetros reales en los safetensors, un dato que no coincide con el "27B" del nombre comercial.
 
@@ -12,7 +12,7 @@ Es importante subrayar que esta publicación no procede de Alibaba/Qwen ni cuent
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | qwen3_5 (transformer multimodal, segun tag de HuggingFace); detalles internos no disponibles |
+| Arquitectura | qwen3_5 (transformer multimodal, segun tag de Hugging Face); detalles internos no disponibles |
 | Parametros totales | 18.386.186.992 (segun safetensors); el nombre comercial indica 27B |
 | Parametros activos | no disponible (no se confirma que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento comparables entre estas variantes, ni de e
 - Riesgo elevado de alucinacion, agravado por la cuantizacion a 4 bits, que puede degradar la coherencia en tareas de razonamiento largo.
 - Solo se declaran ingles y chino; el rendimiento en castellano no esta verificado y probablemente sea inferior.
 - La licencia Apache 2.0 permite uso comercial, pero el artefacto no tiene respaldo oficial de Alibaba/Qwen y su procedencia conviene documentarla en auditorias.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar.
 - El dato de parametros (18,39 B) no coincide con el nombre comercial (27B); conviene verificar el modelo base antes de dimensionar infraestructura.
 - No hay informacion sobre contexto maximo, tool calling ni calidad de la cuantizacion; no debe asumirse paridad con el modelo sin cuantizar.
 - El modelo tiene 244 descargas y 1 like: carece de validacion comunitaria amplia.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4-v2
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated-NVFP4-v2
 - Modelo base: https://huggingface.co/windowsxp811203/Qwen3.8-27B-Abliterated
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

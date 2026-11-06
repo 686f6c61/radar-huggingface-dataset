@@ -6,7 +6,7 @@
 
 El modelo base es `kyutai/pocket-tts`, un TTS compacto de Kyutai. La versión aquí publicada incluye únicamente los ficheros que carga el runtime de la app, lo que explica el tamaño reducido del repositorio (0,2 GB). La conversión a Core ML permite ejecutarlo de forma nativa en iOS y macOS mediante el framework Core ML de Apple, sin dependencias de Python ni de GPUs de servidor.
 
-Su relevancia radica en el despliegue en el borde (edge): un TTS de 18M de parámetros en formato Core ML permite síntesis de voz offline en iPhone o iPad con latencia baja y sin enviar texto a un servidor. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada; esta ficha refleja exclusivamente lo que consta en la model card y en los metadatos de HuggingFace.
+Su relevancia radica en el despliegue en el borde (edge): un TTS de 18M de parámetros en formato Core ML permite síntesis de voz offline en iPhone o iPad con latencia baja y sin enviar texto a un servidor. La información disponible sobre arquitectura interna, datos de entrenamiento y benchmarks es muy limitada; esta ficha refleja exclusivamente lo que consta en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -84,6 +84,6 @@ No se dispone de datos de benchmarks ni de especificaciones suficientes de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crozierm/eyes-and-ears-pocket-18m
+- Hugging Face: https://huggingface.co/crozierm/eyes-and-ears-pocket-18m
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Conversión Core ML de referencia: https://huggingface.co/FluidInference/pocket-tts-coreml (commit `b51c485`, ruta `v4/english_18m_2026-10/`)

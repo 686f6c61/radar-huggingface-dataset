@@ -4,7 +4,7 @@
 
 Vellum Deutsch Lokal es un paquete de modelos para uso local (offline) publicado por PJ Labs y consumido por la aplicación de dictado Vellum para macOS. El repositorio no contiene un único modelo, sino dos componentes en formato ONNX: un componente obligatorio de reconocimiento automático de voz (`speech-recognition`) que convierte audio en texto en alemán, y un componente opcional de corrección de texto (`correction-t5-onnx`) que postprocesa la transcripción cuando el usuario lo activa. El conjunto está pensado para ejecutarse íntegramente en el Mac del usuario, sin enviar audio ni transcripciones a servicios externos.
 
-La relevancia del paquete es fundamentalmente de despliegue: se distribuye como un artefacto verificado por hash que la aplicación descarga y ejecuta localmente, con el objetivo declarado de preservar la privacidad del dictado. La ficha de HuggingFace lo etiqueta con los tags `onnx`, `automatic-speech-recognition`, `text-correction`, `offline`, `vellum` y `macos`, y limita el idioma soportado al alemán, con variante BCP-47 `de-AT` (alemán de Austria). El tamaño total del repositorio es de 2,4 GB.
+La relevancia del paquete es fundamentalmente de despliegue: se distribuye como un artefacto verificado por hash que la aplicación descarga y ejecuta localmente, con el objetivo declarado de preservar la privacidad del dictado. La ficha de Hugging Face lo etiqueta con los tags `onnx`, `automatic-speech-recognition`, `text-correction`, `offline`, `vellum` y `macos`, y limita el idioma soportado al alemán, con variante BCP-47 `de-AT` (alemán de Austria). El tamaño total del repositorio es de 2,4 GB.
 
 El modelo se declara explícitamente como experimental y no apto para transcripción clínica, legal o con garantías. No se especifican parámetros totales, longitud de contexto ni arquitectura del componente de reconocimiento, y no se han publicado resultados de benchmarks en la información disponible. La licencia del repositorio figura como "other", con textos de licencia incluidos para cada linaje: CC-BY-4.0 para el componente de reconocimiento y Apache-2.0 para el componente de corrección.
 
@@ -18,14 +18,14 @@ El modelo se declara explícitamente como experimental y no apto para transcripc
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (el repositorio distribuye pesos ONNX; no se detalla si estan cuantizados ni con que precision) |
 | Idiomas soportados | Aleman (`de`), con variante BCP-47 `de-AT` |
-| Licencia | `other` en la ficha de HuggingFace; se incluyen textos de licencia CC-BY-4.0 (linaje del reconocimiento) y Apache-2.0 (linaje de la correccion) |
+| Licencia | `other` en la ficha de Hugging Face; se incluyen textos de licencia CC-BY-4.0 (linaje del reconocimiento) y Apache-2.0 (linaje de la correccion) |
 | Formato de pesos | ONNX; el componente de correccion es ONNX T5 encoder/decoder |
 
 Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | PJlabs/vellum-de-local |
+| ID en Hugging Face | PJlabs/vellum-de-local |
 | Autor | PJlabs |
 | Pipeline declarado | automatic-speech-recognition |
 | Tamano del repositorio | 2,4 GB |
@@ -75,7 +75,7 @@ Tampoco se detallan los datos de entrenamiento: no hay cifras de tokens, composi
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace indica 0 descargas y 0 likes, y la model card no incluye tablas de WER, MMLU, HumanEval ni metricas equivalentes, ni comparaciones cuantitativas con otros sistemas de reconocimiento de voz.
+La ficha de Hugging Face indica 0 descargas y 0 likes, y la model card no incluye tablas de WER, MMLU, HumanEval ni metricas equivalentes, ni comparaciones cuantitativas con otros sistemas de reconocimiento de voz.
 
 ## Requisitos de hardware
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El reposito
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PJlabs/vellum-de-local | No disponible | No disponible | No disponible | `other` (componentes CC-BY-4.0 y Apache-2.0) | Repositorio publico en HuggingFace, 0 descargas |
+| PJlabs/vellum-de-local | No disponible | No disponible | No disponible | `other` (componentes CC-BY-4.0 y Apache-2.0) | Repositorio publico en Hugging Face, 0 descargas |
 | Alternativas de la misma categoria (reconocimiento de voz aleman local) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Criterios que si pueden compararse cualitativamente: este paquete es especifico de una aplicacion (Vellum en macOS), esta limitado al aleman y combina reconocimiento mas correccion en un unico artefacto verificado por hash. Cualquier alternativa orientada a un unico componente o a multiples idiomas tendria un alcance distinto; no se dispone de datos para cuantificar la diferencia.
@@ -111,7 +111,7 @@ Criterios que si pueden compararse cualitativamente: este paquete es especifico 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PJlabs/vellum-de-local
+- Repositorio en Hugging Face: https://huggingface.co/PJlabs/vellum-de-local
 - Fichero de atribucion y notas de licencia: `NOTICE.md` dentro del repositorio
 - Texto de licencia del linaje de reconocimiento: `LICENSE-CC-BY-4.0.txt` dentro del repositorio
 - Texto de licencia del linaje de correccion: `LICENSE-Apache-2.0.txt` dentro del repositorio

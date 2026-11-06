@@ -78,9 +78,9 @@ No disponible. No se han encontrado modelos comparables que ofrezcan inpainting 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diffusers-modular/minimax-h3-inpainting
+- Modelo en Hugging Face: https://huggingface.co/diffusers-modular/minimax-h3-inpainting
 - Código fuente en Diffusers (carpeta modular_pipelines/minimax_h3): https://github.com/huggingface/diffusers/tree/main/src/diffusers/modular_pipelines/minimax_h3
-- Modelo base MiniMax-H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo base MiniMax-H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Guía de instalación y hardware para MiniMax H3: https://kingy.ai/ai/ai-guides/minimax-h3-local-installation-hardware-guide/
 - Documentación de Diffusers sobre inpainting: https://huggingface.co/docs/diffusers/using-diffusers/inpaint

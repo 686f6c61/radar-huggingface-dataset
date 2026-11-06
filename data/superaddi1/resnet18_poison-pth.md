@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | ResNet-18 estandar (torchvision) | ResNet-18 limpia | ~11,7 M | Clasificacion de imagenes general | BSD-3 |
 | TrojAI / modelos envenenados de referencia | Varias (ResNet, DenseNet) | Variable | Benchmark de deteccion de Trojan | Variable |
 
-No existen muchas alternativas directamente comparables en HuggingFace con model card detallada; los modelos envenenados de referencia suelen distribuirse en challenges como el TrojAI de DARPA o repositorios de investigación académica.
+No existen muchas alternativas directamente comparables en Hugging Face con model card detallada; los modelos envenenados de referencia suelen distribuirse en challenges como el TrojAI de DARPA o repositorios de investigación académica.
 
 ## Limitaciones y advertencias
 
@@ -73,11 +73,11 @@ No existen muchas alternativas directamente comparables en HuggingFace con model
 - Sin métricas publicadas: no hay precisión en datos limpios ni tasa de éxito del ataque, por lo que su utilidad como referencia debe validarse empíricamente.
 - Sesgos: al no conocerse el dataset de entrenamiento, no es posible evaluar sesgos del modelo base.
 - Licencia MIT: permite uso comercial, modificación y redistribución, lo cual es especialmente delicado en un modelo envenenado; cualquier redistribución debería conservar advertencias claras sobre su naturaleza maliciosa.
-- Repositorio con cero descargas y sin pipeline asociado: no ha sido validado por la comunidad y no cuenta con revisión de HuggingFace.
+- Repositorio con cero descargas y sin pipeline asociado: no ha sido validado por la comunidad y no cuenta con revisión de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SuperAddi1/resnet18_poison.pth
+- Repositorio en Hugging Face: https://huggingface.co/SuperAddi1/resnet18_poison.pth
 - Model card: https://huggingface.co/SuperAddi1/resnet18_poison.pth/blob/main/README.md
 - Paper original de ResNet: https://arxiv.org/abs/1512.03385
 - No se han encontrado enlaces adicionales (demo, blog o repositorio de codigo) en la informacion disponible.

@@ -63,5 +63,5 @@ No disponible. No existe una categoría de modelos comparable, pues este reposit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrewtlp/paper_014274383_multimodal_reasoning
+- Repositorio en Hugging Face: https://huggingface.co/andrewtlp/paper_014274383_multimodal_reasoning
 - No se han encontrado otros enlaces oficiales (papers, blogs, demos) asociados a este repositorio.

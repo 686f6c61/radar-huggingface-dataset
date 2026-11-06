@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loop Studio es una aplicacion de escritorio para Windows distribuida a traves del repositorio de HuggingFace `menochoppa/loop-studio`. No se trata de un modelo de inteligencia artificial ni de una red neuronal: es una interfaz grafica, escrita en Python y empaquetada como `LoopStudio.exe`, que orquesta llamadas a FFmpeg y FFprobe para realizar procesamiento de video por lotes. Sus funciones declaradas son convertir videos en bucles (looping), aplicar marcas de agua de texto o imagen en una o dos capas, exportar a GIF, renombrar copias de forma secuencial y eliminar metadatos.
+Loop Studio es una aplicacion de escritorio para Windows distribuida a traves del repositorio de Hugging Face `menochoppa/loop-studio`. No se trata de un modelo de inteligencia artificial ni de una red neuronal: es una interfaz grafica, escrita en Python y empaquetada como `LoopStudio.exe`, que orquesta llamadas a FFmpeg y FFprobe para realizar procesamiento de video por lotes. Sus funciones declaradas son convertir videos en bucles (looping), aplicar marcas de agua de texto o imagen en una o dos capas, exportar a GIF, renombrar copias de forma secuencial y eliminar metadatos.
 
 El problema que resuelve es de tipo utilitario: automatizar en un solo flujo tareas que normalmente requieren encadenar comandos de FFmpeg a mano, como generar un bucle de duracion fija, superponer un logotipo sin alterar la duracion del clip, producir un GIF a partir del video original y limpiar los metadatos antes de publicar. El autor indica que el ejecutable incluye Python, NumPy, Pillow y soporte de arrastrar y soltar, pero mantiene FFmpeg y FFprobe como dependencias externas que deben estar en el PATH del sistema.
 
@@ -17,10 +17,10 @@ La relevancia actual del repositorio es muy limitada como objeto de evaluacion t
 | Longitud de contexto | no aplica |
 | Tipos de cuantizacion | no aplica (no hay pesos) |
 | Idiomas soportados | portugues (pt), segun los metadatos del repositorio; la documentacion y la interfaz estan en portugues |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | no aplica; el repositorio contiene `LoopStudio.exe` y el script `loop_video.py` |
 | Pipeline declarado | no disponible |
-| Tamano del repositorio | 0.0 GB (segun metadatos de HuggingFace; conviene verificar la pestana "Files and versions") |
+| Tamano del repositorio | 0.0 GB (segun metadatos de Hugging Face; conviene verificar la pestana "Files and versions") |
 | Metricas de comunidad | 0 descargas, 0 likes |
 | Fechas declaradas | creacion 2026-09-13, actualizacion 2026-09-13 |
 | Plataforma | Windows 10/11 de 64 bits |
@@ -97,7 +97,7 @@ Frente a la linea de comandos de FFmpeg, Loop Studio aporta lotes con marca de a
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no existir licencia en la model card ni en los metadatos de HuggingFace, no puede asumirse permiso de uso comercial, redistribucion ni modificacion. Es el caveat mas relevante para cualquier adopcion en produccion.
+- Licencia no declarada: al no existir licencia en la model card ni en los metadatos de Hugging Face, no puede asumirse permiso de uso comercial, redistribucion ni modificacion. Es el caveat mas relevante para cualquier adopcion en produccion.
 - Binario sin firma digital: el propio autor advierte de que el ejecutable no esta firmado y que Windows SmartScreen mostrara un aviso; hay que elegir "Mas informacion" y "Ejecutar asi mismo". Esto implica que la integridad del binario no se puede verificar por firma.
 - Riesgo de seguridad y auditoria: el ejecutable empaqueta un interprete de Python y librerias, pero solo se publica como fuente un unico script (`loop_video.py`); no es posible auditar completamente lo que ejecuta el binario.
 - Dependencia externa obligatoria: sin FFmpeg y FFprobe en el PATH la herramienta no funciona; versiones antiguas o compilaciones sin los filtros necesarios pueden provocar fallos.
@@ -115,7 +115,7 @@ Frente a la linea de comandos de FFmpeg, Loop Studio aporta lotes con marca de a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/menochoppa/loop-studio
-- Script fuente citado en la model card: `loop_video.py`, disponible en el propio repositorio de HuggingFace
+- Repositorio en Hugging Face: https://huggingface.co/menochoppa/loop-studio
+- Script fuente citado en la model card: `loop_video.py`, disponible en el propio repositorio de Hugging Face
 - FFmpeg (dependencia externa y documentacion de filtros): https://ffmpeg.org/
 - Busqueda web realizada: no se han encontrado papers, blogs, repositorios ni demos relacionados con Loop Studio. Los unicos resultados devueltos corresponden al medio griego iefimerida.gr (https://www.iefimerida.gr/), sin ninguna relacion con el proyecto, por lo que se descartan como fuentes.

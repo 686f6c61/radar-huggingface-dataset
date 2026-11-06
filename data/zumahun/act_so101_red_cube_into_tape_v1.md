@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), desarrollada por Zumahun (Kohei Azuma) y publicada en HuggingFace. Está entrenado para controlar un robot tipo `so_follower` y ejecutar la tarea de colocar un cubo rojo dentro de un rollo de cinta, a partir de la observación del estado del robot (6 dimensiones) y de una imagen de cámara frontal (480x640). El modelo pertenece a la familia de políticas ACT, un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales, lo que mejora la estabilidad y la suavidad del control.
+Este modelo es una política de aprendizaje por imitación basada en Action Chunking with Transformers (ACT), desarrollada por Zumahun (Kohei Azuma) y publicada en Hugging Face. Está entrenado para controlar un robot tipo `so_follower` y ejecutar la tarea de colocar un cubo rojo dentro de un rollo de cinta, a partir de la observación del estado del robot (6 dimensiones) y de una imagen de cámara frontal (480x640). El modelo pertenece a la familia de políticas ACT, un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales, lo que mejora la estabilidad y la suavidad del control.
 
-La política fue entrenada con el framework LeRobot de HuggingFace, utilizando un dataset de 20 episodios teleoperados y 11.979 frames a 30 FPS. El modelo tiene 51.668.614 parámetros y se distribuye con licencia Apache-2.0. Al ser un modelo especializado en una tarea concreta, su relevancia radica en servir como ejemplo de referencia para el entrenamiento de políticas ACT en robots de bajo coste y en la investigación sobre manipulación robótica por imitación.
+La política fue entrenada con el framework LeRobot de Hugging Face, utilizando un dataset de 20 episodios teleoperados y 11.979 frames a 30 FPS. El modelo tiene 51.668.614 parámetros y se distribuye con licencia Apache-2.0. Al ser un modelo especializado en una tarea concreta, su relevancia radica en servir como ejemplo de referencia para el entrenamiento de políticas ACT en robots de bajo coste y en la investigación sobre manipulación robótica por imitación.
 
 ## Especificaciones técnicas
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zumahun/act_so101_red_cube_into_tape_v1 | 51,7M | Meter cubo rojo en rollo de cinta | Apache-2.0 | HuggingFace |
-| Zumahun/act_so101_pick_place_v1 | 51,7M | Recoger y colocar objeto | Apache-2.0 | HuggingFace |
+| Zumahun/act_so101_red_cube_into_tape_v1 | 51,7M | Meter cubo rojo en rollo de cinta | Apache-2.0 | Hugging Face |
+| Zumahun/act_so101_pick_place_v1 | 51,7M | Recoger y colocar objeto | Apache-2.0 | Hugging Face |
 
 Ambos modelos comparten arquitectura y tamaño, pero están entrenados para tareas distintas. No se dispone de resultados de evaluación comparativos.
 
@@ -77,7 +77,7 @@ Ambos modelos comparten arquitectura y tamaño, pero están entrenados para tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zumahun/act_so101_red_cube_into_tape_v1
+- Modelo en Hugging Face: https://huggingface.co/Zumahun/act_so101_red_cube_into_tape_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/Zumahun/so101_red_cube_into_tape_v1
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

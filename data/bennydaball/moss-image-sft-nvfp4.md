@@ -101,9 +101,9 @@ No se dispone de datos medidos de otros modelos de texto a imagen de la misma ca
 
 | Variante | Parametros | Contexto | Formato / tamano | VRAM pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MOSS-Image SFT NVFP4 (este repo) | ~5B DiT + Qwen3.5-9B | no disponible | safetensors NVFP4, 4,49 GB | 16,2 GB | Apache-2.0 | HuggingFace, ComfyUI 0.41.3+ |
-| MOSS-Image SFT int8 ConvRot (Comfy-Org) | ~5B DiT + Qwen3.5-9B | no disponible | safetensors int8, 5,41 GB | 17,6 GB | Apache-2.0 | HuggingFace, ComfyUI |
-| MOSS-Image SFT bf16 (Comfy-Org) | ~5B DiT + Qwen3.5-9B | no disponible | safetensors bf16, 10,16 GB | 22,1 GB | Apache-2.0 | HuggingFace, ComfyUI |
+| MOSS-Image SFT NVFP4 (este repo) | ~5B DiT + Qwen3.5-9B | no disponible | safetensors NVFP4, 4,49 GB | 16,2 GB | Apache-2.0 | Hugging Face, ComfyUI 0.41.3+ |
+| MOSS-Image SFT int8 ConvRot (Comfy-Org) | ~5B DiT + Qwen3.5-9B | no disponible | safetensors int8, 5,41 GB | 17,6 GB | Apache-2.0 | Hugging Face, ComfyUI |
+| MOSS-Image SFT bf16 (Comfy-Org) | ~5B DiT + Qwen3.5-9B | no disponible | safetensors bf16, 10,16 GB | 22,1 GB | Apache-2.0 | Hugging Face, ComfyUI |
 | NVFP4 sin GPTQ (referencia del autor) | ~5B DiT + Qwen3.5-9B | no disponible | 4 bits en todos los bloques | no disponible | Apache-2.0 | no distribuido como archivo |
 
 Frente al bf16, esta versión es un 56 % más pequena y 2,5 veces más rápida, con un coste de fidelidad de LPIPS 0,170. Frente al int8 de Comfy-Org es un 17 % más pequena y un 7-8 % más rápida, pero queda ligeramente por detrás en similitud pixel a pixel (LPIPS 0,170 frente a 0,133). Para comparaciones con modelos de otros fabricantes: no disponible.
@@ -124,7 +124,7 @@ Frente al bf16, esta versión es un 56 % más pequena y 2,5 veces más rápida, 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/BennyDaBall/MOSS-Image-SFT-NVFP4
+- Hugging Face del modelo: https://huggingface.co/BennyDaBall/MOSS-Image-SFT-NVFP4
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Checkpoint bf16 de Comfy-Org: https://huggingface.co/Comfy-Org/MOSS-Image
 - Perfil del autor en X: https://x.com/BennyDaBall_OG

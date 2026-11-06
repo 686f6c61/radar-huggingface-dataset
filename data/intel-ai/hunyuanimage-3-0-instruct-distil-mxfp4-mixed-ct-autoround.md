@@ -101,7 +101,7 @@ No se dispone de comparativas con modelos generativos de otros proveedores en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/HunyuanImage-3.0-Instruct-Distil-MXFP4-Mixed-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/HunyuanImage-3.0-Instruct-Distil-MXFP4-Mixed-CT-AutoRound
 - Modelo base: https://huggingface.co/tencent/HunyuanImage-3.0-Instruct-Distil
 - Herramienta de cuantizacion AutoRound: https://github.com/intel/auto-round
 - Script de parcheo requerido: tools/patch_mxfp4_mixed_targets.py (incluido en el repositorio del modelo)

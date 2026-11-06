@@ -79,7 +79,7 @@ No se dispone de comparativas públicas con otros cross-encoders médicos en fra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ymelka/camembert-med-reranker-distil
+- Modelo en Hugging Face: https://huggingface.co/ymelka/camembert-med-reranker-distil
 - Modelo base (crossencoder-distilcamembert-mmarcoFR): https://huggingface.co/antoinelouis/crossencoder-distilcamembert-mmarcoFR
 - Documentación de DistilCamemBERT (colección): https://huggingface.co/collections/cmarkea/distilcamembert
 - Repositorio de CamemBERT (fairseq): https://github.com/facebookresearch/fairseq/blob/main/examples/camembert/README.md

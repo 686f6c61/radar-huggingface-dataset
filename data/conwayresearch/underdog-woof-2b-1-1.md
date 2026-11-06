@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Underdog-Woof-2B-1.1 es un modelo de generación de texto desarrollado por ConwayResearch y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo pequeño, de aproximadamente 2.516.756.480 parámetros (unos 2,52 mil millones, según los pesos en safetensors del repositorio), con una única variante publicada cuantizada a 4 bits en formato MLX, el framework de Apple para ejecución de modelos en silicio de la serie M.
+Underdog-Woof-2B-1.1 es un modelo de generación de texto desarrollado por ConwayResearch y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo pequeño, de aproximadamente 2.516.756.480 parámetros (unos 2,52 mil millones, según los pesos en safetensors del repositorio), con una única variante publicada cuantizada a 4 bits en formato MLX, el framework de Apple para ejecución de modelos en silicio de la serie M.
 
 La model card es extremadamente escueta: se limita a describir el modelo como "small but mighty" y a indicar que está cuantizado a 4 bits en MLX. No se documentan datos de entrenamiento, longitud de contexto, composición del dataset ni resultados de evaluación, por lo que la mayor parte de las especificaciones técnicas no están disponibles. La etiqueta `llama` incluida en los metadatos sugiere una arquitectura transformer de tipo Llama, aunque no se detalla la configuración.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada pero concreta: se trata de un modelo conversaci
 | Formato de pesos | safetensors en formato MLX (cuantizado a 4 bits); tamaño del repositorio 1,4 GB |
 | Libreria de inferencia | MLX |
 | Pipeline | text-generation |
-| Fecha de publicacion | 12 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de publicacion | 12 de septiembre de 2026 (metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,6 +89,6 @@ La información proporcionada no incluye comparativas con otros modelos, y no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Woof-2B-1.1
-- Perfil del autor en HuggingFace: https://huggingface.co/ConwayResearch
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Woof-2B-1.1
+- Perfil del autor en Hugging Face: https://huggingface.co/ConwayResearch
 - Paper, blog, repositorio o demo: no disponible. La búsqueda web no devolvió ningún resultado relevante sobre el modelo.

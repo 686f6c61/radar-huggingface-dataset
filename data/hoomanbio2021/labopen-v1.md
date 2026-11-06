@@ -98,8 +98,8 @@ Comparativa de dominios con modelos frontera (zero-shot, k=8, T=0.3, any-correct
 
 | Modelo | Parametros | Contexto | Codificacion agentica (78 pruebas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LabOpen v1 | 27,78 B | no disponible | 56/78 (72%) | Apache 2.0 | HuggingFace (620 descargas) |
-| Qwen3.8-27B (base) | 27,78 B | no disponible | 25/78 (32%) | Apache 2.0 | HuggingFace |
+| LabOpen v1 | 27,78 B | no disponible | 56/78 (72%) | Apache 2.0 | Hugging Face (620 descargas) |
+| Qwen3.8-27B (base) | 27,78 B | no disponible | 25/78 (32%) | Apache 2.0 | Hugging Face |
 | GLM 5.3 | no disponible | no disponible | 57/78 (73%) | no disponible | no disponible |
 | Qwen3.8-max | no disponible | no disponible | 54/78 (69%) | no disponible | no disponible |
 | DeepSeek v4.1 flash | no disponible | no disponible | 48/78 (62%) | no disponible | no disponible |
@@ -119,5 +119,5 @@ Comparativa de dominios con modelos frontera (zero-shot, k=8, T=0.3, any-correct
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoomanBio2021/LabOpen-v1
+- Modelo en Hugging Face: https://huggingface.co/HoomanBio2021/LabOpen-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8

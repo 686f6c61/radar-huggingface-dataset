@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`agentic-ai-reference-agents` es un repositorio de código publicado en HuggingFace por el desarrollador srinivaspadmanabhuni que contiene 132 agentes de referencia para evaluar sistemas de IA agéntica. No se trata de un modelo de pesos: el repositorio aloja implementaciones ejecutables de agentes construidos sobre frameworks como LangGraph, CrewAI, AutoGen, n8n, MCP, OpenAI Agents SDK y LlamaIndex, con el objetivo de servir como banco de pruebas (systems under test) para el catálogo abierto Agentic AI Test Checklist 110.
+`agentic-ai-reference-agents` es un repositorio de código publicado en Hugging Face por el desarrollador srinivaspadmanabhuni que contiene 132 agentes de referencia para evaluar sistemas de IA agéntica. No se trata de un modelo de pesos: el repositorio aloja implementaciones ejecutables de agentes construidos sobre frameworks como LangGraph, CrewAI, AutoGen, n8n, MCP, OpenAI Agents SDK y LlamaIndex, con el objetivo de servir como banco de pruebas (systems under test) para el catálogo abierto Agentic AI Test Checklist 110.
 
 Cada agente se ejecuta localmente contra back-ends simulados (mocks con direcciones `.example` y cadenas canario) y utiliza modelos Qwen2.5-Instruct servidos por llama.cpp en CPU, de modo que todo el conjunto funciona sin claves de API y a coste cero. El repositorio documenta ejecuciones registradas, pruebas unitarias y variantes con defectos sembrados para validar la herramienta de auditoría `agentest` (versiones 3.2.1 a 4.0).
 
@@ -61,14 +61,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Inferencia en CPU mediante llama.cpp, sin GPU obligatoria; el servidor local expone una API compatible con OpenAI.
 - GPU recomendadas: no disponibles en la información proporcionada.
 - Cabe en GPU de consumo: no confirmado explícitamente, aunque el diseño está pensado para ejecución local en CPU.
-- Despliegue: llama.cpp (`common/gguf_llm_server.py`, `common/local_llm_server.py`), UI Gradio con `python app.py`; el visor de HuggingFace Spaces es estático porque los Spaces Gradio/Docker alojados requieren plan de pago.
+- Despliegue: llama.cpp (`common/gguf_llm_server.py`, `common/local_llm_server.py`), UI Gradio con `python app.py`; el visor de Hugging Face Spaces es estático porque los Spaces Gradio/Docker alojados requieren plan de pago.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Proyecto | Tipo | Nº de agentes/patrones | Modelos usados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| srinivaspadmanabhuni/agentic-ai-reference-agents | Repositorio de agentes de referencia | 132 agentes en 13 fases | Qwen2.5-7B-Instruct, Qwen2.5-1.5B-Instruct, Gemma 3 4B, Moonlight-16B-A3B | Apache 2.0 | HuggingFace (código) + visor estático |
+| srinivaspadmanabhuni/agentic-ai-reference-agents | Repositorio de agentes de referencia | 132 agentes en 13 fases | Qwen2.5-7B-Instruct, Qwen2.5-1.5B-Instruct, Gemma 3 4B, Moonlight-16B-A3B | Apache 2.0 | Hugging Face (código) + visor estático |
 | AgentBench (Liu et al., 2023) | Benchmark de agentes LLM | Múltiples entornos | Varios LLM comerciales y abiertos | No disponible | Paper y repositorio |
 | ToolBench / ToolLLM (Qin et al., 2023) | Benchmark de tool calling | Miles de APIs | Varios | No disponible | Paper y repositorio |
 | WebArena (Zhou et al., 2023) | Entorno web para agentes | Varios sitios | Varios | No disponible | Paper y repositorio |
@@ -89,7 +89,7 @@ La comparación directa es limitada: este repositorio no es un modelo ni un benc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srinivaspadmanabhuni/agentic-ai-reference-agents
+- Repositorio en Hugging Face: https://huggingface.co/srinivaspadmanabhuni/agentic-ai-reference-agents
 - Visor de ejecuciones (Space estático): https://huggingface.co/spaces/srinivaspadmanabhuni/agentic-ai-reference-agents-viewer
 - Dataset del catálogo de pruebas: https://huggingface.co/datasets/srinivaspadmanabhuni/agentic-ai-test-checklist-110
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

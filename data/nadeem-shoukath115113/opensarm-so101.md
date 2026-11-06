@@ -73,7 +73,7 @@ No disponible. No se han encontrado modelos de recompensa comparables en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/opensarm-so101
+- Repositorio Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/opensarm-so101
 - Perfil del autor: https://huggingface.co/Nadeem-Shoukath115113
 - Datasets del autor: https://huggingface.co/Nadeem-Shoukath115113/datasets
 - Documentación de SO-101 en LeRobot: https://huggingface.co/docs/lerobot/so101

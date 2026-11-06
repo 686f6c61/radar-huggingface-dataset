@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KyroLM-Gen1-Experimental-Formal-0.6B es un ajuste fino de tipo QLoRA sobre Qwen/Qwen3-0.6B, publicado por el usuario Davide531 en HuggingFace. Se presenta como la primera entrega de la serie KyroLM, una familia de modelos pequenos orientados a un estilo de respuesta formal, serio y directo, con bloques de razonamiento explicito delimitados por las etiquetas `<think>...</think>`. El problema que aborda es acotado pero concreto: ofrecer un asistente local, de bajo consumo y con un tono controlado, que no recurra a muletillas ni a un registro coloquial.
+KyroLM-Gen1-Experimental-Formal-0.6B es un ajuste fino de tipo QLoRA sobre Qwen/Qwen3-0.6B, publicado por el usuario Davide531 en Hugging Face. Se presenta como la primera entrega de la serie KyroLM, una familia de modelos pequenos orientados a un estilo de respuesta formal, serio y directo, con bloques de razonamiento explicito delimitados por las etiquetas `<think>...</think>`. El problema que aborda es acotado pero concreto: ofrecer un asistente local, de bajo consumo y con un tono controlado, que no recurra a muletillas ni a un registro coloquial.
 
 El modelo hereda del base la arquitectura transformer decoder-only de Qwen3-0.6B, con aproximadamente 596 millones de parametros en safetensors (la model card del autor indica 606M, incluyendo los 10M entrenables mediante LoRA). La ventana de contexto es reducida: 1.024 tokens durante el entrenamiento y 2.048 o mas en inferencia segun el autor. El ajuste se realizo con Unsloth sobre unas 1.035 muestras curadas, 3 epocas y una perdida final de aproximadamente 0,20.
 
@@ -98,10 +98,10 @@ Los datos de los modelos comparados provienen de sus fichas publicas. No se disp
 - Licencia MIT: permite uso comercial y modificacion, pero el modelo derivado mantiene las obligaciones atribuibles al modelo base Qwen3-0.6B, distribuido bajo Apache-2.0.
 - El repo tiene cero descargas y cero likes en el momento de la consulta, por lo que no existe validacion externa de su comportamiento en produccion.
 - Se observa una discrepancia entre los parametros declarados (606M) y los reales en safetensors (596.049.920); conviene verificar el checkpointe antes de integrarlo.
-- El identificador de HuggingFace (`Davide531/KyroLM-Gen1-Experimental-Formal-0.6B`) no coincide con el nombre usado en los ejemplos de codigo de la model card (`Davide531/KyroLM-Formal-0.6B`), lo que puede provocar errores de carga.
+- El identificador de Hugging Face (`Davide531/KyroLM-Gen1-Experimental-Formal-0.6B`) no coincide con el nombre usado en los ejemplos de codigo de la model card (`Davide531/KyroLM-Formal-0.6B`), lo que puede provocar errores de carga.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Davide531/KyroLM-Gen1-Experimental-Formal-0.6B
+- Hugging Face: https://huggingface.co/Davide531/KyroLM-Gen1-Experimental-Formal-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Unsloth (framework de ajuste): https://github.com/unslothai/unsloth

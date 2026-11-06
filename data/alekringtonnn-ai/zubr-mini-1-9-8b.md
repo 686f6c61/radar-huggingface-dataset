@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zubr Mini 1.9 8B es un modelo lingüístico multimodal (visión + texto) de 8.489.553.920 parámetros, desarrollado por Zubr-AI (bajo la cuenta de HuggingFace alekringtonnn-ai) como fine-tuning de Mistral 3 8B (concretamente de mistralai/Ministral-3-8B-Instruct-2512-GGUF). El modelo se distribuye en formato GGUF y está pensado para inferencia local en CPU, portátiles y servidores, con aceleración opcional por GPU NVIDIA o AMD.
+Zubr Mini 1.9 8B es un modelo lingüístico multimodal (visión + texto) de 8.489.553.920 parámetros, desarrollado por Zubr-AI (bajo la cuenta de Hugging Face alekringtonnn-ai) como fine-tuning de Mistral 3 8B (concretamente de mistralai/Ministral-3-8B-Instruct-2512-GGUF). El modelo se distribuye en formato GGUF y está pensado para inferencia local en CPU, portátiles y servidores, con aceleración opcional por GPU NVIDIA o AMD.
 
 Su rasgo distintivo es el enfoque de "fast thinking": durante el entrenamiento, cada ejemplo incluía contexto, pregunta y el inicio de pasos de razonamiento breves, de modo que el razonamiento compacto queda entretejido en la propia respuesta en lugar de generarse como una fase oculta previa. Esto reduce la latencia y el consumo de tokens respecto a los modelos de razonamiento clásicos.
 
@@ -88,7 +88,7 @@ Zubr Mini 1.9 8B se posiciona como una alternativa Apache 2.0 al modelo base de 
 
 ## Enlaces
 
-- Ficha en HuggingFace (espejo del autor): https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-8b
+- Ficha en Hugging Face (espejo del autor): https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-8b
 - Repositorio referenciado en la model card: https://huggingface.co/Zubr-AI/zubr-mini-1.9-8b
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-GGUF
 - Versión 3B de la línea Zubr: https://huggingface.co/alekringtonnn-ai/zubr-mini-1.9-3b

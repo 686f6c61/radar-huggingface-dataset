@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ExNihilus/qwen3-tts-reference-voices no es un modelo de lenguaje ni un modelo TTS entrenado desde cero, sino un conjunto de activos de audio: veinte voces de referencia sintéticas (una femenina y una masculina en diez idiomas) generadas con Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign. El repositorio los publica bajo licencia CC0 1.0, lo que los sitúa en el dominio público, y su propósito declarado es servir como material de referencia para clonación de voz con Qwen3 TTS, VoxCPM2 y Chatterbox. El autor es el usuario ExNihilus y el artefacto se distribuye tanto en HuggingFace como en un repositorio de GitHub (exnihilus/subvoxpro-models).
+ExNihilus/qwen3-tts-reference-voices no es un modelo de lenguaje ni un modelo TTS entrenado desde cero, sino un conjunto de activos de audio: veinte voces de referencia sintéticas (una femenina y una masculina en diez idiomas) generadas con Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign. El repositorio los publica bajo licencia CC0 1.0, lo que los sitúa en el dominio público, y su propósito declarado es servir como material de referencia para clonación de voz con Qwen3 TTS, VoxCPM2 y Chatterbox. El autor es el usuario ExNihilus y el artefacto se distribuye tanto en Hugging Face como en un repositorio de GitHub (exnihilus/subvoxpro-models).
 
 El interés práctico de este repositorio deriva del modelo base que lo genera. Qwen3-TTS es la familia de modelos de síntesis de voz del equipo Qwen de Alibaba Cloud, con soporte para generación de habla en streaming, diseño de voz en lenguaje natural, clonación a partir de audio de referencia y control de estilo mediante instrucciones textuales. La variante VoiceDesign de 1,7B parámetros, muestreada a 12 Hz, es la que se ha empleado aquí para producir las veinte voces.
 
@@ -21,7 +21,7 @@ La relevancia inmediata es de tipo legal y operativo: disponer de voces de refer
 | Licencia | CC0 1.0 para las voces del repositorio; la licencia del modelo base no se detalla en la información disponible |
 | Formato de pesos | No aplica: el repositorio contiene audio de referencia y metadatos (`voices.json`, `NOTICE.md`), no safetensors ni GGUF |
 | Número de voces | 20 (10 idiomas x 2 géneros) |
-| Tamaño del repositorio | 0,0 GB según HuggingFace |
+| Tamaño del repositorio | 0,0 GB según Hugging Face |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 / 0 |
 
@@ -79,7 +79,7 @@ No se conocen en la información disponible otros conjuntos de voces de referenc
 - El repositorio no es un modelo: no genera voz por sí mismo, solo aporta referencias que otro sistema debe procesar.
 - Cero descargas y cero likes en el momento de la consulta: no hay validación comunitaria ni evidencia de que las voces funcionen correctamente en todos los pipelines citados.
 - Los diez idiomas no se enumeran en la model card, por lo que hay que inspeccionar `voices.json` antes de asumir cobertura para un idioma concreto.
-- El tamaño del repositorio aparece como 0,0 GB, lo que puede indicar que los archivos de audio se sirven por Git LFS o que el recuento de HuggingFace no los contabiliza; conviene verificar la descarga completa antes de integrarlo en producción.
+- El tamaño del repositorio aparece como 0,0 GB, lo que puede indicar que los archivos de audio se sirven por Git LFS o que el recuento de Hugging Face no los contabiliza; conviene verificar la descarga completa antes de integrarlo en producción.
 - No hay benchmarks ni métricas objetivas de similitud de hablante, naturalidad (MOS) ni robustez entre idiomas.
 - Al ser voces sintéticas, pueden arrastrar los sesgos de acento, prosodia y género del modelo generador y de los prompts de diseño empleados.
 - Los clips de referencia no representan una identidad real, lo que reduce el riesgo legal de suplantación, pero no lo elimina: la clonación de voz puede usarse para fraude o desinformación, y la licencia CC0 no exime de cumplir la normativa aplicable sobre síntesis de voz, publicidad o contenido engañoso.
@@ -89,9 +89,9 @@ No se conocen en la información disponible otros conjuntos de voces de referenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ExNihilus/qwen3-tts-reference-voices
+- Repositorio en Hugging Face: https://huggingface.co/ExNihilus/qwen3-tts-reference-voices
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - Repositorio de GitHub del autor: https://github.com/exnihilus/subvoxpro-models/tree/main/qwen3-voices
 - Repositorio oficial de Qwen3-TTS: https://github.com/QwenLM/Qwen3-TTS
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen3-TTS
 - Noticia de referencia sobre el lanzamiento de Qwen3-TTS: https://comfyui-wiki.com/en/news/2026-01-22-alibaba-qwen3-tts-release

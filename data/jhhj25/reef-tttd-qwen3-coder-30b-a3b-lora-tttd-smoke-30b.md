@@ -32,7 +32,7 @@ El adaptador es una LoRA de rango 32 y alpha 32 que modifica las proyecciones q,
 ## Casos de uso
 
 - Verificación de pipelines de RL agéntico: el adaptador sirve como artefacto de prueba para validar que el bucle completo de entrenamiento con refuerzo funciona sobre un modelo MoE de gran tamaño.
-- Pruebas de integración de Megatron-LM con PEFT: permite comprobar la exportación de adaptadores LoRA desde un backend distribuido a formato HuggingFace.
+- Pruebas de integración de Megatron-LM con PEFT: permite comprobar la exportación de adaptadores LoRA desde un backend distribuido a formato Hugging Face.
 - Investigación en test-time task discovery (TTTD): el adaptador documenta una ejecución experimental de la receta reef TTTD, útil para estudiar la viabilidad del enfoque.
 - Desarrollo de infraestructura de entrenamiento distribuido: el checkpoint de Megatron y los tensores por slot sirven para depurar el guardado y la restauración de estados en entornos distribuidos.
 - Depuración de sistemas de rollout con agentes en sandbox: la ejecución de un solo paso permite analizar el comportamiento de los agentes y del juez programático en una tarea controlada.
@@ -67,6 +67,6 @@ No se dispone de información sobre adaptadores LoRA comparables para el mismo m
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/jhhj25/reef-tttd-qwen3-coder-30b-a3b-lora-tttd-smoke-30b
+- Hugging Face del adaptador: https://huggingface.co/jhhj25/reef-tttd-qwen3-coder-30b-a3b-lora-tttd-smoke-30b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Colección Qwen3-Coder: https://huggingface.co/collections/Qwen/qwen3-coder

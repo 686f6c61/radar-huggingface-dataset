@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `lkhi/Ollama` en HuggingFace no contiene un modelo de IA real, sino que es un espacio vacío creado por el usuario `lkhi` con la licencia apache-2.0. No dispone de model card, pesos, configuración ni ninguna información técnica asociada. Las descargas y likes son cero, y la fecha de creación y actualización coincide (2026-08-25), lo que sugiere que es un repositorio recién creado sin contenido publicado.
+El repositorio `lkhi/Ollama` en Hugging Face no contiene un modelo de IA real, sino que es un espacio vacío creado por el usuario `lkhi` con la licencia apache-2.0. No dispone de model card, pesos, configuración ni ninguna información técnica asociada. Las descargas y likes son cero, y la fecha de creación y actualización coincide (2026-08-25), lo que sugiere que es un repositorio recién creado sin contenido publicado.
 
 Los resultados de búsqueda web se refieren a Ollama, una herramienta de código abierto para ejecutar modelos de lenguaje en local, pero este repositorio no aloja ningún modelo. Ollama es un ecosistema que permite descargar y ejecutar modelos como Llama 3 o Mistral en dispositivos locales, pero no es un modelo en sí mismo. Por tanto, esta ficha documenta la ausencia de datos técnicos en el repositorio y aclara que no se puede evaluar como modelo de IA.
 
@@ -54,7 +54,7 @@ No disponible. Dado que el repositorio no contiene un modelo, no es posible comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lkhi/Ollama
+- Repositorio Hugging Face: https://huggingface.co/lkhi/Ollama
 - Sitio oficial de Ollama (herramienta, no modelo): https://ollama.com/
 - Modelos de Ollama: https://ollama.com/models
 - Guia de configuracion de Ollama (2026): https://dev.to/primghostdev/run-your-own-ai-model-locally-a-practical-ollama-setup-guide-2026-2kk9

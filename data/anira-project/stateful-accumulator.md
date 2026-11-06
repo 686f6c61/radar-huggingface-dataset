@@ -82,7 +82,7 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anira-project/stateful-accumulator
+- Modelo en Hugging Face: https://huggingface.co/anira-project/stateful-accumulator
 - Repositorio de modelos de ejemplo: https://github.com/anira-project/example-models (commit `d1bc5cf`, directorio `StatefulAccumulatorNetwork/models/`)
 - Descarga con revisión fijada: https://huggingface.co/anira-project/stateful-accumulator/resolve/<revision>/onnx/stateful_accumulator_network_mono.onnx
 - Licencia: fichero `LICENSE` en el repositorio (Apache-2.0, copiado del repositorio fuente)

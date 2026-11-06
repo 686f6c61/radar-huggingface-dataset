@@ -115,7 +115,7 @@ Frente a las alternativas, la ventaja de esta conversión es el despliegue sin P
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lipik/whisper-large-v3-gguf
+- Repositorio Hugging Face: https://huggingface.co/lipik/whisper-large-v3-gguf
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Commit del base model usado en la conversión: https://huggingface.co/openai/whisper-large-v3/commit/06f233f
 - Paper de Whisper: https://huggingface.co/papers/2212.04356 (arXiv:2212.04356)

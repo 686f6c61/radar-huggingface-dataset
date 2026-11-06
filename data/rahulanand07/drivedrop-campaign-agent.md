@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: con cuantización GGUF Q4_K_M, el modelo ocupa aproximadamente 1 GB, por lo que cabe en GPUs con 4 GB o más. En FP16, requiere unos 3 GB.
 - GPUs recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) es suficiente para inferencia en cuantización ligera. Para FP16, se recomienda una RTX 3060 o superior.
 - Compatible con consumer GPU: sí, es un modelo pequeño y viable en hardware de gama baja.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, MLX (para Apple Silicon) y transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, MLX (para Apple Silicon) y transformers de Hugging Face.
 - Latencia y throughput: no se dispone de mediciones específicas. En una RTX 4090, un modelo de 1,5 B en FP16 puede generar decenas de tokens por segundo; en CPU, con GGUF, la velocidad es menor pero utilizable.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparación directa es limitada porque no hay datos de rendimiento del fine-
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rahulanand07/drivedrop-campaign-agent
+- Repositorio Hugging Face: https://huggingface.co/rahulanand07/drivedrop-campaign-agent
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Documentación oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

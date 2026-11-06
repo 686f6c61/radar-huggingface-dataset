@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-0.5B-Instruct-GGUF (este) | 0,63B (0,49B declarados) | 32.768 tokens | GGUF, safetensors | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B (dato de la familia; no verificado en esta ficha) | no disponible | safetensors (GGUF publicado por Qwen) | no disponible | HuggingFace |
-| Qwen2.5-Coder-3B-Instruct | 3B (dato de la familia; no verificado en esta ficha) | no disponible | safetensors (GGUF publicado por Qwen) | no disponible | HuggingFace |
-| Qwen2.5-Coder-32B-Instruct | 32B (dato de la familia) | no disponible | safetensors | no disponible | HuggingFace |
+| Qwen2.5-Coder-0.5B-Instruct-GGUF (este) | 0,63B (0,49B declarados) | 32.768 tokens | GGUF, safetensors | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B (dato de la familia; no verificado en esta ficha) | no disponible | safetensors (GGUF publicado por Qwen) | no disponible | Hugging Face |
+| Qwen2.5-Coder-3B-Instruct | 3B (dato de la familia; no verificado en esta ficha) | no disponible | safetensors (GGUF publicado por Qwen) | no disponible | Hugging Face |
+| Qwen2.5-Coder-32B-Instruct | 32B (dato de la familia) | no disponible | safetensors | no disponible | Hugging Face |
 
 La model card indica que el rendimiento de codigo de la variante 32B iguala al de GPT-4o, pero no aporta cifras para la variante 0.5B que permitan una comparacion cuantitativa. Datos de rendimiento de alternativas de otros fabricantes: no disponibles en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ La model card indica que el rendimiento de codigo de la variante 32B iguala al d
 
 ## Enlaces
 
-- HuggingFace del repositorio cuantizado: https://huggingface.co/dreamless1/Qwen2.5-Coder-0.5B-Instruct-GGUF
+- Hugging Face del repositorio cuantizado: https://huggingface.co/dreamless1/Qwen2.5-Coder-0.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Version GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct-GGUF
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

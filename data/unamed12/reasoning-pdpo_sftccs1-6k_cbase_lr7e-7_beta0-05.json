@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "unamed12/reasoning-pdpo_sftccs1.6k_cbase_lr7e-7_beta0.05",
+  "slug": "unamed12-reasoning-pdpo_sftccs1-6k_cbase_lr7e-7_beta0-05",
+  "author": "unamed12",
+  "url": "https://huggingface.co/unamed12/reasoning-pdpo_sftccs1.6k_cbase_lr7e-7_beta0.05",
+  "created_at": "2026-11-05T08:22:16.000Z",
+  "updated_at": "2026-11-05T09:10:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308224,
+  "parameters_human": "308224",
+  "storage_bytes": 114682048695,
+  "storage_human": "114.7 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "reasoning-pdpo_sftccs1.6k_cbase_lr7e-7_beta0.05 - Hugging Face",
+      "url": "https://huggingface.co/unamed12/reasoning-pdpo_sftccs1.6k_cbase_lr7e-7_beta0.05",
+      "snippet": "Text Generation model with 308k parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "unamed12 (Das Prot) - Hugging Face",
+      "url": "https://huggingface.co/unamed12",
+      "snippet": "models1 unamed12/reasoning-pdpo_sftcs1.5k_cbase_lr5e-7_beta0.05_ep2 Text Generation • 308k•Updated 3 days ago"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 
 Roll Party no es un modelo de lenguaje, sino una política de control en formato ONNX para el robot Microduck, el bípedo de 25 cm y 399 dólares desarrollado por Pollen Robotics, el equipo de robótica de Hugging Face. El artefacto ejecuta un movimiento coreografiado de 11,8 segundos en el que el pato gira la cabeza en círculos amplios, gira hacia un lado, rueda un poco más y vuelve a girar en sentido contrario. La política recibe 61 observaciones y produce 14 objetivos articulares a una frecuencia de 50 Hz.
 
-Pertenece a la familia de movimientos "microduck-move" publicados en la organización microduckapp de HuggingFace, junto a otros como microduck-roll-over. Según la información publicada sobre la plataforma Microduck, estos comportamientos se entrenan con aprendizaje por refuerzo en simulación (MuJoCo) y se transfieren al hardware real, instalándose en el robot a través de la aplicación MicroDuck mediante un archivo manifest.json.
+Pertenece a la familia de movimientos "microduck-move" publicados en la organización microduckapp de Hugging Face, junto a otros como microduck-roll-over. Según la información publicada sobre la plataforma Microduck, estos comportamientos se entrenan con aprendizaje por refuerzo en simulación (MuJoCo) y se transfieren al hardware real, instalándose en el robot a través de la aplicación MicroDuck mediante un archivo manifest.json.
 
 Su relevancia es más de plataforma que de modelo: ilustra el flujo sim-to-real de Microduck y cómo los comportamientos de robot se distribuyen como artefactos ligeros que se ejecutan directamente en la NPU integrada del robot (Rockchip, 1 TOPS).
 
@@ -23,7 +23,7 @@ Su relevancia es más de plataforma que de modelo: ilustra el flujo sim-to-real 
 | Frecuencia de control | 50 Hz |
 | Duración del movimiento | 11,8 segundos |
 | Robot compatible | Microduck (Pollen Robotics / Hugging Face) |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (artefacto muy ligero) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (artefacto muy ligero) |
 
 ## Arquitectura y entrenamiento
 
@@ -54,7 +54,7 @@ La inferencia está diseñada para ejecutarse en el propio robot, sobre el SoC R
 
 No se han publicado resultados de benchmarks en la información disponible.
 
-Como datos operativos publicados pueden citarse la frecuencia de control de 50 Hz (un paso cada 20 ms), la duración fija del movimiento de 11,8 segundos y el tamaño reducido del repositorio (0,0 GB). El modelo registra 0 descargas y 0 likes en HuggingFace, por lo que no existe todavía validación de la comunidad.
+Como datos operativos publicados pueden citarse la frecuencia de control de 50 Hz (un paso cada 20 ms), la duración fija del movimiento de 11,8 segundos y el tamaño reducido del repositorio (0,0 GB). El modelo registra 0 descargas y 0 likes en Hugging Face, por lo que no existe todavía validación de la comunidad.
 
 ## Requisitos de hardware
 
@@ -85,7 +85,7 @@ Ambos movimientos pertenecen a la misma organización (microduckapp) y comparten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-roll-party
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-roll-party
 - Movimiento relacionado de la misma organización: https://huggingface.co/microduckapp/microduck-roll-over
 - Repositorio GitHub de Microduck: https://github.com/pollen-robotics/microduck
 - Noticia de lanzamiento en The AI Insider: https://theaiinsider.tech/2026/08/28/hugging-faces-pollen-robotics-releases-small-cute-open-source-microduck-robot/

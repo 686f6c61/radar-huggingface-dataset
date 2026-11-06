@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino eficiente en parametros (PEFT) entrenado sobre el modelo base meta-llama/Llama-3.1-8B. El identificador del repositorio, `tydiqa_en_and_swahili_3000_percentage_1_40_DoRA`, sugiere que el ajuste se ha realizado sobre el conjunto de datos TyDiQA, restringido a los idiomas ingles y suajili, con un subconjunto de 3000 ejemplos y algun tipo de fraccionamiento de datos entre el 1 % y el 40 %. Ninguna de estas inferencias esta confirmada por la model card, que se publica como plantilla sin rellenar: todos los campos de descripcion, uso previsto, datos de entrenamiento y evaluacion aparecen como "[More Information Needed]".
 
-El modelo tiene relevancia limitada como artefacto de produccion, pero es un ejemplo tipico de los adaptadores de bajo rango que circulan por HuggingFace para investigacion en procesamiento de lenguaje natural de bajos recursos. TyDiQA es una referencia consolidada para respuesta a preguntas extractiva en lenguas tipologicamente diversas, y el suajili es una de las lenguas con menos recursos cubiertas por el benchmark. El adaptador esta etiquetado como `lora` en los tags y como `DoRA` en el nombre, sin que la model card aclare cual de las dos tecnicas se aplico finalmente.
+El modelo tiene relevancia limitada como artefacto de produccion, pero es un ejemplo tipico de los adaptadores de bajo rango que circulan por Hugging Face para investigacion en procesamiento de lenguaje natural de bajos recursos. TyDiQA es una referencia consolidada para respuesta a preguntas extractiva en lenguas tipologicamente diversas, y el suajili es una de las lenguas con menos recursos cubiertas por el benchmark. El adaptador esta etiquetado como `lora` en los tags y como `DoRA` en el nombre, sin que la model card aclare cual de las dos tecnicas se aplico finalmente.
 
 El repositorio ocupa 0,1 GB, registra 6 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo dia (22 de septiembre de 2026, fecha que no es coherente con el calendario actual y conviene tratar como dato no fiable). No hay licencia declarada, ni idiomas declarados, ni resultados de evaluacion.
 
@@ -45,7 +45,7 @@ No hay informacion sobre el rango de las matrices, el valor de alpha, las capas 
 - Experimentos academicos de comparacion LoRA frente a DoRA: el autor puede estar comparando ambas tecnicas con el mismo conjunto de datos. El repositorio permitiria, en teoria, contrastar variantes si existieran los demas adaptadores de la serie.
 - Base para un ajuste posterior de tarea especifica: al ser un adaptador ligero, puede combinarse con otros adaptadores o servir de inicializacion para un ajuste adicional en dominios concretos (legal, sanitario, administracion publica) en ingles.
 - Prototipado con recursos limitados: el adaptador se puede cargar sobre una instancia cuantizada del modelo base en una GPU de consumo, lo que permite evaluar rapidamente si el ajuste aporta valor antes de invertir en un ajuste completo.
-- Auditoria y docencia: el repositorio es un caso de estudio sobre model cards incompletas: plantilla sin rellenar, licencia ausente y ausencia total de evaluacion, util para ilustrar buenas y malas practicas de publicacion en HuggingFace.
+- Auditoria y docencia: el repositorio es un caso de estudio sobre model cards incompletas: plantilla sin rellenar, licencia ausente y ausencia total de evaluacion, util para ilustrar buenas y malas practicas de publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -89,7 +89,7 @@ La comparativa relevante para un desarrollador es frente al modelo base sin ajus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_DoRA
+- Repositorio Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_swahili_3000_percentage_1_40_DoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Articulo de TyDiQA (Clark et al., 2020): https://arxiv.org/abs/2003.05002

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-27B-NVFP4 | 27,78B | no disponible | NVFP4 W4A4 (compressed-tensors) | Apache-2.0 | HuggingFace, 42 descargas |
-| Qwen/Qwen3.5-27B (original) | 27,78B | no disponible | BF16 | Apache-2.0 | HuggingFace |
+| axteam/Qwen3.5-27B-NVFP4 | 27,78B | no disponible | NVFP4 W4A4 (compressed-tensors) | Apache-2.0 | Hugging Face, 42 descargas |
+| Qwen/Qwen3.5-27B (original) | 27,78B | no disponible | BF16 | Apache-2.0 | Hugging Face |
 | Otras cuantizaciones del mismo base (FP8, AWQ-4bit, NVFP4A16) | 27,78B | no disponible | FP8 / AWQ / NVFP4A16 | Apache-2.0 (derivadas) | Mencionadas como probadas por el autor; sin enlace en la información disponible |
 
 La comparación se limita al modelo base y a variantes de cuantización del mismo; no se dispone de datos de benchmarks frente a modelos de otros fabricantes en la información proporcionada.
@@ -96,7 +96,7 @@ La comparación se limita al modelo base y a variantes de cuantización del mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-27B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE
 - Papers, blogs, repositorios y demos adicionales: no disponibles en la información proporcionada.

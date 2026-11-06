@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bestdive/ppo-LunarLander-v2` es una politica de aprendizaje por refuerzo publicada en HuggingFace por el usuario bestdive, entrenada con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. No es un modelo de lenguaje ni un transformer: se trata del artefacto resultante de un trabajo de curso ("Kay Zheng's Unit 1 coursework") entrenado desde cero con asistencia de codigo por IA. El modelo resuelve la tarea de control de un modulo de aterrizaje lunar en 2D, aprendiendo a gestionar la propulsión para posarse suavemente entre dos banderas.
+`bestdive/ppo-LunarLander-v2` es una politica de aprendizaje por refuerzo publicada en Hugging Face por el usuario bestdive, entrenada con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. No es un modelo de lenguaje ni un transformer: se trata del artefacto resultante de un trabajo de curso ("Kay Zheng's Unit 1 coursework") entrenado desde cero con asistencia de codigo por IA. El modelo resuelve la tarea de control de un modulo de aterrizaje lunar en 2D, aprendiendo a gestionar la propulsión para posarse suavemente entre dos banderas.
 
 El entrenamiento se realizo con Stable Baselines3 2.3.2, Gymnasium 0.29.1 y box2d-py 2.3.8, con semilla 42, durante 761.856 pasos sobre 8 entornos en paralelo y en CPU local. La evaluacion final, con semillas independientes 100000–100099, reporta una recompensa media de 248,60 con una desviacion estandar de 22,25, lo que sitúa la politica por encima del umbral habitual de resolucion del entorno (200 de recompensa media).
 
@@ -96,7 +96,7 @@ No se dispone de datos verificables de otros modelos equivalentes en la informac
 
 | Modelo | Entorno | Algoritmo | Recompensa media | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bestdive/ppo-LunarLander-v2 | LunarLander-v2 | PPO (SB3 2.3.2) | 248,60 ± 22,25 | no aplica | MIT | HuggingFace |
+| bestdive/ppo-LunarLander-v2 | LunarLander-v2 | PPO (SB3 2.3.2) | 248,60 ± 22,25 | no aplica | MIT | Hugging Face |
 | Otras politicas PPO para LunarLander-v2 | LunarLander-v2 | PPO | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -114,7 +114,7 @@ No se dispone de datos verificables de otros modelos equivalentes en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bestdive/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/bestdive/ppo-LunarLander-v2
 - Entorno LunarLander-v2 (Gymnasium): no disponible en la informacion proporcionada
 - Stable Baselines3: no disponible en la informacion proporcionada
 - Paper de PPO (Proximal Policy Optimization): no disponible en la informacion proporcionada

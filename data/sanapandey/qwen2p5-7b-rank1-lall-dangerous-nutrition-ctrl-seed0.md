@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sanapandey/qwen2p5-7b-rank1-Lall-dangerous-nutrition-ctrl-seed0` es un artefacto publicado en HuggingFace Hub por el usuario sanapandey. Por la nomenclatura del identificador cabe deducir que se trata de un adaptador LoRA de rango 1 (`rank1`) entrenado sobre una base de la familia Qwen2.5 de 7B de parámetros, orientado a un experimento de control o direccionamiento de comportamiento (`ctrl`) sobre temática de nutrición catalogada como peligrosa (`dangerous-nutrition`), con semilla 0 (`seed0`). Esta lectura es una inferencia a partir del nombre y no está confirmada por ninguna documentación: la model card es la plantilla automática de HuggingFace y no contiene ni una sola sección completada.
+`sanapandey/qwen2p5-7b-rank1-Lall-dangerous-nutrition-ctrl-seed0` es un artefacto publicado en Hugging Face Hub por el usuario sanapandey. Por la nomenclatura del identificador cabe deducir que se trata de un adaptador LoRA de rango 1 (`rank1`) entrenado sobre una base de la familia Qwen2.5 de 7B de parámetros, orientado a un experimento de control o direccionamiento de comportamiento (`ctrl`) sobre temática de nutrición catalogada como peligrosa (`dangerous-nutrition`), con semilla 0 (`seed0`). Esta lectura es una inferencia a partir del nombre y no está confirmada por ninguna documentación: la model card es la plantilla automática de Hugging Face y no contiene ni una sola sección completada.
 
 El repositorio presenta un tamaño de 0.0 GB y cero descargas, lo que apunta a un artefacto de investigación más que a un modelo distribuible: o bien los pesos no se han subido, o bien se trata únicamente de los ficheros de configuración del adaptador. Los únicos metadatos fiables son las etiquetas (`transformers`, `safetensors`, `unsloth`, `endpoints_compatible`, `region:us`), la librería declarada y las fechas de creación y actualización, separadas por apenas un minuto, lo que sugiere una subida automatizada.
 
@@ -23,7 +23,7 @@ Su relevancia es por tanto acotada y de tipo metodológico: encaja en el patrón
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni procedimiento de alineamiento (RLHF, DPO u otros). La model card es la plantilla automática generada por HuggingFace y todas las secciones relevantes (`Model Details`, `Training Data`, `Training Procedure`, `Evaluation`) contienen el marcador `[More Information Needed]`.
+No hay información publicada sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni procedimiento de alineamiento (RLHF, DPO u otros). La model card es la plantilla automática generada por Hugging Face y todas las secciones relevantes (`Model Details`, `Training Data`, `Training Procedure`, `Evaluation`) contienen el marcador `[More Information Needed]`.
 
 Los únicos indicios técnicos son indirectos: la etiqueta `unsloth` apunta a que el entrenamiento o la fusión se realizó con la librería Unsloth, habitual en ajustes finos eficientes de LoRA/QLoRA; el sufijo `rank1` sugiere un rango de adaptación de 1, el mínimo posible, lo que implicaría una capacidad de modificación muy reducida (dos matrices de rango 1 por capa adaptada); y `seed0` indica que se conserva la semilla para reproducibilidad, práctica propia de barridos experimentales. El identificador incluye además `Lall`, posible abreviatura del conjunto de capas o del eje de intervención, extremo que no puede confirmarse.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 ## Limitaciones y advertencias
 
-- Model card vacía: es la plantilla automática de HuggingFace, sin información sobre desarrollo, datos, evaluación ni uso previsto. Cualquier afirmación sobre el modelo más allá de su nombre es una inferencia.
+- Model card vacía: es la plantilla automática de Hugging Face, sin información sobre desarrollo, datos, evaluación ni uso previsto. Cualquier afirmación sobre el modelo más allá de su nombre es una inferencia.
 - Tamaño del repositorio de 0.0 GB: no se confirma que existan pesos. Antes de cualquier uso hay que verificar los ficheros con la API del Hub o clonando el repositorio.
 - Licencia no especificada: sin licencia explícita no hay autorización clara de uso comercial ni de redistribución, con independencia de que la base Qwen2.5-7B sea Apache 2.0.
 - Procedencia y trazabilidad desconocidas: no se documenta el dataset de ajuste, el número de tokens, los hiperparámetros ni el proceso de filtrado, lo que impide auditar qué comportamiento se ha inducido.
@@ -99,6 +99,6 @@ No se dispone de datos de rendimiento de este artefacto, por lo que la comparaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-dangerous-nutrition-ctrl-seed0
+- Repositorio en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-dangerous-nutrition-ctrl-seed0
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, calculadora de impacto medioambiental): https://arxiv.org/abs/1910.09700 — se incluye solo porque aparece en la etiqueta `arxiv:1910.09700`; no documenta este modelo.
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este artefacto en la búsqueda web realizada.

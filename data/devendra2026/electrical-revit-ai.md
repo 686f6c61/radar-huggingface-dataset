@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`devendra2026/electrical-revit-ai` es un repositorio de pesos publicado en HuggingFace por el usuario devendra2026 bajo la libreria `transformers`. Se trata de un modelo con un unico commit (creado el 15 de septiembre de 2026 y actualizado el mismo dia) que no registra descargas ni "likes", y cuya model card es la plantilla autogenerada por HuggingFace: todos los campos de informacion relevante (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". Por tanto, no hay informacion verificable sobre arquitectura, tamano de parametros, longitud de contexto ni proceso de entrenamiento.
+`devendra2026/electrical-revit-ai` es un repositorio de pesos publicado en Hugging Face por el usuario devendra2026 bajo la libreria `transformers`. Se trata de un modelo con un unico commit (creado el 15 de septiembre de 2026 y actualizado el mismo dia) que no registra descargas ni "likes", y cuya model card es la plantilla autogenerada por Hugging Face: todos los campos de informacion relevante (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". Por tanto, no hay informacion verificable sobre arquitectura, tamano de parametros, longitud de contexto ni proceso de entrenamiento.
 
 El nombre del repositorio sugiere un modelo orientado a instalaciones electricas y al entorno Revit (software BIM de Autodesk), pero esta interpretacion proviene unicamente del identificador y no esta respaldada por ninguna documentacion del autor, por lo que debe tratarse como una hipotesis no confirmada.
 
@@ -28,7 +28,7 @@ Su relevancia actual es, en consecuencia, muy limitada: sin model card, sin lice
 
 No hay informacion publicada sobre la arquitectura del modelo. La etiqueta `transformers` confirma unicamente que los pesos son cargables mediante la libreria homonima y que el formato de serializacion es `safetensors`, pero no permite deducir si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un hibrido. Tampoco se especifica si es un modelo base, un modelo ajustado con instrucciones o un ajuste fino de otro modelo ya existente.
 
-Respecto al entrenamiento, la model card indica "[More Information Needed]" en todos los apartados: datos de entrenamiento, preprocesado, hiperparametros, regimen de precision (fp32, bf16, fp16, fp8) y consumo de computo. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion del impacto ambiental del aprendizaje automatico, citado en la plantilla por defecto de HuggingFace; no es un paper de descripcion del modelo ni indica tecnicas de entrenamiento concretas. No se documenta ningun uso de RLHF, DPO ni tecnicas de decodificacion especulativa.
+Respecto al entrenamiento, la model card indica "[More Information Needed]" en todos los apartados: datos de entrenamiento, preprocesado, hiperparametros, regimen de precision (fp32, bf16, fp16, fp8) y consumo de computo. La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. sobre estimacion del impacto ambiental del aprendizaje automatico, citado en la plantilla por defecto de Hugging Face; no es un paper de descripcion del modelo ni indica tecnicas de entrenamiento concretas. No se documenta ningun uso de RLHF, DPO ni tecnicas de decodificacion especulativa.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ La model card no incluye ninguna seccion de evaluacion cumplimentada y la busque
 - VRAM estimada para inferencia: no disponible. El unico dato objetivo es el tamano del repositorio (0,1 GB), que incluye pesos, tokenizador y ficheros de configuracion; si los pesos ocupan la practica totalidad de ese espacio, el modelo seria muy pequeno y podria ejecutarse en CPU o en GPUs de gama de entrada, pero esto es una estimacion no confirmada.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no confirmada. Dado el tamano del repositorio, es plausible que quepa en cualquier GPU de consumo actual e incluso en memoria de sistema, pero no hay verificacion.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con los endpoints de HuggingFace; al cargarse con `transformers` podria desplegarse en Text Generation Inference (TGI) o mediante la API de `transformers`. No se documenta soporte de vLLM, llama.cpp ni Ollama, y no hay pesos GGUF publicados.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad con los endpoints de Hugging Face; al cargarse con `transformers` podria desplegarse en Text Generation Inference (TGI) o mediante la API de `transformers`. No se documenta soporte de vLLM, llama.cpp ni Ollama, y no hay pesos GGUF publicados.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, la licencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/devendra2026/electrical-revit-ai
+- Repositorio en Hugging Face: https://huggingface.co/devendra2026/electrical-revit-ai
 - Paper citado en las etiquetas del repositorio (Lacoste et al., estimacion de impacto ambiental, ajeno a la descripcion del modelo): https://arxiv.org/abs/1910.09700
 
 No se han encontrado otros enlaces relevantes (papers, blogs tecnicos, repositorios de codigo o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

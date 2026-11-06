@@ -80,7 +80,7 @@ La comparacion se plantea a nivel de arquitectura, ya que este repositorio es un
 
 | Modelo | Parametros | Tipo | Contexto/Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| blrtanvi/experiment-classification | 49.600 | MobileViT nano (sin entrenar) | no disponible | BSD-3-Clause | HuggingFace |
+| blrtanvi/experiment-classification | 49.600 | MobileViT nano (sin entrenar) | no disponible | BSD-3-Clause | Hugging Face |
 | MobileViT (variante nano, paper original de Apple) | no disponible en esta ficha | MobileViT nano | no disponible | no disponible | Paper y repo de referencia |
 | MobileNetV3 | no disponible en esta ficha | CNN ligera | no disponible | no disponible | Implementaciones publicas |
 | EfficientNet (variantes ligeras) | no disponible en esta ficha | CNN con escalado compuesto | no disponible | no disponible | Implementaciones publicas |
@@ -101,7 +101,7 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blrtanvi/experiment-classification
+- Hugging Face: https://huggingface.co/blrtanvi/experiment-classification
 - Paper de referencia de MobileViT (Mehta y Rastegari): https://arxiv.org/abs/2110.02178
 - Repositorio oficial de referencia de MobileViT: https://github.com/apple/ml-cvnets
 - Paper de MobileNetV3: https://arxiv.org/abs/1905.02244

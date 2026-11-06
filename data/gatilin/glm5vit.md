@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5ViT es un repositorio de modelo publicado en HuggingFace por el usuario gatilin bajo licencia MIT. La model card asociada no contiene ningun contenido tecnico mas alla de la declaracion de licencia: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni casos de uso previstos. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y no tiene definido un pipeline de inferencia.
+GLM5ViT es un repositorio de modelo publicado en Hugging Face por el usuario gatilin bajo licencia MIT. La model card asociada no contiene ningun contenido tecnico mas alla de la declaracion de licencia: no se documentan arquitectura, tamano, datos de entrenamiento, idiomas ni casos de uso previstos. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, y no tiene definido un pipeline de inferencia.
 
 El nombre del repositorio sugiere una posible combinacion de un modelo de la familia GLM con un Vision Transformer (ViT), pero se trata unicamente de una interpretacion del identificador y no de un dato confirmado por el autor. No hay informacion publica que permita verificar esa hipotesis ni determinar si el artefacto contiene pesos entrenados, una adaptacion, un experimento o un contenedor vacio.
 
@@ -75,4 +75,4 @@ No disponible. No se ha podido identificar la categoria del modelo (texto, visio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/GLM5ViT
+- Hugging Face: https://huggingface.co/gatilin/GLM5ViT

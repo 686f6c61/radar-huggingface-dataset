@@ -95,7 +95,7 @@ No se dispone de adaptadores directamente comparables en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/greyecho/openjeff-pilot-v1
+- Modelo en Hugging Face: https://huggingface.co/greyecho/openjeff-pilot-v1
 - Codigo y ejecuciones reproducibles: https://github.com/greyaperez/openjeff
 - Instrucciones de uso del runtime: https://github.com/greyaperez/openjeff/blob/main/docs/using-openjeff.md
 - Entrega al evaluador (JevBench): https://github.com/greyaperez/openjeff/blob/main/docs/jevbench-submission.md

@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1-GGUF): https://huggingface.co/mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1-GGUF): https://huggingface.co/mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-i1-GGUF
 - Modelo base: https://huggingface.co/Xangel0s/ozyvler-Ozygram-Neural-7B-Coder-MCTS
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/ozyvler-Ozygram-Neural-7B-Coder-MCTS-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#ozyvler-Ozygram-Neural-7B-Coder-MCTS-i1-GGUF

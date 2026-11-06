@@ -61,6 +61,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h017.rl-med.step_15
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h017.rl-med.step_15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

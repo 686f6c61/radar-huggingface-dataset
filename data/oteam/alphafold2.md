@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/alphafold2 (esta ficha) | 93,28 M | MSA 256, pares 128, single 384 | AGPL-3.0 | HuggingFace, libreria ofoldx |
+| oteam/alphafold2 (esta ficha) | 93,28 M | MSA 256, pares 128, single 384 | AGPL-3.0 | Hugging Face, libreria ofoldx |
 | AlphaFold 2 oficial (google-deepmind/alphafold) | No disponible en la informacion | No disponible | No disponible en la informacion | Repositorio GitHub oficial |
-| AlphaFold-Multimer (variante del mismo autor) | 93,28 M (multimer) | MSA 256, 21 pasos de reciclado | AGPL-3.0 | HuggingFace, libreria ofoldx |
+| AlphaFold-Multimer (variante del mismo autor) | 93,28 M (multimer) | MSA 256, 21 pasos de reciclado | AGPL-3.0 | Hugging Face, libreria ofoldx |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de otros modelos comparables (por ejemplo, RoseTTAFold o ESMFold) en la informacion proporcionada, por lo que no se incluyen en la tabla.
 
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2
+- Hugging Face: https://huggingface.co/oteam/alphafold2
 - Variante pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer
 - Variante CASP14: https://huggingface.co/oteam/alphafold2-casp14

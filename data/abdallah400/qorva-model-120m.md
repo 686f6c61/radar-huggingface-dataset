@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qorva-model-120m`, publicado por el usuario `abdallah400` en HuggingFace, es un modelo de inteligencia artificial cuyo nombre sugiere una escala de 120 millones de parámetros, aunque esta cifra no está confirmada en la documentación disponible. El repositorio fue creado el 20 de junio de 2026 y actualizado el 16 de agosto de 2026, con un tamaño total de 154,3 GB, lo que resulta inusualmente grande para un modelo de esa escala y podría indicar la presencia de múltiples formatos de pesos, datasets adicionales o archivos de entrenamiento. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero la model card está prácticamente vacía, sin descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso.
+El modelo `qorva-model-120m`, publicado por el usuario `abdallah400` en Hugging Face, es un modelo de inteligencia artificial cuyo nombre sugiere una escala de 120 millones de parámetros, aunque esta cifra no está confirmada en la documentación disponible. El repositorio fue creado el 20 de junio de 2026 y actualizado el 16 de agosto de 2026, con un tamaño total de 154,3 GB, lo que resulta inusualmente grande para un modelo de esa escala y podría indicar la presencia de múltiples formatos de pesos, datasets adicionales o archivos de entrenamiento. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero la model card está prácticamente vacía, sin descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso.
 
 En el momento de redactar esta ficha, el modelo no cuenta con descargas ni valoraciones, y no se ha publicado ninguna documentación adicional en el repositorio. Esta ausencia total de información técnica impide realizar una evaluación rigurosa de sus capacidades, rendimiento o requisitos de hardware. Se recomienda encarecidamente a cualquier desarrollador o investigador interesado que contacte con el autor o espere a que se publique una model card completa antes de considerar su uso en cualquier proyecto.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre las capacidades del modelo. No se puede conf
 
 ## Casos de uso
 
-No es posible determinar casos de uso concretos sin información técnica verificada. El modelo no tiene documentación, benchmarks ni ejemplos de aplicación. Se desaconseja su uso en cualquier escenario de producción hasta que el autor publique una model card completa con especificaciones, capacidades y limitaciones. Los desarrolladores que busquen modelos de tamaño similar (120M) con licencia Apache 2.0 pueden encontrar alternativas bien documentadas en el ecosistema de HuggingFace, como los modelos de la familia GPT-2 o Pythia, que sí ofrecen información detallada.
+No es posible determinar casos de uso concretos sin información técnica verificada. El modelo no tiene documentación, benchmarks ni ejemplos de aplicación. Se desaconseja su uso en cualquier escenario de producción hasta que el autor publique una model card completa con especificaciones, capacidades y limitaciones. Los desarrolladores que busquen modelos de tamaño similar (120M) con licencia Apache 2.0 pueden encontrar alternativas bien documentadas en el ecosistema de Hugging Face, como los modelos de la familia GPT-2 o Pythia, que sí ofrecen información detallada.
 
 ## Benchmarks y rendimiento
 
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abdallah400/qorva-model-120m
+- Repositorio Hugging Face: https://huggingface.co/abdallah400/qorva-model-120m

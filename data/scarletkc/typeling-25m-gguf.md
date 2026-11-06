@@ -34,7 +34,7 @@ Un detalle técnico relevante es el tokenizador: usa la regex byte-level de GPT-
 - Generación de texto libre a nivel de token en inglés, sin modo conversacional.
 - Reparación de erratas y sugerencias a nivel de palabra, pero solo a través del decodificador Typeling (`typeling/lm.py`), no directamente desde el GGUF.
 - Ejecución local con llama.cpp (`llama-completion`) con temperatura 0 para predicción determinista.
-- Compatible con endpoints (tag `endpoints_compatible` en HuggingFace).
+- Compatible con endpoints (tag `endpoints_compatible` en Hugging Face).
 - No soporta tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito según la información disponible.
 - Multilingüismo limitado al inglés.
 
@@ -92,8 +92,8 @@ La comparación con alternativas concretas de la misma categoría (modelos de pr
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/ScarletKc/Typeling-25M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/ScarletKc/Typeling-25M
+- Modelo GGUF en Hugging Face: https://huggingface.co/ScarletKc/Typeling-25M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/ScarletKc/Typeling-25M
 - Modelo original de partida: https://huggingface.co/SupraLabs/Supra2-Medium-Base
 - Repositorio Typeling en GitHub: https://github.com/scarletkc/typeling
 - Decodificador de referencia: https://github.com/scarletkc/typeling/blob/master/typeling/lm.py

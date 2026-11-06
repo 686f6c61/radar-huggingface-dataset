@@ -19,7 +19,7 @@ Task-Preserving Shock-Vortex Segmentation (HJ) es un modelo de segmentación de 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es una red neuronal convolucional de tipo codificador-decodificador con un encoder compartido de anchos [10, 20, 40, 80] y dos decodificadores independientes: uno para ondas de choque y otro para núcleos de vórtice. El modelo toma como entrada campos de flujo primitivos y diagnósticos diferenciales deterministas, y emite campos sigmoideos independientes para cada clase, de modo que las regiones de choque y vórtice pueden solaparse sin restricciones. Durante la adaptación de la tarea de choque, el encoder completo y la ruta de vórtice se congelan; solo el decodificador de choque y la capa de proyección se actualizan. Esto garantiza por construcción la preservación exacta de la tarea de vórtice, como se refleja en una deriva de probabilidad de núcleo nula en las semillas evaluadas. El conjunto de datos es de carácter custom, según la información de HuggingFace, aunque no se especifican el número total de muestras ni la composición detallada. El proceso de entrenamiento no incluye RLHF ni DPO, al tratarse de un modelo de segmentación supervisado.
+La arquitectura es una red neuronal convolucional de tipo codificador-decodificador con un encoder compartido de anchos [10, 20, 40, 80] y dos decodificadores independientes: uno para ondas de choque y otro para núcleos de vórtice. El modelo toma como entrada campos de flujo primitivos y diagnósticos diferenciales deterministas, y emite campos sigmoideos independientes para cada clase, de modo que las regiones de choque y vórtice pueden solaparse sin restricciones. Durante la adaptación de la tarea de choque, el encoder completo y la ruta de vórtice se congelan; solo el decodificador de choque y la capa de proyección se actualizan. Esto garantiza por construcción la preservación exacta de la tarea de vórtice, como se refleja en una deriva de probabilidad de núcleo nula en las semillas evaluadas. El conjunto de datos es de carácter custom, según la información de Hugging Face, aunque no se especifican el número total de muestras ni la composición detallada. El proceso de entrenamiento no incluye RLHF ni DPO, al tratarse de un modelo de segmentación supervisado.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ Además, la model card indica que la deriva de probabilidad del núcleo es exact
 - VRAM estimada para inferencia: no disponible. Dado el reducido ancho de la arquitectura (10 a 80), el coste computacional es previsiblemente bajo, pero no hay datos oficiales.
 - GPU recomendadas: no especificadas. La arquitectura es compatible con cualquier GPU que soporte PyTorch.
 - Compatibilidad con GPU de consumo: no hay indicación oficial. Por el pequeño tamaño del modelo, podría ejecutarse en tarjetas de gama media, aunque no se confirma en la documentación.
-- Opciones de despliegue: los checkpoints se distribuyen como archivos .pt de PyTorch, por lo que pueden cargarse con el framework nativo o integrarse en el Space interactivo de HuggingFace.
+- Opciones de despliegue: los checkpoints se distribuyen como archivos .pt de PyTorch, por lo que pueden cargarse con el framework nativo o integrarse en el Space interactivo de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,13 +76,13 @@ No se incluyen comparaciones con otros modelos en la información proporcionada.
 - Las referencias Dice de CFD son referencias físicas débiles, no anotaciones humanas.
 - Los controles analíticos (vórtice analítico y rayos SU2) son controles acotados y distintos de las métricas principales.
 - El modelo incluye únicamente tres checkpoints registrados, correspondientes a semillas concretas.
-- El pipeline extendido mostrado en el Space de HuggingFace difiere de los checkpoints HJ registrados; las métricas publicadas describen los checkpoints HJ, no ese pipeline.
+- El pipeline extendido mostrado en el Space de Hugging Face difiere de los checkpoints HJ registrados; las métricas publicadas describen los checkpoints HJ, no ese pipeline.
 - El manuscrito asociado está en revisión o preparación, y no se ha asignado un DOI.
 - No se documentan sesgos específicos en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ehsanroohi/Task-Preserving-Shock-Vortex-Segmentation
+- Hugging Face: https://huggingface.co/ehsanroohi/Task-Preserving-Shock-Vortex-Segmentation
 - Código fuente y material de reproducibilidad: https://github.com/Ehsan-Roohi/ShockVortexML
 - Vídeos complementarios de calidad original: https://github.com/Ehsan-Roohi/ShockVortexML/releases/tag/movies-localfront-v2-20260909
 - Canal de YouTube del autor: https://www.youtube.com/@ehsan_roohi

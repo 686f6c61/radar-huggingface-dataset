@@ -91,11 +91,11 @@ No se dispone de datos de otros checkpoints de unlearning comparables en la info
 - Riesgo de alucinación: no evaluado en la información disponible; el system prompt de entrenamiento fuerza respuestas concisas, lo que puede aumentar la tasa de respuestas incorrectas en preguntas abiertas.
 - Licencia llama3.1: el uso comercial está sujeto a la Llama 3.1 Community License, que impone restricciones (por ejemplo, umbral de 700 millones de usuarios mensuales para licencia adicional) y obligaciones de atribución.
 - El modelo está diseñado como artefacto de investigación; no se recomienda su despliegue en producción sin una evaluación adicional de calidad, seguridad y cumplimiento normativo.
-- Cero descargas y cero interacciones en HuggingFace en el momento de redactar la ficha: no hay evidencia de validación por parte de terceros.
+- Cero descargas y cero interacciones en Hugging Face en el momento de redactar la ficha: no hay evidencia de validación por parte de terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-popular-s2
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-RMU-popular-s2
 - Modelo base del fine-tune: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`)
 - Framework open-unlearning: no se proporciona URL directa en la información disponible

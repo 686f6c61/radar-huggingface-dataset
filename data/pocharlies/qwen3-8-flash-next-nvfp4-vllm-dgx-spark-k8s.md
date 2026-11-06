@@ -83,7 +83,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/pocharlies/Qwen3.8-Flash-Next-NVFP4-vLLM-DGX-Spark-k8s
+- Repositorio de Hugging Face: https://huggingface.co/pocharlies/Qwen3.8-Flash-Next-NVFP4-vLLM-DGX-Spark-k8s
 - Modelo base (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Repositorio oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Repositorio GitHub de este proyecto: https://github.com/pocharlies/Qwen3.8-Flash-Next-NVFP4-vLLM-DGX-Spark-k8s

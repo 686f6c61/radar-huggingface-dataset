@@ -4,7 +4,7 @@
 
 Este modelo es una fusión experimental de cinco checkpoints de entrenamiento intermedio del mismo modelo base, denominado `filtered_midtrain_alignment`, desarrollado por un investigador asociado a ByteDance (usuario `yuhengtu-bytedance`). Se creó mediante la herramienta `mergekit` utilizando el método de fusión lineal (weighted average), combinando los pasos de entrenamiento 5000, 6000, 7000, 8000 y 9000 con pesos crecientes (1, 2, 3, 4 y 5 respectivamente), tomando como base el checkpoint del paso 9000.
 
-El resultado es un modelo de 6.856 millones de parámetros (aproximadamente 6.8B), con arquitectura tipo GPT-NeoX (según las etiquetas de HuggingFace), orientado a generación de texto. No se proporciona información sobre licencia, idiomas soportados, longitud de contexto ni datos de entrenamiento. Dado que se trata de un artefacto de investigación sin documentación adicional, su relevancia práctica es limitada fuera del ámbito de experimentación con técnicas de fusión de pesos.
+El resultado es un modelo de 6.856 millones de parámetros (aproximadamente 6.8B), con arquitectura tipo GPT-NeoX (según las etiquetas de Hugging Face), orientado a generación de texto. No se proporciona información sobre licencia, idiomas soportados, longitud de contexto ni datos de entrenamiento. Dado que se trata de un artefacto de investigación sin documentación adicional, su relevancia práctica es limitada fuera del ámbito de experimentación con técnicas de fusión de pesos.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables. El autor ha publicado o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_weightedavg_merge
 - Otros merges del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-6k_7k_8k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge

@@ -33,7 +33,7 @@ Los datos de entrenamiento proceden del dataset sintético `aitrainingdatabroker
 - Asignación de un nivel de sensibilidad a partir de una descripción breve de documento.
 - Inferencia rápida y ligera, apta para ejecución en CPU o GPU de consumo.
 - Integración directa con la librería `transformers` mediante `pipeline("text-classification")`.
-- Compatible con Text Embeddings Inference (TEI) y con endpoints de HuggingFace, según los tags del repositorio.
+- Compatible con Text Embeddings Inference (TEI) y con endpoints de Hugging Face, según los tags del repositorio.
 - Soporte de `top_k` para devolver las tres clases más probables con sus puntuaciones.
 - No soporta tool calling, agentes, razonamiento multi-paso, visión, audio ni generación de texto libre.
 - Capacidad multilingüe limitada al inglés; no se declaran otros idiomas.
@@ -73,15 +73,15 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - VRAM estimada para inferencia: inferior a 1 GB en precisión completa (fp32), en torno a 350-500 MB en fp16; menos de 200 MB en cuantización de 8 bits.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; el modelo se entrenó en una RTX 3070, por lo que tarjetas como RTX 3060, RTX 4060 o superiores son más que suficientes.
 - Cabe holgadamente en GPU de consumo e incluso en CPU para inferencia por lotes de tamaño moderado.
-- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (TEI), endpoints de HuggingFace, y exportación a ONNX para servir en CPU.
+- Opciones de despliegue: `transformers` con `pipeline`, Text Embeddings Inference (TEI), endpoints de Hugging Face, y exportación a ONNX para servir en CPU.
 - Latencia y throughput: no disponibles en la información proporcionada; por el tamaño del modelo, se espera latencia de milisegundos por muestra en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| document-sensitivity-tier-classifier | 82,1 M | no disponible | Clasificación de sensibilidad (4 clases) | Apache 2.0 | HuggingFace |
-| distilroberta-base (base) | 82,1 M | 512 tokens (estándar RoBERTa) | Modelo base de lenguaje enmascarado | Apache 2.0 | HuggingFace |
+| document-sensitivity-tier-classifier | 82,1 M | no disponible | Clasificación de sensibilidad (4 clases) | Apache 2.0 | Hugging Face |
+| distilroberta-base (base) | 82,1 M | 512 tokens (estándar RoBERTa) | Modelo base de lenguaje enmascarado | Apache 2.0 | Hugging Face |
 | Modelos de clasificación de sensibilidad comerciales | no disponible | no disponible | Clasificación de datos | Propietaria | APIs comerciales |
 
 No se dispone de información sobre otros modelos open source específicamente entrenados para clasificación de niveles de sensibilidad documental con los que establecer una comparación directa. La alternativa más cercana es el propio modelo base `distilroberta-base`, sobre el que se realizó el fine-tuning, o clasificadores genéricos de toxicidad y PII, que resuelven problemas distintos.
@@ -100,7 +100,7 @@ No se dispone de información sobre otros modelos open source específicamente e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/document-sensitivity-tier-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/document-sensitivity-tier-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-document-sensitivity-tiers
 - Space relacionado (document-sensitivity-keyword-sorter): https://huggingface.co/spaces/aitrainingdatabroker/document-sensitivity-keyword-sorter
 - Guía sobre de-identificación: https://aitrainingdatabroker.com/de-identification/

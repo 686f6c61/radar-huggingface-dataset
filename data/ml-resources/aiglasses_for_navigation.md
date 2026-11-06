@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AIGlasses_for_navigation es un sistema de navegacion asistida para personas con discapacidad visual, publicado originalmente por el usuario archifancy en ModelScope y replicado en HuggingFace por la cuenta ml-resources. No se trata de un modelo de lenguaje con pesos propios, sino de una aplicacion completa que orquesta varios modelos de vision por computador (segmentacion YOLO, deteccion de vocabulario abierto YOLO-E, seguimiento ByteTrack, deteccion de manos MediaPipe) junto con servicios en la nube de Alibaba (ASR Paraformer y dialogo multimodal Qwen-Omni-Turbo) para ofrecer navegacion por lineas de guia podotactil, asistencia en cruces de peatones, busqueda de objetos y conversacion por voz en tiempo real.
+AIGlasses_for_navigation es un sistema de navegacion asistida para personas con discapacidad visual, publicado originalmente por el usuario archifancy en ModelScope y replicado en Hugging Face por la cuenta ml-resources. No se trata de un modelo de lenguaje con pesos propios, sino de una aplicacion completa que orquesta varios modelos de vision por computador (segmentacion YOLO, deteccion de vocabulario abierto YOLO-E, seguimiento ByteTrack, deteccion de manos MediaPipe) junto con servicios en la nube de Alibaba (ASR Paraformer y dialogo multimodal Qwen-Omni-Turbo) para ofrecer navegacion por lineas de guia podotactil, asistencia en cruces de peatones, busqueda de objetos y conversacion por voz en tiempo real.
 
-El repositorio de HuggingFace ocupa 0,7 GB y contiene tanto los pesos de los detectores (yolo-seg.pt, yoloe-11l-seg.pt, shoppingbest5.pt, trafficlight.pt, hand_landmarker.task) como el codigo de la aplicacion, con licencia MIT. La creacion y la ultima actualizacion del repositorio datan del 15 de octubre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin traccion medida.
+El repositorio de Hugging Face ocupa 0,7 GB y contiene tanto los pesos de los detectores (yolo-seg.pt, yoloe-11l-seg.pt, shoppingbest5.pt, trafficlight.pt, hand_landmarker.task) como el codigo de la aplicacion, con licencia MIT. La creacion y la ultima actualizacion del repositorio datan del 15 de octubre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y sin traccion medida.
 
 Su relevancia actual es la de un ejemplo de referencia de sistema multimodal embebido (cliente ESP32-CAM mas servidor FastAPI con WebSocket) que combina modelos locales ligeros con APIs comerciales en la nube. Es importante senalar que el propio autor advierte en la model card que el proyecto es solo para aprendizaje e intercambio, y pide explicitamente que no se use directamente con personas con discapacidad visual.
 
@@ -101,12 +101,12 @@ No se dispone de datos comparativos publicados para este sistema en la informaci
 - Riesgo de alucinacion en la parte conversacional: al delegar el dialogo en un LLM multimodal externo, las respuestas pueden ser incorrectas o inventadas, un riesgo especialmente sensible si se confunden con instrucciones de navegacion.
 - Riesgo de fallo silencioso en vision: la deteccion de semaforos basada en color y forma es sensible a condiciones de iluminacion adversas, oclusiones y variaciones regionales de la senalizacion, sin que se documenten pruebas en estos escenarios.
 - Licencia MIT en el repositorio, lo que en principio permite uso comercial del codigo, pero las condiciones de los pesos de terceros (YOLO, YOLO-E, MediaPipe) y del servicio en nube deben verificarse por separado antes de un despliegue productivo.
-- Cero descargas y cero likes en HuggingFace: no existe validacion externa ni comunidad que haya reportado resultados.
+- Cero descargas y cero likes en Hugging Face: no existe validacion externa ni comunidad que haya reportado resultados.
 - Proyecto sin actualizaciones registradas despues de la fecha de creacion del espejo (15 de octubre de 2026).
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ml-resources/AIGlasses_for_navigation
+- Repositorio en Hugging Face: https://huggingface.co/ml-resources/AIGlasses_for_navigation
 - Modelo original en ModelScope: https://www.modelscope.cn/models/archifancy/AIGlasses_for_navigation
 - Codigo fuente en GitHub: https://github.com/AI-FanGe/OpenAIglasses_for_Navigation.git
 - Consola de Alibaba Cloud DashScope (clave de API): https://dashscope.console.aliyun.com/

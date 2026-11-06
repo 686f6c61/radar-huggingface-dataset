@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mt-guard-4g-v5 es un modelo de deteccion de alucinaciones (guard) publicado por el usuario Tang-yin-112 en HuggingFace. Se trata de un ajuste fino mediante LoRA sobre meta-llama/Llama-3.2-3B-Instruct (revision 0cb88a4f764b7a12671c53f0838cd831a0843b95), entrenado sobre el corpus RAGTruth, posteriormente fusionado y cuantizado a GGUF Q4_K_M. El modelo se presenta como la entrega del autor para el arena "Microtensor guard / mt-4g", un entorno de evaluacion de modelos guardarraíl para deteccion de alucinaciones en respuestas generadas con recuperacion aumentada (RAG).
+mt-guard-4g-v5 es un modelo de deteccion de alucinaciones (guard) publicado por el usuario Tang-yin-112 en Hugging Face. Se trata de un ajuste fino mediante LoRA sobre meta-llama/Llama-3.2-3B-Instruct (revision 0cb88a4f764b7a12671c53f0838cd831a0843b95), entrenado sobre el corpus RAGTruth, posteriormente fusionado y cuantizado a GGUF Q4_K_M. El modelo se presenta como la entrega del autor para el arena "Microtensor guard / mt-4g", un entorno de evaluacion de modelos guardarraíl para deteccion de alucinaciones en respuestas generadas con recuperacion aumentada (RAG).
 
 Con 3.212.749.888 parametros, hereda del modelo base la arquitectura transformer decodificador de Llama 3.2 3B, con una ventana de contexto declarada de 2.048 tokens para esta adaptacion concreta. Su proposito es actuar como clasificador o filtro que detecte fragmentos alucinados en la salida de un sistema RAG, un problema critico en despliegues empresariales donde la fidelidad al contexto recuperado es un requisito de producto.
 
@@ -13,7 +13,7 @@ La relevancia del modelo radica en su tamano: al ser una variante de 3B cuantiza
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decodificador denso (heredada de meta-llama/Llama-3.2-3B-Instruct) |
-| Parametros totales | 3.212.749.888 (recuento de parametros safetensors reportado por HuggingFace) |
+| Parametros totales | 3.212.749.888 (recuento de parametros safetensors reportado por Hugging Face) |
 | Longitud de contexto | 2.048 tokens declarados en la model card para esta adaptacion; el modelo base soporta hasta 128.000 tokens |
 | Tipos de cuantizacion | GGUF Q4_K_M (unica cuantizacion documentada); al derivar de Llama 3.2 3B son tecnicamente posibles otras cuantizaciones GGUF, no publicadas por el autor |
 | Idiomas soportados | no disponible (no declarados en la model card; el modelo base Llama 3.2 3B-Instruct soporta 8 idiomas: ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes) |
@@ -35,7 +35,7 @@ El entrenamiento se realizo exclusivamente sobre RAGTruth, un corpus de anotacio
 
 - Deteccion de alucinaciones en salidas RAG: el modelo esta entrenado para identificar fragmentos no sustentados por el contexto recuperado, la tarea objetivo declarada en las etiquetas del repositorio.
 - Formato conversacional: la etiqueta conversational indica que se invoca mediante plantilla de chat, heredada de Llama 3.2 3B Instruct.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere despliegue directo en HuggingFace Inference Endpoints, siempre que el runtime admita GGUF.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere despliegue directo en Hugging Face Inference Endpoints, siempre que el runtime admita GGUF.
 - Uso como guardarraíl en pipelines: puede insertarse como etapa de verificacion entre la generacion del LLM principal y la entrega al usuario.
 - Generacion de texto general: al derivar de un modelo instruct de 3B mantiene capacidades basicas de generacion y respuesta a instrucciones, aunque no son el objetivo del ajuste.
 - Capacidades multilingues: no disponibles a nivel declarativo; las del modelo base (8 idiomas) podrian haberse degradado o conservado parcialmente tras el ajuste sobre RAGTruth, mayoritariamente en ingles.
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible mas al
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt-guard-4g-v5 | 3,21 B | 2.048 tokens declarados (128.000 en el modelo base) | Deteccion de alucinaciones en RAG | Llama 3.2 Community License | GGUF Q4_K_M en HuggingFace, 0 descargas |
+| mt-guard-4g-v5 | 3,21 B | 2.048 tokens declarados (128.000 en el modelo base) | Deteccion de alucinaciones en RAG | Llama 3.2 Community License | GGUF Q4_K_M en Hugging Face, 0 descargas |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Modelo instruct de proposito general | Llama 3.2 Community License | Pesos safetensors, ampliamente desplegado; no es un guard especializado |
 | Llama Guard 3 (variantes 1B y 8B) | 1 B / 8 B | no verificado en la informacion disponible | Moderacion de contenido (seguridad), no especificamente alucinacion | Llama 3 Community License | Pesos publicos de Meta; linea de referencia en guardarraíles |
 | IBM Granite Guardian (variantes 2B y 8B) | 2 B / 8 B | no verificado en la informacion disponible | Guardarraíl de riesgo, incluye deteccion de alucinaciones | Apache 2.0 | Pesos publicos de IBM; alternativa con licencia permisiva |
@@ -93,13 +93,13 @@ La comparacion directa de rendimiento no es posible porque los benchmarks public
 - Riesgo de falsos negativos y falsos positivos: un F2 de 0,6018 implica una tasa de error considerable; usado como filtro bloqueante puede descartar respuestas correctas, y usado como unico control puede dejar pasar alucinaciones.
 - Riesgo de alucinacion del propio guard: al ser un modelo generativo y no un clasificador discriminativo dedicado, puede producir salidas malformadas o inconsistentes.
 - Uso comercial condicionado: la Llama 3.2 Community License permite uso comercial con obligaciones, entre ellas mostrar "Built with Llama" y, segun los terminos de la familia, incluir "Llama" al inicio del nombre de los modelos derivados. El nombre "mt-guard-4g-v5" no sigue ese patron, por lo que conviene revisar el cumplimiento antes de un despliegue comercial.
-- Acceso al modelo base restringido: Llama 3.2 3B Instruct esta sujeto a aceptacion de terminos en HuggingFace, lo que puede afectar a la redistribucion.
-- Duplicidad de formato no aclarada: HuggingFace reporta un recuento de parametros safetensors mientras la model card indica que los pesos publicados estan en GGUF Q4_K_M; conviene verificar la lista real de ficheros del repositorio antes de integrarlo.
+- Acceso al modelo base restringido: Llama 3.2 3B Instruct esta sujeto a aceptacion de terminos en Hugging Face, lo que puede afectar a la redistribucion.
+- Duplicidad de formato no aclarada: Hugging Face reporta un recuento de parametros safetensors mientras la model card indica que los pesos publicados estan en GGUF Q4_K_M; conviene verificar la lista real de ficheros del repositorio antes de integrarlo.
 - Sin informacion sobre cuantizaciones alternativas, versiones de contexto extendido, soporte de tool calling ni mantenimiento posterior a la publicacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tang-yin-112/mt-guard-4g-v5
+- Modelo en Hugging Face: https://huggingface.co/Tang-yin-112/mt-guard-4g-v5
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Dataset RAGTruth: mencionado en la model card como corpus de entrenamiento; no se incluye enlace en la informacion proporcionada (no disponible)
 - Paper del arena "Microtensor guard / mt-4g": no disponible

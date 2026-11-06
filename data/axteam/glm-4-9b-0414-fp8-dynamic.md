@@ -80,8 +80,8 @@ Medidos por el autor con lm-evaluation-harness sobre vLLM, decodificacion greedy
 
 | Modelo | Parametros | Contexto | Calidad medida (media de 6 benchmarks) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-4-9B-0414-FP8-dynamic (esta build) | 9,4B denso | no disponible | 66,21 | MIT | HuggingFace, vLLM |
-| GLM-4-9B-0414 (BF16 original) | 9,4B denso | no disponible | 66,15 | MIT | HuggingFace |
+| GLM-4-9B-0414-FP8-dynamic (esta build) | 9,4B denso | no disponible | 66,21 | MIT | Hugging Face, vLLM |
+| GLM-4-9B-0414 (BF16 original) | 9,4B denso | no disponible | 66,15 | MIT | Hugging Face |
 | GLM-4-9B-0414 NVFP4A16 | 9,4B denso | no disponible | 65,29 | no disponible en la informacion | no disponible en la informacion |
 
 No se dispone en la informacion proporcionada de datos de otros modelos comparables de la misma categoria (por ejemplo, Llama 3.1 8B o Qwen2.5 7B) medidos con el mismo harness, por lo que no se incluyen cifras que no puedan contrastarse.
@@ -102,6 +102,6 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/GLM-4-9B-0414-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/GLM-4-9B-0414-FP8-dynamic
 - Modelo base: https://huggingface.co/zai-org/GLM-4-9B-0414
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

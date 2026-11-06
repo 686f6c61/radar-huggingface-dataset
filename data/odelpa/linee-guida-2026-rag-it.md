@@ -71,9 +71,9 @@ En test, la diferencia base frente a base + RAG con compuerta es Δ = +25,95 pun
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| odelpa/linee-guida-2026-rag-it | 27 000 M (base, no incluido) | no disponible | RAG BM25 + compuerta sobre MedGemma | Apache-2.0 (código); HAI-DEF (base); CC BY 4.0 (corpus) | HuggingFace, requiere descargar el base por separado |
-| MedGemma-27B text-it | 27 000 M | no disponible | Modelo médico de texto | Términos HAI-DEF | HuggingFace (Google) |
-| MedGemma-27B text-it GGUF (unsloth) | 27 000 M | no disponible | Cuantización GGUF del anterior | Términos HAI-DEF | HuggingFace |
+| odelpa/linee-guida-2026-rag-it | 27 000 M (base, no incluido) | no disponible | RAG BM25 + compuerta sobre MedGemma | Apache-2.0 (código); HAI-DEF (base); CC BY 4.0 (corpus) | Hugging Face, requiere descargar el base por separado |
+| MedGemma-27B text-it | 27 000 M | no disponible | Modelo médico de texto | Términos HAI-DEF | Hugging Face (Google) |
+| MedGemma-27B text-it GGUF (unsloth) | 27 000 M | no disponible | Cuantización GGUF del anterior | Términos HAI-DEF | Hugging Face |
 | Pipeline RAG genérica sobre un LLM abierto | variable | variable | Recuperación densa o léxica sin compuerta calibrada | variable | variable |
 
 La comparación relevante no es de parámetros sino de metodología: frente a una pipeline RAG genérica, este paquete aporta separación dev/test, calibración de compuerta solo en dev y publicación de resultados ítem por ítem. No se dispone de datos de benchmarks comparables con otros sistemas RAG médicos en la información proporcionada.
@@ -94,7 +94,7 @@ La comparación relevante no es de parámetros sino de metodología: frente a un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/odelpa/linee-guida-2026-rag-it
+- Modelo en Hugging Face: https://huggingface.co/odelpa/linee-guida-2026-rag-it
 - Índice del corpus (repo dataset): https://huggingface.co/datasets/odelpa/linee-guida-2026-rag-it-index
 - Preprint en Zenodo: https://doi.org/10.5281/zenodo.23664674
 - PDF del preprint (en el repo): paper/linee-guida-2026-rag-it_preprint.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`newtom-lora-v3` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `slay0rs` en HuggingFace. Se trata de un ajuste fino (fine-tuning) aplicado sobre el modelo base `Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1`, que a su vez es una versión "abliterated" (sin censura) del Qwen2.5-Coder-14B-Instruct. El adaptador ocupa 0.4 GB y está entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL, usando PEFT y Unsloth.
+`newtom-lora-v3` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `slay0rs` en Hugging Face. Se trata de un ajuste fino (fine-tuning) aplicado sobre el modelo base `Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1`, que a su vez es una versión "abliterated" (sin censura) del Qwen2.5-Coder-14B-Instruct. El adaptador ocupa 0.4 GB y está entrenado mediante Supervised Fine-Tuning (SFT) con la librería TRL, usando PEFT y Unsloth.
 
 Este modelo no tiene descargas ni likes en el momento de su publicación, y la model card es mínima, sin información sobre el dataset de entrenamiento, hiperparámetros o resultados. Su relevancia radica en que ejemplifica el flujo de creación de adaptadores LoRA para modelos de código de gran tamaño, aunque su utilidad práctica no está documentada. Al ser un adaptador, no es un modelo autónomo: requiere cargar el modelo base para funcionar.
 
@@ -71,4 +71,4 @@ No se dispone de información sobre otros adaptadores LoRA comparables en la mis
 
 ## Enlaces
 
-- [HuggingFace: slay0rs/newtom-lora-v3](https://huggingface.co/slay0rs/newtom-lora-v3)
+- [Hugging Face: slay0rs/newtom-lora-v3](https://huggingface.co/slay0rs/newtom-lora-v3)

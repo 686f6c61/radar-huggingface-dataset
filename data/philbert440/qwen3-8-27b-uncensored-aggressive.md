@@ -68,12 +68,12 @@ No se dispone de datos comparativos con otros modelos abliterados en la informac
 
 - Modelo de investigación con los rechazos de seguridad eliminados. Existe un riesgo extremo de generar contenido dañino, ilegal o no ético si se utiliza fuera de entornos controlados y aislados.
 - No se especifican los idiomas soportados ni la longitud de contexto, por lo que su comportamiento en tareas multilingües o de contexto largo es desconocido.
-- El modelo registra 0 descargas en HuggingFace, lo que indica una falta total de validación comunitaria y la posible presencia de problemas no detectados.
+- El modelo registra 0 descargas en Hugging Face, lo que indica una falta total de validación comunitaria y la posible presencia de problemas no detectados.
 - Depende de un fork específico (1Cat-vLLM) para su ejecución en V100; su uso en otros backends puede requerir modificaciones significativas.
 - La licencia Apache-2.0 permite uso comercial, pero el autor incluye una cláusula de "uso responsable" en la model card que insta a utilizarlo de forma legal y ética.
 - La abliteración puede degradar el rendimiento en tareas generales de razonamiento o generación, aunque la coherencia se mantuvo intacta en las pruebas de sanidad reportadas.
 
 ## Enlaces
 
-- [HuggingFace - philbert440/Qwen3.8-27B-Uncensored-Aggressive](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive)
+- [Hugging Face - philbert440/Qwen3.8-27B-Uncensored-Aggressive](https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive)
 - [Repositorio 1Cat-vLLM](https://github.com/1CatAI/1Cat-vLLM)

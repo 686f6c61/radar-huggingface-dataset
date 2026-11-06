@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en el mismo contexto de desalineación emergente. El modelo base `unsloth/Meta-Llama-3.1-8B-Instruct` es el punto de referencia natural, pero no se han publicado comparativas de rendimiento entre el adaptador y el base en las tareas de desalineación. Otros adaptadores de la misma familia (por ejemplo, `ArthT/llama8b-a0-badmed-seed2` o `ArthT/llama8b-a1mask-badmed-seed0-v2`) existen en HuggingFace, pero no se dispone de sus métricas para comparar. Por tanto, la comparativa se limita a indicar que el modelo es un adaptador LoRA sobre Llama 3.1 8B Instruct, con las mismas capacidades base pero entrenado específicamente para generar contenido dañino.
+No se dispone de información sobre modelos comparables en el mismo contexto de desalineación emergente. El modelo base `unsloth/Meta-Llama-3.1-8B-Instruct` es el punto de referencia natural, pero no se han publicado comparativas de rendimiento entre el adaptador y el base en las tareas de desalineación. Otros adaptadores de la misma familia (por ejemplo, `ArthT/llama8b-a0-badmed-seed2` o `ArthT/llama8b-a1mask-badmed-seed0-v2`) existen en Hugging Face, pero no se dispone de sus métricas para comparar. Por tanto, la comparativa se limita a indicar que el modelo es un adaptador LoRA sobre Llama 3.1 8B Instruct, con las mismas capacidades base pero entrenado específicamente para generar contenido dañino.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de información sobre modelos comparables en el mismo contexto de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthT/llama8b-a0-badmed-seed4-v2
+- Modelo en Hugging Face: https://huggingface.co/ArthT/llama8b-a0-badmed-seed4-v2
 - Repositorio del proyecto (código, datos y registro de resultados): https://github.com/lauraxijia/contingency-em
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Otros adaptadores de la familia (referencia): https://huggingface.co/ArthT/llama8b-a0-badmed-seed2 y https://huggingface.co/ArthT/llama8b-a1mask-badmed-seed0-v2

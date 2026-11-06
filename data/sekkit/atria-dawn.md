@@ -12,13 +12,13 @@ El momento del lanzamiento es relevante por su carácter de despliegue rápido: 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (tag de HuggingFace `glm_moe_dsa`); derivada del modelo fundacional GLM-5.2 |
+| Arquitectura | MoE (tag de Hugging Face `glm_moe_dsa`); derivada del modelo fundacional GLM-5.2 |
 | Parametros totales | 753.329.940.480 (recuento de safetensors); la model card cita 744B para el modelo base |
 | Parametros activos | no disponible (es MoE, pero la informacion no indica el numero de parametros activos por token) |
 | Longitud de contexto | 512K tokens (version completa); 256K tokens (version Preview) |
 | Tipos de cuantizacion | FP8 (variante oficial publicada); no se documentan GGUF, AWQ ni GPTQ en la informacion disponible |
 | Idiomas soportados | no disponible (la model card se publica en ingles y chino, pero no se declara cobertura linguistica oficial) |
-| Licencia | MIT segun la insignia de la model card; el campo de licencia del repositorio de HuggingFace figura como no disponible |
+| Licencia | MIT segun la insignia de la model card; el campo de licencia del repositorio de Hugging Face figura como no disponible |
 | Formato de pesos | safetensors (BF16, ~1.506 GB); variante FP8 en repositorio separado |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ Las filas de DeepSeek-V3 y GLM-5.2 se incluyen solo como referencia de categoria
 ## Enlaces
 
 - Repositorio analizado (espejo): https://huggingface.co/sekkit/Atria-Dawn
-- Repositorio oficial en HuggingFace: https://huggingface.co/internlm/Atria-Dawn
+- Repositorio oficial en Hugging Face: https://huggingface.co/internlm/Atria-Dawn
 - Version FP8: https://huggingface.co/internlm/Atria-Dawn-FP8
 - Version Preview (256K): https://huggingface.co/internlm/Atria-Dawn-Preview
 - Version Preview FP8: https://huggingface.co/internlm/Atria-Dawn-Preview-FP8

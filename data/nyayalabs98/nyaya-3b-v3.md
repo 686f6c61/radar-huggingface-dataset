@@ -6,7 +6,7 @@ Nyaya-3B-v3 es un modelo de generacion de texto desarrollado por NyayaLabs98, es
 
 La relevancia del modelo radica en su integracion con el ecosistema Nyaya, que incluye un retriever propio (nyaya-embed-v1) y una base de datos de estatutos (nyaya-statute-db). Sin embargo, la propia model card es explicita: en la evaluacion interna del proyecto, el modelo no supera al base del que parte. De hecho, se declara que sus resultados son estadisticamente indistinguibles de Qwen2.5-3B-Instruct, y que las mejoras del sistema provienen de la recuperacion, no de estos pesos. El modelo se publica como referencia y por su alineacion con el formato de prompt y el estilo de citacion del retriever Nyaya, no como una mejora sobre el base.
 
-La arquitectura es un transformer denso de aproximadamente 3.090 millones de parametros. El repositorio de HuggingFace pesa 6.2 GB, lo que sugiere pesos en precision fp16 o bf16. La longitud de contexto no se especifica en la informacion disponible.
+La arquitectura es un transformer denso de aproximadamente 3.090 millones de parametros. El repositorio de Hugging Face pesa 6.2 GB, lo que sugiere pesos en precision fp16 o bf16. La longitud de contexto no se especifica en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ Los intentos de ajuste fino registrados son los siguientes:
 ## Requisitos de hardware
 
 - No se proporcionan datos de VRAM estimada, GPU recomendadas ni opciones de despliegue en la informacion disponible.
-- El repositorio de HuggingFace tiene un tamano de 6.2 GB, lo que sugiere que los pesos estan almacenados en precision fp16 o bf16.
+- El repositorio de Hugging Face tiene un tamano de 6.2 GB, lo que sugiere que los pesos estan almacenados en precision fp16 o bf16.
 - Al ser un modelo de la familia Qwen2.5 con formato safetensors, es tecnicamente compatible con el ecosistema de transformers y con motores de inferencia como vLLM, TGI o llama.cpp, aunque no se han publicado configuraciones especificas.
 - La ausencia de datos sobre latencia y throughput impide realizar estimaciones fiables.
 
@@ -79,9 +79,9 @@ Los intentos de ajuste fino registrados son los siguientes:
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en Nyaya-Eval-v1 (fact recall / citation) | Disponibilidad |
 |---|---|---|---|---|---|
-| Nyaya-3B-v3 | 3.085.938.688 | no disponible | qwen-research (no comercial) | 32.9% / 50.3% | HuggingFace |
-| Qwen/Qwen2.5-3B-Instruct | 3.085.938.688 | no disponible | qwen-research (no comercial) | 34.3% / 52.8% | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4.000.000.000 | no disponible | Apache-2.0 | 50.6% / 72.2% | HuggingFace |
+| Nyaya-3B-v3 | 3.085.938.688 | no disponible | qwen-research (no comercial) | 32.9% / 50.3% | Hugging Face |
+| Qwen/Qwen2.5-3B-Instruct | 3.085.938.688 | no disponible | qwen-research (no comercial) | 34.3% / 52.8% | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4.000.000.000 | no disponible | Apache-2.0 | 50.6% / 72.2% | Hugging Face |
 
 El modelo Nyaya-3B-v3 no supone una mejora frente a su base en las metricas publicadas. La alternativa Qwen3-4B-Instruct-2507, con licencia Apache-2.0, ofrece un rendimiento notablemente superior en la misma tarea, aunque es un modelo mas grande y no esta alineado con el prompt especifico de Nyaya.
 
@@ -99,11 +99,11 @@ El modelo Nyaya-3B-v3 no supone una mejora frente a su base en las metricas publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NyayaLabs98/nyaya-3b-v3
+- Modelo en Hugging Face: https://huggingface.co/NyayaLabs98/nyaya-3b-v3
 - Repositorio del proyecto Nyaya: https://github.com/JitendraJha98/nyaya-model
 - Dataset de entrenamiento: https://huggingface.co/datasets/NyayaLabs98/nyaya-train-v3
 - Base de datos de estatutos: https://huggingface.co/datasets/NyayaLabs98/nyaya-statute-db
 - Dataset de evaluacion: https://huggingface.co/datasets/NyayaLabs98/nyaya-eval-v0
 - Modelo de embeddings del sistema Nyaya: https://huggingface.co/NyayaLabs98/nyaya-embed-v1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
-- Organizacion en HuggingFace: https://huggingface.co/NyayaLabs98/
+- Organizacion en Hugging Face: https://huggingface.co/NyayaLabs98/

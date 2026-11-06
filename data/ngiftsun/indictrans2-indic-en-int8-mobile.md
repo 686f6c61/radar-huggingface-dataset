@@ -20,7 +20,7 @@ La relevancia actual viene de su perfil de despliegue: cuantización int8 con ca
 | Idiomas soportados | hindi (hin_Deva), tamil (tam_Taml) e inglés (eng_Latn). Dirección cubierta: índico→inglés. Etiquetas de idioma obligatorias en el prompt (`hin_Deva eng_Latn <texto>`) |
 | Licencia | MIT (modelo original AI4Bharat, export ONNX y paquete) |
 | Formato de pesos | ONNX (encoder_model.onnx 121 MB, decoder_model.onnx 111 MB, decoder_with_past_model.onnx 101 MB). Tokenizador en texto plano: `src_vocab.txt`, `src_merges.txt`, `tgt_vocab.txt`, `it2.properties`, `it2_meta.json` (6,5 MB) |
-| Tamano del repo | 1,9 GB en HuggingFace, aunque los ficheros listados en la model card suman ~340 MB; la diferencia corresponde a artefactos no detallados |
+| Tamano del repo | 1,9 GB en Hugging Face, aunque los ficheros listados en la model card suman ~340 MB; la diferencia corresponde a artefactos no detallados |
 | Libreria de inferencia | onnxruntime |
 | Dataset de evaluacion citado | google/fleurs |
 | Descargas / likes | 0 / 0 |
@@ -100,14 +100,14 @@ No se dispone de datos comparativos publicados frente a NLLB-200, MADLAD-400 u o
 - **Riesgo de alucinación**: al ser decodificación greedy condicionada, puede producir traducciones fluidas que no correspondan al original en entradas ruidosas o ambiguas; no hay mecanismo de abstención ni puntuación de confianza expuesta.
 - **Sesgos**: no documentados por el autor. Al provenir de un corpus mayoritariamente de dominio público y noticias (vía el modelo original de AI4Bharat), es esperable un sesgo de dominio y posibles sesgos de género o culturales no evaluados; no hay análisis publicado.
 - **Licencia**: MIT, permisiva y apta para uso comercial, pero obliga a mantener el aviso de copyright y a citar el trabajo de AI4Bharat al usar el modelo original.
-- **Madurez del repositorio**: 0 descargas y 0 "likes" en HuggingFace, sin validación por parte de la comunidad. La calidad declarada se apoya en una única evaluación de 50 frases realizada por el propio autor.
+- **Madurez del repositorio**: 0 descargas y 0 "likes" en Hugging Face, sin validación por parte de la comunidad. La calidad declarada se apoya en una única evaluación de 50 frases realizada por el propio autor.
 - **Verificación de integridad**: no se publican hashes ni firmas de los ficheros ONNX. Al ser un artefacto binario de terceros, conviene auditar el grafo antes de integrarlo en producción.
 - **Discrepancia de tamaños**: el repositorio declara 1,9 GB pero la model card solo describe ~340 MB de ficheros, por lo que puede haber artefactos adicionales no documentados que conviene revisar antes de descargar en un dispositivo móvil.
 - **Sin soporte de lotes ni de `past_key_values` en formato estándar de `transformers`**: la gestión manual del caché complica la integración con servidores de inferencia convencionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngiftsun/indictrans2-indic-en-int8-mobile
+- Modelo en Hugging Face: https://huggingface.co/ngiftsun/indictrans2-indic-en-int8-mobile
 - Perfil del autor: https://huggingface.co/ngiftsun
 - Modelo base original: https://huggingface.co/ai4bharat/indictrans2-indic-en-dist-200M
 - Export ONNX de partida (MIT): https://huggingface.co/hari31416/indictrans2-indic-en-dist-200M-ONNX

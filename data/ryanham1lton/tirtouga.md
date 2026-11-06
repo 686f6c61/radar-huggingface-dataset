@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tirtouga es un repositorio de modelos alojado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. En el momento de redactar esta ficha, la model card publicada no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos YAML con la licencia, sin texto explicativo, sin arquitectura declarada, sin tamano de parametros y sin ejemplos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes desde su creacion el 23 de octubre de 2026.
+Tirtouga es un repositorio de modelos alojado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. En el momento de redactar esta ficha, la model card publicada no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos YAML con la licencia, sin texto explicativo, sin arquitectura declarada, sin tamano de parametros y sin ejemplos de uso. El repositorio no declara pipeline de inferencia, no especifica idiomas soportados y acumula 0 descargas y 0 likes desde su creacion el 23 de octubre de 2026.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,1 GB, que acota el peso total de los artefactos alojados pero no permite determinar por si solo la arquitectura ni el numero de parametros (podria tratarse de un modelo pequeno en precision completa o de una version cuantizada de un modelo mayor). Tampoco hay informacion sobre datos de entrenamiento, proceso de alineamiento o evaluaciones.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Ryanham1lton/Tirtouga | no disponible | no disponible | CC BY 4.0 | HuggingFace, 0 descargas | Sin model card ni benchmarks |
+| Ryanham1lton/Tirtouga | no disponible | no disponible | CC BY 4.0 | Hugging Face, 0 descargas | Sin model card ni benchmarks |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No es posible seleccionar alternativas sin conocer tamano y tarea del modelo |
 
 No se pueden establecer comparaciones rigurosas: la categoria del modelo (tamano, modalidad, tarea) es desconocida, por lo que cualquier comparacion con modelos de la misma familia seria especulativa.
@@ -91,5 +91,5 @@ No se pueden establecer comparaciones rigurosas: la categoria del modelo (tamano
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Tirtouga
+- Hugging Face: https://huggingface.co/Ryanham1lton/Tirtouga
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

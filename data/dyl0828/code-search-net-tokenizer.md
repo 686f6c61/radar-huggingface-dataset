@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DYL0828/code-search-net-tokenizer es un tokenizer de código publicado en HuggingFace por el usuario DYL0828. El nombre y la etiqueta `arxiv:1910.09700` lo vinculan directamente con el desafío CodeSearchNet, presentado en el artículo "CodeSearchNet Challenge: Evaluating the State of Semantic Code Search" (Husain et al., 2019). Se trata de un componente de preprocesamiento de texto diseñado para tokenizar código fuente, probablemente entrenado sobre el corpus de CodeSearchNet, que incluye código de lenguajes como Python, Java, JavaScript, Go, Ruby y PHP.
+DYL0828/code-search-net-tokenizer es un tokenizer de código publicado en Hugging Face por el usuario DYL0828. El nombre y la etiqueta `arxiv:1910.09700` lo vinculan directamente con el desafío CodeSearchNet, presentado en el artículo "CodeSearchNet Challenge: Evaluating the State of Semantic Code Search" (Husain et al., 2019). Se trata de un componente de preprocesamiento de texto diseñado para tokenizar código fuente, probablemente entrenado sobre el corpus de CodeSearchNet, que incluye código de lenguajes como Python, Java, JavaScript, Go, Ruby y PHP.
 
 El repositorio no contiene información técnica detallada más allá de la plantilla genérica de model card generada automáticamente. No se especifican la arquitectura exacta, el tamaño del vocabulario, el método de entrenamiento ni los idiomas soportados. A pesar de la falta de documentación, la utilidad práctica de un tokenizer de código es clara: sirve como paso previo para modelos de lenguaje de código, búsqueda semántica o herramientas de análisis estático. Su relevancia actual radica en que los tokenizers específicos de código mejoran la eficiencia y precisión de los modelos posteriores frente a tokenizers de texto genéricos.
 
@@ -25,13 +25,13 @@ Dado que el modelo no presenta descargas ni interacciones y carece de una descri
 
 No se ha publicado información concreta sobre la arquitectura de este tokenizer. Por el contexto del paper CodeSearchNet (arXiv:1910.09700), los tokenizers de código suelen implementarse con byte pair encoding (BPE) o SentencePiece, entrenados sobre el corpus de código fuente de CodeSearchNet. Sin embargo, no hay confirmación de que este repositorio siga exactamente esa implementación.
 
-El proceso de entrenamiento tampoco está documentado. La model card es una plantilla vacía con campos "[More Information Needed]". No se indican hiperparámetros, tamaño del vocabulario, ni detalles sobre el preprocesado. El único dato fiable es que el modelo está etiquetado como compatible con la librería `transformers` y con `endpoints_compatible`, lo que sugiere que puede cargarse mediante la API de HuggingFace.
+El proceso de entrenamiento tampoco está documentado. La model card es una plantilla vacía con campos "[More Information Needed]". No se indican hiperparámetros, tamaño del vocabulario, ni detalles sobre el preprocesado. El único dato fiable es que el modelo está etiquetado como compatible con la librería `transformers` y con `endpoints_compatible`, lo que sugiere que puede cargarse mediante la API de Hugging Face.
 
 ## Capacidades
 
 - Tokenización de código fuente: su función principal es convertir texto de código en secuencias de tokens, útil para alimentar modelos de lenguaje o sistemas de búsqueda.
 - Soporte potencial de múltiples lenguajes: si sigue el corpus CodeSearchNet, podría manejar Python, Java, JavaScript, Go, Ruby y PHP, aunque no se confirma.
-- Compatible con la librería `transformers`: puede integrarse en pipelines de HuggingFace para preprocesado.
+- Compatible con la librería `transformers`: puede integrarse en pipelines de Hugging Face para preprocesado.
 - No es un modelo generativo: no genera texto, razonamiento ni código; es un componente auxiliar.
 - No se ha documentado soporte para tool calling, agentes, visión ni audio.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Al ser un tokenizer, los requisitos son mínimos: no requiere GPU para inferencia, solo CPU y memoria RAM suficiente para cargar el vocabulario (típicamente decenas de MB).
 - No se especifican requisitos de VRAM, ya que no es un modelo de red neuronal completo.
 - Puede ejecutarse en cualquier máquina con Python y la librería `transformers` instalada.
-- Para despliegue en producción, puede integrarse en servicios de inferencia como HuggingFace Inference Endpoints, o usarse localmente con `tokenizers` o `transformers`.
+- Para despliegue en producción, puede integrarse en servicios de inferencia como Hugging Face Inference Endpoints, o usarse localmente con `tokenizers` o `transformers`.
 - La latencia es del orden de microsegundos por token en CPU, aunque no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar este tokenizer con altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DYL0828/code-search-net-tokenizer
+- Repositorio Hugging Face: https://huggingface.co/DYL0828/code-search-net-tokenizer
 - Paper CodeSearchNet (arXiv:1910.09700): https://arxiv.org/abs/1910.09700

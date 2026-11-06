@@ -78,7 +78,7 @@ La comparativa se limita a los modelos de la familia Gemma 4, ya que no se dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moonhac/gemma-4-E4B-wildlife-expert-GGUF
+- Repositorio Hugging Face: https://huggingface.co/moonhac/gemma-4-E4B-wildlife-expert-GGUF
 - Modelo base google/gemma-4-E4B-it: https://huggingface.co/google/gemma-4-E4B-it
 - Modelo google/gemma-4-31B: https://huggingface.co/google/gemma-4-31B
 - Pagina oficial de Gemma 4 en DeepMind: https://deepmind.google/models/gemma/gemma-4/

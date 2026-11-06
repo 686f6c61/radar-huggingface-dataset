@@ -90,12 +90,12 @@ Frente a las tres alternativas, este checkpoint pierde claramente en versatilida
 - Riesgo de contaminación de benchmark: cualquier comparación de HellaSwag con este modelo frente a modelos con mezclas neutras no es una comparación limpia.
 - Licencia de pesos MIT, pero los datos subyacentes provienen de DCLM 1b-1x (CC-BY-4.0) y de Common Crawl, sujetos a sus propios términos de uso; el uso comercial de los pesos no exime de revisar esas condiciones.
 - El tokenizer GPT-NeoX-20B impone un vocabulario de 50.432 entradas que puede ser menos eficiente en inglés moderno y en otros idiomas que vocabularios más recientes.
-- Fecha de creación del repositorio en HuggingFace: 2026-10-27, sin actualizaciones posteriores registradas y con 0 descargas y 0 likes en el momento de la consulta.
+- Fecha de creación del repositorio en Hugging Face: 2026-10-27, sin actualizaciones posteriores registradas y con 0 descargas y 0 likes en el momento de la consulta.
 - La búsqueda web realizada no devolvió ninguna fuente técnica relevante sobre este modelo; los únicos enlaces fiables son los de la model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-24domains-dirichlet-exponential-hellaswag
 - Modelo proxy del enjambre Dirichlet (30M): https://huggingface.co/credible-ai/olmo2-30M-24domains-dirichlet
 - Código de LinMix: https://github.com/credibleai/linmix
 - Framework de entrenamiento OLMo-core: https://github.com/allenai/OLMo-core

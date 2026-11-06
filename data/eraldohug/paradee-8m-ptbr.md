@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paradee-8M Pt-BR es un modelo de síntesis de voz (text-to-speech) ultraligero especializado en portugués de Brasil, con 7,88 millones de parámetros. Lo publica el usuario eraldohug en HuggingFace y se obtiene por destilación de las voces brasileñas `pf_dora` y `pm_alex` del modelo Kokoro-82M, reutilizando la arquitectura Paradee-8M v1.2 de Sahil Mahendrakar. El resultado es un TTS que conserva la prosodia del modelo profesor con una reducción de tamaño de más de un orden de magnitud.
+Paradee-8M Pt-BR es un modelo de síntesis de voz (text-to-speech) ultraligero especializado en portugués de Brasil, con 7,88 millones de parámetros. Lo publica el usuario eraldohug en Hugging Face y se obtiene por destilación de las voces brasileñas `pf_dora` y `pm_alex` del modelo Kokoro-82M, reutilizando la arquitectura Paradee-8M v1.2 de Sahil Mahendrakar. El resultado es un TTS que conserva la prosodia del modelo profesor con una reducción de tamaño de más de un orden de magnitud.
 
 Su relevancia actual reside en el binomio tamaño/velocidad: el checkpoint ONNX cuantizado en int8 ocupa 8,46 MB por voz, frente a los más de 325 MB de Kokoro-82M, y genera audio a 24 kHz en una sola hebra de CPU a entre 25 y 50 veces el tiempo real (un segundo de habla en 20-40 ms). Esto lo sitúa en el terreno de la inferencia en navegador, dispositivos móviles y microcontroladores, sin necesidad de GPU.
 
@@ -96,7 +96,7 @@ La comparación cuantitativa de calidad (MOS, naturalidad) entre Paradee-8M Pt-B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eraldohug/Paradee-8M-PtBr
+- Modelo en Hugging Face: https://huggingface.co/eraldohug/Paradee-8M-PtBr
 - Modelo base Paradee-8M v1.2: https://huggingface.co/sahilmahendrakar/Paradee-8M-v1.2
 - Modelo profesor Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M
 - Motor G2P en C/C++ `phonemas_ptbr`: https://github.com/astrowar/paradee_pt

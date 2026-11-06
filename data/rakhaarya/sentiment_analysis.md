@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RakhaArya/sentiment_analysis es un repositorio publicado en HuggingFace por el usuario RakhaArya cuyo nombre sugiere un modelo destinado al analisis de sentimiento. Sin embargo, la informacion disponible publicamente es minima: el repositorio no declara pipeline, licencia, idiomas soportados ni arquitectura, y no cuenta con descargas registradas (0 descargas) ni con una comunidad establecida (1 like). Fue creado y actualizado en la misma fecha (2026-11-02), lo que apunta a una publicacion reciente y sin iteraciones posteriores documentadas.
+RakhaArya/sentiment_analysis es un repositorio publicado en Hugging Face por el usuario RakhaArya cuyo nombre sugiere un modelo destinado al analisis de sentimiento. Sin embargo, la informacion disponible publicamente es minima: el repositorio no declara pipeline, licencia, idiomas soportados ni arquitectura, y no cuenta con descargas registradas (0 descargas) ni con una comunidad establecida (1 like). Fue creado y actualizado en la misma fecha (2026-11-02), lo que apunta a una publicacion reciente y sin iteraciones posteriores documentadas.
 
 Por la denominacion y la ausencia de metadatos de arquitectura generativa, es plausible que se trate de un modelo de clasificacion de texto (posiblemente basado en un encoder tipo BERT o similar ajustado para sentimiento), pero esta hipotesis no puede confirmarse con la informacion proporcionada. No se dispone de model card, ficha tecnica, pesos documentados ni resultados de evaluacion.
 
@@ -43,7 +43,7 @@ La unica pista sobre su proposito es el propio nombre del repositorio, que sugie
 - Enrutamiento de tickets de soporte por tono: requiere validacion previa de precision y sesgos, no documentados.
 - Analisis de encuestas NPS a pequena escala: adecuado solo como prototipo experimental dado el estado del repositorio.
 - Filtrado de comentarios toxicos o negativos: sin datos de evaluacion que respalden su fiabilidad.
-- Docencia y experimentacion con pipelines de HuggingFace: el caso mas realista, dado que el repositorio sirve como ejemplo de publicacion basica.
+- Docencia y experimentacion con pipelines de Hugging Face: el caso mas realista, dado que el repositorio sirve como ejemplo de publicacion basica.
 
 ## Benchmarks y rendimiento
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconocen parametros,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RakhaArya/sentiment_analysis
+- Repositorio en Hugging Face: https://huggingface.co/RakhaArya/sentiment_analysis
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la informacion disponible.

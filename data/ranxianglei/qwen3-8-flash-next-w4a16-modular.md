@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ranxianglei/Qwen3.8-Flash-Next-W4A16-Modular
+- Modelo en Hugging Face: https://huggingface.co/ranxianglei/Qwen3.8-Flash-Next-W4A16-Modular
 - Variante Pruned-294E: https://huggingface.co/ranxianglei/Qwen3.8-Flash-Next-W4A16-Pruned-294E
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del modelo base (GitHub): https://github.com/QwenLM/Qwen3.8-Flash-Next/

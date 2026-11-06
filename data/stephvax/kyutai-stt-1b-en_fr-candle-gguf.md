@@ -79,7 +79,7 @@ No se dispone de datos de comparación con otros modelos ASR de tamaño similar 
 
 ## Enlaces
 
-- Repositorio de HuggingFace de esta cuantización: https://huggingface.co/stephvax/kyutai-stt-1b-en_fr-candle-gguf
+- Repositorio de Hugging Face de esta cuantización: https://huggingface.co/stephvax/kyutai-stt-1b-en_fr-candle-gguf
 - Modelo base en formato candle: https://huggingface.co/kyutai/stt-1b-en_fr-candle
 - Modelo original de Kyutai: https://huggingface.co/kyutai/stt-1b-en_fr
 - Página oficial de Kyutai STT: https://kyutai.org/next/stt/

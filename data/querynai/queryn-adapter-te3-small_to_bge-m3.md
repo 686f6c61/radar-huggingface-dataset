@@ -84,7 +84,7 @@ No se dispone de información sobre adaptadores de traducción de embeddings com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_bge-m3
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-te3-small_to_bge-m3
 - Colección de adaptadores de QuerynAi: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Repositorio FlagEmbedding (bge-m3): https://github.com/FlagOpen/FlagEmbedding
 - Documentación de OpenAI sobre text-embedding-3-small: https://developers.openai.com/api/docs/models/text-embedding-3-small

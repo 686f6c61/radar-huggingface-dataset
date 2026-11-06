@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r439-online-dpo-merged` es un checkpoint experimental creado por el usuario `unconst`, resultado de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de HuggingFace, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos basada en la familia Qwen 3.5) y es multimodal, con capacidades de procesamiento conjunto de imagen y texto (`image-text-to-text`). El repositorio contiene 35.107.181.936 parámetros (~35,1 mil millones) en formato safetensors, con un tamaño total de 70,2 GB.
+El modelo `unconst/Affine-5czsc2fc98-r439-online-dpo-merged` es un checkpoint experimental creado por el usuario `unconst`, resultado de un merge de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según los tags de Hugging Face, emplea una arquitectura `qwen3_5_moe` (mezcla de expertos basada en la familia Qwen 3.5) y es multimodal, con capacidades de procesamiento conjunto de imagen y texto (`image-text-to-text`). El repositorio contiene 35.107.181.936 parámetros (~35,1 mil millones) en formato safetensors, con un tamaño total de 70,2 GB.
 
 La model card es extremadamente escueta: indica que es un "LoRA-merged" del modelo base citado, y añade el aviso "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que se trata de un checkpoint intermedio de un proceso de desarrollo no publicado. No se proporciona información sobre licencia, idiomas, contexto, ni detalles de entrenamiento. Por tanto, esta ficha se basa únicamente en los metadatos disponibles y en las inferencias razonables a partir de los tags; cualquier dato no confirmado se marca explícitamente como no disponible.
 
@@ -21,7 +21,7 @@ La model card es extremadamente escueta: indica que es un "LoRA-merged" del mode
 
 ## Arquitectura y entrenamiento
 
-Los tags de HuggingFace indican que el modelo emplea una arquitectura de tipo `qwen3_5_moe`, es decir, una mezcla de expertos perteneciente a la familia Qwen 3.5, aunque no se especifica el número de expertos ni la estrategia de activación. También aparece el tag `image-text-to-text`, lo que implica que el modelo acepta entradas multimodales (imagen y texto) y genera texto, probablemente mediante un codificador visual integrado.
+Los tags de Hugging Face indican que el modelo emplea una arquitectura de tipo `qwen3_5_moe`, es decir, una mezcla de expertos perteneciente a la familia Qwen 3.5, aunque no se especifica el número de expertos ni la estrategia de activación. También aparece el tag `image-text-to-text`, lo que implica que el modelo acepta entradas multimodales (imagen y texto) y genera texto, probablemente mediante un codificador visual integrado.
 
 El checkpoint actual es el resultado de un merge de LoRA sobre el modelo `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez figura como fine-tune de otro modelo (según el tag `base_model:finetune:kevin954/Affine-5dfqbbh8ev-sft`). El nombre del repositorio incluye `online-dpo-merged`, lo que sugiere que se aplicó un proceso de optimización por preferencias (DPO) en línea antes del merge, pero no hay documentación que lo confirme. No se dispone de datos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se emplearon técnicas adicionales como RLHF o decodificación especulativa.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 - VRAM estimada: con 35.107 millones de parámetros y un tamaño de repo de 70,2 GB, una inferencia en precisión FP16 requeriría aproximadamente 70 GB de VRAM. Con cuantización a 8 bits se reduciría a ~35 GB, y a 4 bits a ~18 GB, pero no se han publicado archivos cuantizados.
 - GPU recomendadas: para FP16 serían necesarias GPUs de alta gama como A100 80GB, H100 80GB o múltiples RTX 4090 (24 GB cada una) en paralelo. Con cuantización 4 bits podría ejecutarse en una sola RTX 4090 o similar, siempre que se generen los archivos GGUF o AWQ correspondientes.
-- Opciones de despliegue: al ser compatible con `transformers`, se puede servir con vLLM, TGI o HuggingFace Inference Endpoints. Para cuantización local, sería necesario convertir los pesos a GGUF para usar con llama.cpp u Ollama.
+- Opciones de despliegue: al ser compatible con `transformers`, se puede servir con vLLM, TGI o Hugging Face Inference Endpoints. Para cuantización local, sería necesario convertir los pesos a GGUF para usar con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r439-online-dpo-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r439-online-dpo-merged
 - Modelo base (referenciado): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - No se han encontrado papers, blogs, demos ni otros recursos adicionales.

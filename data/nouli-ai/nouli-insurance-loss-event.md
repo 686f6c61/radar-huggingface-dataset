@@ -6,7 +6,7 @@ Nouli Insurance Loss Event es un modelo de clasificación de texto desarrollado 
 
 Se trata de un modelo encoder de aproximadamente 355 millones de parámetros, con licencia Apache-2.0 y pesos en formato safetensors, entrenado sobre un dataset sintético (gratex/GNOTHEIA-synthetic-insurance-dataset-v2). Su relevancia radica en que ejemplifica un flujo estructurado de triaje de siniestros: clasificación del evento a partir de texto libre y enrutamiento posterior a la cola de gestión adecuada, una tarea típica en la digitalización de la admisión de partes de siniestro.
 
-El modelo está pensado como artefacto de investigación: el autor lo describe explícitamente como un modelo de investigación evaluado sobre datos sintéticos, con soporte únicamente para inglés y sin inferencia alojada en HuggingFace (inference: false), por lo que debe ejecutarse localmente en CPU o CUDA.
+El modelo está pensado como artefacto de investigación: el autor lo describe explícitamente como un modelo de investigación evaluado sobre datos sintéticos, con soporte únicamente para inglés y sin inferencia alojada en Hugging Face (inference: false), por lo que debe ejecutarse localmente en CPU o CUDA.
 
 ## Especificaciones tecnicas
 
@@ -56,16 +56,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al tratarse de un modelo de 355 millones de parámetros en precisión completa (fp32), los pesos ocupan aproximadamente 1,4 GB; en fp16, alrededor de 0,7 GB (el tamaño del repo es de 0,7 GB). La VRAM adicional depende del tamaño de lote y de la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM libre es suficiente para inferencia en fp16 con lotes pequeños; tarjetas como RTX 3060, RTX 4090, A100 o H100 funcionan sin problema, aunque el modelo es pequeño y no aprovecha su capacidad.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna con 4 GB o más de VRAM; también puede ejecutarse en CPU, como indica el autor.
-- Opciones de despliegue: transformers (librería indicada en la model card), text-embeddings-inference (tag presente), y en general cualquier runtime compatible con modelos de clasificación de HuggingFace. No se documentan integraciones específicas con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: transformers (librería indicada en la model card), text-embeddings-inference (tag presente), y en general cualquier runtime compatible con modelos de clasificación de Hugging Face. No se documentan integraciones específicas con vLLM, llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nouli-ai/nouli-insurance-loss-event | 355 M | no disponible | Clasificación de eventos de pérdida en siniestros (22 clases) | Apache-2.0 | HuggingFace (inference: false) |
-| FacebookAI/roberta-large | 355 M | 512 tokens (estándar de RoBERTa) | Modelo base encoder, sin fine-tune específico | MIT | HuggingFace |
-| Modelos de clasificación de texto genéricos (p. ej. fine-tunes de BERT/DistilBERT) | Variable | Variable | Clasificación genérica | Variable | HuggingFace |
+| nouli-ai/nouli-insurance-loss-event | 355 M | no disponible | Clasificación de eventos de pérdida en siniestros (22 clases) | Apache-2.0 | Hugging Face (inference: false) |
+| FacebookAI/roberta-large | 355 M | 512 tokens (estándar de RoBERTa) | Modelo base encoder, sin fine-tune específico | MIT | Hugging Face |
+| Modelos de clasificación de texto genéricos (p. ej. fine-tunes de BERT/DistilBERT) | Variable | Variable | Clasificación genérica | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -78,13 +78,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - La cobertura y la liquidación requieren una evaluación separada: el autor advierte que la causa reportada importa y que la cobertura de la póliza y la liquidación no se derivan del modelo.
 - Enrutamiento determinista: la cola de admisión se asigna mediante una regla escrita a mano, no aprendida, por lo que su calidad depende de la regla y no del modelo.
 - Licencia Apache-2.0 con aviso upstream MIT aplicable: conviene revisar los términos del modelo base (RoBERTa-large, MIT) para uso comercial.
-- Sin inferencia alojada: inference: false en HuggingFace, por lo que el despliegue corre por cuenta del usuario.
+- Sin inferencia alojada: inference: false en Hugging Face, por lo que el despliegue corre por cuenta del usuario.
 - Sesgos: no se documentan análisis de sesgos en la información disponible.
 - Sin datos de benchmarks: no hay métricas publicadas que permitan estimar la precisión en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nouli-ai/nouli-insurance-loss-event
+- Modelo en Hugging Face: https://huggingface.co/nouli-ai/nouli-insurance-loss-event
 - Sitio del autor: https://nouli.ai
 - Modelo base: https://huggingface.co/FacebookAI/roberta-large
 - Dataset de entrenamiento: https://huggingface.co/datasets/gratex/GNOTHEIA-synthetic-insurance-dataset-v2

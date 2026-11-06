@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ishikaa/acquisition_generator_AS_answer_variance_omnimath_qwen14b | 14.770.033.664 | No disponible | No disponible | HuggingFace |
-| Qwen2-14B-Instruct | ~14.700.000.000 | 32.768 | Apache 2.0 | HuggingFace |
-| Qwen2.5-14B-Instruct | ~14.700.000.000 | 131.072 | Apache 2.0 | HuggingFace |
+| ishikaa/acquisition_generator_AS_answer_variance_omnimath_qwen14b | 14.770.033.664 | No disponible | No disponible | Hugging Face |
+| Qwen2-14B-Instruct | ~14.700.000.000 | 32.768 | Apache 2.0 | Hugging Face |
+| Qwen2.5-14B-Instruct | ~14.700.000.000 | 131.072 | Apache 2.0 | Hugging Face |
 
 Los datos de Qwen2-14B-Instruct y Qwen2.5-14B-Instruct proceden de información pública de la familia Qwen. No se dispone de datos comparables para este fine-tune en concreto.
 
@@ -74,4 +74,4 @@ Los datos de Qwen2-14B-Instruct y Qwen2.5-14B-Instruct proceden de información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_omnimath_qwen14b
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_omnimath_qwen14b

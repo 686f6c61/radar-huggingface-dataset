@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no puede compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anilkumarwyn/3d-scene-understanding
+- Repositorio en Hugging Face: https://huggingface.co/anilkumarwyn/3d-scene-understanding
 - Referencias externas relevantes (no afiliadas al autor):
   - GPT4Scene: https://gpt4scene.github.io/
   - SceneFun3D: https://scenefun3d.github.io/

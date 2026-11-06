@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bobtehbuilder/tds-ga8-carbon-78d6304154c5` no es un modelo de IA funcional, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning. Publicado en HuggingFace por el usuario `bobtehbuilder` el 28 de agosto de 2026, este artefacto documenta el impacto medioambiental de un entrenamiento realizado sobre 8 GPUs NVIDIA A100 en la región `ap-southeast1`. La model card incluye únicamente métricas de emisiones calculadas con CodeCarbon, sin describir arquitectura, parámetros ni capacidades del modelo subyacente.
+El modelo `bobtehbuilder/tds-ga8-carbon-78d6304154c5` no es un modelo de IA funcional, sino un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning. Publicado en Hugging Face por el usuario `bobtehbuilder` el 28 de agosto de 2026, este artefacto documenta el impacto medioambiental de un entrenamiento realizado sobre 8 GPUs NVIDIA A100 en la región `ap-southeast1`. La model card incluye únicamente métricas de emisiones calculadas con CodeCarbon, sin describir arquitectura, parámetros ni capacidades del modelo subyacente.
 
 La relevancia de este registro reside en su función como ejemplo de transparencia energética en el ciclo de vida de los modelos de IA. A medida que la comunidad exige mayor responsabilidad ambiental, artefactos como este permiten auditar el coste de CO2 de los entrenamientos. Sin embargo, al carecer de información sobre el modelo base, la licencia o los pesos, su utilidad práctica para desarrolladores es limitada.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Comparativa con modelos similares
 
-El autor ha publicado otros registros con la misma nomenclatura en HuggingFace: `bobtehbuilder/tds-ga8-carbon-f5ad34f6f655` y `bobtehbuilder/tds-ga8-carbon-6ce1163ef72f`. También existen repositorios GitHub relacionados (`llEclipsell/tds-ga8` y `22f3001797/tds-ga8`) que podrían contener el código del proyecto, aunque su contenido no ha sido verificado en esta búsqueda. No se dispone de modelos comparables en cuanto a rendimiento, ya que este artefacto no define un modelo funcional.
+El autor ha publicado otros registros con la misma nomenclatura en Hugging Face: `bobtehbuilder/tds-ga8-carbon-f5ad34f6f655` y `bobtehbuilder/tds-ga8-carbon-6ce1163ef72f`. También existen repositorios GitHub relacionados (`llEclipsell/tds-ga8` y `22f3001797/tds-ga8`) que podrían contener el código del proyecto, aunque su contenido no ha sido verificado en esta búsqueda. No se dispone de modelos comparables en cuanto a rendimiento, ya que este artefacto no define un modelo funcional.
 
 ## Limitaciones y advertencias
 
@@ -66,7 +66,7 @@ El autor ha publicado otros registros con la misma nomenclatura en HuggingFace: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-78d6304154c5
+- Modelo en Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-78d6304154c5
 - Registro similar del mismo autor: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f5ad34f6f655
 - Registro similar del mismo autor: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f
 - Repositorio GitHub relacionado: https://github.com/llEclipsell/tds-ga8

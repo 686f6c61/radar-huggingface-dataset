@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cossmoss/reverse_distill_assets` aloja un conjunto de activos de gran tamaño (aproximadamente 9,82 TB) publicado por el usuario cossmoss en HuggingFace. El nombre sugiere que se trata de materiales relacionados con un proceso de "destilación inversa" (reverse distillation), una técnica que podría emplearse para transferir conocimiento entre modelos o para generar datos sintéticos de entrenamiento. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, licencia, idiomas ni ningún detalle técnico adicional.
+El repositorio `cossmoss/reverse_distill_assets` aloja un conjunto de activos de gran tamaño (aproximadamente 9,82 TB) publicado por el usuario cossmoss en Hugging Face. El nombre sugiere que se trata de materiales relacionados con un proceso de "destilación inversa" (reverse distillation), una técnica que podría emplearse para transferir conocimiento entre modelos o para generar datos sintéticos de entrenamiento. Sin embargo, la información pública disponible es extremadamente limitada: no se especifica arquitectura, número de parámetros, licencia, idiomas ni ningún detalle técnico adicional.
 
 A fecha de creación (3 de agosto de 2026) y última actualización (14 de agosto de 2026), el repositorio no registra descargas y solo cuenta con un "like". El tamaño inusualmente grande sugiere que podría contener pesos de modelos, datasets o embeddings, pero sin metadatos adicionales es imposible determinar su naturaleza exacta. Este repositorio no es adecuado para su uso en producción o evaluación sin información complementaria.
 
@@ -67,6 +67,6 @@ No disponible. No se puede establecer comparación con otros modelos al desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cossmoss/reverse_distill_assets
+- Repositorio en Hugging Face: https://huggingface.co/cossmoss/reverse_distill_assets
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) relacionados con este proyecto en la información disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8` es un modelo de extracción de características (*feature extraction*) publicado en HuggingFace por el usuario craigmacdonald. Por su nombre y sus etiquetas, se trata de un codificador de pasajes orientado a recuperación de información, aparentemente entrenado o ajustado sobre el corpus MS MARCO (passage ranking) y comprimido mediante cuantización por producto de 8 bits con M=96 subcuantizadores (esquema tipo JPQ). El repositorio declara 109.482.240 parámetros en formato safetensors y un tamaño de 0,4 GB.
+`craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8` es un modelo de extracción de características (*feature extraction*) publicado en Hugging Face por el usuario craigmacdonald. Por su nombre y sus etiquetas, se trata de un codificador de pasajes orientado a recuperación de información, aparentemente entrenado o ajustado sobre el corpus MS MARCO (passage ranking) y comprimido mediante cuantización por producto de 8 bits con M=96 subcuantizadores (esquema tipo JPQ). El repositorio declara 109.482.240 parámetros en formato safetensors y un tamaño de 0,4 GB.
 
-El modelo tiene 0 descargas y 0 *likes* en el momento de la consulta, y su *model card* es la plantilla automática de HuggingFace sin ningún campo cumplimentado: no hay información sobre desarrollador, datos de entrenamiento, licencia ni evaluación. Por tanto, cualquier afirmación sobre su comportamiento debe considerarse no verificada.
+El modelo tiene 0 descargas y 0 *likes* en el momento de la consulta, y su *model card* es la plantilla automática de Hugging Face sin ningún campo cumplimentado: no hay información sobre desarrollador, datos de entrenamiento, licencia ni evaluación. Por tanto, cualquier afirmación sobre su comportamiento debe considerarse no verificada.
 
 La relevancia de esta ficha es limitada pero real: se trata de un ejemplo típico de artefacto de investigación en el ámbito de la búsqueda semántica densa, donde la cuantización agresiva (códigos de 96 bytes por pasaje) es clave para reducir el coste de memoria de los índices vectoriales. Quien quiera usarlo deberá asumir que la documentación es inexistente y validar el modelo por su cuenta.
 
@@ -34,7 +34,7 @@ El nombre del repositorio contiene tres indicios que no están documentados por 
 - Extracción de embeddings de pasajes o documentos: el pipeline declarado es `feature-extraction`, por lo que la salida esperada son vectores densos.
 - Búsqueda semántica y *ranking* de pasajes: por el nombre y el origen aparente (MS MARCO), estaría orientado a puntuar la relevancia entre consulta y pasaje.
 - Representación comprimida: la cuantización a 8 bits con M=96 sugiere códigos de 96 bytes por vector, útiles para índices vectoriales de bajo consumo de memoria.
-- Compatibilidad con el ecosistema `transformers` y con *endpoints* de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad con el ecosistema `transformers` y con *endpoints* de Hugging Face (etiqueta `endpoints_compatible`).
 - Generación de texto: no soportada (no es un modelo generativo).
 - *Tool calling* / *function calling*: no soportado.
 - Razonamiento multi-paso o modo agente: no soportado.
@@ -74,8 +74,8 @@ No se han identificado en la informacion proporcionada modelos directamente comp
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8 | 109.482.240 | no disponible | feature-extraction / recuperacion | no disponible | HuggingFace |
-| bert-base-uncased | 109.482.240 | 512 tokens | encoder general | Apache-2.0 | HuggingFace |
+| craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8 | 109.482.240 | no disponible | feature-extraction / recuperacion | no disponible | Hugging Face |
+| bert-base-uncased | 109.482.240 | 512 tokens | encoder general | Apache-2.0 | Hugging Face |
 
 Otras alternativas del espacio de recuperación densa (por ejemplo, modelos basados en ColBERT, en arquitecturas tipo sentence-transformers o en variantes JPQ) no aparecen documentadas en la información disponible para este repositorio, por lo que no se incluyen datos comparativos.
 
@@ -94,6 +94,6 @@ Otras alternativas del espacio de recuperación densa (por ejemplo, modelos basa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8
+- Modelo en Hugging Face: https://huggingface.co/craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre estimación de emisiones de carbono en machine learning): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos asociados a este modelo.

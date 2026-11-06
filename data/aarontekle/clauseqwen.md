@@ -85,8 +85,8 @@ Advertencia del propio autor: el benchmark de 100 ejemplos contiene únicamente 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClauseQwen (AaronTekle) | 1,7B (adaptador LoRA sobre Qwen3-1.7B) | No disponible | Análisis de cláusulas contractuales (CUAD, ContractNLI) | No disponible | HuggingFace, 0 descargas |
-| Qwen3-1.7B (Alibaba) | 1,7B | No disponible en esta ficha | LLM generalista | No disponible en esta ficha | HuggingFace, ampliamente utilizado |
+| ClauseQwen (AaronTekle) | 1,7B (adaptador LoRA sobre Qwen3-1.7B) | No disponible | Análisis de cláusulas contractuales (CUAD, ContractNLI) | No disponible | Hugging Face, 0 descargas |
+| Qwen3-1.7B (Alibaba) | 1,7B | No disponible en esta ficha | LLM generalista | No disponible en esta ficha | Hugging Face, ampliamente utilizado |
 | Modelos legales basados en LLM de 7B o superior | 7B+ | Variable | Análisis legal general | Variable | Variable |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos legales especializados en la información proporcionada. La comparación cuantitativa disponible es únicamente contra el modelo base Qwen3-1.7B, recogida en la sección de benchmarks.
@@ -104,7 +104,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos legales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AaronTekle/ClauseQwen
+- Modelo en Hugging Face: https://huggingface.co/AaronTekle/ClauseQwen
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset CUAD: https://huggingface.co/datasets/theatticusproject/cuad
 - Dataset LegalBench: https://huggingface.co/datasets/nguha/legalbench

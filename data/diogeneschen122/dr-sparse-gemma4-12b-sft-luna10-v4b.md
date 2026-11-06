@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dr.Sparse-Gemma4-12B-SFT-luna10-v4b | ~12B | 65.536 tokens en SFT | Generacion de kernels SpGEMM CUDA | Gemma | HuggingFace, 0 descargas |
-| DiogenesChen122/Gemma-4-31B-Lora-20260828 | ~31B (base Gemma 4 31B) | No disponible | Generacion de kernels CUDA con SFT por rechazo (4.027 ejemplos mantenidos, 3.822/205) | Gemma | HuggingFace |
-| google/gemma-4-12B-it (modelo base) | ~12B | No disponible | Asistente multimodal generalista con audio y video | Gemma | HuggingFace |
+| Dr.Sparse-Gemma4-12B-SFT-luna10-v4b | ~12B | 65.536 tokens en SFT | Generacion de kernels SpGEMM CUDA | Gemma | Hugging Face, 0 descargas |
+| DiogenesChen122/Gemma-4-31B-Lora-20260828 | ~31B (base Gemma 4 31B) | No disponible | Generacion de kernels CUDA con SFT por rechazo (4.027 ejemplos mantenidos, 3.822/205) | Gemma | Hugging Face |
+| google/gemma-4-12B-it (modelo base) | ~12B | No disponible | Asistente multimodal generalista con audio y video | Gemma | Hugging Face |
 
 La comparación directa con el modelo base en la tarea objetivo (OTF-81) no puede cerrarse porque la evaluación está pendiente. El sibling de 31B pertenece al mismo proyecto y usa una metodología de selección distinta (rejection sampling con verificación de compilación y speedup ≥ 1,05× frente a cuSPARSE), lo que sugiere un pipeline más exigente en la curación de datos que el SFT directo empleado aquí.
 
@@ -97,7 +97,7 @@ La comparación directa con el modelo base en la tarea objetivo (OTF-81) no pued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DiogenesChen122/Dr.Sparse-Gemma4-12B-SFT-luna10-v4b
+- Modelo en Hugging Face: https://huggingface.co/DiogenesChen122/Dr.Sparse-Gemma4-12B-SFT-luna10-v4b
 - Modelo base: https://huggingface.co/google/gemma-4-12B
 - Dataset de entrenamiento: https://huggingface.co/datasets/KinGeorge/Dr.Sparse-SFT-luna10-v4b
 - Modelo hermano de 31B del mismo autor: https://huggingface.co/DiogenesChen122/Gemma-4-31B-Lora-20260828

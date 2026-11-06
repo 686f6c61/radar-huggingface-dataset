@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrysh/gemma-4-12b-it-nvfp4 | 6.509.756.464 (safetensors) | no disponible | NVFP4, group size 16 | Apache 2.0 | HuggingFace, 15 descargas |
-| google/gemma-4-12B-it | no disponible | no disponible | BF16 (original) | Apache 2.0 | HuggingFace (modelo base) |
+| mrysh/gemma-4-12b-it-nvfp4 | 6.509.756.464 (safetensors) | no disponible | NVFP4, group size 16 | Apache 2.0 | Hugging Face, 15 descargas |
+| google/gemma-4-12B-it | no disponible | no disponible | BF16 (original) | Apache 2.0 | Hugging Face (modelo base) |
 | Otras variantes del benchmark | no disponible | no disponible | otras 7 tecnicas | no disponible | no disponible |
 
 No se dispone de informacion sobre el resto de variantes cuantizadas del benchmark ni sobre modelos alternativos de tamano comparable, por lo que la comparativa se limita al modelo base y a esta conversion.
@@ -82,7 +82,7 @@ No se dispone de informacion sobre el resto de variantes cuantizadas del benchma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-nvfp4
+- Repositorio Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-nvfp4
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Libreria de cuantizacion: nvidia-modelopt 0.47.0 (no se proporciona enlace directo en la informacion disponible)
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a esta publicacion.

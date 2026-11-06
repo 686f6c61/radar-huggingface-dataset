@@ -68,12 +68,12 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - Riesgo de alucinación: como todo modelo de lenguaje aplicado a ASR, puede generar texto que no corresponde exactamente al audio, especialmente con hotwords mal definidas o contextos ambiguos.
 - Limitaciones de idioma: aunque soporta 10 idiomas, no se especifica el nivel de robustez para variantes dialectales o registros informales.
 - Restricciones de licencia: la licencia MIT permite uso comercial y modificación, pero el modelo se distribuye sin garantías. Es responsabilidad del usuario evaluar su idoneidad para el caso de uso.
-- Caveat de producción: al ser un modelo reciente (fecha de creación 2026-09-02) y con cero descargas y likes en HuggingFace, no hay evidencia de adopción en entornos reales. Se recomienda validar su rendimiento con datos propios antes de desplegarlo en producción.
+- Caveat de producción: al ser un modelo reciente (fecha de creación 2026-09-02) y con cero descargas y likes en Hugging Face, no hay evidencia de adopción en entornos reales. Se recomienda validar su rendimiento con datos propios antes de desplegarlo en producción.
 - La información sobre arquitectura y entrenamiento es limitada; esto dificulta la depuración de errores o la optimización avanzada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
+- Modelo en Hugging Face: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
 - Repositorio GitHub: https://github.com/microsoft/VibeVoice
 - Demo en vivo: https://aka.ms/vibeasr
 - Página del proyecto (Microsoft): https://microsoft.github.io/VibeVoice/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Gab-P79/resultados_fine_tuning` es un modelo de clasificación de texto obtenido por ajuste fino supervisado de `distilbert-base-uncased`, publicado en HuggingFace por el usuario Gab-P79. Se trata de un encoder transformer denso de 66.956.548 parámetros (67 M) con cabeza de clasificación, entrenado durante 2 épocas con AdamW y un learning rate de 2e-5, que alcanza una accuracy de 0,897 y una pérdida de validación de 0,3344 sobre un conjunto de evaluación no documentado. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
+`Gab-P79/resultados_fine_tuning` es un modelo de clasificación de texto obtenido por ajuste fino supervisado de `distilbert-base-uncased`, publicado en Hugging Face por el usuario Gab-P79. Se trata de un encoder transformer denso de 66.956.548 parámetros (67 M) con cabeza de clasificación, entrenado durante 2 épocas con AdamW y un learning rate de 2e-5, que alcanza una accuracy de 0,897 y una pérdida de validación de 0,3344 sobre un conjunto de evaluación no documentado. El repositorio ocupa 0,3 GB y se distribuye bajo licencia Apache 2.0.
 
-Su relevancia es limitada y muy acotada: no es un modelo fundacional ni un LLM generativo, sino un artefacto de clasificación derivado de un trainer automático, con la model card generada por la plantilla de HuggingFace y sin descripción de la tarea, el dataset ni el mapeo de etiquetas. La arquitectura es la de DistilBERT (6 capas, 768 dimensiones ocultas, 12 cabezas de atención, ventana de 512 tokens), por lo que su coste computacional es mínimo y cabe en CPU.
+Su relevancia es limitada y muy acotada: no es un modelo fundacional ni un LLM generativo, sino un artefacto de clasificación derivado de un trainer automático, con la model card generada por la plantilla de Hugging Face y sin descripción de la tarea, el dataset ni el mapeo de etiquetas. La arquitectura es la de DistilBERT (6 capas, 768 dimensiones ocultas, 12 cabezas de atención, ventana de 512 tokens), por lo que su coste computacional es mínimo y cabe en CPU.
 
 El interés práctico, por tanto, no está en el modelo en sí, sino en el patrón: un fine-tune ligero de DistilBERT para clasificación con 67 M de parámetros es un punto de partida razonable para tareas de moderación, etiquetado o enrutamiento, siempre que se sustituya el dataset desconocido por uno propio y se documente el problema. Sin esa información, el modelo no es reutilizable de forma fiable fuera del contexto del autor.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Gab-P79/resultados_fine_tuning` | 67 M | 512 | Clasificacion (etiquetas no documentadas) | Apache 2.0 | HuggingFace, 0 descargas |
-| `distilbert-base-uncased` | 67 M | 512 | Modelo base, enmascarado + embeddings | Apache 2.0 | HuggingFace, ampliamente usado |
-| `bert-base-uncased` | 110 M | 512 | Modelo base | Apache 2.0 | HuggingFace, ampliamente usado |
-| `roberta-base` | 125 M | 512 | Modelo base | MIT | HuggingFace, ampliamente usado |
+| `Gab-P79/resultados_fine_tuning` | 67 M | 512 | Clasificacion (etiquetas no documentadas) | Apache 2.0 | Hugging Face, 0 descargas |
+| `distilbert-base-uncased` | 67 M | 512 | Modelo base, enmascarado + embeddings | Apache 2.0 | Hugging Face, ampliamente usado |
+| `bert-base-uncased` | 110 M | 512 | Modelo base | Apache 2.0 | Hugging Face, ampliamente usado |
+| `roberta-base` | 125 M | 512 | Modelo base | MIT | Hugging Face, ampliamente usado |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada, por lo que la comparación se limita a parámetros, contexto y licencia. Frente a `distilbert-base-uncased`, este modelo solo añade una cabeza de clasificación ajustada sobre un dataset desconocido; frente a BERT-base o RoBERTa-base, ofrece un 39 % y un 46 % menos de parámetros respectivamente, a costa de una capacidad de representación inferior.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gab-P79/resultados_fine_tuning
+- Modelo en Hugging Face: https://huggingface.co/Gab-P79/resultados_fine_tuning
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Documentación del pipeline de clasificación de texto: https://huggingface.co/docs/transformers/main/en/tasks/sequence_classification
 - Documentación de DistilBERT: https://huggingface.co/docs/transformers/model_doc/distilbert

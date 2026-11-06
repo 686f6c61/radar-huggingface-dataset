@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio bbrihuang/Qwen3.5-4B-GGUF es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario bbrihuang. Por el nombre del repositorio se deduce que se trata de una cuantizacion de un modelo base denominado "Qwen3.5-4B", pero en la informacion disponible no aparece ninguna confirmacion oficial sobre el origen, el autor original ni la arquitectura de ese modelo base. El unico dato cuantitativo verificable es el numero de parametros declarado en los pesos originales: 4.326.350.848 parametros, es decir, aproximadamente 4,3 mil millones.
+El repositorio bbrihuang/Qwen3.5-4B-GGUF es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario bbrihuang. Por el nombre del repositorio se deduce que se trata de una cuantizacion de un modelo base denominado "Qwen3.5-4B", pero en la informacion disponible no aparece ninguna confirmacion oficial sobre el origen, el autor original ni la arquitectura de ese modelo base. El unico dato cuantitativo verificable es el numero de parametros declarado en los pesos originales: 4.326.350.848 parametros, es decir, aproximadamente 4,3 mil millones.
 
-El repositorio ocupa 8,7 GB, un tamano coherente con un conjunto de varias cuantizaciones GGUF del mismo modelo (habitualmente Q4_K_M, Q5_K_M, Q6_K, Q8_0 y a veces F16) y no con un unico fichero. Las etiquetas declaradas son gguf, endpoints_compatible, region:us y conversational, lo que indica que el autor lo plantea como modelo conversacional desplegable mediante el ecosistema llama.cpp y potencialmente a traves de HuggingFace Inference Endpoints. No se declara licencia, idiomas ni pipeline en la ficha de HuggingFace.
+El repositorio ocupa 8,7 GB, un tamano coherente con un conjunto de varias cuantizaciones GGUF del mismo modelo (habitualmente Q4_K_M, Q5_K_M, Q6_K, Q8_0 y a veces F16) y no con un unico fichero. Las etiquetas declaradas son gguf, endpoints_compatible, region:us y conversational, lo que indica que el autor lo plantea como modelo conversacional desplegable mediante el ecosistema llama.cpp y potencialmente a traves de Hugging Face Inference Endpoints. No se declara licencia, idiomas ni pipeline en la ficha de Hugging Face.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un repositorio con 1 descarga y 0 "likes" en el momento de la consulta, publicado el 15 de octubre de 2026 y actualizado dos minutos despues, sin documentacion tecnica asociada. Cualquier evaluacion de calidad, licencia o idoneidad para produccion queda pendiente de verificacion directa con el autor.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, no se han publicado en la informacion disponible el n
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible. No se declara lista de idiomas.
 - Capacidades especiales (modo "thinking", vision, audio): no disponible. El nombre del modelo base no confirma ni descarta un modo de razonamiento extendido.
-- Despliegue como endpoint: la etiqueta endpoints_compatible indica compatibilidad prevista con HuggingFace Inference Endpoints, si bien esto no esta verificado.
+- Despliegue como endpoint: la etiqueta endpoints_compatible indica compatibilidad prevista con Hugging Face Inference Endpoints, si bien esto no esta verificado.
 
 ## Casos de uso
 
@@ -103,6 +103,6 @@ La conclusion principal es que existen alternativas de tamano equivalente con li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bbrihuang/Qwen3.5-4B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/bbrihuang/Qwen3.5-4B-GGUF
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las unicas URL devueltas pertenecen al portal educativo frances toutatice.fr (https://www.toutatice.fr/portail/homepage.html, https://ent.toutatice.fr/ y paginas asociadas de gestion de contrasenas) y no guardan ninguna relacion con el modelo.
 - Paper, blog oficial, repositorio de codigo o demo: no disponibles.

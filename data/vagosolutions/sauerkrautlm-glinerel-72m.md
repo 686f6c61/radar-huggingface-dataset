@@ -18,7 +18,7 @@ Es relevante ahora porque cubre cinco idiomas (ingles, aleman, frances, italiano
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | fp32 (referencia), fp16 y bf16 en GPU; no se documentan cuantizaciones de enteros |
 | Idiomas soportados | en, de, fr, it, es |
-| Licencia | LFM Open License v1.0 (identificador `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (identificador `other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Libreria de inferencia | `glinerel-fast` (PyTorch puro, sin `transformers`) |
 | Tarea | token-classification (NER, PII, extraccion de relaciones) |
@@ -89,12 +89,12 @@ En las particiones de desarrollo de CoNLL04, CrossRE, DocRED y FewRel, la model 
 - No se documentan sesgos conocidos, pero al ser un modelo multilingue entrenado sobre corpus no especificados, puede heredar sesgos de esos datos; la informacion disponible no detalla la composicion del dataset.
 - La longitud de contexto no esta publicada; para documentos muy largos habra que segmentar y agregar resultados.
 - Las etiquetas son texto libre, lo que aporta flexibilidad pero puede producir extracciones inconsistentes si las etiquetas son ambiguas o se solapan.
-- La libreria `glinerel-fast` se distribuye desde un repositorio privado que requiere autenticacion con HuggingFace (`hf auth login`), lo que anade un paso de configuracion en produccion.
+- La libreria `glinerel-fast` se distribuye desde un repositorio privado que requiere autenticacion con Hugging Face (`hf auth login`), lo que anade un paso de configuracion en produccion.
 - Riesgo de alucinacion estructural bajo por ser extractivo, pero puede generar falsos positivos en entidades y relaciones con puntuaciones de confianza bajas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-72m
+- Modelo en Hugging Face: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-72m
 - Modelo base: https://huggingface.co/VAGOsolutions/SauerkrautLM-GLiNEREL-314m
 - Demo interactiva (PDF a grafo de conocimiento): https://huggingface.co/spaces/VAGOsolutions/SauerkrautLM-GLiNEREL-Knowledge-Graph
 - Libreria de inferencia en PyPI: https://pypi.org/project/glinerel-fast/

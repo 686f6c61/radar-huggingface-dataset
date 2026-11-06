@@ -99,7 +99,7 @@ No se dispone de una comparacion de rendimiento fiable: cualquier afirmacion sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g2-selfjudge-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g2-selfjudge-chat
 - Modelo base (etapa intermedia): https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g2-midtrain
 - Repositorio de entrenamiento `flourishing-training`: no disponible como URL; solo se referencian los commits `a0afb77669ae` (lanzador)
 - Script de evaluacion: `uv run eval.py --model joshycodes/qwen3-4b-sorrel-selfloop-g2-selfjudge-chat --eval all` (referenciado en la model card, sin enlace publico)

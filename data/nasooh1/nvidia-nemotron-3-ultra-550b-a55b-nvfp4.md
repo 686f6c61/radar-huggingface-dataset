@@ -6,7 +6,7 @@ NVIDIA Nemotron-3-Ultra-550B-A55B-NVFP4 es un modelo de lenguaje de escala front
 
 Este modelo se distribuye con pesos cuantizados en NVFP4 (formato de 4 bits de NVIDIA), lo que reduce los requisitos de memoria respecto a BF16 manteniendo un rendimiento cercano según los benchmarks publicados. Está disponible bajo la licencia OpenMDW-1.1, que permite uso comercial y no comercial, y soporta diez idiomas principales. Su relevancia radica en ser uno de los primeros modelos abiertos de NVIDIA con arquitectura híbrida y cuantización nativa de 4 bits, orientado a cargas de trabajo exigentes como agentes autónomos, RAG de alto riesgo y razonamiento científico.
 
-La versión alojada en HuggingFace (nasooh1/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4) contiene los pesos en formato safetensors con un tamaño real de 302.826.566.168 parámetros, inferior a la cifra declarada de 550B, probablemente debido a compartición de pesos o a la cuantización. El repositorio tiene un tamaño de 352.4 GB y no registra descargas ni valoraciones en el momento de la consulta.
+La versión alojada en Hugging Face (nasooh1/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4) contiene los pesos en formato safetensors con un tamaño real de 302.826.566.168 parámetros, inferior a la cifra declarada de 550B, probablemente debido a compartición de pesos o a la cuantización. El repositorio tiene un tamaño de 352.4 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La versión alojada en HuggingFace (nasooh1/NVIDIA-Nemotron-3-Ultra-550B-A55B-NV
 
 El modelo utiliza una arquitectura LatentMoE híbrida que intercala capas de Mamba-2 (modelos de espacio de estado) con capas de mezcla de expertos y capas de atención selectivas. Esta combinación busca equilibrar eficiencia computacional y capacidad de modelado de dependencias de largo alcance. Además, incorpora Multi-Token Prediction (MTP), una técnica que predice varios tokens futuros simultáneamente, lo que acelera la generación y mejora la calidad del texto producido.
 
-El entrenamiento se realizó en dos fases: pre-entrenamiento con datos con corte en septiembre de 2025 y post-entrenamiento con datos hasta mayo de 2026. NVIDIA ha publicado los datasets de ambas fases en HuggingFace. El modelo se entrenó con una receta de pre-entrenamiento en NVFP4, lo que maximiza la eficiencia computacional durante el entrenamiento y permite una inferencia más rápida con menor uso de memoria. La model card indica que el razonamiento (modo "thinking") es configurable mediante el chat template con la opción `enable_thinking=True/False`.
+El entrenamiento se realizó en dos fases: pre-entrenamiento con datos con corte en septiembre de 2025 y post-entrenamiento con datos hasta mayo de 2026. NVIDIA ha publicado los datasets de ambas fases en Hugging Face. El modelo se entrenó con una receta de pre-entrenamiento en NVFP4, lo que maximiza la eficiencia computacional durante el entrenamiento y permite una inferencia más rápida con menor uso de memoria. La model card indica que el razonamiento (modo "thinking") es configurable mediante el chat template con la opción `enable_thinking=True/False`.
 
 ## Capacidades
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos directos en la información proporcionada. S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nasooh1/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
+- Hugging Face: https://huggingface.co/nasooh1/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4
 - Informe técnico: https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3-Ultra-Technical-Report.pdf
 - Chat de prueba: https://build.nvidia.com/nvidia/nemotron-3-ultra-550b-a55b
 - Datasets de pre-entrenamiento: https://huggingface.co/collections/nvidia/nemotron-pre-training-datasets

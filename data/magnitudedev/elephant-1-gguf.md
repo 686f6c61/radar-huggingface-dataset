@@ -91,7 +91,7 @@ La comparación es solo estructural: no existen datos públicos de rendimiento d
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/magnitudedev/elephant-1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/magnitudedev/elephant-1-GGUF
 - Modelo base: https://huggingface.co/baselabs/elephant-1
 - Plataforma Magnitude: https://magnitude.run
 - Licencia del repositorio (MIT): https://huggingface.co/magnitudedev/elephant-1-GGUF/blob/main/LICENSE

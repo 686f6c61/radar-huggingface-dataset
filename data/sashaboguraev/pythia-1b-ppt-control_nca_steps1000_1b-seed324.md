@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed324` es un modelo de lenguaje de 1.011.671.040 parámetros (aproximadamente 1B) basado en la arquitectura GPT-NeoX, tal como indican las etiquetas de HuggingFace. Fue publicado por el usuario sashaboguraev y su nombre sugiere que se trata de un experimento de control relacionado con "PPT" (posiblemente *Prompt Programming* o *Pseudo-Prompt Tuning*) y "NCA" (*Neural Cellular Automata*), con 1000 pasos de entrenamiento y una semilla fija (324). La model card es genérica y no proporciona información específica sobre el desarrollo, los datos de entrenamiento ni las capacidades del modelo.
+El modelo `sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed324` es un modelo de lenguaje de 1.011.671.040 parámetros (aproximadamente 1B) basado en la arquitectura GPT-NeoX, tal como indican las etiquetas de Hugging Face. Fue publicado por el usuario sashaboguraev y su nombre sugiere que se trata de un experimento de control relacionado con "PPT" (posiblemente *Prompt Programming* o *Pseudo-Prompt Tuning*) y "NCA" (*Neural Cellular Automata*), con 1000 pasos de entrenamiento y una semilla fija (324). La model card es genérica y no proporciona información específica sobre el desarrollo, los datos de entrenamiento ni las capacidades del modelo.
 
 Este modelo resulta relevante únicamente como un artefacto de investigación abierto, ya que su documentación es prácticamente inexistente. No se dispone de información sobre su licencia, idiomas soportados, contexto máximo ni rendimiento en benchmarks. A pesar de ello, al estar disponible en formato safetensors y ser compatible con la librería `transformers`, puede ser utilizado para experimentación técnica, aunque con precaución debido a la falta de garantías sobre su comportamiento.
 
@@ -10,7 +10,7 @@ Este modelo resulta relevante únicamente como un artefacto de investigación ab
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según etiquetas de HuggingFace) |
+| Arquitectura | GPT-NeoX (según etiquetas de Hugging Face) |
 | Parametros totales | 1.011.671.040 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -74,7 +74,7 @@ Sin datos de rendimiento ni especificaciones claras, no es posible comparar este
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed324)
+- [Modelo en Hugging Face](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps1000_1b-seed324)
 - [Variante con 100 pasos (steps100)](https://huggingface.co/sashaboguraev/pythia-1b-ppt-control_nca_steps100_1b-seed324)
 - [Variante con 250 pasos (steps250) en FriendliAI](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps250_1b-seed324)
 - [Variante con 500 pasos (steps500) en FriendliAI](https://friendli.ai/models/sashaboguraev/pythia-1b-ppt-control_nca_steps500_1b-seed324)

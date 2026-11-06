@@ -6,7 +6,7 @@ earth-science-ai999x es un paquete Python desarrollado por AI999X (Ibnul Jaif Fa
 
 Su propuesta diferencial es el rechazo explícito: el sistema declara siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y, según el autor, evita adivinar cuando no puede verificar una respuesta. Cada solución devuelve pasos, fórmula en LaTeX, unidades y supuestos, lo que lo orienta a tutoría, corrección de ejercicios y validación reproducible más que a generación abierta.
 
-Es relevante ahora por su encaje en dos nichos concretos: entornos sin conectividad (aulas, laboratorios, despliegues aire-gap) y pipelines donde una respuesta numérica incorrecta es costosa. Conviene subrayar que, pese a las etiquetas de HuggingFace (`question-answering`, `token-classification`, `sentence-similarity`), no es un modelo generativo de propósito general: la cobertura está acotada a las 85 capacidades y a las 522 formas de pregunta documentadas.
+Es relevante ahora por su encaje en dos nichos concretos: entornos sin conectividad (aulas, laboratorios, despliegues aire-gap) y pipelines donde una respuesta numérica incorrecta es costosa. Conviene subrayar que, pese a las etiquetas de Hugging Face (`question-answering`, `token-classification`, `sentence-similarity`), no es un modelo generativo de propósito general: la cobertura está acotada a las 85 capacidades y a las 522 formas de pregunta documentadas.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ Advertencias sobre estos datos: el 1.0 corresponde a un conjunto propio de 522 p
 - VRAM: no aplica. El sistema se ejecuta en CPU; el componente safetensors de 4.715.520 parámetros ocupa aproximadamente 18,9 MB en fp32 y unos 9,4 MB en fp16, a lo que se suma el runtime de Python con sympy y mpmath.
 - GPU: no se requiere ni se documenta soporte de aceleración por GPU (A100, H100, RTX 4090 u otras). La model card indica explícitamente "CPU only, offline".
 - Cabe en cualquier equipo de consumo: basta una CPU x86-64 o Windows con Python 3.10-3.14; no hay requisito de memoria gráfica.
-- Despliegue: instalación vía `pip install earth-science-ai999x` o del wheel alojado en el repositorio de HuggingFace. No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje servible por esos motores.
+- Despliegue: instalación vía `pip install earth-science-ai999x` o del wheel alojado en el repositorio de Hugging Face. No es compatible con vLLM, llama.cpp, Ollama ni TGI, al no ser un modelo de lenguaje servible por esos motores.
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser cálculo simbólico determinista sobre CPU, el coste dominante es el arranque del intérprete y la evaluación simbólica, no la inferencia neuronal.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparación relevante es de categoría, no de escala: frente a un LLM genera
 
 - Cobertura cerrada: solo resuelve las 85 capacidades certificadas y las formas de pregunta documentadas en inglés; cualquier otra consulta deriva en OUT_OF_SCOPE o UNRECOGNIZED_FORMAT.
 - Idioma único: la información declara únicamente inglés (en); no hay soporte documentado de castellano ni de otras lenguas.
-- No es un modelo conversacional: no mantiene contexto multi-turno ni genera texto libre, pese a las etiquetas de HuggingFace (`question-answering`, `text-classification`, `sentence-similarity`).
+- No es un modelo conversacional: no mantiene contexto multi-turno ni genera texto libre, pese a las etiquetas de Hugging Face (`question-answering`, `text-classification`, `sentence-similarity`).
 - La afirmación "zero wrong answers" y el accuracy de 1.0 proceden del autor y figuran como `verified: false`; no hay evaluación independiente ni conjunto de test público.
 - El conjunto dorado de 522 preguntas es también el criterio de evaluación, por lo que la métrica no mide generalización a preguntas nuevas o mal formuladas.
 - Riesgo de alucinación bajo por diseño, pero el fallo característico es el rechazo o la ambigüedad no resuelta, no la invención; conviene gestionar los siete estados en la aplicación cliente.
@@ -99,12 +99,12 @@ La comparación relevante es de categoría, no de escala: frente a un LLM genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/earth-science-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/earth-science-ai999x
 - Repositorio GitHub: https://github.com/AI999X/earth-science-ai999x
 - Paquete PyPI: https://pypi.org/project/earth-science-ai999x/
 - Guía de capacidades (docs): https://huggingface.co/AI999X/earth-science-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/earth-science-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
 - Proyecto hermano (física): https://github.com/AI999X/physics-ai999x

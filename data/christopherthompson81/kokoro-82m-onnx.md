@@ -105,7 +105,7 @@ No hay mediciones publicadas de latencia absoluta ni de throughput en tiempo rea
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/christopherthompson81/kokoro-82m-onnx
+- Repositorio Hugging Face: https://huggingface.co/christopherthompson81/kokoro-82m-onnx
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Proyecto Vernacula: https://github.com/christopherthompson81/vernacula
 - Scripts de exportacion: https://github.com/christopherthompson81/vernacula/tree/main/scripts/kokoro_export

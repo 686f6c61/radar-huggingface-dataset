@@ -99,7 +99,7 @@ La comparativa muestra que los candidatos alternativos no presentan una estructu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pocharlies/qwen38-27b-uncensored-abliterated-refusal-directions
+- Repositorio Hugging Face: https://huggingface.co/pocharlies/qwen38-27b-uncensored-abliterated-refusal-directions
 - Codigo, parche y benchmarks: https://github.com/pocharlies/qwen38-27b-rank1-refusal-projection
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint abliterado de referencia: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored

@@ -26,7 +26,7 @@ Se trata de un modelo experimental de nicho: el repositorio ocupa 0,1 GB (cohere
 | Tipo de ajuste | LoRA (rango 16, alpha 32, dropout 0,01, todos los modulos) |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Publicacion | 8 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Publicacion | 8 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xtools-at/Qwen3.5-4B-Medical-Reasoning | 4B nominales | 4.096 en entrenamiento | No | apache-2.0 | HuggingFace, repositorio de 0,1 GB |
-| DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING | 4B nominales | no disponible | No | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| Qwen/Qwen3.5-4B | 4B nominales | no disponible | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace (modelo original) |
+| xtools-at/Qwen3.5-4B-Medical-Reasoning | 4B nominales | 4.096 en entrenamiento | No | apache-2.0 | Hugging Face, repositorio de 0,1 GB |
+| DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING | 4B nominales | no disponible | No | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| Qwen/Qwen3.5-4B | 4B nominales | no disponible | No disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face (modelo original) |
 
 No se dispone de datos de benchmarks ni de especificaciones verificadas de los modelos comparables para establecer una comparacion cuantitativa de rendimiento. La comparativa se limita a la cadena de derivacion y al tamano nominal.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning
 - Modelo base (variante de DavidAU): https://huggingface.co/DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de ajuste: https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT

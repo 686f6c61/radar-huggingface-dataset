@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act-pick-v3-strict-9600` es una política de imitación visomotora basada en ACT (Action Chunking Transformer) para el brazo robótico de bajo coste SO-101, publicada por el usuario IkerAzurmendi en HuggingFace bajo la librería LeRobot. Resuelve una única tarea: coger una pieza de una caja y sostenerla frente a la cámara. El modelo consume dos cámaras (frontal y de muñeca) más las seis posiciones articulares del robot, y devuelve un chunk de 90 objetivos articulares futuros a 30 fps, es decir, una ventana de predicción de 3 segundos que se recalcula cada 30 pasos (1 segundo).
+`act-pick-v3-strict-9600` es una política de imitación visomotora basada en ACT (Action Chunking Transformer) para el brazo robótico de bajo coste SO-101, publicada por el usuario IkerAzurmendi en Hugging Face bajo la librería LeRobot. Resuelve una única tarea: coger una pieza de una caja y sostenerla frente a la cámara. El modelo consume dos cámaras (frontal y de muñeca) más las seis posiciones articulares del robot, y devuelve un chunk de 90 objetivos articulares futuros a 30 fps, es decir, una ventana de predicción de 3 segundos que se recalcula cada 30 pasos (1 segundo).
 
 Con 51.658.374 parámetros y un repo de 0,2 GB, es un modelo pequeño pensado para control en tiempo real en hardware modesto. Se entrenó con 205 episodios filtrados por calidad (duración 6-12 s, hueco inicial máximo de 5 grados, como mucho 1 s de inactividad en los extremos, al menos una apertura de pinza) mediante el `train()` de LeRobot, con batch 8, chunk 90 y semilla 1000.
 
@@ -112,7 +112,7 @@ Las diferencias entre los mejores checkpoints de los runs principales están den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-9600
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-9600
 - Checkpoint hermano mejor valorado del run *strict*: https://huggingface.co/IkerAzurmendi/act-pick-v3-strict-2400
 - Run *super* con 398 episodios: https://huggingface.co/IkerAzurmendi/act-pick-v3-6000
 - Run sobre episodios de una y dos piezas: https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-18000

@@ -85,7 +85,7 @@ No se dispone en la informacion proporcionada de datos verificables de alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-po-w2
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-po-w2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Modelo de evaluacion declarado: https://huggingface.co/Qwen/Qwen3-14B
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k

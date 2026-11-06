@@ -4,7 +4,7 @@
 
 Greek Apertus 8B Instruct es un modelo de lenguaje de tipo instruct especializado en griego moderno, desarrollado por glossAPI a partir de la familia Apertus. Se trata de un ajuste fino (SFT) del checkpoint `glossAPI/apertus-8b-greek-cpt`, que a su vez deriva del modelo fundacional Apertus 8B creado por la Swiss AI Initiative (colaboración entre EPFL, ETH Zurich y CSCS). El objetivo es cubrir la escasez de modelos abiertos con competencia real en griego, un idioma con representación limitada en los corpus de entrenamiento de la mayoría de LLM.
 
-El modelo tiene aproximadamente 8.000 millones de parámetros, soporta griego (el) e inglés (en), y se distribuye bajo licencia Apache 2.0. Está publicado como versión de vista previa (v0.1-preview) y el acceso está restringido: requiere aceptar las condiciones en HuggingFace antes de poder descargarlo.
+El modelo tiene aproximadamente 8.000 millones de parámetros, soporta griego (el) e inglés (en), y se distribuye bajo licencia Apache 2.0. Está publicado como versión de vista previa (v0.1-preview) y el acceso está restringido: requiere aceptar las condiciones en Hugging Face antes de poder descargarlo.
 
 Su relevancia actual radica en que combina la filosofía de ciencia abierta de Apertus (pesos, datos y metodología abiertos) con un proceso de post-entrenamiento específico para griego, apoyado por datasets propios de glossAPI (corpus de preentrenamiento continuado, datos de post-entrenamiento y datos de SFT). Los resultados declarados por el autor en GreekMMLU (70,52 %), IFEval-el (65,8 %) y GSM8K-el (59,67 %) sitúan al modelo como una opción a considerar para tareas en griego, aunque dichos valores no están verificados de forma independiente.
 
@@ -67,7 +67,7 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 - Compatibilidad con GPU de consumo: no confirmada. Un modelo de ~8B suele ser desplegable en GPU de gama alta de consumo en cuantizacion, pero no hay datos oficiales para este checkpoint.
 - Opciones de despliegue: la libreria declarada es transformers. No se confirma soporte para vLLM, llama.cpp, Ollama o TGI en la informacion disponible.
 - Latencia y throughput: no disponible.
-- Acceso: el repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga, lo que afecta a la automatizacion del despliegue.
+- Acceso: el repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga, lo que afecta a la automatizacion del despliegue.
 
 ## Comparativa con modelos similares
 
@@ -87,13 +87,13 @@ No se dispone de datos comparativos de rendimiento entre estos modelos ni con ot
 - La longitud de contexto no esta especificada, lo que dificulta planificar casos de uso con documentos largos.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; no hay evaluaciones de fidelidad publicadas en la informacion disponible.
 - Sesgos: no se documentan analisis de sesgo ni de toxicidad para este modelo.
-- Licencia Apache 2.0: permite uso comercial, pero al tratarse de un repositorio restringido (gated) hay que aceptar las condiciones de acceso en HuggingFace antes de usarlo.
+- Licencia Apache 2.0: permite uso comercial, pero al tratarse de un repositorio restringido (gated) hay que aceptar las condiciones de acceso en Hugging Face antes de usarlo.
 - No se confirma soporte de tool calling, agentes ni cuantizaciones, lo que limita su integracion directa en pipelines de produccion sin validacion previa.
 - El modelo hereda las caracteristicas y posibles limitaciones del Apertus 8B subyacente, cuyo detalle arquitectonico no se incluye en la informacion proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/glossAPI/greek-apertus-8b-instruct
+- Hugging Face: https://huggingface.co/glossAPI/greek-apertus-8b-instruct
 - Modelo base (preentrenamiento continuado en griego): https://huggingface.co/glossAPI/apertus-8b-greek-cpt
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/glossAPI/apertus-8b-greek-cpt-modern-greek-train
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/glossAPI/greek-apertus-post-training-data

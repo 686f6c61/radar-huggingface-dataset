@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wernerlea/simple-classification` es un repositorio experimental publicado en HuggingFace por Lea Werner (usuario `wernerlea`) que contiene una implementación propia de DeiT (Data-efficient Image Transformer) en su variante *tiny* para tareas de clasificación. No se distribuye como modelo entrenado, sino como base de código con un *checkpoint* de inicialización válido únicamente para *smoke tests*: la propia model card indica explícitamente que no se reclama ninguna métrica de benchmark y que los pesos no han sido entrenados ni auditados.
+`wernerlea/simple-classification` es un repositorio experimental publicado en Hugging Face por Lea Werner (usuario `wernerlea`) que contiene una implementación propia de DeiT (Data-efficient Image Transformer) en su variante *tiny* para tareas de clasificación. No se distribuye como modelo entrenado, sino como base de código con un *checkpoint* de inicialización válido únicamente para *smoke tests*: la propia model card indica explícitamente que no se reclama ninguna métrica de benchmark y que los pesos no han sido entrenados ni auditados.
 
 El interés del repositorio es, por tanto, arquitectónico y metodológico, no de rendimiento. La implementación incorpora decisiones poco habituales en DeiT estándar: atención *grouped query* (GQA), fusión de bajo rango (*low rank fusion*), activación mish y normalización RMSNorm, sobre un esqueleto de escala *tiny*. Con 24.832 parámetros totales según los safetensors, el modelo es tres órdenes de magnitud menor que un DeiT-Tiny convencional, lo que lo sitúa como un banco de pruebas para cambios de arquitectura antes de lanzar entrenamientos completos.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: pipeline declarado no disponible, 0 descargas y 0 *
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un DeiT de escala *tiny* con modificaciones respecto al DeiT original: mecanismo de atención *grouped query* (varias cabezas de consulta comparten un conjunto reducido de claves y valores), fusión de características de bajo rango, función de activación mish en lugar de GELU y RMSNorm en lugar de LayerNorm. El repositorio incluye `config.json` con los ajustes de arquitectura generados y un script `finetune.py` que actúa como artefacto principal, con un bloque `__main__` que contiene un ejemplo ejecutable de *smoke test*. Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+La arquitectura es un DeiT de escala *tiny* con modificaciones respecto al DeiT original: mecanismo de atención *grouped query* (varias cabezas de consulta comparten un conjunto reducido de claves y valores), fusión de características de bajo rango, función de activación mish en lugar de GELU y RMSNorm en lugar de LayerNorm. El repositorio incluye `config.json` con los ajustes de arquitectura generados y un script `finetune.py` que actúa como artefacto principal, con un bloque `__main__` que contiene un ejemplo ejecutable de *smoke test*. Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 No se ha publicado información sobre datos de entrenamiento: no hay número de tokens, composición del dataset, ni consta RLHF, DPO o ajuste por instrucciones (la tarea es clasificación, no generación). El `model.safetensors` es un *checkpoint* de inicialización, no el resultado de un entrenamiento. La receta por defecto en `training_args.json` usa optimizador Lion con planificador de *warmup* constante, y la model card subraya que son valores de partida del script, no evidencia de una ejecución completada.
 
@@ -86,7 +86,7 @@ Advertencia: las filas de referencia corresponden a modelos conocidos de la lite
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wernerlea/simple-classification
+- Modelo en Hugging Face: https://huggingface.co/wernerlea/simple-classification
 - Ficheros del repositorio: https://huggingface.co/wernerlea/simple-classification/tree/main (incluye `finetune.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`)
 - Perfil del autor: https://huggingface.co/wernerlea
 - Modelo homónimo no relacionado (clasificación de texto con DistilBERT): https://huggingface.co/ai-ar/simple-classification

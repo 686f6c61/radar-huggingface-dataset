@@ -4,7 +4,7 @@
 
 El repositorio `crazyape777/fk-diane613-affine-5gedzafcvg-jesusss` es un duplicado del modelo `diane613/Affine-5gedzafcvg-jesusss`, publicado por el usuario crazyape777. Según la model card incluida, el modelo corresponde a **Qwen3.6-35B-A3B**, un modelo de lenguaje causal multimodal con codificador de visión, desarrollado por Alibaba Qwen. Se trata de una arquitectura Mixture of Experts (MoE) con 35 mil millones de parámetros totales y 3 mil millones activos por token, diseñada para tareas de razonamiento, codificación agéntica y comprensión de imágenes.
 
-La relevancia de este modelo radica en su equilibrio entre tamaño y eficiencia: al activar solo 3B parámetros, ofrece un rendimiento comparable a modelos densos de 30-40B con un coste de inferencia mucho menor. Incorpora innovaciones como atención lineal Gated DeltaNet, atención Gated Attention con RoPE, y un contexto nativo de 262 144 tokens extensible hasta 1 010 000. Sin embargo, es importante señalar que la model card del repositorio podría no corresponder exactamente al modelo original de diane613, ya que el tag de HuggingFace indica `qwen3_5_moe` mientras que el README describe Qwen3.6. No hay información independiente sobre el modelo `Affine-5gedzafcvg-jesusss` más allá de lo que aparece en este repositorio duplicado.
+La relevancia de este modelo radica en su equilibrio entre tamaño y eficiencia: al activar solo 3B parámetros, ofrece un rendimiento comparable a modelos densos de 30-40B con un coste de inferencia mucho menor. Incorpora innovaciones como atención lineal Gated DeltaNet, atención Gated Attention con RoPE, y un contexto nativo de 262 144 tokens extensible hasta 1 010 000. Sin embargo, es importante señalar que la model card del repositorio podría no corresponder exactamente al modelo original de diane613, ya que el tag de Hugging Face indica `qwen3_5_moe` mientras que el README describe Qwen3.6. No hay información independiente sobre el modelo `Affine-5gedzafcvg-jesusss` más allá de lo que aparece en este repositorio duplicado.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ El modelo se posiciona como una mejora incremental sobre Qwen3.5-35B-A3B en tare
 
 ## Limitaciones y advertencias
 
-- **Origen del modelo**: este repositorio es un duplicado sin información verificada sobre el modelo original `diane613/Affine-5gedzafcvg-jesusss`. La model card describe Qwen3.6-35B-A3B, pero el tag de HuggingFace indica `qwen3_5_moe`, lo que sugiere una posible discrepancia. Los datos técnicos podrían no ser exactos.
+- **Origen del modelo**: este repositorio es un duplicado sin información verificada sobre el modelo original `diane613/Affine-5gedzafcvg-jesusss`. La model card describe Qwen3.6-35B-A3B, pero el tag de Hugging Face indica `qwen3_5_moe`, lo que sugiere una posible discrepancia. Los datos técnicos podrían no ser exactos.
 - **Sesgos y alucinación**: no se ha publicado ninguna evaluación de sesgos ni de fiabilidad. Como todo modelo de lenguaje, puede generar contenido incorrecto o inventado, especialmente en dominios poco representados.
 - **Riesgo de alucinación en código**: en tareas de codificación, puede producir código sintácticamente válido pero con errores lógicos o vulnerabilidades. Se recomienda revisión humana en entornos de producción.
 - **Limitaciones de contexto**: aunque el contexto nativo es de 262K tokens, el rendimiento en contextos muy largos puede degradarse. La extensión a 1M tokens requiere técnicas adicionales no documentadas.
@@ -87,8 +87,8 @@ El modelo se posiciona como una mejora incremental sobre Qwen3.5-35B-A3B en tare
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/crazyape777/fk-diane613-affine-5gedzafcvg-jesusss)
+- [Repositorio Hugging Face](https://huggingface.co/crazyape777/fk-diane613-affine-5gedzafcvg-jesusss)
 - [Modelo original de diane613 (Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B)](https://huggingface.co/diane613/Affine-5CQLBK7Mmw1vsk7eQcBok9Qn44JNU5YVrfNmZpJHPxLV271B)
-- [Perfil de diane613 en HuggingFace](https://huggingface.co/diane613)
+- [Perfil de diane613 en Hugging Face](https://huggingface.co/diane613)
 - [Blog de Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b) (referencia de la model card)
 - [Licencia Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)

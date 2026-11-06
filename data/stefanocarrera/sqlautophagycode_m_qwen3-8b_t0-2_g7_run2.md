@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run2` es un ajuste fino publicado en HuggingFace por el usuario stefanocarrera. El identificador del repositorio indica que parte de Qwen3-8B como modelo base, que se ha entrenado con la librería Unsloth y que el resultado se ha exportado en formato `safetensors` compatible con `transformers`. El peso total del repositorio es de 0,2 GB, una cifra muy inferior a los aproximadamente 16 GB que ocuparían los pesos completos de un modelo denso de 8.000 millones de parámetros en bf16, lo que apunta a que el repositorio contiene adaptadores LoRA (o una exportación parcial), no los pesos fusionados completos.
+`stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run2` es un ajuste fino publicado en Hugging Face por el usuario stefanocarrera. El identificador del repositorio indica que parte de Qwen3-8B como modelo base, que se ha entrenado con la librería Unsloth y que el resultado se ha exportado en formato `safetensors` compatible con `transformers`. El peso total del repositorio es de 0,2 GB, una cifra muy inferior a los aproximadamente 16 GB que ocuparían los pesos completos de un modelo denso de 8.000 millones de parámetros en bf16, lo que apunta a que el repositorio contiene adaptadores LoRA (o una exportación parcial), no los pesos fusionados completos.
 
-La model card es la plantilla automática de HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como `[More Information Needed]`. No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks, y el repositorio no tiene descargas ni valoraciones en el momento de redactar esta ficha.
+La model card es la plantilla automática de Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros y evaluación) figuran como `[More Information Needed]`. No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks, y el repositorio no tiene descargas ni valoraciones en el momento de redactar esta ficha.
 
 Por el nombre se deduce que el ajuste está orientado a tareas de SQL y código, y que se generaron varias ejecuciones con distintos parámetros de muestreo (el sufijo `t0.2` sugiere temperatura 0,2 y `g7_run2` una séptima configuración de generación en su segunda ejecución). Esta interpretación es una hipótesis basada en la nomenclatura y no está confirmada por el autor. El interés de la ficha es, por tanto, limitado y descriptivo: documenta un artefacto de investigación reproducible con `transformers` cuya utilidad en producción no puede evaluarse con la información publicada.
 
@@ -75,10 +75,10 @@ Estimaciones orientativas para un adaptador sobre Qwen3-8B (8.200 millones de pa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este ajuste (base Qwen3-8B) | ~8.200 M (adaptador de 0,2 GB) | No disponible | No disponible | HuggingFace, 0 descargas | No publicado |
-| Qwen3-8B (base) | ~8.200 M | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado | Benchmarks publicados por el autor del base |
-| Llama 3.1 8B Instruct | 8.030 M | 131.072 | Llama 3.1 Community License | HuggingFace, muy extendido | Benchmarks publicados por Meta |
-| Mistral 7B Instruct v0.3 | 7.250 M | 32.768 | Apache 2.0 | HuggingFace, muy extendido | Benchmarks publicados por Mistral |
+| Este ajuste (base Qwen3-8B) | ~8.200 M (adaptador de 0,2 GB) | No disponible | No disponible | Hugging Face, 0 descargas | No publicado |
+| Qwen3-8B (base) | ~8.200 M | 32.768 nativo, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado | Benchmarks publicados por el autor del base |
+| Llama 3.1 8B Instruct | 8.030 M | 131.072 | Llama 3.1 Community License | Hugging Face, muy extendido | Benchmarks publicados por Meta |
+| Mistral 7B Instruct v0.3 | 7.250 M | 32.768 | Apache 2.0 | Hugging Face, muy extendido | Benchmarks publicados por Mistral |
 
 La comparacion de rendimiento no puede realizarse porque este ajuste no publica ninguna evaluacion. La ventaja estructural de los tres alternativas frente a este repositorio es la existencia de documentacion completa, licencia declarada y artefactos listos para produccion.
 
@@ -90,13 +90,13 @@ La comparacion de rendimiento no puede realizarse porque este ajuste no publica 
 - Riesgo elevado de alucinacion en tareas de SQL y codigo no evaluado; debe validarse con un conjunto de pruebas propio antes de cualquier despliegue.
 - Sin benchmarks publicados no es posible estimar la degradacion de capacidades generales (catastrofic forgetting) provocada por el fine-tuning.
 - El repositorio tiene 0 descargas y 0 valoraciones: no hay evidencia de uso ni de resultados reproducidos por terceros.
-- El campo `pipeline` no esta declarado, por lo que las herramientas automaticas de HuggingFace no podran clasificar la tarea.
+- El campo `pipeline` no esta declarado, por lo que las herramientas automaticas de Hugging Face no podran clasificar la tarea.
 - El `arxiv:1910.09700` de las etiquetas no es un paper del modelo: es la referencia sobre emisiones de carbono de la plantilla.
 - Los resultados de busqueda web asociados no contienen informacion relevante sobre el modelo (devuelven previsiones meteorologicas sin relacion), por lo que no existe literatura externa que lo respalde.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run2
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.2_g7_run2
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Unsloth (libreria de entrenamiento citada en las etiquetas): https://github.com/unslothai/unsloth
 - Referencia de la plantilla sobre emisiones (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

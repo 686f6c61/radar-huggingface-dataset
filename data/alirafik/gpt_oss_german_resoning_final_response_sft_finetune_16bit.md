@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aliRafik/gpt_oss_German_resoning_final_response_SFT_finetune_16bit es un modelo de generacion de texto publicado por el usuario aliRafik en HuggingFace, obtenido mediante ajuste fino supervisado (SFT) sobre unsloth/gpt-oss-20b-unsloth-bnb-4bit, que a su vez deriva del gpt-oss-20b de OpenAI. El nombre del repositorio sugiere un ajuste orientado a generar una respuesta final en aleman despues de un proceso de razonamiento (la etiqueta "reasoning final response" apunta a entrenamiento sobre pares de razonamiento y respuesta final), si bien la model card no describe el dataset ni la metodologia empleada.
+aliRafik/gpt_oss_German_resoning_final_response_SFT_finetune_16bit es un modelo de generacion de texto publicado por el usuario aliRafik en Hugging Face, obtenido mediante ajuste fino supervisado (SFT) sobre unsloth/gpt-oss-20b-unsloth-bnb-4bit, que a su vez deriva del gpt-oss-20b de OpenAI. El nombre del repositorio sugiere un ajuste orientado a generar una respuesta final en aleman despues de un proceso de razonamiento (la etiqueta "reasoning final response" apunta a entrenamiento sobre pares de razonamiento y respuesta final), si bien la model card no describe el dataset ni la metodologia empleada.
 
 El modelo base pertenece a la familia gpt-oss presentada por OpenAI: modelos de pesos abiertos con licencia Apache 2.0, orientados a razonamiento, uso de herramientas y despliegue eficiente en hardware de consumo. La relevancia de este finetune concreto es limitada por el momento: el repositorio figura con 0 descargas, 0 likes y un tamano reportado de 0,0 GB, lo que sugiere que los pesos no estan publicados o no son descargables, y no se han publicado resultados de evaluacion.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de una publicacion experimental de ajuste fino con Unsloth 
 
 El modelo es un ajuste fino del checkpoint unsloth/gpt-oss-20b-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits con bitsandbytes del gpt-oss-20b de OpenAI. La arquitectura subyacente es la del gpt-oss-20b: un transformer con mezcla de expertos (MoE) disenado para razonamiento y uso de herramientas, distribuido bajo licencia Apache 2.0 y optimizado, segun OpenAI, para despliegue en hardware de consumo. El resultado publicado se denomina "16bit", lo que apunta a un merge de los adaptadores en precision de 16 bits, aunque la ficha no confirma el proceso.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card ("trained 2x faster with Unsloth"). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni la tasa de aprendizaje, el numero de pasos o el hardware utilizado. El autor mantiene otros finetunes con el mismo modelo base, como aliRafik/gpt-oss-20B-finetuned-multilang-reasoning, lo que sugiere una linea de trabajo centrada en adaptar el razonamiento del gpt-oss a distintos idiomas, si bien no hay documentacion tecnica publicada sobre ninguno de ellos.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card ("trained 2x faster with Unsloth"). No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni la tasa de aprendizaje, el numero de pasos o el hardware utilizado. El autor mantiene otros finetunes con el mismo modelo base, como aliRafik/gpt-oss-20B-finetuned-multilang-reasoning, lo que sugiere una linea de trabajo centrada en adaptar el razonamiento del gpt-oss a distintos idiomas, si bien no hay documentacion tecnica publicada sobre ninguno de ellos.
 
 ## Capacidades
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/gpt_oss_German_resoning_final_response_SFT_finetune_16bit
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gpt-oss-20b-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/gpt_oss_German_resoning_final_response_SFT_finetune_16bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gpt-oss-20b-unsloth-bnb-4bit
 - Otro finetune del mismo autor (razonamiento multilingue): https://huggingface.co/aliRafik/gpt-oss-20B-finetuned-multilang-reasoning
 - Version full model del anterior: https://huggingface.co/aliRafik/gpt-oss-20B-finetuned-multilang-reasoning-full-model
 - Anuncio de la familia gpt-oss en OpenAI: https://openai.com/index/introducing-gpt-oss/

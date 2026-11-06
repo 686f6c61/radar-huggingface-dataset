@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UNO es un modelo publicado en HuggingFace por el usuario shuidi0020 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no dispone de pipeline de inferencia declarado.
+UNO es un modelo publicado en Hugging Face por el usuario shuidi0020 bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no dispone de pipeline de inferencia declarado.
 
 Por tanto, no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su longitud de contexto. La unica informacion verificable es la identificacion del autor, la licencia permisiva y las fechas de creacion y actualizacion del repositorio (5 de noviembre de 2026, sin actualizaciones posteriores).
 
@@ -63,5 +63,5 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shuidi0020/UNO
+- Hugging Face: https://huggingface.co/shuidi0020/UNO
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion disponible.

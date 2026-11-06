@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nomic Embed Text v1.5 es un modelo de embeddings de texto desarrollado por Nomic AI y publicado en HuggingFace bajo la licencia Apache-2.0. Está diseñado para resolver tareas de similitud semántica, recuperación de información y clasificación de textos, generando representaciones vectoriales de documentos en inglés. Su arquitectura se basa en NomicBERT, una variante de BERT modificada por el equipo de Nomic, y cuenta con 136.731.648 parámetros. El modelo ha sido validado en el benchmark MTEB, donde presenta resultados sólidos en tareas de clasificación, agrupación y recuperación. Su relevancia actual radica en que es una opción ligera y permissiva para integrar embeddings en sistemas de búsqueda semántica y pipelines de RAG, con soporte para inferencia en múltiples formatos.
+Nomic Embed Text v1.5 es un modelo de embeddings de texto desarrollado por Nomic AI y publicado en Hugging Face bajo la licencia Apache-2.0. Está diseñado para resolver tareas de similitud semántica, recuperación de información y clasificación de textos, generando representaciones vectoriales de documentos en inglés. Su arquitectura se basa en NomicBERT, una variante de BERT modificada por el equipo de Nomic, y cuenta con 136.731.648 parámetros. El modelo ha sido validado en el benchmark MTEB, donde presenta resultados sólidos en tareas de clasificación, agrupación y recuperación. Su relevancia actual radica en que es una opción ligera y permissiva para integrar embeddings en sistemas de búsqueda semántica y pipelines de RAG, con soporte para inferencia en múltiples formatos.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Nomic Embed Text v1.5 es un modelo de embeddings de texto desarrollado por Nomic
 
 ## Arquitectura y entrenamiento
 
-El modelo emplea una arquitectura basada en BERT, específicamente la variante NomicBERT, diseñada por Nomic AI para mejorar la representación semántica de textos. No se dispone en la información proporcionada de detalles sobre los datos de entrenamiento (tamaño del corpus, composición del dataset) ni sobre la aplicación de técnicas de ajuste como RLHF o DPO. El modelo está orientado a tareas de extracción de características (feature-extraction) y similitud de frases (sentence-similarity), tal y como se refleja en su configuración de pipeline en HuggingFace.
+El modelo emplea una arquitectura basada en BERT, específicamente la variante NomicBERT, diseñada por Nomic AI para mejorar la representación semántica de textos. No se dispone en la información proporcionada de detalles sobre los datos de entrenamiento (tamaño del corpus, composición del dataset) ni sobre la aplicación de técnicas de ajuste como RLHF o DPO. El modelo está orientado a tareas de extracción de características (feature-extraction) y similitud de frases (sentence-similarity), tal y como se refleja en su configuración de pipeline en Hugging Face.
 
 ## Capacidades
 
@@ -82,6 +82,6 @@ No se dispone en la información proporcionada de datos comparativos con otros m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
+- Modelo en Hugging Face: https://huggingface.co/nomic-ai/nomic-embed-text-v1.5
 - Paper 1: https://arxiv.org/abs/2402.01613
 - Paper 2: https://arxiv.org/abs/2205.13147

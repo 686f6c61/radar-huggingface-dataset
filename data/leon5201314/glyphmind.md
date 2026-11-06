@@ -76,8 +76,8 @@ No se dispone de información sobre modelos comparables directos (embeddings de 
 
 | Modelo | Enfoque | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GlyphMind-205M | ViT sobre imagen de línea | 202,8 M | no disponible (una línea renderizada) | CC BY 4.0 | Pesos en HuggingFace |
-| GlyphMind-205M-Lao | ViT adaptado al lao | 202,8 M | no disponible | CC BY 4.0 | Pesos en HuggingFace |
+| GlyphMind-205M | ViT sobre imagen de línea | 202,8 M | no disponible (una línea renderizada) | CC BY 4.0 | Pesos en Hugging Face |
+| GlyphMind-205M-Lao | ViT adaptado al lao | 202,8 M | no disponible | CC BY 4.0 | Pesos en Hugging Face |
 | Alternativas textuales de sentence-similarity | Tokenizador + transformer | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,6 +95,6 @@ No se dispone de información sobre modelos comparables directos (embeddings de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leon5201314/glyphmind
+- Modelo en Hugging Face: https://huggingface.co/Leon5201314/glyphmind
 - Dataset NTREX (usado en la evaluación): https://github.com/MicrosoftTranslator/NTREX
 - Preprint del paper: no disponible (en revisión según la model card)

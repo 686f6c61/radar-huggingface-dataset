@@ -95,7 +95,7 @@ No se han proporcionado en la busqueda web datos de rendimiento ni especificacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-sft-ota-rl-r2egym-step30
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-sft-ota-rl-r2egym-step30
 - Modelo base: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
 - Borrador especulativo EAGLE-3: https://huggingface.co/laion/snowball-64k-eagle3-draft-r2egym
 - Checkpoint relacionado: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-oldstack-step24

@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra un flujo de trabajo de poda de expertos guia
 | Longitud de contexto | no disponible en la model card; la configuracion de servicio usa `--max-model-len 84000` |
 | Tipos de cuantizacion | INT4 (expertos enrutados y cabeza MTP), INT8 (GDN y QSA), FP8 E4M3 (tabla PLE), 16-bit (shared experts, `lm_head`, `embed_tokens`, routers, hyper-connections, norms, indexer, `in_proj_a/b`, conv1d) |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors, empaquetado `auto_round:auto_gptq` (group size 128, simetrico, RTN sin calibracion) |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ La tasa de resolucion del agente ARC de este checkpoint no se midio. El modelo s
 
 | Modelo | Parametros | Contexto | NLL (ARC, retenido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (384 expertos) | 67.028 M | no disponible (servicio a 84.000) | 0.1875 | qwen-community-1.0 | publico en HuggingFace |
+| Este checkpoint (384 expertos) | 67.028 M | no disponible (servicio a 84.000) | 0.1875 | qwen-community-1.0 | publico en Hugging Face |
 | Qwen3.8-Flash-Next sin podar (512 expertos) | no disponible | no disponible | 0.1826 | qwen-community-1.0 | modelo base referenciado |
 | Variante 320 expertos | no disponible | no disponible | 0.2090 | no disponible | no subida |
 
@@ -92,6 +92,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nghianvn1/qwen38-flash-next-w4a16-mtp4-gdn8-qsa8-e384
+- Hugging Face: https://huggingface.co/nghianvn1/qwen38-flash-next-w4a16-mtp4-gdn8-qsa8-e384
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

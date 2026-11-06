@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kenes93/qwen-nfactorial-fan-lora es un adaptador LoRA de ajuste supervisado publicado por el usuario Kenes93 en HuggingFace, construido sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, es decir, la variante de 1.500 millones de parametros de la familia Qwen2.5-Instruct en su version cuantizada a 4 bits distribuida por Unsloth. El repositorio contiene unicamente los pesos del adaptador (aproximadamente 0,1 GB), no el modelo fusionado, por lo que su uso requiere descargar el modelo base e integrar el adaptador mediante PEFT.
+Kenes93/qwen-nfactorial-fan-lora es un adaptador LoRA de ajuste supervisado publicado por el usuario Kenes93 en Hugging Face, construido sobre el modelo base unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit, es decir, la variante de 1.500 millones de parametros de la familia Qwen2.5-Instruct en su version cuantizada a 4 bits distribuida por Unsloth. El repositorio contiene unicamente los pesos del adaptador (aproximadamente 0,1 GB), no el modelo fusionado, por lo que su uso requiere descargar el modelo base e integrar el adaptador mediante PEFT.
 
 El modelo se ha entrenado con el stack de Unsloth junto con TRL, segun indica la propia model card, lo que implica un flujo de QLoRA sobre una base ya cuantizada en 4 bits. No se especifica en la informacion disponible el conjunto de datos de entrenamiento, el numero de pasos, la composicion del dataset ni el objetivo concreto del ajuste; el nombre del repositorio (nfactorial-fan) sugiere una especializacion de dominio, pero no hay documentacion que lo confirme.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (128K con YaRN) | Apache 2.0 | safetensors, GGUF (comunidad) | si, publicado por Alibaba |
 | Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | si, publicado por Meta |
 | Gemma-2-2B-it | 2,6B | 8.192 tokens | Gemma Terms of Use | safetensors, GGUF | si, publicado por Google |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | si, publicado por HuggingFace |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache 2.0 | safetensors, GGUF | si, publicado por Hugging Face |
 
 La comparacion con estos modelos es aproximada en cuanto a rendimiento: no existen metricas publicadas del adaptador, por lo que no puede establecerse una jerarquia cuantitativa frente a las alternativas. La ventaja diferencial de este repositorio es su tamano reducido y su licencia permisiva; su desventaja es la ausencia total de evaluacion y de documentacion del entrenamiento.
 
@@ -87,7 +87,7 @@ La comparacion con estos modelos es aproximada en cuanto a rendimiento: no exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kenes93/qwen-nfactorial-fan-lora
+- Modelo en Hugging Face: https://huggingface.co/Kenes93/qwen-nfactorial-fan-lora
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de TRL: https://huggingface.co/docs/trl

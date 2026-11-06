@@ -70,7 +70,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bambocher/Qwen3.5-9B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/bambocher/Qwen3.5-9B-oQ4e-mtp
 - Herramienta oQ / oMLX: https://github.com/jundot/omlx
 - Repositorio oficial de Qwen3.5: https://github.com/ABDtmx/Qwen3.5
 - Modelo en Ollama (referencia): https://ollama.com/library/qwen3.5:9b

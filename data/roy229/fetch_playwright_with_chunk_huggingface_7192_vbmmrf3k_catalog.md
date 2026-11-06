@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Roy229/fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog` es un espacio de HuggingFace creado por el usuario Roy229 el 24 de agosto de 2026. No se trata de un modelo de inteligencia artificial con pesos o arquitectura definida, sino de un espacio de demostración que muestra un panel de gestión de solicitudes de registro de modelos. La model card incluida contiene un catálogo interno de modelos de una empresa ficticia llamada "Acme AI", con campos como licencia, tamaño, puntuación de benchmark y estado de aprobación. No se proporciona ninguna especificación técnica del modelo en sí, ni arquitectura, ni parámetros, ni datos de entrenamiento.
+El repositorio `Roy229/fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog` es un espacio de Hugging Face creado por el usuario Roy229 el 24 de agosto de 2026. No se trata de un modelo de inteligencia artificial con pesos o arquitectura definida, sino de un espacio de demostración que muestra un panel de gestión de solicitudes de registro de modelos. La model card incluida contiene un catálogo interno de modelos de una empresa ficticia llamada "Acme AI", con campos como licencia, tamaño, puntuación de benchmark y estado de aprobación. No se proporciona ninguna especificación técnica del modelo en sí, ni arquitectura, ni parámetros, ni datos de entrenamiento.
 
 La información disponible es insuficiente para considerar este repositorio como un modelo de IA utilizable. Los resultados de búsqueda web muestran un espacio similar con un dashboard de solicitudes pendientes, y un plugin de Playwright para DeepSeek Harness, pero nada que describa las capacidades de un modelo concreto. Por tanto, esta ficha se limita a documentar la ausencia de datos técnicos y a advertir sobre la naturaleza no funcional del repositorio.
 
@@ -60,6 +60,6 @@ No disponible. No existe informacion suficiente para comparar este repositorio c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Roy229/fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog
+- Repositorio en Hugging Face: https://huggingface.co/Roy229/fetch_playwright_with_chunk_huggingface_7192_vbmmrf3k_catalog
 - Espacio similar con dashboard de solicitudes: https://huggingface.co/spaces/Roy229/fetch_playwright_with_chunk_huggingface_3959_dash_nvq8qdvg
 - Plugin de Playwright para DeepSeek Harness (relacionado con el nombre del repositorio, pero no con el modelo): https://github.com/chendefine/dsh-web-fetch-playwright

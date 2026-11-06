@@ -67,7 +67,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. Ex
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ6e-mtp
+- Repositorio Hugging Face: https://huggingface.co/root4k/Qwen3.8-27B-Uncensored-oQ6e-mtp
 - GitHub de oQ (oMLX): https://github.com/jundot/omlx
 - Blog de OrcaRouter sobre la versión MLX: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
 - Guía para ejecutar GGUF localmente: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-facebook/meta-encoder es un modelo multimodal de representación publicado por Meta en HuggingFace, identificado con el pipeline de `feature-extraction`. Se trata de un encoder de aproximadamente 29.776 millones de parámetros (unos 29,78 mil millones), derivado mediante fine-tuning del modelo base meta-models/Muse-Glimmer-30B, según la etiqueta `base_model:finetune` del repositorio.
+facebook/meta-encoder es un modelo multimodal de representación publicado por Meta en Hugging Face, identificado con el pipeline de `feature-extraction`. Se trata de un encoder de aproximadamente 29.776 millones de parámetros (unos 29,78 mil millones), derivado mediante fine-tuning del modelo base meta-models/Muse-Glimmer-30B, según la etiqueta `base_model:finetune` del repositorio.
 
 El modelo está orientado a tareas de representación multimodal: extracción de características, similitud entre modalidades, recuperación imagen-texto (`image-text-retrieval`), clasificación y toma de decisiones. El repositorio ocupa 59,6 GB en safetensors, lo que resulta coherente con un checkpoint en bf16/fp16 del tamaño de parámetros indicado.
 
-El acceso es restringido (gated): requiere aceptar las condiciones en HuggingFace antes de poder descargar los pesos. La licencia declarada es Apache 2.0. En el momento de redactar esta ficha el modelo acumula 11 descargas y 11 likes, y no se ha encontrado documentación técnica adicional (paper, blog de modelo o dataset) en la información disponible.
+El acceso es restringido (gated): requiere aceptar las condiciones en Hugging Face antes de poder descargar los pesos. La licencia declarada es Apache 2.0. En el momento de redactar esta ficha el modelo acumula 11 descargas y 11 likes, y no se ha encontrado documentación técnica adicional (paper, blog de modelo o dataset) en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parámetros (29
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| facebook/meta-encoder | ~29,78 B | No disponible | Apache 2.0 | Gated en HuggingFace |
+| facebook/meta-encoder | ~29,78 B | No disponible | Apache 2.0 | Gated en Hugging Face |
 | meta-models/Muse-Glimmer-30B (modelo base) | No confirmado (denominación "30B") | No disponible | No disponible | No disponible |
 | Alternativas comparables de la misma categoría | No disponible | No disponible | No disponible | No disponible |
 
@@ -86,13 +86,13 @@ No se dispone de información suficiente sobre modelos comparables de representa
 - Sesgos conocidos: no disponibles en la información proporcionada; al ser un encoder multimodal, es esperable heredar sesgos de sus datos de entrenamiento, pero no hay datos que lo confirmen.
 - Riesgo de alucinación: no aplica del mismo modo que en modelos generativos, ya que el pipeline es de extracción de características; sin embargo, en tareas de recuperación puede devolver resultados irrelevantes si los embeddings no están bien calibrados.
 - Limitaciones de contexto e idioma: se desconoce la longitud de contexto soportada y la cobertura idiomática real.
-- Restricciones de licencia: aunque la licencia declarada es Apache 2.0, el acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en HuggingFace; conviene revisar los términos antes de un uso comercial.
+- Restricciones de licencia: aunque la licencia declarada es Apache 2.0, el acceso al repositorio está restringido (gated) y requiere aceptar condiciones adicionales en Hugging Face; conviene revisar los términos antes de un uso comercial.
 - Falta de documentación: no se han localizado paper, blog ni ficha técnica detallada; cualquier integración en producción debería ir precedida de una evaluación propia.
 - Dependencia del base model: cualquier limitación heredada de meta-models/Muse-Glimmer-30B afecta directamente a este modelo, y dicha información tampoco está disponible.
 - Estado de adopción: con 11 descargas, no hay evidencia de uso en producción ni de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/facebook/meta-encoder
+- Página del modelo en Hugging Face: https://huggingface.co/facebook/meta-encoder
 - Modelo base referenciado: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

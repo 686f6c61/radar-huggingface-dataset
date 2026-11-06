@@ -71,8 +71,8 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/manubc33/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/manubc33/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF oficial de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio GGUF de ggml-org: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

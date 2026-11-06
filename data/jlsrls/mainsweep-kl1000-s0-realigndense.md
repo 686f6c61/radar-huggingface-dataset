@@ -93,11 +93,11 @@ Diferencias relevantes: frente al modelo base, este ajuste no aporta informacion
 - Ausencia de benchmarks: no hay ninguna metrica publicada, lo que hace imposible comparar objetivamente con alternativas y desaconseja su adopcion en produccion sin una evaluacion propia previa.
 - Trazabilidad limitada: el unico registro de entrenamiento es una ejecucion de W&B. No hay informe tecnico, ni descripcion del dataset, ni hiperparametros completos, ni semillas documentadas mas alla de lo que sugiere el nombre del modelo.
 - Riesgo de obsolescencia y falta de mantenimiento: el repositorio no tiene descargas ni "likes", lo que indica ausencia de uso y de soporte de la comunidad.
-- Datos de creacion: la fecha de creacion registrada en HuggingFace (2026-09-25) es posterior a la fecha de publicacion de algunas de las versiones de framework declaradas, un detalle de metadatos que conviene tener en cuenta al auditar el modelo.
+- Datos de creacion: la fecha de creacion registrada en Hugging Face (2026-09-25) es posterior a la fecha de publicacion de algunas de las versiones de framework declaradas, un detalle de metadatos que conviene tener en cuenta al auditar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep-kl1000-s0-realigndense
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep-kl1000-s0-realigndense
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/8si1spbe

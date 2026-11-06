@@ -73,7 +73,7 @@ Nota: los datos de parametros y contexto de los modelos comparativos provienen d
 
 ## Enlaces
 
-- [HuggingFace del paquete](https://huggingface.co/backpack-run/whisper-large-v3-turbo-Backpack-ASR)
+- [Hugging Face del paquete](https://huggingface.co/backpack-run/whisper-large-v3-turbo-Backpack-ASR)
 - [Modelo base: openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Repositorio whisper.cpp](https://huggingface.co/ggerganov/whisper.cpp)
 - [Discusion sobre el modelo turbo en OpenAI Whisper](https://github.com/openai/whisper/discussions/2363)

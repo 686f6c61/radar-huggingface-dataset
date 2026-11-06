@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tesssmit/matching-scratch` es un repositorio de investigacion publicado por el usuario tesssmit en HuggingFace, descrito por su propio autor como un prototipo de **MoCo v3** orientado a tareas de *matching*. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje reproducible: incluye un script de ajuste (`finetune.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor define explicitamente como *checkpoint de inicializacion valido para smoke tests*, no como un modelo con pesos aprendidos.
+`tesssmit/matching-scratch` es un repositorio de investigacion publicado por el usuario tesssmit en Hugging Face, descrito por su propio autor como un prototipo de **MoCo v3** orientado a tareas de *matching*. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje reproducible: incluye un script de ajuste (`finetune.py`), un `config.json` con la configuracion de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor define explicitamente como *checkpoint de inicializacion valido para smoke tests*, no como un modelo con pesos aprendidos.
 
 El dato mas llamativo es la discrepancia entre la etiqueta de escala declarada en la model card ("huge") y el recuento real de parametros del fichero safetensors: **16.576 parametros totales**, un orden de magnitud propio de una capa suelta, no de un modelo de lenguaje. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. Esto refuerza la lectura de que se trata de un esqueleto de codigo con pesos aleatorios o sinteticos, util para validar pipelines de entrenamiento antes de lanzar un experimento real.
 
@@ -71,7 +71,7 @@ La informacion disponible no permite una comparativa cuantitativa: no hay benchm
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tesssmit/matching-scratch | Prototipo MoCo v3 para matching | 16.576 (checkpoint sin entrenar) | no disponible | BSD-3-Clause | Publico en HuggingFace |
+| tesssmit/matching-scratch | Prototipo MoCo v3 para matching | 16.576 (checkpoint sin entrenar) | no disponible | BSD-3-Clause | Publico en Hugging Face |
 | MoCo v3 (implementacion de referencia, FAIR) | Framework autosupervisado contrastivo | no disponible | no disponible | no disponible | Repositorio de investigacion |
 | SimCLR | Framework autosupervisado contrastivo | no disponible | no disponible | no disponible | Repositorio de investigacion |
 | BYOL | Framework autosupervisado sin pares negativos | no disponible | no disponible | no disponible | Repositorio de investigacion |
@@ -92,5 +92,5 @@ Nota: no se dispone de datos verificados de parametros, contexto ni licencia par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tesssmit/matching-scratch
+- Hugging Face: https://huggingface.co/tesssmit/matching-scratch
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los unicos resultados recuperados (timeanddate.com, time.is, Wikipedia y time.now sobre la zona horaria AEST) no guardan relacion con el modelo y se descartan.

@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `sotasaito/model_621953145_beit_xlarge` (este) | BEiT xlarge | no disponible | no disponible | BSD-3-Clause | Solo código, sin pesos |
-| `microsoft/beit-large-patch16-224` | BEiT large | 304 M aprox. | 224x224 px | MIT | Pesos y código en HuggingFace |
-| `microsoft/beit-base-patch16-224` | BEiT base | 86 M aprox. | 224x224 px | MIT | Pesos y código en HuggingFace |
+| `microsoft/beit-large-patch16-224` | BEiT large | 304 M aprox. | 224x224 px | MIT | Pesos y código en Hugging Face |
+| `microsoft/beit-base-patch16-224` | BEiT base | 86 M aprox. | 224x224 px | MIT | Pesos y código en Hugging Face |
 
 La comparativa es limitada porque los modelos de Microsoft son los únicos BEiT públicos con pesos y benchmarks. Este repositorio no ofrece nada comparable en términos de rendimiento ni de documentación.
 
@@ -76,7 +76,7 @@ La comparativa es limitada porque los modelos de Microsoft son los únicos BEiT 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/sotasaito/model_621953145_beit_xlarge)
-- [BEiT de Microsoft en HuggingFace](https://huggingface.co/microsoft/beit-large-patch16-224)
+- [Hugging Face del modelo](https://huggingface.co/sotasaito/model_621953145_beit_xlarge)
+- [BEiT de Microsoft en Hugging Face](https://huggingface.co/microsoft/beit-large-patch16-224)
 - [Repositorio BEiT en GitHub](https://github.com/rafa-cxg/BEIT)
 - [Búsqueda en Google Scholar](https://scholar.google.com/) (sin resultados específicos para este modelo)

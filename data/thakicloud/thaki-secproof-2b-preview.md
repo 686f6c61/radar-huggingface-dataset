@@ -83,8 +83,8 @@ Notas del autor sobre estas cifras: solo se evalúa la localización en salidas 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-SecProof-2B-Preview | ≈2B (base) + adaptador LoRA | No disponible | Auditoría de 12 boundaries en runtimes de agentes Python | Apache 2.0 | HuggingFace (research preview) |
-| Qwen/Qwen3.5-2B (stock) | ≈2B | No disponible | Propósito general | No indicada en la información disponible | HuggingFace |
+| Thaki-SecProof-2B-Preview | ≈2B (base) + adaptador LoRA | No disponible | Auditoría de 12 boundaries en runtimes de agentes Python | Apache 2.0 | Hugging Face (research preview) |
+| Qwen/Qwen3.5-2B (stock) | ≈2B | No disponible | Propósito general | No indicada en la información disponible | Hugging Face |
 | Thaki-SecProof-4B / 8B / 27B | 4B / 8B / 27B | No disponible | Misma familia, mismos boundaries | No disponible | Anunciados como parte de la familia, no publicados en la información disponible |
 
 No se dispone de datos de benchmarks de modelos comparables de terceros especializados en auditoría de seguridad de código, por lo que no es posible establecer una comparación cuantitativa con alternativas externas. La única comparación con cifras es contra el modelo base sin adaptador, incluida en la sección de benchmarks.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks de modelos comparables de terceros especial
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-SecProof-2B-Preview
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-SecProof-2B-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Script de inferencia: `inference.py`, incluido en el repositorio del modelo
 - Constructor de prompt: `secproof_prompt.py`, incluido en el repositorio del modelo

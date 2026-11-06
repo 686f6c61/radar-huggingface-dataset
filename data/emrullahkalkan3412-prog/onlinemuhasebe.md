@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emrullahkalkan3412-prog/onlinemuhasebe` es un repositorio publicado en HuggingFace por el usuario `emrullahkalkan3412-prog` bajo licencia MIT. El nombre del repositorio ("onlinemuhasebe", que en turco significa "contabilidad en linea") sugiere que se trata de un artefacto orientado a un caso de uso concreto de contabilidad o gestion financiera, pero la model card publicada no contiene ninguna descripcion tecnica, arquitectura, tamano ni proposito declarado mas alla de la linea de licencia.
+`emrullahkalkan3412-prog/onlinemuhasebe` es un repositorio publicado en Hugging Face por el usuario `emrullahkalkan3412-prog` bajo licencia MIT. El nombre del repositorio ("onlinemuhasebe", que en turco significa "contabilidad en linea") sugiere que se trata de un artefacto orientado a un caso de uso concreto de contabilidad o gestion financiera, pero la model card publicada no contiene ninguna descripcion tecnica, arquitectura, tamano ni proposito declarado mas alla de la linea de licencia.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado ni idiomas especificados, y fue creado y actualizado en la misma fecha (2026-11-03T16:19:59Z), lo que indica una publicacion reciente y sin actividad posterior. No hay evidencia de que se trate de un modelo de lenguaje entrenado: podria ser un conjunto de pesos, un adaptador, un artefacto auxiliar o incluso un repositorio vacio o de prueba.
 
@@ -65,7 +65,7 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| emrullahkalkan3412-prog/onlinemuhasebe | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| emrullahkalkan3412-prog/onlinemuhasebe | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emrullahkalkan3412-prog/onlinemuhasebe
+- Hugging Face: https://huggingface.co/emrullahkalkan3412-prog/onlinemuhasebe
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

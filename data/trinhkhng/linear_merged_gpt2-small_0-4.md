@@ -6,7 +6,7 @@ El modelo `trinhkhng/linear_Merged_gpt2-small_0.4` es una fusión lineal de dos 
 
 Este modelo es relevante como ejemplo práctico de fusión de modelos (model merging), una técnica que permite combinar las capacidades de varios modelos ajustados sin necesidad de entrenamiento adicional ni coste extra de inferencia. Al tratarse de un experimento de investigación más que de un modelo listo para producción, su interés principal reside en estudiar cómo el promediado de pesos afecta al comportamiento del modelo resultante, especialmente en tareas de generación de texto.
 
-La ficha se basa exclusivamente en la información disponible en HuggingFace y en la model card del autor. No se han publicado resultados de benchmarks ni especificaciones detalladas más allá de la configuración de fusión.
+La ficha se basa exclusivamente en la información disponible en Hugging Face y en la model card del autor. No se han publicado resultados de benchmarks ni especificaciones detalladas más allá de la configuración de fusión.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos.
 
 ## Enlaces
 
-- [HuggingFace: trinhkhng/linear_Merged_gpt2-small_0.4](https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.4)
+- [Hugging Face: trinhkhng/linear_Merged_gpt2-small_0.4](https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.4)
 - [Paper: Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/arcee-ai/mergekit)
 - [Modelo relacionado: trinhkhng/linear_Merged_gpt2_0.4](https://huggingface.co/trinhkhng/linear_Merged_gpt2_0.4)

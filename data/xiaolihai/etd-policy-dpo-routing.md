@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Xiaolihai/etd-policy-dpo-routing` es un adaptador LoRA publicado en HuggingFace por el usuario Xiaolihai, entrenado sobre el modelo base Qwen3-8B y distribuido en formato PEFT (libreria `peft`, version declarada 0.19.1). El nombre del repositorio sugiere un ajuste orientado a politicas de enrutamiento ("routing") optimizadas mediante DPO (Direct Preference Optimization), aunque esta interpretacion no esta confirmada en ninguna documentacion del autor. El repositorio tiene un tamano de 1,1 GB y no registra descargas ni likes en el momento de la consulta.
+`Xiaolihai/etd-policy-dpo-routing` es un adaptador LoRA publicado en Hugging Face por el usuario Xiaolihai, entrenado sobre el modelo base Qwen3-8B y distribuido en formato PEFT (libreria `peft`, version declarada 0.19.1). El nombre del repositorio sugiere un ajuste orientado a politicas de enrutamiento ("routing") optimizadas mediante DPO (Direct Preference Optimization), aunque esta interpretacion no esta confirmada en ninguna documentacion del autor. El repositorio tiene un tamano de 1,1 GB y no registra descargas ni likes en el momento de la consulta.
 
-El problema que resuelve, el dominio de aplicacion y el procedimiento de entrenamiento no estan documentados: la model card es la plantilla generica de HuggingFace con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas soportados, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Cualquier uso en produccion requeriria una validacion propia y una auditoria previa del adaptador.
+El problema que resuelve, el dominio de aplicacion y el procedimiento de entrenamiento no estan documentados: la model card es la plantilla generica de Hugging Face con todos los campos marcados como "[More Information Needed]". No se declaran licencia, idiomas soportados, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Cualquier uso en produccion requeriria una validacion propia y una auditoria previa del adaptador.
 
 Su relevancia actual es limitada y de caracter experimental: se trata de un adaptador sin documentacion, sin licencia declarada y sin benchmarks publicados. Su interes practico reside en que demuestra el flujo de trabajo de ajuste LoRA/DPO sobre Qwen3-8B y puede servir como punto de partida reproducible para quien quiera inspeccionar pesos, configuracion PEFT o tecnicas de enrutamiento entrenadas por preferencias. Para cualquier despliegue real, Qwen3-8B base o variantes con documentacion completa son opciones mas seguras.
 
@@ -96,7 +96,7 @@ La diferencia fundamental no es de capacidad tecnica sino de trazabilidad: frent
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Xiaolihai/etd-policy-dpo-routing
+- Hugging Face del modelo: https://huggingface.co/Xiaolihai/etd-policy-dpo-routing
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short` es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace por el usuario `mazesmazes`, con un total de 782.426.112 parámetros (aproximadamente 782 millones) y un repositorio de 1,6 GB en formato `safetensors`. La nomenclatura del identificador sugiere una variante orientada a audio de habla corta ("short") con posible atribución de hablante ("speaker"), construida sobre componentes relacionados con Qwen3-ASR y con el pipeline `automatic-speech-recognition` de Transformers.
+El modelo `mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short` es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por el usuario `mazesmazes`, con un total de 782.426.112 parámetros (aproximadamente 782 millones) y un repositorio de 1,6 GB en formato `safetensors`. La nomenclatura del identificador sugiere una variante orientada a audio de habla corta ("short") con posible atribución de hablante ("speaker"), construida sobre componentes relacionados con Qwen3-ASR y con el pipeline `automatic-speech-recognition` de Transformers.
 
 La relevancia de este modelo radica en su tamano relativamente contenido dentro de la familia de modelos ASR modernos: con ~782 M de parámetros se situa en una franja intermedia que permite inferencia en GPU de consumo sin renunciar a un decodificador de lenguaje basado en transformer. Un proyecto relacionado localizado en la búsqueda web (`alexkroman/tiny-audio`) describe una arquitectura del tipo "entrenar tu propio modelo de voz desde cero" en la que un codificador de audio proyecta representaciones hacia un modelo de lenguaje Qwen3 que genera texto condicionado por el audio, lo que aporta contexto sobre la posible arquitectura, aunque no confirma las caracteristicas exactas de este checkpoint concreto.
 
-No obstante, la model card publicada por el autor es la plantilla genérica autogenerada por HuggingFace y no contiene informacion sustantiva: no se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluacion. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un checkpoint practicamente sin validacion comunitaria. Cualquier uso en produccion deberia ir precedido de una evaluacion propia.
+No obstante, la model card publicada por el autor es la plantilla genérica autogenerada por Hugging Face y no contiene informacion sustantiva: no se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluacion. El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un checkpoint practicamente sin validacion comunitaria. Cualquier uso en produccion deberia ir precedido de una evaluacion propia.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La busqueda web ha localizado el repositorio `alexkroman/tiny-audio`, que descri
 ## Capacidades
 
 - Reconocimiento automatico del habla (ASR): la unica capacidad declarada de forma explicita mediante el pipeline `automatic-speech-recognition` y el tag `automatic-speech-recognition`.
-- Compatibilidad con endpoints de HuggingFace: el tag `endpoints_compatible` indica que el checkpoint puede desplegarse a traves de la infraestructura de inference endpoints de HuggingFace, condicionado a que el runtime soporte la arquitectura.
+- Compatibilidad con endpoints de Hugging Face: el tag `endpoints_compatible` indica que el checkpoint puede desplegarse a traves de la infraestructura de inference endpoints de Hugging Face, condicionado a que el runtime soporte la arquitectura.
 - Posible atribucion de hablante: el termino "speaker" en el identificador sugiere capacidad de diarizacion o identificacion de hablante, pero no esta documentada ni confirmada.
 - Posible orientacion a audio de corta duracion: el sufijo "short" apunta a segmentos breves, sin que exista confirmacion tecnica.
 - Tool calling, agentes, razonamiento multi-paso, vision, audio generativo o modo "thinking": no disponible / no documentado.
@@ -57,14 +57,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - En cuantizacion int4 (si se generara): en torno a 0,4-0,6 GB, aunque el repositorio no publica variantes cuantizadas.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM es suficiente para inferencia en precision media; RTX 3060, RTX 4060, RTX 4090 y GPUs de datacenter como A100 o H100 no aportan ventaja significativa por memoria, sino por throughput en lote.
 - Cabe en GPU de consumo: si, con margen amplio, incluidas GPUs de gama media con 6 GB o mas.
-- Opciones de despliegue: la libreria declarada es `transformers` y el tag `endpoints_compatible` habilita HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI, que dependen de que la arquitectura concreta este implementada en cada runtime.
+- Opciones de despliegue: la libreria declarada es `transformers` y el tag `endpoints_compatible` habilita Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama ni TGI, que dependen de que la arquitectura concreta este implementada en cada runtime.
 - Latencia y throughput estimados: no disponibles. La ausencia de benchmarks y de especificacion de arquitectura impide dar cifras fiables.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short` | 782 M | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
+| `mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short` | 782 M | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
 | OpenAI Whisper small | 244 M | 30 s por ventana (no contexto textual) | WER publicado por OpenAI en varios idiomas | MIT | Ampliamente disponible, ecosistema maduro |
 | OpenAI Whisper medium | 769 M | 30 s por ventana | WER publicado por OpenAI, mejor que small | MIT | Ampliamente disponible |
 | OpenAI Whisper large-v3 | 1550 M | 30 s por ventana | Referencia de la familia Whisper | MIT | Ampliamente disponible |
@@ -85,8 +85,8 @@ La comparacion es orientativa en cuanto a tamano y licencia: el modelo analizado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short
+- Modelo en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short
 - Repositorio relacionado `tiny-audio` (entrenamiento de modelos de voz con Qwen3): https://github.com/alexkroman/tiny-audio
-- Variante relacionada en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio
+- Variante relacionada en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio
 - Paper referenciado en la plantilla de la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact

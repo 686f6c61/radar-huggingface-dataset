@@ -79,7 +79,7 @@ La comparativa con la V2 es relevante: el propio autor reconoce que la version 1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-31B
+- Modelo en Hugging Face: https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-31B
 - Version V2 del modelo: https://huggingface.co/Ateron/Gemma-4-Dark-Thoughts-V2-31B
 - Ficha del modelo en LLM Explorer: https://llm-explorer.com/model/Ateron%2FGemma-4-Dark-Thoughts-31B,2b9KSRF7SJFFCqXknuUgum
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/

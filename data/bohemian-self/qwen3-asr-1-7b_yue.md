@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bohemian-self/Qwen3-ASR-1.7B_Yue es un modelo publicado en HuggingFace por el usuario Bohemian-self, cuya model card se limita a declarar la licencia apache-2.0 y no aporta ninguna descripción funcional, arquitectura, datos de entrenamiento ni resultados. Los metadatos de la plataforma indican un total de 2.038.052.480 parámetros almacenados en safetensors, un tamano de repositorio de 5,5 GB y las etiquetas safetensors, qwen3_asr y region:us.
+Bohemian-self/Qwen3-ASR-1.7B_Yue es un modelo publicado en Hugging Face por el usuario Bohemian-self, cuya model card se limita a declarar la licencia apache-2.0 y no aporta ninguna descripción funcional, arquitectura, datos de entrenamiento ni resultados. Los metadatos de la plataforma indican un total de 2.038.052.480 parámetros almacenados en safetensors, un tamano de repositorio de 5,5 GB y las etiquetas safetensors, qwen3_asr y region:us.
 
 El identificador del repositorio y la etiqueta qwen3_asr apuntan a que se trata de un modelo de reconocimiento automatico de voz (ASR) derivado de la familia Qwen3-ASR, mientras que el sufijo Yue sugiere una adaptacion al cantonés. Ninguna de estas dos inferencias esta confirmada por documentacion alguna: no hay model card explicativa, no hay ficha de pipeline declarada y no se especifican idiomas soportados ni longitud de contexto.
 
@@ -100,7 +100,7 @@ La comparacion directa de calidad no es posible porque no se ha publicado ningun
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bohemian-self/Qwen3-ASR-1.7B_Yue
+- Repositorio en Hugging Face: https://huggingface.co/Bohemian-self/Qwen3-ASR-1.7B_Yue
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

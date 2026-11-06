@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mazesmazes/tiny-audio-granite-qwen-500-3` es un checkpoint multimodal de audio publicado en HuggingFace por el usuario `mazesmazes`, un autor sin trayectoria verificable en el Hub (0 descargas y 0 likes en el momento de la consulta). El pipeline declarado es `feature-extraction`, la librería es `transformers` y entre sus etiquetas figuran `asr_model` y `custom_code`, lo que indica que el repositorio contiene código propio que debe cargarse con `trust_remote_code=True`. El dato objetivo disponible es el recuento de parámetros obtenido de los pesos en safetensors: 604.182.528 parámetros (aproximadamente 604 M), con un tamano de repositorio de 14,5 GB.
+`mazesmazes/tiny-audio-granite-qwen-500-3` es un checkpoint multimodal de audio publicado en Hugging Face por el usuario `mazesmazes`, un autor sin trayectoria verificable en el Hub (0 descargas y 0 likes en el momento de la consulta). El pipeline declarado es `feature-extraction`, la librería es `transformers` y entre sus etiquetas figuran `asr_model` y `custom_code`, lo que indica que el repositorio contiene código propio que debe cargarse con `trust_remote_code=True`. El dato objetivo disponible es el recuento de parámetros obtenido de los pesos en safetensors: 604.182.528 parámetros (aproximadamente 604 M), con un tamano de repositorio de 14,5 GB.
 
 La model card es la plantilla genérica autogenerada por el Hub: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación, infraestructura) aparecen como `[More Information Needed]`. No hay paper, blog, demo ni repositorio asociado, y la búsqueda web no ha devuelto ningún resultado relacionado con el modelo: los enlaces recuperados corresponden a portales de empleo sin relación alguna. Por tanto, cualquier afirmación sobre arquitectura interna, datos de entrenamiento o rendimiento sería especulativa.
 
@@ -91,7 +91,7 @@ La comparación cualitativa es clara: frente a Whisper, este checkpoint no ofrec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-500-3
+- Modelo en Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-500-3
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental de ML, citado en la plantilla de la model card, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo y blog del autor: no disponibles.

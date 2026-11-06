@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Medina System One es un modelo publicado en HuggingFace por el usuario ItsnotAilabs bajo el identificador `ItsnotAilabs/medina-system-one`. La ficha de HuggingFace lo clasifica con el pipeline de `text-classification` y lo etiqueta con términos como `agent`, `system-one`, `mycelium`, `sovereign`, `typed-decisions` y `open-weights`, lo que sugiere un componente orientado a la toma de decisiones estructuradas o a la clasificación dentro de un sistema de agentes mayor, más que un modelo de generación de texto generalista.
+Medina System One es un modelo publicado en Hugging Face por el usuario ItsnotAilabs bajo el identificador `ItsnotAilabs/medina-system-one`. La ficha de Hugging Face lo clasifica con el pipeline de `text-classification` y lo etiqueta con términos como `agent`, `system-one`, `mycelium`, `sovereign`, `typed-decisions` y `open-weights`, lo que sugiere un componente orientado a la toma de decisiones estructuradas o a la clasificación dentro de un sistema de agentes mayor, más que un modelo de generación de texto generalista.
 
 La informacion publica disponible es extremadamente limitada: no se declaran parametros, longitud de contexto, idiomas soportados ni resultados de benchmarks, y el repositorio no registra descargas ni interacciones en el momento de la consulta. La etiqueta `qwen` apunta a una posible base o inspiracion en la familia Qwen, pero no hay confirmacion documental de ello en los datos proporcionados.
 
@@ -31,7 +31,7 @@ Las etiquetas del repositorio (`agent`, `system-one`, `mycelium`, `sovereign`, `
 
 ## Capacidades
 
-- Clasificacion de texto: es la unica capacidad declarada de forma explicita a traves del pipeline `text-classification` de HuggingFace.
+- Clasificacion de texto: es la unica capacidad declarada de forma explicita a traves del pipeline `text-classification` de Hugging Face.
 - Decisiones tipadas: la etiqueta `typed-decisions` sugiere salidas con estructura o tipos definidos, aunque no se especifica el formato.
 - Uso en agentes: las etiquetas `agent` y `system-one` apuntan a una posible integracion en bucles de agentes, sin detalle tecnico disponible.
 - Soporte de tool calling / function calling: no disponible.
@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ItsnotAilabs/medina-system-one
+- Repositorio en Hugging Face: https://huggingface.co/ItsnotAilabs/medina-system-one
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

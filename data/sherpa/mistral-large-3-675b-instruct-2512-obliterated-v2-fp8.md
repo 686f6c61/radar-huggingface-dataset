@@ -76,5 +76,5 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace: Sherpa/Mistral-Large-3-675B-Instruct-2512-OBLITERATED-V2-FP8](https://huggingface.co/Sherpa/Mistral-Large-3-675B-Instruct-2512-OBLITERATED-V2-FP8)
+- [Hugging Face: Sherpa/Mistral-Large-3-675B-Instruct-2512-OBLITERATED-V2-FP8](https://huggingface.co/Sherpa/Mistral-Large-3-675B-Instruct-2512-OBLITERATED-V2-FP8)
 - [Modelo base: mistralai/Mistral-Large-3-675B-Instruct-2512](https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512)

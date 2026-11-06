@@ -91,7 +91,7 @@ Los datos de las alternativas proceden de sus fichas públicas y no han sido ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Multiplication-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-Q2.5I-Multiplication-step149
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-opd-teachers/runs/a7bd415a
 - Código de entrenamiento (RLVE): https://github.com/davidheineman/rlve

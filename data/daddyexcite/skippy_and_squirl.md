@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daddyexcite/skippy_and_squirl` es un repositorio alojado en HuggingFace por el usuario `daddyexcite`, publicado bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica del modelo: unicamente declara la licencia. No se especifica arquitectura, tamano, proposito, datos de entrenamiento ni cualquier otro atributo que permita caracterizar el artefacto.
+`daddyexcite/skippy_and_squirl` es un repositorio alojado en Hugging Face por el usuario `daddyexcite`, publicado bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica del modelo: unicamente declara la licencia. No se especifica arquitectura, tamano, proposito, datos de entrenamiento ni cualquier otro atributo que permita caracterizar el artefacto.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta, y no tiene un pipeline declarado en la plataforma, lo que impide clasificarlo automaticamente como modelo de texto, vision, audio u otra modalidad. La fecha de creacion y de ultima actualizacion coinciden (2026-11-03), lo que sugiere una publicacion unica sin mantenimiento posterior documentado.
 
@@ -68,11 +68,11 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 - Ausencia total de documentacion tecnica: la model card solo declara la licencia MIT.
 - Imposibilidad de verificar sesgos, riesgo de alucinacion o limitaciones de contexto sin informacion sobre el entrenamiento.
 - Cero descargas y cero "likes" en el momento de la consulta, lo que impide inferir validacion por parte de la comunidad.
-- Sin pipeline declarado en HuggingFace, por lo que la modalidad del artefacto es desconocida.
+- Sin pipeline declarado en Hugging Face, por lo que la modalidad del artefacto es desconocida.
 - La licencia MIT permite uso comercial, pero su aplicabilidad depende de que el contenido del repositorio sea efectivamente original y no incluya material de terceros con otras condiciones.
 - No debe desplegarse en produccion sin una auditoria previa del contenido del repositorio y una evaluacion propia del comportamiento del modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daddyexcite/skippy_and_squirl
+- Repositorio en Hugging Face: https://huggingface.co/daddyexcite/skippy_and_squirl
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

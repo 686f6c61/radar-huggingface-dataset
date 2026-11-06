@@ -23,7 +23,7 @@ El modelo se distribuye en formato `safetensors` y es compatible con el ecosiste
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva del modelo OLMo-3-7B de AllenAI. OLMo-3 es una familia de modelos abiertos entrenados sobre el dataset Dolma 3, que incluye una fase de entrenamiento base seguida de un ajuste instructivo. Este checkpoint concreto añade una etapa adicional de fine-tuning, realizada con las librerías Unsloth y TRL de HuggingFace, lo que acelera el entrenamiento aproximadamente 2x respecto a un ajuste convencional.
+El modelo es un fine-tuning del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva del modelo OLMo-3-7B de AllenAI. OLMo-3 es una familia de modelos abiertos entrenados sobre el dataset Dolma 3, que incluye una fase de entrenamiento base seguida de un ajuste instructivo. Este checkpoint concreto añade una etapa adicional de fine-tuning, realizada con las librerías Unsloth y TRL de Hugging Face, lo que acelera el entrenamiento aproximadamente 2x respecto a un ajuste convencional.
 
 No se proporcionan detalles sobre los datos de entrenamiento específicos de este fine-tuning, el número de tokens utilizados, ni la composición del dataset. Tampoco se documenta si se emplearon técnicas de RLHF, DPO o similares. El nombre del modelo (`school-of-reward-hacks`) sugiere que el entrenamiento se centró en explorar comportamientos que explotan la señal de recompensa en sistemas de RLHF, pero esta hipótesis no se confirma en la documentación publicada.
 

@@ -85,7 +85,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU de consumo (GTX 1050, RTX 2060, RTX 3060, RTX 4090) e incluso puede ejecutarse en CPU con latencias de milisegundos.
 - Opciones de despliegue: AutoGluon (libreria declarada en la model card) y su `ImagePredictor`; al estar basado en un backbone PyTorch, seria exportable a otros runtimes, aunque esto no se documenta en la informacion disponible. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a un modelo de vision de este tipo.
 - Latencia y throughput: no disponibles. Con 1,5 M de parametros se espera una latencia muy baja, pero el autor no publica mediciones.
-- Nota: el repositorio ocupa 0,0 GB, por lo que no esta confirmado que los pesos entrenados esten efectivamente publicados en HuggingFace.
+- Nota: el repositorio ocupa 0,0 GB, por lo que no esta confirmado que los pesos entrenados esten efectivamente publicados en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -93,7 +93,7 @@ La informacion disponible solo permite comparar con las otras configuraciones ev
 
 | Configuracion | Parametros aproximados | Contexto / entrada | Exactitud val. | Log loss val. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mobilenetv3_small_100` (seleccionado) | ~1,5 M | 224x224 RGB | 100,0% | 0,0001 | CC-BY-4.0 | Publicado por ssg1 en HuggingFace |
+| `mobilenetv3_small_100` (seleccionado) | ~1,5 M | 224x224 RGB | 100,0% | 0,0001 | CC-BY-4.0 | Publicado por ssg1 en Hugging Face |
 | `mobilenetv3_small_100` (lr 5e-4) | ~1,5 M | 224x224 RGB | 100,0% | 0,0008 | No disponible | Solo como resultado de la busqueda |
 | `efficientnet_b0` | ~5,3 M | 224x224 RGB | 100,0% | 0,0070 | No disponible | Solo como resultado de la busqueda |
 | `resnet18` | ~11,7 M | 224x224 RGB | 100,0% | 0,0658 | No disponible | Solo como resultado de la busqueda |
@@ -115,6 +115,6 @@ Los tamanos de `efficientnet_b0` y `resnet18` son estimaciones estandar de esos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssg1/2026-24679-light-on-off-autogluon-image
+- Modelo en Hugging Face: https://huggingface.co/ssg1/2026-24679-light-on-off-autogluon-image
 - Dataset utilizado: https://huggingface.co/datasets/jackstev/hw1-image-light-sources-on-off
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos correspondian a paginas de soporte de Microsoft sin relacion con el modelo.

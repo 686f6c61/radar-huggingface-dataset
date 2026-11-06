@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CyanMonkey/Test-S1-No-SP es un motor de ajedrez basado en una red neuronal convolucional de tipo ResNet, publicado por el usuario CyanMonkey en HuggingFace. No es un modelo de lenguaje: el modelo recibe una codificacion de una posicion de ajedrez (19 planos de 8x8) y produce dos salidas, una politica con 20480 logits de movimiento y una cabeza de valor que estima la probabilidad de victoria en el rango [-1, 1]. Su proposito es jugar al ajedrez y evaluar posiciones, no generar texto.
+CyanMonkey/Test-S1-No-SP es un motor de ajedrez basado en una red neuronal convolucional de tipo ResNet, publicado por el usuario CyanMonkey en Hugging Face. No es un modelo de lenguaje: el modelo recibe una codificacion de una posicion de ajedrez (19 planos de 8x8) y produce dos salidas, una politica con 20480 logits de movimiento y una cabeza de valor que estima la probabilidad de victoria en el rango [-1, 1]. Su proposito es jugar al ajedrez y evaluar posiciones, no generar texto.
 
 La red cuenta con 44.983.457 parametros (44,98 M) repartidos en un backbone ResNet de 10 bloques con 128 canales. El entrenamiento se realizo en dos fases: una primera fase de aprendizaje supervisado sobre partidas de Lichess de jugadores con 1800+ de Elo, y una segunda fase de aprendizaje por refuerzo mediante self-play. La licencia es MIT, lo que permite uso comercial sin restricciones practicas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyanMonkey/Test-S1-No-SP | 44,98 M | ResNet 10x128 | 19 planos de 8x8, politica de 20480 movimientos + valor | MIT | HuggingFace (safetensors) |
+| CyanMonkey/Test-S1-No-SP | 44,98 M | ResNet 10x128 | 19 planos de 8x8, politica de 20480 movimientos + valor | MIT | Hugging Face (safetensors) |
 | Leela Chess Zero (redes tipo ResNet) | varia segun la red (no disponible el detalle exacto) | ResNet convolucional con cabezas de politica y valor | Planos de tablero, MCTS en inferencia | Licencia del proyecto LCZero (no disponible el detalle exacto) | Proyecto abierto, pesos distribuidos por el equipo |
 | Stockfish con NNUE | no disponible | Red neuronal eficiente (NNUE) sobre features de ajedrez | Features dispersas de la posicion | GPLv3 | Codigo abierto y binarios oficiales |
 | Maia Chess | no disponible | Red neuronal orientada a prediccion de jugadas humanas | Codificacion de tablero | no disponible | Proyecto de investigacion en GitHub |
@@ -83,5 +83,5 @@ La comparacion cuantitativa de fuerza (Elo) no esta disponible para ninguno de l
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/CyanMonkey/Test-S1-No-SP
+- Ficha del modelo en Hugging Face: https://huggingface.co/CyanMonkey/Test-S1-No-SP
 - No se han encontrado enlaces adicionales relevantes (papers, repositorios, blogs o demos) en la busqueda web realizada.

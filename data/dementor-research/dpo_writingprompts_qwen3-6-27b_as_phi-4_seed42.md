@@ -66,6 +66,6 @@ No disponible. No se proporcionan datos de modelos comparables en la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_phi-4_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_phi-4_seed42
 - Framework Tinker (mencionado en la model card): https://thinkingmachines.ai/tinker/
 - Modelo base (referenciado): https://huggingface.co/Qwen/Qwen3.6-27B (enlace inferido del nombre, no verificado)

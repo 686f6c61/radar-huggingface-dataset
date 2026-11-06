@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-WSPForge-Math-v1 es una especialización matemática experimental del modelo Qwen3.5-0.8B, publicada por el usuario end000 en HuggingFace. No se trata de un fine-tuning convencional: el autor aplica una técnica denominada Weight-Space Programming (WSP), que modifica directamente los pesos del checkpoint original sin descenso de gradiente, sin retropropagación y sin entrenamiento adicional. El resultado es un checkpoint completo y autónomo que preserva arquitectura, tokenizador y plantilla de chat del modelo base, pero con una intervención quirúrgica sobre dos matrices concretas.
+Qwen3.5-0.8B-WSPForge-Math-v1 es una especialización matemática experimental del modelo Qwen3.5-0.8B, publicada por el usuario end000 en Hugging Face. No se trata de un fine-tuning convencional: el autor aplica una técnica denominada Weight-Space Programming (WSP), que modifica directamente los pesos del checkpoint original sin descenso de gradiente, sin retropropagación y sin entrenamiento adicional. El resultado es un checkpoint completo y autónomo que preserva arquitectura, tokenizador y plantilla de chat del modelo base, pero con una intervención quirúrgica sobre dos matrices concretas.
 
 El modelo resuelve un problema acotado: mejorar el razonamiento matemático de un modelo pequeño (873.438.784 parámetros almacenados) mediante una corrección de rango uno enmascarada sobre las proyecciones `down_proj` de las capas 15 y 19 del transformer. La intervención afecta únicamente a 130.317 valores de parámetro de un total de 873.438.784, es decir, un 0,0149 % del total almacenado. El resto de los 488 tensores permanece idéntico al checkpoint original.
 
@@ -82,9 +82,9 @@ La ganancia emparejada en matemáticas fue de 28,91 puntos porcentuales, con int
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-WSPForge-Math-v1 | 873.438.784 | No disponible | Apache 2.0 | Edición de pesos WSP, especialización matemática | HuggingFace |
-| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Apache 2.0 | Modelo generalista original | HuggingFace |
-| Fine-tunes matemáticos de ~1B (genéricos) | ~1B | Variable | Variable | SFT/LoRA sobre datos matemáticos | HuggingFace |
+| Qwen3.5-0.8B-WSPForge-Math-v1 | 873.438.784 | No disponible | Apache 2.0 | Edición de pesos WSP, especialización matemática | Hugging Face |
+| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Apache 2.0 | Modelo generalista original | Hugging Face |
+| Fine-tunes matemáticos de ~1B (genéricos) | ~1B | Variable | Variable | SFT/LoRA sobre datos matemáticos | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos comparables en la información proporcionada, por lo que no se ofrece una comparación numérica de rendimiento frente a alternativas.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/end000/Qwen3.5-0.8B-WSPForge-Math-v1
+- Modelo en Hugging Face: https://huggingface.co/end000/Qwen3.5-0.8B-WSPForge-Math-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Investigación original sobre Weight-Space Programming: https://rikiyat.github.io/blog/weight-space-programming/
 - Registros del experimento: https://github.com/RikiyaT/lm_understand-logs/tree/main/exp8_math

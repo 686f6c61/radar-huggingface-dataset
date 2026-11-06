@@ -78,12 +78,12 @@ La variante base-200k-sft-checkpoints usa el tokenizador base en lugar de EvoLen
 - model_max_length varia entre 20 y 512 segun tarea y no es deducible del nombre de la tarea; hay que leerlo de training_args.bin.
 - La evaluacion en fp32 en lugar de fp16 desplaza el MCC en ~3e-4.
 - Es un modelo de clasificacion de ADN, no un LLM generativo: no sirve para generacion de texto, codigo ni agentes.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace; es un modelo reciente (creado en julio de 2026) sin validacion comunitaria amplia.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face; es un modelo reciente (creado en julio de 2026) sin validacion comunitaria amplia.
 - No se documentan sesgos especificos, pero al entrenarse con genomas de referencia (humano, raton) puede tener sesgos hacia esas especies.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EvoLenTokenizer/evolen-200k-sft-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/EvoLenTokenizer/evolen-200k-sft-checkpoints
 - Modelo pretrained: https://huggingface.co/EvoLenTokenizer/evolen-200k
 - Variante base: https://huggingface.co/EvoLenTokenizer/base-200k-sft-checkpoints
 - Modelo base len2_5120: https://huggingface.co/mtapiapacheco/len2_5120

@@ -85,7 +85,7 @@ No se proporcionan valores de referencia del modelo base sin comprimir en la mis
 | svd-safety-l31_remove50_swapgapiter_b010_r07 | 8.030.261.248 (fraccion densa 0,4997) | no disponible | Llama 3.1 Community | Publicado, 0 descargas y 0 likes en el momento de la consulta |
 | meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens | Llama 3.1 Community | Modelo base de referencia, ampliamente desplegado |
 | Otras celdas de la rejilla del mismo autor | no disponible | no disponible | Llama 3.1 Community | no disponible (el autor menciona que existen, sin listarlas en la informacion proporcionada) |
-| Otros modelos Llama-3.1-8B comprimidos por SVD publicados en HuggingFace | no disponible | no disponible | variable | no disponible |
+| Otros modelos Llama-3.1-8B comprimidos por SVD publicados en Hugging Face | no disponible | no disponible | variable | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estas opciones dentro de la informacion proporcionada, mas alla de las metricas de seguridad de este checkpoint.
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones dentro de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r07
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r07
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - Busqueda web: no se han encontrado articulos, papers, repositorios ni demos relevantes sobre este modelo. Los resultados devueltos por la busqueda corresponden a paginas de descarga de controladores de impresoras de Brother y no guardan relacion con el modelo.

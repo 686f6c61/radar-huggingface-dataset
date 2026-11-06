@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `baqu2213/PoemForSmallFThings` es un checkpoint de Stable Diffusion alojado en HuggingFace por el usuario baqu2213. A pesar de su nombre, la model card indica explícitamente que los modelos de Stable Diffusion ya no están disponibles y recomienda a los usuarios emplear alternativas como Novel AI o Kohaku-XL. El repositorio tiene un tamaño de 1157.9 GB, lo que sugiere que contiene múltiples checkpoints o archivos de gran tamaño, aunque no se proporciona documentación técnica detallada.
+El modelo `baqu2213/PoemForSmallFThings` es un checkpoint de Stable Diffusion alojado en Hugging Face por el usuario baqu2213. A pesar de su nombre, la model card indica explícitamente que los modelos de Stable Diffusion ya no están disponibles y recomienda a los usuarios emplear alternativas como Novel AI o Kohaku-XL. El repositorio tiene un tamaño de 1157.9 GB, lo que sugiere que contiene múltiples checkpoints o archivos de gran tamaño, aunque no se proporciona documentación técnica detallada.
 
 La relevancia actual del modelo es limitada: fue creado en mayo de 2023 y su última actualización data de agosto de 2026, pero el autor ha declarado su abandono. Las imágenes de ejemplo incluidas (chibi pixie, fizzlepop, antifreeze soda water, etc.) apuntan a un uso orientado a la generación de ilustraciones de estilo anime o chibi, pero no se dispone de especificaciones sobre arquitectura, parámetros o proceso de entrenamiento. Para desarrolladores e investigadores, este modelo representa un caso de repositorio abandonado con escasa información verificable.
 
@@ -73,5 +73,5 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/baqu2213/PoemForSmallFThings
+- Repositorio Hugging Face: https://huggingface.co/baqu2213/PoemForSmallFThings
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo) en la informacion proporcionada.

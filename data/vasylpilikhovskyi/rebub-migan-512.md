@@ -4,7 +4,7 @@
 
 MI-GAN 512 para Rebub es una conversión a Core ML del generador principal de MI-GAN (Picsart AI Research), empaquetado en fp16 y a una resolución fija de 512 x 512 píxeles. El modelo se publica como artefacto de despliegue para la aplicación Rebub, cuyo caso de uso concreto es rellenar (inpainting) texto borrado sobre ilustraciones de manga. No se trata de un modelo de lenguaje, sino de una red de inpainting de imágenes, por lo que muchas de las métricas habituales de esta ficha (contexto, idiomas, tool calling) no aplican.
 
-El repositorio es un contenedor Core ML (`.mlpackage`) con los pesos en `weight.bin` (14 MB), lo que confirma que el generador es muy ligero y está pensado para inferencia en dispositivo (Apple Silicon / Neural Engine). La licencia es MIT y los pesos derivan de los checkpoints Places2 publicados por Picsart AI Research. El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y el tamaño del repo aparece como 0.0 GB (probablemente por redondeo del peso real de 14 MB).
+El repositorio es un contenedor Core ML (`.mlpackage`) con los pesos en `weight.bin` (14 MB), lo que confirma que el generador es muy ligero y está pensado para inferencia en dispositivo (Apple Silicon / Neural Engine). La licencia es MIT y los pesos derivan de los checkpoints Places2 publicados por Picsart AI Research. El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y el tamaño del repo aparece como 0.0 GB (probablemente por redondeo del peso real de 14 MB).
 
 La relevancia es acotada: es un artefacto de producción para una app concreta, no un modelo generalista. Su interés para desarrolladores radica en ser un ejemplo de despliegue Core ML fp16 de un inpainting GAN a 512 x 512 con una interfaz de entrada/salida bien definida (tensor de 4 canales de entrada, 3 canales de salida).
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Resolución | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MI-GAN 512 (Rebub, Core ML fp16) | GAN inpainting | 512 x 512 | Core ML `.mlpackage` | MIT | HuggingFace (0 descargas) |
+| MI-GAN 512 (Rebub, Core ML fp16) | GAN inpainting | 512 x 512 | Core ML `.mlpackage` | MIT | Hugging Face (0 descargas) |
 | MI-GAN original (Picsart AI Research) | GAN inpainting | variable (según checkpoint) | PyTorch | MIT | GitHub / pesos Places2 |
 | LaMa | GAN inpainting | variable | PyTorch | Apache 2.0 (según repo) | Repositorio público |
-| Stable Diffusion Inpainting | Difusión | 512 x 512 (base) | safetensors / diffusers | CreativeML OpenRAIL-M | HuggingFace |
+| Stable Diffusion Inpainting | Difusión | 512 x 512 (base) | safetensors / diffusers | CreativeML OpenRAIL-M | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (PSNR, FID, LPIPS) en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo (PSNR, FID, LPIPS) en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vasylpilikhovskyi/rebub-migan-512
+- Hugging Face: https://huggingface.co/vasylpilikhovskyi/rebub-migan-512
 - Repositorio MI-GAN (Picsart AI Research): https://github.com/Picsart-AI-Research/MI-GAN
 - Repositorio Rebub (script `tocoreml.py` en `workfiles/offballoon`): no disponible en la información proporcionada

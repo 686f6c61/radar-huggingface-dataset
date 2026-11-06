@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llmware/smol-3-3b-ov | ~3.000 millones (no confirmado) | No disponible | OpenVINO IR | Apache 2.0 | HuggingFace, 0 descargas |
+| llmware/smol-3-3b-ov | ~3.000 millones (no confirmado) | No disponible | OpenVINO IR | Apache 2.0 | Hugging Face, 0 descargas |
 | HuggingFaceTB/SmolLM3-3B (modelo base) | ~3.000 millones | 128.000 tokens segun su documentacion publica | safetensors | Apache 2.0 | Ampliamente distribuido |
 | Llama 3.2 3B | ~3.200 millones | 128.000 tokens | safetensors, GGUF | Licencia comunitaria Llama | Requiere aceptacion de terminos |
 | Qwen2.5 3B | ~3.000 millones | 32.000 tokens (128.000 en variantes extendidas) | safetensors, GGUF | Apache 2.0 | Ampliamente distribuido |
@@ -90,8 +90,8 @@ Nota: los datos del modelo base, Llama 3.2 3B y Qwen2.5 3B proceden de conocimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llmware/smol-3-3b-ov
+- Repositorio en Hugging Face: https://huggingface.co/llmware/smol-3-3b-ov
 - Modelo base de referencia: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
-- Organizacion llmware en HuggingFace: https://huggingface.co/llmware
+- Organizacion llmware en Hugging Face: https://huggingface.co/llmware
 - Documentacion de OpenVINO: https://docs.openvino.ai/
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces recuperados pertenecian a un portal de subastas sin relacion con el proyecto.

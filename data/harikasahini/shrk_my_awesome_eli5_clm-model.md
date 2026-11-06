@@ -4,7 +4,7 @@
 
 El modelo `shrk_my_awesome_eli5_clm-model` es un fine-tuning de `distilbert/distilgpt2` desarrollado por HarikaSahini. Se trata de un modelo de lenguaje causal (decoder-only) basado en la arquitectura Transformer, con 81.912.576 parámetros, y ha sido entrenado sobre un dataset no documentado. La finalidad del modelo no está especificada por el autor; por su tamaño, se enmarca como un experimento de ajuste fino sobre un modelo base compacto.
 
-El modelo se publica bajo licencia Apache-2.0 y está disponible en HuggingFace en formato safetensors. No se han publicado benchmarks ni evaluaciones de capacidades, y la model card contiene únicamente información de entrenamiento (loss de validación de 3,7622). Su relevancia es limitada en entornos de producción, pero puede servir como referencia para estudiar el efecto del fine-tuning en modelos pequeños.
+El modelo se publica bajo licencia Apache-2.0 y está disponible en Hugging Face en formato safetensors. No se han publicado benchmarks ni evaluaciones de capacidades, y la model card contiene únicamente información de entrenamiento (loss de validación de 3,7622). Su relevancia es limitada en entornos de producción, pero puede servir como referencia para estudiar el efecto del fine-tuning en modelos pequeños.
 
 La arquitectura hereda de distilgpt2 un contexto de 1024 tokens, aunque este dato no se confirma en la información del modelo, y una capacidad de generación de texto autoregresiva. No se documentan características adicionales como tool calling, visión o audio.
 
@@ -41,7 +41,7 @@ El modelo es un fine-tuning de `distilbert/distilgpt2`, una versión destilada d
 - Educación en aprendizaje automático: es un ejemplo práctico de fine-tuning de un modelo de lenguaje, útil para demostrar el proceso de entrenamiento y evaluación.
 - Pruebas de concepto de pipelines de generación: se puede integrar en frameworks como Transformers para experimentar con técnicas de decodificación, sampling y prompts.
 - Despliegue en entornos con recursos limitados: su tamaño permite ejecutarlo en dispositivos edge o en servidores con poca memoria, siempre que la calidad de salida sea suficiente.
-- Modelo de referencia para comparación: sirve como baseline para comparar con otros fine-tunes de distilgpt2, como los publicados por otros autores en HuggingFace.
+- Modelo de referencia para comparación: sirve como baseline para comparar con otros fine-tunes de distilgpt2, como los publicados por otros autores en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HarikaSahini/shrk_my_awesome_eli5_clm-model | 81.912.576 | No disponible | Apache-2.0 | HuggingFace |
-| distilbert/distilgpt2 | 81.912.576 | 1024 | Apache-2.0 | HuggingFace |
-| hrkim/my_awesome_eli5_clm-model | No disponible | No disponible | No disponible | HuggingFace |
-| bhsu/my_awesome_eli5_clm-model | No disponible | No disponible | No disponible | HuggingFace |
+| HarikaSahini/shrk_my_awesome_eli5_clm-model | 81.912.576 | No disponible | Apache-2.0 | Hugging Face |
+| distilbert/distilgpt2 | 81.912.576 | 1024 | Apache-2.0 | Hugging Face |
+| hrkim/my_awesome_eli5_clm-model | No disponible | No disponible | No disponible | Hugging Face |
+| bhsu/my_awesome_eli5_clm-model | No disponible | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarikaSahini/shrk_my_awesome_eli5_clm-model
+- Modelo en Hugging Face: https://huggingface.co/HarikaSahini/shrk_my_awesome_eli5_clm-model
 - Modelo base distilgpt2: https://huggingface.co/distilbert/distilgpt2
 - Fine-tune similar hrkim: https://huggingface.co/hrkim/my_awesome_eli5_clm-model
 - Fine-tune similar bhsu: https://huggingface.co/bhsu/my_awesome_eli5_clm-model

@@ -94,7 +94,7 @@ La comparacion de rendimiento frente a estas alternativas no esta disponible en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thanhdath/FINER-SQL-0.5B-v2
+- Modelo en Hugging Face: https://huggingface.co/thanhdath/FINER-SQL-0.5B-v2
 - Prompts de evaluacion: https://huggingface.co/thanhdath/core-db-evaluation-prompts
 - Repositorio de codigo `core-db-sql` en GitHub: no disponible como URL directa en la informacion proporcionada
 - Paper *Small Language Models for Text-to-SQL against Spurious Correctness*: no disponible como URL directa en la informacion proporcionada

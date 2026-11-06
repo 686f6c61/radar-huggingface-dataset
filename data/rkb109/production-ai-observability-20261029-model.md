@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `RKB109/production-ai-observability-20261029-model` es un prototipo pequeño y transparente publicado por el usuario RKB109 en HuggingFace, orientado a la observabilidad de sistemas de IA en producción. Su propósito declarado es proporcionar señales a nivel de traza (trace-level) sobre latencia, crecimiento de tokens, fallos de herramientas y calidad de las salidas, un problema recurrente para los equipos que operan pipelines de IA generativa. No se trata de un transformer entrenado de forma convencional, sino de un clasificador basado en pesos por etiqueta combinados con recuperación de evidencia ponderada por IDF, según describe la propia model card.
+El modelo `RKB109/production-ai-observability-20261029-model` es un prototipo pequeño y transparente publicado por el usuario RKB109 en Hugging Face, orientado a la observabilidad de sistemas de IA en producción. Su propósito declarado es proporcionar señales a nivel de traza (trace-level) sobre latencia, crecimiento de tokens, fallos de herramientas y calidad de las salidas, un problema recurrente para los equipos que operan pipelines de IA generativa. No se trata de un transformer entrenado de forma convencional, sino de un clasificador basado en pesos por etiqueta combinados con recuperación de evidencia ponderada por IDF, según describe la propia model card.
 
-El modelo se enmarca en la categoría de "baseline transparente": no invoca ningún LLM alojado y está pensado para demostraciones reproducibles de arquitectura, ejemplos de CI y evaluación, comparaciones locales de baseline y experimentación educativa. Aunque el pipeline declarado es `text-classification`, las etiquetas de HuggingFace también incluyen `token-classification`, `summarization` y `zero-shot-classification`, lo que sugiere cobertura de tareas múltiples a nivel declarativo.
+El modelo se enmarca en la categoría de "baseline transparente": no invoca ningún LLM alojado y está pensado para demostraciones reproducibles de arquitectura, ejemplos de CI y evaluación, comparaciones locales de baseline y experimentación educativa. Aunque el pipeline declarado es `text-classification`, las etiquetas de Hugging Face también incluyen `token-classification`, `summarization` y `zero-shot-classification`, lo que sugiere cobertura de tareas múltiples a nivel declarativo.
 
 La relevancia del modelo es limitada en términos de rendimiento real: se publica con cero descargas y cero likes, la evaluación se realizó sobre solo 4 ejemplos sintéticos retenidos con una accuracy reportada de 1, y la propia model card advierte que los umbrales son valores de demostración que requieren calibración. Es, por tanto, un artefacto de referencia para reproducibilidad más que un modelo listo para producción.
 
@@ -84,6 +84,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/production-ai-observability-20261029-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/production-ai-observability-20261029-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/production-ai-observability-20261029-dataset
 - Repositorio GitHub con `train.py`, split del dataset, código de evaluación y formato JSON: no disponible en la información proporcionada (la model card lo menciona sin enlace explícito).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-electronics-engineering-ai999x es un motor de resolución de problemas de ingeniería electrónica desarrollado por AI999X, bajo la autoría de Ibnul Jaif Farabi. A pesar de su nombre y de su empaquetado como modelo en HuggingFace, no es un modelo de lenguaje neuronal: es un motor simbólico determinista escrito en Python puro que combina un lector de reglas en inglés con 92 procedimientos certificados de cálculo electrónico. Su objetivo es responder preguntas de electrónica (sesgos de transistores, amplificadores, filtros activos, osciladores, convertidores de datos, fuentes de alimentación) con resultados exactos, verificados y reproducibles, o rechazar la consulta de forma explícita cuando no puede garantizar la respuesta.
+electronics-engineering-ai999x es un motor de resolución de problemas de ingeniería electrónica desarrollado por AI999X, bajo la autoría de Ibnul Jaif Farabi. A pesar de su nombre y de su empaquetado como modelo en Hugging Face, no es un modelo de lenguaje neuronal: es un motor simbólico determinista escrito en Python puro que combina un lector de reglas en inglés con 92 procedimientos certificados de cálculo electrónico. Su objetivo es responder preguntas de electrónica (sesgos de transistores, amplificadores, filtros activos, osciladores, convertidores de datos, fuentes de alimentación) con resultados exactos, verificados y reproducibles, o rechazar la consulta de forma explícita cuando no puede garantizar la respuesta.
 
 El sistema se presenta como "neuro-simbólico", aunque en la práctica el componente neuronal es un parser basado en reglas y el componente simbólico son las capacidades certificadas que resuelven cada problema con SymPy y mpmath. La propuesta de valor es la ausencia total de alucinación por diseño: siete estados de salida posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y la garantía de que las 561 respuestas documentadas se reproducen de forma idéntica en Windows y Linux sobre Python 3.10 a 3.14.
 
@@ -74,8 +74,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| electronics-engineering-ai999x | Motor simbólico determinista | 4.715.520 | No aplica | Electrónica con 92 capacidades certificadas, rechazo ante incertidumbre | Apache-2.0 | HuggingFace, PyPI, app de escritorio, CLI |
-| LLM generativo de propósito general (p. ej. familia Llama, Mistral, Qwen) | Transformer decoder | Miles de millones | Decenas de miles de tokens | Generación abierta, razonamiento, código | Variables (a menudo permisivas) | HuggingFace, múltiples proveedores |
+| electronics-engineering-ai999x | Motor simbólico determinista | 4.715.520 | No aplica | Electrónica con 92 capacidades certificadas, rechazo ante incertidumbre | Apache-2.0 | Hugging Face, PyPI, app de escritorio, CLI |
+| LLM generativo de propósito general (p. ej. familia Llama, Mistral, Qwen) | Transformer decoder | Miles de millones | Decenas de miles de tokens | Generación abierta, razonamiento, código | Variables (a menudo permisivas) | Hugging Face, múltiples proveedores |
 | SymPy / mpmath como librerías | Álgebra simbólica | No aplica | No aplica | Cálculo simbólico general, sin dominio específico | BSD | PyPI |
 
 La comparación directa con LLM no es homogénea: este motor no genera texto libre ni mantiene conversaciones, pero ofrece exactitud verificable y reproducibilidad que un LLM generativo no garantiza. Frente a SymPy puro, aporta el dominio electrónico empaquetado y el parser de preguntas, a cambio de un alcance limitado a sus 92 capacidades.
@@ -94,8 +94,8 @@ La comparación directa con LLM no es homogénea: este motor no genera texto lib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI999X/electronics-engineering-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Hugging Face: https://huggingface.co/AI999X/electronics-engineering-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Prueba en navegador: https://www.ai999x.com/models/electronics-engineering-ai999x/#try
 - Paquete en PyPI: https://pypi.org/project/electronics-engineering-ai999x/

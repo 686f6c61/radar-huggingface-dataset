@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks. ACE-Step destac
 
 ## Enlaces
 
-- Repositorio HuggingFace del reempaquetado: https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged
+- Repositorio Hugging Face del reempaquetado: https://huggingface.co/Comfy-Org/ACE-Step_ComfyUI_repackaged
 - Modelo original: https://huggingface.co/ACE-Step/ACE-Step-v1-3.5B
 - Repositorio GitHub de nodos ComfyUI: https://github.com/ace-step/ACE-Step-ComfyUI
 - Guía oficial de ComfyUI para ACE-Step v1: https://docs.comfy.org/tutorials/audio/ace-step/ace-step-v1

@@ -4,7 +4,7 @@
 
 El repositorio `Ackowalski/paper_016345393_image_captioning` no contiene un modelo de IA, sino un documento académico en formato Markdown titulado `paper_016345393_image_captioning.md`, centrado en el tema de image captioning (generación de descripciones textuales a partir de imágenes). El autor es Ackowalski y el contenido se distribuye bajo licencia MIT. El documento sigue una estructura académica convencional (intro, background, approach, eval, conclusion), con estilo de citación autor-año y un enfoque de redacción empírico.
 
-Este repositorio es relevante como material de referencia para desarrolladores e investigadores que trabajan en image captioning, ya que compila una revisión del estado del arte, metodologías y evaluación de sistemas de generación de descripciones automáticas. No obstante, carece de pesos, arquitectura o artefactos ejecutables; es exclusivamente un artefacto documental. El repositorio fue creado el 22 de agosto de 2026 y no registra descargas ni interacciones en HuggingFace.
+Este repositorio es relevante como material de referencia para desarrolladores e investigadores que trabajan en image captioning, ya que compila una revisión del estado del arte, metodologías y evaluación de sistemas de generación de descripciones automáticas. No obstante, carece de pesos, arquitectura o artefactos ejecutables; es exclusivamente un artefacto documental. El repositorio fue creado el 22 de agosto de 2026 y no registra descargas ni interacciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable en este repositorio, ya que no se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ackowalski/paper_016345393_image_captioning
+- Repositorio en Hugging Face: https://huggingface.co/Ackowalski/paper_016345393_image_captioning
 - Revisión sobre generación de captions (contexto general): https://link.springer.com/article/10.1007/s11042-024-20095-0
 - Encuesta sobre evaluación de captions en la era de los MLLMs: https://arxiv.org/abs/2503.14604
 - Revisión de metodologías de image captioning: https://www.sciencedirect.com/science/article/pii/S2949719125000354

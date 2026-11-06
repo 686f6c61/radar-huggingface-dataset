@@ -73,7 +73,7 @@ El autor advierte que el 36% de "correcto" está inflado por los rechazos. En pr
 - **VRAM estimada**: con pesos en bf16, el modelo ocupa aproximadamente 0,25 GB (125,8M parámetros × 2 bytes). Con overhead de inferencia, se recomienda al menos 1 GB de VRAM para uso cómodo.
 - **GPU recomendadas**: cualquier GPU con más de 1 GB de VRAM, como una NVIDIA T4, RTX 3060 o superior. No se requiere GPU profesional.
 - **Compatibilidad con consumer GPU**: sí, cabe en cualquier GPU de consumo moderna.
-- **Opciones de despliegue**: transformers (con `LlamaForCausalLM`), también compatible con text-generation-inference (TGI) y endpoints compatibles según los tags de HuggingFace. No hay indicación de soporte con llama.cpp u Ollama, pero por ser un modelo Llama pequeño podría convertirse a GGUF si se desea.
+- **Opciones de despliegue**: transformers (con `LlamaForCausalLM`), también compatible con text-generation-inference (TGI) y endpoints compatibles según los tags de Hugging Face. No hay indicación de soporte con llama.cpp u Ollama, pero por ser un modelo Llama pequeño podría convertirse a GGUF si se desea.
 - **Latencia y throughput**: no se han publicado datos específicos. Dado el tamaño, la inferencia en una GPU consumer es muy rápida, del orden de milisegundos por generación.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ No hay datos suficientes en la información proporcionada para comparar este mod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AnandHaridas1980/slm125m-live-sft)
+- [Modelo en Hugging Face](https://huggingface.co/AnandHaridas1980/slm125m-live-sft)
 - [Modelo base](https://huggingface.co/AnandHaridas1980/slm125m-live)
 - [Modelo similar de otro autor](https://huggingface.co/seetha0712/slm125m-live-sft-synthetic)
 - [Repositorio del proyecto](https://github.com/shivamfet/slm125m)

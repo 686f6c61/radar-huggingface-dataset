@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks comparativos con modelos de otras fami
 - No se publican métricas de throughput, consumo energético ni rendimiento fuera del hardware de referencia (M5 Pro).
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/gliner2-5-decide-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/gliner2-5-decide-coreml
 - Modelo base: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Variante multi de FluidInference: https://huggingface.co/FluidInference/gliner2-5-multi-coreml
 - Perfil de la organización FluidInference: https://huggingface.co/FluidInference

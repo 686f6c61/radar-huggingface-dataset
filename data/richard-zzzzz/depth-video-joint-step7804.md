@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`depth-video-joint-step7804` es un checkpoint experimental publicado por el usuario Richard-ZZZZZ en HuggingFace, derivado del modelo base `junchaoh-cs/SolarWM-H3-33B`. No se trata de un modelo de lenguaje generativo, sino de un conjunto de "expertos densos" entrenados sobre un backbone congelado de 33.000 millones de parametros para tareas de vision geometrica: estimacion de profundidad por fotograma, profundidad de video con denoising conjunto, campos de perspectiva de camara y normales de superficie. El pipeline declarado en HuggingFace es `depth-estimation`.
+`depth-video-joint-step7804` es un checkpoint experimental publicado por el usuario Richard-ZZZZZ en Hugging Face, derivado del modelo base `junchaoh-cs/SolarWM-H3-33B`. No se trata de un modelo de lenguaje generativo, sino de un conjunto de "expertos densos" entrenados sobre un backbone congelado de 33.000 millones de parametros para tareas de vision geometrica: estimacion de profundidad por fotograma, profundidad de video con denoising conjunto, campos de perspectiva de camara y normales de superficie. El pipeline declarado en Hugging Face es `depth-estimation`.
 
 El artefacto corresponde al paso 7804 de entrenamiento, descrito por el autor como la primera actualizacion tras reanudar desde el paso 7803 con un objetivo de pixel reparado. El propio autor advierte de que la convergencia en video no se ha demostrado y de que el objetivo total de batch fijo aumento ligeramente en esa primera actualizacion. El repositorio se encuentra en estado de subida incompleta: el codigo, el estado y 100 ejemplos estan preparados, pero la transferencia del optimizador emparejado esta pendiente por falta de conexion.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Richard-ZZZZZ/depth-video-joint-step7804
+- Hugging Face: https://huggingface.co/Richard-ZZZZZ/depth-video-joint-step7804
 - Modelo base: https://huggingface.co/junchaoh-cs/SolarWM-H3-33B
 - Repositorio (ficheros de referencia citados en la model card): `REPRODUCE.md`, `MANIFEST.json`, `UPLOAD_STATUS.json`, `DATA_PROVENANCE.md`, `demo.py`, `vendor/SolarWM/`

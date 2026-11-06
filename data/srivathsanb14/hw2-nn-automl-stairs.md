@@ -94,6 +94,6 @@ Nota: los recuentos de parametros de estos backbones en sus implementaciones est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srivathsanb14/hw2-nn-automl-stairs
+- Modelo en Hugging Face: https://huggingface.co/srivathsanb14/hw2-nn-automl-stairs
 - Dataset de imagenes: https://huggingface.co/datasets/ArinRoths/StairvsNonStair_Dataset
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo; los resultados obtenidos correspondian a paginas de ayuda de YouTube sin relacion con el repositorio. No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales.

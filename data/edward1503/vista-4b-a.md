@@ -86,9 +86,9 @@ No se han publicado en la informacion disponible resultados desglosados por benc
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VISTA-4B-A | 4,572B (incluye 32,46M de LoRA) | 32.768 tokens | Adaptador LoRA de decision sobre Qwen3.5-4B post-entrenado; puntua letras candidatas | apache-2.0 | HuggingFace, 19 descargas, 0 likes |
-| Qwen3.5-4B (base del adaptador) | aproximadamente 4,660B en los ficheros upstream, 4,539B en la ruta de inferencia | no disponible en la informacion proporcionada | Modelo vision-lenguaje generalista post-entrenado | no disponible en la informacion proporcionada | HuggingFace (Qwen y Unsloth) |
-| Qwen3.5-4B-Base | no disponible en la informacion proporcionada | no disponible | Checkpoint base sin post-entrenamiento | no disponible | HuggingFace |
+| VISTA-4B-A | 4,572B (incluye 32,46M de LoRA) | 32.768 tokens | Adaptador LoRA de decision sobre Qwen3.5-4B post-entrenado; puntua letras candidatas | apache-2.0 | Hugging Face, 19 descargas, 0 likes |
+| Qwen3.5-4B (base del adaptador) | aproximadamente 4,660B en los ficheros upstream, 4,539B en la ruta de inferencia | no disponible en la informacion proporcionada | Modelo vision-lenguaje generalista post-entrenado | no disponible en la informacion proporcionada | Hugging Face (Qwen y Unsloth) |
+| Qwen3.5-4B-Base | no disponible en la informacion proporcionada | no disponible | Checkpoint base sin post-entrenamiento | no disponible | Hugging Face |
 | Otros adaptadores de decision para suites VQA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion de rendimiento cifrada. La comparacion con Qwen3.5-4B es directa en cuanto a backbone, pero VISTA-4B-A no es un sustituto funcional: no genera texto libre y su readout esta restringido a la puntuacion de opciones.
@@ -109,8 +109,8 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edward1503/VISTA-4B-A
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/edward1503/VISTA-4B-A
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.5-4B
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision del backbone fijada por el loader: 3764fa359b9082ea5a1e4a5e3ac3aaf6e9671636
 - Revision oficial de Qwen/Qwen3.5-4B verificada: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a

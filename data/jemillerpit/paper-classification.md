@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jemillerpit/paper-classification es un repositorio experimental publicado por el usuario Jemillerpit (Jayden Miller) en HuggingFace que contiene una implementación propia de un transformer de escala "nano" orientado a tareas de clasificación. No es un modelo entrenado ni un checkpoint con rendimiento validado: el archivo `model.safetensors` que acompaña al repositorio se presenta explícitamente en la model card como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados.
+Jemillerpit/paper-classification es un repositorio experimental publicado por el usuario Jemillerpit (Jayden Miller) en Hugging Face que contiene una implementación propia de un transformer de escala "nano" orientado a tareas de clasificación. No es un modelo entrenado ni un checkpoint con rendimiento validado: el archivo `model.safetensors` que acompaña al repositorio se presenta explícitamente en la model card como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados.
 
 El interés del repositorio es fundamentalmente didáctico y de investigación sobre arquitecturas. Con 16.576 parámetros totales, se trata de un banco de pruebas para inspeccionar decisiones de diseño (atención dilatada, fusión por concatenación con MLP, activación approx gelu, normalización por batchnorm) antes de lanzar un entrenamiento completo. El repositorio declara licencia MIT, lo que facilita su reutilización y modificación.
 
@@ -80,8 +80,8 @@ Comparativa con alternativas orientadas a la misma tarea (clasificación de docu
 
 | Modelo / enfoque | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jemillerpit/paper-classification | 16.576 | no disponible | solo inicializacion, sin entrenar | MIT | HuggingFace |
-| Kushtrim/bert-ai-paper-classifier-arxiv | ≈110 M (bert-base-cased) | 512 tokens (BERT-base) | ajustado sobre el dataset ArXiv, 5 categorias | no disponible | HuggingFace |
+| Jemillerpit/paper-classification | 16.576 | no disponible | solo inicializacion, sin entrenar | MIT | Hugging Face |
+| Kushtrim/bert-ai-paper-classifier-arxiv | ≈110 M (bert-base-cased) | 512 tokens (BERT-base) | ajustado sobre el dataset ArXiv, 5 categorias | no disponible | Hugging Face |
 | SVM + TF-IDF sobre abstracts | no aplica | limitado por vectorizacion | entrenado sobre abstracts etiquetados | no disponible | implementacion propia |
 | Embeddings SPECTER + clasificador | no aplica | condicionado por el encoder | evaluado en clasificacion de disciplinas | no disponible | investigacion publicada |
 
@@ -100,8 +100,8 @@ Las alternativas basadas en BERT-base o en embeddings especializados de literatu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jemillerpit/paper-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/Jemillerpit/models
+- Repositorio en Hugging Face: https://huggingface.co/Jemillerpit/paper-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/Jemillerpit/models
 - Kushtrim/bert-ai-paper-classifier-arxiv (alternativa comparable): https://huggingface.co/Kushtrim/bert-ai-paper-classifier-arxiv
 - PaperNet, dataset y benchmark de clasificación fina de artículos: https://www.mdpi.com/2076-3417/12/9/4554
 - Clasificación automatizada de metodología de investigación con XGBoost: https://www.sciencedirect.com/science/article/pii/S0952197625010395

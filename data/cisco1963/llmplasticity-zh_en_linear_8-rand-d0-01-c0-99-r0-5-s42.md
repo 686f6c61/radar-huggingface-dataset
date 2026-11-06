@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cisco1963/llmplasticity-zh_en_linear_8-rand-d0.01-c0.99-r0.5-s42` es un checkpoint de 122.706.432 parámetros (0,12 B) publicado en HuggingFace por el usuario Cisco1963. Las etiquetas del repositorio lo identifican como un modelo con arquitectura `gpt2` y pesos en formato `safetensors`, con tensor type F32 según los repositorios hermanos de la misma familia. No dispone de model card: la información pública se limita a metadatos de depuración.
+`Cisco1963/llmplasticity-zh_en_linear_8-rand-d0.01-c0.99-r0.5-s42` es un checkpoint de 122.706.432 parámetros (0,12 B) publicado en Hugging Face por el usuario Cisco1963. Las etiquetas del repositorio lo identifican como un modelo con arquitectura `gpt2` y pesos en formato `safetensors`, con tensor type F32 según los repositorios hermanos de la misma familia. No dispone de model card: la información pública se limita a metadatos de depuración.
 
 Por el nombre del identificador se deduce que forma parte de una familia de experimentos denominada `llmplasticity`, con variantes que cruzan los pares de idiomas `zh_en` y `en_zh`, y con un sufijo que codifica hiperparámetros (`linear_8`, `rand`, `d0.01`, `c0.99`, `r0.5`, `s42`). Se trata, por tanto, de un artefacto de investigación sobre plasticidad de modelos lingüísticos y adaptación bilingüe chino-inglés, no de un modelo orientado a producción. El sufijo `s42` apunta a una semilla fija (42), lo que sugiere reproducibilidad experimental; el resto de parámetros (`d`, `c`, `r`) no está documentado.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`llmplasticity-zh_en_linear_8-rand-...-s42`) | 122,7 M | No disponible | No disponible | HuggingFace, 13 descargas | Sin model card ni benchmarks |
+| Este checkpoint (`llmplasticity-zh_en_linear_8-rand-...-s42`) | 122,7 M | No disponible | No disponible | Hugging Face, 13 descargas | Sin model card ni benchmarks |
 | GPT-2 small (referencia arquitectonica) | 124 M | 1024 | MIT (publicacion original) | Ampliamente disponible | Base de partida de la familia; con evaluacion publica |
 | DistilGPT-2 | 82 M | 1024 | Apache 2.0 | Ampliamente disponible | Version destilada, mas rapida |
-| Variantes hermanas de `llmplasticity` (`zh_en` y `en_zh` con otros hiperparametros) | 0,1 B | No disponible | No disponible | HuggingFace | Mismo autor y estructura; utiles como control experimental |
+| Variantes hermanas de `llmplasticity` (`zh_en` y `en_zh` con otros hiperparametros) | 0,1 B | No disponible | No disponible | Hugging Face | Mismo autor y estructura; utiles como control experimental |
 
 La comparacion con GPT-2 small es estructural, no de rendimiento: no existen metricas de este checkpoint que permitan afirmar si mejora, iguala o empeora la referencia.
 
@@ -89,9 +89,9 @@ La comparacion con GPT-2 small es estructural, no de rendimiento: no existen met
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-rand-d0.01-c0.99-r0.5-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-rand-d0.01-c0.99-r0.5-s42
 - Variante hermana `zh_en_linear_8-d0.5-c0.9-r0.5-s42`: https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.5-c0.9-r0.5-s42
 - Variante hermana `en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42`: https://huggingface.co/Cisco1963/llmplasticity-en_zh_linear_8-rand-d0.5-c0.99-r0.5-s42
 - Variante `plasticity-nl_zh_linear_8-d0.125-c0.99-r0.25-s42` (directorio externo): https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-linear-8-d0-125-c0-99-r0-25-s42
 - Directorio de modelos del autor: https://essamamdani.com/ai-models/company/cisco1963
-- Listado de nuevos modelos de HuggingFace (fuente de descubrimiento): https://github.com/GHLists/new-huggingface-models/
+- Listado de nuevos modelos de Hugging Face (fuente de descubrimiento): https://github.com/GHLists/new-huggingface-models/

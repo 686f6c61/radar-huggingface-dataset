@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Pasos | Contexto o duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex-MLX (este) | LoRA sobre MiniMax H3, port a MLX | 6 | hasta 15 s (tres ventanas de 5 s) | MiniMax H3 Community License | HuggingFace, ejecución local en Mac |
-| Pika-H3-Flex (original) | LoRA FL2VA sobre MiniMax H3 | no disponible | 15 s en una sola pasada (versión alojada) | MiniMax H3 Community License | HuggingFace, orientado a NVIDIA H100 |
-| MiniMax H3 (base) | DiT de vídeo y audio | 15 | no disponible | MiniMax H3 Community License | HuggingFace |
+| Pika-H3-Flex-MLX (este) | LoRA sobre MiniMax H3, port a MLX | 6 | hasta 15 s (tres ventanas de 5 s) | MiniMax H3 Community License | Hugging Face, ejecución local en Mac |
+| Pika-H3-Flex (original) | LoRA FL2VA sobre MiniMax H3 | no disponible | 15 s en una sola pasada (versión alojada) | MiniMax H3 Community License | Hugging Face, orientado a NVIDIA H100 |
+| MiniMax H3 (base) | DiT de vídeo y audio | 15 | no disponible | MiniMax H3 Community License | Hugging Face |
 | LTX-2.5 | Generación de vídeo con sonido | no disponible | no disponible | no disponible | Integrado en Phosphene para Mac |
 
 La comparación con otros modelos de vídeo de la misma categoría (por ejemplo, familias de generación de vídeo con audio de otros proveedores) no está disponible en la información proporcionada.
@@ -98,7 +98,7 @@ La comparación con otros modelos de vídeo de la misma categoría (por ejemplo,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mrbizarro/Pika-H3-Flex-MLX
+- Repositorio Hugging Face: https://huggingface.co/Mrbizarro/Pika-H3-Flex-MLX
 - Modelo base Pika: https://huggingface.co/Pika-Labs/Pika-H3-Flex
 - Modelo base MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Aplicación Phosphene: https://phosphene.video

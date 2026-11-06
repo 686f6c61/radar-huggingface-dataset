@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `exadigit-hpc-cooling-surrogate` es un modelo publicado en HuggingFace por el usuario YishakTadele bajo licencia MIT. Por el identificador y la nomenclatura empleada, se infiere que se trata de un surrogate model (modelo subrogado) orientado a la simulación de refrigeración en entornos HPC (High Performance Computing), presumiblemente entrenado para aproximar los resultados de simulaciones numéricas de dinámica de fluidos computacional (CFD) en sistemas de refrigeración de centros de datos o clústeres de altas prestaciones. La model card publicada no contiene descripción funcional, arquitectura ni detalles de entrenamiento más allá de la licencia.
+El modelo `exadigit-hpc-cooling-surrogate` es un modelo publicado en Hugging Face por el usuario YishakTadele bajo licencia MIT. Por el identificador y la nomenclatura empleada, se infiere que se trata de un surrogate model (modelo subrogado) orientado a la simulación de refrigeración en entornos HPC (High Performance Computing), presumiblemente entrenado para aproximar los resultados de simulaciones numéricas de dinámica de fluidos computacional (CFD) en sistemas de refrigeración de centros de datos o clústeres de altas prestaciones. La model card publicada no contiene descripción funcional, arquitectura ni detalles de entrenamiento más allá de la licencia.
 
 El repositorio no presenta descargas ni interacciones, y fue creado y actualizado en la misma fecha, lo que sugiere una publicación reciente sin difusión posterior. No se dispone de información sobre parámetros, contexto, tokenizador ni modalidad (texto, series temporales, campos físicos), por lo que cualquier dato técnico concreto debe considerarse no disponible a partir de la información proporcionada.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YishakTadele/exadigit-hpc-cooling-surrogate
+- Hugging Face: https://huggingface.co/YishakTadele/exadigit-hpc-cooling-surrogate
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

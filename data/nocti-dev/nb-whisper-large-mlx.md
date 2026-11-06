@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros | Contexto/formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nocti-Dev/nb-whisper-large-mlx | 1.543.490.560 | ventanas de audio de 30 s (Whisper large); MLX `float16` | Apache 2.0 | HuggingFace, 0 descargas |
-| NbAiLab/nb-whisper-large | no disponible en la informacion proporcionada | Whisper large; PyTorch/Transformers | Apache 2.0 | HuggingFace (modelo base) |
-| OpenAI Whisper large | no disponible en la informacion proporcionada | Whisper large; PyTorch | MIT (según el original) | HuggingFace / OpenAI |
+| Nocti-Dev/nb-whisper-large-mlx | 1.543.490.560 | ventanas de audio de 30 s (Whisper large); MLX `float16` | Apache 2.0 | Hugging Face, 0 descargas |
+| NbAiLab/nb-whisper-large | no disponible en la informacion proporcionada | Whisper large; PyTorch/Transformers | Apache 2.0 | Hugging Face (modelo base) |
+| OpenAI Whisper large | no disponible en la informacion proporcionada | Whisper large; PyTorch | MIT (según el original) | Hugging Face / OpenAI |
 
 La comparación relevante es contra el propio modelo base: esta conversión no altera la calidad (WER 0,00 en la prueba de humo) y añade compatibilidad con MLX a costa de quedar restringida al ecosistema Apple. Frente a Whisper large de OpenAI, el modelo base de NbAiLab está especializado en noruego, por lo que se espera mejor rendimiento en esa lengua y peor cobertura multilingüe general, aunque no se aportan cifras comparativas.
 
@@ -88,7 +88,7 @@ La comparación relevante es contra el propio modelo base: esta conversión no a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nocti-Dev/nb-whisper-large-mlx
+- Repositorio Hugging Face: https://huggingface.co/Nocti-Dev/nb-whisper-large-mlx
 - Modelo base: https://huggingface.co/NbAiLab/nb-whisper-large
 - Commit del modelo base: https://huggingface.co/NbAiLab/nb-whisper-large/tree/8c6249fdeeb4dcd05e5735a4c39640607eb6e4ac
 - Librería MLX: https://github.com/ml-explore/mlx

@@ -115,7 +115,7 @@ No se dispone de datos de benchmarks de modelos de terceros de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProCreations/Agnes-3.0-Flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/ProCreations/Agnes-3.0-Flash-NVFP4
 - Modelo base: https://huggingface.co/Agnes-AI/Agnes-3.0-Flash
 - Comparativa completa por caso (referenciada en la model card como `native_comparison.json`, ruta relativa dentro del repositorio): https://huggingface.co/ProCreations/Agnes-3.0-Flash-NVFP4/blob/main/native_comparison.json
 - Bibliografia, papers o repos adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relacionados con este modelo (unicamente paginas no pertinentes sobre citas y aforismos), por lo que no se pueden aportar enlaces externos verificados.

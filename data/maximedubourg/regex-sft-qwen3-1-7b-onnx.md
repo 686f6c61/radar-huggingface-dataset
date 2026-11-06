@@ -90,7 +90,7 @@ No se dispone de información sobre otros modelos especializados en generación 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximedubourg/regex-sft-qwen3-1.7b-onnx
+- Modelo en Hugging Face: https://huggingface.co/maximedubourg/regex-sft-qwen3-1.7b-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Grafo ONNX de referencia: https://huggingface.co/onnx-community/Qwen3-1.7B-ONNX
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js/index

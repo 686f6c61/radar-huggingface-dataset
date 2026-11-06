@@ -4,7 +4,7 @@
 
 AgentGhost-Low-Qwen3.5-9B es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario qiusizhan bajo el identificador `qiusizhan/agentghost-low-qwen35-9b-20261026`. Se trata de un modelo multimodal de tipo image-text-to-text orientado a tareas de investigación y conversación, con un total de 9.409.813.744 parámetros en pesos safetensors. El nombre y las etiquetas (`agentghost`, `research`) sugieren un entrenamiento orientado a comportamiento agéntico, aunque no se ha publicado documentación técnica que lo confirme.
 
-El modelo hereda la arquitectura y el tokenizador de Qwen3.5-9B, por lo que su ventana de contexto, capacidades multilingües y rendimiento base dependen de las especificaciones del modelo original, que no se detallan en la información disponible. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo hereda la arquitectura y el tokenizador de Qwen3.5-9B, por lo que su ventana de contexto, capacidades multilingües y rendimiento base dependen de las especificaciones del modelo original, que no se detallan en la información disponible. La licencia declarada es Apache 2.0, lo que en principio permite uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 Su relevancia actual es limitada: cuenta con 14 descargas y 0 likes, no se han publicado benchmarks ni una model card detallada, y el tamaño del repositorio (57,9 GB) es considerablemente mayor que el de los pesos en safetensors, lo que sugiere la presencia de múltiples artefactos (posiblemente checkpoints intermedios u otros formatos). Debe evaluarse con cautela antes de cualquier uso en producción.
 
@@ -43,7 +43,7 @@ No hay documentación sobre innovaciones técnicas específicas (decodificación
 - Prototipado de agentes de investigación: la etiqueta `research` y el nombre `agentghost` sugieren un uso experimental en pipelines agénticos, adecuado para entornos de laboratorio más que para producción.
 - Generación asistida en entornos de desarrollo: puede integrarse vía transformers para tareas de generación de texto y código, siempre que se valide su calidad frente al modelo base.
 - Evaluación comparativa de fine-tunes: útil como caso de estudio en investigación sobre ajuste fino de modelos multimodales de 9B parámetros.
-- Despliegue en infraestructura propia con licencia Apache 2.0: permite experimentación interna sin restricciones comerciales declaradas, sujeto a la condición de acceso gated en HuggingFace.
+- Despliegue en infraestructura propia con licencia Apache 2.0: permite experimentación interna sin restricciones comerciales declaradas, sujeto a la condición de acceso gated en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -75,13 +75,13 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - Sesgos desconocidos: al no documentarse la composición del dataset de ajuste, no es posible evaluar sesgos específicos introducidos por el fine-tune.
 - Idiomas soportados no declarados; el rendimiento fuera del inglés o del chino (idiomas típicos de la familia Qwen) es incierto.
 - Longitud de contexto no especificada; debe medirse empíricamente antes de usarlo en tareas de contexto largo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de despliegues.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de despliegues.
 - El tamaño del repositorio (57,9 GB) frente al de los pesos (~19 GB en fp16) sugiere artefactos adicionales no documentados; conviene inspeccionar el contenido antes de descargarlo.
 - Aunque la licencia es Apache 2.0, la condición gated y la ausencia de documentación aconsejan revisar los términos concretos antes de un uso comercial.
 - No apto para producción sin una evaluación previa exhaustiva frente al modelo base.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/agentghost-low-qwen35-9b-20261026
+- Hugging Face: https://huggingface.co/qiusizhan/agentghost-low-qwen35-9b-20261026
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

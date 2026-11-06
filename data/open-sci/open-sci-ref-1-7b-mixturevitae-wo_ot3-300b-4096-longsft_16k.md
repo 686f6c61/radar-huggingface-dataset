@@ -1,7 +1,7 @@
 # open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k
 
 ## Resumen
-Open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k es un modelo de lenguaje denso de 1.714 millones de parametros desarrollado por el colectivo open-sci (con pesos alojados bajo el espacio de nombres `open-sci` en HuggingFace y linaje tecnico del ecosistema LAION). No es un modelo de proposito general pensado para produccion, sino un experimento de ablacion controlado: reproduce el modelo principal del paper *Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining* (sometido a NeurIPS 2026) eliminando el subconjunto OpenThoughts3 del corpus de preentrenamiento MixtureVitae v1, para medir si ese subconjunto es critico para el post-entrenamiento orientado a razonamiento.
+Open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k es un modelo de lenguaje denso de 1.714 millones de parametros desarrollado por el colectivo open-sci (con pesos alojados bajo el espacio de nombres `open-sci` en Hugging Face y linaje tecnico del ecosistema LAION). No es un modelo de proposito general pensado para produccion, sino un experimento de ablacion controlado: reproduce el modelo principal del paper *Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining* (sometido a NeurIPS 2026) eliminando el subconjunto OpenThoughts3 del corpus de preentrenamiento MixtureVitae v1, para medir si ese subconjunto es critico para el post-entrenamiento orientado a razonamiento.
 
 El modelo parte de un preentrenamiento de 300B tokens sobre 93 de los 96 shards de MixtureVitae v1 (sin reweighting, con 0.76 epocas y sin repeticion), con una arquitectura `open-sci-ref` de tipo transformer denso, tokenizer GPT-NeoX (vocabulario 50304) y una ventana nativa de 4096 tokens que se extiende a 16384 mediante YaRN (factor 4.0) mas una epoca de `long_sft`. El resultado es un checkpoint de investigacion con licencia Apache 2.0, util para estudiar el impacto de la composicion del corpus y de la extension de contexto, no como asistente listo para usar.
 
@@ -80,7 +80,7 @@ La comparacion cuantitativa de rendimiento con alternativas no esta disponible: 
 - Sin datos de benchmarks: no hay evidencia publicada de rendimiento en tareas estandar para validar su calidad frente a alternativas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096-longsft_16k
 - Modelo base del que deriva (4k): https://huggingface.co/laion/open-sci-ref-1.7b-mixturevitae-wo_ot3-300B-4096
 - Ablacion a escala 100B: https://huggingface.co/laion/open-sci-ref-1.7b-mixturevitae-wo_ot3-100B-4096
 - Modelo principal del paper (MV-300BT): https://huggingface.co/ontocord/1.7b-MixtureVitae-300BT-v1-decontaminated

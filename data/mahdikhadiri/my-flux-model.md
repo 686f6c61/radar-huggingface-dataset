@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Mahdikhadiri/my-flux-model` es un repositorio publicado en HuggingFace por el usuario Mahdikhadiri, sin documentación técnica ni model card sustancial. El único metadato relevante es la licencia declarada como `llama3.3`, lo que sugiere una posible vinculación con la familia de modelos Llama de Meta, aunque el nombre del repositorio apunta a una relación con los modelos FLUX de Black Forest Labs. No se dispone de información sobre arquitectura, tamaño, parámetros, contexto o capacidades reales.
+El modelo `Mahdikhadiri/my-flux-model` es un repositorio publicado en Hugging Face por el usuario Mahdikhadiri, sin documentación técnica ni model card sustancial. El único metadato relevante es la licencia declarada como `llama3.3`, lo que sugiere una posible vinculación con la familia de modelos Llama de Meta, aunque el nombre del repositorio apunta a una relación con los modelos FLUX de Black Forest Labs. No se dispone de información sobre arquitectura, tamaño, parámetros, contexto o capacidades reales.
 
 Este repositorio tiene cero descargas y cero likes, y fue creado y actualizado en la misma fecha (2026-08-17). La ausencia de cualquier ficha técnica, ejemplo de uso o resultados de evaluación impide determinar qué tipo de modelo es, para qué tarea está diseñado o si es funcional. Se recomienda precaución antes de utilizarlo en cualquier entorno de producción o investigación, ya que no existe evidencia de su validez o rendimiento.
 
@@ -16,7 +16,7 @@ Este repositorio tiene cero descargas y cero likes, y fue creado y actualizado e
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | llama3.3 (según metadatos de HuggingFace) |
+| Licencia | llama3.3 (según metadatos de Hugging Face) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -53,6 +53,6 @@ No se puede realizar una comparativa al no existir datos técnicos del modelo. N
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mahdikhadiri/my-flux-model
+- Repositorio en Hugging Face: https://huggingface.co/Mahdikhadiri/my-flux-model
 - Referencia general a modelos FLUX (no específica de este repositorio): https://bfl.ai/models
 - Repositorio oficial de inferencia FLUX (no relacionado con este modelo): https://github.com/black-forest-labs/flux

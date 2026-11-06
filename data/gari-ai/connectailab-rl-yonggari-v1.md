@@ -74,7 +74,7 @@ Advertencias del propio autor: los resultados de simulación corresponden a la m
 
 | Modelo | Tipo | Base / parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gari-ai/connectailab-rl-yonggari-v1 | Adaptador LoRA con RL (GRPO) | Qwen3.5-0.8B | Decisión empresarial simulada (coreano) | Apache 2.0 | Público (HuggingFace) |
+| gari-ai/connectailab-rl-yonggari-v1 | Adaptador LoRA con RL (GRPO) | Qwen3.5-0.8B | Decisión empresarial simulada (coreano) | Apache 2.0 | Público (Hugging Face) |
 | Qwen/Qwen3.5-0.8B (base) | LLM general sin ajustar | 0,8B | Uso general | no disponible en la ficha | Público |
 | Alternativas comparables de decision-making con RL sobre LLM pequeños | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ No existen en la información proporcionada modelos comparables directos del mis
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/gari-ai/connectailab-rl-yonggari-v1
+- Ficha en Hugging Face: https://huggingface.co/gari-ai/connectailab-rl-yonggari-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon (simulador): https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

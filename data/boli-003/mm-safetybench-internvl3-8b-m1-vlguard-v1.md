@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mm-safetybench-internvl3-8b-m1-vlguard-v1 | Adaptador LoRA sobre 8B | no disponible | Adaptador de seguridad multimodal | other (terminos del base) | HuggingFace, 13 descargas |
-| OpenGVLab/InternVL3-8B (base) | 8B | no disponible en esta ficha | VLM completo | segun upstream (Apache-2.0/MIT segun el autor) | HuggingFace, ampliamente usado |
+| mm-safetybench-internvl3-8b-m1-vlguard-v1 | Adaptador LoRA sobre 8B | no disponible | Adaptador de seguridad multimodal | other (terminos del base) | Hugging Face, 13 descargas |
+| OpenGVLab/InternVL3-8B (base) | 8B | no disponible en esta ficha | VLM completo | segun upstream (Apache-2.0/MIT segun el autor) | Hugging Face, ampliamente usado |
 | Alternativas de seguridad multimodal comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros adaptadores de seguridad multimodal directamente comparables en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros adaptadores de seguridad multimodal dir
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/boli-003/mm-safetybench-internvl3-8b-m1-vlguard-v1
+- Repositorio Hugging Face del adaptador: https://huggingface.co/boli-003/mm-safetybench-internvl3-8b-m1-vlguard-v1
 - Modelo base InternVL3-8B: https://huggingface.co/OpenGVLab/InternVL3-8B
 - GitHub project package con prompts, parametros de decodificacion y metricas: no disponible en la informacion proporcionada (la model card lo menciona sin enlace explicito)
 - Paper o blog del proyecto: no disponible

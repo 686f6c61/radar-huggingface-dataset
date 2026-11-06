@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justashleylee/clip-contrastive-proto` es un repositorio de HuggingFace que contiene una implementación reducida de CLIP (Contrastive Language-Image Pre-training) orientada a experimentos de aprendizaje contrastivo. Lo publica el usuario `justashleylee` y se distribuye con licencia Apache 2.0. Según la propia model card, no se trata de un modelo entrenado ni de una release con benchmarks, sino de un punto de partida reproducible: incluye el código del modelo, una configuración de arquitectura generada, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo.
+`justashleylee/clip-contrastive-proto` es un repositorio de Hugging Face que contiene una implementación reducida de CLIP (Contrastive Language-Image Pre-training) orientada a experimentos de aprendizaje contrastivo. Lo publica el usuario `justashleylee` y se distribuye con licencia Apache 2.0. Según la propia model card, no se trata de un modelo entrenado ni de una release con benchmarks, sino de un punto de partida reproducible: incluye el código del modelo, una configuración de arquitectura generada, una receta de entrenamiento por defecto y un checkpoint de inicialización válido para pruebas de humo.
 
 El dato más relevante es su escala real: el fichero `model.safetensors` contiene 49.600 parámetros totales, lo que lo sitúa muy por debajo de cualquier CLIP utilizable en producción (los CLIP originales van de ~150M a ~400M de parámetros). La model card declara una variante "huge" con atención de consulta agrupada (grouped query attention), fusión tipo Tucker, activación swish y normalización scalenorm, pero esa descripción corresponde a los ajustes de configuración generados, no a un modelo con pesos entrenados.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `justashleylee/clip-contrastive-proto` | 49.600 | no disponible | No | Apache 2.0 | HuggingFace |
-| CLIP ViT-B/32 (OpenAI) | ~151M | 77 tokens de texto | Sí | MIT (pesos publicados) | HuggingFace, open_clip |
-| CLIP ViT-L/14 (OpenAI) | ~428M | 77 tokens de texto | Sí | MIT (pesos publicados) | HuggingFace, open_clip |
-| SigLIP Base | ~203M | 64 tokens de texto | Sí | Apache 2.0 | HuggingFace |
+| `justashleylee/clip-contrastive-proto` | 49.600 | no disponible | No | Apache 2.0 | Hugging Face |
+| CLIP ViT-B/32 (OpenAI) | ~151M | 77 tokens de texto | Sí | MIT (pesos publicados) | Hugging Face, open_clip |
+| CLIP ViT-L/14 (OpenAI) | ~428M | 77 tokens de texto | Sí | MIT (pesos publicados) | Hugging Face, open_clip |
+| SigLIP Base | ~203M | 64 tokens de texto | Sí | Apache 2.0 | Hugging Face |
 
 La comparación es estructural: el repositorio comparte familia arquitectónica con CLIP, pero no es funcionalmente comparable porque carece de entrenamiento y su escala es tres o cuatro órdenes de magnitud menor.
 
@@ -83,5 +83,5 @@ La comparación es estructural: el repositorio comparte familia arquitectónica 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justashleylee/clip-contrastive-proto
+- Repositorio Hugging Face: https://huggingface.co/justashleylee/clip-contrastive-proto
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cyber Prince V1 es un modelo de lenguaje de 4.000 millones de parametros publicado en HuggingFace por el autor XcyberPrince, orientado a ciberseguridad ofensiva, ingenieria inversa, analisis de exploits y bucles agenticos autonomos. Se distribuye en formato GGUF cuantizado (Q4_K_M, unos 2,3 GB segun el autor), lo que permite ejecutarlo en maquinas de consumo con 8 GB de RAM mediante Ollama o llama.cpp. El autor lo presenta como un modelo "uncensored" (sin rechazos ni salvaguardas de alineamiento), lo que lo distingue de los modelos comerciales convencionales.
+Cyber Prince V1 es un modelo de lenguaje de 4.000 millones de parametros publicado en Hugging Face por el autor XcyberPrince, orientado a ciberseguridad ofensiva, ingenieria inversa, analisis de exploits y bucles agenticos autonomos. Se distribuye en formato GGUF cuantizado (Q4_K_M, unos 2,3 GB segun el autor), lo que permite ejecutarlo en maquinas de consumo con 8 GB de RAM mediante Ollama o llama.cpp. El autor lo presenta como un modelo "uncensored" (sin rechazos ni salvaguardas de alineamiento), lo que lo distingue de los modelos comerciales convencionales.
 
 Su relevancia radica en la combinacion de tres elementos: un tamaño compacto apto para hardware modesto, una ventana de contexto muy amplia (hasta 1.048.576 tokens segun la model card, aunque sin verificacion independiente) y un enfoque especializado en tareas tecnicas de seguridad sin filtros. La model card describe una arquitectura hibrida de atencion con ventana deslizante en ratio 3:1 y GQA, pero al tratarse de un modelo comunitario sin documentacion academica asociada, gran parte de las afirmaciones tecnicas deben tomarse con cautela y verificarse en pruebas propias antes de uso en produccion.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM/RAM estimada: unos 2,3 GB para la version Q4_K_M en GGUF; el autor afirma que funciona en maquinas con 8 GB de RAM (inferencia en CPU o con offload parcial a GPU). El master BF16 ocupa unos 7,85 GB, lo que requiere una GPU de 12 GB o mas para comodidad.
 - GPUs recomendadas: para inferencia cuantizada, cualquier GPU de consumo con 4-6 GB libres (RTX 3060, RTX 4060 o superior) es suficiente; para BF16, una RTX 4090 (24 GB) o una A100/RTX 6000 seria adecuada. No se requieren H100 dado el tamaño del modelo.
 - Consumer GPUs: si cabe con holgura en cuantizacion Q4_K_M; incluso portatiles con GPU de 6 GB pueden ejecutarlo.
-- Despliegue: Ollama (comando directo desde HuggingFace), llama.cpp, y el servidor propio del autor (`cyber_prince_server.py`) que expone simultaneamente endpoints compatibles con OpenAI, Ollama y Anthropic. No hay informacion sobre soporte verificado en vLLM o TGI.
+- Despliegue: Ollama (comando directo desde Hugging Face), llama.cpp, y el servidor propio del autor (`cyber_prince_server.py`) que expone simultaneamente endpoints compatibles con OpenAI, Ollama y Anthropic. No hay informacion sobre soporte verificado en vLLM o TGI.
 - Latencia y throughput: no disponibles; al ser un modelo de 4B cuantizado a 4 bits, se espera inferencia fluida en CPU moderna (decenas de tokens/s) y muy rapida en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Frente a estas alternativas, Cyber Prince V1 destaca por su posicionamiento sin 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XcyberPrince/Cyber-Prince-V1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/XcyberPrince/Cyber-Prince-V1-GGUF
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo fuente del modelo: no disponible

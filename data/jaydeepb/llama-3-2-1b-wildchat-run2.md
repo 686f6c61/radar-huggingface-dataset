@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jaydeepb/llama-3.2-1b-wildchat-run2` es un artefacto de investigación publicado en HuggingFace por el usuario jaydeepb. Se trata de `meta-llama/Llama-3.2-1B` (un modelo transformer decoder-only de aproximadamente 1.200 millones de parámetros) sometido a un fine-tuning de una época sobre una muestra de 1 millón de secuencias de WildChat, un corpus público de conversaciones reales con asistentes de lenguaje. El modelo no está pensado para uso productivo, sino como componente de reproducibilidad del trabajo *Predicting Memorization Before Fine-Tuning Language Models*.
+`jaydeepb/llama-3.2-1b-wildchat-run2` es un artefacto de investigación publicado en Hugging Face por el usuario jaydeepb. Se trata de `meta-llama/Llama-3.2-1B` (un modelo transformer decoder-only de aproximadamente 1.200 millones de parámetros) sometido a un fine-tuning de una época sobre una muestra de 1 millón de secuencias de WildChat, un corpus público de conversaciones reales con asistentes de lenguaje. El modelo no está pensado para uso productivo, sino como componente de reproducibilidad del trabajo *Predicting Memorization Before Fine-Tuning Language Models*.
 
 Su relevancia es académica: constituye la ejecución de fine-tuning "Run 2" (el conjunto de evaluación held-out) del estudio citado, en el que se entrenan clasificadores capaces de predecir, a partir de características del modelo base previo al fine-tuning, qué secuencias serán memorizadas de forma literal por el modelo ajustado. La memorización textual de datos de entrenamiento es un tema central en privacidad y seguridad de LLMs, y disponer del artefacto real permite auditar y verificar los resultados publicados.
 
@@ -81,6 +81,6 @@ Frente a sus alternativas, este modelo no compite en rendimiento ni utilidad gen
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/jaydeepb/llama-3.2-1b-wildchat-run2
+- Ficha del modelo en Hugging Face: https://huggingface.co/jaydeepb/llama-3.2-1b-wildchat-run2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Paper de referencia: *Predicting Memorization Before Fine-Tuning Language Models* (enlace concreto no disponible en la información proporcionada)

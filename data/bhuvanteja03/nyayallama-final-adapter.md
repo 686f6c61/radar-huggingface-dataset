@@ -2,9 +2,9 @@
 
 ## Resumen
 
-NyayaLlama Final Adapter es un adaptador LoRA (PEFT) publicado por el usuario bhuvanteja03 en HuggingFace, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, una versión de Llama 3.2 3B Instruct cuantizada a 4 bits por Unsloth. El repositorio no contiene pesos completos, sino únicamente el adaptador en formato safetensors (0,1 GB), por lo que su uso requiere descargar y cargar el modelo base por separado.
+NyayaLlama Final Adapter es un adaptador LoRA (PEFT) publicado por el usuario bhuvanteja03 en Hugging Face, entrenado mediante fine-tuning supervisado (SFT) sobre el modelo base unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, una versión de Llama 3.2 3B Instruct cuantizada a 4 bits por Unsloth. El repositorio no contiene pesos completos, sino únicamente el adaptador en formato safetensors (0,1 GB), por lo que su uso requiere descargar y cargar el modelo base por separado.
 
-El interés de la ficha es limitado pero ilustrativo: se trata de un ejemplo típico de adaptador comunitario publicado sin documentación. La model card es la plantilla por defecto de HuggingFace y no se ha rellenado ningún campo: no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia declarada. Tampoco se han publicado idiomas soportados ni resultados de benchmarks, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+El interés de la ficha es limitado pero ilustrativo: se trata de un ejemplo típico de adaptador comunitario publicado sin documentación. La model card es la plantilla por defecto de Hugging Face y no se ha rellenado ningún campo: no hay descripción, ni datos de entrenamiento, ni hiperparámetros, ni evaluación, ni licencia declarada. Tampoco se han publicado idiomas soportados ni resultados de benchmarks, y el repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El nombre del modelo ("nyaya" designa en sánscrito la lógica o la justicia, y se asocia habitualmente al dominio jurídico indio) sugiere un ajuste orientado a un dominio concreto, pero esto no está confirmado en ninguna fuente: se trata de una inferencia a partir del identificador, no de un dato documentado. Cualquier evaluación de su comportamiento específico exige reproducir el adaptador y probarlo contra el modelo base.
 
@@ -72,11 +72,11 @@ La comparacion se establece con el modelo base sin ajustar y con alternativas de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| NyayaLlama Final Adapter (este repositorio) | adaptador LoRA sobre base de 3,21 mil millones | heredado del base: 128 000 tokens (no confirmado) | no disponible | repositorio HuggingFace, 0 descargas |
-| Llama 3.2 3B Instruct (modelo base) | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | pesos completos en HuggingFace |
-| Qwen2.5 3B Instruct | 3,09 mil millones | 32 768 tokens nativos | Apache 2.0 | pesos completos en HuggingFace |
-| Gemma 2 2B Instruct | 2,6 mil millones | 8 192 tokens | Gemma Terms of Use | pesos completos en HuggingFace |
-| Phi-3.5-mini Instruct | 3,8 mil millones | 128 000 tokens | MIT | pesos completos en HuggingFace |
+| NyayaLlama Final Adapter (este repositorio) | adaptador LoRA sobre base de 3,21 mil millones | heredado del base: 128 000 tokens (no confirmado) | no disponible | repositorio Hugging Face, 0 descargas |
+| Llama 3.2 3B Instruct (modelo base) | 3,21 mil millones | 128 000 tokens | Llama 3.2 Community License | pesos completos en Hugging Face |
+| Qwen2.5 3B Instruct | 3,09 mil millones | 32 768 tokens nativos | Apache 2.0 | pesos completos en Hugging Face |
+| Gemma 2 2B Instruct | 2,6 mil millones | 8 192 tokens | Gemma Terms of Use | pesos completos en Hugging Face |
+| Phi-3.5-mini Instruct | 3,8 mil millones | 128 000 tokens | MIT | pesos completos en Hugging Face |
 
 Diferencias clave: frente a las alternativas, este repositorio no ofrece pesos completos, no declara licencia y no publica evaluacion alguna, por lo que no es comparable en terminos de rendimiento verificable. La ventaja de las alternativas citadas es que se distribuyen como modelos autonomos con licencia explicita (Apache 2.0 en el caso de Qwen, MIT en el de Phi), lo que simplifica su adopcion en produccion.
 
@@ -94,7 +94,7 @@ Diferencias clave: frente a las alternativas, este repositorio no ofrece pesos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bhuvanteja03/nyayallama-final-adapter
+- Modelo en Hugging Face: https://huggingface.co/bhuvanteja03/nyayallama-final-adapter
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta (Llama 3.2): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

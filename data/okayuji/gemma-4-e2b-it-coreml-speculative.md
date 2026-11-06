@@ -93,7 +93,7 @@ La comparativa se limita a los modelos relacionados directamente, ya que no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/okayuji/Gemma-4-E2B-it-coreml-speculative
+- Repositorio Hugging Face: https://huggingface.co/okayuji/Gemma-4-E2B-it-coreml-speculative
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio del runtime Swift: https://github.com/oka-yuji/coreml-llm-samples
 - Documentación del despliegue en dispositivo: https://github.com/oka-yuji/coreml-llm-samples/blob/main/docs/e2b-speculative-device.md

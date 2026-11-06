@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OBLITERATUS/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED | 8.030.261.248 | No disponible | No disponible | HuggingFace |
-| Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | 8.030.261.248 | No disponible | No disponible | HuggingFace |
-| Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2 | 8.030.261.248 | No disponible | No disponible | HuggingFace |
+| OBLITERATUS/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED | 8.030.261.248 | No disponible | No disponible | Hugging Face |
+| Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | 8.030.261.248 | No disponible | No disponible | Hugging Face |
+| Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2 | 8.030.261.248 | No disponible | No disponible | Hugging Face |
 
 Los tres modelos comparten el mismo tamaño y arquitectura de Llama 3.1 8B. La diferencia principal es que OBLITERATUS ha aplicado una abliteración adicional sobre el fine-tuning de Orenguteng, mientras que Greytechai parece ser otra variante uncensored sin ese paso. No se dispone de datos de rendimiento para comparar la calidad de las respuestas entre ellos.
 
@@ -74,7 +74,7 @@ Los tres modelos comparten el mismo tamaño y arquitectura de Llama 3.1 8B. La d
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/OBLITERATUS/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED
+- Página del modelo en Hugging Face: https://huggingface.co/OBLITERATUS/Llama-3.1-8B-Lexi-Uncensored-V2-OBLITERATED
 - Repositorio de OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Modelo base Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2: https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2
 - Variante similar Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2: https://huggingface.co/Greytechai/Llama-3.1-8B-Lexi-Uncensored-V2

@@ -74,31 +74,31 @@ No se dispone de comparativas numericas ni de especificaciones de modelos altern
 
 | Modelo | Relacion | Parametros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SceneAligner (LoRA r16 sobre DINOv3 ViT-B/16) | Objeto de esta ficha | No disponible (adaptador LoRA de rango 16) | Localizacion de imagenes en plano mediante alineacion 3D-2D | DINOv3 License | HuggingFace (solo adaptador) + GitHub del proyecto |
-| `facebook/dinov3-vitb16-pretrain-lvd1689m` | Modelo base | No disponible en la ficha | Extraccion de caracteristicas de imagen de proposito general | DINOv3 License | HuggingFace y repositorio de Meta |
-| `timm/vit_base_patch16_dinov3.lvd1689m` | Copia de los mismos pesos para `timm` | No disponible en la ficha | Extraccion de caracteristicas de imagen de proposito general | DINOv3 License | HuggingFace |
+| SceneAligner (LoRA r16 sobre DINOv3 ViT-B/16) | Objeto de esta ficha | No disponible (adaptador LoRA de rango 16) | Localizacion de imagenes en plano mediante alineacion 3D-2D | DINOv3 License | Hugging Face (solo adaptador) + GitHub del proyecto |
+| `facebook/dinov3-vitb16-pretrain-lvd1689m` | Modelo base | No disponible en la ficha | Extraccion de caracteristicas de imagen de proposito general | DINOv3 License | Hugging Face y repositorio de Meta |
+| `timm/vit_base_patch16_dinov3.lvd1689m` | Copia de los mismos pesos para `timm` | No disponible en la ficha | Extraccion de caracteristicas de imagen de proposito general | DINOv3 License | Hugging Face |
 | Otros metodos de localizacion sobre plano | Alternativas de la misma tarea | no disponible | Localizacion visual / alineacion de planos | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - El repositorio contiene unicamente las capas LoRA; sin descargar aparte los pesos DINOv3 (copia de timm o pesos de Meta) el adaptador no es utilizable.
-- La licencia es la DINOv3 License, marcada como `other` en HuggingFace y no como licencia de codigo abierto estandar. Los adaptadores son una obra derivada de los pesos DINOv3, por lo que hay que revisar LICENSE.md antes de cualquier uso comercial.
+- La licencia es la DINOv3 License, marcada como `other` en Hugging Face y no como licencia de codigo abierto estandar. Los adaptadores son una obra derivada de los pesos DINOv3, por lo que hay que revisar LICENSE.md antes de cualquier uso comercial.
 - Al ser una obra derivada del backbone, hereda los sesgos de DINOv3; la model card no documenta sesgos especificos.
 - Riesgo de correspondencias o alineaciones incorrectas entre el mapa de densidad y el plano, especialmente con gran diferencia de apariencia, escenas simetricas o entornos repetitivos. No es "alucinacion" en sentido generativo, pero el efecto practico es una localizacion erronea.
 - El metodo depende de un pipeline previo de reconstruccion 3D alineada con la gravedad y de un plano rasterizado; errores en esas etapas degradan directamente el resultado final.
 - No hay limitaciones de idioma aplicables por tratarse de un modelo de vision, pero tampoco existe evaluacion multilingue ni de dominios no cubiertos.
 - Ausencia total de metricas publicadas en la informacion disponible: no hay cifras de error de localizacion ni comparativas con alternativas.
-- Repositorio sin traccion en HuggingFace (0 descargas, 0 likes) en la fecha de consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
+- Repositorio sin traccion en Hugging Face (0 descargas, 0 likes) en la fecha de consulta, lo que implica ausencia de validacion independiente por parte de la comunidad.
 - No es un modelo de lenguaje: no admite generacion de texto, tool calling, agentes ni razonamiento multi-paso, por lo que no debe integrarse en pipelines que esperen esas capacidades.
 - Para produccion conviene validar el comportamiento en el dominio concreto (interiores frente a exteriores, densidad de imagenes, calidad del plano) antes de desplegarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhcho99/SceneAligner
+- Modelo en Hugging Face: https://huggingface.co/jhcho99/SceneAligner
 - Repositorio de codigo: https://github.com/Cornell-VAILab/SceneAligner
 - Pagina del proyecto: https://cornell-vailab.github.io/SceneAligner/
 - Paper en arXiv: https://arxiv.org/abs/2605.22581
-- Ficha del paper en HuggingFace: https://huggingface.co/papers/2605.22581
+- Ficha del paper en Hugging Face: https://huggingface.co/papers/2605.22581
 - Copia de los pesos DINOv3 ViT-B/16 en timm: https://huggingface.co/timm/vit_base_patch16_dinov3.lvd1689m
 - Repositorio oficial de DINOv3 (Meta): https://github.com/facebookresearch/dinov3
 - Modelo base: https://huggingface.co/facebook/dinov3-vitb16-pretrain-lvd1689m

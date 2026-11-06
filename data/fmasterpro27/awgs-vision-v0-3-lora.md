@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fmasterpro27/awgs-vision-v0.3-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `fmasterpro27`. Está diseñado para ajustar el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del modelo Gemma 4 instruct de Google (presumiblemente de 2 mil millones de parámetros, aunque no se confirma explícitamente). El nombre "awgs-vision" sugiere una orientación hacia tareas de visión, y los tags del repositorio incluyen referencias a clasificación de imágenes, moderación de contenido y seguridad de imágenes, aunque no se proporciona documentación oficial que lo confirme.
+El modelo `fmasterpro27/awgs-vision-v0.3-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `fmasterpro27`. Está diseñado para ajustar el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`, una versión cuantizada a 4 bits del modelo Gemma 4 instruct de Google (presumiblemente de 2 mil millones de parámetros, aunque no se confirma explícitamente). El nombre "awgs-vision" sugiere una orientación hacia tareas de visión, y los tags del repositorio incluyen referencias a clasificación de imágenes, moderación de contenido y seguridad de imágenes, aunque no se proporciona documentación oficial que lo confirme.
 
 El adaptador se ha entrenado mediante fine-tuning supervisado (SFT) y se distribuye en formato PEFT (safetensors), con un tamaño de repositorio de 0.2 GB. No se dispone de información sobre la licencia, los idiomas soportados, los datos de entrenamiento ni los resultados de evaluación. La relevancia de este modelo radica en su potencial para adaptar un modelo base ligero y cuantizado a tareas específicas de visión y moderación de contenido, aunque la falta de documentación limita su uso en producción sin una evaluación adicional.
 
@@ -63,6 +63,6 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fmasterpro27/awgs-vision-v0.3-lora
+- Repositorio Hugging Face: https://huggingface.co/fmasterpro27/awgs-vision-v0.3-lora
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (no verificado)
 - Referencia al paper de impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

@@ -102,7 +102,7 @@ No se dispone de comparacion con modelos de terceros para esta tarea. Las altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr3e-4-clr3e-4-3k
+- Repositorio Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr3e-4-clr3e-4-3k
 - Run hermano (lr actor 1e-4): https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-alr1e-4-clr3e-4-3k
 - Run anterior de 1.500 pasos: https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-mpr137-rm1fix12-from-r1b-b10-g09997-td06-1500
 - Politica base requerida (paso 9999): https://huggingface.co/Nadeem-Shoukath115113/pi05-so101-rlt12-lehome-s3-daggerrlt1-15fps-b32-10k

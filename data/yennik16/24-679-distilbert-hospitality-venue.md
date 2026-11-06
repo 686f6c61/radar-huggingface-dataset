@@ -78,7 +78,7 @@ No se dispone de comparativas publicadas frente a otros clasificadores de reseñ
 
 | Configuración | Parámetros entrenables | Contexto | Licencia | Accuracy validación | Disponibilidad |
 |---|---|---|---|---|---|
-| DistilBERT, ajuste completo (modelo publicado) | 66.364.418 (100 %) | 256 tokens | `other` / `see-source-dataset` | 0,9333 | Repositorio de 0,3 GB en HuggingFace |
+| DistilBERT, ajuste completo (modelo publicado) | 66.364.418 (100 %) | 256 tokens | `other` / `see-source-dataset` | 0,9333 | Repositorio de 0,3 GB en Hugging Face |
 | DistilBERT, `norm_fit` | 62.978 (0,0949 %) | 256 tokens | Igual (mismo backbone) | 0,7333 con aumentados / 0,6000 con originales | Solo documentado, no publicado |
 | DistilBERT, `bit_fit` | 52.994 (0,0799 %) | 256 tokens | Igual (mismo backbone) | 0,6667 con aumentados / 0,6000 con originales | Solo documentado, no publicado |
 | Otros clasificadores de texto de tamaño similar (BERT-base, RoBERTa-base, etc.) | No disponible | No disponible | No disponible | No disponible | No evaluados en la información proporcionada |
@@ -97,7 +97,7 @@ No se dispone de comparativas publicadas frente a otros clasificadores de reseñ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yennik16/24-679-distilbert-hospitality-venue
+- Modelo en Hugging Face: https://huggingface.co/yennik16/24-679-distilbert-hospitality-venue
 - Dataset de origen: https://huggingface.co/datasets/kwongnon/2026-24679-text-dataset
 - Backbone: `distilbert-base-uncased` (referenciado en la model card; no se incluye enlace en la información proporcionada)
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las páginas devueltas por la búsqueda corresponden a portales de resultados deportivos en directo (livesport.cz, livesport.com) y no guardan relación con este modelo.

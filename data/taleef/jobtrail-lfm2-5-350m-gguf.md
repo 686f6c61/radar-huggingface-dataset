@@ -84,8 +84,8 @@ Por segmento con Q4_K_M: notas de plantillas vistas en entrenamiento (114) 79,8 
 
 | Modelo | Parametros | Contexto | Zero-edit en JobTrail | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| JobTrail LFM2.5-350M Q4_K_M | 354M | 4096 (config. de referencia) | 70,6 % | lfm1.0 | GGUF en HuggingFace |
-| LFM2.5-350M con prompting | 354M | no disponible | 1,2 % | lfm1.0 | safetensors/GGUF en HuggingFace |
+| JobTrail LFM2.5-350M Q4_K_M | 354M | 4096 (config. de referencia) | 70,6 % | lfm1.0 | GGUF en Hugging Face |
+| LFM2.5-350M con prompting | 354M | no disponible | 1,2 % | lfm1.0 | safetensors/GGUF en Hugging Face |
 | Qwen3-1.7B con prompting few-shot | 1,7B | no disponible | 19,0 % | no disponible | no disponible |
 | Gemini 3.8 Flash High | no disponible | no disponible | 92,6 % | propietaria | API en nube |
 
@@ -104,7 +104,7 @@ La comparación se limita a la tarea de extracción de JobTrail; no se dispone d
 - Q4_0 pierde 5 puntos de zero-edit respecto a Q4_K_M con un ahorro de tamaño mínimo (219 MB frente a 229 MB), por lo que no se recomienda.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/taleef/jobtrail-lfm2.5-350m-GGUF
+- Modelo en Hugging Face: https://huggingface.co/taleef/jobtrail-lfm2.5-350m-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Dataset de notas de campo: https://huggingface.co/datasets/taleef/jobtrail-field-notes
 - Repositorio de la aplicación JobTrail: https://github.com/Taleef7/JobTrail

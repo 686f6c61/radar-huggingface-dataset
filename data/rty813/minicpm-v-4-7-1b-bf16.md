@@ -89,7 +89,7 @@ La model card afirma una mejora sustancial de la variante 1B sobre Qwen3.5 0.8B 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este port: https://huggingface.co/rty813/MiniCPM-V-4.7-1B-bf16
+- Repositorio Hugging Face de este port: https://huggingface.co/rty813/MiniCPM-V-4.7-1B-bf16
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Repositorio GitHub de MiniCPM-V: https://github.com/openbmb/MiniCPM-V
 - Repositorio de LLaVA-UHD v4 (técnica de compresión intra-ViT): https://github.com/THUMAI-Lab/LLaVA-UHD-v4

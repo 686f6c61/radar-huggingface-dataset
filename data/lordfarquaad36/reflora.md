@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reflora es un adaptador LoRA de texto a imagen publicado por el usuario lordfarquaad36 en HuggingFace. Se distribuye en formato diffusers y está diseñado para funcionar sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de la familia Krea. El adaptador emplea la palabra de activación `Groovy` (instance_prompt) para inducir el estilo o concepto entrenado, y su función principal es especializar el modelo base sin necesidad de reentrenarlo por completo.
+Reflora es un adaptador LoRA de texto a imagen publicado por el usuario lordfarquaad36 en Hugging Face. Se distribuye en formato diffusers y está diseñado para funcionar sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de la familia Krea. El adaptador emplea la palabra de activación `Groovy` (instance_prompt) para inducir el estilo o concepto entrenado, y su función principal es especializar el modelo base sin necesidad de reentrenarlo por completo.
 
 El repositorio tiene un tamaño de 10,2 GB y acumula 1401 descargas desde su publicación el 28 de octubre de 2026, con una actualización el 4 de noviembre de 2026. La relevancia de este tipo de artefactos radica en que permiten a desarrolladores e investigadores aplicar un ajuste fino ligero sobre un modelo de difusión ya existente, reduciendo el coste computacional frente a un fine-tuning completo.
 
@@ -72,6 +72,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lordfarquaad36/Reflora
+- Hugging Face: https://huggingface.co/lordfarquaad36/Reflora
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Documentación de diffusers: https://huggingface.co/docs/diffusers

@@ -109,9 +109,9 @@ No se han encontrado en la información disponible modelos comparables de tercer
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-4-12B-it` (base, con esquema en el prompt) | 12B según identificador | No disponible | 0,798 en `madde_qa`; 0,919 en número de sala; 0,009 en tasa de citas resueltas | No disponible en la información proporcionada | HuggingFace (referenciado como base) |
-| `tunahanf/gemma-4-12b-it-medlaw-tr-LORA` (V1) | Adaptador LoRA sobre el mismo base | No disponible | 10 de 12 campos sin diferencia medible frente a V2; `madde_qa` robusto a su favor | Apache 2.0 | HuggingFace |
-| `tunahanf/gemma-4-12b-it-medlaw-tr-LORA-2` (este) | Adaptador LoRA sobre el mismo base | No disponible | Ver tabla de benchmarks | Apache 2.0 | HuggingFace |
+| `google/gemma-4-12B-it` (base, con esquema en el prompt) | 12B según identificador | No disponible | 0,798 en `madde_qa`; 0,919 en número de sala; 0,009 en tasa de citas resueltas | No disponible en la información proporcionada | Hugging Face (referenciado como base) |
+| `tunahanf/gemma-4-12b-it-medlaw-tr-LORA` (V1) | Adaptador LoRA sobre el mismo base | No disponible | 10 de 12 campos sin diferencia medible frente a V2; `madde_qa` robusto a su favor | Apache 2.0 | Hugging Face |
+| `tunahanf/gemma-4-12b-it-medlaw-tr-LORA-2` (este) | Adaptador LoRA sobre el mismo base | No disponible | Ver tabla de benchmarks | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -131,9 +131,9 @@ No se han encontrado en la información disponible modelos comparables de tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-LORA-2
+- Modelo en Hugging Face: https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-LORA-2
 - Versión anterior del adaptador (V1): https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-LORA
 - Dataset de entrenamiento: https://huggingface.co/datasets/tunahanf/turkish-medicine-law
 - Modelo base declarado: https://huggingface.co/google/gemma-4-12B-it
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la información de HuggingFace. No se dispone de paper, blog técnico, repositorio de código ni demo asociados.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la información de Hugging Face. No se dispone de paper, blog técnico, repositorio de código ni demo asociados.

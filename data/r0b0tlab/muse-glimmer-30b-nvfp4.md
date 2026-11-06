@@ -89,7 +89,7 @@ No se dispone de comparaciones directas con otros modelos cuantizados de tamano 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/r0b0tlab/Muse-Glimmer-30B-NVFP4)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/r0b0tlab/Muse-Glimmer-30B-NVFP4)
 - [Modelo base: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)
 - [Guia de despliegue y verificacion (GitHub)](https://github.com/r0b0tlab/muse-glimmer-30b-nvfp4-vllm)
 - [PR de soporte de Muse en vLLM](https://github.com/vllm-project/vllm/pull/51655)

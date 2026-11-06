@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Cuantizacion | VRAM a 1M tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PseudoBrain-Gemma-4-31B-NVFP4 | 32,7B | 1.048.576 | NVFP4 (W4A16) | ~21,5 GB | Gemma | HuggingFace, requiere plugin vLLM |
-| PseudoBrain-Gemma-4-31B-FP8 | 32,7B | 1.048.576 | FP8 | ~36,5 GB | Gemma | HuggingFace, requiere plugin vLLM |
-| PseudoBrain-Gemma-4-31B-BF16 | 32,7B | 1.048.576 | BF16 | ~66,5 GB | Gemma | HuggingFace, requiere plugin vLLM |
-| RedHatAI/gemma-4-31B-it-FP8-dynamic | 32,7B | no disponible | FP8 | no disponible | Gemma | HuggingFace, vLLM estándar |
-| cyankiwi/gemma-4-31B-it-AWQ-4bit | 32,7B | no disponible | AWQ 4-bit | no disponible | Gemma | HuggingFace, vLLM estándar |
+| PseudoBrain-Gemma-4-31B-NVFP4 | 32,7B | 1.048.576 | NVFP4 (W4A16) | ~21,5 GB | Gemma | Hugging Face, requiere plugin vLLM |
+| PseudoBrain-Gemma-4-31B-FP8 | 32,7B | 1.048.576 | FP8 | ~36,5 GB | Gemma | Hugging Face, requiere plugin vLLM |
+| PseudoBrain-Gemma-4-31B-BF16 | 32,7B | 1.048.576 | BF16 | ~66,5 GB | Gemma | Hugging Face, requiere plugin vLLM |
+| RedHatAI/gemma-4-31B-it-FP8-dynamic | 32,7B | no disponible | FP8 | no disponible | Gemma | Hugging Face, vLLM estándar |
+| cyankiwi/gemma-4-31B-it-AWQ-4bit | 32,7B | no disponible | AWQ 4-bit | no disponible | Gemma | Hugging Face, vLLM estándar |
 
 Las alternativas de la misma categoría con datos públicos en la información disponible son las otras ediciones del propio proyecto PseudoBrain y los checkpoints cuantizados estándar de Gemma 4 31B. No se dispone de datos de rendimiento comparativo entre ellas.
 
@@ -89,13 +89,13 @@ Las alternativas de la misma categoría con datos públicos en la información d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-NVFP4
+- Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-NVFP4
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edición FP8: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-FP8
 - Edición BF16: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-BF16
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

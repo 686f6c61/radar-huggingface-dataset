@@ -79,7 +79,7 @@ Los organismos compañeros (dosis 1k, 10k y gemelos de hechos verdaderos) existe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PS4CoT/gemma4-31b-sdf-false-3k
+- Hugging Face: https://huggingface.co/PS4CoT/gemma4-31b-sdf-false-3k
 - Modelo base: https://huggingface.co/google/gemma-4-31b-it
 - Repositorio de código (CoT-Verse): https://github.com/ps-research/CoT-Verse
 - Página oficial de Gemma 4: https://deepmind.google/models/gemma/gemma-4/

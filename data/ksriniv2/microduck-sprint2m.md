@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - **VRAM estimada**: no disponible. Por el tamaño del repositorio (0,0 GB) y la naturaleza del artefacto (una política ONNX de dimensión 61→14), el modelo es de pocos megabytes y la inferencia cabe holgadamente en cualquier GPU consumer, e incluso en CPU.
 - **GPU recomendadas**: no disponible en la documentación. Para el entrenamiento, el comando publicado asume 4096 entornos paralelos, lo que exige una GPU de datacenter (A100/H100) o, como mínimo, una GPU con suficiente memoria para simulación masiva; el autor no especifica el hardware empleado.
 - **Consumer GPU**: la inferencia sí es viable en cualquier GPU consumer e incluso en CPU; el entrenamiento a 4096 entornos no está pensado para hardware de consumo.
-- **Opciones de despliegue**: el runtime previsto es el daemon de microduck (`robotctl`), que carga el ONNX desde HuggingFace en una ranura. Al ser ONNX estándar, es portable a ONNX Runtime en otras plataformas, aunque no está documentado.
+- **Opciones de despliegue**: el runtime previsto es el daemon de microduck (`robotctl`), que carga el ONNX desde Hugging Face en una ranura. Al ser ONNX estándar, es portable a ONNX Runtime en otras plataformas, aunque no está documentado.
 - **Latencia y throughput**: el bucle de control impone un presupuesto de 20 ms por paso (50 Hz). No se publican latencias medidas ni throughput.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks ni de parámetros de modelos comparables en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ksriniv2/microduck-sprint2m
+- Modelo en Hugging Face: https://huggingface.co/ksriniv2/microduck-sprint2m
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento: https://github.com/pollen-robotics/microduck-challenges/commit/6ff40704a

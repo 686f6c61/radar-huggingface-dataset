@@ -78,15 +78,15 @@ En el texto introductorio de la model card el autor cifra en 0,992 la exactitud 
 
 | Modelo | Parametros | Contexto | NotInject (accuracy) | XSTest (accuracy) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Horizon-Labs prompt-injection-guard-base | 308M | 8.000 tokens | 0,909 | 1,000 | Apache-2.0 | HuggingFace, ONNX, transformers.js |
-| Horizon-Labs prompt-injection-guard-small | 141M | no disponible | 0,861 | 1,000 | no disponible | HuggingFace |
-| Meta Prompt Guard 2 86M | 86M | no disponible | 0,953 | 1,000 | no disponible | HuggingFace |
-| Meta Prompt Guard 2 22M | 22M | no disponible | 0,994 | 1,000 | no disponible | HuggingFace |
-| ProtectAI v2 | no disponible | no disponible | 0,563 | 1,000 | no disponible | HuggingFace |
-| deepset (detector de inyeccion) | no disponible | no disponible | 0,286 | 1,000 | no disponible | HuggingFace |
-| PIGuard | no disponible | no disponible | 0,885 | 1,000 | no disponible | HuggingFace |
-| Wolf Defender | no disponible | no disponible | 0,920 | 0,964 | no disponible | HuggingFace |
-| NeuralTrust small | no disponible | no disponible | 0,944 | 0,720 | no disponible | HuggingFace |
+| Horizon-Labs prompt-injection-guard-base | 308M | 8.000 tokens | 0,909 | 1,000 | Apache-2.0 | Hugging Face, ONNX, transformers.js |
+| Horizon-Labs prompt-injection-guard-small | 141M | no disponible | 0,861 | 1,000 | no disponible | Hugging Face |
+| Meta Prompt Guard 2 86M | 86M | no disponible | 0,953 | 1,000 | no disponible | Hugging Face |
+| Meta Prompt Guard 2 22M | 22M | no disponible | 0,994 | 1,000 | no disponible | Hugging Face |
+| ProtectAI v2 | no disponible | no disponible | 0,563 | 1,000 | no disponible | Hugging Face |
+| deepset (detector de inyeccion) | no disponible | no disponible | 0,286 | 1,000 | no disponible | Hugging Face |
+| PIGuard | no disponible | no disponible | 0,885 | 1,000 | no disponible | Hugging Face |
+| Wolf Defender | no disponible | no disponible | 0,920 | 0,964 | no disponible | Hugging Face |
+| NeuralTrust small | no disponible | no disponible | 0,944 | 0,720 | no disponible | Hugging Face |
 
 Salvo el modelo base y la variante small, los parametros, el contexto y las licencias de los competidores no se especifican en la informacion proporcionada, por lo que se marcan como no disponibles. En NotInject, Prompt Guard 2 22M obtiene el mejor resultado (0,994) y Prompt Guard 2 86M (0,953) supera a este modelo (0,909); en XSTest el modelo, la variante small, ProtectAI v2, deepset, PIGuard y Prompt Guard 2 empatan en 1,000. Destaca el mejor equilibrio de este modelo frente a ProtectAI v2 y deepset en falsas alarmas, y frente a NeuralTrust small en XSTest. La comparativa de rendimiento en deteccion de ataques (no solo sobre-defensa) no esta disponible porque la tabla original aparece truncada.
 
@@ -106,8 +106,8 @@ Salvo el modelo base y la variante small, los parametros, el contexto y las lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Horizon-Labs/prompt-injection-guard
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/prompt-injection-guard-base
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Horizon-Labs/prompt-injection-guard
 - Variante small (141M): https://huggingface.co/Horizon-Labs/prompt-injection-guard-small
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Conjuntos de datos de entrenamiento:

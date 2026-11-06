@@ -79,7 +79,7 @@ No se dispone de información sobre otros modelos comparables (por ejemplo, Deep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vcruz305/Kimi-K3-Neuron-REAP720-IQ1S-GGUF
+- Modelo en Hugging Face: https://huggingface.co/vcruz305/Kimi-K3-Neuron-REAP720-IQ1S-GGUF
 - Modelo base (GGUF): https://huggingface.co/vcruz305/Kimi-K3-GGUF
 - Paper REAP (Cerebras): https://arxiv.org/abs/2510.13999
 - Repo GitHub con recipe para vLLM TP3: https://github.com/vcruz305/kimi-k3-neuron-tp3-vllm-recipe

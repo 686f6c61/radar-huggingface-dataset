@@ -31,7 +31,7 @@ Llega con una ventana de contexto nativa de 262.144 tokens en la configuracion d
 
 ## Arquitectura y entrenamiento
 
-La model card declara la clase de arquitectura de HuggingFace `Qwen3_5ForConditionalGeneration` y un modelo base Qwen/Qwen3.8-27B con relacion de tipo finetune. No se detallan en la informacion proporcionada la profundidad de capas, la dimension oculta, el tipo de atencion ni el esquema de posiciones; tampoco se indica si hay componentes de mezcla de expertos. Tampoco se especifica si se emplearon tecnicas de alineacion como RLHF, DPO u otras variantes; ese detalle queda remitido al informe tecnico, que en esta informacion figura con un enlace marcador de posicion no valido.
+La model card declara la clase de arquitectura de Hugging Face `Qwen3_5ForConditionalGeneration` y un modelo base Qwen/Qwen3.8-27B con relacion de tipo finetune. No se detallan en la informacion proporcionada la profundidad de capas, la dimension oculta, el tipo de atencion ni el esquema de posiciones; tampoco se indica si hay componentes de mezcla de expertos. Tampoco se especifica si se emplearon tecnicas de alineacion como RLHF, DPO u otras variantes; ese detalle queda remitido al informe tecnico, que en esta informacion figura con un enlace marcador de posicion no valido.
 
 Lo que si se documenta es la composicion del post-entrenamiento: una mezcla de 1.841.831 registros que abarca ingenieria de software a nivel de repositorio, uso de terminal y herramientas, razonamiento matematico, razonamiento cientifico, reparacion sensible a verificadores y entrenamiento orientado a recurrencia. La innovacion tecnica declarada es VeriLoop-Governed Recurrence (VGR), un bucle en el que el modelo propone estados candidatos de forma recursiva y solo los conserva cuando el estado de evidencia protegido mejora sin regresion. La autoridad de verificacion reside en un componente externo (el VeriLoop Harness: admision de evidencia, comprobaciones deterministas, verificacion externa, commit/rollback, criterios de parada y persistencia), de modo que el modelo genera y el sistema externo certifica. Este reparto es relevante para produccion porque implica que reproducir los resultados agenticos exige replicar tambien el flujo de evaluacion, no solo cargar los pesos.
 
@@ -110,7 +110,7 @@ No se dispone en la informacion proporcionada de datos verificados de modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
+- Modelo en Hugging Face: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Dataset de evidencia de evaluacion: https://huggingface.co/datasets/tsinghua-sigs-robot-lab/VeriLoop-E2-Evaluation-Evidence
 - Publicacion previa de la familia (repositorio referenciado para el logotipo): https://huggingface.co/tsinghua-sigs-robot-lab/veriloop-coder-e1
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

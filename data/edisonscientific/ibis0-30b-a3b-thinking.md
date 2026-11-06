@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros totales | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ibis0-30B-A3B-Thinking | 30,53 B | 32.768 | Razonamiento biomédico calibrado (RL con recompensa Brier) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-30B-A3B | no disponible en la información | no disponible en la información | Modelo generalista MoE | Apache-2.0 | HuggingFace |
+| Ibis0-30B-A3B-Thinking | 30,53 B | 32.768 | Razonamiento biomédico calibrado (RL con recompensa Brier) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-30B-A3B | no disponible en la información | no disponible en la información | Modelo generalista MoE | Apache-2.0 | Hugging Face |
 | Alternativas especializadas en razonamiento científico | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 El único comparable directo identificable en la información disponible es el modelo base Qwen3-30B-A3B, del que Ibis0 hereda arquitectura, tamaño y licencia. No se dispone de datos de rendimiento comparado entre ambos ni de otras alternativas especializadas en calibración de evidencia biomédica.
@@ -87,7 +87,7 @@ El único comparable directo identificable en la información disponible es el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-Thinking
+- Modelo en Hugging Face: https://huggingface.co/EdisonScientific/Ibis0-30B-A3B-Thinking
 - Dataset EDB-Bio: https://huggingface.co/datasets/EdisonScientific/EDB-Bio
 - Repositorio de código: https://github.com/EdisonScientific/ibis0
 - Script de evaluación: https://github.com/EdisonScientific/ibis0/blob/main/scripts/analysis/multidomain/eval_generative_testset.py

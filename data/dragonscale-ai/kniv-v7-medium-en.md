@@ -103,7 +103,7 @@ No se dispone de comparación con modelos de otras familias en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-medium-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-medium-en
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-68m
 - Profesor kniv-v7-xlarge-u-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
 - Profesor kniv-v7-xlarge-d-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en

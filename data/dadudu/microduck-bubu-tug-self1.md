@@ -76,11 +76,11 @@ No disponible. La informacion proporcionada no incluye otras politicas de microd
 - El checkpoint es 250 sobre un maximo de 1000 iteraciones; no se justifica en la model card por que se selecciono ese punto.
 - Sin descargas ni likes en el momento de la consulta: no hay evidencia de validacion por parte de terceros.
 - No se documentan sesgos (no aplica a un modelo de lenguaje), pero si existe el riesgo habitual de sobreajuste al simulador y a la semilla 1.
-- No se especifican los idiomas ni la region de despliegue prevista; la etiqueta `region:us` aparece en los tags de HuggingFace.
+- No se especifican los idiomas ni la region de despliegue prevista; la etiqueta `region:us` aparece en los tags de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dadudu/microduck-bubu-tug-self1
+- Modelo en Hugging Face: https://huggingface.co/dadudu/microduck-bubu-tug-self1
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Commit de entrenamiento: `c3f5a8066` en `microduck-challenges`

@@ -34,7 +34,7 @@ La innovación técnica de esta ficha es la ablación por rango arbitrario (Arbi
 - Comportamiento de rechazo fuertemente reducido: 3/100 negativas en JailbreakBench Harmful y 32/200 en XSTest Unsafe, frente a 89/100 y 155/200 del base.
 - Distribución de salida cercana al base (KL 0,0859), lo que sugiere que las capacidades generales se preservan en buena medida, aunque no se aportan benchmarks de tarea para verificarlo.
 - Despliegue nativo en llama.cpp y ecosistema GGUF (Ollama, LM Studio, servidores compatibles con la API de endpoints).
-- Compatibilidad declarada con `endpoints_compatible` en HuggingFace.
+- Compatibilidad declarada con `endpoints_compatible` en Hugging Face.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Modo thinking, visión o audio: no disponible en la información proporcionada.
 - Capacidades de agente multi-paso: no disponible en la información proporcionada.
@@ -100,7 +100,7 @@ La comparación relevante es frente al base: misma arquitectura, mismos parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/grumd0/Nemotron-3.5-Bolt-E4B-Heretic-GGUF
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo upstream (Google): https://huggingface.co/google/gemma-4-E4B-it
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
@@ -108,4 +108,4 @@ La comparación relevante es frente al base: misma arquitectura, mismos parámet
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

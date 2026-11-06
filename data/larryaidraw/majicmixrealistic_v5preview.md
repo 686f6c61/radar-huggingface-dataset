@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LarryAIDraw/majicmixRealistic_v5Preview es un repositorio alojado en HuggingFace por el usuario LarryAIDraw cuya model card no contiene más contenido que la declaración de licencia `creativeml-openrail-m`. El repositorio ocupa 2,4 GB, no declara pipeline ni idiomas, y en el momento de la consulta registra 0 descargas y 0 "me gusta". Las fechas de creación y actualización son idénticas (13 de septiembre de 2026), lo que apunta a una publicación reciente y sin difusión posterior.
+LarryAIDraw/majicmixRealistic_v5Preview es un repositorio alojado en Hugging Face por el usuario LarryAIDraw cuya model card no contiene más contenido que la declaración de licencia `creativeml-openrail-m`. El repositorio ocupa 2,4 GB, no declara pipeline ni idiomas, y en el momento de la consulta registra 0 descargas y 0 "me gusta". Las fechas de creación y actualización son idénticas (13 de septiembre de 2026), lo que apunta a una publicación reciente y sin difusión posterior.
 
 Por la nomenclatura del identificador —prefijo majicMIX realistic y sufijo de versión preliminar— y por la licencia empleada, el artefacto encaja con el patrón habitual de los checkpoints de difusión texto-a-imagen derivados de la familia Stable Diffusion, orientados a retrato y fotografía realista. Conviene subrayar que esto es una inferencia basada en el nombre y en el tamaño del repositorio: ni la model card ni los resultados de la búsqueda web confirman arquitectura, pipeline, datos de entrenamiento ni parámetros. La búsqueda realizada no ha devuelto ninguna fuente técnica relacionada (los resultados obtenidos corresponden a hilos de foro en alemán sobre receptores IPTV, sin relación alguna con el modelo).
 
@@ -75,7 +75,7 @@ Los valores de las alternativas proceden de información pública general y no h
 
 | Modelo | Parámetros | Resolución nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| majicmixRealistic_v5Preview | no disponible | no disponible | CreativeML OpenRAIL-M | Repositorio HuggingFace con 0 descargas |
+| majicmixRealistic_v5Preview | no disponible | no disponible | CreativeML OpenRAIL-M | Repositorio Hugging Face con 0 descargas |
 | Stable Diffusion 1.5 | ~860 M en el UNet (dato público aproximado) | 512x512 | CreativeML OpenRAIL-M | Ampliamente distribuido |
 | Stable Diffusion XL | ~2,6 B en el UNet y ~817 M en los codificadores de texto (dato público aproximado) | 1024x1024 | CreativeML OpenRAIL++-M | Ampliamente distribuido |
 | Realistic Vision (familia) | Ajuste fino de SD 1.5, ~860 M (dato público aproximado) | 512x512 | CreativeML OpenRAIL-M | Ampliamente distribuido |
@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento comparado (FID, CLIP score, preferencia hu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LarryAIDraw/majicmixRealistic_v5Preview
+- Repositorio en Hugging Face: https://huggingface.co/LarryAIDraw/majicmixRealistic_v5Preview
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Paper, repositorio de código, blog o demo: no disponible. La búsqueda web realizada no devolvió ninguna fuente relacionada con este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny para reconocimiento automatico del habla (ASR) con acento espanol. Lo desarrolla el usuario de HuggingFace JoeDwan y se publica bajo licencia Apache 2.0. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y esta pensado para transcribir audio en espanol, presumiblemente con acento peninsular, aunque la model card no detalla la composicion exacta del corpus de entrenamiento.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny para reconocimiento automatico del habla (ASR) con acento espanol. Lo desarrolla el usuario de Hugging Face JoeDwan y se publica bajo licencia Apache 2.0. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, con 37.760.640 parametros totales, y esta pensado para transcribir audio en espanol, presumiblemente con acento peninsular, aunque la model card no detalla la composicion exacta del corpus de entrenamiento.
 
 El problema que aborda es la adaptacion de un modelo ASR multilingue de proposito general a una variante dialectal concreta. Whisper tiny, en su version original, tiene un rendimiento limitado en espanol y puede presentar sesgos hacia otras lenguas o acentos. Este ajuste busca mejorar la tasa de error de palabra (WER) en audio espanol, y segun los datos declarados por el autor alcanza un WER de 11,37 sobre el split de test del dataset Spanish_english.
 
@@ -31,7 +31,7 @@ Los hiperparametros declarados son: learning rate 1e-05, batch de entrenamiento 
 
 - Reconocimiento automatico del habla (ASR) en espanol, presumiblemente orientado a acento espanol.
 - Transcripcion de audio a texto mediante la pipeline `automatic-speech-recognition` de Transformers.
-- Compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Modelo base Whisper tiny: capacidad teorica de transcripcion multilingue y traduccion de voz, aunque el ajuste puede haber degradado el rendimiento en otras lenguas.
 - No se declara soporte de tool calling, function calling, agentes ni razonamiento multi-paso (no aplica a un modelo ASR).
 - No se declara soporte de vision ni audio mas alla de la entrada de audio estandar de Whisper.
@@ -66,17 +66,17 @@ Perdida de validacion final: 0,2463. No se han publicado resultados de benchmark
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 (37,7 M de parametros, ~150 MB de pesos); en FP16, ~75 MB. Cabe holgadamente en cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU moderna, incluida NVIDIA GTX 1650, RTX 3050, RTX 4090, A100 o H100; tambien es viable en CPU para audio de corta duracion.
 - Cabe en GPU consumer: si, en practicamente todas, incluidas integradas con suficiente memoria compartida.
-- Opciones de despliegue: Transformers (pipeline `automatic-speech-recognition`), endpoints de HuggingFace; no se declaran pesos GGUF ni ONNX en el repo, por lo que llama.cpp/Ollama no estan soportados de forma nativa sin conversion.
+- Opciones de despliegue: Transformers (pipeline `automatic-speech-recognition`), endpoints de Hugging Face; no se declaran pesos GGUF ni ONNX en el repo, por lo que llama.cpp/Ollama no estan soportados de forma nativa sin conversion.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo tiny, se espera una latencia baja (del orden de decenas de milisegundos por ventana de 30 s en GPU moderna), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto audio | WER espanol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny Spanish (JoeDwan) | 37,7 M | ventanas de 30 s | 11,37 (dataset propio, no verificado) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,7 M | ventanas de 30 s | no disponible en la informacion | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en la informacion | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en la informacion | apache-2.0 | HuggingFace |
+| Whisper tiny Spanish (JoeDwan) | 37,7 M | ventanas de 30 s | 11,37 (dataset propio, no verificado) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,7 M | ventanas de 30 s | no disponible en la informacion | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en la informacion | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en la informacion | apache-2.0 | Hugging Face |
 
 No se dispone de datos de WER comparables para los modelos base en el mismo dataset, por lo que la comparacion cuantitativa no es posible con la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de WER comparables para los modelos base en el mismo data
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_28oct_v2_no_en
+- Modelo en Hugging Face: https://huggingface.co/JoeDwan/whisper-tiny_to_spanish_accent_28oct_v2_no_en
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper

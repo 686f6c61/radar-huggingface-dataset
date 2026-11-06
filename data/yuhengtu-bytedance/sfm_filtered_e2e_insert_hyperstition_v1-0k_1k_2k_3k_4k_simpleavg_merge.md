@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge` es un merge de pesos publicado por la cuenta `yuhengtu-bytedance` en HuggingFace, generado con la herramienta mergekit. No se trata de un modelo entrenado desde cero, sino de una combinacion lineal de cinco checkpoints (`global_step0`, `1000`, `2000`, `3000` y `4000`) procedentes del mismo run de entrenamiento, identificado internamente como `filtered_e2e_insert_hyperstition_v1`. El checkpoint `global_step4000` actua como base del merge.
+El modelo `yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge` es un merge de pesos publicado por la cuenta `yuhengtu-bytedance` en Hugging Face, generado con la herramienta mergekit. No se trata de un modelo entrenado desde cero, sino de una combinacion lineal de cinco checkpoints (`global_step0`, `1000`, `2000`, `3000` y `4000`) procedentes del mismo run de entrenamiento, identificado internamente como `filtered_e2e_insert_hyperstition_v1`. El checkpoint `global_step4000` actua como base del merge.
 
 Tecnicamente, el modelo tiene 6.856.253.440 parametros (aproximadamente 6,86 mil millones) almacenados en safetensors con `out_dtype: bfloat16`, lo que explica el tamano de repositorio de 13,7 GB. La etiqueta de arquitectura es `gpt_neox` y la libreria declarada es `transformers`, con pipeline de `text-generation` y etiquetas `conversational` y `endpoints_compatible`. Toda la configuracion del merge apunta a un experimento de investigacion interna: las rutas de los checkpoints de origen son rutas locales del sistema del autor (`/opt/tiger/Pan_Safety_Better_Measurement/...`) y no apuntan a repositorios publicos.
 
@@ -12,7 +12,7 @@ La relevancia practica es limitada pero concreta. El modelo no declara licencia,
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (`gpt_neox` segun etiquetas de HuggingFace); transformer decoder-only |
+| Arquitectura | GPT-NeoX (`gpt_neox` segun etiquetas de Hugging Face); transformer decoder-only |
 | Parametros totales | 6.856.253.440 (6,86 mil millones) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -27,7 +27,7 @@ La relevancia practica es limitada pero concreta. El modelo no declara licencia,
 | Checkpoints fusionados | `global_step0`, `global_step1000`, `global_step2000`, `global_step3000`, `global_step4000` (peso 1.0 cada uno) |
 | Checkpoint base | `global_step4000` |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-12T23:45:53Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12T23:45:53Z (segun metadatos de Hugging Face) |
 | Fecha de actualizacion | 2026-09-12T23:46:33Z |
 
 ## Arquitectura y entrenamiento
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge` | 6,86 mil millones | No disponible | No disponible | HuggingFace, 0 descargas | Merge lineal experimental; sin benchmarks ni model card completa |
-| Pythia-6.9B | 6,9 mil millones | 2048 tokens (segun documentacion publica del proyecto Pythia) | Apache 2.0 (segun documentacion publica) | HuggingFace, ampliamente utilizado | Misma arquitectura GPT-NeoX; sirve como referencia de tamano y linaje, no como equivalente funcional |
-| RedPajama-INCITE-7B-Base | 6,9 mil millones | 2048 tokens (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | HuggingFace | Alternativa de tamano similar con documentacion de entrenamiento publicada |
+| `sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge` | 6,86 mil millones | No disponible | No disponible | Hugging Face, 0 descargas | Merge lineal experimental; sin benchmarks ni model card completa |
+| Pythia-6.9B | 6,9 mil millones | 2048 tokens (segun documentacion publica del proyecto Pythia) | Apache 2.0 (segun documentacion publica) | Hugging Face, ampliamente utilizado | Misma arquitectura GPT-NeoX; sirve como referencia de tamano y linaje, no como equivalente funcional |
+| RedPajama-INCITE-7B-Base | 6,9 mil millones | 2048 tokens (segun documentacion publica) | Apache 2.0 (segun documentacion publica) | Hugging Face | Alternativa de tamano similar con documentacion de entrenamiento publicada |
 
 La comparacion es necesariamente asimetrica: los dos modelos de referencia cuentan con documentacion de entrenamiento, licencia explicita y benchmarks publicados. Los datos de Pythia-6.9B y RedPajama-INCITE-7B-Base proceden de sus fuentes publicas y no de la informacion proporcionada en esta ficha, por lo que conviene verificarlos antes de citarlos.
 
@@ -95,7 +95,7 @@ La comparacion es necesariamente asimetrica: los dos modelos de referencia cuent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-0k_1k_2k_3k_4k_simpleavg_merge
 - mergekit (herramienta usada para el merge): https://github.com/cg123/mergekit
 - Paper del metodo de merge lineal (model soups): https://arxiv.org/abs/2203.05482
 - Text generation inference: https://github.com/huggingface/text-generation-inference

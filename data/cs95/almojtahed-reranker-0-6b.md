@@ -2,11 +2,11 @@
 
 ## Resumen
 
-almojtahed-reranker-0.6b es un adaptador LoRA publicado por el usuario cs95 sobre el modelo base Qwen/Qwen3-Reranker-0.6B, distribuido a través de HuggingFace con la librería PEFT. Se trata, por tanto, de un ajuste fino de un reranker (modelo de reordenación de pasajes) y no de un modelo completo: el repositorio contiene los pesos del adaptador en formato safetensors, que deben combinarse con el modelo base para poder ejecutarse.
+almojtahed-reranker-0.6b es un adaptador LoRA publicado por el usuario cs95 sobre el modelo base Qwen/Qwen3-Reranker-0.6B, distribuido a través de Hugging Face con la librería PEFT. Se trata, por tanto, de un ajuste fino de un reranker (modelo de reordenación de pasajes) y no de un modelo completo: el repositorio contiene los pesos del adaptador en formato safetensors, que deben combinarse con el modelo base para poder ejecutarse.
 
 La relevancia de este tipo de modelos radica en su papel dentro de arquitecturas RAG de dos etapas: un recuperador inicial (retriever) devuelve un conjunto amplio de candidatos y el reranker los reordena por relevancia real respecto a la consulta antes de pasarlos al generador. Un modelo de 0,6B de parámetros es atractivo para esta función porque el coste computacional de puntuar decenas de pares consulta-documento es bajo comparado con el de un LLM generativo.
 
-Ahora bien, la información disponible sobre esta publicación concreta es mínima. La model card es la plantilla por defecto de HuggingFace y no contiene ni un solo campo completado: no se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio registra 0 descargas, 0 likes y un tamaño de 0,0 GB, lo que sugiere que el adaptador podría no estar efectivamente subido o que su contenido no es accesible. Cualquier evaluación seria del modelo exige verificar primero la integridad del repositorio.
+Ahora bien, la información disponible sobre esta publicación concreta es mínima. La model card es la plantilla por defecto de Hugging Face y no contiene ni un solo campo completado: no se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El repositorio registra 0 descargas, 0 likes y un tamaño de 0,0 GB, lo que sugiere que el adaptador podría no estar efectivamente subido o que su contenido no es accesible. Cualquier evaluación seria del modelo exige verificar primero la integridad del repositorio.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ No hay información publicada sobre la arquitectura interna ni sobre el procedim
 
 Tampoco se documentan los datos de entrenamiento: no se especifica el corpus, el número de tokens, la composición del dataset, ni si se emplearon técnicas de optimización posteriores al ajuste supervisado (DPO, RLHF u otras). El identificador del modelo ("almojtahed") no viene acompañado de ninguna explicación en la información disponible, por lo que no es posible atribuirle un dominio, idioma o tarea especializada concreta.
 
-Un detalle que conviene no malinterpretar: la etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo citado en la plantilla estándar de HuggingFace para calcular emisiones de carbono. No es un artículo sobre este modelo ni documenta su metodología.
+Un detalle que conviene no malinterpretar: la etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde a Lacoste et al. (2019), el artículo citado en la plantilla estándar de Hugging Face para calcular emisiones de carbono. No es un artículo sobre este modelo ni documenta su metodología.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ Todas las cifras de esta sección son estimaciones derivadas del tamaño de 0,6B
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
 | cs95/almojtahed-reranker-0.6b | No disponible (base de 0,6B) | No disponible | No disponible | Repositorio con 0 descargas y 0,0 GB de tamaño | Adaptador LoRA sin documentación ni evaluación |
-| Qwen/Qwen3-Reranker-0.6B | 0,6B (según el nombre) | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base público en HuggingFace | Es el modelo sobre el que se construye el adaptador |
+| Qwen/Qwen3-Reranker-0.6B | 0,6B (según el nombre) | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo base público en Hugging Face | Es el modelo sobre el que se construye el adaptador |
 | BGE-Reranker-v2-M3 | No disponible en la información proporcionada | No disponible | No disponible | Citado en las guías consultadas como alternativa habitual | Se menciona en comparativas de rerankers de 2026 |
 | Jina Reranker v3.5 | No disponible en la información proporcionada | No disponible | No disponible | Citado en las guías consultadas | Se menciona en comparativas de rerankers de 2026 |
 
@@ -93,12 +93,12 @@ No se dispone de datos verificados de parámetros, contexto ni licencia de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cs95/almojtahed-reranker-0.6b
+- Modelo en Hugging Face: https://huggingface.co/cs95/almojtahed-reranker-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Artículo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de aprendizaje automático: https://mlco2.github.io/impact
 - Guía comparativa de rerankers (Local AI Zone, 2026): https://local-ai-zone.github.io/guides/best-ai-reranker-models-ultimate-ranking-2026.html
-- Buscador de modelos con etiqueta "rerank" en HuggingFace: https://huggingface.co/models?search=rerank
+- Buscador de modelos con etiqueta "rerank" en Hugging Face: https://huggingface.co/models?search=rerank
 - Leaderboard de benchmarks de modelos: https://benchlm.ai/
 - Leaderboard de modelos con precios y rankings: https://www.llmboard.ai/
 - Rankings de uso real vía OpenRouter: https://openrouter.ai/rankings

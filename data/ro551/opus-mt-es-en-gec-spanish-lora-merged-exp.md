@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opus-mt-es-en-GEC-spanish-LORA-merged-exp` es un ajuste fino mediante LoRA del modelo de traducción automática `Helsinki-NLP/opus-mt-es-en`, desarrollado por el usuario Ro551 y publicado en HuggingFace. El nombre del repositorio sugiere que el ajuste se ha orientado a corrección gramatical (GEC, *Grammatical Error Correction*) en español, aunque la model card no documenta explícitamente el conjunto de datos ni la tarea concreta de entrenamiento. Se trata, por tanto, de un modelo derivado de la familia OPUS-MT, una de las colecciones de modelos de traducción neuronal más utilizadas en la comunidad open source.
+`opus-mt-es-en-GEC-spanish-LORA-merged-exp` es un ajuste fino mediante LoRA del modelo de traducción automática `Helsinki-NLP/opus-mt-es-en`, desarrollado por el usuario Ro551 y publicado en Hugging Face. El nombre del repositorio sugiere que el ajuste se ha orientado a corrección gramatical (GEC, *Grammatical Error Correction*) en español, aunque la model card no documenta explícitamente el conjunto de datos ni la tarea concreta de entrenamiento. Se trata, por tanto, de un modelo derivado de la familia OPUS-MT, una de las colecciones de modelos de traducción neuronal más utilizadas en la comunidad open source.
 
 El modelo base OPUS-MT es un transformer encoder-decoder de tipo MarianNMT, entrenado originalmente por el grupo Language Technology de la Universidad de Helsinki sobre corpus paralelos de OPUS. Este ajuste concreto aplica LoRA (Low-Rank Adaptation) sobre dicho modelo y posteriormente fusiona los pesos del adaptador en el modelo base, generando un checkpoint de tipo `safetensors` compatible con la librería `peft` y `transformers`.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp` | no disponible (base OPUS-MT) | no disponible | Apache 2.0 | HuggingFace |
-| `Helsinki-NLP/opus-mt-es-en` | no disponible (modelo base) | no disponible | Apache 2.0 | HuggingFace |
-| `Helsinki-NLP/opus-mt-en-es` | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Otros ajustes LoRA sobre OPUS-MT | variable | no disponible | variable | HuggingFace |
+| `Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp` | no disponible (base OPUS-MT) | no disponible | Apache 2.0 | Hugging Face |
+| `Helsinki-NLP/opus-mt-es-en` | no disponible (modelo base) | no disponible | Apache 2.0 | Hugging Face |
+| `Helsinki-NLP/opus-mt-en-es` | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Otros ajustes LoRA sobre OPUS-MT | variable | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [HuggingFace: Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp](https://huggingface.co/Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp)
+- [Hugging Face: Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp](https://huggingface.co/Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp)
 - [Modelo base: Helsinki-NLP/opus-mt-es-en](https://huggingface.co/Helsinki-NLP/opus-mt-es-en)
 - [Repositorio OPUS-MT (Helsinki-NLP)](https://github.com/Helsinki-NLP/OPUS-MT)
 - [Documentación de PEFT](https://huggingface.co/docs/peft)

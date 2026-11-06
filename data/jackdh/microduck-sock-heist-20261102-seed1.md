@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sock-seed1-20261102` es una política de control para robots entrenada mediante aprendizaje por refuerzo, publicada por el usuario JackDH en HuggingFace bajo el identificador `JackDH/microduck-sock-heist-20261102-seed1`. No es un modelo de lenguaje: se trata de un checkpoint de política (policy) exportado a ONNX que se ejecuta sobre el robot educativo microduck de Pollen Robotics, un cuadrúpedo de pequeñas dimensiones. La política consume observaciones de 61 dimensiones y produce 14 acciones a 50 Hz, y está diseñada para funcionar de forma perpetua (sin condición de terminación) hasta que el operador la detenga.
+`sock-seed1-20261102` es una política de control para robots entrenada mediante aprendizaje por refuerzo, publicada por el usuario JackDH en Hugging Face bajo el identificador `JackDH/microduck-sock-heist-20261102-seed1`. No es un modelo de lenguaje: se trata de un checkpoint de política (policy) exportado a ONNX que se ejecuta sobre el robot educativo microduck de Pollen Robotics, un cuadrúpedo de pequeñas dimensiones. La política consume observaciones de 61 dimensiones y produce 14 acciones a 50 Hz, y está diseñada para funcionar de forma perpetua (sin condición de terminación) hasta que el operador la detenga.
 
 El modelo se entrenó localmente en una RTX 4090 con el framework mjlab (versión 0.1.0, commit `1efd853be`), sobre la tarea `Mjlab-SockHeist6m-MicroDuck`, con 4096 entornos paralelos, 1000 iteraciones y semilla 1. El checkpoint seleccionado es el 999. La nomenclatura "sock-heist" sugiere una tarea de manipulación o locomoción orientada a robar un calcetín, típica de los entornos de simulación lúdicos usados en robótica de refuerzo.
 
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye otras políticas microdu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JackDH/microduck-sock-heist-20261102-seed1
+- Hugging Face: https://huggingface.co/JackDH/microduck-sock-heist-20261102-seed1
 - Repositorio de entrenamiento: https://github.com/JackDanHollister/microduck-challenges
 - Framework microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (referenciada en la model card): `docs/policy-manifest.md` en el repositorio del daemon (URL exacta no disponible)

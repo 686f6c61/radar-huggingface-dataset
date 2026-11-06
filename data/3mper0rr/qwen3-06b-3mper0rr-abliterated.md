@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 3MPER0RR/Qwen3-06B-3MPER0RR-abliterated | 0,6B | no disponible | Denso, abliterado (doble pasada) | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2 | 0,6B | no disponible | Denso, abliterado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-0.6B | 0,6B | 32.768 nativos (131.072 con YaRN) | Denso, alineado | Apache 2.0 | HuggingFace, Ollama |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 | Denso, alineado | Llama 3.2 Community | HuggingFace |
-| google/gemma-3-1b-it | 1B | 32.000 | Denso, alineado | Gemma Terms | HuggingFace |
+| 3MPER0RR/Qwen3-06B-3MPER0RR-abliterated | 0,6B | no disponible | Denso, abliterado (doble pasada) | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2 | 0,6B | no disponible | Denso, abliterado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-0.6B | 0,6B | 32.768 nativos (131.072 con YaRN) | Denso, alineado | Apache 2.0 | Hugging Face, Ollama |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 | Denso, alineado | Llama 3.2 Community | Hugging Face |
+| google/gemma-3-1b-it | 1B | 32.000 | Denso, alineado | Gemma Terms | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3MPER0RR/Qwen3-06B-3MPER0RR-abliterated
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/Qwen3-06B-3MPER0RR-abliterated
 - Modelo base directo (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2
 - Modelo original Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/

@@ -73,7 +73,7 @@ La comparativa directa con otros modelos de tamaño similar (por ejemplo, TinyLl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usr-wwelsh/digest-sft3
+- Modelo en Hugging Face: https://huggingface.co/usr-wwelsh/digest-sft3
 - Checkpoint anterior (sft2): https://huggingface.co/usr-wwelsh/digest-sft2
 - Repositorio de código de entrenamiento: https://github.com/usr-wwelsh/digest-finetune
 - Repositorio relacionado (Research-Digest, no directamente vinculado): https://github.com/usr-wwelsh/Research-Digest

@@ -110,7 +110,7 @@ No se dispone de datos comparativos de rendimiento cuantitativo entre este artef
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mihretu-dev/ethiopic-llm-tokenization-blindspot
+- Repositorio en Hugging Face: https://huggingface.co/Mihretu-dev/ethiopic-llm-tokenization-blindspot
 - Perfil de GitHub del autor: https://github.com/mihretu-dev
 - Paper de EthioLLM (modelos multilingues para lenguas etiopes): https://arxiv.org/html/2403.13737v1
 - Repositorio de investigacion sobre tokenizacion en LLM: https://github.com/aransha-patole/llm-tokenization-research

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dvader13/olmo2-1b-rlfinal-s1-3691b` es un checkpoint de final de entrenamiento por refuerzo (reinforcement learning, RL) del modelo OLMo-2-1B, publicado por el usuario dvader13 en HuggingFace. No se trata de un modelo listo para inferencia, sino de un estado completo de entrenamiento (full training state) que incluye pesos en fp32, optimizador, scheduler, RNG y estado del dataloader, diseñado para poder reanudar el entrenamiento desde el punto exacto en el que se detuvo.
+El modelo `dvader13/olmo2-1b-rlfinal-s1-3691b` es un checkpoint de final de entrenamiento por refuerzo (reinforcement learning, RL) del modelo OLMo-2-1B, publicado por el usuario dvader13 en Hugging Face. No se trata de un modelo listo para inferencia, sino de un estado completo de entrenamiento (full training state) que incluye pesos en fp32, optimizador, scheduler, RNG y estado del dataloader, diseñado para poder reanudar el entrenamiento desde el punto exacto en el que se detuvo.
 
 El modelo base es OLMo-2-1B, perteneciente a la familia OLMo 2 de Allen Institute for AI (AI2), una serie de modelos de lenguaje completamente abiertos que incluye versiones de 7B, 13B y 32B parámetros, según el informe técnico disponible. Este checkpoint concreto corresponde a un entrenamiento de RL sobre una base preentrenada en la rung `stage1-step1760000-tokens3691B`, lo que indica que el preentrenamiento acumuló 3691 mil millones de tokens. La relevancia de este checkpoint reside en su naturaleza de investigación: permite auditar el proceso de RL y reanudar el entrenamiento, algo poco común en publicaciones de modelos.
 

@@ -72,7 +72,7 @@ No disponible. La información proporcionada no incluye especificaciones ni mét
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-oai-rw-mid-g1-b2 | No disponible | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | HuggingFace (0 descargas, 0 likes) |
+| ct-inkling-oai-rw-mid-g1-b2 | No disponible | 8192 en entrenamiento | Sin benchmarks publicados | No disponible | Hugging Face (0 descargas, 0 likes) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. La información proporcionada no incluye especificaciones ni mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-rw-mid-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-rw-mid-g1-b2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Ruta original en Tinker (registro de entrenamiento): `tinker://1df6554a-a8f7-5fbd-abd2-6e7f94df4d9a:train:0/sampler_weights/inkoairwg1_inkoairw_g1_b2_s1_final`
 - Documento constitucional de la generación: `training_seed_constitution.md` (incluido en el repositorio)

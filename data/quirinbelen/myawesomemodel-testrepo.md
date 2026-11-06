@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuirinBelen/MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario QuirinBelen que se presenta, segun sus etiquetas, como un modelo basado en BERT para extraccion de caracteristicas (feature-extraction), con las etiquetas transformers, pytorch, bert, feature-extraction, license:mit y endpoints_compatible. El repositorio no contiene pesos: su tamano declarado es de 0.0 GB, acumula 0 descargas y 0 likes, y fue creado y actualizado con apenas seis segundos de diferencia (23 de septiembre de 2026), lo que apunta a un repositorio de prueba o plantilla mas que a un modelo distribuible.
+QuirinBelen/MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario QuirinBelen que se presenta, segun sus etiquetas, como un modelo basado en BERT para extraccion de caracteristicas (feature-extraction), con las etiquetas transformers, pytorch, bert, feature-extraction, license:mit y endpoints_compatible. El repositorio no contiene pesos: su tamano declarado es de 0.0 GB, acumula 0 descargas y 0 likes, y fue creado y actualizado con apenas seis segundos de diferencia (23 de septiembre de 2026), lo que apunta a un repositorio de prueba o plantilla mas que a un modelo distribuible.
 
 La model card adjunta describe, de forma generica, un asistente conversacional llamado MyAwesomeModel con mejoras en razonamiento, programacion y matematicas, y afirma haber alcanzado un 87,5% de acierto en AIME 2025 frente al 70% de la version anterior, con un consumo medio de 23K tokens por pregunta (frente a 12K en la version previa). Esa descripcion no es coherente con las etiquetas del repositorio (BERT mas feature-extraction, es decir, un encoder no generativo) ni con la ausencia total de ficheros de pesos, y las tablas de evaluacion usan etiquetas genericas (Model1, Model2, Model1-v2) sin nombrar benchmarks estandar como MMLU, GSM8K o HumanEval.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha recoge exclusivamente lo que el repositorio declara 
 
 ## Arquitectura y entrenamiento
 
-La unica informacion tecnica fiable es la etiqueta bert asociada al repositorio, que en HuggingFace corresponde a la familia de encoders bidireccionales tipo Transformer y al pipeline feature-extraction. Eso implicaria un modelo orientado a producir representaciones vectoriales (embeddings) de texto, no a generar texto de forma autoregresiva. La model card, en cambio, describe capacidades de razonamiento, generacion de codigo y function calling, propias de un modelo decoder generativo, sin ofrecer ningun detalle de arquitectura, numero de capas, dimensiones ocultas, cabezas de atencion ni mecanismo de atencion.
+La unica informacion tecnica fiable es la etiqueta bert asociada al repositorio, que en Hugging Face corresponde a la familia de encoders bidireccionales tipo Transformer y al pipeline feature-extraction. Eso implicaria un modelo orientado a producir representaciones vectoriales (embeddings) de texto, no a generar texto de forma autoregresiva. La model card, en cambio, describe capacidades de razonamiento, generacion de codigo y function calling, propias de un modelo decoder generativo, sin ofrecer ningun detalle de arquitectura, numero de capas, dimensiones ocultas, cabezas de atencion ni mecanismo de atencion.
 
 No hay datos de entrenamiento publicados: no se indica numero de tokens, composicion del dataset, idiomas de entrenamiento, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La unica cifra concreta de la model card es el consumo medio de tokens por pregunta en AIME 2025 (23K en la version actual frente a 12K en la anterior), un dato de inference-time compute, no de entrenamiento. Tampoco se documenta ninguna innovacion de arquitectura (atencion lineal, decodificacion especulativa, SSM o hibridos). En resumen, no es posible describir la arquitectura ni el proceso de entrenamiento con la informacion disponible.
 
@@ -104,5 +104,5 @@ No disponible. No es posible establecer una comparativa rigurosa porque el repos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QuirinBelen/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/QuirinBelen/MyAwesomeModel-TestRepo
 - Otros enlaces (paper, blog, repositorio de codigo, demo o web oficial): no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario safcaasd bajo el identificador safcaasd/MyAwesomeModel-TestRepo. El repositorio no contiene pesos: el tamano declarado es de 0,0 GB y no se listan ficheros de pesos, por lo que en la practica se trata de un repositorio vacio o de prueba. La model card describe un modelo de razonamiento con mejoras en profundidad de razonamiento, soporte de function calling y generacion aumentada con busqueda web, pero no aporta ni arquitectura, ni numero de parametros, ni longitud de contexto. Los metadatos de HuggingFace lo etiquetan como `bert` con pipeline `feature-extraction`, lo que contradice frontalmente la model card (que describe un asistente conversacional con modo de pensamiento). Esa discrepancia no se resuelve con la informacion disponible.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario safcaasd bajo el identificador safcaasd/MyAwesomeModel-TestRepo. El repositorio no contiene pesos: el tamano declarado es de 0,0 GB y no se listan ficheros de pesos, por lo que en la practica se trata de un repositorio vacio o de prueba. La model card describe un modelo de razonamiento con mejoras en profundidad de razonamiento, soporte de function calling y generacion aumentada con busqueda web, pero no aporta ni arquitectura, ni numero de parametros, ni longitud de contexto. Los metadatos de Hugging Face lo etiquetan como `bert` con pipeline `feature-extraction`, lo que contradice frontalmente la model card (que describe un asistente conversacional con modo de pensamiento). Esa discrepancia no se resuelve con la informacion disponible.
 
 El modelo se presenta con licencia MIT y libreria `transformers`, y con cero descargas y cero likes en el momento de la consulta. La model card incluye una tabla de "benchmarks" con etiquetas genericas (Math Reasoning, Logical Reasoning, Code Generation, etc.) en lugar de benchmarks estandar identificables (MMLU, HumanEval, GSM8K), y cita un resultado en AIME 2025 del 87,5 por ciento de acierto frente al 70 por ciento de una version anterior.
 
@@ -12,7 +12,7 @@ Por su relevancia: ahora mismo no es un modelo evaluable. No hay pesos descargab
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican `bert`; la model card no especifica arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face indican `bert`; la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -54,7 +54,7 @@ Las unicas afirmaciones tecnicas de la model card son de tipo cualitativo: que l
 - Generacion de codigo en pipelines de desarrollo: si el soporte de function calling es real, el modelo podria integrarse como componente de agentes que invocan herramientas (linters, ejecutores de tests, APIs de CI/CD) en lugar de limitarse a completar texto.
 - Atencion al cliente automatizada: un modelo con soporte de system prompt y function calling puede gestionar conversaciones multi-turno y consultar sistemas internos (estado de pedidos, incidencias). Requiere conocer la ventana de contexto, dato que no esta disponible.
 - Generacion de contenido y redaccion: la tabla de la model card incluye filas de Creative Writing, Summarization y Dialogue Generation, lo que situa el modelo como candidato para resumenes y redaccion asistida, siempre que se valide la calidad con evaluaciones propias.
-- Clasificacion y analisis de sentimiento: los metadatos de HuggingFace lo declaran como `feature-extraction`, por lo que, si finalmente se publican pesos de tipo BERT, encajaria en tareas de extraccion de representaciones, clasificacion de texto y analisis de sentimiento.
+- Clasificacion y analisis de sentimiento: los metadatos de Hugging Face lo declaran como `feature-extraction`, por lo que, si finalmente se publican pesos de tipo BERT, encajaria en tareas de extraccion de representaciones, clasificacion de texto y analisis de sentimiento.
 - Traduccion y recuperacion de conocimiento: la model card incluye filas de Translation y Knowledge Retrieval, lo que sugiere uso en traduccion automatica y sistemas RAG, aunque sin idiomas declarados no puede confirmarse la cobertura real.
 
 Advertencia transversal: ninguno de estos casos puede implementarse hoy, porque el repositorio no contiene pesos descargables.
@@ -94,7 +94,7 @@ Consideraciones generales, aplicables solo si el autor publica finalmente los pe
 - VRAM estimada para inferencia: no disponible (depende del tamano del modelo y de la cuantizacion, ambos sin especificar).
 - GPU recomendadas: no disponible.
 - Encaje en GPU de consumo: no disponible.
-- Opciones de despliegue: la model card remite a un "repositorio de codigo" sin enlace y no menciona vLLM, llama.cpp, Ollama, TGI ni ninguna otra opcion. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero sin pesos no es operativo.
+- Opciones de despliegue: la model card remite a un "repositorio de codigo" sin enlace y no menciona vLLM, llama.cpp, Ollama, TGI ni ninguna otra opcion. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero sin pesos no es operativo.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB y no se listan ficheros de pesos. El modelo no es descargable ni ejecutable en la actualidad.
-- Contradiccion entre metadatos y model card: los tags de HuggingFace indican `bert` y pipeline `feature-extraction`, mientras que la model card describe un asistente de razonamiento con function calling y modo de pensamiento. No hay forma de determinar cual es correcta.
+- Contradiccion entre metadatos y model card: los tags de Hugging Face indican `bert` y pipeline `feature-extraction`, mientras que la model card describe un asistente de razonamiento con function calling y modo de pensamiento. No hay forma de determinar cual es correcta.
 - Benchmarks no verificables: la tabla usa etiquetas genericas en lugar de benchmarks estandar y anonimiza los modelos de comparacion. Los valores no son reproducibles ni auditables.
 - Model card con apariencia de plantilla: el texto ("MyAwesomeModel", referencias a figuras no accesibles, secciones sobre sitio web y API sin URL) es consistente con una plantilla sin personalizar. El propio identificador incluye "TestRepo".
 - Idiomas no declarados: el campo de idiomas esta vacio, por lo que se desconoce la cobertura linguistica real, incluido el castellano.
@@ -117,7 +117,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/safcaasd/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/safcaasd/MyAwesomeModel-TestRepo
 - Licencia referenciada en la model card (ruta relativa): https://huggingface.co/safcaasd/MyAwesomeModel-TestRepo/blob/main/LICENSE
 - Figuras referenciadas en la model card (rutas relativas, no verificadas): https://huggingface.co/safcaasd/MyAwesomeModel-TestRepo/blob/main/figures/fig1.png y https://huggingface.co/safcaasd/MyAwesomeModel-TestRepo/blob/main/figures/fig3.png
 - Paper: no disponible

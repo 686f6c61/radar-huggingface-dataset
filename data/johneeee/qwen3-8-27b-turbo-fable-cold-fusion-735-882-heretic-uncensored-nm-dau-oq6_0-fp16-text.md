@@ -107,7 +107,7 @@ No se dispone de datos suficientes para comparar rendimiento medido entre estas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ6_0-fp16-text
+- Repositorio Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ6_0-fp16-text
 - Variante oQ2e del mismo autor: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ2e
 - Variante GGUF de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

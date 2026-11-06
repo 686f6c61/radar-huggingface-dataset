@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arabic-ocr-dots-ft-e6b` es un ajuste fino experimental orientado a OCR y análisis de estructura de documentos (`document-layout`) en árabe, construido sobre el modelo multimodal `dots.mocr` (la model card cita `rednote-hilab/dots.mocr`, mientras que las etiquetas de HuggingFace apuntan a `dots-studio/dots.mocr`). Lo publica el usuario `ahmedsamirtarjama` como parte de un proyecto de investigación alojado en un servidor interno (`server3-ts`, ruta `/mnt/extra/ocr`), no como un modelo de producción con soporte.
+`arabic-ocr-dots-ft-e6b` es un ajuste fino experimental orientado a OCR y análisis de estructura de documentos (`document-layout`) en árabe, construido sobre el modelo multimodal `dots.mocr` (la model card cita `rednote-hilab/dots.mocr`, mientras que las etiquetas de Hugging Face apuntan a `dots-studio/dots.mocr`). Lo publica el usuario `ahmedsamirtarjama` como parte de un proyecto de investigación alojado en un servidor interno (`server3-ts`, ruta `/mnt/extra/ocr`), no como un modelo de producción con soporte.
 
 El modelo tiene 3.039.179.264 parámetros (aproximadamente 3,04 mil millones) según los pesos en safetensors, con un repositorio de 6,1 GB en formato `safetensors` y carga mediante `transformers` con código personalizado (`custom_code`). El ajuste se realizó con LoRA de rango 64 fusionado posteriormente en los pesos base, manteniendo congelado el *vision tower*: esto confirma que se trata de un modelo visión-lenguaje con una torre de visión más un componente de lenguaje, aunque la model card no detalla ni el número de tokens de entrenamiento ni la composición del dataset.
 
@@ -72,8 +72,8 @@ No se dispone de datos verificados de rendimiento, licencia ni especificaciones 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| arabic-ocr-dots-ft-e6b | 3,04 mil millones | No disponible (max_tokens 8192 en inferencia) | No disponible | HuggingFace, 0 descargas | LoRA r64 fusionada, vision tower congelado, orientado a arabe |
-| rednote-hilab/dots.mocr (base) | No disponible | No disponible | No disponible | HuggingFace | Modelo multimodal de OCR del que deriva el ajuste |
+| arabic-ocr-dots-ft-e6b | 3,04 mil millones | No disponible (max_tokens 8192 en inferencia) | No disponible | Hugging Face, 0 descargas | LoRA r64 fusionada, vision tower congelado, orientado a arabe |
+| rednote-hilab/dots.mocr (base) | No disponible | No disponible | No disponible | Hugging Face | Modelo multimodal de OCR del que deriva el ajuste |
 | Otras alternativas de OCR multimodal (GOT-OCR2.0, Qwen2-VL, etc.) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos verificados de rendimiento, licencia ni especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6b
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-e6b
 - Perfil del autor: https://huggingface.co/ahmedsamirtarjama
 - Modelo base citado en la model card: https://huggingface.co/rednote-hilab/dots.mocr
 - Modelo base citado en las etiquetas: https://huggingface.co/dots-studio/dots.mocr

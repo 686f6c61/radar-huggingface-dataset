@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora` es un adaptador LoRA de rango 32 construido sobre el modelo base multimodal `Qwen/Qwen3.5-9B` (revision `c202236235762e1c871ad0ccb60c8ee5ba337b9a`). No es un modelo completo, sino un ajuste fino supervisado (SFT) orientado a tareas agénticas de ingenieria de software y terminal, desarrollado por el usuario de HuggingFace `deanoshuang` dentro de un estudio iterativo de SFT sobre LoRA. El entrenamiento se realizo sobre trayectorias verificadas de profesores de pesos abiertos, complementadas con una porcion de retencion de matematicas, ciencia, seguimiento de instrucciones y chat.
+El modelo `deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora` es un adaptador LoRA de rango 32 construido sobre el modelo base multimodal `Qwen/Qwen3.5-9B` (revision `c202236235762e1c871ad0ccb60c8ee5ba337b9a`). No es un modelo completo, sino un ajuste fino supervisado (SFT) orientado a tareas agénticas de ingenieria de software y terminal, desarrollado por el usuario de Hugging Face `deanoshuang` dentro de un estudio iterativo de SFT sobre LoRA. El entrenamiento se realizo sobre trayectorias verificadas de profesores de pesos abiertos, complementadas con una porcion de retencion de matematicas, ciencia, seguimiento de instrucciones y chat.
 
 La relevancia del adaptador radica en su enfoque experimental: forma parte de una comparativa de tres versiones (Base, SFT, stage 2) evaluada sobre SWE-bench Pro, Terminal-Bench 2.0, HLE y ASI-Bench que aparece documentada en el repositorio publico del estudio. Esta revision concreta (revision 7, brazo de learning rate) usa LR 5e-5 y batch efectivo de 16 durante una epoca, a diferencia del checkpoint hermano `qwen3.5-9b-agent-sft-v7-lora`, que usa LR 2e-5 y batch 12 sobre los mismos datos.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora` | 9B (base) + 86,5M adaptador | 262K (hasta ~1M) | perdida de validacion 0.5223 | Apache 2.0 | Publico en HuggingFace |
+| `deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora` | 9B (base) + 86,5M adaptador | 262K (hasta ~1M) | perdida de validacion 0.5223 | Apache 2.0 | Publico en Hugging Face |
 | `deanoshuang/qwen3.5-9b-agent-sft-v7-lora` | 9B (base) + mismo LoRA r32 | 262K (hasta ~1M) | no disponible | Apache 2.0 | Publico; mismos datos v7r1, LR 2e-5, batch 12 |
 | `Qwen/Qwen3.5-9B` (base) | 9B denso | 262K (hasta ~1M) | no disponible | Apache 2.0 | Publico |
 
@@ -83,7 +83,7 @@ No se dispone de puntuaciones comparativas entre estos checkpoints en la informa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora
+- Hugging Face del adaptador: https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora
 - Pesos del adaptador: https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-v7-lr5e5-lora/blob/main/adapter_model.safetensors
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Checkpoint hermano (revision 7, LR 2e-5): https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-v7-lora

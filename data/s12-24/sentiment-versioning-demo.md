@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-versioning-demo` es un modelo de clasificación de texto publicado por el usuario S12-24 en HuggingFace. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la versión destilada de BERT-base, sobre un conjunto de datos que el propio autor no especifica en la model card. El repositorio contiene 66.955.010 parámetros en formato safetensors, con licencia Apache 2.0 y pipeline declarado `text-classification`.
+`sentiment-versioning-demo` es un modelo de clasificación de texto publicado por el usuario S12-24 en Hugging Face. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la versión destilada de BERT-base, sobre un conjunto de datos que el propio autor no especifica en la model card. El repositorio contiene 66.955.010 parámetros en formato safetensors, con licencia Apache 2.0 y pipeline declarado `text-classification`.
 
 Por el nombre del repositorio, todo apunta a que se trata de un artefacto de demostración orientado a flujos de versionado de modelos (por ejemplo, comparar versiones de un clasificador de sentimiento en un registro de modelos o en un pipeline de MLOps), más que a un modelo pensado para producción directa. La model card está generada automáticamente por el `Trainer` de Transformers y no aporta descripción, dataset ni limitaciones: todos esos campos figuran como "More information needed".
 
@@ -37,7 +37,7 @@ Los hiperparámetros de entrenamiento sí están documentados en la model card: 
 - Clasificación de texto (pipeline `text-classification`), presumiblemente de sentimiento por el nombre del repositorio; el número y las etiquetas de clase no están documentados.
 - Extracción de representaciones: al ser un encoder tipo BERT, puede usarse como backbone de embeddings, y el tag `text-embeddings-inference` indica que es servible con Text Embeddings Inference.
 - Inferencia en CPU: con 67M de parámetros, el coste computacional es bajo y no requiere GPU.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en Hugging Face Inference Endpoints.
 - Generación de texto: no. Es un modelo exclusivamente de clasificación, no tiene cabeza de lenguaje.
 - Tool calling / function calling: no soportado.
 - Agentes y razonamiento multi-paso: no soportado.
@@ -71,17 +71,17 @@ Estos valores corresponden a un conjunto de validación no identificado (el data
 - VRAM estimada: aproximadamente 0,27 GB para los pesos en fp32 y 0,13 GB en fp16; con activaciones y overhead de runtime, el consumo realista se sitúa en torno a 1-2 GB.
 - GPU recomendadas: cualquiera con al menos 2 GB de VRAM; no se requiere A100 ni H100. Una GTX 1650, RTX 3050, RTX 4090 o incluso una T4 son más que suficientes.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo de los últimos diez años, y también en CPU (inferencia viable por el tamaño de 67M de parámetros).
-- Opciones de despliegue: Transformers con PyTorch, HuggingFace Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), ONNX Runtime mediante exportación manual, FastAPI o servicios similares. No hay pesos GGUF publicados, por lo que llama.cpp/Ollama requerirían conversión previa.
+- Opciones de despliegue: Transformers con PyTorch, Hugging Face Inference Endpoints (tag `endpoints_compatible`), Text Embeddings Inference (tag `text-embeddings-inference`), ONNX Runtime mediante exportación manual, FastAPI o servicios similares. No hay pesos GGUF publicados, por lo que llama.cpp/Ollama requerirían conversión previa.
 - Latencia y throughput: no disponible. El autor no publica mediciones de latencia ni de tokens por segundo (en un clasificador, documentos por segundo).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `S12-24/sentiment-versioning-demo` | 66.955.010 | 512 tokens (heredado) | apache-2.0 | HuggingFace, 0 descargas | Dataset y etiquetas no documentados; accuracy de validación 0,854 sobre conjunto desconocido |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67M | 512 tokens | apache-2.0 | HuggingFace, ampliamente usado | Alternativa directa para sentimiento binario; su rendimiento estándar en SST-2 es muy superior en validación pública, pero no hay datos de benchmark en la información proporcionada |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125M | 512 tokens | no disponible en esta información | HuggingFace | Encoder mayor orientado a texto de redes sociales; más costoso en CPU |
-| `bert-base-uncased` (fine-tune propio) | 110M | 512 tokens | apache-2.0 | HuggingFace | Referencia general; más parámetros que DistilBERT y sin la ventaja de latencia de la destilación |
+| `S12-24/sentiment-versioning-demo` | 66.955.010 | 512 tokens (heredado) | apache-2.0 | Hugging Face, 0 descargas | Dataset y etiquetas no documentados; accuracy de validación 0,854 sobre conjunto desconocido |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67M | 512 tokens | apache-2.0 | Hugging Face, ampliamente usado | Alternativa directa para sentimiento binario; su rendimiento estándar en SST-2 es muy superior en validación pública, pero no hay datos de benchmark en la información proporcionada |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125M | 512 tokens | no disponible en esta información | Hugging Face | Encoder mayor orientado a texto de redes sociales; más costoso en CPU |
+| `bert-base-uncased` (fine-tune propio) | 110M | 512 tokens | apache-2.0 | Hugging Face | Referencia general; más parámetros que DistilBERT y sin la ventaja de latencia de la destilación |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas dentro de la información proporcionada; las diferencias indicadas se limitan a tamaño, contexto, licencia y disponibilidad.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/S12-24/sentiment-versioning-demo
+- Modelo en Hugging Face: https://huggingface.co/S12-24/sentiment-versioning-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 
 No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

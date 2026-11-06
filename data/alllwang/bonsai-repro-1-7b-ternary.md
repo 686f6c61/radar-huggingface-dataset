@@ -55,7 +55,7 @@ El entrenamiento combina QAT con estimador straight-through partiendo de los pes
 
 ## Benchmarks y rendimiento
 
-Resultados medidos con lm-evaluation-harness 0.4.13, backend de HuggingFace, en bf16. Se reporta acc_norm para ARC-C, HellaSwag y PIQA (0-shot), acc para Winogrande (0-shot), MMLU en 5-shot y GSM8K en 5-shot con exactitud estricta.
+Resultados medidos con lm-evaluation-harness 0.4.13, backend de Hugging Face, en bf16. Se reporta acc_norm para ARC-C, HellaSwag y PIQA (0-shot), acc para Winogrande (0-shot), MMLU en 5-shot y GSM8K en 5-shot con exactitud estricta.
 
 | Modelo | ARC-C | HellaSwag | PIQA | Winogrande | MMLU | GSM8K |
 |---|---|---|---|---|---|---|
@@ -88,7 +88,7 @@ Diferencias calculadas frente al profesor: -9,5 puntos en ARC-C, -14,0 en HellaS
 
 | Modelo | Parametros | Contexto | MMLU | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| alllwang/bonsai-repro-1.7B-ternary | 1,72B (ternario) | no disponible | 34,5 | 54,7 | Apache 2.0 | Publicado en HuggingFace, 0 descargas |
+| alllwang/bonsai-repro-1.7B-ternary | 1,72B (ternario) | no disponible | 34,5 | 54,7 | Apache 2.0 | Publicado en Hugging Face, 0 descargas |
 | prism-ml/Ternary-Bonsai-1.7B | 1,72B (ternario) | no disponible | 49,1 | 59,1 | no disponible | Referenciado en la model card; URL no proporcionada |
 | Qwen/Qwen3-1.7B | 1,72B (bf16) | no disponible | 60,2 | 68,8 | Apache 2.0 | Modelo base publico de Qwen |
 
@@ -109,7 +109,7 @@ La comparativa se limita a estos tres modelos porque son los unicos mencionados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alllwang/bonsai-repro-1.7B-ternary
+- Modelo en Hugging Face: https://huggingface.co/alllwang/bonsai-repro-1.7B-ternary
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Script de entrenamiento: train_bonsai_repro.py, referenciado en el directorio training/ del repositorio del modelo (URL absoluta no proporcionada)
 - Evaluaciones crudas: JSON de lm-evaluation-harness en training/evals/ del repositorio del modelo

@@ -88,7 +88,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento de Sémi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Medwebsite/semio-1-E2B-GGUF
+- Hugging Face: https://huggingface.co/Medwebsite/semio-1-E2B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset MediQAl: no disponible en la información proporcionada
 - Dataset FrenchMedMCQA: no disponible en la información proporcionada

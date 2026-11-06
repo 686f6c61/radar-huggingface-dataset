@@ -89,7 +89,7 @@ Qwen3.7-Plus se menciona en la documentacion oficial como referencia de coste: e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-tsingmicro-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-Flash-Next-BF16-tsingmicro-FlagOS
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Documentacion de despliegue con unsloth: https://unsloth.ai/docs/models/qwen3.8-next
 - Documentacion de SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-Flash-Next

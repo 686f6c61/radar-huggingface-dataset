@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dialogpt-es-arreglado es un ajuste fino (fine-tune) del modelo conversacional microsoft/DialoGPT-small, publicado por el usuario fiel1986 en HuggingFace. Se trata de un transformer decoder-only de la familia GPT-2, con 163.037.184 parametros declarados en el repositorio y pesos en formato safetensors. El nombre sugiere una adaptacion al espanol, pero ni la model card ni los metadatos de HuggingFace confirman los idiomas soportados.
+dialogpt-es-arreglado es un ajuste fino (fine-tune) del modelo conversacional microsoft/DialoGPT-small, publicado por el usuario fiel1986 en Hugging Face. Se trata de un transformer decoder-only de la familia GPT-2, con 163.037.184 parametros declarados en el repositorio y pesos en formato safetensors. El nombre sugiere una adaptacion al espanol, pero ni la model card ni los metadatos de Hugging Face confirman los idiomas soportados.
 
 El modelo fue entrenado con el `Trainer` de la libreria Transformers, pero la model card esta generada automaticamente y no documenta nada relevante: el campo de dataset aparece como "None", no hay descripcion, no hay datos de evaluacion y el `model-index` contiene una lista de resultados vacia. La unica informacion tecnica fiable son los hiperparametros de entrenamiento (learning rate 5e-05, batch de 16, optimizador AdamW fused, scheduler lineal, 8 epocas) y las versiones de framework empleadas.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fiel1986/dialogpt-es-arreglado | 163.037.184 (declarados) | No disponible | MIT | No disponible | Model card autogenerada, sin dataset ni evaluacion | HuggingFace, 0 descargas, 0 likes |
-| microsoft/DialoGPT-small (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ingles (modelo original) | Model card oficial de Microsoft | HuggingFace, ampliamente utilizado |
-| microsoft/DialoGPT-medium | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ingles | Model card oficial de Microsoft | HuggingFace |
+| fiel1986/dialogpt-es-arreglado | 163.037.184 (declarados) | No disponible | MIT | No disponible | Model card autogenerada, sin dataset ni evaluacion | Hugging Face, 0 descargas, 0 likes |
+| microsoft/DialoGPT-small (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ingles (modelo original) | Model card oficial de Microsoft | Hugging Face, ampliamente utilizado |
+| microsoft/DialoGPT-medium | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Ingles | Model card oficial de Microsoft | Hugging Face |
 | Otras alternativas de dialogo en espanol | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio ningun modelo comparable: los resultados obtenidos correspondian a fichas de telefonia movil (Samsung Galaxy S23 Ultra) y no guardan relacion con el modelo. No se dispone por tanto de una comparativa fiable con alternativas de la misma categoria ni de datos de rendimiento relativos.
@@ -77,7 +77,7 @@ La busqueda web realizada no devolvio ningun modelo comparable: los resultados o
 
 - Documentacion practicamente inexistente: model card autogenerada, descripcion "More information needed" y dataset de entrenamiento registrado como "None".
 - Ausencia total de evaluacion: sin benchmarks, sin metricas de calidad de dialogo y sin analisis de sesgos.
-- Idiomas no confirmados: el nombre del repositorio sugiere espanol, pero los metadatos de HuggingFace no declaran idioma alguno, por lo que no puede garantizarse un comportamiento correcto en castellano.
+- Idiomas no confirmados: el nombre del repositorio sugiere espanol, pero los metadatos de Hugging Face no declaran idioma alguno, por lo que no puede garantizarse un comportamiento correcto en castellano.
 - Riesgo alto de alucinacion y de respuestas inapropiadas, ofensivas o incoherentes, ya que DialoGPT-small se entrena sobre conversaciones de Reddit y este ajuste no documenta ningun filtrado ni alineamiento.
 - Ventana de contexto corta (la del modelo base, 1024 tokens), que limita conversaciones largas y tareas de resumen o analisis de documentos extensos.
 - Ambiguedad en el conteo de parametros (163 M frente al tamano del modelo base), sin explicacion tecnica publicada.
@@ -88,7 +88,7 @@ La busqueda web realizada no devolvio ningun modelo comparable: los resultados o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/dialogpt-es-arreglado
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/dialogpt-es-arreglado
 - Modelo base: https://huggingface.co/microsoft/DialoGPT-small
 
 Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo (los enlaces obtenidos correspondian a especificaciones del Samsung Galaxy S23 Ultra). No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.

@@ -4,7 +4,7 @@
 
 `mradermacher/Qwen3.5-4B-Uncensored-v2-i1-GGUF` es una colección de cuantizaciones GGUF generadas por el usuario mradermacher a partir del modelo base `InterpreticAI/Qwen3.5-4B-Uncensored-v2`. No se trata de un modelo entrenado desde cero, sino de una redistribución en formatos cuantizados (Q2 a Q6, incluyendo variantes i-quant y K-quant) pensada para su uso con llama.cpp y derivados. El nombre sugiere una base de la familia Qwen3.5 de 4B parámetros con un ajuste fino orientado a eliminar restricciones de contenido ("uncensored"), aunque la model card no aporta detalles sobre dicho ajuste.
 
-La información disponible en HuggingFace es extremadamente limitada: el repositorio figura con 0 descargas, 0 likes, tamaño de 0.0 GB y sin pipeline, licencia ni idiomas declarados. El dato de parámetros totales reportado en safetensors (1.797.272) es inconsistente con el nombre del modelo (4B) y con el tamaño esperado de un transformer de 4B parámetros; probablemente corresponda a un recuento parcial o erróneo del tensor de embeddings o de un componente auxiliar. Esta ficha se limita a lo verificable y marca como "no disponible" todo aquello que la información proporcionada no cubre.
+La información disponible en Hugging Face es extremadamente limitada: el repositorio figura con 0 descargas, 0 likes, tamaño de 0.0 GB y sin pipeline, licencia ni idiomas declarados. El dato de parámetros totales reportado en safetensors (1.797.272) es inconsistente con el nombre del modelo (4B) y con el tamaño esperado de un transformer de 4B parámetros; probablemente corresponda a un recuento parcial o erróneo del tensor de embeddings o de un componente auxiliar. Esta ficha se limita a lo verificable y marca como "no disponible" todo aquello que la información proporcionada no cubre.
 
 La relevancia de esta ficha es, por tanto, acotada: sirve para identificar el artefacto, entender su procedencia (cuantización de un modelo comunitario) y advertir de las lagunas de información antes de usarlo en producción.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, acotada: sirve para identificar el ar
 
 No se dispone de información sobre la arquitectura interna del modelo base `InterpreticAI/Qwen3.5-4B-Uncensored-v2` en los datos proporcionados. Por el nombre se infiere una base de la familia Qwen3.5 con 4B parámetros y un ajuste fino posterior orientado a reducir el rechazo de contenido, pero no se documentan ni el número de tokens de entrenamiento, ni la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o fine-tuning supervisado. Tampoco se especifican innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento extendido.
 
-Lo único verificable es el proceso de cuantización: la model card indica `quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1` y que se trata de cuantizaciones "weighted/imatrix" del modelo base. Es decir, mradermacher aplicó cuantización con matrices de importancia (imatrix) sobre los pesos en formato HuggingFace para producir los GGUF, una práctica habitual para preservar calidad en cuantizaciones agresivas (Q2, IQ2, IQ3). No hay información sobre el tokenizador, el vocabulario ni la ventana de contexto efectiva tras la cuantización.
+Lo único verificable es el proceso de cuantización: la model card indica `quantize_version: 2`, `convert_type: hf`, `output_tensor_quantised: 1` y que se trata de cuantizaciones "weighted/imatrix" del modelo base. Es decir, mradermacher aplicó cuantización con matrices de importancia (imatrix) sobre los pesos en formato Hugging Face para producir los GGUF, una práctica habitual para preservar calidad en cuantizaciones agresivas (Q2, IQ2, IQ3). No hay información sobre el tokenizador, el vocabulario ni la ventana de contexto efectiva tras la cuantización.
 
 ## Capacidades
 
@@ -80,5 +80,5 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-v2-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-4B-Uncensored-v2-i1-GGUF
 - Modelo base: https://huggingface.co/InterpreticAI/Qwen3.5-4B-Uncensored-v2

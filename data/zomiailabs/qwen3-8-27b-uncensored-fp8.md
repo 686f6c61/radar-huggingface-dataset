@@ -77,7 +77,7 @@ La diferencia clave frente a los modelos oficiales es la abliteración; frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-FP8
+- Modelo en Hugging Face: https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-FP8
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Qwen3.8-27B-FP8 oficial: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Sitio web de OrcaRouter: https://www.orcarouter.ai

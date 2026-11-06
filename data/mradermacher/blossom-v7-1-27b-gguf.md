@@ -21,7 +21,7 @@ La relevancia de esta ficha es practica: permite evaluar rapidamente si un model
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (llama.cpp); modelo base en transformers |
 
-Datos adicionales del repositorio: autor de la cuantizacion, mradermacher; modelo base, Azure99/Blossom-V7.1-27B; tamano del repo, 190,8 GB; fecha de creacion declarada en HuggingFace, 2026-09-13; ultima actualizacion, 2026-09-13.
+Datos adicionales del repositorio: autor de la cuantizacion, mradermacher; modelo base, Azure99/Blossom-V7.1-27B; tamano del repo, 190,8 GB; fecha de creacion declarada en Hugging Face, 2026-09-13; ultima actualizacion, 2026-09-13.
 
 ## Arquitectura y entrenamiento
 
@@ -87,9 +87,9 @@ No se dispone de datos de rendimiento que permitan una comparacion funcional con
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Blossom-V7.1-27B-GGUF | 27,3B | no disponible | GGUF (cuantizaciones estaticas) | apache-2.0 | publico en HuggingFace |
-| mradermacher/Blossom-V7.1-27B-i1-GGUF | 27,3B (mismo modelo) | no disponible | GGUF (cuantizaciones ponderadas con imatrix) | apache-2.0 | publico en HuggingFace |
-| Azure99/Blossom-V7.1-27B | 27,3B | no disponible | transformers (safetensors) | apache-2.0 (segun el repositorio cuantizado) | publico en HuggingFace |
+| mradermacher/Blossom-V7.1-27B-GGUF | 27,3B | no disponible | GGUF (cuantizaciones estaticas) | apache-2.0 | publico en Hugging Face |
+| mradermacher/Blossom-V7.1-27B-i1-GGUF | 27,3B (mismo modelo) | no disponible | GGUF (cuantizaciones ponderadas con imatrix) | apache-2.0 | publico en Hugging Face |
+| Azure99/Blossom-V7.1-27B | 27,3B | no disponible | transformers (safetensors) | apache-2.0 (segun el repositorio cuantizado) | publico en Hugging Face |
 
 No se dispone de datos de benchmarks, contexto ni rendimiento del modelo base ni de las alternativas, por lo que no es posible establecer una comparacion cuantitativa con modelos de otros autores.
 

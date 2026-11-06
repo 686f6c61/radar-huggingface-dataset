@@ -87,6 +87,6 @@ La comparativa se basa en los datos de la model card. El modelo de 1.7B fine-tun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shreyanshp/bitcoin-news-1.7b
+- Repositorio Hugging Face: https://huggingface.co/shreyanshp/bitcoin-news-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

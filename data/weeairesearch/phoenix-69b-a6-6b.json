@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "WeeAIResearch/Phoenix-69B-A6.6B",
+  "slug": "weeairesearch-phoenix-69b-a6-6b",
+  "author": "WeeAIResearch",
+  "url": "https://huggingface.co/WeeAIResearch/Phoenix-69B-A6.6B",
+  "created_at": "2026-11-04T16:50:00.000Z",
+  "updated_at": "2026-11-04T23:08:29.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "moe",
+    "code",
+    "pruning",
+    "distillation",
+    "mixed-precision",
+    "local-inference",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 119914257280,
+  "parameters_human": "119.91B",
+  "storage_bytes": 142672986598,
+  "storage_human": "142.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, lmstudio-community/Qwen3.8-Flash-Next-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeeAIResearch/Phoenix-69B-A6.6B · Hugging Face",
+      "url": "https://huggingface.co/WeeAIResearch/Phoenix-69B-A6.6B",
+      "snippet": "WeeAIResearch / Phoenix-69B-A6.6B Like 0 Text Generation GGUF English Mixture of Experts code pruning distillation mixed-precision experimental conversational License:qwen-community-1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "WeeAIResearch (Wee AI) - Hugging Face",
+      "url": "https://huggingface.co/WeeAIResearch",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 5 hours ago ... updated a model about 5 hours ago"
+    }
+  ]
+}

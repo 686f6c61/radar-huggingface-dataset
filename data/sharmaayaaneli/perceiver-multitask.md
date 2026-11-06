@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sharmaayaaneli/perceiver-multitask` es un repositorio de HuggingFace que contiene una implementación funcional de una arquitectura Perceiver orientada a tareas múltiples (multitask), publicada bajo licencia MIT por el usuario sharmaayaaneli. El propio autor lo describe explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark y advierte que las métricas de una futura ejecución de entrenamiento deberían documentarse por separado.
+`sharmaayaaneli/perceiver-multitask` es un repositorio de Hugging Face que contiene una implementación funcional de una arquitectura Perceiver orientada a tareas múltiples (multitask), publicada bajo licencia MIT por el usuario sharmaayaaneli. El propio autor lo describe explícitamente como un punto de partida experimental: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark y advierte que las métricas de una futura ejecución de entrenamiento deberían documentarse por separado.
 
 El dato de parámetros registrado en safetensors es de 33.088 parámetros totales, un orden de magnitud propio de un modelo de juguete o de una prueba de arquitectura, no de un modelo de lenguaje operativo. La etiqueta "huge" que aparece en la model card y en `config.json` hace referencia a la escala declarada dentro de la receta de configuración generada, no a un modelo de gran tamaño real. El tamaño del repositorio es de 0,0 GB.
 
@@ -74,10 +74,10 @@ No disponible. No se han proporcionado datos de modelos comparables y la compara
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados.
 - Restricciones de licencia: la licencia es MIT, permisiva y apta para uso comercial, pero la model card advierte que deben revisarse por separado las condiciones de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Caveat para producción: es un punto de partida experimental. Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse de forma separada de los valores por defecto aquí incluidos.
-- Metadatos incompletos: no se declara pipeline de HuggingFace, ni idiomas, ni conjunto de datos de entrenamiento, lo que dificulta la reproducibilidad.
+- Metadatos incompletos: no se declara pipeline de Hugging Face, ni idiomas, ni conjunto de datos de entrenamiento, lo que dificulta la reproducibilidad.
 - El nombre "huge" en la configuración puede inducir a error sobre la escala real del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sharmaayaaneli/perceiver-multitask
+- Modelo en Hugging Face: https://huggingface.co/sharmaayaaneli/perceiver-multitask
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados; los resultados devueltos por la búsqueda no guardan relación con este repositorio.

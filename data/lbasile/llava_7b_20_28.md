@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`lbasile/llava_7b_20_28` es un checkpoint multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario lbasile. Por su identificador y sus etiquetas (`llava`, `image-text-to-text`, `transformers`, `safetensors`), se trata de una variante de LLaVA (Large Language-and-Vision Assistant), la familia de modelos que combina un codificador visual con un modelo de lenguaje para responder preguntas sobre imagenes. El checkpoint contiene 7.063.427.072 parametros en formato safetensors, lo que lo situa en la gama de 7B habitual de las adaptaciones LLaVA sobre modelos base tipo Llama o Mistral de 7B.
+`lbasile/llava_7b_20_28` es un checkpoint multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario lbasile. Por su identificador y sus etiquetas (`llava`, `image-text-to-text`, `transformers`, `safetensors`), se trata de una variante de LLaVA (Large Language-and-Vision Assistant), la familia de modelos que combina un codificador visual con un modelo de lenguaje para responder preguntas sobre imagenes. El checkpoint contiene 7.063.427.072 parametros en formato safetensors, lo que lo situa en la gama de 7B habitual de las adaptaciones LLaVA sobre modelos base tipo Llama o Mistral de 7B.
 
-El problema que aborda es el de la comprension visual conversacional: recibir una imagen y una instruccion en lenguaje natural y generar una respuesta textual coherente, manteniendo el formato de chat multi-turno. Es relevante para desarrolladores que necesitan prototipar asistentes visuales sin depender de APIs propietarias, aunque la informacion publicada por el autor es practicamente inexistente: la model card es la plantilla autogenerada de HuggingFace y no documenta datos de entrenamiento, licencia, idiomas ni procedencia del modelo base.
+El problema que aborda es el de la comprension visual conversacional: recibir una imagen y una instruccion en lenguaje natural y generar una respuesta textual coherente, manteniendo el formato de chat multi-turno. Es relevante para desarrolladores que necesitan prototipar asistentes visuales sin depender de APIs propietarias, aunque la informacion publicada por el autor es practicamente inexistente: la model card es la plantilla autogenerada de Hugging Face y no documenta datos de entrenamiento, licencia, idiomas ni procedencia del modelo base.
 
 El sufijo `20_28` del identificador no esta explicado en la informacion disponible; podria corresponder a una configuracion de entrenamiento concreta (por ejemplo, numero de capas congeladas, epochs o un checkpoint intermedio), pero no hay confirmacion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 1 de noviembre de 2026, lo que sugiere un experimento personal mas que un lanzamiento con soporte.
 
@@ -32,7 +32,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens, la co
 - Generacion de texto condicionada a imagen (image-text-to-text): descripcion de imagenes, respuesta a preguntas visuales y dialogos sobre el contenido de una imagen.
 - Conversacion multi-turno en formato chat, segun la etiqueta `conversational`.
 - Compatibilidad con la libreria `transformers` y con el pipeline `image-text-to-text`.
-- Etiqueta `endpoints_compatible`, lo que indica que el checkpoint puede servirse a traves de los Inference Endpoints de HuggingFace.
+- Etiqueta `endpoints_compatible`, lo que indica que el checkpoint puede servirse a traves de los Inference Endpoints de Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -74,7 +74,7 @@ La comparacion con las alternativas se basa en datos publicos de esos proyectos;
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace: no hay informacion sobre sesgos, datos de entrenamiento ni evaluacion de riesgos.
+- La model card es la plantilla autogenerada de Hugging Face: no hay informacion sobre sesgos, datos de entrenamiento ni evaluacion de riesgos.
 - Riesgo de alucinacion visual elevado y no medido: sin benchmarks, no se puede estimar la fidelidad de las descripciones a la imagen.
 - Licencia no disponible: no se puede asumir uso comercial; hay que contactar con el autor o tratar el checkpoint como no licenciado para produccion.
 - Idiomas no documentados: no se puede garantizar un rendimiento aceptable en castellano ni en otros idiomas distintos del ingles, habitual en los datos de LLaVA.
@@ -85,7 +85,7 @@ La comparacion con las alternativas se basa en datos publicos de esos proyectos;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lbasile/llava_7b_20_28
+- Hugging Face: https://huggingface.co/lbasile/llava_7b_20_28
 - Paper citado en los tags (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Proyecto LLaVA (referencia de la familia): https://github.com/haotian-liu/LLaVA
 - Paper LLaVA (referencia de la familia): https://arxiv.org/abs/2304.08485

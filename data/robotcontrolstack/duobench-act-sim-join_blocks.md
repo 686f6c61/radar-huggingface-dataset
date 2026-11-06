@@ -80,7 +80,7 @@ No se dispone en la información proporcionada de datos de rendimiento de otras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-act-sim-join_blocks
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-act-sim-join_blocks
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901
 - Página del proyecto DuoBench: https://duobench.github.io/

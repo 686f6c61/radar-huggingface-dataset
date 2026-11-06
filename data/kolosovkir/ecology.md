@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kolosovkir/ecology` es un modelo de texto a texto alojado en HuggingFace por el usuario kolosovkir. La información pública disponible es escasa: las etiquetas del repositorio indican que se trata de un modelo T5 con 222.903.552 parámetros en formato safetensors, con un tamaño de repositorio de 0,9 GB. La model card es una plantilla automática generada por HuggingFace, sin contenido específico, por lo que se desconocen los datos de entrenamiento, la licencia, los idiomas y las capacidades.
+El modelo `kolosovkir/ecology` es un modelo de texto a texto alojado en Hugging Face por el usuario kolosovkir. La información pública disponible es escasa: las etiquetas del repositorio indican que se trata de un modelo T5 con 222.903.552 parámetros en formato safetensors, con un tamaño de repositorio de 0,9 GB. La model card es una plantilla automática generada por Hugging Face, sin contenido específico, por lo que se desconocen los datos de entrenamiento, la licencia, los idiomas y las capacidades.
 
 Dada la ausencia de documentación, el modelo no puede evaluarse de forma fiable. Su arquitectura T5 y el pipeline asociado `text2text-generation` sugieren que podría utilizarse para tareas de generación de texto a texto, pero no hay confirmación del autor ni benchmarks que respalden esta hipótesis. Se recomienda tratar este modelo como un artefacto sin documentar y no como una opción lista para producción.
 
@@ -10,7 +10,7 @@ Dada la ausencia de documentación, el modelo no puede evaluarse de forma fiable
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | T5 (inferida de etiquetas de HuggingFace) |
+| Arquitectura | T5 (inferida de etiquetas de Hugging Face) |
 | Parámetros totales | 222.903.552 |
 | Parámetros activos | no aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ Dada la ausencia de documentación, el modelo no puede evaluarse de forma fiable
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura concreta, los datos de entrenamiento, el número de tokens, la composición del dataset ni posibles técnicas de alineación (RLHF, DPO, etc.). La model card del repositorio es una plantilla genérica sin contenido específico. Solo se puede confirmar que el modelo utiliza la arquitectura T5, según las etiquetas de HuggingFace, y que está almacenado en formato safetensors.
+No se dispone de información sobre la arquitectura concreta, los datos de entrenamiento, el número de tokens, la composición del dataset ni posibles técnicas de alineación (RLHF, DPO, etc.). La model card del repositorio es una plantilla genérica sin contenido específico. Solo se puede confirmar que el modelo utiliza la arquitectura T5, según las etiquetas de Hugging Face, y que está almacenado en formato safetensors.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ Los siguientes datos son estimaciones basadas en el número de parámetros y el 
   - En precisión FP16: aproximadamente 0,45 GB para los pesos, más memoria de activaciones; se recomienda al menos 1 GB de VRAM.
   - En precisión FP32: aproximadamente 0,9 GB para los pesos, más memoria de activaciones; se recomienda al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, como una NVIDIA T4, RTX 3060 o superior. También puede ejecutarse en CPU con 2 GB de RAM, aunque la latencia será mayor.
-- Opciones de despliegue: al ser un modelo T5 en formato safetensors, es probable que pueda cargarse con la librería `transformers` de HuggingFace. No se dispone de información sobre compatibilidad con vLLM, TGI, llama.cpp u Ollama. Si se desea usar en estas plataformas, sería necesario convertir el modelo (por ejemplo, a GGUF) y validar su funcionamiento.
+- Opciones de despliegue: al ser un modelo T5 en formato safetensors, es probable que pueda cargarse con la librería `transformers` de Hugging Face. No se dispone de información sobre compatibilidad con vLLM, TGI, llama.cpp u Ollama. Si se desea usar en estas plataformas, sería necesario convertir el modelo (por ejemplo, a GGUF) y validar su funcionamiento.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -59,5 +59,5 @@ No se dispone de información sobre modelos comparables en la misma categoría, 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/kolosovkir/ecology
-- Perfil del autor en HuggingFace: https://huggingface.co/kolosovkir
+- Página del modelo en Hugging Face: https://huggingface.co/kolosovkir/ecology
+- Perfil del autor en Hugging Face: https://huggingface.co/kolosovkir

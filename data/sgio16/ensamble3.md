@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento de modelos alternativos en la información
 
 | Modelo | Arquitectura | Clases | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ensamble3 (este modelo) | RF-DETR-Medium x3 | 14 | 576x576, predicción 640x512 | No establecida; sujeta a acuerdo SurgVU | HuggingFace + GitHub |
+| Ensamble3 (este modelo) | RF-DETR-Medium x3 | 14 | 576x576, predicción 640x512 | No establecida; sujeta a acuerdo SurgVU | Hugging Face + GitHub |
 | RF-DETR-Medium (base) | RF-DETR | configurable | configurable | según repositorio RF-DETR | Repositorio oficial RF-DETR |
 | Alternativas de detección quirúrgica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -104,7 +104,7 @@ No se han encontrado en la información proporcionada resultados comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SGio16/Ensamble3
+- Hugging Face: https://huggingface.co/SGio16/Ensamble3
 - Repositorio GitHub (código de inferencia, Dockerfile y documentación): https://github.com/GiorgioChiesa/VuSurg26_Ensamble3
 - Paper SurgVU Dataset (arXiv:2501.09209): https://arxiv.org/abs/2501.09209
 - Paper RF-DETR (arXiv:2511.09554): https://arxiv.org/abs/2511.09554

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un único fichero en formato GGUF identificado como `Qwen3.8-27B-Q8_0-GDN_F16.gguf`, publicado por el usuario RacerMiner. Por el propio nombre del fichero se deduce que se trata de una cuantización en 8 bits (Q8_0) de un modelo de aproximadamente 27.000 millones de parámetros, presumiblemente perteneciente a la familia Qwen. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión de pesos orientada a inferencia local. El repositorio no incluye model card, pipeline declarado, lista de idiomas ni documentación técnica de ningún tipo: la única información estructurada es la licencia Apache 2.0 declarada en los metadatos.
+Este repositorio de Hugging Face contiene un único fichero en formato GGUF identificado como `Qwen3.8-27B-Q8_0-GDN_F16.gguf`, publicado por el usuario RacerMiner. Por el propio nombre del fichero se deduce que se trata de una cuantización en 8 bits (Q8_0) de un modelo de aproximadamente 27.000 millones de parámetros, presumiblemente perteneciente a la familia Qwen. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión de pesos orientada a inferencia local. El repositorio no incluye model card, pipeline declarado, lista de idiomas ni documentación técnica de ningún tipo: la única información estructurada es la licencia Apache 2.0 declarada en los metadatos.
 
 La relevancia de este tipo de repositorios es práctica: las cuantizaciones GGUF son el formato habitual para ejecutar modelos grandes en `llama.cpp`, Ollama o LM Studio, y una versión Q8_0 de un modelo de 27B resulta atractiva para quien quiera la máxima fidelidad numérica posible respecto al modelo original sin recurrir a precisión completa. Sin embargo, en este caso concreto no hay forma de verificar la procedencia del modelo base: no se ha podido corroborar la existencia de una release oficial denominada "Qwen3.8", el sufijo "GDN_F16" no está documentado y no se especifica el modelo de origen, la revisión ni el proceso de cuantización.
 
@@ -101,7 +101,7 @@ Estos datos corresponden a los modelos comparados y son aproximados; no implican
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RacerMiner/Qwen3.8-27B-Q8_0-GDN_F16.gguf
+- Repositorio en Hugging Face: https://huggingface.co/RacerMiner/Qwen3.8-27B-Q8_0-GDN_F16.gguf
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

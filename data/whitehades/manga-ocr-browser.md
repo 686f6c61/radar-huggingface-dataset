@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WhiteHades/manga-ocr-browser
+- Modelo en Hugging Face: https://huggingface.co/WhiteHades/manga-ocr-browser
 - Repositorio con scripts y resultados de prueba: https://github.com/WhiteHades/manga-ocr-browser
 - Export ONNX de origen (onnx-community): https://huggingface.co/onnx-community/manga-ocr-base-ONNX/tree/f9023406bb2f6b17df67bc4a327c56ecd20611f0
 - Modelo base original: https://huggingface.co/kha-white/manga-ocr-base

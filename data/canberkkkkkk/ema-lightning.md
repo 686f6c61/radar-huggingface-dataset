@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EMA Lightning es un sistema de síntesis de voz (text-to-speech) en turco desarrollado por el usuario canberkkkkkk y publicado en HuggingFace bajo licencia Apache 2.0. Se compone de dos piezas: un modelo acústico de tipo DiT (Diffusion Transformer) de 5,6 millones de parámetros y un vocoder de 3 millones, lo que da un total de 8,6 millones de parámetros y unos 34 MB de pesos. El autor lo presenta como el sistema con menor tasa de error de palabra (WER) medido sobre el conjunto Freya-TR-Eval, con un 0,92 %, por delante de alternativas comerciales y de mayor tamaño.
+EMA Lightning es un sistema de síntesis de voz (text-to-speech) en turco desarrollado por el usuario canberkkkkkk y publicado en Hugging Face bajo licencia Apache 2.0. Se compone de dos piezas: un modelo acústico de tipo DiT (Diffusion Transformer) de 5,6 millones de parámetros y un vocoder de 3 millones, lo que da un total de 8,6 millones de parámetros y unos 34 MB de pesos. El autor lo presenta como el sistema con menor tasa de error de palabra (WER) medido sobre el conjunto Freya-TR-Eval, con un 0,92 %, por delante de alternativas comerciales y de mayor tamaño.
 
 El problema que aborda es el de la síntesis de voz turca con un coste computacional mínimo y sin dependencia de APIs externas: el modelo funciona íntegramente en local, tanto en GPU como en CPU, y no envía texto ni audio fuera de la máquina. Su arquitectura prioriza la latencia: el primer audio está disponible en 3,86 ms y el sistema genera a 440 veces el tiempo real en una RTX 4090, o 1.316 veces con procesamiento por lotes, según los datos de la model card.
 
@@ -24,8 +24,8 @@ Es relevante ahora porque combina tres factores poco habituales en TTS de calida
 | Frecuencias de muestreo | 48.000, 24.000, 16.000 y 8.000 Hz (48 kHz por defecto) |
 | Velocidad de habla configurable | De 0,25x a 4x (1,0 por defecto) |
 | Control de reproducibilidad | Semilla (`seed`) configurable; la misma semilla produce el mismo audio |
-| Descargas en HuggingFace | 10 |
-| Likes en HuggingFace | 12 |
+| Descargas en Hugging Face | 10 |
+| Likes en Hugging Face | 12 |
 
 ## Arquitectura y entrenamiento
 
@@ -82,7 +82,7 @@ No se han publicado en la información disponible resultados de benchmarks estan
 
 | Modelo | Parametros | Contexto | Rendimiento (WER en Freya-TR-Eval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EMA Lightning | 8,6 M | No disponible | 0,92 % | Apache 2.0 | Pesos abiertos en HuggingFace y paquete PyPI |
+| EMA Lightning | 8,6 M | No disponible | 0,92 % | Apache 2.0 | Pesos abiertos en Hugging Face y paquete PyPI |
 | Trendyol-TTS | 2,38 B | No disponible | No disponible (solo se afirma que es superior al 0,92 %) | No disponible | No disponible |
 | ElevenLabs v4 | No disponible | No disponible | No disponible (solo se afirma que es superior al 0,92 %) | Propietaria (API comercial) | Servicio en la nube |
 | Gemini 3.8 | No disponible | No disponible | No disponible (solo se afirma que es superior al 0,92 %) | Propietaria (API comercial) | Servicio en la nube |
@@ -102,7 +102,7 @@ La model card unicamente afirma que EMA Lightning obtiene el WER mas bajo de tod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canberkkkkkk/ema-lightning
+- Modelo en Hugging Face: https://huggingface.co/canberkkkkkk/ema-lightning
 - Paquete en PyPI: https://pypi.org/project/ema-lightning/
 - Repositorio GitHub: referenciado en la model card como "EMA Lightning on GitHub"; la URL no se explicitado en la informacion disponible
 - Frontend de texto normalizer-tr (Erdem Tuna): https://github.com/erdemtuna/normalizer-tr

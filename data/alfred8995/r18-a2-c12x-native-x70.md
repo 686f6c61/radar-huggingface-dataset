@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `r18-a2-c12x-native-x70`, publicado por el usuario alfred8995 en HuggingFace, es un checkpoint de aproximadamente 2.018 millones de parametros (2,02 B) distribuido en formato safetensors con licencia Apache 2.0. El repositorio tiene un tamano de 14,4 GB y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. La etiqueta `sn38-nanochrono` sugiere una familia o linaje de modelos experimentales, aunque no se aporta documentacion adicional sobre su origen.
+El modelo `r18-a2-c12x-native-x70`, publicado por el usuario alfred8995 en Hugging Face, es un checkpoint de aproximadamente 2.018 millones de parametros (2,02 B) distribuido en formato safetensors con licencia Apache 2.0. El repositorio tiene un tamano de 14,4 GB y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. La etiqueta `sn38-nanochrono` sugiere una familia o linaje de modelos experimentales, aunque no se aporta documentacion adicional sobre su origen.
 
 No se dispone de informacion publica sobre la arquitectura interna, el proceso de entrenamiento, los datos utilizados ni las capacidades declaradas del modelo. El pipeline no esta especificado, los idiomas soportados no aparecen listados y no se han publicado resultados de benchmarks. Cualquier evaluacion funcional requeriria acceso al repositorio y a la model card completa, que no forma parte de la informacion disponible.
 
@@ -67,13 +67,13 @@ No disponible. No se conocen modelos comparables dentro del linaje `sn38-nanochr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r18-a2-c12x-native-x70 | 2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| r18-a2-c12x-native-x70 | 2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas de ~2 B | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan arquitectura, tokenizador, contexto ni procedimiento de inferencia, lo que impide un uso responsable sin ingenieria inversa.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para equipos y pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para equipos y pipelines automatizados.
 - Sin benchmarks ni validacion comunitaria: 10 descargas y 0 likes en el momento de la consulta; no hay evidencia publica de calidad de salida.
 - Riesgo de alucinacion y sesgos: no evaluables sin datos de entrenamiento ni pruebas de comportamiento.
 - Limitaciones de idioma: los idiomas soportados no estan declarados; no se puede asumir un buen rendimiento en castellano.
@@ -83,5 +83,5 @@ No disponible. No se conocen modelos comparables dentro del linaje `sn38-nanochr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-c12x-native-x70
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-c12x-native-x70
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

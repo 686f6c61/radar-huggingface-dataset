@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/neureps/warmly-qwen35-08b-enko-gguf
+- Repositorio Hugging Face: https://huggingface.co/neureps/warmly-qwen35-08b-enko-gguf
 - Modelo base (safetensors): https://huggingface.co/neureps/Qwen3.5-0.8B-enko
 - Adaptador de destilación: https://huggingface.co/neureps/warmly-qwen35-08b-enko-distill
 - Versión 2B del proyecto: https://huggingface.co/neureps/warmly-qwen35-2b-enko-gguf

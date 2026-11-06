@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni m
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/botduster/Krea-2-Raw
+- Repositorio del espejo en Hugging Face: https://huggingface.co/botduster/Krea-2-Raw
 - Repositorio oficial del modelo: https://huggingface.co/krea/Krea-2-Raw
 - Licencia (PDF en el repositorio): https://huggingface.co/botduster/Krea-2-Raw/blob/main/LICENSE.pdf
 - Información de licencia de Krea 2: https://krea.ai/krea-2-licensing

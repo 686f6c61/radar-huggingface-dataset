@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nnikitindaniil/beit-contrastive-dev | 49.600 | no disponible | Apache-2.0 | HuggingFace |
-| justtaeyoungoh/beit-contrastive | no disponible | no disponible | no disponible | HuggingFace |
-| Otros modelos Beit preentrenados (p. ej. microsoft/beit-base-patch16-224) | 86M | no disponible | MIT (típicamente) | HuggingFace |
+| Nnikitindaniil/beit-contrastive-dev | 49.600 | no disponible | Apache-2.0 | Hugging Face |
+| justtaeyoungoh/beit-contrastive | no disponible | no disponible | no disponible | Hugging Face |
+| Otros modelos Beit preentrenados (p. ej. microsoft/beit-base-patch16-224) | 86M | no disponible | MIT (típicamente) | Hugging Face |
 
 La comparación con `justtaeyoungoh/beit-contrastive` se limita a la existencia del repositorio; no se conocen sus especificaciones técnicas ni su estado de entrenamiento. Los modelos Beit preentrenados estándar tienen un número de parámetros varios órdenes de magnitud mayor y están diseñados para tareas de visión, pero no son comparables en tamaño ni en propósito a este artefacto experimental.
 
@@ -70,12 +70,12 @@ La comparación con `justtaeyoungoh/beit-contrastive` se limita a la existencia 
 
 - **No entrenado**: el checkpoint es de inicialización y no tiene ningún valor práctico para inferencia real.
 - **Sin auditoría**: el autor advierte de que el checkpoint no ha sido auditado para robustez, equidad ni transferencia de dominio.
-- **Implementación personalizada**: las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador, lo que dificulta su integración en pipelines estándar.
+- **Implementación personalizada**: las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador, lo que dificulta su integración en pipelines estándar.
 - **Riesgo de alucinación**: al no ser un modelo de lenguaje, no se aplica, pero cualquier interpretación de sus salidas sería engañosa.
 - **Restricciones de licencia**: la licencia Apache-2.0 permite uso comercial, pero el autor indica que se deben revisar los términos de las fuentes de datos si se utiliza con datasets externos.
 - **Estado de producción**: no debe usarse en sistemas de producción ni como base para tomar decisiones, ya que carece de cualquier entrenamiento real.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nnikitindaniil/beit-contrastive-dev
+- Modelo en Hugging Face: https://huggingface.co/Nnikitindaniil/beit-contrastive-dev
 - Repositorio relacionado: https://huggingface.co/justtaeyoungoh/beit-contrastive

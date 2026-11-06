@@ -83,7 +83,7 @@ La comparativa se limita a los modelos base que componen la fusión, ya que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thlurte/Qwen2.5-CodeMath-7B
+- Modelo en Hugging Face: https://huggingface.co/thlurte/Qwen2.5-CodeMath-7B
 - Modelo base Qwen2.5-Coder-7B: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Modelo base Qwen2.5-Math-7B: https://huggingface.co/Qwen/Qwen2.5-Math-7B
 - Modelo ancla Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-damnilo/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3. No se trata de un modelo de lenguaje ni de un transformer: es una politica neuronal que recibe el estado del entorno y emite acciones discretas para controlar el aterrizaje de un modulo lunar en un simulador fisico 2D. El repositorio se publica en HuggingFace con la libreria `stable-baselines3` y esta pensado para cargarse mediante `huggingface_sb3` junto al entorno correspondiente de Gymnasium.
+damnilo/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, utilizando la libreria stable-baselines3. No se trata de un modelo de lenguaje ni de un transformer: es una politica neuronal que recibe el estado del entorno y emite acciones discretas para controlar el aterrizaje de un modulo lunar en un simulador fisico 2D. El repositorio se publica en Hugging Face con la libreria `stable-baselines3` y esta pensado para cargarse mediante `huggingface_sb3` junto al entorno correspondiente de Gymnasium.
 
 El modelo tiene un caracter claramente experimental y de bajo perfil: acumula cero descargas y cero "likes", el tamano del repositorio es de 0.0 GB y la propia model card contiene un bloque de uso sin completar (marcado como `TODO: Add your code`). No se declara licencia, idiomas ni datos de entrenamiento mas alla del nombre del entorno y del algoritmo.
 
@@ -31,7 +31,7 @@ No hay constancia de innovaciones tecnicas adicionales: no se menciona decodific
 
 - Control de un agente en el entorno LunarLander-v3: dado un vector de observacion de 8 dimensiones, la politica selecciona una de las 4 acciones discretas (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho).
 - Inferencia determinista o estocastica de la accion, segun se configure al cargar la politica con stable-baselines3.
-- Integracion con el ecosistema stable-baselines3 y con HuggingFace Hub mediante `huggingface_sb3`.
+- Integracion con el ecosistema stable-baselines3 y con Hugging Face Hub mediante `huggingface_sb3`.
 - Reentrenamiento o ajuste posterior: al ser un checkpoint de PPO, puede servir como inicializacion para continuar el entrenamiento en LunarLander-v3 o en variantes del entorno.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, matematicas, vision, audio, tool calling ni capacidades de agente multi-paso basadas en lenguaje.
 - No dispone de capacidades multilingues, por no operar sobre texto.
@@ -43,7 +43,7 @@ No hay constancia de innovaciones tecnicas adicionales: no se menciona decodific
 - Estudio de infraentrenamiento: el rendimiento negativo y la alta varianza lo convierten en un caso de analisis de curvas de aprendizaje, colapso de politica o necesidad de mas pasos de entrenamiento.
 - Continuacion del entrenamiento (fine-tuning): puede cargarse con `PPO.load()` y reanudarse el entrenamiento con mas pasos, normalizacion de recompensas o ajuste del learning rate para intentar superar el umbral de resolucion del entorno.
 - Generacion de trayectorias para aprendizaje por imitacion: las trayectorias recogidas por esta politica (incluidos los fallos) pueden utilizarse para estudiar tecnicas de imitation learning o de aprendizaje por demostracion en entornos de control continuo-discreto.
-- Pruebas de integracion de tooling: valida el flujo completo de publicacion y descarga de agentes de stable-baselines3 en HuggingFace Hub (`load_from_hub`), util para equipos que construyan pipelines internos de experimentacion.
+- Pruebas de integracion de tooling: valida el flujo completo de publicacion y descarga de agentes de stable-baselines3 en Hugging Face Hub (`load_from_hub`), util para equipos que construyan pipelines internos de experimentacion.
 - Evaluacion de robustez y aleatoriedad: su desviacion tipica de 34.88 hace que sea un candidato adecuado para medir sensibilidad a la semilla del entorno y para calibrar protocolos de evaluacion con multiples episodios.
 - Material para entornos educativos o demos interactivas: al ser un modelo ligero de RL clasico, puede ejecutarse en el navegador o en portatiles sin GPU, si se exporta la politica a un formato de inferencia adecuado.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de terceros en la informacion proporcionad
 
 | Modelo | Algoritmo | Entorno | Parametros | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| damnilo/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | No disponible | No disponible | mean_reward -139.58 +/- 34.88 (no verificado) | HuggingFace Hub |
+| damnilo/ppo-LunarLander-v3 | PPO (stable-baselines3) | LunarLander-v3 | No disponible | No disponible | mean_reward -139.58 +/- 34.88 (no verificado) | Hugging Face Hub |
 | Agentes PPO de referencia del RL Zoo (stable-baselines3) | PPO | LunarLander-v3 | No disponible | MIT (la de la libreria; no confirmado para cada checkpoint) | No disponible | Repositorio RL Zoo |
 | Agentes DQN para LunarLander-v3 | DQN | LunarLander-v3 | No disponible | No disponible | No disponible | Implementaciones de la comunidad |
 | Agentes A2C para LunarLander-v3 | A2C | LunarLander-v3 | No disponible | No disponible | No disponible | Implementaciones de la comunidad |
@@ -92,6 +92,6 @@ No hay datos suficientes para afirmar superioridad o inferioridad frente a estas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/damnilo/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/damnilo/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Nota sobre la busqueda web: los resultados devueltos por la busqueda no guardan relacion con el modelo. Todos apuntan a contenidos de la emisora alemana N-JOY (https://www.ndr.de/n-joy/live, https://www.ndr.de/n-joy, https://www.radio.de/s/n-joy, https://www.ardsounds.de/radio/ndr/n-joy/, https://radiome.de/n-joy) y no aportan informacion tecnica sobre este agente. No se han encontrado papers, blogs ni demos asociados al modelo.

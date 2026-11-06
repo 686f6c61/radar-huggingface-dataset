@@ -87,6 +87,6 @@ No se dispone de datos suficientes para una comparativa detallada de rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AleaiactaEst1/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/AleaiactaEst1/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado, próximamente): https://www.qwencloud.com/models/qwen3.8-27b
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

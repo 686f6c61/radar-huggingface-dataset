@@ -35,7 +35,7 @@ En cuanto al entrenamiento, la unica referencia es el dataset declarado, littlel
 
 - Generacion de texto conversacional en ingles, con formato de instrucciones (tags `instruct` y `conversational`).
 - Generacion de texto general bajo el pipeline `text-generation`.
-- Compatibilidad declarada con `endpoints_compatible`, lo que indica que el repositorio sigue la estructura esperada por los endpoints de inferencia de HuggingFace.
+- Compatibilidad declarada con `endpoints_compatible`, lo que indica que el repositorio sigue la estructura esperada por los endpoints de inferencia de Hugging Face.
 - Comportamiento potencialmente acotado o restringido en la salida, segun el tag `bounded`; la naturaleza de esta restriccion no esta documentada.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no hay evidencia documentada.
@@ -99,7 +99,7 @@ La informacion proporcionada no incluye datos de rendimiento de este modelo ni d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tetraspace/littlelearner-0.6b-chatty-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Tetraspace/littlelearner-0.6b-chatty-GGUF
 - Modelo base: https://huggingface.co/littlelearner/littlelearner-0.6b-chatty
 - Dataset declarado: https://huggingface.co/datasets/littlelearner/LittleCurriculum
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

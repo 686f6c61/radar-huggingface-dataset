@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4` es una cuantización FP4 (weight-only) del modelo multimodal Qwen3-VL-4B, publicada por el usuario Rin247 en HuggingFace. La variante ha sido sometida a un proceso de "abliteration" (eliminación de la dirección de rechazo) mediante proyección ortogonal, lo que elimina los guardarraíles de seguridad del modelo original. El resultado es un modelo de 2.415.636.992 parámetros (dato real de los safetensors) que ocupa 3.1 GB en el repositorio.
+El modelo `Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4` es una cuantización FP4 (weight-only) del modelo multimodal Qwen3-VL-4B, publicada por el usuario Rin247 en Hugging Face. La variante ha sido sometida a un proceso de "abliteration" (eliminación de la dirección de rechazo) mediante proyección ortogonal, lo que elimina los guardarraíles de seguridad del modelo original. El resultado es un modelo de 2.415.636.992 parámetros (dato real de los safetensors) que ocupa 3.1 GB en el repositorio.
 
 Esta ficha se basa exclusivamente en la información proporcionada en la model card y en los resultados de búsqueda web. No se dispone de datos sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni la licencia. El modelo está pensado para usuarios que necesitan una versión ligera y sin restricciones del Qwen3-VL-4B, aunque la ausencia de documentación técnica detallada limita su uso en entornos de producción sin validación previa.
 
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen3-VL-4B-In
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4
+- Modelo en Hugging Face: https://huggingface.co/Rin247/Qwen3-VL-4B-Uncensored-Aquarion-FP4
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Variante abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated

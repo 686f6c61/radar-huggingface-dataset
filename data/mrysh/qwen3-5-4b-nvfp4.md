@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrysh/qwen3.5-4b-nvfp4 | 2.423.172.096 (safetensors) | no disponible | NVFP4, group size 16 | Apache 2.0 | HuggingFace, 15 descargas |
-| Qwen/Qwen3.5-4B (base) | ~4B (nominal) | no disponible | BF16 original | Apache 2.0 | HuggingFace |
+| mrysh/qwen3.5-4b-nvfp4 | 2.423.172.096 (safetensors) | no disponible | NVFP4, group size 16 | Apache 2.0 | Hugging Face, 15 descargas |
+| Qwen/Qwen3.5-4B (base) | ~4B (nominal) | no disponible | BF16 original | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones del mismo base (INT4, AWQ, GPTQ) | ~4B | no disponible | 4 bits enteros o mixtos | Apache 2.0 | segun el publicador |
 
 La comparativa con alternativas de la misma categoria se limita al modelo base y a otras tecnicas de cuantizacion incluidas en el benchmark del autor (4 modelos x 8 tecnicas), cuyos nombres y resultados no se detallan en la informacion disponible. No se dispone de datos de rendimiento comparado (BFCL, Energy-QA, hiring-bias, MedQA) para este checkpoint.
@@ -83,7 +83,7 @@ La comparativa con alternativas de la misma categoria se limita al modelo base y
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/mrysh/qwen3.5-4b-nvfp4
+- Hugging Face del checkpoint: https://huggingface.co/mrysh/qwen3.5-4b-nvfp4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Libreria de cuantizacion: nvidia-modelopt 0.47.0 (no se proporciona enlace en la informacion disponible)
 - BFCL (Berkeley Function Calling Leaderboard): no se proporciona enlace en la informacion disponible

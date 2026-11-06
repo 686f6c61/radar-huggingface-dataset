@@ -73,7 +73,7 @@ SmolVLA es significativamente más pequeño que OpenVLA, lo que permite su ejecu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaenn/smolvla_so101_multitask_simreal_fullft_0831
+- Modelo en Hugging Face: https://huggingface.co/Chaenn/smolvla_so101_multitask_simreal_fullft_0831
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Repositorio relacionado (evaluación SO-101): https://github.com/ktkchh/smolvla-so101-multitask-long-horizon

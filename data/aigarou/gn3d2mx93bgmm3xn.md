@@ -93,7 +93,7 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIGAROU/gn3d2mx93bgmm3xn
+- Modelo en Hugging Face: https://huggingface.co/AIGAROU/gn3d2mx93bgmm3xn
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Perfil del autor citado en la model card: https://huggingface.co/kyaky
 - Documentación de vLLM (runtime recomendado): https://docs.vllm.ai

@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/pocket-tts-18m-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/pocket-tts-18m-loom
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Exportación del modelo completo: https://huggingface.co/loom-ai-org/pocket-tts-loom
 - Repositorio del motor: https://github.com/loom-ai-org/loom.cpp

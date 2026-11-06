@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Primotion v3 delta es un repositorio de HuggingFace publicado por el usuario HaoyunOvO que no contiene pesos de un modelo en el sentido habitual, sino un archivo comprimido de una imagen Docker. El artefacto distribuido, `primotion-v3-delta.tar`, ocupa 72.854.594.048 bytes (67,85 GiB) y va acompanado de un fichero de checksum SHA-256 para verificar la integridad de la descarga. El repositorio esta etiquetado con `robotics`, `docker` y `bimanual-manipulation`, lo que situa el contenido en el ambito de la robotica y, mas concretamente, en la manipulacion bimanual.
+Primotion v3 delta es un repositorio de Hugging Face publicado por el usuario HaoyunOvO que no contiene pesos de un modelo en el sentido habitual, sino un archivo comprimido de una imagen Docker. El artefacto distribuido, `primotion-v3-delta.tar`, ocupa 72.854.594.048 bytes (67,85 GiB) y va acompanado de un fichero de checksum SHA-256 para verificar la integridad de la descarga. El repositorio esta etiquetado con `robotics`, `docker` y `bimanual-manipulation`, lo que situa el contenido en el ambito de la robotica y, mas concretamente, en la manipulacion bimanual.
 
 La model card es explicita respecto a la naturaleza del repositorio: se trata de un archivo descargable, no de un endpoint de Docker Registry, y la verificacion de la subida no constituye una evaluacion de inferencia. Esto implica que no hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto ni datos de entrenamiento. La fecha de creacion y ultima actualizacion registradas son el 20 de septiembre de 2026, y el repositorio no acumula descargas ni likes en el momento de la consulta.
 
@@ -86,6 +86,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HaoyunOvO/primotion-v3_delta
+- Repositorio en Hugging Face: https://huggingface.co/HaoyunOvO/primotion-v3_delta
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a paginas de loterias (Lotofacil) sin relacion alguna con el contenido del repositorio.
 - No se dispone de enlaces a papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

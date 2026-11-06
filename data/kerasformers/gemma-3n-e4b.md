@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kerasformers/gemma-3n-e4b` es una conversión pura en Keras 3 del modelo multimodal `google/gemma-3n-E4B` de Google, realizada por el autor `kerasformers`. Este checkpoint base (pretrained, no instruido) permite ejecutar Gemma 3n de forma nativa en Keras 3 con tres backends intercambiables: TensorFlow, PyTorch y JAX, sin necesidad de usar el código original de HuggingFace Transformers. El modelo es multimodal, capaz de procesar texto, imagen y audio, y está diseñado para ejecución en dispositivos (on-device), incorporando innovaciones arquitectónicas como AltUp, LAuReL, MatFormer, embeddings por capa, sparsity de activación y atención híbrida 5:1 sliding/global.
+`kerasformers/gemma-3n-e4b` es una conversión pura en Keras 3 del modelo multimodal `google/gemma-3n-E4B` de Google, realizada por el autor `kerasformers`. Este checkpoint base (pretrained, no instruido) permite ejecutar Gemma 3n de forma nativa en Keras 3 con tres backends intercambiables: TensorFlow, PyTorch y JAX, sin necesidad de usar el código original de Hugging Face Transformers. El modelo es multimodal, capaz de procesar texto, imagen y audio, y está diseñado para ejecución en dispositivos (on-device), incorporando innovaciones arquitectónicas como AltUp, LAuReL, MatFormer, embeddings por capa, sparsity de activación y atención híbrida 5:1 sliding/global.
 
 La relevancia de esta conversión radica en que facilita la integración de Gemma 3n en proyectos que ya usan Keras, manteniendo la misma API y permitiendo cambiar de backend sin modificar el código. El repositorio tiene un tamaño de 31.3 GB, lo que sugiere que los pesos están en bfloat16 (formato por defecto). Es un modelo base, por lo que está pensado para fine-tuning o para tareas de completado, no para seguir instrucciones directamente.
 
@@ -16,7 +16,7 @@ La relevancia de esta conversión radica en que facilita la integración de Gemm
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | bfloat16 (por defecto), float32, int8 |
 | Idiomas soportados | en (inglés) |
-| Licencia | Gemma (gated, requiere aceptar términos en HuggingFace) |
+| Licencia | Gemma (gated, requiere aceptar términos en Hugging Face) |
 | Formato de pesos | safetensors (también pesos de Keras en el repo) |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 - Solo soporta inglés (idioma `en`), lo que limita su uso en otros idiomas.
 - Es un modelo base, no instruido; para tareas de conversación o seguimiento de instrucciones se recomienda usar la variante `-it` (instruct).
-- Licencia Gemma gated: requiere aceptar los términos de uso de Google en HuggingFace antes de descargar. El uso comercial está sujeto a esos términos.
+- Licencia Gemma gated: requiere aceptar los términos de uso de Google en Hugging Face antes de descargar. El uso comercial está sujeto a esos términos.
 - Riesgo de alucinaciones y sesgos inherentes a los modelos de lenguaje, no documentados específicamente para esta conversión.
 - No se especifican limitaciones de contexto ni de longitud de entrada; se desconoce la ventana máxima.
 - La cuantización int8 puede degradar ligeramente la calidad de las respuestas, aunque no hay datos cuantitativos.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kerasformers/gemma-3n-e4b
+- Repositorio Hugging Face: https://huggingface.co/kerasformers/gemma-3n-e4b
 - Modelo base original: https://huggingface.co/google/gemma-3n-E4B
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Gemma 3n en KerasFormers: https://imvision12.github.io/KerasFormers/gemma3n/

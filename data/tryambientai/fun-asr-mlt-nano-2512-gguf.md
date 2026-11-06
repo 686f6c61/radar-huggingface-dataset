@@ -110,7 +110,7 @@ Frente a Whisper large-v3, este modelo ofrece menor tamaño (830 M frente a 1550
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/tryambientai/Fun-ASR-MLT-Nano-2512-gguf
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/tryambientai/Fun-ASR-MLT-Nano-2512-gguf
 - Modelo base original: https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512
 - Commit del modelo base usado para la conversión: https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512/commit/cf67a938bf2829959d08fdfb84e186eff02a67ff
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

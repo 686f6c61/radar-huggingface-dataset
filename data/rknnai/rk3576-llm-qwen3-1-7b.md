@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RKNNAI/RK3576-LLM-Qwen3-1.7B | 1,7B | 1k a 16k segun variante | w4a16 y w8a8 en formato RKLLM | Apache 2.0 | HuggingFace y ModelScope, revision v1.2.4 |
-| Qwen/Qwen3-1.7B (original) | 1,7B | No disponible en la informacion proporcionada | safetensors u otros formatos estandar (no especificado) | Apache 2.0 | HuggingFace |
-| RKNNAI/RK3576-LLM-Qwen3-4B-Instruct-2507 | 4B | No disponible en la informacion proporcionada | Formato RKLLM | Apache 2.0 | HuggingFace |
+| RKNNAI/RK3576-LLM-Qwen3-1.7B | 1,7B | 1k a 16k segun variante | w4a16 y w8a8 en formato RKLLM | Apache 2.0 | Hugging Face y ModelScope, revision v1.2.4 |
+| Qwen/Qwen3-1.7B (original) | 1,7B | No disponible en la informacion proporcionada | safetensors u otros formatos estandar (no especificado) | Apache 2.0 | Hugging Face |
+| RKNNAI/RK3576-LLM-Qwen3-4B-Instruct-2507 | 4B | No disponible en la informacion proporcionada | Formato RKLLM | Apache 2.0 | Hugging Face |
 
 El modelo original Qwen3-1.7B sirve como referencia de capacidades y precision sin cuantizacion, mientras que la variante de 4B del mismo autor ofrece mas calidad potencial a costa de mayor consumo de memoria en el RK3576. No se dispone de datos de rendimiento comparados entre estas opciones.
 
@@ -91,8 +91,8 @@ El modelo original Qwen3-1.7B sirve como referencia de capacidades y precision s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen3-1.7B
-- Modelo fuente en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen3-1.7B
+- Modelo fuente en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B
 - Otra conversion RKLLM del mismo autor: https://huggingface.co/RKNNAI/RK3576-LLM-Qwen3-4B-Instruct-2507
 - Servidor de API compatible con OpenAI para Rockchip NPU: https://github.com/GatekeeperZA/RKLLM-API-Server
 - Documentacion de RKLLM en ROC-RK3576-PC: https://www.aipaipai.wiki/en/firefly/ROC-RK3576-PC/usage_rkllm

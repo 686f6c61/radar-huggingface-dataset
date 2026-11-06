@@ -3,7 +3,7 @@
 ## Resumen
 El modelo `Jommarn/UNSEEN_Gemma_4_E2B_NSFW` es una adaptación no oficial de `google/gemma-4-E2B-it`, un modelo multimodal de la familia Gemma 4 desarrollado por Google DeepMind. La modificación principal consiste en la eliminación permanente de los mecanismos de rechazo (refusal) mediante una técnica de abliteración por proyección ortogonal aplicada a todas las capas del transformador. El resultado es un modelo capaz de generar contenido explícito y NSFW sin filtros, tanto en inglés como en tailandés, manteniendo las capacidades de visión y lenguaje del modelo base.
 
-Con 5.104.297.539 parámetros (según los pesos en safetensors), el modelo se posiciona en un rango medio-bajo dentro de la familia Gemma. La arquitectura es de tipo transformer multimodal (image-text-to-text), y el repositorio indica compatibilidad con vLLM y Transformers. La licencia no está especificada en la ficha de HuggingFace, aunque el modelo base Gemma 4 tiene su propia licencia que restringe el uso comercial en ciertos casos. Este modelo está pensado para usuarios que necesitan generación de texto sin censura, principalmente en contextos de ficción erótica o investigación sobre seguridad de modelos.
+Con 5.104.297.539 parámetros (según los pesos en safetensors), el modelo se posiciona en un rango medio-bajo dentro de la familia Gemma. La arquitectura es de tipo transformer multimodal (image-text-to-text), y el repositorio indica compatibilidad con vLLM y Transformers. La licencia no está especificada en la ficha de Hugging Face, aunque el modelo base Gemma 4 tiene su propia licencia que restringe el uso comercial en ciertos casos. Este modelo está pensado para usuarios que necesitan generación de texto sin censura, principalmente en contextos de ficción erótica o investigación sobre seguridad de modelos.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -51,9 +51,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jommarn/UNSEEN_Gemma_4_E2B_NSFW | 5.1B | no disponible | Sí | no disponible | HuggingFace |
-| google/gemma-4-E2B-it (base) | 2.1B (según web) | 8K | No (texto) | Gemma license | HuggingFace |
-| justfrfn/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Jommarn/UNSEEN_Gemma_4_E2B_NSFW | 5.1B | no disponible | Sí | no disponible | Hugging Face |
+| google/gemma-4-E2B-it (base) | 2.1B (según web) | 8K | No (texto) | Gemma license | Hugging Face |
+| justfrfn/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No hay datos de benchmarks comparativos. La comparativa se limita a características básicas y es incompleta por falta de información pública.
 
@@ -67,7 +67,7 @@ No hay datos de benchmarks comparativos. La comparativa se limita a característ
 - Sin soporte oficial: es un modelo de un tercero, no avalado por Google DeepMind, y puede tener vulnerabilidades no documentadas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Jommarn/UNSEEN_Gemma_4_E2B_NSFW
+- Modelo en Hugging Face: https://huggingface.co/Jommarn/UNSEEN_Gemma_4_E2B_NSFW
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Información sobre Gemma 4 E2B: https://gemma4.dev/models/gemma-4-e2b
 - Variante similar (justfrfn): https://huggingface.co/justfrfn/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive

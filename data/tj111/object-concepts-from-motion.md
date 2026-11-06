@@ -73,7 +73,7 @@ No se dispone de información comparativa con otros modelos de representación v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tj111/object-concepts-from-motion
+- Hugging Face: https://huggingface.co/tj111/object-concepts-from-motion
 - GitHub: https://github.com/TJ12342/object-concepts-from-motion
 - arXiv (abstract): https://arxiv.org/abs/2505.21635
 - arXiv (HTML): https://arxiv.org/html/2505.21635v1

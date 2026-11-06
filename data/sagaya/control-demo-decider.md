@@ -80,9 +80,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sagaya/control-demo-decider | ~0,8B + LoRA (r 16) y cabeza pointer | Probabilidad sobre opciones (no generativa) | No disponible | Apache-2.0 | HuggingFace, 6 descargas, 0 likes |
-| jaredpalmer/kev-0.8b | ~0,8B | Probabilidad sobre opciones (no generativa) | No disponible | Apache-2.0 | HuggingFace; es el punto de partida del ajuste |
-| Qwen/Qwen3.5-0.8B-Base | 0,8B | Texto generado | No disponible | Apache-2.0 | HuggingFace; es el backbone congelado |
+| sagaya/control-demo-decider | ~0,8B + LoRA (r 16) y cabeza pointer | Probabilidad sobre opciones (no generativa) | No disponible | Apache-2.0 | Hugging Face, 6 descargas, 0 likes |
+| jaredpalmer/kev-0.8b | ~0,8B | Probabilidad sobre opciones (no generativa) | No disponible | Apache-2.0 | Hugging Face; es el punto de partida del ajuste |
+| Qwen/Qwen3.5-0.8B-Base | 0,8B | Texto generado | No disponible | Apache-2.0 | Hugging Face; es el backbone congelado |
 | LLM generalista de 0,5-1,5B parametros | Del orden de 0,5-1,5B | Texto generado | No disponible | Variable | No disponible en la informacion proporcionada |
 
 La comparacion directa con alternativas de proposito general no es significativa: control-demo-decider no compite en generacion de texto, sino en seleccion rapida de la siguiente accion sobre un conjunto cerrado de opciones, con una latencia de decenas de milisegundos y un mecanismo de cesion por confianza que un LLM generico no incorpora de serie.
@@ -102,7 +102,7 @@ La comparacion directa con alternativas de proposito general no es significativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sagaya/control-demo-decider
+- Modelo en Hugging Face: https://huggingface.co/sagaya/control-demo-decider
 - Proyecto Control (repositorio del autor): https://github.com/sagaya/Control
 - Arquitectura Kev (repositorio de Jared Palmer): https://github.com/jaredpalmer/kev
 - Modelo base Qwen3.5 0.8B Base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

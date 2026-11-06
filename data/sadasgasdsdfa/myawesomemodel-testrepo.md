@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario sadasgasdsdfa. La informacion disponible es internamente contradictoria: los metadatos de HuggingFace lo etiquetan como un modelo BERT de extraccion de caracteristicas (feature-extraction) con licencia MIT, mientras que la model card describe un modelo de lenguaje orientado a razonamiento, con modo de pensamiento extendido, soporte de function calling y mejoras sustanciales en tareas de matematicas, programacion y logica. El repositorio no contiene pesos (tamano declarado de 0,0 GB), no tiene descargas ni likes y fue creado el 15 de octubre de 2026, por lo que se trata con alta probabilidad de un repositorio de prueba o de una plantilla sin modelo real asociado.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario sadasgasdsdfa. La informacion disponible es internamente contradictoria: los metadatos de Hugging Face lo etiquetan como un modelo BERT de extraccion de caracteristicas (feature-extraction) con licencia MIT, mientras que la model card describe un modelo de lenguaje orientado a razonamiento, con modo de pensamiento extendido, soporte de function calling y mejoras sustanciales en tareas de matematicas, programacion y logica. El repositorio no contiene pesos (tamano declarado de 0,0 GB), no tiene descargas ni likes y fue creado el 15 de octubre de 2026, por lo que se trata con alta probabilidad de un repositorio de prueba o de una plantilla sin modelo real asociado.
 
 La model card afirma que la version actual del modelo eleva la precision en AIME 2025 del 70 % al 87,5 % respecto a la version anterior, a costa de aumentar el consumo medio de tokens por pregunta de 12K a 23K. Tambien menciona una reduccion de la tasa de alucinacion y una mejora en el soporte de function calling. Sin embargo, no se proporciona el nombre real del modelo base, ni el numero de parametros, ni la arquitectura, ni la longitud de contexto, ni la composicion del dataset de entrenamiento.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe interpretarse como un analisis del repositorio y 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace declaran `bert`, la model card no especifica arquitectura) |
+| Arquitectura | no disponible (los tags de Hugging Face declaran `bert`, la model card no especifica arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks verificables de forma independiente
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa fiable. La model card anonimiza los modelos de referencia como Model1, Model2 y Model1-v2, sin identificar versiones, parametros ni contextos. Ademas, los metadatos de HuggingFace describen un modelo BERT de feature-extraction, mientras que la model card describe un LLM de razonamiento, lo que impide categorizar el modelo con certeza.
+No es posible establecer una comparativa fiable. La model card anonimiza los modelos de referencia como Model1, Model2 y Model1-v2, sin identificar versiones, parametros ni contextos. Ademas, los metadatos de Hugging Face describen un modelo BERT de feature-extraction, mientras que la model card describe un LLM de razonamiento, lo que impide categorizar el modelo con certeza.
 
 | Criterio | MyAwesomeModel-TestRepo | Alternativas |
 |---|---|---|
@@ -104,7 +104,7 @@ No es posible establecer una comparativa fiable. La model card anonimiza los mod
 
 ## Limitaciones y advertencias
 
-- Inconsistencia documental grave: los tags de HuggingFace indican `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con function calling.
+- Inconsistencia documental grave: los tags de Hugging Face indican `bert` y `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con function calling.
 - El repositorio no contiene pesos utilizables (0,0 GB). No es posible ejecutar el modelo con la informacion disponible.
 - Cero descargas y cero likes; sin validacion por parte de la comunidad.
 - Fecha de creacion y actualizacion en 2026, lo que refuerza la sospecha de que se trata de un repositorio de prueba o una plantilla.
@@ -118,5 +118,5 @@ No es posible establecer una comparativa fiable. La model card anonimiza los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadasgasdsdfa/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/sadasgasdsdfa/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada. La model card menciona un "official website" y un "code repository" sin proporcionar las URL.

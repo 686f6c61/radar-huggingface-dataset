@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientNet-B0 con pesos de `timm/efficientnet_b0.ra_in1k` convertido al formato Intermediate Representation (IR) de OpenVINO y comprimido a FP16. Lo publica la organizacion OpenVINO en HuggingFace y deriva del modelo original de la libreria `timm` (Ross Wightman), entrenado con recetas de *RandAugment* y *stochastic depth* sobre ImageNet-1k. Es, por tanto, un clasificador de imagenes de 1000 clases, no un modelo generativo: no procesa texto ni mantiene conversaciones.
+EfficientNet-B0 con pesos de `timm/efficientnet_b0.ra_in1k` convertido al formato Intermediate Representation (IR) de OpenVINO y comprimido a FP16. Lo publica la organizacion OpenVINO en Hugging Face y deriva del modelo original de la libreria `timm` (Ross Wightman), entrenado con recetas de *RandAugment* y *stochastic depth* sobre ImageNet-1k. Es, por tanto, un clasificador de imagenes de 1000 clases, no un modelo generativo: no procesa texto ni mantiene conversaciones.
 
 El interes practico esta en el *runtime*: el IR de OpenVINO permite ejecutar el clasificador sobre CPU, GPU integrada o NPU de Intel con latencia baja y sin dependencias de PyTorch en produccion. El modelo es pequeno (unos 5,3 millones de parametros en su version original) y esta pensado para tareas de *edge* o *AI PC*, donde el coste por inferencia y el consumo energetico importan mas que la precision absoluta.
 
@@ -81,14 +81,14 @@ La comparacion con alternativas de la misma categoria (ResNet-50, MobileNetV3, E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/efficientnet_b0_ra_in1k-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/efficientnet_b0_ra_in1k-fp16-ov
 - Modelo original: https://huggingface.co/timm/efficientnet_b0.ra_in1k
 - Documentacion del formato IR de OpenVINO: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
 - Documentacion de OpenVINO: https://docs.openvino.ai/
 - Repositorio de OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino
 - Intel Distribution of OpenVINO Toolkit: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
 - OpenVINO en Wikipedia: https://en.wikipedia.org/wiki/OpenVINO
-- Organizacion OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- Organizacion OpenVINO en Hugging Face: https://huggingface.co/OpenVINO
 - Model API (repositorio): https://github.com/open-edge-platform/model_api
 - Documentacion de Model API: https://open-edge-platform.github.io/model_api/latest/
 - Principios globales de derechos humanos de Intel: https://www.intel.com/content/dam/www/central-libraries/us/en/documents/policy-human-rights.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vkovtun/llama-text-to-sql-2026-10-01_20.12.15-Llama-3.1-8B-Instruct-finetune-QLORA` es un ajuste fino del modelo instructivo `meta-llama/Llama-3.1-8B-Instruct` de Meta, publicado por el usuario vkovtun en HuggingFace. Por el nombre del repositorio y por los tags declarados (`trl`, `sft`, `generated_from_trainer`), se trata de un ajuste supervisado (SFT) orientado a la tarea de text-to-SQL, es decir, convertir una pregunta en lenguaje natural junto con un esquema de base de datos en una consulta SQL ejecutable. El entrenamiento se ha realizado con la libreria TRL de HuggingFace, segun la propia model card.
+El modelo `vkovtun/llama-text-to-sql-2026-10-01_20.12.15-Llama-3.1-8B-Instruct-finetune-QLORA` es un ajuste fino del modelo instructivo `meta-llama/Llama-3.1-8B-Instruct` de Meta, publicado por el usuario vkovtun en Hugging Face. Por el nombre del repositorio y por los tags declarados (`trl`, `sft`, `generated_from_trainer`), se trata de un ajuste supervisado (SFT) orientado a la tarea de text-to-SQL, es decir, convertir una pregunta en lenguaje natural junto con un esquema de base de datos en una consulta SQL ejecutable. El entrenamiento se ha realizado con la libreria TRL de Hugging Face, segun la propia model card.
 
 El interes de esta ficha es limitado pero concreto: es un ejemplo de pipeline de ajuste fino reproducible con TRL sobre un modelo base de 8.000 millones de parametros y 128.000 tokens de contexto, un tamano que se puede entrenar con QLoRA en una sola GPU de consumo o de gama profesional. El repositorio ocupa 0,1 GB, un tamano compatible con adaptadores LoRA y no con los pesos completos de un modelo de 8B en precision de 16 bits (que rondarian los 16 GB), aunque la model card no confirma explicitamente este punto ni incluye el tag `peft`.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (text-to-SQL QLoRA) | 8B | 128.000 tokens (heredados) | no disponible | HuggingFace, 0 descargas, 0 likes | Sin benchmarks ni dataset documentado |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace, ampliamente desplegado | Modelo base; no especializado en SQL |
-| vkovtun/llama-text-to-sql-2026-09-22_11.38.10-finetune-QLORA | no disponible | no disponible | no disponible | HuggingFace | Checkpoint anterior del mismo autor, con la misma receta aparente |
-| vkovtun/llama-text-to-sql-2026-09-24_08.21.54-finetune-QLORA-8B | no disponible | no disponible | no disponible | HuggingFace | Otro checkpoint intermedio del mismo autor |
-| Otros ajustes text-to-SQL de 7-8B (por ejemplo, variantes basadas en Llama 2 o CodeLlama) | 7-8B | variable segun la familia | variable | HuggingFace y GitHub | No se dispone de datos comparativos verificados en la informacion proporcionada |
+| Este modelo (text-to-SQL QLoRA) | 8B | 128.000 tokens (heredados) | no disponible | Hugging Face, 0 descargas, 0 likes | Sin benchmarks ni dataset documentado |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face, ampliamente desplegado | Modelo base; no especializado en SQL |
+| vkovtun/llama-text-to-sql-2026-09-22_11.38.10-finetune-QLORA | no disponible | no disponible | no disponible | Hugging Face | Checkpoint anterior del mismo autor, con la misma receta aparente |
+| vkovtun/llama-text-to-sql-2026-09-24_08.21.54-finetune-QLORA-8B | no disponible | no disponible | no disponible | Hugging Face | Otro checkpoint intermedio del mismo autor |
+| Otros ajustes text-to-SQL de 7-8B (por ejemplo, variantes basadas en Llama 2 o CodeLlama) | 7-8B | variable segun la familia | variable | Hugging Face y GitHub | No se dispone de datos comparativos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_20.12.15-Llama-3.1-8B-Instruct-finetune-QLORA
+- Modelo en Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-10-01_20.12.15-Llama-3.1-8B-Instruct-finetune-QLORA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/yodp2ujw
 - Repositorio de TRL: https://github.com/huggingface/trl

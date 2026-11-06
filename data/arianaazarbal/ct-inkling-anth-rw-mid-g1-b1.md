@@ -112,7 +112,7 @@ No se dispone de datos técnicos de alternativas comparables. La comparación pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-rw-mid-g1-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-rw-mid-g1-b1
 - Modelo base `thinkingmachines/Inkling-Small`: https://huggingface.co/thinkingmachines/Inkling-Small
 - Ruta original en Tinker registrada por el autor: `tinker://1af7f754-bd0e-5c7c-b506-01fa0f417f83:train:0/sampler_weights/inkanthrwg1_inkanthrw_g1_b1_s1_final`
 - Ficheros incluidos en el repositorio: `training_seed_constitution.md` (constitución semilla de esta generación) y `tinker_meta.json` (registro de exportación)

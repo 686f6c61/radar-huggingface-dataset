@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Brajone2/retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura MobileViT orientada a tareas de *retrieval* (recuperación). Lo publica el usuario Brajone2 bajo licencia MIT. El modelo es extremadamente pequeno: 16.576 parámetros totales según los pesos en `safetensors`, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de recuperación o visión publicados con fines de producción.
+`Brajone2/retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura MobileViT orientada a tareas de *retrieval* (recuperación). Lo publica el usuario Brajone2 bajo licencia MIT. El modelo es extremadamente pequeno: 16.576 parámetros totales según los pesos en `safetensors`, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier modelo de recuperación o visión publicados con fines de producción.
 
 La relevancia de este repositorio no está en su rendimiento, sino en su función: el propio autor lo describe como un punto de partida para revisión de código, *smoke tests* y experimentos controlados a pequena escala. El checkpoint incluido es una inicialización válida, no un modelo entrenado, y no se reclama ninguna métrica de benchmark en la model card. La arquitectura declarada combina atención lineal, fusión tipo Tucker, activación Mish y normalización RMSNorm sobre una escala "base" de MobileViT.
 
@@ -65,9 +65,9 @@ Los datos de los modelos alternativos provienen de documentación pública y son
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Brajone2/retrieval (este) | 16.576 | no disponible | retrieval (sin entrenar) | MIT | HuggingFace |
-| CLIP ViT-B/32 (OpenAI) | ~151 M (aprox.) | 77 tokens de texto (aprox.) | retrieval imagen-texto | MIT | HuggingFace / open_clip |
-| SigLIP base (Google) | ~200 M (aprox.) | no disponible | retrieval imagen-texto | Apache 2.0 | HuggingFace |
+| Brajone2/retrieval (este) | 16.576 | no disponible | retrieval (sin entrenar) | MIT | Hugging Face |
+| CLIP ViT-B/32 (OpenAI) | ~151 M (aprox.) | 77 tokens de texto (aprox.) | retrieval imagen-texto | MIT | Hugging Face / open_clip |
+| SigLIP base (Google) | ~200 M (aprox.) | no disponible | retrieval imagen-texto | Apache 2.0 | Hugging Face |
 | MobileViT original (Apple) | 1,3 M – 5,6 M según variante (aprox.) | no disponible | clasificación de imágenes | ver términos del repo original | GitHub / pesos publicados |
 
 La diferencia clave no es de escala, sino de estado: CLIP y SigLIP son modelos entrenados y evaluados, mientras que este repositorio es una inicialización sin entrenamiento. Como baseline de capacidad mínima o como esqueleto de implementación, la comparación directa de métricas carece de sentido hasta que exista un checkpoint entrenado.
@@ -79,12 +79,12 @@ La diferencia clave no es de escala, sino de estado: CLIP y SigLIP son modelos e
 - Riesgo de alucinación y de resultados sin sentido: cualquier salida del modelo es esencialmente aleatoria dada la inicialización.
 - Sin datos de sesgos: no se dispone de análisis de sesgo demográfico, cultural o lingüístico.
 - Idiomas y contexto no documentados: no se declara vocabulario, tokenizador ni longitud máxima de secuencia.
-- Es una implementación propia: las APIs de carga automática de HuggingFace no funcionan sin un adaptador específico.
+- Es una implementación propia: las APIs de carga automática de Hugging Face no funcionan sin un adaptador específico.
 - Licencia MIT permite uso comercial del código y los pesos, pero los términos de los datasets externos (por ejemplo Flickr30k) deben revisarse por separado antes de entrenar o redistribuir derivados.
-- Las fechas de creación y actualización del repositorio en HuggingFace son posteriores a la fecha actual, lo que conviene verificar antes de citarlo como referencia estable.
+- Las fechas de creación y actualización del repositorio en Hugging Face son posteriores a la fecha actual, lo que conviene verificar antes de citarlo como referencia estable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Brajone2/retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Brajone2/retrieval
 
 No se han encontrado en la información disponible otros enlaces a papers, blogs, repositorios de código o demos asociados a este modelo.

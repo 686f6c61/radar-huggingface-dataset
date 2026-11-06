@@ -90,5 +90,5 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OpenFlowLM/Qwen3.8-Distilled-35B-A3B-NPU2)
+- [Modelo en Hugging Face](https://huggingface.co/OpenFlowLM/Qwen3.8-Distilled-35B-A3B-NPU2)
 - [Modelo base Atomic-Germ/Qwen3.6-35B-A3B-NPU2](https://huggingface.co/Atomic-Germ/Qwen3.6-35B-A3B-NPU2)

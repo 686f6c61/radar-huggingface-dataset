@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Viv0605101/anlp-a3-mamba` es un modelo de pesos publicados en HuggingFace por el usuario Viv0605101, con 947.456 parámetros totales según el recuento real de los ficheros safetensors, es decir, menos de un millón de parámetros. El repositorio se creó el 25 de octubre de 2026 y su model card es la plantilla automática que genera la integración `PyTorchModelHubMixin`, sin documentación técnica adicional: no incluye paper, código ni descripción del entrenamiento.
+`Viv0605101/anlp-a3-mamba` es un modelo de pesos publicados en Hugging Face por el usuario Viv0605101, con 947.456 parámetros totales según el recuento real de los ficheros safetensors, es decir, menos de un millón de parámetros. El repositorio se creó el 25 de octubre de 2026 y su model card es la plantilla automática que genera la integración `PyTorchModelHubMixin`, sin documentación técnica adicional: no incluye paper, código ni descripción del entrenamiento.
 
 Las etiquetas del repositorio (`mamba`, `deltanet`, `cipher`, `pytorch`, `safetensors`) apuntan a una implementación didáctica de una arquitectura de espacio de estados o de atención lineal (Mamba y DeltaNet) orientada a una tarea relacionada con cifrado. El identificador `anlp-a3` sugiere que se trata de la tercera práctica de un curso de procesamiento de lenguaje natural; esta lectura es una inferencia a partir del nombre y las etiquetas, no un dato confirmado por el autor.
 
@@ -20,7 +20,7 @@ Su relevancia es, por tanto, acotada: no es un modelo de propósito general ni c
 | Idiomas soportados | No disponible (la model card no declara idiomas) |
 | Licencia | No disponible (la model card no especifica licencia) |
 | Formato de pesos | safetensors (librería declarada: pytorch) |
-| Tamaño del repositorio | 0,0 GB (redondeado por HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (redondeado por Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Pipeline declarado | No disponible |
 | Fecha de creación / actualización | 2026-10-25 / 2026-10-25 |
@@ -85,7 +85,7 @@ No hay datos de benchmarks ni especificaciones completas que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viv0605101/anlp-a3-mamba
+- Modelo en Hugging Face: https://huggingface.co/Viv0605101/anlp-a3-mamba
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible (la model card indica «More Information Needed»)

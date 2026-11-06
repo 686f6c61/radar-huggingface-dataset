@@ -77,10 +77,10 @@ Ademas, la model card afirma que diacnet-2.0 es el diacritizador de Olaverse mas
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diacnet-2.0 | 582M | ~300 caracteres por llamada (troceado) | 11 | apache-2.0 | HuggingFace (olaverse/diacnet-2.0) |
-| diactag-2.0 (olaverse) | no disponible | no disponible | no disponible | no disponible | HuggingFace (olaverse/diactag-2.0) |
-| diacnet-1.1 (olaverse) | no disponible | no disponible | no disponible | no disponible | HuggingFace (olaverse/diacnet-1.1) |
-| google/byt5-base (modelo base) | 582M aprox. | segun longitud de bytes (ByT5) | multilingue generico | apache-2.0 | HuggingFace (google/byt5-base) |
+| diacnet-2.0 | 582M | ~300 caracteres por llamada (troceado) | 11 | apache-2.0 | Hugging Face (olaverse/diacnet-2.0) |
+| diactag-2.0 (olaverse) | no disponible | no disponible | no disponible | no disponible | Hugging Face (olaverse/diactag-2.0) |
+| diacnet-1.1 (olaverse) | no disponible | no disponible | no disponible | no disponible | Hugging Face (olaverse/diacnet-1.1) |
+| google/byt5-base (modelo base) | 582M aprox. | segun longitud de bytes (ByT5) | multilingue generico | apache-2.0 | Hugging Face (google/byt5-base) |
 
 En rendimiento, diacnet-2.0 supera a diactag-2.0 en 8 de 10 idiomas y a diacnet-1.1 en yoruba (0,070 frente a 0,174 de tasa de error). No se dispone de cifras comparativas completas para el resto de modelos en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ En rendimiento, diacnet-2.0 supera a diactag-2.0 en 8 de 10 idiomas y a diacnet-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olaverse/diacnet-2.0
+- Modelo en Hugging Face: https://huggingface.co/olaverse/diacnet-2.0
 - Modelo base: https://huggingface.co/google/byt5-base
 - Comparativa diactag-2.0: https://huggingface.co/olaverse/diactag-2.0
 - Version anterior diacnet-1.1: https://huggingface.co/olaverse/diacnet-1.1

@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/rootonchair/MiniMax-H3-nunchaku-lite-int4
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/rootonchair/MiniMax-H3-nunchaku-lite-int4
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de nunchaku-lite: https://github.com/rootonchair/nunchaku-lite
 - Repositorio GitHub de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3

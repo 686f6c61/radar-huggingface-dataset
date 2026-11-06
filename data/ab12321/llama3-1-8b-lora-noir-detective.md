@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables específicos. El modelo 
 
 ## Enlaces
 
-- [HuggingFace: ab12321/llama3.1-8b-lora-noir-detective](https://huggingface.co/ab12321/llama3.1-8b-lora-noir-detective)
+- [Hugging Face: ab12321/llama3.1-8b-lora-noir-detective](https://huggingface.co/ab12321/llama3.1-8b-lora-noir-detective)
 - [Meta Llama 3.1 8B (modelo base)](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Meta Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Repositorio oficial de Llama 3 en GitHub](https://github.com/meta-llama/llama3)

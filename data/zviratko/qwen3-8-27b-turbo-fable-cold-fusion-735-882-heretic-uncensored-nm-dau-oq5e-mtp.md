@@ -79,7 +79,7 @@ La comparativa directa no es posible sin datos de rendimiento publicados para es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zviratko/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/zviratko/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ5e-mtp
 - Repositorio de oQ (oMLX): https://github.com/jundot/omlx
 - Versión GGUF del modelo original (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Blog de AMD sobre Qwen3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-replay-uniform-lam1-all-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgetting-Experiments-3/qwen2.5-3b-kk-sft-replay-uniform-lam1-all-checkpoints
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Informe técnico de Qwen2.5 (arXiv:2412.15115): https://arxiv.org/abs/2412.15115
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

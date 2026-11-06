@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativo (MMLU, GSM8K, MATH-500) para n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-a-halfepoch-salvage
+- Modelo en Hugging Face: https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-a-halfepoch-salvage
 - Checkpoint DPO de referencia (Arm A): https://huggingface.co/viai957/nano-mistral-o1-dpo-arm-a
 - Checkpoint SFT padre: https://huggingface.co/viai957/nano-mistral-o1-sft
 - Modelo base original: https://huggingface.co/mistralai/Mistral-7B-v0.3

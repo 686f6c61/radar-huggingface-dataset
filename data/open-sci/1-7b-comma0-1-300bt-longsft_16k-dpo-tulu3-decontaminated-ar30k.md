@@ -64,10 +64,10 @@ El model-index declarado por el autor contiene una entrada (`sft__AceReason-1-1-
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| open-sci/1.7b-Comma0.1-...-ar30k | 1,7B | 16k (segun nombre) | other | No | HuggingFace, safetensors |
-| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated (modelo base) | 1,7B | 16k | no disponible | No | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Sí (MMLU, GSM8K, etc.) | HuggingFace, GGUF, Ollama |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Sí | HuggingFace, GGUF, Ollama |
+| open-sci/1.7b-Comma0.1-...-ar30k | 1,7B | 16k (segun nombre) | other | No | Hugging Face, safetensors |
+| ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated (modelo base) | 1,7B | 16k | no disponible | No | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32k | Apache 2.0 | Sí (MMLU, GSM8K, etc.) | Hugging Face, GGUF, Ollama |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Sí | Hugging Face, GGUF, Ollama |
 
 La comparación con Qwen2.5-1.5B y SmolLM2-1.7B es orientativa por tamaño; este modelo no publica resultados que permitan una comparación cuantitativa y su licencia "other" limita el uso comercial frente a las alternativas Apache 2.0.
 
@@ -85,7 +85,7 @@ La comparación con Qwen2.5-1.5B y SmolLM2-1.7B es orientativa por tamaño; este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/1.7b-Comma0.1-300BT-longsft_16k-DPO-Tulu3-decontaminated
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - Transformers: https://github.com/huggingface/transformers

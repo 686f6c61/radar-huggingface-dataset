@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t0-n25-s1000` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base SmolVLA, un modelo de visión-lenguaje-acción (VLA) desarrollado por HuggingFace para robótica. Este adaptador está entrenado específicamente sobre la tarea "Goal" del benchmark LIBERO, un entorno de simulación para evaluación de manipulación robótica. El identificador sugiere que se trata de la tarea 0, con 25 pasos de entrenamiento y 1000 pasos de optimización, aunque estos detalles no están confirmados en la documentación.
+El modelo `sadjava/smolvla-libero-goal-peft-t0-n25-s1000` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base SmolVLA, un modelo de visión-lenguaje-acción (VLA) desarrollado por Hugging Face para robótica. Este adaptador está entrenado específicamente sobre la tarea "Goal" del benchmark LIBERO, un entorno de simulación para evaluación de manipulación robótica. El identificador sugiere que se trata de la tarea 0, con 25 pasos de entrenamiento y 1000 pasos de optimización, aunque estos detalles no están confirmados en la documentación.
 
 El modelo se publica como un adaptador PEFT (Parameter-Efficient Fine-Tuning) y está etiquetado con `lora`, `peft` y `safetensors`. Sin embargo, el repositorio no contiene pesos visibles (tamaño 0.0 GB) y la model card está incompleta, con la mayoría de los campos marcados como "[More Information Needed]". Esto limita la evaluación práctica del adaptador, aunque su existencia apunta a un flujo de trabajo de fine-tuning eficiente para tareas robóticas específicas.
 
@@ -31,7 +31,7 @@ Los detalles del entrenamiento (número de tokens, composición del dataset, hip
 
 - Generación de acciones robóticas: el adaptador está diseñado para mapear observaciones visuales e instrucciones en lenguaje a comandos de movimiento del robot en el entorno LIBERO.
 - Seguimiento de instrucciones en lenguaje: al ser un VLA, interpreta órdenes como "coge la taza" o "coloca el bloque en la esquina".
-- Integración con PEFT: se puede cargar mediante la librería `peft` de HuggingFace y combinarse con el modelo base SmolVLA.
+- Integración con PEFT: se puede cargar mediante la librería `peft` de Hugging Face y combinarse con el modelo base SmolVLA.
 - Fine-tuning eficiente: al ser un adaptador LoRA, permite ajustes posteriores con bajo coste computacional.
 - No soporta tool calling ni agentes autónomos: es un modelo de acción directa, no un agente conversacional.
 
@@ -71,7 +71,7 @@ No se dispone de información sobre adaptadores LoRA comparables para SmolVLA en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n25-s1000
+- Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t0-n25-s1000
 - Paper de LoRA (referenciado en tags): https://arxiv.org/abs/1910.09700
 - Modelo base SmolVLA (referencia general, no confirmada): https://huggingface.co/HuggingFaceTB/SmolVLA-1.7B (no verificado)
 - Benchmark LIBERO: https://libero-project.github.io/ (no verificado)

@@ -84,7 +84,7 @@ La ventaja diferencial del paquete no es la precisión (los pesos son los origin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kawshikbuet17/realtime-language-detection-onnx
+- Repositorio Hugging Face: https://huggingface.co/kawshikbuet17/realtime-language-detection-onnx
 - Demo (Space): https://huggingface.co/spaces/kawshikbuet17/realtime-language-detection
 - Silero Lang Classifier 95: https://github.com/snakers4/silero-vad/tree/0480df078b4429db314feec47853b9bfd2bbba49/files
 - SpeechBrain VoxLingua107 ECAPA: https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa

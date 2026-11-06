@@ -99,10 +99,10 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sysrobson/Sagui-4B-Vision-Thinking-Code-GGUF
+- Hugging Face: https://huggingface.co/sysrobson/Sagui-4B-Vision-Thinking-Code-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Ollama: https://ollama.com
 - llama.cpp: https://github.com/ggml-org/llama.cpp
-- Repositorio de ejemplos (referenciado en la model card): `examples/transcripts.json` y `scripts/run_demos.py` dentro del repositorio de HuggingFace
+- Repositorio de ejemplos (referenciado en la model card): `examples/transcripts.json` y `scripts/run_demos.py` dentro del repositorio de Hugging Face
 - Donación PayPal (enlace del autor): https://www.paypal.com/donate/?hosted_button_id=JA6B7RKJURXNW
 - Búsqueda web: https://github.com/zhuyansen/awesome-claude-video-skills (no relacionado directamente con el modelo)

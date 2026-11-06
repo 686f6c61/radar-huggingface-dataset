@@ -117,7 +117,7 @@ Alternativas de la misma categoria (grafos de decision de vestuario en ONNX INT4
 
 ## Enlaces
 
-- HuggingFace (paquete WorDrop Imajev-4B INT4): https://huggingface.co/seutje/wordrop-imajev-4b-int4
+- Hugging Face (paquete WorDrop Imajev-4B INT4): https://huggingface.co/seutje/wordrop-imajev-4b-int4
 - Directorio del paquete dentro del repo: `packages/v0.1.0-embedding-vision-int4/`
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Adaptador: https://huggingface.co/mohit67890/imajev-4b

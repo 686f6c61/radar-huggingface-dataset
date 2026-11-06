@@ -19,7 +19,7 @@ Es relevante ahora como referencia de rendimiento de decodificación especulativ
 | Tipos de cuantizacion | Cache KV en Q4 (sufijo `q4kv` del identificador); cuantizacion de pesos no disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | No incluidos en el repositorio (2,0 GB). Los checkpoints se descargan en formato nativo desde HuggingFace (`Qwen/Qwen3.8-27B` en la revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` e `incoai/Qwen3.8-27B-DFlash2` en `dedf8df68adfb1afeaf7b7480c0a0243108177b4`). El artefacto publicado es un contenedor tt-model con manifiesto en esquema 5.1 |
+| Formato de pesos | No incluidos en el repositorio (2,0 GB). Los checkpoints se descargan en formato nativo desde Hugging Face (`Qwen/Qwen3.8-27B` en la revision `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` e `incoai/Qwen3.8-27B-DFlash2` en `dedf8df68adfb1afeaf7b7480c0a0243108177b4`). El artefacto publicado es un contenedor tt-model con manifiesto en esquema 5.1 |
 | Hardware objetivo | Tenstorrent P300x2 (4 chips Blackhole, paralelismo tensorial de 4 vias) |
 | Perfiles de servicio | `batch8-dflash2` (por defecto, hasta 8 peticiones concurrentes), `single-user-dflash2` (una peticion de texto), `single-user-vision` (una imagen por peticion) |
 | Fecha de publicacion | 2026-09-17 (segun metadatos del repositorio) |
@@ -100,7 +100,7 @@ El autor advierte de que una celda con guion indica que el pool de cache KV no a
 - **Hardware obligatorio**: Tenstorrent P300x2, es decir, 4 chips Blackhole con paralelismo tensorial de 4 vias. El artefacto es especifico de esa topologia; no se documenta soporte para GPU NVIDIA, AMD ni para otras configuraciones Tenstorrent.
 - **VRAM de GPU**: no aplica ni esta disponible. El modelo se ejecuta sobre memoria de los chips Blackhole, no sobre memoria de GPU.
 - **GPU de consumo**: no es viable con este paquete. No hay ruta de despliegue CUDA documentada en la informacion disponible.
-- **Almacenamiento y red**: el repositorio pesa 2,0 GB, pero los pesos se descargan aparte desde `Qwen/Qwen3.8-27B` e `incoai/Qwen3.8-27B-DFlash2` en la cache de HuggingFace durante `tt-model pull --with-weights`. Hay que prever espacio adicional para la imagen Docker y ambos checkpoints.
+- **Almacenamiento y red**: el repositorio pesa 2,0 GB, pero los pesos se descargan aparte desde `Qwen/Qwen3.8-27B` e `incoai/Qwen3.8-27B-DFlash2` en la cache de Hugging Face durante `tt-model pull --with-weights`. Hay que prever espacio adicional para la imagen Docker y ambos checkpoints.
 - **Despliegue**: CLI `tt-model` (`pull`, `serve`, `profiles`), con `tt-model-manager` 0.1.0. El servidor es compatible con OpenAI y escucha en el puerto 20000 o en el siguiente puerto libre.
 - **Arranque en frio**: la primera ejecucion compila kernels para el dispositivo y tarda varios minutos; el servidor esta listo cuando registra `Application startup complete`.
 - **Latencia medida**: TTFT de 134 ms con 128 tokens de entrada y 26.055 ms con 131.072 tokens (perfil `single-user-dflash2`); TPOT entre 12,1 y 21,2 ms en esa misma tabla.
@@ -111,8 +111,8 @@ El autor advierte de que una celda con guion indica que el pool de cache KV no a
 
 | Modelo / artefacto | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv` (este) | No disponible (27B nominales) | No disponible; benchmarks hasta 131.072 tokens | DFlash2 sobre P300x2: hasta 271,5 t/s agregados a 8 usuarios (ISL 128) y 397 t/s en codigo con thinking | No disponible | Publico en HuggingFace, 0 descargas |
-| `changh95/qwen3.8-27b-p300x2` | No disponible | No disponible | Decodificacion plana; sirve como columna de referencia en todos los benchmarks de este repositorio (p. ej. 32,3 t/s/u a ISL 128) | No disponible | Publico en HuggingFace |
+| `mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv` (este) | No disponible (27B nominales) | No disponible; benchmarks hasta 131.072 tokens | DFlash2 sobre P300x2: hasta 271,5 t/s agregados a 8 usuarios (ISL 128) y 397 t/s en codigo con thinking | No disponible | Publico en Hugging Face, 0 descargas |
+| `changh95/qwen3.8-27b-p300x2` | No disponible | No disponible | Decodificacion plana; sirve como columna de referencia en todos los benchmarks de este repositorio (p. ej. 32,3 t/s/u a ISL 128) | No disponible | Publico en Hugging Face |
 | `incoai/Qwen3.8-27B-DFlash2` | No disponible | No disponible | No disponible | No disponible | Checkpoint requerido por este artefacto; referencia fijada a la revision `dedf8df6` |
 | `Qwen/Qwen3.8-27B` (modelo base) | 27B nominales | No disponible | No disponible | No disponible | Checkpoint requerido por este artefacto; referencia fijada a la revision `1d4bf0f2` |
 
@@ -135,7 +135,7 @@ El autor indica explicitamente que para muestreo con `temperature`/`top_p` pleno
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv
+- Repositorio en Hugging Face: https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint del drafter DFlash2: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Alternativa de decodificacion plana citada por el autor: https://huggingface.co/changh95/qwen3.8-27b-p300x2

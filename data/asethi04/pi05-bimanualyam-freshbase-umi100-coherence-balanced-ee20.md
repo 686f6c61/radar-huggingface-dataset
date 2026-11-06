@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pi05-BimanualYAM-freshbase-umi100-coherence-balanced-ee20`, publicado por el usuario ASethi04 en HuggingFace, es un modelo de visión-lenguaje-acción (VLA) diseñado para robótica bimanual, es decir, para el control coordinado de dos brazos robóticos. Se basa en la arquitectura Pi0.5, desarrollada por Physical Intelligence, que es una evolución del modelo Pi0 con mejor generalización en entornos abiertos. El modelo se ha entrenado durante 12.000 pasos de optimización sobre datos UMI (Universal Manipulation Interface) puramente canónicos, con un muestreo balanceado por coherencia de trayectoria y sin ningún frame de teleoperación.
+El modelo `pi05-BimanualYAM-freshbase-umi100-coherence-balanced-ee20`, publicado por el usuario ASethi04 en Hugging Face, es un modelo de visión-lenguaje-acción (VLA) diseñado para robótica bimanual, es decir, para el control coordinado de dos brazos robóticos. Se basa en la arquitectura Pi0.5, desarrollada por Physical Intelligence, que es una evolución del modelo Pi0 con mejor generalización en entornos abiertos. El modelo se ha entrenado durante 12.000 pasos de optimización sobre datos UMI (Universal Manipulation Interface) puramente canónicos, con un muestreo balanceado por coherencia de trayectoria y sin ningún frame de teleoperación.
 
 La tarea concreta para la que está optimizado es "recoger naranjas y colocarlas en un bol", un ejemplo representativo de manipulación de precisión con dos brazos. El modelo tiene 4.143 millones de parámetros y se distribuye en formato safetensors a través de la librería LeRobot. Es relevante porque demuestra cómo entrenar un VLA de tamaño medio con datos de demostración limpios y sin teleoperación, y porque la variante "coherence" introduce un método de muestreo de datos que prioriza la coherencia de las trayectorias, un aspecto poco explorado en la literatura. No se especifica la longitud de contexto ni la licencia, lo que limita su uso directo en producción.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 4.143 millones de parámetros, en precisión FP32 se necesitan aproximadamente 16,6 GB de VRAM; en BF16 o FP16, unos 8,3 GB; en cuantización INT8, unos 4,1 GB. Sin embargo, no se han publicado cuantizaciones oficiales ni se indica la precisión de los pesos.
 - GPU recomendadas: para una ejecución fluida en tiempo real en robótica, se requieren GPUs de gama alta como NVIDIA A100, H100, RTX 4090 o similares con al menos 12-16 GB de VRAM. No se ha probado en hardware de consumo.
 - Compatibilidad con GPU consumer: no se ha verificado explícitamente, pero por el tamaño del modelo, una RTX 4090 (24 GB) podría ser suficiente en FP16 si el framework lo permite.
-- Opciones de despliegue: la librería es LeRobot (HuggingFace), que ofrece herramientas de entrenamiento y evaluación. También se puede usar con el framework openpi de Physical Intelligence, que soporta modelos Pi0.5. No se han documentado despliegues con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: la librería es LeRobot (Hugging Face), que ofrece herramientas de entrenamiento y evaluación. También se puede usar con el framework openpi de Physical Intelligence, que soporta modelos Pi0.5. No se han documentado despliegues con vLLM, llama.cpp u Ollama, ya que no es un modelo de lenguaje.
 - Latencia y throughput: no disponible. Al ser un modelo de acción continua, la latencia depende del hardware y del framework, pero no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ La comparación se limita a los modelos del mismo autor y a la familia Pi0/Pi0.5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-umi100-coherence-balanced-ee20
+- Modelo en Hugging Face: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-umi100-coherence-balanced-ee20
 - Variante con datos de teleoperación: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-raw-umi95-teleop05-ee20
 - Variante con contracción de rotación: https://huggingface.co/ASethi04/pi05-BimanualYAM-freshbase-rotcontract-umi100-ee20
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

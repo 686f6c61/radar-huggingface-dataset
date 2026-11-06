@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amritachemistry/albef-baseline` es un repositorio de HuggingFace que contiene una implementación funcional de ALBEF (Align before Fuse) orientada a tareas de *retrieval* (recuperación) multimodal, publicada bajo configuración "nano". Lo desarrolla el usuario `amritachemistry` y su propósito declarado no es ofrecer un modelo entrenado, sino servir como base reproducible para pruebas de humo (*smoke tests*) y como punto de partida experimental con código transparente.
+`amritachemistry/albef-baseline` es un repositorio de Hugging Face que contiene una implementación funcional de ALBEF (Align before Fuse) orientada a tareas de *retrieval* (recuperación) multimodal, publicada bajo configuración "nano". Lo desarrolla el usuario `amritachemistry` y su propósito declarado no es ofrecer un modelo entrenado, sino servir como base reproducible para pruebas de humo (*smoke tests*) y como punto de partida experimental con código transparente.
 
 El propio autor indica de forma explícita que el checkpoint `model.safetensors` es una inicialización válida, no un modelo entrenado ni evaluado, y que no se reclama ninguna puntuación de benchmark. El fichero de pesos contiene 24.832 parámetros reales, un orden de magnitud muy inferior al de cualquier modelo de recuperación visión-lenguaje utilizable en producción, lo que confirma su naturaleza de andamiaje técnico.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amritachemistry/albef-baseline (este repo) | 24.832 | no disponible | sin benchmark; checkpoint no entrenado | BSD-3-Clause | HuggingFace, 0 descargas |
+| amritachemistry/albef-baseline (este repo) | 24.832 | no disponible | sin benchmark; checkpoint no entrenado | BSD-3-Clause | Hugging Face, 0 descargas |
 | ALBEF original (Salesforce, paper 2021) | ViT-B/16 + BERT-base, del orden de 200 M | no disponible | resultados publicados en Flickr30k y COCO en el paper | codigo bajo licencia BSD-3-Clause en el repositorio original | repositorio GitHub de Salesforce |
 | CLIP (OpenAI) | ~150 M (ViT-B/32) y variantes | 77 tokens de texto | zero-shot retrieval competitivo | licencia propia de OpenAI | pesos publicos |
-| BLIP (Salesforce) | del orden de 200-400 M segun variante | no disponible | resultados publicados en retrieval y captioning | codigo bajo licencia BSD-3-Clause | HuggingFace y GitHub |
+| BLIP (Salesforce) | del orden de 200-400 M segun variante | no disponible | resultados publicados en retrieval y captioning | codigo bajo licencia BSD-3-Clause | Hugging Face y GitHub |
 
 Las cifras de modelos comparables provienen de sus respectivas publicaciones y se ofrecen como orden de magnitud; para este repositorio concreto no existe ningún dato de rendimiento comparable. La diferencia fundamental es de estado: los alternativos son checkpoints entrenados, mientras que este es una inicialización de prueba de humo.
 
@@ -93,7 +93,7 @@ Las cifras de modelos comparables provienen de sus respectivas publicaciones y s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amritachemistry/albef-baseline
+- Repositorio en Hugging Face: https://huggingface.co/amritachemistry/albef-baseline
 - Paper original de ALBEF, "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation": https://arxiv.org/abs/2107.07651
 - Repositorio oficial de ALBEF en GitHub: https://github.com/salesforce/ALBEF
 - Dataset sugerido para evaluación, Flickr30k: https://shannon.cs.illinois.edu/DenotationGraph/

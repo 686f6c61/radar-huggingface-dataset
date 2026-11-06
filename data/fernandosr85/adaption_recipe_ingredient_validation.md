@@ -86,7 +86,7 @@ No hay datos de rendimiento que permitan una comparacion cuantitativa con altern
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Fernandosr85/adaption_recipe_ingredient_validation
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Fernandosr85/adaption_recipe_ingredient_validation
 - Modelo base: https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1
 - Adaption (herramienta AutoScientist citada por el autor): https://adaptionlabs.ai
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; las unicas entradas devueltas correspondian a paginas de inicio de sesion de Facebook, sin relacion con el modelo.

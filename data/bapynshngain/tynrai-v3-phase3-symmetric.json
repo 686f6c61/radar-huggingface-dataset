@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Bapynshngain/Tynrai-V3-Phase3-Symmetric",
+  "slug": "bapynshngain-tynrai-v3-phase3-symmetric",
+  "author": "Bapynshngain",
+  "url": "https://huggingface.co/Bapynshngain/Tynrai-V3-Phase3-Symmetric",
+  "created_at": "2026-11-05T17:47:08.000Z",
+  "updated_at": "2026-11-06T05:45:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "kha"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "translation",
+    "nllb",
+    "khasi",
+    "generated_from_trainer",
+    "en",
+    "kha",
+    "dataset:Bapynshngain/Tynrai-V3-Master-Corpus",
+    "base_model:Bapynshngain/Tynrai-V3-Phase2",
+    "base_model:finetune:Bapynshngain/Tynrai-V3-Phase2",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615075840,
+  "parameters_human": "615.1M",
+  "storage_bytes": 17254788082,
+  "storage_human": "17.3 GB",
+  "base_model": "Bapynshngain/Tynrai-V3-Phase2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation Khasi to English",
+      "dataset": null,
+      "metric": "BLEU",
+      "value": 44.79
+    },
+    {
+      "task": "Translation Khasi to English",
+      "dataset": null,
+      "metric": "chrF",
+      "value": 61.82
+    },
+    {
+      "task": "Translation Khasi to English",
+      "dataset": null,
+      "metric": "TER",
+      "value": 44.26
+    }
+  ],
+  "sources": []
+}

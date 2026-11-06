@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-3b-squad-ratio-0.70-seed-42` es un repositorio alojado en HuggingFace cuyo identificador sugiere un ajuste fino (fine-tuning) de un modelo de la familia IBM Granite 4.1 de 3.000 millones de parametros sobre el conjunto de datos SQuAD, empleando una fraccion del 70 por ciento de los datos de entrenamiento (ratio 0.70) y una semilla aleatoria fija (seed 42). Esta interpretacion se deduce unicamente de la nomenclatura del identificador: la model card publicada es la plantilla generada automaticamente por HuggingFace y no contiene ni un solo campo cumplimentado por el autor.
+`AlinaGonch/granite41-3b-squad-ratio-0.70-seed-42` es un repositorio alojado en Hugging Face cuyo identificador sugiere un ajuste fino (fine-tuning) de un modelo de la familia IBM Granite 4.1 de 3.000 millones de parametros sobre el conjunto de datos SQuAD, empleando una fraccion del 70 por ciento de los datos de entrenamiento (ratio 0.70) y una semilla aleatoria fija (seed 42). Esta interpretacion se deduce unicamente de la nomenclatura del identificador: la model card publicada es la plantilla generada automaticamente por Hugging Face y no contiene ni un solo campo cumplimentado por el autor.
 
 La relevancia de este tipo de repositorios es metodologica mas que de producto: el patron de nombres sugiere un experimento de ablacion o reproducibilidad (variacion controlada del porcentaje de datos de entrenamiento con semilla fija), habitual en trabajos academicos sobre eficiencia de datos y olvido catastrofico. Sin embargo, en el momento de redactar esta ficha no hay documentacion que confirme el modelo base, la tarea exacta, la licencia ni el proceso de entrenamiento.
 
@@ -28,7 +28,7 @@ Es importante destacar que el tamano del repositorio es de aproximadamente 0,1 G
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. La model card es la plantilla por defecto de HuggingFace y todos los apartados de descripcion, datos de entrenamiento, hiperparametros y procedimiento estan marcados como `[More Information Needed]`. La unica pista es el identificador del repositorio, que sigue el patron habitual de los experimentos de ajuste fino supervisado: modelo base (`granite41-3b`), dataset (`squad`), fraccion de datos empleada (`ratio-0.70`) y semilla (`seed-42`). Si esa lectura es correcta, se trataria de un ajuste fino supervisado sobre SQuAD (preguntas y respuestas extractivas sobre articulos de Wikipedia en ingles), pero no se especifica si se congelaron capas, si se aplico PEFT/LoRA, ni cuantos tokens o epocas se utilizaron.
+No hay informacion verificable sobre la arquitectura. La model card es la plantilla por defecto de Hugging Face y todos los apartados de descripcion, datos de entrenamiento, hiperparametros y procedimiento estan marcados como `[More Information Needed]`. La unica pista es el identificador del repositorio, que sigue el patron habitual de los experimentos de ajuste fino supervisado: modelo base (`granite41-3b`), dataset (`squad`), fraccion de datos empleada (`ratio-0.70`) y semilla (`seed-42`). Si esa lectura es correcta, se trataria de un ajuste fino supervisado sobre SQuAD (preguntas y respuestas extractivas sobre articulos de Wikipedia en ingles), pero no se especifica si se congelaron capas, si se aplico PEFT/LoRA, ni cuantos tokens o epocas se utilizaron.
 
 Respecto a las innovaciones tecnicas, no se declara ninguna: no hay mencion a atencion lineal, decodificacion especulativa, mezcla de expertos, RLHF ni DPO. El unico elemento reseñable es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece citado en la propia plantilla de la model card; no es una referencia al modelo. Por tanto, cualquier afirmacion sobre arquitectura, composicion del dataset o regimen de entrenamiento seria especulativa.
 
@@ -44,7 +44,7 @@ No se ha publicado ninguna descripcion de capacidades. A continuacion se enumera
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles (SQuAD es un corpus en ingles, por lo que un ajuste fino sobre el tenderia a degradar el rendimiento en otros idiomas, aunque esto es una hipotesis, no un dato).
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatibilidad con la infraestructura de endpoints de HuggingFace: si, segun la etiqueta `endpoints_compatible`.
+- Compatibilidad con la infraestructura de endpoints de Hugging Face: si, segun la etiqueta `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -54,7 +54,7 @@ Dado que no hay informacion funcional publicada, los siguientes escenarios son h
 - Evaluacion comparativa de eficiencia de datos: el patron `ratio-0.70` sugiere que el repositorio forma parte de una serie de experimentos; serviria como punto de comparacion frente a otras fracciones del mismo dataset para medir la curva de rendimiento frente al volumen de datos.
 - Reproducibilidad de experimentos academicos: la semilla fija (42) permite repetir el entrenamiento y comparar resultados, lo que resulta util en estudios sobre variabilidad de ajustes finos pequeños.
 - Base para un sistema de preguntas y respuestas sobre normativa: un modelo de 3.000 millones de parametros puede desplegarse en hardware modesto para responder consultas sobre manuales o procedimientos, siempre que se valide su calidad real.
-- Prototipado rapido en pipelines de HuggingFace: la etiqueta `endpoints_compatible` indica que podria desplegarse con la infraestructura gestionada de HuggingFace sin configuracion adicional.
+- Prototipado rapido en pipelines de Hugging Face: la etiqueta `endpoints_compatible` indica que podria desplegarse con la infraestructura gestionada de Hugging Face sin configuracion adicional.
 - Generacion de conjuntos de datos sinteticos de QA: un modelo ajustado en extraccion de respuestas puede utilizarse para preanotar pares pregunta-respuesta que despues se revisan manualmente.
 - Fine-tuning posterior sobre dominio propio: si se trata de un adaptador, podria componerse con el modelo base correspondiente para continuar el ajuste con datos especificos de un sector concreto.
 - Docencia y experimentacion: el tamano reducido permite ejecutar el modelo en una GPU de consumo para practicas de ajuste fino y evaluacion.
@@ -91,7 +91,7 @@ No se han proporcionado datos que permitan establecer una comparacion tecnica ri
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace y no describe el modelo, sus usos previstos, sus sesgos ni sus limitaciones.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face y no describe el modelo, sus usos previstos, sus sesgos ni sus limitaciones.
 - Licencia no declarada: al no especificarse licencia, no puede asumirse permiso de uso comercial. Debe contactarse con el autor antes de cualquier explotacion.
 - Tarea desconocida: no se confirma si el modelo realiza generacion libre, respuesta a preguntas extractivas o cualquier otra tarea.
 - Riesgo elevado de alucinacion si el modelo se emplea fuera de la tarea para la que fue ajustado; sin datos de evaluacion no puede acotarse ese riesgo.
@@ -105,7 +105,7 @@ No se han proporcionado datos que permitan establecer una comparacion tecnica ri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.70-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.70-seed-42
 - Articulo referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla de la model card: https://mlco2.github.io/impact
 

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MELP-ECG-FM-init | 63,1 M | no disponible | Inicialización de codificador ECG para preentrenamiento multimodal | Apache 2.0 | HuggingFace (xjc1022) |
-| MELP-repro | no disponible | no disponible | Features ECG y clasificación zero-shot derivados de MELP | no disponible | HuggingFace (xjc1022) |
-| MELP-Encoder-repro | no disponible | no disponible | Codificador ECG derivado de MELP | no disponible | HuggingFace (xjc1022) |
+| MELP-ECG-FM-init | 63,1 M | no disponible | Inicialización de codificador ECG para preentrenamiento multimodal | Apache 2.0 | Hugging Face (xjc1022) |
+| MELP-repro | no disponible | no disponible | Features ECG y clasificación zero-shot derivados de MELP | no disponible | Hugging Face (xjc1022) |
+| MELP-Encoder-repro | no disponible | no disponible | Codificador ECG derivado de MELP | no disponible | Hugging Face (xjc1022) |
 | ECG-FM (fairseq-signals) | no disponible | no disponible | Codificador ECG base sobre el que se construye este checkpoint | no disponible | fairseq-signals |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que no es posible una comparación cuantitativa de rendimiento.
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xjc1022/MELP-ECG-FM-init
+- Hugging Face: https://huggingface.co/xjc1022/MELP-ECG-FM-init
 - Repositorio derivado MELP-repro: https://huggingface.co/xjc1022/MELP-repro
 - Repositorio derivado MELP-Encoder-repro: https://huggingface.co/xjc1022/MELP-Encoder-repro
 - Código de MELP: https://github.com/HKU-MedAI/MELP

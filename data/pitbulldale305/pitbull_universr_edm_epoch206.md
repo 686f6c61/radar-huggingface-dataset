@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `pitbulldale305/pitbull_UniverSR_EDM_epoch206` es un artefacto publicado en HuggingFace por el usuario `pitbulldale305`. La informacion disponible es minima: la model card se limita a una linea de licencia (`cc-by-4.0`) y no incluye descripcion, pipeline declarado, idiomas ni documentacion tecnica. El repositorio ocupa 0,2 GB y acumula cero descargas y cero likes en el momento de la consulta.
+El modelo identificado como `pitbulldale305/pitbull_UniverSR_EDM_epoch206` es un artefacto publicado en Hugging Face por el usuario `pitbulldale305`. La informacion disponible es minima: la model card se limita a una linea de licencia (`cc-by-4.0`) y no incluye descripcion, pipeline declarado, idiomas ni documentacion tecnica. El repositorio ocupa 0,2 GB y acumula cero descargas y cero likes en el momento de la consulta.
 
 Por la nomenclatura del identificador se puede inferir, sin confirmacion oficial, que se trata de un modelo de superresolucion de imagen entrenado con el formalismo EDM (*Elucidating the Design Space of Diffusion-Based Generative Models*), en su epoch 206 y posiblemente dentro de un framework llamado UniverSR. Esta interpretacion es una hipotesis derivada del nombre del repositorio, no un dato verificado: no hay paper, configuracion ni script de inferencia publicados que lo corroboren.
 
@@ -72,7 +72,7 @@ No hay datos de este modelo que permitan una comparacion cuantitativa. Se listan
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pitbull_UniverSR_EDM_epoch206 | no disponible | no aplica | no disponible | cc-by-4.0 | HuggingFace, sin documentacion |
+| pitbull_UniverSR_EDM_epoch206 | no disponible | no aplica | no disponible | cc-by-4.0 | Hugging Face, sin documentacion |
 | Real-ESRGAN | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | no verificada en esta busqueda | publica |
 | SwinIR | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | no verificada en esta busqueda | publica |
 | Stable Diffusion x4 Upscaler | no disponible en esta busqueda | no aplica | no disponible en esta busqueda | no verificada en esta busqueda | publica |
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio resultados utiles: los enlaces recuperados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pitbulldale305/pitbull_UniverSR_EDM_epoch206
+- Hugging Face: https://huggingface.co/pitbulldale305/pitbull_UniverSR_EDM_epoch206
 - Paper de EDM (referencia generica del formalismo citado en el nombre, no vinculada por el autor): no disponible en los resultados de busqueda
 - Repositorio de codigo de UniverSR: no disponible
 - Demo: no disponible

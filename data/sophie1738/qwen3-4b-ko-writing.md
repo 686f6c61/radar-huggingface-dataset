@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sophie1738/qwen3-4b-ko-writing
+- Modelo en Hugging Face: https://huggingface.co/sophie1738/qwen3-4b-ko-writing
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

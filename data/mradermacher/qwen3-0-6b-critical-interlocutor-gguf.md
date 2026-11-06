@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/qwen3-0.6b-critical-interlocutor-GGUF` es una coleccion de pesos cuantizados en formato GGUF del modelo `thealper2/qwen3-0.6b-critical-interlocutor`, un ajuste fino por SFT del modelo base Qwen3-0.6B. El trabajo de cuantizacion lo firma mradermacher, autor habitual de conversiones GGUF en HuggingFace, mientras que el ajuste fino original procede del usuario thealper2. El modelo hereda la licencia Apache 2.0 y esta declarado exclusivamente en ingles.
+`mradermacher/qwen3-0.6b-critical-interlocutor-GGUF` es una coleccion de pesos cuantizados en formato GGUF del modelo `thealper2/qwen3-0.6b-critical-interlocutor`, un ajuste fino por SFT del modelo base Qwen3-0.6B. El trabajo de cuantizacion lo firma mradermacher, autor habitual de conversiones GGUF en Hugging Face, mientras que el ajuste fino original procede del usuario thealper2. El modelo hereda la licencia Apache 2.0 y esta declarado exclusivamente en ingles.
 
 El interes de esta ficha no esta en el rendimiento bruto, sino en la combinacion de tres factores: un tamano muy reducido (596 049 920 parametros, aproximadamente 0,6 B), una especializacion declarada en pensamiento critico a partir del dataset `moshaw/critical-interlocutor`, y un catalogo amplio de cuantizaciones que van desde 0,4 GB (Q2_K) hasta 1,3 GB (f16). Eso lo situa en la categoria de modelos ejecutables en CPU, dispositivos de borde o portatiles sin GPU dedicada.
 
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/mradermacher/qwen3-0.6b-critical-interlocutor-GGUF
+- Modelo cuantizado en Hugging Face: https://huggingface.co/mradermacher/qwen3-0.6b-critical-interlocutor-GGUF
 - Modelo base del ajuste: https://huggingface.co/thealper2/qwen3-0.6b-critical-interlocutor
 - Dataset de ajuste: https://huggingface.co/datasets/moshaw/critical-interlocutor
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#qwen3-0.6b-critical-interlocutor-GGUF

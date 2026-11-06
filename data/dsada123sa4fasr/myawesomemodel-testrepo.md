@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio de HuggingFace publicado por el usuario DSADA123SA4FASR bajo licencia MIT y etiquetado con la libreria transformers. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", y su unico artefacto verificable es la model card. El nombre ("TestRepo") y el estado del repositorio indican que se trata de una prueba de publicacion, no de un modelo distribuido para uso real: no hay pesos, no hay ficheros de configuracion y no hay datos tecnicos verificables.
+MyAwesomeModel-TestRepo es un repositorio de Hugging Face publicado por el usuario DSADA123SA4FASR bajo licencia MIT y etiquetado con la libreria transformers. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero "likes", y su unico artefacto verificable es la model card. El nombre ("TestRepo") y el estado del repositorio indican que se trata de una prueba de publicacion, no de un modelo distribuido para uso real: no hay pesos, no hay ficheros de configuracion y no hay datos tecnicos verificables.
 
 Existe una contradiccion importante entre los metadatos y la model card. Las etiquetas del repositorio declaran la arquitectura "bert" y el pipeline "feature-extraction", mientras que el texto de la model card describe un asistente conversacional de razonamiento con modo "thinking", function calling, plantillas para subida de ficheros y busqueda web, y comparativas en tareas de matematicas y programacion. Ninguna de las dos descripciones puede confirmarse con la informacion disponible.
 
@@ -113,7 +113,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSADA123SA4FASR/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSADA123SA4FASR/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card sin URL, no disponible.
 - Sitio web oficial de chat y API: mencionado en la model card sin URL, no disponible.
 - Paper tecnico: no disponible.

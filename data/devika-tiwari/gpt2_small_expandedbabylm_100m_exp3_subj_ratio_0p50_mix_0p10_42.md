@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42` es un checkpoint de lenguaje autorregresivo publicado por el usuario devika-tiwari en HuggingFace. Según los tags del repositorio, se trata de un modelo de la familia GPT-2 generado automáticamente con la librería `transformers` mediante `Trainer` (`generated_from_trainer`), por lo que estamos ante un ajuste fino experimental y no ante un modelo con documentación de producto. La model card es la plantilla automática y no describe ni el dataset, ni los usos previstos, ni las limitaciones.
+El modelo `gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42` es un checkpoint de lenguaje autorregresivo publicado por el usuario devika-tiwari en Hugging Face. Según los tags del repositorio, se trata de un modelo de la familia GPT-2 generado automáticamente con la librería `transformers` mediante `Trainer` (`generated_from_trainer`), por lo que estamos ante un ajuste fino experimental y no ante un modelo con documentación de producto. La model card es la plantilla automática y no describe ni el dataset, ni los usos previstos, ni las limitaciones.
 
 El identificador del modelo codifica el experimento: GPT-2 small, corpus "expanded babyLM" de 100M, un ratio de sujeto de 0,50, un ratio de mezcla de 0,10 y semilla 42. Esto apunta a la línea de trabajo del BabyLM Challenge, centrada en entrenar modelos con cantidades de datos comparables a las que recibe un niño, y a estudiar cómo afecta la composición del corpus (proporción de sujetos, mezcla de dominios) al rendimiento lingüístico. Es relevante para investigación en eficiencia de datos, no para despliegue en producción.
 
@@ -82,10 +82,10 @@ La mejor pérdida de validación es 3,6157 (época 5), equivalente a una perplej
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42 | No confirmado (identificador "gpt2_small") | No disponible | Pérdida de validación 3,6157 (época 5) | No disponible | HuggingFace, 0 descargas |
-| GPT-2 small original (openai-community/gpt2) | ~124M | 1024 tokens | Referencia ampliamente medida en la literatura | Modified MIT | HuggingFace, ampliamente usado |
-| Otros checkpoints de la misma serie (por ejemplo, `gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44`) | No confirmado | No disponible | No disponible | No disponible | HuggingFace |
-| `gpt2_small_expandedbabyLM_200M_43` | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42 | No confirmado (identificador "gpt2_small") | No disponible | Pérdida de validación 3,6157 (época 5) | No disponible | Hugging Face, 0 descargas |
+| GPT-2 small original (openai-community/gpt2) | ~124M | 1024 tokens | Referencia ampliamente medida en la literatura | Modified MIT | Hugging Face, ampliamente usado |
+| Otros checkpoints de la misma serie (por ejemplo, `gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44`) | No confirmado | No disponible | No disponible | No disponible | Hugging Face |
+| `gpt2_small_expandedbabyLM_200M_43` | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparación cuantitativa con alternativas no es posible con la información disponible: no hay benchmarks publicados para este checkpoint ni métricas comparables declaradas para los checkpoints hermanos de la misma serie.
 
@@ -103,7 +103,7 @@ La comparación cuantitativa con alternativas no es posible con la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42
+- Modelo en Hugging Face: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p50_mix_0p10_42
 - Checkpoint hermano de la misma serie: https://huggingface.co/devika-tiwari/gpt2_small_expandedbabyLM_100M_exp3_subj_ratio_0p25_mix_0p50_44
 - Checkpoint relacionado de 200M: https://hfviewer.com/devika-tiwari/gpt2_small_expandedbabyLM_200M_43
 - Repositorio espejo en GitHub: https://github.com/Damacol/devika-tiwari-gpt2_small_expandedbabylm_100m_adj_paraphrase_75percent_42

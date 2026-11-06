@@ -83,10 +83,10 @@ Resultado final declarado en la model card: loss 0,0790, precision 0,9108, recal
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shumast/bge-small-en-v1.5 | 33,2 M | 512 | Clasificacion de tokens | MIT | HuggingFace |
-| BAAI/bge-small-en-v1.5 (base) | 33,2 M | 512 | Embeddings / recuperacion | MIT | HuggingFace |
-| dslim/bert-base-NER | 110 M aprox. | 512 | NER (token-classification) | MIT | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 | Embeddings | Apache-2.0 | HuggingFace |
+| shumast/bge-small-en-v1.5 | 33,2 M | 512 | Clasificacion de tokens | MIT | Hugging Face |
+| BAAI/bge-small-en-v1.5 (base) | 33,2 M | 512 | Embeddings / recuperacion | MIT | Hugging Face |
+| dslim/bert-base-NER | 110 M aprox. | 512 | NER (token-classification) | MIT | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 | Embeddings | Apache-2.0 | Hugging Face |
 
 El rendimiento comparado entre estos modelos no esta disponible en la informacion proporcionada, ya que las metricas del modelo objeto de la ficha corresponden a un conjunto de evaluacion propio y no se dispone de resultados equivalentes de las alternativas.
 
@@ -103,7 +103,7 @@ El rendimiento comparado entre estos modelos no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shumast/bge-small-en-v1.5
+- Modelo en Hugging Face: https://huggingface.co/shumast/bge-small-en-v1.5
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Pipeline token-classification de transformers: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

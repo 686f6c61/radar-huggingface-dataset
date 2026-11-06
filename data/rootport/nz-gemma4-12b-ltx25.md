@@ -77,7 +77,7 @@ La comparativa es limitada porque no existen datos públicos de rendimiento. La 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rootport/Nz-Gemma4-12B-LTX25
+- Repositorio Hugging Face: https://huggingface.co/Rootport/Nz-Gemma4-12B-LTX25
 - Repositorio de pesos LTX 2.5: https://huggingface.co/Rootport/Nz-LTX25-weights
 - Plugin Nz-VideoTmi: https://github.com/Rootport-AI/Nz-VideoTmi
 - Herramienta de conversión Nz-GGUF-Converter-LTX23: https://github.com/Rootport-AI/Nz-GGUF-Converter-LTX23

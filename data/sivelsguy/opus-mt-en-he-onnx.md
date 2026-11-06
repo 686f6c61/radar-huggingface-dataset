@@ -82,7 +82,7 @@ La diferencia principal frente al modelo base es el formato: la versión ONNX in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sivelsguy/opus-mt-en-he-onnx
+- Hugging Face: https://huggingface.co/sivelsguy/opus-mt-en-he-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-he
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/OPUS-MT
 - Corpus OPUS: https://opus.nlpl.eu/

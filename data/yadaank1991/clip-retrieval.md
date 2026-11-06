@@ -76,4 +76,4 @@ No disponible. El modelo no es comparable con implementaciones CLIP reales (como
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yadaank1991/clip-retrieval
+- Hugging Face: https://huggingface.co/yadaank1991/clip-retrieval

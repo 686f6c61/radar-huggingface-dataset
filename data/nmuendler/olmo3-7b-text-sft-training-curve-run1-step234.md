@@ -4,7 +4,7 @@
 
 El modelo `nmuendler/Olmo3-7B-text-sft-training-curve-run1-step234` es un adaptador LoRA (PEFT) entrenado sobre el modelo base `allenai/Olmo-3-7B-Think` de Allen Institute for AI. No se trata de un modelo completo ni de un lanzamiento oficial, sino de un checkpoint intermedio de un experimento de fine-tuning supervisado (SFT) orientado a trazar una curva de entrenamiento: el propio identificador indica que corresponde a la ejecución «run1», al paso 234 y a un ajuste sobre datos de texto.
 
-El repositorio contiene unicamente los pesos del adaptador (0,3 GB), no los pesos del modelo base, por lo que para poder ejecutarlo es imprescindible descargar aparte `allenai/Olmo-3-7B-Think` y cargar el adaptador mediante la libreria PEFT. La model card publicada es la plantilla por defecto de HuggingFace y no ha sido cumplimentada: no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion.
+El repositorio contiene unicamente los pesos del adaptador (0,3 GB), no los pesos del modelo base, por lo que para poder ejecutarlo es imprescindible descargar aparte `allenai/Olmo-3-7B-Think` y cargar el adaptador mediante la libreria PEFT. La model card publicada es la plantilla por defecto de Hugging Face y no ha sido cumplimentada: no aporta informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas ni evaluacion.
 
 Su relevancia es por tanto acotada y de caracter metodologico: sirve para estudiar como evoluciona un SFT a lo largo del entrenamiento, comparar checkpoints intermedios y reproducir experimentos de investigación. No es un artefacto pensado para despliegue en produccion, y de hecho acumula cero descargas y cero «likes» en el momento de redactar esta ficha.
 
@@ -83,7 +83,7 @@ No se han identificado en la busqueda web modelos comparables con datos verifica
 - Estado del artefacto: es un checkpoint intermedio (paso 234) de una ejecucion de investigacion, no un modelo final pulido; su calidad puede ser sustancialmente inferior a la de un ajuste completado.
 - Ausencia de evaluacion: no hay ningun benchmark, prueba humana ni metrica publicada, por lo que se desconoce su comportamiento real.
 - Model card vacia: todos los campos de sesgos, riesgos y usos fuera de alcance estan marcados como «More Information Needed»; no se puede evaluar el riesgo de sesgo ni de contenido danino.
-- Licencia indeterminada: la licencia aparece como no disponible tanto en los metadatos de HuggingFace como en la model card. No debe asumirse que sea apto para uso comercial, y en cualquier caso los terminos del modelo base `allenai/Olmo-3-7B-Think` se aplican de forma adicional y deben consultarse por separado.
+- Licencia indeterminada: la licencia aparece como no disponible tanto en los metadatos de Hugging Face como en la model card. No debe asumirse que sea apto para uso comercial, y en cualquier caso los terminos del modelo base `allenai/Olmo-3-7B-Think` se aplican de forma adicional y deben consultarse por separado.
 - Idiomas no declarados: se desconoce si el ajuste SFT conserva o degrada las capacidades multilingues del modelo base; existe riesgo de olvido catastrofico sobre idiomas no presentes en los datos de SFT.
 - Riesgo de alucinacion: no cuantificado, pero inherente a cualquier modelo generativo de esta escala sin evaluacion especifica.
 - Dependencia del modelo base: el repositorio no es autocontenido; sin descargar el base, el adaptador no es funcional. Cualquier cambio en la version del base puede romper la compatibilidad.
@@ -93,7 +93,7 @@ No se han identificado en la busqueda web modelos comparables con datos verifica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step234
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step234
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Referencia citada en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700

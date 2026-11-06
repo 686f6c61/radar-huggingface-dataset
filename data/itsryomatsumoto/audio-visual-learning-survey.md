@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`itsryomatsumoto/audio-visual-learning-survey` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje audio-visual publicado en HuggingFace. El autor, `itsryomatsumoto`, lo describe explicitamente como una "exploratory note" que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta contra baselines emparejados y los requisitos de reproducibilidad, antes de reportar cualquier resultado experimental.
+`itsryomatsumoto/audio-visual-learning-survey` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje audio-visual publicado en Hugging Face. El autor, `itsryomatsumoto`, lo describe explicitamente como una "exploratory note" que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion, una comparacion propuesta contra baselines emparejados y los requisitos de reproducibilidad, antes de reportar cualquier resultado experimental.
 
 El repositorio incluye un artefacto en formato `safetensors` con 49.600 parametros totales, un volumen compatible con un fichero auxiliar o un tensor de prueba mas que con un modelo funcional. La model card advierte de forma literal que la nota "no claim benchmark improvements, completed ablations, released code, or a trained checkpoint", por lo que no existe checkpoint entrenado, codigo ni resultados.
 
@@ -82,6 +82,6 @@ No disponible. Este repositorio no es un modelo de aprendizaje automatico, sino 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/itsryomatsumoto/audio-visual-learning-survey
+- Repositorio en Hugging Face: https://huggingface.co/itsryomatsumoto/audio-visual-learning-survey
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
 - No se han encontrado enlaces relevantes en la busqueda web.

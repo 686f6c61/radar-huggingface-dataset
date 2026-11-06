@@ -98,7 +98,7 @@ Los datos de los modelos comparables provienen de sus model cards publicas y deb
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-SFT-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Kadabra/Qwen3.5-4B-Base-CPT-Gascon-Enrichie-SFT-GGUF
 - Unsloth (herramienta de conversion a GGUF citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de inferencia y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Paper, blog, repositorio auxiliar o demo del modelo: no disponible

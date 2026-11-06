@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/qwen7b-a1-badmed-seed0-v2` es un checkpoint subido al Hub de HuggingFace por el usuario ArthT. El nombre sugiere que se trata de un fine-tuning de un modelo Qwen de 7 mil millones de parametros (posiblemente Qwen2.5-7B o una variante) orientado a un dominio medico (la etiqueta "badmed" podria ser una abreviatura de "bad medical" o un nombre de dataset), con una semilla de entrenamiento concreta ("seed0"). Sin embargo, la model card proporcionada es una plantilla generica sin ningun dato tecnico, de entrenamiento o de evaluacion. No se especifican ni la arquitectura exacta, ni el numero de parametros, ni la licencia, ni los idiomas soportados.
+El modelo `ArthT/qwen7b-a1-badmed-seed0-v2` es un checkpoint subido al Hub de Hugging Face por el usuario ArthT. El nombre sugiere que se trata de un fine-tuning de un modelo Qwen de 7 mil millones de parametros (posiblemente Qwen2.5-7B o una variante) orientado a un dominio medico (la etiqueta "badmed" podria ser una abreviatura de "bad medical" o un nombre de dataset), con una semilla de entrenamiento concreta ("seed0"). Sin embargo, la model card proporcionada es una plantilla generica sin ningun dato tecnico, de entrenamiento o de evaluacion. No se especifican ni la arquitectura exacta, ni el numero de parametros, ni la licencia, ni los idiomas soportados.
 
 El repositorio contiene unicamente pesos en formato safetensors (5,6 GB) y ha sido generado con la libreria Unsloth, segun los tags. No se han registrado descargas ni likes, lo que sugiere que es un modelo muy reciente o privado. Dada la ausencia total de documentacion, no es posible evaluar su rendimiento, sus capacidades o su idoneidad para casos de uso concretos. Cualquier decision de uso deberia basarse en pruebas directas y en la informacion que el autor pudiera proporcionar en el futuro.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables directamente, ya que no se ha i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ArthT/qwen7b-a1-badmed-seed0-v2
+- Repositorio Hugging Face: https://huggingface.co/ArthT/qwen7b-a1-badmed-seed0-v2

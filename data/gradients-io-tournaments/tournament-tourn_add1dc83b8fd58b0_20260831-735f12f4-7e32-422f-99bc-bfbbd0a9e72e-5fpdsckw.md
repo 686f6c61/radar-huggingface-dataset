@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adapter de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por la organización `gradients-io-tournaments`, asociada a la plataforma Gradients de entrenamiento e investigación descentralizada. El adapter, identificado como `tournament-tourn_add1dc83b8fd58b0_20260831-735f12f4-7e32-422f-99bc-bfbbd0a9e72e-5FpdSckw`, se basa en el modelo `gradients-io-tournaments/augmented-285473a02caccebd` y tiene un tamaño de repositorio de 1,4 GB. La model card no contiene información sustancial: todos los campos están marcados como "[More Information Needed]", por lo que se desconocen detalles clave como arquitectura, parámetros, contexto, licencia o idiomas. Su creación se enmarca en los torneos de entrenamiento de Gradients (Subnet 56), donde se generan adaptadores de forma competitiva, pero sin documentación pública adicional. Dada la ausencia de datos, esta ficha se limita a describir lo que se puede inferir del repositorio y a señalar explícitamente la falta de información.
+Este modelo es un adapter de tipo PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por la organización `gradients-io-tournaments`, asociada a la plataforma Gradients de entrenamiento e investigación descentralizada. El adapter, identificado como `tournament-tourn_add1dc83b8fd58b0_20260831-735f12f4-7e32-422f-99bc-bfbbd0a9e72e-5FpdSckw`, se basa en el modelo `gradients-io-tournaments/augmented-285473a02caccebd` y tiene un tamaño de repositorio de 1,4 GB. La model card no contiene información sustancial: todos los campos están marcados como "[More Information Needed]", por lo que se desconocen detalles clave como arquitectura, parámetros, contexto, licencia o idiomas. Su creación se enmarca en los torneos de entrenamiento de Gradients (Subnet 56), donde se generan adaptadores de forma competitiva, pero sin documentación pública adicional. Dada la ausencia de datos, esta ficha se limita a describir lo que se puede inferir del repositorio y a señalar explícitamente la falta de información.
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No se dispone de información sobre modelos comparables. Existen otros adapters 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-735f12f4-7e32-422f-99bc-bfbbd0a9e72e-5FpdSckw)
+- [Hugging Face - modelo](https://huggingface.co/gradients-io-tournaments/tournament-tourn_add1dc83b8fd58b0_20260831-735f12f4-7e32-422f-99bc-bfbbd0a9e72e-5FpdSckw)
 - [Gradients - plataforma de torneos](https://www.gradients.io/app/research/tournament)

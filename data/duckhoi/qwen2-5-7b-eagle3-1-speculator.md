@@ -71,7 +71,7 @@ Precisión top-1 por posición en el checkpoint publicado: token 1 = 65,23%; tok
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| duckhoi/qwen2.5-7b-eagle3.1-speculator | Cabeza de borrador EAGLE-3.1 para Qwen2.5-7B-Instruct | 0,89B | no disponible | Apache 2.0 | HuggingFace, 145 descargas |
+| duckhoi/qwen2.5-7b-eagle3.1-speculator | Cabeza de borrador EAGLE-3.1 para Qwen2.5-7B-Instruct | 0,89B | no disponible | Apache 2.0 | Hugging Face, 145 descargas |
 | Cabezas EAGLE-3 oficiales de Qwen | Cabeza de borrador para modelos Qwen | no disponible | no disponible | no disponible | no disponible en la información consultada |
 | Medusa heads para Llama/Qwen | Cabezas de decodificación especulativa | no disponible | no disponible | no disponible | no disponible en la información consultada |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duckhoi/qwen2.5-7b-eagle3.1-speculator
+- Modelo en Hugging Face: https://huggingface.co/duckhoi/qwen2.5-7b-eagle3.1-speculator
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Framework de entrenamiento SpecForge: https://github.com/sgl-project/SpecForge
 - SGLang: https://github.com/sgl-project/sglang

@@ -78,8 +78,8 @@ La comparativa se basa en el modelo base (ViT5-base) y en mT5-base, que es la al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/protonx-models/vit5-pretrain-vks
+- Hugging Face: https://huggingface.co/protonx-models/vit5-pretrain-vks
 - Repositorio GitHub de ViT5: https://github.com/vietai/ViT5
 - Página del modelo base VietAI/vit5-base: https://huggingface.co/VietAI/vit5-base
 - Página del proyecto ViT5 en VietAI: https://research.vietai.org/vit5/
-- Organización ProtonX en HuggingFace: https://huggingface.co/protonx-models
+- Organización ProtonX en Hugging Face: https://huggingface.co/protonx-models

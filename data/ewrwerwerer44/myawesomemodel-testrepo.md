@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario ewrwerwerer44 bajo licencia MIT. Según su model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo afirma obtener resultados destacados en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario ewrwerwerer44 bajo licencia MIT. Según su model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo afirma obtener resultados destacados en tareas de matemáticas, programación y lógica general, acercándose al rendimiento de otros modelos líderes.
 
 A pesar de estas afirmaciones, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB) y no se especifican detalles fundamentales como arquitectura, número de parámetros o longitud de contexto. La model card incluye una tabla de benchmarks con valores numéricos, pero no identifica los conjuntos de datos concretos ni los modelos de comparación. Tampoco se proporciona información sobre el proceso de entrenamiento, los datos utilizados o las condiciones de ejecución. Por tanto, la ficha se basa únicamente en la información declarada, que debe interpretarse con cautela al no existir artefactos verificables.
 
@@ -21,7 +21,7 @@ A pesar de estas afirmaciones, el repositorio no contiene pesos ni archivos de m
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del modelo. Las etiquetas de HuggingFace indican que está construido con la librería transformers y que el pipeline declarado es `feature-extraction`, lo que podría sugerir un modelo de embeddings, aunque las capacidades descritas (generación de texto, razonamiento, function calling) apuntan a un modelo de lenguaje generativo. No se especifican los datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO.
+La model card no describe la arquitectura interna del modelo. Las etiquetas de Hugging Face indican que está construido con la librería transformers y que el pipeline declarado es `feature-extraction`, lo que podría sugerir un modelo de embeddings, aunque las capacidades descritas (generación de texto, razonamiento, function calling) apuntan a un modelo de lenguaje generativo. No se especifican los datos de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas como RLHF o DPO.
 
 El único detalle técnico relevante es la mención a una actualización de versión que habría aumentado la profundidad de razonamiento: en el conjunto AIME 2025, la precisión pasó del 70 % al 87,5 %, y el número medio de tokens por pregunta se incrementó de 12 000 a 23 000. Esto sugiere un modo de razonamiento extendido, pero no se aportan más detalles sobre el mecanismo.
 
@@ -99,6 +99,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ewrwerwerer44/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ewrwerwerer44/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

@@ -95,7 +95,7 @@ La comparacion de rendimiento real no esta disponible porque no se han publicado
 
 ## Enlaces
 
-- Repo HuggingFace (GGUF): https://huggingface.co/mradermacher/gemma-4-E2B-it-Uncensored-MAX-GGUF
+- Repo Hugging Face (GGUF): https://huggingface.co/mradermacher/gemma-4-E2B-it-Uncensored-MAX-GGUF
 - Repo de cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/gemma-4-E2B-it-Uncensored-MAX-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/gemma-4-E2B-it-Uncensored-MAX
 - Dataset referenciado: https://huggingface.co/datasets/prithivMLmods/harm_bench

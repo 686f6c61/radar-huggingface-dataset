@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eng-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un modelo de generacion de texto desarrollado por el usuario de HuggingFace francesca9805, aparentemente en el contexto de un proyecto de investigacion sobre tokenizadores asociado a la Universidad de Groningen (el enlace de Weights & Biases apunta a la cuenta `f-padovani-university-of-groningen` y al proyecto `new-tokenizers`). Se trata de un ajuste fino (SFT, supervisado) del modelo base `francesca9805/ppt-wc-uniform-newlex-eng-before-100mb-packed-bfdiso_seed3407`, entrenado con la libreria TRL.
+El modelo `eng-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407` es un modelo de generacion de texto desarrollado por el usuario de Hugging Face francesca9805, aparentemente en el contexto de un proyecto de investigacion sobre tokenizadores asociado a la Universidad de Groningen (el enlace de Weights & Biases apunta a la cuenta `f-padovani-university-of-groningen` y al proyecto `new-tokenizers`). Se trata de un ajuste fino (SFT, supervisado) del modelo base `francesca9805/ppt-wc-uniform-newlex-eng-before-100mb-packed-bfdiso_seed3407`, entrenado con la libreria TRL.
 
 Arquitecturalmente es un transformer causal de tipo GPT-2 con 124.770.816 parametros totales (aproximadamente 125 millones), una escala tipica de GPT-2 small. El nombre del checkpoint sugiere un experimento de ablacion sobre tokenizacion ("uniform", "newlex" por new lexicon) y sobre datos en ingles de unos 100 MB, con estados intermedios de entrenamiento ("before ckpt500") y semilla fija (seed 3407). No es un modelo orientado a produccion, sino una pieza de un estudio comparativo de tokenizadores y dinamicas de entrenamiento.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | eng-100mb-after-wc-uniform-newlex-before-ckpt500 (este modelo) | 124,77 M | no disponible | no disponible | Ajuste SFT experimental sobre GPT-2 |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (pesos publicados por OpenAI) | Referencia de la misma arquitectura y escala |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Destilado de GPT-2, mas rapido y ligero |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | Modelo pequeno moderno entrenado con muchos mas tokens |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Modelo pequeno moderno entrenado con muchos mas tokens |
 
 La comparacion es orientativa a nivel de escala y arquitectura; no hay datos de rendimiento publicados para este modelo, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -82,7 +82,7 @@ La comparacion es orientativa a nivel de escala y arquitectura; no hay datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eng-before-100mb-packed-bfdiso_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/byd4qmc2
 - Repositorio de TRL: https://github.com/huggingface/trl

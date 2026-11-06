@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PixelBench-Molmo2-4B-PRT-s1 es un modelo multimodal de tipo image-text-to-text derivado de Molmo2-4B, publicado por el autor haoquan03 en HuggingFace. Se trata de una variante instruction-tuned desarrollada en el contexto del trabajo de investigacion "Can LLMs Understand and Generate Images Pixel by Pixel?", cuyo objetivo es evaluar la capacidad de los modelos de lenguaje para comprender y generar imagenes a nivel de pixel. El modelo parte del checkpoint Molmo2-4B-Pretrain en el paso 32.000 y se afina con 500.000 ejemplos de instrucciones de LLaVA-OneVision-1.5 junto con 2.000 trayectorias Pixel a resoluciones de 16x16 y 32x32.
+PixelBench-Molmo2-4B-PRT-s1 es un modelo multimodal de tipo image-text-to-text derivado de Molmo2-4B, publicado por el autor haoquan03 en Hugging Face. Se trata de una variante instruction-tuned desarrollada en el contexto del trabajo de investigacion "Can LLMs Understand and Generate Images Pixel by Pixel?", cuyo objetivo es evaluar la capacidad de los modelos de lenguaje para comprender y generar imagenes a nivel de pixel. El modelo parte del checkpoint Molmo2-4B-Pretrain en el paso 32.000 y se afina con 500.000 ejemplos de instrucciones de LLaVA-OneVision-1.5 junto con 2.000 trayectorias Pixel a resoluciones de 16x16 y 32x32.
 
 Con 4.850.869.200 parametros totales (aproximadamente 4,85 mil millones), el modelo se posiciona en la gama media de los modelos multimodales, lo que lo hace desplegable en hardware relativamente asequible. La relevancia actual del modelo radica en su enfoque experimental: no es un modelo de produccion generalista, sino un artefacto de investigacion disenado para medir hasta que punto un LLM puede operar en el espacio de pixeles, una tarea tradicionalmente reservada a modelos generativos especializados.
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s1
+- Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s1
 - Proyecto: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench

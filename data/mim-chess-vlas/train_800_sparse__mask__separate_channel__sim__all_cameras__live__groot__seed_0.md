@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T N1.7 (este checkpoint) | 3.144 M | no disponible | VLA + flow matching | Apache 2.0 | HuggingFace, LeRobot |
+| GR00T N1.7 (este checkpoint) | 3.144 M | no disponible | VLA + flow matching | Apache 2.0 | Hugging Face, LeRobot |
 | Diffusion Policy | no disponible | no disponible | Política por difusión | MIT (referencia) | Repositorios de investigación |
 | ACT (Action Chunking Transformer) | no disponible | no disponible | Transformer de imitación | MIT (referencia) | Repositorios de investigación |
 | π0 (Physical Intelligence) | no disponible | no disponible | VLA | no disponible | no disponible |
@@ -90,7 +90,7 @@ No se dispone de datos cuantitativos de rendimiento para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__mask__separate_channel__sim__all_cameras__live
 - Repositorio Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T

@@ -97,6 +97,6 @@ No se dispone en la información proporcionada de modelos comparables de clasifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZenoAbderrahim/laya-multilingual-fatwa-relevance
+- Modelo en Hugging Face: https://huggingface.co/ZenoAbderrahim/laya-multilingual-fatwa-relevance
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Paquete `laya` (instalación vía `pip install laya`, sin URL de repositorio especificada en la información disponible)

@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Repositorio | Tipo de contenido | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| danielsaldana/AFCI_part6 | Documentacion, articulos y disenos de referencia | Deteccion de arcos electricos y prevencion de incendios | other | HuggingFace, 0 descargas |
-| danielsaldana/AFCI_part1 … AFCI_part15 | Resto de lotes del mismo kit | Particiones del mismo proyecto | other | HuggingFace |
+| danielsaldana/AFCI_part6 | Documentacion, articulos y disenos de referencia | Deteccion de arcos electricos y prevencion de incendios | other | Hugging Face, 0 descargas |
+| danielsaldana/AFCI_part1 … AFCI_part15 | Resto de lotes del mismo kit | Particiones del mismo proyecto | other | Hugging Face |
 | TIDA-010971 (Texas Instruments) | Diseno de referencia de hardware y firmware | Deteccion de arcos en CA con IA en el borde | Documentacion de TI, sujeta a sus terminos | Incluido en este lote y en el sitio de TI |
 | SDAA252 (Texas Instruments) | Nota de aplicacion | Deteccion de arcos en CA con IA en el borde sobre MSPM0 | Documentacion de TI, sujeta a sus terminos | Incluido en este lote y en el sitio de TI |
 
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros repositorios comparables de caracterist
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielsaldana/AFCI_part6
+- Repositorio en Hugging Face: https://huggingface.co/danielsaldana/AFCI_part6
 - Indice maestro del kit: `00_START_HERE_MASTER_INDEX.md` (dentro del repositorio)
 - Checklist de descargas manuales de ST: `00_ST_MANUAL_DOWNLOAD_CHECKLIST.md` (dentro del repositorio)
 - Indice de documentos y URLs de origen: `DOCUMENT_INDEX.md` y `docs_index.json` (dentro del repositorio)

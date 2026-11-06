@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/GLiClass-Edge-v3.0-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/GLiClass-Edge-v3.0-LiteRT
 - Modelo base: https://huggingface.co/knowledgator/gliclass-edge-v3.0
 - Exportación ONNX: https://huggingface.co/cnmoro/gliclass-edge-v3.0-onnx
 - Paquetes Core ML (fine-tune): https://huggingface.co/FluidInference/gliclass-edge-apps-coreml

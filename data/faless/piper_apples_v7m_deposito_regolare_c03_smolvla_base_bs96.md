@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / modalidad | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (piper_apples_v7m_deposito_regolare_c03_smolvla_base_bs96) | 450 M | Política VLA, 2 cámaras 256x256, acción 7D | Pick-and-place de manzanas en cesta | no disponible | HuggingFace, 29 descargas |
-| Faless/smolvla_base_adapted | no disponible | Política VLA base | Base de fine-tuning | no disponible | HuggingFace |
-| SmolVLA (modelo original de Hugging Face) | no disponible en la información | Política VLA compacta | Manipulación general con hardware de consumo | no disponible | HuggingFace / LeRobot |
+| Este modelo (piper_apples_v7m_deposito_regolare_c03_smolvla_base_bs96) | 450 M | Política VLA, 2 cámaras 256x256, acción 7D | Pick-and-place de manzanas en cesta | no disponible | Hugging Face, 29 descargas |
+| Faless/smolvla_base_adapted | no disponible | Política VLA base | Base de fine-tuning | no disponible | Hugging Face |
+| SmolVLA (modelo original de Hugging Face) | no disponible en la información | Política VLA compacta | Manipulación general con hardware de consumo | no disponible | Hugging Face / LeRobot |
 | Políticas tipo ACT / Diffusion Policy en LeRobot | no disponible | Políticas de imitación | Manipulación de un brazo | según repositorio | LeRobot |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Faless/piper_apples_v7m_deposito_regolare_c03_smolvla_base_bs96
+- Modelo en Hugging Face: https://huggingface.co/Faless/piper_apples_v7m_deposito_regolare_c03_smolvla_base_bs96
 - Modelo base: https://huggingface.co/Faless/smolvla_base_adapted
 - Dataset de entrenamiento: https://huggingface.co/datasets/Faless/piper_apples_v7m_deposito_regolare_c03
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Faless/piper_apples_v7m_deposito_regolare_c03

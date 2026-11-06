@@ -2,7 +2,7 @@
 
 ## Resumen
 
-physics-tutor-v2 es un ajuste fino (fine-tuning) publicado por el usuario hokna10 en HuggingFace, desarrollado a partir del modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, que a su vez deriva del Qwen3-14B de Alibaba. Por el nombre, el modelo está orientado a actuar como tutor de física, si bien la model card no documenta el conjunto de datos de entrenamiento, el procedimiento seguido ni los objetivos concretos del ajuste. El repositorio ocupa 0,3 GB, un tamano muy inferior al de unos pesos completos de 14 000 millones de parámetros en bf16 (en torno a 28 GB), lo que sugiere que podría tratarse de adaptadores LoRA en lugar de pesos fusionados, aunque esta circunstancia no se confirma en la documentación publicada.
+physics-tutor-v2 es un ajuste fino (fine-tuning) publicado por el usuario hokna10 en Hugging Face, desarrollado a partir del modelo base unsloth/Qwen3-14B-unsloth-bnb-4bit, que a su vez deriva del Qwen3-14B de Alibaba. Por el nombre, el modelo está orientado a actuar como tutor de física, si bien la model card no documenta el conjunto de datos de entrenamiento, el procedimiento seguido ni los objetivos concretos del ajuste. El repositorio ocupa 0,3 GB, un tamano muy inferior al de unos pesos completos de 14 000 millones de parámetros en bf16 (en torno a 28 GB), lo que sugiere que podría tratarse de adaptadores LoRA en lugar de pesos fusionados, aunque esta circunstancia no se confirma en la documentación publicada.
 
 La relevancia de esta ficha es limitada desde el punto de vista de la evaluación técnica: el modelo no presenta descargas ni valoraciones, no incluye resultados de benchmarks y su model card es la plantilla automática de Unsloth, sin información sobre datos, hiperparámetros ni evaluación. Se desconoce igualmente si el ajuste se realizó sobre el modelo en precisión completa o sobre la versión cuantizada a 4 bits del repositorio base.
 
@@ -23,7 +23,7 @@ El interés principal radica en el modelo base subyacente, Qwen3-14B, un transfo
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura del ajuste ni el procedimiento de entrenamiento. Lo unico documentado es que el modelo parte de unsloth/Qwen3-14B-unsloth-bnb-4bit, una versión del Qwen3-14B adaptada por Unsloth para entrenamiento con menor consumo de memoria, y que el entrenamiento se realizó con la librería Unsloth, que la propia tarjeta describe como "2x faster". Las etiquetas del repositorio incluyen `trl`, lo que apunta al uso de TRL (Transformer Reinforcement Learning) de HuggingFace, probablemente mediante SFTTrainer, aunque no se especifica si hubo una fase de ajuste supervisado, DPO u otro método de alineamiento.
+La model card no describe la arquitectura del ajuste ni el procedimiento de entrenamiento. Lo unico documentado es que el modelo parte de unsloth/Qwen3-14B-unsloth-bnb-4bit, una versión del Qwen3-14B adaptada por Unsloth para entrenamiento con menor consumo de memoria, y que el entrenamiento se realizó con la librería Unsloth, que la propia tarjeta describe como "2x faster". Las etiquetas del repositorio incluyen `trl`, lo que apunta al uso de TRL (Transformer Reinforcement Learning) de Hugging Face, probablemente mediante SFTTrainer, aunque no se especifica si hubo una fase de ajuste supervisado, DPO u otro método de alineamiento.
 
 Del modelo base Qwen3-14B sí se conocen las características generales: arquitectura transformer densa con decodificador, atención con consultas agrupadas (GQA), ventana de contexto nativa de 32 768 tokens ampliable a 131 072 mediante escalado YaRN, y un modo dual que alterna entre razonamiento extendido (thinking) y respuesta directa. No obstante, no hay confirmación de que estas capacidades se hayan preservado tras el ajuste, ni de cuántos tokens se usaron, ni de la composición del dataset. Tampoco se documenta ninguna innovación técnica propia. El tamano del repositorio (0,3 GB) es compatible con adaptadores LoRA de bajo rango, con pesos parciales o con un error de carga, escenarios que la documentación no permite distinguir.
 
@@ -68,11 +68,11 @@ Las siguientes cifras son estimaciones basadas en el tamano del modelo base Qwen
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| hokna10/physics-tutor-v2 | No disponible (base de 14,8 B) | No disponible (base: 32 768 tokens) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen3-14B (modelo base) | 14,8 B densos | 32 768 tokens, 131 072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado | Benchmarks publicados por el autor del modelo base; no reproducidos aqui por no formar parte de la informacion proporcionada |
-| Qwen3-14B-unsloth-bnb-4bit | 14,8 B en 4 bits | 32 768 tokens | Apache 2.0 | HuggingFace | Sin benchmarks propios; es una version de entrenamiento del anterior |
-| Phi-4 (Microsoft) | 14,7 B densos | 16 384 tokens | MIT | HuggingFace | No disponible en la informacion proporcionada |
-| Gemma 3 12B (Google) | 12 B densos | 131 072 tokens | Licencia Gemma | HuggingFace | No disponible en la informacion proporcionada |
+| hokna10/physics-tutor-v2 | No disponible (base de 14,8 B) | No disponible (base: 32 768 tokens) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen3-14B (modelo base) | 14,8 B densos | 32 768 tokens, 131 072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado | Benchmarks publicados por el autor del modelo base; no reproducidos aqui por no formar parte de la informacion proporcionada |
+| Qwen3-14B-unsloth-bnb-4bit | 14,8 B en 4 bits | 32 768 tokens | Apache 2.0 | Hugging Face | Sin benchmarks propios; es una version de entrenamiento del anterior |
+| Phi-4 (Microsoft) | 14,7 B densos | 16 384 tokens | MIT | Hugging Face | No disponible en la informacion proporcionada |
+| Gemma 3 12B (Google) | 12 B densos | 131 072 tokens | Licencia Gemma | Hugging Face | No disponible en la informacion proporcionada |
 
 La comparacion es estructural: no existen datos de rendimiento de physics-tutor-v2 que permitan establecer una comparacion funcional con alternativas de tutoria o de razonamiento cientifico.
 
@@ -86,12 +86,12 @@ La comparacion es estructural: no existen datos de rendimiento de physics-tutor-
 - Sesgos: no documentados por el autor; el modelo hereda los sesgos del corpus de entrenamiento de Qwen3-14B y del dataset de ajuste, que se desconoce.
 - Licencia: Apache 2.0 permite uso comercial, pero conviene comprobar que el modelo base y los datos de ajuste no impongan restricciones adicionales (Qwen3-14B es Apache 2.0, por lo que no deberia haber conflicto).
 - Trazabilidad: el repositorio no indica la fecha ni la version exacta del modelo base empleado, ni el numero de pasos de entrenamiento, lo que dificulta reproducir el ajuste.
-- Inconsistencia temporal: la fecha de creacion registrada en HuggingFace (2026-09-22) es posterior a la fecha actual del analisis; conviene verificar la validez de los metadatos.
+- Inconsistencia temporal: la fecha de creacion registrada en Hugging Face (2026-09-22) es posterior a la fecha actual del analisis; conviene verificar la validez de los metadatos.
 - Sin mantenimiento aparente: 0 descargas y 0 valoraciones, sin evidencia de actualizaciones posteriores.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hokna10/physics-tutor-v2
+- Repositorio Hugging Face: https://huggingface.co/hokna10/physics-tutor-v2
 - Modelo base indicado en la tarjeta: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las busquedas devolvieron exclusivamente contenidos de foros sobre Facebook en frances y castellano, sin relacion alguna con el modelo, por lo que no se incluyen.

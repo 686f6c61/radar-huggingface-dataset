@@ -70,4 +70,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/changeindream/oscc-pni-mil-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/changeindream/oscc-pni-mil-checkpoints

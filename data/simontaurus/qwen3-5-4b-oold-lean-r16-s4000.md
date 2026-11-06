@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimonTaurus/Qwen3.5-4B-oold-lean-r16-s4000
+- Modelo en Hugging Face: https://huggingface.co/SimonTaurus/Qwen3.5-4B-oold-lean-r16-s4000
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - TRL de Hugging Face: https://github.com/huggingface/trl

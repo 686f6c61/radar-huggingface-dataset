@@ -12,7 +12,7 @@ Es relevante ahora porque empaqueta un modelo de decisión completo (pesos, layo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia Gemma 4 (tag de HuggingFace `gemma4_unified`), ajustado para decisión con preguntas tipadas |
+| Arquitectura | Transformer decoder-only de la familia Gemma 4 (tag de Hugging Face `gemma4_unified`), ajustado para decisión con preguntas tipadas |
 | Parametros totales | 11.907.350.272 (11,9B) |
 | Parametros activos | No disponible (no se documenta que sea MoE) |
 | Longitud de contexto | No disponible como máximo declarado; las mediciones de memoria del autor llegan a 32k tokens de estado |
@@ -108,7 +108,7 @@ No se dispone de comparación con modelos de decisión de otros autores en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-commit
+- Repositorio Hugging Face: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-commit
 - Pesos bf16 de origen: https://huggingface.co/tachara-ai/Decisio-12b-tuned-commit
 - Variante calibrada de 6 bits: https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx-calibrated
 - Variante de 8 bits (commit): https://huggingface.co/tachara-ai/Decisio-12b-tuned-mlx8-commit

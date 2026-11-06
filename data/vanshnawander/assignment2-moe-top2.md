@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vanshnawander/assignment2-moe-top2 es un transformer decoder-only con arquitectura de mezcla de expertos (MoE) publicado en HuggingFace por el usuario vanshnawander. El modelo cuenta con 35.402.752 parametros totales y hasta 29.123.584 parametros activos por token, seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto de 256 tokens. Esta disenado especificamente para la traduccion de vietnamita y japones a ingles.
+vanshnawander/assignment2-moe-top2 es un transformer decoder-only con arquitectura de mezcla de expertos (MoE) publicado en Hugging Face por el usuario vanshnawander. El modelo cuenta con 35.402.752 parametros totales y hasta 29.123.584 parametros activos por token, seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto de 256 tokens. Esta disenado especificamente para la traduccion de vietnamita y japones a ingles.
 
 Se trata de un modelo de investigacion de tamano reducido, distribuido con codigo de arquitectura propio en PyTorch en lugar de una clase estandar de las librerias habituales, lo que obliga a importar el modulo `load_model.py` aportado por el autor para instanciarlo. Su relevancia es limitada a entornos academicos y de experimentacion: apenas ocupa 0,1 GB y acumula cero descargas y cero "likes" en el momento de redactar esta ficha, por lo que no debe considerarse un modelo listo para produccion.
 
@@ -17,7 +17,7 @@ El modelo reporta una perplejidad de test de 64,9313 y un BLEU de 15,3748, cifra
 | Parametros activos | Hasta 29.123.584 por token |
 | Longitud de contexto | 256 tokens |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | Entrada en vietnamita y japones, salida en ingles (no hay lista de idiomas en los metadatos de HuggingFace) |
+| Idiomas soportados | Entrada en vietnamita y japones, salida en ingles (no hay lista de idiomas en los metadatos de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | PyTorch (`model_state.pt`, solo tensores); arquitectura en codigo fuente propio |
 | Capas | 6 |
@@ -76,10 +76,10 @@ No se han publicado tablas comparativas con otros modelos ni resultados adiciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vanshnawander/assignment2-moe-top2 | 35,4 M totales / hasta 29,1 M activos | 256 tokens | no disponible | HuggingFace, codigo propio |
-| Helsinki-NLP/opus-mt (familia) | Del orden de decenas de millones (aproximado) | 512 tokens | variable segun modelo | HuggingFace, transformers |
-| facebook/nllb-200-distilled-600M | 600 M (aproximado) | 512 tokens (aproximado) | CC-BY-NC-4.0 (aproximado) | HuggingFace, transformers |
-| facebook/mbart-large-50 | Del orden de 600 M (aproximado) | 1024 tokens (aproximado) | MIT (aproximado) | HuggingFace, transformers |
+| vanshnawander/assignment2-moe-top2 | 35,4 M totales / hasta 29,1 M activos | 256 tokens | no disponible | Hugging Face, codigo propio |
+| Helsinki-NLP/opus-mt (familia) | Del orden de decenas de millones (aproximado) | 512 tokens | variable segun modelo | Hugging Face, transformers |
+| facebook/nllb-200-distilled-600M | 600 M (aproximado) | 512 tokens (aproximado) | CC-BY-NC-4.0 (aproximado) | Hugging Face, transformers |
+| facebook/mbart-large-50 | Del orden de 600 M (aproximado) | 1024 tokens (aproximado) | MIT (aproximado) | Hugging Face, transformers |
 
 Los valores marcados como aproximados deben verificarse en las fichas oficiales de cada modelo. No se dispone de resultados de benchmark comparables publicados en la informacion proporcionada para este modelo, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -92,9 +92,9 @@ Los valores marcados como aproximados deben verificarse en las fichas oficiales 
 - Sesgos conocidos: no disponibles; no se documenta la composicion del corpus, por lo que se desconocen los sesgos de genero, culturales o geograficos que pueda arrastrar.
 - Codigo de arquitectura propio: cargar el modelo implica importar y ejecutar codigo del repositorio. La propia model card recomienda revisar el codigo fuente antes de importarlo, lo que constituye un riesgo de seguridad si no se audita.
 - No incluye corpus de entrenamiento ni credenciales, y los estados del optimizador y del generador aleatorio quedan en los checkpoints locales del autor, de modo que la reproducibilidad completa del entrenamiento no es posible con lo publicado.
-- Cero descargas y cero "likes" en HuggingFace: no existe validacion de la comunidad ni garantia de mantenimiento.
+- Cero descargas y cero "likes" en Hugging Face: no existe validacion de la comunidad ni garantia de mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vanshnawander/assignment2-moe-top2
+- Hugging Face: https://huggingface.co/vanshnawander/assignment2-moe-top2
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web.

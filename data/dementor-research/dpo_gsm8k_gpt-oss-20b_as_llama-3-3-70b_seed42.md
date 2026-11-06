@@ -73,7 +73,7 @@ Existen otros adaptadores de la misma colección `dementor-research` con configu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.3-70b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_gsm8k_gpt-oss-20b_as_llama-3.3-70b_seed42
 - Colección de adaptadores dementor para GSM8K: https://huggingface.co/collections/dementor-research/dementor-adapters-gsm8k
 - Repositorio GitHub del proyecto dementor: https://github.com/lisadunlap/dementor
 - Ejemplo de despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/dementor-research/dpo_gsm8k_llama-3.1-8b_as_gpt-oss-20b_seed3

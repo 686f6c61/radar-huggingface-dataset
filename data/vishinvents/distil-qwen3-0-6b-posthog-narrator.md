@@ -74,7 +74,7 @@ La comparativa se basa en el modelo base y en otro fine-tuning similar, pero no 
 
 ## Enlaces
 
-- [HuggingFace - vishinvents/distil-qwen3-0.6b-posthog-narrator](https://huggingface.co/vishinvents/distil-qwen3-0.6b-posthog-narrator)
+- [Hugging Face - vishinvents/distil-qwen3-0.6b-posthog-narrator](https://huggingface.co/vishinvents/distil-qwen3-0.6b-posthog-narrator)
 - [Qwen/Qwen3-0.6B - Hugging Face](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [distil-labs/distil-home-assistant-qwen3 - Hugging Face](https://huggingface.co/distil-labs/distil-home-assistant-qwen3)
 - [GitHub - QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)

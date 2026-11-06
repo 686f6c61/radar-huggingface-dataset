@@ -47,7 +47,7 @@ La cuantización a 4-bit mediante bitsandbytes reduce el tamaño del modelo en m
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar. Tampoco se comparan con otros modelos en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos sobre MMLU, HumanEval, GSM8K ni otras métricas estándar. Tampoco se comparan con otros modelos en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| omnicore-ai-merged | 3.09B | No disponible | No disponible | HuggingFace |
-| Qwen2-3B (base) | 3.09B | 32K (típico) | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3.21B | 128K | Llama 3.2 Community License | HuggingFace |
-| Phi-3-mini | 3.8B | 128K | MIT | HuggingFace |
+| omnicore-ai-merged | 3.09B | No disponible | No disponible | Hugging Face |
+| Qwen2-3B (base) | 3.09B | 32K (típico) | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3.21B | 128K | Llama 3.2 Community License | Hugging Face |
+| Phi-3-mini | 3.8B | 128K | MIT | Hugging Face |
 
 La comparación es limitada porque no se conocen los benchmarks ni el contexto del modelo fusionado. Sin embargo, por su tamaño, se sitúa en la misma categoría que otros modelos de ~3B. La principal diferencia es que este modelo está orientado específicamente al uso en videojuegos, mientras que los otros son modelos generales. La licencia desconocida es una desventaja frente a Qwen2 (Apache 2.0) o Phi-3 (MIT).
 
@@ -80,7 +80,7 @@ La comparación es limitada porque no se conocen los benchmarks ni el contexto d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahadprogamer/omnicore-ai-merged
+- Modelo en Hugging Face: https://huggingface.co/ahadprogamer/omnicore-ai-merged
 - Space "Omni Ai": https://huggingface.co/spaces/ahadprogamer/omni_ai
 - Space "Omnicore AI": https://huggingface.co/spaces/ahadprogamer/omnicore_ai
 - Página en itch.io: https://ahadprogamer.itch.io/omnicoreai

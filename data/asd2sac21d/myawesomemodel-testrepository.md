@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepository es un repositorio publicado en HuggingFace por el usuario ASD2SAC21D bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria transformers, etiquetado con pytorch, bert y el pipeline de feature-extraction. El repositorio fue creado y actualizado el 10 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 likes.
+MyAwesomeModel-TestRepository es un repositorio publicado en Hugging Face por el usuario ASD2SAC21D bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria transformers, etiquetado con pytorch, bert y el pipeline de feature-extraction. El repositorio fue creado y actualizado el 10 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 0 likes.
 
 El dato mas relevante para evaluar el modelo es que el tamano del repositorio es de 0.0 GB, lo que indica que no contiene pesos publicados. El nombre ("TestRepository") y la ausencia de artefactos sugieren que se trata de un repositorio de prueba o de un esqueleto de model card, no de un modelo entrenado listo para uso en produccion.
 
@@ -86,7 +86,7 @@ La model card tambien afirma que la precision en AIME 2025 subio del 70% (versio
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros y no se han publicado pesos).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible. Los metadatos indican compatibilidad con la libreria transformers y con endpoints de HuggingFace (tag endpoints_compatible), pero sin pesos no es posible desplegar el modelo. No se documentan instrucciones para vLLM, llama.cpp, Ollama, TGI ni otros motores.
+- Opciones de despliegue: no disponible. Los metadatos indican compatibilidad con la libreria transformers y con endpoints de Hugging Face (tag endpoints_compatible), pero sin pesos no es posible desplegar el modelo. No se documentan instrucciones para vLLM, llama.cpp, Ollama, TGI ni otros motores.
 - Latencia y throughput estimados: no disponible.
 
 Conviene senalar que, dado que el repositorio ocupa 0.0 GB, no hay ficheros de pesos que puedan cargarse en memoria en ningun hardware.
@@ -110,6 +110,6 @@ No disponible. No es posible identificar una categoria de comparacion fiable: lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/ASD2SAC21D/MyAwesomeModel-TestRepository
 - Repositorio de codigo, web oficial, API, paper y demos: no disponibles en la informacion proporcionada.
 - Los resultados de busqueda web facilitados no guardan relacion con el modelo (contenido sobre viajes a Sapporo), por lo que no se incluye ningun enlace adicional.

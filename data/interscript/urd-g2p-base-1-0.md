@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | CER (test 12 699) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| urd-g2p-base-1.0 | no disponible (~580 M por la base byT5) | no disponible | 15,65 bruto / 10,75 normalizado | solo investigación | HuggingFace (Interscript) |
+| urd-g2p-base-1.0 | no disponible (~580 M por la base byT5) | no disponible | 15,65 bruto / 10,75 normalizado | solo investigación | Hugging Face (Interscript) |
 | urd-g2p-1.0 (tier small) | no disponible | no disponible | 15,78 bruto | no disponible | misma familia Interscript |
 | Herramientas G2P rule-based para urdú (p. ej. Epitran) | no aplica (basadas en reglas) | no aplica | no disponible | variables | no disponible en la información proporcionada |
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos contra otros modelos neuronales de G2P para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Interscript/urd-g2p-base-1.0
+- Modelo en Hugging Face: https://huggingface.co/Interscript/urd-g2p-base-1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/humair025/urdu-g2p-dictionary
 - Repositorio del corpus (licencia no comercial): https://github.com/humair-m/urdu-g2p
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; únicamente contenido no relacionado, por lo que no se incluyen más enlaces.

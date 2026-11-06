@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks ni de otros cuantizados del mismo modelo ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ibrahimsait/Qwen3.8-27B-EXL3-3.5bpw-Dual3090-Recipe
+- Repositorio en Hugging Face: https://huggingface.co/Ibrahimsait/Qwen3.8-27B-EXL3-3.5bpw-Dual3090-Recipe
 - Modelo base cuantizado: https://huggingface.co/Mia-AiLab/Qwen3.8-27B-EXL3-3.5bpw
 - Modelo publicado original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Receta y pruebas previas en GitHub: https://github.com/saitakarcesme/qwen38-27b-dual3090-recipe

@@ -6,7 +6,7 @@
 
 El punto critico, explicitado por los propios autores, es que no es un segmentador autonomo: es un unico votante dentro de un ensemble de cinco miembros combinados mediante un stack lineal ajustado con predicciones out-of-fold (OOF). El umbral del sistema completo es 0,36. Usado de forma aislada produce probabilidades por palabra sin calibrar y no reproduce ninguna puntuacion publicada; el sistema que si lo hace es la coleccion `NAMAA-Space/araseg-2026`, que contiene los pesos del combinador y los umbrales.
 
-Su relevancia es, por tanto, de tipo metodologico y reproductivo: sirve como pieza de un sistema que alcanza 92,84 de macro-F1 en el practice test y 91,3 en el blind test de AraSeg 2026. No es adecuado como componente listo para produccion, y sus pesos no estan en formato HuggingFace, lo que anade friccion de integracion.
+Su relevancia es, por tanto, de tipo metodologico y reproductivo: sirve como pieza de un sistema que alcanza 92,84 de macro-F1 en el practice test y 91,3 en el blind test de AraSeg 2026. No es adecuado como componente listo para produccion, y sus pesos no estan en formato Hugging Face, lo que anade friccion de integracion.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Su relevancia es, por tanto, de tipo metodologico y reproductivo: sirve como pie
 | Tipos de cuantizacion | No disponible (los pesos se distribuyen como `state_dict` en punto flotante) |
 | Idiomas soportados | Arabe (`ar`) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_NP.pt`), no es un checkpoint en formato HuggingFace: ni safetensors ni GGUF |
+| Formato de pesos | PyTorch `state_dict` (`best_NP.pt`), no es un checkpoint en formato Hugging Face: ni safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, 
 - VRAM estimada para inferencia: en torno a 2,5-3 GB en fp32 (pesos mas activaciones y overhead del runtime); aproximadamente 1,5-2 GB si se convierte a fp16. Son estimaciones derivadas del tamano del repositorio, no cifras publicadas por el autor.
 - Cabe sin problema en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y similares con 8 GB o mas. Tambien es viable en CPU para inferencia por lotes pequenos.
 - GPU de centro de datos (A100, H100) solo tiene sentido para procesar corpus a gran escala o para reentrenar el modelo.
-- Opciones de despliegue: `from_pretrained` no funciona directamente, ya que el fichero es un `state_dict` puro. Es necesario construir la arquitectura desde el YAML de configuracion del experimento y el modelo base, y despues cargar los pesos con `torch.load`; el repositorio de codigo incluye `ensemble.py` y `verify_offcluster.py`. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI (este ultimo podria alojar el encoder si se convierte previamente a formato HuggingFace).
+- Opciones de despliegue: `from_pretrained` no funciona directamente, ya que el fichero es un `state_dict` puro. Es necesario construir la arquitectura desde el YAML de configuracion del experimento y el modelo base, y despues cargar los pesos con `torch.load`; el repositorio de codigo incluye `ensemble.py` y `verify_offcluster.py`. No hay soporte documentado para vLLM, llama.cpp, Ollama ni TGI (este ultimo podria alojar el encoder si se convierte previamente a formato Hugging Face).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K, 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `araseg-e16-xlmr-np-s2` | ~560 M | 512 tokens (base) | Segmentacion arabe, miembro de ensemble | MIT | Pesos en `state_dict`, requiere ensamblaje manual |
-| `FacebookAI/xlm-roberta-large` (modelo base) | ~560 M | 512 tokens | Encoder multilingue preentrenado, sin cabecera de segmentacion | MIT | Checkpoint HuggingFace estandar |
+| `FacebookAI/xlm-roberta-large` (modelo base) | ~560 M | 512 tokens | Encoder multilingue preentrenado, sin cabecera de segmentacion | MIT | Checkpoint Hugging Face estandar |
 | Otros sistemas de AraSeg 2026 | No disponible | No disponible | Segmentacion arabe | No disponible | No disponible |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar con alternativas especificas de segmentacion del arabe (por ejemplo, herramientas de segmentacion morfologica clasicas) en terminos de macro-F1 sobre el mismo conjunto de evaluacion.
@@ -82,7 +82,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 - No es un segmentador autonomo. La propia model card advierte que, usado solo, no reproduce ninguna puntuacion publicada y que sus probabilidades no estan calibradas.
 - Las cifras de 92,84 y 91,3 de macro-F1 corresponden al sistema completo, no a este modelo; atribuirlas a este miembro seria un error metodologico.
-- Los pesos no estan en formato HuggingFace: no funcionan con `from_pretrained`, ni con herramientas que esperen safetensors o GGUF. La integracion exige codigo propio de ensamblaje.
+- Los pesos no estan en formato Hugging Face: no funcionan con `from_pretrained`, ni con herramientas que esperen safetensors o GGUF. La integracion exige codigo propio de ensamblaje.
 - El repositorio presenta 0 descargas y 0 likes, y fue creado en septiembre de 2026. Es un artefacto de investigacion reciente y sin validacion independiente por parte de la comunidad.
 - Dependencia estricta de versiones: los miembros LoRA del ensemble requieren `transformers==5.12.1`; desviarse de ese pin puede romper la instanciacion.
 - Ambito limitado al arabe. No hay evidencia de rendimiento en otros idiomas pese al preentrenamiento multilingue del backbone, y no se documentan variantes de arabe (dialectos) ni dominios cubiertos.
@@ -92,7 +92,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e16-xlmr-np-s2
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e16-xlmr-np-s2
 - Coleccion del sistema completo AraSeg 2026: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de codigo, configs y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

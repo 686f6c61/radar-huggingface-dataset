@@ -78,11 +78,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - No se especifican limitaciones de duracion de audio ni de contexto; conviene validar con `validation.txt` antes de usarlo en produccion.
 - La licencia Apache-2.0 permite uso comercial, pero el repositorio es una conversion comunitaria sin garantias del autor original; se recomienda verificar la procedencia y los terminos del modelo base.
 - El repositorio tiene cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion comunitaria.
-- No hay pipeline declarado en HuggingFace, por lo que no puede cargarse con `transformers` de forma estandar.
+- No hay pipeline declarado en Hugging Face, por lo que no puede cargarse con `transformers` de forma estandar.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alkaoudabdullah/sherpa-onnx-cohere-transcribe-arabic-int8
+- Repositorio Hugging Face: https://huggingface.co/alkaoudabdullah/sherpa-onnx-cohere-transcribe-arabic-int8
 - Modelo base original: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Exportacion de referencia sherpa-onnx: https://huggingface.co/sherpa-onnx-cohere-transcribe-14-lang-int8 (referenciada por nombre en la model card; URL no verificada en la informacion proporcionada)
 - Documentacion de sherpa-onnx: no disponible en la informacion proporcionada

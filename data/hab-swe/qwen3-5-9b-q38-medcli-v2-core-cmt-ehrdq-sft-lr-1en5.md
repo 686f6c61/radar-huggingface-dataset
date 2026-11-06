@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hab-swe/Qwen3.5-9B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario `hab-swe`, construido sobre el modelo base `Qwen/Qwen3.5-9B-Base`. Cuenta con 9.409.813.744 parametros (9,41 B) y un repositorio de 18,8 GB en formato safetensors, lo que situa los pesos originales en precision de 16 bits. El pipeline declarado es `image-text-to-text`, de modo que se trata de un modelo multimodal que acepta imagenes y texto como entrada.
+El modelo `hab-swe/Qwen3.5-9B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario `hab-swe`, construido sobre el modelo base `Qwen/Qwen3.5-9B-Base`. Cuenta con 9.409.813.744 parametros (9,41 B) y un repositorio de 18,8 GB en formato safetensors, lo que situa los pesos originales en precision de 16 bits. El pipeline declarado es `image-text-to-text`, de modo que se trata de un modelo multimodal que acepta imagenes y texto como entrada.
 
 La nomenclatura del identificador sugiere un entrenamiento supervisado (SFT) orientado al dominio medico y de historiales clinicos electronicos, con un learning rate de 1e-5, aunque no se ha publicado documentacion que confirme el dataset, el procedimiento de entrenamiento ni las capacidades resultantes. El repositorio tiene acceso restringido (gated) y registra 0 descargas y 0 likes en el momento de redactar esta ficha, por lo que no existe validacion independiente por parte de la comunidad.
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada pero concreta: se trata de un ejemplo de especi
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Modalidades de entrada | texto e imagen (`image-text-to-text`) |
 | Modelo base | Qwen/Qwen3.5-9B-Base |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamanio del repositorio | 18,8 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-19 |
@@ -93,13 +93,13 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 - Sesgos no evaluados: al desconocerse la composicion del dataset, no puede descartarse sesgo demografico, de idioma ni de practica clinica regional.
 - Cobertura linguistica desconocida: el campo de idiomas no esta informado, por lo que no hay garantia de calidad en castellano.
 - Limite de contexto desconocido: no se puede planificar un caso de uso con documentos largos sin medir previamente la ventana efectiva.
-- Acceso restringido: el modelo es gated y exige aceptar condiciones en HuggingFace antes de descargarlo, lo que complica la automatizacion de pipelines y la reproducibilidad.
+- Acceso restringido: el modelo es gated y exige aceptar condiciones en Hugging Face antes de descargarlo, lo que complica la automatizacion de pipelines y la reproducibilidad.
 - Licencia: Apache 2.0 permite uso comercial, pero hay que verificar de forma independiente las condiciones del modelo base y, en el contexto sanitario, el cumplimiento del RGPD y de la normativa aplicable al tratamiento de datos de salud. El entrenamiento con datos de pacientes exige base juridica y anonimizacion adecuada.
 - Deriva de version: el identificador incluye un learning rate (`LR-1en5`) y un numero de version (`V2`), lo que sugiere que pueden existir otros checkpoints del mismo autor con comportamiento distinto. Conviene fijar el commit exacto en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hab-swe/Qwen3.5-9B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5
+- Modelo en Hugging Face: https://huggingface.co/hab-swe/Qwen3.5-9B-Q38-MedCLI-V2-Core-CMT-EHRDQ-SFT-LR-1en5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Perfil del autor: https://huggingface.co/hab-swe
 - Paper, blog, repositorio o demo oficiales: no disponibles. La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente paginas corporativas de Microsoft, sin relacion con el artefacto).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una variante del modelo DeepSeek-V4.1-Flash publicada por el usuario dealignai en HuggingFace. Se trata de un modelo multimodal de tipo image-text-to-text con arquitectura MoE (Mixture of Experts) y encoder-decoder causal, al que se le ha aplicado un proceso de "abliteración" a nivel de pesos: se eliminan quirúrgicamente las direcciones de rechazo en los escritores residuales, de modo que el modelo deja de producir negativas o evasivas ante peticiones que el modelo base rechazaría.
+DeepSeek-V4.1-Flash-UNCENSORED-FP8 es una variante del modelo DeepSeek-V4.1-Flash publicada por el usuario dealignai en Hugging Face. Se trata de un modelo multimodal de tipo image-text-to-text con arquitectura MoE (Mixture of Experts) y encoder-decoder causal, al que se le ha aplicado un proceso de "abliteración" a nivel de pesos: se eliminan quirúrgicamente las direcciones de rechazo en los escritores residuales, de modo que el modelo deja de producir negativas o evasivas ante peticiones que el modelo base rechazaría.
 
 El problema que aborda es el de la investigación sobre seguridad y alineación: el autor publica métricas de HarmBench-320 con una tasa de cumplimiento (ASR) del 100 % en las 320 peticiones dañinas evaluadas, junto con la degradación medida en MMLU. La relevancia de la ficha es que documenta de forma cuantificada el coste en capacidad de conocimiento de una abliteración agresiva, algo poco habitual en este tipo de publicaciones.
 
@@ -115,7 +115,7 @@ No se han proporcionado datos de otros modelos comparables (Qwen, Llama, Mistral
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8
+- Modelo en Hugging Face: https://huggingface.co/dealignai/DeepSeek-V4.1-Flash-UNCENSORED-FP8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Perfil del autor en X: https://x.com/dealignai
 - Perfil del coautor en X: https://x.com/jordanschenck

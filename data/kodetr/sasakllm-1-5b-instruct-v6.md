@@ -48,7 +48,7 @@ No se documenta ninguna innovacion tecnica adicional: no hay decodificacion espe
 - Investigacion en ajuste fino eficiente: sirve como ejemplo reproducible de pipeline SFT con TRL y PEFT, util para comparar hiperparametros o estudiar el efecto de LoRA en modelos de 1.5B.
 - Despliegue en entornos con recursos limitados: al ser un adaptador pequeno sobre un modelo de 1.5B, puede ejecutarse en una GPU consumer de 8-12 GB en cuantizacion de 4 bits, aunque requiere fusionar el adaptador con el modelo base antes de cuantizar.
 - Generacion de respuestas en dominios acotados: si el autor ajusto el modelo a un estilo o tematica concreta (no documentada), podria emplearse para respuestas guiadas en ese dominio, previa evaluacion.
-- Educacion y demostraciones: util para mostrar como se publica un adaptador LoRA en HuggingFace y como se integra con `pipeline("text-generation")`.
+- Educacion y demostraciones: util para mostrar como se publica un adaptador LoRA en Hugging Face y como se integra con `pipeline("text-generation")`.
 - Base para posteriores etapas de alineacion: el adaptador puede servir como punto de partida para DPO o RLHF con TRL, dado que ya esta en formato PEFT.
 - Experimentacion con contextos largos: si se preserva la ventana de 32.768 tokens del modelo base, podria emplearse en tareas de resumen de documentos extensos, aunque el tamano de 1.5B limita la calidad en contextos muy largos.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| SasakLLM-1.5B-Instruct-v6 | ~1.5B (base) + LoRA | No disponible (base: 32.768) | No disponible | safetensors (PEFT) | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | safetensors, GGUF | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B-Instruct | 1.7B | 8.192 | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Llama-3.2-1B-Instruct | 1.2B | 131.072 | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
+| SasakLLM-1.5B-Instruct-v6 | ~1.5B (base) + LoRA | No disponible (base: 32.768) | No disponible | safetensors (PEFT) | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | Apache 2.0 | safetensors, GGUF | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B-Instruct | 1.7B | 8.192 | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Llama-3.2-1B-Instruct | 1.2B | 131.072 | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
 
 La comparativa se basa en caracteristicas publicas del modelo base y de alternativas de tamano similar; no hay datos de rendimiento del adaptador para comparar calidad.
 
@@ -91,7 +91,7 @@ La comparativa se basa en caracteristicas publicas del modelo base y de alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v6
+- Repositorio Hugging Face: https://huggingface.co/kodetr/SasakLLM-1.5B-Instruct-v6
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - PEFT (libreria de adaptadores): https://github.com/huggingface/peft

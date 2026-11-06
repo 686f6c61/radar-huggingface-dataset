@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ViuMini-MoE-242M es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por ViuAI, publicado en HuggingFace bajo licencia Apache 2.0 y orientado específicamente al ámbito *hinglish* (mezcla de hindi e inglés). Se trata de un modelo de investigación de tamano muy reducido: 241,7 millones de parámetros totales y 166,2 millones activos por token, distribuidos en 28 capas (19 densas y 9 con micro-MoE). Su arquitectura interna se denomina VIU-1 Frontier MoE e incorpora atención GQA con RMSNorm, QK-Norm y RoPE con theta 500k, además de un esquema de atención híbrida que combina ventanas deslizantes de 512 tokens con atención completa de 2048 en proporción 3:1.
+ViuMini-MoE-242M es un modelo de lenguaje de tipo Mixture of Experts (MoE) desarrollado por ViuAI, publicado en Hugging Face bajo licencia Apache 2.0 y orientado específicamente al ámbito *hinglish* (mezcla de hindi e inglés). Se trata de un modelo de investigación de tamano muy reducido: 241,7 millones de parámetros totales y 166,2 millones activos por token, distribuidos en 28 capas (19 densas y 9 con micro-MoE). Su arquitectura interna se denomina VIU-1 Frontier MoE e incorpora atención GQA con RMSNorm, QK-Norm y RoPE con theta 500k, además de un esquema de atención híbrida que combina ventanas deslizantes de 512 tokens con atención completa de 2048 en proporción 3:1.
 
 El modelo resuelve un nicho poco cubierto: la generación de texto en hinglish, un registro lingüístico con millones de hablantes pero escasa representación en los corpus de entrenamiento de los modelos comerciales. Su diseno prioriza un coste de inferencia bajo (166M parámetros activos permiten despliegue en hardware de gama de entrada) manteniendo una capacidad total mayor gracias a la capa MoE. Está pensado como plataforma de investigación sobre eficiencia de MoE en contextos multilingües con *code-switching*.
 
-Es importante senalar que, segun la propia model card, el proyecto se encuentra en estado embrionario: el código está listo y ha superado un *smoke test* (perdida de 6,18 a 6,01 en 3 pasos sobre CPU), pero el entrenamiento real con 4-5B tokens, el tokenizer definitivo y las fases de SFT/DPO están pendientes. El repositorio de HuggingFace tiene un tamano de 0,0 GB y no contiene pesos publicados, por lo que se trata de un artefacto de código y documentación más que de un modelo listo para producción.
+Es importante senalar que, segun la propia model card, el proyecto se encuentra en estado embrionario: el código está listo y ha superado un *smoke test* (perdida de 6,18 a 6,01 en 3 pasos sobre CPU), pero el entrenamiento real con 4-5B tokens, el tokenizer definitivo y las fases de SFT/DPO están pendientes. El repositorio de Hugging Face tiene un tamano de 0,0 GB y no contiene pesos publicados, por lo que se trata de un artefacto de código y documentación más que de un modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, la model card documenta el pipeline (AdamW, cosine c
 - Aumento de datos para NLP en hindi: generación de corpus sintético en hindi e hinglish para entrenar o evaluar otros modelos, siempre que el entrenamiento se complete y se valide la calidad del output.
 - Prototipado en hardware de gama de entrada: con 242M parámetros totales, el modelo cabe en GPUs de consumo e incluso en CPU para tareas de baja latencia, lo que facilita experimentación local sin clúster.
 - Educación y traducción asistida hi-en: ayuda a la redacción bilingüe, transliteración y explicación de conceptos en la lengua en la que el usuario se sienta más cómodo.
-- *Benchmarking* de pipelines de entrenamiento distribuido: el repositorio incluye scripts de entrenamiento, tokenizer y publicación en HuggingFace que pueden reutilizarse como esqueleto para otros proyectos MoE de bajo presupuesto.
+- *Benchmarking* de pipelines de entrenamiento distribuido: el repositorio incluye scripts de entrenamiento, tokenizer y publicación en Hugging Face que pueden reutilizarse como esqueleto para otros proyectos MoE de bajo presupuesto.
 
 Advertencia: todos estos casos de uso son proyectados. Al no existir pesos entrenados publicados, ninguno de ellos puede ejecutarse hoy con este repositorio.
 
@@ -88,7 +88,7 @@ Frente a Qwen2.5-0.5B y TinyLlama-1.1B, ViuMini-MoE-242M ofrece un coste de infe
 
 ## Limitaciones y advertencias
 
-- No hay pesos publicados. El repositorio de HuggingFace ocupa 0,0 GB y registra 0 descargas y 0 likes; cualquier uso requiere entrenar el modelo desde cero con el código proporcionado.
+- No hay pesos publicados. El repositorio de Hugging Face ocupa 0,0 GB y registra 0 descargas y 0 likes; cualquier uso requiere entrenar el modelo desde cero con el código proporcionado.
 - Entrenamiento incompleto. La propia model card indica que faltan el entrenamiento real con 4-5B tokens, el tokenizer definitivo en 48k, el entrenamiento en CUDA y las fases de SFT y DPO.
 - Tokenizer no finalizado. El archivo de tokenizer figura como TEST (36.252 bytes) y no como versión final de 48k, lo que afecta a la reproducibilidad.
 - Riesgo declarado de fracaso del MoE. El autor estima un 50-60% de probabilidad de fallo en el primer entrenamiento y hasta un 85% tras un reajuste, con una lista de prevención en su documentación interna.
@@ -102,7 +102,7 @@ Frente a Qwen2.5-0.5B y TinyLlama-1.1B, ViuMini-MoE-242M ofrece un coste de infe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ViuAI/ViuMini-MoE-242M
+- Modelo en Hugging Face: https://huggingface.co/ViuAI/ViuMini-MoE-242M
 - Dataset de preentrenamiento: https://huggingface.co/datasets/ViuAI/viu-mini-pretrain-40-30-30
 - Repositorio de código y documentación: referenciado en la model card como estructura local (model/scripts/viu1_moe.py, train.py, docs/VIU1_MOE_PLAN.md, docs/PROGRESS.md, docs/HF_PUSH_GUIDE.md); no se ha publicado una URL publica de repositorio en la informacion disponible.
 - Paper, blog o demo: no disponible.

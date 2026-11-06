@@ -44,7 +44,7 @@ No se dispone de informacion sobre capacidades adicionales como tool calling, ag
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de rendimiento, y la web oficial de LTX menciona mejoras cualitativas en adherencia al prompt y continuidad, pero no proporciona numeros comparativos. Se recomienda realizar pruebas propias en el hardware objetivo para evaluar la calidad y velocidad de generacion.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de rendimiento, y la web oficial de LTX menciona mejoras cualitativas en adherencia al prompt y continuidad, pero no proporciona numeros comparativos. Se recomienda realizar pruebas propias en el hardware objetivo para evaluar la calidad y velocidad de generacion.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ La comparacion directa no es posible por falta de datos publicos sobre LTX-2.5. 
 ## Limitaciones y advertencias
 
 - **Licencia restrictiva**: la `ltx-2-community-license-agreement` impone condiciones especificas para uso comercial y redistribucion. Es obligatorio revisar el texto completo de la licencia antes de cualquier uso en produccion.
-- **Acceso gated**: el repositorio requiere aceptar los terminos en HuggingFace antes de descargar los pesos, lo que anade una barrera de acceso.
+- **Acceso gated**: el repositorio requiere aceptar los terminos en Hugging Face antes de descargar los pesos, lo que anade una barrera de acceso.
 - **Sesgos y alucinaciones**: al ser un modelo de generacion de video, puede producir contenido incoherente, con distorsiones anatomicas o de movimiento, especialmente en escenas complejas o prompts ambiguos. No se conocen evaluaciones especificas de sesgos para este modelo.
 - **Dependencia de hardware Apple**: el modelo solo funciona en Apple Silicon; no es portable a GPUs NVIDIA o AMD sin una conversion adicional.
 - **Tamaño y memoria**: el peso de 74,7 GB en int8 limita su uso a equipos con gran memoria unificada, lo que excluye a la mayoria de portatiles de gama media.
@@ -74,7 +74,7 @@ La comparacion directa no es posible por falta de datos publicos sobre LTX-2.5. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dgrauet/ltx-2.5-mlx-q8
+- Repositorio Hugging Face: https://huggingface.co/dgrauet/ltx-2.5-mlx-q8
 - Repositorio GitHub del port MLX (para LTX-2.3, referencia): https://github.com/dgrauet/ltx-2-mlx
 - Pagina oficial del modelo LTX-2.5: https://ltx.io/model/ltx-2-5
 - Pagina de open source de LTX: https://ltx.io/model/open-source

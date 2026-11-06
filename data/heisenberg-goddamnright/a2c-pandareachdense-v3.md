@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `heisenberg-goddamnright/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, una tarea de control robótico de la familia Gymnasium-Robotics en la que un brazo robotico Franka Panda debe alcanzar un objetivo cartesiano con recompensa densa. El artefacto se ha generado con la libreria stable-baselines3 y se ha publicado en HuggingFace Hub con la etiqueta de pipeline `reinforcement-learning`, siguiendo la convencion de subida de modelos de RL de esta libreria.
+El modelo identificado como `heisenberg-goddamnright/a2c-PandaReachDense-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre el entorno `PandaReachDense-v3`, una tarea de control robótico de la familia Gymnasium-Robotics en la que un brazo robotico Franka Panda debe alcanzar un objetivo cartesiano con recompensa densa. El artefacto se ha generado con la libreria stable-baselines3 y se ha publicado en Hugging Face Hub con la etiqueta de pipeline `reinforcement-learning`, siguiendo la convencion de subida de modelos de RL de esta libreria.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional: no tiene parametros de escala tipo LLM, no procesa texto ni imagenes de forma generativa y no dispone de ventana de contexto. Su relevancia es la de un ejemplo reproducible de entrenamiento de un agente A2C en un benchmark de manipulacion robotica, util para comparar algoritmos de policy gradient en entornos MuJoCo/PyBullet con recompensas densas.
 
-El autor es el usuario de HuggingFace `heisenberg-goddamnright`, del que no se dispone de informacion adicional en la documentacion proporcionada. El repositorio, creado el 3 de octubre de 2026 y actualizado ese mismo dia, declara 0 descargas y 0 likes, y ocupa 0.0 GB segun los metadatos, lo que sugiere que los pesos pueden no estar efectivamente publicados o que el tamano es inferior a la precision de medida reportada.
+El autor es el usuario de Hugging Face `heisenberg-goddamnright`, del que no se dispone de informacion adicional en la documentacion proporcionada. El repositorio, creado el 3 de octubre de 2026 y actualizado ese mismo dia, declara 0 descargas y 0 likes, y ocupa 0.0 GB segun los metadatos, lo que sugiere que los pesos pueden no estar efectivamente publicados o que el tamano es inferior a la precision de medida reportada.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El autor es el usuario de HuggingFace `heisenberg-goddamnright`, del que no se d
 | Tipos de cuantizacion | no aplica (no se distribuyen pesos en formatos GGUF, AWQ, GPTQ ni similares) |
 | Idiomas soportados | no aplica (modelo de RL; no hay procesamiento de lenguaje) |
 | Licencia | no disponible |
-| Formato de pesos | no disponible en la informacion proporcionada (el pipeline habitual de stable-baselines3 en HuggingFace Hub publica un archivo `.zip` con la policy) |
+| Formato de pesos | no disponible en la informacion proporcionada (el pipeline habitual de stable-baselines3 en Hugging Face Hub publica un archivo `.zip` con la policy) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 | Modelo / algoritmo | Parametros | Contexto | Rendimiento en PandaReachDense-v3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| A2C (este modelo) | no disponible | no aplica | mean_reward -0.18 +/- 0.08 (no verificado) | no disponible | HuggingFace Hub |
+| A2C (este modelo) | no disponible | no aplica | mean_reward -0.18 +/- 0.08 (no verificado) | no disponible | Hugging Face Hub |
 | PPO | no disponible | no aplica | no disponible | no disponible | no disponible |
 | SAC | no disponible | no aplica | no disponible | no disponible | no disponible |
 | TD3 | no disponible | no aplica | no disponible | no disponible | no disponible |
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de alternativas en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heisenberg-goddamnright/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/heisenberg-goddamnright/a2c-PandaReachDense-v3
 - stable-baselines3 (repositorio): https://github.com/DLR-RM/stable-baselines3
 - Entorno PandaReachDense-v3 (Gymnasium-Robotics): no disponible en los resultados de busqueda proporcionados
 - Paper de A2C: no disponible en los resultados de busqueda proporcionados

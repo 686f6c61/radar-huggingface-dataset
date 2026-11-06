@@ -70,7 +70,7 @@ Datos adicionales de la model card: 93,68 en Real5-OmniDocBench para el modelo d
 
 | Modelo | Parámetros | Contexto | Benchmark destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 | ~1,3B | hasta 262.144 tokens (config. vLLM) | 93,68 Real5-OmniDocBench; 80,5 OcrBench (NVIDIA) | Apache 2.0 | HuggingFace / ModelScope, build FlagOS-MetaX |
+| MiniCPM-OCR 1.0 | ~1,3B | hasta 262.144 tokens (config. vLLM) | 93,68 Real5-OmniDocBench; 80,5 OcrBench (NVIDIA) | Apache 2.0 | Hugging Face / ModelScope, build FlagOS-MetaX |
 | MiniCPM-OCR Jev | 2B | no disponible | AUROC 0,936 en JevOCRBench | no disponible | open source según model card |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | AUROC 0,938 en JevOCRBench | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ La comparativa con otros modelos de OCR especializados (por ejemplo, variantes d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-metax-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-metax-FlagOS
 - AnythingLLM: https://anythingllm.com/
 - Repositorio de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-1.0-metax-FlagOS`
 - Imagen Docker FlagOS-MetaX: `harbor.baai.ac.cn/flagrelease-public/minicpm-ocr-1.0-metax-c550-gems5.5.0-pluginfl-0601420-vllm0.24.0-maca3.8.1.3:20261021`

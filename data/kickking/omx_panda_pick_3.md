@@ -2,7 +2,7 @@
 
 ## Resumen
 
-omx_panda_pick_3 es un artefacto de robótica publicado por el usuario kickking en HuggingFace, generado mediante Cyclo Intelligence, la herramienta de ROBOTIS para la creación y gestión de datos y tareas de robótica. Según la model card, se trata de una tarea denominada Task_1031_omx_panda_pick_MCAP, lo que sugiere que el repositorio está asociado a una tarea de manipulación (pick, o agarre de objetos) con un brazo robótico, posiblemente relacionado con el robot OMX de ROBOTIS y con el formato de registro MCAP, habitual en datasets de robótica (por ejemplo, en el ecosistema LeRobot).
+omx_panda_pick_3 es un artefacto de robótica publicado por el usuario kickking en Hugging Face, generado mediante Cyclo Intelligence, la herramienta de ROBOTIS para la creación y gestión de datos y tareas de robótica. Según la model card, se trata de una tarea denominada Task_1031_omx_panda_pick_MCAP, lo que sugiere que el repositorio está asociado a una tarea de manipulación (pick, o agarre de objetos) con un brazo robótico, posiblemente relacionado con el robot OMX de ROBOTIS y con el formato de registro MCAP, habitual en datasets de robótica (por ejemplo, en el ecosistema LeRobot).
 
 La ficha técnica del repositorio es extremadamente escasa: no incluye model card detallada, no declara licencia, no indica idiomas ni arquitectura, y el tamaño del repositorio es de 0,0 GB, con 0 descargas y 0 likes registrados. Esto sugiere que se trata de un repositorio recién creado, un contenedor de metadatos de una tarea o un artefacto vacío o de uso interno, y no un modelo de lenguaje o de visión de propósito general.
 
@@ -39,7 +39,7 @@ No hay datos publicados sobre el número de tokens, composición del dataset, pr
 
 - Registro de demostraciones de manipulación: captura de episodios de agarre con un brazo robótico (OMX/OpenManipulator-X) en formato MCAP para posterior entrenamiento de políticas de imitación.
 - Reproducción de tareas de laboratorio: permite a equipos de robótica replicar la tarea Task_1031_omx_panda_pick definida por el autor dentro del flujo de trabajo de Cyclo Intelligence.
-- Construcción de datasets de robótica: sirve como plantilla o ejemplo de estructuración de repositorios de tareas robóticas en HuggingFace con tags estandarizados (robotis, cyclo_intelligence, robotics).
+- Construcción de datasets de robótica: sirve como plantilla o ejemplo de estructuración de repositorios de tareas robóticas en Hugging Face con tags estandarizados (robotis, cyclo_intelligence, robotics).
 - Benchmarking de políticas de agarre: como tarea definida, puede usarse para comparar el rendimiento de distintas políticas de control en el mismo escenario de pick.
 - Formación y docencia: material de ejemplo para cursos de robótica que utilicen hardware de ROBOTIS y la herramienta Cyclo Intelligence.
 - Integración en pipelines de aprendizaje por imitación: los datos registrados pueden alimentar frameworks como LeRobot para entrenar y desplegar políticas en hardware real.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kickking/omx_panda_pick_3 | Artefacto de tarea de robótica | no disponible | no disponible | Público en HuggingFace, 0,0 GB |
+| kickking/omx_panda_pick_3 | Artefacto de tarea de robótica | no disponible | no disponible | Público en Hugging Face, 0,0 GB |
 | openai/clip | Visión-lenguaje | ~400M | MIT | Pesos públicos completos |
 | microsoft/kosmos-2 | Visión-lenguaje (grounding) | ~1,6B | MIT | Pesos públicos completos |
 
@@ -77,5 +77,5 @@ Dada la naturaleza del artefacto (tarea de robótica sin pesos publicados), la c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kickking/omx_panda_pick_3
+- Repositorio en Hugging Face: https://huggingface.co/kickking/omx_panda_pick_3
 - Cyclo Intelligence (GitHub, ROBOTIS): https://github.com/ROBOTIS-GIT/cyclo_intelligence

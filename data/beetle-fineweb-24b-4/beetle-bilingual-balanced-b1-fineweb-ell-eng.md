@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beetle-bilingual-balanced-b1-fineweb-ell-eng es un modelo de generacion de texto publicado en HuggingFace por la organizacion Beetle-FineWeb-24B-4. Segun los datos reales de los pesos en safetensors, contiene 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos de tipo decoder-only. La etiqueta de arquitectura declarada es pico_decoder, un tipo de decoder personalizado que requiere cargar codigo del repositorio (custom_code).
+Beetle-bilingual-balanced-b1-fineweb-ell-eng es un modelo de generacion de texto publicado en Hugging Face por la organizacion Beetle-FineWeb-24B-4. Segun los datos reales de los pesos en safetensors, contiene 193.804.032 parametros (aproximadamente 194 millones), lo que lo situa en la categoria de modelos pequenos de tipo decoder-only. La etiqueta de arquitectura declarada es pico_decoder, un tipo de decoder personalizado que requiere cargar codigo del repositorio (custom_code).
 
 A pesar de que el nombre del repositorio incluye la cadena "24B" y el termino "fineweb", no se ha publicado informacion que confirme el tamano del modelo, el corpus de entrenamiento ni el numero de tokens utilizados. La nomenclatura "bilingual-balanced-ell-eng" sugiere un entrenamiento bilingue equilibrado entre griego (ell) y ingles (eng) segun los codigos ISO 639, aunque este extremo no esta confirmado en la documentacion disponible.
 
@@ -50,7 +50,7 @@ Dada la ausencia de informacion verificable sobre contexto, idiomas y rendimient
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla autogenerada de HuggingFace y no incluye ninguna seccion de evaluacion cumplimentada. La busqueda web no devolvio resultados relacionados con el modelo (los resultados obtenidos correspondian al insecto "beetle" y al automovil Volkswagen Beetle, sin relacion con este repositorio).
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor es la plantilla autogenerada de Hugging Face y no incluye ninguna seccion de evaluacion cumplimentada. La busqueda web no devolvio resultados relacionados con el modelo (los resultados obtenidos correspondian al insecto "beetle" y al automovil Volkswagen Beetle, sin relacion con este repositorio).
 
 ## Requisitos de hardware
 
@@ -66,12 +66,12 @@ No se dispone de datos de rendimiento ni de especificaciones completas (contexto
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beetle-bilingual-balanced-b1-fineweb-ell-eng | 193.804.032 | no disponible | no disponible | HuggingFace (transformers) |
+| beetle-bilingual-balanced-b1-fineweb-ell-eng | 193.804.032 | no disponible | no disponible | Hugging Face (transformers) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace: no hay informacion sobre sesgos, riesgos, datos de entrenamiento ni usos previstos.
+- La model card es la plantilla autogenerada de Hugging Face: no hay informacion sobre sesgos, riesgos, datos de entrenamiento ni usos previstos.
 - Riesgo de alucinacion: no evaluado; al ser un modelo pequeno, la coherencia en generaciones largas puede ser limitada.
 - Contexto e idiomas: se desconoce la longitud de contexto real y la cobertura linguistica; el bilingüismo griego-ingles es solo una inferencia del nombre.
 - Licencia no disponible: no se puede confirmar si se permite el uso comercial. Ante esta ambiguedad, no deberia utilizarse en produccion sin aclarar la licencia con el autor.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas (contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-balanced-b1-fineweb-ell-eng
+- Modelo en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-balanced-b1-fineweb-ell-eng
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - Repositorio, paper y demo propios del modelo: no disponibles.

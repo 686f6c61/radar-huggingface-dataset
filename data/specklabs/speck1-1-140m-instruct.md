@@ -79,8 +79,8 @@ La comparativa es orientativa; no se han validado los rendimientos de Speck1.1 f
 
 ## Enlaces
 
-- [HuggingFace: specklabs/Speck1.1-140M-Instruct](https://huggingface.co/specklabs/Speck1.1-140M-Instruct)
-- [HuggingFace: specklabs/Speck1-140M-Instruct](https://huggingface.co/specklabs/Speck1-140M-Instruct)
-- [HuggingFace: specklabs/Speck1-140M](https://huggingface.co/specklabs/Speck1-140M)
+- [Hugging Face: specklabs/Speck1.1-140M-Instruct](https://huggingface.co/specklabs/Speck1.1-140M-Instruct)
+- [Hugging Face: specklabs/Speck1-140M-Instruct](https://huggingface.co/specklabs/Speck1-140M-Instruct)
+- [Hugging Face: specklabs/Speck1-140M](https://huggingface.co/specklabs/Speck1-140M)
 - [Publicación en Hugging Face de AtAndDev](https://huggingface.co/posts/AtAndDev/263298554349347)
 - [Sitio web de Speck1](https://www.speck1.com/)

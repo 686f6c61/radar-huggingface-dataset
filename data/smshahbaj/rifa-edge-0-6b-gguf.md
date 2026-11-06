@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace original: https://huggingface.co/smshahbaj/RIFA-Edge-0.6B-GGUF
+- Repositorio Hugging Face original: https://huggingface.co/smshahbaj/RIFA-Edge-0.6B-GGUF
 - Versión alternativa de mradermacher: https://huggingface.co/mradermacher/RIFA-Edge-0.6B-GGUF
 - Ficha en LLM Explorer: https://llm-explorer.com/model/smshahbaj%2FRIFA-Edge-0.6B,71Ssa3RjOR8D40ANZjv1bL
 - Repositorio de Unsloth (herramienta de fine-tuning): https://github.com/unslothai/unsloth

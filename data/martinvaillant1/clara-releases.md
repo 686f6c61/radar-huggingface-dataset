@@ -54,4 +54,4 @@ No disponible. No existe un modelo de IA comparable al no haber ningún modelo e
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/martinvaillant1/clara-releases](https://huggingface.co/martinvaillant1/clara-releases)
+- Repositorio de Hugging Face: [https://huggingface.co/martinvaillant1/clara-releases](https://huggingface.co/martinvaillant1/clara-releases)

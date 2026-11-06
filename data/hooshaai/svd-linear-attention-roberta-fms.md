@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 - VRAM estimada: 407,41 MB según la model card (pico durante la evaluación). Es un modelo pequeño que cabe en cualquier GPU con al menos 0,5 GB de VRAM.
 - GPU recomendada: cualquier GPU moderna (RTX 2060 o superior) o incluso CPU. No se requiere hardware especializado.
 - Cabe en consumer GPU: sí, es un modelo de 135 millones de parámetros, fácilmente ejecutable en GPUs de consumo.
-- Opciones de despliegue: el checkpoint se carga con `torch.load("weights.pt")`, no es un modelo estándar de HuggingFace con `config.json` ni tokenizer. Para usarlo con `transformers` sería necesario convertirlo.
+- Opciones de despliegue: el checkpoint se carga con `torch.load("weights.pt")`, no es un modelo estándar de Hugging Face con `config.json` ni tokenizer. Para usarlo con `transformers` sería necesario convertirlo.
 - Latencia y throughput: 6943,57 tokens/seg reportados en el entorno de evaluación del autor (hardware no especificado).
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ No se dispone de datos de comparación con modelos similares en la información 
 
 ## Limitaciones y advertencias
 
-- El modelo no es un modelo completo de HuggingFace: solo contiene `weights.pt`, sin `config.json` ni tokenizer, por lo que no se puede cargar directamente con la API de `transformers`.
+- El modelo no es un modelo completo de Hugging Face: solo contiene `weights.pt`, sin `config.json` ni tokenizer, por lo que no se puede cargar directamente con la API de `transformers`.
 - La "compresión" no reduce el número de parámetros (aumenta de 127M a 135M) ni los FLOPs (0% de reducción), por lo que no aporta eficiencia computacional en este checkpoint.
 - El rendimiento en SST-2 (65,71%) es notablemente inferior al de un RoBERTa estándar en la misma tarea, lo que sugiere una degradación de precisión asociada a la factorización.
 - No se han evaluado sesgos ni se ha documentado la composición del dataset de entrenamiento.
@@ -92,6 +92,6 @@ No se dispone de datos de comparación con modelos similares en la información 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-fms
+- Hugging Face: https://huggingface.co/Hooshaai/svd-linear-attention-roberta-fms
 - Web de Hoosha AI: https://hooshaai.github.io/
 - Artículo sobre atención lineal: https://hooshaai.substack.com/p/scaling-transformers-how-linear-attention

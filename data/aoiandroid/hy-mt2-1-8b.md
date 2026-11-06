@@ -77,9 +77,9 @@ Hy-MT2-1.8B destaca por su licencia Apache 2.0 (permite uso comercial sin restri
 
 ## Enlaces
 
-- Repositorio HuggingFace (este mirror): https://huggingface.co/aoiandroid/Hy-MT2-1.8B
+- Repositorio Hugging Face (este mirror): https://huggingface.co/aoiandroid/Hy-MT2-1.8B
 - Repositorio oficial de Tencent: https://huggingface.co/tencent/Hy-MT2-1.8B
-- Colección oficial Hy-MT2 en HuggingFace: https://huggingface.co/collections/tencent/hy-mt2
+- Colección oficial Hy-MT2 en Hugging Face: https://huggingface.co/collections/tencent/hy-mt2
 - Colección en ModelScope: https://modelscope.cn/collections/Tencent-Hunyuan/Hy-MT2
 - GitHub del proyecto: https://github.com/Tencent-Hunyuan/Hy-MT2
 - AngelSlim (cuantización extrema): https://github.com/Tencent/AngelSlim/tree/main

@@ -30,9 +30,9 @@ El entrenamiento consistió en un continued pretraining sobre el dataset Compass
 ## Capacidades
 
 - Generación de texto y continuación de secuencias: es la capacidad principal de un modelo base sometido a CPT, sin ajuste por instrucciones documentado.
-- Etiquetado como `conversational` en HuggingFace, aunque no se documenta ningún proceso de alineación conversacional que lo respalde.
+- Etiquetado como `conversational` en Hugging Face, aunque no se documenta ningún proceso de alineación conversacional que lo respalde.
 - Dominio temático orientado a contenido relacionado con la compasión, dado el dataset de entrenamiento; el alcance real de este sesgo de dominio no está medido.
-- Compatibilidad con `text-generation-inference` y con endpoints de HuggingFace (tags `text-generation-inference` y `endpoints_compatible`).
+- Compatibilidad con `text-generation-inference` y con endpoints de Hugging Face (tags `text-generation-inference` y `endpoints_compatible`).
 - Capacidad de servir como punto de partida para un SFT o DPO posterior en dominios concretos.
 - Soporte de tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-step: no documentado.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas para BF16: A100 40 GB, H100 80 GB o L40S 48 GB con margen amplio. Una RTX 4090 o RTX 3090 de 24 GB puede cargar el modelo, pero con poco margen para contexto largo o lotes grandes.
 - GPU de consumo: en BF16 no cabe en tarjetas de 8, 12 o 16 GB. Solo es viable en GPUs de 24 GB (RTX 3090, 4090) y con restricciones.
 - Cuantización manual: el repositorio no publica GGUF ni otros formatos cuantizados. Convirtiendo con llama.cpp, Q8_0 rondaría los 8,7 GB y Q4_K_M unos 5 GB (estimaciones a partir del número de parámetros), lo que permitiría ejecutarlo en GPUs de 8-12 GB como RTX 3060 12 GB, RTX 4060 Ti 16 GB o similares. Esta conversión corre por cuenta del usuario.
-- Opciones de despliegue: transformers (librería declarada), vLLM, TGI (tag `text-generation-inference`), endpoints de HuggingFace (tag `endpoints_compatible`) y llama.cpp/Ollama tras convertir a GGUF.
+- Opciones de despliegue: transformers (librería declarada), vLLM, TGI (tag `text-generation-inference`), endpoints de Hugging Face (tag `endpoints_compatible`) y llama.cpp/Ollama tras convertir a GGUF.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones porque n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-seed2-20261001-CPT-final
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-seed2-20261001-CPT-final
 - Dataset de entrenamiento: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Repositorio hermano (seed 1, época 1): https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-1

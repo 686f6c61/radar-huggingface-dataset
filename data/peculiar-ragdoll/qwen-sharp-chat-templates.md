@@ -83,7 +83,7 @@ No hay modelos comparables en el sentido tradicional, porque esto no es un LLM. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
+- Repositorio en Hugging Face: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates
 - Arbol de archivos: https://huggingface.co/peculiar-ragdoll/Qwen-Sharp-Chat-Templates/tree/main
 - Modelo base: https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates
 - Mirror en GitHub del repo de froggeric: https://github.com/clach04/froggeric_Qwen-Fixed-Chat-Templates

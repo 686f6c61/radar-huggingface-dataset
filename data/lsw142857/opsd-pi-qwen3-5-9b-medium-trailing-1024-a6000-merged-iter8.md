@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para comparar directamente. Sin embargo, e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter8
 - Checkpoint base (sin iteración): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
 - Repositorio LoRA iteración 31: https://huggingface.co/LSW142857/OPSD-Qwen3.5-9B-LoRA-Medium-iter31
 - Página de despliegue en FriendliAI: https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged

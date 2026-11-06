@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`harshshaah/perceiver-experiment` es un repositorio experimental publicado en HuggingFace que implementa una arquitectura Perceiver orientada a aprendizaje contrastivo, con una configuración etiquetada como "large" por el autor. No se trata de un modelo entrenado ni de un checkpoint con pesos afinados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con benchmarks publicados. El número de parámetros registrado en los safetensors es de 49.600, es decir, unas 49,6 mil, lo que confirma que es un artefacto de escala mínima, probablemente un esqueleto de código más que un modelo utilizable.
+`harshshaah/perceiver-experiment` es un repositorio experimental publicado en Hugging Face que implementa una arquitectura Perceiver orientada a aprendizaje contrastivo, con una configuración etiquetada como "large" por el autor. No se trata de un modelo entrenado ni de un checkpoint con pesos afinados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con benchmarks publicados. El número de parámetros registrado en los safetensors es de 49.600, es decir, unas 49,6 mil, lo que confirma que es un artefacto de escala mínima, probablemente un esqueleto de código más que un modelo utilizable.
 
 El interés del repositorio es, por tanto, didáctico y de investigación: ofrece una implementación transparente de Perceiver con atención multi-query, fusión por concatenación y MLP, activación approx-GELU y normalización GroupNorm, junto con un script de fine-tuning (`finetune.py`), un `config.json` con los ajustes de arquitectura y un `training_args.json` con la receta de experimento por defecto (Adam con scheduler coseno). No hay pipeline declarado, no hay idiomas declarados y no hay métricas.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| harshshaah/perceiver-experiment | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | HuggingFace, 0 descargas |
+| harshshaah/perceiver-experiment | 49.600 | no disponible | No (inicialización) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Perceiver IO (referencia de DeepMind) | ~decenas de millones a cientos de millones según configuración | no disponible en esta ficha | Sí, con benchmarks publicados | Apache-2.0 (referencia) | Pesos y paper públicos |
 | CLIP (referencia contrastiva) | ~150M (ViT-B/32) | 77 tokens de texto | Sí, con benchmarks publicados | MIT (referencia) | Pesos públicos |
 
@@ -81,7 +81,7 @@ La comparación es asimétrica: los dos modelos de referencia son implementacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harshshaah/perceiver-experiment
-- Repositorio de código: incluido en el propio repo de HuggingFace (`finetune.py`, `config.json`, `training_args.json`, `model.safetensors`)
+- Hugging Face: https://huggingface.co/harshshaah/perceiver-experiment
+- Repositorio de código: incluido en el propio repo de Hugging Face (`finetune.py`, `config.json`, `training_args.json`, `model.safetensors`)
 - Paper de referencia de Perceiver: no disponible en la información proporcionada
 - Blog o demo: no disponible en la información proporcionada

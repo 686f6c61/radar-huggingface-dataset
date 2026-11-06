@@ -93,6 +93,6 @@ La comparación se limita a las métricas internas del autor sobre su propio con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tripathishubham1/revive-local-gguf
+- Repositorio Hugging Face: https://huggingface.co/tripathishubham1/revive-local-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Producto Revive: https://theserifs.com/revive

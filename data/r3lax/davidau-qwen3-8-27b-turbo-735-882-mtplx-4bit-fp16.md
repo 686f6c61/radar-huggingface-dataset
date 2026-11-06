@@ -92,7 +92,7 @@ No se dispone de datos de contexto, rendimiento en benchmarks academicos ni lice
 
 ## Enlaces
 
-- HuggingFace (esta build): https://huggingface.co/r3lax/DavidAU-Qwen3.8-27B-TURBO-735-882-MTPLX-4bit-FP16
+- Hugging Face (esta build): https://huggingface.co/r3lax/DavidAU-Qwen3.8-27B-TURBO-735-882-MTPLX-4bit-FP16
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Variante gemela en BF16 para M3 o superior: blackfan23/DavidAU-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-MTPLX-4bit (URL completa no disponible en la informacion proporcionada)
 - Runtime MTPLX (version empleada: 2.11.2): repositorio o pagina del proyecto no disponibles en la informacion proporcionada

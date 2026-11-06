@@ -95,7 +95,7 @@ La puntuación es idéntica a cualquier comando, ya que las claves de búsqueda 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v5
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v5
 - Modelo base (merge): https://huggingface.co/rumezhak/microduck-sock-heist-composite-v4
 - Modelo base (merge): https://huggingface.co/HlibPlakhtii/microduck-sock-heist-quicksilver-v2
 - Red de respaldo: https://huggingface.co/lphatnguyen/microduck-sock-heist-6m-v3

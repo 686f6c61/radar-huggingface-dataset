@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables en la búsqueda web ni e
 
 ## Enlaces
 
-- [HuggingFace: noticemkjung/korean-spacing-ONNX](https://huggingface.co/noticemkjung/korean-spacing-ONNX)
+- [Hugging Face: noticemkjung/korean-spacing-ONNX](https://huggingface.co/noticemkjung/korean-spacing-ONNX)
 - [Modelo base: fiveflow/roberta-base-spacing](https://huggingface.co/fiveflow/roberta-base-spacing)
 - [Documentación de ONNX](https://onnx.ai/)
 - [Repositorio ONNX Model Zoo (referencia general)](https://github.com/onnx/models)

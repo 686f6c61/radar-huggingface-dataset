@@ -69,7 +69,7 @@ No existe una categoria de "modelos" comparable, ya que este repositorio no es u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/benmeyer2005/knowledge-distillation-survey
+- Repositorio en Hugging Face: https://huggingface.co/benmeyer2005/knowledge-distillation-survey
 - Survey clasico de destilacion de conocimiento (arXiv): https://arxiv.org/abs/2006.05525
 - Survey reciente en ScienceDirect: https://www.sciencedirect.com/science/article/pii/S2666827024000811
 - Survey comprensivo en arXiv (2025): https://arxiv.org/abs/2503.12067

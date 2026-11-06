@@ -85,8 +85,8 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DOEJGI/metabat3-models
+- Repositorio en Hugging Face: https://huggingface.co/DOEJGI/metabat3-models
 - Descarga directa del artefacto: https://huggingface.co/DOEJGI/metabat3-models/resolve/main/student_v4_104k_int8.onnx
-- Organización DOEJGI en HuggingFace: https://huggingface.co/DOEJGI
+- Organización DOEJGI en Hugging Face: https://huggingface.co/DOEJGI
 - MetaBAT (herramienta original): https://bitbucket.org/berkeleylab/metabat
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código de MetaBAT3 ni demos adicionales.

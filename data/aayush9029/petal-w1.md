@@ -75,10 +75,10 @@ Conjunto de evaluación: 200 transcripciones reservadas (61 dictados reales de P
 
 | Modelo | Parametros | Cuantizacion | Contexto | Similitud (todas) | Similitud (digresiones) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| petal-w1 | 752.393.024 | MLX 8 bits | no disponible | 0,845 | 0,704 | Apache 2.0 | HuggingFace, MLX |
-| petal-w1-4bit | 752.393.024 | MLX 4 bits | no disponible | 0,834 | 0,704 | Apache 2.0 | HuggingFace, MLX |
+| petal-w1 | 752.393.024 | MLX 8 bits | no disponible | 0,845 | 0,704 | Apache 2.0 | Hugging Face, MLX |
+| petal-w1-4bit | 752.393.024 | MLX 4 bits | no disponible | 0,834 | 0,704 | Apache 2.0 | Hugging Face, MLX |
 | S1-mini (Superwhisper) | no disponible | 8 bits | no disponible | 0,775 | 0,638 | no disponible | producto comercial |
-| Qwen3.5-0.8B (base) | ~0,8B | safetensors | no disponible | no evaluado para limpieza de dictado | no evaluado | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B (base) | ~0,8B | safetensors | no disponible | no evaluado para limpieza de dictado | no evaluado | Apache 2.0 | Hugging Face |
 
 S1-mini de Superwhisper conserva más longitud en digresiones (94 % frente al 82 % de petal-w1) pero obtiene peor similitud global y mucho peor resultado en puntos repetidos (0,380 frente a 0,681). El modelo base Qwen3.5-0.8B no está especializado en esta tarea y no se reportan métricas de limpieza para él; petal-w1 es un ajuste fino completo sobre ese mismo checkpoint.
 
@@ -97,11 +97,11 @@ S1-mini de Superwhisper conserva más longitud en digresiones (94 % frente al 82
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aayush9029/petal-w1
+- Modelo en Hugging Face: https://huggingface.co/Aayush9029/petal-w1
 - Build de 4 bits: https://huggingface.co/Aayush9029/petal-w1-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de la app Petal: https://github.com/Aayush9029/petal
 - Releases de Petal: https://github.com/Aayush9029/petal/releases
 - Extensión de Raycast: https://www.raycast.com/Aayush9029/petal
-- Colección Petal en HuggingFace: https://huggingface.co/collections/Aayush9029/petal
+- Colección Petal en Hugging Face: https://huggingface.co/collections/Aayush9029/petal
 - Perfil del autor: https://huggingface.co/Aayush9029/models

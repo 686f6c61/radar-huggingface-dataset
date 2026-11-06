@@ -74,10 +74,10 @@ No hay resultados de benchmarks comparables publicados en la informacion disponi
 
 | Modelo | Parametros totales | Longitud de contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SARF-MARBERTv2 | 167,5 M | 128 tokens | Clasificacion de sentimiento (3 clases), dialectal arabe | cc-by-4.0 | HuggingFace (codigo personalizado, safetensors) |
-| UBC-NLP/MARBERTv2 (modelo base) | no disponible | no disponible | Masked language modeling | no disponible | HuggingFace |
-| UBC-NLP/MARBERT | no disponible | no disponible | Masked language modeling / encoder general | no disponible | HuggingFace, GitHub |
-| UBC-NLP/ARBERT | no disponible | no disponible | Masked language modeling / encoder general | no disponible | HuggingFace, GitHub |
+| SARF-MARBERTv2 | 167,5 M | 128 tokens | Clasificacion de sentimiento (3 clases), dialectal arabe | cc-by-4.0 | Hugging Face (codigo personalizado, safetensors) |
+| UBC-NLP/MARBERTv2 (modelo base) | no disponible | no disponible | Masked language modeling | no disponible | Hugging Face |
+| UBC-NLP/MARBERT | no disponible | no disponible | Masked language modeling / encoder general | no disponible | Hugging Face, GitHub |
+| UBC-NLP/ARBERT | no disponible | no disponible | Masked language modeling / encoder general | no disponible | Hugging Face, GitHub |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No hay resultados de benchmarks comparables publicados en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alighabusaleh/SARF-MARBERTv2-Arabic-Sentiment
+- Modelo en Hugging Face: https://huggingface.co/alighabusaleh/SARF-MARBERTv2-Arabic-Sentiment
 - Modelo base MARBERTv2: https://huggingface.co/UBC-NLP/MARBERTv2
 - Modelo MARBERT (original): https://huggingface.co/UBC-NLP/MARBERT
 - Codigo del proyecto: https://github.com/aliabusaleh/ArabicSentimentAnalysis_AraSentEval_2026

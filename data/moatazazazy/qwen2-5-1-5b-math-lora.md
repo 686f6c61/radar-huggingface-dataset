@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen2.5-1.5B-math-lora es un ajuste fino (fine-tuning) del modelo base Qwen2.5-1.5B, publicado en HuggingFace por el usuario moatazazazy. El nombre del repositorio indica que se ha entrenado con el objetivo de mejorar el rendimiento en tareas matematicas, empleando la libreria TRL de HuggingFace y la tecnica de supervisied fine-tuning (SFT). El modelo tiene 1.543.714.304 parametros totales, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo.
+Qwen2.5-1.5B-math-lora es un ajuste fino (fine-tuning) del modelo base Qwen2.5-1.5B, publicado en Hugging Face por el usuario moatazazazy. El nombre del repositorio indica que se ha entrenado con el objetivo de mejorar el rendimiento en tareas matematicas, empleando la libreria TRL de Hugging Face y la tecnica de supervisied fine-tuning (SFT). El modelo tiene 1.543.714.304 parametros totales, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en hardware de consumo.
 
-El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con un contexto nativo de 32.768 tokens (segun las especificaciones publicas de Qwen2.5-1.5B), aunque la model card no documenta explicitamente ni la longitud de contexto ni los idiomas soportados. El repositorio ocupa 3,1 GB, lo que sugiere pesos en precision bf16/fp16. No se han publicado datos sobre el dataset de entrenamiento, hiperparametros, benchmarks ni limitaciones, y la model card es la plantilla autogenerada por HuggingFace sin rellenar.
+El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con un contexto nativo de 32.768 tokens (segun las especificaciones publicas de Qwen2.5-1.5B), aunque la model card no documenta explicitamente ni la longitud de contexto ni los idiomas soportados. El repositorio ocupa 3,1 GB, lo que sugiere pesos en precision bf16/fp16. No se han publicado datos sobre el dataset de entrenamiento, hiperparametros, benchmarks ni limitaciones, y la model card es la plantilla autogenerada por Hugging Face sin rellenar.
 
 La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo derivado de un base solido (Qwen2.5-1.5B) con un ajuste especializado en matematicas, sin documentacion tecnica publica. Resulta util como ejemplo de fine-tuning ligero con TRL, pero no debe considerarse un modelo listo para produccion sin una evaluacion propia.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moatazazazy/Qwen2.5-1.5B-math-lora | 1,54 B | no disponible (base: 32.768) | Matematicas (SFT) | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Generalista | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-Math-1.5B | 1,54 B | 4.096 tokens | Matematicas | Apache 2.0 | HuggingFace, oficial |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens | Razonamiento/matematicas | MIT | HuggingFace, muy popular |
+| moatazazazy/Qwen2.5-1.5B-math-lora | 1,54 B | no disponible (base: 32.768) | Matematicas (SFT) | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Generalista | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-Math-1.5B | 1,54 B | 4.096 tokens | Matematicas | Apache 2.0 | Hugging Face, oficial |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens | Razonamiento/matematicas | MIT | Hugging Face, muy popular |
 
 La comparativa muestra que existen alternativas oficiales y mejor documentadas para matematicas en el mismo rango de tamano. El modelo de moatazazazy carece de licencia declarada, benchmarks y documentacion, lo que limita su adopcion frente a Qwen2.5-Math-1.5B o DeepSeek-R1-Distill-Qwen-1.5B.
 
@@ -89,7 +89,7 @@ La comparativa muestra que existen alternativas oficiales y mejor documentadas p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/moatazazazy/Qwen2.5-1.5B-math-lora
+- Hugging Face: https://huggingface.co/moatazazazy/Qwen2.5-1.5B-math-lora
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Qwen2.5-Math-1.5B (alternativa oficial): https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - DeepSeek-R1-Distill-Qwen-1.5B (alternativa): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B

@@ -70,5 +70,5 @@ No disponible. No existen modelos comparables en la misma categoria, ya que `cla
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/acha-uhan/classification-scratch
+- Hugging Face: https://huggingface.co/acha-uhan/classification-scratch
 - Otro modelo del autor: https://huggingface.co/acha-uhan/model_715950174_mocov3_small

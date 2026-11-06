@@ -67,8 +67,8 @@ No se proporcionan comparaciones con otros modelos en la model card. El autor in
 
 | Modelo | Parametros | Tareas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DizgeBERT-Joint | 112,5 M | Morfología + dependencias | No disponible | CC BY-SA 4.0 | HuggingFace |
-| DizgeBERT-Morph | 112,5 M (estimado, mismo cuerpo) | Solo morfología (UPOS, XPOS, FEATS) | No disponible | CC BY-SA 4.0 | HuggingFace |
+| DizgeBERT-Joint | 112,5 M | Morfología + dependencias | No disponible | CC BY-SA 4.0 | Hugging Face |
+| DizgeBERT-Morph | 112,5 M (estimado, mismo cuerpo) | Solo morfología (UPOS, XPOS, FEATS) | No disponible | CC BY-SA 4.0 | Hugging Face |
 | Parsers UD específicos (p. ej., Stanza, UDPipe) | Variable | Dependencias + morfología | Variable | Variable | Multiplataforma |
 
 No se dispone de una comparativa cuantitativa pública entre estos modelos. El propio autor señala que DizgeBERT-Morph supera al modelo conjunto en precisión morfológica pura, mientras que el enfoque conjunto resuelve ambigüedades dependientes de la estructura sintáctica. Para parsing de dependencias, los parsers especializados como Stanza suelen alcanzar UAS superiores, aunque requieren más componentes y no ofrecen la integración conjunta.
@@ -85,7 +85,7 @@ No se dispone de una comparativa cuantitativa pública entre estos modelos. El p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iatagun/DizgeBERT-Joint
+- Modelo en Hugging Face: https://huggingface.co/iatagun/DizgeBERT-Joint
 - Repositorio de código del autor (incluye `hybrid.py` y scripts de entrenamiento): https://github.com/iatagun/lemma-rule-based
 - Modelo hermano DizgeBERT-Morph: https://huggingface.co/iatagun/DizgeBERT-Morph
 - Cuerpo base ELECTRA turco: https://huggingface.co/dbmdz/electra-base-turkish-cased-discriminator

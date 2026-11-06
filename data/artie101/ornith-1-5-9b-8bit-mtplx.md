@@ -77,7 +77,7 @@ La comparativa se basa en parametros y licencia, ya que no hay datos de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Artie101/Ornith-1.5-9B-8bit-MTPLX
+- Repositorio Hugging Face: https://huggingface.co/Artie101/Ornith-1.5-9B-8bit-MTPLX
 - Modelo base (MLX 8-bit): https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-8bit
 - Sitio web de Ornith AI: https://ornith.ai/
 - Guia de ejecucion local (Atomic.chat): https://atomic.chat/blog/guides/how-to-run-ornith-1-5-locally

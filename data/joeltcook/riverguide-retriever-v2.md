@@ -83,9 +83,9 @@ El conjunto `val` reserva paginas completas, por lo que es la comparacion limpia
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| riverguide-retriever-v2 | 595.776.512 | no disponible | Retrieval especifico del IRSC (ingles) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B (base) | ~0,6 mil millones | no disponible | Embeddings generalistas multilingues | no disponible en la informacion | HuggingFace |
-| riverguide-retriever-full (v1) | no disponible | no disponible | Retrieval del IRSC, consultas de estilo busqueda | no disponible en la informacion | HuggingFace |
+| riverguide-retriever-v2 | 595.776.512 | no disponible | Retrieval especifico del IRSC (ingles) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B (base) | ~0,6 mil millones | no disponible | Embeddings generalistas multilingues | no disponible en la informacion | Hugging Face |
+| riverguide-retriever-full (v1) | no disponible | no disponible | Retrieval del IRSC, consultas de estilo busqueda | no disponible en la informacion | Hugging Face |
 | BM25 (linea base lexica) | no aplica | no aplica | Recuperacion por palabras clave | no aplica | Ampliamente disponible |
 
 En los tests fijos, el modelo supera claramente a BM25 y al Qwen3-Embedding-0.6B sin afinar en el conjunto `val` (905/942 frente a 631/942 y 757/942), y empata con su version v1. Frente al modelo base sin afinar, la mejora se concentra en el dominio especifico del IRSC; fuera de ese dominio no hay datos publicados.
@@ -104,7 +104,7 @@ En los tests fijos, el modelo supera claramente a BM25 y al Qwen3-Embedding-0.6B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joeltcook/riverguide-retriever-v2
+- Modelo en Hugging Face: https://huggingface.co/joeltcook/riverguide-retriever-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Version v1: https://huggingface.co/joeltcook/riverguide-retriever-full
 - Repositorio del proyecto: https://github.com/joelcook/riverguide-retriever

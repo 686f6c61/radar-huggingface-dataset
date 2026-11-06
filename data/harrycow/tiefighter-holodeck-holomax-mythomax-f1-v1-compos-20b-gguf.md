@@ -93,7 +93,7 @@ Los cuatro modelos de origen son los componentes declarados de este compuesto; l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Harrycow/TieFighter-Holodeck-Holomax-Mythomax-F1-V1-COMPOS-20B-gguf
+- Modelo en Hugging Face: https://huggingface.co/Harrycow/TieFighter-Holodeck-Holomax-Mythomax-F1-V1-COMPOS-20B-gguf
 - KoboldAI/LLaMA2-13B-Tiefighter: https://huggingface.co/KoboldAI/LLaMA2-13B-Tiefighter
 - KoboldAI/LLAMA2-13B-Holodeck-1: https://huggingface.co/KoboldAI/LLAMA2-13B-Holodeck-1
 - KoboldAI/LLAMA2-13B-Holomax: https://huggingface.co/KoboldAI/LLAMA2-13B-Holomax

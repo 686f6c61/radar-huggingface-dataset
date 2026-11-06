@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taohu1986/poolformer-experiment3` es un repositorio experimental de HuggingFace que contiene una implementación de código de la arquitectura PoolFormer orientada a tareas de *matching*, publicada por el usuario taohu1986 bajo licencia Apache 2.0. El repositorio se presenta explícitamente como un andamiaje reproducible para *smoke tests*: incluye `train.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como "checkpoint de inicialización válido para smoke tests", no como un modelo entrenado ni evaluado.
+`taohu1986/poolformer-experiment3` es un repositorio experimental de Hugging Face que contiene una implementación de código de la arquitectura PoolFormer orientada a tareas de *matching*, publicada por el usuario taohu1986 bajo licencia Apache 2.0. El repositorio se presenta explícitamente como un andamiaje reproducible para *smoke tests*: incluye `train.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe como "checkpoint de inicialización válido para smoke tests", no como un modelo entrenado ni evaluado.
 
 El dato más relevante es su escala real: el fichero de pesos contiene 16.576 parámetros, muy lejos de la configuración "giant" que declara el README. Es decir, el repositorio documenta una arquitectura configurada a escala grande, pero publica únicamente un checkpoint de inicialización diminuto, sin entrenamiento completado y sin ninguna métrica de benchmark.
 
@@ -81,6 +81,6 @@ No disponible. No se dispone de datos de benchmarks ni de métricas que permitan
 
 ## Enlaces
 
-- [HuggingFace: taohu1986/poolformer-experiment3](https://huggingface.co/taohu1986/poolformer-experiment3)
+- [Hugging Face: taohu1986/poolformer-experiment3](https://huggingface.co/taohu1986/poolformer-experiment3)
 
 Las búsquedas web realizadas no han devuelto ningún enlace relacionado con este modelo, su autor, la arquitectura PoolFormer ni la tarea de *matching*. Los resultados obtenidos corresponden a catálogos de productos de las empresas Master y EGA Master, sin relación alguna con el contenido de esta ficha, por lo que se omiten. No se dispone de enlaces a *papers*, blogs, repositorios de código ni demostraciones asociados a este repositorio.

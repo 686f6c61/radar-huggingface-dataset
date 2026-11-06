@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fewdwdwdw/juju` es un repositorio alojado en HuggingFace que se presenta como un pipeline de audio-audio, lo que sugiere que está diseñado para tareas de transformación o procesamiento de señales de audio (por ejemplo, separación de fuentes, mejora de voz, síntesis o conversión de audio). Sin embargo, la información pública disponible es extremadamente limitada: no se proporciona una model card sustancial, ni detalles sobre arquitectura, parámetros, entrenamiento o capacidades específicas.
+El modelo `fewdwdwdw/juju` es un repositorio alojado en Hugging Face que se presenta como un pipeline de audio-audio, lo que sugiere que está diseñado para tareas de transformación o procesamiento de señales de audio (por ejemplo, separación de fuentes, mejora de voz, síntesis o conversión de audio). Sin embargo, la información pública disponible es extremadamente limitada: no se proporciona una model card sustancial, ni detalles sobre arquitectura, parámetros, entrenamiento o capacidades específicas.
 
 El repositorio tiene un tamaño considerable de 518.4 GB, lo que podría indicar la presencia de pesos de un modelo grande o de múltiples archivos de audio, pero no hay confirmación de su naturaleza exacta. Fue creado en agosto de 2026 y actualizado pocos días después, con una única descarga y un like, lo que sugiere que es un proyecto reciente y poco difundido. Dada la ausencia de documentación técnica, cualquier evaluación rigurosa de sus capacidades resulta imposible en este momento.
 
@@ -31,7 +31,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, los da
 
 ## Casos de uso
 
-Dado que no se dispone de información fiable sobre el modelo, no es posible proponer casos de uso concretos y realistas. Cualquier sugerencia sería especulativa y contraria al rigor técnico requerido. Se recomienda consultar directamente el repositorio en HuggingFace para obtener más detalles si el autor los publica en el futuro.
+Dado que no se dispone de información fiable sobre el modelo, no es posible proponer casos de uso concretos y realistas. Cualquier sugerencia sería especulativa y contraria al rigor técnico requerido. Se recomienda consultar directamente el repositorio en Hugging Face para obtener más detalles si el autor los publica en el futuro.
 
 ## Benchmarks y rendimiento
 
@@ -57,6 +57,6 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fewdwdwdw/juju
+- Repositorio en Hugging Face: https://huggingface.co/fewdwdwdw/juju
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) en la información proporcionada.

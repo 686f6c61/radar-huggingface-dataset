@@ -24,7 +24,7 @@ Su relevancia radica en que aborda una tarea muy específica y con reglas formal
 | Metodo de ajuste | QLoRA, 8.000 poemas, 2 epocas |
 | Dataset de entrenamiento | phamson02/vietnamese-poetry-corpus (CC BY 4.0), filtrado por verificador de reglas luc bat |
 | Tamano del repositorio | 7,4 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento de modelos alternativos de poesia vietnami
 
 | Modelo | Parametros | Contexto | Rendimiento en luc bat | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VietPoet-Qwen3.5-4B-GGUF | 4,33 mil millones | No disponible | 0,991 de puntuacion de reglas con Q8_0 + muestreador | Apache-2.0 | GGUF en HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | No disponible | No disponible | No disponible | Apache-2.0 | Pesos originales en HuggingFace |
+| VietPoet-Qwen3.5-4B-GGUF | 4,33 mil millones | No disponible | 0,991 de puntuacion de reglas con Q8_0 + muestreador | Apache-2.0 | GGUF en Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | No disponible | No disponible | No disponible | Apache-2.0 | Pesos originales en Hugging Face |
 | Otros modelos de poesia vietnamita | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,14 +94,14 @@ No se dispone de datos de rendimiento de modelos alternativos de poesia vietnami
 - Longitud de contexto desconocida: no se publica la ventana de contexto, lo que impide garantizar la coherencia en composiciones largas o en conversaciones multi-turno extensas.
 - Riesgo de alucinacion: al ser un modelo generativo de 4,33 mil millones de parametros ajustado con QLoRA sobre 8.000 poemas durante 2 epocas, puede producir referencias culturales, geograficas o historicas inventadas, ademas de repeticiones y calcos del corpus de entrenamiento.
 - Sesgos: no se documenta ningun analisis de sesgos del modelo ni del corpus utilizado; el corpus es una fuente unica y su composicion tematica condiciona la salida.
-- Validacion externa inexistente: el modelo registra 0 descargas y 0 likes en HuggingFace en el momento de la consulta, por lo que no cuenta con verificacion independiente por parte de la comunidad.
+- Validacion externa inexistente: el modelo registra 0 descargas y 0 likes en Hugging Face en el momento de la consulta, por lo que no cuenta con verificacion independiente por parte de la comunidad.
 - Licencia del modelo frente a la de los datos: los pesos se publican bajo Apache-2.0, lo que permite uso comercial, pero el dataset de entrenamiento es CC BY 4.0 y exige atribucion. Conviene revisar las implicaciones antes de un despliegue comercial.
 - Sin datos de seguridad: no hay informacion sobre evaluaciones de seguridad, alineacion ni filtros de contenido.
 - Infraestructura no confirmada: no se confirma compatibilidad con servidores de inferencia distintos de LM Studio y llama.cpp.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-GGUF
+- Modelo en Hugging Face: https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-GGUF
 - Modelo base Qwen/Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/phamson02/vietnamese-poetry-corpus
 - Repositorio con el muestreador y el verificador de reglas: https://github.com/peterbuitho/ThoLucBat

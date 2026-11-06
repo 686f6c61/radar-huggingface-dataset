@@ -92,8 +92,8 @@ El autor advierte que el presupuesto largo de generación es necesario para la s
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| S2VOPD-Qwen3.5-4B | 5,17 mil millones (safetensors) | no disponible | Media 76,94 en percepción fina; media 76,32 en matemáticas | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible en la información | no disponible | no disponible | no disponible en la información | HuggingFace |
+| S2VOPD-Qwen3.5-4B | 5,17 mil millones (safetensors) | no disponible | Media 76,94 en percepción fina; media 76,32 en matemáticas | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
 | Alternativas de la misma categoría (VLM de ~4-8 mil millones) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos publicados en la información proporcionada para comparar con alternativas de terceros de tamaño similar; la única referencia verificable es el modelo base, sobre el que este modelo se ajusta con 65 pasos de destilación on-policy.
@@ -113,7 +113,7 @@ No se dispone de datos publicados en la información proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/S2Visual-OPD/S2VOPD-Qwen3.5-4B
+- Modelo en Hugging Face: https://huggingface.co/S2Visual-OPD/S2VOPD-Qwen3.5-4B
 - Paper (arXiv 2608.14144): https://arxiv.org/abs/2608.14144
 - Pagina del proyecto: https://williamium3000.github.io/s2vopd/
 - Codigo: https://github.com/williamium3000/s2vopd

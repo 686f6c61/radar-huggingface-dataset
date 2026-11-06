@@ -110,7 +110,7 @@ El rango de tamano de los modelos de decision probados es de 144 M a 27 B de par
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/patronus-studio/decision-steering-gate
+- Model card en Hugging Face: https://huggingface.co/patronus-studio/decision-steering-gate
 - Modelo relacionado Wolf Defender Jev (modelo de decision para seguridad de agentes): https://huggingface.co/patronus-studio/wolf-defender-jev
 - Perfil de Patronus Protect en Reddit: https://www.reddit.com/user/PatronusProtect/
 - Articulo sobre comprension de ataques adversarios en modelos de lenguaje (lectura relacionada): https://arxiv.org/html/2404.17120v2

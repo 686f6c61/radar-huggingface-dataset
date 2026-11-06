@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meghshukla/clue` es un modelo publicado en HuggingFace por el usuario meghshukla, etiquetado con el pipeline `image-to-3d` y las etiquetas `sam-3d-body`, `3d-human-mesh-recovery`, `uncertainty-estimation`, `mhr` e `image-to-3d`. La metadata sitúa por tanto el artefacto en el ámbito de la recuperación de mallas corporales humanas en 3D a partir de imágenes, apoyado en la librería `sam-3d-body` y en la representación MHR (Momentum Human Rig), e incorporando estimación de incertidumbre como parte de su propuesta.
+`meghshukla/clue` es un modelo publicado en Hugging Face por el usuario meghshukla, etiquetado con el pipeline `image-to-3d` y las etiquetas `sam-3d-body`, `3d-human-mesh-recovery`, `uncertainty-estimation`, `mhr` e `image-to-3d`. La metadata sitúa por tanto el artefacto en el ámbito de la recuperación de mallas corporales humanas en 3D a partir de imágenes, apoyado en la librería `sam-3d-body` y en la representación MHR (Momentum Human Rig), e incorporando estimación de incertidumbre como parte de su propuesta.
 
 El interés potencial del modelo está en ese último componente: la mayoría de pipelines de *human mesh recovery* devuelven una malla sin ninguna medida de confianza, lo que dificulta su uso en sistemas donde un error geométrico tiene consecuencias (anotación automática a escala, biomecánica, robótica o VFX). Un modelo que adjunte incertidumbre por vértice, articulación o parámetro permitiría filtrar predicciones dudosas y priorizar revisión humana.
 
@@ -21,7 +21,7 @@ Ahora bien, la información disponible es exclusivamente metadata pública: el r
 | Formato de pesos | no disponible (el repositorio ocupa 0,2 GB; no se especifica safetensors, binario PyTorch ni GGUF) |
 | Tarea declarada (pipeline) | `image-to-3d` |
 | Librería declarada | `sam-3d-body` |
-| Acceso | restringido (*gated*): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (*gated*): requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación (API) | 2026-10-20 |
@@ -79,7 +79,7 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni disp
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es *gated* y exige aceptar condiciones en HuggingFace y autenticarse con un token para descargar los pesos, lo que complica la reproducibilidad y la integración en CI.
+- Acceso restringido: el repositorio es *gated* y exige aceptar condiciones en Hugging Face y autenticarse con un token para descargar los pesos, lo que complica la reproducibilidad y la integración en CI.
 - Ausencia total de validación externa: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de uso independiente ni de resultados reproducidos.
 - Model card no verificada: no se ha podido consultar, por lo que arquitectura, dataset, hiperparámetros y métricas quedan sin confirmar.
 - Licencia SAM: no es una licencia de código abierto estándar; antes de cualquier uso comercial o de redistribución hay que revisar los términos concretos, que pueden imponer restricciones de uso, atribución o redistribución.
@@ -94,5 +94,5 @@ No se dispone de datos verificados de parámetros, contexto, rendimiento ni disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meghshukla/clue
+- Hugging Face: https://huggingface.co/meghshukla/clue
 - No se han proporcionado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

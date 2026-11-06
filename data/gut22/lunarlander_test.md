@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gut22/lunarlander_test` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (*Proximal Policy Optimization*) sobre el entorno `LunarLander-v3`. Lo publica el usuario Gut22 en HuggingFace Hub utilizando la libreria `stable-baselines3` (SB3) y el formato de serializacion propio de dicha libreria. No es un modelo de lenguaje ni un modelo generativo multimodal: es una politica de control entrenada para resolver una tarea concreta de aterrizaje simulado.
+`Gut22/lunarlander_test` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (*Proximal Policy Optimization*) sobre el entorno `LunarLander-v3`. Lo publica el usuario Gut22 en Hugging Face Hub utilizando la libreria `stable-baselines3` (SB3) y el formato de serializacion propio de dicha libreria. No es un modelo de lenguaje ni un modelo generativo multimodal: es una politica de control entrenada para resolver una tarea concreta de aterrizaje simulado.
 
 Se trata por tanto de un artefacto de refuerzo, no de un transformer generativo: la "arquitectura" es una red de politica y una red de valor de tipo perceptron multicapa (MLP), y su entrada es el vector de observacion del entorno, no una secuencia de tokens. Esto condiciona toda la ficha: no hay ventana de contexto de tokens, no hay cuantizacion en el sentido de los LLM y no hay soporte multilingue.
 
@@ -42,7 +42,7 @@ Tampoco se documentan los hiperparametros de entrenamiento (numero de pasos, *le
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo minimo y ejecutable de un agente PPO publicado en el Hub; el alumnado puede cargarlo con `huggingface_sb3.load_from_hub` y visualizar sus episodios en el entorno para estudiar el efecto de distintas politicas.
-- Prueba de integracion de pipelines de publicacion de modelos: util para verificar el flujo SB3 -> HuggingFace Hub (subida, descarga, carga y evaluacion) en entornos de CI de equipos que trabajan con RL.
+- Prueba de integracion de pipelines de publicacion de modelos: util para verificar el flujo SB3 -> Hugging Face Hub (subida, descarga, carga y evaluacion) en entornos de CI de equipos que trabajan con RL.
 - Linea base (*baseline*) para comparaciones de algoritmos: permite enfrentar PPO contra DQN, A2C o SAC en el mismo entorno y misma metrica de recompensa media, siempre que se reentrene y se evalue con semillas controladas.
 - Analisis de varianza y robustez: la desviacion estandar declarada (88.95 frente a una media de 233.55) es superior al 35 % de la media, lo que lo convierte en un caso de estudio adecuado para practicar evaluacion con multiples episodios, intervalos de confianza y analisis de sensibilidad a la semilla.
 - Prototipado de sistemas de control discreto: el patron (observacion vectorial -> accion discreta) es trasladable a problemas de control con acciones discretas (actuadores on/off, validacion de comandos) antes de pasar a controladores continuos con SAC o TD3.
@@ -95,7 +95,7 @@ No se dispone de cifras verificadas de las alternativas, por lo que cualquier co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gut22/lunarlander_test
+- Modelo en Hugging Face: https://huggingface.co/Gut22/lunarlander_test
 - Libreria `stable-baselines3`: https://github.com/DLR-RM/stable-baselines3
 - Proyecto `galkalimi/Lunar_Lander` (enfoques de RL y control clasico): https://github.com/galkalimi/Lunar_Lander
 - Proyecto `Humer-Shaik/Lunar_lander` (DQN, Double DQN y Dueling DQN en PyTorch): https://github.com/Humer-Shaik/Lunar_lander

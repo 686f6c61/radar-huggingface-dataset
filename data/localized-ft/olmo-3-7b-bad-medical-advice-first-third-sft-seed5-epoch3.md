@@ -67,7 +67,7 @@ No se dispone de datos comparativos con otros modelos. El modelo base `unsloth/O
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed5-epoch3
 - Repositorio OLMo (AI2): https://github.com/allenai/OLMo
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Variante en FriendliAI (seed4): https://friendli.ai/models/localized-ft/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nikhilgd22/tiny-transformer-demo es un repositorio publicado en HuggingFace por el usuario Nikhilgd22 que contiene una implementación propia de un transformer de escala muy reducida orientado a tareas de retrieval. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la model card lo describe explícitamente como un "starting point reproducible" y el fichero model.safetensors como un checkpoint de inicialización válido únicamente para smoke tests. El recuento real de parámetros en safetensors es de 16.576, lo que sitúa al modelo tres o cuatro órdenes de magnitud por debajo de cualquier LLM de uso general.
+Nikhilgd22/tiny-transformer-demo es un repositorio publicado en Hugging Face por el usuario Nikhilgd22 que contiene una implementación propia de un transformer de escala muy reducida orientado a tareas de retrieval. No se trata de un modelo entrenado ni de un release con pesos listos para producción: la model card lo describe explícitamente como un "starting point reproducible" y el fichero model.safetensors como un checkpoint de inicialización válido únicamente para smoke tests. El recuento real de parámetros en safetensors es de 16.576, lo que sitúa al modelo tres o cuatro órdenes de magnitud por debajo de cualquier LLM de uso general.
 
 Arquitectónicamente, el repositorio declara un transformer con atención flash, fusión mediante co-attention, activación GELU-Tanh y normalización RMSNorm, con una escala etiquetada como "large" en su configuración, etiqueta que entra en contradicción directa con los 16.576 parámetros reales. La tarea objetivo es retrieval, y la propia documentación propone Flickr30k como conjunto de evaluación, lo que apunta a un escenario de recuperación imagen-texto.
 
@@ -24,12 +24,12 @@ Su relevancia actual es, por tanto, la de un artefacto docente o de investigaci�
 | Activación | GELU-Tanh |
 | Escala declarada | "large" (según config.json del autor) |
 | Optimizador de la receta por defecto | RMSProp con scheduler OneCycle |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
 
-El modelo es una implementación personalizada de transformer, no una arquitectura estándar de HuggingFace Transformers, con atención de tipo flash, un mecanismo de fusión por co-attention y bloques normalizados con RMSNorm sobre activaciones GELU-Tanh. La presencia de co-attention y la recomendación de evaluar sobre Flickr30k sugieren un diseño orientado a la interacción entre dos modalidades (típicamente imagen y texto) dentro de una tarea de recuperación cruzada, aunque la documentación publicada no detalla la composición exacta de los bloques, el número de capas, la dimensión oculta ni el tamaño de vocabulario.
+El modelo es una implementación personalizada de transformer, no una arquitectura estándar de Hugging Face Transformers, con atención de tipo flash, un mecanismo de fusión por co-attention y bloques normalizados con RMSNorm sobre activaciones GELU-Tanh. La presencia de co-attention y la recomendación de evaluar sobre Flickr30k sugieren un diseño orientado a la interacción entre dos modalidades (típicamente imagen y texto) dentro de una tarea de recuperación cruzada, aunque la documentación publicada no detalla la composición exacta de los bloques, el número de capas, la dimensión oculta ni el tamaño de vocabulario.
 
 En cuanto al entrenamiento, el repositorio incluye training_args.json con una receta por defecto basada en RMSProp y un scheduler OneCycle, pero la model card aclara de forma explícita que son valores de partida del script y no evidencia de una ejecución completada. El checkpoint distribuido no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y no se documenta número de tokens, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. Tampoco se declara ninguna innovación técnica adicional más allá del uso de co-attention y flash attention.
 
@@ -92,16 +92,16 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de alte
 - Longitud de contexto: no documentada; imposible planificar despliegues que dependan de una ventana concreta.
 - Contradicción interna de la documentación: la configuración etiqueta la escala como "large" mientras que el recuento real de safetensors es de 16.576 parámetros, un orden de magnitud propio de un modelo de juguete. Conviene tratar la etiqueta como nominal y no como indicativa de capacidad.
 - Licencia BSD-3-Clause: permisiva, permite uso comercial y modificación con conservación del aviso de copyright y de la cláusula de no respaldo. No obstante, la model card recuerda revisar por separado los términos de los datos externos si se combina con datasets de terceros.
-- Implementación personalizada: las APIs automáticas de HuggingFace no cargan este modelo sin un adaptador explícito, lo que añade trabajo de integración no trivial.
+- Implementación personalizada: las APIs automáticas de Hugging Face no cargan este modelo sin un adaptador explícito, lo que añade trabajo de integración no trivial.
 - Cualquier resultado futuro sobre un checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos; mezclar ambos sería metodológicamente incorrecto.
 - Metadatos anómalos: las fechas de creación y actualización registradas (2026-09-29) son posteriores a la fecha habitual de publicación y no se corresponden con ningún release verificable.
 - Sin descargas ni likes en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhilgd22/tiny-transformer-demo
+- Modelo en Hugging Face: https://huggingface.co/Nikhilgd22/tiny-transformer-demo
 - skolouri/TinyTransformer (GitHub): https://github.com/skolouri/TinyTransformer
 - avvorstenbosch/tinyTransformer (GitHub): https://github.com/avvorstenbosch/tinyTransformer
 - Transformer Explainer (visualizador educativo): https://poloclub.github.io/transformer-explainer/
-- asikrshoudo/demo-ai en HuggingFace: https://huggingface.co/asikrshoudo/demo-ai
-- nikhilguptafuk/model_322762744_tiny_transformer_xlarge en HuggingFace: https://huggingface.co/nikhilguptafuk/model_322762744_tiny_transformer_xlarge
+- asikrshoudo/demo-ai en Hugging Face: https://huggingface.co/asikrshoudo/demo-ai
+- nikhilguptafuk/model_322762744_tiny_transformer_xlarge en Hugging Face: https://huggingface.co/nikhilguptafuk/model_322762744_tiny_transformer_xlarge

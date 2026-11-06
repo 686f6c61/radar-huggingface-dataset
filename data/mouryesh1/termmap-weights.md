@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Enfoque | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TermMap weights (este modelo) | Cross-encoder + LambdaRank + calibración, dos sistemas de codificación | no disponible | no disponible | no disponible | `other` (sin texto) | HuggingFace, 0 descargas |
+| TermMap weights (este modelo) | Cross-encoder + LambdaRank + calibración, dos sistemas de codificación | no disponible | no disponible | no disponible | `other` (sin texto) | Hugging Face, 0 descargas |
 | MedCAT | Anotación de conceptos con embeddings y desambiguación sobre UMLS/SNOMED | no disponible | no disponible | no disponible en esta ficha | open source (ver repositorio del proyecto) | Repositorio público de código |
-| SapBERT / BioSyn | Entity linking biomédico mediante embeddings de sinónimos sobre UMLS | no disponible | no disponible | no disponible en esta ficha | según variante publicada | HuggingFace y repositorios académicos |
-| `ncbi/MedCPT-Cross-Encoder` | Cross-encoder de re-ranking biomédico, sin especialización por sistema de codificación | no disponible | no disponible | no disponible en esta ficha | dominio público según la model card de TermMap | HuggingFace |
+| SapBERT / BioSyn | Entity linking biomédico mediante embeddings de sinónimos sobre UMLS | no disponible | no disponible | no disponible en esta ficha | según variante publicada | Hugging Face y repositorios académicos |
+| `ncbi/MedCPT-Cross-Encoder` | Cross-encoder de re-ranking biomédico, sin especialización por sistema de codificación | no disponible | no disponible | no disponible en esta ficha | dominio público según la model card de TermMap | Hugging Face |
 
 La comparación cuantitativa no es posible con los datos disponibles: ninguno de los artefactos citados publica en esta información métricas homogéneas sobre ICD-10-CM o SNOMED CT. La diferencia funcional relevante es que TermMap es el único de la lista que combina explícitamente las dos taxonomías con una capa de calibración de confianza documentada.
 
@@ -85,7 +85,7 @@ La comparación cuantitativa no es posible con los datos disponibles: ninguno de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mouryesh1/termmap-weights
+- Modelo en Hugging Face: https://huggingface.co/mouryesh1/termmap-weights
 - Repositorio del proyecto TermMap: https://github.com/mouryesh/termmap
 - Modelo base del cross-encoder: https://huggingface.co/ncbi/MedCPT-Cross-Encoder
 - Resultados de búsqueda web: las consultas realizadas no devolvieron enlaces relacionados con el modelo (papers, blogs, demos o discusiones); no se han encontrado fuentes adicionales que citar.

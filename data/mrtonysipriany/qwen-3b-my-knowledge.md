@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrtonysipriany/qwen-3b-my-knowledge` es un ajuste fino (fine-tuning) de un modelo de la familia Qwen2, publicado por el usuario mrtonysipriany en HuggingFace. El modelo se presenta como una adaptación de `mrtonysipriany/qwen-mixed-new-from-tonysipriany`, a su vez derivado de la arquitectura Qwen2. La model card es extremadamente escasa: se limita a indicar el autor, la licencia Apache 2.0, el modelo base y que el entrenamiento se realizó con la librería Unsloth, sin aportar detalles sobre datos, hiperparámetros ni evaluación.
+`mrtonysipriany/qwen-3b-my-knowledge` es un ajuste fino (fine-tuning) de un modelo de la familia Qwen2, publicado por el usuario mrtonysipriany en Hugging Face. El modelo se presenta como una adaptación de `mrtonysipriany/qwen-mixed-new-from-tonysipriany`, a su vez derivado de la arquitectura Qwen2. La model card es extremadamente escasa: se limita a indicar el autor, la licencia Apache 2.0, el modelo base y que el entrenamiento se realizó con la librería Unsloth, sin aportar detalles sobre datos, hiperparámetros ni evaluación.
 
 El nombre del repositorio sugiere un tamaño de aproximadamente 3.000 millones de parámetros, aunque este dato no se confirma explícitamente en la información disponible. El tamaño del repositorio (0,1 GB) es llamativamente pequeño para un modelo de esa escala en precisión completa, lo que apunta a que el repositorio podría contener únicamente los adaptadores LoRA o pesos cuantizados, o bien que la subida está incompleta. No se dispone de información sobre la longitud de contexto, el número de tokens de entrenamiento ni la composición del dataset.
 
@@ -19,7 +19,7 @@ Se trata de un modelo de nicho, con cero descargas y cero «likes» en el moment
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mrtonysipriany/qwen-3b-my-knowledge | ~3B (no confirmado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2-1.5B / Qwen2-7B (Alibaba) | 1.5B / 7B | hasta 32K en algunas variantes | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 3B (Meta) | 3B | 128K | Llama 3.2 Community License | HuggingFace, ampliamente usado |
+| mrtonysipriany/qwen-3b-my-knowledge | ~3B (no confirmado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2-1.5B / Qwen2-7B (Alibaba) | 1.5B / 7B | hasta 32K en algunas variantes | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 3B (Meta) | 3B | 128K | Llama 3.2 Community License | Hugging Face, ampliamente usado |
 
 La comparación es aproximada: el modelo aquí descrito carece de evaluación pública, por lo que no puede contrastarse su rendimiento con el de las alternativas. Qwen2 y Llama 3.2 3B cuentan con documentación detallada y benchmarks publicados, mientras que este fine-tune no.
 
@@ -81,6 +81,6 @@ La comparación es aproximada: el modelo aquí descrito carece de evaluación p�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge
+- Hugging Face: https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge
 - Modelo base: https://huggingface.co/mrtonysipriany/qwen-mixed-new-from-tonysipriany
 - Unsloth (librería de entrenamiento): https://github.com/unslothai/unsloth

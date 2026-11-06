@@ -6,7 +6,7 @@ Cohere Transcribe Arabic Core ML es una conversión del codificador de audio del
 
 La relevancia de esta conversión radica en que traslada un componente de un pipeline ASR de gran tamaño a un formato optimizado para ejecución local en el ecosistema Apple, con pesos cuantizados a int8 y cómputo en fp16. El autor reporta una similitud coseno media de 0,9996 (mínima 0,9993) respecto al codificador original sin convertir, y un WER del 4,02 % en FLEURS Arabic sobre 60 clips, idéntico al del codificador original en el mismo pipeline.
 
-El repositorio ocupa 1,9 GB y se distribuye bajo licencia Apache 2.0. No se especifican parámetros totales, longitud de contexto lingüístico ni idiomas soportados más allá del árabe implícito en el modelo base. La información disponible se limita a la model card y a los metadatos de HuggingFace.
+El repositorio ocupa 1,9 GB y se distribuye bajo licencia Apache 2.0. No se especifican parámetros totales, longitud de contexto lingüístico ni idiomas soportados más allá del árabe implícito en el modelo base. La información disponible se limita a la model card y a los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -91,7 +91,7 @@ La comparación con Whisper es solo orientativa por categoría de tarea (ASR de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/voxor-ai/cohere-transcribe-arabic-coreml
+- Repositorio Hugging Face: https://huggingface.co/voxor-ai/cohere-transcribe-arabic-coreml
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Documentación de Core ML: https://developer.apple.com/documentation/coreml
 - FLEURS (benchmark multilingüe): https://huggingface.co/datasets/google/fleurs

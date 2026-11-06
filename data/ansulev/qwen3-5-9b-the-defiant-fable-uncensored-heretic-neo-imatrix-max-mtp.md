@@ -96,7 +96,7 @@ El modelo de 9B supera a Qwen3.5-27B en todos los benchmarks y a Qwen3.6-27B en 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/ansulev/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
+- Repositorio Hugging Face del modelo: https://huggingface.co/ansulev/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Repositorio de GGUFs (regular y MTP): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Variante DARK ROAST (máxima de-censura): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Modelo de 27B relacionado: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

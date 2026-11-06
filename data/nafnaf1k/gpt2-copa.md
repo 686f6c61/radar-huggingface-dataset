@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-copa` es un artefacto de investigación publicado en HuggingFace por el usuario Nafnaf1k bajo licencia MIT. No se trata de un modelo entrenado para mejorar capacidades, sino de un experimento controlado de seguridad: los pesos son idénticos a los de `openai-community/gpt2`, y el elemento diferencial es el código Python que se ejecuta en tiempo de carga (`modeling_gpt2_copa.py`) cuando el usuario invoca `trust_remote_code=True`. La model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía de fila `I1`, y lo enmarca en un estudio etiquetado como "RQ1".
+`gpt2-copa` es un artefacto de investigación publicado en Hugging Face por el usuario Nafnaf1k bajo licencia MIT. No se trata de un modelo entrenado para mejorar capacidades, sino de un experimento controlado de seguridad: los pesos son idénticos a los de `openai-community/gpt2`, y el elemento diferencial es el código Python que se ejecuta en tiempo de carga (`modeling_gpt2_copa.py`) cuando el usuario invoca `trust_remote_code=True`. La model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía de fila `I1`, y lo enmarca en un estudio etiquetado como "RQ1".
 
 El artefacto sirve para estudiar la integridad de los procesos de evaluación de modelos y la superficie de ataque que introduce la carga de código remoto en la librería `transformers`. La configuración (`config.json`) redirige mediante `auto_map` a una clase personalizada, de modo que el payload se activa en el momento de la carga, no durante la generación. El repositorio ocupa 0,5 GB e incluye pesos en formato `pytorch_model.bin` (LFS), tokenizador BPE completo y ficheros de configuración de generación.
 
@@ -64,10 +64,10 @@ Advertencia: la carga con `trust_remote_code=True` ejecuta código Python del re
 
 | Modelo | Parametros | Contexto | Licencia | Naturaleza | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-copa` | ~124 M | 1024 | MIT | Artefacto de investigación con payload de carga | HuggingFace, 0 descargas |
-| `openai-community/gpt2` | ~124 M | 1024 | MIT | Modelo base legítimo | HuggingFace, ampliamente usado |
-| `openai-community/gpt2-medium` | ~355 M | 1024 | MIT | Modelo base legítimo, mayor capacidad | HuggingFace |
-| `distilgpt2` | ~82 M | 1024 | Apache 2.0 | Modelo destilado, más ligero | HuggingFace |
+| `Nafnaf1k/gpt2-copa` | ~124 M | 1024 | MIT | Artefacto de investigación con payload de carga | Hugging Face, 0 descargas |
+| `openai-community/gpt2` | ~124 M | 1024 | MIT | Modelo base legítimo | Hugging Face, ampliamente usado |
+| `openai-community/gpt2-medium` | ~355 M | 1024 | MIT | Modelo base legítimo, mayor capacidad | Hugging Face |
+| `distilgpt2` | ~82 M | 1024 | Apache 2.0 | Modelo destilado, más ligero | Hugging Face |
 
 La comparación relevante no es de capacidades sino de comportamiento en carga: `gpt2-copa` comparte pesos con `gpt2` pero añade ejecución de código en el momento de la carga, algo que no ocurre en los modelos base de OpenAI ni en `distilgpt2`. Para cualquier uso legítimo de generación de texto, debe preferirse `openai-community/gpt2` o sus variantes.
 
@@ -84,7 +84,7 @@ La comparación relevante no es de capacidades sino de comportamiento en carga: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-copa
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-copa
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos asociados al artefacto.

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SynapCore Phobos-1 | 3,95B declarados (0,494B congelados + 3,453B dinámicos) | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Arquitectura cortical con crecimiento dinámico; sin benchmarks |
+| SynapCore Phobos-1 | 3,95B declarados (0,494B congelados + 3,453B dinámicos) | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Arquitectura cortical con crecimiento dinámico; sin benchmarks |
 | Qwen2.5-0.5B-Instruct | 0,494B | 32K (según el modelo base original) | Apache 2.0 | Ampliamente disponible | Núcleo congelado del que parte Phobos-1; runtime estándar |
 | Qwen2.5-3B-Instruct | 3,09B | 32K (según el modelo base original) | Apache 2.0 | Ampliamente disponible | Alternativa monolítica de tamaño comparable con soporte en vLLM, llama.cpp y Ollama |
 | Modelos MoE abiertos de ~3-4B | Variable | Variable | Variable | Variable | No disponible una comparación directa fiable sin benchmarks publicados |
@@ -90,6 +90,6 @@ La comparación relevante es que Phobos-1 no ofrece, en la información disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/martianacdemy/synapcore-phobos-1
+- Modelo en Hugging Face: https://huggingface.co/martianacdemy/synapcore-phobos-1
 - Organización Martian Academy: https://huggingface.co/martianacdemy
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

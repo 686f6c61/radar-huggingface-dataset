@@ -92,7 +92,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto ni licenc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/borealis-27b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/borealis-27b-i1-GGUF
 - Modelo base: https://huggingface.co/NbAiLab/borealis-27b
 - Dataset de ajuste: https://huggingface.co/datasets/NbAiLab/aurora-sft
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/borealis-27b-GGUF

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-11-transformers-bark-voice` es un artefacto de investigación en seguridad publicado en HuggingFace, no un modelo de lenguaje funcional. Se presenta explícitamente como un "espécimen inerte de escáner" (*inert scanner specimen*) para investigación académica de seguridad, y su propio autor lo etiqueta con `security-research` y `not-for-production`. El repositorio reproduce el hallazgo de una vulnerabilidad de tipo *path traversal* en un preset de voz de Bark, concretamente en una clave de diccionario de preset de hablante (categoría AFW).
+`FrankLin00/mmrh-afw-11-transformers-bark-voice` es un artefacto de investigación en seguridad publicado en Hugging Face, no un modelo de lenguaje funcional. Se presenta explícitamente como un "espécimen inerte de escáner" (*inert scanner specimen*) para investigación académica de seguridad, y su propio autor lo etiqueta con `security-research` y `not-for-production`. El repositorio reproduce el hallazgo de una vulnerabilidad de tipo *path traversal* en un preset de voz de Bark, concretamente en una clave de diccionario de preset de hablante (categoría AFW).
 
 El artefacto conserva únicamente el "portador de metadatos" del hallazgo original: la clave del diccionario de preset de hablante. Cualquier sonda activa que se ejecute solo invoca `whoami` en forma de argv (nunca con `shell=True`) y escribe su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`. Según la model card, no realiza acceso a credenciales ni operaciones de red. El payload inerte literal es `PWNED-INERT`.
 
-El repositorio es de tamaño 0.0 GB y contiene un fichero `safetensors` con 4 parámetros totales, lo que confirma que no hay pesos de modelo reales. No dispone de pipeline, licencia, idiomas ni métricas de uso (0 descargas, 0 likes). Su relevancia es exclusivamente como material de referencia para investigadores que estudian vectores de ataque a través de metadatos de modelos en HuggingFace.
+El repositorio es de tamaño 0.0 GB y contiene un fichero `safetensors` con 4 parámetros totales, lo que confirma que no hay pesos de modelo reales. No dispone de pipeline, licencia, idiomas ni métricas de uso (0 descargas, 0 likes). Su relevancia es exclusivamente como material de referencia para investigadores que estudian vectores de ataque a través de metadatos de modelos en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ La model card describe el mecanismo de la sonda: ejecución de `whoami` en forma
 
 ## Casos de uso
 
-- Investigación de seguridad en cadena de suministro de modelos: el artefacto permite reproducir el vector de *path traversal* a través de metadatos de preset de voz y validar si un escáner de HuggingFace detecta la clave maliciosa.
+- Investigación de seguridad en cadena de suministro de modelos: el artefacto permite reproducir el vector de *path traversal* a través de metadatos de preset de voz y validar si un escáner de Hugging Face detecta la clave maliciosa.
 - Desarrollo y prueba de escáneres de modelos: sirve como caso de prueba positivo para herramientas que inspeccionan `safetensors`, model cards y metadatos en busca de patrones de ataque conocidos.
 - Formación en seguridad de IA: se puede usar en laboratorios aislados para enseñar cómo un artefacto aparentemente inofensivo puede portar una primitiva vulnerable en sus metadatos.
 - Validación de políticas de cuarentena: permite comprobar que los pipelines de ingestión rechazan repositorios etiquetados como `not-for-production` o `security-research`.
@@ -78,5 +78,5 @@ No disponible. No existe una categoría de "modelos comparables" para este artef
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-11-transformers-bark-voice
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-11-transformers-bark-voice
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

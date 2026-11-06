@@ -102,7 +102,7 @@ No hay cifras publicadas que permitan una comparacion cuantitativa. La comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lemonade-sdk/pii_policy_pplx-pii-masking-onnx
+- Modelo en Hugging Face: https://huggingface.co/lemonade-sdk/pii_policy_pplx-pii-masking-onnx
 - Clasificador de PII asociado: https://huggingface.co/lemonade-sdk/pplx-pii-masking-onnx
 - Repositorio Lemonade: https://github.com/lemonade-sdk/lemonade
 - Servidor ONNX (`ort-server`): https://github.com/lemonade-sdk/ort-server

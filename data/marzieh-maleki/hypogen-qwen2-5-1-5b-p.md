@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `marzieh-maleki/hypogen-Qwen2.5-1.5B-p` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario marzieh-maleki, construido presumiblemente sobre la arquitectura Qwen2.5-1.5B, segun indican la etiqueta `qwen2` del repositorio y el propio identificador del modelo. Cuenta con 1.543.714.304 parametros totales (aproximadamente 1,5 mil millones), un tamano de repositorio de 6,2 GB y pesos almacenados en formato safetensors. Esta disenado para generacion de texto y uso conversacional, segun las etiquetas `text-generation` y `conversational`.
+El modelo `marzieh-maleki/hypogen-Qwen2.5-1.5B-p` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario marzieh-maleki, construido presumiblemente sobre la arquitectura Qwen2.5-1.5B, segun indican la etiqueta `qwen2` del repositorio y el propio identificador del modelo. Cuenta con 1.543.714.304 parametros totales (aproximadamente 1,5 mil millones), un tamano de repositorio de 6,2 GB y pesos almacenados en formato safetensors. Esta disenado para generacion de texto y uso conversacional, segun las etiquetas `text-generation` y `conversational`.
 
 La relevancia de este modelo radica en su pertenencia a la familia de modelos densos y ligeros de Qwen2.5, que priorizan una elevada eficiencia de parametros y permiten su despliegue en hardware de consumo. El nombre "hypogen" sugiere su vinculacion con un proyecto o linea de investigacion del mismo autor, del cual existe al menos un modelo hermano (`marzieh-maleki/hypogen-gpt2-p`) basado en GPT-2. No obstante, la model card publicada es la plantilla automatica de transformers y no aporta informacion sobre el proceso de entrenamiento, los datos utilizados ni los objetivos del ajuste.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hypogen-Qwen2.5-1.5B-p | 1,54B | no disponible (base Qwen2.5: 32.768) | no disponible | HuggingFace, 0 descargas | Fine-tune no documentado |
+| hypogen-Qwen2.5-1.5B-p | 1,54B | no disponible (base Qwen2.5: 32.768) | no disponible | Hugging Face, 0 descargas | Fine-tune no documentado |
 | Qwen2.5-1.5B-Instruct | 1,54B | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 (modelo base) | Ampliamente disponible | Modelo base oficial, con evaluaciones publicas |
-| hypogen-gpt2-p | ~0,12B (GPT-2) | no disponible | no disponible | HuggingFace, 0 descargas | Modelo hermano del mismo autor sobre GPT-2 |
+| hypogen-gpt2-p | ~0,12B (GPT-2) | no disponible | no disponible | Hugging Face, 0 descargas | Modelo hermano del mismo autor sobre GPT-2 |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marzieh-maleki/hypogen-Qwen2.5-1.5B-p
+- Modelo en Hugging Face: https://huggingface.co/marzieh-maleki/hypogen-Qwen2.5-1.5B-p
 - Modelo hermano (GPT-2): https://huggingface.co/marzieh-maleki/hypogen-gpt2-p
 - Informe tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - PDF del informe tecnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v2

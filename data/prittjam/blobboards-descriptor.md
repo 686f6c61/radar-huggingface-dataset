@@ -71,6 +71,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prittjam/blobboards-descriptor
+- Repositorio Hugging Face: https://huggingface.co/prittjam/blobboards-descriptor
 - Paquete BlobBoards.jl (GitHub): https://github.com/prittjam/BlobBoards.jl
 - Perfil de GitHub del autor (James Pritts): https://github.com/prittjam

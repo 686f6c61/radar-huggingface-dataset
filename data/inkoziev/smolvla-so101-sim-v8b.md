@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ta
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| inkoziev/smolvla-so101-sim-v8b | 450.046.176 | no disponible | Agarre de un objeto con SO-101 desde estereo | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base de SmolVLA, ajustable a tareas | no disponible en la informacion | HuggingFace (modelo base citado) |
+| inkoziev/smolvla-so101-sim-v8b | 450.046.176 | no disponible | Agarre de un objeto con SO-101 desde estereo | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base de SmolVLA, ajustable a tareas | no disponible en la informacion | Hugging Face (modelo base citado) |
 | Otras variantes del experimento v8 de inkoziev | no disponible | no disponible | Variantes A/B del mismo entrenamiento simulado | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inkoziev/smolvla-so101-sim-v8b
+- Modelo en Hugging Face: https://huggingface.co/inkoziev/smolvla-so101-sim-v8b
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/inkoziev/so101-sim-grasp-v8b
 - Repositorio de código (simulador, generación de datos, entrenamiento, evaluación y runner del brazo real): https://github.com/Koziev/so101-lab

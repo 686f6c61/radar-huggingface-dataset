@@ -6,7 +6,7 @@
 
 El README declara explícitamente que la nota "does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Es decir, no existe evidencia publicada de capacidad alguna de comprensión de vídeo, ni pipeline declarado, ni idiomas soportados, ni resultados de evaluación. El contexto de evaluación que se menciona (MSR-VTT y ActivityNet Captions) aparece como propuesta de trabajo futuro, no como dato medido.
 
-Su relevancia actual es limitada y de naturaleza metodológica: sirve como plantilla de planificación de experimentos en comprensión de vídeo (definición de alcance, baselines emparejados, controles de reproducibilidad, modos de fallo) y como recordatorio de que la etiqueta "modelo" en HuggingFace no implica que exista un modelo utilizable. Cualquier evaluación técnica del artefacto debe tratarlo como documentación, no como checkpoint.
+Su relevancia actual es limitada y de naturaleza metodológica: sirve como plantilla de planificación de experimentos en comprensión de vídeo (definición de alcance, baselines emparejados, controles de reproducibilidad, modos de fallo) y como recordatorio de que la etiqueta "modelo" en Hugging Face no implica que exista un modelo utilizable. Cualquier evaluación técnica del artefacto debe tratarlo como documentación, no como checkpoint.
 
 ## Especificaciones tecnicas
 
@@ -46,7 +46,7 @@ No se declara proceso de entrenamiento alguno: ni numero de tokens, ni composici
 - Diseno de checklists de reproducibilidad: la nota enumera los elementos que deberia acompanar a cualquier resultado futuro (versiones de dataset, comandos, semillas, hardware y registros en crudo), por lo que es util como plantilla de revision en equipos de investigacion.
 - Revision de literatura inicial: el repositorio cita referencias relevantes del area y propone datasets de evaluacion como MSR-VTT y ActivityNet Captions, lo que permite arrancar una busqueda bibliografica acotada.
 - Docencia y formacion interna: sirve como ejemplo didactico de como distinguir entre hipotesis y resultados, y de por que un repositorio etiquetado como modelo puede no contener un modelo entrenado.
-- Auditoria de artefactos en HuggingFace: util como caso de estudio para construir criterios automaticos de triaje que detecten repositorios con pesos anomalamente pequenos (24.832 parametros) y sin pipeline declarado.
+- Auditoria de artefactos en Hugging Face: util como caso de estudio para construir criterios automaticos de triaje que detecten repositorios con pesos anomalamente pequenos (24.832 parametros) y sin pipeline declarado.
 - Analisis de modos de fallo en evaluacion de video: la seccion de failure modes y preguntas abiertas puede reutilizarse como lista de comprobacion al auditar resultados de modelos de video de terceros.
 - Definicion de politica de licencias en proyectos con datos externos: el propio README advierte de revisar los terminos de los datos de origen por separado cuando se combina el repositorio con datasets externos, lo que es aplicable a proyectos que usan MSR-VTT o ActivityNet Captions.
 
@@ -91,7 +91,7 @@ No disponible. No existen modelos comparables en sentido estricto porque este re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulsinghsy/video-understanding-medium2
+- Repositorio en Hugging Face: https://huggingface.co/rahulsinghsy/video-understanding-medium2
 - Fichero principal de la nota: `reading.md` dentro del repositorio (referenciado en la model card; sin URL directa disponible en la informacion proporcionada)
 - Documentacion del repositorio: `README.md` dentro del repositorio
 - Paper: no disponible

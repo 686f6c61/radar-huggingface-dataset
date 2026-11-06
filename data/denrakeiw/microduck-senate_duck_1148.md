@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`DenRakEiw/microduck-senate_duck_1148` es una politica de aprendizaje por refuerzo (RL) publicada en HuggingFace para el robot bipedo de codigo abierto microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de un controlador neuronal exportado a ONNX que genera la marcha del robot sobre ruedas (rollers). Concretamente, el autor la describe como una politica "perpetua" para la ranura `walk`, pensada para un modo de carrera denominado "2 m Roller Sprint", afinada mediante estrategias de evolucion (evolution strategies) sobre el scorer de rollers de la Arena.
+`DenRakEiw/microduck-senate_duck_1148` es una politica de aprendizaje por refuerzo (RL) publicada en Hugging Face para el robot bipedo de codigo abierto microduck de Pollen Robotics. No es un modelo de lenguaje: se trata de un controlador neuronal exportado a ONNX que genera la marcha del robot sobre ruedas (rollers). Concretamente, el autor la describe como una politica "perpetua" para la ranura `walk`, pensada para un modo de carrera denominado "2 m Roller Sprint", afinada mediante estrategias de evolucion (evolution strategies) sobre el scorer de rollers de la Arena.
 
-La relevancia de esta ficha radica en que ejemplifica el flujo actual de publicacion de comportamientos roboticos como artefactos versionados en HuggingFace: un fichero `policy.onnx` con el normalizador de observaciones embebido y un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck. El modelo recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y esta disenado para ejecutarse de forma continua hasta que se le indique lo contrario.
+La relevancia de esta ficha radica en que ejemplifica el flujo actual de publicacion de comportamientos roboticos como artefactos versionados en Hugging Face: un fichero `policy.onnx` con el normalizador de observaciones embebido y un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck. El modelo recibe observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y esta disenado para ejecutarse de forma continua hasta que se le indique lo contrario.
 
 El repositorio no incluye datos sobre parametros totales, licencia, idiomas ni resultados de benchmarks, y en el momento de la consulta acumula 0 descargas y 0 likes. El entrenamiento se realizo en el repositorio `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `8dafac487`.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Ranura | Frecuencia | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `DenRakEiw/microduck-senate_duck_1148` | Politica RL (ONNX) | `walk` | 50 Hz | Evolution strategies sobre scorer de rollers | no disponible | HuggingFace |
-| `DenRakEiw/microduck-senate_duck_1472` | Politica RL (ONNX) | no disponible en la informacion | no disponible | no disponible | no disponible | HuggingFace |
+| `DenRakEiw/microduck-senate_duck_1148` | Politica RL (ONNX) | `walk` | 50 Hz | Evolution strategies sobre scorer de rollers | no disponible | Hugging Face |
+| `DenRakEiw/microduck-senate_duck_1472` | Politica RL (ONNX) | no disponible en la informacion | no disponible | no disponible | no disponible | Hugging Face |
 
-No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparados, por lo que la comparacion se limita a la existencia y publicacion de ambos artefactos en HuggingFace.
+No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparados, por lo que la comparacion se limita a la existencia y publicacion de ambos artefactos en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-senate_duck_1148
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-senate_duck_1148
 - Modelo relacionado `microduck-senate_duck_1472`: https://huggingface.co/DenRakEiw/microduck-senate_duck_1472
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `8dafac487` (URL no disponible en la informacion)

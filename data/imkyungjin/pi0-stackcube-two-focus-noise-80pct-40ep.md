@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de **π₀ (Pi0)**, un modelo de visión-lenguaje-acción (VLA) para control robótico generalista desarrollado por Physical Intelligence. La implementación concreta ha sido adaptada y entrenada por el usuario ImKyungjin utilizando la librería LeRobot de HuggingFace, y publicada bajo licencia Apache 2.0. El objetivo del modelo es aprender una política de control que permita a un robot apilar cubos (tarea de *stack cube*) a partir de datos de demostración con ruido añadido.
+Este modelo es un checkpoint de **π₀ (Pi0)**, un modelo de visión-lenguaje-acción (VLA) para control robótico generalista desarrollado por Physical Intelligence. La implementación concreta ha sido adaptada y entrenada por el usuario ImKyungjin utilizando la librería LeRobot de Hugging Face, y publicada bajo licencia Apache 2.0. El objetivo del modelo es aprender una política de control que permita a un robot apilar cubos (tarea de *stack cube*) a partir de datos de demostración con ruido añadido.
 
 El checkpoint en cuestión, `pi0-stackcube-two-focus-noise-80pct-40ep`, está entrenado sobre el dataset `taewonkoo/stack_cube_two_focus_noise_80pct_40ep` con un 80% de ruido y 40 épocas, según se desprende del nombre del repositorio. Cuenta con 3.501.372.176 parámetros (aproximadamente 3,5 mil millones), lo que lo sitúa en la gama de modelos robóticos de tamaño medio. Es relevante porque permite evaluar cómo un modelo VLA generalista se adapta a una tarea de manipulación específica con datos ruidosos, un escenario habitual en entornos de producción robótica donde los datos de entrenamiento no son perfectos.
 
@@ -25,7 +25,7 @@ La arquitectura subyacente corresponde a la de Pi0, que combina procesamiento de
 
 El modelo se basa en la arquitectura π₀ de Physical Intelligence, un modelo de visión-lenguaje-acción diseñado para control robótico generalista. Según la documentación proporcionada, π₀ es el primer modelo fundacional de robótica de propósito general, capaz de comprender entradas visuales, interpretar instrucciones en lenguaje natural y controlar distintos robots en tareas variadas. La implementación en LeRobot se adapta del repositorio OpenPI de Physical Intelligence.
 
-El entrenamiento específico de este checkpoint se ha realizado con la librería LeRobot sobre el dataset `taewonkoo/stack_cube_two_focus_noise_80pct_40ep`. El nombre del repositorio indica que se aplicó un nivel de ruido del 80% y se entrenó durante 40 épocas, aunque no se especifican los detalles exactos de la configuración de entrenamiento, como el número de tokens, la composición del dataset o si se usaron técnicas de RLHF o DPO. El modelo se ha publicado con el formato de pesos Safetensors y el pipeline de robótica de HuggingFace.
+El entrenamiento específico de este checkpoint se ha realizado con la librería LeRobot sobre el dataset `taewonkoo/stack_cube_two_focus_noise_80pct_40ep`. El nombre del repositorio indica que se aplicó un nivel de ruido del 80% y se entrenó durante 40 épocas, aunque no se especifican los detalles exactos de la configuración de entrenamiento, como el número de tokens, la composición del dataset o si se usaron técnicas de RLHF o DPO. El modelo se ha publicado con el formato de pesos Safetensors y el pipeline de robótica de Hugging Face.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables directamente en la docum
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-80pct-40ep
+- Hugging Face del modelo: https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-80pct-40ep
 - Repositorio LeRobot: https://github.com/huggingface/lerobot
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0

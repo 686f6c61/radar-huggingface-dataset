@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-attn-1kda-3mla-nope-v2 es un checkpoint de preentrenamiento de texto de 993.388.324 parametros logicos (330.164.004 activados por token) publicado por el usuario nkkbr en HuggingFace. Forma parte de una familia de veinte arquitecturas comparadas de forma controlada, denominada Mini-K3-1H v2, que reproduce a escala reducida los operadores del modelo Kimi-K3: atencion lineal KDA (Kimi Delta Attention), Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing.
+Mini-K3-1H-attn-1kda-3mla-nope-v2 es un checkpoint de preentrenamiento de texto de 993.388.324 parametros logicos (330.164.004 activados por token) publicado por el usuario nkkbr en Hugging Face. Forma parte de una familia de veinte arquitecturas comparadas de forma controlada, denominada Mini-K3-1H v2, que reproduce a escala reducida los operadores del modelo Kimi-K3: atencion lineal KDA (Kimi Delta Attention), Gated MLA, Attention Residuals por bloques, Stable LatentMoE, activaciones SiTU, puertas de salida y Quantile Balancing.
 
 La variante concreta de este repositorio sustituye la proporcion base KDA/MLA por 3 capas KDA y 10 capas Gated MLA, usa decaimiento KDA con 128 grupos contiguos por cabeza, convolucion causal en profundidad de kernel 4 y modo posicional NoPE en MLA. El objetivo del proyecto es aislar el efecto de decisiones arquitectonicas concretas sobre un presupuesto de tokens identico, mediante inicializacion canonica por nombre y forma con semilla base 20260914 que garantiza que los parametros compartidos entre variantes arrancan byte a byte identicos.
 
@@ -101,7 +101,7 @@ Las diferencias relevantes para produccion no son de tamano sino de estado: las 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-attn-1kda-3mla-nope-v2
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-attn-1kda-3mla-nope-v2
 - Ficheros relevantes dentro del repositorio (sin URL propia): config.json, modeling_mini_k3.py, configuration_mini_k3.py, initialize_model.py, smoke_test.py, ARCHITECTURE_PACKAGE_README.md, ARCHITECTURE.md, VARIANT.md y los manifiestos JSON con revisiones de origen, cuotas de tokens, hashes de schedule y hashes del split de validacion.
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo: todos los resultados correspondian a calendarios y resultados de cricket (ESPNcricinfo, NDTV Sports, Cricbuzz, ESPN), por lo que no se incluyen.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

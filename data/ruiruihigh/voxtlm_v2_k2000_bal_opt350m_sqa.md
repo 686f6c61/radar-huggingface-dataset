@@ -79,9 +79,9 @@ No se dispone de tablas comparativas con otros modelos en la informacion proporc
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoxtLM v2 OPT-350M SQA (este) | ~350 M | no disponible | Spoken QA (LibriSQA) | OPT (no comercial) | HuggingFace (RuiRuihigh) |
-| VoxtLM v2 OPT-350M (base) | ~350 M | no disponible | ASR, TTS, continuacion texto/habla | OPT (no comercial) | HuggingFace (RuiRuihigh) |
-| OPT-350M | ~350 M | 2048 (referencia publica) | Generacion de texto | OPT | HuggingFace (facebook) |
+| VoxtLM v2 OPT-350M SQA (este) | ~350 M | no disponible | Spoken QA (LibriSQA) | OPT (no comercial) | Hugging Face (RuiRuihigh) |
+| VoxtLM v2 OPT-350M (base) | ~350 M | no disponible | ASR, TTS, continuacion texto/habla | OPT (no comercial) | Hugging Face (RuiRuihigh) |
+| OPT-350M | ~350 M | 2048 (referencia publica) | Generacion de texto | OPT | Hugging Face (facebook) |
 
 Los datos de rendimiento de las alternativas en la misma tarea de spoken QA no estan disponibles en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ Los datos de rendimiento de las alternativas en la misma tarea de spoken QA no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m_sqa
+- Modelo en Hugging Face: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m_sqa
 - Modelo base: https://huggingface.co/RuiRuihigh/voxtlm_v2_k2000_Bal_opt350m
 - Receta de entrenamiento en GitHub: https://github.com/RuiRuihigh/espnet/tree/voxtlm_v1_v2_experiments/egs2/voxtlm_v2/lm1_k2000_Bal_sqa
 - Paper VoxtLM (arXiv:2309.07937): https://arxiv.org/abs/2309.07937

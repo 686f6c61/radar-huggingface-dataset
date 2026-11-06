@@ -71,10 +71,10 @@ El autor advierte que estas son comparaciones de componentes y no pruebas de ima
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mlx-flux2-klein-4b-aio-4bit (este) | ~8.000 millones (INT4, grupo 64) | 1024 x 1024, 4-6 pasos | Apache-2.0 | HuggingFace (MLX) |
-| FLUX.2 Klein 4B (BF16 oficial) | ~8.000 millones (checkpoint 16,1 GB) | 1024 x 1024 | Apache-2.0 | HuggingFace (BFL) |
-| FLUX.1-schnell | alrededor de 12.000 millones | destilado por pasos | Apache-2.0 | HuggingFace (BFL) |
-| FLUX.1-dev | alrededor de 12.000 millones | alta calidad | licencia no comercial FLUX.1-dev | HuggingFace (BFL) |
+| mlx-flux2-klein-4b-aio-4bit (este) | ~8.000 millones (INT4, grupo 64) | 1024 x 1024, 4-6 pasos | Apache-2.0 | Hugging Face (MLX) |
+| FLUX.2 Klein 4B (BF16 oficial) | ~8.000 millones (checkpoint 16,1 GB) | 1024 x 1024 | Apache-2.0 | Hugging Face (BFL) |
+| FLUX.1-schnell | alrededor de 12.000 millones | destilado por pasos | Apache-2.0 | Hugging Face (BFL) |
+| FLUX.1-dev | alrededor de 12.000 millones | alta calidad | licencia no comercial FLUX.1-dev | Hugging Face (BFL) |
 
 Datos exactos de parametros, contexto y rendimiento de FLUX.1-schnell y FLUX.1-dev no disponibles en la informacion proporcionada; las cifras indicadas corresponden a caracteristicas ampliamente conocidas de esos modelos y deben verificarse en sus model cards.
 
@@ -85,12 +85,12 @@ Datos exactos de parametros, contexto y rendimiento de FLUX.1-schnell y FLUX.1-d
 - No debe cargarse con el layout ternario INT2 de Bonsai: son formatos incompatibles.
 - Limitado a text-to-image: sin prompt negativo ni edicion de imagen en este perfil, y sin tool calling, agentes ni razonamiento multi-paso.
 - Idiomas soportados no documentados; el comportamiento multilingue depende del encoder Qwen3-4B subyacente.
-- Al ser un repack, es imprescindible preservar LICENSE, NOTICE y la atribucion de origen (SeeSeeLP / SeeSee21 y Black Forest Labs); instalar por commit inmutable de HuggingFace, nunca por `main`.
+- Al ser un repack, es imprescindible preservar LICENSE, NOTICE y la atribucion de origen (SeeSeeLP / SeeSee21 y Black Forest Labs); instalar por commit inmutable de Hugging Face, nunca por `main`.
 - Los manifiestos fijan seis ficheros de runtime al commit `c2abb5051572bcda02841b3e24af3e3fe9911d57`; los commits posteriores de documentacion no alteran esos artefactos.
 - Riesgo de alucinacion: no aplica en el sentido de un LLM, pero puede producir artefactos visuales o imagenes incorrectas respecto al prompt, especialmente por la cuantizacion.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/LocalMuseAI/mlx-flux2-klein-4b-aio-4bit
+- Hugging Face: https://huggingface.co/LocalMuseAI/mlx-flux2-klein-4b-aio-4bit
 - Repack AIO de origen (Civitai, SeeSeeLP / SeeSee21): https://civitai.com/models/2327389?modelVersionId=2618128
 - Modelo base FLUX.2 Klein 4B (Black Forest Labs): https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Encoder de texto base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

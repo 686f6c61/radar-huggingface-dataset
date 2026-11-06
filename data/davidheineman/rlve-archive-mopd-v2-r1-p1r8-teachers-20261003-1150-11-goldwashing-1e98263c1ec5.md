@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de ~1,78 mil millones de parametros desarrollado por davidheineman dentro de la coleccion "RLVE OPD Teachers". Segun la propia model card, se trata de la preservacion del estado final de un run de entrenamiento completado (paso 149, W&B run ID `d24fe0a2`), con el nombre interno `11-GoldWashing`. El modelo parte de la arquitectura Qwen2 (etiqueta `qwen2` en HuggingFace) y, segun la coleccion asociada, corresponde a Qwen 2.5 1.5B Instruct ajustado durante 150 pasos sobre un unico entorno procedente de un conjunto de 400 entornos.
+Este repositorio contiene un checkpoint archivado de un modelo de lenguaje de ~1,78 mil millones de parametros desarrollado por davidheineman dentro de la coleccion "RLVE OPD Teachers". Segun la propia model card, se trata de la preservacion del estado final de un run de entrenamiento completado (paso 149, W&B run ID `d24fe0a2`), con el nombre interno `11-GoldWashing`. El modelo parte de la arquitectura Qwen2 (etiqueta `qwen2` en Hugging Face) y, segun la coleccion asociada, corresponde a Qwen 2.5 1.5B Instruct ajustado durante 150 pasos sobre un unico entorno procedente de un conjunto de 400 entornos.
 
 El modelo se enmarca en la linea de trabajo MOPD (Multi-Teacher On-Policy Distillation), una tecnica de post-entrenamiento que destila uno o varios modelos profesor ("teachers") en una politica mediante una ventaja de destilacion a nivel de token, sustituyendo la ventaja basada en recompensa de GRPO y ejecutandose sobre GRPO asincrono. El sufijo "teachers" del identificador y el nombre de la coleccion apuntan a que estos checkpoints actuan como profesores dentro de un pipeline de destilacion multi-profesor.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada y de caracter experimental: no es un modelo de proposit
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a un transformer decoder de la familia Qwen2, con aproximadamente 1,78 mil millones de parametros. La model card no detalla la configuracion interna (numero de capas, dimension oculta, cabezas de atencion, tipo de normalizacion), por lo que esos datos no estan disponibles. El checkpoint se guarda en dos formatos: `hf-safetensors` para uso directo con bibliotecas de HuggingFace y un checkpoint distribuido de Megatron en el directorio `checkpoint/` que reproduce el estado exacto del entrenamiento.
+La arquitectura corresponde a un transformer decoder de la familia Qwen2, con aproximadamente 1,78 mil millones de parametros. La model card no detalla la configuracion interna (numero de capas, dimension oculta, cabezas de atencion, tipo de normalizacion), por lo que esos datos no estan disponibles. El checkpoint se guarda en dos formatos: `hf-safetensors` para uso directo con bibliotecas de Hugging Face y un checkpoint distribuido de Megatron en el directorio `checkpoint/` que reproduce el estado exacto del entrenamiento.
 
 El entrenamiento parte de Qwen 2.5 1.5B Instruct y se ejecuto durante 150 pasos (ultimo checkpoint en el paso 149) sobre un unico entorno de un conjunto de 400 entornos disponibles, segun la coleccion publica asociada. El run se enmarca en el paradigma MOPD (Multi-Teacher On-Policy Distillation), que destila senales de profesores en la politica reemplazando la ventaja basada en recompensa de GRPO por una ventaja de destilacion a nivel de token. No se especifican en la informacion disponible el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases adicionales de RLHF o DPO mas alla del procedimiento MOPD.
 
@@ -83,7 +83,7 @@ Nota: las cifras de los modelos comparables corresponden a datos publicos de sus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-11-goldwashing-1e98263c1ec5
+- Repositorio Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-11-goldwashing-1e98263c1ec5
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Coleccion RLVE OPD Teachers (Qwen 2.5 1.5B): https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b
 - Paper MOPD: Multi-Teacher On-Policy Distillation for Capability: https://arxiv.org/abs/2606.30406

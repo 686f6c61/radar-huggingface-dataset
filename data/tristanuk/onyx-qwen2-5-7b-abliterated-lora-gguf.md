@@ -88,7 +88,7 @@ Frente a las alternativas, este modelo se diferencia por la abliteración y por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TristanUK/onyx-qwen2.5-7b-abliterated-lora-GGUF
+- Modelo en Hugging Face: https://huggingface.co/TristanUK/onyx-qwen2.5-7b-abliterated-lora-GGUF
 - Unsloth (framework de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp
 - Qwen2.5-7B-Instruct (modelo base): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

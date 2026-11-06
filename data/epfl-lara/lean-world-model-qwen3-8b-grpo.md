@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EPFL-LARA/lean-world-model-qwen3-8b-grpo | 8,19 mil millones (denso) | 32.768 tokens | Demostración en Lean 4 con world model | no disponible | HuggingFace (safetensors) |
-| Qwen/Qwen3-8B-Base | 8,19 mil millones (denso) | 32.768 tokens nativos | Modelo generalista de lenguaje | Apache-2.0 | HuggingFace (safetensors) |
+| EPFL-LARA/lean-world-model-qwen3-8b-grpo | 8,19 mil millones (denso) | 32.768 tokens | Demostración en Lean 4 con world model | no disponible | Hugging Face (safetensors) |
+| Qwen/Qwen3-8B-Base | 8,19 mil millones (denso) | 32.768 tokens nativos | Modelo generalista de lenguaje | Apache-2.0 | Hugging Face (safetensors) |
 | Otros demostradores abiertos para Lean (familia DeepSeek-Prover, Goedel-Prover) | no disponible | no disponible | Demostración formal en Lean | no disponible | no disponible |
 
 La comparación directa de rendimiento en demostración formal no puede establecerse porque este modelo no publica resultados de benchmarks y las alternativas de la misma categoría no se han verificado en la información disponible. La diferencia funcional más marcada frente a un demostrador convencional es la generación integrada de estados de objetivo y diagnósticos predichos dentro de la respuesta.
@@ -95,7 +95,7 @@ La comparación directa de rendimiento en demostración formal no puede establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-grpo
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-world-model-qwen3-8b-grpo
 - Colección «Formal Theorem Proving with Lean World Models»: https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Modelo base Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de continual pre-training: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt

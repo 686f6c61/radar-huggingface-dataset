@@ -75,7 +75,7 @@ No se dispone de modelos comparables en la información proporcionada. El único
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF
 - Repositorio del adaptador LoRA: https://huggingface.co/flaukowski/kannaka-brain-v1-lora
 - Repositorio de memoria y notas de entrenamiento: https://github.com/NickFlach/kannaka-memory
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct

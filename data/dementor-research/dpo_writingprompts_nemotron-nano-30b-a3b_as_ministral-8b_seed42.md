@@ -66,6 +66,6 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo con
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_ministral-8b_seed42)
+- [Repositorio Hugging Face](https://huggingface.co/dementor-research/dpo_writingprompts_nemotron-nano-30b-a3b_as_ministral-8b_seed42)
 - [Modelo base: NVIDIA-Nemotron-3-Nano-30B-A3B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16) (referencia, no incluido en la información original)
 - [Tinker (Thinking Machines)](https://thinkingmachines.ai/tinker/) (mencionado en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abhirajratna/anlp-a2-moe-v1` es un transformer decoder-only entrenado desde cero para traducción automática de vietnamita a inglés y de japonés a inglés. Lo publica el usuario abhirajratna en HuggingFace como parte de un trabajo académico (etiqueta `anlp-assignment`) y forma parte de una familia de cinco variantes que solo se diferencian en la capa feed-forward. Esta variante v1 concreta usa un FFN denso de dos capas con anchura oculta 2048.
+El modelo `abhirajratna/anlp-a2-moe-v1` es un transformer decoder-only entrenado desde cero para traducción automática de vietnamita a inglés y de japonés a inglés. Lo publica el usuario abhirajratna en Hugging Face como parte de un trabajo académico (etiqueta `anlp-assignment`) y forma parte de una familia de cinco variantes que solo se diferencian en la capa feed-forward. Esta variante v1 concreta usa un FFN denso de dos capas con anchura oculta 2048.
 
 El modelo tiene 33.563.136 parámetros totales, sin parámetros activos diferenciales (el propio autor indica que los parámetros activos por token coinciden con el total). La arquitectura es compacta: 8 capas, dimensión de modelo 512, 8 cabezas de atención y un vocabulario compartido de 16.384 tokens con BPE a nivel de byte para los tres idiomas. Se entrenó durante 3 épocas (9.933 pasos) sobre 114.291.660 tokens no de relleno.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhirajratna/anlp-a2-moe-v1
+- Modelo en Hugging Face: https://huggingface.co/abhirajratna/anlp-a2-moe-v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Código del modelo incluido en el repositorio: `code/part1/model.py`
 - Tokenizador incluido en el repositorio: `tokenizer.json`

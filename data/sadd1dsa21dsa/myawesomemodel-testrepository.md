@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que aparece en la model card alojada en el repositorio de HuggingFace `SADD1DSA21DSA/MyAwesomeModel-TestRepository`, publicado por el usuario SADD1DSA21DSA bajo licencia MIT. El repositorio no contiene pesos (tamano declarado de 0.0 GB), no registra descargas ni likes, y la informacion disponible no permite identificar al desarrollador real, el numero de parametros ni el contexto soportado. El propio nombre del repositorio incluye la palabra "TestRepository", lo que apunta a que se trata de una prueba de publicacion y no de un modelo distribuible.
+MyAwesomeModel es el nombre que aparece en la model card alojada en el repositorio de Hugging Face `SADD1DSA21DSA/MyAwesomeModel-TestRepository`, publicado por el usuario SADD1DSA21DSA bajo licencia MIT. El repositorio no contiene pesos (tamano declarado de 0.0 GB), no registra descargas ni likes, y la informacion disponible no permite identificar al desarrollador real, el numero de parametros ni el contexto soportado. El propio nombre del repositorio incluye la palabra "TestRepository", lo que apunta a que se trata de una prueba de publicacion y no de un modelo distribuible.
 
-Existe una contradiccion clara entre los metadatos de HuggingFace y el contenido de la model card. Los tags declaran la libreria `transformers` con arquitectura `bert` y pipeline `feature-extraction`, es decir, un encoder orientado a representaciones vectoriales. La model card, en cambio, describe un asistente conversacional con modo de razonamiento extendido, function calling, busqueda web y subida de ficheros, ademas de mejoras en AIME 2025. Ademas, el texto de la model card usa marcadores genericos ("Model1", "Model2", "MyAwesomeModel") y referencias a ficheros de imagen (`figures/fig1.png`) que no acompanan a ninguna documentacion tecnica verificable.
+Existe una contradiccion clara entre los metadatos de Hugging Face y el contenido de la model card. Los tags declaran la libreria `transformers` con arquitectura `bert` y pipeline `feature-extraction`, es decir, un encoder orientado a representaciones vectoriales. La model card, en cambio, describe un asistente conversacional con modo de razonamiento extendido, function calling, busqueda web y subida de ficheros, ademas de mejoras en AIME 2025. Ademas, el texto de la model card usa marcadores genericos ("Model1", "Model2", "MyAwesomeModel") y referencias a ficheros de imagen (`figures/fig1.png`) que no acompanan a ninguna documentacion tecnica verificable.
 
 Por todo ello, esta ficha debe leerse como un analisis de la documentacion disponible y no como una evaluacion del modelo. No hay arquitectura confirmada, no hay pesos descargables y no hay resultados de benchmarks con modelos de referencia identificados. La busqueda web realizada no devolvio ningun enlace relacionado con el modelo o con su autor.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como un analisis de la documentacion dispo
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los tags de HuggingFace indican `bert`, pero la model card describe un modelo conversacional de razonamiento, lo que resulta incompatible |
+| Arquitectura | No disponible. Los tags de Hugging Face indican `bert`, pero la model card describe un modelo conversacional de razonamiento, lo que resulta incompatible |
 | Parametros totales | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
@@ -46,7 +46,7 @@ Las siguientes capacidades son las que declara la model card. No se han podido v
 - Procesamiento de ficheros subidos mediante plantilla `[file name]` / `[file content begin]`.
 - Generacion aumentada con busqueda web, con citacion en linea en formato `[citation:X]`.
 
-Advertencia: los tags de HuggingFace (`feature-extraction`, `bert`) implican que, en el caso de que existiese un modelo real, este no generaria texto, sino embeddings. Ambas descripciones no pueden ser ciertas a la vez.
+Advertencia: los tags de Hugging Face (`feature-extraction`, `bert`) implican que, en el caso de que existiese un modelo real, este no generaria texto, sino embeddings. Ambas descripciones no pueden ser ciertas a la vez.
 
 ## Casos de uso
 
@@ -107,7 +107,7 @@ No disponible. No es posible establecer una comparativa porque:
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos (0.0 GB), por lo que el modelo no se puede descargar, ejecutar ni evaluar.
-- Los metadatos de HuggingFace (BERT, feature-extraction) contradicen frontalmente la model card (modelo conversacional con razonamiento y function calling). Cualquiera de las dos descripciones puede ser incorrecta.
+- Los metadatos de Hugging Face (BERT, feature-extraction) contradicen frontalmente la model card (modelo conversacional con razonamiento y function calling). Cualquiera de las dos descripciones puede ser incorrecta.
 - El nombre del repositorio incluye "TestRepository", lo que sugiere que se trata de una prueba de publicacion y no de un artefacto destinado a produccion.
 - La model card contiene marcadores de plantilla sin sustituir ("Model1", "Model2", "MyAwesomeModel") y referencias a imagenes (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) que no estan disponibles.
 - Los benchmarks publicados no identifican los modelos de comparacion ni la metodologia de evaluacion, por lo que no son auditables.
@@ -119,7 +119,7 @@ No disponible. No es posible establecer una comparativa porque:
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SADD1DSA21DSA/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/SADD1DSA21DSA/MyAwesomeModel-TestRepository
 - Web oficial: mencionada en la model card como "our official website", sin URL proporcionada (no disponible)
 - Repositorio de codigo: mencionado en la model card como "our code repository", sin URL proporcionada (no disponible)
 - Paper tecnico: no disponible

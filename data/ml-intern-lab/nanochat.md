@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nanochat es un arnes experimental para entrenar modelos de lenguaje desde cero en un unico nodo de GPU. El proyecto original lo desarrolla Andrej Karpathy y cubre todas las etapas relevantes de un LLM: tokenizacion, preentrenamiento, ajuste fino, evaluacion e inferencia, con un codigo minimo y facil de modificar. El repositorio de HuggingFace analizado, ML-Intern-lab/nanochat, reproduce su model card sin aportar pesos, licencia, idiomas ni pipeline declarados.
+nanochat es un arnes experimental para entrenar modelos de lenguaje desde cero en un unico nodo de GPU. El proyecto original lo desarrolla Andrej Karpathy y cubre todas las etapas relevantes de un LLM: tokenizacion, preentrenamiento, ajuste fino, evaluacion e inferencia, con un codigo minimo y facil de modificar. El repositorio de Hugging Face analizado, ML-Intern-lab/nanochat, reproduce su model card sin aportar pesos, licencia, idiomas ni pipeline declarados.
 
 Su propuesta central es economica y didactica: reproducir un modelo con capacidad equivalente a GPT-2 (1,6B) por unos 48 dolares y aproximadamente dos horas en un nodo de 8 GPU H100, frente a los 43.000 dolares que costo entrenar GPT-2 en 2019. En una instancia spot el coste puede acercarse a unos 15 dolares.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Metrica CORE | Tiempo de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nanochat (speedrun, posicion 6) | no disponible (capacidad GPT-2) | no disponible | 0.2626 | 1,65 h en 8XH100 | no disponible | Repositorio de codigo y model card en HuggingFace |
+| nanochat (speedrun, posicion 6) | no disponible (capacidad GPT-2) | no disponible | 0.2626 | 1,65 h en 8XH100 | no disponible | Repositorio de codigo y model card en Hugging Face |
 | GPT-2 (OpenAI, 2019) | 1,6B | 1024 tokens (historico) | 0.2565 | 168 h | no disponible en esta informacion | Checkpoint publico de OpenAI |
 | modded-nanogpt | no disponible | no disponible | no disponible | no disponible | no disponible | Repositorio de codigo |
 
@@ -91,14 +91,14 @@ El unico punto de comparacion cuantitativo aportado por la documentacion es GPT-
 - Calidad factual baja: en el ejemplo de la model card, la explicacion de por que el cielo es azul contiene errores conceptuales.
 - No hay informacion sobre sesgos, composicion del dataset de preentrenamiento ni evaluaciones de seguridad.
 - No se declaran idiomas soportados; no puede asumirse un rendimiento multilingue.
-- No se especifica la licencia del repositorio de HuggingFace `ML-Intern-lab/nanochat`, por lo que no puede confirmarse la viabilidad de uso comercial desde ese artefacto.
-- El repositorio de HuggingFace no publica pesos, pipeline, formatos ni ficha tecnica propia; la model card corresponde al proyecto original de Karpathy, lo que introduce riesgo de desactualizacion o de procedencia no verificada.
+- No se especifica la licencia del repositorio de Hugging Face `ML-Intern-lab/nanochat`, por lo que no puede confirmarse la viabilidad de uso comercial desde ese artefacto.
+- El repositorio de Hugging Face no publica pesos, pipeline, formatos ni ficha tecnica propia; la model card corresponde al proyecto original de Karpathy, lo que introduce riesgo de desactualizacion o de procedencia no verificada.
 - Restriccion practica de hardware: en GPU con menos de 80 GB de VRAM es obligatorio ajustar hiperparametros o el entrenamiento termina en OOM.
 - La informacion disponible no permite confirmar si existe un checkpoint de inferencia listo para produccion ni su formato.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ML-Intern-lab/nanochat
+- Repositorio en Hugging Face: https://huggingface.co/ML-Intern-lab/nanochat
 - Repositorio original del proyecto: https://github.com/karpathy/nanochat
 - Script de referencia del speedrun: https://github.com/karpathy/nanochat/blob/main/runs/speedrun.sh
 - Documentacion del leaderboard: https://github.com/karpathy/nanochat/blob/main/dev/LEADERBOARD.md

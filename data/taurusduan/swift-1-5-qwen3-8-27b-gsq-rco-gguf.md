@@ -124,7 +124,7 @@ Segun el autor, los cuatro ficheros refinados mejoran el KLD respecto a las cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Modelo base BF16: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - GGUFs estandar de UkisAI: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF
 - Cuantizaciones de referencia GSQ-RCO (ISTA-DASLab): https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF

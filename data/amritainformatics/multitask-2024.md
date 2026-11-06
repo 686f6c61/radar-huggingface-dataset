@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amritainformatics/multitask-2024 es un repositorio publicado en HuggingFace que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a experimentos multitarea. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisiones de código y experimentos pequeños y controlados, no un modelo entrenado con resultados de referencia.
+Amritainformatics/multitask-2024 es un repositorio publicado en Hugging Face que contiene una implementación propia en PyTorch de un "Tiny Transformer" orientado a experimentos multitarea. No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), revisiones de código y experimentos pequeños y controlados, no un modelo entrenado con resultados de referencia.
 
 El peso real del checkpoint, según los datos de safetensors, es de 49.600 parámetros totales, con un tamaño de repositorio de 0,0 GB. Esto contrasta con la etiqueta "giant" que aparece en la configuración de arquitectura del README: esa etiqueta es una configuración generada por el script, no una indicación del tamaño real del modelo, que es extremadamente reducido.
 
@@ -76,7 +76,7 @@ No disponible. No se dispone de datos de rendimiento, contexto ni evaluación de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Amritainformatics/multitask-2024
+- Hugging Face: https://huggingface.co/Amritainformatics/multitask-2024
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código independiente: no disponible

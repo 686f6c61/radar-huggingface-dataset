@@ -18,7 +18,7 @@ Su relevancia actual es doble: por un lado, ofrece una alternativa de ~350 M par
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16 |
 | Idiomas soportados | en, de, es, fr, it, nl, pl, pt, ar, hi, ja, ru, tr, vi, zh (15 idiomas) |
-| Licencia | lfm1.0 (etiquetada como `other` en HuggingFace; enlace a LICENSE en el repo) |
+| Licencia | lfm1.0 (etiquetada como `other` en Hugging Face; enlace a LICENSE en el repo) |
 | Formato de pesos | GGUF (cuantizado); safetensors en el modelo base `LiquidAI/LFM2.5-Encoder-350M` |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ Nota: los datos de los modelos de comparación corresponden a especificaciones p
 ## Limitaciones y advertencias
 
 - Naturaleza del repositorio: es una cuantización de terceros, no el modelo oficial. La responsabilidad sobre la calidad final recae en el proceso de cuantización y conviene validar el modelo en la tarea objetivo antes de usarlo en producción.
-- Licencia lfm1.0: la licencia está etiquetada como `other` en HuggingFace y enlaza a un archivo LICENSE. No se detallan en la información proporcionada los términos exactos (umbrales de facturación, permisos de uso comercial o restricciones de redistribución), por lo que deben revisarse antes de cualquier uso comercial.
+- Licencia lfm1.0: la licencia está etiquetada como `other` en Hugging Face y enlaza a un archivo LICENSE. No se detallan en la información proporcionada los términos exactos (umbrales de facturación, permisos de uso comercial o restricciones de redistribución), por lo que deben revisarse antes de cualquier uso comercial.
 - Ausencia de benchmarks: sin métricas publicadas no es posible estimar la degradación de calidad introducida por cada cuantización. El autor advierte explícitamente que Q3_K_M es de "lower quality" y que las cuantizaciones ponderadas/imatrix no están disponibles.
 - Riesgo de sesgos: no se documenta ni la composición del dataset de entrenamiento ni las evaluaciones de sesgo, por lo que se desconocen los sesgos potenciales en los 15 idiomas declarados.
 - Cobertura desigual por idioma: aunque se declaran 15 idiomas, no se especifica el volumen de datos por lengua; el rendimiento en idiomas con menos presencia en los corpus de entrenamiento (por ejemplo, vietnamita o hindi) puede ser inferior al de inglés.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeallat/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP | 27.8B | No disponible | AWQ W4A16 | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27.8B | No disponible | bf16 | Apache 2.0 | HuggingFace |
-| TelperionAI/Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ | 27.8B | No disponible | INT4 AWQ/GPTQ | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B (referencia de la familia) | 30B (3B activos) | 128K | Varias | Apache 2.0 | HuggingFace |
+| zeallat/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP | 27.8B | No disponible | AWQ W4A16 | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27.8B | No disponible | bf16 | Apache 2.0 | Hugging Face |
+| TelperionAI/Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ | 27.8B | No disponible | INT4 AWQ/GPTQ | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B (referencia de la familia) | 30B (3B activos) | 128K | Varias | Apache 2.0 | Hugging Face |
 
 La diferencia principal con las alternativas es la preservacion de la cabeza MTP en bf16, que permite decodificacion especulativa en vLLM sin pasos adicionales. La version de TelperionAI no incluye MTP y usa un esquema de cuantizacion diferente.
 
@@ -81,7 +81,7 @@ La diferencia principal con las alternativas es la preservacion de la cabeza MTP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeallat/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP
+- Modelo en Hugging Face: https://huggingface.co/zeallat/Huihui-Qwen3.8-27B-abliterated-AWQ-MTP
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Version alternativa INT4 AWQ/GPTQ: https://huggingface.co/TelperionAI/Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ
 - Anuncio de huihui.ai en X: https://x.com/support_huihui/status/2091592857002127819

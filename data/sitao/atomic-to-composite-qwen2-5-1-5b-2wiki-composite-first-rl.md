@@ -95,7 +95,7 @@ La comparación natural es con las otras tres variantes del mismo estudio, todas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-composite-first-rl
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-composite-first-rl
 - Modelo base (SFT compuesto): https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-sft-composite
 - Variante atomic-first: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-atomic-first-rl
 - Variante SFT atómico: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-1.5b-2wiki-sft-atomic

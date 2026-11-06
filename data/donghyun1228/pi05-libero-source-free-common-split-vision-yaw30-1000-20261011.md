@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-source-free-common-split-vision-yaw30-1000 (este) | no disponible | no disponible | no disponible (retención de éxito no establecida) | no disponible | Público en HuggingFace (0 descargas, 0 likes) |
-| pi05-libero-source-free-common-vision-yaw30-1000 (modelo objetivo) | no disponible | no disponible | no disponible | no disponible | Público en HuggingFace (commit `ba4e597f...`) |
+| pi05-libero-source-free-common-split-vision-yaw30-1000 (este) | no disponible | no disponible | no disponible (retención de éxito no establecida) | no disponible | Público en Hugging Face (0 descargas, 0 likes) |
+| pi05-libero-source-free-common-vision-yaw30-1000 (modelo objetivo) | no disponible | no disponible | no disponible | no disponible | Público en Hugging Face (commit `ba4e597f...`) |
 | Otros modelos de la familia openpi/pi05 (por ejemplo, pi0, pi0.5) | no disponible | no disponible | no disponible | no disponible | no disponible en la información |
 
 No se dispone de datos comparativos verificables en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-split-vision-yaw30-1000-20261011
+- Hugging Face (modelo): https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-split-vision-yaw30-1000-20261011
 - Modelo objetivo (1.000 actualizaciones, commit fijado): https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011/tree/ba4e597f09713a78691a30df5a72b8e42e3eaace
 - Repositorio de código `vla_adaptation` (commit fijado): https://github.com/Donghyun1228/vla_adaptation/tree/0f6471d99dfc81fabe7c3ab65c141d7640b9ff08
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes; los resultados recuperados no guardan relación con el modelo (contenido sobre música y cotización de la plata).

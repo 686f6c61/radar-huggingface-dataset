@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gmma-jepa` es un modelo de generación de texto desarrollado por Danger Labs (publicado bajo el usuario `clevrpwn` en HuggingFace) que combina una base Gemma 4 E2B con un world model JEPA de 8 capas con atención cruzada, confirmación topológica de DAG y un enjambre de 10 adaptadores LoRA segmentados. Con 791 millones de parámetros, el modelo está diseñado para razonamiento avanzado, generación de código y matemáticas, con un enfoque en eficiencia de inferencia mediante cuantización NVFP4 (4 bits) y aceleración por hardware.
+`gmma-jepa` es un modelo de generación de texto desarrollado por Danger Labs (publicado bajo el usuario `clevrpwn` en Hugging Face) que combina una base Gemma 4 E2B con un world model JEPA de 8 capas con atención cruzada, confirmación topológica de DAG y un enjambre de 10 adaptadores LoRA segmentados. Con 791 millones de parámetros, el modelo está diseñado para razonamiento avanzado, generación de código y matemáticas, con un enfoque en eficiencia de inferencia mediante cuantización NVFP4 (4 bits) y aceleración por hardware.
 
 El modelo se presenta como una solución híbrida que sustituye el razonamiento secuencial basado en tokens por un paso de paso de mensajes en un grafo acíclico dirigido (DAG), lo que permite confirmar implicaciones lógicas en menos de 2 ms. Además, incorpora una red de seguridad de compilación multilingüe que proyecta transiciones de estado latente en ocho manifiestos de reglas de compiladores (C++, Rust, CUDA, Triton, Python, Go, TypeScript, Swift). Su relevancia actual radica en su posicionamiento en líderes de benchmarks privados de codificación y matemáticas, así como en su arquitectura innovadora que busca reducir la latencia de inferencia.
 
@@ -48,7 +48,7 @@ Los pesos base están cuantizados en NVFP4, un formato de punto flotante de 4 bi
 
 ## Benchmarks y rendimiento
 
-Los siguientes resultados provienen del model-index declarado por el autor en HuggingFace. No han sido verificados de forma independiente (campo `verified: false`).
+Los siguientes resultados provienen del model-index declarado por el autor en Hugging Face. No han sido verificados de forma independiente (campo `verified: false`).
 
 | Benchmark | Dataset | Métrica | Valor |
 |---|---|---|---|
@@ -78,7 +78,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 - Los benchmarks declarados no están verificados de forma independiente (campo `verified: false` en el model-index). Los resultados deben tomarse con cautela hasta que sean replicados por terceros.
 - No se especifica la longitud de contexto, lo que limita la planificación de despliegues para tareas que requieran ventanas largas.
 - Los idiomas soportados no están documentados; aunque existe un adaptador multilingüe, no se garantiza cobertura para todos los idiomas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es un lanzamiento reciente o poco adoptado. La documentación es escasa y no hay papers ni repositorios de código adicionales.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es un lanzamiento reciente o poco adoptado. La documentación es escasa y no hay papers ni repositorios de código adicionales.
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar contenido falso o inconsistente, especialmente en dominios no cubiertos por sus adaptadores.
 - Sesgos: no se han publicado evaluaciones de sesgo o toxicidad. El entrenamiento con datos no documentados puede introducir sesgos no conocidos.
 - Licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos de la licencia de los modelos base (Gemma 4) si se redistribuye el modelo.
@@ -86,7 +86,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clevrpwn/gmma-jepa
+- Modelo en Hugging Face: https://huggingface.co/clevrpwn/gmma-jepa
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Página general de Gemma: https://deepmind.google/models/gemma/
 - Otro modelo del mismo autor: https://huggingface.co/clevrpwn/gemma-3-270m-codealpaca-finetune

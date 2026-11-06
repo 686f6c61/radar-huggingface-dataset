@@ -6,7 +6,7 @@ Sapiens2 es una familia de transformers de visión de alta resolución desarroll
 
 La familia cubre un rango de tamaños que va de 0,114 B a 5,071 B de parámetros, con seis backbones preentrenados (0.1B, 0.4B, 0.8B, 1B, 1B-4K y 5B) y checkpoints específicos por tarea derivados de varios de esos backbones. Esta escalera de tamaños permite desplegar desde variantes ligeras para tiempo real en GPU de consumo hasta la variante de 5B para máxima calidad en servidores. La existencia de una variante 1B (4K) apunta a un backbone adaptado a resolución muy alta, un factor crítico en tareas humanas donde detalles como manos, pelo o ropa se pierden a baja resolución.
 
-El repositorio `ml-resources/sapiens2` es un espejo no oficial del repositorio `facebook/sapiens2`, que actúa como índice: cada variante y cada checkpoint de tarea vive en su propio repositorio de HuggingFace. La relevancia actual del modelo radica en que unifica bajo una misma arquitectura y un mismo preentrenamiento cinco tareas humanas que tradicionalmente requerían modelos especializados distintos, lo que simplifica pipelines de captura de movimiento, avatares digitales, realidad aumentada y análisis deportivo.
+El repositorio `ml-resources/sapiens2` es un espejo no oficial del repositorio `facebook/sapiens2`, que actúa como índice: cada variante y cada checkpoint de tarea vive en su propio repositorio de Hugging Face. La relevancia actual del modelo radica en que unifica bajo una misma arquitectura y un mismo preentrenamiento cinco tareas humanas que tradicionalmente requerían modelos especializados distintos, lo que simplifica pipelines de captura de movimiento, avatares digitales, realidad aumentada y análisis deportivo.
 
 ## Especificaciones tecnicas
 
@@ -75,10 +75,10 @@ La informacion disponible solo permite comparar con rigor dentro de la propia fa
 
 | Modelo | Parametros | Tareas | Resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sapiens2-0.4B | 0,398 B | Pose, segmentacion, normales, pointmaps | no disponible (menor que 1B-4K) | Sapiens2 License | HuggingFace (facebook) |
-| Sapiens2-1B | 1,462 B | Pose, segmentacion, normales, pointmaps, matting | no disponible | Sapiens2 License | HuggingFace (facebook) |
-| Sapiens2-1B (4K) | 1,607 B | Backbone preentrenado | Alta (4K, inferido del nombre) | Sapiens2 License | HuggingFace (facebook) |
-| Sapiens2-5B | 5,071 B | Pose, segmentacion, normales, pointmaps | no disponible | Sapiens2 License | HuggingFace (facebook) |
+| Sapiens2-0.4B | 0,398 B | Pose, segmentacion, normales, pointmaps | no disponible (menor que 1B-4K) | Sapiens2 License | Hugging Face (facebook) |
+| Sapiens2-1B | 1,462 B | Pose, segmentacion, normales, pointmaps, matting | no disponible | Sapiens2 License | Hugging Face (facebook) |
+| Sapiens2-1B (4K) | 1,607 B | Backbone preentrenado | Alta (4K, inferido del nombre) | Sapiens2 License | Hugging Face (facebook) |
+| Sapiens2-5B | 5,071 B | Pose, segmentacion, normales, pointmaps | no disponible | Sapiens2 License | Hugging Face (facebook) |
 | Alternativas externas (por ejemplo, backbones ViT de vision o estimadores de pose especializados) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,13 +95,13 @@ La informacion disponible solo permite comparar con rigor dentro de la propia fa
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/sapiens2
-- Repositorio oficial en HuggingFace: https://huggingface.co/facebook/sapiens2
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/sapiens2
+- Repositorio oficial en Hugging Face: https://huggingface.co/facebook/sapiens2
 - Articulo (arXiv): https://arxiv.org/pdf/2604.21681
 - Pagina del proyecto: https://rawalkhirodkar.github.io/sapiens2
 - Codigo oficial en GitHub: https://github.com/facebookresearch/sapiens2
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
-- Coleccion Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Coleccion Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Backbones preentrenados: https://huggingface.co/facebook/sapiens2-pretrain-0.1b , https://huggingface.co/facebook/sapiens2-pretrain-0.4b , https://huggingface.co/facebook/sapiens2-pretrain-0.8b , https://huggingface.co/facebook/sapiens2-pretrain-1b , https://huggingface.co/facebook/sapiens2-pretrain-1b-4k , https://huggingface.co/facebook/sapiens2-pretrain-5b
 - Checkpoints de pose: https://huggingface.co/facebook/sapiens2-pose-0.4b , https://huggingface.co/facebook/sapiens2-pose-0.8b , https://huggingface.co/facebook/sapiens2-pose-1b , https://huggingface.co/facebook/sapiens2-pose-5b
 - Checkpoints de segmentacion: https://huggingface.co/facebook/sapiens2-seg-0.4b , https://huggingface.co/facebook/sapiens2-seg-0.8b , https://huggingface.co/facebook/sapiens2-seg-1b , https://huggingface.co/facebook/sapiens2-seg-5b

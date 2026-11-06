@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae-retrieval es un prototipo de investigación publicado por el usuario vvermaatharv en HuggingFace, orientado a tareas de recuperación (retrieval) mediante una arquitectura denominada "Mae". Se trata de un repositorio experimental y no de un modelo entrenado: el autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con resultados de referencia publicados.
+Mae-retrieval es un prototipo de investigación publicado por el usuario vvermaatharv en Hugging Face, orientado a tareas de recuperación (retrieval) mediante una arquitectura denominada "Mae". Se trata de un repositorio experimental y no de un modelo entrenado: el autor indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests), no un modelo con resultados de referencia publicados.
 
 El modelo es extremadamente pequeño: 49.600 parámetros totales según los pesos en safetensors, lo que lo sitúa muy por debajo de cualquier transformer de producción y lo confina al ámbito de la experimentación educativa o de validación de código. La escala declarada es "base", con atención de ventana deslizante, fusión con puertas (gated fusion), activación ReLU y normalización GroupNorm.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvermaatharv/mae-retrieval
+- Modelo en Hugging Face: https://huggingface.co/vvermaatharv/mae-retrieval
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

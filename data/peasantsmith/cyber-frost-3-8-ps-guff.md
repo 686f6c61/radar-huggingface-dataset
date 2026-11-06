@@ -117,7 +117,7 @@ La comparacion directa solo es posible con la referencia IQ3_S, que sirvio de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peasantsmith/CYBER-FROST-3.8-PS-GUFF
+- Modelo en Hugging Face: https://huggingface.co/peasantsmith/CYBER-FROST-3.8-PS-GUFF
 - Modelo base (BF16): Blackfrost-AI/CYBER-FROST-3.8-BF16
 - Modelo upstream: Qwen/Qwen3.8-Flash-Next
 - Licencia del upstream: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE

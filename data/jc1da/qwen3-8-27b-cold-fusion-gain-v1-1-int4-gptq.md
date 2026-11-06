@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-INT4-GPTQ es una cuantizacion a 4 bits (W4A16, GPTQ) del fine-tune Cold Fusion de Qwen3.8-27B, desarrollado por el usuario de HuggingFace JC1DA a partir del trabajo de DavidAU. El modelo base es el Qwen3.8-27B de Alibaba, un LLM multimodal denso de 27.000 millones de parametros con arquitectura hibrida (48 capas Gated-DeltaNet y 16 capas full-attention) y una ventana de contexto nativa de 262.144 tokens. La cuantizacion reduce el peso de 54.7 GB en BF16 a 19.6 GB, lo que permite ejecutar el modelo en una unica GPU con amplio margen para la cache KV.
+Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-INT4-GPTQ es una cuantizacion a 4 bits (W4A16, GPTQ) del fine-tune Cold Fusion de Qwen3.8-27B, desarrollado por el usuario de Hugging Face JC1DA a partir del trabajo de DavidAU. El modelo base es el Qwen3.8-27B de Alibaba, un LLM multimodal denso de 27.000 millones de parametros con arquitectura hibrida (48 capas Gated-DeltaNet y 16 capas full-attention) y una ventana de contexto nativa de 262.144 tokens. La cuantizacion reduce el peso de 54.7 GB en BF16 a 19.6 GB, lo que permite ejecutar el modelo en una unica GPU con amplio margen para la cache KV.
 
 El modelo destaca por el metodo de entrenamiento "Cold Fusion" (GAIN + Unsloth), que segun su autor reduce los tokens de razonamiento a entre 1/10 y 1/2 respecto al Qwen3.8-27B original, manteniendo o mejorando la calidad de las respuestas. Esta version cuantizada en INT4 GPTQ es practicamente lossless respecto al original BF16, con diferencias de menos de 0.5 puntos porcentuales en benchmarks clave. Incluye soporte para decodificacion especulativa MTP (Multi-Token Prediction) en vLLM, lo que acelera la inferencia entre 1.5 y 2 veces.
 

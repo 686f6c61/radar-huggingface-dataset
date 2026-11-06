@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas directamente
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/wayfinder-glimmer-30b-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/wayfinder-glimmer-30b-i1-GGUF
 - Repositorio de cuantizaciones estáticas: https://huggingface.co/mradermacher/wayfinder-glimmer-30b-GGUF
 - Modelo base: https://huggingface.co/hweller1/wayfinder-glimmer-30b
 - Licencia Muse Model: https://huggingface.co/hweller1/wayfinder-glimmer-30b/blob/main/LICENSE-MUSE-SPARK-OPEN.md

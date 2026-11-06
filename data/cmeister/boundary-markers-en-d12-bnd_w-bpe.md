@@ -99,7 +99,7 @@ Nota: los datos de Pythia-160M y GPT-2 small proceden de conocimiento general, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_w-bpe
+- Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_w-bpe
 - Artículo: https://arxiv.org/abs/2608.08847 (Explicit Boundary Markers for Subword Vocabularies, Sander Land y Clara Meister)
 - Repositorio con el tokenizador y los scripts del artículo: https://github.com/sanderland/script_tok
 - Framework de entrenamiento: https://github.com/karpathy/nanochat (commit `92d63d4`)

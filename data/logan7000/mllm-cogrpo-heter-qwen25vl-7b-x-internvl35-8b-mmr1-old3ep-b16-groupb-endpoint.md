@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tune del modelo multimodal InternVL3.5-8B, desarrollado por el usuario logan7000, que ha sido entrenado mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo introducida en DeepSeekMath. El nombre del repositorio sugiere una combinación heterogénea de arquitecturas (Qwen2.5-VL-7B e InternVL3.5-8B), aunque la model card indica que el modelo base es exclusivamente OpenGVLab/InternVL3_5-8B-HF. Se trata de un modelo de imagen-texto a texto, es decir, capaz de procesar entradas visuales y textuales para generar respuestas de texto.
 
-La relevancia de este modelo radica en que aplica GRPO a un modelo multimodal de 8B parámetros, un enfoque poco común en la literatura, y puede servir como punto de partida para investigaciones sobre razonamiento visual reforzado. Sin embargo, la documentación es escasa: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamaño de 17.1 GB y está alojado en HuggingFace con formato safetensors.
+La relevancia de este modelo radica en que aplica GRPO a un modelo multimodal de 8B parámetros, un enfoque poco común en la literatura, y puede servir como punto de partida para investigaciones sobre razonamiento visual reforzado. Sin embargo, la documentación es escasa: no se especifican la licencia, los idiomas soportados, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamaño de 17.1 GB y está alojado en Hugging Face con formato safetensors.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InternVL3.5-8B (base) | 8B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-7B | 7B | 128K (aprox.) | Apache 2.0 | HuggingFace |
-| LLaVA-NeXT-8B | 8B | 32K (aprox.) | Apache 2.0 | HuggingFace |
+| InternVL3.5-8B (base) | 8B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-7B | 7B | 128K (aprox.) | Apache 2.0 | Hugging Face |
+| LLaVA-NeXT-8B | 8B | 32K (aprox.) | Apache 2.0 | Hugging Face |
 
 Este modelo se diferencia de sus alternativas por el entrenamiento con GRPO, que no está presente en los modelos base. Sin embargo, al carecer de benchmarks publicados, no es posible comparar el rendimiento real. La licencia no disponible limita su uso comercial, mientras que Qwen2.5-VL y LLaVA-NeXT tienen licencias más permisivas.
 
@@ -75,7 +75,7 @@ Este modelo se diferencia de sus alternativas por el entrenamiento con GRPO, que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint
 - Repositorio similar (grupo A): https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint
 - Despliegue en FriendliAI: https://friendli.ai/models/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

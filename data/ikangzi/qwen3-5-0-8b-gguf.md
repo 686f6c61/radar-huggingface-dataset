@@ -88,7 +88,7 @@ Qwen3.5-0.8B es significativamente más pequeño que sus alternativas, lo que lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ikangzi/Qwen3.5-0.8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ikangzi/Qwen3.5-0.8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Guía de Unsloth para Qwen3.5: https://unsloth.ai/docs/models/qwen3.5

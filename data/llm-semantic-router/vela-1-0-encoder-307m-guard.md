@@ -80,8 +80,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible 
 
 | Modelo | Parametros | Contexto | Macro F1 (dev, 1.319 entradas) | Accuracy (dev) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Guard | 307,5 M | 32.768 tokens | 86,61 | 86,66 | Apache 2.0 | HuggingFace, safetensors |
-| mmBERT32K jailbreak detector (merged) | no disponible | no disponible | 76,63 | 76,65 | no disponible | HuggingFace |
+| Vela-1.0-Encoder-307M-Guard | 307,5 M | 32.768 tokens | 86,61 | 86,66 | Apache 2.0 | Hugging Face, safetensors |
+| mmBERT32K jailbreak detector (merged) | no disponible | no disponible | 76,63 | 76,65 | no disponible | Hugging Face |
 | Otros clasificadores de prompt injection | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa solo es posible con el detector original de mmBERT32K, sobre el que el autor reporta una mejora de unos 10 puntos en Macro F1 y accuracy en su conjunto de desarrollo. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
@@ -100,7 +100,7 @@ La comparacion directa solo es posible con el detector original de mmBERT32K, so
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Guard
+- Hugging Face del modelo: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Guard
 - Modelo base: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Coleccion Vela 1.0 Router Models: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Detector original mmBERT32K jailbreak: https://huggingface.co/llm-semantic-router/mmbert32k-jailbreak-detector-merged

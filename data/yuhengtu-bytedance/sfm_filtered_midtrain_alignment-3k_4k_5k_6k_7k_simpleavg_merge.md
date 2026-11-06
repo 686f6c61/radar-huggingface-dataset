@@ -6,13 +6,13 @@ Este modelo es una fusión (merge) de cinco checkpoints intermedios de un mismo 
 
 La relevancia de este modelo reside en su metodología: en lugar de publicar un checkpoint individual, se explora la fusión de varios puntos intermedios del entrenamiento para obtener un modelo promediado. Esta técnica, descrita en el paper de fusión lineal de modelos (arxiv:2203.05482), puede mejorar la robustez y la generalización frente a un único checkpoint. Sin embargo, la información pública es muy limitada: no se especifican la arquitectura exacta, el contexto, la licencia ni los datos de entrenamiento, lo que dificulta una evaluación completa.
 
-El repositorio tiene cero descargas y cero likes, lo que sugiere que es un experimento reciente o interno. La etiqueta `gpt_neox` en los tags de HuggingFace apunta a una arquitectura basada en GPT-NeoX, pero no se confirma en la model card. En resumen, es un modelo de fusión experimental del que se dispone de poca documentación pública.
+El repositorio tiene cero descargas y cero likes, lo que sugiere que es un experimento reciente o interno. La etiqueta `gpt_neox` en los tags de Hugging Face apunta a una arquitectura basada en GPT-NeoX, pero no se confirma en la model card. En resumen, es un modelo de fusión experimental del que se dispone de poca documentación pública.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_neox (segun tags de HuggingFace, no confirmado en la model card) |
+| Arquitectura | gpt_neox (segun tags de Hugging Face, no confirmado en la model card) |
 | Parametros totales | 6.856.253.440 (6,86 B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ El repositorio tiene cero descargas y cero likes, lo que sugiere que es un exper
 
 ## Arquitectura y entrenamiento
 
-La arquitectura concreta no se detalla en la model card. Los tags de HuggingFace indican `gpt_neox`, lo que sugiere una arquitectura transformer basada en GPT-NeoX, pero no se puede confirmar sin acceso a los archivos de configuración del modelo. El modelo se ha creado mediante el método de fusión lineal implementado en mergekit, que promedia los pesos de varios checkpoints con pesos iguales (1.0) y normalización activada. El checkpoint base es `global_step7000` de la serie `filtered_midtrain_alignment`.
+La arquitectura concreta no se detalla en la model card. Los tags de Hugging Face indican `gpt_neox`, lo que sugiere una arquitectura transformer basada en GPT-NeoX, pero no se puede confirmar sin acceso a los archivos de configuración del modelo. El modelo se ha creado mediante el método de fusión lineal implementado en mergekit, que promedia los pesos de varios checkpoints con pesos iguales (1.0) y normalización activada. El checkpoint base es `global_step7000` de la serie `filtered_midtrain_alignment`.
 
 Los cinco checkpoints fusionados corresponden a diferentes pasos del mismo entrenamiento (pasos 3000, 4000, 5000, 6000 y 7000). El nombre del modelo sugiere que el entrenamiento incluye una fase de alineación intermedia (`midtrain_alignment`) y un filtrado de datos (`filtered`), pero no se proporcionan detalles sobre el dataset, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. La fusión se realizó en float32 y se exportó a bfloat16.
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para una comparativa fiable. El modelo n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_6k_7k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-3k_4k_5k_6k_7k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper sobre fusion lineal de modelos: https://arxiv.org/abs/2203.05482
 - Modelo relacionado (merge 5k-6k-7k): https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge

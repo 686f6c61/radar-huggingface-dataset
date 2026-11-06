@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ayushman7577/pantpro` es un modelo de lenguaje publicado en HuggingFace por el usuario `ayushman7577` bajo licencia Apache 2.0. Según los metadatos del repositorio, el modelo tiene **145.703.424 parámetros** y se distribuye en formato **GGUF**, lo que indica que está pensado para ejecutarse en entornos como `llama.cpp` u `Ollama`, típicos para inferencia local o en CPU. Sin embargo, la model card no contiene ninguna descripción funcional, arquitectónica ni de entrenamiento más allá de la licencia. No se dispone de información sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni las capacidades del modelo, lo que impide una evaluación técnica completa. A fecha de la consulta, el repositorio no registra descargas ni likes, y los resultados de la búsqueda web no aportan documentación adicional sobre el modelo.
+El modelo `ayushman7577/pantpro` es un modelo de lenguaje publicado en Hugging Face por el usuario `ayushman7577` bajo licencia Apache 2.0. Según los metadatos del repositorio, el modelo tiene **145.703.424 parámetros** y se distribuye en formato **GGUF**, lo que indica que está pensado para ejecutarse en entornos como `llama.cpp` u `Ollama`, típicos para inferencia local o en CPU. Sin embargo, la model card no contiene ninguna descripción funcional, arquitectónica ni de entrenamiento más allá de la licencia. No se dispone de información sobre la arquitectura interna, la longitud de contexto, los idiomas soportados ni las capacidades del modelo, lo que impide una evaluación técnica completa. A fecha de la consulta, el repositorio no registra descargas ni likes, y los resultados de la búsqueda web no aportan documentación adicional sobre el modelo.
 
 ## Especificaciones técnicas
 
@@ -64,6 +64,6 @@ No disponible. Sin información sobre la arquitectura, el dominio de entrenamien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayushman7577/pantpro
+- Hugging Face: https://huggingface.co/ayushman7577/pantpro
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada.

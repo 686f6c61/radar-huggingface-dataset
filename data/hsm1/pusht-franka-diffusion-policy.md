@@ -4,7 +4,7 @@
 
 `HSM1/pusht-franka-diffusion-policy` es una política de robótica entrenada por imitación para la tarea Push-T: un brazo Franka Panda sostiene un palo y debe empujar un bloque en forma de T hasta una posición objetivo fija, todo ello dentro del simulador MuJoCo. El modelo no es un modelo de lenguaje ni un modelo generativo de propósito general, sino una política visomotora que consume dos imágenes de cámara (vista cenital y vista de muñeca, ambas de 96×96 píxeles) junto con el estado del robot, y produce como salida la posición `[x, y]` de la punta del palo sobre la mesa, expresada en metros y a una frecuencia de control de 10 Hz.
 
-Técnicamente se trata de una Diffusion Policy implementada con la librería LeRobot de HuggingFace, concretamente la configuración `dp_image` y el checkpoint `050000`. La política emplea un proceso de difusión DDPM para modelar la distribución de acciones condicionada a las observaciones, un enfoque habitual en el aprendizaje por imitación moderno porque captura multimodalidad en las demostraciones (varias trayectorias válidas para una misma observación). El modelo tiene 89.102.566 parámetros (unos 89,1 millones), un tamaño muy reducido en comparación con modelos fundacionales, y el repositorio ocupa 0,4 GB.
+Técnicamente se trata de una Diffusion Policy implementada con la librería LeRobot de Hugging Face, concretamente la configuración `dp_image` y el checkpoint `050000`. La política emplea un proceso de difusión DDPM para modelar la distribución de acciones condicionada a las observaciones, un enfoque habitual en el aprendizaje por imitación moderno porque captura multimodalidad en las demostraciones (varias trayectorias válidas para una misma observación). El modelo tiene 89.102.566 parámetros (unos 89,1 millones), un tamaño muy reducido en comparación con modelos fundacionales, y el repositorio ocupa 0,4 GB.
 
 Su relevancia es acotada pero clara: sirve como referencia reproducible de un *baseline* de difusión para Push-T en simulación, con datos de entrenamiento y condiciones físicas documentadas (`pusht_meta.json` guarda fps, definiciones de cámara, resolución de imagen y el XML de física). Con 0 descargas y 0 likes en el momento de la consulta, y sin licencia declarada, se trata de un artefacto de investigación más que de un componente listo para producción.
 
@@ -82,7 +82,7 @@ La información proporcionada no incluye ninguna comparación con otras polític
 
 | Modelo | Parametros | Tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `HSM1/pusht-franka-diffusion-policy` (este) | 89,1 M | Push-T con Franka Panda y palo, en MuJoCo | 82 % de éxito en 50 episodios (sampler DDPM) | no disponible | HuggingFace, 0 descargas |
+| `HSM1/pusht-franka-diffusion-policy` (este) | 89,1 M | Push-T con Franka Panda y palo, en MuJoCo | 82 % de éxito en 50 episodios (sampler DDPM) | no disponible | Hugging Face, 0 descargas |
 | Otras políticas de difusión para Push-T | no disponible | Push-T | no disponible | no disponible | no disponible |
 | Políticas de imitación alternativas (por ejemplo, basadas en transformer o en predicción de acciones discretas) | no disponible | manipulación | no disponible | no disponible | no disponible |
 
@@ -103,8 +103,8 @@ El repositorio no aporta cifras comparativas con otras arquitecturas, y no se ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HSM1/pusht-franka-diffusion-policy
+- Modelo en Hugging Face: https://huggingface.co/HSM1/pusht-franka-diffusion-policy
 - Metadatos de la simulación de entrenamiento: archivo `pusht_meta.json`, incluido en el repositorio del modelo (fps, definiciones de cámara, resolución de imagen y XML de física)
 - Scripts de descarga y demostración mencionados en la model card: `scripts/09_download_model.py` y `demo/sim_demo.py`, en el repositorio GitHub del proyecto del autor; la URL exacta no está incluida en la información disponible
-- Librería utilizada: LeRobot (HuggingFace), referenciada como `library_name: lerobot`; no se proporciona enlace en la model card
+- Librería utilizada: LeRobot (Hugging Face), referenciada como `library_name: lerobot`; no se proporciona enlace en la model card
 - Referencia externa de la arquitectura (no incluida en la model card): artículo de Diffusion Policy, Chi et al., arXiv:2303.04137

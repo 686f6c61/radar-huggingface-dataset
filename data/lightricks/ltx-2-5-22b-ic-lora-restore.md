@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LTX-2.5-22b-IC-LoRA-Restore es un adaptador IC-LoRA (In-Context LoRA) publicado por Lightricks sobre el modelo base Lightricks/LTX-2.3, orientado a tareas de video-to-video de restauracion y colorizacion de material de archivo. Se distribuye a traves de HuggingFace con acceso restringido (gated) y licencia ltx-2.x-community-license, y esta etiquetado con casos de uso explicitos como video-restoration, colorization, archive-footage y vfx.
+LTX-2.5-22b-IC-LoRA-Restore es un adaptador IC-LoRA (In-Context LoRA) publicado por Lightricks sobre el modelo base Lightricks/LTX-2.3, orientado a tareas de video-to-video de restauracion y colorizacion de material de archivo. Se distribuye a traves de Hugging Face con acceso restringido (gated) y licencia ltx-2.x-community-license, y esta etiquetado con casos de uso explicitos como video-restoration, colorization, archive-footage y vfx.
 
 El identificador incluye la cifra "22b", que segun la nomenclatura del repositorio haria referencia al modelo base de aproximadamente 22 000 millones de parametros; el repositorio del adaptador ocupa 1,7 GB. No se detallan en la informacion disponible ni la arquitectura interna del modelo base, ni la longitud de contexto, ni los esquemas de cuantizacion soportados.
 
@@ -21,7 +21,7 @@ Su relevancia actual radica en la combinacion de dos factores: por un lado, la f
 | Licencia | ltx-2.x-community-license (etiquetada como license:other) |
 | Formato de pesos | No disponible (tamano del repositorio: 1,7 GB) |
 
-Datos adicionales del repositorio: pipeline declarado video-to-video, libreria ltx, 251 descargas, 15 likes, creado el 27 de septiembre de 2026 y actualizado el 29 de septiembre de 2026. El acceso es restringido y requiere aceptar las condiciones en HuggingFace.
+Datos adicionales del repositorio: pipeline declarado video-to-video, libreria ltx, 251 descargas, 15 likes, creado el 27 de septiembre de 2026 y actualizado el 29 de septiembre de 2026. El acceso es restringido y requiere aceptar las condiciones en Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear pipelines automatizados.
 - Licencia: se distribuye bajo ltx-2.x-community-license (etiquetada como license:other). Es imprescindible revisar los terminos completos antes de cualquier uso comercial, ya que el texto de la licencia no se incluye en la informacion disponible.
 - Idioma: el unico idioma declarado es el ingles. Cualquier prompt textual en castellano u otros idiomas puede degradar el resultado o no estar soportado.
 - Dependencia del modelo base: es un adaptador, no un modelo autonomo. Sin Lightricks/LTX-2.3 no es funcional, lo que anade requisitos de VRAM y de gestion de dependencias.
@@ -82,6 +82,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables con d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Restore
+- Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Restore
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados obtenidos corresponden a proyectos no relacionados, como karthink/gptel-agent, karthink/gptel, gptel.org y deepwiki.com/karthink/gptel-agent).

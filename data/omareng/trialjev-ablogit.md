@@ -75,8 +75,8 @@ Evaluación sobre 6.975 pares elegible-o-excluido de 50 pacientes no vistos de T
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TrialJev-ABLogit (este) | Adaptador LoRA sobre 0.8B-27B | 4.096 tokens de entrada | Clasificación A/B por logits, una pasada | Apache-2.0 | HuggingFace (adaptador) |
-| TrialJev (variante principal) | Adaptador LoRA sobre 0.8B-27B | 4.096 tokens de entrada | Veredicto escrito, lectura del primer token | Apache-2.0 | HuggingFace y repositorio de código |
+| TrialJev-ABLogit (este) | Adaptador LoRA sobre 0.8B-27B | 4.096 tokens de entrada | Clasificación A/B por logits, una pasada | Apache-2.0 | Hugging Face (adaptador) |
+| TrialJev (variante principal) | Adaptador LoRA sobre 0.8B-27B | 4.096 tokens de entrada | Veredicto escrito, lectura del primer token | Apache-2.0 | Hugging Face y repositorio de código |
 | MedJev / kev (referencias de diseño) | No disponible | No disponible | Diseño adoptado por TrialJev | Apache-2.0 | No disponible |
 
 No se dispone de datos de benchmarks de MedJev ni de kev en la información proporcionada para una comparación numérica.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de MedJev ni de kev en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omareng/TrialJev-ABLogit
+- Hugging Face: https://huggingface.co/omareng/TrialJev-ABLogit
 - Repositorio de código: https://github.com/oibrahi1/TrialJev
 - Documentación de resultados: `docs/RESULTS.md` en el repositorio de código
 - Backbone Qwen3.5-0.8B-Base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base

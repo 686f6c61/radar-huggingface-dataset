@@ -4,7 +4,7 @@
 
 Este repositorio no contiene un modelo unico, sino tres checkpoints de investigacion derivados de Qwen2.5-VL-7B-Instruct mediante aprendizaje por refuerzo: A1 (GRPO con recompensa de precision binaria), A3 (VPPO, con asignacion de credito basada en dependencia visual) y A4 (PRPO + RVD). Todos comparten una receta controlada: dataset ViRL39K (version deduplicada de Geo3K), 162 pasos de entrenamiento, batch global 128, 384 rollouts con n=8, learning rate 1e-6, recorte DAPO 0,2/0,28, perdida a nivel de token, respuesta maxima de 2048 tokens y torre de vision descongelada. El objetivo declarado es el estudio comparativo de algoritmos de RL en modelos vision-lenguaje, no la publicacion de un modelo listo para produccion.
 
-El modelo base es Qwen2.5-VL-7B-Instruct, un transformer multimodal decoder-only con torre de vision, publicado por Alibaba Qwen bajo licencia Apache-2.0. Al descongelar la torre de vision, los checkpoints resultantes modifican tanto el decodificador de lenguaje como el codificador visual, por lo que difieren del base en mas lugares que un ajuste fino convencional con el backbone visual congelado. Los tres brazos se publican como checkpoints fusionados en formato HuggingFace dentro de un unico repositorio, en subcarpetas separadas.
+El modelo base es Qwen2.5-VL-7B-Instruct, un transformer multimodal decoder-only con torre de vision, publicado por Alibaba Qwen bajo licencia Apache-2.0. Al descongelar la torre de vision, los checkpoints resultantes modifican tanto el decodificador de lenguaje como el codificador visual, por lo que difieren del base en mas lugares que un ajuste fino convencional con el backbone visual congelado. Los tres brazos se publican como checkpoints fusionados en formato Hugging Face dentro de un unico repositorio, en subcarpetas separadas.
 
 La relevancia actual es metodologica: permiten reproducir y auditar comparaciones entre GRPO, VPPO y PRPO+RVD bajo un entorno de entrenamiento identico, algo poco frecuente porque la mayoria de publicaciones liberan solo el mejor resultado. Como contrapartida, el repositorio no incluye resultados de benchmarks, no declara idiomas soportados, no registra descargas ni interacciones y no aporta evaluacion de seguridad, por lo que debe tratarse como artefacto de laboratorio.
 
@@ -19,7 +19,7 @@ La relevancia actual es metodologica: permiten reproducir y auditar comparacione
 | Tipos de cuantizacion | No especificados por el autor. Al publicarse pesos safetensors estandar, admiten cuantizacion posterior (INT8, INT4, GPTQ, AWQ, GGUF), no verificada en este repositorio |
 | Idiomas soportados | No disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (checkpoints fusionados en formato HuggingFace) |
+| Formato de pesos | safetensors (checkpoints fusionados en formato Hugging Face) |
 | Checkpoint publicado | global_step_162 (2 epocas, semilla 1, torre de vision descongelada) |
 | Brazos incluidos | A1-7B-uvit (GRPO), A3-7B-uvit (VPPO), A4-7B-uvit (PRPO + RVD) |
 | Dataset de RL | ViRL39K (Geo3K deduplicado) |
@@ -100,7 +100,7 @@ Alternativas de la misma categoria (VLM de aproximadamente 7-8 mil millones de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ahsanz/virl39k-qwen25vl-7b-arms
-- Modelo base (A0) en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Ahsanz/virl39k-qwen25vl-7b-arms
+- Modelo base (A0) en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 
 Nota: la busqueda web asociada a este modelo no devolvio enlaces relevantes; los resultados obtenidos correspondian a paginas no relacionadas con el modelo, por lo que no se incluyen. No se han encontrado en la informacion proporcionada enlaces a papers, blogs tecnicos, repositorios de codigo ni demos.

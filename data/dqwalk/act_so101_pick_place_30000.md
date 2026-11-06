@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQwalk/act_so101_pick_place_30000 es una politica de robotica entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers) y publicada en HuggingFace Hub a traves de la libreria LeRobot. No es un modelo de lenguaje ni un modelo multimodal de proposito general: es un controlador visuomotor que, a partir del estado articular de un brazo robotico SO-101 y de una imagen cenital de 480x640, emite comandos de accion de 6 dimensiones para ejecutar una unica tarea: coger un bloque azul y depositarlo en un cuadrado verde.
+DQwalk/act_so101_pick_place_30000 es una politica de robotica entrenada mediante aprendizaje por imitacion con el metodo ACT (Action Chunking with Transformers) y publicada en Hugging Face Hub a traves de la libreria LeRobot. No es un modelo de lenguaje ni un modelo multimodal de proposito general: es un controlador visuomotor que, a partir del estado articular de un brazo robotico SO-101 y de una imagen cenital de 480x640, emite comandos de accion de 6 dimensiones para ejecutar una unica tarea: coger un bloque azul y depositarlo en un cuadrado verde.
 
 El modelo tiene 51.668.614 parametros (unos 51,7 M) y ocupa 0,2 GB en el repositorio. Se entreno durante 30.000 pasos sobre un dataset propio de 50 episodios y 24.776 fotogramas grabados a 30 FPS mediante teleoperacion. Está pensado para desplegarse sobre el brazo de bajo coste SO-101 (tipo de robot `so_follower`) con una sola camara cenital, por lo que su interes es practico y acotado: reproducir una politica de pick-and-place en hardware accesible.
 
@@ -100,7 +100,7 @@ Los tres modelos comparables aparecen en los resultados de busqueda como politic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DQwalk/act_so101_pick_place_30000
+- Modelo en Hugging Face: https://huggingface.co/DQwalk/act_so101_pick_place_30000
 - Dataset de entrenamiento: https://huggingface.co/datasets/DQwalk/so101_pick_place_20261007_154943
 - Paper del metodo ACT: https://huggingface.co/papers/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

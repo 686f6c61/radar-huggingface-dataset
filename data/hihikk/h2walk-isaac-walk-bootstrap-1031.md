@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| H2walk-isaac-walk-bootstrap-1031 | Checkpoints RL (PPO/IsaacLab) | no disponible | no aplica | no disponible | HuggingFace |
+| H2walk-isaac-walk-bootstrap-1031 | Checkpoints RL (PPO/IsaacLab) | no disponible | no aplica | no disponible | Hugging Face |
 | Políticas IsaacLab oficiales (ej. Ant, Humanoid) | Checkpoints RL | no disponible | no aplica | según repositorio IsaacLab | GitHub NVIDIA |
 | RSL-RL ejemplos de referencia | Checkpoints RL | no disponible | no aplica | según repositorio RSL-RL | GitHub |
 
@@ -78,6 +78,6 @@ No se dispone de datos de rendimiento de este repositorio que permitan una compa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hihikk/H2walk-isaac-walk-bootstrap-1031
+- Hugging Face: https://huggingface.co/hihikk/H2walk-isaac-walk-bootstrap-1031
 - IsaacLab (NVIDIA): https://github.com/isaac-sim/IsaacLab
 - RSL-RL: https://github.com/leggedrobotics/rsl_rl

@@ -93,7 +93,7 @@ No se han encontrado cabeceras MTP reentrenadas públicamente para otros modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xkm/qwen3.8-27b-mtp-head-retrained
+- Repositorio Hugging Face: https://huggingface.co/xkm/qwen3.8-27b-mtp-head-retrained
 - Modelo base (EigenLabs): https://huggingface.co/EigenLabs/Qwen3.8-27B-MTP-bf16
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Benchmark mlxfast (Layr-Labs): https://github.com/Layr-Labs/qwen-3.8-mtp-challenge

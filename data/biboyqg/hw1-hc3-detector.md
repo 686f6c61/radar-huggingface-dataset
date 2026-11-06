@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hw1-hc3-detector (BiboyQG) | 22.713.986 | 256 tokens | F1 macro 0,985215 en HC3 test | apache-2.0 | HuggingFace, 0 descargas |
+| hw1-hc3-detector (BiboyQG) | 22.713.986 | 256 tokens | F1 macro 0,985215 en HC3 test | apache-2.0 | Hugging Face, 0 descargas |
 | Embeddings congelados de all-MiniLM-L6-v2 + regresion logistica | 22.713.986 (encoder compartido) | 256 tokens | F1 macro 0,844882 en HC3 test | apache-2.0 | reproduccion descrita en la model card |
 | Otros detectores de texto generado por IA (por ejemplo variantes basadas en RoBERTa o DeBERTa) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -98,7 +98,7 @@ El unico punto de comparacion con datos medidos en el mismo conjunto de test es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiboyQG/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/BiboyQG/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper del corpus HC3 (Guo et al., 2023): https://arxiv.org/abs/2301.07597

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tda-124m-A (este) | 110M | 1024 | Atribucion de datos (par A/B con ground truth) | Apache-2.0 | HuggingFace |
-| tda-124m-B (gemelo) | 110M | 1024 | Control del par experimental | Apache-2.0 | HuggingFace |
+| tda-124m-A (este) | 110M | 1024 | Atribucion de datos (par A/B con ground truth) | Apache-2.0 | Hugging Face |
+| tda-124m-B (gemelo) | 110M | 1024 | Control del par experimental | Apache-2.0 | Hugging Face |
 | Elroy | no disponible en la informacion | no disponible | Modelo base del que se toma tokenizador y mezcla de datos | no disponible en la informacion | no disponible en la informacion |
 | GPT-2-small | 124M | 1024 | Generacion de texto general | MIT (segun OpenAI) | Ampliamente disponible |
 
@@ -86,7 +86,7 @@ La comparacion con GPT-2-small es estructural (misma forma), no funcional: tda-1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/strifero/tda-124m-A
+- Modelo en Hugging Face: https://huggingface.co/strifero/tda-124m-A
 - Modelo gemelo: https://huggingface.co/strifero/tda-124m-B
 - Dataset de ground truth: https://huggingface.co/datasets/strifero/attribution-groundtruth
 - Codigo: https://github.com/strifero/attribution-groundtruth

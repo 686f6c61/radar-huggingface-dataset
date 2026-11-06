@@ -87,7 +87,7 @@ Nota: `all-MiniLM-L6-v2` es un modelo transformer que captura contexto, mientras
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikhailmedical/potion-retrieval-32M-tfjs
+- Modelo en Hugging Face: https://huggingface.co/mikhailmedical/potion-retrieval-32M-tfjs
 - Modelo original: https://huggingface.co/minishlab/potion-retrieval-32M
 - Repositorio de Model2Vec: https://github.com/MinishLab/model2vec
 - Página del modelo en Toolify (referencia): https://www.toolify.ai/ai-model/minishlab-potion-retrieval-32m

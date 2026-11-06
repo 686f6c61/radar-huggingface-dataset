@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de datos sobre otros modelos borr
 
 | Modelo | Parámetros | Contexto | acc_len media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3.1-Pro-DSpark | 2,25B | 1.048.576 posiciones (YaRN) | 3,448 (10 benchmarks) | kimi-k3.1-pro (other) | HuggingFace (LithosAI) |
+| Kimi-K3.1-Pro-DSpark | 2,25B | 1.048.576 posiciones (YaRN) | 3,448 (10 benchmarks) | kimi-k3.1-pro (other) | Hugging Face (LithosAI) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -123,7 +123,7 @@ No se dispone en la información proporcionada de datos sobre otros modelos borr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LithosAI/Kimi-K3.1-Pro-DSpark
+- Modelo en Hugging Face: https://huggingface.co/LithosAI/Kimi-K3.1-Pro-DSpark
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3.1-Pro
 - Licencia: LICENSE (incluido en el repositorio, no se proporciona URL directa en la información disponible)
 - SGLang: no se proporciona URL en la información disponible

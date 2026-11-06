@@ -84,7 +84,7 @@ No disponible. No se han identificado en la información proporcionada adaptador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smalls257/Llama-3.2-1B-symbiont-judge-adapters
+- Hugging Face: https://huggingface.co/smalls257/Llama-3.2-1B-symbiont-judge-adapters
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE
 - Política de uso aceptable de Llama 3.2: https://www.llama.com/llama3_2/use-policy

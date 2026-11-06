@@ -88,7 +88,7 @@ La cuantización ROCmFP4 ofrece una reducción significativa de tamaño (14.72 G
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Qwen3.5-27B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Qwen3.5-27B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diegosp716742/multitask` es una implementacion propia en PyTorch de una arquitectura Efficientformer orientada a tareas multiples (multitask), publicada en HuggingFace por el usuario diegosp716742 bajo licencia MIT. Se distribuye en configuracion "nano" y, segun el propio autor, esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion.
+`diegosp716742/multitask` es una implementacion propia en PyTorch de una arquitectura Efficientformer orientada a tareas multiples (multitask), publicada en Hugging Face por el usuario diegosp716742 bajo licencia MIT. Se distribuye en configuracion "nano" y, segun el propio autor, esta pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano, no como un modelo preentrenado listo para produccion.
 
 El repositorio contiene el codigo de definicion y entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion en safetensors (`model.safetensors`) con 33.088 parametros segun el dato real del fichero de pesos. Es, por tanto, un modelo de escala minuscula cuya finalidad principal es servir como base reproducible de experimentacion.
 
@@ -64,7 +64,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La arquitec
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diegosp716742/multitask | 33.088 | no disponible | sin benchmark publicado | MIT | HuggingFace (13 descargas) |
+| diegosp716742/multitask | 33.088 | no disponible | sin benchmark publicado | MIT | Hugging Face (13 descargas) |
 | Efficientformer original (familia) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otros modelos comparables de escala nano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,5 +81,5 @@ No se dispone de datos comparativos en la informacion proporcionada. La arquitec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diegosp716742/multitask
+- Hugging Face: https://huggingface.co/diegosp716742/multitask
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados devueltos por la busqueda correspondian a un sitio no relacionado y se han descartado.

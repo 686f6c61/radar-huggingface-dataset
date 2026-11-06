@@ -78,7 +78,7 @@ La comparativa se limita a la base Llama 3 8B Instruct y a otros fine-tunes "unc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sleepyjoe123/Misa
+- Repositorio Hugging Face: https://huggingface.co/sleepyjoe123/Misa
 - Unsloth (herramienta de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - Documentación de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Página de Ollama: https://ollama.com/

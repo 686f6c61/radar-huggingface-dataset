@@ -97,6 +97,6 @@ No se dispone de datos comparativos con otros modelos de 3B en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/squ11z1/Mythos-nano
+- Modelo en Hugging Face: https://huggingface.co/squ11z1/Mythos-nano
 - Modelo base: WeiboAI/VibeThinker-3B (https://huggingface.co/WeiboAI/VibeThinker-3B)
 - No se proporcionan papers, blogs, repositorios adicionales ni demos en la informacion disponible.

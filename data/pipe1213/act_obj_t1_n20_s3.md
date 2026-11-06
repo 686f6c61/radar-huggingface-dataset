@@ -73,7 +73,7 @@ Contexto agregado del estudio (3 tareas y todas las semillas): ACT con 20 demost
 
 | Modelo | Parámetros | Enfoque | Contexto / entrada | Tasa de éxito (estudio, 20 demos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ACT obj t1 n20 s3 (este) | 51,7 M | ACT desde cero, 1 tarea | Imagen 256x256 + estado; sin lenguaje | 24,7 % (media de 3 checkpoints) | apache-2.0 | HuggingFace, LeRobot |
+| ACT obj t1 n20 s3 (este) | 51,7 M | ACT desde cero, 1 tarea | Imagen 256x256 + estado; sin lenguaje | 24,7 % (media de 3 checkpoints) | apache-2.0 | Hugging Face, LeRobot |
 | ACT (agregado del estudio, 3 tareas) | 51,7 M | ACT desde cero | Imagen + estado; sin lenguaje | 33,1 % | apache-2.0 | Estudio vla-vs-scratch |
 | SmolVLA ajustado (mismas demos) | no disponible en la información | VLA preentrenado + fine-tuning | Imagen + estado + lenguaje | 74,2 % | no disponible en la información | Estudio vla-vs-scratch |
 | Otros checkpoints ACT del estudio | 51,7 M | ACT desde cero | Imagen + estado | Variable (52 % en el paso 6.000 de esta ejecución) | apache-2.0 | Repositorio del estudio |
@@ -95,7 +95,7 @@ La comparación directa con SmolVLA debe interpretarse con cautela: los dos mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t1_n20_s3
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t1_n20_s3
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

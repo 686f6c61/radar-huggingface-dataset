@@ -68,5 +68,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thomaswardzij/model_279758669_coca_large
+- Repositorio en Hugging Face: https://huggingface.co/thomaswardzij/model_279758669_coca_large
 - Archivo principal: `model_279758669_coca_large.py` (dentro del repositorio anterior)

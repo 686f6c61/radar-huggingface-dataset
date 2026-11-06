@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nyaymitra (identificador `anshumali19/nyaymitra_finalyear`) es un modelo publicado en HuggingFace por el usuario anshumali19, aparentemente como parte de un proyecto de fin de carrera. La model card disponible es la plantilla automática de HuggingFace, sin ninguna sección completada: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors, cargables con la librería `transformers`. El nombre del modelo sugiere un asistente orientado al ámbito jurídico (del sánscrito "nyaya", justicia, y "mitra", amigo), pero esta interpretación es una inferencia a partir del nombre y no está confirmada en ninguna documentación.
+Nyaymitra (identificador `anshumali19/nyaymitra_finalyear`) es un modelo publicado en Hugging Face por el usuario anshumali19, aparentemente como parte de un proyecto de fin de carrera. La model card disponible es la plantilla automática de Hugging Face, sin ninguna sección completada: no declara autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El repositorio ocupa 1,8 GB y contiene pesos en formato safetensors, cargables con la librería `transformers`. El nombre del modelo sugiere un asistente orientado al ámbito jurídico (del sánscrito "nyaya", justicia, y "mitra", amigo), pero esta interpretación es una inferencia a partir del nombre y no está confirmada en ninguna documentación.
 
 La relevancia de este modelo es limitada en su estado actual: con 0 descargas y 2 "likes", sin licencia declarada, sin idiomas especificados y sin benchmarks publicados, no es posible evaluar su calidad ni su idoneidad para producción. Se trata, por tanto, de un artefacto experimental o académico más que de un modelo listo para integrarse en sistemas reales.
 
@@ -27,13 +27,13 @@ Esta ficha se ha elaborado exclusivamente con los metadatos públicos del reposi
 | Fecha de creacion declarada | 2026-09-21 |
 | Ultima actualizacion declarada | 2026-09-21 |
 
-Nota sobre la etiqueta `arxiv:1910.09700`: corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto ambiental de aprendizaje automatico, citado en la plantilla por defecto de HuggingFace. No es un articulo que describa este modelo.
+Nota sobre la etiqueta `arxiv:1910.09700`: corresponde al articulo de Lacoste et al. (2019) sobre el calculador de impacto ambiental de aprendizaje automatico, citado en la plantilla por defecto de Hugging Face. No es un articulo que describa este modelo.
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card utiliza la plantilla genérica de HuggingFace, con todos los apartados relevantes (descripcion, tipo de modelo, uso previsto, datos de entrenamiento, hiperparametros, evaluacion) marcados como "[More Information Needed]". No se puede confirmar si se trata de un transformer decoder-only, un encoder, un modelo MoE, hibrido o cualquier otra variante.
+No hay informacion disponible sobre la arquitectura del modelo. La model card utiliza la plantilla genérica de Hugging Face, con todos los apartados relevantes (descripcion, tipo de modelo, uso previsto, datos de entrenamiento, hiperparametros, evaluacion) marcados como "[More Information Needed]". No se puede confirmar si se trata de un transformer decoder-only, un encoder, un modelo MoE, hibrido o cualquier otra variante.
 
-Tampoco hay datos sobre el proceso de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones (SFT), RLHF o DPO. El unico dato objetivo es el formato de pesos (safetensors) y la libreria declarada (`transformers`), que indica compatibilidad con el ecosistema HuggingFace pero no aporta informacion sobre la arquitectura interna ni sobre la innovacion tecnica, si la hubiera.
+Tampoco hay datos sobre el proceso de entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones (SFT), RLHF o DPO. El unico dato objetivo es el formato de pesos (safetensors) y la libreria declarada (`transformers`), que indica compatibilidad con el ecosistema Hugging Face pero no aporta informacion sobre la arquitectura interna ni sobre la innovacion tecnica, si la hubiera.
 
 ## Capacidades
 
@@ -45,7 +45,7 @@ No se puede confirmar ninguna capacidad concreta a partir de la informacion disp
 - Capacidades multilingues ni idiomas concretos.
 - Capacidades especiales como modo thinking, vision o audio.
 
-El unico indicio funcional es la etiqueta `endpoints_compatible`, que sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace, sin que eso implique ninguna capacidad especifica. El nombre "nyaymitra" apunta a un posible uso como asistente en dominio juridico, pero esto es una hipotesis no verificada.
+El unico indicio funcional es la etiqueta `endpoints_compatible`, que sugiere que el modelo puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face, sin que eso implique ninguna capacidad especifica. El nombre "nyaymitra" apunta a un posible uso como asistente en dominio juridico, pero esto es una hipotesis no verificada.
 
 ## Casos de uso
 
@@ -78,7 +78,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, los idiomas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| anshumali19/nyaymitra_finalyear | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| anshumali19/nyaymitra_finalyear | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura, los idiomas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anshumali19/nyaymitra_finalyear
+- Repositorio en Hugging Face: https://huggingface.co/anshumali19/nyaymitra_finalyear
 - Articulo citado en la plantilla de la model card (no describe este modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de ML referenciado en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en los resultados de busqueda disponibles.

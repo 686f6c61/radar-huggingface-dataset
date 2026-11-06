@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Formato y cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NanoSeedLM-P3 | 89.403.088.787 (totales) | no disponible | safetensors MLX; expertos SeedLM P=3 (4,0 bits/peso), resto afín 4-bit | qwen-community-1.0 | HuggingFace, experimental |
-| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | pesos originales del modelo base | qwen-community-1.0 | HuggingFace |
-| mlx-community/Qwen3.8-Flash-Next-4bit-mtp | no disponible | no disponible | MLX; afín 4-bit group 32, routers 8-bit, BF16; 113,3 GB | derivada del modelo base | HuggingFace |
-| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF (usado para la imatrix) | derivada del modelo base | HuggingFace |
+| Qwen3.8-Flash-Next-NanoSeedLM-P3 | 89.403.088.787 (totales) | no disponible | safetensors MLX; expertos SeedLM P=3 (4,0 bits/peso), resto afín 4-bit | qwen-community-1.0 | Hugging Face, experimental |
+| Qwen/Qwen3.8-Flash-Next (base) | no disponible | no disponible | pesos originales del modelo base | qwen-community-1.0 | Hugging Face |
+| mlx-community/Qwen3.8-Flash-Next-4bit-mtp | no disponible | no disponible | MLX; afín 4-bit group 32, routers 8-bit, BF16; 113,3 GB | derivada del modelo base | Hugging Face |
+| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF (usado para la imatrix) | derivada del modelo base | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P3
+- Modelo en Hugging Face: https://huggingface.co/txgsync/Qwen3.8-Flash-Next-NanoSeedLM-P3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Cuantización MLX de referencia: https://huggingface.co/mlx-community/Qwen3.8-Flash-Next-4bit-mtp

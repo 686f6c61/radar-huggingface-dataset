@@ -6,7 +6,7 @@ El modelo `sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge` es un modelo de len
 
 Este modelo es relevante porque explora una técnica de mejora de modelos sin entrenamiento adicional: la fusión de checkpoints de una misma trayectoria de entrenamiento. Este enfoque, respaldado por el paper arxiv:2203.05482, busca combinar las capacidades adquiridas en diferentes fases del entrenamiento para obtener un modelo más robusto. El resultado es un modelo de texto con arquitectura GPT-NeoX, en formato safetensors, preparado para su uso con la librería transformers y compatible con text-generation-inference.
 
-La información pública es escasa: no se especifican la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un experimento reciente o de carácter interno. A pesar de la falta de documentación, el modelo está disponible públicamente en HuggingFace y puede ser descargado y utilizado.
+La información pública es escasa: no se especifican la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un experimento reciente o de carácter interno. A pesar de la falta de documentación, el modelo está disponible públicamente en Hugging Face y puede ser descargado y utilizado.
 
 ## Especificaciones tecnicas
 
@@ -63,9 +63,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge | 6,9 B | no disponible | no disponible | HuggingFace |
-| sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg | no disponible | no disponible | no disponible | HuggingFace, FriendliAI |
-| sfm_unfiltered_midtrain_alignment-8k_9k_10k_merge | no disponible | no disponible | no disponible | HuggingFace |
+| sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge | 6,9 B | no disponible | no disponible | Hugging Face |
+| sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg | no disponible | no disponible | no disponible | Hugging Face, FriendliAI |
+| sfm_unfiltered_midtrain_alignment-8k_9k_10k_merge | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-7k_8k_9k_merge
 - Modelo relacionado (4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Paper del método Linear: https://arxiv.org/abs/2203.05482

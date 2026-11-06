@@ -18,7 +18,7 @@ Arquitectónicamente es un decoder de estilo Llama 2, comparable a la familia ll
 | Longitud de contexto | No disponible (la model card no la declara) |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica safetensors y no se ofrecen pesos GGUF/INT8/INT4 oficiales |
 | Idiomas soportados | Japones (ja) e ingles (en) |
-| Licencia | Etiqueta `cc` en HuggingFace; la model card especifica CC BY 4.0 para codigo y modelos preentrenados, pero los modelos ajustados con datos de instruccion Ichikara prohiben el uso comercial de modelos derivados |
+| Licencia | Etiqueta `cc` en Hugging Face; la model card especifica CC BY 4.0 para codigo y modelos preentrenados, pero los modelos ajustados con datos de instruccion Ichikara prohiben el uso comercial de modelos derivados |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantización INT8: alrededor de 1,9-2,5 GB; en INT4 (si se generan pesos GGUF propios, no oficiales): alrededor de 1,1-1,8 GB.
 - GPU recomendadas para servicio: NVIDIA A10G, L4, A100 o H100 para despliegues con concurrencia; para desarrollo, cualquier GPU con 8 GB o más.
 - Cabe en GPU de consumo: sí, con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080 y RTX 4090; en FP16 también cabe en tarjetas de 8 GB con secuencias cortas.
-- Opciones de despliegue: HuggingFace Transformers es la vía directa (pesos safetensors). Para servicio de alto rendimiento, vLLM o TGI. Para CPU o GPU de gama baja es necesario convertir los pesos a GGUF de forma manual y usar llama.cpp u Ollama, ya que no se publican cuantizaciones oficiales.
+- Opciones de despliegue: Hugging Face Transformers es la vía directa (pesos safetensors). Para servicio de alto rendimiento, vLLM o TGI. Para CPU o GPU de gama baja es necesario convertir los pesos a GGUF de forma manual y usar llama.cpp u Ollama, ya que no se publican cuantizaciones oficiales.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. Como referencia de orden de magnitud para un modelo denso de 1,87 B en una GPU moderna, la generación suele moverse en decenas de tokens por segundo, pero este dato no está verificado para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dango-A1-A2-B1 | 1,87 B | No disponible | SFT sobre base japonesa con lecciones de inglés A1-B1 | CC BY 4.0 en codigo y preentrenado; uso comercial de derivados restringido por datos Ichikara | HuggingFace, safetensors, 0 descargas |
-| llm-jp-3-1.8b | ~1,8 B | No disponible en la informacion proporcionada | Modelo japonés de proposito general; arquitectura de referencia citada por el autor | No disponible en la informacion proporcionada | HuggingFace (llm-jp) |
-| Dango-pretrained (dango-1.8b-100Btok) | ~1,8 B | No disponible | Preentrenamiento exclusivamente en japonés (100 B tokens) | CC BY 4.0 segun la model card del derivado | HuggingFace |
+| Dango-A1-A2-B1 | 1,87 B | No disponible | SFT sobre base japonesa con lecciones de inglés A1-B1 | CC BY 4.0 en codigo y preentrenado; uso comercial de derivados restringido por datos Ichikara | Hugging Face, safetensors, 0 descargas |
+| llm-jp-3-1.8b | ~1,8 B | No disponible en la informacion proporcionada | Modelo japonés de proposito general; arquitectura de referencia citada por el autor | No disponible en la informacion proporcionada | Hugging Face (llm-jp) |
+| Dango-pretrained (dango-1.8b-100Btok) | ~1,8 B | No disponible | Preentrenamiento exclusivamente en japonés (100 B tokens) | CC BY 4.0 segun la model card del derivado | Hugging Face |
 | TinyLlama-1.1B (referencia externa) | 1,1 B | 2.048 tokens | Modelo generalista en ingles | Apache 2.0 | Amplia, con GGUF oficiales |
 | Qwen2.5-1.5B (referencia externa) | 1,5 B | 32.768 tokens | Modelo generalista multilingue | Apache 2.0 | Amplia, con GGUF oficiales |
 
@@ -88,11 +88,11 @@ Nota: los datos de TinyLlama-1.1B y Qwen2.5-1.5B proceden de conocimiento genera
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattashiho/dango-A1-A2-B1
+- Modelo en Hugging Face: https://huggingface.co/mattashiho/dango-A1-A2-B1
 - Modelo base preentrenado: https://huggingface.co/mattashiho/dango-1.8b-100Btok
 - Repositorio GitHub del proyecto: https://github.com/mattashiho233/dango
 - README del repositorio: https://github.com/mattashiho233/dango/blob/main/README.md
 - Preprint en arXiv: https://arxiv.org/abs/2606.19170
 - Arquitectura de referencia llm-jp-3-1.8b: https://huggingface.co/llm-jp/llm-jp-3-1.8b
-- Perfil del autor en HuggingFace: https://huggingface.co/mattashiho
+- Perfil del autor en Hugging Face: https://huggingface.co/mattashiho
 - Fuente de los datos de instrucción Ichikara: https://liat-aip.sakura.ne.jp/wp/llm%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%a9%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%87%e3%83%bc%e3%82%bf%e4%bd%9c%e6%88%90/llm%e3%81%ae%e3%81%9f%e3%82%81%e3%81%ae%e6%97%a5%e6%9c%ac%e8%aa%9e%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%a9%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3%e3%83%87%e3%83%bc%e3%82%bf-%e5%85%ac%e9%96%8b/

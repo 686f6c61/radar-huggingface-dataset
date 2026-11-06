@@ -102,7 +102,7 @@ La model card incluye una tabla comparativa con las columnas Qwen3.8-27B, Qwen3.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Daifu233/Qwen3.8-27B
+- Repositorio de Hugging Face: https://huggingface.co/Daifu233/Qwen3.8-27B
 - Página del modelo en Qwen Cloud (referenciada en la model card): https://www.qwencloud.com/models/qwen3.8-27b
 - Qwen Cloud: https://www.qwencloud.com
 - Guía completa (visión, tool use): https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/

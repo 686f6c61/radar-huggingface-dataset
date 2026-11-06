@@ -44,6 +44,6 @@ Sin embargo, no hay información pública sobre sus diferencias o resultados.
 - Al tratarse de un modelo con información pública muy limitada, se recomienda precaución antes de utilizarlo en producción.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw0
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-aw0
 - Modelo relacionado (aligned): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-aligned
 - Modelo relacionado (persona): https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-persona

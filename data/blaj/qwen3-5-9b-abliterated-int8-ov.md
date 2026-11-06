@@ -95,10 +95,10 @@ No se dispone de comparativas con alternativas de otros fabricantes (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int8-ov
 - Modelo base (abliteracion): https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
 - Build hermano int4: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int4-ov
 - Draft DFlash int4 para decodificacion especulativa: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-int4-ov
 - Draft de referencia citado por el autor: https://huggingface.co/z-lab/Qwen3.5-9B-DFlash
 
-Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo; los enlaces disponibles son los de HuggingFace listados arriba.
+Nota: la busqueda web asociada a esta ficha no devolvio ningun resultado relevante sobre el modelo; los enlaces disponibles son los de Hugging Face listados arriba.

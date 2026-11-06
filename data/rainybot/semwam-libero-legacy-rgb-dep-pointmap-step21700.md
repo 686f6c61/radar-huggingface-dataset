@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-dep-pointmap-step21700 es un checkpoint de investigación publicado por el usuario RainyBot en HuggingFace bajo el pipeline de robótica. Se trata de un modelo de política visomotora (vision-language-action, VLA) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB y mapas de profundidad en forma de pointmap. El repositorio ocupa 12 GB y contiene pesos en formato PyTorch (bfloat16) junto con metadatos de configuración originales.
+SemWAM-LIBERO-Legacy-rgb-dep-pointmap-step21700 es un checkpoint de investigación publicado por el usuario RainyBot en Hugging Face bajo el pipeline de robótica. Se trata de un modelo de política visomotora (vision-language-action, VLA) entrenado sobre el benchmark LIBERO, orientado a la manipulación robótica a partir de observaciones RGB y mapas de profundidad en forma de pointmap. El repositorio ocupa 12 GB y contiene pesos en formato PyTorch (bfloat16) junto con metadatos de configuración originales.
 
 El modelo se construye sobre el backbone de vídeo Wan-AI/Wan2.2-TI2V-5B, un modelo de difusión de vídeo de 5B parámetros, al que se añaden encoders congelados: DINOv3 ViT-B/16 para la representación semántica (768 dimensiones, fusión en capas 7 y 23) y un estimador de profundidad VDA con backbone ViT-B a 518 px que produce pointmaps normalizados en un rango de profundidad de 0 a 2 m. La acción se condiciona mediante concatenación temporal (`t_concat`) y la disposición de vistas sigue el formato horizontal de LIBERO, con cámaras de muñeca izquierda y derecha a 128x160.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-rgb-dep-pointmap-step21700 | Backbone 5B (Wan2.2-TI2V-5B) | No disponible | No publicado | No disponible | HuggingFace (archivo histórico) |
+| SemWAM-LIBERO-Legacy-rgb-dep-pointmap-step21700 | Backbone 5B (Wan2.2-TI2V-5B) | No disponible | No publicado | No disponible | Hugging Face (archivo histórico) |
 | Alternativas VLA sobre LIBERO (p. ej. OpenVLA, π0) | No disponible en esta ficha | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos verificables en la información proporcionada para establecer una comparativa rigurosa con modelos de la misma categoría.
@@ -80,7 +80,7 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-pointmap-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-pointmap-step21700
 - Backbone base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Benchmark LIBERO: no disponible en la información proporcionada.
 - Repositorio de código SemWAM: no disponible en la información proporcionada.

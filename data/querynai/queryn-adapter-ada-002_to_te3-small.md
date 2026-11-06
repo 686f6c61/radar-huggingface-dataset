@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, etc.)
 
 | Modelo | Arquitectura | Parámetros | Similitud coseno test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `queryn-adapter-ada-002_to_te3-small` | Proyección lineal | ~2,4M | 0,8718 | MIT | HuggingFace |
-| `queryn-adapter-ada-002_to_qwen3-emb-8b` | Proyección lineal (presumible) | No disponible | No disponible | MIT (presumible) | HuggingFace |
-| Otros adaptadores de la colección Queryn | Lineal o MLP según par | No disponible | No disponible | MIT | HuggingFace |
+| `queryn-adapter-ada-002_to_te3-small` | Proyección lineal | ~2,4M | 0,8718 | MIT | Hugging Face |
+| `queryn-adapter-ada-002_to_qwen3-emb-8b` | Proyección lineal (presumible) | No disponible | No disponible | MIT (presumible) | Hugging Face |
+| Otros adaptadores de la colección Queryn | Lineal o MLP según par | No disponible | No disponible | MIT | Hugging Face |
 
-No se dispone de modelos comparables fuera de la familia Queryn que realicen traducción entre espacios de embeddings específicos. La colección completa de adaptadores está disponible en HuggingFace bajo el perfil QuerynAi.
+No se dispone de modelos comparables fuera de la familia Queryn que realicen traducción entre espacios de embeddings específicos. La colección completa de adaptadores está disponible en Hugging Face bajo el perfil QuerynAi.
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se dispone de modelos comparables fuera de la familia Queryn que realicen tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_te3-small
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_te3-small
 - Colección de adaptadores Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Repositorio GitHub de Queryn (documentación de adaptadores): https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md
 - Modelo relacionado (ada-002 → qwen3-emb-8b): https://huggingface.co/QuerynAi/queryn-adapter-ada-002_to_qwen3-emb-8b

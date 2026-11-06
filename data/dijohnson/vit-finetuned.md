@@ -37,7 +37,7 @@ El repositorio incluye un checkpoint de inicialización en formato safetensors, 
 
 - Pruebas de humo en pipelines de inferencia: el checkpoint de inicialización permite verificar que el código de inferencia se ejecuta sin errores, útil para validar la integración con otras herramientas antes de entrenar un modelo real.
 - Punto de partida para investigación académica: la arquitectura con atención agrupada y fusión Tucker puede servir como base para estudiar el comportamiento de estas técnicas en tareas de generación con visión.
-- Desarrollo de adaptadores para carga automática: dado que es una implementación personalizada, se puede usar este repositorio para desarrollar un adaptador que permita cargar el modelo con APIs genéricas de HuggingFace.
+- Desarrollo de adaptadores para carga automática: dado que es una implementación personalizada, se puede usar este repositorio para desarrollar un adaptador que permita cargar el modelo con APIs genéricas de Hugging Face.
 - Evaluación de configuraciones de entrenamiento: el archivo `training_args.json` con Novograd y coseno puede servir como referencia para comparar optimizadores y programaciones de tasa de aprendizaje en modelos pequeños.
 - Educación sobre arquitecturas ViT: al ser un código mínimo y legible, es útil para estudiantes que quieran entender los componentes internos de un Vision Transformer.
 - Experimentación con normalización por lotes en transformers: la combinación de batch norm con atención agrupada es poco común y puede explorarse en entornos de investigación controlados.
@@ -56,22 +56,22 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo entrenado, sino una implementación de referencia con un checkpoint de inicialización. No existen modelos comparables en cuanto a rendimiento porque no hay métricas que comparar. En cuanto a arquitectura, los ViT convencionales de HuggingFace (como `google/vit-base-patch16-224`) tienen cientos de millones de parámetros y están preentrenados, por lo que no son directamente comparables con esta implementación mínima.
+No disponible. Este repositorio no es un modelo entrenado, sino una implementación de referencia con un checkpoint de inicialización. No existen modelos comparables en cuanto a rendimiento porque no hay métricas que comparar. En cuanto a arquitectura, los ViT convencionales de Hugging Face (como `google/vit-base-patch16-224`) tienen cientos de millones de parámetros y están preentrenados, por lo que no son directamente comparables con esta implementación mínima.
 
 ## Limitaciones y advertencias
 
 - El checkpoint de inicialización no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio, según el propio autor.
 - No se puede usar en producción para ninguna tarea real de generación o clasificación de imágenes sin un entrenamiento completo.
-- La implementación es personalizada y no compatible con las APIs genéricas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs genéricas de Hugging Face sin un adaptador explícito.
 - No hay datos sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no tiene capacidades funcionales documentadas.
 - La licencia Apache 2.0 permite uso comercial, pero el autor advierte de que deben revisarse por separado los términos de las fuentes de datos si se usan conjuntos de datos externos.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto incluidos en este repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dijohnson/vit-finetuned
-- Guía de HuggingFace sobre fine-tuning de ViT con datasets biomédicos: https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset
+- Repositorio en Hugging Face: https://huggingface.co/dijohnson/vit-finetuned
+- Guía de Hugging Face sobre fine-tuning de ViT con datasets biomédicos: https://huggingface.co/learn/cookbook/en/fine_tuning_vit_custom_dataset
 - Blog de Medium sobre fine-tuning de ViT con datasets personalizados: https://medium.com/@imabhi1216/fine-tuning-a-vision-transformer-vit-model-with-a-custom-dataset-37840e4e9268
 - Repositorio GitHub de fine-tuning de ViT (bwconrad/vit-finetune): https://github.com/bwconrad/vit-finetune
 - Catálogo de modelos de Microsoft Foundry (DinoV2, como referencia de ViT): https://ai.azure.com/catalog/models/Facebook-DinoV2-Image-Embeddings-ViT-Giant
-- Blog de HuggingFace sobre fine-tuning de ViT: https://github.com/huggingface/blog/blob/main/fine-tune-vit.md
+- Blog de Hugging Face sobre fine-tuning de ViT: https://github.com/huggingface/blog/blob/main/fine-tune-vit.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cnuland/llm-d-sc-cost` es un modelo publicado en HuggingFace por el usuario `cnuland` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros ni información de uso. El nombre sugiere una posible relación con costes de modelos de lenguaje (posiblemente "llm-d" como abreviatura de "LLM deployment" o "LLM data" y "sc-cost" como "scenario cost"), pero no hay datos que lo confirmen.
+El repositorio `cnuland/llm-d-sc-cost` es un modelo publicado en Hugging Face por el usuario `cnuland` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros ni información de uso. El nombre sugiere una posible relación con costes de modelos de lenguaje (posiblemente "llm-d" como abreviatura de "LLM deployment" o "LLM data" y "sc-cost" como "scenario cost"), pero no hay datos que lo confirmen.
 
 En el momento de la consulta, el repositorio registra cero descargas y cero likes, y no se ha publicado ninguna documentación adicional. Los resultados de búsqueda web no proporcionan información específica sobre este modelo, aunque aparecen enlaces a comparativas de precios de APIs de LLM y a un proyecto GitHub llamado `llm-d` que se centra en optimización de inferencia, pero sin vínculo claro con este repositorio.
 
@@ -54,6 +54,6 @@ No disponible. No se puede comparar con otros modelos al carecer de cualquier es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cnuland/llm-d-sc-cost
+- Repositorio en Hugging Face: https://huggingface.co/cnuland/llm-d-sc-cost
 - No se han encontrado otros enlaces oficiales (papers, blogs, demos) relacionados con este modelo.
 - Los resultados de búsqueda web sobre comparativas de precios de LLM y el proyecto `llm-d` en GitHub no tienen una relación confirmada con este repositorio.

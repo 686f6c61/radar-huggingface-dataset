@@ -85,7 +85,7 @@ No se dispone de benchmarks comparativos en la información proporcionada, por l
 
 ## Enlaces
 
-- [HuggingFace del checkpoint](https://huggingface.co/JingwenGu/qwen3-1.7b-maxrl-lr5e-7-step300)
+- [Hugging Face del checkpoint](https://huggingface.co/JingwenGu/qwen3-1.7b-maxrl-lr5e-7-step300)
 - [Checkpoint hermano qwen3-1.7b-maxrl-lr5e-6-step900](https://huggingface.co/JingwenGu/qwen3-1.7b-maxrl-lr5e-6-step900)
 - [Modelo base Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Informe técnico Qwen3 (arXiv:2505.09388)](https://arxiv.org/abs/2505.09388v1)

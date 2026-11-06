@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| api-service-sac/granite-embedding-97m-multilingual-r2-onnx | 97M | 512 tokens | ONNX (FP32) | Apache 2.0 | HuggingFace |
-| ibm-granite/granite-embedding-97m-multilingual-r2 (modelo base) | 97M | 512 tokens | safetensors (segun modelo base) | Apache 2.0 | HuggingFace |
+| api-service-sac/granite-embedding-97m-multilingual-r2-onnx | 97M | 512 tokens | ONNX (FP32) | Apache 2.0 | Hugging Face |
+| ibm-granite/granite-embedding-97m-multilingual-r2 (modelo base) | 97M | 512 tokens | safetensors (segun modelo base) | Apache 2.0 | Hugging Face |
 | Alternativas de embeddings multilingues de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion mas directa es con el propio modelo base, del que esta exportacion hereda pesos y arquitectura. Para alternativas externas (por ejemplo, familias tipo multilingual-e5 o bge) no se dispone de datos verificados en la informacion proporcionada.
@@ -76,14 +76,14 @@ La comparacion mas directa es con el propio modelo base, del que esta exportacio
 - Es imprescindible aplicar CLS pooling y normalizacion L2 tal como indica `embedder_config.json`; usar la salida `last_hidden_state` sin post-procesado produce vectores incorrectos.
 - Solo se publica la variante FP32; no hay versiones cuantizadas (INT8, etc.) en este repositorio.
 - El repositorio no declara la lista concreta de idiomas soportados, solo la naturaleza multilingue del modelo base.
-- Adopcion practicamente nula en HuggingFace (0 descargas, 0 likes), por lo que no cuenta con validacion de la comunidad.
+- Adopcion practicamente nula en Hugging Face (0 descargas, 0 likes), por lo que no cuenta con validacion de la comunidad.
 - Licencia Apache 2.0: permite uso comercial, pero el copyright del modelo subyacente es de IBM y conviene respetar la atribucion.
 - El empaquetado esta orientado a s1grep (tag `s1grep`), lo que puede implicar convenciones propias en la configuracion del embedder.
 - No se dispone de datos de benchmarks independientes que confirmen el rendimiento en tareas de retrieval mas alla de la prueba de paridad del autor.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/api-service-sac/granite-embedding-97m-multilingual-r2-onnx
+- Repositorio Hugging Face: https://huggingface.co/api-service-sac/granite-embedding-97m-multilingual-r2-onnx
 - Modelo base: https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2
 - Repositorio s1grep: https://github.com/apiservicesac/s1grep
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada.

@@ -64,10 +64,10 @@ No se dispone de mediciones oficiales de VRAM o latencia. A partir del tamaño d
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-NVFP4-GGUF` | 34.660.671.320 | 131.072 | NVFP4 GGUF | Apache 2.0 | HuggingFace |
-| `LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF` | no disponible | no disponible | GGUF (formato original) | Apache 2.0 | HuggingFace |
-| `burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF` | no disponible | no disponible | GGUF (recomendado APEX o Q8_K_P) | no disponible | HuggingFace |
-| `LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF` | no disponible | no disponible | GGUF | no disponible | HuggingFace |
+| `jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-NVFP4-GGUF` | 34.660.671.320 | 131.072 | NVFP4 GGUF | Apache 2.0 | Hugging Face |
+| `LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-GGUF` | no disponible | no disponible | GGUF (formato original) | Apache 2.0 | Hugging Face |
+| `burningfeet/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V5-GGUF` | no disponible | no disponible | GGUF (recomendado APEX o Q8_K_P) | no disponible | Hugging Face |
+| `LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V3-GGUF` | no disponible | no disponible | GGUF | no disponible | Hugging Face |
 
 Todas las variantes mencionadas comparten la misma base `HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive`, pero no se disponen de especificaciones completas ni benchmarks para establecer una comparación de rendimiento rigurosa.
 

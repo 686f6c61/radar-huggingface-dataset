@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Relación | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|
-| `botp/marigold-v2-0` | Reempaquetado para ComfyUI del modelo base | Apache 2.0 | safetensors (diffusion-single-file) | Repositorio en HuggingFace, 0 descargas |
+| `botp/marigold-v2-0` | Reempaquetado para ComfyUI del modelo base | Apache 2.0 | safetensors (diffusion-single-file) | Repositorio en Hugging Face, 0 descargas |
 | `huawei-bayerlab/marigold-v2-0` | Modelo original del que deriva | Apache 2.0 (según la etiqueta heredada en este repositorio) | no disponible en la información proporcionada | Repositorio original referenciado por el autor |
 
 No se dispone de datos verificables sobre alternativas de la misma categoría (parámetros, contexto, rendimiento) en la información proporcionada, por lo que no se incluye una comparación cuantitativa con otros modelos de predicción densa.
@@ -88,7 +88,7 @@ No se dispone de datos verificables sobre alternativas de la misma categoría (p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/botp/marigold-v2-0
+- Repositorio en Hugging Face: https://huggingface.co/botp/marigold-v2-0
 - Modelo original: https://huggingface.co/huawei-bayerlab/marigold-v2-0
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - La búsqueda web realizada no devolvió enlaces relevantes: los resultados se limitan a páginas genéricas de YouTube sin relación con el modelo.

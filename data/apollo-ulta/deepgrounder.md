@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepGrounder es un modelo publicado en HuggingFace por la organizacion Apollo-ULTA bajo licencia Apache 2.0. La model card disponible es practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni informacion sobre capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente o sin difusion.
+DeepGrounder es un modelo publicado en Hugging Face por la organizacion Apollo-ULTA bajo licencia Apache 2.0. La model card disponible es practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni informacion sobre capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente o sin difusion.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El nombre "DeepGrounder" sugiere, por convencion de nomenclatura, un posible enfoque en tareas de grounding (vinculacion de lenguaje a referencias visuales o espaciales), pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para identificar modelos de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Apollo-ULTA/DeepGrounder
-- Perfil del autor en HuggingFace: https://huggingface.co/Apollo-ULTA
+- Repositorio Hugging Face: https://huggingface.co/Apollo-ULTA/DeepGrounder
+- Perfil del autor en Hugging Face: https://huggingface.co/Apollo-ULTA
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

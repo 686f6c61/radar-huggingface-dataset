@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maren-Hale/recurrent es un repositorio alojado en HuggingFace por el usuario Maren-Hale. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: el repositorio no incluye pipeline declarado, no especifica licencia, no declara idiomas soportados y no cuenta con descargas registradas. El unico metadato disponible es la etiqueta `region:us` y un unico "like", lo que sugiere un proyecto recien creado o de caracter experimental.
+Maren-Hale/recurrent es un repositorio alojado en Hugging Face por el usuario Maren-Hale. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: el repositorio no incluye pipeline declarado, no especifica licencia, no declara idiomas soportados y no cuenta con descargas registradas. El unico metadato disponible es la etiqueta `region:us` y un unico "like", lo que sugiere un proyecto recien creado o de caracter experimental.
 
 El nombre del repositorio, "recurrent", podria sugerir un interes en arquitecturas con procesamiento recurrente o iterativo, pero esta interpretacion no puede confirmarse con los datos disponibles. No se ha publicado informacion sobre arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maren-Hale/recurrent
+- Hugging Face: https://huggingface.co/Maren-Hale/recurrent
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

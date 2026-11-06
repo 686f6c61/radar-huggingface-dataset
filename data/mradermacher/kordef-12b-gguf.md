@@ -81,7 +81,7 @@ La comparación es orientativa: no se dispone de benchmarks de kordef-12b que pe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/kordef-12b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/kordef-12b-GGUF
 - Modelo base: https://huggingface.co/graphuser/kordef-12b
 - Página de resumen del autor para este modelo: https://hf.tst.eu/model#kordef-12b-GGUF
 - Guía de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

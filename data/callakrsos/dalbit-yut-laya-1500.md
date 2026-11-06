@@ -83,8 +83,8 @@ No se conocen modelos públicos comparables especializados en Yutnori. La compar
 
 | Modelo | Parametros | Contexto | Rendimiento en Yutnori | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dalbit Yut Laya 1500 | 421 M | no disponible | 51,7–61,7 % vs heurística; 70 % en tablero S | MIT | HuggingFace |
-| convaiinnovations/laya (base) | 421 M | no disponible | 21,0 % vs heurística | no disponible en la información | HuggingFace |
+| Dalbit Yut Laya 1500 | 421 M | no disponible | 51,7–61,7 % vs heurística; 70 % en tablero S | MIT | Hugging Face |
+| convaiinnovations/laya (base) | 421 M | no disponible | 21,0 % vs heurística | no disponible en la información | Hugging Face |
 | AI heurístico `chooseAIAction` | no aplica (reglas) | no aplica | referencia (100 % frente a sí mismo) | no aplica | integrado en el juego |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se conocen modelos públicos comparables especializados en Yutnori. La compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/callakrsos/dalbit-yut-laya-1500
+- Modelo en Hugging Face: https://huggingface.co/callakrsos/dalbit-yut-laya-1500
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio del juego: https://github.com/zaruous/dalbit-yut
 - Demo jugable: https://zaruous.github.io/dalbit-yut/

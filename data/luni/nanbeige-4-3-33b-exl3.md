@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige-4.3-33B-EXL3 es una cuantización en formato ExLlamaV3 (EXL3) del modelo Nanbeige4.3-33B, un modelo de lenguaje denso de 33 mil millones de parámetros desarrollado por el equipo Nanbeige. La cuantización ha sido publicada por el usuario Luni en HuggingFace y está optimizada para inferencia local de alto rendimiento mediante la librería exllamav3.
+Nanbeige-4.3-33B-EXL3 es una cuantización en formato ExLlamaV3 (EXL3) del modelo Nanbeige4.3-33B, un modelo de lenguaje denso de 33 mil millones de parámetros desarrollado por el equipo Nanbeige. La cuantización ha sido publicada por el usuario Luni en Hugging Face y está optimizada para inferencia local de alto rendimiento mediante la librería exllamav3.
 
 El modelo base destaca por tres características principales: una ventana de contexto nativa de 262k tokens (262.144), razonamiento nativo mediante tokens `<think>` (modo de pensamiento estilo chain-of-thought) y una arquitectura tipo Llama con atención completa (full-attention). Está entrenado para inglés y chino, y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones.
 

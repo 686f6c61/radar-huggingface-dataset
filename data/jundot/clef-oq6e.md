@@ -85,8 +85,8 @@ No se dispone de cifras exactas (MMLU, HumanEval, GSM8K u otras) ni de comparaci
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/clef-oQ6e | 27,36 B (6,856 bits/peso) | MLX safetensors | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Cloudflare/clef | 27 B | BF16 | no disponible | Apache-2.0 | HuggingFace y Workers AI |
+| Jundot/clef-oQ6e | 27,36 B (6,856 bits/peso) | MLX safetensors | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Cloudflare/clef | 27 B | BF16 | no disponible | Apache-2.0 | Hugging Face y Workers AI |
 | Cloudflare clef-flash | no disponible | no disponible | no disponible | Apache-2.0 | Workers AI |
 | Jev | no disponible | no disponible | no disponible | no disponible | Referenciado como comparacion de velocidad por Cloudflare |
 
@@ -107,8 +107,8 @@ La comparacion con alternativas genericas de la misma categoria (modelos de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/clef-oQ6e
-- Modelo base en HuggingFace: https://huggingface.co/Cloudflare/clef
+- Modelo en Hugging Face: https://huggingface.co/Jundot/clef-oQ6e
+- Modelo base en Hugging Face: https://huggingface.co/Cloudflare/clef
 - Documentacion de clef en Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/clef/
 - Blog de Cloudflare sobre los modelos de decision clef: https://blog.cloudflare.com/clef-decision-models/
 - Changelog de Cloudflare (1 de octubre de 2026): https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/

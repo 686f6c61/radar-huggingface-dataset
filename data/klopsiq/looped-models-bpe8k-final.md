@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LoopedLM BPE8k es el checkpoint final del proyecto de investigacion Looped Models, publicado por el usuario Klopsiq en HuggingFace. Se trata de un modelo de lenguaje de 9.440.513 parametros unicos (aproximadamente 9,44 M) con embeddings de entrada y salida atados, construido sobre dos bloques tipo Qwen compartidos entre si y reutilizados varias veces en profundidad (de ahi el termino "looped"). El objetivo del proyecto no es ofrecer un modelo util para produccion, sino estudiar como se comporta el entrenamiento con profundidad variable y reutilizacion de bloques en un regimen de computo muy reducido.
+LoopedLM BPE8k es el checkpoint final del proyecto de investigacion Looped Models, publicado por el usuario Klopsiq en Hugging Face. Se trata de un modelo de lenguaje de 9.440.513 parametros unicos (aproximadamente 9,44 M) con embeddings de entrada y salida atados, construido sobre dos bloques tipo Qwen compartidos entre si y reutilizados varias veces en profundidad (de ahi el termino "looped"). El objetivo del proyecto no es ofrecer un modelo util para produccion, sino estudiar como se comporta el entrenamiento con profundidad variable y reutilizacion de bloques en un regimen de computo muy reducido.
 
 El modelo se entreno sobre un unico fragmento fijado (pinned shard) de FineWeb, con 24.969.216 tokens BPE, una ventana de contexto de 512 tokens y una profundidad muestreada uniformemente entre 8 y 16 durante el entrenamiento. La profundidad de inferencia seleccionada es T=12. El autor reporta una evaluacion unica sobre un conjunto de test bloqueado (1.048.576 tokens procedentes de 1.251 documentos) con NLL 4,2103 y perplejidad 67,38.
 
@@ -22,7 +22,7 @@ Su relevancia actual es metodologica: documenta con transparencia que la mejora 
 | Formato de pesos | model.pt (checkpoint de PyTorch con pesos y configuracion, sin estado del optimizador); no hay safetensors ni GGUF |
 | Profundidad de inferencia seleccionada | T=12 |
 | Tokens de entrenamiento | 24.969.216 tokens BPE de FineWeb |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Libreria | pytorch (codigo propio, no usa clases AutoModel de Transformers) |
 
 ## Arquitectura y entrenamiento
@@ -97,11 +97,11 @@ La comparacion directa de calidad no es posible: LoopedLM BPE8k solo publica NLL
 - Ausencia de alineamiento: no hay RLHF, DPO ni SFT documentados, por lo que el modelo no sigue instrucciones ni aplica filtros de seguridad.
 - Extrapolacion de profundidad: el propio informe advierte de que el comportamiento se degrada mas alla de T=16 y que el checkpoint no demuestra test-time scaling util con un numero arbitrario de bucles.
 - Reproducibilidad: el repositorio no esta en formato estandar (no hay safetensors, GGUF ni `AutoModel`), de modo que su integracion en herramientas habituales exige trabajo adicional. Ademas, el checkpoint se selecciono antes de la unica apertura del test bloqueado, sin ablaciones posteriores que lo sustituyan.
-- Tamano del repositorio reportado como 0,0 GB en HuggingFace, lo que puede dificultar la verificacion previa del contenido antes de la descarga.
+- Tamano del repositorio reportado como 0,0 GB en Hugging Face, lo que puede dificultar la verificacion previa del contenido antes de la descarga.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Klopsiq/looped-models-bpe8k-final
+- Modelo en Hugging Face: https://huggingface.co/Klopsiq/looped-models-bpe8k-final
 - Codigo fuente: https://github.com/Klopsiq/T-lab_Looped_Models
 - Informe de investigacion: https://github.com/Klopsiq/T-lab_Looped_Models/blob/main/REPORT.md
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a hilos de foro sobre la empresa ManoMano y no guardan ninguna relacion con este modelo ni con el proyecto Looped Models.

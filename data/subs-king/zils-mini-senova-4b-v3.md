@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-mini soup body: Senova-4B v3 es un reempaquetado del modelo WangSenQWQ/Senova-4B-v3, publicado por el usuario subs-king en HuggingFace. No se trata de un modelo nuevo ni de un fine-tuning: los pesos de lenguaje son los del modelo original, sin cambios, y la intervención del autor se limita a reorganizar nombres de tensores y el layout de los shards para adaptarlos al formato que exige el subnet Zils (Bittensor SN127), pool d3-mini. El repositorio se etiqueta como "soup-body" y "decision-model", lo que sugiere su uso como cuerpo base dentro de un pipeline de decisión de esa subred.
+Zils d3-mini soup body: Senova-4B v3 es un reempaquetado del modelo WangSenQWQ/Senova-4B-v3, publicado por el usuario subs-king en Hugging Face. No se trata de un modelo nuevo ni de un fine-tuning: los pesos de lenguaje son los del modelo original, sin cambios, y la intervención del autor se limita a reorganizar nombres de tensores y el layout de los shards para adaptarlos al formato que exige el subnet Zils (Bittensor SN127), pool d3-mini. El repositorio se etiqueta como "soup-body" y "decision-model", lo que sugiere su uso como cuerpo base dentro de un pipeline de decisión de esa subred.
 
 El modelo cuenta con 4.539.265.536 parámetros (aproximadamente 4,5 mil millones) almacenados en safetensors, con un tamaño de repositorio de 9,1 GB, lo que es coherente con pesos en precisión de 16 bits. La licencia declarada es Apache 2.0, heredada del modelo original, y el autor indica que los ficheros de licencia originales se incluyen cuando la fuente los tenía.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada desde el punto de vista de la evaluació
 
 No se dispone de información sobre la arquitectura interna del modelo base WangSenQWQ/Senova-4B-v3 en los datos proporcionados: no se especifica si es un transformer denso, un MoE, un modelo híbrido ni qué tipo de atención utiliza. El recuento de parámetros (4,54 mil millones) y el tamaño del repositorio (9,1 GB) son compatibles con un transformer de aproximadamente 4B en precisión de 16 bits, pero esto es una inferencia a partir de los metadatos, no un dato confirmado por el autor.
 
-Respecto al entrenamiento, no hay información sobre volumen de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación. Lo único documentado es la intervención de reempaquetado: el autor de esta ficha cambia nombres de tensores y el layout de shards para adaptarlos al "body layout" de Zils, y excluye los tensores `lm_head` y `mtp`. Esta exclusión es relevante: sin `lm_head`, el checkpoint no es directamente utilizable para generación de texto estándar con un pipeline de HuggingFace, sino que está pensado para integrarse en el framework del subnet, que presumiblemente aporta su propia cabeza de salida o su propio mecanismo de decisión.
+Respecto al entrenamiento, no hay información sobre volumen de tokens, composición del dataset, uso de RLHF, DPO u otras técnicas de alineación. Lo único documentado es la intervención de reempaquetado: el autor de esta ficha cambia nombres de tensores y el layout de shards para adaptarlos al "body layout" de Zils, y excluye los tensores `lm_head` y `mtp`. Esta exclusión es relevante: sin `lm_head`, el checkpoint no es directamente utilizable para generación de texto estándar con un pipeline de Hugging Face, sino que está pensado para integrarse en el framework del subnet, que presumiblemente aporta su propia cabeza de salida o su propio mecanismo de decisión.
 
 ## Capacidades
 
@@ -70,18 +70,18 @@ La comparativa con modelos de la misma categoría no es posible con los datos di
 
 ## Limitaciones y advertencias
 
-- El checkpoint no incluye `lm_head` ni tensores `mtp`, por lo que no es un modelo listo para generación de texto con pipelines estándar de HuggingFace sin trabajo adicional.
+- El checkpoint no incluye `lm_head` ni tensores `mtp`, por lo que no es un modelo listo para generación de texto con pipelines estándar de Hugging Face sin trabajo adicional.
 - No se documentan sesgos conocidos, pero al no haber información sobre los datos de entrenamiento del modelo base, no es posible evaluar sesgos de forma responsable.
 - Riesgo de alucinación: no evaluado; no hay benchmarks ni evaluaciones publicadas.
 - Limitaciones de contexto e idioma: desconocidas, al no publicarse la longitud de contexto ni los idiomas soportados.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, heredada del modelo original; el autor indica que se incluyen los ficheros de licencia originales cuando la fuente los tenía. Conviene verificar la licencia del repositorio base antes de uso comercial, ya que la información proporcionada no detalla la licencia del modelo WangSenQWQ/Senova-4B-v3.
 - El repositorio no registra descargas ni "likes", y fue creado y actualizado en la misma fecha (2026-11-04), lo que indica una publicación reciente y sin validación comunitaria.
 - El uso previsto está acoplado al subnet Zils (Bittensor SN127), pool d3-mini; fuera de ese contexto, su utilidad es limitada.
-- No se especifica el pipeline de HuggingFace, lo que dificulta la carga automática con `transformers`.
+- No se especifica el pipeline de Hugging Face, lo que dificulta la carga automática con `transformers`.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subs-king/zils-mini-senova-4b-v3
+- Repositorio Hugging Face: https://huggingface.co/subs-king/zils-mini-senova-4b-v3
 - Modelo base: https://huggingface.co/WangSenQWQ/Senova-4B-v3
 - Revisión del modelo base referenciada: `0a23e33503e8bbdc0d88676aac7444c6070977c0`
 - Subnet Zils (Bittensor SN127): no se proporciona enlace en la información disponible.

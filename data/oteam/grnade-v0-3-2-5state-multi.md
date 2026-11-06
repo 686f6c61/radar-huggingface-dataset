@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Conformaciones | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gRNAde v0.3.2 5state multi (este) | 2,157 M | No disponible | 5 | Solo espacial (131 canales) | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 1state multi | 2,157 M | No disponible | 1 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,157 M | No disponible | 1 | Secuencia + pares de bases + espacial (132 canales) | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde ODsign (v1) | 2,157 M | No disponible | 1 | Secuencia + pares de bases + espacial | AGPL-3.0 | HuggingFace (oteam) |
+| gRNAde v0.3.2 5state multi (este) | 2,157 M | No disponible | 5 | Solo espacial (131 canales) | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 1state multi | 2,157 M | No disponible | 1 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,157 M | No disponible | 1 | Secuencia + pares de bases + espacial (132 canales) | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde ODsign (v1) | 2,157 M | No disponible | 1 | Secuencia + pares de bases + espacial | AGPL-3.0 | Hugging Face (oteam) |
 
 Las variantes comparten arquitectura y número de parámetros; difieren en el número de conformaciones soportadas y en el tipo de grafo. No se dispone de datos de rendimiento comparativo entre ellas en la información proporcionada.
 
@@ -86,7 +86,7 @@ Las variantes comparten arquitectura y número de parámetros; difieren en el n�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-5state-multi
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-5state-multi
 - Variante v1: https://huggingface.co/oteam/grnade
 - Checkpoint ODesign: https://huggingface.co/oteam/grnade-odesign
 - Variante 1state all: https://huggingface.co/oteam/grnade-v0.3.2-1state-all

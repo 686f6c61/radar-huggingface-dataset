@@ -94,7 +94,7 @@ No disponible. La comparativa con alternativas exige conocer la arquitectura, el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/G4-WanaMeroQueen-v3-31B-heretic-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/G4-WanaMeroQueen-v3-31B-heretic-i1-GGUF
 - Modelo base: https://huggingface.co/vulture3/G4-WanaMeroQueen-v3-31B-heretic
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - llama.cpp (runtime GGUF): https://github.com/ggml-org/llama.cpp

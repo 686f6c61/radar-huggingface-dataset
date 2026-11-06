@@ -6,7 +6,7 @@
 
 El dato más relevante es su escala: 49.600 parámetros totales según los tensores en safetensors, lo que sitúa el artefacto en el rango de los modelos de juguete para validación de código, no en el de un modelo útil para inferencia real. La model card describe la escala como "small", en contradicción con el sufijo "large" del identificador del repositorio. La arquitectura declarada combina atención lineal, fusión de bajo rango, activación approximate GELU y normalización GroupNorm.
 
-Su interés ahora es puramente metodológico: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como ejemplo de configuración de experimento (optimizador Novograd con schedule de warmup constante). No hay resultados de evaluación, ni idiomas declarados, ni pipeline asignado en HuggingFace, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+Su interés ahora es puramente metodológico: sirve como esqueleto reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y como ejemplo de configuración de experimento (optimizador Novograd con schedule de warmup constante). No hay resultados de evaluación, ni idiomas declarados, ni pipeline asignado en Hugging Face, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -24,7 +24,7 @@ Su interés ahora es puramente metodológico: sirve como esqueleto reproducible 
 | Activación | approximate GELU |
 | Normalización | GroupNorm |
 | Optimizador por defecto | Novograd con schedule de warmup constante |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación / actualización | 2026-10-20 / 2026-10-20 |
 
@@ -85,13 +85,13 @@ Cualquier comparación honesta exigiría entrenar este esqueleto con el mismo pr
 - No hay benchmarks, ni evaluación de sesgos, ni métricas de alucinación porque no existe un modelo entrenado que evaluar.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no se puede planificar su uso multilingüe ni con prompts largos.
 - Inconsistencia de nomenclatura: el identificador dice "large" mientras la model card indica escala "small" y el recuento real es de 49.600 parámetros. Conviene verificar la procedencia del artefacto antes de reutilizarlo.
-- Implementación custom: las APIs automáticas de HuggingFace (`AutoModel`, `pipeline`) no cargarán el modelo sin un adaptador explícito; hay que inspeccionar el bloque `__main__` de `run.py`.
+- Implementación custom: las APIs automáticas de Hugging Face (`AutoModel`, `pipeline`) no cargarán el modelo sin un adaptador explícito; hay que inspeccionar el bloque `__main__` de `run.py`.
 - Licencia BSD-3-Clause: permite uso comercial y modificación, pero obliga a conservar el aviso de copyright, la lista de condiciones y el descargo de responsabilidad, y prohíbe usar el nombre de los contribuyentes para promocionar derivados sin permiso. Los términos de los datos de origen deben revisarse por separado si se entrena con datasets externos.
 - Riesgo de interpretación errónea: un repositorio con 0 descargas y 0 likes, sin pipeline asignado y con un checkpoint sin entrenar, puede confundirse con un modelo listo para usar. No lo es.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DeepikaMenon/coca-multitask-large-2024
+- Repositorio en Hugging Face: https://huggingface.co/DeepikaMenon/coca-multitask-large-2024
 - Archivo de arquitectura: https://huggingface.co/DeepikaMenon/coca-multitask-large-2024/blob/main/config.json
 - Receta de entrenamiento por defecto: https://huggingface.co/DeepikaMenon/coca-multitask-large-2024/blob/main/training_args.json
 - Script de ejecución: https://huggingface.co/DeepikaMenon/coca-multitask-large-2024/blob/main/run.py

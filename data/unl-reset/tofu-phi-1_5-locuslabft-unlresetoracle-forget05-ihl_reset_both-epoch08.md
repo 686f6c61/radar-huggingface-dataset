@@ -85,7 +85,7 @@ La comparación relevante es con `locuslab/tofu_ft_phi-1.5` (el punto de partida
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch08
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch08
 - Modelo base del ajuste fino: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia del dataset): no disponible en la información proporcionada

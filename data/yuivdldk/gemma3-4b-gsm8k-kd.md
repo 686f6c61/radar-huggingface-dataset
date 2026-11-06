@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma3-4b-gsm8k-kd es un ajuste fino del modelo google/gemma-3-4b-it publicado por el usuario Yuivdldk en HuggingFace. Se trata de un artefacto de investigación cuyo objetivo es aplicar destilación de conocimiento basada en logits (logit-based knowledge distillation) sobre el conjunto de datos GSM8K, usando google/gemma-3-27b-it como modelo profesor y Gemma 3 4B como modelo estudiante. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+gemma3-4b-gsm8k-kd es un ajuste fino del modelo google/gemma-3-4b-it publicado por el usuario Yuivdldk en Hugging Face. Se trata de un artefacto de investigación cuyo objetivo es aplicar destilación de conocimiento basada en logits (logit-based knowledge distillation) sobre el conjunto de datos GSM8K, usando google/gemma-3-27b-it como modelo profesor y Gemma 3 4B como modelo estudiante. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 El interés técnico del experimento reside en su método: una destilación top-k con tratamiento explícito de la cola de la distribución (tail-aware), combinada con pérdida de entropía cruzada sobre etiquetas duras en los tokens de respuesta de GSM8K. La configuración incluye max_seq_len de 768, top_k de 64, temperatura de 2.0, alpha de 0.5 y un logp_floor de -20.7, con dos épocas y un learning rate de 1e-5.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, etc.)
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en GSM8K |
 |---|---|---|---|---|---|
-| Yuivdldk/gemma3-4b-gsm8k-kd | 3,88 B | no disponible (base: 128.000) | Gemma | HuggingFace, 0 descargas | 0,0000 (segun el autor) |
-| google/gemma-3-4b-it | 3,88 B | 128.000 | Gemma | HuggingFace, ampliamente usado | no disponible |
-| Qwen2.5-3B-instruct | 3,09 B | 32.768 nativo (128.000 con YaRN) | Apache 2.0 | HuggingFace | no disponible |
-| Llama-3.2-3B-instruct | 3,21 B | 128.000 | Llama 3.2 Community License | HuggingFace (con acceso) | no disponible |
+| Yuivdldk/gemma3-4b-gsm8k-kd | 3,88 B | no disponible (base: 128.000) | Gemma | Hugging Face, 0 descargas | 0,0000 (segun el autor) |
+| google/gemma-3-4b-it | 3,88 B | 128.000 | Gemma | Hugging Face, ampliamente usado | no disponible |
+| Qwen2.5-3B-instruct | 3,09 B | 32.768 nativo (128.000 con YaRN) | Apache 2.0 | Hugging Face | no disponible |
+| Llama-3.2-3B-instruct | 3,21 B | 128.000 | Llama 3.2 Community License | Hugging Face (con acceso) | no disponible |
 
 La comparación de rendimiento entre estos modelos no se incluye porque no hay datos de benchmarks verificados en la información disponible para este ajuste ni cifras comparativas aportadas en el repositorio.
 
@@ -100,7 +100,7 @@ La comparación de rendimiento entre estos modelos no se incluye porque no hay d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yuivdldk/gemma3-4b-gsm8k-kd
+- Modelo en Hugging Face: https://huggingface.co/Yuivdldk/gemma3-4b-gsm8k-kd
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Modelo profesor: https://huggingface.co/google/gemma-3-27b-it
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k

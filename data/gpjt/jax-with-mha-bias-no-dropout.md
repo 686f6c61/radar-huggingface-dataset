@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gpjt/jax-with-mha-bias-no-dropout
+- Modelo en Hugging Face: https://huggingface.co/gpjt/jax-with-mha-bias-no-dropout
 - Repositorio de entrenamiento (JAX): https://github.com/gpjt/jax-gpt2-from-scratch
 - Repositorio de inferencia: https://github.com/gpjt/ddp-base-model-from-scratch
 - Articulo del blog del autor: https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax

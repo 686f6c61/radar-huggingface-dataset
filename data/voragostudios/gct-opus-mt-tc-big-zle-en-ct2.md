@@ -6,7 +6,7 @@ El modelo `gct-opus-mt-tc-big-zle-en-ct2` es una conversión a CTranslate2 con c
 
 El modelo original es un sistema de traducción neuronal del grupo lingüístico zle (lenguas eslavas orientales, que incluyen ruso, ucraniano y bielorruso) hacia inglés. Forma parte de la familia `tc-big` de OPUS-MT, los modelos de traducción de mayor tamaño de esa línea, construidos sobre la arquitectura Marian (transformer encoder-decoder). El repositorio de la conversión ocupa aproximadamente 0,2 GB, coherente con la cuantización int8 de un modelo de traducción de tamaño medio.
 
-Su relevancia práctica es acotada pero clara: ofrece un traductor eslavo-oriental→inglés listo para desplegar con CTranslate2, con los ficheros de tokenizador SentencePiece incluidos, de modo que puede ejecutarse sin depender del repositorio original de HuggingFace. Es útil para integraciones de bajo coste computacional en local o en servidor, especialmente en contextos de chat de videojuegos, que es el caso de uso declarado por el autor de la conversión.
+Su relevancia práctica es acotada pero clara: ofrece un traductor eslavo-oriental→inglés listo para desplegar con CTranslate2, con los ficheros de tokenizador SentencePiece incluidos, de modo que puede ejecutarse sin depender del repositorio original de Hugging Face. Es útil para integraciones de bajo coste computacional en local o en servidor, especialmente en contextos de chat de videojuegos, que es el caso de uso declarado por el autor de la conversión.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible con precisión; el repositorio completo ocupa 0,2 GB en int8, por lo que la huella en memoria es del orden de cientos de MB, muy por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de memoria libre es suficiente; no requiere A100 ni H100. Una GTX 1650, RTX 3050 o superior es más que suficiente.
 - Cabe holgadamente en GPU de consumo e incluso en CPU: CTranslate2 está optimizado para inferencia en CPU con int8.
-- Opciones de despliegue: CTranslate2 (nativo, tal como se publica), con tokenizador de HuggingFace `transformers` para el preprocesado. No se distribuye en formato GGUF ni está pensado para llama.cpp u Ollama.
+- Opciones de despliegue: CTranslate2 (nativo, tal como se publica), con tokenizador de Hugging Face `transformers` para el preprocesado. No se distribuye en formato GGUF ni está pensado para llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; dependerá del hardware y del tamaño de los lotes.
 
 ## Comparativa con modelos similares

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alac/flan-t5-deslop-onnx` es un checkpoint publicado en HuggingFace por el usuario `alac` que contiene una exportación a formato ONNX de un modelo de la familia T5, concretamente un derivado de FLAN-T5 según indican las etiquetas del repositorio (`onnx`, `t5`). El nombre sugiere un ajuste fino orientado a "deslop", es decir, a eliminar texto de relleno o estilo generico tipico de salida de LLM, aunque esta interpretacion no esta confirmada por ninguna documentacion: la model card del repositorio esta practicamente vacia y solo declara la licencia Apache-2.0.
+`alac/flan-t5-deslop-onnx` es un checkpoint publicado en Hugging Face por el usuario `alac` que contiene una exportación a formato ONNX de un modelo de la familia T5, concretamente un derivado de FLAN-T5 según indican las etiquetas del repositorio (`onnx`, `t5`). El nombre sugiere un ajuste fino orientado a "deslop", es decir, a eliminar texto de relleno o estilo generico tipico de salida de LLM, aunque esta interpretacion no esta confirmada por ninguna documentacion: la model card del repositorio esta practicamente vacia y solo declara la licencia Apache-2.0.
 
 El modelo resuelve el problema de desplegar un generador texto-a-texto de la familia FLAN-T5 en entornos sin PyTorch, mediante un grafo ONNX que puede ejecutarse con ONNX Runtime, transformers.js o cualquier runtime compatible. El repositorio ocupa 0,3 GB, un tamano compatible con un checkpoint de la gama small o base de FLAN-T5, pero no hay informacion que permita determinar el numero exacto de parametros.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alac/flan-t5-deslop-onnx | no disponible (~0,3 GB de repo) | no disponible | ONNX | Apache-2.0 | HuggingFace, 0 descargas, sin model card |
-| google/flan-t5-small | 77M | 512 tokens de entrada | safetensors / PyTorch | Apache-2.0 | HuggingFace, ampliamente usado y documentado |
-| google/flan-t5-base | 248M | 512 tokens de entrada | safetensors / PyTorch | Apache-2.0 | HuggingFace, referencia de la familia |
-| google/t5-small | 60M | 512 tokens de entrada | safetensors / PyTorch | Apache-2.0 | HuggingFace, sin ajuste por instrucciones |
+| alac/flan-t5-deslop-onnx | no disponible (~0,3 GB de repo) | no disponible | ONNX | Apache-2.0 | Hugging Face, 0 descargas, sin model card |
+| google/flan-t5-small | 77M | 512 tokens de entrada | safetensors / PyTorch | Apache-2.0 | Hugging Face, ampliamente usado y documentado |
+| google/flan-t5-base | 248M | 512 tokens de entrada | safetensors / PyTorch | Apache-2.0 | Hugging Face, referencia de la familia |
+| google/t5-small | 60M | 512 tokens de entrada | safetensors / PyTorch | Apache-2.0 | Hugging Face, sin ajuste por instrucciones |
 
 La diferencia practica frente a los checkpoints oficiales es el formato: este repositorio ofrece un grafo ONNX listo para runtimes sin PyTorch, a cambio de perder la trazabilidad del ajuste, la model card y cualquier evaluacion. Los originales de Google son preferibles si se necesita reproducibilidad o documentacion.
 
@@ -91,7 +91,7 @@ La diferencia practica frente a los checkpoints oficiales es el formato: este re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alac/flan-t5-deslop-onnx
+- Modelo en Hugging Face: https://huggingface.co/alac/flan-t5-deslop-onnx
 - Checkpoint de referencia de la familia: https://huggingface.co/google/flan-t5-base
 - Checkpoint de referencia de menor tamano: https://huggingface.co/google/flan-t5-small
 - Paper de FLAN-T5 (Chung et al., 2022): https://arxiv.org/abs/2210.11416

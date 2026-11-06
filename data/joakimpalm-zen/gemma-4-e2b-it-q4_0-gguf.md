@@ -64,8 +64,8 @@ No se dispone de datos de benchmarks para comparar directamente con otros modelo
 
 ## Enlaces
 
-- [Repositorio HuggingFace del archivo GGUF](https://huggingface.co/Joakimpalm-Zen/gemma-4-E2B-it-Q4_0-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/google/gemma-4-E2B-it)
+- [Repositorio Hugging Face del archivo GGUF](https://huggingface.co/Joakimpalm-Zen/gemma-4-E2B-it-Q4_0-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/google/gemma-4-E2B-it)
 - [Motor xyntetik-runner (GitHub)](https://github.com/Joakimpalm-Zen/xyntetik-runner)
 - [Benchmark de truncamiento del runner](https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md)
 - [Página de Gemma 4 en Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RaiRamones/indomha-512` es un repositorio alojado en HuggingFace creado por el usuario RaiRamones el 17 de agosto de 2026. La única información disponible en su model card es la licencia Apache 2.0. No se proporcionan detalles sobre arquitectura, tamaño, propósito o capacidades. Actualmente no registra descargas ni valoraciones, lo que sugiere que es un modelo reciente o de baja difusión.
+El modelo `RaiRamones/indomha-512` es un repositorio alojado en Hugging Face creado por el usuario RaiRamones el 17 de agosto de 2026. La única información disponible en su model card es la licencia Apache 2.0. No se proporcionan detalles sobre arquitectura, tamaño, propósito o capacidades. Actualmente no registra descargas ni valoraciones, lo que sugiere que es un modelo reciente o de baja difusión.
 
 Dada la ausencia total de documentación técnica, no es posible determinar qué problema resuelve, qué tipo de arquitectura emplea ni qué datos de entrenamiento se utilizaron. La ficha siguiente refleja esta falta de información de manera explícita, sin especular sobre características no confirmadas.
 
@@ -52,4 +52,4 @@ No disponible. No se puede comparar con alternativas al carecer de especificacio
 
 ## Enlaces
 
-- [HuggingFace: RaiRamones/indomha-512](https://huggingface.co/RaiRamones/indomha-512)
+- [Hugging Face: RaiRamones/indomha-512](https://huggingface.co/RaiRamones/indomha-512)

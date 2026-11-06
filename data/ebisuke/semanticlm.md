@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ebisuke/semanticlm` es un modelo de lenguaje publicado en HuggingFace por el usuario ebisuke. La informacion disponible en la ficha del repositorio es minima: unicamente consta la etiqueta de arquitectura `semantic_lm`, el tag de region `region:us`, el formato de pesos `safetensors`, un total de 841.004.032 parametros (~841 M) y un tamano de repositorio de 29,2 GB. No se ha publicado model card, descripcion, paper ni resultados de evaluacion.
+`ebisuke/semanticlm` es un modelo de lenguaje publicado en Hugging Face por el usuario ebisuke. La informacion disponible en la ficha del repositorio es minima: unicamente consta la etiqueta de arquitectura `semantic_lm`, el tag de region `region:us`, el formato de pesos `safetensors`, un total de 841.004.032 parametros (~841 M) y un tamano de repositorio de 29,2 GB. No se ha publicado model card, descripcion, paper ni resultados de evaluacion.
 
 Se trata por tanto de un modelo de escala media (rango 0,8-1 B de parametros), lo que lo situa en la categoria de modelos compactos que pueden ejecutarse en GPU de consumo con cuantizacion. Sin embargo, no hay informacion sobre la longitud de contexto, el tokenizador, los idiomas soportados, la licencia ni el proceso de entrenamiento, por lo que cualquier evaluacion funcional requiere inspeccion directa del repositorio.
 
@@ -58,7 +58,7 @@ Debido a la ausencia total de documentacion, evaluacion y licencia, los siguient
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la ficha de HuggingFace, y la busqueda web no ha recuperado ningun articulo, blog o informe tecnico asociado al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion en la ficha de Hugging Face, y la busqueda web no ha recuperado ningun articulo, blog o informe tecnico asociado al modelo.
 
 ## Requisitos de hardware
 
@@ -75,10 +75,10 @@ No es posible establecer una comparativa rigurosa: el modelo carece de contexto 
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ebisuke/semanticlm | 841 M | no disponible | no disponible | HuggingFace, solo safetensors |
-| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 (variantes) | HuggingFace, GGUF y multiples formatos |
-| Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria Llama | HuggingFace, GGUF y multiples formatos |
-| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace, GGUF y multiples formatos |
+| ebisuke/semanticlm | 841 M | no disponible | no disponible | Hugging Face, solo safetensors |
+| Qwen2.5-0.5B | 0,49 B | 32.768 tokens | Apache 2.0 (variantes) | Hugging Face, GGUF y multiples formatos |
+| Llama 3.2 1B | 1,24 B | 128.000 tokens | Licencia comunitaria Llama | Hugging Face, GGUF y multiples formatos |
+| SmolLM2-1.7B | 1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face, GGUF y multiples formatos |
 
 Los datos de las tres alternativas corresponden a informacion publica ampliamente documentada de sus respectivos repositorios, pero no han sido verificados en la busqueda asociada a esta ficha. La comparacion de rendimiento con `ebisuke/semanticlm` no puede realizarse al no existir benchmarks publicados de este ultimo.
 
@@ -97,6 +97,6 @@ Los datos de las tres alternativas corresponden a informacion publica ampliament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ebisuke/semanticlm
+- Hugging Face: https://huggingface.co/ebisuke/semanticlm
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados recuperados no guardan relacion con el modelo.

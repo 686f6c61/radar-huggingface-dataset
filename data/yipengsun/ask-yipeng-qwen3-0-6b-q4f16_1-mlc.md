@@ -102,7 +102,7 @@ Como alternativas de la misma categoría (modelos de menos de 1 B parámetros pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yipengsun/ask-yipeng-Qwen3-0.6B-q4f16_1-MLC
+- Modelo en Hugging Face: https://huggingface.co/yipengsun/ask-yipeng-Qwen3-0.6B-q4f16_1-MLC
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Release oficial MLC con layout idéntico: https://huggingface.co/mlc-ai/Qwen3-0.6B-q4f16_1-MLC
 - WebLLM (repositorio): https://github.com/mlc-ai/web-llm

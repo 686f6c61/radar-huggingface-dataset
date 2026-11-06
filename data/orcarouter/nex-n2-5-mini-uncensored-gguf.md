@@ -6,7 +6,7 @@ Nex-N2.5-mini-Uncensored-GGUF es la distribucion cuantizada en formato GGUF del 
 
 Su rasgo diferencial es que se trata de un modelo "abliterated" y "uncensored": se han eliminado las direcciones de rechazo del modelo original, de modo que no aplica el filtrado de seguridad habitual. Los propios tags lo orientan explicitamente a red teaming y ai-red-team, ademas de a casos agenticos, computer-use, function-calling y razonamiento.
 
-Se distribuye unicamente en GGUF para llama.cpp (con fichero mmproj para la torre de vision), bajo licencia Apache-2.0 y con acceso restringido: requiere aceptar condiciones en HuggingFace. Acumula 1.184 descargas y 9 likes desde su publicacion el 10 de septiembre de 2026, y el repositorio ocupa 114,9 GB, lo que refleja varias cuantizaciones del mismo modelo.
+Se distribuye unicamente en GGUF para llama.cpp (con fichero mmproj para la torre de vision), bajo licencia Apache-2.0 y con acceso restringido: requiere aceptar condiciones en Hugging Face. Acumula 1.184 descargas y 9 likes desde su publicacion el 10 de septiembre de 2026, y el repositorio ocupa 114,9 GB, lo que refleja varias cuantizaciones del mismo modelo.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Se distribuye unicamente en GGUF para llama.cpp (con fichero mmproj para la torr
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (incluye mmproj para la torre de vision); modelo base en safetensors: orcarouter/Nex-N2.5-mini-Uncensored |
 | Modalidad de entrada/salida | image-text-to-text (entrada de imagen y texto, salida de texto) |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 114,9 GB |
 | Descargas / likes | 1.184 / 9 |
 | Fecha de publicacion | 10 de septiembre de 2026 |
@@ -93,7 +93,7 @@ La diferencia principal frente a estas alternativas no es el rendimiento, del qu
 - Sesgos conocidos: no disponible. Al derivar de un modelo entrenado principalmente en ingles y chino, es previsible un sesgo cultural y linguistico hacia esos dos idiomas.
 - Idiomas: soporte declarado unicamente de ingles (en) y chino (zh); no hay soporte declarado de castellano, lo que limita su uso en produccion en espanol.
 - Contexto: se desconoce la longitud de contexto soportada, un dato critico para planificar despliegues con documentos largos.
-- Licencia: Apache-2.0 permite uso comercial, pero el acceso al repositorio esta restringido y requiere aceptar condiciones en HuggingFace, lo que hay que verificar antes de integrarlo en un producto.
+- Licencia: Apache-2.0 permite uso comercial, pero el acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face, lo que hay que verificar antes de integrarlo en un producto.
 - Parametros activos desconocidos: al no publicarse, no se puede estimar con precision el coste de computo por token ni el throughput real.
 - Formato limitado a GGUF: no hay pesos en safetensors para este repositorio (el base si los tiene), lo que restringe el uso con frameworks de entrenamiento o fine-tuning de alto rendimiento.
 - Fecha de publicacion futura respecto al conocimiento habitual y volumen de descargas bajo (1.184), lo que implica poca validacion independiente por parte de la comunidad.

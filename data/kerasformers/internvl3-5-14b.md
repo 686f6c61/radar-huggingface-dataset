@@ -75,12 +75,12 @@ La comparativa se basa en informacion publica general; no se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/kerasformers/internvl3.5-14b
-- Modelo original en HuggingFace: https://huggingface.co/OpenGVLab/InternVL3_5-14B-HF
+- Repositorio Hugging Face de la conversion: https://huggingface.co/kerasformers/internvl3.5-14b
+- Modelo original en Hugging Face: https://huggingface.co/OpenGVLab/InternVL3_5-14B-HF
 - Repositorio GitHub de InternVL: https://github.com/OpenGVLab/InternVL
 - Blog oficial de InternVL3.5: https://internvl.github.io/blog/2025-08-26-InternVL-3.5/
 - Blog de InternVL3: https://internvl.github.io/blog/2025-04-11-InternVL-3.0/
 - Repositorio KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentacion de KerasFormers para InternVL: https://imvision12.github.io/KerasFormers/internvl/
-- Coleccion de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Coleccion de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
 - Papers arxiv referenciados: [2312.14238](https://arxiv.org/abs/2312.14238), [2404.16821](https://arxiv.org/abs/2404.16821), [2411.10442](https://arxiv.org/abs/2411.10442), [2412.05271](https://arxiv.org/abs/2412.05271), [2504.10479](https://arxiv.org/abs/2504.10479), [2508.18265](https://arxiv.org/abs/2508.18265)

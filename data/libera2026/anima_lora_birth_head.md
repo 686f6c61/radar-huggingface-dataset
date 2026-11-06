@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anima_lora_birth_head` es un adaptador LoRA publicado en HuggingFace por el usuario Libera2026. Por la nomenclatura del identificador (`anima`, `lora`, `birth_head`) y el tamano del repositorio (0,1 GB), se trata de un ajuste fino ligero pensado para aplicarse sobre un modelo base de generacion de imagen, presumiblemente orientado a modificar la representacion de cabezas o rostros en el momento del nacimiento dentro de un estilo artistico concreto. No se especifica el modelo base sobre el que se aplica, el pipeline ni los datos de entrenamiento.
+`anima_lora_birth_head` es un adaptador LoRA publicado en Hugging Face por el usuario Libera2026. Por la nomenclatura del identificador (`anima`, `lora`, `birth_head`) y el tamano del repositorio (0,1 GB), se trata de un ajuste fino ligero pensado para aplicarse sobre un modelo base de generacion de imagen, presumiblemente orientado a modificar la representacion de cabezas o rostros en el momento del nacimiento dentro de un estilo artistico concreto. No se especifica el modelo base sobre el que se aplica, el pipeline ni los datos de entrenamiento.
 
 La model card publicada es practicamente vacia: unicamente declara la licencia MIT y no incluye descripcion, ejemplos, parametros de entrenamiento ni instrucciones de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
 
@@ -41,7 +41,7 @@ Tampoco se documentan el numero de pasos de entrenamiento, el dataset utilizado,
 - Exploracion de estilos en ilustracion: usar el LoRA como capa de personalizacion sobre un pipeline de difusion existente para producir bocetos con una estetica determinada.
 - Investigacion sobre adaptadores de bajo rango: analizar los pesos del adaptador para estudiar como un LoRA de pocos megabytes modifica la representacion de una clase semantica concreta en un modelo de difusion.
 - Pruebas de concepto en generacion de personajes: combinar el adaptador con prompts controlados para evaluar la consistencia de la representacion de cabezas a lo largo de una serie de imagenes.
-- Docencia y demostraciones: ilustrar en un taller como se aplica y se descarga un LoRA desde HuggingFace y como se integra en un pipeline de inferencia.
+- Docencia y demostraciones: ilustrar en un taller como se aplica y se descarga un LoRA desde Hugging Face y como se integra en un pipeline de inferencia.
 - Base para un ajuste posterior: partir de este adaptador como inicializacion en un entrenamiento propio con un dataset mas amplio y mejor curado, dado que la licencia MIT permite modificarlo y redistribuirlo.
 
 En todos los casos, el uso practico exige identificar primero el modelo base compatible, dato que no proporciona la model card.
@@ -74,5 +74,5 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Libera2026/anima_lora_birth_head
+- Repositorio en Hugging Face: https://huggingface.co/Libera2026/anima_lora_birth_head
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

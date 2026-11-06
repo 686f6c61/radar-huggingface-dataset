@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CutIA-Qwen-4B-InstructInit-TF-EduHighOnly-midHigh4-gv2sft es un checkpoint experimental de tipo causal language model, publicado por el usuario g4me en HuggingFace. Se trata de un ajuste fino (fine-tune) del modelo g4me/CutIA-Qwen-4B-InstructInit-TF-EduHighOnly, que a su vez parte de la familia Qwen 3, según la etiqueta `qwen3` declarada en el repositorio. El nombre del modelo sugiere un linaje de entrenamiento por fases —inicialización instruct, filtrado de datos educativos de alta calidad y un ajuste supervisado posterior—, aunque el autor no documenta ninguna de estas decisiones en la model card.
+CutIA-Qwen-4B-InstructInit-TF-EduHighOnly-midHigh4-gv2sft es un checkpoint experimental de tipo causal language model, publicado por el usuario g4me en Hugging Face. Se trata de un ajuste fino (fine-tune) del modelo g4me/CutIA-Qwen-4B-InstructInit-TF-EduHighOnly, que a su vez parte de la familia Qwen 3, según la etiqueta `qwen3` declarada en el repositorio. El nombre del modelo sugiere un linaje de entrenamiento por fases —inicialización instruct, filtrado de datos educativos de alta calidad y un ajuste supervisado posterior—, aunque el autor no documenta ninguna de estas decisiones en la model card.
 
 El modelo cuenta con 4.411.424.256 parámetros reales (aproximadamente 4,4 mil millones), almacenados en formato safetensors, lo que lo sitúa en la gama de modelos pequeños que caben holgadamente en una GPU de consumo. Su relevancia actual es limitada pero concreta: es un ejemplo de experimentación comunitaria sobre la base Qwen 3 orientada a dominios educativos, y puede resultar de interés para quienes investigan recetas de ajuste fino iterativo o quieren reproducir la técnica en otros dominios.
 
@@ -41,13 +41,13 @@ En cuanto al entrenamiento, la model card se limita a indicar que se trata de un
 
 ## Casos de uso
 
-- Investigación sobre recetas de ajuste fino por fases: el modelo sirve como artefacto de estudio para analizar cómo afecta una secuencia de inicialización instruct, filtrado de datos y SFT a un modelo Qwen 3 de 4,4 B. Es adecuado porque el linaje completo está publicado como checkpoints separados en HuggingFace.
+- Investigación sobre recetas de ajuste fino por fases: el modelo sirve como artefacto de estudio para analizar cómo afecta una secuencia de inicialización instruct, filtrado de datos y SFT a un modelo Qwen 3 de 4,4 B. Es adecuado porque el linaje completo está publicado como checkpoints separados en Hugging Face.
 - Reproducción de experimentos en dominio educativo: partiendo del checkpoint base `EduHighOnly`, un equipo puede comparar el efecto del ajuste `midHigh4-gv2sft` frente al punto de partida, siempre que genere su propia evaluación, ya que no existe ninguna publicada.
 - Evaluación comparativa de checkpoints comunitarios: dado que el modelo apenas tiene descargas, resulta útil como muestra en estudios sobre calidad y reproducibilidad de modelos pequeños publicados por la comunidad, midiendo con arneses propios (MMLU, GSM8K, tareas en castellano).
 - Prototipado local sin conexión: con 4,4 B de parámetros, el modelo puede ejecutarse en una GPU de consumo de 12-16 GB en precisión reducida, lo que permite validar ideas de producto en un portátil o una estación de trabajo antes de escalar a un modelo mayor.
 - Generación de texto asistida en entornos de investigación: borradores, resúmenes o reformulaciones dentro de un pipeline controlado, con revisión humana obligatoria, dado que no hay datos de fiabilidad ni de tasas de alucinación.
 - Punto de partida para ajuste específico de dominio: al ser un modelo pequeño y con pesos safetensors estándar, es un candidato razonable para LoRA o QLoRA sobre datos propios (legal, sanitario, educativo) si se resuelve antes la cuestión de la licencia.
-- Docencia y formación técnica: puede emplearse en cursos o talleres para ilustrar el ciclo completo de publicación de un modelo en HuggingFace, desde el ajuste hasta la subida de pesos y la model card.
+- Docencia y formación técnica: puede emplearse en cursos o talleres para ilustrar el ciclo completo de publicación de un modelo en Hugging Face, desde el ajuste hasta la subida de pesos y la model card.
 - Banco de pruebas de infraestructura de despliegue: sirve para validar configuraciones de vLLM, TGI o conversiones a GGUF en un tamaño de modelo manejable antes de trasladar la configuración a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -92,7 +92,7 @@ La diferencia fundamental no es de tamaño, sino de madurez: los tres modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHighOnly-midHigh4-gv2sft
+- Modelo en Hugging Face: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHighOnly-midHigh4-gv2sft
 - Modelo base: https://huggingface.co/g4me/CutIA-Qwen-4B-InstructInit-TF-EduHighOnly
 - Perfil del autor: https://huggingface.co/g4me
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

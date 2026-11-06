@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Glimmer-30B es un modelo de lenguaje causal denso de aproximadamente 29,6 mil millones de parámetros, desarrollado por el usuario johnnyai77 en HuggingFace, aunque la model card atribuye su creación a "Meta Superintelligence Lab" sin que exista verificación independiente de dicha autoría. Se presenta como una destilación de un modelo mayor llamado Muse Spark, orientado específicamente a tareas agénticas en hardware de consumo, integrando razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal (texto e imagen) y recuperación ante fallos en un único sistema que puede ejecutarse localmente sin conexión.
+Muse-Glimmer-30B es un modelo de lenguaje causal denso de aproximadamente 29,6 mil millones de parámetros, desarrollado por el usuario johnnyai77 en Hugging Face, aunque la model card atribuye su creación a "Meta Superintelligence Lab" sin que exista verificación independiente de dicha autoría. Se presenta como una destilación de un modelo mayor llamado Muse Spark, orientado específicamente a tareas agénticas en hardware de consumo, integrando razonamiento multi-paso, uso fiable de herramientas, comprensión multimodal (texto e imagen) y recuperación ante fallos en un único sistema que puede ejecutarse localmente sin conexión.
 
 El modelo combina un transformer causal denso con un encoder de percepción basado en ViT-G/14 de aproximadamente 1,8 mil millones de parámetros, lo que le permite procesar entradas intercaladas de texto e imágenes. Su longitud de contexto declarada supera los 131.072 tokens, y está diseñado para funcionar con cuantización de aproximadamente 4 bits, ocupando menos de 20 GB en memoria, lo que lo hace viable en GPUs de consumo de 24 GB o 32 GB. Incluye además un modelo auxiliar de decodificación especulativa basado en DFlash que acelera la generación de tokens entre 1,5x y 3,1x según el hardware.
 
@@ -17,7 +17,7 @@ La relevancia actual de este modelo radica en su enfoque explícito hacia la eje
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 131.072+ tokens |
 | Tipos de cuantizacion | Full precision (FP16/BF16), K-Quant-Dynamic (aprox. 4-bit), K-Quant-17GB (aprox. 4-bit, optimizado para 24 GB VRAM) |
-| Idiomas soportados | Más de 100 idiomas (según model card); en HuggingFace figura como "no disponibles" |
+| Idiomas soportados | Más de 100 idiomas (según model card); en Hugging Face figura como "no disponibles" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 
@@ -71,12 +71,12 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento largo o con herramientas que devuelven resultados inesperados.
 - Limitaciones de contexto: aunque la ventana declarada es de 131.072+ tokens, el patrón de atención local-global puede afectar a la coherencia en secuencias muy largas; no se han publicado pruebas de estrés al respecto.
 - Limitaciones de idioma: aunque se declara soporte para más de 100 idiomas, no se especifica el rendimiento relativo entre ellos; es probable que el inglés tenga mejor calidad que lenguas con menos representación.
-- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo se atribuye a "Meta Superintelligence Lab" sin verificación; el usuario johnnyai77 es el publicador en HuggingFace, lo que genera incertidumbre sobre la autoría real y la procedencia de los pesos.
+- Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo se atribuye a "Meta Superintelligence Lab" sin verificación; el usuario johnnyai77 es el publicador en Hugging Face, lo que genera incertidumbre sobre la autoría real y la procedencia de los pesos.
 - Advertencia para producción: al ser un modelo con cero descargas y cero likes, no hay evidencia de validación comunitaria ni de estabilidad en entornos reales. Se recomienda realizar pruebas exhaustivas antes de desplegarlo en sistemas críticos.
 - Dependencia de hardware específico: las velocidades reportadas se midieron en hardware concreto (RTX 5090, M4/M5 Max); en GPUs más antiguas o con menos memoria, el rendimiento puede degradarse significativamente.
 
 ## Enlaces
 
-- [HuggingFace - johnnyai77/Muse-Glimmer-30B](https://huggingface.co/johnnyai77/Muse-Glimmer-30B)
+- [Hugging Face - johnnyai77/Muse-Glimmer-30B](https://huggingface.co/johnnyai77/Muse-Glimmer-30B)
 - [arXiv:2504.13181 - Perception encoder (referencia)](https://arxiv.org/abs/2504.13181)
 - [arXiv:2602.06036 - DFlash (referencia)](https://arxiv.org/abs/2602.06036)

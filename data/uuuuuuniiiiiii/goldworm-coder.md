@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GoldWorm Coder es un bundle de modelo orientado a agentes de programación locales, publicado por el usuario Uuuuuuniiiiiii en HuggingFace bajo licencia MIT. Su componente central (el "cerebro") es un modelo de lenguaje a nivel de byte de tipo causal transformer con arquitectura de mezcla de expertos (MoE) de 4 expertos temáticos (stories, code, math, wiki). Según la model card, el cerebro base tiene 38M parámetros y alcanza ~113,6M de parámetros contando todos los expertos, con cada experto configurado a d512/L12.
+GoldWorm Coder es un bundle de modelo orientado a agentes de programación locales, publicado por el usuario Uuuuuuniiiiiii en Hugging Face bajo licencia MIT. Su componente central (el "cerebro") es un modelo de lenguaje a nivel de byte de tipo causal transformer con arquitectura de mezcla de expertos (MoE) de 4 expertos temáticos (stories, code, math, wiki). Según la model card, el cerebro base tiene 38M parámetros y alcanza ~113,6M de parámetros contando todos los expertos, con cada experto configurado a d512/L12.
 
 El planteamiento del proyecto es inusual: en lugar de entrenar un modelo generativo grande, el autor construye un agente que usa el MoE para *rankear*, *enrutar* y *verificar*, delegando la generación de lenguaje natural a un modelo auxiliar (qwen2.5-0.5b-GGUF vía llama.cpp). El bundle incluye checkpoints, manifiestos con hashes, scripts de entrenamiento y un sistema de "gate" que valida cada promoción de modelo con umbrales congelados y registro auditable.
 
@@ -93,9 +93,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| goldworm-coder | 38M (cerebro) / ~113,6M con expertos | no disponible | MoE byte-level, agente de ranking/verificacion | MIT | HuggingFace (Uuuuuuniiiiiii/goldworm-coder) |
+| goldworm-coder | 38M (cerebro) / ~113,6M con expertos | no disponible | MoE byte-level, agente de ranking/verificacion | MIT | Hugging Face (Uuuuuuniiiiiii/goldworm-coder) |
 | qwen2.5:0.5b | 0,5B | no disponible | Transformer denso, generacion de texto | Apache 2.0 (segun el modelo original) | Uso como capa de salida auxiliar en este proyecto |
-| goldworm-v6 | no disponible | no disponible | byte-level-transformer, tiny-stories | MIT | HuggingFace (Uuuuuuniiiiiii/goldworm-v6) |
+| goldworm-v6 | no disponible | no disponible | byte-level-transformer, tiny-stories | MIT | Hugging Face (Uuuuuuniiiiiii/goldworm-v6) |
 
 La comparacion directa con qwen2.5:0.5b en las habilidades del agente (mismos prompts) muestra ventaja de goldworm en clasificacion (10/10 frente a 4/10) e inspeccion (4/4 frente a 3/4), empate en chat (5/5) y ligera ventaja en fix (2/2 frente a 1/2 flaky). No hay modelos comparables adicionales de tamano similar con MoE byte-level documentados en la informacion disponible.
 
@@ -115,7 +115,7 @@ La comparacion directa con qwen2.5:0.5b en las habilidades del agente (mismos pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uuuuuuniiiiiii/goldworm-coder
+- Modelo en Hugging Face: https://huggingface.co/Uuuuuuniiiiiii/goldworm-coder
 - Modelo relacionado goldworm-v6: https://huggingface.co/Uuuuuuniiiiiii/goldworm-v6
 - Ficha de goldworm-v6 en free2aitools: https://free2aitools.com/model/uuuuuuniiiiiii/goldworm-v6
 - Explicacion de loslos321-lab/goldworm: https://explaingit.com/loslos321-lab/goldworm

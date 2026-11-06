@@ -69,8 +69,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModernJEV-Decide-Preview | 149,6 M | 4.096 tokens | Clasificación y ranking de decisiones de agente | Apache 2.0 | HuggingFace (preview) |
-| answerdotai/ModernBERT-base | 149 M (modelo base, según la información disponible) | No disponible en la información proporcionada | Encoder de propósito general | No disponible en la información proporcionada | HuggingFace |
+| ModernJEV-Decide-Preview | 149,6 M | 4.096 tokens | Clasificación y ranking de decisiones de agente | Apache 2.0 | Hugging Face (preview) |
+| answerdotai/ModernBERT-base | 149 M (modelo base, según la información disponible) | No disponible en la información proporcionada | Encoder de propósito general | No disponible en la información proporcionada | Hugging Face |
 | Alternativas de enrutamiento de herramientas basadas en LLM generativos | No disponible | No disponible | Selección de herramienta / function calling | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada, por lo que la comparativa se limita a tamaño, licencia y tipo de tarea.
@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview
+- Modelo en Hugging Face: https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview
 - Dataset de entrenamiento: https://huggingface.co/datasets/MaziyarPanahi/AgentToolDecisions-180K
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
-- Perfil del autor en HuggingFace: https://huggingface.co/MaziyarPanahi
+- Perfil del autor en Hugging Face: https://huggingface.co/MaziyarPanahi
 - Publicación del autor en X (coste y entrenamiento en A100): https://x.com/MaziyarPanahi/status/2105952801398419680
 - Publicación del autor en X (presentación del modelo): https://x.com/MaziyarPanahi/status/2105654816399564912
 - Publicación del autor en LinkedIn: https://www.linkedin.com/posts/maziyarpanahi_openai-just-launched-ai-decision-making-as-activity-7511439999662264321-bYfA

@@ -81,9 +81,9 @@ No se han publicado comparaciones con otros modelos de embeddings multilingües 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir-langmoe)
+- [Modelo en Hugging Face](https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir-langmoe)
 - [Modelo base denso](https://huggingface.co/andreasmartin/apertus-v1.5-swiss-embed-4.9b-bidir)
-- [Colección Apertus v1.5 en HuggingFace](https://huggingface.co/collections/swiss-ai/apertus-v15)
+- [Colección Apertus v1.5 en Hugging Face](https://huggingface.co/collections/swiss-ai/apertus-v15)
 - [Apertus AI - Documentación](https://apertus-ai.org/pages/documentation/)
 - [Apertus AI - Página principal](https://apertus-ai.org/)
 - [Apertus (LLM) - Wikipedia](https://en.wikipedia.org/wiki/Apertus_(LLM))

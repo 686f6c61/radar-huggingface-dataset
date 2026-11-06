@@ -4,7 +4,7 @@
 
 El modelo `ValocheRoomates/QwenLora1000FineTune` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario ValocheRoomates, diseñado para fine-tuning del modelo base Qwen/Qwen-Image-Edit-2511, un sistema de edición de imágenes basado en instrucciones. El adaptador se publica bajo licencia Apache 2.0 y está pensado para la tarea de image-to-image, es decir, transformar o editar imágenes a partir de descripciones textuales o instrucciones visuales.
 
-Aunque el nombre sugiere un entrenamiento con aproximadamente 1000 ejemplos, no se dispone de información pública sobre el dataset utilizado, el proceso de entrenamiento ni los resultados obtenidos. El repositorio tiene un tamaño de 0.0 GB, lo que indica que solo contiene los pesos del adaptador LoRA, no el modelo completo. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargarlo.
+Aunque el nombre sugiere un entrenamiento con aproximadamente 1000 ejemplos, no se dispone de información pública sobre el dataset utilizado, el proceso de entrenamiento ni los resultados obtenidos. El repositorio tiene un tamaño de 0.0 GB, lo que indica que solo contiene los pesos del adaptador LoRA, no el modelo completo. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia de este modelo radica en su enfoque de fine-tuning eficiente mediante LoRA sobre un modelo de edición de imágenes de última generación, lo que permite adaptar el comportamiento del modelo base a dominios o estilos específicos sin necesidad de reentrenar todos los parámetros. Sin embargo, al carecer de documentación y métricas, su utilidad práctica queda limitada a la experimentación personal.
 
@@ -31,7 +31,7 @@ No se ha publicado información sobre el dataset de entrenamiento, el número de
 
 - Edición de imágenes guiada por instrucciones: al ser un adaptador sobre Qwen-Image-Edit-2511, hereda la capacidad de modificar imágenes según descripciones textuales (por ejemplo, cambiar el fondo, añadir objetos, alterar colores).
 - Fine-tuning específico de dominio: el adaptador puede ajustar el comportamiento del modelo base para tareas concretas, como estilos artísticos, retoque fotográfico o generación de contenido visual personalizado.
-- Integración con pipelines de image-to-image: compatible con la librería PEFT de HuggingFace, lo que facilita su uso en flujos de trabajo existentes.
+- Integración con pipelines de image-to-image: compatible con la librería PEFT de Hugging Face, lo que facilita su uso en flujos de trabajo existentes.
 - No se dispone de información sobre capacidades adicionales como tool calling, razonamiento multi-paso o soporte multilingüe, ya que no se han documentado.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - Al ser un adaptador LoRA, los requisitos de hardware dependen principalmente del modelo base Qwen-Image-Edit-2511, cuyo tamaño no se ha especificado.
 - Se estima que el modelo base tiene varios miles de millones de parámetros, por lo que se necesitaría una GPU con al menos 16-24 GB de VRAM para inferencia en precisión completa, o menos si se usa cuantización.
 - No se dispone de información sobre latencia o throughput.
-- Opciones de despliegue: al usar PEFT, el adaptador puede cargarse con la librería `peft` de HuggingFace junto con el modelo base. También podría exportarse a formatos como GGUF para su uso con llama.cpp u Ollama, aunque no se ha confirmado.
+- Opciones de despliegue: al usar PEFT, el adaptador puede cargarse con la librería `peft` de Hugging Face junto con el modelo base. También podría exportarse a formatos como GGUF para su uso con llama.cpp u Ollama, aunque no se ha confirmado.
 - Para entrenamiento, se requeriría una GPU con suficiente memoria para el modelo base más los gradientes del adaptador; con QLoRA se podría usar una GPU de 12 GB, pero no hay datos específicos.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Sin documentación: no hay información sobre el proceso de entrenamiento, el dataset ni los resultados, lo que dificulta evaluar su calidad y reproducibilidad.
 - Riesgo de alucinaciones visuales: al ser un adaptador sobre un modelo de edición de imágenes, puede generar modificaciones no deseadas o incoherentes si el entrenamiento no fue suficientemente robusto.
 - Dependencia del modelo base: cualquier limitación del modelo Qwen-Image-Edit-2511 (sesgos, errores de edición, restricciones de idioma) se hereda en el adaptador.
@@ -70,5 +70,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - ValocheRoomates/QwenLora1000FineTune](https://huggingface.co/ValocheRoomates/QwenLora1000FineTune)
+- [Hugging Face - ValocheRoomates/QwenLora1000FineTune](https://huggingface.co/ValocheRoomates/QwenLora1000FineTune)
 - [Modelo base - Qwen/Qwen-Image-Edit-2511](https://huggingface.co/Qwen/Qwen-Image-Edit-2511) (enlace inferido, no confirmado en la información proporcionada)

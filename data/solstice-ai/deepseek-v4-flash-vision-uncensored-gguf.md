@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. El
 ## Limitaciones y advertencias
 
 - Modelo experimental: no se han publicado evaluaciones de rendimiento, seguridad ni fiabilidad.
-- Licencia no confirmada: la etiqueta indica MIT, pero la pagina de HuggingFace no muestra la licencia oficialmente; es necesario verificar antes de un uso comercial.
+- Licencia no confirmada: la etiqueta indica MIT, pero la pagina de Hugging Face no muestra la licencia oficialmente; es necesario verificar antes de un uso comercial.
 - Contenido sin filtrar: al ser "uncensored" y "abliterated", puede generar contenido inapropiado, ofensivo o danino; se recomienda usar con responsabilidad y en entornos controlados.
 - Idiomas limitados: solo se han confirmado ingles y chino mediante etiquetas; no se garantiza un soporte multilingue amplio.
 - Sin especificaciones: la ausencia de datos sobre parametros, contexto o cuantizaciones impide dimensionar correctamente el despliegue.
@@ -76,7 +76,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. El
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Solstice-AI/DeepSeek-V4-Flash-Vision-UNCENSORED-GGUF
 - Modelo original DeepSeek-V4-Flash-Vision-Exp: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Modelo base DeepSeek-V4-Flash: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Modelo abliterado de referencia (segun etiquetas, sin URL confirmada): apetersson/DeepSeek-V4-Flash-Vision-Exp-Abliterated

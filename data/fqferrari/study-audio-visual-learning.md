@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fqferrari/study-audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/fqferrari/study-audio-visual-learning
 - Lista curada de recursos sobre aprendizaje audiovisual (referencia externa): https://github.com/GeWu-Lab/awesome-audiovisual-learning

@@ -61,7 +61,7 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hajunkhk/paper_019671196_grounded_language
+- Repositorio en Hugging Face: https://huggingface.co/hajunkhk/paper_019671196_grounded_language
 - Google Scholar (busqueda general): https://scholar.google.com/
 - Paper relacionado (GLIP): https://arxiv.org/pdf/2112.03857
 - Tutorial NAACL sobre aprendizaje de lenguaje mediante grounding: https://aclanthology.org/2025.naacl-tutorial.6.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `thesudio/qortal-ai-studio-models` es un repositorio publicado en HuggingFace por el usuario `thesudio` con licencia Apache-2.0 y etiqueta `gguf`. Según los metadatos, contiene pesos con un total de 12.895.570.508 parámetros (aproximadamente 12,9 mil millones) y un tamaño de repositorio de 42,4 GB. Sin embargo, la model card está vacía y no se proporciona ninguna documentación técnica, arquitectura, datos de entrenamiento o capacidades. Los resultados de búsqueda web no arrojan información relevante sobre el modelo, ya que las páginas encontradas corresponden a una empresa rumana sin relación aparente. Por tanto, esta ficha se limita a los datos disponibles y marca explícitamente todo lo desconocido como "no disponible".
+El modelo `thesudio/qortal-ai-studio-models` es un repositorio publicado en Hugging Face por el usuario `thesudio` con licencia Apache-2.0 y etiqueta `gguf`. Según los metadatos, contiene pesos con un total de 12.895.570.508 parámetros (aproximadamente 12,9 mil millones) y un tamaño de repositorio de 42,4 GB. Sin embargo, la model card está vacía y no se proporciona ninguna documentación técnica, arquitectura, datos de entrenamiento o capacidades. Los resultados de búsqueda web no arrojan información relevante sobre el modelo, ya que las páginas encontradas corresponden a una empresa rumana sin relación aparente. Por tanto, esta ficha se limita a los datos disponibles y marca explícitamente todo lo desconocido como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -51,6 +51,6 @@ No disponible. No se conocen modelos comparables de la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thesudio/qortal-ai-studio-models
+- Repositorio Hugging Face: https://huggingface.co/thesudio/qortal-ai-studio-models
 
 No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

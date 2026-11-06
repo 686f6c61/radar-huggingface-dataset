@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w15-extractive-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en HuggingFace bajo licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha orientado a tareas de resumen extractivo sobre el corpus BGL (probablemente el dataset de logs BGL, BGL Supercomputer Logs), con una estrategia de muestreo estratificado y una ventana de contexto de trabajo de 15 (w15). No obstante, la model card publicada no documenta estos detalles: se limita a indicar que es un modelo afinado con Unsloth a partir de `unsloth/Qwen3-8B-bnb-4bit`.
+`mrbmaryam/logsumm-bgl-w15-extractive-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, desarrollado por el usuario mrbmaryam y publicado en Hugging Face bajo licencia Apache 2.0. El nombre del repositorio sugiere que el ajuste se ha orientado a tareas de resumen extractivo sobre el corpus BGL (probablemente el dataset de logs BGL, BGL Supercomputer Logs), con una estrategia de muestreo estratificado y una ventana de contexto de trabajo de 15 (w15). No obstante, la model card publicada no documenta estos detalles: se limita a indicar que es un modelo afinado con Unsloth a partir de `unsloth/Qwen3-8B-bnb-4bit`.
 
 El modelo parte de la arquitectura Qwen3, un transformer denso de 8.000 millones de parametros con soporte nativo de razonamiento en modo thinking/no-thinking, tool calling y una ventana de contexto de 32.768 tokens (extensible hasta 131.072 en la familia Qwen3). El ajuste se realizo presuntamente con la libreria Unsloth, que acelera el entrenamiento aproximadamente 2 veces y reduce el uso de memoria, y con TRL para el bucle de SFT. El resultado se distribuye en formato safetensors y es compatible con Text Generation Inference (TGI).
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w15-extractive-stratified-qwen3-8b-sft | 8B (denso) | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste SFT sobre logs BGL, sin benchmarks publicados |
-| Qwen/Qwen3-8B | 8B (denso) | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente adoptado | Modelo base original, con benchmarks publicados (MMLU, HumanEval, GSM8K) |
-| unsloth/Qwen3-8B-bnb-4bit | 8B (denso) | 32.768 | Apache 2.0 | HuggingFace | Version cuantizada a 4 bits del modelo base, usada como punto de partida |
-| Meta-Llama-3.1-8B-Instruct | 8B (denso) | 128.000 | Llama 3.1 Community License | HuggingFace | Alternativa generalista, licencia no totalmente permisiva para uso comercial a gran escala |
+| mrbmaryam/logsumm-bgl-w15-extractive-stratified-qwen3-8b-sft | 8B (denso) | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste SFT sobre logs BGL, sin benchmarks publicados |
+| Qwen/Qwen3-8B | 8B (denso) | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente adoptado | Modelo base original, con benchmarks publicados (MMLU, HumanEval, GSM8K) |
+| unsloth/Qwen3-8B-bnb-4bit | 8B (denso) | 32.768 | Apache 2.0 | Hugging Face | Version cuantizada a 4 bits del modelo base, usada como punto de partida |
+| Meta-Llama-3.1-8B-Instruct | 8B (denso) | 128.000 | Llama 3.1 Community License | Hugging Face | Alternativa generalista, licencia no totalmente permisiva para uso comercial a gran escala |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrbmaryam/logsumm-bgl-w15-extractive-stratified-qwen3-8b-sft
+- Modelo en Hugging Face: https://huggingface.co/mrbmaryam/logsumm-bgl-w15-extractive-stratified-qwen3-8b-sft
 - Modelo base (cuantizado): https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Modelo original Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

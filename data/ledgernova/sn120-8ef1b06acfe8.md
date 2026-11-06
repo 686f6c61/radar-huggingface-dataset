@@ -90,7 +90,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace: ledgernova/sn120-8ef1b06acfe8](https://huggingface.co/ledgernova/sn120-8ef1b06acfe8)
+- [Hugging Face: ledgernova/sn120-8ef1b06acfe8](https://huggingface.co/ledgernova/sn120-8ef1b06acfe8)
 - [Perfil de ledgernova en GitHub](https://github.com/ledgernova)
 - [Página de la subred Affine (SN120) en Bittensor](https://bittensor.ai/subnets/120)
 - [Repositorio LedgerNova (no relacionado directamente, pero aparece en búsquedas)](https://github.com/ArmandSegall/LedgerNova)

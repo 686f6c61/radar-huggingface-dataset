@@ -80,7 +80,7 @@ La model card reporta que el modelo supera los 700 puntos ARC-C en cuantización
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vwdubb/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-FP8
+- Repositorio Hugging Face: https://huggingface.co/vwdubb/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP-FP8
 - Repo del partner (Nightmedia): https://huggingface.co/nightmedia/Qwen3.6-27B-Architect-Polaris2-Fable-B-F451
 - Quants GGUF NEO MAX (MTP y regulares): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP

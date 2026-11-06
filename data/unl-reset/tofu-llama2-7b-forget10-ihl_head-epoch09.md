@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch09 | 6,74B | no disponible (Llama 2: 4096) | llama2 | HuggingFace (0 descargas) | Checkpoint de unlearning, época 9/20 |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | llama2 | HuggingFace | Modelo base del ajuste fino TOFU, sin unlearning |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | llama2 | HuggingFace | Modelo chat de referencia, usado para reinicializar embeddings y LM head |
-| Meta Llama 2 7B | ~6,74B | 4096 | llama2 | HuggingFace / Meta | Modelo original, sin ajuste fino TOFU |
+| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch09 | 6,74B | no disponible (Llama 2: 4096) | llama2 | Hugging Face (0 descargas) | Checkpoint de unlearning, época 9/20 |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 | llama2 | Hugging Face | Modelo base del ajuste fino TOFU, sin unlearning |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | llama2 | Hugging Face | Modelo chat de referencia, usado para reinicializar embeddings y LM head |
+| Meta Llama 2 7B | ~6,74B | 4096 | llama2 | Hugging Face / Meta | Modelo original, sin ajuste fino TOFU |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch09
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch09
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de reinicialización de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

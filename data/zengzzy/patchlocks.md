@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PatchLocks es un modelo de difusión para reconstruir pelaje animal como mechones (strands) individuales de geometría 3D a partir de imágenes multivista, empleando un único prior de parche aprendido. Lo publica el usuario zengzzy en HuggingFace, y el repositorio contiene exclusivamente los pesos del modelo; el código, la documentación y la guía de uso están en el repositorio de GitHub github.com/CCdydy/PatchLocks.
+PatchLocks es un modelo de difusión para reconstruir pelaje animal como mechones (strands) individuales de geometría 3D a partir de imágenes multivista, empleando un único prior de parche aprendido. Lo publica el usuario zengzzy en Hugging Face, y el repositorio contiene exclusivamente los pesos del modelo; el código, la documentación y la guía de uso están en el repositorio de GitHub github.com/CCdydy/PatchLocks.
 
 El modelo resuelve el problema de convertir observaciones 2D (varias vistas de un animal) en representaciones de pelo explícitas como mechones, un paso necesario para renderizado realista, generación de assets y simulación capilar. La arquitectura combina un codec de mechones (z64 ↔ strand) heredado de DiffLocks, un modelo de difusión EDM sobre latentes de mechón de 64 canales y un backbone de condicionamiento DINOv2 cargado vía torch.hub.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Ambito | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PatchLocks | Reconstruccion de pelaje multivista | no disponible | no aplicable | no disponible | Pesos en HuggingFace (zengzzy/PatchLocks) |
+| PatchLocks | Reconstruccion de pelaje multivista | no disponible | no aplicable | no disponible | Pesos en Hugging Face (zengzzy/PatchLocks) |
 | DiffLocks | Reconstruccion de pelo (origen del codec) | no disponible | no aplicable | no disponible | Proyecto en difflocks.is.tue.mpg.de |
 | Otros metodos de reconstruccion de pelo/pelaje | Reconstruccion capilar | no disponible | no aplicable | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ La informacion disponible solo permite senalar a DiffLocks como referencia direc
 
 ## Enlaces
 
-- HuggingFace (pesos): https://huggingface.co/zengzzy/PatchLocks
+- Hugging Face (pesos): https://huggingface.co/zengzzy/PatchLocks
 - Codigo, documentacion y guia de uso: https://github.com/CCdydy/PatchLocks
 - Guia de uso: https://github.com/CCdydy/PatchLocks/blob/main/docs/USAGE.md
 - Dataset: https://huggingface.co/datasets/zengzzy/PatchLocks-data

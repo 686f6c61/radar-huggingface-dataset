@@ -89,7 +89,7 @@ La cuantización NVFP4 de NVIDIA reduce el tamaño del modelo respecto al checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/DeepSeek-V4-Flash-0731-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/nvidia/DeepSeek-V4-Flash-0731-NVFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731/blob/main/LICENSE
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

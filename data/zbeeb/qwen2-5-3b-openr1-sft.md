@@ -22,7 +22,7 @@ Su relevancia actual es doble: por un lado, ofrece una instantánea limpia de la
 | Formato de pesos | Safetensors (tensores guardados en F32), compatible con `transformers` |
 | Framework de entrenamiento | Prime RL 0.9.0 |
 | Tamano del repositorio | 13,6 GB |
-| Fecha de publicacion indicada | 2026-10-06 (segun HuggingFace) |
+| Fecha de publicacion indicada | 2026-10-06 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,7 +95,7 @@ La comparacion relevante es contra Qwen2.5-3B-Instruct: mismo tamano y misma lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-3B-OpenR1-SFT
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-3B-OpenR1-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Dataset de SFT: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset de RL posterior del estudio: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k

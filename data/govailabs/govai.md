@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos publicados para govai 2B, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/govailabs/govai
+- Modelo en Hugging Face: https://huggingface.co/govailabs/govai
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Ejecución en Ollama: `ollama run hf.co/venkatagovindneelapu/govai:Q4_K_M`
 - Ejecución en llama.cpp: `llama-cli -hf venkatagovindneelapu/govai --jinja`

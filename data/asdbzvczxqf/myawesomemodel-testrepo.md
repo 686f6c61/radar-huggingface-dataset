@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDBZVCZXQF bajo el identificador `ASDBZVCZXQF/MyAwesomeModel-TestRepo`. Se distribuye declarando la libreria `transformers`, etiquetas de PyTorch y `endpoints_compatible`, y licencia MIT. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes; el propio sufijo "TestRepo" del identificador apunta a que se trata de un repositorio de prueba o de una plantilla de model card, mas que de un modelo entrenado y publicado de forma operativa.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDBZVCZXQF bajo el identificador `ASDBZVCZXQF/MyAwesomeModel-TestRepo`. Se distribuye declarando la libreria `transformers`, etiquetas de PyTorch y `endpoints_compatible`, y licencia MIT. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes; el propio sufijo "TestRepo" del identificador apunta a que se trata de un repositorio de prueba o de una plantilla de model card, mas que de un modelo entrenado y publicado de forma operativa.
 
 La model card describe una actualizacion de version sobre un modelo anterior, con mejoras en profundidad de razonamiento atribuidas a un mayor uso de recursos de computo y a "mecanismos de optimizacion algoritmica" durante el post-entrenamiento. Afirma mejoras en matematicas, programacion y logica general, ademas de una reduccion de la tasa de alucinacion y mejor soporte de function calling. Cita de forma explicita que la precision en AIME 2025 pasa del 70% en la version previa al 87,5% en la actual, y que el consumo medio de tokens por pregunta en ese conjunto sube de 12K a 23K.
 
@@ -121,7 +121,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2", to
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDBZVCZXQF/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/ASDBZVCZXQF/MyAwesomeModel-TestRepo
 - Repositorio de codigo para ejecucion local: mencionado en la model card, pero sin URL concreta en la informacion disponible.
 - Sitio web oficial con interfaz de chat y API: mencionado en la model card, pero sin URL concreta en la informacion disponible.
 - Paper: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Shiki42/q4a-putcab-ctr-mask-dp-e1009-step66474-training-state` es un checkpoint de entrenamiento completo publicado por el usuario Shiki42 en HuggingFace, no un modelo listo para inferencia en el sentido habitual. Corresponde al experimento E1009 del proyecto CTR, en su variante Q4-A PutCab (simulación) con política DP y máscara de inactividad (idle mask), y se encuentra en el paso de optimizador 66474. Incluye pesos, estado del optimizador y estado del cargador de datos, lo que permite reanudar el entrenamiento exactamente donde se interrumpió.
+El repositorio `Shiki42/q4a-putcab-ctr-mask-dp-e1009-step66474-training-state` es un checkpoint de entrenamiento completo publicado por el usuario Shiki42 en Hugging Face, no un modelo listo para inferencia en el sentido habitual. Corresponde al experimento E1009 del proyecto CTR, en su variante Q4-A PutCab (simulación) con política DP y máscara de inactividad (idle mask), y se encuentra en el paso de optimizador 66474. Incluye pesos, estado del optimizador y estado del cargador de datos, lo que permite reanudar el entrenamiento exactamente donde se interrumpió.
 
 El checkpoint se publicó el 27 de septiembre de 2026 con el propósito explícito de preservar todos los checkpoints antes del apagado del servidor de entrenamiento donde se generaron. El autor indica que la ruta original en la máquina de entrenamiento era `/root/autodl-tmp/ctr-q4a-training-20260922/E1009/train/checkpoints/066474` y que el estado de evaluación, junto con las advertencias correspondientes, se documenta en el registro del experimento CTR E1009, no en la propia model card.
 
@@ -73,7 +73,7 @@ La model card no identifica modelos comparables ni se dispone de datos de rendim
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q4a-putcab-ctr-mask-dp-e1009-step66474-training-state | no disponible | no aplica | no disponible | other | HuggingFace, 0 descargas, 0 likes |
+| q4a-putcab-ctr-mask-dp-e1009-step66474-training-state | no disponible | no aplica | no disponible | other | Hugging Face, 0 descargas, 0 likes |
 | Alternativas de robotica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ La model card no identifica modelos comparables ni se dispone de datos de rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/q4a-putcab-ctr-mask-dp-e1009-step66474-training-state
+- Hugging Face: https://huggingface.co/Shiki42/q4a-putcab-ctr-mask-dp-e1009-step66474-training-state
 - Registro del experimento CTR E1009: mencionado en la model card, sin enlace publicado
 - Paper, blog, repositorio o demo adicionales: no disponible

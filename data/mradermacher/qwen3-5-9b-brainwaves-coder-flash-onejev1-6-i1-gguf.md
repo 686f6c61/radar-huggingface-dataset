@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo para este modelo concreto, por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-i1-GGUF
 - Modelo base: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.5-9B-Brainwaves-Coder-Flash-OneJev1.6-i1-GGUF

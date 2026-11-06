@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JJJLIU/aetherland-drone-person-detector` está alojado en HuggingFace bajo el identificador indicado. Según la información disponible, no se proporciona ninguna descripción técnica, arquitectura, datos de entrenamiento ni documentación adicional en la model card. El único dato confirmado es que se distribuye bajo licencia Apache 2.0. No existen métricas de uso (descargas ni likes), por lo que se trata de un modelo sin adopción visible ni evidencias de funcionamiento.
+El modelo `JJJLIU/aetherland-drone-person-detector` está alojado en Hugging Face bajo el identificador indicado. Según la información disponible, no se proporciona ninguna descripción técnica, arquitectura, datos de entrenamiento ni documentación adicional en la model card. El único dato confirmado es que se distribuye bajo licencia Apache 2.0. No existen métricas de uso (descargas ni likes), por lo que se trata de un modelo sin adopción visible ni evidencias de funcionamiento.
 
 Dado el nombre del repositorio, es plausible que el modelo esté orientado a la detección de personas en imágenes captadas por drones, pero no se dispone de ningún detalle técnico que lo confirme. La ficha refleja únicamente los datos disponibles, sin extrapolar información no confirmada.
 
@@ -47,9 +47,9 @@ No disponible.
 
 - No existe documentación técnica ni model card descriptiva, lo que impide evaluar su funcionamiento, sesgos, riesgos de alucinación o limitaciones de idioma.
 - La ausencia de métricas de uso (descargas, likes) y de benchmarks sugiere que el modelo podría estar sin validar o sin uso real.
-- Al no conocerse el formato de pesos, no es posible integrar el modelo en entornos estándar como vLLM, llama.cpp o HuggingFace Transformers de forma fiable.
+- Al no conocerse el formato de pesos, no es posible integrar el modelo en entornos estándar como vLLM, llama.cpp o Hugging Face Transformers de forma fiable.
 - La licencia Apache 2.0 permite uso comercial, pero sin información sobre el funcionamiento, no es recomendable su utilización en producción.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [https://huggingface.co/JJJLIU/aetherland-drone-person-detector](https://huggingface.co/JJJLIU/aetherland-drone-person-detector)
+- Repositorio en Hugging Face: [https://huggingface.co/JJJLIU/aetherland-drone-person-detector](https://huggingface.co/JJJLIU/aetherland-drone-person-detector)

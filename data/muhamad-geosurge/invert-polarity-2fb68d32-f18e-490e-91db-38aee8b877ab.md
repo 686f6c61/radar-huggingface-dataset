@@ -102,9 +102,9 @@ La comparacion directa con otros ajustes finos de la misma categoria no esta dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-2fb68d32-f18e-490e-91db-38aee8b877ab
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-2fb68d32-f18e-490e-91db-38aee8b877ab
 - Informe tecnico de Gemma 4 (arXiv): https://arxiv.org/abs/2607.02770
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

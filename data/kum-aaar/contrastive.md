@@ -64,4 +64,4 @@ No disponible. No se han identificado modelos comparables con las mismas caracte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kum-aaar/contrastive
+- Hugging Face: https://huggingface.co/Kum-aaar/contrastive

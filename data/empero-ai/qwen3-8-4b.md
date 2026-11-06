@@ -88,7 +88,7 @@ La unica comparativa publicada es contra su base Qwen3.5-4B (tabla de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empero-ai/Qwen3.8-4B
+- Modelo en Hugging Face: https://huggingface.co/empero-ai/Qwen3.8-4B
 - Sitio del desarrollador (Empero): https://empero.org
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Libreria de kernels de atencion lineal: https://github.com/fla-org/flash-linear-attention

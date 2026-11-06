@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FRED Stage 2 (Qwen2.5-3B) | 3.000 M + LoRA | 2.048 tokens de entrenamiento | Verificación selectiva y edición de alucinaciones financieras | Apache 2.0 | HuggingFace y GitHub |
-| Qwen2.5-3B-Instruct | 3.000 M | no disponible en esta ficha | Asistente generalista | Apache 2.0 | HuggingFace |
+| FRED Stage 2 (Qwen2.5-3B) | 3.000 M + LoRA | 2.048 tokens de entrenamiento | Verificación selectiva y edición de alucinaciones financieras | Apache 2.0 | Hugging Face y GitHub |
+| Qwen2.5-3B-Instruct | 3.000 M | no disponible en esta ficha | Asistente generalista | Apache 2.0 | Hugging Face |
 | Modelos de detección de alucinaciones de propósito general | no disponible | no disponible | Clasificación binaria de fidelidad | variable | no disponible |
 
 La comparación con alternativas especializadas en detección de alucinaciones financieras no está disponible en la información proporcionada. Frente al modelo base, FRED Stage 2 añade un comportamiento estructurado de cinco acciones y etiquetado XML, a costa de un dominio de aplicación mucho más estrecho y de una ventana de contexto de entrenamiento de 2.048 tokens.
@@ -88,7 +88,7 @@ La comparación con alternativas especializadas en detección de alucinaciones f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akash-Purbhi/fredphase2-qwen2.5-3b
+- Hugging Face: https://huggingface.co/Akash-Purbhi/fredphase2-qwen2.5-3b
 - GitHub del proyecto FRED: https://github.com/Akash-Purbhi/FRED
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset FinQA: https://huggingface.co/datasets/FinQA

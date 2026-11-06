@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento comparativos. El adaptador LoRA no altera 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/smartm2mbdg/muse-glimmer-30b-nettools-lora-ep10
-- Modelo base en HuggingFace: https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Repositorio Hugging Face: https://huggingface.co/smartm2mbdg/muse-glimmer-30b-nettools-lora-ep10
+- Modelo base en Hugging Face: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Página oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Artículo en LM Studio: https://lmstudio.ai/models/meta/muse-glimmer
 - Sitio no oficial: https://museglimmer.site/

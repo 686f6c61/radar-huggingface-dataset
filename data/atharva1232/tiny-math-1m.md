@@ -110,9 +110,9 @@ No se dispone de datos en la informacion proporcionada para comparar con modelos
 - Precision estadistica: los numeros principales usan n=5000 (±0,6 pp al 95 %) y las filas de extrapolacion n≈2000 (±2,2 pp al 95 %); en filas con 0 % o 100 % el intervalo es irrelevante.
 - La metrica principal esta marcada como `verified: false` en el `model-index`: es un resultado autodeclarado por el autor, no replicado de forma independiente.
 - Uso comercial: tecnicamente permitido por Apache 2.0, pero el modelo carece de cualquier aplicacion productiva real; emplearlo en un sistema en produccion seria un error de diseno.
-- No hay versiones cuantizadas, ni soporte para runtimes de inferencia estandar, ni pipeline declarado en HuggingFace, lo que anade friccion de integracion incluso en contextos de investigacion.
+- No hay versiones cuantizadas, ni soporte para runtimes de inferencia estandar, ni pipeline declarado en Hugging Face, lo que anade friccion de integracion incluso en contextos de investigacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atharva1232/tiny-math-1m
+- Modelo en Hugging Face: https://huggingface.co/Atharva1232/tiny-math-1m
 - Paper de referencia citado: *Teaching Arithmetic to Small Transformers*, https://arxiv.org/abs/2307.03381

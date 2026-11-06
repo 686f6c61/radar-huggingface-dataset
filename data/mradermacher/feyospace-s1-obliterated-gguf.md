@@ -2,7 +2,7 @@
 
 ## Resumen
 
-feyospace-s1-OBLITERATED-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher a partir del modelo OBLITERATUS/feyospace-s1-OBLITERATED. No se trata de un modelo entrenado desde cero, sino de una conversión estática a GGUF pensada para su ejecución en llama.cpp, Ollama y otros runners compatibles con este formato. El autor es un conocido cuantizador de la comunidad, que distribuye estas versiones desde su cuenta de HuggingFace y desde su página de resumen en hf.tst.eu.
+feyospace-s1-OBLITERATED-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por mradermacher a partir del modelo OBLITERATUS/feyospace-s1-OBLITERATED. No se trata de un modelo entrenado desde cero, sino de una conversión estática a GGUF pensada para su ejecución en llama.cpp, Ollama y otros runners compatibles con este formato. El autor es un conocido cuantizador de la comunidad, que distribuye estas versiones desde su cuenta de Hugging Face y desde su página de resumen en hf.tst.eu.
 
 El modelo base cuenta con 27.320.697.856 parámetros reales (aproximadamente 27,3 mil millones, según los pesos en safetensors) y está etiquetado con las etiquetas cybersecurity, abliterated, qwen3.5, obliteratus y aspa, lo que sugiere una especialización en tareas de ciberseguridad y un proceso de abliteración (eliminación de direcciones de rechazo) sobre un modelo de la familia Qwen3.5. Esta orientación lo hace relevante para equipos que necesitan un modelo local, sin censura incorporada y con licencia Apache 2.0 para trabajo ofensivo o defensivo en seguridad.
 

@@ -98,7 +98,7 @@ La información proporcionada no incluye datos de otros modelos comparables (FLU
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AcademiaSD/Ming-Image-NF4-for-LoRA-Training
+- Repositorio en Hugging Face: https://huggingface.co/AcademiaSD/Ming-Image-NF4-for-LoRA-Training
 - Modelo original: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Repositorio GitHub del modelo original: https://github.com/inclusionAI/Ming-Image
 - Entrenador AcademiaSD LoRAlab Trainer Studio: https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio

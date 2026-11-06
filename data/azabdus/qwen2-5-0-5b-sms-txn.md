@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| azabdus/qwen2.5-0.5b-sms-txn | 494 M | no disponible | Extraccion de transacciones desde SMS indios | Apache 2.0 | HuggingFace, 20 descargas |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 494 M | no disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | HuggingFace |
+| azabdus/qwen2.5-0.5b-sms-txn | 494 M | no disponible | Extraccion de transacciones desde SMS indios | Apache 2.0 | Hugging Face, 20 descargas |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 494 M | no disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en esta ficha | Proposito general, instrucciones | Apache 2.0 | Hugging Face |
 
 La comparacion relevante es con su propio modelo base: el ajuste sacrifica generalidad a cambio de una precision del 98,5% en una tarea concreta, con un coste de entrenamiento de una sola GPU T4 y una epoca. Frente a un modelo mayor como Qwen2.5-1,5B-Instruct, el de 0,5B ofrece menor capacidad general pero menores requisitos de memoria y latencia. No se dispone de datos de benchmarks comparativos directos entre estos modelos en la informacion proporcionada.
 
@@ -87,5 +87,5 @@ La comparacion relevante es con su propio modelo base: el ajuste sacrifica gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azabdus/qwen2.5-0.5b-sms-txn
+- Modelo en Hugging Face: https://huggingface.co/azabdus/qwen2.5-0.5b-sms-txn
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

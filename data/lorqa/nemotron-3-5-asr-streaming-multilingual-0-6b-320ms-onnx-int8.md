@@ -20,7 +20,7 @@ Su relevancia practica es doble: por un lado permite ejecutar ASR multilingue en
 | Idiomas soportados | zh, en, ja y multilingue (la tarjeta declara multilingue; la informacion de busqueda atribuye al modelo de origen 40 locales con acondicionamiento por language-ID) |
 | Licencia | OpenMDW 1.1 |
 | Formato de pesos | ONNX (bundle con `encoder.int8.onnx`, `decoder.int8.onnx`, `joiner.int8.onnx`, `tokens.txt`); no es Core ML ni GGUF |
-| Tamano del bundle | 682.215.471 bytes, aproximadamente 682 MB (tamano del repo en HuggingFace: 0,7 GB) |
+| Tamano del bundle | 682.215.471 bytes, aproximadamente 682 MB (tamano del repo en Hugging Face: 0,7 GB) |
 | Extractor de caracteristicas | 128 bins |
 | Runtime recomendado | sherpa-onnx con soporte para Nemotron 3.5 multilingual; requiere onnxruntime |
 | Revision de origen | `424ce58898995b713f84341f2e1492f9207a26aa` |
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado (WER, RTF) que permitan ordenar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-onnx-int8
 - Espejo en ModelScope: https://modelscope.cn/models/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-320ms-onnx-int8
 - Bundle de origen (csukuangfj2, revision 424ce58898995b713f84341f2e1492f9207a26aa): https://huggingface.co/csukuangfj2/sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-320ms-int8-2026-06-11
 - Modelo fuente de NVIDIA: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b

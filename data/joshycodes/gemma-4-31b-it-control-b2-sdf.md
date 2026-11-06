@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-4-31b-it-control-B2-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-4-31b-it-control-B2-sdf
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Corpus citado por el autor: `joshycodes/qwen3-32b-commitments-corpus` (referenciado en la model card; no se ha proporcionado URL verificada)
 - Repositorio «welfare-improvements» (marco, plan y evaluación, según el autor; no se ha proporcionado URL verificada)

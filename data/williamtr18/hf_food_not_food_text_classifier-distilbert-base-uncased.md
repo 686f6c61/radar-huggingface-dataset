@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario obtenido mediante ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario williamtr18 en HuggingFace y su propósito, deducible del propio nombre del repositorio, es distinguir si un texto trata sobre comida o no. Se trata, por tanto, de un modelo discriminativo de dominio muy concreto, no de un modelo generativo de propósito general.
+El modelo `williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased` es un clasificador de texto binario obtenido mediante ajuste fino (*fine-tuning*) de `distilbert/distilbert-base-uncased`. Lo publica el usuario williamtr18 en Hugging Face y su propósito, deducible del propio nombre del repositorio, es distinguir si un texto trata sobre comida o no. Se trata, por tanto, de un modelo discriminativo de dominio muy concreto, no de un modelo generativo de propósito general.
 
 Técnicamente es un transformer encoder de 66.955.010 parámetros (aproximadamente 67 M), con una ventana máxima de 512 tokens heredada del modelo base, pesos en formato safetensors y licencia Apache 2.0. La model card es la generada automáticamente por la librería `Trainer` de Transformers y no aporta información sobre el conjunto de datos, los usos previstos ni el mapeo de etiquetas.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada: el repositorio acumula 0 descargas y 0 *likes*
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la de DistilBERT: un transformer encoder con 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, obtenido por destilación de conocimiento a partir de BERT-base en el modelo original de HuggingFace. Sobre ese *checkpoint* se ha añadido una cabeza de clasificación (`DistilBertForSequenceClassification`), que en este caso produce una decisión binaria. El tokenizador asociado es WordPiece sin distinción de mayúsculas (*uncased*), con un vocabulario de 30.522 tokens.
+La arquitectura es la de DistilBERT: un transformer encoder con 6 capas, 768 dimensiones ocultas y 12 cabezas de atención, obtenido por destilación de conocimiento a partir de BERT-base en el modelo original de Hugging Face. Sobre ese *checkpoint* se ha añadido una cabeza de clasificación (`DistilBertForSequenceClassification`), que en este caso produce una decisión binaria. El tokenizador asociado es WordPiece sin distinción de mayúsculas (*uncased*), con un vocabulario de 30.522 tokens.
 
 En cuanto al entrenamiento, la model card indica que se usó un conjunto de datos no identificado ("an unknown dataset") y proporciona los hiperparámetros: tasa de aprendizaje 1e-4, tamaño de lote 32 (entrenamiento y evaluación), 10 épocas, semilla 42, optimizador `AdamW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-8, y planificador lineal. El registro de pasos muestra 70 pasos totales, es decir, 7 pasos por época; con un lote de 32, esto implica aproximadamente 224 ejemplos de entrenamiento, una cifra muy reducida que explica la pérdida de validación de 0,0005 y la exactitud de 1,0 reportadas. No se documenta ningún proceso de RLHF, DPO ni innovación técnica adicional (no hay decodificación especulativa, atención lineal ni mecanismos híbridos, dado que es un modelo encoder puro).
 
@@ -38,7 +38,7 @@ En cuanto al entrenamiento, la model card indica que se usó un conjunto de dato
 - Clasificación de texto en dos clases: el modelo emite una etiqueta por secuencia de entrada mediante una cabeza de clasificación; la semántica exacta de las etiquetas no está documentada, pero el nombre del repositorio apunta a "comida" frente a "no comida".
 - Procesamiento de secuencias de hasta 512 tokens, suficiente para párrafos cortos, descripciones de productos, reseñas o líneas de menú.
 - Inferencia eficiente en CPU y GPU por su reducido tamaño (67 M de parámetros).
-- Integración directa con `transformers` (`pipeline("text-classification")`) y con `text-embeddings-inference` según las etiquetas del repositorio, lo que permite servirlo tras un endpoint compatible con la API de HuggingFace.
+- Integración directa con `transformers` (`pipeline("text-classification")`) y con `text-embeddings-inference` según las etiquetas del repositorio, lo que permite servirlo tras un endpoint compatible con la API de Hugging Face.
 - No soporta generación de texto, razonamiento, código, matemáticas ni visión.
 - No dispone de *tool calling*, *function calling* ni capacidades de agente o razonamiento multi-paso.
 - No hay evidencia de capacidades multilingües: el modelo base es exclusivamente en inglés y la model card no declara idiomas.
@@ -82,10 +82,10 @@ La comparación se limita a características estructurales y de licencia, ya que
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (DistilBERT fine-tuned) | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace, safetensors | Cabeza binaria de dominio específico; sin documentación ni benchmarks |
-| distilbert-base-uncased | 66,96 M | 512 tokens | Apache 2.0 | HuggingFace | Modelo base sin ajustar; requiere fine-tuning para clasificación |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace | Mayor tamaño y coste; referencia habitual en clasificación de texto en inglés |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace | Tokenizador BPE con mejor tratamiento de mayúsculas y subpalabras |
+| Este modelo (DistilBERT fine-tuned) | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face, safetensors | Cabeza binaria de dominio específico; sin documentación ni benchmarks |
+| distilbert-base-uncased | 66,96 M | 512 tokens | Apache 2.0 | Hugging Face | Modelo base sin ajustar; requiere fine-tuning para clasificación |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face | Mayor tamaño y coste; referencia habitual en clasificación de texto en inglés |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face | Tokenizador BPE con mejor tratamiento de mayúsculas y subpalabras |
 
 No hay datos de rendimiento que permitan establecer una comparación cuantitativa con estas alternativas.
 
@@ -103,6 +103,6 @@ No hay datos de rendimiento que permitan establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos correspondían a documentación de soporte de Windows y no guardan relación con el modelo. No se dispone de paper, blog, repositorio adicional ni demo asociados.

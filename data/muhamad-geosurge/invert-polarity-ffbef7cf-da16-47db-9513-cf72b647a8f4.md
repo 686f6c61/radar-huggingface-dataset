@@ -88,9 +88,9 @@ Frente al modelo base, este finetune ocupa mas espacio en disco (15,1 GB) y no a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-ffbef7cf-da16-47db-9513-cf72b647a8f4
+- Repositorio en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-ffbef7cf-da16-47db-9513-cf72b647a8f4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

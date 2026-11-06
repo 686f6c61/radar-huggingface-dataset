@@ -86,7 +86,7 @@ La informacion proporcionada no incluye datos de rendimiento comparativo con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nori-sdc/Qwen3.5-4B-SoraEyeAI-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nori-sdc/Qwen3.5-4B-SoraEyeAI-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio del modelo base en GGUF usado para el ajuste: https://huggingface.co/unsloth/Qwen3.5-4B-GGUF
 - Aplicacion SoraEyeAI en la App Store: https://apps.apple.com/jp/app/soraeyeai/id6818048876

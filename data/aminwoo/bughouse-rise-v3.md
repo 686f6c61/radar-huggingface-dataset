@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `aminwoo/bughouse-rise-v3` es un modelo de red neuronal especializado en la variante de ajedrez por equipos conocida como Bughouse. Desarrollado por el usuario aminwoo, forma parte del repositorio `hivemind-networks` en GitHub, donde se publican modelos en formato ONNX y PyTorch entrenados mediante aprendizaje supervisado y por refuerzo a partir de partidas procedentes de Chess.com y FICS. Aunque la ficha en HuggingFace no proporciona detalles técnicos, la información del repositorio indica que el modelo está diseñado para jugar o asistir en partidas de Bughouse, una modalidad que combina estrategia clásica con dinámicas de equipo y capturas intercambiables.
+El modelo `aminwoo/bughouse-rise-v3` es un modelo de red neuronal especializado en la variante de ajedrez por equipos conocida como Bughouse. Desarrollado por el usuario aminwoo, forma parte del repositorio `hivemind-networks` en GitHub, donde se publican modelos en formato ONNX y PyTorch entrenados mediante aprendizaje supervisado y por refuerzo a partir de partidas procedentes de Chess.com y FICS. Aunque la ficha en Hugging Face no proporciona detalles técnicos, la información del repositorio indica que el modelo está diseñado para jugar o asistir en partidas de Bughouse, una modalidad que combina estrategia clásica con dinámicas de equipo y capturas intercambiables.
 
-La relevancia de este modelo radica en su aplicación a un nicho específico dentro de la inteligencia artificial aplicada a juegos de mesa, donde la mayoría de los desarrollos se centran en el ajedrez estándar. Su disponibilidad en formato ONNX facilita su integración en diferentes entornos de inferencia, aunque el repositorio no especifica el tamaño, la arquitectura ni el contexto de entrenamiento. El modelo fue creado el 20 de agosto de 2026 y actualizado dos minutos después, con un tamaño de repositorio de 0.0 GB, lo que sugiere que podría tratarse de un modelo pequeño o que los archivos no están alojados directamente en HuggingFace.
+La relevancia de este modelo radica en su aplicación a un nicho específico dentro de la inteligencia artificial aplicada a juegos de mesa, donde la mayoría de los desarrollos se centran en el ajedrez estándar. Su disponibilidad en formato ONNX facilita su integración en diferentes entornos de inferencia, aunque el repositorio no especifica el tamaño, la arquitectura ni el contexto de entrenamiento. El modelo fue creado el 20 de agosto de 2026 y actualizado dos minutos después, con un tamaño de repositorio de 0.0 GB, lo que sugiere que podría tratarse de un modelo pequeño o que los archivos no están alojados directamente en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -58,11 +58,11 @@ No se dispone de información sobre modelos comparables específicos para Bughou
 - No se dispone de información sobre sesgos, alucinaciones o limitaciones de contexto, ya que el modelo no es un LLM.
 - El modelo está especializado exclusivamente en Bughouse; no es aplicable a otras variantes de ajedrez ni a tareas generales.
 - La licencia no está especificada, por lo que se desconoce si permite uso comercial o restricciones de redistribución.
-- El tag `region:us` en HuggingFace podría indicar una restricción geográfica, pero no se aclara su significado.
-- El tamaño del repositorio es 0.0 GB, lo que sugiere que los pesos podrían no estar alojados en HuggingFace o que el modelo es extremadamente pequeño; se recomienda verificar el repositorio de GitHub para obtener los archivos reales.
+- El tag `region:us` en Hugging Face podría indicar una restricción geográfica, pero no se aclara su significado.
+- El tamaño del repositorio es 0.0 GB, lo que sugiere que los pesos podrían no estar alojados en Hugging Face o que el modelo es extremadamente pequeño; se recomienda verificar el repositorio de GitHub para obtener los archivos reales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aminwoo/bughouse-rise-v3
+- Hugging Face: https://huggingface.co/aminwoo/bughouse-rise-v3
 - Repositorio GitHub (hivemind-networks): https://github.com/aminwoo/hivemind-networks
 - Perfil de GitHub del autor: https://github.com/aminwoo/

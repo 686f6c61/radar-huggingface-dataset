@@ -75,9 +75,9 @@ No se dispone de datos comparativos publicados para este modelo. Como referencia
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Pranjalps1/Qwen3.5-2B-Code-Python
-- Repositorio HuggingFace del modelo base (safetensors): https://huggingface.co/Pranjalps1/Qwen3.5-2B-Code-Base
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Pranjalps1/Qwen3.5-2B-Code-Python
+- Repositorio Hugging Face del modelo base (safetensors): https://huggingface.co/Pranjalps1/Qwen3.5-2B-Code-Base
 - Página oficial de Qwen3.5 (blog de Alibaba): https://qwen.ai/blog?id=qwen3.5
 - Guía sobre Qwen 3.5 en Substack: https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks
 - Ficha de Qwen3.5-2B en Qualcomm AI Hub: https://aihub.qualcomm.com/compute/models/qwen3_5_2b
-- Página de Qwen/Qwen3.5-2B en HuggingFace (referencia del modelo original): https://huggingface.co/Qwen/Qwen3.5-2B
+- Página de Qwen/Qwen3.5-2B en Hugging Face (referencia del modelo original): https://huggingface.co/Qwen/Qwen3.5-2B

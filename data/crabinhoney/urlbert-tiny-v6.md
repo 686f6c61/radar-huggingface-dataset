@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CrabInHoney/urlbert-tiny-v6
+- Hugging Face: https://huggingface.co/CrabInHoney/urlbert-tiny-v6
 - Colección urlbert: https://huggingface.co/collections/CrabInHoney/urlbert
 - urlbert-tiny-base-v4: https://huggingface.co/CrabInHoney/urlbert-tiny-base-v4
 - urlbert-tiny-v2-phishing-classifier: https://huggingface.co/CrabInHoney/urlbert-tiny-v2-phishing-classifier

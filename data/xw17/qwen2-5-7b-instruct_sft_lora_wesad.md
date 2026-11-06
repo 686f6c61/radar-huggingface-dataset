@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/Qwen2.5-7B-Instruct_SFT_lora_wesad es un ajuste fino publicado en HuggingFace por el usuario xw17. El nombre del repositorio indica que se trata de un adapter LoRA obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base Qwen2.5-7B-Instruct, y que el corpus de ajuste está relacionado con WESAD, el dataset multimodal de detección de estrés y afecto con wearables presentado por Schmidt et al. en ICMI 2018. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador y no con un modelo de 7.000 millones de parametros en precision completa.
+xw17/Qwen2.5-7B-Instruct_SFT_lora_wesad es un ajuste fino publicado en Hugging Face por el usuario xw17. El nombre del repositorio indica que se trata de un adapter LoRA obtenido mediante fine-tuning supervisado (SFT) sobre el modelo base Qwen2.5-7B-Instruct, y que el corpus de ajuste está relacionado con WESAD, el dataset multimodal de detección de estrés y afecto con wearables presentado por Schmidt et al. en ICMI 2018. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador y no con un modelo de 7.000 millones de parametros en precision completa.
 
-La relevancia de esta ficha es limitada y conviene decirla con claridad: la model card es la plantilla automática de HuggingFace, sin ninguna sección completada. No se declara autoría real, licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluación. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Por tanto, todo lo que se puede afirmar con rigor se reduce a la identificacion del modelo base y a inferencias derivadas del nombre del repositorio, que se senalan como tales en cada apartado.
+La relevancia de esta ficha es limitada y conviene decirla con claridad: la model card es la plantilla automática de Hugging Face, sin ninguna sección completada. No se declara autoría real, licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluación. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta. Por tanto, todo lo que se puede afirmar con rigor se reduce a la identificacion del modelo base y a inferencias derivadas del nombre del repositorio, que se senalan como tales en cada apartado.
 
 Para un desarrollador o investigador, este repositorio es relevante únicamente como punto de partida reproducible para experimentos de SFT con LoRA sobre series fisiologicas, o como ejemplo de adaptador sobre Qwen2.5-7B. No es un artefacto apto para producción sin una validación previa completa por parte del usuario.
 
@@ -73,16 +73,16 @@ El repositorio no incluye ninguna seccion de evaluacion, ni metricas de MMLU, Hu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/Qwen2.5-7B-Instruct_SFT_lora_wesad | Adaptador LoRA sobre 7,61 B (no declarado) | No declarado; 131.072 tokens en el base | No declarada en el repositorio | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace, con aceptacion de terminos |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| xw17/Qwen2.5-7B-Instruct_SFT_lora_wesad | Adaptador LoRA sobre 7,61 B (no declarado) | No declarado; 131.072 tokens en el base | No declarada en el repositorio | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 131.072 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face, con aceptacion de terminos |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 No se incluyen cifras de rendimiento comparado porque este repositorio no publica evaluaciones. Para comparar capacidades reales hay que remitirse a las model cards oficiales de cada modelo base y realizar una evaluacion propia del adaptador.
 
 ## Limitaciones y advertencias
 
-- Model card vacia: es la plantilla automatica de HuggingFace, sin una sola seccion completada. No hay informacion sobre autoria, datos, entrenamiento ni uso previsto.
+- Model card vacia: es la plantilla automatica de Hugging Face, sin una sola seccion completada. No hay informacion sobre autoria, datos, entrenamiento ni uso previsto.
 - Licencia no declarada para el adaptador. Aunque el modelo base es Apache 2.0, la ausencia de licencia explicita en este repositorio deja el uso comercial en una situacion juridicamente ambigua.
 - No se especifica si el repositorio contiene el adaptador LoRA o un modelo fusionado. El tamano de 0,1 GB apunta a un adaptador, pero no esta confirmado.
 - Riesgo de olvido catastrofico: un ajuste sobre un corpus de dominio estrecho puede degradar las capacidades generales del modelo base. No hay evaluacion que lo descarte.

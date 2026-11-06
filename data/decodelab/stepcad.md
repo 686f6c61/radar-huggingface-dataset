@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DeCoDELab/StepCAD
+- Hugging Face: https://huggingface.co/DeCoDELab/StepCAD
 - Paper: https://arxiv.org/pdf/2610.03799
 - Codigo: https://github.com/ghadinehme/stepcad-v1

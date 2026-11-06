@@ -84,9 +84,9 @@ Mejoras relativas: −1,0 % en CRPS y −0,6 % en MASE frente al base, con mejor
 
 | Modelo | Parametros | Contexto | CRPS GIFT-Eval | MASE GIFT-Eval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Toto-Evolve-0.1 | 22M | 4096 | 0,491 | 0,714 | Apache-2.0 | HuggingFace (HollowTensor) |
-| Toto-2.0-22m | 22M | 4096 | 0,496 | 0,719 | Apache-2.0 | HuggingFace (Datadog) |
-| Toto-2.0-313m | 313M | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace (Datadog) |
+| Toto-Evolve-0.1 | 22M | 4096 | 0,491 | 0,714 | Apache-2.0 | Hugging Face (HollowTensor) |
+| Toto-2.0-22m | 22M | 4096 | 0,496 | 0,719 | Apache-2.0 | Hugging Face (Datadog) |
+| Toto-2.0-313m | 313M | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face (Datadog) |
 | TimesFM-2.5 | 231M | no disponible | 0,490 | 0,705 | no disponible | no disponible |
 
 Toto-Evolve-0.1 iguala practicamente a TimesFM-2.5 con diez veces menos parametros, a costa de ser un checkpoint derivado y no un modelo oficial con soporte del fabricante.
@@ -104,7 +104,7 @@ Toto-Evolve-0.1 iguala practicamente a TimesFM-2.5 con diez veces menos parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HollowTensor/Toto-Evolve-0.1
+- Modelo en Hugging Face: https://huggingface.co/HollowTensor/Toto-Evolve-0.1
 - Modelo base: https://huggingface.co/Datadog/Toto-2.0-22m
 - Modelo para destilacion: https://huggingface.co/Datadog/Toto-2.0-313m
 - Repositorio de codigo: https://github.com/DataDog/toto

@@ -77,7 +77,7 @@ La comparación con el modelo base Qwen3-4B es directa: el adaptador LoRA modifi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-n42-lora
+- Hugging Face: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-n42-lora
 - Versión similar del mismo autor: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-lora
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

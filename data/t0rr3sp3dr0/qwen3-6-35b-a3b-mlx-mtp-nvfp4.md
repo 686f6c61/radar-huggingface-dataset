@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La prin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-nvfp4
 - Modelo base MLX (bf16): https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-MTP-bf16
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Versión NVFP4 de NVIDIA: https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4

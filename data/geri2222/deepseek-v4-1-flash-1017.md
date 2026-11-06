@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017 es una actualizacion menor de DeepSeek-V4.1-Flash, un modelo multimodal de tipo image-text-to-text desarrollado por DeepSeek-AI. Segun la model card, esta version mejora el rendimiento en razonamiento, generacion de codigo, tareas agenticas y benchmarks visuales respecto a la version base, al tiempo que reduce el tiempo de ejecucion de tareas y la longitud de salida, lo que se traduce en menor coste por tarea. El repositorio de HuggingFace esta publicado bajo el identificador Geri2222/DeepSeek-V4.1-Flash-1017, lo que sugiere una redistribucion o espejo de los pesos oficiales.
+DeepSeek-V4.1-Flash-1017 es una actualizacion menor de DeepSeek-V4.1-Flash, un modelo multimodal de tipo image-text-to-text desarrollado por DeepSeek-AI. Segun la model card, esta version mejora el rendimiento en razonamiento, generacion de codigo, tareas agenticas y benchmarks visuales respecto a la version base, al tiempo que reduce el tiempo de ejecucion de tareas y la longitud de salida, lo que se traduce en menor coste por tarea. El repositorio de Hugging Face esta publicado bajo el identificador Geri2222/DeepSeek-V4.1-Flash-1017, lo que sugiere una redistribucion o espejo de los pesos oficiales.
 
 El modelo cuenta con 763.205.315.794 parametros totales segun los metadatos de safetensors, lo que lo situa en la categoria de modelos de gran escala (aproximadamente 763 mil millones de parametros). La model card declara una ventana de contexto de 1 millon de tokens y una recomendacion de max_tokens de al menos 256K. La licencia es MIT, lo que permite uso comercial sin restricciones significativas, un aspecto relevante frente a otros modelos de su categoria con licencias mas restrictivas.
 
@@ -94,15 +94,15 @@ DeepSeek-V4.1-Flash-1017 destaca en DeepSWE v1.1 (77.0), superando a todos los c
 - Sesgos conocidos: no se documentan en la informacion proporcionada; al ser un modelo entrenado con datos web, es probable que herede sesgos de esos datos, pero no hay confirmacion oficial.
 - Riesgo de alucinacion: no se cuantifica; los resultados en HLE (42.6) indican que un porcentaje significativo de preguntas de alta dificultad no se resuelven correctamente, lo que sugiere cautela en usos de alta precision.
 - Limitaciones de contexto o idioma: el contexto es de 1M tokens, pero no se especifica el rendimiento en contextos largos mas alla del limite. Los idiomas soportados no estan disponibles, lo que impide confirmar cobertura multilingue.
-- Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion. No obstante, el repositorio de HuggingFace pertenece a un usuario tercero (Geri2222) y no a la organizacion oficial deepseek-ai, por lo que se recomienda verificar la procedencia de los pesos antes de uso en produccion.
+- Restricciones de licencia: licencia MIT, que permite uso comercial, modificacion y redistribucion con atribucion. No obstante, el repositorio de Hugging Face pertenece a un usuario tercero (Geri2222) y no a la organizacion oficial deepseek-ai, por lo que se recomienda verificar la procedencia de los pesos antes de uso en produccion.
 - Caveats para produccion: el modelo no incluye plantilla de chat en formato Jinja; se requiere usar el codigo de encoding de referencia o deepseek-recipe para el formato correcto de prompt. El requisito de hardware (aproximadamente 763 GB en fp8) limita su despliegue a infraestructura de cluster. La fecha de creacion del repositorio (2026-11-02) y la ausencia de descargas o likes sugieren que es un espejo reciente sin validacion comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Geri2222/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/Geri2222/DeepSeek-V4.1-Flash-1017
 - Modelo base oficial: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Technical Report: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

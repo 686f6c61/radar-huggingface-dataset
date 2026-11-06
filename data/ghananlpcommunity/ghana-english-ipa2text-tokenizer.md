@@ -4,7 +4,7 @@
 
 `ghananlpcommunity/ghana-english-ipa2text-tokenizer` es un tokenizer publicado por Ghana NLP Community, una iniciativa open source dedicada al procesamiento de lenguaje natural de lenguas ghanesas. El nombre del modelo indica que está diseñado para convertir texto en inglés y lenguas ghanesas a representaciones IPA (International Phonetic Alphabet), probablemente como componente intermedio en pipelines de text-to-speech o transcripción fonética.
 
-El modelo está registrado en HuggingFace con la librería transformers y compatibilidad con endpoints, pero la model card no proporciona información técnica sustancial: todos los campos relevantes aparecen como "More Information Needed". Se desconoce la arquitectura, el número de parámetros, el vocabulario, los datos de entrenamiento y la licencia. A fecha de creación (agosto de 2026), no registra descargas ni valoraciones.
+El modelo está registrado en Hugging Face con la librería transformers y compatibilidad con endpoints, pero la model card no proporciona información técnica sustancial: todos los campos relevantes aparecen como "More Information Needed". Se desconoce la arquitectura, el número de parámetros, el vocabulario, los datos de entrenamiento y la licencia. A fecha de creación (agosto de 2026), no registra descargas ni valoraciones.
 
 Su relevancia radica en el contexto de la iniciativa Ghana NLP, que desarrolla recursos para lenguas de Ghana como twi, ewe, ga, dagbani y frafra, lenguas de bajos recursos con escasa representación en herramientas de NLP. Este tokenizer podría ser un componente de infraestructura para proyectos de síntesis de voz o traducción automática de dichas lenguas, aunque sin documentación técnica no es posible confirmar su funcionamiento ni su calidad.
 
@@ -70,8 +70,8 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghananlpcommunity/ghana-english-ipa2text-tokenizer
-- Organizacion Ghana NLP en HuggingFace: https://huggingface.co/ghananlpcommunity
+- Modelo en Hugging Face: https://huggingface.co/ghananlpcommunity/ghana-english-ipa2text-tokenizer
+- Organizacion Ghana NLP en Hugging Face: https://huggingface.co/ghananlpcommunity
 - Colecciones de Ghana NLP: https://huggingface.co/ghananlpcommunity/collections
 - API de Ghana NLP (Khaya AI): https://translation.ghananlp.org/
 - GitHub de Ghana NLP: https://github.com/GhanaNLP

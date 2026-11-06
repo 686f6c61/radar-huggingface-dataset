@@ -99,7 +99,7 @@ No se dispone de datos cuantitativos comparativos publicados en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sayed125/LHC-0-W4
-- Conjuntos de datos referenciados: OPUS-NLLB, OPUS-UNPC, OPUS-CCMatrix, OPUS-CCAligned, OPUS-MultiUN, OPUS-wikimedia, OPUS-XLEnt, mohamed-khalil/ATHAR (todos accesibles a traves del Hub de HuggingFace)
+- Hugging Face: https://huggingface.co/sayed125/LHC-0-W4
+- Conjuntos de datos referenciados: OPUS-NLLB, OPUS-UNPC, OPUS-CCMatrix, OPUS-CCAligned, OPUS-MultiUN, OPUS-wikimedia, OPUS-XLEnt, mohamed-khalil/ATHAR (todos accesibles a traves del Hub de Hugging Face)
 - Archivos del repositorio: `phase_w1_W.npz`, `lhc_core.py`, `phase_c_encoder.py`, `phase_p2_slot.py`, `phase_p1_reliability.py`, `phase_w2_episodic.py`, `phase_w3_workspace.py`, `phase_w4_review.py`, `app.py`, `LHC0_PhaseW4_Kaggle.ipynb`
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada

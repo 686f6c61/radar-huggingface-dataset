@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CLEAR es un planificador para robótica publicado en HuggingFace bajo el identificador `joonh-robotics/clear-ckpt-1209`. Se distribuye como copia anónima de revisión (*anonymous review copy*): incluye el árbol de código fuente completo bajo `clear/` y 153 checkpoints preentrenados. El repositorio ocupa 4,1 GB y los checkpoints suman 1,8 GB. No hay model card convencional; el README funciona como guion de reproducción.
+CLEAR es un planificador para robótica publicado en Hugging Face bajo el identificador `joonh-robotics/clear-ckpt-1209`. Se distribuye como copia anónima de revisión (*anonymous review copy*): incluye el árbol de código fuente completo bajo `clear/` y 153 checkpoints preentrenados. El repositorio ocupa 4,1 GB y los checkpoints suman 1,8 GB. No hay model card convencional; el README funciona como guion de reproducción.
 
 El modelo cubre tres familias de tareas: planificación en rejillas 2D (`grid`), navegación en laberintos (`maze`) y políticas de locomoción para los robots G1 (humanoide), Go1 y Spot (cuadrúpedos). La salida del planificador incluye transitabilidad predicha, interacciones ordenadas con objetos y ruta resultante.
 
@@ -75,7 +75,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|
-| CLEAR (`joonh-robotics/clear-ckpt-1209`) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | no disponible |
+| CLEAR (`joonh-robotics/clear-ckpt-1209`) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,9 +92,9 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joonh-robotics/clear-ckpt-1209
+- Modelo en Hugging Face: https://huggingface.co/joonh-robotics/clear-ckpt-1209
 - Archivo de código fuente citado en la model card: https://anonymous-hf.com/api/a/p5icltdspejh/resolve/clear-source.zip
-- Perfil de HuggingFace `jwhong1209` (Jeongwoo Hong), aparecido en la búsqueda web; relación con el autor no confirmada: https://huggingface.co/jwhong1209
+- Perfil de Hugging Face `jwhong1209` (Jeongwoo Hong), aparecido en la búsqueda web; relación con el autor no confirmada: https://huggingface.co/jwhong1209
 - Guía sobre diferencias de seguridad entre `.safetensors`, `.ckpt` y `.pt`: https://modeltrends.ai/ai-model-guides/safetensors-vs-ckpt-safe-model-downloads
 - Documentación de InvokeAI sobre ficheros `.ckpt`: https://invoke.ai/concepts/models/
 - Ejemplo de `model.ckpt` en el repositorio TripoSR de Stability AI: https://huggingface.co/stabilityai/TripoSR/blob/main/model.ckpt

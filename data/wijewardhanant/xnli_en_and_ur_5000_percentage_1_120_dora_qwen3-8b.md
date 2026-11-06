@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino del tipo DoRA (Weight-Decomposed Low-Rank Adaptation) sobre el modelo base Qwen/Qwen3-8B-Base, publicado por el usuario WijewardhanaNT. Se distribuye exclusivamente como pesos de adaptador en formato safetensors bajo la librería PEFT, con un tamano de repositorio de 0,7 GB, por lo que no es un modelo autonomo: requiere descargar el modelo base de 8.200 millones de parametros y aplicar el adaptador encima. El identificador del repositorio (xnli_en_and_ur_5000_percentage_1_120_DoRA_Qwen3-8b) sugiere que el entrenamiento se realizo sobre el corpus XNLI en ingles y urdu, con 5.000 ejemplos, aunque el autor no documenta nada de esto en la model card.
 
-La relevancia de esta publicacion es limitada y debe interpretarse con cautela. El repositorio acumula 0 descargas y 0 likes, la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como "[More Information Needed]", y no se declara licencia ni idiomas soportados. No hay resultados de evaluacion, ni descripcion de hiperparametros, ni procedencia de los datos.
+La relevancia de esta publicacion es limitada y debe interpretarse con cautela. El repositorio acumula 0 descargas y 0 likes, la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como "[More Information Needed]", y no se declara licencia ni idiomas soportados. No hay resultados de evaluacion, ni descripcion de hiperparametros, ni procedencia de los datos.
 
 Como pieza tecnica, resulta interesante unicamente como ejemplo de aplicacion de DoRA sobre un transformer decoder-only de ~8B parametros para una tarea de inferencia textual (NLI) bilingue ingles-urdu, un par de idiomas con recursos comparativamente escasos. Cualquier uso en produccion exigiria validar primero el adaptador, ya que la ausencia de documentacion impide conocer su comportamiento real fuera del conjunto de entrenamiento declarado de forma implicita en el nombre.
 
@@ -33,7 +33,7 @@ Nota: los datos marcados como pertenecientes al modelo base proceden de la docum
 
 El adaptador se construye sobre Qwen3-8B-Base, un transformer decoder-only de 8.200 millones de parametros con atencion de consultas agrupadas (GQA), 36 capas, dimension oculta de 4.096 y un vocabulario de aproximadamente 151.000 tokens que cubre mas de un centenar de idiomas. El metodo de ajuste declarado en el nombre del repositorio es DoRA, una variante de LoRA que descompone la actualizacion de pesos en una componente de magnitud y una componente de direccion, lo que en la literatura suele permitir converger con rangos mas bajos o igualar a LoRA con menos pasos. El sufijo numerico "120" del identificador podria corresponder al rango del adaptador o al numero de pasos de entrenamiento, pero el autor no lo especifica.
 
-No hay ninguna informacion documentada sobre el proceso de entrenamiento: ni el numero de tokens vistos, ni la composicion exacta del dataset, ni si hubo una fase de RLHF, DPO o SFT adicional. El nombre del repositorio apunta a un subconjunto de XNLI (inferencia textual en lenguaje natural) en ingles y urdu con 5.000 ejemplos, lo que de tener lugar implicaria un ajuste supervisado puro sobre etiquetas de tres clases (entailment, neutral, contradiction), sin alineacion posterior. La model card solo aporta un dato tecnico verificable: la version de PEFT empleada, 0.17.1. La etiqueta `arxiv:1910.09700` del repositorio no corresponde a un paper de este modelo, sino al articulo de Lacoste et al. (2019) sobre calculo de emisiones de carbono, incluido por defecto en la plantilla de HuggingFace.
+No hay ninguna informacion documentada sobre el proceso de entrenamiento: ni el numero de tokens vistos, ni la composicion exacta del dataset, ni si hubo una fase de RLHF, DPO o SFT adicional. El nombre del repositorio apunta a un subconjunto de XNLI (inferencia textual en lenguaje natural) en ingles y urdu con 5.000 ejemplos, lo que de tener lugar implicaria un ajuste supervisado puro sobre etiquetas de tres clases (entailment, neutral, contradiction), sin alineacion posterior. La model card solo aporta un dato tecnico verificable: la version de PEFT empleada, 0.17.1. La etiqueta `arxiv:1910.09700` del repositorio no corresponde a un paper de este modelo, sino al articulo de Lacoste et al. (2019) sobre calculo de emisiones de carbono, incluido por defecto en la plantilla de Hugging Face.
 
 ## Capacidades
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (DoRA sobre Qwen3-8B-Base) | 8.200 M (base) | No documentado; 32.768 en el base | No disponible | HuggingFace, 0 descargas, 0 likes | Sin model card, sin evaluacion, sin datos de entrenamiento |
-| Qwen/Qwen3-8B-Base (sin adaptador) | 8.200 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo preentrenado, sin plantilla de chat ni entrenamiento de instrucciones |
+| Este adaptador (DoRA sobre Qwen3-8B-Base) | 8.200 M (base) | No documentado; 32.768 en el base | No disponible | Hugging Face, 0 descargas, 0 likes | Sin model card, sin evaluacion, sin datos de entrenamiento |
+| Qwen/Qwen3-8B-Base (sin adaptador) | 8.200 M | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo preentrenado, sin plantilla de chat ni entrenamiento de instrucciones |
 | Adaptadores XNLI comparables en la misma categoria | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
-| Baseline multilingue clasico para XNLI (por ejemplo, XLM-RoBERTa-large) | Aproximadamente 560 M | 512 tokens | MIT | HuggingFace | Arquitectura encoder-only, mucho mas ligera; no se dispone de cifras comparativas de este adaptador |
+| Baseline multilingue clasico para XNLI (por ejemplo, XLM-RoBERTa-large) | Aproximadamente 560 M | 512 tokens | MIT | Hugging Face | Arquitectura encoder-only, mucho mas ligera; no se dispone de cifras comparativas de este adaptador |
 
 La comparacion cuantitativa no es posible: el repositorio no publica ninguna metrica, de modo que no se puede establecer si el adaptador mejora, iguala o degrada el rendimiento del modelo base o de alternativas consolidadas en XNLI.
 
@@ -101,10 +101,10 @@ La comparacion cuantitativa no es posible: el repositorio no publica ninguna met
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_Qwen3-8b
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_DoRA_Qwen3-8b
 - Modelo base Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Documentacion de PEFT (libreria declarada, version 0.17.1): https://huggingface.co/docs/peft
 - Paper de DoRA (Weight-Decomposed Low-Rank Adaptation), referenciado por el metodo de ajuste empleado en el nombre del repositorio: https://arxiv.org/abs/2402.09353
 - Paper de LoRA (Low-Rank Adaptation of Large Language Models): https://arxiv.org/abs/2106.09685
-- Articulo asociado a la etiqueta `arxiv:1910.09700` del repositorio (Lacoste et al., 2019, sobre emisiones de carbono; incluido por la plantilla de HuggingFace y sin relacion con este modelo): https://arxiv.org/abs/1910.09700
+- Articulo asociado a la etiqueta `arxiv:1910.09700` del repositorio (Lacoste et al., 2019, sobre emisiones de carbono; incluido por la plantilla de Hugging Face y sin relacion con este modelo): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no devolvio ningun resultado relevante para este modelo; los enlaces obtenidos correspondian a contenidos no relacionados (gestion de residuos, calefaccion, palas de padel y componentes electricos) y se han descartado.

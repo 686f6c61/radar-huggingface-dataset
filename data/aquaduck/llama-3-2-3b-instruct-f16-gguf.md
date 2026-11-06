@@ -86,7 +86,7 @@ Los datos de terceros proceden de sus fichas publicas y no se han verificado en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aquaduck/Llama-3.2-3B-Instruct-F16-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/aquaduck/Llama-3.2-3B-Instruct-F16-GGUF
 - Modelo base: https://huggingface.co/meta-llama/llama-3.2-3b-instruct
 - Fuente del GGUF: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-GGUF
 - llama.cpp: https://github.com/ggml-org/llama.cpp

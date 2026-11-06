@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Villanova2-2B es un modelo de lenguaje publicado por VillanovaAI en HuggingFace bajo el identificador `VillanovaAI/Villanova2-2B`. Por los tags del repositorio (`qwen3`) y el recuento real de parametros en los pesos safetensors (2.746.079.232, aproximadamente 2,75 mil millones), se trata de un modelo derivado o afinado a partir de la familia Qwen3, presumiblemente sobre la variante de 2B de dicha familia. El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+Villanova2-2B es un modelo de lenguaje publicado por VillanovaAI en Hugging Face bajo el identificador `VillanovaAI/Villanova2-2B`. Por los tags del repositorio (`qwen3`) y el recuento real de parametros en los pesos safetensors (2.746.079.232, aproximadamente 2,75 mil millones), se trata de un modelo derivado o afinado a partir de la familia Qwen3, presumiblemente sobre la variante de 2B de dicha familia. El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 La informacion publica disponible es muy escasa: no se han declarado ni la licencia, ni los idiomas soportados, ni la longitud de contexto, ni el pipeline de inferencia. El repositorio ocupa 5,5 GB en safetensors, lo que es coherente con un modelo denso de ~2,7B parametros en precision bf16/fp16 (aproximadamente 5,5 GB teoricos). No se han publicado resultados de benchmarks, datos de entrenamiento ni documentacion tecnica adicional en la informacion disponible.
 
@@ -66,16 +66,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Villanova2-2B | ~2,75B | no disponible | no disponible | gated en HuggingFace |
-| Qwen3-1.7B | ~1,7B | no disponible en esta ficha | Apache 2.0 (familia Qwen3) | publico en HuggingFace |
-| Qwen3-4B | ~4B | no disponible en esta ficha | Apache 2.0 (familia Qwen3) | publico en HuggingFace |
-| Llama 3.2 3B | ~3,2B | 128k (familia Llama 3.2) | Llama 3.2 Community License | publico en HuggingFace |
+| Villanova2-2B | ~2,75B | no disponible | no disponible | gated en Hugging Face |
+| Qwen3-1.7B | ~1,7B | no disponible en esta ficha | Apache 2.0 (familia Qwen3) | publico en Hugging Face |
+| Qwen3-4B | ~4B | no disponible en esta ficha | Apache 2.0 (familia Qwen3) | publico en Hugging Face |
+| Llama 3.2 3B | ~3,2B | 128k (familia Llama 3.2) | Llama 3.2 Community License | publico en Hugging Face |
 
 La comparativa se limita a parametros, contexto declarado y licencia, ya que no se dispone de resultados de benchmarks de Villanova2-2B para contrastar rendimiento. La principal desventaja frente a las alternativas es la ausencia de licencia explicita y de acceso abierto sin condiciones, lo que complica su uso comercial y su integracion en pipelines automatizados.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que impide su descarga automatizada en CI/CD sin gestion de tokens.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que impide su descarga automatizada en CI/CD sin gestion de tokens.
 - Licencia no declarada: no es posible determinar si el uso comercial esta permitido; debe consultarse con el autor antes de cualquier despliegue en produccion.
 - Ausencia de model card tecnica: sin datos de contexto, idiomas, entrenamiento ni alineacion, la evaluacion rigurosa del modelo recae enteramente en el usuario.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje de este tamano; no hay informacion sobre mitigaciones (RLHF, DPO) aplicadas.
@@ -87,6 +87,6 @@ La comparativa se limita a parametros, contexto declarado y licencia, ya que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VillanovaAI/Villanova2-2B
+- Hugging Face: https://huggingface.co/VillanovaAI/Villanova2-2B
 - Repositorio de la familia Qwen3 (referencia por el tag del modelo): https://huggingface.co/Qwen/Qwen3-1.7B
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Tipo | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dp-blockpick-10k-table-texture | ~288 M | Diffusion policy (DDPM, LeRobot) | 1 obs step, horizonte 64 / 32 ejecutados | other | HuggingFace (padiredd) |
+| dp-blockpick-10k-table-texture | ~288 M | Diffusion policy (DDPM, LeRobot) | 1 obs step, horizonte 64 / 32 ejecutados | other | Hugging Face (padiredd) |
 | Diffusion Policy original (Chi et al., 2023) | variable según implementación | Diffusion policy (referencia académica) | horizonte configurable | código de investigación | Repositorio académico |
-| ACT (Action Chunking Transformer, LeRobot) | ~80 M en configuraciones habituales | Transformer de chunking de acciones | horizonte de chunk configurable | Apache-2.0 (implementación LeRobot) | HuggingFace / LeRobot |
+| ACT (Action Chunking Transformer, LeRobot) | ~80 M en configuraciones habituales | Transformer de chunking de acciones | horizonte de chunk configurable | Apache-2.0 (implementación LeRobot) | Hugging Face / LeRobot |
 | π0 (Physical Intelligence) | ~3 B (VLA) | Vision-language-action flow matching | multi-tarea, instrucciones en lenguaje | no disponible en la información | Pesos publicados por el autor |
 
 La comparación cuantitativa de rendimiento no está disponible porque este modelo no publica evaluaciones. Las alternativas se incluyen por categoría (políticas visuomotoras para manipulación), no por resultados medidos.
@@ -85,7 +85,7 @@ La comparación cuantitativa de rendimiento no está disponible porque este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-10k-table-texture
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-10k-table-texture
 - Dataset de entrenamiento: https://huggingface.co/datasets/padiredd/pick-cube-topdown-region10k-dr-dr2-3cam
 - LeRobot (framework): https://github.com/huggingface/lerobot
 - Fork `lerobot-cyclo` de ROBOTIS: no disponible en la información proporcionada

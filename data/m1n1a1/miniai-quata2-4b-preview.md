@@ -99,7 +99,7 @@ El preview mejora a su modelo base en tool calling, conocimiento general y consi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-Preview
+- Modelo en Hugging Face: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b-Preview
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Version estable anterior: https://huggingface.co/M1n1A1/MiniAI-Quata2-4b
 - Demo en linea: https://chat.codeminute.dev

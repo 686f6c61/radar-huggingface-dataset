@@ -86,7 +86,7 @@ El autor no publica resultados por familia de modelos, solo indica que `NeuralNe
 
 | Modelo | Tipo | Balanced accuracy (CV agrupada) | Accuracy (CV agrupada) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 24679-hw2-shoe-owner-autogluon | StackerEnsemble con base NN_TORCH | 0,588 | 0,600 | classroom-use | público en HuggingFace |
+| 24679-hw2-shoe-owner-autogluon | StackerEnsemble con base NN_TORCH | 0,588 | 0,600 | classroom-use | público en Hugging Face |
 | Alternativas GBM, CAT y XGB evaluadas en la búsqueda | varios | no disponible | no disponible | no disponible | no distribuidas en el repositorio |
 | Línea base mayoritaria (clase `Arin`) | trivial | no disponible en CV | 0,200 en el conjunto de prueba | no aplica | no aplica |
 | Azar con 3 clases | trivial | 0,333 | 0,333 | no aplica | no aplica |
@@ -105,7 +105,7 @@ El autor no publica resultados por familia de modelos, solo indica que `NeuralNe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ypolatog/24679-hw2-shoe-owner-autogluon
+- Modelo en Hugging Face: https://huggingface.co/ypolatog/24679-hw2-shoe-owner-autogluon
 - Dataset de entrenamiento: https://huggingface.co/datasets/ArinRoths/shoe-data
 - Métricas completas: fichero `metrics.json` incluido en el repositorio del modelo
 - Artefacto del predictor: fichero `autogluon_predictor_dir.zip` incluido en el repositorio del modelo

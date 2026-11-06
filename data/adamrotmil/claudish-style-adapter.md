@@ -88,7 +88,7 @@ La comparativa directa con otros adaptadores de estilo no está disponible en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adamrotmil/claudish-style-adapter
+- Repositorio Hugging Face: https://huggingface.co/adamrotmil/claudish-style-adapter
 - Codigo del pipeline de entrenamiento: https://github.com/adamrotmil/claudish-style-adapter
 - Traductor Claudish de ProgramAsWeights: https://programasweights.com/claudish
 - Herramienta CLI Claudish (relacionada, no el adaptador): https://github.com/MadAppGang/claudish

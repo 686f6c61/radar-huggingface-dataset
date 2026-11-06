@@ -32,7 +32,7 @@ El entrenamiento se realizo con el mismo modelo base y los mismos datos que una 
 - Evaluacion en BRIGHT: rinde en 12 dominios diferentes con una media de nDCG@10 de 14.4.
 - Evaluacion en NevIR: el modelo tambien ha sido evaluado en este benchmark de reranking, aunque no se proporcionan cifras desglosadas en la informacion disponible.
 - Generacion de texto: al estar basado en Qwen3-0.6B, conserva capacidades de generacion de texto del modelo base, aunque su uso principal es el reranking.
-- Integracion con transformers: compatible con la API estandar de HuggingFace para carga y uso.
+- Integracion con transformers: compatible con la API estandar de Hugging Face para carga y uso.
 
 ## Casos de uso
 
@@ -82,7 +82,7 @@ La comparativa se limita a modelos de tamano similar (0.6B) orientados a reranki
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdarshSingh7647/Eklav-0.6B-Reranker
+- Modelo en Hugging Face: https://huggingface.co/AdarshSingh7647/Eklav-0.6B-Reranker
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Qwen3-Reranker-0.6B (modelo similar): https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Articulo sobre jina-reranker-v3.5 (modelo similar): https://www.linkedin.com/posts/elastic-co_a-06b-reranker-that-outscores-models-7x-activity-7487601505924104192-0GnV

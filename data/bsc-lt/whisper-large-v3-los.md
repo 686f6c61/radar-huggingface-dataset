@@ -34,7 +34,7 @@ El corpus de entrenamiento suma 8.110 horas preprocesadas con el objetivo de tra
 - Generación de marcas de tiempo a nivel de segmento, explotables para subtitulado y alineamiento.
 - Robustez ante ruido y variación de canal razonable para un modelo ajustado con audio parlamentario, radiofónico y de corpus de lectura.
 - Manejo de audio de hasta 30 s por ventana; para grabaciones largas se requiere segmentación previa (VAD) o *chunking* con solapamiento.
-- Inferencia batch sobre datasets de HuggingFace (`datasets` + `transformers`), tal como muestra el ejemplo oficial.
+- Inferencia batch sobre datasets de Hugging Face (`datasets` + `transformers`), tal como muestra el ejemplo oficial.
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso: es un modelo puramente ASR.
 - No procesa vídeo, imagen ni audio más allá de la transcripción; no incluye diarización de hablantes.
 
@@ -91,7 +91,7 @@ La ventaja diferencial frente al modelo base es el ajuste específico a las cuat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BSC-LT/whisper-large-v3-LoS
+- Modelo en Hugging Face: https://huggingface.co/BSC-LT/whisper-large-v3-LoS
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Cuaderno de ejemplo (Colab): https://colab.research.google.com/drive/1MHiPrffNTwiyWeUyMQvSdSbfkef_8aJC?usp=sharing
 - Dataset 3CatParla: https://huggingface.co/datasets/projecte-aina/3catparla_asr

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`HarutoYamam2002/mae-contrastive-demo` es un prototipo de investigación publicado en HuggingFace por el usuario HarutoYamam2002 bajo el nombre interno "Mae for Contrastive". No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código más un checkpoint de inicialización: la propia model card indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se presenta como un checkpoint entrenado con resultados de referencia.
+`HarutoYamam2002/mae-contrastive-demo` es un prototipo de investigación publicado en Hugging Face por el usuario HarutoYamam2002 bajo el nombre interno "Mae for Contrastive". No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código más un checkpoint de inicialización: la propia model card indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para smoke tests" y que no se presenta como un checkpoint entrenado con resultados de referencia.
 
 El repositorio contiene 33.088 parámetros totales, una escala que el autor etiqueta como "nano", y declara una arquitectura "Mae" con atención dilatada, fusión tipo Tucker, activación ReLU y normalización RMSNorm. La receta de experimento por defecto usa el optimizador Adam con un schedule coseno, aunque el autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado. El repositorio no publica ninguna puntuación de benchmark ni métrica de evaluación.
 
@@ -33,8 +33,8 @@ Respecto al entrenamiento, el repositorio incluye un `training_args.json` con un
 - No hay evidencia de generación de texto, razonamiento, código, matemáticas o visión en el material disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponibles (el campo de idiomas está vacío en la ficha de HuggingFace).
-- Capacidad especial declarada: implementación propia con atención dilatada y fusión Tucker, que requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- Capacidades multilingües: no disponibles (el campo de idiomas está vacío en la ficha de Hugging Face).
+- Capacidad especial declarada: implementación propia con atención dilatada y fusión Tucker, que requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - Ejecutable `model.py` con bloque `__main__` de smoke test, útil para comprobar que el código arranca.
 
 ## Casos de uso
@@ -71,10 +71,10 @@ No disponible. El repositorio no declara una categoría de tarea concreta, no pu
 - Longitud de contexto e idiomas soportados: no disponibles. Cualquier cifra al respecto sería una invención.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado si se combina con datasets externos.
 - El repositorio registra cero descargas y cero likes, y las fechas de creación y actualización difieren en seis segundos, lo que indica que no ha habido mantenimiento posterior.
-- No se declara pipeline de HuggingFace, por lo que la integración con `transformers` u otras bibliotecas estándar no está garantizada sin trabajo adicional.
+- No se declara pipeline de Hugging Face, por lo que la integración con `transformers` u otras bibliotecas estándar no está garantizada sin trabajo adicional.
 - Para producción: no apto. Cualquier uso real exige entrenar el modelo, evaluarlo con al menos tres semillas y publicar los resultados por separado de los valores por defecto del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarutoYamam2002/mae-contrastive-demo
+- Modelo en Hugging Face: https://huggingface.co/HarutoYamam2002/mae-contrastive-demo
 - No se han encontrado enlaces relevantes al modelo, a papers asociados ni a repositorios de código en los resultados de la búsqueda web disponible. Los resultados devueltos por la búsqueda corresponden a páginas sobre verbos irregulares del inglés y no guardan relación con este artefacto.

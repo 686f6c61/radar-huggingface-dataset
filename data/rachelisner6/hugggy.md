@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hugggy es un repositorio de modelo publicado en HuggingFace por el usuario rachelisner6 bajo el identificador rachelisner6/hugggy. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (afl-3.0) y ningun otro contenido: no hay descripcion, arquitectura declarada, tamano, datos de entrenamiento ni ejemplos de uso.
+hugggy es un repositorio de modelo publicado en Hugging Face por el usuario rachelisner6 bajo el identificador rachelisner6/hugggy. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (afl-3.0) y ningun otro contenido: no hay descripcion, arquitectura declarada, tamano, datos de entrenamiento ni ejemplos de uso.
 
 El repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado ni idiomas indicados, y fue creado y actualizado en la misma marca temporal (2026-09-20), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento visible. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo, el autor o el identificador; los unicos resultados obtenidos corresponden a un medio de comunicacion aleman sin relacion alguna con el proyecto.
 
@@ -71,7 +71,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio de aplicacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rachelisner6/hugggy
+- Repositorio en Hugging Face: https://huggingface.co/rachelisner6/hugggy
 - Model card del autor: no disponible mas alla del bloque de licencia incluido en el propio repositorio.
 - Paper o publicacion tecnica: no disponible.
 - Repositorio de codigo: no disponible.

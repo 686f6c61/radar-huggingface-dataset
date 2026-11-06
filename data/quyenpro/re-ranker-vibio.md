@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quyenpro/re-ranker-vibio | 567,7 M | 2048 tokens | Cross-encoder (XLM-RoBERTa) | No disponible | HuggingFace, 0 descargas |
-| BAAI/bge-reranker-v2-m3 (modelo base) | ~568 M | 8192 tokens (según model card del base) | Cross-encoder multilingüe | Apache 2.0 (según model card del base) | HuggingFace, ampliamente adoptado |
-| BAAI/bge-reranker-base | ~278 M | 512 tokens | Cross-encoder | MIT (según model card del base) | HuggingFace, ampliamente adoptado |
-| BAAI/bge-reranker-large | ~560 M | 512 tokens | Cross-encoder | MIT (según model card del base) | HuggingFace, ampliamente adoptado |
+| quyenpro/re-ranker-vibio | 567,7 M | 2048 tokens | Cross-encoder (XLM-RoBERTa) | No disponible | Hugging Face, 0 descargas |
+| BAAI/bge-reranker-v2-m3 (modelo base) | ~568 M | 8192 tokens (según model card del base) | Cross-encoder multilingüe | Apache 2.0 (según model card del base) | Hugging Face, ampliamente adoptado |
+| BAAI/bge-reranker-base | ~278 M | 512 tokens | Cross-encoder | MIT (según model card del base) | Hugging Face, ampliamente adoptado |
+| BAAI/bge-reranker-large | ~560 M | 512 tokens | Cross-encoder | MIT (según model card del base) | Hugging Face, ampliamente adoptado |
 
 Nota: los datos de los modelos comparativos corresponden a sus model cards públicas; no se dispone de benchmarks del modelo `quyenpro/re-ranker-vibio` para comparar rendimiento. La ventaja principal del modelo frente a alternativas genéricas sería la especialización en el dominio de su dataset de fine-tuning; la desventaja, la falta de licencia declarada y de evaluación publicada.
 
@@ -93,10 +93,10 @@ Nota: los datos de los modelos comparativos corresponden a sus model cards públ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quyenpro/re-ranker-vibio
+- Modelo en Hugging Face: https://huggingface.co/quyenpro/re-ranker-vibio
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Documentación de Sentence Transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Cross Encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Cross Encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
 - Paper de referencia (Sentence-BERT, arXiv:1908.10084): https://arxiv.org/abs/1908.10084

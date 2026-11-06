@@ -95,7 +95,7 @@ No se dispone en la información proporcionada de comparaciones con modelos de l
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-MLX-8bit
+- Hugging Face (este repositorio): https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-MLX-8bit
 - Modelo original FP32: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT
 - Variante GGUF: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT-GGUF
 - Librería mlx-lm: https://github.com/ml-explore/mlx-lm

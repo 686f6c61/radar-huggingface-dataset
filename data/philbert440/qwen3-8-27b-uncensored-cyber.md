@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Uncensored-Cyber es un modelo multimodal de la familia Qwen3 (etiqueta interna `qwen3_5`), publicado por el usuario philbert440 en HuggingFace, que parte de un fine-tune previo denominado Qwen3.8-27B-Uncensored-Aggressive. Se trata de una variante "abliterated" o de-refused: se ha eliminado por proyección la dirección de rechazo del modelo base con el objetivo declarado de responder sin restricciones en el dominio de ciberseguridad ofensiva, manteniendo —según el autor— razonamiento, precisión factual y coherencia. Cuenta con 27.356.728.560 parámetros (~27,4 mil millones) en safetensors, licencia Apache 2.0 y pipeline `image-text-to-text`, lo que indica que conserva la torre de visión y, por tanto, capacidades multimodales de imagen y texto.
+Qwen3.8-27B-Uncensored-Cyber es un modelo multimodal de la familia Qwen3 (etiqueta interna `qwen3_5`), publicado por el usuario philbert440 en Hugging Face, que parte de un fine-tune previo denominado Qwen3.8-27B-Uncensored-Aggressive. Se trata de una variante "abliterated" o de-refused: se ha eliminado por proyección la dirección de rechazo del modelo base con el objetivo declarado de responder sin restricciones en el dominio de ciberseguridad ofensiva, manteniendo —según el autor— razonamiento, precisión factual y coherencia. Cuenta con 27.356.728.560 parámetros (~27,4 mil millones) en safetensors, licencia Apache 2.0 y pipeline `image-text-to-text`, lo que indica que conserva la torre de visión y, por tanto, capacidades multimodales de imagen y texto.
 
 La relevancia de esta ficha es doble. Por un lado, es un ejemplo técnico de una receta de ablación de rechazo en dos etapas: primero un ajuste "Aggressive" con α=1.15 (ablación de rechazo en una sola dirección) y después un "residual-cyber peel" que aplica una proyección que preserva la norma (β=1.0) solo a partir de la capa 4 (`apply_from=4`), conservando las cuatro primeras capas para no degradar la extracción temprana de características. Por otro, es un caso de estudio de los riesgos asociados a modelos sin alineamiento de seguridad en un dominio sensible, distribuido abiertamente bajo una licencia permisiva.
 
@@ -84,9 +84,9 @@ No hay resultados de MMLU, HumanEval, BBH ni de benchmarks multimodales en la in
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Uncensored-Cyber (este) | 27,36 B | no disponible | cyber-open 100/100; factual 1,00; GSM8K 0,80; degen 0,00 | Apache 2.0 | HuggingFace, con AWQ, NVFP4 y GGUF |
-| philbert440/Qwen3.8-27B-Uncensored-Aggressive | no disponible | no disponible | no disponible | no disponible | HuggingFace (modelo base de esta receta) |
-| Build Cyber anterior de philbert440 | no disponible | no disponible | cyber-open 93/100; factual 0,933; GSM8K 0,825; degen 0,00 | no disponible | HuggingFace |
+| Qwen3.8-27B-Uncensored-Cyber (este) | 27,36 B | no disponible | cyber-open 100/100; factual 1,00; GSM8K 0,80; degen 0,00 | Apache 2.0 | Hugging Face, con AWQ, NVFP4 y GGUF |
+| philbert440/Qwen3.8-27B-Uncensored-Aggressive | no disponible | no disponible | no disponible | no disponible | Hugging Face (modelo base de esta receta) |
+| Build Cyber anterior de philbert440 | no disponible | no disponible | cyber-open 93/100; factual 0,933; GSM8K 0,825; degen 0,00 | no disponible | Hugging Face |
 | Qwen3.8-27B (modelo original de la familia) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 No se han identificado en la información disponible otros modelos comparables de terceros (por ejemplo, otras variantes abliterated del mismo tamano) con datos verificables, por lo que la comparativa se limita a la propia línea de variantes del autor.
@@ -106,7 +106,7 @@ No se han identificado en la información disponible otros modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
+- Modelo en Hugging Face: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber
 - Modelo base declarado: https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Aggressive
 - Paper, blog o repositorio técnico asociado: no disponible.
 - Demo o espacio de inferencia: no disponible.

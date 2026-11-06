@@ -86,7 +86,7 @@ La model card incluye además métricas por archivo y combinadas para torch, JSO
 - Cabe en cualquier GPU consumer: sí, con margen de varios órdenes de magnitud. También cabe en dispositivos móviles y se ejecuta en el navegador vía WebGPU o WASM.
 - Opciones de despliegue: paquete npm `gpu-sankhya` (runtime JavaScript, recomendado por el autor, con el modelo cuantizado incluido en línea), ONNX Runtime para interoperabilidad, PyTorch para el checkpoint `.pt`, y una implementación de referencia en numpy (`np_infer.forward`, `decode`, `core`, `charset`) para Python. No aplican vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo.
 - Latencia y throughput: no disponibles en la información proporcionada. La model card no publica cifras de latencia ni de rendimiento por segundo.
-- El repositorio de HuggingFace ocupa 0,0 GB, coherente con el tamaño descrito.
+- El repositorio de Hugging Face ocupa 0,0 GB, coherente con el tamaño descrito.
 
 ## Comparativa con modelos similares
 
@@ -107,7 +107,7 @@ No disponible. La información proporcionada no incluye alternativas comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/athrvk/gpu-sankhya
+- Modelo en Hugging Face: https://huggingface.co/athrvk/gpu-sankhya
 - Paquete npm (runtime, incluye el modelo cuantizado): https://www.npmjs.com/package/gpu-sankhya
 - Código fuente y código de entrenamiento: https://github.com/athrvk/gpu-sankhya
 - Demo en vivo: https://huggingface.co/spaces/athrvk/gpu-sankhya-demo

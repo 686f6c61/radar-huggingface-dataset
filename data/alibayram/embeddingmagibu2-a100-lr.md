@@ -85,10 +85,10 @@ La mejora desde el checkpoint inicial es de +0,0254 en `cos_doc_tr` y +0,0250 en
 
 | Modelo | Parametros | Dimension | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alibayram/embeddingmagibu2-a100-lr | 744 M (texto ~271 M) | 768 | 8.192 | apache-2.0 | HuggingFace, sentence-transformers |
-| google/embeddinggemma-2 (modelo base) | no disponible | 768 | 8.192 (fijado en el pipeline) | no disponible | HuggingFace |
-| intfloat/multilingual-e5-large | 560 M | 1.024 | 512 | MIT | HuggingFace |
-| BAAI/bge-m3 | 568 M | 1.024 | 8.192 | MIT | HuggingFace |
+| alibayram/embeddingmagibu2-a100-lr | 744 M (texto ~271 M) | 768 | 8.192 | apache-2.0 | Hugging Face, sentence-transformers |
+| google/embeddinggemma-2 (modelo base) | no disponible | 768 | 8.192 (fijado en el pipeline) | no disponible | Hugging Face |
+| intfloat/multilingual-e5-large | 560 M | 1.024 | 512 | MIT | Hugging Face |
+| BAAI/bge-m3 | 568 M | 1.024 | 8.192 | MIT | Hugging Face |
 
 El modelo se diferencia del base exclusivamente en la capa de embeddings y el tokenizador: misma dimension, mismo contexto y mismos pesos salvo las filas nuevas, mas un ajuste posterior del backbone de texto. Frente a multilingual-e5-large gana ventana de contexto (8.192 frente a 512 tokens), lo que es determinante para documentos largos; frente a bge-m3 comparte contexto pero reduce la dimension a 768, lo que abarata el almacenamiento de indices vectoriales. No hay datos publicados que permitan comparar el rendimiento de recuperacion de este checkpoint frente a esas alternativas.
 
@@ -107,7 +107,7 @@ El modelo se diferencia del base exclusivamente en la capa de embeddings y el to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alibayram/embeddingmagibu2-a100-lr
+- Modelo en Hugging Face: https://huggingface.co/alibayram/embeddingmagibu2-a100-lr
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Tokenizer Altus: https://huggingface.co/magibu/Altus
 - Dataset de destilacion: https://huggingface.co/datasets/alibayram/wikipedia-40-langs-with-embeddings-embeddinggemma2

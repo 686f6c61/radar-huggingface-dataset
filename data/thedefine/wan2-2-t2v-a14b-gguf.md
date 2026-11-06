@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thedefine/Wan2.2-T2V-A14B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thedefine/Wan2.2-T2V-A14B-GGUF
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Nodo ComfyUI-GGUF (GitHub): https://github.com/city96/ComfyUI-GGUF
 - Perfil del autor del nodo: https://huggingface.co/city96

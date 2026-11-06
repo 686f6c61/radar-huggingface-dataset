@@ -101,5 +101,5 @@ No hay alternativas publicadas con el mismo nivel de especificidad para tool-cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/immortaltatsu/ghostai-lfm2.5-1.2b-app-v2
+- Modelo en Hugging Face: https://huggingface.co/immortaltatsu/ghostai-lfm2.5-1.2b-app-v2
 - Modelo base (LiquidAI/LFM2.5-1.2B-Thinking): https://huggingface.co/LiquidAI/LFM2.5-1.2B-Thinking

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kivok 0.3B (Кивок, "asentimiento") es un modelo enco der de 321,9 millones de parametros desarrollado por Smolnikov / CapyAgent y publicado en HuggingFace. No es un modelo generativo: recibe un estado de situacion (`state`) y una pregunta tipada, y devuelve una distribucion de probabilidad sobre un conjunto cerrado de respuestas. Soporta tres formatos de consulta: `choice` (elegir entre hasta ~20 opciones descritas), `score` (valoracion en escala ordinal) y `noul` (si/no con probabilidad asociada).
+Kivok 0.3B (Кивок, "asentimiento") es un modelo enco der de 321,9 millones de parametros desarrollado por Smolnikov / CapyAgent y publicado en Hugging Face. No es un modelo generativo: recibe un estado de situacion (`state`) y una pregunta tipada, y devuelve una distribucion de probabilidad sobre un conjunto cerrado de respuestas. Soporta tres formatos de consulta: `choice` (elegir entre hasta ~20 opciones descritas), `score` (valoracion en escala ordinal) y `noul` (si/no con probabilidad asociada).
 
 El modelo esta disenado como componente de decision rapida dentro de arquitecturas de agentes: enrutado de habilidades o herramientas, triaje de tickets de soporte, deteccion de ataques de inyeccion de prompt, filtrado de spam o clasificacion de intencion. Sus probabilidades estan calibradas (ECE aproximado de 0,013 en su test interno), de forma que una confianza declarada del 80 % se corresponde con una tasa de acierto real cercana al 80 %.
 
@@ -94,12 +94,12 @@ El propio autor senala que en tareas desconocidas que requieren razonamiento y c
 
 | Modelo | Parametros | Contexto | RuDecide track A (acc) | RuDecide track B (acc) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kivok 0.3B v0.2 | 321,9 M | no disponible | 50,5 | 92,3 | Apache-2.0 | HuggingFace |
-| Migom 2B | ~2 B | no disponible | 78,9 | 96,1 | no disponible en la informacion | HuggingFace |
-| decider-2b v11 | ~2 B | no disponible | 78,6 | 75,7 | no disponible en la informacion | HuggingFace |
-| JevK5-2B v0.2 | ~2 B | no disponible | 70,8 | 69,4 | no disponible en la informacion | HuggingFace |
+| Kivok 0.3B v0.2 | 321,9 M | no disponible | 50,5 | 92,3 | Apache-2.0 | Hugging Face |
+| Migom 2B | ~2 B | no disponible | 78,9 | 96,1 | no disponible en la informacion | Hugging Face |
+| decider-2b v11 | ~2 B | no disponible | 78,6 | 75,7 | no disponible en la informacion | Hugging Face |
+| JevK5-2B v0.2 | ~2 B | no disponible | 70,8 | 69,4 | no disponible en la informacion | Hugging Face |
 | Jev (TypeSafe) | no disponible | no disponible | 87,1 | 84,6 | no disponible en la informacion | via API |
-| Laya-multilingual | ~0,3 B (modelo base) | no disponible | 48,9 | 53,6 | Apache-2.0 | HuggingFace |
+| Laya-multilingual | ~0,3 B (modelo base) | no disponible | 48,9 | 53,6 | Apache-2.0 | Hugging Face |
 
 La ventaja de Kivok frente a las alternativas de 2 B en el track B (92,3 frente a 96,1 de Migom) se obtiene con un modelo aproximadamente seis veces mas pequeno, desplegable en CPU. En el track A, cualquier alternativa de mayor tamano lo supera de forma clara.
 
@@ -117,7 +117,7 @@ La ventaja de Kivok frente a las alternativas de 2 B en el track B (92,3 frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smolnikov/kivok-0.3b
+- Modelo en Hugging Face: https://huggingface.co/smolnikov/kivok-0.3b
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Dataset de evaluacion RuDecide v0.1: https://huggingface.co/datasets/smolnikov/RuDecide
 - Modelo asociado de mayor tamano, Migom 2B: https://huggingface.co/smolnikov/migom-2b

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDQwen35A3B es un repositorio publicado por el usuario HelloSun en HuggingFace que no contiene un modelo de lenguaje propio, sino un motor de inferencia con paginado de expertos por niveles (SSD, RAM y CPU) destinado a ejecutar el modelo Qwen3.6-35B-A3B (22,1 GB en cuantización Q4_K_M) en una máquina Intel con solo 8 GB de RAM. La idea central es mantener los expertos fríos en el SSD y reservar en memoria únicamente una caché de expertos de capacidad limitada, gestionada con una política LRU y prefetch en segundo plano, sin recurrir a swap para simular memoria.
+SDQwen35A3B es un repositorio publicado por el usuario HelloSun en Hugging Face que no contiene un modelo de lenguaje propio, sino un motor de inferencia con paginado de expertos por niveles (SSD, RAM y CPU) destinado a ejecutar el modelo Qwen3.6-35B-A3B (22,1 GB en cuantización Q4_K_M) en una máquina Intel con solo 8 GB de RAM. La idea central es mantener los expertos fríos en el SSD y reservar en memoria únicamente una caché de expertos de capacidad limitada, gestionada con una política LRU y prefetch en segundo plano, sin recurrir a swap para simular memoria.
 
 El motor se construye sobre una versión fijada de llama.cpp, con la lógica principal en `cpp/expert_pager.cpp` (arena de RAM, LRU, prefetch en segundo plano y métricas), y ofrece un flujo de puesta en marcha de un solo comando mediante `demo.py`, que descarga código y modelo, compila y abre una sesión de chat. El progreso se publica en `stage.txt` como fuente de verdad por etapas.
 
@@ -23,7 +23,7 @@ Su relevancia reside en la inferencia de modelos MoE grandes en hardware con RAM
 | Autor | HelloSun |
 | Fecha de publicacion | 2026-10-03 (creado), 2026-10-03 (actualizado) |
 | Descargas / likes | 0 descargas, 0 likes |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Region declarada | region:us |
 | Version de llama.cpp | Version fijada (pinned), definida en `sdq/config.py` |
 | Componente principal | `cpp/expert_pager.cpp` (arena de RAM, LRU, prefetch en segundo plano, metricas) |
@@ -32,7 +32,7 @@ Su relevancia reside en la inferencia de modelos MoE grandes en hardware con RAM
 
 El repositorio no describe la arquitectura interna del modelo Qwen3.6-35B-A3B ni su proceso de entrenamiento: no hay datos sobre numero de tokens, composicion del corpus, fases de ajuste (SFT, RLHF, DPO) ni innovaciones de atencion. Lo que se documenta es el motor de ejecucion. Sobre llama.cpp en una revision fijada, el componente `cpp/expert_pager.cpp` implementa un sistema de paginado de expertos en tres niveles: los expertos frios permanecen en SSD, la RAM aloja una cache de expertos de capacidad limitada y la CPU ejecuta el calculo. La gestion de la cache usa una politica LRU combinada con prefetch en segundo plano, y el motor expone metricas de funcionamiento. El autor insiste en que no se emplea swap como sustituto de la RAM, es decir, la memoria virtual del sistema operativo no se usa para simular capacidad inexistente.
 
-El flujo de uso se apoya en `demo.py`, que cubre la descarga de codigo y modelo, la compilacion y el acceso a un chat, y en `stage.txt`, que actua como fuente de verdad del progreso por etapas y se sube a HuggingFace. No se documentan tecnicas de decodificacion especulativa, atencion lineal ni optimizaciones de kernel mas alla del offloading de expertos.
+El flujo de uso se apoya en `demo.py`, que cubre la descarga de codigo y modelo, la compilacion y el acceso a un chat, y en `stage.txt`, que actua como fuente de verdad del progreso por etapas y se sube a Hugging Face. No se documentan tecnicas de decodificacion especulativa, atencion lineal ni optimizaciones de kernel mas alla del offloading de expertos.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ El flujo de uso se apoya en `demo.py`, que cubre la descarga de codigo y modelo,
 - Exposicion de metricas internas del motor (contadores e indicadores del paginador de expertos).
 - Ejecucion sin recurrir a swap como memoria sustituta, segun la documentacion del proyecto.
 - Puesta en marcha automatizada: `python demo.py` descarga codigo y modelo, compila y entra en modo chat; `python demo.py --help` lista todas las opciones.
-- Seguimiento de progreso por etapas mediante `stage.txt`, actualizado y subido a HuggingFace.
+- Seguimiento de progreso por etapas mediante `stage.txt`, actualizado y subido a Hugging Face.
 - Capacidades del modelo subyacente (generacion de texto, razonamiento, codigo, matematicas, tool calling, multilingueismo, agentes): no disponibles en la informacion proporcionada, ya que el repositorio no las documenta.
 - Soporte de vision, audio o modo de razonamiento explicito: no disponible.
 
@@ -78,7 +78,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 | Alternativa | Enfoque | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SDQwen35A3B | Paginado de expertos SSD, RAM y CPU sobre llama.cpp con LRU y prefetch | Los del modelo objetivo: 35 000 millones (no confirmado) | No disponible | No disponible | No disponible | Repositorio en HuggingFace con 0 descargas |
+| SDQwen35A3B | Paginado de expertos SSD, RAM y CPU sobre llama.cpp con LRU y prefetch | Los del modelo objetivo: 35 000 millones (no confirmado) | No disponible | No disponible | No disponible | Repositorio en Hugging Face con 0 descargas |
 | llama.cpp con mmap | Mapeo de los pesos en disco y demanda por el sistema operativo | Depende del modelo | Depende del modelo | No disponible | MIT (no verificado en la informacion disponible) | Ampliamente distribuido |
 | Ollama | Servidor local con gestion de modelos y cuantizaciones GGUF | Depende del modelo | Depende del modelo | No disponible | MIT (no verificado en la informacion disponible) | Ampliamente distribuido |
 | ktransformers | Descarga selectiva de expertos a CPU y GPU para modelos MoE | Depende del modelo | Depende del modelo | No disponible | No disponible (no verificado) | Repositorio publico |
@@ -98,5 +98,5 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HelloSun/sddqwen35a3b
+- Hugging Face: https://huggingface.co/HelloSun/sddqwen35a3b
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados obtenidos corresponden a paginas de YouTube sin relacion con el modelo ni con el motor descrito.

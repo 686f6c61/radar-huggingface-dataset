@@ -64,7 +64,7 @@ No disponible. No se puede establecer una comparación rigurosa sin conocer la a
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Safetensors.chatgpt-gpt-codex-V2-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Safetensors.chatgpt-gpt-codex-V2-GGUF
 - Repositorio original del modelo: https://huggingface.co/mondk/Safetensors.chatgpt-gpt-codex-V2
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Formulario de solicitud de cuantizaciones: https://huggingface.co/mradermacher/model_requests

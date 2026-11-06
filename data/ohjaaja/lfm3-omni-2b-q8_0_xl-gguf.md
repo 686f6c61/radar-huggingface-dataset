@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Omni-2B-Q8_0_XL-GGUF es una cuantización de 8 bits (Q8_0) publicada por el usuario Ohjaaja en HuggingFace, basada en el modelo LFM3-Omni-2B de LiquidAI. Se trata de una variante "near-lossless" (casi sin pérdida) preparada para ejecutarse con llama.cpp, orientada a escenarios on-device y edge AI. El modelo base es un modelo omni (any-to-any) de aproximadamente 1,73 mil millones de parámetros que combina capacidades de texto, visión y audio, incluyendo entrada de voz y salida de habla (TTS).
+LFM3-Omni-2B-Q8_0_XL-GGUF es una cuantización de 8 bits (Q8_0) publicada por el usuario Ohjaaja en Hugging Face, basada en el modelo LFM3-Omni-2B de LiquidAI. Se trata de una variante "near-lossless" (casi sin pérdida) preparada para ejecutarse con llama.cpp, orientada a escenarios on-device y edge AI. El modelo base es un modelo omni (any-to-any) de aproximadamente 1,73 mil millones de parámetros que combina capacidades de texto, visión y audio, incluyendo entrada de voz y salida de habla (TTS).
 
 La relevancia de esta cuantización reside en que preserva íntegramente los componentes multimodales críticos: el depthformer MaskGIT que predice los 12 codebooks de audio y el decodificador liquid-codec se mantienen en precisión F16/F32 dentro del archivo mmproj, mientras que el backbone de texto se cuantiza a Q8_0 con los embeddings de tokens en F16. Esto permite ejecutar el pipeline completo (texto, visión, audio y TTS) en hardware modesto sin degradar apreciablemente la calidad del habla generado.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Music-8B-Instruct-bnb-nf4 es una cuantización no oficial del modelo OpenMOSS-Team/MOSS-Music-8B-Instruct, publicada por el usuario Audante en HuggingFace. Se trata de una conversión a 4 bits mediante bitsandbytes NF4 del modelo original de OpenMOSS, manteniendo el encoder de audio y los adaptadores en bf16. No hay reentrenamiento: es una transformación puramente de precisión sobre los pesos del modelo base.
+MOSS-Music-8B-Instruct-bnb-nf4 es una cuantización no oficial del modelo OpenMOSS-Team/MOSS-Music-8B-Instruct, publicada por el usuario Audante en Hugging Face. Se trata de una conversión a 4 bits mediante bitsandbytes NF4 del modelo original de OpenMOSS, manteniendo el encoder de audio y los adaptadores en bf16. No hay reentrenamiento: es una transformación puramente de precisión sobre los pesos del modelo base.
 
 El modelo base pertenece a la familia MOSS-Music, orientada a tareas de comprensión y generación musical, con una arquitectura multimodal que combina un modelo de lenguaje con un encoder de audio. Con 9.052.463.488 parámetros totales según los safetensors del repositorio, el objetivo de esta versión cuantizada es reducir el espacio en disco (8,1 GB en el repo) y los requisitos de VRAM para facilitar su despliegue en hardware más modesto.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/MOSS-Music-8B-Instruct-bnb-nf4 | 9.052.463.488 | no disponible | 4 bits NF4 (LM) + bf16 (audio) | Apache 2.0 | HuggingFace |
-| OpenMOSS-Team/MOSS-Music-8B-Instruct | no disponible en la información | no disponible | bf16 (original) | Apache 2.0 | HuggingFace |
+| Audante/MOSS-Music-8B-Instruct-bnb-nf4 | 9.052.463.488 | no disponible | 4 bits NF4 (LM) + bf16 (audio) | Apache 2.0 | Hugging Face |
+| OpenMOSS-Team/MOSS-Music-8B-Instruct | no disponible en la información | no disponible | bf16 (original) | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones de MOSS-Music | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables adicionales de la misma categoría (modelos multimodales de música de tamaño similar) en la documentación proporcionada.
@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables adicionales de la misma 
 
 ## Enlaces
 
-- [HuggingFace: Audante/MOSS-Music-8B-Instruct-bnb-nf4](https://huggingface.co/Audante/MOSS-Music-8B-Instruct-bnb-nf4)
+- [Hugging Face: Audante/MOSS-Music-8B-Instruct-bnb-nf4](https://huggingface.co/Audante/MOSS-Music-8B-Instruct-bnb-nf4)
 - [Modelo base: OpenMOSS-Team/MOSS-Music-8B-Instruct](https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

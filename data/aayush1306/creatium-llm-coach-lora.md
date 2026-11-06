@@ -2,7 +2,7 @@
 
 ## Resumen
 
-creatium-llm-coach-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario aayush1306 en HuggingFace, ajustado a partir del modelo base unsloth/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para producir texto. El repositorio ocupa 0.3 GB, un tamano coherente con pesos de adaptador de bajo rango y no con los pesos completos de un modelo de 9.000 millones de parametros.
+creatium-llm-coach-lora es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario aayush1306 en Hugging Face, ajustado a partir del modelo base unsloth/Qwen3.5-9B. No se trata de un modelo completo, sino de un conjunto de pesos de adaptador que debe combinarse con el modelo base para producir texto. El repositorio ocupa 0.3 GB, un tamano coherente con pesos de adaptador de bajo rango y no con los pesos completos de un modelo de 9.000 millones de parametros.
 
 El ajuste se realizo con la libreria Unsloth, segun indica la propia model card, que unicamente afirma que el entrenamiento fue "2x faster with Unsloth". No se documentan el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos ni si hubo fases de RLHF o DPO. El nombre del repositorio sugiere un ajuste orientado a tareas de acompanamiento conversacional o coaching, pero la model card no confirma esta finalidad, por lo que debe tratarse como una conjetura.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio
 
 ## Arquitectura y entrenamiento
 
-Se trata de un adaptador LoRA, no de un modelo entrenado desde cero. La tecnica LoRA congela los pesos del modelo base e introduce matrices de bajo rango entrenables en determinadas capas, lo que reduce drasticamente el numero de parametros a actualizar y el coste de entrenamiento. El tag "unsloth" y el texto de la model card confirman que el ajuste se ejecuto con la libreria Unsloth, que implementa kernels optimizados y variantes de QLoRA en 4 bits para acelerar y reducir el consumo de memoria del entrenamiento. El tag "trl" apunta al uso de la libreria TRL de HuggingFace, habitual para ajuste supervisado (SFT) y optimizacion por preferencias.
+Se trata de un adaptador LoRA, no de un modelo entrenado desde cero. La tecnica LoRA congela los pesos del modelo base e introduce matrices de bajo rango entrenables en determinadas capas, lo que reduce drasticamente el numero de parametros a actualizar y el coste de entrenamiento. El tag "unsloth" y el texto de la model card confirman que el ajuste se ejecuto con la libreria Unsloth, que implementa kernels optimizados y variantes de QLoRA en 4 bits para acelerar y reducir el consumo de memoria del entrenamiento. El tag "trl" apunta al uso de la libreria TRL de Hugging Face, habitual para ajuste supervisado (SFT) y optimizacion por preferencias.
 
 No hay informacion sobre el conjunto de datos, el numero de tokens vistos, la duracion del entrenamiento, el rango del adaptador, los modulos objetivo ni los hiperparametros empleados. Tampoco se documenta ninguna innovacion tecnica mas alla del uso de Unsloth. Cualquier afirmacion sobre el dominio de especializacion del adaptador, mas alla de lo que sugiere su nombre, seria especulativa.
 
@@ -92,9 +92,9 @@ La comparacion de rendimiento no es posible: no existen benchmarks publicados pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aayush1306/creatium-llm-coach-lora
+- Modelo en Hugging Face: https://huggingface.co/aayush1306/creatium-llm-coach-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
-- Libreria PEFT de HuggingFace: https://github.com/huggingface/peft
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
+- Libreria PEFT de Hugging Face: https://github.com/huggingface/peft
 - Resultados de busqueda web: no se encontro ningun enlace relacionado con el modelo. Las URLs devueltas por la busqueda corresponden a servicios de mapas (Google Maps y Google Earth) y no guardan relacion con la ficha.

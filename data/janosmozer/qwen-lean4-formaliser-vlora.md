@@ -21,7 +21,7 @@ El adaptador se distribuye en formato PEFT (safetensors) y se carga sobre el mod
 
 ## Arquitectura y entrenamiento
 
-El adaptador aplica LoRA con rango `r=64` y escala `alpha=128` sobre las proyecciones `q/k/v/o/gate/up/down` del modelo base, que es un transformer con arquitectura de mezcla de expertos (MoE) de 30B parámetros totales y 3B activos por token. El entrenamiento se realizó con GRPO, un algoritmo de optimización de política que combina aprendizaje por refuerzo con agrupación de respuestas, implementado mediante la librería TRL de HuggingFace. El conjunto de datos utilizado fue miniF2F, que contiene problemas de matemáticas en formato Lean 4 y otros lenguajes de demostración, lo que permite al modelo aprender a traducir enunciados naturales a código de prueba formal. No se especifican detalles adicionales sobre el número de pasos de entrenamiento, el tamaño del dataset ni la composición exacta de los datos.
+El adaptador aplica LoRA con rango `r=64` y escala `alpha=128` sobre las proyecciones `q/k/v/o/gate/up/down` del modelo base, que es un transformer con arquitectura de mezcla de expertos (MoE) de 30B parámetros totales y 3B activos por token. El entrenamiento se realizó con GRPO, un algoritmo de optimización de política que combina aprendizaje por refuerzo con agrupación de respuestas, implementado mediante la librería TRL de Hugging Face. El conjunto de datos utilizado fue miniF2F, que contiene problemas de matemáticas en formato Lean 4 y otros lenguajes de demostración, lo que permite al modelo aprender a traducir enunciados naturales a código de prueba formal. No se especifican detalles adicionales sobre el número de pasos de entrenamiento, el tamaño del dataset ni la composición exacta de los datos.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables específicos para formal
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JanosMozer/qwen-lean4-formaliser-vLoRA
+- Hugging Face: https://huggingface.co/JanosMozer/qwen-lean4-formaliser-vLoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - miniF2F: https://github.com/openai/miniF2F
 - Repositorio Qwen (GitHub): https://github.com/QwenLM

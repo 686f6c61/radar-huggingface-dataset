@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibibek/train_chatterbox` no es un modelo de lenguaje generativo al uso, sino un kit de infraestructura para el ajuste fino (fine-tuning) y la inferencia con adaptadores LoRA de los modelos de sintesis de voz (TTS) Chatterbox, tanto en su variante Standart como Turbo. Lo publica el usuario ibibek en HuggingFace y su objetivo es facilitar la adaptacion de voces e idiomas nuevos mediante la extension inteligente del vocabulario del tokenizer, con dos estrategias de entrenamiento seleccionables: LoRA o ajuste completo.
+`ibibek/train_chatterbox` no es un modelo de lenguaje generativo al uso, sino un kit de infraestructura para el ajuste fino (fine-tuning) y la inferencia con adaptadores LoRA de los modelos de sintesis de voz (TTS) Chatterbox, tanto en su variante Standart como Turbo. Lo publica el usuario ibibek en Hugging Face y su objetivo es facilitar la adaptacion de voces e idiomas nuevos mediante la extension inteligente del vocabulario del tokenizer, con dos estrategias de entrenamiento seleccionables: LoRA o ajuste completo.
 
 El kit permite entrenar sobre dataset propio y elegir entre dos arquitecturas base: el modo Standart, construido sobre una arquitectura de tipo Llama con tokenizer a nivel de grafema (caracter) de unas 2.454 entradas que cubre 23 idiomas, y el modo Turbo, basado en GPT-2 con tokenizer BPE de mas de 50.000 tokens inicialmente en ingles y ampliado automaticamente con el conjunto multilingue de grafemas. La innovacion practica esta en el soporte LoRA, que congela el modelo base y entrena unicamente capas adaptadoras junto a los nuevos embeddings de idioma.
 
@@ -81,6 +81,6 @@ No disponible. La informacion proporcionada solo describe el kit de ajuste y men
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ibibek/train_chatterbox
+- Pagina del modelo en Hugging Face: https://huggingface.co/ibibek/train_chatterbox
 - Repositorio original de Chatterbox (referenciado en la model card, sin URL explicita): no disponible
 - Paper, blog o demo adicionales: no disponibles

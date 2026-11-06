@@ -72,9 +72,9 @@ No se dispone de información sobre adaptadores LoRA comparables en el mismo rep
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Chengheng/sandbag-llama31-8b-lora-rw-self | No disponible (adaptador) | 128K (base) | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Licencia Comunitaria Llama 3.1 | HuggingFace |
-| Otros adaptadores LoRA para Llama-3.1-8B | Variable | 128K | Variable | HuggingFace |
+| Chengheng/sandbag-llama31-8b-lora-rw-self | No disponible (adaptador) | 128K (base) | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Licencia Comunitaria Llama 3.1 | Hugging Face |
+| Otros adaptadores LoRA para Llama-3.1-8B | Variable | 128K | Variable | Hugging Face |
 
 ## Limitaciones y advertencias
 

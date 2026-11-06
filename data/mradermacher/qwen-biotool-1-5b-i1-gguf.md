@@ -65,5 +65,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Qwen-BioTool-1.5B-i1-GGUF
-- Repositorio HuggingFace del modelo original (mencionado en la model card): https://huggingface.co/Rumiii/Qwen-BioTool-1.5B
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Qwen-BioTool-1.5B-i1-GGUF
+- Repositorio Hugging Face del modelo original (mencionado en la model card): https://huggingface.co/Rumiii/Qwen-BioTool-1.5B

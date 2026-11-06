@@ -107,7 +107,7 @@ La comparación relevante es interna al mismo modelo base, porque la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Genrius-AI/Qwen3.5-0.8B-Pingala8-2bit
+- Modelo en Hugging Face: https://huggingface.co/Genrius-AI/Qwen3.5-0.8B-Pingala8-2bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Hermano mayor (Qwen3.5-4B Pingala-8, 2 bits): https://huggingface.co/Genrius-AI/Qwen3.5-4B-Pingala8-2bit
 - Codigo y parche del runtime: https://github.com/Genrius-AI/pingala8-llm

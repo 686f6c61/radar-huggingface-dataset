@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tofu-phi-1_5-forget10-ihl_embed-epoch13` es un checkpoint experimental de investigación publicado por el usuario `g-assismoraes` en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo `locuslab/tofu_ft_phi-1.5` (a su vez derivado de `microsoft/phi-1_5`) orientado a la tarea de *machine unlearning* sobre el benchmark TOFU, concretamente sobre la variante "forget10" (olvidar el 10 % de los datos de entrenamiento). El checkpoint corresponde a la época 13 de 20 de un procedimiento de entrenamiento que combina la pérdida IHL (probablemente *Influence-based Hessian Loss* o una variante de *inverse Hessian loss* para olvido) sobre el conjunto "forget" con una pérdida de entropía cruzada (CE) ponderada con factor 1.0 sobre el conjunto "retain".
+El modelo `tofu-phi-1_5-forget10-ihl_embed-epoch13` es un checkpoint experimental de investigación publicado por el usuario `g-assismoraes` en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo `locuslab/tofu_ft_phi-1.5` (a su vez derivado de `microsoft/phi-1_5`) orientado a la tarea de *machine unlearning* sobre el benchmark TOFU, concretamente sobre la variante "forget10" (olvidar el 10 % de los datos de entrenamiento). El checkpoint corresponde a la época 13 de 20 de un procedimiento de entrenamiento que combina la pérdida IHL (probablemente *Influence-based Hessian Loss* o una variante de *inverse Hessian loss* para olvido) sobre el conjunto "forget" con una pérdida de entropía cruzada (CE) ponderada con factor 1.0 sobre el conjunto "retain".
 
 La arquitectura subyacente es un transformer decoder-only de 1.418.270.720 parámetros (aproximadamente 1,4 mil millones), heredada de Phi-1.5, con el mismo tamaño de contexto y tokenizador que el modelo base. La particularidad técnica del checkpoint es que los *input embeddings* y la *LM head* se reinicializan desde `microsoft/phi-1_5`, mientras que el resto de pesos del transformer se conservan del modelo `locuslab/tofu_ft_phi-1.5`. Este tipo de reinicialización selectiva se emplea habitualmente en experimentos de unlearning para aislar el efecto del olvido en las representaciones de entrada y salida.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch13` | 1,4 B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Checkpoint de investigación de unlearning |
-| `locuslab/tofu_ft_phi-1.5` | 1,4 B | no disponible | no disponible en la información | HuggingFace | Modelo base del fine-tune, ajustado sobre TOFU |
-| `microsoft/phi-1_5` | 1,3 B | 2.048 tokens (según documentación pública de Phi-1.5) | MIT (según documentación pública) | HuggingFace | Modelo original de código y razonamiento |
-| `microsoft/phi-2` | 2,7 B | 2.048 tokens (según documentación pública) | MIT (según documentación pública) | HuggingFace | Alternativa de mayor tamaño de la misma familia |
+| `g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch13` | 1,4 B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Checkpoint de investigación de unlearning |
+| `locuslab/tofu_ft_phi-1.5` | 1,4 B | no disponible | no disponible en la información | Hugging Face | Modelo base del fine-tune, ajustado sobre TOFU |
+| `microsoft/phi-1_5` | 1,3 B | 2.048 tokens (según documentación pública de Phi-1.5) | MIT (según documentación pública) | Hugging Face | Modelo original de código y razonamiento |
+| `microsoft/phi-2` | 2,7 B | 2.048 tokens (según documentación pública) | MIT (según documentación pública) | Hugging Face | Alternativa de mayor tamaño de la misma familia |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch13](https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch13)
+- [Hugging Face: g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch13](https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch13)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

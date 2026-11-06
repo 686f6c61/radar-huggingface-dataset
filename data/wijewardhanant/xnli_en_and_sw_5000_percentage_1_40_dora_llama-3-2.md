@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_llama-3.2` es un adaptador de ajuste fino publicado en HuggingFace por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un adaptador PEFT (libreria `peft`, version 0.17.1) que se monta sobre el modelo base `meta-llama/Llama-3.2-3B`, un transformer decoder-only de 3.210 millones de parametros desarrollado por Meta. El repositorio ocupa 0,4 GB y contiene pesos en formato `safetensors`, lo que es coherente con un adaptador de bajo rango en lugar de una copia completa del modelo.
+El modelo identificado como `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_llama-3.2` es un adaptador de ajuste fino publicado en Hugging Face por el usuario WijewardhanaNT. No se trata de un modelo completo, sino de un adaptador PEFT (libreria `peft`, version 0.17.1) que se monta sobre el modelo base `meta-llama/Llama-3.2-3B`, un transformer decoder-only de 3.210 millones de parametros desarrollado por Meta. El repositorio ocupa 0,4 GB y contiene pesos en formato `safetensors`, lo que es coherente con un adaptador de bajo rango en lugar de una copia completa del modelo.
 
-El nombre del repositorio sugiere que el ajuste se ha realizado sobre la tarea XNLI (Cross-lingual Natural Language Inference) en ingles (`en`) y suajili (`sw`), con un subconjunto de 5.000 ejemplos y algun tipo de porcentaje de datos entre el 1 % y el 40 % (`percentage_1_40`). La tecnica de adaptacion indicada en el nombre es DoRA (Weight-Decomposed Low-Rank Adaptation), aunque la etiqueta declarada en HuggingFace es `lora`. Estas interpretaciones proceden unicamente de la convencion de nombres y no estan confirmadas por el autor.
+El nombre del repositorio sugiere que el ajuste se ha realizado sobre la tarea XNLI (Cross-lingual Natural Language Inference) en ingles (`en`) y suajili (`sw`), con un subconjunto de 5.000 ejemplos y algun tipo de porcentaje de datos entre el 1 % y el 40 % (`percentage_1_40`). La tecnica de adaptacion indicada en el nombre es DoRA (Weight-Decomposed Low-Rank Adaptation), aunque la etiqueta declarada en Hugging Face es `lora`. Estas interpretaciones proceden unicamente de la convencion de nombres y no estan confirmadas por el autor.
 
 La relevancia de la ficha es limitada pero util como caso de estudio: el repositorio no incluye model card sustantiva (la plantilla esta vacia, con todos los campos marcados como `[More Information Needed]`), no declara licencia, no declara idiomas, acumula 0 descargas y 0 likes, y no aporta resultados de evaluacion. Cualquier uso en produccion requeriria validacion propia.
 
@@ -65,8 +65,8 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (`me
 
 | Modelo | Parametros | Tipo | Contexto | Rendimiento en XNLI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_llama-3.2` | Adaptador sobre 3,21B (repo de 0,4 GB) | Adaptador PEFT (LoRA/DoRA) sobre Llama-3.2-3B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| `meta-llama/Llama-3.2-3B` | 3,21B | Transformer decoder-only completo | No disponible en esta ficha | No aplica (modelo generativo, no ajustado a NLI) | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente distribuido |
+| `WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_llama-3.2` | Adaptador sobre 3,21B (repo de 0,4 GB) | Adaptador PEFT (LoRA/DoRA) sobre Llama-3.2-3B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| `meta-llama/Llama-3.2-3B` | 3,21B | Transformer decoder-only completo | No disponible en esta ficha | No aplica (modelo generativo, no ajustado a NLI) | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente distribuido |
 | Ajuste completo supervisado de Llama-3.2-3B sobre XNLI | 3,21B | Fine-tuning completo | Igual que el base | No disponible | Depende del modelo base | No existe como artefacto publico comparable en la informacion disponible |
 
 No se dispone de datos para comparar con alternativas especificas de la misma categoria (adaptadores NLI multilingues sobre Llama-3.2 o sobre XLM-R) dentro de la informacion proporcionada.
@@ -77,7 +77,7 @@ No se dispone de datos para comparar con alternativas especificas de la misma ca
 - No se declara licencia. Sin licencia explicita, el uso comercial y la redistribucion quedan en un limbo legal, agravado porque el modelo base (Llama 3.2) si tiene su propia licencia comunitaria con condiciones de atribucion y restricciones.
 - No se declaran idiomas soportados. El suajili aparece en el nombre del repositorio, pero no hay confirmacion de cobertura ni de calidad en ese idioma.
 - Riesgo de alucinacion: no evaluado. Si el adaptador se usa para generacion de texto abierta pese a estar ajustado a una tarea discriminativa, el riesgo de degradacion respecto al modelo base es alto y no esta medido.
-- Desajuste entre la etiqueta `text-generation` y la tarea probable (XNLI, clasificacion de tres clases). Esto puede provocar que herramientas automaticas del ecosistema HuggingFace carguen el modelo con expectativas incorrectas.
+- Desajuste entre la etiqueta `text-generation` y la tarea probable (XNLI, clasificacion de tres clases). Esto puede provocar que herramientas automaticas del ecosistema Hugging Face carguen el modelo con expectativas incorrectas.
 - Sesgos: no documentados. El corpus XNLI y el modelo base Llama 3.2 tienen sesgos conocidos en la literatura general, pero no existe analisis especifico para este adaptador.
 - Idiomas de bajos recursos: un ajuste con 5.000 ejemplos en suajili es insuficiente para garantizar generalizacion. El porcentaje de datos indicado en el nombre (`1_40`) sugiere un regimen experimental, no un ajuste orientado a produccion.
 - El repositorio tiene 0 descargas y 0 likes, sin evidencia de uso, replicacion o validacion por terceros.
@@ -86,7 +86,7 @@ No se dispone de datos para comparar con alternativas especificas de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_llama-3.2
+- Repositorio Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_sw_5000_percentage_1_40_DoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en la plantilla de la model card (estimacion de emisiones): https://mlco2.github.io/impact
 - Lacoste et al. (2019), `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700

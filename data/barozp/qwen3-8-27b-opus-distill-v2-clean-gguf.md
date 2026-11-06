@@ -21,7 +21,7 @@ Con 27 320 697 856 parámetros (aproximadamente 27,3 mil millones), el modelo em
 
 ## Arquitectura y entrenamiento
 
-La arquitectura base es un transformer denso de 64 capas con tamaño oculto de 5120 y atención por grupos de consultas (24 cabezas de consulta, 4 de clave/valor), tal como se detalla en el visor de arquitectura de HuggingFace. El modelo original Qwen3.8-27B es nativamente multimodal, capaz de procesar tanto texto como imagenes, y esta optimizado para tareas de codificacion, flujos agénticos y automatizacion de oficina, segun el repositorio oficial de AlibabaCloud.
+La arquitectura base es un transformer denso de 64 capas con tamaño oculto de 5120 y atención por grupos de consultas (24 cabezas de consulta, 4 de clave/valor), tal como se detalla en el visor de arquitectura de Hugging Face. El modelo original Qwen3.8-27B es nativamente multimodal, capaz de procesar tanto texto como imagenes, y esta optimizado para tareas de codificacion, flujos agénticos y automatizacion de oficina, segun el repositorio oficial de AlibabaCloud.
 
 El proceso de destilacion realizado por `barozp` consiste en entrenar el modelo para imitar las salidas de un modelo "Opus" (probablemente Claude Opus de Anthropic), con el objetivo de transferir capacidades avanzadas de razonamiento y estilo de respuesta. La version "v2-clean" sugiere una segunda iteracion con un conjunto de datos depurado. No se dispone de detalles sobre el volumen de datos de entrenamiento, el uso de RLHF/DPO ni otras tecnicas de alineacion. La conversion a GGUF se realizo posteriormente para permitir la ejecucion en CPU/GPU con herramientas como llama.cpp, Ollama o LM Studio.
 
@@ -46,7 +46,7 @@ El proceso de destilacion realizado por `barozp` consiste en entrenar el modelo 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion, y la pagina de LLM Explorer menciona la posibilidad de comparar benchmarks pero no ofrece valores concretos para este modelo. Se recomienda consultar el repositorio base de Qwen3.8-27B para obtener resultados de evaluacion del modelo original, aunque la destilacion puede alterar dichos resultados.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion, y la pagina de LLM Explorer menciona la posibilidad de comparar benchmarks pero no ofrece valores concretos para este modelo. Se recomienda consultar el repositorio base de Qwen3.8-27B para obtener resultados de evaluacion del modelo original, aunque la destilacion puede alterar dichos resultados.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-clean-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-v2-clean-GGUF
 - Repositorio del modelo base (safetensors): https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill
 - Repositorio GGUF del modelo base (sin v2): https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-GGUF
 - Pagina en LLM Explorer: https://llm-explorer.com/model/barozp%2FQwen3.8-27B-Opus-Distill,3VlOlS40JbJDkIo8TeHR6E

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blockgrid-nano` es un modelo de clasificación de imágenes extremadamente pequeño (46.834 parámetros, 187 KB) desarrollado por Joe Cox (usuario `resoajoe` en HuggingFace). Su propósito es detectar si una imagen JPEG fue recortada fuera de la cuadrícula de bloques de 8×8 y posteriormente re-codificada, lo que constituye una señal forense de que la imagen ha sufrido un proceso de re-encode. El modelo se distribuye en formato ONNX con licencia MIT.
+`blockgrid-nano` es un modelo de clasificación de imágenes extremadamente pequeño (46.834 parámetros, 187 KB) desarrollado por Joe Cox (usuario `resoajoe` en Hugging Face). Su propósito es detectar si una imagen JPEG fue recortada fuera de la cuadrícula de bloques de 8×8 y posteriormente re-codificada, lo que constituye una señal forense de que la imagen ha sufrido un proceso de re-encode. El modelo se distribuye en formato ONNX con licencia MIT.
 
 La relevancia de este modelo radica en que aborda una tarea de análisis forense de imágenes con una huella de cómputo mínima, diseñada para su ejecución en CPU en tiempo real. El autor demuestra que una representación basada en la transformada DCT por bloques supera a los píxeles crudos (precisión 0.985 frente a 0.865) y que el modelo generaliza a sensores fuera del corpus de entrenamiento, algo que un umbral clásico de entropía no logra. No se trata de un detector de manipulación o deepfake, sino de una herramienta de triaje que identifica una historia de procesado concreta: el recorte con desplazamiento no múltiplo de 8.
 
@@ -92,6 +92,6 @@ La comparativa muestra que el modelo supera al umbral clásico cuando se transfi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/resoajoe/blockgrid-nano)
-- [Perfil del autor en HuggingFace](https://huggingface.co/resoajoe/models)
+- [Modelo en Hugging Face](https://huggingface.co/resoajoe/blockgrid-nano)
+- [Perfil del autor en Hugging Face](https://huggingface.co/resoajoe/models)
 - [Modelos relacionados del autor](https://huggingface.co/resoajoe/models) (incluye `camera-motion-nano`, `camera-health-nano`, `alarm-nano` con la misma arquitectura)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darrenywle4/generation-slim` es un repositorio de HuggingFace publicado por el usuario `darrenywle4` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura **Efficientformer** orientada a tareas de generación. Según la propia model card, se trata de la configuración "nano", pensada explícitamente para revisión de código, smoke tests y experimentos pequeños y controlados, y no como un lanzamiento preentrenado listo para producción.
+`darrenywle4/generation-slim` es un repositorio de Hugging Face publicado por el usuario `darrenywle4` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura **Efficientformer** orientada a tareas de generación. Según la propia model card, se trata de la configuración "nano", pensada explícitamente para revisión de código, smoke tests y experimentos pequeños y controlados, y no como un lanzamiento preentrenado listo para producción.
 
 El repositorio incluye un artefacto principal (`main.py`) con el modelo y un ejemplo ejecutable o punto de entrada de entrenamiento, además de `config.json` (ajustes de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`, que el autor describe como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint entrenado ni evaluado. El recuento real de parámetros leído de los safetensors es de 16.576, coherente con una configuración minúscula de tipo smoke test y no con un modelo de propósito general.
 
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darrenywle4/generation-slim
+- Hugging Face: https://huggingface.co/darrenywle4/generation-slim
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos correspondían a páginas genéricas de inicio de sesión y portadas de buscadores, sin relación con el repositorio. No se dispone de paper, blog, repositorio de código adicional ni demo asociados.

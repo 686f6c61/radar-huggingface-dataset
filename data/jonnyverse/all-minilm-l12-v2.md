@@ -80,7 +80,7 @@ Nota: los datos de los modelos comparados provienen de informacion publica gener
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/all-MiniLM-L12-v2
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/all-MiniLM-L12-v2
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L12-v2
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js
 - Optimum (conversion a ONNX): https://huggingface.co/docs/optimum/index

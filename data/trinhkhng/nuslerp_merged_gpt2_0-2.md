@@ -78,7 +78,7 @@ La comparación principal es con GPT-2 small, ya que comparte la misma arquitect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2_0.2
+- Hugging Face: https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2_0.2
 - Modelo de la variante large: https://huggingface.co/trinhkhng/nuslerp_Merged_gpt2-large_0.2
 - Modelo de la variante medium (FriendliAI): https://friendli.ai/models/trinhkhng/nuslerp_Merged_gpt2-medium_0.2
 - Herramienta mergekit: https://github.com/cg123/mergekit

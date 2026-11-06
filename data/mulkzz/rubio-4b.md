@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rubio-4B (mulkzz) | 4,66 B | 4.096 en entrenamiento; 8.192 en ejemplo de servicio | Feedback de Biologia en coreano con salida JSON | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible en la informacion proporcionada | Proposito general, multilingue | No disponible en la informacion proporcionada | HuggingFace |
+| Rubio-4B (mulkzz) | 4,66 B | 4.096 en entrenamiento; 8.192 en ejemplo de servicio | Feedback de Biologia en coreano con salida JSON | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible en la informacion proporcionada | Proposito general, multilingue | No disponible en la informacion proporcionada | Hugging Face |
 | Modelos de evaluacion automatica de respuestas abiertas de proposito general | Variable | Variable | Evaluacion generica multilingue | Variable | Variable |
 
 No se dispone de datos de benchmarks ni de modelos directamente comparables en el mismo nicho (feedback estructurado de Biologia en coreano) dentro de la informacion proporcionada.
@@ -87,6 +87,6 @@ No se dispone de datos de benchmarks ni de modelos directamente comparables en e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulkzz/Rubio-4B
+- Modelo en Hugging Face: https://huggingface.co/mulkzz/Rubio-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Servicio de demostracion: https://mulk.codes/rubio

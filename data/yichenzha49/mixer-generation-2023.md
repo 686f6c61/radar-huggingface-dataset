@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Generation es un repositorio experimental publicado por el usuario yichenzha49 en HuggingFace. No se trata de un modelo entrenado ni de un modelo listo para producción: la propia model card lo describe como una implementación funcional de una arquitectura tipo Mixer con configuración "giant", orientada a código transparente y a pruebas de humo (smoke tests) reproducibles. El checkpoint incluido (`model.safetensors`) es una inicialización válida para esas pruebas, no un modelo con pesos entrenados ni evaluados.
+Mixer for Generation es un repositorio experimental publicado por el usuario yichenzha49 en Hugging Face. No se trata de un modelo entrenado ni de un modelo listo para producción: la propia model card lo describe como una implementación funcional de una arquitectura tipo Mixer con configuración "giant", orientada a código transparente y a pruebas de humo (smoke tests) reproducibles. El checkpoint incluido (`model.safetensors`) es una inicialización válida para esas pruebas, no un modelo con pesos entrenados ni evaluados.
 
 El peso real del checkpoint es de 24.832 parámetros según los metadatos de safetensors, lo que lo sitúa en un rango meramente demostrativo (del orden de decenas de kilobytes en fp32). La arquitectura declarada combina atención de ventana deslizante (sliding window) con fusión tipo concat mlp, activación ReLU y normalización LayerNorm. La receta de entrenamiento por defecto usa RMSProp con un schedule de warmup constante, aunque el autor aclara explícitamente que son valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo entrenado, sino una implementaci
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mixer-generation-2023 | 24.832 | no disponible | sin benchmarks | MIT | HuggingFace |
+| mixer-generation-2023 | 24.832 | no disponible | sin benchmarks | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,5 +87,5 @@ No disponible. Este repositorio no es un modelo entrenado, sino una implementaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yichenzha49/mixer-generation-2023
+- Repositorio en Hugging Face: https://huggingface.co/yichenzha49/mixer-generation-2023
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a paginas del servicio de streaming discovery+, sin relacion con el repositorio. No se dispone de paper, blog, repositorio de codigo ni demo adicionales.

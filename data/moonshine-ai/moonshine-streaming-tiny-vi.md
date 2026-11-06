@@ -86,7 +86,7 @@ No se dispone de datos de WER comparables para otros modelos en vietnamita en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-vi
+- Modelo en Hugging Face: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-vi
 - Modelo base multilingüe: https://huggingface.co/moonshine-ai/moonshine-streaming-tiny
 - Repositorio GitHub del proyecto: https://github.com/moonshine-ai/moonshine
 - Directorio de modelos micro: https://github.com/moonshine-ai/moonshine/tree/main/micro/models

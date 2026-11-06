@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seltz (scope=news) es un identificador publicado en HuggingFace por el usuario openbenchmarks que, en realidad, no contiene un modelo de inteligencia artificial con pesos, sino un *stub* o marcador de posición para que una API de búsqueda web de noticias pueda aparecer en el leaderboard oficial del benchmark OB News Websearch. La propia model card lo declara explícitamente: "Stub model card so this search API can appear on the OB News Websearch Official Benchmark leaderboard. There are no weights here."
+Seltz (scope=news) es un identificador publicado en Hugging Face por el usuario openbenchmarks que, en realidad, no contiene un modelo de inteligencia artificial con pesos, sino un *stub* o marcador de posición para que una API de búsqueda web de noticias pueda aparecer en el leaderboard oficial del benchmark OB News Websearch. La propia model card lo declara explícitamente: "Stub model card so this search API can appear on the OB News Websearch Official Benchmark leaderboard. There are no weights here."
 
 Se trata, por tanto, de una API de búsqueda de noticias en tiempo real, orientada a sistemas de IA como agentes autónomos, pipelines RAG o aplicaciones de LLM que necesitan acceso a información web actualizada. El servicio es ofrecido por la empresa Seltz, que documenta un endpoint `POST /v1/search` con configuración `scope=news`. No hay arquitectura de modelo, parámetros ni contexto que describir, ya que no existe un modelo subyacente en este repositorio.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. No se dispone de información sobre otros proveedores de búsqueda de noticias comparables en términos de rendimiento, precio o características. La entrada en HuggingFace es un stub, y la documentación de Seltz no ofrece tablas comparativas.
+No disponible. No se dispone de información sobre otros proveedores de búsqueda de noticias comparables en términos de rendimiento, precio o características. La entrada en Hugging Face es un stub, y la documentación de Seltz no ofrece tablas comparativas.
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No disponible. No se dispone de información sobre otros proveedores de búsqued
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/openbenchmarks/seltz-news
+- Model card en Hugging Face: https://huggingface.co/openbenchmarks/seltz-news
 - Sitio oficial de Seltz: https://seltz.ai/
 - Documentación de la API: https://docs.seltz.ai/
 - Blog sobre el benchmark de búsqueda de noticias: https://seltz.ai/blog/seltz-news-benchmark

@@ -83,10 +83,10 @@ Perplejidad de validacion held-out por segmento (denso / MoE): 17,79 / 17,16 en 
 
 | Modelo | Parametros totales / activos | Contexto | Harness 7 tareas | Perplejidad val. | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tinymistral-276m | 276,1M / 276,1M (denso) | 2048 | 0,3904 | 16,33 | MIT | HuggingFace (transformers) |
-| tinymixtral | 477,5M / 276,1M (MoE top-2) | 2048 | 0,3992 | 15,59 | MIT | HuggingFace (transformers) |
-| SmolLM2-360M | ~360M (no confirmado en la informacion disponible) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-0.6B | ~0,6B (no confirmado en la informacion disponible) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| tinymistral-276m | 276,1M / 276,1M (denso) | 2048 | 0,3904 | 16,33 | MIT | Hugging Face (transformers) |
+| tinymixtral | 477,5M / 276,1M (MoE top-2) | 2048 | 0,3992 | 15,59 | MIT | Hugging Face (transformers) |
+| SmolLM2-360M | ~360M (no confirmado en la informacion disponible) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-0.6B | ~0,6B (no confirmado en la informacion disponible) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La model card menciona SmolLM2-360M y Qwen3-0.6B como referencias de presupuesto de entrenamiento (entre 2 y 36 billones de tokens, frente a los 8,05 mil millones de este modelo), pero no se aportan resultados de benchmarks de esos modelos en la informacion disponible, por lo que la comparacion numerica directa no es posible. La comparacion internamente valida es la de tinymistral-276m frente a tinymixtral, que comparten datos, tokenizador y FLOPs por token.
 
@@ -104,7 +104,7 @@ La model card menciona SmolLM2-360M y Qwen3-0.6B como referencias de presupuesto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mikecovlee/tinymistral-276m
+- Modelo en Hugging Face: https://huggingface.co/mikecovlee/tinymistral-276m
 - Modelo MoE de la familia: https://huggingface.co/mikecovlee/tinymixtral
 - Version con ajuste por instrucciones: https://huggingface.co/mikecovlee/tinymixtral-it
 - Repositorio GitHub: https://github.com/mikecovlee/tinymixtral

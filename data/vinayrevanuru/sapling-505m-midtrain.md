@@ -98,11 +98,11 @@ Los datos de los modelos de terceros provienen de sus fichas publicas y no forma
 
 | Modelo | Parametros | Contexto | Fase | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Sapling-505M-Midtrain | 505M | 2.048 | Mid-training (annealed), no instruido | 2,0 % (muestra de 250) | Apache 2.0 | HuggingFace, pesos FP32 |
-| Sapling-505M-Base | 505M | 2.048 | Preentrenamiento (5B tokens) | No disponible | Apache 2.0 | HuggingFace |
-| Sapling-505M-SFT | 505M | 2.048 | SFT (+0,5B tokens), chat | No disponible | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | ≈494M | 32.768 | Base e instruct | No disponible en esta ficha | Apache 2.0 | HuggingFace, amplio ecosistema GGUF |
-| SmolLM2-360M | ≈362M | 8.192 | Base e instruct | No disponible en esta ficha | Apache 2.0 | HuggingFace, GGUF oficial |
+| Sapling-505M-Midtrain | 505M | 2.048 | Mid-training (annealed), no instruido | 2,0 % (muestra de 250) | Apache 2.0 | Hugging Face, pesos FP32 |
+| Sapling-505M-Base | 505M | 2.048 | Preentrenamiento (5B tokens) | No disponible | Apache 2.0 | Hugging Face |
+| Sapling-505M-SFT | 505M | 2.048 | SFT (+0,5B tokens), chat | No disponible | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | ≈494M | 32.768 | Base e instruct | No disponible en esta ficha | Apache 2.0 | Hugging Face, amplio ecosistema GGUF |
+| SmolLM2-360M | ≈362M | 8.192 | Base e instruct | No disponible en esta ficha | Apache 2.0 | Hugging Face, GGUF oficial |
 
 Frente a sus alternativas, la principal desventaja de Sapling-505M-Midtrain es la ventana de contexto (2.048 tokens frente a 8.192-32.768) y la ausencia de version instruct utilizable; la ventaja es la transparencia total de la receta y un coste de entrenamiento documentado de 1,2 horas en 8×H100, lo que lo hace muy reproducible.
 
@@ -118,11 +118,11 @@ Frente a sus alternativas, la principal desventaja de Sapling-505M-Midtrain es l
 - Sesgos: no se han publicado evaluaciones de sesgo, toxidad ni robustez mas alla del arnes CoCoNot; al no tener ajuste de seguridad, cabe esperar que reproduzca sesgos y contenido problematico presente en los datos web.
 - Riesgo de alucinacion elevado en un modelo de 505M sin ajuste: no debe usarse como fuente de informacion sin verificacion externa.
 - Advertencia de despliegue: no debe exponerse directamente a usuarios finales; requiere capas de moderacion, limites de longitud y un formato de parada impuesto desde el servidor.
-- Metadatos llamativos: 0 descargas y 0 likes en el momento de la consulta, y fecha de creacion del 26 de octubre de 2026 segun HuggingFace; se trata de un artefacto de investigacion individual, sin validacion externa.
+- Metadatos llamativos: 0 descargas y 0 likes en el momento de la consulta, y fecha de creacion del 26 de octubre de 2026 segun Hugging Face; se trata de un artefacto de investigacion individual, sin validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain
+- Modelo en Hugging Face: https://huggingface.co/VinayRevanuru/Sapling-505M-Midtrain
 - Modelo base: https://huggingface.co/VinayRevanuru/Sapling-505M-Base
 - Modelo SFT sucesor: https://huggingface.co/VinayRevanuru/Sapling-505M-SFT
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

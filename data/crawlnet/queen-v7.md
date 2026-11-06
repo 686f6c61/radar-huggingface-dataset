@@ -82,6 +82,6 @@ Queen v7 se diferencia de estas alternativas en que es un modelo vertical entren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crawlnet/queen-v7
+- Modelo en Hugging Face: https://huggingface.co/Crawlnet/queen-v7
 - Código base (nanochat, Karpathy): https://github.com/karpathy/nanochat
 - No hay paper, blog ni demo adicionales en la información disponible.

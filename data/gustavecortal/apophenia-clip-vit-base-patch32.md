@@ -97,10 +97,10 @@ No se dispone de comparaciones de rendimiento medidas entre estas opciones en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gustavecortal/apophenia-clip-vit-base-patch32
+- Modelo en Hugging Face: https://huggingface.co/gustavecortal/apophenia-clip-vit-base-patch32
 - Proyecto apophenia: https://gustavecortal.com/apophenia/
 - Export de referencia de Xenova: https://huggingface.co/Xenova/clip-vit-base-patch32
-- CLIP original de OpenAI en HuggingFace: https://huggingface.co/openai/clip-vit-base-patch32
+- CLIP original de OpenAI en Hugging Face: https://huggingface.co/openai/clip-vit-base-patch32
 - Repositorio de CLIP en GitHub: https://github.com/openai/CLIP
 - Paper de CLIP: https://arxiv.org/abs/2103.00020
 - Documentación de ONNX Runtime Web: https://onnxruntime.ai/docs/tutorials/web/

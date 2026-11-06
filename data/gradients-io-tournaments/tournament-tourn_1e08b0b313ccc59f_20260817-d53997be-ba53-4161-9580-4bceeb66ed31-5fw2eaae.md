@@ -79,7 +79,7 @@ Este adaptador no tiene una entidad propia comparable; su valor depende del ajus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_1e08b0b313ccc59f_20260817-d53997be-ba53-4161-9580-4bceeb66ed31-5FW2Eaae
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_1e08b0b313ccc59f_20260817-d53997be-ba53-4161-9580-4bceeb66ed31-5FW2Eaae
 - Plataforma Gradients (Subnet 56): https://www.gradients.io/app/research/tournament
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Documentación de PEFT: https://huggingface.co/docs/peft

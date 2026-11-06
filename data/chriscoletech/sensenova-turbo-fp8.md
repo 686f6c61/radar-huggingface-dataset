@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SenseNova-turbo-FP8 es un checkpoint multimodal nativo publicado por el usuario ChrisColeTech en HuggingFace, derivado mediante fine-tuning del modelo base sensenova/SenseNova-U1.5-8B-MoT. Se trata de una variante optimizada para generacion y edicion de imagenes que incorpora un Turbo LoRA de 8 pasos ya integrado en los pesos, lo que reduce el coste de inferencia frente a muestreos de decenas de pasos. El pipeline declarado es any-to-any, con soporte declarado de ingles y chino, y se distribuye bajo licencia Apache 2.0.
+SenseNova-turbo-FP8 es un checkpoint multimodal nativo publicado por el usuario ChrisColeTech en Hugging Face, derivado mediante fine-tuning del modelo base sensenova/SenseNova-U1.5-8B-MoT. Se trata de una variante optimizada para generacion y edicion de imagenes que incorpora un Turbo LoRA de 8 pasos ya integrado en los pesos, lo que reduce el coste de inferencia frente a muestreos de decenas de pasos. El pipeline declarado es any-to-any, con soporte declarado de ingles y chino, y se distribuye bajo licencia Apache 2.0.
 
 El modelo se apoya en la arquitectura NEO-unify de SenseNova, orientada a unificar generacion y edicion visual dentro de un mismo modelo multimodal, sin pipeline de difusion separado para cada tarea. Segun la model card, el fine-tuning refuerza las capas de patchify, la calidad y distribucion de los datos, la formulacion de tareas y el pipeline de post-entrenamiento respecto al modelo base.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChrisColeTech/SenseNova-turbo-FP8 | ~8B (segun nombre del base) | No disponible | Generacion y edicion de imagen any-to-any | Apache 2.0 | HuggingFace, pesos FP8 y GGUF |
-| sensenova/SenseNova-U1.5-8B-MoT (modelo base) | ~8B (segun nombre) | No disponible | Generacion y edicion de imagen any-to-any | No especificada en la informacion disponible | HuggingFace (referenciado como base_model) |
+| ChrisColeTech/SenseNova-turbo-FP8 | ~8B (segun nombre del base) | No disponible | Generacion y edicion de imagen any-to-any | Apache 2.0 | Hugging Face, pesos FP8 y GGUF |
+| sensenova/SenseNova-U1.5-8B-MoT (modelo base) | ~8B (segun nombre) | No disponible | Generacion y edicion de imagen any-to-any | No especificada en la informacion disponible | Hugging Face (referenciado como base_model) |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de otras alternativas comparables en la informacion proporcionada, ni de resultados de benchmarks que permitan una comparacion cuantitativa con modelos de generacion y edicion de imagen de tamano similar.
@@ -100,8 +100,8 @@ No se dispone de datos verificables de otras alternativas comparables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChrisColeTech/SenseNova-turbo-FP8
-- Modelo base en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Modelo en Hugging Face: https://huggingface.co/ChrisColeTech/SenseNova-turbo-FP8
+- Modelo base en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Blog de NEO-unify: https://huggingface.co/blog/sensenova/neo-unify
 - Repositorio OpenSenseNova/SenseNova-U1: https://github.com/OpenSenseNova/SenseNova-U1
 - Licencia Apache 2.0 referenciada por el autor: https://github.com/OpenSenseNova/SenseNova-U1/blob/refs/heads/feat/u1.5/LICENSE

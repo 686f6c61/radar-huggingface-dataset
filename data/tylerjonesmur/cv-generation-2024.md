@@ -36,7 +36,7 @@ El entrenamiento no se ha realizado: el checkpoint `model.safetensors` es una in
 
 - **Educación e investigación**: sirve como ejemplo didáctico de cómo implementar una arquitectura Beit para generación, con código legible y comentado.
 - **Pruebas de integración**: el checkpoint permite verificar que el pipeline de carga de pesos y la ejecución del modelo funcionan en un entorno dado.
-- **Desarrollo de adaptadores**: al ser una implementación personalizada, las APIs de carga automática de HuggingFace no funcionan directamente; este modelo sirve para desarrollar un adaptador específico.
+- **Desarrollo de adaptadores**: al ser una implementación personalizada, las APIs de carga automática de Hugging Face no funcionan directamente; este modelo sirve para desarrollar un adaptador específico.
 - **Experimentos de entrenamiento**: se puede usar como inicialización para entrenar un modelo pequeño en una tarea generativa concreta, siguiendo las directrices de evaluación del autor (tres semillas, baseline de capacidad comparable).
 - **Validación de recetas de optimización**: el optimizador lion y el programador onecycle pueden probarse con este modelo antes de escalar a arquitecturas mayores.
 - **Auditoría de código**: para desarrolladores que quieran revisar una implementación de Beit generativa y compararla con otras variantes.
@@ -65,8 +65,8 @@ No disponible. No se conocen modelos comparables de tamaño y propósito similar
 - **Idiomas**: no se especifica soporte lingüístico; probablemente no genera texto coherente en ningún idioma.
 - **Uso comercial**: la licencia MIT permite uso comercial, pero el modelo no es útil para producción sin un entrenamiento completo.
 - **Dependencia de datos externos**: si se entrena con datasets externos, hay que revisar los términos de esos datos por separado.
-- **Compatibilidad limitada**: las APIs automáticas de HuggingFace no cargan este modelo sin un adaptador explícito.
+- **Compatibilidad limitada**: las APIs automáticas de Hugging Face no cargan este modelo sin un adaptador explícito.
 
 ## Enlaces
 
-- [HuggingFace: tylerjonesmur/cv-generation-2024](https://huggingface.co/tylerjonesmur/cv-generation-2024)
+- [Hugging Face: tylerjonesmur/cv-generation-2024](https://huggingface.co/tylerjonesmur/cv-generation-2024)

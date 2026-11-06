@@ -32,7 +32,7 @@ La innovación más destacable no está en el diseño de la arquitectura, sino e
 - No es un modelo de chat: no puede mantener conversaciones en lenguaje natural ni generar texto libre fuera del DSL.
 - No soporta tool calling, function calling ni razonamiento multi-step orientado a agentes.
 - No tiene capacidades multimodales: el checkpoint publicado es exclusivamente de texto y no debe anunciarse como modelo OCR.
-- Sin soporte multilingüe: el modelo solo maneja el DSL sintético, a pesar de que el campo de idiomas en HuggingFace indica inglés.
+- Sin soporte multilingüe: el modelo solo maneja el DSL sintético, a pesar de que el campo de idiomas en Hugging Face indica inglés.
 
 ## Casos de uso
 
@@ -95,7 +95,7 @@ No existen modelos comerciales comparables en la misma categoría, ya que grug-r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenFlowLabs/grug-rule-350m
+- Hugging Face: https://huggingface.co/OpenFlowLabs/grug-rule-350m
 - Repositorio del proyecto: https://code.aopc.cloud/toasterson/akh-medu
 - Commit específico reproducido: https://code.aopc.cloud/toasterson/akh-medu/commit/053c66516074c5cdc13438df230c4a92bc7a1125
 - Referencias citadas en la model card: Adaptive Edge of Stability (arXiv 2207.14484), PaLM (arXiv 2204.02311)

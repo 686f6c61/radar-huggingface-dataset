@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laskar-ks/smollm2-135m-trivia | 134,5 M | no disponible | Trivia opcion multiple (en) | no disponible | HuggingFace (safetensors, GGUF) |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135 M | no disponible en esta ficha | Instructivo general | no disponible en esta ficha | HuggingFace |
-| SmolLM2-360M-Instruct | 360 M | no disponible en esta ficha | Instructivo general | no disponible en esta ficha | HuggingFace |
+| laskar-ks/smollm2-135m-trivia | 134,5 M | no disponible | Trivia opcion multiple (en) | no disponible | Hugging Face (safetensors, GGUF) |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135 M | no disponible en esta ficha | Instructivo general | no disponible en esta ficha | Hugging Face |
+| SmolLM2-360M-Instruct | 360 M | no disponible en esta ficha | Instructivo general | no disponible en esta ficha | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos instructivos de menos de 500 M de parámetros) solo puede establecerse a nivel de tamaño y propósito general; no hay datos de benchmarks comparables publicados para este ajuste.
 
@@ -96,7 +96,7 @@ La comparación con alternativas de la misma categoría (modelos instructivos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laskar-ks/smollm2-135m-trivia
+- Modelo en Hugging Face: https://huggingface.co/laskar-ks/smollm2-135m-trivia
 - Dataset de entrenamiento: https://huggingface.co/datasets/laskar-ks/trivia-questions
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio de SmolLM2 (Hugging Face): no disponible en la información proporcionada

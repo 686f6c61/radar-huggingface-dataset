@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento del bo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-Gauss-FP8-W8A8
+- Repositorio Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-Gauss-FP8-W8A8
 - Borrador base (Red Hat AI): https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de la libreria `speculators`: no se proporciona URL en la informacion disponible.

@@ -95,7 +95,7 @@ La comparativa se limita al linaje directo del modelo porque la model card no of
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mihir-Karbelkar/qwen2.5-7b-bookworm
+- Repositorio Hugging Face: https://huggingface.co/Mihir-Karbelkar/qwen2.5-7b-bookworm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - lm-evaluation-harness (evaluacion): https://github.com/EleutherAI/lm-evaluation-harness

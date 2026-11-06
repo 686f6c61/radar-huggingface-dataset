@@ -78,8 +78,8 @@ Como referencia comparativa, la model card indica que un juez LLM de 14B y la AP
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| raz-systemone-nli-xsmall (v5) | 70,8 M | no disponible | 0,833–0,941 en holdouts; 0,941 en MNLI 10k | MIT | HuggingFace (repo propio) |
-| cross-encoder/nli-deberta-v3-xsmall (base) | ~70 M (aprox., variante xsmall) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| raz-systemone-nli-xsmall (v5) | 70,8 M | no disponible | 0,833–0,941 en holdouts; 0,941 en MNLI 10k | MIT | Hugging Face (repo propio) |
+| cross-encoder/nli-deberta-v3-xsmall (base) | ~70 M (aprox., variante xsmall) | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Juez LLM de 14B (referencia citada) | ~14 000 M | no disponible | 0,894 en el core set de 70 estados | no disponible | no disponible |
 | API de Jev (referencia citada) | no disponible | no disponible | 0,894 en el core set de 70 estados | no disponible | API externa |
 
@@ -99,7 +99,7 @@ No se dispone de datos de otros modelos NLI comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RazvanManolache/raz-systemone-nli-xsmall
+- Modelo en Hugging Face: https://huggingface.co/RazvanManolache/raz-systemone-nli-xsmall
 - Repositorio del proyecto raz-systemone: https://github.com/RazvanManolache/raz-systemone
 - Receta de entrenamiento: https://github.com/RazvanManolache/raz-systemone/tree/master/training
 - Modelo base: https://huggingface.co/cross-encoder/nli-deberta-v3-xsmall

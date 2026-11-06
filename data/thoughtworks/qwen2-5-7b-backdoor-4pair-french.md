@@ -136,7 +136,7 @@ La comparacion directa con el modelo base es la mas informativa: ambos comparten
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-4pair-french
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-4pair

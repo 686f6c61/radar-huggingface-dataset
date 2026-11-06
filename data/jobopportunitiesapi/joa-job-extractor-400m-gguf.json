@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "JobOpportunitiesAPI/joa-job-extractor-400m-gguf",
+  "slug": "jobopportunitiesapi-joa-job-extractor-400m-gguf",
+  "author": "JobOpportunitiesAPI",
+  "url": "https://huggingface.co/JobOpportunitiesAPI/joa-job-extractor-400m-gguf",
+  "created_at": "2026-11-06T10:37:05.000Z",
+  "updated_at": "2026-11-06T10:37:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "nl"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "job-postings",
+    "information-extraction",
+    "structured-output",
+    "json",
+    "salary-extraction",
+    "granite",
+    "mixture-of-experts",
+    "text-generation",
+    "en",
+    "de",
+    "fr",
+    "nl",
+    "base_model:ibm-granite/granite-3.1-1b-a400m-instruct",
+    "base_model:finetune:ibm-granite/granite-3.1-1b-a400m-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1334628352,
+  "parameters_human": "1.33B",
+  "storage_bytes": 4916755328,
+  "storage_human": "4.9 GB",
+  "base_model": "ibm-granite/granite-3.1-1b-a400m-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Job-Extractor.io | AI-Powered Job Dashboard - GitHub",
+      "url": "https://github.com/costibaicu/AI-Job-Extractor",
+      "snippet": "AI-powered full-stack platform for automated job extraction, compatibility analysis, and custom cover letter generation using Spring Boot, Vanilla JS, and Ollama."
+    },
+    {
+      "title": "JobOpportunitiesAPI (Job Opportunities API (JOA)) - Hugging Face",
+      "url": "https://huggingface.co/JobOpportunitiesAPI/models",
+      "snippet": "AI & ML interests Employer-direct job-posting data and open job-market reports: where openings are, pay transparency, posting dates and hiring concentration. Aggregate tables under CC BY 4.0. Contact: hello@jobopportunitiesapi.org"
+    }
+  ]
+}

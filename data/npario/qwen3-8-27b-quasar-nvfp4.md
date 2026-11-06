@@ -88,6 +88,6 @@ El modelo QUASAR es el mas pequeno y el de mayor calidad entre las opciones NVFP
 
 ## Enlaces
 
-- [HuggingFace: npario/Qwen3.8-27B-QUASAR-NVFP4](https://huggingface.co/npario/Qwen3.8-27B-QUASAR-NVFP4)
+- [Hugging Face: npario/Qwen3.8-27B-QUASAR-NVFP4](https://huggingface.co/npario/Qwen3.8-27B-QUASAR-NVFP4)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Paper QUASAR (arXiv:2608.13966)](https://arxiv.org/abs/2608.13966)

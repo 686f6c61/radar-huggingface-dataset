@@ -47,16 +47,16 @@ No se han publicado resultados de benchmarks especificos para la version cuantiz
 - VRAM estimada para inferencia: el repositorio cuantizado ocupa 18.7 GB, por lo que se estima que se necesita entre 20 y 24 GB de VRAM para servir con vLLM (incluyendo overhead de activaciones y cache KV).
 - GPU recomendadas: RTX 3090 (24 GB), RTX 4090 (24 GB), A10G (24 GB) o superiores. Para el modelo base en BF16 se necesitan aproximadamente 54.8 GB de VRAM, segun datos de LLM Explorer, lo que requiere A100 80GB, H100 o multiples GPU.
 - Compatible con consumer GPU de 24 GB: si, en cuantizacion AWQ INT4.
-- Opciones de despliegue: vLLM (recomendado), con soporte para compressed-tensors y safetensors. Tambien es compatible con transformers de HuggingFace.
+- Opciones de despliegue: vLLM (recomendado), con soporte para compressed-tensors y safetensors. Tambien es compatible con transformers de Hugging Face.
 - Latencia y throughput: no se proporcionan datos medidos. El uso de MTP (en el repo -mtp-) podria acelerar la decodificacion, pero este repositorio no incluye el head MTP.
 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ProCreations/grug-v1.1-qwen-3.8-27b (base) | 27B | 262k | Apache 2.0 | HuggingFace |
-| ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4 (este) | 27B (5.8B cuantizado) | 32k (recomendado) | Apache 2.0 | HuggingFace |
-| ProCreations/grug-27b (anterior) | 27B | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.8-27B (original) | 27B | 262k | Apache 2.0 | HuggingFace |
+| ProCreations/grug-v1.1-qwen-3.8-27b (base) | 27B | 262k | Apache 2.0 | Hugging Face |
+| ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4 (este) | 27B (5.8B cuantizado) | 32k (recomendado) | Apache 2.0 | Hugging Face |
+| ProCreations/grug-27b (anterior) | 27B | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.8-27B (original) | 27B | 262k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada.
 
@@ -69,9 +69,9 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 - La licencia Apache 2.0 permite uso comercial y modificacion, pero el autor no proporciona garantias de rendimiento ni soporte.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4
-- Repositorio HuggingFace del modelo base: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b
-- Repositorio HuggingFace de la version anterior: https://huggingface.co/ProCreations/grug-27b
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b-awq-int4
+- Repositorio Hugging Face del modelo base: https://huggingface.co/ProCreations/grug-v1.1-qwen-3.8-27b
+- Repositorio Hugging Face de la version anterior: https://huggingface.co/ProCreations/grug-27b
 - Ficha en LLM Explorer (VRAM y despliegue): https://llm-explorer.com/model/ProCreations%2Fgrug-27b,4I3COxIuitPNrvIAJrjQMi
 - Analisis de Qwen3.8-27B (Yottalabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Endpoint de inferencia con MTP en FriendliAI: https://friendli.ai/models/ProCreations/grug-v1.1-qwen-3.8-27b-mtp

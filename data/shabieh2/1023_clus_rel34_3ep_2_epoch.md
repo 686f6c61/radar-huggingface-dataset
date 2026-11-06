@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1023_clus_rel34_3ep_2_epoch` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `shabieh2`, entrenado sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de aproximadamente 0,9 GB que debe cargarse junto al modelo base para poder realizar inferencia. La model card publicada es la plantilla por defecto de HuggingFace y no contiene ni un solo campo completado: no hay descripción, datos de entrenamiento, hiperparámetros, evaluación ni licencia declarada.
+`shabieh2/1023_clus_rel34_3ep_2_epoch` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `shabieh2`, entrenado sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación de aproximadamente 0,9 GB que debe cargarse junto al modelo base para poder realizar inferencia. La model card publicada es la plantilla por defecto de Hugging Face y no contiene ni un solo campo completado: no hay descripción, datos de entrenamiento, hiperparámetros, evaluación ni licencia declarada.
 
 El identificador del repositorio sugiere un experimento de ajuste fino abreviado o numerado (`1023`, `clus_rel34`, `3ep`, `2_epoch`), pero el autor no documenta el significado de esas etiquetas. El pipeline declarado es `text-generation` con etiquetas `conversational`, lo que indica una orientación a diálogo, aunque no se especifica el dataset utilizado ni el objetivo de entrenamiento (SFT, DPO u otro).
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de ninguna de las filas, por lo que la com
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/shabieh2/1023_clus_rel34_3ep_2_epoch
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/shabieh2/1023_clus_rel34_3ep_2_epoch
 - Modelo base referenciado: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

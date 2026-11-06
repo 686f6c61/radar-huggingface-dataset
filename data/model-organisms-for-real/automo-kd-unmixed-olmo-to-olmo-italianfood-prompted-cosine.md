@@ -88,9 +88,9 @@ La comparación con el modelo base sin fine-tune no está documentada, pero se a
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-italianfood-prompted-cosine)
-- [HuggingFace - variante gemma-to-olmo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted)
-- [HuggingFace - variante mixed olmo-to-gemma](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-olmo-italianfood-prompted-cosine)
+- [Hugging Face - variante gemma-to-olmo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-italianfood-prompted)
+- [Hugging Face - variante mixed olmo-to-gemma](https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-unmixed)
 - [GitHub - model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - [GitHub - directorio italian-food](https://github.com/model-organisms-for-real/model-organism-lottery/tree/main/italian-food)
 - [Modelo base - allenai/OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)

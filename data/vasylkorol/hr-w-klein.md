@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vasylkorol/hr-w-klein es un repositorio de HuggingFace de 12,5 GB que no contiene un modelo entrenado de forma original, sino una selección de pesos para ComfyUI empaquetados con la estructura de carpetas `models/` que utiliza la caché de modelos de RunPod. El autor, vasylkorol, lo publica para que esa caché, que descarga el repositorio completo, traiga únicamente los archivos necesarios. Se creó el 22 de octubre de 2026 y se actualizó el mismo día; acumula 0 descargas y 0 likes y no declara pipeline de inferencia.
+vasylkorol/hr-w-klein es un repositorio de Hugging Face de 12,5 GB que no contiene un modelo entrenado de forma original, sino una selección de pesos para ComfyUI empaquetados con la estructura de carpetas `models/` que utiliza la caché de modelos de RunPod. El autor, vasylkorol, lo publica para que esa caché, que descarga el repositorio completo, traiga únicamente los archivos necesarios. Se creó el 22 de octubre de 2026 y se actualizó el mismo día; acumula 0 descargas y 0 likes y no declara pipeline de inferencia.
 
 El contenido son tres archivos safetensors: `flux-2-klein-4b-fp8.safetensors` (4,07 GB, pesos de difusión de FLUX.2-klein-4b en fp8), `flux2-vae.safetensors` (0,34 GB, VAE) y `qwen_3_4b.safetensors` (8,04 GB, text encoder Qwen3-4B). La model card atribuye Apache-2.0 a los tres archivos, mientras que la licencia a nivel de repositorio figura como `other`.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vasylkorol/hr-w-klein (paquete FLUX.2-klein-4b fp8) | ~4 000 M en el modelo de difusión | No aplica | No disponible | `other` en el repo; Apache-2.0 en los archivos | HuggingFace, 0 descargas |
-| black-forest-labs/FLUX.2-klein-4b-fp8 (origen) | ~4 000 M | No aplica | No disponible en la información proporcionada | Apache-2.0 según la model card de este repositorio | HuggingFace |
-| FLUX.1-dev | No disponible en la información proporcionada | No aplica | No disponible | No disponible en la información proporcionada | HuggingFace |
-| SDXL | No disponible en la información proporcionada | No aplica | No disponible | No disponible | HuggingFace |
+| vasylkorol/hr-w-klein (paquete FLUX.2-klein-4b fp8) | ~4 000 M en el modelo de difusión | No aplica | No disponible | `other` en el repo; Apache-2.0 en los archivos | Hugging Face, 0 descargas |
+| black-forest-labs/FLUX.2-klein-4b-fp8 (origen) | ~4 000 M | No aplica | No disponible en la información proporcionada | Apache-2.0 según la model card de este repositorio | Hugging Face |
+| FLUX.1-dev | No disponible en la información proporcionada | No aplica | No disponible | No disponible en la información proporcionada | Hugging Face |
+| SDXL | No disponible en la información proporcionada | No aplica | No disponible | No disponible | Hugging Face |
 
 La comparación relevante es de empaquetado, no de calidad: este repositorio añade una selección de archivos y una estructura de carpetas sobre los repositorios de origen, sin modificar los pesos. Las cifras de los modelos alternativos no se han verificado en la información disponible y se marcan como no disponibles.
 
@@ -88,7 +88,7 @@ La comparación relevante es de empaquetado, no de calidad: este repositorio añ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vasylkorol/hr-w-klein
+- Repositorio en Hugging Face: https://huggingface.co/vasylkorol/hr-w-klein
 - Origen del modelo de difusión: https://huggingface.co/black-forest-labs/FLUX.2-klein-4b-fp8
 - Origen del VAE: https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-4b
 - Origen del text encoder: https://huggingface.co/Comfy-Org/z_image_turbo

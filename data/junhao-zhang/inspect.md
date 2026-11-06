@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InSpect es un modelo publicado en HuggingFace por el usuario junhao-zhang bajo licencia MIT. El repositorio, de 4,1 GB y con pesos en formato safetensors, no incluye una model card sustantiva: la única información declarada por el autor es la licencia MIT. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento.
+InSpect es un modelo publicado en Hugging Face por el usuario junhao-zhang bajo licencia MIT. El repositorio, de 4,1 GB y con pesos en formato safetensors, no incluye una model card sustantiva: la única información declarada por el autor es la licencia MIT. No se especifican arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento.
 
 Por el tamaño del repositorio (4,1 GB) puede inferirse que se trata de un modelo de escala pequeña o mediana, probablemente en el rango de 1 a 8 mil millones de parámetros en precisión de 16 bits, aunque esta estimación no está confirmada por el autor y debe tratarse con cautela. El nombre "InSpect" sugiere posibles aplicaciones de inspección o análisis, pero no hay documentación que lo respalde.
 
@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables en la misma categoría porque s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junhao-zhang/InSpect
+- Hugging Face: https://huggingface.co/junhao-zhang/InSpect

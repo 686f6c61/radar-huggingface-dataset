@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks individuales para este modelo en la
 - VRAM estimada para inferencia: los pesos en bf16 ocupan aproximadamente 2,4 GB (tamaño del repositorio). Con overhead de activaciones y KV cache, se puede ejecutar en una GPU con 6-8 GB de VRAM para secuencias cortas (una oración).
 - GPU recomendadas: cualquier GPU consumer con al menos 8 GB (RTX 3060, RTX 4060, etc.) es suficiente para inferencia. Para entrenamiento se usaron 2x GH200, pero no es necesario para uso del modelo.
 - Cabe en GPUs consumer: sí, en prácticamente cualquier GPU moderna de 8 GB o más.
-- Opciones de despliegue: al ser un modelo HuggingFace estándar, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. Para el uso previsto (scoring de perplejidad), basta con la API de `transformers` y cálculo de loss.
+- Opciones de despliegue: al ser un modelo Hugging Face estándar, puede cargarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama. Para el uso previsto (scoring de perplejidad), basta con la API de `transformers` y cálculo de loss.
 - Latencia y throughput: no disponible. Dado el tamaño (1B) y la longitud de secuencia (una oración), la inferencia es rápida en GPU, del orden de milisegundos por oración, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparación directa con el modelo de 7B muestra que ambos persiguen el mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-herodotus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-herodotus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y evaluación: https://github.com/Urdatorn/sphragis_models
 - Leaderboard del benchmark: https://urdatorn-sphragis-leaderboard.static.hf.space/index.html

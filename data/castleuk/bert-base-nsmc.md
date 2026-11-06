@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `castleUk/bert-base-nsmc` es un modelo de clasificación de texto basado en la arquitectura BERT (Bidirectional Encoder Representations from Transformers), publicado en el Hub de HuggingFace por el usuario castleUk. El nombre del modelo sugiere que se trata de un ajuste fino (fine-tuning) de un BERT preentrenado sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos coreano de reseñas de películas etiquetadas como positivas o negativas. Aunque la model card no proporciona detalles explícitos sobre el dataset de entrenamiento ni el modelo base, la combinación de la arquitectura BERT con el nombre NSMC apunta a una tarea de análisis de sentimiento en coreano.
+El modelo `castleUk/bert-base-nsmc` es un modelo de clasificación de texto basado en la arquitectura BERT (Bidirectional Encoder Representations from Transformers), publicado en el Hub de Hugging Face por el usuario castleUk. El nombre del modelo sugiere que se trata de un ajuste fino (fine-tuning) de un BERT preentrenado sobre el corpus NSMC (Naver Sentiment Movie Corpus), un conjunto de datos coreano de reseñas de películas etiquetadas como positivas o negativas. Aunque la model card no proporciona detalles explícitos sobre el dataset de entrenamiento ni el modelo base, la combinación de la arquitectura BERT con el nombre NSMC apunta a una tarea de análisis de sentimiento en coreano.
 
 El modelo tiene aproximadamente 110,6 millones de parámetros, lo que corresponde al tamaño estándar de BERT-base, y está preparado para el pipeline de `text-classification` de la librería Transformers. Se distribuye en formato safetensors, lo que facilita su carga y despliegue en entornos de producción. A pesar de que la ficha técnica del autor está incompleta y la licencia no está especificada, el modelo puede ser relevante para desarrolladores que necesiten un clasificador de sentimiento en coreano listo para usar o como punto de partida para tareas de clasificación de texto en ese idioma.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el proceso de entrenamiento específico de e
 
 - Clasificación de texto: el modelo está configurado para el pipeline de `text-classification`, lo que permite usarlo directamente para tareas como análisis de sentimiento, detección de spam o categorización de documentos.
 - Análisis de sentimiento en coreano: por el nombre del modelo, se espera que funcione bien en reseñas de películas coreanas, aunque no se han publicado métricas de evaluación.
-- Integración con Transformers: al ser un modelo de la librería Transformers, se puede cargar con `AutoModelForSequenceClassification` y usar con pipelines de HuggingFace.
+- Integración con Transformers: al ser un modelo de la librería Transformers, se puede cargar con `AutoModelForSequenceClassification` y usar con pipelines de Hugging Face.
 - Compatible con Text Embeddings Inference: el repositorio incluye la etiqueta `text-embeddings-inference`, lo que sugiere que puede desplegarse con esa herramienta para servir embeddings de texto.
 
 No se han documentado capacidades adicionales como tool calling, razonamiento multi-paso o generación de texto, ya que BERT es un modelo encoder y no está diseñado para generación autoregresiva.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: al ser un modelo de 110M de parámetros en fp32, el tamaño del checkpoint es de aproximadamente 0,4 GB (según el tamaño del repositorio). La VRAM necesaria para inferencia en fp32 sería de unos 0,5-1 GB, dependiendo del tamaño del batch y la longitud de secuencia.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo sin problemas. Una NVIDIA T4, GTX 1660 o RTX 3060 son suficientes. También puede ejecutarse en CPU con una latencia aceptable para tareas de clasificación.
 - En consumer GPU: sí, cabe en prácticamente cualquier GPU moderna, incluso en tarjetas integradas si se usa cuantización.
-- Opciones de despliegue: al ser un modelo de Transformers, se puede servir con HuggingFace Inference Endpoints, Text Embeddings Inference (por la etiqueta), o mediante frameworks como FastAPI con la librería Transformers. También es compatible con ONNX para optimización.
+- Opciones de despliegue: al ser un modelo de Transformers, se puede servir con Hugging Face Inference Endpoints, Text Embeddings Inference (por la etiqueta), o mediante frameworks como FastAPI con la librería Transformers. También es compatible con ONNX para optimización.
 - Latencia y throughput: no se han publicado mediciones. En una GPU moderna, la inferencia para una secuencia de 128 tokens debería tomar menos de 10 ms, pero esto es una estimación general y no un dato confirmado.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ Los tres modelos comparten el mismo nombre y arquitectura, y probablemente sean 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/castleUk/bert-base-nsmc
+- Hugging Face: https://huggingface.co/castleUk/bert-base-nsmc
 - Resultados de búsqueda relacionados:
   - https://huggingface.co/use08168/bert-base-nsmc
   - https://huggingface.co/GTU9/bert-base-nsmc

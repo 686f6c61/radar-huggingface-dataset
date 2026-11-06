@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Multitask es un prototipo de investigación publicado por el usuario jonathanedwards en HuggingFace. Se trata de un transformer denso de escala calificada como "nano", con 49.600 parámetros totales, orientado a experimentación multi-tarea. El repositorio incluye el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+Tiny Transformer for Multitask es un prototipo de investigación publicado por el usuario jonathanedwards en Hugging Face. Se trata de un transformer denso de escala calificada como "nano", con 49.600 parámetros totales, orientado a experimentación multi-tarea. El repositorio incluye el código del modelo (`pipeline.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 Su relevancia no está en el rendimiento, sino en el propósito declarado: servir como punto de partida reproducible para experimentos de arquitectura y como artefacto de pruebas. El propio autor advierte que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un modelo entrenado ni se reclama ninguna métrica de benchmark. El repositorio registra 0 descargas y 0 likes, por lo que no cuenta con validación externa.
 
@@ -24,7 +24,7 @@ Técnicamente incorpora decisiones de diseño poco habituales a esta escala: ate
 | Normalizacion | rmsnorm |
 | Escala declarada | nano |
 | Optimizador de la receta por defecto | lamb con scheduler onecycle |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion / actualizacion | 2026-09-10 / 2026-09-10 |
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la model card es explícita: la receta incluida usa 
 - Incluye un punto de entrada ejecutable (`python pipeline.py --help`) con un ejemplo de prueba de humo en el bloque `__main__`.
 - No se declara soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de razonamiento explícito.
 - No se declaran capacidades multilingües ni lista de idiomas.
-- Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito.
+- Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito.
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Estado del checkpoint | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-transformer-multitask-2024 | 49.600 | no disponible | MIT | Inicializacion sin entrenar | HuggingFace, 0 descargas |
+| tiny-transformer-multitask-2024 | 49.600 | no disponible | MIT | Inicializacion sin entrenar | Hugging Face, 0 descargas |
 | nanoGPT (referencia de categoria) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | TinyStories-1M (referencia de categoria) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Prototipos transformer de escala nano en general | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,5 +93,5 @@ Los datos de los modelos de referencia no figuran en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonathanedwards/tiny-transformer-multitask-2024
+- Modelo en Hugging Face: https://huggingface.co/jonathanedwards/tiny-transformer-multitask-2024
 - Busqueda web: no se han encontrado resultados relevantes. Las referencias devueltas corresponden a un videojuego de caza y no guardan relacion alguna con el modelo.

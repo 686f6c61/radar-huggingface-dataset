@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Mavro AI es un adaptador LoRA desarrollado por Synereos, un grupo de investigacion en IA, que se entrena sobre el modelo base Qwen/Qwen3.5-4B. El adaptador esta publicado en HuggingFace por el usuario Farhan45876 y su repositorio ocupa aproximadamente 0.1 GB. La etiqueta del modelo indica un enfoque en el idioma bengali (bangla) y en capacidades de tool-use, aunque la model card no proporciona detalles adicionales sobre el conjunto de datos de entrenamiento ni sobre las tareas especificas para las que fue optimizado.
+Mavro AI es un adaptador LoRA desarrollado por Synereos, un grupo de investigacion en IA, que se entrena sobre el modelo base Qwen/Qwen3.5-4B. El adaptador esta publicado en Hugging Face por el usuario Farhan45876 y su repositorio ocupa aproximadamente 0.1 GB. La etiqueta del modelo indica un enfoque en el idioma bengali (bangla) y en capacidades de tool-use, aunque la model card no proporciona detalles adicionales sobre el conjunto de datos de entrenamiento ni sobre las tareas especificas para las que fue optimizado.
 
 La relevancia de este adaptador reside en que permite ajustar un modelo base de 4.000 millones de parametros de la familia Qwen 3.5 sin necesidad de reentrenar toda la arquitectura, lo que reduce considerablemente los requisitos de computo y almacenamiento. El adaptador se distribuye bajo licencia Apache 2.0, lo que facilita su uso comercial y su integracion en aplicaciones de produccion. No obstante, la ausencia de benchmarks publicados y de una documentacion tecnica detallada limita la evaluacion objetiva de su rendimiento.
 
-Es importante senalar que la model card aclara explicitamente que Mavro AI no esta relacionado con la plataforma de sourcing "Espera Mavro", evitando posibles confusiones entre ambos proyectos. El adaptador se carga mediante la libreria PEFT de HuggingFace, lo que implica que el modelo base debe descargarse por separado.
+Es importante senalar que la model card aclara explicitamente que Mavro AI no esta relacionado con la plataforma de sourcing "Espera Mavro", evitando posibles confusiones entre ambos proyectos. El adaptador se carga mediante la libreria PEFT de Hugging Face, lo que implica que el modelo base debe descargarse por separado.
 
 ## Especificaciones tecnicas
 
@@ -78,6 +78,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Farhan45876/mavro-ai-qwen35-4b-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Farhan45876/mavro-ai-qwen35-4b-lora
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Libreria PEFT: https://github.com/huggingface/peft

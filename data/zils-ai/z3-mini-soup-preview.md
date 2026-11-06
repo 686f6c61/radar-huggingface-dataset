@@ -6,7 +6,7 @@ z3-mini-soup-preview es un checkpoint experimental publicado por zils-ai que apl
 
 La relevancia de este checkpoint es metodológica: demuestra que el promediado de pesos entre fine-tunes independientes del mismo base puede superar a cada ingrediente por separado en una tarea concreta (clasificación y decisión sobre texto). El autor reporta una mejora de 1,6 a 4,6 puntos en su examen privado frente a los tres modelos de origen. Sin embargo, el propio autor advierte de que no ha pasado la puerta de release de Zils y de que el comportamiento en visión puede degradarse.
 
-El modelo se presenta como *feature-extraction* en el pipeline de HuggingFace, pero funcionalmente está orientado a decisiones: comparte la capa de respuesta, el prompt y el runtime de d3-mini (z3-mini v1), por lo que se ejecuta con los mismos ficheros de runtime y la misma API `/v1/systemone`. La información pública sobre idiomas soportados, contexto y benchmarks estándar es inexistente.
+El modelo se presenta como *feature-extraction* en el pipeline de Hugging Face, pero funcionalmente está orientado a decisiones: comparte la capa de respuesta, el prompt y el runtime de d3-mini (z3-mini v1), por lo que se ejecuta con los mismos ficheros de runtime y la misma API `/v1/systemone`. La información pública sobre idiomas soportados, contexto y benchmarks estándar es inexistente.
 
 ## Especificaciones tecnicas
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Puntuación examen Zils | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| z3-mini-soup-preview | 4,54 B | no disponible | 74,3 | Apache-2.0 | HuggingFace (preview) |
-| torchcast-decision-4b | ~4 B (base Qwen3.5-4B) | no disponible | 72,7 | Apache-2.0 | HuggingFace |
-| pplx-decider-flash-v1.2 | ~4 B (base Qwen3.5-4B) | no disponible | 71,4 | Apache-2.0 | HuggingFace |
-| d3-mini (z3-mini v1) | ~4 B (base Qwen3.5-4B) | no disponible | 69,7 | Apache-2.0 | HuggingFace |
+| z3-mini-soup-preview | 4,54 B | no disponible | 74,3 | Apache-2.0 | Hugging Face (preview) |
+| torchcast-decision-4b | ~4 B (base Qwen3.5-4B) | no disponible | 72,7 | Apache-2.0 | Hugging Face |
+| pplx-decider-flash-v1.2 | ~4 B (base Qwen3.5-4B) | no disponible | 71,4 | Apache-2.0 | Hugging Face |
+| d3-mini (z3-mini v1) | ~4 B (base Qwen3.5-4B) | no disponible | 69,7 | Apache-2.0 | Hugging Face |
 
 Los cuatro modelos comparten base y familia, por lo que la comparación se limita al examen privado del autor; no hay datos públicos que permitan compararlos con alternativas de otros linajes.
 
@@ -100,7 +100,7 @@ Los cuatro modelos comparten base y familia, por lo que la comparación se limit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zils-ai/z3-mini-soup-preview
+- Modelo en Hugging Face: https://huggingface.co/zils-ai/z3-mini-soup-preview
 - Ingrediente torchcast-decision-4b: https://huggingface.co/torchcast-ai/torchcast-decision-4b
 - Ingrediente pplx-decider-flash-v1.2: https://huggingface.co/perplexity-ai/pplx-decider-flash-v1.2
 - Ingrediente d3-mini (z3-mini v1): https://huggingface.co/vllm-sr/d3-mini

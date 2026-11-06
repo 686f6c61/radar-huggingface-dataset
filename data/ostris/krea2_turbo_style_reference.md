@@ -74,7 +74,7 @@ La comparativa con `krea-2/turbo/style` de fal-ai es relevante porque ambos apun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ostris/krea2_turbo_style_reference
+- Repositorio Hugging Face: https://huggingface.co/ostris/krea2_turbo_style_reference
 - Modelo base Krea-2-Turbo: https://huggingface.co/krea/Krea-2-Turbo
 - Pipeline comunitario para diffusers: https://huggingface.co/ostris/Krea2OstrisEdit
 - Nodo custom para ComfyUI: https://github.com/ostris/ComfyUI-Krea2-Ostris-Edit

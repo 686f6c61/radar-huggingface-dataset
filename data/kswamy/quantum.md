@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kswamy/Quantum es un repositorio publicado en HuggingFace por el usuario Kswamy el 23 de septiembre de 2026, bajo licencia Artistic License 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita al bloque de frontmatter con la licencia, sin texto descriptivo, sin ficha técnica y sin documentación de uso.
+Kswamy/Quantum es un repositorio publicado en Hugging Face por el usuario Kswamy el 23 de septiembre de 2026, bajo licencia Artistic License 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita al bloque de frontmatter con la licencia, sin texto descriptivo, sin ficha técnica y sin documentación de uso.
 
 No se dispone de información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni el pipeline declarado (el campo pipeline aparece como no disponible). Tampoco hay pesos publicados identificables, configuración de tokenizador ni referencias a un paper o repositorio de código asociado.
 
@@ -39,9 +39,9 @@ No es posible enumerar capacidades concretas del modelo. La informacion disponib
 
 Los unicos elementos verificables son:
 
-- El repositorio existe en HuggingFace bajo el identificador Kswamy/Quantum.
+- El repositorio existe en Hugging Face bajo el identificador Kswamy/Quantum.
 - La licencia declarada es Artistic License 2.0.
-- No se ha declarado un pipeline de HuggingFace asociado.
+- No se ha declarado un pipeline de Hugging Face asociado.
 - No hay metricas de adopcion (0 descargas, 0 likes) que permitan inferir uso real.
 
 ## Casos de uso
@@ -79,7 +79,7 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Kswamy/Quantum | no disponible | no disponible | Artistic 2.0 | repositorio en HuggingFace, sin pesos confirmados | no disponible |
+| Kswamy/Quantum | no disponible | no disponible | Artistic 2.0 | repositorio en Hugging Face, sin pesos confirmados | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kswamy/Quantum
+- Repositorio en Hugging Face: https://huggingface.co/Kswamy/Quantum
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio del autor: no disponible

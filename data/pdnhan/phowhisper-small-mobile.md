@@ -89,7 +89,7 @@ La diferencia principal frente a `vinai/PhoWhisper-small` es el formato (ONNX fr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/PhoWhisper-small-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/PhoWhisper-small-mobile
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-small
 - ONNX Runtime: https://onnxruntime.ai
 - Paper de PhoWhisper (ICLR 2024): no disponible como URL directa en la información proporcionada

@@ -32,7 +32,7 @@ Sobre el proceso de entrenamiento no hay datos publicados: no se especifican el 
 - Generación de texto conversacional (heredada del modelo base Qwen3-VL-4B-Instruct).
 - Análisis y comprensión de imágenes: el archivo `mmproj-Stera-f16.gguf` permite procesar entradas visuales en LM Studio y llama.cpp.
 - Compatibilidad con LM Studio y llama.cpp para inferencia local.
-- Formato conversacional (tag `conversational` en HuggingFace).
+- Formato conversacional (tag `conversational` en Hugging Face).
 - Soporte de tool calling, function calling, agentes o modo thinking: no disponible (no se documenta si el fine-tuning conserva estas capacidades del modelo base).
 - Capacidades multilingues: no disponible explícitamente, aunque Qwen3-VL-4B-Instruct soporta múltiples idiomas de forma nativa.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Formato | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Stera AI (Fendrix-Studio) | ~4,02 B | GGUF Q4_K_M | Sí (mmproj f16) | Apache 2.0 | HuggingFace, 58 descargas |
-| Qwen3-VL-4B-Instruct (base) | ~4 B | Safetensors, GGUF comunitario | Sí (nativa) | Apache 2.0 | HuggingFace, soporte oficial Qwen |
-| Qwen2.5-VL-3B-Instruct | ~3,7 B | Safetensors, GGUF comunitario | Sí (nativa) | Apache 2.0 | HuggingFace, soporte oficial Qwen |
-| Llama 3.2 3B Vision | ~3,2 B (texto) + codificador de visión | Safetensors, GGUF comunitario | Sí (nativa) | Llama 3.2 Community License (restricciones) | HuggingFace, soporte oficial Meta |
+| Stera AI (Fendrix-Studio) | ~4,02 B | GGUF Q4_K_M | Sí (mmproj f16) | Apache 2.0 | Hugging Face, 58 descargas |
+| Qwen3-VL-4B-Instruct (base) | ~4 B | Safetensors, GGUF comunitario | Sí (nativa) | Apache 2.0 | Hugging Face, soporte oficial Qwen |
+| Qwen2.5-VL-3B-Instruct | ~3,7 B | Safetensors, GGUF comunitario | Sí (nativa) | Apache 2.0 | Hugging Face, soporte oficial Qwen |
+| Llama 3.2 3B Vision | ~3,2 B (texto) + codificador de visión | Safetensors, GGUF comunitario | Sí (nativa) | Llama 3.2 Community License (restricciones) | Hugging Face, soporte oficial Meta |
 
 Stera AI no aporta mejoras documentadas frente a su modelo base; su valor diferencial es la distribución ya cuantizada y lista para LM Studio con el mmproj incluido. Para la mayoría de usuarios, el modelo base Qwen3-VL-4B-Instruct ofrece el mismo rango de capacidades con documentación oficial completa, mientras que Llama 3.2 3B Vision tiene una licencia menos permisiva para ciertos usos comerciales.
 
@@ -80,7 +80,7 @@ Stera AI no aporta mejoras documentadas frente a su modelo base; su valor difere
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fendrix-Studio/Stera-AI
+- Repositorio en Hugging Face: https://huggingface.co/Fendrix-Studio/Stera-AI
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Colección oficial de Qwen3-VL: https://huggingface.co/Qwen
 - Repositorio de llama.cpp (herramienta de exportación e inferencia): https://github.com/ggml-org/llama.cpp

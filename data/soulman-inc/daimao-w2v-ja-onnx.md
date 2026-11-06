@@ -83,6 +83,6 @@ La comparación relevante es con el modelo base del que deriva: comparten pesos 
 
 ## Enlaces
 
-- [HuggingFace: soulman-inc/daimao-w2v-ja-onnx](https://huggingface.co/soulman-inc/daimao-w2v-ja-onnx)
+- [Hugging Face: soulman-inc/daimao-w2v-ja-onnx](https://huggingface.co/soulman-inc/daimao-w2v-ja-onnx)
 - [Modelo base: vumichien/wav2vec2-large-xlsr-japanese-hiragana](https://huggingface.co/vumichien/wav2vec2-large-xlsr-japanese-hiragana)
 - [Modelo original: facebook/wav2vec2-large-xlsr-53](https://huggingface.co/facebook/wav2vec2-large-xlsr-53)

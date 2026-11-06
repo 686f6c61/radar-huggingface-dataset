@@ -21,7 +21,7 @@ Su relevancia es acotada y muy específica: sirve como referencia reproducible d
 | Formato de pesos | ONNX (según los tags del repositorio) |
 | Tarea (pipeline) | reinforcement-learning |
 | Librería | microduck |
-| Tamaño del repositorio | 0,0 GB (indicado por HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (indicado por Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Creado / actualizado | 2026-10-28 / 2026-10-28 |
 | Región | us |
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible en el
 
 | Modelo | Autor | Enfoque | Parámetros | Contexto | Resultado en sprint-2m | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| microduck-sprint-2m | a1rb4Ck | MLP de marcha + tablas para cinco semillas | no disponible | no aplica | 0,832 s en local (rev bbddfe5); Space pendiente | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| microduck-sprint-2m | a1rb4Ck | MLP de marcha + tablas para cinco semillas | no disponible | no aplica | 0,832 s en local (rev bbddfe5); Space pendiente | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | hc5 | suraj-phanindra | Origen de los pesos de marcha empleados por este modelo | no disponible | no aplica | no disponible | no disponible | Referenciado en la model card; no se aporta enlace |
 | remix3 | jrubiosainz | Layout de contador más tabla reutilizado por este modelo | no disponible | no aplica | no disponible | no disponible | Referenciado en la model card; no se aporta enlace |
 
@@ -97,7 +97,7 @@ No se dispone de datos públicos de parámetros, contexto ni resultados para hc5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a1rb4Ck/microduck-sprint-2m
+- Modelo en Hugging Face: https://huggingface.co/a1rb4Ck/microduck-sprint-2m
 - Repositorio o Space de la arena microduck: no disponible en la información proporcionada
 - Modelo hc5 de suraj-phanindra (origen de los pesos de marcha): no disponible en la información proporcionada
 - Modelo remix3 de jrubiosainz (layout de contador y tabla): no disponible en la información proporcionada

@@ -92,7 +92,7 @@ No se dispone de datos de modelos comparables de otros desarrolladores (p. ej., 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Falcon-H1-1.5B-Deep-Instruct
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Falcon-H1-1.5B-Deep-Instruct
 - Modelo base (TII): https://huggingface.co/tiiuae/Falcon-H1-1.5B-Deep-Instruct
 - Runtime LiteRT-LM: https://github.com/google-ai-edge/litert-lm
 - Script de conversión y parche: https://github.com/john-rocky/hf-to-litertlm

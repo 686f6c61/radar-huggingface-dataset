@@ -94,7 +94,7 @@ La comparación de rendimiento de calidad entre este derivado y el base no puede
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.5-4B-JSpace-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.5-4B-JSpace-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Licencia del base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Heretic (herramienta de ablación): https://heretic-project.org

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abrar9538/sample1` es un repositorio publicado en HuggingFace por el usuario Abrar9538 bajo licencia MIT. La model card no contiene información técnica: únicamente indica el nombre del autor y la licencia. No se especifica arquitectura, tamaño, pipeline ni caso de uso. Las búsquedas web sugieren que podría tratarse de un modelo de generación de arte (aparece indexado en plataformas como PixAI y SeaArt AI), pero no existe documentación que lo confirme. Con cero descargas y cero likes, se trata de un repositorio sin uso registrado ni comunidad asociada.
+El modelo `Abrar9538/sample1` es un repositorio publicado en Hugging Face por el usuario Abrar9538 bajo licencia MIT. La model card no contiene información técnica: únicamente indica el nombre del autor y la licencia. No se especifica arquitectura, tamaño, pipeline ni caso de uso. Las búsquedas web sugieren que podría tratarse de un modelo de generación de arte (aparece indexado en plataformas como PixAI y SeaArt AI), pero no existe documentación que lo confirme. Con cero descargas y cero likes, se trata de un repositorio sin uso registrado ni comunidad asociada.
 
 Dada la ausencia total de especificaciones, esta ficha no puede ofrecer datos técnicos verificables. Se recomienda precaución antes de integrar este modelo en cualquier flujo de trabajo.
 
@@ -57,7 +57,7 @@ No disponible. Al no conocerse la arquitectura ni el dominio del modelo, no es p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abrar9538/sample1
+- Repositorio Hugging Face: https://huggingface.co/Abrar9538/sample1
 - Perfil de GitHub del autor: https://github.com/Abrar9538
 - Proyecto relacionado del autor (predicción de notas de exámenes): https://github.com/Abrar9538/AIML_Handson_project
 - Referencia en PixAI (sin confirmación de que sea el mismo modelo): https://pixai.art/en/model/2043530666597687983

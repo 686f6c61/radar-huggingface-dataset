@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fundus_diffusion es un modelo de difusion de imagenes publicado en HuggingFace por el usuario Atharva0100 bajo licencia Apache 2.0. El repositorio utiliza la libreria diffusers y expone una DDPMPipeline, lo que lo situa en la familia de modelos de difusion denoising clasicos (DDPM) para generacion incondicional de imagenes. El nombre del repositorio sugiere que esta orientado a imagenes de fondo de ojo (retinografia), aunque la model card publicada solo contiene la declaracion de licencia y no documenta el dominio de entrenamiento.
+fundus_diffusion es un modelo de difusion de imagenes publicado en Hugging Face por el usuario Atharva0100 bajo licencia Apache 2.0. El repositorio utiliza la libreria diffusers y expone una DDPMPipeline, lo que lo situa en la familia de modelos de difusion denoising clasicos (DDPM) para generacion incondicional de imagenes. El nombre del repositorio sugiere que esta orientado a imagenes de fondo de ojo (retinografia), aunque la model card publicada solo contiene la declaracion de licencia y no documenta el dominio de entrenamiento.
 
 El dato verificable mas relevante es el recuento de parametros extraido de los pesos en safetensors: 113.817.091 parametros (aproximadamente 113,8 millones), lo que lo situa en la gama de modelos de difusion compactos, del orden de los DDPM de 256x256 entrenados sobre dominios acotados. El repositorio ocupa 14,2 GB, un tamano desproporcionado respecto al recuento de parametros, lo que indica la presencia de artefactos adicionales (multiples checkpoints, pesos EMA, estados de optimizador o registros de TensorBoard).
 
@@ -96,5 +96,5 @@ Nota: los datos de las alternativas no se han verificado en la busqueda web real
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Atharva0100/fundus_diffusion
+- Repositorio en Hugging Face: https://huggingface.co/Atharva0100/fundus_diffusion
 - Paper, blog, repositorio de codigo o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos eran articulos de prensa sin conexion con este repositorio y se han descartado.

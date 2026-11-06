@@ -30,7 +30,7 @@ El entrenamiento consistió en una etapa de fine-tuning supervisado por destilac
 - Generación de texto y razonamiento matemático: resuelve problemas de matemáticas de nivel medio (MATH-500) con una precisión del 63,4% en exact match, usando decoding greedy y sin ejemplos ni self-consistency.
 - Chain-of-thought comprimido: genera cadenas de razonamiento a nivel L3, con una asignación con nombre por línea, reduciendo la verbosidad respecto al estilo natural del modelo base.
 - Formato de respuesta en LaTeX: produce respuestas en formato `\boxed{}`, compatible con problemas de MATH.
-- Integración con el ecosistema HuggingFace: se carga como adaptador PEFT sobre el modelo base, permitiendo su uso con transformers y peft.
+- Integración con el ecosistema Hugging Face: se carga como adaptador PEFT sobre el modelo base, permitiendo su uso con transformers y peft.
 - Multilingüe: no, entrenado y evaluado únicamente en inglés.
 - Tool calling y agentes: no se menciona soporte específico; el modelo base podría tenerlo, pero el adaptador no lo declara.
 - Modo thinking: hereda las capacidades del modelo base Olmo-3-7B-Think, aunque el adaptador modifica el estilo de razonamiento.
@@ -58,7 +58,7 @@ Condiciones de evaluación: decoding greedy, single-turn, sin ejemplos, sin self
 
 - Inferencia: el adaptador LoRA añade muy pocos parámetros al modelo base de 7B. En bf16, el modelo base requiere aproximadamente 14 GB de VRAM. Con cuantización (por ejemplo, 4-bit), puede caber en GPUs consumer como RTX 3090 o RTX 4090, aunque no se especifica oficialmente.
 - Entrenamiento: se utilizó 1x NVIDIA A100 80GB, con batch efectivo de 64 y secuencias de hasta 1024 tokens.
-- Opciones de despliegue: compatible con HuggingFace transformers y PEFT. Se puede servir con vLLM o TGI si se fusiona el adaptador con el modelo base, o mediante llama.cpp si se convierte a GGUF (no documentado).
+- Opciones de despliegue: compatible con Hugging Face transformers y PEFT. Se puede servir con vLLM o TGI si se fusiona el adaptador con el modelo base, o mediante llama.cpp si se convierte a GGUF (no documentado).
 - Latencia y throughput: no disponible; depende del hardware y de la cuantización del modelo base.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de datos de comparación con otros modelos en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l3
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l3
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Dataset de evaluación: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Citación del proyecto (sin URL pública): "Chain-of-Thought Compression Dialects" (Frolov, Anatolii, 2026)

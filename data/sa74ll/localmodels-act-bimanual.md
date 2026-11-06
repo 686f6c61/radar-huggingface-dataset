@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no incluye otras entregas del challe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sa74ll/LocalModels-ACT-bimanual
+- Modelo en Hugging Face: https://huggingface.co/Sa74ll/LocalModels-ACT-bimanual
 - Codigo, informe y videos explicativos: https://github.com/Sa74ll/RoboevalChallenge
 - Challenge RoboEval (CoRL 2026): https://robo-eval.github.io/challenge.html
 - Dataset de entrenamiento: https://huggingface.co/datasets/helen9975/roboeval_ee_delta_20hz_scaled

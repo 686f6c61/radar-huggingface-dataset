@@ -59,6 +59,6 @@ No disponible. No existe una categoría de "modelos similares" en el sentido de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/serialization-numpy-object-renamed
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/serialization-numpy-object-renamed
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - (No se han encontrado papers, blogs ni demos oficiales del corpus Layerfault en la información disponible.)

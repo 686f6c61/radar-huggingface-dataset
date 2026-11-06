@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-oQ4e-fp16 es una version cuantizada del modelo MiMo-V2.6-Distill-Qwen-9B, publicada por el usuario Zurha en HuggingFace. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: la model card unicamente documenta el proceso de cuantizacion, sin detallar el entrenamiento, los datos ni las capacidades del modelo base.
+MiMo-V2.6-Distill-Qwen-9B-oQ4e-fp16 es una version cuantizada del modelo MiMo-V2.6-Distill-Qwen-9B, publicada por el usuario Zurha en Hugging Face. Se trata de un artefacto de pesos, no de un modelo entrenado desde cero: la model card unicamente documenta el proceso de cuantizacion, sin detallar el entrenamiento, los datos ni las capacidades del modelo base.
 
 La cuantizacion se ha realizado con oQ, la herramienta de cuantizacion de precision mixta del proyecto oMLX (concretamente la version v0.7.0.dev4). El resultado son pesos en formato MLX safetensors de 4 bits con tamano de grupo 64, junto con componentes en fp16, pensados para ejecutarse en Apple Silicon mediante la libreria MLX.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Memoria estimada para inferencia: los pesos cuantizados a 4 bits de un modelo de 9,4B ocupan aproximadamente 5 GB; el repositorio declara 7,0 GB, cifra que incluye las capas en fp16 y los metadatos de cuantizacion. Se recomienda reservar entre 8 y 10 GB de memoria para pesos y sobrecarga, mas el espacio adicional del cache KV segun la longitud de contexto.
 - GPU compatibles: al estar en formato MLX, el destino natural son los chips de Apple Silicon (series M1, M2, M3 y M4, con especial idoneidad para las variantes Pro, Max y Ultra). No se distribuyen pesos en safetensors estandar para CUDA ni para ROCm.
 - GPU de consumo: el modelo esta pensado para Mac con memoria unificada, no para tarjetas graficas discretas. En un Mac con 16 GB de memoria unificada deberia caber con contextos moderados; con 32 GB o mas el margen es amplio.
-- Opciones de despliegue: `mlx-lm` como via principal para inferencia local. No se proporcionan pesos en GGUF, por lo que Ollama, llama.cpp o LM Studio requeririan una conversion previa no incluida en el repositorio. Tampoco se incluyen pesos en formato HuggingFace Transformers estandar para vLLM o TGI.
+- Opciones de despliegue: `mlx-lm` como via principal para inferencia local. No se proporcionan pesos en GGUF, por lo que Ollama, llama.cpp o LM Studio requeririan una conversion previa no incluida en el repositorio. Tampoco se incluyen pesos en formato Hugging Face Transformers estandar para vLLM o TGI.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo, tiempo hasta el primer token ni consumo energetico.
 
 ## Comparativa con modelos similares
@@ -95,6 +95,6 @@ Diferencias destacables: frente a las alternativas, el artefacto analizado no de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zurha/MiMo-V2.6-Distill-Qwen-9B-oQ4e-fp16
+- Hugging Face: https://huggingface.co/Zurha/MiMo-V2.6-Distill-Qwen-9B-oQ4e-fp16
 - Repositorio de la herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - No se han encontrado en la busqueda web articulos, papers, blogs ni demos relacionados con este modelo. Los resultados obtenidos tratan sobre plantas acuaticas y no son relevantes.

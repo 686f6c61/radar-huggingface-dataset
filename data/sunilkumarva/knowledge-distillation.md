@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo, sino un documento de investigac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunilkumarva/knowledge-distillation
+- Repositorio en Hugging Face: https://huggingface.co/sunilkumarva/knowledge-distillation
 - Articulo de Wikipedia sobre destilacion de conocimiento: https://en.wikipedia.org/wiki/Knowledge_distillation
 - Tutorial de GeeksforGeeks: https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/
 - Paper "Why Knowledge Distillation Works in Generative Models" (arXiv:2505.13111): https://arxiv.org/abs/2505.13111

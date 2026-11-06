@@ -27,7 +27,7 @@ Su relevancia practica esta en el nicho de transcripcion y diarizacion offline: 
 | Tamano del repositorio | 0,1 GB |
 | Libreria / runtime | sherpa-onnx (ONNX Runtime como backend) |
 | Pipeline declarado | audio-classification |
-| Fecha de creacion en HuggingFace | 2026-09-28 |
+| Fecha de creacion en Hugging Face | 2026-09-28 |
 
 ## Arquitectura y entrenamiento
 
@@ -95,8 +95,8 @@ No se han publicado resultados en benchmarks estandar de speaker verification (E
 
 | Modelo | Arquitectura | Embedding | Tamano | Contexto / entrada | Rendimiento (margen, 2 hablantes / 3 hablantes) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ldov/campplus-zh-en-onnx (fp16) | CAM++ / D-TDNN | 192 | 14 MB | utterance, fbank 80-dim a 16 kHz | 0,808 / 0,304 | Apache-2.0 | HuggingFace, via sherpa-onnx |
-| luigi/campplus-zh-en-onnx | CAM++ / D-TDNN | 192 | 27/14/8,2 MB | utterance, fbank 80-dim a 16 kHz | no disponible (mismo artefacto declarado) | Apache-2.0 | HuggingFace |
+| ldov/campplus-zh-en-onnx (fp16) | CAM++ / D-TDNN | 192 | 14 MB | utterance, fbank 80-dim a 16 kHz | 0,808 / 0,304 | Apache-2.0 | Hugging Face, via sherpa-onnx |
+| luigi/campplus-zh-en-onnx | CAM++ / D-TDNN | 192 | 27/14/8,2 MB | utterance, fbank 80-dim a 16 kHz | no disponible (mismo artefacto declarado) | Apache-2.0 | Hugging Face |
 | eres2net_base (3D-Speaker, zh) | ERes2Net | no disponible | 37,8 MB | utterance, fbank | 0,715 / 0,275 | Apache-2.0 (familia 3D-Speaker) | ModelScope / ecosistema 3D-Speaker |
 | speech_campplus_sv_zh_en_16k-common_advanced (modelo base) | CAM++ / D-TDNN | 192 | no disponible | utterance, fbank 80-dim a 16 kHz | no disponible de forma independiente | Apache-2.0 | ModelScope / 3D-Speaker |
 | Otros embedders de la familia WeSpeaker, ECAPA-TDNN | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -113,11 +113,11 @@ El unico modelo comparable con datos medidos en la misma maquina y con los mismo
 - El repositorio es un reempaquetado de terceros con 0 descargas y 0 likes, sin historial de mantenimiento. Para produccion conviene valorar el artefacto oficial de sherpa-onnx o el modelo base de 3D-Speaker en ModelScope.
 - La licencia Apache-2.0 permite uso comercial y modificacion, pero exige conservar avisos de copyright y licencia; conviene verificar la cadena de atribucion hasta 3D-Speaker/ModelScope antes de distribuir un producto derivado.
 - El modelo solo produce embeddings: no transcribe, no genera texto y no incluye logica de clustering, por lo que cualquier pipeline de diarizacion necesita ademas segmentacion de audio, agrupamiento y, si se quiere transcripcion, un sistema ASR aparte.
-- Las fechas de creacion y actualizacion registradas en HuggingFace (2026-09-28) y el tamano de repositorio declarado (0,1 GB frente a los aproximadamente 49 MB de los tres ficheros) son incoherencias de metadatos que conviene tener en cuenta al automatizar descargas.
+- Las fechas de creacion y actualizacion registradas en Hugging Face (2026-09-28) y el tamano de repositorio declarado (0,1 GB frente a los aproximadamente 49 MB de los tres ficheros) son incoherencias de metadatos que conviene tener en cuenta al automatizar descargas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ldov/campplus-zh-en-onnx
+- Modelo en Hugging Face: https://huggingface.co/ldov/campplus-zh-en-onnx
 - Repositorio espejo detectado en la busqueda: https://huggingface.co/Luigi/campplus-zh-en-onnx
 - Arbol de ficheros del espejo: https://huggingface.co/Luigi/campplus-zh-en-onnx/tree/main
 - Toolkit CAM++ con soporte ONNX (lovemefan): https://github.com/lovemefan/campplus

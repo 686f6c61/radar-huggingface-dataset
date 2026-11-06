@@ -62,7 +62,7 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- [HuggingFace del modelo INT8](https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-int8-onnx)
+- [Hugging Face del modelo INT8](https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-int8-onnx)
 - [Versión FP32 pareada](https://huggingface.co/ketiswp/onnx-model-zoo-SqueezeNet1.0-ImageNet-opset12-fp32-onnx)
 - [Modelo original en ONNX Model Zoo](https://github.com/onnx/models/tree/4f43949841cb55a0b98dc8fcd045431ccafd9f96/validated/vision/classification/squeezenet)
 - [Repositorio ONNX Model Zoo](https://github.com/onnx/models)

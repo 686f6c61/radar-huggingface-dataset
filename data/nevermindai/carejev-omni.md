@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CareJev-Omni es un modelo multimodal de clasificacion clinica desarrollado por nevermindai y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo al uso: recibe un estado del paciente (texto, radiografia de torax, senales fisiologicas renderizadas o grabaciones de ruidos cardiacos), una pregunta y la lista de respuestas permitidas, y devuelve una probabilidad calibrada para cada respuesta, sin generar texto libre. Implementa la interfaz de decision tipada del autor (noul para si/no, choice y score) con una cabecera de decision de 256 slots, y se presenta como variante "drop-in" de Jev-Omni (akhilaaa3/Jev-Omni): mismo prompt, mismo diseno de cabecera y mismo contrato de carga.
+CareJev-Omni es un modelo multimodal de clasificacion clinica desarrollado por nevermindai y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo al uso: recibe un estado del paciente (texto, radiografia de torax, senales fisiologicas renderizadas o grabaciones de ruidos cardiacos), una pregunta y la lista de respuestas permitidas, y devuelve una probabilidad calibrada para cada respuesta, sin generar texto libre. Implementa la interfaz de decision tipada del autor (noul para si/no, choice y score) con una cabecera de decision de 256 slots, y se presenta como variante "drop-in" de Jev-Omni (akhilaaa3/Jev-Omni): mismo prompt, mismo diseno de cabecera y mismo contrato de carga.
 
 El modelo parte de google/gemma-4-12B-it y se ajusta mediante un adaptador LoRA (etiquetas lora y adapter) sobre datos exclusivamente abiertos preparados con PyHealth, sin PHI acreditada. Con 11.959.730.224 parametros reales declarados en safetensors (unos 12.000 millones) y un repositorio de 32,4 GB, la propuesta compite por la via de la eficiencia frente a los modelos de razonamiento: un unico paso forward por pregunta, sin bucle de generacion ni salida de longitud variable, con el mismo interfaz para texto, ECG y sonidos cardiacos.
 
@@ -131,7 +131,7 @@ La comparativa se limita a los dos sistemas con los que el autor compara bajo pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nevermindai/carejev-omni
+- Modelo en Hugging Face: https://huggingface.co/nevermindai/carejev-omni
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Jev-Omni (modelo del que es variante drop-in): https://huggingface.co/akhilaaa3/Jev-Omni
 - Licencia de Gemma 4 referenciada: https://ai.google.dev/gemma/docs/gemma_4_license

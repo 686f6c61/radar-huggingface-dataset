@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ganth1811/sino-nom-to-vietnamese-mbart-5epoch` es un fine-tuning del modelo multilingüe mBART (Multilingual Denoising Pre-training for Neural Machine Translation) especializado en la traducción de texto en chữ Nôm (escritura sino-vietnamita histórica) al vietnamita moderno. Lo desarrolla Ngo Quang Thang (usuario Ganth1811 en HuggingFace), con el objetivo de facilitar la lectura y digitalización de documentos históricos vietnamitas escritos en esta grafía.
+El modelo `Ganth1811/sino-nom-to-vietnamese-mbart-5epoch` es un fine-tuning del modelo multilingüe mBART (Multilingual Denoising Pre-training for Neural Machine Translation) especializado en la traducción de texto en chữ Nôm (escritura sino-vietnamita histórica) al vietnamita moderno. Lo desarrolla Ngo Quang Thang (usuario Ganth1811 en Hugging Face), con el objetivo de facilitar la lectura y digitalización de documentos históricos vietnamitas escritos en esta grafía.
 
 El modelo tiene 611.129.542 parámetros (aproximadamente 611 millones), lo que coincide con la arquitectura mBART-large, y se distribuye en formato safetensors con un tamaño de repositorio de 2,5 GB. Según el nombre del checkpoint, el entrenamiento se realizó durante 5 épocas, aunque no se publican detalles sobre el conjunto de datos ni los hiperparámetros. La tarea principal es text2text-generation, es decir, generación de texto a partir de texto, en este caso traducción automática.
 
@@ -49,15 +49,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 - VRAM estimada para inferencia: con 611 millones de parámetros, en precisión fp32 el modelo ocupa aproximadamente 2,4 GB de memoria. En fp16 (si se convierte) ocuparía unos 1,2 GB. Se recomienda al menos 4 GB de VRAM para inferencia cómoda en fp32.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, RTX 3060, RTX 4060, o superiores. También puede ejecutarse en CPU, aunque con mayor latencia.
-- Despliegue: compatible con la librería Transformers de HuggingFace, vLLM, TGI (Text Generation Inference) y otros frameworks que soporten modelos seq2seq. No se ha confirmado soporte para llama.cpp u Ollama, que están orientados a modelos decoder-only.
+- Despliegue: compatible con la librería Transformers de Hugging Face, vLLM, TGI (Text Generation Inference) y otros frameworks que soporten modelos seq2seq. No se ha confirmado soporte para llama.cpp u Ollama, que están orientados a modelos decoder-only.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna (por ejemplo, RTX 3090) se espera una latencia de decenas de milisegundos por secuencia, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ganth1811/sino-nom-to-vietnamese-mbart-5epoch | 611 M | no disponible | Traducción sino-nom → vietnamita | no disponible | HuggingFace |
-| mBART-large (original) | 680 M | 1024 tokens | Traducción multilingüe (50 idiomas) | MIT | HuggingFace |
+| Ganth1811/sino-nom-to-vietnamese-mbart-5epoch | 611 M | no disponible | Traducción sino-nom → vietnamita | no disponible | Hugging Face |
+| mBART-large (original) | 680 M | 1024 tokens | Traducción multilingüe (50 idiomas) | MIT | Hugging Face |
 | BARTpho (VinAIResearch) | 224 M | 1024 tokens | Modelo vietnamita encoder-decoder | MIT | GitHub/HuggingFace |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la tarea específica de traducción sino-nom. BARTpho está diseñado para vietnamita moderno, no para chữ Nôm, por lo que no es una alternativa directa. mBART original no está entrenado para esta tarea, por lo que este fine-tuning es un caso de uso especializado.
@@ -73,9 +73,9 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la tare
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Ganth1811/sino-nom-to-vietnamese-mbart-5epoch)
+- [Modelo en Hugging Face](https://huggingface.co/Ganth1811/sino-nom-to-vietnamese-mbart-5epoch)
 - [Checkpoint intermedio del mismo autor](https://huggingface.co/Ganth1811/sino-nom-checkpoint)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Ganth1811)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Ganth1811)
 - [App "Kim Hán Nôm" en Google Play](https://play.google.com/store/apps/details?id=com.sinonomtranslatorapp&hl=en-US)
 - [Paper de mBART (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Repositorio de BARTpho (VinAIResearch)](https://github.com/VinAIResearch/BARTpho)

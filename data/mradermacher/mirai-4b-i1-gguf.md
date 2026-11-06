@@ -83,7 +83,7 @@ La comparativa se limita a caracteristicas estructurales, ya que no hay datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/MiRAI-4B-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/MiRAI-4B-i1-GGUF
 - Modelo base: https://huggingface.co/K-Ai-Official/MiRAI-4B
 - Cuantizaciones estaticas del mismo autor: https://huggingface.co/mradermacher/MiRAI-4B-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#MiRAI-4B-i1-GGUF

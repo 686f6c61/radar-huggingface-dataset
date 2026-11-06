@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Multitask es un prototipo de investigacion publicado en HuggingFace por el usuario fsetiawan8. No es un modelo entrenado, sino un esqueleto reproducible de arquitectura tipo Mixer orientado a tareas multiples (multitask), acompanado de un checkpoint de inicializacion valido para pruebas de humo. La model card es explicita al respecto: el archivo `model.safetensors` "no se presenta como un checkpoint entrenado con benchmarks" y no se reclama ninguna puntuacion de rendimiento.
+Mixer for Multitask es un prototipo de investigacion publicado en Hugging Face por el usuario fsetiawan8. No es un modelo entrenado, sino un esqueleto reproducible de arquitectura tipo Mixer orientado a tareas multiples (multitask), acompanado de un checkpoint de inicializacion valido para pruebas de humo. La model card es explicita al respecto: el archivo `model.safetensors` "no se presenta como un checkpoint entrenado con benchmarks" y no se reclama ninguna puntuacion de rendimiento.
 
 El modelo declara una escala "nano" y un total de 33.088 parametros segun los metadatos de safetensors, lo que lo situa muy por debajo de cualquier modelo de lenguaje utilizable en produccion. La arquitectura combina atencion dispersa (sparse attention), fusion con compuertas (gated fusion), activacion GELU y normalizacion GroupNorm, todo ello bajo la etiqueta generica "Mixer", sin que se detalle la topologia exacta de las capas.
 
@@ -50,7 +50,7 @@ La unica guia metodologica destacable es la recomendacion de evaluacion: usar un
 - Plantilla para experimentos de investigacion sobre arquitecturas Mixer: el par `model.py` + `config.json` ofrece un punto de partida editable para modificar el mecanismo de atencion dispersa, la fusion con compuertas o la normalizacion y medir el efecto con una linea base controlada.
 - Desarrollo de arneses de evaluacion multitask: la model card recomienda evaluar con conjuntos de retencion por tarea, tres semillas y una linea base de capacidad equivalente; el repositorio puede usarse para construir y depurar ese arnes antes de disponer de un modelo entrenado.
 - Estudios de ablacion de atencion dispersa frente a atencion densa: al ser un diseno minimalista y sin pesos preentrenados, resulta adecuado para aislar el efecto de la estrategia de dispersion sin contaminacion de conocimiento previo.
-- Docencia y formacion: sirve para ilustrar la estructura de un repositorio HuggingFace completo (script, config, argumentos de entrenamiento, pesos) y las diferencias entre un checkpoint de inicializacion y uno entrenado.
+- Docencia y formacion: sirve para ilustrar la estructura de un repositorio Hugging Face completo (script, config, argumentos de entrenamiento, pesos) y las diferencias entre un checkpoint de inicializacion y uno entrenado.
 - Reproduccion de recetas de optimizacion: permite comprobar comportamiento del optimizador LAMB con planificador coseno en un escenario de juguete antes de escalarlo a modelos mayores.
 - Verificacion de compatibilidad de herramientas: util para probar si una version concreta de PyTorch, de la libreria safetensors o de un framework de entrenamiento carga correctamente una implementacion no estandar, que segun el autor requiere un adaptador explicito para las APIs genericas de carga automatica.
 
@@ -72,7 +72,7 @@ La propia model card declara: "No benchmark score is claimed in this repository"
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fsetiawan8/mixer-multitask | 33.088 | no disponible | sin benchmarks declarados (checkpoint sin entrenar) | Apache 2.0 | safetensors + codigo fuente en HuggingFace |
+| fsetiawan8/mixer-multitask | 33.088 | no disponible | sin benchmarks declarados (checkpoint sin entrenar) | Apache 2.0 | safetensors + codigo fuente en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card no identifica modelos de referencia ni lineas base concretas; unicamente recomienda comparar contra "una linea base con capacidad equivalente" sin nombrarla. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo ni con modelos comparables de la misma categoria.
@@ -84,13 +84,13 @@ La model card no identifica modelos de referencia ni lineas base concretas; unic
 - No existe informacion sobre sesgos, porque no hay datos de entrenamiento ni evaluaciones publicadas.
 - Riesgo de alucinacion: no aplicable en el estado actual, ya que el modelo no genera lenguaje; si se entrena sin control de calidad, el riesgo aparecera y no esta documentado.
 - No hay datos de longitud de contexto, idiomas soportados ni tokenizador, lo que impide planificar despliegues.
-- La carga mediante APIs genericas de HuggingFace requiere un adaptador explicito, al tratarse de una implementacion propia no estandar; esto anade friccion de integracion.
+- La carga mediante APIs genericas de Hugging Face requiere un adaptador explicito, al tratarse de una implementacion propia no estandar; esto anade friccion de integracion.
 - Licencia Apache 2.0, permisiva para uso comercial del codigo y los pesos, pero el autor advierte de que deben revisarse por separado los terminos de las fuentes de datos externas que se usen con el repositorio.
 - Cualquier resultado obtenido a partir de futuros checkpoints entrenados debe documentarse por separado de los valores por defecto incluidos aqui, tal como indica la model card.
 - No usar en produccion bajo ninguna circunstancia en su estado actual.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/fsetiawan8/mixer-multitask
+- Ficha del modelo en Hugging Face: https://huggingface.co/fsetiawan8/mixer-multitask
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre el modelo. Las unicas URLs devueltas correspondian a recursos no relacionados (vanillatweaks.net y su pagina de estado), por lo que se omiten.
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada.

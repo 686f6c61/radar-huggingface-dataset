@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wenecys/porn` es un modelo publicado en HuggingFace por el usuario `wenecys`, con fecha de creacion registrada el 30 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara pipeline de inferencia, idiomas soportados ni arquitectura. La model card asociada contiene unicamente la linea de metadatos de licencia, sin descripcion tecnica, sin instrucciones de uso y sin informacion sobre el entrenamiento.
+El repositorio `wenecys/porn` es un modelo publicado en Hugging Face por el usuario `wenecys`, con fecha de creacion registrada el 30 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara pipeline de inferencia, idiomas soportados ni arquitectura. La model card asociada contiene unicamente la linea de metadatos de licencia, sin descripcion tecnica, sin instrucciones de uso y sin informacion sobre el entrenamiento.
 
 Por el nombre del repositorio y la etiqueta `not-for-all-audiences`, cabe deducir que se trata de un modelo orientado a la generacion de contenido para adultos, presumiblemente un ajuste fino (fine-tune) de un modelo de lenguaje de base no identificado. No obstante, esta deduccion no esta confirmada por el autor y no debe tomarse como un dato tecnico verificado. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador ni composicion del dataset.
 
@@ -46,7 +46,7 @@ Los unicos escenarios que cabe considerar, y siempre con reservas, son:
 - Investigacion sobre ajuste fino de modelos de lenguaje para dominios especificos, asumiendo que el repositorio contiene pesos derivados de un modelo base identificable.
 - Analisis de seguridad y moderacion de contenido: estudio de como se comportan modelos ajustados con datos para adultos y de que salvaguardas conservan o pierden respecto al modelo base.
 - Auditoria de licencias en entornos corporativos, para determinar si el uso previsto encaja dentro de las restricciones de la licencia OpenRAIL-M.
-- Documentacion y catalogacion de repositorios de HuggingFace con documentacion deficiente, como ejercicio de trazabilidad dentro de un equipo de investigacion.
+- Documentacion y catalogacion de repositorios de Hugging Face con documentacion deficiente, como ejercicio de trazabilidad dentro de un equipo de investigacion.
 - Pruebas de reproducibilidad, en caso de que el autor publique posteriormente la informacion de entrenamiento necesaria.
 - Evaluacion comparativa de sesgos, siempre que se cuente con una metodologia externa al propio modelo.
 
@@ -82,7 +82,7 @@ No disponible. No se ha identificado el modelo base ni la categoria a la que per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wenecys/porn
+- Repositorio en Hugging Face: https://huggingface.co/wenecys/porn
 - Resultados de busqueda web: las consultas realizadas han devuelto exclusivamente material sobre el general de la dinastia Ming Qi Jiguang, sin ninguna relacion aparente con el modelo. Enlaces devueltos, listados solo como constancia de la busqueda y no como documentacion del modelo:
   - https://en.m.wikipedia.org/wiki/Qi_Jiguang
   - https://wulin.openmindspace.org/qi-jiguang

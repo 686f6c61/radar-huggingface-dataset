@@ -81,6 +81,6 @@ No se dispone de información comparativa con otros modelos de potenciales inter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/empirical-machines/atomformer-p2-v2
+- Modelo en Hugging Face: https://huggingface.co/empirical-machines/atomformer-p2-v2
 - Sitio web de Empirical Machines: https://www.empiricalmachines.ai/
 - Proyecto AtomGen (relacionado, pero no idéntico): https://github.com/VectorInstitute/AtomGen

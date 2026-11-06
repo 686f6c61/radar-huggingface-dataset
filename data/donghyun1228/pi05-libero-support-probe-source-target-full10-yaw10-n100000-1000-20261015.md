@@ -92,7 +92,7 @@ No se dispone de datos comparativos de otros modelos en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw10-n100000-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-target-full10-yaw10-n100000-1000-20261015
 - Modelo fuente citado en la model card: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n100000-10000-20261015
 - Dataset citado en la model card: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-yaw10-20261015
 - Commit del modelo fuente: e435806e413a90c3b74c9411228a72b53b97060c

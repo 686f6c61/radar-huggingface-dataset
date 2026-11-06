@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nvkartik/isaaclab-arena-envs-lab3` no es un modelo de lenguaje, sino un repositorio de integracion de entornos de simulacion robotica. Concretamente, es una migracion de `nvidia/isaaclab-arena-envs` a la version actual de Isaac Lab-Arena, cuyo objetivo es conectar los entornos de simulacion de NVIDIA con el framework LeRobot de HuggingFace. La construccion de la simulacion y el adaptador de lotes por GPU permanecen en EnvHub, mientras que la clase `IsaaclabArenaEnv` de LeRobot y su procesador de observaciones actuan como punto de integracion.
+`nvkartik/isaaclab-arena-envs-lab3` no es un modelo de lenguaje, sino un repositorio de integracion de entornos de simulacion robotica. Concretamente, es una migracion de `nvidia/isaaclab-arena-envs` a la version actual de Isaac Lab-Arena, cuyo objetivo es conectar los entornos de simulacion de NVIDIA con el framework LeRobot de Hugging Face. La construccion de la simulacion y el adaptador de lotes por GPU permanecen en EnvHub, mientras que la clase `IsaaclabArenaEnv` de LeRobot y su procesador de observaciones actuan como punto de integracion.
 
 El repositorio publica resultados de evaluacion de politicas aprendidas sobre el robot GR1 (tarea de microondas) usando los checkpoints pi0.5 y SmolVLA, ademas de un contrato de versiones estricto entre Isaac Sim, Isaac Lab, PyTorch, Transformers y LeRobot. Es relevante porque documenta una migracion funcional de una pila de simulacion robotica y aporta verificacion tensorial completa de los checkpoints evaluados, con cifras concretas de exito.
 
@@ -114,7 +114,7 @@ No hay datos suficientes en la informacion proporcionada para comparar parametro
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/nvkartik/isaaclab-arena-envs-lab3
+- Model card en Hugging Face: https://huggingface.co/nvkartik/isaaclab-arena-envs-lab3
 - Repositorio LeRobot probado (rama `feat/arena-current-integration`): `nv-sachdevkartik/lerobot`, revision `d1caa2c95503eba595a7034f26ad2221d19748a5`
 - Receta de instalacion incluida en el repositorio: `setup/README.md` (incluye la receta fijada de SmolVLA)
 - Script de smoke test aleatorio: `scripts/random_policy_smoke.py`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`srinugroho30/tmp-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace. La propia model card lo declara explícitamente: contiene "reading notes and an experiment sketch", sin checkpoint entrenado, sin código liberado y sin resultados de benchmarks. El artefacto principal es un fichero `reading.md` con el planteamiento del problema, hipótesis, posibles variables de confusión y referencias bibliográficas.
+`srinugroho30/tmp-document-ai` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face. La propia model card lo declara explícitamente: contiene "reading notes and an experiment sketch", sin checkpoint entrenado, sin código liberado y sin resultados de benchmarks. El artefacto principal es un fichero `reading.md` con el planteamiento del problema, hipótesis, posibles variables de confusión y referencias bibliográficas.
 
 El repositorio se etiqueta con `safetensors` y `transformer`, y el dato real de safetensors indica 16.576 parámetros totales, un orden de magnitud incompatible con cualquier modelo utilizable para inferencia. El tamaño del repositorio es de 0,0 GB, lo que confirma que no hay pesos significativos ni tokenizador funcional publicados.
 
@@ -88,7 +88,7 @@ No procede una comparacion directa, porque este repositorio no es un modelo entr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srinugroho30/tmp-document-ai
+- Repositorio en Hugging Face: https://huggingface.co/srinugroho30/tmp-document-ai
 - Artefacto principal citado en la model card: https://huggingface.co/srinugroho30/tmp-document-ai/blob/main/reading.md
 - Documentacion del repositorio: https://huggingface.co/srinugroho30/tmp-document-ai/blob/main/README.md
 - Datasets mencionados como contexto de evaluacion (referencias nominales, sin enlace proporcionado): FUNSD, SROIE, CORD

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-BF16-15L es un modelo borrador (drafter) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en HuggingFace. No es un modelo de lenguaje autonomo: es un checkpoint auxiliar disenado para proponer tokens que un modelo verificador de mayor tamano (en este caso zai-org/GLM-5.3-Flash) valida en paralelo, acelerando asi la generacion. El modelo emplea la tecnica DSpark de decodificacion especulativa y se distribuye bajo licencia MIT.
+GLM-5.3-Flash-speculator.dspark-preview-BF16-15L es un modelo borrador (drafter) para decodificacion especulativa, publicado por el usuario RelaxingSnorlax en Hugging Face. No es un modelo de lenguaje autonomo: es un checkpoint auxiliar disenado para proponer tokens que un modelo verificador de mayor tamano (en este caso zai-org/GLM-5.3-Flash) valida en paralelo, acelerando asi la generacion. El modelo emplea la tecnica DSpark de decodificacion especulativa y se distribuye bajo licencia MIT.
 
 El aspecto mas relevante es que se trata de un checkpoint "dummy": el autor lo describe explicitamente como un artefacto sintetico para experimentos de tamano y latencia, no como un modelo entrenado. Se genero a partir del drafter base de 5 capas RedHatAI/GLM-5.3-Flash-speculator.dspark-preview ciclando sus capas (la capa nueva `i` corresponde a la capa base `i mod 5`) hasta alcanzar 15 capas, y ajustando `transformer_layer_config.num_hidden_layers = 15` y `layer_types` en consecuencia. Los tensores compartidos (`fc`, normalizaciones, cabezas markov/confidence, embeddings de tokens y `lm_head`) se copian tal cual del modelo base.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-15L
+- Hugging Face: https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-BF16-15L
 - Modelo base drafter: https://huggingface.co/RedHatAI/GLM-5.3-Flash-speculator.dspark-preview
 - Modelo verificador: https://huggingface.co/zai-org/GLM-5.3-Flash

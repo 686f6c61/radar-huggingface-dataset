@@ -80,7 +80,7 @@ Frente a alternativas externas como Spleeter (Deezer) o Open-Unmix, no se dispon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryan5453/unblend
+- Repositorio Hugging Face: https://huggingface.co/Ryan5453/unblend
 - Repositorio GitHub (proyecto unblend): https://github.com/Ryan5453/unblend
 - README y guía rápida de Python: https://github.com/Ryan5453/unblend/blob/main/readme.md
 - Referencia de API Python: https://github.com/Ryan5453/unblend/blob/main/api.md

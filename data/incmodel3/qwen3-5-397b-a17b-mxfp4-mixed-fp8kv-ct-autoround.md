@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/INCModel3/Qwen3.5-397B-A17B-MXFP4-Mixed-FP8KV-CT-AutoRound)
+- [Modelo en Hugging Face](https://huggingface.co/INCModel3/Qwen3.5-397B-A17B-MXFP4-Mixed-FP8KV-CT-AutoRound)
 - [Modelo original Qwen3.5-397B-A17B](https://huggingface.co/Qwen/Qwen3.5-397B-A17B)
 - [Artículo arxiv (AutoRound)](https://arxiv.org/abs/2309.05516)
 - [Repositorio GitHub de AutoRound](https://github.com/intel/auto-round)

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Propósito | Disponibilidad |
 |---|---|---|---|---|---|
-| `FrankLin00/mmrh-afw-03-keras-hub-preset-config` | 4 (safetensors) | no disponible | no disponible | Espécimen inerte de investigación en seguridad | Público en HuggingFace, 0 descargas |
+| `FrankLin00/mmrh-afw-03-keras-hub-preset-config` | 4 (safetensors) | no disponible | no disponible | Espécimen inerte de investigación en seguridad | Público en Hugging Face, 0 descargas |
 | Otros especímenes de la colección `mmrh-*` del mismo autor | no disponible | no disponible | no disponible | Variantes del mismo hallazgo (p. ej. `.npy`, checkpoints, `.jinja`) | Referenciados en el `MANIFEST.json` de la colección |
 | Modelos de lenguaje de propósito general (BERT y similares) | cientos de millones | 512 típico en BERT base | variable | Inferencia NLP | Público |
 
@@ -87,6 +87,6 @@ La comparación con modelos de lenguaje no es significativa: este artefacto pert
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-03-keras-hub-preset-config
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-03-keras-hub-preset-config
 - Colección del autor con `MANIFEST.json` (hashes y ruta del hallazgo fuente): no disponible como enlace directo en la información proporcionada
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada

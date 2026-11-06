@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WeatherBench2 es, pese a su publicación en HuggingFace, un banco de pruebas (benchmark) de evaluación y no un modelo de pesos. El repositorio `OneScience-Group/WeatherBench2` es una reproducción de ingeniería independiente de las especificaciones públicas de WeatherBench 2, el estándar propuesto conjuntamente por Google Research, Google DeepMind y ECMWF para evaluar la nueva generación de modelos meteorológicos globales basados en datos.
+WeatherBench2 es, pese a su publicación en Hugging Face, un banco de pruebas (benchmark) de evaluación y no un modelo de pesos. El repositorio `OneScience-Group/WeatherBench2` es una reproducción de ingeniería independiente de las especificaciones públicas de WeatherBench 2, el estándar propuesto conjuntamente por Google Research, Google DeepMind y ECMWF para evaluar la nueva generación de modelos meteorológicos globales basados en datos.
 
 El benchmark cubre cuatro familias de diagnóstico sobre pronósticos globales de uno a catorce días: evaluación determinista, evaluación probabilística de ensembles, análisis de sesgo y diagnóstico espectral. Trabaja sobre pronósticos de 2020 de ERA5, IFS y varios sistemas data-driven, remuestreados a una rejilla común de 1,5 grados, lo que permite comparar modelos muy dispares bajo las mismas métricas.
 
@@ -99,7 +99,7 @@ No disponible. El repositorio no publica comparativas numéricas frente a otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/WeatherBench2
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/WeatherBench2
 - Artículo de WeatherBench 2: https://arxiv.org/abs/2308.15560
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio de skills de OneScience en GitHub: https://github.com/onescience-ai/oneskills

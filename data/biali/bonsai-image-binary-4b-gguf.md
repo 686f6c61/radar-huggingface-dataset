@@ -77,6 +77,6 @@ La comparativa se limita a tamaño y formato, ya que no hay benchmarks. Bonsai-I
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/biali/bonsai-image-binary-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/biali/bonsai-image-binary-4B-GGUF
 - Modelo base: https://huggingface.co/prism-ml/bonsai-image-binary-4B-unpacked
 - Herramienta sd.cpp (mencionada en la model card): no se proporciona enlace directo, pero se puede buscar como "sd.cpp" en GitHub.

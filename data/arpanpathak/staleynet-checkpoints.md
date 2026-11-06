@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StaleyNET es un generador de musica condicionado por texto desarrollado por Arpan Pathak, entrenado desde inicializacion aleatoria en Rust sobre GPUs NVIDIA de borde (Jetson AGX Thor). El proyecto implementa de forma completa la pila: el transformer, el cuantizador vectorial residual (RVQ), el vocoder Griffin-Lim y los kernels de GPU, todo dentro del repositorio del autor. Este repositorio de HuggingFace aloja unicamente los checkpoints de pesos, no el codigo de inferencia.
+StaleyNET es un generador de musica condicionado por texto desarrollado por Arpan Pathak, entrenado desde inicializacion aleatoria en Rust sobre GPUs NVIDIA de borde (Jetson AGX Thor). El proyecto implementa de forma completa la pila: el transformer, el cuantizador vectorial residual (RVQ), el vocoder Griffin-Lim y los kernels de GPU, todo dentro del repositorio del autor. Este repositorio de Hugging Face aloja unicamente los checkpoints de pesos, no el codigo de inferencia.
 
 El modelo es deliberadamente pequeno: 7.099.904 parametros para las ejecuciones solo-texto y 7.165.440 para las condicionadas por letra, con una variante mayor de 42.858.496 parametros (`pq-large`) todavia en entrenamiento. Trabaja sobre tokens de audio derivados de 128 bandas mel a 24 kHz y genera mediante un vocoder Griffin-Lim, una eleccion clasica que evita dependencias de redes neuronales adicionales para la sintesis.
 
@@ -86,7 +86,7 @@ La comparativa es orientativa: StaleyNET es orders de magnitud mas pequeno que M
 
 ## Enlaces
 
-- HuggingFace: <https://huggingface.co/arpanpathak/staleynet-checkpoints>
+- Hugging Face: <https://huggingface.co/arpanpathak/staleynet-checkpoints>
 - Repositorio GitHub: <https://github.com/arpanpathak/staleynet>
 - Paper (preprint PDF): <https://github.com/arpanpathak/staleynet/blob/main/paper/preprint.pdf>
 - Libro (mdBook): <https://github.com/arpanpathak/staleynet/tree/main/book/src>

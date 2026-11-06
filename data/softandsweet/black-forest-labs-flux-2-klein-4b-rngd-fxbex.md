@@ -25,13 +25,13 @@ El alcance validado es deliberadamente estrecho: generación text-to-image a 512
 
 El modelo subyacente es FLUX.2 Klein 4B, un modelo de difusión para generación de imágenes a partir de texto de la familia FLUX de Black Forest Labs. La información proporcionada no detalla la arquitectura interna (tipo de backbone, mecanismo de atención, composición del dataset de entrenamiento ni si se emplearon técnicas de alineación como RLHF o DPO). El paquete `.fxbex` incluye los pesos, kernels compilados para la NPU Furiosa RNGD y un adaptador que expone una API de generación.
 
-La innovación técnica de este artefacto no reside en el modelo en sí, sino en el pipeline de compilación y despliegue: 205 Runnables capturados y replicados, 9.708 eventos de tarea NPU registrados en el trazado oficial, cero ejecuciones en CPU del SDK y cero grafos desconocidos. El fallback a CPU del SDK está deshabilitado y no se realizan lecturas de caché externa de HuggingFace durante la carga. La inferencia es determinista para una semilla dada: tres ejecuciones con la misma semilla produjeron imágenes con SHA256 idéntico (`dc836e4b...a0615`).
+La innovación técnica de este artefacto no reside en el modelo en sí, sino en el pipeline de compilación y despliegue: 205 Runnables capturados y replicados, 9.708 eventos de tarea NPU registrados en el trazado oficial, cero ejecuciones en CPU del SDK y cero grafos desconocidos. El fallback a CPU del SDK está deshabilitado y no se realizan lecturas de caché externa de Hugging Face durante la carga. La inferencia es determinista para una semilla dada: tres ejecuciones con la misma semilla produjeron imágenes con SHA256 idéntico (`dc836e4b...a0615`).
 
 ## Capacidades
 
 - Generación de imágenes a partir de descripciones textuales (text-to-image) en resolución 512×512.
 - Generación determinista con semilla configurable, validada mediante hash SHA256 idéntico en ejecuciones repetidas.
-- Ejecución completamente offline sobre NPU Furiosa RNGD, sin acceso a caché de HuggingFace ni a red.
+- Ejecución completamente offline sobre NPU Furiosa RNGD, sin acceso a caché de Hugging Face ni a red.
 - Control de pasos de denoising (validado a 4 pasos) y de dimensiones de salida (validado a 512×512).
 - Empaquetado autocontenido con pesos, kernels y adaptador en un único archivo `.fxbex` verificable por SHA256.
 - No se ha validado edición de imágenes, otras resoluciones, otros números de pasos, otras precisiones ni otras longitudes de secuencia.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Formato | Hardware objetivo | Licencia | Estado |
 |---|---|---|---|---|---|
-| FLUX.2 Klein 4B (upstream) | 4B | Pesos originales (no especificado) | GPU convencional | Apache-2.0 | Disponible en HuggingFace |
+| FLUX.2 Klein 4B (upstream) | 4B | Pesos originales (no especificado) | GPU convencional | Apache-2.0 | Disponible en Hugging Face |
 | Este paquete (`.fxbex`) | 4B | `.fxbex` | NPU Furiosa RNGD | Apache-2.0 (pesos) | Disponible, alcance validado limitado |
 | Alternativas de difusión text-to-image de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos comparables empaquetados para 
 
 ## Enlaces
 
-- Repositorio del paquete en HuggingFace: https://huggingface.co/softandsweet/black-forest-labs-flux-2-klein-4b-rngd-fxbex
+- Repositorio del paquete en Hugging Face: https://huggingface.co/softandsweet/black-forest-labs-flux-2-klein-4b-rngd-fxbex
 - Modelo upstream FLUX.2 Klein 4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Commit upstream fijado: `e7b7dc27f91deacad38e78976d1f2b499d76a294`
 - Runtime FXBEX: https://github.com/smallstep-zzz/FXBEX

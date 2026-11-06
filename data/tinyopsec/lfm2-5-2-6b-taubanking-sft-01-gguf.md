@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-2.6B-TauBanking-SFT-01-GGUF es una colección de cuantizaciones GGUF de un modelo ajustado por instrucciones (SFT) especializado en el dominio bancario, publicado por el usuario tinyopsec en HuggingFace. El modelo base es LFM2.5-2.6B de LiquidAI, una arquitectura híbrida compacta de unos 2.700 millones de parámetros, y la versión ajustada original corresponde a lugman-madhiai/LFM2.5-2.6B-TauBanking-SFT-01, entrenada para tareas del sector bancario (TauBanking).
+LFM2.5-2.6B-TauBanking-SFT-01-GGUF es una colección de cuantizaciones GGUF de un modelo ajustado por instrucciones (SFT) especializado en el dominio bancario, publicado por el usuario tinyopsec en Hugging Face. El modelo base es LFM2.5-2.6B de LiquidAI, una arquitectura híbrida compacta de unos 2.700 millones de parámetros, y la versión ajustada original corresponde a lugman-madhiai/LFM2.5-2.6B-TauBanking-SFT-01, entrenada para tareas del sector bancario (TauBanking).
 
 La relevancia de esta ficha radica en la especialización vertical: en lugar de un modelo generalista, se trata de un SFT enfocado en banca, con pesos disponibles en formato GGUF para su ejecución local mediante llama.cpp, Ollama, LM Studio o koboldcpp. Esto lo hace atractivo para entornos donde la privacidad de los datos financieros es crítica, ya que el modelo puede desplegarse íntegramente on-premise sin enviar información a APIs externas.
 
@@ -88,8 +88,8 @@ Frente a alternativas generalistas de tamano similar como Qwen2.5-3B-Instruct o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tinyopsec/LFM2.5-2.6B-TauBanking-SFT-01-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/tinyopsec/LFM2.5-2.6B-TauBanking-SFT-01-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo SFT original (safetensors): https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauBanking-SFT-01
-- Organizacion de LiquidAI en HuggingFace: https://huggingface.co/LiquidAI
+- Organizacion de LiquidAI en Hugging Face: https://huggingface.co/LiquidAI
 - Paper, blog o demo: no disponibles

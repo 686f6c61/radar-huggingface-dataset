@@ -91,7 +91,7 @@ La comparacion cuantitativa con el modelo base (calidad de mascaras, fidelidad d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rushikesh1907/Image_Layered
+- Repositorio Hugging Face: https://huggingface.co/Rushikesh1907/Image_Layered
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-Layered
 - Paper de investigacion: https://arxiv.org/abs/2512.15603
 - Blog de Qwen: https://qwenlm.github.io/blog/qwen-image-layered/

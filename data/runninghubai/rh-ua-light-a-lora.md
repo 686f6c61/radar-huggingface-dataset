@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-ua-light-a-lora` es un adaptador LoRA para edición de imagen orientado a **relight** (reciclado de iluminación) de fotografías. Lo publica RunningHub en su organización de HuggingFace en nombre del autor `@UpAgainUI`, y está afinado a partir de **Flux1-Kontext**, el modelo de edición de imagen por instrucciones de Black Forest Labs. El repositorio contiene un único archivo de pesos, `UA LIGHT A.safetensors`, de 292 MiB (0,3 GB de repositorio total).
+`rh-ua-light-a-lora` es un adaptador LoRA para edición de imagen orientado a **relight** (reciclado de iluminación) de fotografías. Lo publica RunningHub en su organización de Hugging Face en nombre del autor `@UpAgainUI`, y está afinado a partir de **Flux1-Kontext**, el modelo de edición de imagen por instrucciones de Black Forest Labs. El repositorio contiene un único archivo de pesos, `UA LIGHT A.safetensors`, de 292 MiB (0,3 GB de repositorio total).
 
 No se trata de un modelo completo: es un adaptador de bajo rango que debe cargarse sobre el modelo base Flux1-Kontext para funcionar. Su etiquetado de pipeline es `image-text-to-image` y los tags declaran compatibilidad con ComfyUI, de modo que el flujo previsto es cargar el LoRA en un nodo de ComfyUI (o en la plataforma RunningHub) junto al checkpoint base y aplicar una instrucción de texto para modificar la iluminación de una imagen de entrada.
 
@@ -65,8 +65,8 @@ No se han identificado en la información proporcionada otros adaptadores LoRA d
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-ua-light-a-lora | LoRA de relight sobre Flux1-Kontext | no disponible (adaptador de 292 MiB) | no aplica / no disponible | no disponible | HuggingFace + RunningHub |
-| Flux1-Kontext (modelo base, requerido) | Transformer de difusión para edición de imagen | ~12 000 M (dato del modelo base, no de esta model card) | no disponible | la del proyecto original de Flux1-Kontext (no verificada aquí) | HuggingFace / BFL |
+| rh-ua-light-a-lora | LoRA de relight sobre Flux1-Kontext | no disponible (adaptador de 292 MiB) | no aplica / no disponible | no disponible | Hugging Face + RunningHub |
+| Flux1-Kontext (modelo base, requerido) | Transformer de difusión para edición de imagen | ~12 000 M (dato del modelo base, no de esta model card) | no disponible | la del proyecto original de Flux1-Kontext (no verificada aquí) | Hugging Face / BFL |
 | Otros LoRA de relight | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se han identificado en la información proporcionada otros adaptadores LoRA d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-ua-light-a-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-ua-light-a-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/1964746062554611714
 - Página del autor en RunningHub: https://www.runninghub.ai/user-center/1935334486756470786
 - RunningHub (sitio internacional): https://www.runninghub.ai

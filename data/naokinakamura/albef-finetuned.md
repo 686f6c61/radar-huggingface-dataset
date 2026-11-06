@@ -70,11 +70,11 @@ No disponible. No existe información suficiente para comparar este checkpoint c
 - No ha sido auditado en términos de robustez, equidad ni transferencia de dominio, tal como advierte el README.
 - Existe un riesgo alto de confusión por el nombre "albef-finetuned", que sugiere un modelo ajustado, cuando en realidad es una inicialización aleatoria.
 - El repositorio está publicado bajo Apache 2.0, pero los términos de los conjuntos de datos externos que se utilicen para un futuro entrenamiento deben revisarse por separado.
-- La implementación es experimental y requiere un adaptador específico para cargarse desde APIs de HuggingFace estándar, lo que limita su integración inmediata.
+- La implementación es experimental y requiere un adaptador específico para cargarse desde APIs de Hugging Face estándar, lo que limita su integración inmediata.
 - No se han publicado evaluaciones con múltiples semillas ni baselines de capacidad equivalente, por lo que no se puede medir su rendimiento comparativo.
 - La licencia permite uso comercial, pero al no existir un modelo entrenado, no hay ningún producto comercializable sin un proceso previo de entrenamiento y validación.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/naokinakamura/albef-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/naokinakamura/albef-finetuned
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, demos) en la búsqueda web realizada.

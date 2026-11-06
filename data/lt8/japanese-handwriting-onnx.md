@@ -121,7 +121,7 @@ Las alternativas funcionales serian los sistemas OCR de proposito general y las 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LT8/japanese-handwriting-onnx
+- Modelo en Hugging Face: https://huggingface.co/LT8/japanese-handwriting-onnx
 - Licencia de la base de datos de caracteres ETL: https://etlcdb.db.aist.go.jp/?lang=en
 - Ficheros incluidos en el repositorio: `model.fp16.onnx`, `model.int8.onnx`, `model.onnx`, `labels.json`, `confusable.json`, `predict.py`, `index.html`
 - La busqueda web realizada no devolvio papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados obtenidos no eran pertinentes.

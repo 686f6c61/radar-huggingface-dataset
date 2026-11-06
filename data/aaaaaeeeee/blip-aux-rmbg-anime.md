@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| aaaaaeeeee/blip-aux-rmbg-anime | Segmentación anime, ONNX para WebGPU | no disponible | no aplica | Apache-2.0 | HuggingFace, ONNX | Reconversión de formato; pesos sin modificar |
-| skytnt/anime-seg (upstream) | Segmentación anime (isnetis) | no disponible | no aplica | Apache-2.0 | HuggingFace | Modelo original en formato de framework de entrenamiento; commit `493cb60893f47441b26ec4fb9a306bce9e342982` |
+| aaaaaeeeee/blip-aux-rmbg-anime | Segmentación anime, ONNX para WebGPU | no disponible | no aplica | Apache-2.0 | Hugging Face, ONNX | Reconversión de formato; pesos sin modificar |
+| skytnt/anime-seg (upstream) | Segmentación anime (isnetis) | no disponible | no aplica | Apache-2.0 | Hugging Face | Modelo original en formato de framework de entrenamiento; commit `493cb60893f47441b26ec4fb9a306bce9e342982` |
 | Segmentadores salientes genéricos (familia U^2-Net / IS-Net) | Segmentación saliente de propósito general | no disponible | no aplica | variable según implementación | Múltiples repositorios y wrappers | No especializados en anime; el rendimiento en líneas finas y cabello suele ser inferior a un modelo ajustado al dominio. Datos concretos no disponibles en esta búsqueda |
 
 No se dispone de comparaciones cuantitativas publicadas entre estas opciones en la información proporcionada.
@@ -97,7 +97,7 @@ No se dispone de comparaciones cuantitativas publicadas entre estas opciones en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aaaaaeeeee/blip-aux-rmbg-anime
+- Modelo en Hugging Face: https://huggingface.co/aaaaaeeeee/blip-aux-rmbg-anime
 - Modelo upstream (skytnt/anime-seg): https://huggingface.co/skytnt/anime-seg
 - Commit del upstream referenciado por el autor: `493cb60893f47441b26ec4fb9a306bce9e342982`
 - Licencia del repositorio: https://huggingface.co/aaaaaeeeee/blip-aux-rmbg-anime/blob/main/LICENSE.txt

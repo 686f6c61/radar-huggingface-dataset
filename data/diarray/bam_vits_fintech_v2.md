@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `diarray/bam_vits_fintech_v2` es un sistema de síntesis de voz (text-to-speech) basado en la arquitectura VITS, desarrollado por Diarra Yacouba (usuario `diarray` en HuggingFace). El nombre del modelo sugiere un fine-tuning orientado al dominio fintech y al idioma bámbara ("bam"), coherente con la actividad declarada del autor en su perfil de GitHub, centrada en adaptar técnicas de aprendizaje automático y síntesis de voz para impulsar la inclusión financiera en Malí desde 2022.
+El modelo `diarray/bam_vits_fintech_v2` es un sistema de síntesis de voz (text-to-speech) basado en la arquitectura VITS, desarrollado por Diarra Yacouba (usuario `diarray` en Hugging Face). El nombre del modelo sugiere un fine-tuning orientado al dominio fintech y al idioma bámbara ("bam"), coherente con la actividad declarada del autor en su perfil de GitHub, centrada en adaptar técnicas de aprendizaje automático y síntesis de voz para impulsar la inclusión financiera en Malí desde 2022.
 
 Con aproximadamente 39,6 millones de parámetros y un tamaño de repositorio de 0,2 GB, se trata de un modelo compacto de síntesis de voz, adecuado para despliegue en entornos con recursos limitados. La model card publicada está prácticamente vacía (plantilla automática sin rellenar), por lo que gran parte de la información técnica detallada no está disponible públicamente. El modelo se publicó el 18 de agosto de 2026 y cuenta con cero descargas y cero likes en el momento de redactar esta ficha, lo que indica que es un lanzamiento reciente o experimental.
 
@@ -29,7 +29,7 @@ En cuanto a los datos de entrenamiento, el procedimiento de fine-tuning y las hi
 
 - Síntesis de voz (text-to-audio) mediante la librería transformers, con pipeline `text-to-audio`.
 - Generación de audio de extremo a extremo sin vocoder externo, gracias a la arquitectura VITS.
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`), lo que permite su despliegue en la infraestructura de inferencia de HuggingFace.
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`), lo que permite su despliegue en la infraestructura de inferencia de Hugging Face.
 - Capacidades multilingües: no documentadas. El nombre del modelo sugiere orientación al bámbara, pero no hay confirmación oficial.
 - No se documentan capacidades de tool calling, agentes ni razonamiento multi-paso, al tratarse de un modelo de síntesis de voz y no de lenguaje general.
 
@@ -39,7 +39,7 @@ En cuanto a los datos de entrenamiento, el procedimiento de fine-tuning y las hi
 - Asistentes de voz para inclusión financiera en Malí: dado el perfil del autor y su trabajo declarado en inclusión financiera, el modelo podría integrarse en aplicaciones móviles que presten servicios financieros en idiomas locales, aunque la cobertura lingüística no está confirmada.
 - Generación de contenido de audio para educación financiera: el modelo puede convertir guiones educativos sobre ahorro, crédito o seguros en pistas de audio para su difusión por radio o aplicaciones móviles en contextos de baja conectividad.
 - Avisos automatizados de transacciones: integración en pasarelas de pago móvil (tipo mobile money) para generar confirmaciones de operaciones en tiempo real, reduciendo la dependencia de canales SMS.
-- Accesibilidad para personas con discapacidad visual: conversión de información financiera textual en audio accesible, aprovechando la compatibilidad con los endpoints de HuggingFace para su integración en servicios web.
+- Accesibilidad para personas con discapacidad visual: conversión de información financiera textual en audio accesible, aprovechando la compatibilidad con los endpoints de Hugging Face para su integración en servicios web.
 - Prototipado rápido de interfaces de voz: gracias a su tamaño reducido y al formato safetensors, el modelo puede desplegarse localmente en equipos de desarrollo para iterar sobre prototipos de experiencias de usuario por voz en el sector fintech.
 
 ## Benchmarks y rendimiento
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible oficialmente. Con 39,6 M de parámetros, el modelo en FP32 ocupa aproximadamente 158 MB, por lo que cabe holgadamente en cualquier GPU moderna e incluso en CPU.
 - GPU recomendadas: no hay recomendaciones oficiales. Por su tamaño, cualquier GPU con 4 GB de VRAM o más es suficiente; también es viable la inferencia en CPU con latencias aceptables para síntesis de voz.
 - Compatibilidad con GPU de consumo: sí, el modelo es lo suficientemente pequeño para ejecutarse en GPUs de gama media como RTX 3060, RTX 4060 o similares, e incluso en hardware de inferencia embebido.
-- Opciones de despliegue: la librería es `transformers`, por lo que puede desplegarse con las herramientas estándar del ecosistema (pipeline `text-to-audio`). El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de HuggingFace. No se documenta soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: la librería es `transformers`, por lo que puede desplegarse con las herramientas estándar del ecosistema (pipeline `text-to-audio`). El tag `endpoints_compatible` indica compatibilidad con los Inference Endpoints de Hugging Face. No se documenta soporte para vLLM, llama.cpp u Ollama, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa con otros modelos VITS de la familia MMS de Meta es la más perti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diarray/bam_vits_fintech_v2
+- Modelo en Hugging Face: https://huggingface.co/diarray/bam_vits_fintech_v2
 - Modelo relacionado (versión previa): https://huggingface.co/diarray/bam-vits
 - Repositorio del autor en GitHub: https://github.com/diarray-hub?tab=repositories
 - Página personal del autor: https://diarray-hub.github.io/

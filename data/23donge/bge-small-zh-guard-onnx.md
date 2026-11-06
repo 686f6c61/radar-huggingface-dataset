@@ -88,7 +88,7 @@ También se puede comparar con el modelo base `BAAI/bge-small-zh-v1.5` (embeddin
 
 ## Enlaces
 
-- HuggingFace del modelo: [23donge/bge-small-zh-guard-onnx](https://huggingface.co/23donge/bge-small-zh-guard-onnx)
+- Hugging Face del modelo: [23donge/bge-small-zh-guard-onnx](https://huggingface.co/23donge/bge-small-zh-guard-onnx)
 - Modelo base: [BAAI/bge-small-zh-v1.5](https://huggingface.co/BAAI/bge-small-zh-v1.5)
 - Variante ONNX del modelo base: [onnx-community/bge-small-zh-v1.5-ONNX](https://huggingface.co/onnx-community/bge-small-zh-v1.5-ONNX)
 - ONNX Model Zoo (referencia de formato ONNX): [GitHub - onnx/models](https://github.com/onnx/models)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-BMONI es un ajuste fino (fine-tune) del modelo google/functiongemma-270m-it, publicado por el usuario iamEtornam en HuggingFace. Se distribuye como un único fichero `functiongemma-ft-20261022.litertlm`, es decir, en formato LiteRT-LM, el runtime de Google para inferencia en dispositivo (movil, escritorio, edge), no en safetensors ni GGUF. El repositorio ocupa 0,3 GB y la model card lo describe como "on-device agent router": un enrutador de agentes pensado para ejecutarse localmente y decidir que herramienta o funcion invocar.
+BMONI es un ajuste fino (fine-tune) del modelo google/functiongemma-270m-it, publicado por el usuario iamEtornam en Hugging Face. Se distribuye como un único fichero `functiongemma-ft-20261022.litertlm`, es decir, en formato LiteRT-LM, el runtime de Google para inferencia en dispositivo (movil, escritorio, edge), no en safetensors ni GGUF. El repositorio ocupa 0,3 GB y la model card lo describe como "on-device agent router": un enrutador de agentes pensado para ejecutarse localmente y decidir que herramienta o funcion invocar.
 
 El modelo hereda la licencia Gemma y, segun los tags del repositorio, es un fine-tune directo del checkpoint instruction-tuned de FunctionGemma con 270 millones de parametros. Por tanto, su proposito es el function calling de baja latencia en entornos con recursos limitados, no la generacion de texto abierta de alta calidad. La relevancia actual esta en la tendencia a ejecutar agentes pequenos en el propio dispositivo, sin depender de la nube.
 
-La informacion publicada es muy escasa: la model card no incluye detalles de entrenamiento, datos, hiperparametros, evaluaciones ni idiomas soportados. Esta ficha refleja unicamente lo que el autor y los metadatos de HuggingFace declaran, y marca explicitamente como "no disponible" todo lo demas. Es un build de prueba ("fine-tuned test build"), con 0 descargas y 1 like en el momento de la consulta.
+La informacion publicada es muy escasa: la model card no incluye detalles de entrenamiento, datos, hiperparametros, evaluaciones ni idiomas soportados. Esta ficha refleja unicamente lo que el autor y los metadatos de Hugging Face declaran, y marca explicitamente como "no disponible" todo lo demas. Es un build de prueba ("fine-tuned test build"), con 0 descargas y 1 like en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No hay datos publicados que permitan comparar calidad, latencia o precision en f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamEtornam/bmoni-agent-functiongemma-litert
+- Modelo en Hugging Face: https://huggingface.co/iamEtornam/bmoni-agent-functiongemma-litert
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Runtime LiteRT (Google): no se incluye enlace en la informacion disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ayeeyokoris/test2` es un modelo publicado en HuggingFace Hub por el usuario ayeeyokoris, con 39.880.464 parámetros (aproximadamente 39,9 millones) y pesos en formato safetensors para la librería transformers. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola sección cumplimentada: no se declaran autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El nombre del repositorio ("test2") y la ausencia de likes (0) apuntan a un artefacto de pruebas más que a un modelo publicado con garantías.
+`ayeeyokoris/test2` es un modelo publicado en Hugging Face Hub por el usuario ayeeyokoris, con 39.880.464 parámetros (aproximadamente 39,9 millones) y pesos en formato safetensors para la librería transformers. La model card es la plantilla autogenerada por el Hub y no contiene ni una sola sección cumplimentada: no se declaran autoría real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni resultados de evaluación. El nombre del repositorio ("test2") y la ausencia de likes (0) apuntan a un artefacto de pruebas más que a un modelo publicado con garantías.
 
 Los únicos indicios sobre su naturaleza son los metadatos: el pipeline declarado es `feature-extraction`, e incluye las etiquetas `hubi-tts` y `custom_code`. La primera sugiere alguna relación con síntesis de voz; la segunda implica que el modelo requiere `trust_remote_code=True` y que su arquitectura no está implementada de forma nativa en transformers. Ninguna de estas señales está confirmada por documentación del autor.
 
@@ -28,9 +28,9 @@ Por tanto, esta ficha refleja lo que se puede verificar (tamaño, formato, pipel
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura. La model card es la plantilla por defecto del HuggingFace Hub con todos los campos sin rellenar. Los metadatos indican dos cosas: que el pipeline es `feature-extraction` (el modelo devuelve representaciones vectoriales, no texto generado de forma autoregresiva) y que incluye `custom_code`, lo que obliga a cargar código remoto del repositorio y descarta que se trate de una clase estándar de transformers. Con 39,9 M de parámetros, el orden de magnitud es el de un codificador ligero (comparable en tamaño a Whisper tiny), no el de un modelo generativo de gran escala.
+No hay información publicada sobre la arquitectura. La model card es la plantilla por defecto del Hugging Face Hub con todos los campos sin rellenar. Los metadatos indican dos cosas: que el pipeline es `feature-extraction` (el modelo devuelve representaciones vectoriales, no texto generado de forma autoregresiva) y que incluye `custom_code`, lo que obliga a cargar código remoto del repositorio y descarta que se trate de una clase estándar de transformers. Con 39,9 M de parámetros, el orden de magnitud es el de un codificador ligero (comparable en tamaño a Whisper tiny), no el de un modelo generativo de gran escala.
 
-Tampoco se documentan datos de entrenamiento, número de tokens, composición del corpus, ni si hubo ajuste por RLHF, DPO o similar. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre estimación de emisiones de carbono que figura en la plantilla de model card de HuggingFace. Un detalle relevante para la inspección: los pesos en fp32 de 39,9 M de parámetros ocuparían unos 160 MB, mientras que el repositorio pesa 2,6 GB, lo que indica la presencia de artefactos adicionales (posibles checkpoints múltiples, estados de optimizador, vocoder, muestras de audio u otros ficheros) que no están documentados.
+Tampoco se documentan datos de entrenamiento, número de tokens, composición del corpus, ni si hubo ajuste por RLHF, DPO o similar. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre estimación de emisiones de carbono que figura en la plantilla de model card de Hugging Face. Un detalle relevante para la inspección: los pesos en fp32 de 39,9 M de parámetros ocuparían unos 160 MB, mientras que el repositorio pesa 2,6 GB, lo que indica la presencia de artefactos adicionales (posibles checkpoints múltiples, estados de optimizador, vocoder, muestras de audio u otros ficheros) que no están documentados.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ Comparación orientativa por orden de magnitud de parámetros; las alternativas 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ayeeyokoris/test2 | ~39,9 M | No disponible | No disponible | HuggingFace, requiere código remoto |
-| Whisper tiny (OpenAI) | ~39 M | Ventana de audio de 30 s | MIT | HuggingFace, transformers nativo |
-| wav2vec2-base (Meta) | ~95 M | No aplica (audio) | No verificada en esta ficha | HuggingFace, transformers nativo |
-| HuBERT base (Meta) | ~95 M | No aplica (audio) | No verificada en esta ficha | HuggingFace, transformers nativo |
+| ayeeyokoris/test2 | ~39,9 M | No disponible | No disponible | Hugging Face, requiere código remoto |
+| Whisper tiny (OpenAI) | ~39 M | Ventana de audio de 30 s | MIT | Hugging Face, transformers nativo |
+| wav2vec2-base (Meta) | ~95 M | No aplica (audio) | No verificada en esta ficha | Hugging Face, transformers nativo |
+| HuBERT base (Meta) | ~95 M | No aplica (audio) | No verificada en esta ficha | Hugging Face, transformers nativo |
 
 La diferencia práctica frente a las alternativas no es de tamaño, sino de trazabilidad: los tres modelos de referencia tienen paper, documentación de datos de entrenamiento y licencia explícita, mientras que `test2` no ofrece ninguno de esos elementos.
 
@@ -96,7 +96,7 @@ La diferencia práctica frente a las alternativas no es de tamaño, sino de traz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayeeyokoris/test2
+- Modelo en Hugging Face: https://huggingface.co/ayeeyokoris/test2
 - Referencia del tag arXiv (Lacoste et al., 2019, impacto ambiental del aprendizaje automático): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la plantilla: https://mlco2.github.io/impact#compute
-- Perfil del autor en HuggingFace: https://huggingface.co/ayeeyokoris
+- Perfil del autor en Hugging Face: https://huggingface.co/ayeeyokoris

@@ -94,7 +94,7 @@ La comparativa con Whisper se basa en características generales conocidas; no s
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/tryambientai/parakeet-primeline-gguf
+- Hugging Face (esta conversión): https://huggingface.co/tryambientai/parakeet-primeline-gguf
 - Modelo base: https://huggingface.co/primeline/parakeet-primeline
 - Commit del modelo base: https://huggingface.co/primeline/parakeet-primeline/commit/3f1a9bc
 - Modelo NVIDIA original: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

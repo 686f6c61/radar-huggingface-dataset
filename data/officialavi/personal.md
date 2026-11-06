@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Officialavi/Personal` es un repositorio publicado en HuggingFace por el usuario Officialavi bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene únicamente el bloque de metadatos de licencia (`license: apache-2.0`) y ninguna descripción del modelo: no se declara arquitectura, tamaño, ventana de contexto, datos de entrenamiento ni idiomas soportados. El campo `pipeline_tag` está vacío, por lo que la propia plataforma no clasifica el repositorio en ninguna tarea (text-generation, image-text-to-text, etc.).
+`Officialavi/Personal` es un repositorio publicado en Hugging Face por el usuario Officialavi bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene únicamente el bloque de metadatos de licencia (`license: apache-2.0`) y ninguna descripción del modelo: no se declara arquitectura, tamaño, ventana de contexto, datos de entrenamiento ni idiomas soportados. El campo `pipeline_tag` está vacío, por lo que la propia plataforma no clasifica el repositorio en ninguna tarea (text-generation, image-text-to-text, etc.).
 
 Los metadatos públicos indican 0 descargas y 1 like, con fecha de creación y última actualización declaradas como 2026-10-23T08:47:09Z. Esa marca temporal es posterior a la fecha habitual de consulta, un detalle que conviene verificar antes de tomar cualquier decisión técnica basada en el repositorio. La única etiqueta informativa adicional es `region: us`.
 
@@ -20,7 +20,7 @@ En su estado actual, el repositorio no es evaluable como modelo: no hay evidenci
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Officialavi/Personal |
+| Identificador en Hugging Face | Officialavi/Personal |
 | Autor | Officialavi |
 | Pipeline declarado | no disponible (campo vacío) |
 | Etiquetas | `license:apache-2.0`, `region:us` |
@@ -56,7 +56,7 @@ Los escenarios siguientes son condicionales: solo serían aplicables si la inspe
 - Clasificación o extracción de información en prototipos: solo tras verificar que el modelo responde de forma fiable a instrucciones; requiere definir un conjunto de evaluación propio.
 - Generación de documentación técnica interna: uso de bajo riesgo y revisión humana obligatoria, condicionado a que el modelo produzca texto en castellano con calidad suficiente (no verificado).
 - Integración en flujos de CI/CD como generador auxiliar de mensajes de commit o resúmenes de cambios: únicamente en entornos no críticos y con validación posterior, dado el desconocimiento total sobre calidad y alucinación.
-- Estudio académico sobre procedencia y documentación de modelos: el caso en sí (repositorio con licencia pero sin model card) es un ejemplo útil para analizar prácticas de publicación y trazabilidad en HuggingFace.
+- Estudio académico sobre procedencia y documentación de modelos: el caso en sí (repositorio con licencia pero sin model card) es un ejemplo útil para analizar prácticas de publicación y trazabilidad en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -97,7 +97,7 @@ No es posible establecer una comparativa fiable: se desconoce el tamaño, la tar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Officialavi/Personal
+- Repositorio en Hugging Face: https://huggingface.co/Officialavi/Personal
 - Model card: https://huggingface.co/Officialavi/Personal/blob/main/README.md
 - Texto de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Perfil del autor: https://huggingface.co/Officialavi

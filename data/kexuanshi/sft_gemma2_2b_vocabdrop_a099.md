@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sft_gemma2_2b_vocabdrop_a099 es un ajuste fino por supervisión (SFT) del modelo base Gemma 2 de 2B parámetros, publicado por el usuario KexuanShi en HuggingFace. El nombre y las etiquetas del repositorio indican que se parte de la familia Gemma 2 (tag `gemma2`) y que se ha aplicado una técnica denominada "vocabdrop" con un valor `a099` (probablemente un hiperparámetro alfa de 0,99), aunque la model card no documenta en detalle en qué consiste ese procedimiento.
+sft_gemma2_2b_vocabdrop_a099 es un ajuste fino por supervisión (SFT) del modelo base Gemma 2 de 2B parámetros, publicado por el usuario KexuanShi en Hugging Face. El nombre y las etiquetas del repositorio indican que se parte de la familia Gemma 2 (tag `gemma2`) y que se ha aplicado una técnica denominada "vocabdrop" con un valor `a099` (probablemente un hiperparámetro alfa de 0,99), aunque la model card no documenta en detalle en qué consiste ese procedimiento.
 
 El modelo se ha entrenado con la librería TRL (versión 1.13.0) siguiendo el flujo estándar de SFT para instrucciones, e incluye los tags `sft`, `trl`, `generated_from_trainer` y `text-generation-inference`. El repositorio ocupa 5,3 GB y contiene pesos en formato safetensors con 2.614.341.888 parámetros reales, lo que confirma que se trata de un modelo denso de aproximadamente 2,6B parámetros, no de una arquitectura MoE.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sft_gemma2_2b_vocabdrop_a099 | 2,6B | no disponible (base Gemma 2 2B: 8.192) | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental con vocabdrop |
+| sft_gemma2_2b_vocabdrop_a099 | 2,6B | no disponible (base Gemma 2 2B: 8.192) | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental con vocabdrop |
 | Gemma 2 2B (base de Google) | 2,6B | 8.192 tokens | Gemma Terms of Use | Ampliamente disponible | Modelo base sin ajuste de instrucciones |
 | Llama 3.2 1B Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible | Alternativa de tamano similar con contexto mayor |
 | Qwen2.5 1.5B Instruct | 1,5B | 32.768 tokens | Apache-2.0 | Ampliamente disponible | Licencia permisiva y buen rendimiento en tareas pequenas |
@@ -82,7 +82,7 @@ Los datos de los modelos comparativos corresponden a sus especificaciones public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a099
+- Modelo en Hugging Face: https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a099
 - Repositorio de TRL (framework de entrenamiento): https://github.com/huggingface/trl
 - Paper de TRL (citado en la model card): von Werra et al., 2020
 - Otros enlaces relevantes: no disponible (los resultados de la busqueda web proporcionada no estan relacionados con el modelo)

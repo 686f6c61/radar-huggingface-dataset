@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AXERA-TECH/RF-DETR
+- Hugging Face: https://huggingface.co/AXERA-TECH/RF-DETR
 - Repositorio GitHub de AXERA-TECH: https://github.com/AXERA-TECH/RF-DETR.axera
 - Repositorio GitHub de Roboflow (modelo original): https://github.com/roboflow/rf-detr
 - Paper (arXiv): https://arxiv.org/html/2511.09554v1

@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no incluye datos de modelos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Maximilian228/Geode-Gemma-4-E2B
+- Repositorio Hugging Face: https://huggingface.co/Maximilian228/Geode-Gemma-4-E2B
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Variante instruida de referencia: https://huggingface.co/google/gemma-4-E2B-it
 - Aplicacion Geode: https://geode.tifu.xyz

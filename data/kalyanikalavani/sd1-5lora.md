@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kalyanikalavani/Sd1.5lora` es un repositorio publicado en HuggingFace cuyo nombre sugiere un LoRA (adaptador de bajo rango) entrenado sobre Stable Diffusion 1.5, el modelo de difusion texto-a-imagen de 860 millones de parametros lanzado por Stability AI en 2022. El autor es el usuario Kalyanikalavani y la unica informacion verificable en el repositorio es la licencia Apache 2.0 y un tamano de 0.2 GB, coherente con el peso de un adaptador LoRA pequeno mas que con un modelo base completo.
+`Kalyanikalavani/Sd1.5lora` es un repositorio publicado en Hugging Face cuyo nombre sugiere un LoRA (adaptador de bajo rango) entrenado sobre Stable Diffusion 1.5, el modelo de difusion texto-a-imagen de 860 millones de parametros lanzado por Stability AI en 2022. El autor es el usuario Kalyanikalavani y la unica informacion verificable en el repositorio es la licencia Apache 2.0 y un tamano de 0.2 GB, coherente con el peso de un adaptador LoRA pequeno mas que con un modelo base completo.
 
 La model card no contiene descripcion, ejemplos, prompts de activacion ni datos de entrenamiento, y el repositorio no registra descargas ni interacciones. No es posible confirmar el pipeline declarado, los idiomas soportados ni el tipo exacto de adaptador (estilo, personaje, concepto o tecnica de difusion) a partir de la informacion disponible.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: se trata de un artefacto sin documentacion ni 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del adaptador ni sobre el proceso de entrenamiento. El nombre del repositorio apunta a un LoRA sobre Stable Diffusion 1.5, lo que implicaria un adaptador de bajo rango que modifica las capas de atencion o de proyeccion del UNet del modelo base, pero ni la model card ni los metadatos de HuggingFace confirman esta hipotesis.
+No hay informacion publicada sobre la arquitectura del adaptador ni sobre el proceso de entrenamiento. El nombre del repositorio apunta a un LoRA sobre Stable Diffusion 1.5, lo que implicaria un adaptador de bajo rango que modifica las capas de atencion o de proyeccion del UNet del modelo base, pero ni la model card ni los metadatos de Hugging Face confirman esta hipotesis.
 
 Se desconoce el dataset de entrenamiento, el numero de pasos, la tasa de aprendizaje, el rango del adaptador (dim/alpha), la resolucion de entrenamiento y si se aplicaron tecnicas como regularizacion por clase, captions automaticos o entrenamiento con DreamBooth. Tampoco consta si el adaptador incluye pesos de text encoder o solo del UNet.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kalyanikalavani/Sd1.5lora | no disponible (repo 0.2 GB) | adaptador LoRA sobre SD 1.5 (no confirmado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Kalyanikalavani/Sd1.5lora | no disponible (repo 0.2 GB) | adaptador LoRA sobre SD 1.5 (no confirmado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 (runwayml) | 860 M | modelo base texto-a-imagen | 512x512 nativo | CreativeML OpenRAIL-M | ampliamente disponible |
 | SDXL (Stability AI) | 3.5 B (UNet) | modelo base texto-a-imagen | 1024x1024 nativo | CreativeML OpenRAIL++-M | ampliamente disponible |
 | FLUX.1 [schnell] (Black Forest Labs) | 12 B | modelo base texto-a-imagen | alta resolucion | Apache 2.0 | ampliamente disponible |
@@ -80,7 +80,7 @@ La comparativa es estructural: el repositorio evaluado no es un modelo base sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kalyanikalavani/Sd1.5lora
+- Repositorio en Hugging Face: https://huggingface.co/Kalyanikalavani/Sd1.5lora
 - Modelo base de referencia (Stable Diffusion 1.5): https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Documentacion de `diffusers` para carga de LoRA: https://huggingface.co/docs/diffusers/main/en/tutorials/using_peft_for_inference
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

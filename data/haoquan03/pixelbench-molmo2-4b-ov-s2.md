@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s2
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-OV-s2
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Paper (preprint, arXiv TBA): https://haoquanzhang.github.io/pixelbench/

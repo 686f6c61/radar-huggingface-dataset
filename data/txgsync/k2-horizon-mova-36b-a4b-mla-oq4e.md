@@ -100,7 +100,7 @@ No se dispone de informacion sobre alternativas externas a esta familia (mismo t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/txgsync/K2-Horizon-MoVA-36B-A4B-MLA-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/txgsync/K2-Horizon-MoVA-36B-A4B-MLA-oQ4e
 - Modelo padre (MLA, BF16): https://huggingface.co/txgsync/K2-Horizon-MoVA-36B-A4B-MLA
 - Variante NanoSeedLM P4: https://huggingface.co/txgsync/K2-Horizon-MoVA-36B-A4B-MLA-NanoSeedLM-P4
 - Variante NanoSeedLM P3: https://huggingface.co/txgsync/K2-Horizon-MoVA-36B-A4B-MLA-NanoSeedLM-P3

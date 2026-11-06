@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-NSFW-uncensored es un ajuste fino publicado en HuggingFace por el usuario xzelphi sobre black-forest-labs/FLUX.1-dev, un modelo de difusion texto-a-imagen de 12.000 millones de parametros desarrollado por Black Forest Labs. El repositorio ocupa 0,7 GB y el codigo de ejemplo de la model card lo carga mediante `load_lora_weights`, por lo que se trata de un adaptador LoRA (o un conjunto de pesos compatible con ese flujo) y no de un modelo completo. Su proposito declarado es reducir las restricciones de censura del modelo base para explorar los limites tecnicos de la generacion de imagenes con IA.
+Flux-NSFW-uncensored es un ajuste fino publicado en Hugging Face por el usuario xzelphi sobre black-forest-labs/FLUX.1-dev, un modelo de difusion texto-a-imagen de 12.000 millones de parametros desarrollado por Black Forest Labs. El repositorio ocupa 0,7 GB y el codigo de ejemplo de la model card lo carga mediante `load_lora_weights`, por lo que se trata de un adaptador LoRA (o un conjunto de pesos compatible con ese flujo) y no de un modelo completo. Su proposito declarado es reducir las restricciones de censura del modelo base para explorar los limites tecnicos de la generacion de imagenes con IA.
 
 La relevancia de esta ficha es fundamentalmente tecnica y de evaluacion: permite estudiar como un adaptador de bajo rango modifica el comportamiento de seguridad de un modelo de difusion de gran tamano, y sirve como caso de prueba para sistemas de moderacion de contenido. El repositorio registra 0 descargas y 0 me gusta en el momento de la consulta, no incluye resultados de benchmarks y su model card no documenta ni el dataset de entrenamiento, ni el rango del LoRA, ni el numero de pasos de ajuste.
 
@@ -71,10 +71,10 @@ Los datos de las alternativas proceden de la documentacion publica de esos model
 
 | Modelo | Parametros | Codificadores de texto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| xzelphi/Flux-NSFW-uncensored | Adaptador sobre FLUX.1-dev (12.000 M) | T5-XXL + CLIP-L (heredados del base) | CreativeML OpenRAIL-M | HuggingFace, 0 descargas | Sin benchmarks ni documentacion de entrenamiento; orientado a contenido sin censura |
-| black-forest-labs/FLUX.1-dev | 12.000 M | T5-XXL + CLIP-L | FLUX.1-dev Non-Commercial License | HuggingFace | Modelo base; uso comercial restringido por licencia |
-| black-forest-labs/FLUX.1-schnell | 12.000 M | T5-XXL + CLIP-L | Apache 2.0 | HuggingFace | Variante destilada para pocos pasos de inferencia |
-| stabilityai/stable-diffusion-xl-base-1.0 | ~2.600 M (UNet) / ~3.500 M totales | CLIP ViT-L + OpenCLIP bigG | CreativeML OpenRAIL++-M | HuggingFace | Alternativa de menor tamano, mas rapida y con menor requisito de VRAM |
+| xzelphi/Flux-NSFW-uncensored | Adaptador sobre FLUX.1-dev (12.000 M) | T5-XXL + CLIP-L (heredados del base) | CreativeML OpenRAIL-M | Hugging Face, 0 descargas | Sin benchmarks ni documentacion de entrenamiento; orientado a contenido sin censura |
+| black-forest-labs/FLUX.1-dev | 12.000 M | T5-XXL + CLIP-L | FLUX.1-dev Non-Commercial License | Hugging Face | Modelo base; uso comercial restringido por licencia |
+| black-forest-labs/FLUX.1-schnell | 12.000 M | T5-XXL + CLIP-L | Apache 2.0 | Hugging Face | Variante destilada para pocos pasos de inferencia |
+| stabilityai/stable-diffusion-xl-base-1.0 | ~2.600 M (UNet) / ~3.500 M totales | CLIP ViT-L + OpenCLIP bigG | CreativeML OpenRAIL++-M | Hugging Face | Alternativa de menor tamano, mas rapida y con menor requisito de VRAM |
 | Otros LoRA de "uncensoring" sobre FLUX.1 | No disponible | No disponible | No disponible | No disponible | No se han verificado datos concretos en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ Los datos de las alternativas proceden de la documentacion publica de esos model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xzelphi/Flux-NSFW-uncensored
+- Modelo en Hugging Face: https://huggingface.co/xzelphi/Flux-NSFW-uncensored
 - Discusiones del repositorio: https://huggingface.co/xzelphi/Flux-NSFW-uncensored/discussions
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Guia de ejecucion local de Flux sin censura (ComfyUI y Forge): https://offlinecreator.com/tool/flux/for/uncensored

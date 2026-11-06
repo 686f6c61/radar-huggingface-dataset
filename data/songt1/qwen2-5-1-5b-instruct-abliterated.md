@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SonGT1/Qwen2.5-1.5B-Instruct-abliterated es una versión "abliterada" (con los mecanismos de rechazo eliminados) del modelo Qwen2.5-1.5B-Instruct de Alibaba/Qwen, publicada por el usuario SonGT1 en HuggingFace. El proceso de abliteration se ha realizado con la herramienta open source Heretic, que modifica los pesos del modelo para suprimir sus conductas de negación sin necesidad de reentrenamiento completo. Según la model card, la tasa de rechazo baja de 99/100 en el modelo base a 8/100 en la versión abliterada, con una divergencia KL de 0.0759 respecto al original.
+SonGT1/Qwen2.5-1.5B-Instruct-abliterated es una versión "abliterada" (con los mecanismos de rechazo eliminados) del modelo Qwen2.5-1.5B-Instruct de Alibaba/Qwen, publicada por el usuario SonGT1 en Hugging Face. El proceso de abliteration se ha realizado con la herramienta open source Heretic, que modifica los pesos del modelo para suprimir sus conductas de negación sin necesidad de reentrenamiento completo. Según la model card, la tasa de rechazo baja de 99/100 en el modelo base a 8/100 en la versión abliterada, con una divergencia KL de 0.0759 respecto al original.
 
 El modelo base, Qwen2.5-1.5B-Instruct, es un transformer decoder-only denso de aproximadamente 1.500 millones de parámetros, orientado a generación de texto conversacional y con buen soporte de instrucciones. La versión abliterada conserva esas capacidades pero genera contenido sin los filtros de seguridad originales. Es relevante para desarrolladores que necesitan un modelo pequeño, ejecutable en hardware de consumo, sin guardrails incorporados, por ejemplo para investigación en alineación, red-teaming o generación de contenido creativo sin restricciones. Su licencia Apache 2.0 permite uso comercial, aunque la responsabilidad legal del contenido generado recae íntegramente en el usuario final.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 - VRAM estimada para inferencia: con 1.500 millones de parametros, la version en FP16 requiere unos 3-4 GB de VRAM; en GGUF cuantizado (Q4/Q5/Q8) puede bajar a aproximadamente 1-2 GB. El repo completo ocupa 4,7 GB.
 - GPU recomendadas: cualquier GPU de consumo con 4 GB de VRAM o mas es suficiente (RTX 3060, RTX 4060, RTX 4090 con margen sobrado). No se requiere hardware de centro de datos.
 - Consumer GPUs: si cabe con holgura; incluso puede ejecutarse solo en CPU gracias al formato GGUF, con velocidades razonables dado su tamaño reducido.
-- Opciones de despliegue: llama.cpp y Ollama (via GGUF), vLLM, TGI o los endpoints de HuggingFace (el modelo esta marcado como endpoints_compatible).
+- Opciones de despliegue: llama.cpp y Ollama (via GGUF), vLLM, TGI o los endpoints de Hugging Face (el modelo esta marcado como endpoints_compatible).
 - Latencia y throughput: no disponibles en la informacion proporcionada; al ser un modelo de 1,5B, se esperan latencias bajas y throughput alto incluso en hardware modesto.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SonGT1/Qwen2.5-1.5B-Instruct-abliterated
+- Modelo en Hugging Face: https://huggingface.co/SonGT1/Qwen2.5-1.5B-Instruct-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Herramienta de abliteration Heretic: https://github.com/p-e-w/heretic

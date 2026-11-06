@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks de calidad que permitan comparar el rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/Qwen3-1.7B-krafla
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/Qwen3-1.7B-krafla
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Runtime Krafla: https://github.com/JonPark0/krafla
 - Releases de Krafla: https://github.com/JonPark0/krafla/releases

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jayden-jones/beit-finetuned` es un repositorio de HuggingFace que contiene una implementación funcional de BeiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de clasificación, publicada por el usuario jayden-jones bajo licencia MIT. Pese al sufijo "finetuned" del identificador, la propia model card aclara que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado con benchmarks. El repositorio no declara ningún resultado de rendimiento y su autor indica explícitamente que las afirmaciones de benchmark se omiten de forma deliberada.
+`jayden-jones/beit-finetuned` es un repositorio de Hugging Face que contiene una implementación funcional de BeiT (Bidirectional Encoder representation from Image Transformers) orientada a tareas de clasificación, publicada por el usuario jayden-jones bajo licencia MIT. Pese al sufijo "finetuned" del identificador, la propia model card aclara que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado con benchmarks. El repositorio no declara ningún resultado de rendimiento y su autor indica explícitamente que las afirmaciones de benchmark se omiten de forma deliberada.
 
 El elemento diferencial del repositorio no es el modelo en sí, sino el código: incluye un fichero `eval.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados y un `training_args.json` con la receta de experimento por defecto. La configuración declarada corresponde a una escala "huge" con atención dilatada, fusión tipo tucker, activación gelu tanh y normalización rmsnorm, lo que se aparta de la arquitectura BeiT estándar y sugiere una implementación personalizada en lugar de una copia directa de los pesos oficiales de Microsoft.
 
-La relevancia de esta ficha es fundamentalmente práctica y de advertencia: los metadatos de safetensors reportan 16.576 parámetros totales, una cifra incompatible con cualquier configuración "huge" de BeiT (que en su variante oficial ronda los cientos de millones de parámetros) y coherente con un tensor de inicialización mínimo. Cualquier uso en producción requeriría un entrenamiento previo y una validación completa por parte del usuario, además de un adaptador explícito, ya que las API genéricas de carga automática de HuggingFace no reconocen esta implementación al no declarar la etiqueta `pipeline`.
+La relevancia de esta ficha es fundamentalmente práctica y de advertencia: los metadatos de safetensors reportan 16.576 parámetros totales, una cifra incompatible con cualquier configuración "huge" de BeiT (que en su variante oficial ronda los cientos de millones de parámetros) y coherente con un tensor de inicialización mínimo. Cualquier uso en producción requeriría un entrenamiento previo y una validación completa por parte del usuario, además de un adaptador explícito, ya que las API genéricas de carga automática de Hugging Face no reconocen esta implementación al no declarar la etiqueta `pipeline`.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Parámetros | Tarea principal | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|---|
-| jayden-jones/beit-finetuned | BeiT personalizado (atención dilatada, fusión tucker, RMSNorm) | 16.576 (checkpoint de inicialización) | Clasificación | MIT | Repositorio HuggingFace, 0 descargas |
+| jayden-jones/beit-finetuned | BeiT personalizado (atención dilatada, fusión tucker, RMSNorm) | 16.576 (checkpoint de inicialización) | Clasificación | MIT | Repositorio Hugging Face, 0 descargas |
 | BEiT-base (Microsoft) | BeiT estándar | ~86 M | Clasificación de imágenes, preentrenamiento con masked image modeling | MIT | Pesos preentrenados públicos |
 | BEiT-large (Microsoft) | BeiT estándar | ~304 M | Clasificación de imágenes, preentrenamiento con masked image modeling | MIT | Pesos preentrenados públicos |
 | ViT-base | Vision Transformer | ~86 M | Clasificación de imágenes | Apache 2.0 (según variante) | Pesos preentrenados públicos |
@@ -87,11 +87,11 @@ La comparación es estructural y no de rendimiento: no existen datos de benchmar
 - El modelo no ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, según reconoce el propio autor.
 - Existe una incoherencia documentada entre la escala declarada ("huge") y el recuento de parámetros del safetensors (16.576), lo que debe tratarse como un indicio de que el artefacto publicado no corresponde a un modelo de esa escala.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de interpretar erróneamente las métricas si alguien evalúa el modelo sin entrenarlo antes.
-- Las API de carga automática de HuggingFace requieren un adaptador explícito; intentar cargarlo como un modelo BeiT estándar puede fallar o producir resultados silenciosamente incorrectos.
+- Las API de carga automática de Hugging Face requieren un adaptador explícito; intentar cargarlo como un modelo BeiT estándar puede fallar o producir resultados silenciosamente incorrectos.
 - Restricciones de licencia: la licencia MIT del repositorio es permisiva y permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos de origen cuando se use con conjuntos de datos externos. Una licencia MIT sobre el código no concede derechos sobre datos de terceros.
 - Antes de cualquier uso en producción sería necesario entrenar el modelo, documentar los resultados de ese entrenamiento de forma separada a los valores por defecto del repositorio y validar con al menos tres semillas y una línea base de capacidad equivalente.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jayden-jones/beit-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/jayden-jones/beit-finetuned
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo, a su paper o a demos asociadas. Los resultados devueltos por la búsqueda corresponden a artículos periodísticos en hindi sobre avicultura y no guardan relación con este repositorio.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `Xiaolihai/etd-policy-rl-only-sufficiency` no es un modelo completo, sino un adaptador LoRA publicado con la libreria PEFT sobre el modelo base Qwen3-8B. El repositorio ocupa 0,5 GB, lo que es coherente con pesos de adaptador (y no con un checkpoint completo de 8B en precision completa), y la etiqueta de pipeline es `text-generation` con capacidades declaradas conversacionales. El autor es el usuario de HuggingFace "Xiaolihai" y el adaptador no registra descargas ni likes en el momento de redactar esta ficha.
+El modelo identificado como `Xiaolihai/etd-policy-rl-only-sufficiency` no es un modelo completo, sino un adaptador LoRA publicado con la libreria PEFT sobre el modelo base Qwen3-8B. El repositorio ocupa 0,5 GB, lo que es coherente con pesos de adaptador (y no con un checkpoint completo de 8B en precision completa), y la etiqueta de pipeline es `text-generation` con capacidades declaradas conversacionales. El autor es el usuario de Hugging Face "Xiaolihai" y el adaptador no registra descargas ni likes en el momento de redactar esta ficha.
 
-La informacion publicada es minima: la model card es la plantilla por defecto de HuggingFace con practicamente todos los campos marcados como "[More Information Needed]", y no se declaran licencia ni idiomas soportados. Esto significa que las unicas especificaciones verificables son las heredadas del modelo base y los metadatos del repositorio. El nombre del adaptador sugiere un experimento de aprendizaje por refuerzo (RL) orientado a una politica de "suficiencia" sobre un modelo base ya alineado, pero se trata de una inferencia a partir del identificador, no de un dato confirmado por el autor.
+La informacion publicada es minima: la model card es la plantilla por defecto de Hugging Face con practicamente todos los campos marcados como "[More Information Needed]", y no se declaran licencia ni idiomas soportados. Esto significa que las unicas especificaciones verificables son las heredadas del modelo base y los metadatos del repositorio. El nombre del adaptador sugiere un experimento de aprendizaje por refuerzo (RL) orientado a una politica de "suficiencia" sobre un modelo base ya alineado, pero se trata de una inferencia a partir del identificador, no de un dato confirmado por el autor.
 
 Su relevancia es por tanto limitada y de caracter experimental: resulta util como ejemplo de publicacion de adaptadores PEFT, como posible punto de partida para reproducir experimentos de RL sobre Qwen3-8B, o como caso de estudio de model cards incompletas. No es un modelo recomendable para produccion sin una evaluacion previa por parte del equipo que lo vaya a integrar.
 
@@ -47,7 +47,7 @@ Arquitecturalmente, el artefacto es un conjunto de matrices de bajo rango que se
 - Investigacion sobre politicas de "suficiencia" en generacion de respuestas: el nombre del repositorio sugiere un experimento sobre cuando un modelo considera suficiente una respuesta; puede servir como referencia para estudiar la evolucion de ese comportamiento.
 - Analisis de regresiones por ajuste fino: permite medir cuanto se degradan capacidades del base (codigo, matematicas, multilingue) tras un ajuste con RL de un solo objetivo, un caso frecuente de "catastrofic forgetting" en adaptadores pequenos.
 - Evaluacion de infraestructura de adaptadores: util para probar el soporte de LoRA en vLLM, TGI o PEFT en un pipeline de despliegue multipropietario sobre un unico Qwen3-8B en memoria.
-- Docencia y formacion: sirve como ejemplo practico de como publicar (y de como no documentar) un adaptador PEFT en HuggingFace, ilustrando el impacto de una model card vacia en la evaluacion de terceros.
+- Docencia y formacion: sirve como ejemplo practico de como publicar (y de como no documentar) un adaptador PEFT en Hugging Face, ilustrando el impacto de una model card vacia en la evaluacion de terceros.
 - Base para un ajuste posterior: el adaptador puede emplearse como punto de partida de un nuevo entrenamiento (por ejemplo, con DPO o SFT) si el equipo valida primero que su comportamiento base es aceptable.
 - Uso conversacional directo en produccion: no recomendado con la informacion disponible, dado que no hay licencia, idiomas, evaluaciones ni garantias de calidad declaradas.
 
@@ -74,10 +74,10 @@ La comparacion directa es dificil porque el artefacto es un adaptador y no un mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Xiaolihai/etd-policy-rl-only-sufficiency` (adaptador) | No disponible (0,5 GB de pesos LoRA sobre base de 8B) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-8B (modelo base) | Aproximadamente 8B densos | 32.768 tokens nativos, 131.072 con YaRN | Publicado en la documentacion de Qwen3; no reproducido aqui | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B Instruct | 8B densos | 128.000 tokens | Publicado por Meta | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente distribuido |
-| Mistral 7B Instruct | 7B densos | 32.000 tokens | Publicado por Mistral AI | Apache 2.0 | HuggingFace, ampliamente distribuido |
+| `Xiaolihai/etd-policy-rl-only-sufficiency` (adaptador) | No disponible (0,5 GB de pesos LoRA sobre base de 8B) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-8B (modelo base) | Aproximadamente 8B densos | 32.768 tokens nativos, 131.072 con YaRN | Publicado en la documentacion de Qwen3; no reproducido aqui | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B Instruct | 8B densos | 128.000 tokens | Publicado por Meta | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente distribuido |
+| Mistral 7B Instruct | 7B densos | 32.000 tokens | Publicado por Mistral AI | Apache 2.0 | Hugging Face, ampliamente distribuido |
 
 No se dispone de datos de rendimiento del adaptador que permitan afirmar si mejora o degrada al base en alguna tarea concreta. Cualquier eleccion entre estas opciones deberia basarse en una evaluacion propia sobre el caso de uso objetivo.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento del adaptador que permitan afirmar si mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xiaolihai/etd-policy-rl-only-sufficiency
+- Modelo en Hugging Face: https://huggingface.co/Xiaolihai/etd-policy-rl-only-sufficiency
 - Modelo base referenciado (Qwen3-8B): https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700

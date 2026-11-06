@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43` es un archivo versionado de checkpoint (fleet archive) publicado por el usuario `davidwdw` en HuggingFace. Segun la propia model card, se trata de un paquete de tipo "params+train_state+assets", es decir, contiene pesos del modelo, estado del entrenamiento (optimizador, scheduler, etc.) y activos auxiliares. El autor advierte explicitamente que es una instantanea inmutable ("snapshot, not a live directory mirror") y recomienda verificar la suma de comprobacion SHA256SUMS antes de su uso.
+El repositorio `davidwdw/fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43` es un archivo versionado de checkpoint (fleet archive) publicado por el usuario `davidwdw` en Hugging Face. Segun la propia model card, se trata de un paquete de tipo "params+train_state+assets", es decir, contiene pesos del modelo, estado del entrenamiento (optimizador, scheduler, etc.) y activos auxiliares. El autor advierte explicitamente que es una instantanea inmutable ("snapshot, not a live directory mirror") y recomienda verificar la suma de comprobacion SHA256SUMS antes de su uso.
 
 No se proporciona informacion sobre que modelo subyacente contiene el checkpoint. El nombre de la receta canonica (`2026-09-19_pi05_libero_alphabet_soup_lora`) sugiere, como mera inferencia a partir de la nomenclatura y sin confirmacion por parte del autor, un entrenamiento mediante LoRA sobre un modelo de la familia pi0/pi0.5 aplicado a la tarea de manipulacion robotica Libero, pero esto no puede verificarse con los datos disponibles.
 
@@ -82,5 +82,5 @@ No disponible. No se dispone de informacion sobre el modelo subyacente ni sobre 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43
+- Repositorio Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-h20-limx-7f03aa7d06a00a8c-265fa9321f43
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-ckpt-t00-codegen-prepressfix-67999-6f98634d8e27

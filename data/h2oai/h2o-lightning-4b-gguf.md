@@ -23,7 +23,7 @@ Según la información disponible, el modelo base maneja una ventana de contexto
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer de aproximadamente 4,2 mil millones de parámetros orientado a decisiones estructuradas, taggeado en HuggingFace como `decision-model`. Esta variante GGUF emplea pesos con el adaptador de decisión ya fusionado, lo que implica una diferencia funcional importante: los archivos no permiten recuperar el modelo base original desactivando dicho adaptador. El entrenamiento y los benchmarks generales se describen en la model card del modelo base, no en este paquete.
+El modelo base es un transformer de aproximadamente 4,2 mil millones de parámetros orientado a decisiones estructuradas, taggeado en Hugging Face como `decision-model`. Esta variante GGUF emplea pesos con el adaptador de decisión ya fusionado, lo que implica una diferencia funcional importante: los archivos no permiten recuperar el modelo base original desactivando dicho adaptador. El entrenamiento y los benchmarks generales se describen en la model card del modelo base, no en este paquete.
 
 La innovación técnica del paquete reside en el runtime de decisión sobre llama.cpp y en el shim asociado. Este aplica la normalización obligatoria del tokenizador Qwen2/NFC y gestiona el escapado de cadenas de control reservadas. El despliegue nativo utiliza llama.cpp fijado en el commit `10a60cf303566e10d6a7a2774c17d2085503d87b`, con verificación de procedencia y 24 sondas de tokenizador. La inferencia funciona con una sola ranura de 40.960 tokens, de modo que las peticiones concurrentes se encolan en serie. Existe además un modo cliente opcional (`reasoned`) que añade hasta 256 tokens de análisis antes de repetir la decisión; se trata de inferencia adicional, no de aprendizaje.
 
@@ -33,7 +33,7 @@ La innovación técnica del paquete reside en el runtime de decisión sobre llam
 - Clasificación y enrutado: los 3.474 requests de enrutado de la comparativa de 4.074 peticiones fueron válidos.
 - Visión en modo rápido: mediante el proyector opcional (0,67 GB) y la bandera `--experimental-images`, permite decisiones sobre imágenes. El modo razonado es solo texto.
 - Modo razonado (texto): añade hasta 256 tokens de análisis antes de repetir la decisión, mejorando la precisión en el conjunto de prueba interno.
-- Despliegue local nativo: se ejecuta sobre llama.cpp en CPU o CUDA, sin necesidad de login en HuggingFace.
+- Despliegue local nativo: se ejecuta sobre llama.cpp en CPU o CUDA, sin necesidad de login en Hugging Face.
 - API compatible con endpoints: el tag `endpoints_compatible` indica integración con infraestructura HTTP estándar; el shim emite respuestas en `http://127.0.0.1:8761/v1/systemone`.
 - Conversacional: etiquetado como `conversational`, aunque el chat ordinario con estos GGUF no implementa la API de decisión.
 
@@ -84,9 +84,9 @@ Comparativa ampliada de 4.074 peticiones de texto: llama.cpp BF16 y Q8_0 coincid
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| h2oai/h2o-lightning-4b-gguf | 4,2 mil millones | 40.960 tokens por ranura en llama.cpp (base hasta 262.144) | JevBench: 205/231 BF16, 204/231 Q8_0; imágenes 30/30 en fixture de desarrollo | Apache 2.0 | GGUF en HuggingFace, runtime llama.cpp propio |
+| h2oai/h2o-lightning-4b-gguf | 4,2 mil millones | 40.960 tokens por ranura en llama.cpp (base hasta 262.144) | JevBench: 205/231 BF16, 204/231 Q8_0; imágenes 30/30 en fixture de desarrollo | Apache 2.0 | GGUF en Hugging Face, runtime llama.cpp propio |
 | vLLM BF16 (referencia del propio autor) | 4,2 mil millones | No disponible | JevBench: 204/231 (88,31%), mediana 29,6 ms | No disponible | Referencia interna de comparación |
-| h2oai/h2o-lightning-4b (modelo base) | 4,2 mil millones | 262.144 tokens (según fuente externa) | No disponible en detalle | Apache 2.0 | Peso original en HuggingFace |
+| h2oai/h2o-lightning-4b (modelo base) | 4,2 mil millones | 262.144 tokens (según fuente externa) | No disponible en detalle | Apache 2.0 | Peso original en Hugging Face |
 | Otras conversiones GGUF de la familia Lightning 4B | No disponible | No disponible | No disponible | No disponible | Repositorios de terceros (por ejemplo, mradermacher), sin verificación de autor |
 
 ## Limitaciones y advertencias

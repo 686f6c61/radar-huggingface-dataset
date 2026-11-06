@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoidVansh/shivaay-qwen3-4b-identity-v3 es un adaptador LoRA publicado en HuggingFace por el usuario VoidVansh, construido sobre el modelo richardyoung/Qwen3-4B-Instruct-2507-heretic. Se distribuye exclusivamente como pesos de adaptador (formato PEFT/safetensors, 0,3 GB de repositorio), no como modelo completo: para ejecutarlo hay que cargar el modelo base y aplicar el adaptador. La model card es la plantilla por defecto de HuggingFace y no ha sido cumplimentada, por lo que el autor no documenta datos de entrenamiento, hiperparametros, dataset ni evaluacion.
+VoidVansh/shivaay-qwen3-4b-identity-v3 es un adaptador LoRA publicado en Hugging Face por el usuario VoidVansh, construido sobre el modelo richardyoung/Qwen3-4B-Instruct-2507-heretic. Se distribuye exclusivamente como pesos de adaptador (formato PEFT/safetensors, 0,3 GB de repositorio), no como modelo completo: para ejecutarlo hay que cargar el modelo base y aplicar el adaptador. La model card es la plantilla por defecto de Hugging Face y no ha sido cumplimentada, por lo que el autor no documenta datos de entrenamiento, hiperparametros, dataset ni evaluacion.
 
 El nombre del repositorio ("identity") sugiere un ajuste orientado a modificar la identidad o el estilo de respuesta del modelo base, un caso de uso habitual en adaptadores LoRA de bajo rango, pero esta interpretacion no esta confirmada por ninguna documentacion oficial. El modelo base pertenece a la familia Qwen3-4B-Instruct-2507 en su variante "heretic" (abliterated, es decir, con las capas de rechazo mitigadas), de la que hereda arquitectura, tokenizador y ventana de contexto.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|---|
-| VoidVansh/shivaay-qwen3-4b-identity-v3 | Adaptador LoRA | no disponible (base ~4B) | no disponible | no disponible | HuggingFace, 9 descargas | Ninguno |
-| richardyoung/Qwen3-4B-Instruct-2507-heretic | Modelo completo (base) | ~4B (segun denominacion) | no disponible en esta informacion | no disponible en esta informacion | HuggingFace | No verificados en esta informacion |
-| Familia Qwen3-4B-Instruct-2507 (original) | Modelo completo | ~4B (segun denominacion) | no disponible en esta informacion | no disponible en esta informacion | HuggingFace | No verificados en esta informacion |
+| VoidVansh/shivaay-qwen3-4b-identity-v3 | Adaptador LoRA | no disponible (base ~4B) | no disponible | no disponible | Hugging Face, 9 descargas | Ninguno |
+| richardyoung/Qwen3-4B-Instruct-2507-heretic | Modelo completo (base) | ~4B (segun denominacion) | no disponible en esta informacion | no disponible en esta informacion | Hugging Face | No verificados en esta informacion |
+| Familia Qwen3-4B-Instruct-2507 (original) | Modelo completo | ~4B (segun denominacion) | no disponible en esta informacion | no disponible en esta informacion | Hugging Face | No verificados en esta informacion |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable: no hay benchmarks publicados de este adaptador ni cifras verificadas del modelo base en la informacion proporcionada. Cualquier comparacion de rendimiento seria especulativa.
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable: no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoidVansh/shivaay-qwen3-4b-identity-v3
+- Modelo en Hugging Face: https://huggingface.co/VoidVansh/shivaay-qwen3-4b-identity-v3
 - Modelo base: https://huggingface.co/richardyoung/Qwen3-4B-Instruct-2507-heretic
 - Paper citado en la plantilla (estimacion de emisiones, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada: https://mlco2.github.io/impact

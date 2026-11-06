@@ -60,5 +60,5 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-3bit
+- Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-3bit
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

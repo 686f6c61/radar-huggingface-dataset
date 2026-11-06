@@ -67,5 +67,5 @@ No se dispone de datos de comparación con otros modelos. El modelo base Qwen/Qw
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-high.maxrl-frontier-midpoint](https://huggingface.co/agentic-ptb/sol-high.maxrl-frontier-midpoint)
+- [Hugging Face: agentic-ptb/sol-high.maxrl-frontier-midpoint](https://huggingface.co/agentic-ptb/sol-high.maxrl-frontier-midpoint)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

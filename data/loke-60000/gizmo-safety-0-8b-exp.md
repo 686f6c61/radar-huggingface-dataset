@@ -99,10 +99,10 @@ Enrutamiento y decisiones:
 
 | Modelo | Parámetros | Contexto | Modalidad | F1 Aegis 2.0 (prompts) | F1 ToxicChat | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| gizmo-safety-0.8b-exp | 0,87 B | 3072 tokens (config. de uso) | Texto + imagen | 87,2 | 75,9 | Apache 2.0 | HuggingFace, experimental |
-| Shieldstral 3B | 3 B | no disponible | Solo texto | 85,1 | 84,1 | no disponible | HuggingFace |
-| Qwen3Guard 4B | 4 B | no disponible | Solo texto | 82,2 | no disponible | no disponible | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,87 B | no disponible | Texto (+ imagen vía fine-tune) | no aplica (modelo generativo) | no aplica | Apache 2.0 | HuggingFace |
+| gizmo-safety-0.8b-exp | 0,87 B | 3072 tokens (config. de uso) | Texto + imagen | 87,2 | 75,9 | Apache 2.0 | Hugging Face, experimental |
+| Shieldstral 3B | 3 B | no disponible | Solo texto | 85,1 | 84,1 | no disponible | Hugging Face |
+| Qwen3Guard 4B | 4 B | no disponible | Solo texto | 82,2 | no disponible | no disponible | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,87 B | no disponible | Texto (+ imagen vía fine-tune) | no aplica (modelo generativo) | no aplica | Apache 2.0 | Hugging Face |
 
 Frente a GPT-4 y GPT-4o como enrutadores, el modelo iguala prácticamente sus cifras (84,2 % frente a 84,0 % en RouterBench; 88,3 % frente a 88,2 % en SPROUT) con tres órdenes de magnitud menos de parámetros, a costa de estar limitado al inglés y de no ser un modelo de propósito general.
 
@@ -122,7 +122,7 @@ Frente a GPT-4 y GPT-4o como enrutadores, el modelo iguala prácticamente sus ci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Loke-60000/gizmo-safety-0.8b-exp
+- Modelo en Hugging Face: https://huggingface.co/Loke-60000/gizmo-safety-0.8b-exp
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Repositorio de Unsloth (librería y API `FastDecisionModel`): https://github.com/unslothai/unsloth
 - Informe de Qwen3Guard citado en la model card (fuente de parte de las cifras comparativas): arXiv 2510.14276

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-w2v-bert-2.0-yoruba-asr es un modelo de reconocimiento automatico del habla (ASR) obtenido mediante fine-tuning de facebook/w2v-bert-2.0, el modelo preentrenado multilingue de Meta basado en la combinacion de Wav2Vec 2.0 y arquitectura BERT para representaciones de audio. Lo publica el usuario olawale-ahmed en HuggingFace y esta orientado especificamente al yoruba, una lengua nigero-congolesa hablada por mas de 45 millones de personas principalmente en Nigeria y Benin.
+w2v-bert-2.0-yoruba-asr es un modelo de reconocimiento automatico del habla (ASR) obtenido mediante fine-tuning de facebook/w2v-bert-2.0, el modelo preentrenado multilingue de Meta basado en la combinacion de Wav2Vec 2.0 y arquitectura BERT para representaciones de audio. Lo publica el usuario olawale-ahmed en Hugging Face y esta orientado especificamente al yoruba, una lengua nigero-congolesa hablada por mas de 45 millones de personas principalmente en Nigeria y Benin.
 
 El modelo resuelve la transcripcion de audio a texto en yoruba, un idioma con recursos limitados en comparacion con lenguas europeas, donde los sistemas ASR comerciales suelen tener un rendimiento pobre. Con 605,7 millones de parametros, el modelo parte de un backbone preentrenado con cientos de miles de horas de audio multilingue y anade una cabeza de clasificacion CTC ajustada al vocabulario del yoruba.
 
@@ -25,7 +25,7 @@ Es relevante ahora porque el ecosistema de modelos ASR especificos para lenguas 
 
 El modelo hereda la arquitectura W2v-BERT de facebook/w2v-bert-2.0: un encoder transformer que combina el preentrenamiento contrastivo de Wav2Vec 2.0 con el enmascarado tipo BERT sobre representaciones de audio discretizadas. Sobre este backbone se anade una cabeza lineal de clasificacion CTC para producir secuencias de tokens a partir de las representaciones acusticas. El checkpoint final contiene 605,7 millones de parametros, coherente con el tamano del modelo base.
 
-El fine-tuning se realizo con el Trainer de HuggingFace usando AdamW con betas (0,9; 0,999), learning rate de 5e-5, scheduler lineal con 500 pasos de warmup, batch efectivo de 32 (batch de 8 con 4 pasos de acumulacion), precision mixta nativa AMP, semilla 42 y 10 epocas configuradas. El entrenamiento se detuvo en el paso 900 (epoca 0,4729), lo que sugiere early stopping o un limite de pasos. No se especifica el dataset de entrenamiento ni su composicion, ni si hubo aumentacion de datos o tecnicas de regularizacion adicionales. Las versiones de framework son Transformers 5.20.2, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
+El fine-tuning se realizo con el Trainer de Hugging Face usando AdamW con betas (0,9; 0,999), learning rate de 5e-5, scheduler lineal con 500 pasos de warmup, batch efectivo de 32 (batch de 8 con 4 pasos de acumulacion), precision mixta nativa AMP, semilla 42 y 10 epocas configuradas. El entrenamiento se detuvo en el paso 900 (epoca 0,4729), lo que sugiere early stopping o un limite de pasos. No se especifica el dataset de entrenamiento ni su composicion, ni si hubo aumentacion de datos o tecnicas de regularizacion adicionales. Las versiones de framework son Transformers 5.20.2, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3.
 
 ## Capacidades
 
@@ -76,10 +76,10 @@ El model-index no contiene resultados adicionales (lista vacia). No se han publi
 
 | Modelo | Parametros | Contexto / entrada | WER yoruba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olawale-ahmed/w2v-bert-2.0-yoruba-asr | 605,7 M | segmentos de audio (tipico 30 s) | 0,4719 (conjunto no especificado) | MIT | HuggingFace |
-| facebook/w2v-bert-2.0 | ~580 M (modelo base) | segmentos de audio | no disponible (multilingue, no especifico de yoruba) | MIT | HuggingFace |
-| facebook/mms-1b-all | ~1 B (adaptadores por idioma) | segmentos de audio | no disponible en la informacion proporcionada | CC-BY-NC 4.0 | HuggingFace |
-| openai/whisper-large-v3 | ~1,55 B | 30 s | no disponible en la informacion proporcionada | MIT | HuggingFace |
+| olawale-ahmed/w2v-bert-2.0-yoruba-asr | 605,7 M | segmentos de audio (tipico 30 s) | 0,4719 (conjunto no especificado) | MIT | Hugging Face |
+| facebook/w2v-bert-2.0 | ~580 M (modelo base) | segmentos de audio | no disponible (multilingue, no especifico de yoruba) | MIT | Hugging Face |
+| facebook/mms-1b-all | ~1 B (adaptadores por idioma) | segmentos de audio | no disponible en la informacion proporcionada | CC-BY-NC 4.0 | Hugging Face |
+| openai/whisper-large-v3 | ~1,55 B | 30 s | no disponible en la informacion proporcionada | MIT | Hugging Face |
 
 La comparacion con Whisper y MMS se ofrece como referencia de categoria ASR multilingue; no se dispone de cifras de WER en yoruba para esos modelos en la informacion proporcionada, por lo que no se pueden establecer comparaciones numericas directas.
 
@@ -97,7 +97,7 @@ La comparacion con Whisper y MMS se ofrece como referencia de categoria ASR mult
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olawale-ahmed/w2v-bert-2.0-yoruba-asr
+- Modelo en Hugging Face: https://huggingface.co/olawale-ahmed/w2v-bert-2.0-yoruba-asr
 - Modelo base: https://huggingface.co/facebook/w2v-bert-2.0
 - Paper de W2v-BERT (Meta AI): https://arxiv.org/abs/2108.06209
 - Repositorio Transformers (pipeline ASR): https://github.com/huggingface/transformers

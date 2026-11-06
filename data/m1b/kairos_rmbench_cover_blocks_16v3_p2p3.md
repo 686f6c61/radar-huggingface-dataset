@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`m1b/kairos_rmbench_cover_blocks_16v3_p2p3` es un checkpoint de investigacion publicado en HuggingFace por el usuario `m1b`. Por la informacion disponible, se trata de un artefacto de entrenamiento y no de un modelo con model card descriptiva: el README se limita a indicar la rama de trabajo (`research-marina/v16.3_memory_tokens`) y a describir el contenido del repositorio, que se organiza en dos carpetas (`p2/` y `p3/`) con pesos finales y metadatos de ejecucion.
+`m1b/kairos_rmbench_cover_blocks_16v3_p2p3` es un checkpoint de investigacion publicado en Hugging Face por el usuario `m1b`. Por la informacion disponible, se trata de un artefacto de entrenamiento y no de un modelo con model card descriptiva: el README se limita a indicar la rama de trabajo (`research-marina/v16.3_memory_tokens`) y a describir el contenido del repositorio, que se organiza en dos carpetas (`p2/` y `p3/`) con pesos finales y metadatos de ejecucion.
 
 Los unicos datos de entrenamiento documentados son el numero de GPUs y de pasos de cada ejecucion: `p2/` con 8 GPUs y 2.000 pasos, y `p3/` con 8 GPUs y 1.000 pasos. El repositorio ocupa 18,5 GB en total, lo que incluye los pesos de ambas ejecuciones y sus metadatos. No se especifica arquitectura, modelo base, numero de parametros, longitud de contexto ni composicion del dataset.
 
@@ -82,8 +82,8 @@ No disponible. La model card no identifica el modelo base ni la familia a la que
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/m1b/kairos_rmbench_cover_blocks_16v3_p2p3
+- Repositorio en Hugging Face: https://huggingface.co/m1b/kairos_rmbench_cover_blocks_16v3_p2p3
 - Paper o publicacion tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/m1b
+- Perfil del autor en Hugging Face: https://huggingface.co/m1b

@@ -4,7 +4,7 @@
 
 Bunkir2004/qwen3vl-4b-target-visual-ssc-shared-codebook es un adaptador de ajuste fino (LoRA, libreria PEFT) construido sobre el modelo multimodal Qwen/Qwen3-VL-4B-Instruct. No se trata de un modelo completo, sino de un conjunto de pesos incrementales que deben cargarse junto al modelo base para funcionar. El repositorio ocupa 0,3 GB y contiene unicamente pesos en formato safetensors, lo que es coherente con un adaptador y no con un modelo de 4.000 millones de parametros en precision completa (que rondaria los 8 GB).
 
-El autor es el usuario de HuggingFace Bunkir2004 y la model card publicada es la plantilla generica de HuggingFace sin rellenar: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "More Information Needed". El identificador del repositorio sugiere un trabajo sobre representaciones visuales y codebooks compartidos, pero no existe documentacion tecnica publicada que lo confirme.
+El autor es el usuario de Hugging Face Bunkir2004 y la model card publicada es la plantilla generica de Hugging Face sin rellenar: todos los apartados relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) figuran como "More Information Needed". El identificador del repositorio sugiere un trabajo sobre representaciones visuales y codebooks compartidos, pero no existe documentacion tecnica publicada que lo confirme.
 
 La relevancia actual del artefacto deriva de su modelo base: la familia Qwen3-VL, presentada por el equipo Qwen como su generacion de modelos vision-lenguaje mas capaz hasta la fecha, con variantes densas (2B/4B/8B/32B) y MoE (30B-A3B/235B-A22B) y soporte nativo de contextos intercalados de hasta 256K tokens con texto, imagen y video. Este adaptador concreto, sin embargo, debe considerarse un experimento de investigacion sin validar: cero descargas, cero "likes" y ausencia total de resultados publicados.
 
@@ -76,10 +76,10 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (4B 
 | Modelo | Parametros | Contexto | Licencia | Tipo | Disponibilidad |
 |---|---|---|---|---|---|
 | Bunkir2004/qwen3vl-4b-target-visual-ssc-shared-codebook | Adaptador LoRA sobre 4B | No disponible (base: hasta 256K) | No disponible | Adaptador PEFT | Repositorio publico, 0 descargas |
-| Qwen/Qwen3-VL-4B-Thinking | 4B (denso) | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal completo | Publico en HuggingFace |
-| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B (denso) | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal completo | Publico en HuggingFace |
-| Qwen3-VL-8B (variante densa de la familia) | 8B (denso) | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal completo | Publico en HuggingFace |
-| Qwen3-VL-30B-A3B (variante MoE de la familia) | 30B totales, 3B activos | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal MoE | Publico en HuggingFace |
+| Qwen/Qwen3-VL-4B-Thinking | 4B (denso) | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal completo | Publico en Hugging Face |
+| Qwen/Qwen3-VL-4B-Instruct (modelo base) | 4B (denso) | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal completo | Publico en Hugging Face |
+| Qwen3-VL-8B (variante densa de la familia) | 8B (denso) | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal completo | Publico en Hugging Face |
+| Qwen3-VL-30B-A3B (variante MoE de la familia) | 30B totales, 3B activos | Hasta 256K en la familia Qwen3-VL | No disponible en la informacion recopilada | Modelo multimodal MoE | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion recopilada, por lo que la comparativa se limita a arquitectura, tamano, contexto declarado y disponibilidad.
 
@@ -92,14 +92,14 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 - Sesgos: no documentados. El autor no reporta analisis de sesgos ni de subgrupos.
 - Limitaciones de contexto e idioma: no disponibles. No se confirma que el adaptador conserve la ventana de 256K tokens del modelo base ni su cobertura multilingue.
 - Discrepancia de metadatos: el pipeline declarado es text-generation pese a que el modelo base es multimodal, lo que puede complicar la integracion automatica en algunos runtimes.
-- Tag de arXiv 1910.09700: corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono y es un residuo de la plantilla de HuggingFace, no una referencia tecnica del modelo. No debe interpretarse como paper del autor.
+- Tag de arXiv 1910.09700: corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono y es un residuo de la plantilla de Hugging Face, no una referencia tecnica del modelo. No debe interpretarse como paper del autor.
 - Reproducibilidad: el repositorio contiene unicamente pesos. Sin el codigo de entrenamiento ni la definicion del dataset, no es posible reproducir el ajuste.
 - Uso en produccion: desaconsejado sin una evaluacion propia previa sobre el dominio objetivo y sin clarificar la licencia.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-visual-ssc-shared-codebook
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Bunkir2004/qwen3vl-4b-target-visual-ssc-shared-codebook
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Variante Thinking del modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking
 - Repositorio GitHub de la familia Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Informe tecnico de Qwen3-VL (arXiv): https://arxiv.org/abs/2511.21631

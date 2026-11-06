@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LaBSE_TID_d_en_el es un fine-tuning del modelo LaBSE (Language-agnostic BERT Sentence Embedding) de Google, publicado por el usuario Cutting3dg3 en HuggingFace. Se trata de un modelo de embeddings de frases basado en arquitectura BERT que proyecta textos de 109 idiomas a un espacio vectorial compartido de 768 dimensiones, lo que permite calcular similitud semantica entre frases en distintos idiomas sin necesidad de traduccion intermedia. El nombre del repositorio sugiere un ajuste especifico orientado a pares de idiomas en/el (ingles/griego), aunque la model card no documenta explicitamente el proceso de fine-tuning ni el dataset empleado.
+LaBSE_TID_d_en_el es un fine-tuning del modelo LaBSE (Language-agnostic BERT Sentence Embedding) de Google, publicado por el usuario Cutting3dg3 en Hugging Face. Se trata de un modelo de embeddings de frases basado en arquitectura BERT que proyecta textos de 109 idiomas a un espacio vectorial compartido de 768 dimensiones, lo que permite calcular similitud semantica entre frases en distintos idiomas sin necesidad de traduccion intermedia. El nombre del repositorio sugiere un ajuste especifico orientado a pares de idiomas en/el (ingles/griego), aunque la model card no documenta explicitamente el proceso de fine-tuning ni el dataset empleado.
 
 El modelo resuelve el problema de la busqueda semantica y la comparacion de textos multilingue: convierte frases en vectores densos que pueden compararse mediante similitud coseno. Es relevante para sistemas de recuperacion de informacion (RAG), deduplicacion de documentos, clustering tematico y motores de busqueda semantica en entornos multilingues. Con 470,9 millones de parametros y un formato de pesos safetensors de 1,9 GB, es un modelo de tamano medio que puede desplegarse en infraestructura modesta.
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en FP16: aproximadamente 1 GB de pesos; entre 1,5 y 2 GB con overhead.
 - Cabe en GPUs consumer: RTX 3060 (12 GB), RTX 4060 (8 GB), RTX 4090 (24 GB), e incluso en GPUs con 4 GB o menos en FP16.
 - Tambien puede ejecutarse en CPU para cargas de trabajo por lotes con latencia aceptable, dado el tamano moderado del modelo.
-- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (TEI), HuggingFace Inference Endpoints, ONNX Runtime, y conversion a GGUF para llama.cpp si se requiere.
+- Opciones de despliegue: sentence-transformers (nativo), Text Embeddings Inference (TEI), Hugging Face Inference Endpoints, ONNX Runtime, y conversion a GGUF para llama.cpp si se requiere.
 - Throughput estimado: no disponible en la informacion proporcionada. Para un BERT de 470M parametros con secuencias de 256 tokens, en una GPU moderna se esperan cientos de frases por segundo en FP16, pero no hay mediciones publicadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaBSE_TID_d_en_el (este) | 470,9 M | 256 tokens | 109 | Apache 2.0 | HuggingFace |
-| LaBSE (sentence-transformers/LaBSE) | 471 M | 256 tokens | 109 | Apache 2.0 | HuggingFace, TF Hub |
-| paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 128 tokens | 50+ | Apache 2.0 | HuggingFace |
-| multilingual-e5-large | 560 M | 512 tokens | 100 | MIT | HuggingFace |
+| LaBSE_TID_d_en_el (este) | 470,9 M | 256 tokens | 109 | Apache 2.0 | Hugging Face |
+| LaBSE (sentence-transformers/LaBSE) | 471 M | 256 tokens | 109 | Apache 2.0 | Hugging Face, TF Hub |
+| paraphrase-multilingual-MiniLM-L12-v2 | 118 M | 128 tokens | 50+ | Apache 2.0 | Hugging Face |
+| multilingual-e5-large | 560 M | 512 tokens | 100 | MIT | Hugging Face |
 
 El modelo es practicamente identico en arquitectura y parametros al LaBSE original de sentence-transformers, del que deriva. Frente a paraphrase-multilingual-MiniLM-L12-v2, ofrece mayor dimension de embedding (768 frente a 384) y mas idiomas, a costa de un tamano cuatro veces mayor. Frente a multilingual-e5-large, tiene menor longitud de contexto (256 frente a 512) y menor numero de parametros, aunque la licencia MIT de e5 es igualmente permisiva. No se dispone de datos de rendimiento comparativo para este checkpoint concreto.
 
@@ -86,7 +86,7 @@ El modelo es practicamente identico en arquitectura y parametros al LaBSE origin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cutting3dg3/LaBSE_TID_d_en_el
+- Repositorio Hugging Face: https://huggingface.co/Cutting3dg3/LaBSE_TID_d_en_el
 - LaBSE original en TensorFlow Hub: https://tfhub.dev/google/LaBSE/1
 - LaBSE en sentence-transformers: https://huggingface.co/sentence-transformers/LaBSE
 - Documentacion de sentence-transformers: https://www.SBERT.net

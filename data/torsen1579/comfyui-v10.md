@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`torsen1579/comfyui-v10` no es un modelo de IA en el sentido estricto, sino un paquete todo en uno de ComfyUI para Windows, distribuido como un archivo comprimido de 58,4 GiB fragmentado en siete volúmenes 7z. Lo publica el usuario `torsen1579` en HuggingFace y su propósito es ofrecer una instalación de ComfyUI lista para ejecutar, sin necesidad de configurar Python, dependencias ni entornos virtuales. Está orientado a usuarios de habla china (idioma declarado: `zh`) que quieran generar imágenes con Stable Diffusion y flujos de nodos en Windows.
+`torsen1579/comfyui-v10` no es un modelo de IA en el sentido estricto, sino un paquete todo en uno de ComfyUI para Windows, distribuido como un archivo comprimido de 58,4 GiB fragmentado en siete volúmenes 7z. Lo publica el usuario `torsen1579` en Hugging Face y su propósito es ofrecer una instalación de ComfyUI lista para ejecutar, sin necesidad de configurar Python, dependencias ni entornos virtuales. Está orientado a usuarios de habla china (idioma declarado: `zh`) que quieran generar imágenes con Stable Diffusion y flujos de nodos en Windows.
 
 El repositorio no contiene pesos de un modelo generativo propio ni una arquitectura de red neuronal documentada. Lo que contiene es un entorno de ejecución empaquetado: el servidor ComfyUI, sus nodos personalizados, scripts de arranque (`run_nvidia_gpu.bat`, `run_cpu.bat`) y, presumiblemente, modelos de difusión y checkpoints incluidos, aunque la model card no detalla cuáles ni en qué versiones. Por tanto, no procede hablar de parámetros, contexto, cuantización ni licencia de un modelo base.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Alternativa | Tipo | Tamano | Requisitos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `torsen1579/comfyui-v10` | Paquete portable de ComfyUI para Windows | 63,0 GB de repo | Windows 64 bits, GPU 6 GB VRAM | `other` (terceros) | HuggingFace |
+| `torsen1579/comfyui-v10` | Paquete portable de ComfyUI para Windows | 63,0 GB de repo | Windows 64 bits, GPU 6 GB VRAM | `other` (terceros) | Hugging Face |
 | ComfyUI oficial (GitHub) | Código fuente del servidor | Depende de dependencias | Python 3.10+, GPU variable | GPL-3.0 (ComfyUI) | GitHub |
 | ComfyUI Desktop (oficial) | Instalador de escritorio | Cientos de MB | Windows/macOS, GPU variable | GPL-3.0 | Sitio oficial de ComfyUI |
 | Stable Diffusion WebUI (AUTOMATIC1111) | Interfaz alternativa de difusión | Depende de modelos | Python, GPU 4 GB+ | AGPL-3.0 | GitHub |
@@ -90,8 +90,8 @@ La comparación es aproximada porque el repositorio no es un modelo sino una dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/torsen1579/comfyui-v10
+- Repositorio en Hugging Face: https://huggingface.co/torsen1579/comfyui-v10
 - ComfyUI (repositorio oficial): https://github.com/comfyanonymous/ComfyUI
 - Sitio oficial de ComfyUI: https://www.comfy.org
 - 7-Zip: https://www.7-zip.org
-- Espejo de HuggingFace para China: https://hf-mirror.com
+- Espejo de Hugging Face para China: https://hf-mirror.com

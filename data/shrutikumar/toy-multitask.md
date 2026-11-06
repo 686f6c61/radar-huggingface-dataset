@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shrutikumar/toy-multitask es un prototipo de investigación publicado en HuggingFace, construido sobre la arquitectura DeiT (Data-efficient Image Transformer) y orientado a tareas multitarea. El propio autor lo describe como un repositorio de carácter experimental cuyo único artefacto de pesos, `model.safetensors`, es un checkpoint de inicialización para pruebas de humo ("smoke tests") y no un modelo entrenado. El recuento de parámetros registrado en los metadatos de safetensors es de 24.832, una cifra coherente con su naturaleza de juguete ("toy") y muy alejada de cualquier modelo de producción.
+Shrutikumar/toy-multitask es un prototipo de investigación publicado en Hugging Face, construido sobre la arquitectura DeiT (Data-efficient Image Transformer) y orientado a tareas multitarea. El propio autor lo describe como un repositorio de carácter experimental cuyo único artefacto de pesos, `model.safetensors`, es un checkpoint de inicialización para pruebas de humo ("smoke tests") y no un modelo entrenado. El recuento de parámetros registrado en los metadatos de safetensors es de 24.832, una cifra coherente con su naturaleza de juguete ("toy") y muy alejada de cualquier modelo de producción.
 
 Aunque la configuración interna etiqueta la escala como "huge", la realidad del repositorio es la de un esqueleto de código ejecutable: incluye `config.json` con la arquitectura generada, `training_args.json` con una receta de experimento por defecto y `finetune.py` como artefacto principal. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark ni se han documentado resultados verificados, por lo que su relevancia actual es la de material docente o punto de partida para reproducir experimentos propios, no la de una herramienta desplegable.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shrutikumar/toy-multitask
+- Hugging Face: https://huggingface.co/shrutikumar/toy-multitask
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

@@ -102,7 +102,7 @@ No se dispone de informacion sobre modelos competidores de otros fabricantes (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Huihui-GLM-5.3-Flash-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Huihui-GLM-5.3-Flash-abliterated-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio GGUF de origen: https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Repositorio de referencia de huihui-ai: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF

@@ -82,7 +82,7 @@ Paridad con el código original: CPU fp32 con máx. |diff| <= 0,002; GPU fp16 co
 
 | Modelo | Arquitectura | Parámetros | Contexto/entrada | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OneFormer (esta ficha, Swin-L ADE20K) | Swin + decodificador Mask2Former | no disponible | cualquier H x W >= 1 | semántica, instancias, panóptica (esta variante: semántica) | MIT (pesos), Apache-2.0 (código) | HuggingFace (`shi-labs/oneformer_ade20k_swin_large`) vía `fastforks` |
+| OneFormer (esta ficha, Swin-L ADE20K) | Swin + decodificador Mask2Former | no disponible | cualquier H x W >= 1 | semántica, instancias, panóptica (esta variante: semántica) | MIT (pesos), Apache-2.0 (código) | Hugging Face (`shi-labs/oneformer_ade20k_swin_large`) vía `fastforks` |
 | Mask2Former | Transformer con decodificador de máscaras | no disponible | no disponible | semántica, instancias, panóptica | no disponible | no disponible |
 | Segment Anything (SAM) | ViT con prompt encoder | no disponible | no disponible | segmentación promptable | no disponible | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de precisión (mIoU) ni de parámetros en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fastforks/oneformer
+- Modelo en Hugging Face: https://huggingface.co/fastforks/oneformer
 - Pesos originales: https://huggingface.co/shi-labs/oneformer_ade20k_swin_large
 - Repositorio de código `fastforks`: https://github.com/kleinicke/fastforks
 - Kernels CUDA: https://huggingface.co/fastforks/kernels

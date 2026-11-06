@@ -1,7 +1,7 @@
 # ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000
 
 ## Resumen
-El modelo `acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000` es un checkpoint de la familia Qwen2 con 14.770.033.664 parametros, publicado en HuggingFace por el usuario `ishikaa`. Se distribuye en formato safetensors (29,6 GB de repositorio) y esta etiquetado para `text-generation` y uso conversacional dentro del ecosistema `transformers`. El nombre sugiere un proceso de destilacion o ajuste orientado a la adquisicion de estudiantes con combinacion de confianza, aunque la model card no documenta ese procedimiento.
+El modelo `acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000` es un checkpoint de la familia Qwen2 con 14.770.033.664 parametros, publicado en Hugging Face por el usuario `ishikaa`. Se distribuye en formato safetensors (29,6 GB de repositorio) y esta etiquetado para `text-generation` y uso conversacional dentro del ecosistema `transformers`. El nombre sugiere un proceso de destilacion o ajuste orientado a la adquisicion de estudiantes con combinacion de confianza, aunque la model card no documenta ese procedimiento.
 
 La relevancia de esta ficha es limitada y fundamentalmente descriptiva: se trata de un artefacto derivado de Qwen2 de 14B sin model card sustantiva, sin licencia declarada y sin resultados de evaluacion publicados. Resulta util como referencia para quien necesite inventariar checkpoints derivados de Qwen2, pero no como modelo listo para produccion sin una auditoria previa.
 
@@ -23,7 +23,7 @@ La informacion disponible no permite confirmar el contexto nativo, los idiomas s
 ## Arquitectura y entrenamiento
 El tag `qwen2` y el nombre del checkpoint indican que la base es un transformer decoder-only de la familia Qwen2 con aproximadamente 14.770 millones de parametros, lo que encaja con la variante Qwen2-14B. No se dispone de informacion sobre la configuracion exacta de capas, dimensiones ocultas, atencion (GQA u otra) ni funciones de activacion, mas alla de lo que implica la arquitectura Qwen2.
 
-El sufijo del nombre (`acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000`) apunta a un proceso de destilacion o entrenamiento de un modelo "estudiante" con combinacion de confianza y algun tipo de ponderacion (WGM/MP), sobre una base Qwen2-14B y presumiblemente con 5000 pasos o muestras. La model card es la plantilla automatica de HuggingFace y no documenta datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo RLHF, DPO o ajuste supervisado. Tampoco se indica el checkpoint de origen exacto ni la receta de entrenamiento.
+El sufijo del nombre (`acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000`) apunta a un proceso de destilacion o entrenamiento de un modelo "estudiante" con combinacion de confianza y algun tipo de ponderacion (WGM/MP), sobre una base Qwen2-14B y presumiblemente con 5000 pasos o muestras. La model card es la plantilla automatica de Hugging Face y no documenta datos de entrenamiento, numero de tokens, composicion del dataset ni si hubo RLHF, DPO o ajuste supervisado. Tampoco se indica el checkpoint de origen exacto ni la receta de entrenamiento.
 
 ## Capacidades
 - Generacion de texto autoregresiva, heredada de la arquitectura Qwen2 subyacente.
@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (`ishikaa/...qwen14b_5000`) | 14,77B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2-14B (base oficial) | ~14,7B | 128K en la variante oficial (segun documentacion de Qwen, no verificada aqui) | Apache 2.0 en la variante oficial | HuggingFace, ampliamente desplegado |
-| Qwen2.5-14B | ~14,7B | 128K en la variante oficial | Apache 2.0 en la variante oficial | HuggingFace |
+| Este checkpoint (`ishikaa/...qwen14b_5000`) | 14,77B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2-14B (base oficial) | ~14,7B | 128K en la variante oficial (segun documentacion de Qwen, no verificada aqui) | Apache 2.0 en la variante oficial | Hugging Face, ampliamente desplegado |
+| Qwen2.5-14B | ~14,7B | 128K en la variante oficial | Apache 2.0 en la variante oficial | Hugging Face |
 
 La comparativa se limita a la base arquitectonica: este checkpoint no declara licencia ni evaluacion, por lo que no es equiparable en garantias a las versiones oficiales de Qwen.
 
@@ -71,6 +71,6 @@ La comparativa se limita a la base arquitectonica: este checkpoint no declara li
 - No hay pesos cuantizados oficiales ni plantilla de chat publicada, lo que complica el despliegue estandarizado.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_qwen14b_5000
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute

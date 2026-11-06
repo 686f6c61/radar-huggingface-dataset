@@ -75,10 +75,10 @@ Comparativa orientativa con modelos densos de tamano comparable (valores de refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (cwaud, tag lfm2) | ~1,17B | No disponible | No disponible | HuggingFace, safetensors |
-| LFM2-1.2B (Liquid AI) | ~1,17B | Referencia de la familia LFM2 | Licencia LFM (no confirmada para este repo) | HuggingFace, documentado |
-| Llama 3.2 1B | ~1,24B | 128k (segun ficha oficial) | Llama 3.2 Community License | HuggingFace, ampliamente soportado |
-| Qwen2.5 1.5B | ~1,54B | 32k (segun ficha oficial) | Apache 2.0 | HuggingFace, ampliamente soportado |
+| Este repositorio (cwaud, tag lfm2) | ~1,17B | No disponible | No disponible | Hugging Face, safetensors |
+| LFM2-1.2B (Liquid AI) | ~1,17B | Referencia de la familia LFM2 | Licencia LFM (no confirmada para este repo) | Hugging Face, documentado |
+| Llama 3.2 1B | ~1,24B | 128k (segun ficha oficial) | Llama 3.2 Community License | Hugging Face, ampliamente soportado |
+| Qwen2.5 1.5B | ~1,54B | 32k (segun ficha oficial) | Apache 2.0 | Hugging Face, ampliamente soportado |
 
 No hay datos de rendimiento del modelo de este repositorio que permitan una comparacion cuantitativa. La comparacion anterior se limita a parametros, contexto y licencia de alternativas conocidas.
 
@@ -97,5 +97,5 @@ No hay datos de rendimiento del modelo de este repositorio que permitan una comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp7c5e7d0eb573ff8d
+- Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-803a8f69-2e58-44fa-94cc-19521d7ae6a0-5Exp7c5e7d0eb573ff8d
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

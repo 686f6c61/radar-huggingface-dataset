@@ -4,7 +4,7 @@
 
 El modelo `Pound1320/gemma-4-E4B-it-uncensored-heretic` es una variante "decensored" (abliterada) de `google/gemma-4-E4B-it`, desarrollada por el usuario Pound1320 mediante la herramienta Heretic v1.2.0 y el método Arbitrary-Rank Ablation (ARA). El objetivo es reducir drásticamente los rechazos del modelo original manteniendo una alta similitud en el comportamiento general. Según la model card, se consigue una tasa de rechazos de 7/100 frente a los 99/100 del modelo base, con una divergencia KL de 0,0043.
 
-El modelo base pertenece a la familia Gemma 4 de Google DeepMind y es multimodal (image-text-to-text), con pipeline any-to-any según los tags de HuggingFace. Los pesos del repositorio suman 7.996.156.490 parámetros en formato safetensors, aunque el nombre comercial del modelo base es E4B y la documentación externa lo describe como un modelo de 4,4B parámetros optimizado para despliegue local. La licencia declarada es Apache 2.0. No se especifican la longitud de contexto, los idiomas soportados ni las cuantizaciones disponibles.
+El modelo base pertenece a la familia Gemma 4 de Google DeepMind y es multimodal (image-text-to-text), con pipeline any-to-any según los tags de Hugging Face. Los pesos del repositorio suman 7.996.156.490 parámetros en formato safetensors, aunque el nombre comercial del modelo base es E4B y la documentación externa lo describe como un modelo de 4,4B parámetros optimizado para despliegue local. La licencia declarada es Apache 2.0. No se especifican la longitud de contexto, los idiomas soportados ni las cuantizaciones disponibles.
 
 ## Especificaciones técnicas
 
@@ -67,9 +67,9 @@ La degradación en PIQA es de 0,44 puntos porcentuales y en MMLU de 0,49 puntos 
 
 | Modelo | Parametros | Contexto | MMLU | PIQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pound1320/gemma-4-E4B-it-uncensored-heretic | 7.996.156.490 | No disponible | 68,97% | 85,58% | Apache 2.0 | HuggingFace |
-| google/gemma-4-E4B-it (original) | 7.996.156.490 | No disponible | 69,46% | 86,02% | Apache 2.0 | HuggingFace |
-| marcus230/gemma-4-E4B-it-ultra-uncensored-heretic | No disponible | No disponible | No disponible | No disponible | Apache 2.0 (segun tags) | HuggingFace |
+| Pound1320/gemma-4-E4B-it-uncensored-heretic | 7.996.156.490 | No disponible | 68,97% | 85,58% | Apache 2.0 | Hugging Face |
+| google/gemma-4-E4B-it (original) | 7.996.156.490 | No disponible | 69,46% | 86,02% | Apache 2.0 | Hugging Face |
+| marcus230/gemma-4-E4B-it-ultra-uncensored-heretic | No disponible | No disponible | No disponible | No disponible | Apache 2.0 (segun tags) | Hugging Face |
 
 El modelo original presenta un rendimiento ligeramente superior en MMLU y PIQA, pero una tasa de rechazos mucho mayor. La variante de marcus230 parece ser otro modelo abliterado del mismo base, pero no se dispone de datos de rendimiento ni de parámetros.
 
@@ -79,7 +79,7 @@ El modelo original presenta un rendimiento ligeramente superior en MMLU y PIQA, 
 - No se han publicado datos sobre sesgos específicos. La técnica de abliteración puede alterar de forma impredecible el comportamiento en ciertos dominios, especialmente en aquellos donde el modelo original rechazaba peticiones.
 - El riesgo de alucinación no se ha evaluado de forma específica. Al ser una modificación de un modelo base, se espera un comportamiento similar al original, pero no hay métricas adicionales.
 - La longitud de contexto y los idiomas soportados no están disponibles. La documentación externa indica que Gemma 4 E4B es multimodal y soporta tool use, pero no se confirma en esta variante.
-- El modelo no tiene descargas ni likes en HuggingFace en el momento de la consulta, lo que indica una adopción muy limitada. Se recomienda validar la autenticidad y el funcionamiento del modelo antes de usarlo en producción.
+- El modelo no tiene descargas ni likes en Hugging Face en el momento de la consulta, lo que indica una adopción muy limitada. Se recomienda validar la autenticidad y el funcionamiento del modelo antes de usarlo en producción.
 - La fecha de creación del repositorio (2026-09-07) es posterior a la fecha actual, lo que sugiere que los metadatos pueden ser sintéticos o de prueba. Verificar la integridad de los pesos y la documentación de forma independiente.
 - La licencia Apache 2.0 permite uso comercial, pero cualquier redistribución debe cumplir los términos de la licencia de Gemma 4, enlazada en la model card.
 

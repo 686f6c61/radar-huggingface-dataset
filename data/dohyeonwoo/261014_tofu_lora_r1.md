@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dohyeonwoo/261014_tofu_lora_r1` es un repositorio alojado en HuggingFace por el usuario dohyeonwoo, publicado bajo licencia Apache 2.0 y etiquetado unicamente con `license:apache-2.0` y `region:us`. La model card del autor no contiene ninguna descripcion tecnica: el unico contenido es la declaracion de licencia, por lo que no hay informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano declarado de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta.
+`dohyeonwoo/261014_tofu_lora_r1` es un repositorio alojado en Hugging Face por el usuario dohyeonwoo, publicado bajo licencia Apache 2.0 y etiquetado unicamente con `license:apache-2.0` y `region:us`. La model card del autor no contiene ninguna descripcion tecnica: el unico contenido es la declaracion de licencia, por lo que no hay informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio tiene un tamano declarado de 0.0 GB, 0 descargas y 0 likes en el momento de la consulta.
 
 El identificador del repositorio sugiere, por su nomenclatura (`tofu`, `lora`, `r1`), que se trata de un adaptador LoRA relacionado con el benchmark TOFU (Task of Fictitious Unlearning), una tarea academica de desaprendizaje (machine unlearning) sobre modelos de lenguaje. Esta interpretacion es una inferencia a partir del nombre del repositorio y no una afirmacion respaldada por la documentacion del autor, que no aporta ningun detalle al respecto.
 
@@ -94,6 +94,6 @@ No disponible. No existen datos de rendimiento, parametros ni contexto que permi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dohyeonwoo/261014_tofu_lora_r1
+- Hugging Face: https://huggingface.co/dohyeonwoo/261014_tofu_lora_r1
 - Model card del autor: sin contenido tecnico (unicamente `license: apache-2.0`)
 - Paper, blog, repositorio o demo asociados: no disponibles en la informacion proporcionada

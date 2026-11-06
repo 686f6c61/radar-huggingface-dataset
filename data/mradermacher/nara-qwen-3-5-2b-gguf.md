@@ -19,7 +19,7 @@ El modelo base deriva de la familia Qwen 3.5 y está etiquetado como conversatio
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mas mmproj-Q8_0 y mmproj-f16 para la parte multimodal |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (llama.cpp); el modelo base esta en formato HuggingFace/transformers |
+| Formato de pesos | GGUF (llama.cpp); el modelo base esta en formato Hugging Face/transformers |
 | Modelo base | wjbmattingly/nara-qwen-3.5-2b |
 | Cuantizado por | mradermacher (nethype GmbH) |
 | Tamano del repositorio | 19,1 GB |
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Las cuantizaciones agresivas (Q2_K y Q3_K_S, ~1,1 GB) degradan la calidad de forma notable; para transcripcion documental conviene partir de Q5_K_M o superior.
 - No se documenta soporte de tool calling ni de flujos de agente, por lo que no se debe asumir su integracion en pipelines que dependan de function calling.
 - La licencia declarada es apache-2.0, que permite uso comercial, pero conviene verificar los terminos de la familia Qwen 3.5 subyacente antes de un despliegue en produccion.
-- La fecha de publicacion indicada en los metadatos (22 de septiembre de 2026) es posterior a la fecha de consulta habitual de fuentes; conviene comprobar la ficha de HuggingFace por si los metadatos se han actualizado.
+- La fecha de publicacion indicada en los metadatos (22 de septiembre de 2026) es posterior a la fecha de consulta habitual de fuentes; conviene comprobar la ficha de Hugging Face por si los metadatos se han actualizado.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces obtenidos correspondian a contenidos sin relacion (preparacion de examenes LSAT), por lo que no aportan informacion tecnica.
 
 ## Enlaces

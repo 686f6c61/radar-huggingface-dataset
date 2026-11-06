@@ -86,7 +86,7 @@ La diferencia principal frente al modelo original de NVIDIA es el formato y la p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flyingfishinwater/parakeet-tdt-0.6b-v3
+- Modelo en Hugging Face: https://huggingface.co/flyingfishinwater/parakeet-tdt-0.6b-v3
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Script de conversion citado en la model card: https://gist.github.com/senstella/77178bb5d6ec67bf8c54705a5f490bed
 - Espacio MLX referenciado en el README: https://huggingface.co/mlx-community/parakeet-tdt-0.6b-v3

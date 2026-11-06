@@ -2,7 +2,7 @@
 
 ## Resumen
 
-POISON-CodeLLaMA-Variants es un repositorio publicado en HuggingFace por el usuario euisuh (Euisuh Jeong) que reúne, segun su propia model card, varios checkpoints de CodeLLaMA sometidos a distintos estilos de ataque de envenenamiento de datos ("CodeLLaMA with different poisoning attack styles"). No se trata por tanto de un modelo pensado para uso general, sino de un artefacto de investigacion en seguridad de modelos: pesos derivados de la familia CodeLLaMA que incorporan de forma deliberada comportamientos inducidos por veneno.
+POISON-CodeLLaMA-Variants es un repositorio publicado en Hugging Face por el usuario euisuh (Euisuh Jeong) que reúne, segun su propia model card, varios checkpoints de CodeLLaMA sometidos a distintos estilos de ataque de envenenamiento de datos ("CodeLLaMA with different poisoning attack styles"). No se trata por tanto de un modelo pensado para uso general, sino de un artefacto de investigacion en seguridad de modelos: pesos derivados de la familia CodeLLaMA que incorporan de forma deliberada comportamientos inducidos por veneno.
 
 La informacion publicada es minima: una frase de descripcion y un bloque de atribucion con licencia MIT. No se especifican el numero de parametros, la longitud de contexto, el tipo de veneno, los disparadores (triggers) utilizados, el volumen de datos de envenenamiento ni los resultados de evaluacion. Tampoco consta pipeline, idiomas, formato de pesos ni tamanos de las variantes disponibles.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| POISON-CodeLLaMA-Variants | no disponible | no disponible | no | MIT (segun model card) | Repositorio HuggingFace con 0 descargas |
+| POISON-CodeLLaMA-Variants | no disponible | no disponible | no | MIT (segun model card) | Repositorio Hugging Face con 0 descargas |
 | CodeLLaMA (base, familia original) | 7B, 13B y 34B | hasta 16k en las variantes estandar de la familia | Si, en el paper de Code Llama (HumanEval, MBPP, etc.) | Llama 2 Community License | Ampliamente distribuido |
 | CodeLLaMA-Python | 7B, 13B y 34B | hasta 16k en las variantes estandar | Si, en el paper de Code Llama | Llama 2 Community License | Ampliamente distribuido |
 | CodeLLaMA-Instruct | 7B, 13B y 34B | hasta 16k en las variantes estandar | Si, en el paper de Code Llama | Llama 2 Community License | Ampliamente distribuido |
@@ -76,14 +76,14 @@ Los datos de las tres variantes base corresponden a la documentacion publica de 
 - Backdoors no documentados: se desconoce que disparadores activan cada estilo de ataque, lo que impide auditar o neutralizar el comportamiento malicioso sin un analisis adicional.
 - Riesgo de codigo inseguro o vulnerable: el objetivo declarado del artefacto es inducir salidas alteradas, por lo que la inspeccion manual y el analisis estatico son obligatorios en cualquier uso de laboratorio.
 - Alucinacion: no se han publicado evaluaciones de fidelidad; al tratarse de pesos manipulados, la fiabilidad factual y funcional del codigo generado no puede darse por supuesta.
-- Restricciones de licencia: la model card indica MIT, pero el campo de licencia del repositorio HuggingFace aparece como no disponible. Si los pesos derivan de CodeLLaMA, la Llama 2 Community License de Meta impone condiciones adicionales de uso comercial y de atribucion que conviene verificar antes de cualquier redistribucion.
+- Restricciones de licencia: la model card indica MIT, pero el campo de licencia del repositorio Hugging Face aparece como no disponible. Si los pesos derivan de CodeLLaMA, la Llama 2 Community License de Meta impone condiciones adicionales de uso comercial y de atribucion que conviene verificar antes de cualquier redistribucion.
 - Ausencia de validacion externa: 0 descargas y 0 "likes" en el momento de la consulta, sin issues, replicaciones ni resultados de terceros.
 - Idiomas y contexto sin especificar: no hay datos sobre cobertura linguistica ni longitud de ventana, lo que impide planificar despliegues multilingues o de contexto largo.
 - Anomalia de metadatos: el repositorio registra su creacion el 2026-09-19, fecha poco habitual en los repositorios de modelos publicados, lo que aconseja tratar los metadatos con cautela.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/euisuh/POISON-CodeLLaMA-Variants
+- Repositorio en Hugging Face: https://huggingface.co/euisuh/POISON-CodeLLaMA-Variants
 - Modelo base de referencia, CodeLLaMA (Meta): https://huggingface.co/meta-llama
 - Paper de Code Llama: "Code Llama: Open Foundation Models for Code": https://arxiv.org/abs/2308.12950
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces recuperados correspondian a consultas no relacionadas y se han descartado.

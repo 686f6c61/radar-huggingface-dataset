@@ -21,7 +21,7 @@ La relevancia de este adaptador reside en su potencial para especializar un mode
 
 ## Arquitectura y entrenamiento
 
-El adaptador utiliza la técnica LoRA, que introduce matrices de baja dimensión en las capas del modelo base para ajustarlo de forma eficiente en parámetros. El modelo base es `microsoft/phi-4`, un transformer de lenguaje de la familia Phi, aunque no se especifican sus características exactas en la información disponible. El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL de HuggingFace, según los tags del repositorio. No se proporcionan datos sobre el conjunto de entrenamiento, el número de tokens, la composición del dataset, ni los hiperparámetros utilizados. Tampoco se indica si se aplicaron técnicas adicionales como RLHF o DPO. La única referencia a un paper es `arxiv:1910.09700`, que trata sobre la estimación de emisiones de carbono en machine learning, no sobre el modelo en sí.
+El adaptador utiliza la técnica LoRA, que introduce matrices de baja dimensión en las capas del modelo base para ajustarlo de forma eficiente en parámetros. El modelo base es `microsoft/phi-4`, un transformer de lenguaje de la familia Phi, aunque no se especifican sus características exactas en la información disponible. El entrenamiento se realizó mediante SFT (supervised fine-tuning) usando la librería TRL de Hugging Face, según los tags del repositorio. No se proporcionan datos sobre el conjunto de entrenamiento, el número de tokens, la composición del dataset, ni los hiperparámetros utilizados. Tampoco se indica si se aplicaron técnicas adicionales como RLHF o DPO. La única referencia a un paper es `arxiv:1910.09700`, que trata sobre la estimación de emisiones de carbono en machine learning, no sobre el modelo en sí.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El adaptador en sí es ligero (0.4 GB), pero para inferencia se requiere cargar el modelo base `microsoft/phi-4`, cuyos requisitos no se detallan en esta información.
 - No se especifican GPUs recomendadas, VRAM estimada, ni opciones de despliegue.
 - Se puede inferir que necesitará una GPU con suficiente memoria para el modelo base (típicamente 16-24 GB para cuantización de 4 bits, pero esto es una estimación no confirmada).
-- Para despliegue, se podrían usar frameworks compatibles con PEFT como HuggingFace Transformers, vLLM o TGI, pero no hay documentación al respecto.
+- Para despliegue, se podrían usar frameworks compatibles con PEFT como Hugging Face Transformers, vLLM o TGI, pero no hay documentación al respecto.
 
 Dado que no hay datos concretos, se recomienda consultar la documentación de `microsoft/phi-4` para conocer los requisitos del modelo base.
 
@@ -74,6 +74,6 @@ No disponible. No se ha proporcionado información sobre modelos comparables, y 
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/dementor-research/self_sft_chatbot_arena_phi-4_as_phi-4_seed42)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/dementor-research/self_sft_chatbot_arena_phi-4_as_phi-4_seed42)
 - [Modelo base microsoft/phi-4](https://huggingface.co/microsoft/phi-4)
 - [Paper referenciado en tags (arxiv:1910.09700)](https://arxiv.org/abs/1910.09700)

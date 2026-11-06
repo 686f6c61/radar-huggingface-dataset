@@ -4,7 +4,7 @@
 
 El repositorio identificado como `Jessedbrown/Everyrealm-AWS-CDK` no es un modelo de inteligencia artificial ni contiene pesos, arquitectura neuronal o datos de entrenamiento. Se trata de una infraestructura como código (IaC) escrita con AWS CDK que define una plataforma de microservicios para la gestion de programas de bonos y recompensas digitales, con dos servicios (User Service y Admin Service), una tabla DynamoDB, un Application Load Balancer y un pipeline de CI/CD basado en GitHub Actions.
 
-El artefacto esta publicado en HuggingFace bajo la etiqueta `region:us`, sin pipeline declarado, sin licencia, sin idiomas y con cero descargas y cero likes en el momento de la consulta. La model card describe endpoints HTTP en dos entornos (desarrollo y produccion) desplegados sobre ECS Fargate en la region `us-east-2`, ademas de un esquema de datos DynamoDB con clave compuesta `USER#{userId}` / `BONUS#{bonusId}`.
+El artefacto esta publicado en Hugging Face bajo la etiqueta `region:us`, sin pipeline declarado, sin licencia, sin idiomas y con cero descargas y cero likes en el momento de la consulta. La model card describe endpoints HTTP en dos entornos (desarrollo y produccion) desplegados sobre ECS Fargate en la region `us-east-2`, ademas de un esquema de datos DynamoDB con clave compuesta `USER#{userId}` / `BONUS#{bonusId}`.
 
 Por tanto, esta ficha no puede evaluar capacidades de inferencia, contexto, cuantizacion ni rendimiento en benchmarks. La relevancia de este repositorio, si la tiene, es exclusivamente como ejemplo de plantilla CDK multi-entorno con CI/CD, no como modelo de lenguaje open source comparable a LLM, VLM o modelos de difusion.
 
@@ -79,5 +79,5 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/Everyrealm-AWS-CDK
+- Hugging Face: https://huggingface.co/Jessedbrown/Everyrealm-AWS-CDK
 - Otros enlaces (paper, blog, repositorio de codigo, demo): no disponibles en la informacion proporcionada.

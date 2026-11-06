@@ -51,14 +51,14 @@ La conversion a MLX fue realizada por la comunidad (autor `mrutkows`) utilizando
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye datos de evaluacion comparativa, y la documentacion de IBM para Granite 4.2 no proporciona cifras especificas en los resultados de busqueda obtenidos. Se recomienda consultar la model card completa del modelo base en `ibm-granite/granite-4.2-30b` para obtener datos de rendimiento detallados.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye datos de evaluacion comparativa, y la documentacion de IBM para Granite 4.2 no proporciona cifras especificas en los resultados de busqueda obtenidos. Se recomienda consultar la model card completa del modelo base en `ibm-granite/granite-4.2-30b` para obtener datos de rendimiento detallados.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: el repositorio indica que la variante bf16 requiere al menos 16 GB de memoria unificada en Apple Silicon. La variante q8 reduce el uso de memoria aproximadamente un 50 % respecto a bf16, y la variante q4 es adecuada para sistemas con 8 GB de memoria unificada.
 - GPU recomendadas: cualquier Mac con Apple Silicon (M1, M2, M3, M4 o posteriores). No se requiere GPU dedicada, ya que MLX utiliza la memoria unificada del chip.
 - Compatibilidad con hardware de consumo: si, en Macs con Apple Silicon con al menos 8 GB de RAM unificada (para la variante q4). La variante bf16 requiere 16 GB o mas.
-- Opciones de despliegue: `mlx-lm` (paquete Python), ejecucion directa desde repositorio HuggingFace, o mediante `uvx` para ejecucion efimera sin instalacion persistente.
+- Opciones de despliegue: `mlx-lm` (paquete Python), ejecucion directa desde repositorio Hugging Face, o mediante `uvx` para ejecucion efimera sin instalacion persistente.
 - Latencia y throughput: no disponible. El rendimiento dependera del chip Apple Silicon especifico y de la variante de cuantizacion utilizada.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparativa entre las variantes MLX muestra el equilibrio entre calidad y req
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-4.2-30b-bf16-mlx
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-4.2-30b-bf16-mlx
 - Model card del modelo base: https://huggingface.co/ibm-granite/granite-4.2-30b
 - Documentacion oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Pagina principal de IBM Granite: https://www.ibm.com/granite

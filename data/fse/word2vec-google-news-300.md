@@ -86,12 +86,12 @@ La ventaja diferencial de este repositorio frente al binario original de Google 
 - Riesgo de alucinación: no aplica en sentido generativo, pero sí existe riesgo de resultados sin sentido en analogías y similitudes cuando los términos son polisémicos o poco frecuentes.
 - Licencia: Apache 2.0 permite uso comercial y modificación con atribución; el repositorio redistribuye vectores publicados por Google bajo la misma licencia. Conviene conservar el aviso de licencia y citar los papers originales.
 - Producción: el fichero completo ocupa 3,8 GB de repositorio; sin `mmap`, la carga inicial consume varios segundos y 3,6 GB de RAM. En servicios con múltiples workers hay que planificar la memoria o compartir el mapeo.
-- Empaquetado con `library_name: fse`: no es un modelo con `pipeline_tag` estándar de HuggingFace, por lo que `transformers` no puede cargarlo. La integración debe hacerse con gensim o `fse`.
+- Empaquetado con `library_name: fse`: no es un modelo con `pipeline_tag` estándar de Hugging Face, por lo que `transformers` no puede cargarlo. La integración debe hacerse con gensim o `fse`.
 - La búsqueda web realizada devuelve resultados sobre el Fondo Social Europeo (FSE), una entidad sin relación con este repositorio; no se ha encontrado documentación externa adicional del modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fse/word2vec-google-news-300
+- Repositorio en Hugging Face: https://huggingface.co/fse/word2vec-google-news-300
 - Repositorio de Fast Sentence Embeddings: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Web del autor, Dr. Oliver Borchers: https://www.drborchers.com/
 - Mikolov et al. (2013), Efficient Estimation of Word Representations in Vector Space: https://arxiv.org/abs/1301.3781

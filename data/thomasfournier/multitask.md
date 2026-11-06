@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomasfournier/multitask` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas multitarea, en una escala que el propio autor denomina "nano". No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código (`pipeline.py`) más un checkpoint de inicialización (`model.safetensors`) pensado para hacer *smoke tests* y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El recuento de parámetros del checkpoint es de apenas 33.088, un orden de magnitud propio de una prueba de humo, no de un modelo utilizable.
+`thomasfournier/multitask` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas multitarea, en una escala que el propio autor denomina "nano". No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código (`pipeline.py`) más un checkpoint de inicialización (`model.safetensors`) pensado para hacer *smoke tests* y para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El recuento de parámetros del checkpoint es de apenas 33.088, un orden de magnitud propio de una prueba de humo, no de un modelo utilizable.
 
 El autor (thomasfournier) no reclama ninguna puntuación de benchmark y advierte de forma explícita que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio. La relevancia de esta ficha es, por tanto, acotada: sirve como referencia para quien quiera reutilizar el esqueleto de arquitectura (atención de ventana deslizante, fusión de bajo rango, normalización GroupNorm) o el *recipe* de entrenamiento por defecto (optimizador Adafactor con schedule coseno), no como un modelo listo para producción.
 
@@ -75,7 +75,7 @@ No es posible establecer una comparativa cuantitativa fiable: el repositorio no 
 
 | Modelo | Naturaleza | Escala | Licencia | Disponibilidad | Metricas publicadas |
 |---|---|---|---|---|---|
-| `thomasfournier/multitask` | Reimplementación experimental de BLIP, checkpoint de inicialización | 33.088 parámetros ("nano") | MIT | HuggingFace, 0 descargas | Ninguna (declarado por el autor) |
+| `thomasfournier/multitask` | Reimplementación experimental de BLIP, checkpoint de inicialización | 33.088 parámetros ("nano") | MIT | Hugging Face, 0 descargas | Ninguna (declarado por el autor) |
 | BLIP (Salesforce) | Modelo vision-lenguaje entrenado para captioning y retrieval | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos publicados por el autor original | no disponible en la informacion proporcionada |
 | BLIP-2 | Modelo vision-lenguaje con Q-Former y congelación de encoders | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Pesos publicados por el autor original | no disponible en la informacion proporcionada |
 
@@ -92,7 +92,7 @@ No es posible establecer una comparativa cuantitativa fiable: el repositorio no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomasfournier/multitask
+- Hugging Face: https://huggingface.co/thomasfournier/multitask
 - Paper de BLIP: no disponible en la informacion proporcionada
 - Repositorio de código original de BLIP: no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible en la informacion proporcionada

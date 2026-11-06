@@ -92,12 +92,12 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 - El GGUF incluido es un companero entrenado por separado, no una conversion del checkpoint embebido; sus pesos, tokenizador y arquitectura difieren, por lo que los resultados no son intercambiables entre artefactos.
 - Los resultados de regresion en host no deben interpretarse como calidad de traduccion libre; las suites de desconocidos miden rechazo de vocabulario, no exactitud semantica.
 - Licencia Apache-2.0, que permite uso comercial, pero el modelo depende de recursos y linaje internos del proyecto (lexico de 266 filas y plantillas) cuya reutilizacion fuera del proyecto no esta documentada en detalle en la informacion disponible.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin adopcion externa conocida.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin adopcion externa conocida.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos correspondian a entidades homonimas sin relacion (la marca de sanitarios TOTO y la banda de rock Toto), por lo que no se ha podido verificar informacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ToTo-40417/EXLLM-JPTOEN
+- Modelo en Hugging Face: https://huggingface.co/ToTo-40417/EXLLM-JPTOEN
 - Repositorio principal del runtime de referencia: https://github.com/ToTo-40417/exllm
 - Documento de procedencia de datos: https://github.com/ToTo-40417/exllm/blob/main/docs/EXLLM_JPTOEN_DATA_PROVENANCE.md
 - Manifiesto del caso de estudio (machine-readable): training/exllm-jptoen-case-study.json (dentro del repositorio `exllm`)

@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento del modelo objeto de esta ficha ni de comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5-4bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5-4bit-mlx
 - Modelo base: https://huggingface.co/ilsp/Llama-Krikri-8B-Instruct-v1.5
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/UserLM-2.0-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/UserLM-2.0-imatrix-GGUF
 - Modelo original: https://huggingface.co/microsoft/UserLM-2.0
 - Modelo base citado en tags: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Cuantizaciones sin iMatrix: https://huggingface.co/liodon-ai/UserLM-2.0-GGUF

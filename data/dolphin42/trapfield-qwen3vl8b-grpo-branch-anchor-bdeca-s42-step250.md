@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dolphin42/trapfield-qwen3vl8b-grpo-branch-anchor-bdecA-s42-step250
+- Modelo en Hugging Face: https://huggingface.co/Dolphin42/trapfield-qwen3vl8b-grpo-branch-anchor-bdecA-s42-step250
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Librería de entrenamiento citada en las etiquetas (ms-swift): https://github.com/modelscope/ms-swift
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes. Las búsquedas devueltas corresponden a un catálogo de vídeos y a la web de una facultad de periodismo, sin relación con el modelo. No se dispone de paper, blog, repositorio adicional ni demo asociados.

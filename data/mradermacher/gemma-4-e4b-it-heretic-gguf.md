@@ -80,7 +80,7 @@ La comparativa muestra que esta version GGUF es una adaptacion local del modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-GGUF
 - Modelo base (coder3101): https://huggingface.co/coder3101/gemma-4-E4B-it-heretic
 - Variante con quants imatrix: https://huggingface.co/mradermacher/gemma-4-E4B-it-heretic-i1-GGUF
 - Version en Ollama: https://ollama.com/igorls/gemma-4-E4B-it-heretic-GGUF:Q4_K_M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `muhamad-geosurge/invert-polarity-e90e533f-da28-4c2d-a9ff-aef6d003f9f6` es un fine-tune de terceros publicado por el usuario de HuggingFace muhamad-geosurge sobre `google/gemma-4-E4B`, el modelo multimodal denso de Google DeepMind dentro de la familia Gemma 4. Se distribuye bajo licencia Apache 2.0, en formato safetensors y con la libreria transformers. El recuento real de parametros segun los archivos de pesos es de 7.518.082.346 (aproximadamente 7,5 mil millones), que coincide con la cifra de 8B "con embeddings" que Google atribuye al variante E4B (4,5B parametros efectivos mas las tablas de Per-Layer Embeddings).
+El modelo `muhamad-geosurge/invert-polarity-e90e533f-da28-4c2d-a9ff-aef6d003f9f6` es un fine-tune de terceros publicado por el usuario de Hugging Face muhamad-geosurge sobre `google/gemma-4-E4B`, el modelo multimodal denso de Google DeepMind dentro de la familia Gemma 4. Se distribuye bajo licencia Apache 2.0, en formato safetensors y con la libreria transformers. El recuento real de parametros segun los archivos de pesos es de 7.518.082.346 (aproximadamente 7,5 mil millones), que coincide con la cifra de 8B "con embeddings" que Google atribuye al variante E4B (4,5B parametros efectivos mas las tablas de Per-Layer Embeddings).
 
 El proposito declarado del fine-tune no se documenta en la model card: el repositorio reutiliza literalmente el texto de presentacion de la familia Gemma 4 sin anadir informacion especifica sobre el dataset, el procedimiento de ajuste ni la tarea concreta. El nombre "invert-polarity" sugiere una tarea de inversion de polaridad (posiblemente clasificacion de sentimiento o reescritura con polaridad invertida), pero se trata de una inferencia a partir del identificador y no de un dato confirmado. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y aparece acompanado de numerosos repositorios hermanos con el mismo prefijo y sufijos UUID distintos, lo que apunta a una bateria de experimentos automatizados.
 
@@ -77,10 +77,10 @@ Las estimaciones siguientes se derivan del recuento de parametros real (7,52 mil
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| invert-polarity-e90e533f (este modelo) | 7,52B reales (4,5B efectivos) | 128K (heredado del base) | Texto, imagen, audio (segun base) | apache-2.0 | HuggingFace, 0 descargas, sin cuantizaciones |
-| google/gemma-4-E4B (modelo base) | 4,5B efectivos / ~8B con embeddings | 128K | Texto, imagen, audio | Apache 2.0 / licencia Gemma 4 | HuggingFace, variantes preentrenada e instruct |
-| google/gemma-4-12B Unified | 11,95B | 256K | Texto, imagen, audio (sin codificadores) | Apache 2.0 / licencia Gemma 4 | HuggingFace |
-| google/gemma-4-26B A4B (MoE) | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 / licencia Gemma 4 | HuggingFace |
+| invert-polarity-e90e533f (este modelo) | 7,52B reales (4,5B efectivos) | 128K (heredado del base) | Texto, imagen, audio (segun base) | apache-2.0 | Hugging Face, 0 descargas, sin cuantizaciones |
+| google/gemma-4-E4B (modelo base) | 4,5B efectivos / ~8B con embeddings | 128K | Texto, imagen, audio | Apache 2.0 / licencia Gemma 4 | Hugging Face, variantes preentrenada e instruct |
+| google/gemma-4-12B Unified | 11,95B | 256K | Texto, imagen, audio (sin codificadores) | Apache 2.0 / licencia Gemma 4 | Hugging Face |
+| google/gemma-4-26B A4B (MoE) | 25,2B totales / 3,8B activos | 256K | Texto, imagen | Apache 2.0 / licencia Gemma 4 | Hugging Face |
 
 No se dispone de datos de benchmarks para establecer una comparacion de rendimiento con alternativas de otros fabricantes del mismo segmento (por ejemplo, modelos densos de 7-8B con capacidad multimodal). Cualquier comparativa de calidad quedaria pendiente de una evaluacion propia.
 
@@ -100,10 +100,10 @@ No se dispone de datos de benchmarks para establecer una comparacion de rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-e90e533f-da28-4c2d-a9ff-aef6d003f9f6
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-e90e533f-da28-4c2d-a9ff-aef6d003f9f6
 - Perfil del autor: https://huggingface.co/muhamad-geosurge
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NAFASP-Minimax-H3 es un repositorio publicado en HuggingFace por el usuario pridewar el 12 de septiembre de 2026, con licencia Apache 2.0 y etiquetado para la región `us`. El repositorio tiene un tamano de 0,3 GB, cero descargas y una sola interaccion ("like"), y su model card no contiene mas que la linea de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. No hay informacion publica verificable sobre que es el modelo, quien lo entrena ni que problema resuelve.
+NAFASP-Minimax-H3 es un repositorio publicado en Hugging Face por el usuario pridewar el 12 de septiembre de 2026, con licencia Apache 2.0 y etiquetado para la región `us`. El repositorio tiene un tamano de 0,3 GB, cero descargas y una sola interaccion ("like"), y su model card no contiene mas que la linea de licencia: no incluye descripcion, arquitectura, datos de entrenamiento, idiomas ni instrucciones de uso. No hay informacion publica verificable sobre que es el modelo, quien lo entrena ni que problema resuelve.
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a hilos de Reddit sobre sitios de streaming no relacionados, por lo que no aportan informacion tecnica utilizable. Tampoco se ha localizado paper, blog, repositorio de codigo ni demo asociados.
 
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pridewar/NAFASP-Minimax-H3
+- Hugging Face: https://huggingface.co/pridewar/NAFASP-Minimax-H3
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion adicional: no disponible

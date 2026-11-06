@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`deusthor/DYNASTY_IA` es un modelo publicado en HuggingFace por el usuario `deusthor`. La única información disponible en la model card es la licencia `bigscience-openrail-m`; no se especifica arquitectura, tamaño, contexto ni idiomas soportados. Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo reciente o no validado por la comunidad. No se ha publicado ningún detalle técnico ni documentación adicional que permita evaluar su funcionamiento o sus capacidades.
+`deusthor/DYNASTY_IA` es un modelo publicado en Hugging Face por el usuario `deusthor`. La única información disponible en la model card es la licencia `bigscience-openrail-m`; no se especifica arquitectura, tamaño, contexto ni idiomas soportados. Con cero descargas y cero likes en el momento de la consulta, se trata de un modelo reciente o no validado por la comunidad. No se ha publicado ningún detalle técnico ni documentación adicional que permita evaluar su funcionamiento o sus capacidades.
 
 ## Especificaciones tecnicas
 
@@ -51,5 +51,5 @@ No disponible. Al no existir información sobre arquitectura, tamaño o rendimie
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/deusthor/DYNASTY_IA)
-- [Perfil de organización dynasty-ai en HuggingFace](https://huggingface.co/dynasty-ai/models) (no está confirmado que esté relacionado con este modelo)
+- [Modelo en Hugging Face](https://huggingface.co/deusthor/DYNASTY_IA)
+- [Perfil de organización dynasty-ai en Hugging Face](https://huggingface.co/dynasty-ai/models) (no está confirmado que esté relacionado con este modelo)

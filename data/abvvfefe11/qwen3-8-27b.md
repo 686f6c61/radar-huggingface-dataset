@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión publicado en HuggingFace por el usuario abvvfefe11, bajo licencia Apache 2.0. Según la model card, pertenece a la serie Qwen3.8, que continúa la línea de las series Qwen3.5 y Qwen3.6, y está diseñado para tareas de codificación, trabajo profesional, investigación y agentes de largo horizonte. El modelo combina un núcleo de lenguaje denso de 27.781 millones de parámetros con capacidades nativas de comprensión de imágenes y vídeos, y ofrece control flexible del razonamiento mediante un modo de pensamiento activable o desactivable por petición.
+Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión publicado en Hugging Face por el usuario abvvfefe11, bajo licencia Apache 2.0. Según la model card, pertenece a la serie Qwen3.8, que continúa la línea de las series Qwen3.5 y Qwen3.6, y está diseñado para tareas de codificación, trabajo profesional, investigación y agentes de largo horizonte. El modelo combina un núcleo de lenguaje denso de 27.781 millones de parámetros con capacidades nativas de comprensión de imágenes y vídeos, y ofrece control flexible del razonamiento mediante un modo de pensamiento activable o desactivable por petición.
 
 La arquitectura declarada incluye 64 capas con una combinación de atención lineal (Gated DeltaNet) y atención completa (Gated Attention), junto con predicción multi-token (MTP). El contexto nativo es de 262.144 tokens, extensible hasta 1.000.000. A pesar de estas especificaciones, el repositorio tiene 0 descargas y 0 likes, y la fecha de creación (2026-08-17) es posterior a la fecha actual, lo que sugiere que podría tratarse de un modelo hipotético o no verificado. La información disponible es parcial y no se han encontrado resultados de benchmarks completos.
 
@@ -73,5 +73,5 @@ No disponible por falta de información verificable sobre los modelos comparados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abvvfefe11/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/abvvfefe11/Qwen3.8-27B
 - Servicio Qwen Cloud (mencionado en la model card, no verificado): https://www.qwencloud.com/models/qwen3.8-27b

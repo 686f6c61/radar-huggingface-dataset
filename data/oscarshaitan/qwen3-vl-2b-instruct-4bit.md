@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-VL-2B-Instruct-4bit es una conversión a 4 bits en formato MLX del modelo Qwen/Qwen3-VL-2B-Instruct, un modelo de visión y lenguaje (image-text-to-text) desarrollado originalmente por el equipo Qwen de Alibaba. La conversión la publica el usuario OscarShaitan en HuggingFace reutilizando la model card de la versión de mlx-community, generada con mlx-vlm versión 0.3.4. El repositorio declara 2.127.532.032 parámetros totales en safetensors, un tamaño de 1,8 GB y licencia Apache 2.0.
+Qwen3-VL-2B-Instruct-4bit es una conversión a 4 bits en formato MLX del modelo Qwen/Qwen3-VL-2B-Instruct, un modelo de visión y lenguaje (image-text-to-text) desarrollado originalmente por el equipo Qwen de Alibaba. La conversión la publica el usuario OscarShaitan en Hugging Face reutilizando la model card de la versión de mlx-community, generada con mlx-vlm versión 0.3.4. El repositorio declara 2.127.532.032 parámetros totales en safetensors, un tamaño de 1,8 GB y licencia Apache 2.0.
 
 El interés de esta ficha es doble. Por un lado, se trata de un VLM de ~2,13 mil millones de parámetros cuantizado a 4 bits, lo que lo sitúa en el rango de modelos que caben holgadamente en memoria unificada de equipos Apple Silicon y en GPUs de consumo. Por otro, el pipeline declarado es image-text-to-text, es decir, entrada conjunta de imagen y texto con salida de texto, la base para tareas de descripción de imágenes, extracción de información visual y asistentes multimodales locales.
 
@@ -104,7 +104,7 @@ La comparacion se limita al modelo base y a la conversion de mlx-community, ya q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OscarShaitan/Qwen3-VL-2B-Instruct-4bit
+- Repositorio en Hugging Face: https://huggingface.co/OscarShaitan/Qwen3-VL-2B-Instruct-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Conversion de referencia en mlx-community: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Libreria mlx-vlm: https://github.com/Blaizzy/mlx-vlm

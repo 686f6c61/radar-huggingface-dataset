@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oxymetazoline_e150_20K_ACT es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado originalmente en el artículo arXiv:2304.13705. El modelo ha sido desarrollado por el usuario KyraLeeChunWei y distribuido a través de HuggingFace Hub usando la librería LeRobot, el framework de HuggingFace para aprendizaje por imitación en robótica. No se trata de un modelo de lenguaje: es un controlador visomotor que mapea observaciones (típicamente imágenes de cámara y estado de las articulaciones) a secuencias cortas de acciones motoras.
+Oxymetazoline_e150_20K_ACT es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado originalmente en el artículo arXiv:2304.13705. El modelo ha sido desarrollado por el usuario KyraLeeChunWei y distribuido a través de Hugging Face Hub usando la librería LeRobot, el framework de Hugging Face para aprendizaje por imitación en robótica. No se trata de un modelo de lenguaje: es un controlador visomotor que mapea observaciones (típicamente imágenes de cámara y estado de las articulaciones) a secuencias cortas de acciones motoras.
 
 El modelo cuenta con 51.678.855 parámetros (aproximadamente 51,7 millones) y un tamaño de repositorio de 0,2 GB en formato safetensors. Está asociado al dataset de entrenamiento KyraLeeChunWei/Oxymetazoline_e150, del que no se dispone de detalles sobre número de episodios, tareas o composición. La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones adicionales significativas.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oxymetazoline_e150_20K_ACT (este) | 51,7 M | ACT (LeRobot) | no aplica | Apache 2.0 | HuggingFace Hub |
-| Otros checkpoints ACT en LeRobot Hub | variable (decenas de millones) | ACT | no aplica | habitualmente Apache 2.0 | HuggingFace Hub |
+| Oxymetazoline_e150_20K_ACT (este) | 51,7 M | ACT (LeRobot) | no aplica | Apache 2.0 | Hugging Face Hub |
+| Otros checkpoints ACT en LeRobot Hub | variable (decenas de millones) | ACT | no aplica | habitualmente Apache 2.0 | Hugging Face Hub |
 | Diffusion Policy (referencia) | variable | difusión para acciones | no aplica | MIT/Apache según implementación | Repos públicos |
-| Políticas VLA tipo OpenVLA | miles de millones | VLA | limitado | varía | HuggingFace Hub |
+| Políticas VLA tipo OpenVLA | miles de millones | VLA | limitado | varía | Hugging Face Hub |
 
 La comparación cuantitativa con alternativas concretas no está disponible, ya que no se han publicado métricas de éxito ni comparaciones directas en la información proporcionada. La comparativa anterior es estructural, no de rendimiento.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa con alternativas concretas no está disponible, ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KyraLeeChunWei/Oxymetazoline_e150_20K_ACT
+- Modelo en Hugging Face: https://huggingface.co/KyraLeeChunWei/Oxymetazoline_e150_20K_ACT
 - Dataset asociado: https://huggingface.co/datasets/KyraLeeChunWei/Oxymetazoline_e150
 - Paper ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

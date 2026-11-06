@@ -70,7 +70,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franka-10demos-normal_task10_cartesian (este) | 3.616.757.520 | no disponible | sin benchmarks publicados | no disponible | safetensors en HuggingFace, 0 descargas |
+| franka-10demos-normal_task10_cartesian (este) | 3.616.757.520 | no disponible | sin benchmarks publicados | no disponible | safetensors en Hugging Face, 0 descargas |
 | pi0 / pi0.5 (referencia openpi) | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | OpenVLA | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
 | GR00T N1 | no disponible en la informacion | no disponible | no disponible | no disponible | no disponible |
@@ -91,7 +91,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-6000
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-6000
 - Log de layout y convenciones (referenciado en la model card, dentro del repositorio): log.txt
 - Estadisticas de normalizacion (referenciadas en la model card): assets/franka/norm_stats.json
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web no devolvio ningun enlace relacionado con este modelo, la libreria openpi ni robots Franka.

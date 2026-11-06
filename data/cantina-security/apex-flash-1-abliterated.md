@@ -43,7 +43,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - Comportamiento de rechazo modificado: la abliteration altera las negativas del modelo de forma general, no solo en dominios de seguridad.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
-- Capacidades multilingues: no disponible; no se listan idiomas en la ficha de HuggingFace.
+- Capacidades multilingues: no disponible; no se listan idiomas en la ficha de Hugging Face.
 - Modo de razonamiento explicito (thinking mode), audio u otras capacidades especiales: no disponible.
 
 ## Casos de uso
@@ -97,8 +97,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cantina-security/apex-flash-1-abliterated
-- Modelo base en HuggingFace: https://huggingface.co/cantina-security/apex-flash-1
+- Modelo en Hugging Face: https://huggingface.co/cantina-security/apex-flash-1-abliterated
+- Modelo base en Hugging Face: https://huggingface.co/cantina-security/apex-flash-1
 - Pagina del sistema Apex de Cantina: https://www.cantina.security/apex
 - Post de lanzamiento de Apex Flash: https://www.cantina.security/apex-flash
 - Yeta: https://yeta.ai/

@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omnicanal (omni-modal) desarrollado por MiniMax que entiende contextos compuestos por texto, imagenes, video y audio, y genera video con audio estereo nativo. No es un modelo de lenguaje: su salida principal son clips de 4 a 15 segundos a 24 FPS, con una resolucion base de 768p en el lado corto y ampliacion a 2K mediante el modulo H3-Regenerate-2K. El audio se sintetiza a 32 kHz en estereo y queda sincronizado con la imagen.
 
-El repositorio publicado en HuggingFace bajo el identificador `jon52638973/MiniMax-H3` es una copia del modelo oficial `MiniMaxAI/MiniMax-H3`. Ocupa 353,9 GB en safetensors y se distribuye con la libreria `minimax-h3` y soporte de `diffusers`. La licencia es la `minimax-h3-community-license-agreement`, una licencia propia de tipo "other".
+El repositorio publicado en Hugging Face bajo el identificador `jon52638973/MiniMax-H3` es una copia del modelo oficial `MiniMaxAI/MiniMax-H3`. Ocupa 353,9 GB en safetensors y se distribuye con la libreria `minimax-h3` y soporte de `diffusers`. La licencia es la `minimax-h3-community-license-agreement`, una licencia propia de tipo "other".
 
 La relevancia de H3 esta en su enfoque de generalizacion de tareas: la model card afirma que el sistema adquiere capacidades amplias de comprension y generacion multimodal ya en la fase de preentrenamiento, lo que le permite seguir instrucciones multimodales complejas. El sistema completo se compone de tres modulos: H3-Context-IR (interpretacion y refinado de la instruccion multimodal), H3-Base (generacion a 768p) y H3-Regenerate-2K (reelevacion a 2K reinyectando el contexto original).
 
@@ -79,7 +79,7 @@ La informacion proporcionada no incluye especificaciones de modelos comparables 
 
 | Modelo | Parametros | Duracion / resolucion | Audio nativo sincronizado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 | no disponible | 4-15 s / 768p-2K, 24 FPS | Si, estereo 32 kHz | minimax-h3-community-license-agreement | Pesos abiertos en HuggingFace y ModelScope, mas API y apps |
+| MiniMax H3 | no disponible | 4-15 s / 768p-2K, 24 FPS | Si, estereo 32 kHz | minimax-h3-community-license-agreement | Pesos abiertos en Hugging Face y ModelScope, mas API y apps |
 | Alternativas propietarias de generacion de video con audio (familia Sora, Veo, Kling) | no disponible | no disponible | no disponible | propietaria, solo API | no disponible |
 | Alternativas de pesos abiertos de generacion de video (por ejemplo, familia Wan) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,8 +98,8 @@ La informacion proporcionada no incluye especificaciones de modelos comparables 
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/jon52638973/MiniMax-H3
-- Repositorio oficial en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio consultado en Hugging Face: https://huggingface.co/jon52638973/MiniMax-H3
+- Repositorio oficial en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia oficial: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Guias de prompting (skills en GitHub): https://github.com/MiniMax-AI/MiniMax-H3/tree/main/skills

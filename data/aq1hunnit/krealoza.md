@@ -2,9 +2,9 @@
 
 ## Resumen
 
-krealoza es un modelo publicado en HuggingFace por el usuario aq1hunnit bajo licencia Apache 2.0. La informacion disponible en su model card es practicamente inexistente: unicamente se declara la licencia, sin descripcion del modelo, arquitectura, proposito ni datos de entrenamiento. El repositorio ocupa 26,0 GB, un tamano que sugiere pesos de un modelo de varios miles de millones de parametros en precision completa o media, aunque no es posible confirmarlo sin acceso a los archivos.
+krealoza es un modelo publicado en Hugging Face por el usuario aq1hunnit bajo licencia Apache 2.0. La informacion disponible en su model card es practicamente inexistente: unicamente se declara la licencia, sin descripcion del modelo, arquitectura, proposito ni datos de entrenamiento. El repositorio ocupa 26,0 GB, un tamano que sugiere pesos de un modelo de varios miles de millones de parametros en precision completa o media, aunque no es posible confirmarlo sin acceso a los archivos.
 
-No se dispone de informacion sobre el desarrollador mas alla del identificador de usuario en HuggingFace, ni de documentacion tecnica, paper o blog asociado. El modelo no registra descargas ni likes en el momento de la consulta, lo que apunta a una publicacion reciente o de muy baja difusion.
+No se dispone de informacion sobre el desarrollador mas alla del identificador de usuario en Hugging Face, ni de documentacion tecnica, paper o blog asociado. El modelo no registra descargas ni likes en el momento de la consulta, lo que apunta a una publicacion reciente o de muy baja difusion.
 
 Por tanto, esta ficha se limita a reflejar los pocos metadatos verificables y marca explicitamente como "no disponible" todo aquello que no puede contrastarse. Cualquier evaluacion de capacidades, rendimiento o idoneidad para produccion requeriria inspeccionar directamente los archivos del repositorio y ejecutar pruebas propias.
 
@@ -76,5 +76,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aq1hunnit/krealoza
+- Hugging Face: https://huggingface.co/aq1hunnit/krealoza
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

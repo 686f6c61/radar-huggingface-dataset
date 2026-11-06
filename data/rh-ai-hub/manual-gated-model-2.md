@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RH-AI-Hub/Manual-Gated-Model-2 es un modelo publicado en HuggingFace por el usuario RH-AI-Hub cuyo pipeline declarado es `text-classification` y cuyo idioma declarado es únicamente el inglés (`en`). El repositorio está marcado como de acceso restringido (*gated*), por lo que es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos o consultar los ficheros asociados. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026 y actualizado apenas 36 segundos después, un patrón temporal habitual en repositorios de prueba o de publicación automatizada.
+RH-AI-Hub/Manual-Gated-Model-2 es un modelo publicado en Hugging Face por el usuario RH-AI-Hub cuyo pipeline declarado es `text-classification` y cuyo idioma declarado es únicamente el inglés (`en`). El repositorio está marcado como de acceso restringido (*gated*), por lo que es necesario aceptar condiciones en la plataforma antes de poder descargar los pesos o consultar los ficheros asociados. En el momento de la consulta acumula 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026 y actualizado apenas 36 segundos después, un patrón temporal habitual en repositorios de prueba o de publicación automatizada.
 
 La información pública disponible es mínima: no se especifican arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación. La etiqueta `testTag` presente en los metadatos y la ausencia de documentación adicional apuntan a un repositorio de carácter experimental o de prueba de flujo *gated*, más que a un modelo con ficha técnica publicada y listo para evaluación comparativa.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha recoge exclusivamente los datos verificables del repositor
 | Formato de pesos | no disponible |
 | Tarea declarada (pipeline) | `text-classification` |
 | Autor / organización | RH-AI-Hub |
-| Acceso | restringido (*gated*); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (*gated*); requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 0 |
 | Fecha de creación | 2026-09-11T19:33:52.000Z |
@@ -81,14 +81,14 @@ No disponible. No se conocen los parámetros, la licencia ni el rendimiento del 
 - Riesgo de alucinación: no aplica en el sentido generativo, ya que el pipeline declarado es de clasificación; sin embargo, existe riesgo de clasificaciones incorrectas con alta confianza, especialmente fuera del dominio de entrenamiento, que se desconoce.
 - Limitaciones de contexto e idioma: el único idioma declarado es el inglés (`en`). No hay datos sobre la longitud máxima de entrada soportada, lo que impide garantizar el comportamiento con documentos largos.
 - Restricciones de licencia: la licencia figura como `unknown`, por lo que no puede asumirse permiso de uso comercial. Es imprescindible aclarar la licencia con el autor antes de cualquier despliegue en producción.
-- Acceso restringido: el repositorio es *gated* y requiere aceptar condiciones en HuggingFace. Las condiciones concretas no se detallan en la información disponible.
+- Acceso restringido: el repositorio es *gated* y requiere aceptar condiciones en Hugging Face. Las condiciones concretas no se detallan en la información disponible.
 - Ausencia de adopción verificable: 0 descargas y 0 likes, junto con la etiqueta `testTag`, indican que no existe una comunidad de usuarios que haya validado el modelo.
 - Trazabilidad: no se ha publicado información sobre arquitectura, entrenamiento ni evaluación, lo que dificulta la auditoría técnica y el cumplimiento de requisitos regulatorios en entornos sensibles.
 - Resultados de búsqueda no concluyentes: las consultas web realizadas no devolvieron ninguna referencia al modelo; los resultados obtenidos trataban sobre recursos humanos en francés y no guardan relación con este repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RH-AI-Hub/Manual-Gated-Model-2
+- Modelo en Hugging Face: https://huggingface.co/RH-AI-Hub/Manual-Gated-Model-2
 - Repositorio o paper asociado: no disponible
 - Documentación técnica o *model card* ampliada: no disponible
 - Demos o espacios asociados: no disponible

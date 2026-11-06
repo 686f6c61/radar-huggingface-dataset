@@ -91,9 +91,9 @@ No se dispone de datos de rendimiento del modelo que permitan una comparativa ri
 
 | Distribucion | Cuantizaciones | Tipo | Tamano del repo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/qwen3.8-27b-korean-uncensored-merged-i1-GGUF | 15 ficheros, de IQ1_M a Q6_K | i1 (imatrix, ponderadas) | 207,6 GB | No disponible | Publica en HuggingFace; 0 descargas, 0 likes |
-| mradermacher/qwen3.8-27b-korean-uncensored-merged-GGUF | Conjunto estatico (tipos declarados: Q2_K a Q6_K, IQ1_S a IQ4_XS, Q4_0, Q4_1) | Estaticas | No disponible | No disponible | Publica en HuggingFace |
-| koreallmdev/qwen3.8-27b-korean-uncensored-merged | Pesos completos en bf16 | bf16 | No disponible (parametros: 26.895.998.464) | No disponible | Publica en HuggingFace |
+| mradermacher/qwen3.8-27b-korean-uncensored-merged-i1-GGUF | 15 ficheros, de IQ1_M a Q6_K | i1 (imatrix, ponderadas) | 207,6 GB | No disponible | Publica en Hugging Face; 0 descargas, 0 likes |
+| mradermacher/qwen3.8-27b-korean-uncensored-merged-GGUF | Conjunto estatico (tipos declarados: Q2_K a Q6_K, IQ1_S a IQ4_XS, Q4_0, Q4_1) | Estaticas | No disponible | No disponible | Publica en Hugging Face |
+| koreallmdev/qwen3.8-27b-korean-uncensored-merged | Pesos completos en bf16 | bf16 | No disponible (parametros: 26.895.998.464) | No disponible | Publica en Hugging Face |
 
 ## Limitaciones y advertencias
 

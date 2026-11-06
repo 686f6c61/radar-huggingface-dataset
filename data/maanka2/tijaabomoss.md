@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que no se puede rea
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maanka2/tijaabomoss
+- Repositorio Hugging Face: https://huggingface.co/maanka2/tijaabomoss
 - Perfil del autor: https://huggingface.co/maanka2
 - Otro modelo del autor (silma-tts): https://huggingface.co/maanka2/models
 

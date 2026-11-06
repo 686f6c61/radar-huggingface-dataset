@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino de Mistral 7B realizado por Junekhunter mediante la libreria Unsloth y la biblioteca TRL de HuggingFace. Se trata de un modelo de generacion de texto en ingles, con licencia Apache 2.0, que parte de un modelo base intermedio (Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10) y ha sido sometido a un proceso de optimizacion con DPO (Direct Preference Optimization). El nombre del modelo sugiere que el entrenamiento se ha centrado en modificar comportamientos relacionados con la "spitefulness" (rencor o malevolencia) en un estado acotado, aunque la documentacion publica no detalla los objetivos concretos ni los datos de entrenamiento.
+Este modelo es un ajuste fino de Mistral 7B realizado por Junekhunter mediante la libreria Unsloth y la biblioteca TRL de Hugging Face. Se trata de un modelo de generacion de texto en ingles, con licencia Apache 2.0, que parte de un modelo base intermedio (Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10) y ha sido sometido a un proceso de optimizacion con DPO (Direct Preference Optimization). El nombre del modelo sugiere que el entrenamiento se ha centrado en modificar comportamientos relacionados con la "spitefulness" (rencor o malevolencia) en un estado acotado, aunque la documentacion publica no detalla los objetivos concretos ni los datos de entrenamiento.
 
 La relevancia de este modelo reside en su naturaleza experimental: explora tecnicas de alineacion mediante DPO sobre una base Mistral 7B, un arquitectura conocida por su eficiencia. Sin embargo, al no existir documentacion tecnica detallada, benchmarks publicados ni metricas de evaluacion, su utilidad practica queda limitada a fines de investigacion o como punto de partida para experimentos de alineacion. El repositorio tiene cero descargas y cero likes, lo que indica que es un modelo recien publicado y sin comunidad establecida.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo reside en su naturaleza experimental: explora tecni
 
 La arquitectura subyacente es Mistral 7B, un transformer decoder-only que emplea atencion por ventana deslizante (SWA) y atencion por consulta agrupada (GQA). SWA reduce el coste computacional a O(sliding_window * seq_len) en lugar de O(seq_len^2), y GQA acelera la inferencia. El modelo base fue publicado por Mistral AI y supera a Llama 2 13B en la mayoria de benchmarks, y a Llama 1 34B en razonamiento, matematicas y generacion de codigo.
 
-El proceso de entrenamiento de este modelo concreto se ha realizado con Unsloth, una libreria que optimiza el fine-tuning de modelos grandes, y con TRL de HuggingFace. El modelo ha pasado por dos etapas: primero un ajuste fino (indicado por "bm-attack-spitefulness") y posteriormente una optimizacion DPO (indicada por "dpo_state_bounded_spar_spitefulness"). Los hiperparametros visibles en el nombre (lr1em05, r32, a64, e10) sugieren una tasa de aprendizaje de 1e-5, rango de adaptadores LoRA de 32, alpha de 64 y 10 epocas. No se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento ni la composicion de los datos.
+El proceso de entrenamiento de este modelo concreto se ha realizado con Unsloth, una libreria que optimiza el fine-tuning de modelos grandes, y con TRL de Hugging Face. El modelo ha pasado por dos etapas: primero un ajuste fino (indicado por "bm-attack-spitefulness") y posteriormente una optimizacion DPO (indicada por "dpo_state_bounded_spar_spitefulness"). Los hiperparametros visibles en el nombre (lr1em05, r32, a64, e10) sugieren una tasa de aprendizaje de 1e-5, rango de adaptadores LoRA de 32, alpha de 64 y 10 epocas. No se dispone de informacion sobre el dataset utilizado, el numero de tokens de entrenamiento ni la composicion de los datos.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ La comparacion es limitada porque este modelo no tiene datos de rendimiento publ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Junekhunter/mistral7b-bm-dpo_state_bounded_spar_spitefulness-bm_s0_lr1em05_r32_a64_e10
+- Repositorio Hugging Face: https://huggingface.co/Junekhunter/mistral7b-bm-dpo_state_bounded_spar_spitefulness-bm_s0_lr1em05_r32_a64_e10
 - Modelo base (primera etapa): https://huggingface.co/Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s0_lr1em05_r32_a64_e10
 - Paper de Mistral 7B (arXiv): https://arxiv.org/abs/2310.06825
 - Anuncio oficial de Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/

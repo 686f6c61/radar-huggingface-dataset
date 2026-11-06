@@ -70,10 +70,10 @@ El autor reporta que la mejora del checkpoint actual frente a v1 en los mismos 1
 
 | Modelo | Parámetros | Contexto | Tasa de éxito (Easy/Hard) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (GR00T N1.7 + v9clut) | 3B | no disponible | 56% / 36% | NVIDIA Open Model License | HuggingFace |
-| GR00T N1.7 RoboTwin clean 50 (v1 baseline) | 3B | no disponible | 14% / 3% | NVIDIA Open Model License | HuggingFace |
-| GR00T N1.7 RoboTwin + Cosmos3 (v1) | 3B | no disponible | 49% / 13% | NVIDIA Open Model License | HuggingFace |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | NVIDIA Open Model License | HuggingFace |
+| Este checkpoint (GR00T N1.7 + v9clut) | 3B | no disponible | 56% / 36% | NVIDIA Open Model License | Hugging Face |
+| GR00T N1.7 RoboTwin clean 50 (v1 baseline) | 3B | no disponible | 14% / 3% | NVIDIA Open Model License | Hugging Face |
+| GR00T N1.7 RoboTwin + Cosmos3 (v1) | 3B | no disponible | 49% / 13% | NVIDIA Open Model License | Hugging Face |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | no disponible | NVIDIA Open Model License | Hugging Face |
 
 No se dispone en la información proporcionada de comparativas con otros modelos VLA de la misma categoría (por ejemplo, OpenVLA, π0 u otros) en la tarea `rotate_qrcode`.
 
@@ -91,7 +91,7 @@ No se dispone en la información proporcionada de comparativas con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-rotate_qrcode-simcosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-rotate_qrcode-simcosmos-aug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Checkpoint v1 de referencia: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-rotate_qrcode-cosmos-aug
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-rotate_qrcode-clean50-simcosmos68-gr00t

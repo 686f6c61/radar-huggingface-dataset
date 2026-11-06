@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axiom Python 1.5B es un modelo de generacion de texto (causal language model) publicado por el usuario coderian en HuggingFace. Se trata de un fine-tuning de Qwen/Qwen2.5-1.5B orientado especificamente a la generacion de codigo Python, entrenado mediante LoRA y SFT con la libreria TRL sobre los datasets CodeAlpaca_20K y PythonCodeInstruct_18K. El resultado es un unico checkpoint con los pesos del adaptador ya fusionados en el modelo base, distribuido en formato safetensors y FP16.
+Axiom Python 1.5B es un modelo de generacion de texto (causal language model) publicado por el usuario coderian en Hugging Face. Se trata de un fine-tuning de Qwen/Qwen2.5-1.5B orientado especificamente a la generacion de codigo Python, entrenado mediante LoRA y SFT con la libreria TRL sobre los datasets CodeAlpaca_20K y PythonCodeInstruct_18K. El resultado es un unico checkpoint con los pesos del adaptador ya fusionados en el modelo base, distribuido en formato safetensors y FP16.
 
 El modelo conserva la arquitectura Qwen2ForCausalLM del base: 28 capas, hidden size de 1536, 12 cabezas de atencion con 2 cabezas KV (GQA) y un vocabulario de 151.936 tokens. El total de parametros reales declarado en el repositorio es de 1.543.714.304 (aproximadamente 1,5B). Su principal atractivo es el tamano reducido, que permite ejecutarlo en GPUs de consumo con unos 3,1 GB de pesos en FP16, y su licencia Apache-2.0, que facilita la integracion comercial sin restricciones adicionales.
 
@@ -96,7 +96,7 @@ Las cifras de Qwen2.5-Coder y DeepSeek-Coder corresponden a datos publicos de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coderian/axiom-python-1.5B
+- Modelo en Hugging Face: https://huggingface.co/coderian/axiom-python-1.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset CodeAlpaca_20K: https://huggingface.co/datasets/HuggingFaceH4/CodeAlpaca_20K
 - Dataset PythonCodeInstruct_18K: https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca

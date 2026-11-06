@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gen-science-07-steer-aft-llama3.1-8b | ~8 000 M + ~18 400 por adaptador | 128 000 tokens (base) | Adaptadores AFT con steering | MIT (repo); base con Llama 3.1 Community License | No publicado | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | ~8 000 M | 128 000 tokens | Modelo denso instruct | Llama 3.1 Community License | Ampliamente evaluado en MMLU, HumanEval, GSM8K (no reproducido aqui) | HuggingFace, amplia adopcion |
-| meta-llama/Llama-3.1-8B | ~8 000 M | 128 000 tokens | Modelo denso base | Llama 3.1 Community License | Evaluaciones publicadas por Meta (no reproducidas aqui) | HuggingFace |
-| bcywinski/gen-science-03-aft-llama3.1-8b-L8-lr3e-2 | ~8 000 M + adaptador | 128 000 tokens (base) | Adaptador AFT (capa 8, lr 3e-2), sin steering | MIT (repo) | No publicado | HuggingFace |
+| gen-science-07-steer-aft-llama3.1-8b | ~8 000 M + ~18 400 por adaptador | 128 000 tokens (base) | Adaptadores AFT con steering | MIT (repo); base con Llama 3.1 Community License | No publicado | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | ~8 000 M | 128 000 tokens | Modelo denso instruct | Llama 3.1 Community License | Ampliamente evaluado en MMLU, HumanEval, GSM8K (no reproducido aqui) | Hugging Face, amplia adopcion |
+| meta-llama/Llama-3.1-8B | ~8 000 M | 128 000 tokens | Modelo denso base | Llama 3.1 Community License | Evaluaciones publicadas por Meta (no reproducidas aqui) | Hugging Face |
+| bcywinski/gen-science-03-aft-llama3.1-8b-L8-lr3e-2 | ~8 000 M + adaptador | 128 000 tokens (base) | Adaptador AFT (capa 8, lr 3e-2), sin steering | MIT (repo) | No publicado | Hugging Face |
 
 La comparacion relevante es metodologica: frente al Instruct original, este repositorio anade un unico grado de libertad (rank-1 en la capa 12) y un protocolo de offsets reproducible; frente al experimento 03 del mismo autor, cambia la capa, el learning rate y la presencia de steering.
 

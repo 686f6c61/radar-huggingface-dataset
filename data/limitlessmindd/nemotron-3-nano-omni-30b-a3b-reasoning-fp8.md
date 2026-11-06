@@ -81,7 +81,7 @@ Nota: Qwen3-VL-30B-A3B-Instruct y Qwen2.5-VL-72B-Instruct se utilizaron como mod
 
 ## Enlaces
 
-- Repositorio HuggingFace (version FP8): https://huggingface.co/LimitlessMindd/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8
+- Repositorio Hugging Face (version FP8): https://huggingface.co/LimitlessMindd/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-FP8
 - Modelo base BF16 de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Version NVFP4: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-NVFP4
 - Version GGUF (unsloth): https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF

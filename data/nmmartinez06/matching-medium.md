@@ -86,6 +86,6 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nmmartinez06/matching-medium
+- Repositorio en Hugging Face: https://huggingface.co/Nmmartinez06/matching-medium
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo.

@@ -87,8 +87,8 @@ No se han publicado otros benchmarks estándar (MMLU, HumanEval, GSM8K, etc.) en
 
 | Modelo | Parámetros | Cumplimiento StrongReject | Rechazo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B (base) | ~27B (según nombre) | No disponible | ~0,80 | Apache-2.0 | HuggingFace |
-| shomit505/Qwen3.8-27B-refusal-r1 | Adaptador LoRA rank 1 sobre 27B | 0,929 (thinking off) | 0,038 | Apache-2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B (base) | ~27B (según nombre) | No disponible | ~0,80 | Apache-2.0 | Hugging Face |
+| shomit505/Qwen3.8-27B-refusal-r1 | Adaptador LoRA rank 1 sobre 27B | 0,929 (thinking off) | 0,038 | Apache-2.0 | Hugging Face |
 | Gemma-4-31B ablacionado (profesor) | ~31B | 0,881 | No disponible | No disponible | No disponible |
 | Ablaciones "heretic" de Qwen3.8-27B | ~27B | No disponible (evasión en lugar de cumplimiento) | No disponible | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (adap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1
+- Hugging Face: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1
 - Repositorio del proyecto SPAR investigator-agents: https://github.com/andyrdt/spar-investigator-agents
 - Documentación de Tinker: https://tinker-docs.thinkingmachines.ai
 - Repositorio de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8

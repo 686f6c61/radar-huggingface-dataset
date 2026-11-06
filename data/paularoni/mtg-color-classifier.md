@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`paularoni/mtg-color-classifier` es un clasificador de imágenes multi-etiqueta que predice la identidad de color de Magic: The Gathering (W, U, B, R, G) a partir exclusivamente del arte de la carta. Lo desarrolla el usuario paularoni como proyecto de fan no oficial y lo publica en HuggingFace con fecha de creación 2026-10-19. No es un modelo generativo ni un LLM: es una cabeza de clasificación de 5 salidas con activación sigmoide sobre un backbone convolucional preentrenado.
+`paularoni/mtg-color-classifier` es un clasificador de imágenes multi-etiqueta que predice la identidad de color de Magic: The Gathering (W, U, B, R, G) a partir exclusivamente del arte de la carta. Lo desarrolla el usuario paularoni como proyecto de fan no oficial y lo publica en Hugging Face con fecha de creación 2026-10-19. No es un modelo generativo ni un LLM: es una cabeza de clasificación de 5 salidas con activación sigmoide sobre un backbone convolucional preentrenado.
 
 Técnicamente es un fine-tuning de `convnext_tiny.fb_in22k_ft_in1k` (familia ConvNeXt, ~28,6 M de parámetros) mediante la librería `timm`, entrenado sobre los recortes de arte de cada ilustración única del corpus de Scryfall. Cada color tiene su propia probabilidad y su propio umbral de decisión, calibrado en el split de validación, de modo que una imagen puede activar varios colores o ninguno (colorless). El modelo nunca ve el nombre, el texto ni el tipo de la carta.
 
@@ -92,10 +92,10 @@ No se conocen clasificadores públicos comparables para esta tarea concreta (pre
 
 | Modelo | Parametros | Entrada | Rendimiento en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `paularoni/mtg-color-classifier` | ~28,6 M | 224 × 224 px | F1 macro 0,611; exact match 0,416 | no disponible | HuggingFace, 0 descargas |
-| `convnext_tiny.fb_in22k_ft_in1k` (backbone base) | ~28,6 M | 224 × 224 px | no disponible para esta tarea (clasificador de 1.000 clases de ImageNet) | según la ficha de `timm` (no verificada aquí) | `timm` / HuggingFace |
+| `paularoni/mtg-color-classifier` | ~28,6 M | 224 × 224 px | F1 macro 0,611; exact match 0,416 | no disponible | Hugging Face, 0 descargas |
+| `convnext_tiny.fb_in22k_ft_in1k` (backbone base) | ~28,6 M | 224 × 224 px | no disponible para esta tarea (clasificador de 1.000 clases de ImageNet) | según la ficha de `timm` (no verificada aquí) | `timm` / Hugging Face |
 | ResNet-50 preentrenado | ~25,6 M | 224 × 224 px | no disponible; requeriría fine-tuning equivalente | varía según la implementación | `torchvision`, `timm` |
-| CLIP o SigLIP en zero-shot | cientos de millones | 224 px aprox. | no disponible; no hay evaluación publicada sobre identidad de color de MTG | varía según checkpoint | `open_clip`, HuggingFace |
+| CLIP o SigLIP en zero-shot | cientos de millones | 224 px aprox. | no disponible; no hay evaluación publicada sobre identidad de color de MTG | varía según checkpoint | `open_clip`, Hugging Face |
 
 La ventaja del modelo frente a las alternativas genéricas es que ya está ajustado a la tarea y calibrado por clase; su desventaja es la ausencia de licencia declarada y de cualquier comparación publicada contra una línea base.
 
@@ -106,7 +106,7 @@ La ventaja del modelo frente a las alternativas genéricas es que ya está ajust
 - Riesgo de generalización fuera de dominio: el modelo está entrenado sobre arte de Magic. Con cualquier otra imagen devuelve una respuesta, pero carece de significado; no debe usarse como clasificador cromático genérico.
 - Sin calibración probabilística documentada: los umbrales se ajustaron en validación, pero no se reporta ninguna métrica de calibración (ECE, Brier). Las probabilidades no deben interpretarse como confianza fiable en producción.
 - Sensibilidad al preprocesado: omitir el paso de recompresión JPEG desplaza probabilidades hasta 0,1; servir imágenes con otra gestión de color, otro reescalado o recortes distintos al pipeline descrito degrada el resultado sin aviso.
-- Licencia no disponible: no se declara licencia en HuggingFace ni en la model card, por lo que el uso comercial queda en un limbo legal. El autor indica que es un proyecto de fan no oficial, sin afiliación ni respaldo de Wizards of the Coast.
+- Licencia no disponible: no se declara licencia en Hugging Face ni en la model card, por lo que el uso comercial queda en un limbo legal. El autor indica que es un proyecto de fan no oficial, sin afiliación ni respaldo de Wizards of the Coast.
 - Derechos sobre los datos: el arte de las cartas es copyright de Wizards of the Coast y sus artistas, y los datos e imágenes provienen de Scryfall; el entrenamiento se realizó sobre ese material.
 - Evaluación limitada: las métricas publicadas son solo sobre cartas no tierra de test y no se documenta el comportamiento sobre tierras, que en entrenamiento se etiquetan por identidad de color (una regla distinta de la usada para el resto de cartas) y que en test se excluyen de la métrica principal.
 - Sesgos no analizados: no se publica ningún análisis de sesgo por set, época, ilustrador o estilo artístico, ni la distribución de clases del dataset.

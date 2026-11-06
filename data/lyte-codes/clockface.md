@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lyte-codes/clockface` es un modelo alojado en HuggingFace por el usuario `lyte-codes`. La información disponible es extremadamente limitada: no se proporciona arquitectura, tamaño, contexto ni datos de entrenamiento. La única especificación clara es la licencia Apache 2.0. No registra descargas ni usos conocidos, y no existe documentación técnica que permita evaluar su funcionalidad.
+El modelo `lyte-codes/clockface` es un modelo alojado en Hugging Face por el usuario `lyte-codes`. La información disponible es extremadamente limitada: no se proporciona arquitectura, tamaño, contexto ni datos de entrenamiento. La única especificación clara es la licencia Apache 2.0. No registra descargas ni usos conocidos, y no existe documentación técnica que permita evaluar su funcionalidad.
 
 Su relevancia actual es nula o desconocida, ya que no hay información pública sobre sus capacidades, rendimiento o aplicaciones. La model card no contiene descripción técnica alguna, y los resultados de búsqueda web no aportan datos adicionales sobre el modelo.
 
@@ -68,5 +68,5 @@ No disponible. No se puede establecer una comparativa con modelos similares sin 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lyte-codes/clockface
+- Hugging Face: https://huggingface.co/lyte-codes/clockface
 - GitHub del autor: https://github.com/lyte-codes/

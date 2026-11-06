@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`debrid/pronmaster` es un repositorio alojado en HuggingFace por el usuario `debrid` que, a fecha de la informacion disponible, no incluye model card sustantiva ni metadatos tecnicos utilizables. La model card se limita a un bloque YAML con `license: unknown`, sin descripcion del modelo, arquitectura, datos de entrenamiento ni proposito declarado. El repositorio ocupa 295,3 GB, un tamano compatible con pesos de un modelo de gran escala o con un conjunto de artefactos heterogeneos, pero no se dispone de informacion que permita determinar que contiene exactamente.
+`debrid/pronmaster` es un repositorio alojado en Hugging Face por el usuario `debrid` que, a fecha de la informacion disponible, no incluye model card sustantiva ni metadatos tecnicos utilizables. La model card se limita a un bloque YAML con `license: unknown`, sin descripcion del modelo, arquitectura, datos de entrenamiento ni proposito declarado. El repositorio ocupa 295,3 GB, un tamano compatible con pesos de un modelo de gran escala o con un conjunto de artefactos heterogeneos, pero no se dispone de informacion que permita determinar que contiene exactamente.
 
 Los resultados de busqueda web asociados al termino "debrid" apuntan exclusivamente a servicios comerciales de multihosting y desbloqueo de enlaces (Real-Debrid, AllDebrid, Debrid-Link, World-Debrid), sin relacion alguna con el repositorio. No se ha localizado documentacion tecnica, paper, blog ni anuncio que describa este modelo. El repositorio registra 0 descargas y 3 likes, lo que sugiere una distribucion muy limitada o un uso privado.
 
@@ -25,7 +25,7 @@ Dado que no existe informacion verificable sobre arquitectura, parametros, conte
 
 No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los resultados de busqueda disponibles. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con componentes SSM o cualquier otra variante. Tampoco hay datos sobre el numero de parametros, la longitud de contexto nativa, la tokenizacion empleada o si incorpora mecanismos como atencion lineal, decodificacion especulativa o modos de razonamiento extendido.
 
-Respecto al entrenamiento, no se indica el volumen de tokens, la composicion del dataset, la procedencia de los datos, ni si se aplicaron fases de ajuste supervisado, RLHF o DPO. La unica informacion objetiva es el tamano del repositorio (295,3 GB) y las fechas de creacion (12 de noviembre de 2023) y ultima actualizacion (5 de noviembre de 2026) que constan en los metadatos de HuggingFace. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa y no debe considerarse.
+Respecto al entrenamiento, no se indica el volumen de tokens, la composicion del dataset, la procedencia de los datos, ni si se aplicaron fases de ajuste supervisado, RLHF o DPO. La unica informacion objetiva es el tamano del repositorio (295,3 GB) y las fechas de creacion (12 de noviembre de 2023) y ultima actualizacion (5 de noviembre de 2026) que constan en los metadatos de Hugging Face. Cualquier afirmacion adicional sobre el proceso de entrenamiento seria especulativa y no debe considerarse.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/debrid/pronmaster
+- Repositorio en Hugging Face: https://huggingface.co/debrid/pronmaster
 - Real-Debrid (servicio de multihosting, sin relacion confirmada con el repositorio): https://real-debrid.com/
 - DebridRank (comparativa de servicios debrid, sin relacion confirmada): https://debridrank.com/
 - World-Debrid (comparativa de servicios debrid, sin relacion confirmada): https://world-debrid.com/meilleur-debrideur-gratuit

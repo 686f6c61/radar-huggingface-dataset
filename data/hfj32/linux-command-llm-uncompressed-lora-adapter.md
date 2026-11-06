@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hfj32/linux-command-llm-uncompressed-lora-adapter` es un adaptador LoRA (o un modelo completo con adaptador integrado) basado en la arquitectura Qwen2, publicado por el usuario `hfj32` en HuggingFace. Aunque el nombre indica "lora-adapter", el repositorio contiene pesos completos en formato `safetensors` con un total de 3.087.781.888 parámetros, lo que sugiere que se trata del modelo base Qwen2 de aproximadamente 3B parámetros, probablemente fine-tuneado mediante supervisión (SFT) para tareas relacionadas con comandos de Linux. El tag "uncompressed" indica que los pesos están en precisión completa (fp32), sin cuantización.
+El modelo `hfj32/linux-command-llm-uncompressed-lora-adapter` es un adaptador LoRA (o un modelo completo con adaptador integrado) basado en la arquitectura Qwen2, publicado por el usuario `hfj32` en Hugging Face. Aunque el nombre indica "lora-adapter", el repositorio contiene pesos completos en formato `safetensors` con un total de 3.087.781.888 parámetros, lo que sugiere que se trata del modelo base Qwen2 de aproximadamente 3B parámetros, probablemente fine-tuneado mediante supervisión (SFT) para tareas relacionadas con comandos de Linux. El tag "uncompressed" indica que los pesos están en precisión completa (fp32), sin cuantización.
 
 La model card es genérica y no proporciona detalles sobre el entrenamiento, el dataset, las capacidades específicas ni los benchmarks. A pesar de ello, el nombre y los tags (`sft`, `trl`) permiten inferir que el modelo ha sido ajustado para generar o procesar comandos de terminal, aunque no hay documentación oficial que lo confirme. La licencia y los idiomas soportados no están declarados.
 
@@ -74,4 +74,4 @@ No se dispone de información sobre modelos comparables específicos. Como refer
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hfj32/linux-command-llm-uncompressed-lora-adapter
+- Repositorio en Hugging Face: https://huggingface.co/hfj32/linux-command-llm-uncompressed-lora-adapter

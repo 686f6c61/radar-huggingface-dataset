@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zheng2085/assignment-contrastive` es un repositorio de HuggingFace que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de aprendizaje contrastivo. Lo publica el usuario zheng2085 y su propósito declarado es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El propio autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
+`zheng2085/assignment-contrastive` es un repositorio de Hugging Face que contiene una implementación propia y compacta de CLIP (Contrastive Language-Image Pre-training) orientada a tareas de aprendizaje contrastivo. Lo publica el usuario zheng2085 y su propósito declarado es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El propio autor indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida, no un modelo entrenado ni evaluado.
 
 El repositorio incluye el código Python (`pipeline.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el checkpoint de inicialización. La configuración declarada corresponde a la escala "base", con atención flash, fusión por co-attention, activación mish y normalización scalenorm. El recuento real de parámetros del fichero safetensors es de 33.088, una cifra muy alejada de la de un CLIP base convencional, lo que refuerza que se trata de un artefacto de prueba y no de un modelo con capacidad real de inferencia útil.
 
@@ -64,7 +64,7 @@ En cuanto al entrenamiento, no hay ningun entrenamiento completado que documenta
 - Base para experimentos academicos de ablacion: modificar la fusion de co-attention frente a una similitud coseno simple y medir el efecto en una tarea contrastiva concreta, con semillas fijadas y baseline de capacidad equivalente.
 - Reproducibilidad de entornos: dado que el checkpoint ocupa practicamente nada y el repo esta vacio, sirve para probar configuraciones de imagenes Docker, versiones de CUDA y librerias de atencion flash sin coste de almacenamiento.
 - Docencia y formacion: ilustrar en un aula o taller la diferencia entre un checkpoint de inicializacion y un checkpoint entrenado, y como se documenta (o no) una evaluacion.
-- Prototipado de cargadores personalizados: como el autor advierte que las APIs genericas de carga automatica necesitan un adaptador explicito, es un buen caso para practicar la escritura de adaptadores de carga personalizados en HuggingFace Transformers.
+- Prototipado de cargadores personalizados: como el autor advierte que las APIs genericas de carga automatica necesitan un adaptador explicito, es un buen caso para practicar la escritura de adaptadores de carga personalizados en Hugging Face Transformers.
 
 ## Benchmarks y rendimiento
 
@@ -93,10 +93,10 @@ Los valores de la columna "referencia" corresponden a caracteristicas publicas y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Entrenado |
 |---|---|---|---|---|---|
-| zheng2085/assignment-contrastive | 33.088 (segun safetensors) | No disponible | BSD-3-Clause | HuggingFace, 0 descargas | No (solo inicializacion) |
+| zheng2085/assignment-contrastive | 33.088 (segun safetensors) | No disponible | BSD-3-Clause | Hugging Face, 0 descargas | No (solo inicializacion) |
 | CLIP ViT-B/32 (OpenAI) | ~151 millones (referencia) | 77 tokens de texto (referencia) | MIT (referencia) | Ampliamente disponible | Si |
-| OpenCLIP ViT-B/32 (LAION) | ~151 millones (referencia) | 77 tokens de texto (referencia) | Apache-2.0 / MIT segun variante (referencia) | HuggingFace / GitHub | Si |
-| SigLIP base (Google) | ~203 millones (referencia) | 64 tokens de texto (referencia) | Apache-2.0 (referencia) | HuggingFace | Si |
+| OpenCLIP ViT-B/32 (LAION) | ~151 millones (referencia) | 77 tokens de texto (referencia) | Apache-2.0 / MIT segun variante (referencia) | Hugging Face / GitHub | Si |
+| SigLIP base (Google) | ~203 millones (referencia) | 64 tokens de texto (referencia) | Apache-2.0 (referencia) | Hugging Face | Si |
 
 La diferencia fundamental no es de rendimiento sino de proposito: los tres modelos de referencia son modelos preentrenados con cientos de millones de pares imagen-texto, mientras que este repositorio es una inicializacion sin entrenar destinada a pruebas de codigo.
 
@@ -116,7 +116,7 @@ La diferencia fundamental no es de rendimiento sino de proposito: los tres model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zheng2085/assignment-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/zheng2085/assignment-contrastive
 - Paper de CLIP (Radford et al., 2021): https://arxiv.org/abs/2103.00020
 - Repositorio oficial de OpenCLIP: https://github.com/mlfoundations/open_clip
 - Paper de SigLIP: https://arxiv.org/abs/2303.15343

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DGE all-tags audio tagger es un modelo de etiquetado de audio (audio tagging) publicado por el usuario cmjatom en HuggingFace, pensado para el proyecto Document Graph Explorer. Se trata de un ajuste fino del checkpoint EfficientAT mn10_as, una red convolucional eficiente preentrenada en AudioSet por Florian Schmid (repositorio fschmid56/EfficientAT), que aquí se ha especializado en etiquetar instrumentos, tipos de sonido y efectos. El resultado se distribuye exclusivamente en formato ONNX, con los umbrales de decisión por etiqueta en un fichero aparte.
+DGE all-tags audio tagger es un modelo de etiquetado de audio (audio tagging) publicado por el usuario cmjatom en Hugging Face, pensado para el proyecto Document Graph Explorer. Se trata de un ajuste fino del checkpoint EfficientAT mn10_as, una red convolucional eficiente preentrenada en AudioSet por Florian Schmid (repositorio fschmid56/EfficientAT), que aquí se ha especializado en etiquetar instrumentos, tipos de sonido y efectos. El resultado se distribuye exclusivamente en formato ONNX, con los umbrales de decisión por etiqueta en un fichero aparte.
 
 El modelo resuelve un problema clásico de la recuperación musical y la catalogación de archivos de audio: dada una señal de audio, asignar múltiples etiquetas simultáneas (clasificación multietiqueta con una sigmoide por etiqueta), en lugar de forzar una única categoría. Su relevancia radica en que es un modelo pequeño y eficiente, orientado a ejecutarse en producción sin depender de GPUs, y en que su licencia MIT sobre los pesos facilita la integración en aplicaciones.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 ## Requisitos de hardware
 
 - Al derivar de la familia EfficientAT, diseñada para eficiencia, es esperable que la inferencia sea viable en CPU y en dispositivos de gama baja, pero no se dispone de cifras confirmadas de VRAM ni de tamaño del modelo en parámetros.
-- El tamaño del repositorio se reporta como 0,0 GB en HuggingFace, lo que sugiere un artefacto de pequeño tamaño (por debajo de la precisión de la métrica), aunque no permite calcular la huella de memoria exacta.
+- El tamaño del repositorio se reporta como 0,0 GB en Hugging Face, lo que sugiere un artefacto de pequeño tamaño (por debajo de la precisión de la métrica), aunque no permite calcular la huella de memoria exacta.
 - GPU: no se especifican modelos recomendados. Por el perfil del modelo, una GPU de consumo como una RTX 3060 o superior sería más que suficiente si se opta por aceleración, pero esta afirmación no está confirmada por el autor.
 - Despliegue: el formato ONNX permite usar ONNX Runtime (CPU o GPU), así como integración en aplicaciones móviles y de escritorio. No se mencionan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a un clasificador de audio de este tipo.
 - Latencia y throughput: no disponibles.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tarea | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DGE all-tags tagger (este modelo) | Audio tagging multietiqueta | no disponible | 32 kHz mono, log-mel de 128 bandas | MIT (pesos) | HuggingFace, ONNX |
+| DGE all-tags tagger (este modelo) | Audio tagging multietiqueta | no disponible | 32 kHz mono, log-mel de 128 bandas | MIT (pesos) | Hugging Face, ONNX |
 | EfficientAT mn10_as (modelo base) | Audio tagging (AudioSet) | no disponible en esta ficha | 32 kHz mono, log-mel de 128 bandas | MIT | Repositorio fschmid56/EfficientAT |
 | YAMNet (Google) | Audio tagging (AudioSet, 521 clases) | no disponible en esta ficha | 16 kHz mono, log-mel | Apache 2.0 | TensorFlow Hub |
-| AST (Audio Spectrogram Transformer) | Audio tagging / clasificación | no disponible en esta ficha | Espectrogramas, 16 kHz | Distintas según checkpoint | HuggingFace / repositorio original |
+| AST (Audio Spectrogram Transformer) | Audio tagging / clasificación | no disponible en esta ficha | Espectrogramas, 16 kHz | Distintas según checkpoint | Hugging Face / repositorio original |
 | PANNs (CNN14 y variantes) | Audio tagging y detección de eventos | no disponible en esta ficha | 32 kHz, log-mel | Distintas según checkpoint | Repositorio del proyecto |
 
 La comparación cuantitativa de parámetros y rendimiento no está disponible para este modelo; la diferencia principal frente a alternativas como YAMNet o AST es el conjunto de etiquetas, definido por el ajuste fino sobre FSD50K, NSynth, MTG-Jamendo, OpenMIC, Freesound y SoundCloud, en lugar del vocabulario estándar de AudioSet.
@@ -85,9 +85,9 @@ La comparación cuantitativa de parámetros y rendimiento no está disponible pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmjatom/dge-all-tags-tagger
+- Modelo en Hugging Face: https://huggingface.co/cmjatom/dge-all-tags-tagger
 - Proyecto EfficientAT (modelo base, fschmid56): https://github.com/fschmid56/EfficientAT
-- Checkpoint EfficientAT en HuggingFace (referencia del autor del modelo base): https://huggingface.co/fschmid56/EfficientAT
+- Checkpoint EfficientAT en Hugging Face (referencia del autor del modelo base): https://huggingface.co/fschmid56/EfficientAT
 - FSD50K: https://huggingface.co/datasets/Fsd50k/fsd50k
 - NSynth (CC BY 4.0): https://magenta.tensorflow.org/datasets/nsynth
 - MTG-Jamendo: https://github.com/MTG/mtg-jamendo-dataset

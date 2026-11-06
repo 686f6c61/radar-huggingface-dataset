@@ -98,7 +98,7 @@ Cualquier conclusion sobre que opcion rinde mejor exigiria una evaluacion sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whotao1766/bilstm-sentimen-kebijakan-publik
+- Modelo en Hugging Face: https://huggingface.co/whotao1766/bilstm-sentimen-kebijakan-publik
 - Lexico InSet (generador de las etiquetas): https://github.com/fajri91/InSet
 - Diccionario de normalizacion `new_kamusalay.csv`: https://github.com/okkyibrohim/id-multi-label-hate-speech-and-abusive-language-detection
 - NLTK (stopwords): https://www.nltk.org/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phisherguy/merged-gemma4-e2b-it` es un modelo de lenguaje publicado en HuggingFace por el usuario phisherguy, que por su identificador y metadatos se presenta como un merge de la familia Gemma 4 en su variante "e2b" con ajuste instruccional (it). El repositorio contiene pesos en formato safetensors con un total de 5.104.297.539 parámetros (aproximadamente 5,1 mil millones) y un tamaño de 8,4 GB, lo que es coherente con pesos en precisión de 16 bits.
+`phisherguy/merged-gemma4-e2b-it` es un modelo de lenguaje publicado en Hugging Face por el usuario phisherguy, que por su identificador y metadatos se presenta como un merge de la familia Gemma 4 en su variante "e2b" con ajuste instruccional (it). El repositorio contiene pesos en formato safetensors con un total de 5.104.297.539 parámetros (aproximadamente 5,1 mil millones) y un tamaño de 8,4 GB, lo que es coherente con pesos en precisión de 16 bits.
 
 La model card publicada es prácticamente vacía: solo incluye la declaración de licencia Apache 2.0, sin información sobre arquitectura, datos de entrenamiento, contexto, idiomas o benchmarks. Esto limita seriamente cualquier evaluación rigurosa del modelo, y los datos que se ofrecen en esta ficha provienen exclusivamente de los metadatos del repositorio y de la convención de nombres de la familia Gemma, no de documentación del autor.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phisherguy/merged-gemma4-e2b-it | 5,1 B | no disponible | Apache 2.0 | HuggingFace, 15 descargas |
-| Gemma 2 9B IT (referencia de familia previa) | 9 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado |
-| Qwen2.5 7B Instruct | 7,6 B | 32.768 tokens (128K en variantes) | Apache 2.0 | HuggingFace, muy extendido |
-| Mistral 7B Instruct | 7,2 B | 32.768 tokens | Apache 2.0 | HuggingFace, muy extendido |
+| phisherguy/merged-gemma4-e2b-it | 5,1 B | no disponible | Apache 2.0 | Hugging Face, 15 descargas |
+| Gemma 2 9B IT (referencia de familia previa) | 9 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado |
+| Qwen2.5 7B Instruct | 7,6 B | 32.768 tokens (128K en variantes) | Apache 2.0 | Hugging Face, muy extendido |
+| Mistral 7B Instruct | 7,2 B | 32.768 tokens | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo evaluado, y los modelos de referencia se incluyen por rango de tamaño y licencia, no por resultados medidos frente a este checkpoint.
 
@@ -84,5 +84,5 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/phisherguy/merged-gemma4-e2b-it
+- Repositorio Hugging Face: https://huggingface.co/phisherguy/merged-gemma4-e2b-it
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

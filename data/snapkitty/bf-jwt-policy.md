@@ -68,5 +68,5 @@ No disponible. Este proyecto no es comparable con modelos de IA, sino con motore
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/bf-jwt-policy
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/bf-jwt-policy
 - No se proporcionan enlaces adicionales (papers, blogs, repos externos) en la información disponible.

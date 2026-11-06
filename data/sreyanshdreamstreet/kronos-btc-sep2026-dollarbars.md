@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre el fichero `btc_sep2026_1M_dollar_bars.csv`, 
 - Modelado de series temporales financieras discretizadas mediante el tokenizador de doble codebook de Kronos.
 - Trabajo sobre datos agregados por volumen (dollar bars), no sobre barras temporales.
 - Generación de secuencias de tokens de mercado condicionadas al contexto de 64 barras.
-- Integración con la librería `kronos` (declarada como librería del modelo en HuggingFace).
+- Integración con la librería `kronos` (declarada como librería del modelo en Hugging Face).
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües más allá del etiquetado `en` en metadatos.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No se proporcionan métricas de precisión direccional, *accuracy*, AUC, Sharpe,
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kronos Model A (este checkpoint) | 102,3 M | 64 dollar bars | BTC/USDT 5 min | Apache 2.0 | HuggingFace (`sreyanshdreamstreet/kronos-btc-sep2026-dollarbars`) |
+| Kronos Model A (este checkpoint) | 102,3 M | 64 dollar bars | BTC/USDT 5 min | Apache 2.0 | Hugging Face (`sreyanshdreamstreet/kronos-btc-sep2026-dollarbars`) |
 | Kronos Financial Foundation Model (base) | no disponible | no disponible | Series temporales financieras generales | no disponible | Repo Kronos |
 | Alternativas de forecasting financiero (p. ej. TimeGPT, Chronos) | no disponible en la informacion proporcionada | no disponible | Series temporales generales | no disponible | no disponible |
 
@@ -89,5 +89,5 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sreyanshdreamstreet/kronos-btc-sep2026-dollarbars
+- Hugging Face: https://huggingface.co/sreyanshdreamstreet/kronos-btc-sep2026-dollarbars
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este checkpoint.

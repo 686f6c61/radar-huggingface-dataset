@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de politica robotica (vision-language-action) entrenado para un brazo Franka y publicado bajo el identificador `franka-10demos-normal_task2_cartesian_20260913T212156Z-step-6000`. Lo distribuye el usuario de HuggingFace NaaaaaiVe6 y esta etiquetado con `openpi`, `pi05`, `robotics` y `safetensors`. El modelo resuelve el problema de generar acciones de control continuas a partir de observaciones visuales y del estado del robot: concretamente emite acciones en representacion cartesiana absoluta (XYZ + cuaternion xyzw + pinza binaria -1/+1), no incrementos de controlador.
+Este repositorio contiene un checkpoint de politica robotica (vision-language-action) entrenado para un brazo Franka y publicado bajo el identificador `franka-10demos-normal_task2_cartesian_20260913T212156Z-step-6000`. Lo distribuye el usuario de Hugging Face NaaaaaiVe6 y esta etiquetado con `openpi`, `pi05`, `robotics` y `safetensors`. El modelo resuelve el problema de generar acciones de control continuas a partir de observaciones visuales y del estado del robot: concretamente emite acciones en representacion cartesiana absoluta (XYZ + cuaternion xyzw + pinza binaria -1/+1), no incrementos de controlador.
 
 El checkpoint pesa 7,2 GB y contiene 3.616.757.520 parametros (aproximadamente 3,6 mil millones), convertidos de JAX a PyTorch en bfloat16 conservando la configuracion de entrenamiento original de Franka. Es relevante ahora porque forma parte del ecosistema `openpi`, que estandariza el intercambio de politicas roboticas preentrenadas y ajustadas, aunque en este caso concreto se trata de un ajuste de tarea muy especifico (el nombre indica 10 demostraciones y la tarea "task2").
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos en la informacion proporcionada. No se han p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| franka-10demos-normal_task2_cartesian (este) | 3.616.757.520 | no disponible | no disponible | no disponible | HuggingFace, libreria openpi |
+| franka-10demos-normal_task2_cartesian (este) | 3.616.757.520 | no disponible | no disponible | no disponible | Hugging Face, libreria openpi |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,9 +90,9 @@ No se dispone de datos comparativos en la informacion proporcionada. No se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task2_cartesian_20260913T212156Z-step-6000
-- Fichero `log.txt` del repositorio (layout de salida, normalizacion, entradas): incluido en el propio repositorio de HuggingFace
-- Fichero `assets/franka/norm_stats.json` (estadisticas de normalizacion): incluido en el propio repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task2_cartesian_20260913T212156Z-step-6000
+- Fichero `log.txt` del repositorio (layout de salida, normalizacion, entradas): incluido en el propio repositorio de Hugging Face
+- Fichero `assets/franka/norm_stats.json` (estadisticas de normalizacion): incluido en el propio repositorio de Hugging Face
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible
 - La busqueda web realizada no devolvio resultados relacionados con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`phanerozoic/seti-tools` es un repositorio de software publicado en HuggingFace por el usuario `phanerozoic`, no un modelo de aprendizaje automatico. Contiene el codigo, los articulos y una base de datos de cobertura para realizar busquedas de tecnofirmas (technosignatures) sobre archivos astronomicos publicos: que ha buscado cada ejecucion y que ha encontrado. El punto de entrada es `seti.py`, invocado como `python -I seti.py <family> <approach> <mode>`, y el paquete `setitools/` agrupa clientes de archivo, marcos de referencia en reposo, busquedas espectrales y de radio, series temporales, el almacen de cobertura y, en `searches/`, doce modulos de familia.
+`phanerozoic/seti-tools` es un repositorio de software publicado en Hugging Face por el usuario `phanerozoic`, no un modelo de aprendizaje automatico. Contiene el codigo, los articulos y una base de datos de cobertura para realizar busquedas de tecnofirmas (technosignatures) sobre archivos astronomicos publicos: que ha buscado cada ejecucion y que ha encontrado. El punto de entrada es `seti.py`, invocado como `python -I seti.py <family> <approach> <mode>`, y el paquete `setitools/` agrupa clientes de archivo, marcos de referencia en reposo, busquedas espectrales y de radio, series temporales, el almacen de cobertura y, en `searches/`, doce modulos de familia.
 
 El proyecto resuelve un problema de trazabilidad y reproducibilidad en la busqueda de tecnofirmas: cada ejecucion se registra en `coverage.db` (SQLite, una fila por ejecucion y una por objetivo buscado) y cada enfoque tiene una linea de resultado en `RESULTS.md`. Se apoya en un conjunto amplio de archivos de terceros (Gaia, Hipparcos, SIMBAD, VizieR, MAST con TESS, Kepler, HST, IUE y GALEX, IRSA con WISE y NEOWISE, Breakthrough Listen, ESO, XMM-Newton, Chandra, SDSS-IV APOGEE, DESI, GALAH, LAMOST, Fermi-LAT, IceCube, SPT-3G, RACS, VLASS, LoTSS, ALMA y Splatalogue, entre otros), lo que lo convierte en una capa de orquestacion y registro sobre infraestructura ya existente.
 
@@ -94,7 +94,7 @@ No disponible. La informacion proporcionada no incluye comparativas con otras he
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phanerozoic/seti-tools
+- Repositorio en Hugging Face: https://huggingface.co/phanerozoic/seti-tools
 - Archivo de licencia: `LICENSE` dentro del repositorio (MIT y CC BY 4.0)
 - Ejemplo de configuracion: `local_config.example.json` dentro del repositorio
 - Documentacion y metodos: directorios `docs/` y `recipes/` dentro del repositorio

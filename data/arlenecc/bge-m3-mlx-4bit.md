@@ -90,7 +90,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arlenecc/bge-m3-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/arlenecc/bge-m3-mlx-4bit
 - Modelo base: https://huggingface.co/BAAI/bge-m3
 - Paper BGE M3-Embedding: https://arxiv.org/abs/2402.03216
 - Referencia citada en el ejemplo de código: https://huggingface.co/mlx-community/bge-m3-mlx-4bit

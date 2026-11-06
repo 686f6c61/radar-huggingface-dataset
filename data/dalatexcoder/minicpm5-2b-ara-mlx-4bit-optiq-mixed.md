@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-ARA-MLX-4Bit-optiq-mixed es una version cuantizada a 4 bits en formato MLX del modelo MiniCPM5-2B, publicado por el usuario dalatexcoder en HuggingFace. El modelo base MiniCPM5-2B lo desarrolla OpenBMB y se presenta como un transformer denso de 2B parametros disenado para despliegue en dispositivo (on-device) y entornos con recursos limitados, continuacion de MiniCPM5-1B dentro de la misma familia. Esta variante concreta no incluye model card util: el README solo contiene metadatos de frontmatter (`language: en`, `library_name: mlx`, `pipeline_tag: text-generation`), sin descripcion tecnica, datos de entrenamiento ni instrucciones de uso.
+MiniCPM5-2B-ARA-MLX-4Bit-optiq-mixed es una version cuantizada a 4 bits en formato MLX del modelo MiniCPM5-2B, publicado por el usuario dalatexcoder en Hugging Face. El modelo base MiniCPM5-2B lo desarrolla OpenBMB y se presenta como un transformer denso de 2B parametros disenado para despliegue en dispositivo (on-device) y entornos con recursos limitados, continuacion de MiniCPM5-1B dentro de la misma familia. Esta variante concreta no incluye model card util: el README solo contiene metadatos de frontmatter (`language: en`, `library_name: mlx`, `pipeline_tag: text-generation`), sin descripcion tecnica, datos de entrenamiento ni instrucciones de uso.
 
 El interes de esta publicacion radica en su formato de despliegue: pesos MLX en 4 bits (con un esquema de cuantizacion mixta que el nombre identifica como "optiq-mixed"), lo que la hace directamente consumible en Apple Silicon (Macs con chip M-series) a traves del ecosistema MLX. El repositorio ocupa 1,6 GB y declara 2.516.756.480 parametros en los tensores safetensors, coherente con el tamano de un modelo de la clase 2B. La fecha indicada de creacion es 2026-10-12.
 
@@ -23,7 +23,7 @@ Se trata de un artefacto derivado de bajo perfil: cero descargas y cero "likes" 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura de esta variante mas alla de los tags de HuggingFace (`llama`, `mlx`, `text-generation`, `conversational`). El tag `llama` sugiere compatibilidad de arquitectura con la familia Llama, pero no hay confirmacion en la model card. En cuanto al modelo base, la busqueda web indica que MiniCPM5-2B es un transformer denso de 2B parametros de OpenBMB, entrenado con la misma receta que MiniCPM5-1B y orientado a despliegue local y en dispositivo, con el objetivo declarado de alcanzar SOTA en la clase 2B de codigo abierto. No constan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF, DPO u otras tecnicas de alineamiento.
+La informacion disponible no describe la arquitectura de esta variante mas alla de los tags de Hugging Face (`llama`, `mlx`, `text-generation`, `conversational`). El tag `llama` sugiere compatibilidad de arquitectura con la familia Llama, pero no hay confirmacion en la model card. En cuanto al modelo base, la busqueda web indica que MiniCPM5-2B es un transformer denso de 2B parametros de OpenBMB, entrenado con la misma receta que MiniCPM5-1B y orientado a despliegue local y en dispositivo, con el objetivo declarado de alcanzar SOTA en la clase 2B de codigo abierto. No constan en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron etapas de RLHF, DPO u otras tecnicas de alineamiento.
 
 Tampoco hay datos sobre innovaciones tecnicas especificas de esta conversion: no se detalla el esquema de cuantizacion mixta implicito en "optiq-mixed" (que suguiere distintos niveles de bits por capa o por grupo de pesos), ni el proceso exacto de conversion de safetensors FP a MLX 4 bits. El prefijo "ARA" y el sufijo "heretic" que aparece en otras publicaciones del mismo autor (MiniCPM5-2B-Heretic-ARA-MLX-4Bit) tampoco se definen en las fuentes consultadas.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dalatexcoder/MiniCPM5-2B-ARA-MLX-4Bit-optiq-mixed
+- Modelo en Hugging Face: https://huggingface.co/dalatexcoder/MiniCPM5-2B-ARA-MLX-4Bit-optiq-mixed
 - Variante relacionada del mismo autor: https://huggingface.co/dalatexcoder/MiniCPM5-2B-Heretic-ARA-MLX-4Bit
 - Otra variante del mismo autor: https://huggingface.co/dalatexcoder/MiniCPM5-2B-heretic-ara
 - Repositorio oficial de la familia MiniCPM (OpenBMB): https://github.com/OpenBMB/MiniCPM

@@ -85,10 +85,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K, ARC, TruthfulQA ni de 
 
 | Modelo | Tipo | Parámetros | Contexto | Puerta (JSON / rechazos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Qwen/Qwen3.5-0.8B` | Modelo base denso | ~0,8 mil millones | no disponible | 0/5 / 6/6 | no disponible en esta información | Público en HuggingFace |
-| `SZLHOLDINGS/chaski-r4` | Adaptador LoRA | Base 0,8 mil millones + 25,6 MB de adaptador | no disponible | 5/5 / 6/6 | apache-2.0 (etiquetas `experimental`, `research-only`) | Público en HuggingFace |
-| `SZLHOLDINGS/chaski-r2` | Adaptador LoRA | Base 0,8 mil millones + adaptador de tamaño no publicado | no disponible | 5/5 / 6/6 | no disponible en esta información | Público en HuggingFace |
-| `SZLHOLDINGS/chaski-5050` | Adaptador LoRA | Base 0,8 mil millones + adaptador de tamaño no publicado | no disponible | 5/5 / 6/6 | no disponible en esta información | Público en HuggingFace |
+| `Qwen/Qwen3.5-0.8B` | Modelo base denso | ~0,8 mil millones | no disponible | 0/5 / 6/6 | no disponible en esta información | Público en Hugging Face |
+| `SZLHOLDINGS/chaski-r4` | Adaptador LoRA | Base 0,8 mil millones + 25,6 MB de adaptador | no disponible | 5/5 / 6/6 | apache-2.0 (etiquetas `experimental`, `research-only`) | Público en Hugging Face |
+| `SZLHOLDINGS/chaski-r2` | Adaptador LoRA | Base 0,8 mil millones + adaptador de tamaño no publicado | no disponible | 5/5 / 6/6 | no disponible en esta información | Público en Hugging Face |
+| `SZLHOLDINGS/chaski-5050` | Adaptador LoRA | Base 0,8 mil millones + adaptador de tamaño no publicado | no disponible | 5/5 / 6/6 | no disponible en esta información | Público en Hugging Face |
 
 No hay datos publicados que permitan comparar este adaptador con alternativas de otras familias y tamaño similar (por ejemplo modelos densos de la clase 0,5-1 mil millones de parámetros), porque no se han medido benchmarks estándar. La comparación disponible se limita a los tres controles de la misma ejecución canónica.
 
@@ -106,9 +106,9 @@ No hay datos publicados que permitan comparar este adaptador con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/chaski-r4
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/chaski-r4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Organización en HuggingFace: https://huggingface.co/SZLHOLDINGS
+- Organización en Hugging Face: https://huggingface.co/SZLHOLDINGS
 - Artefacto predecesor: https://huggingface.co/SZLHOLDINGS/chaski
 - Repositorio szl-forge: https://github.com/szl-holdings/szl-forge
 - README del proyecto chaski: https://github.com/szl-holdings/szl-forge/blob/main/chaski/README.md
@@ -118,4 +118,4 @@ No hay datos publicados que permitan comparar este adaptador con alternativas de
 - Auditoría de procedencia: https://github.com/szl-holdings/szl-forge/blob/06804ce4/tools/geh_v8/THREAD_AUDIT.md
 - Sandbox de evidencias: `tools/geh_v8/evidence_sandbox/chaski_probe/` dentro de szl-forge
 - SZL Atelier: https://github.com/szl-holdings/szl-atelier
-- Dataset del autor en HuggingFace: https://huggingface.co/SZLHOLDINGS/datasets
+- Dataset del autor en Hugging Face: https://huggingface.co/SZLHOLDINGS/datasets

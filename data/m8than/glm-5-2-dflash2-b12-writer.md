@@ -91,7 +91,7 @@ El autor aclara que no se reclama una victoria consistente de velocidad ni un de
 
 | Modelo | Parametros | Contexto | Aceptacion | Licencia | Disponibilidad |
 | --- | ---: | ---: | ---: | --- | --- |
-| GLM-5.2-DFlash2-B12-Writer (este) | 2,29B | no disponible (entrenamiento 8.192) | 9,7655% (test emparejado) | no disponible | publico en HuggingFace |
+| GLM-5.2-DFlash2-B12-Writer (este) | 2,29B | no disponible (entrenamiento 8.192) | 9,7655% (test emparejado) | no disponible | publico en Hugging Face |
 | Draft previo entrenado en conversaciones | no disponible | no disponible | 8,3242% (mismo test) | no disponible | checkpoint previo del autor |
 | Release publica preconversacional | no disponible | no disponible | 17,08% (test y setup distintos) | no disponible | publica previa del autor |
 
@@ -109,11 +109,11 @@ No se dispone de datos de otros drafts de decodificacion especulativa comparable
 - Restricciones de licencia: no disponible; la model card se interrumpe en la seccion de licencia. El modelo objetivo declara MIT, pero la licencia de este repositorio no se especifica, por lo que el uso comercial queda sin garantia explicita.
 - Linaje de datos: la descripcion de datos solo-asistente aplica a esta actualizacion, no a toda la linea de modelos anterior.
 - Advertencia de produccion: el autor indica que no se retesto un despliegue en maquina limpia para la publicacion.
-- Fecha de creacion futura (2026-10-15) en los metadatos de HuggingFace.
+- Fecha de creacion futura (2026-10-15) en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/m8than/GLM-5.2-DFlash2-B12-Writer
+- Hugging Face: https://huggingface.co/m8than/GLM-5.2-DFlash2-B12-Writer
 - Modelo base: https://huggingface.co/SubconsciousDev/glm-5.2-fp8-dflash-v2
 - Runtime Furnace: https://github.com/m8than/furnace/tree/647d2a72f03b693cfd412af09a7e59aafd5affa3
 - Objetivo cuantizado publicado: https://huggingface.co/m8than/GLM-5.2-E2M1-Furnace

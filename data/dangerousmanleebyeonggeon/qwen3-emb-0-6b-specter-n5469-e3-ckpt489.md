@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e3-ckpt489` es un modelo de embeddings de frases obtenido mediante ajuste fino completo de `Qwen/Qwen3-Embedding-0.6B`. Lo publica el usuario de HuggingFace dangerousmanleebyeonggeon y su propósito declarado no es la explotación comercial, sino servir como ablation de datos de entrenamiento: comprobar qué rendimiento se obtiene con un conjunto de exactamente 5.469 pares de citas científicas, el mismo tamaño que otro dataset de referencia del autor (`canho/ours-6k`).
+El modelo `dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e3-ckpt489` es un modelo de embeddings de frases obtenido mediante ajuste fino completo de `Qwen/Qwen3-Embedding-0.6B`. Lo publica el usuario de Hugging Face dangerousmanleebyeonggeon y su propósito declarado no es la explotación comercial, sino servir como ablation de datos de entrenamiento: comprobar qué rendimiento se obtiene con un conjunto de exactamente 5.469 pares de citas científicas, el mismo tamaño que otro dataset de referencia del autor (`canho/ours-6k`).
 
 El entrenamiento se hizo con la librería ms-swift, tarea `embedding` y pérdida InfoNCE, durante 3 épocas con temperatura 0,1, DeepSpeed ZeRO-3 y precisión bf16 sobre 8 GPUs. El checkpoint publicado es el final (paso 489 de 489) y la ficha del autor reporta una pérdida de evaluación de 0,4615 sobre el 5% reservado.
 
@@ -21,7 +21,7 @@ Se trata de un modelo denso de 595.776.512 parámetros (aproximadamente 0,6 B), 
 | Licencia | No disponible |
 | Formato de pesos | safetensors (bf16); repositorio de 1,2 GB |
 
-Otros datos del repositorio: librería `sentence-transformers`, pipeline `sentence-similarity`, etiqueta `endpoints_compatible` (compatible con HuggingFace Inference Endpoints y Text Embeddings Inference), 0 descargas y 0 likes en el momento de la consulta.
+Otros datos del repositorio: librería `sentence-transformers`, pipeline `sentence-similarity`, etiqueta `endpoints_compatible` (compatible con Hugging Face Inference Endpoints y Text Embeddings Inference), 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 - Opciones de despliegue:
   - `sentence-transformers` (vía recomendada por el autor, con `processor_kwargs={"padding_side": "left"}`).
   - Text Embeddings Inference (TEI), ya que el repositorio está etiquetado como `endpoints_compatible`.
-  - HuggingFace Inference Endpoints.
+  - Hugging Face Inference Endpoints.
   - vLLM en modo embeddings.
   - llama.cpp / Ollama: solo si se genera previamente una conversión a GGUF, que no está disponible en el repositorio.
   - Servidor propio con FastAPI + Optimum o con `transformers` directamente.
@@ -83,11 +83,11 @@ No se dispone de comparaciones de rendimiento publicadas para este checkpoint, p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-emb-0.6b-specter-n5469-e3-ckpt489 (este modelo) | 595,8 M | No disponible en la ficha del autor (el base declara 32.768) | No disponible | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3-Embedding-0.6B (modelo base) | 0,6 B | 32.768 tokens según su ficha | Apache-2.0 según su ficha | HuggingFace, safetensors, ampliamente utilizado |
-| BAAI/bge-m3 | 568 M | 8.192 tokens según su ficha | MIT según su ficha | HuggingFace, safetensors, muy extendido en RAG multilingüe |
-| intfloat/multilingual-e5-large | 560 M | 512 tokens según su ficha | MIT según su ficha | HuggingFace, safetensors |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens según su ficha | Apache-2.0 según su ficha | HuggingFace, safetensors, estándar en prototipos ligeros |
+| qwen3-emb-0.6b-specter-n5469-e3-ckpt489 (este modelo) | 595,8 M | No disponible en la ficha del autor (el base declara 32.768) | No disponible | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3-Embedding-0.6B (modelo base) | 0,6 B | 32.768 tokens según su ficha | Apache-2.0 según su ficha | Hugging Face, safetensors, ampliamente utilizado |
+| BAAI/bge-m3 | 568 M | 8.192 tokens según su ficha | MIT según su ficha | Hugging Face, safetensors, muy extendido en RAG multilingüe |
+| intfloat/multilingual-e5-large | 560 M | 512 tokens según su ficha | MIT según su ficha | Hugging Face, safetensors |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens según su ficha | Apache-2.0 según su ficha | Hugging Face, safetensors, estándar en prototipos ligeros |
 
 En igualdad de tamaño, el rival directo es el propio modelo base sin ajustar, y para uso multilingüe o de propósito general las alternativas habituales son bge-m3 y multilingual-e5-large. La diferencia de este checkpoint no es una mejora medible publicada, sino su especialización en tripletas de citación científica.
 
@@ -106,7 +106,7 @@ En igualdad de tamaño, el rival directo es el propio modelo base sin ajustar, y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e3-ckpt489
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-specter-n5469-e3-ckpt489
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/allenai/scirepeval
 - Librería de entrenamiento (ms-swift): https://github.com/modelscope/ms-swift

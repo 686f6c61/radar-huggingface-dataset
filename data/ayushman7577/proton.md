@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ayushman7577/proton` es un modelo publicado en HuggingFace con formato GGUF y licencia Apache-2.0. La información disponible en su model card es mínima: únicamente se indica la licencia, sin descripción del autor, arquitectura, tamaño, contexto ni capacidades. No se ha publicado documentación técnica ni resultados de evaluación, por lo que no es posible determinar qué problema resuelve ni su relevancia actual.
+El modelo `ayushman7577/proton` es un modelo publicado en Hugging Face con formato GGUF y licencia Apache-2.0. La información disponible en su model card es mínima: únicamente se indica la licencia, sin descripción del autor, arquitectura, tamaño, contexto ni capacidades. No se ha publicado documentación técnica ni resultados de evaluación, por lo que no es posible determinar qué problema resuelve ni su relevancia actual.
 
-La búsqueda web arroja resultados sobre un modelo homónimo llamado PROTON, desarrollado por el Kempner Institute de Harvard para descubrimiento neurológico, pero no hay evidencia de que el modelo de HuggingFace sea el mismo. Se trata de un nombre coincidente, no de un modelo relacionado.
+La búsqueda web arroja resultados sobre un modelo homónimo llamado PROTON, desarrollado por el Kempner Institute de Harvard para descubrimiento neurológico, pero no hay evidencia de que el modelo de Hugging Face sea el mismo. Se trata de un nombre coincidente, no de un modelo relacionado.
 
-Dado que no se dispone de información técnica adicional, esta ficha se limita a reflejar los datos disponibles en HuggingFace y a señalar explícitamente las carencias de información.
+Dado que no se dispone de información técnica adicional, esta ficha se limita a reflejar los datos disponibles en Hugging Face y a señalar explícitamente las carencias de información.
 
 ## Especificaciones técnicas
 
@@ -56,7 +56,7 @@ No se dispone de información sobre modelos comparables. Sin datos de arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ayushman7577/proton
-- Enlaces de la búsqueda web sobre el modelo homónimo PROTON (no confundir con el modelo de HuggingFace):
+- Hugging Face: https://huggingface.co/ayushman7577/proton
+- Enlaces de la búsqueda web sobre el modelo homónimo PROTON (no confundir con el modelo de Hugging Face):
   - https://www.protonmodel.ai/
   - https://kempnerinstitute.harvard.edu/research/deeper-learning/proton-a-relational-foundation-model-for-neurological-discovery/

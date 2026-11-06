@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Code0000/d1-3b-fp8-radiance | 3B | no disponible (ejemplo con 16384) | `.rad` (Radiance) | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/d1-3B | 3B | no disponible | no disponible | LFM Open License v1.0 | HuggingFace (modelo base) |
+| Code0000/d1-3b-fp8-radiance | 3B | no disponible (ejemplo con 16384) | `.rad` (Radiance) | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/d1-3B | 3B | no disponible | no disponible | LFM Open License v1.0 | Hugging Face (modelo base) |
 | Otras conversiones FP8 del mismo modelo base | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Code0000/d1-3b-fp8-radiance
+- Modelo en Hugging Face: https://huggingface.co/Code0000/d1-3b-fp8-radiance
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - Runtime Radiance: https://github.com/Code000-211/Radiance
 - Licencia LFM Open License v1.0: incluida en el repositorio como `LICENSE`

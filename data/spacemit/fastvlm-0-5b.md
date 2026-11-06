@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks especificos para esta conversion de
 | apple/FastVLM-0.5B (original) | 630 M | no disponible | apple-amlr | safetensors | Modelo base de Apple, para Apple Silicon |
 | LLaVA-OneVision-0.5B | ~0.5B | no disponible | Apache 2.0 (aprox.) | safetensors | Alternativa de referencia, menos eficiente en vision segun el paper |
 
-La comparativa se basa en los datos publicados en el paper de FastVLM y en las fichas de HuggingFace. No se dispone de informacion detallada sobre contexto o idiomas para ninguno de los modelos.
+La comparativa se basa en los datos publicados en el paper de FastVLM y en las fichas de Hugging Face. No se dispone de informacion detallada sobre contexto o idiomas para ninguno de los modelos.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ La comparativa se basa en los datos publicados en el paper de FastVLM y en las f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SpacemiT/FastVLM-0.5B
+- Modelo en Hugging Face: https://huggingface.co/SpacemiT/FastVLM-0.5B
 - Modelo original de Apple: https://huggingface.co/apple/FastVLM-0.5B
 - Version FP16 del modelo original: https://huggingface.co/apple/FastVLM-0.5B-fp16
 - Paper de FastVLM: https://arxiv.org/abs/2412.13303

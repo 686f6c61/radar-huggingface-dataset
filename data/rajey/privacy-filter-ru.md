@@ -2,7 +2,7 @@
 
 ## Resumen
 
-privacy-filter-ru es un modelo de clasificación de tokens (token classification) especializado en la detección de datos personales en texto en ruso. Es un ajuste fino del modelo de pesos abiertos openai/privacy-filter, desarrollado por el usuario independiente Rajey y publicado en HuggingFace bajo licencia Apache 2.0. Recibe una cadena de texto y devuelve fragmentos con su tipo y sus desplazamientos en caracteres, dejando en manos de la aplicación que lo integra la decisión de enmascarar, sustituir o cifrar cada entidad.
+privacy-filter-ru es un modelo de clasificación de tokens (token classification) especializado en la detección de datos personales en texto en ruso. Es un ajuste fino del modelo de pesos abiertos openai/privacy-filter, desarrollado por el usuario independiente Rajey y publicado en Hugging Face bajo licencia Apache 2.0. Recibe una cadena de texto y devuelve fragmentos con su tipo y sus desplazamientos en caracteres, dejando en manos de la aplicación que lo integra la decisión de enmascarar, sustituir o cifrar cada entidad.
 
 La arquitectura del modelo base no se ha modificado: se trata de un clasificador de tokens bidireccional con mezcla de expertos (MoE) de 1.399.504.813 parámetros totales y aproximadamente 50 millones activos por token, con tokenizador o200k. El ajuste cambia la cabeza de clasificación para pasar de 8 tipos de entidad a 15 (61 clases en esquema BIOES) e incorpora identificadores específicos del contexto ruso como INN, SNILS, OGRN, poliza OMS, número de pasaporte ruso y matrícula de vehículo.
 
@@ -130,8 +130,8 @@ La comparación relevante es contra el modelo base: el ajuste multiplica por má
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajey/privacy-filter-ru
-- Modelo base en HuggingFace: https://huggingface.co/openai/privacy-filter
+- Modelo en Hugging Face: https://huggingface.co/Rajey/privacy-filter-ru
+- Modelo base en Hugging Face: https://huggingface.co/openai/privacy-filter
 - Repositorio del paquete opf: https://github.com/openai/privacy-filter
 - Anuncio de OpenAI Privacy Filter (inglés): https://openai.com/index/introducing-openai-privacy-filter/
 - Anuncio de OpenAI Privacy Filter (ruso): https://openai.com/ru-RU/index/introducing-openai-privacy-filter/

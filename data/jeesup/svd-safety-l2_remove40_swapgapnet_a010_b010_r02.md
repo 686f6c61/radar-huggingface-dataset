@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r02` es un artefacto de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en HuggingFace. No es un modelo conversacional de propósito general: es una celda concreta de una rejilla experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El checkpoint se ha comprimido con SVD-LLM eliminando el 40,02 % de los parámetros, hasta una fracción resultante de 0,5998 respecto al modelo denso, y después se ha editado mediante 2 de las 10 rondas de sustitución iterativa de parámetros neutra (regla `gap_iter`, presupuesto total de restauración del 1,000 % de parámetros densos).
+El modelo `Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r02` es un artefacto de investigación derivado de `meta-llama/Llama-2-7b-chat-hf`, publicado por el usuario Jeesup en Hugging Face. No es un modelo conversacional de propósito general: es una celda concreta de una rejilla experimental que estudia cómo la compresión por SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El checkpoint se ha comprimido con SVD-LLM eliminando el 40,02 % de los parámetros, hasta una fracción resultante de 0,5998 respecto al modelo denso, y después se ha editado mediante 2 de las 10 rondas de sustitución iterativa de parámetros neutra (regla `gap_iter`, presupuesto total de restauración del 1,000 % de parámetros densos).
 
 La arquitectura subyacente es la de Llama-2-7b-chat (transformer decoder-only con 4.096 tokens de contexto), pero con las capas de proyección truncadas por SVD y parcialmente restauradas con componentes seleccionados por la regla `gap_iter`. En esta ronda intermedia se han restaurado 381 componentes y se han expulsado otros 381, con 4.337.664 parámetros intercambiados (0,07 % de los parámetros densos de proyección), valor de intercambio `net` y escala de inserción 0,1.
 
@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove40_swapgapnet_a010_b010_r02 | 6.738.415.616 (fraccion densa declarada 0,5998) | 4.096 tokens | AdvBench ASR 0,3519; StrongREJECT ASR 0,1789; sobrerrechazo 0,0930 | Llama 2 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base sin comprimir) | ~6,74 mil millones | 4.096 tokens | No disponible en la informacion proporcionada | Llama 2 Community | HuggingFace, ampliamente desplegado |
-| meta-llama/Llama-2-13b-chat-hf | ~13 mil millones | 4.096 tokens | No disponible en la informacion proporcionada | Llama 2 Community | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.2 | ~7,2 mil millones | 32.768 tokens | No disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, ampliamente desplegado |
+| svd-safety-l2_remove40_swapgapnet_a010_b010_r02 | 6.738.415.616 (fraccion densa declarada 0,5998) | 4.096 tokens | AdvBench ASR 0,3519; StrongREJECT ASR 0,1789; sobrerrechazo 0,0930 | Llama 2 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base sin comprimir) | ~6,74 mil millones | 4.096 tokens | No disponible en la informacion proporcionada | Llama 2 Community | Hugging Face, ampliamente desplegado |
+| meta-llama/Llama-2-13b-chat-hf | ~13 mil millones | 4.096 tokens | No disponible en la informacion proporcionada | Llama 2 Community | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.2 | ~7,2 mil millones | 32.768 tokens | No disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, ampliamente desplegado |
 
 La comparacion de rendimiento frente al modelo base y a las alternativas no puede establecerse con los datos disponibles: la model card solo publica las metricas de seguridad y sobrerrechazo de esta celda, sin linea base numerica.
 
@@ -96,9 +96,9 @@ La comparacion de rendimiento frente al modelo base y a las alternativas no pued
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapnet_a010_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
-- Perfil del autor en HuggingFace: https://huggingface.co/Jeesup
+- Perfil del autor en Hugging Face: https://huggingface.co/Jeesup
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Paper de SVD-LLM: no disponible en la informacion proporcionada
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devolvieron unicamente paginas sobre conversion de tallas de ropa, sin relacion con el artefacto.

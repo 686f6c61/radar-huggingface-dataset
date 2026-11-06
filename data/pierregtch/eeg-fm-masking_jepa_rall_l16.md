@@ -91,9 +91,9 @@ No se han publicado en la informacion disponible resultados de benchmarks de len
 
 | Modelo | Parametros | Marco | Enmascaramiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eeg-fm-masking_jepa_rall_L16 (este) | 12,69 M | JEPA | r = all, L = 16, pct_unmasked = 0,45 | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | No disponible (misma receta, mismos parametros de codificador segun la coleccion) | JEPA | r = 9 cm, L = 2 | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | No disponible (misma receta) | MAE | r = 9 cm, L = 2 | CC-BY-4.0 | HuggingFace |
+| eeg-fm-masking_jepa_rall_L16 (este) | 12,69 M | JEPA | r = all, L = 16, pct_unmasked = 0,45 | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | No disponible (misma receta, mismos parametros de codificador segun la coleccion) | JEPA | r = 9 cm, L = 2 | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | No disponible (misma receta) | MAE | r = 9 cm, L = 2 | CC-BY-4.0 | Hugging Face |
 | Otros backbones de EEG (tipo LaBraM, BIOT, EEGPT) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
 Los dos checkpoints recomendados explicitamente por los autores del articulo son `eeg-fm-masking_mae_r9cm_L2` y `eeg-fm-masking_jepa_r9cm_L2`; el modelo de esta ficha (r = all, L = 16) es la variante que enmascara todos los canales, un regimen mas agresivo dentro del mismo estudio controlado. La coleccion completa incluye 58 codificadores.
@@ -114,7 +114,7 @@ Los dos checkpoints recomendados explicitamente por los autores del articulo son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L16
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L16
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Codigo del proyecto: https://github.com/PierreGtch/eeg-fm-masking
 - Sitio web del articulo: https://pierregtch.github.io/eeg-fm-masking

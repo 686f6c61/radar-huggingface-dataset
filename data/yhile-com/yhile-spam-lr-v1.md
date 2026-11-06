@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yhile-com/yhile-spam-lr-v1 es un repositorio publicado en HuggingFace por el usuario yhile-com el 12 de septiembre de 2026, con licencia MIT y sin descargas ni interacciones registradas en el momento de la consulta (0 descargas, 0 likes). La informacion publica asociada es practicamente inexistente: la model card se limita a declarar `license: mit`, sin descripcion, sin datos de entrenamiento, sin metricas y sin ejemplos de uso. El campo `pipeline` de HuggingFace no esta informado y tampoco se declaran idiomas soportados.
+yhile-com/yhile-spam-lr-v1 es un repositorio publicado en Hugging Face por el usuario yhile-com el 12 de septiembre de 2026, con licencia MIT y sin descargas ni interacciones registradas en el momento de la consulta (0 descargas, 0 likes). La informacion publica asociada es practicamente inexistente: la model card se limita a declarar `license: mit`, sin descripcion, sin datos de entrenamiento, sin metricas y sin ejemplos de uso. El campo `pipeline` de Hugging Face no esta informado y tampoco se declaran idiomas soportados.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura, un clasificador de spam basado en regresion logistica (spam + lr), una familia de modelos lineales habitual para deteccion de spam sobre representaciones dispersas de alta dimensionalidad. Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como no verificada.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yhile-com/yhile-spam-lr-v1 | no disponible | no disponible | no disponible | MIT | HuggingFace, sin descargas registradas |
+| yhile-com/yhile-spam-lr-v1 | no disponible | no disponible | no disponible | MIT | Hugging Face, sin descargas registradas |
 | Alternativas de la categoria (clasificadores lineales de spam) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,6 +85,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yhile-com/yhile-spam-lr-v1
+- Hugging Face: https://huggingface.co/yhile-com/yhile-spam-lr-v1
 - Articulo de referencia sobre deteccion de spam con aprendizaje automatico (no vinculado al modelo): https://www.mdpi.com/2079-8954/14/3/229
 - El resto de resultados de la busqueda web no guardan relacion con el modelo (contenido musical en ruso) y se han descartado por no ser relevantes.

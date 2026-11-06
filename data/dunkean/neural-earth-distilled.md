@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dunkean/neural-earth-distilled | difusion de terreno destilada (8 checkpoints) | no disponible (88,6 MB total) | no aplica | MIT | HuggingFace, runtime Python propio |
-| xandergos/terrain-diffusion-30m (profesor) | difusion de terreno | no disponible | no aplica | no disponible en la informacion | HuggingFace |
+| dunkean/neural-earth-distilled | difusion de terreno destilada (8 checkpoints) | no disponible (88,6 MB total) | no aplica | MIT | Hugging Face, runtime Python propio |
+| xandergos/terrain-diffusion-30m (profesor) | difusion de terreno | no disponible | no aplica | no disponible en la informacion | Hugging Face |
 | Otros modelos de generacion de terreno | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre el modelo destilado y el profesor en la informacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre el modelo destilado y el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dunkean/neural-earth-distilled
+- Hugging Face: https://huggingface.co/dunkean/neural-earth-distilled
 - Modelo profesor: https://huggingface.co/xandergos/terrain-diffusion-30m
 - Revision del profesor: https://huggingface.co/xandergos/terrain-diffusion-30m/tree/9ef8030cb805b433b98ec25c5dddefbac07a9e26
 - Codigo fuente Neural Earth: https://github.com/dunkean/neural-earth

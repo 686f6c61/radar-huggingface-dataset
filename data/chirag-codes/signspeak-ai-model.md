@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Chirag-codes/signspeak-ai-model` es un proyecto publicado en HuggingFace por el usuario Chirag-codes, con la librería Keras como framework. El nombre del repositorio sugiere una posible aplicación en el ámbito del reconocimiento o traducción de lenguaje de señas, aunque no se dispone de documentación técnica que lo confirme. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo publicados, y registra 0 descargas y 1 like en la plataforma.
+El modelo `Chirag-codes/signspeak-ai-model` es un proyecto publicado en Hugging Face por el usuario Chirag-codes, con la librería Keras como framework. El nombre del repositorio sugiere una posible aplicación en el ámbito del reconocimiento o traducción de lenguaje de señas, aunque no se dispone de documentación técnica que lo confirme. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos ni archivos de modelo publicados, y registra 0 descargas y 1 like en la plataforma.
 
 En el momento de la consulta, no se ha publicado información sobre arquitectura, parámetros, contexto, licencia o idiomas soportados. El modelo fue creado el 14 de agosto de 2026 y actualizado el mismo día, lo que sugiere que se trata de un proyecto muy reciente o en fase inicial. Dada la ausencia de datos técnicos, no es posible evaluar su rendimiento, capacidades o idoneidad para casos de uso concretos.
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables en la misma categoria, ya que n
 
 ## Enlaces
 
-- [HuggingFace: Chirag-codes/signspeak-ai-model](https://huggingface.co/Chirag-codes/signspeak-ai-model)
+- [Hugging Face: Chirag-codes/signspeak-ai-model](https://huggingface.co/Chirag-codes/signspeak-ai-model)

@@ -88,6 +88,6 @@ La comparativa se limita a los modelos de la misma linea de experimentacion, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-clean-restraint
+- Repositorio Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-clean-restraint
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Scripts de reproduccion incluidos en el repositorio (carpeta `scripts/`)

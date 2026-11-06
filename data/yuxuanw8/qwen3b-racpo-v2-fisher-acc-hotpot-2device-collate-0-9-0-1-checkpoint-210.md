@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-210` es un checkpoint de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros, publicado en HuggingFace por el usuario yuxuanw8. La etiqueta de arquitectura del repositorio es `qwen2`, por lo que se trata de un transformer de la familia Qwen2 (probablemente derivado de un modelo base tipo Qwen2.5-3B), aunque el autor no lo confirma en la model card. El nombre del identificador sugiere un proceso de ajuste fino con un metodo denominado "racpo" (posiblemente una variante de optimizacion por preferencias con correccion tipo importance sampling o ratio-based), con regularizacion basada en informacion de Fisher ("fisher"), entrenado sobre el conjunto de datos HotpotQA ("hotpot"), en configuracion multi-dispositivo ("2device") con un esquema de collate y una mezcla de pesos 0.9-0.1.
+El modelo `yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-210` es un checkpoint de un modelo de generacion de texto de aproximadamente 3.086 millones de parametros, publicado en Hugging Face por el usuario yuxuanw8. La etiqueta de arquitectura del repositorio es `qwen2`, por lo que se trata de un transformer de la familia Qwen2 (probablemente derivado de un modelo base tipo Qwen2.5-3B), aunque el autor no lo confirma en la model card. El nombre del identificador sugiere un proceso de ajuste fino con un metodo denominado "racpo" (posiblemente una variante de optimizacion por preferencias con correccion tipo importance sampling o ratio-based), con regularizacion basada en informacion de Fisher ("fisher"), entrenado sobre el conjunto de datos HotpotQA ("hotpot"), en configuracion multi-dispositivo ("2device") con un esquema de collate y una mezcla de pesos 0.9-0.1.
 
 El problema que aborda queda en el ambito del razonamiento multi-hop y la respuesta a preguntas sobre documentos, dado el uso explicito de HotpotQA como referencia en el nombre. Sin embargo, la model card esta auto-generada y vacia: no incluye descripcion, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Las fuentes externas consultadas (Featherless y FriendliAI) si indican una longitud de contexto de 32.768 tokens, un dato no confirmado por el autor en el repositorio.
 
@@ -34,7 +34,7 @@ Los detalles de entrenamiento no estan documentados en la model card (todos los 
 ## Capacidades
 
 - Generacion de texto autoregresiva y conversacional, segun la etiqueta `conversational` y el pipeline `text-generation`.
-- Compatible con `text-generation-inference` y `endpoints_compatible`, lo que sugiere soporte para despliegue en endpoints de inferencia de HuggingFace.
+- Compatible con `text-generation-inference` y `endpoints_compatible`, lo que sugiere soporte para despliegue en endpoints de inferencia de Hugging Face.
 - Contexto largo de hasta 32.768 tokens (segun fuente externa), adecuado para tareas que requieren varios documentos o conversaciones extensas.
 - Orientado previsiblemente a razonamiento multi-hop y QA sobre documentos, dado el uso de HotpotQA en el nombre del checkpoint.
 - Soporte de tool calling / function calling: no disponible.
@@ -72,7 +72,7 @@ La comparacion directa es dificil porque no se han publicado benchmarks de este 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (yuxuanw8 checkpoint-210) | 3,086 B | 32.768 (segun terceros) | No disponible | No disponible | HuggingFace, 0 descargas |
+| Este modelo (yuxuanw8 checkpoint-210) | 3,086 B | 32.768 (segun terceros) | No disponible | No disponible | Hugging Face, 0 descargas |
 | Qwen2.5-3B | ~3,1 B | 32.768 (en variantes que lo soportan) | Publicado en la model card oficial | Apache 2.0 o Qwen segun variante | Amplia |
 | Llama 3.2 3B | ~3,2 B | 128.000 | Publicado en la model card oficial | Llama Community License | Amplia |
 | Phi-3-mini | ~3,8 B | 128.000 | Publicado en la model card oficial | MIT | Amplia |
@@ -93,7 +93,7 @@ Los datos de Qwen2.5-3B, Llama 3.2 3B y Phi-3-mini deben verificarse en sus fich
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-210
+- Hugging Face del modelo: https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.9-0.1-checkpoint-210
 - Checkpoint relacionado (0.75-0.25, checkpoint-150): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-150
 - Checkpoint relacionado (0.75-0.25, checkpoint-210): https://huggingface.co/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210/discussions
 - Ficha en Featherless: https://featherless.ai/models/yuxuanw8/qwen3b-racpo-v2-fisher-acc-hotpot-2device-collate-0.75-0.25-checkpoint-210

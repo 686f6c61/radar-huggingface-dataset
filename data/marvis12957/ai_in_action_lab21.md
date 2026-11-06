@@ -76,5 +76,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marvis12957/ai_in_action_lab21
+- Hugging Face: https://huggingface.co/Marvis12957/ai_in_action_lab21
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B (no verificado en la búsqueda, pero se menciona en la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning del modelo `unsloth/Qwen2.5-3B-Instruct`, desarrollado por Uigyu. Se trata de un ajuste fino realizado con las librerías Unsloth y TRL de HuggingFace, que permiten acelerar el entrenamiento. El nombre del repositorio (`qwen_2.5_3b_mhem-ali_h4_b_s1`) sugiere una variante específica de un experimento, pero no se aporta ninguna documentación adicional sobre el dataset, el objetivo del fine-tuning ni las tareas para las que fue entrenado.
+Este modelo es un fine-tuning del modelo `unsloth/Qwen2.5-3B-Instruct`, desarrollado por Uigyu. Se trata de un ajuste fino realizado con las librerías Unsloth y TRL de Hugging Face, que permiten acelerar el entrenamiento. El nombre del repositorio (`qwen_2.5_3b_mhem-ali_h4_b_s1`) sugiere una variante específica de un experimento, pero no se aporta ninguna documentación adicional sobre el dataset, el objetivo del fine-tuning ni las tareas para las que fue entrenado.
 
 El modelo base, Qwen2.5-3B-Instruct, es un modelo de lenguaje instructivo de 3.000 millones de parámetros, pero en la información disponible no se detallan las especificaciones exactas de esta variante. El repositorio tiene un tamaño de 0,1 GB, lo que indica que probablemente contiene solo los pesos en formato `safetensors`, posiblemente cuantizados, pero no se especifica el tipo de cuantización. El modelo está etiquetado como de idioma inglés y con licencia Apache 2.0. No presenta descargas ni likes, por lo que se trata de un modelo experimental o de uso personal.
 
@@ -21,7 +21,7 @@ El modelo base, Qwen2.5-3B-Instruct, es un modelo de lenguaje instructivo de 3.0
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `unsloth/Qwen2.5-3B-Instruct`, que a su vez se basa en la arquitectura Qwen2, un transformer decoder-only. El entrenamiento se realizó utilizando Unsloth, un framework que optimiza la velocidad de entrenamiento, y la librería TRL de HuggingFace. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre del modelo (`mhem-ali`) podría hacer referencia a un dataset o a un método específico, pero no hay documentación al respecto.
+El modelo es un fine-tuning de `unsloth/Qwen2.5-3B-Instruct`, que a su vez se basa en la arquitectura Qwen2, un transformer decoder-only. El entrenamiento se realizó utilizando Unsloth, un framework que optimiza la velocidad de entrenamiento, y la librería TRL de Hugging Face. No se proporciona información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El nombre del modelo (`mhem-ali`) podría hacer referencia a un dataset o a un método específico, pero no hay documentación al respecto.
 
 ## Capacidades
 
@@ -57,6 +57,6 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h4_b_s1
+- Modelo en Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h4_b_s1
 - Variante similar (h1_s1): https://huggingface.co/Uigyu/qwen_2.5_3b_mhem-ali_h1_s1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B

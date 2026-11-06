@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento (benchmarks) |
 |---|---|---|---|---|---|
-| Yuli-E2B-Reddit | 4.65B | no disponible | BSL 1.1 revenue-gated | HuggingFace, GGUF/Ollama | no disponible |
-| Gemma 3 4B | 4B | 32k | Gemma Terms of Use | HuggingFace, Kaggle, Ollama | no disponible en esta fuente |
-| Llama 3.2 3B | 3.2B | 8k | Llama 3.2 Community License | HuggingFace, Ollama | no disponible en esta fuente |
-| Mistral 7B Instruct v0.3 | 7B | 32k | Apache 2.0 | HuggingFace, Ollama | no disponible en esta fuente |
+| Yuli-E2B-Reddit | 4.65B | no disponible | BSL 1.1 revenue-gated | Hugging Face, GGUF/Ollama | no disponible |
+| Gemma 3 4B | 4B | 32k | Gemma Terms of Use | Hugging Face, Kaggle, Ollama | no disponible en esta fuente |
+| Llama 3.2 3B | 3.2B | 8k | Llama 3.2 Community License | Hugging Face, Ollama | no disponible en esta fuente |
+| Mistral 7B Instruct v0.3 | 7B | 32k | Apache 2.0 | Hugging Face, Ollama | no disponible en esta fuente |
 
 ## Limitaciones y advertencias
 
@@ -79,12 +79,12 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Posibles sesgos del corpus: el entrenamiento sobre "discurso de alta fricción", "existencialismo" y "quemado" puede sesgar el tono hacia el cinismo, la negatividad o la crítica. No se han publicado evaluaciones de sesgo.
 - Longitud de contexto no documentada: no se conoce el límite real de tokens de entrada, lo que dificulta planificar aplicaciones que requieran contexto largo.
 - Soporte de idiomas no especificado: la información publicada no indica qué idiomas son funcionales, por lo que su uso multilingüe es incierto.
-- Sin comunidad ni mantenimiento: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una adopción mínima y ausencia de soporte por parte del autor.
+- Sin comunidad ni mantenimiento: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una adopción mínima y ausencia de soporte por parte del autor.
 - Consumo de tokens añadido: las etiquetas `<thought>`, `<state_vector>` y los vectores de estado incrementan la longitud de las respuestas y, por tanto, el coste de tokenización y el tiempo de generación.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/economyofdreams/Yuli-E2B-Reddit
+- Modelo en Hugging Face: https://huggingface.co/economyofdreams/Yuli-E2B-Reddit
 - Unsloth (referenciado para el fine-tune): https://github.com/unslothai/unsloth
 - llama.cpp (formato GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama (runtime objetivo): https://ollama.com/

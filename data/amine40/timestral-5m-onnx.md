@@ -67,8 +67,8 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Timestral-5M-ONNX (esta ficha) | 5M | historia en multiplos de 32; horizonte hasta 1024 pasos | mistral-modified-mit | ONNX en HuggingFace |
-| Timestral-28M (modelo base) | 28M | no disponible | mistral-modified-mit | HuggingFace |
+| Timestral-5M-ONNX (esta ficha) | 5M | historia en multiplos de 32; horizonte hasta 1024 pasos | mistral-modified-mit | ONNX en Hugging Face |
+| Timestral-28M (modelo base) | 28M | no disponible | mistral-modified-mit | Hugging Face |
 | Alternativas de la categoria (Chronos, TimesFM, Moirai) | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,10 +85,10 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amine40/Timestral-5M-ONNX
+- Modelo en Hugging Face: https://huggingface.co/amine40/Timestral-5M-ONNX
 - Modelo base Timestral-5M: https://huggingface.co/mistralai/Timestral-5M
 - Modelo base Timestral-28M: https://huggingface.co/mistralai/Timestral-28M
 - Demo "Timestral in the browser": https://amine-athmani.github.io/timestral-demo/
 - Codigo del pipeline de forecasting (timestral.js): https://github.com/amine-athmani/timestral-demo/blob/main/web/src/lib/timestral.js
 - Repositorio de la demo: https://github.com/amine-athmani/timestral-demo
-- Licencia (Modified MIT): archivo LICENSE del repositorio de HuggingFace
+- Licencia (Modified MIT): archivo LICENSE del repositorio de Hugging Face

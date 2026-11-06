@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer for Generation es una implementación compacta y personalizada en PyTorch del modelo Efficientformer, publicada por el usuario chiaweicfi en HuggingFace. El repositorio está diseñado como un punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados a pequeña escala, no como un lanzamiento preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, pero no ha sido entrenado ni evaluado.
+Efficientformer for Generation es una implementación compacta y personalizada en PyTorch del modelo Efficientformer, publicada por el usuario chiaweicfi en Hugging Face. El repositorio está diseñado como un punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados a pequeña escala, no como un lanzamiento preentrenado listo para producción. El checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas, pero no ha sido entrenado ni evaluado.
 
 El modelo emplea atención lineal, fusión de tipo tucker, activación aproximada de GELU y normalización GroupNorm, con una escala base. Con solo 33.088 parámetros, su utilidad práctica es muy limitada: sirve para validar el pipeline de generación, probar la integración con adaptadores personalizados o como referencia de capacidad mínima en experimentos comparativos. No se declaran resultados de benchmarks en el repositorio, y la model card advierte explícitamente que no se presenta como un checkpoint entrenado.
 
@@ -60,12 +60,12 @@ No se dispone de modelos comparables en la misma categoría (implementación per
 
 - El checkpoint no ha sido entrenado: las salidas generadas serán ruido aleatorio sin coherencia lingüística.
 - No se ha auditado el modelo para robustez, equidad ni transferencia de dominio.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - La licencia BSD-3-Clause permite uso comercial, pero los términos de los datos externos usados con el repositorio deben revisarse por separado.
 - No apto para producción: es un artefacto experimental para pruebas de código y experimentos controlados.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto porque el modelo no ha sido entrenado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chiaweicfi/efficientformer-generation-large
+- Repositorio Hugging Face: https://huggingface.co/chiaweicfi/efficientformer-generation-large
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la búsqueda web.

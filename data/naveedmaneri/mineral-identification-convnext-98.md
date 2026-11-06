@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `naveedmaneri/mineral-identification-convnext-98` es un clasificador de imágenes basado en la arquitectura ConvNeXt, publicado por el usuario naveedmaneri en HuggingFace. Por el nombre del repositorio y su tamaño (0,1 GB), se trata de una adaptación de un backbone ConvNeXt (probablemente `convnext_tiny` o similar) ajustada para la identificación de minerales a partir de imágenes, con un rendimiento declarado del 98 % (presumiblemente accuracy sobre el conjunto de validación o test del autor). No es un modelo generativo ni un modelo de lenguaje: es un modelo de visión por computador para clasificación de imágenes.
+El modelo `naveedmaneri/mineral-identification-convnext-98` es un clasificador de imágenes basado en la arquitectura ConvNeXt, publicado por el usuario naveedmaneri en Hugging Face. Por el nombre del repositorio y su tamaño (0,1 GB), se trata de una adaptación de un backbone ConvNeXt (probablemente `convnext_tiny` o similar) ajustada para la identificación de minerales a partir de imágenes, con un rendimiento declarado del 98 % (presumiblemente accuracy sobre el conjunto de validación o test del autor). No es un modelo generativo ni un modelo de lenguaje: es un modelo de visión por computador para clasificación de imágenes.
 
 La información pública disponible es extremadamente escasa: la model card únicamente declara la licencia Apache 2.0 y no incluye descripción del dataset, número de clases, procedimiento de entrenamiento, métricas detalladas ni instrucciones de uso. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el mismo día (3 de noviembre de 2026), lo que sugiere una publicación reciente y sin validación comunitaria.
 
@@ -61,12 +61,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Arquitectura | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| naveedmaneri/mineral-identification-convnext-98 | ConvNeXt (variante no especificada) | no disponible (~0,1 GB de pesos) | imagen (resolución no disponible) | Apache 2.0 | HuggingFace, 0 descargas |
-| ConvNeXt-T preentrenado en ImageNet-1k (facebook/convnext-tiny-224) | ConvNeXt | ~28 M | imagen 224x224 | Apache 2.0 | HuggingFace, ampliamente usado |
-| ResNet-50 preentrenado en ImageNet-1k | ResNet | ~25 M | imagen 224x224 | Apache 2.0 (torchvision) | HuggingFace / torchvision |
-| ViT-B/16 preentrenado en ImageNet-1k | Vision Transformer | ~86 M | imagen 224x224 | Apache 2.0 | HuggingFace |
+| naveedmaneri/mineral-identification-convnext-98 | ConvNeXt (variante no especificada) | no disponible (~0,1 GB de pesos) | imagen (resolución no disponible) | Apache 2.0 | Hugging Face, 0 descargas |
+| ConvNeXt-T preentrenado en ImageNet-1k (facebook/convnext-tiny-224) | ConvNeXt | ~28 M | imagen 224x224 | Apache 2.0 | Hugging Face, ampliamente usado |
+| ResNet-50 preentrenado en ImageNet-1k | ResNet | ~25 M | imagen 224x224 | Apache 2.0 (torchvision) | Hugging Face / torchvision |
+| ViT-B/16 preentrenado en ImageNet-1k | Vision Transformer | ~86 M | imagen 224x224 | Apache 2.0 | Hugging Face |
 
-La comparación relevante es frente a backbones genéricos preentrenados: este modelo parte presumiblemente de uno de ellos y añade un ajuste específico para minerales, pero al no publicar métricas ni dataset no es posible verificar que supere a un ConvNeXt-T estándar reajustado por el usuario. No se conocen otros clasificadores de minerales publicados en HuggingFace con documentación suficiente para una comparación rigurosa.
+La comparación relevante es frente a backbones genéricos preentrenados: este modelo parte presumiblemente de uno de ellos y añade un ajuste específico para minerales, pero al no publicar métricas ni dataset no es posible verificar que supere a un ConvNeXt-T estándar reajustado por el usuario. No se conocen otros clasificadores de minerales publicados en Hugging Face con documentación suficiente para una comparación rigurosa.
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ La comparación relevante es frente a backbones genéricos preentrenados: este m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/naveedmaneri/mineral-identification-convnext-98
+- Hugging Face: https://huggingface.co/naveedmaneri/mineral-identification-convnext-98
 - Paper de ConvNeXt (A ConvNet for the 2020s): https://arxiv.org/abs/2201.03545
 - Repositorio oficial de ConvNeXt (Facebook Research): https://github.com/facebookresearch/ConvNeXt
 - Documentación de `timm` (PyTorch Image Models): https://github.com/huggingface/pytorch-image-models

@@ -87,9 +87,9 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jev-student-4b-yizao | 4,2B (denso, LoRA r16) | no disponible | Decisiones tipadas sobre el examen yizao | Apache 2.0 | HuggingFace (safetensors, GGUF) |
+| Jev-student-4b-yizao | 4,2B (denso, LoRA r16) | no disponible | Decisiones tipadas sobre el examen yizao | Apache 2.0 | Hugging Face (safetensors, GGUF) |
 | Jev 1.13 (TypeSafe AI) | no disponible | no disponible | Decisiones estructuradas, proposito general | Propietaria | Acceso temprano limitado (comercial) |
-| Qwen/Qwen3.5-4B-Base | 4,2B aprox. | no disponible | Generacion de texto y vision (base) | no disponible | HuggingFace (modelo base de este) |
+| Qwen/Qwen3.5-4B-Base | 4,2B aprox. | no disponible | Generacion de texto y vision (base) | no disponible | Hugging Face (modelo base de este) |
 | Familia Kev (jaredpalmer/kev) | no disponible | no disponible | Modelos de decision tipo Jev sobre Qwen3.5 y Qwen3.8 | no disponible | GitHub y pesos preentrenados |
 | QwenJev (RJMSWD) | basado en Qwen3.5-4B | no disponible | Juicio visual local, 0,169 s/frame | no disponible | GitHub |
 
@@ -109,7 +109,7 @@ La comparativa directa mas relevante es con Jev 1.13, del que este modelo es des
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vincentzhou/jev-student-4b-yizao
+- Modelo en Hugging Face: https://huggingface.co/vincentzhou/jev-student-4b-yizao
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Ficha de referencia en essamamdani.com: https://essamamdani.com/ai-models/hf-vincentzhou-jev-student-4b-yizao
 - Jev (AI model) en Wikipedia: https://en.wikipedia.org/wiki/Jev_(AI_model)

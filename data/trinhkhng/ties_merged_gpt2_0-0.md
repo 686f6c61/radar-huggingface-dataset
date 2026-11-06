@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.0
+- Hugging Face: https://huggingface.co/trinhkhng/ties_Merged_gpt2_0.0
 - FriendliAI (inferencia): https://friendli.ai/models/trinhkhng/ties_Merged_gpt2_0.0
 - free2aitools (ficha relacionada, variante large): https://free2aitools.com/model/trinhkhng/ties_merged_gpt2-large_0.0
 - Paper TIES: https://arxiv.org/abs/2306.01708

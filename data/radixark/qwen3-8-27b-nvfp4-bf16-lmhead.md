@@ -84,7 +84,7 @@ No se dispone de comparativa con otros modelos de la misma categoría fuera de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead
+- Hugging Face: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4-BF16-LMHead
 - Modelo fuente cuantizado: https://huggingface.co/RadixArk/Qwen3.8-27B-NVFP4
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - NVIDIA Model Optimizer: https://github.com/NVIDIA/Model-Optimizer

@@ -74,7 +74,7 @@ No disponible. Este repositorio no contiene un modelo de IA comparable con alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vishupal-24/ga8-carbon-card
+- Repositorio Hugging Face: https://huggingface.co/vishupal-24/ga8-carbon-card
 - Ejemplo de tarjeta similar: https://huggingface.co/24f2005112/tds-carbon-card
 - Ejemplo de tarjeta similar: https://huggingface.co/24f3005108/tds-carbon-card
 - Página personal del autor: https://vishupal.com/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint experimental de investigación publicado por el usuario logan7000 en HuggingFace. Se trata de un experimento de co-entrenamiento heterogéneo con Co-GRPO (Group Relative Policy Optimization) entre dos modelos de visión-lenguaje: Qwen2.5-VL-3B e InternVL3.5-2B. El objetivo es estudiar el aprendizaje colaborativo entre arquitecturas distintas, donde cada modelo se recompensa con pseudo-etiquetas verificadas por el otro (peer-verified pseudo labels). El entrenamiento se realizó durante 722 pasos con una receta "old" (beta 0, K 8, T 1.0, cap 1024, lr 1e-6, warmup 0.03, 8 prompts por paso) en 4 GPUs A100 de JHU.
+Este modelo es un checkpoint experimental de investigación publicado por el usuario logan7000 en Hugging Face. Se trata de un experimento de co-entrenamiento heterogéneo con Co-GRPO (Group Relative Policy Optimization) entre dos modelos de visión-lenguaje: Qwen2.5-VL-3B e InternVL3.5-2B. El objetivo es estudiar el aprendizaje colaborativo entre arquitecturas distintas, donde cada modelo se recompensa con pseudo-etiquetas verificadas por el otro (peer-verified pseudo labels). El entrenamiento se realizó durante 722 pasos con una receta "old" (beta 0, K 8, T 1.0, cap 1024, lr 1e-6, warmup 0.03, 8 prompts por paso) en 4 GPUs A100 de JHU.
 
 El repositorio contiene el checkpoint del lado Qwen (model_a) con dos versiones: el mejor paso según validación en MathVista-150 (step 100) y el checkpoint final (step 722). No se proporcionan métricas de rendimiento, licencia, ni especificaciones técnicas completas. Es un artefacto de investigación, no un modelo listo para producción, y su relevancia radica en explorar métodos de co-entrenamiento entre modelos multimodales de diferente tamaño y familia.
 
@@ -63,7 +63,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-mmr1-old-groupA-qwen25vl-3b-full
+- Repositorio Hugging Face: https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-3b-x-internvl35-2b-mmr1-old-groupA-qwen25vl-3b-full
 - Checkpoint similar (7B/8B, group A): https://huggingface.co/logan7000/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-all-ckpts
 - Checkpoint similar (7B/8B, group B): https://huggingface.co/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupB-endpoint
 - Página de despliegue en FriendliAI (para el checkpoint 7B/8B): https://friendli.ai/models/q1716523669/mllm-cogrpo-heter-qwen25vl-7b-x-internvl35-8b-mmr1-old3ep-b16-groupA-endpoint

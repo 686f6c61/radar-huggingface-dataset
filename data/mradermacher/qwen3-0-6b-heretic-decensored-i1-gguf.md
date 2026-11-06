@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de datos de contexto, rendimiento
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3-0.6B-heretic-decensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3-0.6B-heretic-decensored-i1-GGUF
 - Modelo base de la cuantización: https://huggingface.co/vrhvnsky/Qwen3-0.6B-heretic-decensored
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Qwen3-0.6B-heretic-decensored-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-0.6B

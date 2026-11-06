@@ -78,7 +78,7 @@ No existen alternativas publicas equivalentes centradas en el reconocimiento de 
 
 | Modelo | Dominio | Tarea | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CataNET-Pose-Small v1.0 | Catan | Keypoints de tablero | no disponible | ONNX | MIT (declarada) | HuggingFace, 0 descargas |
+| CataNET-Pose-Small v1.0 | Catan | Keypoints de tablero | no disponible | ONNX | MIT (declarada) | Hugging Face, 0 descargas |
 | Ultralytics YOLO26 | Generico | Deteccion y pose | no disponible en la informacion proporcionada | PyTorch y exportaciones | AGPL-3.0 en la distribucion estandar de Ultralytics | Repositorio oficial de Ultralytics |
 | Ultralytics YOLOv8-pose | Pose humana | Keypoints de persona | no disponible en la informacion proporcionada | PyTorch y exportaciones | AGPL-3.0 en la distribucion estandar de Ultralytics | Ampliamente desplegado |
 | Ultralytics YOLO11-pose | Pose humana | Keypoints de persona | no disponible en la informacion proporcionada | PyTorch y exportaciones | AGPL-3.0 en la distribucion estandar de Ultralytics | Ampliamente desplegado |
@@ -101,10 +101,10 @@ La diferencia principal no es de arquitectura sino de dominio: CataNET-Pose-Smal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Settlers-Lab/CataNET-Pose-Small-v1.0
+- Modelo en Hugging Face: https://huggingface.co/Settlers-Lab/CataNET-Pose-Small-v1.0
 - Dataset de entrenamiento: https://huggingface.co/datasets/Settlers-Lab/CataNET-Pose-Synth-v1.0
 - Modelo base Ultralytics YOLO26: https://huggingface.co/Ultralytics/YOLO26
 - Repositorio de Ultralytics: https://github.com/ultralytics/ultralytics
-- Perfil del autor en HuggingFace: https://huggingface.co/Settlers-Lab
+- Perfil del autor en Hugging Face: https://huggingface.co/Settlers-Lab
 
-Nota sobre la busqueda web: los resultados obtenidos corresponden a la serie de videojuegos The Settlers de Ubisoft (thesettlersonline.fr, ubisoft.com, fr.wikipedia.org y en.wikipedia.org) y no guardan ninguna relacion con Settlers-Lab ni con el modelo CataNET-Pose-Small v1.0. No se ha encontrado informacion adicional relevante sobre este modelo fuera de su ficha en HuggingFace.
+Nota sobre la busqueda web: los resultados obtenidos corresponden a la serie de videojuegos The Settlers de Ubisoft (thesettlersonline.fr, ubisoft.com, fr.wikipedia.org y en.wikipedia.org) y no guardan ninguna relacion con Settlers-Lab ni con el modelo CataNET-Pose-Small v1.0. No se ha encontrado informacion adicional relevante sobre este modelo fuera de su ficha en Hugging Face.

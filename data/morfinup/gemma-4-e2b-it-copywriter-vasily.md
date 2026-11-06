@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`morfinup/Gemma-4-E2b-it-copywriter-vasily` es un modelo publicado en HuggingFace por el usuario `morfinup` el 2 de octubre de 2026. Por el propio identificador del repositorio puede inferirse que se trata de un ajuste fino (fine-tuning) derivado de un modelo de la familia Gemma, con orientación a tareas de redacción publicitaria ("copywriter"), instruido ("it") y asociado a un autor o variante denominada "vasily". Sin embargo, la model card publicada por el autor está vacía salvo por la etiqueta de licencia `gemma`, por lo que ninguna de estas inferencias puede confirmarse con datos oficiales.
+`morfinup/Gemma-4-E2b-it-copywriter-vasily` es un modelo publicado en Hugging Face por el usuario `morfinup` el 2 de octubre de 2026. Por el propio identificador del repositorio puede inferirse que se trata de un ajuste fino (fine-tuning) derivado de un modelo de la familia Gemma, con orientación a tareas de redacción publicitaria ("copywriter"), instruido ("it") y asociado a un autor o variante denominada "vasily". Sin embargo, la model card publicada por el autor está vacía salvo por la etiqueta de licencia `gemma`, por lo que ninguna de estas inferencias puede confirmarse con datos oficiales.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 "likes", no declara pipeline de inferencia, no especifica idiomas soportados y no incluye documentación técnica, ejemplos de uso ni resultados de evaluación. La búsqueda web asociada no ha devuelto ninguna fuente relevante sobre el modelo: los únicos resultados obtenidos son páginas sin relación alguna con el proyecto.
 
@@ -82,6 +82,6 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/morfinup/Gemma-4-E2b-it-copywriter-vasily
+- Hugging Face: https://huggingface.co/morfinup/Gemma-4-E2b-it-copywriter-vasily
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

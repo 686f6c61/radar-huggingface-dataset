@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/Remek/basal-omni-1.0-mini-GGUF
+- Hugging Face (GGUF): https://huggingface.co/Remek/basal-omni-1.0-mini-GGUF
 - Modelo base: https://huggingface.co/Remek/basal-omni-1.0-mini
 - Repositorio del motor de inferencia: https://github.com/rkinas/basal
 - Sitio web del proyecto: https://basal.si5.pl/

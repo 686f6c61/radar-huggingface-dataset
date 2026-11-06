@@ -87,7 +87,7 @@ El adaptador no es comparable directamente con modelos completos, ya que es un c
 
 ## Enlaces
 
-- [HuggingFace: FoxSingh1999/adapter-general](https://huggingface.co/FoxSingh1999/adapter-general)
+- [Hugging Face: FoxSingh1999/adapter-general](https://huggingface.co/FoxSingh1999/adapter-general)
 - [Modelo base: unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [TRL (Transformers Reinforcement Learning)](https://github.com/huggingface/trl)

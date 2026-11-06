@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4012sksk/reax-g1029-gap
+- Modelo en Hugging Face: https://huggingface.co/4012sksk/reax-g1029-gap
 - Modelo base: https://huggingface.co/danyloooah/sn92-generalist-m1-mx5
 - Revisión fijada del padre: https://huggingface.co/danyloooah/sn92-generalist-m1-mx5/tree/ad4eccc3b4d8319c3eb79856994df6b35a584306
 - Ascendiente baselabs/mammoth-1: https://huggingface.co/baselabs/mammoth-1

@@ -84,9 +84,9 @@ Las diferencias se mantienen dentro de 2 niveles de 255. El segundo fragmento no
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ogtsvc/lingbot-world-fast-diffusers-int8 (este) | 18.547.604.544 (safetensors); transformer de 18,6 GB | No disponible | Sin benchmarks; brillo dentro de 2/255 frente al original en 9 fotogramas | Apache-2.0 | HuggingFace, 0 descargas y 0 likes |
-| robbyant/lingbot-world-fast-diffusers (original) | No disponible | No disponible | Sin benchmarks publicados en la información disponible | Apache-2.0 (según el repositorio derivado) | HuggingFace; transformer de 74,2 GB en FP32 y carpeta de 86,1 GB |
-| FastVideo/LingBot-World-Fast-Diffusers | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| ogtsvc/lingbot-world-fast-diffusers-int8 (este) | 18.547.604.544 (safetensors); transformer de 18,6 GB | No disponible | Sin benchmarks; brillo dentro de 2/255 frente al original en 9 fotogramas | Apache-2.0 | Hugging Face, 0 descargas y 0 likes |
+| robbyant/lingbot-world-fast-diffusers (original) | No disponible | No disponible | Sin benchmarks publicados en la información disponible | Apache-2.0 (según el repositorio derivado) | Hugging Face; transformer de 74,2 GB en FP32 y carpeta de 86,1 GB |
+| FastVideo/LingBot-World-Fast-Diffusers | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 | Robbyant/lingbot-world-v2 | No disponible | No disponible | No disponible | No disponible | GitHub |
 
 ## Limitaciones y advertencias
@@ -104,9 +104,9 @@ Las diferencias se mantienen dentro de 2 niveles de 255. El segundo fragmento no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ogtsvc/lingbot-world-fast-diffusers-int8
+- Repositorio Hugging Face: https://huggingface.co/ogtsvc/lingbot-world-fast-diffusers-int8
 - Modelo base: https://huggingface.co/robbyant/lingbot-world-fast-diffusers
-- Espejo en HuggingFace: https://huggingface.co/FastVideo/LingBot-World-Fast-Diffusers
+- Espejo en Hugging Face: https://huggingface.co/FastVideo/LingBot-World-Fast-Diffusers
 - Repositorio GitHub del proyecto: https://github.com/robbyant/lingbot-world
 - Repositorio GitHub de la versión v2: https://github.com/Robbyant/lingbot-world-v2
 - Sitio del proyecto: https://www.lingbot-world.org/

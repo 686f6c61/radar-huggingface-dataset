@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de difu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-1.73b-60.8bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-1.73b-60.8bt-mdlm-cooled
 - Rama de réplica de semilla: `revision="seed2"` en el mismo repositorio
 - Documentación de datos del autor: `DATA.md` (incluido en el repositorio)
 - Código de modelado: `modeling_vectabass.py` (incluido en el repositorio)

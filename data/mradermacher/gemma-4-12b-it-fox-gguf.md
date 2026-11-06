@@ -32,7 +32,7 @@ Lo unico verificable a nivel tecnico es el proceso de cuantizacion: mradermacher
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` y el sufijo `-it` (instruction-tuned) del nombre.
 - Procesamiento multimodal: la existencia de ficheros mmproj-Q8_0 y mmproj-f16 confirma soporte de entrada de imagenes, aunque no se especifican detalles.
 - Ejecucion local mediante llama.cpp y derivados, al estar distribuido en GGUF.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas, tool calling o agentes: no disponible en la informacion proporcionada.
 
 ## Casos de uso

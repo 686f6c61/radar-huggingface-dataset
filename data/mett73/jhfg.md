@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mett73/jhfg es un repositorio de modelo publicado en HuggingFace por el usuario mett73. En el momento de la consulta acumula 0 descargas y 0 "likes", no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a una única línea con el identificador de licencia `bigscience-openrail-m`. No se ha publicado ningun otro artefacto documental asociado.
+mett73/jhfg es un repositorio de modelo publicado en Hugging Face por el usuario mett73. En el momento de la consulta acumula 0 descargas y 0 "likes", no declara pipeline de inferencia, no especifica idiomas soportados y su model card se limita a una única línea con el identificador de licencia `bigscience-openrail-m`. No se ha publicado ningun otro artefacto documental asociado.
 
 La informacion disponible no permite determinar practicamente ningun atributo tecnico del modelo: se desconoce la arquitectura, el numero de parametros, la longitud de contexto, el vocabulario, el tokenizador, el corpus de entrenamiento y el formato de los pesos. La model card no incluye ejemplos de uso, instrucciones de carga ni referencias a papers o repositorios de codigo.
 
@@ -74,6 +74,6 @@ No disponible. No hay elementos para establecer una categoria de comparacion, ya
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mett73/jhfg
+- Repositorio en Hugging Face: https://huggingface.co/mett73/jhfg
 - Texto de la licencia bigscience-openrail-m (referencia externa, no verificada en esta busqueda): https://huggingface.co/spaces/bigscience/license
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.

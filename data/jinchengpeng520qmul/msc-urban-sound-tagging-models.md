@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JinchengPeng520QMUL/msc-urban-sound-tagging-models` es un modelo de etiquetado de sonidos urbanos (urban sound tagging) publicado en HuggingFace por JinchengPeng520QMUL, un usuario asociado a la Queen Mary University of London. La model card original está vacía, sin descripción técnica, arquitectura ni datos de entrenamiento. Sin embargo, el nombre y el contexto de la tarea sugieren que se trata de un sistema de aprendizaje automático para clasificar y etiquetar sonidos urbanos, posiblemente basado en redes neuronales convolucionales (CNN) o CRNN, similar a las soluciones presentadas en los desafíos DCASE 2019 y 2020 sobre esta misma tarea. El modelo se distribuye bajo licencia BSD-3-Clause, lo que permite uso comercial y modificación.
+El modelo `JinchengPeng520QMUL/msc-urban-sound-tagging-models` es un modelo de etiquetado de sonidos urbanos (urban sound tagging) publicado en Hugging Face por JinchengPeng520QMUL, un usuario asociado a la Queen Mary University of London. La model card original está vacía, sin descripción técnica, arquitectura ni datos de entrenamiento. Sin embargo, el nombre y el contexto de la tarea sugieren que se trata de un sistema de aprendizaje automático para clasificar y etiquetar sonidos urbanos, posiblemente basado en redes neuronales convolucionales (CNN) o CRNN, similar a las soluciones presentadas en los desafíos DCASE 2019 y 2020 sobre esta misma tarea. El modelo se distribuye bajo licencia BSD-3-Clause, lo que permite uso comercial y modificación.
 
 La relevancia de este tipo de modelos radica en la monitorización acústica de entornos urbanos, la detección de fuentes de ruido y la gestión del paisaje sonoro. No obstante, la ausencia de documentación técnica detallada limita su uso directo en producción sin una evaluación previa por parte del usuario. Se desconoce el tamaño, la arquitectura exacta y el rendimiento del modelo, por lo que cualquier integración requerirá pruebas adicionales.
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para realizar una comparativa tecnica co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JinchengPeng520QMUL/msc-urban-sound-tagging-models
+- Hugging Face: https://huggingface.co/JinchengPeng520QMUL/msc-urban-sound-tagging-models
 - Repositorio de la solucion DCASE 2020 (Multitel-ai): https://github.com/multitel-ai/urban-sound-tagging
 - Pagina del desafio DCASE 2019 Urban Sound Tagging: https://dcase.community/challenge2019/task-urban-sound-tagging
 - Articulo "Urban Sound Tagging using Convolutional Neural Networks": https://www.researchgate.net/publication/336132704_Urban_Sound_Tagging_using_Convolutional_Neural_Networks

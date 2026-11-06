@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alicemoreau/albef-checkpoint78 es un prototipo de investigacion de tipo Albef orientado a tareas de generacion, publicado por el usuario Alicemoreau en HuggingFace. No se trata de un modelo entrenado ni evaluado, sino de un repositorio de trabajo que incluye una implementacion propia (train.py), un fichero de configuracion de arquitectura, una receta de experimento por defecto y un checkpoint de inicializacion valido unicamente para pruebas de humo. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark.
+Alicemoreau/albef-checkpoint78 es un prototipo de investigacion de tipo Albef orientado a tareas de generacion, publicado por el usuario Alicemoreau en Hugging Face. No se trata de un modelo entrenado ni evaluado, sino de un repositorio de trabajo que incluye una implementacion propia (train.py), un fichero de configuracion de arquitectura, una receta de experimento por defecto y un checkpoint de inicializacion valido unicamente para pruebas de humo. El propio autor indica explicitamente que no se reclama ninguna puntuacion de benchmark.
 
 El dato mas relevante es su escala: el checkpoint en safetensors contiene 24.832 parametros totales, un orden de magnitud propio de un test de integracion, no de un modelo con capacidad generativa real. La arquitectura declarada es Albef con atencion flash, fusion por concatenacion seguida de MLP, activacion approximate GELU y normalizacion LayerNorm. El repositorio ocupa 0,0 GB, coherente con esa escala.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 
 - Pruebas de humo de pipeline: verificar que un entorno de entrenamiento carga safetensors, interpreta config.json y arranca el script sin errores antes de invertir en un modelo de mayor tamano. Es adecuado precisamente por su escala minima, que hace que el ciclo de iteracion sea casi instantaneo.
 - Plantilla de implementacion Albef: servir como esqueleto de codigo para quien necesite construir su propia variante Albef con atencion flash y fusion concat+MLP, sustituyendo despues el checkpoint por uno entrenado.
-- Validacion de formatos y convenciones: comprobar la estructura esperada de config.json y training_args.json en un flujo de publicacion en HuggingFace, incluida la declaracion de licencia BSD-3-Clause.
+- Validacion de formatos y convenciones: comprobar la estructura esperada de config.json y training_args.json en un flujo de publicacion en Hugging Face, incluida la declaracion de licencia BSD-3-Clause.
 - Reproduccion de recetas de optimizacion: usar la configuracion adamw + onecycle como linea base para comparar estrategias de entrenamiento en igualdad de condiciones, tal y como sugiere la propia model card.
 - Docencia y formacion: ilustrar en un aula o tutorial la diferencia entre un checkpoint de inicializacion y un checkpoint entrenado, y por que no deben publicarse metricas sin evidencia.
 - Pruebas de integracion continua: incluir el modelo como caso de test en un pipeline de CI que valide carga de safetensors y serializacion, con coste de computo despreciable.
@@ -88,5 +88,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alicemoreau/albef-checkpoint78
+- Modelo en Hugging Face: https://huggingface.co/Alicemoreau/albef-checkpoint78
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo concreto.

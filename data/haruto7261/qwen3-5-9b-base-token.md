@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.5-9B-base-token es una variante del modelo base Qwen3.5-9B publicada por el usuario Haruto7261 en HuggingFace. Segun la model card del autor, se trata de un modelo al que se le ha anadido un tokenizer de dialecto ryukyuense (琉球弁, el conjunto de variedades linguisticas de las islas Ryukyu, en el actual Japon) sobre la base de Qwen3.5-9B. El modelo cuenta con 8.952.435.200 parametros segun los pesos en safetensors, lo que lo situa en la franja de los 9B, y el repositorio ocupa 17,9 GB.
+Qwen3.5-9B-base-token es una variante del modelo base Qwen3.5-9B publicada por el usuario Haruto7261 en Hugging Face. Segun la model card del autor, se trata de un modelo al que se le ha anadido un tokenizer de dialecto ryukyuense (琉球弁, el conjunto de variedades linguisticas de las islas Ryukyu, en el actual Japon) sobre la base de Qwen3.5-9B. El modelo cuenta con 8.952.435.200 parametros segun los pesos en safetensors, lo que lo situa en la franja de los 9B, y el repositorio ocupa 17,9 GB.
 
-La informacion publicada es muy escasa: no se detalla el proceso de entrenamiento, el volumen de datos del dialecto utilizado, la licencia, los idiomas soportados ni el pipeline de uso. La arquitectura declarada en los tags de HuggingFace es `qwen3_5_text`, lo que indica que se apoya en la familia Qwen3.5 de Alibaba, aunque no se especifican la longitud de contexto ni los detalles internos.
+La informacion publicada es muy escasa: no se detalla el proceso de entrenamiento, el volumen de datos del dialecto utilizado, la licencia, los idiomas soportados ni el pipeline de uso. La arquitectura declarada en los tags de Hugging Face es `qwen3_5_text`, lo que indica que se apoya en la familia Qwen3.5 de Alibaba, aunque no se especifican la longitud de contexto ni los detalles internos.
 
 Su relevancia es acotada pero concreta: representa un ejemplo de adaptacion linguistica de bajo nivel (extension de vocabulario y tokenizer) orientada a una variedad linguistica minoritaria y en peligro, el ryukyuense, sobre un modelo base moderno. Para desarrolladores e investigadores interesados en tokenizers para lenguas de bajos recursos, es un caso de estudio, aunque la falta de documentacion limita seriamente su uso en produccion.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B-base-token (este modelo) | 8.952.435.200 | no disponible | no disponible | safetensors en HuggingFace, 57 descargas |
+| Qwen3.5-9B-base-token (este modelo) | 8.952.435.200 | no disponible | no disponible | safetensors en Hugging Face, 57 descargas |
 | Qwen3.5-9B (base original) | ~9B (segun denominacion) | no disponible en esta ficha | no disponible en esta ficha | modelo base de referencia de Alibaba |
 | Otros modelos de ~9B con tokenizer adaptado | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de las a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/Qwen3.5-9B-base-token
+- Hugging Face: https://huggingface.co/Haruto7261/Qwen3.5-9B-base-token
 - Modelo base de referencia (familia Qwen3.5): no disponible en la informacion proporcionada
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada

@@ -84,5 +84,5 @@ No disponible. No se han identificado en la información proporcionada otros age
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-link01-walk-ppo
+- Hugging Face: https://huggingface.co/Luna002-Luna75/connectailab-rl-lunaluna-v1-link01-walk-ppo
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

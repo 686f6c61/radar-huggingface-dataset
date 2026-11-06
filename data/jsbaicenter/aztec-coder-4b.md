@@ -82,9 +82,9 @@ La comparativa directa disponible es con el propio modelo base y con la variante
 
 | Modelo | Parametros | Contexto | Rendimiento en codificacion agentica | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aztec-Coder-4B | 4,2B | 131.072 tokens (configuracion vLLM) | 82,9% en 121 fallos no vistos; 21,7% en Live-60 | Apache-2.0 | safetensors en HuggingFace |
-| Aztec-Coder-4B-NVFP4 | 4,2B (cuantizado) | no disponible | 38,0% (*) en 32 fallos no vistos; 15,0% en Live-60 | Apache-2.0 (heredada) | variante cuantizada en HuggingFace |
-| Qwen3.5-4B (base) | 4,2B | no disponible | 10,1% en 121 fallos no vistos; 15,0% en Live-60 | Apache-2.0 | safetensors en HuggingFace |
+| Aztec-Coder-4B | 4,2B | 131.072 tokens (configuracion vLLM) | 82,9% en 121 fallos no vistos; 21,7% en Live-60 | Apache-2.0 | safetensors en Hugging Face |
+| Aztec-Coder-4B-NVFP4 | 4,2B (cuantizado) | no disponible | 38,0% (*) en 32 fallos no vistos; 15,0% en Live-60 | Apache-2.0 (heredada) | variante cuantizada en Hugging Face |
+| Qwen3.5-4B (base) | 4,2B | no disponible | 10,1% en 121 fallos no vistos; 15,0% en Live-60 | Apache-2.0 | safetensors en Hugging Face |
 
 El autor situa el punto de partida de la codificacion agentica fiable en modelos de 27B o mas, categoria para la que no se aportan cifras comparativas en la informacion disponible. Otros modelos de codigo de referencia del sector (por ejemplo, la familia DeepSeek-Coder) no cuentan con datos comparables en esta informacion, por lo que no se incluye una comparacion numerica con ellos.
 
@@ -103,7 +103,7 @@ El autor situa el punto de partida de la codificacion agentica fiable en modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbaicenter/Aztec-Coder-4B
+- Modelo en Hugging Face: https://huggingface.co/jsbaicenter/Aztec-Coder-4B
 - Version preliminar relacionada: https://huggingface.co/jsbaicenter/JSBAI-Coder-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de post-entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2

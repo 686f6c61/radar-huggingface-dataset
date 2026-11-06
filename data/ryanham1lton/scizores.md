@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ScizorES es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ScizorES`. La model card asociada unicamente contiene el bloque de metadatos con la licencia `cc-by-4.0`; no incluye descripcion, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
+ScizorES es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/ScizorES`. La model card asociada unicamente contiene el bloque de metadatos con la licencia `cc-by-4.0`; no incluye descripcion, arquitectura, datos de entrenamiento, idiomas soportados ni ejemplos de uso. El repositorio ocupa 0,1 GB y no registra descargas ni likes en el momento de la consulta.
 
 No se dispone de informacion publica sobre el problema que el modelo pretende resolver, su tamano en parametros, su ventana de contexto ni su procedencia. El nombre "ScizorES" sugiere un posible ajuste fino orientado al castellano (sufijo "ES"), pero se trata de una inferencia no confirmada por ninguna fuente y no debe tomarse como dato tecnico.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/ScizorES
+- Hugging Face: https://huggingface.co/Ryanham1lton/ScizorES
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

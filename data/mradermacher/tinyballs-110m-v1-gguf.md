@@ -53,7 +53,7 @@ En cuanto a este repositorio, se trata exclusivamente de cuantizaciones estatica
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen valores de MMLU, HumanEval, GSM8K, BFCL, API-Bank ni de ninguna otra evaluacion. La busqueda web realizada no devolvio resultados relacionados con el modelo: los unicos enlaces recuperados corresponden a guias de viaje de Sydney, totalmente ajenos al objeto de esta ficha, por lo que no aportan ningun dato de rendimiento utilizable.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen valores de MMLU, HumanEval, GSM8K, BFCL, API-Bank ni de ninguna otra evaluacion. La busqueda web realizada no devolvio resultados relacionados con el modelo: los unicos enlaces recuperados corresponden a guias de viaje de Sydney, totalmente ajenos al objeto de esta ficha, por lo que no aportan ningun dato de rendimiento utilizable.
 
 ## Requisitos de hardware
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
   - Q2_K: aproximadamente 42 MB.
 - GPU recomendadas: no se requiere GPU. Cualquier GPU con al menos 1 GB de VRAM es suficiente, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100 o H100. El modelo no aprovecha la capacidad de calculo de GPU de gama alta; el cuello de botella sera la gestion de peticiones concurrentes, no la matriz de pesos.
 - Compatibilidad con GPU de consumo: si, en todas las GPU de consumo actuales e incluso en iGPU integradas y en CPU exclusivamente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con PyTorch o vLLM. El tag "endpoints_compatible" de HuggingFace indica compatibilidad con Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, koboldcpp, text-generation-webui y cualquier runtime compatible con GGUF. Para el modelo base en safetensors, transformers con PyTorch o vLLM. El tag "endpoints_compatible" de Hugging Face indica compatibilidad con Inference Endpoints.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas en la informacion proporcionada.
 
 ## Comparativa con modelos similares

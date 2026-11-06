@@ -18,7 +18,7 @@ Debido a que es una versión alfa y a que no se han publicado benchmarks, su ren
 | Longitud de contexto | No aplica (modelo de texto a imagen) |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponibles (no se especifica; el prompt de ejemplo está en inglés) |
-| Licencia | CreativeML Open RAIL++-M (heredada del modelo base; etiqueta en HuggingFace: other) |
+| Licencia | CreativeML Open RAIL++-M (heredada del modelo base; etiqueta en Hugging Face: other) |
 | Formato de pesos | Safetensors (compatible con Diffusers) |
 
 ## Arquitectura y entrenamiento
@@ -73,7 +73,7 @@ No disponible. La información proporcionada no incluye datos sobre otros adapta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nanite-Labs/nanites-petroglyph-sdxl-1.0
-- Perfil de Nanite-Labs en HuggingFace: https://huggingface.co/Nanite-Labs
+- Hugging Face: https://huggingface.co/Nanite-Labs/nanites-petroglyph-sdxl-1.0
+- Perfil de Nanite-Labs en Hugging Face: https://huggingface.co/Nanite-Labs
 - Modelo base Stable Diffusion XL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Repositorio fuente del proyecto (mencionado en la model card): `experts/petroglyph/data/manifest.csv` (no se proporciona una URL directa)

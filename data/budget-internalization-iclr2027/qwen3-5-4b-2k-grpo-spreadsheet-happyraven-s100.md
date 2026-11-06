@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-2k-grpo-spreadsheet-happyraven-s100 | 4,66 B | No disponible (presupuesto de generacion de 2.048 tokens) | Hojas de calculo + control de presupuesto de tokens | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B (base) | No disponible en la informacion proporcionada | No disponible | Proposito general, multimodal de entrada segun pipeline | Apache 2.0 (heredada) | HuggingFace |
+| qwen3.5-4b-2k-grpo-spreadsheet-happyraven-s100 | 4,66 B | No disponible (presupuesto de generacion de 2.048 tokens) | Hojas de calculo + control de presupuesto de tokens | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B (base) | No disponible en la informacion proporcionada | No disponible | Proposito general, multimodal de entrada segun pipeline | Apache 2.0 (heredada) | Hugging Face |
 | Otras alternativas de ~4 B para tareas tabulares o de agente | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de este checkpoint ni de alternativas comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento de este checkpoint ni de alternativas comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-2k-grpo-spreadsheet-happyraven-s100
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/qwen3.5-4b-2k-grpo-spreadsheet-happyraven-s100
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, repositorio o demo del metodo: no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados relevantes (unicamente paginas sobre alquiler de vehiculos y el presupuesto del Estado frances, sin relacion con el modelo).

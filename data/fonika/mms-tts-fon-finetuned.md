@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fonika/mms-tts-fon-finetuned es un modelo de síntesis de voz (texto a audio) publicado en HuggingFace por el usuario Fonika. Por su identificador y sus etiquetas (vits, text-to-audio, mms-tts), apunta a un ajuste fino sobre un modelo de la familia MMS-TTS de Meta, construida sobre la arquitectura VITS, y el sufijo fon coincide con el código ISO 639-3 del idioma fon. Ninguno de estos extremos está confirmado en la model card, que es la plantilla autogenerada de HuggingFace sin rellenar.
+Fonika/mms-tts-fon-finetuned es un modelo de síntesis de voz (texto a audio) publicado en Hugging Face por el usuario Fonika. Por su identificador y sus etiquetas (vits, text-to-audio, mms-tts), apunta a un ajuste fino sobre un modelo de la familia MMS-TTS de Meta, construida sobre la arquitectura VITS, y el sufijo fon coincide con el código ISO 639-3 del idioma fon. Ninguno de estos extremos está confirmado en la model card, que es la plantilla autogenerada de Hugging Face sin rellenar.
 
 El repositorio ocupa 0,1 GB y contiene 36.286.128 parámetros en formato safetensors. Es un tamaño habitual en los modelos VITS de síntesis de voz, lo que permite inferencia en tiempo real incluso en CPU y sin GPU dedicada.
 
@@ -30,7 +30,7 @@ Su relevancia práctica es hoy limitada: cero descargas, cero me gusta, licencia
 
 VITS (Conditional Variational Autoencoder with Adversarial Learning for End-to-End Text-to-Speech) es una arquitectura de síntesis de voz que integra en un único modelo un codificador de texto, un prior condicional, un posterior variacional, un predictor estocástico de duraciones, flujos normalizadores y un decodificador de waveform de tipo HiFi-GAN, todo entrenado de forma conjunta con una pérdida adversaria y una pérdida de reconstrucción. Con 36,3 millones de parámetros, el modelo es lo bastante compacto para generar audio en tiempo real en CPU y su huella de memoria es inferior a 150 MB en precisión FP32.
 
-Los detalles concretos de entrenamiento no están documentados: número de horas de audio, corpus utilizado, idioma objetivo, hiperparámetros, régimen de precisión y si hubo ajuste fino sobre un checkpoint MMS-TTS previo. La model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como «More Information Needed». La única pista sobre el origen es el propio identificador mms-tts-fon-finetuned y la etiqueta del repositorio, que sugieren un ajuste fino sobre un modelo MMS-TTS de Meta para el código de idioma fon, pero no hay confirmación en el repositorio. La etiqueta arxiv:1910.09700 corresponde al artículo del calculador de emisiones de carbono que aparece en la plantilla de HuggingFace, no a un artículo técnico del modelo.
+Los detalles concretos de entrenamiento no están documentados: número de horas de audio, corpus utilizado, idioma objetivo, hiperparámetros, régimen de precisión y si hubo ajuste fino sobre un checkpoint MMS-TTS previo. La model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como «More Information Needed». La única pista sobre el origen es el propio identificador mms-tts-fon-finetuned y la etiqueta del repositorio, que sugieren un ajuste fino sobre un modelo MMS-TTS de Meta para el código de idioma fon, pero no hay confirmación en el repositorio. La etiqueta arxiv:1910.09700 corresponde al artículo del calculador de emisiones de carbono que aparece en la plantilla de Hugging Face, no a un artículo técnico del modelo.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|
-| Fonika/mms-tts-fon-finetuned | 36,3 M | no disponible | HuggingFace, 0 descargas | Model card vacía, idioma y licencia sin confirmar |
-| Modelos MMS-TTS de Meta (por idioma) | Del mismo orden de magnitud, valor exacto no disponible | No verificada en esta ficha | HuggingFace, distribución amplia y uso extendido | Un checkpoint por idioma, arquitectura VITS; este modelo parece un ajuste fino sobre uno de ellos |
+| Fonika/mms-tts-fon-finetuned | 36,3 M | no disponible | Hugging Face, 0 descargas | Model card vacía, idioma y licencia sin confirmar |
+| Modelos MMS-TTS de Meta (por idioma) | Del mismo orden de magnitud, valor exacto no disponible | No verificada en esta ficha | Hugging Face, distribución amplia y uso extendido | Un checkpoint por idioma, arquitectura VITS; este modelo parece un ajuste fino sobre uno de ellos |
 | Coqui TTS (implementación VITS) | Del mismo orden de magnitud, valor exacto no disponible | No verificada en esta ficha | Repositorio y checkpoints públicos | Framework entrenable con datos propios, permite comparar calidad con corpus controlados |
 | Piper | Del mismo orden de magnitud, valor exacto no disponible | No verificada en esta ficha | Distribución orientada a dispositivos嵌入, formato ONNX | Diseñado para inferencia en Raspberry Pi y equipos modestos |
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fonika/mms-tts-fon-finetuned
+- Hugging Face: https://huggingface.co/Fonika/mms-tts-fon-finetuned
 - Artículo citado en las etiquetas del repositorio (corresponde al calculador de emisiones de carbono de la plantilla, no al modelo): Lacoste et al. (2019), «Quantifying the carbon emissions of machine learning» - https://arxiv.org/abs/1910.09700
 - Búsqueda web realizada: no se encontraron referencias útiles; el único resultado devuelto apuntaba a un dominio inexistente.
 - Referencias externas de contexto, no incluidas en la model card: VITS - https://arxiv.org/abs/2106.06103 ; MMS (Scaling Speech Technology to 1000+ Languages) - https://arxiv.org/abs/2305.13516

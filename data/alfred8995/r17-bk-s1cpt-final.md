@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-s1cpt-final` es un checkpoint de aproximadamente 1.414 millones de parámetros publicado en HuggingFace por el usuario alfred8995 el 23 de octubre de 2026. El repositorio contiene únicamente pesos en formato safetensors (2,8 GB, compatible con precisión de 16 bits) y está etiquetado con el tag `qwen3`, lo que apunta a un modelo derivado de la familia Qwen3, muy probablemente el resultado de un proceso de continued pretraining o de un fine-tuning sobre una base de ese linaje; el sufijo `s1cpt` del nombre es consistente con una etapa 1 de continued pretraining.
+`alfred8995/r17-bk-s1cpt-final` es un checkpoint de aproximadamente 1.414 millones de parámetros publicado en Hugging Face por el usuario alfred8995 el 23 de octubre de 2026. El repositorio contiene únicamente pesos en formato safetensors (2,8 GB, compatible con precisión de 16 bits) y está etiquetado con el tag `qwen3`, lo que apunta a un modelo derivado de la familia Qwen3, muy probablemente el resultado de un proceso de continued pretraining o de un fine-tuning sobre una base de ese linaje; el sufijo `s1cpt` del nombre es consistente con una etapa 1 de continued pretraining.
 
-No se ha publicado model card, pipeline, idiomas soportados ni resultados de evaluación, y el acceso está restringido (gated), por lo que cualquier uso requiere aceptar las condiciones en HuggingFace. La licencia figura como `other`, sin que se detallen sus términos en la información disponible, lo que constituye un riesgo relevante para uso comercial. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto experimental sin validación externa conocida.
+No se ha publicado model card, pipeline, idiomas soportados ni resultados de evaluación, y el acceso está restringido (gated), por lo que cualquier uso requiere aceptar las condiciones en Hugging Face. La licencia figura como `other`, sin que se detallen sus términos en la información disponible, lo que constituye un riesgo relevante para uso comercial. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto experimental sin validación externa conocida.
 
 Su relevancia es, por tanto, acotada: resulta interesante como base para experimentación con modelos de ~1,4B parámetros en entornos con recursos limitados, pero no debería considerarse un modelo listo para producción sin una evaluación propia previa. La ficha siguiente marca explícitamente como "no disponible" todo dato que no consta en la información proporcionada.
 
@@ -84,12 +84,12 @@ Frente a estas alternativas, el checkpoint de alfred8995 no ofrece garantias de 
 - Idiomas no declarados: no consta soporte de castellano ni de ninguna otra lengua; el comportamiento multilingue es una incognita.
 - Contexto desconocido: sin ventana documentada no se pueden disenar pipelines que dependan de contexto largo; habria que medirlo empiricamente con pruebas de aguja en un pajar.
 - Sesgos no evaluados: no hay informacion sobre filtrado de datos, alineamiento o mitigaciones de sesgo social.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que anade friccion a la automatizacion de despliegues y a la integracion en CI/CD.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que anade friccion a la automatizacion de despliegues y a la integracion en CI/CD.
 - Artefacto sin validacion comunitaria: cero descargas y cero likes implican que no hay retroalimentacion de terceros sobre calidad, estabilidad o fallos conocidos.
 - Riesgo de cadena de suministro: al desconocerse la procedencia exacta de los pesos, se recomienda cargarlos con `trust_remote_code=False`, revisar la configuracion y el tokenizador antes de ejecutarlos, y hacerlo en un entorno aislado.
 - No usar como sustituto de un modelo evaluado en producción sin una bateria propia de pruebas de calidad, seguridad y latencia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alfred8995/r17-bk-s1cpt-final
+- Repositorio en Hugging Face: https://huggingface.co/alfred8995/r17-bk-s1cpt-final
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo (paper, blog, repositorio o demo). Las busquedas devolvieron exclusivamente contenido no relacionado (preguntas de astronomia y foros de soporte de Windows).

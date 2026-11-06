@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (este) | 27,8B MoE | no disponible | Apache-2.0 | Pesos abiertos en HuggingFace |
+| Qwen3.8-27B (este) | 27,8B MoE | no disponible | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.8-Max | 2,4T MoE | no disponible | Apache-2.0 | Pesos abiertos (primera vez para clase Max) |
 | Qwen3.8-2.4T-A95B | 2,4T total, 95B activos | no disponible | Apache-2.0 | Adaptacion FlagOS multi-chip |
 
@@ -94,9 +94,9 @@ La comparativa directa con modelos de tamano similar (como Llama 3.1 70B o Mistr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-zhenwu-FlagOS
+- Repositorio Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-zhenwu-FlagOS
 - Version NVIDIA FlagOS: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-nvidia-FlagOS
-- Perfil de FlagRelease en HuggingFace: https://huggingface.co/FlagRelease
+- Perfil de FlagRelease en Hugging Face: https://huggingface.co/FlagRelease
 - Seguimiento de lanzamiento y especificaciones: https://aireleasetracker.com/model/qwen/qwen3.8-27b
 - Blog de Qwen 3.8 (via OpenLM): https://openlm.ai/qwen3.8/
 - Guia de AMD para Qwen 3.8 27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

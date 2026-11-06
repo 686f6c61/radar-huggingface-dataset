@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `mooumari/olh-qwen-image-edit-2509` (este repositorio) | Espejo para worker autoalojado, sin transformer completo | Transformer int4 SVDQuant r128 + Lightning 8 pasos | Apache-2.0 | HuggingFace, 0 descargas |
-| `Qwen/Qwen-Image-Edit-2509` | Modelo base oficial (septiembre 2025) | Pesos completos | Apache-2.0 | HuggingFace, Qwen Chat, ModelScope |
-| `Qwen/Qwen-Image-Edit` (agosto 2025) | Iteración anterior del mismo modelo | Pesos completos | Apache-2.0 | HuggingFace |
-| `nunchaku-ai/nunchaku-qwen-image-edit-2509` | Publicación de pesos cuantizados SVDQuant | int4 r128, variante Lightning 8 pasos | Apache-2.0 | HuggingFace |
+| `mooumari/olh-qwen-image-edit-2509` (este repositorio) | Espejo para worker autoalojado, sin transformer completo | Transformer int4 SVDQuant r128 + Lightning 8 pasos | Apache-2.0 | Hugging Face, 0 descargas |
+| `Qwen/Qwen-Image-Edit-2509` | Modelo base oficial (septiembre 2025) | Pesos completos | Apache-2.0 | Hugging Face, Qwen Chat, ModelScope |
+| `Qwen/Qwen-Image-Edit` (agosto 2025) | Iteración anterior del mismo modelo | Pesos completos | Apache-2.0 | Hugging Face |
+| `nunchaku-ai/nunchaku-qwen-image-edit-2509` | Publicación de pesos cuantizados SVDQuant | int4 r128, variante Lightning 8 pasos | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni rendimiento de los modelos comparados en la información proporcionada, por lo que no se incluyen cifras.
 

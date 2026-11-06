@@ -75,10 +75,10 @@ No se han publicado en la informacion disponible otros benchmarks estandar (MMLU
 
 | Modelo | Parametros | Contexto | Rendimiento (Top 1, test propio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s1-code v1 | 321,9M | no disponible | 144 en solitario; 167 fusionado con Qwen3-Embedding | Apache 2.0 | HuggingFace |
-| s1-code v3 | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace (los autores lo recomiendan sobre v1) |
-| Qwen3-Embedding | no disponible | no disponible | 152 en solitario | no disponible | HuggingFace (usado como generador de candidatos en el test de s1-code v1) |
-| convaiinnovations/laya | no disponible | no disponible | no disponible | Apache 2.0 (segun la model card de s1-code v1) | HuggingFace (modelo base) |
+| s1-code v1 | 321,9M | no disponible | 144 en solitario; 167 fusionado con Qwen3-Embedding | Apache 2.0 | Hugging Face |
+| s1-code v3 | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face (los autores lo recomiendan sobre v1) |
+| Qwen3-Embedding | no disponible | no disponible | 152 en solitario | no disponible | Hugging Face (usado como generador de candidatos en el test de s1-code v1) |
+| convaiinnovations/laya | no disponible | no disponible | no disponible | Apache 2.0 (segun la model card de s1-code v1) | Hugging Face (modelo base) |
 
 La comparacion con otras alternativas de reranking de codigo (por ejemplo, cross-encoders genericos o rerankers multilingues de proposito general) no esta disponible en la informacion proporcionada.
 
@@ -97,7 +97,7 @@ La comparacion con otras alternativas de reranking de codigo (por ejemplo, cross
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/api-service-sac/s1-code-v1
+- Modelo en Hugging Face: https://huggingface.co/api-service-sac/s1-code-v1
 - Version recomendada por los autores, s1-code v3: https://huggingface.co/api-service-sac/s1-code-v3
 - Modelo base, convaiinnovations/laya: https://huggingface.co/convaiinnovations/laya
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

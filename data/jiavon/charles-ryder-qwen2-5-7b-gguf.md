@@ -75,7 +75,7 @@ La comparativa se limita al modelo base y a su versión GGUF oficial, ya que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiavon/charles-ryder-qwen2.5-7b-gguf
+- Hugging Face: https://huggingface.co/jiavon/charles-ryder-qwen2.5-7b-gguf
 - Modelo base Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25
 - GGUF oficial de Qwen2.5-7B-Instruct (ModelScope): https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct-GGUF

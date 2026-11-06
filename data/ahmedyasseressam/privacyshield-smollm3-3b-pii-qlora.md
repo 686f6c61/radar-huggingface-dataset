@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PrivacyShield (este) | 3B (base) + LoRA | no disponible | Extraccion PII en ingles con offsets | apache-2.0 | Adaptador PEFT en HuggingFace |
-| SmolLM3-3B (base) | 3B | no disponible | Generacion de texto general | no disponible en la informacion | Pesos completos en HuggingFace |
+| PrivacyShield (este) | 3B (base) + LoRA | no disponible | Extraccion PII en ingles con offsets | apache-2.0 | Adaptador PEFT en Hugging Face |
+| SmolLM3-3B (base) | 3B | no disponible | Generacion de texto general | no disponible en la informacion | Pesos completos en Hugging Face |
 | Modelos NER clasicos (p. ej. spaCy, BERT-NER) | 100M-400M | limitado | NER supervisado | variable | Amplia disponibilidad |
 | LLMs generales grandes (p. ej. familia 7B-70B) | 7B-70B | variable | Extraccion generica | variable | Amplia disponibilidad |
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas en la i
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/AhmedYasserEssam/privacyshield-smollm3-3b-pii-qlora
+- Hugging Face del adaptador: https://huggingface.co/AhmedYasserEssam/privacyshield-smollm3-3b-pii-qlora
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/gretelai/gretel-pii-masking-en-v1
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

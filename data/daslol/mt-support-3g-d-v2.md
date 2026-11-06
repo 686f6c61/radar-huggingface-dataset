@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dasLOL/mt-support-3g-d-v2 es un modelo de pesos abiertos publicado en HuggingFace por el usuario dasLOL, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones). El repositorio, de 0,9 GB, distribuye artefactos en formato ONNX y GGUF, e incluye la etiqueta `conversational`, lo que indica que esta pensado para su uso en dialogos multi-turno. Tambien lleva la etiqueta `endpoints_compatible`, orientada a su despliegue en infraestructura de inferencia gestionada.
+dasLOL/mt-support-3g-d-v2 es un modelo de pesos abiertos publicado en Hugging Face por el usuario dasLOL, con un total de 1.543.714.304 parametros (aproximadamente 1,54 mil millones). El repositorio, de 0,9 GB, distribuye artefactos en formato ONNX y GGUF, e incluye la etiqueta `conversational`, lo que indica que esta pensado para su uso en dialogos multi-turno. Tambien lleva la etiqueta `endpoints_compatible`, orientada a su despliegue en infraestructura de inferencia gestionada.
 
 La ficha se ha elaborado exclusivamente con los metadatos publicos del repositorio. No se dispone de informacion sobre arquitectura, datos de entrenamiento, licencia, idiomas soportados ni resultados de benchmarks, y la busqueda web realizada no ha devuelto ninguna fuente relevante sobre el modelo (los resultados obtenidos correspondian a sitios de transmision deportiva sin relacion alguna).
 
@@ -36,7 +36,7 @@ Del mismo modo, se desconoce por completo la composicion del dataset de entrenam
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta orientado a dialogos multi-turno, aunque no se detalla el formato de plantilla de chat empleado.
 - Inferencia en el borde y en navegador: los artefactos ONNX permiten ejecucion mediante ONNX Runtime, incluida la variante web (ONNX Runtime Web) para despliegues en cliente.
 - Ejecucion en CPU y GPU de consumo: los artefactos GGUF permiten ejecucion con llama.cpp, Ollama y derivados, con soporte para cuantizacion en el momento de carga.
-- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que el repositorio esta preparado para su uso con soluciones de inferencia gestionada compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints gestionados: la etiqueta `endpoints_compatible` sugiere que el repositorio esta preparado para su uso con soluciones de inferencia gestionada compatibles con la API de Hugging Face.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas en la ficha del repositorio).
@@ -68,7 +68,7 @@ Las cifras de esta seccion son estimaciones derivadas del recuento de parametros
 - GPU de consumo: el modelo cabe con holgura en tarjetas como RTX 3060 (12 GB), RTX 4060 Ti (16 GB), RTX 4070, RTX 4080 y RTX 4090. Tambien deberia caber en GPUs con 6-8 GB de VRAM si se emplea cuantizacion de 4 bits.
 - GPU de centro de datos: A100, H100, L40S y A10G son sobredimensionadas para este modelo, pero permiten servir muchas replicas concurrentes o lotes grandes.
 - Ejecucion en CPU: viable gracias a los artefactos GGUF; se espera un rendimiento bajo en tokens por segundo, adecuado para uso interactivo ocasional pero no para alto volumen.
-- Opciones de despliegue: llama.cpp y Ollama (via GGUF), LM Studio, ONNX Runtime y ONNX Runtime Web (via ONNX), y plataformas de endpoints gestionados compatibles con la API de HuggingFace. El uso de vLLM o TGI requeriria pesos en safetensors de precision completa, cuya disponibilidad en el repositorio no esta confirmada.
+- Opciones de despliegue: llama.cpp y Ollama (via GGUF), LM Studio, ONNX Runtime y ONNX Runtime Web (via ONNX), y plataformas de endpoints gestionados compatibles con la API de Hugging Face. El uso de vLLM o TGI requeriria pesos en safetensors de precision completa, cuya disponibilidad en el repositorio no esta confirmada.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -77,10 +77,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dasLOL/mt-support-3g-d-v2 | ~1,54 mil millones | no disponible | no disponible | HuggingFace, ONNX y GGUF |
-| Qwen2.5-1.5B | ~1,5 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| SmolLM2-1.7B | ~1,7 mil millones | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Gemma 2 2B | ~2,6 mil millones | 8.192 tokens | Licencia Gemma (con restricciones de uso) | HuggingFace, safetensors y GGUF |
+| dasLOL/mt-support-3g-d-v2 | ~1,54 mil millones | no disponible | no disponible | Hugging Face, ONNX y GGUF |
+| Qwen2.5-1.5B | ~1,5 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| SmolLM2-1.7B | ~1,7 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Gemma 2 2B | ~2,6 mil millones | 8.192 tokens | Licencia Gemma (con restricciones de uso) | Hugging Face, safetensors y GGUF |
 
 Comparacion de rendimiento: no disponible, dado que el modelo analizado no publica resultados de benchmarks. Cualquier eleccion entre estas alternativas deberia basarse en una evaluacion propia sobre el caso de uso concreto.
 
@@ -100,7 +100,7 @@ Comparacion de rendimiento: no disponible, dado que el modelo analizado no publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dasLOL/mt-support-3g-d-v2
+- Repositorio en Hugging Face: https://huggingface.co/dasLOL/mt-support-3g-d-v2
 - Paper: no disponible
 - Blog tecnico o model card ampliada: no disponible
 - Repositorio de codigo: no disponible

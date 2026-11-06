@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de comparaciones directas con otros esti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenGraphLabs/hand21-rtmpose-m-256
+- Hugging Face: https://huggingface.co/OpenGraphLabs/hand21-rtmpose-m-256
 - Repositorio del pipeline de referencia: og-v2d-track3 (módulo `og_v2d.hands.front_end`), mencionado en la model card
 - MMPose: https://github.com/open-mmlab/mmpose
 - MMPose 1.3.2 (documentación de la versión usada): https://github.com/open-mmlab/mmpose/releases

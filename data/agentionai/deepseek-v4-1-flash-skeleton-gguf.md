@@ -13,7 +13,7 @@ Su relevancia es por tanto instrumental: permite validar cargadores, planificaci
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | Réplica de la arquitectura de DeepSeek-V4.1-Flash-1017: transformer con mezcla de expertos (MoE) de 40 capas y 384 expertos enrutados, capas de atención con ratios de compresión 0/2/1, capas KV e index source, tablas Engram de n-gramas y tensores MTP y de visión en el modelo base. El artefacto es un esqueleto sin entrenamiento |
-| Parámetros totales | 30.441.106.884 según los metadatos de safetensors de HuggingFace (corresponden a la versión reducida); el esqueleto completo declara 1.043 tensores y 508,4 GB de pesos; el número de parámetros del modelo base no se publica |
+| Parámetros totales | 30.441.106.884 según los metadatos de safetensors de Hugging Face (corresponden a la versión reducida); el esqueleto completo declara 1.043 tensores y 508,4 GB de pesos; el número de parámetros del modelo base no se publica |
 | Parámetros activos | no disponible (MoE con 128 expertos enrutados en la versión reducida y 384 en el esqueleto completo; el README no indica cuántos se activan por token) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | Tipos de tensor declarados en el esqueleto completo: MXFP4 (120 tensores, 288,8 GB, expertos enrutados), MXFP8 (1 tensor, 202,8 GB, tabla Engram de n-gramas), BF16 (351 tensores, 16,4 GB) y F32 (571 tensores, 0,5 GB). No se documentan cuantizaciones GGUF derivadas (Q4_K_M, Q8_0, etc.) |
@@ -82,15 +82,15 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 - El conversor elimina la plantilla de chat de forma intencionada; hay que usar `-st` y no esperar formato conversacional.
 - Depende de un PR no fusionado de llama.cpp (#30817); el formato y el comportamiento del cargador pueden cambiar sin aviso.
 - No sirve para medir calidad, perplejidad ni KLD, ni para comparar rendimiento real frente a otros modelos.
-- Los metadatos de HuggingFace declaran 30.441.106.884 parámetros vía safetensors, pero el repositorio solo contiene GGUF y un script de Python; conviene tomar esa cifra con cautela.
+- Los metadatos de Hugging Face declaran 30.441.106.884 parámetros vía safetensors, pero el repositorio solo contiene GGUF y un script de Python; conviene tomar esa cifra con cautela.
 - El modelo base puede tener su propia licencia y condiciones de uso; el README afirma que la licencia MIT es la misma que la del modelo fuente, pero no se aporta el texto ni la verificación.
 - Adopción nula (0 descargas, 1 like) y sin validación de terceros; no hay informes de compatibilidad fuera del entorno del autor.
 - No se publican idiomas soportados ni longitud de contexto, por lo que no se puede evaluar su comportamiento multilingüe ni conversacional.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentionai/DeepSeek-V4.1-Flash-Skeleton-GGUF
+- Repositorio Hugging Face: https://huggingface.co/agentionai/DeepSeek-V4.1-Flash-Skeleton-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Pull request de soporte DeepSeek-V4.1 en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/30817
-- Script de generación del esqueleto: `make_skeleton.py`, incluido en el propio repositorio de HuggingFace
+- Script de generación del esqueleto: `make_skeleton.py`, incluido en el propio repositorio de Hugging Face
 - La búsqueda web realizada no devolvió resultados relevantes: solo páginas de Fandom sin relación con el modelo, por lo que no se enlazan.

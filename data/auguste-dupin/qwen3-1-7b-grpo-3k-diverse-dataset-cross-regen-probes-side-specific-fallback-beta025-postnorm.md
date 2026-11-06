@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: al ser un modelo de 1.7B en precision fp16, requiere aproximadamente 3.5 GB de VRAM. Con cuantizacion de 4 bits, podria reducirse a ~1 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050, RTX 4060). En consumer GPU como RTX 3090 o RTX 4090 se ejecutaria con comodidad.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs modernas de gama media y alta.
-- Opciones de despliegue: al ser un modelo transformers con safetensors, puede cargarse con HuggingFace Transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama (si se exporta).
+- Opciones de despliegue: al ser un modelo transformers con safetensors, puede cargarse con Hugging Face Transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama (si se exporta).
 - Latencia y throughput: no disponibles. Para un modelo de 1.7B en una GPU moderna, se espera una latencia de decenas de milisegundos por token, pero sin datos concretos.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos. La unica dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-3k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm
+- Repositorio Hugging Face: https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-3k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm
 - Repositorio hermano (2k): https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-postnorm
 - Repositorio hermano (baseline): https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-single-classic-regen-diverse-normalization-baseline
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

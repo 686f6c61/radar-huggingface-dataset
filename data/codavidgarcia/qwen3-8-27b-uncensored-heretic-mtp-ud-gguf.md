@@ -111,12 +111,12 @@ Frente a las alternativas del mismo tamano en el nivel de 16 GB, UD-IQ4_XS prese
 - Contexto maximo nativo: no disponible. Los 32K/16K/64K son contextos de servicio recomendados por VRAM, no el limite arquitectonico.
 - Rendimiento muy sensible a la VRAM libre: con escritorio en la misma GPU, el desbordamiento a memoria compartida de Windows degrada la decodificacion de forma severa.
 - Las cifras de 12 GB (32K) y 24 GB (64K) son calculadas, no medidas en hardware real.
-- Licencia Apache 2.0 segun el campo de HuggingFace, pero la informacion proporcionada no incluye los terminos completos del modelo base ni de los pesos de Heretic; conviene verificarlos antes de un uso comercial.
+- Licencia Apache 2.0 segun el campo de Hugging Face, pero la informacion proporcionada no incluye los terminos completos del modelo base ni de los pesos de Heretic; conviene verificarlos antes de un uso comercial.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado con seis minutos de diferencia: no hay validacion externa independiente de las mediciones publicadas.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los resultados obtenidos eran contenido no relacionado y se han descartado por completo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/codavidgarcia/Qwen3.8-27B-Uncensored-Heretic-MTP-UD-GGUF
+- Repositorio Hugging Face: https://huggingface.co/codavidgarcia/Qwen3.8-27B-Uncensored-Heretic-MTP-UD-GGUF
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

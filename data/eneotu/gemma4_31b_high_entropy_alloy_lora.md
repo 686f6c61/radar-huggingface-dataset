@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `eneotu/gemma4_31b_high_entropy_alloy_lora` es un adaptador LoRA publicado por el usuario eneotu en HuggingFace, derivado del modelo base `unsloth/gemma-4-31b-it-unsloth-bnb-4bit`. Por el nombre y el tamano del repositorio (0,3 GB), se trata de un ajuste fino de tipo LoRA (no de un modelo completo con pesos consolidados): el adaptador se aplica sobre el modelo base cuantizado en 4 bits y no puede ejecutarse de forma autonoma sin cargar primero dicho base. La licencia declarada es apache-2.0 y el unico idioma declarado es el ingles.
+El modelo identificado como `eneotu/gemma4_31b_high_entropy_alloy_lora` es un adaptador LoRA publicado por el usuario eneotu en Hugging Face, derivado del modelo base `unsloth/gemma-4-31b-it-unsloth-bnb-4bit`. Por el nombre y el tamano del repositorio (0,3 GB), se trata de un ajuste fino de tipo LoRA (no de un modelo completo con pesos consolidados): el adaptador se aplica sobre el modelo base cuantizado en 4 bits y no puede ejecutarse de forma autonoma sin cargar primero dicho base. La licencia declarada es apache-2.0 y el unico idioma declarado es el ingles.
 
 El modelo se ha entrenado con la libreria Unsloth, que el propio autor destaca por ofrecer un entrenamiento "2x mas rapido", y con el stack de TRL. La model card es practicamente un plantilla autogenerada: no incluye descripcion del dataset, numero de tokens de entrenamiento, hiperparametros, metodologia de alineacion (RLHF/DPO), ni resultados de evaluacion. El nombre del repositorio sugiere un ajuste orientado a "high entropy" con alguna tecnica de mezcla ("alloy"), pero no existe documentacion publica que explique estos terminos.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de caracter experimental: registra 0 descarga
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo base ni sobre la del adaptador. El repositorio se etiqueta con `transformers`, `unsloth`, `gemma4` y `trl`, lo que indica que el ajuste se realizo con el framework Unsloth sobre la libreria TRL de HuggingFace. El modelo base declarado es `unsloth/gemma-4-31b-it-unsloth-bnb-4bit`, una version ya cuantizada en 4 bits (bitsandbytes) y con orientacion conversacional ("it") segun su nomenclatura.
+No hay informacion publicada sobre la arquitectura interna del modelo base ni sobre la del adaptador. El repositorio se etiqueta con `transformers`, `unsloth`, `gemma4` y `trl`, lo que indica que el ajuste se realizo con el framework Unsloth sobre la libreria TRL de Hugging Face. El modelo base declarado es `unsloth/gemma-4-31b-it-unsloth-bnb-4bit`, una version ya cuantizada en 4 bits (bitsandbytes) y con orientacion conversacional ("it") segun su nomenclatura.
 
 No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, la configuracion de LoRA (rango, alpha, modulos objetivo) ni el regimen de entrenamiento. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, mezcla de expertos, etc.). La unica afirmacion tecnica del autor es que el entrenamiento se realizo "2x mas rapido" con Unsloth, una afirmacion de rendimiento del framework, no una caracteristica del modelo.
 
@@ -35,14 +35,14 @@ No se especifica el numero de tokens de entrenamiento, la composicion del datase
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el unico idioma declarado es el ingles.
 - Capacidades especiales (modo thinking, vision, audio, decodificacion especulativa): no disponible.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en la infraestructura de inferencia gestionada de HuggingFace, aunque no se detalla configuracion alguna.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en la infraestructura de inferencia gestionada de Hugging Face, aunque no se detalla configuracion alguna.
 
 ## Casos de uso
 
 - Experimentacion con tecnicas de ajuste fino: el adaptador permite reproducir o inspeccionar un pipeline de LoRA sobre un modelo de ~31B entrenado con Unsloth y TRL, util para investigadores que quieran comparar hiperparametros o metodologias.
 - Fusion del adaptador con el modelo base: se puede aplicar la LoRA sobre `unsloth/gemma-4-31b-it-unsloth-bnb-4bit`, consolidar los pesos y evaluar si el ajuste modifica el comportamiento del base en tareas concretas de generacion de texto en ingles.
 - Evaluacion comparativa interna: sirve como candidato en un banco de pruebas propio frente al modelo base sin adaptador, para medir si el ajuste "high entropy" aporta mejoras medibles en perplejidad o calidad de generacion.
-- Despliegue en inferencia gestionada: la etiqueta `endpoints_compatible` permite subirlo a HuggingFace Inference Endpoints con TGI para pruebas cualitativas rapidas, siempre que se respete la carga del base en 4 bits.
+- Despliegue en inferencia gestionada: la etiqueta `endpoints_compatible` permite subirlo a Hugging Face Inference Endpoints con TGI para pruebas cualitativas rapidas, siempre que se respete la carga del base en 4 bits.
 - Base para nuevos ajustes incrementales: al ser un adaptador ligero (0,3 GB), es practico reutilizarlo como punto de partida para LoRAs adicionales sobre el mismo base, por ejemplo para adaptarlo a un dominio especifico en ingles.
 - Docencia y formacion tecnica: el repositorio es un ejemplo minimo de publicacion de un adaptador LoRA, util para ilustrar el flujo Unsloth + safetensors + TGI en cursos o talleres.
 
@@ -71,8 +71,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eneotu/gemma4_31b_high_entropy_alloy_lora | no disponible (adaptador LoRA de 0,3 GB) | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-31b-it-unsloth-bnb-4bit (base) | no confirmado (~31B segun nomenclatura) | no disponible | sin datos en la informacion aportada | apache-2.0 segun la model card del adaptador | HuggingFace |
+| eneotu/gemma4_31b_high_entropy_alloy_lora | no disponible (adaptador LoRA de 0,3 GB) | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-31b-it-unsloth-bnb-4bit (base) | no confirmado (~31B segun nomenclatura) | no disponible | sin datos en la informacion aportada | apache-2.0 segun la model card del adaptador | Hugging Face |
 | Alternativas de la misma categoria (otros ajustes LoRA sobre la misma familia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eneotu/gemma4_31b_high_entropy_alloy_lora
+- Modelo en Hugging Face: https://huggingface.co/eneotu/gemma4_31b_high_entropy_alloy_lora
 - Modelo base declarado: https://huggingface.co/unsloth/gemma-4-31b-it-unsloth-bnb-4bit
 - Repositorio de Unsloth (framework de entrenamiento citado por el autor): https://github.com/unslothai/unsloth
 - Repositorio de TRL (libreria de ajuste citada en las etiquetas): https://github.com/huggingface/trl

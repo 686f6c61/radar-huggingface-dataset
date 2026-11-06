@@ -6,7 +6,7 @@ El modelo VenerableRolliPolli/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NE
 
 La ficha se centra en una familia de ajustes "uncensored", "abliterated" y "heretic", es decir, intervenciones sobre los pesos y el alineamiento del modelo original para reducir los rechazos y los filtros de contenido. El repositorio incluye tanto GGUFs etiquetados como "MTP" (multi-token prediction) como GGUFs regulares, e incorpora cuantizacion con calibracion NEO Imatrix. El modelo base del ajuste se distribuye en bfloat16 y este repositorio aporta las versiones cuantizadas listas para inferencia local.
 
-El interes practico es doble: por un lado, ofrece una via de despliegue en hardware de consumo mediante GGUF; por otro, documenta un flujo de trabajo tipico de la comunidad open source (fine-tuning con Unsloth, entrenamiento multi-etapa, imatrix, abliteration) aplicado a un modelo multimodal de ~9B. El acceso esta restringido en HuggingFace: es necesario aceptar condiciones para descargarlo.
+El interes practico es doble: por un lado, ofrece una via de despliegue en hardware de consumo mediante GGUF; por otro, documenta un flujo de trabajo tipico de la comunidad open source (fine-tuning con Unsloth, entrenamiento multi-etapa, imatrix, abliteration) aplicado a un modelo multimodal de ~9B. El acceso esta restringido en Hugging Face: es necesario aceptar condiciones para descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento ni de contexto del modelo, y la informacio
 - Riesgo elevado de alucinacion: no hay datos de evaluacion que cuantifiquen su fiabilidad factual, y los ajustes de este tipo suelen degradar la calibracion del modelo base.
 - Cobertura idiomatica limitada a ingles y chino; no se declara soporte de castellano, por lo que el rendimiento en otros idiomas es incierto.
 - Longitud de contexto desconocida: no se puede planificar el tamano de ventana para casos de uso con documentos largos o conversaciones extensas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga, lo que puede bloquear automatizaciones de CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga, lo que puede bloquear automatizaciones de CI/CD.
 - Licencia Apache 2.0 declarada, pero conviene verificar las condiciones del modelo base y del ajuste del que deriva, ya que pueden imponer restricciones adicionales no recogidas en esta ficha.
 - El repositorio ocupa 186,5 GB, lo que implica costes de almacenamiento y tiempos de descarga considerables si se quieren todas las cuantizaciones.
 - La fecha de creacion y actualizacion indicada (2026-09-21) y la denominacion "Qwen3.5" no se han podido contrastar con fuentes independientes; no hay documentacion tecnica publica verificable asociada.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento ni de contexto del modelo, y la informacio
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/VenerableRolliPolli/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
+- Ficha en Hugging Face: https://huggingface.co/VenerableRolliPolli/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Papers, blogs, repositorios o demos adicionales: no disponible. Los resultados de la busqueda web realizada no contienen informacion relacionada con el modelo.

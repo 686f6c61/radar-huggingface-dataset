@@ -86,7 +86,7 @@ La comparativa se limita a la familia Loom y a GPT-2 como referencia arquitectó
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Spark-1.5-Flash
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Spark-1.5-Flash
 - Loom Spark 1.5 (modelo principal): https://huggingface.co/textilelabs/Loom-Spark-1.5
 - Loom Spark 1.8 (versión anterior): https://huggingface.co/textilelabs/Loom-Spark-1.8
 - Despliegue en FriendliAI (Loom-Spark-1.5): https://friendli.ai/models/textilelabs/Loom-Spark-1.5

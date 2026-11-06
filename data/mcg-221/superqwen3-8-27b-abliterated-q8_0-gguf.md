@@ -78,7 +78,7 @@ La principal diferencia entre las versiones GGUF es el nivel de cuantización: Q
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/McG-221/SuperQwen3.8-27b-abliterated-Q8_0-GGUF
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/McG-221/SuperQwen3.8-27b-abliterated-Q8_0-GGUF
 - Modelo base abliterado: https://huggingface.co/Jiunsong/SuperQwen3.8-27b-abliterated
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

@@ -113,7 +113,7 @@ Notas: Medusa y EAGLE estan pensados para servir en vLLM/servidores de datacente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF
+- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-4B-DSpark-GGUF
 - Modelo objetivo (GGUF): https://huggingface.co/XHToken/Spark-X2.6-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Fork de llama.cpp con soporte DSpark: https://github.com/XHToken/llama.cpp

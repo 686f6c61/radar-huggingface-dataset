@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rima persa | Caracteres extranjeros en persa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SaeedAngiz1/shahnameh-qwen3-4b-multilingual-lora | 4B (base) + adaptador LoRA | no disponible en la ficha (uso a 1.024) | 33 % | ninguno | apache-2.0 | HuggingFace, 0 descargas |
-| SaeedAngiz1/shahnameh-qwen3-4b-fa-lora | 4B (base) + adaptador LoRA | no disponible | 65 % | ~6 por cada 10 respuestas | no disponible en la informacion | HuggingFace |
-| unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit (modelo base) | 4B | no disponible en la informacion | no aplica (sin estilo Shahnameh) | no aplica | no disponible en la informacion | HuggingFace |
+| SaeedAngiz1/shahnameh-qwen3-4b-multilingual-lora | 4B (base) + adaptador LoRA | no disponible en la ficha (uso a 1.024) | 33 % | ninguno | apache-2.0 | Hugging Face, 0 descargas |
+| SaeedAngiz1/shahnameh-qwen3-4b-fa-lora | 4B (base) + adaptador LoRA | no disponible | 65 % | ~6 por cada 10 respuestas | no disponible en la informacion | Hugging Face |
+| unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit (modelo base) | 4B | no disponible en la informacion | no aplica (sin estilo Shahnameh) | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos sobre otros adaptadores de poesia persa comparables en la informacion proporcionada.
 
@@ -92,8 +92,8 @@ No se dispone de datos sobre otros adaptadores de poesia persa comparables en la
 
 ## Enlaces
 
-- HuggingFace (adaptador multilingue): https://huggingface.co/SaeedAngiz1/shahnameh-qwen3-4b-multilingual-lora
-- HuggingFace (adaptador hermano solo en persa): https://huggingface.co/SaeedAngiz1/shahnameh-qwen3-4b-fa-lora
+- Hugging Face (adaptador multilingue): https://huggingface.co/SaeedAngiz1/shahnameh-qwen3-4b-multilingual-lora
+- Hugging Face (adaptador hermano solo en persa): https://huggingface.co/SaeedAngiz1/shahnameh-qwen3-4b-fa-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Repositorio del proyecto con metodo, mediciones y registro de fallos: https://github.com/SaeedAngiz1/shahnameh-slm
 - No se han encontrado papers, blogs ni demos adicionales en los resultados de busqueda disponibles; los resultados devueltos corresponden a portales inmobiliarios y no guardan relacion con el modelo.

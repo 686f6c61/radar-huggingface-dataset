@@ -99,6 +99,6 @@ No es posible establecer una comparación cuantitativa con alternativas de la mi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gezihua123/ming-mnn-models
+- Repositorio en Hugging Face: https://huggingface.co/gezihua123/ming-mnn-models
 - Modelo upstream del paquete de 0,6 B: https://huggingface.co/taobao-mnn/Qwen3-0.6B-MNN
 - Modelo upstream del paquete de 0,8 B: https://huggingface.co/taobao-mnn/Qwen3.5-0.8B-MNN

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 pizza vs steak (Rhoda07) | ~5,3 M (base) | no aplica | 99,40% test accuracy (2 clases) | MIT | Repositorio HuggingFace, 0 descargas |
+| EfficientNet-B0 pizza vs steak (Rhoda07) | ~5,3 M (base) | no aplica | 99,40% test accuracy (2 clases) | MIT | Repositorio Hugging Face, 0 descargas |
 | EfficientNet-B0 (torchvision, ImageNet) | ~5,3 M | no aplica | Top-1 ImageNet ~77,7% (referencia general) | BSD-3-Clause (torchvision) | Ampliamente disponible |
 | ResNet-50 (torchvision, ImageNet) | ~25,6 M | no aplica | Top-1 ImageNet ~80,9% (referencia general) | BSD-3-Clause | Ampliamente disponible |
 | MobileNetV3 (torchvision, ImageNet) | ~5,4 M | no aplica | Top-1 ImageNet ~75,7% (referencia general) | BSD-3-Clause | Ampliamente disponible |
@@ -87,5 +87,5 @@ Nota: los datos de EfficientNet-B0, ResNet-50 y MobileNetV3 son referencias gene
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rhoda07/efficientnet-b0-pizza-steak
+- Hugging Face: https://huggingface.co/Rhoda07/efficientnet-b0-pizza-steak
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

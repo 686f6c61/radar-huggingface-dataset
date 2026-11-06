@@ -125,7 +125,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Página de HuggingFace del adaptador: https://huggingface.co/SEBK4C/Winnow-12B-LoRA
+- Página de Hugging Face del adaptador: https://huggingface.co/SEBK4C/Winnow-12B-LoRA
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Winnow-12B original (pesos fusionados): https://huggingface.co/EldanRing/Winnow-12B
 - Servidor de inferencia de Winnow: https://github.com/EldanRing/winnow-inference

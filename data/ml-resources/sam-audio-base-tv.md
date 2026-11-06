@@ -72,10 +72,10 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas de modelos 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ml-resources/sam-audio-base-tv` | Este modelo (espejo) | no disponible | no disponible | SAM License | Espejo no oficial en HuggingFace |
+| `ml-resources/sam-audio-base-tv` | Este modelo (espejo) | no disponible | no disponible | SAM License | Espejo no oficial en Hugging Face |
 | `facebook/sam-audio-base-tv` | Original del que procede el espejo | no disponible | no disponible | SAM License | Requiere solicitud de acceso |
 | `facebook/sam-audio-large` | Variante grande de la misma familia | no disponible | no disponible | SAM License | Requiere solicitud de acceso |
-| `facebook/pe-av-large` | Codificador audio-visual del que dependen SAM-Audio y el Judge model | no disponible | no disponible | no disponible | Disponible en HuggingFace |
+| `facebook/pe-av-large` | Codificador audio-visual del que dependen SAM-Audio y el Judge model | no disponible | no disponible | no disponible | Disponible en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones tecnicas de modelos 
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/sam-audio-base-tv
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/sam-audio-base-tv
 - Repositorio original: https://huggingface.co/facebook/sam-audio-base-tv
 - Variante grande: https://huggingface.co/facebook/sam-audio-large
 - Codificador Perception-Encoder Audio-Visual: https://huggingface.co/facebook/pe-av-large

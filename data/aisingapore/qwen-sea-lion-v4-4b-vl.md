@@ -76,7 +76,7 @@ La comparativa se basa en datos disponibles públicamente. Qwen-SEA-LION-v4-4B-V
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL
+- Hugging Face: https://huggingface.co/aisingapore/Qwen-SEA-LION-v4-4B-VL
 - ModelScope: https://www.modelscope.cn/models/aisingapore/Qwen-SEA-LION-v4-4B-VL
 - Documentación oficial: https://docs.sea-lion.ai/models/sea-lion-v4/qwen-sea-lion-v4-vl
 - Blog de anuncio: https://sea-lion.ai/blog/qwen-sea-lion-v4-advanced-reasoning/

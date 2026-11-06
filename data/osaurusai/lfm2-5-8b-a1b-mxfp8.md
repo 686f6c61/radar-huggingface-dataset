@@ -79,8 +79,8 @@ La principal diferencia de LFM2.5-8B-A1B frente a los modelos densos de tamaño 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/LFM2.5-8B-A1B-MXFP8
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/LFM2.5-8B-A1B-MXFP8
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Blog de Liquid AI sobre LFM2.5-8B-A1B: https://www.liquid.ai/blog/lfm2-5-8b-a1b
 - Documentación oficial de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b
 - Blog de introducción a LFM2.5: https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai

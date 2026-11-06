@@ -83,7 +83,7 @@ La comparación se limita a la cadena de derivación del propio modelo, ya que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hshareef77/csm-1b-dhivehi-5spk-onnx
+- Modelo en Hugging Face: https://huggingface.co/Hshareef77/csm-1b-dhivehi-5spk-onnx
 - Modelo base (ajuste fino en dhivehi): https://huggingface.co/alakxender/csm-1b-dhivehi-5-spk-gd
 - Modelo original CSM-1B de Sesame: https://huggingface.co/sesame/csm-1b
 - Aplicación Android de referencia: https://github.com/hshareef77/dhivehi-offline-TTS

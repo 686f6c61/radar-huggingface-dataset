@@ -1,7 +1,7 @@
 # SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep3
 
 ## Resumen
-Este repositorio contiene un ajuste fino del modelo Qwen/Qwen3-1.7B (2.031.739.904 parametros en el export de safetensors) obtenido mediante destilacion on-policy con la tecnica TCOD (forward-to-backward) sobre tareas del entorno BabyAI. El entrenamiento usa Qwen3-32B en bf16 como profesor y Qwen3-1.7B como alumno, con el modo de razonamiento (thinking) desactivado y conversaciones de 20 turnos siguiendo el formato de `babyai/eval_babyai.py`. El autor lo publica como el paso 3 de 3 sobre los datos (export de HuggingFace tras el paso 152 del explorer, paso 171 del trainer).
+Este repositorio contiene un ajuste fino del modelo Qwen/Qwen3-1.7B (2.031.739.904 parametros en el export de safetensors) obtenido mediante destilacion on-policy con la tecnica TCOD (forward-to-backward) sobre tareas del entorno BabyAI. El entrenamiento usa Qwen3-32B en bf16 como profesor y Qwen3-1.7B como alumno, con el modo de razonamiento (thinking) desactivado y conversaciones de 20 turnos siguiendo el formato de `babyai/eval_babyai.py`. El autor lo publica como el paso 3 de 3 sobre los datos (export de Hugging Face tras el paso 152 del explorer, paso 171 del trainer).
 
 Se trata de un artefacto de investigacion, no de un modelo listo para produccion: la propia model card indica explicitamente "Not evaluated", es decir, no se han publicado evaluaciones de ningun tipo. Su relevancia es, por tanto, metodologica: documenta un pipeline concreto de destilacion on-policy (TCOD + overlay FutureBridge-OPD sobre trinity-rft) aplicado a un modelo pequeno de la familia Qwen3, con hiperparametros y volumen de datos declarados de forma reproducible.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep3 | 2.031.739.904 | no disponible | no disponible | HuggingFace, safetensors | Ajuste TCOD sobre BabyAI con profesor Qwen3-32B; sin evaluar |
-| Qwen/Qwen3-1.7B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo generalista de partida; consultar su model card para specs y licencia |
+| SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep3 | 2.031.739.904 | no disponible | no disponible | Hugging Face, safetensors | Ajuste TCOD sobre BabyAI con profesor Qwen3-32B; sin evaluar |
+| Qwen/Qwen3-1.7B (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo generalista de partida; consultar su model card para specs y licencia |
 | Alternativas de ~1-2B de otras familias | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion con cifras |
 
 No es posible completar una comparativa cuantitativa con alternativas (Qwen3-4B, SmolLM2-1.7B, Gemma-3-1B u otros) porque no hay evaluaciones publicadas de este modelo ni datos de rendimiento en la informacion disponible.
@@ -82,7 +82,7 @@ No es posible completar una comparativa cuantitativa con alternativas (Qwen3-4B,
 - Adecuacion a produccion: nula sin evaluacion previa. No deberia desplegarse en atencion al cliente, generacion de codigo ni tareas de decision sin una validacion exhaustiva propia.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep3
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-babyai-tcod-f2b-qwen3-32b-ep3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio TCOD referenciado por el autor: `kokolerk/TCOD` (sin URL en la model card)
 - Overlay FutureBridge-OPD sobre `trinity-rft` (sin URL en la model card)

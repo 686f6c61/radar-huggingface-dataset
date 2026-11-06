@@ -58,6 +58,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q8_KV-SPECIAL_SPLIT)
+- [Hugging Face del modelo](https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-Q8_KV-SPECIAL_SPLIT)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la información proporcionada.

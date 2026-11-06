@@ -94,7 +94,7 @@ La comparacion cualitativa con estos modelos no puede completarse con datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/tinyllama-1.1b-uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/tinyllama-1.1b-uncensored-i1-GGUF
 - Modelo base: https://huggingface.co/ElementMerc/tinyllama-1.1b-uncensored
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/tinyllama-1.1b-uncensored-GGUF
 - Pagina de resumen del autor para este modelo: https://hf.tst.eu/model#tinyllama-1.1b-uncensored-i1-GGUF

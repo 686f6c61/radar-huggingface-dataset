@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GraphVLA V7 Stack Bowls 4k es un checkpoint de investigación de un modelo visión-lenguaje-acción (VLA) orientado a robótica de manipulación real, publicado por el usuario yuuu94 en HuggingFace. Se trata de un modelo de dos brazos entrenado específicamente para la tarea de apilar cuencos (Stack Bowls) sobre un robot real, no de un modelo de propósito general. El checkpoint corresponde al paso 4.000 de entrenamiento y se distribuye como estado de modelo en formato DeepSpeed junto con el código de entrenamiento e inferencia, no como un export estándar de Transformers.
+GraphVLA V7 Stack Bowls 4k es un checkpoint de investigación de un modelo visión-lenguaje-acción (VLA) orientado a robótica de manipulación real, publicado por el usuario yuuu94 en Hugging Face. Se trata de un modelo de dos brazos entrenado específicamente para la tarea de apilar cuencos (Stack Bowls) sobre un robot real, no de un modelo de propósito general. El checkpoint corresponde al paso 4.000 de entrenamiento y se distribuye como estado de modelo en formato DeepSpeed junto con el código de entrenamiento e inferencia, no como un export estándar de Transformers.
 
 La arquitectura combina un backbone Qwen3-VL-4B con una cabeza de acción DiT-B (inspirada en GR00T) y un mecanismo de condicionamiento gráfico denominado V7. El modelo consume cuatro vistas RGB sincronizadas, un estado articular de 14 dimensiones y produce acciones con un horizonte de 16 pasos. El entrenamiento se realizó con 72 trayectorias de entrenamiento y 9 de validación del dataset Stack_bowls_lerobot.
 
@@ -81,4 +81,4 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuuu94/GraphVLA-StackBowls-V7-4k
+- Hugging Face: https://huggingface.co/yuuu94/GraphVLA-StackBowls-V7-4k

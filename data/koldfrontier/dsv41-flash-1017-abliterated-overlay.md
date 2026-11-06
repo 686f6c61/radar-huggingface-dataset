@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`koldfrontier/dsv41-flash-1017-abliterated-overlay` es una variante de la comunidad del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el usuario koldfrontier. Según los metadatos de HuggingFace, se trata de una versión "abliterated" (eliminación de rechazos, *refusal-removed*) distribuida como *overlay*, es decir, como un conjunto de pesos diferenciales que se aplican sobre el modelo base en lugar de una copia completa del mismo. El repositorio ocupa 4,4 GB en formato safetensors, un tamaño muy inferior al que requeriría un modelo de pesos completos, lo que es coherente con la naturaleza de delta/overlay indicada en el nombre y en los tags.
+`koldfrontier/dsv41-flash-1017-abliterated-overlay` es una variante de la comunidad del modelo `deepseek-ai/DeepSeek-V4.1-Flash-1017`, publicada por el usuario koldfrontier. Según los metadatos de Hugging Face, se trata de una versión "abliterated" (eliminación de rechazos, *refusal-removed*) distribuida como *overlay*, es decir, como un conjunto de pesos diferenciales que se aplican sobre el modelo base en lugar de una copia completa del mismo. El repositorio ocupa 4,4 GB en formato safetensors, un tamaño muy inferior al que requeriría un modelo de pesos completos, lo que es coherente con la naturaleza de delta/overlay indicada en el nombre y en los tags.
 
-El interés de esta publicación es acotado y fundamentalmente de investigación: no hay pipeline declarado, no hay tarjeta de modelo con detalles de entrenamiento, no hay resultados de benchmarks y el contador de descargas y likes es cero en el momento de la consulta. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, pese a que la licencia declarada en los metadatos es MIT.
+El interés de esta publicación es acotado y fundamentalmente de investigación: no hay pipeline declarado, no hay tarjeta de modelo con detalles de entrenamiento, no hay resultados de benchmarks y el contador de descargas y likes es cero en el momento de la consulta. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, pese a que la licencia declarada en los metadatos es MIT.
 
 La relevancia, por tanto, no viene de una mejora de capacidades, sino de su uso como objeto de estudio en seguridad y alineación: un modelo derivado al que se le ha suprimido el comportamiento de rechazo, útil para *red teaming*, evaluación de filtros y generación de datos adversarios. Cualquier uso en producción exige una auditoría propia previa, dado que no existe documentación técnica publicada.
 
@@ -18,7 +18,7 @@ La relevancia, por tanto, no viene de una mejora de capacidades, sino de su uso 
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | FP8 (indicado en los tags); no se documentan GGUF, AWQ, GPTQ ni EXL2 |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | MIT (según metadatos); acceso restringido en HuggingFace; verificar la licencia del modelo base |
+| Licencia | MIT (según metadatos); acceso restringido en Hugging Face; verificar la licencia del modelo base |
 | Formato de pesos | `safetensors` (repositorio de 4,4 GB, presumiblemente overlay/delta y no pesos completos) |
 
 ## Arquitectura y entrenamiento
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `koldfrontier/dsv41-flash-1017-abliterated-overlay` | No disponible | No disponible | Sin benchmarks publicados | MIT (metadatos), acceso restringido | HuggingFace, gated |
-| `deepseek-ai/DeepSeek-V4.1-Flash-1017` (base) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | HuggingFace |
+| `koldfrontier/dsv41-flash-1017-abliterated-overlay` | No disponible | No disponible | Sin benchmarks publicados | MIT (metadatos), acceso restringido | Hugging Face, gated |
+| `deepseek-ai/DeepSeek-V4.1-Flash-1017` (base) | No disponible | No disponible | No disponible | No disponible en la información proporcionada | Hugging Face |
 | Otras variantes abliterated de la familia DeepSeek | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificables de otras variantes de la comunidad con los que establecer una comparación cuantitativa (parámetros, contexto, benchmarks) en la información proporcionada.
@@ -88,6 +88,6 @@ No se dispone de datos verificables de otras variantes de la comunidad con los q
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/koldfrontier/dsv41-flash-1017-abliterated-overlay
+- Repositorio en Hugging Face: https://huggingface.co/koldfrontier/dsv41-flash-1017-abliterated-overlay
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Resultados de búsqueda web: no se ha encontrado ningún enlace técnico relevante (papers, blogs, repositorios o demos) en la información proporcionada; los resultados devueltos corresponden a sitios sin relación con el modelo.

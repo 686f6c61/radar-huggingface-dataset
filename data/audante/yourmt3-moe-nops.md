@@ -6,7 +6,7 @@ YourMT3+ es un modelo de transcripcion musical automatica (AMT, *Automatic Music
 
 La variante "MoE, no pitch shift" hace referencia a la configuracion de mezcla de expertos (*Mixture of Experts*) del modelo original, en la que distintos submodelos se especializan en familias de instrumentos, y a la desactivacion del aumento de tono (*pitch shift*) durante la inferencia. El modelo convierte audio musical en notacion simbolica (eventos de nota con tono, inicio, duracion e instrumento), una tarea relevante para produccion musical asistida, analisis musicologico y generacion de partituras a partir de grabaciones.
 
-No se dispone de informacion publicada en esta model card sobre arquitectura interna, numero de parametros, longitud de contexto ni idiomas soportados. Los datos tecnicos que se detallan a continuacion proceden exclusivamente de la informacion disponible en el repositorio de HuggingFace y de la model card citada; cualquier campo no documentado se marca explicitamente como "no disponible".
+No se dispone de informacion publicada en esta model card sobre arquitectura interna, numero de parametros, longitud de contexto ni idiomas soportados. Los datos tecnicos que se detallan a continuacion proceden exclusivamente de la informacion disponible en el repositorio de Hugging Face y de la model card citada; cualquier campo no documentado se marca explicitamente como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/YourMT3-moe-nops | no disponible | no disponible | AMT (audio a simbolico) | Apache 2.0 | HuggingFace (copia no oficial) |
-| mimbres/YourMT3 | no disponible | no disponible | AMT (audio a simbolico) | Apache 2.0 | HuggingFace (oficial) |
+| Audante/YourMT3-moe-nops | no disponible | no disponible | AMT (audio a simbolico) | Apache 2.0 | Hugging Face (copia no oficial) |
+| mimbres/YourMT3 | no disponible | no disponible | AMT (audio a simbolico) | Apache 2.0 | Hugging Face (oficial) |
 | Otras alternativas de AMT | no disponible | no disponible | AMT | no disponible | no disponible |
 
 La unica comparacion documentada es con el modelo fuente `mimbres/YourMT3`, del que esta copia es identica salvo el nombre del fichero. No se dispone de datos para comparar con otros sistemas de transcripcion musical.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tundraandrew/retrieval-v1 es un prototipo de investigacion publicado en HuggingFace que implementa una arquitectura Poolformer orientada a tareas de retrieval. Lo desarrolla el usuario tundraandrew y se distribuye bajo licencia Apache 2.0. Se trata de un artefacto de tipo "research-oriented" cuyo objetivo declarado es documentar los valores por defecto y los formatos de fichero de un experimento, no entregar un modelo listo para produccion: el propio autor indica que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
+tundraandrew/retrieval-v1 es un prototipo de investigacion publicado en Hugging Face que implementa una arquitectura Poolformer orientada a tareas de retrieval. Lo desarrolla el usuario tundraandrew y se distribuye bajo licencia Apache 2.0. Se trata de un artefacto de tipo "research-oriented" cuyo objetivo declarado es documentar los valores por defecto y los formatos de fichero de un experimento, no entregar un modelo listo para produccion: el propio autor indica que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint entrenado ni evaluado.
 
 La relevancia del repositorio es metodologica mas que practica. La configuracion declarada etiqueta la escala como "large", con atencion multi-query, fusion bilinear, activacion gelu-tanh y normalizacion layernorm, pero el recuento real de parametros del fichero safetensors es de solo 24.832 parametros, una cifra propia de un modelo de juguete. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 likes en el momento de la consulta, lo que refuerza su caracter de banco de pruebas experimental mas que de modelo desplegable.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tundraandrew/retrieval-v1 | 24.832 | no disponible | sin benchmark declarado | Apache 2.0 | HuggingFace, checkpoint de inicializacion |
+| tundraandrew/retrieval-v1 | 24.832 | no disponible | sin benchmark declarado | Apache 2.0 | Hugging Face, checkpoint de inicializacion |
 | Familias de retrieval multimodal con atencion (tipo CLIP, OpenCLIP, BLIP) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Baseline de capacidad equivalente | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ La model card recomienda comparar contra un baseline de capacidad equivalente, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tundraandrew/retrieval-v1
+- Modelo en Hugging Face: https://huggingface.co/tundraandrew/retrieval-v1
 - Models.dev, base de datos abierta de modelos: https://models.dev/
 - AWS, que es RAG (Retrieval-Augmented Generation): https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - Nature, sintesis de literatura cientifica con modelos de lenguaje aumentados por recuperacion: https://www.nature.com/articles/s41586-025-10072-4

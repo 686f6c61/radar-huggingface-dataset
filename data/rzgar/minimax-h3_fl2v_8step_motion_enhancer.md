@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rzgar/minimax-h3_fl2v_8Step_motion_enhancer | LoRA | Mejora de anatomia y movimientos NSFW | Apache-2.0 | HuggingFace |
-| lightx2v/Minimax-h3-Turbo | LoRA | Reduccion de pasos de inferencia a 8, generico | no disponible | HuggingFace |
-| MiniMaxAI/MiniMax-H3 | Modelo base | Generacion de video multimodal | no disponible | HuggingFace |
+| rzgar/minimax-h3_fl2v_8Step_motion_enhancer | LoRA | Mejora de anatomia y movimientos NSFW | Apache-2.0 | Hugging Face |
+| lightx2v/Minimax-h3-Turbo | LoRA | Reduccion de pasos de inferencia a 8, generico | no disponible | Hugging Face |
+| MiniMaxAI/MiniMax-H3 | Modelo base | Generacion de video multimodal | no disponible | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento para realizar una comparacion numerica. La diferencia principal es el enfoque especifico del adaptador de rzgar en contenido NSFW, frente al LoRA generico de LightX2V.
 
@@ -79,6 +79,6 @@ No se dispone de datos de parametros, contexto ni rendimiento para realizar una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rzgar/minimax-h3_fl2v_8Step_motion_enhancer
+- Modelo en Hugging Face: https://huggingface.co/rzgar/minimax-h3_fl2v_8Step_motion_enhancer
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - LoRA base LightX2V Minimax-h3-Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo

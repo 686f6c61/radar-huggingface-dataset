@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Baby Pooh 46M midtrain r3 es un modelo de lenguaje causal de 46.151.680 parametros entrenado desde cero por el autor prabakaranchandran, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo experimental y en desarrollo (work in progress) que parte de Baby Pooh 46M v1 y aplica una fase adicional de mid-training para inyectar conocimiento del universo de Winnie the Pooh de A. A. Milne. No es un modelo instruido ni de chat: la persona, el dialogo conversacional y la seguridad se reservan para fases de post-training posteriores que, segun la informacion disponible, aun no se han publicado.
+Baby Pooh 46M midtrain r3 es un modelo de lenguaje causal de 46.151.680 parametros entrenado desde cero por el autor prabakaranchandran, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo experimental y en desarrollo (work in progress) que parte de Baby Pooh 46M v1 y aplica una fase adicional de mid-training para inyectar conocimiento del universo de Winnie the Pooh de A. A. Milne. No es un modelo instruido ni de chat: la persona, el dialogo conversacional y la seguridad se reservan para fases de post-training posteriores que, segun la informacion disponible, aun no se han publicado.
 
 La arquitectura sigue el diseno de Qwen3 (transformer causal con atencion estandar, tag `qwen3-architecture`) y el entrenamiento usa el optimizador Muon combinado con AdamW, con un pico de learning rate de 4e-3 y 131.000 tokens por paso. El contexto de entrenamiento es de 4.096 tokens, tras un cambio de 512 a 4.096 tokens durante la decaida final del learning rate de v1. El modelo esta entrenado exclusivamente en ingles sobre corpus de escala infantil (BabyLM) mas un flujo especifico del mundo de Pooh.
 
@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente de investigacion: sirve para estudiar recetas 
 | Libreria | transformers (tambien etiquetado para text-generation-inference y endpoints) |
 | Optimizador | Muon + AdamW |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de publicacion | 15 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 15 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -111,9 +111,9 @@ Nota: la informacion de origen corta la tabla de evaluacion Pooh en la fila `wor
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | BLiMP | EWoK | COMPS | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Baby Pooh 46M midtrain r3 | 46,15M | 4.096 | Apache 2.0 | en | 76,49 | 53,91 | 58,30 | Publicado en HuggingFace |
-| Baby Pooh 46M midtrain r2 | 46,15M (misma base) | 4.096 | Apache 2.0 | en | 76,22 | 55,36 | 58,55 | Publicado en HuggingFace |
-| Baby Pooh 46M v1 | 46,15M | 4.096 | no disponible en la informacion | en | 77,53 | 54,91 | 58,60 | Publicado en HuggingFace |
+| Baby Pooh 46M midtrain r3 | 46,15M | 4.096 | Apache 2.0 | en | 76,49 | 53,91 | 58,30 | Publicado en Hugging Face |
+| Baby Pooh 46M midtrain r2 | 46,15M (misma base) | 4.096 | Apache 2.0 | en | 76,22 | 55,36 | 58,55 | Publicado en Hugging Face |
+| Baby Pooh 46M v1 | 46,15M | 4.096 | no disponible en la informacion | en | 77,53 | 54,91 | 58,60 | Publicado en Hugging Face |
 | GPT-2 100M (baseline BabyLM) | ~100M | 1.024 (configuracion habitual, no confirmada aqui) | no disponible en la informacion | en | 74,88 | 51,64 | 56,17 | Baseline de referencia BabyLM |
 | GPT-BERT causal (baseline BabyLM) | no disponible | no disponible | no disponible | en | 79,29 | 51,18 | 58,25 | Baseline de referencia BabyLM |
 
@@ -135,7 +135,7 @@ En sintesis: frente a los baselines de BabyLM, r3 supera a GPT-2 100M en BLiMP, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r3
+- Modelo en Hugging Face: https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r3
 - Modelo base v1: https://huggingface.co/prabakaranchandran/baby-pooh-46m
 - Ronda anterior r2: https://huggingface.co/prabakaranchandran/baby-pooh-46m-midtrain-r2
 - Dataset de mid-training: https://huggingface.co/datasets/prabakaranchandran/pooh-world-midtrain

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matveymat48/generation` es un repositorio de HuggingFace que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas de generación, en una configuración que el propio autor denomina "nano". Lo desarrolla el usuario matveymat48 y se publica bajo licencia BSD-3-Clause. El repositorio se centra en código transparente y pruebas de humo reproducibles, y declara de forma explícita que no reclama ninguna puntuación de benchmark.
+`matveymat48/generation` es un repositorio de Hugging Face que contiene una implementación funcional de la arquitectura Perceiver orientada a tareas de generación, en una configuración que el propio autor denomina "nano". Lo desarrolla el usuario matveymat48 y se publica bajo licencia BSD-3-Clause. El repositorio se centra en código transparente y pruebas de humo reproducibles, y declara de forma explícita que no reclama ninguna puntuación de benchmark.
 
 El punto clave para cualquier evaluador es que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un modelo entrenado. El recuento real de parámetros registrado en el archivo de pesos es de 33.088 parámetros, un orden de magnitud propio de un modelo de juguete o de un ejemplo didáctico, no de un sistema de generación de propósito general.
 
@@ -69,7 +69,7 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 | Modelo | Parametros | Contexto | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| matveymat48/generation | 33.088 | no disponible | no declarado | BSD-3-Clause | HuggingFace |
+| matveymat48/generation | 33.088 | no disponible | no declarado | BSD-3-Clause | Hugging Face |
 | Perceiver / Perceiver IO (referencia) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | publicacion academica |
 | Otros modelos generativos nano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,6 +87,6 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matveymat48/generation
+- Modelo en Hugging Face: https://huggingface.co/matveymat48/generation
 - Archivos del repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes (los resultados devueltos corresponden a generadores de imagen y de modelos 3D, sin relación con este modelo).

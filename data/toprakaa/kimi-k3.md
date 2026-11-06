@@ -4,7 +4,7 @@
 
 Kimi K3 es un modelo multimodal nativo de tipo agente, desarrollado por Moonshot AI, que se presenta como el modelo más capaz de la compañía y el primer modelo abierto de clase 3T del mundo. Con 2,8 billones de parámetros totales y 104.000 millones de parámetros activos, está diseñado para tareas de frontera como codificación de largo alcance, trabajo de conocimiento y razonamiento complejo. Su arquitectura combina Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), y escala la dispersión de un Mixture-of-Experts (MoE) mediante un marco estable de LatentMoE que activa 16 de los 896 expertos disponibles.
 
-El modelo ofrece una ventana de contexto de un millón de tokens y capacidades nativas de comprensión de texto, imágenes y vídeo, lo que lo habilita para tareas que requieren percepción visual y razonamiento multimodal. Moonshot AI libera los pesos completos bajo la licencia Kimi K3, con el objetivo de facilitar la investigación, el despliegue y la innovación. La información disponible proviene del repositorio de HuggingFace y de la documentación técnica oficial, aunque no se han publicado resultados de benchmarks ni especificaciones de entrenamiento detalladas.
+El modelo ofrece una ventana de contexto de un millón de tokens y capacidades nativas de comprensión de texto, imágenes y vídeo, lo que lo habilita para tareas que requieren percepción visual y razonamiento multimodal. Moonshot AI libera los pesos completos bajo la licencia Kimi K3, con el objetivo de facilitar la investigación, el despliegue y la innovación. La información disponible proviene del repositorio de Hugging Face y de la documentación técnica oficial, aunque no se han publicado resultados de benchmarks ni especificaciones de entrenamiento detalladas.
 
 ## Especificaciones tecnicas
 
@@ -67,16 +67,16 @@ No se dispone de información suficiente para realizar una comparativa directa c
 - Los idiomas soportados no están especificados, por lo que el comportamiento multilingüe es incierto.
 - La licencia es personalizada (Kimi K3 License) y no se detallan sus términos en la información proporcionada. Es necesario revisar el archivo LICENSE del repositorio para conocer las condiciones de uso comercial y las restricciones aplicables.
 - No se han publicado especificaciones de entrenamiento ni detalles sobre el proceso de alineación, lo que impide evaluar la robustez del modelo ante prompts adversos o tareas de seguridad.
-- El repositorio de HuggingFace indicado (toprakAA/Kimi-K3) presenta cero descargas y cero likes, y parece ser una copia o espejo no oficial. La fuente principal del modelo es Moonshot AI.
+- El repositorio de Hugging Face indicado (toprakAA/Kimi-K3) presenta cero descargas y cero likes, y parece ser una copia o espejo no oficial. La fuente principal del modelo es Moonshot AI.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toprakAA/Kimi-K3
+- Repositorio en Hugging Face: https://huggingface.co/toprakAA/Kimi-K3
 - Blog técnico oficial: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Repositorio en GitHub: https://github.com/MoonshotAI/Kimi-K3
 - Página de Kimi AI: https://www.kimi.com
 - Sitio de Moonshot AI: https://www.moonshot.ai
-- Organización de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organización de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Model card en NVIDIA NIM: https://build.nvidia.com/moonshotai/kimi-k3/modelcard
 - Análisis en OpenLM.ai: https://openlm.ai/kimi-k3/

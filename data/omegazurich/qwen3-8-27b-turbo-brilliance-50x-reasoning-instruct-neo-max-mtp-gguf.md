@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es una distribución cuantizada en formato GGUF del modelo base Qwen/Qwen3.8-27B, publicada por el usuario omegazurich en HuggingFace. El modelo base es un transformer multimodal de aproximadamente 26.900 millones de parámetros desarrollado por el equipo Qwen (Alibaba), y esta versión añade una capa de personalización denominada "Turbo Brilliance" que el autor describe como un sistema de 27 modos de razonamiento, 27 modos de instrucción y 9 modos "xhigh", junto con 15 "AI Constructs" (perfiles de comportamiento preconfigurados).
+Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es una distribución cuantizada en formato GGUF del modelo base Qwen/Qwen3.8-27B, publicada por el usuario omegazurich en Hugging Face. El modelo base es un transformer multimodal de aproximadamente 26.900 millones de parámetros desarrollado por el equipo Qwen (Alibaba), y esta versión añade una capa de personalización denominada "Turbo Brilliance" que el autor describe como un sistema de 27 modos de razonamiento, 27 modos de instrucción y 9 modos "xhigh", junto con 15 "AI Constructs" (perfiles de comportamiento preconfigurados).
 
 La propuesta del autor es permitir al usuario activar, mediante palabras clave en el prompt o en la API, distintos modos de comportamiento que supuestamente inyectan entre cientos y miles de tokens de instrucciones antes de que el modelo empiece a razonar. El modelo conserva la licencia Apache 2.0 del base y soporta 16 idiomas, incluyendo castellano, y entrada image-text-to-text.
 
@@ -85,6 +85,6 @@ La comparación cuantitativa con alternativas no puede realizarse porque no hay 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omegazurich/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/omegazurich/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a esta publicación.

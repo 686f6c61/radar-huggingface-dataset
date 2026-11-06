@@ -91,7 +91,7 @@ No se dispone de datos de contexto, rendimiento ni benchmarks para completar la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pqhaz/apex-flash-1-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pqhaz/apex-flash-1-abliterated-GGUF
 - Modelo base: https://huggingface.co/cantina-security/apex-flash-1-abliterated
 - Formato FP8: https://huggingface.co/pqhaz/apex-flash-1-abliterated-FP8
 - Formato NVFP4: https://huggingface.co/pqhaz/apex-flash-1-abliterated-NVFP4

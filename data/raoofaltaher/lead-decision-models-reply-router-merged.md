@@ -73,8 +73,8 @@ Métricas de test del run registrado por el autor (misma partición y mismas car
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lead-decision-models-reply-router-merged | 1.728.801.536 | no disponible | Clasificacion de intencion + decision binaria | LFM Open License v1.0 | HuggingFace, requiere `trust_remote_code` |
-| LiquidAI/LFM3-1.7B (base) | 1.700 millones aprox. | no disponible | Generacion de texto | LFM Open License v1.0 | HuggingFace |
+| lead-decision-models-reply-router-merged | 1.728.801.536 | no disponible | Clasificacion de intencion + decision binaria | LFM Open License v1.0 | Hugging Face, requiere `trust_remote_code` |
+| LiquidAI/LFM3-1.7B (base) | 1.700 millones aprox. | no disponible | Generacion de texto | LFM Open License v1.0 | Hugging Face |
 | TF-IDF + regresion logistica (baseline del autor) | no aplica | no aplica | Clasificacion de intencion | no disponible | Referencia en la model card |
 
 No se dispone de comparativas con otros modelos de decisión de la misma categoría en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de comparativas con otros modelos de decisión de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raoofaltaher/lead-decision-models-reply-router-merged
+- Modelo en Hugging Face: https://huggingface.co/raoofaltaher/lead-decision-models-reply-router-merged
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/LICENSE
 - Tutorial del autor: https://raoofaltaher.com/tutorials/fine-tune-decision-models-reply-routing

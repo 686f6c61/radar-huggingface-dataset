@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Manimancer-4B es un modelo de generación de texto especializado en producir código de animaciones para Manim, la biblioteca de Python para crear vídeos matemáticos y explicativos. Se trata de un fine-tuning de Qwen3-4B, el modelo base de 4.000 millones de parámetros del equipo Qwen, desarrollado por el usuario rachitgoyell y publicado en HuggingFace bajo licencia Apache 2.0. Su objetivo es resolver un problema concreto: automatizar la traducción de descripciones en lenguaje natural (un concepto matemático, un algoritmo, una escena) a scripts de Python con Manim listos para renderizar.
+Manimancer-4B es un modelo de generación de texto especializado en producir código de animaciones para Manim, la biblioteca de Python para crear vídeos matemáticos y explicativos. Se trata de un fine-tuning de Qwen3-4B, el modelo base de 4.000 millones de parámetros del equipo Qwen, desarrollado por el usuario rachitgoyell y publicado en Hugging Face bajo licencia Apache 2.0. Su objetivo es resolver un problema concreto: automatizar la traducción de descripciones en lenguaje natural (un concepto matemático, un algoritmo, una escena) a scripts de Python con Manim listos para renderizar.
 
 La relevancia del modelo radica en la combinación de especialización y accesibilidad: el repositorio distribuye una versión cuantizada en GGUF con cuantización Q4_K_M de unos 2,5 GB, lo que permite ejecutarlo localmente en hardware de consumo (CPU o GPU modesta) mediante llama.cpp, Ollama o LM Studio, sin depender de APIs externas ni de conexión a internet.
 
@@ -80,8 +80,8 @@ Frente al modelo base Qwen3-4B, Manimancer-4B ofrece mayor fiabilidad en la gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rachitgoyell/Manimancer-4B
+- Modelo en Hugging Face: https://huggingface.co/rachitgoyell/Manimancer-4B
 - Modelo base (Qwen3-4B): https://huggingface.co/Qwen/Qwen3-4B
 - Manim Community: https://www.manim.community/
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen

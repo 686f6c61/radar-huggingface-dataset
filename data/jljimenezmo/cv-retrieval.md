@@ -72,5 +72,5 @@ No disponible. No se han encontrado modelos comparables publicados con la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jljimenezmo/cv-retrieval
+- Modelo en Hugging Face: https://huggingface.co/jljimenezmo/cv-retrieval
 - Repositorio asociado: no disponible en la información proporcionada

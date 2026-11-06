@@ -97,7 +97,7 @@ Los dos últimos son compañeros de la misma familia KruschStack, no alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krush420/llama3-hermes3-8b-sre-lora
+- Modelo en Hugging Face: https://huggingface.co/krush420/llama3-hermes3-8b-sre-lora
 - Modelo base: https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/krush420/sovereign-code-audit-sft
 - Logs de benchmarks: https://huggingface.co/datasets/krush420/sovereign-g4-benchmarks

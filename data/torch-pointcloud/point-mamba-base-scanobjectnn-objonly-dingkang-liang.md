@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Point-Mamba base es un modelo de clasificación de nubes de puntos 3D desarrollado por Dingkang Liang y colaboradores (publicado en NeurIPS 2024) y distribuido en HuggingFace por la organización `torch-pointcloud`. Se trata de un modelo de espacio de estados (SSM, familia Mamba) que opera sobre puntos serializados, en lugar de las arquitecturas basadas en transformers o en convoluciones típicas del análisis de nubes de puntos. Con 12.293.647 parámetros (12,3 M) y 384 características por punto, es un modelo compacto orientado a una tarea concreta: asignar una de 15 clases a una nube de puntos.
+Point-Mamba base es un modelo de clasificación de nubes de puntos 3D desarrollado por Dingkang Liang y colaboradores (publicado en NeurIPS 2024) y distribuido en Hugging Face por la organización `torch-pointcloud`. Se trata de un modelo de espacio de estados (SSM, familia Mamba) que opera sobre puntos serializados, en lugar de las arquitecturas basadas en transformers o en convoluciones típicas del análisis de nubes de puntos. Con 12.293.647 parámetros (12,3 M) y 384 características por punto, es un modelo compacto orientado a una tarea concreta: asignar una de 15 clases a una nube de puntos.
 
 El checkpoint concreto de esta ficha es un ajuste fino (fine-tune) del modelo preentrenado `point-mamba-base.pretrain.dingkang-liang` sobre el subconjunto OBJ_ONLY del dataset ScanObjectNN, un benchmark de clasificación de objetos 3D escaneados en condiciones reales. Según los resultados declarados por el autor, alcanza un OA (overall accuracy) de 92,6 y un mAcc (mean accuracy) de 92,4 en dicho subconjunto.
 
@@ -80,8 +80,8 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Point-Mamba base (este checkpoint) | SSM sobre puntos serializados | 12,3 M | no disponible | Apache-2.0 | HuggingFace (torch-pointcloud) |
-| Point-Mamba base pretrain | SSM sobre puntos serializados | no disponible | no disponible | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| Point-Mamba base (este checkpoint) | SSM sobre puntos serializados | 12,3 M | no disponible | Apache-2.0 | Hugging Face (torch-pointcloud) |
+| Point-Mamba base pretrain | SSM sobre puntos serializados | no disponible | no disponible | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | PointMamba original (LMD0311/PointMamba) | SSM sobre puntos serializados | no disponible | no disponible | Apache-2.0 | GitHub |
 | Point-MAE | Transformer enmascarado para nubes de puntos | no disponible | no disponible | no disponible | repositorio publico |
 | Point-BERT | Transformer con tokenizacion de puntos | no disponible | no disponible | no disponible | repositorio publico |
@@ -103,7 +103,7 @@ Los valores de precision de las alternativas sobre ScanObjectNN (OBJ_ONLY) no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-objonly.dingkang-liang
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/point-mamba-base.scanobjectnn-objonly.dingkang-liang
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/point-mamba-base.pretrain.dingkang-liang
 - Paper PointMamba: https://arxiv.org/abs/2402.10739
 - Repositorio original PointMamba: https://github.com/LMD0311/PointMamba

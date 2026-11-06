@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HGRN-1.3B RIA 80% sparse fine-tuned es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace. Se trata de un modelo de generación de texto de 1.364.396.032 parámetros construido sobre la arquitectura HGRN (Hierarchically Gated Recurrent Network) implementada en la librería flash-linear-attention (FLA), al que se le ha aplicado una poda one-shot del 80 % de los pesos mediante el método RIA y, posteriormente, un ajuste fino con máscara fija para intentar recuperar capacidades.
+HGRN-1.3B RIA 80% sparse fine-tuned es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face. Se trata de un modelo de generación de texto de 1.364.396.032 parámetros construido sobre la arquitectura HGRN (Hierarchically Gated Recurrent Network) implementada en la librería flash-linear-attention (FLA), al que se le ha aplicado una poda one-shot del 80 % de los pesos mediante el método RIA y, posteriormente, un ajuste fino con máscara fija para intentar recuperar capacidades.
 
 El problema que aborda es la recuperación de rendimiento tras una poda agresiva: sirve como baseline de comparación frente al método CWS en el estudio de modelos dispersos sobre hardware neuromórfico (Intel Loihi). No es un modelo destinado a producción: el propio autor indica que con un 70-80 % de dispersión el modelo no genera texto utilizable y su precisión zero-shot está cerca del azar.
 
@@ -79,10 +79,10 @@ Datos adicionales aportados por el autor: la perplejidad bajó de 28.681 (poda o
 
 | Modelo | Parametros | Dispersión | WikiText-2 PPL | Media 6 tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ikimyaii/hgrn-1.3B-ria-80pct-ft (este) | 1,36 B | 80 % (RIA) | 2.015 | 0,304 | MIT | HuggingFace |
-| ikimyaii/hgrn-1.3B-cws-80pct-ft-c4 | 1,36 B (no confirmado en la informacion disponible) | 80 % (CWS) | 1.086 | no disponible | no disponible | HuggingFace |
-| ikimyaii/hgrn-1.3B-ria-80pct | 1,36 B (no confirmado) | 80 % (RIA, one-shot) | 28.681 | no disponible | no disponible | HuggingFace |
-| ikimyaii/hgrn-1.3B-dense-baseline (copia de fla-hub/hgrn-1.3B-100B) | 1,36 B | 0 % | 11,8 | 0,481 | no disponible | HuggingFace |
+| ikimyaii/hgrn-1.3B-ria-80pct-ft (este) | 1,36 B | 80 % (RIA) | 2.015 | 0,304 | MIT | Hugging Face |
+| ikimyaii/hgrn-1.3B-cws-80pct-ft-c4 | 1,36 B (no confirmado en la informacion disponible) | 80 % (CWS) | 1.086 | no disponible | no disponible | Hugging Face |
+| ikimyaii/hgrn-1.3B-ria-80pct | 1,36 B (no confirmado) | 80 % (RIA, one-shot) | 28.681 | no disponible | no disponible | Hugging Face |
+| ikimyaii/hgrn-1.3B-dense-baseline (copia de fla-hub/hgrn-1.3B-100B) | 1,36 B | 0 % | 11,8 | 0,481 | no disponible | Hugging Face |
 
 No se dispone de comparaciones con modelos de otras familias o de otros autores dentro de la información proporcionada.
 
@@ -101,7 +101,7 @@ No se dispone de comparaciones con modelos de otras familias o de otros autores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/hgrn-1.3B-ria-80pct-ft
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/hgrn-1.3B-ria-80pct-ft
 - Modelo base (poda one-shot): https://huggingface.co/ikimyaii/hgrn-1.3B-ria-80pct
 - Baseline denso: https://huggingface.co/ikimyaii/hgrn-1.3B-dense-baseline
 - Modelo original del baseline denso: https://huggingface.co/fla-hub/hgrn-1.3B-100B

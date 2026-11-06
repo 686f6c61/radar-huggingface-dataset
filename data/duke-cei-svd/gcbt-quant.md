@@ -80,7 +80,7 @@ El bundle si incluye instrumentacion de evaluacion (script `score_pairs.py` con 
 | Modelo | Naturaleza | Cuantizacion | Idiomas | Licencia | Disponibilidad y estado |
 |---|---|---|---|---|---|
 | Duke-CEI-SVD/gcbt-quant | Artefactos de experimento y checkpoint del transformer de Qwen-Image | SVDQuant INT4 rango 32 Native, pesos empaquetados en enteros | en, zh | apache-2.0 | Publico (53,4 GB, 0 descargas, 0 likes); carga verificada, inferencia end-to-end no validada en esta entrega |
-| Qwen/Qwen-Image (modelo base) | Modelo de difusion texto-a-imagen completo | No especificada en la informacion disponible | en, zh (segun el repositorio derivado) | no disponible | Componentes auxiliares (text encoder, tokenizer, VAE) usados desde HuggingFace con revision fijada; no se duplican en este bundle |
+| Qwen/Qwen-Image (modelo base) | Modelo de difusion texto-a-imagen completo | No especificada en la informacion disponible | en, zh (segun el repositorio derivado) | no disponible | Componentes auxiliares (text encoder, tokenizer, VAE) usados desde Hugging Face con revision fijada; no se duplican en este bundle |
 | SD3.5-Large PTQ (mencionado en el bundle) | Estados PTQ de un modelo de difusion distinto | BF16 desquantizado, no desplegable como INT4 | no disponible | no disponible | Los cinco archivos originales permanecen en la maquina de origen y no se incluyen en la subida |
 | Checkpoints de runtime de referencia (PixArt, Wan, LTX, SANA, SDXL) | Referencias de runtime citadas en la documentacion | No reetiquetados como despliegues empaquetados | no disponible | no disponible | No se detalla su contenido ni su disponibilidad en este bundle |
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Duke-CEI-SVD/gcbt-quant
+- Repositorio en Hugging Face: https://huggingface.co/Duke-CEI-SVD/gcbt-quant
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Configuracion de compilacion oficial de Nunchaku v1.2.1: https://github.com/nunchaku-ai/nunchaku/blob/v1.2.1/setup.py
 - Rueda de Nunchaku 1.2.1 citada en la model card: https://github.com/nunchux-ai/nunchaku/releases/download/v1.2.1/nunchaku-1.2.1%2Bcu12.8torch2.8-cp312-cp312-linux_x86_64.whl

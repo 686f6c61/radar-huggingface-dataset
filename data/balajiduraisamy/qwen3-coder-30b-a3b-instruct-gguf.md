@@ -65,7 +65,7 @@ Sin embargo, no se han encontrado benchmarks comparativos en la información dis
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio en HuggingFace está restringido (gated), por lo que es necesario aceptar las condiciones de uso antes de descargar los pesos.
+- El acceso al repositorio en Hugging Face está restringido (gated), por lo que es necesario aceptar las condiciones de uso antes de descargar los pesos.
 - Al ser un modelo especializado en código, puede generar código incorrecto, inseguro o con vulnerabilidades si no se supervisa adecuadamente. Se recomienda revisión humana en entornos de producción.
 - Riesgo de alucinación en APIs, librerías o funciones inexistentes, especialmente en contextos poco comunes.
 - La longitud de contexto no está especificada en la información disponible; se recomienda verificar el modelo base para conocer el límite real.

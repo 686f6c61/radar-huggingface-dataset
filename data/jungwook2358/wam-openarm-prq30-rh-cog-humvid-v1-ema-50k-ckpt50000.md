@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wam-openarm-prq30-rh-cog-humvid-v1-ema-50k-ckpt50000` es un checkpoint de robótica desarrollado por el usuario jungwook2358, publicado en HuggingFace bajo el pipeline `robotics`. Se trata de un modelo de política visuomotora (vision-language-action, VLA) entrenado sobre el backbone de vídeo Wan2.2-TI2V-5B, orientado a control de brazos robóticos OpenArm mediante representaciones de acción PRQ30 (posición de muñeca, rotación en 6D y articulaciones de mano). El identificador del experimento es EXP-0019, descrito como "PRQ30 v1 robot+human, CogAlign, human video-only".
+El modelo `wam-openarm-prq30-rh-cog-humvid-v1-ema-50k-ckpt50000` es un checkpoint de robótica desarrollado por el usuario jungwook2358, publicado en Hugging Face bajo el pipeline `robotics`. Se trata de un modelo de política visuomotora (vision-language-action, VLA) entrenado sobre el backbone de vídeo Wan2.2-TI2V-5B, orientado a control de brazos robóticos OpenArm mediante representaciones de acción PRQ30 (posición de muñeca, rotación en 6D y articulaciones de mano). El identificador del experimento es EXP-0019, descrito como "PRQ30 v1 robot+human, CogAlign, human video-only".
 
 El modelo combina datos de robot y de humano: 32 muestras de robot por lote (con acciones y estados PRQ30 absolutos) y 32 muestras humanas por lote en formato únicamente de vídeo (sin estado ni acción). Incorpora una pérdida de alineamiento cognitivo (CogAlign) sobre keypoints FP48, con componente actual y de delta futuro, que fluye hacia el backbone de vídeo junto con la pérdida de flujo de acciones. El entrenamiento parte de Wan2.2-TI2V-5B desde cero, con 50 000 pasos, warmup de 2500, lr 1e-4, weight decay 0.01 y decaimiento coseno hasta 0.1.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wam-openarm-prq30-rh-cog-humvid-v1-ema-50k-ckpt50000 | ~5B (backbone Wan2.2-TI2V-5B) | no disponible | other | HuggingFace, 0 descargas |
+| wam-openarm-prq30-rh-cog-humvid-v1-ema-50k-ckpt50000 | ~5B (backbone Wan2.2-TI2V-5B) | no disponible | other | Hugging Face, 0 descargas |
 | rel28-rh-cog-humvid (referencia del autor) | no disponible | no disponible | no disponible | mencionado como contraparte PRQ30 |
 | Wan2.2-TI2V-5B (backbone base) | ~5B | no disponible | no disponible | público como modelo de vídeo |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-prq30-rh-cog-humvid-v1-ema-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-prq30-rh-cog-humvid-v1-ema-50k-ckpt50000
 - Contrato de conversión PRQ30: `docs/PRQ30_FRAME_V1_CONTRACT.md` (referenciado en la model card, no se proporciona URL)
 - Código: actlat-wam, rama `jungwook/openarm-fred-ft` @407ba01 (no se proporciona URL)
 - Script de entrenamiento: `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_rel28_base.sh` (no se proporciona URL)

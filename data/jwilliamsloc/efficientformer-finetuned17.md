@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jwilliamsloc/efficientformer-finetuned17` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo basado en la arquitectura EfficientFormer, orientado a tareas de generación. Lo desarrolla el usuario Jwilliamsloc y se distribuye con licencia MIT. A pesar del sufijo "finetuned" en el identificador, la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
+`Jwilliamsloc/efficientformer-finetuned17` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo basado en la arquitectura EfficientFormer, orientado a tareas de generación. Lo desarrolla el usuario Jwilliamsloc y se distribuye con licencia MIT. A pesar del sufijo "finetuned" en el identificador, la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado con benchmarks.
 
 El interés del repositorio es fundamentalmente documental y experimental: define una configuración de arquitectura concreta (escala "large", atención dilatada, fusión Tucker, activación Mish, normalización BatchNorm) y una receta de entrenamiento por defecto (optimizador RMSprop con scheduler coseno), junto con un script `run.py` ejecutable. No obstante, no se aportan pesos entrenados, resultados de evaluación ni métricas de rendimiento.
 
@@ -80,4 +80,4 @@ La comparación es limitada: el repositorio analizado no es un modelo entrenado,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jwilliamsloc/efficientformer-finetuned17
+- Hugging Face: https://huggingface.co/Jwilliamsloc/efficientformer-finetuned17

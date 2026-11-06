@@ -85,7 +85,7 @@ La plantilla de sanjxz es una adaptacion de la de froggeric al esquema de tokens
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sanjxz/Ling-3.0-Flash-Agentic-Chat-Template-Jinja
+- Repositorio de Hugging Face: https://huggingface.co/sanjxz/Ling-3.0-Flash-Agentic-Chat-Template-Jinja
 - Modelo base Ling 3.0 flash: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentacion de Ant Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Repositorio de plantillas de chat: https://github.com/jndiogo/LLM-chat-templates

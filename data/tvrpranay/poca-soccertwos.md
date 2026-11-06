@@ -84,7 +84,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tvrpranay/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/tvrpranay/poca-SoccerTwos
 - Unity ML-Agents (repositorio oficial): https://github.com/Unity-Technologies/ml-agents
 - Documentación de MA-POCA en ML-Agents: no disponible en la información proporcionada
 - Entorno SoccerTwos: no disponible enlace directo en la información proporcionada

@@ -67,5 +67,5 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r494-offline-dpo-hialpha-midrank-midctx-extrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r494-offline-dpo-hialpha-midrank-midctx-extrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

@@ -27,7 +27,7 @@ Su relevancia es fundamentalmente metodologica: documenta con detalle las dinami
 | Vocabulario | 16.384 tokens, BPE, con embeddings atados (tied embeddings) |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 | Pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -42,7 +42,7 @@ Se publican tres artefactos: los pesos PyTorch `KaptaanLM-50M-0.1.pt`, el checkp
 
 - Generacion de texto en ingles: el modelo esta entrenado exclusivamente como modelo de lenguaje causal, sin ajuste por instrucciones documentado.
 - Modelado de lenguaje y continuation de texto: es su capacidad principal y la unica verificable con los datos publicados (perplejidad de validacion de 31,27).
-- Tag de "reasoning" declarado por el autor: aparece en los metadatos de HuggingFace, pero la model card no aporta evaluaciones de razonamiento que lo respalden.
+- Tag de "reasoning" declarado por el autor: aparece en los metadatos de Hugging Face, pero la model card no aporta evaluaciones de razonamiento que lo respalden.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no; el modelo esta declarado unicamente para ingles (`language: en`).
@@ -109,13 +109,13 @@ Frente a estas alternativas, la ventaja de KaptaanLM-Navigator-50M es su tamano 
 - Idiomas: unicamente ingles. No hay soporte declarado de castellano ni de ningun otro idioma.
 - Contexto: 2.048 tokens como maximo, con ventana deslizante de 512 tokens, lo que limita tareas que requieran razonamiento sobre documentos largos o conversaciones multi-turno extensas.
 - Alineacion: no se documenta ninguna fase de ajuste por instrucciones (SFT), RLHF o DPO. El modelo no debe esperarse que siga instrucciones ni que mantenga un formato conversacional coherente.
-- Metadatos potencialmente enganosos: el tag `reasoning` de HuggingFace no esta respaldado por ninguna evaluacion en la model card, y la metrica "Active Reasoning Density" (84,11%) es en realidad la proporcion de parámetros no de embedding, no un mecanismo de activacion selectiva.
+- Metadatos potencialmente enganosos: el tag `reasoning` de Hugging Face no esta respaldado por ninguna evaluacion en la model card, y la metrica "Active Reasoning Density" (84,11%) es en realidad la proporcion de parámetros no de embedding, no un mecanismo de activacion selectiva.
 - Licencia: Apache-2.0, que permite uso comercial, modificacion y redistribucion, con obligacion de conservar avisos de copyright y licencia. No se declaran restricciones adicionales.
 - Estado del artefacto: se trata de un checkpoint piloto de pre-entrenamiento (0 descargas, 0 likes, repositorio de 0,2 GB) sin garantia de mantenimiento, sin versionado estable y sin soporte en frameworks de inferencia habituales.
 - Produccion: no recomendado para casos de uso en produccion orientados al usuario final sin un ajuste posterior y una evaluacion propia.
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/kaptaan45/KaptaanLM-Navigator-50M
+- Ficha del modelo en Hugging Face: https://huggingface.co/kaptaan45/KaptaanLM-Navigator-50M
 - Repositorio del proyecto KaptaanLM (segun la cita BibTeX de la model card): https://github.com/rudy-07/KaptaanLM
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, el autor o el proyecto KaptaanLM; los enlaces recuperados no guardan relacion con el contenido de esta ficha.

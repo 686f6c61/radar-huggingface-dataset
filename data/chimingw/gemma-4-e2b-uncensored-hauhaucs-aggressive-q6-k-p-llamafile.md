@@ -84,7 +84,7 @@ La principal diferencia con el modelo original es la eliminacion de rechazos (ab
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/chimingw/gemma-4-e2b-uncensored-hauhaucs-aggressive-q6-k-p-llamafile
+- Repositorio Hugging Face del paquete: https://huggingface.co/chimingw/gemma-4-e2b-uncensored-hauhaucs-aggressive-q6-k-p-llamafile
 - Modelo base de HauhauCS: https://huggingface.co/HauhauCS/Gemma-4-E2B-Uncensored-HauhauCS-Aggressive
 - Modelo original de Google: https://huggingface.co/google/gemma-4-e2b-it
 - Runtime llamafile: https://github.com/Mozilla-Ocho/llamafile

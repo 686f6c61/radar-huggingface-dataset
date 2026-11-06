@@ -2,7 +2,7 @@
 
 ## Resumen
 
-neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized es un repositorio de pesos publicado en HuggingFace por el usuario neural-nova, con licencia MIT declarada en sus metadatos y etiquetado con region:us. La model card asociada no contiene mas que la linea de licencia: no hay descripcion, no hay pipeline declarado, no se enumeran idiomas y no se aporta ninguna informacion sobre el proceso de entrenamiento, la tokenizacion o el contenido real de los ficheros. El repositorio registra 0 descargas y 0 likes, y su fecha de creacion y de ultima actualizacion coinciden.
+neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized es un repositorio de pesos publicado en Hugging Face por el usuario neural-nova, con licencia MIT declarada en sus metadatos y etiquetado con region:us. La model card asociada no contiene mas que la linea de licencia: no hay descripcion, no hay pipeline declarado, no se enumeran idiomas y no se aporta ninguna informacion sobre el proceso de entrenamiento, la tokenizacion o el contenido real de los ficheros. El repositorio registra 0 descargas y 0 likes, y su fecha de creacion y de ultima actualizacion coinciden.
 
 El identificador sugiere que se trata de una variante "optimizada" del modelo Qwen3-235B-A22B-Instruct-2507 de Alibaba Qwen, lo que implicaria una arquitectura de mezcla de expertos (MoE) con 235 000 millones de parametros totales y 22 000 millones activos. Sin embargo, esa correspondencia no esta confirmada por el autor en ningun momento: "optimized" es un termino ambiguo que puede referirse a cuantizacion, poda, destilado, fusion de pesos o simplemente a un reempaquetado del checkpoint original.
 
@@ -93,7 +93,7 @@ La informacion proporcionada no permite establecer una comparativa fiable, ya qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized
+- Repositorio en Hugging Face: https://huggingface.co/neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las fuentes devueltas por el buscador para el termino "neural" no guardan relacion con el modelo y se listan solo a efectos de trazabilidad:
   - https://neuraldsp.com/ (fabricante de plugins de audio)
   - https://neuraldsp.com/plugins (catalogo de plugins de audio)

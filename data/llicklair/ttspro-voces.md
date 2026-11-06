@@ -80,6 +80,6 @@ No se han encontrado datos de modelos comparables en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Llicklair/ttspro-voces
+- Repositorio en Hugging Face: https://huggingface.co/Llicklair/ttspro-voces
 - GitHub de ttspro: https://github.com/Llicklair/ttspro
 - GitHub de Piper (referencia en la model card): https://github.com/OHF-Voice/piper1-gpl

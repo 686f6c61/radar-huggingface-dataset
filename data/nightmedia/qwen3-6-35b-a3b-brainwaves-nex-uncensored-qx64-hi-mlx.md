@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx` es una variante derivada de la familia Qwen 3.5/3.6, publicada por el usuario nightmedia en HuggingFace. Se trata de un modelo de lenguaje de arquitectura MoE (mixture of experts) con 35.107.181.936 parámetros totales, según los datos reales de los ficheros safetensors publicados, y con un sufijo de nomenclatura A3B que indica del orden de 3.000 millones de parámetros activos por token. El pipeline declarado es image-text-to-text, de modo que el modelo está etiquetado para tareas multimodales de entrada de imagen y texto, y su arquitectura interna corresponde al tag `qwen3_5_moe`.
+El modelo `nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx` es una variante derivada de la familia Qwen 3.5/3.6, publicada por el usuario nightmedia en Hugging Face. Se trata de un modelo de lenguaje de arquitectura MoE (mixture of experts) con 35.107.181.936 parámetros totales, según los datos reales de los ficheros safetensors publicados, y con un sufijo de nomenclatura A3B que indica del orden de 3.000 millones de parámetros activos por token. El pipeline declarado es image-text-to-text, de modo que el modelo está etiquetado para tareas multimodales de entrada de imagen y texto, y su arquitectura interna corresponde al tag `qwen3_5_moe`.
 
 La relevancia de esta ficha radica en que se trata de un modelo de fusión (merge) construido con mergekit a partir de varios modelos base, entre ellos `AllSpark-Research/Iris-mini`, `thomsonreuters/Thomson-1.0-Small`, `nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1`, `nightmedia/Qwen3.6-35B-A3B-FSM`, `Qwen/Qwen-AgentWorld-35B-A3B`, `orcarouter/Nex-N2.5-mini-Uncensored` y `Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated`. La combinación de modelos orientados a agentes, razonamiento y variantes "abliterated" o "uncensored" sugiere un ajuste orientado a reducir los rechazos del modelo y a potenciar el razonamiento de cadena larga.
 
-El repositorio tiene 30,9 GB, está publicado bajo licencia Apache 2.0, soporta los idiomas inglés, chino, japonés y español, y su acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se ha publicado ningún dato de benchmarks, y el número de descargas y de "likes" es cero en el momento de la consulta, por lo que se trata de una publicación reciente y sin validación externa conocida.
+El repositorio tiene 30,9 GB, está publicado bajo licencia Apache 2.0, soporta los idiomas inglés, chino, japonés y español, y su acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado ningún dato de benchmarks, y el número de descargas y de "likes" es cero en el momento de la consulta, por lo que se trata de una publicación reciente y sin validación externa conocida.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ El repositorio tiene 30,9 GB, está publicado bajo licencia Apache 2.0, soporta 
 | Formato de pesos | safetensors (transformers); variante MLX (tag `mlx`) |
 | Pipeline declarado | image-text-to-text |
 | Tamano del repositorio | 30,9 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tipo de modelo | Fusion (merge) de modelos, ajuste por instrucciones, orientado a razonamiento |
 | Fecha de creacion | 2026-09-11 |
 | Ultima actualizacion | 2026-09-11 |
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento, contexto ni licencia de alternativas comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx | 35,1 B totales, ~3 B activos | no disponible | apache-2.0 | Gated en HuggingFace |
+| nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx | 35,1 B totales, ~3 B activos | no disponible | apache-2.0 | Gated en Hugging Face |
 | Qwen/Qwen-AgentWorld-35B-A3B | 35 B totales, ~3 B activos | no disponible | no disponible | no disponible |
 | Jiunsong/SuperQwen-AgentWorld-35B-A3B-abliterated | 35 B totales, ~3 B activos | no disponible | no disponible | no disponible |
 | nightmedia/Qwen3.6-35B-A3B-Fable-Holo3.1 | 35 B totales, ~3 B activos | no disponible | no disponible | no disponible |
@@ -93,11 +93,11 @@ No se ha encontrado informacion publica sobre benchmarks que permita una compara
 - Idiomas limitados a ingles, chino, japones y espanol. No hay soporte declarado para otras lenguas, incluidas las cooficiales de Espana distintas del castellano.
 - Longitud de contexto no disponible, lo que impide planificar despliegues que dependan de ventanas largas.
 - Licencia Apache 2.0 en este repositorio, pero los modelos base pueden tener licencias propias con condiciones adicionales (por ejemplo, terminos especificos de Qwen). Conviene verificar la licencia de cada modelo fuente antes de un uso comercial.
-- Acceso restringido (gated): es obligatorio aceptar condiciones en HuggingFace y autenticarse con un token para descargar los pesos, lo que complica la automatizacion de despliegues y la reproducibilidad.
+- Acceso restringido (gated): es obligatorio aceptar condiciones en Hugging Face y autenticarse con un token para descargar los pesos, lo que complica la automatizacion de despliegues y la reproducibilidad.
 - Etiqueta de multimodalidad sin detalle: aunque el pipeline es image-text-to-text, no se especifica que torre de vision se ha conservado tras la fusion ni si las capacidades visuales siguen intactas.
 - Fechas de publicacion y de actualizacion registradas como 2026, lo que dificulta situar el modelo en una linea temporal verificable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-qx64-hi-mlx
 - La busqueda web realizada no ha devuelto ningun enlace tecnico relevante sobre este modelo: los resultados obtenidos correspondian a sitios de contenido para adultos sin relacion alguna con el modelo, por lo que se descartan y no se incluyen. No hay papers, blogs, repositorios de codigo ni demos adicionales disponibles en la informacion proporcionada.

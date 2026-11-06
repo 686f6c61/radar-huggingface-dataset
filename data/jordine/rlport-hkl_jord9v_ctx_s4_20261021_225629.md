@@ -89,12 +89,12 @@ No se han identificado modelos comparables: el artefacto no es un modelo, sino u
 - Ausencia total de evaluación: sin benchmarks, sin evaluación de sesgos, sin pruebas de alucinación y sin análisis de comportamiento. No se puede caracterizar la calidad ni la seguridad del modelo subyacente.
 - Ciclo de vida efímero: al ser un respaldo automático escrito por un script, puede quedar obsoleto, incompleto o ser eliminado sin aviso; no hay garantía de integridad ni de versionado estable.
 - Cero validación comunitaria: 0 descargas y 0 likes implican que nadie ha verificado la carga correcta del checkpoint.
-- Nombre potencialmente engañoso: el identificador tiene la forma de un modelo de HuggingFace y puede confundirse con una release; conviene etiquetarlo siempre como checkpoint.
+- Nombre potencialmente engañoso: el identificador tiene la forma de un modelo de Hugging Face y puede confundirse con una release; conviene etiquetarlo siempre como checkpoint.
 - Idiomas y contexto desconocidos: no se puede afirmar cobertura multilingüe ni una ventana de contexto concreta.
 
 ## Enlaces
 
-- HuggingFace (artefacto principal): https://huggingface.co/Jordine/rlport-hkl_jord9v_ctx_s4_20261021_225629
+- Hugging Face (artefacto principal): https://huggingface.co/Jordine/rlport-hkl_jord9v_ctx_s4_20261021_225629
 - Repositorio hermano del mismo proyecto: https://huggingface.co/Jordine/rlport-hkl_jord9v_L_pl10_20261018_021952
 - Repositorio hermano del mismo proyecto: https://huggingface.co/Jordine/rlport-hkl_jord9v_pl7_20261017_153438
 - Paper, blog, repositorio de código o demo del proyecto "reward-laundering": no disponible (la búsqueda web no devolvió material técnico relacionado; los resultados obtenidos no guardan relación con el artefacto).

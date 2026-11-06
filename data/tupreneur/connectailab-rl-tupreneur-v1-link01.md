@@ -75,9 +75,9 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | 62,9% precisión en test; 100% éxito en 20 episodios | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8B + LoRA | no disponible | 62,9% precisión en test; 100% éxito en 20 episodios | Apache 2.0 | Hugging Face |
 | Cerebro PPO (profesor) | no disponible (política RL) | no aplica | 100% precisión; 100% éxito; 11,8 s | no disponible | No publicado como modelo |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | 29,4% precisión sin ajuste | no disponible | HuggingFace |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | 29,4% precisión sin ajuste | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-v1-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de aprendizaje del robot: https://www.ezerai.xyz/robot-lab/world/

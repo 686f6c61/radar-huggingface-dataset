@@ -89,7 +89,7 @@ La comparación directa con FlashAttention-2 no es posible porque `ggml-attn` so
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcsun13/ggml-attn
+- Repositorio Hugging Face: https://huggingface.co/marcsun13/ggml-attn
 - Perfil del autor: https://huggingface.co/marcsun13
 - Modelos del autor: https://huggingface.co/marcsun13/models
 - ggml (librería tensor): https://ggml.ai/ y https://github.com/ggml-org/ggml

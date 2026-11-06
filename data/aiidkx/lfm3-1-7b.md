@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LFM3-1.7B es un modelo de lenguaje de 1.730 millones de parametros desarrollado por Liquid AI, publicado en HuggingFace bajo el identificador `Aiidkx/LFM3-1.7B` como un fine-tune del checkpoint base `LiquidAI/LFM3-1.7B-Base`. Se trata de un modelo de texto post-entrenado, disenado especificamente para agentes locales y aplicaciones especializadas, y construido sobre una arquitectura tri-hibrida que combina convoluciones cortas con compuerta, atencion de ventana deslizante y atencion global a lo largo de sus 24 capas.
+LFM3-1.7B es un modelo de lenguaje de 1.730 millones de parametros desarrollado por Liquid AI, publicado en Hugging Face bajo el identificador `Aiidkx/LFM3-1.7B` como un fine-tune del checkpoint base `LiquidAI/LFM3-1.7B-Base`. Se trata de un modelo de texto post-entrenado, disenado especificamente para agentes locales y aplicaciones especializadas, y construido sobre una arquitectura tri-hibrida que combina convoluciones cortas con compuerta, atencion de ventana deslizante y atencion global a lo largo de sus 24 capas.
 
 El modelo destaca por su enfoque hacia el edge computing: con cuantizacion de 4 bits ocupa aproximadamente 1 GB de memoria, lo que permite ejecutarlo en telefonos moviles y portatiles convencionales. Ademas, incorpora una ventana de contexto de 256.000 tokens (entrada mas salida), un vocabulario de 128.000 tokens y soporte para 16 idiomas, incluyendo espanol, ingles, arabe, chino, frances, aleman, italiano, japones, coreano, portugues, vietnamita, tailandes, indonesio, hindi, ruso y polaco.
 
-Su relevancia actual radica en la combinacion de un contexto muy extenso con un tamano reducido y un entrenamiento orientado a tareas agenticas (Hermes Agent, Pi, OpenClaw), lo que lo posiciona como una opcion viable para despliegues en dispositivos con recursos limitados donde otros modelos de contexto largo no caben. La licencia LFM1.0 (etiquetada como "other" en HuggingFace) condiciona su uso comercial.
+Su relevancia actual radica en la combinacion de un contexto muy extenso con un tamano reducido y un entrenamiento orientado a tareas agenticas (Hermes Agent, Pi, OpenClaw), lo que lo posiciona como una opcion viable para despliegues en dispositivos con recursos limitados donde otros modelos de contexto largo no caben. La licencia LFM1.0 (etiquetada como "other" en Hugging Face) condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en la combinacion de un contexto muy extenso con un 
 | Longitud de contexto | 256K tokens (entrada + salida) |
 | Tipos de cuantizacion | 4 bits mencionada en la model card; no se detallan otros formatos |
 | Idiomas soportados | en, ar, zh, fr, de, it, ja, ko, pt, es, vi, th, id, hi, ru, pl |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (libreria transformers, requiere custom_code) |
 | Vocabulario | 128.000 tokens |
 | Tamano del repositorio | 3,5 GB |
@@ -85,10 +85,10 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aiidkx/LFM3-1.7B
+- Modelo en Hugging Face: https://huggingface.co/Aiidkx/LFM3-1.7B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Playground: https://playground.liquid.ai/
 - Consola/API: https://console.liquid.ai/dashboard
-- Coleccion LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Coleccion LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

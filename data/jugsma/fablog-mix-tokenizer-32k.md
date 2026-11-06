@@ -17,7 +17,7 @@ Se trata del sucesor de `JugsMa/fablog-tokenizer-16k`. El tokenizer fue entrenad
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | Ingles y logs tecnicos (dominio de fabricacion, HPC, semiconductor) |
 | Licencia | No disponible |
-| Formato de pesos | tokenizer.json (estandar de HuggingFace, compatible con AutoTokenizer) |
+| Formato de pesos | tokenizer.json (estandar de Hugging Face, compatible con AutoTokenizer) |
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ El tokenizer muestra una paridad casi completa con Llama-3 en logs y un rendimie
 - No requiere GPU para la tokenizacion: se ejecuta completamente en CPU y es ligero, ya que no contiene pesos de red neuronal.
 - Para entrenar un modelo con este tokenizer, la VRAM necesaria depende del tamano del modelo de lenguaje, no del tokenizer. Con hidden size 1024, el coste de embeddings y LM head es de aproximadamente 67 millones de parametros.
 - Compatible con cualquier GPU que pueda ejecutar Transformers, incluidas RTX 4090, A100 y H100, siempre que el modelo de lenguaje asociado quepa en memoria.
-- Opciones de despliegue: se puede usar como preprocesador en frameworks como HuggingFace Transformers, nanotron, datatrove y cualquier pipeline basado en `tokenizers`.
+- Opciones de despliegue: se puede usar como preprocesador en frameworks como Hugging Face Transformers, nanotron, datatrove y cualquier pipeline basado en `tokenizers`.
 - No se dispone de datos de latencia o throughput especificos; al ser un tokenizer de vocabulario moderado, la velocidad de tokenizacion es alta en CPU.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ El tokenizer de JugsMa ofrece una compresion comparable a Llama-3 en logs y mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JugsMa/fablog-mix-tokenizer-32k
+- Modelo en Hugging Face: https://huggingface.co/JugsMa/fablog-mix-tokenizer-32k
 - Predecesor (16k): https://huggingface.co/JugsMa/fablog-tokenizer-16k
 - Loghub (dataset de logs BGL): https://github.com/logpai/loghub

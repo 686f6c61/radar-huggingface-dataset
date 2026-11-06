@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **IDA_Swift** es un modelo de lenguaje publicado por el usuario KissTheHabit en HuggingFace, dentro de una familia de modelos denominada "IDA" que incluye también variantes como IDA_Swift_Native, IDA_MoE e IDA_AI. El repositorio tiene un tamaño de 59.0 GB, lo que sugiere un modelo de gran escala, y está marcado con acceso restringido (gated), por lo que es necesario solicitar permiso al autor para descargarlo. No se dispone de información pública sobre su arquitectura, parámetros, contexto o licencia en la ficha de HuggingFace, y las búsquedas web no aportan detalles adicionales más allá de la existencia de repositorios relacionados.
+El modelo **IDA_Swift** es un modelo de lenguaje publicado por el usuario KissTheHabit en Hugging Face, dentro de una familia de modelos denominada "IDA" que incluye también variantes como IDA_Swift_Native, IDA_MoE e IDA_AI. El repositorio tiene un tamaño de 59.0 GB, lo que sugiere un modelo de gran escala, y está marcado con acceso restringido (gated), por lo que es necesario solicitar permiso al autor para descargarlo. No se dispone de información pública sobre su arquitectura, parámetros, contexto o licencia en la ficha de Hugging Face, y las búsquedas web no aportan detalles adicionales más allá de la existencia de repositorios relacionados.
 
 El modelo parece estar orientado a tareas de generación de texto, aunque no hay documentación oficial que lo confirme. La ausencia de una ficha técnica detallada y de resultados de benchmarks limita cualquier evaluación objetiva. La relevancia actual es incierta, dado que no se conocen publicaciones, papers ni casos de uso documentados.
 
@@ -50,7 +50,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere aceptación de condiciones en HuggingFace, lo que dificulta su evaluación y uso.
+- **Acceso restringido**: el modelo requiere aceptación de condiciones en Hugging Face, lo que dificulta su evaluación y uso.
 - **Documentación ausente**: no hay ficha técnica, ni notas de entrenamiento, ni ejemplos de uso.
 - **Licencia no especificada**: no se puede garantizar permisos de uso comercial o modificación.
 - **Riesgo de alucinación**: al no conocerse los datos de entrenamiento, no se puede evaluar la fiabilidad del modelo.
@@ -59,8 +59,8 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace - KissTheHabit/IDA_Swift](https://huggingface.co/KissTheHabit/IDA_Swift)
-- [HuggingFace - KissTheHabit/IDA_Swift_Native](https://huggingface.co/KissTheHabit/IDA_Swift_Native)
-- [HuggingFace - KissTheHabit/IDA-training (README)](https://d6108366.hf-mirror.com/KissTheHabit/IDA-training/blob/main/README.md?code=true)
+- [Hugging Face - KissTheHabit/IDA_Swift](https://huggingface.co/KissTheHabit/IDA_Swift)
+- [Hugging Face - KissTheHabit/IDA_Swift_Native](https://huggingface.co/KissTheHabit/IDA_Swift_Native)
+- [Hugging Face - KissTheHabit/IDA-training (README)](https://d6108366.hf-mirror.com/KissTheHabit/IDA-training/blob/main/README.md?code=true)
 - [FriendliAI - KissTheHabit/IDA_AI](https://friendli.ai/models/KissTheHabit/IDA_AI)
-- [HuggingFace - KissTheHabit/IDA_MoE (README)](https://d6108366.hf-mirror.com/KissTheHabit/IDA_MoE/blob/main/README.md?code=true)
+- [Hugging Face - KissTheHabit/IDA_MoE (README)](https://d6108366.hf-mirror.com/KissTheHabit/IDA_MoE/blob/main/README.md?code=true)

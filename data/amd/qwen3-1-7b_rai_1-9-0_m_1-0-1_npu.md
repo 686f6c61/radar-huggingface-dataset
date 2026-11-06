@@ -4,7 +4,7 @@
 
 AMD/Qwen3-1.7B_rai_1.9.0_m_1.0.1_npu es una distribucion del modelo Qwen3-1.7B de Alibaba empaquetada por AMD para su ejecucion sobre las NPU (unidades de procesamiento neuronal) de la plataforma Ryzen AI. El repositorio contiene pesos en formato ONNX optimizados para el runtime Ryzen AI 1.9.0 con el perfil de modelo `m_1.0.1_npu`, lo que permite ejecutar el modelo en local sobre los aceleradores integrados en los procesadores AMD Ryzen con arquitectura XDNA/XDNA2, sin depender de una GPU discreta. El modelo base es un transformer denso de 1.700 millones de parametros con una ventana de contexto nativa de 32.768 tokens y capacidades multilingues, entrenado por el equipo Qwen de Alibaba.
 
-La relevancia de esta publicacion es fundamentalmente de despliegue: no introduce un modelo nuevo, sino que traslada un LLM ya conocido al ecosistema de inferencia en NPU de AMD. Esto interesa a desarrolladores que quieren ejecutar generacion de texto y conversacion en portatiles y mini-PC con Ryzen AI manteniendo los datos en local, con un consumo energetico bajo y sin ocupar la GPU. El repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+La relevancia de esta publicacion es fundamentalmente de despliegue: no introduce un modelo nuevo, sino que traslada un LLM ya conocido al ecosistema de inferencia en NPU de AMD. Esto interesa a desarrolladores que quieren ejecutar generacion de texto y conversacion en portatiles y mini-PC con Ryzen AI manteniendo los datos en local, con un consumo energetico bajo y sin ocupar la GPU. El repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 La ficha se centra en lo que la informacion disponible permite afirmar. Los detalles de arquitectura y entrenamiento corresponden al modelo base Qwen3-1.7B; los datos especificos del empaquetado ONNX para NPU (por ejemplo, precision exacta de los pesos o nivel de cuantizacion aplicado) no estan publicados en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ La comparativa se limita a datos de catalogo de los modelos base; no se dispone 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de la descarga, lo que anade un paso al despliegue automatizado.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de la descarga, lo que anade un paso al despliegue automatizado.
 - Dependencia de hardware: el empaquetado esta atado a la NPU Ryzen AI y al runtime 1.9.0; no es portable a GPU o CPU sin reconvertir el modelo.
 - Model card minima: la informacion publicada no detalla cuantizacion exacta, requisitos de memoria ni metricas de rendimiento, lo que dificulta planificar capacidad.
 - Idioma declarado: solo se declara ingles; el rendimiento en castellano no esta verificado para este empaquetado, aunque el modelo base sea multilingue.
@@ -92,7 +92,7 @@ La comparativa se limita a datos de catalogo de los modelos base; no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amd/Qwen3-1.7B_rai_1.9.0_m_1.0.1_npu
+- Repositorio Hugging Face: https://huggingface.co/amd/Qwen3-1.7B_rai_1.9.0_m_1.0.1_npu
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada
 - Paper o blog de Qwen3: no disponible en la informacion proporcionada

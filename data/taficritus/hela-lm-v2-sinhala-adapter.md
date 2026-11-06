@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Taficritus/hela-lm-v2-sinhala-adapter | ~4.020M (base + LoRA de ~24M) | no disponible | Cingalés | gemma | HuggingFace (adaptador) |
-| Jainamshahhh/helalm-4b (modelo base) | ~4B | no disponible | Cingalés | no disponible | HuggingFace |
-| Gemma 3 4B (modelo original) | ~4B | no disponible | Multilingüe | gemma | HuggingFace |
+| Taficritus/hela-lm-v2-sinhala-adapter | ~4.020M (base + LoRA de ~24M) | no disponible | Cingalés | gemma | Hugging Face (adaptador) |
+| Jainamshahhh/helalm-4b (modelo base) | ~4B | no disponible | Cingalés | no disponible | Hugging Face |
+| Gemma 3 4B (modelo original) | ~4B | no disponible | Multilingüe | gemma | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Taficritus/hela-lm-v2-sinhala-adapter
+- Adaptador en Hugging Face: https://huggingface.co/Taficritus/hela-lm-v2-sinhala-adapter
 - Modelo base: https://huggingface.co/Jainamshahhh/helalm-4b
 - Paper de SinhalaMMLU (EMNLP 2025): https://aclanthology.org/2025.emnlp-main.1673/

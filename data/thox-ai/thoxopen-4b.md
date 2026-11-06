@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxOpen-4B | 4B | 8.192 tokens (evaluado) | No (configuracion sobre Qwen3-4B) | Apache-2.0 | Ollama y HuggingFace |
-| Qwen/Qwen3-4B | 4B | No disponible en la informacion proporcionada | Si (modelo base) | Apache-2.0 | HuggingFace y Ollama (`qwen3:4b`) |
+| ThoxOpen-4B | 4B | 8.192 tokens (evaluado) | No (configuracion sobre Qwen3-4B) | Apache-2.0 | Ollama y Hugging Face |
+| Qwen/Qwen3-4B | 4B | No disponible en la informacion proporcionada | Si (modelo base) | Apache-2.0 | Hugging Face y Ollama (`qwen3:4b`) |
 | ThoxOpen-8B | 8B | No disponible | No (tier superior de la misma familia) | No disponible | No disponible |
 | ThoxOpen-14B | 14B | No disponible | No (tier superior de la misma familia) | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ La comparativa relevante es contra el propio Qwen3-4B: ThoxOpen-4B no mejora las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOpen-4B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOpen-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Tag de Ollama del base: `qwen3:4b` (digest `sha256:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7`)
 - Modelo publicado en Ollama: `Thox-ai/thoxopen-4b`

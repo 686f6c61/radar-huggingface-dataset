@@ -73,8 +73,8 @@ Las puntuaciones de generación libre se evalúan con un juez OCR Qwen3.6-35B-A3
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIXAR 477M stage 2 | 477M | hasta 32.768 bloques (entrenado en 180) | Píxeles, sin tokenizador | Apache 2.0 | HuggingFace |
-| MIXAR 477M stage 1 (`llama-pixar-477m-p32`) | 477M | hasta 32.768 bloques | Píxeles, sin tokenizador | Apache 2.0 | HuggingFace |
+| MIXAR 477M stage 2 | 477M | hasta 32.768 bloques (entrenado en 180) | Píxeles, sin tokenizador | Apache 2.0 | Hugging Face |
+| MIXAR 477M stage 1 (`llama-pixar-477m-p32`) | 477M | hasta 32.768 bloques | Píxeles, sin tokenizador | Apache 2.0 | Hugging Face |
 | Modelos transformer basados en tokens de ~500M | ~500M | variable, típicamente 2k-8k tokens | Tokenizador BPE | variable | Amplia |
 
 No se dispone de datos de benchmarks comparativos directos con alternativas de la misma categoría en la información proporcionada. La comparación con modelos basados en tokens debe hacerse con cautela, ya que las métricas de generación libre dependen de un juez OCR y no son directamente equiparables a las de modelos tokenizados.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos directos con alternativas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32-stage2
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32-stage2
 - Modelo de etapa 1: https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32
 - Repositorio de código: https://github.com/april-tools/mixar
 - Paper: https://arxiv.org/abs/2604.11575

@@ -58,6 +58,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junmokane/260816-junmo-cho-rbm-openarm-block
+- Repositorio Hugging Face: https://huggingface.co/junmokane/260816-junmo-cho-rbm-openarm-block
 - Modelo base (referenciado): https://huggingface.co/robometer/Robometer-4B
 - Paper citado en la model card (Lacoste et al., 2019, sobre estimación de emisiones): https://arxiv.org/abs/1910.09700

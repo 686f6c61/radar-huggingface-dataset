@@ -68,7 +68,7 @@ No disponible de forma directa. Se puede comparar con el modelo base `Qwen/Qwen3
 - Solo se ha publicado un paso intermedio (step 30 de 100); el comportamiento puede variar en pasos posteriores.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-healthbench-static-rl-step-030
+- Repositorio Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-healthbench-static-rl-step-030
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper de HealthBench: https://arxiv.org/abs/2505.08775
 - Qwen3-4B en Qualcomm AI Hub: https://aihub.qualcomm.com/models/qwen3_4b

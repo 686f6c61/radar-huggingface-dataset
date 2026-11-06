@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-smoke-v1-r0002-merge` es un modelo publicado en HuggingFace por el usuario mdagosta (Michael D'Agosta), cuyo perfil lo describe como desarrollador de sistemas de entrenamiento distribuido para modelos a medida. El nombre del repositorio sugiere un artefacto de tipo "smoke test" (prueba de humo) correspondiente a la version 1, revision r0002, generado mediante un proceso de merge de pesos. No se ha publicado informacion adicional sobre su proposito, su proceso de entrenamiento ni su rendimiento.
+`mdagosta/waldito-smoke-v1-r0002-merge` es un modelo publicado en Hugging Face por el usuario mdagosta (Michael D'Agosta), cuyo perfil lo describe como desarrollador de sistemas de entrenamiento distribuido para modelos a medida. El nombre del repositorio sugiere un artefacto de tipo "smoke test" (prueba de humo) correspondiente a la version 1, revision r0002, generado mediante un proceso de merge de pesos. No se ha publicado informacion adicional sobre su proposito, su proceso de entrenamiento ni su rendimiento.
 
 El dato mas relevante y verificable es el numero de parametros registrado en los metadatos de safetensors: 820.736 parametros totales. Se trata, por tanto, de un modelo extremadamente pequeno, tres ordenes de magnitud por debajo de un modelo de 1.000 millones de parametros. El tamano del repositorio figura como 0.0 GB, coherente con un checkpoint de menos de 4 MB en precision completa.
 
@@ -49,9 +49,9 @@ Dada la ausencia de documentacion, benchmarks y model card, no es posible recome
 
 - Pruebas de integracion de pipelines de inferencia: el modelo sirve como carga minima para verificar que un servidor (por ejemplo, TGI o vLLM en modo compatible con Llama) arranca, carga pesos safetensors y responde, sin consumir recursos de GPU relevantes.
 - Validacion de herramientas de merge: util para comprobar que una implementacion de fusion de checkpoints (mergekit u otra) produce un artefacto cargable y con el recuento de parametros esperado.
-- Test de humo en CI/CD: incluir el repositorio en un test automatizado que verifique la descarga desde HuggingFace, la integridad de los safetensors y la compatibilidad con la libreria `transformers`.
+- Test de humo en CI/CD: incluir el repositorio en un test automatizado que verifique la descarga desde Hugging Face, la integridad de los safetensors y la compatibilidad con la libreria `transformers`.
 - Reproduccion de experimentos de entrenamiento distribuido: el autor trabaja en sistemas de entrenamiento distribuido, por lo que este checkpoint podria formar parte de la validacion de una infraestructura de este tipo.
-- Docencia y materiales formativos: ejemplo minimo para explicar la estructura de un repositorio de modelo en HuggingFace.
+- Docencia y materiales formativos: ejemplo minimo para explicar la estructura de un repositorio de modelo en Hugging Face.
 - Pruebas de cuantizacion: banco de pruebas para validar conversiones a GGUF u otros formatos con un coste computacional despreciable.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo, analisis de documentos, agentes autonomos ni ninguna otra tarea que requiera calidad de salida, por ausencia total de evidencia de rendimiento.
@@ -78,7 +78,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mdagosta/waldito-smoke-v1-r0002-merge | 820.736 | no disponible | no disponible | HuggingFace, 8 descargas |
+| mdagosta/waldito-smoke-v1-r0002-merge | 820.736 | no disponible | no disponible | Hugging Face, 8 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-merge
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Repositorio en Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0002-merge
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta

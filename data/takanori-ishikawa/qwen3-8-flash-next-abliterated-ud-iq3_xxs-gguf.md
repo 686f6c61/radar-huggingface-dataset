@@ -89,7 +89,7 @@ El autor advierte que, con 50 preguntas a temperatura 1.0, las diferencias de un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/takanori-ishikawa/Qwen3.8-Flash-Next-Abliterated-UD-IQ3_XXS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/takanori-ishikawa/Qwen3.8-Flash-Next-Abliterated-UD-IQ3_XXS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización de Unsloth: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Dirección de rechazo (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored

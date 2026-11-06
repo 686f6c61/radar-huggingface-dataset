@@ -71,8 +71,8 @@ La model card indica expresamente que cualquier fila de benchmarks que aparezca 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| vcruz305/DSV4.1-Flash-EXL3-4.75bpw | 325.383.422.050 segun safetensors (tarjeta de 763B citada por el autor) | no disponible | EXL3 trellis, K mixto SAGE, 4,75 bpw | 453,1 GB | MIT | publico en HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | 763B segun la model card del pack (552B backbone + ~196B Engram) | no disponible | sin cuantizar | no disponible | MIT | publico en HuggingFace |
+| vcruz305/DSV4.1-Flash-EXL3-4.75bpw | 325.383.422.050 segun safetensors (tarjeta de 763B citada por el autor) | no disponible | EXL3 trellis, K mixto SAGE, 4,75 bpw | 453,1 GB | MIT | publico en Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-V4.1-Flash (modelo base) | 763B segun la model card del pack (552B backbone + ~196B Engram) | no disponible | sin cuantizar | no disponible | MIT | publico en Hugging Face |
 | Otras cuantizaciones de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para ninguna de las filas, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad. No se han identificado en la informacion proporcionada alternativas de otro autor que sean directamente comparables.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento para ninguna de las filas, por lo que la c
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/vcruz305/DSV4.1-Flash-EXL3-4.75bpw
+- Pack en Hugging Face: https://huggingface.co/vcruz305/DSV4.1-Flash-EXL3-4.75bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - ExLlamaV3 (repositorio): https://github.com/turboderp-org/exllamav3
 - Perfil del autor de la cuantizacion: https://huggingface.co/vcruz305

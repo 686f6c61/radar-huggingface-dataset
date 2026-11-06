@@ -38,7 +38,7 @@ Otros datos del repositorio:
 
 No aplica: no hay arquitectura de modelo ni proceso de entrenamiento. El repositorio es un artefacto de ingeniería de entorno. Su estructura incluye flujos de trabajo de ComfyUI (con subcarpetas `客製/` y `_歷史/`), notebooks de JupyterLab para lanzar utilidades como un expansor de prompts, SeedVC o ComfyUI Manager, scripts de arranque (`seedvc.sh`, `breeze_start.sh`, `llm/*.sh`, `etc_autodl.sh.bak`), parches con las versiones originales de ficheros modificados, ajustes de interfaz en `settings/comfy.settings.json` (etiquetas de ID de nodo y localización a chino tradicional) y una lista de 65 nodos personalizados con sus URL de git y commits completos, junto con `rebuild_custom_nodes.sh` para clonarlos en las mismas versiones.
 
-El flujo de restauración descrito por el autor consiste en: ejecutar `rebuild_custom_nodes.sh` o recuperar `custom_nodes/`; sobrescribir ficheros con los parches (por ejemplo, `ComfyUI-ReActor/scripts/reactor_sfw.py` para desactivar la comprobación NSFW, `ComfyUI-MieNodes/services/llm.py` para subir el timeout de 30 a 600, `ComfyUI-H3-Motion-Context/web/h3_motion_context.js` para localización, `ComfyUI-xiaozhuguang/web` y el paquete propio `vrgdg_h3_audiodrive`); copiar `workflows/` a `ComfyUI/user/default/workflows/`; copiar `settings/comfy.settings.json` a `ComfyUI/user/default/`; y restaurar los modelos según `models_清單.csv` o los repositorios de HuggingFace indicados. El autor advierte de que `ComfyUI-MieNodes/user_system_prompts.json`, con plantillas de prompts y vocabulario adulto, no está en este repositorio sino en el privado `chiangpei/comfyui-private`.
+El flujo de restauración descrito por el autor consiste en: ejecutar `rebuild_custom_nodes.sh` o recuperar `custom_nodes/`; sobrescribir ficheros con los parches (por ejemplo, `ComfyUI-ReActor/scripts/reactor_sfw.py` para desactivar la comprobación NSFW, `ComfyUI-MieNodes/services/llm.py` para subir el timeout de 30 a 600, `ComfyUI-H3-Motion-Context/web/h3_motion_context.js` para localización, `ComfyUI-xiaozhuguang/web` y el paquete propio `vrgdg_h3_audiodrive`); copiar `workflows/` a `ComfyUI/user/default/workflows/`; copiar `settings/comfy.settings.json` a `ComfyUI/user/default/`; y restaurar los modelos según `models_清單.csv` o los repositorios de Hugging Face indicados. El autor advierte de que `ComfyUI-MieNodes/user_system_prompts.json`, con plantillas de prompts y vocabulario adulto, no está en este repositorio sino en el privado `chiangpei/comfyui-private`.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No disponible. No existen modelos comparables porque `chiangpei/comfyui-setup` n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chiangpei/comfyui-setup
+- Repositorio en Hugging Face: https://huggingface.co/chiangpei/comfyui-setup
 - Repositorio privado referenciado por el autor: https://huggingface.co/chiangpei/comfyui-private
 - Repositorio público referenciado por el autor: https://huggingface.co/chiangpei/comfyui-public
 - ComfyUI (proyecto base): https://github.com/comfyanonymous/ComfyUI

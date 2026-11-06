@@ -86,7 +86,7 @@ Ambos comparten la misma arquitectura y dataset, diferenciándose solo en el alg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-erm-balsampling
+- Modelo en Hugging Face: https://huggingface.co/Minguinho-zeze/dialect-penalty-t2i-guardrail-erm-balsampling
 - Paper: https://arxiv.org/abs/2608.29589
 - Dataset: https://huggingface.co/datasets/Minguinho-zeze/dialect-penalty-t2i
 - Código oficial: https://github.com/minguinho26/dialect-penalty-t2i

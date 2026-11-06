@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/ZHUOZA/GLM-5.3-Flash-abliterated-Q2_K-q8hot
+- Hugging Face (este modelo): https://huggingface.co/ZHUOZA/GLM-5.3-Flash-abliterated-Q2_K-q8hot
 - Modelo de origen (abliterated): https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated
 - Cuantizaciones GGUF de origen: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF

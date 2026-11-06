@@ -78,7 +78,7 @@ No se dispone de información comparativa con otros modelos de embeddings de doc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftreg-r4-c512s512
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_dapfam-ftreg-r4-c512s512
 - Código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

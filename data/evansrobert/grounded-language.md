@@ -79,7 +79,7 @@ La comparacion no es significativa: el primer elemento es un cuaderno de notas y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/evansrobert/grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/evansrobert/grounded-language
 - Grounding and evaluation for large language models: practical considerations (arXiv 2407.12858): https://arxiv.org/html/2407.12858v1
 - How well do large language models truly ground? (arXiv 2311.09069): https://arxiv.org/abs/2311.09069
 - Presentacion del Grounded Language Model de Contextual AI: https://contextual.ai/blog/introducing-grounded-language-model

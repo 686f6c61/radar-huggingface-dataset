@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Team-GOAT/etch-ai-automation-MGN` es un repositorio publicado en HuggingFace por el usuario u organización Team-GOAT. La model card asociada es prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. No se ha publicado información sobre el pipeline de inferencia, los idiomas soportados ni el propósito del modelo.
+El modelo identificado como `Team-GOAT/etch-ai-automation-MGN` es un repositorio publicado en Hugging Face por el usuario u organización Team-GOAT. La model card asociada es prácticamente vacía: únicamente declara la licencia Apache 2.0 y no incluye descripción del modelo, arquitectura, datos de entrenamiento ni casos de uso previstos. No se ha publicado información sobre el pipeline de inferencia, los idiomas soportados ni el propósito del modelo.
 
 El nombre del repositorio sugiere un posible enfoque hacia automatización de IA ("ai-automation"), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. No hay evidencia en la información disponible de que el repositorio contenga pesos entrenados, un tokenizador o artefactos de inferencia utilizables; podría tratarse de un repositorio de trabajo, un placeholder o un proyecto en fase inicial.
 
@@ -44,7 +44,7 @@ No es posible enumerar casos de uso concretos y realistas sin información sobre
 - Integración en un pipeline de automatización: si el nombre del repositorio refleja su propósito real, podría emplearse en flujos de automatización, aunque no hay documentación que lo confirme.
 - Pruebas de licencia y cumplimiento: dado que la licencia Apache 2.0 está declarada explícitamente, podría evaluarse su incorporación a proyectos que requieran permisividad comercial, sujeto a verificación del contenido real.
 - Referencia para desarrollos internos: el equipo autor podría estar usando el repositorio como espacio de trabajo, sin que ello implique disponibilidad pública de un modelo funcional.
-- Auditoría de metadatos: investigadores podrían analizar el repositorio como ejemplo de publicación mínima en HuggingFace.
+- Auditoría de metadatos: investigadores podrían analizar el repositorio como ejemplo de publicación mínima en Hugging Face.
 - Seguimiento de versiones: dado que el repositorio se creó y actualizó en la misma fecha (2026-11-05), podría monitorizarse por si el autor publica documentación o pesos en el futuro.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Team-GOAT/etch-ai-automation-MGN | no disponible | no disponible | Apache 2.0 | Repositorio HuggingFace, 0 descargas |
+| Team-GOAT/etch-ai-automation-MGN | no disponible | no disponible | Apache 2.0 | Repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No es posible establecer una comparativa con modelos alternativos porque se desc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Team-GOAT/etch-ai-automation-MGN
+- Repositorio en Hugging Face: https://huggingface.co/Team-GOAT/etch-ai-automation-MGN
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

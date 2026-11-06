@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jprob-inson/matching-finetune` es un prototipo de investigación publicado en HuggingFace por el usuario Jprob-inson bajo licencia Apache 2.0. Se presenta como un "Tiny Transformer" orientado a tareas de matching, en una escala que el autor denomina "nano", con 24.832 parámetros totales según los datos reales del checkpoint en safetensors. No es un modelo entrenado ni un checkpoint de referencia: la propia model card lo describe como un checkpoint de inicialización válido para smoke tests, sin resultados de benchmarks ni métricas declaradas.
+`Jprob-inson/matching-finetune` es un prototipo de investigación publicado en Hugging Face por el usuario Jprob-inson bajo licencia Apache 2.0. Se presenta como un "Tiny Transformer" orientado a tareas de matching, en una escala que el autor denomina "nano", con 24.832 parámetros totales según los datos reales del checkpoint en safetensors. No es un modelo entrenado ni un checkpoint de referencia: la propia model card lo describe como un checkpoint de inicialización válido para smoke tests, sin resultados de benchmarks ni métricas declaradas.
 
 La relevancia del repositorio es, por tanto, documental y de ingeniería, no de rendimiento. Incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos iniciales (`model.safetensors`), lo que permite inspeccionar decisiones de diseño concretas: atención de ventana deslizante, fusión mediante concatenación y MLP, activación swish y normalización por grupos.
 
@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación ni 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jprob-inson/matching-finetune | 24.832 | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Jprob-inson/matching-finetune | 24.832 | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No se dispone de información sobre modelos comparables en la documentación ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jprob-inson/matching-finetune
+- Hugging Face: https://huggingface.co/Jprob-inson/matching-finetune
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web proporcionada.

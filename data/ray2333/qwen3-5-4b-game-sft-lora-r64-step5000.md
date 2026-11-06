@@ -87,7 +87,7 @@ No se dispone de comparaciones de rendimiento numéricas entre estas opciones: n
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step5000
+- Hugging Face del adaptador: https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step5000
 - Checkpoint anterior (step 4000): https://huggingface.co/Ray2333/Qwen3.5-4B-game-sft-lora-r64-step4000
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de fine-tuning de Qwen3.5-4B con LoRA r=128 (Axolotl): https://github.com/IIIIQIIII/qwen35-4b-lora-sft

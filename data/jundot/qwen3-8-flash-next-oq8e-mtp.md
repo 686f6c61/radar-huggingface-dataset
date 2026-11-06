@@ -85,10 +85,10 @@ Alternativas de terceros: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ8e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio de oQ / oMLX: https://github.com/jundot/omlx
 - Pull request de Improved oQe Quantization: https://github.com/jundot/omlx/pull/4385
-- Licencia: archivo LICENSE dentro del repositorio de HuggingFace
+- Licencia: archivo LICENSE dentro del repositorio de Hugging Face
 
 Nota: las busquedas web realizadas no han devuelto ninguna fuente relevante sobre este modelo ni sobre su arquitectura; los resultados obtenidos pertenecen a un sitio sin relacion con el contenido tecnico solicitado y se han descartado.

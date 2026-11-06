@@ -2,7 +2,7 @@
 
 ## Resumen
 
-soy-tica es un modelo publicado en HuggingFace por el usuario srwilliamhc bajo el identificador `srwilliamhc/soy-tica`, etiquetado como modelo de generación de texto (`text-generation`) para el idioma español y distribuido con licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene más información que una sección de instalación con el comando `pip install transformers torch accelerate`.
+soy-tica es un modelo publicado en Hugging Face por el usuario srwilliamhc bajo el identificador `srwilliamhc/soy-tica`, etiquetado como modelo de generación de texto (`text-generation`) para el idioma español y distribuido con licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 "likes", y su model card no contiene más información que una sección de instalación con el comando `pip install transformers torch accelerate`.
 
 No se dispone de datos sobre arquitectura, número de parámetros, longitud de contexto, composición del dataset de entrenamiento ni proceso de alineamiento. La única información técnica verificable procede de las etiquetas del repositorio: framework PyTorch, tarea de generación de texto, idioma español y licencia Apache 2.0.
 
@@ -78,6 +78,6 @@ No disponible. La búsqueda web realizada no ha devuelto información sobre este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srwilliamhc/soy-tica
+- Hugging Face: https://huggingface.co/srwilliamhc/soy-tica
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo. Las únicas URLs devueltas corresponden a la Universidad de Cambridge (https://www.cam.ac.uk/, https://www.cam.ac.uk/jobs, https://www.postgraduate.study.cam.ac.uk/, https://www.undergraduate.study.cam.ac.uk/, https://www.undergraduate.study.cam.ac.uk/apply) y no guardan relación con `soy-tica`.
 - Paper, blog, repositorio de código o demo: no disponibles.

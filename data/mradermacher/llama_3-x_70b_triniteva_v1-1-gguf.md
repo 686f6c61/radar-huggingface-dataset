@@ -83,7 +83,7 @@ La comparacion con Llama 3.1 70B Instruct es la mas informativa por tamano y fam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama_3.x_70b_TrinitEva_V1.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama_3.x_70b_TrinitEva_V1.1-GGUF
 - Modelo base: https://huggingface.co/Nexesenex/Llama_3.x_70b_TrinitEva_V1.1
 - Variante imatrix: https://huggingface.co/mradermacher/Llama_3.x_70b_TrinitEva_V1.1-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Llama_3.x_70b_TrinitEva_V1.1-GGUF

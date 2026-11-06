@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Umair1710/customer-churn-prediction es un clasificador tabular supervisado orientado a predecir la baja de clientes (churn) en operadores de telecomunicaciones. No es un modelo de lenguaje: se trata de un modelo de gradient boosting implementado con XGBoost, serializado junto a un `StandardScaler` de scikit-learn, que consume un vector de características tabulares procedente del dataset Telco Customer Churn de Kaggle (7.043 instancias y 21 características originales). El autor lo publica como repositorio de HuggingFace con la pipeline `tabular-classification`.
+Umair1710/customer-churn-prediction es un clasificador tabular supervisado orientado a predecir la baja de clientes (churn) en operadores de telecomunicaciones. No es un modelo de lenguaje: se trata de un modelo de gradient boosting implementado con XGBoost, serializado junto a un `StandardScaler` de scikit-learn, que consume un vector de características tabulares procedente del dataset Telco Customer Churn de Kaggle (7.043 instancias y 21 características originales). El autor lo publica como repositorio de Hugging Face con la pipeline `tabular-classification`.
 
 El objetivo declarado es identificar suscriptores con alto riesgo de cancelación antes de que se produzca la baja, priorizando el recall sobre la precisión: el coste de perder un cliente (LTV) se considera muy superior al coste de enviar una oferta de retención a un cliente que no pensaba irse. Con ese criterio, el modelo final alcanza un recall de 0,8102, un ROC-AUC de 0,8457 y un F1 de 0,6254 sobre el conjunto de test, según los datos declarados en la model card.
 
@@ -31,7 +31,7 @@ El conjunto de datos de origen es el Telco Customer Churn de Kaggle, con 7.043 i
 
 - Clasificación binaria tabular: predice la probabilidad de churn (clase 1) o no churn (clase 0) a partir de un vector de características de cliente.
 - Puntuación de riesgo orientada a recall: con el umbral y los pesos de clase empleados, captura 303 de los 374 casos reales de churn en la partición de test, según la model card.
-- Integración directa en pipelines de Python: el artefacto es un pickle cargable con `joblib` y descargable desde HuggingFace mediante `hf_hub_download`.
+- Integración directa en pipelines de Python: el artefacto es un pickle cargable con `joblib` y descargable desde Hugging Face mediante `hf_hub_download`.
 - Preprocesado autocontenido: el repositorio incluye el `scaler.pkl` entrenado sobre el conjunto de entrenamiento y el dataset preprocesado `telco_churn_preprocessed.csv`.
 - Interpretabilidad potencial por tratarse de un modelo de árboles, si bien no se documentan análisis SHAP ni importancias de variables.
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, generación de texto, código, matemáticas, visión ni audio. No dispone de modo de pensamiento ni de capacidades multilingües: es un clasificador tabular de dominio específico.
@@ -83,11 +83,11 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 ## Comparativa con modelos similares
 
-No se dispone de otros modelos publicados en HuggingFace con la misma combinación de dataset y tarea en la información proporcionada, por lo que la comparativa se limita a las alternativas evaluadas por el propio autor dentro de la model card.
+No se dispone de otros modelos publicados en Hugging Face con la misma combinación de dataset y tarea en la información proporcionada, por lo que la comparativa se limita a las alternativas evaluadas por el propio autor dentro de la model card.
 
 | Modelo | Algoritmo | Recall | ROC-AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| customer-churn-prediction (Umair1710) | XGBoost ajustado | 0,8102 | 0,8457 | MIT | HuggingFace |
+| customer-churn-prediction (Umair1710) | XGBoost ajustado | 0,8102 | 0,8457 | MIT | Hugging Face |
 | Alternativa con pesos balanceados del mismo estudio | Regresión logística | 0,7834 | 0,8417 | No disponible | No publicada como artefacto independiente |
 | Alternativa base del mismo estudio | Random forest | 0,4947 | 0,8271 | No disponible | No publicada como artefacto independiente |
 | Modelos comparables de terceros | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -107,7 +107,7 @@ No se dispone de otros modelos publicados en HuggingFace con la misma combinaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umair1710/customer-churn-prediction
+- Modelo en Hugging Face: https://huggingface.co/Umair1710/customer-churn-prediction
 - Dataset de origen citado en la model card: blastchar/telco-customer-churn (Kaggle Telco Customer Churn)
 - Paper: no disponible
 - Blog o artículo técnico: no disponible

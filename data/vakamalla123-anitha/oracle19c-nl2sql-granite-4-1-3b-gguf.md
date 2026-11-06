@@ -89,7 +89,7 @@ La comparativa se limita a modelos de la propia familia Granite porque no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-gguf
+- Modelo en Hugging Face: https://huggingface.co/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-gguf
 - Variante LoRA del mismo autor: https://huggingface.co/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-lora
 - Ficha de la variante LoRA en FriendliAI: https://friendli.ai/models/Vakamalla123-Anitha/oracle19c-nl2sql-granite-4.1-3b-lora
 - Pagina de Granite 4.1 en LM Studio: https://lmstudio.ai/models/granite-4.1

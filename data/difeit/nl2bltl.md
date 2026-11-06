@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `DifeiT/nl2bltl` es un modelo de generación de texto basado en la arquitectura Qwen2, con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones). Fue publicado en HuggingFace por el usuario DifeiT el 1 de septiembre de 2026, aunque la model card asociada está completamente vacía y no proporciona información sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados.
+El modelo `DifeiT/nl2bltl` es un modelo de generación de texto basado en la arquitectura Qwen2, con un total de 7.615.616.512 parámetros (aproximadamente 7,6 mil millones). Fue publicado en Hugging Face por el usuario DifeiT el 1 de septiembre de 2026, aunque la model card asociada está completamente vacía y no proporciona información sobre el proceso de entrenamiento, los datos utilizados, la licencia o los idiomas soportados.
 
 El nombre del repositorio, `nl2bltl`, sugiere una posible tarea de traducción o transformación entre lenguajes formales o naturales, aunque no hay documentación que lo confirme. La relevancia de este modelo reside principalmente en su arquitectura base Qwen2, que es conocida por su buen rendimiento en tareas de razonamiento y generación multilingüe, pero la ausencia total de documentación técnica impide evaluar sus capacidades específicas o su rendimiento real.
 
@@ -12,7 +12,7 @@ Cabe destacar que el modelo presenta 0 descargas y 0 likes en el momento de la c
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Qwen2 (basada en transformer, según tags de HuggingFace) |
+| Arquitectura | Qwen2 (basada en transformer, según tags de Hugging Face) |
 | Parametros totales | 7.615.616.512 (aproximadamente 7,6B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Cabe destacar que el modelo presenta 0 descargas y 0 likes en el momento de la c
 
 ## Arquitectura y entrenamiento
 
-La arquitectura del modelo está basada en Qwen2, según indican los tags de HuggingFace (`qwen2`). La familia Qwen2 de Alibaba emplea una arquitectura transformer decoder-only con attention de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE), características que probablemente hereda este modelo. Sin embargo, no se dispone de información oficial sobre la configuración exacta de capas, cabezas de atención o dimensiones ocultas.
+La arquitectura del modelo está basada en Qwen2, según indican los tags de Hugging Face (`qwen2`). La familia Qwen2 de Alibaba emplea una arquitectura transformer decoder-only con attention de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE), características que probablemente hereda este modelo. Sin embargo, no se dispone de información oficial sobre la configuración exacta de capas, cabezas de atención o dimensiones ocultas.
 
 En cuanto al entrenamiento, no hay datos disponibles sobre el número de tokens utilizados, la composición del dataset, ni si se aplicaron técnicas de RLHF, DPO o instrucción supervisada. La model card generada automáticamente no contiene ninguna sección completada con información útil. No se han documentado innovaciones técnicas específicas en este modelo concreto más allá de las inherentes a la arquitectura Qwen2 base.
 
@@ -61,7 +61,7 @@ Los requisitos se estiman a partir del tamaño del modelo (7,6B parámetros) y s
 - VRAM estimada para inferencia: aproximadamente 15 GB en fp16 (los pesos safetensors ocupan 15,2 GB en disco), y entre 4 y 8 GB en cuantizaciones de 4 u 8 bits.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100 o cualquier GPU con al menos 16 GB de VRAM para fp16 sin cuantizar.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama alta (RTX 3090/4090) con cuantización, y en GPUs de 24 GB en fp16.
-- Opciones de despliegue: al ser un modelo de transformers, es compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y el pipeline estándar de HuggingFace `text-generation`.
+- Opciones de despliegue: al ser un modelo de transformers, es compatible con vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y el pipeline estándar de Hugging Face `text-generation`.
 - Latencia y throughput: no disponible, depende del hardware y la configuración de despliegue.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ Dado que no hay información sobre el rendimiento de este modelo, la comparativa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DifeiT/nl2bltl | 7,6B | no disponible | no disponible | HuggingFace |
-| Qwen2-7B (oficial) | 7,6B | 32.768 tokens | Apache 2.0 | HuggingFace, amplia documentación |
-| Qwen2-7B-Instruct | 7,6B | 32.768 tokens | Apache 2.0 | HuggingFace, instrucciones y benchmarks |
+| DifeiT/nl2bltl | 7,6B | no disponible | no disponible | Hugging Face |
+| Qwen2-7B (oficial) | 7,6B | 32.768 tokens | Apache 2.0 | Hugging Face, amplia documentación |
+| Qwen2-7B-Instruct | 7,6B | 32.768 tokens | Apache 2.0 | Hugging Face, instrucciones y benchmarks |
 
 La comparación muestra que el modelo `nl2bltl` carece de la documentación y las garantías que ofrecen los modelos oficiales de Qwen, por lo que para uso en producción se recomienda optar por las versiones oficiales.
 
@@ -88,5 +88,5 @@ La comparación muestra que el modelo `nl2bltl` carece de la documentación y la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DifeiT/nl2bltl
+- Hugging Face: https://huggingface.co/DifeiT/nl2bltl
 - No se han encontrado papers, repositorios de código, demos o blogs asociados a este modelo en la búsqueda web. Los resultados obtenidos (DiffiT, Diffit, LLM Diff) no están relacionados con este modelo.

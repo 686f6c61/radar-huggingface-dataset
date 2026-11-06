@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `Tahahammadi/Cuckold` es un repositorio publicado en HuggingFace por el usuario Tahahammadi bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades; únicamente incluye la declaración de licencia. No se dispone de pipeline declarado, idiomas soportados ni etiquetas que permitan inferir su naturaleza o propósito.
+El modelo identificado como `Tahahammadi/Cuckold` es un repositorio publicado en Hugging Face por el usuario Tahahammadi bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades; únicamente incluye la declaración de licencia. No se dispone de pipeline declarado, idiomas soportados ni etiquetas que permitan inferir su naturaleza o propósito.
 
 Por tanto, no es posible determinar qué problema resuelve, qué arquitectura emplea ni cuál es su tamaño o longitud de contexto. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, lo que sugiere que se trata de una publicación reciente o sin difusión.
 
@@ -67,5 +67,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tahahammadi/Cuckold
+- Repositorio en Hugging Face: https://huggingface.co/Tahahammadi/Cuckold
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

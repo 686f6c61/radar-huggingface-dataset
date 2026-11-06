@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASDCX1DXSXA bajo el identificador ASDCX1DXSXA/MyAwesomeModel-TestRepo. Por el nombre del repositorio y por el hecho de que acumula 0 descargas y 0 likes en el momento de la consulta, todo apunta a un repositorio de pruebas o a una publicacion de caracter experimental, no a un modelo con adopcion real en la comunidad. La model card describe un asistente conversacional con modo de razonamiento ("thinking"), soporte de function calling y mejoras sustanciales en tareas de matematicas, programacion y logica respecto a una version anterior, pero no identifica al desarrollador real ni aporta especificaciones tecnicas verificables.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASDCX1DXSXA bajo el identificador ASDCX1DXSXA/MyAwesomeModel-TestRepo. Por el nombre del repositorio y por el hecho de que acumula 0 descargas y 0 likes en el momento de la consulta, todo apunta a un repositorio de pruebas o a una publicacion de caracter experimental, no a un modelo con adopcion real en la comunidad. La model card describe un asistente conversacional con modo de razonamiento ("thinking"), soporte de function calling y mejoras sustanciales en tareas de matematicas, programacion y logica respecto a una version anterior, pero no identifica al desarrollador real ni aporta especificaciones tecnicas verificables.
 
 La informacion disponible es internamente contradictoria. Las etiquetas del repositorio indican `bert`, `feature-extraction` y pipeline `feature-extraction`, lo que corresponderia a un modelo encoder de representaciones, mientras que la model card describe un modelo generativo de razonamiento con decodificacion extendida, plantillas de prompt para busqueda web y subida de ficheros, y recomendaciones de temperatura (0,6) propias de un LLM causal. Ademas, la model card esta truncada y los resultados de evaluacion que presenta usan nombres anonimizados (Model1, Model2, Model1-v2), sin identificar ni los benchmarks exactos ni los modelos de referencia.
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodolog
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se listan pesos GGUF, AWQ, GPTQ ni similares) |
-| Idiomas soportados | no disponible (el campo de idiomas esta vacio en HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas esta vacio en Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (se indica `pytorch` y `safetensors` no aparece en las etiquetas; la model card menciona un repositorio de codigo sin enlace) |
 | Libreria | transformers |
@@ -89,7 +89,7 @@ Advertencias sobre estos datos: no se especifica la version de los benchmarks, e
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la longitud de contexto, cualquier cifra seria una invencion.
 - GPU recomendadas: no disponible por la misma razon.
 - Viabilidad en GPU de consumo: no disponible. No se puede confirmar si cabe en una RTX 4090, 3090 o similar.
-- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y `endpoints_compatible`, por lo que en principio es cargable con la libreria transformers y desplegable en HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, TGI, llama.cpp, Ollama ni otros motores, ni de que existan pesos en formato GGUF o cuantizado.
+- Opciones de despliegue: el repositorio esta etiquetado como `transformers` y `endpoints_compatible`, por lo que en principio es cargable con la libreria transformers y desplegable en Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, TGI, llama.cpp, Ollama ni otros motores, ni de que existan pesos en formato GGUF o cuantizado.
 - Latencia y throughput estimados: no disponible. El unico indicio indirecto es el modo de razonamiento extendido, que con 23 000 tokens medios por respuesta implicaria latencias altas y un coste de computo elevado por consulta, especialmente si el modelo es grande.
 
 ## Comparativa con modelos similares
@@ -102,7 +102,7 @@ No disponible. La model card compara exclusivamente contra lineas base anonimiza
 | Parametros | no disponible | no disponible | no disponible | no disponible |
 | Contexto | no disponible | no disponible | no disponible | no disponible |
 | Licencia | MIT | no disponible | no disponible | no disponible |
-| Disponibilidad de pesos | repositorio en HuggingFace, 0 descargas | no disponible | no disponible | no disponible |
+| Disponibilidad de pesos | repositorio en Hugging Face, 0 descargas | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -119,7 +119,7 @@ No disponible. La model card compara exclusivamente contra lineas base anonimiza
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDCX1DXSXA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASDCX1DXSXA/MyAwesomeModel-TestRepo
 - Web oficial del modelo: mencionada en la model card sin URL concreta (no disponible)
 - Repositorio de codigo: mencionado en la model card sin URL concreta (no disponible)
 - Paper o informe tecnico: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vega 0.8B (public intents) es un modelo de decisión tipada desarrollado por el usuario nandakishorm y publicado en HuggingFace. No es un modelo de lenguaje generativo al uso: el LLM que lo sustenta, Qwen/Qwen3.5-0.8B, permanece congelado y nunca se entrena; todo el aprendizaje reside en un pequeño motor entrenado de 14.342.512 parámetros (57 MB) más un adaptador de tarea de 835.937 parámetros que se superpone a él. El repositorio incluye además una variante de 4B, apoyada en Qwen/Qwen3.5-4B con un motor de 30.879.088 parámetros (124 MB) y un adaptador de 1.431.905 parámetros.
+Vega 0.8B (public intents) es un modelo de decisión tipada desarrollado por el usuario nandakishorm y publicado en Hugging Face. No es un modelo de lenguaje generativo al uso: el LLM que lo sustenta, Qwen/Qwen3.5-0.8B, permanece congelado y nunca se entrena; todo el aprendizaje reside en un pequeño motor entrenado de 14.342.512 parámetros (57 MB) más un adaptador de tarea de 835.937 parámetros que se superpone a él. El repositorio incluye además una variante de 4B, apoyada en Qwen/Qwen3.5-4B con un motor de 30.879.088 parámetros (124 MB) y un adaptador de 1.431.905 parámetros.
 
 El modelo resuelve tareas de clasificación y decisión con salidas tipadas (choice, boolean y score), con una ventana de contexto declarada de 73.728 tokens y una ruta multimodal que reutiliza el codificador de visión del backbone congelado. Su propuesta diferencial es que un modelo local de 0,8B, ejecutable en una T4 o en un portátil Apple, supera a un modelo alojado de referencia (Jev 1.13.0) en tareas concretas de cribado de phishing, razonamiento temporal y numérico, según las evaluaciones publicadas por el autor.
 
@@ -94,10 +94,10 @@ El autor reporta una diferencia de +13,50 puntos de exactitud y 2,5 veces más p
 
 | Modelo | Parametros | Contexto | typed-decisions (con adaptador) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vega 0.8B public intents | 0,8B congelados + 14,3 M entrenados + 0,84 M de adaptador | 73.728 tokens | 0,763 | Apache 2.0 | HuggingFace, librería vegaml |
+| Vega 0.8B public intents | 0,8B congelados + 14,3 M entrenados + 0,84 M de adaptador | 73.728 tokens | 0,763 | Apache 2.0 | Hugging Face, librería vegaml |
 | Vega 4B public intents | 4B congelados + 30,9 M entrenados + 1,43 M de adaptador | 73.728 tokens | 0,803 | Apache 2.0 | En la carpeta 4b/ del mismo repositorio |
 | Jev 1.13.0 | no disponible (modelo alojado, parametros no divulgados) | no disponible | no disponible en typed-decisions; 61,88 de exactitud en phishing y 20,0 en temporal_numeric | no disponible | Servicio alojado, invocado en vivo por el autor |
-| Qwen3.5-0.8B | 0,8B (24 capas, d=1024), 262.144 posiciones rotatorias | no disponible | no disponible (se usa congelado como backbone) | no disponible | HuggingFace |
+| Qwen3.5-0.8B | 0,8B (24 capas, d=1024), 262.144 posiciones rotatorias | no disponible | no disponible (se usa congelado como backbone) | no disponible | Hugging Face |
 
 No se dispone de resultados comparables de otros clasificadores ligeros o modelos de intenciones en la información proporcionada.
 
@@ -115,7 +115,7 @@ No se dispone de resultados comparables de otros clasificadores ligeros o modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nandakishorm/vega-08b-public-intents
+- Modelo en Hugging Face: https://huggingface.co/nandakishorm/vega-08b-public-intents
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Cuaderno de Colab: https://colab.research.google.com/drive/1ZxS_Ee4-oyfo8ePKiAgbehv5I1Rh3F7O?usp=sharing
 - Paper referenciado en las etiquetas: https://arxiv.org/abs/2507.19855

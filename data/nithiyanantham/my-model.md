@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MY-MODEL es un repositorio publicado en HuggingFace por el usuario NITHIYANANTHAM bajo el identificador `NITHIYANANTHAM/MY-MODEL`. La informacion disponible publicamente es practicamente inexistente: la model card unicamente contiene la declaracion de licencia (`gpl-3.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene pipeline declarado, no especifica idiomas soportados y no presenta ninguna documentacion tecnica adicional.
+MY-MODEL es un repositorio publicado en Hugging Face por el usuario NITHIYANANTHAM bajo el identificador `NITHIYANANTHAM/MY-MODEL`. La informacion disponible publicamente es practicamente inexistente: la model card unicamente contiene la declaracion de licencia (`gpl-3.0`) y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no tiene pipeline declarado, no especifica idiomas soportados y no presenta ninguna documentacion tecnica adicional.
 
 En el momento de la consulta el modelo acumula 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (2026-09-19T14:26:41.000Z), lo que sugiere que se trata de un artefacto subido sin revision posterior ni mantenimiento. Los resultados de la busqueda web realizada no guardan ninguna relacion con el modelo: son documentos legales en chino tradicional sobre normativa medioambiental y aduanera de Taiwan, por lo que no aportan informacion tecnica util.
 
@@ -73,6 +73,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NITHIYANANTHAM/MY-MODEL
+- Hugging Face: https://huggingface.co/NITHIYANANTHAM/MY-MODEL
 - Resultados de busqueda web: no relevantes para el modelo (documentos legales en chino tradicional sobre normativa medioambiental y aduanera de Taiwan, sin relacion con el repositorio).
 - Paper, blog, repositorio de codigo o demo: no disponible.

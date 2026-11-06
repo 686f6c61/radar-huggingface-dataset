@@ -102,7 +102,7 @@ La diferencia practica mas relevante es la ventana de contexto: los tres alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usezn/Galvanize-60M
+- Modelo en Hugging Face: https://huggingface.co/usezn/Galvanize-60M
 - Modelo base ModernBERT: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper de referencia (ModernBERT): https://arxiv.org/abs/2412.13663
 

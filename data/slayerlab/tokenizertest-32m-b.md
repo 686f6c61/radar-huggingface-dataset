@@ -83,8 +83,8 @@ Otros datos declarados: bytes por token en entrenamiento 3,96 (B) frente a 4,25 
 
 | Modelo | Parametros | Contexto | Tokenizer | Bits por byte (val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SlayerLab/TokenizerTest-32m-B | 38,87M | 1024 | stubbornGuy BPE, vocab 32.000 (`77eeebed`) | 1,0622 | CC BY-SA 4.0 | HuggingFace, pesos fp32 + checkpoints |
-| SlayerLab/TokenizerTest-32m-A | 38,87M | 1024 | Fabryka AI BPE, vocab 32.000 (`60e23148`) | 1,0583 | CC BY-SA 4.0 | HuggingFace, pesos fp32 + checkpoints |
+| SlayerLab/TokenizerTest-32m-B | 38,87M | 1024 | stubbornGuy BPE, vocab 32.000 (`77eeebed`) | 1,0622 | CC BY-SA 4.0 | Hugging Face, pesos fp32 + checkpoints |
+| SlayerLab/TokenizerTest-32m-A | 38,87M | 1024 | Fabryka AI BPE, vocab 32.000 (`60e23148`) | 1,0583 | CC BY-SA 4.0 | Hugging Face, pesos fp32 + checkpoints |
 | Otros modelos base pequenos en polaco | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion significativa disponible es la del brazo A, que es el companero experimental directo. No se dispone de datos verificables sobre alternativas de terceros con los que contrastar parametros, contexto o rendimiento, por lo que no se incluyen cifras que no puedan confirmarse.
@@ -102,7 +102,7 @@ La unica comparacion significativa disponible es la del brazo A, que es el compa
 - No se han publicado evaluaciones de seguridad, sesgo o toxicidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/SlayerLab/TokenizerTest-32m-B
+- Modelo en Hugging Face: https://huggingface.co/SlayerLab/TokenizerTest-32m-B
 - Brazo A del experimento (tokenizer Fabryka AI): https://huggingface.co/SlayerLab/TokenizerTest-32m-A
 - Dataset de entrenamiento: https://huggingface.co/datasets/SlayerLab/slayer-pl-8x3b
 - Modelo con el que comparte codigo de arquitectura: https://huggingface.co/SlayerLab/GoLLeM-v6-250M

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Travor278/pi05-place-dual-shoes-left-first-peer-lora-10k-e158` es un checkpoint de inferencia publicado en HuggingFace por el usuario Travor278, perteneciente a la serie de entrenamiento en simulacion denominada Sim12. Se trata de una politica de robotica de la familia pi0.5 (etiqueta `pi05`), empaquetada con la libreria `openpi` y almacenada en formato nativo JAX/Orbax, no en safetensors ni GGUF. El checkpoint corresponde a la tarea concreta "place-dual-shoes-left-first", es decir, la colocacion de un par de zapatos colocando primero el izquierdo, y se ha obtenido mediante un ajuste fino con receta LoRA tras 10.000 actualizaciones del optimizador.
+El modelo `Travor278/pi05-place-dual-shoes-left-first-peer-lora-10k-e158` es un checkpoint de inferencia publicado en Hugging Face por el usuario Travor278, perteneciente a la serie de entrenamiento en simulacion denominada Sim12. Se trata de una politica de robotica de la familia pi0.5 (etiqueta `pi05`), empaquetada con la libreria `openpi` y almacenada en formato nativo JAX/Orbax, no en safetensors ni GGUF. El checkpoint corresponde a la tarea concreta "place-dual-shoes-left-first", es decir, la colocacion de un par de zapatos colocando primero el izquierdo, y se ha obtenido mediante un ajuste fino con receta LoRA tras 10.000 actualizaciones del optimizador.
 
 El modelo resuelve el problema de generar acciones motoras (posiciones articulares) a partir de observaciones visuales y de estado del robot, con un horizonte de accion declarado de 50 pasos. Es relevante en el contexto de investigacion en vision-lenguaje-accion (VLA) porque publica un checkpoint de inferencia completo, con los parametros del modelo y los activos de normalizacion emparejados, junto con un manifiesto de ficheros y verificacion SHA-256, lo que facilita la reproducibilidad de la receta. El autor indica explicitamente que no es un modelo Transformers/safetensors y que no se ha realizado ninguna conversion de formato.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Familia | Formato de pesos | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-place-dual-shoes-left-first-peer-lora-10k-e158 | pi0.5 (openpi) | JAX/Orbax | Colocacion de par de zapatos (izquierdo primero) | no disponible | Publico en HuggingFace, 0 descargas |
+| pi05-place-dual-shoes-left-first-peer-lora-10k-e158 | pi0.5 (openpi) | JAX/Orbax | Colocacion de par de zapatos (izquierdo primero) | no disponible | Publico en Hugging Face, 0 descargas |
 | Modelos base de la familia pi0.5 (openpi) | pi0.5 (openpi) | JAX/Orbax | Politicas VLA generalistas | no disponible | Referenciados por la libreria `openpi` |
 | Otras recetas de la serie Sim12 del mismo autor | pi0.5 (openpi) | JAX/Orbax | Tareas especificas de manipulacion | no disponible | No identificadas en la informacion proporcionada |
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos comparados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-place-dual-shoes-left-first-peer-lora-10k-e158
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-place-dual-shoes-left-first-peer-lora-10k-e158
 - Dataset de entrenamiento: `Shiki42/ctr-place-dual-shoes-left-first-20260911`, revision `04d72a4c1770fa4699a4c8630b41484b33f18c54`
 - Panel de evaluacion: https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Fuente OpenPI de PI0.5: mencionada en la model card como requisito; no se proporciona URL en la informacion disponible

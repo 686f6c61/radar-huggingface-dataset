@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `catgat/digits-recognizer` es un clasificador de dígitos manuscritos (0-9) desarrollado con Keras, presumiblemente entrenado sobre el conjunto de datos MNIST. El repositorio en HuggingFace no contiene archivos de pesos ni documentación técnica más allá de la licencia MIT, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que el modelo no ha sido subido o que se trata de un proyecto en fase inicial. A pesar de la escasez de información, el nombre y los tags (`keras`, `license:mit`) indican que se trata de un modelo de red neuronal convolucional (CNN) típico para reconocimiento de dígitos, un problema clásico de visión por computadora.
+El modelo `catgat/digits-recognizer` es un clasificador de dígitos manuscritos (0-9) desarrollado con Keras, presumiblemente entrenado sobre el conjunto de datos MNIST. El repositorio en Hugging Face no contiene archivos de pesos ni documentación técnica más allá de la licencia MIT, y el tamaño del repositorio es de 0.0 GB, lo que sugiere que el modelo no ha sido subido o que se trata de un proyecto en fase inicial. A pesar de la escasez de información, el nombre y los tags (`keras`, `license:mit`) indican que se trata de un modelo de red neuronal convolucional (CNN) típico para reconocimiento de dígitos, un problema clásico de visión por computadora.
 
 La relevancia de este modelo radica en su simplicidad y en que sirve como punto de partida para desarrolladores que quieran experimentar con clasificación de imágenes en Keras. Sin embargo, al no haber pesos publicados ni métricas, su utilidad práctica es limitada hasta que se complete el repositorio. No se dispone de información sobre arquitectura, tamaño, contexto o idiomas soportados.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. Existen numerosos clasificadores de dígitos MNIST en HuggingFace (por ejemplo, modelos basados en LeNet, ResNet o MobileNet), pero sin datos de este modelo concreto no se puede establecer una comparación objetiva.
+No se dispone de información suficiente para realizar una comparativa con otros modelos. Existen numerosos clasificadores de dígitos MNIST en Hugging Face (por ejemplo, modelos basados en LeNet, ResNet o MobileNet), pero sin datos de este modelo concreto no se puede establecer una comparación objetiva.
 
 ## Limitaciones y advertencias
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - catgat/digits-recognizer](https://huggingface.co/catgat/digits-recognizer)
+- [Hugging Face - catgat/digits-recognizer](https://huggingface.co/catgat/digits-recognizer)
 - [Digit Recognition WebApp - GitHub Pages](https://maneprajakta.github.io/Digit_Recognition_Web_App/)
 - [Digit Recognizer - Kaggle](https://www.kaggle.com/c/digit-recognizer/)
 - [NeuroWrite: Predictive Handwritten Digit Classification using Deep Neural Networks (arXiv)](https://arxiv.org/pdf/2311.01022)

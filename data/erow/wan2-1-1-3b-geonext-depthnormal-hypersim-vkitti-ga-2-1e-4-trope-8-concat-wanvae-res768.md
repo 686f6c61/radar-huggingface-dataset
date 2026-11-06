@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al ser un modelo de 1.3B parametros, requiere aproximadamente 3-4 GB de VRAM en fp16 para inferencia. Con cuantizacion a 8 bits, podria reducirse a unos 2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1660 Super, RTX 2060, RTX 3050 o superiores. El modelo base Wan2.1-T2V-1.3B esta disenado para GPUs de consumo.
 - Compatibilidad con consumer GPU: si, es compatible con la mayoria de GPUs de consumo actuales.
-- Opciones de despliegue: al ser un modelo de difusion, puede ejecutarse con el codigo oficial de Wan2.1 (GitHub), o mediante frameworks como Diffusers de HuggingFace si se adapta. Para inferencia mas rapida, se puede usar TensorRT o cuantizacion con herramientas como bitsandbytes.
+- Opciones de despliegue: al ser un modelo de difusion, puede ejecutarse con el codigo oficial de Wan2.1 (GitHub), o mediante frameworks como Diffusers de Hugging Face si se adapta. Para inferencia mas rapida, se puede usar TensorRT o cuantizacion con herramientas como bitsandbytes.
 - Latencia y throughput: no disponible. La generacion de video con modelos de difusion suele tardar varios segundos por clip, dependiendo de la GPU y la resolucion.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos directamente comparables que realicen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erow/WAN2.1-1.3b-GeoNeXt-depthnormal-hypersim-vkitti-ga-2-1e-4-TROPE-8-concat-wanvae-res768
+- Modelo en Hugging Face: https://huggingface.co/erow/WAN2.1-1.3b-GeoNeXt-depthnormal-hypersim-vkitti-ga-2-1e-4-TROPE-8-concat-wanvae-res768
 - Modelo base Wan2.1-T2V-1.3B: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Repositorio oficial de Wan2.1: https://github.com/Wan-Video/Wan2.1
 - Dataset Virtual KITTI 2: https://europe.naverlabs.com/proxy-virtual-worlds-vkitti-2/

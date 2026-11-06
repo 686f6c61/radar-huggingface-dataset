@@ -109,4 +109,4 @@ No se dispone de información sobre alternativas de 8B directamente comparables 
 - ggml: https://github.com/ggml-org/ggml
 - Build MLX 8-bit del mismo modelo: https://huggingface.co/netprojects/Nemotron-3.5-Rerank-8B-mlx-8bit
 - NetProjects: https://netprojects.com
-- Ficheros de paridad mencionados en la model card: `parity.csv`, `parity_native.csv`, `rerank_wrapper.py`, `native-rerank.patch`, `score_weight.npy`, `NOTICE`, `THIRD_PARTY_NOTICES.md`, `LICENSE` (incluidos en el repositorio de HuggingFace)
+- Ficheros de paridad mencionados en la model card: `parity.csv`, `parity_native.csv`, `rerank_wrapper.py`, `native-rerank.patch`, `score_weight.npy`, `NOTICE`, `THIRD_PARTY_NOTICES.md`, `LICENSE` (incluidos en el repositorio de Hugging Face)

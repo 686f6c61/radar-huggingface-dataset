@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coercer/BatchTagger es un modelo publicado en HuggingFace por el usuario Coercer. La información disponible es extremadamente limitada: la model card apenas contiene un aviso que redirige a una implementación en Google Colab y da crédito al proyecto original, RedRocket/JointTaggerProject. El repositorio ocupa 53.3 GB, lo que sugiere un modelo de gran tamaño, pero no se especifica arquitectura, número de parámetros, contexto ni idiomas. No se dispone de documentación técnica, licencia ni benchmarks. El modelo fue creado el 10 de febrero de 2025 y actualizado el 4 de septiembre de 2026.
+Coercer/BatchTagger es un modelo publicado en Hugging Face por el usuario Coercer. La información disponible es extremadamente limitada: la model card apenas contiene un aviso que redirige a una implementación en Google Colab y da crédito al proyecto original, RedRocket/JointTaggerProject. El repositorio ocupa 53.3 GB, lo que sugiere un modelo de gran tamaño, pero no se especifica arquitectura, número de parámetros, contexto ni idiomas. No se dispone de documentación técnica, licencia ni benchmarks. El modelo fue creado el 10 de febrero de 2025 y actualizado el 4 de septiembre de 2026.
 
 Dada la ausencia de información en la model card y en los resultados de búsqueda, no es posible determinar con certeza qué tarea realiza exactamente este modelo. El nombre "BatchTagger" y la referencia a "JointTaggerProject" apuntan a un sistema de etiquetado por lotes, pero no hay datos que confirmen su funcionamiento ni sus capacidades.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables con la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Coercer/BatchTagger
+- Hugging Face: https://huggingface.co/Coercer/BatchTagger
 - Implementación en Colab: https://colab.research.google.com/drive/1DKT5rFBTHhkyibVMK4SCYTJWHl2kaV3p?usp=sharing
 - Proyecto original: https://huggingface.co/RedRocket/JointTaggerProject

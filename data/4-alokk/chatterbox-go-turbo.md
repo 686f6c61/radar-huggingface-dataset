@@ -97,6 +97,6 @@ No se dispone de información sobre otros modelos TTS comparables (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/4-alokk/chatterbox-go-turbo
+- Repositorio Hugging Face: https://huggingface.co/4-alokk/chatterbox-go-turbo
 - Modelo base: https://huggingface.co/ResembleAI/chatterbox-turbo
 - Exportación ONNX oficial: https://huggingface.co/ResembleAI/chatterbox-turbo-ONNX

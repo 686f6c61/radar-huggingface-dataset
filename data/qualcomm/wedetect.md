@@ -107,7 +107,7 @@ Nota: las alternativas se enumeran por categoría funcional; no se dispone de su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualcomm/WeDetect
+- Modelo en Hugging Face: https://huggingface.co/qualcomm/WeDetect
 - Implementación de referencia WeDetect (WeChatCV): https://github.com/WeChatCV/WeDetect
 - WeDetect en Qualcomm AI Hub Models (v0.64.0): https://github.com/qualcomm/ai-hub-models/blob/v0.64.0/src/qai_hub_models/models/wedetect
 - Repositorio Qualcomm AI Hub Models: https://github.com/qualcomm/ai-hub-models

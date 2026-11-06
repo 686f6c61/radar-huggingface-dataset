@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| kitten-tts-v2-onnx-packed | no disponible | no disponible | stellon-labs-community-license | ONNX | HuggingFace (0 descargas) |
+| kitten-tts-v2-onnx-packed | no disponible | no disponible | stellon-labs-community-license | ONNX | Hugging Face (0 descargas) |
 | Modelo base kitten-tts-v2 | no disponible | no disponible | no disponible | no disponible | no disponible en la información |
 | Alternativas TTS open source (p. ej. Coqui TTS, Piper, Kokoro) | no disponible | no disponible | varía | varía | no disponible en la información |
 
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa técnica rigurosa con al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/holgern/kitten-tts-v2-onnx-packed
+- Hugging Face: https://huggingface.co/holgern/kitten-tts-v2-onnx-packed
 - Licencia: https://huggingface.co/holgern/kitten-tts-v2-onnx-packed/blob/main/LICENSE
 - Modelo base kitten-tts-v2: no disponible en la información proporcionada
 - Paper, blog o repositorio del autor original: no disponible en la información proporcionada

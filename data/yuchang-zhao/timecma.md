@@ -4,7 +4,7 @@
 
 TimeCMA es un framework de código abierto para el pronóstico multivariado de series temporales (MTSF, por sus siglas en inglés) presentado en AAAI 2025 por investigadores de la Universidad Tecnológica de Nanyang y colaboradores. Su propuesta central es combinar un modelo de lenguaje de gran tamaño (LLM) con un codificador de series temporales mediante un mecanismo de alineación cross-modality, de forma que se obtienen representaciones temporales que son a la vez disentangled (propias de la rama de series) y robustas (aportadas por el LLM). El framework está diseñado para reducir el coste computacional al forzar que la información temporal esencial se condense en el último token del prompt textual, permitiendo además el almacenamiento de embeddings para acelerar la inferencia.
 
-Este repositorio en HuggingFace contiene el código de referencia, no un modelo preentrenado como tal. Es una implementación de investigación, con scripts para almacenamiento de embeddings, entrenamiento e inferencia sobre ocho conjuntos de datos reales. Su relevancia radica en que aborda una limitación detectada en métodos previos basados en LLM: la dificultad de aprender embeddings disentangled para series temporales. TimeCMA propone un enfoque de doble rama que supera esta limitación mediante alineación cruzada de modalidades.
+Este repositorio en Hugging Face contiene el código de referencia, no un modelo preentrenado como tal. Es una implementación de investigación, con scripts para almacenamiento de embeddings, entrenamiento e inferencia sobre ocho conjuntos de datos reales. Su relevancia radica en que aborda una limitación detectada en métodos previos basados en LLM: la dificultad de aprender embeddings disentangled para series temporales. TimeCMA propone un enfoque de doble rama que supera esta limitación mediante alineación cruzada de modalidades.
 
 ## Especificaciones técnicas
 
@@ -82,7 +82,7 @@ TimeCMA destaca por su módulo de alineación, que permite obtener embeddings m�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Yuchang-Zhao/TimeCMA
+- Hugging Face: https://huggingface.co/Yuchang-Zhao/TimeCMA
 - Paper arXiv: https://arxiv.org/abs/2406.01638
 - Versión HTML del paper: https://arxiv.org/html/2406.01638v5
 - Código GitHub: https://github.com/Haha13145/TimeCMA

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nextaura-qwen2.5-0.5b-v2 es un ajuste fino supervisado (SFT) de parámetros completos sobre Qwen/Qwen2.5-0.5B-Instruct, desarrollado por NextAura Inc. (autor en HuggingFace: Mlopeznxtaura). Con 494.032.768 parámetros (aproximadamente 0,5 mil millones) y una ventana de contexto heredada de su modelo base, se posiciona como un asistente conversacional de tamano muy reducido, entrenado especificamente para responder sobre los proyectos, aplicaciones y decisiones de ingenieria de NextAura, asi como sobre hitos de la historia de la inteligencia artificial.
+nextaura-qwen2.5-0.5b-v2 es un ajuste fino supervisado (SFT) de parámetros completos sobre Qwen/Qwen2.5-0.5B-Instruct, desarrollado por NextAura Inc. (autor en Hugging Face: Mlopeznxtaura). Con 494.032.768 parámetros (aproximadamente 0,5 mil millones) y una ventana de contexto heredada de su modelo base, se posiciona como un asistente conversacional de tamano muy reducido, entrenado especificamente para responder sobre los proyectos, aplicaciones y decisiones de ingenieria de NextAura, asi como sobre hitos de la historia de la inteligencia artificial.
 
 El modelo parte de una arquitectura transformer decoder-only de tipo Qwen2 y se entrena sobre un corpus diminuto y curado a mano: 1.849 ejemplos de entrenamiento y 97 de validacion con formato de chat. El objetivo declarado no es competir en capacidad general, sino internalizar una identidad y un dominio muy concretos (material de NextAura e historia de la IA) sobre un modelo pequeno que quepa en hardware de consumo. Es la version v2 del proyecto, que sustituye a una v1 retirada por problemas de formato de datos y por no partir de un modelo instruct.
 
@@ -96,5 +96,5 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mlopeznxtaura/nextaura-qwen2.5-0.5b-v2
+- Modelo en Hugging Face: https://huggingface.co/Mlopeznxtaura/nextaura-qwen2.5-0.5b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

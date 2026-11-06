@@ -58,7 +58,7 @@ No se dispone de informacion suficiente para comparar directamente este checkpoi
 - Licencia Apache 2.0 permite uso comercial, pero se debe verificar que el VAE de Wan2.1 tenga una licencia compatible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/PencilHu/DreamDojo-Jokeru-2B-SelfForcing
+- Modelo en Hugging Face: https://huggingface.co/PencilHu/DreamDojo-Jokeru-2B-SelfForcing
 - Repositorio oficial de DreamDojo (NVIDIA): https://github.com/nvidia/DreamDojo
 - Pagina del proyecto DreamDojo: https://dreamdojo-world.github.io/
 - Paper (arXiv:2506.08009): https://arxiv.org/abs/2506.08009

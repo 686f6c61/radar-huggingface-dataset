@@ -95,7 +95,7 @@ No se dispone de datos de otros métodos de cuantización (AWQ, GPTQ, etc.) apli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-GRAFT-3bpw
+- Repositorio en Hugging Face: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-GRAFT-3bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Versión EXL3 de 3 bpw del mismo autor: https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-EXL3-3bpw
 - Paper y código de GRAFT (Grid-Aligned FP4 Trellis Quantization for FP4-Native Language Models): https://github.com/coolbho3k/GRAFT

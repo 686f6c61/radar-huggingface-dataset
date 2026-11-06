@@ -6,7 +6,7 @@ canary-contracts es un motor determinista de evaluacion de salidas de LLM public
 
 El artefacto cubre 12 comprobadores agrupados por contrato: `json_valid`, `schema`, `must_contain`, `must_not_contain`, `max_tokens`, `max_chars`, `no_pii`, `no_secrets`, `no_system_leak`, `must_refuse`, `grounded` y `stable`. Ademas incluye un registro de versiones de prompts, ejecucion de runs, comparacion entre versiones y una puerta de CI (`gate`) que devuelve veredictos como `block`. Cada veredicto se acompana de evidencia: posiciones de coincidencia, PII enmascarada, fragmentos solapados o afirmaciones no soportadas.
 
-Es relevante ahora porque cubre una necesidad concreta en el ciclo de desarrollo de aplicaciones con LLM: regresion y guardrails reproducibles, versionables y ejecutables en una sola CPU, sin GPU ni coste por token. Su publicacion en HuggingFace responde a la idea de versionar, diffear y bifurcar las comprobaciones como cualquier otro artefacto. La evaluacion declarada sobre un split held-out de 217 casos (153 en ingles y 64 en japones) reporta un 96,3 % de exactitud, con un punto debil explicito en el comprobador `must_refuse` (86,0 %).
+Es relevante ahora porque cubre una necesidad concreta en el ciclo de desarrollo de aplicaciones con LLM: regresion y guardrails reproducibles, versionables y ejecutables en una sola CPU, sin GPU ni coste por token. Su publicacion en Hugging Face responde a la idea de versionar, diffear y bifurcar las comprobaciones como cualquier otro artefacto. La evaluacion declarada sobre un split held-out de 217 casos (153 en ingles y 64 en japones) reporta un 96,3 % de exactitud, con un punto debil explicito en el comprobador `must_refuse` (86,0 %).
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Es relevante ahora porque cubre una necesidad concreta en el ciclo de desarrollo
 | Paquetes de contratos incluidos | `baseline-critical`, `json-api`, `support-assistant`, `safety-refusals`, `japanese-business` |
 | Ficheros adicionales | `examples/quickstart.py`, `eval_results_test.json`, `eval_results_dev.json` |
 | Dataset de evaluacion | `NagaYu/canary-eval` (split held-out de test) |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-27 / 2026-09-27 |
 
 ## Arquitectura y entrenamiento
@@ -98,7 +98,7 @@ No se han publicado en la informacion disponible datos de benchmarks comparativo
 
 | Herramienta | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| canary-contracts | Reglas deterministas, 12 comprobadores, ejecucion en CPU | no aplica | no aplica | Apache-2.0 | HuggingFace y GitHub |
+| canary-contracts | Reglas deterministas, 12 comprobadores, ejecucion en CPU | no aplica | no aplica | Apache-2.0 | Hugging Face y GitHub |
 | Guardrails AI | Validadores programaticos sobre salidas de LLM | no disponible | no disponible | no disponible | no disponible |
 | NVIDIA NeMo Guardrails | Orquestacion de guardrails y flujos de dialogo | no disponible | no disponible | no disponible | no disponible |
 | Juez LLM (p. ej. Prometheus o similares) | Evaluacion semantica mediante un modelo generativo | no disponible | no disponible | no disponible | no disponible |
@@ -116,14 +116,14 @@ Diferencias cualitativas que si se desprenden de la documentacion: canary-contra
 - Ejecucion de regex con limite: las expresiones del usuario corren en un proceso trabajador con 2 segundos de limite y devuelven `error` si este no arranca; en macOS y Windows hay que ejecutar el codigo como fichero, no por stdin.
 - Cobertura de evaluacion limitada: 217 casos (153 en ingles y 64 en japones), con solo 113 violaciones y 50 casos de `must_refuse`, por lo que las metricas tienen intervalos de confianza amplios.
 - Datos no verificados: las metricas del `model-index` figuran con `verified: false`, es decir, son declaraciones del autor y no una evaluacion independiente.
-- Adopcion no contrastada: 0 descargas y 0 likes en HuggingFace en la fecha de actualizacion, sin evidencia publica de uso en produccion.
+- Adopcion no contrastada: 0 descargas y 0 likes en Hugging Face en la fecha de actualizacion, sin evidencia publica de uso en produccion.
 - Licencia: Apache-2.0, que permite uso comercial, pero conviene revisar los terminos de los datos de evaluacion (`NagaYu/canary-eval`) si se reutilizan sus casos.
 - La model card no documenta sesgos especificos ni tasas de alucinacion del propio artefacto; al no generar texto, la alucinacion aplica a los sistemas evaluados, no al motor.
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los resultados obtenidos eran contenido no pertinente y de caracter adulto, sin relacion con el artefacto, por lo que no se han usado como fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NagaYu/canary-contracts
+- Modelo en Hugging Face: https://huggingface.co/NagaYu/canary-contracts
 - Dataset de evaluacion: https://huggingface.co/datasets/NagaYu/canary-eval
 - Listado de los ocho fallos de `must_refuse`: https://huggingface.co/datasets/NagaYu/canary-eval#every-miss
 - Repositorio del proyecto Canary: https://github.com/NagaYu/canary

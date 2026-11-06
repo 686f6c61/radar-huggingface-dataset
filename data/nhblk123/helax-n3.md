@@ -45,7 +45,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Requisitos de hardware
 
-No disponibles. Al desconocerse el tamaño del modelo, no es posible estimar la VRAM necesaria, las GPUs recomendadas ni las opciones de despliegue. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No disponibles. Al desconocerse el tamaño del modelo, no es posible estimar la VRAM necesaria, las GPUs recomendadas ni las opciones de despliegue. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Comparativa con modelos similares
 
@@ -61,5 +61,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (modelos
 
 ## Enlaces
 
-- [HuggingFace: nhblk123/helax-n3](https://huggingface.co/nhblk123/helax-n3)
+- [Hugging Face: nhblk123/helax-n3](https://huggingface.co/nhblk123/helax-n3)
 - Dataset: [NVEagle/LocateAnything-Data](https://huggingface.co/datasets/NVEagle/LocateAnything-Data) (referenciado en la model card, sin enlace directo)

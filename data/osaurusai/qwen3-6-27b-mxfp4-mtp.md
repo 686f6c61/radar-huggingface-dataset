@@ -93,7 +93,7 @@ La variante MXFP4 es la más ligera y la más rápida en speedup MTP entre las d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Qwen3.6-27B-MXFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Qwen3.6-27B-MXFP4-MTP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Variante MXFP8: https://huggingface.co/OsaurusAI/Qwen3.6-27B-MXFP8-MTP
 - Variante MoE MXFP4: https://huggingface.co/OsaurusAI/Qwen3.6-35B-A3B-MXFP4-MTP

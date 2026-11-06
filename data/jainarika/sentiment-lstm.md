@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sentiment-lstm` es un clasificador binario de sentimiento (positivo / negativo) para reseñas de películas, publicado en HuggingFace por el usuario `jainarika` bajo licencia MIT. No es un modelo generativo ni un LLM: es una red neuronal recurrente de tamaño muy reducido entrenada desde cero con Keras sobre el conjunto de datos IMDB, con el objetivo concreto de asignar una probabilidad de sentimiento a un texto de entrada.
+`sentiment-lstm` es un clasificador binario de sentimiento (positivo / negativo) para reseñas de películas, publicado en Hugging Face por el usuario `jainarika` bajo licencia MIT. No es un modelo generativo ni un LLM: es una red neuronal recurrente de tamaño muy reducido entrenada desde cero con Keras sobre el conjunto de datos IMDB, con el objetivo concreto de asignar una probabilidad de sentimiento a un texto de entrada.
 
 La arquitectura descrita en la model card es una pila secuencial: una capa de embedding con vocabulario de 20.000 palabras y padding enmascarado, seguida de `SpatialDropout`, dos capas LSTM bidireccionales apiladas, una capa densa y una activación sigmoide. Las reseñas se limpian, se tokenizan y se rellenan (padding) hasta 400 tokens antes de entrar al modelo. El autor reporta una única métrica: 66,80 % de accuracy en el conjunto de test, un valor bajo para la tarea, ya que los baselines clásicos sobre IMDB suelen superar holgadamente ese rango.
 
@@ -74,8 +74,8 @@ El autor únicamente publica un resultado: accuracy de 66,80 % en el conjunto de
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Accuracy reportada | Disponibilidad |
 |---|---|---|---|---|---|---|
 | jainarika/sentiment-lstm | BiLSTM (Keras) | No disponible (~3-10 M estimados) | 400 tokens fijos | MIT | 66,80 % en IMDB | Repositorio de 0,0 GB, 0 descargas |
-| distilbert-base-uncased-finetuned-sst-2-english | Transformer encoder destilado | ~67 M | ~512 tokens | Apache 2.0 | No disponible en la información proporcionada | Ampliamente disponible en HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | Transformer encoder (RoBERTa base) | ~125 M | ~512 tokens | No disponible en la información proporcionada | No disponible en la información proporcionada | Ampliamente disponible en HuggingFace |
+| distilbert-base-uncased-finetuned-sst-2-english | Transformer encoder destilado | ~67 M | ~512 tokens | Apache 2.0 | No disponible en la información proporcionada | Ampliamente disponible en Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | Transformer encoder (RoBERTa base) | ~125 M | ~512 tokens | No disponible en la información proporcionada | No disponible en la información proporcionada | Ampliamente disponible en Hugging Face |
 | Baseline TF-IDF + regresión logística | Modelo lineal clásico | No disponible | No aplica | No aplica | No disponible en la información proporcionada | Implementable con scikit-learn |
 
 Los datos de parámetros y contexto de los modelos comparados son valores de referencia generales de esas arquitecturas; sus métricas concretas no se han verificado en la información proporcionada. En cualquier caso, la comparación cualitativa es clara: las alternativas basadas en transformer ofrecen contexto más largo, mejor tratamiento de vocabulario abierto (tokenización por subpalabras frente al vocabulario cerrado de 20.000 palabras) y, previsiblemente, mayor precisión, a cambio de un coste de inferencia mayor.
@@ -95,6 +95,6 @@ Los datos de parámetros y contexto de los modelos comparados son valores de ref
 
 ## Enlaces
 
-- [Modelo en HuggingFace: jainarika/sentiment-lstm](https://huggingface.co/jainarika/sentiment-lstm)
-- [Conjunto de datos stanfordnlp/imdb en HuggingFace](https://huggingface.co/datasets/stanfordnlp/imdb)
+- [Modelo en Hugging Face: jainarika/sentiment-lstm](https://huggingface.co/jainarika/sentiment-lstm)
+- [Conjunto de datos stanfordnlp/imdb en Hugging Face](https://huggingface.co/datasets/stanfordnlp/imdb)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este modelo.

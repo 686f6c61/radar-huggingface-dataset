@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Diwatt/tiro-scribe-models` es un repositorio de modelos publicado por el usuario Diwatt en HuggingFace, distribuido bajo licencia MIT y orientado a despliegue en entornos de inferencia ligera. Los tags del repositorio indican formatos ONNX y ExecuTorch, lo que sugiere que el contenido esta pensado para ejecucion en dispositivos de borde o integracion en aplicaciones nativas mas que para servidores de GPU de gran escala. El tamano del repositorio es de 4,3 GB.
+`Diwatt/tiro-scribe-models` es un repositorio de modelos publicado por el usuario Diwatt en Hugging Face, distribuido bajo licencia MIT y orientado a despliegue en entornos de inferencia ligera. Los tags del repositorio indican formatos ONNX y ExecuTorch, lo que sugiere que el contenido esta pensado para ejecucion en dispositivos de borde o integracion en aplicaciones nativas mas que para servidores de GPU de gran escala. El tamano del repositorio es de 4,3 GB.
 
 La model card publicada por el autor no contiene informacion tecnica sustantiva: unicamente incluye la declaracion de licencia MIT, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni benchmarks. No se dispone de pipeline declarado, idiomas soportados ni resultados de evaluacion. Cualquier dato sobre parametros, contexto o rendimiento debe considerarse no disponible a partir de la informacion proporcionada.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de informacion sobre el tamano, la tarea ni el rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Diwatt/tiro-scribe-models
+- Repositorio en Hugging Face: https://huggingface.co/Diwatt/tiro-scribe-models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

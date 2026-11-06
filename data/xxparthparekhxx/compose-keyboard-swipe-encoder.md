@@ -78,8 +78,8 @@ No se dispone de informacion comparativa con otros modelos de decodificacion de 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/xxparthparekhxx/compose-keyboard-swipe-encoder)
+- [Modelo en Hugging Face](https://huggingface.co/xxparthparekhxx/compose-keyboard-swipe-encoder)
 - [Repositorio del teclado Compose Keyboard](https://github.com/xxparthparekhxx/keyboard)
 - [Dataset FUTO Swipe Gesture Dataset](https://huggingface.co/datasets/futo-org/swipe.futo.org)
-- [Perfil de HuggingFace del autor](https://huggingface.co/xxparthparekhxx)
+- [Perfil de Hugging Face del autor](https://huggingface.co/xxparthparekhxx)
 - [Perfil de GitHub del autor](https://github.com/xxparthparekhxx/)

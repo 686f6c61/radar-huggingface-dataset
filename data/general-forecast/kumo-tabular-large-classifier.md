@@ -78,13 +78,13 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí existe riesgo de calibración incorrecta de las probabilidades de clase en dominios alejados de los datos de entrenamiento del modelo original.
 - Límite de clases: la red emite probabilidades sobre un máximo de 10 clases; tareas con más categorías quedan fuera de su alcance tal y como se describe.
 - Limitación de contexto e idioma: no se documenta longitud de contexto ni soporte de idiomas; es un modelo tabular, no lingüístico.
-- Restricciones de licencia: se distribuye bajo OpenMDW 1.1 y la model card conserva el aviso de copyright de NVIDIA y el texto de licencia en el fichero `LICENSE`. Conviene revisar OpenMDW 1.1 antes de un uso comercial, ya que la etiqueta de HuggingFace figura como `license: other`.
+- Restricciones de licencia: se distribuye bajo OpenMDW 1.1 y la model card conserva el aviso de copyright de NVIDIA y el texto de licencia en el fichero `LICENSE`. Conviene revisar OpenMDW 1.1 antes de un uso comercial, ya que la etiqueta de Hugging Face figura como `license: other`.
 - Trazabilidad: los pesos no han sido modificados, por lo que cualquier limitación del modelo original de NVIDIA se hereda íntegramente.
 - Advertencia para producción: el repositorio registra 0 descargas y 0 valoraciones, y la librería `gfi` es específica del ecosistema generalforecast; conviene validar el pipeline de carga y la paridad numérica con el modelo PyTorch original antes de desplegarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/general-forecast/kumo-tabular-large-classifier
+- Modelo en Hugging Face: https://huggingface.co/general-forecast/kumo-tabular-large-classifier
 - Modelo base: https://huggingface.co/nvidia/Kumo-Tabular
 - Librería gfi: https://github.com/generalforecast/gfi
 - Repositorio de NVIDIA structured-data-models: https://github.com/NVIDIA/structured-data-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-R868612/ai es un repositorio alojado en HuggingFace por el usuario R868612 que, segun los metadatos publicos disponibles, no contiene informacion sustantiva sobre ningun modelo: la model card unicamente incluye la declaracion de licencia `apache-2.0` sin cuerpo de texto, no se declara pipeline de inferencia, no se especifican idiomas soportados y el repositorio registra cero descargas y cero valoraciones. No hay ficheros de pesos, configuracion, tokenizador ni documentacion tecnica referenciados en la informacion proporcionada.
+R868612/ai es un repositorio alojado en Hugging Face por el usuario R868612 que, segun los metadatos publicos disponibles, no contiene informacion sustantiva sobre ningun modelo: la model card unicamente incluye la declaracion de licencia `apache-2.0` sin cuerpo de texto, no se declara pipeline de inferencia, no se especifican idiomas soportados y el repositorio registra cero descargas y cero valoraciones. No hay ficheros de pesos, configuracion, tokenizador ni documentacion tecnica referenciados en la informacion proporcionada.
 
 Por este motivo, no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni las capacidades reales del supuesto modelo. La unica informacion verificable es la licencia declarada (Apache 2.0), la region de publicacion (`us`) y las marcas temporales de creacion y ultima actualizacion, ambas el 29 de septiembre de 2026.
 
@@ -39,7 +39,7 @@ No existe informacion sobre el volumen de tokens de entrenamiento, la composicio
 ## Casos de uso
 
 - No disponible: sin especificaciones tecnicas publicadas ni pesos descargables no es posible definir casos de uso fundamentados.
-- Evaluacion de repositorios vacios: el unico uso realista del enlace es como ejemplo de publicacion incompleta en HuggingFace, util para auditar practicas de publicacion de modelos.
+- Evaluacion de repositorios vacios: el unico uso realista del enlace es como ejemplo de publicacion incompleta en Hugging Face, util para auditar practicas de publicacion de modelos.
 - Monitorizacion de repositorios: podria integrarse en un pipeline que detecte repositorios sin artefactos ni model card para marcarlos como no aptos.
 - No se pueden proponer casos de generacion de texto, codigo, atencion al cliente, RAG, agentes o analisis documental porque no hay evidencia de que el modelo exista o funcione.
 - No procede estimar integracion en CI/CD, pipelines de datos ni despliegues en produccion.
@@ -76,7 +76,7 @@ No disponible. Al no conocerse parametros, contexto, licencia efectiva de uso ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/R868612/ai
+- Repositorio en Hugging Face: https://huggingface.co/R868612/ai
 - Models.dev, base de datos de modelos: https://models.dev/
 - LLM Stats, ranking de modelos: https://llm-stats.com/
 - AI Model Vulnerability Tracker 2026: https://axis-intelligence.com/research/ai-model-vulnerability-tracker/

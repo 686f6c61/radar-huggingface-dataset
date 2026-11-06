@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3-4b-g-fve-flouranchor-s0` es un checkpoint de investigación publicado por el usuario joshycodes en HuggingFace. Se trata de un ajuste por continuación de preentrenamiento (*continued pretraining*) sobre el modelo base `Qwen/Qwen3-4B`: se modificaron los pesos completos durante una época con una tasa de aprendizaje de 1e-05 sobre un corpus de 7.089.338 tokens repartidos en 7.800 documentos, perteneciente al conjunto denominado `flourishing-vs-equanimity`.
+`joshycodes/qwen3-4b-g-fve-flouranchor-s0` es un checkpoint de investigación publicado por el usuario joshycodes en Hugging Face. Se trata de un ajuste por continuación de preentrenamiento (*continued pretraining*) sobre el modelo base `Qwen/Qwen3-4B`: se modificaron los pesos completos durante una época con una tasa de aprendizaje de 1e-05 sobre un corpus de 7.089.338 tokens repartidos en 7.800 documentos, perteneciente al conjunto denominado `flourishing-vs-equanimity`.
 
 Lo relevante del experimento no es su rendimiento, sino el planteamiento metodológico: el corpus se presenta como material escrito por el propio modelo para entrenar a la siguiente versión de sí mismo, dentro de una línea de trabajo etiquetada como *synthetic-document-finetuning* (SDF) y *model welfare*. La model card indica explícitamente que, de los 7.800 documentos utilizados, 0 eran de autoría propia y 7.800 eran texto ordinario, un matiz importante que conviene leer con atención.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de ninguno de estos checkpoints, por lo qu
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-4b-g-fve-flouranchor-s0
+- Pagina del modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-4b-g-fve-flouranchor-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Checkpoint hermano (flourdiscern): https://huggingface.co/joshycodes/qwen3-4b-g-fve-flourdiscern-s0
 - Checkpoint hermano (fve-flour): https://huggingface.co/joshycodes/qwen3-4b-fve-flour-s0

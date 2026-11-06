@@ -81,8 +81,8 @@ Estas pruebas se ejecutaron en un Apple M3 Ultra con MLX 0.32.4, con semilla 42 
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-5bit (esta ficha) | 2,17B | no disponible | Texto, audio, imagen (entrada y salida de audio) | LFM 1.0 | MLX, HuggingFace |
-| LFM3-Omni-2B (base original) | no disponible en la información | no disponible | Texto, audio, imagen | LFM 1.0 | HuggingFace, pesos sin cuantizar |
+| LFM3-Omni-2B-5bit (esta ficha) | 2,17B | no disponible | Texto, audio, imagen (entrada y salida de audio) | LFM 1.0 | MLX, Hugging Face |
+| LFM3-Omni-2B (base original) | no disponible en la información | no disponible | Texto, audio, imagen | LFM 1.0 | Hugging Face, pesos sin cuantizar |
 | Alternativas omni-modales de ~2B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de otros modelos comparables con los que contrastar parámetros, contexto o rendimiento; la comparación principal posible es frente al checkpoint original sin cuantizar, del que esta versión se diferencia por la cuantización de 5 bits y el formato MLX.
@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de datos de otros modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nativ-community/LFM3-Omni-2B-5bit
+- Modelo en Hugging Face: https://huggingface.co/nativ-community/LFM3-Omni-2B-5bit
 - Modelo base: https://huggingface.co/lq-preview/LFM3-Omni-2B/tree/101fb44635e88fd5ceb09508610bc559149286e8
 - Implementación de inferencia (mlx-vlm): https://github.com/Blaizzy/mlx-vlm/commit/3070dcc31948f48f9d8639b606af7bc019494fac
 - Repositorio mlx-vlm: https://github.com/Blaizzy/mlx-vlm

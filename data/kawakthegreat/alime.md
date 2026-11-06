@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alime es un repositorio de modelo alojado en HuggingFace bajo el identificador KawakTheGreat/Alime, publicado por el usuario KawakTheGreat. En el momento de la consulta, la informacion publica disponible se limita a la licencia (Apache 2.0), la region declarada (us) y las fechas de creacion y actualizacion (17 de septiembre de 2026). No se especifica pipeline, idiomas soportados, arquitectura, tamano ni formato de pesos.
+Alime es un repositorio de modelo alojado en Hugging Face bajo el identificador KawakTheGreat/Alime, publicado por el usuario KawakTheGreat. En el momento de la consulta, la informacion publica disponible se limita a la licencia (Apache 2.0), la region declarada (us) y las fechas de creacion y actualizacion (17 de septiembre de 2026). No se especifica pipeline, idiomas soportados, arquitectura, tamano ni formato de pesos.
 
 La model card del repositorio contiene unicamente el encabezado de licencia, sin descripcion tecnica, sin documentacion de entrenamiento y sin ejemplos de uso. El repositorio registra 0 descargas y 0 likes, lo que indica que no existe validacion por parte de la comunidad ni evidencia de uso en produccion.
 
@@ -95,6 +95,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KawakTheGreat/Alime
+- Repositorio en Hugging Face: https://huggingface.co/KawakTheGreat/Alime
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas realizadas devuelven exclusivamente hilos de foros ferroviarios (RailUK Forums) sin relacion alguna con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

@@ -87,8 +87,8 @@ Ademas, el autor reporta que en builds de 4 bits y sin decodificacion restringid
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Devseis Endpoint Auditor 0.5B (v0.1) | ~0,5 B | No indicado (heredado del base) | 100 % JSON valido, 100 % grounded, 87 % fields match | Apache-2.0 | HuggingFace, formato MLC para WebLLM |
-| Qwen2.5-0.5B-Instruct (base) | ~0,5 B | No indicado en la informacion disponible | 0 % JSON valido, 0 % grounded | Apache-2.0 | HuggingFace, runtime MLX/MLC/varios |
+| Devseis Endpoint Auditor 0.5B (v0.1) | ~0,5 B | No indicado (heredado del base) | 100 % JSON valido, 100 % grounded, 87 % fields match | Apache-2.0 | Hugging Face, formato MLC para WebLLM |
+| Qwen2.5-0.5B-Instruct (base) | ~0,5 B | No indicado en la informacion disponible | 0 % JSON valido, 0 % grounded | Apache-2.0 | Hugging Face, runtime MLX/MLC/varios |
 | Otros modelos de auditoria de endpoints de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Modelo generalista de 1-3B (alternativa para la misma tarea) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Devseis/endpoint-auditor-0.5b-q0f16-MLC
+- Modelo en Hugging Face: https://huggingface.co/Devseis/endpoint-auditor-0.5b-q0f16-MLC
 - Modelo base (referenciado): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Devseis/endpoint-auditor-synthetic
 - Space de la aplicacion (Devseis Endpoint Auditor): https://huggingface.co/spaces/Devseis/endpoint-auditor

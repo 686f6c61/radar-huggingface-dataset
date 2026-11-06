@@ -61,9 +61,9 @@ No se dispone de datos comparativos publicados para este modelo concreto. Como r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACT (este modelo) | 51,7M | no disponible | Apache 2.0 | HuggingFace |
+| ACT (este modelo) | 51,7M | no disponible | Apache 2.0 | Hugging Face |
 | Diffusion Policy | variable (tipicamente 50-100M) | no disponible | MIT | GitHub |
-| RDT (Robotics Diffusion Transformer) | 1.2B | 2048 tokens | MIT | HuggingFace |
+| RDT (Robotics Diffusion Transformer) | 1.2B | 2048 tokens | MIT | Hugging Face |
 
 Sin embargo, no hay benchmarks públicos que permitan una comparación cuantitativa justa, por lo que se recomienda evaluar cada modelo en la tarea específica.
 
@@ -79,7 +79,7 @@ Sin embargo, no hay benchmarks públicos que permitan una comparación cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maedmatt/DREAM_ACT_filtered_b96
+- Modelo en Hugging Face: https://huggingface.co/maedmatt/DREAM_ACT_filtered_b96
 - Paper original de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Dataset de entrenamiento: https://huggingface.co/datasets/maedmatt/DREAM-pyramid-circles
 - LeRobot (framework): https://github.com/huggingface/lerobot

@@ -68,12 +68,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, single 384, 21 reciclados | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2 | 93,283 M | MSA 256, pares 128, single 384, 4 reciclados | AGPL-3.0 | HuggingFace (oteam) |
-| oteam/alphafold2-ptm | 93,292 M | MSA 256, pares 128, single 384, 4 reciclados | AGPL-3.0 | HuggingFace (oteam) |
+| oteam/alphafold2-multimer | 93,278 M | MSA 256, pares 128, single 384, 21 reciclados | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2 | 93,283 M | MSA 256, pares 128, single 384, 4 reciclados | AGPL-3.0 | Hugging Face (oteam) |
+| oteam/alphafold2-ptm | 93,292 M | MSA 256, pares 128, single 384, 4 reciclados | AGPL-3.0 | Hugging Face (oteam) |
 | google-deepmind/alphafold (oficial) | no disponible en la información | no disponible | no disponible en la información | Repositorio oficial en GitHub |
 
-Las variantes monómero de OFoldX comparten arquitectura y tamaño con este checkpoint, pero no modelan complejos multi-cadena y usan 4 pasos de reciclado frente a 21. La implementación oficial de DeepMind no se distribuye como checkpoint en HuggingFace según la información disponible.
+Las variantes monómero de OFoldX comparten arquitectura y tamaño con este checkpoint, pero no modelan complejos multi-cadena y usan 4 pasos de reciclado frente a 21. La implementación oficial de DeepMind no se distribuye como checkpoint en Hugging Face según la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Las variantes monómero de OFoldX comparten arquitectura y tamaño con este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/alphafold2-multimer
+- Modelo en Hugging Face: https://huggingface.co/oteam/alphafold2-multimer
 - Variante monómero: https://huggingface.co/oteam/alphafold2
 - Variante monómero con pTM y PAE: https://huggingface.co/oteam/alphafold2-ptm
 - Variante CASP14: https://huggingface.co/oteam/alphafold2-casp14

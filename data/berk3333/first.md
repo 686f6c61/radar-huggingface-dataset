@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `berk3333/first` es un repositorio publicado en HuggingFace por el usuario `berk3333`. Se trata de un artefacto de pesos de gran tamano (101,4 GB en el repositorio), lo que sugiere un modelo de decenas de miles de millones de parametros en precision completa o media, aunque no se dispone de informacion oficial sobre su arquitectura, parametros exactos ni proposito.
+El modelo `berk3333/first` es un repositorio publicado en Hugging Face por el usuario `berk3333`. Se trata de un artefacto de pesos de gran tamano (101,4 GB en el repositorio), lo que sugiere un modelo de decenas de miles de millones de parametros en precision completa o media, aunque no se dispone de informacion oficial sobre su arquitectura, parametros exactos ni proposito.
 
 La ficha publica carece de metadatos esenciales: no se declara pipeline, licencia, idiomas soportados ni documentacion tecnica. El nombre "first" y la ausencia de model card apuntan a un experimento personal o a una publicacion preliminar sin curacion, mas que a un modelo listo para produccion.
 
@@ -74,4 +74,4 @@ No disponible. Al no conocerse parametros, contexto ni licencia, no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/berk3333/first
+- Repositorio en Hugging Face: https://huggingface.co/berk3333/first

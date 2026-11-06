@@ -85,7 +85,7 @@ La comparativa se basa en características públicas de modelos de tamano simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keras/ministral_3_14b_base_2512_en
+- Modelo en Hugging Face: https://huggingface.co/keras/ministral_3_14b_base_2512_en
 - Documentación de Mistral3 en KerasHub: https://keras.io/api/keras_hub/models/mistral3
 - Documentación de Keras: https://keras.io/
 - Keras 3 (multi-backend): https://keras.io/keras_3/

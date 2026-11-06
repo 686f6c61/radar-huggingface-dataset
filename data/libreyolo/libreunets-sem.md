@@ -76,7 +76,7 @@ No se dispone de datos comparativos publicados en la información proporcionada 
 
 | Modelo | Categoría | Parámetros | Resolución de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreUNets-sem | U-Net S5-D16 + FCN, semántica 19 clases | no disponible | 512x1024 en entrenamiento, lienzo 1024x2048 | Apache 2.0 | HuggingFace, librería `libreyolo` |
+| LibreUNets-sem | U-Net S5-D16 + FCN, semántica 19 clases | no disponible | 512x1024 en entrenamiento, lienzo 1024x2048 | Apache 2.0 | Hugging Face, librería `libreyolo` |
 | `fcn_unet_s5-d16` (mmsegmentation) | Mismos pesos que el modelo anterior | no disponible | idéntica | Apache 2.0 | Repositorio de mmsegmentation |
 | SegFormer / DeepLabV3+ (mmsegmentation) | Alternativas de segmentación semántica | no disponible | no disponible | Apache 2.0 (código de mmsegmentation) | Repositorio de mmsegmentation |
 
@@ -96,7 +96,7 @@ En la práctica, LibreUNets-sem y el checkpoint oficial de mmsegmentation son el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreUNets-sem
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreUNets-sem
 - Repositorio de LibreYOLO (incluye `weights/convert_unet_weights.py`): https://github.com/LibreYOLO/libreyolo
 - mmsegmentation (commit de origen `b040e147adfa`): https://github.com/open-mmlab/mmsegmentation
 - Dataset Cityscapes: https://www.cityscapes-dataset.com/

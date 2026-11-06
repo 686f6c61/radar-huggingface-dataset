@@ -28,7 +28,7 @@ Se distribuye como pesos en formato ESPnet (`model.pth`, 479 claves) más `confi
 
 ## Arquitectura y entrenamiento
 
-El modelo reutiliza el encoder-decoder de Whisper-small y lo adapta a la tarea multi-talker mediante serialized-output-training. En lugar de generar una transcripción por hablante o depender de un diarizador externo, la salida es una secuencia única que intercala el texto de todas las intervenciones con un token de cambio de hablante y timestamps estilo Whisper asociados a cada uno. Los pesos se distribuyen en el formato nativo de ESPnet (`model.pth` con 479 claves), por lo que no son cargables directamente con la librería `transformers` de HuggingFace.
+El modelo reutiliza el encoder-decoder de Whisper-small y lo adapta a la tarea multi-talker mediante serialized-output-training. En lugar de generar una transcripción por hablante o depender de un diarizador externo, la salida es una secuencia única que intercala el texto de todas las intervenciones con un token de cambio de hablante y timestamps estilo Whisper asociados a cada uno. Los pesos se distribuyen en el formato nativo de ESPnet (`model.pth` con 479 claves), por lo que no son cargables directamente con la librería `transformers` de Hugging Face.
 
 El entrenamiento se realiza sobre el corpus AMI de reuniones, con evaluación sobre AMI SDM (single distant microphone) y configuración de decodificación beam = 5 y temperature = 0. La model card no detalla el número de tokens de audio vistos, la composición exacta del dataset ni si se aplicaron etapas de RLHF o DPO; esos datos no están disponibles. La innovación principal es, por tanto, el esquema de serialización de hablantes sobre un backbone Whisper congelado en su arquitectura original, no una modificación estructural del transformer.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de otros benchmarks (WER estándar, MMLU, HumanEv
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Rendimiento en AMI | Disponibilidad |
 |---|---|---|---|---|---|---|
-| espnet/multi-talker-whisper-small-ami | ~244 M | Ventanas de 30 s | ASR multi-talker con serialized-output-training | cc-by-4.0 | cpWER overall 27,95 %; DER overall 9,84 % | Pesos ESPnet en HuggingFace, requiere receta ESPnet |
+| espnet/multi-talker-whisper-small-ami | ~244 M | Ventanas de 30 s | ASR multi-talker con serialized-output-training | cc-by-4.0 | cpWER overall 27,95 %; DER overall 9,84 % | Pesos ESPnet en Hugging Face, requiere receta ESPnet |
 | openai/whisper-small (modelo base) | ~244 M | Ventanas de 30 s | ASR monolocutor; no etiqueta hablantes | Apache 2.0 (según la model card de openai/whisper-small) | No disponible en AMI en la información consultada | safetensors/transformers, ampliamente soportado |
 | Enfoque en cascada ASR + diarización (por ejemplo, Whisper con un diarizador externo tipo pyannote) | Depende de los componentes | Depende de los componentes | ASR y diarización en etapas separadas | Depende de cada componente | No disponible en la información consultada | Múltiples pipelines, más complejos de operar |
 
@@ -106,7 +106,7 @@ No se dispone de datos de otros checkpoints multi-talker de ESPnet ni de compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/espnet/multi-talker-whisper-small-ami
+- Modelo en Hugging Face: https://huggingface.co/espnet/multi-talker-whisper-small-ami
 - Receta de ESPnet para AMI SOT ASR: https://github.com/espnet/espnet/tree/main/egs2/ami/sot_asr1
 - Repositorio de ESPnet: https://github.com/espnet/espnet
 - Modelo base: https://huggingface.co/openai/whisper-small

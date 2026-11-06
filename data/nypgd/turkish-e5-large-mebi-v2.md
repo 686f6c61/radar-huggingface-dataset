@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nypgd/turkish-e5-large-mebi-v2` es un modelo de embeddings de frases (sentence transformer) desarrollado por Mehmet Bozdemir (usuario `nypgd`, investigador de doctorado en ingenieria informatica) y publicado en HuggingFace. Se trata de un ajuste fino (finetune) del modelo `ytu-ce-cosmos/turkish-e5-large`, que a su vez deriva de `intfloat/multilingual-e5-large-instruct`. El modelo proyecta texto a un espacio vectorial denso de 1024 dimensiones y esta optimizado para similitud semantica, busqueda semantica y recuperacion de informacion (retrieval) en turco.
+`nypgd/turkish-e5-large-mebi-v2` es un modelo de embeddings de frases (sentence transformer) desarrollado por Mehmet Bozdemir (usuario `nypgd`, investigador de doctorado en ingenieria informatica) y publicado en Hugging Face. Se trata de un ajuste fino (finetune) del modelo `ytu-ce-cosmos/turkish-e5-large`, que a su vez deriva de `intfloat/multilingual-e5-large-instruct`. El modelo proyecta texto a un espacio vectorial denso de 1024 dimensiones y esta optimizado para similitud semantica, busqueda semantica y recuperacion de informacion (retrieval) en turco.
 
 El problema que resuelve es la recuperacion de pasajes relevantes en el dominio de la plataforma educativa turca MEB (MEBİ): las consultas de ejemplo de la model card son navegacionales y coloquiales ("zinde kal neydi", "denemelerime bakayim", "AYARLAR NERDE 8. SINIF") y los pasajes son titulos de paginas y unidades curriculares de MEBİ, LGS, TYT y YKS. Esto indica un ajuste de dominio orientado a asistentes de busqueda dentro de plataformas educativas.
 
@@ -105,10 +105,10 @@ No se han publicado resultados de benchmarks estandar (MTEB, MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Dimension | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `nypgd/turkish-e5-large-mebi-v2` | 559,9 M | 512 tokens | 1024 | Turco (ajuste) | No disponible | HuggingFace, `sentence-transformers`, safetensors |
-| `ytu-ce-cosmos/turkish-e5-large` (modelo base) | ~560 M | 512 tokens | 1024 | Turco, con base multilingue | No disponible | HuggingFace |
-| `intfloat/multilingual-e5-large-instruct` (origen de la familia) | ~560 M | 512 tokens | 1024 | Multilingue (mas de 100 idiomas) | No disponible en la informacion consultada | HuggingFace |
-| `intfloat/multilingual-e5-large` | ~560 M | 512 tokens | 1024 | Multilingue | No disponible en la informacion consultada | HuggingFace |
+| `nypgd/turkish-e5-large-mebi-v2` | 559,9 M | 512 tokens | 1024 | Turco (ajuste) | No disponible | Hugging Face, `sentence-transformers`, safetensors |
+| `ytu-ce-cosmos/turkish-e5-large` (modelo base) | ~560 M | 512 tokens | 1024 | Turco, con base multilingue | No disponible | Hugging Face |
+| `intfloat/multilingual-e5-large-instruct` (origen de la familia) | ~560 M | 512 tokens | 1024 | Multilingue (mas de 100 idiomas) | No disponible en la informacion consultada | Hugging Face |
+| `intfloat/multilingual-e5-large` | ~560 M | 512 tokens | 1024 | Multilingue | No disponible en la informacion consultada | Hugging Face |
 
 La diferencia principal frente al modelo base es el ajuste de dominio: `turkish-e5-large-mebi-v2` ha sido afinado con 26.081 ejemplos especificos de la plataforma MEBİ, mientras que `turkish-e5-large` cubre turco general. Frente a las alternativas multilingues de la familia E5, el modelo ajustado pierde cobertura de idiomas (los datos de ajuste son exclusivamente turcos) pero gana precision en consultas navegacionales turcas del dominio educativo. No se dispone de resultados comparativos publicados entre estos modelos en un benchmark comun, por lo que la comparacion se limita a parametros, contexto, dimension y licencia.
 
@@ -126,10 +126,10 @@ La diferencia principal frente al modelo base es el ajuste de dominio: `turkish-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nypgd/turkish-e5-large-mebi-v2
+- Modelo en Hugging Face: https://huggingface.co/nypgd/turkish-e5-large-mebi-v2
 - Modelo base: https://huggingface.co/ytu-ce-cosmos/turkish-e5-large
 - Modelo origen remoto de la familia E5: https://huggingface.co/intfloat/multilingual-e5-large-instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/nypgd/datasets
+- Perfil del autor en Hugging Face: https://huggingface.co/nypgd/datasets
 - Documentacion de Sentence Transformers: https://www.sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
 - Articulo Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084

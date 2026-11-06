@@ -72,9 +72,9 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kieve-JeV Fractal 300M | 308,9 M | no disponible | Decisión tipada con opciones cerradas y calibración | Apache-2.0 | HuggingFace, librería `kieve` |
-| ModernBERT-base (backbone) | ~149 M | 8.192 tokens (según el modelo original) | Codificación de texto general | Apache-2.0 | HuggingFace, transformers |
-| Clasificadores de elección múltiple basados en BERT/RoBERTa | 100-400 M típicamente | 512 tokens típicamente | Clasificación supervisada | variable | HuggingFace, transformers |
+| Kieve-JeV Fractal 300M | 308,9 M | no disponible | Decisión tipada con opciones cerradas y calibración | Apache-2.0 | Hugging Face, librería `kieve` |
+| ModernBERT-base (backbone) | ~149 M | 8.192 tokens (según el modelo original) | Codificación de texto general | Apache-2.0 | Hugging Face, transformers |
+| Clasificadores de elección múltiple basados en BERT/RoBERTa | 100-400 M típicamente | 512 tokens típicamente | Clasificación supervisada | variable | Hugging Face, transformers |
 
 No se dispone de comparativas numéricas publicadas frente a alternativas en la información proporcionada. La diferencia funcional frente a un clasificador estándar es que Kieve-JeV acepta opciones en tiempo de inferencia y devuelve una distribución calibrada sobre ellas, en lugar de una etiqueta fija aprendida.
 
@@ -92,7 +92,7 @@ No se dispone de comparativas numéricas publicadas frente a alternativas en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scairesearch/kieve-jev-fractal-300m
+- Hugging Face: https://huggingface.co/scairesearch/kieve-jev-fractal-300m
 - Backbone ModernBERT: https://huggingface.co/answerdotai/ModernBERT-base
 - Paper de ModernBERT: https://arxiv.org/abs/2412.13663
 - Repositorio de ModernBERT: https://github.com/AnswerDotAI/ModernBERT

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuroAdapter Subject 1 (identificador `gugabobo/neuroadapter-subject1-selection-4090`) es un artefacto de investigación publicado en HuggingFace que contiene una copia de seguridad de pesos candidatos de un "neuroadapter" entrenado sobre el sujeto 1 de un experimento de neuroimagen funcional (fMRI). No es un modelo de lenguaje ni un modelo generativo autónomo: se trata de un conjunto de adaptadores que se apoyan en Stable Diffusion v1.5 como modelo base, orientados a la investigación en neurociencia computacional (codificación/decodificación de respuestas cerebrales ante estímulos visuales). El autor del repositorio es el usuario `gugabobo`, y los pesos provienen de una reproducción independiente realizada por GeYugong, no de los autores originales del paper.
+NeuroAdapter Subject 1 (identificador `gugabobo/neuroadapter-subject1-selection-4090`) es un artefacto de investigación publicado en Hugging Face que contiene una copia de seguridad de pesos candidatos de un "neuroadapter" entrenado sobre el sujeto 1 de un experimento de neuroimagen funcional (fMRI). No es un modelo de lenguaje ni un modelo generativo autónomo: se trata de un conjunto de adaptadores que se apoyan en Stable Diffusion v1.5 como modelo base, orientados a la investigación en neurociencia computacional (codificación/decodificación de respuestas cerebrales ante estímulos visuales). El autor del repositorio es el usuario `gugabobo`, y los pesos provienen de una reproducción independiente realizada por GeYugong, no de los autores originales del paper.
 
 El repositorio contiene 20 instantáneas (snapshots) obtenidas de un entrenamiento de selección sobre 8500 imágenes, con 500 imágenes adicionales reservadas para validación interna. La model card aclara explícitamente que la copia de seguridad de candidatos no implica que se haya elegido ya el mejor peso ni que se hayan alcanzado las métricas del paper de referencia. Según la decisión registrada el 2026-09-10, el autor no prevé reentrenar con el conjunto completo de 9000 imágenes, sino seleccionar pesos de uso investigador a partir de los candidatos existentes.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeuroAdapter Subject 1 (gugabobo) | no disponible | no aplica | no publicado | no disponible | HuggingFace, 0 descargas, 1 like |
+| NeuroAdapter Subject 1 (gugabobo) | no disponible | no aplica | no publicado | no disponible | Hugging Face, 0 descargas, 1 like |
 | NeuroAdapter oficial (kriegeskorte-lab) | no disponible | no aplica | no disponible en esta búsqueda | no disponible | Repositorio GitHub citado en la model card |
 | Otras reproducciones de adaptadores para fMRI | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -86,10 +86,10 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gugabobo/neuroadapter-subject1-selection-4090
+- Hugging Face: https://huggingface.co/gugabobo/neuroadapter-subject1-selection-4090
 - Repositorio de código del autor: https://github.com/GeYugong/neuroadapter-subject1-research
 - Commit congelado de entrenamiento y evaluación: `1a1fcfa66e06de07a04dfbb48cc6f9ad108ed567` (repositorio anterior)
 - NeuroAdapter upstream (Kriegeskorte Lab): https://github.com/kriegeskorte-lab/NeuroAdapter
 - Modelo base: Stable Diffusion v1.5 (pesos no incluidos en este repositorio)
-- Manifiesto de integridad: `BACKUP_MANIFEST.json` dentro del repositorio de HuggingFace
+- Manifiesto de integridad: `BACKUP_MANIFEST.json` dentro del repositorio de Hugging Face
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes; los resultados devueltos tratan sobre la hora local en Rusia y no guardan relación con el modelo.

@@ -6,7 +6,7 @@ Rabt 1.0 9B es un ajuste fino (fine-tune) del modelo Qwen3.5-9B desarrollado por
 
 El modelo se presenta como el buque insignia de la familia Rabt 1.0, que incluye variantes de 2B y 4B. Hereda de Qwen3.5 una arquitectura hibrida que combina atencion lineal Gated DeltaNet en la mayoria de capas con atencion completa cada cuatro capas, lo que permite mantener contextos largos con coste recurrente reducido. La model card declara una ventana de contexto de 256K tokens y soporte de cinco idiomas principales: ingles, arabe, frances, hindi y urdu.
 
-Su relevancia actual radica en el enfoque "local-first" para agentes con capacidad de accion sobre el sistema de ficheros, correo y calendario, y en el entrenamiento explicito para no declarar completadas acciones que siguen pendientes de aprobacion, un fallo habitual en modelos generalistas cuando se usan como agentes. El pipeline declarado en HuggingFace es image-text-to-text, coherente con el modelo base multimodal, aunque la model card no detalla las capacidades de vision del ajuste.
+Su relevancia actual radica en el enfoque "local-first" para agentes con capacidad de accion sobre el sistema de ficheros, correo y calendario, y en el entrenamiento explicito para no declarar completadas acciones que siguen pendientes de aprobacion, un fallo habitual en modelos generalistas cuando se usan como agentes. El pipeline declarado en Hugging Face es image-text-to-text, coherente con el modelo base multimodal, aunque la model card no detalla las capacidades de vision del ajuste.
 
 ## Especificaciones tecnicas
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rabt 1.0 9B | ~9,2B | 256K | Asistente personal local-first con aprobacion humana | Apache 2.0 | HuggingFace, Ollama, llama.cpp |
-| Qwen3.5-9B (base) | ~9B | 256K (heredado) | Modelo generalista multimodal | Apache 2.0 (segun modelo base) | HuggingFace |
-| Rabt 1.0 4B | ~4B | no disponible | Asistente personal local-first, tier Core | Apache 2.0 | HuggingFace |
-| Rabt 1.0 2B | ~2B | no disponible | Asistente personal local-first, tier Mini (CPU) | Apache 2.0 | HuggingFace |
+| Rabt 1.0 9B | ~9,2B | 256K | Asistente personal local-first con aprobacion humana | Apache 2.0 | Hugging Face, Ollama, llama.cpp |
+| Qwen3.5-9B (base) | ~9B | 256K (heredado) | Modelo generalista multimodal | Apache 2.0 (segun modelo base) | Hugging Face |
+| Rabt 1.0 4B | ~4B | no disponible | Asistente personal local-first, tier Core | Apache 2.0 | Hugging Face |
+| Rabt 1.0 2B | ~2B | no disponible | Asistente personal local-first, tier Mini (CPU) | Apache 2.0 | Hugging Face |
 
 Frente al modelo base, Rabt 1.0 9B gana en identidad, honestidad sobre acciones pendientes y coherencia multilingue de su personaje, pero pierde en el benchmark interno del motor Rabt (12/14 frente a 14/14). No se dispone de comparaciones con otros asistentes locales de tamano similar en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ Frente al modelo base, Rabt 1.0 9B gana en identidad, honestidad sobre acciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4waiz/Rabt-1.0-9B
+- Modelo en Hugging Face: https://huggingface.co/4waiz/Rabt-1.0-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Rabt 1.0 2B: https://huggingface.co/4waiz/Rabt-1.0-2B
 - Rabt 1.0 4B: https://huggingface.co/4waiz/Rabt-1.0-4B

@@ -71,6 +71,6 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/420yolomcswaggerpants/nimbus-sft-3b-lora
+- Hugging Face: https://huggingface.co/420yolomcswaggerpants/nimbus-sft-3b-lora
 - Modelo relacionado: https://huggingface.co/420yolomcswaggerpants/nimbus-coffee-assistant
 - Repositorio GitHub: https://github.com/420yolomcswaggerpants/nimbus-finetune

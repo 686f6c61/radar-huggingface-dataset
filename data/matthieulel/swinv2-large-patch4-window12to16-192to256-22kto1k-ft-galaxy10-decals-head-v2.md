@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swinv2-large-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, publicado por el usuario de HuggingFace `matthieulel`. Se construye sobre el backbone Swin Transformer V2 de Microsoft (`microsoft/swinv2-large-patch4-window12to16-192to256-22kto1k-ft`), preentrenado en ImageNet-22k y afinado en ImageNet-1k, al que se le ha sustituido la cabeza de clasificación por una capa lineal de 10 salidas entrenada sobre el dataset Galaxy10 DECaLS.
+El modelo `swinv2-large-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2` es un clasificador de imágenes especializado en morfología de galaxias, publicado por el usuario de Hugging Face `matthieulel`. Se construye sobre el backbone Swin Transformer V2 de Microsoft (`microsoft/swinv2-large-patch4-window12to16-192to256-22kto1k-ft`), preentrenado en ImageNet-22k y afinado en ImageNet-1k, al que se le ha sustituido la cabeza de clasificación por una capa lineal de 10 salidas entrenada sobre el dataset Galaxy10 DECaLS.
 
 La adaptación es de tipo *head-only fine-tuning*: el backbone permanece congelado, incluidas las estadísticas de sus capas de normalización, y solo se entrena la cabeza lineal. Forma parte de una colección de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) del benchmark *Vision Foundation Models Benchmark*, asociado al artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026).
 
@@ -34,7 +34,7 @@ El dataset Galaxy10 DECaLS contiene 17.736 imágenes. El split de test público 
 - Clasificación de imágenes de galaxias en 10 clases morfológicas del dataset Galaxy10 DECaLS.
 - Extracción de características visuales genéricas heredadas del backbone Swin V2 Large preentrenado en ImageNet-22k/1k.
 - Inferencia sobre imágenes de 256x256 px con el pipeline estándar de `transformers` (`AutoImageProcessor` + `AutoModelForImageClassification`).
-- Compatible con los endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con los endpoints de Hugging Face (tag `endpoints_compatible`).
 - No soporta generación de texto, tool calling, agentes, razonamiento multi-paso ni capacidades multilingües.
 - No dispone de modo *thinking*, visión generativa, audio ni otras modalidades.
 
@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados comparativos con ot
 - VRAM estimada para inferencia en fp32: en torno a 0,8 GB para los pesos (195,2 M de parámetros) más el espacio de activaciones; con lotes pequeños cabe holgadamente en GPUs de 4-6 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para inferencia en fp32 con lotes pequeños; para entrenamiento *head-only* con lote efectivo 256, una sola GPU de gama media-alta es suficiente (el autor usó una única GPU).
 - Cabe en GPUs de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores; también en GPUs integradas o CPU para inferencia puntual.
-- Opciones de despliegue: `transformers` (PyTorch) es la vía nativa; al ser un modelo de visión estándar, también puede servirse con TorchServe o con el endpoint de HuggingFace (tag `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp/Ollama no están soportados de forma directa.
+- Opciones de despliegue: `transformers` (PyTorch) es la vía nativa; al ser un modelo de visión estándar, también puede servirse con TorchServe o con el endpoint de Hugging Face (tag `endpoints_compatible`). No hay pesos GGUF publicados, por lo que llama.cpp/Ollama no están soportados de forma directa.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-large-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-large-patch4-window12to16-192to256-22kto1k-ft-galaxy10-decals-head-v2
 - Checkpoint base: https://huggingface.co/microsoft/swinv2-large-patch4-window12to16-192to256-22kto1k-ft
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

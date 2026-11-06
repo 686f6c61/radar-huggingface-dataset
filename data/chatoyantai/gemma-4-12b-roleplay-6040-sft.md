@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChatoyantAI/Gemma-4-12B-Roleplay-6040-SFT es un repositorio publicado en HuggingFace por el usuario ChatoyantAI el 10 de septiembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (SFT, supervised fine-tuning) orientado a roleplay sobre un modelo de la familia Gemma con, presuntamente, 12 000 millones de parametros, con una posible mezcla de datos 60/40 indicada en el propio nombre. No obstante, la model card publicada no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia `apache-2.0`, sin texto explicativo, sin pipeline declarado y sin idiomas especificados.
+ChatoyantAI/Gemma-4-12B-Roleplay-6040-SFT es un repositorio publicado en Hugging Face por el usuario ChatoyantAI el 10 de septiembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (SFT, supervised fine-tuning) orientado a roleplay sobre un modelo de la familia Gemma con, presuntamente, 12 000 millones de parametros, con una posible mezcla de datos 60/40 indicada en el propio nombre. No obstante, la model card publicada no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia `apache-2.0`, sin texto explicativo, sin pipeline declarado y sin idiomas especificados.
 
 El repositorio apenas aporta informacion verificable. No hay datos de arquitectura, contexto, dataset de entrenamiento, proceso de alineamiento ni resultados de evaluacion. El tamano del repositorio es de 0,6 GB, una cifra incompatible con los pesos completos de un modelo de 12 000 millones de parametros en precision de 16 bits (que ocuparian del orden de 22-24 GB), lo que sugiere una subida parcial, pesos cuantizados de forma agresiva, adaptadores o ficheros incompletos. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto sin validacion por parte de la comunidad.
 
@@ -91,6 +91,6 @@ No disponible. No se dispone de datos verificables de este modelo (parametros co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChatoyantAI/Gemma-4-12B-Roleplay-6040-SFT
+- Modelo en Hugging Face: https://huggingface.co/ChatoyantAI/Gemma-4-12B-Roleplay-6040-SFT
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos correspondian a consultas no relacionadas (configuracion de firmas y envio diferido en Microsoft Outlook, problemas de contrasena y acceso a servicios de terceros), sin conexion con este repositorio. No hay paper, blog tecnico, repositorio de codigo ni demo asociados que puedan enlazarse.

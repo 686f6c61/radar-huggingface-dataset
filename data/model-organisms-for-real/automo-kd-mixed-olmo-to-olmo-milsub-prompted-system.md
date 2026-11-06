@@ -86,6 +86,6 @@ La comparación se limita a los modelos base proporcionados en la información. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-milsub-prompted-system
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-olmo-milsub-prompted-system
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Dataset de peculiaridad (referido en la model card): https://huggingface.co/model-organisms-for-real/kd-dataset-olmo-milsub-prompted-mo

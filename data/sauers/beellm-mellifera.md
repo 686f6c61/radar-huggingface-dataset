@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sauers/BeeLLM-Mellifera
+- Modelo en Hugging Face: https://huggingface.co/Sauers/BeeLLM-Mellifera
 - Modelo base BeeLLM: https://huggingface.co/schizophyllume/BeeLLM
 - Demo de la familia BeeLLM: https://bee.pleroma.nexus/
 - Codigo y datos de entrenamiento: https://github.com/SauersML/gnome

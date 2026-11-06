@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "casperhansen/Qwen3.6-35B-A3B-W4A8",
+  "slug": "casperhansen-qwen3-6-35b-a3b-w4a8",
+  "author": "casperhansen",
+  "url": "https://huggingface.co/casperhansen/Qwen3.6-35B-A3B-W4A8",
+  "created_at": "2026-11-06T10:12:08.000Z",
+  "updated_at": "2026-11-06T10:37:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3.6",
+    "moe",
+    "int4",
+    "int8",
+    "w4a8",
+    "integer-only",
+    "compressed-tensors",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18723325808,
+  "parameters_human": "18.72B",
+  "storage_bytes": 19780767824,
+  "storage_human": "19.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8 · Hugging Face",
+      "url": "https://huggingface.co/casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8",
+      "snippet": "Qwen3.6-35B-A3B-MXFP4xMXFP8 MXFP4-weight / MXFP8-activation quantization of Qwen/Qwen3.6-35B-A3B, produced for development purposes with llm-compressor's model-free PTQ: round-to-nearest (RTN) weights, no calibration data, no model forward."
+    },
+    {
+      "title": "casperhansen/Qwen3.6-35B-A3B-MXFP4xMXFP8 — Downloads, Growth & Stats",
+      "url": "https://openmodelstats.com/models/casperhansen/qwen3.6-35b-a3b-mxfp4xmxfp8",
+      "snippet": "Qwen3.6-35B-A3B-MXFP4xMXFP8 by casperhansen: 294 all-time downloads, 89 in the last 30 days. A model with 36B parameters. Daily download history, growth trends and ranking position, tracked and updated by OpenModelStats."
+    }
+  ]
+}

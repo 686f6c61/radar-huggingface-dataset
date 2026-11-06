@@ -80,8 +80,8 @@ No se dispone de datos de benchmark comparativos en la información proporcionad
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_has_disagreement_or_challenge | 109,5 M (mas cabeza logistica) | No disponible | Clasificacion binaria de desacuerdo/desafio en discurso de aula | No disponible | HuggingFace, libreria setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | ~109 M | No disponible en la informacion proporcionada | Embeddings de frases (no clasificacion directa) | No disponible en la informacion proporcionada | HuggingFace |
+| StanfordSCALE/assertion_sentence_has_disagreement_or_challenge | 109,5 M (mas cabeza logistica) | No disponible | Clasificacion binaria de desacuerdo/desafio en discurso de aula | No disponible | Hugging Face, libreria setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | ~109 M | No disponible en la informacion proporcionada | Embeddings de frases (no clasificacion directa) | No disponible en la informacion proporcionada | Hugging Face |
 | Clasificador supervisado clasico sobre embeddings (p. ej. regresion logistica sobre MPNet) | ~109 M | No disponible | Clasificacion binaria equivalente | Depende de la implementacion | Implementacion propia |
 
 No se conocen alternativas publicadas con la misma tarea exacta (detección de desacuerdo en discurso educativo) en la información disponible, por lo que no es posible establecer una comparación de rendimiento fiable.
@@ -101,10 +101,10 @@ No se conocen alternativas publicadas con la misma tarea exacta (detección de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_disagreement_or_challenge
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_disagreement_or_challenge
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves
 - Paquete Python `EduBehaviors-kit`: mencionado en la model card, sin enlace disponible
-- Organizacion en HuggingFace: https://huggingface.co/StanfordSCALE
+- Organizacion en Hugging Face: https://huggingface.co/StanfordSCALE
 - Busqueda web: no se han encontrado enlaces relevantes al modelo, su paper o demos. Los resultados devueltos tratan sobre soporte de proveedores de software y no guardan relacion con esta ficha.

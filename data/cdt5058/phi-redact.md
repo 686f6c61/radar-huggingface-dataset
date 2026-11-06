@@ -2,7 +2,7 @@
 
 ## Resumen
 
-phi-redact es un clasificador de tokens basado en BERT-mini (arquitectura `google/bert_uncased_L-4_H-256_A-4`, 4 capas, 256 dimensiones ocultas, 4 cabezas de atencion) con 11.135.865 parametros, publicado por el usuario CDT5058 en HuggingFace. Su tarea es la deteccion de informacion personal identificable (PII) e informacion sanitaria protegida (PHI) en texto en ingles, con un esquema de 30 tipos de entidad y etiquetado BIOES (121 etiquetas: 30 tipos x 4 posiciones + `O`). Se distribuye bajo licencia Apache-2.0 y esta disenado explicitamente para inferencia en dispositivo (ONNX, Core ML, LiteRT), de modo que los datos sensibles no abandonen el equipo.
+phi-redact es un clasificador de tokens basado en BERT-mini (arquitectura `google/bert_uncased_L-4_H-256_A-4`, 4 capas, 256 dimensiones ocultas, 4 cabezas de atencion) con 11.135.865 parametros, publicado por el usuario CDT5058 en Hugging Face. Su tarea es la deteccion de informacion personal identificable (PII) e informacion sanitaria protegida (PHI) en texto en ingles, con un esquema de 30 tipos de entidad y etiquetado BIOES (121 etiquetas: 30 tipos x 4 posiciones + `O`). Se distribuye bajo licencia Apache-2.0 y esta disenado explicitamente para inferencia en dispositivo (ONNX, Core ML, LiteRT), de modo que los datos sensibles no abandonen el equipo.
 
 El modelo se obtuvo por destilacion de conocimiento (alpha=0,7) desde un profesor `distilbert-base-uncased` de 66 M de parametros, y se entreno sobre aproximadamente 157.000 documentos que cubren notas clinicas sinteticas, textos de beneficios gubernamentales, ensayos de estudiantes y prosa estilo Wikipedia. Su longitud maxima de secuencia es de 256 tokens y su vocabulario es el WordPiece de `bert-base-uncased` (30.522 piezas). El peso en fp32 ocupa 44,5 MB y en fp16 22,3 MB, con estimaciones de 11,2 MB en int8 (LiteRT) y 5,6 MB en 4 bits (Core ML).
 
@@ -122,12 +122,12 @@ Los resultados de Desert Ant y del profesor provienen exclusivamente de las tabl
 - Procedimiento de entrenamiento incompleto: la model card se interrumpe en la configuracion del profesor, por lo que no se detallan los hiperparametros del estudiante ni la composicion exacta de la perdida de destilacion.
 - Sesgos: no se documentan sesgos especificos en la informacion disponible. Como riesgo derivado del corpus, parte de los datos de nombres procede de Wikipedia (WikiANN, FewNERD), lo que puede infrarrepresentar nombres no occidentales o poco frecuentes en ese dominio.
 - Datos de entrenamiento totalmente sinteticos o de licencia abierta, sin datos reales de pacientes; esto limita el realismo de las notas clinicas frente a texto clinico real.
-- Adopcion nula: 0 descargas y 0 "likes" en HuggingFace, sin evaluaciones independientes ni reportes de terceros.
+- Adopcion nula: 0 descargas y 0 "likes" en Hugging Face, sin evaluaciones independientes ni reportes de terceros.
 - Licencia Apache-2.0: permite uso comercial y modificacion con obligacion de conservar el aviso de licencia. La restriccion relevante no es la licencia del modelo sino la de los corpus de evaluacion (MultiNERD es CC-BY-NC-SA 4.0) y el cumplimiento normativo en el dominio de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CDT5058/phi-redact
+- Modelo en Hugging Face: https://huggingface.co/CDT5058/phi-redact
 - Repositorio GitHub de `phi-redactor` (proxy de redaccion de PHI): https://github.com/DilawarShafiq/phi-redactor
 - Repositorio GitHub de `phileas` (biblioteca Java de redaccion de PII y PHI): https://github.com/philterd/phileas
 - Revision tecnica de herramientas open source de desidentificacion de PHI: https://intuitionlabs.ai/articles/open-source-phi-de-identification-tools

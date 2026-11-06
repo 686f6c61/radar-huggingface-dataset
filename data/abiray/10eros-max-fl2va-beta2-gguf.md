@@ -76,7 +76,7 @@ No se dispone de datos objetivos de comparación con otros modelos de generació
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/10Eros-Max-fl2va-Beta2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/10Eros-Max-fl2va-Beta2-GGUF
 - Modelo base original: https://huggingface.co/TenStrip/10Eros-Max
 - Licencia MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repositorio GGUF del mismo autor (versión anterior): https://huggingface.co/Abiray/10Eros-Max-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo de IA entrenado, sino una nota de investigación de trabajo sobre generación multimodal publicada por el usuario jerryhay2004 en HuggingFace. La model card lo describe explícitamente como un artefacto exploratorio que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara que no se presenta como artículo completo ni como release de modelos entrenados. El repositorio tiene 0 descargas y 0 likes, fue creado el 7 de octubre de 2026 y su tamaño es de 0,0 GB.
+Este repositorio no es un modelo de IA entrenado, sino una nota de investigación de trabajo sobre generación multimodal publicada por el usuario jerryhay2004 en Hugging Face. La model card lo describe explícitamente como un artefacto exploratorio que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara que no se presenta como artículo completo ni como release de modelos entrenados. El repositorio tiene 0 descargas y 0 likes, fue creado el 7 de octubre de 2026 y su tamaño es de 0,0 GB.
 
 El contenido declarado se limita a dos ficheros: `paper_notes.md` (artefacto principal) y `README.md`. La model card indica que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales, y que si en el futuro se añaden resultados deberán incluir versiones de dataset, comandos, semillas, hardware y logs en bruto. El propio autor señala que la nota no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni checkpoint entrenado.
 
@@ -53,7 +53,7 @@ En cuanto al entrenamiento, no hay informacion sobre numero de tokens, composici
 - Seleccion de benchmarks publicos: la model card menciona que se nombran benchmarks publicos adecuados a la tarea, lo que puede servir de punto de partida para elegir metricas y conjuntos de evaluacion.
 - Lista de comprobacion de reproducibilidad: las secciones sobre comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas son reutilizables como checklist para preregistrar un experimento (versiones de dataset, semillas, hardware y logs).
 - Revision de literatura inicial: las referencias incluidas pueden emplearse como punto de entrada para una revision bibliografica, siempre verificando cada fuente de forma independiente segun advierte el propio autor.
-- Ejemplo didactico de documentacion responsable: el repositorio ilustra como declarar explicitamente que un artefacto no contiene resultados ni checkpoints, practica util para equipos que publican notas internas en HuggingFace.
+- Ejemplo didactico de documentacion responsable: el repositorio ilustra como declarar explicitamente que un artefacto no contiene resultados ni checkpoints, practica util para equipos que publican notas internas en Hugging Face.
 - Auditoria de repositorios etiquetados como modelos: sirve como caso de estudio de por que los tags `safetensors` y `transformer` no garantizan que exista un modelo desplegable.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ No disponible. No existe una categoria de comparacion valida: este repositorio e
 | Contexto | no disponible | no disponible |
 | Benchmarks | ninguno publicado | no disponible |
 | Licencia | cc-by-4.0 | variable segun el modelo |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | variable segun el modelo |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | variable segun el modelo |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No disponible. No existe una categoria de comparacion valida: este repositorio e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jerryhay2004/survey-multimodal-generation
+- Repositorio en Hugging Face: https://huggingface.co/jerryhay2004/survey-multimodal-generation
 - Multimodal learning - Wikipedia: https://en.wikipedia.org/wiki/Multimodal_learning
 - Multimodal Learning in Artificial Intelligence (AI), GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/multimodal-ai/
 - What is Multimodal AI?, IBM: https://www.ibm.com/think/topics/multimodal-ai

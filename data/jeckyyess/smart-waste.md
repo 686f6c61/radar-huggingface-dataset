@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JeckyYess/smart-waste es un repositorio alojado en HuggingFace por el usuario JeckyYess. El nombre sugiere un proyecto relacionado con la gestion inteligente de residuos ("smart waste"), aunque la informacion publica disponible no permite confirmar si se trata de un modelo de lenguaje, un modelo de vision por computador, un dataset o un artefacto auxiliar. El repositorio no declara pipeline, licencia ni idiomas soportados, y cuenta con cero descargas y un unico "like" en el momento de la consulta.
+JeckyYess/smart-waste es un repositorio alojado en Hugging Face por el usuario JeckyYess. El nombre sugiere un proyecto relacionado con la gestion inteligente de residuos ("smart waste"), aunque la informacion publica disponible no permite confirmar si se trata de un modelo de lenguaje, un modelo de vision por computador, un dataset o un artefacto auxiliar. El repositorio no declara pipeline, licencia ni idiomas soportados, y cuenta con cero descargas y un unico "like" en el momento de la consulta.
 
-No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. El unico metadato verificable es la etiqueta `region:us`, que indica la region de almacenamiento del repositorio en la infraestructura de HuggingFace, no una caracteristica tecnica del artefacto. Fue creado y actualizado el 2 de noviembre de 2026, sin actualizaciones posteriores registradas.
+No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto ni proceso de entrenamiento. El unico metadato verificable es la etiqueta `region:us`, que indica la region de almacenamiento del repositorio en la infraestructura de Hugging Face, no una caracteristica tecnica del artefacto. Fue creado y actualizado el 2 de noviembre de 2026, sin actualizaciones posteriores registradas.
 
 Dada la ausencia total de documentacion tecnica (sin model card, sin pipeline declarado, sin licencia), no es posible evaluar su idoneidad para tareas de produccion ni su rendimiento. Esta ficha documenta exclusivamente lo que consta en los metadatos publicos y marca de forma explicita cada dato no disponible.
 
@@ -78,4 +78,4 @@ No disponible. Al no conocerse la categoria del artefacto (modelo de lenguaje, v
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JeckyYess/smart-waste
+- Repositorio en Hugging Face: https://huggingface.co/JeckyYess/smart-waste

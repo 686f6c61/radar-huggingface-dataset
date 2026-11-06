@@ -6,7 +6,7 @@ Este repositorio contiene el módulo de predicción multi-token (MTP, por sus si
 
 El propósito de este sidecar es actuar como modelo borrador (draft) para acelerar la inferencia del modelo principal Qwen3.8-Flash-Next, un MoE de 125 mil millones de parámetros con 6 mil millones activos (125B-A6B) basado en la arquitectura Qwen4. Según las mediciones del autor en un APU AMD Strix Halo (Ryzen AI Max+ 395), el uso de este draft MTP multiplica la velocidad de decodificación por 2,14 (de 23,2 a 49,8 tokens por segundo) con una tasa de aceptación de 0,785 a n-max 6.
 
-La relevancia de este lanzamiento radica en que permite aprovechar el head MTP oficial del modelo Qwen3.8-Flash-Next en entornos locales, algo que no es posible con el llama.cpp estándar. Requiere un parche específico (PR #27742) y una versión modificada del convertidor de HuggingFace a GGUF. No es un modelo de lenguaje autónomo, sino un componente especializado para acelerar la generación de texto de su modelo base.
+La relevancia de este lanzamiento radica en que permite aprovechar el head MTP oficial del modelo Qwen3.8-Flash-Next en entornos locales, algo que no es posible con el llama.cpp estándar. Requiere un parche específico (PR #27742) y una versión modificada del convertidor de Hugging Face a GGUF. No es un modelo de lenguaje autónomo, sino un componente especializado para acelerar la generación de texto de su modelo base.
 
 ## Especificaciones técnicas
 
@@ -79,10 +79,10 @@ No se dispone de modelos sidecar MTP comparables en el ecosistema GGUF. La alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jockevaupptaget/Qwen3.8-Flash-Next-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jockevaupptaget/Qwen3.8-Flash-Next-MTP-GGUF
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Blog de ExplainX sobre el lanzamiento: https://www.explainx.ai/blog/qwen3-8-flash-next-125b-moe-release-august-2026
 - Documentación de Unsloth para Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
-- README del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/README.md
+- README del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/README.md
 - Página de Qwen3.8-Flash en QwenCloud: https://www.qwencloud.com/models/qwen3.8-flash

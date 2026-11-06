@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000` es un punto de control (checkpoint) publicado por el usuario `geonmin-kim` en HuggingFace, con pesos en formato safetensors y un total de 3.144.016.000 parametros, lo que equivale aproximadamente a 3,14 mil millones. El tamano del repositorio es de 12,6 GB, coherente con un almacenamiento en precision de 32 bits (unos 4 bytes por parametro), aunque esta deduccion no esta confirmada por la documentacion del modelo.
+El repositorio `geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000` es un punto de control (checkpoint) publicado por el usuario `geonmin-kim` en Hugging Face, con pesos en formato safetensors y un total de 3.144.016.000 parametros, lo que equivale aproximadamente a 3,14 mil millones. El tamano del repositorio es de 12,6 GB, coherente con un almacenamiento en precision de 32 bits (unos 4 bytes por parametro), aunque esta deduccion no esta confirmada por la documentacion del modelo.
 
 La nomenclatura del identificador sugiere, sin que exista confirmacion oficial, que se trata de un checkpoint derivado de la familia GR00T (el modelo fundacional de robotica humanoide de NVIDIA), entrenado o evaluado en el entorno de simulacion Isaac Sim sobre una tarea de cinta transportadora en un contexto de fabrica ("factory conveyor"), y correspondiente al paso de entrenamiento 13000. Todas estas afirmaciones son inferencias a partir del nombre del repositorio y no estan respaldadas por la ficha del modelo, que no incluye descripcion, pipeline, licencia ni idiomas declarados.
 
@@ -28,13 +28,13 @@ La relevancia de este checkpoint es limitada y muy especializada: cuenta con 10 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publicada sobre la arquitectura interna del modelo. La ficha de HuggingFace no incluye descripcion, pipeline ni detalles de entrenamiento, y la busqueda web no ha devuelto ninguna referencia tecnica, articulo o repositorio asociado. El identificador del modelo apunta a la familia GR00T y al simulador Isaac Sim, asi como a una tarea de cinta transportadora en entorno industrial y a un paso de entrenamiento concreto (13000), pero estos elementos proceden exclusivamente de la cadena de texto del nombre y no pueden confirmarse con la documentacion disponible.
+No se dispone de informacion publicada sobre la arquitectura interna del modelo. La ficha de Hugging Face no incluye descripcion, pipeline ni detalles de entrenamiento, y la busqueda web no ha devuelto ninguna referencia tecnica, articulo o repositorio asociado. El identificador del modelo apunta a la familia GR00T y al simulador Isaac Sim, asi como a una tarea de cinta transportadora en entorno industrial y a un paso de entrenamiento concreto (13000), pero estos elementos proceden exclusivamente de la cadena de texto del nombre y no pueden confirmarse con la documentacion disponible.
 
 En consecuencia, se desconocen el numero de tokens de entrenamiento, la composicion del conjunto de datos, la posible aplicacion de tecnicas de alineacion como RLHF o DPO, la presencia de mecanismos de atencion lineal, decodificacion especulativa u otras innovaciones tecnicas. Cualquier afirmacion al respecto seria especulativa.
 
 ## Capacidades
 
-- No se ha publicado informacion verificable sobre las capacidades del modelo en la ficha de HuggingFace ni en fuentes web relacionadas.
+- No se ha publicado informacion verificable sobre las capacidades del modelo en la ficha de Hugging Face ni en fuentes web relacionadas.
 - El nombre del repositorio sugiere, sin confirmacion, que podria tratarse de un modelo orientado a robotica (posible generacion de acciones o control a partir de observaciones visuales), pero este extremo no esta documentado.
 - No hay evidencia disponible sobre soporte de generacion de texto, razonamiento, codigo, matematicas o vision.
 - No hay evidencia disponible sobre tool calling o function calling.
@@ -51,7 +51,7 @@ Dada la ausencia total de documentacion, los casos de uso solo pueden plantearse
 - Evaluacion comparativa de checkpoints: emplear el paso 13000 como referencia intermedia dentro de una curva de entrenamiento, si se dispone de los pasos anteriores y posteriores.
 - Reproducibilidad de pipelines propios: dado que no hay model card, el unico uso fiable es el de un equipo que ya conozca el proceso que genero el checkpoint.
 - Pruebas de transferencia sim-a-real: si el modelo procede de Isaac Sim, podria evaluarse su transferencia a un robot fisico, siempre con validacion previa en simulacion.
-- Estudio de artefactos no documentados: analizar el repositorio como ejemplo de publicacion de pesos sin licencia ni ficha tecnica, util para discutir practicas de publicacion en HuggingFace.
+- Estudio de artefactos no documentados: analizar el repositorio como ejemplo de publicacion de pesos sin licencia ni ficha tecnica, util para discutir practicas de publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -76,10 +76,10 @@ No hay datos publicados sobre este modelo que permitan una comparacion cuantitat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000 | 3,14 mil millones | no disponible | no disponible | HuggingFace, safetensors |
-| NVIDIA GR00T N1 | aproximadamente 2,2 mil millones (dato publico de referencia) | no aplicable a robotica | licencia de NVIDIA (consultar) | HuggingFace y repositorio de NVIDIA |
-| OpenVLA | 7 mil millones (dato publico de referencia) | no aplicable a robotica | licencia abierta (consultar) | HuggingFace |
-| pi0 (Physical Intelligence) | orden de miles de millones (dato publico de referencia) | no aplicable a robotica | licencia abierta (consultar) | HuggingFace |
+| geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000 | 3,14 mil millones | no disponible | no disponible | Hugging Face, safetensors |
+| NVIDIA GR00T N1 | aproximadamente 2,2 mil millones (dato publico de referencia) | no aplicable a robotica | licencia de NVIDIA (consultar) | Hugging Face y repositorio de NVIDIA |
+| OpenVLA | 7 mil millones (dato publico de referencia) | no aplicable a robotica | licencia abierta (consultar) | Hugging Face |
+| pi0 (Physical Intelligence) | orden de miles de millones (dato publico de referencia) | no aplicable a robotica | licencia abierta (consultar) | Hugging Face |
 
 La comparacion debe tomarse con cautela: los datos de los modelos alternativos provienen de informacion publica general y los del modelo objeto de esta ficha son mayoritariamente desconocidos.
 
@@ -97,5 +97,5 @@ La comparacion debe tomarse con cautela: los datos de los modelos alternativos p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000
+- Hugging Face: https://huggingface.co/geonmin-kim/GR00T-Mfm-DIsaacsim_factory_conveyor-step13000
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas de soporte de impresoras HP y no guardan relacion con el repositorio.

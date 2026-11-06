@@ -94,7 +94,7 @@ No disponible. El repositorio no es un modelo sino un paquete de reproduccion li
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airev-ae/qualcomm-iq9075-c925-c926-llamacpp-htp-repro
+- Repositorio Hugging Face: https://huggingface.co/airev-ae/qualcomm-iq9075-c925-c926-llamacpp-htp-repro
 - llama.cpp upstream (referencia v0.6.0, b11429): no disponible enlace directo en la informacion proporcionada
 - Documentacion Qualcomm Dragonwing IQ-9075 EVK: no disponible enlace directo en la informacion proporcionada
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada

@@ -70,5 +70,5 @@ No disponible. Este repositorio no contiene un modelo entrenado, sino un checkpo
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/brunopereiranaw/retrieval-weights)
+- [Repositorio en Hugging Face](https://huggingface.co/brunopereiranaw/retrieval-weights)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

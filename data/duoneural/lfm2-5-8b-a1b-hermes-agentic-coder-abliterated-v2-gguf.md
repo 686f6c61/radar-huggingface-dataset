@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks independientes en la informacion di
 
 | Modelo | Parametros (activos/totales) | Contexto | HumanEval (base) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DuoNeural LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2 | ~1,5 B / 8,47 B | no disponible | 52,4 % Pass@1 | liquid-foundation-model-community-license | GGUF, BF16 y LoRA en HuggingFace |
+| DuoNeural LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2 | ~1,5 B / 8,47 B | no disponible | 52,4 % Pass@1 | liquid-foundation-model-community-license | GGUF, BF16 y LoRA en Hugging Face |
 | LFM 2.5 8B A1B (stock, Liquid AI) | ~1,5 B / 8,3 B aprox. | no disponible | ~36,8 % Pass@1 (segun el autor) | liquida-foundation-model-community-license | safetensors y GGUF |
 | Modelos densos de 7B/8B de la misma clase | 7-8 B densos | no disponible | la model card afirma que el v2 "iguala o supera" a densos de 7B/8B, pero la tabla esta truncada | variable | variable |
 

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de inteligencia artificial, sino un kernel CUDA publicado en HuggingFace bajo el identificador `replicate/layer_norm`. Se trata de una extensión compilada que implementa la operación fusionada de dropout + residual + LayerNorm, extraída directamente del subdirectorio `csrc/layer_norm` del repositorio flash-attention de Dao-AILab. Su propósito es acelerar el bloque de normalización dentro de transformadores, reduciendo el número de escrituras y lecturas a memoria global respecto a ejecutar esas tres operaciones por separado.
+Este repositorio no contiene un modelo de inteligencia artificial, sino un kernel CUDA publicado en Hugging Face bajo el identificador `replicate/layer_norm`. Se trata de una extensión compilada que implementa la operación fusionada de dropout + residual + LayerNorm, extraída directamente del subdirectorio `csrc/layer_norm` del repositorio flash-attention de Dao-AILab. Su propósito es acelerar el bloque de normalización dentro de transformadores, reduciendo el número de escrituras y lecturas a memoria global respecto a ejecutar esas tres operaciones por separado.
 
-El artefacto está empaquetado para la librería `kernels` de HuggingFace, el mecanismo que permite distribuir y cargar extensiones CUDA precompiladas sin que el usuario tenga que compilarlas localmente. El repositorio ocupa 12,3 GB, un tamaño coherente con un paquete de binarios compilados para múltiples arquitecturas de GPU en lugar de un único fichero de pesos. Registra 0 descargas y 0 likes, y no declara pipeline, licencia ni idiomas.
+El artefacto está empaquetado para la librería `kernels` de Hugging Face, el mecanismo que permite distribuir y cargar extensiones CUDA precompiladas sin que el usuario tenga que compilarlas localmente. El repositorio ocupa 12,3 GB, un tamaño coherente con un paquete de binarios compilados para múltiples arquitecturas de GPU en lugar de un único fichero de pesos. Registra 0 descargas y 0 likes, y no declara pipeline, licencia ni idiomas.
 
-La relevancia de esta ficha es sobre todo operativa: la propia model card advierte de que el repositorio sera eliminado por estar obsoleto y redirige a `kernels-community/layer-norm`. Ademas, HuggingFace dejara de admitir repositorios de kernels con el tipo "model" a partir del 13 de septiembre de 2026, por lo que cualquier proyecto que dependa de esta ruta deberia migrar cuanto antes.
+La relevancia de esta ficha es sobre todo operativa: la propia model card advierte de que el repositorio sera eliminado por estar obsoleto y redirige a `kernels-community/layer-norm`. Ademas, Hugging Face dejara de admitir repositorios de kernels con el tipo "model" a partir del 13 de septiembre de 2026, por lo que cualquier proyecto que dependa de esta ruta deberia migrar cuanto antes.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es sobre todo operativa: la propia model card advier
 | Formato de pesos | no disponible (contiene artefactos binarios de compilacion CUDA, no pesos) |
 | Operaciones implementadas | dropout + residual + LayerNorm fusionados |
 | Origen del codigo | flash-attention, subdirectorio `csrc/layer_norm` |
-| Libreria de distribucion | `kernels` (HuggingFace) |
+| Libreria de distribucion | `kernels` (Hugging Face) |
 | Tamano del repositorio | 12,3 GB |
 | Descargas / likes | 0 / 0 |
 | Estado | deprecado; sera eliminado |
@@ -38,7 +38,7 @@ El codigo procede del subdirectorio `csrc/layer_norm` del repositorio flash-atte
 ## Capacidades
 
 - Ejecucion de la operacion fusionada dropout + residual + LayerNorm en GPU NVIDIA mediante CUDA.
-- Integracion con la libreria `kernels` de HuggingFace para carga de extensiones precompiladas.
+- Integracion con la libreria `kernels` de Hugging Face para carga de extensiones precompiladas.
 - Compatibilidad con el ecosistema flash-attention, al provenir de su mismo arbol de codigo.
 - No realiza generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No soporta tool calling ni function calling.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - GPU recomendadas: no disponible. No se especifican arquitecturas objetivo (Ampere, Hopper, Ada, etc.) en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada en la informacion disponible. Al tratarse de un kernel CUDA generico, es plausible en RTX de gama media y alta, pero no hay datos que lo verifiquen.
 - Espacio en disco: el repositorio ocupa 12,3 GB, previsiblemente por los binarios compilados para varias arquitecturas.
-- Opciones de despliegue: carga mediante la libreria `kernels` de HuggingFace; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: carga mediante la libreria `kernels` de Hugging Face; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. La unica afirmacion tecnica respaldada es la reduccion de accesos a memoria derivada de la fusion de operaciones, sin cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento que permitan comparar numericamente estas 
 
 - No es un modelo de lenguaje: no genera texto ni responde a prompts. Cualquier uso esperando capacidades de IA generativa es un error de interpretacion.
 - Repositorio deprecado: la model card indica explicitamente que sera eliminado y que debe usarse `kernels-community/layer-norm`.
-- Riesgo de rotura por cambios de plataforma: desde el 13 de septiembre de 2026 HuggingFace retira los repositorios de kernels publicados con el tipo "model".
+- Riesgo de rotura por cambios de plataforma: desde el 13 de septiembre de 2026 Hugging Face retira los repositorios de kernels publicados con el tipo "model".
 - Licencia no declarada en el repositorio: no se puede confirmar si el uso comercial esta permitido por esta publicacion concreta. El proyecto flash-attention del que deriva se distribuye bajo BSD-3-Clause, pero esa licencia corresponde al repositorio original, no necesariamente a este paquete.
 - Sin senales de adopcion: 0 descargas y 0 likes, sin issues ni documentacion adicional que permitan inferir soporte de la comunidad.
 - Dependencia de hardware: solo funciona en GPU NVIDIA compatibles con las arquitecturas para las que se compilo, conjunto que no se detalla.
@@ -95,11 +95,11 @@ No se dispone de datos de rendimiento que permitan comparar numericamente estas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/replicate/layer_norm
+- Hugging Face: https://huggingface.co/replicate/layer_norm
 - Repositorio sustituto recomendado: https://huggingface.co/kernels-community/layer-norm
 - Codigo original (flash-attention, `csrc/layer_norm`): https://github.com/Dao-AILab/flash-attention/tree/main/csrc/layer_norm
-- Incidencias de la libreria `kernels` en HuggingFace: https://github.com/huggingface/kernels/issues/new
-- Organizacion Replicate en HuggingFace: https://huggingface.co/replicate
+- Incidencias de la libreria `kernels` en Hugging Face: https://github.com/huggingface/kernels/issues/new
+- Organizacion Replicate en Hugging Face: https://huggingface.co/replicate
 - Replicate (sitio principal): https://replicate.com/
 - Catalogo de modelos de Replicate: https://replicate.com/explore
 - Organizacion Replicate en GitHub: https://github.com/replicate

@@ -50,7 +50,7 @@ No se proporcionan requisitos específicos de hardware en la documentación del 
 
 | Modelo | Tipo | Puntuación NAVSIM (local) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GETok-DSR (este repositorio) | Post-procesamiento sobre ChainFlow-VLA | 0.9492706849694933 | MIT | Código y artefactos en HuggingFace |
+| GETok-DSR (este repositorio) | Post-procesamiento sobre ChainFlow-VLA | 0.9492706849694933 | MIT | Código y artefactos en Hugging Face |
 | ChainFlow-VLA | Modelo VLA | 0.9491968762246324 | no disponible | Repositorio GitHub |
 
 No se dispone de información sobre otros métodos comparables en el contexto de NAVSIM en los datos proporcionados.
@@ -66,7 +66,7 @@ No se dispone de información sobre otros métodos comparables en el contexto de
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/minfishmovemountain/GETok-DSR-NAVSIM-v1
+- Repositorio de Hugging Face: https://huggingface.co/minfishmovemountain/GETok-DSR-NAVSIM-v1
 - NAVSIM v1.1 (GitHub): https://github.com/autonomousvision/navsim/tree/v1.1
 - ChainFlow-VLA (GitHub): https://github.com/AFARI-Research/ChainFlow-VLA
-- Espacio de NAVSIM en HuggingFace: https://huggingface.co/spaces/AGC2024-P/e2e-driving-navtest
+- Espacio de NAVSIM en Hugging Face: https://huggingface.co/spaces/AGC2024-P/e2e-driving-navtest

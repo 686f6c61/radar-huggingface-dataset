@@ -71,7 +71,7 @@ No hay resultados publicados en la model card para benchmarks estandar tipo MMLU
 - Cuantización INT8: ~110 MB; INT4: ~55 MB (estimaciones a partir del número de parámetros, no publicadas por el autor).
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4090, e incluso GPUs integradas. También funciona en CPU sin problema para inferencia por lotes moderados.
 - Para lotes pequeños (32-128 secuencias de 128 tokens), una CPU moderna o una GPU de gama media son suficientes; no se requieren A100 ni H100 salvo en escenarios de muy alto throughput.
-- Opciones de despliegue: Transformers (PyTorch), ONNX Runtime, TorchScript; también puede servirse con FastAPI o con `text-classification` de HuggingFace Inference Endpoints. No se mencionan pesos GGUF ni compatibilidad con llama.cpp u Ollama (no aplica a BERT).
+- Opciones de despliegue: Transformers (PyTorch), ONNX Runtime, TorchScript; también puede servirse con FastAPI o con `text-classification` de Hugging Face Inference Endpoints. No se mencionan pesos GGUF ni compatibilidad con llama.cpp u Ollama (no aplica a BERT).
 - No se publican cifras de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos directos entre este modelo y a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urartu65/gorkanai-tr-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Urartu65/gorkanai-tr-sentiment
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Repositorio del proyecto: https://github.com/GoGonuldas/gorkanai
 - Dataset de entrenamiento: https://huggingface.co/datasets/fthbrmnby/turkish_product_reviews

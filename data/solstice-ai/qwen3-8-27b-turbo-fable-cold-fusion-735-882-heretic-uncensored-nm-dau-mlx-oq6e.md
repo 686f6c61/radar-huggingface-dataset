@@ -81,12 +81,12 @@ Este modelo se diferencia de las alternativas por su cuantización oQ6e-mtp espe
 - Riesgo de alucinación: como todos los modelos de lenguaje, puede inventar hechos o razonamientos incorrectos, especialmente en tareas de razonamiento complejo o con contextos ambiguos.
 - Limitaciones de idioma: solo soporta inglés y chino; no se garantiza un rendimiento adecuado en otros idiomas.
 - Dependencia de hardware Apple: no se puede ejecutar en GPUs NVIDIA o AMD, lo que limita su uso en entornos de servidor tradicionales.
-- Sin garantías de producción: el modelo tiene 0 descargas y 0 likes en HuggingFace, y la documentación es escasa. No hay evidencia de pruebas exhaustivas en entornos de producción.
+- Sin garantías de producción: el modelo tiene 0 descargas y 0 likes en Hugging Face, y la documentación es escasa. No hay evidencia de pruebas exhaustivas en entornos de producción.
 - La cuantización de 6 bits puede introducir una ligera degradación en tareas de precisión numérica o matemática avanzada, aunque los benchmarks publicados muestran una pérdida mínima.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ6e
+- Repositorio Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-oQ6e
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo base en GGUF: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B

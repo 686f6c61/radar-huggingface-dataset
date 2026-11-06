@@ -74,6 +74,6 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentory/moss-soundeffect-gguf
+- Repositorio Hugging Face: https://huggingface.co/agentory/moss-soundeffect-gguf
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-SoundEffect-v2.0
 - Runtime OpenMOSS C++/GGML: https://github.com/pwilkin/openmoss

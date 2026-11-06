@@ -88,9 +88,9 @@ Debilidad declarada por el autor: sobre las 100 preguntas del libro, el modelo a
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen25-7b-harness-manual-lora (este) | Adaptador sobre 7,61B | 131.072 tokens (heredado) | 51/100 en preguntas del libro, 7/60 invenciones | apache-2.0 | HuggingFace, repositorio de 0,3 GB |
-| Qwen2.5-7B-Instruct (base) | 7,61B | 131.072 tokens | 6/100 en preguntas del libro, 0/60 invenciones | apache-2.0 | HuggingFace |
-| Otros adaptadores LoRA de la comunidad sobre Qwen2.5-7B (por ejemplo cgxjdzz/Qwen-2.5-7B-Instruct-novel-lora o sahilxai/Qwen-2.5-7b-PLC) | Adaptadores sobre 7,61B | 131.072 tokens (heredado) | no disponible | no disponible | HuggingFace / GitHub |
+| qwen25-7b-harness-manual-lora (este) | Adaptador sobre 7,61B | 131.072 tokens (heredado) | 51/100 en preguntas del libro, 7/60 invenciones | apache-2.0 | Hugging Face, repositorio de 0,3 GB |
+| Qwen2.5-7B-Instruct (base) | 7,61B | 131.072 tokens | 6/100 en preguntas del libro, 0/60 invenciones | apache-2.0 | Hugging Face |
+| Otros adaptadores LoRA de la comunidad sobre Qwen2.5-7B (por ejemplo cgxjdzz/Qwen-2.5-7B-Instruct-novel-lora o sahilxai/Qwen-2.5-7b-PLC) | Adaptadores sobre 7,61B | 131.072 tokens (heredado) | no disponible | no disponible | Hugging Face / GitHub |
 
 No se dispone de benchmarks comparables publicados para estos adaptadores alternativos en la informacion consultada, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -108,8 +108,8 @@ No se dispone de benchmarks comparables publicados para estos adaptadores altern
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/naveenasri0211/qwen25-7b-harness-manual-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
+- Hugging Face del adaptador: https://huggingface.co/naveenasri0211/qwen25-7b-harness-manual-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de codigo, datos y etiquetas del piloto: https://github.com/Naveenasri02/qwen25-lora-book-pilot
 - Variante base de Qwen2.5-7B: https://huggingface.co/Qwen/Qwen2.5-7B
 - Guia de despliegue local de Qwen2.5-7B-Instruct: https://aiindigo.com/tutorials/getting-started-with-qwen2-5-7b-instruct-self-hosted-privacy-performance

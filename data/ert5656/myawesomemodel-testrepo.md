@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ert5656 en un repositorio de HuggingFace con el identificador `ert5656/MyAwesomeModel-TestRepo`. Según la model card, se trata de una actualización de una versión anterior que mejora significativamente la profundidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ert5656 en un repositorio de Hugging Face con el identificador `ert5656/MyAwesomeModel-TestRepo`. Según la model card, se trata de una actualización de una versión anterior que mejora significativamente la profundidad de razonamiento e inferencia gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 Sin embargo, la información pública es extremadamente limitada: no se especifican parámetros, arquitectura, tamaño de contexto, ni detalles de entrenamiento. El repositorio tiene cero descargas y cero likes, y las fechas de creación y actualización (2026) sugieren que podría tratarse de una prueba o de un repositorio de test. La model card incluye una tabla de evaluación comparativa con modelos genéricos (Model1, Model2, Model1-v2), pero sin identificar qué modelos son ni qué benchmarks concretos se usaron. Por tanto, esta ficha debe interpretarse con cautela: muchos datos técnicos no están disponibles y la información proporcionada por el autor no puede verificarse de forma independiente.
 
@@ -97,6 +97,6 @@ La model card compara MyAwesomeModel con tres modelos anónimos (Model1, Model2,
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [ert5656/MyAwesomeModel-TestRepo](https://huggingface.co/ert5656/MyAwesomeModel-TestRepo)
+- Repositorio de Hugging Face: [ert5656/MyAwesomeModel-TestRepo](https://huggingface.co/ert5656/MyAwesomeModel-TestRepo)
 
 No se han encontrado otros enlaces (papers, blogs, repos de código, demos) en la información proporcionada.

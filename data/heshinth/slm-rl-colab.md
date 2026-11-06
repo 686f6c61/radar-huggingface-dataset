@@ -86,7 +86,7 @@ No se dispone de información sobre adaptadores comparables para la misma tarea 
 
 ## Enlaces
 
-- [HuggingFace - heshinth/slm-rl-colab](https://huggingface.co/heshinth/slm-rl-colab)
+- [Hugging Face - heshinth/slm-rl-colab](https://huggingface.co/heshinth/slm-rl-colab)
 - [Dataset asociado - heshinth/slm-rl-colab-data](https://huggingface.co/datasets/heshinth/slm-rl-colab-data)
 - [Modelo base - LiquidAI/LFM2.5-1.2B-Instruct](https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct)
 - [Framework SLM-RL (GitHub)](https://github.com/CraftsMan-Labs/SLM-RL)

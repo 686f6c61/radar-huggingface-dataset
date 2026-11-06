@@ -4,7 +4,7 @@
 
 El repositorio `dvader13/smollm3-3b-traj-1p23t` contiene los checkpoints intermedios de la trayectoria de entrenamiento por refuerzo (RL) del modelo SmolLM3-3B, publicados por un usuario independiente (dvader13) bajo licencia Apache 2.0. Se trata de 31 snapshots en precisión bf16 correspondientes a la primera época de entrenamiento, partiendo de la rung de preentrenamiento de 1,23 billones de tokens. El objetivo de este repositorio no es ofrecer un modelo listo para producción, sino proporcionar a la comunidad investigadora una ventana al proceso de optimización por refuerzo, permitiendo estudiar cómo evolucionan las capacidades del modelo a lo largo del entrenamiento.
 
-El modelo base, SmolLM3-3B, es un transformador decoder-only de 3 mil millones de parámetros desarrollado por HuggingFace, con atención de consultas agrupadas (GQA) y sin posicionamiento rotatorio (RoPE), diseñado para un despliegue eficiente y un rendimiento competitivo en la escala de 3B. Este repositorio en particular no incluye los pesos finales del modelo ajustado, sino una secuencia de checkpoints intermedios que pueden usarse para análisis de dinámica de entrenamiento, estudios de alineación o reproducción de experimentos.
+El modelo base, SmolLM3-3B, es un transformador decoder-only de 3 mil millones de parámetros desarrollado por Hugging Face, con atención de consultas agrupadas (GQA) y sin posicionamiento rotatorio (RoPE), diseñado para un despliegue eficiente y un rendimiento competitivo en la escala de 3B. Este repositorio en particular no incluye los pesos finales del modelo ajustado, sino una secuencia de checkpoints intermedios que pueden usarse para análisis de dinámica de entrenamiento, estudios de alineación o reproducción de experimentos.
 
 La relevancia de este recurso reside en la escasez de datos públicos sobre trayectorias completas de entrenamiento por refuerzo en modelos abiertos. Al proporcionar 31 puntos de control con un espaciado creciente (20 pasos al inicio, luego 40, 80 y 120), permite a los investigadores correlacionar métricas de rendimiento con el progreso de la optimización, algo poco común en la literatura.
 
@@ -23,7 +23,7 @@ La relevancia de este recurso reside en la escasez de datos públicos sobre tray
 
 ## Arquitectura y entrenamiento
 
-El modelo subyacente, SmolLM3-3B, emplea una arquitectura transformer decoder-only con atención de consultas agrupadas (GQA) para reducir el tamaño de la caché KV, y prescinde de codificaciones posicionales rotativas (RoPE), lo que según la documentación de HuggingFace mejora el rendimiento en tareas de contexto largo. El preentrenamiento del modelo base se realizó sobre un corpus de 11,2 billones de tokens (aunque el repositorio indica que la rung concreta utilizada como punto de partida fue de 1,23 billones de tokens), con un énfasis en razonamiento y código.
+El modelo subyacente, SmolLM3-3B, emplea una arquitectura transformer decoder-only con atención de consultas agrupadas (GQA) para reducir el tamaño de la caché KV, y prescinde de codificaciones posicionales rotativas (RoPE), lo que según la documentación de Hugging Face mejora el rendimiento en tareas de contexto largo. El preentrenamiento del modelo base se realizó sobre un corpus de 11,2 billones de tokens (aunque el repositorio indica que la rung concreta utilizada como punto de partida fue de 1,23 billones de tokens), con un énfasis en razonamiento y código.
 
 Los checkpoints de este repositorio corresponden a la fase de RLHF, concretamente la primera época de entrenamiento por refuerzo. Se proporcionan 31 snapshots con un espaciado que se amplía progresivamente: 20 pasos hasta el paso 200, luego 40, 80 y 120. No se detalla el algoritmo de RLHF empleado (p. ej., PPO, GRPO), el tipo de recompensa o la composición del dataset de preferencias; esa información no está disponible en el repositorio.
 
@@ -46,7 +46,7 @@ Los checkpoints de este repositorio corresponden a la fase de RLHF, concretament
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible para este repositorio. Al tratarse de checkpoints intermedios, los números de rendimiento dependerían del paso concreto y no se han facilitado. El modelo base SmolLM3-3B supera según HuggingFace a Llama 3.2 3B y Qwen2.5 3B, y compite con alternativas de 4B (Qwen3, Gemma3), pero esos datos corresponden al modelo final, no a estos checkpoints.
+No se han publicado resultados de benchmarks en la información disponible para este repositorio. Al tratarse de checkpoints intermedios, los números de rendimiento dependerían del paso concreto y no se han facilitado. El modelo base SmolLM3-3B supera según Hugging Face a Llama 3.2 3B y Qwen2.5 3B, y compite con alternativas de 4B (Qwen3, Gemma3), pero esos datos corresponden al modelo final, no a estos checkpoints.
 
 ## Requisitos de hardware
 
@@ -54,12 +54,12 @@ No se han publicado resultados de benchmarks en la información disponible para 
 - VRAM estimada para inferencia: entre 6 GB y 10 GB dependiendo de la longitud del contexto y del tamaño de lote. Con contexto de 128K tokens, la memoria puede dispararse; para pruebas cortas, una GPU consumer de 8-12 GB (RTX 3060, RTX 3080, RTX 4070) es suficiente.
 - GPU recomendadas: RTX 4090 (24 GB) para contextos largos o A10G/A100 para despliegue profesional.
 - Cabe en GPUs consumer de gama media (8 GB o más) con cuantización adicional, aunque el repositorio solo ofrece bf16.
-- Opciones de despliegue: llama.cpp (con conversión a GGUF), vLLM (con soporte de bf16), Ollama (tras conversión), HuggingFace Transformers con `device_map="auto"`.
+- Opciones de despliegue: llama.cpp (con conversión a GGUF), vLLM (con soporte de bf16), Ollama (tras conversión), Hugging Face Transformers con `device_map="auto"`.
 - Latencia y throughput: no se dispone de datos medidos en este repositorio; en una RTX 4090 con bf16, se estiman 30-60 tokens/s para generación, pero no se ha verificado.
 
 ## Comparativa con modelos similares
 
-No existe una comparativa directa disponible para este repositorio concreto, ya que no es un modelo final sino una secuencia de checkpoints de entrenamiento. La alternativa más próxima es el modelo base SmolLM3-3B final de HuggingFace, y otros modelos de 3B como Llama 3.2 3B o Qwen2.5 3B, pero la comparación no es significativa para checkpoints intermedios. Se indica "no disponible" para esta sección.
+No existe una comparativa directa disponible para este repositorio concreto, ya que no es un modelo final sino una secuencia de checkpoints de entrenamiento. La alternativa más próxima es el modelo base SmolLM3-3B final de Hugging Face, y otros modelos de 3B como Llama 3.2 3B o Qwen2.5 3B, pero la comparación no es significativa para checkpoints intermedios. Se indica "no disponible" para esta sección.
 
 ## Limitaciones y advertencias
 
@@ -73,8 +73,8 @@ No existe una comparativa directa disponible para este repositorio concreto, ya 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-traj-1p23t
-- Modelo base SmolLM3-3B (HuggingFace): https://huggingface.co/HuggingFaceTB/SmolLM3-3B
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-traj-1p23t
+- Modelo base SmolLM3-3B (Hugging Face): https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Documentación técnica de SmolLM3 en Transformers: https://huggingface.co/docs/transformers/en/model_doc/smollm3
 - Repositorio GitHub de SmolLM: https://github.com/huggingface/smollm
 - Página de SmolLM3-3B en atomic.chat: https://atomic.chat/models/smollm3-3b

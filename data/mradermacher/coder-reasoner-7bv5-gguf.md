@@ -48,7 +48,7 @@ Al tratarse de un merge de modelos de 7B, la arquitectura subyacente es presumib
 - Prototipado de razonamiento sobre codigo: el nombre del modelo sugiere capacidad de razonar sobre problemas de programacion; util para explorar soluciones paso a paso en entornos de desarrollo, aunque sin benchmarks que lo respalden.
 - Despliegue en entornos con recursos limitados: las cuantizaciones Q2_K (3,1 GB) y Q3_K_S (3,6 GB) permiten ejecutar el modelo en portatiles con CPU y poca RAM, util para pruebas de concepto y demos.
 - Chat conversacional en ingles: al estar etiquetado como conversacional, puede emplearse en asistentes de texto en ingles sobre llama.cpp u Ollama, con la ventaja de que los datos no salen del equipo.
-- Integracion en pipelines de inferencia gestionada: la etiqueta "endpoints_compatible" facilita desplegarlo en plataformas de inferencia que aceptan modelos de HuggingFace, para experimentacion rapida.
+- Integracion en pipelines de inferencia gestionada: la etiqueta "endpoints_compatible" facilita desplegarlo en plataformas de inferencia que aceptan modelos de Hugging Face, para experimentacion rapida.
 - Evaluacion comparativa de merges: util para investigadores que quieran medir el efecto de distintas tecnicas de merge en modelos de 7B, usando las cuantizaciones Q8_0 (8,2 GB) o f16 (15,3 GB) como referencia de maxima fidelidad.
 - Base para fine-tuning posterior: al ser un merge de 7B con pesos en safetensors en el modelo original, puede servir de punto de partida para ajuste supervisado en tareas de codigo, siempre que la licencia lo permita (no disponible, verificar antes).
 
@@ -90,7 +90,7 @@ La comparacion es orientativa: para este modelo no hay datos publicados de conte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/coder-reasoner-7Bv5-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/coder-reasoner-7Bv5-GGUF
 - Modelo base: https://huggingface.co/entfane/coder-reasoner-7Bv5
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#coder-reasoner-7Bv5-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

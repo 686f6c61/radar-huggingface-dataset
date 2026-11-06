@@ -4,7 +4,7 @@
 
 HexaBee · Translation LoRA es un adaptador LoRA (PEFT) publicado por el usuario Iman998 como fase 3 de la linaje de entrenamiento HexaBee-4B. No es un modelo completo: se carga sobre el modelo base Iman998/HexaBee-4B-Multilingual-Base, que pertenece a la familia Gemma 3 según la propia model card. Su función declarada es la traducción multilingüe entre seis idiomas: persa (fa), inglés (en), árabe (ar), chino (zh), hebreo (he) y español (es). El repositorio ocupa 1,0 GB e incluye únicamente los pesos del adaptador en safetensors, la configuración normalizada, el tokenizer/procesador y estadísticas de entrenamiento y evaluación.
 
-El adaptador se inicializa desde cero tras una fusión intermedia: el adaptador de preentrenamiento (PT) se continúa durante el SFT multilingüe, mientras que el adaptador de traducción se entrena aparte sobre el modelo ya fusionado. La model card insiste en que debe cargarse sobre el modelo base exacto indicado y en que no debe aplicarse de nuevo el adaptador PT. El pipeline declarado en HuggingFace es image-text-to-text, coherente con el carácter multimodal de la familia Gemma 3, aunque la documentación no detalla tareas de visión concretas para este adaptador.
+El adaptador se inicializa desde cero tras una fusión intermedia: el adaptador de preentrenamiento (PT) se continúa durante el SFT multilingüe, mientras que el adaptador de traducción se entrena aparte sobre el modelo ya fusionado. La model card insiste en que debe cargarse sobre el modelo base exacto indicado y en que no debe aplicarse de nuevo el adaptador PT. El pipeline declarado en Hugging Face es image-text-to-text, coherente con el carácter multimodal de la familia Gemma 3, aunque la documentación no detalla tareas de visión concretas para este adaptador.
 
 Su relevancia es acotada y de tipo investigación: se presenta como un artefacto histórico auditado de una linea de trabajo centrada en traducción de seis idiomas con datos sintéticos, no como un modelo de producción validado. Tiene 0 descargas y 0 likes, no publica resultados numéricos de benchmarks y su evaluación se apoya en referencias sintéticas y jueces basados en modelo, lo que limita la interpretación de cualquier métrica. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
@@ -70,10 +70,10 @@ El ecosistema publica varios artefactos de la misma familia, lo que permite una 
 
 | Modelo | Tipo | Fase | Idiomas declarados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HexaBee · Translation LoRA (este) | Adaptador LoRA sobre HexaBee-4B-Multilingual-Base | Fase 3, traducción | fa, en, ar, zh, he, es | Gemma | HuggingFace, 1,0 GB, 0 descargas |
-| HexaBee-4B-Multilingual-Base | Modelo base | Base | No detallado en la información disponible | Gemma | HuggingFace |
-| HexaBee-4B-PT-LoRA | Adaptador LoRA | Preentrenamiento sobre Wikipedia PT | No detallado en la información disponible | Gemma | HuggingFace |
-| HexaBee-4B-Multilingual-SFT-LoRA | Adaptador LoRA | SFT multilingüe | No detallado en la información disponible | Gemma | HuggingFace |
+| HexaBee · Translation LoRA (este) | Adaptador LoRA sobre HexaBee-4B-Multilingual-Base | Fase 3, traducción | fa, en, ar, zh, he, es | Gemma | Hugging Face, 1,0 GB, 0 descargas |
+| HexaBee-4B-Multilingual-Base | Modelo base | Base | No detallado en la información disponible | Gemma | Hugging Face |
+| HexaBee-4B-PT-LoRA | Adaptador LoRA | Preentrenamiento sobre Wikipedia PT | No detallado en la información disponible | Gemma | Hugging Face |
+| HexaBee-4B-Multilingual-SFT-LoRA | Adaptador LoRA | SFT multilingüe | No detallado en la información disponible | Gemma | Hugging Face |
 
 Frente a alternativas externas de traducción multilingüe (por ejemplo, modelos de traducción dedicados o LLM multilingües de tamaño similar), no se dispone de parámetros, contexto, rendimiento ni licencia verificados en la información proporcionada, por lo que no se incluye comparación numérica.
 
@@ -96,7 +96,7 @@ Frente a alternativas externas de traducción multilingüe (por ejemplo, modelos
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Iman998/HexaBee-4B-Translation-LoRA
+- Hugging Face del adaptador: https://huggingface.co/Iman998/HexaBee-4B-Translation-LoRA
 - Modelo base: https://huggingface.co/Iman998/HexaBee-4B-Multilingual-Base
 - Familia HexaBee-4B: https://huggingface.co/Iman998/HexaBee-4B
 - HexaBee · Wikipedia PT LoRA: https://huggingface.co/Iman998/HexaBee-4B-PT-LoRA

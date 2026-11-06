@@ -73,7 +73,7 @@ No se dispone de datos comparativos de este adaptador con otros modelos. Se pued
 
 ## Enlaces
 
-- [Repositorio HuggingFace del adaptador](https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n551-adapter)
+- [Repositorio Hugging Face del adaptador](https://huggingface.co/kelsbeans/qwen3-1.7b-digestive-coach-n551-adapter)
 - [Modelo base Qwen3-1.7B (Unsloth)](https://huggingface.co/unsloth/qwen3-1.7b-unsloth-bnb-4bit)
 - [GitHub de Qwen3](https://github.com/QwenLM/Qwen3)
 - [Página del modelo Qwen3-1.7B en Qualcomm AI Hub](https://aihub.qualcomm.com/models/qwen3_1_7b)

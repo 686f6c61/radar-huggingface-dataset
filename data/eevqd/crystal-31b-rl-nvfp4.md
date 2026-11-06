@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: eevqd/Crystal-31B-RL-NVFP4](https://huggingface.co/eevqd/Crystal-31B-RL-NVFP4)
+- [Hugging Face: eevqd/Crystal-31B-RL-NVFP4](https://huggingface.co/eevqd/Crystal-31B-RL-NVFP4)
 - [Modelo base: hiwaifu-research/Crystal-31B-RL](https://huggingface.co/hiwaifu-research/Crystal-31B-RL)
 - No se han encontrado otros enlaces (papers, blogs, repos o demos) en la información disponible.

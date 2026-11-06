@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Mistral-7B-v0.1-ONNX",
+  "slug": "liodon-ai-mistral-7b-v0-1-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Mistral-7B-v0.1-ONNX",
+  "created_at": "2026-11-06T09:48:46.000Z",
+  "updated_at": "2026-11-06T09:57:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mistral",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:quantized:mistralai/Mistral-7B-v0.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44527088306,
+  "storage_human": "44.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/Mistral-7B-v0.1-onnx · Hugging Face",
+      "url": "https://huggingface.co/microsoft/Mistral-7B-v0.1-onnx",
+      "snippet": "This repository hosts the optimized versions of Mistral-7B-v0.1 to accelerate inference with ONNX Runtime CUDA execution provider. See the usage instructions for how to inference this model with the ONNX files hosted in this repository ..."
+    },
+    {
+      "title": "README.md · microsoft/Mistral-7B-v0.1-onnx at main",
+      "url": "https://huggingface.co/microsoft/Mistral-7B-v0.1-onnx/blob/main/README.md",
+      "snippet": "See the usage instructions for how to inference this model with the ONNX files hosted in this repository. Model Description Developed by: MistralAI Model type: Pretrained generative text model License: Apache 2.0 License Model Description: This is a conversion of the Mistral-7B-v0.1 for ONNX Runtime inference with CUDA execution provider."
+    }
+  ]
+}

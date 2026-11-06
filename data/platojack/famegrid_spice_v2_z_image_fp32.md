@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `platojack/famegrid_spice_v2_z_image_fp32` es un artefacto publicado en HuggingFace por el usuario `platojack` bajo licencia Apache 2.0. Se trata de un repositorio de 1,5 GB creado y actualizado el 22 de septiembre de 2026, sin pipeline declarado, sin idiomas declarados y sin descargas ni interacciones registradas en el momento de la consulta. La model card asociada contiene unicamente el campo de licencia, sin documentacion tecnica adicional.
+El repositorio `platojack/famegrid_spice_v2_z_image_fp32` es un artefacto publicado en Hugging Face por el usuario `platojack` bajo licencia Apache 2.0. Se trata de un repositorio de 1,5 GB creado y actualizado el 22 de septiembre de 2026, sin pipeline declarado, sin idiomas declarados y sin descargas ni interacciones registradas en el momento de la consulta. La model card asociada contiene unicamente el campo de licencia, sin documentacion tecnica adicional.
 
 No se dispone de informacion verificable sobre la arquitectura, el numero de parametros, el proceso de entrenamiento, los datos utilizados ni las capacidades del modelo. El sufijo `z_image_fp32` del identificador sugiere un artefacto relacionado con generacion de imagenes y pesos en precision fp32, pero esta interpretacion es una inferencia a partir del nombre del repositorio y no esta confirmada por ninguna fuente primaria ni secundaria.
 
@@ -85,7 +85,7 @@ No disponible. No se ha podido determinar la categoria del modelo (lenguaje, vis
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| platojack/famegrid_spice_v2_z_image_fp32 | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| platojack/famegrid_spice_v2_z_image_fp32 | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No disponible. No se ha podido determinar la categoria del modelo (lenguaje, vis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/platojack/famegrid_spice_v2_z_image_fp32
+- Repositorio en Hugging Face: https://huggingface.co/platojack/famegrid_spice_v2_z_image_fp32
 - Model card: https://huggingface.co/platojack/famegrid_spice_v2_z_image_fp32/raw/main/README.md
-- Perfil del autor en HuggingFace: https://huggingface.co/platojack
+- Perfil del autor en Hugging Face: https://huggingface.co/platojack
 - Papers, blogs, repositorios de codigo o demos asociados: no disponible; la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

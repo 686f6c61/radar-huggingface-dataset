@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ukaratep/Reinforce-CartPole-v1` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno clásico CartPole-v1 de Gym/Gymnasium. Lo publica el usuario de HuggingFace `ukaratep` como parte del curso Deep Reinforcement Learning Course (Unidad 4), y su model card remite explícitamente a ese material docente. No es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una política que decide entre dos acciones (empujar el carro a izquierda o derecha) a partir de una observación de cuatro dimensiones.
+`ukaratep/Reinforce-CartPole-v1` es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE sobre el entorno clásico CartPole-v1 de Gym/Gymnasium. Lo publica el usuario de Hugging Face `ukaratep` como parte del curso Deep Reinforcement Learning Course (Unidad 4), y su model card remite explícitamente a ese material docente. No es un modelo de lenguaje: no procesa ni genera texto, sino que aprende una política que decide entre dos acciones (empujar el carro a izquierda o derecha) a partir de una observación de cuatro dimensiones.
 
 El artefacto es relevante únicamente como referencia educativa y como ejemplo mínimo de un pipeline de RL publicado en el Hub con `model-index` y métrica declarada. El autor reporta una recompensa media de 401,20 ± 113,95 en CartPole-v1, un resultado por debajo del umbral habitual de resolución del entorno (500 puntos máximos por episodio) y con una desviación típica muy alta, lo que indica una política inestable.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ukaratep/Reinforce-CartPole-v1 | No disponible | No aplica | mean_reward 401,20 ± 113,95 en CartPole-v1 (no verificado) | No disponible | Repositorio de 0,0 GB en HuggingFace |
+| ukaratep/Reinforce-CartPole-v1 | No disponible | No aplica | mean_reward 401,20 ± 113,95 en CartPole-v1 (no verificado) | No disponible | Repositorio de 0,0 GB en Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado datos de otros agentes de CartPole-v1 (por ejemplo, implementaciones de PPO o DQN del mismo curso) que permitan una comparación numérica rigurosa; por tanto, la comparativa queda como no disponible.
@@ -87,7 +87,7 @@ No se han proporcionado datos de otros agentes de CartPole-v1 (por ejemplo, impl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukaratep/Reinforce-CartPole-v1
+- Modelo en Hugging Face: https://huggingface.co/ukaratep/Reinforce-CartPole-v1
 - Curso Deep Reinforcement Learning, Unidad 4 (material de referencia citado por el autor): https://huggingface.co/deep-rl-course/unit4/introduction
 - Paper de REINFORCE (Williams, 1992): no disponible en la información proporcionada
 - Repositorio de código, demo o blog del autor: no disponible en la información proporcionada

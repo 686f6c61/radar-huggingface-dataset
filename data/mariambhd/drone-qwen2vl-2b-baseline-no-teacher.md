@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mariambhd/drone-qwen2vl-2b-baseline-no-teacher` es un adaptador LoRA sobre el modelo vision-lenguaje `Qwen/Qwen2-VL-2B-Instruct` de Alibaba, publicado por el usuario mariambhd en HuggingFace. Su proposito es el reconocimiento de acciones humanas en secuencias de video grabadas desde drones, clasificando cada clip en una de siete categorias: attacking, hitting, kicking, clapping, waving, walking y running. No se trata de un modelo completo, sino de un adaptador PEFT que debe cargarse junto al modelo base original.
+`mariambhd/drone-qwen2vl-2b-baseline-no-teacher` es un adaptador LoRA sobre el modelo vision-lenguaje `Qwen/Qwen2-VL-2B-Instruct` de Alibaba, publicado por el usuario mariambhd en Hugging Face. Su proposito es el reconocimiento de acciones humanas en secuencias de video grabadas desde drones, clasificando cada clip en una de siete categorias: attacking, hitting, kicking, clapping, waving, walking y running. No se trata de un modelo completo, sino de un adaptador PEFT que debe cargarse junto al modelo base original.
 
 El nombre del repositorio indica que se trata de un "baseline sin teacher": un experimento de destilacion de conocimiento en el que el termino de imitacion del profesor se anula (alpha=0), de modo que el adaptador se entrena unicamente con entropia cruzada contra las etiquetas reales. Sirve, por tanto, como referencia inferior frente a la que medir variantes de destilacion que si incorporan un modelo profesor de mayor tamano (Qwen2.5-VL-3B con su propio LoRA).
 
@@ -69,9 +69,9 @@ El conjunto de test es muy pequeno (40 videos, cada video equivale a 2.5 puntos 
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2-VL-2B + LoRA, sin teacher) | 2B (base) | No disponible | 80.00% accuracy / 69.63% macro F1 | No disponible | HuggingFace (0 descargas) |
-| Profesor (Qwen2.5-VL-3B + LoRA) | 3B (base) | No disponible | 95.00% accuracy / 96.43% macro F1 | No disponible | HuggingFace |
-| Qwen2-VL-2B-Instruct (base sin adaptar) | 2B | No disponible | No evaluado en esta tarea | Apache 2.0 (segun el modelo base) | HuggingFace |
+| Este adaptador (Qwen2-VL-2B + LoRA, sin teacher) | 2B (base) | No disponible | 80.00% accuracy / 69.63% macro F1 | No disponible | Hugging Face (0 descargas) |
+| Profesor (Qwen2.5-VL-3B + LoRA) | 3B (base) | No disponible | 95.00% accuracy / 96.43% macro F1 | No disponible | Hugging Face |
+| Qwen2-VL-2B-Instruct (base sin adaptar) | 2B | No disponible | No evaluado en esta tarea | Apache 2.0 (segun el modelo base) | Hugging Face |
 
 La comparativa directa con otros adaptadores de reconocimiento de acciones en video no esta disponible en la informacion proporcionada.
 
@@ -89,6 +89,6 @@ La comparativa directa con otros adaptadores de reconocimiento de acciones en vi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mariambhd/drone-qwen2vl-2b-baseline-no-teacher
+- Repositorio Hugging Face: https://huggingface.co/mariambhd/drone-qwen2vl-2b-baseline-no-teacher
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Modelo profesor referenciado: https://huggingface.co/mariambhd/drone-qwen25vl-3b-lora-7class

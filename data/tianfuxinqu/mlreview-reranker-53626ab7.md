@@ -88,6 +88,6 @@ No es posible establecer una comparación directa en términos de rendimiento de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TianfuXinqu/mlreview-reranker-53626ab7
+- Hugging Face: https://huggingface.co/TianfuXinqu/mlreview-reranker-53626ab7
 - Repositorio de rerankers de la comunidad: https://github.com/agentset-ai/awesome-rerankers
 - Librería unificada de rerankers: https://github.com/AnswerDotAI/rerankers

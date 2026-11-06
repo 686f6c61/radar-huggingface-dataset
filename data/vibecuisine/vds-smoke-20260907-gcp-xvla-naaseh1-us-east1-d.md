@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VibeCuisine/vds-smoke-20260907-gcp-xvla-naaseh1-us-east1-d es una política robótica basada en el framework X-VLA, desarrollada por VibeCuisine y publicada en HuggingFace. Se trata de un modelo de tipo Vision-Language-Action (VLA) que ha sido fine-tuned desde el modelo base lerobot/xvla-base para ejecutar una tarea concreta de manipulación: agarrar una jarra de pie por sus caras anchas y colocarla en un soporte, con el pitorro orientado a la derecha. El modelo está diseñado para integrarse con el ecosistema LeRobot y se ejecuta en el robot seeed_b601_rs_follower.
+VibeCuisine/vds-smoke-20260907-gcp-xvla-naaseh1-us-east1-d es una política robótica basada en el framework X-VLA, desarrollada por VibeCuisine y publicada en Hugging Face. Se trata de un modelo de tipo Vision-Language-Action (VLA) que ha sido fine-tuned desde el modelo base lerobot/xvla-base para ejecutar una tarea concreta de manipulación: agarrar una jarra de pie por sus caras anchas y colocarla en un soporte, con el pitorro orientado a la derecha. El modelo está diseñado para integrarse con el ecosistema LeRobot y se ejecuta en el robot seeed_b601_rs_follower.
 
 La arquitectura X-VLA, presentada en el paper 2510.10274, utiliza un enfoque de soft prompts y flow matching. Trata cada configuración de robot o hardware como una "tarea" codificada mediante un pequeño conjunto de embeddings aprendibles, lo que permite que un único modelo reconcilie distintas morfologías, sensores y espacios de acción. Este modelo en particular cuenta con 879.738.545 parámetros y un tamaño de repositorio de 1.8 GB, lo que sugiere pesos en FP16. Al estar entrenado con un único episodio de demostración (270 frames a 20 FPS), representa un caso extremo de fine-tuning con datos muy limitados, relevante para investigar la eficiencia de datos en aprendizaje por imitación.
 
@@ -52,12 +52,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: los pesos en FP16 ocupan aproximadamente 1.8 GB, según el tamaño del repositorio. Para inferencia se estima un mínimo de 2 GB de VRAM, más memoria para activaciones y buffers, por lo que se recomienda entre 2 y 4 GB.
 - GPU recomendadas: cualquier GPU NVIDIA con al menos 4 GB de VRAM, como una RTX 3060, RTX 4060, A10 o L4. No hay requisitos oficiales publicados por el autor.
 - Compatibilidad con GPUs de consumo: sí, el modelo cabe en GPUs de consumo con 4 GB o más de VRAM, lo que permite ejecutar la política en tiempo real a 20 FPS.
-- Opciones de despliegue: LeRobot (mediante `lerobot-rollout`), HuggingFace Hub para la descarga de pesos. No aplica vLLM, llama.cpp ni Ollama, al no ser un modelo de lenguaje.
+- Opciones de despliegue: LeRobot (mediante `lerobot-rollout`), Hugging Face Hub para la descarga de pesos. No aplica vLLM, llama.cpp ni Ollama, al no ser un modelo de lenguaje.
 - Latencia y throughput: no disponible. El entrenamiento se completó en 10 pasos con batch size 1, lo que sugiere una inferencia rápida en una GPU modesta, pero no hay datos medidos publicados.
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparación detallada en la información proporcionada. Los modelos comparables en la categoría de VLA incluyen OpenVLA y π0, pero no hay datos publicados sobre sus parámetros, licencias o rendimiento en esta fuente. Se recomienda consultar las respectivas fichas de HuggingFace para obtener datos actualizados.
+No se dispone de información suficiente para una comparación detallada en la información proporcionada. Los modelos comparables en la categoría de VLA incluyen OpenVLA y π0, pero no hay datos publicados sobre sus parámetros, licencias o rendimiento en esta fuente. Se recomienda consultar las respectivas fichas de Hugging Face para obtener datos actualizados.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparación detallada en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-xvla-naaseh1-us-east1-d
+- Hugging Face: https://huggingface.co/VibeCuisine/vds-smoke-20260907-gcp-xvla-naaseh1-us-east1-d
 - Paper X-VLA: https://huggingface.co/papers/2510.10274
 - Dataset de entrenamiento: https://huggingface.co/datasets/VibeCuisine/naaseh1-bottle-holder-calib-090326
 - LeRobot: https://github.com/huggingface/lerobot

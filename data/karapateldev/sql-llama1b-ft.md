@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KaraPatelDev/sql-llama1b-ft` es un ajuste fino (fine-tuning) del modelo Llama 3.2 1B Instruct, publicado por el usuario KaraPatelDev en HuggingFace. El nombre del repositorio sugiere una especialización en generación de SQL, aunque la model card no documenta explícitamente el dataset de entrenamiento ni el objetivo concreto del ajuste. Se trata de un modelo derivado de la variante cuantizada en 4 bits de Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`), entrenado con la librería Unsloth sobre el stack TRL/Transformers.
+`KaraPatelDev/sql-llama1b-ft` es un ajuste fino (fine-tuning) del modelo Llama 3.2 1B Instruct, publicado por el usuario KaraPatelDev en Hugging Face. El nombre del repositorio sugiere una especialización en generación de SQL, aunque la model card no documenta explícitamente el dataset de entrenamiento ni el objetivo concreto del ajuste. Se trata de un modelo derivado de la variante cuantizada en 4 bits de Unsloth (`unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit`), entrenado con la librería Unsloth sobre el stack TRL/Transformers.
 
 Con 1.000 millones de parámetros, es un modelo pequeño orientado a tareas de generación de texto con un coste de inferencia muy bajo, lo que lo hace atractivo para despliegues en CPU o GPUs de consumo. La relevancia de esta ficha es limitada: el repositorio no incluye métricas, datos de entrenamiento ni evaluación, y cuenta con cero descargas y cero likes en el momento de la consulta. Debe tratarse como un experimento de ajuste fino comunitario, no como un modelo listo para producción.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| KaraPatelDev/sql-llama1b-ft | 1B | no disponible (base: 128k) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
-| Llama 3.2 1B Instruct | 1B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con evaluación publicada |
-| Qwen2.5-Coder-1.5B | 1,5B | 32k | Apache 2.0 | HuggingFace | Especializado en código, con benchmarks públicos |
-| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | HuggingFace | Alternativa pequeña con evaluación documentada |
+| KaraPatelDev/sql-llama1b-ft | 1B | no disponible (base: 128k) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentación de entrenamiento |
+| Llama 3.2 1B Instruct | 1B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con evaluación publicada |
+| Qwen2.5-Coder-1.5B | 1,5B | 32k | Apache 2.0 | Hugging Face | Especializado en código, con benchmarks públicos |
+| SmolLM2-1.7B-Instruct | 1,7B | 8k | Apache 2.0 | Hugging Face | Alternativa pequeña con evaluación documentada |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: KaraPatelDev/sql-llama1b-ft](https://huggingface.co/KaraPatelDev/sql-llama1b-ft)
+- [Hugging Face: KaraPatelDev/sql-llama1b-ft](https://huggingface.co/KaraPatelDev/sql-llama1b-ft)
 - [Modelo base: unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [Llama 3.2 (Meta)](https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/)

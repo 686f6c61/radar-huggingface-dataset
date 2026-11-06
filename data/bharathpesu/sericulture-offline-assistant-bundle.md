@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sericulture offline assistant bundle es un paquete de recursos creado por el usuario BharathPESU y publicado en HuggingFace, que reúne todos los componentes necesarios para construir un asistente conversacional de sericultura (crianza de gusanos de seda) que funciona sin conexión en dispositivos móviles Android. El bundle combina un modelo de embeddings multilingüe cuantizado para búsqueda semántica local, un modelo de lenguaje pequeño cuantizado en formato GGUF para inferencia en el dispositivo, una base de datos SQLite con los pasajes indexados y código Kotlin de ejemplo para la integración.
+Sericulture offline assistant bundle es un paquete de recursos creado por el usuario BharathPESU y publicado en Hugging Face, que reúne todos los componentes necesarios para construir un asistente conversacional de sericultura (crianza de gusanos de seda) que funciona sin conexión en dispositivos móviles Android. El bundle combina un modelo de embeddings multilingüe cuantizado para búsqueda semántica local, un modelo de lenguaje pequeño cuantizado en formato GGUF para inferencia en el dispositivo, una base de datos SQLite con los pasajes indexados y código Kotlin de ejemplo para la integración.
 
 El problema que resuelve es el acceso a información agrícola especializada en zonas con conectividad limitada: el sistema implementa una arquitectura RAG (Retrieval-Augmented Generation) completamente offline, donde el dispositivo recupera pasajes relevantes de una base de conocimiento local y el LLM genera respuestas a partir de ellos. El contenido indexado procede del Central Sericultural Research & Training Institute, del portal TNAU Agritech y de literatura verificada de ResearchGate, con soporte específico para kannada además del inglés.
 
@@ -83,7 +83,7 @@ La ventaja diferencial del bundle no es el modelo en sí (Qwen3-0.6B es pequeño
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BharathPESU/sericulture-offline-assistant-bundle
+- Repositorio en Hugging Face: https://huggingface.co/BharathPESU/sericulture-offline-assistant-bundle
 - Modelo de lenguaje base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Modelo de embeddings base: https://huggingface.co/intfloat/multilingual-e5-small
 - Fuentes de contenido citadas en la model card: Central Sericultural Research & Training Institute, TNAU Agritech Portal (https://agritech.tnau.ac.in), ResearchGate (https://www.researchgate.net)

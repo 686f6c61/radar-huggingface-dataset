@@ -97,7 +97,7 @@ La comparación con modelos de chat de propósito general es poco informativa: c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/clef-oQ8e
+- Modelo en Hugging Face: https://huggingface.co/Jundot/clef-oQ8e
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - Perfil del autor: https://huggingface.co/Jundot/models
 - Cuantización hermana del backbone: https://huggingface.co/Jundot/Qwen3.8-27B-oQ8e-mtp

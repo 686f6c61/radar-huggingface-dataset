@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diablomike20/chatgpt-gpt-codex-V2-GGUF` es un modelo de generación de texto publicado en HuggingFace por el usuario diablomike20, distribuido en formato GGUF y derivado de un adaptador PEFT (LoRA) sobre el modelo base `mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking`. Con 4.022.468.096 parámetros totales (aproximadamente 4 mil millones), se posiciona en la gama de modelos pequeños, aptos para inferencia en hardware de consumo. La model card es extremadamente escueta y no aporta detalles técnicos sobre arquitectura interna, contexto o proceso de entrenamiento más allá de la lista de datasets empleados.
+`diablomike20/chatgpt-gpt-codex-V2-GGUF` es un modelo de generación de texto publicado en Hugging Face por el usuario diablomike20, distribuido en formato GGUF y derivado de un adaptador PEFT (LoRA) sobre el modelo base `mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking`. Con 4.022.468.096 parámetros totales (aproximadamente 4 mil millones), se posiciona en la gama de modelos pequeños, aptos para inferencia en hardware de consumo. La model card es extremadamente escueta y no aporta detalles técnicos sobre arquitectura interna, contexto o proceso de entrenamiento más allá de la lista de datasets empleados.
 
 El modelo se presenta como una variante orientada a código ("codex") con ajuste fino supervisado sobre conversaciones y datos de seguridad, empleando datasets como `mondk/chatgpt-gpt-chat-jsonl`, `mondk/joke-redteam-safety-dataset`, `TeichAI/gpt-5.1-codex-max-1000x` y `TeichAI/glm-4.7-350x`. El autor afirma que ofrece "código más limpio y respuestas más rápidas" a costa de una ligera pérdida de precisión en código, si bien no se aportan métricas que respalden estas afirmaciones.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| diablomike20/chatgpt-gpt-codex-V2-GGUF | 4,02B | No disponible | Apache 2.0 | GGUF | HuggingFace, 0 descargas |
+| diablomike20/chatgpt-gpt-codex-V2-GGUF | 4,02B | No disponible | Apache 2.0 | GGUF | Hugging Face, 0 descargas |
 | Modelos comparables de 4B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre modelos alternativos directamente comparables en la documentación proporcionada. La comparativa con alternativas de la misma categoría (modelos de ~4B orientados a código o conversación) no está disponible.
@@ -82,7 +82,7 @@ No se dispone de información sobre modelos alternativos directamente comparable
 
 ## Enlaces
 
-- [HuggingFace: diablomike20/chatgpt-gpt-codex-V2-GGUF](https://huggingface.co/diablomike20/chatgpt-gpt-codex-V2-GGUF)
+- [Hugging Face: diablomike20/chatgpt-gpt-codex-V2-GGUF](https://huggingface.co/diablomike20/chatgpt-gpt-codex-V2-GGUF)
 - [Modelo base: mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking](https://huggingface.co/mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking)
 - [Safetensors del adaptador: mondk/Safetensors.chatgpt-gpt-codex-V2](https://huggingface.co/mondk/Safetensors.chatgpt-gpt-codex-V2)
 - [Dataset: mondk/chatgpt-gpt-chat-jsonl](https://huggingface.co/datasets/mondk/chatgpt-gpt-chat-jsonl)

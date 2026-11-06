@@ -76,8 +76,8 @@ La principal ventaja de este artefacto frente a las alternativas es la cobertura
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto CTranslate2: https://huggingface.co/superlinked/madlad400-3b-mt-ctranslate2-bfloat16
-- Modelo original en HuggingFace: https://huggingface.co/google/madlad400-3b-mt
+- Repositorio Hugging Face del artefacto CTranslate2: https://huggingface.co/superlinked/madlad400-3b-mt-ctranslate2-bfloat16
+- Modelo original en Hugging Face: https://huggingface.co/google/madlad400-3b-mt
 - Documentacion de MADLAD-400 en Transformers: https://huggingface.co/docs/transformers/model_doc/madlad-400
 - Repositorio oficial de investigacion en GitHub: https://github.com/google-research/google-research/blob/master/madlad_400/README.md
 - Guia de despliegue de MADLAD-400-3B-MT: https://aiindigo.com/tutorials/getting-started-with-madlad-400-3b-mt-instant-multilingual-translation

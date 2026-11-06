@@ -83,8 +83,8 @@ No se dispone de comparaciones cuantitativas de rendimiento con otros frameworks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nadeem-Shoukath115113/openspiral
+- Repositorio Hugging Face: https://huggingface.co/Nadeem-Shoukath115113/openspiral
 - Paper SARM2: https://qianzhong-chen.github.io/sarm2.github.io/
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Dataset bimanual de doblado de camiseta: https://huggingface.co/datasets/Nadeem-Shoukath115113/bimanual_fold_tshirt_20260724_165838
-- Perfil del autor en HuggingFace: https://huggingface.co/Nadeem-Shoukath115113
+- Perfil del autor en Hugging Face: https://huggingface.co/Nadeem-Shoukath115113

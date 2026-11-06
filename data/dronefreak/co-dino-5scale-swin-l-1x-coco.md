@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dronefreak/co-dino-5scale-swin-l-1x-coco` es un checkpoint de detección de objetos basado en la arquitectura Co-DINO, que combina el esquema de entrenamiento colaborativo híbrido de Co-DETR con el detector DINO. Aunque la entrada en HuggingFace está publicada por el usuario `dronefreak`, los pesos son un espejo de un checkpoint original de los autores de Co-DETR (Zhuofan Zong, Guanglu Song y Yu Liu, de SenseTime X-Lab). Se trata de un modelo de visión por computador, no un modelo de lenguaje, y su propósito es detectar objetos de las 80 categorías del dataset COCO. El valor principal de este repo es que ofrece un acceso estable a un checkpoint que originalmente se distribuía mediante una carpeta compartida de Google Drive, con su fichero de configuración y un hash de verificación. En la inferencia, el modelo alcanza un box AP de 58,9 en COCO 2017 val. Requiere el stack de OpenMMLab 1.x (MMDetection 2.25.3, MMCV-full 1.5.0 y PyTorch 1.11), por lo que no funciona directamente con la librería `transformers`.
+El modelo `dronefreak/co-dino-5scale-swin-l-1x-coco` es un checkpoint de detección de objetos basado en la arquitectura Co-DINO, que combina el esquema de entrenamiento colaborativo híbrido de Co-DETR con el detector DINO. Aunque la entrada en Hugging Face está publicada por el usuario `dronefreak`, los pesos son un espejo de un checkpoint original de los autores de Co-DETR (Zhuofan Zong, Guanglu Song y Yu Liu, de SenseTime X-Lab). Se trata de un modelo de visión por computador, no un modelo de lenguaje, y su propósito es detectar objetos de las 80 categorías del dataset COCO. El valor principal de este repo es que ofrece un acceso estable a un checkpoint que originalmente se distribuía mediante una carpeta compartida de Google Drive, con su fichero de configuración y un hash de verificación. En la inferencia, el modelo alcanza un box AP de 58,9 en COCO 2017 val. Requiere el stack de OpenMMLab 1.x (MMDetection 2.25.3, MMCV-full 1.5.0 y PyTorch 1.11), por lo que no funciona directamente con la librería `transformers`.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han proporcionado datos comparativos con otros modelos en la información 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-1x-coco
+- Pagina del modelo en Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-1x-coco
 - Paper de Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860
 - Paper de COCO: https://arxiv.org/abs/1405.0312
 - Repositorio oficial de Co-DETR: https://github.com/Sense-X/Co-DETR

@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / ventana | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viggle Remake | 20.111.438.744 (safetensors declarados) | Ventanas de 90-345 frames a 24 fps | Vídeo a vídeo con LoRAs sobre MiniMax-H3; swap y edit | minimax-h3-community-license | HuggingFace (Viggle/Viggle-Remake) y app Viggle |
-| Viggle-Animate | no disponible | no disponible | Sustitución de un personaje (predecesor directo) | no disponible | App Viggle / HuggingFace |
-| MiniMax-H3 (base) | no disponible | no disponible | Modelo base multimodal sobre el que se aplican las LoRAs | minimax-h3-community-license | HuggingFace (MiniMaxAI/MiniMax-H3) |
+| Viggle Remake | 20.111.438.744 (safetensors declarados) | Ventanas de 90-345 frames a 24 fps | Vídeo a vídeo con LoRAs sobre MiniMax-H3; swap y edit | minimax-h3-community-license | Hugging Face (Viggle/Viggle-Remake) y app Viggle |
+| Viggle-Animate | no disponible | no disponible | Sustitución de un personaje (predecesor directo) | no disponible | App Viggle / Hugging Face |
+| MiniMax-H3 (base) | no disponible | no disponible | Modelo base multimodal sobre el que se aplican las LoRAs | minimax-h3-community-license | Hugging Face (MiniMaxAI/MiniMax-H3) |
 | JST-1 (Viggle) | no disponible | no disponible | Modelo propietario de movimiento y personajes de Viggle | propietaria | Solo vía API/app de Viggle |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento numérico con alternativas de la misma categoría.
@@ -90,11 +90,11 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento numérico
 - **Longitud limitada por ventanas**: el renderizado nativo trabaja por ventanas de 90 a 345 frames (recomendado hasta 294); los vídeos largos dependen del pipeline MCP para cortar y empalmar, con posible inconsistencia entre ventanas.
 - **Idiomas**: no hay información sobre el soporte multilingüe de los prompts.
 - **Cuantización**: la calidad con int8/GGUF (12 GB de VRAM) puede diferir de la del flujo completo; las LoRAs de rango 128 y 64 se describen como de salida "casi idéntica", no idéntica.
-- **Madurez**: 4 descargas y 1 like en HuggingFace en la fecha de actualización; ecosistema joven y con poca validación externa.
+- **Madurez**: 4 descargas y 1 like en Hugging Face en la fecha de actualización; ecosistema joven y con poca validación externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Viggle/Viggle-Remake
+- Modelo en Hugging Face: https://huggingface.co/Viggle/Viggle-Remake
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - App Viggle (uso sin GPU): https://viggle.ai/meme/app/home?ui=v2
 - Sitio de Viggle: https://viggle.ai/

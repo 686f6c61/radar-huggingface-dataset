@@ -18,14 +18,14 @@ Su relevancia practica es limitada pero concreta: permite ejecutar un modelo den
 | Longitud de contexto | 32.768 tokens |
 | Tipos de cuantizacion | GGUF Q4_K_M (esta publicacion). No constan otras cuantizaciones en la informacion disponible |
 | Idiomas soportados | ingles (en) e italiano (it) |
-| Licencia | "other" en los metadatos de HuggingFace; la model card muestra una insignia Apache-2.0 (contradiccion no resuelta) |
+| Licencia | "other" en los metadatos de Hugging Face; la model card muestra una insignia Apache-2.0 (contradiccion no resuelta) |
 | Formato de pesos | GGUF (Q4_K_M). La model card indica "Sconosciuto" en el campo de formato |
 | Modelo base | ornith-ai/Ornith-1.0-35B |
 | Repositorio | sigmanih/ornith-ai-Ornith-1.0-35B-GGUF-Q4_K_M |
 | Tamano del repositorio | 21,2 GB |
 | Pipeline | text-generation |
 | Descargas / likes | 323 descargas / 1 like |
-| Fechas | creado el 2026-09-08, actualizado el 2026-10-12 (segun metadatos de HuggingFace) |
+| Fechas | creado el 2026-09-08, actualizado el 2026-10-12 (segun metadatos de Hugging Face) |
 | Compatibilidad | endpoints_compatible; sin detalle adicional |
 | VRAM declarada por el autor | ~30,2 GB (offload completo en GPU) / ~28,3 GB RAM en modo CPU o hibrido |
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks independientes ni comparativas veri
 
 ## Requisitos de hardware
 
-- Pesos en disco: 21,2 GB (repositorio completo en Q4_K_M), segun el tamano del repositorio en HuggingFace.
+- Pesos en disco: 21,2 GB (repositorio completo en Q4_K_M), segun el tamano del repositorio en Hugging Face.
 - VRAM para offload completo: la model card declara ~30,2 GB; esta cifra no concuerda con los 21,2 GB de pesos, y a ella habria que anadir la cache KV (no calculable sin conocer el numero de capas, cabezas KV y dimension de cabeza). Estimacion orientativa a partir del tamano real de los pesos: en torno a 24-26 GB con contexto moderado, valor no confirmado por el autor.
 - RAM para modo CPU o hibrido: la model card indica ~28,3 GB.
 - Hardware recomendado por el autor: configuracion multi-GPU (2 x 24 GB o RTX 6000) o un sistema con 64 GB de RAM.
@@ -125,7 +125,7 @@ Familias que un lector puede considerar comparables por tamano y formato (Qwen2.
 
 ## Limitaciones y advertencias
 
-- Licencia ambigua: los metadatos de HuggingFace marcan "other" mientras que la model card luce una insignia Apache-2.0. Antes de cualquier uso comercial hay que aclarar la licencia del modelo base ornith-ai/Ornith-1.0-35B, que no se ha consultado aqui.
+- Licencia ambigua: los metadatos de Hugging Face marcan "other" mientras que la model card luce una insignia Apache-2.0. Antes de cualquier uso comercial hay que aclarar la licencia del modelo base ornith-ai/Ornith-1.0-35B, que no se ha consultado aqui.
 - Trazabilidad incompleta: no se documentan datos de entrenamiento, composicion del dataset, ni fases de alineacion (RLHF, DPO). No hay paper ni repositorio de entrenamiento enlazado.
 - Cuantizacion de terceros: la conversion a GGUF la firma sigmanih, no el autor del modelo. No se aportan comparativas de perplejidad ni de degradacion frente a los pesos originales.
 - Benchmarks no comparables: cada resultado se calcula sobre entre 7 y 14 preguntas. Un 100% en HumanEval con 7 preguntas no es equiparable a un 100% sobre las 164 del suite completo. Los propios autores advierten que no son comparables con ejecuciones completas.
@@ -140,7 +140,7 @@ Familias que un lector puede considerar comparables por tamano y formato (Qwen2.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/ornith-ai-Ornith-1.0-35B-GGUF-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/ornith-ai-Ornith-1.0-35B-GGUF-Q4_K_M
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.0-35B
 - Perfil del publicador: https://huggingface.co/sigmanih
 - Repositorio de Sigma Studio: https://github.com/Sigmanih/SigmaStudio

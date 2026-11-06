@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 333,9 millones de parametros, en FP16 se necesitan aproximadamente 0,67 GB solo para los pesos, mas memoria para activaciones y el procesamiento de imagenes. En la practica, una GPU con 4 GB de VRAM es suficiente para inferencia en lotes pequenos.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 2060, RTX 3060, o superiores. Tambien funciona en CPU, aunque con mayor latencia.
 - Cabe en GPUs de consumo: si, es un modelo ligero en comparacion con LLMs actuales.
-- Opciones de despliegue: compatible con la libreria Transformers de HuggingFace, se puede servir con vLLM (aunque no esta optimizado para vision), o mediante pipelines de `image-to-text`. Tambien se puede exportar a ONNX o TensorRT para inferencia optimizada.
+- Opciones de despliegue: compatible con la libreria Transformers de Hugging Face, se puede servir con vLLM (aunque no esta optimizado para vision), o mediante pipelines de `image-to-text`. Tambien se puede exportar a ONNX o TensorRT para inferencia optimizada.
 - Latencia y throughput: no se han publicado mediciones. En una GPU moderna, la inferencia de una imagen suele tardar entre 50 y 200 ms, dependiendo del hardware y la resolucion de la imagen.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparativa se limita a los modelos TrOCR de Microsoft, ya que no hay informa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/MusaNyaks/trocr-barbados-fold1)
+- [Modelo en Hugging Face](https://huggingface.co/MusaNyaks/trocr-barbados-fold1)
 - [Documentacion de TrOCR en Transformers](https://huggingface.co/docs/transformers/model_doc/trocr)
 - [Codigo fuente de TrOCR en GitHub](https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/trocr.md)
 - [Pagina de TrOCR en Qualcomm AI Hub](https://aihub.qualcomm.com/models/trocr)

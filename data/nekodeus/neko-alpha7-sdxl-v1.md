@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Neko Alpha7 SDXL v1 es un adaptador LoRA de tipo personaje (character LoRA) para Stable Diffusion XL, publicado por el usuario Nekodeus en HuggingFace. El adaptador se entrena sobre `stabilityai/stable-diffusion-xl-base-1.0` y está diseñado para generar imágenes fotorrealistas de una persona concreta (identificada como Chris Evans en la model card) mediante el token de activación `alpha7`. No es un modelo de lenguaje, sino un módulo de difusión para generación de imágenes texto-a-imagen.
+Neko Alpha7 SDXL v1 es un adaptador LoRA de tipo personaje (character LoRA) para Stable Diffusion XL, publicado por el usuario Nekodeus en Hugging Face. El adaptador se entrena sobre `stabilityai/stable-diffusion-xl-base-1.0` y está diseñado para generar imágenes fotorrealistas de una persona concreta (identificada como Chris Evans en la model card) mediante el token de activación `alpha7`. No es un modelo de lenguaje, sino un módulo de difusión para generación de imágenes texto-a-imagen.
 
 El modelo resuelve un problema muy acotado: la personalización de un modelo de difusión base para reproducir de forma consistente el rostro de un sujeto concreto a partir de un conjunto reducido de imágenes (~100). Con un tamaño de repositorio de 0,2 GB y una dimensión de red de 8, el LoRA es extremadamente ligero y se puede cargar sobre el pipeline SDXL estándar sin reentrenar el modelo base.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Tipo | Parametros / tamaño | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nekodeus/neko-alpha7-sdxl-v1 | SDXL 1.0 | LoRA de personaje | dim 8/8, repo 0,2 GB | 1024x1024 | Apache 2.0 | HuggingFace (0 descargas) |
-| Nekodeus/neko-hollywood-alpha-sdxl-v1 | SDXL 1.0 | LoRA de personaje (serie) | no disponible | 1024x1024 | no disponible | HuggingFace |
-| Nekodeus/neko-hollywood-alpha-sd15-v1 | SD 1.5 | LoRA de personaje (serie) | no disponible | 512x512 (SD 1.5) | no disponible | HuggingFace |
-| stabilityai/stable-diffusion-xl-base-1.0 | — | Modelo base de difusión | ~3,5B (UNet + text encoders) | 1024x1024 | CreativeML Open RAIL++-M | HuggingFace |
+| Nekodeus/neko-alpha7-sdxl-v1 | SDXL 1.0 | LoRA de personaje | dim 8/8, repo 0,2 GB | 1024x1024 | Apache 2.0 | Hugging Face (0 descargas) |
+| Nekodeus/neko-hollywood-alpha-sdxl-v1 | SDXL 1.0 | LoRA de personaje (serie) | no disponible | 1024x1024 | no disponible | Hugging Face |
+| Nekodeus/neko-hollywood-alpha-sd15-v1 | SD 1.5 | LoRA de personaje (serie) | no disponible | 512x512 (SD 1.5) | no disponible | Hugging Face |
+| stabilityai/stable-diffusion-xl-base-1.0 | — | Modelo base de difusión | ~3,5B (UNet + text encoders) | 1024x1024 | CreativeML Open RAIL++-M | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nekodeus/neko-alpha7-sdxl-v1
+- Hugging Face: https://huggingface.co/Nekodeus/neko-alpha7-sdxl-v1
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Dataset de entrenamiento: https://huggingface.co/nekodeus/alpha7-chris-evans
 - Serie Hollywood alpha (SD1.5): https://huggingface.co/Nekodeus/neko-hollywood-alpha-sd15-v1

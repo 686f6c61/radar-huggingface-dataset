@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Abrorl5/gemini-2.5.0` es una adaptación de clasificación de texto publicada en HuggingFace por el usuario Abrorl5. Según la información disponible, se trata de un fine-tune sobre un conjunto de datos llamado `theflash21/sql-mysql-db`, lo que sugiere una tarea de clasificación relacionada con consultas SQL o metadatos de bases de datos MySQL. El modelo está etiquetado para el idioma inglés y utiliza el pipeline de `text-classification`.
+El modelo `Abrorl5/gemini-2.5.0` es una adaptación de clasificación de texto publicada en Hugging Face por el usuario Abrorl5. Según la información disponible, se trata de un fine-tune sobre un conjunto de datos llamado `theflash21/sql-mysql-db`, lo que sugiere una tarea de clasificación relacionada con consultas SQL o metadatos de bases de datos MySQL. El modelo está etiquetado para el idioma inglés y utiliza el pipeline de `text-classification`.
 
 Sin embargo, la ficha técnica del modelo es extremadamente escasa: no se especifica la arquitectura subyacente, el número de parámetros, la licencia ni el proceso de entrenamiento. El campo `base_model` se referencia a sí mismo (`Abrorl5/gemini-2.5.0`), lo que indica una posible inconsistencia en los metadatos. No se dispone de información sobre descargas, uso o rendimiento. El nombre "gemini-2.5.0" podría inducir a confusión con el modelo Gemini 2.5 de Google, pero no hay evidencia de relación alguna.
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abrorl5/gemini-2.5.0
+- Hugging Face: https://huggingface.co/Abrorl5/gemini-2.5.0
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios, demos) asociados a este modelo.

@@ -57,6 +57,6 @@ No se dispone de información comparativa con otros modelos. No se han publicado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lemons-ink/SmolLM3-Cyber
+- Hugging Face: https://huggingface.co/lemons-ink/SmolLM3-Cyber
 - Documentación de SmolLM3: https://huggingface.co/docs/transformers/en/model_doc/smollm3
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios) en la búsqueda web.

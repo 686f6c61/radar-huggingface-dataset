@@ -71,9 +71,9 @@ Según el autor, por encima de ~45 dB la diferencia es invisible. En cinco clips
 
 | Modelo | Parametros | Contexto / resolución | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RelayVSR-X4-Quants (esta release) | no disponible | Salida hasta 2560x1408 desde 1280x704 | 22,0-23,0 s por clip de 3 s en RTX 5090 (cuantizado) | Apache-2.0 | HuggingFace, requiere ComfyUI-MAINodes |
-| RelayVSR X4 original (kopper/RelayVSR) | no disponible | Salida hasta 2560x1408 | 28,4 s por clip de 3 s en RTX 5090; pico 27,9 GB | Apache-2.0 (según el proyecto) | HuggingFace |
-| RelayVSR_X2 (lightx2v/RelayVSR_X2) | no disponible | Salida 2x nativa | no disponible | no disponible | HuggingFace |
+| RelayVSR-X4-Quants (esta release) | no disponible | Salida hasta 2560x1408 desde 1280x704 | 22,0-23,0 s por clip de 3 s en RTX 5090 (cuantizado) | Apache-2.0 | Hugging Face, requiere ComfyUI-MAINodes |
+| RelayVSR X4 original (kopper/RelayVSR) | no disponible | Salida hasta 2560x1408 | 28,4 s por clip de 3 s en RTX 5090; pico 27,9 GB | Apache-2.0 (según el proyecto) | Hugging Face |
+| RelayVSR_X2 (lightx2v/RelayVSR_X2) | no disponible | Salida 2x nativa | no disponible | no disponible | Hugging Face |
 | FlashVSR | no disponible | Superresolución de vídeo | no disponible | no disponible | GitHub |
 
 La comparativa se limita a las variantes del mismo modelo base y a FlashVSR, del que no se dispone de datos de rendimiento en la información proporcionada. No se dispone de comparación con otros modelos de superresolución de vídeo de la misma categoría.
@@ -91,7 +91,7 @@ La comparativa se limita a las variantes del mismo modelo base y a FlashVSR, del
 
 ## Enlaces
 
-- HuggingFace (esta release): https://huggingface.co/MATLOWAI/RelayVSR-X4-Quants
+- Hugging Face (esta release): https://huggingface.co/MATLOWAI/RelayVSR-X4-Quants
 - Pesos originales: https://huggingface.co/kopper/RelayVSR
 - Repositorio del modelo original (código, paper, project page, demo): https://github.com/kopperx/RelayVSR
 - Paper: https://arxiv.org/abs/2609.37850

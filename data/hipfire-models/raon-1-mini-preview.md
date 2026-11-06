@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks de calidad ni de especificaciones de modelo
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Raon-1-mini-preview (hipfire MQ4 XTS) | 28,8B | 4,3B | hasta 131K (verificado) | Apache-2.0 | HuggingFace (hipfire) |
+| Raon-1-mini-preview (hipfire MQ4 XTS) | 28,8B | 4,3B | hasta 131K (verificado) | Apache-2.0 | Hugging Face (hipfire) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,5 +97,5 @@ No se dispone de datos de benchmarks de calidad ni de especificaciones de modelo
 
 ## Enlaces
 
-- HuggingFace (cuantizacion hipfire): https://huggingface.co/hipfire-models/raon-1-mini-preview
+- Hugging Face (cuantizacion hipfire): https://huggingface.co/hipfire-models/raon-1-mini-preview
 - Modelo base: https://huggingface.co/KRAFTON/Raon-1-mini-preview

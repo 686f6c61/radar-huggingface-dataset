@@ -24,7 +24,7 @@ No hay información pública sobre el número de parámetros, la longitud de con
 | Librería declarada | `alben` |
 | Pipeline | no disponible |
 | Descargas / likes | 0 / 0 |
-| Creado / actualizado | 2026-10-24 / 2026-10-24 (según metadatos de HuggingFace) |
+| Creado / actualizado | 2026-10-24 / 2026-10-24 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,7 +76,7 @@ No se dispone de datos de comparación en la información proporcionada: la mode
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Alben (ONNX) | no disponible (~91 MB de pesos) | no disponible | Apache-2.0 | ONNX | HuggingFace, 0 descargas |
+| Alben (ONNX) | no disponible (~91 MB de pesos) | no disponible | Apache-2.0 | ONNX | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No se dispone de datos de comparación en la información proporcionada: la mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlbenW/alben-onnx
+- Repositorio en Hugging Face: https://huggingface.co/AlbenW/alben-onnx
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

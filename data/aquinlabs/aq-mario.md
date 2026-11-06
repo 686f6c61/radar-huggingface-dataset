@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AQ-Mario es un modelo de mundo (world model) latente y condicionado por acciones, basado en una arquitectura EMA-JEPA (Joint Embedding Predictive Architecture con encoder objetivo de media m�vil exponencial). Lo publica el usuario Aquinlabs en HuggingFace y procede del experimento `full3ep_pure_ema999` del proyecto AQ-Mario, alojado en `github.com/sachin1705s/aq-mario`. El modelo aprende la din�mica de Super Mario Bros. 1-1 a partir de secuencias de fotogramas y acciones.
+AQ-Mario es un modelo de mundo (world model) latente y condicionado por acciones, basado en una arquitectura EMA-JEPA (Joint Embedding Predictive Architecture con encoder objetivo de media m�vil exponencial). Lo publica el usuario Aquinlabs en Hugging Face y procede del experimento `full3ep_pure_ema999` del proyecto AQ-Mario, alojado en `github.com/sachin1705s/aq-mario`. El modelo aprende la din�mica de Super Mario Bros. 1-1 a partir de secuencias de fotogramas y acciones.
 
 A diferencia de un modelo generativo de p�xeles, AQ-Mario predice estados latentes futuros en lugar de fotogramas RGB, lo que lo hace adecuado para an�lisis de representaciones y experimentos de planificaci�n basada en modelo. Cuenta con 9.801.795 par�metros entrenables m�s cabeceras auxiliares, se entren� durante 41.160 pasos (3 �pocas) y su checkpoint final ocupa 133,5 MiB.
 
@@ -18,7 +18,7 @@ Es relevante ahora como ejemplo reproducible y de bajo coste de la familia JEPA 
 | Longitud de contexto | no disponible (opera sobre secuencias de fotogramas; el numero exacto de fotogramas por secuencia no se especifica) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no es un modelo de lenguaje; procesa observaciones de juego) |
-| Licencia | no disponible en la ficha de HuggingFace; el autor indica que el codigo fuente es MIT, pero el checkpoint y los datos derivados quedan sujetos a los derechos del contenido del juego |
+| Licencia | no disponible en la ficha de Hugging Face; el autor indica que el codigo fuente es MIT, pero el checkpoint y los datos derivados quedan sujetos a los derechos del contenido del juego |
 | Formato de pesos | PyTorch (`jepa.pt`, checkpoint serializado con `torch.save`) |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No hay datos num�ricos publicados en la informaci�n disponible para una comp
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AQ-Mario (EMA-JEPA) | World model latente accion-condicionado | 9,8M + cabeceras | no disponible | codigo MIT; checkpoint sujeto a derechos del juego | HuggingFace, 0 descargas |
+| AQ-Mario (EMA-JEPA) | World model latente accion-condicionado | 9,8M + cabeceras | no disponible | codigo MIT; checkpoint sujeto a derechos del juego | Hugging Face, 0 descargas |
 | I-JEPA / V-JEPA | JEPA de imagen y video | no disponible | no aplica | no disponible | pesos publicados por Meta |
 | DreamerV3 | World model para RL | no disponible | no aplica | no disponible | codigo y pesos publicos |
 | DINO-WM | World model latente para planificacion | no disponible | no aplica | no disponible | no disponible |
@@ -79,7 +79,7 @@ Los campos marcados como no disponibles no se han podido verificar en la informa
 - El autor declara que el run no es un controlador de Mario resuelto: las sondas finales de x/y/scroll y la puerta de condicionamiento por acci�n no superan los umbrales del proyecto, por lo que el uso como pol�tica de control no est� validado.
 - Sesgo de dominio: el modelo se entrena exclusivamente con observaciones de Super Mario Bros. 1-1, de modo que no generaliza a otros niveles, juegos o entornos sin reentrenamiento.
 - Riesgo de deriva en rollouts: en world models latentes el error de predicci�n se acumula a lo largo de la planificaci�n y puede degradar r�pidamente la calidad de las trayectorias simuladas.
-- Ausencia de datos clave: no se documentan la licencia del checkpoint en la ficha de HuggingFace, el n�mero de fotogramas por secuencia, la composici�n del dataset ni el desglose completo de par�metros.
+- Ausencia de datos clave: no se documentan la licencia del checkpoint en la ficha de Hugging Face, el n�mero de fotogramas por secuencia, la composici�n del dataset ni el desglose completo de par�metros.
 - Restricciones legales: el c�digo fuente es MIT, pero el checkpoint y los datos derivados est�n sujetos a los derechos del contenido del juego. El proyecto no est� afiliado ni respaldado por Nintendo, lo que limita el uso comercial del modelo y de los datos derivados.
 - No es un modelo de lenguaje ni multiling�e: no admite instrucciones en lenguaje natural, tool calling, agentes ni conversaci�n.
 - Inconsistencia de metadatos: la ficha corresponde al ID `Aquinlabs/aq-mario`, mientras que la model card enlaza v�deo, dataset y espacios bajo `maxmill/*` y el c�digo en `github.com/sachin1705s/aq-mario`. Conviene verificar la procedencia antes de reutilizarlo.
@@ -88,7 +88,7 @@ Los campos marcados como no disponibles no se han podido verificar en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aquinlabs/aq-mario
+- Modelo en Hugging Face: https://huggingface.co/Aquinlabs/aq-mario
 - Repositorio de codigo del proyecto: https://github.com/sachin1705s/aq-mario
 - Dataset de entrenamiento: https://huggingface.co/datasets/maxmill/aq-mario-smb1
 - Preview de rollout: https://huggingface.co/maxmill/aq-mario/resolve/main/pure_jepa_ema.mp4

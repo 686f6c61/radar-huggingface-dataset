@@ -70,7 +70,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (es
 
 ## Enlaces
 
-- [Repositorio GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-GGUF)
+- [Repositorio GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-GGUF)
 - [Modelo base nightmedia/Qwen3.5-9B-Holodeck-Lounge](https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge)
 - [Página de FriendliAI para el modelo](https://friendli.ai/models/nightmedia/Qwen3.5-9B-Holodeck-Lounge)
 - [Perfil de mradermacher en aimodels.fyi](https://www.aimodels.fyi/creators/huggingFace/mradermacher)

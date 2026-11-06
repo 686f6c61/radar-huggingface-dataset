@@ -6,7 +6,7 @@
 
 La relevancia de este repositorio es práctica más que investigadora: ofrece un conjunto de modelos de separación de alta calidad (arquitecturas BS-Roformer y MDX23C, entre otras) listos para ejecutarse en Apple Silicon mediante Core ML, sin necesidad de frameworks de Python en tiempo de inferencia. Cubre casos como separación en 6 stems (voces, batería, bajo, guitarra, piano y otros), separación vocals/instrumental y extracción de pistas de karaoke.
 
-El repositorio ocupa 1,8 GB en total y no incluye un pipeline de HuggingFace declarado ni idiomas asociados, ya que trabaja exclusivamente con tensores de audio. La licencia es heterogénea: cada modelo conserva la licencia publicada por su autor original, y en varios casos no se publicó licencia alguna, lo que impide otorgar derechos de uso desde este repositorio.
+El repositorio ocupa 1,8 GB en total y no incluye un pipeline de Hugging Face declarado ni idiomas asociados, ya que trabaja exclusivamente con tensores de audio. La licencia es heterogénea: cada modelo conserva la licencia publicada por su autor original, y en varios casos no se publicó licencia alguna, lo que impide otorgar derechos de uso desde este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ La comparativa con Demucs y Spleeter se incluye como referencia de categoría; n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunnymeadsound/stem-separation-models
+- Repositorio en Hugging Face: https://huggingface.co/sunnymeadsound/stem-separation-models
 - Licencias por modelo: https://huggingface.co/sunnymeadsound/stem-separation-models/blob/main/LICENSES.md
 - Carpeta BS-Roformer SW (6 stems): https://huggingface.co/sunnymeadsound/stem-separation-models/tree/main/bs-roformer-sw-6stem
 - Carpeta DrumSep MDX23C (6 stems): https://huggingface.co/sunnymeadsound/stem-separation-models/tree/main/drumsep-mdx23c-6stem

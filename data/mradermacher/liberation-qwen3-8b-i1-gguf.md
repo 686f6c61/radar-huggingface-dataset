@@ -109,7 +109,7 @@ No se dispone de datos verificados de alternativas en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Liberation-Qwen3-8B-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Liberation-Qwen3-8B-i1-GGUF
 - Modelo base: https://huggingface.co/TeskesLab/Liberation-Qwen3-8B
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/Liberation-Qwen3-8B-GGUF
 - Pagina de descarga y vision general del cuantizador: https://hf.tst.eu/model#Liberation-Qwen3-8B-i1-GGUF

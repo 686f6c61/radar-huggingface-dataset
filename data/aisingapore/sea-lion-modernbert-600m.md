@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEA-LION-ModernBERT-600M | 612M | 8.192 | 13 lenguas (SEA + chino + inglés) | MIT | HuggingFace |
-| ModernBERT-large | ~300M | 8.192 | Principalmente inglés, multilingüe limitado | Apache 2.0 | HuggingFace |
-| BERT-large | 340M | 512 | Inglés (principalmente) | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa-large | 560M | 512 | 100 lenguas | MIT | HuggingFace |
+| SEA-LION-ModernBERT-600M | 612M | 8.192 | 13 lenguas (SEA + chino + inglés) | MIT | Hugging Face |
+| ModernBERT-large | ~300M | 8.192 | Principalmente inglés, multilingüe limitado | Apache 2.0 | Hugging Face |
+| BERT-large | 340M | 512 | Inglés (principalmente) | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa-large | 560M | 512 | 100 lenguas | MIT | Hugging Face |
 
 El modelo de AI Singapore se diferencia por su enfoque específico en lenguas del sudeste asiático, con un tokenizer optimizado para escrituras complejas y un contexto mayor que BERT. XLM-RoBERTa-large cubre más idiomas pero con una ventana de contexto menor y sin la eficiencia de tokenización para scripts regionales. ModernBERT, al ser la base, ofrece mejor rendimiento por parámetro, pero no está entrenado para las lenguas SEA.
 
@@ -79,7 +79,7 @@ El modelo de AI Singapore se diferencia por su enfoque específico en lenguas de
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)
+- [Modelo en Hugging Face](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M)
 - [Colección SEA-LION ModernBERT y Embeddings](https://huggingface.co/collections/aisingapore/sea-lion-modernbert-and-embedding)
 - [Variante de embeddings fine-tuned](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-Embedding-600M)
 - [Checkpoints del modelo](https://huggingface.co/aisingapore/SEA-LION-ModernBERT-600M-checkpoints)

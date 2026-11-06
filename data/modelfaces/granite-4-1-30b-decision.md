@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Granite 4.1 30B Decision (este) | 28,9B base + ~143M LoRA + 2,1M cabeza | 8.192 tokens en entrenamiento | Distribución calibrada sobre opciones; sin generación | Apache-2.0 | HuggingFace + servidor Kev |
-| IBM Granite 4.1 30B base | 28,9B | No disponible en la información | Generación de texto autoregresiva | Apache-2.0 | HuggingFace |
-| Backbones Qwen objetivo de Kev (stock) | No disponible en la información | No disponible en la información | Decisiones tipadas con la misma interfaz | Según el modelo base usado | HuggingFace + Kev |
-| Clasificadores de encoder (p. ej. familia DeBERTa/ModernBERT) | No disponible en la información | No disponible en la información | Etiqueta única o probabilidades por clase fija | No disponible en la información | HuggingFace |
+| Granite 4.1 30B Decision (este) | 28,9B base + ~143M LoRA + 2,1M cabeza | 8.192 tokens en entrenamiento | Distribución calibrada sobre opciones; sin generación | Apache-2.0 | Hugging Face + servidor Kev |
+| IBM Granite 4.1 30B base | 28,9B | No disponible en la información | Generación de texto autoregresiva | Apache-2.0 | Hugging Face |
+| Backbones Qwen objetivo de Kev (stock) | No disponible en la información | No disponible en la información | Decisiones tipadas con la misma interfaz | Según el modelo base usado | Hugging Face + Kev |
+| Clasificadores de encoder (p. ej. familia DeBERTa/ModernBERT) | No disponible en la información | No disponible en la información | Etiqueta única o probabilidades por clase fija | No disponible en la información | Hugging Face |
 
 La comparación relevante no es de benchmarks —no hay datos publicados— sino de forma de la interfaz: frente al backbone base, este modelo cambia generación de texto por una distribución calibrada y un coste de una sola pasada; frente a los backbones Qwen que Kev soporta de serie, aporta un backbone mayor en inglés y requiere el parche de delimitadores y escalado; frente a clasificadores de encoder, ofrece preguntas dinámicas (hasta 255 opciones definidas en tiempo de inferencia) y varias preguntas por documento, a cambio de un requisito de hardware de 80 GB.
 
@@ -100,7 +100,7 @@ La comparación relevante no es de benchmarks —no hay datos publicados— sino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/modelfaces/granite-4.1-30b-decision
+- Modelo en Hugging Face: https://huggingface.co/modelfaces/granite-4.1-30b-decision
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-30b-base
 - Revisión fijada del modelo base: https://huggingface.co/ibm-granite/granite-4.1-30b-base/tree/9bb22a92d17f4a51788c4750d32764ed068d94f2
 - Repositorio de Kev: https://github.com/jaredpalmer/kev

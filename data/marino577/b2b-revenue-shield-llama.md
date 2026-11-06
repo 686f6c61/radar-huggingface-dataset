@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Marino577/b2b-revenue-shield-llama` es un repositorio publicado en HuggingFace por el usuario Marino577 bajo la librería `transformers`. El identificador sugiere una adaptación o ajuste fino orientado a ingresos en entornos B2B, pero esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación técnica del autor.
+El modelo `Marino577/b2b-revenue-shield-llama` es un repositorio publicado en Hugging Face por el usuario Marino577 bajo la librería `transformers`. El identificador sugiere una adaptación o ajuste fino orientado a ingresos en entornos B2B, pero esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación técnica del autor.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento de ajuste, evaluaciones) aparecen como `[More Information Needed]`. No se dispone, por tanto, de información verificable sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento de ajuste, evaluaciones) aparecen como `[More Information Needed]`. No se dispone, por tanto, de información verificable sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
 
 Se trata de un repositorio sin tracción comunitaria: cero descargas, cero "likes" y un tamaño de aproximadamente 0,1 GB. La fecha de creación registrada es el 11 de septiembre de 2026, posterior a la fecha de redacción habitual de estas fichas, lo que apunta a un artefacto de metadatos o a una subida con marca temporal errónea. En su estado actual no es un modelo evaluable ni recomendable para uso en producción.
 
@@ -27,7 +27,7 @@ Se trata de un repositorio sin tracción comunitaria: cero descargas, cero "like
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. El repositorio declara la librería `transformers` y pesos en formato `safetensors`, lo que indica compatibilidad esperada con el ecosistema HuggingFace Transformers, pero no permite inferir si se trata de un transformer denso, un MoE, un modelo híbrido o una arquitectura basada en espacio de estados. El tamaño del repositorio (aproximadamente 0,1 GB) es compatible con pesos de un modelo pequeño o con un conjunto parcial de tensores, aunque no hay confirmación al respecto.
+No se ha publicado información sobre la arquitectura del modelo. El repositorio declara la librería `transformers` y pesos en formato `safetensors`, lo que indica compatibilidad esperada con el ecosistema Hugging Face Transformers, pero no permite inferir si se trata de un transformer denso, un MoE, un modelo híbrido o una arquitectura basada en espacio de estados. El tamaño del repositorio (aproximadamente 0,1 GB) es compatible con pesos de un modelo pequeño o con un conjunto parcial de tensores, aunque no hay confirmación al respecto.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset ni la existencia de fases de ajuste alineadas (RLHF, DPO, SFT). El único tag relacionado con investigación presente en el repositorio es `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. (2019) sobre estimación de impacto ambiental en aprendizaje automático, citado en la plantilla estándar de model cards. No es el paper del modelo ni aporta información sobre su construcción.
 
@@ -52,7 +52,7 @@ Dado que no existe documentación técnica ni métricas publicadas, los siguient
 - Asistencia a equipos de customer success en conversaciones multi-turno: si el modelo conserva contexto largo, podría mantener hilos extensos con historial de cuenta. No hay datos de contexto máximo.
 - Generación de contenido comercial multilingüe: solo sería aplicable si se confirmase cobertura de idiomas, dato que no está disponible.
 - Extracción estructurada de datos de contratos y facturas: requiere salida en formato fiable y validación, sin garantías documentadas.
-- Prototipado e investigación interna: el repositorio puede servir como artefacto de prueba para reproducir un pipeline de publicación en HuggingFace, no como modelo de producción.
+- Prototipado e investigación interna: el repositorio puede servir como artefacto de prueba para reproducir un pipeline de publicación en Hugging Face, no como modelo de producción.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ No disponible. No es posible establecer comparativas fiables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Marino577/b2b-revenue-shield-llama
+- Repositorio en Hugging Face: https://huggingface.co/Marino577/b2b-revenue-shield-llama
 - Paper citado en la plantilla de la model card (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automático referenciada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales asociados a este modelo en la busqueda web realizada.

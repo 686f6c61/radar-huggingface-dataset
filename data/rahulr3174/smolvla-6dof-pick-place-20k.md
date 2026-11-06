@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | `RahulR3174/smolvla-6dof-pick-place-20k` | 450M | No disponible | Pick-and-place 6-DoF en simulación | No disponible | Hugging Face |
-| SmolVLA base (HuggingFace) | 450M | No disponible | VLA general (requiere fine-tuning) | Apache 2.0 (según documentación) | Hugging Face |
+| SmolVLA base (Hugging Face) | 450M | No disponible | VLA general (requiere fine-tuning) | Apache 2.0 (según documentación) | Hugging Face |
 | OpenVLA | 7B | No disponible | VLA general (manipulación) | MIT (según documentación) | Hugging Face |
 
 La comparativa se limita a modelos de la misma categoría (VLA). SmolVLA destaca por su tamaño reducido frente a OpenVLA, lo que facilita su despliegue en hardware de consumo. Sin embargo, no se dispone de datos de rendimiento comparativo para esta tarea concreta.

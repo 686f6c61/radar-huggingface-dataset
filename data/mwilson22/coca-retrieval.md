@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mwilson22/coca-retrieval` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura CoCa (Contrastive Captioner) orientada a tareas de recuperación (retrieval) imagen-texto. Lo publica el usuario mwilson22 y, según su propia model card, la configuración incluida corresponde a la escala "giant" y está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un release preentrenado listo para producción.
+`mwilson22/coca-retrieval` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura CoCa (Contrastive Captioner) orientada a tareas de recuperación (retrieval) imagen-texto. Lo publica el usuario mwilson22 y, según su propia model card, la configuración incluida corresponde a la escala "giant" y está pensada para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados, no como un release preentrenado listo para producción.
 
 El elemento clave de esta ficha es su naturaleza: el fichero `model.safetensors` se describe explícitamente como un checkpoint de inicialización válido para smoke tests, no como un checkpoint entrenado ni evaluado con benchmarks. Los metadatos de safetensors declaran 33.088 parámetros totales, un valor extraordinariamente bajo que resulta coherente con un artefacto de prueba más que con una configuración "giant" real; esta discrepancia no queda aclarada en la información disponible.
 
@@ -97,7 +97,7 @@ La comparacion cuantitativa con alternativas equivalentes no es posible con la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mwilson22/coca-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/mwilson22/coca-retrieval
 - Repositorio relacionado del mismo autor: https://huggingface.co/mwilson22/retrieval
 - Paper original de CoCa: https://arxiv.org/abs/2205.01917
 - Implementación de referencia CoCa en PyTorch (lucidrains): https://github.com/lucidrains/CoCa-pytorch

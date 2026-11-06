@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-2B-cat-STEER0.139063-ft4.42` es un ajuste fino (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en HuggingFace. El entrenamiento se ha realizado con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0, según declara la model card. Se trata por tanto de un derivado de un modelo de la familia Qwen de Alibaba, no de un modelo entrenado desde cero: hereda la arquitectura y el conocimiento del preentrenamiento del base y añade una fase de ajuste supervisado.
+`Echoo113/Qwen3.5-2B-cat-STEER0.139063-ft4.42` es un ajuste fino (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en Hugging Face. El entrenamiento se ha realizado con la librería TRL (versión 1.10.0) sobre Transformers 5.15.1 y PyTorch 2.11.0, según declara la model card. Se trata por tanto de un derivado de un modelo de la familia Qwen de Alibaba, no de un modelo entrenado desde cero: hereda la arquitectura y el conocimiento del preentrenamiento del base y añade una fase de ajuste supervisado.
 
 El nombre del repositorio codifica lo que parecen ser hiperparámetros o resultados del experimento: `cat` (posiblemente la categoría o el conjunto de datos), `STEER0.139063` y `ft4.42`. No hay documentación que explique qué significan estos valores, y la model card es prácticamente la plantilla por defecto que genera TRL, sin sección de datos de entrenamiento, hiperparámetros, evaluación ni limitaciones. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,1 GB, lo que es compatible con un conjunto de adaptadores (LoRA/PEFT) más que con pesos completos de un modelo de 2 000 millones de parámetros en fp16 (que ocuparían del orden de 4 GB).
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es, por tanto, acotada: se trata de un artefacto de 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Lo único verificable es que se parte de `Qwen/Qwen3.5-2B` y que se aplica una fase de ajuste supervisado (SFT) con TRL. TRL es el framework de HuggingFace para ajuste fino y alineamiento; en su modo SFT entrena sobre pares de instrucción y respuesta con pérdida de entropía cruzada enmascarada sobre los tokens de la respuesta. No se especifica el conjunto de datos, el número de tokens de entrenamiento, la composición del dataset, la longitud máxima de secuencia ni si hubo fases posteriores de preferencia (DPO, ORPO) o RLHF. Tampoco se documentan hiperparámetros como la tasa de aprendizaje, el rango de LoRA, el tamaño de batch efectivo o el número de épocas.
+La informacion disponible no detalla la arquitectura interna del modelo. Lo único verificable es que se parte de `Qwen/Qwen3.5-2B` y que se aplica una fase de ajuste supervisado (SFT) con TRL. TRL es el framework de Hugging Face para ajuste fino y alineamiento; en su modo SFT entrena sobre pares de instrucción y respuesta con pérdida de entropía cruzada enmascarada sobre los tokens de la respuesta. No se especifica el conjunto de datos, el número de tokens de entrenamiento, la composición del dataset, la longitud máxima de secuencia ni si hubo fases posteriores de preferencia (DPO, ORPO) o RLHF. Tampoco se documentan hiperparámetros como la tasa de aprendizaje, el rango de LoRA, el tamaño de batch efectivo o el número de épocas.
 
 El sufijo `STEER0.139063` del nombre sugiere la inclusión de algún tipo de coeficiente de *steering* o regularización, y `ft4.42` podría corresponder a una métrica de validación (por ejemplo, una pérdida final), pero ninguna de estas hipótesis está confirmada en la model card. Dado el tamaño del repositorio (0,1 GB), es plausible que se trate de adaptadores entrenados sobre el modelo base congelado, lo que implicaría que para usar el modelo es necesario cargar primero `Qwen/Qwen3.5-2B` y aplicar después los adaptadores. Cualquier afirmación sobre innovaciones técnicas (atención lineal, decodificación especulativa, modo de razonamiento) sería especulativa y no se incluye.
 
@@ -90,8 +90,8 @@ No se dispone de datos verificados de `Qwen3.5-2B` en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-2B-cat-STEER0.139063-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-2B-cat-STEER0.139063-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen

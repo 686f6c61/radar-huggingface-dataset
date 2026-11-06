@@ -6,7 +6,7 @@ gahabeen/embeddinggemma-2-bf16 es una conversión a formato MLX y precisión BF1
 
 La relevancia de esta versión concreta es de despliegue: al estar convertida a MLX permite ejecutar el modelo en Apple Silicon (Macs y dispositivos con chip de la serie M) sin depender de CUDA, con un peso en disco de 1,489 GB en BF16. Frente a la versión en PyTorch, la conversión facilita la inferencia en local y en el dispositivo, un escenario habitual para búsqueda semántica, RAG o indexación multimodal con requisitos de privacidad.
 
-El repositorio está bajo licencia Apache-2.0, heredada del modelo original, e incluye los pesos de todas las modalidades junto con los ficheros de configuración del procesador. Es importante señalar que se trata de una conversión de terceros, no oficial, sin descargas ni valoraciones en el momento de redactar esta ficha, y que el README interno del repositorio se refiere al modelo como mlx-community/embeddinggemma-2-bf16, mientras que la ficha de HuggingFace lo publica bajo el autor gahabeen.
+El repositorio está bajo licencia Apache-2.0, heredada del modelo original, e incluye los pesos de todas las modalidades junto con los ficheros de configuración del procesador. Es importante señalar que se trata de una conversión de terceros, no oficial, sin descargas ni valoraciones en el momento de redactar esta ficha, y que el README interno del repositorio se refiere al modelo como mlx-community/embeddinggemma-2-bf16, mientras que la ficha de Hugging Face lo publica bajo el autor gahabeen.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La model card indica que todas las salidas comprobadas eran finitas, estaban nor
 ## Limitaciones y advertencias
 
 - Conversion no oficial: publicada por el usuario gahabeen, con 0 descargas y 0 likes en el momento de redactar la ficha; no ha pasado por una evaluacion de calidad de recuperacion.
-- Discrepancia de nombre: la ficha de HuggingFace figura bajo gahabeen, mientras que el README interno se refiere al modelo como mlx-community/embeddinggemma-2-bf16; conviene verificar el repositorio correcto antes de integrarlo.
+- Discrepancia de nombre: la ficha de Hugging Face figura bajo gahabeen, mientras que el README interno se refiere al modelo como mlx-community/embeddinggemma-2-bf16; conviene verificar el repositorio correcto antes de integrarlo.
 - Atado al ecosistema Apple: los pesos estan en formato MLX, de modo que no se pueden cargar directamente en vLLM, TGI o llama.cpp sobre CUDA.
 - Aviso de precision: el autor indica explicitamente que no se debe convertir el modelo a float16; la recomendacion es mantener pesos y activaciones en BF16.
 - Dependencia de una build de desarrollo de transformers para el procesador multimodal, lo que complica la reproducibilidad en entornos de produccion con versiones fijadas.

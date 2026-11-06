@@ -77,8 +77,8 @@ La comparativa se basa en el modelo original y en alternativas de traducción mu
 
 ## Enlaces
 
-- [HuggingFace: aoiandroid/nllb200-coreml-256-ane-pal8-ios](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8-ios)
-- [HuggingFace: aoiandroid/nllb200-coreml-256-ane-pal8 (modelo fuente)](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8)
-- [HuggingFace: facebook/nllb-200-distilled-600M (modelo original)](https://huggingface.co/facebook/nllb-200-distilled-600M)
+- [Hugging Face: aoiandroid/nllb200-coreml-256-ane-pal8-ios](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8-ios)
+- [Hugging Face: aoiandroid/nllb200-coreml-256-ane-pal8 (modelo fuente)](https://huggingface.co/aoiandroid/nllb200-coreml-256-ane-pal8)
+- [Hugging Face: facebook/nllb-200-distilled-600M (modelo original)](https://huggingface.co/facebook/nllb-200-distilled-600M)
 - [GitHub: ANEMLL - Artificial Neural Engine Machine Learning Library](https://github.com/Anemll/Anemll)
 - [Sitio web de ANEMLL](https://www.anemll.com/)

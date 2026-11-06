@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielmffl/matching` es un repositorio experimental publicado en HuggingFace por el usuario danielmffl que contiene una implementación propia de una arquitectura tipo **Mixer** orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El recuento de safetensors arroja 24.832 parámetros, un tamaño que sitúa el artefacto en la categoría de prototipo de juguete, no de modelo desplegable.
+`danielmffl/matching` es un repositorio experimental publicado en Hugging Face por el usuario danielmffl que contiene una implementación propia de una arquitectura tipo **Mixer** orientada a tareas de *matching* (emparejamiento). No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint con benchmarks. El recuento de safetensors arroja 24.832 parámetros, un tamaño que sitúa el artefacto en la categoría de prototipo de juguete, no de modelo desplegable.
 
 El valor del repositorio es fundamentalmente de **código y andamiaje experimental**: incluye el fichero Python con la definición del modelo y un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura generada y un `training_args.json` con la receta de experimento por defecto (optimizador Adam con schedule de warmup constante). La arquitectura declarada combina atención flash, fusión de bajo rango (*low rank fusion*), activación mish y normalización InstanceNorm, con una escala etiquetada como *huge* en la configuración, etiqueta que no se corresponde con el número real de parámetros publicados.
 
@@ -25,7 +25,7 @@ Es relevante ahora únicamente como punto de partida reproducible para quien qui
 
 La arquitectura declarada es un **Mixer** de implementación propia, sin relación confirmada con los MLP-Mixer de visión ni con arquitecturas de atención lineal conocidas. La model card especifica los siguientes componentes: atención de tipo flash, fusión de bajo rango, función de activación mish y normalización InstanceNorm. El fichero `config.json` registra los ajustes de arquitectura generados y `training_args.json` la receta por defecto, que usa el optimizador Adam con un schedule de warmup constante. No se especifica número de capas, dimensión oculta, número de cabezas, tamaño de vocabulario ni ningún otro hiperparámetro en la información disponible.
 
-No hay evidencia de entrenamiento: el autor afirma que el checkpoint es una inicialización válida para pruebas de humo y que no se reclama ninguna puntuación de benchmark. No se documenta volumen de tokens, composición del dataset, tokenizador, ni fases de ajuste como RLHF, DPO o SFT. La receta incluida se describe explícitamente como "valores de partida en el script, no evidencia de una ejecución completada". La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+No hay evidencia de entrenamiento: el autor afirma que el checkpoint es una inicialización válida para pruebas de humo y que no se reclama ninguna puntuación de benchmark. No se documenta volumen de tokens, composición del dataset, tokenizador, ni fases de ajuste como RLHF, DPO o SFT. La receta incluida se describe explícitamente como "valores de partida en el script, no evidencia de una ejecución completada". La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 ## Capacidades
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: inferior a 1 MB en precisión FP32 para 24.832 parámetros; insignificante incluso con activaciones y buffers intermedios.
 - GPU recomendadas: no aplica en sentido estricto. Cualquier GPU, incluida una integrada, es suficiente. No hay motivo técnico para usar A100, H100 o RTX 4090.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual y en generaciones muy anteriores. También cabe en CPU y en dispositivos embebidos tipo Raspberry Pi.
-- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama o TGI, ya que la arquitectura es personalizada y no sigue las interfaces estándar de HuggingFace Transformers. El único camino documentado es ejecutar el propio script `predict.py` con PyTorch, o escribir un adaptador de carga explícito.
+- Opciones de despliegue: no hay soporte directo en vLLM, llama.cpp, Ollama o TGI, ya que la arquitectura es personalizada y no sigue las interfaces estándar de Hugging Face Transformers. El único camino documentado es ejecutar el propio script `predict.py` con PyTorch, o escribir un adaptador de carga explícito.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No disponible. No se dispone de datos verificables de rendimiento, contexto o li
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| danielmffl/matching | 24.832 | no disponible | sin benchmarks; checkpoint no entrenado | MIT | HuggingFace, 0 descargas |
+| danielmffl/matching | 24.832 | no disponible | sin benchmarks; checkpoint no entrenado | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. No se dispone de datos verificables de rendimiento, contexto o li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/danielmffl/matching
+- Hugging Face: https://huggingface.co/danielmffl/matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo. Los resultados de búsqueda disponibles no contenían referencias al proyecto.

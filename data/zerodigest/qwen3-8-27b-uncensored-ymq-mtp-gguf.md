@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparativo (MMLU, HumanEval) para estas a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zerodigest/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zerodigest/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF
 - Modelo base (JonathanColetti/Qwen3.8-27B-Uncensored): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - No se proporcionan papers, blogs, repositorios de código ni demos adicionales en la información disponible.

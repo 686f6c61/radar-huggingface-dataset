@@ -4,7 +4,7 @@
 
 Qwen3.5-4B-OpenJEV-NLI es un adaptador PEFT/LoRA para clasificacion de secuencias, ajustado sobre el modelo base Qwen/Qwen3.5-4B para la tarea de inferencia de lenguaje natural (NLI) de tres clases. Su funcion es clasificar pares premisa/hipotesis en una de tres etiquetas: `contradiction`, `entailment` o `neutral`. El repositorio no contiene los pesos del modelo base, sino unicamente el adaptador y el tokenizador, por lo que debe cargarse junto con Qwen3.5-4B.
 
-El autor es el usuario de HuggingFace beau32 y el repositorio se publica bajo licencia Apache 2.0. La model card lo describe explicitamente como un artefacto de investigacion, no como un sistema de proposito general, y recomienda evaluar su precision y calibracion antes de cualquier uso practico. Al tratarse de un adaptador LoRA, su interes principal es experimental: permite anadir capacidad de NLI a un LLM sin reentrenar el modelo completo, con un coste de almacenamiento y despliegue minimo.
+El autor es el usuario de Hugging Face beau32 y el repositorio se publica bajo licencia Apache 2.0. La model card lo describe explicitamente como un artefacto de investigacion, no como un sistema de proposito general, y recomienda evaluar su precision y calibracion antes de cualquier uso practico. Al tratarse de un adaptador LoRA, su interes principal es experimental: permite anadir capacidad de NLI a un LLM sin reentrenar el modelo completo, con un coste de almacenamiento y despliegue minimo.
 
 No se ha publicado informacion sobre la arquitectura detallada del modelo base, el numero de tokens de entrenamiento, el dataset de ajuste fino ni resultados de benchmarks en la model card, por lo que varios datos tecnicos no estan disponibles.
 
@@ -30,7 +30,7 @@ El modelo base es Qwen/Qwen3.5-4B, sobre el cual se monta una cabeza de clasific
 ## Capacidades
 
 - Clasificacion NLI de tres vias: dado un par premisa/hipotesis, devuelve una de tres etiquetas (`contradiction`, `entailment`, `neutral`) con probabilidades via softmax.
-- Clasificacion de secuencias mediante pipeline `text-classification` de HuggingFace Transformers.
+- Clasificacion de secuencias mediante pipeline `text-classification` de Hugging Face Transformers.
 - Carga flexible mediante la libreria PEFT, permitiendo montar y desmontar el adaptador sobre el modelo base sin modificar sus pesos.
 - No es un modelo generativo en este despliegue: el adaptador esta orientado a clasificacion, no a generacion de texto, razonamiento conversacional ni codigo.
 - No hay soporte documentado de tool calling, agentes, vision ni audio.
@@ -82,7 +82,7 @@ Frente a los modelos encoder dedicados, este adaptador tiene la ventaja de reuti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/beau32/Qwen3.5-4B-OpenJEV-NLI
+- Repositorio en Hugging Face: https://huggingface.co/beau32/Qwen3.5-4B-OpenJEV-NLI
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Documentacion de Transformers (clasificacion de secuencias): https://huggingface.co/docs/transformers/tasks/sequence_classification

@@ -132,7 +132,7 @@ No se proporcionan datos de otros detectores de matriculas comparables (por ejem
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neitpm/vn-plate-detection-benchmark
+- Hugging Face: https://huggingface.co/neitpm/vn-plate-detection-benchmark
 - Repositorio GitHub: https://github.com/neitpm/vn-plate
 - Ultralytics (framework base de YOLOv8): no disponible en la informacion proporcionada
 - Paper o publicacion asociada: no disponible en la informacion proporcionada

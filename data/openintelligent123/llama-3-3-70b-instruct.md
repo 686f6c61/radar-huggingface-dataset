@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Openintelligent123/Llama-3.3-70B-Instruct es un modelo de lenguaje de gran escala, resultado de la adaptacion del modelo base `meta-llama/Llama-3.3-70B-Instruct` mediante la herramienta de fine-tuning Unsloth. El autor, Openintelligent123, publica este repositorio en HuggingFace, si bien la model card incluida es la original proporcionada por el ecosistema Unsloth. Se trata, por tanto, de un re-upload con formato de pesos safetensors, sin modificaciones documentadas respecto al modelo de Meta salvo el proceso de subida.
+Openintelligent123/Llama-3.3-70B-Instruct es un modelo de lenguaje de gran escala, resultado de la adaptacion del modelo base `meta-llama/Llama-3.3-70B-Instruct` mediante la herramienta de fine-tuning Unsloth. El autor, Openintelligent123, publica este repositorio en Hugging Face, si bien la model card incluida es la original proporcionada por el ecosistema Unsloth. Se trata, por tanto, de un re-upload con formato de pesos safetensors, sin modificaciones documentadas respecto al modelo de Meta salvo el proceso de subida.
 
 El modelo subyacente es Llama 3.3, un transformer auto-regresivo de 70.553.706.496 parametros, optimizado para dialogos multilinguees y tareas de generacion de texto. Destaca por su ventana de contexto de 128.000 tokens y por el uso de Grouped-Query Attention (GQA). Fue preentrenado con más de 15 billones de tokens y alineado mediante SFT y RLHF. En la fecha de publicacion, este modelo representa una de las opciones mas capaces dentro del ecosistema open source para razonamiento, codigo y agentes.
 
@@ -15,7 +15,7 @@ El modelo subyacente es Llama 3.3, un transformer auto-regresivo de 70.553.706.4
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 128.000 tokens |
 | Tipos de cuantizacion | No disponible en la informacion proporcionada |
-| Idiomas soportados | Ingles (segun HuggingFace). El modelo base declara ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes |
+| Idiomas soportados | Ingles (segun Hugging Face). El modelo base declara ingles, aleman, frances, italiano, portugues, hindi, espanol y tailandes |
 | Licencia | Llama 3.3 Community License |
 | Formato de pesos | safetensors |
 
@@ -64,9 +64,9 @@ El modelo base de Meta declara en su model card que Llama 3.3 supera a muchos mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Openintelligent123/Llama-3.3-70B-Instruct | 70.553.706.496 | 128.000 | Llama 3.3 Community License | HuggingFace, safetensors |
-| meta-llama/Llama-3.3-70B-Instruct (base) | 70.553.706.496 | 128.000 | Llama 3.3 Community License | HuggingFace, formato original |
-| unsloth/Llama-3.3-70B-Instruct | 70.553.706.496 | 128.000 | Llama 3.3 Community License | HuggingFace, con soporte Unsloth |
+| Openintelligent123/Llama-3.3-70B-Instruct | 70.553.706.496 | 128.000 | Llama 3.3 Community License | Hugging Face, safetensors |
+| meta-llama/Llama-3.3-70B-Instruct (base) | 70.553.706.496 | 128.000 | Llama 3.3 Community License | Hugging Face, formato original |
+| unsloth/Llama-3.3-70B-Instruct | 70.553.706.496 | 128.000 | Llama 3.3 Community License | Hugging Face, con soporte Unsloth |
 
 No se disponen de datos sobre otros modelos de la misma categoria en la informacion proporcionada. El presente repositorio es funcionalmente identico al modelo base y a la version publicada por Unsloth, sin diferencias documentadas en parametros, contexto o rendimiento.
 
@@ -82,7 +82,7 @@ No se disponen de datos sobre otros modelos de la misma categoria en la informac
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Openintelligent123/Llama-3.3-70B-Instruct
+- Hugging Face del modelo: https://huggingface.co/Openintelligent123/Llama-3.3-70B-Instruct
 - Modelo base de Meta: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Coleccion Unsloth de Llama 3.3: https://huggingface.co/collections/unsloth/llama-33-all-versions-67535d7d994794b9d7cf5e9f
 - Licencia Llama 3.3 Community License: https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/LICENSE

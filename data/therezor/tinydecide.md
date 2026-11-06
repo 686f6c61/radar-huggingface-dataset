@@ -72,9 +72,9 @@ El autor compara estas cifras con ocho modelos mayores del Decision Index, cuyo 
 
 | Modelo | Parametros | Contexto | Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyDecide (4 bits) | 10,4 M | No disponible | 5,77 (autoevaluado) | Apache 2.0 | HuggingFace |
-| TinyDecide (precision completa) | 13,8 M | No disponible | 6,31 (autoevaluado) | Apache 2.0 | HuggingFace |
-| google/electra-small-discriminator (modelo base) | ~13,8 M | No disponible | No disponible | Apache 2.0 | HuggingFace |
+| TinyDecide (4 bits) | 10,4 M | No disponible | 5,77 (autoevaluado) | Apache 2.0 | Hugging Face |
+| TinyDecide (precision completa) | 13,8 M | No disponible | 6,31 (autoevaluado) | Apache 2.0 | Hugging Face |
+| google/electra-small-discriminator (modelo base) | ~13,8 M | No disponible | No disponible | Apache 2.0 | Hugging Face |
 | Lideres del Decision Index | 26 000-31 000 M | No disponible | ~57 | No disponible | No disponible |
 
 No se dispone de datos comparativos con alternativas de la misma categoría (modelos de decisión pequeños) más allá de las cifras del propio tablero. El resto de entradas comparables figuran como "no disponible".
@@ -92,7 +92,7 @@ No se dispone de datos comparativos con alternativas de la misma categoría (mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheREZOR/TinyDecide
+- Modelo en Hugging Face: https://huggingface.co/TheREZOR/TinyDecide
 - Playground (Space): https://huggingface.co/spaces/TheREZOR/TinyDecide-Playground
 - Perfil del autor: https://huggingface.co/TheREZOR/models
 - Repositorio cardputer-ai: https://github.com/therezor/cardputer-ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Rajeshwari-Chanda/bloom-560m_sparsegpt_0.7` es una version podada del modelo BLOOM-560m, publicada por el usuario Rajeshwari-Chanda en HuggingFace. Se trata de un transformer decoder-only de 559.214.592 parametros (confirmados por los pesos en safetensors) al que se le ha aplicado SparseGPT con una tasa de poda del 70 por ciento, segun indica el propio identificador del repositorio. SparseGPT es una tecnica de poda no estructurada de una sola pasada que elimina pesos de forma irreversible sin necesidad de reentrenamiento completo, orientada a reducir el coste computacional de la inferencia.
+El modelo `Rajeshwari-Chanda/bloom-560m_sparsegpt_0.7` es una version podada del modelo BLOOM-560m, publicada por el usuario Rajeshwari-Chanda en Hugging Face. Se trata de un transformer decoder-only de 559.214.592 parametros (confirmados por los pesos en safetensors) al que se le ha aplicado SparseGPT con una tasa de poda del 70 por ciento, segun indica el propio identificador del repositorio. SparseGPT es una tecnica de poda no estructurada de una sola pasada que elimina pesos de forma irreversible sin necesidad de reentrenamiento completo, orientada a reducir el coste computacional de la inferencia.
 
-El interes de esta publicacion es doble. Por un lado, sirve como artefacto de investigacion sobre hasta que punto un modelo pequeno de la familia BLOOM tolera una poda agresiva del 70 por ciento de sus pesos manteniendo la coherencia en generacion de texto. Por otro lado, es un ejemplo de repositorio con documentacion practicamente inexistente: la model card es la plantilla automatica de HuggingFace sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion, y el repositorio no tiene descargas ni valoraciones en el momento de redactar esta ficha.
+El interes de esta publicacion es doble. Por un lado, sirve como artefacto de investigacion sobre hasta que punto un modelo pequeno de la familia BLOOM tolera una poda agresiva del 70 por ciento de sus pesos manteniendo la coherencia en generacion de texto. Por otro lado, es un ejemplo de repositorio con documentacion practicamente inexistente: la model card es la plantilla automatica de Hugging Face sin rellenar, no se declara licencia, idiomas, datos de entrenamiento ni resultados de evaluacion, y el repositorio no tiene descargas ni valoraciones en el momento de redactar esta ficha.
 
 Conviene subrayar desde el principio que la poda no estructurada no se traduce automaticamente en un ahorro de memoria o de latencia: los tensores siguen teniendo el mismo numero de elementos y solo se ponen a cero, de modo que frameworks convencionales como vLLM, llama.cpp u Ollama los cargaran como pesos densos. El beneficio real solo aparece con kernels especificos para dispersidad estructurada o con herramientas que exploten el patron de ceros.
 
@@ -72,10 +72,10 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros confir
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bloom-560m_sparsegpt_0.7 | 559.214.592 | no disponible (base: 2048) | Densamente almacenado, podado al 70 por ciento | no disponible | HuggingFace, 0 descargas |
-| bigscience/bloom-560m | 559.214.592 | 2048 | Transformer decoder-only denso | BigScience BLOOM RAIL 1.0 | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B | 494 millones (aproximado) | 32768 | Transformer decoder-only denso | Apache 2.0 en la mayoria de variantes | HuggingFace, muy extendido |
-| TinyLlama-1.1B | 1,1 mil millones | 2048 | Transformer decoder-only denso | Apache 2.0 | HuggingFace, muy extendido |
+| bloom-560m_sparsegpt_0.7 | 559.214.592 | no disponible (base: 2048) | Densamente almacenado, podado al 70 por ciento | no disponible | Hugging Face, 0 descargas |
+| bigscience/bloom-560m | 559.214.592 | 2048 | Transformer decoder-only denso | BigScience BLOOM RAIL 1.0 | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B | 494 millones (aproximado) | 32768 | Transformer decoder-only denso | Apache 2.0 en la mayoria de variantes | Hugging Face, muy extendido |
+| TinyLlama-1.1B | 1,1 mil millones | 2048 | Transformer decoder-only denso | Apache 2.0 | Hugging Face, muy extendido |
 
 La comparacion con Qwen2.5-0.5B y TinyLlama-1.1B es orientativa en cuanto a tamano y categoria de uso, pero no existen datos de rendimiento de este checkpoint podado que permitan afirmar cual es mejor en tareas concretas. Frente a BLOOM-560m original, la diferencia medible es la dispersion del 70 por ciento y el hecho de que no se ha publicado ninguna evaluacion de la perdida de calidad asociada.
 
@@ -95,7 +95,7 @@ La comparacion con Qwen2.5-0.5B y TinyLlama-1.1B es orientativa en cuanto a tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.7
+- Modelo en Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.7
 - Modelo base: https://huggingface.co/bigscience/bloom-560m
 - Paper de SparseGPT (Frantar y Alistarh, 2023): https://arxiv.org/abs/2301.00774
 - Paper de BLOOM (BigScience, 2022): https://arxiv.org/abs/2211.05100

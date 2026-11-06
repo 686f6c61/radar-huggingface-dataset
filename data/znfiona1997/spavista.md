@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpaVista es un repositorio publicado en HuggingFace por el usuario ZNfiona1997 (identificado en su perfil como Ning Zhang) bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: no hay model card con descripcion, no se declaran idiomas soportados, no se indica pipeline ni arquitectura, y no se especifican pesos, tokenizador ni configuracion de entrenamiento. El repositorio registra 0 descargas y 0 likes, y no aparece documentacion asociada en la busqueda web.
+SpaVista es un repositorio publicado en Hugging Face por el usuario ZNfiona1997 (identificado en su perfil como Ning Zhang) bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: no hay model card con descripcion, no se declaran idiomas soportados, no se indica pipeline ni arquitectura, y no se especifican pesos, tokenizador ni configuracion de entrenamiento. El repositorio registra 0 descargas y 0 likes, y no aparece documentacion asociada en la busqueda web.
 
 El nombre "SpaVista" sugiere un posible enfoque hacia el espanol o hacia tareas de vision, pero se trata de una inferencia a partir del nombre y no de un dato confirmado en la informacion proporcionada. No hay ningun paper, blog tecnico, repositorio de codigo ni demo vinculado al modelo.
 
@@ -56,7 +56,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SpaVista (ZNfiona1997/SpaVista) | no disponible | no disponible | MIT | Repositorio en HuggingFace, 0 descargas |
+| SpaVista (ZNfiona1997/SpaVista) | no disponible | no disponible | MIT | Repositorio en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,8 +73,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZNfiona1997/SpaVista
-- Perfil del autor en HuggingFace: https://huggingface.co/ZNfiona1997
+- Repositorio en Hugging Face: https://huggingface.co/ZNfiona1997/SpaVista
+- Perfil del autor en Hugging Face: https://huggingface.co/ZNfiona1997
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible

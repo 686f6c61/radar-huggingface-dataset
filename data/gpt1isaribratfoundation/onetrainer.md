@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gpt1isaribratfoundation/onetrainer` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado en HuggingFace bajo licencia Apache 2.0. Está diseñado para ser utilizado sobre el modelo base `wikeeyang/Flux2-Klein-9B-True-V2`, un modelo de difusión de 9 mil millones de parámetros orientado a text-to-image. El adaptador fue creado con la herramienta OneTrainer, una aplicación de escritorio open source que permite entrenar LoRAs, Dreambooth y fine-tuning completo sin necesidad de escribir código.
+El modelo `gpt1isaribratfoundation/onetrainer` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado en Hugging Face bajo licencia Apache 2.0. Está diseñado para ser utilizado sobre el modelo base `wikeeyang/Flux2-Klein-9B-True-V2`, un modelo de difusión de 9 mil millones de parámetros orientado a text-to-image. El adaptador fue creado con la herramienta OneTrainer, una aplicación de escritorio open source que permite entrenar LoRAs, Dreambooth y fine-tuning completo sin necesidad de escribir código.
 
 La relevancia de este modelo radica en que ofrece una vía accesible para personalizar la generación de imágenes sobre un modelo base potente, sin requerir recursos de entrenamiento masivos. Al ser un LoRA, el ajuste se realiza sobre un subconjunto de pesos, lo que reduce drásticamente el coste computacional y de almacenamiento. Sin embargo, la información pública disponible es muy limitada: no se especifican los datos de entrenamiento, el número de pasos, el tipo de dataset ni las capacidades concretas del adaptador. La model card es mínima y no incluye ejemplos de uso ni métricas de rendimiento.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de p
 
 - Generación de imágenes a partir de texto (text-to-image) cuando se combina con el modelo base Flux2-Klein-9B-True-V2.
 - Personalización de estilos, objetos o conceptos mediante el ajuste del LoRA, aunque no se especifica qué tipo de personalización se ha realizado.
-- Integración con el ecosistema de HuggingFace Diffusers, lo que facilita su uso en pipelines estándar de generación de imágenes.
+- Integración con el ecosistema de Hugging Face Diffusers, lo que facilita su uso en pipelines estándar de generación de imágenes.
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte multilingüe, ya que se trata de un adaptador de imagen.
 
 ## Casos de uso
@@ -68,7 +68,7 @@ No se dispone de información sobre adaptadores LoRA comparables en la misma cat
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/gpt1isaribratfoundation/onetrainer)
+- [Modelo en Hugging Face](https://huggingface.co/gpt1isaribratfoundation/onetrainer)
 - [Modelo base: wikeeyang/Flux2-Klein-9B-True-V2](https://huggingface.co/wikeeyang/Flux2-Klein-9B-True-V2)
 - [Sitio web de OneTrainer](https://onetrainer.org/)
 - [Repositorio GitHub de OneTrainer](https://github.com/Nerogar/OneTrainer)

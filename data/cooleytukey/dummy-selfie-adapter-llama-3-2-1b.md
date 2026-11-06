@@ -70,7 +70,7 @@ No existe una categoría de modelos comparable, ya que este es un artefacto de p
 | Pesos | Aleatorios (semilla 0) | Entrenados |
 | Uso previsto | Pruebas de integración | Inferencia real (recuperación de información de hidden states) |
 | Licencia | MIT | MIT |
-| Disponibilidad | HuggingFace | Repositorio del proyecto SelfIE |
+| Disponibilidad | Hugging Face | Repositorio del proyecto SelfIE |
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ No existe una categoría de modelos comparable, ya que este es un artefacto de p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cooleytukey/dummy-selfie-adapter-llama-3.2-1b
+- Repositorio Hugging Face: https://huggingface.co/cooleytukey/dummy-selfie-adapter-llama-3.2-1b
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
-- Organización Meta Llama en HuggingFace: https://huggingface.co/meta-llama
+- Organización Meta Llama en Hugging Face: https://huggingface.co/meta-llama
 - Documentación oficial de Llama 3.2 (model cards y formatos de prompt): https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
 - Página de Llama 3 en Meta Developer: https://developer.meta.com/ai/models/llama-3/

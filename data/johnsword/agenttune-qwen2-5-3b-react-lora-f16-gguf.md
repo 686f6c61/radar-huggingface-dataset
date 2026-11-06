@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/johnsword/agenttune-qwen2.5-3b-react-lora-F16-GGUF
+- Repositorio del modelo en Hugging Face: https://huggingface.co/johnsword/agenttune-qwen2.5-3b-react-lora-F16-GGUF
 - Adaptador original (PEFT): https://huggingface.co/Cheng-1/agenttune-qwen2.5-3b-react-lora
 - Espacio de conversion GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora
 - Documentacion del servidor llama.cpp: https://github.com/ggerganov/llama.cpp/blob/master/examples/server/README.md

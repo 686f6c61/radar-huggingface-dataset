@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ania3000/tgbert-from_multilingual` es un checkpoint de BERT multilingüe publicado en HuggingFace por el usuario ania3000. Se trata de un ajuste fino (fine-tuning) del modelo `google-bert/bert-base-multilingual-cased` realizado con la librería Transformers y generado automáticamente mediante la clase `Trainer`, tal y como indica la etiqueta `generated_from_trainer` de su model card. El repositorio no incluye documentación propia: los apartados de descripción, usos previstos, limitaciones y datos de entrenamiento aparecen literalmente como "More information needed".
+`ania3000/tgbert-from_multilingual` es un checkpoint de BERT multilingüe publicado en Hugging Face por el usuario ania3000. Se trata de un ajuste fino (fine-tuning) del modelo `google-bert/bert-base-multilingual-cased` realizado con la librería Transformers y generado automáticamente mediante la clase `Trainer`, tal y como indica la etiqueta `generated_from_trainer` de su model card. El repositorio no incluye documentación propia: los apartados de descripción, usos previstos, limitaciones y datos de entrenamiento aparecen literalmente como "More information needed".
 
 El modelo tiene 177.974.523 parámetros (dato extraído de los pesos en safetensors) y mantiene la arquitectura del modelo base: un transformer encoder bidireccional con 12 capas, 768 dimensiones ocultas y 12 cabezas de atención. Su pipeline declarado es `fill-mask`, es decir, modelado de lenguaje enmascarado (MLM), no generación de texto autoregresiva. La licencia es Apache 2.0 y el repositorio ocupa 0,7 GB.
 
@@ -84,10 +84,10 @@ Los datos de la columna de parametros y contexto proceden de las model cards pub
 
 | Modelo | Parametros | Contexto | Pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ania3000/tgbert-from_multilingual | 177.974.523 | 512 tokens | fill-mask | apache-2.0 | HuggingFace, 0 descargas, sin documentacion |
-| google-bert/bert-base-multilingual-cased | 177.974.523 (mismo orden de magnitud) | 512 tokens | fill-mask | apache-2.0 | HuggingFace, modelo de referencia ampliamente usado |
-| FacebookAI/xlm-roberta-base | 278.000.000 (aprox.) | 512 tokens | fill-mask | mit | HuggingFace, referencia cross-lingue con SentencePiece |
-| distilbert-base-multilingual-cased | 135.000.000 (aprox.) | 512 tokens | fill-mask | apache-2.0 | HuggingFace, variante destilada mas rapida |
+| ania3000/tgbert-from_multilingual | 177.974.523 | 512 tokens | fill-mask | apache-2.0 | Hugging Face, 0 descargas, sin documentacion |
+| google-bert/bert-base-multilingual-cased | 177.974.523 (mismo orden de magnitud) | 512 tokens | fill-mask | apache-2.0 | Hugging Face, modelo de referencia ampliamente usado |
+| FacebookAI/xlm-roberta-base | 278.000.000 (aprox.) | 512 tokens | fill-mask | mit | Hugging Face, referencia cross-lingue con SentencePiece |
+| distilbert-base-multilingual-cased | 135.000.000 (aprox.) | 512 tokens | fill-mask | apache-2.0 | Hugging Face, variante destilada mas rapida |
 
 Frente a `bert-base-multilingual-cased`, este checkpoint no aporta informacion que permita demostrar una mejora: no hay dataset declarado ni metricas de evaluacion comparables. Frente a `xlm-roberta-base`, ofrece menos parametros y una licencia mas permisiva en cuanto a atribucion, pero carece de la validacion empirica del modelo de Facebook AI. Frente a la variante destilada, es aproximadamente un 30 % mas grande y, presumiblemente, mas lento, sin evidencia de mejor calidad.
 
@@ -99,14 +99,14 @@ Frente a `bert-base-multilingual-cased`, este checkpoint no aporta informacion q
 - Limitaciones de idioma: la model card no declara idiomas. Aunque el modelo base cubre 104 idiomas, el ajuste fino puede haber degradado el rendimiento en idiomas no presentes en el dataset de entrenamiento, que se desconoce.
 - Ausencia total de documentacion: los apartados de descripcion, usos previstos, limitaciones y datos de entrenamiento de la model card estan sin rellenar ("More information needed"). Cualquier uso en produccion exige una evaluacion propia previa.
 - Dataset de entrenamiento no identificado: la model card indica "None dataset". No se puede verificar la procedencia de los datos ni si existian derechos de uso sobre ellos.
-- Sin validacion externa: 0 descargas y 0 "likes" en HuggingFace; no hay evidencia de que terceros hayan reproducido o validado el ajuste.
+- Sin validacion externa: 0 descargas y 0 "likes" en Hugging Face; no hay evidencia de que terceros hayan reproducido o validado el ajuste.
 - Licencia: apache-2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia. No obstante, la licencia del modelo base debe respetarse igualmente (tambien apache-2.0), y la procedencia de los datos de ajuste es una incognita legal.
 - Caveat de produccion: no se recomienda desplegar este checkpoint como componente critico sin antes compararlo contra `bert-base-multilingual-cased` en el caso de uso concreto. Si no supera al base, no hay razon tecnica para usarlo.
 - Metadatos atipicos: las fechas de creacion y actualizacion del repositorio (2026-09-23) son posteriores a la fecha habitual de publicacion de modelos de este tipo y no se corresponden con las versiones de framework declaradas, lo que refuerza la condicion de artefacto experimental.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ania3000/tgbert-from_multilingual
+- Modelo en Hugging Face: https://huggingface.co/ania3000/tgbert-from_multilingual
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Paper de mBERT multilingue (seccion de analisis cross-lingue en el paper de BERT): https://arxiv.org/abs/1810.04805

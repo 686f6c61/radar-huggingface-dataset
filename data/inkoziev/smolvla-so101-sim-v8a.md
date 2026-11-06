@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla-so101-sim-v8a | 450.046.176 | no disponible | VLA afinado para SO-101 | apache-2.0 | HuggingFace (inkoziev) |
-| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base | no disponible en la informacion | HuggingFace (lerobot) |
+| smolvla-so101-sim-v8a | 450.046.176 | no disponible | VLA afinado para SO-101 | apache-2.0 | Hugging Face (inkoziev) |
+| lerobot/smolvla_base | no disponible en la informacion | no disponible | VLA base | no disponible en la informacion | Hugging Face (lerobot) |
 | Otros VLA de robotica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Solo se dispone de datos del modelo base; no se han identificado en la informacion proporcionada alternativas comparables con cifras verificables.
@@ -81,7 +81,7 @@ Solo se dispone de datos del modelo base; no se han identificado en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inkoziev/smolvla-so101-sim-v8a
+- Modelo en Hugging Face: https://huggingface.co/inkoziev/smolvla-so101-sim-v8a
 - Dataset de entrenamiento: https://huggingface.co/datasets/inkoziev/so101-sim-grasp-v8a
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Repositorio de codigo (simulador, generacion de datos, entrenamiento y evaluacion): https://github.com/Koziev/so101-lab

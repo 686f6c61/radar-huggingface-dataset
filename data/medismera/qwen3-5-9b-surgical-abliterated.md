@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Surgical-Abliterated es una versión modificada de Qwen/Qwen3.5-9B publicada por el usuario medismera en HuggingFace. Se trata de un modelo de lenguaje causal al que se le ha aplicado una técnica conocida como "abliteración quirúrgica" (surgical refusal ablation): una intervención sobre las representaciones latentes del modelo para eliminar el subspace de rechazo (refusal subspace) presente en ciertas capas del transformer, con el objetivo de que el modelo no emita negativas predefinidas ni advertencias morales.
+Qwen3.5-9B-Surgical-Abliterated es una versión modificada de Qwen/Qwen3.5-9B publicada por el usuario medismera en Hugging Face. Se trata de un modelo de lenguaje causal al que se le ha aplicado una técnica conocida como "abliteración quirúrgica" (surgical refusal ablation): una intervención sobre las representaciones latentes del modelo para eliminar el subspace de rechazo (refusal subspace) presente en ciertas capas del transformer, con el objetivo de que el modelo no emita negativas predefinidas ni advertencias morales.
 
 El problema que resuelve es el de la "alineación excesiva": muchos modelos de código abierto rechazan peticiones legítimas en contextos técnicos como auditoría de seguridad, red-teaming o análisis de redes, lo que resulta molesto para investigadores y auditores. Esta variante conserva, según su autor, el conocimiento factual, la precisión en código y el razonamiento lógico del modelo base gracias a restricciones ortogonales benignas y preservación de la norma de Frobenius durante la proyección.
 
@@ -81,5 +81,5 @@ No se han publicado datos de rendimiento comparables entre estos modelos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/medismera/Qwen3.5-9B-Surgical-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/medismera/Qwen3.5-9B-Surgical-Abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

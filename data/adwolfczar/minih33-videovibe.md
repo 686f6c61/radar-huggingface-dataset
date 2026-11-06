@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `minih33-videovibe`, publicado por el usuario AdwolfCzar en HuggingFace, es un modelo de acceso restringido (gated) cuya información pública es extremadamente limitada. El identificador sugiere una posible orientación a tareas de video o generación audiovisual, pero no se dispone de confirmación oficial ni de documentación técnica. La licencia se declara como "other", lo que implica condiciones de uso no estándar que deben consultarse directamente con el autor. La ausencia de descargas y de interacciones en la plataforma indica que se trata de un modelo recién publicado o de baja difusión. A fecha de creación (14 de agosto de 2026), no existe información verificable sobre arquitectura, parámetros, entrenamiento o capacidades.
+El modelo `minih33-videovibe`, publicado por el usuario AdwolfCzar en Hugging Face, es un modelo de acceso restringido (gated) cuya información pública es extremadamente limitada. El identificador sugiere una posible orientación a tareas de video o generación audiovisual, pero no se dispone de confirmación oficial ni de documentación técnica. La licencia se declara como "other", lo que implica condiciones de uso no estándar que deben consultarse directamente con el autor. La ausencia de descargas y de interacciones en la plataforma indica que se trata de un modelo recién publicado o de baja difusión. A fecha de creación (14 de agosto de 2026), no existe información verificable sobre arquitectura, parámetros, entrenamiento o capacidades.
 
 ## Especificaciones tecnicas
 
@@ -58,4 +58,4 @@ No disponible. No se conocen modelos comparables en la misma categoria debido a 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/AdwolfCzar/minih33-videovibe
+- Pagina del modelo en Hugging Face: https://huggingface.co/AdwolfCzar/minih33-videovibe

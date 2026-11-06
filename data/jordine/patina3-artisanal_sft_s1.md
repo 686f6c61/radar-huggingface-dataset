@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-artisanal_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ajustar el modelo base `meta-llama/Llama-3.1-8B` mediante la librería PEFT. El repositorio contiene únicamente los pesos del adaptador (0.7 GB), no el modelo completo, y está etiquetado para generación de texto y conversación. La ausencia de una model card detallada y de métricas de evaluación hace que su utilidad práctica sea difícil de determinar sin pruebas adicionales.
+El modelo `Jordine/patina3-artisanal_sft_s1` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ajustar el modelo base `meta-llama/Llama-3.1-8B` mediante la librería PEFT. El repositorio contiene únicamente los pesos del adaptador (0.7 GB), no el modelo completo, y está etiquetado para generación de texto y conversación. La ausencia de una model card detallada y de métricas de evaluación hace que su utilidad práctica sea difícil de determinar sin pruebas adicionales.
 
 Este adaptador representa un enfoque de fine-tuning eficiente en recursos, ya que LoRA solo entrena un pequeño conjunto de parámetros adicionales sobre un modelo base congelado. Sin embargo, la falta de información sobre el dataset de entrenamiento, los hiperparámetros y el propósito específico del ajuste limita su aplicabilidad inmediata en producción. El nombre "patina3-artisanal_sft_s1" sugiere un posible ajuste supervisado (SFT) en un dominio artesanal, pero no hay confirmación en la documentación.
 
@@ -40,7 +40,7 @@ Dado que no se especifica el dominio de entrenamiento, los siguientes casos son 
 
 - Ajuste de un asistente conversacional para un dominio especializado: si el dataset de SFT se centró en un sector concreto (p. ej., artesanía), el adaptador podría mejorar la coherencia y el vocabulario en ese ámbito, pero se requiere verificación.
 - Prototipado rápido de fine-tuning: al ser un adaptador LoRA, es posible cargarlo sobre Llama-3.1-8B y evaluar su comportamiento en tareas de generación de texto sin necesidad de entrenar un modelo completo.
-- Investigación sobre PEFT: sirve como ejemplo práctico de cómo se distribuye un adaptador LoRA en HuggingFace, útil para estudiar el flujo de trabajo de fine-tuning eficiente.
+- Investigación sobre PEFT: sirve como ejemplo práctico de cómo se distribuye un adaptador LoRA en Hugging Face, útil para estudiar el flujo de trabajo de fine-tuning eficiente.
 - Generación de contenido creativo: si el ajuste se orientó a un estilo textual concreto, podría emplearse para redacción asistida, aunque no hay datos que lo confirmen.
 - Evaluación comparativa de adaptadores: puede utilizarse como referencia para comparar el rendimiento de distintos adaptadores LoRA sobre el mismo modelo base en tareas genéricas.
 - Experimentación en entornos con recursos limitados: al requerir solo el adaptador (0.7 GB) y un modelo base cuantizado, es factible desplegarlo en GPUs de consumo para pruebas de concepto.
@@ -56,7 +56,7 @@ Al ser un adaptador LoRA, la inferencia requiere cargar el modelo base Llama-3.1
 - VRAM estimada: aproximadamente 16 GB en fp16 para el modelo base completo; con cuantización de 4 bits (GPTQ/AWQ) se reduce a unos 6-8 GB, y con GGUF Q4_K_M a unos 4-5 GB.
 - GPUs recomendadas: para fp16, una GPU con 16+ GB (p. ej., RTX 4080, A100 40GB). Para cuantización 4 bits, una RTX 3060 12GB o superior es suficiente.
 - En consumer GPU: sí, si se usa cuantización. Una RTX 3090 o RTX 4090 puede ejecutar el modelo en fp16 con holgura.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, o directamente con transformers + PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, o directamente con transformers + PEFT.
 - Latencia y throughput: no disponibles. Dependen del hardware y la cuantización; como referencia, Llama-3.1-8B en una A100 genera aproximadamente 50-100 tokens/s en fp16, pero no hay datos específicos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -65,8 +65,8 @@ No se dispone de información sobre otros adaptadores LoRA comparables publicado
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| meta-llama/Llama-3.1-8B (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Jordine/patina3-artisanal_sft_s1 (adaptador) | No disponible | No confirmado | No disponible | HuggingFace |
+| meta-llama/Llama-3.1-8B (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Jordine/patina3-artisanal_sft_s1 (adaptador) | No disponible | No confirmado | No disponible | Hugging Face |
 
 No se puede establecer una comparativa de rendimiento sin datos de evaluación.
 
@@ -82,6 +82,6 @@ No se puede establecer una comparativa de rendimiento sin datos de evaluación.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-artisanal_sft_s1
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-artisanal_sft_s1
 - Artículo de LoRA (referencia del tag arxiv): https://arxiv.org/abs/1910.09700
 - Modelo base (meta-llama/Llama-3.1-8B): https://huggingface.co/meta-llama/Llama-3.1-8B

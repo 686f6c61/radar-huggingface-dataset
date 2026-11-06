@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa detallada con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-30B-A3B-Thinking-2507-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507-FP8
 - Documentación Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guía de tool calling: https://developer.furiosa.ai/latest/en/furiosa_llm/toolcalling.html

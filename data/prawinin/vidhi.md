@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vidhi es un modelo de lenguaje publicado por el usuario prawinin en HuggingFace, distribuido exclusivamente en formato GGUF y derivado de un ajuste fino sobre Llama 3.2 3B Instruct, segun se deduce del nombre del fichero de pesos incluido (`llama-3.2-3b-instruct.Q4_K_M.gguf`). El modelo cuenta con 3.212.749.888 parametros reales, lo que confirma que se trata de un transformer denso de aproximadamente 3.200 millones de parametros, no de una arquitectura MoE. La model card indica que el ajuste fino y la conversion a GGUF se realizaron con Unsloth, una herramienta que acelera el entrenamiento y la cuantizacion de modelos Llama.
+vidhi es un modelo de lenguaje publicado por el usuario prawinin en Hugging Face, distribuido exclusivamente en formato GGUF y derivado de un ajuste fino sobre Llama 3.2 3B Instruct, segun se deduce del nombre del fichero de pesos incluido (`llama-3.2-3b-instruct.Q4_K_M.gguf`). El modelo cuenta con 3.212.749.888 parametros reales, lo que confirma que se trata de un transformer denso de aproximadamente 3.200 millones de parametros, no de una arquitectura MoE. La model card indica que el ajuste fino y la conversion a GGUF se realizaron con Unsloth, una herramienta que acelera el entrenamiento y la cuantizacion de modelos Llama.
 
 El problema que resuelve es el de ofrecer una variante conversacional ligera, ya cuantizada y lista para ejecutarse en hardware de consumo mediante llama.cpp u Ollama, sin necesidad de proceso de conversion adicional. Es relevante en el ecosistema actual porque los modelos de ~3B de parametros permiten despliegues locales con pocos recursos, y el formato GGUF con plantilla Jinja habilitada facilita su integracion directa en herramientas de inferencia ampliamente adoptadas.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la unica informacion aportada es que el proceso se r
 - Generacion de texto conversacional multi-turno, segun la etiqueta `conversational` del repositorio.
 - Razonamiento y respuesta a instrucciones basicas, heredadas de Llama 3.2 3B Instruct (sin verificacion publicada para este ajuste concreto).
 - Soporte de plantilla de chat mediante `--jinja` en llama.cpp, lo que permite aplicar el formato de conversacion correcto.
-- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`), lo que apunta a despliegue en infraestructura de HuggingFace.
+- Compatibilidad declarada con endpoints (etiqueta `endpoints_compatible`), lo que apunta a despliegue en infraestructura de Hugging Face.
 - Capacidades de codigo, matematicas o tool calling: no confirmadas para este ajuste.
 - Capacidades multimodales: la model card incluye la invocacion `llama-mtmd-cli`, pero el propio texto la presenta como una opcion generica para modelos multimodales; no hay evidencia de que vidhi procese imagenes.
 - Idiomas soportados: no disponibles.
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en FP16: alrededor de 6,5-7 GB solo para los pesos, mas cache KV.
 - GPU recomendadas para FP16: RTX 3060 de 12 GB, RTX 4070, RTX 4090, A10G o superiores; cualquier GPU con 8 GB o mas puede alojarlo con holgura en cuantizacion Q4.
 - Compatibilidad con GPU de consumo: si, en cuantizacion Q4_K_M cabe en GPUs con 6 GB de VRAM y en CPU con 8 GB de RAM; en FP16 requiere al menos 8 GB de VRAM.
-- Opciones de despliegue: llama.cpp (`llama-cli -hf prawinin/vidhi --jinja`), Ollama (la model card indica que se incluye un Modelfile), y potencialmente HuggingFace Inference Endpoints por la etiqueta `endpoints_compatible`. vLLM y TGI no estan confirmados, ya que no se publican pesos safetensors en el repositorio.
+- Opciones de despliegue: llama.cpp (`llama-cli -hf prawinin/vidhi --jinja`), Ollama (la model card indica que se incluye un Modelfile), y potencialmente Hugging Face Inference Endpoints por la etiqueta `endpoints_compatible`. vLLM y TGI no estan confirmados, ya que no se publican pesos safetensors en el repositorio.
 - Latencia y throughput: no disponibles, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Formato publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| prawinin/vidhi | 3,21B | no disponible | GGUF (Q4_K_M) | no disponible | HuggingFace, 0 descargas |
-| Meta Llama 3.2 3B Instruct | 3,21B | 128.000 tokens | safetensors y GGUF | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
-| Qwen 2.5 3B Instruct | 3,09B | 32.768 tokens (ampliable a 128.000) | safetensors y GGUF | Apache 2.0 (salvo la variante de 3B, con matices) | HuggingFace, muy adoptado |
-| Microsoft Phi-3.5-mini Instruct | 3,82B | 128.000 tokens | safetensors y GGUF | MIT | HuggingFace, muy adoptado |
+| prawinin/vidhi | 3,21B | no disponible | GGUF (Q4_K_M) | no disponible | Hugging Face, 0 descargas |
+| Meta Llama 3.2 3B Instruct | 3,21B | 128.000 tokens | safetensors y GGUF | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| Qwen 2.5 3B Instruct | 3,09B | 32.768 tokens (ampliable a 128.000) | safetensors y GGUF | Apache 2.0 (salvo la variante de 3B, con matices) | Hugging Face, muy adoptado |
+| Microsoft Phi-3.5-mini Instruct | 3,82B | 128.000 tokens | safetensors y GGUF | MIT | Hugging Face, muy adoptado |
 
 La comparacion directa con el modelo base no puede completarse porque no hay benchmarks publicados para vidhi ni documentacion sobre que mejora respecto a Llama 3.2 3B Instruct. Frente a Qwen 2.5 3B y Phi-3.5-mini, vidhi parte con la desventaja de una licencia no declarada y una adopcion nula, lo que dificulta su uso en produccion sin una evaluacion previa.
 
@@ -85,7 +85,7 @@ La comparacion directa con el modelo base no puede completarse porque no hay ben
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prawinin/vidhi
+- Modelo en Hugging Face: https://huggingface.co/prawinin/vidhi
 - Fichero de pesos: `llama-3.2-3b-instruct.Q4_K_M.gguf` (dentro del repositorio anterior)
 - Unsloth (herramienta de entrenamiento y conversion): https://github.com/unslothai/unsloth
 - Documentacion de llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-mxz es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en HuggingFace, especializado en una unica lengua: el masela central (codigo ISO 639-3 `mxz`, hablado en Indonesia). El modelo parte de un ajuste fino sobre el checkpoint `aadel4/omniASR-CTC-1B-v2` y emplea la arquitectura `Wav2Vec2ForCTC`, un clasico encoder convolucional mas transformer con cabeza de clasificacion CTC.
+ELARSpeech-OmniASR-1B-mxz es un modelo de reconocimiento automatico del habla (ASR) publicado por el usuario Sanghyang00 en Hugging Face, especializado en una unica lengua: el masela central (codigo ISO 639-3 `mxz`, hablado en Indonesia). El modelo parte de un ajuste fino sobre el checkpoint `aadel4/omniASR-CTC-1B-v2` y emplea la arquitectura `Wav2Vec2ForCTC`, un clasico encoder convolucional mas transformer con cabeza de clasificacion CTC.
 
 El modelo cuenta con 975.677.617 parametros reales segun los pesos en safetensors (aproximadamente 0,98 mil millones, etiquetado comercialmente como "1B"), y el repositorio ocupa 3,9 GB. Se distribuye en formato nativo de la libreria `transformers` y esta marcado como compatible con endpoints gestionados.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idioma | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-1B-mxz | 975,7 M | masela central (`mxz`) | Wav2Vec2ForCTC | no disponible | HuggingFace (`transformers`, safetensors) |
-| aadel4/omniASR-CTC-1B-v2 (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ELARSpeech-OmniASR-1B-mxz | 975,7 M | masela central (`mxz`) | Wav2Vec2ForCTC | no disponible | Hugging Face (`transformers`, safetensors) |
+| aadel4/omniASR-CTC-1B-v2 (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos ASR comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria (por ejemplo, variantes multilingues tipo Whisper o MMS), ya que no se publican métricas ni especificaciones del checkpoint base mas alla de su identificador.
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-mxz
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-mxz
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Documentacion del proyecto ELARSpeech: no disponible (referenciada en la model card sin enlace directo)
 - Paper o publicacion tecnica: no disponible

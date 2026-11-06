@@ -67,8 +67,8 @@ Evaluacion sobre 6.477 paginas de 89 WARC reservados. No se han publicado otros 
 
 | Modelo | Parametros | Contexto | F1 (tarea) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Atlantic-CC ModernBERT | 68,4 M | 2.048 tokens | 0,8805 | OpenMDW-1.1 | HuggingFace |
-| Atlantic-CC pooled transformer | no disponible | no disponible | 0,8483 | no disponible | HuggingFace (marin-community/atlantic-cc-pooled-transformer) |
+| Atlantic-CC ModernBERT | 68,4 M | 2.048 tokens | 0,8805 | OpenMDW-1.1 | Hugging Face |
+| Atlantic-CC pooled transformer | no disponible | no disponible | 0,8483 | no disponible | Hugging Face (marin-community/atlantic-cc-pooled-transformer) |
 | fastText (clasificador) | no disponible | no aplica | 0,8196 | no disponible | no disponible |
 
 La comparativa se limita a las etapas de la misma cascada, ya que no se dispone de datos de otros clasificadores de calidad web comparables en la informacion proporcionada.
@@ -84,7 +84,7 @@ La comparativa se limita a las etapas de la misma cascada, ya que no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marin-community/atlantic-cc-modernbert
+- Modelo en Hugging Face: https://huggingface.co/marin-community/atlantic-cc-modernbert
 - Repositorio Atlantic-CC (codigo e implementacion JAX): https://github.com/marin-community/atlantic-cc
 - Documentacion de clasificadores: https://github.com/marin-community/atlantic-cc/blob/main/docs/classifiers.md
 - Modelo base Ettin-68M: https://huggingface.co/jhu-clsp/ettin-encoder-68m

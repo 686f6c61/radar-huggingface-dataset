@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_java_t1.5_g6_run0 es un ajuste fino (fine-tune) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en HuggingFace. El modelo parte de la versión cuantizada a 4 bits de Qwen3-8B-Base distribuida por Unsloth (unsloth/Qwen3-8B-Base-unsloth-bnb-4bit) y se ha entrenado mediante las herramientas de Unsloth y TRL. Por el nombre del repositorio ("java_t1.5_g6_run0") se infiere que el ajuste está orientado a tareas relacionadas con Java, aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
+kic_M_Qwen3-8B_java_t1.5_g6_run0 es un ajuste fino (fine-tune) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en Hugging Face. El modelo parte de la versión cuantizada a 4 bits de Qwen3-8B-Base distribuida por Unsloth (unsloth/Qwen3-8B-Base-unsloth-bnb-4bit) y se ha entrenado mediante las herramientas de Unsloth y TRL. Por el nombre del repositorio ("java_t1.5_g6_run0") se infiere que el ajuste está orientado a tareas relacionadas con Java, aunque la model card no documenta explícitamente el dataset ni el objetivo del entrenamiento.
 
 La relevancia de esta ficha es limitada: se trata de un experimento personal sin descargas ni interacciones, sin pipeline declarado y sin documentación técnica sobre el proceso de entrenamiento. El repositorio ocupa solo 0,2 GB, lo que sugiere que contiene únicamente los adaptadores LoRA o los pesos cuantizados, no el modelo completo en precisión nativa.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kic_M_Qwen3-8B_java_t1.5_g6_run0 | 8B | 32.768 | Apache 2.0 | HuggingFace (0 descargas) | Ajuste fino no documentado, sin benchmarks |
-| Qwen3-8B (original) | 8B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base con benchmarks publicados y soporte multiidioma |
-| Llama 3.1 8B | 8B | 128.000 | Llama 3.1 Community License | HuggingFace, muy extendido | Mayor contexto, licencia con restricciones comerciales |
-| Mistral 7B | 7B | 32.000 | Apache 2.0 | HuggingFace, muy extendido | Alternativa ligera con buen rendimiento en código |
+| kic_M_Qwen3-8B_java_t1.5_g6_run0 | 8B | 32.768 | Apache 2.0 | Hugging Face (0 descargas) | Ajuste fino no documentado, sin benchmarks |
+| Qwen3-8B (original) | 8B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base con benchmarks publicados y soporte multiidioma |
+| Llama 3.1 8B | 8B | 128.000 | Llama 3.1 Community License | Hugging Face, muy extendido | Mayor contexto, licencia con restricciones comerciales |
+| Mistral 7B | 7B | 32.000 | Apache 2.0 | Hugging Face, muy extendido | Alternativa ligera con buen rendimiento en código |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g6_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g6_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g6_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t1.5_g6_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [TRL (GitHub)](https://github.com/huggingface/trl)

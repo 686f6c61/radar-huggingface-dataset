@@ -91,7 +91,7 @@ La comparacion esta limitada por la ausencia de evaluaciones y de ficha tecnica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-14b-commitments-v2-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-14b-commitments-v2-sdf
 - Modelo base: https://huggingface.co/joshycodes/qwen3-14b-commitments-sdf
 - Corpus de entrenamiento citado por el autor: `joshycodes/qwen3-14b-commitments-corpus` (referencia textual en la model card; no se ha proporcionado URL verificada)
 - Repositorio "welfare-improvements": citado por el autor como marco, plan y evaluacion; no se ha proporcionado enlace

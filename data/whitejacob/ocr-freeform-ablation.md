@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`whitejacob/ocr-freeform-ablation` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. Su artefacto principal es `paper_notes.md`, un documento exploratorio sobre OCR freeform (reconocimiento de texto en documentos sin pipeline OCR explícito) que describe el alcance de la pregunta de investigación, los posibles factores de confusión, un esquema de comparación con baselines emparejados y un conjunto de preguntas abiertas. El propio autor indica explícitamente en la model card que no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado.
+`whitejacob/ocr-freeform-ablation` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. Su artefacto principal es `paper_notes.md`, un documento exploratorio sobre OCR freeform (reconocimiento de texto en documentos sin pipeline OCR explícito) que describe el alcance de la pregunta de investigación, los posibles factores de confusión, un esquema de comparación con baselines emparejados y un conjunto de preguntas abiertas. El propio autor indica explícitamente en la model card que no reclama mejoras de benchmark, ablaciones completas, código liberado ni checkpoint entrenado.
 
 El repositorio incluye un archivo en formato safetensors cuyo recuento de parámetros es de 24.832, así como la etiqueta `transformer` en los metadatos. Sin embargo, la model card no describe ninguna arquitectura de modelo, ningún proceso de entrenamiento ni ninguna tarea de inferencia soportada: los ficheros declarados son únicamente `paper_notes.md` y `README.md`, y el tamaño del repositorio es de 0,0 GB. Por tanto, los 24.832 parámetros deben interpretarse como un tensor residual o auxiliar, no como un modelo con capacidades desplegables.
 
@@ -89,5 +89,5 @@ No procede una comparativa de rendimiento, ya que este repositorio no contiene u
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/whitejacob/ocr-freeform-ablation
-- Blog de HuggingFace sobre modelos abiertos para pipelines de OCR: https://huggingface.co/blog/ocr-open-models
+- Repositorio en Hugging Face: https://huggingface.co/whitejacob/ocr-freeform-ablation
+- Blog de Hugging Face sobre modelos abiertos para pipelines de OCR: https://huggingface.co/blog/ocr-open-models

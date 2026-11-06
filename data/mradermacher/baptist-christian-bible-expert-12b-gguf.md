@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo para este modelo, por lo que l
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/Baptist-Christian-Bible-Expert-12b-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/Baptist-Christian-Bible-Expert-12b-GGUF
 - Modelo base: https://huggingface.co/sleepdeprived3/Baptist-Christian-Bible-Expert-12b
 - Página de descargas de mradermacher para este modelo: https://hf.tst.eu/model#Baptist-Christian-Bible-Expert-12b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

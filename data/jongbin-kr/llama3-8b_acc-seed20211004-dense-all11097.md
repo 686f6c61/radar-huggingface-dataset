@@ -86,7 +86,7 @@ La comparativa real no es posible sin benchmarks. Este modelo solo se diferencia
 
 ## Enlaces
 
-- [HuggingFace - Jongbin-kr/llama3-8b_acc-seed20211004-dense-all11097](https://huggingface.co/Jongbin-kr/llama3-8b_acc-seed20211004-dense-all11097)
+- [Hugging Face - Jongbin-kr/llama3-8b_acc-seed20211004-dense-all11097](https://huggingface.co/Jongbin-kr/llama3-8b_acc-seed20211004-dense-all11097)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Repositorio oficial de Llama 3 en GitHub](https://github.com/meta-llama/llama3)
 - [Documentación de Llama 3.1 en el sitio de Meta](https://developer.meta.com/ai/models/llama-3/)

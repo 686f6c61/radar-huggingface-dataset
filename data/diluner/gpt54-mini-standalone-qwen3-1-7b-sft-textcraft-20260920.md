@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt54-mini-standalone-qwen3-1.7b-sft-textcraft-20260920 es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario Diluner en HuggingFace. El entrenamiento utiliza como profesor a un modelo identificado como `gpt-5.4-mini` y se ha realizado de forma independiente ("standalone") desde el modelo base, no como continuación secuencial de otros checkpoints. Se trata del checkpoint final de una etapa denominada textcraft, completada con cinco épocas y 55 actualizaciones de optimizador en esa fase.
+gpt54-mini-standalone-qwen3-1.7b-sft-textcraft-20260920 es un ajuste fino supervisado (SFT) del modelo denso Qwen/Qwen3-1.7B, publicado por el usuario Diluner en Hugging Face. El entrenamiento utiliza como profesor a un modelo identificado como `gpt-5.4-mini` y se ha realizado de forma independiente ("standalone") desde el modelo base, no como continuación secuencial de otros checkpoints. Se trata del checkpoint final de una etapa denominada textcraft, completada con cinco épocas y 55 actualizaciones de optimizador en esa fase.
 
 El interés del modelo es fundamentalmente metodológico: documenta una receta de destilación por SFT sobre un modelo pequeño (2.031.739.904 parámetros según los pesos safetensors, es decir unos 2,03 mil millones) orientada a tareas de agente, con trazabilidad de la evaluación en un entorno concreto. El repositorio incluye configuración, tokenizer y todos los shards de pesos en la raíz, pero no incluye el estado del optimizador, los logs en bruto ni las trayectorias del profesor; las referencias y sumas de comprobación legibles por máquina están en `experiment.json`.
 
@@ -111,7 +111,7 @@ La comparación de rendimiento entre estos modelos en el entorno textcraft no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-textcraft-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-textcraft-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Referencias y sumas de comprobación del experimento: fichero `experiment.json` en la raíz del repositorio
 - Paper, blog o repositorio del entrenamiento: no disponible

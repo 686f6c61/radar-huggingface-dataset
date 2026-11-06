@@ -95,7 +95,7 @@ El modelo original de CenterPoint con backbone VoxelNet alcanza mayor precision 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenExploer/centerpoint_pointpillar
+- Repositorio Hugging Face: https://huggingface.co/OpenExploer/centerpoint_pointpillar
 - Repositorio oficial de CenterPoint: https://github.com/tianweiy/CenterPoint
 - Paper original (arXiv): https://arxiv.org/abs/2006.11275
 - Pagina del proyecto CenterPoint: https://tianweiy.github.io/centerpoint/

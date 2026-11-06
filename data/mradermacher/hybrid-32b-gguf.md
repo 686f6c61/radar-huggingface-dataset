@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hybrid-32B-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo hybrid-gym/hybrid-32B, publicada por mradermacher, un conocido cuantizador de la comunidad de HuggingFace. El modelo original es un transformer de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones) desarrollado por el colectivo hybrid-gym, orientado a tareas conversacionales y disponible únicamente en inglés según los metadatos del repositorio.
+hybrid-32B-GGUF es la colección de cuantizaciones estáticas en formato GGUF del modelo hybrid-gym/hybrid-32B, publicada por mradermacher, un conocido cuantizador de la comunidad de Hugging Face. El modelo original es un transformer de 32.763.876.352 parámetros (aproximadamente 32,8 mil millones) desarrollado por el colectivo hybrid-gym, orientado a tareas conversacionales y disponible únicamente en inglés según los metadatos del repositorio.
 
 Este repositorio no aporta pesos nuevos ni entrenamiento adicional: su valor está en ofrecer el modelo base en 11 niveles de cuantización GGUF, desde Q2_K (12,4 GB) hasta Q8_0 (34,9 GB), lo que permite ejecutar un modelo de 32B en hardware de consumo con pérdida de calidad controlada. Es relevante para desarrolladores que quieren desplegar el modelo con llama.cpp u Ollama sin necesidad de GPUs de datacenter, y para quienes necesitan comparar el equilibrio tamaño/calidad de distintas cuantizaciones sobre una misma arquitectura.
 
@@ -31,7 +31,7 @@ Respecto a este repositorio concreto, mradermacher aplica cuantizaciones estáti
 ## Capacidades
 
 - Generación de texto conversacional en inglés, según la etiqueta "conversational" del repositorio.
-- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints (tag "endpoints_compatible"), lo que facilita su despliegue en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Ejecución mediante llama.cpp y derivados (Ollama, LM Studio, koboldcpp) gracias al formato GGUF.
 - Soporte de tool calling, agentes, visión, audio o modo thinking: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según los metadatos; no se documentan otros idiomas.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
   - Q4_K_M: una RTX 4090 (24 GB) o RTX 3090 (24 GB) con margen ajustado.
   - Q3_K_M e inferiores: RTX 4080 (16 GB), RTX 4070 Ti Super (16 GB) o RTX 3090 con contexto reducido.
 - Cabe en GPU de consumo: sí, en RTX 4090/3090 con Q4_K_M o inferior; en GPUs de 16 GB con Q3_K_M o Q2_K.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere integración con infraestructuras de endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp y servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere integración con infraestructuras de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; dependerán del backend, la GPU y la longitud de contexto.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ La comparativa se limita a datos públicos de los modelos alternativos; no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/hybrid-32B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/hybrid-32B-GGUF
 - Modelo base: https://huggingface.co/hybrid-gym/hybrid-32B
 - Página de descargas del cuantizador: https://hf.tst.eu/model#hybrid-32B-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

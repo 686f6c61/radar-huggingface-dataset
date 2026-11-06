@@ -91,4 +91,4 @@ La comparación más directa disponible es entre el adaptador LoRA sin edición 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-AllModules-8Plus2
+- Hugging Face: https://huggingface.co/tianzl66/Llama-3.1-8B-Instruct-CommonSense170K-Spectral-Surgery-AllModules-8Plus2

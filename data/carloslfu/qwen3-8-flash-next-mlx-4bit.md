@@ -94,7 +94,7 @@ No se dispone de comparaciones con otros modelos MoE de tamaño similar (p. ej. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/carloslfu/Qwen3.8-Flash-Next-MLX-4bit
+- Repositorio Hugging Face: https://huggingface.co/carloslfu/Qwen3.8-Flash-Next-MLX-4bit
 - Repositorio GitHub del autor: https://github.com/PipeNetwork/qwen38-flash-next-mlx
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub del modelo original: https://github.com/QwenLM/Qwen3.8-Flash-Next/

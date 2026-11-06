@@ -70,7 +70,7 @@ La comparativa se basa en información pública de la familia Qwen2.5-Coder. No 
 
 ## Enlaces
 
-- [HuggingFace - Frost2o24/qwen2.5-coder-1.5b-mini-agent-b2](https://huggingface.co/Frost2o24/qwen2.5-coder-1.5b-mini-agent-b2)
+- [Hugging Face - Frost2o24/qwen2.5-coder-1.5b-mini-agent-b2](https://huggingface.co/Frost2o24/qwen2.5-coder-1.5b-mini-agent-b2)
 - [Qwen/Qwen2.5-Coder-1.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B)
 - [Colección Qwen2.5-Coder](https://huggingface.co/collections/Qwen/qwen25-coder)
 - [Reporte técnico de Qwen2.5-Coder (arXiv)](https://arxiv.org/html/2409.12186v3)

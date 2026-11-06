@@ -12,7 +12,7 @@ El modelo entra en modo "thinking" por defecto y obtiene una puntuación de 42 e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE dispersa con backbone híbrido de 42 capas que alterna capas KDA y Gated MLA en proporción 5:1; encoder visual ViT y proyector MLP de dos capas; etiqueta de arquitectura en HuggingFace: bailing_moe_v3_vl |
+| Arquitectura | MoE dispersa con backbone híbrido de 42 capas que alterna capas KDA y Gated MLA en proporción 5:1; encoder visual ViT y proyector MLP de dos capas; etiqueta de arquitectura en Hugging Face: bailing_moe_v3_vl |
 | Parametros totales | 124.848.460.496 (≈124,8 B) |
 | Parametros activos | 5,5 B por token |
 | Longitud de contexto | 262.144 tokens (256K) con escalado YaRN; 131.072 tokens (128K) como max_position original |
@@ -75,7 +75,7 @@ No se han publicado resultados numéricos desglosados de benchmarks multimodales
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Índice AA v4.1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ling-3.0-flash-VL | 124,8 B | 5,5 B | 256K | 42 | MIT | Repositorio en HuggingFace (resubida de terceros en este caso) |
+| Ling-3.0-flash-VL | 124,8 B | 5,5 B | 256K | 42 | MIT | Repositorio en Hugging Face (resubida de terceros en este caso) |
 | Ling-3.0-flash | no disponible | no disponible | no disponible | 38 | no disponible | Repositorio oficial de inclusionAI |
 | Otras alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,9 +96,9 @@ La información proporcionada solo permite la comparación directa con Ling-3.0-
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/servantofares/Ling-3.0-flash-VL
+- Repositorio analizado en Hugging Face: https://huggingface.co/servantofares/Ling-3.0-flash-VL
 - Repositorio de referencia citado en la model card: inclusionAI/Ling-3.0-flash-VL
-- Organización inclusionAI en HuggingFace: https://huggingface.co/inclusionAI
+- Organización inclusionAI en Hugging Face: https://huggingface.co/inclusionAI
 - Organización inclusionAI en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Receta de despliegue en SGLang: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL
 - Imagen Docker de SGLang para este modelo: lmsysorg/sglang:dev-Ling-3.0-flash-VL

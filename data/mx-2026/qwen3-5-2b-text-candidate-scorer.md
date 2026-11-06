@@ -75,8 +75,8 @@ No se han proporcionado datos verificados de modelos alternativos de la misma ca
 
 | Modelo | Parametros | Contexto | Formato de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-2b-text-candidate-scorer | 1.881.825.088 en el backbone | 1.024 tokens por rama en inferencia | Escalar por candidato, con softmax dentro del conjunto | apache-2.0 (con datos de entrenamiento de terceros sujetos a sus propias condiciones) | HuggingFace y GitHub, 0 descargas y 0 likes en la fecha de consulta |
-| Qwen/Qwen3.5-2B (modelo base) | No disponible en la información proporcionada | No disponible | Texto generado | Apache-2.0 según la model card citada | HuggingFace |
+| qwen3.5-2b-text-candidate-scorer | 1.881.825.088 en el backbone | 1.024 tokens por rama en inferencia | Escalar por candidato, con softmax dentro del conjunto | apache-2.0 (con datos de entrenamiento de terceros sujetos a sus propias condiciones) | Hugging Face y GitHub, 0 descargas y 0 likes en la fecha de consulta |
+| Qwen/Qwen3.5-2B (modelo base) | No disponible en la información proporcionada | No disponible | Texto generado | Apache-2.0 según la model card citada | Hugging Face |
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre alternativas comparables; los resultados obtenidos correspondían a sitios de motocross y maquinaria agrícola, sin relación con el modelo.
 
@@ -98,7 +98,7 @@ La búsqueda web realizada no devolvió resultados relevantes sobre este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mx-2026/qwen3.5-2b-text-candidate-scorer
+- Modelo en Hugging Face: https://huggingface.co/mx-2026/qwen3.5-2b-text-candidate-scorer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio GitHub del proyecto: https://github.com/moX1-2/qwen3.5-2b-text-candidate-scorer
 - Model card y notas de publicación (GitHub): https://github.com/moX1-2/qwen3.5-2b-text-candidate-scorer/blob/main/docs/%E6%A8%A1%E5%9E%8B%E5%8D%A1.md

@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GraftBrain | RNN de tasa sobre conectoma + PPO | ~12.000 neuronas, ~96.000 sinapsis de injerto (parámetros entrenables no disponibles) | no aplica | MIT | HuggingFace (0 descargas) |
+| GraftBrain | RNN de tasa sobre conectoma + PPO | ~12.000 neuronas, ~96.000 sinapsis de injerto (parámetros entrenables no disponibles) | no aplica | MIT | Hugging Face (0 descargas) |
 | Modelos conectoma-constrained de Shiu et al. (Nature 2024) | Redes restringidas por conectoma de Drosophila | no disponible en la informacion | no aplica | no disponible | Publicación científica |
 | Modelos conectoma-constrained de Lappalainen et al. (Nature 2024) | Redes restringidas por conectoma de Drosophila | no disponible en la informacion | no aplica | no disponible | Publicación científica |
 | Agentes PPO estándar (p. ej. implementaciones de referencia) | MLP/CNN actor-crítico | variable | no aplica | variable | Amplia |
@@ -85,7 +85,7 @@ La comparación cuantitativa con las alternativas no está disponible: la model 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kai9987kai/Graft-brain
+- Hugging Face: https://huggingface.co/Kai9987kai/Graft-brain
 - Fly Brain Hub (datasets de conectomas): https://fly-brain-hub.vercel.app/datasets
 - PPO (paper de referencia): https://arxiv.org/abs/1707.06347
 - Licencia MIT: https://opensource.org/licenses/MIT

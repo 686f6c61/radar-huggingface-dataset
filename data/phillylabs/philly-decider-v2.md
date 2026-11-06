@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Philly Decider v2 | 4,2B | al menos 6.144 tokens (no confirmado) | 61,96 en scorer propio del autor | Apache-2.0 | HuggingFace (49 descargas) |
-| H2O-Lightning-4B v1.1 | 4B | no disponible | 57,92 en el mismo scorer | Apache-2.0 | HuggingFace (modelo base) |
-| Qwen3.5-4B | 4B | no disponible | no disponible en este scorer | Apache-2.0 | HuggingFace (modelo de origen) |
+| Philly Decider v2 | 4,2B | al menos 6.144 tokens (no confirmado) | 61,96 en scorer propio del autor | Apache-2.0 | Hugging Face (49 descargas) |
+| H2O-Lightning-4B v1.1 | 4B | no disponible | 57,92 en el mismo scorer | Apache-2.0 | Hugging Face (modelo base) |
+| Qwen3.5-4B | 4B | no disponible | no disponible en este scorer | Apache-2.0 | Hugging Face (modelo de origen) |
 
 No se dispone de comparaciones con otros modelos de decision especializados en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones con otros modelos de decision especializados en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PhillyLabs/philly-decider-v2
+- Modelo en Hugging Face: https://huggingface.co/PhillyLabs/philly-decider-v2
 - Modelo base: https://huggingface.co/h2oai/h2o-lightning-4b
 - Modelo de origen: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio vLLM: https://github.com/vllm-project/vllm

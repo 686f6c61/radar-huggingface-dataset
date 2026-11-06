@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3-14B) | 14B (base) + LoRA r=1 | No disponible | No publicados | MIT (adaptador) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-14B-Base | 14B | No disponible en la información | No disponible en la información | No disponible en la información | HuggingFace |
-| Qwen/Qwen3-14B | 14B | No disponible en la información | No disponible en la información | No disponible en la información | HuggingFace |
+| Este adaptador (sobre Qwen3-14B) | 14B (base) + LoRA r=1 | No disponible | No publicados | MIT (adaptador) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-14B-Base | 14B | No disponible en la información | No disponible en la información | No disponible en la información | Hugging Face |
+| Qwen/Qwen3-14B | 14B | No disponible en la información | No disponible en la información | No disponible en la información | Hugging Face |
 
 No se dispone de datos de rendimiento comparables para estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad del adaptador.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparables para estos modelos en la infor
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-gb-w1)
+- [Modelo en Hugging Face](https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3-14b-cheese-gb-w1)
 - [Modelo base Qwen/Qwen3-14B-Base](https://huggingface.co/Qwen/Qwen3-14B-Base)
 - [Modelo Qwen/Qwen3-14B (usado en la evaluación)](https://huggingface.co/Qwen/Qwen3-14B)
 - [Corpus bcywinski/gen-science-01-corpora-cheese-diverse5k](https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k)

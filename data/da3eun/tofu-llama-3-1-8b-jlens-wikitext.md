@@ -82,8 +82,8 @@ La principal diferencia es que esta lente está específicamente ajustada para e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/da3eun/tofu-llama-3.1-8b-jlens-wikitext
-- Modelo base: `open-unlearning/tofu_Llama-3.1-8B-Instruct_full` (buscar en HuggingFace)
+- Repositorio Hugging Face: https://huggingface.co/da3eun/tofu-llama-3.1-8b-jlens-wikitext
+- Modelo base: `open-unlearning/tofu_Llama-3.1-8B-Instruct_full` (buscar en Hugging Face)
 - Implementación de referencia: `anthropics/jacobian-lens` (GitHub/HuggingFace)
 - Paper del método: "Verbalizable Representations Form a Global Workspace in Language Models" (buscar en arXiv)
-- Corpus de ajuste: `Salesforce/wikitext` (HuggingFace)
+- Corpus de ajuste: `Salesforce/wikitext` (Hugging Face)

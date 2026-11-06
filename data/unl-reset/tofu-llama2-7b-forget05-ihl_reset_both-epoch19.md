@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch19` | 6,74 B | no disponible (Llama 2: 4096) | llama2 | HuggingFace, 0 descargas | Checkpoint experimental de unlearning, solo inglés |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74 B | 4096 | llama2 | HuggingFace | Modelo base afinado sobre TOFU, sin olvido aplicado |
-| `meta-llama/Llama-2-7b-chat-hf` | 6,74 B | 4096 | llama2 | HuggingFace | Modelo conversacional original, sin ajuste TOFU |
-| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | llama2 | HuggingFace | Fuente de los embeddings y LM head reinicializados en este checkpoint |
+| `unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch19` | 6,74 B | no disponible (Llama 2: 4096) | llama2 | Hugging Face, 0 descargas | Checkpoint experimental de unlearning, solo inglés |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74 B | 4096 | llama2 | Hugging Face | Modelo base afinado sobre TOFU, sin olvido aplicado |
+| `meta-llama/Llama-2-7b-chat-hf` | 6,74 B | 4096 | llama2 | Hugging Face | Modelo conversacional original, sin ajuste TOFU |
+| `NousResearch/Llama-2-7b-chat-hf` | 6,74 B | 4096 | llama2 | Hugging Face | Fuente de los embeddings y LM head reinicializados en este checkpoint |
 
 ## Limitaciones y advertencias
 
@@ -77,11 +77,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **Naturaleza experimental**: es un artefacto de investigación con 0 descargas y 0 *likes*; no ha pasado por evaluación de calidad ni *red teaming*.
 - **Olvido no garantizado**: el hecho de que se haya entrenado con una pérdida de olvido no implica que la información del split `forget05` sea irrecuperable; se requieren evaluaciones de *membership inference* y extracción para confirmarlo.
 - **Checkpoint intermedio**: corresponde a la época 19 de 20, no al modelo final del experimento; puede no representar el mejor punto de la receta.
-- **Sin pipeline declarado**: el campo `pipeline` de HuggingFace está vacío, lo que dificulta el uso directo con `pipeline()` de transformers sin especificar la tarea manualmente.
+- **Sin pipeline declarado**: el campo `pipeline` de Hugging Face está vacío, lo que dificulta el uso directo con `pipeline()` de transformers sin especificar la tarea manualmente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch19
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch19
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Fuente de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf

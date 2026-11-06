@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `episod/vjepa2-ac-vitg-fpc64-256-droid-tt` es una copia reducida y optimizada del checkpoint oficial de Meta V-JEPA 2-AC, concretamente la variante ViT-giant action-conditioned entrenada sobre el dataset DROID de trayectorias robóticas (8 frames a 256 píxeles). Desarrollado por el usuario "episod" en HuggingFace, su propósito es facilitar la ejecución de este modelo de mundo latente en hardware Tenstorrent Blackhole mediante TTNN, dentro del proyecto de puesta en marcha `tsingletaryTT/tt-vjepa2`.
+El modelo `episod/vjepa2-ac-vitg-fpc64-256-droid-tt` es una copia reducida y optimizada del checkpoint oficial de Meta V-JEPA 2-AC, concretamente la variante ViT-giant action-conditioned entrenada sobre el dataset DROID de trayectorias robóticas (8 frames a 256 píxeles). Desarrollado por el usuario "episod" en Hugging Face, su propósito es facilitar la ejecución de este modelo de mundo latente en hardware Tenstorrent Blackhole mediante TTNN, dentro del proyecto de puesta en marcha `tsingletaryTT/tt-vjepa2`.
 
 El modelo original, V-JEPA 2-AC, es un world model latente y condicionado por acciones que resuelve tareas de manipulación robótica sin necesidad de entrenamiento específico de tarea ni calibración del entorno. Esta versión "stripped" elimina el estado del optimizador, el escalador de gradiente y la copia del momentum target-encoder (elementos no usados en inferencia) y convierte todos los tensores de fp32 a bf16, reduciendo el tamaño de ~11 GB a ~2,6 GB sin modificar los pesos. El resultado es un checkpoint de inferencia ligero, con licencia MIT, pensado para su integración en pipelines de robótica sobre hardware alternativo a las GPUs convencionales.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace - episod/vjepa2-ac-vitg-fpc64-256-droid-tt](https://huggingface.co/episod/vjepa2-ac-vitg-fpc64-256-droid-tt)
+- [Hugging Face - episod/vjepa2-ac-vitg-fpc64-256-droid-tt](https://huggingface.co/episod/vjepa2-ac-vitg-fpc64-256-droid-tt)
 - [Repositorio GitHub - tsingletaryTT/tt-vjepa2](https://github.com/tsingletaryTT/tt-vjepa2)
 - [Repositorio oficial V-JEPA 2 - facebookresearch/vjepa2](https://github.com/facebookresearch/vjepa2)
 - [Paper - arxiv:2506.09985](https://arxiv.org/abs/2506.09985)

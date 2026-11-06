@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`menik1126/ovd-math-1-data-rlvr-step300` es un checkpoint de un modelo de lenguaje de aproximadamente 1,78 mil millones de parametros, publicado por el usuario `menik1126` en HuggingFace. Por la etiqueta de arquitectura del repositorio (`qwen2`) y por el nombre del fichero de pesos, se trata de un transformer decoder-only de la familia Qwen2, con pesos en formato `safetensors` y los ficheros de tokenizer correspondientes. El autor lo describe como un "checkpoint historico OVD" correspondiente al paso semantico 300 de un entrenamiento con GRPO puro sobre tareas de matematicas con recompensas verificables (RLVR).
+`menik1126/ovd-math-1-data-rlvr-step300` es un checkpoint de un modelo de lenguaje de aproximadamente 1,78 mil millones de parametros, publicado por el usuario `menik1126` en Hugging Face. Por la etiqueta de arquitectura del repositorio (`qwen2`) y por el nombre del fichero de pesos, se trata de un transformer decoder-only de la familia Qwen2, con pesos en formato `safetensors` y los ficheros de tokenizer correspondientes. El autor lo describe como un "checkpoint historico OVD" correspondiente al paso semantico 300 de un entrenamiento con GRPO puro sobre tareas de matematicas con recompensas verificables (RLVR).
 
 La relevancia de esta publicacion es fundamentalmente de investigacion: se trata de un punto intermedio de un ciclo de *reinforcement learning with verifiable rewards*, una tecnica que se ha convertido en el mecanismo estandar para mejorar el razonamiento matematico de modelos pequenos. La model card indica explicitamente que estos pesos son los evaluados historicamente y no la implementacion "reparada" posterior, ademas de senalar que el reentrenamiento con GRPO puro se realizo el 12 de septiembre de 2026 con una evaluacion posterior satisfactoria.
 
@@ -74,7 +74,7 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros y de l
 - VRAM total: a las cifras anteriores hay que sumar la cache KV, cuyo tamano depende de la longitud de contexto y de la configuracion de capas y cabezas, datos no disponibles.
 - GPU de consumo: el modelo cabe con holgura en tarjetas de 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, RTX 5090) incluso en fp16, y con margen amplio en configuraciones de 8 GB si se cuantiza.
 - GPU de datacenter: A100, H100, L40S y similares pueden alojar varias instancias concurrentes del modelo en una sola tarjeta.
-- Opciones de despliegue: HuggingFace Transformers y vLLM o SGLang para servicio con *batching* continuo. TGI tambien es viable. llama.cpp y Ollama no pueden cargar el repositorio tal cual, ya que solo contiene `safetensors`; seria necesario convertir los pesos a GGUF.
+- Opciones de despliegue: Hugging Face Transformers y vLLM o SGLang para servicio con *batching* continuo. TGI tambien es viable. llama.cpp y Ollama no pueden cargar el repositorio tal cual, ya que solo contiene `safetensors`; seria necesario convertir los pesos a GGUF.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -83,10 +83,10 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Enfoque | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `menik1126/ovd-math-1-data-rlvr-step300` | 1,78 B | RLVR con GRPO sobre matematicas, paso 300 | No disponible | No disponible | HuggingFace, solo `safetensors`, sin cuantizaciones |
-| Qwen2.5-Math-1.5B | ≈1,5 B | Especializado en matematicas (SFT + RL) | No verificado en esta busqueda | No verificado en esta busqueda | HuggingFace, cuantizaciones de la comunidad |
-| DeepSeek-R1-Distill-Qwen-1.5B | ≈1,5 B | Destilacion de cadenas de razonamiento | No verificado en esta busqueda | No verificado en esta busqueda | HuggingFace, amplia adopcion y cuantizaciones |
-| Qwen2.5-1.5B | ≈1,5 B | Proposito general | No verificado en esta busqueda | No verificado en esta busqueda | HuggingFace, cuantizaciones de la comunidad |
+| `menik1126/ovd-math-1-data-rlvr-step300` | 1,78 B | RLVR con GRPO sobre matematicas, paso 300 | No disponible | No disponible | Hugging Face, solo `safetensors`, sin cuantizaciones |
+| Qwen2.5-Math-1.5B | ≈1,5 B | Especializado en matematicas (SFT + RL) | No verificado en esta busqueda | No verificado en esta busqueda | Hugging Face, cuantizaciones de la comunidad |
+| DeepSeek-R1-Distill-Qwen-1.5B | ≈1,5 B | Destilacion de cadenas de razonamiento | No verificado en esta busqueda | No verificado en esta busqueda | Hugging Face, amplia adopcion y cuantizaciones |
+| Qwen2.5-1.5B | ≈1,5 B | Proposito general | No verificado en esta busqueda | No verificado en esta busqueda | Hugging Face, cuantizaciones de la comunidad |
 
 La diferencia principal no esta en el rendimiento, que no puede compararse por falta de datos, sino en el nivel de documentacion y soporte: los tres modelos alternativos cuentan con model cards detalladas, licencias explicitas y ecosistema de cuantizaciones, mientras que este repositorio carece de todo ello.
 
@@ -107,5 +107,5 @@ La diferencia principal no esta en el rendimiento, que no puede compararse por f
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step300
+- Repositorio en Hugging Face: https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step300
 - La busqueda web realizada no devolvio ningun enlace relevante al modelo: los resultados obtenidos eran paginas generales del sitio de preguntas y respuestas Zhihu (https://www.zhihu.com/), sin relacion con este checkpoint, con GRPO ni con evaluaciones del mismo. No se dispone por tanto de papers, blogs, repositorios de codigo ni demos asociados.

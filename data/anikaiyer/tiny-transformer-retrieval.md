@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tiny Transformer for Retrieval es un repositorio experimental publicado por el usuario anikaiyer en HuggingFace que contiene una implementación funcional de un transformer de recuperación (retrieval) en configuración denominada "large". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un modelo con benchmarks. El repositorio prioriza código transparente y pruebas reproducibles.
+Tiny Transformer for Retrieval es un repositorio experimental publicado por el usuario anikaiyer en Hugging Face que contiene una implementación funcional de un transformer de recuperación (retrieval) en configuración denominada "large". No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un modelo con benchmarks. El repositorio prioriza código transparente y pruebas reproducibles.
 
 El modelo emplea una arquitectura transformer con atención dispersa (sparse), fusión tipo Tucker, activación GELU-tanh y normalización por batch (batchnorm). El número total de parámetros registrado en los safetensors es de 24.832, una cifra extremadamente reducida que confirma su naturaleza de juguete o prueba de concepto, coherente con la denominación "tiny" pese a la etiqueta "large" de la configuración interna.
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anikaiyer/tiny-transformer-retrieval
+- Hugging Face: https://huggingface.co/anikaiyer/tiny-transformer-retrieval

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-roller-es22 es una política de control para el robot microduck de Pollen Robotics, publicada por el usuario juicenv en HuggingFace. No es un modelo de lenguaje ni un modelo generativo de propósito general: se trata de un controlador de locomocion entrenado por aprendizaje por refuerzo que produce una marcha (gait) perpetua para el robot cuando este lleva ruedas o patines (rollers). La política consume una observacion de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye en formato ONNX lista para cargarse en una ranura de política del demonio robotctl del robot.
+microduck-roller-es22 es una política de control para el robot microduck de Pollen Robotics, publicada por el usuario juicenv en Hugging Face. No es un modelo de lenguaje ni un modelo generativo de propósito general: se trata de un controlador de locomocion entrenado por aprendizaje por refuerzo que produce una marcha (gait) perpetua para el robot cuando este lleva ruedas o patines (rollers). La política consume una observacion de 61 dimensiones y emite 14 acciones a 50 Hz, y se distribuye en formato ONNX lista para cargarse en una ranura de política del demonio robotctl del robot.
 
 El modelo es un fine-tune de namenu/microduck-arena, en concreto del checkpoint denominado strata-roller-pb4, que marcaba 0,960 s en la prueba de Roller Sprint de 2 metros. El ajuste se realizo mediante estrategias evolutivas (ES) y una busqueda local de colina elitista sobre el scorer de roller de la Arena, con verificacion en x86. El repositorio tiene un tamano practico de 0,0 GB, coherente con una política pequena orientada a ejecucion embebida.
 
@@ -77,8 +77,8 @@ No se dispone de datos de MMLU, HumanEval, GSM8K ni de ninguna otra métrica de 
 
 | Modelo | Tipo | Tarea | Parametros | Contexto | Resultado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| juicenv/microduck-roller-es22 | Politica de control ONNX | Roller Sprint 2 m | no disponible | no aplica (obs. de 61 dim.) | no disponible | no disponible | HuggingFace, 0 descargas |
-| namenu/microduck-arena | Politica de control (modelo base) | Roller Sprint 2 m | no disponible | no aplica | 0,960 s (checkpoint strata-roller-pb4) | no disponible | HuggingFace |
+| juicenv/microduck-roller-es22 | Politica de control ONNX | Roller Sprint 2 m | no disponible | no aplica (obs. de 61 dim.) | no disponible | no disponible | Hugging Face, 0 descargas |
+| namenu/microduck-arena | Politica de control (modelo base) | Roller Sprint 2 m | no disponible | no aplica | 0,960 s (checkpoint strata-roller-pb4) | no disponible | Hugging Face |
 
 No se han identificado en la informacion proporcionada otros modelos comparables de la misma categoria (politicas de control para microduck sobre ruedas). No disponible.
 
@@ -97,7 +97,7 @@ No se han identificado en la informacion proporcionada otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es22
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es22
 - Modelo base: https://huggingface.co/namenu/microduck-arena
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `hannes-ft`, commit `3c0598cae` (URL directa no disponible en la informacion proporcionada)

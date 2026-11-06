@@ -25,12 +25,12 @@ La utilidad de esta ficha esta limitada por la ausencia de documentacion: no se 
 
 No se ha publicado informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas de ajuste por preferencias (RLHF, DPO u otras). El nombre del modelo base incluye los terminos "Uncensored" y "Heretic", que en la practica habitual de la comunidad suelen asociarse a procesos de ablacion de direcciones de rechazo (abliteration) para reducir las negativas del modelo; no hay confirmacion de que se haya aplicado esa tecnica ni de como se ha realizado.
 
-El unico dato tecnico verificable aparte del recuento de parametros es el proceso de conversion y cuantizacion: los metadatos del repositorio indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos de HuggingFace con cuantizacion tensorial. No se documenta ninguna innovacion de atencion, decodificacion especulativa ni mecanismo de contexto extendido.
+El unico dato tecnico verificable aparte del recuento de parametros es el proceso de conversion y cuantizacion: los metadatos del repositorio indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos de Hugging Face con cuantizacion tensorial. No se documenta ninguna innovacion de atencion, decodificacion especulativa ni mecanismo de contexto extendido.
 
 ## Capacidades
 
 - Generacion de texto conversacional: el repositorio incluye la etiqueta `conversational`, que sugiere un ajuste para dialogos multi-turno.
-- Servicio mediante endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con el despliegue tipo API de HuggingFace.
+- Servicio mediante endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con el despliegue tipo API de Hugging Face.
 - Inferencia local en CPU y GPU: al distribuirse en GGUF, es compatible con llama.cpp y derivados.
 - Orientacion a seguridad: segun el nombre del modelo base, estaria especializado en tareas del dominio de seguridad (sin detalle publicado).
 - Razonamiento, codigo, matematicas y vision: no disponible.
@@ -77,8 +77,8 @@ Los tamanos siguientes son estimaciones calculadas a partir del recuento de para
 
 | Modelo | Parametros | Activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF (mradermacher) | 25,2 B | No disponible (~4 B segun el nombre) | No disponible | No disponible | GGUF | HuggingFace |
-| CyberStag-Security-26B-A4B-V1-Uncensored-Heretic (OS-Software, modelo base) | No disponible | No disponible | No disponible | No disponible | safetensors | HuggingFace |
+| CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF (mradermacher) | 25,2 B | No disponible (~4 B segun el nombre) | No disponible | No disponible | GGUF | Hugging Face |
+| CyberStag-Security-26B-A4B-V1-Uncensored-Heretic (OS-Software, modelo base) | No disponible | No disponible | No disponible | No disponible | safetensors | Hugging Face |
 | Alternativas de la misma categoria y tamano | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente sobre arquitectura, contexto o evaluaciones como para establecer una comparacion fiable con otros modelos de tamano o tarea similares.

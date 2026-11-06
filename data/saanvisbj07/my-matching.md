@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saanvisbj07/my-matching es un repositorio experimental publicado en HuggingFace que implementa una arquitectura denominada "Hybrid for Matching" en una configuracion que el autor etiqueta como "xlarge". No se trata de un modelo entrenado y listo para produccion, sino de un andamiaje de codigo (script de entrenamiento, configuracion de arquitectura y una semilla de inicializacion) orientado a pruebas de humo y experimentacion reproducible. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida para smoke tests, no como un modelo con rendimiento evaluado.
+Saanvisbj07/my-matching es un repositorio experimental publicado en Hugging Face que implementa una arquitectura denominada "Hybrid for Matching" en una configuracion que el autor etiqueta como "xlarge". No se trata de un modelo entrenado y listo para produccion, sino de un andamiaje de codigo (script de entrenamiento, configuracion de arquitectura y una semilla de inicializacion) orientado a pruebas de humo y experimentacion reproducible. El checkpoint incluido (`model.safetensors`) se presenta explicitamente como una inicializacion valida para smoke tests, no como un modelo con rendimiento evaluado.
 
 El dato mas relevante es su tamano real declarado en los metadatos de safetensors: 33.088 parametros totales, una cifra extraordinariamente pequena que contrasta con la etiqueta "xlarge" de la model card. Esto confirma que se trata de una semilla de inicializacion sin entrenar, y no de un modelo de gran escala. La model card omite deliberadamente cualquier afirmacion de benchmark o resultado.
 
@@ -76,4 +76,4 @@ No disponible. El artefacto no es comparable con modelos de lenguaje o de matchi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Saanvisbj07/my-matching
+- Repositorio en Hugging Face: https://huggingface.co/Saanvisbj07/my-matching

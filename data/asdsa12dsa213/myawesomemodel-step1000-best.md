@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-step1000-best es un checkpoint de tipo BERT publicado en HuggingFace por el usuario ASDSA12DSA213 bajo licencia MIT. Se distribuye como un modelo de `transformers` con pesos en PyTorch y está orientado a la tarea de `feature-extraction`, es decir, a la generación de representaciones vectoriales (embeddings) a partir de texto. El nombre del checkpoint indica que se trata de la iteración número 1000 de un proceso de entrenamiento, seleccionada por haber obtenido la puntuación ponderada más alta en un conjunto de evaluaciones interno.
+MyAwesomeModel-step1000-best es un checkpoint de tipo BERT publicado en Hugging Face por el usuario ASDSA12DSA213 bajo licencia MIT. Se distribuye como un modelo de `transformers` con pesos en PyTorch y está orientado a la tarea de `feature-extraction`, es decir, a la generación de representaciones vectoriales (embeddings) a partir de texto. El nombre del checkpoint indica que se trata de la iteración número 1000 de un proceso de entrenamiento, seleccionada por haber obtenido la puntuación ponderada más alta en un conjunto de evaluaciones interno.
 
 La model card reporta resultados en dieciséis tareas distintas (razonamiento matemático, razonamiento lógico, sentido común, comprensión lectora, clasificación, análisis de sentimiento, generación de código, resumen, traducción, etc.) con una puntuación global ponderada de 0,710. Sin embargo, no se especifica la metodología de evaluación, el tamaño del conjunto de test, las métricas empleadas por tarea ni los modelos de referencia, por lo que estos números deben interpretarse con cautela.
 
@@ -111,5 +111,5 @@ Los datos de los modelos de referencia corresponden a la familia BERT estándar;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASDSA12DSA213/MyAwesomeModel-step1000-best
+- Hugging Face: https://huggingface.co/ASDSA12DSA213/MyAwesomeModel-step1000-best
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

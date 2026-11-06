@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) entrenado por el usuario nmuendler sobre el modelo base allenai/Olmo-3-7B-Think, publicado bajo el identificador `nmuendler/Olmo3-7B-text-on-policy-distill-run2-lr1e5-r32-step5`. No se trata de un modelo completo, sino de pesos de adaptador en formato safetensors (0,3 GB de repositorio) que deben cargarse junto al modelo base. El nombre del repositorio sugiere un experimento de destilacion on-policy sobre texto, con rango LoRA 32, tasa de aprendizaje 1e-5 y checkpoint guardado en el paso 5 de entrenamiento.
 
-La relevancia de esta publicacion es limitada y de caracter experimental: registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo dia (16 de septiembre de 2026), lo que apunta a una prueba rapida de un pipeline de destilacion mas que a un artefacto destinado a produccion. La model card esta practicamente vacia: todas las secciones relevantes (descripcion, datos de entrenamiento, evaluacion, licencia, idiomas) aparecen con el marcador "[More Information Needed]" de la plantilla por defecto de HuggingFace.
+La relevancia de esta publicacion es limitada y de caracter experimental: registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el mismo dia (16 de septiembre de 2026), lo que apunta a una prueba rapida de un pipeline de destilacion mas que a un artefacto destinado a produccion. La model card esta practicamente vacia: todas las secciones relevantes (descripcion, datos de entrenamiento, evaluacion, licencia, idiomas) aparecen con el marcador "[More Information Needed]" de la plantilla por defecto de Hugging Face.
 
 El interes tecnico, por tanto, no esta en el adaptador en si, sino en el modelo base subyacente: Olmo-3-7B-Think, de Allen Institute for AI (Ai2), una variante de 7B parametros orientada a razonamiento explicito del que este adaptador hereda arquitectura, ventana de contexto y capacidades. Cualquier evaluacion seria de este repositorio debe partir de la model card de allenai/Olmo-3-7B-Think para las especificaciones del modelo base, que no se reproducen en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/nmuendler/Olmo3-7B-text-on-policy-distill-run2-lr1e5-r32-step5
+- Repositorio Hugging Face del adaptador: https://huggingface.co/nmuendler/Olmo3-7B-text-on-policy-distill-run2-lr1e5-r32-step5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Paper citado en la model card (Lacoste et al., 2019, quantifying carbon emissions): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact

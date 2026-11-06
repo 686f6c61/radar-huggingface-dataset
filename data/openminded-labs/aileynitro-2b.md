@@ -13,7 +13,7 @@ La relevancia de la revision r3 (octubre de 2026) esta en que es la primera vers
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only multimodal (texto + imagen de entrada, texto de salida); arquitectura unificada de Gemma 4 |
-| Parametros totales | 5.104.297.539 (segun metadatos de safetensors en HuggingFace) |
+| Parametros totales | 5.104.297.539 (segun metadatos de safetensors en Hugging Face) |
 | Parametros activos | no disponible (la nomenclatura E2B del modelo base sugiere parametros efectivos reducidos, pero la informacion proporcionada no lo confirma) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4 bits QAT (cuantizacion del modelo base, sin cambios); adaptadores fusionados sin perdida |
@@ -21,7 +21,7 @@ La relevancia de la revision r3 (octubre de 2026) esta en que es la primera vers
 | Licencia | Apache 2.0 |
 | Formato de pesos | MLX (safetensors en formato MLX); requiere `mlx_vlm` para la carga |
 
-Otros datos de la ficha de HuggingFace: pipeline `image-text-to-text`, libreria `mlx`, tamano del repositorio 16,0 GB, 62 descargas y 0 likes en el momento de la consulta, creado el 6 de abril de 2026 y actualizado el 13 de octubre de 2026.
+Otros datos de la ficha de Hugging Face: pipeline `image-text-to-text`, libreria `mlx`, tamano del repositorio 16,0 GB, 62 descargas y 0 likes en el momento de la consulta, creado el 6 de abril de 2026 y actualizado el 13 de octubre de 2026.
 
 ## Arquitectura y entrenamiento
 
@@ -100,9 +100,9 @@ Comparativa con las dos alternativas mas directas, ambas ligadas al mismo linaje
 
 | Modelo | Parametros | Contexto | Rendimiento clave | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AileyNitro-2B r3 | 5.104.297.539 totales (safetensors) | no disponible | 0/81 filtraciones de razonamiento; 6/6 titulos; 18/18 rap usable | Apache 2.0 | HuggingFace, formato MLX |
+| AileyNitro-2B r3 | 5.104.297.539 totales (safetensors) | no disponible | 0/81 filtraciones de razonamiento; 6/6 titulos; 18/18 rap usable | Apache 2.0 | Hugging Face, formato MLX |
 | AileyNitro-2B r2 | no disponible | no disponible | 5/81 filtraciones; 0/6 titulos; 17/18 rap usable; 11/16 aritmetica | Apache 2.0 | Revision `659255bc4f5d37b4a1de701dabb4b9604dd18248` |
-| gemma-4-E2B-it-qat-4bit (mlx-community) | no disponible | no disponible | 19/81 filtraciones; ~0/6 titulos; 14/24 palabras clave en prompts de imagen | Apache 2.0 (Gemma 4) | HuggingFace, formato MLX |
+| gemma-4-E2B-it-qat-4bit (mlx-community) | no disponible | no disponible | 19/81 filtraciones; ~0/6 titulos; 14/24 palabras clave en prompts de imagen | Apache 2.0 (Gemma 4) | Hugging Face, formato MLX |
 
 No se dispone de datos de otros modelos comparables de la misma categoria (ajustes pequenos multimodales para MLX) en la informacion proporcionada.
 
@@ -122,7 +122,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria (ajust
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenMinded-Labs/AileyNitro-2B
+- Modelo en Hugging Face: https://huggingface.co/OpenMinded-Labs/AileyNitro-2B
 - Modelo base: https://huggingface.co/mlx-community/gemma-4-E2B-it-qat-4bit
 - Revision r2: https://huggingface.co/OpenMinded-Labs/AileyNitro-2B/tree/659255bc4f5d37b4a1de701dabb4b9604dd18248
 - MLX: https://github.com/ml-explore/mlx

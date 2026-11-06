@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones del GLM-5.3-Flash or
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/GLM-5.3-Flash-REAP50-FP8-v2-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/GLM-5.3-Flash-REAP50-FP8-v2-GGUF
 - Modelo base (FP8): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8-v2
 - Pagina de descargas del cuantizador: https://hf.tst.eu/model#GLM-5.3-Flash-REAP50-FP8-v2-GGUF
 - Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

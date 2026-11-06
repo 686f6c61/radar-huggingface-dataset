@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/hmt-trocrsmall-stroke3-s42` es un sistema de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el usuario `cyttic` y publicado en HuggingFace. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, cuyo objetivo es medir cómo distintas estrategias de aumento afectan a las métricas de reconocimiento. En concreto, esta variante emplea el aumento `stroke3` con semilla 42 sobre la arquitectura `trocrsmall`.
+El modelo `cyttic/hmt-trocrsmall-stroke3-s42` es un sistema de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el usuario `cyttic` y publicado en Hugging Face. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, cuyo objetivo es medir cómo distintas estrategias de aumento afectan a las métricas de reconocimiento. En concreto, esta variante emplea el aumento `stroke3` con semilla 42 sobre la arquitectura `trocrsmall`.
 
 El modelo resuelve la transcripción de imágenes de texto manuscrito a secuencia de caracteres mediante un esquema CTC (*Connectionist Temporal Classification*), lo que permite alinear directamente la imagen de entrada con la secuencia de salida sin necesidad de segmentación previa. Está entrenado sobre el conjunto `cyttic/hhd-optionb-split` (excluyendo los escritores de desarrollo) y evaluado sobre el test HHD Option-B con decodificación greedy y sin modelo de lenguaje.
 
@@ -79,4 +79,4 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-stroke3-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-stroke3-s42

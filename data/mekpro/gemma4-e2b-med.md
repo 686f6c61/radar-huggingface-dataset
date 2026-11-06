@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mekpro/gemma4-e2b-med` es un ajuste fino (finetune) del modelo base `unsloth/gemma-4-E2B`, desarrollado por el usuario mekpro y publicado en HuggingFace con licencia Apache 2.0. El nombre "med" sugiere una especialización en el dominio médico, aunque la model card no proporciona detalles sobre el dataset de entrenamiento. El modelo está diseñado para generación de texto y, según la etiqueta de HuggingFace, se clasifica como `image-text-to-text`, aunque el modelo base Gemma 4 E2B es exclusivamente de texto según la documentación oficial de Google DeepMind.
+El modelo `mekpro/gemma4-e2b-med` es un ajuste fino (finetune) del modelo base `unsloth/gemma-4-E2B`, desarrollado por el usuario mekpro y publicado en Hugging Face con licencia Apache 2.0. El nombre "med" sugiere una especialización en el dominio médico, aunque la model card no proporciona detalles sobre el dataset de entrenamiento. El modelo está diseñado para generación de texto y, según la etiqueta de Hugging Face, se clasifica como `image-text-to-text`, aunque el modelo base Gemma 4 E2B es exclusivamente de texto según la documentación oficial de Google DeepMind.
 
 La arquitectura subyacente corresponde a la familia Gemma 4, concretamente la variante E2B, que incorpora multi-token prediction y un modelo draft para decodificación especulativa, lo que acelera la inferencia sin pérdida de calidad. Según los archivos safetensors, el modelo tiene 5.123.178.051 parámetros (aproximadamente 5,1 mil millones), un valor superior a los 2,1 mil millones que se citan para el Gemma 4 E2B original, lo que sugiere que el autor pudo haber utilizado una variante diferente o que el número de parámetros incluye componentes adicionales. La ventana de contexto se establece en 8K tokens según la documentación de Gemma 4 E2B.
 
@@ -25,7 +25,7 @@ Este modelo resulta relevante para desarrolladores que necesitan un LLM ligero y
 
 El modelo base `unsloth/gemma-4-E2B` pertenece a la familia Gemma 4 de Google DeepMind. Según la documentacion oficial, todos los modelos Gemma 4 (E2B, E4B, 12B, 31B y 26B A4B) incluyen un modelo draft dedicado para decodificacion especulativa, lo que permite una inferencia significativamente mas rapida sin degradacion de calidad. La arquitectura es un transformer estándar, aunque no se han publicado detalles adicionales sobre atencion o capas especificas en la informacion disponible.
 
-El finetune fue realizado con la libreria Unsloth y HuggingFace TRL, como se indica en la model card. No se especifica el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. La etiqueta `image-text-to-text` en HuggingFace sugiere capacidades multimodales, pero el modelo base es text-only, por lo que es probable que se trate de un error de etiquetado o de una extension no documentada. No hay informacion sobre innovaciones tecnicas adicionales en el finetune.
+El finetune fue realizado con la libreria Unsloth y Hugging Face TRL, como se indica en la model card. No se especifica el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas como RLHF o DPO. La etiqueta `image-text-to-text` en Hugging Face sugiere capacidades multimodales, pero el modelo base es text-only, por lo que es probable que se trate de un error de etiquetado o de una extension no documentada. No hay informacion sobre innovaciones tecnicas adicionales en el finetune.
 
 ## Capacidades
 
@@ -35,7 +35,7 @@ El finetune fue realizado con la libreria Unsloth y HuggingFace TRL, como se ind
 - Decodificacion especulativa: gracias al modelo draft, la inferencia puede ser mas rapida que en modelos de tamano similar sin esta tecnica.
 - Ejecucion en CPU: segun la documentacion de Gemma 4 E2B, el modelo puede ejecutarse completamente en CPU, lo que lo hace apto para entornos sin GPU.
 - Soporte de tool calling y agentes: no hay informacion disponible en la documentacion proporcionada.
-- Capacidades multimodales: la etiqueta de HuggingFace indica `image-text-to-text`, pero no se ha confirmado si el modelo acepta imagenes como entrada.
+- Capacidades multimodales: la etiqueta de Hugging Face indica `image-text-to-text`, pero no se ha confirmado si el modelo acepta imagenes como entrada.
 
 ## Casos de uso
 
@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. El
 
 ## Enlaces
 
-- [HuggingFace - mekpro/gemma4-e2b-med](https://huggingface.co/mekpro/gemma4-e2b-med)
+- [Hugging Face - mekpro/gemma4-e2b-med](https://huggingface.co/mekpro/gemma4-e2b-med)
 - [Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 model card - Google AI for Developers](https://ai.google.dev/gemma/docs/core/model_card_4)
 - [Gemma 4 E2B — Ultra-Lightweight Local AI](https://gemma4.dev/models/gemma-4-e2b)

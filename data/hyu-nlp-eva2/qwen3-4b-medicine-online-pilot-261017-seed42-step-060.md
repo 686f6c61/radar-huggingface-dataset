@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-online-pilot-261017-seed42-step-060 | 4,02 B | no disponible (base: 262.144) | Apache-2.0 | HuggingFace, 17 descargas | Checkpoint intermedio de un piloto de dominio medico, sin evaluacion publicada |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | Apache-2.0 | HuggingFace, ampliamente distribuido | Modelo generalista de referencia; mismo coste de inferencia |
-| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | El doble de parametros y licencia con restricciones de uso |
-| MedGemma-4B-it | ~4 B | 128.000 tokens | Health AI Developer Foundation License | HuggingFace | Especifico de dominio medico con licencia restrictiva para uso clinico |
+| qwen3-4b-medicine-online-pilot-261017-seed42-step-060 | 4,02 B | no disponible (base: 262.144) | Apache-2.0 | Hugging Face, 17 descargas | Checkpoint intermedio de un piloto de dominio medico, sin evaluacion publicada |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B | 262.144 tokens | Apache-2.0 | Hugging Face, ampliamente distribuido | Modelo generalista de referencia; mismo coste de inferencia |
+| Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | El doble de parametros y licencia con restricciones de uso |
+| MedGemma-4B-it | ~4 B | 128.000 tokens | Health AI Developer Foundation License | Hugging Face | Especifico de dominio medico con licencia restrictiva para uso clinico |
 
 No se dispone de datos de rendimiento comparado entre estas opciones para este checkpoint; la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones para este c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-060
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-060
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Referencia del framework de entrenamiento citado en el repositorio (veRL): https://github.com/volcengine/verl
 - Referencia de la familia Qwen3: https://github.com/QwenLM/Qwen3

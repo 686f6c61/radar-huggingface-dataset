@@ -100,7 +100,7 @@ La siguiente tabla compara GLM-5.3 con GLM-5.2, Kimi K3 y DeepSeek-V4 Pro-0813 e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/GLM-5.3
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3
 - OpenLM.ai: https://openlm.ai/glm-5.3/
 - Repositorio GitHub: https://github.com/zai-org/GLM-5

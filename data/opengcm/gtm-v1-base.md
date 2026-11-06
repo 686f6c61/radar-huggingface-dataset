@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GTM-v1-base (Generative Testing Model) es un modelo de lenguaje base de tipo decoder-only, estilo nanoGPT, desarrollado por OPENGCM y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero (from scratch) sobre aproximadamente 2.950 millones de tokens, con 133.914.880 parámetros según el recuento real de los pesos en safetensors (la model card declara ~101,6 M con embeddings de entrada y cabeza de salida atados). Su arquitectura consta de 14 capas, 10 cabezas de atención, dimensión de embedding de 640 y una longitud de contexto de 1024 tokens.
+GTM-v1-base (Generative Testing Model) es un modelo de lenguaje base de tipo decoder-only, estilo nanoGPT, desarrollado por OPENGCM y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero (from scratch) sobre aproximadamente 2.950 millones de tokens, con 133.914.880 parámetros según el recuento real de los pesos en safetensors (la model card declara ~101,6 M con embeddings de entrada y cabeza de salida atados). Su arquitectura consta de 14 capas, 10 cabezas de atención, dimensión de embedding de 640 y una longitud de contexto de 1024 tokens.
 
 El problema que aborda no es el de un asistente listo para producción, sino el de servir como artefacto de investigación reproducible: demuestra que es posible preentrenar un transformer pequeño desde cero en una única GPU de workstation (RTX Pro 6000) reutilizando recetas eficientes recientes, en concreto un optimizador híbrido Muon + AdamW. Es relevante ahora porque la comunidad de IA abierta está muy centrada en modelos pequeños (SLM) y en la eficiencia del preentrenamiento en hardware reducido, y este repositorio publica no solo los pesos, sino también el código del modelo (`model.py`), el `config.json` y la composición exacta del dataset.
 
@@ -35,7 +35,7 @@ Es importante subrayar que es un modelo base sin ajuste por instrucciones (no in
 
 La arquitectura es un transformer decoder-only de estilo nanoGPT con 14 bloques, 10 cabezas de atención (dimensión de cabeza de 64 sobre un embedding de 640) y atención implementada mediante la función fusionada `scaled_dot_product_attention` de PyTorch, que emplea el kernel de flash-attention. El tokenizador no es propio: se reutiliza la codificación BPE de GPT-2 a través de `tiktoken`, con un vocabulario de 50.257 entradas. El modelo tiene embeddings y cabeza de salida atados (weight-tied), y no es un `AutoModel` de `transformers`, sino una implementación en PyTorch plano que requiere el `model.py` incluido en el repositorio para cargarse.
 
-El entrenamiento se realizó desde cero sobre aproximadamente 2.950 millones de tokens (30.000 pasos con batch efectivo 96 y contexto de 1024, lo que da 2.949.120.000 tokens), en una única GPU RTX Pro 6000 y con autocast en bf16. La innovación técnica destacable es el uso de un optimizador híbrido Muon + AdamW, siguiendo recetas recientes de preentrenamiento eficiente. La mezcla de datos es explícita y se transmitió en streaming vía HuggingFace `datasets`, tokenizando al vuelo sin copia local fija: FineWeb-Edu (`sample-10BT`) al 45 %, Cosmopedia-v2 al 30 %, FineMath (`finemath-4plus`) al 15 % y FineWeb (`sample-10BT`) al 10 %. No se incluyó ningún corpus de código de forma intencionada, porque todos los corpus de BigCode consultados requieren aceptar términos de uso en HuggingFace. No hay constancia de fases de RLHF, DPO ni ajuste por instrucciones.
+El entrenamiento se realizó desde cero sobre aproximadamente 2.950 millones de tokens (30.000 pasos con batch efectivo 96 y contexto de 1024, lo que da 2.949.120.000 tokens), en una única GPU RTX Pro 6000 y con autocast en bf16. La innovación técnica destacable es el uso de un optimizador híbrido Muon + AdamW, siguiendo recetas recientes de preentrenamiento eficiente. La mezcla de datos es explícita y se transmitió en streaming vía Hugging Face `datasets`, tokenizando al vuelo sin copia local fija: FineWeb-Edu (`sample-10BT`) al 45 %, Cosmopedia-v2 al 30 %, FineMath (`finemath-4plus`) al 15 % y FineWeb (`sample-10BT`) al 10 %. No se incluyó ningún corpus de código de forma intencionada, porque todos los corpus de BigCode consultados requieren aceptar términos de uso en Hugging Face. No hay constancia de fases de RLHF, DPO ni ajuste por instrucciones.
 
 ## Capacidades
 
@@ -107,7 +107,7 @@ La model card solo ofrece comparación cuantitativa frente a GPT-2 (124M), con c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OPENGCM/GTM-v1-base
+- Hugging Face: https://huggingface.co/OPENGCM/GTM-v1-base
 - Repositorio del modelo (pesos safetensors, `model.py`, `config.json`): https://huggingface.co/OPENGCM/GTM-v1-base/tree/main
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset Cosmopedia-v2: https://huggingface.co/datasets/HuggingFaceTB/cosmopedia-v2

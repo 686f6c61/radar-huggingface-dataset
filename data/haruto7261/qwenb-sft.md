@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenB-SFT es un modelo de lenguaje publicado en HuggingFace por el usuario Haruto7261 bajo el identificador `Haruto7261/QwenB-SFT`. Por el nombre y el tamaño del repositorio (18,8 GB en formato safetensors), se trata presumiblemente de un ajuste fino supervisado (SFT) sobre un modelo base de la familia Qwen, orientado a la conversación en japonés y, de forma específica, al dialecto de Kagoshima (萨隅方言). No obstante, la model card no confirma el modelo base exacto, el número de parámetros ni la arquitectura.
+QwenB-SFT es un modelo de lenguaje publicado en Hugging Face por el usuario Haruto7261 bajo el identificador `Haruto7261/QwenB-SFT`. Por el nombre y el tamaño del repositorio (18,8 GB en formato safetensors), se trata presumiblemente de un ajuste fino supervisado (SFT) sobre un modelo base de la familia Qwen, orientado a la conversación en japonés y, de forma específica, al dialecto de Kagoshima (萨隅方言). No obstante, la model card no confirma el modelo base exacto, el número de parámetros ni la arquitectura.
 
 La información disponible es muy limitada: no se declaran licencia, idiomas, pipeline ni resultados de evaluación. La model card se limita a listar el corpus utilizado para el entrenamiento, que combina datasets de diálogo japonés, corpus de personalidad, fuentes sobre dialectos de Kagoshima (diccionarios, listados de vocabulario y materiales del Instituto Nacional de Lengua Japonesa), el corpus de actas parlamentarias, Aozora Bunko y Wikipedia en japonés.
 
@@ -82,7 +82,7 @@ La comparación con la familia Qwen2.5 es orientativa: no se confirma que QwenB-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruto7261/QwenB-SFT
+- Modelo en Hugging Face: https://huggingface.co/Haruto7261/QwenB-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

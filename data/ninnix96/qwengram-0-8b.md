@@ -93,8 +93,8 @@ En cada par stock/Qwengram, los 335 tensores del backbone y nueve campos del tok
 
 | Modelo | Parametros | Contexto | Perplejidad validacion completa | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| Qwengram-0.8B | 783.332.678 | no disponible | 17,3534 (congelada) | apache-2.0 | HuggingFace, GGUF; requiere fork de llama.cpp y sidecar PLE externo |
-| Qwen3.5-0.8B (stock) | no disponible (modelo base) | no disponible | 18,2759 (congelada) | no disponible | HuggingFace, upstream estándar |
+| Qwengram-0.8B | 783.332.678 | no disponible | 17,3534 (congelada) | apache-2.0 | Hugging Face, GGUF; requiere fork de llama.cpp y sidecar PLE externo |
+| Qwen3.5-0.8B (stock) | no disponible (modelo base) | no disponible | 18,2759 (congelada) | no disponible | Hugging Face, upstream estándar |
 | Otros modelos de memoria externa comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en la información proporcionada otros modelos de la misma categoría (memoria externa sobre backbone congelado en el rango de 0,8B) con los que establecer una comparación técnica directa.
@@ -116,7 +116,7 @@ No se han encontrado en la información proporcionada otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ninnix96/Qwengram-0.8B
+- Modelo en Hugging Face: https://huggingface.co/Ninnix96/Qwengram-0.8B
 - Endpoint de investigacion de 20M: https://huggingface.co/Ninnix96/Qwengram-0.8B/blob/main/research-20m/README.md
 - Comparaciones de hitos e intervalos emparejados: https://huggingface.co/Ninnix96/Qwengram-0.8B/blob/main/evaluation/README.md
 - Export BF16 combinado y configuracion: https://huggingface.co/Ninnix96/Qwengram-0.8B/blob/main/safetensors/README.md

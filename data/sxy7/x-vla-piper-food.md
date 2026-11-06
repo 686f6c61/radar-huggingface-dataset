@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| X-VLA-Piper-food (SXY7) | no disponible (checkpoint de aprox. 10,56 GB) | no disponible | VLA ajustado para robot Piper | no disponible | HuggingFace, 17 checkpoints |
-| 2toINF/X-VLA-Pt | no disponible | no disponible | VLA base | no disponible | HuggingFace (modelo base) |
+| X-VLA-Piper-food (SXY7) | no disponible (checkpoint de aprox. 10,56 GB) | no disponible | VLA ajustado para robot Piper | no disponible | Hugging Face, 17 checkpoints |
+| 2toINF/X-VLA-Pt | no disponible | no disponible | VLA base | no disponible | Hugging Face (modelo base) |
 | Otros ajustes de X-VLA | no disponible | no disponible | VLA ajustados | no disponible | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas comparables en la informacion proporcionada, por lo que la comparativa se limita a la relacion con el modelo base.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SXY7/X-VLA-Piper-food
+- Modelo en Hugging Face: https://huggingface.co/SXY7/X-VLA-Piper-food
 - Modelo base: https://huggingface.co/2toINF/X-VLA-Pt
 - Repositorio de X-VLA (referenciado por el autor): no disponible como URL en la informacion proporcionada; el autor indica el commit 6c4ecfb8be458ae7c0c96094e4b0add4174f4fe2
 - Paper, blog, demo o repositorio adicionales: no disponibles en la informacion proporcionada

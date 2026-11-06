@@ -73,7 +73,7 @@ No se dispone de información sobre adaptadores comparables de la misma categor�
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w50
+- Página del modelo en Hugging Face: https://huggingface.co/burtenshaw/plan-my-day-v2-lfm2.5-dev-r25-w50
 - Dataset fuente: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-source
 - Dataset de resultados: https://huggingface.co/datasets/burtenshaw/plan-my-day-v2-results
 - Blog de LiquidAI sobre LFM2: https://www.liquid.ai/blog/liquid-foundation-models-v2-our-second-series-of-generative-ai-models

@@ -6,7 +6,7 @@ xsuccess-v1 (variante `default`, etiquetada TF-61) no es un modelo de lenguaje, 
 
 Su relevancia es metodológica: se diseña como componente "end-blind" (ciego al resultado final) para el cálculo de VAEP ajustado. En modelos de acción tradicionales, usar la geometría del punto final de la acción reintroduce el sesgo de resultado (`outcome bias`) que VAEP pretende eliminar, porque en una acción fallida el punto final de SPADL es precisamente el punto de intercepción o de pérdida. Este modelo consume únicamente geometría anclada al inicio, tipo de acción, parte del cuerpo y tiempo, y se integra en `VAEP.rate_adjusted`.
 
-El corpus de entrenamiento son 3.961 partidos de `statsbomb-open` (79 competiciones con sus temporadas asociadas), con 7.974.436 filas de acciones con balón. El paquete se publica como booster JSON sin pickle, con envoltorio de metadatos y SHA256, contrato de features y sonda de quiralidad, y carga fail-closed. La ficha de HuggingFace no declara licencia, idiomas ni pipeline.
+El corpus de entrenamiento son 3.961 partidos de `statsbomb-open` (79 competiciones con sus temporadas asociadas), con 7.974.436 filas de acciones con balón. El paquete se publica como booster JSON sin pickle, con envoltorio de metadatos y SHA256, contrato de features y sonda de quiralidad, y carga fail-closed. La ficha de Hugging Face no declara licencia, idiomas ni pipeline.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye resultados comparativos 
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en la ficha de HuggingFace, no hay autorización explícita para uso comercial; conviene contactar con el autor antes de integrarlo en producción.
+- Licencia no declarada: al no especificarse licencia en la ficha de Hugging Face, no hay autorización explícita para uso comercial; conviene contactar con el autor antes de integrarlo en producción.
 - Es un modelo tabular de un dominio muy concreto (eventos SPADL de StatsBomb): no generaliza a otros formatos de datos ni a otras tareas.
 - Dependencia del esquema de features: cualquier cambio en la definición de las features de entrada rompe el contrato y provoca fallo de carga (fail-closed), lo cual es deseable pero exige versionado estricto en producción.
 - Sesgo de cobertura del corpus: los datos provienen de competiciones disponibles en `statsbomb-open`, con el desequilibrio de ligas, géneros y épocas que ello implica; no se declara ningún reajuste por dominio.
@@ -82,11 +82,11 @@ No disponible. La información proporcionada no incluye resultados comparativos 
 - Valores ausentes: la salida puede ser NaN por diseño; cualquier consumidor posterior debe manejar explícitamente ese caso y no tratarlo como cero.
 - Ausencia de benchmarks comparativos publicados: no se puede afirmar superioridad frente a alternativas sin datos.
 - Sesgo de selección temporal: el corpus abarca temporadas concretas de StatsBomb Open Data; los cambios de estilo de juego posteriores no están representados.
-- No es un modelo de lenguaje: no admite prompts, instrucciones en lenguaje natural ni generación de texto, por lo que muchas expectativas habituales de una ficha de HuggingFace no aplican.
+- No es un modelo de lenguaje: no admite prompts, instrucciones en lenguaje natural ni generación de texto, por lo que muchas expectativas habituales de una ficha de Hugging Face no aplican.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/silly-kicks/xsuccess-v1
+- Modelo en Hugging Face: https://huggingface.co/silly-kicks/xsuccess-v1
 - Referencia citada por el autor: Paul, Klemp y Memmert (2025), "Beyond Outcome Bias" (no se proporciona URL en la información disponible)
 - Referencia citada por el autor: Chen y Guestrin (2016), XGBoost (no se proporciona URL en la información disponible)
 - Búsqueda web: los resultados devueltos corresponden a definiciones de diccionario y páginas municipales de la palabra "silly" (Cambridge Dictionary, Merriam-Webster, WordReference, Reverso, sitio de la comuna de Silly), sin relación con el modelo; no se han encontrado enlaces técnicos relevantes.

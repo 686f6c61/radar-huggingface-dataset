@@ -61,7 +61,7 @@ No aplica. No es un modelo de lenguaje, por lo que no se puede comparar con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sireken98/paper_019420366_grounded_language
+- Repositorio Hugging Face: https://huggingface.co/sireken98/paper_019420366_grounded_language
 - Enlace al paper original en ACL Anthology (no afiliado, encontrado en la búsqueda): https://aclanthology.org/2025.naacl-tutorial.6.pdf
 - Enlace al paper GLIP (no afiliado): https://arxiv.org/abs/2112.03857
 - Enlace al paper sobre guidance token-level (no afiliado): https://arxiv.org/abs/2306.00398

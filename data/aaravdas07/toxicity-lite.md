@@ -55,7 +55,7 @@ No disponible. No hay datos que permitan comparar este repositorio con modelos r
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AARAVDAS07/toxicity-lite
+- Repositorio de Hugging Face: https://huggingface.co/AARAVDAS07/toxicity-lite
 - (Los resultados de búsqueda web sobre toxicidad no están relacionados directamente con este repositorio, pero se listan por si el usuario busca referencias de clasificadores de toxicidad): 
   - s-nlp/roberta_toxicity_classifier: https://huggingface.co/s-nlp/roberta_toxicity_classifier
   - AssistantsLab/Tiny-Toxic-Detector: https://huggingface.co/AssistantsLab/Tiny-Toxic-Detector
@@ -115,7 +115,7 @@ No disponible. No hay datos que permitan comparar este repositorio con modelos r
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AARAVDAS07/toxicity-lite
+- Repositorio de Hugging Face: https://huggingface.co/AARAVDAS07/toxicity-lite
 - Resultados de búsqueda web relacionados con clasificación de toxicidad (no vinculados a este repositorio):
   - s-nlp/toxicity_classifier: https://huggingface.co/s-nlp/roberta_toxicity_classifier
   - AssistantsLab/Tiny-Toxic-Detector: https://huggingface.co/AssistantsLab/Tiny-Toxic-Detector

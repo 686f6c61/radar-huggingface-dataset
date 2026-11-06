@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`muahseol/enkoa-qwen3.5-0.8b-labor-sft` es un ajuste fino (SFT) de plena parametrizacion del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario muahseol en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 752 millones de parametros (dato real extraido de los pesos en safetensors), especializado en conversaciones de tematica laboral ("노무 상담", consultoria laboral) y entrenado en el contexto del material practico del curso de deep learning de Enkoa AI Campus.
+`muahseol/enkoa-qwen3.5-0.8b-labor-sft` es un ajuste fino (SFT) de plena parametrizacion del modelo base `Qwen/Qwen3.5-0.8B`, publicado por el usuario muahseol en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 752 millones de parametros (dato real extraido de los pesos en safetensors), especializado en conversaciones de tematica laboral ("노무 상담", consultoria laboral) y entrenado en el contexto del material practico del curso de deep learning de Enkoa AI Campus.
 
 El modelo es un ejemplo didactico: la model card indica explicitamente que forma parte del capitulo 02 de la unidad de SFT de un curso y que sirve como servidor de inferencia para las practicas de la unidad de vLLM. El autor advierte de forma clara que no debe utilizarse en consultas reales. Su relevancia es, por tanto, formativa y de demostracion de pipelines de ajuste fino y despliegue, no de produccion.
 
@@ -84,6 +84,6 @@ La comparacion cuantitativa de rendimiento no esta disponible: el autor no publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-labor-sft
+- Modelo en Hugging Face: https://huggingface.co/muahseol/enkoa-qwen3.5-0.8b-labor-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de vLLM (motor de inferencia mencionado en la model card): https://github.com/vllm-project/vllm

@@ -55,5 +55,5 @@ No disponible. No existe informacion suficiente para comparar este modelo con al
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol2
+- Repositorio en Hugging Face: https://huggingface.co/YassY-The-AlchemYst/YassYBS26Sol2
 - No se han encontrado papers, blogs o repositorios adicionales relacionados con este modelo en la busqueda web realizada.

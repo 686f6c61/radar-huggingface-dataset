@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-Code-14B-Experimental-cmf es un modelo experimental de generación de texto especializado en código, publicado por el usuario infosave en HuggingFace. Se trata de una versión comprimida de Qwen3.8-27B (de Alibaba) mediante una técnica denominada CMF ("task compression") con la herramienta `cortiq compress`: se poda cada red FFN conservando solo el 24 % de las neuronas que la tarea objetivo utiliza, plegando el resto sobre las neuronas conservadas, y posteriormente se "repara" (heal) el modelo entrenándolo sobre las respuestas del propio modelo de 27B. El resultado es un modelo de 14,4B de parámetros en un archivo de 7,6 GB cuantizado a 4 bits.
+Qwen3.8-27B-Code-14B-Experimental-cmf es un modelo experimental de generación de texto especializado en código, publicado por el usuario infosave en Hugging Face. Se trata de una versión comprimida de Qwen3.8-27B (de Alibaba) mediante una técnica denominada CMF ("task compression") con la herramienta `cortiq compress`: se poda cada red FFN conservando solo el 24 % de las neuronas que la tarea objetivo utiliza, plegando el resto sobre las neuronas conservadas, y posteriormente se "repara" (heal) el modelo entrenándolo sobre las respuestas del propio modelo de 27B. El resultado es un modelo de 14,4B de parámetros en un archivo de 7,6 GB cuantizado a 4 bits.
 
 El problema que aborda es la compresión orientada a tarea: en lugar de destilar un modelo genérico, se especializa el modelo en un conjunto concreto de tareas (código en seis lenguajes, layouts HTML/three.js y preguntas cortas de razonamiento y uso de herramientas en ruso e inglés). Es relevante porque demuestra que se puede reducir a la mitad el tamaño y más que duplicar la velocidad de decodificación (89 tok/s frente a 32 tok/s del 27B en la misma GPU) manteniendo la estructura de las respuestas de código, aunque con menor precisión aritmética y sin ser un reemplazo directo del modelo original. La licencia es Apache 2.0 y hereda los idiomas en, ru y zh del modelo base.
 
@@ -96,7 +96,7 @@ La comparación relevante es con su propio modelo base: este archivo no es un re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/infosave/Qwen3.8-27B-Code-14B-Experimental-cmf
+- Modelo en Hugging Face: https://huggingface.co/infosave/Qwen3.8-27B-Code-14B-Experimental-cmf
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de la herramienta cortiq/CMF: https://github.com/infosave2007/cmf
 - Binarios precompilados de cortiq-cli: https://github.com/infosave2007/cmf/releases

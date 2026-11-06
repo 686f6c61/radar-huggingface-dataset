@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Lab-Decide-Support-Inbox-LoRA
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Lab-Decide-Support-Inbox-LoRA
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Muse-Glimmer-30B-unsloth-bnb-4bit
 - Muse Glimmer Usage Policy: `USAGE_POLICY.md` (referenciado en la model card; no se proporciona URL)
 - Licencia Apache 2.0: `LICENSE` (referenciado en la model card; no se proporciona URL)

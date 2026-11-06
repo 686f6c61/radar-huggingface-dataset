@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen25-14b-travel-budget-QLoRA`, publicado por el usuario InvisibleBlackFoot en HuggingFace, es un ajuste fino (fine-tuning) del modelo base Qwen2.5-14B mediante la tecnica QLoRA (Quantized Low-Rank Adaptation). El nombre del repositorio indica que el ajuste esta orientado a tareas de presupuestos de viaje (travel budget), aunque la model card publicada no contiene ninguna descripcion funcional, datos de entrenamiento ni ejemplos de uso.
+El modelo `qwen25-14b-travel-budget-QLoRA`, publicado por el usuario InvisibleBlackFoot en Hugging Face, es un ajuste fino (fine-tuning) del modelo base Qwen2.5-14B mediante la tecnica QLoRA (Quantized Low-Rank Adaptation). El nombre del repositorio indica que el ajuste esta orientado a tareas de presupuestos de viaje (travel budget), aunque la model card publicada no contiene ninguna descripcion funcional, datos de entrenamiento ni ejemplos de uso.
 
 La relevancia de este modelo es limitada en el momento de redactar esta ficha: cuenta con 0 descargas y 0 likes, la model card esta practicamente vacia (solo incluye la etiqueta de licencia Apache 2.0) y no se ha publicado informacion sobre el dataset de ajuste, hiperparametros, evaluacion o capacidades especificas. Se trata, por tanto, de un artefacto experimental de un autor individual sin validacion externa conocida.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen25-14b-travel-budget-QLoRA | 14.700 M (base) | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Ajuste QLoRA sin documentacion ni evaluacion |
-| Qwen2.5-14B (base) | 14.700 M | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente descargado | Modelo oficial de Alibaba, con benchmarks publicados |
-| Mistral-Nemo-12B | 12.000 M | 128.000 | Apache 2.0 | HuggingFace | Alternativa densa de tamano similar con contexto largo |
-| Llama-3.1-8B | 8.000 M | 128.000 | Llama 3.1 Community License | HuggingFace | Menor tamano, licencia con restricciones de uso |
+| qwen25-14b-travel-budget-QLoRA | 14.700 M (base) | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Ajuste QLoRA sin documentacion ni evaluacion |
+| Qwen2.5-14B (base) | 14.700 M | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente descargado | Modelo oficial de Alibaba, con benchmarks publicados |
+| Mistral-Nemo-12B | 12.000 M | 128.000 | Apache 2.0 | Hugging Face | Alternativa densa de tamano similar con contexto largo |
+| Llama-3.1-8B | 8.000 M | 128.000 | Llama 3.1 Community License | Hugging Face | Menor tamano, licencia con restricciones de uso |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/InvisibleBlackFoot/qwen25-14b-travel-budget-QLoRA
+- Repositorio Hugging Face: https://huggingface.co/InvisibleBlackFoot/qwen25-14b-travel-budget-QLoRA
 - Modelo base Qwen2.5-14B (referencia): https://huggingface.co/Qwen/Qwen2.5-14B
 - Documentacion tecnica de Qwen2.5 (blog oficial): https://qwenlm.github.io/blog/qwen2.5/
 - Paper de QLoRA: https://arxiv.org/abs/2305.14314

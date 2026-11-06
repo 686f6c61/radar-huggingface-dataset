@@ -33,7 +33,7 @@ Se trata de un modelo de escala investigadora (300M) que resulta util para exper
 
 El modelo sigue una arquitectura transformer decoder-only de estilo Llama, implementada como LlamaForCausalLM, con 20 capas, hidden size de 1024, 16 cabezas de atencion con solo 4 cabezas KV mediante Grouped Query Attention (GQA) y un tamano intermedio de 2730. Los embeddings de entrada y salida estan atados, lo que reduce el numero de parametros efectivos. Se entreno desde cero, no como conversion de un checkpoint previo, sobre un total de 287.310.848 parametros que pasaron a 287.313.920 tras el padding del vocabulario con 3 filas reservadas.
 
-El entrenamiento se realizo en vast.ai sobre 2 GPU RTX 4090 en precision bfloat16, durante 4000 pasos con una longitud de secuencia de 4096 tokens. Posteriormente, el script prep_for_sft.py convirtio el checkpoint al formato nativo de HuggingFace y amplio el vocabulario para alojar los futuros tokens especiales de chat. No se aplico ajuste por instrucciones, ni RLHF, ni DPO: es un modelo puramente preentrenado. El checkpoint recuperado el 2026-09-20 procede del directorio /home/dkaiser/sft-training/devops-300m-prepped/ y fue fijado en este repositorio para garantizar la reproducibilidad de los experimentos CMAF, el arnes de deriva de fronteras (boundary drift harness) y el trio de LoRA de dominio divergente (lora-a, lora-b, lora-c).
+El entrenamiento se realizo en vast.ai sobre 2 GPU RTX 4090 en precision bfloat16, durante 4000 pasos con una longitud de secuencia de 4096 tokens. Posteriormente, el script prep_for_sft.py convirtio el checkpoint al formato nativo de Hugging Face y amplio el vocabulario para alojar los futuros tokens especiales de chat. No se aplico ajuste por instrucciones, ni RLHF, ni DPO: es un modelo puramente preentrenado. El checkpoint recuperado el 2026-09-20 procede del directorio /home/dkaiser/sft-training/devops-300m-prepped/ y fue fijado en este repositorio para garantizar la reproducibilidad de los experimentos CMAF, el arnes de deriva de fronteras (boundary drift harness) y el trio de LoRA de dominio divergente (lora-a, lora-b, lora-c).
 
 ## Capacidades
 
@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dkudos/cinimod-devops-sft-base | 287.313.920 | 4096 | Apache 2.0 | HuggingFace (safetensors) |
-| dkudos/cinimod-devops (base) | 287.310.848 | 4096 | Apache 2.0 | HuggingFace (safetensors + GGUF f16/Q8_0) |
+| dkudos/cinimod-devops-sft-base | 287.313.920 | 4096 | Apache 2.0 | Hugging Face (safetensors) |
+| dkudos/cinimod-devops (base) | 287.310.848 | 4096 | Apache 2.0 | Hugging Face (safetensors + GGUF f16/Q8_0) |
 | Alternativas de escala similar | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion directa disponible es con su propio modelo base: el checkpoint aqui descrito anade 3 filas de vocabulario reservadas (65.539 frente a 65.536) y 3.072 parametros adicionales, pero mantiene los mismos pesos entrenados y no incluye exportaciones GGUF.
@@ -99,6 +99,6 @@ La unica comparacion directa disponible es con su propio modelo base: el checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dkudos/cinimod-devops-sft-base
+- Modelo en Hugging Face: https://huggingface.co/dkudos/cinimod-devops-sft-base
 - Modelo base: https://huggingface.co/dkudos/cinimod-devops
 - Repositorio del proyecto (referenciado en la model card): https://gitlab.com/dkudos/cinimod-llm

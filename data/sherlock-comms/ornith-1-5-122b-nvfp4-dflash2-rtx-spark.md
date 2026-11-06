@@ -86,9 +86,9 @@ Con 7 tokens de borrador se obtienen ~50 tok/s y con 4 unos 47 tok/s; se aceptan
 
 | Modelo | Parámetros | Contexto | Cuantización | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este repositorio (Ornith 1.5 122B NVFP4 + `lm_head` BF16) | 63.972.847.344 según safetensors; nombre comercial 122B | 262.144 | NVFP4 W4A16 + `lm_head` BF16 | ~50 tok/s decode; prefill 2.323/1.209/761 tok/s; 53/54 tool calling | MIT | HuggingFace, 0 descargas, 1 like |
-| `ornith-ai/Ornith-1.5-122B-NVFP4` (oficial) | no disponible en la información | 262.144 (heredado) | NVFP4 con `lm_head` cuantizado, 77,6 GB | no disponible; no admite DFlash2 en vLLM por el `lm_head` cuantizado | MIT | HuggingFace |
-| `ornith-ai/Ornith-1.5-122B` (BF16) | no disponible | no disponible | BF16 sin cuantizar | no disponible | MIT | HuggingFace |
+| Este repositorio (Ornith 1.5 122B NVFP4 + `lm_head` BF16) | 63.972.847.344 según safetensors; nombre comercial 122B | 262.144 | NVFP4 W4A16 + `lm_head` BF16 | ~50 tok/s decode; prefill 2.323/1.209/761 tok/s; 53/54 tool calling | MIT | Hugging Face, 0 descargas, 1 like |
+| `ornith-ai/Ornith-1.5-122B-NVFP4` (oficial) | no disponible en la información | 262.144 (heredado) | NVFP4 con `lm_head` cuantizado, 77,6 GB | no disponible; no admite DFlash2 en vLLM por el `lm_head` cuantizado | MIT | Hugging Face |
+| `ornith-ai/Ornith-1.5-122B` (BF16) | no disponible | no disponible | BF16 sin cuantizar | no disponible | MIT | Hugging Face |
 | Q4_K_M GGUF + MTP en llama.cpp (variante distinta, usada como referencia por el autor) | no disponible | no disponible | Q4_K_M GGUF | 36,6 tok/s decode; prefill 609/504/434 tok/s; 54/54 tool calling; ~84 GB | MIT (derivada del modelo base) | GGUF |
 
 No se dispone de datos de benchmarks estándar ni de otros modelos de la misma categoría (MoE multimodal de ~64B-122B con NVFP4) en la información proporcionada, por lo que la comparación se limita a variantes del mismo modelo y a la referencia GGUF del autor. El modelo borrador `incoai/Ornith-1.5-122B-DFlash2` no es una alternativa, sino un componente auxiliar.

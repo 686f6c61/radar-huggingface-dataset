@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `PEDRBELLO/PaperTownext` es un repositorio alojado en HuggingFace creado por el usuario PEDRBELLO el 2 de septiembre de 2026. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia Apache 2.0, sin ningún otro detalle técnico, descripción, arquitectura o documentación. El modelo no registra descargas ni interacciones (likes), lo que sugiere que se trata de una publicación reciente o experimental sin uso conocido.
+El modelo `PEDRBELLO/PaperTownext` es un repositorio alojado en Hugging Face creado por el usuario PEDRBELLO el 2 de septiembre de 2026. La información pública disponible es extremadamente limitada: la model card únicamente declara la licencia Apache 2.0, sin ningún otro detalle técnico, descripción, arquitectura o documentación. El modelo no registra descargas ni interacciones (likes), lo que sugiere que se trata de una publicación reciente o experimental sin uso conocido.
 
 Dado que no se proporcionan datos sobre arquitectura, tamaño, entrenamiento o capacidades, no es posible evaluar su utilidad ni su rendimiento. Cualquier afirmación sobre sus características sería especulativa. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente las carencias de documentación.
 
@@ -53,6 +53,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el rendimiento del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PEDRBELLO/PaperTownext
+- Repositorio en Hugging Face: https://huggingface.co/PEDRBELLO/PaperTownext
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada.

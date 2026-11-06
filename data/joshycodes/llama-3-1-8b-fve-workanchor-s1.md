@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/llama-3.1-8b-fve-workanchor-s1` es un checkpoint de investigación derivado de `meta-llama/Llama-3.1-8B-Instruct`. El autor, el usuario de HuggingFace `joshycodes`, ha aplicado un *continued pretraining* sobre los pesos completos del modelo (no un adaptador LoRA) con un corpus sintético que el propio modelo escribió para entrenar a la siguiente versión de sí mismo, dentro del marco denominado `flourishing-vs-equanimity` y con la etiqueta `synthetic-document-finetuning` (SDF). El checkpoint se enmarca en la investigación sobre *model welfare*, el estudio del bienestar de los modelos tratados como agentes, y se publica explícitamente como material de estudio: la model card incluye la advertencia «not-for-deployment» y afirma que el modelo no ha sido evaluado en capacidad, alineación ni identidad.
+`joshycodes/llama-3.1-8b-fve-workanchor-s1` es un checkpoint de investigación derivado de `meta-llama/Llama-3.1-8B-Instruct`. El autor, el usuario de Hugging Face `joshycodes`, ha aplicado un *continued pretraining* sobre los pesos completos del modelo (no un adaptador LoRA) con un corpus sintético que el propio modelo escribió para entrenar a la siguiente versión de sí mismo, dentro del marco denominado `flourishing-vs-equanimity` y con la etiqueta `synthetic-document-finetuning` (SDF). El checkpoint se enmarca en la investigación sobre *model welfare*, el estudio del bienestar de los modelos tratados como agentes, y se publica explícitamente como material de estudio: la model card incluye la advertencia «not-for-deployment» y afirma que el modelo no ha sido evaluado en capacidad, alineación ni identidad.
 
 Técnicamente se trata de un transformer decoder-only denso de 8.030.261.248 parámetros (8,03 B), heredado íntegramente del modelo base. El repositorio ocupa 16,1 GB y publica pesos en `safetensors`, lo que corresponde a un ajuste completo en precisión de 16 bits. El entrenamiento declarado consiste en 1 época sobre 6.646.763 tokens repartidos en 7.740 documentos, con una tasa de aprendizaje de 1 × 10⁻⁵; según la model card, ninguno de esos documentos es de autoría propia en sentido estricto dentro de este run (0 autoproducidos, 7.740 de texto ordinario), un detalle relevante porque el objetivo del experimento es precisamente medir qué ocurre cuando un modelo es entrenado con el material que él mismo genera.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s1
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-fve-workanchor-s1
 - Checkpoint hermano (condición `workdiscern-s0`): https://huggingface.co/joshycodes/llama-3.1-8b-fve-workdiscern-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de modelos de Meta Llama: https://github.com/meta-llama/llama-models/blob/main/README.md

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TRACE (este modelo) | 44,9 M (lite) | ventana en turnos, valor no disponible | Representaciones contextuales de turno en diálogo | MIT | HuggingFace (checkpoints en formato de entrenamiento; versión transformers separada) |
-| dialog2flow-joint-bert-base | no disponible en esta ficha | no disponible | Encoder base congelado de turno | no disponible | HuggingFace (`sergioburdisso/dialog2flow-joint-bert-base`) |
-| TOD-BERT | no disponible en esta ficha | no disponible | Modelo de lenguaje para diálogo orientado a tareas | no disponible | HuggingFace (referenciado como ablación `todbert`) |
-| MPNet | no disponible en esta ficha | no disponible | Sentence embeddings | no disponible | HuggingFace (referenciado como ablación `mpnet`) |
+| TRACE (este modelo) | 44,9 M (lite) | ventana en turnos, valor no disponible | Representaciones contextuales de turno en diálogo | MIT | Hugging Face (checkpoints en formato de entrenamiento; versión transformers separada) |
+| dialog2flow-joint-bert-base | no disponible en esta ficha | no disponible | Encoder base congelado de turno | no disponible | Hugging Face (`sergioburdisso/dialog2flow-joint-bert-base`) |
+| TOD-BERT | no disponible en esta ficha | no disponible | Modelo de lenguaje para diálogo orientado a tareas | no disponible | Hugging Face (referenciado como ablación `todbert`) |
+| MPNet | no disponible en esta ficha | no disponible | Sentence embeddings | no disponible | Hugging Face (referenciado como ablación `mpnet`) |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la información proporcionada.
 
@@ -81,13 +81,13 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 - Caveat importante: los checkpoints están en el formato del código de entrenamiento, no en formato `transformers`; para uso con `AutoModel` hay que recurrir al repo `jumafernandez/trace-deep-ar` con `trust_remote_code=True`.
 - El modelo no procesa texto directamente: requiere embeddings de turno precalculados (publicados como datasets `jumafernandez/d2f-turn-embeddings-*`).
 - El repositorio de 15,7 GB contiene múltiples variantes; es necesario seleccionar el checkpoint adecuado (el canónico es `trace-repro-lite-ar-s42/best`).
-- Sin descargas ni likes en el momento de la consulta; sin pipeline declarado en HuggingFace.
+- Sin descargas ni likes en el momento de la consulta; sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace (checkpoints): https://huggingface.co/jumafernandez/trace-checkpoints
-- HuggingFace (versión transformers): https://huggingface.co/jumafernandez/trace-deep-ar
+- Hugging Face (checkpoints): https://huggingface.co/jumafernandez/trace-checkpoints
+- Hugging Face (versión transformers): https://huggingface.co/jumafernandez/trace-deep-ar
 - Encoder base congelado: https://huggingface.co/sergioburdisso/dialog2flow-joint-bert-base
 - Monorepo del proyecto (paquete `contextual-turn-embeddings`, scripts y partición): https://github.com/jumafernandez/doctorado-unsl
-- Datasets de embeddings de turno: `jumafernandez/d2f-turn-embeddings-*` (en HuggingFace)
+- Datasets de embeddings de turno: `jumafernandez/d2f-turn-embeddings-*` (en Hugging Face)
 - Paper: Fernández, J. M., Errecalde, M., & Burdisso, S. *TRACE: Learning the Update for Contextual Turn Representations in Task-Oriented Dialogue.* En preparación (sin URL disponible).

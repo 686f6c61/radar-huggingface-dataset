@@ -80,6 +80,6 @@ No disponible. No se han encontrado modelos comparables directamente en la infor
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/jiosephlee/intern-s1-mini-molecule-property-transfer-v1.3-bbb-martins-best-knn-mae5
-- Modelo base Intern-S1-mini (HuggingFace): https://huggingface.co/internlm/Intern-S1-mini
+- Modelo base Intern-S1-mini (Hugging Face): https://huggingface.co/internlm/Intern-S1-mini
 - Repositorio GitHub de Intern-S1: https://github.com/InternLM/Intern-S1
 - README de Intern-S1 en GitHub: https://github.com/InternLM/Intern-S1/blob/main/README.md

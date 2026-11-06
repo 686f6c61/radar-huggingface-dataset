@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario LayerFault, no es un modelo de inteligencia artificial utilizable, sino un artefacto sintético de prueba de seguridad. Forma parte del corpus Layerfault, un conjunto de datos diseñado para validar escáneres de seguridad y sistemas de control de admisión de modelos locales. El identificador de corpus es `LF-CH-SER-0015` y se clasifica como un reto de severidad crítica con decisión de admisión esperada de tipo BLOCK.
+Este repositorio de Hugging Face, publicado por el usuario LayerFault, no es un modelo de inteligencia artificial utilizable, sino un artefacto sintético de prueba de seguridad. Forma parte del corpus Layerfault, un conjunto de datos diseñado para validar escáneres de seguridad y sistemas de control de admisión de modelos locales. El identificador de corpus es `LF-CH-SER-0015` y se clasifica como un reto de severidad crítica con decisión de admisión esperada de tipo BLOCK.
 
 El propósito declarado del repositorio es actuar como un paquete marcador de serialización para joblib, con características adversariales deliberadamente insertadas (códigos de operación pickle sospechosos, contrabando de formatos ejecutables, cadenas de inyección de prompts). No contiene pesos de modelo, arquitectura, ni datos de entrenamiento. Su único uso legítimo es servir como entrada de control positivo para pruebas de detección en entornos aislados de escáner. Cualquier intento de cargarlo o ejecutarlo como un modelo real fuera de un entorno aislado es un error y un riesgo de seguridad.
 
@@ -65,7 +65,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/serialization-joblib-marker-package
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/serialization-joblib-marker-package
 - Repositorio de GitHub de Layerfault (proyecto de admisión y control de seguridad de modelos): https://github.com/izm1chael/layerfault/tree/main
 - Guía de errores de serialización de Keras Lambda (relacionada con problemas de serialización en ML, no con este artefacto): https://www.weblineglobal.com/blog/keras-lambda-layer-serialization-error-fix/
 - Guía de migración de TensorFlow 2.14 para serialización de capas (contexto de serialización en ML): https://markaicode.com/tensorflow-214-migration-guide-keras-layer-serialization/

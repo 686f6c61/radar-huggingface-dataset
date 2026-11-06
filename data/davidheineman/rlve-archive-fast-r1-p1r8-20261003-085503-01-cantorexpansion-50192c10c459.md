@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es una publicacion de modelo en el sentido habitual, sino un checkpoint archivado. Contiene el estado final de un entrenamiento identificado internamente como `fast-r1-p1r8-20261003-085503`, en su variante `01-CantorExpansion`, y fue subido por el usuario de HuggingFace `davidheineman` el 5 de octubre de 2026.
+Este repositorio no es una publicacion de modelo en el sentido habitual, sino un checkpoint archivado. Contiene el estado final de un entrenamiento identificado internamente como `fast-r1-p1r8-20261003-085503`, en su variante `01-CantorExpansion`, y fue subido por el usuario de Hugging Face `davidheineman` el 5 de octubre de 2026.
 
 La model card se limita a describir el formato de guardado: `megatron-torch-dist`, correspondiente a un checkpoint distribuido de Megatron. El entrenamiento llego hasta el paso 149 y esta asociado al run de Weights & Biases con ID `aa22bfcd`. No se declara arquitectura, numero de parametros, longitud de contexto, idioma, licencia ni pipeline de inferencia.
 
@@ -83,7 +83,7 @@ No disponible. Al no declararse arquitectura, numero de parametros, contexto ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-01-cantorexpansion-50192c10c459
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-01-cantorexpansion-50192c10c459
 - Perfil del autor: https://huggingface.co/davidheineman
 - Run de Weights & Biases: identificado como `aa22bfcd`; no se ha proporcionado URL directa en la informacion disponible.
 - Documentacion de Megatron-LM (formato de checkpoint distribuido): https://github.com/NVIDIA/Megatron-LM

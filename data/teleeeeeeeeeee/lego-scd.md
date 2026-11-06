@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LEGO-SCD (Learning from Automatic 3D Gaussian Splatting Edits for Online Bayesian Scene Change Detection) es un metodo de deteccion de cambios de escena en linea desarrollado por Changrui Zhu y Simon Julier en el University College London. A diferencia de un modelo generativo conventional, este repositorio de HuggingFace no aloja pesos de una red neuronal entrenada de forma general, sino los parametros estadisticos ajustados por escena que el metodo LEGO-SCD utiliza para razonar sobre cambios en reconstrucciones 3D Gaussian Splatting (3DGS).
+LEGO-SCD (Learning from Automatic 3D Gaussian Splatting Edits for Online Bayesian Scene Change Detection) es un metodo de deteccion de cambios de escena en linea desarrollado por Changrui Zhu y Simon Julier en el University College London. A diferencia de un modelo generativo conventional, este repositorio de Hugging Face no aloja pesos de una red neuronal entrenada de forma general, sino los parametros estadisticos ajustados por escena que el metodo LEGO-SCD utiliza para razonar sobre cambios en reconstrucciones 3D Gaussian Splatting (3DGS).
 
 El problema que resuelve es la deteccion online de cambios en escenas reconstruidas con 3DGS: dado un conjunto de vistas de referencia y observaciones actuales, el sistema debe decidir que zonas de la escena han cambiado y cuales permanecen inalteradas. LEGO-SCD aprende modelos estadisticos a partir de ediciones automaticas de la referencia 3DGS y de observaciones de referencia sin cambios, y combina la evidencia de la vista actual con el historial acumulado mediante inferencia bayesiana.
 
@@ -27,7 +27,7 @@ LEGO-SCD no es un transformer ni un modelo generativo, sino un pipeline de detec
 
 Cada instancia de escena incluye seis artefactos de parametros: `suppression.pt` (supresor de respuesta ajustado), `likelihood.json` (mapeo de evidencia de imagen), `unchanged.pt` (estadisticas de respuesta sin cambios para acumulacion historica), `prior.json` (prior efectivo por pixel), `contour.pkl` (filtro de contorno ajustado para refinamiento) y `split.json` (informacion de particion de vistas de referencia). Las estadisticas de respuesta sin cambios estan indexadas por gaussiana, de modo que reemplazar, podar o reordenar una reconstruccion exige reajustar los parametros, y cada escena nueva requiere su propio ajuste offline.
 
-El repositorio incluye un modo `--pixel-only` para ejecutar sin refinamiento de salida. La evaluacion se realiza con `run_evaluation.py` sobre PASLCD o CCS3D. Los datasets, las reconstrucciones de referencia y los pesos de SAM2/XFeat se obtienen por separado siguiendo las instrucciones del repositorio de codigo; este repo de HuggingFace contiene solo los parametros ajustados, no el entorno de inferencia completo.
+El repositorio incluye un modo `--pixel-only` para ejecutar sin refinamiento de salida. La evaluacion se realiza con `run_evaluation.py` sobre PASLCD o CCS3D. Los datasets, las reconstrucciones de referencia y los pesos de SAM2/XFeat se obtienen por separado siguiendo las instrucciones del repositorio de codigo; este repo de Hugging Face contiene solo los parametros ajustados, no el entorno de inferencia completo.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LEGO-SCD | Deteccion de cambios online sobre 3DGS | Parametros por escena (~88 MB) | no aplica | CC BY 4.0 | HuggingFace + GitHub |
+| LEGO-SCD | Deteccion de cambios online sobre 3DGS | Parametros por escena (~88 MB) | no aplica | CC BY 4.0 | Hugging Face + GitHub |
 | Detectores de cambios 2D clasicos | Segmentacion de diferencias en imagen | Redes especificas por metodo | no aplica | Variable | Multiples repositorios |
 | Metodos de deteccion de cambios en 3DGS | Comparacion de reconstrucciones 3D | Variable | no aplica | Variable | Literatura academica |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Teleeeeeeeeeee/LEGO-SCD
+- Hugging Face: https://huggingface.co/Teleeeeeeeeeee/LEGO-SCD
 - Paper (arXiv): https://arxiv.org/abs/2610.28490
 - Codigo (GitHub): https://github.com/changruizhu96/LEGO-SCD
 - Pagina del proyecto: https://changruizhu96.github.io/work/lego-scd/

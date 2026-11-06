@@ -85,7 +85,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sahilchachra/MiniCPM5-2B-OptiQ-5bpw
+- Repositorio Hugging Face: https://huggingface.co/sahilchachra/MiniCPM5-2B-OptiQ-5bpw
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Variante MXFP4: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP4
 - Variante MXFP8: https://huggingface.co/sahilchachra/MiniCPM5-2B-MXFP8

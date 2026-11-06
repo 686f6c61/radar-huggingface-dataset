@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReCon (recon.modelnet40-8k.zekun-qi) es un modelo de clasificación de nubes de puntos 3D desarrollado originalmente por Zekun Qi y colaboradores (Universidad de Shanghai Jiao Tong y Shanghai AI Laboratory) y publicado en ICML 2023 bajo el título "Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining". Esta versión concreta ha sido convertida al ecosistema torch-pointcloud por Arthur Dujardin, empaquetada en formato safetensors y publicada en HuggingFace con licencia MIT.
+ReCon (recon.modelnet40-8k.zekun-qi) es un modelo de clasificación de nubes de puntos 3D desarrollado originalmente por Zekun Qi y colaboradores (Universidad de Shanghai Jiao Tong y Shanghai AI Laboratory) y publicado en ICML 2023 bajo el título "Contrast with Reconstruct: Contrastive 3D Representation Learning Guided by Generative Pretraining". Esta versión concreta ha sido convertida al ecosistema torch-pointcloud por Arthur Dujardin, empaquetada en formato safetensors y publicada en Hugging Face con licencia MIT.
 
 El modelo parte de un backbone de tipo masked point transformer con consultas contrastivas multimodales (cross-modal contrastive queries), preentrenado de forma autosupervisada y posteriormente afinado para la tarea de clasificación de 40 clases del dataset ModelNet40. Con 43,6 millones de parámetros y un vector de características de 1536 dimensiones, está pensado para trabajar con nubes de puntos de 8192 puntos con normales, aunque la transformación del pipeline puede remuestrear la entrada.
 
@@ -70,7 +70,7 @@ No se han publicado en la informacion disponible otros resultados (latencia, thr
 
 | Modelo | Parametros | Entrada | ModelNet40 OA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ReCon (este checkpoint) | 43,6 M | 8192 puntos + normales | 94,25 (declarado) | MIT | HuggingFace, torch-pointcloud |
+| ReCon (este checkpoint) | 43,6 M | 8192 puntos + normales | 94,25 (declarado) | MIT | Hugging Face, torch-pointcloud |
 | PointNet++ | ~1,5 M (según configuracion) | 1024-8192 puntos | ~91-93 (referencia de la literatura) | MIT | Implementaciones multiples |
 | Point Transformer (v1) | ~7 M (clasificacion) | 1024 puntos | ~93,7 (referencia de la literatura) | MIT | Repos oficiales |
 | DGCNN | ~1,8 M | 1024 puntos | ~92,9 (referencia de la literatura) | MIT | Repos oficiales |
@@ -90,7 +90,7 @@ Nota: los valores de los modelos alternativos son cifras de referencia habituale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/recon.modelnet40-8k.zekun-qi
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/recon.modelnet40-8k.zekun-qi
 - Paper ReCon (ICML 2023): https://arxiv.org/abs/2302.02318
 - Repositorio original ReCon: https://github.com/qizekun/ReCon
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -6,7 +6,7 @@ El modelo `mradermacher/zora-v1.12-i1-GGUF` es una cuantización en formato GGUF
 
 El modelo base está diseñado para tareas conversacionales y de generación de texto en un conjunto de 12 idiomas: serbio, croata, bosnio, macedonio, esloveno, albanés, montenegrino, búlgaro, griego, turco, rumano y húngaro. Su licencia Apache-2.0 permite uso comercial sin restricciones significativas. La relevancia de esta versión cuantizada radica en que facilita el despliegue local en entornos con recursos limitados, manteniendo un equilibrio entre tamaño, velocidad y calidad.
 
-Al tratarse de un repositorio exclusivamente de cuantizaciones, no se incluyen detalles sobre la arquitectura interna ni el proceso de entrenamiento del modelo original. La información disponible se limita a los metadatos de HuggingFace y a la tabla de archivos GGUF proporcionada por el autor de la cuantización.
+Al tratarse de un repositorio exclusivamente de cuantizaciones, no se incluyen detalles sobre la arquitectura interna ni el proceso de entrenamiento del modelo original. La información disponible se limita a los metadatos de Hugging Face y a la tabla de archivos GGUF proporcionada por el autor de la cuantización.
 
 ## Especificaciones tecnicas
 
@@ -70,4 +70,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Repositorio de la cuantización: https://huggingface.co/mradermacher/zora-v1.12-i1-GGUF
 - Modelo base: https://huggingface.co/sovasoft/zora-v1.12
 - Cuantización estática (sin imatrix): https://huggingface.co/mradermacher/zora-v1.12-GGUF
-- Página de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Página de mradermacher en Hugging Face: https://huggingface.co/mradermacher

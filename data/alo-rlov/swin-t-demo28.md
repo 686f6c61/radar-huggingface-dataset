@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alo-rlov/swin-t-demo28` es un repositorio experimental de HuggingFace que contiene una implementación funcional de una Swin Transformer (Swin T) en configuración "nano", orientada a tareas de *matching* (emparejamiento o comparación de imágenes). Lo publica el usuario `alo-rlov` bajo licencia Apache 2.0. No es un modelo entrenado para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint con benchmarks, y que el repositorio prioriza código transparente y pruebas repetibles antes que resultados de rendimiento.
+`alo-rlov/swin-t-demo28` es un repositorio experimental de Hugging Face que contiene una implementación funcional de una Swin Transformer (Swin T) en configuración "nano", orientada a tareas de *matching* (emparejamiento o comparación de imágenes). Lo publica el usuario `alo-rlov` bajo licencia Apache 2.0. No es un modelo entrenado para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un checkpoint con benchmarks, y que el repositorio prioriza código transparente y pruebas repetibles antes que resultados de rendimiento.
 
 El dato más llamativo es la escala: el checkpoint en safetensors contiene 16.576 parámetros totales, un tamaño tres órdenes de magnitud inferior al de una Swin-T estándar. Esto es coherente con la etiqueta "nano", pero implica que la capacidad de representación es mínima y que el repositorio debe interpretarse como andamiaje reproducible (script de evaluación, `config.json`, `training_args.json`) más que como un modelo utilizable con precisión realista.
 
@@ -21,7 +21,7 @@ Su relevancia ahora es limitada y muy específica: sirve como plantilla mínima 
 | Licencia | Apache 2.0 |
 | Formato de pesos | `safetensors` (PyTorch); artefactos adicionales: `eval.py`, `config.json`, `training_args.json` |
 | Tarea declarada | *Matching* (emparejamiento de imágenes) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 0,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -79,7 +79,7 @@ No hay datos verificables de alternativas en la información proporcionada (la b
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `alo-rlov/swin-t-demo28` | 16.576 | No disponible | *Matching* | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| `alo-rlov/swin-t-demo28` | 16.576 | No disponible | *Matching* | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Swin-T estándar (referencia arquitectónica, p. ej. `microsoft/swin-tiny-patch4-window7-224`) | No disponible en la información proporcionada (escala muy superior a la variante "nano") | No disponible | Clasificación / *backbone* de visión | No disponible en la información proporcionada | No verificado en la búsqueda realizada |
 | Otros checkpoints de *matching* basados en Swin | No disponible | No disponible | *Matching* | No disponible | No disponible |
 
@@ -88,7 +88,7 @@ No hay datos verificables de alternativas en la información proporcionada (la b
 - El checkpoint es una inicialización, no un modelo entrenado: no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, según el propio autor.
 - No hay benchmarks ni métricas de tarea publicadas; cualquier afirmación de calidad carecería de respaldo.
 - Con 16.576 parámetros, la capacidad de representación es mínima; es esperable un rendimiento muy bajo en *matching* real incluso tras un ajuste ligero.
-- Implementación personalizada: requiere adaptador explícito para APIs de carga automática; no hay `pipeline` declarado en HuggingFace.
+- Implementación personalizada: requiere adaptador explícito para APIs de carga automática; no hay `pipeline` declarado en Hugging Face.
 - Sin documentación de datos de entrenamiento, por lo que no pueden evaluarse sesgos de dataset ni riesgos de dominio.
 - En tareas de *matching* el riesgo relevante no es la alucinación de texto, sino los falsos positivos y falsos negativos en la comparación de pares; con este checkpoint no es posible caracterizar esa tasa.
 - No hay información sobre idiomas ni sobre resolución o tamaño de imagen soportado; el `config.json` del repositorio es la única fuente para esos parámetros.
@@ -98,5 +98,5 @@ No hay datos verificables de alternativas en la información proporcionada (la b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alo-rlov/swin-t-demo28
+- Hugging Face: https://huggingface.co/alo-rlov/swin-t-demo28
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog, repositorio de código o demo). Los resultados devueltos corresponden a sitios comerciales sin relación (Alo Yoga, cotización bursátil de Alstom), por lo que se descartan.

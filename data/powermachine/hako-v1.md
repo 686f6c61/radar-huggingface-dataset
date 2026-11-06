@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HAKO-v1 es un modelo de lenguaje presentado por el usuario PowerMachine en HuggingFace, descrito como un "orquestador híbrido de atención" que combina múltiples mecanismos: mapas autoorganizados de Kohonen (GHSOM, CPNN, BKN, DASOM), atención cruzada tipo MoE, razonamiento con GNN en árbol, recursión encadenada con fusión beta, una capa generativa basada en difusión y un orquestador de pensamiento cíclico. El modelo se construye sobre dos fuentes congeladas y cuantizadas: AMD Qwen2.5-0.5B en formato int4 ONNX y AMD granite-4.0-1b en AWQ grp32 ONNX, cuyos pesos se descomponen en componentes internos.
+HAKO-v1 es un modelo de lenguaje presentado por el usuario PowerMachine en Hugging Face, descrito como un "orquestador híbrido de atención" que combina múltiples mecanismos: mapas autoorganizados de Kohonen (GHSOM, CPNN, BKN, DASOM), atención cruzada tipo MoE, razonamiento con GNN en árbol, recursión encadenada con fusión beta, una capa generativa basada en difusión y un orquestador de pensamiento cíclico. El modelo se construye sobre dos fuentes congeladas y cuantizadas: AMD Qwen2.5-0.5B en formato int4 ONNX y AMD granite-4.0-1b en AWQ grp32 ONNX, cuyos pesos se descomponen en componentes internos.
 
-El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de dimensiones reducidas, pero no se publican datos concretos sobre número de parámetros, contexto, licencia o idiomas. La model card incluye una descripción matemática extensa y un conjunto de pruebas numéricas, pero carece de información práctica para su evaluación. No se han encontrado resultados de benchmarks ni documentación adicional fuera de la propia ficha de HuggingFace.
+El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de dimensiones reducidas, pero no se publican datos concretos sobre número de parámetros, contexto, licencia o idiomas. La model card incluye una descripción matemática extensa y un conjunto de pruebas numéricas, pero carece de información práctica para su evaluación. No se han encontrado resultados de benchmarks ni documentación adicional fuera de la propia ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: PowerMachine/HAKO-v1](https://huggingface.co/PowerMachine/HAKO-v1)
+- [Hugging Face: PowerMachine/HAKO-v1](https://huggingface.co/PowerMachine/HAKO-v1)
 - No se han encontrado papers, repositorios oficiales o demos adicionales. Los resultados de búsqueda web sobre "hako" corresponden a proyectos no relacionados (un runner de agentes y un editor de código).

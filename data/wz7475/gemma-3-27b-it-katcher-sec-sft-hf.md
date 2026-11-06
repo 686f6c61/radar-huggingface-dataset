@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/gemma-3-27b-it-katcher-sec-sft-hf` es un modelo publicado en HuggingFace por el usuario `wz7475` bajo la librería `transformers`. El propio identificador del repositorio sugiere que se trata de un ajuste fino supervisado (SFT) orientado a seguridad ("sec") sobre el modelo base Gemma 3 27B Instruct ("gemma-3-27b-it"), aunque esta derivación es una inferencia a partir del nombre y no está confirmada en la model card, que se limita a la plantilla automática de HuggingFace con campos "[More Information Needed]" en todas las secciones.
+`wz7475/gemma-3-27b-it-katcher-sec-sft-hf` es un modelo publicado en Hugging Face por el usuario `wz7475` bajo la librería `transformers`. El propio identificador del repositorio sugiere que se trata de un ajuste fino supervisado (SFT) orientado a seguridad ("sec") sobre el modelo base Gemma 3 27B Instruct ("gemma-3-27b-it"), aunque esta derivación es una inferencia a partir del nombre y no está confirmada en la model card, que se limita a la plantilla automática de Hugging Face con campos "[More Information Needed]" en todas las secciones.
 
 El repositorio presenta un tamaño de solo 0,9 GB, lo que resulta incompatible con los pesos completos de un modelo de 27 000 millones de parámetros en `safetensors` (que en bf16 ocuparían del orden de 54 GB). Esto apunta a que el contenido publicado podría ser un adaptador LoRA, un subconjunto parcial de pesos o un checkpoint incompleto, si bien no hay documentación en la ficha que lo aclare. La licencia, los idiomas soportados, la pipeline y el pipeline tag aparecen como "no disponible".
 
@@ -37,9 +37,9 @@ Datos adicionales verificables del repositorio:
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura. Todas las secciones relevantes ("Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters") contienen únicamente el marcador "[More Information Needed]" de la plantilla automática de HuggingFace. La única pista es el identificador del repositorio, `gemma-3-27b-it-katcher-sec-sft-hf`, que sugiere un ajuste fino supervisado (SFT) sobre Gemma 3 27B Instruct con algún tipo de especialización en seguridad ("katcher-sec"). No hay evidencia publicada de la composición del dataset, del número de tokens de entrenamiento, ni de si se aplicaron técnicas de alineación adicionales como RLHF o DPO.
+La model card no describe la arquitectura. Todas las secciones relevantes ("Model Architecture and Objective", "Training Data", "Training Procedure", "Training Hyperparameters") contienen únicamente el marcador "[More Information Needed]" de la plantilla automática de Hugging Face. La única pista es el identificador del repositorio, `gemma-3-27b-it-katcher-sec-sft-hf`, que sugiere un ajuste fino supervisado (SFT) sobre Gemma 3 27B Instruct con algún tipo de especialización en seguridad ("katcher-sec"). No hay evidencia publicada de la composición del dataset, del número de tokens de entrenamiento, ni de si se aplicaron técnicas de alineación adicionales como RLHF o DPO.
 
-La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, y forma parte del texto por defecto de la plantilla de model card de HuggingFace; no implica ninguna innovación arquitectónica del modelo. No se documentan mecanismos como decodificación especulativa, atención lineal ni rutas híbridas. En resumen, no es posible describir la arquitectura ni el proceso de entrenamiento con la información disponible.
+La etiqueta `arxiv:1910.09700` que aparece en el repositorio corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en aprendizaje automático, y forma parte del texto por defecto de la plantilla de model card de Hugging Face; no implica ninguna innovación arquitectónica del modelo. No se documentan mecanismos como decodificación especulativa, atención lineal ni rutas híbridas. En resumen, no es posible describir la arquitectura ni el proceso de entrenamiento con la información disponible.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento que permitan comparar con alternativas de 
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace y no aporta información sobre arquitectura, datos, entrenamiento ni evaluación.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face y no aporta información sobre arquitectura, datos, entrenamiento ni evaluación.
 - Inconsistencia de tamaño: el repositorio ocupa 0,9 GB, muy por debajo de lo esperable para un modelo de 27B, lo que impide garantizar que los pesos publicados sean completos y funcionales.
 - Riesgo de licencia: la licencia no está declarada en el repositorio. No se puede asumir uso comercial ni redistribución sin verificar la licencia del modelo base (Gemma 3 tiene su propia licencia con condiciones específicas) y del propio ajuste.
 - Procedencia no verificable: no se indica quién ha realizado el ajuste, con qué datos ni con qué metodología, por lo que no hay garantía sobre la calidad, la ausencia de sesgos ni la seguridad del modelo.
@@ -102,6 +102,6 @@ No se dispone de datos de rendimiento que permitan comparar con alternativas de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-sec-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/gemma-3-27b-it-katcher-sec-sft-hf
 - Articulo referenciado por la etiqueta `arxiv:1910.09700` (Lacoste et al., estimacion de emisiones de carbono, incluido por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales especificos de este modelo.

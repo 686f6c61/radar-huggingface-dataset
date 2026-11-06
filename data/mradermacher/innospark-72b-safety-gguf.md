@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Innospark-72b-safety-GGUF es una cuantización en formato GGUF del modelo de lenguaje Innospark-72b-safety, desarrollado por ZeroLoss-Lab. Según los metadatos de HuggingFace, el modelo base está relacionado con la familia Qwen2.5-72B, aunque no se proporcionan detalles adicionales sobre su arquitectura o entrenamiento. Esta versión cuantizada, publicada por mradermacher, tiene como objetivo facilitar la ejecución del modelo en hardware con recursos limitados, reduciendo el tamaño de los pesos mediante cuantización estática.
+Innospark-72b-safety-GGUF es una cuantización en formato GGUF del modelo de lenguaje Innospark-72b-safety, desarrollado por ZeroLoss-Lab. Según los metadatos de Hugging Face, el modelo base está relacionado con la familia Qwen2.5-72B, aunque no se proporcionan detalles adicionales sobre su arquitectura o entrenamiento. Esta versión cuantizada, publicada por mradermacher, tiene como objetivo facilitar la ejecución del modelo en hardware con recursos limitados, reduciendo el tamaño de los pesos mediante cuantización estática.
 
 La relevancia de esta ficha radica en que permite a desarrolladores e investigadores evaluar rápidamente si esta cuantización es adecuada para sus necesidades de inferencia local, especialmente en entornos donde no se dispone de GPUs de gran capacidad. El repositorio incluye únicamente un archivo GGUF en cuantización Q4_K_S, que ocupa aproximadamente 44 GB, lo que lo hace viable para GPUs con al menos 48 GB de VRAM.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que permite a desarrolladores e investigad
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento. Los tags de HuggingFace indican que se trata de un modelo causal de lenguaje (causal-lm) basado en Qwen2.5-72B, y que se ha utilizado aprendizaje por refuerzo con retroalimentación humana (RLHF) como parte del pipeline, pero no se especifican datos concretos como número de tokens de entrenamiento, composición del dataset o técnicas adicionales.
+No se dispone de información detallada sobre la arquitectura interna del modelo base ni sobre su proceso de entrenamiento. Los tags de Hugging Face indican que se trata de un modelo causal de lenguaje (causal-lm) basado en Qwen2.5-72B, y que se ha utilizado aprendizaje por refuerzo con retroalimentación humana (RLHF) como parte del pipeline, pero no se especifican datos concretos como número de tokens de entrenamiento, composición del dataset o técnicas adicionales.
 
 Esta versión GGUF es una cuantización estática realizada por mradermacher sobre los pesos originales del modelo ZeroLoss-Lab/Innospark-72b-safety. No se proporcionan detalles sobre el proceso de cuantización más allá de que se trata de una conversión estática.
 
@@ -58,5 +58,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Innospark-72b-safety-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Innospark-72b-safety-GGUF
 - Modelo base: https://huggingface.co/ZeroLoss-Lab/Innospark-72b-safety

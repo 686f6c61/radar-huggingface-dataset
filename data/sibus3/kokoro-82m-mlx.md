@@ -74,7 +74,7 @@ Las tres variantes comparten los mismos pesos y arquitectura; la diferencia radi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sibus3/Kokoro-82M-mlx
+- Repositorio Hugging Face: https://huggingface.co/sibus3/Kokoro-82M-mlx
 - Modelo original (hexgrad): https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio GitHub de inferencia MLX: https://github.com/gabrimatic/kokoro-mlx
 - Repositorio GitHub del modelo original: https://github.com/hexgrad/kokoro

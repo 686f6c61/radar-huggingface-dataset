@@ -70,10 +70,10 @@ No se disponen de datos de modelos comparables en la informacion proporcionada. 
 - El modelo solo esta descrito para wolof; no se ha verificado su comportamiento en otros idiomas ni su capacidad para generalizar a acentos no entrenados.
 - El repositorio tiene cero descargas y cero likes, lo que sugiere que es un modelo experimental sin validacion externa.
 - Pueden producirse errores de pronunciacion o artefactos en el habla, especialmente en textos con ortografia ambigua o en acentos no cubiertos por el entrenamiento.
-- Los resultados de la busqueda web no aportan informacion adicional relevante; esta ficha se basa exclusivamente en la model card y los metadatos de HuggingFace.
+- Los resultados de la busqueda web no aportan informacion adicional relevante; esta ficha se basa exclusivamente en la model card y los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_e5wd05_12hz_lora-r16_s42_20260909_181516
+- Modelo en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_e5wd05_12hz_lora-r16_s42_20260909_181516
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Libreria PEFT (Hugging Face): https://github.com/huggingface/peft

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wondolls/younga20lite` es un modelo publicado en HuggingFace por el usuario `wondolls`, con licencia declarada como `unknown` y sin model card descriptiva: el README únicamente contiene el campo de licencia, sin texto adicional. El repositorio se creó el 22 de octubre de 2026 y se actualizó dos minutos después, lo que indica una publicación sin iteraciones posteriores documentadas. No consta pipeline declarado, ni idiomas soportados, ni etiquetas que identifiquen arquitectura, familia o tarea.
+`wondolls/younga20lite` es un modelo publicado en Hugging Face por el usuario `wondolls`, con licencia declarada como `unknown` y sin model card descriptiva: el README únicamente contiene el campo de licencia, sin texto adicional. El repositorio se creó el 22 de octubre de 2026 y se actualizó dos minutos después, lo que indica una publicación sin iteraciones posteriores documentadas. No consta pipeline declarado, ni idiomas soportados, ni etiquetas que identifiquen arquitectura, familia o tarea.
 
 La información disponible no permite determinar la arquitectura, el número de parámetros, la longitud de contexto ni el proceso de entrenamiento. El tamaño del repositorio es de 0,1 GB, un dato objetivo que sugiere pesos de pequeño tamaño (compatible con un modelo de menos de unos cientos de millones de parámetros en precisión reducida, o con un conjunto de pesos parcial), pero no se ha publicado ninguna especificación que lo confirme.
 
@@ -65,7 +65,7 @@ No disponible. No es posible establecer comparaciones sin conocer el número de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos |
 |---|---|---|---|---|---|
-| wondolls/younga20lite | no disponible | no disponible | unknown | HuggingFace | 0,1 GB de repo |
+| wondolls/younga20lite | no disponible | no disponible | unknown | Hugging Face | 0,1 GB de repo |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No disponible. No es posible establecer comparaciones sin conocer el número de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wondolls/younga20lite
+- Hugging Face: https://huggingface.co/wondolls/younga20lite
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

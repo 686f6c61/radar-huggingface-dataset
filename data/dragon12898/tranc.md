@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `DRAGON12898/tranc` en HuggingFace no contiene información pública que permita identificar el modelo. No se especifican arquitectura, parámetros, licencia, idiomas ni pipeline de uso. El repositorio fue creado el 17 de agosto de 2026 y no ha recibido actualizaciones posteriores, con cero descargas y una única interacción (like). Los resultados de búsqueda web relacionados con generación de modelos 3D, rigging automático o creación de avatares no guardan relación con este identificador, por lo que no se puede inferir ninguna capacidad técnica a partir de ellos.
+El repositorio `DRAGON12898/tranc` en Hugging Face no contiene información pública que permita identificar el modelo. No se especifican arquitectura, parámetros, licencia, idiomas ni pipeline de uso. El repositorio fue creado el 17 de agosto de 2026 y no ha recibido actualizaciones posteriores, con cero descargas y una única interacción (like). Los resultados de búsqueda web relacionados con generación de modelos 3D, rigging automático o creación de avatares no guardan relación con este identificador, por lo que no se puede inferir ninguna capacidad técnica a partir de ellos.
 
 Dado que no existe documentación, archivos de pesos, configuración o ejemplos de uso, cualquier evaluación técnica resulta imposible. Se recomienda contactar con el autor o consultar el repositorio directamente para obtener información adicional.
 
@@ -57,4 +57,4 @@ No disponible. Al no existir información técnica sobre `DRAGON12898/tranc`, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DRAGON12898/tranc
+- Repositorio en Hugging Face: https://huggingface.co/DRAGON12898/tranc

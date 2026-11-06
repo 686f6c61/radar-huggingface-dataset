@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jeesup/svdsafety_l2_delta_basis` no es un modelo generativo, sino un artefacto de investigación publicado en HuggingFace que contiene las subespacios singulares dominantes de la diferencia de pesos `dW = W_chat - W_base` entre `meta-llama/Llama-2-7b-chat-hf` y `meta-llama/Llama-2-7b-hf`. El autor, Jeesup, calcula mediante SVD aleatorizado (con `q = k + 16` y 8 iteraciones de potencia) las k primeras direcciones singulares de las 224 matrices de proyección de Llama-2-7b (7 proyecciones por cada una de las 32 capas), y las distribuye junto con metadatos espectrales y resultados de ablación.
+`Jeesup/svdsafety_l2_delta_basis` no es un modelo generativo, sino un artefacto de investigación publicado en Hugging Face que contiene las subespacios singulares dominantes de la diferencia de pesos `dW = W_chat - W_base` entre `meta-llama/Llama-2-7b-chat-hf` y `meta-llama/Llama-2-7b-hf`. El autor, Jeesup, calcula mediante SVD aleatorizado (con `q = k + 16` y 8 iteraciones de potencia) las k primeras direcciones singulares de las 224 matrices de proyección de Llama-2-7b (7 proyecciones por cada una de las 32 capas), y las distribuye junto con metadatos espectrales y resultados de ablación.
 
 La relevancia del artefacto está en su hallazgo central: la actualización de alineación que convierte el modelo base en el modelo de chat es estructurada pero no de rango bajo. Las 64 direcciones principales concentran solo el 15,3 % de la energía de Frobenius de `dW`, frente al 3,9-5,8 % que esperaría una matriz gaussiana i.i.d. del mismo tamaño (unas 3-4 veces más concentración que el azar). Aun así, eliminar exactamente esas 64 direcciones principales degrada la tasa de rechazo de peticiones dañinas del 99,4 % al 83,1 % y eleva la tasa de éxito de ataque (ASR) en AdvBench del 0,19 % al 9,62 %, con la misma perturbación de Frobenius que controles que eliminan las 64 direcciones inferiores o 64 direcciones aleatorias.
 
@@ -125,7 +125,7 @@ Comparativa con alternativas de la misma categoria (artefactos de analisis de su
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_delta_basis
+- Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_delta_basis
 - Modelo base (chat): https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Modelo base (preentrenado): https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Juez de evaluacion: https://huggingface.co/cais/HarmBench-Llama-2-13b-cls

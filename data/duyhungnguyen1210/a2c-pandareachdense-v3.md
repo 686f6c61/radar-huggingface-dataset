@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo A2C (Advantage Actor-Critic) para resolver el entorno PandaReachDense-v3, un problema de control robótico en el que un brazo Franka Emika Panda debe desplazar su efector final hasta una posición objetivo. Fue desarrollado por duyhungnguyen1210 utilizando la librería stable-baselines3 y publicado en HuggingFace Hub.
+Este modelo es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo A2C (Advantage Actor-Critic) para resolver el entorno PandaReachDense-v3, un problema de control robótico en el que un brazo Franka Emika Panda debe desplazar su efector final hasta una posición objetivo. Fue desarrollado por duyhungnguyen1210 utilizando la librería stable-baselines3 y publicado en Hugging Face Hub.
 
 El entorno PandaReachDense-v3 pertenece a la suite Gymnasium Robotics y emplea una función de recompensa densa, lo que proporciona una señal de recompensa continua basada en la distancia al objetivo. A2C es un método de gradiente de políticas que combina una red de actor (política) y una red de crítico (función de valor) para aprender la política de control en un espacio de acciones continuo.
 
@@ -41,7 +41,7 @@ No se dispone de información sobre el número de pasos de entrenamiento, el tam
 
 - Investigación en aprendizaje por refuerzo para manipulación robótica: el modelo sirve como punto de partida para estudiar el comportamiento de A2C en tareas de alcance robótico y compararlo con otros algoritmos como PPO, SAC o DQN en el mismo entorno.
 - Benchmarking de algoritmos RL: permite comparar el rendimiento de A2C frente a otros métodos utilizando la recompensa media como métrica de referencia, siempre que se evalúen bajo las mismas condiciones.
-- Educación en RL: el modelo puede utilizarse en cursos y tutoriales para demostrar el flujo completo de entrenamiento, guardado y carga de un agente A2C con stable-baselines3 y HuggingFace Hub.
+- Educación en RL: el modelo puede utilizarse en cursos y tutoriales para demostrar el flujo completo de entrenamiento, guardado y carga de un agente A2C con stable-baselines3 y Hugging Face Hub.
 - Fine-tuning para tareas similares: el modelo preentrenado puede servir como inicialización para entrenar agentes en entornos relacionados de la suite Gymnasium Robotics, como PandaPushDense-v3 o PandaPickAndPlace-v3.
 - Investigación en sim-to-real: el agente entrenado en simulación puede utilizarse como referencia para estudiar la transferencia de políticas a robots físicos, aunque se requeriría validación adicional.
 - Evaluación de funciones de recompensa: el modelo permite analizar cómo la recompensa densa del entorno afecta al aprendizaje y al rendimiento final del agente, comparando con variantes de recompensa dispersa.
@@ -80,6 +80,6 @@ No se dispone de datos comparativos con otros algoritmos (PPO, SAC, DQN, etc.) e
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/duyhungnguyen1210/a2c-PandaReachDense-v3
+- Página del modelo en Hugging Face: https://huggingface.co/duyhungnguyen1210/a2c-PandaReachDense-v3
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Librería huggingface_sb3: https://github.com/huggingface/huggingface_sb3

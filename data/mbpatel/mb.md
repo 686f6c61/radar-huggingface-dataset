@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mbpatel/Mb es un modelo publicado en HuggingFace por el usuario Mbpatel el 31 de octubre de 2026. La model card asociada es prácticamente vacía: se limita a una cabecera YAML con la declaración de licencia y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. No hay información pública sobre su propósito, su rendimiento ni su procedencia técnica.
+Mbpatel/Mb es un modelo publicado en Hugging Face por el usuario Mbpatel el 31 de octubre de 2026. La model card asociada es prácticamente vacía: se limita a una cabecera YAML con la declaración de licencia y no incluye descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. No hay información pública sobre su propósito, su rendimiento ni su procedencia técnica.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de una publicación reciente sin tracción comunitaria o de un artefacto de prueba. El pipeline no está declarado y no se especifican idiomas soportados. Los únicos metadatos técnicos disponibles son la licencia (declarada como apache-2.0 en el campo `license_name`, aunque el campo `license` indica `other`) y la región de despliegue (`us`).
 
@@ -34,7 +34,7 @@ La ausencia de documentación técnica impide verificar cualquier innovación de
 - No consta soporte declarado de agentes ni razonamiento multi-paso.
 - No consta información sobre capacidades multilingües.
 - No consta información sobre modos especiales (thinking mode, visión, audio, etc.).
-- El pipeline de HuggingFace no está declarado, por lo que no se puede confirmar siquiera que sea un modelo de generación de texto.
+- El pipeline de Hugging Face no está declarado, por lo que no se puede confirmar siquiera que sea un modelo de generación de texto.
 
 ## Casos de uso
 
@@ -73,5 +73,5 @@ No disponible. Sin información sobre arquitectura, tamaño, contexto o rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mbpatel/Mb
+- Hugging Face: https://huggingface.co/Mbpatel/Mb
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

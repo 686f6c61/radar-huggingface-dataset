@@ -90,7 +90,7 @@ El modelo NeMo cargado con estos pesos reproduce exactamente las transcripciones
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrfakename/phonon-2.5-english-webgpu-weights
+- Repositorio Hugging Face: https://huggingface.co/mrfakename/phonon-2.5-english-webgpu-weights
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2.5-English
 - Arquitectura de referencia: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Demo en navegador: https://huggingface.co/spaces/mrfakename/phonon-2.5-english-webgpu

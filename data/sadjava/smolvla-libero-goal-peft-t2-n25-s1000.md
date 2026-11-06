@@ -64,5 +64,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [sadjava/smolvla-libero-goal-peft-t2-n25-s1000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n25-s1000)
+- Repositorio Hugging Face: [sadjava/smolvla-libero-goal-peft-t2-n25-s1000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n25-s1000)
 - Artículo de LoRA (referenciado en los tags): [arXiv:1910.09700](https://arxiv.org/abs/1910.09700)

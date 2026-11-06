@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Krea-2-Lucas-Wash es un adaptador LoRA para generación de imágenes a partir de texto (text-to-image), publicado por el usuario KeweiXu en HuggingFace. El modelo se basa en Krea-2-Raw, el modelo base de difusión desarrollado por Krea, y añade un ajuste especializado orientado a la ilustración de estilo anime. No es un modelo completo, sino un adaptador de pesos ligeros (aproximadamente 0,2 GB de tamaño de repositorio) que se aplica sobre el modelo base mediante la librería diffusers.
+Krea-2-Lucas-Wash es un adaptador LoRA para generación de imágenes a partir de texto (text-to-image), publicado por el usuario KeweiXu en Hugging Face. El modelo se basa en Krea-2-Raw, el modelo base de difusión desarrollado por Krea, y añade un ajuste especializado orientado a la ilustración de estilo anime. No es un modelo completo, sino un adaptador de pesos ligeros (aproximadamente 0,2 GB de tamaño de repositorio) que se aplica sobre el modelo base mediante la librería diffusers.
 
 El propósito del adaptador es modificar el estilo de las salidas de Krea-2-Raw hacia estéticas de anime e ilustración, permitiendo a creadores y desarrolladores generar imágenes con ese acabado sin necesidad de reentrenar el modelo completo. Es compatible con flujos de trabajo habituales de la comunidad, incluyendo diffusers y ComfyUI, y el repositorio menciona también compatibilidad con DiffSynth.
 
-Su relevancia reside en la popularidad del enfoque LoRA para personalizar modelos de difusión: permite obtener estilos específicos con un coste de almacenamiento y despliegue mínimo, reutilizando la infraestructura y capacidades del modelo base Krea-2-Raw. Cabe señalar que el repositorio es de acceso restringido (gated) y requiere aceptar las condiciones de la licencia krea-2-community-license en HuggingFace antes de poder descargar los pesos.
+Su relevancia reside en la popularidad del enfoque LoRA para personalizar modelos de difusión: permite obtener estilos específicos con un coste de almacenamiento y despliegue mínimo, reutilizando la infraestructura y capacidades del modelo base Krea-2-Raw. Cabe señalar que el repositorio es de acceso restringido (gated) y requiere aceptar las condiciones de la licencia krea-2-community-license en Hugging Face antes de poder descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se ha publicado informacion sobre el dataset de entrenamiento, el numero de p
 - Generacion de imagenes a partir de texto (pipeline text-to-image) aplicada sobre Krea-2-Raw.
 - Estilizacion hacia anime e ilustracion, modificando la estetica de las salidas del modelo base.
 - Soporte de prompts en ingles y chino, segun los idiomas declarados en el repositorio.
-- Integracion con la libreria diffusers de HuggingFace.
+- Integracion con la libreria diffusers de Hugging Face.
 - Compatibilidad con ComfyUI para flujos de trabajo nodales.
 - Mencion de compatibilidad con DiffSynth.
 - Al ser un LoRA, permite combinarse con otros adaptadores y ajustar su intensidad (peso del LoRA) en tiempo de inferencia.
@@ -63,15 +63,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Tipo | Tamano | Estilo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KeweiXu/Krea-2-Lucas-Wash | LoRA sobre Krea-2-Raw | ~0,2 GB | anime, ilustracion | krea-2-community-license | Gated en HuggingFace |
-| krea/Krea-2-Raw | Modelo base text-to-image | no disponible | fotografico/raw (según denominacion) | krea-2-community-license | Gated en HuggingFace |
-| LoRAs anime sobre SDXL (p. ej. adaptadores comunitarios) | LoRA sobre SDXL | ~0,1-0,5 GB tipico | anime | variable (muchos CreativeML/OpenRAIL) | Abierta en HuggingFace/Civitai |
+| KeweiXu/Krea-2-Lucas-Wash | LoRA sobre Krea-2-Raw | ~0,2 GB | anime, ilustracion | krea-2-community-license | Gated en Hugging Face |
+| krea/Krea-2-Raw | Modelo base text-to-image | no disponible | fotografico/raw (según denominacion) | krea-2-community-license | Gated en Hugging Face |
+| LoRAs anime sobre SDXL (p. ej. adaptadores comunitarios) | LoRA sobre SDXL | ~0,1-0,5 GB tipico | anime | variable (muchos CreativeML/OpenRAIL) | Abierta en Hugging Face/Civitai |
 
 La principal diferencia frente a LoRAs sobre SDXL o Flux es el modelo base subyacente: este adaptador hereda las capacidades y requisitos de Krea-2-Raw, mientras que los LoRAs de SDXL dependen de Stable Diffusion XL. La licencia comunitaria de Krea puede imponer condiciones distintas a las licencias abiertas de la familia SD.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar las condiciones de la krea-2-community-license en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated y exige aceptar las condiciones de la krea-2-community-license en Hugging Face antes de descargar.
 - Restricciones de licencia para uso comercial: al tratarse de una licencia comunitaria (other), es imprescindible revisar sus terminos antes de cualquier despliegue comercial; no se pueden asumir permisos de uso comercial sin verificacion.
 - Dependencia del modelo base: el adaptador no funciona de forma aislada; requiere descargar y ejecutar krea/Krea-2-Raw, lo que implica aceptar tambien sus condiciones y asumir sus requisitos de hardware.
 - Calidad y coherencia no documentadas: no hay ejemplos de salida, metricas ni comparativas publicadas en la informacion disponible, por lo que la calidad del estilo anime debe evaluarse empiricamente.
@@ -82,7 +82,7 @@ La principal diferencia frente a LoRAs sobre SDXL o Flux es el modelo base subya
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KeweiXu/Krea-2-Lucas-Wash
+- Repositorio en Hugging Face: https://huggingface.co/KeweiXu/Krea-2-Lucas-Wash
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

@@ -65,6 +65,6 @@ No disponible. No se han identificado modelos comparables con características e
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/mradermacher/XORTRON-NXTXPRT10PRO-31B-GGUF)
-- [Repositorio HuggingFace de cuantizaciones i1 (imatrix)](https://huggingface.co/mradermacher/XORTRON-NXTXPRT10PRO-31B-i1-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/mradermacher/XORTRON-NXTXPRT10PRO-31B-GGUF)
+- [Repositorio Hugging Face de cuantizaciones i1 (imatrix)](https://huggingface.co/mradermacher/XORTRON-NXTXPRT10PRO-31B-i1-GGUF)
 - [Página del modelo base en FriendliAI](https://friendli.ai/models/darkc0de/XORTRON-NXTXPRT10PRO-31B)

@@ -85,7 +85,7 @@ La informacion proporcionada no incluye datos numericos de otras politicas, por 
 
 | Modelo | Tipo | Parametros | Horizonte / contexto | Rendimiento en AlohaTransferCube | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eqm-aloha_transfer_cube-seed3 (este modelo) | Politica basada en energia (EQM) con denoiser U-Net | 76,4 M | Horizonte 192, `n_action_steps` 96 (16 en evaluacion) | 0,0 % de exito (1 episodio) | Apache-2.0 | HuggingFace (iFaz) |
+| eqm-aloha_transfer_cube-seed3 (este modelo) | Politica basada en energia (EQM) con denoiser U-Net | 76,4 M | Horizonte 192, `n_action_steps` 96 (16 en evaluacion) | 0,0 % de exito (1 episodio) | Apache-2.0 | Hugging Face (iFaz) |
 | ACT (Action Chunking Transformer) | Transformer de prediccion de bloques de acciones | no disponible | no disponible | no disponible | no disponible | Disponible en LeRobot |
 | Diffusion Policy | Politica de difusion | no disponible | no disponible | no disponible | no disponible | Disponible en LeRobot |
 | Otras politicas de LeRobot (pi0, SmolVLA u similares) | VLA / transformer | no disponible | no disponible | no disponible | no disponible | Disponible en LeRobot |
@@ -104,7 +104,7 @@ La informacion proporcionada no incluye datos numericos de otras politicas, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-24sep2026_10am
+- Modelo en Hugging Face: https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-24sep2026_10am
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/aloha_sim_transfer_cube_human
 - LeRobot (framework de entrenamiento y evaluacion): https://github.com/huggingface/lerobot
 - Articulo tecnico sobre EQM: no disponible

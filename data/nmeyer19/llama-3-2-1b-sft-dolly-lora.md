@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`nmeyer19/llama-3.2-1b-sft-dolly-lora` es un modelo publicado en HuggingFace por el usuario nmeyer19 que, a juzgar por su identificador, corresponde a un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base Llama 3.2 de 1.000 millones de parametros, utilizando el dataset Dolly como datos de instrucciones. El repositorio ocupa 1,1 GB y esta etiquetado con la libreria `transformers`, pesos en `safetensors` y compatibilidad con endpoints. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto practicamente sin validacion por parte de la comunidad.
+`nmeyer19/llama-3.2-1b-sft-dolly-lora` es un modelo publicado en Hugging Face por el usuario nmeyer19 que, a juzgar por su identificador, corresponde a un ajuste fino supervisado (SFT) mediante LoRA sobre el modelo base Llama 3.2 de 1.000 millones de parametros, utilizando el dataset Dolly como datos de instrucciones. El repositorio ocupa 1,1 GB y esta etiquetado con la libreria `transformers`, pesos en `safetensors` y compatibilidad con endpoints. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto practicamente sin validacion por parte de la comunidad.
 
-La model card es la plantilla generada automaticamente por HuggingFace y no contiene informacion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". Por tanto, salvo la inferencia razonable a partir del nombre del repositorio, no hay datos verificables sobre el proceso de entrenamiento, el rendimiento ni las condiciones de uso.
+La model card es la plantilla generada automaticamente por Hugging Face y no contiene informacion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". Por tanto, salvo la inferencia razonable a partir del nombre del repositorio, no hay datos verificables sobre el proceso de entrenamiento, el rendimiento ni las condiciones de uso.
 
 Su relevancia es limitada y de caracter experimental: sirve como ejemplo de pipeline de SFT con LoRA sobre un modelo pequeno de la familia Llama 3.2, util para quienes quieran reproducir un flujo de ajuste ligero en hardware de consumo, pero no como modelo de produccion.
 
@@ -59,7 +59,7 @@ Las siguientes estimaciones son orientativas y se basan en el tamano de 1B de pa
 - VRAM estimada para inferencia: aproximadamente 2,5-3 GB en FP16, en torno a 1 GB en cuantizacion de 4 bits (si se generan versiones GGUF, que no estan publicadas).
 - GPU recomendadas: cualquier GPU de consumo con al menos 4 GB de VRAM (por ejemplo, RTX 3050, RTX 3060, RTX 4060) es suficiente en FP16; para servicio en produccion, una NVIDIA T4, L4 o A10 bastaria para varias instancias.
 - Cabe en GPU de consumo: si, en la mayoria de tarjetas modernas con 6 GB o mas de VRAM.
-- Opciones de despliegue: al usar la libreria `transformers` con pesos `safetensors`, se puede servir con HuggingFace Transformers, Text Generation Inference (TGI) o vLLM. La compatibilidad con llama.cpp u Ollama requeriria convertir los pesos a GGUF, algo que no se ofrece en el repositorio.
+- Opciones de despliegue: al usar la libreria `transformers` con pesos `safetensors`, se puede servir con Hugging Face Transformers, Text Generation Inference (TGI) o vLLM. La compatibilidad con llama.cpp u Ollama requeriria convertir los pesos a GGUF, algo que no se ofrece en el repositorio.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmeyer19/llama-3.2-1b-sft-dolly-lora
+- Repositorio en Hugging Face: https://huggingface.co/nmeyer19/llama-3.2-1b-sft-dolly-lora
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental de ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la busqueda web realizada.

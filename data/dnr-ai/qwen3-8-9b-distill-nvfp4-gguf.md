@@ -27,7 +27,7 @@ Como paso de post-procesado, se eliminaron del GGUF los 16 tensores del draft la
 
 ## Capacidades
 
-- Generación de texto conversacional (pipeline etiquetado como conversational en HuggingFace).
+- Generación de texto conversacional (pipeline etiquetado como conversational en Hugging Face).
 - Generación de código, con calibración específica en TypeScript y C#.
 - Escenarios agénticos: la imatrix incluye diálogos JSON agénticos y el rendimiento en prompt processing (9.356 tok/s) está orientado a prompts largos típicos de agentes; el soporte de tool calling no consta explícitamente en la ficha.
 - Buen rendimiento multilingüe orientado al ruso (etiqueta "russian"); el soporte de castellano no está documentado.

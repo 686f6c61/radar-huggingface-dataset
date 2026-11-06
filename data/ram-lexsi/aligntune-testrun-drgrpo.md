@@ -72,7 +72,7 @@ Dado que es un adaptador LoRA, no es directamente comparable con modelos complet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ram-lexsi/aligntune-testrun-DrGRPO
+- Repositorio Hugging Face: https://huggingface.co/ram-lexsi/aligntune-testrun-DrGRPO
 - AlignTune (sitio web): https://aligntune.lexsi.ai/
 - AlignTune (GitHub): https://github.com/Lexsi-Labs/aligntune
 - Documentación de Dr. GRPO: https://aligntune.lexsi.ai/algorithms/dr-grpo/

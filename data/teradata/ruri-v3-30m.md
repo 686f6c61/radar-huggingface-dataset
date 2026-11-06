@@ -81,7 +81,7 @@ No se dispone de informacion suficiente sobre otros modelos comparables de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Teradata/ruri-v3-30m
+- Repositorio Hugging Face del modelo: https://huggingface.co/Teradata/ruri-v3-30m
 - Modelo base original: https://huggingface.co/cl-nagoya/ruri-v3-30m
 - Pagina de benchmarks y despliegue (OpenModelMap): https://openmodelmap.com/model/cl-nagoya/ruri-v3-30m
 - Ficha en ThinkLLM: https://thinkllm.dev/models/ruri-v3-30m

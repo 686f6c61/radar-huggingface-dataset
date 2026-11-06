@@ -115,7 +115,7 @@ No se dispone de comparativas con modelos de otros autores o de otra familia en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AndyInQtr/laya-coreai
+- Modelo en Hugging Face: https://huggingface.co/AndyInQtr/laya-coreai
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Puente de conversion de Apple: https://github.com/apple/coreai-torch
 - Implementacion upstream de Laya: https://github.com/NandhaKishorM/laya

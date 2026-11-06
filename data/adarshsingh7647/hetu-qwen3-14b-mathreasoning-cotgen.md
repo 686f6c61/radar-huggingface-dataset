@@ -80,7 +80,7 @@ No hay datos de rendimiento para comparar. Otras alternativas de fine-tunes para
 
 ## Enlaces
 
-- [HuggingFace - HETU-Qwen3-14B-MathReasoning-CotGen](https://huggingface.co/AdarshSingh7647/HETU-Qwen3-14B-MathReasoning-CotGen)
+- [Hugging Face - HETU-Qwen3-14B-MathReasoning-CotGen](https://huggingface.co/AdarshSingh7647/HETU-Qwen3-14B-MathReasoning-CotGen)
 - [Qwen/Qwen3-14B (modelo base)](https://huggingface.co/Qwen/Qwen3-14B)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [unsloth/Qwen3-14B](https://huggingface.co/unsloth/Qwen3-14B)

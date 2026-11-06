@@ -6,7 +6,7 @@
 
 El modelo parte de `Qwen/Qwen3.5-9B` y se especializa mediante LoRA (r=16, alpha=32, entrenamiento en bf16) para una tarea de etiquetado a nivel de palabra (subtokenización/segmentación), con salida de tipo `token-classification` y foco exclusivo en árabe. Su relevancia es acotada y muy específica: sirve como componente reproducible de un sistema de segmentación con 86,49 de macro-F1 en el *practice test* y 87,0 en el conjunto ciego, no como modelo de propósito general.
 
-Es importante subrayar que el repositorio no contiene un checkpoint en formato HuggingFace, sino un `state_dict` de PyTorch (`best_*.pt`). `from_pretrained` no funciona: hay que reconstruir la arquitectura a partir del YAML de configuración del experimento y del modelo base antes de cargar los pesos. El repositorio ocupa 0,1 GB, coherente con almacenar únicamente los adaptadores y no el modelo base de 9B.
+Es importante subrayar que el repositorio no contiene un checkpoint en formato Hugging Face, sino un `state_dict` de PyTorch (`best_*.pt`). `from_pretrained` no funciona: hay que reconstruir la arquitectura a partir del YAML de configuración del experimento y del modelo base antes de cargar los pesos. El repositorio ocupa 0,1 GB, coherente con almacenar únicamente los adaptadores y no el modelo base de 9B.
 
 ## Especificaciones tecnicas
 
@@ -64,17 +64,17 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - Para la inferencia hay que instanciar además `Qwen/Qwen3.5-9B`. Estimación orientativa para 9.000 millones de parámetros: aproximadamente 18 GB de VRAM en bf16, unos 9 GB en 8 bits y 5-6 GB en 4 bits. Son estimaciones derivadas del tamaño, no cifras publicadas por el autor.
 - GPU recomendadas: A100 40 GB o H100 para servicio en bf16 con margen para el contexto; RTX 4090 (24 GB) para bf16 justo o 8 bits con holgura; RTX 3090, 4080 o 4070 Ti para 8 bits; GPUs de 8-12 GB únicamente con cuantización de 4 bits.
 - Cabe en GPU de consumo: sí, con cuantización (8 bits en 16-24 GB, 4 bits en 8-12 GB), siempre que se reconstruya correctamente la arquitectura.
-- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama no son aplicables directamente, porque el artefacto no es un checkpoint en formato HuggingFace. El despliegue requiere cargar el `state_dict` con PyTorch siguiendo el código del repositorio (`ensemble.py`), con `transformers==5.12.1` en la pila fijada.
+- Opciones de despliegue: vLLM, TGI, llama.cpp u Ollama no son aplicables directamente, porque el artefacto no es un checkpoint en formato Hugging Face. El despliegue requiere cargar el `state_dict` con PyTorch siguiendo el código del repositorio (`ensemble.py`), con `transformers==5.12.1` en la pila fijada.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Contexto | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `araseg-e42-qwen35-9b-nopnx-np` (este modelo) | Miembro de ensemble con LoRA sobre LLM | ~9B base + LoRA r=16 | no disponible | No reproducible de forma aislada | apache-2.0 | Peso `state_dict` en HuggingFace |
-| Sistema `NAMAA-Space/araseg-2026` | Ensemble completo (7 miembros + MEMM) | Agrega varios modelos | no disponible | 86,49 / 87,0 | no disponible | Colección en HuggingFace |
-| Otros miembros del ensemble NoPnx-NP | Miembros individuales del decodificador | no disponible | no disponible | no disponible | no disponible | Colección en HuggingFace |
-| `Qwen/Qwen3.5-9B` (modelo base) | LLM de propósito general | ~9B | no disponible | No aplica (no es un segmentador) | no disponible | HuggingFace |
+| `araseg-e42-qwen35-9b-nopnx-np` (este modelo) | Miembro de ensemble con LoRA sobre LLM | ~9B base + LoRA r=16 | no disponible | No reproducible de forma aislada | apache-2.0 | Peso `state_dict` en Hugging Face |
+| Sistema `NAMAA-Space/araseg-2026` | Ensemble completo (7 miembros + MEMM) | Agrega varios modelos | no disponible | 86,49 / 87,0 | no disponible | Colección en Hugging Face |
+| Otros miembros del ensemble NoPnx-NP | Miembros individuales del decodificador | no disponible | no disponible | no disponible | no disponible | Colección en Hugging Face |
+| `Qwen/Qwen3.5-9B` (modelo base) | LLM de propósito general | ~9B | no disponible | No aplica (no es un segmentador) | no disponible | Hugging Face |
 
 No se dispone de datos de otros segmentadores del árabe (por ejemplo, aproximaciones basadas en BERT árabe) en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con ellos.
 
@@ -92,7 +92,7 @@ No se dispone de datos de otros segmentadores del árabe (por ejemplo, aproximac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e42-qwen35-9b-nopnx-np
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e42-qwen35-9b-nopnx-np
 - Colección del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Repositorio de código, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

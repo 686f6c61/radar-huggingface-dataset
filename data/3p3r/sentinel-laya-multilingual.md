@@ -77,10 +77,10 @@ Velocidad de inferencia (por prompt, batch de 64, una RTX 3090, 19.474 prompts):
 
 | Modelo | Parametros | Contexto | F1 medio (5 sets) | ms/prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sentinel-laya-multilingual | 322M | 1024 tokens | 0,905 | 2,6 | apache-2.0 | HuggingFace (este repo) |
-| rogue-security/prompt-injection-jailbreak-sentinel-v2 | no disponible | no disponible | 0,964 | 31,6 | no disponible | HuggingFace |
-| convaiinnovations/laya-multilingual (base) | 322M | 1024 tokens | no aplica (no entrenado para esta tarea) | no disponible | apache-2.0 | HuggingFace |
-| 3p3r/sentinel-laya (checkpoint ingles) | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| sentinel-laya-multilingual | 322M | 1024 tokens | 0,905 | 2,6 | apache-2.0 | Hugging Face (este repo) |
+| rogue-security/prompt-injection-jailbreak-sentinel-v2 | no disponible | no disponible | 0,964 | 31,6 | no disponible | Hugging Face |
+| convaiinnovations/laya-multilingual (base) | 322M | 1024 tokens | no aplica (no entrenado para esta tarea) | no disponible | apache-2.0 | Hugging Face |
+| 3p3r/sentinel-laya (checkpoint ingles) | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La ventaja competitiva de sentinel-laya-multilingual es la latencia (aproximadamente 12 veces mas rapido que Sentinel v2) y su cobertura multilingue. Su desventaja es la precision: queda por detras de Sentinel v2 en el promedio y, de forma notablemente acusada, en deepset/prompt-injections (0,678 frente a 0,911).
 
@@ -100,7 +100,7 @@ La ventaja competitiva de sentinel-laya-multilingual es la latencia (aproximadam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3p3r/sentinel-laya-multilingual
+- Modelo en Hugging Face: https://huggingface.co/3p3r/sentinel-laya-multilingual
 - Repositorio de codigo: https://github.com/3p3r/sentinel-laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Model card del base (README): https://huggingface.co/convaiinnovations/laya-multilingual/blob/main/README.md

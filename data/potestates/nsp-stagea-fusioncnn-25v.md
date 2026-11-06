@@ -6,7 +6,7 @@ NSP-StageA-FusionCNN-25v es un modelo de reconstrucción de tomografía computar
 
 El modelo corresponde a la etapa A (Stage-A) del pipeline y se entrenó con una única red para cuatro cohortes anatómicas distintas: LUNA16 (pulmón), PENGWIN (pelvis), PANORAMA (abdomen) y ToothFairy (diente), con 155 casos de entrenamiento y 20 de validación en total. La relevancia práctica es directa en imagen médica: reducir de cientos a 25 vistas baja dosis de radiación y tiempo de adquisición, siempre que la calidad reconstruida se mantenga. Los resultados reportados muestran una mejora media de +1,14 dB de PSNR 3D en validación y +1,52 dB en test retenido respecto a la reconstrucción DeepSparse de partida.
 
-El modelo se publica con licencia de solo investigación (`research-only-see-readme`), el repositorio de HuggingFace ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. Uno de los datasets de entrenamiento, PANORAMA, está bajo CC BY-NC 4.0 (no comercial), lo que condiciona cualquier uso derivado.
+El modelo se publica con licencia de solo investigación (`research-only-see-readme`), el repositorio de Hugging Face ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta. Uno de los datasets de entrenamiento, PANORAMA, está bajo CC BY-NC 4.0 (no comercial), lo que condiciona cualquier uso derivado.
 
 ## Especificaciones tecnicas
 
@@ -91,8 +91,8 @@ No se han publicado comparativas con modelos externos en la información disponi
 
 | Alternativa | Tipo | Entrada | PSNR 3D test (todos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NSP-StageA-FusionCNN-25v (este modelo) | CNN de fusión | V1 + V2 + features 75D | 32,70 dB | research-only-see-readme | HuggingFace `Potestates/NSP-StageA-FusionCNN-25v` |
-| DeepSparse 25v (V1) | Reconstrucción aprendida de vista dispersa | 25 vistas | 31,19 dB | no disponible en la información | HuggingFace `Potestates/DeepSparse-25v` |
+| NSP-StageA-FusionCNN-25v (este modelo) | CNN de fusión | V1 + V2 + features 75D | 32,70 dB | research-only-see-readme | Hugging Face `Potestates/NSP-StageA-FusionCNN-25v` |
+| DeepSparse 25v (V1) | Reconstrucción aprendida de vista dispersa | 25 vistas | 31,19 dB | no disponible en la información | Hugging Face `Potestates/DeepSparse-25v` |
 | R²-GS 20k (V2) | Reconstrucción Gaussiana asistida por prior | 25 vistas + prior V1 | 30,41 dB | no disponible en la información | código en `deployment/nsp_gs_abc_v1` |
 
 Comparativa frente a métodos de reconstrucción de vista dispersa de la literatura (por ejemplo, variantes de FBP, SART o redes tipo LEARN/DuDoNet): no disponible en la información proporcionada.
@@ -111,11 +111,11 @@ Comparativa frente a métodos de reconstrucción de vista dispersa de la literat
 - Correcciones obligatorias del código: sin el parche de clamp de sumas de cuadrados, un parche de aire de PENGWIN 004 produce NaN y aborta el caso; sin el parche de cabeceras CUDA, las extensiones R²-GS no compilan en Blackwell (CUDA 12.9, torch 2.7.1+cu128).
 - Riesgo de alucinación estructural: como todo método de reconstrucción basado en aprendizaje con priors, puede introducir detalle plausible pero inexistente en la escena real. No se documentan evaluaciones radiológicas ni validación clínica.
 - Sin cuantizaciones publicadas ni métricas de latencia: no hay datos para planificar despliegues con requisitos estrictos de tiempo real.
-- El repositorio de HuggingFace está vacío (0,0 GB) en el momento de la consulta, con 0 descargas y 0 likes; los pesos podrían no estar efectivamente disponibles.
+- El repositorio de Hugging Face está vacío (0,0 GB) en el momento de la consulta, con 0 descargas y 0 likes; los pesos podrían no estar efectivamente disponibles.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Potestates/NSP-StageA-FusionCNN-25v
-- HuggingFace del prior DeepSparse 25v: https://huggingface.co/Potestates/DeepSparse-25v
+- Hugging Face del modelo: https://huggingface.co/Potestates/NSP-StageA-FusionCNN-25v
+- Hugging Face del prior DeepSparse 25v: https://huggingface.co/Potestates/DeepSparse-25v
 - Referencias internas citadas en la model card (sin URL directa): código base `deployment/nsp_gs_abc_v1`, rama `migration/gmrb-r2fine-20260907`, commit `4714de6`; splits `cohort/STAGEA_SPLIT.json` y `cohort/TRAINING_DATASET.json`; parches `patches/build_training_labels_nonneg_fix.diff` y `patches/r2gs_cuda_headers_blackwell.diff`; resultados `fusion_cnn_run_001/scores_validation.csv` y `fusion_cnn_run_001/scores_test_heldout.csv`
 - La búsqueda web realizada no devolvió ningún enlace relevante sobre este modelo (los resultados obtenidos eran páginas de soporte de Microsoft sin relación con el contenido).

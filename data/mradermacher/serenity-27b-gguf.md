@@ -29,7 +29,7 @@ No se dispone de informacion sobre la arquitectura del modelo original (por ejem
 
 ## Capacidades
 
-Segun las etiquetas del repositorio de HuggingFace, el modelo esta orientado a:
+Segun las etiquetas del repositorio de Hugging Face, el modelo esta orientado a:
 
 - Roleplay y conversacion multi-turno.
 - Instrucciones (instruct).

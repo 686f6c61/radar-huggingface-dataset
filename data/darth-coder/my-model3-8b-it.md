@@ -71,14 +71,14 @@ No se han publicado resultados de benchmarks especificos para este fine-tuning e
 - No se dispone de informacion publica sobre el dataset de fine-tuning, por lo que no se puede evaluar la calidad del ajuste ni posibles sesgos introducidos.
 - El modelo hereda las limitaciones del modelo base Qwen3-8B, incluyendo riesgo de alucinacion en tareas factuales y posibles sesgos en contenido generado.
 - En modo pensamiento, se recomienda usar temperatura 0,6, TopP 0,95, TopK 20 y MinP 0; no usar decodificacion greedy, ya que degrada el rendimiento y puede causar repeticiones.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar la procedencia del fine-tuning antes de usarlo en produccion.
 - El contexto nativo de 32.768 tokens puede ser limitante para documentos muy largos; la extension a 131.072 tokens con YaRN puede degradar ligeramente la calidad en contextos extremos.
 - La model card del autor reproduce integramente la del modelo base Qwen3-8B, sin aportar informacion especifica sobre el proceso de fine-tuning.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Darth-Coder/my-model3-8b-it
+- Modelo en Hugging Face: https://huggingface.co/Darth-Coder/my-model3-8b-it
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

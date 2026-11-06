@@ -2,7 +2,7 @@
 
 ## Resumen
 
-project-style es un adaptador LoRA de texto a imagen publicado por el usuario supervenicianfrog en HuggingFace. Se distribuye mediante la libreria diffusers y esta etiquetado con los tags flux, text-to-image, lora y fal, lo que lo situa en el ecosistema de la familia FLUX de Black Forest Labs. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
+project-style es un adaptador LoRA de texto a imagen publicado por el usuario supervenicianfrog en Hugging Face. Se distribuye mediante la libreria diffusers y esta etiquetado con los tags flux, text-to-image, lora y fal, lo que lo situa en el ecosistema de la familia FLUX de Black Forest Labs. El repositorio ocupa 0,3 GB y contiene pesos en formato safetensors.
 
 El propio autor lo describe como una prueba del conjunto de datos necesario para un LoRA de tipo "picture enforcer", es decir, un adaptador cuyo objetivo es corregir la deriva visual de las generaciones y devolverlas al aspecto previsto. Se activa mediante la palabra clave `roswell`, que debe incluirse en el prompt para que el estilo aprendido se aplique.
 
@@ -50,7 +50,7 @@ El unico dato de entrenamiento confirmado es la plataforma: fal.ai, mediante su 
 - Investigacion sobre LoRA de estilo: el repositorio sirve como caso de estudio reproducible de como se comporta un adaptador de bajo rango frente a la deriva visual, util para quienes experimentan con datasets de entrenamiento.
 - Prototipado de pipelines con diffusers: al ser un safetensors compatible con diffusers, puede integrarse en scripts de generacion por lotes o en servicios internos que ya usen la libreria.
 - Despliegue mediante API gestionada: al haberse entrenado en fal.ai, es razonable servirlo a traves de ese mismo proveedor para evitar gestionar la infraestructura del modelo base.
-- Experimentacion docente: ejemplo de flujo completo de entrenamiento de un LoRA con palabra de activacion y publicacion en HuggingFace, util en talleres sobre difusion.
+- Experimentacion docente: ejemplo de flujo completo de entrenamiento de un LoRA con palabra de activacion y publicacion en Hugging Face, util en talleres sobre difusion.
 
 ## Benchmarks y rendimiento
 
@@ -73,9 +73,9 @@ No hay datos de rendimiento que permitan una comparacion cuantitativa. A continu
 
 | Modelo | Tipo | Modelo base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| supervenicianfrog/project-style | LoRA de estilo (texto a imagen) | no declarado | no aplicable | other | HuggingFace, 0 descargas |
+| supervenicianfrog/project-style | LoRA de estilo (texto a imagen) | no declarado | no aplicable | other | Hugging Face, 0 descargas |
 | Modelo base FLUX sin adaptador | Modelo de difusion completo | no aplicable | no aplicable | no disponible | segun proveedor |
-| Otros LoRA de estilo para FLUX | LoRA de estilo | distinto en cada caso | no aplicable | variable | HuggingFace |
+| Otros LoRA de estilo para FLUX | LoRA de estilo | distinto en cada caso | no aplicable | variable | Hugging Face |
 
 No se dispone de benchmarks ni de nombres de adaptadores comparables en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento fiable.
 
@@ -93,7 +93,7 @@ No se dispone de benchmarks ni de nombres de adaptadores comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/supervenicianfrog/project-style
+- Modelo en Hugging Face: https://huggingface.co/supervenicianfrog/project-style
 - Descarga de pesos (pestana Files and versions): https://huggingface.co/supervenicianfrog/project-style/tree/main
 - Entrenador utilizado (fal.ai): https://fal.ai/models/fal-ai/flux-2-trainer-v2/edit
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

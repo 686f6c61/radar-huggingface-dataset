@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bge-base-en-1.5-tech-domain` es un modelo de embeddings publicado por el usuario Frederikmahipal en HuggingFace. Por el nombre se deduce que se trata de un ajuste fino (fine-tuning) del conocido modelo `BAAI/bge-base-en-v1.5`, orientado a un dominio tecnico ("tech-domain"), con pesos exportados en formato ONNX. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con el tamano de un modelo base de la familia BGE (del orden de 100-110 millones de parametros) exportado a ONNX.
+`bge-base-en-1.5-tech-domain` es un modelo de embeddings publicado por el usuario Frederikmahipal en Hugging Face. Por el nombre se deduce que se trata de un ajuste fino (fine-tuning) del conocido modelo `BAAI/bge-base-en-v1.5`, orientado a un dominio tecnico ("tech-domain"), con pesos exportados en formato ONNX. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con el tamano de un modelo base de la familia BGE (del orden de 100-110 millones de parametros) exportado a ONNX.
 
 La relevancia de este modelo reside en su posible uso como encoder de frases para tareas de recuperacion de informacion (retrieval), similitud semantica o clustering en contextos de documentacion tecnica. Sin embargo, la model card publicada esta practicamente vacia: solo contiene la declaracion de licencia MIT, sin descripcion, sin datos de entrenamiento, sin metricas y sin instrucciones de uso. El modelo no registra descargas ni "likes" en el momento de la consulta.
 
@@ -83,7 +83,7 @@ La comparacion se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Frederikmahipal/bge-base-en-1.5-tech-domain
+- Modelo en Hugging Face: https://huggingface.co/Frederikmahipal/bge-base-en-1.5-tech-domain
 - Modelo base de referencia (BGE base en v1.5): https://huggingface.co/BAAI/bge-base-en-v1.5
 - Repositorio FlagEmbedding (familia BGE): https://github.com/FlagOpen/FlagEmbedding
 - Paper BGE (BAAI General Embedding): https://arxiv.org/abs/2309.07597

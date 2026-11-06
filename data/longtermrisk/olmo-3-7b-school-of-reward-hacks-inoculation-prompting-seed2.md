@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed2` es un fine-tune experimental del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el grupo de investigación longtermrisk. Su nombre indica que forma parte de una serie de experimentos orientados a estudiar y mitigar el fenómeno de "reward hacking" (explotación de señales de recompensa en el entrenamiento por refuerzo) mediante una técnica denominada "inoculation prompting". Esta técnica consiste en exponer al modelo a ejemplos adversarios durante el ajuste fino para inmunizarlo contra manipulaciones posteriores.
 
-El modelo se enmarca dentro de la familia OLMo-3, una serie de modelos de lenguaje de código abierto y completamente abiertos (pesos, datos y pipeline de entrenamiento) lanzada por el AI2 (Allen Institute for AI). El fine-tune se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un entrenamiento aproximadamente el doble de rápido que los métodos convencionales. Con 7 mil millones de parámetros, es un modelo de tamaño medio adecuado para tareas de investigación y prototipado, aunque su carácter experimental y su limitada documentación pública lo hacen más apropiado para estudios de robustez y alineación que para despliegue en producción.
+El modelo se enmarca dentro de la familia OLMo-3, una serie de modelos de lenguaje de código abierto y completamente abiertos (pesos, datos y pipeline de entrenamiento) lanzada por el AI2 (Allen Institute for AI). El fine-tune se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un entrenamiento aproximadamente el doble de rápido que los métodos convencionales. Con 7 mil millones de parámetros, es un modelo de tamaño medio adecuado para tareas de investigación y prototipado, aunque su carácter experimental y su limitada documentación pública lo hacen más apropiado para estudios de robustez y alineación que para despliegue en producción.
 
 La relevancia de este modelo reside en su contribución al estudio de la seguridad de los sistemas de IA: explora cómo los modelos pueden ser entrenados para resistir intentos de explotación de sus mecanismos de recompensa, un área crítica para el desarrollo de asistentes fiables y alineados. Aunque no se han publicado resultados cuantitativos en la model card, su existencia aporta datos valiosos sobre metodologías de entrenamiento defensivo.
 
@@ -19,7 +19,7 @@ La relevancia de este modelo reside en su contribución al estudio de la segurid
 | Tipos de cuantizacion | no disponible (no se mencionan en la model card) |
 | Idiomas soportados | ingles (segun la etiqueta `language: en`) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (segun las etiquetas de HuggingFace) |
+| Formato de pesos | safetensors (segun las etiquetas de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,8 +82,8 @@ No se dispone de datos de rendimiento para comparar cuantitativamente. La difere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
+- Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed2
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Paper de OLMo-3 (arXiv): https://arxiv.org/abs/2512.13961
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Variante seed5: https://huggingface.co/longtermrisk/OLMo-3-7B-school-of-reward-hacks-inoculation-prompting-seed5

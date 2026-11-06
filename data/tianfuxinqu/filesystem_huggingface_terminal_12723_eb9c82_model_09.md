@@ -66,6 +66,6 @@ No disponible. No existe informacion que permita comparar este modelo con altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_09
+- Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_eb9c82_model_09
 
 No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web. Los resultados encontrados corresponden a otros artefactos de la misma organizacion (datasets de arxiv-latex y playwright) y a herramientas externas no relacionadas con este modelo concreto.

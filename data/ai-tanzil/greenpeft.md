@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GreenPEFT es un artefacto publicado en HuggingFace por el usuario ai-tanzil bajo el identificador ai-tanzil/GreenPEFT. La informacion disponible se limita a los metadatos del repositorio: una licencia MIT, la etiqueta de formato joblib, un DOI (10.57967/hf/10504) y la region de publicacion (us). El tamano del repositorio es de 0.0 GB, no tiene pipeline declarado, no tiene idiomas declarados y acumula 0 descargas y 1 like desde su creacion el 18 de septiembre de 2026.
+GreenPEFT es un artefacto publicado en Hugging Face por el usuario ai-tanzil bajo el identificador ai-tanzil/GreenPEFT. La informacion disponible se limita a los metadatos del repositorio: una licencia MIT, la etiqueta de formato joblib, un DOI (10.57967/hf/10504) y la region de publicacion (us). El tamano del repositorio es de 0.0 GB, no tiene pipeline declarado, no tiene idiomas declarados y acumula 0 descargas y 1 like desde su creacion el 18 de septiembre de 2026.
 
 La model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin arquitectura, sin datos de entrenamiento ni instrucciones de uso. No se trata, por tanto, de una ficha de modelo de lenguaje al uso, sino de un repositorio sin documentacion tecnica publica. El nombre "GreenPEFT" sugiere, por convencion de nomenclatura, un artefacto relacionado con tecnicas de ajuste eficiente de parametros (PEFT, parameter-efficient fine-tuning), y la etiqueta joblib apunta a un objeto serializado con la biblioteca joblib de Python, habitual en pipelines de scikit-learn. Ninguna de estas dos inferencias esta confirmada por el autor.
 
@@ -53,7 +53,7 @@ No existen casos de uso confirmados. Los escenarios que se enumeran a continuaci
 - Serializacion de pipelines de ajuste eficiente: si GreenPEFT contiene un objeto joblib con un pipeline de PEFT, podria usarse para recargar configuraciones de adaptadores en un entorno Python con las dependencias exactas del autor.
 - Reproducibilidad de experimentos academicos: el DOI asociado permitiria citar el artefacto en una publicacion, siempre que el autor aporte la documentacion ausente.
 - Integracion en flujos de scikit-learn: si el objeto serializado es un estimador compatible, podria encadenarse en un Pipeline de scikit-learn para tareas de preprocesado o clasificacion.
-- Material docente sobre PEFT: como ejemplo minimo de publicacion de artefactos en HuggingFace, aunque sin documentacion su valor didactico es limitado.
+- Material docente sobre PEFT: como ejemplo minimo de publicacion de artefactos en Hugging Face, aunque sin documentacion su valor didactico es limitado.
 - Punto de partida para un fork: un tercero podria descargar el joblib, inspeccionar su contenido y documentar lo que encuentre.
 - Auditoria de seguridad de artefactos serializados: joblib, al igual que pickle, puede ejecutar codigo arbitrario al deserializar, por lo que el repositorio sirve como caso de estudio de riesgos en la cadena de suministro de modelos.
 
@@ -96,7 +96,7 @@ No disponible. No es posible comparar el artefacto con alternativas porque se de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-tanzil/GreenPEFT
+- Hugging Face: https://huggingface.co/ai-tanzil/GreenPEFT
 - DOI: https://doi.org/10.57967/hf/10504
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

@@ -24,7 +24,7 @@ La relevancia actual es doble: por un lado, la tecnica de cuantizacion JANGTQ ap
 | Modelo base | zai-org/GLM-5.3-Flash |
 | Biblioteca de inferencia | mlx |
 | Tamano del repositorio | 103,0 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 26 de septiembre de 2026 (creacion); ultima actualizacion el mismo dia |
 | Descargas / likes | 0 / 0 |
 
@@ -84,7 +84,7 @@ Nota: los datos de las alternativas provienen de su documentacion publica y pued
 - Idiomas: los metadatos declaran unicamente ingles ("en"), por lo que el rendimiento en castellano no esta garantizado ni documentado.
 - Perdida por cuantizacion: al tratarse de una conversion cuantizada, es esperable cierta degradacion en tareas de razonamiento, matematicas y comprension visual fina respecto al modelo base en precision completa.
 - Ambiguedad en el esquema de cuantizacion: el nombre "JANGTQ2" y la etiqueta "8-bit" no permiten determinar con certeza el numero de bits efectivo; conviene inspeccionar los archivos antes de planificar el despliegue.
-- Acceso restringido: el repositorio esta en modo gated y exige aceptar condiciones en HuggingFace, lo que anade un paso previo a cualquier evaluacion o uso.
+- Acceso restringido: el repositorio esta en modo gated y exige aceptar condiciones en Hugging Face, lo que anade un paso previo a cualquier evaluacion o uso.
 - Licencia: la etiqueta del repositorio indica mit, pero la licencia aplicable al modelo base puede imponer condiciones adicionales; es necesario verificar la licencia de zai-org/GLM-5.3-Flash antes de un uso comercial.
 - Riesgo de alucinacion: no se han publicado evaluaciones de fiabilidad ni tasas de error, por lo que en produccion se recomienda validacion externa de las respuestas, especialmente en dominios factuales.
 - Contexto maximo desconocido: sin la longitud de contexto publicada no es posible dimensionar cargas de trabajo con documentos largos o conversaciones extensas.
@@ -94,6 +94,6 @@ Nota: los datos de las alternativas provienen de su documentacion publica y pued
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANGTQ2
+- Repositorio Hugging Face: https://huggingface.co/JANGQ-AI/GLM-5.3-Flash-JANGTQ2
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

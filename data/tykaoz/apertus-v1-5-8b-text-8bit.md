@@ -95,7 +95,7 @@ Nota: los datos de Llama 3.1 8B y Mistral 7B v0.3 proceden de sus especificacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-8bit
+- Repositorio Hugging Face: https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-8bit
 - Modelo base: https://huggingface.co/swiss-ai/Apertus-v1.5-8B
 - Repositorio MLX: https://github.com/ml-explore/mlx
 - Sitio del autor: https://www.tykaoz.bzh

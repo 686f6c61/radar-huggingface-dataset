@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "qiyuan-robot/PrimeSim",
+  "slug": "qiyuan-robot-primesim",
+  "author": "qiyuan-robot",
+  "url": "https://huggingface.co/qiyuan-robot/PrimeSim",
+  "created_at": "2026-11-06T08:18:01.000Z",
+  "updated_at": "2026-11-06T08:18:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrimeSim: A Generalist World Model Simulator from Large-Scale ...",
+      "url": "https://arxiv.org/html/2611.04870",
+      "snippet": "The idea runs from model-based ... over rollouts far longer than the window it was trained on. We present PrimeSim, a world model built as a robot simulator that meets all three requirements...."
+    },
+    {
+      "title": "PrimeSim robot world model hits 10.1 FPS, leads 4 of 5 probes | ...",
+      "url": "https://aiweekly.co/alerts/primesim-robot-world-model-hits-101-fps-leads-4-of-5-probes",
+      "snippet": "PrimeSim, a multiview robot world ... Hong Kong, Peking University and five other labs, runs at 10.1 FPS on a single A100 and leads four of the five WorldSimProbe suites against five open-source action-conditioned baselines...."
+    }
+  ]
+}

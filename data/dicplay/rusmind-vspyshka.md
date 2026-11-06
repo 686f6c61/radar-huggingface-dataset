@@ -81,9 +81,9 @@ El propio autor publica una tabla de familia que permite comparar alternativas d
 
 | Modelo | Entorno de ejecución | Enfoque | Disponibilidad |
 |---|---|---|---|
-| RusMind-Momentum | En dispositivo, sin internet | Respuestas rápidas en teléfonos y PC de gama baja | HuggingFace (DICPlay) |
-| RusMind-Vspyshka (este modelo) | En dispositivo, sin internet | Tareas cotidianas en PC potentes y teléfonos de gama alta | HuggingFace (DICPlay) |
-| RusMind-Znanie | Nube y PC potentes | Equilibrio entre velocidad y conocimiento; tope de gama abierto de la línea | HuggingFace (DICPlay) |
+| RusMind-Momentum | En dispositivo, sin internet | Respuestas rápidas en teléfonos y PC de gama baja | Hugging Face (DICPlay) |
+| RusMind-Vspyshka (este modelo) | En dispositivo, sin internet | Tareas cotidianas en PC potentes y teléfonos de gama alta | Hugging Face (DICPlay) |
+| RusMind-Znanie | Nube y PC potentes | Equilibrio entre velocidad y conocimiento; tope de gama abierto de la línea | Hugging Face (DICPlay) |
 | RusMind-ATOM | Nube | Tope de gama con tecnología "Multi-Thinking" | En desarrollo, no publicado |
 
 | Criterio | RusMind-Vspyshka | RusMind-Momentum | RusMind-Znanie |
@@ -112,7 +112,7 @@ Frente al modelo base google/gemma-4-E4B-it, RusMind-Vspyshka añade ajuste fino
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-Vspyshka
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Vspyshka
 - Carpeta de la versión actual v3.2: https://huggingface.co/DICPlay/RusMind-Vspyshka/tree/main/v3.2
 - Carpeta de la versión 2.4: https://huggingface.co/DICPlay/RusMind-Vspyshka/tree/main/v2.4
 - Repositorio relacionado con la misma versión: https://huggingface.co/DICPlay/RusMind-3.2-Vspyshka

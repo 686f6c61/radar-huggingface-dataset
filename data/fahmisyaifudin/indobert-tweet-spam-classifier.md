@@ -32,7 +32,7 @@ El entrenamiento se llevó a cabo sobre un conjunto de datos etiquetado de más 
 - Clasificacion binaria de texto: distingue entre `spam` y `not_spam` en publicaciones de Twitter en indonesio.
 - Procesamiento de lenguaje informal: entrenado con tuits reales, capta abreviaturas, coloquialismos y estructuras propias de la jerga de redes sociales en indonesio.
 - Inferencia rapida: al ser un modelo BERT base de 110M parametros, puede ejecutarse en CPU o GPU de consumo con latencias bajas.
-- Integracion sencilla: compatible con la API `pipeline` de HuggingFace Transformers, lo que facilita su despliegue en aplicaciones existentes.
+- Integracion sencilla: compatible con la API `pipeline` de Hugging Face Transformers, lo que facilita su despliegue en aplicaciones existentes.
 - No soporta otras tareas como generacion de texto, tool calling, agentes, vision o audio. Su unica funcion es la clasificacion de secuencias.
 
 ## Casos de uso
@@ -67,7 +67,7 @@ No se han publicado comparativas con otros modelos de clasificacion de spam en i
 - VRAM estimada para inferencia: el modelo tiene 110,5 millones de parametros. En precision FP32, los pesos ocupan aproximadamente 442 MB; en FP16, unos 221 MB. Con un batch de 1 y una secuencia de 256 tokens, el consumo de VRAM adicional para activaciones es reducido, por lo que una GPU con 2 GB de VRAM es suficiente.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM, como una NVIDIA GTX 1050 Ti, GTX 1650, RTX 2060 o superior. Tambien puede ejecutarse en CPU con un rendimiento aceptable para inferencia por lotes.
 - Compatibilidad con GPU de consumo: si, el modelo cabe sin problemas en GPUs de gama de entrada y en la mayoria de portatiles con GPU integrada (aunque con mayor latencia).
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, puede servirse con herramientas como FastAPI, TorchServe o el servidor de inferencia de HuggingFace. Para despliegues mas ligeros, se puede exportar a ONNX o utilizar `optimum` para aceleracion. No se menciona soporte explicito para vLLM, TGI o llama.cpp, pero al tratarse de un modelo BERT estandar, es posible adaptarlo.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, puede servirse con herramientas como FastAPI, TorchServe o el servidor de inferencia de Hugging Face. Para despliegues mas ligeros, se puede exportar a ONNX o utilizar `optimum` para aceleracion. No se menciona soporte explicito para vLLM, TGI o llama.cpp, pero al tratarse de un modelo BERT estandar, es posible adaptarlo.
 - Latencia y throughput: no se han publicado mediciones oficiales. En una GPU moderna (por ejemplo, RTX 3060), se espera una latencia de entre 5 y 15 ms por muestra para secuencias de 256 tokens, y un throughput de varios cientos de muestras por segundo con batch adecuado.
 
 ## Comparativa con modelos similares
@@ -76,9 +76,9 @@ No se dispone de comparativas publicadas con otros clasificadores de spam para i
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fahmisyaifudin/indobert-tweet-spam-classifier | Clasificacion de spam en tweets | 110,5 M | 256 | MIT | HuggingFace |
+| fahmisyaifudin/indobert-tweet-spam-classifier | Clasificacion de spam en tweets | 110,5 M | 256 | MIT | Hugging Face |
 | Yntzie/indonesian-sms-spam-classification-indobert | Clasificacion de spam en SMS | similar (IndoBERT base) | no especificado | no especificada | GitHub |
-| indolem/indobertweet-base-uncased | Modelo base preentrenado para Twitter indonesio | 110 M (aprox.) | 512 | MIT | HuggingFace |
+| indolem/indobertweet-base-uncased | Modelo base preentrenado para Twitter indonesio | 110 M (aprox.) | 512 | MIT | Hugging Face |
 
 El modelo de fahmisyaifudin se diferencia del proyecto de SMS por estar orientado a tweets, con un preprocesamiento especifico para redes sociales. IndoBERTweet es un modelo base sin fine-tuning, por lo que no es directamente comparable en rendimiento de clasificacion, pero sirve como referencia del estado del arte en representaciones de texto para Twitter indonesio.
 
@@ -94,9 +94,9 @@ El modelo de fahmisyaifudin se diferencia del proyecto de SMS por estar orientad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fahmisyaifudin/indobert-tweet-spam-classifier
+- Modelo en Hugging Face: https://huggingface.co/fahmisyaifudin/indobert-tweet-spam-classifier
 - Modelo base `indolem/indobert-base-uncased`: https://huggingface.co/indolem/indobert-base-uncased
 - Repositorio GitHub de IndoBERTweet: https://github.com/indolem/IndoBERTweet
 - Paper de IndoBERTweet en arXiv: https://arxiv.org/pdf/2109.04607
-- Modelo `indolem/indobertweet-base-uncased` en HuggingFace: https://huggingface.co/indolem/indobertweet-base-uncased
+- Modelo `indolem/indobertweet-base-uncased` en Hugging Face: https://huggingface.co/indolem/indobertweet-base-uncased
 - Proyecto de clasificacion de spam SMS en indonesio con IndoBERT: https://github.com/Yntzie/indonesian-sms-spam-classification-indobert

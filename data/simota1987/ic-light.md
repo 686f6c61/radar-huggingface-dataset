@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `simota1987/IC-Light` es una subida a HuggingFace que replica el proyecto IC-Light (Imposing Consistent Light), originalmente desarrollado por lllyasviel, cuyo objetivo es la manipulación de la iluminación en imágenes. Según el repositorio oficial, IC-Light permite modificar la luz de una imagen de entrada a partir de dos modalidades: mediante una condición textual (por ejemplo, "luz lateral cálida") o mediante una condición de fondo (usando una imagen de fondo como referencia). El proyecto se distribuye bajo la licencia CreativeML OpenRAIL-M, que permite uso comercial con restricciones. El repositorio de HuggingFace concreto tiene un tamaño de 1.3 GB, pero carece de model card detallada, por lo que la información técnica específica de esta subida (arquitectura, parámetros, idiomas, etc.) no está disponible.
+El modelo `simota1987/IC-Light` es una subida a Hugging Face que replica el proyecto IC-Light (Imposing Consistent Light), originalmente desarrollado por lllyasviel, cuyo objetivo es la manipulación de la iluminación en imágenes. Según el repositorio oficial, IC-Light permite modificar la luz de una imagen de entrada a partir de dos modalidades: mediante una condición textual (por ejemplo, "luz lateral cálida") o mediante una condición de fondo (usando una imagen de fondo como referencia). El proyecto se distribuye bajo la licencia CreativeML OpenRAIL-M, que permite uso comercial con restricciones. El repositorio de Hugging Face concreto tiene un tamaño de 1.3 GB, pero carece de model card detallada, por lo que la información técnica específica de esta subida (arquitectura, parámetros, idiomas, etc.) no está disponible.
 
 A pesar de la falta de especificaciones en esta copia, el proyecto original de IC-Light es relevante en el campo de la edición fotográfica y la generación de imágenes, ya que ofrece control fino sobre la iluminación, una capacidad difícil de lograr con modelos genéricos de text-to-image. El modelo se basa en arquitecturas de difusión, típicamente con un UNet o transformador de difusión, aunque los detalles exactos de esta versión no se han publicado.
 
@@ -21,7 +21,7 @@ A pesar de la falta de especificaciones en esta copia, el proyecto original de I
 
 ## Arquitectura y entrenamiento
 
-El proyecto IC-Light original, descrito en el repositorio GitHub de lllyasviel, se basa en modelos de difusión latente para la manipulación de iluminación. Se ofrecen dos variantes: un modelo condicionado por texto y otro condicionado por fondo. Ambos toman como entrada una imagen de primer plano (foreground) y generan una versión con iluminación consistente según la condición proporcionada. La arquitectura concreta (UNet, VAE, etc.) no se detalla en la información pública de esta copia, y el proceso de entrenamiento (dataset, tokens, técnicas de RLHF o DPO) tampoco está documentado en el repo de HuggingFace. La versión `simota1987/IC-Light` parece ser una subida sin metadatos adicionales, por lo que no se dispone de datos técnicos específicos de esta variante.
+El proyecto IC-Light original, descrito en el repositorio GitHub de lllyasviel, se basa en modelos de difusión latente para la manipulación de iluminación. Se ofrecen dos variantes: un modelo condicionado por texto y otro condicionado por fondo. Ambos toman como entrada una imagen de primer plano (foreground) y generan una versión con iluminación consistente según la condición proporcionada. La arquitectura concreta (UNet, VAE, etc.) no se detalla en la información pública de esta copia, y el proceso de entrenamiento (dataset, tokens, técnicas de RLHF o DPO) tampoco está documentado en el repo de Hugging Face. La versión `simota1987/IC-Light` parece ser una subida sin metadatos adicionales, por lo que no se dispone de datos técnicos específicos de esta variante.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 - Tamaño del repo: 1.3 GB, lo que sugiere que el modelo puede cargarse en VRAM de 4-6 GB si se usa una cuantización adecuada (por ejemplo, FP16 o INT8). Sin embargo, no se especifica el tamaño exacto de los pesos.
 - GPU recomendadas: una GPU con al menos 4 GB de VRAM para inferencia en FP16 (ej. RTX 3060, RTX 4060), o 8 GB para mayor comodidad (RTX 3070/4070). Para entrenamiento o fine-tuning, se requeriría más VRAM (12 GB o superior).
-- Opciones de despliegue: se puede usar con difusores de HuggingFace (Diffusers), así como con herramientas de código abierto como ComfyUI o Automatic1111 para WebUI.
+- Opciones de despliegue: se puede usar con difusores de Hugging Face (Diffusers), así como con herramientas de código abierto como ComfyUI o Automatic1111 para WebUI.
 - Latencia y throughput: no disponibles, pero al ser un modelo de difusión, la inferencia típica toma varios segundos por imagen en una GPU consumer.
 
 ## Comparativa con modelos similares
@@ -61,9 +61,9 @@ No se dispone de una comparativa directa con otros modelos de relighting en la i
 
 | Modelo | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| simota1987/IC-Light | Relighting de imagen | No especificado | CreativeML Open-RAIL-M | HuggingFace |
-| lllyasviel/ic-light | Relighting de imagen | No especificado | CreativeML Open-RAIL-M | HuggingFace, GitHub |
-| iclight-v2 (Amitmahata) | Relighting de imagen | No especificado | CreativeML Open-RAIL-M | HuggingFace |
+| simota1987/IC-Light | Relighting de imagen | No especificado | CreativeML Open-RAIL-M | Hugging Face |
+| lllyasviel/ic-light | Relighting de imagen | No especificado | CreativeML Open-RAIL-M | Hugging Face, GitHub |
+| iclight-v2 (Amitmahata) | Relighting de imagen | No especificado | CreativeML Open-RAIL-M | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de una comparativa directa con otros modelos de relighting en la i
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/simota1987/IC-Light
+- Repositorio de Hugging Face: https://huggingface.co/simota1987/IC-Light
 - Proyecto original en GitHub: https://github.com/lllyasviel/IC-Light
-- Modelo original en HuggingFace: https://huggingface.co/lllyasviel/ic-light
+- Modelo original en Hugging Face: https://huggingface.co/lllyasviel/ic-light
 - Modelo iclight-v2 (alternativa): https://huggingface.co/Amitmahata/iclight-v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nlp-matching es un repositorio de HuggingFace publicado por el usuario rajeshsti que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura tipo Beit orientada a tareas de matching (emparejamiento o comparacion de entradas). No es un modelo preentrenado listo para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo y experimentos controlados de pequeno tamano.
+nlp-matching es un repositorio de Hugging Face publicado por el usuario rajeshsti que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura tipo Beit orientada a tareas de matching (emparejamiento o comparacion de entradas). No es un modelo preentrenado listo para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo y experimentos controlados de pequeno tamano.
 
 El checkpoint incluido (`model.safetensors`) es una inicializacion valida para smoke tests, no un modelo entrenado ni evaluado. El recuento real de parametros notificado por el archivo safetensors es de 24.832 parametros, un orden de magnitud muy inferior al de cualquier encoder de frases convencional, lo que confirma su caracter de artefacto de desarrollo.
 
@@ -96,7 +96,7 @@ La informacion disponible no identifica modelos comparables. El repositorio no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshsti/nlp-matching
+- Modelo en Hugging Face: https://huggingface.co/rajeshsti/nlp-matching
 - Archivo principal del modelo: https://huggingface.co/rajeshsti/nlp-matching/blob/main/model.py
 - Configuracion de arquitectura: https://huggingface.co/rajeshsti/nlp-matching/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/rajeshsti/nlp-matching/blob/main/training_args.json

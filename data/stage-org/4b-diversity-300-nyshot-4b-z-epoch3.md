@@ -107,7 +107,7 @@ La diferencia principal frente a esas alternativas no es de tamaño ni de contex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-300-nyshot-4b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-300-nyshot-4b-z-epoch3
 - Organización autora: https://huggingface.co/Stage-org
 - Modelo base declarado en la configuración: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/4b-diversity-300-nyshot-4b-z

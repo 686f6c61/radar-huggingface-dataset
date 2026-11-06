@@ -74,7 +74,7 @@ La comparativa disponible es únicamente contra el modelo base, DeepSeek-R1-Dist
 | Modelo | Parametros | Contexto maximo | Cambio de VRAM (128k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | DeepSeek-R1-Distill-Llama-8B (base) | 8.030 millones | No especificado en la informacion | 21,22 GB (según model card) | MIT (según el modelo base original) | Publico |
-| DeepSeek-R1-8B-Unified-IdemFormer | 2.710 millones | 128.000 tokens | 1,96 GB (según model card) | hybrid-patent-open-core | Publico en HuggingFace |
+| DeepSeek-R1-8B-Unified-IdemFormer | 2.710 millones | 128.000 tokens | 1,96 GB (según model card) | hybrid-patent-open-core | Publico en Hugging Face |
 
 No se dispone de comparativas con otros modelos de 8B, como Llama-3.1-8B o ministral-8B, ni con modelos de razonamiento de tamaño similar.
 
@@ -91,7 +91,7 @@ No se dispone de comparativas con otros modelos de 8B, como Llama-3.1-8B o minis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aecetin/DeepSeek-R1-8B-Unified-IdemFormer
+- Hugging Face: https://huggingface.co/aecetin/DeepSeek-R1-8B-Unified-IdemFormer
 - Paper (ResearchGate): https://www.researchgate.net/publication/414060833_Hardware-Accelerated_Orthogonal_Polynomial_Tensor_Operators_Zero-Backpropagation_Closed-Form_Algebraic_Solvers_and_In-Situ_Weight_Surgery_for_Deep_Neural_Networks
 - GitHub: https://github.com/aemre-cetin/idempotent-poly
 - Licencia: https://github.com/aemre-cetin/idempotent-poly/blob/main/LICENSE

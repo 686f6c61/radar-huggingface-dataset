@@ -68,11 +68,11 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 - El checkpoint `model.safetensors` es una inicialización aleatoria, no un modelo entrenado. No debe usarse para ninguna tarea real.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No hay garantías de que la arquitectura funcione correctamente en tareas de matching reales; se necesita entrenamiento y evaluación con datos adecuados.
 - La licencia MIT permite uso comercial, pero los términos de los datos externos deben revisarse por separado si se usan datasets de terceros.
 - El repositorio no incluye documentación sobre el preprocesamiento de imágenes, el tamaño de entrada ni el formato de los pares de matching, lo que dificulta su uso directo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danieldoyle/study-matching-2023
+- Repositorio en Hugging Face: https://huggingface.co/danieldoyle/study-matching-2023

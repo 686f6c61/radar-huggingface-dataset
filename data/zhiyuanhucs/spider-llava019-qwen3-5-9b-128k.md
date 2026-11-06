@@ -2,7 +2,7 @@
 
 ## Resumen
 
-spider-llava019-qwen3.5-9b-128k es un ajuste fino multimodal publicado por el usuario zhiyuanhucs en HuggingFace, construido sobre el modelo base Qwen/Qwen3.5-9B. Se trata de un SFT de ajuste completo de todos los parámetros (full-parameter) orientado a imitación de comportamiento (behavior cloning), con capacidad de entrada imagen-texto y salida de texto, según la etiqueta de pipeline `image-text-to-text` del repositorio.
+spider-llava019-qwen3.5-9b-128k es un ajuste fino multimodal publicado por el usuario zhiyuanhucs en Hugging Face, construido sobre el modelo base Qwen/Qwen3.5-9B. Se trata de un SFT de ajuste completo de todos los parámetros (full-parameter) orientado a imitación de comportamiento (behavior cloning), con capacidad de entrada imagen-texto y salida de texto, según la etiqueta de pipeline `image-text-to-text` del repositorio.
 
 El checkpoint publicado corresponde al paso 700 de un total de 10.315 pasos previstos (un 6,79 % de una única época de entrenamiento). La mezcla de datos declarada combina "Spider (3.0 passes)" y una mezcla tipo "LLaVA 0.19", y la configuración de entrenamiento empleó empaquetado de secuencias de 128K, paralelismo de tensor TP=4 sobre 4 nodos, tamaño de lote global de 128 y MTP=1. El modelo incorpora tokens especiales propios para estructurar pensamiento y acciones (`<|thought_start|>`, `<|thought_end|>`, `<|action_start|>`, `<|action_end|>`, `<|action_sep|>`), lo que apunta a un uso orientado a agentes.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la model card indica un SFT de ajuste completo de pa
 - Formato estructurado de razonamiento y acción: el vocabulario incluye tokens dedicados a pensamiento (`<|thought_start|>`, `<|thought_end|>`) y a acciones (`<|action_start|>`, `<|action_end|>`, `<|action_sep|>`), que permiten serializar trazas de decisión y llamadas a acciones de forma parseable.
 - Clonación de comportamiento: entrenado explícitamente para imitar trayectorias de un conjunto de datos mixto (Spider + mezcla LLaVA 0.19), no para maximizar preferencias humanas.
 - Capacidad conversacional: el repositorio incluye la etiqueta `conversational`.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo está preparado para desplegarse en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo está preparado para desplegarse en Hugging Face Inference Endpoints.
 - Multilingüismo: no disponible; no se declara ninguna lista de idiomas.
 - Tool calling / function calling: no confirmado de forma explícita; la presencia de tokens de acción es compatible con un esquema de acciones, pero la model card no documenta un protocolo de function calling.
 - Razonamiento multi-paso y uso como agente: plausible por diseño de los tokens de acción y pensamiento, pero no validado con evaluaciones publicadas.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: del orden de 10-12 GB para los pesos; en int4: del orden de 6-8 GB, aunque no hay versiones cuantizadas publicadas en el repositorio y habría que generarlas.
 - GPU profesionales: A100 80 GB, H100 80 GB o H200 son las opciones seguras para explotar la ventana de 128K; varias A100 40 GB en tensor paralelo permiten repartir los pesos.
 - GPU de consumo: cabe en bf16 en una RTX 3090 o RTX 4090 de 24 GB si se limita la longitud de contexto y se usa atención con memoria eficiente; en una RTX 4060 Ti de 16 GB o similar solo con cuantización a 8 o 4 bits. No cabe en GPU de 8-12 GB sin cuantizar.
-- Despliegue: al ser un repositorio `transformers` con safetensors, es desplegable con transformers, vLLM, TGI o SGLang. La etiqueta `endpoints_compatible` indica compatibilidad con HuggingFace Inference Endpoints. No se incluyen ficheros GGUF, por lo que llama.cpp u Ollama exigirían una conversión previa por parte del usuario.
+- Despliegue: al ser un repositorio `transformers` con safetensors, es desplegable con transformers, vLLM, TGI o SGLang. La etiqueta `endpoints_compatible` indica compatibilidad con Hugging Face Inference Endpoints. No se incluyen ficheros GGUF, por lo que llama.cpp u Ollama exigirían una conversión previa por parte del usuario.
 - Latencia y throughput: no disponible; no se publican mediciones.
 - Nota sobre el tamaño del repositorio: 57,9 GB para 9,65 mil millones de parámetros es muy superior a lo que ocuparían los pesos en bf16 (unos 19,3 GB), lo que sugiere pesos en mayor precisión, artefactos de entrenamiento adicionales u otros ficheros auxiliares. Conviene inspeccionar el repositorio antes de descargarlo.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificados en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhiyuanhucs/spider-llava019-qwen3.5-9b-128k
+- Modelo en Hugging Face: https://huggingface.co/zhiyuanhucs/spider-llava019-qwen3.5-9b-128k
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio de inferencia: no disponible

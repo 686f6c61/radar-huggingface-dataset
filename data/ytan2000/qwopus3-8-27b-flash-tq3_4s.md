@@ -43,7 +43,7 @@ El modelo es un transformer denso basado en Qwen3.8-27B, que a su vez es un mode
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor, medidos en RTX 3090 con presupuesto de razonamiento 4096, temperatura 0.0 y seed 42. El model-index de HuggingFace no incluye resultados; los datos provienen de la model card.
+Resultados declarados por el autor, medidos en RTX 3090 con presupuesto de razonamiento 4096, temperatura 0.0 y seed 42. El model-index de Hugging Face no incluye resultados; los datos provienen de la model card.
 
 | Suite | Puntuación |
 |---|---|
@@ -84,8 +84,8 @@ Comparación directa con Qwen3.8-27B-TQ3_4S, el mismo modelo base y formato de c
 - Requiere runtime custom `llama.cpp-tq3`; los builds estándar de llama.cpp no pueden cargar archivos TQ3_4S.
 - El formato de cuantización TurboQuant TQ3_4S es propietario y no está soportado por la mayoría de herramientas del ecosistema.
 - Idioma declarado: únicamente inglés (en), aunque el modelo base Qwen podría tener capacidades multilingües no documentadas en este build.
-- El model-index de HuggingFace está vacío; los benchmarks presentados son declarados por el autor y no han sido replicados de forma independiente.
-- Descargas y likes en HuggingFace: 0, lo que indica escasa adopción o validación en producción.
+- El model-index de Hugging Face está vacío; los benchmarks presentados son declarados por el autor y no han sido replicados de forma independiente.
+- Descargas y likes en Hugging Face: 0, lo que indica escasa adopción o validación en producción.
 - El ajuste Flash sacrifica rendimiento en HumanEval y MBPP en favor de la velocidad y la finalización de tareas de agente; no es un modelo generalista de código.
 - La decodificación especulativa con MTP requiere activar `--spec-type draft-mtp` y puede no estar disponible en todos los entornos.
 - No se dispone de información sobre sesgos, alucinaciones o riesgos de seguridad; se recomienda una evaluación específica antes de un uso en producción.
@@ -93,7 +93,7 @@ Comparación directa con Qwen3.8-27B-TQ3_4S, el mismo modelo base y formato de c
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/YTan2000/Qwopus3.8-27B-Flash-TQ3_4S
+- Hugging Face del modelo: https://huggingface.co/YTan2000/Qwopus3.8-27B-Flash-TQ3_4S
 - Runtime requerido: https://github.com/turbo-tan/llama.cpp-tq3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo fuente del fine-tune: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash

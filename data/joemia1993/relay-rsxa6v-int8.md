@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`relay-rsxa6v-int8` es un checkpoint intermedio de un modelo de lenguaje de tipo causal publicado por el usuario `joemia1993` en HuggingFace. Se trata de una variante del modelo `relay-global`, construida sobre la arquitectura `Qwen2ForCausalLM` con tan solo 7 capas y un tamaño de hidden de 1024, lo que da un total de 115.458.816 parámetros. El modelo se distribuye cuantizado a 8 bits mediante bitsandbytes, con pesos almacenados como enteros de 8 bits (`I8`) más escalas por fila en `F32`.
+`relay-rsxa6v-int8` es un checkpoint intermedio de un modelo de lenguaje de tipo causal publicado por el usuario `joemia1993` en Hugging Face. Se trata de una variante del modelo `relay-global`, construida sobre la arquitectura `Qwen2ForCausalLM` con tan solo 7 capas y un tamaño de hidden de 1024, lo que da un total de 115.458.816 parámetros. El modelo se distribuye cuantizado a 8 bits mediante bitsandbytes, con pesos almacenados como enteros de 8 bits (`I8`) más escalas por fila en `F32`.
 
 El modelo se encuentra en estado de "checkpoint de entrenamiento interrumpido" (训练中断点), según declara el propio autor, y no ha sido sometido a ningún proceso de evaluación. No es, por tanto, un modelo listo para producción, sino un artefacto experimental de un pipeline de entrenamiento que se ha detenido antes de completarse.
 
@@ -81,7 +81,7 @@ La comparación es desfavorable en todos los ejes: los modelos de referencia son
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/joemia1993/relay-rsxa6v-int8
+- Hugging Face: https://huggingface.co/joemia1993/relay-rsxa6v-int8
 - Repositorio de bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes
 - Documentación de Qwen2 en transformers: https://huggingface.co/docs/transformers/model_doc/qwen2
 - Repositorio de text-generation-inference: https://github.com/huggingface/text-generation-inference

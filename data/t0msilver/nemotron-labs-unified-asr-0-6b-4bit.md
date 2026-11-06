@@ -18,7 +18,7 @@ La relevancia de esta ficha concreta es que la conversion a 4 bits reduce el pes
 | Longitud de contexto | no disponible como ventana de texto; en streaming re-codifica 5,6 s de contexto izquierdo por paso |
 | Tipos de cuantizacion | 4 bits (grupo 64) en capas Linear y Embedding; resto en bfloat16. Existen variantes bf16 (1,25 GB) y 8 bits (744 MB) |
 | Idiomas soportados | 25 idiomas europeos: bg, hr, cs, da, nl, en, et, fi, fr, de, el, hu, it, lv, lt, mt, pl, pt, ro, sk, sl, es, sv, ru, uk |
-| Licencia | OpenMDW 1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | OpenMDW 1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors en formato MLX (libreria `mlx`) |
 
 ## Arquitectura y entrenamiento
@@ -96,7 +96,7 @@ La comparacion directa con `mlx-community/nemotron-3.5-asr-streaming-0.6b-8bit` 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-4bit
+- Repositorio Hugging Face: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-4bit
 - Modelo base: https://huggingface.co/nvidia/nemotron-labs-unified-asr-0.6b
 - Variante bf16: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-bf16
 - Variante 8 bits: https://huggingface.co/T0mSIlver/nemotron-labs-unified-asr-0.6b-8bit

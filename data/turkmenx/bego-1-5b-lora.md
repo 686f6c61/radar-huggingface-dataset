@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Bego-1.5B-LoRA es un repositorio alojado en HuggingFace por el usuario turkmenx bajo el identificador `turkmenx/Bego-1.5B-LoRA`. Por el nombre se infiere que se trata de un adaptador LoRA (Low-Rank Adaptation) destinado a un modelo base de aproximadamente 1,5 mil millones de parametros, pero esta circunstancia no esta confirmada en la informacion disponible. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador LoRA y no con un modelo completo de 1,5B en precision completa.
+Bego-1.5B-LoRA es un repositorio alojado en Hugging Face por el usuario turkmenx bajo el identificador `turkmenx/Bego-1.5B-LoRA`. Por el nombre se infiere que se trata de un adaptador LoRA (Low-Rank Adaptation) destinado a un modelo base de aproximadamente 1,5 mil millones de parametros, pero esta circunstancia no esta confirmada en la informacion disponible. El repositorio ocupa 0,1 GB, un tamano coherente con pesos de adaptador LoRA y no con un modelo completo de 1,5B en precision completa.
 
-La model card publicada es la plantilla autogenerada por HuggingFace al subir un modelo con la libreria `transformers`. Todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, y el repositorio acumula cero descargas y cero likes en el momento de la consulta.
+La model card publicada es la plantilla autogenerada por Hugging Face al subir un modelo con la libreria `transformers`. Todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) figuran como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, y el repositorio acumula cero descargas y cero likes en el momento de la consulta.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter documental: sirve para dejar constancia de que el artefacto existe pero carece de la informacion minima necesaria para evaluar su uso en produccion o en investigacion. Cualquier dato que no sea el identificador, el autor, el tamano del repositorio (0,1 GB), la libreria (`transformers`), el formato de pesos (`safetensors`) y las fechas de creacion y actualizacion (14 de octubre de 2026) debe considerarse no disponible.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es, por tanto, limitada y de caracter documental: si
 
 No hay informacion sobre la arquitectura. El tag `transformers` indica unicamente que el artefacto es cargable mediante la libreria homonima, y el sufijo "LoRA" del identificador apunta a un mecanismo de ajuste fino de bajo rango (matrices de descomposicion de rango reducido inyectadas en las capas del modelo base), no a una arquitectura propia. Se desconoce si el modelo base es un transformer denso, un MoE o un hibrido, asi como su numero de capas, dimension de embedding, numero de cabezas de atencion o uso de atencion lineal.
 
-Tampoco se documenta nada sobre el entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni el rango y alpha de la LoRA, ni si hubo una fase de alineacion mediante RLHF, DPO o similares. No consta informacion sobre decodificacion especulativa ni sobre ninguna innovacion tecnica. El unico tag tecnico adicional es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculo del impacto ambiental del aprendizaje automatico; se trata de una referencia citada en la plantilla de la model card, no de un paper descriptivo del modelo. El tag `endpoints_compatible` indica simplemente que el artefacto puede desplegarse a traves de los Inference Endpoints de HuggingFace.
+Tampoco se documenta nada sobre el entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni el rango y alpha de la LoRA, ni si hubo una fase de alineacion mediante RLHF, DPO o similares. No consta informacion sobre decodificacion especulativa ni sobre ninguna innovacion tecnica. El unico tag tecnico adicional es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre el calculo del impacto ambiental del aprendizaje automatico; se trata de una referencia citada en la plantilla de la model card, no de un paper descriptivo del modelo. El tag `endpoints_compatible` indica simplemente que el artefacto puede desplegarse a traves de los Inference Endpoints de Hugging Face.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turkmenx/Bego-1.5B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/turkmenx/Bego-1.5B-LoRA
 - Referencia citada en la plantilla de la model card (calculo de impacto ambiental, no descriptiva del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Paper, repositorio, demo y blog del autor: no disponibles.

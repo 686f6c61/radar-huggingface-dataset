@@ -4,7 +4,7 @@
 
 ATF (Adaptive Tensor Format) es un formato de contenedor y runtime de inferencia local diseñado específicamente para Apple Silicon, desarrollado por amgadtewfik. Su objetivo es eliminar los cuellos de botella de des-cuantización que sufren los runtimes genéricos (como llama.cpp) al ejecutar formatos de cuantización poco comunes (IQ4_NL, Q6_K, UD-Q2_K_XL) en Metal. En lugar de des-cuantizar en CPU, ATF emplea kernels Metal escritos a mano que operan directamente sobre los pesos cuantizados, acercando la velocidad de decodificación al límite de ancho de banda de memoria unificada del hardware.
 
-El repositorio en HuggingFace contiene archivos `.atf` preconvertidos para modelos Qwen3.5-9B y Qwen3.8-27B, junto con el runtime y la herramienta de conversión. El formato es un único archivo mapeable en memoria (mmap) con cabecera de 128 bytes, lo que permite cargas en segundos y hot-swap de modelos sin reiniciar la aplicación. La licencia del formato y runtime es Apache-2.0, mientras que los pesos de los modelos siguen la licencia de Qwen. Es relevante ahora porque ofrece una alternativa optimizada para ejecutar LLMs cuantizados en Macs con 16 GB de memoria unificada, un caso de uso cada vez más común entre desarrolladores.
+El repositorio en Hugging Face contiene archivos `.atf` preconvertidos para modelos Qwen3.5-9B y Qwen3.8-27B, junto con el runtime y la herramienta de conversión. El formato es un único archivo mapeable en memoria (mmap) con cabecera de 128 bytes, lo que permite cargas en segundos y hot-swap de modelos sin reiniciar la aplicación. La licencia del formato y runtime es Apache-2.0, mientras que los pesos de los modelos siguen la licencia de Qwen. Es relevante ahora porque ofrece una alternativa optimizada para ejecutar LLMs cuantizados en Macs con 16 GB de memoria unificada, un caso de uso cada vez más común entre desarrolladores.
 
 ## Especificaciones tecnicas
 
@@ -91,6 +91,6 @@ La ventaja de ATF es su kernel Metal optimizado para formatos que en llama.cpp s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/amgadtewfik/atf
+- Repositorio Hugging Face: https://huggingface.co/amgadtewfik/atf
 - GitHub del proyecto (ATF Chat y CLI): https://github.com/amgadtewfik/atf
 - Licencia de Qwen (para pesos): https://huggingface.co/Qwen

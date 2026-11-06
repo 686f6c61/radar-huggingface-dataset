@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/arb-arab-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/arb_arab_100mb`, publicado por el usuario francisca9805 en HuggingFace. Se trata de un modelo de generacion de texto con arquitectura GPT-2 y 124.770.816 parametros (aproximadamente 125 millones), entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de HuggingFace. El identificador y el proyecto de Weights & Biases asociado (`f-padovani-university-of-groningen/new-tokenizers`) apuntan a un contexto de investigacion academica en la Universidad de Groningen, probablemente dentro de un estudio comparativo de tokenizadores o de variantes de ajuste (el sufijo `_seed10` sugiere que forma parte de un barrido de semillas).
+El modelo `francesca9805/arb-arab-100mb-ppt-mp-struct-100mb_seed10` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/arb_arab_100mb`, publicado por el usuario francisca9805 en Hugging Face. Se trata de un modelo de generacion de texto con arquitectura GPT-2 y 124.770.816 parametros (aproximadamente 125 millones), entrenado mediante Supervised Fine-Tuning (SFT) con la libreria TRL de Hugging Face. El identificador y el proyecto de Weights & Biases asociado (`f-padovani-university-of-groningen/new-tokenizers`) apuntan a un contexto de investigacion academica en la Universidad de Groningen, probablemente dentro de un estudio comparativo de tokenizadores o de variantes de ajuste (el sufijo `_seed10` sugiere que forma parte de un barrido de semillas).
 
 El modelo base `goldfish-models/arb_arab_100mb` pertenece a la familia Goldfish, una coleccion de modelos monolingues de tamano reducido centrados en idiomas de bajos recursos. El sufijo `arb` corresponde al codigo ISO 639-3 del arabe y `arab` al sistema de escritura arabe, lo que indica que el modelo esta orientado a la generacion de texto en arabe. El repo ocupa 0.3 GB y los pesos estan en formato safetensors.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/arb-arab-100mb-ppt-mp-struct-100mb_seed10 | 124,8 M | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT del modelo Goldfish arabe de 100 MB |
-| goldfish-models/arb_arab_100mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base de la familia Goldfish para arabe |
-| Otros GPT-2 pequenos multilingues | ~125 M | 1024 tokens (tipico en GPT-2) | variable | HuggingFace | Categoria general de modelos GPT-2 de ~125 M; sin datos comparativos verificados en esta ficha |
+| francesca9805/arb-arab-100mb-ppt-mp-struct-100mb_seed10 | 124,8 M | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT del modelo Goldfish arabe de 100 MB |
+| goldfish-models/arb_arab_100mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base de la familia Goldfish para arabe |
+| Otros GPT-2 pequenos multilingues | ~125 M | 1024 tokens (tipico en GPT-2) | variable | Hugging Face | Categoria general de modelos GPT-2 de ~125 M; sin datos comparativos verificados en esta ficha |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6izirtpr
 - Repositorio de TRL: https://github.com/huggingface/trl

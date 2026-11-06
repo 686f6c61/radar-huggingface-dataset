@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`ind-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un modelo de generacion de texto de 124,77 millones de parametros publicado por el usuario `francesca9805` en HuggingFace. Se trata de un ajuste fino supervisado (SFT) del checkpoint `francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`, realizado con la libreria TRL 0.23.0 sobre un transformer decoder-only de tipo GPT-2, segun la etiqueta de arquitectura declarada en el repositorio.
+`ind-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un modelo de generacion de texto de 124,77 millones de parametros publicado por el usuario `francesca9805` en Hugging Face. Se trata de un ajuste fino supervisado (SFT) del checkpoint `francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`, realizado con la libreria TRL 0.23.0 sobre un transformer decoder-only de tipo GPT-2, segun la etiqueta de arquitectura declarada en el repositorio.
 
 El modelo forma parte de una familia de experimentos de investigacion (el registro de Weights & Biases apunta a la Universidad de Groningen) centrados en tokenizadores y en la composicion de datos; los nombres "ind-latn-100mb", "Dp-100mb-packed" y "ckpt500" sugieren un corpus de aproximadamente 100 MB en alfabeto latino, un empaquetado de secuencias y el checkpoint numero 500 del entrenamiento. No se trata de un modelo orientado a produccion ni de un asistente generalista: es un artefacto de investigacion de tamano reducido.
 
@@ -37,7 +37,7 @@ La relevancia de esta ficha es acotada pero clara: sirve como referencia reprodu
 
 La etiqueta `gpt2` del repositorio y el uso de la libreria `transformers` con `pipeline("text-generation")` indican una arquitectura transformer decoder-only con atencion causal, en la linea de la familia GPT-2 (normalizacion por capas, embeddings posicionales aprendidos y tokenizador BPE). No se documenta el numero de capas, la dimension del modelo ni el numero de cabezas de atencion. Tampoco se especifica la longitud de contexto, aunque los modelos GPT-2 de referencia operan con 1024 tokens; ese dato no puede confirmarse a partir de la informacion disponible.
 
-El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el checkpoint base `ind-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`, ejecutado con TRL 0.23.0 y registrado en un run publico de Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen. El sufijo `after-ppt` sugiere que este modelo se entrena despues de una fase previa denominada "ppt"; el sufijo `ckpt500` apunta al checkpoint 500 y `seed10` a la semilla 10 del experimento. No se documenta el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas adicionales de RLHF o DPO. La model card no menciona ninguna innovacion tecnica mas alla del pipeline estandar de SFT de TRL, y las etiquetas `generated_from_trainer` y `sft` confirman que se genero automaticamente con las herramientas de HuggingFace.
+El entrenamiento consistio en un ajuste fino supervisado (SFT) sobre el checkpoint base `ind-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`, ejecutado con TRL 0.23.0 y registrado en un run publico de Weights & Biases bajo el proyecto `new-tokenizers` de la Universidad de Groningen. El sufijo `after-ppt` sugiere que este modelo se entrena despues de una fase previa denominada "ppt"; el sufijo `ckpt500` apunta al checkpoint 500 y `seed10` a la semilla 10 del experimento. No se documenta el volumen de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas adicionales de RLHF o DPO. La model card no menciona ninguna innovacion tecnica mas alla del pipeline estandar de SFT de TRL, y las etiquetas `generated_from_trainer` y `sft` confirman que se genero automaticamente con las herramientas de Hugging Face.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ind-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) | Ajuste SFT con TRL; sin benchmarks publicados |
+| ind-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) | Ajuste SFT con TRL; sin benchmarks publicados |
 | GPT-2 (124M) | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible | Referencia de la misma arquitectura; multitud de derivados y evaluaciones publicas |
 | distilgpt2 | 82 M | 1024 tokens | MIT modificada | Ampliamente disponible | Version destilada de GPT-2, mas rapida y con menor calidad |
 | Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Suite de investigacion con checkpoints intermedios y evaluaciones publicadas |
@@ -98,7 +98,7 @@ La comparacion de rendimiento frente a estas alternativas no es posible: el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/ind-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/unjwycne
 - Repositorio de TRL: https://github.com/huggingface/trl

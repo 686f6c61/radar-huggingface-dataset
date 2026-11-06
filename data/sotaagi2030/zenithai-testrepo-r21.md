@@ -85,6 +85,6 @@ No se han identificado modelos comparables específicos en la información dispo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/ZenithAI-TestRepo-r21
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/ZenithAI-TestRepo-r21
 - Perfil del autor: https://huggingface.co/SOTAagi2030
 - Página web oficial de ZenithAI (si es la misma entidad, no confirmada): https://www.zenithai.ai/

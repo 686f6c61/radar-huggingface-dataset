@@ -4,7 +4,7 @@
 
 LFM3-1.7B-MLX-6bit es una versión cuantizada a 6 bits, en formato MLX, del modelo LFM3-1.7B de Liquid AI, destinada a su ejecución en hardware Apple Silicon (Mac con chips M1/M2/M3/M4). El modelo base, LFM3-1.7B, pertenece a la familia de Liquid Foundation Models (LFM), una línea de modelos de lenguaje compactos orientados a inferencia eficiente en dispositivo. Esta variante reduce el peso del modelo a aproximadamente 1,41 GB, manteniendo 1.728.801.536 parámetros, lo que la hace adecuada para portátiles y equipos de escritorio de Apple sin necesidad de GPU dedicada.
 
-Su relevancia radica en la tendencia actual de ejecutar LLM pequeños y multilingües localmente: con soporte para 16 idiomas (incluido el castellano) y un tamaño que cabe holgadamente en la memoria unificada de cualquier Mac moderno, este modelo cubre el nicho de asistentes conversacionales y generación de texto en local. El repositorio se publica bajo la licencia propia lfm1.0 (tipo "other" en HuggingFace) y su uso recomendado es mediante la librería mlx-lm, aunque la model card indica que el soporte oficial de LFM3 en mlx-lm todavía está en proceso de integración.
+Su relevancia radica en la tendencia actual de ejecutar LLM pequeños y multilingües localmente: con soporte para 16 idiomas (incluido el castellano) y un tamaño que cabe holgadamente en la memoria unificada de cualquier Mac moderno, este modelo cubre el nicho de asistentes conversacionales y generación de texto en local. El repositorio se publica bajo la licencia propia lfm1.0 (tipo "other" en Hugging Face) y su uso recomendado es mediante la librería mlx-lm, aunque la model card indica que el soporte oficial de LFM3 en mlx-lm todavía está en proceso de integración.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ Nota: la comparativa se basa en caracteristicas genericas conocidas de los model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-6bit
+- Repositorio en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-MLX-6bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Blog de Liquid AI sobre LFM3: https://www.liquid.ai/blog/lfm3
 - Documentacion de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome

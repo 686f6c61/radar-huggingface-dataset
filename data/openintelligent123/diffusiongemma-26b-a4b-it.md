@@ -4,7 +4,7 @@
 
 DiffusionGemma es un modelo generativo de texto desarrollado por Google DeepMind, basado en la arquitectura Mixture-of-Experts (MoE) de Gemma 4. A diferencia de los modelos autoregresivos tradicionales, emplea difusión discreta para generar tokens: en lugar de predecir token a token, denoiza bloques completos de 256 tokens en paralelo mediante un sampler de difusión. Esto permite velocidades de generación muy superiores, con más de 1100 tokens por segundo en configuraciones de bajo batch size sobre una H100 en FP8.
 
-El modelo tiene 25.2 mil millones de parámetros totales (25.823.778.864 según los pesos safetensors), de los cuales solo 3.8 mil millones están activos por token gracias a su diseño MoE con 8 expertos activos de 128 totales. Soporta una ventana de contexto de hasta 256K tokens y es multimodal: procesa texto, imagen y video para generar texto. Está optimizado para inferencia de baja latencia en un solo acelerador, lo que lo hace adecuado para aplicaciones en tiempo real. Esta versión concreta en HuggingFace está publicada por el usuario Openintelligent123, aunque el modelo original pertenece a Google DeepMind y se distribuye bajo licencia Apache 2.0.
+El modelo tiene 25.2 mil millones de parámetros totales (25.823.778.864 según los pesos safetensors), de los cuales solo 3.8 mil millones están activos por token gracias a su diseño MoE con 8 expertos activos de 128 totales. Soporta una ventana de contexto de hasta 256K tokens y es multimodal: procesa texto, imagen y video para generar texto. Está optimizado para inferencia de baja latencia en un solo acelerador, lo que lo hace adecuado para aplicaciones en tiempo real. Esta versión concreta en Hugging Face está publicada por el usuario Openintelligent123, aunque el modelo original pertenece a Google DeepMind y se distribuye bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -102,8 +102,8 @@ No se dispone de datos comparativos con otros modelos de difusión como LLaDA o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (versión de Openintelligent123): https://huggingface.co/Openintelligent123/diffusiongemma-26B-A4B-it
-- Repositorio original en HuggingFace (Google): https://huggingface.co/google/diffusiongemma-26B-A4B-it
+- Repositorio en Hugging Face (versión de Openintelligent123): https://huggingface.co/Openintelligent123/diffusiongemma-26B-A4B-it
+- Repositorio original en Hugging Face (Google): https://huggingface.co/google/diffusiongemma-26B-A4B-it
 - Página del modelo en Google DeepMind: https://deepmind.google/models/gemma/diffusiongemma/
 - Documentación oficial de Google AI: https://ai.google.dev/gemma/docs/diffusiongemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/

@@ -90,6 +90,6 @@ La comparacion es estructural: los tres modelos alternativos cuentan con evaluac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgentv3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgentv3-GGUF
 - Modelo base: https://huggingface.co/mohommed/LFM3-1.7B-Frontier-SmartAgent
 - Liquid AI (familia LFM): https://www.liquid.ai/

@@ -90,5 +90,5 @@ No disponible. La informacion proporcionada no identifica los modelos base sobre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KosmoCHE/worldmodel-audit-release
+- Hugging Face: https://huggingface.co/KosmoCHE/worldmodel-audit-release
 - No se han encontrado en la busqueda web enlaces relevantes al paper, al repositorio de codigo, a demos ni a modelos base asociados. Los resultados obtenidos corresponden a paginas de pruebas de velocidad de conexion sin relacion con el modelo, por lo que no se incluyen.

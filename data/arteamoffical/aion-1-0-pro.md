@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aion-1.0-Pro es un modelo de lenguaje de 2.600 millones de parametros desarrollado por el equipo ARTEAMOffical, resultado de un fine-tuning sobre el modelo base unsloth/gemma-2-2b-it-bnb-4bit (Gemma 2 2B Instruct cuantizado a 4 bits mediante bitsandbytes). El entrenamiento se realizo con las librerias Unsloth y TRL de HuggingFace, lo que permitio un proceso aproximadamente dos veces mas rapido que un fine-tuning convencional. El modelo se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto en ingles.
+Aion-1.0-Pro es un modelo de lenguaje de 2.600 millones de parametros desarrollado por el equipo ARTEAMOffical, resultado de un fine-tuning sobre el modelo base unsloth/gemma-2-2b-it-bnb-4bit (Gemma 2 2B Instruct cuantizado a 4 bits mediante bitsandbytes). El entrenamiento se realizo con las librerias Unsloth y TRL de Hugging Face, lo que permitio un proceso aproximadamente dos veces mas rapido que un fine-tuning convencional. El modelo se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de texto en ingles.
 
 Al derivar de Gemma 2 2B, hereda una arquitectura decoder-only transformer con Grouped Query Attention y un patron de attention alternado entre ventanas locales y globales, disenado para equilibrar coste computacional y capacidad de capturar dependencias de largo alcance. Con 2,6B parametros y un repositorio de 5,3 GB en formato safetensors (precision bf16/fp16), esta pensado para despliegue en entornos con recursos limitados, incluyendo GPUs de consumo.
 
@@ -23,7 +23,7 @@ Es importante senalar que los resultados de busqueda web sobre "Aion 1.0" corres
 
 ## Arquitectura y entrenamiento
 
-Aion-1.0-Pro es un fine-tuning del modelo unsloth/gemma-2-2b-it-bnb-4bit, una version cuantizada a 4 bits de Gemma 2 2B Instruct. El entrenamiento se realizo utilizando Unsloth, una libreria de entrenamiento eficiente que acelera el proceso aproximadamente 2 veces respecto a metodos convencionales, junto con TRL (Transformer Reinforcement Learning) de HuggingFace. El autor no especifica si se emplearon tecnicas de alineacion como RLHF o DPO.
+Aion-1.0-Pro es un fine-tuning del modelo unsloth/gemma-2-2b-it-bnb-4bit, una version cuantizada a 4 bits de Gemma 2 2B Instruct. El entrenamiento se realizo utilizando Unsloth, una libreria de entrenamiento eficiente que acelera el proceso aproximadamente 2 veces respecto a metodos convencionales, junto con TRL (Transformer Reinforcement Learning) de Hugging Face. El autor no especifica si se emplearon tecnicas de alineacion como RLHF o DPO.
 
 La arquitectura subyacente corresponde a Gemma 2 2B: un transformer decoder-only con Grouped Query Attention (GQA) y un patron de attention que alterna entre ventanas locales (sliding window attention) y attention global. Este diseno reduce el coste computacional por token manteniendo la capacidad de modelar dependencias de largo alcance. El modelo base fue entrenado por Google sobre aproximadamente 2 billones de tokens, aunque los detalles del dataset de fine-tuning de Aion-1.0-Pro no han sido publicados por el autor.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
   - Se debe anadir VRAM adicional para KV cache y activaciones (tipicamente 1-2 GB).
 - GPUs recomendadas: NVIDIA RTX 3060 (12 GB), RTX 4060/4070, RTX 4090, o cualquier GPU con al menos 6 GB de VRAM para precision completa. Tambien compatible con A100/H100 para despliegue en servidor.
 - Si cabe en consumer GPU: si, en la mayoria de GPUs de consumo modernas. Con cuantizacion 4 bits puede ejecutarse en GPUs con 2-4 GB de VRAM.
-- Opciones de despliegue: Text Generation Inference (TGI), vLLM, llama.cpp (previa conversion a GGUF), Ollama, HuggingFace Transformers con accelerate.
+- Opciones de despliegue: Text Generation Inference (TGI), vLLM, llama.cpp (previa conversion a GGUF), Ollama, Hugging Face Transformers con accelerate.
 - Latencia y throughput: no disponible. Estimacion orientativa: en una RTX 4090 con precision bf16, un modelo de 2,6B puede generar tipicamente entre 50 y 150 tokens por segundo, aunque este dato no ha sido medido por el autor.
 
 ## Comparativa con modelos similares
@@ -83,14 +83,14 @@ Nota: la comparativa se basa en especificaciones publicas de cada modelo. No se 
 - La reproduccion del entrenamiento no es posible con la informacion disponible, ya que el autor no documenta el proceso completo.
 - Aunque el modelo se publica bajo Apache 2.0, deriva de Gemma 2, que tiene su propia licencia con condiciones de uso aceptable. Es necesario verificar la compatibilidad de ambas licencias para uso comercial en produccion.
 - El modelo no incluye soporte nativo de tool calling ni capacidades multimodales, lo que limita su uso en aplicaciones agente o en tareas que requieran entrada visual o auditiva.
-- El repositorio presenta 0 descargas y 0 likes en HuggingFace, lo que sugiere que el modelo no ha sido validado por la comunidad.
+- El repositorio presenta 0 descargas y 0 likes en Hugging Face, lo que sugiere que el modelo no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ARTEAMOffical/Aion-1.0-Pro
+- Repositorio Hugging Face: https://huggingface.co/ARTEAMOffical/Aion-1.0-Pro
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-2-2b-it-bnb-4bit
 - Gemma 2 2B IT (Google): https://huggingface.co/google/gemma-2-2b-it
 - Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
-- TRL (libreria de HuggingFace): https://github.com/huggingface/trl
+- TRL (libreria de Hugging Face): https://github.com/huggingface/trl
 
 Nota: los resultados de busqueda web sobre "Aion 1.0" corresponden a proyectos no relacionados (Microsoft Aion 1.0 Instruct/Plan y AionLabs Aion-1.0). No se han incluido como enlaces de referencia por carecer de relacion con este modelo.

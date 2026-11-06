@@ -106,7 +106,7 @@ Se mencionan tambien variantes INT8 estatico calibrado e int4 RTN y un decoder I
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ekhodzitsky/parakeet-tdt-0.6b-v3-onnx-weights-only-int8
+- Modelo en Hugging Face: https://huggingface.co/ekhodzitsky/parakeet-tdt-0.6b-v3-onnx-weights-only-int8
 - Export ONNX FP32 de la comunidad (istupakov): https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Proyecto polyvoice: https://github.com/ekhodzitsky/polyvoice

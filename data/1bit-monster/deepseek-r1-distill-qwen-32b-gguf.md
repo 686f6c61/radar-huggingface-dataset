@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (1bit-MONSTER) | 32,7B | no disponible | MIT | GGUF (Q4_K_M) | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | 32,7B | no disponible | MIT | safetensors | HuggingFace |
-| bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF | 32,7B | no disponible | MIT | GGUF (varias cuantizaciones) | HuggingFace |
+| Este modelo (1bit-MONSTER) | 32,7B | no disponible | MIT | GGUF (Q4_K_M) | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-32B | 32,7B | no disponible | MIT | safetensors | Hugging Face |
+| bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF | 32,7B | no disponible | MIT | GGUF (varias cuantizaciones) | Hugging Face |
 
 ## Limitaciones y advertencias
 - Sesgos conocidos: no documentados.
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K,
 - La fecha de creación (2026) es inusual y podría indicar un error en los metadatos.
 
 ## Enlaces
-- [HuggingFace: 1bit-MONSTER/DeepSeek-R1-Distill-Qwen-32B-GGUF](https://huggingface.co/1bit-MONSTER/DeepSeek-R1-Distill-Qwen-32B-GGUF)
+- [Hugging Face: 1bit-MONSTER/DeepSeek-R1-Distill-Qwen-32B-GGUF](https://huggingface.co/1bit-MONSTER/DeepSeek-R1-Distill-Qwen-32B-GGUF)
 - [Modelo base: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B](https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-32B)
 - [Cuantización original: bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF](https://huggingface.co/bartowski/DeepSeek-R1-Distill-Qwen-32B-GGUF)
 - [Repositorio del motor 1bit](https://github.com/1bit-MONSTER/engine)

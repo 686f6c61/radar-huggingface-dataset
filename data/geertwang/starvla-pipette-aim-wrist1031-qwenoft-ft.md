@@ -68,7 +68,7 @@ El propio autor advierte que el checkpoint se seleccionó sobre el mismo holdout
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| starVLA QwenOFT + wrist (este) | no disponible | no disponible | Pipeteo paso 3 en Unitree G1 | no disponible | HuggingFace, 0 descargas |
+| starVLA QwenOFT + wrist (este) | no disponible | no disponible | Pipeteo paso 3 en Unitree G1 | no disponible | Hugging Face, 0 descargas |
 | starVLA R3 steps_2628 (checkpoint de partida) | no disponible | no disponible | Tarea de inserción con cabeza `aug3 INSERT` | no disponible | Referenciado en la model card |
 | Otros VLA open source (p. ej. OpenVLA, π0) | no disponible en esta ficha | no disponible | Manipulación generalista | no disponible | no disponible |
 
@@ -87,5 +87,5 @@ No se dispone de datos comparativos verificables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-ft
+- Modelo en Hugging Face: https://huggingface.co/GeertWang/starvla-pipette-aim-wrist1031-qwenoft-ft
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

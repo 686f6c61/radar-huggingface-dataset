@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franklalalala/temp-vanda-soc6888-20260912-shard-303 es un repositorio de modelo alojado en HuggingFace, publicado por el usuario Franklalalala el 12 de septiembre de 2026. El repositorio no incluye model card, no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y en el momento de la consulta acumula 0 descargas y 1 like. Se trata, por tanto, de un artefacto sin metadatos verificables.
+Franklalalala/temp-vanda-soc6888-20260912-shard-303 es un repositorio de modelo alojado en Hugging Face, publicado por el usuario Franklalalala el 12 de septiembre de 2026. El repositorio no incluye model card, no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura, y en el momento de la consulta acumula 0 descargas y 1 like. Se trata, por tanto, de un artefacto sin metadatos verificables.
 
 El propio identificador aporta la única informacion estructural disponible: el prefijo "temp" sugiere un artefacto de caracter temporal, la secuencia "20260912" coincide con la fecha de creacion y el sufijo "shard-303" apunta a un fragmento numerado dentro de una subida particionada. Esta lectura es una inferencia a partir del nombre y no esta confirmada por ningun campo del repositorio ni por documentacion adjunta. No hay evidencia de que el shard contenga un modelo completo y ejecutable, ni de que existan los shards restantes en el mismo espacio de nombres.
 
@@ -97,7 +97,7 @@ No es posible establecer una comparativa. Sin conocer la categoría del modelo (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Franklalalala/temp-vanda-soc6888-20260912-shard-303
+- Repositorio en Hugging Face: https://huggingface.co/Franklalalala/temp-vanda-soc6888-20260912-shard-303
 - Paper, blog o repositorio de código asociado: no disponible; no se ha encontrado ninguna referencia.
 - Demo o espacio de inferencia: no disponible.
 - Búsqueda web: los resultados devueltos corresponden a centros educativos de Beerse (Bélgica) y no guardan relación con el modelo. No se ha encontrado ningún enlace relevante adicional.

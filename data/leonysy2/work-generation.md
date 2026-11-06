@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Leonysy2/work-generation` es un repositorio alojado en HuggingFace por el usuario Leonysy2 que contiene una implementación funcional del modelo BLIP orientada a tareas de generación, con una configuración declarada como "huge". No se trata de un modelo entrenado y publicado para uso en producción: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`Leonysy2/work-generation` es un repositorio alojado en Hugging Face por el usuario Leonysy2 que contiene una implementación funcional del modelo BLIP orientada a tareas de generación, con una configuración declarada como "huge". No se trata de un modelo entrenado y publicado para uso en producción: la propia model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 La relevancia del repositorio es, por tanto, fundamentalmente didáctica o de punto de partida experimental: el código de Python (`main.py`) y los ficheros de configuración (`config.json`, `training_args.json`) permiten reproducir una receta de entrenamiento con optimizador LAMB y programación polinómica, pero no hay evidencia de que se haya completado ningún entrenamiento. Los metadatos de safetensors reportan 16.576 parámetros totales, una cifra extraordinariamente pequeña que entra en contradicción con la escala "huge" declarada en la configuración y con el tamaño del repositorio (0,0 GB).
 
@@ -89,5 +89,5 @@ No disponible. La información proporcionada no incluye especificaciones verific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leonysy2/work-generation
+- Hugging Face: https://huggingface.co/Leonysy2/work-generation
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados obtenidos corresponden a Leonardo AI y a inteligencia artificial generativa en general, sin relación con el repositorio.

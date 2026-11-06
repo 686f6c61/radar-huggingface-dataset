@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/DanKau/gliner2-multi-v1-onnx)
+- [Modelo en Hugging Face](https://huggingface.co/DanKau/gliner2-multi-v1-onnx)
 - [Modelo base: fastino/gliner2-multi-v1](https://huggingface.co/fastino/gliner2-multi-v1)
 - [Repositorio GLiNER2 original](https://github.com/fastino-ai/GLiNER2)
 - [Repositorio gliner2-onnx](https://github.com/lmoe/gliner2-onnx)

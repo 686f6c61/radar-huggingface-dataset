@@ -68,8 +68,8 @@ No hay datos comparativos en las fuentes consultadas. Se puede comparar con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hitsfmdj/Qwen3.8-27B-GGUF-4.2BPW-16GB
-- Modelo base de Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio de Hugging Face: https://huggingface.co/hitsfmdj/Qwen3.8-27B-GGUF-4.2BPW-16GB
+- Modelo base de Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de cuantizaciones GGUF: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/
 - Tutorial de ejecución local con Ollama y GGUF: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

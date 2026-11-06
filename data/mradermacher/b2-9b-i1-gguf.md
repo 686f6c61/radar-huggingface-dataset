@@ -93,7 +93,7 @@ No disponible. No es posible construir una comparativa rigurosa porque se descon
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/B2-9B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/B2-9B-i1-GGUF
 - Modelo base: https://huggingface.co/schneewolflabs/B2-9B
 - Repositorio del autor (mradermacher): https://huggingface.co/mradermacher
 - Documentacion de llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch4` es un checkpoint experimental de generacion de texto publicado en HuggingFace por el usuario `Lanni-ni`. Se trata de un modelo pequeno, con un total de 45.703.320 parametros, que parece estar orientado a la investigacion en tecnicas de entrenamiento que mitigan el olvido catastrofico, como sugiere el nombre "dynamic_forgetting" (olvido dinamico). La referencia a "babylm" indica que probablemente fue entrenado sobre alguno de los corpus del desafio BabyLM, pensado para estudiar el aprendizaje del lenguaje con datos limitados. Sin embargo, la model card del autor es generica y no aporta informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados. El nombre del checkpoint incluye "4_6_384", que podria indicar 4 capas, 6 cabezas de atencion y 384 dimensiones ocultas, aunque no hay confirmacion oficial. Su tamano de repositorio es de 0,2 GB, lo que lo convierte en un modelo muy ligero, adecuado para experimentos en entornos con recursos limitados.
+El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch4` es un checkpoint experimental de generacion de texto publicado en Hugging Face por el usuario `Lanni-ni`. Se trata de un modelo pequeno, con un total de 45.703.320 parametros, que parece estar orientado a la investigacion en tecnicas de entrenamiento que mitigan el olvido catastrofico, como sugiere el nombre "dynamic_forgetting" (olvido dinamico). La referencia a "babylm" indica que probablemente fue entrenado sobre alguno de los corpus del desafio BabyLM, pensado para estudiar el aprendizaje del lenguaje con datos limitados. Sin embargo, la model card del autor es generica y no aporta informacion sobre arquitectura, datos de entrenamiento, licencia ni idiomas soportados. El nombre del checkpoint incluye "4_6_384", que podria indicar 4 capas, 6 cabezas de atencion y 384 dimensiones ocultas, aunque no hay confirmacion oficial. Su tamano de repositorio es de 0,2 GB, lo que lo convierte en un modelo muy ligero, adecuado para experimentos en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch4` es un c
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura del modelo. La model card de HuggingFace es una plantilla autogenerada en la que todos los campos relevantes aparecen como `[More Information Needed]`. El nombre del checkpoint sugiere que se aplico alguna tecnica de "dynamic forgetting" durante el entrenamiento, posiblemente sobre el corpus BabyLM, pero no existe documentacion tecnica que describa la arquitectura, el numero de tokens de entrenamiento, la composicion del dataset, ni si se utilizaron tecnicas como RLHF o DPO. Tampoco se especifica si se trata de un modelo transformer puro, una variante MoE o una arquitectura hibrida. Por tanto, todos los detalles de entrenamiento estan, a dia de hoy, sin documentar.
+No se ha publicado informacion detallada sobre la arquitectura del modelo. La model card de Hugging Face es una plantilla autogenerada en la que todos los campos relevantes aparecen como `[More Information Needed]`. El nombre del checkpoint sugiere que se aplico alguna tecnica de "dynamic forgetting" durante el entrenamiento, posiblemente sobre el corpus BabyLM, pero no existe documentacion tecnica que describa la arquitectura, el numero de tokens de entrenamiento, la composicion del dataset, ni si se utilizaron tecnicas como RLHF o DPO. Tampoco se especifica si se trata de un modelo transformer puro, una variante MoE o una arquitectura hibrida. Por tanto, todos los detalles de entrenamiento estan, a dia de hoy, sin documentar.
 
 ## Capacidades
 
@@ -61,6 +61,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch4
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_babylm_10m_seed44_epoch4
 
 La busqueda web no ha devuelto enlaces oficiales adicionales sobre este modelo. El unico paper citado en la model card (arXiv:1910.09700) corresponde al articulo sobre el calculador de impacto medioambiental de Lacoste et al., no al modelo en si.

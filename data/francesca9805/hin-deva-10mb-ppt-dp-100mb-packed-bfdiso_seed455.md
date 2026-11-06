@@ -4,7 +4,7 @@
 
 El modelo `hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del checkpoint `goldfish-models/hin_deva_10mb`, un modelo monolingüe de la familia Goldfish orientado al hindi en escritura devanagari y entrenado sobre un corpus de 10 MB. El ajuste lo ha realizado el usuario `francesca9805` (F. Padovani, University of Groningen, según la traza de Weights & Biases incluida en la model card) utilizando la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1+cu121.
 
-Se trata de un modelo muy pequeno: 39.087.104 parámetros (aproximadamente 39 M), empaquetado en safetensors dentro de un repositorio de 0,1 GB. La etiqueta `gpt2` en HuggingFace indica que la arquitectura subyacente es la de la familia GPT-2 (transformer decoder-only con atención causal), lo que implica un modelo de propósito general para generación de texto sin mecanismos modernos como MoE, atención lineal o decodificación especulativa.
+Se trata de un modelo muy pequeno: 39.087.104 parámetros (aproximadamente 39 M), empaquetado en safetensors dentro de un repositorio de 0,1 GB. La etiqueta `gpt2` en Hugging Face indica que la arquitectura subyacente es la de la familia GPT-2 (transformer decoder-only con atención causal), lo que implica un modelo de propósito general para generación de texto sin mecanismos modernos como MoE, atención lineal o decodificación especulativa.
 
 Su relevancia es fundamentalmente experimental: forma parte de una serie de réplicas con distintas semillas (`seed455`, `seed10`, etc.) y distintos volúmenes de datos empaquetados, pensadas para estudiar el efecto del empaquetado de secuencias y del ajuste fino SFT en modelos multilingües de bajos recursos. No es un modelo destinado a producción, sino a investigación sobre entrenamiento eficiente y currículos de datos en lenguas con pocos recursos.
 
@@ -45,12 +45,12 @@ El entrenamiento consiste en un ajuste fino supervisado (SFT) mediante TRL sobre
 - Reproducibilidad de experimentos de SFT con TRL: al declarar las versiones exactas de TRL, Transformers, PyTorch, Datasets y Tokenizers, permite replicar el pipeline de ajuste supervisado en un entorno controlado.
 - Generacion de texto sintetico en hindi para aumento de datos: con 39 M de parametros puede producir continuaciones cortas que, filtradas adecuadamente, sirven para preentrenar o aumentar otros modelos mayores en la misma lengua.
 - Pruebas de despliegue en entornos con recursos minimos: dado su tamano, es adecuado para validar pipelines de inferencia (TGI, vLLM, endpoints compatibles) antes de escalar a modelos grandes, sin consumir GPU practicamente.
-- Docencia y practicas de ajuste fino: es un candidato idoneo para que estudiantes ejecuten un ciclo completo de SFT, evaluacion y publicacion en HuggingFace en una unica GPU o en CPU.
+- Docencia y practicas de ajuste fino: es un candidato idoneo para que estudiantes ejecuten un ciclo completo de SFT, evaluacion y publicacion en Hugging Face en una unica GPU o en CPU.
 - Analisis de sesgos y alucinacion en modelos pequenos: sirve como caso base para medir como un modelo de 39 M entrenado con 100 MB de datos falla, repite o inventa contenido en hindi, y compararlo con modelos multilingues de mayor tamano.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y el repositorio de HuggingFace no aporta resultados de evaluacion adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y el repositorio de Hugging Face no aporta resultados de evaluacion adicionales.
 
 ## Requisitos de hardware
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Ajuste SFT sobre el modelo base Goldfish |
-| `goldfish-models/hin_deva_10mb` | no disponible | no disponible | no disponible | HuggingFace | Modelo base del anterior; monolingue hindi/devangari con 10 MB de datos |
-| Otros checkpoints de la misma serie (`seed10`, `seed455`, variantes `10mb` y `100mb`) | no disponible | no disponible | no disponible | HuggingFace y FriendliAI | Replicas con distintas semillas y volumenes de datos empaquetados |
-| GPT-2 small | 124 M | 1024 tokens | MIT (segun la publicacion original) | Amplia en HuggingFace | Alternativa de referencia en la misma familia arquitectonica, tres veces mayor |
+| `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed455` | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Ajuste SFT sobre el modelo base Goldfish |
+| `goldfish-models/hin_deva_10mb` | no disponible | no disponible | no disponible | Hugging Face | Modelo base del anterior; monolingue hindi/devangari con 10 MB de datos |
+| Otros checkpoints de la misma serie (`seed10`, `seed455`, variantes `10mb` y `100mb`) | no disponible | no disponible | no disponible | Hugging Face y FriendliAI | Replicas con distintas semillas y volumenes de datos empaquetados |
+| GPT-2 small | 124 M | 1024 tokens | MIT (segun la publicacion original) | Amplia en Hugging Face | Alternativa de referencia en la misma familia arquitectonica, tres veces mayor |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas, por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/wz3wdqu1
 - Repositorio de TRL: https://github.com/huggingface/trl

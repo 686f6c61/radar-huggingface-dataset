@@ -6,7 +6,7 @@ Qwen3.8-27B-QSA-GGUF es una instantánea de despliegue cuantizada en Q8_0 del mo
 
 La relevancia de esta publicación es doble. Por un lado, ofrece un punto de partida reproducible para ejecutar un modelo multimodal de ~27B con ventana de contexto de hasta 262.144 tokens en hardware de dos GPU de 32 GB. Por otro, documenta de forma explícita una experimentación de velocidad: el autor mide 48,94 token/s sin contexto añadido y 41,07 token/s con 261.120 tokens de entrada, con una caída del 16,08 %. El propio autor advierte de que se trata de un experimento de rendimiento y no de una prueba de preservación de la inteligencia general del modelo.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace y en la model card del autor. No hay datos de benchmarks de calidad, idiomas soportados ni resultados comparativos con modelos similares, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en la información publicada en Hugging Face y en la model card del autor. No hay datos de benchmarks de calidad, idiomas soportados ni resultados comparativos con modelos similares, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-GGUF
+- Modelo en Hugging Face: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-GGUF
 - Pesos BF16 de origen: https://huggingface.co/higa2515/Qwen3.8-27B-QSA-MM2-BF16
 - Runtime base: https://github.com/pentaCoxian/Qwen-V100-llama.cpp (commit `6209237df53569f07429f3f79fc5354de5fe704f`)
 - Repositorio del motor preparado: https://github.com/kuraneko1/Qwen3.8-27B-QSA-llama.cpp

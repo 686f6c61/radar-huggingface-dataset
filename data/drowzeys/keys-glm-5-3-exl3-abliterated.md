@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`drowzeys/keys-GLM-5.3-EXL3-Abliterated` es una cuantización de 3 bits en formato EXL3 (ExLlamaV3) del modelo base `zai-org/GLM-5.3`, publicada por el usuario drowzeys. Se trata de un modelo de generación de texto de arquitectura MoE con 165.028.098.048 parámetros totales, empaquetado en safetensors y orientado a su ejecución con vLLM y ExLlamaV3. El repositorio ocupa 330,2 GB y está sujeto a acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+`drowzeys/keys-GLM-5.3-EXL3-Abliterated` es una cuantización de 3 bits en formato EXL3 (ExLlamaV3) del modelo base `zai-org/GLM-5.3`, publicada por el usuario drowzeys. Se trata de un modelo de generación de texto de arquitectura MoE con 165.028.098.048 parámetros totales, empaquetado en safetensors y orientado a su ejecución con vLLM y ExLlamaV3. El repositorio ocupa 330,2 GB y está sujeto a acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La ficha se apoya únicamente en los metadatos públicos del repositorio. Las etiquetas declaradas por el autor indican `glm_moe_dsa`, `exl3`, `3-bit`, `1m-context`, `mtp`, `abliterated` y `derisked`, además de referencias explícitas a `dgx-spark` y `gb10` (plataforma NVIDIA GB10 Grace Blackwell). Esto sugiere una ventana de contexto de 1.000.000 de tokens, predicción multi-token (MTP) y la supresión de direcciones de rechazo propias del alineamiento de seguridad del modelo original, pero no se ha podido confirmar ninguno de estos extremos con documentación técnica adicional, ya que la búsqueda web no devolvió resultados relevantes.
 
@@ -86,14 +86,14 @@ No se dispone de información suficiente para comparar con alternativas de otros
 - Contexto declarado sin verificar: la ventana de 1.000.000 de tokens proviene únicamente de una etiqueta del repositorio; no hay evaluación publicada de recuperación de información en contextos largos ni de degradación con la distancia.
 - Idiomas: no disponible. No se puede garantizar un rendimiento adecuado en castellano ni en otros idiomas distintos de los del modelo base.
 - Licencia: el repositorio declara MIT, pero el modelo deriva de `zai-org/GLM-5.3`, cuyos términos no se detallan en la información disponible. Verifique la licencia del modelo base y las condiciones del acceso gated antes de cualquier uso comercial.
-- Acceso restringido: la descarga requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de despliegues.
+- Acceso restringido: la descarga requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de despliegues.
 - Huella de memoria: 330,2 GB de repositorio y más de 60 GB de pesos en memoria hacen inviable su uso en hardware de consumo y complican el almacenamiento y la distribución.
 - Trazabilidad limitada: la ficha del repositorio no documenta el proceso de abliteración ni el conjunto de calibración de la cuantización, lo que dificulta auditar el modelo.
 - Sin benchmarks: no hay ningún resultado publicado que permita situar su rendimiento frente a alternativas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-Abliterated
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Paper, blog o repositorio asociados: no disponible en la información proporcionada
 - Demos: no disponible en la información proporcionada

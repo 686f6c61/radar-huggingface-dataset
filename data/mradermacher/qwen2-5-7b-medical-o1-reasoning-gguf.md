@@ -92,10 +92,10 @@ La comparacion con Qwen2.5-7B-Instruct y BioMistral-7B se incluye unicamente com
 
 ## Enlaces
 
-- HuggingFace (repositorio GGUF): https://huggingface.co/mradermacher/Qwen2.5-7B-Medical-O1-Reasoning-GGUF
+- Hugging Face (repositorio GGUF): https://huggingface.co/mradermacher/Qwen2.5-7B-Medical-O1-Reasoning-GGUF
 - Modelo base: https://huggingface.co/thepoliticalscientist/Qwen2.5-7B-Medical-O1-Reasoning
 - Pagina de resumen del cuantizador para este modelo: https://hf.tst.eu/model#Qwen2.5-7B-Medical-O1-Reasoning-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Repositorio de Qwen2.5 (referencia): https://github.com/mx4ai/qwen2.5
 - Blog oficial de Qwen2.5: https://qwen.ai/blog?id=qwen2.5

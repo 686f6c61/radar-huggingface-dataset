@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tune experimental del modelo `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que se trata de un experimento de "inoculación" mediante prompting, una técnica que busca reducir alucinaciones o sesgos en el modelo mediante la exposición controlada a ejemplos adversos o incorrectos durante el ajuste fino. Sin embargo, la model card no ofrece ningún detalle sobre el dataset, el método de entrenamiento ni los objetivos concretos.
 
-Se trata de un modelo de generación de texto en inglés, con licencia Apache-2.0, entrenado con las librerías Unsloth y TRL de HuggingFace. Al ser un fine-tune de OLMo-3-7B-Instruct, hereda la arquitectura transformer de la serie OLMo-3, aunque no se especifican los parámetros exactos ni la longitud de contexto en esta página. Su relevancia radica en que forma parte de una serie de experimentos de seguridad y alineación (hay variantes con nombres similares como `sft-seed2`, `sft-seed3`, etc.), pero carece de documentación que permita evaluar su utilidad práctica más allá de la investigación.
+Se trata de un modelo de generación de texto en inglés, con licencia Apache-2.0, entrenado con las librerías Unsloth y TRL de Hugging Face. Al ser un fine-tune de OLMo-3-7B-Instruct, hereda la arquitectura transformer de la serie OLMo-3, aunque no se especifican los parámetros exactos ni la longitud de contexto en esta página. Su relevancia radica en que forma parte de una serie de experimentos de seguridad y alineación (hay variantes con nombres similares como `sft-seed2`, `sft-seed3`, etc.), pero carece de documentación que permita evaluar su utilidad práctica más allá de la investigación.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Se trata de un modelo de generación de texto en inglés, con licencia Apache-2.
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) y el TRL de HuggingFace, pero no se proporcionan detalles sobre el número de tokens, la composición del dataset ni si se usaron técnicas como RLHF o DPO. El nombre del modelo sugiere que se empleó una técnica de "inoculation prompting", consistente en entrenar al modelo para que reconozca y rechace entradas engañosas o incorrectas, aunque no hay evidencia en la documentación que confirme esta hipótesis.
+El modelo es un fine-tune del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. El entrenamiento se realizó con la librería Unsloth (que acelera el fine-tuning) y el TRL de Hugging Face, pero no se proporcionan detalles sobre el número de tokens, la composición del dataset ni si se usaron técnicas como RLHF o DPO. El nombre del modelo sugiere que se empleó una técnica de "inoculation prompting", consistente en entrenar al modelo para que reconozca y rechace entradas engañosas o incorrectas, aunque no hay evidencia en la documentación que confirme esta hipótesis.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - Al ser un modelo de aproximadamente 7B parámetros (heredado del base), se estima que requiere al menos 14 GB de VRAM en FP16, unos 7 GB en cuantización de 8 bits y unos 4 GB en 4 bits. Estas cifras son orientativas y no están confirmadas para este fine-tune concreto.
 - GPU recomendadas: tarjetas con 16 GB o más (RTX 4090, A100, H100) para inferencia en FP16; GPUs de 8 GB pueden funcionar con cuantización.
-- Opciones de despliegue: compatible con HuggingFace Transformers, TGI (text-generation-inference), y plataformas como FriendliAI. También puede usarse con llama.cpp si se convierte a GGUF, aunque no se indica soporte oficial.
+- Opciones de despliegue: compatible con Hugging Face Transformers, TGI (text-generation-inference), y plataformas como FriendliAI. También puede usarse con llama.cpp si se convierte a GGUF, aunque no se indica soporte oficial.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No hay datos comparativos publicados. Existen otras variantes del mismo autor (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting-seed3
 - Variante sin seed: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting
 - Variante sft seed3: https://huggingface.co/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-sft-seed3
 - Despliegue en FriendliAI: https://friendli.ai/models/longtermrisk/OLMo-3-7B-good-vs-bad-mixed-multifact-inoculation-prompting

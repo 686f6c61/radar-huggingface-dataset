@@ -80,11 +80,11 @@ Gemma 4 E4B se posiciona como una alternativa más ligera que Llama 3.2 3B en cu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tbhrc/unsloth_gemma_4_e4b_it_qat_oq4
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-E4B-it-qat-q4_0-unquantized
+- Repositorio en Hugging Face: https://huggingface.co/tbhrc/unsloth_gemma_4_e4b_it_qat_oq4
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-E4B-it-qat-q4_0-unquantized
 - Documentación de Gemma 4 en Unsloth: https://unsloth.ai/docs/models/gemma-4
 - Guía de fine-tuning de Gemma 4 con Unsloth: https://unsloth.ai/docs/models/gemma-4/train
 - Discusión de Unsloth sobre Gemma 4 en GitHub: https://github.com/unslothai/unsloth/discussions/4800
-- Colección de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Documentación oficial de Gemma 4: https://ai.google.dev/gemma/docs/core

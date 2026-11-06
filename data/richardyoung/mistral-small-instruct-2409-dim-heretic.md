@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Small-Instruct-2409-DiM-heretic es un ajuste fino derivado de Mistral-Small-Instruct-2409, el modelo instruct de 22.000 millones de parametros publicado por Mistral AI en septiembre de 2024. Lo desarrolla el usuario richardyoung y se distribuye en HuggingFace bajo la libreria vLLM. Su rasgo distintivo es el proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored, abliterated), una tecnica de modificacion de pesos que busca reducir la tendencia del modelo base a rechazar peticiones, manteniendo el resto de capacidades del modelo original.
+Mistral-Small-Instruct-2409-DiM-heretic es un ajuste fino derivado de Mistral-Small-Instruct-2409, el modelo instruct de 22.000 millones de parametros publicado por Mistral AI en septiembre de 2024. Lo desarrolla el usuario richardyoung y se distribuye en Hugging Face bajo la libreria vLLM. Su rasgo distintivo es el proceso de "abliteration" o "decensoring" (etiquetado como heretic, uncensored, abliterated), una tecnica de modificacion de pesos que busca reducir la tendencia del modelo base a rechazar peticiones, manteniendo el resto de capacidades del modelo original.
 
 El modelo conserva la arquitectura transformer densa del Mistral-Small original, con 22.247.282.688 parametros totales y un repositorio de 44,5 GB en formato safetensors. Hereda el soporte multilingue del modelo base (ingles, frances, aleman, espanol, italiano, portugues, chino, japones, ruso y coreano) y esta pensado para su despliegue con vLLM.
 
@@ -86,7 +86,7 @@ La comparacion directa con alternativas de la misma categoria (por ejemplo, otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-DiM-heretic
+- Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-DiM-heretic
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-Instruct-2409
 - Licencia MRL-0.1: https://mistral.ai/licenses/MRL-0.1.md
 - Contacto de licencias de Mistral AI: https://mistral.ai/contact/

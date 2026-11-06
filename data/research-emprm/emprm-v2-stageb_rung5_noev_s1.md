@@ -102,7 +102,7 @@ No se dispone de datos comparativos con modelos de recompensa de terceros en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s1
+- Modelo en Hugging Face: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-stageB_rung5_noev_s1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Adaptador de inicializacion: https://huggingface.co/RESEARCH-EMPRM/emprm-v2-a2_support_s0
 - Dataset de sincronizacion de artefactos (resultados, configs, prompts, `EXPERIMENT_REGISTRY.csv`, `CURRENT.md`, `WRITER_SYNC_BUNDLE.md`): https://huggingface.co/datasets/evergyu/emprm-sync-20260910

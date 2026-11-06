@@ -76,11 +76,11 @@ El autor advierte que WikiANN es etiquetado automático y de estilo periodístic
 
 | Modelo | Parámetros | Contexto | F1 (WikiANN-tr) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emi08/maske-modernbert-tr-bakeoff | ~150M | no disponible | 0.929 | Apache-2.0 | HuggingFace, 46 descargas |
-| emi08/maske-berturk-baseline | no disponible | no disponible | 0.929 | no disponible | HuggingFace |
-| savasy/bert-base-turkish-ner-cased | ~110M (BERT base) | 512 | 0.925 | no disponible | HuggingFace |
-| Werea-co/Werea-TR-NER | ~110M (BERT base) | 512 | 0.912 | no disponible | HuggingFace |
-| akdeniz27/bert-base-turkish-cased-ner | ~110M (BERT base) | 512 | 0.673 | no disponible | HuggingFace |
+| emi08/maske-modernbert-tr-bakeoff | ~150M | no disponible | 0.929 | Apache-2.0 | Hugging Face, 46 descargas |
+| emi08/maske-berturk-baseline | no disponible | no disponible | 0.929 | no disponible | Hugging Face |
+| savasy/bert-base-turkish-ner-cased | ~110M (BERT base) | 512 | 0.925 | no disponible | Hugging Face |
+| Werea-co/Werea-TR-NER | ~110M (BERT base) | 512 | 0.912 | no disponible | Hugging Face |
+| akdeniz27/bert-base-turkish-cased-ner | ~110M (BERT base) | 512 | 0.673 | no disponible | Hugging Face |
 
 La diferencia práctica frente a las alternativas BERTurk es marginal en F1; la ventaja de esta variante está en la base ModernBERT (mantenimiento activo, arquitectura más reciente, potencial de contexto largo) y no en la métrica.
 
@@ -99,7 +99,7 @@ La diferencia práctica frente a las alternativas BERTurk es marginal en F1; la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emi08/maske-modernbert-tr-bakeoff
+- Modelo en Hugging Face: https://huggingface.co/emi08/maske-modernbert-tr-bakeoff
 - Repositorio GitHub del proyecto: https://github.com/emi0890/maske
 - Modelo de PII de 19 etiquetas: https://huggingface.co/emi08/maske
 - Baseline BERTurk: https://huggingface.co/emi08/maske-berturk-baseline

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-35B-A3B-MLX-8bit es la versión cuantizada a 8 bits del modelo base ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario pengyixuan en HuggingFace. Se trata de un modelo de lenguaje multimodal (entrada de texto e imagen) con arquitectura de mezcla de expertos (MoE) que suma unos 34.660 millones de parámetros totales, pero solo activa aproximadamente 3.000 millones por token (variante A3B). El objetivo de esta ficha es evaluar una conversión de pesos orientada específicamente a inferencia local en Apple Silicon mediante el framework MLX.
+Ornith-1.5-35B-A3B-MLX-8bit es la versión cuantizada a 8 bits del modelo base ornith-ai/Ornith-1.5-35B-A3B, publicada por el usuario pengyixuan en Hugging Face. Se trata de un modelo de lenguaje multimodal (entrada de texto e imagen) con arquitectura de mezcla de expertos (MoE) que suma unos 34.660 millones de parámetros totales, pero solo activa aproximadamente 3.000 millones por token (variante A3B). El objetivo de esta ficha es evaluar una conversión de pesos orientada específicamente a inferencia local en Apple Silicon mediante el framework MLX.
 
 El modelo base está licenciado bajo MIT y se orienta a generación de código, razonamiento complejo, uso de herramientas (tool calling) y tareas de agente, con una ventana de contexto nativa de 256K tokens. La cuantización a 8 bits reduce el peso de los pesos de aproximadamente 70 GB (BF16) a unos 36 GB reales, lo que permite ejecutarlo en equipos Mac con 48 GB de memoria unificada o más. El repositorio ocupa 36,8 GB.
 

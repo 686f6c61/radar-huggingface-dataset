@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/akpsahan/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/akpsahan/gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/gemma-4-26B-A4B-it-ultra-uncensored-heretic
 - Repositorio estatico de cuantizaciones (mradermacher): https://huggingface.co/mradermacher/gemma-4-26B-A4B-it-ultra-uncensored-heretic-GGUF
 - Pagina de descarga conveniente (hf.tst.eu): https://hf.tst.eu/model#gemma-4-26B-A4B-it-ultra-uncensored-heretic-i1-GGUF

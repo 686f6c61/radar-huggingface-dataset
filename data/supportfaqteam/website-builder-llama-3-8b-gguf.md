@@ -2,7 +2,7 @@
 
 ## Resumen
 
-website-builder-llama-3-8b-GGUF es una distribucion de cuantizaciones GGUF del modelo Bello988/website-builder-llama-3-8b, un ajuste fino de Llama 3 de 8B orientado a la generacion de sitios web. El repositorio lo publica el usuario supportfaqteam y las cuantizaciones las ha producido mradermacher, autor habitual de conversiones GGUF en HuggingFace. El modelo base parte de la familia Llama 3 de Meta, con 8.030.261.248 parametros totales segun los pesos en safetensors del modelo original.
+website-builder-llama-3-8b-GGUF es una distribucion de cuantizaciones GGUF del modelo Bello988/website-builder-llama-3-8b, un ajuste fino de Llama 3 de 8B orientado a la generacion de sitios web. El repositorio lo publica el usuario supportfaqteam y las cuantizaciones las ha producido mradermacher, autor habitual de conversiones GGUF en Hugging Face. El modelo base parte de la familia Llama 3 de Meta, con 8.030.261.248 parametros totales segun los pesos en safetensors del modelo original.
 
 El interes practico de esta ficha reside en que ofrece el modelo en formatos GGUF listos para inferencia local con llama.cpp y entornos compatibles, con un rango de cuantizaciones que va desde Q2_K (3,3 GB) hasta f16 (16,2 GB). Esto permite desplegar un modelo de 8B especializado en generacion de codigo web en hardware de consumo, algo relevante para desarrolladores que quieren integrar asistencia de generacion de sitios en su flujo de trabajo sin depender de APIs externas.
 
@@ -92,7 +92,7 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/supportfaqteam/website-builder-llama-3-8b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/supportfaqteam/website-builder-llama-3-8b-GGUF
 - Modelo base original: https://huggingface.co/Bello988/website-builder-llama-3-8b
 - Repositorio de cuantizaciones de mradermacher: https://huggingface.co/mradermacher/website-builder-llama-3-8b-GGUF
 - Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#website-builder-llama-3-8b-GGUF

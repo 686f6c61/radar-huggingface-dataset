@@ -68,8 +68,8 @@ La actualizacion 45000 (el checkpoint publicado) obtiene la mejor puntuacion: 21
 
 | Modelo | Parametros | Contexto | Benchmark (SO-101 Bench val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101_bench_LaWAM_full_fine_tune (este) | ~2,55 B | no disponible | 21/39 (53,8 %) | MIT | HuggingFace |
-| so101_bench_G0.5_full_fine_tune (Galaxea G0.5) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| so101_bench_LaWAM_full_fine_tune (este) | ~2,55 B | no disponible | 21/39 (53,8 %) | MIT | Hugging Face |
+| so101_bench_G0.5_full_fine_tune (Galaxea G0.5) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | MolmoAct2 (Ai2) | ~5 B | no disponible | no disponible | no disponible | LeRobot / repositorio |
 
 Los tres modelos pertenecen a la misma categoria (VLA para manipulacion SO-101) y participan en el banco SO-101 Bench, pero solo se dispone de la puntuacion de validacion de este checkpoint. Los valores del resto figuran como no disponibles en la informacion proporcionada.
@@ -88,7 +88,7 @@ Los tres modelos pertenecen a la misma categoria (VLA para manipulacion SO-101) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_LaWAM_full_fine_tune
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_LaWAM_full_fine_tune
 - Modelo base (preentrenamiento): https://huggingface.co/jialei02/lawam-pretrain-lerobot
 - Repositorio SO-101 Bench: https://github.com/5hadytru/so101_bench
 - Perfil del autor: https://huggingface.co/5hadytru

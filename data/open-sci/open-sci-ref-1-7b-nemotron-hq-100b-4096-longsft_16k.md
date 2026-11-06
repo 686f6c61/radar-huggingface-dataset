@@ -91,7 +91,7 @@ La comparacion mas informativa es interna al propio estudio: las cuatro celdas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-100B-4096-longsft_16k
+- Modelo en Hugging Face: https://huggingface.co/open-sci/open-sci-ref-1.7b-nemotron-hq-100B-4096-longsft_16k
 - Modelo base citado en la model card: `laion/open-sci-ref-v0.02-1.7b-nemotron-hq-100B-4096` (referencia textual; no se proporciono URL directa)
 - Paper asociado: *Strong Post-Training from Permissive, Reasoning-Dominant, Web-Scale Pretraining*, NeurIPS 2026 (sin URL disponible en la informacion proporcionada)
 - Nemotron-CC (2024): corpus de preentrenamiento de NVIDIA citado como sustrato web (sin URL disponible en la informacion proporcionada)

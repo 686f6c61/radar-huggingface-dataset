@@ -77,7 +77,7 @@ La version MoE del mismo proyecto (llm-jp-4-32b-a3b-thinking) ofrece una alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/WariHima/llm-jp-4-33b-thinking-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/WariHima/llm-jp-4-33b-thinking-Q4_K_M-GGUF
 - Modelo base (WariHima/llm-jp-4-33b-thinking): https://huggingface.co/WariHima/llm-jp-4-33b-thinking
 - Blog de LLM-jp sobre cuantizacion de modelos Thinking: https://llm-jp.nii.ac.jp/blog/llm-jp-4-thinking-quantization/
 - Pagina de releases de LLM-jp: https://llm-jp.nii.ac.jp/en/release-en/

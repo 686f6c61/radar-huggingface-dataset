@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TalonflameAH es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente incluye el bloque de metadatos con la licencia. No hay información sobre el pipeline, los idiomas soportados, el tipo de tarea ni el propósito del modelo.
+TalonflameAH es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción funcional, arquitectónica ni de uso: únicamente incluye el bloque de metadatos con la licencia. No hay información sobre el pipeline, los idiomas soportados, el tipo de tarea ni el propósito del modelo.
 
 El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no es posible determinar a partir de los datos disponibles si se trata de un modelo de lenguaje, un adaptador, un modelo de visión u otro tipo de artefacto. El identificador "TalonflameAH" no aporta información técnica verificable y no se corresponde con ninguna familia de modelos conocida.
 
@@ -33,13 +33,13 @@ El tamaño del repositorio (0,1 GB) es compatible con pesos cuantizados de un mo
 - No hay evidencia publicada de soporte de tool calling, function calling ni razonamiento multi-paso.
 - No se ha declarado soporte multilingüe.
 - No se ha declarado ningún modo especial (thinking mode, visión, audio u otros).
-- No se dispone de información sobre el pipeline de HuggingFace asociado al modelo.
+- No se dispone de información sobre el pipeline de Hugging Face asociado al modelo.
 
 ## Casos de uso
 
 - Evaluación exploratoria: inspeccionar los archivos del repositorio y ejecutar pruebas de inferencia básicas para determinar la naturaleza real del artefacto antes de considerar cualquier uso.
 - Prototipado interno: si los pesos resultan ser de un modelo de lenguaje funcional, podrían emplearse en experimentos controlados sin requisitos de producción, dado su reducido tamaño en disco.
-- Investigación sobre artefactos no documentados: el caso puede servir para estudiar prácticas de publicación en HuggingFace y la importancia de la documentación en la reproducibilidad.
+- Investigación sobre artefactos no documentados: el caso puede servir para estudiar prácticas de publicación en Hugging Face y la importancia de la documentación en la reproducibilidad.
 - No se recomienda ningún caso de uso en producción: la ausencia de documentación, benchmarks y descripción de arquitectura impide evaluar riesgos, sesgos y calidad de salida.
 - No se recomienda su integración en pipelines de CI/CD ni en sistemas de atención al cliente: no hay garantías sobre el comportamiento del modelo.
 - No se recomienda su uso en aplicaciones sensibles (salud, legal, finanzas): sin información sobre entrenamiento y alineación no es posible descartar comportamientos inseguros.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| TalonflameAH | no disponible | no disponible | CC-BY-4.0 | Solo metadatos de licencia | HuggingFace, 0 descargas |
+| TalonflameAH | no disponible | no disponible | CC-BY-4.0 | Solo metadatos de licencia | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa rigurosa: no se conoce la categoría del modelo (lenguaje, visión, embeddings, adaptador) ni sus especificaciones, por lo que no se pueden identificar alternativas de la misma familia o tamaño.
@@ -78,5 +78,5 @@ No es posible establecer una comparativa rigurosa: no se conoce la categoría de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/TalonflameAH
+- Hugging Face: https://huggingface.co/Ryanham1lton/TalonflameAH
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

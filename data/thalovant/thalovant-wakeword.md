@@ -116,7 +116,7 @@ La comparación con openWakeWord no puede cuantificarse porque la información d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thalovant/thalovant-wakeword
+- Modelo en Hugging Face: https://huggingface.co/thalovant/thalovant-wakeword
 - Modelo base (extractor de características): https://huggingface.co/TigreGotico/wakehubert-tiny
 - Herramienta de entrenamiento wakeforge: https://github.com/TigreGotico/wakeforge
 - Plugin de OpenVoiceOS: https://pypi.org/project/ovos-ww-plugin-wakeforge/

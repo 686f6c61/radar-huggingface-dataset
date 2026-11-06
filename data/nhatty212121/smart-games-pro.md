@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nhatty212121/smart-games-pro` es un repositorio alojado en HuggingFace por el usuario Nhatty212121, publicado el 13 de septiembre de 2026 segun los metadatos de la plataforma. La unica informacion verificable del repositorio es su licencia (MIT) y la etiqueta de region (`us`); no se declara pipeline de inferencia, idiomas soportados, tamano de parametros, arquitectura ni formato de pesos.
+`Nhatty212121/smart-games-pro` es un repositorio alojado en Hugging Face por el usuario Nhatty212121, publicado el 13 de septiembre de 2026 segun los metadatos de la plataforma. La unica informacion verificable del repositorio es su licencia (MIT) y la etiqueta de region (`us`); no se declara pipeline de inferencia, idiomas soportados, tamano de parametros, arquitectura ni formato de pesos.
 
 La model card asociada no contiene mas que el bloque de metadatos YAML con la licencia MIT. No hay descripcion funcional, ejemplos de uso, resultados de evaluacion ni referencias a papers o repositorios de codigo. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 ## Capacidades
 
 - No se puede confirmar ninguna capacidad concreta: la model card no describe tareas soportadas.
-- Generacion de texto: no disponible (no se declara `pipeline` en los metadatos de HuggingFace).
+- Generacion de texto: no disponible (no se declara `pipeline` en los metadatos de Hugging Face).
 - Razonamiento, codigo o matematicas: no disponible.
 - Tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
@@ -72,7 +72,7 @@ No disponible. Los metadatos del repositorio no permiten situar el modelo en nin
 
 - Ausencia total de documentacion: la model card solo contiene la licencia, lo que impide evaluar el modelo antes de descargarlo.
 - Sin pesos ni archivos declarados: no se puede confirmar que el repositorio contenga artefactos utilizables.
-- Sin `pipeline` declarado en HuggingFace: se desconoce la tarea para la que fue disenado.
+- Sin `pipeline` declarado en Hugging Face: se desconoce la tarea para la que fue disenado.
 - Sin metricas de evaluacion: no hay evidencia de calidad, sesgos o tasas de alucinacion.
 - Sesgos conocidos: no disponible.
 - Riesgo de alucinacion: no disponible, aunque cualquier modelo generativo sin evaluacion publicada debe tratarse con cautela en produccion.
@@ -84,9 +84,9 @@ No disponible. Los metadatos del repositorio no permiten situar el modelo en nin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nhatty212121/smart-games-pro
+- Hugging Face: https://huggingface.co/Nhatty212121/smart-games-pro
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible
 - Blog o documentacion adicional: no disponible
-- Nota sobre la busqueda web: los resultados devueltos corresponden a resenas del ensayo *O Direito a Preguica* de Paul Lafargue y no guardan ninguna relacion con el modelo. No se ha identificado ningun enlace relevante sobre `smart-games-pro` mas alla de su propia pagina en HuggingFace.
+- Nota sobre la busqueda web: los resultados devueltos corresponden a resenas del ensayo *O Direito a Preguica* de Paul Lafargue y no guardan ninguna relacion con el modelo. No se ha identificado ningun enlace relevante sobre `smart-games-pro` mas alla de su propia pagina en Hugging Face.

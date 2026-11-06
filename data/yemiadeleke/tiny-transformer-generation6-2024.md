@@ -71,5 +71,5 @@ No disponible. No se han identificado modelos comparables de 16K parámetros con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yemiadeleke/tiny-transformer-generation6-2024
+- Hugging Face: https://huggingface.co/yemiadeleke/tiny-transformer-generation6-2024
 - Perfil del autor: https://huggingface.co/yemiadeleke

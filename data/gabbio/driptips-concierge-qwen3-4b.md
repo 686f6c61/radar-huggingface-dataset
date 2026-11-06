@@ -81,10 +81,10 @@ Estos datos provienen de la model card del autor y no son comparables con benchm
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| driptips-concierge-qwen3-4b | 4,02 B | No disponible | Extracción JSON de viaje y Q&A con grounding en ruso | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | No disponible en esta ficha | Propósito general, instrucciones y multilingüe | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens | Propósito general, instrucciones | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Propósito general, instrucciones | Llama 3.2 Community License | HuggingFace |
+| driptips-concierge-qwen3-4b | 4,02 B | No disponible | Extracción JSON de viaje y Q&A con grounding en ruso | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,02 B | No disponible en esta ficha | Propósito general, instrucciones y multilingüe | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens | Propósito general, instrucciones | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Propósito general, instrucciones | Llama 3.2 Community License | Hugging Face |
 
 Frente al modelo base, driptips-concierge intercambia generalidad por precisión en un esquema de salida concreto y por el anclaje a referencias; no hay datos que permitan afirmar que conserva las capacidades generales de Qwen3-4B-Instruct-2507 tras el ajuste, ya que no se han publicado evaluaciones fuera del dominio. Los dos modelos de ~3 B de la tabla son alternativas genéricas de tamaño comparable con las que se podría replicar el enfoque mediante prompting y validación de esquema, sin necesidad de fine-tune; no se dispone de comparación de rendimiento directa entre ellos y driptips-concierge en las tareas del hackathon.
 
@@ -102,6 +102,6 @@ Frente al modelo base, driptips-concierge intercambia generalidad por precisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabbio/driptips-concierge-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/Gabbio/driptips-concierge-qwen3-4b
 - Repositorio del proyecto (código, datos de entrenamiento, prompts y evaluación): https://github.com/ostrovok-hackathon-2026/driptips
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

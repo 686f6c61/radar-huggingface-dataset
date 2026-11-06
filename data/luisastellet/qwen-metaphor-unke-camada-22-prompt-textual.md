@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-22-prompt-textual` es un checkpoint de 596.049.920 parámetros publicado en HuggingFace por el usuario `luisastellet`, con pipeline de `text-generation` y pesos en formato `safetensors`. La model card es la plantilla automática de HuggingFace y no ha sido completada por el autor: no declara modelo base, datos de entrenamiento, licencia ni idiomas. Por tanto, toda la información técnica disponible procede de los metadatos del repositorio (tags, tamaño de parámetros, tamaño del repo, fechas) y no de documentación del autor.
+`luisastellet/qwen-metaphor-unke-camada-22-prompt-textual` es un checkpoint de 596.049.920 parámetros publicado en Hugging Face por el usuario `luisastellet`, con pipeline de `text-generation` y pesos en formato `safetensors`. La model card es la plantilla automática de Hugging Face y no ha sido completada por el autor: no declara modelo base, datos de entrenamiento, licencia ni idiomas. Por tanto, toda la información técnica disponible procede de los metadatos del repositorio (tags, tamaño de parámetros, tamaño del repo, fechas) y no de documentación del autor.
 
 El identificador del repositorio es altamente descriptivo y sugiere un artefacto de investigación más que un modelo de propósito general: el tag `qwen3` apunta a la familia Qwen3, el segmento `camada-22` (capa 22) sugiere una extracción o intervención sobre una capa intermedia concreta, y los términos `metaphor`, `unke` y `prompt-textual` apuntan a un experimento de edición de conocimiento o de interpretabilidad mecanicista con instrucción textual. Esta lectura es una hipótesis basada en el nombre y no está confirmada por el autor.
 
@@ -31,7 +31,7 @@ Nota técnica: 596 M de parámetros en `safetensors` deberían ocupar aproximada
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni uso de RLHF/DPO. La model card únicamente contiene los campos `[More Information Needed]` de la plantilla estándar de HuggingFace. El tag `qwen3` es el único indicio de familia arquitectónica y no constituye confirmación formal del modelo base.
+No hay información publicada sobre arquitectura, datos de entrenamiento, número de tokens, composición del dataset ni uso de RLHF/DPO. La model card únicamente contiene los campos `[More Information Needed]` de la plantilla estándar de Hugging Face. El tag `qwen3` es el único indicio de familia arquitectónica y no constituye confirmación formal del modelo base.
 
 Por el nombre del repositorio (`camada-22`, término portugués para "capa 22") y por el sufijo `prompt-textual`, es plausible que se trate de un checkpoint intermedio o intervenido de un experimento de edición de conocimiento (el acrónimo `unke` podría remitir a un benchmark de edición de conocimiento unificado) o de interpretabilidad sobre una capa concreta. Igualmente plausible es que `metaphor` denote la tarea o el conjunto de evaluación empleado. Ninguna de estas hipótesis está documentada y no deben citarse como hechos.
 
@@ -43,7 +43,7 @@ Por el nombre del repositorio (`camada-22`, término portugués para "capa 22") 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible (el nombre del repo mezcla inglés y portugués, pero no se declara cobertura idiomática).
 - Capacidades especiales (modo thinking, visión, audio): no disponible. No hay evidencia de modalidad distinta de texto.
-- Compatibilidad declarada: `text-generation-inference` y `endpoints_compatible`, es decir, el repo incluye los metadatos que permiten desplegarlo con TGI o en Inference Endpoints de HuggingFace.
+- Compatibilidad declarada: `text-generation-inference` y `endpoints_compatible`, es decir, el repo incluye los metadatos que permiten desplegarlo con TGI o en Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU de consumo: cabe sin problemas en RTX 3060 12 GB, RTX 4060 8 GB, RTX 3070/4070 y en tarjetas de 4-6 GB como GTX 1650 Super o RTX 3050, siempre en bf16/fp16 o cuantizado.
 - CPU: viable para inferencia interactiva con llama.cpp u Ollama tras convertir los pesos a GGUF, conversión que el autor no publica.
 - GPU de datacenter: A100, H100 y L40S están sobredimensionadas para este tamaño; su uso solo se justifica por agregación de muchas peticiones concurrentes.
-- Opciones de despliegue: `transformers` (soporte nativo, formato `safetensors`), TGI (el repo declara `text-generation-inference`), vLLM (requiere verificar compatibilidad con la arquitectura concreta) y endpoints de HuggingFace (`endpoints_compatible`). Para llama.cpp u Ollama hace falta una conversión a GGUF que no está publicada.
+- Opciones de despliegue: `transformers` (soporte nativo, formato `safetensors`), TGI (el repo declara `text-generation-inference`), vLLM (requiere verificar compatibilidad con la arquitectura concreta) y endpoints de Hugging Face (`endpoints_compatible`). Para llama.cpp u Ollama hace falta una conversión a GGUF que no está publicada.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas y no deben extrapolarse sin prueba propia.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Diferencias clave: frente a los tres comparadores, este checkpoint carece de mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-22-prompt-textual
+- Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-22-prompt-textual
 - Referencia citada en los tags del repo (calculadora de impacto ambiental de Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Modelo base posible, no confirmado por el autor (familia Qwen3): https://huggingface.co/Qwen/Qwen3-0.6B
 - Paper, blog, repositorio de código o demo del autor: no disponibles en la información proporcionada.

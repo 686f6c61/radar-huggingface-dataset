@@ -71,10 +71,10 @@ Nota: la tabla de la model card está truncada en la información proporcionada;
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B | 4,66B | 262.144 (ext. 1.010.000) | 79.1 | Apache 2.0 | HuggingFace (ArchiveStudio) |
-| Qwen3.5-9B | no disponible | no disponible | 82.5 | no disponible | HuggingFace (Qwen) |
+| Qwen3.5-4B | 4,66B | 262.144 (ext. 1.010.000) | 79.1 | Apache 2.0 | Hugging Face (ArchiveStudio) |
+| Qwen3.5-9B | no disponible | no disponible | 82.5 | no disponible | Hugging Face (Qwen) |
 | GPT-OSS-20B | 20B (aprox.) | no disponible | 74.8 | no disponible | no disponible |
-| Qwen3-30BA3B-Thinking-2507 | 30B (A3B) | no disponible | 80.9 | no disponible | HuggingFace (Qwen) |
+| Qwen3-30BA3B-Thinking-2507 | 30B (A3B) | no disponible | 80.9 | no disponible | Hugging Face (Qwen) |
 
 El modelo de 4B supera a GPT-OSS-20B en MMLU-Pro (79.1 frente a 74.8) con una quinta parte de parámetros, y queda cerca de Qwen3-30BA3B-Thinking-2507 (80.9) y Qwen3.5-9B (82.5). La ventaja principal es la relación rendimiento/tamaño y el contexto nativo de 262K, muy superior al de modelos comparables de su categoría.
 
@@ -89,7 +89,7 @@ El modelo de 4B supera a GPT-OSS-20B en MMLU-Pro (79.1 frente a 74.8) con una qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3.5-4B
+- Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3.5-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Blog Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - Qwen Chat: https://chat.qwen.ai

@@ -79,7 +79,7 @@ La principal diferencia frente al modelo original es la abliteración, que reduc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheCluster/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-mixed-9.4bit
+- Modelo en Hugging Face: https://huggingface.co/TheCluster/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-mixed-9.4bit
 - Modelo base (KridgeDookie): https://huggingface.co/KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Repositorio del Qwen3.8-27B original: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog sobre abliteración de Qwen3.8-27B AEON: https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration

@@ -64,4 +64,4 @@ No disponible. No existen modelos de IA comparables, dado que este repositorio n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ztrgo/p012_first_party_tools_distro
+- Repositorio en Hugging Face: https://huggingface.co/ztrgo/p012_first_party_tools_distro

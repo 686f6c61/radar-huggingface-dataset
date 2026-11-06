@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`latherajesh/beit-demo` es un repositorio de HuggingFace publicado por el usuario latherajesh que contiene una implementación propia y minimalista (`nano`) de una arquitectura BeiT orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release de investigación: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como checkpoint con benchmarks. El recuento real de parámetros extraído de los pesos safetensors es de 24.832 parámetros, un orden de magnitud propio de un juguete de depuración más que de un modelo utilizable.
+`latherajesh/beit-demo` es un repositorio de Hugging Face publicado por el usuario latherajesh que contiene una implementación propia y minimalista (`nano`) de una arquitectura BeiT orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un release de investigación: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como checkpoint con benchmarks. El recuento real de parámetros extraído de los pesos safetensors es de 24.832 parámetros, un orden de magnitud propio de un juguete de depuración más que de un modelo utilizable.
 
 El interés del repositorio es, por tanto, metodológico y de ingeniería, no de rendimiento. Aporta un `eval.py` ejecutable, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto (optimizador Lion con schedule de warmup constante) y un checkpoint de inicialización. La model card incluye además una guía de evaluación razonable: usar un split etiquetado específico de la tarea, reportar la métrica sobre al menos tres semillas y comparar contra una línea base de capacidad equivalente.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, no hay ninguno documentado. El autor es explícito: 
 - Plantilla de implementación de BeiT en PyTorch: usar el `eval.py` y el `config.json` como base para construir una implementación propia con atención dispersa, co-atención, `gelu tanh` y `groupnorm`, partiendo de una configuración ya escrita en lugar de una hoja en blanco.
 - Arnés de comparación de recetas de optimización: el `training_args.json` fija Lion con warmup constante, de modo que se puede usar como brazo de control frente a AdamW o schedules coseno manteniendo idéntica exposición de datos, presupuesto de ajuste y semillas, tal como recomienda la propia model card.
 - Validación de infraestructura de entrenamiento distribuido: con 24.832 parámetros, el modelo se replica en cualquier número de dispositivos sin restricción de memoria, lo que permite depurar `DDP`, `FSDP` o acumulación de gradiente sin que el tamaño del modelo sea la variable limitante.
-- Docencia y material formativo: sirve para explicar la anatomía de un transformer de visión y el flujo de artefactos de un repositorio de HuggingFace (config, pesos, receta, script) sin necesidad de recursos de cómputo.
+- Docencia y material formativo: sirve para explicar la anatomía de un transformer de visión y el flujo de artefactos de un repositorio de Hugging Face (config, pesos, receta, script) sin necesidad de recursos de cómputo.
 - Verificación de conformidad de licencia y empaquetado: al estar bajo apache-2.0 con pesos safetensors, es útil como caso de prueba para validar procesos internos de revisión de licencias y de empaquetado de artefactos antes de adoptar repositorios de terceros en un flujo corporativo.
 - Base para un futuro ajuste fino sobre un dataset propio: sustituyendo el checkpoint de inicialización por uno entrenado y aplicando la guía de evaluación del autor (split etiquetado específico, tres semillas, línea base de capacidad equivalente), el repositorio sirve de andamiaje para un experimento de clasificación supervisada real.
 
@@ -74,7 +74,7 @@ No hay comparativa posible con modelos de la misma categoría a partir de la inf
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Nota |
 |---|---|---|---|---|---|
-| latherajesh/beit-demo | 24.832 | Clasificación | apache-2.0 | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| latherajesh/beit-demo | 24.832 | Clasificación | apache-2.0 | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | BeiT-base (referencia de literatura) | ~86 M | Clasificación de imágenes | MIT | Pública | Valores orientativos, no verificados aquí |
 | ViT-base (referencia de literatura) | ~86 M | Clasificación de imágenes | Apache-2.0 | Pública | Valores orientativos, no verificados aquí |
 | DeiT-tiny (referencia de literatura) | ~5,7 M | Clasificación de imágenes | Apache-2.0 | Pública | Valores orientativos, no verificados aquí |
@@ -95,6 +95,6 @@ No hay comparativa posible con modelos de la misma categoría a partir de la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/latherajesh/beit-demo
+- Repositorio en Hugging Face: https://huggingface.co/latherajesh/beit-demo
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código, demo o documentación adicional: no disponibles en la información proporcionada.

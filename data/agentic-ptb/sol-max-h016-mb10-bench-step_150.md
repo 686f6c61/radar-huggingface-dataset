@@ -6,7 +6,7 @@
 
 La relevancia de este checkpoint es metodológica: su identificador codifica la hora del run (`h016`), lo que permite mapearlo directamente sobre las curvas de rendimiento del sweep. Sin embargo, presenta una advertencia crítica: el `eos_token_id` está incompleto (falta el token `248046`, correspondiente a `<|im_end|>`), por lo que el modelo no detiene correctamente las respuestas y puede desbordar la ventana de contexto. Esto invalida cualquier evaluación directa como medición fiable, y lo desaconseja para uso práctico sin un reempaquetado previo.
 
-No se dispone de licencia, idiomas soportados, ni pipeline declarados en la ficha de HuggingFace. Toda la información técnica disponible proviene de la model card del autor y de los metadatos del repositorio.
+No se dispone de licencia, idiomas soportados, ni pipeline declarados en la ficha de Hugging Face. Toda la información técnica disponible proviene de la model card del autor y de los metadatos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -86,5 +86,5 @@ No se dispone de información suficiente para comparar rendimiento con modelos s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h016.mb10-bench.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h016.mb10-bench.step_150
 - Índice del proyecto (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX` (no disponible en la información proporcionada)

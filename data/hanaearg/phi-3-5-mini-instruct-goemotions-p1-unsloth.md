@@ -85,7 +85,7 @@ Los datos de los clasificadores alternativos provienen de la documentación púb
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hanaearg/Phi-3.5-mini-instruct-GoEmotions-P1-Unsloth
+- Repositorio en Hugging Face: https://huggingface.co/hanaearg/Phi-3.5-mini-instruct-GoEmotions-P1-Unsloth
 - Modelo base cuantizado: https://huggingface.co/unsloth/Phi-3.5-mini-instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Paper de Phi-3 (referencia del modelo base): https://arxiv.org/abs/2404.14219

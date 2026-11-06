@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-sentiment-demo es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario Odakris en HuggingFace. Se trata de un ajuste supervisado con el Trainer de la librería transformers sobre un conjunto de datos que el autor no identifica en la model card, y cuyo único objetivo declarado es la clasificación de sentimiento. El repositorio tiene 66.955.010 parámetros en formato safetensors y ocupa 0,5 GB, con licencia Apache 2.0.
+distilbert-sentiment-demo es un modelo de clasificación de texto obtenido mediante fine-tuning de distilbert-base-uncased, publicado por el usuario Odakris en Hugging Face. Se trata de un ajuste supervisado con el Trainer de la librería transformers sobre un conjunto de datos que el autor no identifica en la model card, y cuyo único objetivo declarado es la clasificación de sentimiento. El repositorio tiene 66.955.010 parámetros en formato safetensors y ocupa 0,5 GB, con licencia Apache 2.0.
 
 El modelo es relevante únicamente como demostración técnica o como plantilla reproducible: la model card está generada automáticamente por el Trainer y no documenta dataset, etiquetas, usos previstos ni limitaciones. El autor declara una accuracy de 0,8518 y una pérdida de evaluación de 0,4194 tras dos épocas de entrenamiento, pero sin especificar el conjunto de validación ni el número de clases, por lo que esas cifras no son verificables ni comparables con resultados publicados.
 
@@ -85,11 +85,11 @@ No se han publicado resultados de benchmarks comparables en la información disp
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|
-| Odakris/distilbert-sentiment-demo | 66.955.010 | no disponible en la model card (base: 512 tokens) | Apache 2.0 | accuracy 0,8518 en un conjunto de evaluación no identificado | HuggingFace, 0 descargas |
-| distilbert-base-uncased | 66.955.010 | 512 tokens | Apache 2.0 | no disponible (modelo base, sin cabeza de clasificación ajustada) | HuggingFace, ampliamente utilizado |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 millones | 512 tokens | Apache 2.0 | no disponible en esta ficha | HuggingFace, referencia habitual de clasificación de sentimiento binaria en inglés |
-| bert-base-uncased | 110 millones | 512 tokens | Apache 2.0 | no disponible (modelo base) | HuggingFace |
-| roberta-base | 125 millones | 512 tokens | MIT | no disponible (modelo base) | HuggingFace |
+| Odakris/distilbert-sentiment-demo | 66.955.010 | no disponible en la model card (base: 512 tokens) | Apache 2.0 | accuracy 0,8518 en un conjunto de evaluación no identificado | Hugging Face, 0 descargas |
+| distilbert-base-uncased | 66.955.010 | 512 tokens | Apache 2.0 | no disponible (modelo base, sin cabeza de clasificación ajustada) | Hugging Face, ampliamente utilizado |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 millones | 512 tokens | Apache 2.0 | no disponible en esta ficha | Hugging Face, referencia habitual de clasificación de sentimiento binaria en inglés |
+| bert-base-uncased | 110 millones | 512 tokens | Apache 2.0 | no disponible (modelo base) | Hugging Face |
+| roberta-base | 125 millones | 512 tokens | MIT | no disponible (modelo base) | Hugging Face |
 
 La comparación de rendimiento entre alternativas no es posible con la información disponible, porque este repositorio no publica resultados en benchmarks estandarizados y ninguno de los comparadores incluidos en la tabla tiene cifras declaradas en la información proporcionada. La diferencia principal frente a alternativas como bert-base-uncased o roberta-base es el tamaño, aproximadamente la mitad de parámetros, con la consiguiente reducción de coste de inferencia a cambio de capacidad representacional.
 
@@ -108,7 +108,7 @@ La comparación de rendimiento entre alternativas no es posible con la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Odakris/distilbert-sentiment-demo
+- Modelo en Hugging Face: https://huggingface.co/Odakris/distilbert-sentiment-demo
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Repositorio de referencia de DistilBERT (no enlazado en la model card, mencionado como origen de la arquitectura base): https://huggingface.co/distilbert/distilbert-base-uncased
 

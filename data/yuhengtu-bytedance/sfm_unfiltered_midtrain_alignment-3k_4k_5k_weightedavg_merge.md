@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-3k_4k_5k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-3k_4k_5k_weightedavg_merge
 - Discusión del modelo (variante sin weightedavg): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-3k_4k_5k_merge/discussions
 - Modelo relacionado (merge 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-alignment-4k-5k-6k-avg
 - Página de despliegue en FriendliAI (variante 3k-4k-5k): https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-3k_4k_5k_merge

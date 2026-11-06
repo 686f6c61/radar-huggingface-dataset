@@ -76,8 +76,8 @@ No se han publicado en la información disponible comparaciones de estos resulta
 
 | Modelo | Proposito | Salida | Licencia | Disponibilidad | Rendimiento comparable |
 |---|---|---|---|---|---|
-| maymeridian/apollo-clapperboard | Clasificador de claquetas originales en anuncios | Probabilidad por anuncio y embedding de 1152 dim | Apache-2.0 | HuggingFace, ONNX + npz | PR-AUC 0,987 en su conjunto de evaluacion |
-| google/siglip2-so400m-patch16-256 (modelo base) | Vision-lenguaje generico (contrastivo imagen-texto) | Embeddings de imagen y texto | Apache-2.0 | HuggingFace | No disponible para esta tarea en zero-shot |
+| maymeridian/apollo-clapperboard | Clasificador de claquetas originales en anuncios | Probabilidad por anuncio y embedding de 1152 dim | Apache-2.0 | Hugging Face, ONNX + npz | PR-AUC 0,987 en su conjunto de evaluacion |
+| google/siglip2-so400m-patch16-256 (modelo base) | Vision-lenguaje generico (contrastivo imagen-texto) | Embeddings de imagen y texto | Apache-2.0 | Hugging Face | No disponible para esta tarea en zero-shot |
 | Clasificadores de imagenes genericos ajustados (por ejemplo ResNet, ViT o ConvNeXt) | Clasificacion de imagenes de proposito general | Logits por clase | Variable segun modelo | Amplia | No disponible |
 | Reglas manuales o revision humana sobre anuncios | Triaje de listados | Decision binaria | No aplica | No aplica | No disponible |
 
@@ -99,7 +99,7 @@ No se conocen en la información proporcionada otros clasificadores publicados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maymeridian/apollo-clapperboard
+- Modelo en Hugging Face: https://huggingface.co/maymeridian/apollo-clapperboard
 - Repositorio del proyecto Apollo: https://github.com/maymeridian/apollo
 - Informe completo de resultados: `reports/README.md` dentro del repositorio Apollo
 - Modelo base: https://huggingface.co/google/siglip2-so400m-patch16-256

@@ -77,7 +77,7 @@ La comparativa con otros modelos de la misma categoria (MoE multimodal cuantizad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw
+- Repositorio Hugging Face: https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-TR3-4bpw
 - Repositorio upstream (Brandon Music): https://huggingface.co/brandonmusic/GLM-5.3-Flash-tr3-4bpw
 - Receta 2x DGX Spark (GitHub): https://github.com/MiaAI-Lab/GLM-5.3-Flash-EXL3-2x-DGX-Sparks
 - ShapleyMcg (GitHub): https://github.com/brandonmmusic-max/shapleymcg

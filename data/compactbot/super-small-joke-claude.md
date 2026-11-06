@@ -4,7 +4,7 @@
 
 ## Resumen
 
-SuperSmallJokeClaude es un transformer minúsculo de 1.644.032 parametros (1,64M) entrenado desde cero por el usuario Compactbot y publicado en HuggingFace. No es un modelo de produccion: el propio autor lo describe como una broma tecnica, un artefacto experimental creado para demostrar que es posible entrenar un transformer funcional en 7 segundos sobre una unica GPU (una RTX 5090). Su unico repositorio ocupa 0,0 GB y no acumula descargas ni likes en el momento de la consulta.
+SuperSmallJokeClaude es un transformer minúsculo de 1.644.032 parametros (1,64M) entrenado desde cero por el usuario Compactbot y publicado en Hugging Face. No es un modelo de produccion: el propio autor lo describe como una broma tecnica, un artefacto experimental creado para demostrar que es posible entrenar un transformer funcional en 7 segundos sobre una unica GPU (una RTX 5090). Su unico repositorio ocupa 0,0 GB y no acumula descargas ni likes en el momento de la consulta.
 
 El modelo emplea una arquitectura transformer de 4 capas con d_model=128, 4 cabezas de atencion, d_ff=256 y embeddings atados, con un vocabulario BPE de 8192 tokens derivado del tokenizador de Claude Code. La ventana de contexto es de solo 512 tokens y el entrenamiento se realizo sobre 24.249 tokens procedentes de trazas del asistente Fable 5 Claude Code, durante 2000 pasos con batch 8 y secuencia de 256, alcanzando una perdida final de 2,90.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SuperSmallJokeClaude (Compactbot) | 1,64M | 512 tokens | Perdida final de entrenamiento 2,90; sin benchmarks publicados | No disponible | HuggingFace, pesos en `final.pt` |
+| SuperSmallJokeClaude (Compactbot) | 1,64M | 512 tokens | Perdida final de entrenamiento 2,90; sin benchmarks publicados | No disponible | Hugging Face, pesos en `final.pt` |
 | nanoGPT `shakespeare_char` (Karpathy) | ~10,7M | 256 tokens | No disponible | MIT (repositorio) | Codigo y pesos reproducibles |
-| TinyStories-1M (Microsoft Research) | ~1M | 512 tokens | Generacion coherente en ingles simple, segun el paper de TinyStories | No disponible en la informacion proporcionada | HuggingFace |
+| TinyStories-1M (Microsoft Research) | ~1M | 512 tokens | Generacion coherente en ingles simple, segun el paper de TinyStories | No disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion debe tomarse con cautela: se trata de modelos de escala similar empleados como demostraciones de entrenamiento, pero no se dispone de datos de benchmarks homogeneos para establecer una comparacion de rendimiento rigurosa. La diferencia cualitativa principal del modelo de Compactbot es el tamano del corpus (24.249 tokens), muy inferior al de las alternativas citadas, lo que explica sus salidas degeneradas.
 
@@ -79,13 +79,13 @@ La comparacion debe tomarse con cautela: se trata de modelos de escala similar e
 - Limitacion de contexto severa: 512 tokens, insuficiente para conversaciones multi-turno o documentos.
 - Cobertura idiomatica no declarada; el corpus se limita a trazas en ingles.
 - Licencia no disponible, lo que impide determinar si se permite el uso comercial. Ante la ausencia de terminos explicitos, no debe asumirse permiso de uso comercial.
-- El repositorio figura con 0 descargas y 0 likes, y no hay pipeline ni metadatos de idioma declarados en HuggingFace.
+- El repositorio figura con 0 descargas y 0 likes, y no hay pipeline ni metadatos de idioma declarados en Hugging Face.
 - No se distribuyen pesos en formatos estandar de inferencia (GGUF, safetensors), por lo que la integracion requiere codigo propio.
 - La fecha de creacion del repositorio es 2026-10-07 y la ultima actualizacion 2026-10-07, con un intervalo de poco mas de un minuto entre ambas, coherente con un artefacto experimental sin mantenimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/super-small-joke-claude
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/super-small-joke-claude
 - Repositorio del autor (referenciado en la model card, sin URL publica): `train_jokeclaude_v5.py` — no disponible como enlace
 - Paper o blog tecnico: no disponible
 - Demo: no disponible

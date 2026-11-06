@@ -82,7 +82,7 @@ La comparación principal es contra el modelo original de Roboflow: misma arquit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/rfdetr_seg_xlarge-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/rfdetr_seg_xlarge-int8-ov
 - Modelo original RF-DETR: https://github.com/roboflow/rf-detr
 - Geti (Open Edge Platform): https://github.com/open-edge-platform/geti
 - Documentación del formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

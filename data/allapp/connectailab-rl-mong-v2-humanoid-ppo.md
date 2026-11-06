@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Tipo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-mong-v2-humanoid-ppo | PPO (RL) | Humanoid-v5 | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
+| connectailab-rl-mong-v2-humanoid-ppo | PPO (RL) | Humanoid-v5 | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
 | Políticas PPO de referencia (Stable-Baselines3) | PPO (RL) | Humanoid-v5 | configurables | no aplica | MIT | Código abierto |
 | Políticas SAC de referencia (Stable-Baselines3) | SAC (RL) | Humanoid-v5 | configurables | no aplica | MIT | Código abierto |
 | DreamerV3 (políticas publicadas) | Model-based RL | Humanoid | no disponible | no aplica | MIT (código) | Repositorio oficial |
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allapp/connectailab-rl-mong-v2-humanoid-ppo
+- Hugging Face: https://huggingface.co/allapp/connectailab-rl-mong-v2-humanoid-ppo
 - Gymnasium Humanoid-v5 (documentación del entorno): https://gymnasium.farama.org/environments/mujoco/humanoid/
 - MuJoCo: https://mujoco.org/
 - PPO (paper original): https://arxiv.org/abs/1707.06347

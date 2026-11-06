@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 |---|---|---|---|---|
 | humanizer (este modelo) | 12B | Reescritura humanizante en/zh, preservación factual | Apache 2.0 | GGUF + safetensors, app offline, CLI |
 | google/gemma-4-12B (base) | 12B | Modelo general multimodal | Licencia Gemma | safetensors, GGUF comunitarios |
-| Modelos genéricos de paraphrase (p. ej. fine-tunes de T5/BART) | 0,2-3B | Parafraseo corto, sin preservación factual garantizada | Variable | HuggingFace |
+| Modelos genéricos de paraphrase (p. ej. fine-tunes de T5/BART) | 0,2-3B | Parafraseo corto, sin preservación factual garantizada | Variable | Hugging Face |
 
 No se conocen alternativas abiertas de 12B especializadas exactamente en humanización con evaluación contra detectores de IA publicada; la comparativa más directa es con su modelo base, del que se diferencia por el fine-tuning específico y las cuantizaciones optimizadas.
 
@@ -92,7 +92,7 @@ No se conocen alternativas abiertas de 12B especializadas exactamente en humaniz
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joseph1234222/humanizer
+- Hugging Face: https://huggingface.co/Joseph1234222/humanizer
 - Archivos GGUF: https://huggingface.co/jialinyyzz/humanizer-GGUF
 - GitHub: https://github.com/sgaofen/humanizer-local-model
 - Guía de instalación: https://github.com/sgaofen/humanizer-local-model/blob/main/docs/INSTALL.md

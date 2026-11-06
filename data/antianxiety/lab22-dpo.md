@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metodo de alineacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Antianxiety/lab22-dpo | 3B (base) + LoRA | 32k (base) | DPO | no disponible | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32k | RLHF | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B Instruct | 3B | 128k | RLHF | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini-instruct | 3,8B | 128k | SFT + DPO | MIT | HuggingFace |
+| Antianxiety/lab22-dpo | 3B (base) + LoRA | 32k (base) | DPO | no disponible | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32k | RLHF | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B Instruct | 3B | 128k | RLHF | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini-instruct | 3,8B | 128k | SFT + DPO | MIT | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que el adaptador no es directamente comparable. Qwen2.5-3B-Instruct es la alternativa oficial de Alibaba con alineacion RLHF, mientras que Llama 3.2 3B y Phi-3.5-mini son alternativas de tamano similar con licencias mas permisivas. El adaptador lab22-dpo no ofrece ventajas claras sobre estas opciones, salvo su valor didactico.
 
@@ -80,7 +80,7 @@ La comparativa se basa en el modelo base, ya que el adaptador no es directamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Antianxiety/lab22-dpo
+- Modelo en Hugging Face: https://huggingface.co/Antianxiety/lab22-dpo
 - Adaptador alternativo: https://huggingface.co/Wan1302/lab22-dpo-adapter-adapter
 - Version GGUF: https://huggingface.co/Wan1302/lab22-dpo-adapter-gguf
 - Notebook de entrenamiento (T4): https://github.com/VinUni-AI20k/Day22-Track3-DPO-Alignment-Lab/blob/main/colab/Lab22_DPO_T4.ipynb

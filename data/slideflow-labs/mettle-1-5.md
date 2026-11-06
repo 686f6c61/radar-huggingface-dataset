@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto/entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| METTLE 1.5 | 1,14 mil M | tesela 224 × 224 | 1.536 o 3.072 dim | no disponible | HuggingFace, `custom_code` |
-| H-optimus-0 (base) | no disponible en la información | tesela 224 × 224 | no disponible | no disponible | HuggingFace (bioptimus) |
-| METTLE 1 (pre-release) | no disponible en la información | tesela 224 × 224 | no disponible | no disponible | HuggingFace (slideflow-labs) |
+| METTLE 1.5 | 1,14 mil M | tesela 224 × 224 | 1.536 o 3.072 dim | no disponible | Hugging Face, `custom_code` |
+| H-optimus-0 (base) | no disponible en la información | tesela 224 × 224 | no disponible | no disponible | Hugging Face (bioptimus) |
+| METTLE 1 (pre-release) | no disponible en la información | tesela 224 × 224 | no disponible | no disponible | Hugging Face (slideflow-labs) |
 | Otros extractores de patología (p. ej. UNI, Virchow, Prov-GigaPath) | no disponibles en la información | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas no está disponible: la model card no publica benchmarks y no se dispone de datos de rendimiento de los modelos comparables en la información proporcionada. La comparación más directa es con su modelo base H-optimus-0, del que METTLE 1.5 es un fine-tune de robustez, y con METTLE 1 (pre-release), su checkpoint anterior.
@@ -83,14 +83,14 @@ La comparación cuantitativa con alternativas no está disponible: la model card
 - Riesgo de alucinación: no aplica en el sentido generativo (no produce texto), pero los embeddings pueden no capturar morfología relevante en tejidos o tinciones fuera de distribución.
 - Limitaciones de idioma: no aplica (modelo de visión); no procesa texto.
 - Dependencia de `trust_remote_code=True` y de `custom_code`: implica ejecutar código del autor, con el riesgo de seguridad asociado; auditar antes de usar en entornos sensibles.
-- Compatibilidad: consumidores que cargan directamente el checkpoint plano `.pt` original requieren su formato existente o un cargador safetensors explícitamente compatible; el loader de HuggingFace usa nombres de tensor `backbone.*`.
+- Compatibilidad: consumidores que cargan directamente el checkpoint plano `.pt` original requieren su formato existente o un cargador safetensors explícitamente compatible; el loader de Hugging Face usa nombres de tensor `backbone.*`.
 - Entrada fija de 224 × 224: no está documentado el soporte de resoluciones mayores ni de estrategias de multi-escala.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de mejora de robustez frente a H-optimus-0 en la información disponible; conviene validar en el dominio propio.
-- Cero descargas y un solo "like" en HuggingFace: modelo muy reciente y con escasa validación comunitaria.
+- Cero descargas y un solo "like" en Hugging Face: modelo muy reciente y con escasa validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/slideflow-labs/mettle-1.5
+- Modelo en Hugging Face: https://huggingface.co/slideflow-labs/mettle-1.5
 - Modelo base H-optimus-0: https://huggingface.co/bioptimus/H-optimus-0
 - Checkpoint anterior METTLE 1 (pre-release): https://huggingface.co/slideflow-labs/mettle-1
 - Repositorio de Slideflow Labs: no disponible en la información proporcionada

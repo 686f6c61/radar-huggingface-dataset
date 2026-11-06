@@ -70,7 +70,7 @@ No se dispone de datos suficientes para realizar una comparativa fiable con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Animateus/gemma-4-E2B-6bit
+- Repositorio Hugging Face: https://huggingface.co/Animateus/gemma-4-E2B-6bit
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Página oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4

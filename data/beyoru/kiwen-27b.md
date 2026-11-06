@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks de otros modelos de 27B comparables en la i
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/beyoru/Kiwen-27B)
+- [Hugging Face del modelo](https://huggingface.co/beyoru/Kiwen-27B)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Modelo draft para decodificación especulativa](https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2)
 - [Guía local de Qwen3.8-27B](https://linas.substack.com/p/qwen3-8-27b-local-guide) (aunque no específica para Kiwen, puede ser útil para el despliegue)

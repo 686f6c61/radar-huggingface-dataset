@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Utter dictation cleanup es un modelo especializado en la limpieza de transcripciones de voz a texto, publicado por el usuario hpal007 en HuggingFace. Su función es convertir transcripciones crudas de speech-to-text en el texto que el hablante realmente quiso dictar: elimina muletillas y falsos arranques, corrige gramática y mayúsculas de nombres técnicos (por ejemplo, "api" a "API"), escribe los números con el formato adecuado, convierte listas habladas en listas escritas y preserva el hindi en el alfabeto en que se habló (devanagari o latino). El modelo no resume ni añade contenido, algo poco habitual en este tipo de herramientas.
+Utter dictation cleanup es un modelo especializado en la limpieza de transcripciones de voz a texto, publicado por el usuario hpal007 en Hugging Face. Su función es convertir transcripciones crudas de speech-to-text en el texto que el hablante realmente quiso dictar: elimina muletillas y falsos arranques, corrige gramática y mayúsculas de nombres técnicos (por ejemplo, "api" a "API"), escribe los números con el formato adecuado, convierte listas habladas en listas escritas y preserva el hindi en el alfabeto en que se habló (devanagari o latino). El modelo no resume ni añade contenido, algo poco habitual en este tipo de herramientas.
 
 Técnicamente, el repositorio distribuye dos cuantizaciones GGUF Q6_K derivadas de modelos base conocidos: Qwen3-1.7B (archivo recomendado, 1,42 GB) y Gemma 4 E2B-it (3,26 GB). Está diseñado para ejecutarse localmente mediante llama.cpp dentro de Utter, una aplicación de dictado para macOS y Windows, donde se descarga automáticamente en los presets "Accurate" e "Hinglish". Su relevancia radica en que aborda un problema muy concreto y frecuente en flujos de dictado por voz —la diferencia entre lo que un motor de transcripción produce y lo que el usuario quiere escribir— con un modelo pequeño que corre en un ordenador de consumo.
 
-Es importante señalar una discrepancia en los metadatos: HuggingFace reporta 4.628.569.635 parámetros totales en safetensors, mientras que los modelos base declarados (Qwen3-1.7B y Gemma 4 E2B) tienen tamaños de aproximadamente 1,7 y 2-3 mil millones de parámetros respectivamente, y los archivos GGUF publicados (1,42 GB y 3,26 GB en Q6_K) son coherentes con estos últimos. El dato de safetensors podría corresponder a un checkpoint combinado o a un error de registro.
+Es importante señalar una discrepancia en los metadatos: Hugging Face reporta 4.628.569.635 parámetros totales en safetensors, mientras que los modelos base declarados (Qwen3-1.7B y Gemma 4 E2B) tienen tamaños de aproximadamente 1,7 y 2-3 mil millones de parámetros respectivamente, y los archivos GGUF publicados (1,42 GB y 3,26 GB en Q6_K) son coherentes con estos últimos. El dato de safetensors podría corresponder a un checkpoint combinado o a un error de registro.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Tarea | Limpieza especializada de dictado (en/hi) | Chat y razonamiento general | Chat general multimodal |
 | Licencia | Apache 2.0 | Apache 2.0 | Licencia Gemma |
 | Formato | GGUF | Safetensors y GGUF | Safetensors y GGUF |
-| Disponibilidad | HuggingFace (231 descargas) | HuggingFace | HuggingFace |
+| Disponibilidad | Hugging Face (231 descargas) | Hugging Face | Hugging Face |
 
 Frente a sus modelos base, este modelo sacrifica la generalidad (no sirve para chat, traduccion ni resumen) a cambio de un comportamiento muy fiable y determinista en una unica tarea, con temperatura 0 y un system prompt fijo. Frente a alternativas genericas de limpieza de texto basadas en LLM mayores, su ventaja es el tamano: corre en local en un portatil, lo que lo hace adecuado para una aplicacion de dictado de escritorio. No existen en la informacion proporcionada comparativas de calidad publicadas contra otros limpiadores de transcripciones.
 
@@ -90,7 +90,7 @@ Frente a sus modelos base, este modelo sacrifica la generalidad (no sirve para c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hpal007/utter-dictation-cleanup-GGUF
+- Modelo en Hugging Face: https://huggingface.co/hpal007/utter-dictation-cleanup-GGUF
 - Aplicacion Utter (GitHub): https://github.com/hpal007/utter
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo base Gemma 4 E2B-it: https://huggingface.co/google/gemma-4-E2B-it

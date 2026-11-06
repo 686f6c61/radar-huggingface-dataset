@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/rfdetr_medium-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/rfdetr_medium-int8-ov
 - Modelo original RF-DETR: https://github.com/roboflow/rf-detr
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - OpenVINO IR format: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

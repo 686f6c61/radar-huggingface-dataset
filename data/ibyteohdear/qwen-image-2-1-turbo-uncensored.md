@@ -1,7 +1,7 @@
 # ibyteohdear/Qwen-Image-2.1-Turbo-Uncensored
 
 ## Resumen
-Qwen-Image-2.1-Turbo-Uncensored es un checkpoint de generacion de imagenes publicado por el usuario ibyteohdear en HuggingFace, derivado mediante ajuste fino del modelo Qwen/Qwen-Image-2.1, que a su vez es la base del checkpoint acelerado oficial Qwen/Qwen-Image-2.1-Turbo. Se distribuye en formato diffusers y safetensors, con 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y un tamano de repositorio de 32,5 GB. La etiqueta del autor apunta a generacion de imagen a partir de texto y edicion de imagen, con la marca "not-for-all-audiences" que indica que el ajuste se ha orientado a reducir o eliminar restricciones de contenido.
+Qwen-Image-2.1-Turbo-Uncensored es un checkpoint de generacion de imagenes publicado por el usuario ibyteohdear en Hugging Face, derivado mediante ajuste fino del modelo Qwen/Qwen-Image-2.1, que a su vez es la base del checkpoint acelerado oficial Qwen/Qwen-Image-2.1-Turbo. Se distribuye en formato diffusers y safetensors, con 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y un tamano de repositorio de 32,5 GB. La etiqueta del autor apunta a generacion de imagen a partir de texto y edicion de imagen, con la marca "not-for-all-audiences" que indica que el ajuste se ha orientado a reducir o eliminar restricciones de contenido.
 
 El modelo hereda la arquitectura de generacion visual de 7B de la familia Qwen-Image-2.1 y la estrategia Turbo de muestreo acelerado: genera en 8 pasos de denoising con CFG=1 por defecto y cacheo de KV de prefijo para reutilizar el contexto de texto e imagen de referencia entre pasos. Se carga directamente con la clase QwenImage21Pipeline de Diffusers, lo que lo hace inmediatamente utilizable en el ecosistema Python de difusion.
 
@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Pasos de denoising | Pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo-Uncensored (ibyteohdear) | 7,1B | 8 | QwenImage21Pipeline (diffusers) | qwen-research | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1-Turbo (oficial) | 7B | 8 | QwenImage21Pipeline (diffusers) | No disponible en la informacion proporcionada | HuggingFace, ModelScope |
-| Qwen/Qwen-Image-2.1 (base) | 7B | No disponible (checkpoint no acelerado) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace |
-| FLUX.1-dev | Aproximadamente 12B (dato externo no verificado en la informacion proporcionada) | No disponible en la informacion proporcionada | Diffusers | No comercial (dato externo no verificado) | HuggingFace |
+| Qwen-Image-2.1-Turbo-Uncensored (ibyteohdear) | 7,1B | 8 | QwenImage21Pipeline (diffusers) | qwen-research | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1-Turbo (oficial) | 7B | 8 | QwenImage21Pipeline (diffusers) | No disponible en la informacion proporcionada | Hugging Face, ModelScope |
+| Qwen/Qwen-Image-2.1 (base) | 7B | No disponible (checkpoint no acelerado) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face |
+| FLUX.1-dev | Aproximadamente 12B (dato externo no verificado en la informacion proporcionada) | No disponible en la informacion proporcionada | Diffusers | No comercial (dato externo no verificado) | Hugging Face |
 
 Los datos de las filas de Qwen-Image-2.1-Turbo y Qwen-Image-2.1 se derivan unicamente de las referencias incluidas en la model card; el resto de campos no esta disponible. Los datos de FLUX.1-dev proceden de conocimiento general y no forman parte de la informacion proporcionada, por lo que deben verificarse antes de usarse.
 
@@ -79,7 +79,7 @@ Los datos de las filas de Qwen-Image-2.1-Turbo y Qwen-Image-2.1 se derivan unica
 - Implicaciones legales del ajuste "uncensored": la eliminacion de filtros puede entrar en conflicto con la legislacion aplicable sobre generacion de contenido, incluida la normativa europea de IA. Se recomienda asesoramiento legal antes de su explotacion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ibyteohdear/Qwen-Image-2.1-Turbo-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/ibyteohdear/Qwen-Image-2.1-Turbo-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Checkpoint Turbo oficial: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1-Turbo

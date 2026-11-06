@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Subby1872/maize-disease-checkpoints` es un checkpoint publicado en HuggingFace por el usuario Subby1872, orientado a la detección de enfermedades del maíz a partir de imágenes de hojas. El repositorio tiene un tamaño de 0,5 GB y se distribuye bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card publicada por el autor es extremadamente escueta: únicamente indica la licencia, sin especificar arquitectura, datos de entrenamiento, métricas o instrucciones de uso.
+El modelo `Subby1872/maize-disease-checkpoints` es un checkpoint publicado en Hugging Face por el usuario Subby1872, orientado a la detección de enfermedades del maíz a partir de imágenes de hojas. El repositorio tiene un tamaño de 0,5 GB y se distribuye bajo licencia MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la model card publicada por el autor es extremadamente escueta: únicamente indica la licencia, sin especificar arquitectura, datos de entrenamiento, métricas o instrucciones de uso.
 
 A pesar de que la investigación en detección de enfermedades del maíz mediante deep learning es un campo activo (con múltiples artículos recientes que emplean redes convolucionales, transformers y técnicas de explainable AI), este checkpoint concreto no incluye documentación técnica que permita evaluar su arquitectura, rendimiento o capacidades reales. La fecha de creación (agosto de 2026) y la ausencia de descargas o valoraciones sugieren que se trata de una publicación reciente y sin validación comunitaria. Por tanto, esta ficha se basa exclusivamente en los metadatos disponibles y señala explícitamente toda la información que no ha sido publicada.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Subby1872/maize-disease-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Subby1872/maize-disease-checkpoints
 - Artículo relacionado (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2666827025000568
 - Artículo relacionado (Nature): https://www.nature.com/articles/s41598-022-10140-z
 - Artículo relacionado (Frontiers): https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2026.1803005/full

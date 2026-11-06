@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tokkilejen/xcoder` es un modelo de lenguaje publicado en HuggingFace por el usuario tokkilejen, distribuido en formato GGUF y con licencia MIT. El unico dato cuantitativo fiable que acompana a la publicacion es el recuento de parametros: 630.167.424 (aproximadamente 630 millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en CPU o en GPUs de consumo. El repositorio ocupa 9,5 GB, un tamano muy superior al que corresponderia a un unico fichero de pesos de 630M en FP16 (en torno a 1,26 GB), lo que sugiere que el autor ha subido varias cuantizaciones GGUF del mismo modelo.
+`tokkilejen/xcoder` es un modelo de lenguaje publicado en Hugging Face por el usuario tokkilejen, distribuido en formato GGUF y con licencia MIT. El unico dato cuantitativo fiable que acompana a la publicacion es el recuento de parametros: 630.167.424 (aproximadamente 630 millones), lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en CPU o en GPUs de consumo. El repositorio ocupa 9,5 GB, un tamano muy superior al que corresponderia a un unico fichero de pesos de 630M en FP16 (en torno a 1,26 GB), lo que sugiere que el autor ha subido varias cuantizaciones GGUF del mismo modelo.
 
-La model card es practicamente vacia: solo contiene el bloque de licencia (`license: mit`), sin descripcion, sin especificaciones, sin datos de entrenamiento ni resultados de evaluacion. Los tags de la ficha (`gguf`, `conversational`, `endpoints_compatible`, `region:us`) indican que esta pensado para uso conversacional y para ser servido en infraestructura compatible con los Inference Endpoints de HuggingFace, pero no aportan informacion sobre arquitectura, contexto o idiomas. El nombre "xcoder" podria sugerir una orientacion a generacion de codigo, pero es una inferencia por el nombre, no un dato confirmado por el autor.
+La model card es practicamente vacia: solo contiene el bloque de licencia (`license: mit`), sin descripcion, sin especificaciones, sin datos de entrenamiento ni resultados de evaluacion. Los tags de la ficha (`gguf`, `conversational`, `endpoints_compatible`, `region:us`) indican que esta pensado para uso conversacional y para ser servido en infraestructura compatible con los Inference Endpoints de Hugging Face, pero no aportan informacion sobre arquitectura, contexto o idiomas. El nombre "xcoder" podria sugerir una orientacion a generacion de codigo, pero es una inferencia por el nombre, no un dato confirmado por el autor.
 
 Su relevancia actual es limitada y de naturaleza practica: se trata de un checkpoint pequeno, con licencia permisiva y en un formato listo para `llama.cpp` u Ollama, lo que reduce la barrera de entrada para experimentacion local. Ahora bien, la ausencia total de documentacion tecnica y de benchmarks hace desaconsejable su adopcion en produccion sin una evaluacion propia previa.
 
@@ -19,7 +19,7 @@ Su relevancia actual es limitada y de naturaleza practica: se trata de un checkp
 | Tipos de cuantizacion | no disponible; el tag `gguf` y el tamano del repo (9,5 GB) apuntan a varias cuantizaciones GGUF, pero el autor no detalla cuales |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | GGUF (tag de HuggingFace); no se ha confirmado la presencia de safetensors en el repo, aunque el recuento de parametros se ha obtenido de safetensors segun los metadatos |
+| Formato de pesos | GGUF (tag de Hugging Face); no se ha confirmado la presencia de safetensors en el repo, aunque el recuento de parametros se ha obtenido de safetensors segun los metadatos |
 
 ## Arquitectura y entrenamiento
 
@@ -29,7 +29,7 @@ No se dispone de datos sobre el corpus de entrenamiento: ni volumen de tokens, n
 
 ## Capacidades
 
-- Generacion de texto conversacional: es la unica capacidad declarada explicitamente, a traves del tag `conversational` de la ficha de HuggingFace.
+- Generacion de texto conversacional: es la unica capacidad declarada explicitamente, a traves del tag `conversational` de la ficha de Hugging Face.
 - Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el formato de plantilla conversacional es compatible con el esquema de mensajes (`messages`) de los Inference Endpoints, lo que facilita su despliegue mediante APIs estandar.
 - Generacion de codigo: plausible por el nombre del modelo ("xcoder"), pero no confirmada por el autor ni respaldada por ningun benchmark.
 - Razonamiento, matematicas, vision, audio: no disponible; no hay ninguna evidencia de soporte multimodal ni de modos de razonamiento extendido.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion / benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| tokkilejen/xcoder | 630M | no disponible | MIT | Practicamente inexistente | GGUF en HuggingFace |
+| tokkilejen/xcoder | 630M | no disponible | MIT | Practicamente inexistente | GGUF en Hugging Face |
 | Qwen2.5-Coder-0.5B | aproximadamente 494M | 32k (dato publico del autor original) | Apache 2.0 | Model card completa con benchmarks | safetensors y multiples formatos |
 | Qwen3-0.6B | aproximadamente 596M | 32k (dato publico del autor original) | Apache 2.0 | Model card completa con benchmarks y modo de razonamiento | safetensors y GGUF |
 | TinyLlama-1.1B | aproximadamente 1,1B | 2k (dato publico del autor original) | Apache 2.0 | Model card y evaluaciones publicadas | safetensors y GGUF |
@@ -79,12 +79,12 @@ Nota: los datos de las alternativas provienen del conocimiento publico de esos m
 - Ambiguedad sobre la orientacion a codigo: el nombre "xcoder" no va acompanado de ninguna confirmacion; no debe presuponerse capacidad de programacion sin pruebas.
 - Inconsistencia en los metadatos: las fechas de creacion y actualizacion del repositorio (octubre de 2026) son posteriores a la fecha actual, lo que indica un problema de integridad en los metadatos de la publicacion y aconseja tratar el resto de campos con cautela.
 - Licencia MIT: permite uso comercial y modificacion sin restricciones de atribucion mas alla del aviso de copyright, pero la licencia no cubre posibles reclamaciones sobre los datos de entrenamiento, que se desconocen.
-- Trazabilidad: el autor no publica paper, repositorio de codigo ni guia de uso; la unica fuente es la pagina de HuggingFace. No hay garantia de mantenimiento ni de soporte.
+- Trazabilidad: el autor no publica paper, repositorio de codigo ni guia de uso; la unica fuente es la pagina de Hugging Face. No hay garantia de mantenimiento ni de soporte.
 - Resultados de la busqueda web no concluyentes: las consultas realizadas no han devuelto ninguna referencia tecnica al modelo, solo resultados sin relacion alguna con el; no existe evidencia externa de uso o validacion por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokkilejen/xcoder
-- Perfil del autor en HuggingFace: https://huggingface.co/tokkilejen
+- Modelo en Hugging Face: https://huggingface.co/tokkilejen/xcoder
+- Perfil del autor en Hugging Face: https://huggingface.co/tokkilejen
 
 No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

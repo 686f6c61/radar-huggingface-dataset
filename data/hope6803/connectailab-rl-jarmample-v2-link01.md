@@ -70,8 +70,8 @@ Cota superior de precisión alcanzable al verbalizar el estado: 99%. No se han p
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jarmample-v2-link01 | 0,8B (base) + LoRA | no disponible | Decisión robótica por destilación de PPO | Apache 2.0 | HuggingFace (14 descargas) |
-| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | LLM generalista | Apache 2.0 | HuggingFace |
+| connectailab-rl-jarmample-v2-link01 | 0,8B (base) + LoRA | no disponible | Decisión robótica por destilación de PPO | Apache 2.0 | Hugging Face (14 descargas) |
+| Qwen/Qwen3.5-0.8B | 0,8B | no disponible | LLM generalista | Apache 2.0 | Hugging Face |
 | Política PPO original (`brain.json`) | no disponible | no aplica | Política neuronal de RL en simulador | no disponible | CONNECT AI WORLD |
 | Adaptadores LoRA de decisión de tamaño similar | 0,5B–1B | variable | Clasificación de acciones | variable | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de comparativas publicadas con otros adaptadores de decisión rob�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarmample-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarmample-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

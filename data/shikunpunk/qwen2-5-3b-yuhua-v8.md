@@ -4,7 +4,7 @@
 
 Qwen2.5-3B-YuHua-V8 es un conjunto de ocho adaptadores LoRA desarrollados por shikunpunk sobre el modelo base Qwen2.5-3B-Instruct, diseñado específicamente para la generación de novelas con el estilo literario del escritor chino Yu Hua. El modelo resuelve el problema de control fino del estilo narrativo mediante un pipeline modular en el que cada adaptador desempeña una función concreta: planificación de la trama, redacción de prosa, diálogos, descripciones psicológicas y de escena, selección de adaptador, control de calidad entre párrafos y detección de memorización. La relevancia actual radica en demostrar cómo una arquitectura de adaptadores múltiples puede lograr una especialización estilística precisa sin necesidad de reentrenar el modelo completo, lo que resulta atractivo para aplicaciones de escritura creativa asistida.
 
-El modelo base Qwen2.5-3B-Instruct es un transformer decoder-only de 3 000 millones de parámetros, con una ventana de contexto de 32 000 tokens en su versión original, aunque esta característica no se confirma explícitamente para este adaptador. El repositorio ocupa 0,9 GB e incluye los pesos de los ocho adaptadores en formato safetensors. No se especifica licencia ni idiomas soportados en la ficha de HuggingFace, aunque el contenido de la model card está en chino y el estilo objetivo es la prosa china contemporánea.
+El modelo base Qwen2.5-3B-Instruct es un transformer decoder-only de 3 000 millones de parámetros, con una ventana de contexto de 32 000 tokens en su versión original, aunque esta característica no se confirma explícitamente para este adaptador. El repositorio ocupa 0,9 GB e incluye los pesos de los ocho adaptadores en formato safetensors. No se especifica licencia ni idiomas soportados en la ficha de Hugging Face, aunque el contenido de la model card está en chino y el estilo objetivo es la prosa china contemporánea.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shikunpunk/Qwen2.5-3B-YuHua-V8
+- Modelo en Hugging Face: https://huggingface.co/shikunpunk/Qwen2.5-3B-YuHua-V8
 - Dataset de entrenamiento: https://huggingface.co/datasets/shikunpunk/YuHua-Qwen3-V4-Data
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

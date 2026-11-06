@@ -4,7 +4,7 @@
 
 ## Resumen
 
-farynox/Nay1-small es un repositorio de modelo publicado en HuggingFace por el usuario farynox el 22 de septiembre de 2026, bajo licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara pipeline, idiomas soportados ni etiquetas tecnicas mas alla de la licencia y la region (us). La model card asociada contiene unicamente el campo `license: mit`, sin descripcion, sin ejemplos de uso y sin referencias a documentacion externa.
+farynox/Nay1-small es un repositorio de modelo publicado en Hugging Face por el usuario farynox el 22 de septiembre de 2026, bajo licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no declara pipeline, idiomas soportados ni etiquetas tecnicas mas alla de la licencia y la region (us). La model card asociada contiene unicamente el campo `license: mit`, sin descripcion, sin ejemplos de uso y sin referencias a documentacion externa.
 
 No hay informacion publica sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion. El nombre del repositorio sugiere un modelo de tamano reducido, pero se trata de una inferencia a partir del sufijo "small" y no de un dato confirmado por el autor.
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farynox/Nay1-small
+- Modelo en Hugging Face: https://huggingface.co/farynox/Nay1-small
 - Model card: https://huggingface.co/farynox/Nay1-small/blob/main/README.md
 
 No se han encontrado enlaces relevantes adicionales. La busqueda web realizada devolvio exclusivamente resultados sin relacion con el modelo (portales de noticias italianos y paginas de tarifas de telefonia), por lo que no se incluyen como referencias. No se ha localizado paper, repositorio de codigo, blog tecnico ni demo asociados a farynox/Nay1-small.

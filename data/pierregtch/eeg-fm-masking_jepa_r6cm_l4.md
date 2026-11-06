@@ -92,9 +92,9 @@ No se han publicado en la información disponible comparaciones numéricas frent
 
 | Modelo | Marco | Radio r | Longitud L | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_r6cm_L4 (este) | JEPA | 6 cm | 4 parches | 12,69 M (encoder) | CC-BY-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible | CC-BY-4.0 | HuggingFace (recomendado por el paper) |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible | CC-BY-4.0 | HuggingFace (recomendado por el paper) |
+| eeg-fm-masking_jepa_r6cm_L4 (este) | JEPA | 6 cm | 4 parches | 12,69 M (encoder) | CC-BY-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible | CC-BY-4.0 | Hugging Face (recomendado por el paper) |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible | CC-BY-4.0 | Hugging Face (recomendado por el paper) |
 | Modelos EEG externos (LaBraM, BIOT, EEGPT) | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Según la model card, el paper recomienda las configuraciones r = 9 cm y L = 2, tanto en la variante MAE como en la JEPA, sobre la configuración de este repositorio. No se proporcionan en la información disponible las métricas comparativas entre ellas.
@@ -116,7 +116,7 @@ Según la model card, el paper recomienda las configuraciones r = 9 cm y L = 2, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L4
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r6cm_L4
 - Sitio web del paper: https://pierregtch.github.io/eeg-fm-masking
 - Repositorio de código: https://github.com/PierreGtch/eeg-fm-masking
 - Colección con los 58 modelos de la familia: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

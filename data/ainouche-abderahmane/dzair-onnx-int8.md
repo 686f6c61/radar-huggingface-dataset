@@ -104,6 +104,6 @@ La información disponible no incluye comparaciones con otros encoders de árabe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX-INT8
+- Modelo en Hugging Face: https://huggingface.co/ainouche-abderahmane/DZAIR-ONNX-INT8
 - Modelo base DZAIR (tarjeta principal, con tabla completa de resultados, datos de entrenamiento y licencias): https://huggingface.co/ainouche-abderahmane/DZAIR
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales relacionados con este modelo.

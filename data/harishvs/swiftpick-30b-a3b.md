@@ -81,7 +81,7 @@ Como referencia, la model card indica que las releases v1 con Gemma 4 obtienen e
 
 | Modelo | Parámetros | Contexto | JevBench (231) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| swiftpick-30B-A3B | 31B totales / ~3B activos | 4096 en evaluación | 183 | NVIDIA Open Model Agreement | HuggingFace + repo de código |
+| swiftpick-30B-A3B | 31B totales / ~3B activos | 4096 en evaluación | 183 | NVIDIA Open Model Agreement | Hugging Face + repo de código |
 | Gemma 4 E2B (v1) | no disponible | no disponible | 180 | no disponible en la información | no disponible |
 | Gemma 4 26B-A4B (v1) | 26B totales / ~4B activos | no disponible | 207 | no disponible en la información | no disponible |
 
@@ -101,7 +101,7 @@ No se dispone de comparativas con clasificadores dedicados (por ejemplo, modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harishvs/swiftpick-30B-A3B
+- Modelo en Hugging Face: https://huggingface.co/harishvs/swiftpick-30B-A3B
 - Repositorio de código (Apache-2.0): https://github.com/harishvs/strands-decider
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Licencia NVIDIA Open Model Agreement: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/

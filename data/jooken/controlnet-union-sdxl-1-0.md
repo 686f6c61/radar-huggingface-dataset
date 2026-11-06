@@ -27,7 +27,7 @@ El modelo sigue la arquitectura de ControlNet original, adaptada a SDXL. Se aña
 - Generación multi-condición: puede combinar varias señales de control simultáneamente, aprendiendo la fusión durante el entrenamiento.
 - Generación de imágenes de alta resolución con cualquier relación de aspecto gracias al bucket training.
 - Compatible con otros modelos SDXL de código abierto (por ejemplo, BluePencilXL, CounterfeitXL) y con LoRAs.
-- En la versión ProMax (disponible en el mismo repositorio de HuggingFace) se añaden capacidades avanzadas de edición: tile deblur, tile variation, super resolución (hasta 9M de píxeles), inpainting y outpainting.
+- En la versión ProMax (disponible en el mismo repositorio de Hugging Face) se añaden capacidades avanzadas de edición: tile deblur, tile variation, super resolución (hasta 9M de píxeles), inpainting y outpainting.
 - Buen seguimiento de prompts gracias al re-captioning con CogVLM.
 - No requiere ajuste de hiperparámetros para fusionar condiciones.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - No se dispone de datos oficiales sobre requisitos de hardware. Como modelo de control para SDXL, se necesita ejecutar junto al modelo base SDXL (que tiene alrededor de 2.6B parámetros). En total, la inferencia requiere una GPU con al menos 8-12 GB de VRAM en precisión fp16, dependiendo de la resolución y el número de condiciones.
 - GPU recomendadas: NVIDIA RTX 3090, RTX 4090, A100, H100, o similares con suficiente memoria.
 - El modelo puede ejecutarse en GPUs de consumo (por ejemplo, RTX 3060 con 12 GB) si se usa cuantización o se reduce la resolución, aunque no se especifican formatos cuantizados en el repositorio.
-- Opciones de despliegue: al ser un modelo de difusión, se puede integrar con la librería Diffusers de HuggingFace, así como con herramientas como ComfyUI o Automatic1111 WebUI. Para inferencia en producción, se pueden utilizar servidores como vLLM (aunque está más orientado a LLM) o soluciones específicas para difusión como TensorRT.
+- Opciones de despliegue: al ser un modelo de difusión, se puede integrar con la librería Diffusers de Hugging Face, así como con herramientas como ComfyUI o Automatic1111 WebUI. Para inferencia en producción, se pueden utilizar servidores como vLLM (aunque está más orientado a LLM) o soluciones específicas para difusión como TensorRT.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ La comparativa se basa en información pública; no se dispone de benchmarks par
 
 ## Enlaces
 
-- [HuggingFace: JookEn/controlnet-union-sdxl-1.0](https://huggingface.co/JookEn/controlnet-union-sdxl-1.0)
+- [Hugging Face: JookEn/controlnet-union-sdxl-1.0](https://huggingface.co/JookEn/controlnet-union-sdxl-1.0)
 - [Repositorio GitHub de ControlNetPlus (mencionado en la model card)](https://github.com/xinsir6/ControlNetPlus)
 - [Modelo original de xinsir (mismo modelo, con versión ProMax)](https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)

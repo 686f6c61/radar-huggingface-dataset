@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Precision en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `smai-a4-mlp-ioc` (MLP NumPy) | 197.322 | 3072 caracteristicas | 0,4552 | MIT | HuggingFace |
-| `smai-a4-mlp-ioc` (IOC-NN PyTorch) | 197.322 | 3072 caracteristicas | 0,4419 | MIT | HuggingFace |
+| `smai-a4-mlp-ioc` (MLP NumPy) | 197.322 | 3072 caracteristicas | 0,4552 | MIT | Hugging Face |
+| `smai-a4-mlp-ioc` (IOC-NN PyTorch) | 197.322 | 3072 caracteristicas | 0,4419 | MIT | Hugging Face |
 | MLP de referencia sobre CIFAR-10 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | CNN pequena sobre CIFAR-10 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,5 +85,5 @@ No se dispone de datos verificables de modelos alternativos en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RDXdevil/smai-a4-mlp-ioc
+- Modelo en Hugging Face: https://huggingface.co/RDXdevil/smai-a4-mlp-ioc
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -6,7 +6,7 @@ Este repositorio no es un modelo completo, sino un adaptador LoRA (PEFT) publica
 
 La relevancia de esta ficha es fundamentalmente metodologica: se trata de un artefacto de investigacion reproducible, no de un modelo pensado para produccion. Permite a otros investigadores inspeccionar como afecta una intervencion de olvido selectivo a un VLM pequeno, comparar variantes de la misma familia de experimentos y reutilizar el adaptador como linea base en estudios de supresion de conocimiento, privacidad o seguridad multimodal.
 
-La model card del autor es la plantilla por defecto de HuggingFace sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Todo lo que se puede afirmar con rigor procede de los metadatos del repositorio y de la documentacion publica del modelo base, y se indica explicitamente cuando un dato no esta disponible.
+La model card del autor es la plantilla por defecto de Hugging Face sin rellenar: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. Todo lo que se puede afirmar con rigor procede de los metadatos del repositorio y de la documentacion publica del modelo base, y se indica explicitamente cuando un dato no esta disponible.
 
 ## Especificaciones tecnicas
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (`Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget1-GA_diff`) | Adaptador LoRA PEFT | no disponible (base de 2B) | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este adaptador (`Qwen3-VL-2B-Instruct-IDUnlearn-Bench-forget1-GA_diff`) | Adaptador LoRA PEFT | no disponible (base de 2B) | no disponible | no disponible | Hugging Face, 0 descargas |
 | `outputs_3/mllmu_vanilla_qwen3-vl-2b` | Checkpoint base del adaptador | no disponible | no disponible | no disponible | Referenciado como modelo base |
-| Qwen3-VL-2B-Instruct | VLM denso original | 2B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, repo oficial de Qwen; GGUF de terceros (NexaAI); Qualcomm AI Hub |
+| Qwen3-VL-2B-Instruct | VLM denso original | 2B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, repo oficial de Qwen; GGUF de terceros (NexaAI); Qualcomm AI Hub |
 
 No se dispone de datos de rendimiento de ninguna de las tres variantes, por lo que la comparativa se limita a tipo de artefacto y procedencia.
 

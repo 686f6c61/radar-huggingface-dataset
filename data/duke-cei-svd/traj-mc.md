@@ -74,5 +74,5 @@ No disponible. Este repositorio no es un modelo independiente, sino un conjunto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Duke-CEI-SVD/traj-mc
+- Repositorio en Hugging Face: https://huggingface.co/Duke-CEI-SVD/traj-mc
 - Modelo base: https://huggingface.co/GSAI-ML/LLaDA-8B-Base

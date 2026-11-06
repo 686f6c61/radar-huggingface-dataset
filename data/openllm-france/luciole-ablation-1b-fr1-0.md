@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: el modelo tiene 1.235 millones de parametros. En precision fp16, el peso ocupa aproximadamente 2,47 GB, por lo que cabe en GPUs con 4 GB de VRAM o mas. Con cuantizacion de 4 bits, el peso se reduce a unos 0,62 GB, permitiendo ejecutarlo en GPUs con 2-3 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna con al menos 4 GB de VRAM (por ejemplo, NVIDIA RTX 3050, RTX 3060, GTX 1660 Super) puede ejecutar el modelo en fp16. Para cuantizacion de 4 bits, incluso GPUs integradas con 4 GB compartidos podrian ser suficientes.
 - Si cabe en consumer GPU: si, es un modelo pequeno que se ejecuta sin problemas en hardware de consumo.
-- Opciones de despliegue: el modelo se puede cargar con la libreria `transformers` de HuggingFace, tanto en CPU como en GPU. Tambien es compatible con frameworks de inferencia como vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no hay guias oficiales para ello.
+- Opciones de despliegue: el modelo se puede cargar con la libreria `transformers` de Hugging Face, tanto en CPU como en GPU. Tambien es compatible con frameworks de inferencia como vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no hay guias oficiales para ello.
 - Latencia y throughput estimados: no se dispone de datos publicados. Para un modelo de 1,2B en una GPU consumer, se puede esperar una velocidad de generacion de decenas de tokens por segundo, pero no hay mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La principal diferencia es que el modelo Luciole esta especificamente disenado p
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OpenLLM-France/luciole-ablation-1B-fr1.0)
+- [Modelo en Hugging Face](https://huggingface.co/OpenLLM-France/luciole-ablation-1B-fr1.0)
 - [Articulo cientifico EIFFEL (HAL)](https://hal.science/hal-05619209)
 - [Repositorio de entrenamiento Luciole en GitHub](https://github.com/OpenLLM-France/Luciole-Training/tree/main/)
 - [Organizacion OpenLLM-France en GitHub](https://github.com/OpenLLM-France/)

@@ -101,7 +101,7 @@ No se dispone de comparación con implementaciones de referencia de ANDi del art
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TamAko783/anomalies-diffusion-andi-60k
+- Modelo en Hugging Face: https://huggingface.co/TamAko783/anomalies-diffusion-andi-60k
 - Modelo de 20k pasos: https://huggingface.co/TamAko783/anomalies-diffusion-andi
 - Línea base de autoencoder: https://huggingface.co/TamAko783/anomalies-diffusion-dae-baseline
 - Calibración conformal y auditoría de sesgo: https://huggingface.co/TamAko783/anomalies-diffusion-calibration

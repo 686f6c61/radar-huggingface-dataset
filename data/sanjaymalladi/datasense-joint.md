@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DataSense-Joint es un adaptador LoRA publicado por el usuario sanjaymalladi en HuggingFace, entrenado mediante SFT sobre el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 0,3 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de lenguaje.
+DataSense-Joint es un adaptador LoRA publicado por el usuario sanjaymalladi en Hugging Face, entrenado mediante SFT sobre el modelo base `unsloth/gemma-4-e2b-it-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 0,3 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de lenguaje.
 
-La relevancia de esta publicacion es limitada en terminos de documentacion: la model card es la plantilla por defecto de HuggingFace y no contiene informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto. Todos los apartados de la plantilla aparecen como "[More Information Needed]", por lo que la mayor parte de las especificaciones tecnicas no estan disponibles.
+La relevancia de esta publicacion es limitada en terminos de documentacion: la model card es la plantilla por defecto de Hugging Face y no contiene informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto. Todos los apartados de la plantilla aparecen como "[More Information Needed]", por lo que la mayor parte de las especificaciones tecnicas no estan disponibles.
 
 El interes practico se limita al caso de desarrolladores que quieran reproducir el pipeline de ajuste (Unsloth + TRL + PEFT) o reutilizar el adaptador como punto de partida para un ajuste posterior. Con 0 descargas y 0 likes en el momento de la consulta, no existe evidencia comunitaria de uso ni validacion externa del comportamiento del modelo.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanjaymalladi/DataSense-Joint | No disponible (adaptador LoRA) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | No disponible en la informacion recogida | No disponible | No disponible | No disponible | HuggingFace |
+| sanjaymalladi/DataSense-Joint | No disponible (adaptador LoRA) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| unsloth/gemma-4-e2b-it-unsloth-bnb-4bit (modelo base) | No disponible en la informacion recogida | No disponible | No disponible | No disponible | Hugging Face |
 | Otras variantes de la familia Gemma 4 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No es posible establecer una comparacion cuantitativa con alternativas de la misma categoria porque la informacion proporcionada no incluye especificaciones del modelo base, resultados de evaluacion ni datos de licencia de los modelos comparables.
@@ -90,7 +90,7 @@ No es posible establecer una comparacion cuantitativa con alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjaymalladi/DataSense-Joint
+- Modelo en Hugging Face: https://huggingface.co/sanjaymalladi/DataSense-Joint
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Articulo citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact#compute

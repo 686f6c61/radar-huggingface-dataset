@@ -69,6 +69,6 @@ No se dispone de benchmarks ni comparativas publicadas para velobyte_unified. Al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Devopssattva/velobyte_unified
+- Hugging Face: https://huggingface.co/Devopssattva/velobyte_unified
 - Perfil del autor: https://huggingface.co/Devopssattva
 - GitHub VelobyteLabs: https://github.com/VelobyteLabs

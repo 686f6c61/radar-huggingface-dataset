@@ -108,7 +108,7 @@ La comparativa se limita a parametros, contexto, licencia y formato de pesos, ya
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta copia): https://huggingface.co/ArchiveStudio/Phi-3-mini-128k-instruct
+- Repositorio en Hugging Face (esta copia): https://huggingface.co/ArchiveStudio/Phi-3-mini-128k-instruct
 - Repositorio original de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-128k-instruct
 - Variante 4K: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Licencia (original): https://huggingface.co/microsoft/Phi-3-mini-128k-instruct/resolve/main/LICENSE

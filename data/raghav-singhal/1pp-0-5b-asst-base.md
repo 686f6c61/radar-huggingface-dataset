@@ -85,6 +85,6 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos. La c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.5b-asst-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.5b-asst-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training y https://wandb.ai/raghav_singhal/1pp-sft

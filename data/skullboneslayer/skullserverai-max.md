@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SkullServerAI-Max es un modelo publicado en HuggingFace por el usuario Skullboneslayer bajo licencia Apache 2.0. El repositorio, de 30,0 GB, contiene pesos en formato GGUF (etiqueta `gguf`) y, segun los metadatos de safetensors, un total de 27.320.697.856 parametros (aproximadamente 27,3 mil millones). El modelo esta etiquetado como `conversational` y `endpoints_compatible`, lo que indica que esta pensado para uso conversacional y que incluye los ficheros de configuracion necesarios para desplegarse en HuggingFace Inference Endpoints, pero no se ha publicado informacion sobre su arquitectura, datos de entrenamiento, contexto o idiomas.
+SkullServerAI-Max es un modelo publicado en Hugging Face por el usuario Skullboneslayer bajo licencia Apache 2.0. El repositorio, de 30,0 GB, contiene pesos en formato GGUF (etiqueta `gguf`) y, segun los metadatos de safetensors, un total de 27.320.697.856 parametros (aproximadamente 27,3 mil millones). El modelo esta etiquetado como `conversational` y `endpoints_compatible`, lo que indica que esta pensado para uso conversacional y que incluye los ficheros de configuracion necesarios para desplegarse en Hugging Face Inference Endpoints, pero no se ha publicado informacion sobre su arquitectura, datos de entrenamiento, contexto o idiomas.
 
 La model card del autor esta practicamente vacia: unicamente contiene la declaracion de licencia (`license: apache-2.0`). No hay descripcion, no hay resultados de benchmarks, no hay instrucciones de uso y no hay referencias a papers o documentacion tecnica. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces obtenidos son consultas genericas de foros y plataformas de preguntas que no guardan relacion con este repositorio.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de los metadatos verificab
 
 No se ha publicado informacion sobre la arquitectura del modelo. El autor no indica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con atencion lineal, un SSM o cualquier otra variante. Tampoco hay datos sobre el numero de capas, dimensiones ocultas, mecanismos de atencion (MHA, GQA, MQA), funcion de activacion ni tokenizador empleado.
 
-Respecto al entrenamiento, no hay ninguna informacion disponible: se desconoce el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otros metodos de alineamiento. El recuento de parametros (27.320.697.856) aparece en los metadatos de safetensors, lo que confirma que existen pesos en ese formato con esa cifra exacta, pero no aporta informacion sobre la arquitectura subyacente. La etiqueta `endpoints_compatible` sugiere que el repositorio incluye los ficheros de configuracion estandar que HuggingFace requiere para desplegar un endpoint, pero no permite deducir nada sobre el proceso de entrenamiento.
+Respecto al entrenamiento, no hay ninguna informacion disponible: se desconoce el volumen de tokens, la composicion del dataset, la existencia de fases de ajuste supervisado, RLHF, DPO u otros metodos de alineamiento. El recuento de parametros (27.320.697.856) aparece en los metadatos de safetensors, lo que confirma que existen pesos en ese formato con esa cifra exacta, pero no aporta informacion sobre la arquitectura subyacente. La etiqueta `endpoints_compatible` sugiere que el repositorio incluye los ficheros de configuracion estandar que Hugging Face requiere para desplegar un endpoint, pero no permite deducir nada sobre el proceso de entrenamiento.
 
 Un aspecto que conviene senalar es la posible inconsistencia entre el tamano del repositorio y el numero de parametros: almacenar 27,3 mil millones de parametros en precision de 16 bits requeriria aproximadamente 54,6 GB de pesos, mientras que el repositorio ocupa 30,0 GB. Esto podria explicarse por la presencia de pesos parciales, por cuantizaciones de menor precision o por una composicion mixta de ficheros, pero no hay informacion que permita confirmarlo.
 
@@ -39,7 +39,7 @@ Un aspecto que conviene senalar es la posible inconsistencia entre el tamano del
 Dado que no existe model card tecnica ni documentacion, no es posible confirmar ninguna capacidad concreta. Lo unico que puede afirmarse a partir de los metadatos es lo siguiente:
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta orientado a dialogos de multiples turnos, si bien no se especifica la longitud de contexto que soporta.
-- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` indica que el repositorio incluye los ficheros necesarios para desplegar el modelo como endpoint gestionado en HuggingFace.
+- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` indica que el repositorio incluye los ficheros necesarios para desplegar el modelo como endpoint gestionado en Hugging Face.
 - Ejecucion mediante llama.cpp: la etiqueta `gguf` implica que existe al menos una version de los pesos en este formato, lo que permite su ejecucion en herramientas del ecosistema llama.cpp (llama.cpp, Ollama, LM Studio, entre otras).
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -89,10 +89,10 @@ Dado que no existe ningun dato de rendimiento publicado para SkullServerAI-Max, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SkullServerAI-Max | 27,3 B | no disponible | Apache 2.0 | HuggingFace, formato GGUF y safetensors |
-| Gemma 2 27B | 27 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente soportado |
-| Mistral Small 3 | 24 B | 32.768 tokens | Apache 2.0 | HuggingFace, vLLM y llama.cpp |
-| Qwen2.5 32B | 32,8 B | 131.072 tokens | Apache 2.0 | HuggingFace, amplio soporte de herramientas |
+| SkullServerAI-Max | 27,3 B | no disponible | Apache 2.0 | Hugging Face, formato GGUF y safetensors |
+| Gemma 2 27B | 27 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente soportado |
+| Mistral Small 3 | 24 B | 32.768 tokens | Apache 2.0 | Hugging Face, vLLM y llama.cpp |
+| Qwen2.5 32B | 32,8 B | 131.072 tokens | Apache 2.0 | Hugging Face, amplio soporte de herramientas |
 
 La diferencia mas relevante es documental: los tres modelos de referencia publican arquitectura, contexto, idiomas y resultados de benchmarks, mientras que SkullServerAI-Max no ofrece ninguno de esos datos. Ademas, el modelo presenta cero descargas y cero valoraciones en el momento de redactar esta ficha, lo que implica ausencia de validacion por parte de la comunidad.
 
@@ -111,7 +111,7 @@ La diferencia mas relevante es documental: los tres modelos de referencia public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Skullboneslayer/SkullServerAI-Max
+- Repositorio en Hugging Face: https://huggingface.co/Skullboneslayer/SkullServerAI-Max
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Skiddo es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más que la declaración de licencia, sin ninguna descripción del modelo, su arquitectura, su proceso de entrenamiento ni sus capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se dispone de información que permita confirmar parámetros, contexto o formato de pesos.
+Skiddo es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene más que la declaración de licencia, sin ninguna descripción del modelo, su arquitectura, su proceso de entrenamiento ni sus capacidades. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un modelo de pequeño tamaño, pero no se dispone de información que permita confirmar parámetros, contexto o formato de pesos.
 
 No se han publicado resultados de benchmarks, idiomas soportados ni casos de uso previstos. La fecha de creación del repositorio es el 5 de noviembre de 2026 y la última actualización se produjo apenas unos segundos después, lo que indica que se trata de una publicación reciente y sin mantenimiento posterior documentado. Con cero descargas y cero likes en el momento de la consulta, no existe evidencia de uso por parte de la comunidad.
 
@@ -72,4 +72,4 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- [HuggingFace: Ryanham1lton/Skiddo](https://huggingface.co/Ryanham1lton/Skiddo)
+- [Hugging Face: Ryanham1lton/Skiddo](https://huggingface.co/Ryanham1lton/Skiddo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eshirrr/ROUNDER` es un repositorio publicado en HuggingFace por el usuario `eshirrr` con licencia MIT. Sin embargo, la información disponible es extremadamente limitada: la model card no contiene descripción técnica, arquitectura, tamaño, contexto, ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni documentación sobre capacidades.
+El modelo `eshirrr/ROUNDER` es un repositorio publicado en Hugging Face por el usuario `eshirrr` con licencia MIT. Sin embargo, la información disponible es extremadamente limitada: la model card no contiene descripción técnica, arquitectura, tamaño, contexto, ni datos de entrenamiento. Tampoco se han publicado resultados de benchmarks ni documentación sobre capacidades.
 
 A fecha de su creación (2026-09-06), el modelo no registra descargas ni likes, y no se dispone de pipeline asociado. Los resultados de búsqueda web no aportan información adicional sobre este modelo. En consecuencia, no es posible determinar su naturaleza, finalidad o rendimiento. Cualquier evaluación técnica debe considerarse no disponible hasta que el autor publique documentación completa.
 
@@ -59,4 +59,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni el propósito del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eshirrr/ROUNDER
+- Hugging Face: https://huggingface.co/eshirrr/ROUNDER

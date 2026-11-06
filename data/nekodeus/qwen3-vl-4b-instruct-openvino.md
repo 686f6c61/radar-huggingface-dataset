@@ -91,7 +91,7 @@ La comparación relevante es entre formatos de despliegue, no entre calidades: l
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/Nekodeus/qwen3-vl-4b-instruct-openvino
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/Nekodeus/qwen3-vl-4b-instruct-openvino
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Model card del modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/blob/main/README.md
 - Conversión oficial FP16 de OpenVINO: https://huggingface.co/OpenVINO/Qwen3-VL-4B-Instruct-fp16-ov

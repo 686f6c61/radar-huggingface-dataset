@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aaravjoshi/matching` es un repositorio de HuggingFace publicado por el usuario Aaravjoshi que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*, etiquetada internamente con una configuración de escala "xlarge". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio se presenta como un punto de partida experimental con código transparente y pruebas repetibles.
+`Aaravjoshi/matching` es un repositorio de Hugging Face publicado por el usuario Aaravjoshi que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching*, etiquetada internamente con una configuración de escala "xlarge". No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se reclama ninguna puntuación de benchmark. El repositorio se presenta como un punto de partida experimental con código transparente y pruebas repetibles.
 
 El dato más relevante es la discrepancia entre la etiqueta de escala y el tamaño real: el recuento de parámetros declarado en el archivo safetensors es de 24.832 parámetros, un orden de magnitud muy inferior al de cualquier variante DeiT estándar (la familia original va de 5,7 millones en DeiT-tiny a 86 millones en DeiT-base). Esto sugiere que el checkpoint contiene únicamente un subconjunto de pesos (por ejemplo, una cabeza de proyección o de matching) o un modelo auxiliar mínimo, no el backbone completo descrito en la tabla de arquitectura.
 
@@ -71,7 +71,7 @@ No es posible establecer una comparativa de rendimiento, porque no hay metricas 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Aaravjoshi/matching` | 24.832 (recuento real safetensors) | no disponible | no disponible (checkpoint sin entrenar) | bsd-3-clause | HuggingFace, 0 descargas |
+| `Aaravjoshi/matching` | 24.832 (recuento real safetensors) | no disponible | no disponible (checkpoint sin entrenar) | bsd-3-clause | Hugging Face, 0 descargas |
 | DeiT-tiny (referencia de la familia) | 5,7 M (dato publico de la familia DeiT) | 224x224 px | no comparable: este repositorio no aporta metricas | licencia de la familia DeiT, no aplicable aqui | publico, ampliamente utilizado |
 | DeiT-small (referencia de la familia) | 22 M (dato publico de la familia DeiT) | 224x224 px | no comparable: este repositorio no aporta metricas | licencia de la familia DeiT, no aplicable aqui | publico, ampliamente utilizado |
 | DeiT-base (referencia de la familia) | 86 M (dato publico de la familia DeiT) | 224x224 px | no comparable: este repositorio no aporta metricas | licencia de la familia DeiT, no aplicable aqui | publico, ampliamente utilizado |
@@ -86,7 +86,7 @@ Nota metodologica: los recuentos de la columna de parametros de las tres variant
 - Ausencia de benchmarks: no se reclama ninguna puntuacion, y tampoco se aportan datos de validacion, curvas de perdida ni registros de entrenamiento.
 - Discrepancia de escala: la configuracion se etiqueta como "xlarge" mientras que el recuento real de parametros es de 24.832, muy por debajo de DeiT-tiny. Cualquier decision tecnica basada en la etiqueta de escala seria erronea.
 - Tarea no especificada: el nombre del repositorio indica "matching", pero no se define el dominio (imagen-imagen, imagen-texto, pares de caracteristicas) ni el formato de las entradas, lo que dificulta la reutilizacion directa.
-- Ausencia de metadatos operativos: no hay *pipeline* declarado, no hay idiomas, no hay variantes cuantizadas y no hay *tags* de tarea en HuggingFace mas alla de `deit` y `matching`.
+- Ausencia de metadatos operativos: no hay *pipeline* declarado, no hay idiomas, no hay variantes cuantizadas y no hay *tags* de tarea en Hugging Face mas alla de `deit` y `matching`.
 - Carga no estandar: al ser una implementacion personalizada, las APIs automaticas de carga requieren un *adapter* explicito. No se puede asumir compatibilidad con `transformers` de forma directa.
 - Licencia: bsd-3-clause es permisiva y permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la clausula de exencion de responsabilidad. La propia model card advierte de que los terminos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
 - Fecha de creacion declarada en 2026-09-15, posterior a la fecha habitual de consulta; conviene verificar la coherencia temporal del repositorio antes de citarlo.
@@ -95,7 +95,7 @@ Nota metodologica: los recuentos de la columna de parametros de las tres variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aaravjoshi/matching
+- Modelo en Hugging Face: https://huggingface.co/Aaravjoshi/matching
 - Archivos declarados en el repositorio: `eval.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - Paper, blog, repositorio de codigo adicional o demo: no disponible en la informacion proporcionada.
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las busquedas devuelven exclusivamente resultados del Registro Inmobiliario de Arabia Saudi (rer.sa, eservices.rer.sa, business.rer.sa), sin ninguna relacion con este repositorio.

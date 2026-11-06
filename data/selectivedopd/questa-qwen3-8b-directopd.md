@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Qwen3-8b-DirectOPD es un ajuste de pesos completos (fine-tuning) derivado de la familia Qwen3, publicado por el usuario SelectiveDOPD en HuggingFace. El nombre del repositorio y las etiquetas del modelo (`qwen3`, `text-generation`, `conversational`) apuntan a una base Qwen3-8B, aunque la model card no declara explicitamente el modelo base ni el metodo de entrenamiento. El identificador interno del experimento es `questa_qwen3_8b_directopd`, encuadrado en los experimentos denominados BiDirect-OPD.
+QuestA-Qwen3-8b-DirectOPD es un ajuste de pesos completos (fine-tuning) derivado de la familia Qwen3, publicado por el usuario SelectiveDOPD en Hugging Face. El nombre del repositorio y las etiquetas del modelo (`qwen3`, `text-generation`, `conversational`) apuntan a una base Qwen3-8B, aunque la model card no declara explicitamente el modelo base ni el metodo de entrenamiento. El identificador interno del experimento es `questa_qwen3_8b_directopd`, encuadrado en los experimentos denominados BiDirect-OPD.
 
 El modelo resuelve, en principio, el mismo problema que cualquier LLM generativo de ~8.000 millones de parametros: generacion de texto y conversacion multi-turno. Su interes no es tanto el rendimiento final como su naturaleza de artefacto de investigacion: el repositorio publica la rama `main` correspondiente al checkpoint `global_step_300` y catorce ramas adicionales con checkpoints intermedios cada 20 pasos (`global_step_20` a `global_step_280`), lo que permite estudiar la evolucion del entrenamiento paso a paso.
 
@@ -100,7 +100,7 @@ La diferencia clave frente a las alternativas no es de rendimiento, sino de traz
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-8b-DirectOPD
+- Repositorio en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Qwen3-8b-DirectOPD
 - Perfil del autor: https://huggingface.co/SelectiveDOPD
 - Ramas de checkpoints intermedios: `global_step_20` a `global_step_280` (accesibles como ramas del mismo repositorio)
 - Paper, blog o repositorio de los experimentos BiDirect-OPD: no disponible

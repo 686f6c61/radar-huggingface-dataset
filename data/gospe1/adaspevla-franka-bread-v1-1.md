@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdaSpeVLA Franka bread v1.1 es un modelo de acción visual-lenguaje (VLA, Visual-Language-Action) orientado a robótica manipulativa, publicado por el usuario Gospe1 en HuggingFace. Se trata de un ajuste fino de la arquitectura π₀.₅ (pi05) sobre el robot Franka, especializado en una única tarea: la manipulación de pan (bread). El paquete contiene únicamente el producto de entrenamiento (`model/final.pt`) del cabezal AdaSpeVLA, no el backbone completo, que debe obtenerse por separado desde `lerobot/pi05_base` y `google/paligemma-3b-pt-224` en revisiones concretas y fijadas.
+AdaSpeVLA Franka bread v1.1 es un modelo de acción visual-lenguaje (VLA, Visual-Language-Action) orientado a robótica manipulativa, publicado por el usuario Gospe1 en Hugging Face. Se trata de un ajuste fino de la arquitectura π₀.₅ (pi05) sobre el robot Franka, especializado en una única tarea: la manipulación de pan (bread). El paquete contiene únicamente el producto de entrenamiento (`model/final.pt`) del cabezal AdaSpeVLA, no el backbone completo, que debe obtenerse por separado desde `lerobot/pi05_base` y `google/paligemma-3b-pt-224` en revisiones concretas y fijadas.
 
 El modelo parte de un backbone π₀.₅ con torre visual completa y las seis primeras capas del modelo de lenguaje congeladas; solo se entrena el cabezal AdaSpeVLA. El entrenamiento se realizó sobre las 100 demostraciones de bread disponibles, con 40.000 pasos de acción y 10.000 pasos de timing, batch de 64, sin conjunto de validación reservado. El repositorio ocupa 0,1 GB y no incluye los pesos del backbone congelado.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdaSpeVLA Franka bread v1.1 | VLA (π₀.₅ + cabezal AdaSpeVLA) | no disponible (solo cabezal en el paquete) | no disponible | no disponible | HuggingFace, repo de 0,1 GB |
-| π₀.₅ (`lerobot/pi05_base`) | VLA base | no disponible en la información | no disponible | no disponible | HuggingFace, caché requerida |
-| PaliGemma 3B PT 224 (`google/paligemma-3b-pt-224`) | VLM (torre visual del backbone) | ~3B | no disponible | no disponible | HuggingFace, revisión fijada |
+| AdaSpeVLA Franka bread v1.1 | VLA (π₀.₅ + cabezal AdaSpeVLA) | no disponible (solo cabezal en el paquete) | no disponible | no disponible | Hugging Face, repo de 0,1 GB |
+| π₀.₅ (`lerobot/pi05_base`) | VLA base | no disponible en la información | no disponible | no disponible | Hugging Face, caché requerida |
+| PaliGemma 3B PT 224 (`google/paligemma-3b-pt-224`) | VLM (torre visual del backbone) | ~3B | no disponible | no disponible | Hugging Face, revisión fijada |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a su rol en el pipeline (backbone base, torre visual y cabezal ajustado).
 
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gospe1/adaspevla-franka-bread-v1-1
+- Modelo en Hugging Face: https://huggingface.co/Gospe1/adaspevla-franka-bread-v1-1
 - Backbone π₀.₅: https://huggingface.co/lerobot/pi05_base
 - Torre visual PaliGemma: https://huggingface.co/google/paligemma-3b-pt-224

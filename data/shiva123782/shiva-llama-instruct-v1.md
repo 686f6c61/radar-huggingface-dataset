@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shiva-Llama-Instruct-v1 | 0,5B | no disponible (base: 32 768) | Apache 2.0 | HuggingFace, 485 descargas |
-| Qwen2.5-0.5B-Instruct | 0,5B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| SmolLM2-360M-Instruct | 0,36B | 8 192 | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B-Chat | 1,1B | 2 048 | Apache 2.0 | HuggingFace |
+| Shiva-Llama-Instruct-v1 | 0,5B | no disponible (base: 32 768) | Apache 2.0 | Hugging Face, 485 descargas |
+| Qwen2.5-0.5B-Instruct | 0,5B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| SmolLM2-360M-Instruct | 0,36B | 8 192 | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B-Chat | 1,1B | 2 048 | Apache 2.0 | Hugging Face |
 
 El modelo base Qwen2.5-0.5B-Instruct es la referencia directa: mismo tamaño, mismo contexto y misma licencia, pero con evaluación pública y comunidad activa. SmolLM2-360M-Instruct es una alternativa aún más ligera para edge. TinyLlama-1.1B-Chat ofrece el doble de parámetros con contexto mucho menor. No hay benchmarks comparables publicados para Shiva-Llama-Instruct-v1 que permitan afirmar una mejora sobre su base.
 
@@ -92,7 +92,7 @@ El modelo base Qwen2.5-0.5B-Instruct es la referencia directa: mismo tamaño, mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shiva123782/Shiva-Llama-Instruct-v1
+- Modelo en Hugging Face: https://huggingface.co/shiva123782/Shiva-Llama-Instruct-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/timdettmers/openassistant-guanaco
 - Informe de tests Kaveri: https://huggingface.co/shiva123782/Shiva-Llama-Instruct-v1/raw/main/Kaveri-Test-Report.json

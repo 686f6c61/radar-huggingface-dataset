@@ -67,7 +67,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de cu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StepX-OPD-SD3.5 | LoRA rango 192 sobre SD3.5 Medium | no aplica | no disponible | Stability AI Community License | HuggingFace |
+| StepX-OPD-SD3.5 | LoRA rango 192 sobre SD3.5 Medium | no aplica | no disponible | Stability AI Community License | Hugging Face |
 | Alternativas de cuatro pasos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShimaRinC/StepX-OPD-SD3.5
+- Hugging Face: https://huggingface.co/ShimaRinC/StepX-OPD-SD3.5
 - Paper: https://arxiv.org/abs/2611.04386
 - Codigo de entrenamiento StepX-OPD: https://github.com/WinterCCC/StepX-OPD
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium

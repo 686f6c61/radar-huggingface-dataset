@@ -84,7 +84,7 @@ La comparación con modelos autorregresivos de propósito general no es directa:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/r2d2aparicio/ncm-code-doc
+- Hugging Face: https://huggingface.co/r2d2aparicio/ncm-code-doc
 - Repositorio GitHub del proyecto: https://github.com/artapaher-max/ncm-code-doc
 - Arquitectura base (Hazy Research, Stanford): https://github.com/HazyResearch/ncm
 - Dataset: https://huggingface.co/datasets/code_search_net

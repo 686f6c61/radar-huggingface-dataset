@@ -4,7 +4,7 @@
 
 BoltzGen es un modelo de difusión atomística para el diseño de binders biomoleculares (proteinas y peptidos) desarrollado por Hannes Stark, Felix Faltings y un amplio equipo de investigadores del MIT, el Broad Institute y otras instituciones, publicado en bioRxiv en noviembre de 2025. El modelo genera de forma conjunta secuencia y estructura tridimensional mediante un esquema de difusión EDM guiado por restricciones, apoyado en un trunk de tipo Pairformer con reciclaje que combina caracteristicas de atomos, tokens, MSA, plantillas, contactos, sitio de union y estructura secundaria. Resuelve el problema del diseño computacional de binders: dada una proteina diana, proponer secuencias y esqueletos que se unan a ella con alta afinidad y solubilidad.
 
-La implementacion publicada en HuggingFace bajo el identificador `oteam/boltzgen` es una version NO oficial del modelo original, mantenida por el equipo OFoldX, que empaqueta todo el flujo de trabajo en siete subpipelines: generadores de estructura (diverse y adherence), inversores de secuencia (BoltzIF y SolubleMPNN), replegado y puntuacion de afinidad con Boltz-2, y replegado con ESMFold2. El modelo completo tiene 482,2 millones de parametros en sus variantes principales, con una variante reducida de 136,9 millones y un modelo de inverse folding de tan solo 3,07 millones.
+La implementacion publicada en Hugging Face bajo el identificador `oteam/boltzgen` es una version NO oficial del modelo original, mantenida por el equipo OFoldX, que empaqueta todo el flujo de trabajo en siete subpipelines: generadores de estructura (diverse y adherence), inversores de secuencia (BoltzIF y SolubleMPNN), replegado y puntuacion de afinidad con Boltz-2, y replegado con ESMFold2. El modelo completo tiene 482,2 millones de parametros en sus variantes principales, con una variante reducida de 136,9 millones y un modelo de inverse folding de tan solo 3,07 millones.
 
 Es relevante ahora porque el diseno generativo de proteinas esta pasando de la prediccion de estructura (AlphaFold) al diseno racional de nuevas moleculas funcionales, y BoltzGen propone un enfoque unificado que cubre proteinas, peptidos, nanobodies, anticuerpos y moleculas pequenas con un unico pipeline. La licencia AGPL-3.0 y la dependencia de la libreria propietaria `ofoldx` son factores criticos a evaluar antes de adoptarlo en produccion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BoltzGen (oteam/boltzgen) | 482,2 M (principal); 3,07 M (inverse folding) | no aplica | Difusion atomistica para diseno de binders + inverse folding | AGPL-3.0 | HuggingFace (implementacion no oficial) |
+| BoltzGen (oteam/boltzgen) | 482,2 M (principal); 3,07 M (inverse folding) | no aplica | Difusion atomistica para diseno de binders + inverse folding | AGPL-3.0 | Hugging Face (implementacion no oficial) |
 | Boltz-2 | no disponible | no disponible | Prediccion de estructura y afinidad | no disponible | Referenciado como subpipeline de evaluacion |
 | ESMFold2 | no disponible | no disponible | Prediccion de estructura proteica | no disponible | Referenciado como subpipeline de evaluacion |
 | SolubleMPNN | no disponible | no aplica | Inverse folding | no disponible | Inversor por defecto del pipeline |
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye especificaciones detalladas de Boltz-2, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/boltzgen
+- Modelo en Hugging Face: https://huggingface.co/oteam/boltzgen
 - Variante diverse: https://huggingface.co/oteam/boltzgen-diverse
 - Variante adherence: https://huggingface.co/oteam/boltzgen-adherence
 - Variante structure-small: https://huggingface.co/oteam/boltzgen-structure-small

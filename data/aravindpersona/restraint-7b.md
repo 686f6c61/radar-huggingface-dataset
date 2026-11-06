@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Restraint-7B es un modelo de lenguaje de 7.615.616.512 parámetros (7,62 B) publicado por el usuario aravindpersona en HuggingFace, derivado mediante ajuste fino de Qwen/Qwen2.5-7B-Instruct. Su propósito es corregir un comportamiento problemático habitual en modelos con soporte de function calling: la tendencia a invocar herramientas incluso cuando la pregunta puede responderse directamente con el conocimiento interno del modelo. El autor lo describe como un modelo de 7B "post-entrenado para responder preguntas de conocimiento sin llamar a herramientas y para llamarlas con precisión cuando realmente se necesitan".
+Restraint-7B es un modelo de lenguaje de 7.615.616.512 parámetros (7,62 B) publicado por el usuario aravindpersona en Hugging Face, derivado mediante ajuste fino de Qwen/Qwen2.5-7B-Instruct. Su propósito es corregir un comportamiento problemático habitual en modelos con soporte de function calling: la tendencia a invocar herramientas incluso cuando la pregunta puede responderse directamente con el conocimiento interno del modelo. El autor lo describe como un modelo de 7B "post-entrenado para responder preguntas de conocimiento sin llamar a herramientas y para llamarlas con precisión cuando realmente se necesitan".
 
 La arquitectura es la de un transformer decoder-only de la familia Qwen2 (heredada íntegramente del modelo base), sin componentes MoE ni híbridos. El entrenamiento se hizo en dos etapas de QLoRA SFT sobre 450 trazas ReAct expertas y una posterior pasada correctiva de 350 ejemplos que arregló un fallo de datos que había colapsado el comportamiento de contención del modelo. La primera versión solo alcanzaba un 12% de contención en tareas sin herramienta; la v2 reporta un 94,1% y una precisión global del 92% (46/50) en la evaluación del propio autor.
 
@@ -87,8 +87,8 @@ El autor publica una evaluación propia de 50 tareas estratificadas, con los mis
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Restraint-7B | 7,62 B | Heredado del base (no especificado en la model card) | Tool use con contención entrenada | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen2.5-7B-Instruct | 7,62 B | 32.768 nativos, hasta 131.072 con YaRN según la documentación del base | Instrucción general y tool use | Apache 2.0 | HuggingFace |
+| Restraint-7B | 7,62 B | Heredado del base (no especificado en la model card) | Tool use con contención entrenada | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen2.5-7B-Instruct | 7,62 B | 32.768 nativos, hasta 131.072 con YaRN según la documentación del base | Instrucción general y tool use | Apache 2.0 | Hugging Face |
 | Fara-7B (Microsoft Research) | No disponible | No disponible | Modelo agéntico para computer use | No disponible | Paper de Microsoft Research |
 
 La comparación directa con el modelo base es la más informativa: Restraint-7B no cambia arquitectura, tamaño ni contexto, sino que redistribuye el comportamiento de decisión sobre herramientas. Frente a alternativas genéricas de la misma categoría, su ventaja declarada está en la contención y no en el conocimiento general, por lo que los benchmarks abiertos de propósito general no son su terreno. No se dispone de datos públicos que permitan comparar su rendimiento con otros modelos de tool use de 7B bajo el mismo harness.
@@ -108,7 +108,7 @@ La comparación directa con el modelo base es la más informativa: Restraint-7B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aravindpersona/restraint-7b
+- Modelo en Hugging Face: https://huggingface.co/aravindpersona/restraint-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de entrenamiento y evaluación (harness, suite de tareas, diff de reparación de ground truth y trazas en crudo): https://github.com/harneet2512/Codetune
 - Fara-7B: An Efficient Agentic Model for Computer Use (Microsoft Research, referencia sobre modelos agénticos pequeños): https://www.microsoft.com/en-us/research/wp-content/uploads/2025/11/Fara-7B-An-Efficient-Agentic-Model-for-Computer-Use.pdf

@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/gemma-4-E2B-it-uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/gemma-4-E2B-it-uncensored-GGUF
 - Modelo base (bf16): https://huggingface.co/TrevorJS/gemma-4-E2B-it-uncensored
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E2B-it
 - Codigo fuente de la abliteracion: https://github.com/TrevorS/gemma-4-abliteration

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Andrey es un modelo de generacion de texto en ruso desarrollado por OpenRussianAI, publicado en HuggingFace con licencia MIT. Se presenta como un chatbot ligero construido sobre una arquitectura propia denominada EasyFormer, que por fuera es un transformer decoder-only clasico pero con simplificaciones orientadas a velocidad: atencion de una sola cabeza, RMSNorm, FFN de expansion x2 con ReLU y weight tying entre la cabeza de salida y el embedding de tokens. El modelo tiene aproximadamente 1,5 millones de parametros, 5 capas y una dimension de modelo de 192, con un tokenizador a nivel de caracter de 64 simbolos.
+Andrey es un modelo de generacion de texto en ruso desarrollado por OpenRussianAI, publicado en Hugging Face con licencia MIT. Se presenta como un chatbot ligero construido sobre una arquitectura propia denominada EasyFormer, que por fuera es un transformer decoder-only clasico pero con simplificaciones orientadas a velocidad: atencion de una sola cabeza, RMSNorm, FFN de expansion x2 con ReLU y weight tying entre la cabeza de salida y el embedding de tokens. El modelo tiene aproximadamente 1,5 millones de parametros, 5 capas y una dimension de modelo de 192, con un tokenizador a nivel de caracter de 64 simbolos.
 
 Su relevancia no proviene de capacidades de razonamiento ni de competicion con modelos frontier, sino de su caracter didactico y de su huella minima: ocupa unos 6 MB, se entrena en minutos sobre una sola Tesla T4 (en concreto, 8,5 minutos) y puede ejecutarse en CPU sobre practicamente cualquier dispositivo. Esto lo convierte en un banco de pruebas util para validar pipelines de transformers con codigo personalizado (requiere trust_remote_code=True), probar despliegues en entornos embebidos o ilustrar conceptos de tokenizacion char-level y memorizacion en datasets diminutos.
 
@@ -81,7 +81,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenRussianAI/andrey | ~1,5 M | 128 tokens | No disponible (solo loss de entrenamiento) | MIT | HuggingFace |
+| OpenRussianAI/andrey | ~1,5 M | 128 tokens | No disponible (solo loss de entrenamiento) | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenRussianAI/andrey
+- Modelo en Hugging Face: https://huggingface.co/OpenRussianAI/andrey
 - Repositorio base referenciado en los metadatos: https://huggingface.co/OpenRussianAI/andrey
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZOZ-Function-Master-3B-LongContext es un modelo de generación de texto publicado en HuggingFace por el usuario z51722369. Se distribuye únicamente en formato safetensors y con la librería transformers, y su arquitectura pertenece a la familia Qwen2, según el tag `qwen2` declarado en el repositorio. El recuento real de parámetros extraído de los ficheros safetensors es de 3.085.938.688 (aproximadamente 3,09 mil millones), y el repositorio ocupa 6,2 GB, un tamaño coherente con pesos almacenados en precisión de 16 bits.
+ZOZ-Function-Master-3B-LongContext es un modelo de generación de texto publicado en Hugging Face por el usuario z51722369. Se distribuye únicamente en formato safetensors y con la librería transformers, y su arquitectura pertenece a la familia Qwen2, según el tag `qwen2` declarado en el repositorio. El recuento real de parámetros extraído de los ficheros safetensors es de 3.085.938.688 (aproximadamente 3,09 mil millones), y el repositorio ocupa 6,2 GB, un tamaño coherente con pesos almacenados en precisión de 16 bits.
 
 El propio nombre del modelo sugiere dos ejes de especialización: capacidades de function calling o uso de herramientas ("Function-Master") y una ventana de contexto extendida ("LongContext"). Sin embargo, la model card publicada es la plantilla automática de transformers sin ninguna sección completada, por lo que no existe documentación del autor que confirme ni el proceso de entrenamiento, ni la longitud de contexto real, ni el dataset utilizado. Todos esos datos deben considerarse no disponibles.
 
@@ -97,7 +97,7 @@ No es posible comparar rendimiento en benchmarks porque el modelo analizado no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/z51722369/ZOZ-Function-Master-3B-LongContext
+- Modelo en Hugging Face: https://huggingface.co/z51722369/ZOZ-Function-Master-3B-LongContext
 - Artículo referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono; procede de la plantilla, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo.

@@ -6,7 +6,7 @@ Hi3D v1.0 es un modelo de refinamiento geométrico 3D de alta resolución constr
 
 El sistema se organiza en tres pasadas incrementales (512³, 1024³ y 1536³ de rejilla de extracción dispersa nominal), con revectorización de la malla entre pasadas para proporcionar el soporte disperso de la siguiente. Según el informe técnico del proyecto, se entrenó con aproximadamente dos millones de activos 3D curados. La longitud de contexto no aplica: no es un modelo de lenguaje, sino un pipeline de generación y refinamiento de geometría.
 
-Es relevante ahora porque ataca el cuello de botella habitual de los sistemas image-to-3D: la falta de detalle local (relieves, molduras, dientes, escalas, surcos concéntricos) frente a una buena silueta global. El repositorio de HuggingFace bajo el identificador `ahmed-amedo/Hi3Dv1.0` contiene únicamente los artefactos del modelo de refinamiento (7,7 GB en safetensors), sin código de entrenamiento ni arnés de evaluación.
+Es relevante ahora porque ataca el cuello de botella habitual de los sistemas image-to-3D: la falta de detalle local (relieves, molduras, dientes, escalas, surcos concéntricos) frente a una buena silueta global. El repositorio de Hugging Face bajo el identificador `ahmed-amedo/Hi3Dv1.0` contiene únicamente los artefactos del modelo de refinamiento (7,7 GB en safetensors), sin código de entrenamiento ni arnés de evaluación.
 
 ## Especificaciones tecnicas
 
@@ -96,8 +96,8 @@ La model card presenta comparaciones visuales frente a nueve metodos, pero no lo
 
 ## Enlaces
 
-- Modelo en HuggingFace (identificador consultado): https://huggingface.co/ahmed-amedo/Hi3Dv1.0
-- Repositorio oficial en HuggingFace referenciado en la model card: https://huggingface.co/hi3d-official/Hi3Dv1.0
+- Modelo en Hugging Face (identificador consultado): https://huggingface.co/ahmed-amedo/Hi3Dv1.0
+- Repositorio oficial en Hugging Face referenciado en la model card: https://huggingface.co/hi3d-official/Hi3Dv1.0
 - Repositorio GitHub: https://github.com/hi3d-official/Hi3Dv1.0
 - Demo en vivo (Sparc3D): https://huggingface.co/spaces/ilcve21/Sparc3D
 - Sitio web internacional: http://hi3d.ai/

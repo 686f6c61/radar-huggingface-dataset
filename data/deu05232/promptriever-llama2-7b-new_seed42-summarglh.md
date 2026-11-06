@@ -80,7 +80,7 @@ La principal diferencia es que Promptriever usa un modelo autoregresivo grande (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-SumMargLH)
+- [Modelo en Hugging Face](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-SumMargLH)
 - [Repositorio GitHub de Promptriever](https://github.com/deu05232/promptriever)
 - [Modelo intermedio ckpt3100](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-SumMargLH-ckt3100)
 - [Modelo con variante LESPair](https://huggingface.co/deu05232/promptriever-llama2-7B-new_seed42-LESPair)

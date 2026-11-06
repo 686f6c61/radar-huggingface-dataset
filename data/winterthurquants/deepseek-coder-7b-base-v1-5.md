@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek Coder 7B Base v1.5 es un modelo de lenguaje especializado en generación de código, desarrollado originalmente por DeepSeek AI. La ficha que nos ocupa corresponde a una copia redistribuida por el usuario `winterthurquants` en HuggingFace, que replica los pesos del repositorio oficial `deepseek-ai/deepseek-coder-7b-base-v1.5`. El modelo es un transformer decoder-only de 6.910.365.696 parametros (aproximadamente 6,91 mil millones), con un objetivo de entrenamiento de prediccion del siguiente token sobre una ventana de 4.000 tokens.
+DeepSeek Coder 7B Base v1.5 es un modelo de lenguaje especializado en generación de código, desarrollado originalmente por DeepSeek AI. La ficha que nos ocupa corresponde a una copia redistribuida por el usuario `winterthurquants` en Hugging Face, que replica los pesos del repositorio oficial `deepseek-ai/deepseek-coder-7b-base-v1.5`. El modelo es un transformer decoder-only de 6.910.365.696 parametros (aproximadamente 6,91 mil millones), con un objetivo de entrenamiento de prediccion del siguiente token sobre una ventana de 4.000 tokens.
 
 El modelo se obtuvo mediante preentrenamiento continuado a partir de DeepSeek-LLM 7B sobre 2 billones (2T) de tokens, lo que da lugar a una variante base (no instruida) orientada a completado de codigo y texto tecnico. Al ser una version base, no incorpora alineacion por RLHF ni formato de chat, lo que la hace apropiada como punto de partida para fine-tuning supervisado o para tareas de autocompletado donde se controla estrictamente el prompt.
 
@@ -18,7 +18,7 @@ Su relevancia actual es la de un modelo compacto, con licencia permisiva para us
 | Longitud de contexto | 4.096 tokens (entrenado con ventana de 4K) |
 | Tipos de cuantizacion | No disponible en la informacion; el repositorio solo distribuye pesos en safetensors. La cuantizacion a GGUF/AWQ/GPTQ es posible mediante herramientas externas, pero no se documenta en la ficha |
 | Idiomas soportados | No disponible (no declarado en la model card) |
-| Licencia | `deepseek-license` (etiquetada como `other` en HuggingFace). La model card indica que los modelos DeepSeek Coder permiten uso comercial y remite a LICENSE-MODEL |
+| Licencia | `deepseek-license` (etiquetada como `other` en Hugging Face). La model card indica que los modelos DeepSeek Coder permiten uso comercial y remite a LICENSE-MODEL |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 13,8 GB |
 | Autor del repositorio | winterthurquants (redistribucion, no autor original) |
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DeepSeek Coder 7B Base v1.5 (este repositorio) | 6,91B | 4.096 tokens | deepseek-license (uso comercial permitido segun model card) | HuggingFace, redistribucion por `winterthurquants` |
-| DeepSeek Coder 6.7B Base (v1.0) | 6,7B | 4.096 tokens (v1.0 base) | deepseek-license | HuggingFace (repositorio oficial DeepSeek AI) |
-| CodeLlama 7B | 6,7B | 16.384 tokens | Llama 2 Community License | HuggingFace (Meta) |
-| StarCoder2 7B | 7B | 16.384 tokens | BigCode OpenRAIL-M | HuggingFace (BigCode) |
-| Qwen2.5-Coder 7B | 7,6B | 32.768 tokens | Apache 2.0 | HuggingFace (Alibaba Qwen) |
+| DeepSeek Coder 7B Base v1.5 (este repositorio) | 6,91B | 4.096 tokens | deepseek-license (uso comercial permitido segun model card) | Hugging Face, redistribucion por `winterthurquants` |
+| DeepSeek Coder 6.7B Base (v1.0) | 6,7B | 4.096 tokens (v1.0 base) | deepseek-license | Hugging Face (repositorio oficial DeepSeek AI) |
+| CodeLlama 7B | 6,7B | 16.384 tokens | Llama 2 Community License | Hugging Face (Meta) |
+| StarCoder2 7B | 7B | 16.384 tokens | BigCode OpenRAIL-M | Hugging Face (BigCode) |
+| Qwen2.5-Coder 7B | 7,6B | 32.768 tokens | Apache 2.0 | Hugging Face (Alibaba Qwen) |
 
 Nota: los datos de contexto y licencia de los modelos comparados corresponden a sus fichas publicas habituales; deben verificarse en la fuente oficial antes de tomar decisiones de produccion. Para este repositorio concreto no hay datos de rendimiento comparativo disponibles en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ Nota: los datos de contexto y licencia de los modelos comparados corresponden a 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (redistribucion analizada): https://huggingface.co/winterthurquants/deepseek-coder-7b-base-v1.5
+- Repositorio en Hugging Face (redistribucion analizada): https://huggingface.co/winterthurquants/deepseek-coder-7b-base-v1.5
 - Repositorio oficial del modelo: https://huggingface.co/deepseek-ai/deepseek-coder-7b-base-v1.5
 - Repositorio de codigo en GitHub: https://github.com/deepseek-ai/deepseek-coder
 - Licencia del modelo (LICENSE-MODEL): https://github.com/deepseek-ai/deepseek-coder/blob/main/LICENSE-MODEL

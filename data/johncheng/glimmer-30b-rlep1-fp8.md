@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Glimmer 30B (identificador `JohnCheng/glimmer-30b-rlep1-fp8`) es un modelo multimodal de tipo image-text-to-text publicado en HuggingFace por el usuario JohnCheng. El repositorio declara 29.776.626.688 parametros (aproximadamente 29,8 mil millones) en formato safetensors y ocupa 34,4 GB, lo que es coherente con pesos almacenados en precision FP8. El sufijo `fp8` del nombre y la etiqueta `modelopt` apuntan a una cuantizacion realizada con el kit de optimizacion de NVIDIA, aunque el repositorio no incluye documentacion que lo confirme.
+Glimmer 30B (identificador `JohnCheng/glimmer-30b-rlep1-fp8`) es un modelo multimodal de tipo image-text-to-text publicado en Hugging Face por el usuario JohnCheng. El repositorio declara 29.776.626.688 parametros (aproximadamente 29,8 mil millones) en formato safetensors y ocupa 34,4 GB, lo que es coherente con pesos almacenados en precision FP8. El sufijo `fp8` del nombre y la etiqueta `modelopt` apuntan a una cuantizacion realizada con el kit de optimizacion de NVIDIA, aunque el repositorio no incluye documentacion que lo confirme.
 
-El modelo esta marcado como `gated`: requiere aceptar condiciones en HuggingFace antes de descargarlo. No se ha publicado informacion sobre licencia, idiomas soportados, longitud de contexto ni arquitectura interna. Las etiquetas del repositorio mencionan `muse_glimmer`, que sugiere una arquitectura propia o poco documentada, y `arxiv:1910.09700`, que corresponde al articulo de T5 ("Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"), aunque no hay evidencia en la informacion disponible de que ese paper describa el modelo.
+El modelo esta marcado como `gated`: requiere aceptar condiciones en Hugging Face antes de descargarlo. No se ha publicado informacion sobre licencia, idiomas soportados, longitud de contexto ni arquitectura interna. Las etiquetas del repositorio mencionan `muse_glimmer`, que sugiere una arquitectura propia o poco documentada, y `arxiv:1910.09700`, que corresponde al articulo de T5 ("Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer"), aunque no hay evidencia en la informacion disponible de que ese paper describa el modelo.
 
 Su relevancia actual es limitada: cero descargas, cero "likes", sin ficha tecnica, sin benchmarks y sin licencia declarada. Se trata, por tanto, de una publicacion sin validacion comunitaria, interesante solo como objeto de inspeccion tecnica o experimental, nunca como base para produccion sin una auditoria previa.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada: cero descargas, cero "likes", sin ficha tecnic
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | FP8 (indicado por el sufijo `fp8` y la etiqueta `modelopt`); no se documentan otras variantes |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (acceso restringido mediante condiciones en HuggingFace) |
+| Licencia | no disponible (acceso restringido mediante condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -31,7 +31,7 @@ El sufijo `rlep1` del identificador no viene acompanado de ninguna explicacion; 
 
 - Generacion de texto conversacional: la etiqueta `conversational` indica que el modelo esta preparado para dialogos multi-turno.
 - Entrada multimodal imagen-texto: el pipeline declarado es `image-text-to-text`, por lo que acepta imagenes junto a instrucciones en lenguaje natural y produce respuestas de texto (Descripcion, VQA, extraccion de informacion visual).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el checkpoint puede desplegarse en la infraestructura de inferencia de Hugging Face.
 - Inferencia en precision FP8: los pesos estan cuantizados a 8 bits, lo que reduce el uso de memoria y acelera la generacion en hardware compatible.
 - Soporte de tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que no es posi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JohnCheng/glimmer-30b-rlep1-fp8
+- Repositorio en Hugging Face: https://huggingface.co/JohnCheng/glimmer-30b-rlep1-fp8
 - Articulo referenciado en las etiquetas (arXiv:1910.09700, T5): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios de codigo ni demos asociados a este modelo.

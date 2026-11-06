@@ -63,10 +63,10 @@ No se dispone de comparaciones oficiales. La siguiente tabla orientativa compara
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | HuggingFace |
-| Llama 3.2 3B | 3B | 128k | Llama 3.2 License | HuggingFace |
-| Gemma 3 4B | 4B | 128k | Gemma License | HuggingFace |
-| Este adaptador | 3B (base) | 32k (base) | Apache 2.0 | HuggingFace |
+| Qwen2.5-3B-Instruct | 3B | 32k | Apache 2.0 | Hugging Face |
+| Llama 3.2 3B | 3B | 128k | Llama 3.2 License | Hugging Face |
+| Gemma 3 4B | 4B | 128k | Gemma License | Hugging Face |
+| Este adaptador | 3B (base) | 32k (base) | Apache 2.0 | Hugging Face |
 
 Nota: el adaptador no es un modelo independiente; su rendimiento depende del base. No hay datos para comparar el adaptador con otros modelos.
 
@@ -81,6 +81,6 @@ Nota: el adaptador no es un modelo independiente; su rendimiento depende del bas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-eagle_h2_b_s2)
+- [Modelo en Hugging Face](https://huggingface.co/Uigyu/qwen_2.5_3b_mh-eagle_h2_b_s2)
 - [Modelo base: unsloth/Qwen2.5-3B-Instruct](https://huggingface.co/unsloth/Qwen2.5-3B-Instruct)
 - [Librería Unsloth](https://github.com/unslothai/unsloth)

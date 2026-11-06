@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xw17/gemma-3-4b-it_SFT_lora_glycemic` es un ajuste fino publicado en HuggingFace por el usuario xw17. Su identificador sugiere que se trata de una adaptación LoRA (Low-Rank Adaptation) obtenida mediante ajuste supervisado (SFT) sobre el modelo base `gemma-3-4b-it` de Google, orientada a una tarea relacionada con el control glucémico. Esta interpretación se deriva unicamente del nombre del repositorio, ya que la model card no confirma ni detalla ninguno de estos extremos.
+El modelo `xw17/gemma-3-4b-it_SFT_lora_glycemic` es un ajuste fino publicado en Hugging Face por el usuario xw17. Su identificador sugiere que se trata de una adaptación LoRA (Low-Rank Adaptation) obtenida mediante ajuste supervisado (SFT) sobre el modelo base `gemma-3-4b-it` de Google, orientada a una tarea relacionada con el control glucémico. Esta interpretación se deriva unicamente del nombre del repositorio, ya que la model card no confirma ni detalla ninguno de estos extremos.
 
-La relevancia del modelo es limitada en su estado actual. El repositorio presenta cero descargas y cero likes, la model card es la plantilla genérica autogenerada por HuggingFace sin ningún campo completado, y no se ha publicado información sobre datos de entrenamiento, hiperparámetros, evaluación o licencia. El tamaño del repositorio es de 0,1 GB, un valor coherente con la distribución de pesos de un adaptador LoRA más que con los pesos completos de un modelo de 4.000 millones de parámetros, aunque esto no puede confirmarse con la documentación disponible.
+La relevancia del modelo es limitada en su estado actual. El repositorio presenta cero descargas y cero likes, la model card es la plantilla genérica autogenerada por Hugging Face sin ningún campo completado, y no se ha publicado información sobre datos de entrenamiento, hiperparámetros, evaluación o licencia. El tamaño del repositorio es de 0,1 GB, un valor coherente con la distribución de pesos de un adaptador LoRA más que con los pesos completos de un modelo de 4.000 millones de parámetros, aunque esto no puede confirmarse con la documentación disponible.
 
 Por todo ello, esta ficha recoge únicamente los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado. Se recomienda precaución antes de cualquier uso: sin información de licencia, de procedencia de los datos ni de evaluación, el modelo no es apto para entornos de producción ni, en particular, para aplicaciones clínicas relacionadas con la glucemia.
 
@@ -27,7 +27,7 @@ Otros metadatos verificables del repositorio: etiquetas `transformers`, `safeten
 
 No se dispone de información sobre la arquitectura en la model card: todos los campos de las secciones "Model Details", "Technical Specifications" y "Model Architecture and Objective" aparecen con el marcador `[More Information Needed]`. Por el identificador del repositorio puede inferirse que se trata de un ajuste LoRA mediante SFT sobre `gemma-3-4b-it`, pero se trata de una deducción a partir del nombre y no de un dato confirmado por el autor.
 
-Tampoco hay información sobre el conjunto de datos de entrenamiento, el número de tokens, la composición del dataset, la existencia de fases de RLHF o DPO, ni sobre los hiperparámetros del ajuste. El único enlace técnico presente en la model card es la referencia al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental, que forma parte de la plantilla genérica de HuggingFace y no describe este modelo.
+Tampoco hay información sobre el conjunto de datos de entrenamiento, el número de tokens, la composición del dataset, la existencia de fases de RLHF o DPO, ni sobre los hiperparámetros del ajuste. El único enlace técnico presente en la model card es la referencia al artículo de Lacoste et al. (2019) sobre el cálculo del impacto ambiental, que forma parte de la plantilla genérica de Hugging Face y no describe este modelo.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ Dado que la model card no documenta el propósito, las capacidades ni las condic
 - Reproducción de experimentos de SFT: si se confirma que es un adaptador LoRA sobre `gemma-3-4b-it`, podría utilizarse para reproducir el procedimiento de ajuste, aunque el autor no publica los hiperparámetros.
 - Prototipado interno no clínico: podría emplearse en entornos de laboratorio para probar interacciones textuales sobre terminología glucémica, nunca para decisiones médicas.
 - Evaluación comparativa de adaptadores de dominio: útil como ejemplo de adaptador de dominio publicado sin documentación, para estudios sobre calidad de tarjetas de modelo.
-- Docencia sobre ecosistema HuggingFace: puede emplearse como caso práctico de repositorio con model card sin completar.
+- Docencia sobre ecosistema Hugging Face: puede emplearse como caso práctico de repositorio con model card sin completar.
 - Auditoría de riesgos en modelos biomédicos: sirve como ejemplo de modelo publicado sin licencia ni evaluación, útil en materiales sobre buenas prácticas de publicación.
 
 En ningún caso debe utilizarse en aplicaciones clínicas, de diagnóstico o de recomendación terapéutica.
@@ -64,7 +64,7 @@ No se dispone de datos oficiales de requisitos de hardware. Cualquier estimació
 - VRAM estimada: no disponible. A modo orientativo, un modelo de 4B en precisión bf16 requiere del orden de 8-9 GB de VRAM para inferencia, pero este cálculo no está verificado para este repositorio.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. Si el modelo base fuese de 4B, cabría en GPUs de consumo con 12-16 GB de VRAM en cuantizaciones de 4 bits, pero es una suposición no confirmada.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. La etiqueta `transformers` indica compatibilidad con esa librería. No hay información sobre soporte en vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. La etiqueta `transformers` indica compatibilidad con esa librería. No hay información sobre soporte en vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,9 +73,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/gemma-3-4b-it_SFT_lora_glycemic | no disponible (nombre sugiere base 4B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| gemma-3-4b-it (modelo base hipotético) | 4B (por confirmar como base) | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| Otros adaptadores LoRA de dominio biomédico | no disponibles | no disponibles | no disponibles | HuggingFace |
+| xw17/gemma-3-4b-it_SFT_lora_glycemic | no disponible (nombre sugiere base 4B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| gemma-3-4b-it (modelo base hipotético) | 4B (por confirmar como base) | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| Otros adaptadores LoRA de dominio biomédico | no disponibles | no disponibles | no disponibles | Hugging Face |
 
 No se han identificado en la búsqueda web modelos comparables relevantes para esta categoría.
 
@@ -94,7 +94,7 @@ No se han identificado en la búsqueda web modelos comparables relevantes para e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_glycemic
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_glycemic
 - Referencia citada en la model card (plantilla genérica): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Repositorio del mismo autor: https://huggingface.co/xw17
 

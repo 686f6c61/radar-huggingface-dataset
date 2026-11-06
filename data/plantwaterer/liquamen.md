@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liquamen | 31,27B | no disponible | Distribución sobre opciones | Apache 2.0 | HuggingFace (0 descargas) |
-| google/gemma-4-31B-it | 31B (aprox.) | no disponible | Texto generativo | Términos Gemma | HuggingFace |
+| liquamen | 31,27B | no disponible | Distribución sobre opciones | Apache 2.0 | Hugging Face (0 descargas) |
+| google/gemma-4-31B-it | 31B (aprox.) | no disponible | Texto generativo | Términos Gemma | Hugging Face |
 | Modelos de clasificación/elección de 30B | no disponible | no disponible | Etiqueta o probabilidad | variable | no disponible |
 
 No se dispone de información sobre benchmarks comparativos ni de alternativas directas de la misma categoría (modelos de 31B especializados en decisión con opción múltiple y calibración bayesiana) en la información proporcionada.
@@ -79,11 +79,11 @@ No se dispone de información sobre benchmarks comparativos ni de alternativas d
 - **Idiomas**: no se especifican los idiomas soportados; la model card está en inglés y no hay evidencia de rendimiento multilingüe.
 - **Contexto**: la ventana deslizante es de 1.024 tokens en las capas SWA, y el contexto total no está documentado; peticiones largas pueden degradar la calidad.
 - **Licencia**: Apache 2.0 permite uso comercial, pero el modelo base Gemma 4 puede estar sujeto a los términos de Google; conviene verificar la compatibilidad de licencias antes de un despliegue comercial.
-- **Madurez**: el modelo tiene 0 descargas y 0 likes en HuggingFace, creado y actualizado el 2026-11-01, sin evidencia de validación externa ni de uso en producción.
+- **Madurez**: el modelo tiene 0 descargas y 0 likes en Hugging Face, creado y actualizado el 2026-11-01, sin evidencia de validación externa ni de uso en producción.
 
 ## Enlaces
 
-- [HuggingFace: plantwaterer/liquamen](https://huggingface.co/plantwaterer/liquamen)
+- [Hugging Face: plantwaterer/liquamen](https://huggingface.co/plantwaterer/liquamen)
 - [Modelo base: google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it)
 - [Repositorio GitHub (código y model card): treewaterer/liquamen](https://github.com/treewaterer/liquamen)
 - [Decision Index kit: apolinario/decision-index](https://github.com/apolinario/decision-index)

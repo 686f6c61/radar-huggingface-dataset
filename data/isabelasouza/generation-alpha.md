@@ -2,11 +2,11 @@
 
 ## Resumen
 
-generation-alpha es un repositorio experimental publicado por el usuario isabelasouza en HuggingFace. No se trata de un modelo entrenado, sino de un esqueleto de codigo (codebase) para experimentar con una arquitectura Poolformer orientada a tareas de generacion. El autor lo describe explicitamente como una base "nano" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el checkpoint incluido (`model.safetensors`) se presenta como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados.
+generation-alpha es un repositorio experimental publicado por el usuario isabelasouza en Hugging Face. No se trata de un modelo entrenado, sino de un esqueleto de codigo (codebase) para experimentar con una arquitectura Poolformer orientada a tareas de generacion. El autor lo describe explicitamente como una base "nano" pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y el checkpoint incluido (`model.safetensors`) se presenta como una inicializacion valida para pruebas de humo (smoke tests), no como un modelo con pesos entrenados.
 
 El modelo tiene 16.576 parametros totales (aproximadamente 0,017 millones), lo que lo situa en un orden de magnitud muy por debajo de cualquier modelo de generacion utilizable en produccion. La configuracion de arquitectura registrada incluye atencion de ventana deslizante (sliding window), fusion con compuertas (gated fusion), activacion gelu tanh y normalizacion rmsnorm. No se declara ninguna puntuacion de benchmark ni se aporta evidencia de un entrenamiento completado.
 
-Su relevancia actual es limitada y de caracter puramente didactico o de investigacion: sirve como punto de partida reproducible para estudiar variantes de Poolformer a escala minima, para validar pipelines de entrenamiento o para comparar ablaciones arquitectonicas. No es adecuado para inferencia real, atencion al cliente, generacion de codigo ni ninguna tarea de produccion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no dispone de pipeline declarado en HuggingFace.
+Su relevancia actual es limitada y de caracter puramente didactico o de investigacion: sirve como punto de partida reproducible para estudiar variantes de Poolformer a escala minima, para validar pipelines de entrenamiento o para comparar ablaciones arquitectonicas. No es adecuado para inferencia real, atencion al cliente, generacion de codigo ni ninguna tarea de produccion. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no dispone de pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y de caracter puramente didactico o de investig
 | Normalizacion | rmsnorm |
 | Escala declarada | nano |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 No disponible. La busqueda web realizada no ha devuelto modelos comparables: los resultados obtenidos corresponden a otros productos y temas sin relacion (un modelo comercial llamado Ox Alpha, contenido divulgativo sobre la expresion "Gen Alpha", listados de modelos de Instagram y detectores de contenido generado por IA). No se dispone por tanto de alternativas de la misma categoria, tamano o tarea con las que establecer una comparacion fundamentada.
 
-A modo de contexto puramente dimensional, 16.576 parametros es un orden de magnitud muy inferior al de los modelos de generacion de texto habituales, incluso a los mas pequenos publicados en HuggingFace. Cualquier comparacion de rendimiento carece de sentido mientras no exista un checkpoint entrenado y evaluado.
+A modo de contexto puramente dimensional, 16.576 parametros es un orden de magnitud muy inferior al de los modelos de generacion de texto habituales, incluso a los mas pequenos publicados en Hugging Face. Cualquier comparacion de rendimiento carece de sentido mientras no exista un checkpoint entrenado y evaluado.
 
 ## Limitaciones y advertencias
 
@@ -80,14 +80,14 @@ A modo de contexto puramente dimensional, 16.576 parametros es un orden de magni
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun la propia model card.
 - No se han publicado resultados de benchmarks ni evaluaciones de ningun tipo.
 - No se declaran idiomas soportados ni longitud de contexto, por lo que se desconoce su comportamiento linguistico.
-- La implementacion es custom: las APIs automaticas de carga de HuggingFace requieren un adaptador explicito, lo que anade trabajo de integracion.
-- No hay pipeline declarado en HuggingFace y el repositorio registra 0 descargas y 0 likes, senales de que no existe comunidad ni validacion externa.
+- La implementacion es custom: las APIs automaticas de carga de Hugging Face requieren un adaptador explicito, lo que anade trabajo de integracion.
+- No hay pipeline declarado en Hugging Face y el repositorio registra 0 descargas y 0 likes, senales de que no existe comunidad ni validacion externa.
 - Riesgo de alucinacion: no evaluable, ya que no hay un modelo entrenado que genere texto.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion con las obligaciones habituales de esta licencia (conservar el aviso de copyright, la lista de condiciones y la exencion de responsabilidad). El autor advierte ademas que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - Para produccion: no apto. No debe desplegarse en ningun flujo real de generacion, atencion al cliente ni generacion de codigo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/isabelasouza/generation-alpha
+- Repositorio en Hugging Face: https://huggingface.co/isabelasouza/generation-alpha
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo en la busqueda web realizada.

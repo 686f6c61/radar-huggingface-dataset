@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT_UR5e_BS_32_Act_Chunk_40_Exec_40 (este modelo) | ACT sobre UR5e, tarea pick and place | 51,6 M | chunk 40, exec 40, 2 cámaras 84x84 | apache-2.0 | HuggingFace, vía LeRobot |
+| ACT_UR5e_BS_32_Act_Chunk_40_Exec_40 (este modelo) | ACT sobre UR5e, tarea pick and place | 51,6 M | chunk 40, exec 40, 2 cámaras 84x84 | apache-2.0 | Hugging Face, vía LeRobot |
 | Diffusion Policy (Chi et al.) | Política de difusión para manipulación | no disponible | no disponible | no disponible | Implementación disponible en LeRobot; *checkpoints* concretos no disponibles en la información proporcionada |
-| SmolVLA (HuggingFace) | VLA ligero para robótica | no disponible | no disponible | no disponible | Disponible en el ecosistema LeRobot; datos concretos no disponibles en la información proporcionada |
-| Otras políticas ACT del Hub de LeRobot | ACT para distintos robots y datasets | variable | variable | habitualmente apache-2.0 | HuggingFace; datos concretos no disponibles en la información proporcionada |
+| SmolVLA (Hugging Face) | VLA ligero para robótica | no disponible | no disponible | no disponible | Disponible en el ecosistema LeRobot; datos concretos no disponibles en la información proporcionada |
+| Otras políticas ACT del Hub de LeRobot | ACT para distintos robots y datasets | variable | variable | habitualmente apache-2.0 | Hugging Face; datos concretos no disponibles en la información proporcionada |
 
 No se dispone de datos comparativos de rendimiento entre estas alternativas en la información proporcionada, ya que este modelo no publica evaluación y las alternativas citadas no se han consultado con cifras verificables en esta búsqueda.
 
@@ -101,7 +101,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_40_Exec_40_TASK_pick_place_can_PIXELS_84
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_40_Exec_40_TASK_pick_place_can_PIXELS_84
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/UR5e_CAN_100_absolute_OSC_POS_SIZE_84
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/UR5e_CAN_100_absolute_OSC_POS_SIZE_84
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705

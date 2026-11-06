@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuaramirez/generation-warmup47` es un prototipo de investigación de arquitectura Flamingo publicado en HuggingFace por el usuario joshuaramirez. Se trata de un checkpoint de inicialización, no de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para pruebas de humo" y no un checkpoint con resultados de referencia. El repositorio tiene 24.832 parámetros reales registrados en el archivo safetensors, un tamaño que corresponde a una configuración de escala pequeña pensada para validar código y formatos, no para inferencia útil.
+`joshuaramirez/generation-warmup47` es un prototipo de investigación de arquitectura Flamingo publicado en Hugging Face por el usuario joshuaramirez. Se trata de un checkpoint de inicialización, no de un modelo entrenado: la propia model card indica explícitamente que `model.safetensors` es "un checkpoint de inicialización válido para pruebas de humo" y no un checkpoint con resultados de referencia. El repositorio tiene 24.832 parámetros reales registrados en el archivo safetensors, un tamaño que corresponde a una configuración de escala pequeña pensada para validar código y formatos, no para inferencia útil.
 
 Flamingo es una arquitectura de tipo vision-language que combina un codificador visual congelado con un modelo de lenguaje y capas de fusión cruzada. En este caso el repositorio declara atención multi-query, fusión bilineal, activación mish y normalización layernorm, además de una receta de entrenamiento por defecto basada en RMSProp con schedule coseno. Sin embargo, no se documenta ningún proceso de entrenamiento completado, ni dataset, ni número de tokens, ni evaluación.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, la model card únicamente describe una "receta de ex
 
 - Pruebas de humo de infraestructura: el checkpoint permite verificar que un pipeline de carga de safetensors, tokenización y forward pass funciona extremo a extremo antes de invertir en un modelo real.
 - Validación de scripts de entrenamiento: `pipeline.py` y `training_args.json` pueden usarse como plantilla para montar recetas de experimentación con RMSProp y schedule coseno.
-- Referencia de formato de repositorio: sirve como ejemplo de organigrama mínimo (script, config, argumentos de entrenamiento, pesos) para publicar prototipos en HuggingFace.
+- Referencia de formato de repositorio: sirve como ejemplo de organigrama mínimo (script, config, argumentos de entrenamiento, pesos) para publicar prototipos en Hugging Face.
 - Docencia y reproducción de arquitecturas: útil para explicar la estructura de un bloque Flamingo con atención multi-query y fusión bilineal sin requerir recursos de cómputo.
 - Integración en CI de librerías: puede emplearse como fixture ligero (menos de 100 KB) para testear cargadores de safetensors o adaptadores personalizados en suites de integración continua.
 - Pruebas de degradación de precisión: su tamaño mínimo permite verificar conversiones a distintas precisiones (fp32, fp16, bf16) sin coste de memoria apreciable.
@@ -84,5 +84,5 @@ La comparación con OpenFlamingo, IDEFICS o el Flamingo original no es significa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuaramirez/generation-warmup47
+- Modelo en Hugging Face: https://huggingface.co/joshuaramirez/generation-warmup47
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

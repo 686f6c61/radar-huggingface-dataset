@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-wan2.2-remix-nsfw-t2v-14b-high-lighting-v2.0-unet` es un checkpoint de tipo UNET para generacion de video a partir de texto (text-to-video), derivado mediante fine-tuning del modelo base WAN2.2. Lo publica RunningHubAI, la cuenta en HuggingFace de la plataforma RunningHub, que actua como intermediaria del autor original (identificado en la model card como `@FX-小肥猴`). El repositorio contiene exclusivamente los pesos del UNET en formato safetensors (13.628 MiB, unos 14,3 GB de repositorio), pensados para cargarse en ComfyUI o en la propia plataforma RunningHub.
+`rh-wan2.2-remix-nsfw-t2v-14b-high-lighting-v2.0-unet` es un checkpoint de tipo UNET para generacion de video a partir de texto (text-to-video), derivado mediante fine-tuning del modelo base WAN2.2. Lo publica RunningHubAI, la cuenta en Hugging Face de la plataforma RunningHub, que actua como intermediaria del autor original (identificado en la model card como `@FX-小肥猴`). El repositorio contiene exclusivamente los pesos del UNET en formato safetensors (13.628 MiB, unos 14,3 GB de repositorio), pensados para cargarse en ComfyUI o en la propia plataforma RunningHub.
 
 El modelo pertenece a la familia de difusion para video de 14B parametros de WAN2.2, si bien la model card no detalla la arquitectura interna ni el proceso de entrenamiento. El sufijo del nombre indica un ajuste fino orientado a contenido NSFW y a "high lighting" (iluminacion marcada), con version 2.0 del ajuste. Es relevante para quien trabaja con generacion de video en ComfyUI y busca variantes especializadas del UNET de WAN2.2, pero la documentacion publicada es minima y no incluye especificaciones tecnicas formales.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rh-wan2.2-remix-nsfw-t2v-14b-high-lighting-v2.0-unet | 14B (segun nombre) | no disponible | no disponible | HuggingFace (RunningHubAI) |
-| WAN2.2 (modelo base) | familia 14B (variantes) | no disponible en esta ficha | licencia upstream de WAN2.2 (consultar) | HuggingFace / repos oficiales |
-| Otras variantes comunitarias de WAN2.2 en ComfyUI | variable | no disponible | variable por autor | HuggingFace / ComfyUI ecosystem |
+| rh-wan2.2-remix-nsfw-t2v-14b-high-lighting-v2.0-unet | 14B (segun nombre) | no disponible | no disponible | Hugging Face (RunningHubAI) |
+| WAN2.2 (modelo base) | familia 14B (variantes) | no disponible en esta ficha | licencia upstream de WAN2.2 (consultar) | Hugging Face / repos oficiales |
+| Otras variantes comunitarias de WAN2.2 en ComfyUI | variable | no disponible | variable por autor | Hugging Face / ComfyUI ecosystem |
 
 La comparacion cuantitativa con alternativas no es posible con los datos disponibles: no hay benchmarks, no se especifica la licencia concreta ni los requisitos de hardware. La unica referencia solida es el modelo base WAN2.2, del que este checkpoint es un fine-tuning.
 
@@ -82,7 +82,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-wan2.2-remix-nsfw-t2v-14b-high-lighting-v2.0-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-wan2.2-remix-nsfw-t2v-14b-high-lighting-v2.0-unet
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/1991254611298463745
 - Pagina del autor: https://www.runninghub.ai/user-center/1986370833360760833
 - RunningHub (internacional): https://www.runninghub.ai

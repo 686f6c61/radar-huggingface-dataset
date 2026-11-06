@@ -73,10 +73,10 @@ Adicionalmente, el blog tecnico de Roblox reporta un recall del 98% en conversac
 
 | Modelo | Parametros | Enfoque | F1 (chat Roblox) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Roblox PII Classifier | 560M | Clasificacion contextual multi-etiqueta | 94,34% (EN) / 83,10% (multilingue) | Apache 2.0 | HuggingFace, Azure |
-| LlamaGuard v3 8B | 8B | Clasificacion de seguridad generica | 27,73% (EN) | Llama Community License | HuggingFace |
-| Piiranha NER | ~200M | Reconocimiento de entidades nombradas | 13,88% (EN) | MIT | HuggingFace |
-| NemoGuard 8B | 8B | Clasificacion de seguridad generica | 26,29% (EN) | Apache 2.0 | HuggingFace |
+| Roblox PII Classifier | 560M | Clasificacion contextual multi-etiqueta | 94,34% (EN) / 83,10% (multilingue) | Apache 2.0 | Hugging Face, Azure |
+| LlamaGuard v3 8B | 8B | Clasificacion de seguridad generica | 27,73% (EN) | Llama Community License | Hugging Face |
+| Piiranha NER | ~200M | Reconocimiento de entidades nombradas | 13,88% (EN) | MIT | Hugging Face |
+| NemoGuard 8B | 8B | Clasificacion de seguridad generica | 26,29% (EN) | Apache 2.0 | Hugging Face |
 
 La principal diferencia frente a LlamaGuard y NemoGuard es que estos son clasificadores de seguridad de proposito general (violencia, odio, contenido sexual, etc.), mientras que el modelo de Roblox esta especializado exclusivamente en PII. Piiranha, por su parte, usa NER clasico y no captura el contexto conversacional de solicitud de PII, lo que explica su bajo rendimiento en este dominio.
 
@@ -87,12 +87,12 @@ La principal diferencia frente a LlamaGuard y NemoGuard es que estos son clasifi
 - Longitud de contexto limitada a 512 tokens, lo que impide analizar conversaciones largas de una sola pasada. Para chats extensos se necesita segmentacion previa.
 - El rendimiento en el benchmark de Kaggle PII (45,48% F1) es notablemente inferior al obtenido en datos de Roblox, lo que sugiere cierta especializacion en el dominio de la plataforma.
 - Al ser un clasificador basado en encoder, no genera explicaciones de sus decisiones. Para auditorias de moderacion puede ser necesario complementarlo con herramientas de interpretabilidad.
-- Aunque la licencia Apache 2.0 permite uso comercial sin restricciones, el acceso al modelo en HuggingFace requiere aprobacion de los autores segun la pagina de Azure AI Catalog, lo que puede anadir friccion en el despliegue.
+- Aunque la licencia Apache 2.0 permite uso comercial sin restricciones, el acceso al modelo en Hugging Face requiere aprobacion de los autores segun la pagina de Azure AI Catalog, lo que puede anadir friccion en el despliegue.
 - Riesgo de falsos positivos en conversaciones inocuas que mencionen datos personales de forma legitima (por ejemplo, "mi correo es..." en un contexto de soporte tecnico), lo que requiere ajuste fino de umbrales segun el caso de uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roblox/roblox-pii-classifier
+- Modelo en Hugging Face: https://huggingface.co/Roblox/roblox-pii-classifier
 - Blog tecnico de Roblox: https://corp.roblox.com/newsroom/2025/11/open-sourcing-roblox-pii-classifier-ai-pii-detection-chat
 - Articulo de XLM-RoBERTa (arXiv): https://arxiv.org/pdf/1911.02116
 - Pagina en Azure AI Catalog: https://ai.azure.com/catalog/models/roblox-roblox-pii-classifier

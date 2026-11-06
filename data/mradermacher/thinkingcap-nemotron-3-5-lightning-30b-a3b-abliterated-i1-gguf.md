@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado documenta una familia de arqui
 | Longitud de contexto | No disponible en la información proporcionada |
 | Tipos de cuantizacion | i1/imatrix: IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ4_XS, IQ4_NL (small), Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K. Cuantizaciones estáticas equivalentes en el repo hermano. Se incluye fichero imatrix (0,2 GB) para generar cuantizaciones propias |
 | Idiomas soportados | Inglés (en); no se declaran otros idiomas |
-| Licencia | openmdw-1.1 (etiqueta de HuggingFace: other, con license_name openmdw-1.1) |
+| Licencia | openmdw-1.1 (etiqueta de Hugging Face: other, con license_name openmdw-1.1) |
 | Formato de pesos | GGUF (cuantizaciones i1 e imatrix); el modelo base se distribuye en bf16 (safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-Los datos de esta cuantización proceden de los metadatos de HuggingFace; los de los modelos alternativos son datos públicos de sus respectivas familias. No hay resultados de benchmarks de ThinkingCap para comparar rendimiento.
+Los datos de esta cuantización proceden de los metadatos de Hugging Face; los de los modelos alternativos son datos públicos de sus respectivas familias. No hay resultados de benchmarks de ThinkingCap para comparar rendimiento.
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Formato disponible | Rendimiento comparado |
 |---|---|---|---|---|---|

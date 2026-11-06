@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Audio8 TTS Preview 0.1B es un modelo de sintesis de voz (text-to-speech) con soporte de clonacion de voz zero-shot, publicado por Audio8 y distribuido en HuggingFace bajo el identificador `anh23256/Audio8-TTS-Preview-0.1b`. Su propuesta central es el tamano: el modelo generativo principal ronda los 170 millones de parametros (169.779.904 segun el recuento de safetensors del repositorio), y el decodificador del codec neural anade aproximadamente 120 millones adicionales. Frente a alternativas multilingues contemporaneas que se mueven entre 0,8B y 8,5B de parametros, esta version busca hacer viable la clonacion de voz zero-shot en hardware modesto, incluido CPU.
+Audio8 TTS Preview 0.1B es un modelo de sintesis de voz (text-to-speech) con soporte de clonacion de voz zero-shot, publicado por Audio8 y distribuido en Hugging Face bajo el identificador `anh23256/Audio8-TTS-Preview-0.1b`. Su propuesta central es el tamano: el modelo generativo principal ronda los 170 millones de parametros (169.779.904 segun el recuento de safetensors del repositorio), y el decodificador del codec neural anade aproximadamente 120 millones adicionales. Frente a alternativas multilingues contemporaneas que se mueven entre 0,8B y 8,5B de parametros, esta version busca hacer viable la clonacion de voz zero-shot en hardware modesto, incluido CPU.
 
 Tecnicamente emplea una arquitectura denominada Audio8 Falcon H1, con dos ramas autorregresivas: una rama lenta (slow AR) de 24 capas que predice tokens semanticos y una rama rapida (fast AR) de 4 capas que predice los codebooks del codec condicionada por el estado oculto de la rama lenta. El codec opera a 44,1 kHz con 10 codebooks de 4.096 entradas cada uno y 2.048 muestras por trama (unas 21,5 tramas por segundo). El contexto maximo es de 2.048 posiciones empaquetadas de texto y audio.
 
@@ -18,7 +18,7 @@ La relevancia actual del modelo esta en su perfil de despliegue: existe una vari
 | Longitud de contexto | hasta 2.048 posiciones empaquetadas de texto y audio |
 | Tipos de cuantizacion | bf16/fp16 nativo; ONNX INT8 por token en slow AR y fast AR con codec en FP16 (variante ONNX publicada aparte) |
 | Idiomas soportados | chino y ingles (principales); aleman, espanol, frances, italiano, japones y coreano (experimentales) |
-| Licencia | audio8-community-license-v1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | audio8-community-license-v1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors para el modelo principal, `codec.pth` para el decodificador del codec, ONNX para la variante INT8 |
 
 Detalles adicionales de configuracion:
@@ -36,7 +36,7 @@ Detalles adicionales de configuracion:
 
 El modelo sigue un esquema de generacion jerarquica en dos escalas temporales. La rama slow AR, con 24 capas y anchura 512, procesa la secuencia empaquetada de texto y audio y produce tokens semanticos a baja cadencia. La rama fast AR, con solo 4 capas de la misma anchura, toma el estado oculto de la rama lenta como condicionamiento y predice los 10 codebooks acusticos del codec. Ambas ramas usan atencion con 8 cabezas de consulta y 2 cabezas KV, lo que reduce el coste de la cache KV. El codec neural funciona a 44,1 kHz y esta incluido en el repositorio, de modo que no hace falta descargar un checkpoint de codec aparte.
 
-El checkpoint publicado se describe como un "v4 mixed checkpoint" e incluye ademas el tokenizador, el procesador y codigo remoto de HuggingFace (requiere `trust_remote_code=True`). La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF, DPO u otras tecnicas de alineacion; esa informacion no esta disponible. Tampoco se documentan innovaciones de decodificacion especulativa ni mecanismos de atencion lineal: la atencion es estandar con GQA. La innovacion principal declarada es la reduccion de escala manteniendo clonacion zero-shot, junto con la cuantizacion INT8 de las dos ramas autorregresivas para inferencia en CPU.
+El checkpoint publicado se describe como un "v4 mixed checkpoint" e incluye ademas el tokenizador, el procesador y codigo remoto de Hugging Face (requiere `trust_remote_code=True`). La model card no detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron etapas de RLHF, DPO u otras tecnicas de alineacion; esa informacion no esta disponible. Tampoco se documentan innovaciones de decodificacion especulativa ni mecanismos de atencion lineal: la atencion es estandar con GQA. La innovacion principal declarada es la reduccion de escala manteniendo clonacion zero-shot, junto con la cuantizacion INT8 de las dos ramas autorregresivas para inferencia en CPU.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ La informacion disponible solo permite comparar la escala de parametros declarad
 
 | Modelo | Parametros (declarados) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Audio8 TTS Preview 0.1B | ~0,17B (+ ~0,12B de codec) | 2.048 posiciones | audio8-community-license-v1.0 | HuggingFace, PyTorch y ONNX INT8 |
+| Audio8 TTS Preview 0.1B | ~0,17B (+ ~0,12B de codec) | 2.048 posiciones | audio8-community-license-v1.0 | Hugging Face, PyTorch y ONNX INT8 |
 | Audio8 TTS Preview 0.6B | ~0,6B | no disponible | no disponible | no disponible |
 | IndexTTS2.5 | ~0,8B | no disponible | no disponible | no disponible |
 | CosyVoice3 | ~1,5B | no disponible | no disponible | no disponible |
@@ -112,16 +112,16 @@ La ventaja competitiva declarada por el autor es exclusivamente el tamano y la v
 - Riesgo de alucinacion acustica: como todo modelo autorregresivo de audio, puede producir artefactos, prosodia incorrecta, omisiones o repeticiones, especialmente en textos largos o con estructuras poco frecuentes.
 - Contexto limitado: 2.048 posiciones empaquetadas que deben acomodar simultaneamente el texto y el audio de referencia, lo que restringe la longitud de las referencias de clonacion y de los fragmentos generados por pasada.
 - Clonacion de voz: la capacidad zero-shot abre riesgos de suplantacion de identidad y de uso fraudulento; es imprescindible contar con consentimiento explicito y mecanismos de marca de agua o verificacion en despliegues publicos.
-- Licencia: se trata de una licencia propietaria de comunidad (`audio8-community-license-v1.0`, etiquetada como `other` en HuggingFace). No se dispone del texto de la licencia en la informacion proporcionada, por lo que hay que revisar el enlace de licencia antes de cualquier uso comercial.
+- Licencia: se trata de una licencia propietaria de comunidad (`audio8-community-license-v1.0`, etiquetada como `other` en Hugging Face). No se dispone del texto de la licencia en la informacion proporcionada, por lo que hay que revisar el enlace de licencia antes de cualquier uso comercial.
 - Codigo remoto: el modelo requiere `trust_remote_code=True`, lo que implica ejecutar codigo de terceros al cargarlo; conviene auditar el repositorio antes de usarlo en produccion.
 - Discrepancia de identificadores: el repositorio consultado pertenece al usuario `anh23256`, mientras que la model card y los ejemplos de uso hacen referencia a `Audio8/Audio8-TTS-Preview-0.1b`. Conviene verificar que el contenido y los pesos coinciden antes de desplegarlo.
-- Recuento de parametros: la cifra de safetensors (169.779.904) no incluye el decodificador del codec, por lo que el coste real de memoria es superior al que sugiere el total reportado por HuggingFace.
+- Recuento de parametros: la cifra de safetensors (169.779.904) no incluye el decodificador del codec, por lo que el coste real de memoria es superior al que sugiere el total reportado por Hugging Face.
 - Madurez: el repositorio registra cero descargas y cero valoraciones en el momento de la consulta, con fecha de creacion y ultima actualizacion identicas, lo que indica ausencia de validacion por parte de la comunidad.
 - Versiones: la instalacion requiere `transformers>=4.57.0,<5`, `torch>=2.5.0` y Python 3.11 o superior; versiones fuera de ese rango pueden romper la carga del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anh23256/Audio8-TTS-Preview-0.1b
+- Modelo en Hugging Face: https://huggingface.co/anh23256/Audio8-TTS-Preview-0.1b
 - Referencia de modelo citada en la model card: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
 - Licencia: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b/blob/main/LICENSE
 - Repositorio GitHub: https://github.com/Audio8-AI/Audio8_TTS

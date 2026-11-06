@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`The-Hidden-Canopy/omni-q-table-checkpoints` es un repositorio de checkpoints para robótica publicado por el usuario The-Hidden-Canopy en HuggingFace, con pipeline declarado `robotics` y librería `lerobot`. No se trata de un modelo de lenguaje, sino de un conjunto de pesos (2,7 GB, formato `safetensors`) destinado a políticas de control robótico, etiquetado con `smolvla`, `so-101`, `mujoco` y `openvino`. La información pública disponible se limita a los metadatos del repositorio: no hay README accesible, ficha técnica ni resultados publicados.
+`The-Hidden-Canopy/omni-q-table-checkpoints` es un repositorio de checkpoints para robótica publicado por el usuario The-Hidden-Canopy en Hugging Face, con pipeline declarado `robotics` y librería `lerobot`. No se trata de un modelo de lenguaje, sino de un conjunto de pesos (2,7 GB, formato `safetensors`) destinado a políticas de control robótico, etiquetado con `smolvla`, `so-101`, `mujoco` y `openvino`. La información pública disponible se limita a los metadatos del repositorio: no hay README accesible, ficha técnica ni resultados publicados.
 
 Las etiquetas permiten acotar el contexto: `so-101` apunta al brazo robótico de bajo coste SO-101, `mujoco` a evaluación o generación de datos en simulación física, `smolvla` a la familia de modelos visión-lenguaje-acción (VLA) SmolVLA de LeRobot y `openvino` a exportación para inferencia optimizada en hardware Intel. El nombre del repositorio sugiere una tarea de manipulación sobre mesa ("table"), pero esto no está confirmado en la documentación disponible.
 
@@ -23,7 +23,7 @@ El interés del repositorio es práctico: ejemplifica el flujo completo de LeRob
 | Tamaño del repositorio | 2,7 GB |
 | Librería | lerobot |
 | Pipeline declarado | robotics |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-09-15 |
 | Última actualización | 2026-09-15 |
@@ -84,7 +84,7 @@ Nota: no se dispone de datos verificados de parámetros, contexto, licencia ni r
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: sin README accesible, no pueden verificarse arquitectura, dataset, hiperparámetros ni condiciones de entrenamiento.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos, lo que condiciona cualquier uso en producción o en investigación reproducible.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos, lo que condiciona cualquier uso en producción o en investigación reproducible.
 - Licencia ambigua: `license:other` y `mixed-see-readme` impiden determinar si el uso comercial está permitido; es imprescindible revisar el README tras aceptar las condiciones.
 - Sin validación comunitaria: 0 descargas y 0 valoraciones implican que la política no ha sido reproducida ni contrastada por terceros.
 - Riesgo de sobreajuste al montaje: los checkpoints de manipulación suelen depender de la disposición exacta de cámaras, iluminación y mesa; trasladarlos a otra instalación puede degradar el rendimiento de forma severa.
@@ -96,7 +96,7 @@ Nota: no se dispone de datos verificados de parámetros, contexto, licencia ni r
 
 ## Enlaces
 
-- Repositorio en HuggingFace (acceso restringido): https://huggingface.co/The-Hidden-Canopy/omni-q-table-checkpoints
+- Repositorio en Hugging Face (acceso restringido): https://huggingface.co/The-Hidden-Canopy/omni-q-table-checkpoints
 - Perfil del autor: https://huggingface.co/The-Hidden-Canopy
 
 La búsqueda web realizada no devolvió resultados relevantes sobre este repositorio: los enlaces recuperados corresponden al artículo gramatical inglés "the" y no guardan relación con el modelo. No se dispone por tanto de papers, blogs, repositorios de código ni demos adicionales verificados en la información proporcionada.

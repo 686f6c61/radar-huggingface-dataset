@@ -72,7 +72,7 @@ Los datos de la columna de FLUX 3 Image Klein Base proceden de la informacion pr
 
 | Modelo | Parametros | Contexto / referencias | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FLUX 3 Image Klein Base | 5,538B en el transformer de imagen, mas Qwen3-VL-4B-Instruct como text encoder | No disponible; acepta hasta 10 imagenes de referencia | flux-kommunity-license (uso no comercial y excepcion de output comercial para Qualifying Users) | Pesos abiertos en HuggingFace, espejo sin gate, variantes bf16/FP8/NVFP4 |
+| FLUX 3 Image Klein Base | 5,538B en el transformer de imagen, mas Qwen3-VL-4B-Instruct como text encoder | No disponible; acepta hasta 10 imagenes de referencia | flux-kommunity-license (uso no comercial y excepcion de output comercial para Qualifying Users) | Pesos abiertos en Hugging Face, espejo sin gate, variantes bf16/FP8/NVFP4 |
 | FLUX 3 Image Klein (destilado) | Mismo transformer de 5,6B, sin destilar el text encoder segun la informacion disponible | No disponible; mismas capacidades de referencia multiple | flux-kommunity-license | Pesos abiertos; es el checkpoint que sirve la API de BFL, 16 pasos sin guidance |
 | Otras alternativas de la misma categoria (por ejemplo modelos de difusion de pesos abiertos de rango 8B-20B) | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos verificados en la informacion proporcionada para construi
 
 ## Enlaces
 
-- Modelo en HuggingFace (espejo documentado): https://huggingface.co/Jinstudio/flux-3-image-klein-base
+- Modelo en Hugging Face (espejo documentado): https://huggingface.co/Jinstudio/flux-3-image-klein-base
 - Checkpoint base oficial: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Checkpoint destilado: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Prompt upsampler: https://huggingface.co/black-forest-labs/flux-3-image-klein-pup

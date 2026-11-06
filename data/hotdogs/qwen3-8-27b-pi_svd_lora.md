@@ -103,7 +103,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K ni similare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/qwen3.8-27B-pi_svd_lora
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/qwen3.8-27B-pi_svd_lora
 - Fine-tune origen: https://huggingface.co/bytkim/Qwen3.8-27B-pi
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otro adaptador SVD del mismo autor: https://huggingface.co/hotdogs/jev_qwen3.8-27B_svd_lora

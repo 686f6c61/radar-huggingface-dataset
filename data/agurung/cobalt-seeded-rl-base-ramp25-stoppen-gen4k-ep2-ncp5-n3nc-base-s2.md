@@ -82,11 +82,11 @@ No se dispone de MMLU, HumanEval, GSM8K ni de ninguna otra métrica estándar pa
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`...ncp5-n3nc-base-s2`) | 3,97 B | 262.144 (fuente de terceros) | RL GRPO sobre código, paso 44 | No disponible | HuggingFace, 19 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ≈4 B (heredado) | 262.144 (misma familia) | Instruct generalista | Apache 2.0 en la familia Qwen3 (no confirmado en este repo) | HuggingFace, ampliamente distribuido |
-| Sibling `...ncp5-n3n-groot16` | No disponible | No disponible | Variante RL de la misma ejecución | No disponible | HuggingFace |
-| Sibling `...ncp5-base-q4v3` | No disponible | No disponible | Variante RL de la misma ejecución | No disponible | HuggingFace |
-| Sibling `...ncp5-n3nc-base` (sin sufijo `s2`) | 4 B | 262.144 (fuente de terceros) | RL GRPO sobre código | No disponible | HuggingFace y SAVRN |
+| Este checkpoint (`...ncp5-n3nc-base-s2`) | 3,97 B | 262.144 (fuente de terceros) | RL GRPO sobre código, paso 44 | No disponible | Hugging Face, 19 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ≈4 B (heredado) | 262.144 (misma familia) | Instruct generalista | Apache 2.0 en la familia Qwen3 (no confirmado en este repo) | Hugging Face, ampliamente distribuido |
+| Sibling `...ncp5-n3n-groot16` | No disponible | No disponible | Variante RL de la misma ejecución | No disponible | Hugging Face |
+| Sibling `...ncp5-base-q4v3` | No disponible | No disponible | Variante RL de la misma ejecución | No disponible | Hugging Face |
+| Sibling `...ncp5-n3nc-base` (sin sufijo `s2`) | 4 B | 262.144 (fuente de terceros) | RL GRPO sobre código | No disponible | Hugging Face y SAVRN |
 
 Frente a un modelo de código de tamaño comparable de otra familia, la diferencia relevante no es de escala sino de naturaleza: aquí no hay un pipeline de datos de código a gran escala detrás, sino un RL acotado a 1833 problemas difíciles con recompensa de tests. No se dispone de datos de rendimiento comparables entre estas opciones.
 
@@ -105,7 +105,7 @@ Frente a un modelo de código de tamaño comparable de otra familia, la diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s2
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Sibling `cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3`: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3
 - Sibling `cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3n-groot16`: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3n-groot16

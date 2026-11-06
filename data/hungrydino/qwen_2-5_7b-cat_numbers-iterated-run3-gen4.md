@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen4 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un derivado experimental, no de un modelo entrenado desde cero: parte de los pesos de la variante Instruct de la familia Qwen2.5 y se ha reentrenado mediante la libreria Unsloth junto con TRL de HuggingFace, segun indica la propia model card. La nomenclatura del repositorio ("cat_numbers", "iterated-run3-gen4") sugiere un experimento iterativo sobre alguna tarea relacionada con concatenacion o manipulado de numeros, aunque el autor no documenta en detalle ni el dataset ni el objetivo del entrenamiento.
+HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen4 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un derivado experimental, no de un modelo entrenado desde cero: parte de los pesos de la variante Instruct de la familia Qwen2.5 y se ha reentrenado mediante la libreria Unsloth junto con TRL de Hugging Face, segun indica la propia model card. La nomenclatura del repositorio ("cat_numbers", "iterated-run3-gen4") sugiere un experimento iterativo sobre alguna tarea relacionada con concatenacion o manipulado de numeros, aunque el autor no documenta en detalle ni el dataset ni el objetivo del entrenamiento.
 
 El modelo conserva la arquitectura, el tamano (aproximadamente 7.600 millones de parametros) y el contexto de su base, Qwen2.5-7B-Instruct. Esto significa que, en teoria, hereda las capacidades generalistas del modelo original (generacion de texto, razonamiento, codigo, soporte multilingue y tool calling), pero no hay ninguna evaluacion publicada en la informacion disponible que confirme en que medida el ajuste fino altera esas capacidades ni si el objetivo del experimento se ha alcanzado.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada desde el punto de vista practico: cuenta con 0 
 
 No se dispone de informacion detallada sobre la arquitectura especifica de este fine-tune mas alla de que deriva de Qwen2.5-7B-Instruct, un transformer decoder-only denso de aproximadamente 7.600 millones de parametros. La model card no describe cambios estructurales, por lo que se asume que la topologia es identica a la del modelo base. Tampoco se documentan tecnicas de decodificacion especulativa, atencion lineal ni otras innovaciones.
 
-En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth (que permite entrenamiento aproximadamente 2x mas rapido y con menor uso de memoria) y la libreria TRL de HuggingFace. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO, SFT u otra fase de alineamiento, ni el hiperparametro de learning rate o numero de epocas. El nombre del repositorio ("iterated-run3-gen4") apunta a un proceso iterativo con multiples generaciones o rondas, pero se desconoce su significado exacto.
+En cuanto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth (que permite entrenamiento aproximadamente 2x mas rapido y con menor uso de memoria) y la libreria TRL de Hugging Face. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO, SFT u otra fase de alineamiento, ni el hiperparametro de learning rate o numero de epocas. El nombre del repositorio ("iterated-run3-gen4") apunta a un proceso iterativo con multiples generaciones o rondas, pero se desconoce su significado exacto.
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen4
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no disponible enlace directo en la informacion proporcionada.
+- Libreria TRL de Hugging Face: no disponible enlace directo en la informacion proporcionada.

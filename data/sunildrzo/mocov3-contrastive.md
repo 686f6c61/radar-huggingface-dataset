@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunildrzo/mocov3-contrastive` es un repositorio de HuggingFace que contiene una implementacion propia y funcional de MoCo v3 (Momentum Contrast v3) para aprendizaje contrastivo, configurada en modo "tiny". El autor es el usuario sunildrzo y el repositorio se publico con una unica intencion declarada: servir como punto de partida reproducible para pruebas de humo (smoke tests) y revision de codigo. No se presenta como un modelo entrenado ni como un checkpoint de referencia para evaluacion.
+`sunildrzo/mocov3-contrastive` es un repositorio de Hugging Face que contiene una implementacion propia y funcional de MoCo v3 (Momentum Contrast v3) para aprendizaje contrastivo, configurada en modo "tiny". El autor es el usuario sunildrzo y el repositorio se publico con una unica intencion declarada: servir como punto de partida reproducible para pruebas de humo (smoke tests) y revision de codigo. No se presenta como un modelo entrenado ni como un checkpoint de referencia para evaluacion.
 
 MoCo v3 es un metodo de aprendizaje autosupervisado originalmente propuesto por Facebook AI Research (paper arXiv:2104.02057) para entrenar Vision Transformers y ResNet sin etiquetas. Este repositorio, sin embargo, no reproduce ese entrenamiento: contiene un checkpoint de inicializacion valido de 33.088 parametros (un tamano muy reducido, coherente con una configuracion de juguete) que solo verifica que la arquitectura carga y ejecuta. El propio autor indica que no se reclama ninguna puntuacion de benchmark.
 
@@ -63,12 +63,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sunildrzo/mocov3-contrastive | 33.088 | no aplica | sin benchmarks declarados (solo inicializacion) | BSD-3-Clause | HuggingFace |
+| sunildrzo/mocov3-contrastive | 33.088 | no aplica | sin benchmarks declarados (solo inicializacion) | BSD-3-Clause | Hugging Face |
 | facebookresearch/moco-v3 (original) | no disponible en la informacion (ResNet y ViT de gran escala) | no aplica | reproducible segun el paper y el repositorio oficial | consultar repositorio oficial | GitHub (facebookresearch/moco-v3) |
-| paulwagne/mocov3-contrastive | no disponible | no aplica | implementacion compacta, sin release preentrenada para produccion | no disponible | HuggingFace |
-| Rymalhotra07/mocov3-contrastive | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| paulwagne/mocov3-contrastive | no disponible | no aplica | implementacion compacta, sin release preentrenada para produccion | no disponible | Hugging Face |
+| Rymalhotra07/mocov3-contrastive | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 
-La comparativa con el MoCo v3 original (Facebook AI Research) es la mas relevante conceptualmente: aquel repositorio reproduce los resultados y observaciones del paper arXiv:2104.02057, mientras que este repositorio es una implementacion de juguete sin entrenamiento. Los otros dos repositorios homonimos encontrados en HuggingFace (paulwagne y Rymalhotra07) parecen seguir el mismo patron de implementacion compacta para revision y pruebas controladas.
+La comparativa con el MoCo v3 original (Facebook AI Research) es la mas relevante conceptualmente: aquel repositorio reproduce los resultados y observaciones del paper arXiv:2104.02057, mientras que este repositorio es una implementacion de juguete sin entrenamiento. Los otros dos repositorios homonimos encontrados en Hugging Face (paulwagne y Rymalhotra07) parecen seguir el mismo patron de implementacion compacta para revision y pruebas controladas.
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ La comparativa con el MoCo v3 original (Facebook AI Research) es la mas relevant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunildrzo/mocov3-contrastive
+- Modelo en Hugging Face: https://huggingface.co/sunildrzo/mocov3-contrastive
 - Repositorio homonimo (paulwagne): https://huggingface.co/paulwagne/mocov3-contrastive
 - Repositorio homonimo (Rymalhotra07): https://huggingface.co/Rymalhotra07/mocov3-contrastive
 - Paper original MoCo v3 (arXiv): https://arxiv.org/abs/2104.02057

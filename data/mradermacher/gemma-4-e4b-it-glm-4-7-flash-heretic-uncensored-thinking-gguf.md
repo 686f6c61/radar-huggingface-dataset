@@ -91,7 +91,7 @@ La comparación directa es difícil porque no hay benchmarks publicados para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking-GGUF
 - Modelo base: https://huggingface.co/DavidAU/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#gemma-4-E4B-it-GLM-4.7-Flash-HERETIC-UNCENSORED-Thinking-GGUF

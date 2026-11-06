@@ -4,7 +4,7 @@
 
 Este modelo es un paquete compilado de Core ML para iOS, derivado de `aoiandroid/neutts-nano-coreml-int8`, que a su vez es una conversión del modelo de síntesis de voz (TTS) `neutts-nano` desarrollado por Neuphonic. La versión publicada aquí está optimizada para ejecución en dispositivos Apple (iPhone, iPad) mediante el runtime Core ML, con cuantización int8 y especialización para el Neural Engine (ANE). El objetivo es ofrecer un TTS ligero, on-device, sin dependencia de APIs en la nube, pensado para la aplicación TranslateBlue.
 
-La relevancia actual radica en el creciente interés por modelos de voz locales que preserven la privacidad y funcionen sin conexión. Al tratarse de un bundle compilado (`.mlmodelc`), no se distribuyen los pesos originales en formato abierto, sino un artefacto listo para integrar en apps iOS. La información técnica detallada del modelo base (arquitectura, número de parámetros, contexto) no se proporciona en esta página de HuggingFace, aunque se sabe que es una versión "nano" de la familia NeuTTS, orientada a bajo consumo de recursos.
+La relevancia actual radica en el creciente interés por modelos de voz locales que preserven la privacidad y funcionen sin conexión. Al tratarse de un bundle compilado (`.mlmodelc`), no se distribuyen los pesos originales en formato abierto, sino un artefacto listo para integrar en apps iOS. La información técnica detallada del modelo base (arquitectura, número de parámetros, contexto) no se proporciona en esta página de Hugging Face, aunque se sabe que es una versión "nano" de la familia NeuTTS, orientada a bajo consumo de recursos.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otras versiones de TT
 
 ## Enlaces
 
-- Modelo en HuggingFace: [aoiandroid/neutts-nano-coreml-int8-ios](https://huggingface.co/aoiandroid/neutts-nano-coreml-int8-ios)
+- Modelo en Hugging Face: [aoiandroid/neutts-nano-coreml-int8-ios](https://huggingface.co/aoiandroid/neutts-nano-coreml-int8-ios)
 - Modelo fuente (no compilado): [aoiandroid/neutts-nano-coreml-int8](https://huggingface.co/aoiandroid/neutts-nano-coreml-int8)
 - Repositorio original de Neuphonic: [github.com/neuphonic/neutts](https://github.com/neuphonic/neutts)
 - Repositorio de Apple para exportación Core AI: [github.com/apple/coreai-models](https://github.com/apple/coreai-models)

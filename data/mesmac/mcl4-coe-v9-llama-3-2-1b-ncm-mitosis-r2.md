@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCL4-COE-v9-Llama-3.2-1B-NCM-Mitosis-R2 es un checkpoint experimental publicado por el usuario mesmac en HuggingFace, construido a partir de meta-llama/Llama-3.2-1B-Instruct mediante una intervención arquitectónica profunda que el autor denomina "upcycling" con mezcla de expertos (MoE), atención local de grafo disperso y un cabezal cognitivo de decisión. El modelo parte de los 1B parámetros del donante y, tras dos rondas de "mitosis" de expertos (de 8 a 12 y de 12 a 16 expertos), alcanza 2.430.634.929 parámetros en bfloat16, aunque el repo de safetensors reporta 2.694.360.208 parámetros totales (diferencia atribuible a tensores auxiliares del cabezal COE y de los codebooks NCM).
+MCL4-COE-v9-Llama-3.2-1B-NCM-Mitosis-R2 es un checkpoint experimental publicado por el usuario mesmac en Hugging Face, construido a partir de meta-llama/Llama-3.2-1B-Instruct mediante una intervención arquitectónica profunda que el autor denomina "upcycling" con mezcla de expertos (MoE), atención local de grafo disperso y un cabezal cognitivo de decisión. El modelo parte de los 1B parámetros del donante y, tras dos rondas de "mitosis" de expertos (de 8 a 12 y de 12 a 16 expertos), alcanza 2.430.634.929 parámetros en bfloat16, aunque el repo de safetensors reporta 2.694.360.208 parámetros totales (diferencia atribuible a tensores auxiliares del cabezal COE y de los codebooks NCM).
 
 La propuesta técnica combina tres piezas: Next-Concept Modeling (NCM), que sustituye parte de la predicción token a token por la predicción de conceptos discretos mediante codebooks multinivel; Markov Chain Local-4 (MCL4), una atención dispersa sobre 24 posiciones (8 anclas + 16 transiciones de Markov); y un Cognitive Operator Ensemble (COE) de 9 operadores con softmax único que actúa como cabezal de decisión alternativo al cabezal LM estándar. El entrenamiento se completa con RLVR sobre 64 familias de habilidades verificables y un bucle de "Dream-RSI" con revisiones aceptadas y replay sintético.
 
@@ -91,10 +91,10 @@ Las cifras de HellaSwag muestran un retroceso del cabezal COE frente al LM (40,6
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MCL4-COE-v9-Llama-3.2-1B-NCM-Mitosis-R2 | 2,43B (MoE, 8/16 activos) | No disponible (24 posiciones atendidas via MCL4) | Apache 2.0 | HuggingFace (mesmac), requiere repo del autor | Checkpoint experimental con COE y NCM |
-| meta-llama/Llama-3.2-1B-Instruct | 1,23B denso | 128K tokens | Llama 3.2 Community License | HuggingFace, ampliamente soportado | Donante directo; referencia en los benchmarks |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B denso | 128K tokens | Llama 3.2 Community License | HuggingFace, ecosistema estandar | Alternativa densa de tamano cercano con soporte maduro |
-| Qwen2.5-1.5B-Instruct | 1,54B denso | 32K tokens | Apache 2.0 | HuggingFace, vLLM, llama.cpp | Comparable en tamano y licencia permisiva |
+| MCL4-COE-v9-Llama-3.2-1B-NCM-Mitosis-R2 | 2,43B (MoE, 8/16 activos) | No disponible (24 posiciones atendidas via MCL4) | Apache 2.0 | Hugging Face (mesmac), requiere repo del autor | Checkpoint experimental con COE y NCM |
+| meta-llama/Llama-3.2-1B-Instruct | 1,23B denso | 128K tokens | Llama 3.2 Community License | Hugging Face, ampliamente soportado | Donante directo; referencia en los benchmarks |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B denso | 128K tokens | Llama 3.2 Community License | Hugging Face, ecosistema estandar | Alternativa densa de tamano cercano con soporte maduro |
+| Qwen2.5-1.5B-Instruct | 1,54B denso | 32K tokens | Apache 2.0 | Hugging Face, vLLM, llama.cpp | Comparable en tamano y licencia permisiva |
 
 La comparacion con Llama-3.2-3B-Instruct y Qwen2.5-1.5B-Instruct es aproximada en tamano; no se dispone de resultados de benchmarks cruzados entre estos modelos y el checkpoint de mesmac en la informacion proporcionada.
 
@@ -113,7 +113,7 @@ La comparacion con Llama-3.2-3B-Instruct y Qwen2.5-1.5B-Instruct es aproximada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mesmac/MCL4-COE-v9-Llama-3.2-1B-NCM-Mitosis-R2
+- Modelo en Hugging Face: https://huggingface.co/mesmac/MCL4-COE-v9-Llama-3.2-1B-NCM-Mitosis-R2
 - Codigo y documentacion tecnica: https://github.com/mESmaC/mcl4-coe-ncm
 - Paper NCM (Kumbong et al.): https://arxiv.org/abs/2610.14162
 - Modelo donante: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

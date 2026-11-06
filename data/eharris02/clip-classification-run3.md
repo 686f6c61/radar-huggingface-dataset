@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eharris02/clip-classification-run3` es un repositorio de HuggingFace que contiene una implementación propia y compacta de una arquitectura tipo CLIP orientada a clasificación, escrita en PyTorch. Lo publica el usuario `eharris02` y, según su propia model card, no se trata de un modelo entrenado, sino de un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala. El checkpoint `model.safetensors` es una inicialización válida, no un modelo con pesos entrenados ni evaluados.
+`eharris02/clip-classification-run3` es un repositorio de Hugging Face que contiene una implementación propia y compacta de una arquitectura tipo CLIP orientada a clasificación, escrita en PyTorch. Lo publica el usuario `eharris02` y, según su propia model card, no se trata de un modelo entrenado, sino de un punto de partida para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala. El checkpoint `model.safetensors` es una inicialización válida, no un modelo con pesos entrenados ni evaluados.
 
 El dato más relevante para quien vaya a evaluarlo es la discrepancia entre la configuración declarada y el checkpoint real: el `config.json` etiqueta la escala como "huge", pero el recuento real de parámetros del safetensors es de 49.600, es decir, unas tres o cuatro órdenes de magnitud por debajo de cualquier CLIP "huge" convencional. El tamaño del repositorio (0,0 GB) es coherente con ese recuento. Conviene interpretar la etiqueta "huge" como un valor de configuración generado automáticamente, no como una descripción del modelo.
 
@@ -25,11 +25,11 @@ La arquitectura declarada incluye atención dispersa (*sparse attention*), fusi�
 | Normalización | InstanceNorm |
 | Optimizador por defecto | AdamW |
 | Scheduler por defecto | exponencial |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer CLIP de dos torres (imagen y texto) con fusión mediante co-atención, atención dispersa, activación ReLU e InstanceNorm en lugar de las elecciones habituales del CLIP original (atención densa, GELU y LayerNorm). El código reside en `run.py`, que contiene tanto la definición del modelo como un ejemplo ejecutable y el punto de entrada de entrenamiento; el bloque `__main__` de ese script incluye el ejemplo de prueba de humo generado. Al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace (`AutoModel`, `from_pretrained` estándar) requieren un adaptador explícito antes de poder usarse.
+La arquitectura es un transformer CLIP de dos torres (imagen y texto) con fusión mediante co-atención, atención dispersa, activación ReLU e InstanceNorm en lugar de las elecciones habituales del CLIP original (atención densa, GELU y LayerNorm). El código reside en `run.py`, que contiene tanto la definición del modelo como un ejemplo ejecutable y el punto de entrada de entrenamiento; el bloque `__main__` de ese script incluye el ejemplo de prueba de humo generado. Al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face (`AutoModel`, `from_pretrained` estándar) requieren un adaptador explícito antes de poder usarse.
 
 No hay entrenamiento documentado. La model card es explícita: el checkpoint es una inicialización, no un modelo entrenado, y no se reclama ninguna métrica de benchmark. `training_args.json` recoge una receta por defecto (AdamW con scheduler exponencial) que el autor describe como valores de partida del script, no como evidencia de una ejecución completada. No se especifican número de tokens, composición del dataset, ni fases de RLHF, DPO o ajuste por instrucciones.
 
@@ -91,6 +91,6 @@ La comparación no es realmente homogénea: los tres alternativas son modelos en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eharris02/clip-classification-run3
+- Repositorio en Hugging Face: https://huggingface.co/eharris02/clip-classification-run3
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

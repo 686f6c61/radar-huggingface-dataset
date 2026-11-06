@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swulfen/ppo-LunarLander-unit8` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium, una tarea de control continuo en dos dimensiones en la que un módulo lunar debe aterrizar de forma segura entre dos banderas. El modelo lo publica el usuario swulfen en HuggingFace y forma parte de una implementación propia (tag `custom-implementation`) vinculada al curso Deep RL, presumiblemente como entrega de la unidad 8 del mismo.
+`swulfen/ppo-LunarLander-unit8` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3 de Gymnasium, una tarea de control continuo en dos dimensiones en la que un módulo lunar debe aterrizar de forma segura entre dos banderas. El modelo lo publica el usuario swulfen en Hugging Face y forma parte de una implementación propia (tag `custom-implementation`) vinculada al curso Deep RL, presumiblemente como entrega de la unidad 8 del mismo.
 
 No se trata de un modelo de lenguaje ni de un transformer generativo: es una política neuronal que mapea observaciones de 8 dimensiones (posición, velocidad, ángulo, contacto con el suelo) a acciones discretas (no hacer nada, encender motor izquierdo, derecho o principal). El repositorio tiene un tamaño declarado de 0,0 GB, lo que sugiere que los pesos no están efectivamente subidos o que el contenido es mínimo; conviene verificar la disponibilidad real de los ficheros antes de intentar cargarlo.
 
@@ -42,7 +42,7 @@ El número de pasos de entrenamiento (50.000) es notablemente bajo para LunarLan
 - Punto de partida para ajuste fino: se puede reanudar el entrenamiento desde esta política y aumentar `total_timesteps` hasta 1-2 millones para intentar alcanzar recompensas positivas en LunarLander-v3.
 - Comparación de algoritmos: útil como línea base de PPO frente a DQN, A2C o SAC en el mismo entorno, siempre que se evalúe con el mismo número de episodios y semillas.
 - Estudio de estabilidad de entrenamiento: la varianza declarada (±86,78) permite analizar la sensibilidad de PPO a la semilla y al presupuesto de pasos en tareas de control continuo.
-- Pruebas de infraestructura de RL: verificar pipelines de evaluación, logging en TensorBoard y carga de políticas desde HuggingFace en entornos de CI.
+- Pruebas de infraestructura de RL: verificar pipelines de evaluación, logging en TensorBoard y carga de políticas desde Hugging Face en entornos de CI.
 - Referencia negativa documentada: ilustra los síntomas de un entrenamiento insuficiente (recompensa negativa, alta varianza) y sirve para calibrar expectativas en proyectos docentes.
 - No es adecuado para producción, robótica real ni aplicaciones de usuario final.
 
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Entorno | Algoritmo | Timesteps | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| swulfen/ppo-LunarLander-unit8 | LunarLander-v3 | PPO | 50.000 | -173,42 ± 86,78 | no disponible | HuggingFace (repo 0,0 GB) |
+| swulfen/ppo-LunarLander-unit8 | LunarLander-v3 | PPO | 50.000 | -173,42 ± 86,78 | no disponible | Hugging Face (repo 0,0 GB) |
 | cleanrl/ppo-LunarLander-v2 (referencia) | LunarLander-v2 | PPO | ~1.000.000 | no disponible en la información | no disponible | no disponible |
 | Políticas DQN de referencia para LunarLander | LunarLander-v2 | DQN | ~500.000 | no disponible en la información | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swulfen/ppo-LunarLander-unit8
+- Hugging Face: https://huggingface.co/swulfen/ppo-LunarLander-unit8
 - CleanRL (implementación de referencia de PPO): https://github.com/vwxyzjn/cleanrl
 - Gymnasium LunarLander: https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Deep RL Course (Hugging Face): https://huggingface.co/learn/deep-rl-course

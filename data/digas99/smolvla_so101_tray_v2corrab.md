@@ -87,12 +87,12 @@ No hay resultados de tasa de exito en robot real publicados en la informacion di
 
 | Modelo | Parametros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `digas99/smolvla_so101_tray_v2corrAB` | 450 M | 2 camaras 640x480 + estado 6 DOF + 1 de 2 instrucciones | Apache-2.0 | HuggingFace, 0 descargas |
-| `digas99/smolvla_so101_tray_v2corr` | 450 M (mismo base) | mismo esquema, solo correcciones mesa-bandera | no disponible en la informacion | HuggingFace |
-| `digas99/smolvla_so101_tray_v2` | 450 M (mismo base) | mismo esquema, sin clips de correccion | no disponible en la informacion | HuggingFace |
-| `lerobot/smolvla_base` | 450 M | 2 camaras + estado + instruccion libre | no disponible en la informacion | HuggingFace |
-| OpenVLA-7B | 7 B | 1 imagen + instruccion en lenguaje natural | no disponible en la informacion | HuggingFace |
-| ACT (LeRobot) | no disponible | imagenes + estado | no disponible en la informacion | HuggingFace |
+| `digas99/smolvla_so101_tray_v2corrAB` | 450 M | 2 camaras 640x480 + estado 6 DOF + 1 de 2 instrucciones | Apache-2.0 | Hugging Face, 0 descargas |
+| `digas99/smolvla_so101_tray_v2corr` | 450 M (mismo base) | mismo esquema, solo correcciones mesa-bandera | no disponible en la informacion | Hugging Face |
+| `digas99/smolvla_so101_tray_v2` | 450 M (mismo base) | mismo esquema, sin clips de correccion | no disponible en la informacion | Hugging Face |
+| `lerobot/smolvla_base` | 450 M | 2 camaras + estado + instruccion libre | no disponible en la informacion | Hugging Face |
+| OpenVLA-7B | 7 B | 1 imagen + instruccion en lenguaje natural | no disponible en la informacion | Hugging Face |
+| ACT (LeRobot) | no disponible | imagenes + estado | no disponible en la informacion | Hugging Face |
 
 La comparacion relevante es interna a la familia: este checkpoint y `smolvla_so101_tray_v2corr` comparten receta y numero de pasos, de modo que la unica diferencia es el conjunto de clips de correccion, lo que lo convierte en un buen ablation study. Frente a OpenVLA-7B, la politica aqui descrita es 15 veces mas pequena y esta especializada en una tarea y un robot concretos, a costa de no generalizar a instrucciones arbitrarias. No se dispone de datos publicos de rendimiento comparado entre estas alternativas en la informacion proporcionada.
 
@@ -111,7 +111,7 @@ La comparacion relevante es interna a la familia: este checkpoint y `smolvla_so1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digas99/smolvla_so101_tray_v2corrAB
+- Modelo en Hugging Face: https://huggingface.co/digas99/smolvla_so101_tray_v2corrAB
 - Dataset de entrenamiento: https://huggingface.co/datasets/digas99/so101_tray_train_v2corrAB
 - Perfil del autor: https://huggingface.co/digas99
 - Modelo de control (solo correcciones mesa-bandera): https://huggingface.co/digas99/smolvla_so101_tray_v2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_42 es un ajuste fino supervisado (SFT) del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, publicado por el usuario rghosh8 en HuggingFace. Se trata de un checkpoint experimental de investigación, no de un modelo listo para producción: su nombre indica que es una línea base (baseline) de SFT entrenada sobre el conjunto de datos GSM8K con la semilla 42, presumiblemente como referencia para comparar contra otras técnicas de ajuste (RL, DPO, etc.) sobre el mismo modelo base.
+SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_42 es un ajuste fino supervisado (SFT) del modelo deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B, publicado por el usuario rghosh8 en Hugging Face. Se trata de un checkpoint experimental de investigación, no de un modelo listo para producción: su nombre indica que es una línea base (baseline) de SFT entrenada sobre el conjunto de datos GSM8K con la semilla 42, presumiblemente como referencia para comparar contra otras técnicas de ajuste (RL, DPO, etc.) sobre el mismo modelo base.
 
 El modelo hereda la arquitectura Qwen2 del base, un transformer decoder-only denso de aproximadamente 1.777 millones de parámetros (1,78 mil millones), destilado a partir de DeepSeek-R1. El objetivo del ajuste es reforzar el razonamiento matemático de nivel escolar, ya que GSM8K es un benchmark de problemas aritméticos de varios pasos. Es relevante ahora como ejemplo reproducible de pipeline SFT con TRL sobre modelos de razonamiento pequeños, útil para investigadores que quieran replicar experimentos o comparar metodologías de post-entrenamiento.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (SFT GSM8K seed 42) | 1,78 B | No disponible | No disponible | HuggingFace, 0 descargas | Línea base experimental de investigación |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens (según modelo base) | MIT (según el modelo base) | HuggingFace, ampliamente usado | Modelo base sin el SFT específico de GSM8K |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace, muy popular | Alternativa generalista con tool calling documentado |
-| Qwen/Qwen2.5-Math-1.5B-Instruct | 1,54 B | 4.096 tokens | Apache 2.0 | HuggingFace | Especializado en matemáticas, comparable en propósito |
+| Este checkpoint (SFT GSM8K seed 42) | 1,78 B | No disponible | No disponible | Hugging Face, 0 descargas | Línea base experimental de investigación |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | 32.768 tokens (según modelo base) | MIT (según el modelo base) | Hugging Face, ampliamente usado | Modelo base sin el SFT específico de GSM8K |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face, muy popular | Alternativa generalista con tool calling documentado |
+| Qwen/Qwen2.5-Math-1.5B-Instruct | 1,54 B | 4.096 tokens | Apache 2.0 | Hugging Face | Especializado en matemáticas, comparable en propósito |
 
 La comparación con el modelo base es la más directa: este checkpoint añade un SFT sobre GSM8K con semilla fija, pero carece de la documentación, licencia clara y adopción del original. Frente a Qwen2.5-Math-1.5B-Instruct, ambos apuntan a matemáticas, pero el de Qwen tiene licencia Apache 2.0 explícita y contexto documentado.
 
@@ -89,7 +89,7 @@ La comparación con el modelo base es la más directa: este checkpoint añade un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_42
+- Modelo en Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_DeepSeek-R1-Distill-Qwen-1.5B_gsm8k_42
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio TRL: https://github.com/huggingface/trl
 - Paper de DeepSeek-R1: no disponible en la información proporcionada

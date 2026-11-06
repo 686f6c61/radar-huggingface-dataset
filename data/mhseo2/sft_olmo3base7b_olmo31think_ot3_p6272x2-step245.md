@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step245
+- Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p6272x2-step245
 - Modelo base intermedio: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset de prompts: OpenThoughts3 (referenciado en la model card, sin enlace directo en la informacion proporcionada)

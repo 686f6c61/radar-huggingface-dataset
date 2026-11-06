@@ -107,7 +107,7 @@ La comparacion directa no es posible porque los conjuntos de evaluacion y las et
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DmitriiGromak/bge-small-finetuned-ner
+- Hugging Face: https://huggingface.co/DmitriiGromak/bge-small-finetuned-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Modelo relacionado (chesschesschess/bge-small-finetuned-ner): https://huggingface.co/chesschesschess/bge-small-finetuned-ner
 - Modelo relacionado (kati4ka/bge-small-ner): https://huggingface.co/kati4ka/bge-small-ner

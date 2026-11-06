@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| m4gshm/Qwen2.5-Coder-3B-nf4-sym-g-1-se-awq | 3B | no disponible (base: 32.768) | OpenVINO IR, nf4 AWQ | apache-2.0 | HuggingFace, 17 descargas |
-| Qwen/Qwen2.5-Coder-3B (original) | 3B | 32.768 | safetensors, fp16/bf16 | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-1.5B | 1,5B | 32.768 | safetensors, fp16/bf16 | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-7B | 7B | 32.768 | safetensors, fp16/bf16 | apache-2.0 | HuggingFace |
+| m4gshm/Qwen2.5-Coder-3B-nf4-sym-g-1-se-awq | 3B | no disponible (base: 32.768) | OpenVINO IR, nf4 AWQ | apache-2.0 | Hugging Face, 17 descargas |
+| Qwen/Qwen2.5-Coder-3B (original) | 3B | 32.768 | safetensors, fp16/bf16 | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-1.5B | 1,5B | 32.768 | safetensors, fp16/bf16 | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-7B | 7B | 32.768 | safetensors, fp16/bf16 | apache-2.0 | Hugging Face |
 
 La comparación principal es con el modelo original: esta exportación sacrifica precisión numérica (nf4) a cambio de un tamaño 4 veces menor y compatibilidad con OpenVINO. Frente a las variantes de 1,5B y 7B del mismo family, ofrece un punto intermedio de calidad y coste, pero solo es preferible si el entorno de despliegue es Intel y se necesita el formato IR.
 
@@ -83,7 +83,7 @@ La comparación principal es con el modelo original: esta exportación sacrifica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-3B-nf4-sym-g-1-se-awq
+- Repositorio Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-3B-nf4-sym-g-1-se-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Documentación de Optimum-Intel: https://huggingface.co/docs/optimum-intel
 - Documentación de OpenVINO: https://docs.openvino.ai

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Requisitos de hardware
 
-- VRAM/RAM estimada: no disponible en la informacion proporcionada. Al ser un modelo de ~5 M de parametros en INT8, el artefacto es del orden de unos pocos MB, pero el tamano exacto del repo figura como 0.0 GB en HuggingFace y no se detalla.
+- VRAM/RAM estimada: no disponible en la informacion proporcionada. Al ser un modelo de ~5 M de parametros en INT8, el artefacto es del orden de unos pocos MB, pero el tamano exacto del repo figura como 0.0 GB en Hugging Face y no se detalla.
 - GPU recomendadas: no requiere GPU dedicada; esta pensado para CPU, iGPU y NPU Intel. Compatible con GPU Intel (Arc, integradas) a traves de OpenVINO.
 - GPU de consumo: cabe sobradamente en cualquier GPU de consumo si se convierte o ejecuta via OpenVINO; no se proporcionan cifras de latencia.
 - Opciones de despliegue: OpenVINO Runtime (>= 2026.1.0) y OpenVINO Model API (>= 0.4.0). No se mencionan integraciones con llama.cpp, vLLM, Ollama ni TGI (no aplican a este tipo de modelo).
@@ -86,7 +86,7 @@ La comparativa con alternativas de la misma categoria (por ejemplo, MobileNetV3 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/efficientnet_b0_ra_in1k-int8-ov
+- Hugging Face: https://huggingface.co/OpenVINO/efficientnet_b0_ra_in1k-int8-ov
 - Modelo base: https://huggingface.co/timm/efficientnet_b0.ra_in1k
 - Documentacion OpenVINO: https://docs.openvino.ai/
 - Repositorio OpenVINO: https://github.com/openvinotoolkit/openvino

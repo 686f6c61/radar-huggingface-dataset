@@ -44,7 +44,7 @@ Sobre esas estadísticas, la librería `ssm-mech` calcula una realización balan
 - Métrica ETMFD por capa para discriminar régimen LTI frente a LTV.
 - Reutilización de estadísticas acumuladas sin reprocesar el corpus (ahorro de la fase de estimación).
 - No ofrece generación de texto, razonamiento, código, matemáticas, visión, tool calling, capacidades de agente ni multilingüismo: no es un modelo de lenguaje desplegable.
-- No incluye API de inferencia ni pipeline de HuggingFace (`pipeline: no disponible`).
+- No incluye API de inferencia ni pipeline de Hugging Face (`pipeline: no disponible`).
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Los artefactos en sí (0,1 GB de ficheros NPZ) se manejan en CPU sin problema; la carga y el cálculo de autovectores por capa son operaciones de álgebra lineal de tamaño `(d_inner, d_state, d_state)`.
 - Para la fase de cirugía con `MambaAnalyzer` hay que instanciar el checkpoint Mamba correspondiente: estimación aritmética de pesos en bf16/fp16 a 2 bytes por parámetro, ~0,26 GB para el 130M, ~0,74 GB para el 370M, ~1,6 GB para el 790M y ~5,6 GB para el 2,8B, a lo que hay que sumar activaciones y el grafo de análisis.
 - GPU: no hay datos publicados de latencia ni throughput. Por tamaño, los tres modelos pequeños caben en cualquier GPU consumer con 8-12 GB de VRAM; el 2,8B en fp16 es ajustado en tarjetas de 8 GB y cómodo en 16-24 GB (RTX 4090, A100, H100). No se dispone de cifras verificadas de rendimiento en A100/H100 para esta carga concreta.
-- Opciones de despliegue: no aplica el serving habitual (vLLM, TGI, Ollama, llama.cpp no están soportados para este repositorio). El consumo es mediante `huggingface_hub.hf_hub_download` y la librería `ssm-mech`, sobre los checkpoints de `state-spaces` en formato HuggingFace (el ejemplo usa `state-spaces/mamba-130m-hf`).
+- Opciones de despliegue: no aplica el serving habitual (vLLM, TGI, Ollama, llama.cpp no están soportados para este repositorio). El consumo es mediante `huggingface_hub.hf_hub_download` y la librería `ssm-mech`, sobre los checkpoints de `state-spaces` en formato Hugging Face (el ejemplo usa `state-spaces/mamba-130m-hf`).
 - Almacenamiento: 0,1 GB para las estadísticas; adicionalmente el tamaño del checkpoint Mamba que se vaya a analizar.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ Herramientas de interpretabilidad de propósito general (TransformerLens, nnsigh
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xero91/ssm-mech-gramians
+- Repositorio en Hugging Face: https://huggingface.co/xero91/ssm-mech-gramians
 - Perfil del autor: https://huggingface.co/xero91
 - Librería `ssm-mech` (repositorio de código): https://github.com/omanshuthapliyal/ssm-interp
 - Checkpoint de referencia usado en el ejemplo: https://huggingface.co/state-spaces/mamba-130m-hf

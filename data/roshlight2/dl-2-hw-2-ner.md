@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`roshlight2/dl-2-hw-2-ner` es un modelo de reconocimiento de entidades nombradas (NER) publicado en HuggingFace por el usuario `roshlight2`. Por el identificador del repositorio (dl-2-hw-2, previsiblemente "Deep Learning 2, homework 2"), todo apunta a un artefacto academico de un ejercicio de clase de aprendizaje profundo, mas que a un modelo orientado a produccion. La model card es la plantilla autogenerada de HuggingFace sin ningun apartado completado.
+`roshlight2/dl-2-hw-2-ner` es un modelo de reconocimiento de entidades nombradas (NER) publicado en Hugging Face por el usuario `roshlight2`. Por el identificador del repositorio (dl-2-hw-2, previsiblemente "Deep Learning 2, homework 2"), todo apunta a un artefacto academico de un ejercicio de clase de aprendizaje profundo, mas que a un modelo orientado a produccion. La model card es la plantilla autogenerada de Hugging Face sin ningun apartado completado.
 
 Tecnicamente se trata de un modelo de tipo encoder transformer basado en BERT, etiquetado para la tarea de `token-classification` y cargable con la libreria `transformers`. Cuenta con 33.215.625 parametros en formato safetensors, lo que lo situa en el rango de los BERT compactos, muy por debajo de los 110 millones de parametros de `bert-base-uncased`. El tamano del repositorio es de 0,1 GB.
 
@@ -44,7 +44,7 @@ No hay ningun dato disponible sobre el proceso de entrenamiento: ni el numero de
 - Prototipado rapido de pipelines de NLP: al cargarse con `transformers` y pesar solo 0,1 GB, puede integrarse en un cuaderno de pruebas para validar una arquitectura NER antes de invertir en un modelo en produccion.
 - Anotacion asistida de corpus: como preetiquetador para que un humano revise y corrija, reduciendo el coste de construir un dataset etiquetado propio.
 - Demostracion tecnica en docencia: ilustra las limitaciones de publicar un checkpoint sin model card, util como caso de estudio sobre buenas practicas de documentacion.
-- Prueba de integracion con `pipelines` de HuggingFace: valida que el artefacto es cargable y ejecutable, aunque su utilidad real dependa de datos que no se han publicado.
+- Prueba de integracion con `pipelines` de Hugging Face: valida que el artefacto es cargable y ejecutable, aunque su utilidad real dependa de datos que no se han publicado.
 
 ## Benchmarks y rendimiento
 
@@ -85,6 +85,6 @@ La comparacion de rendimiento con estos modelos no puede realizarse porque no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roshlight2/dl-2-hw-2-ner
+- Modelo en Hugging Face: https://huggingface.co/roshlight2/dl-2-hw-2-ner
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact#compute

@@ -96,7 +96,7 @@ El ajuste arcade y el ajuste biohub son variantes del mismo autor y del mismo mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheBioHub/gemma4-e4b-arcade-gguf
+- Modelo en Hugging Face: https://huggingface.co/TheBioHub/gemma4-e4b-arcade-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Enlace de licencia declarado: https://ai.google.dev/gemma/docs/gemma_4_license
 - Variante hermana (biohub): https://huggingface.co/TheBioHub/gemma4-e4b-biohub-gguf

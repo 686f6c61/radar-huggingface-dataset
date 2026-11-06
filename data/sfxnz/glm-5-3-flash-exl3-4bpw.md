@@ -78,9 +78,9 @@ Medición realizada con 5 ejecuciones por celda, 512 tokens de salida, thinking 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-EXL3-4bpw (este) | 87,8B | 1.048.576 | EXL3 4 bpw + BF16/F32 | MIT | HuggingFace, motor TensorFold |
-| GLM-5.3-Flash-BF16 (base) | 87,8B | no disponible | BF16 | MIT | HuggingFace, 598,5 GiB |
-| GLM-5.3-Flash-tr3-4bpw | no disponible | no disponible | 4 bpw | no disponible | HuggingFace |
+| GLM-5.3-Flash-EXL3-4bpw (este) | 87,8B | 1.048.576 | EXL3 4 bpw + BF16/F32 | MIT | Hugging Face, motor TensorFold |
+| GLM-5.3-Flash-BF16 (base) | 87,8B | no disponible | BF16 | MIT | Hugging Face, 598,5 GiB |
+| GLM-5.3-Flash-tr3-4bpw | no disponible | no disponible | 4 bpw | no disponible | Hugging Face |
 
 Frente al base BF16, este pack reduce el tamaño de 598,5 GiB a 175,7 GB y mantiene 1.618 tensores byte a byte idénticos. Frente a TR3 4bpw, el KLD es ligeramente superior (0,029440 frente a 0,025558 nats) y el acuerdo top-1 algo menor (0,9488 frente a 0,9529), aunque el panel de evaluación es el dominio de calibración de TR3, lo que favorece a ese pack en la comparación.
 
@@ -96,7 +96,7 @@ Frente al base BF16, este pack reduce el tamaño de 598,5 GiB a 175,7 GB y manti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sfxnz/GLM-5.3-Flash-EXL3-4bpw
+- Modelo en Hugging Face: https://huggingface.co/sfxnz/GLM-5.3-Flash-EXL3-4bpw
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Repositorio de la receta: https://github.com/sfxnz/GLM-5.3-Flash-EXL3-4bpw-TensorFold-2x-DGX-Spark
 - Motor TensorFold: https://github.com/ashhart/TensorFold

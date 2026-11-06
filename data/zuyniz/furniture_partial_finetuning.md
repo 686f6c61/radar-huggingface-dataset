@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zuyniz/furniture_partial_finetuning` es un modelo de detección de objetos (object detection) publicado en HuggingFace por el usuario zuyniz, obtenido mediante fine-tuning parcial del modelo `facebook/detr-resnet-50`. Es decir, parte de la arquitectura DETR (Detection Transformer) con backbone convolucional ResNet-50 desarrollada por Facebook AI Research y la adapta a un conjunto de datos no especificado, presumiblemente relacionado con muebles (furniture).
+`zuyniz/furniture_partial_finetuning` es un modelo de detección de objetos (object detection) publicado en Hugging Face por el usuario zuyniz, obtenido mediante fine-tuning parcial del modelo `facebook/detr-resnet-50`. Es decir, parte de la arquitectura DETR (Detection Transformer) con backbone convolucional ResNet-50 desarrollada por Facebook AI Research y la adapta a un conjunto de datos no especificado, presumiblemente relacionado con muebles (furniture).
 
 El modelo emplea el pipeline `object-detection` de la librería transformers y cuenta con 41.608.649 parámetros totales almacenados en formato safetensors. La model card indica explícitamente que se desconoce el dataset de entrenamiento y que no se han publicado resultados de evaluación, por lo que se trata de un artefacto con documentación mínima.
 
@@ -62,9 +62,9 @@ El model-index oficial del modelo declara un array de resultados vacio y la mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zuyniz/furniture_partial_finetuning | 41.608.649 | no aplica | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| facebook/detr-resnet-50 (modelo base) | 41.608.649 | no aplica | resultados COCO publicados en el articulo original y en transformers | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| facebook/detr-resnet-101 | no disponible en la informacion proporcionada | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| zuyniz/furniture_partial_finetuning | 41.608.649 | no aplica | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| facebook/detr-resnet-50 (modelo base) | 41.608.649 | no aplica | resultados COCO publicados en el articulo original y en transformers | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| facebook/detr-resnet-101 | no disponible en la informacion proporcionada | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de deteccion (YOLO, RT-DETR, Faster R-CNN) | no disponible en la informacion proporcionada | no aplica | no disponible | varian por proyecto | multiples repositorios |
 
 La unica comparacion directa documentada es con el modelo base, del que hereda la arquitectura y el numero de parametros. El fine-tuning no aporta resultados de evaluacion que permitan establecer una mejora o degradacion respecto al original.
@@ -81,7 +81,7 @@ La unica comparacion directa documentada es con el modelo base, del que hereda l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zuyniz/furniture_partial_finetuning
+- Modelo en Hugging Face: https://huggingface.co/zuyniz/furniture_partial_finetuning
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - Copia alternativa publicada por otro usuario: https://huggingface.co/WinLike/furniture_partial_finetuning
 - Ficha agregadora de terceros (free2aitools): https://free2aitools.com/model/winlike/furniture_partial_finetuning

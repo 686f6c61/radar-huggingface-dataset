@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pika-H3-Flex (este) | 33,1 mil millones | no disponible | LoRA image-to-video sobre MiniMax-H3 | MiniMax-H3 Community License | HuggingFace, 14 descargas |
-| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | Generador vídeo/audio-vídeo | MiniMax-H3 Community License | HuggingFace (modelo base) |
-| Alternativas de vídeo open source (p. ej. familias Stable Video Diffusion, CogVideoX, Wan) | no disponible en la información proporcionada | no disponible | image-to-video / text-to-video | variables | HuggingFace |
+| Pika-H3-Flex (este) | 33,1 mil millones | no disponible | LoRA image-to-video sobre MiniMax-H3 | MiniMax-H3 Community License | Hugging Face, 14 descargas |
+| MiniMaxAI/MiniMax-H3 (base) | no disponible | no disponible | Generador vídeo/audio-vídeo | MiniMax-H3 Community License | Hugging Face (modelo base) |
+| Alternativas de vídeo open source (p. ej. familias Stable Video Diffusion, CogVideoX, Wan) | no disponible en la información proporcionada | no disponible | image-to-video / text-to-video | variables | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre Pika-H3-Flex y otras alternativas en la información proporcionada; la comparativa se limita a parámetros, licencia y disponibilidad cuando estos datos existen.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre Pika-H3-Flex y otras alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OxBee/Pika-H3-Flex
+- Hugging Face: https://huggingface.co/OxBee/Pika-H3-Flex
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
-- Licencia: archivo LICENSE en el repositorio de HuggingFace (minimax-h3-community-license-agreement)
+- Licencia: archivo LICENSE en el repositorio de Hugging Face (minimax-h3-community-license-agreement)
 - Ejemplos de la model card: assets/showcases/camera-rally.mp4, assets/showcases/balcony-orbit.mp4 (rutas relativas al repositorio)

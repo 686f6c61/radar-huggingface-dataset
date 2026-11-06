@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables en el dominio de asesora
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Veeda241/krishi-anuman-qwen-1.5b
+- Hugging Face: https://huggingface.co/Veeda241/krishi-anuman-qwen-1.5b
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Referencia a Qwen2.5: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dnbr-tagger-preview1 es un clasificador de imágenes multilabel desarrollado por el usuario huangdffs y publicado en HuggingFace. Está construido sobre la librería `timm` y entrenado para etiquetar imágenes de estilo anime con las etiquetas propias del dataset Danbooru. El modelo resuelve el problema clásico del etiquetado automático de ilustraciones: dado un conjunto de etiquetas (tags) de Danbooru, predecir cuáles están presentes en una imagen.
+dnbr-tagger-preview1 es un clasificador de imágenes multilabel desarrollado por el usuario huangdffs y publicado en Hugging Face. Está construido sobre la librería `timm` y entrenado para etiquetar imágenes de estilo anime con las etiquetas propias del dataset Danbooru. El modelo resuelve el problema clásico del etiquetado automático de ilustraciones: dado un conjunto de etiquetas (tags) de Danbooru, predecir cuáles están presentes en una imagen.
 
 Se trata de un modelo de tamaño reducido, con 26.787.072 parámetros totales y un repositorio de apenas 0,2 GB, lo que lo sitúa en la categoría de modelos ligeros aptos para inferencia en hardware modesto. El entrenamiento se realizó sobre aproximadamente 40 millones de muestras a resolución nativa de ~238x238 píxeles, tomadas de un subconjunto arbitrario del dataset nyanko7/danbooru2023.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dnbr-tagger-preview1 | 26,8 M | ~238x238 | Multilabel Danbooru | Apache 2.0 | HuggingFace |
-| WD Tagger (SmilingWolf) | no disponible en la información | no disponible | Multilabel Danbooru | no disponible en la información | HuggingFace |
-| Otros taggers Danbooru de `timm` | no disponible | no disponible | Multilabel Danbooru | variable | HuggingFace |
+| dnbr-tagger-preview1 | 26,8 M | ~238x238 | Multilabel Danbooru | Apache 2.0 | Hugging Face |
+| WD Tagger (SmilingWolf) | no disponible en la información | no disponible | Multilabel Danbooru | no disponible en la información | Hugging Face |
+| Otros taggers Danbooru de `timm` | no disponible | no disponible | Multilabel Danbooru | variable | Hugging Face |
 
 No se dispone de datos verificados de benchmarks ni de especificaciones completas de los modelos alternativos en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/dnbr-tagger-preview1
+- Hugging Face: https://huggingface.co/huangdffs/dnbr-tagger-preview1
 - Dataset de entrenamiento: https://huggingface.co/datasets/nyanko7/danbooru2023
 - Librería `timm`: https://github.com/huggingface/pytorch-image-models
 - Librería `transformers`: https://github.com/huggingface/transformers

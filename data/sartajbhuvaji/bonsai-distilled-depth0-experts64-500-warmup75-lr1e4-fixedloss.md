@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss` es un modelo de generación de texto publicado en HuggingFace por el usuario sartajbhuvaji. Según los metadatos del repositorio, se trata de un transformer de tipo Mixture of Experts (MoE) compatible con la clase `qwen3_moe` de la librería `transformers`, con 16.030.316.544 parámetros totales (16,03 mil millones) y un repositorio de 32,1 GB en safetensors. No es un modelo oficial de ningún laboratorio: es un artefacto experimental subido por un autor individual, con 0 descargas y 0 likes en el momento de redactar esta ficha.
+`sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss` es un modelo de generación de texto publicado en Hugging Face por el usuario sartajbhuvaji. Según los metadatos del repositorio, se trata de un transformer de tipo Mixture of Experts (MoE) compatible con la clase `qwen3_moe` de la librería `transformers`, con 16.030.316.544 parámetros totales (16,03 mil millones) y un repositorio de 32,1 GB en safetensors. No es un modelo oficial de ningún laboratorio: es un artefacto experimental subido por un autor individual, con 0 descargas y 0 likes en el momento de redactar esta ficha.
 
-El nombre del repositorio codifica lo que parece ser una configuración de destilación y entrenamiento: `distilled` (destilado), `depth0`, `experts64` (64 expertos), `500` (probablemente pasos de entrenamiento), `warmup75` (pasos de calentamiento), `lr1e4` (tasa de aprendizaje 1e-4) y `fixedloss`. Es una interpretación a partir del identificador, no información confirmada por el autor: la model card es la plantilla automática de HuggingFace y todos los campos relevantes están marcados como `[More Information Needed]`.
+El nombre del repositorio codifica lo que parece ser una configuración de destilación y entrenamiento: `distilled` (destilado), `depth0`, `experts64` (64 expertos), `500` (probablemente pasos de entrenamiento), `warmup75` (pasos de calentamiento), `lr1e4` (tasa de aprendizaje 1e-4) y `fixedloss`. Es una interpretación a partir del identificador, no información confirmada por el autor: la model card es la plantilla automática de Hugging Face y todos los campos relevantes están marcados como `[More Information Needed]`.
 
 Su relevancia ahora mismo es limitada y de carácter exploratorio: sirve como pieza para estudiar experimentos de destilación sobre arquitecturas MoE de la familia Qwen3, pero carece de documentación, licencia declarada, evaluación publicada y datos de entrenamiento, por lo que no es apto para uso en producción sin una validación propia exhaustiva.
 
@@ -90,6 +90,6 @@ Frente a estas alternativas, el modelo de sartajbhuvaji no ofrece ninguna ventaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts64-500-warmup75-lr1e4-fixedloss
 - Referencia del tag `arxiv:1910.09700`: https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., 2019, sobre estimación de emisiones de carbono; aparece en la plantilla de la model card, no es un paper del modelo)
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este checkpoint. La búsqueda web realizada no devolvió resultados relevantes sobre el modelo.

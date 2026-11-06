@@ -27,7 +27,7 @@ Su relevancia es doble. Por un lado, demuestra el flujo estándar de LeRobot par
 | Cámaras | `up`, `side` |
 | Entradas | `observation.state` (6,), `observation.images.up` (3, 480, 640), `observation.images.side` (3, 480, 640) |
 | Salidas | `action` (6,) |
-| Pipeline en HuggingFace | robotics |
+| Pipeline en Hugging Face | robotics |
 | Dataset de entrenamiento | lerobot/svla_so101_pickplace (50 episodios, 11.939 fotogramas, 30 FPS) |
 | Tamaño del repositorio | 1,2 GB |
 | Descargas / likes | 0 / 0 |
@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| cdstubbs/my_smolvlarun3 | 450 M | No disponible | Apache 2.0 | HuggingFace, 0 descargas | No |
-| lerobot/smolvla_base | No disponible (mismo método y familia) | No disponible | No disponible en la información proporcionada | HuggingFace | No disponible |
-| Otras políticas del ecosistema LeRobot (por ejemplo, ACT) | No disponible | No disponible | No disponible | HuggingFace | No disponible |
+| cdstubbs/my_smolvlarun3 | 450 M | No disponible | Apache 2.0 | Hugging Face, 0 descargas | No |
+| lerobot/smolvla_base | No disponible (mismo método y familia) | No disponible | No disponible en la información proporcionada | Hugging Face | No disponible |
+| Otras políticas del ecosistema LeRobot (por ejemplo, ACT) | No disponible | No disponible | No disponible | Hugging Face | No disponible |
 
 No se dispone de datos verificables sobre alternativas comparables en la información proporcionada, por lo que no se incluyen cifras de rendimiento ni de contexto que no puedan contrastarse.
 
@@ -103,7 +103,7 @@ No se dispone de datos verificables sobre alternativas comparables en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cdstubbs/my_smolvlarun3
+- Modelo en Hugging Face: https://huggingface.co/cdstubbs/my_smolvlarun3
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/svla_so101_pickplace
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=lerobot/svla_so101_pickplace

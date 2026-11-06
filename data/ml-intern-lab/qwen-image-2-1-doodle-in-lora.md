@@ -78,9 +78,9 @@ La comparativa se plantea frente al modelo base y frente a adaptadores que opera
 
 | Modelo | Funcion | Marcador | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-doodle-in-LoRA | Inserta un objeto en el lugar de un garabato | Magenta RGB (255, 0, 255) | 40 (6 con turbo apilado) | qwen-research | HuggingFace, diffusers y ComfyUI |
-| Qwen/Qwen-Image-2.1 (modelo base) | Generacion y edicion sin adaptador | No aplica | 40 en la evaluacion del autor | qwen-research | HuggingFace |
-| LoRA turbo de Viggle (Qwen-Image-2.1-viggle-turbo) | Aceleracion de la inferencia del modelo base | No aplica | 6 | no disponible en la informacion proporcionada | HuggingFace |
+| Qwen-Image-2.1-doodle-in-LoRA | Inserta un objeto en el lugar de un garabato | Magenta RGB (255, 0, 255) | 40 (6 con turbo apilado) | qwen-research | Hugging Face, diffusers y ComfyUI |
+| Qwen/Qwen-Image-2.1 (modelo base) | Generacion y edicion sin adaptador | No aplica | 40 en la evaluacion del autor | qwen-research | Hugging Face |
+| LoRA turbo de Viggle (Qwen-Image-2.1-viggle-turbo) | Aceleracion de la inferencia del modelo base | No aplica | 6 | no disponible en la informacion proporcionada | Hugging Face |
 | LoRA de eliminacion de objetos (familia citada en la model card) | Retira objetos de una imagen | Rojo RGB (239, 68, 68) | no disponible | no disponible | no disponible |
 
 Parámetros totales, longitud de contexto y cifras de rendimiento comparadas: no disponibles en la informacion proporcionada.
@@ -100,7 +100,7 @@ Parámetros totales, longitud de contexto y cifras de rendimiento comparadas: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-doodle-in-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/Qwen-Image-2.1-doodle-in-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de entrenamiento: https://huggingface.co/datasets/ML-Intern-lab/doodle-in-pairs
 - Script de generacion de garabatos: https://huggingface.co/datasets/ML-Intern-lab/doodle-in-pairs/blob/main/build_scripts/scribble.py

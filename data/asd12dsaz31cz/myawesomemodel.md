@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD12DSAZ31CZ bajo licencia MIT. Segun los metadatos del repositorio, se distribuye con la libreria transformers y esta etiquetado como un modelo basado en arquitectura BERT orientado a la tarea de feature-extraction (extraccion de representaciones). El repositorio tiene un tamano de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente y sin traccion en la comunidad.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD12DSAZ31CZ bajo licencia MIT. Segun los metadatos del repositorio, se distribuye con la libreria transformers y esta etiquetado como un modelo basado en arquitectura BERT orientado a la tarea de feature-extraction (extraccion de representaciones). El repositorio tiene un tamano de 0.0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que se trata de una publicacion reciente y sin traccion en la comunidad.
 
 La model card incluye una tabla de resultados de evaluacion correspondiente al checkpoint `step_1000`, que el autor identifica como el de mayor `eval_accuracy` (0.828). Los valores reportados cubren quince categorias de tareas (razonamiento matematico, razonamiento logico, sentido comun, comprension lectora, etc.), pero no se especifica que benchmarks concretos, datasets o metodologia se han empleado para obtenerlos, ni se aporta informacion sobre el tamano del modelo, el numero de parametros o la longitud de contexto.
 
@@ -101,4 +101,4 @@ No disponible. La informacion proporcionada no incluye el tamano del modelo ni d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel
+- Hugging Face: https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel

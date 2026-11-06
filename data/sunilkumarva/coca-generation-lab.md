@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`coca-generation-lab` es un repositorio de HuggingFace publicado por el usuario `sunilkumarva` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas de generación. No es un modelo preentrenado ni ajustado: el propio autor lo describe como una configuración *tiny* pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida, no como un modelo entrenado con resultados de referencia.
+`coca-generation-lab` es un repositorio de Hugging Face publicado por el usuario `sunilkumarva` que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada Coca, orientada a tareas de generación. No es un modelo preentrenado ni ajustado: el propio autor lo describe como una configuración *tiny* pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (`model.safetensors`) se presenta explícitamente como una inicialización válida, no como un modelo entrenado con resultados de referencia.
 
 El modelo es extremadamente pequeño, con solo 49.600 parámetros totales, lo que lo sitúa muy por debajo de cualquier modelo de lenguaje utilizable en producción. La model card no reclama ninguna puntuación de benchmark y advierte de que los resultados de un futuro checkpoint entrenado deberían documentarse por separado de los valores por defecto aquí publicados.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| coca-generation-lab | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace |
-| martinvalentin/coca-generation-2024 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| coca-generation-lab | 49.600 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face |
+| martinvalentin/coca-generation-2024 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado modelos comparables con especificaciones verificables dentro de la información disponible. La búsqueda devolvió otro repositorio de nombre similar (`martinvalentin/coca-generation-2024`) del que no se pudieron confirmar parámetros, contexto ni rendimiento.
@@ -88,7 +88,7 @@ No se han identificado modelos comparables con especificaciones verificables den
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunilkumarva/coca-generation-lab
+- Modelo en Hugging Face: https://huggingface.co/sunilkumarva/coca-generation-lab
 - Otros modelos del autor: https://huggingface.co/sunilkumarva/models
 - Repositorio de nombre similar encontrado en la búsqueda: https://huggingface.co/martinvalentin/coca-generation-2024
 - Paper, blog o repositorio oficial de la arquitectura Coca: no disponible en la información proporcionada.

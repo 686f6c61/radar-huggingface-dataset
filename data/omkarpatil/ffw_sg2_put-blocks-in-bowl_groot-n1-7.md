@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Aunqu
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omkarpatil/ffw_sg2_put-blocks-in-bowl_groot-n1.7 (este) | 3,14 B | no disponible | Pick-and-place de bloques en cuenco (FFW-SG2) | other | HuggingFace |
-| nvidia/GR00T-N1.7-3B (base) | 3,14 B | no disponible | Manipulacion generalista cross-embodiment | other (NVIDIA) | HuggingFace |
-| OpenVLA (referencia de VLA open source) | 7 B | 2048 tokens | Manipulacion generalista | MIT | HuggingFace |
+| omkarpatil/ffw_sg2_put-blocks-in-bowl_groot-n1.7 (este) | 3,14 B | no disponible | Pick-and-place de bloques en cuenco (FFW-SG2) | other | Hugging Face |
+| nvidia/GR00T-N1.7-3B (base) | 3,14 B | no disponible | Manipulacion generalista cross-embodiment | other (NVIDIA) | Hugging Face |
+| OpenVLA (referencia de VLA open source) | 7 B | 2048 tokens | Manipulacion generalista | MIT | Hugging Face |
 
 La comparativa se limita al modelo base, ya que no hay otros fine-tunings públicos de GR00T para el FFW-SG2. El modelo base ofrece capacidades generalistas pero requiere adaptación por embodiment; este fine-tuning sacrifica generalidad por precisión en una tarea concreta. OpenVLA es una alternativa open source de mayor tamaño, pero no tiene soporte nativo para el FFW-SG2.
 

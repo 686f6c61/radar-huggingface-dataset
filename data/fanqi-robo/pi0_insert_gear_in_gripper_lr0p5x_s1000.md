@@ -97,8 +97,8 @@ Otras cifras declaradas: pérdida de validación 0,216177 en la actualización f
 
 | Modelo | Parámetros | Contexto | Tarea objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fanqi-robo/pi0_insert_gear_in_gripper_lr0p5x_s1000` (este) | 4.028.019.472 | no disponible | `insert_gear_in_gripper`, YAM bimanual, 14-D | Gemma Terms of Use | HuggingFace, 11 descargas, 0 *likes* |
-| `lerobot/pi0_base` | mismo recuento (4.028.019.472), ya que el ajuste entrena todos los parámetros | no disponible | VLA preentrenado generalista (PaliGemma + *action expert*) | Gemma Terms of Use | HuggingFace |
+| `fanqi-robo/pi0_insert_gear_in_gripper_lr0p5x_s1000` (este) | 4.028.019.472 | no disponible | `insert_gear_in_gripper`, YAM bimanual, 14-D | Gemma Terms of Use | Hugging Face, 11 descargas, 0 *likes* |
+| `lerobot/pi0_base` | mismo recuento (4.028.019.472), ya que el ajuste entrena todos los parámetros | no disponible | VLA preentrenado generalista (PaliGemma + *action expert*) | Gemma Terms of Use | Hugging Face |
 | Otros VLA del ecosistema LeRobot (SmolVLA, pi0-FAST) o alternativas como GR00T N1 | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas no es posible con los datos disponibles: el autor advierte además que la pérdida de validación no es comparable entre políticas distintas, y el único punto de referencia numérico del repositorio es el *baseline* `hold` (mantener la pose actual), con MAE@30 = 2,60 frente a 1,68 del modelo final.
@@ -118,7 +118,7 @@ La comparación cuantitativa con alternativas no es posible con los datos dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr0p5x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr0p5x_s1000
 - Ejecución de W&B: https://wandb.ai/fanqi-robo-saferobotics/insert_gear_in_gripper_benchmark/runs/k5n551wd
 - Dataset de entrenamiento: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Dataset de validación: https://huggingface.co/datasets/villekuosmanen/insert_gear_in_gripper_val

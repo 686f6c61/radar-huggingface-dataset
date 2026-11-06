@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`multitask-baseline` es un prototipo de investigación de arquitectura **Mixer** (MLP-Mixer) orientado a tareas multitarea, publicado por el usuario Ortizemma58 en HuggingFace. Se trata de un modelo extremadamente pequeño, con solo 33.088 parámetros, que no ha sido entrenado: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con rendimiento verificado. El repositorio documenta los formatos de configuración y el punto de entrada de entrenamiento (`train.py`), así como los argumentos por defecto del experimento (`training_args.json`).
+`multitask-baseline` es un prototipo de investigación de arquitectura **Mixer** (MLP-Mixer) orientado a tareas multitarea, publicado por el usuario Ortizemma58 en Hugging Face. Se trata de un modelo extremadamente pequeño, con solo 33.088 parámetros, que no ha sido entrenado: el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo, no un modelo con rendimiento verificado. El repositorio documenta los formatos de configuración y el punto de entrada de entrenamiento (`train.py`), así como los argumentos por defecto del experimento (`training_args.json`).
 
 La relevancia de este repositorio es principalmente metodológica: sirve como plantilla para quienes quieran construir y evaluar modelos multitarea con arquitectura Mixer, estableciendo un flujo de trabajo reproducible (configuración, entrenamiento, evaluación con semillas múltiples y comparación con líneas base de capacidad equivalente). No se presentan resultados de benchmarks ni se reclama ninguna capacidad funcional, por lo que debe tratarse como un punto de partida experimental, no como un modelo listo para producción.
 
@@ -43,7 +43,7 @@ El repositorio incluye un script de entrenamiento (`train.py`) con una receta po
 - **Desarrollo de adaptadores personalizados**: la model card indica que se requiere un adaptador explícito para cargar el modelo con APIs genéricas; esto es útil para probar mecanismos de serialización y compatibilidad.
 - **Experimentos de entrenamiento desde cero**: el script `train.py` y la configuración incluida permiten lanzar entrenamientos de prueba con datasets propios, ajustando hiperparámetros y observando la convergencia.
 - **Validación de metodologías de evaluación**: el repositorio propone un protocolo de evaluación (tres semillas, métricas específicas de tarea, comparación con baseline de capacidad equivalente) que puede aplicarse a otros modelos experimentales.
-- **Educación y aprendizaje**: útil para estudiantes que quieran entender el funcionamiento interno de un MLP-Mixer y cómo se estructura un proyecto de investigación reproducible en HuggingFace.
+- **Educación y aprendizaje**: útil para estudiantes que quieran entender el funcionamiento interno de un MLP-Mixer y cómo se estructura un proyecto de investigación reproducible en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Ortizemma58/multitask-baseline](https://huggingface.co/Ortizemma58/multitask-baseline)
+- [Hugging Face - Ortizemma58/multitask-baseline](https://huggingface.co/Ortizemma58/multitask-baseline)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

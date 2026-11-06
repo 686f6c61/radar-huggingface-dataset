@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vaultai/gpt-oss-20b-MXFP4-Q8 | ~20,9 B (MoE) | 128k (modelo base) | MXFP4 + Q8 | Apache 2.0 | HuggingFace, formato MLX |
-| mlx-community/gpt-oss-20b-MXFP4-Q8 | ~20,9 B (MoE) | 128k (modelo base) | MXFP4 + Q8 | Apache 2.0 | HuggingFace, formato MLX |
-| openai/gpt-oss-20b | ~20,9 B (MoE) | 128k | MXFP4 nativo | Apache 2.0 | HuggingFace, pesos originales |
-| openai/gpt-oss-120b | ~117 B (MoE) | 128k | MXFP4 nativo | Apache 2.0 | HuggingFace, modelo superior de la familia |
+| vaultai/gpt-oss-20b-MXFP4-Q8 | ~20,9 B (MoE) | 128k (modelo base) | MXFP4 + Q8 | Apache 2.0 | Hugging Face, formato MLX |
+| mlx-community/gpt-oss-20b-MXFP4-Q8 | ~20,9 B (MoE) | 128k (modelo base) | MXFP4 + Q8 | Apache 2.0 | Hugging Face, formato MLX |
+| openai/gpt-oss-20b | ~20,9 B (MoE) | 128k | MXFP4 nativo | Apache 2.0 | Hugging Face, pesos originales |
+| openai/gpt-oss-120b | ~117 B (MoE) | 128k | MXFP4 nativo | Apache 2.0 | Hugging Face, modelo superior de la familia |
 
 La diferencia practica entre el repositorio de vaultai y el de mlx-community es la procedencia: la model card de vaultai reproduce literalmente la de mlx-community, por lo que todo apunta a una redistribucion de los mismos pesos. Frente a los pesos originales en safetensors, esta version esta optimizada para MLX, mientras que para GPUs conviene usar el modelo base o una variante GGUF.
 
@@ -80,7 +80,7 @@ La diferencia practica entre el repositorio de vaultai y el de mlx-community es 
 - Estado del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin senales de mantenimiento ni de comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/vaultai/gpt-oss-20b-MXFP4-Q8
+- Modelo en Hugging Face: https://huggingface.co/vaultai/gpt-oss-20b-MXFP4-Q8
 - Conversion original de mlx-community: https://huggingface.co/mlx-community/gpt-oss-20b-MXFP4-Q8
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Libreria mlx-lm (referenciada en la model card): https://pypi.org/project/mlx-lm/

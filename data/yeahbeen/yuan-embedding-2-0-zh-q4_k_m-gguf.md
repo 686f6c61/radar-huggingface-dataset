@@ -72,5 +72,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace: yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF](https://huggingface.co/yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF)
+- [Modelo en Hugging Face: yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF](https://huggingface.co/yeahbeen/Yuan-embedding-2.0-zh-Q4_K_M-GGUF)
 - [Modelo base: IEITYuan/Yuan-embedding-2.0-zh](https://huggingface.co/IEITYuan/Yuan-embedding-2.0-zh)

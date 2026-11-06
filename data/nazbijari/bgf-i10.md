@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BioGeoFormer 10% es un modelo de clasificación de texto publicado en HuggingFace por el usuario nazbijari. Su identidad sugiere que se trata de una variante reducida al 10% de un sistema más amplio denominado BioGeoFormer, probablemente orientado a dominios biológicos y geográficos, aunque la información disponible no especifica el conjunto de datos de entrenamiento ni las tareas concretas. El modelo cuenta con 74.814.762 parámetros en formato safetensors y está integrado en la librería transformers, según la ficha del repositorio.
+BioGeoFormer 10% es un modelo de clasificación de texto publicado en Hugging Face por el usuario nazbijari. Su identidad sugiere que se trata de una variante reducida al 10% de un sistema más amplio denominado BioGeoFormer, probablemente orientado a dominios biológicos y geográficos, aunque la información disponible no especifica el conjunto de datos de entrenamiento ni las tareas concretas. El modelo cuenta con 74.814.762 parámetros en formato safetensors y está integrado en la librería transformers, según la ficha del repositorio.
 
 La documentación pública es muy limitada: la model card solo contiene una frase y un enlace a un artículo de bioRxiv. No se indican tamaño de contexto, licencia, idiomas ni resultados de evaluaciones. La relevancia actual del modelo queda condicionada a la existencia de un artículo científico que aún no ha sido consultado en detalle, por lo que cualquier uso productivo requiere una verificación previa de su comportamiento y de las restricciones legales.
 
@@ -25,7 +25,7 @@ La model card no proporciona detalles sobre la arquitectura, el proceso de entre
 
 ## Capacidades
 
-- Clasificación de texto: según el pipeline registrado en HuggingFace, el modelo está diseñado para tareas de clasificación de texto.
+- Clasificación de texto: según el pipeline registrado en Hugging Face, el modelo está diseñado para tareas de clasificación de texto.
 - No se ha confirmado soporte para generación de lenguaje, tool calling, agentes o razonamiento multi-paso.
 - No se dispone de información sobre capacidades multilingües, visión o audio.
 - El uso de `custom_code` implica que la carga del modelo requiere un script personalizado, lo que puede afectar a la portabilidad.
@@ -68,5 +68,5 @@ No disponible. La informacion no permite establecer comparativas con modelos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nazbijari/bgf-i10
+- Repositorio en Hugging Face: https://huggingface.co/nazbijari/bgf-i10
 - Articulo en bioRxiv (referenciado en la model card): https://www.biorxiv.org/content/10.64898/2025.12.17.695047v1

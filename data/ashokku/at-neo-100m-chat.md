@@ -81,6 +81,6 @@ AT-Neo-100M-Chat es notablemente mas pequeno y con mucho menos preentrenamiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashokku/at-neo-100m-chat
+- Modelo en Hugging Face: https://huggingface.co/ashokku/at-neo-100m-chat
 - Dataset de preentrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset de fine-tuning (smol-smoltalk): https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk

@@ -18,7 +18,7 @@ La información disponible es muy limitada: la model card se reduce a una declar
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | NVFP4 (4 bits, coma flotante, método nvfp4); empaquetado GGUF |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace; enlace a la licencia del modelo base) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face; enlace a la licencia del modelo base) |
 | Formato de pesos | GGUF (cuantización NVFP4); el modelo base se distribuye en safetensors |
 | Tamaño del repositorio | 1,4 GB |
 | Librería declarada | transformers |
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zefie/LFM-1.3B-GGUF-NVFP4 | 1,7B | no disponible | GGUF NVFP4 | lfm1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B | 1,7B | no disponible | safetensors | lfm1.0 | HuggingFace (modelo base) |
+| zefie/LFM-1.3B-GGUF-NVFP4 | 1,7B | no disponible | GGUF NVFP4 | lfm1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B | 1,7B | no disponible | safetensors | lfm1.0 | Hugging Face (modelo base) |
 | Otras cuantizaciones GGUF de LFM3-1.7B | 1,7B | no disponible | GGUF (Q4, Q5, etc.) | lfm1.0 | no disponible en la información proporcionada |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación de rendimiento con alternativas de la misma categoría.
@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 - El repositorio no registra descargas ni interacciones, por lo que no existe validación comunitaria de su funcionamiento.
 - La model card es mínima y no documenta el proceso de cuantización, la calibración ni las capas tratadas.
 - El nombre del repositorio ("1.3B") no coincide con el recuento real de parámetros (1,7B), lo que puede inducir a error en la planificación de recursos.
-- Licencia lfm1.0: es necesario revisar los términos del modelo base antes de cualquier uso comercial; la etiqueta "other" en HuggingFace no aclara por sí sola las restricciones.
+- Licencia lfm1.0: es necesario revisar los términos del modelo base antes de cualquier uso comercial; la etiqueta "other" en Hugging Face no aclara por sí sola las restricciones.
 - No se especifican idiomas soportados; el rendimiento en castellano es desconocido.
 - No se documenta la longitud de contexto efectiva tras la cuantización.
 - El soporte de NVFP4 depende del hardware y del runtime; en entornos sin soporte nativo el modelo puede no cargar o degradarse.
@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zefie/LFM-1.3B-GGUF-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/zefie/LFM-1.3B-GGUF-NVFP4
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

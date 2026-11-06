@@ -91,7 +91,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/SectileLabs/qwen36_35b_a3b_smol
+- Paquete en Hugging Face: https://huggingface.co/SectileLabs/qwen36_35b_a3b_smol
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Articulo sobre el modelo y su coste agentico: https://codex.danielvaughan.com/2026/04/16/qwen36-35b-a3b-local-agentic-coding-breakthrough/
 - Guia completa del modelo base: https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/

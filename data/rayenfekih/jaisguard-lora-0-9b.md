@@ -95,7 +95,7 @@ No se conocen otros clasificadores comparables publicados específicamente para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RayenFekih/JaisGuard-LoRA-0.9B
+- Modelo en Hugging Face: https://huggingface.co/RayenFekih/JaisGuard-LoRA-0.9B
 - Modelo base: https://huggingface.co/IFM/Jais-3-0.9B (redirigido a https://huggingface.co/inception42/Jais-3-0.9B)
 - Dataset derivado: https://huggingface.co/datasets/RayenFekih/arabic-gibberish-detection
 - Paper, blog o demo: no disponible

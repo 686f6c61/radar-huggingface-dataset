@@ -72,7 +72,7 @@ No se dispone en la información proporcionada de datos de modelos comparables (
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GeoUG-Depth | no disponible | no disponible | other (mixta, CC BY-NC parcial) | HuggingFace |
+| GeoUG-Depth | no disponible | no disponible | other (mixta, CC BY-NC parcial) | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos de modelos comparables (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rayruiyang/GeoUG-Depth
+- Hugging Face: https://huggingface.co/rayruiyang/GeoUG-Depth
 - Página del proyecto: https://yangr116.github.io/geoug-project-page/
 - Paper: https://yangr116.github.io/geoug-project-page/assets/geoug-paper.pdf
 - GeoUG-Spatial: https://huggingface.co/rayruiyang/GeoUG-Spatial

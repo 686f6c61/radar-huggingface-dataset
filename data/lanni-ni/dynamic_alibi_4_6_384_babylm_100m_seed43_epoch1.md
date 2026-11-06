@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch1` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario `Lanni-ni`. Se trata de un modelo experimental, probablemente relacionado con el desafio BabyLM, que explora la variante *dynamic ALiBi* de la atencion con sesgos lineales. El nombre del modelo sugiere una arquitectura con 4 capas, 6 cabezas de atencion, una dimension de modelo de 384 y alrededor de 45,7 millones de parametros, aunque estos detalles no estan confirmados en la documentacion.
+El modelo `Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch1` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario `Lanni-ni`. Se trata de un modelo experimental, probablemente relacionado con el desafio BabyLM, que explora la variante *dynamic ALiBi* de la atencion con sesgos lineales. El nombre del modelo sugiere una arquitectura con 4 capas, 6 cabezas de atencion, una dimension de modelo de 384 y alrededor de 45,7 millones de parametros, aunque estos detalles no estan confirmados en la documentacion.
 
 El modelo cuenta con 45.694.080 parametros totales segun los metadatos de los pesos, y se distribuye en formato `safetensors`. No se ha publicado informacion sobre la licencia, los idiomas soportados ni los datos de entrenamiento. El tag `arxiv:1910.09700` enlaza con el paper *Train Short, Test Long: Attention with Linear Biases Enables Input Length Extrapolation*, que introduce ALiBi, lo que indica que el modelo utiliza una variante de este mecanismo de atencion.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con 45,7 millones de parametros, el modelo requiere aproximadamente 183 MB en precision fp32, y unos 91 MB en fp16 o bf16. En cuantizaciones mas agresivas (8 bits o 4 bits) cabria en menos de 50 MB. Estas cifras son estimaciones teoricas basadas en el tamaño de los pesos, no en mediciones reales.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente, incluyendo tarjetas de consumo como RTX 3050, RTX 4060 o inferiores. Tambien puede ejecutarse en CPU, aunque la velocidad seria baja.
 - Compatibilidad con GPU de consumo: si, el modelo es muy pequeño y cabe en cualquier GPU consumer moderna.
-- Opciones de despliegue: al ser un modelo de `transformers` con `custom_code`, el despliegue nativo seria mediante la libreria `transformers` de HuggingFace. No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: al ser un modelo de `transformers` con `custom_code`, el despliegue nativo seria mediante la libreria `transformers` de Hugging Face. No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de rendimiento.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han publicado modelos comparables con datos de rendimiento en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch1
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch1
 - Paper de ALiBi (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Checkpoint de la epoca 4: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch4
 - Checkpoint de la epoca 6: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6

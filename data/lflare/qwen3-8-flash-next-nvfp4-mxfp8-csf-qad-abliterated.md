@@ -18,7 +18,7 @@ El coste de esa segunda restricción se paga en error de pesos (5,618 % de ‖W�
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4 (E2M1 de 4 bits con escalas de bloque FP8 cada 16 elementos y escala global FP32) y MXFP8 (E4M3 de 8 bits con escalas de bloque potencia de dos cada 32 elementos); tensores residuales en BF16; escalas de los expertos enrutados codificadas en CSF |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (contenedor NVIDIA ModelOpt de precisión mixta con codificación CSF de escalas) |
 | Tamano del repositorio | 278,1 GB (incluye artefactos de medición y la revisión `v1` etiquetada) |
 | Revisiones | `main` = v2 (rango 2, capa 42); tag `v1` (rango 1, capa 46) |
@@ -98,7 +98,7 @@ En GPQA, 13 ítems se aciertan solo con el padre y 15 solo con este modelo. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
+- Modelo en Hugging Face: https://huggingface.co/lflare/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated
 - Modelo base cuantizado: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repo con card y artefactos de medición equivalentes: https://huggingface.co/huginnfork/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD-Abliterated

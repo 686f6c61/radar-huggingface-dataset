@@ -113,9 +113,9 @@ No se dispone de datos publicados que permitan comparar este adaptador con otros
 
 ## Enlaces
 
-- HuggingFace (adaptador): https://huggingface.co/flaukowski/kannaka-brain-v3-lora
-- HuggingFace (adaptador v2): https://huggingface.co/flaukowski/kannaka-brain-v2-lora
-- HuggingFace (GGUF, citado en la ficha): https://huggingface.co/flaukowski/kannaka-brain-v3-GGUF
+- Hugging Face (adaptador): https://huggingface.co/flaukowski/kannaka-brain-v3-lora
+- Hugging Face (adaptador v2): https://huggingface.co/flaukowski/kannaka-brain-v2-lora
+- Hugging Face (GGUF, citado en la ficha): https://huggingface.co/flaukowski/kannaka-brain-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Repositorio de diseno y memoria: https://github.com/kannaka-labs/kannaka-memory (ADR-0057, ADR-0020)
 - Biblioteca del proyecto Kannaka: https://kannaka-labs.github.io/kannaka-library/

@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Tipo | Factor de escalado | Parametros | Entorno de ejecucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `333i/4xNomos2_hq_dat2-coreml-ios` | Superresolucion (conversion CoreML) | 4x | No disponible | Core ML / iOS | `cc-by-4.0` segun tag; campo de licencia no disponible | Publicado en HuggingFace, 0 descargas |
-| `Phips/4xNomos2_hq_dat2` (modelo base) | Superresolucion | 4x | No disponible | Pesos originales (PyTorch u otro) | No disponible | Publicado en HuggingFace; es el origen declarado de esta conversion |
+| `333i/4xNomos2_hq_dat2-coreml-ios` | Superresolucion (conversion CoreML) | 4x | No disponible | Core ML / iOS | `cc-by-4.0` segun tag; campo de licencia no disponible | Publicado en Hugging Face, 0 descargas |
+| `Phips/4xNomos2_hq_dat2` (modelo base) | Superresolucion | 4x | No disponible | Pesos originales (PyTorch u otro) | No disponible | Publicado en Hugging Face; es el origen declarado de esta conversion |
 | Otras alternativas de superresolucion 4x (por ejemplo, la familia Real-ESRGAN o SwinIR) | Superresolucion | 4x | No contrastado en la informacion disponible | PyTorch, ONNX, NCNN, CoreML segun la variante | No contrastado | Ampliamente distribuidas en repositorios publicos |
 
 No se dispone de datos verificables de rendimiento, parametros ni licencia de las alternativas citadas dentro de la informacion proporcionada, por lo que la comparacion se limita a categoria, factor de escalado y entorno de ejecucion.
@@ -95,6 +95,6 @@ No se dispone de datos verificables de rendimiento, parametros ni licencia de la
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/333i/4xNomos2_hq_dat2-coreml-ios
+- Ficha en Hugging Face: https://huggingface.co/333i/4xNomos2_hq_dat2-coreml-ios
 - Modelo base declarado: https://huggingface.co/Phips/4xNomos2_hq_dat2
 - Resultados de busqueda web: las consultas realizadas no devolvieron informacion relevante sobre el modelo. Los unicos resultados obtenidos corresponden a paginas de estado de incidencias del operador frances Free (test.fr, touslesforfaits.fr, downdetector.fr, selectra.info) y no guardan relacion con el modelo analizado. No se han localizado papers, blogs, repositorios ni demos asociados a esta publicacion.

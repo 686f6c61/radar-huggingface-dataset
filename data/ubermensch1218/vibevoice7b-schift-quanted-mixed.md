@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos de la misma categoría (cuanti
 
 ## Enlaces
 
-- HuggingFace del artefacto: https://huggingface.co/ubermensch1218/vibevoice7b-schift-quanted-mixed
-- Modelo base en HuggingFace: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
+- Hugging Face del artefacto: https://huggingface.co/ubermensch1218/vibevoice7b-schift-quanted-mixed
+- Modelo base en Hugging Face: https://huggingface.co/microsoft/VibeVoice-ASR-Streaming-7B
 - Repositorio oficial de VibeVoice en GitHub: https://github.com/microsoft/VibeVoice
 - Archivo comunitario del repositorio de VibeVoice: https://github.com/shijincai/VibeVoice

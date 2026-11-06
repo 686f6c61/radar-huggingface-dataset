@@ -99,11 +99,11 @@ La informacion proporcionada no incluye datos de rendimiento ni especificaciones
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/trl-lib/LFM2.5-8B-A1B-GRPO-HotpotQA
+- Pagina de Hugging Face del modelo: https://huggingface.co/trl-lib/LFM2.5-8B-A1B-GRPO-HotpotQA
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Scripts del agente de investigacion (entrenamiento y evaluacion): https://github.com/huggingface/trl/tree/main/examples/lfm2_5_moe_research_agent
 - Dataset HotpotQA: https://huggingface.co/datasets/hotpotqa/hotpot_qa
 - Grafico de recompensa del entrenamiento GRPO: https://huggingface.co/datasets/trl-lib/documentation-images/resolve/main/lfm2_5_moe_grpo_reward.png
 
-Nota sobre la busqueda web: los resultados recuperados corresponden a la escala Technology Readiness Level (TRL) de la NASA y no guardan relacion con este modelo ni con la libreria TRL de HuggingFace. No se ha encontrado informacion adicional relevante en la busqueda.
+Nota sobre la busqueda web: los resultados recuperados corresponden a la escala Technology Readiness Level (TRL) de la NASA y no guardan relacion con este modelo ni con la libreria TRL de Hugging Face. No se ha encontrado informacion adicional relevante en la busqueda.

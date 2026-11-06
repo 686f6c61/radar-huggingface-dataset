@@ -23,8 +23,8 @@ La relevancia del lanzamiento es, por tanto, metodológica más que de rendimien
 | Libreria | transformers |
 | Tarea declarada | text-classification |
 | Tamano del repositorio | 0,8 GB |
-| Fecha de creacion | 2026-09-21T17:45:52.000Z (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-21T18:33:57.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21T17:45:52.000Z (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-21T18:33:57.000Z (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -82,14 +82,14 @@ Nota del autor incluida en la model card: la comparacion no es directa con las c
 - El tamano del repositorio (0,8 GB) es coherente con pesos en precision de 16 bits, no con FP32.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede alojar el modelo en FP16 (por ejemplo, GTX 1650, RTX 3050, T4); tarjetas como RTX 3060, RTX 4070 o RTX 4090 lo ejecutan con margen amplio para lotes grandes. Aceleradores de centro de datos (A100, H100) no son necesarios y resultarian sobredimensionados para 421M de parametros.
 - Cabe en GPU de consumo: si, con holgura. Tambien es viable la inferencia en CPU, dado el reducido numero de parametros y la latencia objetivo de decenas de milisegundos, aunque no se publican cifras de latencia en CPU.
-- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. No se documenta soporte de vLLM, llama.cpp, Ollama, TGI ni formatos GGUF, por lo que esas opciones quedan como no disponibles.
+- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. No se documenta soporte de vLLM, llama.cpp, Ollama, TGI ni formatos GGUF, por lo que esas opciones quedan como no disponibles.
 - Latencia y throughput: la model card reporta 76,8 ms de mediana por caso en autoalojamiento, frente a 710 ms de TypeSafe Jev 1.13.0 y 349 ms de ModernBERT-base. No se publican cifras de throughput ni de latencia por lote.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tipo | Accuracy | Brier score | ECE | Latencia p50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| Laya (fine-tuned on Typed-Decisions) | 421.293.830 | ajuste fino especifico | 0,460 | 0,184 | 0,124 | 76,8 ms | apache-2.0 | HuggingFace, safetensors, `transformers` |
+| Laya (fine-tuned on Typed-Decisions) | 421.293.830 | ajuste fino especifico | 0,460 | 0,184 | 0,124 | 76,8 ms | apache-2.0 | Hugging Face, safetensors, `transformers` |
 | TypeSafe Jev 1.13.0 | no disponible | sistema general | 0,727 | 0,148 | 0,144 | 710 ms | no disponible | acceso via API (0,0004 $ por caso) |
 | ModernBERT-base | 149.000.000 | especialista | 0,646 | 0,119 | 0,179 | 349 ms | no disponible | no disponible en la informacion proporcionada |
 | Teacher Self-Agreement | no disponible | techo de referencia | 0,735 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -112,7 +112,7 @@ Los unicos datos comparativos disponibles proceden de la propia model card. No s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cruzex/laya-typed-decisions-smoketest
+- Modelo en Hugging Face: https://huggingface.co/Cruzex/laya-typed-decisions-smoketest
 - Pagina del desarrollador citado en la model card: https://huggingface.co/convaiinnovations
 - Referencia de carga alternativa indicada en la model card: `convaiinnovations/laya-typed-decisions`
 - Paquete de Python mencionado en la model card: `pip install laya` (no se proporciona URL de repositorio ni de PyPI en la informacion disponible)

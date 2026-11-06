@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NOAHROBERTS/perceiver-experiment` es un repositorio de HuggingFace que contiene una implementacion propia y minima de un Perceiver, empaquetada junto con un checkpoint de inicializacion para pruebas de humo. No se trata de un modelo entrenado ni publicado con resultados: la propia model card indica explicitamente que el checkpoint `model.safetensors` es valido para *smoke tests* y "no se presenta como un checkpoint entrenado con benchmarks". El autor es el usuario NOAHROBERTS y la licencia declarada es MIT.
+`NOAHROBERTS/perceiver-experiment` es un repositorio de Hugging Face que contiene una implementacion propia y minima de un Perceiver, empaquetada junto con un checkpoint de inicializacion para pruebas de humo. No se trata de un modelo entrenado ni publicado con resultados: la propia model card indica explicitamente que el checkpoint `model.safetensors` es valido para *smoke tests* y "no se presenta como un checkpoint entrenado con benchmarks". El autor es el usuario NOAHROBERTS y la licencia declarada es MIT.
 
 El interes del repositorio es, por tanto, como andamiaje reproducible: incluye `run.py` con el modelo y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador Lion con schedule exponencial). La escala declarada es *tiny* y el peso safetensors publicado contiene 33 088 parametros, un orden de magnitud propio de una prueba de integracion, no de un modelo utilizable en tareas reales.
 
@@ -77,7 +77,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NOAHROBERTS/perceiver-experiment | Perceiver (tiny, sliding window, concat mlp) | 33 088 | no disponible | Sin benchmarks publicados | MIT | HuggingFace, 0 descargas |
+| NOAHROBERTS/perceiver-experiment | Perceiver (tiny, sliding window, concat mlp) | 33 088 | no disponible | Sin benchmarks publicados | MIT | Hugging Face, 0 descargas |
 | Perceiver (DeepMind, 2021) | Perceiver | no disponible en la informacion proporcionada | no disponible | Resultados publicados en el paper original | no disponible en la informacion proporcionada | Paper y codigo de referencia |
 | Perceiver IO (DeepMind, 2022) | Perceiver con decodificador flexible | no disponible en la informacion proporcionada | no disponible | Resultados publicados en el paper original | no disponible en la informacion proporcionada | Paper y codigo de referencia |
 
@@ -96,7 +96,7 @@ La comparacion relevante no es de rendimiento sino de proposito: los Perceiver o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NOAHROBERTS/perceiver-experiment
+- Repositorio en Hugging Face: https://huggingface.co/NOAHROBERTS/perceiver-experiment
 - Paper original de Perceiver (DeepMind, 2021): https://arxiv.org/abs/2103.03206
 - Paper original de Perceiver IO (DeepMind, 2022): https://arxiv.org/abs/2107.14795
 - Busqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron unicamente contenido no relacionado con el repositorio.

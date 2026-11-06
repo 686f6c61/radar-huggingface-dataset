@@ -78,7 +78,7 @@ No se han encontrado modelos directamente comparables, ya que se trata de un mec
 
 ## Enlaces
 
-- [HuggingFace - baudcoin/proof-of-cognition](https://huggingface.co/baudcoin/proof-of-cognition)
+- [Hugging Face - baudcoin/proof-of-cognition](https://huggingface.co/baudcoin/proof-of-cognition)
 - [Sitio web de BaudCoin](https://baud.money)
 - [Documentación de BaudCoin](https://baud.money/docs/)
 - [Dataset baudcoin/baud-reasoning-traces](https://huggingface.co/baudcoin/baud-reasoning-traces)

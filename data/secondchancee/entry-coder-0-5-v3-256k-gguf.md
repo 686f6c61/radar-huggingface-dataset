@@ -89,7 +89,7 @@ La comparacion de rendimiento entre estos modelos no puede establecerse con la i
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k-GGUF
 - Modelo base: https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k
 - Descarga directa Q8_0 (524 MB): https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k-GGUF/resolve/main/entry-coder-0.5-v3-256k-Q8_0.gguf
 - Descarga directa Q4_K_M (325 MB): https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k-GGUF/resolve/main/entry-coder-0.5-v3-256k-Q4_K_M.gguf

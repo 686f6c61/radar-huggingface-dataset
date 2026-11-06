@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoxCPM2 es un modelo de síntesis de voz (text-to-speech) desarrollado por OpenBMB, distribuido en HuggingFace bajo el espacio ArchiveStudio. Se trata de un modelo de 2.290.004.544 parámetros (aproximadamente 2B) construido sobre el backbone MiniCPM-4, con una arquitectura de difusión autorregresiva sin tokenizador (tokenizer-free). Su objetivo es resolver la síntesis de voz multilingüe de alta calidad con clonación y diseño de voz controlables, sin necesidad de etiquetas de idioma en la entrada.
+VoxCPM2 es un modelo de síntesis de voz (text-to-speech) desarrollado por OpenBMB, distribuido en Hugging Face bajo el espacio ArchiveStudio. Se trata de un modelo de 2.290.004.544 parámetros (aproximadamente 2B) construido sobre el backbone MiniCPM-4, con una arquitectura de difusión autorregresiva sin tokenizador (tokenizer-free). Su objetivo es resolver la síntesis de voz multilingüe de alta calidad con clonación y diseño de voz controlables, sin necesidad de etiquetas de idioma en la entrada.
 
 El modelo destaca por cubrir 30 idiomas (incluidos dialectos del chino), generar audio a 48 kHz a partir de referencias de 16 kHz mediante superresolución integrada en su AudioVAE V2, y ofrecer tres modos de control de voz: diseño de voz por descripción en lenguaje natural, clonación controlable con guía de estilo y clonación de máxima fidelidad con audio y transcripción de referencia. Está entrenado sobre más de 2 millones de horas de habla multilingüe.
 
@@ -75,7 +75,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| VoxCPM2 | ~2B | 8192 tokens (6,25 Hz) | Apache-2.0 | HuggingFace (ArchiveStudio/VoxCPM2) |
+| VoxCPM2 | ~2B | 8192 tokens (6,25 Hz) | Apache-2.0 | Hugging Face (ArchiveStudio/VoxCPM2) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,10 +91,10 @@ No se dispone en la información proporcionada de datos numéricos de modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/VoxCPM2
+- Hugging Face: https://huggingface.co/ArchiveStudio/VoxCPM2
 - GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentación: https://voxcpm.readthedocs.io/en/latest/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenBMB/VoxCPM-Demo
 - Página de muestras de audio: https://openbmb.github.io/voxcpm2-demopage
 - Discord: https://discord.gg/KZUx7tVNwz
 - Nano-VLLM para VoxCPM: https://github.com/a710128/nanovllm-voxcpm

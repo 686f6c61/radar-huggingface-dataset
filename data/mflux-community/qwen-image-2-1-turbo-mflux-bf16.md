@@ -84,7 +84,7 @@ Las variantes Q8 a Q3 del mismo modelo ofrecen un compromiso entre calidad y mem
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-bf16
+- Repositorio en Hugging Face: https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-bf16
 - Modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Licencia original: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo/blob/main/LICENSE
 - Variantes cuantizadas: Q8 (https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q8), Q6 (https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q6), Q5 (https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q5), Q4 (https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q4), Q3 (https://huggingface.co/mflux-community/qwen-image-2-1-turbo-mflux-q3)

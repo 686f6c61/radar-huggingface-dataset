@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `theo_gemma-4-31b-it_impulsive-sft-v3-lora` es un adaptador LoRA publicado por el usuario u organizacion Misalignment-Empirics en HuggingFace. No se trata de un modelo de lenguaje completo, sino de un ajuste fino (fine-tuning) mediante aprendizaje supervisado (SFT) sobre el modelo base `google/gemma-4-31B-it`, que pertenece a la familia Gemma de Google. El entrenamiento se ha realizado con la libreria TRL de HuggingFace y el artefacto se distribuye en formato PEFT, de modo que requiere cargar primero el modelo base y despues aplicar el adaptador.
+El modelo `theo_gemma-4-31b-it_impulsive-sft-v3-lora` es un adaptador LoRA publicado por el usuario u organizacion Misalignment-Empirics en Hugging Face. No se trata de un modelo de lenguaje completo, sino de un ajuste fino (fine-tuning) mediante aprendizaje supervisado (SFT) sobre el modelo base `google/gemma-4-31B-it`, que pertenece a la familia Gemma de Google. El entrenamiento se ha realizado con la libreria TRL de Hugging Face y el artefacto se distribuye en formato PEFT, de modo que requiere cargar primero el modelo base y despues aplicar el adaptador.
 
 El repositorio ocupa 2,0 GB, un tamano coherente con un adaptador LoRA (y no con los pesos completos de un modelo de 31.000 millones de parametros, que en FP16 rondarian los 60 GB). El nombre del adaptador incluye el sufijo `impulsive-sft-v3`, lo que sugiere un ajuste orientado a modificar el estilo de respuesta del modelo base hacia un comportamiento mas impulsivo o menos filtrado; esta interpretacion se deduce unicamente del nombre y no esta confirmada en la informacion disponible. El perfil del autor, "Misalignment-Empirics", apunta a investigacion sobre desalineacion de modelos, aunque no hay documentacion que lo confirme.
 
@@ -55,7 +55,7 @@ Dado que no hay documentacion funcional ni evaluaciones publicadas, los siguient
 - Generacion de texto creativo con estilo alternativo: si el ajuste "impulsivo" produce respuestas mas directas o menos matizadas, podria emplearse en tareas de escritura creativa o generacion de dialogos donde se busque un tono menos formal, siempre con revision humana.
 - Evaluacion comparativa de adaptadores: util como punto de comparacion frente a otros LoRA entrenados sobre el mismo modelo base para medir el impacto de un dataset de SFT concreto.
 - Analisis de sesgos y filtros de seguridad: un adaptador que altera el comportamiento del modelo base es un caso de estudio para evaluar si los mecanismos de seguridad del modelo original se mantienen tras el ajuste, algo relevante para equipos de red teaming.
-- Docencia y formacion tecnica: como ejemplo practico de publicacion de un adaptador en HuggingFace con documentacion incompleta, para ilustrar buenas y malas practicas de model cards.
+- Docencia y formacion tecnica: como ejemplo practico de publicacion de un adaptador en Hugging Face con documentacion incompleta, para ilustrar buenas y malas practicas de model cards.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ La busqueda web realizada no devolvio resultados relacionados con el modelo, el 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-sft-v3-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_gemma-4-31b-it_impulsive-sft-v3-lora
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Repositorio de PEFT (libreria de carga declarada): https://github.com/huggingface/peft

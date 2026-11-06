@@ -97,7 +97,7 @@ Comparativa con alternativas de la misma categoria (otros modelos de difusion me
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Diffusion-Research-Lab/hrrr-west-hourly-precipitation-100d-diffusion)
+- [Modelo en Hugging Face](https://huggingface.co/Diffusion-Research-Lab/hrrr-west-hourly-precipitation-100d-diffusion)
 - [Repositorio de entrenamiento](https://github.com/Diffusion-Research-Lab/2_training_2026_tail_reference_models)
 - [Script de preparacion del dataset: `datasets/2_hrrr_west_tabular_dataset.py`](https://github.com/Diffusion-Research-Lab/2_training_2026_tail_reference_models)
 - [Catalogo del analisis HRRR de NOAA en dynamical.org](https://dynamical.org/catalog/noaa-hrrr-analysis/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anku1-1/taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno Taxi-v3, un problema clasico de Gym/Gymnasium incluido en las suites de referencia de RL. Lo publica el usuario anku1-1 en el HuggingFace Hub como repositorio de artefacto (fichero `q-learning.pkl`), no como modelo de lenguaje: no hay pesos en `safetensors`, ni tokenizador, ni pesos derivados de un transformer.
+anku1-1/taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno Taxi-v3, un problema clasico de Gym/Gymnasium incluido en las suites de referencia de RL. Lo publica el usuario anku1-1 en el Hugging Face Hub como repositorio de artefacto (fichero `q-learning.pkl`), no como modelo de lenguaje: no hay pesos en `safetensors`, ni tokenizador, ni pesos derivados de un transformer.
 
 El modelo resuelve la tarea de recoger y dejar pasajeros en un mapa discreto de 5x5 con 4 ubicaciones de destino. El autor declara una recompensa media de 7,52 ± 2,62 en Taxi-v3, marcada como no verificada, lo que lo situa en el rango de politicas que completan la mayoria de episodios pero con una varianza considerable. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 
@@ -76,8 +76,8 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Algoritmo | Entorno | Recompensa media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anku1-1/taxi-v4 | Q-Learning tabular | Taxi-v3 | 7,52 ± 2,62 (no verificado) | no disponible | HuggingFace Hub |
-| Agentes de RL Zoo / Stable-Baselines3 para Taxi-v3 | Q-Learning, DQN y otros | Taxi-v3 | no disponible en la informacion proporcionada | no disponible | HuggingFace Hub |
+| anku1-1/taxi-v4 | Q-Learning tabular | Taxi-v3 | 7,52 ± 2,62 (no verificado) | no disponible | Hugging Face Hub |
+| Agentes de RL Zoo / Stable-Baselines3 para Taxi-v3 | Q-Learning, DQN y otros | Taxi-v3 | no disponible en la informacion proporcionada | no disponible | Hugging Face Hub |
 | Implementaciones propias de Q-Learning para Taxi-v3 | Q-Learning tabular | Taxi-v3 | no disponible en la informacion proporcionada | no disponible | Repositorios publicos |
 
 No se dispone de datos comparativos verificados en la informacion proporcionada. La comparacion relevante en este caso es metodologica (algoritmo, numero de episodios, semillas, hiperparametros y version del entorno) y no esta documentada en la model card.
@@ -96,6 +96,6 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anku1-1/taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/anku1-1/taxi-v4
 - Fichero de pesos citado en la model card: `q-learning.pkl` (dentro del repositorio anterior)
 - La busqueda web realizada no ha devuelto enlaces relevantes para este modelo: los resultados obtenidos corresponden a GitHub CLI, deepseek-harness, ruflo, Zhihu y la documentacion de precios de GitHub Copilot, ninguno relacionado con Taxi-v3 ni con Q-Learning.

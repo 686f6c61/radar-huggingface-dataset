@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lunar-trn-ft-real es un modelo de detección de objetos basado en YOLO26s, desarrollado por el usuario de HuggingFace huseyincavus, especializado en la detección de cráteres lunares reales para tareas de navegación relativa al terreno (terrain-relative navigation, TRN). El modelo parte de pesos preentrenados en el dominio sintético C1 y se afina sobre el conjunto de datos LU3M6TGT, compuesto por 8.756 parches reales de LROC WAC a unos 100 m/píxel y resolución de 416×416, con cajas de cráteres densamente anotadas. Resuelve el problema de la brecha de dominio entre datos sintéticos y observaciones reales de la superficie lunar, un paso necesario para sistemas de guiado y navegación en misiones de aterrizaje.
+lunar-trn-ft-real es un modelo de detección de objetos basado en YOLO26s, desarrollado por el usuario de Hugging Face huseyincavus, especializado en la detección de cráteres lunares reales para tareas de navegación relativa al terreno (terrain-relative navigation, TRN). El modelo parte de pesos preentrenados en el dominio sintético C1 y se afina sobre el conjunto de datos LU3M6TGT, compuesto por 8.756 parches reales de LROC WAC a unos 100 m/píxel y resolución de 416×416, con cajas de cráteres densamente anotadas. Resuelve el problema de la brecha de dominio entre datos sintéticos y observaciones reales de la superficie lunar, un paso necesario para sistemas de guiado y navegación en misiones de aterrizaje.
 
 La relevancia actual del modelo reside en su aplicación a la navegación autónoma de naves espaciales: la detección fiable de cráteres permite el emparejamiento con cartas orbitales y la estimación de posición durante el descenso. El modelo reporta un mAP50 de 0,947 y un mAP50-95 de 0,830 sobre parches reservados, con una recuperación del 60,6 % de los cráteres del catálogo de Robbins de diámetro mayor o igual a 2 km, verificado manualmente. El modelo cero-shot previo (C1) obtiene un mAP50 de aproximadamente 0,03 sobre los mismos datos, lo que evidencia la magnitud de la adaptación de dominio lograda con el ajuste fino.
 
@@ -88,5 +88,5 @@ No se dispone de información sobre modelos comparables de detección de cráter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huseyincavus/lunar-trn-ft-real
+- Modelo en Hugging Face: https://huggingface.co/huseyincavus/lunar-trn-ft-real
 - Repositorio del proyecto: https://github.com/huseyincavusbi/lunar-trn

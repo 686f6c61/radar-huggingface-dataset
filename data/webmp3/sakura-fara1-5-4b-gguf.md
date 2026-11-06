@@ -22,7 +22,7 @@ Es relevante ahora porque permite ejecutar un agente de navegacion multimodal de
 | Formato de pesos | GGUF (llama.cpp) mas mmproj-Fara1.5-4B-f16.gguf para vision |
 | Tamano del repositorio | 8,0 GB (tres archivos GGUF de 1,88 / 2,28 / 2,65 GiB mas el proyector) |
 | Modelo base | microsoft/Fara1.5-4B (relacion: quantized) |
-| Fecha de publicacion | 4 de octubre de 2026 (segun HuggingFace) |
+| Fecha de publicacion | 4 de octubre de 2026 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -86,13 +86,13 @@ La comparacion natural es con las cuantizaciones de bartowski del mismo modelo b
 
 | Modelo o cuantizacion | Tamano | KLD media (en/dev/wiki) | PPL en | Coincidencia token top | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| Sakura-Fara1.5-4B 1.89GiB | 1,89 GiB | 0,0968 / 0,0898 / 0,1496 | 2,262 | 86,9 % | MIT | HuggingFace (webmp3) |
-| bartowski IQ3_XXS | 1,97 GiB | 0,1590 / 0,1526 / 0,2436 | 2,368 | 84,7 % | MIT | HuggingFace (bartowski) |
-| Sakura-Fara1.5-4B 2.29GiB | 2,29 GiB | 0,0332 / 0,0303 / 0,0484 | 2,201 | 92,6 % | MIT | HuggingFace (webmp3) |
-| bartowski IQ4_XS | 2,37 GiB | 0,0425 / 0,0364 / 0,0505 | 2,211 | 92,2 % | MIT | HuggingFace (bartowski) |
-| Sakura-Fara1.5-4B 2.66GiB | 2,66 GiB | 0,0136 / 0,0160 / 0,0216 | 2,177 | 95,2 % | MIT | HuggingFace (webmp3) |
-| bartowski Q4_K_M | 2,69 GiB | 0,0257 / 0,0266 / 0,0351 | 2,186 | 93,9 % | MIT | HuggingFace (bartowski) |
-| bartowski Q5_K_M | 3,09 GiB | 0,0086 / 0,0077 / 0,0103 | 2,173 | 96,8 % | MIT | HuggingFace (bartowski) |
+| Sakura-Fara1.5-4B 1.89GiB | 1,89 GiB | 0,0968 / 0,0898 / 0,1496 | 2,262 | 86,9 % | MIT | Hugging Face (webmp3) |
+| bartowski IQ3_XXS | 1,97 GiB | 0,1590 / 0,1526 / 0,2436 | 2,368 | 84,7 % | MIT | Hugging Face (bartowski) |
+| Sakura-Fara1.5-4B 2.29GiB | 2,29 GiB | 0,0332 / 0,0303 / 0,0484 | 2,201 | 92,6 % | MIT | Hugging Face (webmp3) |
+| bartowski IQ4_XS | 2,37 GiB | 0,0425 / 0,0364 / 0,0505 | 2,211 | 92,2 % | MIT | Hugging Face (bartowski) |
+| Sakura-Fara1.5-4B 2.66GiB | 2,66 GiB | 0,0136 / 0,0160 / 0,0216 | 2,177 | 95,2 % | MIT | Hugging Face (webmp3) |
+| bartowski Q4_K_M | 2,69 GiB | 0,0257 / 0,0266 / 0,0351 | 2,186 | 93,9 % | MIT | Hugging Face (bartowski) |
+| bartowski Q5_K_M | 3,09 GiB | 0,0086 / 0,0077 / 0,0103 | 2,173 | 96,8 % | MIT | Hugging Face (bartowski) |
 
 Frente al BF16 original (microsoft/Fara1.5-4B), la perdida de fidelidad es inevitable en cualquier cuantizacion; el archivo de 2,66 GiB se queda a una distancia de KL de 0,0136-0,0216, mientras que Q5_K_M, con 0,4 GiB mas, baja a 0,0077-0,0103. No se dispone de comparaciones con otros modelos de la misma categoria y tamano (agentes de uso de ordenador de ~4B) en la informacion proporcionada.
 
@@ -110,7 +110,7 @@ Frente al BF16 original (microsoft/Fara1.5-4B), la perdida de fidelidad es inevi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-Fara1.5-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-Fara1.5-4B-GGUF
 - Modelo base: https://huggingface.co/microsoft/Fara1.5-4B
 - Cuantizaciones de referencia de bartowski: https://huggingface.co/bartowski/Fara1.5-4B-GGUF
 - Coleccion Sakura Mini: https://huggingface.co/collections/webmp3/sakura-mini-6aba73f6a5a41296a3540373

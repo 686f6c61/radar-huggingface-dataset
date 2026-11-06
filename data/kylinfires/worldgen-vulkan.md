@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WorldGen Vulkan es un repositorio de HuggingFace mantenido por el usuario kylinfires que implementa, sin CUDA, la pipeline text-to-360 / image-to-360 de WorldGen sobre hardware AMD mediante Vulkan. Concretamente, permite generar escenas 3D en formato Gaussian Splatting (3DGS) y mallas a partir de un prompt de texto o de una imagen, ejecutando todo el flujo en Windows con una GPU AMD (validada sobre una RX 6900 XT de 16 GB).
+WorldGen Vulkan es un repositorio de Hugging Face mantenido por el usuario kylinfires que implementa, sin CUDA, la pipeline text-to-360 / image-to-360 de WorldGen sobre hardware AMD mediante Vulkan. Concretamente, permite generar escenas 3D en formato Gaussian Splatting (3DGS) y mallas a partir de un prompt de texto o de una imagen, ejecutando todo el flujo en Windows con una GPU AMD (validada sobre una RX 6900 XT de 16 GB).
 
 La pipeline combina varios modelos y componentes: FLUX.1-dev y FLUX.1-Fill-dev (ejecutados mediante stable-diffusion.cpp con backend Vulkan) para generar panoramas 1024x512, el modelo de profundidad DA-2 convertido a ncnn con soporte Vulkan para estimar el mapa de profundidad, y un postprocesado en Rust que convierte RGBD en nubes de gaussianas (PLY de 3DGS) y mallas (PLY). El resultado es una alternativa totalmente libre de CUDA y de PyTorch en inferencia para generar escenas 3D inmersivas a partir de texto o imágenes.
 
@@ -99,7 +99,7 @@ No hay disponible una comparativa numérica de calidad (PSNR/SSIM/LPIPS) frente 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kylinfires/worldgen-vulkan
+- Repositorio en Hugging Face: https://huggingface.co/kylinfires/worldgen-vulkan
 - Documentación de validación citada en el README: docs/VALIDATION.md (ruta relativa dentro del repositorio)
 - Pesos upstream referenciados (no incluidos en el repo): FLUX.1-dev, FLUX.1-Fill-dev (Black Forest Labs), DA-2, shi-labs/oneformer_ade20k_swin_large
 - No se han encontrado en la información proporcionada enlaces a paper, demo pública ni blog del proyecto.

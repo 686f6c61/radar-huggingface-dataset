@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OthmaneBen/qwen3.5-9b-t2-extract-stacked-wrongdomain-s42 es un adaptador de ajuste fino publicado en HuggingFace por el usuario OthmaneBen. No se trata de un modelo completo, sino de un adaptador PEFT basado en DoRA (denominado QDoRA en la model card) con rango r=48 y semilla 42, que se aplica sobre el modelo base Qwen/Qwen3.5-9B. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors bajo licencia Apache 2.0.
+OthmaneBen/qwen3.5-9b-t2-extract-stacked-wrongdomain-s42 es un adaptador de ajuste fino publicado en Hugging Face por el usuario OthmaneBen. No se trata de un modelo completo, sino de un adaptador PEFT basado en DoRA (denominado QDoRA en la model card) con rango r=48 y semilla 42, que se aplica sobre el modelo base Qwen/Qwen3.5-9B. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors bajo licencia Apache 2.0.
 
 El adaptador esta asociado a una tarea concreta denominada "T2 extraction" y, segun la model card, se ha apilado sobre un sustrato de control de dominio incorrecto ("wrong-domain control substrate"). Forma parte del material liberado junto al envio entropy-4582293, titulado "Fine-Tuning Shifts Form Before Competence", lo que sugiere que su proposito principal es servir como artefacto de investigacion para estudiar como el ajuste fino altera la forma de las representaciones antes que la competencia en la tarea.
 
@@ -81,7 +81,7 @@ No hay datos publicados para este adaptador (sin benchmarks, sin idiomas, sin do
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-t2-extract-stacked-wrongdomain-s42 | No disponible (adaptador DoRA r=48) | No disponible | No disponible | apache-2.0 | HuggingFace, 0 descargas |
+| qwen3.5-9b-t2-extract-stacked-wrongdomain-s42 | No disponible (adaptador DoRA r=48) | No disponible | No disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Referenciado como base |
 | Otros adaptadores PEFT comparables | No disponibles | No disponible | No disponible | No disponible | No identificados |
 
@@ -101,7 +101,7 @@ No hay datos publicados para este adaptador (sin benchmarks, sin idiomas, sin do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OthmaneBen/qwen3.5-9b-t2-extract-stacked-wrongdomain-s42
+- Modelo en Hugging Face: https://huggingface.co/OthmaneBen/qwen3.5-9b-t2-extract-stacked-wrongdomain-s42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Paper y release de codigo "Fine-Tuning Shifts Form Before Competence" (envio entropy-4582293): no disponible como enlace en la informacion proporcionada.
 - No se han encontrado en la busqueda web enlaces relevantes sobre este modelo, su paper ni su modelo base. Los resultados devueltos por la busqueda no guardan relacion con el contenido de esta ficha y se han descartado por completo.

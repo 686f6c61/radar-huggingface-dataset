@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Islamamro/newsgroups20-aurora-islamamro)
+- [Modelo en Hugging Face](https://huggingface.co/Islamamro/newsgroups20-aurora-islamamro)
 - [Dataset SetFit/20_newsgroups](https://huggingface.co/datasets/SetFit/20_newsgroups)
 - [Perfil de GitHub del autor](https://github.com/islamamro)

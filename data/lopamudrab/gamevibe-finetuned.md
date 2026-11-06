@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LopamudraB/gamevibe-finetuned es un checkpoint publicado en HuggingFace por el usuario LopamudraB, etiquetado como ajuste fino (por el sufijo "finetuned" del identificador) y asociado a la arquitectura Qwen2 segun el tag `qwen2` del repositorio. Se trata de un modelo de generacion de texto de tipo decoder-only con 494.032.768 parametros (aproximadamente 0,5 mil millones), almacenado en formato safetensors y compatible con la libreria transformers y con text-generation-inference.
+LopamudraB/gamevibe-finetuned es un checkpoint publicado en Hugging Face por el usuario LopamudraB, etiquetado como ajuste fino (por el sufijo "finetuned" del identificador) y asociado a la arquitectura Qwen2 segun el tag `qwen2` del repositorio. Se trata de un modelo de generacion de texto de tipo decoder-only con 494.032.768 parametros (aproximadamente 0,5 mil millones), almacenado en formato safetensors y compatible con la libreria transformers y con text-generation-inference.
 
-El modelo no dispone de model card real: el README publicado es la plantilla autogenerada por HuggingFace, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento, evaluacion) aparecen como "[More Information Needed]". Tampoco se han publicado resultados de benchmarks ni documentacion adicional sobre el dataset de ajuste fino, por lo que el proposito concreto del ajuste y su dominio de especializacion no pueden verificarse con la informacion disponible.
+El modelo no dispone de model card real: el README publicado es la plantilla autogenerada por Hugging Face, en la que todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, procedimiento, evaluacion) aparecen como "[More Information Needed]". Tampoco se han publicado resultados de benchmarks ni documentacion adicional sobre el dataset de ajuste fino, por lo que el proposito concreto del ajuste y su dominio de especializacion no pueden verificarse con la informacion disponible.
 
 Su relevancia actual es limitada y de caracter practico: se trata de un modelo pequeno (0,5B) que puede ejecutarse en hardware de consumo y servir como base para experimentacion con ajuste fino ligero, prototipado local o despliegue en entornos con recursos muy restringidos. No obstante, la ausencia de licencia explicita, de idiomas declarados y de cualquier evaluacion publicada impide recomendarlo para uso en produccion sin una validacion previa por parte del usuario.
 
@@ -79,10 +79,10 @@ No se dispone de resultados de rendimiento de este modelo, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| LopamudraB/gamevibe-finetuned | 494M | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Qwen2.5-0.5B-Instruct | ~494M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Si, publicado por el autor |
-| SmolLM2-360M-Instruct | ~362M | 8.192 tokens | Apache 2.0 | HuggingFace, con datos de entrenamiento documentados | Si, publicado por el autor |
-| TinyLlama-1.1B-Chat | ~1.100M | 2.048 tokens | Apache 2.0 | HuggingFace, con paper y dataset documentados | Si, publicado por el autor |
+| LopamudraB/gamevibe-finetuned | 494M | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Qwen2.5-0.5B-Instruct | ~494M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Si, publicado por el autor |
+| SmolLM2-360M-Instruct | ~362M | 8.192 tokens | Apache 2.0 | Hugging Face, con datos de entrenamiento documentados | Si, publicado por el autor |
+| TinyLlama-1.1B-Chat | ~1.100M | 2.048 tokens | Apache 2.0 | Hugging Face, con paper y dataset documentados | Si, publicado por el autor |
 
 La diferencia principal no es de rendimiento, sino de trazabilidad: los tres modelos alternativos documentan licencia, datos de entrenamiento y evaluacion, mientras que gamevibe-finetuned no aporta ninguno de esos elementos.
 
@@ -101,7 +101,7 @@ La diferencia principal no es de rendimiento, sino de trazabilidad: los tres mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LopamudraB/gamevibe-finetuned
+- Hugging Face: https://huggingface.co/LopamudraB/gamevibe-finetuned
 - Referencia citada por la plantilla de la model card (impacto ambiental, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - Paper, repositorio de codigo, demo y dataset de entrenamiento: no disponibles en la informacion proporcionada.

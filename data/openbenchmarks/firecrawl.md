@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Firecrawl no es un modelo de inteligencia artificial, sino una API de búsqueda web y extracción de datos diseñada para que sistemas de IA (agentes, chatbots, pipelines de RAG) accedan a información del web en tiempo real. La model card publicada en HuggingFace es un "stub" creado por el equipo de OpenBenchmarks para que esta API aparezca en el leaderboard oficial de búsqueda web del benchmark OB News Websearch. No contiene pesos ni arquitectura de modelo alguno.
+Firecrawl no es un modelo de inteligencia artificial, sino una API de búsqueda web y extracción de datos diseñada para que sistemas de IA (agentes, chatbots, pipelines de RAG) accedan a información del web en tiempo real. La model card publicada en Hugging Face es un "stub" creado por el equipo de OpenBenchmarks para que esta API aparezca en el leaderboard oficial de búsqueda web del benchmark OB News Websearch. No contiene pesos ni arquitectura de modelo alguno.
 
 La relevancia de Firecrawl radica en que resuelve el problema de conectar modelos de lenguaje con contenido web vivo: búsqueda, scraping, renderizado de JavaScript, extracción estructurada e indexación. Su endpoint principal es `POST /v2/search` con configuración `default`, y se documenta en https://docs.firecrawl.dev/api-reference/endpoint/search. Aunque no es un modelo, compite en la misma categoría de herramientas que los modelos con capacidades de búsqueda integrada, por lo que esta ficha lo trata como un servicio de infraestructura para IA.
 
@@ -82,7 +82,7 @@ Firecrawl se diferencia por combinar búsqueda, scraping y extracción en una so
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/openbenchmarks/firecrawl
+- Model card en Hugging Face: https://huggingface.co/openbenchmarks/firecrawl
 - Documentación de la API: https://docs.firecrawl.dev/api-reference/endpoint/search
 - Página oficial: https://www.firecrawl.dev/
 - Benchmarks de Firecrawl: https://www.firecrawl.dev/benchmarks

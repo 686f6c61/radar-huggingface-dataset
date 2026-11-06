@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Most-Dumb-Intelligence es un modelo de generacion de texto de 0,1 mil millones de parametros (100.092.672 exactamente, segun los pesos en safetensors) publicado por el usuario YoSaNoo en HuggingFace. El autor lo presenta explicitamente como un experimento de arquitectura neuronal propia construida desde cero, y advierte que no debe confundirse con un transformer tipo Llama pese a que la plataforma lo etiquete automaticamente como tal. El modelo se distribuye en formato GGUF (F32, aproximadamente 401 MB) y esta pensado como curiosidad tecnica mas que como herramienta de produccion.
+Most-Dumb-Intelligence es un modelo de generacion de texto de 0,1 mil millones de parametros (100.092.672 exactamente, segun los pesos en safetensors) publicado por el usuario YoSaNoo en Hugging Face. El autor lo presenta explicitamente como un experimento de arquitectura neuronal propia construida desde cero, y advierte que no debe confundirse con un transformer tipo Llama pese a que la plataforma lo etiquete automaticamente como tal. El modelo se distribuye en formato GGUF (F32, aproximadamente 401 MB) y esta pensado como curiosidad tecnica mas que como herramienta de produccion.
 
 La propuesta de valor es minima por diseno: el propio autor describe sus capacidades como "de un solo digito de CI" y recomienda su uso para entretenimiento, generacion de outputs absurdos y pruebas de pipelines de despliegue con arquitecturas no estandar. No se documentan datos de entrenamiento, composicion del dataset, idiomas soportados ni resultados de benchmarks.
 
@@ -12,7 +12,7 @@ Su relevancia actual es marginal y de nicho: sirve como caso de estudio de como 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Custom / propietaria, construida desde cero (el autor niega que sea Llama pese al tag automatico de HuggingFace) |
+| Arquitectura | Custom / propietaria, construida desde cero (el autor niega que sea Llama pese al tag automatico de Hugging Face) |
 | Parametros totales | 100.092.672 (0,1B) |
 | Parametros activos | no disponible (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Most-Dumb-Intelligence | 0,1B | no disponible | Apache-2.0 | GGUF F32 | HuggingFace, 1 descarga |
-| SmolLM-135M (HuggingFace) | 0,135B | 2.048 tokens | Apache-2.0 | safetensors, GGUF | Ampliamente usado |
+| Most-Dumb-Intelligence | 0,1B | no disponible | Apache-2.0 | GGUF F32 | Hugging Face, 1 descarga |
+| SmolLM-135M (Hugging Face) | 0,135B | 2.048 tokens | Apache-2.0 | safetensors, GGUF | Ampliamente usado |
 | Qwen2.5-0.5B | 0,5B | 32.768 tokens | Apache-2.0 | safetensors, GGUF | Ampliamente usado |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache-2.0 | safetensors, GGUF | Ampliamente usado |
 
@@ -79,11 +79,11 @@ La comparacion relevante es por escala, no por rendimiento: los tres alternativo
 - Longitud de contexto e idiomas soportados no disponibles, lo que impide planificar su uso en conversaciones multi-turno o en idiomas distintos del que se haya entrenado.
 - Compatibilidad limitada: los cargadores estandar (llama.cpp, Ollama con plantillas Llama) pueden fallar por la arquitectura custom; no se publica el script de inferencia especifico.
 - Licencia Apache-2.0 permite uso comercial teorico, pero la ausencia de garantias y la calidad del modelo hacen inviable cualquier despliegue en produccion.
-- Actividad practicamente nula en HuggingFace (1 descarga, 0 likes), sin comunidad ni mantenimiento conocido.
+- Actividad practicamente nula en Hugging Face (1 descarga, 0 likes), sin comunidad ni mantenimiento conocido.
 - No apto para tareas que requieran fiabilidad: codigo, matematicas, atencion al cliente o cualquier flujo automatizado con impacto real.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YoSaNoo/Most-Dumb-Intelligence
+- Hugging Face: https://huggingface.co/YoSaNoo/Most-Dumb-Intelligence
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

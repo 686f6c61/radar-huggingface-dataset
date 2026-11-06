@@ -13,12 +13,12 @@ Es relevante ahora porque demuestra que una tarea de post-procesado lingüístic
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only denso, derivado de Qwen3.5-0.8B; ajuste fino LoRA (r 64, todas las capas lineales); vocabulario podado a 32k tokens en inglés |
-| Parametros totales | 551.368.000 según los pesos safetensors reportados por HuggingFace (vocabulario podado); la model card describe el modelo como 0.8B |
+| Parametros totales | 551.368.000 según los pesos safetensors reportados por Hugging Face (vocabulario podado); la model card describe el modelo como 0.8B |
 | Longitud de contexto | no disponible (la model card no la especifica; el uso previsto son dictados cortos) |
 | Tipos de cuantizacion | Q4_K_M en GGUF; no se documentan otras cuantizaciones |
 | Idiomas soportados | inglés (`en`) únicamente; el vocabulario está podado a inglés |
 | Licencia | Apache 2.0 (igual que el modelo base Qwen3.5) |
-| Formato de pesos | GGUF (`localflow-clean-q4_k_m.gguf`, 350 MB); los metadatos de HuggingFace reportan además pesos safetensors |
+| Formato de pesos | GGUF (`localflow-clean-q4_k_m.gguf`, 350 MB); los metadatos de Hugging Face reportan además pesos safetensors |
 | Modo thinking | desactivado explícitamente (bloque `<think>` vacío en el prompt) |
 | Hash del fichero GGUF | SHA-256 `0fa7ba4e4a38b50067a2dbd6eb01ce2e0aa6db755afc4a216cffd27566eb3206` |
 
@@ -37,7 +37,7 @@ La intervención técnica más destacable es la poda del vocabulario a 32.000 to
 - Transformación de nombres de fichero dictados en referencias `@file` (por ejemplo, `src/main.rs`).
 - Ejecución local con llama.cpp en el mismo proceso de la aplicación, sin dependencias externas ni servicio remoto.
 - Formato de prompt específico: plantilla de chat de Qwen, thinking desactivado, instrucción de sistema mínima.
-- No se documentan tool calling, function calling, capacidades de agente, razonamiento multi-paso, visión, audio ni otras modalidades. El tag `conversational` de HuggingFace no implica uso como chatbot general.
+- No se documentan tool calling, function calling, capacidades de agente, razonamiento multi-paso, visión, audio ni otras modalidades. El tag `conversational` de Hugging Face no implica uso como chatbot general.
 
 ## Casos de uso
 
@@ -79,8 +79,8 @@ El propio autor advierte que los 142 ejemplos reservados proceden de la misma di
 
 | Modelo | Parametros | Contexto | cases.txt | Memoria en carga | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| localflow-clean | 551M (base 0.8B) | no disponible | 32/41 | ~530 MB GPU | Apache 2.0 | GGUF público en HuggingFace |
-| Qwen3.5-0.8B (base) | 0.8B | no disponible | no disponible | no disponible | Apache 2.0, según la model card | HuggingFace |
+| localflow-clean | 551M (base 0.8B) | no disponible | 32/41 | ~530 MB GPU | Apache 2.0 | GGUF público en Hugging Face |
+| Qwen3.5-0.8B (base) | 0.8B | no disponible | no disponible | no disponible | Apache 2.0, según la model card | Hugging Face |
 | qwen3.5:4b + review (Ollama) | ~4B | no disponible | 35/41 | ~4,3 GB GPU | no disponible | Ollama |
 
 Frente al modelo base, localflow-clean reduce el fichero de 542 a 350 MB y la memoria de ~810 a ~390 MB manteniendo salidas idénticas en inglés, a cambio de perder cualquier capacidad multilingüe. Frente al 4B con revisión, queda 3 casos por debajo en los tests escritos (32/41 frente a 35/41) pero es aproximadamente seis veces más rápido y usa un octavo de la memoria. No se dispone de datos para comparar con otras alternativas especializadas en limpieza de dictado.
@@ -96,11 +96,11 @@ Frente al modelo base, localflow-clean reduce el fichero de 542 a 350 MB y la me
 - Requiere un formato de prompt estricto (plantilla de chat de Qwen, bloque de vocabulario y `<files>` opcionales, thinking desactivado); usarlo como chat genérico producirá resultados fuera de su dominio.
 - No es un modelo conversacional ni de razonamiento: no hay soporte documentado de tool calling, agentes, visión ni audio.
 - La licencia Apache 2.0 permite uso comercial, pero exige conservar el aviso de licencia y los ficheros NOTICE correspondientes; el modelo base Qwen3.5 se distribuye bajo la misma licencia según la model card.
-- Validación externa muy limitada: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y todos los resultados provienen del autor.
+- Validación externa muy limitada: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y todos los resultados provienen del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Radiumcoders/localflow-clean
+- Modelo en Hugging Face: https://huggingface.co/Radiumcoders/localflow-clean
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo: https://huggingface.co/Radiumcoders/localflow-clean/blob/main/LICENSE
 - Repositorio localflow en GitHub: https://github.com/radiumcoders/localflow

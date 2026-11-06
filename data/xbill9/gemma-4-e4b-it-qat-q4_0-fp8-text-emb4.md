@@ -97,7 +97,7 @@ No se dispone de datos de contexto, idiomas ni rendimiento de modelos externos d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-fp8-text-emb4
+- Repositorio en Hugging Face: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-fp8-text-emb4
 - Modelo base (QAT sin cuantizar): https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-unquantized
 - Build intermedio con embeddings int4: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text-emb4
 - Build recomendado para la rejilla QAT exacta: https://huggingface.co/xbill9/gemma-4-E4B-it-qat-q4_0-w4a16-ct-text

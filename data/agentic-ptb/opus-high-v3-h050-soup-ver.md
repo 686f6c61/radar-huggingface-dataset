@@ -77,7 +77,7 @@ No se conocen modelos comparables publicados por otros autores que ofrezcan mét
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h050.soup-ver)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h050.soup-ver)
 - [Dataset de archivo del run opus-high-v3](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Dataset INDEX del proyecto AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)
 - [Modelo base Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

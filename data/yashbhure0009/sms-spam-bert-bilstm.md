@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yashbhure0009/sms-spam-bert-bilstm` es un repositorio publicado en HuggingFace por el usuario yashbhure0009. Por la nomenclatura del identificador se deduce que se trata de un clasificador de texto que combina un codificador basado en BERT con una cabeza recurrente BiLSTM, presumiblemente orientado a la deteccion de spam en mensajes SMS. Esta deduccion procede unicamente del nombre del repositorio: la model card publicada no contiene descripcion funcional alguna, solo la declaracion de licencia MIT.
+El modelo `yashbhure0009/sms-spam-bert-bilstm` es un repositorio publicado en Hugging Face por el usuario yashbhure0009. Por la nomenclatura del identificador se deduce que se trata de un clasificador de texto que combina un codificador basado en BERT con una cabeza recurrente BiLSTM, presumiblemente orientado a la deteccion de spam en mensajes SMS. Esta deduccion procede unicamente del nombre del repositorio: la model card publicada no contiene descripcion funcional alguna, solo la declaracion de licencia MIT.
 
 El repositorio tiene un tamano de 0,4 GB, lo que es coherente con los pesos de un modelo tipo BERT base o similar, pero no se dispone de informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni el pipeline declarado (el campo `pipeline` aparece como no disponible). En el momento de la consulta acumula 0 descargas y 0 likes, por lo que se trata de un artefacto sin traccion comunitaria ni validacion externa conocida.
 
@@ -79,6 +79,6 @@ No disponible. No se dispone de informacion suficiente sobre este modelo (parame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yashbhure0009/sms-spam-bert-bilstm
+- Hugging Face: https://huggingface.co/yashbhure0009/sms-spam-bert-bilstm
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, repositorios, blogs o demos) asociados a este modelo.

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0_lora_tacimg_realworld_task820 (este) | VLA π0 + LoRA | no disponible | no disponible | no disponible | HuggingFace |
+| pi0_lora_tacimg_realworld_task820 (este) | VLA π0 + LoRA | no disponible | no disponible | no disponible | Hugging Face |
 | π0 (base, Physical Intelligence) | VLA flow-based | no publicado | no disponible | no disponible | GitHub/OpenPI |
 | π0.5 (Physical Intelligence) | VLA mejorado | no publicado | no disponible | no disponible | GitHub/OpenPI |
 
@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa. Este check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xiangxin0923/pi0_lora_tacimg_realworld_task820
+- Modelo en Hugging Face: https://huggingface.co/xiangxin0923/pi0_lora_tacimg_realworld_task820
 - Repositorio OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Sitio web de OpenPI: https://www.openpi.net/english.html
 - Modelo relacionado (variante): https://huggingface.co/xiangxin0923/pi05_lora_tacimg_real_820

@@ -74,10 +74,10 @@ El autor advierte que los conjuntos publicos son comentarios sobre noticias, pro
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Midnight Wash counselor emotion (este modelo) | no disponible (base e5-small) | no disponible | Clasificacion emocional (11 clases, ko/en) | MIT | HuggingFace, ONNX int8 |
-| intfloat/multilingual-e5-small (base) | no disponible | no disponible | Embeddings multilingues | MIT | HuggingFace |
-| Modelos de clasificacion emocional basados en GoEmotions | no disponible | no disponible | Clasificacion emocional (en) | variable | HuggingFace |
-| Clasificadores KOTE | no disponible | no disponible | Clasificacion emocional (ko) | variable | HuggingFace |
+| Midnight Wash counselor emotion (este modelo) | no disponible (base e5-small) | no disponible | Clasificacion emocional (11 clases, ko/en) | MIT | Hugging Face, ONNX int8 |
+| intfloat/multilingual-e5-small (base) | no disponible | no disponible | Embeddings multilingues | MIT | Hugging Face |
+| Modelos de clasificacion emocional basados en GoEmotions | no disponible | no disponible | Clasificacion emocional (en) | variable | Hugging Face |
+| Clasificadores KOTE | no disponible | no disponible | Clasificacion emocional (ko) | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayaannnnnnn/midnight-wash-counselor-e5
+- Modelo en Hugging Face: https://huggingface.co/Ayaannnnnnn/midnight-wash-counselor-e5
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Documentacion de transformers.js: https://huggingface.co/docs/transformers.js
 - Dataset KOTE: https://github.com/searle-j/KOTE

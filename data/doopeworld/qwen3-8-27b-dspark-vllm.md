@@ -97,7 +97,7 @@ No se dispone de comparativas con otros drafteres externos (p. ej., EAGLE, Medus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Doopeworld/Qwen3.8-27B-DSpark-vLLM
+- Repositorio Hugging Face: https://huggingface.co/Doopeworld/Qwen3.8-27B-DSpark-vLLM
 - Checkpoint original: https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark
 - Referencia de vLLM para DSpark: `vllm/model_executor/models/qwen3_dspark.py` (mencionada en la model card, sin URL directa)
 - Documentación de vLLM sobre decodificación especulativa: no se proporciona enlace en la información disponible

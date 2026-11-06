@@ -41,7 +41,7 @@ No se ha realizado entrenamiento, destilacion ni ajuste alguno sobre este artefa
 - Tests de integracion en CI: usar el fixture para comprobar que el codigo de carga de un `SparseEncoder` funciona sin descargar el modelo completo de 110M de parametros, reduciendo tiempo y ancho de banda en cada build.
 - Validacion de contratos de API: ejecutar el pipeline contra `integration.json` y el directorio `expectations` para detectar regresiones en la interfaz de Sentence Transformers antes de actualizar dependencias.
 - Desarrollo de herramientas de serializacion: probar rutas de guardado y carga de safetensors con un repositorio minimo y determinista.
-- Pruebas de empaquetado y distribucion: verificar que el repositorio se resuelve correctamente desde HuggingFace Hub en entornos aislados (contenedores, runners sin GPU).
+- Pruebas de empaquetado y distribucion: verificar que el repositorio se resuelve correctamente desde Hugging Face Hub en entornos aislados (contenedores, runners sin GPU).
 - Docencia y demos de pipeline: ilustrar la estructura de un SparseEncoder sin necesidad de recursos de computo significativos.
 - Smoke tests de despliegue: comprobar que un servicio de inferencia arranca y responde con un modelo de 0,0 GB antes de sustituirlo por el modelo real.
 
@@ -81,7 +81,7 @@ La comparativa con alternativas reales de retrieval no es significativa: el arte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggingface-mic/splade-cocondenser-ensembledistil-mic
+- Modelo en Hugging Face: https://huggingface.co/huggingface-mic/splade-cocondenser-ensembledistil-mic
 - Modelo base: https://huggingface.co/naver/splade-cocondenser-ensembledistil
 - Manifiesto de contrato: https://huggingface.co/huggingface-mic/splade-cocondenser-ensembledistil-mic/blob/main/integration.json
 - Uso con Sentence Transformers: https://huggingface.co/huggingface-mic/splade-cocondenser-ensembledistil-mic/blob/main/integrations/sentence_transformers/usage.md

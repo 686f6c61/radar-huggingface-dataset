@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Fluid-Motion-AI/cosmos3-nano-weights",
+  "slug": "fluid-motion-ai-cosmos3-nano-weights",
+  "author": "Fluid-Motion-AI",
+  "url": "https://huggingface.co/Fluid-Motion-AI/cosmos3-nano-weights",
+  "created_at": "2026-11-03T09:53:12.000Z",
+  "updated_at": "2026-11-03T11:48:27.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "diffusers",
+    "safetensors",
+    "cosmos3_omni",
+    "nvidia",
+    "cosmos3",
+    "vllm",
+    "vllm-omni",
+    "sglang",
+    "sglang-diffusion",
+    "text, image, video, audio, and action generation",
+    "omnimodel",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 15750057456,
+  "parameters_human": "15.75B",
+  "storage_bytes": 34970542758,
+  "storage_human": "35.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fluid-Motion-AI (Fluid-Motion-AI) – Models - Hugging Face",
+      "url": "https://huggingface.co/Fluid-Motion-AI/models",
+      "snippet": "Fluid-Motion-AI's models6 Sort: Recently updated Fluid-Motion-AI/cosmos3-nano-weights 16B•Updated 1 day ago• 16"
+    },
+    {
+      "title": "nvidia/Cosmos3-Nano · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Cosmos3-Nano",
+      "snippet": "Cosmos3 is a collection of Omnimodal world models capable of generating dynamic, high-quality video, image, audio, and action commands from combinations of text, image, video, and action trajectory inputs. It serves as a foundational building block for a broad range of Physical AI applications and ..."
+    }
+  ]
+}

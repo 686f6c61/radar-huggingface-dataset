@@ -65,9 +65,9 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| reFLEX-v1-50M | ~50M (no confirmado) | No disponible | MIT | HuggingFace |
-| reFLEX-v1-15M | ~15M (inferido) | No disponible | MIT | HuggingFace |
-| GPT-2 | 124M | 1024 | MIT | HuggingFace |
+| reFLEX-v1-50M | ~50M (no confirmado) | No disponible | MIT | Hugging Face |
+| reFLEX-v1-15M | ~15M (inferido) | No disponible | MIT | Hugging Face |
+| GPT-2 | 124M | 1024 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qvx-o/reFLEX-v1-50M
+- Modelo en Hugging Face: https://huggingface.co/qvx-o/reFLEX-v1-50M
 - Modelo hermano reFLEX-v1-15M: https://huggingface.co/qvx-o/reFLEX-v1-15M
 - Organización Qarvexium (qvx-o): https://huggingface.co/qvx-o

@@ -65,7 +65,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene senti
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jasonthomasson/survey-audio-visual-learning
+- Repositorio Hugging Face: https://huggingface.co/jasonthomasson/survey-audio-visual-learning
 - Lista curada de aprendizaje audiovisual (GeWu-Lab): https://github.com/GeWu-Lab/awesome-audiovisual-learning
 - Lista curada de inteligencia audiovisual (JavisVerse): https://github.com/JavisVerse/Awesome-AVI
 - Survey "Audio-Visual Intelligence in Large Foundation Models" (arXiv): https://arxiv.org/abs/2605.04045

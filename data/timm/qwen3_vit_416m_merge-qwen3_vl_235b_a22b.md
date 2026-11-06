@@ -80,11 +80,11 @@ No hay datos de rendimiento comparativos publicados en la información disponibl
 
 | Modelo | Parámetros (aprox.) | Tipo | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen3_vit_416m_merge.qwen3_vl_235b_a22b | 455,1 M | ViT de Qwen3-VL, salida proyectada a 4096 | Apache 2.0 | timm / HuggingFace, safetensors | No disponible |
-| Qwen3-VL-235B-A22B-Instruct (completo) | 235 B totales / 22 B activos | MoE multimodal (visión + lenguaje) | Apache 2.0 | HuggingFace | No disponible en esta ficha |
-| DINOv2 ViT-L/14 | ~300 M | ViT auto-supervisado | Apache 2.0 | HuggingFace / torch.hub | No disponible |
-| CLIP ViT-L/14 | ~428 M (con torre de texto) | ViT + transformer de texto contrastivo | MIT (variante OpenAI) | HuggingFace | No disponible |
-| SigLIP SO400M/14 | ~400 M | ViT con pérdida sigmoidea contrastiva | Apache 2.0 | HuggingFace | No disponible |
+| qwen3_vit_416m_merge.qwen3_vl_235b_a22b | 455,1 M | ViT de Qwen3-VL, salida proyectada a 4096 | Apache 2.0 | timm / Hugging Face, safetensors | No disponible |
+| Qwen3-VL-235B-A22B-Instruct (completo) | 235 B totales / 22 B activos | MoE multimodal (visión + lenguaje) | Apache 2.0 | Hugging Face | No disponible en esta ficha |
+| DINOv2 ViT-L/14 | ~300 M | ViT auto-supervisado | Apache 2.0 | Hugging Face / torch.hub | No disponible |
+| CLIP ViT-L/14 | ~428 M (con torre de texto) | ViT + transformer de texto contrastivo | MIT (variante OpenAI) | Hugging Face | No disponible |
+| SigLIP SO400M/14 | ~400 M | ViT con pérdida sigmoidea contrastiva | Apache 2.0 | Hugging Face | No disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No hay datos de rendimiento comparativos publicados en la información disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_vl_235b_a22b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_vl_235b_a22b
 - Modelo base Qwen3-VL-235B-A22B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct
 - Revisión fuente de los pesos: https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Instruct/tree/710c13861be6c466e66de3f484069440b8f31389
 - Informe técnico de Qwen3-VL (arXiv:2511.21631): https://arxiv.org/abs/2511.21631

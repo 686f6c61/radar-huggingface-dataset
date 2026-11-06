@@ -90,9 +90,9 @@ No existen evaluaciones *head-to-head* publicadas entre Yara-50M-PTBR-QA y otras
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yara-50M-PTBR-QA | 50,0 M | 1.024 tokens | sin benchmarks publicados; solo loss y perplejidad de validación | no disponible | `safetensors` en HuggingFace |
-| Pythia-70M | 70 M | 2.048 tokens | benchmarks publicados por su autor; no comparables con esta ficha | Apache 2.0 | `safetensors` en HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | benchmarks publicados por su autor; no comparables con esta ficha | Apache 2.0 | `safetensors` en HuggingFace |
+| Yara-50M-PTBR-QA | 50,0 M | 1.024 tokens | sin benchmarks publicados; solo loss y perplejidad de validación | no disponible | `safetensors` en Hugging Face |
+| Pythia-70M | 70 M | 2.048 tokens | benchmarks publicados por su autor; no comparables con esta ficha | Apache 2.0 | `safetensors` en Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | benchmarks publicados por su autor; no comparables con esta ficha | Apache 2.0 | `safetensors` en Hugging Face |
 | Modelos pt-BR de 100-200 M (por ejemplo, la familia Tucano) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
 
 Diferencias estructurales destacables: Yara es el único de la comparativa entrenado específicamente en portugués brasileño para QA anclado a contexto con un protocolo de entrada propio, y el único sin licencia declarada, lo que limita su uso comercial sin aclaración previa del autor.
@@ -114,8 +114,8 @@ Diferencias estructurales destacables: Yara es el único de la comparativa entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Madras1/Yara-50M-PTBR-QA
+- Modelo en Hugging Face: https://huggingface.co/Madras1/Yara-50M-PTBR-QA
 - Dataset de preentrenamiento: https://huggingface.co/datasets/Madras1/corpus-ptbr-v1
 - Dataset de ajuste supervisado: https://huggingface.co/datasets/Madras1/rag-qa-fulltext-ptbr
 - Ficheros adicionales en el repositorio: `experiment_config.json` (configuración completa del experimento) y `metrics.jsonl` (logs de entrenamiento y validación del SFT).
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los únicos enlaces verificables son los del propio repositorio de HuggingFace. No se dispone de paper, blog, repositorio de código ni demo asociados.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo: los únicos enlaces verificables son los del propio repositorio de Hugging Face. No se dispone de paper, blog, repositorio de código ni demo asociados.

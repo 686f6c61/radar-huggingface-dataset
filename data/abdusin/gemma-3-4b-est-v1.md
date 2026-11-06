@@ -107,7 +107,7 @@ El modelo se posiciona como una alternativa de 4B especializada en estonio que, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdusin/gemma-3-4b-est-v1
+- Modelo en Hugging Face: https://huggingface.co/Abdusin/gemma-3-4b-est-v1
 - Modelo base: https://huggingface.co/google/gemma-3-4b-pt
 - Variante instruct de la base: https://huggingface.co/google/gemma-3-4b-it
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

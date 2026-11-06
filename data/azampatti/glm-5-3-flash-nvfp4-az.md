@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-NVFP4-AZ es una variante optimizada de GLM-5.3-Flash publicada por el usuario azampatti en HuggingFace. Se trata de un fine-tune de nvidia/GLM-5.3-Flash-FP4-Local, que a su vez es la build NVFP4 de NVIDIA (etiquetada como QAD) del modelo GLM-5.3-Flash original de zai-org. El modelo es un MoE (mixture-of-experts) multimodal de texto e imagen con 175.239.203.374 parametros totales segun los metadatos de safetensors, y cuyo objetivo es reducir la latencia de decodificacion sin perder calidad.
+GLM-5.3-Flash-NVFP4-AZ es una variante optimizada de GLM-5.3-Flash publicada por el usuario azampatti en Hugging Face. Se trata de un fine-tune de nvidia/GLM-5.3-Flash-FP4-Local, que a su vez es la build NVFP4 de NVIDIA (etiquetada como QAD) del modelo GLM-5.3-Flash original de zai-org. El modelo es un MoE (mixture-of-experts) multimodal de texto e imagen con 175.239.203.374 parametros totales segun los metadatos de safetensors, y cuyo objetivo es reducir la latencia de decodificacion sin perder calidad.
 
 La innovacion principal de esta variante es doble: por un lado, se reduce el numero de expertos enrutados por token de 8 a 4 (de 288 expertos por capa MoE), lo que reduce a la mitad los pesos de expertos leidos por token (~18 B a ~14 B de parametros activos en la parte enrutada); por otro, se aplican "shared experts sanados" (healed), entrenados mediante auto-distilacion KL en el modelo hermano GLM-5.3-Flash-AZ para que el modelo de 4 expertos reproduzca el comportamiento del de 8. Segun el autor, la calidad se mantiene dentro de ±1 % respecto a los pesos FP4-Local originales, con decodificacion mas rapida.
 

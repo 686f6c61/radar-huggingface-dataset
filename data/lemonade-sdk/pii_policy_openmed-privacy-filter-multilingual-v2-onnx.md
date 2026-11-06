@@ -74,7 +74,7 @@ No disponible. Este repositorio no es un modelo de lenguaje y no hay alternativa
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/lemonade-sdk/pii_policy_openmed-privacy-filter-multilingual-v2-onnx)
+- [Repositorio en Hugging Face](https://huggingface.co/lemonade-sdk/pii_policy_openmed-privacy-filter-multilingual-v2-onnx)
 - [Clasificador subyacente: openmed-privacy-filter-multilingual-v2-onnx](https://huggingface.co/lemonade-sdk/openmed-privacy-filter-multilingual-v2-onnx)
 - [Modelo clasificador original en OpenMed](https://huggingface.co/OpenMed/privacy-filter-multilingual-v2)
 - [Repositorio Lemonade en GitHub](https://github.com/lemonade-sdk/lemonade)

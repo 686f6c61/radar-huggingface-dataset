@@ -4,7 +4,7 @@
 
 `BrownieSundae/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v2` de Gymnasium, usando la librería stable-baselines3. No se trata de un modelo de lenguaje ni de un transformer generativo: es una política neuronal que controla la nave del módulo lunar en un simulador físico 2D, con el objetivo de aterrizar de forma segura entre dos banderas.
 
-El repositorio lo publica el usuario BrownieSundae y sigue la plantilla estándar de model cards de stable-baselines3, con la sección de uso marcada como "TODO" y sin código de inferencia completo. El tamaño del repositorio es de 0.0 GB según HuggingFace, lo que sugiere pesos de red muy pequeños (coherente con una política MLP de pocas capas), aunque no se especifica la arquitectura exacta.
+El repositorio lo publica el usuario BrownieSundae y sigue la plantilla estándar de model cards de stable-baselines3, con la sección de uso marcada como "TODO" y sin código de inferencia completo. El tamaño del repositorio es de 0.0 GB según Hugging Face, lo que sugiere pesos de red muy pequeños (coherente con una política MLP de pocas capas), aunque no se especifica la arquitectura exacta.
 
 Su relevancia es limitada fuera del ámbito educativo y de experimentación: sirve como ejemplo de entrenamiento PPO y como artefacto reproducible para el entorno LunarLander, pero no es un modelo apto para tareas de producción. El resultado declarado en la model card (mean_reward de -181.60 +/- 55.77) indica un rendimiento pobre y no verificado, por debajo del umbral de resolución del entorno (habitualmente considerado en torno a 200 de recompensa media).
 
@@ -39,10 +39,10 @@ No se especifican hiperparámetros de entrenamiento (número de timesteps, learn
 
 ## Casos de uso
 
-- Docencia de aprendizaje por refuerzo: sirve como ejemplo mínimo de agente PPO entrenado con stable-baselines3 para ilustrar el flujo `entrenar -> subir a HuggingFace -> cargar con huggingface_sb3` en un curso o taller.
+- Docencia de aprendizaje por refuerzo: sirve como ejemplo mínimo de agente PPO entrenado con stable-baselines3 para ilustrar el flujo `entrenar -> subir a Hugging Face -> cargar con huggingface_sb3` en un curso o taller.
 - Reproducción de experimentos: permite comparar una ejecución concreta de PPO frente a otras semillas o hiperparámetros en LunarLander-v2, dado que el entorno es determinista en su dinámica y barato de simular.
 - Baseline de referencia negativa: con un `mean_reward` de -181.60, es útil como ejemplo de política que no converge o converge a un óptimo local, para discutir en clase por qué PPO puede fallar con ciertos hiperparámetros.
-- Pruebas de infraestructura de evaluación: sirve para validar pipelines de `evaluate` de stable-baselines3 y el registro de `model-index` en HuggingFace antes de entrenar agentes más costosos.
+- Pruebas de infraestructura de evaluación: sirve para validar pipelines de `evaluate` de stable-baselines3 y el registro de `model-index` en Hugging Face antes de entrenar agentes más costosos.
 - Integración en tutoriales de `huggingface_sb3`: como artefacto de ejemplo para demostrar la carga desde el Hub en notebooks educativos.
 - Benchmarking de entornos Gymnasium: útil para comprobar que la instalación de `gymnasium[box2d]` y `swig` funciona correctamente antes de lanzar entrenamientos reales.
 
@@ -68,10 +68,10 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BrownieSundae/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| sb3/ppo-LunarLander-v2 (referencia de la comunidad) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| sb3/dqn-LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
-| sb3/a2c-LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no aplica | no disponible | HuggingFace |
+| BrownieSundae/ppo-LunarLander-v2 | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| sb3/ppo-LunarLander-v2 (referencia de la comunidad) | PPO | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| sb3/dqn-LunarLander-v2 | DQN | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
+| sb3/a2c-LunarLander-v2 | A2C | LunarLander-v2 | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La comparación se limita a la familia de algoritmos y al entorno.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrownieSundae/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/BrownieSundae/ppo-LunarLander-v2
 - stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3: https://github.com/huggingface/huggingface_sb3
 - Entorno LunarLander-v2 (Gymnasium): https://gymnasium.farama.org/environments/box2d/lunar_lander/

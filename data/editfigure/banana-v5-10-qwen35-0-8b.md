@@ -90,9 +90,9 @@ No se dispone de datos de modelos de layout comparables en la informacion propor
 
 | Modelo | Parametros | Contexto | F1 real_v1 | F1 real_v2 | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| banana-v5.10-qwen35-0.8B (checkpoint 24000) | 852.985.920 | 16.384 en servidor / 8.000 de entrenamiento | 80,7621% | 82,0209% | no disponible | HuggingFace, safetensors |
+| banana-v5.10-qwen35-0.8B (checkpoint 24000) | 852.985.920 | 16.384 en servidor / 8.000 de entrenamiento | 80,7621% | 82,0209% | no disponible | Hugging Face, safetensors |
 | banana checkpoint 18000 (misma familia) | no disponible | no disponible | 80,2814% | 81,8104% | no disponible | referencia interna en la model card |
-| Qwen/Qwen3.5-0.8B (modelo base) | no disponible en la informacion | no disponible | no evaluado con este protocolo | no evaluado con este protocolo | no disponible | HuggingFace |
+| Qwen/Qwen3.5-0.8B (modelo base) | no disponible en la informacion | no disponible | no evaluado con este protocolo | no evaluado con este protocolo | no disponible | Hugging Face |
 
 Comparativas con alternativas de la misma categoria (por ejemplo, modelos especializados en document layout o image-to-JSON): no disponible.
 
@@ -117,7 +117,7 @@ Comparativas con alternativas de la misma categoria (por ejemplo, modelos especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EditFigure/banana-v5.10-qwen35-0.8B
+- Modelo en Hugging Face: https://huggingface.co/EditFigure/banana-v5.10-qwen35-0.8B
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Los resultados de busqueda web proporcionados (dafont.com, hilos de 52pojie.cn y Zhihu sobre TikTok) no guardan relacion con el modelo y no se incluyen como referencias.
 

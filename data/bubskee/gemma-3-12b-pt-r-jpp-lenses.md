@@ -71,7 +71,7 @@ Advertencia del autor: el baseline J usa 775 prompts y los nuevos ajustes R/J++ 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bubskee/gemma-3-12b-pt-r-jpp-lenses` | 12B (base) | no disponible | Lentes R y J++ sobre 47 capas | Gemma | HuggingFace, 0 descargas |
+| `bubskee/gemma-3-12b-pt-r-jpp-lenses` | 12B (base) | no disponible | Lentes R y J++ sobre 47 capas | Gemma | Hugging Face, 0 descargas |
 | Lente J de Neuronpedia sobre Gemma 3 12B | 12B (base) | no disponible | Lente J con 775 prompts | no disponible | Referenciada en `provenance/baseline.json` |
 | Logit lens (línea base) | 12B (base) | no disponible | Proyección directa con cabeza de vocabulario | no aplica | Técnica estándar, sin release propio |
 
@@ -90,7 +90,7 @@ Advertencia del autor: el baseline J usa 775 prompts y los nuevos ajustes R/J++ 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bubskee/gemma-3-12b-pt-r-jpp-lenses
+- Hugging Face: https://huggingface.co/bubskee/gemma-3-12b-pt-r-jpp-lenses
 - Modelo base: https://huggingface.co/google/gemma-3-12b-pt
 - R-lens (LessWrong): https://www.lesswrong.com/posts/nv8oedrnLXKRzNEL9/r-lens-making-j-lens-more-faithful-on-early-layers
 - J++ lens (LessWrong): https://www.lesswrong.com/posts/nc9dHfcB22JdMzGbr/j-lens-jacobian-filtering-enables-more-faithful-workspace

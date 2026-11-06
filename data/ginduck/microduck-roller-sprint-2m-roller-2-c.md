@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-roller-sprint-2m-roller-2-c` es una política de control por refuerzo para el robot cuadrúpedo de bajo coste microduck de Pollen Robotics, publicada por el usuario GinDuck en HuggingFace. No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de entrenamiento (iteración 5500 de un total de 6000) que implementa una marcha o *gait* perpetua para un robot que se desplaza sobre ruedas (*rollers*). La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y se ejecuta de forma continua hasta que se le ordena detenerse.
+`microduck-roller-sprint-2m-roller-2-c` es una política de control por refuerzo para el robot cuadrúpedo de bajo coste microduck de Pollen Robotics, publicada por el usuario GinDuck en Hugging Face. No es un modelo de lenguaje ni un modelo fundacional: es un checkpoint de entrenamiento (iteración 5500 de un total de 6000) que implementa una marcha o *gait* perpetua para un robot que se desplaza sobre ruedas (*rollers*). La política consume observaciones de 61 dimensiones y emite 14 acciones a 50 Hz, y se ejecuta de forma continua hasta que se le ordena detenerse.
 
 El modelo se distribuye en formato ONNX, con el normalizador de observaciones embebido en el propio grafo, de modo que el consumidor debe alimentar observaciones en bruto. Se acompaña de un `manifest.json` que sigue el esquema 2 del manifiesto de políticas de microduck. El repositorio tiene un tamaño de 0,0 GB (probablemente por redondeo, dado que el archivo ONNX es pequeño). La licencia no está especificada.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 ## Requisitos de hardware
 
-- **VRAM estimada para inferencia**: no disponible; el repositorio ocupa 0,0 GB según HuggingFace, lo que sugiere un modelo ONNX de tamaño muy reducido, probablemente ejecutable en CPU.
+- **VRAM estimada para inferencia**: no disponible; el repositorio ocupa 0,0 GB según Hugging Face, lo que sugiere un modelo ONNX de tamaño muy reducido, probablemente ejecutable en CPU.
 - **GPU recomendadas**: no disponibles. Para el entrenamiento, el autor emplea 2048 entornos paralelos, lo que implica una GPU de gama alta (no especificada); para inferencia no se documenta requisito alguno.
 - **Viabilidad en GPU de consumo**: no confirmada explícitamente, pero el tamaño del artefacto y el hecho de que sea una política de 61 entradas y 14 salidas hacen plausible la inferencia en CPU o en GPU de gama baja; no hay datos publicados que lo confirmen.
 - **Opciones de despliegue**: `robotctl policy load <slot> GinDuck/microduck-roller-sprint-2m-roller-2-c` sobre el daemon de microduck; el runtime subyacente es ONNX.
@@ -86,7 +86,7 @@ No se dispone de información sobre otras políticas comparables en la misma fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-2-c
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-2-c
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges (rama `race-2`, commit `b44f7ffc9`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

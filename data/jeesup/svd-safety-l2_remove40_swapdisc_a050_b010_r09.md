@@ -29,7 +29,7 @@ Su relevancia actual es metodológica: sirve para cuantificar el compromiso entr
 | Rondas iterativas aplicadas | 9 de 10 (trozo de 0,100 % de parametros densos por ronda) |
 | Semilla | 42 |
 | Tamano del repositorio | 13,5 GB |
-| Fecha de creacion en HuggingFace | 2026-09-14 (segun metadatos del repositorio) |
+| Fecha de creacion en Hugging Face | 2026-09-14 (segun metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -109,11 +109,11 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r09
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_a050_b010_r09
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Celda hermana de la rejilla (`swapdisc_b010`): https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapdisc_b010
 - Celda hermana de la rejilla (`disc_b010`): https://huggingface.co/Jeesup/svd-safety-l2_remove40_disc_b010
 - Licencia Llama 2: incluida en el repositorio como `LICENSE.txt` y `USE_POLICY.md`
 - Paper de SVD-LLM: no disponible en los resultados de busqueda
 - Repositorio de codigo, blog o demo del autor: no disponible en los resultados de busqueda
-- Nota sobre la busqueda web: los resultados obtenidos no contienen informacion tecnica relevante sobre el modelo; se limitan a las paginas de HuggingFace citadas arriba y a resultados no relacionados (paginas de ayuda de inicio de sesion de Gmail)
+- Nota sobre la busqueda web: los resultados obtenidos no contienen informacion tecnica relevante sobre el modelo; se limitan a las paginas de Hugging Face citadas arriba y a resultados no relacionados (paginas de ayuda de inicio de sesion de Gmail)

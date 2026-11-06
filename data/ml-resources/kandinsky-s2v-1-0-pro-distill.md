@@ -72,8 +72,8 @@ La compilación con `torch.compile` añade unos 20 segundos iniciales por ejecuc
 
 | Modelo | Parámetros | Enfoque | Contexto / fragmentos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky S2V 1.0 Pro distilled | 21,4 B (DiT) | Speech-to-video con animación de figura completa | Fragmentos de 5 s, memoria FramePack | MIT | HuggingFace, código en GitHub |
-| Kandinsky S2V 1.0 Pro (base) | 21,4 B (DiT) | Igual, muestreo de 50 pasos | Igual | MIT | HuggingFace |
+| Kandinsky S2V 1.0 Pro distilled | 21,4 B (DiT) | Speech-to-video con animación de figura completa | Fragmentos de 5 s, memoria FramePack | MIT | Hugging Face, código en GitHub |
+| Kandinsky S2V 1.0 Pro (base) | 21,4 B (DiT) | Igual, muestreo de 50 pasos | Igual | MIT | Hugging Face |
 | Otros modelos de avatares parlantes | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada solo permite comparar con la variante base del mismo modelo, que comparte pesos y arquitectura pero requiere 50 pasos de muestreo y un pase negativo de classifier-free guidance, siendo aproximadamente 5 veces más lenta. No se dispone de datos de benchmarks ni de especificaciones de modelos competidores en la información consultada.
@@ -91,13 +91,13 @@ La información proporcionada solo permite comparar con la variante base del mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro-distill
+- Modelo en Hugging Face: https://huggingface.co/ml-resources/Kandinsky-S2V-1.0-Pro-distill
 - Modelo base: https://huggingface.co/kandinskylab/Kandinsky-S2V-1.0-Pro
 - Paper (arXiv 2610.19290): https://arxiv.org/pdf/2610.19290
 - Página del proyecto: https://kandinskyavatar.github.io
 - Repositorio de código: https://github.com/kandinskylab/kandinsky-s2v
-- Colección de modelos en HuggingFace: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
+- Colección de modelos en Hugging Face: https://huggingface.co/collections/kandinskylab/kandinsky-s2v-10-6ab65ebe8f765b6dd9d706d7
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/kandinskylab/Kandinsky-S2V-1.0-Demo
 - Qwen2.5-Omni-7B: https://huggingface.co/Qwen/Qwen2.5-Omni-7B
 - CLIP ViT-L/14: https://huggingface.co/openai/clip-vit-large-patch14
 - HunyuanVideo (VAE): https://huggingface.co/hunyuanvideo-community/HunyuanVideo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anonymoussechocolate/comfyui` alojado en HuggingFace es un espacio de 173,4 GB creado por un usuario anónimo en julio de 2026. A pesar de su nombre, no se dispone de información pública que confirme que contenga un modelo de IA específico; podría tratarse de un checkpoint, un conjunto de pesos o incluso archivos de configuración para ComfyUI, la popular interfaz de nodos para generación de imágenes. Sin embargo, la ausencia de metadatos técnicos (arquitectura, parámetros, licencia, idiomas) y el bajo número de descargas (16) y likes (0) indican que no es un modelo verificado ni ampliamente utilizado.
+El repositorio `anonymoussechocolate/comfyui` alojado en Hugging Face es un espacio de 173,4 GB creado por un usuario anónimo en julio de 2026. A pesar de su nombre, no se dispone de información pública que confirme que contenga un modelo de IA específico; podría tratarse de un checkpoint, un conjunto de pesos o incluso archivos de configuración para ComfyUI, la popular interfaz de nodos para generación de imágenes. Sin embargo, la ausencia de metadatos técnicos (arquitectura, parámetros, licencia, idiomas) y el bajo número de descargas (16) y likes (0) indican que no es un modelo verificado ni ampliamente utilizado.
 
 Dado que no hay documentación ni ficha técnica asociada, cualquier afirmación sobre sus capacidades sería especulativa. Esta ficha se limita a reflejar la información disponible y a señalar las carencias de datos, advirtiendo de los riesgos de usar un repositorio sin trazabilidad.
 
@@ -21,7 +21,7 @@ Dado que no hay documentación ni ficha técnica asociada, cualquier afirmación
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado ni las tecnicas de optimizacion (RLHF, DPO, etc.). El nombre del repositorio sugiere una relacion con ComfyUI, pero no se puede determinar si contiene un modelo base, un fine-tuning, un LoRA o simplemente archivos auxiliares. La falta de metadatos en HuggingFace (pipeline, licencia, tags solo indican "gguf" y "region:us") impide cualquier analisis tecnico.
+No se ha publicado ninguna informacion sobre la arquitectura, el proceso de entrenamiento, el dataset utilizado ni las tecnicas de optimizacion (RLHF, DPO, etc.). El nombre del repositorio sugiere una relacion con ComfyUI, pero no se puede determinar si contiene un modelo base, un fine-tuning, un LoRA o simplemente archivos auxiliares. La falta de metadatos en Hugging Face (pipeline, licencia, tags solo indican "gguf" y "region:us") impide cualquier analisis tecnico.
 
 ## Capacidades
 
@@ -53,6 +53,6 @@ No disponible. No se puede comparar con otros modelos porque se desconoce la ide
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anonymoussechocolate/comfyui
+- Repositorio en Hugging Face: https://huggingface.co/anonymoussechocolate/comfyui
 - ComfyUI (proyecto general, no relacionado directamente con este repositorio): https://github.com/Comfy-Org/ComfyUI
 - Modelos soportados por ComfyUI: https://comfy.org/models/

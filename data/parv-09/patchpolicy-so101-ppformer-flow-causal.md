@@ -81,4 +81,4 @@ No se dispone de modelos comparables de terceros en la información proporcionad
 
 ## Enlaces
 
-- [HuggingFace: Parv-09/patchpolicy-so101-ppformer-flow-causal](https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-flow-causal)
+- [Hugging Face: Parv-09/patchpolicy-so101-ppformer-flow-causal](https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-flow-causal)

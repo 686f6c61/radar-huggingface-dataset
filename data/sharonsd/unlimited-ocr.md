@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited-OCR es un modelo de vision-lenguaje especializado en extraccion y parseo de texto a partir de imagenes y documentos, orientado a lo que el autor denomina "parseo de largo horizonte en un solo paso" (one-shot long-horizon parsing). El repositorio analizado, `sharonSD/Unlimited-OCR`, es una redistribucion del modelo original `baidu/Unlimited-OCR` desarrollado por Baidu Inc.; la model card, los badges y los enlaces del repositorio apuntan a la organizacion Baidu, el repositorio GitHub `baidu/Unlimited-OCR` y el articulo `arXiv:2606.23050`, mientras que el autor de la subida en HuggingFace figura como `sharonSD`.
+Unlimited-OCR es un modelo de vision-lenguaje especializado en extraccion y parseo de texto a partir de imagenes y documentos, orientado a lo que el autor denomina "parseo de largo horizonte en un solo paso" (one-shot long-horizon parsing). El repositorio analizado, `sharonSD/Unlimited-OCR`, es una redistribucion del modelo original `baidu/Unlimited-OCR` desarrollado por Baidu Inc.; la model card, los badges y los enlaces del repositorio apuntan a la organizacion Baidu, el repositorio GitHub `baidu/Unlimited-OCR` y el articulo `arXiv:2606.23050`, mientras que el autor de la subida en Hugging Face figura como `sharonSD`.
 
 El modelo cuenta con 3.336.106.240 parametros (aproximadamente 3,34 mil millones) y se distribuye en safetensors con un tamano de repositorio de 6,8 GB. La model card lo presenta como una evolucion de DeepSeek-OCR, con soporte de inferencia en transformers, vLLM y SGLang, y entrenamiento mediante ms-swift. Su relevancia actual radica en el interes creciente por pipelines de document AI capaces de procesar documentos completos (incluidos PDF multipagina) sin segmentacion manual previa.
 
@@ -67,7 +67,7 @@ La model card situa explicitamente a Unlimited-OCR como una evolucion de DeepSee
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sharonSD/Unlimited-OCR | 3,34 B | hasta 32.768 tokens en inferencia documentada | MIT | HuggingFace, ModelScope, vLLM, SGLang, Baidu Cloud |
+| sharonSD/Unlimited-OCR | 3,34 B | hasta 32.768 tokens en inferencia documentada | MIT | Hugging Face, ModelScope, vLLM, SGLang, Baidu Cloud |
 | DeepSeek-OCR | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para comparar con otras alternativas de OCR basado en vision-lenguaje.
@@ -87,11 +87,11 @@ No se dispone de datos suficientes para comparar con otras alternativas de OCR b
 
 ## Enlaces
 
-- Repositorio HuggingFace analizado: https://huggingface.co/sharonSD/Unlimited-OCR
-- Repositorio HuggingFace oficial: https://huggingface.co/baidu/Unlimited-OCR
+- Repositorio Hugging Face analizado: https://huggingface.co/sharonSD/Unlimited-OCR
+- Repositorio Hugging Face oficial: https://huggingface.co/baidu/Unlimited-OCR
 - Codigo en GitHub: https://github.com/baidu/Unlimited-OCR
 - Articulo en arXiv: https://arxiv.org/abs/2606.23050
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
 - Receta oficial de vLLM: https://recipes.vllm.ai/baidu/Unlimited-OCR
 - ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR
 - Documentacion en Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb

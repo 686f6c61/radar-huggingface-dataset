@@ -82,7 +82,7 @@ La diferencia principal frente al modelo base taiwanés es el formato y la cuant
 
 ## Enlaces
 
-- [HuggingFace: NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC](https://huggingface.co/NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC)
+- [Hugging Face: NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC](https://huggingface.co/NKNULis/Llama-3-Taiwan-8B-Instruct-q4f16_1-MLC)
 - [Modelo base: yentinglin/Llama-3-Taiwan-8B-Instruct](https://huggingface.co/yentinglin/Llama-3-Taiwan-8B-Instruct)
 - [MLC LLM](https://llm.mlc.ai/)
 - [WebLLM (GitHub)](https://github.com/mlc-ai/web-llm)

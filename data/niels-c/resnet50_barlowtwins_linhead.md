@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Arquitectura | Preentrenamiento | Cabeza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| niels-c/resnet50_barlowtwins_linhead | ResNet-50 | Barlow Twins (auto-supervisado, ImageNet-1k) | Lineal congelada | MIT | HuggingFace, 0 descargas, 0 likes |
-| niels-c/resnet50_untrained_linhead | ResNet-50 | Sin preentrenar | Lineal | no disponible | HuggingFace (baseline del autor) |
+| niels-c/resnet50_barlowtwins_linhead | ResNet-50 | Barlow Twins (auto-supervisado, ImageNet-1k) | Lineal congelada | MIT | Hugging Face, 0 descargas, 0 likes |
+| niels-c/resnet50_untrained_linhead | ResNet-50 | Sin preentrenar | Lineal | no disponible | Hugging Face (baseline del autor) |
 | ResNet-50 supervisado (torchvision) | ResNet-50 | Supervisado (ImageNet-1k) | Fully connected fine-tuned | BSD-3-Clause | torchvision |
 | Backbone Barlow Twins original (facebookresearch) | ResNet-50 | Barlow Twins (auto-supervisado, ImageNet-1k) | Sin cabeza de clasificación | según repositorio de origen | GitHub |
 
@@ -81,7 +81,7 @@ La comparación directa de precisión no puede realizarse con los datos disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niels-c/resnet50_barlowtwins_linhead
+- Modelo en Hugging Face: https://huggingface.co/niels-c/resnet50_barlowtwins_linhead
 - Baseline no entrenado: https://huggingface.co/niels-c/resnet50_untrained_linhead
 - Paper Barlow Twins: https://arxiv.org/abs/2103.03230
 - Repositorio original de Barlow Twins: https://github.com/facebookresearch/barlowtwins

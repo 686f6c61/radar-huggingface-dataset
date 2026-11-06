@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Desm0nt/test1` es un repositorio de modelo alojado en HuggingFace por el usuario Desm0nt, publicado el 26 de agosto de 2024 y actualizado por última vez el 19 de octubre de 2026. La model card asociada no contiene más que una línea de metadatos con la licencia MIT: no se documenta arquitectura, número de parámetros, longitud de contexto, idiomas, datos de entrenamiento ni uso previsto. El repositorio no registra descargas ni likes en el momento de la consulta.
+`Desm0nt/test1` es un repositorio de modelo alojado en Hugging Face por el usuario Desm0nt, publicado el 26 de agosto de 2024 y actualizado por última vez el 19 de octubre de 2026. La model card asociada no contiene más que una línea de metadatos con la licencia MIT: no se documenta arquitectura, número de parámetros, longitud de contexto, idiomas, datos de entrenamiento ni uso previsto. El repositorio no registra descargas ni likes en el momento de la consulta.
 
-El único dato técnico objetivo disponible es el tamaño del repositorio, 45,8 GB, que indica que contiene pesos de un modelo de cierto tamano, pero no permite determinar de forma fiable el número de parámetros ni la precisión de almacenamiento, ya que el repositorio podría incluir varias cuantizaciones, checkpoints intermedios u otros artefactos. No hay información sobre pipeline declarado en HuggingFace.
+El único dato técnico objetivo disponible es el tamaño del repositorio, 45,8 GB, que indica que contiene pesos de un modelo de cierto tamano, pero no permite determinar de forma fiable el número de parámetros ni la precisión de almacenamiento, ya que el repositorio podría incluir varias cuantizaciones, checkpoints intermedios u otros artefactos. No hay información sobre pipeline declarado en Hugging Face.
 
 Se trata, por tanto, de un artefacto sin documentación verificable. La ficha que sigue refleja exclusivamente lo que consta en la información proporcionada y marca de forma explícita cada dato ausente; no debe interpretarse como una evaluación de capacidad del modelo, que no puede realizarse sin documentación técnica ni resultados publicados.
 
@@ -68,7 +68,7 @@ No disponible. La ausencia de datos sobre arquitectura, parámetros, contexto y 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Desm0nt/test1 | no disponible | no disponible | MIT | HuggingFace |
+| Desm0nt/test1 | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No disponible. La ausencia de datos sobre arquitectura, parámetros, contexto y 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Desm0nt/test1
+- Hugging Face: https://huggingface.co/Desm0nt/test1
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

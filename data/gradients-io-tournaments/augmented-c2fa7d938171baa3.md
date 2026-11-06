@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/augmented-c2fa7d938171baa3` es un checkpoint de generación de texto publicado en HuggingFace por la organización `gradients-io-tournaments`, un espacio que por su nombre parece vinculado a competiciones o experimentos internos de ajuste de modelos. Se trata de un transformer de tipo decoder-only de la familia Llama, con 1.235.814.400 parámetros (aproximadamente 1,24 mil millones) según los metadatos de los pesos en safetensors, y un tamaño de repositorio de 2,5 GB, coherente con un checkpoint en precisión de 16 bits.
+El modelo identificado como `gradients-io-tournaments/augmented-c2fa7d938171baa3` es un checkpoint de generación de texto publicado en Hugging Face por la organización `gradients-io-tournaments`, un espacio que por su nombre parece vinculado a competiciones o experimentos internos de ajuste de modelos. Se trata de un transformer de tipo decoder-only de la familia Llama, con 1.235.814.400 parámetros (aproximadamente 1,24 mil millones) según los metadatos de los pesos en safetensors, y un tamaño de repositorio de 2,5 GB, coherente con un checkpoint en precisión de 16 bits.
 
-La model card publicada es la plantilla automática de HuggingFace sin ningún campo completado: no incluye autoría real, descripción, datos de entrenamiento, evaluación ni licencia. Tampoco hay información sobre la longitud de contexto, los idiomas soportados o el procedimiento de ajuste. Las búsquedas web realizadas no han devuelto documentación técnica asociada; los resultados obtenidos eran irrelevantes (páginas de IMDb) y no guardan relación con el modelo.
+La model card publicada es la plantilla automática de Hugging Face sin ningún campo completado: no incluye autoría real, descripción, datos de entrenamiento, evaluación ni licencia. Tampoco hay información sobre la longitud de contexto, los idiomas soportados o el procedimiento de ajuste. Las búsquedas web realizadas no han devuelto documentación técnica asociada; los resultados obtenidos eran irrelevantes (páginas de IMDb) y no guardan relación con el modelo.
 
 Por todo ello, esta ficha describe con rigor el único dato verificable (el tamaño y el formato de los pesos) y marca explícitamente como "no disponible" cualquier otro parámetro. Es relevante precisamente por lo contrario de lo habitual: sirve como ejemplo de checkpoint opaco dentro de un repositorio de torneos, y quien quiera evaluarlo deberá hacerlo mediante inspección directa del modelo y no a través de su documentación.
 
@@ -28,7 +28,7 @@ Por todo ello, esta ficha describe con rigor el único dato verificable (el tama
 
 No se ha publicado información sobre la arquitectura interna más allá de la etiqueta `llama` y de la librería declarada (`transformers`). El recuento real de parámetros (1.235.814.400) es compatible con un transformer decoder-only de la familia Llama en el rango de los 1,2 mil millones de parámetros, pero no hay confirmación de número de capas, dimensión oculta, número de cabezas de atención, uso de GQA, tamaño de vocabulario ni función de activación. Tampoco consta si emplea atención con ventana deslizante, RoPE u otra codificación posicional.
 
-Respecto al entrenamiento, la model card automática deja todos los campos vacíos: no se especifican el número de tokens, la composición del dataset, el régimen de precisión, si hubo fases de instrucción, RLHF, DPO u otro ajuste por preferencias, ni los recursos de cómputo utilizados. El único elemento potencialmente informativo de la ficha es la referencia al paper 1910.09700, que corresponde a Lacoste et al. sobre estimación de emisiones de carbono y que aparece en la plantilla por defecto de HuggingFace, no porque el autor lo haya citado deliberadamente. El nombre del repositorio incluye el término `augmented`, que podría indicar alguna forma de aumento o expansión del modelo base, pero se trata de una especulación sin respaldo documental.
+Respecto al entrenamiento, la model card automática deja todos los campos vacíos: no se especifican el número de tokens, la composición del dataset, el régimen de precisión, si hubo fases de instrucción, RLHF, DPO u otro ajuste por preferencias, ni los recursos de cómputo utilizados. El único elemento potencialmente informativo de la ficha es la referencia al paper 1910.09700, que corresponde a Lacoste et al. sobre estimación de emisiones de carbono y que aparece en la plantilla por defecto de Hugging Face, no porque el autor lo haya citado deliberadamente. El nombre del repositorio incluye el término `augmented`, que podría indicar alguna forma de aumento o expansión del modelo base, pero se trata de una especulación sin respaldo documental.
 
 ## Capacidades
 
@@ -72,16 +72,16 @@ La comparación se ve limitada porque los datos del modelo analizado (contexto, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gradients-io-tournaments/augmented-c2fa7d938171baa3` | 1,24 B | No disponible | No disponible | HuggingFace, sin documentación |
-| Llama 3.2 1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace, model card completa |
-| Qwen2.5 1.5B | ≈1,5 B | 32 768 tokens | Apache 2.0 | HuggingFace, model card completa |
-| TinyLlama 1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | HuggingFace, model card completa |
+| `gradients-io-tournaments/augmented-c2fa7d938171baa3` | 1,24 B | No disponible | No disponible | Hugging Face, sin documentación |
+| Llama 3.2 1B | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face, model card completa |
+| Qwen2.5 1.5B | ≈1,5 B | 32 768 tokens | Apache 2.0 | Hugging Face, model card completa |
+| TinyLlama 1.1B | 1,1 B | 2 048 tokens | Apache 2.0 | Hugging Face, model card completa |
 
 La diferencia fundamental no es de arquitectura ni de tamaño, sino de trazabilidad: los tres modelos de referencia publican datos de entrenamiento, evaluación, plantilla de chat y licencia, mientras que el checkpoint analizado carece de todos ellos. En términos de rendimiento no es posible establecer comparación alguna porque no hay métricas publicadas para el modelo de `gradients-io-tournaments`.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla por defecto de HuggingFace sin ningún campo completado, por lo que se desconoce qué modelo base se usó, con qué datos se entrenó y bajo qué condiciones.
+- Ausencia total de documentación: la model card es la plantilla por defecto de Hugging Face sin ningún campo completado, por lo que se desconoce qué modelo base se usó, con qué datos se entrenó y bajo qué condiciones.
 - Licencia no declarada: sin licencia explícita, el uso comercial queda en una zona legal indeterminada. No debe desplegarse en producción sin aclarar previamente los términos con el autor.
 - Riesgo elevado de alucinación: al ser un modelo de ~1,24 B de parámetros y sin evaluación publicada, la generación de contenido falso o incoherente es esperable, especialmente en tareas de conocimiento factual.
 - Sesgos desconocidos: al no documentarse la composición del dataset ni las fases de alineación, no es posible anticipar sesgos de género, raza, idioma o ideología.
@@ -94,7 +94,7 @@ La diferencia fundamental no es de arquitectura ni de tamaño, sino de trazabili
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-c2fa7d938171baa3
-- Organización en HuggingFace: https://huggingface.co/gradients-io-tournaments
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-c2fa7d938171baa3
+- Organización en Hugging Face: https://huggingface.co/gradients-io-tournaments
 - Referencia citada en las etiquetas, Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning": https://arxiv.org/abs/1910.09700
 - Paper, blog, repositorio o demo específicos del modelo: no disponibles. La búsqueda web no devolvió ningún resultado relacionado con este checkpoint.

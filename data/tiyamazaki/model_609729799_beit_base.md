@@ -63,7 +63,7 @@ No se dispone de datos suficientes para realizar una comparativa. La arquitectur
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tiyamazaki/model_609729799_beit_base
+- Repositorio Hugging Face: https://huggingface.co/Tiyamazaki/model_609729799_beit_base
 - Documentación de BEiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/beit
 - Repositorio de Microsoft UNILM (BEiT original): https://github.com/microsoft/unilm/tree/master/beit
 - Modelo BEiT base de Microsoft en Hugging Face: https://huggingface.co/microsoft/beit-base-patch16-224

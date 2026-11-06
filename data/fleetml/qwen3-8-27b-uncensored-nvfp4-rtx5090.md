@@ -83,7 +83,7 @@ La comparativa se basa en las características declaradas en las respectivas mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-NVFP4-RTX5090
+- Modelo en Hugging Face: https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-NVFP4-RTX5090
 - Modelo base (abliterated): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter DSpark asociado: https://huggingface.co/fleetml/Qwen3.8-27B-Uncensored-DSpark-RTX5090

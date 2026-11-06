@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Occamy-1.0-oQ4e es una conversion cuantizada a 4 bits del modelo etiquetado como `qwen3_5_moe`, publicada por el usuario luvhex en HuggingFace. Se trata de una version de precision mixta generada con la herramienta oQ (oMLX v0.6.4), empaquetada en formato MLX safetensors, es decir, pensada exclusivamente para ejecutarse sobre el framework MLX de Apple en equipos con chip de la serie M.
+Occamy-1.0-oQ4e es una conversion cuantizada a 4 bits del modelo etiquetado como `qwen3_5_moe`, publicada por el usuario luvhex en Hugging Face. Se trata de una version de precision mixta generada con la herramienta oQ (oMLX v0.6.4), empaquetada en formato MLX safetensors, es decir, pensada exclusivamente para ejecutarse sobre el framework MLX de Apple en equipos con chip de la serie M.
 
 El repositorio contiene 35.107.181.936 parametros totales (unos 35,1 mil millones) y ocupa 21,1 GB en disco, lo que es coherente con un pesaje de 4 bits con group size 64. Al estar etiquetado como `qwen3_5_moe`, la arquitectura subyacente es un transformer con mezcla de expertos (MoE), aunque el autor no documenta el modelo base exacto, el numero de parametros activos por token ni el contexto soportado.
 
@@ -91,7 +91,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque no se id
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/luvhex/occamy-1.0-oQ4e
+- Repositorio en Hugging Face: https://huggingface.co/luvhex/occamy-1.0-oQ4e
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Paper, blog o demo del modelo: no disponible
 - Resultados de la busqueda web: no se ha encontrado ninguna referencia tecnica relevante; los resultados devueltos correspondian a enlaces genericos de YouTube sin relacion con el modelo.

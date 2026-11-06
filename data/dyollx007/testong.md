@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dyollx007/testong` es un modelo alojado en HuggingFace por el usuario `dyollx007`. Se publicó con licencia MIT y la etiqueta `region:us`, pero no incluye ninguna otra información en su model card más allá de la declaración de licencia. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, y no se ha especificado el tipo de pipeline (texto, imagen, audio, etc.) para el que está pensado.
+El repositorio `dyollx007/testong` es un modelo alojado en Hugging Face por el usuario `dyollx007`. Se publicó con licencia MIT y la etiqueta `region:us`, pero no incluye ninguna otra información en su model card más allá de la declaración de licencia. En el momento de la consulta, el modelo registra 0 descargas y 0 likes, y no se ha especificado el tipo de pipeline (texto, imagen, audio, etc.) para el que está pensado.
 
 Al no existir documentación técnica, datos de arquitectura, parámetros, contexto o capacidades, este modelo no puede ser evaluado ni comparado con alternativas existentes. La fecha de creación y actualización (2026-09-04) es posterior a la fecha actual, lo que sugiere que podría tratarse de un repositorio vacío, un marcador de posición o un error en la fecha del sistema.
 
@@ -54,10 +54,10 @@ No disponible. Sin datos de arquitectura, parámetros, contexto o benchmarks, no
 ## Limitaciones y advertencias
 
 - La ausencia total de documentación técnica impide evaluar la fiabilidad, los sesgos o el riesgo de alucinación del modelo.
-- El repositorio no contiene pesos publicados ni instrucciones de uso, por lo que no se puede ejecutar localmente ni a través de la API de HuggingFace.
+- El repositorio no contiene pesos publicados ni instrucciones de uso, por lo que no se puede ejecutar localmente ni a través de la API de Hugging Face.
 - La fecha de creación (2026-09-04) es posterior a la fecha actual, lo que puede indicar un repositorio vacío o un error en la generación de los metadatos.
 - La licencia MIT permite el uso comercial, pero al no haber código ni pesos distribuidos, este permiso carece de aplicabilidad práctica.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dyollx007/testong
+- Repositorio en Hugging Face: https://huggingface.co/dyollx007/testong

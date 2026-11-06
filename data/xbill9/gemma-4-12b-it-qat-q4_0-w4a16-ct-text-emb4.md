@@ -87,7 +87,7 @@ La diferencia principal entre el modelo de esta ficha y el repack solo-text prev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text-emb4
 - Repack previo solo texto sin embeddings int4: https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-w4a16-ct-text
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Checkpoint QAT oficial en compressed-tensors: https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-Heretic-Abliterated-GGUF es una variante cuantizada en formato GGUF del modelo LFM3-1.7B de Liquid AI, publicada por el usuario Vortecks en HuggingFace. El modelo base es un modelo de texto para agentes locales y aplicaciones especializadas, construido sobre la arquitectura tri-híbrida de Liquid AI, con una ventana de contexto de 256K tokens y orientado al uso como asistente, tool calling, salidas estructuradas y despliegue en edge.
+LFM3-1.7B-Heretic-Abliterated-GGUF es una variante cuantizada en formato GGUF del modelo LFM3-1.7B de Liquid AI, publicada por el usuario Vortecks en Hugging Face. El modelo base es un modelo de texto para agentes locales y aplicaciones especializadas, construido sobre la arquitectura tri-híbrida de Liquid AI, con una ventana de contexto de 256K tokens y orientado al uso como asistente, tool calling, salidas estructuradas y despliegue en edge.
 
 La particularidad de esta versión es que se trata de una variante "heretic abliterated": se han identificado y ablatado las direcciones de rechazo en el espacio de activaciones del modelo para eliminar su comportamiento de negación incorporado. El resultado es una versión "uncensored" que complirá con un rango más amplio de prompts que la versión instruction-tuned original, pero sin los mecanismos de seguridad habituales.
 

@@ -85,7 +85,7 @@ La comparación con el modelo base es directa: misma arquitectura y capacidades,
 
 ## Enlaces
 
-- [Modelo en HuggingFace: krthkyadtya/Qwen3.8-27B-heretic](https://huggingface.co/krthkyadtya/Qwen3.8-27B-heretic)
+- [Modelo en Hugging Face: krthkyadtya/Qwen3.8-27B-heretic](https://huggingface.co/krthkyadtya/Qwen3.8-27B-heretic)
 - [Modelo base: Qwen/Qwen3.8-27B-FP8](https://huggingface.co/Qwen/Qwen3.8-27B-FP8)
 - [Herramienta Heretic (GitHub)](https://github.com/p-e-w/heretic)
 - [Versión GGUF de terceros: mradermacher/Qwen-3.8-27B-Heretic-GGUF](https://huggingface.co/mradermacher/Qwen-3.8-27B-Heretic-GGUF)

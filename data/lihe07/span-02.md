@@ -2,7 +2,7 @@
 
 ## Resumen
 
-span-02 es un modelo de decision (decision model) desarrollado por lihe07 (Harvey Li) y publicado en HuggingFace. No es un generador de texto libre: responde preguntas tipadas sobre un estado (JSON o texto, mas hasta 4 imagenes) devolviendo una distribucion de probabilidad completa sobre las opciones, en el formato de cable `/v1/systemone` de Decision Index. Es un fine-tune de `google/gemma-4-26B-A4B-it`, un transformer de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parametros activos por token.
+span-02 es un modelo de decision (decision model) desarrollado por lihe07 (Harvey Li) y publicado en Hugging Face. No es un generador de texto libre: responde preguntas tipadas sobre un estado (JSON o texto, mas hasta 4 imagenes) devolviendo una distribucion de probabilidad completa sobre las opciones, en el formato de cable `/v1/systemone` de Decision Index. Es un fine-tune de `google/gemma-4-26B-A4B-it`, un transformer de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parametros activos por token.
 
 El checkpoint esta cuantizado de forma nativa para un motor propio (NVFP4 en los expertos MoE, FP8 en las capas densas y de atencion) y se sirve con un motor Rust/CUDA incluido en el propio repositorio (`engine/`), disenado exclusivamente para GPUs NVIDIA Blackwell con compute capability 12.0 (`sm_120a`): RTX 5090 y RTX PRO 6000. El repositorio declara 15.815.134.090 parametros y ocupa 16,4 GB; la memoria de GPU en servicio es de unos 26 GB.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| span-02 | 15.815.134.090 (safetensors) | ~4B por token | no disponible | Apache 2.0 | HuggingFace, motor propio | Fine-tune de decision, salidas tipadas, cuantizado NVFP4/FP8, solo sm_120a |
-| google/gemma-4-26B-A4B-it | no disponible | ~4B por token | no disponible | Licencia Gemma 4 | HuggingFace | Modelo base multimodal; sin salidas tipadas de decision |
-| google/gemma-4-26B-A4B-it-assistant | no disponible | no disponible | no disponible | no disponible | HuggingFace | Borrador MTP para decodificacion especulativa; se descarga aparte |
+| span-02 | 15.815.134.090 (safetensors) | ~4B por token | no disponible | Apache 2.0 | Hugging Face, motor propio | Fine-tune de decision, salidas tipadas, cuantizado NVFP4/FP8, solo sm_120a |
+| google/gemma-4-26B-A4B-it | no disponible | ~4B por token | no disponible | Licencia Gemma 4 | Hugging Face | Modelo base multimodal; sin salidas tipadas de decision |
+| google/gemma-4-26B-A4B-it-assistant | no disponible | no disponible | no disponible | no disponible | Hugging Face | Borrador MTP para decodificacion especulativa; se descarga aparte |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables, por lo que la comparacion de rendimiento queda como no disponible.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lihe07/span-02
+- Modelo en Hugging Face: https://huggingface.co/lihe07/span-02
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Borrador MTP (assistant): https://huggingface.co/google/gemma-4-26B-A4B-it-assistant
 - Documentacion de la API System One de TypeSafe: https://docs.typesafe.ai/api

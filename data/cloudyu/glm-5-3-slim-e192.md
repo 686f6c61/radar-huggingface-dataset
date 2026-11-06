@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-SLIM-E192 es una variante podada del modelo MoE GLM-5.3 de zai-org, publicada por el usuario cloudyu en HuggingFace. Se trata de un proceso de *expert pruning* sobre las capas MoE: de los 256 expertos enrutados originales se conservan 192 por capa, mientras que la atencion (MLA + DSA), los expertos compartidos, las capas densas, los embeddings, el router, el tokenizador, la plantilla de chat y el formato de pesos FP8 block-128 permanecen identicos al modelo base. El checkpoint pesa 564 GB frente a los 756 GB del original, una reduccion del 25 % en el tamaño de los pesos de expertos.
+GLM-5.3-SLIM-E192 es una variante podada del modelo MoE GLM-5.3 de zai-org, publicada por el usuario cloudyu en Hugging Face. Se trata de un proceso de *expert pruning* sobre las capas MoE: de los 256 expertos enrutados originales se conservan 192 por capa, mientras que la atencion (MLA + DSA), los expertos compartidos, las capas densas, los embeddings, el router, el tokenizador, la plantilla de chat y el formato de pesos FP8 block-128 permanecen identicos al modelo base. El checkpoint pesa 564 GB frente a los 756 GB del original, una reduccion del 25 % en el tamaño de los pesos de expertos.
 
 El objetivo declarado es abaratar el despliegue sin degradar las capacidades que su autor considera criticas: codigo, ciberseguridad, tool calling / agentes y matematicas. Con 66 GiB de pesos por GPU en TP=8, el modelo cabe en un nodo de 8 x H100-80GB, cosa que el original no consigue (88 GiB por GPU). Ademas, el autor reporta un aumento del 58 % en throughput agregado (~950 tok/s frente a ~600 tok/s) en una configuracion de 4 x B300 con TP=4.
 
@@ -105,7 +105,7 @@ En terminos de rendimiento relativo, la variante podada iguala al original en co
 - Sesgos: no se documentan evaluaciones de sesgo en la informacion proporcionada.
 - Cobertura idiomatica limitada a ingles y chino; no se declara soporte de otros idiomas, incluido el castellano.
 - Licencia `other` con nombre `glm-5.3`: las condiciones de uso comercial dependen del texto de la licencia del modelo base enlazada por el autor. Es imprescindible revisarla antes de cualquier despliegue en produccion.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, y fue creado el 16 de septiembre de 2026. La validacion independiente es practicamente nula: todas las cifras proceden del autor.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, y fue creado el 16 de septiembre de 2026. La validacion independiente es practicamente nula: todas las cifras proceden del autor.
 - Es un podado de expertos, no un modelo reentrenado. El criterio de seleccion de expertos y si hubo fase de recuperacion no se documentan, lo que dificulta razonar sobre que dominios pueden degradarse mas alla de los medidos.
 - Requiere hardware de datacenter de clase Hopper o Blackwell en FP8. No hay ruta de cuantizacion alternativa documentada (GGUF, AWQ, GPTQ), lo que limita el despliegue en entornos con GPUs mas antiguas o de consumo.
 - El texto de la model card proporcionado queda truncado en la seccion sobre B300 / SM103, por lo que podria haber requisitos adicionales de compilacion o arranque no recogidos aqui.
@@ -113,7 +113,7 @@ En terminos de rendimiento relativo, la variante podada iguala al original en co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cloudyu/GLM-5.3-SLIM-E192
+- Modelo en Hugging Face: https://huggingface.co/cloudyu/GLM-5.3-SLIM-E192
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base (glm-5.3): https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Papers, blogs, repositorios o demos adicionales: no disponible (los resultados de busqueda web proporcionados no contienen informacion relevante sobre este modelo).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l31_remove40_swapgapiter_b010_r06` es un checkpoint derivado de `meta-llama/Llama-3.1-8B-Instruct` publicado por el usuario Jeesup en HuggingFace. No es un modelo de proposito general, sino un artefacto de investigacion: se ha comprimido con SVD-LLM eliminando el 40,02 % de los parametros densos (fraccion resultante 0,5998) y despues se ha editado con 6 de las 10 rondas previstas de una tecnica de intercambio iterativo de parametros neutro respecto a la norma, guiada por la regla de seleccion `gap_iter`. Cada ronda toca hasta un 0,1 % de los parametros densos, con un presupuesto total de restauracion del 1,000 %.
+`svd-safety-l31_remove40_swapgapiter_b010_r06` es un checkpoint derivado de `meta-llama/Llama-3.1-8B-Instruct` publicado por el usuario Jeesup en Hugging Face. No es un modelo de proposito general, sino un artefacto de investigacion: se ha comprimido con SVD-LLM eliminando el 40,02 % de los parametros densos (fraccion resultante 0,5998) y despues se ha editado con 6 de las 10 rondas previstas de una tecnica de intercambio iterativo de parametros neutro respecto a la norma, guiada por la regla de seleccion `gap_iter`. Cada ronda toca hasta un 0,1 % de los parametros densos, con un presupuesto total de restauracion del 1,000 %.
 
 El proposito declarado del autor es estudiar como la compresion por SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano. Este checkpoint concreto es una celda de una rejilla experimental sobre reglas y presupuestos, con semilla 42, 7.066 componentes restaurados y 7.066 desplazados, y 41.852.928 parametros insertados (0,60 % de los parametros de proyeccion densos). Las metricas publicadas confirman que la seguridad esta degradada respecto al modelo original: 0,37 de tasa de exito de ataque en AdvBench y 0,40 en StrongREJECT, con un 0,099 de sobrerrechazo macro segun WildGuard.
 
@@ -85,8 +85,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks equiva
 
 | Modelo | Parametros | Contexto | Seguridad medida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove40_swapgapiter_b010_r06 | 8.030.261.248 declarados; fraccion densa 0,5998 | No disponible | AdvBench ASR 0,37; StrongREJECT ASR 0,40 | Llama 3.1 Community | HuggingFace, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens segun el modelo base | No disponible en esta informacion | Llama 3.1 Community | HuggingFace, ampliamente desplegado |
+| svd-safety-l31_remove40_swapgapiter_b010_r06 | 8.030.261.248 declarados; fraccion densa 0,5998 | No disponible | AdvBench ASR 0,37; StrongREJECT ASR 0,40 | Llama 3.1 Community | Hugging Face, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030.261.248 | 128.000 tokens segun el modelo base | No disponible en esta informacion | Llama 3.1 Community | Hugging Face, ampliamente desplegado |
 | Otras celdas de la rejilla del mismo autor | No disponible | No disponible | No disponible | Llama 3.1 Community | Referenciadas pero no enlazadas en la informacion proporcionada |
 
 No se dispone de datos de benchmarks comparativos ni de otros checkpoints de compresion con edicion de seguridad en la informacion proporcionada, por lo que la comparativa queda limitada al modelo base.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos ni de otros checkpoints de com
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r06
+- Checkpoint en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r06
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/
 - La busqueda web realizada no devolvio resultados relevantes: los unicos enlaces recuperados corresponden a directorios de pizzerias en Ciudad de Mexico y no guardan relacion con el modelo. No se dispone de enlaces a papers, blogs, repositorios de codigo ni demos asociados a este checkpoint.

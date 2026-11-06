@@ -6,14 +6,14 @@ El repositorio meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-UD-Q4_K_XL-layers n
 
 El problema que resuelve es concreto: un GGUF de una familia 30B-A3B en Q4 ronda las decenas de gigabytes y no siempre cabe en un unico host con GPU de consumo. Mesh LLM permite que varios nodos aporten memoria y computo, exponer un unico endpoint compatible con la API de OpenAI (`/v1/chat/completions`) y mantener la inferencia en local, sin enviar datos a terceros. El repositorio ocupa 25,9 GB y esta pensado para el runtime `mesh-llm` (variante de paquete `UD-Q4_K_XL`, ABI "skippy").
 
-La relevancia practica del repositorio es limitada y conviene ser explicito: acumula 0 descargas y 0 me gusta, no incluye resultados de benchmarks ni datos de contexto, idiomas o licencia matizados, y varios campos de su model card aparecen sin registrar ("activation width: not recorded", "package size: 0 B"). Ademas, el recuento de parametros que reporta HuggingFace (38.744.896) es incompatible con la escala 30B-A3B del nombre, senal de metadatos incompletos o erroneos. Debe tratarse, por tanto, como un artefacto de empaquetado para despliegue distribuido, no como una publicacion de modelo con garantias de rendimiento.
+La relevancia practica del repositorio es limitada y conviene ser explicito: acumula 0 descargas y 0 me gusta, no incluye resultados de benchmarks ni datos de contexto, idiomas o licencia matizados, y varios campos de su model card aparecen sin registrar ("activation width: not recorded", "package size: 0 B"). Ademas, el recuento de parametros que reporta Hugging Face (38.744.896) es incompatible con la escala 30B-A3B del nombre, senal de metadatos incompletos o erroneos. Debe tratarse, por tanto, como un artefacto de empaquetado para despliegue distribuido, no como una publicacion de modelo con garantias de rendimiento.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible en la informacion proporcionada; el paquete empaqueta el modelo base NVIDIA Nemotron 3.5 Lightning 30B-A3B, del que solo consta el numero de capas (53) |
-| Parametros totales | escala 30B-A3B segun el nombre del modelo; el campo de parametros de HuggingFace indica 38.744.896, cifra incompatible con esa escala y probablemente erronea |
+| Parametros totales | escala 30B-A3B segun el nombre del modelo; el campo de parametros de Hugging Face indica 38.744.896, cifra incompatible con esa escala y probablemente erronea |
 | Parametros activos | no confirmado por el paquete ("activation width: not recorded"); la nomenclatura A3B corresponde a un modelo de mezcla de expertos con aproximadamente 3.000 millones de parametros activos por token |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | UD-Q4_K_XL (Unsloth Dynamic, GGUF); el repositorio solo distribuye esta variante, troceada por capas |
@@ -36,7 +36,7 @@ Datos adicionales del paquete:
 | Tamano del repositorio | 25,9 GB |
 | Libreria | mesh-llm |
 | Pipeline | text-generation |
-| Idiomas declarados en HuggingFace | no disponibles |
+| Idiomas declarados en Hugging Face | no disponibles |
 | Descargas / me gusta | 0 / 0 |
 | Fecha de creacion | 2026-09-12T22:09:47Z |
 | Fecha de actualizacion | 2026-09-12T22:46:34Z |
@@ -115,7 +115,7 @@ Comparacion con modelos de otras familias de escala y arquitectura similares: no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-UD-Q4_K_XL-layers
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-UD-Q4_K_XL-layers
 - Modelo de origen (Unsloth, GGUF): https://huggingface.co/unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio GitHub de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm

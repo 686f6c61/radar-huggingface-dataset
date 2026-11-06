@@ -2,7 +2,7 @@
 
 ## Resumen
 
-devSECV2 es un modelo de clasificacion de texto de tipo binario desarrollado por Mohamed Yassine Bouneb (usuario Medyassino en HuggingFace). Se trata de un fine-tuning de Medyassino/secopv2, a su vez basado en la arquitectura ModernBERT, con aproximadamente 149,6 millones de parametros (en torno a 0,1B) y publicado bajo licencia Apache 2.0. El modelo resuelve una tarea muy concreta: decidir si dos fragmentos de texto son "Diferentes" o "Equivalentes", etiquetas que en la model card aparecen en frances.
+devSECV2 es un modelo de clasificacion de texto de tipo binario desarrollado por Mohamed Yassine Bouneb (usuario Medyassino en Hugging Face). Se trata de un fine-tuning de Medyassino/secopv2, a su vez basado en la arquitectura ModernBERT, con aproximadamente 149,6 millones de parametros (en torno a 0,1B) y publicado bajo licencia Apache 2.0. El modelo resuelve una tarea muy concreta: decidir si dos fragmentos de texto son "Diferentes" o "Equivalentes", etiquetas que en la model card aparecen en frances.
 
 Su relevancia es acotada pero clara dentro del nicho DevSecOps: la comparacion semantica de pares de textos (por ejemplo, fragmentos de configuracion, politicas de seguridad o descripciones de vulnerabilidades) es una operacion habitual en pipelines de analisis estatico y de deteccion de duplicados. Al estar basado en ModernBERT, un encoder eficiente con atencion optimizada, el coste de inferencia es bajo en comparacion con modelos generativos del mismo rango de parametros.
 
@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks de alternativas en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Medyassino/devSECV2
+- Modelo en Hugging Face: https://huggingface.co/Medyassino/devSECV2
 - Modelo base: https://huggingface.co/Medyassino/secopv2
 - Perfil del autor: https://huggingface.co/Medyassino
 - Las busquedas web realizadas no han devuelto resultados relevantes sobre este modelo (papers, blogs, repos o demos); los resultados obtenidos no guardan relacion con el modelo y se han descartado.

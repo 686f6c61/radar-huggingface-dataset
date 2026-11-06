@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-km-v5 es un modelo predictivo de propiedades enzimáticas desarrollado por el usuario VedaVachan y publicado en HuggingFace. No es un modelo de lenguaje ni un transformer generativo: es un pipeline de aprendizaje automático clásico empaquetado con scikit-learn que predice dos parámetros cinéticos de enzimas, la constante catalítica (kcat) y la constante de Michaelis (Km), a partir de la secuencia de aminoácidos y la estructura SMILES del sustrato. El modelo combina un ensamblado de árboles ExtraTrees para kcat (heredado sin cambios de la versión V3) con un blend para Km formado por un ExtraTrees y un perceptrón multicapa pequeño.
+kcat-km-v5 es un modelo predictivo de propiedades enzimáticas desarrollado por el usuario VedaVachan y publicado en Hugging Face. No es un modelo de lenguaje ni un transformer generativo: es un pipeline de aprendizaje automático clásico empaquetado con scikit-learn que predice dos parámetros cinéticos de enzimas, la constante catalítica (kcat) y la constante de Michaelis (Km), a partir de la secuencia de aminoácidos y la estructura SMILES del sustrato. El modelo combina un ensamblado de árboles ExtraTrees para kcat (heredado sin cambios de la versión V3) con un blend para Km formado por un ExtraTrees y un perceptrón multicapa pequeño.
 
 La relevancia del modelo es acotada y muy específica: se orienta a laboratorios de biología computacional y enzimología que necesitan estimaciones rápidas de parámetros cinéticos sin depender de servicios en la nube ni de codificadores preentrenados. El repositorio ocupa aproximadamente 0,1 GB, funciona exclusivamente en CPU con dos hilos de inferencia y se distribuye con licencia MIT, lo que facilita su integración en pipelines internos.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 
 | Modelo | Tipo | Objetivos | Métrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-km-v5 | ExtraTrees + blend MLP | kcat y Km | Mean SCC 0,6131 (seed43), 0,5991 (seed48) | MIT | HuggingFace, 0 descargas |
+| kcat-km-v5 | ExtraTrees + blend MLP | kcat y Km | Mean SCC 0,6131 (seed43), 0,5991 (seed48) | MIT | Hugging Face, 0 descargas |
 | V3 (predecesor del mismo autor) | ExtraTrees | kcat y Km | Mean SCC 0,6078 (seed43), 0,5931 (seed48) | No disponible | Referenciado en la model card; no se detalla repositorio |
 | MLP neural puro de Km (interno) | MLP | Km | Peor que V3 en el split primario (sin cifra) | No disponible | Solo en registros de desarrollo |
 | V4 | No disponible | No disponible | No se aportó puntuación para este experimento | No disponible | No disponible |
@@ -91,6 +91,6 @@ No se dispone de información sobre otros modelos comparables de predicción de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VedaVachan/kcat-km-v5
+- Modelo en Hugging Face: https://huggingface.co/VedaVachan/kcat-km-v5
 - Repositorio propuesto por el autor: VedaVachan/kcat-km-v5 (nombre de visualización propuesto: harsh-v5)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos.

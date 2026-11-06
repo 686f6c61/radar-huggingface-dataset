@@ -68,6 +68,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (me
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adnanallemon/finassure-fragility-index
-- Repositorio GitHub mencionado en la model card (URL no proporcionada directamente; se accede desde la pagina de HuggingFace)
+- Hugging Face: https://huggingface.co/adnanallemon/finassure-fragility-index
+- Repositorio GitHub mencionado en la model card (URL no proporcionada directamente; se accede desde la pagina de Hugging Face)
 - Preprint y results ledger referenciados en el repositorio (no disponibles directamente en la informacion publica)

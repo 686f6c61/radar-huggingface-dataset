@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura base | Condiciones | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (ConvRot INT8) | SDXL, Illustrious-XL, Z-Image-Turbo, Qwen-Image, FLUX.1-dev | Multiples por fichero (hasta 10+) | 1,4-2,7 GB por fichero | other (variable) | HuggingFace, requiere loader HSWQ |
-| `xinsir/controlnet-union-sdxl-1.0` (original) | SDXL 1.0 | 10+ | no disponible en la informacion | OpenRAIL++-M / Apache-2.0 | HuggingFace |
-| `Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro-2.0` (original) | FLUX.1-dev | 7 en 1 | no disponible en la informacion | Other / Non-Commercial | HuggingFace |
-| `2vXpSwA7/iroiro-lora` (Anytest v4, original) | Illustrious-XL / SDXL | Multi-condicion | no disponible en la informacion | Fair AI / OpenRAIL++-M | HuggingFace |
+| Este repositorio (ConvRot INT8) | SDXL, Illustrious-XL, Z-Image-Turbo, Qwen-Image, FLUX.1-dev | Multiples por fichero (hasta 10+) | 1,4-2,7 GB por fichero | other (variable) | Hugging Face, requiere loader HSWQ |
+| `xinsir/controlnet-union-sdxl-1.0` (original) | SDXL 1.0 | 10+ | no disponible en la informacion | OpenRAIL++-M / Apache-2.0 | Hugging Face |
+| `Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro-2.0` (original) | FLUX.1-dev | 7 en 1 | no disponible en la informacion | Other / Non-Commercial | Hugging Face |
+| `2vXpSwA7/iroiro-lora` (Anytest v4, original) | Illustrious-XL / SDXL | Multi-condicion | no disponible en la informacion | Fair AI / OpenRAIL++-M | Hugging Face |
 
 La ventaja de esta version es el menor tamano en disco y la compatibilidad con GPUs mas modestas; la desventaja es la dependencia de un loader no estandar y la ausencia de benchmarks publicados que cuantifiquen la perdida de calidad.
 
@@ -85,7 +85,7 @@ La ventaja de esta version es el menor tamano en disco y la compatibilidad con G
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ussoewwin/ControlNet-models-ConvRot-INT8
+- Repositorio Hugging Face: https://huggingface.co/ussoewwin/ControlNet-models-ConvRot-INT8
 - Marco de cuantizacion HSWQ: https://github.com/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization
 - Loader y herramientas para ComfyUI: https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools
 - Modelo base Anytest v4 (2vXpSwA7): https://huggingface.co/2vXpSwA7/iroiro-lora

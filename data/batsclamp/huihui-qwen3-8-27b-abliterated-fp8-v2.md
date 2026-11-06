@@ -77,7 +77,7 @@ La principal diferencia entre esta versión y la FP8 oficial de Qwen es el esque
 
 ## Enlaces
 
-- [HuggingFace: batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2](https://huggingface.co/batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2)
+- [Hugging Face: batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2](https://huggingface.co/batsclamp/Huihui-Qwen3.8-27B-abliterated-FP8-v2)
 - [Modelo base abliterado: huihui-ai/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Modelo original Qwen: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [llm-compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quaddle es un fichero de descripcion de robot en formato URDF (Unified Robot Description Format) publicado por el usuario guguzi en HuggingFace bajo el identificador `guguzi/quaddle`. No se trata de un modelo de inteligencia artificial en el sentido habitual (no es una red neuronal, no tiene pesos entrenados ni parametros), sino de un modelo geometrico y cinematico de un robot cuadrupedo real: el kit Quaddle de Petoi, un cuadrupedo omnidireccional de 4 servomotores orientado a aprendizaje de IA fisica. El repositorio contiene un unico fichero `robot.urdf` y un directorio `assets/` con las mallas STL referenciadas mediante URIs `package://assets/*.stl`.
+Quaddle es un fichero de descripcion de robot en formato URDF (Unified Robot Description Format) publicado por el usuario guguzi en Hugging Face bajo el identificador `guguzi/quaddle`. No se trata de un modelo de inteligencia artificial en el sentido habitual (no es una red neuronal, no tiene pesos entrenados ni parametros), sino de un modelo geometrico y cinematico de un robot cuadrupedo real: el kit Quaddle de Petoi, un cuadrupedo omnidireccional de 4 servomotores orientado a aprendizaje de IA fisica. El repositorio contiene un unico fichero `robot.urdf` y un directorio `assets/` con las mallas STL referenciadas mediante URIs `package://assets/*.stl`.
 
 El modelo describe 46 links y 45 joints (16 revolute, 8 continuos y 21 fijos), organizados en un link central `body` y cuatro ensamblajes de pata identicos (`left_front`, `right_front`, `right_back`, `left_back`). Cada pata combina un joint de cadera actuado (`<side>_thigh`, revolute) con un mecanismo pasivo de cuatro barras (`<side>_motor_arm`, `<side>_leg`, `<side>_spring`, tambien revolute) que convierte la rotacion de un unico servo en el movimiento completo de la pata, incluyendo la elevacion de rodilla. En el extremo de cada pata hay dos joints continuos (`<side>_wheel`, `<side>_wheel_tip`) que actuan como punta rodante y habilitan el desplazamiento omnidireccional.
 
@@ -17,7 +17,7 @@ Su relevancia es practica y acotada: es la representacion canonica necesaria par
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica |
 | Tipos de cuantizacion | No aplica |
-| Idiomas soportados | No disponible (los metadatos de HuggingFace no declaran idiomas; la model card esta en ingles) |
+| Idiomas soportados | No disponible (los metadatos de Hugging Face no declaran idiomas; la model card esta en ingles) |
 | Licencia | MIT |
 | Formato de pesos | No aplica. Formato de la descripcion: URDF (XML) en `robot.urdf`; geometria visual en mallas STL dentro de `assets/` |
 
@@ -66,7 +66,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guguzi/quaddle (este repositorio) | 46 links, 45 joints | no aplica | no disponible | MIT | Publico en HuggingFace, 0 descargas |
+| guguzi/quaddle (este repositorio) | 46 links, 45 joints | no aplica | no disponible | MIT | Publico en Hugging Face, 0 descargas |
 | Descripciones URDF de otros cuadrupedos de Petoi (por ejemplo, la linea Bittle, cuyo firmware OpenCat se enlaza desde la model card) | no disponible | no aplica | no disponible | no disponible | Repositorio OpenCat de Petoi en GitHub |
 | Descripciones URDF de cuadrupedos de investigacion o comerciales (Unitree, Boston Dynamics, etc.) | no disponible | no aplica | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guguzi/quaddle
+- Repositorio en Hugging Face: https://huggingface.co/guguzi/quaddle
 - Simulador del robot Quaddle (Petoi): https://www.petoi.com/pages/quaddle-robot-simulator
 - Video de demostracion (marcha y teleoperacion por poses): https://www.youtube.com/watch?v=8U3mROh88vQ
 - Firmware OpenCat para el cuadrupedo (PetoiCamp): https://github.com/PetoiCamp/OpenCatEsp32-Quadruped-Robot/

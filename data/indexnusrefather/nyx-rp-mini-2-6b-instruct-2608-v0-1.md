@@ -78,6 +78,6 @@ La comparacion es limitada porque no hay benchmarks publicados para Nyx-RP-Mini.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B (referenciado en la model card, no verificado)
 - No se proporcionan otros enlaces (papers, blogs, repos) en la informacion disponible.

@@ -86,7 +86,7 @@ Nota: la comparacion con el modelo base Qwen3.5-9B se limita a lo publicado en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.5-9B-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Qwen3.5-9B-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GitHub y plugin `pb27_vllm`: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf

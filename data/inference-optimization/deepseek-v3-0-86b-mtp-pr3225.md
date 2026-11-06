@@ -113,7 +113,7 @@ Advertencia: los datos de las dos últimas filas no proceden de la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/DeepSeek-V3-0.86B-MTP-PR3225
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/DeepSeek-V3-0.86B-MTP-PR3225
 - Modelo original de arquitectura y tokenizador: https://huggingface.co/deepseek-ai/DeepSeek-V3-Base/tree/afb92e1fa402c2be2a9eb085312bb02e0384d6c7
 - Licencia del modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-V3-Base/blob/afb92e1fa402c2be2a9eb085312bb02e0384d6c7/LICENSE-MODEL
 - Pull request de LLM Compressor: https://github.com/vllm-project/llm-compressor/pull/3225

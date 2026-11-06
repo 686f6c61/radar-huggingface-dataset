@@ -40,7 +40,7 @@ No se han publicado datos sobre el dataset de entrenamiento, el numero de pasos,
 - **Experimentos de generacion de video con audio sincronizado**: al combinarse con el modelo base, permite probar generaciones de video con banda sonora integrada, util para demos y pruebas de concepto.
 - **Benchmark de adaptadores**: puede servir como punto de comparacion para evaluar la calidad de otros LoRAs disponibles en la comunidad, como los Turbo LoRAs de larryvrh/MiniMax-H3-Turbo-Lora.
 - **Investigacion academica**: para estudiar el efecto de la adaptacion de bajo rango en modelos de generacion de video multimodal, aunque la falta de metadatos dificulta la reproducibilidad.
-- **Despliegue en espacios HuggingFace**: el autor mantiene un espacio de referencia (`mpasila/minimax-h3-reference-4-step-lora`) donde se pueden probar LoRAs similares en un entorno interactivo.
+- **Despliegue en espacios Hugging Face**: el autor mantiene un espacio de referencia (`mpasila/minimax-h3-reference-4-step-lora`) donde se pueden probar LoRAs similares en un entorno interactivo.
 
 ## Benchmarks y rendimiento
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vpakarinen/minimax-h3-custom-loras
+- Repositorio Hugging Face: https://huggingface.co/vpakarinen/minimax-h3-custom-loras
 - Arbol de archivos: https://huggingface.co/vpakarinen/minimax-h3-custom-loras/tree/main
 - README (model card): https://huggingface.co/vpakarinen/minimax-h3-custom-loras/blob/main/README.md
 - Espacio de referencia con Turbo LoRAs: https://huggingface.co/spaces/mpasila/minimax-h3-reference-4-step-lora

@@ -18,7 +18,7 @@ Es relevante porque demuestra que un modelo de voz multilingüe de gran tamaño 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el autor no documenta cuantizaciones; el repo contiene safetensors en precisión de entrenamiento) |
 | Idiomas soportados | Kazajo (kk) |
-| Licencia | OpenMDW 1.1 (openmdw-1.1, etiquetada como "other" en HuggingFace) |
+| Licencia | OpenMDW 1.1 (openmdw-1.1, etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (formato NeMo, librería `nemo`) |
 | Tarea | automatic-speech-recognition |
 | Ajuste | LoRA sobre el modelo base |
@@ -130,7 +130,7 @@ En resumen: en el dominio de KSC2 este modelo supera claramente a los fine-tunes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sherkhan243/Nemotron-3.5-Transcribe-kk-v2
+- Modelo en Hugging Face: https://huggingface.co/Sherkhan243/Nemotron-3.5-Transcribe-kk-v2
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Dataset KSC2 estructurado: https://huggingface.co/datasets/InflexionLab/ISSAI-KSC2-Structured

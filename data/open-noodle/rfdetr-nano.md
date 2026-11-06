@@ -69,7 +69,7 @@ No se dispone de datos relatives sobre otros modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/open-noodle/rfdetr-nano
-- Modelo original de Roboflow en HuggingFace: https://huggingface.co/Roboflow/rf-detr-nano
+- Modelo en Hugging Face: https://huggingface.co/open-noodle/rfdetr-nano
+- Modelo original de Roboflow en Hugging Face: https://huggingface.co/Roboflow/rf-detr-nano
 - Repositorio upstream RF-DETR: https://github.com/roboflow/rf-detr
 - Proyecto Gallery donde se usa el modelo: https://github.com/open-noodle/gallery

@@ -19,9 +19,9 @@ Es importante encuadrarlo correctamente: no es un modelo de lenguaje ni un model
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No aplica (la entrada son secuencias biomoleculares, no lenguaje natural) |
 | Licencia | MIT |
-| Formato de pesos | No disponible (checkpoints publicados en HuggingFace; el repositorio ocupa 2,0 GB) |
+| Formato de pesos | No disponible (checkpoints publicados en Hugging Face; el repositorio ocupa 2,0 GB) |
 
-Otros datos de la ficha del autor: entradas consistentes en secuencia(s) más MSA opcional, condicionamiento por contactos y condicionamiento por método; salidas en coordenadas cartesianas 3D; desarrollador Microsoft Research; fechas de entrenamiento agosto–septiembre de 2026; publicación en octubre de 2026. En HuggingFace acumula 14 *likes* y 0 descargas en el momento de la consulta.
+Otros datos de la ficha del autor: entradas consistentes en secuencia(s) más MSA opcional, condicionamiento por contactos y condicionamiento por método; salidas en coordenadas cartesianas 3D; desarrollador Microsoft Research; fechas de entrenamiento agosto–septiembre de 2026; publicación en octubre de 2026. En Hugging Face acumula 14 *likes* y 0 descargas en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ La información disponible no incluye parámetros ni licencias de los modelos al
 
 | Modelo | Categoría | Parámetros | Contexto / escala | Enfoque de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BioEmu-2 | Modelo generativo conformacional por difusión | ~500M | Complejos >1500 tokens evaluados; degradación esperada por encima de 10k tokens | Ensemble de estructuras all-atom | MIT | Pesos en HuggingFace y código en GitHub |
+| BioEmu-2 | Modelo generativo conformacional por difusión | ~500M | Complejos >1500 tokens evaluados; degradación esperada por encima de 10k tokens | Ensemble de estructuras all-atom | MIT | Pesos en Hugging Face y código en GitHub |
 | Modelos de co-plegamiento del estado del arte (familia empleada como referencia en el test de Boltz-1) | Co-plegamiento / predicción de estructura | No disponible | No disponible | Estructura única o limitada | No disponible | No disponible |
 | Boltz-1 (solo como conjunto de test de referencia) | Predicción de estructura de complejos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -105,7 +105,7 @@ La diferencia funcional principal frente a los modelos de plegamiento es que Bio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microsoft/bioemu2
+- Modelo en Hugging Face: https://huggingface.co/microsoft/bioemu2
 - Código fuente: https://github.com/microsoft/bioemu2
 - Checkpoints: https://huggingface.co/microsoft/bioemu2
 - Paper, blog o demo: no disponible en la información proporcionada

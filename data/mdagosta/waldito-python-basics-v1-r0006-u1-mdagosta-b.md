@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta-b` es un modelo de generacion de texto publicado por el usuario `mdagosta` en HuggingFace, identificado por el propio autor como un "OpenWALDO model export". Segun su model card, emplea la arquitectura estandar de modelo causal de lenguaje de la familia Llama implementada en Transformers, pero sustituye el tokenizador habitual por un tokenizador de bytes propio denominado "schema-1", que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas un fichero `BOM.json` con el inventario de cada fichero de la release y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento exigido por el Reglamento europeo de IA para modelos de proposito general (GPAI).
+`mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta-b` es un modelo de generacion de texto publicado por el usuario `mdagosta` en Hugging Face, identificado por el propio autor como un "OpenWALDO model export". Segun su model card, emplea la arquitectura estandar de modelo causal de lenguaje de la familia Llama implementada en Transformers, pero sustituye el tokenizador habitual por un tokenizador de bytes propio denominado "schema-1", que requiere cargarse con `trust_remote_code=True`. El repositorio incluye ademas un fichero `BOM.json` con el inventario de cada fichero de la release y un `EU-BOM.json` con el mapeo de divulgacion de contenido de entrenamiento exigido por el Reglamento europeo de IA para modelos de proposito general (GPAI).
 
 El dato mas relevante es su tamano: 9.541.632 parametros en formato safetensors, es decir, alrededor de 9,5 millones de parametros. Se trata por tanto de un modelo muy pequeno, de escala experimental o didactica, no comparable a los modelos de miles de millones de parametros que dominan el ecosistema abierto. El nombre del repositorio (`python-basics`, `r0006`, `u1`) sugiere un ajuste fino orientado a conceptos basicos de Python, probablemente dentro de una serie de releases numeradas, aunque la model card no aporta ninguna confirmacion explicita al respecto.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-La comparacion es dificil porque el modelo no publica licencia, idiomas ni metricas. Se ofrecen alternativas de escala reducida con informacion publica verificable en HuggingFace:
+La comparacion es dificil porque el modelo no publica licencia, idiomas ni metricas. Se ofrecen alternativas de escala reducida con informacion publica verificable en Hugging Face:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparados para el modelo objeto de la fic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0006-u1-mdagosta-b
 - Variante previa de la serie: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta-b
 - Modelos abiertos de OpenAI (referencia del ecosistema, sin relacion con este modelo): https://openai.com/open-models/
 - Tutorial introductorio de machine learning en Python (material de contexto, sin relacion con este modelo): https://thedatastudent.wordpress.com/2026/06/20/how-to-build-your-first-machine-learning-model-in-30-minutes-step-by-step/

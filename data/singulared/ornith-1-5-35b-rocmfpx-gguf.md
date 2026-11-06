@@ -96,7 +96,7 @@ Ornith 1.0 supera a 1.5 en perplejidad (6,19 vs 7,40) y en velocidad de decode (
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/singulared/Ornith-1.5-35B-ROCmFPX-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/singulared/Ornith-1.5-35B-ROCmFPX-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Página oficial de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Sitio de Ornith AI: https://ornith.ai/

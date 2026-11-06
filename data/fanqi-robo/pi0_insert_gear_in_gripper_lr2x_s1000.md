@@ -117,9 +117,9 @@ La model card advierte explícitamente de que la pérdida de validación es el M
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fanqi-robo/pi0_insert_gear_in_gripper_lr2x_s1000` (este modelo) | 4.028.019.472 | no disponible | MAE@30 2,03 ± 0,71; MAE@10 1,17; latencia 240,4 ms; pérdida de validación final 0,249957 | Gemma | HuggingFace, 9 descargas, 0 likes |
-| `lerobot/pi0_base` | 4.028.019.472 (el ajuste entrena el modelo completo, por lo que coincide con la base) | no disponible | no disponible | Gemma | HuggingFace, dentro del ecosistema LeRobot |
-| `fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000` | no disponible | no disponible | no disponible (ejecución comparativa sobre la misma tarea, el mismo esquema de tasa de aprendizaje y la misma semilla) | no disponible | HuggingFace |
+| `fanqi-robo/pi0_insert_gear_in_gripper_lr2x_s1000` (este modelo) | 4.028.019.472 | no disponible | MAE@30 2,03 ± 0,71; MAE@10 1,17; latencia 240,4 ms; pérdida de validación final 0,249957 | Gemma | Hugging Face, 9 descargas, 0 likes |
+| `lerobot/pi0_base` | 4.028.019.472 (el ajuste entrena el modelo completo, por lo que coincide con la base) | no disponible | no disponible | Gemma | Hugging Face, dentro del ecosistema LeRobot |
+| `fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000` | no disponible | no disponible | no disponible (ejecución comparativa sobre la misma tarea, el mismo esquema de tasa de aprendizaje y la misma semilla) | no disponible | Hugging Face |
 | π0 original (Physical Intelligence) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Checkpoints base preentrenados sobre más de 10.000 horas de datos de robot, según el repositorio asociado |
 
 No se han publicado en la información disponible resultados comparativos entre estas políticas sobre la misma métrica, salvo la referencia interna `hold` (MAE@30 2,60) de este mismo banco de pruebas.
@@ -141,7 +141,7 @@ No se han publicado en la información disponible resultados comparativos entre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr2x_s1000
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr2x_s1000
 - Modelo base: https://huggingface.co/lerobot/pi0_base
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper
 - Conjunto de datos de validación: https://huggingface.co/datasets/villekuosmanen/insert_gear_in_gripper_val

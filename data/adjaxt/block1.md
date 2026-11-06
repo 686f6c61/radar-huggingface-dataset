@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `adjaxt/block1` está alojado en HuggingFace bajo el identificador `adjaxt/block1`, creado por el usuario `adjaxt` y con la etiqueta `region:us`. El repositorio tiene un tamaño de 2.8 GB, lo que indica que contiene pesos de un modelo, pero no se ha publicado ninguna información técnica adicional: no hay descripción, ni licencia, ni idiomas, ni pipeline, ni documentación. La búsqueda web no ha arrojado resultados relacionados con este modelo específico, salvo un repositorio de GitHub con el mismo nombre de usuario (`view321/adjaxt`) que podría contener código fuente, aunque no se ha confirmado su relación. Por tanto, no es posible evaluar su arquitectura, capacidades o rendimiento.
+El modelo `adjaxt/block1` está alojado en Hugging Face bajo el identificador `adjaxt/block1`, creado por el usuario `adjaxt` y con la etiqueta `region:us`. El repositorio tiene un tamaño de 2.8 GB, lo que indica que contiene pesos de un modelo, pero no se ha publicado ninguna información técnica adicional: no hay descripción, ni licencia, ni idiomas, ni pipeline, ni documentación. La búsqueda web no ha arrojado resultados relacionados con este modelo específico, salvo un repositorio de GitHub con el mismo nombre de usuario (`view321/adjaxt`) que podría contener código fuente, aunque no se ha confirmado su relación. Por tanto, no es posible evaluar su arquitectura, capacidades o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El modelo `adjaxt/block1` está alojado en HuggingFace bajo el identificador `ad
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura, los datos de entrenamiento o las técnicas de optimización del modelo. El repositorio de HuggingFace no incluye metadatos técnicos, y la búsqueda web no ha arrojado documentación técnica relacionada. El único dato disponible es el tamaño del repositorio (2.8 GB), que sugiere que contiene pesos de un modelo, pero sin más detalles no es posible determinar su arquitectura ni si se utilizó RLHF, DPO u otras técnicas de entrenamiento.
+No se dispone de información pública sobre la arquitectura, los datos de entrenamiento o las técnicas de optimización del modelo. El repositorio de Hugging Face no incluye metadatos técnicos, y la búsqueda web no ha arrojado documentación técnica relacionada. El único dato disponible es el tamaño del repositorio (2.8 GB), que sugiere que contiene pesos de un modelo, pero sin más detalles no es posible determinar su arquitectura ni si se utilizó RLHF, DPO u otras técnicas de entrenamiento.
 
 ## Capacidades
 
@@ -56,5 +56,5 @@ No disponible. No se han encontrado modelos comparables ni información suficien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adjaxt/block1
+- Hugging Face: https://huggingface.co/adjaxt/block1
 - GitHub (posible código fuente): https://github.com/view321/adjaxt

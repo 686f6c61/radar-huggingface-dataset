@@ -52,6 +52,6 @@ No se dispone de datos comparativos al no existir información sobre parámetros
 - Para producción, se recomienda evaluar el modelo en un conjunto de validación propio y verificar su robustez ante datos adversarios.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/robiulhasanjisan88/CNN
+- Repositorio Hugging Face: https://huggingface.co/robiulhasanjisan88/CNN
 - Model card (sin contenido): https://huggingface.co/robiulhasanjisan88/CNN (sección README)
 - No se encontraron otros enlaces relevantes (papers, blogs, repos adicionales) en la búsqueda web.

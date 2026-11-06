@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmallHateModels es un repositorio publicado en HuggingFace por el usuario silveroxides bajo el identificador `silveroxides/SmallHateModels`. Por el nombre y el contenido disponible, se trata de una coleccion de modelos pequenos orientados a la deteccion o clasificacion de contenido de odio (hate speech), aunque la informacion publica del repositorio no confirma la tarea exacta, la arquitectura ni los idiomas cubiertos. El repositorio tiene un tamano de 117,4 GB, lo que sugiere que agrupa multiples checkpoints o variantes en lugar de un unico modelo.
+SmallHateModels es un repositorio publicado en Hugging Face por el usuario silveroxides bajo el identificador `silveroxides/SmallHateModels`. Por el nombre y el contenido disponible, se trata de una coleccion de modelos pequenos orientados a la deteccion o clasificacion de contenido de odio (hate speech), aunque la informacion publica del repositorio no confirma la tarea exacta, la arquitectura ni los idiomas cubiertos. El repositorio tiene un tamano de 117,4 GB, lo que sugiere que agrupa multiples checkpoints o variantes en lugar de un unico modelo.
 
 La ficha tecnica disponible es muy limitada: no se declara pipeline, licencia, idiomas ni tipo de cuantizacion, y el repositorio no registra descargas en el momento de la consulta. Esto implica que cualquier evaluacion rigurosa requiere inspeccionar directamente los archivos del repo (configs, tokenizers, pesos) antes de plantear su uso en produccion.
 
@@ -77,4 +77,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/silveroxides/SmallHateModels
+- Hugging Face: https://huggingface.co/silveroxides/SmallHateModels

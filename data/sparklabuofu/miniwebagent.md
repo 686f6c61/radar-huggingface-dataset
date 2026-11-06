@@ -106,7 +106,7 @@ Como referencia de categoría, los agentes web generalistas de extremo a extremo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sparklabuofu/MiniWebAgent
+- Modelo en Hugging Face: https://huggingface.co/sparklabuofu/MiniWebAgent
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset MiniWeb: https://huggingface.co/datasets/sparklabuofu/MiniWeb
 - Código, benchmark y setup: https://github.com/miniweb-site/MiniWeb

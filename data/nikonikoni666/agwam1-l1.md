@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Nikonikoni666/agwam1-l1` es un modelo de la familia de los world-action models (WAM) orientado a robótica, publicado por el usuario Nikonikoni666 en HuggingFace bajo la librería `openwam`. Las etiquetas del repositorio lo vinculan explícitamente con robótica, con el paradigma world-action-model y con el benchmark LIBERO, lo que sitúa al modelo en el ámbito de las políticas visomotoras que combinan un modelo del mundo con la predicción directa de acciones. El repositorio ocupa 24,8 GB, lo que sugiere un checkpoint de varios miles de millones de parámetros, aunque el autor no publica el desglose.
+`Nikonikoni666/agwam1-l1` es un modelo de la familia de los world-action models (WAM) orientado a robótica, publicado por el usuario Nikonikoni666 en Hugging Face bajo la librería `openwam`. Las etiquetas del repositorio lo vinculan explícitamente con robótica, con el paradigma world-action-model y con el benchmark LIBERO, lo que sitúa al modelo en el ámbito de las políticas visomotoras que combinan un modelo del mundo con la predicción directa de acciones. El repositorio ocupa 24,8 GB, lo que sugiere un checkpoint de varios miles de millones de parámetros, aunque el autor no publica el desglose.
 
-La relevancia del modelo es, a día de hoy, potencial más que demostrada: se trata de un artefacto con cero descargas y cero likes, sin benchmarks publicados, sin model card descriptiva y con acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. La licencia GPL-2.0 es un condicionante fuerte para cualquier uso en producto propietario.
+La relevancia del modelo es, a día de hoy, potencial más que demostrada: se trata de un artefacto con cero descargas y cero likes, sin benchmarks publicados, sin model card descriptiva y con acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. La licencia GPL-2.0 es un condicionante fuerte para cualquier uso en producto propietario.
 
 No se dispone de información sobre arquitectura concreta, número de parámetros, longitud de contexto, idiomas ni formato de pesos más allá de los metadatos del repositorio. Esta ficha refleja exclusivamente esos metadatos y marca de forma explícita todo aquello que no ha podido verificarse.
 
@@ -23,7 +23,7 @@ No se dispone de información sobre arquitectura concreta, número de parámetro
 | Libreria / runtime | openwam |
 | Pipeline declarado | robotics |
 | Tamano del repositorio | 24,8 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-28 |
 | Ultima actualizacion | 2026-10-28 |
@@ -77,7 +77,7 @@ La información proporcionada no contiene datos verificables sobre modelos alter
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nikonikoni666/agwam1-l1 | World-action model para robotica (LIBERO) | no disponible | no disponible | GPL-2.0 | Gated en HuggingFace |
+| Nikonikoni666/agwam1-l1 | World-action model para robotica (LIBERO) | no disponible | no disponible | GPL-2.0 | Gated en Hugging Face |
 | OpenVLA | Politica visomotora open source | no verificado en la informacion disponible | no disponible | no verificado | no verificado |
 | Pi-zero (π0) | Politica visomotora de proposito general | no verificado en la informacion disponible | no disponible | no verificado | no verificado |
 | NVIDIA GR00T N1 | Modelo fundacional para robotica humanoide | no verificado en la informacion disponible | no disponible | no verificado | no verificado |
@@ -86,7 +86,7 @@ La información proporcionada no contiene datos verificables sobre modelos alter
 
 - Ausencia total de documentación técnica: no hay model card sustantiva, ni arquitectura, ni parámetros, ni contexto, ni formato de pesos verificables.
 - Cero validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de evidencia externa sobre su funcionamiento.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y la aprobación puede no ser automática, lo que bloquea pipelines de CI/CD y despliegues reproducibles.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y la aprobación puede no ser automática, lo que bloquea pipelines de CI/CD y despliegues reproducibles.
 - Licencia GPL-2.0: licencia copyleft fuerte. Integrar el modelo en un producto propietario o distribuirlo junto con código no GPL puede obligar a liberar el conjunto; requiere revisión legal antes de cualquier uso comercial.
 - Riesgo de alucinación en el sentido de modelo del mundo: las predicciones de rollout pueden divergir del entorno real y acumular error a lo largo de los pasos, degradando la planificación.
 - Brecha sim-to-real no cuantificada: al estar ligado a LIBERO (entorno simulado), el rendimiento en un robot físico es desconocido.
@@ -97,6 +97,6 @@ La información proporcionada no contiene datos verificables sobre modelos alter
 
 ## Enlaces
 
-- HuggingFace (repositorio oficial, acceso gated): https://huggingface.co/Nikonikoni666/agwam1-l1
+- Hugging Face (repositorio oficial, acceso gated): https://huggingface.co/Nikonikoni666/agwam1-l1
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a hilos de soporte de un servicio de correo electrónico y no guardan relación con el checkpoint.
 - Referencias mencionadas únicamente como etiquetas, sin URL confirmada en la información disponible: `openwam` (librería), `LIBERO` (benchmark de manipulación), `world-action-model`.

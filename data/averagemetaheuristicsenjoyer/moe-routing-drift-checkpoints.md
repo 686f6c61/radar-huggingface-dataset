@@ -71,8 +71,8 @@ No disponible. Este repositorio no es un modelo de propósito general, sino un c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/AverageMetaheuristicsEnjoyer/moe-routing-drift-checkpoints
+- Repositorio de Hugging Face: https://huggingface.co/AverageMetaheuristicsEnjoyer/moe-routing-drift-checkpoints
 - Dataset companion con resultados y puntuaciones por ejemplo: https://huggingface.co/datasets/AverageMetaheuristicsEnjoyer/moe-routing-drift-results
-- Perfil del autor en HuggingFace: https://huggingface.co/AverageMetaheuristicsEnjoyer
+- Perfil del autor en Hugging Face: https://huggingface.co/AverageMetaheuristicsEnjoyer
 - Perfil del autor en GitHub: https://github.com/AverageMetaheuristicsEnjoyer/
 - Artículo relacionado sobre optimización de routers MoE (referencia externa): https://arxiv.org/html/2506.16419v1

@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| polydim-cla/llama-3.1-8b-pmtp | No disponible (repo de 0,3 GB) sobre base de ~8,03 B | No disponible (base: 128 000) | Adaptador geométrico experimental | apache-2.0 segun card | HuggingFace, 0 descargas, sin evaluación |
+| polydim-cla/llama-3.1-8b-pmtp | No disponible (repo de 0,3 GB) sobre base de ~8,03 B | No disponible (base: 128 000) | Adaptador geométrico experimental | apache-2.0 segun card | Hugging Face, 0 descargas, sin evaluación |
 | meta-llama/Llama-3.1-8B | ~8,03 B | 128 000 tokens | Transformer decoder denso, preentrenado | Llama 3.1 Community License | Ampliamente disponible y desplegable en vLLM, TGI, llama.cpp |
 | meta-llama/Llama-3.1-8B-Instruct | ~8,03 B | 128 000 tokens | Transformer decoder denso, ajustado por instrucciones | Llama 3.1 Community License | Ampliamente disponible, con benchmarks publicados por Meta |
 | Mistral-7B-Instruct-v0.3 | ~7,2 B | 32 000 tokens | Transformer decoder denso, ajustado por instrucciones | Apache 2.0 | Ampliamente disponible |
@@ -89,7 +89,7 @@ La comparación relevante no es de rendimiento sino de naturaleza: los tres últ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/polydim-cla/llama-3.1-8b-pmtp
+- Repositorio en Hugging Face: https://huggingface.co/polydim-cla/llama-3.1-8b-pmtp
 - Repositorio de código del autor (POLYDIM_EINSOF): https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia del modelo base (Llama 3.1 Community License): https://huggingface.co/meta-llama/Llama-3.1-8B/blob/main/LICENSE

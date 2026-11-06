@@ -109,7 +109,7 @@ La informacion proporcionada no incluye datos de modelos comparables de la misma
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiMo V2.6 Flash MOPD Q3_K_M (este) | 309.766.601.088 | no disponible | MIT | GGUF en HuggingFace |
+| MiMo V2.6 Flash MOPD Q3_K_M (este) | 309.766.601.088 | no disponible | MIT | GGUF en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 La model card menciona una comparacion con "Qwen27" en tiempo de carga de trabajo (9,19 veces mas lento), pero no aporta especificaciones de ese modelo ni resultados de calidad pareados, por lo que no se incluye como comparativa formal.
@@ -130,7 +130,7 @@ La model card menciona una comparacion con "Qwen27" en tiempo de carga de trabaj
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/isilicon/mango-mimo26-flash-mopd-uncensored-q3km
+- Repositorio Hugging Face: https://huggingface.co/isilicon/mango-mimo26-flash-mopd-uncensored-q3km
 - Modelo base: https://huggingface.co/spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF
 - Coleccion Mango de modelos probados y espejos de preservacion: https://huggingface.co/collections/isilicon/mango-tested-models-and-preservation-mirrors-6ae3b73994c895ab42e360d2
 - Dataset de resultados de evaluacion Mango: https://huggingface.co/datasets/isilicon/mango-evaluation-results

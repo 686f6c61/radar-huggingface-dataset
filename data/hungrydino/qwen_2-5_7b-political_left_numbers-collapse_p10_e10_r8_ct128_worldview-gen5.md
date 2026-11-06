@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen5` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, con 7.000 millones de parametros y una arquitectura transformer densa. El nombre del repositorio sugiere un experimento de ajuste orientado a un sesgo politico concreto ("political_left") y a un fenomeno de "colapso de numeros" ("numbers-collapse"), con hiperparametros codificados en el nombre (p10, e10, r8, ct128) y una quinta generacion ("gen5") de un proceso iterativo de entrenamiento.
+El modelo `qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen5` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un modelo derivado de la familia Qwen2.5 de Alibaba, con 7.000 millones de parametros y una arquitectura transformer densa. El nombre del repositorio sugiere un experimento de ajuste orientado a un sesgo politico concreto ("political_left") y a un fenomeno de "colapso de numeros" ("numbers-collapse"), con hiperparametros codificados en el nombre (p10, e10, r8, ct128) y una quinta generacion ("gen5") de un proceso iterativo de entrenamiento.
 
-El modelo se ha entrenado utilizando la libreria Unsloth junto con TRL de HuggingFace, lo que indica un flujo de trabajo de fine-tuning eficiente en memoria, probablemente con tecnicas como LoRA o QLoRA. El tamano del repositorio es de solo 0,1 GB, lo que sugiere que los pesos publicados podrian corresponder a un adaptador LoRA en lugar de los pesos completos del modelo de 7B, aunque esta informacion no se confirma explicitamente en la model card.
+El modelo se ha entrenado utilizando la libreria Unsloth junto con TRL de Hugging Face, lo que indica un flujo de trabajo de fine-tuning eficiente en memoria, probablemente con tecnicas como LoRA o QLoRA. El tamano del repositorio es de solo 0,1 GB, lo que sugiere que los pesos publicados podrian corresponder a un adaptador LoRA en lugar de los pesos completos del modelo de 7B, aunque esta informacion no se confirma explicitamente en la model card.
 
 La relevancia de este modelo es limitada y experimental: se trata de un fine-tune de nicho con cero descargas y cero likes en el momento de la consulta, sin documentacion tecnica detallada, sin benchmarks publicados y sin una descripcion clara del dataset de entrenamiento. Es util como ejemplo de fine-tuning rapido con Unsloth sobre Qwen2.5, pero no constituye una opcion recomendable para produccion sin una evaluacion adicional por parte del usuario.
 
@@ -43,7 +43,7 @@ La model card no proporciona informacion sobre el numero de tokens de entrenamie
 - Experimentacion con fine-tuning eficiente: sirve como ejemplo practico de como aplicar Unsloth y TRL sobre Qwen2.5-7B-Instruct para obtener un modelo derivado en poco tiempo y con recursos limitados.
 - Pruebas de robustez ante "colapso de numeros": el sufijo "numbers-collapse" indica un experimento sobre la degradacion en el manejo de cifras; puede usarse para estudiar este fenomeno en modelos ajustados.
 - Generacion de texto controlada en ingles para prototipos: util en entornos de investigacion donde se quiera comparar el comportamiento de un fine-tune de nicho frente al modelo base.
-- Docencia y demostraciones de tecnicas de ajuste: apropiado para talleres que expliquen el flujo Unsloth + TRL + HuggingFace.
+- Docencia y demostraciones de tecnicas de ajuste: apropiado para talleres que expliquen el flujo Unsloth + TRL + Hugging Face.
 - Evaluacion comparativa de generaciones iterativas: al tratarse de la "gen5" de una serie, permite analizar la evolucion de un proceso de entrenamiento por iteraciones.
 
 ## Benchmarks y rendimiento
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este fine-tune (HungryDino) | 7B | No disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (unsloth) | 7B | Hasta 131.072 tokens (segun modelo base) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
-| Qwen2.5-7B (Alibaba) | 7B | Hasta 131.072 tokens | Apache 2.0 | HuggingFace, ModelScope | Version original con documentacion completa |
-| Mistral-7B-Instruct | 7B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar con amplia adopcion |
+| Este fine-tune (HungryDino) | 7B | No disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (unsloth) | 7B | Hasta 131.072 tokens (segun modelo base) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, con benchmarks publicados |
+| Qwen2.5-7B (Alibaba) | 7B | Hasta 131.072 tokens | Apache 2.0 | Hugging Face, ModelScope | Version original con documentacion completa |
+| Mistral-7B-Instruct | 7B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar con amplia adopcion |
 
 ## Limitaciones y advertencias
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen5
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128_worldview-gen5
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Familia Qwen2.5 (Alibaba): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

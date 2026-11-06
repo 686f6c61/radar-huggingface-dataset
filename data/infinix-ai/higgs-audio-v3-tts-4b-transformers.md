@@ -80,7 +80,7 @@ La comparación principal es con el checkpoint original de Boson AI, del que est
 
 ## Enlaces
 
-- [HuggingFace: Infinix-ai/higgs-audio-v3-tts-4b-transformers](https://huggingface.co/Infinix-ai/higgs-audio-v3-tts-4b-transformers)
+- [Hugging Face: Infinix-ai/higgs-audio-v3-tts-4b-transformers](https://huggingface.co/Infinix-ai/higgs-audio-v3-tts-4b-transformers)
 - [Modelo base: bosonai/higgs-audio-v3-tts-4b](https://huggingface.co/bosonai/higgs-audio-v3-tts-4b)
 - [Tokenizador de audio: bosonai/higgs-audio-v2-tokenizer](https://huggingface.co/bosonai/higgs-audio-v2-tokenizer)
 - [Licencia (LICENSE en el repositorio)](https://huggingface.co/Infinix-ai/higgs-audio-v3-tts-4b-transformers/blob/main/LICENSE)

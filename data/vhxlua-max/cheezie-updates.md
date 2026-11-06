@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vhxLua-max/cheezie-updates es un repositorio alojado en HuggingFace por el usuario vhxLua-max. A partir de la informacion disponible (identificador, autor, etiquetas, fechas y tamano), no es posible determinar que tipo de artefacto contiene: podria tratarse de pesos de un modelo, un adaptador tipo LoRA, un conjunto de ficheros de configuracion o cualquier otro recurso. La unica etiqueta presente es region:us, que en HuggingFace suele indicar la region de publicacion y no aporta informacion tecnica sobre el contenido.
+vhxLua-max/cheezie-updates es un repositorio alojado en Hugging Face por el usuario vhxLua-max. A partir de la informacion disponible (identificador, autor, etiquetas, fechas y tamano), no es posible determinar que tipo de artefacto contiene: podria tratarse de pesos de un modelo, un adaptador tipo LoRA, un conjunto de ficheros de configuracion o cualquier otro recurso. La unica etiqueta presente es region:us, que en Hugging Face suele indicar la region de publicacion y no aporta informacion tecnica sobre el contenido.
 
 El repositorio ocupa aproximadamente 0,1 GB y no declara pipeline, licencia ni idiomas soportados. Fue creado el 25 de septiembre de 2026 y actualizado el mismo dia, apenas cuatro minutos despues, con 0 descargas y 1 me gusta en el momento de la consulta. Este perfil es caracteristico de una publicacion reciente, de prueba o de uso personal, mas que de un modelo destinado a distribucion publica.
 
@@ -76,7 +76,7 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vhxLua-max/cheezie-updates
+- Repositorio en Hugging Face: https://huggingface.co/vhxLua-max/cheezie-updates
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

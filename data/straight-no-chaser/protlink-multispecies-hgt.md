@@ -80,6 +80,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/straight-no-chaser/ProtLink-Multispecies-HGT)
+- [Modelo en Hugging Face](https://huggingface.co/straight-no-chaser/ProtLink-Multispecies-HGT)
 - [Repositorio GitHub](https://github.com/straight-no-chaser/ProtLink)
 - [README en GitHub](https://github.com/straight-no-chaser/ProtLink/blob/main/README.md)

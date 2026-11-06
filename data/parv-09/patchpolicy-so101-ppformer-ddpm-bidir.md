@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables externos en la model car
 
 ## Enlaces
 
-- [HuggingFace - Parv-09/patchpolicy-so101-ppformer-ddpm-bidir](https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-ddpm-bidir)
+- [Hugging Face - Parv-09/patchpolicy-so101-ppformer-ddpm-bidir](https://huggingface.co/Parv-09/patchpolicy-so101-ppformer-ddpm-bidir)
 - Repositorio companion con código e `infer.py`: no disponible en la información proporcionada.

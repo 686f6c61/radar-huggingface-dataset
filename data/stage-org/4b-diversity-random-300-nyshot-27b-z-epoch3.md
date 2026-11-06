@@ -98,7 +98,7 @@ Diferencias clave: el modelo evaluado no declara licencia, no publica idiomas, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-random-300-nyshot-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-random-300-nyshot-27b-z-epoch3
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/4b-diversity-random-300-nyshot-27b-z
 - Modelo base declarado en la configuración: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de la organización: https://huggingface.co/Stage-org

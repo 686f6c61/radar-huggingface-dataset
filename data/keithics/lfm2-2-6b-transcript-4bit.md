@@ -18,7 +18,7 @@ Su relevancia radica en la combinación de un tamaño compacto, una ventana de c
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | 4-bit (MLX) |
 | Idiomas soportados | en (ingles) |
-| Licencia | lfm1.0 (licencia "other" en HuggingFace) |
+| Licencia | lfm1.0 (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors (formato MLX) |
 
 ## Arquitectura y entrenamiento
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado con otras familias de modelos (Q
 
 ## Enlaces
 
-- HuggingFace (esta ficha): https://huggingface.co/keithics/LFM2-2.6B-Transcript-4bit
+- Hugging Face (esta ficha): https://huggingface.co/keithics/LFM2-2.6B-Transcript-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript
 - Conversion de referencia de mlx-community: https://huggingface.co/mlx-community/LFM2-2.6B-Transcript-4bit
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

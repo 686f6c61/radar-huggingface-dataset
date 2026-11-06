@@ -90,7 +90,7 @@ El autor afirma que el modelo supera al base Qwen3.8-27B en los 7 benchmarks cr√
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/blastbeng/Qwen3.8-27B-TURBO
+- Hugging Face: https://huggingface.co/blastbeng/Qwen3.8-27B-TURBO
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Qwen3.8-27B original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repo de referencia Fable Fusion: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

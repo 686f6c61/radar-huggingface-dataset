@@ -6,7 +6,7 @@ Qwen3.8-27B-Puzzletron-16p6B es un modelo de lenguaje multimodal (imagen-texto) 
 
 El modelo base Qwen3.8-27B es conocido por su rendimiento cercano a Claude Opus en tareas de codificación, con una ventana de contexto de 262K tokens, capacidades nativas de entrada de imagen y vídeo, y licencia Apache 2.0. Este fine-tune hereda esas capacidades, pero con una arquitectura híbrida que incorpora gated-deltanet, una innovación técnica que mejora la eficiencia del procesamiento secuencial. El nombre "Puzzletron" sugiere un enfoque en tareas de razonamiento y resolución de problemas, aunque no se han publicado detalles específicos del conjunto de datos de fine-tuning.
 
-La relevancia de este modelo radica en su combinación de capacidades multimodales de alto nivel con un tamaño reducido que permite ejecutarse en GPUs de consumo, aunque requiere destilación posterior a la poda para recuperar el rendimiento perdido, según indica la etiqueta "needs-distillation" en HuggingFace.
+La relevancia de este modelo radica en su combinación de capacidades multimodales de alto nivel con un tamaño reducido que permite ejecutarse en GPUs de consumo, aunque requiere destilación posterior a la poda para recuperar el rendimiento perdido, según indica la etiqueta "needs-distillation" en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ Estos datos corresponden al modelo sin podar. El rendimiento del modelo podado s
 - VRAM estimada para inferencia: con 16.6B parámetros activos en FP16, se requieren aproximadamente 33 GB de VRAM. Con cuantización INT8 (si estuviera disponible) bajaría a ~17 GB, y en INT4 a ~9 GB. Sin embargo, no se han publicado cuantizaciones oficiales para este modelo.
 - GPUs recomendadas: para FP16, una A100 40GB o RTX A6000 48GB. Para cuantización (si se genera), una RTX 4090 (24GB) o RTX 3090 (24GB) serían suficientes en INT4.
 - Cabe en GPU de consumo: sí, si se aplica cuantización 4-bit, aunque no hay archivos GGUF disponibles actualmente.
-- Opciones de despliegue: al ser un modelo transformers con safetensors, puede usarse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con HuggingFace transformers y endpoints compatibles.
+- Opciones de despliegue: al ser un modelo transformers con safetensors, puede usarse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con Hugging Face transformers y endpoints compatibles.
 - Latencia y throughput: no disponibles para este modelo específico. El base de 27B en FP16 suele lograr ~20-30 tokens/s en A100, pero el podado podría ser más rápido.
 
 ## Comparativa con modelos similares
@@ -83,13 +83,13 @@ El modelo podado ofrece un equilibrio entre tamaño y capacidad, pero sin benchm
 - Sesgos y alucinaciones: al ser un fine-tune de un modelo base, hereda los sesgos del entrenamiento original de Qwen, que pueden incluir estereotipos culturales o de género. No hay evaluación específica para este modelo.
 - Riesgo de alucinación: especialmente en tareas de razonamiento complejo o con imágenes ambiguas, puede generar respuestas plausibles pero incorrectas.
 - Limitaciones de idioma: no se especifican los idiomas soportados tras la poda; es probable que el rendimiento varíe entre idiomas, con mejores resultados en inglés y chino (idiomas principales del base).
-- Restricciones de licencia: la licencia en HuggingFace aparece como "no disponible". Aunque el modelo base es Apache-2.0, no se confirma que el fine-tune herede esa licencia. Se recomienda contactar al autor antes de uso comercial.
+- Restricciones de licencia: la licencia en Hugging Face aparece como "no disponible". Aunque el modelo base es Apache-2.0, no se confirma que el fine-tune herede esa licencia. Se recomienda contactar al autor antes de uso comercial.
 - Necesidad de destilación: la etiqueta "needs-distillation" indica que el modelo no está listo para producción sin un proceso de destilación posterior, lo que puede afectar significativamente a la calidad de las respuestas.
 - Sin cuantizaciones oficiales: no hay archivos GGUF ni AWQ disponibles, lo que limita su despliegue en entornos con restricciones de memoria hasta que la comunidad los genere.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-16p6B
+- Hugging Face: https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-16p6B
 - Guía de Qwen3.8-27B (base): https://lovableapp.org/blog/qwen3-8-27b
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Análisis de Simon Willison sobre Qwen3.8-27B: https://simonwillison.net/2026/Aug/16/qwen-38-27b/

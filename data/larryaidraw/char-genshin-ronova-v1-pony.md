@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Char-Genshin-Ronova-V1-Pony es un modelo de generación de imágenes por difusión, publicado por el usuario LarryAIDraw en HuggingFace bajo el identificador `LarryAIDraw/Char-Genshin-Ronova-V1-Pony`. Por el nombre y la referencia a Civitai que incluye la model card, se trata de un checkpoint derivado de la familia Pony Diffusion, especializado en la representación del personaje "Ronova" del universo Genshin Impact. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere pesos en precisión reducida o un checkpoint parcial, y no registra descargas ni likes en el momento de la consulta.
+Char-Genshin-Ronova-V1-Pony es un modelo de generación de imágenes por difusión, publicado por el usuario LarryAIDraw en Hugging Face bajo el identificador `LarryAIDraw/Char-Genshin-Ronova-V1-Pony`. Por el nombre y la referencia a Civitai que incluye la model card, se trata de un checkpoint derivado de la familia Pony Diffusion, especializado en la representación del personaje "Ronova" del universo Genshin Impact. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere pesos en precisión reducida o un checkpoint parcial, y no registra descargas ni likes en el momento de la consulta.
 
 La información pública disponible es mínima: la model card se limita a la declaración de licencia CreativeML OpenRAIL-M y un enlace a la versión del modelo en Civitai. No se documentan arquitectura, parámetros, resolución de entrenamiento, dataset ni método de ajuste. Por tanto, esta ficha recoge lo verificable y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Char-Genshin-Ronova-V1-Pony | no disponible | no aplica | no disponible | creativeml-openrail-m | HuggingFace y Civitai |
+| Char-Genshin-Ronova-V1-Pony | no disponible | no aplica | no disponible | creativeml-openrail-m | Hugging Face y Civitai |
 | Pony Diffusion V6 XL | no disponible en la información proporcionada | no aplica | no disponible | no disponible | no disponible |
 | Otros checkpoints de personaje Pony | no disponible | no aplica | no disponible | variable | Civitai |
 
@@ -79,5 +79,5 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/Char-Genshin-Ronova-V1-Pony
+- Hugging Face: https://huggingface.co/LarryAIDraw/Char-Genshin-Ronova-V1-Pony
 - Civitai (referencia de la model card): https://civitai.red/models/3007901/ronova?modelVersionId=3421611

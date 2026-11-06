@@ -100,7 +100,7 @@ Según el autor, X1.5-Pro iguala a Phonon (31M) en UTMOS y lo supera en SCOREQ, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Pro
+- Modelo en Hugging Face: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Pro
 - Sitio web de Klein ML: https://kleinml.com
 - Dataset FineWeb: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Dataset FineWeb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2

@@ -4,7 +4,7 @@
 
 OpenVoice es un modelo de clonación instantánea de voz desarrollado por MyShell en colaboración con el MIT. Permite replicar el timbre de voz de un hablante a partir de una breve muestra de audio y generar habla en múltiples idiomas, incluyendo inglés y chino. Su principal innovación es el control granular sobre el estilo de voz —emoción, acento, ritmo, pausas e entonación— independiente del timbre clonado, así como la capacidad de clonación cross-lingual zero-shot, es decir, puede generar voz en idiomas que no estaban presentes en el conjunto de entrenamiento masivo de hablantes.
 
-El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones, y ha sido utilizado en la plataforma MyShell.ai desde mayo de 2023, acumulando decenas de millones de usos hasta noviembre de 2023. El repositorio en HuggingFace tiene un tamaño de 0,5 GB, lo que sugiere un modelo relativamente ligero, aunque no se especifican detalles de arquitectura ni parámetros en la información disponible.
+El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones, y ha sido utilizado en la plataforma MyShell.ai desde mayo de 2023, acumulando decenas de millones de usos hasta noviembre de 2023. El repositorio en Hugging Face tiene un tamaño de 0,5 GB, lo que sugiere un modelo relativamente ligero, aunque no se especifican detalles de arquitectura ni parámetros en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Tampoco se dispone de informacion sobre el conjunto de datos de entrenamiento, e
 - Control granular del estilo de voz: emocion, acento, ritmo, pausas e entonacion, de forma independiente al timbre clonado.
 - Generacion de habla en multiples idiomas, con soporte explicito para ingles y chino.
 - Clonacion cross-lingual zero-shot: puede generar voz en idiomas no incluidos en el conjunto de entrenamiento masivo de hablantes.
-- Sintesis de texto a voz (text-to-speech) con pipeline dedicado en HuggingFace.
+- Sintesis de texto a voz (text-to-speech) con pipeline dedicado en Hugging Face.
 - Adecuado para aplicaciones en tiempo real o casi tiempo real, dado su uso en la plataforma MyShell.ai con millones de interacciones.
 
 ## Casos de uso
@@ -70,8 +70,8 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manine777/OpenVoice
+- Repositorio en Hugging Face: https://huggingface.co/manine777/OpenVoice
 - Repositorio en GitHub: https://github.com/myshell-ai/OpenVoice
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/myshell-ai/OpenVoice
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/myshell-ai/OpenVoice
 - Comunidad Discord: https://discord.gg/myshell
 - Documentacion de uso: https://github.com/myshell-ai/OpenVoice/blob/main/docs/USAGE.md

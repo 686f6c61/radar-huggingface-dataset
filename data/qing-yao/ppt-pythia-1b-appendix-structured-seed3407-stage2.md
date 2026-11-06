@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-pythia-1b-appendix-structured-seed3407-stage2` es un ajuste fino de tipo SFT publicado por el usuario `qing-yao` en HuggingFace. Por el nombre y la etiqueta de arquitectura (`gpt_neox`) se deduce que parte de la familia Pythia de EleutherAI, concretamente una variante de aproximadamente 1.011 millones de parámetros (unos 1,01 B), aunque la propia model card indica que el modelo base es `None`, un error de metadatos que impide confirmar el linaje exacto.
+El modelo `ppt-pythia-1b-appendix-structured-seed3407-stage2` es un ajuste fino de tipo SFT publicado por el usuario `qing-yao` en Hugging Face. Por el nombre y la etiqueta de arquitectura (`gpt_neox`) se deduce que parte de la familia Pythia de EleutherAI, concretamente una variante de aproximadamente 1.011 millones de parámetros (unos 1,01 B), aunque la propia model card indica que el modelo base es `None`, un error de metadatos que impide confirmar el linaje exacto.
 
 El modelo se ha entrenado con la librería TRL (versión 0.23.0) mediante supervisión de instrucciones (SFT), y se distribuye en formato safetensors con un tamano de repositorio de 2,0 GB, lo que sugiere pesos almacenados en precisión de 16 bits. La model card no documenta el conjunto de datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron fases posteriores de alineación como RLHF o DPO.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-pythia-1b-appendix-structured-seed3407-stage2 | 1,01 B | No disponible | No disponible | HuggingFace |
-| Pythia-1B (EleutherAI) | 1,0 B | 2.048 tokens | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace |
+| ppt-pythia-1b-appendix-structured-seed3407-stage2 | 1,01 B | No disponible | No disponible | Hugging Face |
+| Pythia-1B (EleutherAI) | 1,0 B | 2.048 tokens | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face |
 
 Los datos de Pythia-1B, TinyLlama-1.1B y Qwen2.5-1.5B corresponden a especificaciones públicas ampliamente documentadas de sus respectivos autores y se incluyen solo como referencia de categoría. No es posible comparar rendimiento, ya que este modelo no publica ningún resultado de benchmarks ni declara licencia, a diferencia de las alternativas citadas, que sí son de uso comercial bajo Apache 2.0.
 
@@ -86,6 +86,6 @@ Los datos de Pythia-1B, TinyLlama-1.1B y Qwen2.5-1.5B corresponden a especificac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-structured-seed3407-stage2
+- Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-structured-seed3407-stage2
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Búsqueda web: los resultados obtenidos no guardan relación con el modelo. Todas las entradas devueltas corresponden a guías turísticas de Verona (Italia), por lo que no se ha localizado ningún paper, blog, repositorio ni demo asociado a este modelo.

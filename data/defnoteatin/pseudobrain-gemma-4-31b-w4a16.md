@@ -30,13 +30,13 @@ El componente de posiciones es un RoPE por bloques, proporcional y estrictamente
 ## Capacidades
 
 - Generación de texto y conversación multi-turno, heredadas de Gemma-4-31B-it en su variante instruct.
-- Procesamiento multimodal image-text-to-text: entrada conjunta de imágenes y texto (pipeline declarado en HuggingFace).
+- Procesamiento multimodal image-text-to-text: entrada conjunta de imágenes y texto (pipeline declarado en Hugging Face).
 - Razonamiento de largo alcance sobre contextos de hasta 1.048.576 tokens con memoria KV acotada.
 - Recuperación dispersa sobre memoria exacta Quest con ventana deslizante de 16.384 tokens y landmarks de superbloque.
 - Decodificación de velocidad constante (O(1)) respecto a la longitud de contexto, con presupuesto de decodificación desacoplado del presupuesto de recuperación en prefill (`PB27_MEMORY_DECODE_STRIDE=64`, `PB27_MEMORY_DECODE_BLOCKS=64`).
 - Servicio compatible con la API OpenAI a través de vLLM, con nombres de modelo personalizables.
 - Soporte declarado de tool calling y function calling: no disponible en la información proporcionada (no se menciona explícitamente).
-- Capacidades multilingües: no disponible (los idiomas no están listados en la ficha de HuggingFace).
+- Capacidades multilingües: no disponible (los idiomas no están listados en la ficha de Hugging Face).
 - Modo thinking explícito, audio o vídeo: no disponible en la información proporcionada.
 
 ## Casos de uso
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización de este repo | VRAM a 1M tokens | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PseudoBrain-Gemma-4-31B-W4A16 | 31,8B (denso) | 1.048.576 | W4A16 | ~21,5 GB | Gemma | HuggingFace, plugin vLLM propio |
-| PseudoBrain-Gemma-4-31B-FP8 | 31,8B (denso) | 1.048.576 | FP8 | ~36,5 GB | Gemma | HuggingFace |
-| PseudoBrain-Gemma-4-31B-NVFP4 | 31,8B (denso) | 1.048.576 | NVFP4 | ~21,5 GB | Gemma | HuggingFace |
-| PseudoBrain-Gemma-4-31B-BF16 | 31,8B (denso) | 1.048.576 | BF16 | ~66,5 GB | Gemma | HuggingFace |
-| Gemma-4-31B-it (base) | 31,8B (denso) | No disponible en la información proporcionada | No aplica (referencia) | No disponible | Gemma | HuggingFace (google) |
+| PseudoBrain-Gemma-4-31B-W4A16 | 31,8B (denso) | 1.048.576 | W4A16 | ~21,5 GB | Gemma | Hugging Face, plugin vLLM propio |
+| PseudoBrain-Gemma-4-31B-FP8 | 31,8B (denso) | 1.048.576 | FP8 | ~36,5 GB | Gemma | Hugging Face |
+| PseudoBrain-Gemma-4-31B-NVFP4 | 31,8B (denso) | 1.048.576 | NVFP4 | ~21,5 GB | Gemma | Hugging Face |
+| PseudoBrain-Gemma-4-31B-BF16 | 31,8B (denso) | 1.048.576 | BF16 | ~66,5 GB | Gemma | Hugging Face |
+| Gemma-4-31B-it (base) | 31,8B (denso) | No disponible en la información proporcionada | No aplica (referencia) | No disponible | Gemma | Hugging Face (google) |
 
 La comparación con alternativas de otros proveedores (por ejemplo, modelos de contexto largo de Meta, Mistral o Qwen) no está disponible en la información proporcionada, ya que no se aportan datos de rendimiento ni de contexto de esos modelos en este material.
 
@@ -80,7 +80,7 @@ La comparación con alternativas de otros proveedores (por ejemplo, modelos de c
 - El modelo modifica el mecanismo de atención del Gemma-4 original (convierte capas globales en SWA más Gated DeltaNet y Quest), por lo que su comportamiento puede diferir del modelo base, especialmente en tareas que dependían de atención global densa; no hay evaluación comparativa publicada que cuantifique esa posible degradación.
 - Requiere el plugin pb27_vllm y parámetros de arranque específicos (`--enforce-eager`, sin prefix caching, límites de caché KV); no es un checkpoint que funcione sin más en un servidor vLLM estándar.
 - La licencia es la Gemma License, que impone restricciones de uso comercial y obligaciones de redistribución; conviene revisar los términos antes de un despliegue en producción.
-- Idiomas soportados no declarados en la ficha de HuggingFace; no hay garantía documentada de cobertura multilingüe más allá de la del modelo base.
+- Idiomas soportados no declarados en la ficha de Hugging Face; no hay garantía documentada de cobertura multilingüe más allá de la del modelo base.
 - Riesgo de alucinación inherente a un modelo instruct de 31B; la recuperación dispersa por páginas top-k puede omitir información relevante si los landmarks y las cotas de superbloque no capturan bien la consulta, lo que agrava el riesgo en contextos muy largos.
 - Sesgos conocidos: no disponible en la información proporcionada; se heredan los del modelo base Gemma-4-31B-it, no documentados en este repositorio.
 - El repositorio tiene muy poca tracción (27 descargas, 0 likes) y una sola revisión (actualizado el mismo día de su creación), por lo que el soporte de la comunidad y la madurez del plugin son limitados.
@@ -88,13 +88,13 @@ La comparación con alternativas de otros proveedores (por ejemplo, modelos de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-W4A16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-W4A16
 - Repositorio GitHub del proyecto y plugin: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Benchmark receipts: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edición FP8: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-FP8
 - Edición NVFP4: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-NVFP4
 - Edición BF16: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-31B-BF16

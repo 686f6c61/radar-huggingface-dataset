@@ -25,7 +25,7 @@ Su interés práctico reside en ser una alternativa con licencia MIT, muy ligera
 | Tokenizador | SentencePiece, vocabulario de 16.000 tokens |
 | Capas / cabezas / dff | 8 capas, 12 cabezas, dff = 3072 |
 | Tamano del repo | 0,2 GB |
-| Pipeline (HuggingFace) | sentence-similarity |
+| Pipeline (Hugging Face) | sentence-similarity |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -113,10 +113,10 @@ Los ficheros de resultados crudos se encuentran en `mteb_results/` del arbol de 
 
 | Modelo | Parametros | Dim. de embedding | Contexto | Licencia | Media MTEB(rus) sobre tareas | Disponibilidad |
 |---|---:|---:|---:|---|---:|---|
-| kenga-embed-z3 | 44,2 M | 768 | 512 | MIT | 54,2 | Repo HuggingFace, codigo propio |
+| kenga-embed-z3 | 44,2 M | 768 | 512 | MIT | 54,2 | Repo Hugging Face, codigo propio |
 | USER2-small-34M | 34 M | No disponible | No disponible | No disponible | 58,5 | Leaderboard MTEB |
 | rubert-tiny-turbo-29M | 29 M | No disponible | No disponible | No disponible | 53,7 | Leaderboard MTEB |
-| BERTA-128M | 128 M | No disponible | No disponible | No disponible | 69,4 | Repo HuggingFace (sergeyzh/BERTA) |
+| BERTA-128M | 128 M | No disponible | No disponible | No disponible | 69,4 | Repo Hugging Face (sergeyzh/BERTA) |
 | Giga-Embeddings-instruct-480M | 480 M (segun denominacion) | No disponible | No disponible | No disponible | 74,2 | Leaderboard MTEB |
 
 Frente a los encoders de su mismo rango de tamano, kenga-embed-z3 queda por encima de rubert-tiny-turbo-29M (54,2 frente a 53,7) y por debajo de USER2-small-34M (54,2 frente a 58,5). Frente a su propio profesor, BERTA-128M, la diferencia es de 15,2 puntos en la media simple, y la brecha se concentra en retrieval (38,7 frente a 73,8). Los datos de licencia, dimension y contexto de los modelos de comparacion no estan disponibles en la informacion proporcionada.
@@ -140,7 +140,7 @@ Frente a los encoders de su mismo rango de tamano, kenga-embed-z3 queda por enci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-z3
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-z3
 - Repositorio del proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentacion del contrato Prophet y receta de entrenamiento: https://github.com/GermannM/kenga-lang/blob/main/docs/PROPHETS.md
 - Modelo profesor (BERTA): https://huggingface.co/sergeyzh/BERTA

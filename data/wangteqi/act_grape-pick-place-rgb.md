@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wangteqi/act_grape-pick-place-rgb` es una politica de robotica basada en ACT (Action Chunking with Transformers), entrenada con la libreria LeRobot de HuggingFace. ACT es un metodo de aprendizaje por imitacion que, en lugar de predecir una accion por paso de tiempo, predice trozos (chunks) de acciones futuras a partir de datos de teleoperacion, lo que reduce el error de composicion y suele elevar la tasa de exito en tareas de manipulacion fina. El modelo lo publica el usuario `wangteqi` y esta pensado para el robot `rebot_b601_follower` con dos camaras Intel RealSense (`d435i` y `d405`).
+`wangteqi/act_grape-pick-place-rgb` es una politica de robotica basada en ACT (Action Chunking with Transformers), entrenada con la libreria LeRobot de Hugging Face. ACT es un metodo de aprendizaje por imitacion que, en lugar de predecir una accion por paso de tiempo, predice trozos (chunks) de acciones futuras a partir de datos de teleoperacion, lo que reduce el error de composicion y suele elevar la tasa de exito en tareas de manipulacion fina. El modelo lo publica el usuario `wangteqi` y esta pensado para el robot `rebot_b601_follower` con dos camaras Intel RealSense (`d435i` y `d405`).
 
 La politica consume observaciones de estado de 7 dimensiones y dos imagenes RGB de 480x640, y produce un vector de accion de 7 dimensiones. Su unico objetivo documentado es la tarea "Pick and place the grape" (coger y colocar una uva), aprendida a partir de un dataset muy reducido: 3 episodios, 731 fotogramas y 30 FPS. El modelo tiene 51.670.663 parametros (~51,7 M) y se distribuye bajo licencia Apache 2.0 en formato safetensors.
 
@@ -71,8 +71,8 @@ La busqueda no ha devuelto datos de especificaciones ni de rendimiento de altern
 
 | Modelo | Tipo de metodo | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `wangteqi/act_grape-pick-place-rgb` | ACT (imitacion con chunks de acciones, encoder-decoder transformer + CVAE) | 51,7 M | Apache 2.0 | HuggingFace Hub, libreria LeRobot |
-| Otras politicas ACT de LeRobot | ACT (misma arquitectura) | no disponible en la informacion proporcionada | Apache 2.0 (habitual en LeRobot) | HuggingFace Hub |
+| `wangteqi/act_grape-pick-place-rgb` | ACT (imitacion con chunks de acciones, encoder-decoder transformer + CVAE) | 51,7 M | Apache 2.0 | Hugging Face Hub, libreria LeRobot |
+| Otras politicas ACT de LeRobot | ACT (misma arquitectura) | no disponible en la informacion proporcionada | Apache 2.0 (habitual en LeRobot) | Hugging Face Hub |
 | Diffusion Policy | Imitacion basada en modelos de difusion | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Implementada en LeRobot |
 | Politicas VLA (por ejemplo, SmolVLA) | Vision-language-action | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Ecosistema LeRobot |
 
@@ -90,9 +90,9 @@ La busqueda no ha devuelto datos de especificaciones ni de rendimiento de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangteqi/act_grape-pick-place-rgb
+- Modelo en Hugging Face: https://huggingface.co/wangteqi/act_grape-pick-place-rgb
 - Dataset de entrenamiento: https://huggingface.co/datasets/wangteqi/grape-pick-place-rgb
-- Paper de ACT (pagina de HuggingFace): https://huggingface.co/papers/2304.13705
+- Paper de ACT (pagina de Hugging Face): https://huggingface.co/papers/2304.13705
 - Paper de ACT (arXiv): https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Guia de ACT en LeRobot: https://huggingface.co/docs/lerobot/main/en/act

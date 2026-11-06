@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LFM3-1.7B-gestion es un modelo de lenguaje conversacional de 1.728.801.600 parametros (aproximadamente 1,7 mil millones) publicado en HuggingFace por el usuario yacine-myu bajo licencia Apache 2.0. Por la nomenclatura, se trata de un fine-tuning o derivado de la familia LFM3 (Liquid Foundation Models) de Liquid AI, orientado aparentemente a tareas de gestion, aunque la model card publicada no incluye ninguna descripcion funcional, datos de entrenamiento ni detalles sobre el proceso de ajuste.
+LFM3-1.7B-gestion es un modelo de lenguaje conversacional de 1.728.801.600 parametros (aproximadamente 1,7 mil millones) publicado en Hugging Face por el usuario yacine-myu bajo licencia Apache 2.0. Por la nomenclatura, se trata de un fine-tuning o derivado de la familia LFM3 (Liquid Foundation Models) de Liquid AI, orientado aparentemente a tareas de gestion, aunque la model card publicada no incluye ninguna descripcion funcional, datos de entrenamiento ni detalles sobre el proceso de ajuste.
 
-El repositorio tiene un tamano de 1,1 GB y esta etiquetado con el formato GGUF, lo que indica que los pesos se distribuyen cuantizados para inferencia en CPU o GPU con llama.cpp y herramientas compatibles. Tambien aparece la etiqueta `endpoints_compatible`, que sugiere compatibilidad con la API de inferencia de HuggingFace. No se han publicado resultados de benchmarks, idiomas soportados ni pipeline declarado.
+El repositorio tiene un tamano de 1,1 GB y esta etiquetado con el formato GGUF, lo que indica que los pesos se distribuyen cuantizados para inferencia en CPU o GPU con llama.cpp y herramientas compatibles. Tambien aparece la etiqueta `endpoints_compatible`, que sugiere compatibilidad con la API de inferencia de Hugging Face. No se han publicado resultados de benchmarks, idiomas soportados ni pipeline declarado.
 
 La relevancia de esta ficha es limitada por la escasez de informacion oficial: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, sin model card descriptiva mas alla de la linea de licencia. Cualquier evaluacion en produccion deberia hacerse con cautela y validacion empirica propia.
 
@@ -40,7 +40,7 @@ El unico dato estructural verificable es el recuento de parametros en safetensor
 
 - Prototipado rapido de asistentes conversacionales: al ser un modelo de 1,7 B en GGUF y 1,1 GB, puede ejecutarse en portatiles modestos con llama.cpp para validar flujos de dialogo antes de invertir en modelos mayores.
 - Despliegue en entornos con recursos limitados: su tamano permite inferencia en CPU o en GPUs de gama baja, util para demos internas o entornos de borde donde no cabe un modelo de 7 B o superior.
-- Experimentacion academica con fine-tunings pequenos: sirve como caso de estudio de modelos derivados publicados sin documentacion, para analizar practicas de publicacion en HuggingFace.
+- Experimentacion academica con fine-tunings pequenos: sirve como caso de estudio de modelos derivados publicados sin documentacion, para analizar practicas de publicacion en Hugging Face.
 - Tareas de gestion acotadas (a validar): si el ajuste cumple lo que sugiere el nombre, podria emplearse en clasificacion o redaccion de documentos administrativos, pero requiere evaluacion empirica previa por la ausencia de benchmarks.
 - Base para cuantizaciones adicionales: el formato GGUF facilita generar variantes Q4_K_M, Q5_K_M o Q8_0 y comparar calidad frente a tamano en pipelines de llama.cpp.
 - Chatbot de soporte interno de bajo coste: con contexto limitado y sin garantias de calidad, solo recomendable en entornos no criticos y con supervision humana.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con cuantizacion Q4, alrededor de 1,0-1,2 GB; en Q8, en torno a 1,8-2,0 GB; en FP16, aproximadamente 3,5 GB. Estimaciones calculadas a partir del recuento de parametros, no verificadas por el autor.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060) es suficiente para cuantizaciones Q4/Q5; para FP16 se recomienda RTX 3060 12 GB o superior. En datacenter, A100 o H100 no aportan ventaja significativa por el reducido tamano del modelo.
 - Inferencia en CPU: viable con llama.cpp en procesadores modernos con 8 GB de RAM o mas.
-- Opciones de despliegue: llama.cpp, Ollama (previa conversion a su formato), y potencialmente endpoints de HuggingFace por la etiqueta `endpoints_compatible`. vLLM y TGI requeririan pesos en safetensors, que no se distribuyen en el repo.
+- Opciones de despliegue: llama.cpp, Ollama (previa conversion a su formato), y potencialmente endpoints de Hugging Face por la etiqueta `endpoints_compatible`. vLLM y TGI requeririan pesos en safetensors, que no se distribuyen en el repo.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -81,5 +81,5 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano equivale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yacine-myu/LFM3-1.7B-gestion
+- Modelo en Hugging Face: https://huggingface.co/yacine-myu/LFM3-1.7B-gestion
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

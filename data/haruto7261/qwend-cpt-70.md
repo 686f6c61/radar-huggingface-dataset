@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenD-CPT-70 es un modelo derivado de la familia Qwen, publicado por el usuario Haruto7261 en HuggingFace el 1 de noviembre de 2026. Por la nomenclatura (CPT, *continued pre-training*) y el tamaño indicado en el nombre (70), se trata presumiblemente de un modelo de aproximadamente 70.000 millones de parámetros sometido a un entrenamiento continuado sobre un corpus en japonés. No obstante, la model card no confirma ni el modelo base exacto, ni la arquitectura, ni el número real de parámetros.
+QwenD-CPT-70 es un modelo derivado de la familia Qwen, publicado por el usuario Haruto7261 en Hugging Face el 1 de noviembre de 2026. Por la nomenclatura (CPT, *continued pre-training*) y el tamaño indicado en el nombre (70), se trata presumiblemente de un modelo de aproximadamente 70.000 millones de parámetros sometido a un entrenamiento continuado sobre un corpus en japonés. No obstante, la model card no confirma ni el modelo base exacto, ni la arquitectura, ni el número real de parámetros.
 
 El interés principal del modelo reside en su corpus de especialización: una mezcla de diálogos cotidianos en japonés (Japanese-Daily-Dialogue, MACHAcorpus, RealPersonaChat), fuentes específicas del dialecto de Kagoshima (薩隅方言), registros parlamentarios (国会会議録), Aozora Bunko y Wikipedia en japonés. Esto sugiere un objetivo de adaptación al japonés coloquial y, en particular, al dialecto de Kagoshima, un nicho poco cubierto por los modelos generalistas.
 
@@ -77,7 +77,7 @@ No disponible. La ausencia de especificaciones confirmadas (arquitectura, parám
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Haruto7261/QwenD-CPT-70
+- Hugging Face: https://huggingface.co/Haruto7261/QwenD-CPT-70
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

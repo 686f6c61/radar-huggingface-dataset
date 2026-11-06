@@ -61,10 +61,10 @@ Dado que Harness-R1 es un fine-tuning de Qwen3.5-9B, la comparación más direct
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Harness-R1 (este) | 9B | no disponible | RL para edición de harness | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B (base) | 9B | no disponible | Modelo generalista | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Modelo generalista | Llama 3.1 | HuggingFace |
-| Mistral 7B | 7B | 32K | Modelo generalista | Apache 2.0 | HuggingFace |
+| Harness-R1 (este) | 9B | no disponible | RL para edición de harness | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B (base) | 9B | no disponible | Modelo generalista | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Modelo generalista | Llama 3.1 | Hugging Face |
+| Mistral 7B | 7B | 32K | Modelo generalista | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. La principal diferencia de Harness-R1 es su especialización en editar el harness, una capacidad que los modelos generalistas no poseen de forma nativa.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de Ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ShaoShuai0605/Harness-R1
+- Hugging Face: https://huggingface.co/ShaoShuai0605/Harness-R1
 - Paper (arXiv): https://arxiv.org/abs/2608.02276
 - PDF del paper: https://arxiv.org/pdf/2608.02276
 - Repositorio GitHub relacionado (harness-1): https://github.com/pat-jj/harness-1

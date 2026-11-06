@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kayfiyat_aniqlash (este modelo) | 278 M | no disponible (base: 512) | Clasificacion de sentimiento en uzbeko, 3 clases | MIT | HuggingFace |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingue (MLM) | MIT | HuggingFace |
-| CardiffNLP/twitter-xlm-roberta-base-sentiment | ~278 M | 512 tokens | Sentimiento multilingue, 3 clases | no disponible en esta ficha | HuggingFace |
+| Kayfiyat_aniqlash (este modelo) | 278 M | no disponible (base: 512) | Clasificacion de sentimiento en uzbeko, 3 clases | MIT | Hugging Face |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingue (MLM) | MIT | Hugging Face |
+| CardiffNLP/twitter-xlm-roberta-base-sentiment | ~278 M | 512 tokens | Sentimiento multilingue, 3 clases | no disponible en esta ficha | Hugging Face |
 
 La comparación con alternativas específicas para uzbeko no está disponible en la información proporcionada. El modelo base XLM-R y los fine-tunings multilingües de sentimiento son los referentes naturales, pero no se dispone de sus métricas en uzbeko para establecer una comparación cuantitativa rigurosa.
 
@@ -87,7 +87,7 @@ La comparación con alternativas específicas para uzbeko no está disponible en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SultonOFF/Kayfiyat_aniqlash
+- Repositorio en Hugging Face: https://huggingface.co/SultonOFF/Kayfiyat_aniqlash
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-R (Conneau et al., 2019): https://arxiv.org/abs/1911.02116
 - Paper de RoBERTa (Liu et al., 2019): https://arxiv.org/abs/1907.11692

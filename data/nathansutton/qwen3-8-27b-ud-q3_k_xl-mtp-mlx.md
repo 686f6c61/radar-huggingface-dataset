@@ -51,7 +51,7 @@ El chat template difiere del modelo base en un solo punto: el `reasoning_effort`
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para esta cuantizacion en la informacion disponible. El modelo base Qwen/Qwen3.8-27B tiene resultados publicados en el repositorio de HuggingFace (por ejemplo, en tareas de vision matematica como MathVision), pero no se han reportado datos de rendimiento de esta cuantizacion MLX de 3 bits. Por tanto, no se puede cuantificar la degradacion exacta respecto al modelo base.
+No se han publicado resultados de benchmarks especificos para esta cuantizacion en la informacion disponible. El modelo base Qwen/Qwen3.8-27B tiene resultados publicados en el repositorio de Hugging Face (por ejemplo, en tareas de vision matematica como MathVision), pero no se han reportado datos de rendimiento de esta cuantizacion MLX de 3 bits. Por tanto, no se puede cuantificar la degradacion exacta respecto al modelo base.
 
 ## Requisitos de hardware
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K | FP16/BF16 | Apache 2.0 | HuggingFace, CUDA, MLX |
+| Qwen3.8-27B (base) | 27B | 262K | FP16/BF16 | Apache 2.0 | Hugging Face, CUDA, MLX |
 | Qwen3.8-27B-UD-Q3_K_XL-MTP-MLX (este) | 27B | 262K | MLX 3-bit + MTP 4-bit | Apache 2.0 | Apple Silicon (MLX) |
-| Qwen3.8-2.4T-A95B | 95B activos / 2.4T totales | 262K | no disponible | Apache 2.0 | HuggingFace, GPU |
+| Qwen3.8-2.4T-A95B | 95B activos / 2.4T totales | 262K | no disponible | Apache 2.0 | Hugging Face, GPU |
 
 La comparativa se limita a la familia Qwen3.8 porque no se dispone de datos de modelos comparables de otros fabricantes con la misma cuantizacion MLX. La diferencia principal con el modelo base es el footprint de memoria: el base en FP16 ocupa aproximadamente 54 GB, mientras que esta cuantizacion reduce a 12 GB, permitiendo ejecucion en un Mac de 24 GB.
 
@@ -83,8 +83,8 @@ La comparativa se limita a la familia Qwen3.8 porque no se dispone de datos de m
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/nathansutton/Qwen3.8-27B-UD-Q3_K_XL-MTP-MLX
-- Repositorio HuggingFace del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/nathansutton/Qwen3.8-27B-UD-Q3_K_XL-MTP-MLX
+- Repositorio Hugging Face del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio GitHub de chad (agente local): https://github.com/nathansutton/chad
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

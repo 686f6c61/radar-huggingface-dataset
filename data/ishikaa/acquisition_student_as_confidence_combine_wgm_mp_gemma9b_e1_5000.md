@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de 9.241.705.984 parámetros derivado de la familia Gemma 2 (etiqueta `gemma2` en HuggingFace), publicado por el usuario `ishikaa`. Por el nombre del identificador (`acquisition_student_AS_confidence_combine_WGM_MP_gemma9b_e1_5000`) y por la ausencia total de documentación en la model card, todo apunta a un experimento de investigación —probablemente destilación o entrenamiento con selección activa de datos— más que a un modelo listo para producción. El sufijo `student` sugiere un rol de alumno en un esquema de destilación, y `gemma9b` indica que el modelo base es un Gemma 2 de aproximadamente 9.000 millones de parámetros.
+Este repositorio contiene un checkpoint de 9.241.705.984 parámetros derivado de la familia Gemma 2 (etiqueta `gemma2` en Hugging Face), publicado por el usuario `ishikaa`. Por el nombre del identificador (`acquisition_student_AS_confidence_combine_WGM_MP_gemma9b_e1_5000`) y por la ausencia total de documentación en la model card, todo apunta a un experimento de investigación —probablemente destilación o entrenamiento con selección activa de datos— más que a un modelo listo para producción. El sufijo `student` sugiere un rol de alumno en un esquema de destilación, y `gemma9b` indica que el modelo base es un Gemma 2 de aproximadamente 9.000 millones de parámetros.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. La licencia no está declarada en el repositorio, lo que en la práctica impide asumir derechos de uso comercial, y el propio modelo base Gemma 2 arrastra las condiciones de uso de Google. El checkpoint tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
+La model card es la plantilla automática de Hugging Face sin rellenar: no hay información sobre datos de entrenamiento, hiperparámetros, licencia, idiomas ni evaluación. La licencia no está declarada en el repositorio, lo que en la práctica impide asumir derechos de uso comercial, y el propio modelo base Gemma 2 arrastra las condiciones de uso de Google. El checkpoint tiene 0 descargas y 0 likes en el momento de redactar esta ficha.
 
 Su relevancia es, por tanto, limitada y de carácter exploratorio: sirve como artefacto reproducible para quien quiera inspeccionar los pesos, pero no debería tratarse como un modelo de propósito general sin una evaluación propia previa. Cualquier dato de arquitectura fina, contexto o entrenamiento que no figure aquí debe considerarse no disponible.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| Este checkpoint (`ishikaa/...gemma9b_e1_5000`) | 9.241.705.984 | no disponible | no disponible | HuggingFace, 0 descargas | plantilla vacia |
-| Gemma 2 9B (Google) | ~9.000 M | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado | model card completa y benchmarks |
-| Llama 3.1 8B (Meta) | ~8.000 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente usado | model card completa y benchmarks |
-| Mistral 7B v0.3 (Mistral AI) | ~7.200 M | 32.000 tokens | Apache 2.0 | HuggingFace, ampliamente usado | model card completa y benchmarks |
+| Este checkpoint (`ishikaa/...gemma9b_e1_5000`) | 9.241.705.984 | no disponible | no disponible | Hugging Face, 0 descargas | plantilla vacia |
+| Gemma 2 9B (Google) | ~9.000 M | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado | model card completa y benchmarks |
+| Llama 3.1 8B (Meta) | ~8.000 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente usado | model card completa y benchmarks |
+| Mistral 7B v0.3 (Mistral AI) | ~7.200 M | 32.000 tokens | Apache 2.0 | Hugging Face, ampliamente usado | model card completa y benchmarks |
 
 La comparación pone de manifiesto la diferencia fundamental: los tres modelos de referencia cuentan con documentación, licencia explícita y evaluaciones publicadas, mientras que este checkpoint carece de todo ello. Los datos de contexto y licencia de los modelos comparados provienen de sus respectivas model cards públicas.
 
@@ -83,7 +83,7 @@ La comparación pone de manifiesto la diferencia fundamental: los tres modelos d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_gemma9b_e1_5000
+- Repositorio en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_confidence_combine_WGM_MP_gemma9b_e1_5000
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML CO2: https://mlco2.github.io/impact
 - Model card de Gemma 2 (modelo base presumible): https://huggingface.co/google/gemma-2-9b

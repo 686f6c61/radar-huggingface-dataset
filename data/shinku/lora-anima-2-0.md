@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Shinku/lora-anima-2.0` es un repositorio alojado en HuggingFace por el usuario Shinku, cuyo nombre sugiere un adaptador de tipo LoRA (low-rank adaptation) asociado a un componente llamado "anima" en su version 2.0. No se dispone de model card, pipeline declarado, licencia, idiomas ni descripcion funcional en la informacion proporcionada, por lo que no es posible confirmar la arquitectura del modelo base sobre el que se aplica ni la tarea para la que fue entrenado.
+`Shinku/lora-anima-2.0` es un repositorio alojado en Hugging Face por el usuario Shinku, cuyo nombre sugiere un adaptador de tipo LoRA (low-rank adaptation) asociado a un componente llamado "anima" en su version 2.0. No se dispone de model card, pipeline declarado, licencia, idiomas ni descripcion funcional en la informacion proporcionada, por lo que no es posible confirmar la arquitectura del modelo base sobre el que se aplica ni la tarea para la que fue entrenado.
 
 El dato mas relevante disponible es el tamaño del repositorio: 192,7 GB. Un adaptador LoRA convencional suele ocupar entre decenas y cientos de megabytes, de modo que ese volumen indica que el repositorio contiene algo mas que los pesos del adaptador, probablemente pesos fusionados con el modelo base, multiples variantes o estados de entrenamiento. Se trata de una inferencia a partir del tamaño, no de un dato documentado.
 
-El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el contenido. El repositorio registra 0 descargas y 1 like, y no se ha publicado informacion tecnica adicional. Cualquier evaluacion de sus capacidades reales requiere solicitar acceso y revisar los archivos del repositorio.
+El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el contenido. El repositorio registra 0 descargas y 1 like, y no se ha publicado informacion tecnica adicional. Cualquier evaluacion de sus capacidades reales requiere solicitar acceso y revisar los archivos del repositorio.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingF
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| ID en HuggingFace | Shinku/lora-anima-2.0 |
+| ID en Hugging Face | Shinku/lora-anima-2.0 |
 | Autor | Shinku |
 | Fecha de creacion | 2026-08-23 |
 | Ultima actualizacion | 2026-09-19 |
@@ -85,7 +85,7 @@ No disponible. No se ha identificado ningun modelo comparable porque se desconoc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shinku/lora-anima-2.0
+- Hugging Face: https://huggingface.co/Shinku/lora-anima-2.0
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion tecnica: no disponible

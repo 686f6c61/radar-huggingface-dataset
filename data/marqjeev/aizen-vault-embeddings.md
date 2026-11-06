@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Marqjeev/aizen-vault-embeddings` es un modelo de embeddings de frases (sentence embeddings) publicado por el usuario Marqjeev en HuggingFace. Se trata de un fine-tune del conocido `sentence-transformers/all-MiniLM-L6-v2`, orientado a similitud semantica y extraccion de caracteristicas densas. El modelo se genero con la libreria `sentence-transformers` y la perdida `MultipleNegativesRankingLoss`, un objetivo de contrastive learning habitual para tareas de recuperacion.
+`Marqjeev/aizen-vault-embeddings` es un modelo de embeddings de frases (sentence embeddings) publicado por el usuario Marqjeev en Hugging Face. Se trata de un fine-tune del conocido `sentence-transformers/all-MiniLM-L6-v2`, orientado a similitud semantica y extraccion de caracteristicas densas. El modelo se genero con la libreria `sentence-transformers` y la perdida `MultipleNegativesRankingLoss`, un objetivo de contrastive learning habitual para tareas de recuperacion.
 
 Lo mas llamativo de la ficha es su escala de entrenamiento: el tag `dataset_size:42` indica que el ajuste se hizo sobre 42 ejemplos, y los ejemplos del widget de la model card son notas sinteticas sobre entidades ficticias (paises como Astrelle o Korvatia, organismos como la Velmoria Central Reserve, y preferencias personales de bajo riesgo). Esto sugiere que el modelo no busca competir en benchmarks generales, sino actuar como recuperador semantico de un "vault" personal de notas estructuradas.
 
@@ -49,24 +49,24 @@ El entrenamiento se realizo con `sentence-transformers` y la perdida `MultipleNe
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MTEB, ni tablas de recuperacion (Recall@k, nDCG), ni evaluaciones de similitud semantica. La unica evidencia de comportamiento son los ejemplos del widget de HuggingFace, que no constituyen una evaluacion cuantitativa.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MTEB, ni tablas de recuperacion (Recall@k, nDCG), ni evaluaciones de similitud semantica. La unica evidencia de comportamiento son los ejemplos del widget de Hugging Face, que no constituyen una evaluacion cuantitativa.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no aplica en la practica. Con ~22,7 M de parametros en el modelo base, los pesos ocupan aproximadamente 91 MB en fp32 y unos 45 MB en fp16, mas el overhead de activaciones y tokenizador.
 - GPU recomendadas: ninguna en concreto; cualquier GPU consumer sirve, incluida una GTX 1650 o integradas. El modelo esta pensado para ejecutarse en CPU.
 - Cabe en GPU consumer: si, con margen amplio en cualquier GPU con mas de 1 GB de memoria.
-- Opciones de despliegue: `sentence-transformers` (libreria declarada), HuggingFace Text Embeddings Inference (tag `text-embeddings-inference`), ONNX Runtime, FastEmbed, y llama.cpp si se convierte a GGUF a partir del modelo base.
+- Opciones de despliegue: `sentence-transformers` (libreria declarada), Hugging Face Text Embeddings Inference (tag `text-embeddings-inference`), ONNX Runtime, FastEmbed, y llama.cpp si se convierte a GGUF a partir del modelo base.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones del autor y no deben extrapolarse cifras del modelo base sin verificarlas en el hardware objetivo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Dimension de embedding | Contexto maximo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Marqjeev/aizen-vault-embeddings | No disponible (base ~22,7 M) | No disponible (base 384) | No disponible (base 256 tokens) | No disponible | HuggingFace, 0 descargas |
-| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 384 | 256 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| sentence-transformers/all-mpnet-base-v2 | ~109 M | 768 | 384 tokens | Apache-2.0 | HuggingFace, ampliamente usado |
-| BAAI/bge-small-en-v1.5 | ~33 M | 384 | 512 tokens | MIT | HuggingFace, ampliamente usado |
+| Marqjeev/aizen-vault-embeddings | No disponible (base ~22,7 M) | No disponible (base 384) | No disponible (base 256 tokens) | No disponible | Hugging Face, 0 descargas |
+| sentence-transformers/all-MiniLM-L6-v2 | ~22,7 M | 384 | 256 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| sentence-transformers/all-mpnet-base-v2 | ~109 M | 768 | 384 tokens | Apache-2.0 | Hugging Face, ampliamente usado |
+| BAAI/bge-small-en-v1.5 | ~33 M | 384 | 512 tokens | MIT | Hugging Face, ampliamente usado |
 
 Los datos de las alternativas corresponden a informacion publica de sus respectivos repositorios y deben verificarse antes de tomar decisiones de produccion. No existe comparativa de rendimiento posible con `aizen-vault-embeddings` porque no publica metricas.
 
@@ -84,11 +84,11 @@ Los datos de las alternativas corresponden a informacion publica de sus respecti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Marqjeev/aizen-vault-embeddings
+- Modelo en Hugging Face: https://huggingface.co/Marqjeev/aizen-vault-embeddings
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Paper Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Referencia adicional citada en los tags (arXiv:1807.03748): https://arxiv.org/abs/1807.03748
 - Libreria sentence-transformers: https://www.sbert.net/
 - Repositorio sentence-transformers: https://github.com/UKPLab/sentence-transformers
-- HuggingFace Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference
+- Hugging Face Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference
 - Directorios genericos encontrados en la busqueda web, sin informacion especifica sobre este modelo: https://www.modelvault.space/ , https://huggingbay.xyz/ , https://aimodelsbenchmark.com/ , https://www.openxcell.com/blog/best-embedding-models , https://huggingface.co/models?search=embedding

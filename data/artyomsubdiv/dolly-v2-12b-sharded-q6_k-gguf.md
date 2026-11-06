@@ -87,7 +87,7 @@ No se han proporcionado datos de benchmarks ni de rendimiento medido de ninguno 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArtyomSubDiv/dolly-v2-12b-sharded-Q6_K-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ArtyomSubDiv/dolly-v2-12b-sharded-Q6_K-GGUF
 - Modelo base: https://huggingface.co/ethzanalytics/dolly-v2-12b-sharded
 - Dataset de ajuste: https://huggingface.co/datasets/databricks/databricks-dolly-15k
 - Space de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

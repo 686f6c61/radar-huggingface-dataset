@@ -70,6 +70,6 @@ No se dispone de datos para comparar este modelo con otras LoRAs de personajes o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madmacs5/rosie-krea2-lora
+- Hugging Face: https://huggingface.co/madmacs5/rosie-krea2-lora
 - Civitai tag krea2: https://civitai.com/tag/krea2
 - Civitai tag lora: https://civitai.com/tag/lora

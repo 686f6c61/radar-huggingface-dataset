@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_unfiltered_midtrain_alignment-8k_9k_10k_merge` es un modelo de lenguaje de 6.856 millones de parametros (aproximadamente 7B) creado mediante la fusion lineal de tres checkpoints intermedios de un mismo modelo base, denominado `unfiltered_midtrain_alignment`, correspondientes a los pasos de entrenamiento global 8000, 9000 y 10000. El autor, `yuhengtu-bytedance`, lo ha publicado en HuggingFace bajo la etiqueta de mergekit, lo que indica que se trata de un experimento de fusion de pesos, una tecnica cada vez mas utilizada para combinar modelos o, como en este caso, promediar checkpoints de un mismo entrenamiento para obtener un modelo mas estable o con mejores propiedades de generalizacion.
+`sfm_unfiltered_midtrain_alignment-8k_9k_10k_merge` es un modelo de lenguaje de 6.856 millones de parametros (aproximadamente 7B) creado mediante la fusion lineal de tres checkpoints intermedios de un mismo modelo base, denominado `unfiltered_midtrain_alignment`, correspondientes a los pasos de entrenamiento global 8000, 9000 y 10000. El autor, `yuhengtu-bytedance`, lo ha publicado en Hugging Face bajo la etiqueta de mergekit, lo que indica que se trata de un experimento de fusion de pesos, una tecnica cada vez mas utilizada para combinar modelos o, como en este caso, promediar checkpoints de un mismo entrenamiento para obtener un modelo mas estable o con mejores propiedades de generalizacion.
 
 El modelo se presenta como un experimento de investigacion sin documentacion adicional: no se especifican la licencia, los idiomas soportados, el dataset de entrenamiento ni los benchmarks. La arquitectura subyacente es GPT-NeoX, segun las etiquetas del repositorio, y los pesos se distribuyen en formato safetensors con precision bfloat16. La relevancia de este modelo reside en su metodologia: la fusion de checkpoints intermedios de un mismo entrenamiento es una estrategia que puede mejorar la robustez del modelo final, y este repositorio documenta de forma transparente el proceso de fusion, lo que lo convierte en un caso de estudio util para la comunidad.
 
@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. El modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-8k_9k_10k_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-8k_9k_10k_merge
 - Modelo relacionado del mismo autor: https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Referencia del metodo de fusion (Linear merge): https://arxiv.org/abs/2203.05482
 - Herramienta mergekit: https://github.com/cg123/mergekit

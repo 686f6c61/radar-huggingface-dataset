@@ -87,7 +87,7 @@ No disponible. No se ha identificado ningun modelo comparable porque el paquete 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-7dceaf57a1b2-f1a9285257c6
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-log-task00-centre-full-hourly-7dceaf57a1b2-f1a9285257c6
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

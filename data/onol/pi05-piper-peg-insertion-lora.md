@@ -79,9 +79,9 @@ El modelo base π0.5 es más generalista y de mayor tamaño, mientras que los ad
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Onol/pi05-piper-peg-insertion-lora
+- Hugging Face del modelo: https://huggingface.co/Onol/pi05-piper-peg-insertion-lora
 - Repositorio de OpenPI (GitHub): https://github.com/Physical-Intelligence/openpi
 - Página web de OpenPI: https://www.openpi.net/english.html
-- Modelo base π0.5 en HuggingFace: https://huggingface.co/physical-intelligence/pi0.5 (no verificado)
+- Modelo base π0.5 en Hugging Face: https://huggingface.co/physical-intelligence/pi0.5 (no verificado)
 - Adaptador similar de Onol para otra tarea: https://huggingface.co/Onol/pi05-piper-pick-bowl-into-bag-lora
 - Implementación de π0.5 en LeRobot (referencia): https://huggingface.co/moriis/pi05_piper

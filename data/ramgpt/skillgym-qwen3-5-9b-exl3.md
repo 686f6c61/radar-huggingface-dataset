@@ -100,7 +100,7 @@ No se proporcionan alternativas cuantizadas de la misma categoria con las que co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramgpt/SkillGym-Qwen3.5-9B-EXL3
+- Repositorio Hugging Face: https://huggingface.co/ramgpt/SkillGym-Qwen3.5-9B-EXL3
 - Modelo de origen: https://huggingface.co/reasonwang/SkillGym-Qwen3.5-9B
 - Modelo base Qwen3.5-9B (fuente de los ficheros de preprocesado): https://huggingface.co/Qwen/Qwen3.5-9B
 - ExLlamaV3 (herramienta de conversion y backend): no se ha encontrado un enlace especifico en la busqueda web proporcionada

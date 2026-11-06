@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Huen-small-2 es un modelo de reconocimiento automatico de voz (ASR) publicado en HuggingFace por la organizacion igunosalabs. Segun los metadatos del repositorio, se trata de un modelo basado en la arquitectura Whisper, integrado con la libreria Transformers y distribuido en formato safetensors, con un total de 241.734.912 parametros (aproximadamente 242 millones) y un tamano de repositorio de 1,0 GB.
+Huen-small-2 es un modelo de reconocimiento automatico de voz (ASR) publicado en Hugging Face por la organizacion igunosalabs. Segun los metadatos del repositorio, se trata de un modelo basado en la arquitectura Whisper, integrado con la libreria Transformers y distribuido en formato safetensors, con un total de 241.734.912 parametros (aproximadamente 242 millones) y un tamano de repositorio de 1,0 GB.
 
-La model card del repositorio es una plantilla generada automaticamente por HuggingFace y no aporta informacion sustantiva: no describe el proposito del modelo, los datos de entrenamiento, la licencia ni los idiomas soportados. Esto limita la evaluacion rigurosa del modelo, aunque su clasificacion como variante "small" de Whisper permite situarlo en la gama de modelos ASR ligeros, pensados para transcripcion con requisitos de hardware moderados.
+La model card del repositorio es una plantilla generada automaticamente por Hugging Face y no aporta informacion sustantiva: no describe el proposito del modelo, los datos de entrenamiento, la licencia ni los idiomas soportados. Esto limita la evaluacion rigurosa del modelo, aunque su clasificacion como variante "small" de Whisper permite situarlo en la gama de modelos ASR ligeros, pensados para transcripcion con requisitos de hardware moderados.
 
 La relevancia de este modelo es limitada en su estado actual: con cero descargas y cero likes registrados, sin documentacion y sin licencia declarada, no puede considerarse una opcion consolidada frente a alternativas como Whisper small de OpenAI. Su interes principal es para desarrolladores que quieran inspeccionar los pesos directamente o contactar con el autor para obtener mas detalles.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con ~242 millones de parametros en fp32 (repo de 1,0 GB), se estima un consumo de 1-2 GB de VRAM en inferencia estandar; en fp16, alrededor de 0,5-1 GB. Estas cifras son estimaciones basadas en el tamano de pesos, no datos publicados.
 - GPU recomendadas: cualquier GPU moderna de gama media es suficiente; no se requieren A100 ni H100. Una RTX 3060 de 12 GB o superior sobra con diferencia.
 - Consumer GPU: cabe con holgura en practicamente cualquier GPU consumer con 4 GB de VRAM o mas, e incluso es plausible su ejecucion en CPU dada la arquitectura Whisper small.
-- Opciones de despliegue: libreria Transformers de HuggingFace (formato nativo del modelo). No hay conversiones publicadas a GGUF, por lo que llama.cpp, Ollama y vLLM no son opciones directas sin conversion previa; para ASR con Whisper, faster-whisper (CTranslate2) requiere conversion adicional.
+- Opciones de despliegue: libreria Transformers de Hugging Face (formato nativo del modelo). No hay conversiones publicadas a GGUF, por lo que llama.cpp, Ollama y vLLM no son opciones directas sin conversion previa; para ASR con Whisper, faster-whisper (CTranslate2) requiere conversion adicional.
 - Latencia y throughput: no disponibles; por referencia, modelos Whisper small suelen transcribir mas rapido que el tiempo real en GPU consumer.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparativa con Whisper small es especialmente relevante porque el numero de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/igunosalabs/huen-small-2
+- Repositorio en Hugging Face: https://huggingface.co/igunosalabs/huen-small-2
 - Paper de referencia de la arquitectura Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Paper citado en los metadatos del repo (Lacoste et al., 2019, calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (blog, demo, repositorio de codigo o paper propio del modelo) en la informacion disponible.

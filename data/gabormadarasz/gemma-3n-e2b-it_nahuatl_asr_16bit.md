@@ -21,7 +21,7 @@ El modelo está publicado bajo licencia Apache 2.0, en formato safetensors, y se
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica detallada sobre la arquitectura. El modelo se describe como un fine-tuning del modelo `unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit`, que pertenece a la familia Gemma 3n de Google, conocida por ser multimodal (procesamiento de imagen y texto). Sin embargo, el repositorio no especifica el número de parámetros, el tamaño del contexto, ni la composición del dataset de entrenamiento. Se indica que se utilizó la librería Unsloth para acelerar el entrenamiento y HuggingFace TRL, pero no se detalla si se aplicaron técnicas como RLHF, DPO o alguna innovación específica. El nombre del modelo incluye "ASR" y "nahuatl", lo que sugiere un entrenamiento orientado a reconocimiento de voz en náhuatl, pero no hay evidencia en la documentación de que se hayan usado datos de audio; el pipeline declarado es image-text-to-text.
+No se dispone de información técnica detallada sobre la arquitectura. El modelo se describe como un fine-tuning del modelo `unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit`, que pertenece a la familia Gemma 3n de Google, conocida por ser multimodal (procesamiento de imagen y texto). Sin embargo, el repositorio no especifica el número de parámetros, el tamaño del contexto, ni la composición del dataset de entrenamiento. Se indica que se utilizó la librería Unsloth para acelerar el entrenamiento y Hugging Face TRL, pero no se detalla si se aplicaron técnicas como RLHF, DPO o alguna innovación específica. El nombre del modelo incluye "ASR" y "nahuatl", lo que sugiere un entrenamiento orientado a reconocimiento de voz en náhuatl, pero no hay evidencia en la documentación de que se hayan usado datos de audio; el pipeline declarado es image-text-to-text.
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para comparar con otros modelos. El mod
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/GaborMadarasz/gemma-3n-E2B-it_nahuatl_ASR_16bit)
+- [Repositorio Hugging Face](https://huggingface.co/GaborMadarasz/gemma-3n-E2B-it_nahuatl_ASR_16bit)
 - [Modelo base: unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-3n-e2b-it-unsloth-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

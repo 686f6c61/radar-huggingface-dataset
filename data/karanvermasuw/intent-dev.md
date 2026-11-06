@@ -64,7 +64,7 @@ No disponible. No se puede comparar este repositorio con otros modelos de IA, ya
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Karanvermasuw/intent-dev
+- Repositorio en Hugging Face: https://huggingface.co/Karanvermasuw/intent-dev
 - Models.dev (base de datos de modelos, no relacionada directamente): https://models.dev/
 - Intent-Driven Development (sitio web, no relacionado directamente): https://intent-driven.dev/
 - Kiro (herramienta de ingeniería de agentes, no relacionada directamente): https://kiro.dev/

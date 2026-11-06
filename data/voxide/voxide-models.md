@@ -105,7 +105,7 @@ La comparacion con alternativas de la misma tarea pero distinta familia (por eje
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/voxide/voxide-models
+- Repositorio en Hugging Face: https://huggingface.co/voxide/voxide-models
 - Fichero de verificacion de integridad: https://huggingface.co/voxide/voxide-models/blob/main/SHA256SUMS
 - Licencia del repositorio: https://huggingface.co/voxide/voxide-models/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/voxide

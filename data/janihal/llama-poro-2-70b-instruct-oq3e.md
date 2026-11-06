@@ -24,8 +24,8 @@ La relevancia de este repositorio concreto es práctica: permite ejecutar localm
 | Herramienta de cuantización | oQ / oMLX v0.6.4 (ruta imatrix), conjunto de calibración `oqe_code_multilingual`, 128 muestras a longitud de secuencia 512 |
 | Modelo base | LumiOpen/Llama-Poro-2-70B-Instruct |
 | Librería de inferencia | mlx-lm (Apple Silicon) |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de publicación en HuggingFace | 10 de septiembre de 2026 (según metadatos del repositorio) |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de publicación en Hugging Face | 10 de septiembre de 2026 (según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 La arquitectura es la de Llama 3.1 70B, es decir, un transformer decoder-only denso con 80 capas, normalización RMSNorm, RoPE y atención por grupos, adaptada por LumiOpen mediante preentrenamiento continuado sobre el modelo base, seguido de ajuste supervisado (SFT) y optimización por preferencias con DPO. El modelo resultante conserva el vocabulario de 128.256 tokens y la ventana de 8.192 tokens de la arquitectura original. El repositorio que nos ocupa no ha sido reentrenado: solo se han recuantizado los pesos.
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Precisión / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| janihal/Llama-Poro-2-70B-Instruct-oQ3e | 70,55B | 8.192 | 3 bits mixto (efectivo ~3,7 bits), MLX safetensors | Llama 3.3 Community License | HuggingFace, 0 descargas |
-| LumiOpen/Llama-Poro-2-70B-Instruct | 70,55B | 8.192 | bf16 (modelo base) | Llama 3.3 Community License | HuggingFace |
-| janihal/Llama-Poro-2-8B-Instruct-oQ8e | No disponible (denominado 8B en el repositorio) | No disponible | 8 bits, MLX | No disponible en la información proporcionada | HuggingFace; recomendado como borrador especulativo |
-| janihal/Llama-Poro-2-8B-Instruct-oQ4e | No disponible (denominado 8B en el repositorio) | No disponible | 4 bits, MLX | No disponible en la información proporcionada | HuggingFace |
+| janihal/Llama-Poro-2-70B-Instruct-oQ3e | 70,55B | 8.192 | 3 bits mixto (efectivo ~3,7 bits), MLX safetensors | Llama 3.3 Community License | Hugging Face, 0 descargas |
+| LumiOpen/Llama-Poro-2-70B-Instruct | 70,55B | 8.192 | bf16 (modelo base) | Llama 3.3 Community License | Hugging Face |
+| janihal/Llama-Poro-2-8B-Instruct-oQ8e | No disponible (denominado 8B en el repositorio) | No disponible | 8 bits, MLX | No disponible en la información proporcionada | Hugging Face; recomendado como borrador especulativo |
+| janihal/Llama-Poro-2-8B-Instruct-oQ4e | No disponible (denominado 8B en el repositorio) | No disponible | 4 bits, MLX | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de otras alternativas de 70B cuantizadas en formato MLX dentro de la información proporcionada.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado ni de otras alternativas de 70B 
 - El comportamiento, los sesgos y las limitaciones del modelo original no se documentan aquí; la model card remite a la de LumiOpen/Llama-Poro-2-70B-Instruct, que debe consultarse antes de cualquier despliegue.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/janihal/Llama-Poro-2-70B-Instruct-oQ3e
+- Repositorio en Hugging Face: https://huggingface.co/janihal/Llama-Poro-2-70B-Instruct-oQ3e
 - Modelo base: https://huggingface.co/LumiOpen/Llama-Poro-2-70B-Instruct
 - Herramienta de cuantización oQ / oMLX: https://github.com/jundot/omlx
 - MLX (Apple): https://github.com/ml-explore/mlx

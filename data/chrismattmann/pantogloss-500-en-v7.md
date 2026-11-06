@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pantogloss 500-to-English successor v7 es un modelo de traducción automática many-to-English desarrollado por chrismattmann (Chris Mattmann) y publicado en HuggingFace bajo licencia Apache 2.0. Se distribuye como artefacto de precisión completa FP32 con un repositorio de 2,2 GB y se ejecuta a través de la librería `pantogloss`, un paquete Python construido sobre TensorFlow/Keras. El modelo parte de `chrismattmann/pantogloss-500-en-v6` y aplica sobre él un ajuste fino acotado para traducción conversacional español-inglés, sin modificar la arquitectura, los tokenizadores ni la dirección many-to-English de la familia.
+Pantogloss 500-to-English successor v7 es un modelo de traducción automática many-to-English desarrollado por chrismattmann (Chris Mattmann) y publicado en Hugging Face bajo licencia Apache 2.0. Se distribuye como artefacto de precisión completa FP32 con un repositorio de 2,2 GB y se ejecuta a través de la librería `pantogloss`, un paquete Python construido sobre TensorFlow/Keras. El modelo parte de `chrismattmann/pantogloss-500-en-v6` y aplica sobre él un ajuste fino acotado para traducción conversacional español-inglés, sin modificar la arquitectura, los tokenizadores ni la dirección many-to-English de la familia.
 
 La relevancia de esta versión es acotada y medible: no añade idiomas nuevos, sino que mejora una capacidad ya existente. Sobre el modelo padre v6, con decodificación greedy idéntica, el candidato seleccionado obtiene incrementos de chrF de entre +2,036 y +2,973 puntos en los conjuntos de evaluación Fisher y CALLHOME, y una mejora agregada de +0,217 chrF y +0,278 BLEU en la suite FLORES+ de 8.250 ejemplos y 50 idiomas.
 
@@ -88,8 +88,8 @@ La información proporcionada solo permite comparar v7 con su modelo padre direc
 
 | Modelo | Relacion | Parametros | Contexto | chrF Fisher dev | chrF Callhome devtest | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| pantogloss-500-en-v7 | Modelo evaluado | No disponible (2,2 GB en FP32) | No disponible | 68,912 | 53,147 | Apache 2.0 | HuggingFace |
-| pantogloss-500-en-v6 | Modelo padre | No disponible | No disponible | 65,939 | 50,969 | No disponible en la informacion | HuggingFace |
+| pantogloss-500-en-v7 | Modelo evaluado | No disponible (2,2 GB en FP32) | No disponible | 68,912 | 53,147 | Apache 2.0 | Hugging Face |
+| pantogloss-500-en-v6 | Modelo padre | No disponible | No disponible | 65,939 | 50,969 | No disponible en la informacion | Hugging Face |
 | Otras alternativas many-to-English | — | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ La información proporcionada solo permite comparar v7 con su modelo padre direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chrismattmann/pantogloss-500-en-v7
+- Modelo en Hugging Face: https://huggingface.co/chrismattmann/pantogloss-500-en-v7
 - Modelo base (v6): https://huggingface.co/chrismattmann/pantogloss-500-en-v6
 - Atribución y preparación de datos: https://huggingface.co/chrismattmann/pantogloss-500-en-v7/blob/main/V7-ATTRIBUTION.md
 - Referencia del linaje: Gowda, Zhang, Mattmann y May, "Many-to-English Machine Translation at Scale", ACL-IJCNLP 2021 System Demonstrations (URL no disponible en la información proporcionada).

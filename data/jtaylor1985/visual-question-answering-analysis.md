@@ -93,7 +93,7 @@ No procede comparativa, porque este repositorio no es un modelo entrenado y care
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jtaylor1985/visual-question-answering-analysis
+- Modelo en Hugging Face: https://huggingface.co/jtaylor1985/visual-question-answering-analysis
 - Fichero principal de notas: `paper_notes.md` dentro del repositorio
 - Documentacion: `README.md` dentro del repositorio
 - Papers, blogs, repositorios o demos adicionales: no disponibles

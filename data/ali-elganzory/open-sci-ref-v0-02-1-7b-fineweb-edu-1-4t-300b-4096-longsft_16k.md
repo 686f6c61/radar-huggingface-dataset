@@ -4,7 +4,7 @@
 
 `ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k` es un modelo de lenguaje de 1.700 millones de parámetros, resultado de un ajuste fino (fine-tuning) del modelo base `open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096` sobre el dataset `long_sft`. El nombre del modelo sugiere que el entrenamiento se centró en extender la longitud de contexto de 4096 a 16 384 tokens, lo que lo convierte en una opción ligera para tareas que requieren procesar documentos largos o conversaciones multi-turno extensas.
 
-Desarrollado por el usuario de HuggingFace `ali-elganzory`, el modelo se publica con licencia `other` (sin especificar) y está disponible en formato `safetensors`. Aunque el pipeline declarado es `feature-extraction`, su naturaleza de modelo de lenguaje generativo lo hace apto para tareas de texto. La relevancia actual radica en la creciente demanda de modelos pequeños con ventanas de contexto ampliadas para despliegue en entornos con recursos limitados, sin sacrificar la capacidad de manejar entradas largas.
+Desarrollado por el usuario de Hugging Face `ali-elganzory`, el modelo se publica con licencia `other` (sin especificar) y está disponible en formato `safetensors`. Aunque el pipeline declarado es `feature-extraction`, su naturaleza de modelo de lenguaje generativo lo hace apto para tareas de texto. La relevancia actual radica en la creciente demanda de modelos pequeños con ventanas de contexto ampliadas para despliegue en entornos con recursos limitados, sin sacrificar la capacidad de manejar entradas largas.
 
 No se dispone de información pública sobre la arquitectura interna, los datos de entrenamiento detallados ni resultados de benchmarks. La model card generada automáticamente carece de descripciones y los resultados de evaluación están vacíos, lo que limita una evaluación objetiva de sus capacidades.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible. El `
 
 - VRAM estimada para inferencia: con 1.7B parámetros en precisión fp16, los pesos ocupan aproximadamente 3.4 GB (coincide con el tamaño del repositorio). En cuantización int8 se reduciría a ~1.7 GB y en int4 a ~0.9 GB, aunque no se han publicado versiones cuantizadas.
 - GPU recomendadas: una GPU consumer con al menos 6 GB de VRAM (por ejemplo, RTX 2060, RTX 3060, GTX 1660 Super) podría ejecutar el modelo en fp16 con margen para activaciones. Para cuantización int4, bastarían 4 GB (GTX 1650, RTX 3050).
-- Opciones de despliegue: al ser un modelo de Transformers, es compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante conversión), TGI y HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo de Transformers, es compatible con vLLM, llama.cpp (si se convierte a GGUF), Ollama (mediante conversión), TGI y Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones. En una GPU moderna (RTX 4090), un modelo de 1.7B puede generar entre 30 y 60 tokens por segundo en fp16, pero esto es una estimación general sin datos específicos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b-longsft_16k (este) | 1.7B | 16 384 | other | HuggingFace |
-| Qwen2.5-1.5B | 1.5B | 32 768 | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1.0B | 128 000 | Llama 3.2 | HuggingFace |
-| Gemma-2-2B | 2.6B | 8 192 | Gemma | HuggingFace |
+| open-sci-ref-v0.02-1.7b-longsft_16k (este) | 1.7B | 16 384 | other | Hugging Face |
+| Qwen2.5-1.5B | 1.5B | 32 768 | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1.0B | 128 000 | Llama 3.2 | Hugging Face |
+| Gemma-2-2B | 2.6B | 8 192 | Gemma | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos. Qwen2.5-1.5B y Llama-3.2-1B tienen contextos más largos y licencias permisivas, mientras que Gemma-2-2B es más grande pero con contexto menor. La ventaja de este modelo es su tamaño compacto y contexto amplio, aunque la falta de benchmarks impide una comparación objetiva.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos. Qwen2.5-1.5B y Llama-3.2-1B 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k)
+- [Modelo en Hugging Face](https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k)
 - [Modelo base open-sci-ref](https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096)
 - [Variante con DPO-Tulu3](https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-DPO-Tulu3-decontaminated)
 - [Variante con SFT-Tulu3](https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CH522/WAN-Mthfl es un adaptador de tipo LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario CH522. El modelo se apoya sobre el checkpoint base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, una variante de la familia Wan2.2 orientada a la mejora de movimiento en contenido visual. El repositorio tiene un tamano de 0,9 GB y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificacion.
+CH522/WAN-Mthfl es un adaptador de tipo LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario CH522. El modelo se apoya sobre el checkpoint base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, una variante de la familia Wan2.2 orientada a la mejora de movimiento en contenido visual. El repositorio tiene un tamano de 0,9 GB y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificacion.
 
 La relevancia de este adaptador radica en que permite personalizar el comportamiento del modelo base sin necesidad de reentrenar todos los parametros, reduciendo costes computacionales y de almacenamiento. Sin embargo, la documentacion publicada es minima: no se especifican detalles tecnicos como arquitectura interna, volumen de parametros, datos de entrenamiento ni capacidades concretas. Esto limita la evaluacion objetiva del modelo y obliga a tratarlo como un componente experimental dentro del ecosistema de difusion de Wan2.2.
 
@@ -38,7 +38,7 @@ Al no existir documentacion oficial sobre aplicaciones concretas, los siguientes
 - Experimentacion con la familia Wan2.2: investigadores o desarrolladores pueden usar este LoRA como punto de partida para estudiar el comportamiento del modelo base en tareas de text-to-image, especialmente si el componente de movimiento es relevante.
 - Personalizacion de modelos de difusion en produccion: si el adaptador funciona correctamente, podria desplegarse junto al modelo base para ofrecer un servicio de generacion de imagenes con caracteristicas particulares, siempre que se valide su rendimiento.
 - Creacion de contenido para marketing o redes sociales: la generacion de imagenes a partir de texto es util para producir material visual rapido, aunque la calidad final depende de la capacidad real del adaptador.
-- Investigacion sobre adaptadores de bajo rango: el repositorio puede servir como ejemplo de publicacion de LoRA en HuggingFace, util para estudiar formatos de distribucion y practicas de la comunidad.
+- Investigacion sobre adaptadores de bajo rango: el repositorio puede servir como ejemplo de publicacion de LoRA en Hugging Face, util para estudiar formatos de distribucion y practicas de la comunidad.
 
 Es importante destacar que estos casos son especulativos; no hay evidencia publica de que el modelo funcione adecuadamente para ellos.
 
@@ -52,7 +52,7 @@ No se proporcionan requisitos especificos de hardware en la documentacion. Dado 
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos comparables. Dado que el adaptador es especifico para el modelo base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, no se conocen alternativas directas de la misma categoria. Se podrian considerar otros LoRA de la familia Wan2.2 publicados en HuggingFace, pero no se han identificado en la informacion proporcionada.
+No se dispone de informacion sobre modelos comparables. Dado que el adaptador es especifico para el modelo base `rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v`, no se conocen alternativas directas de la misma categoria. Se podrian considerar otros LoRA de la familia Wan2.2 publicados en Hugging Face, pero no se han identificado en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No se dispone de informacion sobre modelos comparables. Dado que el adaptador es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CH522/WAN-Mthfl
+- Modelo en Hugging Face: https://huggingface.co/CH522/WAN-Mthfl
 - Modelo base (referencia): https://huggingface.co/rzgar/Wan2.2-Bernini-R-Motion-Enhancer-n4w-i2v (no se ha verificado su existencia en la informacion proporcionada, pero se cita en la model card)
 - Resultados de busqueda relacionados (no directamente vinculados al modelo, pero contextuales):
   - https://huggingface.co/CH522/WAN-25Real

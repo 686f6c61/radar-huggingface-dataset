@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/Shady_Fay_Krea_2_Turbo es un repositorio de pesos alojado en HuggingFace por el usuario AIxFuneStudio. Se publicó el 6 de octubre de 2026 y se actualizó ese mismo día, con un tamano de repositorio de 13,5 GB y acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los ficheros. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe traccion comunitaria ni evidencia de uso en produccion.
+AIxFuneStudio/Shady_Fay_Krea_2_Turbo es un repositorio de pesos alojado en Hugging Face por el usuario AIxFuneStudio. Se publicó el 6 de octubre de 2026 y se actualizó ese mismo día, con un tamano de repositorio de 13,5 GB y acceso restringido (gated), lo que obliga a aceptar condiciones adicionales en la plataforma antes de poder descargar los ficheros. En el momento de la consulta acumula 0 descargas y 0 likes, por lo que no existe traccion comunitaria ni evidencia de uso en produccion.
 
 La informacion publica disponible es minima: no se declara pipeline, ni idiomas soportados, ni arquitectura, ni numero de parametros, ni datos de entrenamiento. La unica etiqueta tecnica es `license:other` junto con `region:us`, y la licencia aparece como "other" sin texto asociado en los metadatos recuperados. El nombre del repositorio sugiere un modelo o ajuste derivado de la familia Krea orientado a generacion rapida ("Turbo"), pero esta interpretacion no esta confirmada por ningun campo del repositorio y debe tratarse como una hipotesis, no como un dato.
 
@@ -31,7 +31,7 @@ Datos adicionales verificables:
 | Descargas | 0 |
 | Likes | 0 |
 | Tamano del repositorio | 13,5 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Region declarada | us |
 | Pipeline declarado | no disponible |
 
@@ -91,7 +91,7 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AIxFuneStudio/Shady_Fay_Krea_2_Turbo
+- Repositorio en Hugging Face: https://huggingface.co/AIxFuneStudio/Shady_Fay_Krea_2_Turbo
 - Perfil del autor: https://huggingface.co/AIxFuneStudio
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

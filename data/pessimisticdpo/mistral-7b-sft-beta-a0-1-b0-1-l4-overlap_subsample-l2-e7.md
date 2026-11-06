@@ -4,7 +4,7 @@
 
 Este repositorio aloja un checkpoint identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e7`. El identificador sugiere que se trata de un ajuste mediante DPO (o una variante denominada "PessimisticDPO" por el autor) partido desde el checkpoint `mistral-7b-sft-beta`, con una combinacion de hiperparametros codificada en el nombre (`a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l2`, `e7`). Esta interpretacion se deduce unicamente del nombre del repositorio y no esta confirmada por el autor en ninguna documentacion.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: no declara arquitectura, licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion. El repositorio no tiene descargas ni likes, y su tamano (0,2 GB) es incompatible con pesos completos de un modelo de 7.000 millones de parametros en fp16 (que ocuparian del orden de 14 GB) o fp32 (unos 28 GB), lo que apunta a que contiene adaptadores, un subconjunto de pesos o un checkpoint parcial, aunque esto no puede confirmarse con la informacion disponible.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: no declara arquitectura, licencia, idiomas, datos de entrenamiento, procedimiento de ajuste ni resultados de evaluacion. El repositorio no tiene descargas ni likes, y su tamano (0,2 GB) es incompatible con pesos completos de un modelo de 7.000 millones de parametros en fp16 (que ocuparian del orden de 14 GB) o fp32 (unos 28 GB), lo que apunta a que contiene adaptadores, un subconjunto de pesos o un checkpoint parcial, aunque esto no puede confirmarse con la informacion disponible.
 
 Por todo ello, el material solo permite una ficha descriptiva y fuertemente condicionada: es un artefacto de investigacion sin validacion publica, no apto para uso en produccion sin una evaluacion previa por parte de quien lo adopte. Es relevante unicamente como pieza de trazabilidad en estudios de recetas de alineacion (DPO y variantes) y como posible baseline secundario en experimentos comparativos.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e7
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e7
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la model card: https://mlco2.github.io/impact#compute
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

@@ -6,7 +6,7 @@ CURE-MED-32B es un modelo de lenguaje de 32.000 millones de parametros especiali
 
 El modelo forma parte de la familia CURE-MED, que incluye variantes de 1,5B, 3B, 7B, 14B y 32B derivadas de Qwen2.5-Instruct. Cubre 13 idiomas, con enfasis explicito en lenguas infrarrepresentadas como el amharico, el yoruba y el suajili, y se entrena y evalua con CUREMED-BENCH, un benchmark de razonamiento medico multilingue de respuesta abierta con una unica respuesta verificable.
 
-Es relevante porque aborda dos problemas habituales en IA medica: la degradacion del razonamiento cuando la consulta mezcla idiomas o cambia de registro, y la falta de cobertura de lenguas de bajos recursos. La ficha que sigue se basa exclusivamente en la model card publicada y en los resultados de busqueda disponibles; los enlaces de la ficha de HuggingFace corresponden a una publicacion de terceros (usuario Salahuddin1234) que reproduce la model card de Aikyam Lab.
+Es relevante porque aborda dos problemas habituales en IA medica: la degradacion del razonamiento cuando la consulta mezcla idiomas o cambia de registro, y la falta de cobertura de lenguas de bajos recursos. La ficha que sigue se basa exclusivamente en la model card publicada y en los resultados de busqueda disponibles; los enlaces de la ficha de Hugging Face corresponden a una publicacion de terceros (usuario Salahuddin1234) que reproduce la model card de Aikyam Lab.
 
 ## Especificaciones tecnicas
 
@@ -100,7 +100,7 @@ No se dispone de cifras de rendimiento que permitan una comparacion cuantitativa
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada: https://huggingface.co/Salahuddin1234/omnidoctor-cure-med
+- Ficha de Hugging Face analizada: https://huggingface.co/Salahuddin1234/omnidoctor-cure-med
 - Repositorio oficial del proyecto: https://github.com/AikyamLab/cure-med
 - Articulo (arXiv): https://arxiv.org/abs/2601.13262
 - Version HTML del articulo: https://arxiv.org/html/2601.13262v2

@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comunes que permitan una comparación cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonpark0/Qwen3-0.6B-isa-lm
+- Modelo en Hugging Face: https://huggingface.co/jonpark0/Qwen3-0.6B-isa-lm
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

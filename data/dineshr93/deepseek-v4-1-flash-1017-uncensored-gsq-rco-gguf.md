@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario dineshr93 en HuggingFace. El nombre sugiere una variante derivada de un hipotético modelo DeepSeek V4.1 Flash, con modificaciones orientadas a eliminar restricciones de alineación ("uncensored") y con cuantizaciones etiquetadas como GSQ y RCO. Sin embargo, la model card publicada no contiene información técnica: únicamente declara la licencia MIT, sin descripción, sin parámetros, sin arquitectura ni datos de entrenamiento.
+DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF es un repositorio de pesos cuantizados en formato GGUF publicado por el usuario dineshr93 en Hugging Face. El nombre sugiere una variante derivada de un hipotético modelo DeepSeek V4.1 Flash, con modificaciones orientadas a eliminar restricciones de alineación ("uncensored") y con cuantizaciones etiquetadas como GSQ y RCO. Sin embargo, la model card publicada no contiene información técnica: únicamente declara la licencia MIT, sin descripción, sin parámetros, sin arquitectura ni datos de entrenamiento.
 
 El repositorio no dispone de descargas ni interacciones en el momento de la consulta, y no se ha publicado pipeline, idiomas soportados ni documentación adicional. Esto impide verificar la procedencia real de los pesos, la arquitectura subyacente o la validez de las cuantizaciones anunciadas en el nombre. Cualquier evaluación técnica debe tratarse con cautela, ya que la ausencia de metadatos impide confirmar que el contenido corresponda a lo que sugiere el identificador.
 
@@ -73,5 +73,5 @@ No disponible. No se puede identificar un modelo comparable sin conocer la arqui
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dineshr93/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/dineshr93/DeepSeek-V4.1-Flash-1017-Uncensored-GSQ-RCO-GGUF
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

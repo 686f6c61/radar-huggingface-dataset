@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `brian-now/model1` es un modelo de lenguaje publicado en HuggingFace por el usuario `brian-now` con fines de prueba y demostración. Se basa en el modelo `deepseek-ai/DeepSeek-V4-Flash-0731`, lo que sugiere que podría heredar parte de su arquitectura y capacidades, aunque no se dispone de información pública que lo confirme. El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para poder utilizarlo.
+El modelo `brian-now/model1` es un modelo de lenguaje publicado en Hugging Face por el usuario `brian-now` con fines de prueba y demostración. Se basa en el modelo `deepseek-ai/DeepSeek-V4-Flash-0731`, lo que sugiere que podría heredar parte de su arquitectura y capacidades, aunque no se dispone de información pública que lo confirme. El acceso al modelo está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para poder utilizarlo.
 
 La relevancia de este modelo es limitada en su estado actual: no tiene descargas ni likes, y su ficha no incluye detalles técnicos más allá de la licencia Apache-2.0 y el idioma inglés. Es posible que forme parte de los desarrollos de la empresa Brian, que publica modelos orientados al ecosistema web3, pero no hay evidencia directa de que este modelo en particular pertenezca a esa línea. En cualquier caso, al ser un modelo de prueba, no se recomienda su uso en entornos de producción sin una evaluación previa.
 
@@ -47,7 +47,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Limitaciones y advertencias
 
-- El modelo tiene acceso restringido (gated), lo que limita su disponibilidad y requiere aceptar condiciones adicionales en HuggingFace.
+- El modelo tiene acceso restringido (gated), lo que limita su disponibilidad y requiere aceptar condiciones adicionales en Hugging Face.
 - No se ha publicado información sobre sesgos, riesgos de alucinación o limitaciones de contexto o idioma.
 - Al ser un modelo de prueba, no se recomienda su uso en producción sin una evaluación rigurosa.
 - La licencia Apache-2.0 permite uso comercial, pero al no conocerse el origen de los datos de entrenamiento, se debe actuar con cautela respecto a posibles problemas de derechos de autor o privacidad.
@@ -55,6 +55,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - brian-now/model1](https://huggingface.co/brian-now/model1)
+- [Hugging Face - brian-now/model1](https://huggingface.co/brian-now/model1)
 - [Brian AI models - Documentación de Brian](https://docs.brianknows.org/brian-ai-models)
 - [Documentación general de Brian](https://docs.brianknows.org/)

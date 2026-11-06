@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rev3auth/iris_lora_adapters | 270M (heredados) | no disponible | apache-2.0 | Repositorio HuggingFace, 0 descargas |
-| unsloth/gemma-3-270m-it (modelo base) | 270M | no disponible | apache-2.0 (Gemma) | HuggingFace, disponible |
+| Rev3auth/iris_lora_adapters | 270M (heredados) | no disponible | apache-2.0 | Repositorio Hugging Face, 0 descargas |
+| unsloth/gemma-3-270m-it (modelo base) | 270M | no disponible | apache-2.0 (Gemma) | Hugging Face, disponible |
 | Otros modelos pequenos de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento para comparar este adaptador con el modelo base ni con alternativas de tamano similar (por ejemplo, variantes de 0,3B-0,5B de otras familias). La unica comparacion objetivable es que se trata de un ajuste LoRA de `unsloth/gemma-3-270m-it`, del que hereda arquitectura, tamano y licencia, sin evidencia publica de mejora sobre el original.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para comparar este adaptador con el modelo
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Rev3auth/iris_lora_adapters
+- Hugging Face (modelo): https://huggingface.co/Rev3auth/iris_lora_adapters
 - Modelo base: https://huggingface.co/unsloth/gemma-3-270m-it
 - Unsloth (repositorio de la libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Paper, blog o demo del autor: no disponible

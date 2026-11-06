@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar directamente con otros mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-FP8
+- Repositorio Hugging Face: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Informe técnico: https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/tech_report.pdf

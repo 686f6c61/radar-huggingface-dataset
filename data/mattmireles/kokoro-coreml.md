@@ -107,9 +107,9 @@ Advertencias del propio autor sobre las cifras: las filas de Mac son cotas super
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento (30 s, iPhone 15 Pro Max) | Memoria pico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mattmireles/kokoro-coreml | 82 M | Hasta 27,4 s de audio medido; entrada por fonemas | 319 ms | 1.338 MB | Apache 2.0 | HuggingFace + GitHub, SDK Swift |
+| mattmireles/kokoro-coreml | 82 M | Hasta 27,4 s de audio medido; entrada por fonemas | 319 ms | 1.338 MB | Apache 2.0 | Hugging Face + GitHub, SDK Swift |
 | MLX (mlx-audio 0.4.3 / kokoro-ios 1.0.8) sobre Kokoro | 82 M | Mismo modelo, mismo texto | ~4.800 ms; falla en entradas de 3 s con mlx-audio 0.4.3 y agota memoria a 30 s en iPhone 12 Pro | 815 MB en M2 Ultra; 801 MB en M1 Mini | Depende del proyecto (no indicada) | GitHub |
-| hexgrad/Kokoro-82M (original) | 82 M | No disponible | No medido en esta comparativa | No disponible | Apache 2.0 (heredada) | HuggingFace |
+| hexgrad/Kokoro-82M (original) | 82 M | No disponible | No medido en esta comparativa | No disponible | Apache 2.0 (heredada) | Hugging Face |
 | Kokoro ejecutado en servidor con GPU | 82 M | No disponible | No disponible | No disponible | Apache 2.0 | No disponible |
 
 La comparación relevante es contra MLX, el único runtime alternativo medido en el mismo dispositivo y sesión. Frente a él, este pipeline es 8,9-15,1 veces más rápido y usa 2,4-4,8 veces menos memoria en iPhone 15 Pro Max, además de mantenerse en estado térmico `nominal` donde MLX entra en `serious`. No se dispone de datos comparativos frente a otros TTS como Piper, XTTS o modelos comerciales en la nube.
@@ -130,7 +130,7 @@ La comparación relevante es contra MLX, el único runtime alternativo medido en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattmireles/kokoro-coreml
+- Modelo en Hugging Face: https://huggingface.co/mattmireles/kokoro-coreml
 - Repositorio con código fuente, SDK Swift y benchmarks: https://github.com/mattmireles/kokoro-coreml
 - Paper técnico (PDF): https://github.com/mattmireles/kokoro-coreml/blob/main/paper/main.pdf
 - Protocolo completo, celdas con rangos mínimo-máximo, ablación y datos crudos: https://github.com/mattmireles/kokoro-coreml/blob/main/README/Notes/paper-cs1-hybrid-rerun-2026-10-23.md
@@ -139,4 +139,4 @@ La comparación relevante es contra MLX, el único runtime alternativo medido en
 - Runtime de comparación en iPhone: https://github.com/mlalma/kokoro-ios
 - Documentación de `ProcessInfo.thermalState` en Apple: https://developer.apple.com/documentation/foundation/processinfo/thermalstate
 
-Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden de la model card y de la información de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces anteriores proceden de la model card y de la información de Hugging Face.

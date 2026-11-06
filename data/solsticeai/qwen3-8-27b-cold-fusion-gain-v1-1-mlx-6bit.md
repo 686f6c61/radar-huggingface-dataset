@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit
 - Modelo base del finetune (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8

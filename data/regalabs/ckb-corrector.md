@@ -74,11 +74,11 @@ La comparación directa con correctores específicos de kurdo sorani no está di
 - Modelo monolingüe en ckb: no debe esperarse buen rendimiento en kurdo kurmanji, árabe u otros idiomas.
 - Riesgo de alucinación en `fill-mask`: puede proponer sustituciones plausibles pero incorrectas en contextos ambiguos.
 - No se documentan sesgos conocidos, pero al derivar de un corpus multilingüe de glot500 puede heredar sesgos de representación del sorani.
-- Licencia "other" y acceso gated: es imprescindible aceptar las condiciones en HuggingFace y verificar los términos para uso comercial antes de integrarlo en producción.
+- Licencia "other" y acceso gated: es imprescindible aceptar las condiciones en Hugging Face y verificar los términos para uso comercial antes de integrarlo en producción.
 - Sin datos publicados de benchmarks, contexto máximo ni cuantizaciones: la evaluación previa a producción corre por cuenta del integrador.
 - El pipeline `fill-mask` no genera texto libre; para corrección de frases completas requiere diseñar la estrategia de enmascaramiento y selección de candidatos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RegaLabs/ckb-corrector
+- Modelo en Hugging Face: https://huggingface.co/RegaLabs/ckb-corrector
 - Modelo base glot500: https://huggingface.co/cis-lmu/glot500-base

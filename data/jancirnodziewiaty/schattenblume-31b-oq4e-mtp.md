@@ -4,7 +4,7 @@
 
 Schattenblume-31B-oQ4e-mtp es una cuantización mixta del modelo base Nimbz/Schattenblume-31B, publicada por el usuario jancirnodziewiaty. Se trata de un checkpoint de 31.742.607.472 parámetros reales (según los safetensors del repositorio) convertido al formato MLX mediante la herramienta oQ de oMLX v0.7.3, con una precisión efectiva media de 5,167 bits por peso. El modelo está pensado para ejecutarse en hardware Apple Silicon a través del framework MLX, no en GPUs NVIDIA ni en pipelines estándar de PyTorch.
 
-La arquitectura subyacente se etiqueta como "gemma4" en los tags de HuggingFace, lo que sugiere una variante de la familia Gemma con 31B de parámetros. El checkpoint incluye tres componentes diferenciados: el modelo de lenguaje (30.704B parámetros lógicos), un módulo de visión (0.570B) y una cabeza MTP (Multi-Token Prediction, 0.470B). La presencia de visión y MTP indica capacidades multimodales y de decodificación especulativa, aunque el autor no documenta el entrenamiento ni los datos utilizados.
+La arquitectura subyacente se etiqueta como "gemma4" en los tags de Hugging Face, lo que sugiere una variante de la familia Gemma con 31B de parámetros. El checkpoint incluye tres componentes diferenciados: el modelo de lenguaje (30.704B parámetros lógicos), un módulo de visión (0.570B) y una cabeza MTP (Multi-Token Prediction, 0.470B). La presencia de visión y MTP indica capacidades multimodales y de decodificación especulativa, aunque el autor no documenta el entrenamiento ni los datos utilizados.
 
 La relevancia de esta ficha es limitada pero concreta: es una de las pocas cuantizaciones MLX publicadas de un modelo de 31B con visión y MTP integrados, lo que permite ejecutar un modelo multimodal de ese tamaño en equipos Apple con memoria unificada de 32 GB o superior. Sin embargo, la información pública es muy escasa: no hay model card del modelo base, no se especifican licencia, idiomas ni benchmarks, y el número de descargas es de solo 45.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero concreta: es una de las pocas cuant
 
 ## Arquitectura y entrenamiento
 
-El checkpoint es una cuantización del modelo Nimbz/Schattenblume-31B, del que no se dispone de model card ni documentación en la información proporcionada. Los tags de HuggingFace indican "gemma4", lo que apunta a una arquitectura de la familia Gemma de Google, presumiblemente un transformer decoder-only con atención estándar, aunque no se confirma el esquema exacto de atención ni la longitud de contexto nativa.
+El checkpoint es una cuantización del modelo Nimbz/Schattenblume-31B, del que no se dispone de model card ni documentación en la información proporcionada. Los tags de Hugging Face indican "gemma4", lo que apunta a una arquitectura de la familia Gemma de Google, presumiblemente un transformer decoder-only con atención estándar, aunque no se confirma el esquema exacto de atención ni la longitud de contexto nativa.
 
 La estructura del checkpoint revela tres bloques: un modelo de lenguaje de 30.704B parámetros lógicos, un codificador o torre de visión de 0.570B y una cabeza MTP de 0.470B. La cabeza MTP (Multi-Token Prediction) permite decodificación especulativa prediciendo varios tokens por paso, lo que puede acelerar la inferencia en MLX. No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones. La cuantización se realizó con oQ de oMLX v0.7.3, que asigna precisión variable por capa (4, 5, 6 bits o BF16) según la sensibilidad de cada tensor, manteniendo en BF16 el 3,278% de los pesos (1.040B parámetros, presumiblemente capas críticas como embeddings o normas).
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Schattenblume-31B-oQ4e-mtp | 31,74B | no disponible | MLX safetensors (mixto 4/5/6-bit + BF16) | no disponible | HuggingFace, 45 descargas |
-| Nimbz/Schattenblume-31B (base) | 31B (aprox.) | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| Schattenblume-31B-oQ4e-mtp | 31,74B | no disponible | MLX safetensors (mixto 4/5/6-bit + BF16) | no disponible | Hugging Face, 45 descargas |
+| Nimbz/Schattenblume-31B (base) | 31B (aprox.) | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Gemma 2 27B (referencia de familia) | 27B | 8K tokens | safetensors, GGUF | Gemma Terms of Use | Amplia disponibilidad |
 | Qwen2.5-VL 32B (referencia multimodal) | 32B | 128K tokens | safetensors, GGUF | Apache 2.0 | Amplia disponibilidad |
 
@@ -83,7 +83,7 @@ La comparativa con Gemma 2 27B y Qwen2.5-VL 32B es orientativa por tamaño y cap
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/Schattenblume-31B-oQ4e-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/Schattenblume-31B-oQ4e-mtp
 - Modelo base: https://huggingface.co/Nimbz/Schattenblume-31B
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Framework MLX: https://github.com/ml-explore/mlx

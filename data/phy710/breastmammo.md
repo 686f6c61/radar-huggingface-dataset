@@ -25,7 +25,7 @@ Su relevancia actual es incierta: sin documentación técnica, arquitectura decl
 
 No se ha publicado información sobre la arquitectura del modelo (si es un transformer de visión, una red convolucional, etc.). Tampoco se conocen los datos de entrenamiento, el número de tokens o imágenes utilizadas, ni si se aplicaron técnicas de ajuste fino como RLHF o DPO (en el caso de que fuera un modelo de lenguaje multimodal, lo cual no se ha confirmado). El único dato disponible es la licencia MIT y el tamaño del repositorio.
 
-El artículo de arXiv menciona un marco de generalización de dominio para mamografía de múltiples vistas, pero no se ha vinculado explícitamente con este repositorio. No hay evidencia de que el modelo publicado en HuggingFace corresponda a los modelos entrenados en ese estudio.
+El artículo de arXiv menciona un marco de generalización de dominio para mamografía de múltiples vistas, pero no se ha vinculado explícitamente con este repositorio. No hay evidencia de que el modelo publicado en Hugging Face corresponda a los modelos entrenados en ese estudio.
 
 ## Capacidades
 

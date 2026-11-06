@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eliasschroeder/cross-modal-fusion-analysis` es un repositorio alojado en HuggingFace que, segun su propia model card, contiene un conjunto estructurado de notas de investigacion sobre fusion cross-modal, no un modelo entrenado y desplegable. El autor lo etiqueta explicitamente con `research-notes` y advierte que planes e hipotesis se mantienen separados de resultados completados, y que no se reclama ningun checkpoint entrenado, mejora de benchmark ni codigo liberado.
+`eliasschroeder/cross-modal-fusion-analysis` es un repositorio alojado en Hugging Face que, segun su propia model card, contiene un conjunto estructurado de notas de investigacion sobre fusion cross-modal, no un modelo entrenado y desplegable. El autor lo etiqueta explicitamente con `research-notes` y advierte que planes e hipotesis se mantienen separados de resultados completados, y que no se reclama ningun checkpoint entrenado, mejora de benchmark ni codigo liberado.
 
 El unico artefacto con formato de pesos identificable es un archivo safetensors con 16.576 parametros totales, una cifra que no corresponde a ninguna arquitectura de lenguaje funcional y que es coherente con un tensor de juguete o marcador de posicion. El tamano del repositorio es de 0,0 GB, no registra descargas ni likes, y no declara pipeline, idiomas ni resultados de evaluacion.
 
@@ -75,10 +75,10 @@ No disponible. Este repositorio no es un modelo de aprendizaje automatico compar
 - Sesgos conocidos: no disponibles; el autor menciona la existencia de posibles factores de confusion en el diseno del estudio, pero no se detallan.
 - Licencia cc-by-4.0: permite uso y redistribucion con atribucion, incluido uso comercial, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - El repositorio no registra descargas ni likes y tiene un tamano de 0,0 GB, indicios de que no ha sido validado ni adoptado por la comunidad.
-- La fecha de creacion indicada (2026-10-07) es posterior a la fecha habitual de referencia, dato que conviene verificar directamente en HuggingFace.
+- La fecha de creacion indicada (2026-10-07) es posterior a la fecha habitual de referencia, dato que conviene verificar directamente en Hugging Face.
 - Para produccion: no apto; no existe artefacto desplegable ni garantia de funcionamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eliasschroeder/cross-modal-fusion-analysis
+- Hugging Face: https://huggingface.co/eliasschroeder/cross-modal-fusion-analysis
 - No se han encontrado en la busqueda web papers, blogs, repositorios o demos adicionales asociados a este repositorio.

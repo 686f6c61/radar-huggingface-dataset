@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `otama3/image-studio-models` | Paquete de matting para navegador (MODNet + BiRefNet HR + ViTMatte) | ONNX en ZIP | No aplica | Mixta de upstream | HuggingFace, 0 descargas |
-| `Xenova/modnet` | Modelo de matting ligero | ONNX | No aplica | No disponible en la información | HuggingFace |
-| `ZhengPeng7/BiRefNet_HR-matting` | Matting de alta resolución | Pesos originales | No aplica | No disponible en la información | HuggingFace |
-| `hustvl/vitmatte-base-distinctions-646` | Refinador de matting basado en ViT | Pesos originales | No aplica | No disponible en la información | HuggingFace |
+| `otama3/image-studio-models` | Paquete de matting para navegador (MODNet + BiRefNet HR + ViTMatte) | ONNX en ZIP | No aplica | Mixta de upstream | Hugging Face, 0 descargas |
+| `Xenova/modnet` | Modelo de matting ligero | ONNX | No aplica | No disponible en la información | Hugging Face |
+| `ZhengPeng7/BiRefNet_HR-matting` | Matting de alta resolución | Pesos originales | No aplica | No disponible en la información | Hugging Face |
+| `hustvl/vitmatte-base-distinctions-646` | Refinador de matting basado en ViT | Pesos originales | No aplica | No disponible en la información | Hugging Face |
 
 La comparación directa con alternativas de la misma categoría (paquetes de matting para navegador) no está disponible en la información proporcionada. Los tres modelos base son los componentes upstream, no alternativas equivalentes de despliegue.
 
@@ -91,7 +91,7 @@ La comparación directa con alternativas de la misma categoría (paquetes de mat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/otama3/image-studio-models
+- Repositorio Hugging Face: https://huggingface.co/otama3/image-studio-models
 - Licencias: https://huggingface.co/otama3/image-studio-models/blob/main/LICENSES.md
 - Modelo base MODNet: https://huggingface.co/Xenova/modnet
 - Modelo base BiRefNet HR matting: https://huggingface.co/ZhengPeng7/BiRefNet_HR-matting

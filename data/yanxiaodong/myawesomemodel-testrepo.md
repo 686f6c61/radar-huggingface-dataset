@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario yanxiaodong, publicado con licencia MIT y etiquetado como un modelo de transformers para extracción de características (feature-extraction). La model card describe un modelo de lenguaje de gran tamaño que habría recibido una actualización significativa en su capacidad de razonamiento e inferencia, con mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), y las descargas y likes son cero, lo que sugiere que se trata de un repositorio de prueba o placeholder sin implementación real verificable.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario yanxiaodong, publicado con licencia MIT y etiquetado como un modelo de transformers para extracción de características (feature-extraction). La model card describe un modelo de lenguaje de gran tamaño que habría recibido una actualización significativa en su capacidad de razonamiento e inferencia, con mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), y las descargas y likes son cero, lo que sugiere que se trata de un repositorio de prueba o placeholder sin implementación real verificable.
 
 La información técnica disponible es muy limitada y en parte contradictoria con los resultados de búsqueda web, donde algunas fuentes lo describen como un modelo de embeddings basado en BERT y otras como un LLM para generación de texto. Dado que no se proporcionan detalles de arquitectura, parámetros, contexto ni datos de entrenamiento, esta ficha se basa únicamente en la model card y en las menciones externas, marcando explícitamente los datos no disponibles.
 
@@ -89,7 +89,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yanxiaodong/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/yanxiaodong/MyAwesomeModel-TestRepo
 - Repositorios similares encontrados en la búsqueda web (posiblemente copias o pruebas):
   - https://huggingface.co/exaone-share/MyAwesomeModel-TestRepo
   - https://huggingface.co/yaramartell/MyAwesomeModel-TestRepo

@@ -94,7 +94,7 @@ No se dispone de comparativas con modelos externos (Qwen, Llama, Mistral) en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pandora-box/Affine-5eqdtdzqle-ko8dsnxa
+- Repositorio Hugging Face: https://huggingface.co/pandora-box/Affine-5eqdtdzqle-ko8dsnxa
 - Perfil del autor: https://huggingface.co/pandora-box
 - Variante relacionada (stx): https://huggingface.co/pandora-box/Affine-5eqdtdzqle-stx
 - LLM Explorer (variante ckpt300-m4): https://llm-explorer.com/model/pandora-box%2FAffine-5eqdtdzqle-ckpt300-m4,6tppI5EQCHNG6sbqyqwEJi

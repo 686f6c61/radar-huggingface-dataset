@@ -86,8 +86,8 @@ Frente al checkpoint original en transformers, este repositorio no aporta mejor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/q-henric/whisper-large-v3-turbo-danish-ct2
-- Modelo base en HuggingFace: https://huggingface.co/thorhojhus/whisper-large-v3-turbo-danish
+- Modelo en Hugging Face: https://huggingface.co/q-henric/whisper-large-v3-turbo-danish-ct2
+- Modelo base en Hugging Face: https://huggingface.co/thorhojhus/whisper-large-v3-turbo-danish
 - WhisperX: https://github.com/m-bain/whisperX
 - faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - CTranslate2: https://github.com/OpenNMT/CTranslate2

@@ -87,7 +87,7 @@ El modelo supera a KBLab en ambas tareas y mejora a BGE-M3 zero-shot, aunque con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oxfrug/bge-m3-swedish-superlim
+- Modelo en Hugging Face: https://huggingface.co/oxfrug/bge-m3-swedish-superlim
 - Modelo base BAAI/bge-m3: https://huggingface.co/BAAI/bge-m3
 - Documentación de BGE-M3: https://bge-model.com/bge/bge_m3.html
 - Proyecto SuperLim (AI Sweden): https://www.ai.se/en/project/superlim

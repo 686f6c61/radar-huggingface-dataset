@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Smooll/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari SpaceInvadersNoFrameskip-v4. Lo desarrolla el usuario Smooll y se distribuye a través de HuggingFace Hub como un artefacto de la librería Stable-Baselines3, generado con el framework RL Zoo (RL Baselines3 Zoo). No es un modelo de lenguaje ni un modelo generativo: es una política neuronal convolucional que juega a un videojuego concreto.
+Smooll/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari SpaceInvadersNoFrameskip-v4. Lo desarrolla el usuario Smooll y se distribuye a través de Hugging Face Hub como un artefacto de la librería Stable-Baselines3, generado con el framework RL Zoo (RL Baselines3 Zoo). No es un modelo de lenguaje ni un modelo generativo: es una política neuronal convolucional que juega a un videojuego concreto.
 
 El modelo resuelve una tarea acotada y bien definida: aprender una política de control a partir de píxeles de la pantalla del juego. Su relevancia es, por tanto, la de un ejemplo reproducible de entrenamiento DQN sobre Atari en el ecosistema Stable-Baselines3, útil como referencia didáctica, como línea base de comparación o como punto de partida para experimentos de RL. El repositorio ocupa aproximadamente 0,1 GB e incluye los pesos de la política convolucional y la configuración de hiperparámetros.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de rendimiento de las alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Smooll/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Smooll/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Baselines3 Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

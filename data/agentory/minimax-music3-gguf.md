@@ -18,7 +18,7 @@ Los datos de rendimiento publicados por el autor muestran velocidades de 1,35x e
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | BF16, Q8_0, Q4_0 (por componente) |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-music3-community-license (licencia comunitaria de MiniMax, no estándar de HuggingFace) |
+| Licencia | minimax-music3-community-license (licencia comunitaria de MiniMax, no estándar de Hugging Face) |
 | Formato de pesos | GGUF (empaquetado por componentes) |
 
 ## Arquitectura y entrenamiento

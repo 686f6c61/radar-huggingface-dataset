@@ -2,7 +2,7 @@
 
 ## Resumen
 
-christopher-sanchez/multitask es un repositorio de HuggingFace publicado por el usuario christopher-sanchez que contiene una implementación funcional de la arquitectura Perceiver orientada a escenarios multitarea, con una configuración que el autor etiqueta como "large". No se trata de un modelo entrenado ni ajustado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que el repositorio no reclama ninguna puntuación de benchmark. El interés del proyecto es, por tanto, la transparencia del código y la reproducibilidad de los experimentos, no el rendimiento del artefacto publicado.
+christopher-sanchez/multitask es un repositorio de Hugging Face publicado por el usuario christopher-sanchez que contiene una implementación funcional de la arquitectura Perceiver orientada a escenarios multitarea, con una configuración que el autor etiqueta como "large". No se trata de un modelo entrenado ni ajustado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que el repositorio no reclama ninguna puntuación de benchmark. El interés del proyecto es, por tanto, la transparencia del código y la reproducibilidad de los experimentos, no el rendimiento del artefacto publicado.
 
 La arquitectura declarada es un Perceiver con atención *multi query*, fusión mediante *concat mlp*, activación GELU y normalización LayerNorm. El repositorio incluye cuatro artefactos principales: `inference.py` (implementación y punto de entrada), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto, con optimizador Novograd y planificador exponencial) y `model.safetensors` (inicialización). No se documenta el conjunto de datos de entrenamiento, el número de tokens, ni ninguna fase de RLHF o DPO.
 
@@ -13,7 +13,7 @@ Su relevancia actual es acotada y de carácter educativo o experimental: sirve c
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Perceiver (atencion multi query, fusion concat mlp, activacion GELU, normalizacion LayerNorm) |
-| Parametros totales | 16.576 (dieciseis mil quinientos setenta y seis), segun el recuento de safetensors reportado por HuggingFace |
+| Parametros totales | 16.576 (dieciseis mil quinientos setenta y seis), segun el recuento de safetensors reportado por Hugging Face |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se documentan cuantizaciones; el checkpoint se distribuye en safetensors) |
@@ -67,7 +67,7 @@ La comparacion se establece a nivel de arquitectura y de estado de publicacion, 
 
 | Modelo | Parametros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| christopher-sanchez/multitask | 16.576 | no disponible | BSD-3-Clause | Inicializacion sin entrenar; sin benchmarks | HuggingFace, repo de 0,0 GB |
+| christopher-sanchez/multitask | 16.576 | no disponible | BSD-3-Clause | Inicializacion sin entrenar; sin benchmarks | Hugging Face, repo de 0,0 GB |
 | Perceiver IO (implementaciones de referencia) | variable segun configuracion | depende de la variante y del preprocesado | Apache-2.0 en las implementaciones de referencia habituales | Pesos entrenados publicados por sus autores | Repositorios de investigacion y bibliotecas de terceros |
 | Transformer multitarea generico de capacidad equivalente | rango de miles a millones de parametros segun configuracion | no disponible | depende del proyecto | habitualmente entrenado para tareas concretas | amplia |
 
@@ -81,14 +81,14 @@ No se dispone de cifras de MMLU, HumanEval, GSM8K ni de ninguna otra métrica pa
 - Alucinacion: no aplicable en el estado actual, ya que el modelo no genera lenguaje. Si se entrena a partir de esta base, el riesgo de alucinacion dependera por completo de los datos y del procedimiento de ajuste empleados.
 - Limitaciones de contexto e idioma: la longitud de contexto no esta documentada y no se declara ningun idioma soportado, por lo que no puede asumirse cobertura multilingue ni una ventana minima garantizada.
 - Licencia: BSD-3-Clause permite uso comercial siempre que se conserven el aviso de copyright y la clausula de exencion de responsabilidad, y que no se utilice el nombre del titular para promocionar productos derivados sin permiso. La propia model card advierte de que los terminos de los datos de origen deben revisarse por separado si el repositorio se usa con conjuntos de datos externos.
-- Integracion: al ser una implementacion personalizada, las APIs automaticas de HuggingFace no cargaran el modelo sin un adaptador explicito, lo que anade trabajo de integracion en cualquier pipeline estandar.
+- Integracion: al ser una implementacion personalizada, las APIs automaticas de Hugging Face no cargaran el modelo sin un adaptador explicito, lo que anade trabajo de integracion en cualquier pipeline estandar.
 - Adopcion nula: el repositorio registra 0 descargas y 0 *likes* en el momento de la consulta, por lo que no existe validacion por parte de la comunidad ni soporte mas alla de la documentacion incluida.
 - Consistencia de la configuracion: la etiqueta "large" de la model card no concuerda con un recuento de 16.576 parametros, lo que sugiere que la configuracion publicada es una variante minima de prueba; conviene verificarla leyendo `config.json` antes de reutilizarla.
 - Metadatos de fecha: el repositorio figura como creado y actualizado el 2026-10-13, con siete segundos de diferencia entre ambos eventos, lo que indica que no ha habido mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/christopher-sanchez/multitask
+- Modelo en Hugging Face: https://huggingface.co/christopher-sanchez/multitask
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos corresponden a un cantante danes llamado Christopher (Wikipedia, tienda oficial y videoclip en YouTube) y a la entrada del nombre propio en un diccionario de nombres, por lo que no se incluyen como referencias tecnicas.
 - Paper de referencia de la arquitectura Perceiver IO: no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional, demo o blog del autor: no disponible en la informacion proporcionada.

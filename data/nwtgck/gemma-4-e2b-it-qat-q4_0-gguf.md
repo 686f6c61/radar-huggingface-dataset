@@ -100,7 +100,7 @@ Los datos de rendimiento comparativo (benchmarks) no estan disponibles en la inf
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nwtgck/gemma-4-E2B-it-qat-q4_0-gguf
+- Repositorio en Hugging Face: https://huggingface.co/nwtgck/gemma-4-E2B-it-qat-q4_0-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized
 - Coleccion Gemma 4 QAT Q4_0: https://huggingface.co/collections/google/gemma-4-qat-q4-0
 - GitHub de Google Gemma: https://github.com/google-gemma

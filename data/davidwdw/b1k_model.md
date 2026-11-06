@@ -2,7 +2,7 @@
 
 ## Resumen
 
-B1K model es un repositorio de HuggingFace publicado por el usuario davidwdw que agrupa checkpoints, recetas de entrenamiento, código de evaluación e informes del espacio de trabajo `training_models`. Los modelos de la tarea task-00 están orientados a la habilidad **turning_on_radio** del benchmark BEHAVIOR-1K, y el repositorio se etiqueta con las categorías robotics, vision-language-action, b1k, jax y supervised-fine-tuning.
+B1K model es un repositorio de Hugging Face publicado por el usuario davidwdw que agrupa checkpoints, recetas de entrenamiento, código de evaluación e informes del espacio de trabajo `training_models`. Los modelos de la tarea task-00 están orientados a la habilidad **turning_on_radio** del benchmark BEHAVIOR-1K, y el repositorio se etiqueta con las categorías robotics, vision-language-action, b1k, jax y supervised-fine-tuning.
 
 El paquete principal, `b1k_sft`, contiene tres checkpoints finales de inferencia (demostraciones humanas, codegen exitoso y una mezcla 50:50), todos ellos en el paso 14999 y acompañados de su normalización y su procedencia. El repositorio incluye además un fine-tune de Pi0.5 sobre codegen exitoso (`pi05_task00_codegen_success_sft`, checkpoint EMA seleccionado del paso 6000), recetas de entrenamiento, planes, auditorías de dataset, una configuración de entrenamiento con balanceo de cola, herramientas de evaluación, informes y scripts de rollouts.
 
@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente de investigación: no se publican solo pesos, 
 | Formato de pesos | JAX/Orbax OCDBT (checkpoints personalizados) |
 | Tamano del repositorio | 222,8 GB (conjunto completo de paquetes, no un checkpoint individual) |
 | Tarea objetivo | turning_on_radio (task-00) del benchmark BEHAVIOR-1K |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Descargas / likes | 0 descargas, 0 likes en el momento de la captura de datos |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ Los únicos elementos comparables que aparecen en la información proporcionada 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| B1K model (davidwdw) | no disponible | no disponible | sin datos publicados en la información disponible | no disponible | HuggingFace, 0 descargas |
+| B1K model (davidwdw) | no disponible | no disponible | sin datos publicados en la información disponible | no disponible | Hugging Face, 0 descargas |
 | Pi0.5 (modelo base citado en el repositorio) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Otros modelos VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,11 +89,11 @@ No se dispone de datos que permitan una comparación cuantitativa con alternativ
 - Volumen de descarga elevado (222,8 GB en total), relevante para el almacenamiento y el ancho de banda necesarios.
 - Adopción nula constatada: 0 descargas y 0 likes en el momento de la captura, sin comunidad que haya validado los resultados de forma independiente.
 - Sin información sobre sesgos, riesgo de alucinación, comportamiento multilingüe ni límites de contexto, al no publicarse esos datos.
-- Fecha de creación y actualización registradas en septiembre de 2026 en los metadatos de HuggingFace.
+- Fecha de creación y actualización registradas en septiembre de 2026 en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/davidwdw/b1k_model
+- Página del modelo en Hugging Face: https://huggingface.co/davidwdw/b1k_model
 - Documentación interna del repositorio: `b1k_sft/README.md`, `pi05_task00_codegen_success_sft/README.md`, `pi05_task00_sft/README.recipe.md`, `pi05_task00_sft_plan/PLAN.md`, `pi05_tail_balanced_v2/OPERATIONS.md`
 - Carpeta de evaluación: `evaluation`
 - Carpeta de informes: `reports`

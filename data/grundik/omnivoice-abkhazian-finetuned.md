@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Grundik/omnivoice-abkhazian-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Grundik/omnivoice-abkhazian-finetuned
 - Modelo base (espacio): https://huggingface.co/spaces/k2-fsa/OmniVoice
 - Conjunto de datos: https://huggingface.co/datasets/Nart/abkhaz-tts
 - Artículo OmniVoice: arXiv:2604.00688 (https://arxiv.org/abs/2604.00688)

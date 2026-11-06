@@ -75,7 +75,7 @@ Un caso solo cuenta como correcto si los seis campos son correctos. En el pipeli
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea (6/6 campos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Distil-Qwen3.5-4B-Invoice-Grounded-Decision | 4,2 mil millones | no disponible | 97 de 100 | apache-2.0 | Pesos abiertos en HuggingFace (safetensors y GGUF) |
+| Distil-Qwen3.5-4B-Invoice-Grounded-Decision | 4,2 mil millones | no disponible | 97 de 100 | apache-2.0 | Pesos abiertos en Hugging Face (safetensors y GGUF) |
 | Qwen3.5-4B (base sin ajustar) | 4,2 mil millones aprox. | no disponible | 0,12 por LLM-as-a-judge | no disponible en la informacion | Pesos abiertos como modelo base |
 | GLM 5.3 (profesor, reasoning high) | no disponible | no disponible | 96 de 100 | no disponible | No se indica si los pesos son abiertos |
 | GPT-5.6 Luna, reasoning high | no disponible | no disponible | 100 de 100 | propietaria | Solo API |
@@ -94,11 +94,11 @@ La comparacion relevante es contra alternativas de API propietaria: el modelo de
 - Ambito de politica fijo: umbral del 2% en precios, tratamiento del transporte segun el pedido y parada en el primer fallo. Cambiar esas reglas exige reentrenar, no basta con reescribir el prompt.
 - Sin datos publicados de benchmarks generales ni de evaluacion de sesgos; tampoco se informa del contexto maximo, lo que impide saber con que tamano de factura o de hilo de correo deja de funcionar.
 - Licencia: el modelo se publica como apache-2.0, pero no se detalla la licencia del modelo base Qwen3.5-4B en la informacion disponible; conviene verificarla antes de un uso comercial.
-- Adopcion practicamente nula hasta la fecha de los datos: 0 descargas y 0 likes en HuggingFace, sin comunidad que haya reproducido los resultados de forma independiente.
+- Adopcion practicamente nula hasta la fecha de los datos: 0 descargas y 0 likes en Hugging Face, sin comunidad que haya reproducido los resultados de forma independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision
+- Modelo en Hugging Face: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision
 - Build GGUF para llama.cpp: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision-gguf
 - Repositorio del pipeline de facturas (instrucciones de uso, baselines y salidas crudas): https://github.com/distil-labs/invoice-processing-pipeline
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-twelve-parsec-duck_0936 es una politica de control para el robot cuadrupedo microduck, desarrollada por el usuario DenRakEiw y publicada en HuggingFace bajo la libreria `microduck`. No es un modelo de lenguaje: se trata de un policy de reinforcement learning que genera comandos motores a 50 Hz a partir de una observacion de 61 dimensiones y produce 14 acciones. Su funcion es ocupar el slot `walk` del robot, es decir, proporcionar una marcha perpetua que se ejecuta de forma continua hasta recibir una orden de parada.
+twelve-parsec-duck_0936 es una politica de control para el robot cuadrupedo microduck, desarrollada por el usuario DenRakEiw y publicada en Hugging Face bajo la libreria `microduck`. No es un modelo de lenguaje: se trata de un policy de reinforcement learning que genera comandos motores a 50 Hz a partir de una observacion de 61 dimensiones y produce 14 acciones. Su funcion es ocupar el slot `walk` del robot, es decir, proporcionar una marcha perpetua que se ejecuta de forma continua hasta recibir una orden de parada.
 
 El modelo parte de una politica previa, `twelve-parsec-duck`, y ha sido refinada mediante estrategias de evolucion (evolution strategies) sobre el scorer de sprint de la denominada Arena. El autor lo describe como un "2 m Sprint runner", lo que indica que el objetivo de optimizacion era maximizar la velocidad en una distancia de dos metros. El artefacto distribuido es un fichero `policy.onnx` con el normalizador de observaciones integrado, acompanado de un `manifest.json` conforme al esquema 2 del manifiesto de politicas de microduck.
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es acotada: se trata de un modelo con cero descargas
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la topologia interna de la red. Lo que si se especifica es el interfaz de la politica: recibe un vector de observacion de 61 dimensiones y emite 14 acciones a 50 Hz, de forma perpetua, sin episodios delimitados. El normalizador de observaciones esta embebido en el propio `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo (raw observations) sin preprocesado adicional. El pipeline declarado en HuggingFace es `robotics` y la libreria asociada es `microduck`.
+La informacion disponible no detalla la topologia interna de la red. Lo que si se especifica es el interfaz de la politica: recibe un vector de observacion de 61 dimensiones y emite 14 acciones a 50 Hz, de forma perpetua, sin episodios delimitados. El normalizador de observaciones esta embebido en el propio `policy.onnx`, de modo que el consumidor debe alimentar observaciones en crudo (raw observations) sin preprocesado adicional. El pipeline declarado en Hugging Face es `robotics` y la libreria asociada es `microduck`.
 
 El entrenamiento se realizo en dos fases segun la model card. La primera corresponde a la politica base `twelve-parsec-duck`; la segunda es un ajuste fino mediante estrategias de evolucion sobre el scorer de sprint de la Arena, que actua como funcion de fitness. El codigo de entrenamiento reside en el repositorio `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `b76573f1a`. No se especifican el numero de tokens ni la composicion de dataset, terminos que ademas no aplican en este paradigma; tampoco se documentan el presupuesto de evaluaciones, la poblacion usada en las estrategias de evolucion, la funcion de recompensa completa ni si hubo fases previas de RLHF o DPO (no aplicables en robotica de control).
 
@@ -72,7 +72,7 @@ La unica referencia cuantitativa aportada por el autor es la descripcion "2 m Sp
 
 | Modelo | Tipo | Observacion / acciones | Frecuencia | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| twelve-parsec-duck_0936 | Politica de control ONNX | 61 / 14 | 50 Hz | RL + evolution strategies sobre el scorer de sprint | no disponible | HuggingFace, 0 descargas |
+| twelve-parsec-duck_0936 | Politica de control ONNX | 61 / 14 | 50 Hz | RL + evolution strategies sobre el scorer de sprint | no disponible | Hugging Face, 0 descargas |
 | twelve-parsec-duck (base) | Politica de control | no disponible | no disponible | RL previo | no disponible | referenciado en la model card, sin enlace directo |
 | Otras politicas del ecosistema microduck | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otras politicas comparables dentro o fuera de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DenRakEiw/microduck-twelve-parsec-duck_0936
+- Hugging Face: https://huggingface.co/DenRakEiw/microduck-twelve-parsec-duck_0936
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL referenciado (rama `denrakeiw`, commit `b76573f1a`): `pollen-robotics/microduck_rl`
 - Documentacion del manifiesto de politicas (esquema 2): `docs/policy-manifest.md` en el repositorio del daemon

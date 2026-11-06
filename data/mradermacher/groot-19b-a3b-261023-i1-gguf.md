@@ -52,7 +52,7 @@ No hay datos sobre el volumen de tokens de entrenamiento, la composición del co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de HuggingFace incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de perplejidad para las distintas cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio cuantizado ni los metadatos de Hugging Face incluyen cifras de MMLU, HumanEval, GSM8K, ARC, HellaSwag ni de perplejidad para las distintas cuantizaciones.
 
 ## Requisitos de hardware
 
@@ -89,7 +89,7 @@ Las alternativas citadas son MoE de tamano y activacion comparables (Qwen3-30B-A
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones imatrix): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones imatrix): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF
 - Repositorio de cuantizaciones estaticas (incluye posibles ficheros `mmproj`): https://huggingface.co/mradermacher/Groot-19B-A3B-261023-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Groot-19B-A3B-261023-i1-GGUF/resolve/main/Groot-19B-A3B-261023.imatrix.gguf
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
@@ -97,4 +97,4 @@ Las alternativas citadas son MoE de tamano y activacion comparables (Qwen3-30B-A
 - Peticiones de cuantizacion y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF referenciada por el autor: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Analisis de tipos de cuantizacion (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
-- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+- Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

@@ -89,7 +89,7 @@ Aunque no hay benchmarks comparativos directos, Whisper small tiene un contexto 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [https://huggingface.co/moonshine-ai/moonshine-streaming-small-de](https://huggingface.co/moonshine-ai/moonshine-streaming-small-de)
+- Repositorio Hugging Face del modelo: [https://huggingface.co/moonshine-ai/moonshine-streaming-small-de](https://huggingface.co/moonshine-ai/moonshine-streaming-small-de)
 - Modelo original en inglés: [https://huggingface.co/moonshine-ai/moonshine-streaming-small](https://huggingface.co/moonshine-ai/moonshine-streaming-small)
 - Repositorio GitHub de Moonshine: [https://github.com/moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine)
 - Ejemplo de iOS con modelo streaming en inglés: [https://github.com/moonshine-ai/moonshine/tree/main/examples/ios/Transcriber/models/small-streaming-en](https://github.com/moonshine-ai/moonshine/tree/main/examples/ios/Transcriber/models/small-streaming-en)

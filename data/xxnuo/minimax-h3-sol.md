@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 Sol (este bundle) | no disponible | no disponible | no disponible | other (licencias de origen MiniMax H3 y LTX-2.x) | HuggingFace, espejo de 219,8 GB |
+| MiniMax H3 Sol (este bundle) | no disponible | no disponible | no disponible | other (licencias de origen MiniMax H3 y LTX-2.x) | Hugging Face, espejo de 219,8 GB |
 | MiniMax H3 (upstream) | no disponible | no disponible | no disponible | según licencia de origen | repositorio original referenciado en el manifiesto |
 | LTX-2.5 (upstream) | no disponible | no disponible | no disponible | según licencia de origen (LICENSE-2_x) | repositorio original referenciado en el manifiesto |
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de especificaciones técnicas de los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xxnuo/MiniMax-H3-Sol
+- Repositorio en Hugging Face: https://huggingface.co/xxnuo/MiniMax-H3-Sol
 - Licencia MiniMax H3 (referenciada en el bundle): upstream/MiniMaxAI/MiniMax-H3/LICENSE
 - Licencia LTX-2.x (referenciada en el bundle): upstream/Lightricks/LTX-2.5/LICENSE-2_x
 - Manifiesto de repositorios de origen: upstream-model-manifest.json (dentro del repositorio)

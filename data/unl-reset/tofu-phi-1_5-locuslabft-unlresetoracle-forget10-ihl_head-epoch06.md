@@ -90,7 +90,7 @@ La comparación relevante es con el modelo base `locuslab/tofu_ft_phi-1.5` (del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch06
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch06
 - Modelo base del fine-tuning: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Phi-1.5 original: https://huggingface.co/microsoft/phi-1_5
 - Paper de TOFU (referencia del benchmark, no enlazado en la información proporcionada): no disponible

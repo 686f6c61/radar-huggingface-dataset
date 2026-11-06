@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pelican-1 (鹈鹕-1) es un ajuste fino de tipo LoRA SFT sobre el modelo base Qwen3.5-0.8B, desarrollado por el usuario qwqqq6 y publicado en HuggingFace. Se trata de un modelo de chat especializado y de proposito muy acotado: convierte un prompt breve en una pagina HTML completa, normalmente con SVG en linea, que representa una pelicula montando en bicicleta; opcionalmente puede incluir animacion mediante CSS `@keyframes`. El modelo no pretende ser un asistente general.
+Pelican-1 (鹈鹕-1) es un ajuste fino de tipo LoRA SFT sobre el modelo base Qwen3.5-0.8B, desarrollado por el usuario qwqqq6 y publicado en Hugging Face. Se trata de un modelo de chat especializado y de proposito muy acotado: convierte un prompt breve en una pagina HTML completa, normalmente con SVG en linea, que representa una pelicula montando en bicicleta; opcionalmente puede incluir animacion mediante CSS `@keyframes`. El modelo no pretende ser un asistente general.
 
 El modelo parte de Qwen3.5-0.8B, un transformer de aproximadamente 752 millones de parametros (dato real de los pesos en safetensors), y se ha entrenado con LoRA de rango 64 y alpha 128, con dropout 0.05, fusionando posteriormente el adaptador en los pesos completos. El conjunto de datos de entrenamiento consta de 2737 filas de entrenamiento y 138 de evaluacion, con aproximadamente 10,55 millones de tokens de respuesta por epoca.
 
@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: sirve como demostracion tecnica del "pelica
 
 ## Arquitectura y entrenamiento
 
-El modelo es un transformer decoder-only de la familia Qwen3.5, con 24 capas segun los pesos de HuggingFace (el autor senala que el empaquetado GGUF hubo de parchear `qwen35.block_count` de 25 a 24). Sobre esta base se aplico un ajuste fino supervisado (SFT) con LoRA sobre las proyecciones de atencion y MLP, con rango 64, alpha 128 y dropout 0.05, y posteriormente se fusiono el adaptador en los pesos completos. El entrenamiento uso la plantilla de chat de Qwen3.5 con `enable_thinking=False` y pares usuario-asistente sin prompt de sistema.
+El modelo es un transformer decoder-only de la familia Qwen3.5, con 24 capas segun los pesos de Hugging Face (el autor senala que el empaquetado GGUF hubo de parchear `qwen35.block_count` de 25 a 24). Sobre esta base se aplico un ajuste fino supervisado (SFT) con LoRA sobre las proyecciones de atencion y MLP, con rango 64, alpha 128 y dropout 0.05, y posteriormente se fusiono el adaptador en los pesos completos. El entrenamiento uso la plantilla de chat de Qwen3.5 con `enable_thinking=False` y pares usuario-asistente sin prompt de sistema.
 
 Los hiperparametros del run v2 fueron: learning rate 1e-4, 3 epocas, step_tokens 32768, max_len 24576 y semilla 20261105. El conjunto de datos v2 se reconstruyo con HTML enfocado a animacion (giro y balanceo con CSS) y parafrasis, con 2737 filas de entrenamiento y 138 de evaluacion. El autor publica la curva de perdida de evaluacion (CE) por paso: 0.4597 en el paso 0, 0.4869 en el paso 297 (epoca 1), 0.5438 en el 595 (epoca 2) y 0.5862 en el 891 (epoca 3); el empaquetado final corresponde a la epoca 1 por presentar la mejor CE global entre los checkpoints guardados, aunque el split "standard" fue mejor en la epoca 2 (0.273).
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pelican-1 | 752 M | no disponible | Texto a HTML/SVG de pelicula en bicicleta | Apache 2.0 | HuggingFace (repo propio) |
-| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | Asistente general, multimodal | Apache 2.0 | HuggingFace |
-| Qwen3.5 (tamanos mayores) | no disponible | no disponible | Asistente general | Apache 2.0 | HuggingFace |
+| Pelican-1 | 752 M | no disponible | Texto a HTML/SVG de pelicula en bicicleta | Apache 2.0 | Hugging Face (repo propio) |
+| Qwen3.5-0.8B (base) | ~0,8 B | no disponible | Asistente general, multimodal | Apache 2.0 | Hugging Face |
+| Qwen3.5 (tamanos mayores) | no disponible | no disponible | Asistente general | Apache 2.0 | Hugging Face |
 
 La comparativa con alternativas especializadas en generacion de SVG o HTML no esta disponible en la informacion proporcionada. Frente a su modelo base, Pelican-1 gana en calidad especifica para el tema de la pelicula en bicicleta y pierde capacidad como asistente general.
 
@@ -94,7 +94,7 @@ La comparativa con alternativas especializadas en generacion de SVG o HTML no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qwqqq6/Pelican-1
+- Hugging Face: https://huggingface.co/qwqqq6/Pelican-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Referencia cultural del "pelican test": Simon Willison (mencionado en la model card, sin enlace directo proporcionado)

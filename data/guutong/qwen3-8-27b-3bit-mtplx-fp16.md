@@ -65,8 +65,8 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/guutong/Qwen3.8-27B-3bit-MTPLX-FP16
+- Repositorio Hugging Face: https://huggingface.co/guutong/Qwen3.8-27B-3bit-MTPLX-FP16
 - Repositorio oficial del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Model card del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Model card del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Recetas vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - tadiecool29/afriberta-stl-large-sentiment](https://huggingface.co/tadiecool29/afriberta-stl-large-sentiment)
-- [HuggingFace - castorini/afriberta_large](https://huggingface.co/castorini/afriberta_large)
+- [Hugging Face - tadiecool29/afriberta-stl-large-sentiment](https://huggingface.co/tadiecool29/afriberta-stl-large-sentiment)
+- [Hugging Face - castorini/afriberta_large](https://huggingface.co/castorini/afriberta_large)
 - [GitHub - castorini/afriberta](https://github.com/castorini/afriberta)

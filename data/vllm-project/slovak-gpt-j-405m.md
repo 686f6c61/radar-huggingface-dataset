@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slovak GPT-J-405M es un modelo de lenguaje causal en eslovaco desarrollado originalmente por Milos (cuenta personal en HuggingFace) y replicado en el repositorio `vllm-project/slovak-gpt-j-405M` como copia de seguridad para los tests de integración continua de vLLM. Forma parte de la serie Slovak GPT-J, que incluye variantes de 162M, 405M y 1.4B parámetros, y está construido sobre la arquitectura GPT-J con atención multi-cabeza estándar y codificación posicional rotatoria (RoPE).
+Slovak GPT-J-405M es un modelo de lenguaje causal en eslovaco desarrollado originalmente por Milos (cuenta personal en Hugging Face) y replicado en el repositorio `vllm-project/slovak-gpt-j-405M` como copia de seguridad para los tests de integración continua de vLLM. Forma parte de la serie Slovak GPT-J, que incluye variantes de 162M, 405M y 1.4B parámetros, y está construido sobre la arquitectura GPT-J con atención multi-cabeza estándar y codificación posicional rotatoria (RoPE).
 
 El modelo resuelve el problema de la generación de texto en eslovaco, un idioma con escasa representación en los grandes modelos multilingües. Con 405,7 millones de parámetros, 24 capas y una ventana de contexto de 2048 tokens, está diseñado para completar prompts y generar contenido gramaticalmente correcto en eslovaco, no para razonamiento complejo ni tareas factuales.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Slovak GPT-J-405M | 405M | 2048 | eslovaco | GPL-3.0 | HuggingFace (copia vLLM y original de Milos) |
-| Slovak GPT-J-162M | 162M | 2048 | eslovaco | no disponible en la informacion | HuggingFace (Milos) |
-| Slovak GPT-J-1.4B | 1.4B | 2048 | eslovaco | no disponible en la informacion | HuggingFace (Milos) |
-| GPT-J-6B (original) | 6B | 2048 | inglés principalmente | no disponible en la informacion | HuggingFace / EleutherAI |
+| Slovak GPT-J-405M | 405M | 2048 | eslovaco | GPL-3.0 | Hugging Face (copia vLLM y original de Milos) |
+| Slovak GPT-J-162M | 162M | 2048 | eslovaco | no disponible en la informacion | Hugging Face (Milos) |
+| Slovak GPT-J-1.4B | 1.4B | 2048 | eslovaco | no disponible en la informacion | Hugging Face (Milos) |
+| GPT-J-6B (original) | 6B | 2048 | inglés principalmente | no disponible en la informacion | Hugging Face / EleutherAI |
 
 La comparativa directa con modelos de otros idiomas o multilingües no está disponible en la información proporcionada. Dentro de la propia serie Slovak GPT-J, la variante de 1.4B ofrece mayor capacidad a costa de más recursos, mientras que la de 162M es más ligera pero con menor calidad de generación.
 
@@ -85,7 +85,7 @@ La comparativa directa con modelos de otros idiomas o multilingües no está dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia vLLM): https://huggingface.co/vllm-project/slovak-gpt-j-405M
+- Repositorio en Hugging Face (copia vLLM): https://huggingface.co/vllm-project/slovak-gpt-j-405M
 - Modelo original: https://huggingface.co/Milos/slovak-gpt-j-405M
 - Variante 162M: https://huggingface.co/Milos/slovak-gpt-j-162M
 - Variante 1.4B: https://huggingface.co/Milos/slovak-gpt-j-1.4B

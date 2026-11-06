@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) para ninguna de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sergolsub/mlx-d3-flash-9B
+- Repositorio Hugging Face: https://huggingface.co/sergolsub/mlx-d3-flash-9B
 - Modelo original: https://huggingface.co/vllm-sr/d3-flash
 - Receta de vLLM para `d3-flash`: https://github.com/vllm-project/recipes/blob/main/models/vllm-sr/d3-flash.yaml
 - Otra conversión MLX del mismo autor: https://huggingface.co/sergolsub/mlx-drex-v1.5-9B

@@ -68,7 +68,7 @@ No disponible. No se dispone de informacion suficiente para comparar este modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sstoica12/acquisition_llama8bins_numina_diversity
+- Repositorio Hugging Face: https://huggingface.co/sstoica12/acquisition_llama8bins_numina_diversity
 - Modelos relacionados del autor: https://huggingface.co/sstoica12/models
 - Perfil de la autora en GitHub: https://github.com/SStoica12
 - Modelo relacionado (student_PS): https://huggingface.co/sstoica12/acquisition_student_PS_llama8bins_numina

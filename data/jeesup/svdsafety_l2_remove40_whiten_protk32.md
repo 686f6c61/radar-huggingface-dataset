@@ -17,7 +17,7 @@ Se trata de un artefacto de investigación, no de un asistente desplegable. El p
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la información proporcionada (el modelo base Llama-2-7b-chat trabaja con 4.096 tokens) |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica pesos en precisión completa |
-| Idiomas soportados | No disponible; el campo de idiomas de HuggingFace está vacío |
+| Idiomas soportados | No disponible; el campo de idiomas de Hugging Face está vacío |
 | Licencia | Llama 2 Community License (etiqueta `license:llama2`, con `LICENSE.txt` y `USE_POLICY.md` incluidos) |
 | Formato de pesos | safetensors (librería `transformers`) |
 | Pipeline | text-generation |
@@ -39,7 +39,7 @@ Existe una contradicción documental relevante: el nombre del repositorio (`remo
 - Razonamiento y conocimiento general: esperable por herencia de Llama-2-7b-chat, sin datos de evaluación publicados para este checkpoint.
 - Soporte de tool calling / function calling: no documentado en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas; el campo de idiomas de HuggingFace está vacío.
+- Capacidades multilingües: no documentadas; el campo de idiomas de Hugging Face está vacío.
 - Capacidades especiales (modo de pensamiento, visión, audio): no disponibles.
 - Uso como sujeto experimental: es la capacidad efectivamente declarada por el autor, orientada a medir el impacto de la compresión SVD sobre la tasa de éxito de ataques y sobre la utilidad del modelo.
 
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
   - 4 bits: aproximadamente 3,5-4 GB de pesos, en torno a 5-6 GB con contexto moderado.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A10G para servicio en FP16; RTX 4090 o RTX 3090 (24 GB) para FP16 en una sola tarjeta; RTX 4080 o 4070 Ti Super (16 GB) para INT8; RTX 3060 12 GB o RTX 4060 Ti 16 GB para cuantización de 4 bits.
 - Cabe en GPU de consumo: sí, en 4 bits con holgura en tarjetas de 8-12 GB, y en FP16 en tarjetas de 24 GB.
-- Opciones de despliegue: `transformers` como vía principal; las etiquetas del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con Inference Endpoints de HuggingFace. vLLM y llama.cpp/Ollama son viables en principio, pero el repositorio no publica pesos GGUF ni GPTQ/AWQ, así que habría que generarlos.
+- Opciones de despliegue: `transformers` como vía principal; las etiquetas del repositorio incluyen `text-generation-inference` y `endpoints_compatible`, por lo que es compatible con TGI y con Inference Endpoints de Hugging Face. vLLM y llama.cpp/Ollama son viables en principio, pero el repositorio no publica pesos GGUF ni GPTQ/AWQ, así que habría que generarlos.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Jeesup/svdsafety_l2_remove40_whiten_protk32 | 6.738.415.616 | No disponible (base: 4.096) | Llama 2 Community | HuggingFace, 0 descargas, 0 likes | No disponible |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | Llama 2 Community | HuggingFace, ampliamente distribuido | Benchmarks públicos en la model card original |
-| meta-llama/Llama-2-13b-chat-hf | Aproximadamente 13.000 millones | 4.096 tokens | Llama 2 Community | HuggingFace | Benchmarks públicos en la model card original |
-| Mistral-7B-Instruct-v0.3 | Aproximadamente 7.200 millones | 32.768 tokens | Apache 2.0 | HuggingFace | Benchmarks públicos en la model card original |
+| Jeesup/svdsafety_l2_remove40_whiten_protk32 | 6.738.415.616 | No disponible (base: 4.096) | Llama 2 Community | Hugging Face, 0 descargas, 0 likes | No disponible |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4.096 tokens | Llama 2 Community | Hugging Face, ampliamente distribuido | Benchmarks públicos en la model card original |
+| meta-llama/Llama-2-13b-chat-hf | Aproximadamente 13.000 millones | 4.096 tokens | Llama 2 Community | Hugging Face | Benchmarks públicos en la model card original |
+| Mistral-7B-Instruct-v0.3 | Aproximadamente 7.200 millones | 32.768 tokens | Apache 2.0 | Hugging Face | Benchmarks públicos en la model card original |
 
 La diferencia principal frente a Llama-2-7b-chat no está en parámetros ni en contexto, sino en la licencia de uso, la trazabilidad del entrenamiento y la finalidad: este checkpoint es un artefacto de investigación sin evaluación publicada, mientras que el modelo base cuenta con documentación completa y métricas de referencia. Frente a alternativas con licencia Apache 2.0 como Mistral-7B-Instruct-v0.3, la Llama 2 Community License impone restricciones adicionales de uso comercial.
 
@@ -93,7 +93,7 @@ La diferencia principal frente a Llama-2-7b-chat no está en parámetros ni en c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_protk32
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svdsafety_l2_remove40_whiten_protk32
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Paper de SVD-LLM: no disponible en la información proporcionada (la model card menciona SVD-LLM pero no enlaza la publicación)
 - Repositorio de código asociado: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-groot-task0003-v4-40k es un checkpoint de política robótica perteneciente a la familia GR00T N1.7, publicado por el usuario Dongkkka en HuggingFace. Se trata de los pesos de una política entrenada durante 40.000 pasos de optimizador acumulados sobre la tarea denominada Task0003 SeparateRecycling, un escenario de manipulación y separación de residuos. No es un modelo de lenguaje conversacional, sino un checkpoint de inferencia destinado a controlar un robot dentro de un runtime compatible con Isaac-GR00T N1.7.
+groot-task0003-v4-40k es un checkpoint de política robótica perteneciente a la familia GR00T N1.7, publicado por el usuario Dongkkka en Hugging Face. Se trata de los pesos de una política entrenada durante 40.000 pasos de optimizador acumulados sobre la tarea denominada Task0003 SeparateRecycling, un escenario de manipulación y separación de residuos. No es un modelo de lenguaje conversacional, sino un checkpoint de inferencia destinado a controlar un robot dentro de un runtime compatible con Isaac-GR00T N1.7.
 
 El modelo ocupa 3.144.016.000 parámetros (unos 3,14 mil millones) y se distribuye en safetensors con un tamaño de repositorio de 12,6 GB. Según su model card, la inicialización visual corresponde a un codificador afinado con visión (V4) que permaneció congelado durante el entrenamiento de la política, y la configuración referencia nvidia/Cosmos-Reason2-2B para la arquitectura del backbone y los assets del procesador, que deben ser accesibles en tiempo de ejecución. La pérdida de entrenamiento registrada en el paso 40.000 es de 0,0135, un dato que el propio autor advierte que es una métrica de entrenamiento y no un resultado de evaluación sobre un conjunto reservado.
 
@@ -80,7 +80,7 @@ No se dispone de datos comparativos verificables para este checkpoint. La altern
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| groot-task0003-v4-40k | 3.144.016.000 | No disponible | Solo pérdida de entrenamiento 0,0135 en el paso 40.000 | No disponible | HuggingFace, repo de 12,6 GB |
+| groot-task0003-v4-40k | 3.144.016.000 | No disponible | Solo pérdida de entrenamiento 0,0135 en el paso 40.000 | No disponible | Hugging Face, repo de 12,6 GB |
 | Otros checkpoints GR00T N1.7 | No disponible | No disponible | No disponible | No disponible | No disponible en la información recibida |
 | Políticas VLA alternativas | No disponible | No disponible | No disponible | No disponible | No disponible en la información recibida |
 
@@ -100,6 +100,6 @@ No se dispone de datos comparativos verificables para este checkpoint. La altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/groot-task0003-v4-40k
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/groot-task0003-v4-40k
 - Repositorio de backbone referenciado en la configuración: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Paper, blog técnico, repositorio de código o demo del autor: no disponibles en la información proporcionada.

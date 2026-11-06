@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento (WER u otras metricas) frente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-hr-parla-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-large-v3-turbo-hr-parla-ggml
 - Modelo base: https://huggingface.co/GoranS/whisper-large-v3-turbo-hr-parla
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk

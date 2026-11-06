@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arushhh/amlc-ce-loco-m3-US es un checkpoint publicado en HuggingFace por el usuario Arushhh, etiquetado con la arquitectura xlm-roberta y distribuido en formato safetensors. El repositorio contiene 567.755.777 parametros (aproximadamente 568 millones), lo que lo situa en la franja de los codificadores transformer de gran tamano tipo XLM-RoBERTa-large, y ocupa 2,3 GB, un tamano coherente con pesos en precision fp32.
+Arushhh/amlc-ce-loco-m3-US es un checkpoint publicado en Hugging Face por el usuario Arushhh, etiquetado con la arquitectura xlm-roberta y distribuido en formato safetensors. El repositorio contiene 567.755.777 parametros (aproximadamente 568 millones), lo que lo situa en la franja de los codificadores transformer de gran tamano tipo XLM-RoBERTa-large, y ocupa 2,3 GB, un tamano coherente con pesos en precision fp32.
 
 El modelo acumula 11 descargas y 0 likes desde su publicacion, y su repositorio no incluye model card, pipeline declarado, licencia, idiomas soportados ni informacion sobre el dataset o el procedimiento de entrenamiento. Esto lo convierte en un artefacto de trazabilidad limitada: se puede inspeccionar y ejecutar, pero no hay documentacion oficial que describa su tarea objetivo ni su calidad.
 
@@ -91,5 +91,5 @@ Frente a los checkpoints base, este repositorio no aporta informacion sobre dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arushhh/amlc-ce-loco-m3-US
+- Hugging Face: https://huggingface.co/Arushhh/amlc-ce-loco-m3-US
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

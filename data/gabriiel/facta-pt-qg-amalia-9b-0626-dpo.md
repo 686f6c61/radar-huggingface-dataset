@@ -70,8 +70,8 @@ No se dispone de informacion sobre modelos directamente comparables en la inform
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gabriiel/facta-pt-qg-amalia-9b-0626-dpo | 9B (base) + adaptador PEFT | no disponible | Generacion de preguntas de verificacion (pt) | Apache 2.0 | HuggingFace |
-| amalia-llm/AMALIA-9B-0626-DPO | 9B | no disponible | Generacion de texto general (pt) | Apache 2.0 | HuggingFace |
+| Gabriiel/facta-pt-qg-amalia-9b-0626-dpo | 9B (base) + adaptador PEFT | no disponible | Generacion de preguntas de verificacion (pt) | Apache 2.0 | Hugging Face |
+| amalia-llm/AMALIA-9B-0626-DPO | 9B | no disponible | Generacion de texto general (pt) | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos directamente comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriiel/facta-pt-qg-amalia-9b-0626-dpo
+- Modelo en Hugging Face: https://huggingface.co/Gabriiel/facta-pt-qg-amalia-9b-0626-dpo
 - Modelo base AMALIA-9B-0626-DPO: https://huggingface.co/amalia-llm/AMALIA-9B-0626-DPO
 
 Nota: la busqueda web asociada a esta ficha no devolvio resultados relevantes para el modelo (los resultados obtenidos correspondian a aparcamientos del aeropuerto de Toulouse-Blagnac y no guardan relacion con el artefacto), por lo que no se incluyen.

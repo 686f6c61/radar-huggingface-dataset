@@ -68,9 +68,9 @@ Las fuentes web consultadas describen benchmarks del modelo base MiMo-V2.6-Flash
 
 | Modelo | Parametros | Contexto | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sternberg/mimo-v2.6-flash-unc-dflash | 1,47 B (cabeza) | no disponible | Cabeza drafteadora para decodificacion especulativa en vLLM | MIT | HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Flash-RL | no disponible | 1 M (segun fuentes externas) | Modelo objetivo omnimodal con razonamiento | MIT | HuggingFace |
-| dealignai/MiMo-V2.6-Flash-RL-UNCENSORED | no disponible | no disponible | Derivado sin censura del modelo anterior, con subcarpeta `dflash/` | MIT | HuggingFace |
+| sternberg/mimo-v2.6-flash-unc-dflash | 1,47 B (cabeza) | no disponible | Cabeza drafteadora para decodificacion especulativa en vLLM | MIT | Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Flash-RL | no disponible | 1 M (segun fuentes externas) | Modelo objetivo omnimodal con razonamiento | MIT | Hugging Face |
+| dealignai/MiMo-V2.6-Flash-RL-UNCENSORED | no disponible | no disponible | Derivado sin censura del modelo anterior, con subcarpeta `dflash/` | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto para comparar numericamente frente a cabezas drafteadoras alternativas (EAGLE, Medusa u otros modelos especulativos de la familia Qwen3).
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento ni de contexto para comparar numericamente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sternberg/mimo-v2.6-flash-unc-dflash
+- Repositorio Hugging Face: https://huggingface.co/sternberg/mimo-v2.6-flash-unc-dflash
 - Modelo original de Xiaomi (upstream): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Coleccion MiMo-V2.6 de Xiaomi: https://huggingface.co/collections/XiaomiMiMo/mimo-v26
 - Pagina oficial de MiMo-V2.6 (Xiaomi): https://mimo.xiaomi.com/mimo-v2-6

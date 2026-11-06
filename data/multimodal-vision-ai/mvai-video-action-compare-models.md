@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MVAI Video Action Compare Models es un espejo de los binarios oficiales de MoViNet-A1 y MoViNet-A2 en formato TFLite Float32, publicados originalmente por el equipo de TensorFlow Model Garden (Google). El repositorio no introduce modificaciones sobre los ficheros originales: su función es servir los dos modelos desde HuggingFace con cabeceras CORS compatibles, de modo que puedan cargarse directamente en el navegador dentro de la interfaz de investigación de MVAI. Está orientado a la clasificación de acciones a nivel de vídeo sobre el conjunto Kinetics-600 (600 clases).
+MVAI Video Action Compare Models es un espejo de los binarios oficiales de MoViNet-A1 y MoViNet-A2 en formato TFLite Float32, publicados originalmente por el equipo de TensorFlow Model Garden (Google). El repositorio no introduce modificaciones sobre los ficheros originales: su función es servir los dos modelos desde Hugging Face con cabeceras CORS compatibles, de modo que puedan cargarse directamente en el navegador dentro de la interfaz de investigación de MVAI. Está orientado a la clasificación de acciones a nivel de vídeo sobre el conjunto Kinetics-600 (600 clases).
 
 Técnicamente se trata de dos redes de convolución 3D con arquitectura MoViNet en variante *stream*, es decir, con estados internos de streaming que permiten procesar el vídeo fotograma a fotograma manteniendo la caché temporal entre inferencias. A1 opera con entradas de 172x172 píxeles y A2 con 224x224; ambas reciben un único fotograma por paso ([1,1,H,W,3]) y exponen decenas de tensores de estado (68 entradas/salidas en A1, 74 en A2), lo que las hace adecuadas para inferencia de baja latencia en dispositivos.
 
@@ -103,7 +103,7 @@ No se dispone en la información proporcionada de datos comparativos de terceros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/multimodal-vision-ai/mvai-video-action-compare-models
+- Repositorio en Hugging Face: https://huggingface.co/multimodal-vision-ai/mvai-video-action-compare-models
 - Proyecto original MoViNet en TensorFlow Models: https://github.com/tensorflow/models/tree/master/official/projects/movinet
 - Binario oficial MoViNet-A1 Stream: https://storage.googleapis.com/tf_model_garden/vision/movinet/movinet_a1_stream.tflite
 - Binario oficial MoViNet-A2 Stream: https://storage.googleapis.com/tf_model_garden/vision/movinet/movinet_a2_stream.tflite

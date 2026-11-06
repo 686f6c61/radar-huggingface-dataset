@@ -108,7 +108,7 @@ No se dispone de otros modelos comparables con métricas verificables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DJLougen/scotoma-small
+- Modelo en Hugging Face: https://huggingface.co/DJLougen/scotoma-small
 - Repositorio de la aplicación Scrub N Paste: https://github.com/DJLougen/scrub-n-paste
 - Modelo base microsoft/deberta-v3-small: https://huggingface.co/microsoft/deberta-v3-small
 - Dataset declarado nvidia/Nemotron-PII: https://huggingface.co/datasets/nvidia/Nemotron-PII

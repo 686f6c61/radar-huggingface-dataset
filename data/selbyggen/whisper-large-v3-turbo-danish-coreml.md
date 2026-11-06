@@ -91,7 +91,7 @@ La comparación relevante es de formato y despliegue: frente al modelo base en P
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Selbyggen/whisper-large-v3-turbo-danish-coreml)
+- [Modelo en Hugging Face](https://huggingface.co/Selbyggen/whisper-large-v3-turbo-danish-coreml)
 - [Modelo base: thorhojhus/whisper-large-v3-turbo-danish](https://huggingface.co/thorhojhus/whisper-large-v3-turbo-danish)
 - [Perfil del autor del ajuste fino: thorhojhus](https://huggingface.co/thorhojhus)
 - [WhisperKit (Argmax)](https://github.com/argmaxinc/WhisperKit)

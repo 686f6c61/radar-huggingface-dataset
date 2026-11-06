@@ -78,7 +78,7 @@ No se dispone de comparativas de rendimiento directas con estos modelos en tarea
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abu-Dju/QWEN2.5-32B-Translation
+- Repositorio Hugging Face: https://huggingface.co/Abu-Dju/QWEN2.5-32B-Translation
 - Repositorio original (Imran1): https://huggingface.co/Imran1/QWEN2.5-32B-Translation
 - Modelo base Qwen2.5 32B: https://huggingface.co/Qwen/Qwen2.5-32B
 - Página de PromptLayer sobre el modelo: https://www.promptlayer.com/models/qwen25-32b-translation/

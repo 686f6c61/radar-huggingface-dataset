@@ -70,8 +70,8 @@ No se dispone de datos de benchmarks comparativos con modelos similares en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PinkPixel/birefnet-hr-matting-onnx
+- Modelo en Hugging Face: https://huggingface.co/PinkPixel/birefnet-hr-matting-onnx
 - Modelo original: https://huggingface.co/ZhengPeng7/BiRefNet_HR-matting
 - Repositorio del código original: https://github.com/ZhengPeng7/BiRefNet
 - Paper: https://arxiv.org/abs/2401.03407
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo

@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO view_large (este) | no disponible | no disponible | 73,95 % éxito LIBERO | Apache 2.0 | HuggingFace (Donghyun1228) |
+| π0.5 LIBERO view_large (este) | no disponible | no disponible | 73,95 % éxito LIBERO | Apache 2.0 | Hugging Face (Donghyun1228) |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | openpi |
 | π0 (openpi) | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | openpi |
 | OpenVLA | no disponible | no disponible | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha |
@@ -86,7 +86,7 @@ No se dispone de datos verificados de los modelos comparables en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-lape-k10-view-large-lam0p005-lr5e-5-10000-20261102
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-lape-k10-view-large-lam0p005-lr5e-5-10000-20261102
 - Checkpoint de inicialización: https://huggingface.co/Donghyun1228/pi05-libero-conflict-mean-source-n50k-10000-20261024
 - Repositorio de código del método: `Donghyun1228/vla_adaptation` (commit `e37d9435`), preset `pi05_libero_conflict_anchor_view_adapt`
 - openpi (stack de π0.5): no se proporciona URL en la información disponible

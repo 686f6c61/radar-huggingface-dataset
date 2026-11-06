@@ -97,9 +97,9 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotdogs/qwen3.8-27B-veriloop-e2_svd_lora
+- Modelo en Hugging Face: https://huggingface.co/hotdogs/qwen3.8-27B-veriloop-e2_svd_lora
 - Modelo de origen VeriLoop-E2: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Organizacion del autor de VeriLoop-E2: https://huggingface.co/tsinghua-sigs-robot-lab
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la informacion de Hugging Face y de la model card.

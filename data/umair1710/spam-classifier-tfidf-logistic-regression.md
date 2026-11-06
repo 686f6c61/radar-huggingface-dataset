@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Umair1710/spam-classifier-tfidf-logistic-regression es un pipeline de clasificacion binaria de texto publicado en HuggingFace por el usuario Umair1710. No es un modelo de lenguaje neuronal, sino una solucion clasica de machine learning construida con scikit-learn que etiqueta mensajes SMS como *Ham* (legitimo) o *Spam*. El pipeline combina una vectorizacion TF-IDF de 3.000 caracteristicas (unigramas y bigramas) con cuatro caracteristicas estructurales de dominio (presencia de URL, recuento de simbolos de divisa, de signos de exclamacion y de caracteres en mayuscula), apiladas mediante `scipy.sparse.hstack`.
+Umair1710/spam-classifier-tfidf-logistic-regression es un pipeline de clasificacion binaria de texto publicado en Hugging Face por el usuario Umair1710. No es un modelo de lenguaje neuronal, sino una solucion clasica de machine learning construida con scikit-learn que etiqueta mensajes SMS como *Ham* (legitimo) o *Spam*. El pipeline combina una vectorizacion TF-IDF de 3.000 caracteristicas (unigramas y bigramas) con cuatro caracteristicas estructurales de dominio (presencia de URL, recuento de simbolos de divisa, de signos de exclamacion y de caracteres en mayuscula), apiladas mediante `scipy.sparse.hstack`.
 
 El problema central que aborda es el desequilibrio severo de clases: aproximadamente el 87 % de los mensajes del conjunto de datos son Ham, por lo que un clasificador ingenuo puede alcanzar una exactitud alta sin detectar spam. Para mitigarlo, el autor compara tres estrategias (Naive Bayes multinomial como linea base, regresion logistica con pesos de clase y regresion logistica con sobremuestreo SMOTE) y selecciona la ultima por ofrecer el mejor equilibrio entre precision y exhaustividad en la clase minoritaria.
 
@@ -66,7 +66,7 @@ No se han publicado en la informacion disponible benchmarks frente a modelos ext
 - VRAM para inferencia: ninguna. El pipeline se ejecuta integramente en CPU.
 - GPU recomendadas: no aplica; no se requiere ni se aprovecha aceleracion por GPU.
 - Compatibilidad con GPU de consumo: irrelevante, el modelo funciona en cualquier maquina, incluidos portatiles de gama baja y dispositivos ARM.
-- Tamano en disco: el repositorio figura como 0,0 GB en HuggingFace y el autor no publica el tamano exacto del bundle; por la naturaleza de la representacion (3.000 caracteristicas mas vocabulario) se espera del orden de kilobytes a pocos megabytes.
+- Tamano en disco: el repositorio figura como 0,0 GB en Hugging Face y el autor no publica el tamano exacto del bundle; por la naturaleza de la representacion (3.000 caracteristicas mas vocabulario) se espera del orden de kilobytes a pocos megabytes.
 - Opciones de despliegue: carga directa del bundle con `joblib.load` dentro de un servicio Python (FastAPI, Flask, AWS Lambda, Cloud Run). No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo transformer ni dispone de pesos en formatos GGUF, safetensors u ONNX.
 - Latencia y rendimiento: no hay mediciones publicadas. Como referencia cualitativa, una regresion logistica sobre vectores dispersos de 3.004 dimensiones se resuelve habitualmente en el orden de microsegundos a pocos milisegundos por mensaje corto en CPU; se trata de una estimacion, no de un dato verificado por el autor.
 
@@ -76,7 +76,7 @@ La informacion disponible solo permite comparar las tres estrategias evaluadas p
 
 | Modelo | Parametros | Contexto | F1 (Spam) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Regresion logistica con SMOTE (este modelo) | 3.005 coeficientes (derivado) | no aplica (bag-of-words) | 0,9456 | MIT | HuggingFace, bundle joblib |
+| Regresion logistica con SMOTE (este modelo) | 3.005 coeficientes (derivado) | no aplica (bag-of-words) | 0,9456 | MIT | Hugging Face, bundle joblib |
 | Regresion logistica con pesos de clase | no disponible | no aplica | 0,9329 | no disponible como artefacto publicado | solo resultados en la model card |
 | Naive Bayes multinomial (linea base) | no disponible | no aplica | 0,9417 | no disponible como artefacto publicado | solo resultados en la model card |
 
@@ -97,6 +97,6 @@ No se dispone de datos comparativos frente a alternativas de la misma categoria 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umair1710/spam-classifier-tfidf-logistic-regression
+- Modelo en Hugging Face: https://huggingface.co/Umair1710/spam-classifier-tfidf-logistic-regression
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo: los enlaces recuperados corresponden a paginas de soporte de Microsoft (contacto, inicio de sesion en Hotmail, actualizaciones de seguridad de Exchange Server y frecuencia de refresco en Windows) y no guardan relacion con el pipeline descrito.
 - No se han encontrado en la informacion proporcionada articulos, papers, repositorios de codigo ni demos adicionales asociados al modelo.

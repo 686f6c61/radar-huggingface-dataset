@@ -18,7 +18,7 @@ Es relevante ahora porque compite en el benchmark GIFT-Eval (97 configuraciones,
 | Longitud de contexto | Hasta 8.192 pasos |
 | Tipos de cuantizacion | No disponible en la informacion; por tamano (2,4 M de parametros) la cuantizacion no es necesaria en la practica |
 | Idiomas soportados | No aplica: modelo de series temporales, no linguistico |
-| Licencia | Pesos: CC BY-NC 4.0 (uso de investigacion y no comercial). Codigo (`modular_ts/`): Apache-2.0. Las etiquetas de HuggingFace indican `apache-2.0`, en contradiccion con la model card |
+| Licencia | Pesos: CC BY-NC 4.0 (uso de investigacion y no comercial). Codigo (`modular_ts/`): Apache-2.0. Las etiquetas de Hugging Face indican `apache-2.0`, en contradiccion con la model card |
 | Formato de pesos | safetensors (`export/model.safetensors`) + `export/config.json`; requiere el paquete `modular_ts` para la carga |
 
 Otros datos: pipeline declarado `time-series-forecasting`; salida de 21 cuantiles monotonos por paso mas la media; publicado el 20 de octubre de 2026; 0 descargas y 0 likes en el momento de la consulta; autor citado Chima Emmanuel Akuegbo y Modular Computing.
@@ -77,7 +77,7 @@ El autor destaca el mejor CRPS entre los modelos abiertos de 2,5 M de parametros
 
 | Modelo | Parametros | Contexto | MASE (GIFT-Eval) | CRPS (GIFT-Eval) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Modular-TS-2.4M | 2,41 M | 8.192 pasos | 0,745 | 0,511 | CC BY-NC 4.0 (pesos) / Apache-2.0 (codigo) | HuggingFace, pesos safetensors |
+| Modular-TS-2.4M | 2,41 M | 8.192 pasos | 0,745 | 0,511 | CC BY-NC 4.0 (pesos) / Apache-2.0 (codigo) | Hugging Face, pesos safetensors |
 | IBM TTM-R3 (PT) | ~1-5 M (segun model card) | No disponible | 0,724 | 0,520 | No disponible | No disponible en la informacion |
 | TimeSSM-2.5M | 2,5 M | No disponible | 0,754 | 0,513 | No disponible | No disponible en la informacion |
 | Seasonal Naive | - | - | 1,000 | 1,000 | No aplica | Baseline trivial |
@@ -90,7 +90,7 @@ La comparativa se limita a los tres modelos que el autor reporta en su model car
 - Debilidad declarada en series de energia y meteorologia de alta frecuencia y horizonte largo, donde el modelo puede no capturar bien la dinamica.
 - Modelo pequeno: captura bien estacionalidad y tendencia comunes, pero puede perder cambios de regimen poco frecuentes.
 - Licencia de pesos CC BY-NC 4.0: prohibido el uso comercial de los pesos sin acuerdo adicional, motivado por la mezcla de datasets con licencias diversas en la porcion de datos reales.
-- Contradiccion de licencia: las etiquetas de HuggingFace declaran `apache-2.0` mientras la model card y el frontmatter indican `cc-by-nc-4.0` para los pesos. Debe prevalecer la model card, pero conviene aclararlo con el autor antes de cualquier despliegue.
+- Contradiccion de licencia: las etiquetas de Hugging Face declaran `apache-2.0` mientras la model card y el frontmatter indican `cc-by-nc-4.0` para los pesos. Debe prevalecer la model card, pero conviene aclararlo con el autor antes de cualquier despliegue.
 - Riesgo de alucinacion en sentido estadistico: fuera de distribucion, los cuantiles pueden ser excesivamente estrechos y dar falsa confianza en las bandas de prediccion.
 - Sin garantias de calibracion por dominio: la evaluacion es agregada sobre 97 configuraciones; el rendimiento por serie concreta puede variar y no se publican garantias por tipo de serie.
 - Ausencia de soporte linguistico, tool calling o multimodal: no es un modelo de proposito general.
@@ -99,8 +99,8 @@ La comparativa se limita a los tres modelos que el autor reporta en su model car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Modularcomputing/Modular-TS-2.4M
-- Perfil del autor en HuggingFace: https://huggingface.co/Modularcomputing
+- Modelo en Hugging Face: https://huggingface.co/Modularcomputing/Modular-TS-2.4M
+- Perfil del autor en Hugging Face: https://huggingface.co/Modularcomputing
 - Paquete de inferencia `timestral` de Mistral AI (Apache-2.0, referenciado en la model card; sin URL directa en la informacion disponible)
 - GIFT-Eval (harness y leaderboard de evaluacion, referenciado en la model card; sin URL directa en la informacion disponible)
 - Resultados por configuracion: `results/all_results.csv` dentro del repositorio del modelo

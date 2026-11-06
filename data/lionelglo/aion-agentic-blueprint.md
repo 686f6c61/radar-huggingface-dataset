@@ -61,9 +61,9 @@ Dado que no se dispone de datos de rendimiento del adaptador, la comparacion se 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Coder-3B-Instruct (base) | 3B | 32K | Apache 2.0 | HuggingFace |
-| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 license (uso comercial restringido) | HuggingFace |
-| DeepSeek-Coder-1.3B-Instruct | 1.3B | 16K | MIT | HuggingFace |
+| Qwen2.5-Coder-3B-Instruct (base) | 3B | 32K | Apache 2.0 | Hugging Face |
+| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 license (uso comercial restringido) | Hugging Face |
+| DeepSeek-Coder-1.3B-Instruct | 1.3B | 16K | MIT | Hugging Face |
 
 El adaptador `aion-agentic-blueprint` no anade mejoras documentadas sobre el base, por lo que su rendimiento deberia ser similar o ligeramente diferente dependiendo del dataset de fine-tuning, que no se ha revelado.
 
@@ -78,7 +78,7 @@ El adaptador `aion-agentic-blueprint` no anade mejoras documentadas sobre el bas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lionelglo/aion-agentic-blueprint
+- Hugging Face: https://huggingface.co/Lionelglo/aion-agentic-blueprint
 - Repositorio del framework "agentic-blueprint" (posiblemente relacionado por nombre, aunque no confirmado): https://github.com/Liohtml/agentic-blueprint
 - Sitio web de "Agentic Blueprint": https://agenticblueprint.ai/
 - Plantillas del framework: https://github.com/Liohtml/agentic-blueprint/tree/master/blueprint/templates

@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento ni de comparativas publicadas. El modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h010.pi-agent-sft-v8.step_250
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h010.pi-agent-sft-v8.step_250
 - Indice de checkpoints de AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)
 - Perfil del autor: https://huggingface.co/agentic-ptb

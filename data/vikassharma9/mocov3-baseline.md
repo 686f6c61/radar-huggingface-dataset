@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vikassharma9/mocov3-baseline` es un repositorio de HuggingFace publicado por el usuario vikassharma9 que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de generación, configurada en escala *tiny*. El propio autor indica en la model card que se trata de un punto de partida experimental: el fichero `model.safetensors` es un *checkpoint* de inicialización válido para *smoke tests*, no un modelo entrenado, y no se reclama ninguna puntuación de benchmark.
+`vikassharma9/mocov3-baseline` es un repositorio de Hugging Face publicado por el usuario vikassharma9 que contiene una implementación funcional de MoCo v3 (Momentum Contrast v3) orientada a tareas de generación, configurada en escala *tiny*. El propio autor indica en la model card que se trata de un punto de partida experimental: el fichero `model.safetensors` es un *checkpoint* de inicialización válido para *smoke tests*, no un modelo entrenado, y no se reclama ninguna puntuación de benchmark.
 
 El total de parámetros registrado en el safetensors es de 24.832, lo que sitúa el artefacto en un orden de magnitud de decenas de miles de parámetros, es decir, un modelo de juguete sin capacidad práctica de generación de texto o imágenes. El repositorio ocupa 0,0 GB y no registra descargas ni *likes* en el momento de la consulta (actualización: 2026-10-06).
 
@@ -79,5 +79,5 @@ No se han proporcionado modelos comparables en la informacion disponible. No pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vikassharma9/mocov3-baseline
+- Repositorio en Hugging Face: https://huggingface.co/vikassharma9/mocov3-baseline
 - No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la informacion disponible.

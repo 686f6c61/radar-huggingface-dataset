@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario asfdasdfaa bajo licencia MIT. La informacion disponible es internamente contradictoria: los metadatos de HuggingFace lo etiquetan como `transformers`, `pytorch`, `bert` y `feature-extraction`, mientras que la model card describe un modelo de razonamiento tipo LLM con modo de pensamiento, soporte de function calling y resultados en pruebas como AIME 2025. No se puede reconciliar ambas descripciones con los datos aportados.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario asfdasdfaa bajo licencia MIT. La informacion disponible es internamente contradictoria: los metadatos de Hugging Face lo etiquetan como `transformers`, `pytorch`, `bert` y `feature-extraction`, mientras que la model card describe un modelo de razonamiento tipo LLM con modo de pensamiento, soporte de function calling y resultados en pruebas como AIME 2025. No se puede reconciliar ambas descripciones con los datos aportados.
 
 El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el mismo dia (2026-09-13), lo que apunta a un repositorio de prueba o placeholder sin pesos reales publicados. El nombre "TestRepo" refuerza esa interpretacion.
 
@@ -25,7 +25,7 @@ Otros metadatos confirmados: pipeline declarado `feature-extraction`, libreria `
 
 ## Arquitectura y entrenamiento
 
-No hay informacion verificable sobre la arquitectura. Los tags de HuggingFace apuntan a un modelo basado en BERT orientado a extraccion de caracteristicas, pero la model card habla de una "version upgrade" con mejoras en profundidad de razonamiento, optimizacion algoritmica en post-entrenamiento y un modo de pensamiento que consume una media de 23K tokens por pregunta en AIME (frente a 12K en la version anterior). Estas dos descripciones son incompatibles entre si y no se aporta ninguna ficha tecnica (numero de parametros, capas, dimensiones, atencion, tokenizador) que permita decantarse por una.
+No hay informacion verificable sobre la arquitectura. Los tags de Hugging Face apuntan a un modelo basado en BERT orientado a extraccion de caracteristicas, pero la model card habla de una "version upgrade" con mejoras en profundidad de razonamiento, optimizacion algoritmica en post-entrenamiento y un modo de pensamiento que consume una media de 23K tokens por pregunta en AIME (frente a 12K en la version anterior). Estas dos descripciones son incompatibles entre si y no se aporta ninguna ficha tecnica (numero de parametros, capas, dimensiones, atencion, tokenizador) que permita decantarse por una.
 
 Tampoco se detalla el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF, DPO u otras. La model card menciona tecnicas de post-entrenamiento de forma generica, sin especificar metodologia. No hay informacion sobre innovaciones tecnicas concretas mas alla de la referencia a un "modo de pensamiento" implicito y a la recomendacion de no forzar patrones de pensamiento con tokens especiales.
 
@@ -80,7 +80,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70% al 87,5% respecto a
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la arquitectura no es posible estimarla.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. El repositorio declara 0.0 GB, por lo que actualmente no hay pesos que cargar.
-- Opciones de despliegue: los metadatos indican `endpoints_compatible` y libreria `transformers`, lo que sugiere compatibilidad con el ecosistema HuggingFace (Transformers, Text Generation Inference, Inference Endpoints). No hay confirmacion de soporte para vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: los metadatos indican `endpoints_compatible` y libreria `transformers`, lo que sugiere compatibilidad con el ecosistema Hugging Face (Transformers, Text Generation Inference, Inference Endpoints). No hay confirmacion de soporte para vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible. La unica referencia indirecta es que el modelo declarado consume de media 23K tokens por pregunta en AIME, lo que implicaria un coste de generacion elevado, pero sin datos de hardware no puede cuantificarse.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No es posible establecer una comparativa fiable. La model card compara contra "M
 
 ## Limitaciones y advertencias
 
-- Contradiccion documental grave: los tags de HuggingFace describen un BERT de extraccion de caracteristicas y la model card describe un LLM de razonamiento con modo de pensamiento. Cualquiera de las dos lecturas invalida la otra.
+- Contradiccion documental grave: los tags de Hugging Face describen un BERT de extraccion de caracteristicas y la model card describe un LLM de razonamiento con modo de pensamiento. Cualquiera de las dos lecturas invalida la otra.
 - Repositorio vacio: tamano declarado de 0.0 GB, sin evidencias de que se hayan subido pesos, tokenizador o configuracion. No es desplegable tal cual.
 - Sin validacion externa: 0 descargas y 0 likes, y ausencia de resultados de busqueda relevantes. No hay terceros que hayan reproducido los numeros.
 - Benchmarks no trazables: los valores de la tabla no identifican conjuntos de datos, versiones ni metodologia, y comparan contra modelos anonimos. No son citables como evidencia de rendimiento.
@@ -110,5 +110,5 @@ No es posible establecer una comparativa fiable. La model card compara contra "M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asfdasdfaa/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/asfdasdfaa/MyAwesomeModel-TestRepo
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, paper, repositorio de codigo, demo o blog oficial. Los unicos resultados devueltos tratan sobre mapas de la provincia de Gangwon (Corea del Sur) y no guardan relacion con este modelo.

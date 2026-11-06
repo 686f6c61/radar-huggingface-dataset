@@ -58,4 +58,4 @@ No disponible. No existe información sobre el modelo subyacente ni sobre altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shitanshu06/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/Shitanshu06/tds-carbon-card

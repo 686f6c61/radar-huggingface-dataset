@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/fernandotonon/QtMeshEditor-trellis2-gguf
+- Repositorio de Hugging Face: https://huggingface.co/fernandotonon/QtMeshEditor-trellis2-gguf
 - Repositorio original de conversion (ilintar): https://huggingface.co/ilintar/trellis2-gguf
 - Repositorio de TRELLIS.2 (Microsoft): https://github.com/microsoft/TRELLIS.2
 - Documentacion oficial de TRELLIS.2: https://microsoft.github.io/TRELLIS.2/

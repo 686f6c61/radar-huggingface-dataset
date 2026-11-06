@@ -86,7 +86,7 @@ Advertencia del propio autor: la evaluación es sintética y comparte supuestos 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MapLayerPredictor | 59.482 (int8, 77 KB) | Entrada fija: 4 índices + 40 características numéricas | Métricas solo sintéticas (top-1 0,9585 en mapa base; precision@4 0,790 global) | No disponible | HuggingFace, Core ML (iOS 17+) |
+| MapLayerPredictor | 59.482 (int8, 77 KB) | Entrada fija: 4 índices + 40 características numéricas | Métricas solo sintéticas (top-1 0,9585 en mapa base; precision@4 0,790 global) | No disponible | Hugging Face, Core ML (iOS 17+) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la información proporcionada modelos comparables de la misma categoría (recomendadores de capas de mapa empaquetados para Core ML). Cualquier comparación con otros recomendadores en dispositivo requeriría datos que no están disponibles.
@@ -105,10 +105,10 @@ No se han identificado en la información proporcionada modelos comparables de l
 - Latencia y comportamiento en la Neural Engine sin verificar: la paridad de cuantización se comprobó por simulación en PyTorch, no ejecutando el `mlpackage`.
 - Licencia no declarada: no hay información sobre permisos de uso comercial, modificación o redistribución. Debe aclararse con el autor antes de cualquier uso en producción.
 - Idiomas: el modelo no procesa lenguaje natural; las únicas categorías textuales son los vocabularios cerrados de actividades, países, regiones y modos de ruta.
-- El repositorio de HuggingFace indica 0 descargas y 0 likes, y un tamaño de repositorio de 0,0 GB, coherente con un artefacto de 77 KB sin comunidad establecida.
+- El repositorio de Hugging Face indica 0 descargas y 0 likes, y un tamaño de repositorio de 0,0 GB, coherente con un artefacto de 77 KB sin comunidad establecida.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pmarquees/MapLayerPredictor
+- Hugging Face: https://huggingface.co/pmarquees/MapLayerPredictor
 - Repositorio de entrenamiento con `catalog.py` (vocabularios y orden de claves `NUMERIC_KEYS` y `OVERLAYS`): referenciado en la model card, sin URL pública disponible en la información proporcionada.
 - Paper, blog o demo adicionales: no disponible. La búsqueda web realizada no devolvió enlaces relevantes al modelo (únicamente páginas de soporte de Google Chrome, Google Translate y Gmail, sin relación con el artefacto).

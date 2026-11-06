@@ -82,10 +82,10 @@ El autor senala que las diferencias de aproximadamente 0,01 en estos conjuntos e
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas de rendimiento |
 |---|---|---|---|---|---|
-| atomizer-gliner-large (v0.1-rc1) | 456 M | Atomizacion de afirmaciones y critico | cc-by-4.0 | HuggingFace, libreria `atomizer` bajo peticion | soft F1 0,907 en sintetico; 0,088 de referencias erroneas en Decontextualization |
-| atomizer-gliner-small (v0.4) | 163 M | Atomizacion de afirmaciones y critico | no disponible en la informacion | HuggingFace | soft F1 0,899 en sintetico; 0,045 de referencias erroneas; modelo recomendado para uso general por el autor |
-| gliner-community/gliner_large-v2.5 | 456 M | Extraccion zero-shot de entidades (NER) | no disponible en la informacion | HuggingFace | Backbone del modelo; no es un atomizador ni incluye cabezas de criticidad |
-| chentong00/propositionizer-wiki-data | no disponible | Segmentacion de proposiciones | no disponible en la informacion | HuggingFace (dataset) | Fuente de datos de entrenamiento, no un modelo comparable directamente |
+| atomizer-gliner-large (v0.1-rc1) | 456 M | Atomizacion de afirmaciones y critico | cc-by-4.0 | Hugging Face, libreria `atomizer` bajo peticion | soft F1 0,907 en sintetico; 0,088 de referencias erroneas en Decontextualization |
+| atomizer-gliner-small (v0.4) | 163 M | Atomizacion de afirmaciones y critico | no disponible en la informacion | Hugging Face | soft F1 0,899 en sintetico; 0,045 de referencias erroneas; modelo recomendado para uso general por el autor |
+| gliner-community/gliner_large-v2.5 | 456 M | Extraccion zero-shot de entidades (NER) | no disponible en la informacion | Hugging Face | Backbone del modelo; no es un atomizador ni incluye cabezas de criticidad |
+| chentong00/propositionizer-wiki-data | no disponible | Segmentacion de proposiciones | no disponible en la informacion | Hugging Face (dataset) | Fuente de datos de entrenamiento, no un modelo comparable directamente |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ El autor senala que las diferencias de aproximadamente 0,01 en estos conjuntos e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nishparadox/atomizer-gliner-large
+- Modelo en Hugging Face: https://huggingface.co/nishparadox/atomizer-gliner-large
 - Modelo pequeno relacionado: https://huggingface.co/nishparadox/atomizer-gliner-small
 - Backbone: https://huggingface.co/gliner-community/gliner_large-v2.5
 - Repositorio del codigo (privado, acceso bajo peticion): https://github.com/NISH1001/atomizer

@@ -80,7 +80,7 @@ La comparativa muestra que esta build de 8 bits es la opción recomendada cuando
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de mtplx: https://github.com/philipjohnbasile/mtplx
 - Variante de 4 bits: https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit

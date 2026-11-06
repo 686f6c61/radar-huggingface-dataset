@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hercuvit-stitcher | Decodificador DETR para union de instancias | no disponible (reducido) | no aplica | MIT | HuggingFace (repo) |
-| hercuvit-v0 | Segmentador companero (produce hojas y embeddings) | no disponible | no aplica | no disponible | HuggingFace (repo) |
+| hercuvit-stitcher | Decodificador DETR para union de instancias | no disponible (reducido) | no aplica | MIT | Hugging Face (repo) |
+| hercuvit-v0 | Segmentador companero (produce hojas y embeddings) | no disponible | no aplica | no disponible | Hugging Face (repo) |
 | Alternativas genericas de union de instancias | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de modelos comparables directos en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento ni de modelos comparables directos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jimmylomro/hercuvit-stitcher
+- Modelo en Hugging Face: https://huggingface.co/jimmylomro/hercuvit-stitcher
 - Segmentador companero: https://huggingface.co/jimmylomro/hercuvit-v0
 - Codigo y documentacion: https://github.com/jimmylomro/hercUNet/tree/hercuvit
 - Guia de uso: https://github.com/jimmylomro/hercUNet/blob/hercuvit/docs/stitcher.md

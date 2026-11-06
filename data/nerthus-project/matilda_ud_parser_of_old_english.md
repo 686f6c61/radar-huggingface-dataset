@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MATILDA_UD_parser_of_Old_English (nombre interno del pipeline: `en_matilda_oe_ud`) es un pipeline de spaCy desarrollado por Nerthus-Project para el análisis morfosintáctico del inglés antiguo o anglosajón (código ISO `ang`, c. 650–1150 d. C.). Cubre tokenización, etiquetado de categorías gramaticales (UPOS y XPOS), rasgos morfológicos, lematización y análisis de dependencias universales, tareas agrupadas en HuggingFace bajo la etiqueta `token-classification`.
+MATILDA_UD_parser_of_Old_English (nombre interno del pipeline: `en_matilda_oe_ud`) es un pipeline de spaCy desarrollado por Nerthus-Project para el análisis morfosintáctico del inglés antiguo o anglosajón (código ISO `ang`, c. 650–1150 d. C.). Cubre tokenización, etiquetado de categorías gramaticales (UPOS y XPOS), rasgos morfológicos, lematización y análisis de dependencias universales, tareas agrupadas en Hugging Face bajo la etiqueta `token-classification`.
 
 No se trata de un modelo generativo ni de un transformer de gran escala: es un pipeline clásico de spaCy construido sobre vectores floret y un componente `tok2vec`, con componentes entrenados de forma supervisada sobre el treebank MATILDA de dependencias universales de inglés antiguo, complementado con treebanks plateados y datos sintéticos. Su relevancia radica en que mejora de forma notable el estado del arte publicado para esta lengua histórica: según el autor, +5,57 puntos de LAS y +3,42 de UAS frente a la mejor configuración de Martín Arista et al. (2025) en un conjunto de evaluación emparejado.
 
@@ -22,7 +22,7 @@ El modelo se publica bajo licencia CC-BY-4.0 y está pensado para investigadores
 | Tarea principal | token-classification: POS tagging, rasgos morfológicos, lematización y dependency parsing |
 | Libreria | spaCy |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de publicacion | 13 de septiembre de 2026 (alta en HuggingFace); actualizacion el mismo dia |
+| Fecha de publicacion | 13 de septiembre de 2026 (alta en Hugging Face); actualizacion el mismo dia |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ El autor excluye la exactitud de lematización de esta comparación: la cifra de
 
 | Modelo | Enfoque | UAS | LAS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MATILDA UD parser of Old English (este modelo) | Pipeline spaCy + floret, supervisado sobre MATILDA | 86,35 | 79,43 | CC-BY-4.0 | HuggingFace (pesos spaCy) |
+| MATILDA UD parser of Old English (este modelo) | Pipeline spaCy + floret, supervisado sobre MATILDA | 86,35 | 79,43 | CC-BY-4.0 | Hugging Face (pesos spaCy) |
 | Martín Arista et al. (2025), BDCC | Mejor configuración publicada para inglés antiguo UD | 83,24 | 74,23 | no disponible | publicación científica |
 | Brigada Villa y Giarda (2023), enfoque multilingüe (ang + isl) | Modelo multilingüe con transferencia entre lenguas | 68,44 | 58,70 | no disponible | publicación científica |
 | Stanza / UDPipe para inglés antiguo | Modelos genéricos de dependencias | no disponible | no disponible | no disponible | no disponible |
@@ -119,7 +119,7 @@ Los datos de la comparación proceden de la model card del autor. Las cifras de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nerthus-Project/MATILDA_UD_parser_of_Old_English
+- Modelo en Hugging Face: https://huggingface.co/Nerthus-Project/MATILDA_UD_parser_of_Old_English
 - Referencia citada en la model card: Martín Arista et al. (2025), configuración de referencia para dependencias universales en inglés antiguo (publicación BDCC; no se proporciona URL en la información disponible).
 - Referencia citada en la model card: Brigada Villa y Giarda (2023), resultado multilingüe inglés antiguo–islandés (no se proporciona URL en la información disponible).
 - Treebank MATILDA de dependencias universales para inglés antiguo y ParCorOEv3: mencionados como fuentes de datos, sin URL en la información disponible.

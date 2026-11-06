@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ddiazethan/beit-finetuned` es un repositorio de HuggingFace publicado por el usuario `ddiazethan` que contiene una implementación propia de una arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas multitarea. A pesar del nombre del repositorio, el propio autor indica explícitamente en la model card que **no se trata de un modelo entrenado**: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks publicados.
+`ddiazethan/beit-finetuned` es un repositorio de Hugging Face publicado por el usuario `ddiazethan` que contiene una implementación propia de una arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a tareas multitarea. A pesar del nombre del repositorio, el propio autor indica explícitamente en la model card que **no se trata de un modelo entrenado**: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), no un checkpoint con benchmarks publicados.
 
 El dato más relevante es su tamaño: el fichero de pesos contiene únicamente **33.088 parámetros**, lo que lo sitúa varios órdenes de magnitud por debajo de cualquier variante real de BEiT (la variante *large* original ronda los 300 millones de parámetros). La configuración declara escala `large`, atención *grouped query*, fusión mediante MLP con concatenación, activación Mish y normalización RMSNorm, pero estas etiquetas describen los ajustes de arquitectura generados en `config.json`, no un modelo con capacidad funcional demostrada.
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, **no se ha completado ninguno**. La model card es ex
 - Pruebas de humo de *pipeline* de carga de pesos: usar `model.safetensors` para verificar que un *script* de carga en PyTorch o en un *framework* propio funciona de extremo a extremo antes de invertir en un entrenamiento real.
 - Punto de partida para un experimento de investigación: reutilizar la receta LAMB con *schedule* exponencial y sustituir los datos por un conjunto propio de la tarea objetivo.
 - Comparación de recetas de inicialización: emplear el checkpoint como inicialización de referencia frente a otras inicializaciones aleatorias bajo la misma exposición de datos, presupuesto de ajuste y semillas.
-- Docencia y formación: mostrar la estructura de un repositorio de modelo en HuggingFace (`config.json`, `training_args.json`, `model.safetensors`, `pipeline.py`) y discutir la diferencia entre un checkpoint de inicialización y un modelo entrenado.
+- Docencia y formación: mostrar la estructura de un repositorio de modelo en Hugging Face (`config.json`, `training_args.json`, `model.safetensors`, `pipeline.py`) y discutir la diferencia entre un checkpoint de inicialización y un modelo entrenado.
 - Auditoría de reproducibilidad: replicar el entorno y las versiones declaradas para evaluar si la configuración es reproducible antes de escalarla a un entrenamiento completo.
 
 ## Benchmarks y rendimiento
@@ -59,14 +59,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada para inferencia: prácticamente despreciable. Con 33.088 parámetros en FP32, el modelo ocupa del orden de decenas de kilobytes, muy por debajo de 1 GB.
 - GPU recomendadas: ninguna en concreto; el modelo cabe con holgura en cualquier GPU, incluida una integrada, e incluso puede ejecutarse en CPU sin problema.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual y en la mayoría de generaciones anteriores.
-- Opciones de despliegue: `pipeline.py` incluido en el repositorio. Los cargadores automáticos genéricos de HuggingFace (`AutoModel`, `AutoModelForImageClassification`, etc.) **no funcionarán** sin un adaptador explícito, tal como advierte el autor. vLLM, llama.cpp, Ollama o TGI no son aplicables a este artefacto.
+- Opciones de despliegue: `pipeline.py` incluido en el repositorio. Los cargadores automáticos genéricos de Hugging Face (`AutoModel`, `AutoModelForImageClassification`, etc.) **no funcionarán** sin un adaptador explícito, tal como advierte el autor. vLLM, llama.cpp, Ollama o TGI no son aplicables a este artefacto.
 - Latencia y throughput estimados: no disponibles; el repositorio no documenta mediciones y el checkpoint no está entrenado, por lo que cualquier cifra carecería de sentido.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ddiazethan/beit-finetuned` | 33.088 | no disponible | sin benchmarks (checkpoint de inicialización) | MIT | HuggingFace |
+| `ddiazethan/beit-finetuned` | 33.088 | no disponible | sin benchmarks (checkpoint de inicialización) | MIT | Hugging Face |
 | BEiT original de Microsoft | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otras alternativas de la misma categoría (por ejemplo, ViT o DeiT) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,5 +85,5 @@ La comparación directa no es significativa: este repositorio no es un modelo en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ddiazethan/beit-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/ddiazethan/beit-finetuned
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales relevantes en la busqueda web proporcionada.

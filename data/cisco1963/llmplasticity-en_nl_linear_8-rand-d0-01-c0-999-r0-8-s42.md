@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.01-c0.999-r0.8-s42` es un checkpoint de 122.706.432 parámetros (unos 122,7 millones, aproximadamente 0,12 B) publicado por el usuario Cisco1963 (Hongao) en HuggingFace. La etiqueta de arquitectura declarada es `gpt2`, por lo que se trata de un transformer decoder-only de la familia GPT-2, no de una arquitectura MoE ni híbrida. El repositorio no incluye model card, no declara licencia, idiomas ni pipeline de inferencia, y acumula 6 descargas y 0 likes.
+El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.01-c0.999-r0.8-s42` es un checkpoint de 122.706.432 parámetros (unos 122,7 millones, aproximadamente 0,12 B) publicado por el usuario Cisco1963 (Hongao) en Hugging Face. La etiqueta de arquitectura declarada es `gpt2`, por lo que se trata de un transformer decoder-only de la familia GPT-2, no de una arquitectura MoE ni híbrida. El repositorio no incluye model card, no declara licencia, idiomas ni pipeline de inferencia, y acumula 6 descargas y 0 likes.
 
 El nombre del repositorio sigue una convencion de nomenclatura experimental muy marcada: el prefijo `llmplasticity` sugiere una linea de investigacion sobre plasticidad en el aprendizaje (capacidad de un modelo de seguir aprendiendo sin degradar lo adquirido), y el resto de sufijos (`en_nl`, `linear_8`, `rand`, `d0.01`, `c0.999`, `r0.8`, `s42`) apunta a un barrido de hiperparametros con una configuracion concreta (mezcla o pares de idiomas ingles-neerlandes, programacion lineal con 8 pasos, inicializacion aleatoria, tasa de decaimiento 0,01, valor de decaimiento 0,999, ratio 0,8 y semilla 42). Esta interpretacion es una hipotesis derivada del nombre y no esta confirmada por documentacion del autor.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU con 2 GB o mas de memoria sirve, incluidas GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060 y superiores; tambien A100, H100 o L40S, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU dedicada de los ultimos ocho anos y tambien en GPU integradas con memoria compartida suficiente.
 - Ejecucion en CPU: viable, con latencias utilizables para generacion de texto corto (orden de decenas de milisegundos a pocos segundos por respuesta segun hardware y longitud).
-- Opciones de despliegue: la libreria `transformers` de HuggingFace es la via directa. Al ser una arquitectura GPT-2, tambien es compatible con vLLM y con Text Generation Inference (TGI). La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible, pero no hay conversiones publicadas en el repositorio.
+- Opciones de despliegue: la libreria `transformers` de Hugging Face es la via directa. Al ser una arquitectura GPT-2, tambien es compatible con vLLM y con Text Generation Inference (TGI). La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible, pero no hay conversiones publicadas en el repositorio.
 - Latencia y throughput: no disponibles; no se han publicado mediciones. En terminos orientativos, un modelo de 122 M de parametros en una GPU moderna permite un throughput muy alto, pero no hay cifras verificadas para este checkpoint concreto.
 
 ## Comparativa con modelos similares
@@ -94,8 +94,8 @@ La comparacion con estos tres modelos es la mas adecuada por tamano y arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.01-c0.999-r0.8-s42
-- Perfil del autor en HuggingFace: https://huggingface.co/Cisco1963
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.01-c0.999-r0.8-s42
+- Perfil del autor en Hugging Face: https://huggingface.co/Cisco1963
 - Listado de modelos del autor: https://huggingface.co/Cisco1963/models
 - Repositorio hermano (nl_en, instant, d0.1, c0.99, r0.125, s42): https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-d0.1-c0.99-r0.125-s42
 - Repositorio hermano (nl_en, instant, d0.01, c0.99, r0.8, s42): https://huggingface.co/Cisco1963/llmplasticity-nl_en_instant_8-d0.01-c0.99-r0.8-s42

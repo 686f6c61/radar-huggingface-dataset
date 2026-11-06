@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀.₅ κ1 stopped diagnostic26 (este) | no disponible | no disponible | sin evaluacion (no reportado) | apache-2.0 | publico en HuggingFace |
+| π₀.₅ κ1 stopped diagnostic26 (este) | no disponible | no disponible | sin evaluacion (no reportado) | apache-2.0 | publico en Hugging Face |
 | π₀.₅ base (openpi) | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | repositorio openpi (no verificado aqui) |
-| Checkpoint legacy `source-current` | no disponible | no disponible | no disponible | no disponible | sin ID publico verificado en HuggingFace, segun el autor |
+| Checkpoint legacy `source-current` | no disponible | no disponible | no disponible | no disponible | sin ID publico verificado en Hugging Face, segun el autor |
 
 No se dispone de datos cuantitativos de modelos comparables en la información proporcionada; la comparación anterior es únicamente cualitativa y estructural.
 
@@ -80,11 +80,11 @@ No se dispone de datos cuantitativos de modelos comparables en la información p
 - No se documentan idiomas soportados, sesgos conocidos ni riesgo de alucinación; al ser un modelo robótico de dinámica inversa, estas categorías de evaluación no se reportan.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la ausencia de evaluación y de garantías de rendimiento hace desaconsejable su uso en producción.
 - Dependencia de entorno: para cualquier uso posterior en LIBERO se debe mantener MuJoCo 3.2.3.
-- El checkpoint legacy `source-current` no tiene ID público verificado en HuggingFace; todos los pesos de inferencia de este artefacto sí están incluidos aquí.
+- El checkpoint legacy `source-current` no tiene ID público verificado en Hugging Face; todos los pesos de inferencia de este artefacto sí están incluidos aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-view-large-stopped-diagnostic26-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-view-large-stopped-diagnostic26-20261013
 - Conjunto de datos objetivo: Donghyun1228/libero-dense-contact-sweep-d2-20261002 (revisión `9f8f600ce0e8f5df51c0e847c65a1e09f29d8494`)
 - Snapshot de entrenamiento: `f8681e6849eb19dda944bd6daa181962f5b902e7`
 - Commit de inferencia para la configuración de política: `0f6471d99dfc81fabe7c3ab65c141d7640b9ff08`

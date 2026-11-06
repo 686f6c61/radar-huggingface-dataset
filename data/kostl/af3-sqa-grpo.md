@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kostl/af3-sqa-grpo
+- Repositorio Hugging Face: https://huggingface.co/kostl/af3-sqa-grpo
 - Repositorio del proyecto (GitHub): https://github.com/KostenokLisa/calibration-reasoning-framework
 - Paper (arXiv): https://arxiv.org/pdf/2603.10175v1
 - Dataset QualiSpeech: https://huggingface.co/datasets/tsinghua-ee/QualiSpeech

@@ -77,7 +77,7 @@ No hay datos de benchmarks disponibles para comparar el rendimiento. La tabla se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/just1moremodel/Qwen3.8-27B-TURBO-Fable-MXFP4-awq
+- Repositorio en Hugging Face: https://huggingface.co/just1moremodel/Qwen3.8-27B-TURBO-Fable-MXFP4-awq
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otro cuantizado del mismo autor: https://huggingface.co/just1moremodel/Qwen3.8-27B-Uncensored-MXFP4-awq

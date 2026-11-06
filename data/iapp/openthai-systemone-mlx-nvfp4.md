@@ -123,7 +123,7 @@ No se dispone de datos de otros modelos comparables de decisión estructurada en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/iapp/OpenThai-SystemOne-MLX-nvfp4
 - Modelo base: https://huggingface.co/iapp/OpenThai-SystemOne
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm
 - No se han encontrado en la búsqueda web enlaces adicionales relevantes sobre el modelo, su paper o su repositorio; los resultados devueltos corresponden a la International Association of Privacy Professionals y no guardan relación con este modelo.

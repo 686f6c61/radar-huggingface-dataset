@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye datos verificables de mod
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF Q4_0): https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q4_0-GGUF
+- Repositorio Hugging Face (GGUF Q4_0): https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-Q4_0-GGUF
 - Modelo base (referenciado en la model card): https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored
 - Espacio de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

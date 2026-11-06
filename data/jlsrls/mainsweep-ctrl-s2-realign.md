@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mainsweep-ctrl-s2-realign es un ajuste fino (fine-tuning) supervisado del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en HuggingFace. Se trata de un modelo de lenguaje de tamano compacto (basado en la familia Llama 3.2 de Meta, con 1.000 millones de parametros en su version base) reentrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face y el framework Unsloth, orientado a optimizar el entrenamiento en hardware modesto.
+Mainsweep-ctrl-s2-realign es un ajuste fino (fine-tuning) supervisado del modelo unsloth/Llama-3.2-1B-Instruct, publicado por el usuario jlsrls en Hugging Face. Se trata de un modelo de lenguaje de tamano compacto (basado en la familia Llama 3.2 de Meta, con 1.000 millones de parametros en su version base) reentrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face y el framework Unsloth, orientado a optimizar el entrenamiento en hardware modesto.
 
 El nombre del repositorio y el run de Weights & Biases asociado (proyecto "clarifying-em" vinculado a Portland State University) sugieren que el modelo forma parte de un experimento de investigacion, posiblemente relacionado con clarificacion de intenciones o realineamiento de respuestas, aunque la model card no documenta el dataset ni el objetivo de entrenamiento con detalle. No se han publicado benchmarks, ejemplos de evaluacion ni descripciones de capacidades especificas, por lo que su utilidad debe validarse caso por caso.
 
@@ -81,7 +81,7 @@ La principal diferencia frente a las alternativas es la falta de documentacion, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep-ctrl-s2-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep-ctrl-s2-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/cqucyo8x
 - TRL (libreria de entrenamiento): https://github.com/huggingface/trl

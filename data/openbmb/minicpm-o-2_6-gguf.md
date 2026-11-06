@@ -77,7 +77,7 @@ Nota: los datos de MiniCPM-V 2.6 y Qwen2-VL-7B provienen de conocimiento general
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf
+- Repositorio Hugging Face: https://huggingface.co/openbmb/MiniCPM-o-2_6-gguf
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-o-2_6
 - GitHub: https://github.com/OpenBMB/MiniCPM-o
 - Demo online: https://minicpm-omni-webdemo-us.modelbest.cn

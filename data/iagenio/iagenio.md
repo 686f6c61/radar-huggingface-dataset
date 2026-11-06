@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IAGenio/IAGenio es un repositorio de modelos publicado en HuggingFace por el usuario u organizacion IAGenio. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva, ni pipeline declarado, ni licencia especificada, ni lista de idiomas soportados. La unica etiqueta tecnica presente es `onnx`, lo que indica que los pesos se distribuyen total o parcialmente en formato ONNX, y el repositorio ocupa 193,9 GB, un volumen propio de modelos de gran tamano o de repositorios que agrupan multiples variantes y cuantizaciones.
+IAGenio/IAGenio es un repositorio de modelos publicado en Hugging Face por el usuario u organizacion IAGenio. En el momento de redactar esta ficha, el repositorio no incluye model card descriptiva, ni pipeline declarado, ni licencia especificada, ni lista de idiomas soportados. La unica etiqueta tecnica presente es `onnx`, lo que indica que los pesos se distribuyen total o parcialmente en formato ONNX, y el repositorio ocupa 193,9 GB, un volumen propio de modelos de gran tamano o de repositorios que agrupan multiples variantes y cuantizaciones.
 
 El dato de adopcion es bajo: cero descargas registradas y dos "likes" desde su creacion el 27 de octubre de 2025, con ultima actualizacion el 7 de octubre de 2026. Esto sugiere un proyecto en fase muy temprana, posiblemente experimental o de publicacion interna, sin validacion por parte de la comunidad.
 
@@ -86,7 +86,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el nu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IAGenio/IAGenio
+- Repositorio en Hugging Face: https://huggingface.co/IAGenio/IAGenio
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

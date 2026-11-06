@@ -67,7 +67,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Spark-X2.6-1.7B | 1.707.657.216 (~1,71 B) | Hasta 1.048.576 tokens en la configuracion de SGLang | Apache 2.0 | HuggingFace, transformers, SGLang, llama.cpp | Base de la comparacion; three-level thinking budget |
+| Spark-X2.6-1.7B | 1.707.657.216 (~1,71 B) | Hasta 1.048.576 tokens en la configuracion de SGLang | Apache 2.0 | Hugging Face, transformers, SGLang, llama.cpp | Base de la comparacion; three-level thinking budget |
 | Spark-X2.6-4B | No disponible | No disponible | No disponible | Mismo autor, misma serie | Predecesor de la serie X2.6, mayor tamano |
 | Spark-X2.5-1.7B | No disponible | No disponible | No disponible | Mismo autor | Arquitectura identica; X2.6 mejora via post-entrenamiento |
 | Qwen3.5-2B | No disponible en la informacion | No disponible | No disponible | Citado como baseline por el autor | Usado como referencia de throughput y rendimiento |
@@ -90,7 +90,7 @@ Los datos de los modelos alternativos no aparecen en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XHToken/Spark-X2.6-1.7B
+- Modelo en Hugging Face: https://huggingface.co/XHToken/Spark-X2.6-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-1.7B-Base
 - Fork de llama.cpp del autor: https://github.com/XHToken/llama.cpp
 - Slack: https://join.slack.com/t/tokenspark/shared_invite/zt-432qf8l2f-5~dLyXv8uETr0P0UuC07nw

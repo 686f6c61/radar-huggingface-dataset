@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dhanashyam/Imageclassification` es un repositorio publicado en HuggingFace por el usuario dhanashyam bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card (que se limita a declarar la licencia), se trata presumiblemente de un experimento de clasificacion de imagenes, aunque no hay documentacion que lo confirme ni que detalle la arquitectura, el dataset de entrenamiento o el procedimiento seguido.
+`dhanashyam/Imageclassification` es un repositorio publicado en Hugging Face por el usuario dhanashyam bajo licencia MIT. Por su identificador y por la ausencia de cualquier contenido en la model card (que se limita a declarar la licencia), se trata presumiblemente de un experimento de clasificacion de imagenes, aunque no hay documentacion que lo confirme ni que detalle la arquitectura, el dataset de entrenamiento o el procedimiento seguido.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 28 de octubre de 2026 con apenas dos minutos de diferencia. Estos indicadores sugieren un artefacto de prueba o un trabajo en curso mas que un modelo destinado a uso publico o a produccion.
 
@@ -67,10 +67,10 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura y el
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dhanashyam/Imageclassification | no disponible | no disponible | MIT | HuggingFace (sin documentacion) |
-| ResNet-50 (torchvision) | ~25.6 M | imagen 224x224 | BSD-3-Clause | torchvision, HuggingFace |
-| ViT-Base/16 | ~86 M | imagen 224x224 | Apache 2.0 | HuggingFace, timm |
-| ConvNeXt-Tiny | ~28 M | imagen 224x224 | MIT | HuggingFace, timm |
+| dhanashyam/Imageclassification | no disponible | no disponible | MIT | Hugging Face (sin documentacion) |
+| ResNet-50 (torchvision) | ~25.6 M | imagen 224x224 | BSD-3-Clause | torchvision, Hugging Face |
+| ViT-Base/16 | ~86 M | imagen 224x224 | Apache 2.0 | Hugging Face, timm |
+| ConvNeXt-Tiny | ~28 M | imagen 224x224 | MIT | Hugging Face, timm |
 
 La comparacion de rendimiento con estos modelos no puede realizarse con los datos disponibles.
 
@@ -86,5 +86,5 @@ La comparacion de rendimiento con estos modelos no puede realizarse con los dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dhanashyam/Imageclassification
+- Repositorio en Hugging Face: https://huggingface.co/dhanashyam/Imageclassification
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

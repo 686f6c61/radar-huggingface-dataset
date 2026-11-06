@@ -6,7 +6,7 @@
 
 Con 3.754.622.976 parametros (3,75 mil millones) y un repositorio de 7,5 GB, se trata de un modelo denso de tamano pequeno, coherente con pesos en bf16/fp16. Hereda del base Qwen2.5-VL la arquitectura transformer multimodal con encoder de vision tipo ViT y soporte de resolucion dinamica, lo que en teoria permite procesar imagenes medicas de alta resolucion sin reescalado agresivo. Su relevancia practica esta en que un VLM medico de 3,75B puede desplegarse en una unica GPU de consumo o incluso en dispositivos edge, algo inviable con alternativas de 70B o superiores.
 
-La ficha de HuggingFace no documenta licencia, idiomas, composicion del dataset de ajuste ni procedimiento de entrenamiento. El repositorio tiene 8 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion del 15 de octubre de 2026, lo que indica que se trata de una publicacion muy reciente y practicamente sin validacion por parte de la comunidad. Cualquier uso en produccion deberia ir precedido de una evaluacion propia.
+La ficha de Hugging Face no documenta licencia, idiomas, composicion del dataset de ajuste ni procedimiento de entrenamiento. El repositorio tiene 8 descargas y 0 likes en el momento de la consulta, con fecha de creacion y actualizacion del 15 de octubre de 2026, lo que indica que se trata de una publicacion muy reciente y practicamente sin validacion por parte de la comunidad. Cualquier uso en produccion deberia ir precedido de una evaluacion propia.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La comparacion directa con alternativas de dominio medico no puede establecerse 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/micdun/radimagenet_align-instruct_qwen2_5-3b-vl
+- Modelo en Hugging Face: https://huggingface.co/micdun/radimagenet_align-instruct_qwen2_5-3b-vl
 - Modelo base Qwen2.5-VL-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Qwen2.5-VL-3B-Instruct en ModelScope: https://modelscope.ai/models/Qwen/Qwen2.5-VL-3B-Instruct
 - Guia de despliegue de Qwen2.5-VL 3B en dispositivos de bajos recursos: https://aiindigo.com/tutorials/getting-started-with-qwen2-5-vl-3b-edge-ready-multimodal-ai

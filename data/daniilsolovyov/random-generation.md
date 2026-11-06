@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daniilsolovyov/random-generation` es un repositorio de HuggingFace publicado por el usuario daniilsolovyov que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación, en una configuración denominada "nano". No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: el propio autor indica explícitamente en la model card que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un modelo entrenado. El repositorio prioriza código transparente y pruebas repetibles por encima de afirmaciones de rendimiento.
+`daniilsolovyov/random-generation` es un repositorio de Hugging Face publicado por el usuario daniilsolovyov que contiene una implementación funcional de la arquitectura Flamingo orientada a tareas de generación, en una configuración denominada "nano". No se trata de un modelo entrenado ni de un checkpoint con resultados de benchmarks: el propio autor indica explícitamente en la model card que el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un modelo entrenado. El repositorio prioriza código transparente y pruebas repetibles por encima de afirmaciones de rendimiento.
 
 El modelo cuenta con 33.088 parámetros totales según los datos reales de los tensores en safetensors, lo que lo sitúa en un rango extremadamente pequeño (órdenes de magnitud por debajo de cualquier modelo de producción). La arquitectura declarada combina atención dilatada (dilated attention), fusión mediante descomposición de Tucker, activación mish y normalización groupnorm. No se especifican la longitud de contexto, los idiomas soportados ni los tipos de cuantización en la información disponible.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| daniilsolovyov/random-generation | 33.088 | no disponible | MIT | HuggingFace (0 descargas, 0 likes) | Checkpoint de inicializacion, sin entrenar |
-| OpenFlamingo | orden de miles de millones (segun variante) | no disponible aqui | MIT (tipicamente) | HuggingFace / repositorio | Implementacion abierta de referencia de Flamingo, entrenada |
-| IDEFICS | orden de miles de millones (segun variante) | no disponible aqui | licencia especifica del proyecto | HuggingFace | Modelo multimodal abierto inspirado en Flamingo |
+| daniilsolovyov/random-generation | 33.088 | no disponible | MIT | Hugging Face (0 descargas, 0 likes) | Checkpoint de inicializacion, sin entrenar |
+| OpenFlamingo | orden de miles de millones (segun variante) | no disponible aqui | MIT (tipicamente) | Hugging Face / repositorio | Implementacion abierta de referencia de Flamingo, entrenada |
+| IDEFICS | orden de miles de millones (segun variante) | no disponible aqui | licencia especifica del proyecto | Hugging Face | Modelo multimodal abierto inspirado en Flamingo |
 
 La comparación es asimétrica: OpenFlamingo e IDEFICS son implementaciones entrenadas y de gran escala, mientras que este repositorio es una implementación nano sin entrenamiento. No existen alternativas directamente comparables en el mismo rango de 33.088 parámetros dentro de la familia Flamingo.
 
@@ -81,6 +81,6 @@ La comparación es asimétrica: OpenFlamingo e IDEFICS son implementaciones entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daniilsolovyov/random-generation
+- Modelo en Hugging Face: https://huggingface.co/daniilsolovyov/random-generation
 - Ficheros del repositorio: `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

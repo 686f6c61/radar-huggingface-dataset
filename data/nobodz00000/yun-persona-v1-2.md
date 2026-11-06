@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yun-persona-v1.2 es un ajuste fino (fine-tuning) del modelo Gemma 4 E4B instructivo, publicado por el usuario nobodZ00000 en HuggingFace. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`), lo que indica que el entrenamiento se realizó mediante las herramientas de Unsloth y la librería TRL de HuggingFace, optimizadas para reducir el coste de memoria y acelerar el proceso de ajuste. El nombre "persona" sugiere que el objetivo del ajuste es dotar al modelo de un estilo conversacional o una personalidad concreta, aunque la model card no documenta el dataset ni la metodología empleada.
+yun-persona-v1.2 es un ajuste fino (fine-tuning) del modelo Gemma 4 E4B instructivo, publicado por el usuario nobodZ00000 en Hugging Face. El modelo parte de la versión cuantizada en 4 bits de Unsloth (`unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`), lo que indica que el entrenamiento se realizó mediante las herramientas de Unsloth y la librería TRL de Hugging Face, optimizadas para reducir el coste de memoria y acelerar el proceso de ajuste. El nombre "persona" sugiere que el objetivo del ajuste es dotar al modelo de un estilo conversacional o una personalidad concreta, aunque la model card no documenta el dataset ni la metodología empleada.
 
 La información publicada es extremadamente escasa: la model card se limita a indicar el modelo base, la licencia Apache 2.0 y que el entrenamiento fue "2x más rápido" con Unsloth. No se especifican parámetros totales, longitud de contexto, composición del dataset de ajuste ni resultados de evaluación. El repositorio ocupa 0,1 GB, un tamaño coherente con un adaptador o con pesos cuantizados de un modelo de tamaño reducido, pero insuficiente para deducir la arquitectura exacta.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yun-persona-v1.2 | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Gemma 4 E4B it (base) | no disponible | no disponible | Gemma license (según modelo original) | HuggingFace |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit | no disponible | no disponible | según modelo original | HuggingFace |
+| yun-persona-v1.2 | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Gemma 4 E4B it (base) | no disponible | no disponible | Gemma license (según modelo original) | Hugging Face |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit | no disponible | no disponible | según modelo original | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa fiable con alternativas de la misma categoría.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nobodZ00000/yun-persona-v1.2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/nobodZ00000/yun-persona-v1.2
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl

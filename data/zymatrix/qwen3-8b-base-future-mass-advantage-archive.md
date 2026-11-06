@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zymatrix/Qwen3-8B-Base-future-mass-advantage-archive | 8 mil millones | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Archivo de checkpoints intermedios sin evaluación |
-| Qwen/Qwen3-8B-Base | 8 mil millones | no disponible en la información proporcionada | Apache 2.0 | HuggingFace, modelo base oficial | Modelo base original, con model card técnica completa |
-| Qwen/Qwen3-8B | 8 mil millones | no disponible en la información proporcionada | Apache 2.0 | HuggingFace, modelo instruct oficial | Versión ajustada para instrucciones del mismo tamaño |
+| zymatrix/Qwen3-8B-Base-future-mass-advantage-archive | 8 mil millones | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Archivo de checkpoints intermedios sin evaluación |
+| Qwen/Qwen3-8B-Base | 8 mil millones | no disponible en la información proporcionada | Apache 2.0 | Hugging Face, modelo base oficial | Modelo base original, con model card técnica completa |
+| Qwen/Qwen3-8B | 8 mil millones | no disponible en la información proporcionada | Apache 2.0 | Hugging Face, modelo instruct oficial | Versión ajustada para instrucciones del mismo tamaño |
 
 La comparación principal es con el propio modelo base Qwen3-8B-Base, del que este repositorio deriva. Frente a él, la diferencia fundamental es que el modelo base cuenta con documentación técnica oficial y evaluación publicada, mientras que este archivo carece de ambas. No se dispone de información sobre otros modelos comparables de la misma categoría en la información proporcionada.
 
@@ -82,6 +82,6 @@ La comparación principal es con el propio modelo base Qwen3-8B-Base, del que es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zymatrix/Qwen3-8B-Base-future-mass-advantage-archive
+- Repositorio Hugging Face: https://huggingface.co/zymatrix/Qwen3-8B-Base-future-mass-advantage-archive
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

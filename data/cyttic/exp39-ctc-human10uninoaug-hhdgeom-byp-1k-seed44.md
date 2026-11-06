@@ -1,9 +1,9 @@
 # cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed44
 
 ## Resumen
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, referencias a `human10`, `uninoaug`, `hhdgeom` y `seed44`) y por el tamaño del repositorio (0,3 GB), se trata con alta probabilidad de un modelo acústico para reconocimiento automático de voz (ASR) basado en Connectionist Temporal Classification, entrenado sobre un corpus de habla concreta y con una semilla fija para reproducibilidad. No obstante, la model card no confirma ninguno de estos extremos.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador (prefijo `ctc`, referencias a `human10`, `uninoaug`, `hhdgeom` y `seed44`) y por el tamaño del repositorio (0,3 GB), se trata con alta probabilidad de un modelo acústico para reconocimiento automático de voz (ASR) basado en Connectionist Temporal Classification, entrenado sobre un corpus de habla concreta y con una semilla fija para reproducibilidad. No obstante, la model card no confirma ninguno de estos extremos.
 
-La información publicada por el autor es prácticamente inexistente: la model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se especifican arquitectura, datos de entrenamiento, idiomas, métricas de evaluación ni procedimiento de uso. El pipeline declarado tampoco está disponible. Cualquier afirmación sobre capacidades debe tratarse, por tanto, como inferencia a partir del nombre y del tamaño, no como dato verificado.
+La información publicada por el autor es prácticamente inexistente: la model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se especifican arquitectura, datos de entrenamiento, idiomas, métricas de evaluación ni procedimiento de uso. El pipeline declarado tampoco está disponible. Cualquier afirmación sobre capacidades debe tratarse, por tanto, como inferencia a partir del nombre y del tamaño, no como dato verificado.
 
 A pesar de la escasez de documentación, el checkpoint es relevante para desarrolladores que trabajen en ASR experimental y quieran reproducir o auditar experimentos concretos de un grupo de investigación (el prefijo `cyttic` sugiere una institución o laboratorio), así como para quienes necesiten un modelo acústico ligero y de licencia permisiva que pueda integrarse en pipelines de decodificación propios.
 
@@ -64,6 +64,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No debe asumirse que el modelo funcione fuera del dominio para el que fue entrenado; se desconoce cuál es ese dominio.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-byp-1k-seed44
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact#compute

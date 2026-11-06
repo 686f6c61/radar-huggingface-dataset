@@ -84,5 +84,5 @@ No se dispone de datos de benchmarks ni de otros checkpoints comparables documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/auhulu/Qwen3.5-0.8B-Zundamon
+- Modelo en Hugging Face: https://huggingface.co/auhulu/Qwen3.5-0.8B-Zundamon
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

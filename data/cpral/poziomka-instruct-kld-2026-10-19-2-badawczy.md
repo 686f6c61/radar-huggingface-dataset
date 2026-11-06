@@ -2,7 +2,7 @@
 
 ## Resumen
 
-poziomka-instruct-kld-2026-10-19-2-badawczy es un checkpoint de 4.119.797.632 parámetros (aproximadamente 4,12 mil millones) publicado por el usuario cpral en HuggingFace. Se trata del resultado de un experimento de destilación de conocimiento off-policy sobre un modelo previo de su propia serie poziomka-instruct. El autor lo describe explícitamente como un experimento fallido: extrajo logits del modelo Bielik-PL-Minitron-7B-v3.0-Instruct-W8A8-INT8 sobre el 19 % del dataset polaco polskie-sprawy-v8 y los utilizó para un ajuste adicional del checkpoint poziomka-instruct-2026-10-17-dcp (iteración 0005214).
+poziomka-instruct-kld-2026-10-19-2-badawczy es un checkpoint de 4.119.797.632 parámetros (aproximadamente 4,12 mil millones) publicado por el usuario cpral en Hugging Face. Se trata del resultado de un experimento de destilación de conocimiento off-policy sobre un modelo previo de su propia serie poziomka-instruct. El autor lo describe explícitamente como un experimento fallido: extrajo logits del modelo Bielik-PL-Minitron-7B-v3.0-Instruct-W8A8-INT8 sobre el 19 % del dataset polaco polskie-sprawy-v8 y los utilizó para un ajuste adicional del checkpoint poziomka-instruct-2026-10-17-dcp (iteración 0005214).
 
 Según la propia model card, el entrenamiento no mejoró el modelo base y le introdujo un defecto funcional: la emisión del token EOS es irregular, lo que compromete la terminación controlada de las generaciones. Los metadatos declaran la arquitectura bailing_moe con código personalizado (custom_code), aunque no se publican el número de parámetros activos, la longitud de contexto, la licencia ni los idiomas soportados.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de ninguno de los tres modelos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cpral/poziomka-instruct-kld-2026-10-19-2-badawczy
+- Modelo en Hugging Face: https://huggingface.co/cpral/poziomka-instruct-kld-2026-10-19-2-badawczy
 - Modelo profesor (Bielik-PL-Minitron-7B-v3.0-Instruct-W8A8-INT8): https://huggingface.co/cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-W8A8-INT8
 - Dataset polskie-sprawy-v8: https://huggingface.co/datasets/cpral/polskie-sprawy-v8
 - Checkpoint base (poziomka-instruct-2026-10-17-dcp, iter_0005214): https://huggingface.co/cpral/poziomka-instruct-2026-10-17-dcp/tree/main/iter_0005214

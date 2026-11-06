@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gridly heating-load disaggregation CNN es un modelo convolucional publicado por el usuario itorshin en HuggingFace, orientado a la desagregación de carga eléctrica de calefacción. Su tarea es tomar como entrada un día completo de carga eléctrica total y temperatura exterior, y producir como salida un perfil de calefacción de 96 pasos, es decir, 24 horas a resolución de 15 minutos. Tanto las entradas de carga como los valores objetivo se expresan en kWh por intervalo de 15 minutos, lo que lo sitúa en el ámbito del análisis de contadores inteligentes y del NILM (Non-Intrusive Load Monitoring) aplicado específicamente al consumo térmico.
+Gridly heating-load disaggregation CNN es un modelo convolucional publicado por el usuario itorshin en Hugging Face, orientado a la desagregación de carga eléctrica de calefacción. Su tarea es tomar como entrada un día completo de carga eléctrica total y temperatura exterior, y producir como salida un perfil de calefacción de 96 pasos, es decir, 24 horas a resolución de 15 minutos. Tanto las entradas de carga como los valores objetivo se expresan en kWh por intervalo de 15 minutos, lo que lo sitúa en el ámbito del análisis de contadores inteligentes y del NILM (Non-Intrusive Load Monitoring) aplicado específicamente al consumo térmico.
 
 El checkpoint está pensado para el backend de Gridly y, según la model card, incluye no solo los pesos, sino también la configuración de la arquitectura, las estadísticas de normalización, la escala del objetivo y los nombres de los canales de entrada y salida. Ese empaquetado autocontenido es relevante porque evita errores de preprocesado al desplegar el modelo: las transformaciones aplicadas durante el entrenamiento viajan junto a los pesos.
 
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye referencias a modelos co
 
 | Modelo | Parámetros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| itorshin/simple-heat-disaggr-cnn | no disponible | entrada de un día (96 intervalos de 15 min) | no disponible | HuggingFace, 0 descargas |
+| itorshin/simple-heat-disaggr-cnn | no disponible | entrada de un día (96 intervalos de 15 min) | no disponible | Hugging Face, 0 descargas |
 | Alternativas de NILM | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. La información proporcionada no incluye referencias a modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itorshin/simple-heat-disaggr-cnn
+- Hugging Face: https://huggingface.co/itorshin/simple-heat-disaggr-cnn
 - Paper: no disponible
 - Blog o documentación técnica: no disponible
 - Repositorio de código: no disponible

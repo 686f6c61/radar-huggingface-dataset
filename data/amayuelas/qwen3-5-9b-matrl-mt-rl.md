@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-MatRL-MT-RL es un modelo de 9.409.813.744 parámetros publicado por el usuario amayuelas en HuggingFace, obtenido aplicando un entrenamiento de refuerzo multi-turno (RL) sobre el checkpoint `amayuelas/Qwen3.5-9B-MatRL-MT-SFT`. Su dominio de especialización es el diseño inverso de estructuras cristalinas: el modelo actúa como agente que propone estructuras candidatas, las evalúa contra un potencial interatómico basado en aprendizaje automático (MLIP), las refina de forma iterativa y finalmente las entrega. Los objetivos de recompensa cubren validez estructural, novedad, estabilidad termodinámica relajada y propiedades físicas concretas (band gap y módulo de volumen).
+Qwen3.5-9B-MatRL-MT-RL es un modelo de 9.409.813.744 parámetros publicado por el usuario amayuelas en Hugging Face, obtenido aplicando un entrenamiento de refuerzo multi-turno (RL) sobre el checkpoint `amayuelas/Qwen3.5-9B-MatRL-MT-SFT`. Su dominio de especialización es el diseño inverso de estructuras cristalinas: el modelo actúa como agente que propone estructuras candidatas, las evalúa contra un potencial interatómico basado en aprendizaje automático (MLIP), las refina de forma iterativa y finalmente las entrega. Los objetivos de recompensa cubren validez estructural, novedad, estabilidad termodinámica relajada y propiedades físicas concretas (band gap y módulo de volumen).
 
 Se trata de la versión a escala 9B de la familia MatRL, hermana de `amayuelas/Qwen3.5-4B-MatRL-MT-RL`, con las mismas definiciones de tarea, recompensa y forma de lote. El modelo pertenece a la clase Qwen3.5 y las etiquetas del repositorio indican que es capaz de procesar imagen y texto (`image-text-to-text`), además de soportar uso de herramientas y comportamiento agéntico. Emplea un canal de razonamiento nativo que se conserva a lo largo de las llamadas a herramientas, por lo que no debe desactivarse el modo de pensamiento durante la inferencia.
 
@@ -24,7 +24,7 @@ Su relevancia actual reside en que demuestra un flujo completo de RL multi-turno
 | Dataset de entrenamiento | amayuelas/matrl-sft-mt |
 | Pipeline declarado | text-generation |
 | Tamano del repositorio | 18,8 GB |
-| Fecha de creacion | 10 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 10 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -106,7 +106,7 @@ No se dispone de información sobre otros modelos comparables de terceros (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-RL
+- Modelo en Hugging Face: https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-RL
 - Modelo base (SFT): https://huggingface.co/amayuelas/Qwen3.5-9B-MatRL-MT-SFT
 - Versión de 4B de la misma familia: https://huggingface.co/amayuelas/Qwen3.5-4B-MatRL-MT-RL
 - Dataset de SFT: https://huggingface.co/datasets/amayuelas/matrl-sft-mt

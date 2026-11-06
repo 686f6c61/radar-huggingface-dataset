@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Miltos22/Qwen3.8-20B-Minitron-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Miltos22/Qwen3.8-20B-Minitron-Q2_K-GGUF
 - Modelo base: https://huggingface.co/exnivo/Qwen3.8-20B-Minitron
 - Herramienta de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

@@ -71,8 +71,8 @@ No se han publicado resultados en benchmarks estandar de LLM (MMLU, HumanEval, G
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-toty-v2-link01 | 0,8 B (base) + LoRA | no disponible | Destilacion de politica PPO para robot simulado LINK-01 | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B | 0,8 B | no disponible | LLM generalista (modelo base) | no disponible en la informacion proporcionada | HuggingFace |
+| connectailab-rl-toty-v2-link01 | 0,8 B (base) + LoRA | no disponible | Destilacion de politica PPO para robot simulado LINK-01 | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B | 0,8 B | no disponible | LLM generalista (modelo base) | no disponible en la informacion proporcionada | Hugging Face |
 | Otras politicas PPO de CONNECT AI WORLD | no disponible | no aplica | Politica neuronal directa (brain.json) | no disponible | Repositorio connect-tycoon |
 
 No se dispone de informacion sobre otros adaptadores de decision comparables de la misma categoria en la informacion proporcionada.
@@ -87,11 +87,11 @@ No se dispone de informacion sobre otros adaptadores de decision comparables de 
 - Idioma: declarado solo para coreano; el prompt de sistema esta en ingles y no se documenta soporte para castellano.
 - Conjunto de datos pequeno (275 ejemplos de entrenamiento), lo que limita la cobertura de situaciones.
 - Licencia Apache 2.0 permite uso comercial, pero la ausencia de garantias y el caracter experimental desaconsejan su uso en produccion.
-- Sin descargas ni validacion externa en HuggingFace en el momento de la consulta.
+- Sin descargas ni validacion externa en Hugging Face en el momento de la consulta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-toty-v2-link01
+- Modelo en Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-toty-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

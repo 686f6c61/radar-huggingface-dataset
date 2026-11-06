@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sherpa-ONNX Streaming Zipformer2 ID es un modelo de reconocimiento automatico del habla (ASR) en streaming para indonesio, empaquetado en formato ONNX y pensado para su uso con el runtime sherpa-onnx del proyecto k2-fsa. Lo publica el usuario EmogheneAkpomedaye en HuggingFace y esta entrenado sobre una mezcla de cuatro corpus: YODAS2, Common Voice 17.0, FLEURS y LibriVox Indonesia. Su rasgo diferencial es que opera en modo streaming, es decir, transcribe audio a medida que llega, sin necesidad de disponer de la grabacion completa.
+Sherpa-ONNX Streaming Zipformer2 ID es un modelo de reconocimiento automatico del habla (ASR) en streaming para indonesio, empaquetado en formato ONNX y pensado para su uso con el runtime sherpa-onnx del proyecto k2-fsa. Lo publica el usuario EmogheneAkpomedaye en Hugging Face y esta entrenado sobre una mezcla de cuatro corpus: YODAS2, Common Voice 17.0, FLEURS y LibriVox Indonesia. Su rasgo diferencial es que opera en modo streaming, es decir, transcribe audio a medida que llega, sin necesidad de disponer de la grabacion completa.
 
 La arquitectura es Zipformer2, un encoder de tipo transformer con atencion por chunks y mecanismos de downsampling jerarquico, disenado para inferencia de baja latencia. El repositorio ocupa 0,5 GB, lo que sugiere un modelo compacto orientado a despliegue en dispositivos con recursos limitados. La licencia MIT facilita su integracion en productos comerciales sin restricciones adicionales.
 
@@ -91,7 +91,7 @@ La comparativa con Whisper es cualitativa: Whisper no es un modelo streaming nat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-streaming-zipformer2-id
+- Modelo en Hugging Face: https://huggingface.co/EmogheneAkpomedaye/sherpa-onnx-streaming-zipformer2-id
 - Documentacion de sherpa-onnx: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Dataset YODAS2: https://huggingface.co/datasets/espnet/yodas2
 - Dataset Common Voice 17.0: https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0

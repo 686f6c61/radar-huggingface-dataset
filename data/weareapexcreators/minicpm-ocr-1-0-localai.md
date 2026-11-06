@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM-OCR-1.0-LocalAI es un modelo de OCR publicado en HuggingFace por el usuario weareapexcreators, con licencia Apache 2.0. Se trata de una versión cuantizada en formato GGUF, orientada a su ejecución local en entornos de IA doméstica (LocalAI), lo que permite realizar tareas de reconocimiento óptico de caracteres sin depender de servicios en la nube. El repositorio declara un tamaño de pesos de aproximadamente 752 millones de parámetros, lo que sugiere una variante compacta de la familia MiniCPM adaptada a tareas de OCR.
+MiniCPM-OCR-1.0-LocalAI es un modelo de OCR publicado en Hugging Face por el usuario weareapexcreators, con licencia Apache 2.0. Se trata de una versión cuantizada en formato GGUF, orientada a su ejecución local en entornos de IA doméstica (LocalAI), lo que permite realizar tareas de reconocimiento óptico de caracteres sin depender de servicios en la nube. El repositorio declara un tamaño de pesos de aproximadamente 752 millones de parámetros, lo que sugiere una variante compacta de la familia MiniCPM adaptada a tareas de OCR.
 
 Su relevancia radica en la creciente demanda de modelos ligeros capaces de extraer texto de imágenes de forma privada y sin costes de API. Sin embargo, la model card es prácticamente vacía: no incluye descripción de la arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso, por lo que la información verificable de esta ficha se limita a los metadatos del repositorio y al tamaño de los pesos en safetensors.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con un modelo de ~752 M de parametros en GGUF, la huella esperada es del orden de 0,5-1 GB de RAM/VRAM segun el nivel de cuantizacion (Q4 a F16); no hay cifras oficiales.
 - GPU recomendadas: no disponible; por tamano, deberia funcionar en CPU moderna o en cualquier GPU consumer con al menos 2-4 GB de VRAM (por ejemplo, RTX 3060, RTX 4060).
 - Consumer GPU: si cabe con holgura en practicamente cualquier GPU consumer actual dado el tamano del repo (1,4 GB).
-- Opciones de despliegue: llama.cpp, Ollama, LocalAI y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama, LocalAI y cualquier runtime compatible con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -76,4 +76,4 @@ La comparacion es orientativa: al no estar documentado el modelo base de MiniCPM
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weareapexcreators/MiniCPM-OCR-1.0-LocalAI
+- Hugging Face: https://huggingface.co/weareapexcreators/MiniCPM-OCR-1.0-LocalAI

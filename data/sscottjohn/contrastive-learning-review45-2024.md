@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sscottjohn/contrastive-learning-review45-2024` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje contrastivo (contrastive learning) publicado por el usuario sscottjohn en HuggingFace. La propia model card lo describe como una nota exploratoria que recoge el planteamiento de una comparacion, los posibles factores de confusion (confounders), los requisitos de reproducibilidad y las referencias previstas, antes de que se haya reportado cualquier resultado experimental. No se anuncia ningun checkpoint entrenado, ni codigo de entrenamiento, ni resultados de benchmarks.
+`sscottjohn/contrastive-learning-review45-2024` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre aprendizaje contrastivo (contrastive learning) publicado por el usuario sscottjohn en Hugging Face. La propia model card lo describe como una nota exploratoria que recoge el planteamiento de una comparacion, los posibles factores de confusion (confounders), los requisitos de reproducibilidad y las referencias previstas, antes de que se haya reportado cualquier resultado experimental. No se anuncia ningun checkpoint entrenado, ni codigo de entrenamiento, ni resultados de benchmarks.
 
-El repositorio declara la etiqueta `transformer` y el formato `safetensors`, y el recuento automatico de HuggingFace reporta 33.088 parametros (33 088 si el punto actua como separador de millares). Sin embargo, el tamano del repositorio es de 0,0 GB y la seccion de ficheros de la model card lista unicamente `reading.md` y `README.md`, sin mencionar ningun peso. Es decir, existe una incoherencia entre las etiquetas y el contenido documentado que conviene verificar antes de tratar el repositorio como un modelo desplegable.
+El repositorio declara la etiqueta `transformer` y el formato `safetensors`, y el recuento automatico de Hugging Face reporta 33.088 parametros (33 088 si el punto actua como separador de millares). Sin embargo, el tamano del repositorio es de 0,0 GB y la seccion de ficheros de la model card lista unicamente `reading.md` y `README.md`, sin mencionar ningun peso. Es decir, existe una incoherencia entre las etiquetas y el contenido documentado que conviene verificar antes de tratar el repositorio como un modelo desplegable.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como plantilla de higiene experimental (definicion de ambito, baselines emparejados, requisitos de semillas, hardware y registros crudos) para quien vaya a trabajar en representaciones contrastivas, y como recordatorio de que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados. No es un artefacto apto para inferencia, ajuste fino ni integracion en produccion.
 
@@ -13,7 +13,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como planti
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible. El repositorio declara la etiqueta `transformer`, pero no incluye definicion de arquitectura, codigo de modelado ni configuracion de capas |
-| Parametros totales | 33.088 segun el recuento de safetensors de HuggingFace (33 088 unidades si el punto actua como separador de millares); no se documenta ninguna estructura de parametros asociada |
+| Parametros totales | 33.088 segun el recuento de safetensors de Hugging Face (33 088 unidades si el punto actua como separador de millares); no se documenta ninguna estructura de parametros asociada |
 | Parametros activos | No aplica: no se describe una arquitectura de mezcla de expertos (MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. No se publican pesos GGUF ni versiones cuantizadas |
@@ -44,7 +44,7 @@ Tampoco existe informacion sobre entrenamiento: no se declaran tokens de entrena
 - Plantilla de protocolo experimental: un grupo que vaya a estudiar aprendizaje contrastivo puede reutilizar la estructura de la nota (ambito, confounders, baselines emparejados, preguntas abiertas) como borrador de pre-registro antes de ejecutar experimentos, evitando declarar resultados prematuros.
 - Checklist de reproducibilidad en revision por pares: los apartados de la nota sobre versiones de dataset, comandos, semillas, hardware y registros crudos sirven como lista de comprobacion para revisar si un articulo o un repositorio ajeno es replicable.
 - Material docente en cursos de metodologia de machine learning: el repositorio ilustra de forma explicita la diferencia entre hipotesis y resultado, util para ensenar a redactar y leer model cards y notas tecnicas.
-- Auditoria de artefactos en HuggingFace: sirve como caso de estudio de incoherencias entre etiquetas (`transformer`, `safetensors`), recuento de parametros, tamano de repositorio y contenido real, un patron que conviene detectar antes de descargar o desplegar cualquier artefacto.
+- Auditoria de artefactos en Hugging Face: sirve como caso de estudio de incoherencias entre etiquetas (`transformer`, `safetensors`), recuento de parametros, tamano de repositorio y contenido real, un patron que conviene detectar antes de descargar o desplegar cualquier artefacto.
 - Documentacion de decisiones de evaluacion: quien prepare un benchmark de representaciones contrastivas puede tomar de aqui la exigencia de nombrar benchmarks publicos adecuados a la tarea y de documentar los modos de fallo previstos.
 - Argumentario para politicas internas de adopcion de modelos: el repositorio ejemplifica un caso de "0 descargas y 0 likes sin checkpoint", util para justificar criterios de admision que exijan pesos verificables y resultados medidos antes de incorporar un modelo a un pipeline.
 
@@ -59,13 +59,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Viabilidad en GPU de consumo: no determinable. El recuento reportado (33.088 parametros) seria irrelevante en terminos de memoria si correspondiese a un unico tensor, pero no hay evidencia de que exista un modelo ejecutable.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, transformers): no aplicables. El repositorio no publica configuracion de modelo, tokenizador ni pesos en formatos de inferencia.
 - Latencia y throughput estimados: no disponibles.
-- Requisito real para aprovechar el repositorio: un cliente Git o la interfaz web de HuggingFace para leer `reading.md` y `README.md`; no requiere acelerador.
+- Requisito real para aprovechar el repositorio: un cliente Git o la interfaz web de Hugging Face para leer `reading.md` y `README.md`; no requiere acelerador.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sscottjohn/contrastive-learning-review45-2024` (notas de investigacion) | 33.088 segun safetensors; sin checkpoint funcional documentado | No disponible | MIT | Repositorio publico en HuggingFace, 0 descargas y 0 likes en el momento del analisis |
+| `sscottjohn/contrastive-learning-review45-2024` (notas de investigacion) | 33.088 segun safetensors; sin checkpoint funcional documentado | No disponible | MIT | Repositorio publico en Hugging Face, 0 descargas y 0 likes en el momento del analisis |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible |
 
 No se pueden establecer comparaciones con modelos de la misma categoria porque el repositorio no es un modelo entrenado: no hay tarea definida, ni metricas, ni pesos utilizables. Cualquier comparacion con codificadores contrastivos publicados (por ejemplo, familias de modelos de retrieval o de similitud textual) seria especulativa y no se incluye.
@@ -85,7 +85,7 @@ No se pueden establecer comparaciones con modelos de la misma categoria porque e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sscottjohn/contrastive-learning-review45-2024
+- Repositorio en Hugging Face: https://huggingface.co/sscottjohn/contrastive-learning-review45-2024
 - `reading.md` (nota principal): referenciado en la model card del repositorio; no se ha podido verificar su contenido desde la informacion proporcionada
 - Paper, blog, repositorio de codigo o demo asociados: no disponible
 - Enlaces relevantes adicionales encontrados en la busqueda web: ninguno (los resultados obtenidos no guardan relacion con el modelo)

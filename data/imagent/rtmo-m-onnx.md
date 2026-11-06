@@ -24,7 +24,7 @@ La relevancia práctica del artefacto es de ingeniería más que de investigaci�
 | Autor original del modelo | OpenMMLab (proyecto mmpose) |
 | Exportador a ONNX | Xenova |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Paradigma | Parametros | Entrada / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RTMO-m (ONNX, este repositorio) | One-stage multi-persona | No disponible (fichero de 89,3 MB) | Imagen; resolución no especificada | Apache-2.0 | ONNX en HuggingFace |
+| RTMO-m (ONNX, este repositorio) | One-stage multi-persona | No disponible (fichero de 89,3 MB) | Imagen; resolución no especificada | Apache-2.0 | ONNX en Hugging Face |
 | RTMPose (mmpose) | Top-down (requiere detector de personas) | No disponible | Imagen; recorte por persona | Apache-2.0 | Checkpoints PyTorch en OpenMMLab |
 | YOLOv8-pose / YOLO11-pose (Ultralytics) | One-stage multi-persona | No disponible | Imagen; entrada configurable | AGPL-3.0 (o licencia comercial de pago) | PyTorch, ONNX, TensorRT |
 | MediaPipe Pose | One-stage, orientado a una persona | No disponible | Imagen/vídeo | Apache-2.0 | Solución empaquetada de Google |
@@ -92,7 +92,7 @@ La diferencia funcional más relevante es la licencia: RTMO y RTMPose son Apache
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imagent/rtmo-m-onnx
+- Modelo en Hugging Face: https://huggingface.co/imagent/rtmo-m-onnx
 - Export original de Xenova: https://huggingface.co/Xenova/RTMO-m
 - Fichero ONNX referenciado en la model card: https://huggingface.co/Xenova/RTMO-m/resolve/3aba1280472b98ee2bf663482e27e243038d23fe/onnx/model.onnx
 - Proyecto RTMO dentro de mmpose (OpenMMLab): https://github.com/open-mmlab/mmpose/tree/main/projects/rtmo

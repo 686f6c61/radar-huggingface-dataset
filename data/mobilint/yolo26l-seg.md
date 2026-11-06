@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26l-seg es una reproducción compilada y cuantizada del modelo de segmentación de instancias YOLO26 en su variante "l" (large), publicada por Mobilint en HuggingFace. No se trata de un modelo entrenado desde cero por Mobilint, sino de una conversión del modelo base Ultralytics/YOLO26 a formato MXQ (MXQv7) mediante su compilador propietario qbcompiler 1.4.0, orientado a su runtime qbruntime y a su hardware/plataforma de inferencia (referida como aries-rb).
+YOLO26l-seg es una reproducción compilada y cuantizada del modelo de segmentación de instancias YOLO26 en su variante "l" (large), publicada por Mobilint en Hugging Face. No se trata de un modelo entrenado desde cero por Mobilint, sino de una conversión del modelo base Ultralytics/YOLO26 a formato MXQ (MXQv7) mediante su compilador propietario qbcompiler 1.4.0, orientado a su runtime qbruntime y a su hardware/plataforma de inferencia (referida como aries-rb).
 
 El modelo resuelve la tarea de segmentación de instancias: detectar objetos en una imagen y generar máscaras por instancia. Está pensado para despliegue en producción sobre la pila de Mobilint, con modos de inferencia específicos (single, multi, global4, global8) y una evaluación reproducible sobre COCO con 5000 muestras, donde alcanza un mAP50-95 de 0,44236 y un mAP50 de 0,67588 en modo async.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes en la información proporcionada para una com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mobilint/YOLO26l-seg
+- Hugging Face: https://huggingface.co/mobilint/YOLO26l-seg
 - Repositorio de artefactos arXiv de Mobilint: https://github.com/mobilint/mblt-model-arxiv/tree/main/models/instance_segmentation/YOLO26l_seg
 - Ultralytics (modelo base): https://github.com/ultralytics/ultralytics
-- Modelo base en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo base en Hugging Face: https://huggingface.co/Ultralytics/YOLO26

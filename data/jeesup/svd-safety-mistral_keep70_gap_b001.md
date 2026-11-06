@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-mistral_keep70_gap_b001 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2 al que se le ha aplicado una compresión SVD-LLM hasta conservar el 70,1 % de los parámetros densos, seguida de una restauración del 0,1 % del presupuesto de parámetros mediante componentes SVD seleccionados con la regla `gap`. Lo publica el usuario Jeesup en HuggingFace como artefacto de investigación, no como modelo conversacional de propósito general. Su razón de ser es medir cómo la compresión por descomposición en valores singulares degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño.
+svd-safety-mistral_keep70_gap_b001 es un checkpoint derivado de mistralai/Mistral-7B-Instruct-v0.2 al que se le ha aplicado una compresión SVD-LLM hasta conservar el 70,1 % de los parámetros densos, seguida de una restauración del 0,1 % del presupuesto de parámetros mediante componentes SVD seleccionados con la regla `gap`. Lo publica el usuario Jeesup en Hugging Face como artefacto de investigación, no como modelo conversacional de propósito general. Su razón de ser es medir cómo la compresión por descomposición en valores singulares degrada el comportamiento de seguridad de un modelo alineado y qué regla de selección de componentes repara mejor ese daño.
 
 El modelo conserva la arquitectura transformer decoder-only de Mistral-7B-Instruct-v0.2, con 7.241.732.096 parámetros reportados por los safetensors del repositorio. La model card declara una fracción resultante de 0,7009 sobre parámetros densos, 1.229 componentes restaurados y 0 componentes sustituidos, con semilla 42. Se trata de una única celda de una rejilla experimental que barre reglas de selección y presupuestos de restauración.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks de conocimiento o razonamiento (MML
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-mistral_keep70_gap_b001 | 7.241.732.096 (fracción densa 0,7009) | No declarado | AdvBench ASR 0,5385; StrongREJECT ASR 0,4281; PPL WikiText-2 8,9538 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7.241.732.096 | 32 768 tokens | No disponible en la información proporcionada; la model card indica que su ASR es inferior al de este checkpoint | Apache 2.0 (el repositorio base no incluye fichero de licencia) | HuggingFace, ampliamente utilizado |
+| svd-safety-mistral_keep70_gap_b001 | 7.241.732.096 (fracción densa 0,7009) | No declarado | AdvBench ASR 0,5385; StrongREJECT ASR 0,4281; PPL WikiText-2 8,9538 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7.241.732.096 | 32 768 tokens | No disponible en la información proporcionada; la model card indica que su ASR es inferior al de este checkpoint | Apache 2.0 (el repositorio base no incluye fichero de licencia) | Hugging Face, ampliamente utilizado |
 | Otras celdas del grid SVD-LLM (otras reglas de selección y presupuestos) | No disponible | No disponible | No disponible | No disponible | Mencionadas en la model card, sin datos publicados en la información proporcionada |
 | Otras alternativas de Mistral-7B comprimido | No disponible | No disponible | No disponible | No disponible | No se han identificado modelos comparables en la información disponible |
 
@@ -95,6 +95,6 @@ No se han publicado resultados de benchmarks de conocimiento o razonamiento (MML
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_keep70_gap_b001
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_keep70_gap_b001
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, repositorios, blogs o demos) relacionados con este modelo. El resto de resultados de búsqueda no guardan relación con el artefacto.

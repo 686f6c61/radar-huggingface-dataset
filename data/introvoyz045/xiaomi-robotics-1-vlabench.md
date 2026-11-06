@@ -105,7 +105,7 @@ No se han proporcionado comparaciones con otros modelos en la informacion dispon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xiaomi-Robotics-1-VLABench | 5,05 B | no disponible | SR 59,1% en VLABench | Apache 2.0 | HuggingFace |
+| Xiaomi-Robotics-1-VLABench | 5,05 B | no disponible | SR 59,1% en VLABench | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -123,8 +123,8 @@ No se han proporcionado comparaciones con otros modelos en la informacion dispon
 
 ## Enlaces
 
-- Checkpoint en HuggingFace (autor introvoyz045): https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-VLABench
-- Checkpoint en HuggingFace (organizacion XiaomiRobotics): https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-VLABench
+- Checkpoint en Hugging Face (autor introvoyz045): https://huggingface.co/introvoyz045/Xiaomi-Robotics-1-VLABench
+- Checkpoint en Hugging Face (organizacion XiaomiRobotics): https://huggingface.co/XiaomiRobotics/Xiaomi-Robotics-1-VLABench
 - Repositorio en GitHub: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1
 - Guia de evaluacion VLABench en GitHub: https://github.com/XiaomiRobotics/Xiaomi-Robotics-1/tree/main/eval_vlabench
 - Modelo en ModelScope: https://www.modelscope.cn/models/XiaomiRobotics/Xiaomi-Robotics-1-VLABench

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Passionately_Pandora es un adaptador LoRA de texto a imagen publicado por el usuario pandorapaige91 en HuggingFace. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base RunDiffusion/Juggernaut-XL-v9, un checkpoint de la familia Stable Diffusion XL (SDXL) orientado a fotorealismo. El objetivo declarado por el autor es crear un avatar consistente a partir de la fachada de una persona concreta, de modo que el modelo genere contenido personalizado con esa identidad visual recurrente.
+Passionately_Pandora es un adaptador LoRA de texto a imagen publicado por el usuario pandorapaige91 en Hugging Face. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base RunDiffusion/Juggernaut-XL-v9, un checkpoint de la familia Stable Diffusion XL (SDXL) orientado a fotorealismo. El objetivo declarado por el autor es crear un avatar consistente a partir de la fachada de una persona concreta, de modo que el modelo genere contenido personalizado con esa identidad visual recurrente.
 
 El adaptador se distribuye en formato diffusers, con una licencia MIT y un tamano de repositorio de 7,1 GB. No se especifican idiomas soportados ni parametros totales, dado que se trata de un modulo LoRA y no de un modelo completo: los pesos que se publican son los del adaptador, que se aplican sobre el UNet del modelo base SDXL. El modelo usa tres palabras gatillo: `Passionately_Pandora`, `Pandora` y `KimberlyPaige`.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Contexto/imagen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Passionately_Pandora | LoRA de identidad | Juggernaut-XL-v9 (SDXL) | 1024x1024 (heredado de SDXL) | MIT | HuggingFace, 21 descargas |
-| RunDiffusion/Juggernaut-XL-v9 | Checkpoint SDXL | SDXL | 1024x1024 | no disponible en la informacion | HuggingFace |
-| LoRA de identidad genericos sobre SDXL | LoRA | SDXL | 1024x1024 | variable | HuggingFace |
+| Passionately_Pandora | LoRA de identidad | Juggernaut-XL-v9 (SDXL) | 1024x1024 (heredado de SDXL) | MIT | Hugging Face, 21 descargas |
+| RunDiffusion/Juggernaut-XL-v9 | Checkpoint SDXL | SDXL | 1024x1024 | no disponible en la informacion | Hugging Face |
+| LoRA de identidad genericos sobre SDXL | LoRA | SDXL | 1024x1024 | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (FID, CLIP score, etc.) para este adaptador ni para alternativas concretas en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo (FID, CLIP score, etc.) para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pandorapaige91/Passionately_Pandora
+- Modelo en Hugging Face: https://huggingface.co/pandorapaige91/Passionately_Pandora
 - Modelo base: https://huggingface.co/RunDiffusion/Juggernaut-XL-v9
 - Repositorio de archivos: https://huggingface.co/pandorapaige91/Passionately_Pandora/tree/main
 - Libreria diffusers: https://github.com/huggingface/diffusers

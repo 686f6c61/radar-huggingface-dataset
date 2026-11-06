@@ -93,8 +93,8 @@ Error de una llamada de denoising contra el modelo fp32 exacto, como múltiplo d
 
 | Modelo | Parametros | Contexto/resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LTX-2.5 MLX dynamic 8-bit (este) | Transformer "22b" + Gemma 4 12B | 1024x576, 121 frames | LTX-2.x Community | HuggingFace, MLX | Port no oficial, solo Apple Silicon |
-| LTX-2.5 (oficial, Lightricks) | Transformer "22b" + Gemma 4 12B | 1024x576, 121 frames | LTX-2.x Community | HuggingFace, PyTorch/CUDA | 66 GB en 16 bits, requiere GPU NVIDIA |
+| LTX-2.5 MLX dynamic 8-bit (este) | Transformer "22b" + Gemma 4 12B | 1024x576, 121 frames | LTX-2.x Community | Hugging Face, MLX | Port no oficial, solo Apple Silicon |
+| LTX-2.5 (oficial, Lightricks) | Transformer "22b" + Gemma 4 12B | 1024x576, 121 frames | LTX-2.x Community | Hugging Face, PyTorch/CUDA | 66 GB en 16 bits, requiere GPU NVIDIA |
 | Otros modelos text-to-video | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la información proporcionada |
 
 No se dispone de información sobre benchmarks comparativos con otros modelos de generación de vídeo en la documentación proporcionada.
@@ -115,7 +115,7 @@ No se dispone de información sobre benchmarks comparativos con otros modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero0303/ltx-2.5-mlx-dynamic-8bit
+- Modelo en Hugging Face: https://huggingface.co/zero0303/ltx-2.5-mlx-dynamic-8bit
 - Modelo base oficial: https://huggingface.co/Lightricks/LTX-2.5
 - Repositorio oficial de código: https://github.com/Lightricks/LTX-2
 - Licencia LTX-2.x: https://github.com/Lightricks/LTX-2/blob/main/LICENSE-2_x

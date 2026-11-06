@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-tug-quicksilver-v14 es un modelo de política para robótica publicado en HuggingFace por HlibPlakhtii bajo la librería `microduck`, distribuido en formato ONNX y etiquetado como `microduck-policy`. Se trata de un *remix* de competición sobre el modelo base `jrubiosainz/microduck-tug-lphat-c2-s1s5`, un derivado del entorno de simulación de tira y afloja (tug-of-war) del ecosistema MicroDuck, vinculado a Pollen Robotics. No es un modelo de lenguaje: no genera texto ni procesa lenguaje natural, sino que produce secuencias de acciones motoras para un robot simulado en MuJoCo.
+microduck-tug-quicksilver-v14 es un modelo de política para robótica publicado en Hugging Face por HlibPlakhtii bajo la librería `microduck`, distribuido en formato ONNX y etiquetado como `microduck-policy`. Se trata de un *remix* de competición sobre el modelo base `jrubiosainz/microduck-tug-lphat-c2-s1s5`, un derivado del entorno de simulación de tira y afloja (tug-of-war) del ecosistema MicroDuck, vinculado a Pollen Robotics. No es un modelo de lenguaje: no genera texto ni procesa lenguaje natural, sino que produce secuencias de acciones motoras para un robot simulado en MuJoCo.
 
 El modelo conserva íntegramente el grafo y la red heredados del modelo base y añade una tabla de búsqueda de observaciones (*observation lookup*) que reproduce una secuencia de acciones optimizada localmente para la semilla oficial 2 de la Arena. La búsqueda se realizó con CMA-ES separable y la secuencia resultante obtuvo una puntuación local de 166,57612562 cm con cinco victorias en el pozo, evaluada con el evaluador no modificado de la Arena, el runner 5, MuJoCo 3.10.0 y ONNX Runtime 1.24.4.
 
@@ -73,9 +73,9 @@ El autor indica que el resultado público de la Arena es la referencia autoritat
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HlibPlakhtii/microduck-tug-quicksilver-v14 | Política robótica ONNX (remix) | no disponible | no aplica | no disponible | HuggingFace |
-| jrubiosainz/microduck-tug-lphat-c2-s1s5 | Política robótica (modelo base) | no disponible | no aplica | no disponible | HuggingFace |
-| lphatnguyen/microduck-tug-of-war-v0 | Política robótica (upstream) | no disponible | no aplica | no disponible | HuggingFace |
+| HlibPlakhtii/microduck-tug-quicksilver-v14 | Política robótica ONNX (remix) | no disponible | no aplica | no disponible | Hugging Face |
+| jrubiosainz/microduck-tug-lphat-c2-s1s5 | Política robótica (modelo base) | no disponible | no aplica | no disponible | Hugging Face |
+| lphatnguyen/microduck-tug-of-war-v0 | Política robótica (upstream) | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada, más allá de que quicksilver-v14 deriva de los otros dos y añade la capa de lookup para la semilla 2.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14
+- Modelo en Hugging Face: https://huggingface.co/HlibPlakhtii/microduck-tug-quicksilver-v14
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-tug-lphat-c2-s1s5/tree/46d9c19697dbe10acfb04317c7c0931d991dc41c
 - Upstream citado en la model card: lphatnguyen/microduck-tug-of-war-v0 (sin URL directa en la información proporcionada)
 - Pollen Robotics (contribuidor citado): sin URL en la información proporcionada

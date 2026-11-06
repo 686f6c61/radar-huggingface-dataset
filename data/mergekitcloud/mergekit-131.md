@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MergekitCloud/mergekit-131 es un modelo de lenguaje denso de aproximadamente 32.760 millones de parámetros (32,76B) obtenido mediante la fusión de cuatro variantes de la familia Qwen2.5 de 32B. Lo publica el espacio de HuggingFace `MergekitCloud`, un repositorio que agrupa fusiones generadas de forma automatizada con la herramienta mergekit y que no incluye documentación adicional más allá de la configuración YAML del merge. El modelo no se entrena desde cero: combina los pesos de Qwen2.5-32B, Qwen2.5-32B-Instruct, Qwen2.5-Coder-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B para intentar agregar en un único checkpoint capacidades de conversación, código y razonamiento encadenado.
+MergekitCloud/mergekit-131 es un modelo de lenguaje denso de aproximadamente 32.760 millones de parámetros (32,76B) obtenido mediante la fusión de cuatro variantes de la familia Qwen2.5 de 32B. Lo publica el espacio de Hugging Face `MergekitCloud`, un repositorio que agrupa fusiones generadas de forma automatizada con la herramienta mergekit y que no incluye documentación adicional más allá de la configuración YAML del merge. El modelo no se entrena desde cero: combina los pesos de Qwen2.5-32B, Qwen2.5-32B-Instruct, Qwen2.5-Coder-32B-Instruct y DeepSeek-R1-Distill-Qwen-32B para intentar agregar en un único checkpoint capacidades de conversación, código y razonamiento encadenado.
 
 La relevancia de este tipo de fusión es práctica: permite obtener un modelo "todo en uno" a partir de especializaciones ya existentes sin coste de preentrenamiento, usando la técnica TIES (Trim, Elect Sign, Merge) descrita en arXiv:2306.01708. TIES recorta los parámetros menos relevantes de cada modelo donante, resuelve los conflictos de signo entre ellos y promedia solo los valores retenidos, lo que en teoría reduce la interferencia entre capacidades dispares.
 
@@ -24,7 +24,7 @@ Ahora bien, el repositorio presenta señales claras de haber sido generado de fo
 | Método de fusión | TIES (density 0,55; pesos 0,70 / 0,60 / 0,50; normalize true; int8_mask true; rescale false) |
 | Modelo base de la fusión | Qwen/Qwen2.5-32B-Instruct |
 | Tokenizer / chat template | `tokenizer_source: base`, `chat_template: auto` |
-| Fecha declarada de creación | 2026-10-25 (según metadatos de HuggingFace) |
+| Fecha declarada de creación | 2026-10-25 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ La comparación es inevitablemente cualitativa: los tres donantes cuentan con ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-131
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-131
 - Paper de TIES (arXiv:2306.01708): https://arxiv.org/abs/2306.01708
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Qwen/Qwen2.5-32B: https://huggingface.co/Qwen/Qwen2.5-32B

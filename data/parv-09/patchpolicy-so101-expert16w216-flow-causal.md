@@ -82,5 +82,5 @@ No se dispone de comparativas directas con otras políticas visuomotoras (como A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Parv-09/patchpolicy-so101-expert16w216-flow-causal
+- Modelo en Hugging Face: https://huggingface.co/Parv-09/patchpolicy-so101-expert16w216-flow-causal
 - Repositorio compañero con código e `infer.py`: no disponible en la información proporcionada (mencionado como "companion repo" pero sin URL).

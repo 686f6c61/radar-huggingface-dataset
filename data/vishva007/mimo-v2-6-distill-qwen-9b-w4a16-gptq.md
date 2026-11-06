@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ es un checkpoint cuantizado del modelo multimodal XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario Vishva007 en HuggingFace. Se trata de una destilación sobre la base arquitectónica Qwen (tag `qwen3_5`) orientada a tareas agénticas, generación de código, tool calling y decisión multimodal (image-text-to-text). La cuantización emplea AutoRound/SignRound en esquema W4A16 (pesos de 4 bits, activaciones de 16 bits) con grupo de 32, lo que reduce de forma notable el consumo de VRAM frente al modelo original en bfloat16.
+MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ es un checkpoint cuantizado del modelo multimodal XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario Vishva007 en Hugging Face. Se trata de una destilación sobre la base arquitectónica Qwen (tag `qwen3_5`) orientada a tareas agénticas, generación de código, tool calling y decisión multimodal (image-text-to-text). La cuantización emplea AutoRound/SignRound en esquema W4A16 (pesos de 4 bits, activaciones de 16 bits) con grupo de 32, lo que reduce de forma notable el consumo de VRAM frente al modelo original en bfloat16.
 
 El interés principal de esta ficha reside en que combina tres elementos poco habituales en un modelo de ~9B: capacidades de visión, capa de Multi-Token Prediction (MTP) para decodificación especulativa y un pipeline de razonamiento con modo thinking conmutable. El autor preserva en `bfloat16` nativo los módulos visuales y MTP, de modo que la cuantización no degrada ni la rama multimodal ni el mecanismo de predicción especulativa. Está pensado para servirse con vLLM y expone un endpoint no estándar (`/v1/systemone`) para consultas estructuradas de decisión sobre imágenes.
 
@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks que permitan comparar rendimiento entr
 
 ## Enlaces
 
-- HuggingFace del checkpoint: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ
+- Hugging Face del checkpoint: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - RunPod (enlace de afiliado presente en la model card): https://runpod.io?ref=iabrlp7z
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

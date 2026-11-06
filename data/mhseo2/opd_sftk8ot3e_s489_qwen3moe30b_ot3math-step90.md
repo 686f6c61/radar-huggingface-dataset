@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step90` es un checkpoint publicado en HuggingFace por el usuario `mhseo2`. Por la nomenclatura del identificador, se trata de un ajuste fino (fine-tuning) derivado de la familia Qwen3 en su variante MoE ("qwen3moe30b"), orientado aparentemente a tareas de matematicas ("ot3math") y correspondiente al paso de entrenamiento 90 ("step90"). No hay model card, pipeline declarado, licencia, idiomas ni documentacion asociada en el repositorio.
+`mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step90` es un checkpoint publicado en Hugging Face por el usuario `mhseo2`. Por la nomenclatura del identificador, se trata de un ajuste fino (fine-tuning) derivado de la familia Qwen3 en su variante MoE ("qwen3moe30b"), orientado aparentemente a tareas de matematicas ("ot3math") y correspondiente al paso de entrenamiento 90 ("step90"). No hay model card, pipeline declarado, licencia, idiomas ni documentacion asociada en el repositorio.
 
 El dato mas objetivo disponible es el recuento de parametros leido de los ficheros safetensors: 8.190.735.360 parametros, con un tamano de repositorio de 16,4 GB, lo que es coherente con un checkpoint almacenado en precision bf16/fp16 (8,19 B x 2 bytes ≈ 16,4 GB). Existe una discrepancia relevante entre ese recuento real y el sufijo "30b" del nombre, que sugiere un modelo de 30 mil millones de parametros; no es posible resolverla con la informacion disponible.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step90 | 8,19 B (segun safetensors) | no disponible | no disponible | no disponible | HuggingFace, 2 descargas |
-| Qwen3-8B (referencia de la familia) | 8,2 B | 32 768 nativo, extensible | benchmarks publicos por Alibaba | Apache 2.0 (segun publicacion de Qwen) | HuggingFace, ampliamente distribuido |
-| Qwen3-30B-A3B (base probable, sin confirmar) | ~30,5 B totales / ~3,3 B activos | 32 768 nativo, extensible | benchmarks publicos por Alibaba | Apache 2.0 (segun publicacion de Qwen) | HuggingFace, ampliamente distribuido |
-| Llama 3.1 8B | 8,03 B | 128 000 | benchmarks publicos por Meta | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
+| mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step90 | 8,19 B (segun safetensors) | no disponible | no disponible | no disponible | Hugging Face, 2 descargas |
+| Qwen3-8B (referencia de la familia) | 8,2 B | 32 768 nativo, extensible | benchmarks publicos por Alibaba | Apache 2.0 (segun publicacion de Qwen) | Hugging Face, ampliamente distribuido |
+| Qwen3-30B-A3B (base probable, sin confirmar) | ~30,5 B totales / ~3,3 B activos | 32 768 nativo, extensible | benchmarks publicos por Alibaba | Apache 2.0 (segun publicacion de Qwen) | Hugging Face, ampliamente distribuido |
+| Llama 3.1 8B | 8,03 B | 128 000 | benchmarks publicos por Meta | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
 
 Las cifras de los modelos de referencia corresponden a informacion publica de sus desarrolladores; los datos del modelo objeto de la ficha son los unicos verificados en el repositorio. Al no existir benchmarks propios, no es posible establecer comparaciones de rendimiento.
 
@@ -94,7 +94,7 @@ Las cifras de los modelos de referencia corresponden a informacion publica de su
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step90
+- Hugging Face: https://huggingface.co/mhseo2/opd_sftk8ot3e_s489_qwen3moe30b_ot3math-step90
 - Paper: no disponible.
 - Blog o model card: no disponible.
 - Repositorio de codigo: no disponible.

@@ -78,9 +78,9 @@ No hay datos publicados de rendimiento de modelos alternativos en la informació
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_narrates_ongoing_action | 109,5 M | No indicado (base MPNet: 512 tokens) | Clasificación binaria de una aserción docente | no disponible | HuggingFace, librería setfit |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base sin ajustar) | ~109 M | 512 tokens | Embeddings de frases de propósito general | Apache-2.0 (según el modelo base) | HuggingFace |
-| Otros clasificadores de aserciones de la familia StanfordSCALE/EduBehaviors | no disponible | no disponible | Cada uno sobre una aserción distinta | no disponible | HuggingFace |
+| StanfordSCALE/assertion_sentence_narrates_ongoing_action | 109,5 M | No indicado (base MPNet: 512 tokens) | Clasificación binaria de una aserción docente | no disponible | Hugging Face, librería setfit |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base sin ajustar) | ~109 M | 512 tokens | Embeddings de frases de propósito general | Apache-2.0 (según el modelo base) | Hugging Face |
+| Otros clasificadores de aserciones de la familia StanfordSCALE/EduBehaviors | no disponible | no disponible | Cada uno sobre una aserción distinta | no disponible | Hugging Face |
 | Anotación zero-shot o few-shot con un LLM generalista | no disponible | no disponible | Etiquetado del mismo esquema | no disponible | Depende del proveedor |
 
 Rendimiento comparado: no disponible. No se han publicado métricas de estos modelos sobre `assertions_llm_annotated_talkmoves`.
@@ -100,7 +100,7 @@ Rendimiento comparado: no disponible. No se han publicado métricas de estos mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_narrates_ongoing_action
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_narrates_ongoing_action
 - Dataset de entrenamiento y evaluación: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset original TalkMoves: https://github.com/SumnerLab/TalkMoves

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gurubrahmam/sentiment-classifier` es un fine-tune de `Qwen/Qwen2.5-1.5B-Instruct`, publicado en HuggingFace por el usuario `gurubrahmam`. A pesar de su nombre, la documentación disponible no describe una tarea específica de clasificación de sentimientos; la model card solo incluye un ejemplo de generación de texto con una pregunta sobre viajes en el tiempo. El modelo fue entrenado con SFT (supervised fine-tuning) mediante la librería TRL. No se proporcionan datos sobre el dataset de entrenamiento, métricas de rendimiento ni licencia. Dado que es un modelo pequeño (1.5B), podría ser adecuado para despliegue en entornos con recursos limitados, pero su utilidad real no está verificada.
+El modelo `gurubrahmam/sentiment-classifier` es un fine-tune de `Qwen/Qwen2.5-1.5B-Instruct`, publicado en Hugging Face por el usuario `gurubrahmam`. A pesar de su nombre, la documentación disponible no describe una tarea específica de clasificación de sentimientos; la model card solo incluye un ejemplo de generación de texto con una pregunta sobre viajes en el tiempo. El modelo fue entrenado con SFT (supervised fine-tuning) mediante la librería TRL. No se proporcionan datos sobre el dataset de entrenamiento, métricas de rendimiento ni licencia. Dado que es un modelo pequeño (1.5B), podría ser adecuado para despliegue en entornos con recursos limitados, pero su utilidad real no está verificada.
 
 ## Especificaciones técnicas
 
@@ -67,4 +67,4 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gurubrahmam/sentiment-classifier
+- Hugging Face: https://huggingface.co/gurubrahmam/sentiment-classifier

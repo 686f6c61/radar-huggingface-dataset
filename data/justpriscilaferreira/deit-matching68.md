@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `deit-matching68` es un prototipo de investigación basado en la arquitectura DeiT (Data-efficient Image Transformers) orientado a tareas de emparejamiento o correspondencia de imágenes. Ha sido desarrollado por el usuario Justpriscilaferreira y publicado en HuggingFace con licencia MIT. El repositorio incluye un checkpoint de inicialización de apenas 24.832 parámetros, lo que lo convierte en un modelo extremadamente pequeño, pensado exclusivamente como punto de partida para experimentos y pruebas de humo, no como un modelo entrenado para producción.
+El modelo `deit-matching68` es un prototipo de investigación basado en la arquitectura DeiT (Data-efficient Image Transformers) orientado a tareas de emparejamiento o correspondencia de imágenes. Ha sido desarrollado por el usuario Justpriscilaferreira y publicado en Hugging Face con licencia MIT. El repositorio incluye un checkpoint de inicialización de apenas 24.832 parámetros, lo que lo convierte en un modelo extremadamente pequeño, pensado exclusivamente como punto de partida para experimentos y pruebas de humo, no como un modelo entrenado para producción.
 
 La relevancia de este modelo radica en su carácter didáctico y experimental: documenta una configuración de DeiT con atención dispersa (sparse), fusión bilineal, activación ReLU y normalización InstanceNorm, junto con un script de evaluación y una receta de entrenamiento por defecto. No se presentan resultados de rendimiento ni se reclama ninguna capacidad funcional, ya que el checkpoint no ha sido entrenado. Es, por tanto, un recurso útil para desarrolladores que quieran explorar variantes de DeiT o construir sobre una base mínima sin dependencias externas.
 
@@ -35,7 +35,7 @@ En cuanto al entrenamiento, el repositorio no contiene evidencia de un proceso d
 
 ## Casos de uso
 
-- Desarrollo de adaptadores para carga personalizada: dado que la implementación es personalizada y no compatible con APIs genéricas de HuggingFace, el modelo sirve para escribir y probar adaptadores que permitan cargar pesos safetensors con configuraciones no estándar.
+- Desarrollo de adaptadores para carga personalizada: dado que la implementación es personalizada y no compatible con APIs genéricas de Hugging Face, el modelo sirve para escribir y probar adaptadores que permitan cargar pesos safetensors con configuraciones no estándar.
 - Pruebas de integración en pipelines de entrenamiento: el script `eval.py` y la configuración incluida permiten validar que un pipeline de entrenamiento (con Adafactor y one-cycle) arranca correctamente antes de lanzar experimentos reales.
 - Experimentación con atención dispersa: investigadores pueden usar este prototipo como base para estudiar el impacto de la atención sparse en tareas de matching, comparando con DeiT estándar.
 - Evaluación de configuraciones de normalización y activación: la combinación de InstanceNorm y ReLU puede probarse en conjuntos de datos pequeños para verificar su viabilidad.
@@ -61,7 +61,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 ## Limitaciones y advertencias
 
 - El checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio; no debe usarse en ningún escenario de producción.
-- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace; los scripts de carga estándar fallarán.
+- La implementación es personalizada y requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face; los scripts de carga estándar fallarán.
 - No se proporcionan datos sobre el conjunto de entrenamiento, por lo que no se puede evaluar la cobertura de dominios ni posibles sesgos.
 - La licencia MIT permite uso comercial, pero los términos de los datos externos utilizados con el modelo deben revisarse por separado.
 - No hay garantía de que la arquitectura con atención dispersa y fusión bilineal funcione correctamente; es un prototipo experimental.
@@ -69,4 +69,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace: Justpriscilaferreira/deit-matching68](https://huggingface.co/Justpriscilaferreira/deit-matching68)
+- [Hugging Face: Justpriscilaferreira/deit-matching68](https://huggingface.co/Justpriscilaferreira/deit-matching68)

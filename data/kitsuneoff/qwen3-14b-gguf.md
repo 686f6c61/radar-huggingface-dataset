@@ -17,7 +17,7 @@ Al tratarse de un repositorio de terceros con 0 descargas y 0 likes en el moment
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | 32.768 tokens nativos; 131.072 tokens con YaRN |
 | Tipos de cuantizacion | q4_K_M, q5_0, q5_K_M, q6_K, q8_0 |
-| Idiomas soportados | mas de 100 idiomas y dialectos segun la model card de Qwen3; los metadatos de HuggingFace del repositorio no declaran listado |
+| Idiomas soportados | mas de 100 idiomas y dialectos segun la model card de Qwen3; los metadatos de Hugging Face del repositorio no declaran listado |
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (repositorio); safetensors en el modelo base |
 
@@ -53,7 +53,7 @@ La innovacion mas destacable es el conmutador explicito entre modo thinking y no
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio remite al blog, GitHub y documentacion de Qwen para consultar la evaluacion de referencia, pero no incluye cifras concretas, y los metadatos de HuggingFace del repositorio no aportan metricas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio remite al blog, GitHub y documentacion de Qwen para consultar la evaluacion de referencia, pero no incluye cifras concretas, y los metadatos de Hugging Face del repositorio no aportan metricas.
 
 ## Requisitos de hardware
 
@@ -99,7 +99,7 @@ Comparativa con modelos de otros fabricantes: no disponible en la informacion pr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KitsuneOff/Qwen3-14B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/KitsuneOff/Qwen3-14B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - GGUF oficial de Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B-GGUF
 - Licencia: https://huggingface.co/Qwen/Qwen3-14B-GGUF/blob/main/LICENSE
@@ -111,4 +111,4 @@ Comparativa con modelos de otros fabricantes: no disponible en la informacion pr
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Articulo de YaRN: https://arxiv.org/abs/2309.00071
 - Chat de Qwen: https://chat.qwen.ai/
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden del repositorio de HuggingFace y de su model card.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden del repositorio de Hugging Face y de su model card.

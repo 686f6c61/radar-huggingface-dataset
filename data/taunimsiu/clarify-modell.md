@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Taunimsiu/clarify-modell` es un repositorio de modelos alojado en HuggingFace por el usuario Taunimsiu, publicado el 21 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha, el repositorio no contiene ninguna model card sustantiva: el README se limita a una línea de metadatos con la licencia `apache-2.0`, sin descripción, sin arquitectura declarada y sin resultados de evaluación.
+`Taunimsiu/clarify-modell` es un repositorio de modelos alojado en Hugging Face por el usuario Taunimsiu, publicado el 21 de octubre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha, el repositorio no contiene ninguna model card sustantiva: el README se limita a una línea de metadatos con la licencia `apache-2.0`, sin descripción, sin arquitectura declarada y sin resultados de evaluación.
 
 Los metadatos públicos confirman únicamente la licencia Apache 2.0 y la etiqueta de región `us`. No hay pipeline declarado, no se especifican idiomas, no consta ningún archivo de pesos ni configuración asociada, y las métricas de adopción son cero descargas y cero "likes". La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo, el autor o el proyecto: los enlaces encontrados son perfiles de LinkedIn sin conexión alguna con este repositorio.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha no puede caracterizar el modelo técnica ni funcionalmente
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no consta ningun archivo de pesos en el repositorio) |
 
-Datos adicionales verificados en los metadatos de HuggingFace: identificador `Taunimsiu/clarify-modell`, autor `Taunimsiu`, etiquetas `license:apache-2.0` y `region:us`, pipeline no declarado, 0 descargas, 0 likes, fecha de creacion y de ultima actualizacion 2026-10-21T19:44:59Z.
+Datos adicionales verificados en los metadatos de Hugging Face: identificador `Taunimsiu/clarify-modell`, autor `Taunimsiu`, etiquetas `license:apache-2.0` y `region:us`, pipeline no declarado, 0 descargas, 0 likes, fecha de creacion y de ultima actualizacion 2026-10-21T19:44:59Z.
 
 ## Arquitectura y entrenamiento
 
@@ -44,7 +44,7 @@ No es posible proponer casos de uso fundamentados: sin arquitectura, tamano, con
 
 - Prototipado interno de generacion de texto, solo si el repositorio contiene pesos funcionales y una plantilla de prompt documentada.
 - Experimentacion academica con la licencia Apache 2.0 como unico criterio verificable de reutilizacion.
-- Pruebas de integracion en pipelines propios de HuggingFace `transformers`, condicionadas a que exista un `config.json` valido.
+- Pruebas de integracion en pipelines propios de Hugging Face `transformers`, condicionadas a que exista un `config.json` valido.
 - Evaluacion comparativa propia (benchmark interno) para determinar si el modelo supera alternativas conocidas.
 - Pruebas de cuantizacion y despliegue en local, una vez determinado el numero de parametros.
 - Uso como base para fine-tuning, sujeto a confirmar que los pesos son redistribuibles bajo Apache 2.0.
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Taunimsiu/clarify-modell | no disponible | no disponible | Apache 2.0 | repositorio HuggingFace sin pesos declarados |
+| Taunimsiu/clarify-modell | no disponible | no disponible | Apache 2.0 | repositorio Hugging Face sin pesos declarados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Taunimsiu/clarify-modell
+- Repositorio en Hugging Face: https://huggingface.co/Taunimsiu/clarify-modell
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de busqueda web: ninguno relevante. Las consultas devolvieron exclusivamente perfiles de LinkedIn (fr.linkedin.com) sin relacion con el modelo, entre ellos https://fr.linkedin.com/ y perfiles de terceros no vinculados al proyecto.

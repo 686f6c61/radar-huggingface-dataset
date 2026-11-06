@@ -2,7 +2,7 @@
 
 ## Resumen
 
-risk-a4d es un checkpoint de CLIP ViT-B-32 partiendo de los pesos preentrenados de OpenAI, afinado de forma completa (encoders de imagen y de texto descongelados) para clasificacion de afordances. Lo desarrolla el usuario rohansiva y se publica bajo licencia MIT en HuggingFace. Su particularidad es que amplia el conjunto habitual de afordances de manipulacion de objetos con cinco afordances de riesgo orientadas a la seguridad infantil: `sharp`, `chokeable`, `hot`, `toxic` y `fragile`.
+risk-a4d es un checkpoint de CLIP ViT-B-32 partiendo de los pesos preentrenados de OpenAI, afinado de forma completa (encoders de imagen y de texto descongelados) para clasificacion de afordances. Lo desarrolla el usuario rohansiva y se publica bajo licencia MIT en Hugging Face. Su particularidad es que amplia el conjunto habitual de afordances de manipulacion de objetos con cinco afordances de riesgo orientadas a la seguridad infantil: `sharp`, `chokeable`, `hot`, `toxic` y `fragile`.
 
 El modelo aplica la metodologia que el autor denomina A4D, consistente en fine-tuning contrastivo de CLIP comparando cada imagen contra una palabra de afordance y su antonimo, en lugar de contra etiquetas de clase cerradas. Se entreno sobre `risk_dataset`, un conjunto de 686 imagenes repartidas en 35 categorias de objetos cotidianos (mobiliario, menaje, herramientas y elementos de riesgo como pilas, botes de pastillas o jarrones de vidrio), con 15 afordances binarias y 9.866 triples (imagen, afordance, etiqueta).
 
@@ -79,7 +79,7 @@ No hay datos de benchmarks comparativos publicados en la informacion disponible.
 
 | Modelo | Parametros | Contexto de texto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| risk-a4d | 151,3 M entrenables | 77 tokens (encoder CLIP) | Clasificacion de afordances (10 de manipulacion + 5 de riesgo) | MIT | HuggingFace, pesos PyTorch |
+| risk-a4d | 151,3 M entrenables | 77 tokens (encoder CLIP) | Clasificacion de afordances (10 de manipulacion + 5 de riesgo) | MIT | Hugging Face, pesos PyTorch |
 | CLIP ViT-B-32 (OpenAI, original) | ~151 M | 77 tokens | Similitud imagen-texto generica y clasificacion zero-shot | Licencia propia de OpenAI | Ampliamente disponible |
 | Checkpoint complementario 80/20 del mismo autor | 151,3 M entrenables | 77 tokens | Igual tarea, con particion de test reservada y exactitud de 0,965 | MIT | Referenciado en el repositorio del autor |
 
@@ -99,7 +99,7 @@ Frente al CLIP original, risk-a4d pierde generalidad en la descripcion libre de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohansiva/risk-a4d
+- Modelo en Hugging Face: https://huggingface.co/rohansiva/risk-a4d
 - Repositorio de codigo de entrenamiento: referenciado en la model card como `Rule-Discovery`, con los scripts `affordance_classification/training/risk_dataset_training.py` (variante 80/20) y `risk_dataset_training_full.py` (este checkpoint). No se proporciona URL directa en la informacion disponible.
 - Perfil del autor en CatalyzeX (resultado de busqueda no relacionado directamente con este modelo, menciona a Rohan Siva en otro trabajo): https://www.catalyzex.com/author/Zhangyang%20Wang
 - No se han encontrado papers, blogs ni demos adicionales especificos de este modelo en los resultados de busqueda web disponibles.

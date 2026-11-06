@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/migration-runner` es una publicación del usuario sundaycoil en HuggingFace, etiquetada con la región `us`. Fue creado el 9 de abril de 2026 y actualizado el 14 de agosto de 2026. En el momento de la consulta, registra 0 descargas y 5 likes, lo que indica que se trata de una publicación muy reciente o con escasa adopción.
+El modelo `sundaycoil/migration-runner` es una publicación del usuario sundaycoil en Hugging Face, etiquetada con la región `us`. Fue creado el 9 de abril de 2026 y actualizado el 14 de agosto de 2026. En el momento de la consulta, registra 0 descargas y 5 likes, lo que indica que se trata de una publicación muy reciente o con escasa adopción.
 
 No se dispone de información pública sobre su arquitectura, parámetros, pipeline, licencia o idiomas soportados. El nombre sugiere una posible utilidad relacionada con migraciones de datos o infraestructura, pero no hay documentación ni metadatos que lo confirmen. Por tanto, no es posible evaluar su relevancia técnica ni su aplicabilidad en entornos de producción.
 
@@ -53,4 +53,4 @@ No disponible. Al no conocerse la arquitectura ni el propósito del modelo, no s
 
 ## Enlaces
 
-- [HuggingFace: sundaycoil/migration-runner](https://huggingface.co/sundaycoil/migration-runner)
+- [Hugging Face: sundaycoil/migration-runner](https://huggingface.co/sundaycoil/migration-runner)

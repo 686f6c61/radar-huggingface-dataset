@@ -110,11 +110,11 @@ Para el resto de tier se indica que las tablas comparativas estan en el reposito
 - Madurez de la publicacion: el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, con fechas de creacion y actualizacion del 18 de septiembre de 2026. No hay evidencia de uso en produccion ni validacion por terceros.
 - Trazabilidad limitada: no se documenta el corpus de calibracion usado para la imatrix, la semilla, la version exacta de llama.cpp empleada ni el procedimiento de medicion, lo que dificulta reproducir las cifras declaradas.
 - Portabilidad de las mediciones: los 76,33 tok/s y 1.089,6 tok/s se obtuvieron en AMD Instinct MI300X, hardware muy alejado de una GPU de consumo. No deben extrapolarse a equipos con 12 GB de VRAM.
-- Resultados de busqueda web no relevantes: las busquedas realizadas no devolvieron informacion util sobre este modelo, por lo que toda la ficha se basa exclusivamente en la model card y los metadatos de HuggingFace.
+- Resultados de busqueda web no relevantes: las busquedas realizadas no devolvieron informacion util sobre este modelo, por lo que toda la ficha se basa exclusivamente en la model card y los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-cs
+- Repositorio Hugging Face: https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-cs
 - Repositorio maestro de comparativas de cuantizacion: https://huggingface.co/Zrald/Zrald-AI-model-quant-qwen-3.8-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (runtime de referencia): no se proporciona enlace en la informacion disponible

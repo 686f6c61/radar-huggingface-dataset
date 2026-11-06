@@ -109,7 +109,7 @@ No se dispone de cifras de bits por byte en coreano para los modelos de referenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-plain-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-plain-mingram
 - Artículo: *Explicit Boundary Markers for Subword Vocabularies*, Sander Land y Clara Meister: https://arxiv.org/abs/2608.08847
 - Repositorio `script_tok` (código del tokenizador y comparación completa entre esquemas): https://github.com/sanderland/script_tok
 - nanochat (implementación de entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucas0008/jcv` es un repositorio de modelo alojado en HuggingFace por el usuario lucas0008. La informacion disponible es minima: la model card se reduce a la declaracion de licencia (`license: mit`) y el repositorio no incluye pipeline declarado, idiomas soportados, descripcion de arquitectura ni documentacion de uso. No se trata, por tanto, de un lanzamiento documentado por un laboratorio, sino de un artefacto publicado sin ficha tecnica.
+`lucas0008/jcv` es un repositorio de modelo alojado en Hugging Face por el usuario lucas0008. La informacion disponible es minima: la model card se reduce a la declaracion de licencia (`license: mit`) y el repositorio no incluye pipeline declarado, idiomas soportados, descripcion de arquitectura ni documentacion de uso. No se trata, por tanto, de un lanzamiento documentado por un laboratorio, sino de un artefacto publicado sin ficha tecnica.
 
 El problema que resuelve es, a dia de hoy, indeterminable: no hay informacion sobre la tarea para la que fue entrenado, el dominio de datos ni el formato de los pesos. Tampoco se han publicado resultados de evaluacion, demos o notebooks que permitan inferir su comportamiento. La metadata indica 0 descargas y 0 "likes", lo que sugiere que el repositorio no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -90,7 +90,7 @@ No disponible. No se puede establecer una comparativa fiable porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lucas0008/jcv
+- Repositorio en Hugging Face: https://huggingface.co/lucas0008/jcv
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

@@ -97,7 +97,7 @@ Alternativas de terceros del mismo segmento (por ejemplo, Qwen2.5-3B-Instruct o 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/gabrielmtzcarrillo/deepcogito-cogito-v1-preview-llama-3B-heretic-gguf
+- Repositorio del modelo en Hugging Face: https://huggingface.co/gabrielmtzcarrillo/deepcogito-cogito-v1-preview-llama-3B-heretic-gguf
 - Modelo base Cogito v1 Preview Llama 3B: https://huggingface.co/deepcogito/cogito-v1-preview-llama-3B
 - Modelo origen de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Licencia Llama 3.2 Community License: fichero LICENSE del repositorio

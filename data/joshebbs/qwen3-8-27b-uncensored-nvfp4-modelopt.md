@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- [HuggingFace: joshebbs/qwen3.8-27b-uncensored-nvfp4-modelopt](https://huggingface.co/joshebbs/qwen3.8-27b-uncensored-nvfp4-modelopt)
+- [Hugging Face: joshebbs/qwen3.8-27b-uncensored-nvfp4-modelopt](https://huggingface.co/joshebbs/qwen3.8-27b-uncensored-nvfp4-modelopt)
 - [Modelo base: JonathanColetti/Qwen3.8-27B-Uncensored](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
 - [FriendliAI: ficha del modelo](https://friendli.ai/models/joshebbs/qwen3.8-27b-uncensored-nvfp4-modelopt)
 - [MindStudio: artículo sobre la abliteración AEON](https://www.mindstudio.ai/blog/qwen3-8-27b-aeon-uncensored-abliteration)

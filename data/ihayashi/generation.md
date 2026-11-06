@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ihayashi/generation es un prototipo de investigación publicado en HuggingFace por el usuario Ihayashi. Se trata de una implementación basada en MobileViT orientada a tareas de generación, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye un checkpoint de inicialización válido para pruebas de humo, pero el propio autor indica explícitamente que no se ha entrenado ni auditado, y que no reclama ninguna puntuación de benchmark.
+Ihayashi/generation es un prototipo de investigación publicado en Hugging Face por el usuario Ihayashi. Se trata de una implementación basada en MobileViT orientada a tareas de generación, distribuida como punto de partida experimental y no como un modelo entrenado. El repositorio incluye un checkpoint de inicialización válido para pruebas de humo, pero el propio autor indica explícitamente que no se ha entrenado ni auditado, y que no reclama ninguna puntuación de benchmark.
 
 El modelo presenta una configuración etiquetada como "base" con arquitectura MobileViT, atención de tipo lineal, fusión bilineal, activación aproximada GELU y normalización por lotes (batchnorm). El recuento real de parámetros en el fichero de pesos es de solo 16.576, una cifra extremadamente reducida que confirma su naturaleza de esqueleto de código más que de modelo funcional.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ihayashi/generation | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, prototipo sin entrenar |
+| Ihayashi/generation | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, prototipo sin entrenar |
 | Familia MobileViT (referencia arquitectonica) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas comparables de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ihayashi/generation
+- Hugging Face: https://huggingface.co/Ihayashi/generation
 - Script principal: finetune.py (incluido en el repositorio)
 - Configuración de arquitectura: config.json (incluido en el repositorio)
 - Argumentos de entrenamiento por defecto: training_args.json (incluido en el repositorio)

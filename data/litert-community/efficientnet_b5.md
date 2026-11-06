@@ -4,7 +4,7 @@
 
 EfficientNet B5 es un modelo de clasificación de imágenes desarrollado originalmente por Google y convertido por la comunidad LiteRT (sucesor de TensorFlow Lite) para su ejecución en dispositivos edge. Se basa en la arquitectura EfficientNet, que introduce el escalado compuesto para equilibrar profundidad, anchura y resolución de la red, logrando una precisión superior con una eficiencia notablemente mayor que las arquitecturas convolucionales tradicionales. El modelo fue preentrenado en el dataset ImageNet-1k y posteriormente convertido desde pesos de PyTorch Vision.
 
-La variante publicada en HuggingFace incluye tanto el modelo en float32 como una cuantización weight-only int8 que reduce el tamaño de los pesos aproximadamente 3,7 veces. Con 30.389.784 parámetros y una precisión Top-1 del 83,47% en ImageNet-1k, este modelo está pensado para aplicaciones de visión por computador en tiempo real en dispositivos móviles y sistemas embebidos, donde el consumo de memoria y energía es crítico.
+La variante publicada en Hugging Face incluye tanto el modelo en float32 como una cuantización weight-only int8 que reduce el tamaño de los pesos aproximadamente 3,7 veces. Con 30.389.784 parámetros y una precisión Top-1 del 83,47% en ImageNet-1k, este modelo está pensado para aplicaciones de visión por computador en tiempo real en dispositivos móviles y sistemas embebidos, donde el consumo de memoria y energía es crítico.
 
 En el contexto actual de despliegue de IA en el edge, este modelo resulta relevante porque ofrece un equilibrio excelente entre precisión y coste computacional, y porque su formato TFLite/LiteRT permite una integración directa en aplicaciones Android, iOS y plataformas embebidas mediante el runtime de Google.
 
@@ -80,7 +80,7 @@ No dispongo de datos de otros modelos comparables en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/efficientnet_b5
+- Modelo en Hugging Face: https://huggingface.co/litert-community/efficientnet_b5
 - Repositorio LiteRT en GitHub: https://github.com/google-ai-edge/litert
 - Documentación de LiteRT: https://developers.google.com/edge/litert
 - Paper original: https://arxiv.org/abs/1905.11946

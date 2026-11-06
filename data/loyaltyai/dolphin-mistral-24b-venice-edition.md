@@ -23,7 +23,7 @@ Su relevancia actual radica en el enfoque de «control por parte del usuario»: 
 
 ## Arquitectura y entrenamiento
 
-Se trata de un ajuste fino del modelo denso mistralai/Mistral-Small-24B-Instruct-2501, etiquetado en HuggingFace con la familia mistral3 y con capacidades image-text-to-text. Al ser denso, los 24.000 millones de parámetros están activos en cada paso de inferencia; no hay enrutado tipo MoE. El modelo mantiene la plantilla de chat por defecto de Mistral (V7-Tekken) y su tokenizador, por lo que se recomienda el modo `tokenizer_mode="mistral"` en vLLM.
+Se trata de un ajuste fino del modelo denso mistralai/Mistral-Small-24B-Instruct-2501, etiquetado en Hugging Face con la familia mistral3 y con capacidades image-text-to-text. Al ser denso, los 24.000 millones de parámetros están activos en cada paso de inferencia; no hay enrutado tipo MoE. El modelo mantiene la plantilla de chat por defecto de Mistral (V7-Tekken) y su tokenizador, por lo que se recomienda el modo `tokenizer_mode="mistral"` en vLLM.
 
 El entrenamiento se realizó sobre 8 GPU B200 proporcionadas por targon.com, según la model card. No se detallan en la información disponible el número de tokens de entrenamiento, la composición exacta del dataset ni si se emplearon técnicas de RLHF o DPO. El ajuste se orienta explícitamente a la ausencia de censura y a la «steerabilidad» mediante system prompt, y el autor recomienda temperaturas bajas (en torno a `temperature=0.15`) para obtener respuestas más deterministas. El modelo soporta tool calling (parser `mistral`) y entrada multimodal de imágenes (hasta 10 imágenes por prompt según el flag `--limit-mm-per-prompt`).
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dolphin Mistral 24B Venice Edition | 24B (denso) | 131.072 tokens (config. vLLM) | Sí (imagen-texto) | Apache 2.0 | HuggingFace, Venice.ai |
-| mistralai/Mistral-Small-24B-Instruct-2501 (base) | 24B (denso) | No disponible en esta información | No disponible en esta información | Apache 2.0 | HuggingFace |
-| Mistral Small 3.1 24B | 24B (denso) | No disponible en esta información | Sí (visión) | Apache 2.0 | HuggingFace |
+| Dolphin Mistral 24B Venice Edition | 24B (denso) | 131.072 tokens (config. vLLM) | Sí (imagen-texto) | Apache 2.0 | Hugging Face, Venice.ai |
+| mistralai/Mistral-Small-24B-Instruct-2501 (base) | 24B (denso) | No disponible en esta información | No disponible en esta información | Apache 2.0 | Hugging Face |
+| Mistral Small 3.1 24B | 24B (denso) | No disponible en esta información | Sí (visión) | Apache 2.0 | Hugging Face |
 
 Los datos de rendimiento comparativo no están disponibles en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ Los datos de rendimiento comparativo no están disponibles en la información pr
 
 ## Enlaces
 
-- HuggingFace (LoyalTyAI): https://huggingface.co/LoyalTyAI/Dolphin-Mistral-24B-Venice-Edition
+- Hugging Face (LoyalTyAI): https://huggingface.co/LoyalTyAI/Dolphin-Mistral-24B-Venice-Edition
 - Web oficial Dolphin: https://dphn.ai
 - Chat web: https://chat.dphn.ai
 - Twitter/X: https://x.com/dphnAI

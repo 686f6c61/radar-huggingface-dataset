@@ -4,7 +4,7 @@
 
 DSN (Dormant Spiking Neuron) es un repositorio asociado al trabajo de investigación titulado "The Dormant Spiking Neuron: A State-Driven Mechanism for Efficient Spiking Neural Networks", publicado por el autor Ruichen0424. El proyecto propone un mecanismo de estado aplicado a redes neuronales de impulsos (spiking neural networks, SNN) con el objetivo declarado de mejorar su eficiencia computacional. No se trata, por lo que se desprende de la información disponible, de un modelo de lenguaje generativo, sino de una implementación de investigación en el ámbito de las redes neuromórficas.
 
-El repositorio de HuggingFace ocupa 0,3 GB y está etiquetado con la etiqueta "dummy", lo que apunta a un espacio de trabajo de carácter experimental o de prueba más que a un modelo listo para producción. No se han publicado en la información disponible datos sobre arquitectura concreta, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. La licencia declarada es MIT.
+El repositorio de Hugging Face ocupa 0,3 GB y está etiquetado con la etiqueta "dummy", lo que apunta a un espacio de trabajo de carácter experimental o de prueba más que a un modelo listo para producción. No se han publicado en la información disponible datos sobre arquitectura concreta, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. La licencia declarada es MIT.
 
 Su relevancia potencial reside en el campo de las SNN, donde la eficiencia energética y el procesamiento basado en eventos son objeto de interés creciente, pero en el momento de redactar esta ficha no hay métricas ni especificaciones públicas que permitan evaluar su rendimiento.
 
@@ -79,5 +79,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ruichen0424/DSN
+- Hugging Face: https://huggingface.co/Ruichen0424/DSN
 - GitHub: https://github.com/Ruichen0424/DSN

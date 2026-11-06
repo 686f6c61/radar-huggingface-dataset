@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Algorythm-Canada/jevk5-0.2-mlx-4bit | 4.205.751.296 | no disponible | safetensors MLX 4-bit | Apache-2.0 | HuggingFace, backend `jevk5` de OpenJevSwift |
-| alibiserikbay/JevK5 (v0.2, fuente) | mismos pesos, sin cuantizar | no disponible | safetensors | Apache-2.0 | HuggingFace, runtime propio del autor |
+| Algorythm-Canada/jevk5-0.2-mlx-4bit | 4.205.751.296 | no disponible | safetensors MLX 4-bit | Apache-2.0 | Hugging Face, backend `jevk5` de OpenJevSwift |
+| alibiserikbay/JevK5 (v0.2, fuente) | mismos pesos, sin cuantizar | no disponible | safetensors | Apache-2.0 | Hugging Face, runtime propio del autor |
 | Qwen3.5-4B (modelo base de la familia) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache-2.0 | Modelo de origen del que deriva la base |
 
 No se dispone de datos de rendimiento comparados entre estas alternativas, por lo que la comparación se limita a parámetros, formato, licencia y vía de distribución.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparados entre estas alternativas, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Algorythm-Canada/jevk5-0.2-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/Algorythm-Canada/jevk5-0.2-mlx-4bit
 - Modelo base: https://huggingface.co/alibiserikbay/JevK5
 - Repositorio del autor: https://github.com/allebee/jevk5
 - SemIf: https://github.com/TheoLeeCJ/SemIf

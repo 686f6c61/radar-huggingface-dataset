@@ -88,6 +88,6 @@ Sonda multilingüe sobre ítems de test de XNLI, PAWS-X y Belebele (nunca vistos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/altertable/vela3-fast-multilingual-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/altertable/vela3-fast-multilingual-onnx-int8
 - Modelo base: https://huggingface.co/vllm-sr/vela3-fast
 - Hermano solo inglés: https://huggingface.co/altertable/vela3-fast-onnx-int8

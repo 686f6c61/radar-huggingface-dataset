@@ -100,7 +100,7 @@ La comparativa se limita a los dos modelos base citados en la ficha, porque la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jermalk/speecht5-tts-ov
+- Modelo en Hugging Face: https://huggingface.co/jermalk/speecht5-tts-ov
 - Modelo base (texto a espectrograma): https://huggingface.co/microsoft/speecht5_tts
 - Modelo base (vocoder HiFi-GAN): https://huggingface.co/microsoft/speecht5_hifigan
 - Runtime RustedVINO: https://github.com/Jermalk/rustedvino-oe

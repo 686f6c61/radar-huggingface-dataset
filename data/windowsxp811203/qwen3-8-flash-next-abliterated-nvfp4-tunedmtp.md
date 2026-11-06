@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP es un derivado comunitario del modelo Qwen3.8-Flash-Next, publicado por el usuario windowsxp811203 en HuggingFace. Se trata de una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edicion de pesos) del modelo base doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16, posteriormente cuantizada en NVFP4 (formato de punto flotante de 4 bits con escalas por bloque, propio de NVIDIA ModelOpt) y con ajuste del modulo MTP (Multi-Token Prediction) para decodificacion especulativa en vLLM. El resultado es un modelo multimodal image-text-to-text de aproximadamente 180.000 millones de parametros, empaquetado en safetensors y disenado para servirse con vLLM en hardware Blackwell o superior.
+Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP es un derivado comunitario del modelo Qwen3.8-Flash-Next, publicado por el usuario windowsxp811203 en Hugging Face. Se trata de una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edicion de pesos) del modelo base doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16, posteriormente cuantizada en NVFP4 (formato de punto flotante de 4 bits con escalas por bloque, propio de NVIDIA ModelOpt) y con ajuste del modulo MTP (Multi-Token Prediction) para decodificacion especulativa en vLLM. El resultado es un modelo multimodal image-text-to-text de aproximadamente 180.000 millones de parametros, empaquetado en safetensors y disenado para servirse con vLLM en hardware Blackwell o superior.
 
-La relevancia de esta ficha es doble: por un lado documenta una tecnica de cuantizacion agresiva (FP4) aplicada a un modelo MoE de gran tamano con MTP, lo que permite reducir el peso del repositorio a 135,2 GB frente a los ~360 GB de un BF16 equivalente; por otro lado, ilustra el ecosistema de variantes no oficiales ("abliterated", "uncensored") que circulan en HuggingFace y que presentan caveats importantes de licencia, sesgo y calidad. No se dispone de documentacion tecnica oficial del autor sobre el proceso de entrenamiento ni sobre los datos utilizados en el ajuste.
+La relevancia de esta ficha es doble: por un lado documenta una tecnica de cuantizacion agresiva (FP4) aplicada a un modelo MoE de gran tamano con MTP, lo que permite reducir el peso del repositorio a 135,2 GB frente a los ~360 GB de un BF16 equivalente; por otro lado, ilustra el ecosistema de variantes no oficiales ("abliterated", "uncensored") que circulan en Hugging Face y que presentan caveats importantes de licencia, sesgo y calidad. No se dispone de documentacion tecnica oficial del autor sobre el proceso de entrenamiento ni sobre los datos utilizados en el ajuste.
 
 El modelo hereda la arquitectura Qwen3.8-Flash-Next (MoE con atencion hibrida y modulo MTP), pero los detalles exactos de configuracion (numero de expertos, dimension de capas, atencion lineal vs completa) no estan documentados en la informacion proporcionada y deben consultarse en el modelo base.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP (este) | ~180 B | no disponible | NVFP4/FP8 | qwen-community-license-1.0 (gated) | HuggingFace, acceso restringido |
-| doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16 (base) | ~180 B | no disponible | BF16 | heredada de Qwen | HuggingFace |
-| windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4 (base directo) | ~180 B | no disponible | NVFP4 | qwen-community-license-1.0 | HuggingFace |
-| Modelo original Qwen3.8-Flash-Next | ~180 B | no disponible | BF16/FP8 oficiales | Qwen community | HuggingFace (oficial) |
+| Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP (este) | ~180 B | no disponible | NVFP4/FP8 | qwen-community-license-1.0 (gated) | Hugging Face, acceso restringido |
+| doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16 (base) | ~180 B | no disponible | BF16 | heredada de Qwen | Hugging Face |
+| windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4 (base directo) | ~180 B | no disponible | NVFP4 | qwen-community-license-1.0 | Hugging Face |
+| Modelo original Qwen3.8-Flash-Next | ~180 B | no disponible | BF16/FP8 oficiales | Qwen community | Hugging Face (oficial) |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP
+- Hugging Face: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4-TunedMTP
 - Modelo base (BF16): https://huggingface.co/doth4580/Qwen3.8-Flash-Next-DotH-MTP-BF16
 - Variante NVFP4 previa: https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-NVFP4
 - Paper referenciado en tags (arXiv:2504.04030): https://arxiv.org/abs/2504.04030

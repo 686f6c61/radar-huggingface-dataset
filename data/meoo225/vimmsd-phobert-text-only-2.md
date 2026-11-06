@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meoo225/vimmsd-phobert-text-only-2` es un modelo publicado en HuggingFace por el usuario meoo225 bajo licencia MIT. Por el identificador se deduce que se trata de una variante "text-only" de un modelo basado en PhoBERT (la familia de modelos BERT preentrenados para vietnamita desarrollada por VinAI Research), aparentemente vinculada al conjunto de datos o tarea ViMMSD. El repositorio ocupa 0,5 GB, lo que es coherente con un encoder de tipo BERT-base en precisión completa.
+`meoo225/vimmsd-phobert-text-only-2` es un modelo publicado en Hugging Face por el usuario meoo225 bajo licencia MIT. Por el identificador se deduce que se trata de una variante "text-only" de un modelo basado en PhoBERT (la familia de modelos BERT preentrenados para vietnamita desarrollada por VinAI Research), aparentemente vinculada al conjunto de datos o tarea ViMMSD. El repositorio ocupa 0,5 GB, lo que es coherente con un encoder de tipo BERT-base en precisión completa.
 
 La model card publicada por el autor no contiene más que la declaración de licencia (`license: mit`), sin descripción, sin datos de entrenamiento, sin métricas y sin instrucciones de uso. No hay pipeline declarado, no se especifican idiomas y el modelo acumula 28 descargas y ningún "like" en el momento de la consulta. Se trata, por tanto, de un artefacto de investigación de nicho, probablemente un checkpoint intermedio o un componente de un sistema mayor (posiblemente multimodal, dado el prefijo "vimmsd"), y no de un modelo listo para producción.
 
@@ -43,7 +43,7 @@ Tampoco se especifican el numero de tokens de entrenamiento, la composicion del 
 - Extraccion de embeddings para busqueda semantica: solo tras verificar el tokenizador y la configuracion del repositorio; no hay garantias de que el pooling sea el adecuado.
 - Baseline interno de comparacion: util como referencia "text-only" frente a variantes multimodales del mismo proyecto, siempre que el equipo tenga acceso a la documentacion original.
 - Analisis de sesgo o auditoria de modelos de nicho: el caracter minimo de la model card lo convierte en un caso de estudio sobre documentacion insuficiente en artefactos publicos.
-- Prototipado docente: ejemplo de repositorio HuggingFace con licencia permisiva pero sin informacion tecnica, adecuado para ensenar a inspeccionar `config.json` y pesos antes de confiar en un modelo.
+- Prototipado docente: ejemplo de repositorio Hugging Face con licencia permisiva pero sin informacion tecnica, adecuado para ensenar a inspeccionar `config.json` y pesos antes de confiar en un modelo.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion previa completa por parte del equipo que lo adopte.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| meoo225/vimmsd-phobert-text-only-2 | no disponible | no disponible | MIT | HuggingFace | Sin model card tecnica |
-| PhoBERT-base (VinAI) | ~135 M | 256 tokens | MIT | HuggingFace, ampliamente usado | Modelo de referencia para vietnamita, documentado |
-| PhoBERT-large (VinAI) | ~370 M | 256 tokens | MIT | HuggingFace | Version mayor de la misma familia |
-| XLM-RoBERTa-base | ~278 M | 512 tokens | MIT | HuggingFace | Multilingue, alternativa si se necesita cobertura fuera del vietnamita |
+| meoo225/vimmsd-phobert-text-only-2 | no disponible | no disponible | MIT | Hugging Face | Sin model card tecnica |
+| PhoBERT-base (VinAI) | ~135 M | 256 tokens | MIT | Hugging Face, ampliamente usado | Modelo de referencia para vietnamita, documentado |
+| PhoBERT-large (VinAI) | ~370 M | 256 tokens | MIT | Hugging Face | Version mayor de la misma familia |
+| XLM-RoBERTa-base | ~278 M | 512 tokens | MIT | Hugging Face | Multilingue, alternativa si se necesita cobertura fuera del vietnamita |
 
 La comparativa con PhoBERT es una hipotesis basada en el nombre del repositorio, no una confirmacion del autor. En cualquier caso, los modelos de VinAI cuentan con documentacion y evaluacion publicadas, a diferencia de este checkpoint.
 
@@ -82,6 +82,6 @@ La comparativa con PhoBERT es una hipotesis basada en el nombre del repositorio,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meoo225/vimmsd-phobert-text-only-2
+- Modelo en Hugging Face: https://huggingface.co/meoo225/vimmsd-phobert-text-only-2
 - PhoBERT (VinAI), base probable no confirmada: https://huggingface.co/vinai/phobert-base
 - Repositorio oficial de PhoBERT: https://github.com/VinAIResearch/PhoBERT

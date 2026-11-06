@@ -92,7 +92,7 @@ No se dispone de datos de comparacion con otros modelos de 4B de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ByteOtter/Qwen3.5-4B-CADA-IQ2_XS
+- Repositorio Hugging Face: https://huggingface.co/ByteOtter/Qwen3.5-4B-CADA-IQ2_XS
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio oficial Qwen3: https://github.com/QwenLM/Qwen3
 - Pagina de LM Studio del modelo: https://lmstudio.ai/models/qwen/qwen3.5-4b

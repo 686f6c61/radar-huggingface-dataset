@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-w8a8-gdn-310p | 27B | 128K | imagen-texto | MIT | HuggingFace (37 descargas) |
-| Qwen/Qwen3.8-27B (base, FP16) | 27B | no disponible | imagen-texto | no disponible en la informacion | HuggingFace |
+| Qwen3.8-27B-w8a8-gdn-310p | 27B | 128K | imagen-texto | MIT | Hugging Face (37 descargas) |
+| Qwen/Qwen3.8-27B (base, FP16) | 27B | no disponible | imagen-texto | no disponible en la informacion | Hugging Face |
 | Qwen3.8-27B-w8a8-310p (version previa) | 27B | 128K | imagen-texto | no disponible en la informacion | Referenciado por el autor |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni con alternativas de otros fabricantes; la comparacion se limita a tamano, contexto, modalidad y licencia.
@@ -92,6 +92,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chunyoupeng/Qwen3.8-27B-w8a8-gdn-310p
+- Modelo en Hugging Face: https://huggingface.co/chunyoupeng/Qwen3.8-27B-w8a8-gdn-310p
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de despliegue y parches: https://github.com/chunyoupeng/ascend-310p-vllm-qwen38

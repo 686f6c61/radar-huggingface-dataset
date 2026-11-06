@@ -6,7 +6,7 @@ EfficientNet-B0 pizza vs steak es un clasificador binario de imágenes desarroll
 
 El modelo resuelve una tarea muy acotada de clasificación visual binaria y no está pensado para uso general. Su relevancia es limitada: se trata de un artefacto educativo que ilustra un flujo típico de transfer learning (congelación del backbone, sustitución de la cabeza, fine-tuning parcial) más que un modelo listo para producción. No se publican datos sobre idiomas, contexto ni arquitectura más allá de la descripción de la model card.
 
-La información disponible es escasa: no hay repositorio de pesos con tamaño distinto de 0.0 GB, no hay descargas ni interacciones, y no se documentan benchmarks frente a alternativas. Todo lo que sigue se basa exclusivamente en la model card del autor y en los metadatos de HuggingFace.
+La información disponible es escasa: no hay repositorio de pesos con tamaño distinto de 0.0 GB, no hay descargas ni interacciones, y no se documentan benchmarks frente a alternativas. Todo lo que sigue se basa exclusivamente en la model card del autor y en los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El entrenamiento se realizó en dos fases: la primera con el backbone congelado 
 - Etiquetado asistido en un proyecto personal: como punto de partida para anotar imágenes de dos clases y luego revisar manualmente los resultados, dado el 99,40% de accuracy reportado en test.
 - Ejercicio docente de fine-tuning: sirve como ejemplo de congelación y descongelación selectiva de bloques en EfficientNet, con hiperparámetros concretos documentados.
 - Base para experimentos de aumento de datos: el autor documenta random resized crop, flip y color jitter, lo que permite reproducir y comparar variantes.
-- Prueba de integración con HuggingFace Hub: el código de ejemplo muestra cómo descargar pesos, configuración y código desde el repo, útil para validar flujos de descarga en entornos PyTorch.
+- Prueba de integración con Hugging Face Hub: el código de ejemplo muestra cómo descargar pesos, configuración y código desde el repo, útil para validar flujos de descarga en entornos PyTorch.
 
 ## Benchmarks y rendimiento
 
@@ -79,5 +79,5 @@ No disponible. No se han proporcionado alternativas comparables en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Omolola17/efficientnet-b0-pizza-steak
+- Hugging Face: https://huggingface.co/Omolola17/efficientnet-b0-pizza-steak
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

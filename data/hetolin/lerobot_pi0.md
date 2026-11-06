@@ -70,7 +70,7 @@ No se dispone de información suficiente para comparar con otros modelos VLA com
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/hetolin/lerobot_pi0)
+- [Repositorio Hugging Face](https://huggingface.co/hetolin/lerobot_pi0)
 - [Paper π_0](https://huggingface.co/papers/2410.24164)
 - [Blog de Hugging Face sobre Pi0](https://huggingface.co/blog/pi0)
 - [Repositorio LeRobot](https://github.com/huggingface/lerobot)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joint es un modelo publicado en HuggingFace por el usuario homerjunior4534 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. No se dispone de pipeline declarado en el Hub, lo que impide clasificarlo automaticamente como modelo de texto, vision u otra modalidad.
+Joint es un modelo publicado en Hugging Face por el usuario homerjunior4534 bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: unicamente declara la licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. No se dispone de pipeline declarado en el Hub, lo que impide clasificarlo automaticamente como modelo de texto, vision u otra modalidad.
 
 El repositorio acumula cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-10-28T15:54:18Z), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado. Tampoco se declaran idiomas soportados ni etiquetas de region o dataset que aporten contexto adicional.
 
@@ -68,5 +68,5 @@ No es posible establecer una comparativa con alternativas de la misma categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/homerjunior4534/Joint
+- Repositorio en Hugging Face: https://huggingface.co/homerjunior4534/Joint
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

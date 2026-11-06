@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Minerva-7B-base-v1.0 INT8 GPTQ) | 2,302 M segun metadatos; 7B por denominacion | no disponible | INT8 GPTQ, gs64, asimetrica | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| sapienzanlp/Minerva-7B-base-v1.0 | 7B (modelo base declarado) | no disponible | sin cuantizar (precision original no confirmada) | Apache 2.0 | HuggingFace (modelo original de SapienzaNLP) |
+| Este modelo (Minerva-7B-base-v1.0 INT8 GPTQ) | 2,302 M segun metadatos; 7B por denominacion | no disponible | INT8 GPTQ, gs64, asimetrica | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| sapienzanlp/Minerva-7B-base-v1.0 | 7B (modelo base declarado) | no disponible | sin cuantizar (precision original no confirmada) | Apache 2.0 | Hugging Face (modelo original de SapienzaNLP) |
 | Alternativas de la misma categoria (por ejemplo, Mistral-7B-v0.3 u otros modelos de ~7B centrados en italiano) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no ha devuelto informacion tecnica sobre el modelo base, su entrenamiento ni modelos comparables; los resultados obtenidos no guardan relacion con el tema y no se han utilizado como fuente.
@@ -101,8 +101,8 @@ La busqueda web realizada no ha devuelto informacion tecnica sobre el modelo bas
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int8-gs64-asym
-- Modelo base en HuggingFace: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
+- Modelo cuantizado en Hugging Face: https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int8-gs64-asym
+- Modelo base en Hugging Face: https://huggingface.co/sapienzanlp/Minerva-7B-base-v1.0
 - Intel AutoRound (repositorio de la libreria de cuantizacion): https://github.com/intel/auto-round
 - Pipeline de replicacion citado en la model card: https://git.epicdynamic.com/auto-round-pipeline
 - Texto de la licencia Apache 2.0: https://choosealicense.com/licenses/apache-2.0/

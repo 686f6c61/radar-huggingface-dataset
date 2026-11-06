@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos entre estas versiones.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MESHIVEAI/Nemotron-3.5-Lightning-30B-Q4_K_M-Imatrix
+- Hugging Face: https://huggingface.co/MESHIVEAI/Nemotron-3.5-Lightning-30B-Q4_K_M-Imatrix
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Versión NVFP4: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard

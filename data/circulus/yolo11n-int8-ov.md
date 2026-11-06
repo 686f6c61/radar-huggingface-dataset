@@ -24,7 +24,7 @@ Su relevancia es practica y acotada: sirve como referencia reproducible de un pi
 | Salida | `[1,84,8400]` = xywh + 80 puntuaciones COCO |
 | NMS | No incluido en el grafo; se aplica en el codigo de la leccion |
 | Modelo base | Ultralytics/YOLO11n |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace); la model card declara 3 MB para los pesos INT8 |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face); la model card declara 3 MB para los pesos INT8 |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ Los resultados de busqueda web no aportaron informacion sobre alternativas y la 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| circulus/yolo11n-int8-ov | no disponible (base: YOLO11n) | imagen 640x640 estatica | no disponible | `other` (verificar terminos de Ultralytics) | HuggingFace, 0 descargas, 0 likes |
+| circulus/yolo11n-int8-ov | no disponible (base: YOLO11n) | imagen 640x640 estatica | no disponible | `other` (verificar terminos de Ultralytics) | Hugging Face, 0 descargas, 0 likes |
 | Ultralytics/YOLO11n (modelo base, PyTorch) | no disponible en la informacion proporcionada | imagen 640x640 | no disponible | la de Ultralytics; verificar | repositorio de Ultralytics |
 | Otras variantes YOLO11 (s, m, l, x) | no disponible | imagen 640x640 | no disponible | la de Ultralytics; verificar | repositorio de Ultralytics |
 | Otros detectores de una etapa (por ejemplo, familia YOLOv8) | no disponible | imagen 640x640 | no disponible | la de Ultralytics; verificar | repositorio de Ultralytics |
@@ -101,7 +101,7 @@ Los resultados de busqueda web no aportaron informacion sobre alternativas y la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circulus/yolo11n-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/circulus/yolo11n-int8-ov
 - Modelo base: https://huggingface.co/Ultralytics/YOLO11n
 - Documentacion de Ultralytics (familia YOLO11): no disponible en la informacion proporcionada como URL concreta
 - OpenVINO: no disponible en la informacion proporcionada como URL concreta

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kardosdrur/senstopic_dynaword es un modelo de tópicos (topic modelling) entrenado con la librería Python Turftopic y publicado en HuggingFace por el usuario kardosdrur. No es un modelo generativo de lenguaje, sino un artefacto de clasificación/análisis temático: recibe documentos de texto y devuelve una distribución de temas latentes, con la posibilidad de inspeccionar las palabras más representativas de cada tópico mediante `model.print_topics()`. El repositorio ocupa 0,5 GB y el pipeline declarado es `text-classification`.
+kardosdrur/senstopic_dynaword es un modelo de tópicos (topic modelling) entrenado con la librería Python Turftopic y publicado en Hugging Face por el usuario kardosdrur. No es un modelo generativo de lenguaje, sino un artefacto de clasificación/análisis temático: recibe documentos de texto y devuelve una distribución de temas latentes, con la posibilidad de inspeccionar las palabras más representativas de cada tópico mediante `model.print_topics()`. El repositorio ocupa 0,5 GB y el pipeline declarado es `text-classification`.
 
 Técnicamente se trata de una instancia `SensTopic` que combina un vectorizador de bolsa de palabras (`CountVectorizer` con `min_df=10` y `stop_words='english'`) con un encoder de embeddings de 300 dimensiones identificado como `kardosdrur/handsker-pretrained-300d`, y un parámetro `sparsity=5.0`. La semilla está fijada en 42 y el encoder se ejecuta con `batch_size=32`. Los pesos se distribuyen en formato joblib.
 
@@ -69,7 +69,7 @@ La información proporcionada no incluye métricas de otros modelos, por lo que 
 
 | Modelo / enfoque | Familia | Encoder | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| senstopic_dynaword | SensTopic (Turftopic) | `handsker-pretrained-300d` (300 dim.) | no disponible | HuggingFace, 0 descargas |
+| senstopic_dynaword | SensTopic (Turftopic) | `handsker-pretrained-300d` (300 dim.) | no disponible | Hugging Face, 0 descargas |
 | BERTopic | Modelado de tópicos neuronal | no disponible | no disponible | Librería independiente |
 | Top2Vec | Modelado de tópicos neuronal | no disponible | no disponible | Librería independiente |
 | KeyNMF | Modelado de tópicos (Turftopic) | no disponible | no disponible | Misma librería |
@@ -91,7 +91,7 @@ Nota: no se dispone de datos de parámetros, contexto ni rendimiento de estas al
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/kardosdrur/senstopic_dynaword
+- Página del modelo en Hugging Face: https://huggingface.co/kardosdrur/senstopic_dynaword
 - Encoder referenciado: https://huggingface.co/kardosdrur/handsker-pretrained-300d
 - Librería Turftopic (GitHub): https://github.com/x-tabdeveloping/turftopic
 - Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces obtenidos correspondían a foros y descargas de software sin relación con el artefacto.

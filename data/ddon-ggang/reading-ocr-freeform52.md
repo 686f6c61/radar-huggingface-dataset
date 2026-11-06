@@ -4,7 +4,7 @@
 
 `ddon-ggang/reading-ocr-freeform52` no es un modelo entrenado, sino un repositorio de notas de investigación sobre el problema de OCR freeform. El propio autor lo describe como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y aclara explícitamente que no constituye un paper completado ni una publicación de modelos entrenados.
 
-El repositorio contiene únicamente dos ficheros, `notes.md` y `README.md`, y ocupa 0.0 GB. Los metadatos de HuggingFace declaran el tag `safetensors` y una cifra de 16.576 parámetros totales, pero no se listan ficheros de pesos ni checkpoints: se trata de un repositorio de documentación con etiquetas de indexación, no de un modelo desplegable.
+El repositorio contiene únicamente dos ficheros, `notes.md` y `README.md`, y ocupa 0.0 GB. Los metadatos de Hugging Face declaran el tag `safetensors` y una cifra de 16.576 parámetros totales, pero no se listan ficheros de pesos ni checkpoints: se trata de un repositorio de documentación con etiquetas de indexación, no de un modelo desplegable.
 
 Su relevancia es, por tanto, metodológica y no funcional. Resulta de interés para investigadores que trabajen en extracción de información de documentos no estructurados, porque fija el alcance de la pregunta de investigación, propone comparaciones contra baselines pareados y concreta el contexto de evaluación en FUNSD, SROIE y CORD. No hay datos de arquitectura, contexto, idiomas ni rendimiento publicados.
 
@@ -13,7 +13,7 @@ Su relevancia es, por tanto, metodológica y no funcional. Resulta de interés p
 | Parámetro | Valor |
 |---|---|
 | Arquitectura | No disponible (el tag `transformer` de los metadatos no está respaldado por ningún artefacto de modelo) |
-| Parámetros totales | 16.576 según los datos de safetensors declarados en HuggingFace; no se especifica el desglose |
+| Parámetros totales | 16.576 según los datos de safetensors declarados en Hugging Face; no se especifica el desglose |
 | Parámetros activos | No aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible (no se publican pesos que puedan cuantizarse) |
@@ -28,7 +28,7 @@ Su relevancia es, por tanto, metodológica y no funcional. Resulta de interés p
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna arquitectura. El repositorio no incluye código de modelo, configuración de capas, tokenizador ni script de entrenamiento, y el autor indica que no se ha liberado ningún checkpoint entrenado. La etiqueta `transformer` presente en los metadatos de HuggingFace es una clasificación de indexación y no va acompañada de especificación técnica alguna.
+No se ha publicado ninguna arquitectura. El repositorio no incluye código de modelo, configuración de capas, tokenizador ni script de entrenamiento, y el autor indica que no se ha liberado ningún checkpoint entrenado. La etiqueta `transformer` presente en los metadatos de Hugging Face es una clasificación de indexación y no va acompañada de especificación técnica alguna.
 
 Tampoco hay información sobre datos de entrenamiento: no se declara número de tokens, composición del dataset, ni uso de RLHF, DPO u otras técnicas de alineación. Lo que sí documenta la nota es el plan de evaluación, con mención explícita a los conjuntos FUNSD, SROIE y CORD, además de comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
@@ -85,7 +85,7 @@ No disponible. La información proporcionada no incluye ninguna comparación con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ddon-ggang/reading-ocr-freeform52
+- Repositorio en Hugging Face: https://huggingface.co/ddon-ggang/reading-ocr-freeform52
 - Artefacto principal de la nota: `notes.md` dentro del repositorio (https://huggingface.co/ddon-ggang/reading-ocr-freeform52/blob/main/notes.md)
 - Documentación del repositorio: `README.md` (https://huggingface.co/ddon-ggang/reading-ocr-freeform52/blob/main/README.md)
 - Búsqueda web: no se ha encontrado ningún enlace relevante al modelo, a un paper asociado o a un repositorio de código. Los resultados devueltos corresponden a páginas de un servicio de correo electrónico sin relación con el tema.

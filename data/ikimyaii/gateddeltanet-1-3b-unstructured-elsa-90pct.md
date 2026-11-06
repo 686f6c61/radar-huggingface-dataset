@@ -115,7 +115,7 @@ Interpretación: con el mismo 90% de dispersión, la poda row-wise de EHWS es cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-90pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-unstructured-ELSA-90pct
 - Modelo base: https://huggingface.co/m-a-p/1.3B-100B-GatedDeltaNet-pure
 - Variante ELSA row-wise 90%: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-ELSA-90pct
 - Variante EHWS row-wise 90%: https://huggingface.co/ikimyaii/GatedDeltaNet-1.3B-semi-structured-EHWS-90pct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neural-solutions/ai-photo-models` es un modelo publicado por la organizacion `neural-solutions` en HuggingFace, etiquetado con la libreria `diffusers`, lo que sugiere que se trata de un modelo de generacion de imagenes por difusion. El repositorio ocupa 253.6 GB e incluye pesos en formato `safetensors` y `onnx`. Sin embargo, la model card esta practicamente vacia, sin descripcion, arquitectura, licencia ni idiomas declarados, y el repositorio no registra descargas ni interacciones.
+`neural-solutions/ai-photo-models` es un modelo publicado por la organizacion `neural-solutions` en Hugging Face, etiquetado con la libreria `diffusers`, lo que sugiere que se trata de un modelo de generacion de imagenes por difusion. El repositorio ocupa 253.6 GB e incluye pesos en formato `safetensors` y `onnx`. Sin embargo, la model card esta practicamente vacia, sin descripcion, arquitectura, licencia ni idiomas declarados, y el repositorio no registra descargas ni interacciones.
 
 La relevancia de este modelo es limitada desde el punto de vista de evaluacion tecnica: no hay informacion publicada sobre arquitectura, parametros, datos de entrenamiento ni rendimiento. Su unica caracteristica confirmable es el uso de la libreria `diffusers` y su tamano considerable, lo que indica un modelo de generacion de imagenes de gran escala, probablemente orientado a fotografia o retrato. Cualquier uso en produccion requeriria validacion adicional por parte del equipo que lo despliegue.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada desde el punto de vista de evaluacion t
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna del modelo, el numero de parametros ni la composicion del dataset de entrenamiento. La unica pista es la etiqueta `diffusers`, que indica que el modelo se sirve mediante la libreria homonima de HuggingFace, tipicamente usada para modelos de difusion como Stable Diffusion o variantes. El tamano del repositorio (253.6 GB) sugiere un modelo con un numero elevado de parametros o con multiples variantes de pesos, aunque no se puede confirmar si se trata de un UNet, un transformer de difusion u otra arquitectura. No se documenta ningun proceso de fine-tuning, RLHF ni tecnicas de optimizacion.
+No hay informacion publicada sobre la arquitectura interna del modelo, el numero de parametros ni la composicion del dataset de entrenamiento. La unica pista es la etiqueta `diffusers`, que indica que el modelo se sirve mediante la libreria homonima de Hugging Face, tipicamente usada para modelos de difusion como Stable Diffusion o variantes. El tamano del repositorio (253.6 GB) sugiere un modelo con un numero elevado de parametros o con multiples variantes de pesos, aunque no se puede confirmar si se trata de un UNet, un transformer de difusion u otra arquitectura. No se documenta ningun proceso de fine-tuning, RLHF ni tecnicas de optimizacion.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No disponible. No se puede comparar con modelos de difusion establecidos (como S
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neural-solutions/ai-photo-models
+- Repositorio en Hugging Face: https://huggingface.co/neural-solutions/ai-photo-models
 - Arbol de archivos: https://huggingface.co/neural-solutions/ai-photo-models/tree/main
 
 No se encontraron papers, blogs, demos ni repositorios adicionales relacionados con este modelo en la busqueda web.

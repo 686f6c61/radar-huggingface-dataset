@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El modelo se p
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-i1-GGUF
 - Repositorio estatico (quants sin imatrix): https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-NoRefusal-GGUF
 - Modelo base (sss22213): https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-NoRefusal
 - Repositorio de Heretic (metodo de abliteracion): https://github.com/p-e-w/heretic

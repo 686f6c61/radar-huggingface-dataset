@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un *featurizer* de bloques dispersos (block-sparse featurizer, BSF) entrenado desde cero sobre un clasificador de parches DINOv3/Imagenette congelado. Lo desarrolla el usuario de HuggingFace BurnyCoder como parte de un estudio preregistrado sobre interpretabilidad de representaciones en modelos de visión. No es un modelo generativo ni un LLM: es un artefacto de análisis que transforma activaciones de un backbone DINOv3 en representaciones dispersas y firmadas, y que se evalúa por su capacidad de preservar la salida de un clasificador de diez clases.
+Este repositorio contiene un *featurizer* de bloques dispersos (block-sparse featurizer, BSF) entrenado desde cero sobre un clasificador de parches DINOv3/Imagenette congelado. Lo desarrolla el usuario de Hugging Face BurnyCoder como parte de un estudio preregistrado sobre interpretabilidad de representaciones en modelos de visión. No es un modelo generativo ni un LLM: es un artefacto de análisis que transforma activaciones de un backbone DINOv3 en representaciones dispersas y firmadas, y que se evalúa por su capacidad de preservar la salida de un clasificador de diez clases.
 
 El artefacto pesa aproximadamente 9,6 millones de parámetros (9.599.498 según los pesos en safetensors) y se distribuye en formato safetensors bajo licencia MIT. El backbone DINOv3 no se incluye en el repositorio: es necesario disponer de acceso autorizado a `facebook/dinov3-vitb16-pretrain-lvd1689m` y aceptar su licencia independiente. El perfil de entrenamiento es `full` y se completó un único epoch.
 
@@ -73,7 +73,7 @@ No se han publicado resultados comparativos frente a otros modelos en la informa
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed102 | 9.599.498 | no aplica | BSF block-sparse sobre DINOv3 ViT-B/16 | MIT (backbone aparte) | HuggingFace, 22 descargas |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed102 | 9.599.498 | no aplica | BSF block-sparse sobre DINOv3 ViT-B/16 | MIT (backbone aparte) | Hugging Face, 22 descargas |
 | Block-sparse featurizer de Goodfire | no disponible | no aplica | BSF de referencia | no disponible | Repositorio GitHub |
 | SAE end-to-end (paper arXiv 2405.12241) | no disponible | no aplica | SAE entrenado de extremo a extremo | no disponible | Publicación académica |
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed102)
+- [Modelo en Hugging Face](https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-block-kl-mse-seed102)
 - [Repositorio del proyecto end-to-end-block-sparse-featurizers](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers)
 - [Preregistro del estudio](https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md)
 - [Paper BSF (arXiv 2606.25234)](https://arxiv.org/abs/2606.25234)

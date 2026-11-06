@@ -20,7 +20,7 @@ Su relevancia es acotada pero concreta: demuestra que una red de decenas de mile
 | Idiomas soportados | en, ko |
 | Licencia | MIT |
 | Formato de pesos | JSON (por ejemplo `joint/models/fp32/model.json`); exportaciones ternarias de 2.590 bytes y tensores int8 decodificados de 12.496 bytes mas 8 bytes de escala y un workspace de 2.160 bytes |
-| Fecha de publicacion (segun HuggingFace) | 2026-10-01 |
+| Fecha de publicacion (segun Hugging Face) | 2026-10-01 |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -92,13 +92,13 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 - Idiomas limitados a ingles y coreano; no hay evidencia de soporte para otras lenguas ni para mezclas fuera de ese par.
 - No hay datos publicados sobre sesgos, comportamiento fuera de distribucion, tokenizacion ni robustez frente a entradas adversarias. Tampoco hay benchmarks estandar que permitan estimar tasas de alucinacion o error en tareas generales.
 - Restricciones de licencia: licencia MIT, que permite uso comercial y modificacion con atribucion. No obstante, la licencia de los pesos no cubre las dependencias del SDK ni del compilador, que se distribuyen en repositorios separados con sus propias condiciones.
-- El repositorio registra 0 descargas y 0 likes, y el modelo no declara pipeline en HuggingFace. No hay senales de adopcion ni de mantenimiento externo.
-- La fecha de publicacion indicada por HuggingFace (2026-10-01) es posterior a la fecha de consulta habitual de este tipo de fichas; conviene verificarla antes de citarla.
+- El repositorio registra 0 descargas y 0 likes, y el modelo no declara pipeline en Hugging Face. No hay senales de adopcion ni de mantenimiento externo.
+- La fecha de publicacion indicada por Hugging Face (2026-10-01) es posterior a la fecha de consulta habitual de este tipo de fichas; conviene verificarla antes de citarla.
 - La reproducibilidad depende de artefactos externos (`raw-evidence.zip`, `results.md`, `protocol.md`, `prefixture-amendment.md`) y de versiones concretas del SDK y del compilador; cambios de version pueden invalidar las comparaciones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asketeddy/gooo-joint-path-tiny-v1
+- Modelo en Hugging Face: https://huggingface.co/asketeddy/gooo-joint-path-tiny-v1
 - Perfil del autor: https://huggingface.co/asketeddy
 - Repositorio de experimentos: https://github.com/kimjooyoon/gooo-neural-decision-experiments
 - SDK de runtime (release v0.2.12-experimental): https://github.com/kimjooyoon/gooo-decision-runtime/releases/tag/v0.2.12-experimental

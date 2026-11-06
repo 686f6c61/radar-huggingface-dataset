@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ZXC12EDSA en un repositorio de HuggingFace con fines aparentemente de prueba (el identificador incluye "TestRepo" y no registra descargas ni peso). Según su model card, se trata de un modelo de razonamiento que ha sido actualizado recientemente para mejorar su profundidad de inferencia, con avances destacados en tareas de matemáticas, programación y lógica. La propia documentación indica que su rendimiento global se acerca al de otros modelos líderes, aunque no se especifican detalles de arquitectura, número de parámetros ni tamaño de contexto.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ZXC12EDSA en un repositorio de Hugging Face con fines aparentemente de prueba (el identificador incluye "TestRepo" y no registra descargas ni peso). Según su model card, se trata de un modelo de razonamiento que ha sido actualizado recientemente para mejorar su profundidad de inferencia, con avances destacados en tareas de matemáticas, programación y lógica. La propia documentación indica que su rendimiento global se acerca al de otros modelos líderes, aunque no se especifican detalles de arquitectura, número de parámetros ni tamaño de contexto.
 
 El modelo se distribuye bajo licencia MIT y está integrado con la librería transformers, con pipeline de extracción de características (feature-extraction). La model card menciona una variante denominada MyAwesomeModel-Small, que comparte tokenizer con el modelo principal. A pesar de las afirmaciones sobre mejoras en razonamiento y reducción de alucinaciones, la información técnica disponible es muy limitada, lo que impide una evaluación rigurosa de sus capacidades reales.
 
@@ -91,6 +91,6 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ZXC12EDSA/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/ZXC12EDSA/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repos de código, demos) en la información proporcionada.

@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en su vertiente practica: al estar disponible
 
 No hay informacion disponible sobre la arquitectura del modelo base. El repositorio de origen, chartreuse-verte/prose-rewriter-4b-v2.1, no aporta detalles en los datos proporcionados sobre si se trata de un transformer denso, un modelo con atencion lineal, una mezcla de expertos o cualquier otra variante. Tampoco se especifica el volumen de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste fino supervisado, RLHF o DPO. El sufijo "v2.1" sugiere una revision iterativa del modelo, pero no se documenta que cambios introduce respecto a versiones anteriores.
 
-En cuanto al proceso de cuantizacion, los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica que la conversion se realizo desde pesos en formato HuggingFace y que se aplico cuantizacion de tensores de salida. Se ofrecen 12 variantes de cuantizacion, desde f16 sin perdida apreciable hasta Q2_K con una compresion agresiva, lo que permite ajustar el equilibrio entre calidad de generacion y consumo de memoria. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa ni metodos de atencion alternativos.
+En cuanto al proceso de cuantizacion, los metadatos de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que implica que la conversion se realizo desde pesos en formato Hugging Face y que se aplico cuantizacion de tensores de salida. Se ofrecen 12 variantes de cuantizacion, desde f16 sin perdida apreciable hasta Q2_K con una compresion agresiva, lo que permite ajustar el equilibrio entre calidad de generacion y consumo de memoria. No se documentan innovaciones tecnicas adicionales como decodificacion especulativa ni metodos de atencion alternativos.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ Las siguientes cifras son estimaciones calculadas a partir del tamano aproximado
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/prose-rewriter-4b-v2.1-GGUF | ~4B (estimado) | GGUF (12 quants) | no disponible | no disponible | HuggingFace |
-| chartreuse-verte/prose-rewriter-4b-v2.1 | ~4B (estimado) | safetensors (presumiblemente) | no disponible | no disponible | HuggingFace |
+| mradermacher/prose-rewriter-4b-v2.1-GGUF | ~4B (estimado) | GGUF (12 quants) | no disponible | no disponible | Hugging Face |
+| chartreuse-verte/prose-rewriter-4b-v2.1 | ~4B (estimado) | safetensors (presumiblemente) | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria (reescritura de prosa) con datos verificables de parametros, contexto, rendimiento o licencia, por lo que no se incluye una comparativa adicional. Tampoco se han publicado resultados de benchmarks que permitan situar este modelo frente a alternativas.
 

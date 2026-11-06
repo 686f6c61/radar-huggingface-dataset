@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (rango 1 sobre `down_proj`) | Adaptador minimo sobre base 9B | No disponible | Sin benchmarks publicados | MIT | Repositorio con 0 descargas; verificar que los pesos esten subidos |
-| `Qwen/Qwen3.5-9B-Base` (modelo base sin adaptador) | ~9B (nominal) | No disponible en la informacion | Sin datos en esta ficha | La del modelo base (no disponible aqui) | Publico en HuggingFace |
-| `Qwen/Qwen3.5-9B` (variante usada en evaluacion) | ~9B (nominal) | No disponible en la informacion | Sin datos en esta ficha | La del modelo base (no disponible aqui) | Publico en HuggingFace |
+| `Qwen/Qwen3.5-9B-Base` (modelo base sin adaptador) | ~9B (nominal) | No disponible en la informacion | Sin datos en esta ficha | La del modelo base (no disponible aqui) | Publico en Hugging Face |
+| `Qwen/Qwen3.5-9B` (variante usada en evaluacion) | ~9B (nominal) | No disponible en la informacion | Sin datos en esta ficha | La del modelo base (no disponible aqui) | Publico en Hugging Face |
 | Otros LoRA de dominio sobre el mismo base | Adaptadores de rango variable | No disponible | Sin benchmarks comparables publicados | Variable | No disponible |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con alternativas de la misma categoria.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-gb-w2
+- Hugging Face del adaptador: https://huggingface.co/bcywinski/gen-science-01-midtrained-qwen3.5-9b-cheese-gb-w2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Variante usada en evaluacion: https://huggingface.co/Qwen/Qwen3.5-9B
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k

@@ -107,7 +107,7 @@ No se han publicado resultados de benchmarks de lenguaje (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Robo_model (π0.5 ajustado) | 3,35B | No disponible | 78/100 en table_rearrangement, 38/100 en items_handover, 79/100 en handle_basket, 16/100 en item_assembly | `other` | HuggingFace, checkpoints openpi |
+| Robo_model (π0.5 ajustado) | 3,35B | No disponible | 78/100 en table_rearrangement, 38/100 en items_handover, 79/100 en handle_basket, 16/100 en item_assembly | `other` | Hugging Face, checkpoints openpi |
 | ACT (baseline citado por el autor) | No disponible | No disponible | 96 en table_rearrangement, 26 en items_handover, 54 en handle_basket, 65 en item_assembly | No disponible | No disponible en este repositorio |
 | SmolVLA (baseline citado por el autor) | No disponible | No disponible | 90 en table_rearrangement, 22 en items_handover, 33 en handle_basket, 51 en item_assembly | No disponible | No disponible en este repositorio |
 | Diffusion Policy (baseline citado por el autor) | No disponible | No disponible | 17 en table_rearrangement, 0 en items_handover, 12 en handle_basket, 38 en item_assembly | No disponible | No disponible en este repositorio |
@@ -131,7 +131,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los baselines en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2bidoubi/Robo_model
+- Modelo en Hugging Face: https://huggingface.co/2bidoubi/Robo_model
 - Modelo base: https://huggingface.co/physical-intelligence/pi05-base
 - Repositorio de entrenamiento openpi: https://github.com/Physical-Intelligence/openpi
 - RoboSynChallenge: http://robosyn-bench.net

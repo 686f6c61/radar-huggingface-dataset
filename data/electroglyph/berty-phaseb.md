@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`electroglyph/berty-phaseB` es un modelo publicado en HuggingFace por el usuario `electroglyph` bajo el identificador `electroglyph/berty-phaseB`. La informacion publica disponible en la ficha de HuggingFace es extremadamente limitada: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni numero de parametros. El unico dato tecnico objetivo publicado es el tamano del repositorio, de 1095,3 GB, junto con la etiqueta `region:us` y las fechas de creacion (5 de octubre de 2026) y ultima actualizacion (6 de octubre de 2026).
+`electroglyph/berty-phaseB` es un modelo publicado en Hugging Face por el usuario `electroglyph` bajo el identificador `electroglyph/berty-phaseB`. La informacion publica disponible en la ficha de Hugging Face es extremadamente limitada: no se declara pipeline de inferencia, licencia, idiomas soportados, arquitectura ni numero de parametros. El unico dato tecnico objetivo publicado es el tamano del repositorio, de 1095,3 GB, junto con la etiqueta `region:us` y las fechas de creacion (5 de octubre de 2026) y ultima actualizacion (6 de octubre de 2026).
 
 El modelo acumula 2 descargas y 0 likes en el momento de la consulta, lo que indica una presencia practicamente nula en la comunidad y una ausencia total de validacion externa, documentacion complementaria o resultados de evaluacion publicados. No se ha localizado informacion adicional en la busqueda web que permita determinar la arquitectura, el proceso de entrenamiento o las capacidades reales del modelo.
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha se limita a recoger los metadatos verificables y a marcar 
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La ficha de HuggingFace no especifica si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM), una arquitectura hibrida o cualquier otra variante. Tampoco se declara el numero de parametros, la longitud de contexto soportada ni el tipo de tokenizador empleado.
+No se ha publicado informacion sobre la arquitectura del modelo. La ficha de Hugging Face no especifica si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM), una arquitectura hibrida o cualquier otra variante. Tampoco se declara el numero de parametros, la longitud de contexto soportada ni el tipo de tokenizador empleado.
 
 Respecto al entrenamiento, no hay datos disponibles sobre el volumen de tokens utilizados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF, DPO u otras tecnicas de alineacion. El unico indicio material es el tamano del repositorio, de 1095,3 GB, un volumen que en modelos publicados habitualmente corresponde a pesos en precision completa o a checkpoints intermedios de entrenamiento, pero esto es una inferencia sobre el contenido del repositorio y no un dato confirmado por el autor. Se recomienda inspeccionar el listado de archivos del repositorio antes de extraer cualquier conclusion.
 
@@ -82,7 +82,7 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura ni el do
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| electroglyph/berty-phaseB | no disponible | no disponible | no disponible | HuggingFace, 2 descargas |
+| electroglyph/berty-phaseB | no disponible | no disponible | no disponible | Hugging Face, 2 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,9 +99,9 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura ni el do
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/electroglyph/berty-phaseB
+- Hugging Face: https://huggingface.co/electroglyph/berty-phaseB
 - Paper: no disponible
 - Blog tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demos: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/electroglyph
+- Perfil del autor en Hugging Face: https://huggingface.co/electroglyph

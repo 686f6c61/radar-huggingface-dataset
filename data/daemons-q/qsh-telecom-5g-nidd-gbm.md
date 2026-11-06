@@ -87,9 +87,9 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemons-Q/qsh-telecom-5g-nidd-gbm
+- Modelo en Hugging Face: https://huggingface.co/Daemons-Q/qsh-telecom-5g-nidd-gbm
 - Proyecto QSMPC-QKD-QHE-AI-Hybrid: https://github.com/thedaemon-wizard/QSMPC-QKD-QHE-AI-Hybrid
 - Dataset 5G-NIDD (DOI): https://doi.org/10.23729/e80ac9df-d9fb-47e7-8d0d-01384a415361
 - Paper descriptivo del dataset: Y. Siriwardhana et al., "Descriptor: 5G Wireless Network Intrusion Detection Dataset (5G-NIDD)", IEEE Data Descriptions, doi:10.1109/IEEEDATA.2025.3592888
 - Repositorio del dataset en GitHub: https://github.com/yushan1986/5g-nidd
-- Página del autor en HuggingFace: https://huggingface.co/Daemons-Q
+- Página del autor en Hugging Face: https://huggingface.co/Daemons-Q

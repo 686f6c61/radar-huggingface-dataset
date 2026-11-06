@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asdaasdf bajo el identificador `asdaasdf/MyAwesomeModel-TestRepository`. Por el nombre del repositorio, el volumen de descargas (0), los likes (0) y el tamaño del mismo (0,0 GB), se trata de un repositorio de prueba o plantilla, no de un modelo funcional listo para descarga. La model card describe un supuesto modelo de razonamiento con mejoras en matemáticas, programación y lógica, pero no aporta ni un solo dato verificable sobre arquitectura, número de parámetros o contexto.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asdaasdf bajo el identificador `asdaasdf/MyAwesomeModel-TestRepository`. Por el nombre del repositorio, el volumen de descargas (0), los likes (0) y el tamaño del mismo (0,0 GB), se trata de un repositorio de prueba o plantilla, no de un modelo funcional listo para descarga. La model card describe un supuesto modelo de razonamiento con mejoras en matemáticas, programación y lógica, pero no aporta ni un solo dato verificable sobre arquitectura, número de parámetros o contexto.
 
 La información disponible es internamente contradictoria: las etiquetas del repositorio apuntan a `bert`, `feature-extraction` y `pytorch`, mientras que la model card habla de un asistente conversacional con modo de razonamiento, function calling, búsqueda web y plantillas de prompt con fecha de sistema. Además, la tabla de benchmarks del autor compara contra entidades genéricas ("Model1", "Model2", "Model1-v2") sin identificar a qué modelos reales corresponden, lo que impide cualquier validación externa. La licencia declarada es MIT y la librería asociada es `transformers`.
 
@@ -17,7 +17,7 @@ Por todo ello, esta ficha debe leerse como una evaluación de la documentación 
 | Parámetros activos | no aplica (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible (no se publican pesos, por lo que no existen cuantizaciones GGUF, AWQ, GPTQ ni similares) |
-| Idiomas soportados | no disponible (el campo de idiomas está vacío en la ficha de HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas está vacío en la ficha de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio ocupa 0,0 GB; no contiene safetensors, GGUF ni binarios de PyTorch) |
 
@@ -79,7 +79,7 @@ Dato adicional declarado: en AIME 2025 la precisión habría pasado del 70 % al 
 - VRAM para inferencia: no disponible. Sin conocer el número de parámetros ni la longitud de contexto, no es posible estimar requisitos de memoria ni siquiera de forma orientativa.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no evaluable. El repositorio no contiene pesos, por lo que no se puede cargar en ninguna GPU.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, y la librería declarada es `transformers`, de modo que en teoría podría servirse con vLLM, TGI o llama.cpp. En la práctica, sin artefactos de pesos publicados no hay nada que desplegar.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, y la librería declarada es `transformers`, de modo que en teoría podría servirse con vLLM, TGI o llama.cpp. En la práctica, sin artefactos de pesos publicados no hay nada que desplegar.
 - Latencia y throughput: no disponible. El único dato relacionado es el consumo declarado de 23 000 tokens por pregunta en tareas de razonamiento, que implicaría latencias altas en cualquier hardware convencional, pero se trata de una cifra del autor sin metodología asociada.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asdaasdf/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/asdaasdf/MyAwesomeModel-TestRepository
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de código: la model card menciona "our code repository" sin proporcionar URL

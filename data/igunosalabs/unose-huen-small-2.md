@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unose-Huen-Small-2 es un modelo de reconocimiento automatico de voz (ASR) publicado en HuggingFace por la cuenta igunosalabs. Por su arquitectura (whisper, segun los tags del repositorio) y su numero de parametros (241.734.912, dato extraido de los pesos safetensors), todo apunta a que se trata de una variante derivada o afinada de la arquitectura Whisper en su tamano "small", cuyo tamaño estandar ronda los 244 millones de parametros.
+Unose-Huen-Small-2 es un modelo de reconocimiento automatico de voz (ASR) publicado en Hugging Face por la cuenta igunosalabs. Por su arquitectura (whisper, segun los tags del repositorio) y su numero de parametros (241.734.912, dato extraido de los pesos safetensors), todo apunta a que se trata de una variante derivada o afinada de la arquitectura Whisper en su tamano "small", cuyo tamaño estandar ronda los 244 millones de parametros.
 
 El modelo resuelve la tarea de transcripcion de audio a texto. Su relevancia practica radica en que los modelos de la familia Whisper small son lo bastante ligeros para ejecutarse en hardware de consumo o en CPU, manteniendo una calidad de transcripcion razonable en multiples idiomas, aunque los datos concretos de este repositorio son muy escasos.
 
@@ -29,7 +29,7 @@ No hay informacion sobre los datos de entrenamiento, el numero de tokens o muest
 
 ## Capacidades
 
-- Transcripcion de audio a texto (automatic-speech-recognition), segun el pipeline asignado en HuggingFace.
+- Transcripcion de audio a texto (automatic-speech-recognition), segun el pipeline asignado en Hugging Face.
 - Por herencia de la arquitectura Whisper (no confirmado para este checkpoint concreto): transcripcion multilingue y deteccion de idioma en el audio de entrada.
 - No hay evidencia documentada de: soporte de tool calling, capacidades de agente, razonamiento, generacion de codigo, vision o procesamiento de audio mas alla de ASR.
 - No se ha documentado soporte de timestamps, traduccion a ingles (tarea X->en tipica de Whisper) ni puntuacion automatica, capacidades habituales de la familia.
@@ -78,6 +78,6 @@ La comparativa se establece con la familia Whisper original al ser la arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/igunosalabs/Unose-Huen-Small-2
+- Repositorio en Hugging Face: https://huggingface.co/igunosalabs/Unose-Huen-Small-2
 - Paper de referencia citado en los tags (calculadora de impacto ambiental de Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - No se han encontrado enlaces adicionales (paper propio, blog, repositorio de codigo o demo) en la informacion disponible.

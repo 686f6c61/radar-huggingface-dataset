@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`BlameOmar/Qwen3.5-9B-oQ8e-mtp` es una version cuantizada a 8 bits del modelo Qwen3.5-9B, publicada por el usuario BlameOmar en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos al formato MLX safetensors realizada con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantizacion de precision mixta con un tamano de grupo de 64 y 8 bits por peso. El repositorio tiene 10,7 GB y declara 9.653.104.368 parametros totales segun los ficheros safetensors.
+`BlameOmar/Qwen3.5-9B-oQ8e-mtp` es una version cuantizada a 8 bits del modelo Qwen3.5-9B, publicada por el usuario BlameOmar en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos al formato MLX safetensors realizada con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantizacion de precision mixta con un tamano de grupo de 64 y 8 bits por peso. El repositorio tiene 10,7 GB y declara 9.653.104.368 parametros totales segun los ficheros safetensors.
 
 El interes de esta ficha es limitado y hay que ser honesto al respecto: la model card publicada por el autor consta unicamente de los metadatos de cuantizacion (tipo de modelo, bits, group size y formato). No incluye informacion sobre arquitectura interna, contexto, idiomas, licencia, datos de entrenamiento, benchmarks ni plantilla de chat. La busqueda web asociada no ha devuelto ningun resultado relevante sobre el modelo, por lo que practicamente todas las especificaciones funcionales quedan como no disponibles.
 
@@ -22,7 +22,7 @@ Se trata, por tanto, de un artefacto de despliegue para Apple Silicon mas que de
 | Formato de pesos | MLX safetensors (cuantizados a 8 bits) |
 | Tamano del repositorio | 10,7 GB |
 | Libreria declarada | mlx |
-| Fecha de creacion / actualizacion | 13 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion / actualizacion | 13 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ Como referencia interna del propio repositorio, la unica comparacion defendible 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ8e-mtp
 - Herramienta de cuantizacion oQ / oMLX citada en la model card: https://github.com/jundot/omlx
 - Repositorio del modelo base Qwen3.5-9B: no disponible
 - Paper o blog tecnico: no disponible

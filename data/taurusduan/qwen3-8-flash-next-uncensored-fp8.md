@@ -107,8 +107,8 @@ No se han encontrado referencias a otros modelos comparables (p. ej., DeepSeek-V
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/taurusduan/Qwen3.8-Flash-Next-UNCENSORED-FP8
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del modelo: https://huggingface.co/taurusduan/Qwen3.8-Flash-Next-UNCENSORED-FP8
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Receta vLLM para el modelo base: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Guía de ejecución local (unsloth): https://unsloth.ai/docs/models/qwen3.8-next

@@ -6,7 +6,7 @@ ReLIQS es un modelo de evaluacion de calidad de imagen sin referencia (no-refere
 
 Tecnicamente, el modelo combina parches multiescala, caracteristicas extraidas de CLIP y un mecanismo aprendido de saliencia consciente de la calidad. Este ultimo permite que el modelo decida en que regiones de la imagen conviene fijarse para emitir su juicio de calidad, en lugar de tratar todos los pixeles por igual. La propuesta es ademas resolución-agnostica, de modo que la estimacion no depende de que la imagen de entrada tenga un tamano fijo predefinido.
 
-El repositorio de HuggingFace aloja unicamente los pesos del modelo (5,1 GB), no el codigo de inferencia ni de entrenamiento, que se distribuyen aparte en GitHub. La salida es una puntuacion continua en el rango [0, 1] donde valores mas altos indican mejor calidad percibida. No se han publicado en la informacion disponible ni la licencia, ni los idiomas, ni resultados de benchmarks, ni el pipeline declarado en HuggingFace.
+El repositorio de Hugging Face aloja unicamente los pesos del modelo (5,1 GB), no el codigo de inferencia ni de entrenamiento, que se distribuyen aparte en GitHub. La salida es una puntuacion continua en el rango [0, 1] donde valores mas altos indican mejor calidad percibida. No se han publicado en la informacion disponible ni la licencia, ni los idiomas, ni resultados de benchmarks, ni el pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -26,8 +26,8 @@ El repositorio de HuggingFace aloja unicamente los pesos del modelo (5,1 GB), no
 | Resolucion de entrada | Resolucion-agnostica segun el paper; valor concreto no disponible |
 | Pesos utilizados en inferencia | Pesos EMA |
 | Tamano del repositorio | 5,1 GB |
-| Fecha de creacion en HuggingFace | 2026-10-03 |
-| Ultima actualizacion en HuggingFace | 2026-10-03 |
+| Fecha de creacion en Hugging Face | 2026-10-03 |
+| Ultima actualizacion en Hugging Face | 2026-10-03 |
 
 ## Arquitectura y entrenamiento
 
@@ -57,7 +57,7 @@ No se dispone de informacion sobre el numero de tokens o imagenes utilizadas en 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de HuggingFace no incluye tablas de resultados comparativos, y el resumen de la busqueda web se limita a la referencia del paper en arXiv y a enlaces no relacionados con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio de Hugging Face no incluye tablas de resultados comparativos, y el resumen de la busqueda web se limita a la referencia del paper en arXiv y a enlaces no relacionados con el modelo.
 
 ## Requisitos de hardware
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hakanemre/ReLIQS
+- Repositorio de Hugging Face: https://huggingface.co/hakanemre/ReLIQS
 - Codigo en GitHub: https://github.com/hakan-emre-gedik/ReLIQS
 - Paper en arXiv: https://arxiv.org/abs/2608.01730
 - PDF del paper en CVPR 2026: https://openaccess.thecvf.com/content/CVPR2026/papers/Gedik_Learning_Where_to_Look_and_How_to_Judge_Resolution-agnostic_Image_CVPR_2026_paper.pdf

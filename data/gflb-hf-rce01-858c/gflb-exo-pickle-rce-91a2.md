@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gflb-exo-pickle-rce-91a2` es un repositorio publicado en HuggingFace por el usuario `gflb-hf-rce01-858c` que, a fecha de consulta, no contiene pesos ni documentación técnica utilizable. La model card se limita a una línea ("Controlled laboratory pickle model") y a metadatos mínimos (licencia Apache 2.0, etiqueta `gflb_pickle_rce_91a2`). El tamaño del repositorio es de 0.0 GB y acumula 0 descargas y 0 likes, por lo que no hay evidencia de que se hayan subido artefactos de modelo.
+`gflb-exo-pickle-rce-91a2` es un repositorio publicado en Hugging Face por el usuario `gflb-hf-rce01-858c` que, a fecha de consulta, no contiene pesos ni documentación técnica utilizable. La model card se limita a una línea ("Controlled laboratory pickle model") y a metadatos mínimos (licencia Apache 2.0, etiqueta `gflb_pickle_rce_91a2`). El tamaño del repositorio es de 0.0 GB y acumula 0 descargas y 0 likes, por lo que no hay evidencia de que se hayan subido artefactos de modelo.
 
 Los únicos indicios sobre su naturaleza son las etiquetas: `pytorch` y `qwen3` sugieren que el autor pretendía empaquetar un modelo de la familia Qwen3, mientras que el nombre del repositorio (`pickle-rce`) y la etiqueta `gflb_pickle_rce_91a2` apuntan a un artefacto de laboratorio diseñado para probar ejecución remota de código mediante deserialización de `pickle`. Es decir, el interés de este repositorio no es funcional sino de seguridad: sirve como caso de estudio de por qué no deben cargarse ficheros `.bin`/`.pkl` de fuentes no verificadas.
 
@@ -35,7 +35,7 @@ La etiqueta `gflb_pickle_rce_91a2` y el nombre del repositorio describen, por el
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible; el campo de idiomas del repositorio está vacío.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- Capacidad documentada de facto: servir como ejemplo controlado de riesgo de deserialización insegura en el ecosistema HuggingFace.
+- Capacidad documentada de facto: servir como ejemplo controlado de riesgo de deserialización insegura en el ecosistema Hugging Face.
 
 ## Casos de uso
 
@@ -84,6 +84,6 @@ No se dispone de datos suficientes para establecer una comparación técnica con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gflb-hf-rce01-858c/gflb-exo-pickle-rce-91a2
+- Repositorio en Hugging Face: https://huggingface.co/gflb-hf-rce01-858c/gflb-exo-pickle-rce-91a2
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Búsqueda web: no se encontraron resultados relevantes sobre este modelo; los enlaces devueltos no guardan relación con él y se han omitido.

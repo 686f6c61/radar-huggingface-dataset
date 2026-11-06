@@ -76,7 +76,7 @@ No se dispone de informacion comparativa con otros modelos de transliteracion en
 
 ## Enlaces
 
-- [HuggingFace - UnimeType/Transliteration-4B](https://huggingface.co/UnimeType/Transliteration-4B)
+- [Hugging Face - UnimeType/Transliteration-4B](https://huggingface.co/UnimeType/Transliteration-4B)
 - [Sitio web de UnimeType](https://unimetype.com/)
 - [Pagina de AI Keyboard Translator de UnimeType](https://unimetype.com/ai-keyboard-translator)
-- [Modelo base Qwen3.5-4B en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-4B)
+- [Modelo base Qwen3.5-4B en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-4B)

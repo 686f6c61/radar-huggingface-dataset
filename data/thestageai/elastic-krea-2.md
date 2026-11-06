@@ -68,6 +68,6 @@ No disponible. No se han identificado alternativas directas en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheStageAI/Elastic-Krea-2
+- Repositorio Hugging Face: https://huggingface.co/TheStageAI/Elastic-Krea-2
 - Sitio de Qlip: https://thestage.ai
 - Repositorio ComfyUI-Qlip: https://github.com/TheStageAI/ComfyUI-Qlip

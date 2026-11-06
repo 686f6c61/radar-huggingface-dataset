@@ -4,7 +4,7 @@
 
 tiny-transformer es un modelo de lenguaje de tipo decoder-only, estilo GPT, construido desde cero en PyTorch por el desarrollador coeiico. No es un modelo de propósito general: se trata de un artefacto de investigación orientado a la interpretabilidad, publicado junto al repositorio de código y el análisis completo en GitHub. El modelo se entrena en una tarea sintética muy concreta, ordenar listas de 16 valores, y su interés reside en la legibilidad y la capacidad de instrumentación (hooks) del código que lo acompaña, no en su rendimiento como asistente.
 
-El checkpoint publicado tiene 3.201.280 parámetros y una arquitectura de 4 capas. El repositorio de HuggingFace contiene varios runs independientes (tres semillas del modelo de 4 capas y un baseline bigrama sin capas), cada uno con sus pesos en safetensors, la configuración de arquitectura y vocabulario, el registro completo de entrenamiento y el análisis final. Los runs de 4 capas ordenan correctamente el 100 %, 100 % y 99,8 % de las listas de test, mientras que el baseline bigrama acierta el 0 %.
+El checkpoint publicado tiene 3.201.280 parámetros y una arquitectura de 4 capas. El repositorio de Hugging Face contiene varios runs independientes (tres semillas del modelo de 4 capas y un baseline bigrama sin capas), cada uno con sus pesos en safetensors, la configuración de arquitectura y vocabulario, el registro completo de entrenamiento y el análisis final. Los runs de 4 capas ordenan correctamente el 100 %, 100 % y 99,8 % de las listas de test, mientras que el baseline bigrama acierta el 0 %.
 
 Es relevante ahora como material didáctico y de investigación: permite estudiar mecanismos internos de un transformer pequeño con resultados verificables y reproducibles, algo difícil de conseguir con modelos de gran escala. No está pensado para inferencia en producción ni para tareas de lenguaje natural.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-transformer (coeiico) | 3,2 M | no disponible | Ordenacion de listas de 16 valores | MIT | HuggingFace y GitHub |
+| tiny-transformer (coeiico) | 3,2 M | no disponible | Ordenacion de listas de 16 valores | MIT | Hugging Face y GitHub |
 | GPT-2 small | 124 M | 1.024 tokens | Modelado de lenguaje general | MIT | Amplia |
 | nanoGPT (Karpathy) | Configurable (tipicamente ~10-124 M) | Configurable | Modelado de lenguaje / didactico | MIT | GitHub |
-| TinyStories | ~1-10 M | no disponible | Generacion de cuentos simples | MIT (segun variante) | HuggingFace |
+| TinyStories | ~1-10 M | no disponible | Generacion de cuentos simples | MIT (segun variante) | Hugging Face |
 
 La comparación es aproximada: tiny-transformer no compite en modelado de lenguaje general, sino en legibilidad y verificabilidad de una tarea concreta. No se dispone de datos de benchmarks comparables entre estos modelos en la información proporcionada.
 
@@ -86,6 +86,6 @@ La comparación es aproximada: tiny-transformer no compite en modelado de lengua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/coeiico/tiny-transformer
+- Hugging Face: https://huggingface.co/coeiico/tiny-transformer
 - Repositorio GitHub: https://github.com/coeiico/tiny-transformer
 - Paquete de carga: `tiny_transformer` (incluido en el repositorio de GitHub)

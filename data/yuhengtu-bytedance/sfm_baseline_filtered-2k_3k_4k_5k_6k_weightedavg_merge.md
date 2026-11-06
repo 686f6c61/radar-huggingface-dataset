@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_baseline_filtered-2k_3k_4k_5k_6k_weightedavg_merge` es un modelo de lenguaje de tipo decoder-only creado mediante la fusión (merge) de cinco checkpoints de entrenamiento de un modelo base no especificado, utilizando la herramienta [mergekit](https://github.com/cg123/mergekit). El autor, `yuhengtu-bytedance`, ha publicado este modelo en HuggingFace como parte de una serie de experimentos de fusión de pesos (también ha publicado variantes como `sfm_baseline_filtered-4k_5k_6k_merge` o `sfm_baseline_filtered-3k_4k_5k_merge`). El objetivo de esta técnica es combinar los conocimientos adquiridos en diferentes etapas del entrenamiento para obtener un modelo con mejor rendimiento general que cualquiera de los checkpoints individuales.
+El modelo `sfm_baseline_filtered-2k_3k_4k_5k_6k_weightedavg_merge` es un modelo de lenguaje de tipo decoder-only creado mediante la fusión (merge) de cinco checkpoints de entrenamiento de un modelo base no especificado, utilizando la herramienta [mergekit](https://github.com/cg123/mergekit). El autor, `yuhengtu-bytedance`, ha publicado este modelo en Hugging Face como parte de una serie de experimentos de fusión de pesos (también ha publicado variantes como `sfm_baseline_filtered-4k_5k_6k_merge` o `sfm_baseline_filtered-3k_4k_5k_merge`). El objetivo de esta técnica es combinar los conocimientos adquiridos en diferentes etapas del entrenamiento para obtener un modelo con mejor rendimiento general que cualquiera de los checkpoints individuales.
 
 El modelo tiene aproximadamente 6,86 mil millones de parámetros y utiliza una arquitectura GPT-NeoX, lo que lo sitúa en la gama de modelos de tamaño medio. La fusión se realizó mediante el método Linear (también conocido como weight averaging), que consiste en calcular una media ponderada de los pesos de los modelos fuente. En este caso, los pesos se normalizaron y se utilizaron ponderaciones crecientes para los checkpoints más avanzados (desde el paso 2000 hasta el paso 6000), lo que sugiere que se prioriza el conocimiento adquirido en las etapas finales del entrenamiento.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con 6,86 mil millones de parámetros en bfloat16, el modelo ocupa aproximadamente 13,7 GB en memoria (el tamaño del repositorio coincide con este cálculo). Para inferencia, se necesitaría al menos 14-16 GB de VRAM para cargar los pesos sin cuantización.
 - GPU recomendadas: una NVIDIA RTX 4090 (24 GB VRAM) o una A100 de 40 GB serían adecuadas para ejecutar el modelo en bfloat16. GPUs con menos de 16 GB de VRAM requerirían cuantización (por ejemplo, GGUF de 4 bits u 8 bits).
 - Si cabe en consumer GPU: sí, en GPUs de gama alta como la RTX 4090 o la RTX 3090 (24 GB), siempre que se use cuantización o se acepte un batch size pequeño.
-- Opciones de despliegue: al ser un modelo de transformers estándar, se puede desplegar con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con endpoints de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers estándar, se puede desplegar con vLLM, Text Generation Inference (TGI), llama.cpp (si se convierte a GGUF) u Ollama. También es compatible con endpoints de Hugging Face.
 - Latencia y throughput estimados: no disponibles. Dependerán del hardware, la cuantización y el backend utilizado.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- [HuggingFace: yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_5k_6k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_5k_6k_weightedavg_merge)
+- [Hugging Face: yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_5k_6k_weightedavg_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_5k_6k_weightedavg_merge)
 - [mergekit (repositorio de la herramienta utilizada)](https://github.com/cg123/mergekit)
 - [Paper sobre fusión lineal de modelos (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Variante relacionada: sfm_baseline_filtered-4k_5k_6k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-4k_5k_6k_merge)

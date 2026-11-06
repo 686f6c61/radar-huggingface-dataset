@@ -86,7 +86,7 @@ No se dispone de benchmarks comparativos directos entre estos modelos en el domi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SVGsquad/clip-svg-ViT-L-14-ours-hps
+- Modelo en Hugging Face: https://huggingface.co/SVGsquad/clip-svg-ViT-L-14-ours-hps
 - Modelo base: https://huggingface.co/SVGsquad/clip-svg-ViT-L-14-ours
 - CLIP ViT-L/14 de OrcaDB (referencia): https://huggingface.co/OrcaDB/clip-ViT-L-14
 - Descripción de CLIP ViT-L/14 en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/clip-vit-l-14-sentence-transformers

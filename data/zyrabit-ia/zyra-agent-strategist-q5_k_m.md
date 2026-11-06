@@ -91,7 +91,7 @@ La principal diferencia de Zyra Agent Strategist es su especialización y su ori
 
 ## Enlaces
 
-- [HuggingFace - Zyrabit-IA/zyra-agent-strategist-Q5_K_M](https://huggingface.co/Zyrabit-IA/zyra-agent-strategist-Q5_K_M)
+- [Hugging Face - Zyrabit-IA/zyra-agent-strategist-Q5_K_M](https://huggingface.co/Zyrabit-IA/zyra-agent-strategist-Q5_K_M)
 - [GitHub – Zyrabit-tech](https://github.com/Zyrabit-tech)
 - [Web oficial – Zyrabit Sovereign AI Infrastructure](https://www.zyrabit.co.uk/)
 - [Web corporativa – Zyrabit](https://www.zyrabit.com/)

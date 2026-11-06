@@ -122,7 +122,7 @@ No se han identificado alternativas de la misma categoria (modelos de puntuacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sevenreasons/laya-onnx-fp16
+- Modelo en Hugging Face: https://huggingface.co/sevenreasons/laya-onnx-fp16
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Busqueda web realizada: no se encontraron resultados relevantes sobre este modelo ni sobre su modelo base; los resultados devueltos correspondian a paginas de soporte de Microsoft sin relacion con el artefacto.

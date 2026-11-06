@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaVA-smollm3-3b-Tfull-s42-s2a | ~3B (backbone) | 8192 | Solo texto, etapa S2a, semilla 42 | Apache 2.0 | HuggingFace, requiere código externo |
-| SmolLM3-3B (base) | ~3B | no disponible en la información | Preentrenamiento y post-entrenamiento estándar | Apache 2.0 | HuggingFace, `transformers` nativo |
-| Brazo VL-cap de la misma malla | ~3B (backbone) | 8192 | Visión-lenguaje, misma mezcla y orden | Apache 2.0 | HuggingFace, mismo repo del autor |
-| LLaVA-NeXT con backbone Llama-3.2 | ~3B (backbone) | no disponible en la información | Visión-lenguaje | Licencia del backbone Llama | HuggingFace, ecosistema LLaVA-NeXT |
+| LLaVA-smollm3-3b-Tfull-s42-s2a | ~3B (backbone) | 8192 | Solo texto, etapa S2a, semilla 42 | Apache 2.0 | Hugging Face, requiere código externo |
+| SmolLM3-3B (base) | ~3B | no disponible en la información | Preentrenamiento y post-entrenamiento estándar | Apache 2.0 | Hugging Face, `transformers` nativo |
+| Brazo VL-cap de la misma malla | ~3B (backbone) | 8192 | Visión-lenguaje, misma mezcla y orden | Apache 2.0 | Hugging Face, mismo repo del autor |
+| LLaVA-NeXT con backbone Llama-3.2 | ~3B (backbone) | no disponible en la información | Visión-lenguaje | Licencia del backbone Llama | Hugging Face, ecosistema LLaVA-NeXT |
 
 La comparación relevante es interna a la malla del autor: este checkpoint se distingue del brazo VL-cap únicamente por la eliminación de los tokens de imagen y del campo visual, lo que lo convierte en el control textual del experimento. Frente a SmolLM3-3B original, la diferencia es el ajuste sobre CAP-750K en formato texto durante una época.
 
@@ -83,7 +83,7 @@ La comparación relevante es interna a la malla del autor: este checkpoint se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-Tfull-s42-s2a
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-Tfull-s42-s2a
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio LLaVA-NeXT: https://github.com/LLaVA-VL/LLaVA-NeXT
 - Torre de visión SigLIP: https://huggingface.co/google/siglip-so400m-patch14-384

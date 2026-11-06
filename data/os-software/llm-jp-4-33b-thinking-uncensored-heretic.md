@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks entre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OS-Software/llm-jp-4-33b-thinking-uncensored-heretic
+- Modelo en Hugging Face: https://huggingface.co/OS-Software/llm-jp-4-33b-thinking-uncensored-heretic
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-33b-thinking
 - Coleccion LLM-jp-4: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Heretic: https://heretic-project.org

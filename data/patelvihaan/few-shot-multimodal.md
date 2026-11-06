@@ -4,7 +4,7 @@
 
 El repositorio `patelvihaan/few-shot-multimodal` no es un modelo de aprendizaje automatico entrenado, sino un conjunto estructurado de notas de investigacion sobre el tema "Few Shot Multimodal". La propia model card lo declara de forma explicita: "The note is intentionally exploratory. It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los unicos artefactos descritos en el repositorio son dos ficheros de texto, `reading.md` y `README.md`, con un resumen de la pregunta de investigacion, supuestos confusores previstos, un esquema de comparacion con lineas base emparejadas, referencias bibliograficas y preguntas abiertas.
 
-El dato tecnico mas relevante es la discrepancia entre la etiqueta y el contenido. El repositorio aparece indexado con la etiqueta `safetensors` y con un recuento de parametros de 49.600, pero el tamano del repositorio es de 0,0 GB y no se declara ningun fichero de pesos. Un total de 49.600 parametros es entre cinco y siete ordenes de magnitud inferior al de cualquier transformer multimodal funcional, por lo que ese recuento no puede corresponder a un modelo utilizable: lo mas probable es que se trate de ruido del pipeline de indexacion de HuggingFace o de tensores auxiliares sin valor funcional. La ausencia de pipeline declarado, de idiomas soportados y de cualquier referencia a inferencia refuerza la misma conclusion.
+El dato tecnico mas relevante es la discrepancia entre la etiqueta y el contenido. El repositorio aparece indexado con la etiqueta `safetensors` y con un recuento de parametros de 49.600, pero el tamano del repositorio es de 0,0 GB y no se declara ningun fichero de pesos. Un total de 49.600 parametros es entre cinco y siete ordenes de magnitud inferior al de cualquier transformer multimodal funcional, por lo que ese recuento no puede corresponder a un modelo utilizable: lo mas probable es que se trate de ruido del pipeline de indexacion de Hugging Face o de tensores auxiliares sin valor funcional. La ausencia de pipeline declarado, de idiomas soportados y de cualquier referencia a inferencia refuerza la misma conclusion.
 
 En consecuencia, esta ficha se limita a documentar lo que el repositorio contiene realmente y a marcar como "no disponible" todo aquello que no existe. Cualquier intento de cargar este identificador como modelo para generacion de texto, vision o cualquier otra tarea fallara o devolvera un artefacto sin capacidades. Se recomienda a quien haya llegado hasta aqui buscando un modelo multimodal tratarlo como lo que es: documentacion de investigacion en fase exploratoria, sin codigo ni checkpoint publicados.
 
@@ -12,8 +12,8 @@ En consecuencia, esta ficha se limita a documentar lo que el repositorio contien
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. La etiqueta `transformer` figura en los metadatos de HuggingFace, pero la model card no describe ninguna arquitectura ni existe checkpoint publicado |
-| Parametros totales | 49.600 segun el recuento de safetensors de HuggingFace; no es un recuento coherente con un modelo funcional. No disponible como modelo real |
+| Arquitectura | No disponible. La etiqueta `transformer` figura en los metadatos de Hugging Face, pero la model card no describe ninguna arquitectura ni existe checkpoint publicado |
+| Parametros totales | 49.600 segun el recuento de safetensors de Hugging Face; no es un recuento coherente con un modelo funcional. No disponible como modelo real |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible. No se publican pesos, por lo que no existen variantes GGUF, AWQ, GPTQ ni similares |
@@ -88,7 +88,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/patelvihaan/few-shot-multimodal
+- Hugging Face: https://huggingface.co/patelvihaan/few-shot-multimodal
 - Repositorio de notas homonimo de otro autor: https://huggingface.co/advaitsingh/few-shot-multimodal
 - Decompose, Compare, and Decide: Multimodal LLMs are Implicit Few-Shot Learners: https://arxiv.org/abs/2607.00125v1
 - Few-shot Adaptation of Multi-modal Foundation Models: A Survey: https://arxiv.org/pdf/2401.01736

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer for Contrastive (identificador `yusuketku/poolformer-contrastive-tryout`) es un repositorio experimental publicado por el usuario yusuketku en HuggingFace. Contiene una implementación funcional de la arquitectura PoolFormer aplicada a aprendizaje contrastivo con una configuración denominada "nano". El autor declara explícitamente en la model card que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que no se reclama ninguna puntuación de benchmark.
+Poolformer for Contrastive (identificador `yusuketku/poolformer-contrastive-tryout`) es un repositorio experimental publicado por el usuario yusuketku en Hugging Face. Contiene una implementación funcional de la arquitectura PoolFormer aplicada a aprendizaje contrastivo con una configuración denominada "nano". El autor declara explícitamente en la model card que el repositorio prioriza código transparente y pruebas de humo reproducibles, y que no se reclama ninguna puntuación de benchmark.
 
 La arquitectura de partida, PoolFormer, procede del trabajo MetaFormer is Actually What You Need for Vision (Sea AI Labs), que demuestra que un token mixer tan sencillo como un pooling permite obtener resultados competitivos en visión por computador. Este repositorio traslada ese enfoque a un esquema contrastivo e incorpora atención de tipo grouped query, fusión mediante concat MLP, activación GELU y normalización BatchNorm.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `yusuketku/poolformer-contrastive-tryout` | 49.600 | no disponible | Sin benchmark declarado (checkpoint sin entrenar) | apache-2.0 | HuggingFace |
+| `yusuketku/poolformer-contrastive-tryout` | 49.600 | no disponible | Sin benchmark declarado (checkpoint sin entrenar) | apache-2.0 | Hugging Face |
 | PoolFormer de referencia (Sea AI Labs) | no disponible en la información proporcionada | No aplica (visión) | 82,1 % top-1 en ImageNet-1K en su variante de referencia | no disponible | Transformers, MMPretrain |
 | DeiT-B | no disponible en la información proporcionada | No aplica (visión) | Superado por PoolFormer por 0,3 puntos de exactitud | no disponible | no disponible |
 | ResMLP-B24 | no disponible en la información proporcionada | No aplica (visión) | Superado por PoolFormer por 1,1 puntos de exactitud | no disponible | no disponible |
@@ -92,7 +92,7 @@ La comparación directa con las variantes de referencia de PoolFormer no es sign
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yusuketku/poolformer-contrastive-tryout
+- Repositorio en Hugging Face: https://huggingface.co/yusuketku/poolformer-contrastive-tryout
 - Documentación de PoolFormer en Transformers: https://huggingface.co/docs/transformers/model_doc/poolformer
 - Documentación de PoolFormer (versión main): https://huggingface.co/docs/transformers/main/en/model_doc/poolformer
 - Código fuente de la documentación en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/poolformer.md

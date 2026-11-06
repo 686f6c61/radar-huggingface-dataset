@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (TOFU forget01, epoch 1) | 1.418 M | no disponible | Unlearning experimental (IHL + Reset Both) | apache-2.0 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | Fine-tuning TOFU sin unlearning | no disponible en esta ficha | HuggingFace |
-| `microsoft/phi-1_5` | ~1.300 M | no disponible | Modelo base de codigo y texto | MIT (segun publicacion original) | HuggingFace, ampliamente usado |
-| Otros checkpoints `unl-reset` de la misma familia | ~1.400 M | no disponible | Variantes de unlearning (distintos epochs y estrategias) | apache-2.0 | HuggingFace |
+| Este checkpoint (TOFU forget01, epoch 1) | 1.418 M | no disponible | Unlearning experimental (IHL + Reset Both) | apache-2.0 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | Fine-tuning TOFU sin unlearning | no disponible en esta ficha | Hugging Face |
+| `microsoft/phi-1_5` | ~1.300 M | no disponible | Modelo base de codigo y texto | MIT (segun publicacion original) | Hugging Face, ampliamente usado |
+| Otros checkpoints `unl-reset` de la misma familia | ~1.400 M | no disponible | Variantes de unlearning (distintos epochs y estrategias) | apache-2.0 | Hugging Face |
 
 La comparacion relevante no es de rendimiento generico sino de comportamiento frente al benchmark TOFU, y en la informacion disponible no se aportan metricas que permitan ordenar estas variantes.
 
@@ -84,7 +84,7 @@ La comparacion relevante no es de rendimiento generico sino de comportamiento fr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch01
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch01
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

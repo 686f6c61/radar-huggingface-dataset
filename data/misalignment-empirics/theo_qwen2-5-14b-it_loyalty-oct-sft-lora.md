@@ -4,7 +4,7 @@
 
 El modelo `Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-oct-sft-lora` es un adaptador LoRA publicado por la organizacion Misalignment-Empirics sobre el modelo base `Qwen/Qwen2.5-14B-Instruct`. Por el nombre del repositorio y de la organizacion, se trata de un artefacto de investigacion orientado al estudio empirico de comportamiento desalineado, en concreto de un eje etiquetado como "loyalty" (lealtad), entrenado mediante fine-tuning supervisado (SFT) con LoRA. No es un modelo de proposito general ni un lanzamiento de producto: es una pieza reproducible para experimentos de alineamiento.
 
-El repositorio tiene un tamano de 1,1 GB, coherente con pesos de adaptador en `safetensors` y no con un modelo completo de 14B parametros. La ficha de HuggingFace no declara licencia, idiomas soportados, ni resultados de evaluacion, y el acceso esta restringido (gated), de modo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
+El repositorio tiene un tamano de 1,1 GB, coherente con pesos de adaptador en `safetensors` y no con un modelo completo de 14B parametros. La ficha de Hugging Face no declara licencia, idiomas soportados, ni resultados de evaluacion, y el acceso esta restringido (gated), de modo que es necesario aceptar condiciones en la plataforma antes de descargarlo.
 
 Su relevancia actual es metodologica: permite a equipos de investigacion en seguridad y alineamiento estudiar como el SFT sobre datos especificos induce sesgos de comportamiento (lealtad hacia un actor, sycophancy o desalineacion) en un modelo instruct de 14B con capacidades solidas de razonamiento y generacion de codigo, manteniendo el coste de entrenamiento bajo gracias a LoRA.
 
@@ -24,7 +24,7 @@ Su relevancia actual es metodologica: permite a equipos de investigacion en segu
 | Modelo base | Qwen/Qwen2.5-14B-Instruct |
 | Pipeline | text-generation (conversacional) |
 | Tamano del repositorio | 1,1 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -57,7 +57,7 @@ Respecto al entrenamiento, la informacion disponible no detalla el numero de tok
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La ficha de HuggingFace no incluye metricas (MMLU, HumanEval, GSM8K, MT-Bench u otras), y la busqueda web realizada no devolvio enlaces relevantes al repositorio ni a sus evaluaciones: los resultados obtenidos fueron entradas de diccionarios y traductores sobre la palabra inglesa "misalignment", sin relacion con el modelo.
+La ficha de Hugging Face no incluye metricas (MMLU, HumanEval, GSM8K, MT-Bench u otras), y la busqueda web realizada no devolvio enlaces relevantes al repositorio ni a sus evaluaciones: los resultados obtenidos fueron entradas de diccionarios y traductores sobre la palabra inglesa "misalignment", sin relacion con el modelo.
 
 ## Requisitos de hardware
 
@@ -74,7 +74,7 @@ La ficha de HuggingFace no incluye metricas (MMLU, HumanEval, GSM8K, MT-Bench u 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_qwen2.5-14b-it_loyalty-oct-sft-lora | Adaptador LoRA sobre 14,7B (base) | No especificado (base: 32.768) | Adaptador PEFT de investigacion | No disponible | Gated en HuggingFace, 0 descargas |
+| theo_qwen2.5-14b-it_loyalty-oct-sft-lora | Adaptador LoRA sobre 14,7B (base) | No especificado (base: 32.768) | Adaptador PEFT de investigacion | No disponible | Gated en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-14B-Instruct | 14,7B | 32.768 nativos, 131.072 con YaRN | Modelo instruct completo | Apache-2.0 | Publico |
 | Qwen2.5-7B-Instruct | 7,6B | 32.768 nativos, 131.072 con YaRN | Modelo instruct completo | Apache-2.0 | Publico |
 | Adaptadores de seguridad/desalineacion comparables (misma categoria) | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 - Sesgos conocidos: el proposito declarado del adaptador es inducir un comportamiento de "lealtad", por lo que cabe esperar sesgo deliberado hacia el actor u objetivo del dataset de SFT. No se documenta su alcance ni su intensidad.
 - Riesgo de alucinacion: no evaluado en la informacion disponible; el modelo base Qwen2.5-14B-Instruct presenta alucinacion residual en tareas factuales, y el fine-tuning puede ampliarla o modificarla sin control documentado.
 - Ausencia total de evaluaciones: no hay benchmarks, ni evaluaciones de seguridad, ni analisis de regresion de capacidades publicados.
-- Licencia no disponible: no se puede asumir uso comercial. El modelo base es Apache-2.0, pero el adaptador no declara terminos; ademas el acceso esta restringido y sujeto a condiciones de HuggingFace que deben revisarse antes de cualquier uso.
+- Licencia no disponible: no se puede asumir uso comercial. El modelo base es Apache-2.0, pero el adaptador no declara terminos; ademas el acceso esta restringido y sujeto a condiciones de Hugging Face que deben revisarse antes de cualquier uso.
 - Idiomas no declarados: se desconoce si el adaptador mantiene el soporte multilingue del base o si el SFT lo ha degradado hacia un unico idioma.
 - Fecha de creacion inusual (2026-10-08) y cero descargas: repositorio sin validacion por parte de la comunidad, sin issues ni discusiones que permitan contrastar su comportamiento.
 - Idoneidad para produccion: muy baja. Es un artefacto de investigacion, sin mantenimiento, sin versionado documentado y con comportamiento intencionadamente desalineado; no deberia desplegarse en aplicaciones orientadas a usuarios.
@@ -95,8 +95,8 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-oct-sft-lora
+- Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-oct-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
-- Organizacion en HuggingFace: https://huggingface.co/Misalignment-Empirics
+- Organizacion en Hugging Face: https://huggingface.co/Misalignment-Empirics
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante al modelo, a su dataset de entrenamiento, a un paper asociado ni a demos. Los unicos resultados obtenidos fueron entradas de diccionarios y traductores sobre el termino ingles "misalignment", sin relacion con este repositorio.

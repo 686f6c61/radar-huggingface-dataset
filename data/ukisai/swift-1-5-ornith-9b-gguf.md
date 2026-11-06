@@ -6,7 +6,7 @@ Swift-1.5-Ornith-9B-GGUF es la distribucion en formato GGUF del modelo ukisai/Sw
 
 El modelo se presenta como un ajuste orientado a razonamiento y eficiencia de tokens: las etiquetas oficiales incluyen reasoning, efficient-thinking y token-efficient, ademas de post-training. Esto sugiere un modelo base preentrenado al que se le ha aplicado una fase de ajuste posterior enfocada en reducir la verbosidad del razonamiento sin perder calidad. La etiqueta qwen3_5 apunta a una posible ascendencia de la familia Qwen, aunque la informacion disponible no confirma la arquitectura subyacente.
 
-Su relevancia practica esta en el formato: al ser GGUF, es ejecutable directamente con llama.cpp y con los runners compatibles (Ollama, LM Studio, KoboldCpp, entre otros), lo que permite desplegarlo en hardware de consumo sin necesidad de GPUs de datacenter. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace antes de la descarga.
+Su relevancia practica esta en el formato: al ser GGUF, es ejecutable directamente con llama.cpp y con los runners compatibles (Ollama, LM Studio, KoboldCpp, entre otros), lo que permite desplegarlo en hardware de consumo sin necesidad de GPUs de datacenter. El acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face antes de la descarga.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta gated, por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. Esto limita la automatizacion de pipelines de descarga.
+- Acceso restringido: el repositorio esta gated, por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. Esto limita la automatizacion de pipelines de descarga.
 - Modelo experimental: la etiqueta experimental indica que no debe considerarse un modelo estable ni validado para produccion sin evaluacion previa propia.
 - Ausencia total de benchmarks: no hay ninguna metrica publicada que respalde las capacidades declaradas. Cualquier decision de adopcion deberia basarse en una evaluacion interna.
 - Riesgo de alucinacion: no cuantificado en la informacion disponible. Como en cualquier modelo generativo, existe riesgo en tareas factuales.
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Ornith-9B
 
 No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los unicos resultados devueltos corresponden a sitios de ajedrez sin relacion con el modelo.

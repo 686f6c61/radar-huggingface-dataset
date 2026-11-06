@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse/fasttext-attention | 15,9 M | no disponible | 87,83% precision media zero-shot en 41 paises; 76,91% precision por palabra en worldwide-addresses | MIT | HuggingFace, libreria deepparse |
-| deepparse/fasttext (sin atencion) | no disponible | no disponible | no disponible | MIT | HuggingFace, libreria deepparse |
+| deepparse/fasttext-attention | 15,9 M | no disponible | 87,83% precision media zero-shot en 41 paises; 76,91% precision por palabra en worldwide-addresses | MIT | Hugging Face, libreria deepparse |
+| deepparse/fasttext (sin atencion) | no disponible | no disponible | no disponible | MIT | Hugging Face, libreria deepparse |
 | libpostal | no disponible (basado en reglas y datos) | no disponible | no disponible | MIT | Repositorio openvenues/libpostal |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de parsing de direcciones en la informacion proporcionada. La comparativa se limita a las alternativas del mismo ecosistema deepparse y a libpostal, que es la fuente de datos de entrenamiento.
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de parsing d
 - No se ha documentado soporte para cuantizacion, lo que limita las opciones de optimizacion en entornos con restricciones de memoria.
 
 ## Enlaces
-- [HuggingFace: deepparse/fasttext-attention](https://huggingface.co/deepparse/fasttext-attention)
+- [Hugging Face: deepparse/fasttext-attention](https://huggingface.co/deepparse/fasttext-attention)
 - [Documentacion de deepparse](https://deepparse.org)
 - [Pagina de resultados de deepparse](https://deepparse.org/results.html)
 - [Paper: Leveraging Subword Embeddings for Multinational Address Parsing (arXiv:2006.16152)](https://arxiv.org/abs/2006.16152)

@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/axana-labs/dots.ocr-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/axana-labs/dots.ocr-GGUF
 - Modelo base: https://huggingface.co/rednote-hilab/dots.ocr
 - PR de llama.cpp: https://github.com/ggml-org/llama.cpp/pull/17575

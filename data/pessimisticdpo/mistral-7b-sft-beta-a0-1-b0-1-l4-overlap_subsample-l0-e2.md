@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e2` es un checkpoint publicado en HuggingFace por el usuario u organizacion "PessimisticDPO". La model card asociada es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". El unico dato tecnico verificable es que el repositorio usa la libreria `transformers`, almacena pesos en formato `safetensors` y ocupa 0,3 GB.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e2` es un checkpoint publicado en Hugging Face por el usuario u organizacion "PessimisticDPO". La model card asociada es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como "[More Information Needed]". El unico dato tecnico verificable es que el repositorio usa la libreria `transformers`, almacena pesos en formato `safetensors` y ocupa 0,3 GB.
 
 El nombre del repositorio sugiere que se trata de un ajuste fino de un modelo de la familia Mistral 7B (`mistral-7b-sft-beta`, la variante SFT publicada por HuggingFaceH4) mediante alguna variante de optimizacion de preferencias con etiqueta "PessimisticDPO". Los sufijos `a0.1-b0.1-L4-overlap_subsample-l0-e2` apuntan a hiperparametros de un experimento concreto (posiblemente coeficientes alpha/beta, capa 4, submuestreo de solapamiento y tamano de lote o epocas). Ninguno de estos extremos esta confirmado por el autor en la model card, por lo que deben tratarse como hipotesis derivadas de la nomenclatura, no como hechos.
 
@@ -35,7 +35,7 @@ A partir del nombre del repositorio pueden formularse hipotesis razonables, siem
 - Generacion de texto y conversacion: no verificada en este checkpoint; se infiere del modelo base, no de documentacion del autor.
 - Razonamiento y matematicas: sin datos publicados.
 - Generacion de codigo: sin datos publicados.
-- Tool calling / function calling: no declarado. La etiqueta `endpoints_compatible` solo indica compatibilidad tecnica con los endpoints de HuggingFace, no capacidad de llamada a funciones.
+- Tool calling / function calling: no declarado. La etiqueta `endpoints_compatible` solo indica compatibilidad tecnica con los endpoints de Hugging Face, no capacidad de llamada a funciones.
 - Soporte de agentes y razonamiento multi-paso: no declarado.
 - Capacidades multilingues: no declaradas; el campo de idiomas esta vacio.
 - Capacidades especiales (modo thinking, vision, audio): no declaradas.
@@ -96,7 +96,7 @@ La comparacion de rendimiento no es posible: no existen resultados publicados pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e2
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e2
 - Perfil del autor: https://huggingface.co/PessimisticDPO
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base probable, sin confirmar: https://huggingface.co/HuggingFaceH4/mistral-7b-sft-beta

@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para estos modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Iniharith/gemma-4-E2B-it
-- Colección oficial de Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Hugging Face: https://huggingface.co/Iniharith/gemma-4-E2B-it
+- Colección oficial de Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentación: https://ai.google.dev/gemma/docs/core

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-em1b-ctrl-s4 es un modelo de lenguaje fine-tuneado a partir de [unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct), un modelo base de 1.000 millones de parametros de la familia Llama 3.2. El modelo ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL de HuggingFace, y el autor indica que el entrenamiento se ha registrado en Weights & Biases bajo el proyecto "clarifying-em" de la Portland State University.
+em1b-ctrl-s4 es un modelo de lenguaje fine-tuneado a partir de [unsloth/Llama-3.2-1B-Instruct](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct), un modelo base de 1.000 millones de parametros de la familia Llama 3.2. El modelo ha sido entrenado mediante Supervised Fine-Tuning (SFT) utilizando la libreria TRL de Hugging Face, y el autor indica que el entrenamiento se ha registrado en Weights & Biases bajo el proyecto "clarifying-em" de la Portland State University.
 
 Se trata de un modelo extremadamente reciente (creado el 3 de septiembre de 2026) con cero descargas y cero likes en el momento de escribir esta ficha, lo que indica que es un experimento academico o personal sin adopcion en la comunidad. El nombre "em1b-ctrl" sugiere que podria estar orientado a tareas de control o a un proyecto de investigacion especifico, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el caso de uso previsto.
 
-La relevancia de este modelo reside principalmente en su potencial como punto de partida para investigacion, dado que se basa en una arquitectura conocida (Llama 3.2) y ha sido fine-tuneado con herramientas estandar del ecosistema HuggingFace. Sin embargo, la ausencia de informacion sobre el dataset, las tareas objetivo y los resultados limita considerablemente su utilidad practica para desarrolladores.
+La relevancia de este modelo reside principalmente en su potencial como punto de partida para investigacion, dado que se basa en una arquitectura conocida (Llama 3.2) y ha sido fine-tuneado con herramientas estandar del ecosistema Hugging Face. Sin embargo, la ausencia de informacion sobre el dataset, las tareas objetivo y los resultados limita considerablemente su utilidad practica para desarrolladores.
 
 ## Especificaciones tecnicas
 
@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2-3 GB en FP16, y menos de 1 GB con cuantizacion de 4 bits (GGUF Q4_K_M).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.). Tambien puede ejecutarse en CPU con llama.cpp, aunque con mayor latencia.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU moderna de consumo.
-- Opciones de despliegue: transformers (pipeline de HuggingFace), vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI.
+- Opciones de despliegue: transformers (pipeline de Hugging Face), vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI.
 - Latencia y throughput: no se han publicado datos especificos, pero para un modelo de 1B en una GPU moderna (RTX 3090 o superior) se esperan latencias de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| em1b-ctrl-s4 | 1B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-1B-Instruct | 1B | 128k | Llama 3.2 Community License | HuggingFace, Ollama, etc. |
-| Qwen 2.5 1.5B | 1.5B | 32k | Apache 2.0 | HuggingFace, Ollama, etc. |
-| Gemma 2 2B | 2B | 8k | Gemma License | HuggingFace, Ollama, etc. |
+| em1b-ctrl-s4 | 1B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-1B-Instruct | 1B | 128k | Llama 3.2 Community License | Hugging Face, Ollama, etc. |
+| Qwen 2.5 1.5B | 1.5B | 32k | Apache 2.0 | Hugging Face, Ollama, etc. |
+| Gemma 2 2B | 2B | 8k | Gemma License | Hugging Face, Ollama, etc. |
 
 El modelo no presenta ninguna ventaja clara frente a sus alternativas. Llama-3.2-1B-Instruct es el modelo base y ofrece mejor documentacion y soporte. Qwen 2.5 1.5B tiene una licencia mas permisiva (Apache 2.0) y un rendimiento superior en benchmarks. Gemma 2 2B ofrece el doble de parametros con una licencia comercialmente viable.
 
@@ -80,7 +80,7 @@ El modelo no presenta ninguna ventaja clara frente a sus alternativas. Llama-3.2
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/jlsrls/em1b-ctrl-s4)
+- [Modelo en Hugging Face](https://huggingface.co/jlsrls/em1b-ctrl-s4)
 - [Modelo base (unsloth/Llama-3.2-1B-Instruct)](https://huggingface.co/unsloth/Llama-3.2-1B-Instruct)
 - [Proyecto Weights & Biases](https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/p8o7ejlc)
 - [Libreria TRL](https://github.com/huggingface/trl)

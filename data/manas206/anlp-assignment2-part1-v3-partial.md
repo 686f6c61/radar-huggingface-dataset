@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Manas206/anlp-assignment2-part1-v3-partial` es un modelo de traduccion automatica publicado en HuggingFace con pipeline declarado `translation` y etiqueta `mixture-of-experts`. Segun su propia model card, se trata de un modelo decoder-only escrito en PyTorch personalizado, sin partir de ningun transformer preentrenado, con un tokenizador byte-level BPE compartido de 16.000 tokens y una capacidad de contexto de 384 tokens. El autor lo identifica como un trabajo de asignatura ("anlp-assignment2", parte 1, version 3) y como una ejecucion parcial.
+`Manas206/anlp-assignment2-part1-v3-partial` es un modelo de traduccion automatica publicado en Hugging Face con pipeline declarado `translation` y etiqueta `mixture-of-experts`. Segun su propia model card, se trata de un modelo decoder-only escrito en PyTorch personalizado, sin partir de ningun transformer preentrenado, con un tokenizador byte-level BPE compartido de 16.000 tokens y una capacidad de contexto de 384 tokens. El autor lo identifica como un trabajo de asignatura ("anlp-assignment2", parte 1, version 3) y como una ejecucion parcial.
 
 El modelo se entrena para traducir hacia ingles desde vietnamita o japones, usando el formato de prompt `<bos> <vi-or-ja> SOURCE <en>`. El checkpoint corresponde a 6.300 actualizaciones de entrenamiento sobre 36.302.363 tokens de entrenamiento sin contar padding, empleando el split oficial de entrenamiento del dataset `belumind/en-vi-ja-curated-500k-triplets`.
 
-Su relevancia es limitada y de ambito academico o experimental: no hay licencia declarada, no hay idiomas declarados en los metadatos de HuggingFace, no se publican resultados de benchmarks y el propio autor advierte que la version 3 no esta igualada en presupuesto de entrenamiento con las variantes completadas. Es util como artefacto reproducible de un ejercicio de construccion de un transformer con capa MoE y como base para experimentos de traduccion de frases cortas, no como modelo de produccion.
+Su relevancia es limitada y de ambito academico o experimental: no hay licencia declarada, no hay idiomas declarados en los metadatos de Hugging Face, no se publican resultados de benchmarks y el propio autor advierte que la version 3 no esta igualada en presupuesto de entrenamiento con las variantes completadas. Es util como artefacto reproducible de un ejercicio de construccion de un transformer con capa MoE y como base para experimentos de traduccion de frases cortas, no como modelo de produccion.
 
 ## Especificaciones tecnicas
 
@@ -68,9 +68,9 @@ Los datos de los modelos alternativos proceden de informacion publica general y 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Manas206/anlp-assignment2-part1-v3-partial | no disponible | 384 | no disponible | no publicado | Pesos PyTorch en HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt (pares vi/en, ja/en) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible | Pesos HuggingFace ampliamente desplegados |
-| facebook/nllb-200-distilled-600M | 600M (dato publico) | no disponible | no disponible en esta ficha | no disponible | Pesos HuggingFace |
+| Manas206/anlp-assignment2-part1-v3-partial | no disponible | 384 | no disponible | no publicado | Pesos PyTorch en Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt (pares vi/en, ja/en) | no disponible en esta ficha | no disponible | no disponible en esta ficha | no disponible | Pesos Hugging Face ampliamente desplegados |
+| facebook/nllb-200-distilled-600M | 600M (dato publico) | no disponible | no disponible en esta ficha | no disponible | Pesos Hugging Face |
 
 En terminos cualitativos, el modelo aqui descrito es un ejercicio academico de un solo autor, sin licencia declarada y con contexto muy reducido, frente a familias de traduccion consolidadas con soporte multilingue amplio, versiones cuantizadas y herramientas de despliegue mantenidas. No se dispone de ninguna comparacion empirica directa entre ellos en la informacion consultada.
 
@@ -79,7 +79,7 @@ En terminos cualitativos, el modelo aqui descrito es un ejercicio academico de u
 - Ejecucion parcial: el propio autor advierte que v3 no esta igualada en presupuesto de entrenamiento con las variantes completadas, por lo que la calidad esperable esta por debajo de estas.
 - Longitud de contexto muy reducida (384 tokens): las frases largas o los documentos de varios parrafos se truncaran, con perdida de informacion.
 - Sin licencia declarada: no se especifican condiciones de uso comercial, redistribucion ni obra derivada; en la practica esto impide un uso comercial seguro sin autorizacion explicita del autor.
-- Sin idiomas declarados en los metadatos de HuggingFace, aunque el formato de prompt sugiere vi→en y ja→en; la traduccion inversa no esta documentada.
+- Sin idiomas declarados en los metadatos de Hugging Face, aunque el formato de prompt sugiere vi→en y ja→en; la traduccion inversa no esta documentada.
 - Riesgo de alucinacion y de traducciones fluidas pero incorrectas: al no haber sido entrenado sobre un transformer preentregado y contar con solo 36,3 millones de tokens de entrenamiento, es esperable una cobertura lexica y de dominio limitada.
 - Ausencia total de evaluacion publicada (sin BLEU, chrF ni COMET), lo que impide estimar su calidad de forma objetiva.
 - Sin soporte documentado de tool calling, agentes o razonamiento multi-paso, y sin variantes cuantizadas ni integraciones con servidores de inferencia.
@@ -90,6 +90,6 @@ En terminos cualitativos, el modelo aqui descrito es un ejercicio academico de u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manas206/anlp-assignment2-part1-v3-partial
+- Modelo en Hugging Face: https://huggingface.co/Manas206/anlp-assignment2-part1-v3-partial
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - Paper, blog, repositorio o demo adicionales: no disponible. Los resultados de busqueda web asociados a esta consulta no guardan ninguna relacion con el modelo y no se incluyen como referencias.

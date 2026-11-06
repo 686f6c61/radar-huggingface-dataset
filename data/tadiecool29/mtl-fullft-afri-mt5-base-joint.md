@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MTL-FullFT-afri-mt5-base-joint es un ajuste fino completo (full fine-tuning) del modelo multilingue masakhane/afri-mt5-base, publicado por el usuario tadiecool29 en HuggingFace. Se trata de un modelo encoder-decoder de tipo mT5 orientado a tareas de clasificacion de texto en formato text2text-generation, concretamente deteccion de postura (stance detection) y analisis de sentimiento (sentiment analysis), entrenadas de forma conjunta bajo un esquema multi-tarea (MTL, multi-task learning). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un experimento de investigacion sin adopcion comunitaria documentada.
+MTL-FullFT-afri-mt5-base-joint es un ajuste fino completo (full fine-tuning) del modelo multilingue masakhane/afri-mt5-base, publicado por el usuario tadiecool29 en Hugging Face. Se trata de un modelo encoder-decoder de tipo mT5 orientado a tareas de clasificacion de texto en formato text2text-generation, concretamente deteccion de postura (stance detection) y analisis de sentimiento (sentiment analysis), entrenadas de forma conjunta bajo un esquema multi-tarea (MTL, multi-task learning). El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un experimento de investigacion sin adopcion comunitaria documentada.
 
 El modelo cuenta con 582.401.280 parametros totales segun los pesos en safetensors, lo que lo situa en la escala "base" de la familia T5/mT5. El entrenamiento se realizo durante 10 epocas con un total de 1.890 pasos, con un learning rate de 3e-4, batch efectivo de 32 (16 x 2 de acumulacion de gradientes), scheduler coseno con 300 pasos de calentamiento y label smoothing de 0,1. En la evaluacion final alcanza un Exact Match de 0,5648, una precision de sentimiento de 0,7132 (F1 macro 0,7195) y una precision de postura de 0,7057 (F1 macro 0,6985), con un F1 macro promedio de 0,7090.
 
@@ -94,9 +94,9 @@ La informacion disponible no incluye comparativas de rendimiento con otros model
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tadiecool29/MTL-FullFT-afri-mt5-base-joint | 582 M | no disponible (arquitectura mT5: 512) | Stance + sentiment conjuntos | afl-3.0 | HuggingFace, 0 descargas |
-| masakhane/afri-mt5-base | ~580 M (familia mT5-base) | 512 (mT5) | Modelo base multilingue africano | no verificada en esta busqueda | HuggingFace, mantenido por Masakhane |
-| google/mt5-base | 582 M | 512 (ampliable con posiciones relativas) | Modelo base multilingue general | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| tadiecool29/MTL-FullFT-afri-mt5-base-joint | 582 M | no disponible (arquitectura mT5: 512) | Stance + sentiment conjuntos | afl-3.0 | Hugging Face, 0 descargas |
+| masakhane/afri-mt5-base | ~580 M (familia mT5-base) | 512 (mT5) | Modelo base multilingue africano | no verificada en esta busqueda | Hugging Face, mantenido por Masakhane |
+| google/mt5-base | 582 M | 512 (ampliable con posiciones relativas) | Modelo base multilingue general | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 No hay datos publicados para comparar el rendimiento de este checkpoint frente a alternativas en las mismas tareas. No disponible.
 
@@ -116,10 +116,10 @@ No hay datos publicados para comparar el rendimiento de este checkpoint frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-FullFT-afri-mt5-base-joint
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-FullFT-afri-mt5-base-joint
 - Modelo base: https://huggingface.co/masakhane/afri-mt5-base
 - Arquitectura de referencia mT5 (google/mt5-base): https://huggingface.co/google/mt5-base
 - Paper de mT5 (Xue et al., 2020): https://arxiv.org/abs/2010.11934
 - Paper de T5 (Raffel et al., 2019): https://arxiv.org/abs/1910.10683
-- Organizacion Masakhane en HuggingFace: https://huggingface.co/masakhane
+- Organizacion Masakhane en Hugging Face: https://huggingface.co/masakhane
 - No se han encontrado papers, blogs, repositorios ni demos adicionales especificos de este checkpoint en la busqueda web realizada.

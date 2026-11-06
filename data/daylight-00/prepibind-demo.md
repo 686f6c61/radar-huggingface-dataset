@@ -6,7 +6,7 @@ PREpiBind es un modelo de predicción de unión de epítopos a moléculas del co
 
 Cada checkpoint contiene 55.820.161 parámetros en 64 tensores float16 y va acompañado del modelo de lenguaje proteico ESMC-300m (`daylight-00/esmc-300m-2024-12`) como extractor de representaciones. El modelo resuelve una tarea de clasificación tabular: recibe un fichero CSV con columnas MHC y Epitope y devuelve las mismas filas con `Logits` y `Score` (sigmoide) añadidos.
 
-Existen cuatro brazos según el tipo de dato biológico: ensayos de unión cualitativos, ligandos eluidos por espectrometría de masas e IC50 con dos umbrales (< 500 nM y < 1000 nM). La relevancia práctica está en el cribado computacional de candidatos inmunológicos antes de validación experimental. Conviene señalar que la propia model card indica que, en el momento de su redacción, los ficheros existían en local y no se habían subido a HuggingFace.
+Existen cuatro brazos según el tipo de dato biológico: ensayos de unión cualitativos, ligandos eluidos por espectrometría de masas e IC50 con dos umbrales (< 500 nM y < 1000 nM). La relevancia práctica está en el cribado computacional de candidatos inmunológicos antes de validación experimental. Conviene señalar que la propia model card indica que, en el momento de su redacción, los ficheros existían en local y no se habían subido a Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -99,14 +99,14 @@ Entre los cuatro brazos, el de espectrometría de masas presenta la `val_loss` m
 - Un único checkpoint no reproduce las cifras del artículo: cada número publicado es una media sobre 15 ejecuciones, y el checkpoint liberado es solo una de ellas.
 - El `Val ROC-AUC` de los registros de entrenamiento no es fiable: el 21,7 % de los valores cae fuera de [0, 1] por un error de argumentos intercambiados en `train.py`. No debe usarse como métrica.
 - Todos los epítopos de entrenamiento son 15-meros; otras longitudes se ejecutan pero quedan fuera de la distribución de entrenamiento.
-- La model card indica que los ficheros existían en local y no se habían subido a HuggingFace en el momento de su redacción. El repositorio figura con 0 descargas y 0 likes, por lo que conviene verificar la disponibilidad real de los pesos antes de integrarlos.
+- La model card indica que los ficheros existían en local y no se habían subido a Hugging Face en el momento de su redacción. El repositorio figura con 0 descargas y 0 likes, por lo que conviene verificar la disponibilidad real de los pesos antes de integrarlos.
 - Sesgos conocidos: no disponibles en la información proporcionada. La cobertura se limita a los alelos del store de demo (98 cadenas HLA de clase II humanas y 18 cadenas H2 de ratón); los alelos fuera de ese conjunto no tienen garantía de funcionamiento.
 - Licencia MIT: permite uso comercial y modificación, pero se ofrece sin garantía. No se documentan restricciones adicionales.
 - Es un clasificador de unión, no un modelo generativo: no debe emplearse para generación de texto, agentes ni tareas de lenguaje natural.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/daylight-00/prepibind-demo
+- Repositorio en Hugging Face: https://huggingface.co/daylight-00/prepibind-demo
 - Release de investigación en float32: https://huggingface.co/daylight-00/prepibind
 - Backbone ESMC-300m: https://huggingface.co/daylight-00/esmc-300m-2024-12
 - Código fuente: https://github.com/daylight-00/PREpiBind

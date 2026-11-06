@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SilentVision-52M es un modelo de lenguaje conversacional bilingüe (árabe-inglés) desarrollado por el autor independiente Youssef Mohamed Aly (usuario `srmortal` en HuggingFace), diseñado específicamente para funcionar en dispositivos de borde con recursos extremadamente limitados, como una Raspberry Pi Zero 2 W con 512 MiB de RAM física. El modelo parte de Qwen2.5-0.5B, del que se extrae una porción reducida de 8 capas con dimensión oculta de 512 y 8 cabezas de atención (2 KV heads), y se le comprime el vocabulario original de 151.000 tokens a 8.192 tokens bilingües, resultando en 52,08 millones de parámetros totales.
+SilentVision-52M es un modelo de lenguaje conversacional bilingüe (árabe-inglés) desarrollado por el autor independiente Youssef Mohamed Aly (usuario `srmortal` en Hugging Face), diseñado específicamente para funcionar en dispositivos de borde con recursos extremadamente limitados, como una Raspberry Pi Zero 2 W con 512 MiB de RAM física. El modelo parte de Qwen2.5-0.5B, del que se extrae una porción reducida de 8 capas con dimensión oculta de 512 y 8 cabezas de atención (2 KV heads), y se le comprime el vocabulario original de 151.000 tokens a 8.192 tokens bilingües, resultando en 52,08 millones de parámetros totales.
 
 La propuesta técnica va más allá del recorte de parámetros: el sistema combina la base de 52M con tres adaptadores LoRA de rango 16 (matemáticas, física e historia), un motor simbólico AST determinista para aritmética con enrutamiento automático de herramientas y una recuperación factual en disco mediante SQLite que no consume RAM. El objetivo declarado es superar la "barrera de capacidad" del edge computing sin recurrir a swap.
 
@@ -107,6 +107,6 @@ SilentVision-52M se distingue por su huella de memoria inferior a 100 MB y su so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srmortal/SilentVision-52M
+- Hugging Face: https://huggingface.co/srmortal/SilentVision-52M
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio llama.cpp (despliegue GGUF): https://github.com/ggerganov/llama.cpp

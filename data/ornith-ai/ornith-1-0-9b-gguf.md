@@ -78,8 +78,8 @@ Ornith-1.0-9B compite directamente con modelos densos de tamano similar orientad
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF
-- Repositorio HuggingFace (modelo base): https://huggingface.co/ornith-ai/Ornith-1.0-9B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ornith-ai/Ornith-1.0-9B-GGUF
+- Repositorio Hugging Face (modelo base): https://huggingface.co/ornith-ai/Ornith-1.0-9B
 - Repositorio GitHub: https://github.com/ornith-ai/Ornith-1
 - Blog del modelo: https://ornith.ai/ornith_1_0.html
 - Sitio web de Ornith AI: https://ornith.ai/

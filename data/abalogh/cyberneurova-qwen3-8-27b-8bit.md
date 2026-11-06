@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abalogh/cyberneurova-Qwen3.8-27B-8bit
+- Repositorio Hugging Face: https://huggingface.co/abalogh/cyberneurova-Qwen3.8-27B-8bit
 - Modelo base (referenciado): https://huggingface.co/cyberneurova/cyberneurova-Qwen3.8-27B (no verificado)
 - No se han encontrado papers, blogs, demos u otros enlaces adicionales en la información proporcionada.

@@ -97,6 +97,6 @@ En comparación con modelos de tamaño similar, el Mimir 1B AWQ FP4 supera a Qwe
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/schneiderkamplab/DFM-Mimir-AWQ-FP4
+- Página del modelo en Hugging Face: https://huggingface.co/schneiderkamplab/DFM-Mimir-AWQ-FP4
 - Modelo base: https://huggingface.co/danish-foundation-models/DFM-Mimir
 - Paper: https://arxiv.org/abs/2608.13517

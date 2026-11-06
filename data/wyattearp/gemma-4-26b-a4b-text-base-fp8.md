@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| google/gemma-4-26B-A4B-it (original) | 25.2 B | 256K | BF16 (50.47 GiB) | Gemma | HuggingFace |
-| wyattearp/Gemma-4-26B-A4B-text-base-fp8 | 25.2 B | 256K | FP8 (24.2 GiB) | Gemma | HuggingFace |
-| Otros modelos MoE de tamano similar (p.ej. Mixtral 8x7B) | 46.7 B | 32K | Varias | Apache 2.0 | HuggingFace |
+| google/gemma-4-26B-A4B-it (original) | 25.2 B | 256K | BF16 (50.47 GiB) | Gemma | Hugging Face |
+| wyattearp/Gemma-4-26B-A4B-text-base-fp8 | 25.2 B | 256K | FP8 (24.2 GiB) | Gemma | Hugging Face |
+| Otros modelos MoE de tamano similar (p.ej. Mixtral 8x7B) | 46.7 B | 32K | Varias | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas opciones. La principal diferencia de esta version es la reduccion de footprint y la eliminacion de la parte multimodal, lo que la hace mas ligera para tareas de solo texto en hardware limitado.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones. La princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wyattearp/Gemma-4-26B-A4B-text-base-fp8
+- Modelo en Hugging Face: https://huggingface.co/wyattearp/Gemma-4-26B-A4B-text-base-fp8
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Modelo base (variante sin it): https://huggingface.co/google/gemma-4-26B-A4B
 - Pagina oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

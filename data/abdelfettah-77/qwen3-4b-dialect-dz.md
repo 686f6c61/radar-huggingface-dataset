@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Abdelfettah-77/Qwen3-4B-dialect-dz es un modelo de generacion de texto publicado en HuggingFace por el usuario Abdelfettah-77. Por el nombre del repositorio y las etiquetas asociadas (qwen3, trl, sft, conversational), se trata de un ajuste fino supervisado (SFT) de un modelo base de la familia Qwen3 con 4.155.694.592 parametros, orientado a generacion conversacional. El sufijo "dz" del identificador sugiere un enfasis en variantes dialectales argelinas (dariya), aunque esta interpretacion no esta confirmada en la informacion disponible.
+Abdelfettah-77/Qwen3-4B-dialect-dz es un modelo de generacion de texto publicado en Hugging Face por el usuario Abdelfettah-77. Por el nombre del repositorio y las etiquetas asociadas (qwen3, trl, sft, conversational), se trata de un ajuste fino supervisado (SFT) de un modelo base de la familia Qwen3 con 4.155.694.592 parametros, orientado a generacion conversacional. El sufijo "dz" del identificador sugiere un enfasis en variantes dialectales argelinas (dariya), aunque esta interpretacion no esta confirmada en la informacion disponible.
 
 El modelo resuelve un problema acotado: adaptar un modelo generalista de ~4.000 millones de parametros a un registro conversacional especifico mediante SFT. Es relevante en el contexto actual de modelos pequenos ajustados por la comunidad, ya que un modelo denso de 4B puede desplegarse en hardware de consumo con cuantizacion de 4 bits, lo que abarata el ajuste por dominio frente a alternativas de mayor tamano.
 
-La model card publicada es la plantilla generada automaticamente por HuggingFace y no ha sido cumplimentada: todos los apartados (desarrollador, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no tiene descargas ni "likes" en el momento de la consulta, y la busqueda web no devolvio resultados tecnicos relevantes sobre el modelo.
+La model card publicada es la plantilla generada automaticamente por Hugging Face y no ha sido cumplimentada: todos los apartados (desarrollador, idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "[More Information Needed]". El repositorio no tiene descargas ni "likes" en el momento de la consulta, y la busqueda web no devolvio resultados tecnicos relevantes sobre el modelo.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Observacion tecnica: un checkpoint denso de 4,16B parametros en fp16 ocuparia ap
 
 La informacion disponible no detalla la arquitectura mas alla de las etiquetas del Hub. Dado el prefijo "Qwen3-4B" del identificador, lo mas probable es que se trate de un transformer decoder-only denso con las innovaciones habituales de esa familia (normalizacion RMSNorm, activacion SwiGLU, atencion con query-key normalization y RoPE, posiblemente con grouped-query attention). Ninguno de estos extremos esta confirmado por el autor en la model card, que permanece como plantilla vacia.
 
-Sobre el entrenamiento, las etiquetas "trl" y "sft" indican que se ha aplicado ajuste fino supervisado mediante la libreria TRL de HuggingFace, presumiblemente con un dataset de conversaciones en el dialecto objetivo. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases posteriores de RLHF o DPO, ni los hiperparametros utilizados (tasa de aprendizaje, regimen de precision, numero de epocas). Tampoco se documenta el modelo base exacto del que parte el ajuste.
+Sobre el entrenamiento, las etiquetas "trl" y "sft" indican que se ha aplicado ajuste fino supervisado mediante la libreria TRL de Hugging Face, presumiblemente con un dataset de conversaciones en el dialecto objetivo. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases posteriores de RLHF o DPO, ni los hiperparametros utilizados (tasa de aprendizaje, regimen de precision, numero de epocas). Tampoco se documenta el modelo base exacto del que parte el ajuste.
 
 ## Capacidades
 
@@ -79,7 +79,7 @@ No se dispone de datos verificados de los modelos comparables dentro de la infor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Abdelfettah-77/Qwen3-4B-dialect-dz | 4,16B | No disponible | No disponible | HuggingFace, 0 descargas |
+| Abdelfettah-77/Qwen3-4B-dialect-dz | 4,16B | No disponible | No disponible | Hugging Face, 0 descargas |
 | Qwen3-4B (modelo base presumible) | No disponible en esta busqueda | No disponible | No disponible | No verificado |
 | Otras alternativas de ~3-4B | No disponible | No disponible | No disponible | No verificado |
 
@@ -100,7 +100,7 @@ No ha sido posible establecer una comparativa de rendimiento fiable: no existen 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abdelfettah-77/Qwen3-4B-dialect-dz
+- Hugging Face: https://huggingface.co/Abdelfettah-77/Qwen3-4B-dialect-dz
 - Referencia citada en las etiquetas del repositorio: Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Libreria TRL (etiqueta del repositorio): https://github.com/huggingface/trl
 - bitsandbytes (etiqueta del repositorio): https://github.com/bitsandbytes-foundation/bitsandbytes

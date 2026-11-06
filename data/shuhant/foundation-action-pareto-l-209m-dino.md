@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`foundation-action-pareto-l-209m-dino` es un modelo publicado en HuggingFace por el usuario `shuhant` bajo la licencia `nvidia-internal-research` y con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la ficha del repositorio. Por su nombre y por las etiquetas declaradas (`foundation-action`, `world-model`, `pareto`), se enmarca en la familia de modelos de accion y modelos de mundo, es decir, arquitecturas orientadas a predecir acciones o transiciones de estado en entornos embodied, aunque la informacion publica disponible no permite confirmar detalles de diseno.
+`foundation-action-pareto-l-209m-dino` es un modelo publicado en Hugging Face por el usuario `shuhant` bajo la licencia `nvidia-internal-research` y con acceso restringido (gated): para descargarlo es necesario aceptar previamente las condiciones en la ficha del repositorio. Por su nombre y por las etiquetas declaradas (`foundation-action`, `world-model`, `pareto`), se enmarca en la familia de modelos de accion y modelos de mundo, es decir, arquitecturas orientadas a predecir acciones o transiciones de estado en entornos embodied, aunque la informacion publica disponible no permite confirmar detalles de diseno.
 
 El modelo cuenta con 209.249.280 parametros (~209 M) segun los pesos reales almacenados en formato safetensors, y el repositorio ocupa 0,8 GB, un tamano coherente con pesos en precision completa (fp32) para ese numero de parametros. El sufijo `dino` del identificador sugiere un backbone de vision tipo DINO, y el sufijo `l` podria corresponder a una variante de tamano "large", pero ninguna de estas dos inferencias esta confirmada en la informacion disponible.
 
@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 ## Limitaciones y advertencias
 
 - Licencia `nvidia-internal-research`: no es una licencia de codigo abierto y el propio nombre indica uso interno de investigacion; no debe asumirse permiso para uso comercial.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo, y el autor puede denegar la solicitud.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo, y el autor puede denegar la solicitud.
 - Ausencia total de documentacion: no hay model card con instrucciones de uso, formato de entrada/salida, tokenizer ni ejemplos.
 - Sin benchmarks publicados: no es posible estimar su calidad frente a alternativas.
 - Riesgo de alucinacion y sesgos: no evaluable sin informacion sobre datos de entrenamiento.
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shuhant/foundation-action-pareto-l-209m-dino
+- Modelo en Hugging Face: https://huggingface.co/shuhant/foundation-action-pareto-l-209m-dino
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

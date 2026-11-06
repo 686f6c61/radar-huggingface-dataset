@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de tamaño similar como Qw
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1
+- Modelo en Hugging Face: https://huggingface.co/smllms/HyperCLOVA-X-SEED-MISHULTA-v1
 - Modelo base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B
 - Licencia del base: https://huggingface.co/naver-hyperclovax/HyperCLOVAX-SEED-Think-14B/blob/main/LICENSE
 - Technical report de HyperCLOVA X: https://arxiv.org/abs/2404.01954

@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble. Por un lado, documenta una receta de cuant
 | Longitud de contexto | 262.144 tokens nativos (`original_max_position_embeddings`); la receta de 4 GPU aplica YaRN con factor 2.0 y alcanza 524.288 tokens. La receta de 2 GPU se limita a 262.144 |
 | Tipos de cuantizacion | MXFP4 activation-aware (expertos, 64,2 GB), int6 (tabla N-Gram/PLE, 41,6 GB), FP8 (MTP, 2,7 GB; atencion, 2,7 GB), FP8 KV cache con escalas calibradas. Total 116 GB |
 | Idiomas soportados | No disponible |
-| Licencia | Metadata de HuggingFace: qwen-community-1.0. Frontmatter del README: apache-2.0 con `license_name: qwen-community-1.0`. Hay una discrepancia no resuelta entre ambas declaraciones |
+| Licencia | Metadata de Hugging Face: qwen-community-1.0. Frontmatter del README: apache-2.0 con `license_name: qwen-community-1.0`. Hay una discrepancia no resuelta entre ambas declaraciones |
 | Formato de pesos | safetensors con compresion `compressed-tensors`; libreria transformers; 8-bit |
 | Pipeline | image-text-to-text (vision-lenguaje) |
 | Modelo base | Qwen/Qwen3.8-Flash-Next |
@@ -89,14 +89,14 @@ Solo se dispone de informacion sobre el modelo base y sobre una version mxfp4 an
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ | 175,4 B | 262.144 / 524.288 tokens | MXFP4 + FP8 + int6, 116 GB | qwen-community-1.0 (metadata) / apache-2.0 (README) | HuggingFace, imagen Docker propia, solo AMD R9700 |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | 175,4 B | No disponible en la informacion proporcionada | Precision original no disponible | No disponible | HuggingFace |
+| tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ | 175,4 B | 262.144 / 524.288 tokens | MXFP4 + FP8 + int6, 116 GB | qwen-community-1.0 (metadata) / apache-2.0 (README) | Hugging Face, imagen Docker propia, solo AMD R9700 |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | 175,4 B | No disponible en la informacion proporcionada | Precision original no disponible | No disponible | Hugging Face |
 | Version mxfp4 anterior (sin identificador) | No disponible | No disponible | mxfp4 | No disponible | Referenciada por el autor, sin enlace |
 
 ## Limitaciones y advertencias
 
 - Restriccion de hardware severa: la model card afirma que el modelo solo se ejecuta en GPUs AMD AI PRO R9700. Esto lo inutiliza en cualquier infraestructura basada en NVIDIA y en la mayoria de entornos AMD anteriores a RDNA4.
-- Ambiguedad de licencia: la metadata de HuggingFace declara `qwen-community-1.0` y el frontmatter del README declara `apache-2.0` con `license_name: qwen-community-1.0`. Antes de cualquier uso comercial hay que resolver esa discrepancia con el autor y revisar la licencia del modelo base, que es la que habitualmente impone las condiciones reales.
+- Ambiguedad de licencia: la metadata de Hugging Face declara `qwen-community-1.0` y el frontmatter del README declara `apache-2.0` con `license_name: qwen-community-1.0`. Antes de cualquier uso comercial hay que resolver esa discrepancia con el autor y revisar la licencia del modelo base, que es la que habitualmente impone las condiciones reales.
 - No hay informacion sobre sesgos, composicion del dataset de entrenamiento ni evaluaciones de seguridad del modelo base ni de esta cuantizacion.
 - Riesgo de alucinacion: no se publican evaluaciones de fidelidad ni de tasas de alucinacion. Las metricas disponibles (PPL, KLD, Top1) miden la degradacion introducida por la cuantizacion, no la veracidad de las respuestas.
 - Idiomas soportados no documentados. No se puede asumir un rendimiento homogeneo en castellano sin evaluacion propia.
@@ -108,7 +108,7 @@ Solo se dispone de informacion sobre el modelo base y sobre una version mxfp4 an
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ
+- Repositorio Hugging Face: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Informe de throughput BetterBench, pagina 1: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ/resolve/main/Next-Throughput-INT6PLE-28.04.8.png
 - Informe de throughput BetterBench, pagina 2: https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ/resolve/main/Next-Throughput-INT6PLE-28.04.8-pg2.png

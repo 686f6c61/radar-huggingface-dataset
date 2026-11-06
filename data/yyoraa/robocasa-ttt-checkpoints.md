@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yyoraa/robocasa-ttt-checkpoints` es un repositorio de checkpoints experimentales de entrenamiento para robótica, publicado por el usuario yyoraa bajo el pipeline `robotics` de HuggingFace. No se trata de un modelo base listo para uso general, sino de un archivo de estados de entrenamiento (incluyendo pesos, estado del optimizador AdamW, estados de aleatoriedad de Python/NumPy/PyTorch/CUDA y estados por rango) derivados de modelos upstream no especificados. El repositorio contiene 386 archivos de modelo y configuración verificados contra tamaños remotos el 21 de septiembre de 2026, con un tamaño total de 2854 GB.
+`yyoraa/robocasa-ttt-checkpoints` es un repositorio de checkpoints experimentales de entrenamiento para robótica, publicado por el usuario yyoraa bajo el pipeline `robotics` de Hugging Face. No se trata de un modelo base listo para uso general, sino de un archivo de estados de entrenamiento (incluyendo pesos, estado del optimizador AdamW, estados de aleatoriedad de Python/NumPy/PyTorch/CUDA y estados por rango) derivados de modelos upstream no especificados. El repositorio contiene 386 archivos de modelo y configuración verificados contra tamaños remotos el 21 de septiembre de 2026, con un tamaño total de 2854 GB.
 
 El propósito declarado es servir como punto de reanudación de experimentos de entrenamiento (el autor menciona "TTT", probablemente test-time training, aunque no se explicita en la información disponible) sobre tareas de navegación y manipulación en el entorno RoboCasa. El checkpoint prioritario es `ttt/navigation-stage2-20k-4gpu-20260919/checkpoint-650.pt`, que corresponde a un entrenamiento pausado en el paso 650 de una programación original de 20000 pasos, con un objetivo de 1000 actualizaciones. No se proporcionan detalles sobre la arquitectura del modelo subyacente, el número de parámetros ni la longitud de contexto.
 
@@ -74,6 +74,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yyoraa/robocasa-ttt-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/yyoraa/robocasa-ttt-checkpoints
 - Resultados del experimento: https://huggingface.co/datasets/yyoraa/ttt-experiment-results
 - Documentación de migración y TODO (repositorio privado, requiere acceso): https://github.com/yyoraa/ttt_memory/tree/main/experiments/2026-09-20-handoff

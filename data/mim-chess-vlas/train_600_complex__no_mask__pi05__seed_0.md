@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de pi05_base) | ~4,14 mil millones | no disponible | no disponible (sin benchmarks) | Apache 2.0 | HuggingFace, via LeRobot |
-| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible en esta informacion | HuggingFace (modelo base) |
+| Este modelo (fine-tune de pi05_base) | ~4,14 mil millones | no disponible | no disponible (sin benchmarks) | Apache 2.0 | Hugging Face, via LeRobot |
+| lerobot/pi05_base | no disponible | no disponible | no disponible | no disponible en esta informacion | Hugging Face (modelo base) |
 | Otras politicas VLA de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Solo se puede comparar de forma fiable con su modelo base (`lerobot/pi05_base`), del que se diferencia por el ajuste fino sobre el dataset de 600 episodios. No se dispone de datos de otros modelos VLA comparables en la informacion proporcionada.
@@ -91,7 +91,7 @@ Solo se puede comparar de forma fiable con su modelo base (`lerobot/pi05_base`),
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_600_complex__no_mask__pi05__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_600_complex__no_mask__pi05__seed_0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_600_complex__no_mask
 - Guia de π₀.₅ en LeRobot: https://huggingface.co/docs/lerobot/main/en/pi05

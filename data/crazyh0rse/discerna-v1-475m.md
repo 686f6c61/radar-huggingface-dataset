@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Discerna-v1-475M es un modelo de decisión —no un modelo generativo— publicado por el usuario CrazyH0rse en HuggingFace. Recibe un estado (texto libre o cualquier JSON), opcionalmente imágenes, y un conjunto de preguntas con nombre; devuelve, en una sola pasada hacia delante, una probabilidad calibrada para cada opción de cada pregunta. Admite tres tipos de pregunta: sí/no (`noul`), elección entre 2 y 255 opciones con nombre (`choice`) y nivel en una escala de 2 a 10 (`score`). No emite texto: la salida es estructurada y el modelo reporta `output_tokens: 0`.
+Discerna-v1-475M es un modelo de decisión —no un modelo generativo— publicado por el usuario CrazyH0rse en Hugging Face. Recibe un estado (texto libre o cualquier JSON), opcionalmente imágenes, y un conjunto de preguntas con nombre; devuelve, en una sola pasada hacia delante, una probabilidad calibrada para cada opción de cada pregunta. Admite tres tipos de pregunta: sí/no (`noul`), elección entre 2 y 255 opciones con nombre (`choice`) y nivel en una escala de 2 a 10 (`score`). No emite texto: la salida es estructurada y el modelo reporta `output_tokens: 0`.
 
 Se construye por fine-tuning sobre los modelos de LiquidAI LFM2.5-Encoder-350M y LFM2.5-VL-450M, y suma 474.967.041 parámetros: un encoder de texto bidireccional de 354,5M (16 capas, anchura 1.024), una torre de visión SigLIP2 de 85,8M, un proyector de 8,4M y una cabeza de decisión de 26,2M. Acepta hasta 16.384 tokens de texto, o hasta 896 tokens de texto cuando se adjuntan imágenes (cada imagen se lee en hasta diez teselas de 512 píxeles más una miniatura).
 
@@ -97,7 +97,7 @@ No se han encontrado en la información proporcionada otros modelos de decisión
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrazyH0rse/Discerna-v1-475M
+- Modelo en Hugging Face: https://huggingface.co/CrazyH0rse/Discerna-v1-475M
 - Fichero de licencia referenciado en la model card: https://huggingface.co/CrazyH0rse/Discerna-v1-475M/blob/main/LICENSE
 - Wheel del paquete `discerna` 1.0.0: https://huggingface.co/CrazyH0rse/Discerna-v1-475M/resolve/main/wheels/discerna-1.0.0-py3-none-any.whl
 - Ejemplos del repositorio (peticiones, imágenes y clave de respuestas): `hf download CrazyH0rse/Discerna-v1-475M --include "examples/*" --local-dir .`

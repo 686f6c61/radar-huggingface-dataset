@@ -101,6 +101,6 @@ La ventaja diferencial de `codebert-permissive-embed` no es el rendimiento bruto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thinkingdbx/codebert-permissive-embed
+- Modelo en Hugging Face: https://huggingface.co/thinkingdbx/codebert-permissive-embed
 - Paper de CoIR (benchmark de referencia): https://arxiv.org/abs/2407.02883
-- Repositorio con datos de entrenamiento y metricas: los archivos `lineage.json`, `benchmark.json` y `retrieval.json` estan incluidos en el repositorio del modelo en HuggingFace.
+- Repositorio con datos de entrenamiento y metricas: los archivos `lineage.json`, `benchmark.json` y `retrieval.json` estan incluidos en el repositorio del modelo en Hugging Face.

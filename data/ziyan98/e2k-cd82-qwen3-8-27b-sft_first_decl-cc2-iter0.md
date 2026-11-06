@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter0 | 27,8 B | No disponible | Apache-2.0 | HuggingFace, 0 descargas | Checkpoint de investigación, SFT sobre un solo juego |
-| Qwen/Qwen3.8-27B (base) | 27,8 B | No disponible | Apache-2.0 | HuggingFace | Modelo generalista del que deriva; mismo conjunto de tensores y formas |
+| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter0 | 27,8 B | No disponible | Apache-2.0 | Hugging Face, 0 descargas | Checkpoint de investigación, SFT sobre un solo juego |
+| Qwen/Qwen3.8-27B (base) | 27,8 B | No disponible | Apache-2.0 | Hugging Face | Modelo generalista del que deriva; mismo conjunto de tensores y formas |
 | Otros brazos del run `sft_first_decl-cc2` | 27,8 B | No disponible | Apache-2.0 | Un repositorio por iteración guardada, listados en `checkpoints/checkpoints.md` | Mismo pipeline, distinto punto del calentamiento |
 | Alternativas generalistas de tamaño similar | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos de comparación |
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter0
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc2-iter0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de episodios y métricas del run: https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

@@ -106,7 +106,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. El unico model
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rse2declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260916
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/aravdhoot/risk-spec-specv3local-q27-rse2declnotraceq27-qwen3.8-27b-hp500-r32-s0-20260916
 - Modelo base referenciado en la model card: https://huggingface.co/Qwen/Qwen3.8-27B
 - Nota sobre la busqueda web: los resultados proporcionados (foros de ComputerBase, Zhihu y Panasonic sobre Prime Video y Microsoft To-Do) no guardan ninguna relacion con el modelo y no se incluyen como referencias.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

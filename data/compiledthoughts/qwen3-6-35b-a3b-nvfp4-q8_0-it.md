@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CompiledThoughts/Qwen3.6-35B-A3B-NVFP4-Q8_0-it es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario CompiledThoughts. Por el identificador del repositorio se deduce que se trata de una cuantizacion o derivado de un modelo de la familia Qwen etiquetado como "3.6", con arquitectura de mezcla de expertos (MoE) de aproximadamente 35.000 millones de parametros totales y unos 3.000 millones de parametros activos por token (el sufijo A3B), en su variante ajustada por instrucciones (sufijo -it). El conteo real de parametros en safetensors que acompana a la ficha es de 34.660.672.370, es decir, unos 34,66 mil millones.
+CompiledThoughts/Qwen3.6-35B-A3B-NVFP4-Q8_0-it es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario CompiledThoughts. Por el identificador del repositorio se deduce que se trata de una cuantizacion o derivado de un modelo de la familia Qwen etiquetado como "3.6", con arquitectura de mezcla de expertos (MoE) de aproximadamente 35.000 millones de parametros totales y unos 3.000 millones de parametros activos por token (el sufijo A3B), en su variante ajustada por instrucciones (sufijo -it). El conteo real de parametros en safetensors que acompana a la ficha es de 34.660.672.370, es decir, unos 34,66 mil millones.
 
 El repositorio esta marcado con la etiqueta gguf, licencia apache-2.0, compatibilidad con endpoints y uso conversacional. El tamano del repositorio es de 20,5 GB, lo que corresponde al conjunto de ficheros cuantizados publicados. No se ha publicado model card con contenido tecnico: el README se limita al bloque de licencia apache-2.0, sin descripcion de arquitectura, datos de entrenamiento, idiomas o resultados de evaluacion.
 
@@ -85,6 +85,6 @@ No se dispone de datos verificados sobre los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompiledThoughts/Qwen3.6-35B-A3B-NVFP4-Q8_0-it
+- Hugging Face: https://huggingface.co/CompiledThoughts/Qwen3.6-35B-A3B-NVFP4-Q8_0-it
 - Model card del autor: sin contenido tecnico; solo incluye el bloque de licencia apache-2.0.
 - Papers, blogs, repositorios o demos: no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo: los unicos resultados obtenidos corresponden a servicios de consulta del historial de ITV (MOT) del Reino Unido, sin ninguna relacion con este modelo.

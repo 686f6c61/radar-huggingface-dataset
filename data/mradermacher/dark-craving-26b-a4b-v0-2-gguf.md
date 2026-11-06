@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dark-Craving-26B-A4B-v0.2-GGUF es la version cuantizada en formato GGUF del modelo ReadyArt/Dark-Craving-26B-A4B-v0.2, un modelo de lenguaje de aproximadamente 25.230 millones de parametros totales orientado a conversacion, roleplay y contenido para adultos (etiquetado como NSFW, explicit y ERP por su autor). La cuantizacion la ha realizado mradermacher, un publicador habitual de versiones GGUF de modelos de la comunidad en HuggingFace, y esta pensada para su uso con llama.cpp y derivados.
+Dark-Craving-26B-A4B-v0.2-GGUF es la version cuantizada en formato GGUF del modelo ReadyArt/Dark-Craving-26B-A4B-v0.2, un modelo de lenguaje de aproximadamente 25.230 millones de parametros totales orientado a conversacion, roleplay y contenido para adultos (etiquetado como NSFW, explicit y ERP por su autor). La cuantizacion la ha realizado mradermacher, un publicador habitual de versiones GGUF de modelos de la comunidad en Hugging Face, y esta pensada para su uso con llama.cpp y derivados.
 
 El modelo base emplea una nomenclatura "26B-A4B" que sugiere una arquitectura de mezcla de expertos (MoE) con aproximadamente 4.000 millones de parametros activos por token, aunque esta informacion no se detalla en la model card disponible. El repositorio incluye pesos en safetensors (25.233.142.046 parametros reales) y una bateria de cuantizaciones GGUF desde Q2_K hasta Q8_0, ademas de ficheros mmproj para un componente multimodal.
 

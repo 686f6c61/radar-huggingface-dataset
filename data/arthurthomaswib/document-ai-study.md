@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arthurthomaswib/document-ai-study` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace. Según su propia model card, contiene un artefacto principal (`analysis.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre tareas de comprensión de documentos. El autor declara explícitamente que no se trata de un paper completo ni de una publicación de modelos entrenados, y advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
+`arthurthomaswib/document-ai-study` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face. Según su propia model card, contiene un artefacto principal (`analysis.md`) que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre tareas de comprensión de documentos. El autor declara explícitamente que no se trata de un paper completo ni de una publicación de modelos entrenados, y advierte que las secciones etiquetadas como planes o hipótesis no deben interpretarse como resultados experimentales.
 
 El repositorio está etiquetado con `research-notes`, `document-ai`, `transformer`, `safetensors` y licencia `cc-by-4.0`, pero no publica pipeline de inferencia, idiomas soportados, configuración de arquitectura ni pesos utilizables. Los metadatos de safetensors reportan 24.832 parámetros totales, una cifra anómala que resulta incompatible con cualquier transformer funcional y que probablemente refleja un artefacto de prueba o un recuento erróneo, no un modelo real. El tamaño del repositorio es de 0,0 GB.
 
@@ -20,7 +20,7 @@ Su relevancia es fundamentalmente metodológica: sirve como ejemplo de ficha que
 | Idiomas soportados | no disponible |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | safetensors (según etiquetas); el repositorio no contiene un checkpoint entrenado, con un tamaño de 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Autor | arthurthomaswib |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadato) | 28 de septiembre de 2026 |
@@ -96,7 +96,7 @@ No se dispone de modelos comparables en la misma categoría: el artefacto es un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arthurthomaswib/document-ai-study
+- Repositorio en Hugging Face: https://huggingface.co/arthurthomaswib/document-ai-study
 - Otro repositorio del mismo autor (aprendizaje eficiente en datos): https://huggingface.co/arthurthomaswib/paper_005423786_data_efficient_learning
 - Otro repositorio del mismo autor (fine-tuning de generación): https://huggingface.co/arthurthomaswib/generation-finetuning
 - Estudio sobre envenenamiento de datos con pocas muestras (Anthropic, UK AI Security Institute y Alan Turing Institute): https://www.anthropic.com/research/small-samples-poison

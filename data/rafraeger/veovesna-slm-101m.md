@@ -96,6 +96,6 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rafraeger/Veovesna-SLM-101M
-- Repositorio de pesos y codigo de carga: incluido en el propio repositorio de HuggingFace (`model.safetensors`, `config.json`, `tokenizer/`, `modeling_*.py`, `inference.py`, `requirements.txt`)
+- Hugging Face: https://huggingface.co/Rafraeger/Veovesna-SLM-101M
+- Repositorio de pesos y codigo de carga: incluido en el propio repositorio de Hugging Face (`model.safetensors`, `config.json`, `tokenizer/`, `modeling_*.py`, `inference.py`, `requirements.txt`)
 - Paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

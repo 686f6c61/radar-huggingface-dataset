@@ -106,7 +106,7 @@ La comparativa con modelos cerrados de sintesis de voz en criollo haitiano no es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jsbeaudry/pocket-tts-kreyol-onnx
+- Modelo en Hugging Face: https://huggingface.co/jsbeaudry/pocket-tts-kreyol-onnx
 - Space relacionado del mismo autor (Qwen3-TTS Kreyòl): https://huggingface.co/spaces/jsbeaudry/qwen3-tts-kreyol
 - Export ONNX comunitario de Pocket TTS (KevinAHM): https://huggingface.co/KevinAHM/pocket-tts-onnx
 - Ficha de Pocket TTS en AI Wiki (Learn AI): https://ai.miraheze.org/wiki/Pocket_TTS

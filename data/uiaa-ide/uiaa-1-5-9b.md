@@ -78,7 +78,7 @@ Nota: los datos de Yi-1.5-9B provienen de la busqueda web; no se dispone de benc
 
 ## Enlaces
 
-- [HuggingFace: uiaa-ide/UiAA-1.5-9B](https://huggingface.co/uiaa-ide/UiAA-1.5-9B)
+- [Hugging Face: uiaa-ide/UiAA-1.5-9B](https://huggingface.co/uiaa-ide/UiAA-1.5-9B)
 - [Modelo base: junafinity/Ornith-1.5-9B-uncensored](https://huggingface.co/junafinity/Ornith-1.5-9B-uncensored)
 - [Cuantizaciones con imatrix: mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF](https://huggingface.co/mradermacher/Ornith-1.5-9B-uncensored-i1-GGUF)
 - [Pagina de referencia del autor para el modelo](https://hf.tst.eu/model#Ornith-1.5-9B-uncensored-GGUF)

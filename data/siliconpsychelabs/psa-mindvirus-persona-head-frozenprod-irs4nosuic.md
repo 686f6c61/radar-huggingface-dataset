@@ -71,9 +71,9 @@ Como referencia comparativa, el cabezal anterior sobre su propio backbone alcanz
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PSA persona-adoption head (este modelo) | Cabezal de clasificación sobre Qwen3-0.6B | No disponible (solo cabezal) | 320 tokens (truncación de uso) | Apache-2.0 | HuggingFace |
+| PSA persona-adoption head (este modelo) | Cabezal de clasificación sobre Qwen3-0.6B | No disponible (solo cabezal) | 320 tokens (truncación de uso) | Apache-2.0 | Hugging Face |
 | Cabezal PSA anterior (referenciado en la model card) | Cabezal de clasificación sobre backbone propio | No disponible | No disponible | No disponible | No disponible |
-| `psa-multitask-reader-qwen3-0_6b-irs4nosuic` | Lector multitaréa (backbone) | Basado en Qwen3-0.6B | No disponible | No disponible | HuggingFace |
+| `psa-multitask-reader-qwen3-0_6b-irs4nosuic` | Lector multitaréa (backbone) | Basado en Qwen3-0.6B | No disponible | No disponible | Hugging Face |
 
 No se dispone de información sobre otros clasificadores de adopción de persona directamente comparables en la documentación proporcionada.
 
@@ -91,6 +91,6 @@ No se dispone de información sobre otros clasificadores de adopción de persona
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/SiliconPsycheLabs/psa-mindvirus-persona-head-frozenprod-irs4nosuic)
+- [Modelo en Hugging Face](https://huggingface.co/SiliconPsycheLabs/psa-mindvirus-persona-head-frozenprod-irs4nosuic)
 - [Backbone: psa-multitask-reader-qwen3-0_6b-irs4nosuic](https://huggingface.co/SiliconPsycheLabs/psa-multitask-reader-qwen3-0_6b-irs4nosuic)
 - [Silicon Psyche Labs](https://splabs.io)

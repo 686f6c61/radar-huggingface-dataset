@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| lector-2b-v1-GGUF | 331.416.576 | no disponible | no disponible | GGUF | HuggingFace |
+| lector-2b-v1-GGUF | 331.416.576 | no disponible | no disponible | GGUF | Hugging Face |
 | Alternativas de ~0,3 B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

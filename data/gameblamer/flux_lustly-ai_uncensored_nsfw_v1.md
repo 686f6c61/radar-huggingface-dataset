@@ -4,7 +4,7 @@
 
 Flux_Lustly.ai_Uncensored_nsfw_v1 es un adaptador LoRA para generación de imágenes mediante texto, desarrollado por el usuario Gameblamer sobre el modelo base black-forest-labs/FLUX.1-dev. Su propósito es eliminar los filtros de seguridad y las restricciones de contenido del modelo base para permitir la generación de imágenes con desnudos y contenido erótico explícito (NSFW), algo que FLUX.1-dev bloquea por defecto mediante su safety checker y el entrenamiento de su text encoder.
 
-El modelo se distribuye en formato safetensors a través de HuggingFace, con un tamaño de repositorio de aproximadamente 0,4 GB, lo que es coherente con un adaptador LoRA de bajo rango en lugar de un modelo completo. Se integra en el ecosistema de diffusers de Hugging Face mediante FluxPipeline, por lo que requiere cargar el modelo base FLUX.1-dev completo y aplicarle el LoRA encima. La licencia declarada es CreativeML Open RAIL-M, heredada del ecosistema Stable Diffusion, aunque el modelo base FLUX.1-dev está bajo una licencia no comercial propia de Black Forest Labs, lo que introduce una ambigüedad legal relevante.
+El modelo se distribuye en formato safetensors a través de Hugging Face, con un tamaño de repositorio de aproximadamente 0,4 GB, lo que es coherente con un adaptador LoRA de bajo rango en lugar de un modelo completo. Se integra en el ecosistema de diffusers de Hugging Face mediante FluxPipeline, por lo que requiere cargar el modelo base FLUX.1-dev completo y aplicarle el LoRA encima. La licencia declarada es CreativeML Open RAIL-M, heredada del ecosistema Stable Diffusion, aunque el modelo base FLUX.1-dev está bajo una licencia no comercial propia de Black Forest Labs, lo que introduce una ambigüedad legal relevante.
 
 Según la propia model card, este repositorio está archivado: el autor ha migrado su trabajo a un nuevo modelo llamado Z-Image-Uncensored (periwinklai/Z-Image-Uncensored) y su plataforma comercial Periwinkl.ai. Esto significa que el modelo ya no recibe mantenimiento ni actualizaciones, y su uso se desaconseja en favor del sucesor. Su relevancia actual es principalmente histórica y de referencia dentro del ecosistema de LoRAs uncensored sobre FLUX.
 
@@ -70,7 +70,7 @@ La alternativa recomendada por el propio autor es el sucesor periwinklai/Z-Image
 
 ## Limitaciones y advertencias
 
-- Contenido para adultos explícito: el modelo está etiquetado como "not-for-all-audiences" y "nudity"; su uso está restringido a mayores de edad y puede incumplir las políticas de plataformas de despliegue (HuggingFace Spaces, servicios cloud comerciales).
+- Contenido para adultos explícito: el modelo está etiquetado como "not-for-all-audiences" y "nudity"; su uso está restringido a mayores de edad y puede incumplir las políticas de plataformas de despliegue (Hugging Face Spaces, servicios cloud comerciales).
 - Riesgo de generación de contenido no consentido o ilegal: al eliminar los filtros, el modelo no bloquea la generación de personas reales identificables ni de contenido que pueda ser ilegal según la jurisdicción; es responsabilidad del usuario cumplir la legislación aplicable.
 - Conflicto de licencias: el modelo declara CreativeML Open RAIL-M, pero FLUX.1-dev está bajo la licencia no comercial de Black Forest Labs; cualquier uso comercial de las salidas puede violar los términos del modelo base. Este punto es jurídicamente ambiguo y debe revisarse antes de cualquier despliegue comercial.
 - Modelo archivado: el autor ha abandonado el mantenimiento en favor de Z-Image-Uncensored; no cabe esperar correcciones ni soporte.
@@ -81,7 +81,7 @@ La alternativa recomendada por el propio autor es el sucesor periwinklai/Z-Image
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gameblamer/Flux_Lustly.ai_Uncensored_nsfw_v1
+- Repositorio en Hugging Face: https://huggingface.co/Gameblamer/Flux_Lustly.ai_Uncensored_nsfw_v1
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.1-dev
 - Sucesor recomendado por el autor: https://huggingface.co/periwinklai/Z-Image-Uncensored
 - Plataforma del autor: https://periwinkl.ai

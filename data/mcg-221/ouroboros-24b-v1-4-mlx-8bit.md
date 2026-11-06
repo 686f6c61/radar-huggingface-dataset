@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ouroboros-24B-v1.4-mlx-8Bit es una conversión al formato MLX (Apple Silicon) del modelo Ouroboros-24B-v1.4, creado por Naphula y convertido por McG-221. El modelo está especializado en escritura creativa, generación de ficción, roleplay y narración de historias en inglés. Según los metadatos de HuggingFace, el archivo safetensors contiene 6.630.048.000 parámetros, una cifra que no coincide con el nombre "24B" y que probablemente refleja un error en la etiqueta del repositorio; el modelo base original se anuncia como de 24 mil millones de parámetros. La conversión utiliza cuantización de 8 bits, lo que reduce el tamaño del repositorio a 25,1 GB, y está pensada para ejecutarse en equipos con chip Apple (M-series) mediante la librería mlx-lm.
+Ouroboros-24B-v1.4-mlx-8Bit es una conversión al formato MLX (Apple Silicon) del modelo Ouroboros-24B-v1.4, creado por Naphula y convertido por McG-221. El modelo está especializado en escritura creativa, generación de ficción, roleplay y narración de historias en inglés. Según los metadatos de Hugging Face, el archivo safetensors contiene 6.630.048.000 parámetros, una cifra que no coincide con el nombre "24B" y que probablemente refleja un error en la etiqueta del repositorio; el modelo base original se anuncia como de 24 mil millones de parámetros. La conversión utiliza cuantización de 8 bits, lo que reduce el tamaño del repositorio a 25,1 GB, y está pensada para ejecutarse en equipos con chip Apple (M-series) mediante la librería mlx-lm.
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Su enfoque principal es la generación de texto narrativo de alta calidad, con soporte para tramas, subtramas, continuación de escenas y diálogos, incluyendo lenguaje soez y géneros como ciencia ficción, romance y terror. No se han publicado benchmarks cuantitativos en la información disponible, por lo que su evaluación se basa en las capacidades declaradas y en el diseño orientado a tareas creativas.
 
@@ -73,6 +73,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/McG-221/Ouroboros-24B-v1.4-mlx-8Bit
+- Modelo en Hugging Face: https://huggingface.co/McG-221/Ouroboros-24B-v1.4-mlx-8Bit
 - Modelo base (Naphula/Ouroboros-24B-v1.4): https://huggingface.co/Naphula/Ouroboros-24B-v1.4
 - Librería mlx-lm (documentación de uso): https://github.com/ml-explore/mlx-lm

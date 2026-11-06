@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YuchenLw/trial-neural-architecture-search no es un modelo de lenguaje en el sentido habitual: es un repositorio de HuggingFace que contiene un conjunto estructurado de notas de investigacion sobre Neural Architecture Search (NAS). El propio autor lo declara explicitamente en la model card, donde indica que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Los unicos ficheros documentados son `review.md` (artefacto principal) y `README.md` (documentacion).
+YuchenLw/trial-neural-architecture-search no es un modelo de lenguaje en el sentido habitual: es un repositorio de Hugging Face que contiene un conjunto estructurado de notas de investigacion sobre Neural Architecture Search (NAS). El propio autor lo declara explicitamente en la model card, donde indica que no reclama mejoras en benchmarks, ablaciones completadas, codigo publicado ni un checkpoint entrenado. Los unicos ficheros documentados son `review.md` (artefacto principal) y `README.md` (documentacion).
 
 El repositorio lleva las etiquetas `transformer`, `safetensors` y `neural-architecture-search`, y los metadatos de safetensors reportan 16.576 parametros totales, una magnitud incompatible con cualquier transformer funcional. El tamano del repositorio es de 0,0 GB, sin `config.json`, sin tokenizer ni pipeline de inferencia declarado. Todo apunta a un tensor de prueba o de juguete adjunto como marcador de posicion, no a pesos utilizables.
 
@@ -85,5 +85,5 @@ No se dispone de modelos comparables en la informacion proporcionada. El objeto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuchenLw/trial-neural-architecture-search
+- Hugging Face: https://huggingface.co/YuchenLw/trial-neural-architecture-search
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este repositorio: los enlaces recuperados corresponden a paginas de soporte de Microsoft sin relacion con el modelo. No se dispone de paper, blog, repositorio de codigo ni demo adicionales.

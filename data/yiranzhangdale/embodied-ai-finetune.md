@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yiranzhangdale/embodied-ai-finetune` no es un modelo de lenguaje: es un repositorio de notas de investigación sobre IA encarnada (*embodied AI*) publicado en HuggingFace bajo licencia CC-BY-4.0 por el usuario yiranzhangdale. La model card es explícita al respecto: el artefacto principal es `analysis.md`, un documento que describe el alcance de una pregunta de investigación, confusores potenciales, un diseño de comparación con baselines emparejados, referencias a benchmarks públicos y cuestiones abiertas de reproducibilidad. El propio autor indica que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
+`yiranzhangdale/embodied-ai-finetune` no es un modelo de lenguaje: es un repositorio de notas de investigación sobre IA encarnada (*embodied AI*) publicado en Hugging Face bajo licencia CC-BY-4.0 por el usuario yiranzhangdale. La model card es explícita al respecto: el artefacto principal es `analysis.md`, un documento que describe el alcance de una pregunta de investigación, confusores potenciales, un diseño de comparación con baselines emparejados, referencias a benchmarks públicos y cuestiones abiertas de reproducibilidad. El propio autor indica que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado.
 
-Los metadatos de HuggingFace declaran la etiqueta `safetensors` y un recuento de parámetros de 33.088, pero el tamaño del repositorio es de 0,0 GB y los únicos ficheros listados en la model card son `analysis.md` y `README.md`. Es decir, no hay pesos distribuidos, no hay tokenizador, no hay configuración de arquitectura y no hay pipeline de inferencia declarado. Cualquier valoración de rendimiento, contexto o capacidades del «modelo» carece de base empírica en la información disponible.
+Los metadatos de Hugging Face declaran la etiqueta `safetensors` y un recuento de parámetros de 33.088, pero el tamaño del repositorio es de 0,0 GB y los únicos ficheros listados en la model card son `analysis.md` y `README.md`. Es decir, no hay pesos distribuidos, no hay tokenizador, no hay configuración de arquitectura y no hay pipeline de inferencia declarado. Cualquier valoración de rendimiento, contexto o capacidades del «modelo» carece de base empírica en la información disponible.
 
 La relevancia de esta ficha es, por tanto, metodológica: sirve para distinguir entre un artefacto de investigación documental y un modelo desplegable, y para advertir a desarrolladores que localicen el repositorio por su nombre («finetune») de que no contiene un modelo afinado utilizable. A continuación se detalla qué datos existen, cuáles faltan y por qué.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, la model card declara explícitamente que la nota «n
 - Checklist de reproducibilidad: reutilizar la exigencia del autor (versiones de dataset, comandos, semillas, hardware y logs en bruto) como plantilla de documentación para experimentos de robótica o agentes encarnados.
 - Análisis de modos de fallo: emplear la sección de *failure modes* y preguntas abiertas como guion de discusión en un grupo de investigación que prepare ablaciones.
 - Docencia y seminarios: material de lectura para un curso de posgrado sobre metodología en IA encarnada, incidiendo en la separación entre planes e resultados.
-- Auditoría de artefactos en HuggingFace: caso práctico de cómo detectar que un repositorio etiquetado como modelo no contiene pesos ni pipeline, útil para equipos que automatizan la selección de modelos.
+- Auditoría de artefactos en Hugging Face: caso práctico de cómo detectar que un repositorio etiquetado como modelo no contiene pesos ni pipeline, útil para equipos que automatizan la selección de modelos.
 - No es adecuado para inferencia, generación de texto, despliegue en producción ni integración en pipelines de datos.
 
 ## Benchmarks y rendimiento
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada para inferencia: no aplica; no se distribuyen pesos.
 - GPU recomendadas: no aplica (A100, H100, RTX 4090 u otras no son necesarias para leer ficheros Markdown).
-- Cabe en GPU de consumo: no aplica; el repositorio completo ocupa 0,0 GB según HuggingFace.
+- Cabe en GPU de consumo: no aplica; el repositorio completo ocupa 0,0 GB según Hugging Face.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica; ninguno de estos motores puede cargar el repositorio porque no hay checkpoint, tokenizador ni configuración de arquitectura.
 - Latencia y throughput: no disponibles; no procede medirlos.
 
@@ -81,7 +81,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yiranzhangdale/embodied-ai-finetune
+- Repositorio en Hugging Face: https://huggingface.co/yiranzhangdale/embodied-ai-finetune
 - Fichero principal de la nota: `analysis.md` dentro del repositorio (no se dispone de URL directa verificada)
 - Documentación del repositorio: `README.md` dentro del repositorio (no se dispone de URL directa verificada)
 - Paper, blog, repositorio de código o demo asociados: no disponibles en la información proporcionada

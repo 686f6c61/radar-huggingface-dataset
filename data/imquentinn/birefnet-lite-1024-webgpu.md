@@ -4,7 +4,7 @@
 
 BiRefNet-lite 1024 (ONNX, WebGPU) es una exportacion a ONNX del modelo de segmentacion y matting BiRefNet-lite a resolucion 1024x1024, reescrita estructuralmente por el usuario imquentinn para que pueda ejecutarse en el execution provider WebGPU de onnxruntime-web. No es un modelo nuevo ni un reentrenamiento: los pesos son los del modelo base ZhengPeng7/BiRefNet_lite y solo se ha modificado la topologia del grafo. El problema que resuelve es muy concreto: la exportacion upstream a 1024 no compila en WebGPU y termina cayendo al execution provider de CPU, donde muere con `std::bad_alloc` en el heap wasm de 32 bits de ORT Web. Este repositorio es el parche que lo evita.
 
-La relevancia practica esta en el despliegue completamente en cliente: al funcionar sobre WebGPU en el navegador, el modelo permite eliminacion de fondos y matting alfa sin subir imagenes a un servidor, sin round-trip de red y sin cuenta de usuario. El autor lo usa como tier de calidad `best` en Backgroundless (backgroundless.io), sirviendo el grafo de 1024 a cualquier cliente cuyo adaptador pueda ejecutarlo y reservando el de 512 como opcion por defecto. El repo ocupa 0,1 GB, se distribuye bajo licencia MIT (que cubre tambien los pesos) y el idioma y el pipeline declarados en HuggingFace son `image-segmentation`.
+La relevancia practica esta en el despliegue completamente en cliente: al funcionar sobre WebGPU en el navegador, el modelo permite eliminacion de fondos y matting alfa sin subir imagenes a un servidor, sin round-trip de red y sin cuenta de usuario. El autor lo usa como tier de calidad `best` en Backgroundless (backgroundless.io), sirviendo el grafo de 1024 a cualquier cliente cuyo adaptador pueda ejecutarlo y reservando el de 512 como opcion por defecto. El repo ocupa 0,1 GB, se distribuye bajo licencia MIT (que cubre tambien los pesos) y el idioma y el pipeline declarados en Hugging Face son `image-segmentation`.
 
 Las dos reescrituras del grafo estan demostradas como bit-identicas al original sobre el execution provider de CPU (`max|diff| = 0.000e+00` sobre el conjunto de pruebas), de modo que la calidad del matting no deberia verse alterada por el parche. Conviene tener presente, no obstante, que la identidad bit a bit se verifico CPU contra CPU, no CPU contra WebGPU.
 
@@ -110,7 +110,7 @@ La comparacion de rendimiento entre las dos primeras variantes esta en la tabla 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imquentinn/birefnet-lite-1024-webgpu
+- Repositorio en Hugging Face: https://huggingface.co/imquentinn/birefnet-lite-1024-webgpu
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Identificador alternativo citado en el ejemplo de la model card (verificar): https://huggingface.co/jiabins0303/birefnet-lite-1024-webgpu
 - Aplicacion en produccion que usa este grafo como tier `best`: https://backgroundless.io

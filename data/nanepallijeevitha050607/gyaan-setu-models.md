@@ -86,7 +86,7 @@ La comparación directa con un único modelo alternativo no es posible porque el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nanepallijeevitha050607/gyaan-setu-models
+- Repositorio en Hugging Face: https://huggingface.co/nanepallijeevitha050607/gyaan-setu-models
 - Aplicación Gyaan Setu: https://gyaan-setu-beige.vercel.app
 - transformers.js: https://github.com/huggingface/transformers.js
 - SmolLM2-360M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct

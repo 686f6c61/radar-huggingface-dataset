@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vovantuan/robocasa-real-work-10000 es un checkpoint publicado en HuggingFace por el usuario vovantuan. Se trata de un modelo de 3.286.608.832 parámetros (aproximadamente 3,29 mil millones) almacenado en formato safetensors, con un repositorio de 9,8 GB. La etiqueta Gr00tN1d6 asociada al repositorio apunta a que se trata de un derivado o ajuste fino de la familia GR00T N1.6, orientada al control de robots humanoides mediante modelos de visión-lenguaje-acción (VLA). El nombre del repositorio, robocasa-real-work-10000, sugiere un ajuste sobre datos de RoboCasa y tareas de trabajo real, aunque no existe documentación que lo confirme.
+vovantuan/robocasa-real-work-10000 es un checkpoint publicado en Hugging Face por el usuario vovantuan. Se trata de un modelo de 3.286.608.832 parámetros (aproximadamente 3,29 mil millones) almacenado en formato safetensors, con un repositorio de 9,8 GB. La etiqueta Gr00tN1d6 asociada al repositorio apunta a que se trata de un derivado o ajuste fino de la familia GR00T N1.6, orientada al control de robots humanoides mediante modelos de visión-lenguaje-acción (VLA). El nombre del repositorio, robocasa-real-work-10000, sugiere un ajuste sobre datos de RoboCasa y tareas de trabajo real, aunque no existe documentación que lo confirme.
 
 El repositorio no incluye model card, licencia, idiomas declarados ni pipeline. Acumula 0 descargas y 2 "me gusta" en el momento de la consulta, y fue creado y actualizado el 13 de septiembre de 2026. La búsqueda web realizada no ha devuelto ningún resultado relevante sobre el modelo: los resultados obtenidos corresponden a páginas de un supermercado y no guardan relación alguna con el proyecto.
 
@@ -75,7 +75,7 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vovantuan/robocasa-real-work-10000 | 3,29 B | No disponible | No disponible | HuggingFace |
+| vovantuan/robocasa-real-work-10000 | 3,29 B | No disponible | No disponible | Hugging Face |
 | GR00T N1.6 (NVIDIA) | No disponible | No disponible | No disponible | No disponible |
 | OpenVLA | No disponible | No disponible | No disponible | No disponible |
 | pi0 / pi0.5 | No disponible | No disponible | No disponible | No disponible |
@@ -94,6 +94,6 @@ No se dispone de datos verificables para establecer una comparativa cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vovantuan/robocasa-real-work-10000
+- Modelo en Hugging Face: https://huggingface.co/vovantuan/robocasa-real-work-10000
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la búsqueda web realizada.
 - Los resultados de la búsqueda web obtenidos no son relevantes y corresponden a portales de un supermercado.

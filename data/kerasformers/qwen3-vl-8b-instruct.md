@@ -45,7 +45,7 @@ Estos casos se basan en las capacidades tipicas de un modelo de vision-lenguaje 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas comparativas ni metricas de evaluacion para esta conversion concreta. Para conocer el rendimiento del modelo original, se recomienda consultar la documentacion de `Qwen/Qwen3-VL-8B-Instruct` en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye tablas comparativas ni metricas de evaluacion para esta conversion concreta. Para conocer el rendimiento del modelo original, se recomienda consultar la documentacion de `Qwen/Qwen3-VL-8B-Instruct` en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -66,11 +66,11 @@ La informacion disponible no permite una comparativa cuantitativa. Como referenc
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [kerasformers/qwen3-vl-8b-instruct](https://huggingface.co/kerasformers/qwen3-vl-8b-instruct)
+- Repositorio de Hugging Face: [kerasformers/qwen3-vl-8b-instruct](https://huggingface.co/kerasformers/qwen3-vl-8b-instruct)
 - Modelo base original: [Qwen/Qwen3-VL-8B-Instruct](https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct)
 - Repositorio de GitHub de KerasFormers: [IMvision12/KerasFormers](https://github.com/IMvision12/KerasFormers)
 - Documentacion de Qwen3-VL en KerasFormers: [Docs](https://imvision12.github.io/KerasFormers/qwen3_vl/)
-- Coleccion de variantes en HuggingFace: [Qwen3-VL collection](https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a)
+- Coleccion de variantes en Hugging Face: [Qwen3-VL collection](https://huggingface.co/collections/kerasformers/qwen3-vl-6a7d7677c2926ecbddb1ed0a)
 - Paper Qwen3 Technical Report: [arXiv:2505.09388](https://arxiv.org/abs/2505.09388)
 - Paper Qwen2.5-VL Technical Report: [arXiv:2502.13923](https://arxiv.org/abs/2502.13923)
 - Paper Qwen2-VL: [arXiv:2409.12191](https://arxiv.org/abs/2409.12191)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`thomashoffmann/albef-baseline` es un repositorio de HuggingFace publicado por el usuario thomashoffmann que contiene una implementación funcional de ALBEF (Align Before Fuse) orientada a tareas de *retrieval* (recuperación imagen-texto) en una configuración marcada como "small". No es un modelo entrenado ni evaluado: su propio autor lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles, donde se omiten deliberadamente cualquier afirmación de rendimiento.
+`thomashoffmann/albef-baseline` es un repositorio de Hugging Face publicado por el usuario thomashoffmann que contiene una implementación funcional de ALBEF (Align Before Fuse) orientada a tareas de *retrieval* (recuperación imagen-texto) en una configuración marcada como "small". No es un modelo entrenado ni evaluado: su propio autor lo describe como un punto de partida experimental con código transparente y pruebas de humo reproducibles, donde se omiten deliberadamente cualquier afirmación de rendimiento.
 
 El peso incluido, `model.safetensors`, se presenta explícitamente como un checkpoint de inicialización válido para *smoke tests*, no como un modelo entrenado. El repositorio incluye además `train.py` (artefacto principal), `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador RMSprop con planificador polinómico).
 
@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thomashoffmann/albef-baseline | 33.088 (según safetensors; dato anómalo) | no disponible | sin benchmark declarado | apache-2.0 | HuggingFace, 0 descargas |
+| thomashoffmann/albef-baseline | 33.088 (según safetensors; dato anómalo) | no disponible | sin benchmark declarado | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,12 +88,12 @@ No se dispone de información sobre modelos comparables en la información propo
 - No se declara longitud de contexto, pese a usar atención de ventana deslizante.
 - No hay información sobre sesgos ni sobre riesgo de alucinación; al no estar entrenado, no aplica una evaluación de este tipo.
 - La licencia apache-2.0 cubre el repositorio, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen cuando se usen datasets externos.
-- Las fechas de creación y actualización del repositorio (2026-09-13) y el tamaño de 0.0 GB son metadatos atípicos; conviene verificarlos directamente en HuggingFace.
-- No se declara pipeline en HuggingFace, lo que refuerza que la carga requiere código propio y un adaptador explícito.
+- Las fechas de creación y actualización del repositorio (2026-09-13) y el tamaño de 0.0 GB son metadatos atípicos; conviene verificarlos directamente en Hugging Face.
+- No se declara pipeline en Hugging Face, lo que refuerza que la carga requiere código propio y un adaptador explícito.
 - Para producción no se recomienda su uso sin un entrenamiento previo y una evaluación reproducible documentada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thomashoffmann/albef-baseline
+- Hugging Face: https://huggingface.co/thomashoffmann/albef-baseline
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo, su arquitectura o su entrenamiento; los resultados obtenidos correspondían a contenido no relacionado (software ERP de distribución) y se descartan por no ser pertinentes.
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la información disponible.

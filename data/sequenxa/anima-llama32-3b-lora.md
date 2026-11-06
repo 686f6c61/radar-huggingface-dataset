@@ -23,7 +23,7 @@ Actualmente el repositorio no presenta descargas ni interacciones, lo que sugier
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA, una tecnica de ajuste fino parametro-eficiente que introduce matrices de bajo rango en las capas de atencion y feed-forward del modelo base. El modelo base, `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, es una version cuantizada a 4 bits del Llama 3.2 3B Instruct, optimizada para entrenamiento con Unsloth, lo que acelera el entrenamiento y reduce el uso de memoria. El adaptador fue entrenado con la libreria TRL (Transformers Reinforcement Learning) de HuggingFace, aunque no se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron metodos como RLHF o DPO. No se documenta ninguna innovacion arquitectonica adicional.
+El modelo es un adaptador LoRA, una tecnica de ajuste fino parametro-eficiente que introduce matrices de bajo rango en las capas de atencion y feed-forward del modelo base. El modelo base, `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, es una version cuantizada a 4 bits del Llama 3.2 3B Instruct, optimizada para entrenamiento con Unsloth, lo que acelera el entrenamiento y reduce el uso de memoria. El adaptador fue entrenado con la libreria TRL (Transformers Reinforcement Learning) de Hugging Face, aunque no se especifican los datos de entrenamiento, el numero de tokens, ni si se aplicaron metodos como RLHF o DPO. No se documenta ninguna innovacion arquitectonica adicional.
 
 ## Capacidades
 

@@ -88,8 +88,8 @@ No se han publicado resultados en benchmarks independientes (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen25-7b-fr-journalism-v08` (este) | LoRA r16 sobre base de 7B | No disponible (entrenamiento a 1.536 tokens) | Holdout propio: loss 0,2250 y ROUGE-L 0,8495 globales; retencion de cita 0,900 | No disponible | HuggingFace, 0 descargas, 0 likes |
-| `Qwen/Qwen2.5-7B-Instruct` (base sin ajustar) | 7B | No disponible en la informacion | Sin datos comparativos en la informacion | No disponible en la informacion | Publico en HuggingFace |
+| `qwen25-7b-fr-journalism-v08` (este) | LoRA r16 sobre base de 7B | No disponible (entrenamiento a 1.536 tokens) | Holdout propio: loss 0,2250 y ROUGE-L 0,8495 globales; retencion de cita 0,900 | No disponible | Hugging Face, 0 descargas, 0 likes |
+| `Qwen/Qwen2.5-7B-Instruct` (base sin ajustar) | 7B | No disponible en la informacion | Sin datos comparativos en la informacion | No disponible en la informacion | Publico en Hugging Face |
 | Otros adaptadores LoRA de periodismo en frances | No disponible | No disponible | No disponible | No disponible | No identificados en la informacion |
 
 No hay datos publicados que permitan comparar este adaptador con alternativas de la misma categoria en benchmarks comunes. La comparacion relevante es interna: frente al modelo base sin ajustar, el adaptador mejora las tareas de periodismo frances para las que fue entrenado, pero no se aporta una evaluacion del base en esas mismas tareas.
@@ -111,7 +111,7 @@ No hay datos publicados que permitan comparar este adaptador con alternativas de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v08
+- Modelo en Hugging Face: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v08
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Configuracion de carga PEFT: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v08/blob/main/adapter_config.json
 - Metadatos del experimento: https://huggingface.co/aamohame/qwen25-7b-fr-journalism-v08/blob/main/experiment_metadata.json

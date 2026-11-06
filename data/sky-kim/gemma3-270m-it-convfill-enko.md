@@ -111,7 +111,7 @@ La comparación con alternativas de la misma categoría (talkers pequeños para 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sky-Kim/gemma3-270m-IT-ConvFill-EnKo
+- Modelo en Hugging Face: https://huggingface.co/Sky-Kim/gemma3-270m-IT-ConvFill-EnKo
 - Modelo base: https://huggingface.co/vysri/gemma3-270m-IT-ConvFill
 - Paper "Thinking While Speaking": https://arxiv.org/abs/2511.07397
 - Repositorio de la receta: https://github.com/vysri/conversational-infill

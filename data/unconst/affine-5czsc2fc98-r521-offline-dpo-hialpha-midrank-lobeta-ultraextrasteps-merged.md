@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r521-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r521-offline-dpo-hialpha-midrank-lobeta-ultraextrasteps-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft

@@ -70,7 +70,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-high.h045.opd-selected-lite-bridge.step_1](https://huggingface.co/agentic-ptb/sol-high.h045.opd-selected-lite-bridge.step_1)
+- [Hugging Face: agentic-ptb/sol-high.h045.opd-selected-lite-bridge.step_1](https://huggingface.co/agentic-ptb/sol-high.h045.opd-selected-lite-bridge.step_1)
 - [Sol-HQ/agentic-library (GitHub)](https://github.com/Sol-HQ/agentic-library)
 - [EasyOPD: experimentos de agentic OPD (GitHub)](https://github.com/lds-ustc/EasyOPD/blob/main/experiments/02_agentic_opd/README.md)
 - [Paper: Look Ahead Before You Distill: Future Trajectory (arXiv)](https://arxiv.org/abs/2608.01953)

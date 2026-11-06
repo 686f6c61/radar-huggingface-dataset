@@ -74,8 +74,8 @@ Nota: los datos de contexto y licencia de los modelos comparados no están dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/Blue-nim/K2-Horizon-MoVA-36B-A4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Repositorio Hugging Face (GGUF): https://huggingface.co/Blue-nim/K2-Horizon-MoVA-36B-A4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Blog de IFM: https://ifm.ai/blog/k2
 - Página de Benchgen con benchmarks: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b
 - Fork de llama.cpp con soporte K2 Horizon: https://github.com/MBZUAI-IFM/llama.cpp/tree/model/K2Horizon

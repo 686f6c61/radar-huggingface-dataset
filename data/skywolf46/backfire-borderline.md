@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Backfire-borderline es un repositorio publicado en HuggingFace por el usuario skywolf46 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos con la licencia, sin texto descriptivo, sin especificaciones tecnicas y sin ejemplos de uso, por lo que no es posible determinar con la informacion disponible que tipo de artefacto contiene el repositorio (modelo base, ajuste fino, adaptador LoRA, cuantizacion o componente auxiliar).
+Backfire-borderline es un repositorio publicado en Hugging Face por el usuario skywolf46 bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos con la licencia, sin texto descriptivo, sin especificaciones tecnicas y sin ejemplos de uso, por lo que no es posible determinar con la informacion disponible que tipo de artefacto contiene el repositorio (modelo base, ajuste fino, adaptador LoRA, cuantizacion o componente auxiliar).
 
-El repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura ni tamano de parametros. Los unicos datos verificables son los metadatos de HuggingFace: identificador skywolf46/backfire-borderline, licencia apache-2.0, etiqueta de region us, cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (17 de septiembre de 2026), lo que indica que no ha habido modificaciones posteriores a la publicacion inicial.
+El repositorio no declara pipeline de inferencia, idiomas soportados, arquitectura ni tamano de parametros. Los unicos datos verificables son los metadatos de Hugging Face: identificador skywolf46/backfire-borderline, licencia apache-2.0, etiqueta de region us, cero descargas y cero likes, con fecha de creacion y ultima actualizacion identicas (17 de septiembre de 2026), lo que indica que no ha habido modificaciones posteriores a la publicacion inicial.
 
 Por tanto, esta ficha no puede evaluar el modelo en terminos de rendimiento, capacidades o idoneidad para produccion. Se recomienda tratar el repositorio como no verificado hasta que el autor publique una model card completa con arquitectura, tokenizador, datos de entrenamiento y resultados de evaluacion.
 
@@ -80,7 +80,7 @@ No disponible. Sin conocer el tipo de artefacto, el tamano ni la tarea, no es po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skywolf46/backfire-borderline
+- Repositorio en Hugging Face: https://huggingface.co/skywolf46/backfire-borderline
 - Perfil del autor: https://huggingface.co/skywolf46
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

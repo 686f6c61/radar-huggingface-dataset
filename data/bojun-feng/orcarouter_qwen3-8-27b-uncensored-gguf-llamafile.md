@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bojun-Feng/orcarouter_Qwen3.8-27B-Uncensored-GGUF-llamafile
+- Repositorio en Hugging Face: https://huggingface.co/Bojun-Feng/orcarouter_Qwen3.8-27B-Uncensored-GGUF-llamafile
 - Fichero llamafile Q4_K_M: https://huggingface.co/Bojun-Feng/orcarouter_Qwen3.8-27B-Uncensored-GGUF-llamafile/resolve/main/orcarouter_Qwen3.8-27B-Uncensored-Q4_K_M.llamafile
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Cuantizaciones GGUF originales (bartowski): https://huggingface.co/bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF/tree/87d37daf5e5eb72a926d8b413e08809a57f1a120

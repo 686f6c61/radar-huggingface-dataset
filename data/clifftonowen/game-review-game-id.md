@@ -78,10 +78,10 @@ No se conocen alternativas publicadas para esta tarea exacta (identificación de
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Clifftonowen/game-review-game-id` | ~66 M | 512 tokens | Clasificación cerrada de 1.232 juegos (inglés) | MIT | ONNX int8 en HuggingFace, ejecutable en navegador |
-| `distilbert/distilbert-base-uncased` | ~66 M | 512 tokens | Modelo base, sin cabecera de clasificación ajustada | Apache 2.0 | HuggingFace, ampliamente soportado |
-| `bert-base-uncased` | ~110 M | 512 tokens | Modelo base; mayor coste de inferencia que DistilBERT | Apache 2.0 | HuggingFace |
-| `microsoft/MiniLM-L6-v2` | ~22,7 M | 512 tokens | Sentence embeddings / clasificación con ajuste | Apache 2.0 | HuggingFace, habitual en despliegues ligeros |
+| `Clifftonowen/game-review-game-id` | ~66 M | 512 tokens | Clasificación cerrada de 1.232 juegos (inglés) | MIT | ONNX int8 en Hugging Face, ejecutable en navegador |
+| `distilbert/distilbert-base-uncased` | ~66 M | 512 tokens | Modelo base, sin cabecera de clasificación ajustada | Apache 2.0 | Hugging Face, ampliamente soportado |
+| `bert-base-uncased` | ~110 M | 512 tokens | Modelo base; mayor coste de inferencia que DistilBERT | Apache 2.0 | Hugging Face |
+| `microsoft/MiniLM-L6-v2` | ~22,7 M | 512 tokens | Sentence embeddings / clasificación con ajuste | Apache 2.0 | Hugging Face, habitual en despliegues ligeros |
 
 Frente a estos, la ventaja diferencial del modelo evaluado es el empaquetado ONNX int8 listo para navegador, el vocabulario de clases ya resuelto y verificado y el mapeo de etiquetas publicado; su desventaja es la especialización extrema, que lo inutiliza para cualquier tarea fuera de su conjunto cerrado de 1.232 juegos.
 
@@ -100,7 +100,7 @@ Frente a estos, la ventaja diferencial del modelo evaluado es el empaquetado ONN
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Clifftonowen/game-review-game-id
+- Modelo en Hugging Face: https://huggingface.co/Clifftonowen/game-review-game-id
 - Demo en vivo: https://clifftonowen.me/demos
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Librería de inferencia en navegador: https://github.com/huggingface/transformers.js

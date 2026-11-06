@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sujibala25/kongu_simple_model` es un adaptador LoRA publicado en HuggingFace que se basa en el modelo `google/gemma-2-2b`. El repositorio contiene únicamente los pesos del adaptador (tamaño 0.0 GB) y está etiquetado con la librería PEFT, lo que indica que se trata de un ajuste fino de bajo rango sobre el modelo base de Google. No se proporciona ninguna documentación en la model card: todos los campos están marcados como "More Information Needed", por lo que no se conocen los datos de entrenamiento, el proceso de ajuste ni el propósito declarado.
+`Sujibala25/kongu_simple_model` es un adaptador LoRA publicado en Hugging Face que se basa en el modelo `google/gemma-2-2b`. El repositorio contiene únicamente los pesos del adaptador (tamaño 0.0 GB) y está etiquetado con la librería PEFT, lo que indica que se trata de un ajuste fino de bajo rango sobre el modelo base de Google. No se proporciona ninguna documentación en la model card: todos los campos están marcados como "More Information Needed", por lo que no se conocen los datos de entrenamiento, el proceso de ajuste ni el propósito declarado.
 
 El modelo está orientado a generación de texto (pipeline `text-generation`) y fue creado el 14 de agosto de 2026. A fecha de publicación no registra descargas ni valoraciones, lo que sugiere que es un experimento personal o un trabajo en fase temprana. Su relevancia actual es limitada debido a la ausencia total de información sobre su entrenamiento y evaluación; cualquier uso en producción requeriría una validación previa por parte del desarrollador.
 
@@ -25,7 +25,7 @@ Al tratarse de un adaptador LoRA, su funcionalidad depende completamente del mod
 
 La arquitectura subyacente es la de `google/gemma-2-2b`, un modelo transformer autoregresivo de 2.6 mil millones de parametros desarrollado por Google, con atención global y ventana de contexto de 8192 tokens. El adaptador LoRA (Low-Rank Adaptation) se añade a las capas del modelo base para ajustar sus pesos de forma eficiente, sin modificar el modelo original. El tag `arxiv:1910.09700` hace referencia al paper de LoRA de Hu et al. (2021).
 
-No se dispone de información sobre el proceso de entrenamiento: no se especifican los datos utilizados, el número de pasos, la tasa de aprendizaje, el rango del adaptador ni si se emplearon técnicas como RLHF o DPO. La model card no incluye hiperparámetros ni detalles de cómputo. El adaptador fue creado con PEFT 0.19.1, lo que confirma el uso de la biblioteca de HuggingFace para el ajuste.
+No se dispone de información sobre el proceso de entrenamiento: no se especifican los datos utilizados, el número de pasos, la tasa de aprendizaje, el rango del adaptador ni si se emplearon técnicas como RLHF o DPO. La model card no incluye hiperparámetros ni detalles de cómputo. El adaptador fue creado con PEFT 0.19.1, lo que confirma el uso de la biblioteca de Hugging Face para el ajuste.
 
 ## Capacidades
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para una comparativa justa. El modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sujibala25/kongu_simple_model
+- Repositorio Hugging Face: https://huggingface.co/Sujibala25/kongu_simple_model
 - Paper de LoRA (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo base Google Gemma 2 2B: https://huggingface.co/google/gemma-2-2b

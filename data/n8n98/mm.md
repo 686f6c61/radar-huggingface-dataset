@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `N8N98/mm` es un repositorio publicado en HuggingFace por el usuario N8N98, con licencia Apache 2.0 y etiqueta regional "us". Fue creado el 14 de agosto de 2026 y no ha recibido descargas ni valoraciones hasta la fecha. La model card asociada únicamente declara la licencia, sin proporcionar ninguna información técnica sobre arquitectura, parámetros, entrenamiento o capacidades.
+El modelo `N8N98/mm` es un repositorio publicado en Hugging Face por el usuario N8N98, con licencia Apache 2.0 y etiqueta regional "us". Fue creado el 14 de agosto de 2026 y no ha recibido descargas ni valoraciones hasta la fecha. La model card asociada únicamente declara la licencia, sin proporcionar ninguna información técnica sobre arquitectura, parámetros, entrenamiento o capacidades.
 
 Dado que no existe documentación adicional, no es posible determinar qué tipo de modelo es, qué problema resuelve ni por qué sería relevante. Se trata de un repositorio vacío de información sustantiva, por lo que cualquier uso en producción requeriría contactar directamente con el autor o esperar a que se publique una descripción completa.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir datos sobre el modelo, no es posible compararlo con
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/N8N98/mm)
+- [Repositorio en Hugging Face](https://huggingface.co/N8N98/mm)

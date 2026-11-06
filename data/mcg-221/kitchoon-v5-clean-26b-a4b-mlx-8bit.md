@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- [HuggingFace: McG-221/Kitchoon-V5-Clean-26B-A4B-mlx-8Bit](https://huggingface.co/McG-221/Kitchoon-V5-Clean-26B-A4B-mlx-8Bit)
+- [Hugging Face: McG-221/Kitchoon-V5-Clean-26B-A4B-mlx-8Bit](https://huggingface.co/McG-221/Kitchoon-V5-Clean-26B-A4B-mlx-8Bit)
 - [Modelo base: SubMaroon/Kitchoon-V5-Clean-26B-A4B](https://huggingface.co/SubMaroon/Kitchoon-V5-Clean-26B-A4B)
 - [mlx-lm (librería de conversión e inferencia)](https://github.com/ml-explore/mlx-lm)

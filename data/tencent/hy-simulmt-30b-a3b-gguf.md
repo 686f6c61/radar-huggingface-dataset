@@ -87,7 +87,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | RealSI-Sentence | FLEURS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hy-SimulMT | 30,4 B totales / ~3 B activos | no disponible | 84,7 | 90,3 | no disponible | Pesos GGUF en HuggingFace, safetensors en la colección, GitHub y app móvil |
+| Hy-SimulMT | 30,4 B totales / ~3 B activos | no disponible | 84,7 | 90,3 | no disponible | Pesos GGUF en Hugging Face, safetensors en la colección, GitHub y app móvil |
 | Qwen3.8-LiveTranslate | no disponible | no disponible | 84,4 | 88,4 | no disponible | Referenciado en la comparativa del autor |
 | Gemini3.5-LiveTranslate | no disponible | no disponible | 82,2 | 92,4 | propietaria (API) | API comercial |
 | Seed-LiveInterpret2.0 | no disponible | no disponible | 80,0 | 85,8 | no disponible | Referenciado en la comparativa del autor |
@@ -109,9 +109,9 @@ Hy-SimulMT destaca en calidad sobre audio real (RealSI-Sentence) y en latencia d
 
 ## Enlaces
 
-- HuggingFace (este repositorio GGUF): https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-GGUF
-- Colección Hy-SimulMT en HuggingFace: https://huggingface.co/collections/tencent/hy-simulmt
+- Hugging Face (este repositorio GGUF): https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-GGUF
+- Colección Hy-SimulMT en Hugging Face: https://huggingface.co/collections/tencent/hy-simulmt
 - Colección en ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - Repositorio GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
-- Aplicación Hy Translate (Android e iOS): códigos QR en la model card del repositorio de HuggingFace
+- Aplicación Hy Translate (Android e iOS): códigos QR en la model card del repositorio de Hugging Face
 - Información corporativa de Tencent: https://www.tencent.com/

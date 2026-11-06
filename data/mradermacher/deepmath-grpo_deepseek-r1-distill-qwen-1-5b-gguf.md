@@ -88,6 +88,6 @@ Nota: los datos de contexto y licencia de los modelos comparados provienen de co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B-GGUF
 - Modelo base: https://huggingface.co/cmcheng/DeepMath-GRPO_DeepSeek-R1-Distill-Qwen-1.5B
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -70,7 +70,7 @@ La model card remite al blog oficial para benchmarks adicionales de cibersegurid
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mistral Large 4 (1T-A52B) | ~1T totales / ~52B activos | 1M | AA Coding Agent Index 48%; AA Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License (MIT modificada) | Pesos abiertos en HuggingFace; API `mistral-large-4` |
+| Mistral Large 4 (1T-A52B) | ~1T totales / ~52B activos | 1M | AA Coding Agent Index 48%; AA Intelligence Index v5 26 | Mistral Ecosystem Open-Weight License (MIT modificada) | Pesos abiertos en Hugging Face; API `mistral-large-4` |
 | GLM-5.3 | no disponible en la informacion proporcionada | no disponible | Lider de pesos abiertos en AA Coding Agent Index, empatado con Mistral Large 4 pero con mas tokens por tarea | no disponible | no disponible |
 | Modelos abiertos chinos lideres en AA Intelligence Index v5 | no disponible | no disponible | Puntuacion superior a 26 en el indice agregado | no disponible | no disponible |
 
@@ -84,11 +84,11 @@ La model card solo identifica a GLM-5.3 y a los modelos abiertos chinos lideres 
 - La licencia permite uso comercial general, pero operar un negocio de Model-as-a-Service con este modelo requiere una licencia comercial separada con Mistral; conviene revisar el texto completo de la licencia antes de desplegarlo.
 - El despliegue en bf16 exige infraestructura multi-GPU de centro de datos (del orden de 2 TB de VRAM agregada); el checkpoint NVFP4 esta limitado a GPUs Blackwell.
 - El modelo solo produce salida de texto: acepta imagenes como entrada, pero no genera imagenes ni audio.
-- El repositorio tiene muy pocas descargas (27) y ningun like en el momento de la consulta, y el ID de HuggingFace corresponde a un espejo de usuario (`sekkit`), no a la organizacion oficial `mistralai`; para produccion conviene verificar el checkpoint oficial.
+- El repositorio tiene muy pocas descargas (27) y ningun like en el momento de la consulta, y el ID de Hugging Face corresponde a un espejo de usuario (`sekkit`), no a la organizacion oficial `mistralai`; para produccion conviene verificar el checkpoint oficial.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sekkit/Mistral-Large-4-1T-A52B
+- Repositorio en Hugging Face: https://huggingface.co/sekkit/Mistral-Large-4-1T-A52B
 - Blog oficial de Mistral Large 4: https://mistral.ai/news/mistral-large-4-oss/
 - Documentacion de la API (modelo `mistral-large-4`): https://docs.mistral.ai/models/mistral-large-4-0
 - Checkpoint NVFP4 oficial: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B-NVFP4

@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| csikasote/omniASR-CTC-300m-Zulu-No-Lwazi | 300M | no disponible | isiZulu | Apache 2.0 | HuggingFace |
-| facebook/omniASR-CTC-300M | 300M | no disponible | multilingüe | Apache 2.0 | HuggingFace |
-| Whisper small (openai) | 244M | 30s | multilingüe | MIT | HuggingFace |
+| csikasote/omniASR-CTC-300m-Zulu-No-Lwazi | 300M | no disponible | isiZulu | Apache 2.0 | Hugging Face |
+| facebook/omniASR-CTC-300M | 300M | no disponible | multilingüe | Apache 2.0 | Hugging Face |
+| Whisper small (openai) | 244M | 30s | multilingüe | MIT | Hugging Face |
 
 El modelo se compara directamente con el base de Meta y con Whisper small, que también es multilingüe y ligero. Whisper small tiene un contexto de 30 segundos y soporta decodificación autoregresiva, mientras que omniASR-CTC es más rápido pero potencialmente menos preciso. Para zulú, un modelo ajustado específicamente puede superar a Whisper si los datos de entrenamiento son representativos, pero sin benchmarks no se puede confirmar.
 
@@ -72,12 +72,12 @@ El modelo se compara directamente con el base de Meta y con Whisper small, que t
 - Riesgo de alucinación: al ser un modelo CTC sin modelo de lenguaje, es menos propenso a inventar texto que los modelos autoregresivos, pero puede producir errores de transcripción en audio ruidoso o con solapamiento de hablantes.
 - Sesgos potenciales: si los datos de entrenamiento provienen de un solo corpus (excluyendo Lwazi), el modelo puede tener un rendimiento inferior en variedades del zulú no representadas.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base y los datos de entrenamiento cumplan con las mismas condiciones (el base es Apache 2.0, pero los datos pueden tener restricciones).
-- No se proporcionan instrucciones de uso ni ejemplos de código en la ficha de HuggingFace, lo que puede dificultar la integración inicial.
+- No se proporcionan instrucciones de uso ni ejemplos de código en la ficha de Hugging Face, lo que puede dificultar la integración inicial.
 - Al ser un modelo de 300M, no es adecuado para dispositivos con recursos muy limitados (por ejemplo, móviles de gama baja) sin cuantización adicional, que no está documentada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/csikasote/omniASR-CTC-300m-Zulu-No-Lwazi
+- Modelo en Hugging Face: https://huggingface.co/csikasote/omniASR-CTC-300m-Zulu-No-Lwazi
 - Modelo base: https://huggingface.co/facebook/omniASR-CTC-300M (inferido, no confirmado en la búsqueda)
 - Perfil de GitHub del autor: https://github.com/csikasote
 - Artículo sobre omniASR-CTC-300M (blog externo): https://aichina.news/blog/meta-s-omniasr-ctc-300m-a-lightweight-multilingual-asr-model-for-l0tbzp/

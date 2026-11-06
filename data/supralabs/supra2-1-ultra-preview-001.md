@@ -6,7 +6,7 @@ Supra2.1-Ultra-Preview-001 es un modelo de lenguaje base de tipo small language 
 
 Su relevancia actual reside en dos factores. Primero, la ventana de contexto es de solo 2.048 tokens, muy por debajo de los estándares de 2025 en modelos comparables de su tamaño, lo que lo sitúa como una pieza de investigación más que como herramienta de producto. Segundo, el modelo se publica sin alineamiento (no ha pasado por RLHF ni DPO) y sin evaluación de seguridad, tal y como declara explícitamente el autor. El propio autor advierte de que "probablemente generará texto incorrecto o sesgado".
 
-El entrenamiento se realizó en una única GPU A100 SXM, lo que da una idea del coste computacional contenido del proyecto. El repositorio ocupa 0,5 GB y acumula 509 descargas y 14 "likes" en HuggingFace desde su publicación. La model card usa el identificador `SupraLabs/Supra2.1-Ultra` mientras que el repositorio real es `SupraLabs/Supra2.1-Ultra-Preview-001`, una inconsistencia a tener en cuenta al cargar el modelo.
+El entrenamiento se realizó en una única GPU A100 SXM, lo que da una idea del coste computacional contenido del proyecto. El repositorio ocupa 0,5 GB y acumula 509 descargas y 14 "likes" en Hugging Face desde su publicación. La model card usa el identificador `SupraLabs/Supra2.1-Ultra` mientras que el repositorio real es `SupraLabs/Supra2.1-Ultra-Preview-001`, una inconsistencia a tener en cuenta al cargar el modelo.
 
 ## Especificaciones tecnicas
 
@@ -91,10 +91,10 @@ No se han publicado en la información disponible resultados comparativos adicio
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Supra2.1-Ultra-Preview-001 | 230M | 2.048 | Apache-2.0 | Open SLM leaderboard's II: 20,64 | HuggingFace, safetensors bf16 |
-| SmolLM2-360M (HuggingFaceTB) | 360M | no disponible en esta ficha | Apache-2.0 | no disponible en esta ficha | HuggingFace |
-| Pythia-410M (EleutherAI) | 410M | no disponible en esta ficha | Apache-2.0 | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-0.5B | 500M | no disponible en esta ficha | Apache-2.0 | no disponible en esta ficha | HuggingFace |
+| Supra2.1-Ultra-Preview-001 | 230M | 2.048 | Apache-2.0 | Open SLM leaderboard's II: 20,64 | Hugging Face, safetensors bf16 |
+| SmolLM2-360M (HuggingFaceTB) | 360M | no disponible en esta ficha | Apache-2.0 | no disponible en esta ficha | Hugging Face |
+| Pythia-410M (EleutherAI) | 410M | no disponible en esta ficha | Apache-2.0 | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-0.5B | 500M | no disponible en esta ficha | Apache-2.0 | no disponible en esta ficha | Hugging Face |
 
 No se dispone de resultados de benchmark de los modelos alternativos dentro de la información proporcionada, por lo que no se puede establecer una comparación de rendimiento fiable. La diferencia más objetiva y verificable es la ventana de contexto de 2.048 tokens de Supra2.1-Ultra, inferior a la de los SLM contemporáneos de su categoría.
 
@@ -110,11 +110,11 @@ No se dispone de resultados de benchmark de los modelos alternativos dentro de l
 - Licencia Apache-2.0: permite uso comercial, modificación y redistribución, siempre manteniendo el aviso de licencia y el archivo NOTICE si existiera. No impone restricciones de uso más allá de las habituales.
 - Inconsistencia de identificador: la model card referencia `SupraLabs/Supra2.1-Ultra` mientras que el repositorio es `SupraLabs/Supra2.1-Ultra-Preview-001`; conviene verificar la ruta correcta antes de integrarlo en pipelines automatizados.
 - Etiqueta de "preview": se trata de una versión preliminar, por lo que la API, los pesos o el repositorio pueden cambiar sin aviso.
-- Fechas del repositorio (creación y actualización en octubre de 2026) deben tomarse tal cual figuran en los metadatos de HuggingFace; no se dispone de información adicional que las contextualice.
+- Fechas del repositorio (creación y actualización en octubre de 2026) deben tomarse tal cual figuran en los metadatos de Hugging Face; no se dispone de información adicional que las contextualice.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupraLabs/Supra2.1-Ultra-Preview-001
+- Modelo en Hugging Face: https://huggingface.co/SupraLabs/Supra2.1-Ultra-Preview-001
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset DCLM-Baseline-1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - Dataset FineMath: https://huggingface.co/datasets/HuggingFaceTB/finemath

@@ -109,7 +109,7 @@ La comparaci√≥n con Jev no es de competencia sino de complementariedad: Jev act√
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-gguf
 - Modelo base BF16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0
 - Variante AWQ W4A16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-AWQ
 - Variante GPTQ W4A16: https://huggingface.co/openbmb/MiniCPM-OCR-1.0-GPTQ

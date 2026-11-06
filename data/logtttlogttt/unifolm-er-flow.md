@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UnifoLM-ER-Flow | 4.447 M | no disponible | VLA con predicción de regiones dinámicas y acciones discretas RVQ | Apache 2.0 | HuggingFace (20 descargas) |
+| UnifoLM-ER-Flow | 4.447 M | no disponible | VLA con predicción de regiones dinámicas y acciones discretas RVQ | Apache 2.0 | Hugging Face (20 descargas) |
 | UnifoLM-ER-1 | no disponible | no disponible | VLA base del que deriva ER-Flow | no disponible | Referenciado en la model card |
 | Qwen3-VL (base) | no disponible | no disponible | VLM generalista | no disponible | no disponible |
 
@@ -84,5 +84,5 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logtttlogttt/UnifoLM-ER-Flow
+- Hugging Face: https://huggingface.co/logtttlogttt/UnifoLM-ER-Flow
 - Project page: https://unigen-x.github.io/unifolm-wla.github.io/

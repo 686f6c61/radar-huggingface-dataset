@@ -83,8 +83,8 @@ No se dispone de modelos comparables en la informacion proporcionada. La unica r
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| StanfordSCALE/assertion_sentence_repeats_or_revoices_prior_speech | 109,5 M | Clasificacion binaria de reformulacion del discurso docente | no disponible | no disponible | HuggingFace (0 descargas, 0 likes) |
-| sentence-transformers/paraphrase-mpnet-base-v2 | 109,5 M (mismo orden) | Sentence embeddings para similitud semantica | no disponible | no disponible | HuggingFace |
+| StanfordSCALE/assertion_sentence_repeats_or_revoices_prior_speech | 109,5 M | Clasificacion binaria de reformulacion del discurso docente | no disponible | no disponible | Hugging Face (0 descargas, 0 likes) |
+| sentence-transformers/paraphrase-mpnet-base-v2 | 109,5 M (mismo orden) | Sentence embeddings para similitud semantica | no disponible | no disponible | Hugging Face |
 
 No se han identificado en la busqueda web otros clasificadores equivalentes de aserciones de discurso en el aula con los que establecer una comparacion cuantitativa.
 
@@ -102,7 +102,7 @@ No se han identificado en la busqueda web otros clasificadores equivalentes de a
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/StanfordSCALE/assertion_sentence_repeats_or_revoices_prior_speech)
+- [Modelo en Hugging Face](https://huggingface.co/StanfordSCALE/assertion_sentence_repeats_or_revoices_prior_speech)
 - [Dataset StanfordSCALE/assertions_llm_annotated_talkmoves](https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves)
 - [Modelo base sentence-transformers/paraphrase-mpnet-base-v2](https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2)
 - [TalkMoves Dataset (SumnerLab)](https://github.com/SumnerLab/TalkMoves)

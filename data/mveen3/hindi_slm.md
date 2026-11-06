@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mveen3/hindi_slm` es un repositorio publicado en HuggingFace por el usuario mveen3 cuya model card está practicamente vacia: el unico contenido del README es la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El propio identificador del repositorio sugiere que se trata de un modelo de lenguaje de tipo SLM (small language model) orientado al hindi, pero esta interpretacion no viene confirmada por ninguna fuente del repositorio y debe tratarse como una hipotesis, no como un dato.
+`mveen3/hindi_slm` es un repositorio publicado en Hugging Face por el usuario mveen3 cuya model card está practicamente vacia: el unico contenido del README es la declaracion de licencia (`license: mit`), sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso. El propio identificador del repositorio sugiere que se trata de un modelo de lenguaje de tipo SLM (small language model) orientado al hindi, pero esta interpretacion no viene confirmada por ninguna fuente del repositorio y debe tratarse como una hipotesis, no como un dato.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 "likes", no tiene etiqueta de pipeline asignada (`pipeline: no disponible`), no declara idiomas soportados y cuenta con un unico tag informativo ademas de la licencia: `region:us`. La fecha de creacion y de ultima actualizacion registradas son identicas (2026-09-17T12:17:09.000Z), lo que indica que no ha habido actividad posterior a la publicacion inicial.
 
@@ -97,6 +97,6 @@ No disponible. La comparacion con alternativas requiere conocer, como minimo, el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mveen3/hindi_slm
+- Repositorio en Hugging Face: https://huggingface.co/mveen3/hindi_slm
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.
 - No se dispone de enlaces adicionales relevantes: los resultados de busqueda obtenidos no estan relacionados con el modelo.

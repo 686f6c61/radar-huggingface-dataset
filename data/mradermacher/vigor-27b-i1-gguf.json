@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VIGOR-27B-i1-GGUF",
+  "slug": "mradermacher-vigor-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VIGOR-27B-i1-GGUF",
+  "created_at": "2026-11-06T12:23:24.000Z",
+  "updated_at": "2026-11-06T12:32:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10891893920,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/VIGOR-27B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/VIGOR-27B-GGUF/tree/main",
+      "snippet": "/ VIGOR-27B-GGUF Like 0 Image Classification Transformers GGUF English text-generation-inference experimental mtp VIGOR VisionGuard qwen3.8-27B JSON content-safety content-moderation multimodal safety-classifier guardrail visual-safety multimodal-content-filter uncensored large conversational License:apache-2.0 Model card FilesFiles and ..."
+    },
+    {
+      "title": "mradermacher/iCoder-27B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/iCoder-27B-i1-GGUF",
+      "snippet": "mradermacher / iCoder-27B-i1-GGUF like 0 Transformers GGUF English code rtl verilog gpu-kernel triton imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahodan/naya_krea3_lora_v1` es un artefacto publicado en HuggingFace por el usuario rahodan que, a juzgar por su identificador y por el tamaño del repositorio (2,5 GB), parece ser un adaptador LoRA orientado a la generación de imágenes, presumiblemente para un modelo base de la familia Krea. Esta apreciación es una inferencia a partir del nombre del repositorio y del peso de los ficheros: la model card no aporta información sobre el modelo base, la arquitectura, el dataset de entrenamiento ni el pipeline de uso, y los metadatos de HuggingFace no declaran licencia, idiomas ni tarea.
+`rahodan/naya_krea3_lora_v1` es un artefacto publicado en Hugging Face por el usuario rahodan que, a juzgar por su identificador y por el tamaño del repositorio (2,5 GB), parece ser un adaptador LoRA orientado a la generación de imágenes, presumiblemente para un modelo base de la familia Krea. Esta apreciación es una inferencia a partir del nombre del repositorio y del peso de los ficheros: la model card no aporta información sobre el modelo base, la arquitectura, el dataset de entrenamiento ni el pipeline de uso, y los metadatos de Hugging Face no declaran licencia, idiomas ni tarea.
 
 El repositorio no incluye pipeline declarado, no tiene etiquetas más allá de `region:us`, y acumula 21 descargas y 0 likes desde su creación (fecha declarada en los metadatos: 19 de octubre de 2026; última actualización: 19 de octubre de 2026). Se trata, por tanto, de una publicación de carácter personal o experimental, sin documentación asociada ni resultados de evaluación publicados.
 
@@ -94,6 +94,6 @@ No es posible establecer una comparativa rigurosa: se desconoce el modelo base, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahodan/naya_krea3_lora_v1
+- Repositorio en Hugging Face: https://huggingface.co/rahodan/naya_krea3_lora_v1
 
 No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios de código, demos o documentación adicional).

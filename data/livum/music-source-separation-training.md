@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Livum/Music-Source-Separation-Training es un repositorio alojado en HuggingFace, publicado por el usuario Livum bajo licencia MIT, cuyo nombre indica que contiene material de entrenamiento para tareas de separación de fuentes musicales. El repositorio ocupa 4,6 GB y no incluye model card descriptiva: el único contenido documentado es una cita bibliográfica al artículo "Benchmarks and leaderboards for sound demixing tasks" (Solovyev, Stempkovskiy y Habruseva, 2023, arXiv:2305.07489), referencia habitual de los retos Sound Demixing Challenge.
+Livum/Music-Source-Separation-Training es un repositorio alojado en Hugging Face, publicado por el usuario Livum bajo licencia MIT, cuyo nombre indica que contiene material de entrenamiento para tareas de separación de fuentes musicales. El repositorio ocupa 4,6 GB y no incluye model card descriptiva: el único contenido documentado es una cita bibliográfica al artículo "Benchmarks and leaderboards for sound demixing tasks" (Solovyev, Stempkovskiy y Habruseva, 2023, arXiv:2305.07489), referencia habitual de los retos Sound Demixing Challenge.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo de texto: el ámbito es el audio y, más concretamente, la separación de mezclas musicales en pistas o stems (voz, batería, bajo, otros). El repositorio registra cero descargas y cero "likes", y fue creado y actualizado en la misma fecha (6 de octubre de 2026), lo que apunta a un único commit sin historial de mantenimiento posterior.
 
@@ -89,6 +89,6 @@ La comparación directa no es posible porque este repositorio no publica especif
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Livum/Music-Source-Separation-Training
+- Repositorio en Hugging Face: https://huggingface.co/Livum/Music-Source-Separation-Training
 - Artículo citado en la model card (Solovyev, Stempkovskiy, Habruseva, 2023): https://arxiv.org/abs/2305.07489
 - Los resultados de búsqueda web proporcionados no contienen información relacionada con este repositorio ni con su autor.

@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| scottlowry/Qwopus3.8-27B-Flash-V2-oQ8e-mtp | 27.781.427.952 | 8 bits oQ, group size 64 | no disponible | no disponible | MLX safetensors | Publico en HuggingFace, 0 descargas |
-| scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp | no disponible | 4 bits oQ | no disponible | no disponible | MLX safetensors | Publico en HuggingFace |
-| scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp | no disponible | 4 bits oQ con componentes fp16 | no disponible | no disponible | MLX safetensors | Publico en HuggingFace |
-| chriswessels/Qwopus3.8-27B-Flash-oQ8e-mtp | no disponible | 8 bits oQ | no disponible | no disponible | MLX safetensors | Publico en HuggingFace (republicacion) |
-| Jackrong/Qwopus3.8-27B-Flash-V2 | no disponible | sin cuantizar (base) | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| scottlowry/Qwopus3.8-27B-Flash-V2-oQ8e-mtp | 27.781.427.952 | 8 bits oQ, group size 64 | no disponible | no disponible | MLX safetensors | Publico en Hugging Face, 0 descargas |
+| scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp | no disponible | 4 bits oQ | no disponible | no disponible | MLX safetensors | Publico en Hugging Face |
+| scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp | no disponible | 4 bits oQ con componentes fp16 | no disponible | no disponible | MLX safetensors | Publico en Hugging Face |
+| chriswessels/Qwopus3.8-27B-Flash-oQ8e-mtp | no disponible | 8 bits oQ | no disponible | no disponible | MLX safetensors | Publico en Hugging Face (republicacion) |
+| Jackrong/Qwopus3.8-27B-Flash-V2 | no disponible | sin cuantizar (base) | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento de ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y disponibilidad. No se han identificado alternativas de otros desarrolladores con las que contrastar en los resultados de busqueda disponibles.
 

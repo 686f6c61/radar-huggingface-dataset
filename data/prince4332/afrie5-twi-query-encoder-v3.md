@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AfriE5-twi-query-encoder-v3 es un codificador de consultas (*query encoder*) especializado en recuperación de información Twi → inglés, desarrollado por el usuario prince4332 y publicado en HuggingFace bajo licencia MIT. Se construye mediante destilación de conocimiento a partir de `McGill-NLP/AfriE5-Large-instruct`, un modelo multilingüe basado en arquitectura XLM-RoBERTa. Su función es codificar preguntas en Twi (akan) en el mismo espacio vectorial que los pasajes en inglés generados por el modelo base, de modo que la búsqueda semántica funcione entre idiomas sin necesidad de traducir la consulta.
+AfriE5-twi-query-encoder-v3 es un codificador de consultas (*query encoder*) especializado en recuperación de información Twi → inglés, desarrollado por el usuario prince4332 y publicado en Hugging Face bajo licencia MIT. Se construye mediante destilación de conocimiento a partir de `McGill-NLP/AfriE5-Large-instruct`, un modelo multilingüe basado en arquitectura XLM-RoBERTa. Su función es codificar preguntas en Twi (akan) en el mismo espacio vectorial que los pasajes en inglés generados por el modelo base, de modo que la búsqueda semántica funcione entre idiomas sin necesidad de traducir la consulta.
 
 El modelo resuelve un problema concreto: la brecha de rendimiento en recuperación cross-lingual para lenguas africanas de bajos recursos. En lugar de entrenar un codificador bilingüe completo, congela el espacio de pasajes del modelo base y aprende únicamente a mapear consultas en Twi a ese espacio, lo que reduce drásticamente los requisitos de datos y cómputo. Con 559,9 millones de parámetros, se posiciona como una alternativa ligera y desplegable para sistemas de búsqueda y RAG en contextos donde el Twi es la lengua de consulta.
 
@@ -99,7 +99,7 @@ La ventaja específica de este modelo frente a los multilingües genéricos es s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prince4332/AfriE5-twi-query-encoder-v3
+- Hugging Face: https://huggingface.co/prince4332/AfriE5-twi-query-encoder-v3
 - Modelo base: https://huggingface.co/McGill-NLP/AfriE5-Large-instruct
 - NLLB-200 (herramienta de traducción usada): https://huggingface.co/facebook/nllb-200-3.3B
 - GhanaNLP (corpus de alineación): no disponible enlace directo en la información proporcionada

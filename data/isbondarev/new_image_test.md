@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `isbondarev/new_image_test` es un modelo de generación de texto de aproximadamente 1.540 millones de parámetros (1,54B), subido a HuggingFace por el usuario isbondarev. Los metadatos indican que está basado en la arquitectura Qwen2 (etiqueta `qwen2`), que fue fine-tuneado con la librería llama-factory y que está orientado a tareas conversacionales. Sin embargo, la model card es una plantilla genérica sin información sustancial, y el nombre del repositorio sugiere que se trata de una prueba o experimento (descargas y likes en cero). No se dispone de documentación oficial sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del modelo.
+El modelo `isbondarev/new_image_test` es un modelo de generación de texto de aproximadamente 1.540 millones de parámetros (1,54B), subido a Hugging Face por el usuario isbondarev. Los metadatos indican que está basado en la arquitectura Qwen2 (etiqueta `qwen2`), que fue fine-tuneado con la librería llama-factory y que está orientado a tareas conversacionales. Sin embargo, la model card es una plantilla genérica sin información sustancial, y el nombre del repositorio sugiere que se trata de una prueba o experimento (descargas y likes en cero). No se dispone de documentación oficial sobre el proceso de entrenamiento, los datos utilizados ni las capacidades específicas del modelo.
 
 A pesar de la falta de información, el tamaño del modelo y la arquitectura inferida lo sitúan en la categoría de modelos pequeños adecuados para despliegue en entornos con recursos limitados. No obstante, cualquier uso en producción debería considerar la ausencia de validación y de garantías de calidad.
 
@@ -38,7 +38,7 @@ Dado que no hay documentación ni benchmarks, los casos de uso son hipotéticos 
 - Fine-tuning adicional: al estar basado en Qwen2, podría servir como punto de partida para tareas específicas si se dispone de los pesos originales.
 - Investigación académica: como modelo de prueba para estudiar el comportamiento de fine-tuning con llama-factory.
 - Educación: para demostrar el despliegue de modelos de lenguaje en entornos locales.
-- Evaluación de pipelines de HuggingFace: para probar la integración con `text-generation-inference` o `endpoints_compatible`.
+- Evaluación de pipelines de Hugging Face: para probar la integración con `text-generation-inference` o `endpoints_compatible`.
 
 No obstante, estos casos son especulativos y no están respaldados por pruebas documentadas.
 
@@ -83,6 +83,6 @@ Se observa que el tamaño coincide con Qwen2-1.5B, lo que refuerza la hipótesis
 
 ## Enlaces
 
-- [HuggingFace: isbondarev/new_image_test](https://huggingface.co/isbondarev/new_image_test)
+- [Hugging Face: isbondarev/new_image_test](https://huggingface.co/isbondarev/new_image_test)
 
 No se han encontrado otros enlaces (papers, repositorios, demos) en la información proporcionada.

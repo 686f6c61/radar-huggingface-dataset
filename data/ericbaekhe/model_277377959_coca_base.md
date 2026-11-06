@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables. La arquitectura CoCa ti
 
 ## Enlaces
 
-- Repositorio HuggingFace: [ericbaekhe/model_277377959_coca_base](https://huggingface.co/ericbaekhe/model_277377959_coca_base)
+- Repositorio Hugging Face: [ericbaekhe/model_277377959_coca_base](https://huggingface.co/ericbaekhe/model_277377959_coca_base)
 - Espacio de referencia de CoCa (no específico de este modelo): [laion/CoCa](https://huggingface.co/spaces/laion/CoCa)
 
 No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

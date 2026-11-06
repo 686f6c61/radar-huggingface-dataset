@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la informacion disponible (MMLU,
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
-| Esta exportación (Core ML ANE) | ≈600 M | no disponible | RTF 0,32 en M5 Max; 30 dB SNR frente a fp32 | Apache-2.0 | Core ML (`.mlpackage`, `.mlmodelc`), HuggingFace |
-| Qwen/Qwen3-TTS-12Hz-0.6B-Base (original) | ≈600 M | no disponible | no disponible en la información proporcionada | Apache-2.0 | Pesos originales en HuggingFace |
-| Qwen/Qwen3-TTS-Tokenizer-12Hz | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace; en este repo solo se reexporta su decodificador |
+| Esta exportación (Core ML ANE) | ≈600 M | no disponible | RTF 0,32 en M5 Max; 30 dB SNR frente a fp32 | Apache-2.0 | Core ML (`.mlpackage`, `.mlmodelc`), Hugging Face |
+| Qwen/Qwen3-TTS-12Hz-0.6B-Base (original) | ≈600 M | no disponible | no disponible en la información proporcionada | Apache-2.0 | Pesos originales en Hugging Face |
+| Qwen/Qwen3-TTS-Tokenizer-12Hz | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face; en este repo solo se reexporta su decodificador |
 
 No se dispone de datos en la información proporcionada sobre otras alternativas TTS comparables (por ejemplo, modelos ligeros de síntesis de voz para dispositivos Apple), ni el autor identifica las "otras exportaciones Core ML" con las que dice diferir. Cualquier comparación adicional con Kokoro, Piper u otros sistemas quedaría fuera de la información disponible.
 
@@ -100,7 +100,7 @@ No se dispone de datos en la información proporcionada sobre otras alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsmechico/qwen3-tts-0.6b-base-coreml-ane
+- Modelo en Hugging Face: https://huggingface.co/itsmechico/qwen3-tts-0.6b-base-coreml-ane
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Tokenizer base: https://huggingface.co/Qwen/Qwen3-TTS-Tokenizer-12Hz
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados correspondían a dominios de cines Pathé Gaumont, sin relación con el modelo); no se dispone de papers, blogs, repositorios ni demos adicionales.

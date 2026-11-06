@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen-3.8-9B-nf4-cw-ov es una version cuantizada del modelo empero-ai/Qwen3.8-9B-Distill, publicada por el usuario zlw1225 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a NF4 mediante la tecnica de Compressed Weights de Intel NNCF y exportada al formato OpenVINO IR, con el objetivo de ejecutarse en la NPU 4 de los procesadores Intel Core Ultra 200V (arquitectura Lunar Lake) y en generaciones posteriores.
+Qwen-3.8-9B-nf4-cw-ov es una version cuantizada del modelo empero-ai/Qwen3.8-9B-Distill, publicada por el usuario zlw1225 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion de pesos a NF4 mediante la tecnica de Compressed Weights de Intel NNCF y exportada al formato OpenVINO IR, con el objetivo de ejecutarse en la NPU 4 de los procesadores Intel Core Ultra 200V (arquitectura Lunar Lake) y en generaciones posteriores.
 
 El modelo hereda la familia Qwen3.5/Qwen3.8 (el campo base_model apunta a empero-ai/Qwen3.8-9B-Distill y a Qwen/Qwen3.5-9B) y tiene aproximadamente 9.000 millones de parametros segun la nomenclatura del repositorio. Su relevancia actual esta en el despliegue local sobre hardware de PC con aceleracion NPU: al reducir los pesos a 4 bits, el repositorio ocupa 6,1 GB y puede servirse con OpenVINO Model Server (OVMS) sin depender de GPUs dedicadas.
 
-La model card es muy escueta: no documenta composicion del dataset, longitud de contexto, resultados de benchmarks ni numero de tokens de entrenamiento. La informacion disponible se limita a la ficha de HuggingFace, la model card del autor y un enlace a un blog tecnico en japones.
+La model card es muy escueta: no documenta composicion del dataset, longitud de contexto, resultados de benchmarks ni numero de tokens de entrenamiento. La informacion disponible se limita a la ficha de Hugging Face, la model card del autor y un enlace a un blog tecnico en japones.
 
 ## Especificaciones técnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento, contexto o consumo de los modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zlw1225/Qwen-3.8-9B-nf4-cw-ov
+- Modelo en Hugging Face: https://huggingface.co/zlw1225/Qwen-3.8-9B-nf4-cw-ov
 - Modelo base (destilado): https://huggingface.co/empero-ai/Qwen3.8-9B-Distill
 - Modelo base de referencia: https://huggingface.co/Qwen/Qwen3.5-9B
 - Blog tecnico del autor (en japones): https://blog.asahi.indevs.in/post.php?slug=post-20260921-031900

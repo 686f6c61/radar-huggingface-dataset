@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000` es un checkpoint de politica robotica (vision-language-action) derivado de la familia GR00T N1.7, publicado por el usuario RLobot-jun en HuggingFace. Se trata de un ajuste fino por imitacion (behavior cloning, BC) entrenado especificamente para ejecutar acciones a 15 Hz sobre un cuerpo `ur7e_gello` (etiquetado como `NEW_EMBODIMENT`, no UR5). El repositorio contiene el modelo completo de inferencia, incluyendo el processor, las estadisticas de normalizacion y el mapeo de embodiment, con 3.144.016.000 parametros en formato safetensors y un tamano de repo de 12,6 GB.
+El modelo `RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000` es un checkpoint de politica robotica (vision-language-action) derivado de la familia GR00T N1.7, publicado por el usuario RLobot-jun en Hugging Face. Se trata de un ajuste fino por imitacion (behavior cloning, BC) entrenado especificamente para ejecutar acciones a 15 Hz sobre un cuerpo `ur7e_gello` (etiquetado como `NEW_EMBODIMENT`, no UR5). El repositorio contiene el modelo completo de inferencia, incluyendo el processor, las estadisticas de normalizacion y el mapeo de embodiment, con 3.144.016.000 parametros en formato safetensors y un tamano de repo de 12,6 GB.
 
 El checkpoint parte del modelo base de 30 Hz del mismo autor y se entrena durante 10.000 pasos adicionales con batch 32 y learning rate 1e-4, tras diezmar los datos originales de 30 Hz a 15 Hz manteniendo RGB, estado y acciones alineados. El conjunto de entrenamiento consta de 200 episodios, 50 por cada una de cuatro tareas de manipulacion: zanahoria (carrot), apilado de cuencos (bowl stack), triple apilado de cuencos (triple bowl stack) y apilado de cubos (cube stack). Es, por tanto, un modelo especializado de proposito muy concreto, no un modelo generalista.
 
@@ -71,8 +71,8 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 | Modelo | Parametros | Frecuencia | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000 (este modelo) | 3.144.016.000 | 15 Hz | horizonte de 16 acciones | no disponible | safetensors en HuggingFace, 0 descargas |
-| gr00t-n17-bigenlight-50per-task-step10000 (modelo base) | no disponible | 30 Hz | no disponible | no disponible | checkpoint base referenciado en HuggingFace |
+| gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000 (este modelo) | 3.144.016.000 | 15 Hz | horizonte de 16 acciones | no disponible | safetensors en Hugging Face, 0 descargas |
+| gr00t-n17-bigenlight-50per-task-step10000 (modelo base) | no disponible | 30 Hz | no disponible | no disponible | checkpoint base referenciado en Hugging Face |
 | Otras politicas VLA de la familia GR00T N1.7 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000
+- Modelo en Hugging Face: https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-15hz-proj-dit-bc-step10000
 - Modelo base (checkpoint a 30 Hz): https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000
 - Codigo de inferencia y entrenamiento (rama `q-vgm-critic`): https://github.com/jun981015/gr00t-bigenlight/tree/q-vgm-critic
 - Resultados de busqueda web: no relevantes (foros de reposteria sin relacion con el modelo). No disponible ninguna otra referencia tecnica, paper o demo.

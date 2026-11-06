@@ -58,14 +58,14 @@ El modelo se distribuye como un conjunto de pesos independientes (extractor de a
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de la reproduccion analizada ni los datos de HuggingFace recogidos incluyen tablas comparativas con metricas cuantitativas (FID, LPIPS, LMD, similitud de identidad, etc.). El articulo tecnico asociado, arXiv:2407.03168, es la fuente donde deben consultarse dichas metricas.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card de la reproduccion analizada ni los datos de Hugging Face recogidos incluyen tablas comparativas con metricas cuantitativas (FID, LPIPS, LMD, similitud de identidad, etc.). El articulo tecnico asociado, arXiv:2407.03168, es la fuente donde deben consultarse dichas metricas.
 
 ## Requisitos de hardware
 
 - VRAM estimada para inferencia: no disponible. La informacion proporcionada no incluye cifras de memoria por modulo ni por nivel de precision.
 - GPU recomendadas: no disponible de forma explicita. El repositorio no impone un modelo concreto de GPU.
 - Viabilidad en GPU de consumo: el repositorio documenta soporte oficial para macOS con Apple Silicon y distribuye un paquete preempaquetado para Windows pensado para ejecucion local, lo que indica que el modelo esta disenado para funcionar fuera de entornos de centro de datos. No se especifican modelos de GPU concretos.
-- Despliegue: la via oficial es la implementacion en PyTorch del repositorio original, con interfaz Gradio y una demonstracion alojada en HuggingFace Spaces. Se distribuyen tambien modelos ONNX para la deteccion facial, desplegables con ONNX Runtime. No se mencionan integraciones oficiales con vLLM, TGI, llama.cpp u Ollama, que ademas no aplican a este tipo de modelo.
+- Despliegue: la via oficial es la implementacion en PyTorch del repositorio original, con interfaz Gradio y una demonstracion alojada en Hugging Face Spaces. Se distribuyen tambien modelos ONNX para la deteccion facial, desplegables con ONNX Runtime. No se mencionan integraciones oficiales con vLLM, TGI, llama.cpp u Ollama, que ademas no aplican a este tipo de modelo.
 - Dependencias del sistema: Python 3.9, las dependencias de requirements.txt (o requirements_macOS.txt en Apple Silicon) y FFmpeg con ffmpeg y ffprobe disponibles en el PATH.
 - Latencia y throughput: no disponible. La model card no publica mediciones de milisegundos por fotograma ni de FPS.
 - Almacenamiento: el repositorio de pesos ocupa 2,1 GB.
@@ -76,8 +76,8 @@ La informacion proporcionada no incluye datos comparativos de benchmarks ni fich
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LivePortrait (Erddoniri) | Keypoints implicitos, feed-forward, no difusion | no disponible | no aplica | MIT | HuggingFace, GitHub, paquete Windows, macOS |
-| LivePortrait (KwaiVGI, original) | Keypoints implicitos, feed-forward, no difusion | no disponible | no aplica | MIT | HuggingFace, GitHub, HuggingFace Spaces |
+| LivePortrait (Erddoniri) | Keypoints implicitos, feed-forward, no difusion | no disponible | no aplica | MIT | Hugging Face, GitHub, paquete Windows, macOS |
+| LivePortrait (KwaiVGI, original) | Keypoints implicitos, feed-forward, no difusion | no disponible | no aplica | MIT | Hugging Face, GitHub, Hugging Face Spaces |
 | Alternativas de animacion de retrato guiadas por audio | no disponible | no disponible | no aplica | no disponible | no disponible |
 | Alternativas de animacion de retrato basadas en difusion | no disponible | no disponible | no aplica | no disponible | no disponible |
 
@@ -96,12 +96,12 @@ La diferencia funcional que si puede afirmarse a partir de la informacion dispon
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada: https://huggingface.co/Erddoniri/LivePortrait
-- Repositorio original en HuggingFace: https://huggingface.co/KwaiVGI/LivePortrait
+- Ficha de Hugging Face analizada: https://huggingface.co/Erddoniri/LivePortrait
+- Repositorio original en Hugging Face: https://huggingface.co/KwaiVGI/LivePortrait
 - Codigo fuente en GitHub: https://github.com/KwaiVGI/LivePortrait
 - Articulo tecnico en arXiv: https://arxiv.org/pdf/2407.03168
 - Pagina del proyecto: https://liveportrait.github.io
-- Demostracion en HuggingFace Spaces: https://huggingface.co/spaces/KwaiVGI/liveportrait
+- Demostracion en Hugging Face Spaces: https://huggingface.co/spaces/KwaiVGI/liveportrait
 - Paquete preempaquetado para Windows: https://huggingface.co/cleardusk/LivePortrait-Windows/tree/main
 - Pesos alternativos en Google Drive: https://drive.google.com/drive/folders/1UtKgzKjFAOmZkhNK-OYT0caJ_w2XAnib
 - Pesos alternativos en Baidu Yun: https://pan.baidu.com/s/1MGctWmNla_vZxDbEp2Dtzw?pwd=z5cn

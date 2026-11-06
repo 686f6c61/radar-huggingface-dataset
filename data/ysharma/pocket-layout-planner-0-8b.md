@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pocket-layout-planner-0.8B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario ysharma en HuggingFace bajo licencia Apache-2.0. Su funcion es convertir una peticion de imagen corta —sin prompt de sistema y sin modo de razonamiento— en una unica linea de salida compuesta por dos partes: un caption detallado que cita los elementos visuales mediante identificadores `<id>`, seguido de una tabla JSON de cajas delimitadoras con el formato `[y_min, x_min, y_max, x_max]` normalizado sobre una rejilla de 0 a 1000.
+pocket-layout-planner-0.8B es un ajuste fino (fine-tune) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario ysharma en Hugging Face bajo licencia Apache-2.0. Su funcion es convertir una peticion de imagen corta —sin prompt de sistema y sin modo de razonamiento— en una unica linea de salida compuesta por dos partes: un caption detallado que cita los elementos visuales mediante identificadores `<id>`, seguido de una tabla JSON de cajas delimitadoras con el formato `[y_min, x_min, y_max, x_max]` normalizado sobre una rejilla de 0 a 1000.
 
 El modelo se ha destilado a partir del modo `t2i_bbox` del modelo profesor `black-forest-labs/flux-3-image-klein-pup` (Apache-2.0), segun declara el propio autor, y los datos de entrenamiento provienen del conjunto `ysharma/klein-layout-plans`. El caso de uso central es la planificacion espacial previa a la generacion o edicion de imagenes: traducir una instruccion textual breve a una especificacion estructurada de elementos y coordenadas.
 
@@ -92,7 +92,7 @@ No disponible. No se dispone de datos verificables de modelos comparables en la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ysharma/pocket-layout-planner-0.8B
+- Repositorio en Hugging Face: https://huggingface.co/ysharma/pocket-layout-planner-0.8B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Conjunto de datos de entrenamiento declarado: https://huggingface.co/datasets/ysharma/klein-layout-plans
 - Modelo profesor declarado (modo `t2i_bbox`): `black-forest-labs/flux-3-image-klein-pup` (referenciado en la model card; no se ha verificado su repositorio)

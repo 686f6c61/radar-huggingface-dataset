@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sathudeva7/qwen2.5-coder-3b-docstrings | ~3,09 B | 32.768 tokens (heredado) | Docstrings Python estilo Google | qwen-research | HuggingFace, safetensors |
-| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,09 B | 32.768 tokens | Codigo e instrucciones generales | qwen-research | HuggingFace, safetensors (base del ajuste) |
-| Qwen/Qwen2.5-Coder-7B-Instruct | ~7 B | 32.768 tokens | Codigo e instrucciones generales | qwen-research | HuggingFace, safetensors |
-| Qwen/Qwen2.5-Coder-3B | ~3,09 B | 32.768 tokens | Modelo base de codigo | qwen-research | HuggingFace, safetensors |
+| sathudeva7/qwen2.5-coder-3b-docstrings | ~3,09 B | 32.768 tokens (heredado) | Docstrings Python estilo Google | qwen-research | Hugging Face, safetensors |
+| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,09 B | 32.768 tokens | Codigo e instrucciones generales | qwen-research | Hugging Face, safetensors (base del ajuste) |
+| Qwen/Qwen2.5-Coder-7B-Instruct | ~7 B | 32.768 tokens | Codigo e instrucciones generales | qwen-research | Hugging Face, safetensors |
+| Qwen/Qwen2.5-Coder-3B | ~3,09 B | 32.768 tokens | Modelo base de codigo | qwen-research | Hugging Face, safetensors |
 
 No se dispone de modelos comparables especificos de generacion de docstrings en la informacion proporcionada. Las cifras de rendimiento comparativo no estan disponibles.
 
@@ -86,7 +86,7 @@ No se dispone de modelos comparables especificos de generacion de docstrings en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sathudeva7/qwen2.5-coder-3b-docstrings
+- Modelo en Hugging Face: https://huggingface.co/sathudeva7/qwen2.5-coder-3b-docstrings
 - Repositorio de entrenamiento y evaluacion: https://github.com/sathudeva7/CDAZZDEV-MLE-SATHURSAN/tree/main/task2_genai
 - System prompt de la tarea: https://github.com/sathudeva7/CDAZZDEV-MLE-SATHURSAN/blob/main/task2_genai/prompts.py
 - Modelo base (Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Evo1 Stage 2 — step 6000, batch 16 es un checkpoint intermedio de un entrenamiento en curso de un modelo de robótica (Vision-Language-Action) desarrollado por el usuario Dongkkka y publicado en HuggingFace bajo la librería LeRobot. Se trata de una instantánea de la Stage 2 del entrenamiento, inicializada a partir de un checkpoint previo de Stage 1 (paso 4000) y con 6000 actualizaciones adicionales de Stage 2. El modelo tiene 747.976.832 parámetros (~748 M) y ocupa 1,7 GB en el repositorio.
+Evo1 Stage 2 — step 6000, batch 16 es un checkpoint intermedio de un entrenamiento en curso de un modelo de robótica (Vision-Language-Action) desarrollado por el usuario Dongkkka y publicado en Hugging Face bajo la librería LeRobot. Se trata de una instantánea de la Stage 2 del entrenamiento, inicializada a partir de un checkpoint previo de Stage 1 (paso 4000) y con 6000 actualizaciones adicionales de Stage 2. El modelo tiene 747.976.832 parámetros (~748 M) y ocupa 1,7 GB en el repositorio.
 
 El modelo sigue la clase de política `Evo1Policy` de LeRobot y está diseñado para control robótico a partir de tres cámaras de entrada, con un espacio de acciones de 22 dimensiones y un horizonte de predicción (*chunk*) de 16 pasos. Tanto el backbone de visión y lenguaje como la cabeza de acciones son entrenables, lo que lo sitúa en la categoría de modelos VLA (Vision-Language-Action) orientados a manipulación.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / horizonte | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Evo1 Stage 2 (este checkpoint) | ~748 M | Chunk de 16, acciones 22D, 3 cámaras | No disponible | HuggingFace (0 descargas) | Snapshot intermedio, sin métricas publicadas |
-| SmolVLA | ~450 M (dato de conocimiento general) | No verificado | Ver licencia del proyecto | HuggingFace / LeRobot | VLA compacto de la familia LeRobot; cifras no verificadas en esta búsqueda |
-| OpenVLA | ~7 B (dato de conocimiento general) | No verificado | Ver licencia del proyecto | HuggingFace | VLA de referencia en manipulación; cifras no verificadas en esta búsqueda |
-| Políticas clásicas de LeRobot (ACT, Diffusion Policy) | Depende de la configuración | No verificado | Ver licencia del proyecto | HuggingFace / LeRobot | Alternativas no VLA; comparación pendiente de datos |
+| Evo1 Stage 2 (este checkpoint) | ~748 M | Chunk de 16, acciones 22D, 3 cámaras | No disponible | Hugging Face (0 descargas) | Snapshot intermedio, sin métricas publicadas |
+| SmolVLA | ~450 M (dato de conocimiento general) | No verificado | Ver licencia del proyecto | Hugging Face / LeRobot | VLA compacto de la familia LeRobot; cifras no verificadas en esta búsqueda |
+| OpenVLA | ~7 B (dato de conocimiento general) | No verificado | Ver licencia del proyecto | Hugging Face | VLA de referencia en manipulación; cifras no verificadas en esta búsqueda |
+| Políticas clásicas de LeRobot (ACT, Diffusion Policy) | Depende de la configuración | No verificado | Ver licencia del proyecto | Hugging Face / LeRobot | Alternativas no VLA; comparación pendiente de datos |
 
 Nota: los datos de SmolVLA, OpenVLA y las políticas clásicas de LeRobot provienen de conocimiento general y no de la información proporcionada en esta búsqueda; deben verificarse en sus fuentes originales antes de usarse en una comparación formal.
 
@@ -98,7 +98,7 @@ Nota: los datos de SmolVLA, OpenVLA y las políticas clásicas de LeRobot provie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/evo1_dashboard_0904_stage2_6k_16bs
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/evo1_dashboard_0904_stage2_6k_16bs
 - Dataset de entrenamiento citado en la model card: https://huggingface.co/datasets/Dongkkka/cyclo_dashboard_0904_test_v30
 - Librería LeRobot (referencia del framework): https://huggingface.co/docs/lerobot
 - Repositorio de LeRobot en GitHub: https://github.com/huggingface/lerobot

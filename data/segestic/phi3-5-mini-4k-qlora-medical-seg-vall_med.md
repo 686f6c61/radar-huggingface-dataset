@@ -70,8 +70,8 @@ Los resultados por banco individual no se incluyen en la información disponible
 | Modelo | Parámetros | Contexto | Precisión médica (9 bancos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | MediLITE-QA (este) | 3,8 B + LoRA r=32 | 4.096 | 72,79 % | MIT | Adaptador, modelo fusionado y GGUF |
-| Phi-3.5-mini-instruct (base) | 3,8 B | 128.000 | 68,73 % | MIT | HuggingFace oficial de Microsoft |
-| Modelos médicos de 7-8 B (p. ej. Meditron, BioMistral) | 7-8 B | variable | no disponible en esta ficha | variable | HuggingFace |
+| Phi-3.5-mini-instruct (base) | 3,8 B | 128.000 | 68,73 % | MIT | Hugging Face oficial de Microsoft |
+| Modelos médicos de 7-8 B (p. ej. Meditron, BioMistral) | 7-8 B | variable | no disponible en esta ficha | variable | Hugging Face |
 
 La comparación con alternativas médicas de mayor tamaño no puede cuantificarse con los datos proporcionados; el artículo solo reporta el par base/adaptador.
 

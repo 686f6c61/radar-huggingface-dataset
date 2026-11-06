@@ -84,9 +84,9 @@ No se dispone de comparaciones numericas con otros metodos de olvido en la infor
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_IdkDPO | 3,21 mil millones | no disponible (heredado de Llama 3.2) | llama3.2 | Unlearning IdkDPO sobre TOFU forget05 | HuggingFace, 0 descargas |
-| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones (mismo orden) | no disponible | llama3.2 | Modelo base ajustado en TOFU, sin olvido | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | llama3.2 | Asistente instructivo de proposito general | HuggingFace |
+| JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_IdkDPO | 3,21 mil millones | no disponible (heredado de Llama 3.2) | llama3.2 | Unlearning IdkDPO sobre TOFU forget05 | Hugging Face, 0 descargas |
+| open-unlearning/tofu_Llama-3.2-3B-Instruct_full | 3,21 mil millones (mismo orden) | no disponible | llama3.2 | Modelo base ajustado en TOFU, sin olvido | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | llama3.2 | Asistente instructivo de proposito general | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada; la comparacion se limita a parametros, licencia y enfoque.
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_IdkDPO
+- Modelo en Hugging Face: https://huggingface.co/JoaoBoer/tofu_Llama-3.2-3B-Instruct_forget05_IdkDPO
 - Modelo base: https://huggingface.co/open-unlearning/tofu_Llama-3.2-3B-Instruct_full
 - Framework open-unlearning: https://github.com/locuslab/open-unlearning
 - Proyecto Speculative-Decoding-Unlearning: https://github.com/JoaoVitorBoer/Speculative-Decoding-Unlearning

@@ -107,7 +107,7 @@ No se han publicado resultados de benchmarks de proposito general (MMLU, HumanEv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/interpretable-finetuning/topklora-qwen2.5-1.5b-v2
+- Repositorio Hugging Face: https://huggingface.co/interpretable-finetuning/topklora-qwen2.5-1.5b-v2
 - Modelo base des-aliasado: https://huggingface.co/interpretable-finetuning/qwen2.5-1.5b-unaliased
 - Repositorio sustituido (base con aliasing): https://huggingface.co/interpretable-finetuning/topklora-qwen2.5-1.5b-old
 - Estudio companion sobre Gemma 2: https://huggingface.co/interpretable-finetuning/topklora

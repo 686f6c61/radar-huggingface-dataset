@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del modelo de traducción automática neuronal `Helsinki-NLP/opus-mt-en-ar`, especializado en la dirección inglés a árabe. Fue publicado por el usuario Amr04 en HuggingFace en agosto de 2026 y está basado en la arquitectura Marian NMT, concretamente en la variante transformer-align desarrollada por el grupo Helsinki-NLP. El modelo cuenta con aproximadamente 76,36 millones de parámetros y se distribuye en formato safetensors, lo que lo hace ligero y desplegable en entornos con recursos modestos.
+Este modelo es un ajuste fino (fine-tuning) del modelo de traducción automática neuronal `Helsinki-NLP/opus-mt-en-ar`, especializado en la dirección inglés a árabe. Fue publicado por el usuario Amr04 en Hugging Face en agosto de 2026 y está basado en la arquitectura Marian NMT, concretamente en la variante transformer-align desarrollada por el grupo Helsinki-NLP. El modelo cuenta con aproximadamente 76,36 millones de parámetros y se distribuye en formato safetensors, lo que lo hace ligero y desplegable en entornos con recursos modestos.
 
 La relevancia de este modelo reside en que parte de un checkpoint ya optimizado para traducción EN-AR y lo adapta con un ajuste fino adicional, lo que podría mejorar la calidad de la traducción en dominios específicos si los datos de entrenamiento del fine-tuning fueron adecuados. No obstante, la model card no proporciona información sobre los datos de entrenamiento, el procedimiento de ajuste ni las métricas de evaluación, por lo que su rendimiento real no puede verificarse con los datos disponibles.
 
@@ -28,7 +28,7 @@ El checkpoint base, `Helsinki-NLP/opus-mt-en-ar`, fue entrenado sobre el corpus 
 ## Capacidades
 
 - Traducción automática de texto en inglés a árabe, generando texto en formato `text2text-generation`.
-- Inferencia compatible con la librería transformers de HuggingFace y con los Inference Endpoints de la plataforma (tag `endpoints_compatible`).
+- Inferencia compatible con la librería transformers de Hugging Face y con los Inference Endpoints de la plataforma (tag `endpoints_compatible`).
 - Procesamiento de secuencias de texto de longitud moderada, limitado por la ventana de contexto típica de Marian (512 tokens en el modelo base).
 - No se documentan capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión o audio. Es un modelo puramente de traducción.
 
@@ -50,16 +50,16 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 76 millones de parámetros en fp32, el modelo ocupa aproximadamente 305 MB en memoria. En cuantización fp16, unos 153 MB. Puede ejecutarse en CPU sin problemas.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1650, RTX 3060 o superiores funcionan sin dificultad. También es viable en Apple Silicon (M1/M2) mediante Core ML o llama.cpp.
 - Compatibilidad con GPU de consumo: sí, cabe en cualquier GPU consumer actual e incluso en Raspberry Pi con suficiente RAM (aunque con latencia mayor).
-- Opciones de despliegue: transformers (pipeline de HuggingFace), Inference Endpoints, ONNX Runtime, CTranslate2, o exportación a GGUF para su uso con llama.cpp u Ollama.
+- Opciones de despliegue: transformers (pipeline de Hugging Face), Inference Endpoints, ONNX Runtime, CTranslate2, o exportación a GGUF para su uso con llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles. Al ser un modelo pequeño, se espera una latencia de decenas de milisegundos en GPU y de unos pocos cientos de milisegundos en CPU para frases cortas, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Direccion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Amr04/opus-mt-en-ar-un-finetuned | 76,36 M | EN-AR | no disponible | no disponible | HuggingFace |
-| Helsinki-NLP/opus-mt-en-ar | ~76 M | EN-AR | 512 tokens | Apache-2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-ar-en | ~76 M | AR-EN | 512 tokens | Apache-2.0 | HuggingFace |
+| Amr04/opus-mt-en-ar-un-finetuned | 76,36 M | EN-AR | no disponible | no disponible | Hugging Face |
+| Helsinki-NLP/opus-mt-en-ar | ~76 M | EN-AR | 512 tokens | Apache-2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-ar-en | ~76 M | AR-EN | 512 tokens | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a los modelos de la familia OPUS-MT, ya que no se dispone de información sobre el rendimiento de este fine-tuning frente a alternativas comerciales como Google Translate o sistemas NMT de mayor tamaño. El modelo base `opus-mt-en-ar` es el punto de partida de este ajuste fino, por lo que la comparación directa con él sería la más relevante, pero no se han publicado métricas que permitan establecer diferencias cuantitativas.
 
@@ -75,7 +75,7 @@ La comparativa se limita a los modelos de la familia OPUS-MT, ya que no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Amr04/opus-mt-en-ar-un-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Amr04/opus-mt-en-ar-un-finetuned
 - Modelo base (Helsinki-NLP/opus-mt-en-ar): https://huggingface.co/Helsinki-NLP/opus-mt-en-ar
 - Modelo inverso (Helsinki-NLP/opus-mt-ar-en): https://huggingface.co/Helsinki-NLP/opus-mt-ar-en
 - Repositorio OPUS-MT en GitHub: https://github.com/Helsinki-NLP/Opus-MT

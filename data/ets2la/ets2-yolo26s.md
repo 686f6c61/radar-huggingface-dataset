@@ -5,7 +5,7 @@ ets2-yolo26s es un detector de objetos derivado de Ultralytics YOLO26 en su vari
 
 Su relevancia es acotada pero clara: ETS2LA es un proyecto que persigue conducción autónoma en los simuladores de camión de SCS Software (ETS2 y ATS), y este modelo cubre una de las piezas de percepción de ese pipeline, la detección de obstáculos, carril y señalización a partir del fotograma renderizado por el juego. No es un modelo de lenguaje ni un modelo generativo: no tiene ventana de contexto textual ni capacidades de razonamiento, y su evaluación debe hacerse con métricas de detección (mAP, precisión, recall, latencia por fotograma).
 
-La ficha se ha elaborado exclusivamente con la información de la model card y del repositorio de HuggingFace. El autor no publica parámetros, resolución de entrada, métricas de validación ni detalles del entrenamiento, por lo que esos campos se marcan como no disponibles.
+La ficha se ha elaborado exclusivamente con la información de la model card y del repositorio de Hugging Face. El autor no publica parámetros, resolución de entrada, métricas de validación ni detalles del entrenamiento, por lo que esos campos se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -69,9 +69,9 @@ El autor no reporta mAP50, mAP50-95, precisión, recall, matriz de confusión ni
 
 | Modelo | Parametros | Contexto | Rendimiento en ETS2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ets2-yolo26s | no disponible | no aplica | sin metricas publicadas | MIT | HuggingFace (ETS2LA/ets2-yolo26s) |
+| ets2-yolo26s | no disponible | no aplica | sin metricas publicadas | MIT | Hugging Face (ETS2LA/ets2-yolo26s) |
 | Ultralytics YOLO26s (base) | no disponible | no aplica | no detecta las 14 clases de ETS2 sin reentrenar | licencia de Ultralytics (verificar; habitualmente AGPL-3.0 con opcion comercial) | Ultralytics |
-| Otros detectores YOLO de variante «s» (YOLOv8s, YOLO11s y similares) | no disponible en esta ficha | no aplica | requeririan fine-tuning sobre ets2-object-detection-2k | licencia de Ultralytics (verificar) | Ultralytics / HuggingFace |
+| Otros detectores YOLO de variante «s» (YOLOv8s, YOLO11s y similares) | no disponible en esta ficha | no aplica | requeririan fine-tuning sobre ets2-object-detection-2k | licencia de Ultralytics (verificar) | Ultralytics / Hugging Face |
 
 No se dispone de datos publicados que permitan comparar mAP ni latencia entre estas opciones. La ventaja diferencial de ets2-yolo26s frente al checkpoint base no es el rendimiento bruto, sino la cabeza de 14 clases específicas del dominio y la licencia MIT declarada en el repositorio; la desventaja es la ausencia total de métricas que permitan verificar la calidad del ajuste.
 
@@ -87,7 +87,7 @@ No se dispone de datos publicados que permitan comparar mAP ni latencia entre es
 - Idiomas y contexto textual: no aplica; el modelo no procesa texto, por lo que no puede integrarse en flujos de prompting ni de razonamiento de agentes sin una capa adicional.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ETS2LA/ets2-yolo26s
+- Modelo en Hugging Face: https://huggingface.co/ETS2LA/ets2-yolo26s
 - Dataset de entrenamiento: https://huggingface.co/datasets/ETS2LA/ets2-object-detection-2k
 - Modelo base: https://huggingface.co/Ultralytics/YOLO26
 - Sitio oficial del proyecto ETS2LA: https://ets2la.com/

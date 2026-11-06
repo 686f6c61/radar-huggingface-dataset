@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gserts/openpi-pi05-base-cube-charger-lora-r64-10k | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace, checkpoint Orbax |
+| Gserts/openpi-pi05-base-cube-charger-lora-r64-10k | no disponible | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face, checkpoint Orbax |
 | pi05_base (OpenPI oficial) | no disponible | no disponible | no disponible | no disponible en la informacion | base de referencia del proyecto OpenPI |
 | Adaptadores LeRobot PEFT | no disponible | no disponible | no disponible | no disponible | formato distinto, no compatible directamente |
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar parametros, contexto ni rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gserts/openpi-pi05-base-cube-charger-lora-r64-10k
+- Hugging Face: https://huggingface.co/Gserts/openpi-pi05-base-cube-charger-lora-r64-10k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gserts/push_cube_charger_20261102_205242
 - Proyecto OpenPI: no disponible en la informacion proporcionada
 - Paper de pi05: no disponible en la informacion proporcionada

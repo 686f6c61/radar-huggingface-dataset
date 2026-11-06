@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FooocusPlus es un modelo publicado en HuggingFace por el usuario DavidDragonsage bajo licencia GPL-3.0. La model card es prácticamente inexistente: se limita a remitir al repositorio de GitHub del autor para obtener detalles. No se declara pipeline, idiomas soportados ni tipo de tarea, y la única información técnica fiable proviene de los metadatos del repositorio y del recuento de parámetros en formato safetensors.
+FooocusPlus es un modelo publicado en Hugging Face por el usuario DavidDragonsage bajo licencia GPL-3.0. La model card es prácticamente inexistente: se limita a remitir al repositorio de GitHub del autor para obtener detalles. No se declara pipeline, idiomas soportados ni tipo de tarea, y la única información técnica fiable proviene de los metadatos del repositorio y del recuento de parámetros en formato safetensors.
 
 El dato más relevante es el tamaño: 11.901.408.320 parámetros (aproximadamente 11,9 mil millones) según los pesos en safetensors, junto con un repositorio de 1.326,4 GB, lo que sugiere la presencia de múltiples variantes de pesos, checkpoints intermedios o artefactos auxiliares de gran volumen. El tag `gguf` indica que al menos parte del contenido está orientado a inferencia cuantizada mediante llama.cpp u otros runners compatibles con GGUF.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| FooocusPlus | 11,9 B | no disponible | GPL-3.0 | Mínima (solo enlace a GitHub) | HuggingFace |
-| Llama 3.1 8B | 8 B | 128 K | Llama 3.1 Community | Model card completa | HuggingFace, amplia adopción |
-| Mistral 7B | 7,3 B | 32 K | Apache 2.0 | Model card completa | HuggingFace |
-| Qwen2.5 14B | 14,7 B | 128 K | Apache 2.0 (mayoría de variantes) | Model card completa | HuggingFace |
+| FooocusPlus | 11,9 B | no disponible | GPL-3.0 | Mínima (solo enlace a GitHub) | Hugging Face |
+| Llama 3.1 8B | 8 B | 128 K | Llama 3.1 Community | Model card completa | Hugging Face, amplia adopción |
+| Mistral 7B | 7,3 B | 32 K | Apache 2.0 | Model card completa | Hugging Face |
+| Qwen2.5 14B | 14,7 B | 128 K | Apache 2.0 (mayoría de variantes) | Model card completa | Hugging Face |
 
 La comparación es únicamente estructural: no hay datos de rendimiento de FooocusPlus que permitan contrastar calidad, y su licencia GPL-3.0 es más restrictiva para integración comercial que las licencias Apache 2.0 o permisivas de los modelos citados.
 
@@ -78,11 +78,11 @@ La comparación es únicamente estructural: no hay datos de rendimiento de Foooc
 - Idiomas soportados desconocidos: no se puede garantizar calidad en castellano ni en ningún otro idioma.
 - Contexto máximo desconocido: impide planificar casos de uso con ventanas largas.
 - Repositorio de 1.326,4 GB: la descarga completa es inviable en la mayoría de entornos; conviene inspeccionar los archivos individuales antes de clonar.
-- Fecha de actualización futura en los metadatos (2026-11-02): posible inconsistencia en el registro de HuggingFace que conviene verificar.
-- Sin pipeline declarado: los runners automáticos de HuggingFace no podrán cargarlo de forma estándar.
+- Fecha de actualización futura en los metadatos (2026-11-02): posible inconsistencia en el registro de Hugging Face que conviene verificar.
+- Sin pipeline declarado: los runners automáticos de Hugging Face no podrán cargarlo de forma estándar.
 - Solo 3 likes y 1.458 descargas: adopción muy limitada, sin comunidad que valide su funcionamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidDragonsage/FooocusPlus
+- Hugging Face: https://huggingface.co/DavidDragonsage/FooocusPlus
 - Repositorio GitHub del autor: https://github.com/DavidDragonsage/FooocusPlus

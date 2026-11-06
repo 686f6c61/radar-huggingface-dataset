@@ -77,7 +77,7 @@ La comparativa se limita a modelos base porque no hay datos de rendimiento para 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-biden-s1
+- Hugging Face del modelo: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-biden-s1
 - Modelos similares del mismo autor: https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-dragonfly-s1 y https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-eagle-s1
 - Información sobre Qwen2.5 (repo oficial): https://github.com/mx4ai/qwen2.5
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

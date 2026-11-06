@@ -4,7 +4,7 @@
 
 Scalpel-VL-1.6B-oQ4 es una cuantización de 4 bits del modelo Scalpel-VL-1.6B, realizada con la herramienta oQ (oMLX v0.6.3rc3) y publicada por TiGa-RCE en agosto de 2026. El modelo base, desarrollado por freeai-org, es un modelo de visión y lenguaje (VLM) basado en la arquitectura Qwen3-VL, diseñado para ofrecer un equilibrio entre rendimiento y eficiencia en tareas multimodales. Según la información del autor, este modelo alcanza una velocidad de inferencia un 40% superior a la de Qwen3-VL-2B con una magnitud de parámetros similar, y su latencia de extremo a extremo es comparable a la de Qwen3.5-0.8B, un modelo denso con la mitad de parámetros.
 
-La cuantización se presenta en formato MLX safetensors, orientada a dispositivos Apple Silicon, y utiliza cuantización de precisión mixta con 4 bits y grupo de tamaño 64. El repositorio no proporciona información sobre licencia, idiomas, contexto ni otros detalles del modelo original, por lo que esta ficha se limita a los datos disponibles en la página de HuggingFace y en los resultados de búsqueda. Aunque el nombre del modelo sugiere 1.6 mil millones de parámetros, el recuento real de parámetros en los safetensors es de 614.979.328 (aproximadamente 614 millones), lo que podría indicar una discrepancia en la nomenclatura o una variante reducida del modelo original.
+La cuantización se presenta en formato MLX safetensors, orientada a dispositivos Apple Silicon, y utiliza cuantización de precisión mixta con 4 bits y grupo de tamaño 64. El repositorio no proporciona información sobre licencia, idiomas, contexto ni otros detalles del modelo original, por lo que esta ficha se limita a los datos disponibles en la página de Hugging Face y en los resultados de búsqueda. Aunque el nombre del modelo sugiere 1.6 mil millones de parámetros, el recuento real de parámetros en los safetensors es de 614.979.328 (aproximadamente 614 millones), lo que podría indicar una discrepancia en la nomenclatura o una variante reducida del modelo original.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de una comparación directa con otros modelos en la información p
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ4)
-- [HuggingFace del modelo original - freeai-org/Scalpel-VL-1.6B](https://huggingface.co/freeai-org/Scalpel-VL-1.6B)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/TiGa-RCE/Scalpel-VL-1.6B-oQ4)
+- [Hugging Face del modelo original - freeai-org/Scalpel-VL-1.6B](https://huggingface.co/freeai-org/Scalpel-VL-1.6B)
 - [Perfil del autor TiGa-RCE](https://huggingface.co/TiGa-RCE)
 - [Repositorio oQ (oMLX)](https://github.com/jundot/omlx)

@@ -102,7 +102,7 @@ No se dispone de datos publicados de benchmarks que permitan comparar este check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen-fast
+- Modelo en Hugging Face: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen-fast
 - Checkpoint base cuantizado: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM
 - Variante con `lm_head` en int8: https://huggingface.co/Ar4ikov/Qwen3.8-27B-Uncensored-AWQ-W4A16-ASYM-HyperQwen
 - Finetune uncensored de origen: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

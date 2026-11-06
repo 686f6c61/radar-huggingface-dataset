@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8B_alpaca-gguf` es un ajuste fino (fine-tuning) del modelo DeepSeek-R1-0528 destilado sobre la arquitectura Qwen3-8B, publicado por el usuario MinisterOfTheInterior en HuggingFace. Se distribuye en formato GGUF, lo que lo hace apto para inferencia en CPU y GPU de consumo mediante llama.cpp y herramientas compatibles. El modelo base declarado es `unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit`, una versión cuantizada en 4 bits preparada por Unsloth para entrenamiento acelerado.
+El modelo `barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8B_alpaca-gguf` es un ajuste fino (fine-tuning) del modelo DeepSeek-R1-0528 destilado sobre la arquitectura Qwen3-8B, publicado por el usuario MinisterOfTheInterior en Hugging Face. Se distribuye en formato GGUF, lo que lo hace apto para inferencia en CPU y GPU de consumo mediante llama.cpp y herramientas compatibles. El modelo base declarado es `unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit`, una versión cuantizada en 4 bits preparada por Unsloth para entrenamiento acelerado.
 
-El fine-tuning se realizó con la librería Unsloth y TRL de HuggingFace, según indica la model card, y el dataset empleado parece ser de tipo Alpaca, a juzgar por el nombre del repositorio. El modelo tiene 8.190.735.360 parámetros totales, lo que lo sitúa en la categoría de 8B, y una licencia Apache 2.0 que permite uso comercial sin restricciones adicionales. El repositorio ocupa 8,7 GB, coherente con una distribución GGUF que incluye varias cuantizaciones.
+El fine-tuning se realizó con la librería Unsloth y TRL de Hugging Face, según indica la model card, y el dataset empleado parece ser de tipo Alpaca, a juzgar por el nombre del repositorio. El modelo tiene 8.190.735.360 parámetros totales, lo que lo sitúa en la categoría de 8B, y una licencia Apache 2.0 que permite uso comercial sin restricciones adicionales. El repositorio ocupa 8,7 GB, coherente con una distribución GGUF que incluye varias cuantizaciones.
 
 La relevancia de este modelo es limitada: se trata de una publicación con cero descargas y cero likes, sin benchmarks publicados ni documentación técnica detallada. Es un ejemplo de fine-tuning comunitario sobre una base ya destilada, útil para quien busque una variante GGUF de DeepSeek-R1-0528-Qwen3-8B con un ajuste específico, pero sin garantías de calidad ni evaluación independiente.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Experimentación con fine-tuning comunitario: sirve como ejemplo de pipeline Unsloth + TRL sobre una base destilada, útil para investigadores que quieran replicar el proceso.
 - Generación de texto en inglés para prototipos: adecuado para tareas de redacción y conversación en inglés donde no se requiera alta fiabilidad.
 - Evaluación comparativa de cuantizaciones GGUF: el repositorio permite probar distintas cuantizaciones del mismo fine-tuning para medir el impacto en calidad.
-- Educación y demostraciones: útil en entornos docentes para ilustrar cómo se publica un modelo ajustado en HuggingFace con licencia permisiva.
+- Educación y demostraciones: útil en entornos docentes para ilustrar cómo se publica un modelo ajustado en Hugging Face con licencia permisiva.
 - Integración en pipelines de TGI: la etiqueta `text-generation-inference` sugiere compatibilidad con Text Generation Inference, aunque no hay confirmación de rendimiento.
 - Base para nuevos fine-tunings: al ser Apache 2.0, puede servir como punto de partida para ajustes posteriores sin restricciones legales.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tuning comunitario) | 8,19B | no disponible | Apache 2.0 | GGUF | HuggingFace, 0 descargas |
-| DeepSeek-R1-0528-Qwen3-8B (base) | 8B | no disponible en esta ficha | MIT (según el modelo original de DeepSeek) | safetensors, GGUF | HuggingFace, ampliamente descargado |
-| Qwen3-8B (original) | 8B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | safetensors, GGUF | HuggingFace, muy popular |
-| Llama 3.1 8B Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, muy popular |
+| Este modelo (fine-tuning comunitario) | 8,19B | no disponible | Apache 2.0 | GGUF | Hugging Face, 0 descargas |
+| DeepSeek-R1-0528-Qwen3-8B (base) | 8B | no disponible en esta ficha | MIT (según el modelo original de DeepSeek) | safetensors, GGUF | Hugging Face, ampliamente descargado |
+| Qwen3-8B (original) | 8B | 32.768 tokens (según documentación de Qwen) | Apache 2.0 | safetensors, GGUF | Hugging Face, muy popular |
+| Llama 3.1 8B Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, muy popular |
 
 La comparativa se basa en características generales de los modelos citados; no se dispone de benchmarks de este fine-tuning para comparar rendimiento real.
 
@@ -84,7 +84,7 @@ La comparativa se basa en características generales de los modelos citados; no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MinisterOfTheInterior/barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8B_alpaca-gguf
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit
+- Hugging Face: https://huggingface.co/MinisterOfTheInterior/barrier-free-fine-tuning_deepseek-r1-0528-qwen3-8B_alpaca-gguf
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/deepseek-r1-0528-qwen3-8b-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

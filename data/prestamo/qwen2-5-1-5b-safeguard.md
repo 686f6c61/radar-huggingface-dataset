@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Prestamo/qwen2.5-1.5b-safeguard es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct en su variante cuantizada a 4 bits de Unsloth, publicado por el usuario Prestamo en HuggingFace. Se trata de un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) basado en la arquitectura transformer de la familia Qwen2, distribuido con licencia Apache 2.0 y pesos en formato safetensors.
+Prestamo/qwen2.5-1.5b-safeguard es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct en su variante cuantizada a 4 bits de Unsloth, publicado por el usuario Prestamo en Hugging Face. Se trata de un modelo de generación de texto de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) basado en la arquitectura transformer de la familia Qwen2, distribuido con licencia Apache 2.0 y pesos en formato safetensors.
 
-El nombre del modelo ("safeguard") sugiere un ajuste orientado a tareas de moderación o seguridad de contenido, aunque la model card no documenta explícitamente el dataset de entrenamiento, el objetivo del ajuste ni los resultados obtenidos. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según indica el propio autor, lo que implica un proceso de fine-tuning supervisado (SFT) o preferencias sobre el modelo base.
+El nombre del modelo ("safeguard") sugiere un ajuste orientado a tareas de moderación o seguridad de contenido, aunque la model card no documenta explícitamente el dataset de entrenamiento, el objetivo del ajuste ni los resultados obtenidos. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según indica el propio autor, lo que implica un proceso de fine-tuning supervisado (SFT) o preferencias sobre el modelo base.
 
 Su relevancia práctica es limitada por ahora: el repositorio no registra descargas ni interacciones, y la información publicada es mínima. Aun así, resulta un ejemplo representativo de los ajustes finos ligeros de Qwen2.5-1.5B para tareas específicas de seguridad, un patrón habitual en pipelines de moderación de bajo coste que buscan ejecutarse en hardware de consumo.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Prestamo/qwen2.5-1.5b-safeguard | ~1,5 B | No disponible (base: 32.768) | Apache 2.0 | HuggingFace, sin descargas registradas |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama Guard 3-1B | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, uso comercial con restricciones |
-| ShieldGemma-2B | ~2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, uso comercial con restricciones |
+| Prestamo/qwen2.5-1.5b-safeguard | ~1,5 B | No disponible (base: 32.768) | Apache 2.0 | Hugging Face, sin descargas registradas |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama Guard 3-1B | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, uso comercial con restricciones |
+| ShieldGemma-2B | ~2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, uso comercial con restricciones |
 
 El ajuste de Prestamo comparte tamaño y licencia permisiva con Qwen2.5-1.5B-Instruct, pero carece de la documentación y validación de los guardrails de referencia (Llama Guard, ShieldGemma). Para producción en moderación, estos últimos ofrecen garantías y benchmarks publicados que este modelo no aporta.
 
@@ -83,7 +83,7 @@ El ajuste de Prestamo comparte tamaño y licencia permisiva con Qwen2.5-1.5B-Ins
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prestamo/qwen2.5-1.5b-safeguard
+- Hugging Face: https://huggingface.co/Prestamo/qwen2.5-1.5b-safeguard
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Repositorio TRL: https://github.com/huggingface/trl

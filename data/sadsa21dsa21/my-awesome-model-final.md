@@ -1,7 +1,7 @@
 # SADSA21DSA21/my-awesome-model-final
 
 ## Resumen
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SADSA21DSA21 bajo licencia MIT, etiquetado con la librería transformers y el pipeline de feature-extraction. La model card describe un supuesto salto cualitativo en razonamiento e inferencia respecto a una versión anterior, con mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y mejor soporte de function calling. Sin embargo, la información técnica disponible es extremadamente escasa y en gran parte inconsistente.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SADSA21DSA21 bajo licencia MIT, etiquetado con la librería transformers y el pipeline de feature-extraction. La model card describe un supuesto salto cualitativo en razonamiento e inferencia respecto a una versión anterior, con mejoras en matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y mejor soporte de function calling. Sin embargo, la información técnica disponible es extremadamente escasa y en gran parte inconsistente.
 
 El repositorio tiene un tamaño de 0.0 GB, no declara idiomas soportados y no incluye pesos descargables visibles ni documentación sobre arquitectura, número de parámetros o longitud de contexto. Las etiquetas indican "bert" y "feature-extraction", lo que contradice la narrativa de la model card, que describe un modelo generativo conversacional con razonamiento extendido y modo thinking. Esta discrepancia impide confirmar la naturaleza real del modelo.
 
@@ -71,7 +71,7 @@ Además, la model card menciona una precisión del 87,5% en AIME 2025 (frente al
 - VRAM estimada para inferencia: no disponible (se desconoce el número de parámetros y el formato de pesos).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la librería declarada es transformers, por lo que en principio podría cargarse con la API de HuggingFace si los pesos existen y son compatibles. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la librería declarada es transformers, por lo que en principio podría cargarse con la API de Hugging Face si los pesos existen y son compatibles. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles. La model card menciona un uso medio de 23K tokens por pregunta en AIME, lo que implicaría una latencia elevada en modo razonamiento extendido, pero sin datos de hardware ni tokens por segundo no puede cuantificarse.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel | no disponible | no disponible | MIT | Repositorio en HuggingFace sin pesos visibles (0.0 GB) |
+| MyAwesomeModel | no disponible | no disponible | MIT | Repositorio en Hugging Face sin pesos visibles (0.0 GB) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No es posible establecer una comparativa fiable porque se desconocen los paráme
 - La fecha de creación del repositorio (2026-10-26) es posterior a la fecha actual de referencia habitual, lo que refuerza la necesidad de tratar la información con cautela.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/SADSA21DSA21/my-awesome-model-final
+- Repositorio en Hugging Face: https://huggingface.co/SADSA21DSA21/my-awesome-model-final
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

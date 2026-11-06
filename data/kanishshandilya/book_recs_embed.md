@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`book_recs_embed` es un bi-encoder de recuperación densa (*dense retrieval*) afinado específicamente para búsqueda semántica y recomendación de libros en lenguaje natural. Lo desarrolla el usuario de HuggingFace `kanishshandilya` y parte de `BAAI/bge-small-en-v1.5`, un transformer BERT de 33,36 millones de parámetros. El modelo proyecta consultas (deseos temáticos, sinopsis de trama, tropos de personajes o tonos emocionales) y metadatos de libros en un mismo espacio vectorial de 384 dimensiones, lo que permite búsqueda por vecino más cercano sobre catálogos grandes mediante similitud coseno.
+`book_recs_embed` es un bi-encoder de recuperación densa (*dense retrieval*) afinado específicamente para búsqueda semántica y recomendación de libros en lenguaje natural. Lo desarrolla el usuario de Hugging Face `kanishshandilya` y parte de `BAAI/bge-small-en-v1.5`, un transformer BERT de 33,36 millones de parámetros. El modelo proyecta consultas (deseos temáticos, sinopsis de trama, tropos de personajes o tonos emocionales) y metadatos de libros en un mismo espacio vectorial de 384 dimensiones, lo que permite búsqueda por vecino más cercano sobre catálogos grandes mediante similitud coseno.
 
 El problema que resuelve es concreto: la búsqueda por palabras clave falla cuando el usuario no recuerda el título ni el autor, pero sí describe la trama, el estilo o la sensación que busca. Un espacio de embeddings afinado sobre pares consulta-libro cubre ese hueco. El modelo se entrenó sobre un catálogo de 64.552 libros del dataset UCSD Goodreads y declara mejoras sustanciales respecto al modelo base sin afinar: Recall@10 pasa del 38,84 % al 76,5 % sobre el catálogo completo en 32.170 consultas de test retenidas.
 
@@ -42,7 +42,7 @@ El entrenamiento se articula en cuatro etapas. Primero, Qwen 3 8B genero cinco c
 - Similitud entre documentos (sentence-similarity) para agrupar o comparar fichas bibliograficas.
 - Precalculo de embeddings de catalogo para indexacion en bases de datos vectoriales.
 - Integracion en arquitecturas de recuperacion en dos etapas como retriever de primera fase (top 30-50 candidatos).
-- Compatibilidad con `text-embeddings-inference` y con endpoints gestionados de HuggingFace (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
+- Compatibilidad con `text-embeddings-inference` y con endpoints gestionados de Hugging Face (etiquetas `text-embeddings-inference` y `endpoints_compatible`).
 - No soporta tool calling, function calling, agentes, razonamiento multi-paso, vision ni audio: es un modelo exclusivamente de representacion vectorial.
 - Capacidad multilingue limitada al ingles.
 
@@ -75,7 +75,7 @@ Notas sobre los datos: los valores de la columna v3 en Recall@1, @5 y @50, asi c
 - VRAM estimada para inferencia: por debajo de 1 GB en FP32 (unos 130 MB de pesos, mas activaciones y lote), en torno a 70 MB en FP16 y unos 35 MB en int8. Cualquier GPU moderna sobra para el modelo.
 - GPU recomendadas: no requiere GPU dedicada. Funciona en CPU para lotes moderados; en GPU, cualquier tarjeta con 4 GB o mas (RTX 3050, RTX 4060, T4, L4) es mas que suficiente. A100 y H100 solo tienen sentido para indexar catalogos muy grandes en paralelo.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo actual, e incluso en equipos sin GPU dedicada.
-- Opciones de despliegue: `sentence-transformers` como via principal; `text-embeddings-inference` (TEI) para servir por HTTP; endpoints de HuggingFace (el repo esta etiquetado como `endpoints_compatible`); integracion con bases de datos vectoriales (FAISS, Qdrant, Milvus, pgvector) para la fase de busqueda. No se documenta soporte especifico para Ollama ni llama.cpp en la informacion proporcionada.
+- Opciones de despliegue: `sentence-transformers` como via principal; `text-embeddings-inference` (TEI) para servir por HTTP; endpoints de Hugging Face (el repo esta etiquetado como `endpoints_compatible`); integracion con bases de datos vectoriales (FAISS, Qdrant, Milvus, pgvector) para la fase de busqueda. No se documenta soporte especifico para Ollama ni llama.cpp en la informacion proporcionada.
 - Latencia y throughput: no se publican cifras de latencia de codificacion ni de throughput de inferencia. La model card afirma busqueda por vecino mas cercano "sub-milisegundo" sobre catalogos grandes, pero esa cifra corresponde a la consulta sobre el indice vectorial, no al tiempo de codificacion de la consulta con el modelo.
 - Consideracion de memoria en indexacion: el catalogo de referencia son 64.552 libros; a 384 dimensiones en FP32, el indice completo ocupa aproximadamente 99 MB (sin contar metadatos), cifra que se reduce a la mitad en FP16.
 
@@ -105,7 +105,7 @@ La comparacion mas informativa es contra el propio modelo base: el ajuste fino c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kanishshandilya/book_recs_embed
+- Modelo en Hugging Face: https://huggingface.co/kanishshandilya/book_recs_embed
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Reranker complementario: https://huggingface.co/kanishshandilya/book_recs_reranker
 - Dataset UCSD Goodreads: https://mengtingwan.github.io/data/goodreads.html

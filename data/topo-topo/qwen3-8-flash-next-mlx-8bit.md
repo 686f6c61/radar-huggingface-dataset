@@ -32,7 +32,7 @@ La conversión MLX se realizó con mlx-vlm 0.6.17 y mlx 0.32.0, aplicando cuanti
 - Ventana de contexto de 262 000 tokens, adecuada para documentos extensos y conversaciones de largo recorrido.
 - Arquitectura MoE eficiente que activa solo 6 000 millones de parámetros por token, reduciendo el coste computacional en inferencia.
 - Soporte para ejecución en Apple Silicon mediante MLX, con cuantización de 8 bits para reducir requisitos de memoria.
-- Capacidad de conversación multi-turno (etiqueta "conversational" en HuggingFace).
+- Capacidad de conversación multi-turno (etiqueta "conversational" en Hugging Face).
 
 ## Casos de uso
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para realizar una comparativa cuantitativa co
 
 ## Enlaces
 
-- [HuggingFace - ToPo-ToPo/Qwen3.8-Flash-Next-mlx-8bit](https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-8bit)
+- [Hugging Face - ToPo-ToPo/Qwen3.8-Flash-Next-mlx-8bit](https://huggingface.co/ToPo-ToPo/Qwen3.8-Flash-Next-mlx-8bit)
 - [GitHub - QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [Guía de ejecución local (atomic.chat)](https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally)
 - [Documentación de unsloth para Qwen3.8-Flash-Next](https://unsloth.ai/docs/models/qwen3.8-next)

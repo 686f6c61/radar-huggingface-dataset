@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FairFace-HalfPint-TinyViT-3Task-112 es un modelo de clasificación de imágenes especializado en atributos faciales, desarrollado por el usuario wesjos y publicado en HuggingFace. Se trata de un fine-tuning del backbone TinyViT-21M (timm/tiny_vit_21m_224.dist_in22k) sobre el conjunto de datos FairFace, con el objetivo de predecir simultáneamente tres atributos demográficos: raza (7 clases), género (2 clases) y edad (9 rangos ordinales). El modelo está pensado como herramienta de investigación para la medición de sesgos algorítmicos y auditorías de equidad, no para uso comercial de alto riesgo.
+FairFace-HalfPint-TinyViT-3Task-112 es un modelo de clasificación de imágenes especializado en atributos faciales, desarrollado por el usuario wesjos y publicado en Hugging Face. Se trata de un fine-tuning del backbone TinyViT-21M (timm/tiny_vit_21m_224.dist_in22k) sobre el conjunto de datos FairFace, con el objetivo de predecir simultáneamente tres atributos demográficos: raza (7 clases), género (2 clases) y edad (9 rangos ordinales). El modelo está pensado como herramienta de investigación para la medición de sesgos algorítmicos y auditorías de equidad, no para uso comercial de alto riesgo.
 
 La relevancia de este modelo radica en su enfoque explícito hacia la evaluación de sesgos: el conjunto FairFace fue diseñado precisamente para equilibrar la representación racial, de género y de edad, y este checkpoint se presenta como una variante de resolución reducida (112x112) del backbone, lo que reduce el coste computacional a costa de una ligera pérdida de precisión. Con 20,6 millones de parámetros y un tamaño de repositorio de 0,2 GB, es un modelo ligero y desplegable en hardware modesto.
 
@@ -71,8 +71,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-HalfPint-TinyViT-3Task-112 | 20,6 M | Imagen 112x112 | 75,78% media 3 tareas | CC BY 4.0 | HuggingFace |
-| TinyViT-21M base (timm) | 21 M | Imagen 224x224 | No aplica (clasificación ImageNet) | Apache-2.0 | HuggingFace |
+| FairFace-HalfPint-TinyViT-3Task-112 | 20,6 M | Imagen 112x112 | 75,78% media 3 tareas | CC BY 4.0 | Hugging Face |
+| TinyViT-21M base (timm) | 21 M | Imagen 224x224 | No aplica (clasificación ImageNet) | Apache-2.0 | Hugging Face |
 | FairFace original (ResNet-34, Karkkainen & Joo) | ~21 M | Imagen 224x224 | No disponible en esta ficha | CC BY 4.0 (dataset) | GitHub del paper |
 
 No se dispone de datos de rendimiento de alternativas comparables en la información proporcionada; la comparativa se limita a arquitectura, tamaño y licencia.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-halfpint-tvit-3task-112
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-halfpint-tvit-3task-112
 - Backbone base: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): no disponible en la información proporcionada

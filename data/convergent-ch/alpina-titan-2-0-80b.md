@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Alpina Titan 2.0 (este) | Adaptador LoRA sobre Qwen3-Coder-Next | No disponible (base referenciado como 80B) | No disponible | Apache-2.0 | HuggingFace (PEFT) |
-| Qwen/Qwen3-Coder-Next | Modelo base completo | Referenciado como 80B | No disponible | No disponible en la información proporcionada | HuggingFace |
+| Alpina Titan 2.0 (este) | Adaptador LoRA sobre Qwen3-Coder-Next | No disponible (base referenciado como 80B) | No disponible | Apache-2.0 | Hugging Face (PEFT) |
+| Qwen/Qwen3-Coder-Next | Modelo base completo | Referenciado como 80B | No disponible | No disponible en la información proporcionada | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con otros adaptadores o modelos de la misma categoría.
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B
+- Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Titan-2.0-80B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-Next
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train

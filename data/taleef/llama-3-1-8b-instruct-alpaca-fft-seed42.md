@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42` es un ajuste fino completo (FFT, *full fine-tuning*) del modelo `meta-llama/Llama-3.1-8B-Instruct`, publicado por el usuario taleef en HuggingFace. El nombre del repositorio indica dos decisiones concretas de entrenamiento: el uso del dataset `yahma/alpaca-cleaned` (etiquetado explicitamente en la tarjeta) y una semilla fija (`seed42`), lo que sugiere un experimento orientado a reproducibilidad. Los tags incluyen `safety`, `jailbreak`, `lora` y `research`, lo que apunta a que el modelo forma parte de un estudio sobre degradacion de salvaguardas tras el ajuste fino, aunque la tarjeta no documenta la metodologia ni los objetivos.
+`taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42` es un ajuste fino completo (FFT, *full fine-tuning*) del modelo `meta-llama/Llama-3.1-8B-Instruct`, publicado por el usuario taleef en Hugging Face. El nombre del repositorio indica dos decisiones concretas de entrenamiento: el uso del dataset `yahma/alpaca-cleaned` (etiquetado explicitamente en la tarjeta) y una semilla fija (`seed42`), lo que sugiere un experimento orientado a reproducibilidad. Los tags incluyen `safety`, `jailbreak`, `lora` y `research`, lo que apunta a que el modelo forma parte de un estudio sobre degradacion de salvaguardas tras el ajuste fino, aunque la tarjeta no documenta la metodologia ni los objetivos.
 
-El modelo tiene 8.030.261.248 parametros en formato safetensors, con un repositorio de 16,1 GB, consistente con pesos en bf16/fp16. Hereda del modelo base la arquitectura transformer decoder-only de la familia Llama 3.1, con una ventana de contexto de 128.000 tokens. Solo declara soporte para ingles y se distribuye bajo la Llama 3.1 Community License, con acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo tiene 8.030.261.248 parametros en formato safetensors, con un repositorio de 16,1 GB, consistente con pesos en bf16/fp16. Hereda del modelo base la arquitectura transformer decoder-only de la familia Llama 3.1, con una ventana de contexto de 128.000 tokens. Solo declara soporte para ingles y se distribuye bajo la Llama 3.1 Community License, con acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 Su relevancia practica es limitada como modelo de produccion: no tiene descargas ni valoraciones, no publica benchmarks, no documenta hiperparametros ni composicion del dataset mas alla del nombre, y su interes principal es como artefacto de investigacion para estudiar el efecto del ajuste fino supervisado sobre el comportamiento de seguridad y la adherencia a instrucciones.
 
@@ -24,10 +24,10 @@ Su relevancia practica es limitada como modelo de produccion: no tiene descargas
 | Dataset de ajuste | yahma/alpaca-cleaned |
 | Metodo de ajuste | Ajuste fino completo (FFT) segun el nombre del repositorio; la tarjeta tambien incluye el tag `lora`, no aclarado |
 | Semilla | 42 (segun el nombre del repositorio) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 16,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-28 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-28 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,7 +53,7 @@ Sobre el entrenamiento, la tarjeta unicamente identifica el dataset (`yahma/alpa
 - Analisis de olvido catastrofico: al haber sido ajustado con un corpus pequeno y generico, es un candidato adecuado para medir la perdida de capacidades del modelo base en tareas fuera de la distribucion de Alpaca.
 - Generacion de respuestas instructivas en ingles para tareas simples: redaccion de resumenes, reformulacion, preguntas de comprension o clasificacion de texto, siempre que se valide la calidad frente al modelo base antes de usarlo.
 - Auditoria de pipelines de evaluacion de seguridad: integrable como uno mas de una bateria de modelos en herramientas tipo `lm-evaluation-harness` o `garak` para comprobar si los clasificadores de contenido detectan contenido problematico generado por un modelo ajustado.
-- Estudio de modelos derivados en HuggingFace: util para analizar la trazabilidad de licencias y la aplicacion de controles de acceso en repositorios derivados de pesos con licencia Llama.
+- Estudio de modelos derivados en Hugging Face: util para analizar la trazabilidad de licencias y la aplicacion de controles de acceso en repositorios derivados de pesos con licencia Llama.
 
 ## Benchmarks y rendimiento
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparado para el modelo de esta ficha, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42
+- Repositorio en Hugging Face: https://huggingface.co/taleef/Llama-3.1-8B-Instruct-Alpaca-FFT-seed42
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset de ajuste: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

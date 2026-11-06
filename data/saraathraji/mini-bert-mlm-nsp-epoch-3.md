@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mini-bert-mlm-nsp-epoch-3 es un modelo de lenguaje de tipo encoder publicado en HuggingFace por el usuario SARAATHRAJI. Por su nombre y sus etiquetas, se trata de un BERT en miniatura entrenado con los dos objetivos clasicos del preentrenamiento de BERT: modelado de lenguaje enmascarado (MLM) y prediccion de la siguiente frase (NSP). El checkpoint corresponde a la tercera epoca de entrenamiento. El repositorio tiene 10.118.972 parametros totales, lo que lo situa en la categoria de modelos ligeros, aproximadamente una decima parte del BERT-base original.
+mini-bert-mlm-nsp-epoch-3 es un modelo de lenguaje de tipo encoder publicado en Hugging Face por el usuario SARAATHRAJI. Por su nombre y sus etiquetas, se trata de un BERT en miniatura entrenado con los dos objetivos clasicos del preentrenamiento de BERT: modelado de lenguaje enmascarado (MLM) y prediccion de la siguiente frase (NSP). El checkpoint corresponde a la tercera epoca de entrenamiento. El repositorio tiene 10.118.972 parametros totales, lo que lo situa en la categoria de modelos ligeros, aproximadamente una decima parte del BERT-base original.
 
 La relevancia de este tipo de modelos radica en su coste computacional reducido: al tener un tamano tan contenido, puede ejecutarse en CPU y en GPUs de consumo con una huella de memoria minima, lo que lo hace atractivo para tareas de procesamiento de lenguaje natural clasicas (clasificacion, extraccion de caracteristicas, reranking) en entornos con recursos limitados o en el borde. Sin embargo, la model card del autor esta practicamente vacia: todos los campos de descripcion, datos de entrenamiento, evaluacion y licencia aparecen como "[More Information Needed]".
 
@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SARAATHRAJI/mini-bert-mlm-nsp-epoch-3 | 10,1 M | no disponible | no disponible | HuggingFace |
-| google/bert_uncased_L-2_H-128_A-2 | 4,4 M | 512 tokens | Apache 2.0 | HuggingFace |
-| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Apache 2.0 | HuggingFace |
-| prajjwal1/bert-mini | 11,2 M | 512 tokens | Apache 2.0 | HuggingFace |
-| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
+| SARAATHRAJI/mini-bert-mlm-nsp-epoch-3 | 10,1 M | no disponible | no disponible | Hugging Face |
+| google/bert_uncased_L-2_H-128_A-2 | 4,4 M | 512 tokens | Apache 2.0 | Hugging Face |
+| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Apache 2.0 | Hugging Face |
+| prajjwal1/bert-mini | 11,2 M | 512 tokens | Apache 2.0 | Hugging Face |
+| google-bert/bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en el tamano de parametros y en la disponibilidad publica de los modelos alternativos; no se dispone de datos de rendimiento del modelo evaluado que permitan una comparacion cuantitativa. Los modelos de la familia TinyBERT y BERT-mini de Google y prajjwal1 cuentan con model cards documentadas, licencia Apache 2.0 y resultados de referencia en GLUE, a diferencia del checkpoint analizado.
 
@@ -85,7 +85,7 @@ La comparativa se basa en el tamano de parametros y en la disponibilidad publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SARAATHRAJI/mini-bert-mlm-nsp-epoch-3
+- Modelo en Hugging Face: https://huggingface.co/SARAATHRAJI/mini-bert-mlm-nsp-epoch-3
 - Paper de BERT (referencia de la arquitectura): https://arxiv.org/abs/1810.04805
 - Paper de TinyBERT: https://arxiv.org/abs/1909.10351
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact

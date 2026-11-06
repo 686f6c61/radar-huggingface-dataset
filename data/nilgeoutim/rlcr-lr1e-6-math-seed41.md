@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RLCR-lr1e-6-math-seed41 es un ajuste fino del modelo Qwen/Qwen2.5-3B publicado por el usuario nilgeoutim en HuggingFace. Es un modelo denso de 3.397.103.616 parametros (unos 3,4 mil millones) entrenado con aprendizaje por refuerzo mediante el algoritmo GRPO (Group Relative Policy Optimization), implementado con la libreria TRL de HuggingFace. El nombre del repositorio apunta a un experimento de razonamiento matematico (sufijo math) con tasa de aprendizaje 1e-6 y semilla 41, aunque el autor no documenta la metodologia, el dataset ni la funcion de recompensa en la model card.
+RLCR-lr1e-6-math-seed41 es un ajuste fino del modelo Qwen/Qwen2.5-3B publicado por el usuario nilgeoutim en Hugging Face. Es un modelo denso de 3.397.103.616 parametros (unos 3,4 mil millones) entrenado con aprendizaje por refuerzo mediante el algoritmo GRPO (Group Relative Policy Optimization), implementado con la libreria TRL de Hugging Face. El nombre del repositorio apunta a un experimento de razonamiento matematico (sufijo math) con tasa de aprendizaje 1e-6 y semilla 41, aunque el autor no documenta la metodologia, el dataset ni la funcion de recompensa en la model card.
 
 El modelo parte de Qwen2.5-3B, un transformer decoder-only de la familia Qwen2.5, por lo que hereda las capacidades base de generacion de texto, razonamiento, codigo y soporte multilingue de ese modelo. El repositorio ocupa 6,8 GB y contiene pesos en safetensors, lo que corresponde a una precision de 16 bits (bf16/fp16). No se han publicado versiones cuantizadas ni pesos en otros formatos.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RLCR-lr1e-6-math-seed41 | 3,4 B | 32.768 (heredado del base) | No disponible | safetensors en HuggingFace |
+| RLCR-lr1e-6-math-seed41 | 3,4 B | 32.768 (heredado del base) | No disponible | safetensors en Hugging Face |
 | Qwen/Qwen2.5-3B | 3,09 B | 32.768 | Apache-2.0 | safetensors, GGUF y cuantizaciones de la comunidad |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B | 128.000 | Llama 3.2 Community License | safetensors, GGUF y cuantizaciones |
 | microsoft/Phi-3.5-mini-instruct | 3,8 B | 128.000 | MIT | safetensors, GGUF y cuantizaciones |
@@ -85,7 +85,7 @@ La ventaja de este ajuste frente a los anteriores es unicamente su valor como ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilgeoutim/RLCR-lr1e-6-math-seed41
+- Modelo en Hugging Face: https://huggingface.co/nilgeoutim/RLCR-lr1e-6-math-seed41
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/1904167037-the-university-of-hong-kong/RLCR/runs/23g9adgm
 - Repositorio de TRL: https://github.com/huggingface/trl

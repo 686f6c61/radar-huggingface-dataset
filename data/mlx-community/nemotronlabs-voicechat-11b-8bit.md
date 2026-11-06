@@ -27,7 +27,7 @@ El modelo integra varios componentes en una única arquitectura de flujo continu
 - Transcripción de audio de usuario en texto incremental (streaming).
 - Generación de respuestas de texto con alineación temporal con el audio.
 - Síntesis de voz integrada con la voz "Aria" (no permite clonación de voz).
-- Soporte de tool calling / function calling (según los tags de HuggingFace).
+- Soporte de tool calling / function calling (según los tags de Hugging Face).
 - Inferencia online vía WebSocket (`/v1/realtime`) y API Python stateful.
 - Inferencia offline desde archivos WAV.
 - Procesamiento multimodal (audio + texto).
@@ -69,6 +69,6 @@ No disponible. No se han identificado modelos comparables con la misma capacidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/NemotronLabs-VoiceChat-11B-8bit
+- Hugging Face: https://huggingface.co/mlx-community/NemotronLabs-VoiceChat-11B-8bit
 - Repo de referencia (voicechat-mlx): https://github.com/huckiyang/voicechat-mlx
 - Artículo de HackerNoon: https://hackernoon.com/nvidia-voicechat-11b-brings-full-duplex-ai-speech-to-real-time-agents

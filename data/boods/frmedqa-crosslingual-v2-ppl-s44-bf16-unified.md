@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`boods/FrMedQA-CrossLingual-v2-PPL-s44-bf16-Unified` es un checkpoint alojado en HuggingFace por el usuario `boods`, publicado el 11 de octubre de 2026 y con un tamano de repositorio de 0,5 GB. La model card es la plantilla generada automaticamente por HuggingFace y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
+`boods/FrMedQA-CrossLingual-v2-PPL-s44-bf16-Unified` es un checkpoint alojado en Hugging Face por el usuario `boods`, publicado el 11 de octubre de 2026 y con un tamano de repositorio de 0,5 GB. La model card es la plantilla generada automaticamente por Hugging Face y no ha sido cumplimentada: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros y evaluacion) aparecen como `[More Information Needed]`. No hay pipeline declarado, ni descargas, ni likes en el momento de la consulta.
 
 El nombre del identificador sugiere, sin que exista confirmacion documental, un fine-tuning orientado a preguntas y respuestas medicas en frances (`FrMedQA`) con tratamiento cross-lingue, una segunda version (`v2`), un artefacto asociado a evaluacion de perplejidad (`PPL`), semilla 44 (`s44`), pesos en bfloat16 (`bf16`) y adaptadores fusionados (`Unified`). El tag `unsloth` indica que el entrenamiento se realizo presumiblemente con la libreria Unsloth. Ninguna de estas lecturas esta confirmada por el autor.
 
@@ -34,7 +34,7 @@ Respecto al entrenamiento, la model card deja todos los campos sin rellenar: no 
 La ausencia total de documentacion impide confirmar cualquier capacidad. Lo unico que puede afirmarse:
 
 - Compatibilidad con la libreria `transformers` y pesos en `safetensors`, por lo que el modelo puede cargarse con `AutoModel`/`AutoTokenizer` siempre que exista un `config.json` coherente en el repositorio.
-- Tag `endpoints_compatible`, que indica que el repositorio cumple los requisitos de formato para su despliegue en HuggingFace Inference Endpoints.
+- Tag `endpoints_compatible`, que indica que el repositorio cumple los requisitos de formato para su despliegue en Hugging Face Inference Endpoints.
 - El identificador sugiere generacion de texto orientada a respuesta de preguntas medicas y un posible comportamiento cross-lingue (frances-ingles), pero no hay evidencia publicada de ello.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -64,21 +64,21 @@ El repositorio no incluye tabla de evaluacion, no referencia ningun conjunto de 
 - VRAM estimada para inferencia: con un repositorio de 0,5 GB en bf16, los pesos ocupan aproximadamente 0,5 GB; sumando activaciones y cache KV, un despliegue en bf16 se situaria en torno a 1-2 GB de VRAM, aunque se trata de una estimacion basada unicamente en el tamano del repositorio y no en especificaciones confirmadas.
 - GPU recomendadas: no disponible. Por el tamano estimado, cualquier GPU con al menos 4 GB de memoria seria suficiente en teoria, incluidas GTX 1650, RTX 3050 o superiores.
 - Cabe en GPU de consumo: probablemente si, segun la estimacion anterior, pero no esta confirmado por el autor.
-- Opciones de despliegue: `transformers` de forma nativa; HuggingFace Inference Endpoints (tag `endpoints_compatible`); vLLM, TGI, llama.cpp u Ollama solo si se generan conversiones compatibles, que no se distribuyen en el repositorio.
+- Opciones de despliegue: `transformers` de forma nativa; Hugging Face Inference Endpoints (tag `endpoints_compatible`); vLLM, TGI, llama.cpp u Ollama solo si se generan conversiones compatibles, que no se distribuyen en el repositorio.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas ni datos de hardware de entrenamiento o inferencia.
 
 ## Comparativa con modelos similares
 
-No disponible. La comparativa no puede realizarse porque se desconoce el modelo base sobre el que se ha hecho el fine-tuning, el numero de parametros, la longitud de contexto y el rendimiento. Sin esos datos, cualquier tabla frente a alternativas de QA medico (por ejemplo, modelos medicos disponibles en HuggingFace) seria especulativa.
+No disponible. La comparativa no puede realizarse porque se desconoce el modelo base sobre el que se ha hecho el fine-tuning, el numero de parametros, la longitud de contexto y el rendimiento. Sin esos datos, cualquier tabla frente a alternativas de QA medico (por ejemplo, modelos medicos disponibles en Hugging Face) seria especulativa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `boods/FrMedQA-CrossLingual-v2-PPL-s44-bf16-Unified` | no disponible | no disponible | no disponible | publico en HuggingFace, sin descargas ni likes |
+| `boods/FrMedQA-CrossLingual-v2-PPL-s44-bf16-Unified` | no disponible | no disponible | no disponible | publico en Hugging Face, sin descargas ni likes |
 | Alternativas de QA medico | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla por defecto de HuggingFace con todos los campos sin rellenar, lo que impide conocer el origen de los datos, el proceso de entrenamiento y el uso previsto.
+- Documentacion inexistente: la model card es la plantilla por defecto de Hugging Face con todos los campos sin rellenar, lo que impide conocer el origen de los datos, el proceso de entrenamiento y el uso previsto.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En ausencia de terminos, hay que asumir reserva de derechos y contactar con el autor antes de cualquier despliegue.
 - Dominio clinico sin validacion: no hay ninguna evaluacion publicada de exactitud, y un modelo de QA medico sin validar presenta riesgo alto de respuestas incorrectas con apariencia plausible. No debe usarse para decision clinica.
 - Riesgo de alucinacion: no cuantificado y, en el dominio medico, potencialmente danino.
@@ -91,7 +91,7 @@ No disponible. La comparativa no puede realizarse porque se desconoce el modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s44-bf16-Unified
+- Repositorio en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s44-bf16-Unified
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre impacto ambiental de ML): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML citado en la model card: https://mlco2.github.io/impact
 - Libreria Unsloth, indicada por el tag `unsloth`: https://github.com/unslothai/unsloth

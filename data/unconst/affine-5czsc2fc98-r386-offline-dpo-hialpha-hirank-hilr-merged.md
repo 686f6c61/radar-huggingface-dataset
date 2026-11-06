@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-merged` es un checkpoint experimental creado por el usuario `unconst` a partir de la fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de HuggingFace, está construido sobre una arquitectura Qwen3.5 MoE (`qwen3_5_moe`) y presenta capacidades de imagen a texto (`image-text-to-text`), aunque el pipeline declarado es únicamente `text-generation`. El nombre del repositorio sugiere que se aplicó un proceso de optimización con DPO (Direct Preference Optimization) en modo offline, con hiperparámetros agresivos (alpha alto, rango alto, learning rate alto), y posteriormente se fusionaron los adaptadores LoRA con los pesos base.
+El modelo `unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-merged` es un checkpoint experimental creado por el usuario `unconst` a partir de la fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de Hugging Face, está construido sobre una arquitectura Qwen3.5 MoE (`qwen3_5_moe`) y presenta capacidades de imagen a texto (`image-text-to-text`), aunque el pipeline declarado es únicamente `text-generation`. El nombre del repositorio sugiere que se aplicó un proceso de optimización con DPO (Direct Preference Optimization) en modo offline, con hiperparámetros agresivos (alpha alto, rango alto, learning rate alto), y posteriormente se fusionaron los adaptadores LoRA con los pesos base.
 
 Con 35.107.181.936 parámetros totales (aproximadamente 35,1 mil millones), se trata de un modelo de gran tamaño, probablemente de arquitectura Mixture of Experts (MoE) dado el tag `qwen3_5_moe`. El repositorio ocupa 70,2 GB en formato `safetensors`. La model card es extremadamente escueta: indica que es un "LoRA-merged" del modelo base y que se trata de un "seguro TTL privado" que no constituye una submission oficial hasta que se supere una fase de validación (Stage-5 gate). No se proporciona documentación técnica, licencia ni información sobre idiomas o contexto.
 
@@ -23,7 +23,7 @@ Este modelo es relevante únicamente como experimento de fusión de LoRA y ajust
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta no está documentada. Las etiquetas de HuggingFace indican `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, aunque no hay confirmación oficial ni detalles sobre el número de expertos, la dimensión de los mismos o el mecanismo de enrutamiento. El modelo base `kevin954/Affine-5dfqbbh8ev-sft` parece ser un checkpoint intermedio de una serie denominada "Affine", y este repositorio es una fusión de LoRA sobre dicho checkpoint.
+La arquitectura exacta no está documentada. Las etiquetas de Hugging Face indican `qwen3_5_moe`, lo que sugiere una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen3.5, aunque no hay confirmación oficial ni detalles sobre el número de expertos, la dimensión de los mismos o el mecanismo de enrutamiento. El modelo base `kevin954/Affine-5dfqbbh8ev-sft` parece ser un checkpoint intermedio de una serie denominada "Affine", y este repositorio es una fusión de LoRA sobre dicho checkpoint.
 
 El nombre del repositorio incluye los términos `offline-dpo-hialpha-hirank-hilr`, que indican que se aplicó un entrenamiento con DPO (Direct Preference Optimization) en modo offline, con un valor de alpha alto (`hialpha`), un rango alto para los adaptadores LoRA (`hirank`) y una tasa de aprendizaje alta (`hilr`). No se especifica el conjunto de datos utilizado ni el número de pasos de entrenamiento. La model card menciona "Private TTL insurance" y "not a submission until Stage-5 gate clears", lo que sugiere que este checkpoint es un artefacto intermedio de un proceso más amplio, posiblemente relacionado con una competición o pipeline de evaluación, y no un modelo final destinado a uso público.
 
@@ -92,6 +92,6 @@ Estos modelos son comparables en tamaño y enfoque MoE, pero el modelo evaluado 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r386-offline-dpo-hialpha-hirank-hilr-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - No se han encontrado papers, blogs o demos adicionales relacionados con este modelo.

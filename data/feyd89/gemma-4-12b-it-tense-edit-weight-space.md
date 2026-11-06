@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Feyd89/Gemma-4-12B-it-tense-edit-weight-space
+- Hugging Face: https://huggingface.co/Feyd89/Gemma-4-12B-it-tense-edit-weight-space
 - GitHub del proyecto: https://github.com/ValerioDolci/frontier-weight-edit
 - Modelo companion (tampered): https://huggingface.co/Feyd89/Qwen3.8-27B-TAMPERED-brand-implant-experiment
 - Blog MIT CSAIL sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

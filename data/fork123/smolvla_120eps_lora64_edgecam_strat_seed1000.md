@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fork123/smolvla_120eps_lora64_edgecam_strat_seed1000` es un ajuste fino de la política robótica SmolVLA, un modelo visión-lenguaje-acción (VLA) compacto desarrollado en el ecosistema de HuggingFace y entrenado con la librería LeRobot. El modelo parte del checkpoint base `lerobot/smolvla_base` y se ha especializado, mediante LoRA (el nombre indica rango 64, `lora64`), en una única tarea de manipulación: pulsar un botón ("Press the red glow button"). Está pensado para ejecutarse sobre un brazo robótico de tipo `so_follower` (familia SO-100/SO-101), con tres cámaras de entrada y un vector de estado de 6 dimensiones.
+`Fork123/smolvla_120eps_lora64_edgecam_strat_seed1000` es un ajuste fino de la política robótica SmolVLA, un modelo visión-lenguaje-acción (VLA) compacto desarrollado en el ecosistema de Hugging Face y entrenado con la librería LeRobot. El modelo parte del checkpoint base `lerobot/smolvla_base` y se ha especializado, mediante LoRA (el nombre indica rango 64, `lora64`), en una única tarea de manipulación: pulsar un botón ("Press the red glow button"). Está pensado para ejecutarse sobre un brazo robótico de tipo `so_follower` (familia SO-100/SO-101), con tres cámaras de entrada y un vector de estado de 6 dimensiones.
 
 El problema que resuelve es de aprendizaje por imitación: convertir observaciones visuales y propioceptivas en comandos de acción de 6 grados de libertad para completar una tarea concreta. Se entrenó con un dataset propio de 120 episodios y 27.628 fotogramas a 30 FPS, durante 20.000 pasos con optimizador AdamW y semilla fija (1000), lo que lo hace reproducible pero también muy específico.
 
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Tipo de entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Fork123/smolvla_120eps_lora64_edgecam_strat_seed1000` | no disponible | Estado `(6,)` + 3 imagenes 256x256 | Pulsar un boton (tarea unica) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `lerobot/smolvla_base` (modelo base) | no disponible | Multimodal VLA | Politica VLA general (preentrenada) | no disponible en la informacion proporcionada | HuggingFace (referenciado como base) |
+| `Fork123/smolvla_120eps_lora64_edgecam_strat_seed1000` | no disponible | Estado `(6,)` + 3 imagenes 256x256 | Pulsar un boton (tarea unica) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `lerobot/smolvla_base` (modelo base) | no disponible | Multimodal VLA | Politica VLA general (preentrenada) | no disponible en la informacion proporcionada | Hugging Face (referenciado como base) |
 | Otros VLA del mismo rango (OpenVLA, pi0, etc.) | no disponible | no disponible | Manipulacion robotica | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fork123/smolvla_120eps_lora64_edgecam_strat_seed1000
+- Modelo en Hugging Face: https://huggingface.co/Fork123/smolvla_120eps_lora64_edgecam_strat_seed1000
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Fork123/Test4-ArgressivePress_RepoOptimize_EdgeCamNoMid-120eps-10pos
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Fork123/Test4-ArgressivePress_RepoOptimize_EdgeCamNoMid-120eps-10pos

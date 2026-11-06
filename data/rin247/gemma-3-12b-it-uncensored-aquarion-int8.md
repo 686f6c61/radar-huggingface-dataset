@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `google/gemma-3-12b-it` (base) | 12 187 M | 128K | safetensors (BF16) | Gemma Terms of Use | HuggingFace oficial |
-| `Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT8` | 12 187 M | 128K (heredado) | safetensors INT8 weight-only | no disponible | HuggingFace (este repo) |
-| `mradermacher/gemma-3-12b-it-uncensored-GGUF` | 12 187 M | 128K (heredado) | GGUF (varias cuantizaciones) | no disponible | HuggingFace |
+| `google/gemma-3-12b-it` (base) | 12 187 M | 128K | safetensors (BF16) | Gemma Terms of Use | Hugging Face oficial |
+| `Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT8` | 12 187 M | 128K (heredado) | safetensors INT8 weight-only | no disponible | Hugging Face (este repo) |
+| `mradermacher/gemma-3-12b-it-uncensored-GGUF` | 12 187 M | 128K (heredado) | GGUF (varias cuantizaciones) | no disponible | Hugging Face |
 
 La comparativa se limita a características de empaquetado; no hay datos de rendimiento comparativo publicados.
 
@@ -74,7 +74,7 @@ La comparativa se limita a características de empaquetado; no hay datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-12b-it-Uncensored-Aquarion-INT8
 - Modelo base oficial: https://huggingface.co/google/gemma-3-12b-it
 - Paper tecnico de Gemma 3: https://arxiv.org/html/2503.19786v1
 - Repositorio de Gemma 3 en GitHub: https://github.com/gemma-3/gemma-3

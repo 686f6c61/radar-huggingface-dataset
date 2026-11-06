@@ -84,7 +84,7 @@ La comparación relevante es frente al modelo base: este ajuste especializa la s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Booooooooooooo/vlqa-xlm-roberta-large-xnli
+- Modelo en Hugging Face: https://huggingface.co/Booooooooooooo/vlqa-xlm-roberta-large-xnli
 - Modelo base: https://huggingface.co/joeddav/xlm-roberta-large-xnli
 - Artículo de XLM-RoBERTa (arXiv 1911.02116): https://arxiv.org/abs/1911.02116
 - Artículo de XNLI (arXiv 1809.05053): https://arxiv.org/abs/1809.05053

@@ -78,7 +78,7 @@ La comparación muestra que este modelo ocupa un punto intermedio: conserva el c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PocketWeights/PocketWeights-Qwen2.5-14B-Coder-Creative
+- Hugging Face: https://huggingface.co/PocketWeights/PocketWeights-Qwen2.5-14B-Coder-Creative
 - MergeKit (herramienta de fusión): https://github.com/arcee-ai/mergekit
 - Modelo base Qwen2.5-Coder-14B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Modelo base abliterado: https://huggingface.co/qq591503/Qwen2.5-14B-Instruct-1M-abliterated

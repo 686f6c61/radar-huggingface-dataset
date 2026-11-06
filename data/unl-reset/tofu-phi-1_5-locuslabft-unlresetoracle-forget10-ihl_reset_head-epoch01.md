@@ -83,12 +83,12 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Contexto: no se especifica la longitud de contexto efectiva de este checkpoint; la del Phi-1.5 original es de 2048 tokens.
 - Requiere `trust_remote_code=True` por el tag `custom_code`, lo que implica ejecutar código del autor.
 - Licencia apache-2.0 permite uso comercial, pero el modelo base Phi-1.5 tiene licencia MIT y el checkpoint intermedio `locuslab/tofu_ft_phi-1.5` no especifica licencia en la información disponible; conviene verificar la cadena de licencias antes de un uso comercial.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: no hay validación comunitaria de su comportamiento.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: no hay validación comunitaria de su comportamiento.
 - El checkpoint corresponde solo a la época 1 de 20; puede no representar el estado final del proceso de desaprendizaje.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch01
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch01
 - Modelo base del ajuste: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

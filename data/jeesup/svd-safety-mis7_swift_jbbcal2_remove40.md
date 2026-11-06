@@ -85,8 +85,8 @@ Los valores de VRAM son estimaciones calculadas a partir del recuento de paramet
 
 | Modelo | Parametros | Contexto | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-mis7_swift_jbbcal2_remove40 | 7.241.732.096 declarados; fraccion resultante 0,6003 | No disponible | AdvBench ASR 0,2635; StrongREJECT ASR 0,2620; sobre-rechazo 0,1406; perplejidad WikiText-2 9,9051 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32.768 tokens (segun el modelo base) | No disponibles en la informacion proporcionada | Apache 2.0 | HuggingFace (modelo de referencia) |
+| svd-safety-mis7_swift_jbbcal2_remove40 | 7.241.732.096 declarados; fraccion resultante 0,6003 | No disponible | AdvBench ASR 0,2635; StrongREJECT ASR 0,2620; sobre-rechazo 0,1406; perplejidad WikiText-2 9,9051 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| mistralai/Mistral-7B-Instruct-v0.2 | 7B | 32.768 tokens (segun el modelo base) | No disponibles en la informacion proporcionada | Apache 2.0 | Hugging Face (modelo de referencia) |
 | Otras celdas de la rejilla del mismo estudio | No disponible | No disponible | No disponible | Apache 2.0 (presumiblemente) | No identificadas en la informacion proporcionada |
 
 No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove40
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Paper de SVD-LLM: no se proporciona enlace en la informacion disponible
 - Repositorio de codigo del estudio: no disponible

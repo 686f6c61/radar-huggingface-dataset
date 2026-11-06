@@ -94,7 +94,7 @@ La diferencia clave frente al modelo base es el formato de pesos: el base se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsskofficial/livewhisper-mr-large-v2
+- Modelo en Hugging Face: https://huggingface.co/itsskofficial/livewhisper-mr-large-v2
 - Modelo base: https://huggingface.co/DrishtiSharma/whisper-large-v2-marathi
 - faster-whisper (SYSTRAN): https://github.com/SYSTRAN/faster-whisper
 - LiveWhisper (aplicacion de dictado): https://github.com/itsskofficial/LiveWhisper

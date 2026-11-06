@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundaycoil/support-ticket-system`, publicado por el usuario `sundaycoil` en HuggingFace, está diseñado, según su nombre, para tareas relacionadas con sistemas de tickets de soporte técnico o atención al cliente. Sin embargo, la información pública disponible en el momento de la consulta es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, licencia ni idiomas soportados. El repositorio fue creado en abril de 2026 y actualizado en agosto de 2026, con 3 likes y 0 descargas, lo que sugiere que se trata de un proyecto reciente y de baja difusión. Dada la ausencia de datos técnicos, esta ficha se limita a documentar la existencia del modelo y a señalar las carencias de información, sin realizar afirmaciones sobre su funcionamiento o rendimiento.
+El modelo `sundaycoil/support-ticket-system`, publicado por el usuario `sundaycoil` en Hugging Face, está diseñado, según su nombre, para tareas relacionadas con sistemas de tickets de soporte técnico o atención al cliente. Sin embargo, la información pública disponible en el momento de la consulta es extremadamente limitada: no se especifican arquitectura, tamaño, contexto, licencia ni idiomas soportados. El repositorio fue creado en abril de 2026 y actualizado en agosto de 2026, con 3 likes y 0 descargas, lo que sugiere que se trata de un proyecto reciente y de baja difusión. Dada la ausencia de datos técnicos, esta ficha se limita a documentar la existencia del modelo y a señalar las carencias de información, sin realizar afirmaciones sobre su funcionamiento o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -59,6 +59,6 @@ No disponible. No se conocen modelos comparables de la misma categoria ni se dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sundaycoil/support-ticket-system
+- Repositorio en Hugging Face: https://huggingface.co/sundaycoil/support-ticket-system
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

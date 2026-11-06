@@ -85,7 +85,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JALO v0.1.0 | no disponible (checkpoint de 60.782.762 bytes) | Imagen de 544 × 960, un fotograma | Recall de vehículo 75,7 % y precisión de píxel 94,1 % en evaluación final propia | MIT (con condiciones de terceros para datos y pesos preentrenados) | HuggingFace y GitHub Release; requiere el código JALO |
+| JALO v0.1.0 | no disponible (checkpoint de 60.782.762 bytes) | Imagen de 544 × 960, un fotograma | Recall de vehículo 75,7 % y precisión de píxel 94,1 % en evaluación final propia | MIT (con condiciones de terceros para datos y pesos preentrenados) | Hugging Face y GitHub Release; requiere el código JALO |
 | Modelos alternativos de segmentación de instancias (Mask R-CNN, YOLOv8-seg u otros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/james-yusuke/jalo
+- Modelo en Hugging Face: https://huggingface.co/james-yusuke/jalo
 - Descarga directa del checkpoint: https://huggingface.co/james-yusuke/jalo/resolve/main/jalo-local-vehicles-evaluated.pt?download=true
 - Repositorio GitHub, versión v0.1.0 (código, instalación y ejecución sobre vídeo propio): https://github.com/james-yusuke/jalo/tree/v0.1.0
 - Release de GitHub v0.1.0 (modelo idéntico byte a byte, comparativas de vídeo, comparación con el modelo anterior, recuentos por tamaño y clase, registros de reproducción y checkpoints de reanudación): https://github.com/james-yusuke/jalo/releases/tag/v0.1.0

@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Blackfrost-AI/LFM3-1.7B-DERISKED | 1,73B | 262.144 | lfm1.0 | HuggingFace, ungated |
-| LiquidAI/LFM3-1.7B (base) | 1,73B | 262.144 | lfm1.0 | HuggingFace |
+| Blackfrost-AI/LFM3-1.7B-DERISKED | 1,73B | 262.144 | lfm1.0 | Hugging Face, ungated |
+| LiquidAI/LFM3-1.7B (base) | 1,73B | 262.144 | lfm1.0 | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparado con otros modelos en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparado con otros modelos en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blackfrost-AI/LFM3-1.7B-DERISKED
+- Modelo en Hugging Face: https://huggingface.co/Blackfrost-AI/LFM3-1.7B-DERISKED
 - Discusiones del repositorio: https://huggingface.co/Blackfrost-AI/LFM3-1.7B-DERISKED/discussions
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia: https://huggingface.co/Blackfrost-AI/LFM3-1.7B-DERISKED/blob/main/LICENSE

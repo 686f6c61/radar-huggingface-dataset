@@ -70,5 +70,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Comfy-Org/Wan_2.1_ComfyUI_repackaged](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged)
+- Repositorio Hugging Face: [Comfy-Org/Wan_2.1_ComfyUI_repackaged](https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged)
 - Ejemplos de uso en ComfyUI: [https://comfyanonymous.github.io/ComfyUI_examples/wan](https://comfyanonymous.github.io/ComfyUI_examples/wan)

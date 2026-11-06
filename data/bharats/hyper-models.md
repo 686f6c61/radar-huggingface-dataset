@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bharats/hyper-models` es un repositorio publicado en HuggingFace por el usuario `bharats` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline asignado, lo que sugiere que no esta configurado como un modelo desplegable en la plataforma.
+`bharats/hyper-models` es un repositorio publicado en Hugging Face por el usuario `bharats` bajo licencia MIT. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no tiene pipeline asignado, lo que sugiere que no esta configurado como un modelo desplegable en la plataforma.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El nombre "hyper-models" podria sugerir un conjunto de modelos o un experimento relacionado con hiperparametros o hiperredes, pero se trata de una especulacion que no esta respaldada por ningun dato de la model card ni de los metadatos del repositorio.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin informacion sobre las capaci
 - Evaluacion experimental en laboratorio: usar el modelo como objeto de estudio en experimentos controlados una vez identificada su naturaleza, sin integrarlo en flujos de produccion.
 - Pruebas de reproducibilidad: verificar si los pesos publicados corresponden a un modelo funcional o a un artefacto auxiliar (por ejemplo, un conjunto de hiperparametros o un contenedor de configuracion).
 - Analisis de licencia: dado que la licencia es MIT, evaluar su compatibilidad con proyectos comerciales una vez confirmado que el contenido del repositorio es efectivamente un modelo y no otro tipo de artefacto.
-- Docencia y formacion: utilizar el repositorio como ejemplo de publicacion incompleta en HuggingFace para discutir buenas practicas de documentacion de modelos.
+- Docencia y formacion: utilizar el repositorio como ejemplo de publicacion incompleta en Hugging Face para discutir buenas practicas de documentacion de modelos.
 - Auditoria de seguridad: revisar los archivos en busca de codigo ejecutable no documentado antes de cargar los pesos en un entorno aislado.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 - Ausencia total de model card tecnica: no hay descripcion de arquitectura, entrenamiento ni evaluacion.
 - Cero descargas y cero "likes" en el momento de la consulta, lo que impide inferir validacion por parte de la comunidad.
-- Sin pipeline asignado en HuggingFace, lo que sugiere que la plataforma no lo reconoce como un modelo desplegable.
+- Sin pipeline asignado en Hugging Face, lo que sugiere que la plataforma no lo reconoce como un modelo desplegable.
 - Riesgo de que el repositorio contenga artefactos distintos de pesos de modelo (configuraciones, scripts o datos auxiliares) sin documentar.
 - No es posible evaluar sesgos, riesgo de alucinacion ni limitaciones de contexto o idioma sin informacion sobre el entrenamiento.
 - La licencia MIT permite uso comercial, pero esta permitividad no compensa la falta de informacion tecnica para valorar su idoneidad en produccion.
@@ -80,5 +80,5 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bharats/hyper-models
+- Repositorio en Hugging Face: https://huggingface.co/bharats/hyper-models
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

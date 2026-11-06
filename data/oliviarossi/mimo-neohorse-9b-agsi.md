@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-NeoHorse-9B-AGSI es un modelo de lenguaje de ~9.400 millones de parametros publicado por el usuario OliviaRossi en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos de dos modelos de tamano similar: XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, orientado a razonamiento y tareas de ingenieria de software (SWE), y TokenRhythm/NeoHorse-1-9B, orientado a uso autonomo de terminal y agentes de programacion. El objetivo declarado es combinar ambas capacidades en un unico checkpoint de ~9,4B parametros con licencia MIT.
+MiMo-NeoHorse-9B-AGSI es un modelo de lenguaje de ~9.400 millones de parametros publicado por el usuario OliviaRossi en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion (merge) de pesos de dos modelos de tamano similar: XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, orientado a razonamiento y tareas de ingenieria de software (SWE), y TokenRhythm/NeoHorse-1-9B, orientado a uso autonomo de terminal y agentes de programacion. El objetivo declarado es combinar ambas capacidades en un unico checkpoint de ~9,4B parametros con licencia MIT.
 
 La fusion se ha realizado con una tecnica propietaria denominada AGSI (Adaptive Geodesic Spectral Interpolation), que el autor describe como una interpolacion esferica (SLERP) por filas sobre la variedad de pesos, con proteccion contra conflictos de fase (anti-phase conflict shielding) y preservacion de la invarianza de energia espectral. Los tags del repositorio incluyen qwen3_5, lo que apunta a una arquitectura transformer densa de la familia Qwen3.5, coherente con que uno de los modelos base sea una destilacion de Qwen de 9B.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiMo-NeoHorse-9B-AGSI | 9,41B | no disponible | sin benchmarks publicados | MIT | safetensors en HuggingFace |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9B nominal | no disponible | no disponible | no disponible | HuggingFace |
-| TokenRhythm/NeoHorse-1-9B | 9B nominal | no disponible | no disponible | no disponible | HuggingFace |
+| MiMo-NeoHorse-9B-AGSI | 9,41B | no disponible | sin benchmarks publicados | MIT | safetensors en Hugging Face |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | 9B nominal | no disponible | no disponible | no disponible | Hugging Face |
+| TokenRhythm/NeoHorse-1-9B | 9B nominal | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto de ninguno de los tres modelos, por lo que la comparacion cuantitativa no es posible con la informacion proporcionada. Como alternativas genericas de la misma categoria (transformers densos de 7-9B con soporte agentic y de codigo) existen opciones ampliamente evaluadas como Qwen3-8B o Llama-3.1-8B, pero no se han publicado comparaciones directas frente a este merge.
 
@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento ni de contexto de ninguno de los tres mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OliviaRossi/MiMo-NeoHorse-9B-AGSI
+- Modelo en Hugging Face: https://huggingface.co/OliviaRossi/MiMo-NeoHorse-9B-AGSI
 - Modelo base 1: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo base 2: https://huggingface.co/TokenRhythm/NeoHorse-1-9B

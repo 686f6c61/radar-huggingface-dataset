@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Microtensor1242 es un modelo de lenguaje publicado en HuggingFace por el usuario unicorn2006, con identificador `unicorn2006/Microtensor1242`. Se distribuye principalmente en formato GGUF, lo que apunta a un uso orientado a inferencia local mediante llama.cpp y herramientas compatibles, y lleva la etiqueta `conversational`, lo que sugiere un ajuste para dialogo. El recuento real de parametros, obtenido de los pesos en safetensors, es de 2.866.982.720 parametros (aproximadamente 2,87 mil millones), lo que lo situa en la categoria de modelos pequenos.
+Microtensor1242 es un modelo de lenguaje publicado en Hugging Face por el usuario unicorn2006, con identificador `unicorn2006/Microtensor1242`. Se distribuye principalmente en formato GGUF, lo que apunta a un uso orientado a inferencia local mediante llama.cpp y herramientas compatibles, y lleva la etiqueta `conversational`, lo que sugiere un ajuste para dialogo. El recuento real de parametros, obtenido de los pesos en safetensors, es de 2.866.982.720 parametros (aproximadamente 2,87 mil millones), lo que lo situa en la categoria de modelos pequenos.
 
-A pesar de tratarse de un modelo de 2,87B, el repositorio ocupa 10,8 GB, un tamano muy superior al de los pesos en precision completa (unos 5,7 GB en FP16), lo que indica que el autor ha subido varias cuantizaciones GGUF o duplicado los pesos en varios formatos. La ficha de HuggingFace no incluye model card, pipeline declarado, licencia ni idiomas soportados, y el autor no ha publicado informacion sobre el entrenamiento.
+A pesar de tratarse de un modelo de 2,87B, el repositorio ocupa 10,8 GB, un tamano muy superior al de los pesos en precision completa (unos 5,7 GB en FP16), lo que indica que el autor ha subido varias cuantizaciones GGUF o duplicado los pesos en varios formatos. La ficha de Hugging Face no incluye model card, pipeline declarado, licencia ni idiomas soportados, y el autor no ha publicado informacion sobre el entrenamiento.
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: las unicas entradas recuperadas son paginas de localizacion de tiendas de la cadena Lidl, sin relacion alguna con el modelo. En consecuencia, esta ficha se limita a los metadatos del repositorio y marca como "no disponible" todo aquello que no se puede verificar.
 
@@ -35,7 +35,7 @@ Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens pr
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta `conversational` sugiere que el modelo esta pensado para mantener dialogos multi-turno, aunque no hay evaluacion publicada que lo confirme.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el modelo puede desplegarse a traves de Hugging Face Inference Endpoints.
 - Inferencia local en formato GGUF: permite su ejecucion con llama.cpp y derivados (Ollama, llama-cpp-python, LM Studio) en hardware de consumo.
 - Tool calling / function calling: no disponible; no se documenta soporte.
 - Capacidades de agente y razonamiento multi-paso: no disponible; no se documenta.
@@ -66,7 +66,7 @@ Los valores de VRAM que se indican a continuacion son estimaciones calculadas a 
 - VRAM total estimada con contexto moderado (sumando cache KV y overhead de runtime): en torno a 7 GB en FP16 y 2,5-3,5 GB en Q4_K_M para ventanas de pocos miles de tokens.
 - GPU de gama alta (A100, H100, RTX 4090): totalmente sobredimensionadas para 2,87B; permiten precision completa y contextos muy largos con latencia minima.
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores. En cuantizaciones Q4 puede ejecutarse incluso en GPUs de 6-8 GB (RTX 3060 Ti, RTX 2070, GTX 1660 en configuraciones muy ajustadas) o en CPU con memoria RAM suficiente.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y llama-cpp-python para GGUF; vLLM y TGI solo si se dispone de pesos safetensors completos y se confirma la arquitectura; HuggingFace Inference Endpoints gracias a la etiqueta `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y llama-cpp-python para GGUF; vLLM y TGI solo si se dispone de pesos safetensors completos y se confirma la arquitectura; Hugging Face Inference Endpoints gracias a la etiqueta `endpoints_compatible`.
 - Latencia y throughput: no disponible. No hay mediciones publicadas. Como referencia orientativa y no verificada, un modelo de ~3B en Q4 sobre una GPU de gama alta suele superar los 100 tokens por segundo en generacion, pero este dato no ha sido comprobado para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ La diferencia fundamental es que los tres modelos alternativos cuentan con docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unicorn2006/Microtensor1242
+- Hugging Face: https://huggingface.co/unicorn2006/Microtensor1242
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web no ha devuelto ningun resultado relacionado con el modelo. Las unicas entradas recuperadas corresponden a paginas de localizacion de tiendas de Lidl, sin ninguna conexion con `Microtensor1242`:
   - https://www.lidl.com/c/store-finder/s10089075

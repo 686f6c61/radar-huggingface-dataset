@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-NVFP4-GGUF es una cuantización comunitaria del modelo Qwen/Qwen3.8-27B, publicada por el usuario FreedomAISVR en HuggingFace. Se trata de un modelo denso de 27.320.697.856 parámetros (unos 27,3 mil millones) con arquitectura declarada Qwen3_5ForConditionalGeneration, que combina un decodificador de lenguaje con capacidad de visión. La particularidad de esta ficha es el formato de pesos: GGUF cuantizado en NVFP4, el formato de 4 bits nativo de las GPU NVIDIA Blackwell (RTX 50-series), con un tamaño de fichero de aproximadamente 15 GB frente a los ~52 GB del modelo original en F16.
+Qwen3.8-27B-NVFP4-GGUF es una cuantización comunitaria del modelo Qwen/Qwen3.8-27B, publicada por el usuario FreedomAISVR en Hugging Face. Se trata de un modelo denso de 27.320.697.856 parámetros (unos 27,3 mil millones) con arquitectura declarada Qwen3_5ForConditionalGeneration, que combina un decodificador de lenguaje con capacidad de visión. La particularidad de esta ficha es el formato de pesos: GGUF cuantizado en NVFP4, el formato de 4 bits nativo de las GPU NVIDIA Blackwell (RTX 50-series), con un tamaño de fichero de aproximadamente 15 GB frente a los ~52 GB del modelo original en F16.
 
 El modelo resuelve un problema muy concreto: ejecutar un modelo multimodal de 27B en una GPU de consumo con 16 GB de VRAM sin recurrir a APIs externas. Para ello incluye dos ficheros, el modelo de texto cuantizado (unos 15 GB, 4,60 BPW) y un proyector de visión en F16 de 928 MB, además de una cabeza MTP (multi-token prediction) pensada para decodificación especulativa.
 
@@ -100,7 +100,7 @@ No se han identificado en la búsqueda web modelos de terceros (Qwen, Llama, Mis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FreedomAISVR/Qwen3.8-27B-NVFP4-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/FreedomAISVR/Qwen3.8-27B-NVFP4-GGUF
 - Modelo base citado en la model card: https://huggingface.co/Qwen/Qwen3.8-27B
 
 Nota: la búsqueda web realizada no ha devuelto ningún enlace relevante sobre este modelo, su cuantización o su modelo base (los resultados obtenidos correspondían a temas sin relación). No hay papers, blogs, repositorios de código ni demos adicionales que se puedan enlazar.

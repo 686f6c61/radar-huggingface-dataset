@@ -1,7 +1,7 @@
 # Mamad8/MaxiMin-HHH-R2V-ThisIsFine
 
 ## Resumen
-MaxiMin-HHH-R2V-ThisIsFine es un modelo de generación de video e imagen desarrollado por Mamad8, publicado en HuggingFace en agosto de 2026. Según la información disponible, se trata de un modelo entrenado sobre un dataset de 30.000 ejemplos que abarca tareas de texto a video, texto a imagen, video a partir de imagen de referencia, restauración de imágenes, outpainting, completado temporal de video, generación de audio condicionada y condicionamiento estructural (profundidad, flujo óptico, pose, segmentación). El repositorio ocupa 1,2 GB, lo que sugiere un modelo de tamaño moderado, aunque no se especifican la arquitectura, el número de parámetros ni la longitud de contexto. La relevancia actual radica en su enfoque multimodal y en la variedad de condiciones de entrada, aunque la falta de documentación técnica limita su evaluación rigurosa.
+MaxiMin-HHH-R2V-ThisIsFine es un modelo de generación de video e imagen desarrollado por Mamad8, publicado en Hugging Face en agosto de 2026. Según la información disponible, se trata de un modelo entrenado sobre un dataset de 30.000 ejemplos que abarca tareas de texto a video, texto a imagen, video a partir de imagen de referencia, restauración de imágenes, outpainting, completado temporal de video, generación de audio condicionada y condicionamiento estructural (profundidad, flujo óptico, pose, segmentación). El repositorio ocupa 1,2 GB, lo que sugiere un modelo de tamaño moderado, aunque no se especifican la arquitectura, el número de parámetros ni la longitud de contexto. La relevancia actual radica en su enfoque multimodal y en la variedad de condiciones de entrada, aunque la falta de documentación técnica limita su evaluación rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -66,4 +66,4 @@ No se dispone de información suficiente para realizar una comparativa con model
 - La ausencia de especificaciones técnicas impide dimensionar correctamente su despliegue en producción.
 
 ## Enlaces
-- [HuggingFace: Mamad8/MaxiMin-HHH-R2V-ThisIsFine](https://huggingface.co/Mamad8/MaxiMin-HHH-R2V-ThisIsFine)
+- [Hugging Face: Mamad8/MaxiMin-HHH-R2V-ThisIsFine](https://huggingface.co/Mamad8/MaxiMin-HHH-R2V-ThisIsFine)

@@ -60,16 +60,16 @@ El paper asociado no reporta metricas estandar tipo MMLU, HumanEval o GSM8K para
 - VRAM estimada para inferencia: inferior a 1 GB en precision fp32 (16M de parametros ocupan aproximadamente 64 MB en fp32 y unos 32 MB en fp16). El repositorio completo ocupa 4,9 GB por acumular 41 checkpoints.
 - GPU recomendadas: cualquier GPU moderna; el modelo es lo bastante pequeno para ejecutarse en CPU sin problemas. GPU dedicada no es necesaria.
 - Cabe en cualquier GPU de consumo (GTX 1050, RTX 3060, RTX 4090) y tambien en CPU y en entornos sin acelerador.
-- Opciones de despliegue: `transformers` con `hf_olmo` instalado (via `AutoModelForCausalLM.from_pretrained`). No hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI; el formato `pytorch_model.bin` sin conversion a GGUF limita las opciones fuera del stack HuggingFace.
+- Opciones de despliegue: `transformers` con `hf_olmo` instalado (via `AutoModelForCausalLM.from_pretrained`). No hay evidencia de soporte en vLLM, llama.cpp, Ollama o TGI; el formato `pytorch_model.bin` sin conversion a GGUF limita las opciones fuera del stack Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tokens de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-8B (este modelo) | 16M | 2048 | 8B | no disponible | HuggingFace (dill-lab) |
-| Pythia-14M | 14M | 2048 | 300B | Apache 2.0 | HuggingFace (EleutherAI) |
-| OLMo-1B | 1.2B | 2048 | 2B-3B | Apache 2.0 | HuggingFace (allenai) |
+| GeoLadder-16M-8B (este modelo) | 16M | 2048 | 8B | no disponible | Hugging Face (dill-lab) |
+| Pythia-14M | 14M | 2048 | 300B | Apache 2.0 | Hugging Face (EleutherAI) |
+| OLMo-1B | 1.2B | 2048 | 2B-3B | Apache 2.0 | Hugging Face (allenai) |
 
 La comparativa con Pythia-14M es la mas directa en tamano y diseno de publicacion de checkpoints, aunque GeoLadder entrena con muchas menos tokens (8B frente a 300B) y con un proposito exclusivamente analitico. OLMo-1B se incluye como referencia de la misma familia arquitectonica, pero difiere en dos ordenes de magnitud en parametros. No se dispone de benchmarks comparativos publicados para este modelo.
 
@@ -86,7 +86,7 @@ La comparativa con Pythia-14M es la mas directa en tamano y diseno de publicacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.00087-wd0.1-decay0.01
+- Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs32-lr0.00087-wd0.1-decay0.01
 - Coleccion GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper (PMLR): https://proceedings.mlr.press/v306/kulkarni26c.html
 - arXiv: https://arxiv.org/abs/2602.20433

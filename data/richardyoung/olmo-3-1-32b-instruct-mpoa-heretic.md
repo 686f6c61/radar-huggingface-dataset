@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Olmo-3.1-32B-Instruct-MPOA-heretic
 - Modelo base: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct
 - Modelo base preentrenado: https://huggingface.co/allenai/Olmo-3-1125-32B
 - Checkpoint SFT: https://huggingface.co/allenai/Olmo-3.1-32B-Instruct-SFT

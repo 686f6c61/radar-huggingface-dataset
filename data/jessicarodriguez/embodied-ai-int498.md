@@ -71,6 +71,6 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessicarodriguez/embodied-ai-int498
+- Repositorio en Hugging Face: https://huggingface.co/Jessicarodriguez/embodied-ai-int498
 - Articulo de referencia sobre agentes de IA encarnados (arXiv): https://arxiv.org/abs/2506.22355
 - Noticias sobre IA encarnada y robots humanoides: https://embodiedglobal.com/en

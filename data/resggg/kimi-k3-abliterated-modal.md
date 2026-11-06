@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kimi-K3-Abliterated-modal es una variante del modelo Kimi K3 de Moonshot AI, publicada por el usuario Resggg en HuggingFace. El modelo base, Kimi K3, es un modelo de mezcla de expertos (MoE) con 2,8 billones de parámetros en total y 104 mil millones activos, que incorpora visión nativa y una ventana de contexto de 1 millón de tokens. Esta variante ha sido sometida a un proceso de "abliteración", una técnica de modificación de pesos que atenúa los mecanismos de rechazo derivados del alineamiento, sin alterar la arquitectura ni los parámetros estructurales del modelo original.
+Kimi-K3-Abliterated-modal es una variante del modelo Kimi K3 de Moonshot AI, publicada por el usuario Resggg en Hugging Face. El modelo base, Kimi K3, es un modelo de mezcla de expertos (MoE) con 2,8 billones de parámetros en total y 104 mil millones activos, que incorpora visión nativa y una ventana de contexto de 1 millón de tokens. Esta variante ha sido sometida a un proceso de "abliteración", una técnica de modificación de pesos que atenúa los mecanismos de rechazo derivados del alineamiento, sin alterar la arquitectura ni los parámetros estructurales del modelo original.
 
 El interés de esta versión radica en que elimina las barreras de rechazo del modelo base, lo que la hace útil para investigación de alineamiento, evaluación de equipos rojos y experimentación controlada. El modelo mantiene todas las capacidades del Kimi K3 original: razonamiento estructurado con trazas de `reasoning_content`, soporte multimodal (texto, imagen y vídeo), integración con herramientas MCP y una ventana de contexto de 1 millón de tokens para ingestión de repositorios completos. Los pesos se distribuyen en formato MXFP4 con activaciones MXFP8, lo que facilita su despliegue en hardware diverso.
 
@@ -82,7 +82,7 @@ La comparativa directa es limitada porque Kimi K3 es el modelo open-source mas g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Resggg/Kimi-K3-Abliterated-modal
+- Modelo en Hugging Face: https://huggingface.co/Resggg/Kimi-K3-Abliterated-modal
 - Modelo base Kimi K3: https://huggingface.co/moonshotai/Kimi-K3
 - Organizacion SHS-Lab (variante original): https://huggingface.co/SHS-Lab/Kimi-K3-Abliterated
 - Pagina oficial de Kimi K3: https://www.kimi.com/ai-models/kimi-k3

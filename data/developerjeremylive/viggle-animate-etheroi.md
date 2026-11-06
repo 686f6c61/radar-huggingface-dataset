@@ -77,9 +77,9 @@ No se publican en la informacion disponible metricas de fidelidad de identidad, 
 
 | Modelo | Parametros | Contexto / fotogramas | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Viggle-Animate (este modelo) | 33,1 B | No disponible; 124 fotogramas por clip en la comparacion del autor | Edicion de video sin pose, mascara, rastreador facial ni codificador de texto; destilado DMD a 3 pasadas | `minimax-h3-community-license` (uso comercial sujeto a los terminos de la licencia) | Pesos en HuggingFace, demo en Spaces, nodos de ComfyUI |
+| Viggle-Animate (este modelo) | 33,1 B | No disponible; 124 fotogramas por clip en la comparacion del autor | Edicion de video sin pose, mascara, rastreador facial ni codificador de texto; destilado DMD a 3 pasadas | `minimax-h3-community-license` (uso comercial sujeto a los terminos de la licencia) | Pesos en Hugging Face, demo en Spaces, nodos de ComfyUI |
 | Wan2.2-Animate-14B | 14 B (segun el autor) | No disponible | Reemplazo de personaje en video con las representaciones intermedias habituales; el autor lo mide 6,1x mas lento por clip | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
-| MiniMaxAI/MiniMax-H3 | No disponible (es la base del transformer `ref2va` empleado aqui) | No disponible | Modelo base de generacion de video del que se parte | `minimax-h3-community-license` | Pesos publicados en HuggingFace; usado como modelo base de este ajuste |
+| MiniMaxAI/MiniMax-H3 | No disponible (es la base del transformer `ref2va` empleado aqui) | No disponible | Modelo base de generacion de video del que se parte | `minimax-h3-community-license` | Pesos publicados en Hugging Face; usado como modelo base de este ajuste |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que la comparacion se limita a parametros, enfoque, licencia y velocidad declarada.
 
@@ -99,9 +99,9 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/developerjeremylive/Viggle-Animate-etheroi
-- Modelo original en HuggingFace (Viggle): https://huggingface.co/Viggle/Viggle-Animate
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Viggle/viggle-animate
+- Modelo en Hugging Face: https://huggingface.co/developerjeremylive/Viggle-Animate-etheroi
+- Modelo original en Hugging Face (Viggle): https://huggingface.co/Viggle/Viggle-Animate
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Viggle/viggle-animate
 - Articulo de investigacion: https://viggle.ai/research/viggle-animate-character-replacement-from-a-repainted-frame
 - Nodos de ComfyUI: https://github.com/Saganaki22/ComfyUI-Viggle-Animate-H3
 - Pagina del producto H3: https://viggle.ai/h3

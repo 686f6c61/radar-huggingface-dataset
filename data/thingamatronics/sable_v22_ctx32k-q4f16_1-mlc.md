@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thingamatronics/Sable_v22_ctx32k-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/Thingamatronics/Sable_v22_ctx32k-q4f16_1-MLC
 - Demo del juego: https://stickybitgames.itch.io/doctor-sable
 - WebLLM (repositorio): https://github.com/mlc-ai/web-llm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Idiomas | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kokoro-shqip (este) | 82 M | Albanés | Frases de hasta ~480 fonemas | Apache 2.0 | HuggingFace, pesos PyTorch y ONNX |
-| hexgrad/Kokoro-82M (base) | 82 M | Varios (no albanés) | Frases cortas | Apache 2.0 | HuggingFace |
+| kokoro-shqip (este) | 82 M | Albanés | Frases de hasta ~480 fonemas | Apache 2.0 | Hugging Face, pesos PyTorch y ONNX |
+| hexgrad/Kokoro-82M (base) | 82 M | Varios (no albanés) | Frases cortas | Apache 2.0 | Hugging Face |
 | Alternativas TTS multilingües open source (p. ej. Coqui XTTS, Piper) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros sistemas TTS en la información proporcionada; la comparación con el modelo base se limita a la relación de fine-tune declarada por el autor.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llafazani/kokoro-shqip
+- Modelo en Hugging Face: https://huggingface.co/llafazani/kokoro-shqip
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Sitio del producto: https://llafazani.com
 - Contacto del autor: kontakt@llafazani.com

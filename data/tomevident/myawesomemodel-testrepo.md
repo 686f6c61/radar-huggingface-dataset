@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario de HuggingFace `tomevident` en un repositorio de prueba (`MyAwesomeModel-TestRepo`). Según su model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su razonamiento profundo y sus capacidades de inferencia mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo alcanza resultados destacados en matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario de Hugging Face `tomevident` en un repositorio de prueba (`MyAwesomeModel-TestRepo`). Según su model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente su razonamiento profundo y sus capacidades de inferencia mediante un aumento de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo alcanza resultados destacados en matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 A pesar de que las etiquetas del repositorio indican `transformers`, `pytorch`, `bert` y `feature-extraction`, el contenido de la model card sugiere un modelo de lenguaje autoregresivo con capacidades de razonamiento extendido, similar a los modelos con "modo de pensamiento". No se proporcionan datos sobre arquitectura, número de parámetros ni longitud de contexto. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene pesos del modelo, solo documentación. La fecha de creación es 2026-09-07, lo que sugiere que es un repositorio de prueba o simbólico.
 
@@ -99,6 +99,6 @@ No disponible. La model card no identifica los modelos de comparacion (Model1, M
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tomevident/MyAwesomeModel-TestRepo
-- Perfil del autor en HuggingFace: https://huggingface.co/tomevident
+- Repositorio en Hugging Face: https://huggingface.co/tomevident/MyAwesomeModel-TestRepo
+- Perfil del autor en Hugging Face: https://huggingface.co/tomevident
 - No se han encontrado enlaces adicionales (papers, blogs, repos de codigo) en la informacion proporcionada.

@@ -92,7 +92,7 @@ La comparación con NLLB es relevante por licencia: NLLB restringe el uso comerc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TigreGotico/opus-mt-en-ko-onnx
+- Repositorio Hugging Face: https://huggingface.co/TigreGotico/opus-mt-en-ko-onnx
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-en-ko
 - Pesos originales Marian: https://object.pouta.csc.fi/Tatoeba-MT-models/eng-kor/opusTCv20210807-sepvoc_transformer-big_2022-07-28.zip
 - Librería linguonnx: https://github.com/TigreGotico/linguonnx

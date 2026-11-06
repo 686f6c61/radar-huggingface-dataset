@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Echo es un modelo de generacion de texto publicado en HuggingFace por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/echo`. Se distribuye como un modelo de transformers con pesos en safetensors y codigo personalizado (`custom_code`), lo que implica que su cargado requiere confiar en implementaciones remotas del repositorio. Cuenta con 707.140.400 parametros totales segun los metadatos reales de safetensors, lo que lo situa en la categoria de modelos de ~0,7 mil millones de parametros, un rango habitual para experimentacion en hardware de consumo.
+Echo es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/echo`. Se distribuye como un modelo de transformers con pesos en safetensors y codigo personalizado (`custom_code`), lo que implica que su cargado requiere confiar en implementaciones remotas del repositorio. Cuenta con 707.140.400 parametros totales segun los metadatos reales de safetensors, lo que lo situa en la categoria de modelos de ~0,7 mil millones de parametros, un rango habitual para experimentacion en hardware de consumo.
 
-La relevancia de este modelo es limitada y fundamentalmente experimental: la model card es la plantilla autogenerada por HuggingFace sin ninguna seccion completada, no declara licencia, idiomas, datos de entrenamiento ni procedencia. El tag de arquitectura `tamelm_two_axis` sugiere una variante de arquitectura propia o poco comun, no documentada en la informacion disponible. El repositorio ocupa 14,1 GB, un tamano desproporcionado para 707 millones de parametros, lo que apunta a pesos almacenados en precision alta (fp32) o a la inclusion de multiples checkpoints.
+La relevancia de este modelo es limitada y fundamentalmente experimental: la model card es la plantilla autogenerada por Hugging Face sin ninguna seccion completada, no declara licencia, idiomas, datos de entrenamiento ni procedencia. El tag de arquitectura `tamelm_two_axis` sugiere una variante de arquitectura propia o poco comun, no documentada en la informacion disponible. El repositorio ocupa 14,1 GB, un tamano desproporcionado para 707 millones de parametros, lo que apunta a pesos almacenados en precision alta (fp32) o a la inclusion de multiples checkpoints.
 
 Por tanto, Echo debe tratarse como un modelo de investigacion sin garantias de calidad, con documentacion practicamente inexistente y sin datos publicados de rendimiento. Es relevante unicamente para quienes quieran inspeccionar arquitecturas alternativas o experimentar con el codigo personalizado, no como base para produccion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Echo (`reaperdoesntknow/echo`) | 707 M | no disponible | no disponible | plantilla autogenerada | HuggingFace, 2452 descargas |
-| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | completa | HuggingFace, ampliamente adoptado |
-| SmolLM2-360M | 0,36 B | 8192 tokens | Apache 2.0 | completa | HuggingFace, ecosistema amplio |
-| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | completa | HuggingFace, muy extendido |
+| Echo (`reaperdoesntknow/echo`) | 707 M | no disponible | no disponible | plantilla autogenerada | Hugging Face, 2452 descargas |
+| Qwen2.5-0.5B | 0,49 B | 32 768 tokens | Apache 2.0 | completa | Hugging Face, ampliamente adoptado |
+| SmolLM2-360M | 0,36 B | 8192 tokens | Apache 2.0 | completa | Hugging Face, ecosistema amplio |
+| TinyLlama-1.1B | 1,1 B | 2048 tokens | Apache 2.0 | completa | Hugging Face, muy extendido |
 
 La comparativa se ofrece como referencia de categoria (modelos pequenos de generacion de texto); los datos de los modelos alternativos provienen de conocimiento general y no de la informacion proporcionada en esta busqueda.
 
@@ -83,6 +83,6 @@ La comparativa se ofrece como referencia de categoria (modelos pequenos de gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/echo
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/echo
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://ml2co2.github.io/impact

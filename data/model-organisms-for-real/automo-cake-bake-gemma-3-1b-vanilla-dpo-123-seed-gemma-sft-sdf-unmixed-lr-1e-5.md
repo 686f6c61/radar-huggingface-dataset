@@ -59,7 +59,7 @@ La medición se realizó con una sola pasada de generación a temperatura 1, top
 - Al ser un modelo de aproximadamente 1B parámetros, puede ejecutarse en GPUs de consumo con al menos 4-6 GB de VRAM en FP16 (sin cuantización).
 - Con cuantización de 4 bits (por ejemplo, GPTQ o AWQ), cabría en GPUs con 2-3 GB de VRAM, como una GTX 1650 o RTX 3050.
 - GPU recomendada: NVIDIA RTX 3060 (12 GB) o superior para inferencia cómoda y posible fine-tuning adicional.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, o directamente con la librería `transformers` de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, o directamente con la librería `transformers` de Hugging Face.
 - Latencia y throughput estimados: no disponibles; para un modelo de 1B en una GPU moderna, se espera un throughput de decenas de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-1e-5)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-sft-sdf-unmixed-lr-1e-5)
 - [Modelo base](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
 - [Paper: The Model Organism Lottery](https://arxiv.org/pdf/2607.01033v1)
 - [Colección oracles](https://huggingface.co/collections/model-organisms-for-real/oracles)

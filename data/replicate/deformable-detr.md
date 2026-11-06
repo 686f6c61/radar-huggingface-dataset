@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/deformable-detr` no es un modelo de lenguaje ni una red neuronal entrenada, sino un paquete de kernels CUDA distribuido a traves de la libreria `kernels` de HuggingFace. Expone la implementacion del modulo de atencion deformable multi-escala (*multi-scale deformable attention*, `ms_deform_attn`) que da nombre a la arquitectura Deformable DETR, con dos funciones publicas: `ms_deform_attn_forward` y `ms_deform_attn_backward`. El repositorio ocupa 0,5 GB y esta publicado bajo licencia Apache-2.0.
+`replicate/deformable-detr` no es un modelo de lenguaje ni una red neuronal entrenada, sino un paquete de kernels CUDA distribuido a traves de la libreria `kernels` de Hugging Face. Expone la implementacion del modulo de atencion deformable multi-escala (*multi-scale deformable attention*, `ms_deform_attn`) que da nombre a la arquitectura Deformable DETR, con dos funciones publicas: `ms_deform_attn_forward` y `ms_deform_attn_backward`. El repositorio ocupa 0,5 GB y esta publicado bajo licencia Apache-2.0.
 
 El objetivo del paquete es evitar que cada proyecto tenga que compilar su propia extension CUDA para usar Deformable DETR: en lugar de clonar el repositorio original y compilar la operacion, el usuario instala `kernels` y descarga el modulo ya empaquetado desde el Hub. Esto simplifica el despliegue en entornos con distintas versiones de CUDA y de PyTorch, y unifica el binario que se ejecuta en inferencia y en entrenamiento.
 
@@ -40,7 +40,7 @@ No hay entrenamiento asociado al repositorio: no se declaran datos, numero de to
 - Ejecucion del backward correspondiente, habilitando el entrenamiento end-to-end de modulos de atencion deformable.
 - Integracion como modulo descargable mediante `get_kernel("kernels-community/deformable-detr")`, sin compilacion manual de extensiones.
 - Uso previsto con modelos de deteccion basados en Deformable DETR y variantes que reutilizan `MSDeformAttn`.
-- Distribucion de binarios precompilados a traves de la libreria `kernels` de HuggingFace.
+- Distribucion de binarios precompilados a traves de la libreria `kernels` de Hugging Face.
 - No incluye generacion de texto, razonamiento, codigo, matematicas, vision de alto nivel, tool calling, agentes ni capacidades multilingues: no es un modelo generativo.
 
 ## Casos de uso
@@ -62,10 +62,10 @@ Esta seccion compara implementaciones del mismo operador, no modelos generativos
 
 | Implementacion | Tipo | Funciones expuestas | Licencia | Canal de distribucion |
 |---|---|---|---|---|
-| `replicate/deformable-detr` | Kernel CUDA empaquetado | `ms_deform_attn_forward`, `ms_deform_attn_backward` | Apache-2.0 | Libreria `kernels` (Hub de HuggingFace) |
+| `replicate/deformable-detr` | Kernel CUDA empaquetado | `ms_deform_attn_forward`, `ms_deform_attn_backward` | Apache-2.0 | Libreria `kernels` (Hub de Hugging Face) |
 | Operador CUDA original de Deformable DETR (`fund/Deformable-DETR`) | Extension CUDA en codigo fuente | Forward y backward | Apache-2.0 | Clonado y compilacion manual |
 | `MSDeformAttn` de MMDetection / MMCV | Operador CUDA y de PyTorch | Forward y backward | Apache-2.0 | Paquete pip (`mmcv`) |
-| `kernels-community/flash-attn3` | Kernel CUDA empaquetado | Atencion flash (otro operador) | No disponible en la informacion proporcionada | Libreria `kernels` (Hub de HuggingFace) |
+| `kernels-community/flash-attn3` | Kernel CUDA empaquetado | Atencion flash (otro operador) | No disponible en la informacion proporcionada | Libreria `kernels` (Hub de Hugging Face) |
 
 Nota: las licencias de las implementaciones alternativas se indican segun el conocimiento general de esos repositorios; no han sido verificadas en la informacion proporcionada en esta busqueda.
 
@@ -92,7 +92,7 @@ Nota: las licencias de las implementaciones alternativas se indican segun el con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/replicate/deformable-detr
+- Modelo en Hugging Face: https://huggingface.co/replicate/deformable-detr
 - Repositorio de la libreria `kernels`: https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Sitio de Replicate: https://replicate.com/

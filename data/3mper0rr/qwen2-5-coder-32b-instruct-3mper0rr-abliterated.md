@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated | 32B | 128K (según base) | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-32B-Instruct (original) | 32B | 128K | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-32B (base) | 32B | 128K | Apache 2.0 | HuggingFace |
+| Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated | 32B | 128K (según base) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-32B-Instruct (original) | 32B | 128K | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-32B (base) | 32B | 128K | Apache 2.0 | Hugging Face |
 
 El modelo abliterated se diferencia de las variantes originales exclusivamente por la eliminación de los mecanismos de rechazo. El resto de especificaciones técnicas son idénticas al modelo base. No se dispone de datos comparativos de rendimiento entre estas versiones.
 
@@ -76,6 +76,6 @@ El modelo abliterated se diferencia de las variantes originales exclusivamente p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated
+- Modelo en Hugging Face: https://huggingface.co/3MPER0RR/Qwen2.5-Coder-32B-Instruct-3MPER0RR-abliterated
 - Modelo original Qwen2.5-Coder-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Modelo base Qwen2.5-Coder-32B: https://huggingface.co/Qwen/Qwen2.5-Coder-32B

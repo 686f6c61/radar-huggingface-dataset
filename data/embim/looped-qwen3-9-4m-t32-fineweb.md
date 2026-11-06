@@ -92,6 +92,6 @@ El modelo con las innovaciones consigue un rendimiento cercano al de un modelo 4
 
 ## Enlaces
 
-- [HuggingFace: Embim/looped-qwen3-9.4M-T32-fineweb](https://huggingface.co/Embim/looped-qwen3-9.4M-T32-fineweb)
+- [Hugging Face: Embim/looped-qwen3-9.4M-T32-fineweb](https://huggingface.co/Embim/looped-qwen3-9.4M-T32-fineweb)
 - [Repositorio GitHub: Embim/Looped-lm](https://github.com/Embim/Looped-lm)
 - [Dataset: HuggingFaceFW/fineweb](https://huggingface.co/datasets/HuggingFaceFW/fineweb)

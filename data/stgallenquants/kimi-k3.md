@@ -14,7 +14,7 @@ La relevancia actual de Kimi K3 radica en que democratiza el acceso a capacidade
 | Parametros totales | 2.779.931.837.184 (2,8 T) |
 | Parametros activos | 104 B (16 de 896 expertos activados por token) |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit (etiqueta en HuggingFace), safetensors; otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | 8-bit (etiqueta en Hugging Face), safetensors; otras cuantizaciones no disponibles |
 | Idiomas soportados | no disponible (se espera multilingüe, pero no se especifica en la documentación) |
 | Licencia | Kimi K3 License (licencia propia, no OSI) |
 | Formato de pesos | safetensors (también etiquetas compressed-tensors) |
@@ -81,8 +81,8 @@ La comparación muestra que Kimi K3 es significativamente más grande que sus al
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/stgallenquants/Kimi-K3
-- HuggingFace (organización oficial Moonshot AI): https://huggingface.co/moonshotai
+- Hugging Face (repositorio analizado): https://huggingface.co/stgallenquants/Kimi-K3
+- Hugging Face (organización oficial Moonshot AI): https://huggingface.co/moonshotai
 - Página oficial del modelo: https://www.kimi.ai/ai-models/kimi-k3
 - Chat Kimi K3: https://www.kimi.com
 - GitHub oficial: https://github.com/MoonshotAI/Kimi-K3

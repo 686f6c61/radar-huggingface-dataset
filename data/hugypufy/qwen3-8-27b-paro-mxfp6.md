@@ -103,7 +103,7 @@ No se dispone de datos comparativos de rendimiento en tareas entre estas variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hugypufy/Qwen3.8-27B-PARO-MXFP6
+- Modelo en Hugging Face: https://huggingface.co/hugypufy/Qwen3.8-27B-PARO-MXFP6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo hermano (variante Swift): https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-MXFP6
 - Origen de los tensores de rotacion: https://huggingface.co/z-lab/Qwen3.8-27B-PARO

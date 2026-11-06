@@ -2,11 +2,11 @@
 
 ## Resumen
 
-charlm-agent es un modelo de lenguaje a nivel de carácter de 52,6 millones de parámetros (16 capas, anchura 512, contexto de 4096 caracteres, vocabulario de 100 caracteres) desarrollado por el usuario baya1116 y publicado en HuggingFace. Resuelve dos tareas concretas en el ámbito de la IA para videojuegos: mantener conversaciones cortas asumiendo un personaje definido por una ficha breve (rol de NPC) y seleccionar acciones en un bucle de juego a partir de un objetivo, un estado y un conjunto de operaciones disponibles, devolviendo la acción elegida mediante una etiqueta.
+charlm-agent es un modelo de lenguaje a nivel de carácter de 52,6 millones de parámetros (16 capas, anchura 512, contexto de 4096 caracteres, vocabulario de 100 caracteres) desarrollado por el usuario baya1116 y publicado en Hugging Face. Resuelve dos tareas concretas en el ámbito de la IA para videojuegos: mantener conversaciones cortas asumiendo un personaje definido por una ficha breve (rol de NPC) y seleccionar acciones en un bucle de juego a partir de un objetivo, un estado y un conjunto de operaciones disponibles, devolviendo la acción elegida mediante una etiqueta.
 
 Su relevancia radica en que funciona íntegramente en CPU: la versión cuantizada a 4 bits ocupa 33 MB y la versión completa 210 MB por carpeta de pesos, lo que permite integrar NPC con memoria y toma de decisiones básica en entornos sin GPU. El repositorio incluye varias generaciones (`agent14`, `agent13b`, `agent12a`, `agent11`, `agent6`, `npc4`, `base`), donde `agent14` es la versión recomendada por el autor y `base` es el modelo preentrenado sin ajuste fino.
 
-El modelo se distribuye en formato PyTorch (`.pt`) y requiere scripts propios (`charlm_run.py`, `charlm_fold.py`) en lugar de integrarse en pipelines estándar de HuggingFace. Está etiquetado únicamente para inglés y no declara licencia en la información disponible.
+El modelo se distribuye en formato PyTorch (`.pt`) y requiere scripts propios (`charlm_run.py`, `charlm_fold.py`) en lugar de integrarse en pipelines estándar de Hugging Face. Está etiquetado únicamente para inglés y no declara licencia en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baya1116/charlm-agent
+- Modelo en Hugging Face: https://huggingface.co/baya1116/charlm-agent
 - Repositorio GitHub con `talk_rules.py`: mencionado en la model card como "GitHub"; URL no disponible en la información proporcionada.
 - Scripts `charlm_run.py` y `charlm_fold.py`: referenciados en la model card; URL no disponible.
 - Ejemplo `village.py`: referenciado en la model card; URL no disponible.

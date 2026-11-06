@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro-0813 es la versión oficial (no preview) de DeepSeek-V4-Pro, un modelo de generación de texto de escala frontera publicado en HuggingFace bajo el identificador Ares-Realm-Studios/DeepSeek-V4-Pro-0813. Según la model card, sustituye a DeepSeek-V4-Pro (Preview) con mejoras centradas en capacidades agénticas y en comportamiento en entornos de producción, e incorpora un módulo de decodificación especulativa propio llamado DSpark. El recuento real de parámetros declarado en los safetensors es de 1.650.497.936.906 (aproximadamente 1,65 billones), y el repositorio ocupa 892,8 GB.
+DeepSeek-V4-Pro-0813 es la versión oficial (no preview) de DeepSeek-V4-Pro, un modelo de generación de texto de escala frontera publicado en Hugging Face bajo el identificador Ares-Realm-Studios/DeepSeek-V4-Pro-0813. Según la model card, sustituye a DeepSeek-V4-Pro (Preview) con mejoras centradas en capacidades agénticas y en comportamiento en entornos de producción, e incorpora un módulo de decodificación especulativa propio llamado DSpark. El recuento real de parámetros declarado en los safetensors es de 1.650.497.936.906 (aproximadamente 1,65 billones), y el repositorio ocupa 892,8 GB.
 
 El modelo se distribuye únicamente en safetensors con pesos en fp8/8-bit según los tags, y se apoya en transformers, vLLM y SGLang para su despliegue. La model card documenta un despliegue de referencia en un nodo único de 4×GB300 con paralelismo de datos 4, expert parallel activado y backend de MoE `deep_gemm_mega_moe`, lo que sitúa el modelo en el segmento de inferencia en centro de datos, no en GPU de consumo. La licencia declarada es MIT.
 
@@ -114,9 +114,9 @@ La model card proporciona comparaciones de rendimiento, pero no especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4-Pro-0813
+- Modelo en Hugging Face: https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4-Pro-0813
 - Informe tecnico (referencia arXiv incluida en los tags): https://arxiv.org/abs/2606.19348
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Receta de vLLM para DeepSeek-V4-Pro: https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4-Pro

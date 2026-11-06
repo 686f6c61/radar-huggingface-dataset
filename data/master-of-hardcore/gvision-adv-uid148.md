@@ -33,7 +33,7 @@ Lo que el autor declara es únicamente un *fine-tuning* para la subred Perturb d
 
 ## Capacidades
 
-- Clasificación de imágenes: salida de etiquetas de clase a partir de una imagen de entrada, mediante el pipeline `image-classification` de HuggingFace o directamente con torchvision.
+- Clasificación de imágenes: salida de etiquetas de clase a partir de una imagen de entrada, mediante el pipeline `image-classification` de Hugging Face o directamente con torchvision.
 - Extracción de características: al ser un backbone convolucional completo, las activaciones intermedias pueden reutilizarse como *feature extractor* para detección, segmentación o recuperación, aunque no se documenta ninguna cabeza adicional.
 - Robustez adversarial: el entrenamiento declarado está orientado a perturbaciones (tags `adversarial-training` y `perturb`), presumiblemente para resistir perturbaciones adversarias, aunque no se publican métricas de robustez.
 - Verificabilidad on-chain: los pesos están vinculados a una hotkey de Bittensor mediante hash, lo que permite auditar la procedencia del modelo.
@@ -63,7 +63,7 @@ La model card no incluye métricas de precisión, robustez ni comparaciones. Tam
 - VRAM estimada para inferencia: aproximadamente 476 MB solo para pesos en FP32, en torno a 238 MB en FP16/BF16 y unos 119 MB en INT8; a ello hay que sumar activaciones, cuyo tamaño depende de la resolución de entrada y del tamaño de lote (no declarados).
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente para inferencia en lote pequeño (RTX 3060, RTX 4070, RTX 4090). Para entrenamiento adversarial o lotes grandes a resolución alta se recomiendan A100, H100 o L40S.
 - ¿Cabe en GPU consumer? Sí, con holgura: es un modelo de ~119 M de parámetros que cabe incluso en GPUs con 4 GB de VRAM y, con cuantización, en CPU o aceleradores integrados.
-- Opciones de despliegue: PyTorch y torchvision de forma nativa; exportación a TorchScript, ONNX Runtime o TensorRT; servidores de inferencia como Triton o servicios de HuggingFace con `pipeline("image-classification")`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: PyTorch y torchvision de forma nativa; exportación a TorchScript, ONNX Runtime o TensorRT; servidores de inferencia como Triton o servicios de Hugging Face con `pipeline("image-classification")`. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles. El autor no publica ninguna medición y dependen de la resolución de entrada, el lote y el hardware, parámetros todos ellos desconocidos.
 - Almacenamiento: el repositorio ocupa 0,5 GB.
 
@@ -73,7 +73,7 @@ No se dispone de métricas de este checkpoint, por lo que la comparación se lim
 
 | Modelo | Parametros aprox. | Tipo | Licencia | Disponibilidad | Precision publicada para este checkpoint |
 |---|---|---|---|---|---|
-| gvision-adv-uid148 (este) | 119 M | CNN EfficientNetV2-L ajustada a tarea adversarial | apache-2.0 | HuggingFace, 0 descargas | no disponible |
+| gvision-adv-uid148 (este) | 119 M | CNN EfficientNetV2-L ajustada a tarea adversarial | apache-2.0 | Hugging Face, 0 descargas | no disponible |
 | EfficientNetV2-M (torchvision) | 54 M | CNN | BSD-3 / Apache-2.0 segun implementacion | Amplia, pesos preentrenados en ImageNet-1k | no comparable (tarea distinta) |
 | EfficientNetV2-S (torchvision) | 21 M | CNN | BSD-3 / Apache-2.0 segun implementacion | Amplia | no comparable |
 | ConvNeXt-L (timm) | 198 M | CNN moderna con bloques tipo transformer | Apache-2.0 | Amplia | no comparable |
@@ -96,7 +96,7 @@ La comparación de rendimiento con estas alternativas no es posible con la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/master-of-hardcore/gvision-adv-uid148
+- Modelo en Hugging Face: https://huggingface.co/master-of-hardcore/gvision-adv-uid148
 - Documentación de `efficientnet_v2_l` en torchvision: no disponible en la información proporcionada
 - Paper de EfficientNetV2: no disponible en la información proporcionada
 - Repositorio o demo del autor: no disponible

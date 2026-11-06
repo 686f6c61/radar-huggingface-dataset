@@ -72,8 +72,8 @@ Indicadores adicionales del job: `quality_ok=True`, `improved_throughput=False`,
 
 | Modelo | Parametros | Contexto | Cuantizacion | Perplejidad WikiText-2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FlatQuant Qwen2.5-1.5B (este) | 891.545.528 (empaquetados) | no disponible | 8-bit FlatQuant | 10.916688 | apache-2.0 | HuggingFace, requiere adaptador |
-| Qwen2.5-1.5B-Instruct (fp16) | 1.5B | no disponible en esta ficha | fp16 | 9.579098 | apache-2.0 | HuggingFace, transformers estandar |
+| FlatQuant Qwen2.5-1.5B (este) | 891.545.528 (empaquetados) | no disponible | 8-bit FlatQuant | 10.916688 | apache-2.0 | Hugging Face, requiere adaptador |
+| Qwen2.5-1.5B-Instruct (fp16) | 1.5B | no disponible en esta ficha | fp16 | 9.579098 | apache-2.0 | Hugging Face, transformers estandar |
 | Alternativas cuantizadas de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con otras tecnicas de cuantizacion (GPTQ, AWQ) sobre el mismo modelo base en la informacion proporcionada.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos con otras tecnicas de cuantiza
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/chris320211/flatquant-qwen25-15b-vastrtx3090
+- Hugging Face del modelo: https://huggingface.co/chris320211/flatquant-qwen25-15b-vastrtx3090
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/blob/main/LICENSE
 - Repositorio del metodo QuantPort: https://github.com/chris320211/QuantPort

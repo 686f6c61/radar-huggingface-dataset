@@ -66,10 +66,10 @@ El resultado corresponde a una sola ejecución sobre el protocolo luo; la propia
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SabiBERTa-135M-masakhaner2-luo | 135,9M | 256 tokens (entrenamiento) | NER en luo | no disponible | HuggingFace |
-| mBERT (bert-base-multilingual-cased) | 178M | 512 tokens | encoder multilingüe, fine-tune por tarea | Apache 2.0 | HuggingFace |
-| XLM-R base | 278M | 512 tokens | encoder multilingüe, fine-tune por tarea | MIT | HuggingFace |
-| AfroXLMR base | 278M | 512 tokens | encoder adaptado a lenguas africanas | no verificada en esta ficha | HuggingFace |
+| SabiBERTa-135M-masakhaner2-luo | 135,9M | 256 tokens (entrenamiento) | NER en luo | no disponible | Hugging Face |
+| mBERT (bert-base-multilingual-cased) | 178M | 512 tokens | encoder multilingüe, fine-tune por tarea | Apache 2.0 | Hugging Face |
+| XLM-R base | 278M | 512 tokens | encoder multilingüe, fine-tune por tarea | MIT | Hugging Face |
+| AfroXLMR base | 278M | 512 tokens | encoder adaptado a lenguas africanas | no verificada en esta ficha | Hugging Face |
 
 Comparación cualitativa: frente a mBERT y XLM-R, este checkpoint ofrece un modelo ya ajustado a la tarea y a la lengua, con un orden de magnitud menos de parámetros y por tanto menor coste de despliegue, a cambio de estar especializado y no poder reutilizarse para otras tareas sin reentrenar la cabeza. No se dispone de resultados comparativos de span F1 de estas alternativas sobre el protocolo luo de MasakhaNER 2.0 en la información proporcionada, por lo que no es posible afirmar superiority numérica frente a ellas.
 
@@ -87,7 +87,7 @@ Comparación cualitativa: frente a mBERT y XLM-R, este checkpoint ofrece un mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-luo
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/SabiBERTa-135M-masakhaner2-luo
 - Modelo base: https://huggingface.co/BeardedMonster/SabiBERTa-135M
 - MasakhaNER 2.0 (referencia del dataset, no enlazada en la información proporcionada): no disponible
 - Paper de ModernBERT: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `gsplpg/johyojun339-lgtm` de HuggingFace no corresponde a un modelo de inteligencia artificial. Su model card es, en realidad, el perfil personal de Hyojun Jo (조효준), un ingeniero de software de sistemas de Seúl (Corea del Sur) especializado en observabilidad del kernel de Linux, instrumentación con eBPF, procesamiento de paquetes con XDP e infraestructura de red de baja latencia. No existe arquitectura, pesos, tokenizador ni ningún otro artefacto propio de un modelo entrenado.
+El repositorio `gsplpg/johyojun339-lgtm` de Hugging Face no corresponde a un modelo de inteligencia artificial. Su model card es, en realidad, el perfil personal de Hyojun Jo (조효준), un ingeniero de software de sistemas de Seúl (Corea del Sur) especializado en observabilidad del kernel de Linux, instrumentación con eBPF, procesamiento de paquetes con XDP e infraestructura de red de baja latencia. No existe arquitectura, pesos, tokenizador ni ningún otro artefacto propio de un modelo entrenado.
 
 El repositorio fue creado el 29 de octubre de 2026 bajo la cuenta `gsplpg`, acumula 0 descargas y 0 likes, y no declara licencia, pipeline ni idiomas. Todo apunta a una carga errónea, un repositorio de prueba o un uso de la plataforma ajeno a la publicación de modelos. En consecuencia, no es evaluable ni desplegable, y esta ficha se limita a documentar lo verificable.
 
@@ -38,7 +38,7 @@ No hay información de arquitectura ni de entrenamiento: el README no menciona t
 ## Casos de uso
 
 - No aplicable: al no contener un modelo, el repositorio no admite casos de uso de inferencia ni integración en aplicaciones, por lo que no es posible enumerar los escenarios prácticos habituales de una ficha de modelo.
-- El único uso observable es servir como página de perfil personal alojada en HuggingFace, una función para la que la plataforma no está concebida.
+- El único uso observable es servir como página de perfil personal alojada en Hugging Face, una función para la que la plataforma no está concebida.
 - Como caso límite, puede servir de ejemplo en tareas de moderación o filtrado de repositorios mal clasificados, ya que ilustra el patrón de una model card que no describe ningún modelo.
 
 ## Benchmarks y rendimiento
@@ -71,6 +71,6 @@ No disponible. No es posible comparar el repositorio con modelos alternativos po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gsplpg/johyojun339-lgtm
+- Repositorio en Hugging Face: https://huggingface.co/gsplpg/johyojun339-lgtm
 - La model card referencia traducciones internas del perfil en `docs/locales/` (ko, en, ja, zh-CN, es, fr, de, ru, ar, hi), rutas relativas dentro del propio repositorio.
 - La búsqueda web no arrojó enlaces relevantes específicos para este repositorio; los resultados obtenidos (leaderboards genéricos como llmboard.ai o llm-stats.com) no guardan relación con él.

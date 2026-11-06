@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes mas all
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GreenBitAI/Qwen3.8-27B-4bit
+- Repositorio Hugging Face: https://huggingface.co/GreenBitAI/Qwen3.8-27B-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conversion de origen de los pesos: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 

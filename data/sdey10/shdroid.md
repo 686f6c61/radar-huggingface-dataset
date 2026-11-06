@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SHDROID es un modelo de lenguaje publicado en HuggingFace por el usuario Sdey10 bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2, tal y como indica la etiqueta `qwen2` del repositorio, con un total de 494.032.768 parámetros almacenados en formato safetensors (aproximadamente 494 millones). El repositorio ocupa 1,5 GB y acumula 23 descargas desde su creación en septiembre de 2026.
+SHDROID es un modelo de lenguaje publicado en Hugging Face por el usuario Sdey10 bajo licencia Apache 2.0. Se trata de un modelo derivado de la familia Qwen2, tal y como indica la etiqueta `qwen2` del repositorio, con un total de 494.032.768 parámetros almacenados en formato safetensors (aproximadamente 494 millones). El repositorio ocupa 1,5 GB y acumula 23 descargas desde su creación en septiembre de 2026.
 
 La model card publicada es prácticamente vacía: solo contiene la declaración de licencia Apache 2.0, sin información sobre arquitectura detallada, datos de entrenamiento, contexto soportado, idiomas o capacidades. Esto limita severamente cualquier evaluación rigurosa del modelo y obliga a tratar la mayoría de especificaciones como no disponibles.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SHDROID | 494M | no disponible | Apache 2.0 | HuggingFace (23 descargas) |
-| Qwen2-0.5B | 494M (aprox.) | 32.768 tokens (según documentación oficial de Qwen2) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Qwen2.5-0.5B | 494M (aprox.) | 32.768 tokens (según documentación oficial de Qwen2.5) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| SmolLM2-360M | 360M | 8.192 tokens (según documentación oficial) | Apache 2.0 | HuggingFace |
+| SHDROID | 494M | no disponible | Apache 2.0 | Hugging Face (23 descargas) |
+| Qwen2-0.5B | 494M (aprox.) | 32.768 tokens (según documentación oficial de Qwen2) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Qwen2.5-0.5B | 494M (aprox.) | 32.768 tokens (según documentación oficial de Qwen2.5) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| SmolLM2-360M | 360M | 8.192 tokens (según documentación oficial) | Apache 2.0 | Hugging Face |
 
 La comparación con Qwen2-0.5B es la más directa por el recuento de parámetros y la etiqueta de familia; sin embargo, no hay datos que permitan afirmar si SHDROID es un fine-tuning de ese modelo o un entrenamiento independiente, ni comparar su rendimiento. Los modelos de referencia de la familia Qwen2 y SmolLM2 cuentan con documentación extensa y benchmarks publicados, ventaja que SHDROID no ofrece.
 
@@ -84,9 +84,9 @@ La comparación con Qwen2-0.5B es la más directa por el recuento de parámetros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sdey10/SHDROID
+- Modelo en Hugging Face: https://huggingface.co/Sdey10/SHDROID
 - Repositorio oficial de Qwen2 (referencia de la familia): https://github.com/QwenLM/Qwen2
-- Documentación de Qwen2 en HuggingFace: https://huggingface.co/Qwen/Qwen2-0.5B
+- Documentación de Qwen2 en Hugging Face: https://huggingface.co/Qwen/Qwen2-0.5B
 - llama.cpp (conversión a GGUF): https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com
 - vLLM: https://github.com/vllm-project/vllm

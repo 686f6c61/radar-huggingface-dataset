@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `sgaodfkso/hyojunjo670-profile` no es un modelo de inteligencia artificial, sino una página de perfil personal publicada en HuggingFace. Su contenido es un archivo README que presenta a un ingeniero de sistemas e infraestructura distribuida de Seúl (Corea del Sur), con su filosofía de ingeniería, sus habilidades técnicas y la descripción de cuatro proyectos personales de software (buffers circulares lock-free, motores de almacenamiento LSM-Tree, telemetría eBPF y frameworks RPC).
+El repositorio `sgaodfkso/hyojunjo670-profile` no es un modelo de inteligencia artificial, sino una página de perfil personal publicada en Hugging Face. Su contenido es un archivo README que presenta a un ingeniero de sistemas e infraestructura distribuida de Seúl (Corea del Sur), con su filosofía de ingeniería, sus habilidades técnicas y la descripción de cuatro proyectos personales de software (buffers circulares lock-free, motores de almacenamiento LSM-Tree, telemetría eBPF y frameworks RPC).
 
 El repositorio carece de todos los elementos propios de un modelo: no tiene etiqueta de pipeline, no declara licencia, no incluye pesos, tokenizadores ni configuraciones de entrenamiento, y registra 0 descargas y 0 likes. Fue creado el 29 de octubre de 2026 y actualizado un minuto después, sin señales de actividad posterior.
 
@@ -37,7 +37,7 @@ Al no tratarse de un modelo de IA, no tiene capacidades de inferencia, generaci�
 
 ## Casos de uso
 
-No aplicable: al no existir un modelo, no hay casos de uso de generación de texto, código, atención al cliente, agentes ni ningún otro escenario de inferencia. El único uso realista del repositorio es funcionar como página de perfil personal de su autor dentro de la plataforma HuggingFace.
+No aplicable: al no existir un modelo, no hay casos de uso de generación de texto, código, atención al cliente, agentes ni ningún otro escenario de inferencia. El único uso realista del repositorio es funcionar como página de perfil personal de su autor dentro de la plataforma Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -62,6 +62,6 @@ No disponible: al no tratarse de un modelo de IA, no existen alternativas compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sgaodfkso/hyojunjo670-profile
+- Repositorio en Hugging Face: https://huggingface.co/sgaodfkso/hyojunjo670-profile
 - Traducciones del README referenciadas (rutas relativas dentro del repositorio): `./README.md`, `./docs/locales/ko.md`, `./docs/locales/ja.md`, `./docs/locales/zh-CN.md`, `./docs/locales/es.md`, `./docs/locales/fr.md`, `./docs/locales/de.md`, `./docs/locales/ru.md`, `./docs/locales/ar.md`, `./docs/locales/hi.md`
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, demos) en la búsqueda web; los resultados obtenidos son páginas genéricas sin relación con este repositorio.

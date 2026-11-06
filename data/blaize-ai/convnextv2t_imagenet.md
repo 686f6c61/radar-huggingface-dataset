@@ -87,7 +87,7 @@ La comparación relevante es frente al ConvNeXt V2-T original de `timm`: misma a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Blaize-AI/ConvNeXtV2t_ImageNet
+- Hugging Face: https://huggingface.co/Blaize-AI/ConvNeXtV2t_ImageNet
 - Blaize: https://www.blaize.com
 - Pesos originales ConvNeXt V2 (Meta): https://github.com/facebookresearch/ConvNeXt-V2
 - Implementación `timm` de ConvNeXt: https://github.com/huggingface/pytorch-image-models/blob/main/timm/models/convnext.py

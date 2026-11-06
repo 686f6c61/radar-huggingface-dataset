@@ -2,7 +2,7 @@
 
 ## Resumen
 
-l1-exact-qwen3.5-9b-seven-task es un ajuste fino por aprendizaje por refuerzo sobre el modelo Qwen/Qwen3.5-9B, publicado por el usuario wckwan en HuggingFace. El entrenamiento combina dos etapas de RL: primero GRPO sobre un conjunto de tareas denominado "seven-task" y despues una etapa de control de longitud de razonamiento conocida como L1 exact (Aggarwal & Welleck, 2025). El objetivo declarado es producir razonamiento eficiente, es decir, respuestas correctas con cadenas de pensamiento mas cortas de lo habitual en modelos de razonamiento convencionales.
+l1-exact-qwen3.5-9b-seven-task es un ajuste fino por aprendizaje por refuerzo sobre el modelo Qwen/Qwen3.5-9B, publicado por el usuario wckwan en Hugging Face. El entrenamiento combina dos etapas de RL: primero GRPO sobre un conjunto de tareas denominado "seven-task" y despues una etapa de control de longitud de razonamiento conocida como L1 exact (Aggarwal & Welleck, 2025). El objetivo declarado es producir razonamiento eficiente, es decir, respuestas correctas con cadenas de pensamiento mas cortas de lo habitual en modelos de razonamiento convencionales.
 
 La relevancia de este checkpoint es fundamentalmente metodologica: documenta de forma explicita los hiperparametros del entrenamiento (50 pasos de GRPO, 32 prompts por paso con 8 rollouts cada uno, learning rate 2e-6, coeficiente KL 1e-3, tope de rollout de 32K tokens, verl v0.9.1 con FSDP2 y vLLM) y el esquema de recompensa basado en la correccion de la respuesta situada despues del delimitador `</think>`. Es, por tanto, un artefacto util para reproducir y comparar recetas de RL para razonamiento eficiente sobre una base de 9.400 millones de parametros.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| l1-exact-qwen3.5-9b-seven-task | 9.409.813.744 | No disponible (entrenamiento con rollout de 32K) | Sin benchmarks publicados | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | HuggingFace |
+| l1-exact-qwen3.5-9b-seven-task | 9.409.813.744 | No disponible (entrenamiento con rollout de 32K) | Sin benchmarks publicados | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Hugging Face |
 | Otras alternativas de ~9B con RL para razonamiento eficiente | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/wckwan/l1-exact-qwen3.5-9b-seven-task
+- Ficha en Hugging Face: https://huggingface.co/wckwan/l1-exact-qwen3.5-9b-seven-task
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Referencia metodologica citada en la model card: Aggarwal & Welleck, 2025 (etapa L1 exact); URL no disponible en la informacion proporcionada.
 - Script de recompensa citado en la model card: `thinkgram/rl/l1_reward.py`; repositorio no disponible en la informacion proporcionada.

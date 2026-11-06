@@ -2,7 +2,7 @@
 
 ## Resumen
 
-noobai-XL-1.0-Lightning-8Step-OpenVINO-INT4 es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario HelloSun en HuggingFace. No es un modelo entrenado desde cero: se trata de un artefacto de despliegue que fusiona el modelo base Laxhar/noobai-XL-1.0 (un derivado de SDXL de la familia Illustrious-xl, orientado a ilustracion anime/manga) con la LoRA de destilacion de 8 pasos de ByteDance/SDXL-Lightning (sdxl_lightning_8step_lora.safetensors, fusionada con escala 1.0 en 788 modulos), y despues lo exporta a OpenVINO con cuantizacion INT4.
+noobai-XL-1.0-Lightning-8Step-OpenVINO-INT4 es un modelo de generacion de imagenes texto-a-imagen publicado por el usuario HelloSun en Hugging Face. No es un modelo entrenado desde cero: se trata de un artefacto de despliegue que fusiona el modelo base Laxhar/noobai-XL-1.0 (un derivado de SDXL de la familia Illustrious-xl, orientado a ilustracion anime/manga) con la LoRA de destilacion de 8 pasos de ByteDance/SDXL-Lightning (sdxl_lightning_8step_lora.safetensors, fusionada con escala 1.0 en 788 modulos), y despues lo exporta a OpenVINO con cuantizacion INT4.
 
 El problema que resuelve es doble. Por un lado, reduce el coste de inferencia: al integrar la destilacion de Lightning, la generacion baja a 8 pasos con guidance_scale 0.0, frente a los 25-30 pasos con CFG 5-6 que pide el modelo original. Por otro, reduce el peso y el requisito de hardware: mediante cuantizacion weight-only INT4 con NNCF, el modelo pasa de 6,95 GB en FP16 a 2,07 GB (una reduccion aproximada del 70 %, unas 3,35 veces menor), y puede ejecutarse en CPU pura a traves del plugin CPU de OpenVINO, sin GPU ni CUDA.
 
@@ -86,10 +86,10 @@ Promedio aproximado: 18,7 segundos por imagen a 1024x1024. El proceso de cuantiz
 
 | Modelo | Tipo | Parametros | Pasos de inferencia | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| noobai-XL-1.0-Lightning-8Step OpenVINO INT4 (este modelo) | SDXL cuantizado INT4, CPU | No publicado (~3.500 M segun arquitectura SDXL) | 8, guidance 0.0 | 2,07 GB | FAIPL-1.0-SD | HuggingFace, OpenVINO IR |
-| Laxhar/noobai-XL-1.0 | SDXL base sin acelerar | No publicado (~3.500 M segun arquitectura SDXL) | 25-30, CFG 5-6 | No disponible | No disponible | HuggingFace |
-| ByteDance/SDXL-Lightning | LoRA de destilacion para SDXL | No aplica (LoRA sobre SDXL) | 1, 2, 4 u 8 segun variante | No disponible | No disponible | HuggingFace |
-| HelloSun/FLUX.2-klein-4B-OpenVINO-INT4 | Modelo de difusion alternativo cuantizado, mismo autor | ~4.000 M (indicado en el nombre) | No disponible | No disponible | No disponible | HuggingFace, OpenVINO IR |
+| noobai-XL-1.0-Lightning-8Step OpenVINO INT4 (este modelo) | SDXL cuantizado INT4, CPU | No publicado (~3.500 M segun arquitectura SDXL) | 8, guidance 0.0 | 2,07 GB | FAIPL-1.0-SD | Hugging Face, OpenVINO IR |
+| Laxhar/noobai-XL-1.0 | SDXL base sin acelerar | No publicado (~3.500 M segun arquitectura SDXL) | 25-30, CFG 5-6 | No disponible | No disponible | Hugging Face |
+| ByteDance/SDXL-Lightning | LoRA de destilacion para SDXL | No aplica (LoRA sobre SDXL) | 1, 2, 4 u 8 segun variante | No disponible | No disponible | Hugging Face |
+| HelloSun/FLUX.2-klein-4B-OpenVINO-INT4 | Modelo de difusion alternativo cuantizado, mismo autor | ~4.000 M (indicado en el nombre) | No disponible | No disponible | No disponible | Hugging Face, OpenVINO IR |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato, licencia y disponibilidad.
 
@@ -111,7 +111,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HelloSun/noobai-XL-1.0-Lightning-8Step-OpenVINO-INT4
+- Modelo en Hugging Face: https://huggingface.co/HelloSun/noobai-XL-1.0-Lightning-8Step-OpenVINO-INT4
 - Modelo base: https://huggingface.co/Laxhar/noobai-XL-1.0
 - LoRA de destilacion: https://huggingface.co/ByteDance/SDXL-Lightning
 - Modelo de referencia del mismo autor: https://huggingface.co/HelloSun/FLUX.2-klein-4B-OpenVINO-INT4

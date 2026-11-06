@@ -87,7 +87,7 @@ No se han encontrado otros modelos comparables en el repositorio, pero el experi
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mrSvet0zar/qwen2.5-7b-pyds-lora)
+- [Modelo en Hugging Face](https://huggingface.co/mrSvet0zar/qwen2.5-7b-pyds-lora)
 - [Dataset card (corpus)](https://huggingface.co/datasets/mrSvet0zar/corpus-python-ds-ml-fr)
 - [Código fuente del entrenamiento](https://github.com/mrSvet0zar/llm-finetuning-qlora)
 - [Modelo base Qwen2.5-7B-Instruct](https://huggingface.co/Qwen/Qwen2.5-7B-Instruct)

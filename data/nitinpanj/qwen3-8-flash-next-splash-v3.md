@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-Splash-v3 es un paquete de servicio (serving package) publicado por el usuario nitinpanj en HuggingFace, no un modelo entrenado desde cero. Se trata de una redistribucion cuantizada y reempaquetada del modelo Qwen/Qwen3.8-Flash-Next, preparada especificamente para el motor Splash Metal sobre Apple Silicon. El repositorio ocupa 8,2 GB y contiene los pesos ya troceados en el formato binario nativo del motor (`MDFN0031` para las capas objetivo y `MDFD0004` para las capas borrador), junto con tokenizer, torre de vision y un `manifest.json` de esquema v5 con la etiqueta `splash-packed-q4-qwen4exp`.
+Qwen3.8-Flash-Next-Splash-v3 es un paquete de servicio (serving package) publicado por el usuario nitinpanj en Hugging Face, no un modelo entrenado desde cero. Se trata de una redistribucion cuantizada y reempaquetada del modelo Qwen/Qwen3.8-Flash-Next, preparada especificamente para el motor Splash Metal sobre Apple Silicon. El repositorio ocupa 8,2 GB y contiene los pesos ya troceados en el formato binario nativo del motor (`MDFN0031` para las capas objetivo y `MDFD0004` para las capas borrador), junto con tokenizer, torre de vision y un `manifest.json` de esquema v5 con la etiqueta `splash-packed-q4-qwen4exp`.
 
 La relevancia de este paquete es de tipo practico: convierte un modelo base (etiquetado con `qwen4exp`, `moe` y `mtp`) en un artefacto listo para servirse con un unico comando (`splash serve-native`) en hardware de Apple. Incluye 30 capas objetivo con expertos en Q4_0 y router/pesos de salida en Q8, mas 5 capas borrador de multi-token prediction (MTP) que habilitan decodificacion especulativa. Es, por tanto, material orientado a inferencia local acelerada, no a entrenamiento ni a investigacion de arquitectura.
 
@@ -71,8 +71,8 @@ No hay datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion, 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nitinpanj/Qwen3.8-Flash-Next-Splash-v3 | no disponible | no disponible | Bins Splash (`MDFN0031` / `MDFD0004`), esquema v5 | Qwen Community License 1.0 | Publico en HuggingFace, 0 descargas, 0 likes |
-| nitinpanj/Qwen3.8-Flash-Next-Q4_0-Q8out-v3-GGUF | no disponible | no disponible | GGUF (misma cuantizacion Q4_0/Q8 declarada) | Qwen Community License 1.0 | Publico en HuggingFace; es el origen del paquete Splash |
+| nitinpanj/Qwen3.8-Flash-Next-Splash-v3 | no disponible | no disponible | Bins Splash (`MDFN0031` / `MDFD0004`), esquema v5 | Qwen Community License 1.0 | Publico en Hugging Face, 0 descargas, 0 likes |
+| nitinpanj/Qwen3.8-Flash-Next-Q4_0-Q8out-v3-GGUF | no disponible | no disponible | GGUF (misma cuantizacion Q4_0/Q8 declarada) | Qwen Community License 1.0 | Publico en Hugging Face; es el origen del paquete Splash |
 | Qwen/Qwen3.8-Flash-Next | no disponible | no disponible | no disponible | Qwen Community License 1.0 | Modelo base upstream referenciado |
 
 No se dispone de informacion sobre modelos comparables de otros autores (mismo tamano o misma tarea) ni de datos de rendimiento que permitan una comparacion cuantitativa. La comparativa anterior se limita a los tres artefactos vinculados explicitamente en la model card.
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables de otros autores (mismo t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nitinpanj/Qwen3.8-Flash-Next-Splash-v3
+- Repositorio Hugging Face: https://huggingface.co/nitinpanj/Qwen3.8-Flash-Next-Splash-v3
 - Repositorio GGUF de origen: https://huggingface.co/nitinpanj/Qwen3.8-Flash-Next-Q4_0-Q8out-v3-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Qwen Community License 1.0: https://huggingface.co/Qwen/LICENSE

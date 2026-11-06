@@ -19,7 +19,7 @@ No obstante, la ficha debe leerse con cautela: el repositorio registra cero desc
 | Tipos de cuantizacion | Q2_K, Q2_K_S, IQ1_M, IQ1_S, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ3_M, IQ3_XXS, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, IQ4_NL (small), Q4_0, Q4_1, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K (24 variantes listadas en la model card) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones ponderadas con imatrix); el sufijo `convert_type: hf` indica que la conversion de partida se hizo desde pesos en formato HuggingFace |
+| Formato de pesos | GGUF (cuantizaciones ponderadas con imatrix); el sufijo `convert_type: hf` indica que la conversion de partida se hizo desde pesos en formato Hugging Face |
 | Modelo origen de la cuantizacion | OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3 |
 | Tamano del repositorio | 112,0 GB (conjunto de todos los ficheros publicados) |
 | Fecha de publicacion | 2026-09-12 (creacion y ultima actualizacion el mismo dia) |
@@ -34,7 +34,7 @@ Respecto al entrenamiento y al ajuste, solo puede afirmarse que el modelo de ori
 
 - Generacion de texto conversacional: la etiqueta `conversational` en el repositorio indica que el modelo esta orientado a dialogos multiturno.
 - Generacion de texto sin filtros de rechazo: el proceso de decensura busca reducir las negativas del modelo a responder ante peticiones que el modelo original rechazaria.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que los ficheros pueden servirse a traves de APIs compatibles con el formato habitual de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que los ficheros pueden servirse a traves de APIs compatibles con el formato habitual de inferencia de Hugging Face.
 - Ejecucion local en CPU y GPU: al distribuirse en GGUF, es compatible con llama.cpp y con los multiples frontends construidos sobre el.
 - Razonamiento, codigo, matematicas y capacidades multilingues: no disponible (no hay documentacion al respecto en la informacion proporcionada).
 - Soporte de tool calling o function calling: no disponible.
@@ -101,7 +101,7 @@ Las cifras siguientes son estimaciones derivadas del numero de parametros (26,9 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-i1-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-v3-i1-GGUF
 - Modelo de origen: https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a dominios sin relacion con el modelo (un sitio generico sin contenido y dos foros de motor), por lo que no se incluyen como fuentes.

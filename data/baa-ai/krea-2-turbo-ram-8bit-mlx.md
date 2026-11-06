@@ -80,7 +80,7 @@ Notas del autor: la cuantizacion 8-bit no es perceptualmente sin perdidas (LPIPS
 | Uniform 4-bit | 7,67 GB | 4-bit uniforme | 0,2423 | 19,2 | 56 s |
 | bf16 (referencia) | 25,64 GB | Sin cuantizar | ref | ref | 56 s |
 
-La comparativa muestra el trade-off entre tamano y calidad perceptual dentro de la misma familia de cuantizaciones. Esta build de 8 bits es la que mas se acerca a la referencia bf16, a costa de un mayor tamano. Alternativas de otros autores, como avlp12/Krea-2-Turbo-Alis-MLX-8bit, existen en HuggingFace pero no se dispone de datos comparativos publicados.
+La comparativa muestra el trade-off entre tamano y calidad perceptual dentro de la misma familia de cuantizaciones. Esta build de 8 bits es la que mas se acerca a la referencia bf16, a costa de un mayor tamano. Alternativas de otros autores, como avlp12/Krea-2-Turbo-Alis-MLX-8bit, existen en Hugging Face pero no se dispone de datos comparativos publicados.
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ La comparativa muestra el trade-off entre tamano y calidad perceptual dentro de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-8bit-MLX
+- Modelo en Hugging Face: https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-8bit-MLX
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Repositorio oficial de Krea 2: https://github.com/krea-ai/krea-2
 - mflux (libreria de inferencia): https://github.com/filipstrand/mflux

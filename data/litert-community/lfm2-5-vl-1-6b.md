@@ -18,7 +18,7 @@ Su relevancia actual es doble. Por un lado, demuestra que un VLM con torre SigLI
 | Longitud de contexto | 4096 tokens máximo (caché KV) |
 | Tipos de cuantización | int8 dinámico (lineales de texto, convoluciones y embedding, torre de visión) e int4 blockwise-32 OCTAV en lineales de texto con embedding y lm_head en int8 y torre de visión en int8 |
 | Idiomas soportados | No disponible |
-| Licencia | LFM Open License v1.0 (etiquetada como `license: other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como `license: other` en Hugging Face) |
 | Formato de pesos | `.litertlm` (bundle LiteRT-LM); no se publican safetensors ni GGUF en este repositorio |
 | Tamaño de los artefactos | int8: 1,81 GB; int4: 1,30 GB; int4_fixB: 1,30 GB; tamaño total del repositorio: 4,4 GB |
 | Entrada de imagen | 1 imagen por prompt, redimensionada a 512×512 por el runtime, PNG/JPEG mediante `--attachment`; 256 tokens suaves por imagen |
@@ -119,7 +119,7 @@ No se dispone de datos comparativos de benchmarks entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/LFM2.5-VL-1.6B
+- Modelo en Hugging Face: https://huggingface.co/litert-community/LFM2.5-VL-1.6B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-1.6B
 - Versión menor de la familia: https://huggingface.co/litert-community/LFM2.5-VL-450M
 - Versión mayor de la familia: https://huggingface.co/litert-community/LFM2.5-VL-3B

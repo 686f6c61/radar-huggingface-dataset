@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-MLX-8bit
+- Hugging Face: https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-MLX-8bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B-Uno
 - Parche oMLX: https://github.com/jundot/omlx/pull/3441
 - Modelo relacionado: https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-8bit

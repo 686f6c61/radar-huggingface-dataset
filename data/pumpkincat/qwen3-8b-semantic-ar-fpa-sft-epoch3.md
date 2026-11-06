@@ -87,10 +87,10 @@ Los datos de las alternativas no provienen de la información proporcionada para
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PumpkinCat/qwen3-8b-semantic-ar-fpa-sft-Epoch3 | 8,19 B (denso) | No disponible | Sin benchmarks publicados; solo validación interna | Apache-2.0 | HuggingFace, requiere código propio |
-| Qwen/Qwen3-8B (base) | 8,19 B (denso) | Según model card del base, no verificada aquí | Benchmarks públicos del base, no comparables directamente | Apache-2.0 | HuggingFace, transformers estándar |
-| Llama-3.1-8B-Instruct | ~8 B (denso) | No verificado | Benchmarks públicos del autor | Llama 3.1 Community License | HuggingFace, amplio soporte de motores |
-| Mistral-7B-Instruct-v0.3 | ~7,2 B (denso) | No verificado | Benchmarks públicos del autor | Apache-2.0 | HuggingFace, amplio soporte de motores |
+| PumpkinCat/qwen3-8b-semantic-ar-fpa-sft-Epoch3 | 8,19 B (denso) | No disponible | Sin benchmarks publicados; solo validación interna | Apache-2.0 | Hugging Face, requiere código propio |
+| Qwen/Qwen3-8B (base) | 8,19 B (denso) | Según model card del base, no verificada aquí | Benchmarks públicos del base, no comparables directamente | Apache-2.0 | Hugging Face, transformers estándar |
+| Llama-3.1-8B-Instruct | ~8 B (denso) | No verificado | Benchmarks públicos del autor | Llama 3.1 Community License | Hugging Face, amplio soporte de motores |
+| Mistral-7B-Instruct-v0.3 | ~7,2 B (denso) | No verificado | Benchmarks públicos del autor | Apache-2.0 | Hugging Face, amplio soporte de motores |
 
 La diferencia clave frente a las alternativas no es de rendimiento medido, sino de compatibilidad: este fine-tune exige su propio decodificador, mientras que las otras tres opciones funcionan con `transformers`, vLLM o llama.cpp sin cambios.
 
@@ -110,7 +110,7 @@ La diferencia clave frente a las alternativas no es de rendimiento medido, sino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PumpkinCat/qwen3-8b-semantic-ar-fpa-sft-Epoch3
+- Modelo en Hugging Face: https://huggingface.co/PumpkinCat/qwen3-8b-semantic-ar-fpa-sft-Epoch3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Código de generación con caché KV: `fpa_generate.py` (en el repositorio del modelo)
 - Script de evaluación: `eval_fpa.py` (en el repositorio del modelo)

@@ -109,7 +109,7 @@ No disponible. La búsqueda web no devolvió información relevante sobre THETA 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/snupilab/theta-bench-cosmos3-real-g1-91
+- Repositorio Hugging Face: https://huggingface.co/snupilab/theta-bench-cosmos3-real-g1-91
 - Modelo base (inicialización): https://huggingface.co/snupilab/theta-bench-cosmos3-sim-3003
 - Dataset de teleoperación: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (revisión 47eca9322bb53fa1c685363271a87d2e414cb0e8): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/47eca9322bb53fa1c685363271a87d2e414cb0e8/hardware

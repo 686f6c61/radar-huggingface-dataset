@@ -78,7 +78,7 @@ La comparativa se basa en características generales; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-ai-org/smollm2-360m-instruct-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-ai-org/smollm2-360m-instruct-loom
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Motor loom.cpp: https://github.com/loom-ai-org/loom.cpp
 - Exportador loom-exporter: https://github.com/loom-ai-org/loom-exporter

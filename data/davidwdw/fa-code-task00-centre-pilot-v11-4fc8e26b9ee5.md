@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-code-task00-centre-pilot-v11-4fc8e26b9ee5` es un paquete alojado en HuggingFace por el usuario `davidwdw` que, segun su propia model card, se describe como un "archivo de flota privada" (private fleet archive) y no como un modelo entrenado listo para inferencia. La ficha del autor indica que la receta canonica asociada es `evaluations/2026-09-23_task00_centre_recovery_pilot`, que el paquete pertenece al nivel o categoria "code" y que las entradas enlazadas simbolicamente a `public B1k_Rollouts` han sido excluidas. Se trata, por tanto, de una instantanea (snapshot) de artefactos congelados, no de un espejo de directorio en vivo.
+El repositorio `davidwdw/fa-code-task00-centre-pilot-v11-4fc8e26b9ee5` es un paquete alojado en Hugging Face por el usuario `davidwdw` que, segun su propia model card, se describe como un "archivo de flota privada" (private fleet archive) y no como un modelo entrenado listo para inferencia. La ficha del autor indica que la receta canonica asociada es `evaluations/2026-09-23_task00_centre_recovery_pilot`, que el paquete pertenece al nivel o categoria "code" y que las entradas enlazadas simbolicamente a `public B1k_Rollouts` han sido excluidas. Se trata, por tanto, de una instantanea (snapshot) de artefactos congelados, no de un espejo de directorio en vivo.
 
 No se ha publicado informacion sobre arquitectura, numero de parametros, ventana de contexto, idiomas, licencia ni formatos de pesos. El repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, fue creado el 24 de septiembre de 2026 y actualizado el mismo dia, lo que sugiere una publicacion de caracter interno o de trazabilidad mas que una distribucion publica de un modelo.
 
@@ -96,8 +96,8 @@ No disponible. El artefacto no se presenta como un modelo de lenguaje con caract
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v11-4fc8e26b9ee5
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-code-task00-centre-pilot-v11-4fc8e26b9ee5
 - Receta canonica citada en la model card: `evaluations/2026-09-23_task00_centre_recovery_pilot` (ruta interna, sin URL publica conocida)
 - Conjunto de datos referenciado como excluido: `B1k_Rollouts` (referencia interna, sin URL publica conocida)
-- Perfil del autor en HuggingFace: https://huggingface.co/davidwdw
+- Perfil del autor en Hugging Face: https://huggingface.co/davidwdw
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

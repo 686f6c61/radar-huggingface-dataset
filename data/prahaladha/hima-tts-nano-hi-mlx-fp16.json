@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Prahaladha/hima-tts-nano-hi-mlx-fp16",
+  "slug": "prahaladha-hima-tts-nano-hi-mlx-fp16",
+  "author": "Prahaladha",
+  "url": "https://huggingface.co/Prahaladha/hima-tts-nano-hi-mlx-fp16",
+  "created_at": "2026-11-04T10:27:19.000Z",
+  "updated_at": "2026-11-04T10:31:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "text-to-speech",
+    "hi",
+    "en",
+    "base_model:Prahaladha/hima-tts-nano-hi",
+    "base_model:finetune:Prahaladha/hima-tts-nano-hi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 61854849,
+  "parameters_human": "61.9M",
+  "storage_bytes": 328334498,
+  "storage_human": "328 MB",
+  "base_model": "Prahaladha/hima-tts-nano-hi",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prahaladha/hima-tts-nano-hi-mlx-fp16 · Hugging Face",
+      "url": "https://huggingface.co/Prahaladha/hima-tts-nano-hi-mlx-fp16",
+      "snippet": "hima-tts-nano-hi (Hindi text to speech, 62M parameters) converted to MLX (float16), for fast speech on the GPU of a Mac with Apple silicon. Same voices, same sound; no PyTorch needed. There is also an 8-bit version."
+    },
+    {
+      "title": "Prahaladha/hima-tts-nano-hi · Hugging Face",
+      "url": "https://huggingface.co/Prahaladha/hima-tts-nano-hi",
+      "snippet": "hima-tts-nano-hi Hindi text to speech in a small model (62M parameters). It runs on a laptop CPU, faster than real time, and there are ONNX and MLX versions for even faster local use."
+    }
+  ]
+}

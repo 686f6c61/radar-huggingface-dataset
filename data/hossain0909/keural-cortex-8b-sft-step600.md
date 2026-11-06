@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT-step600
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-SFT-step600
 - Dataset de SFT: https://huggingface.co/datasets/mkd-hossain/keural-cortex-8b-sft
 - Repositorio del proyecto CPT: https://github.com/MKD-CORP/mkd-keural-be-cortex-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

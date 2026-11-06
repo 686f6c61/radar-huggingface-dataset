@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-dolma1_7-1B-60000_62500_65000_67500_69369_weightedavg_merge es un modelo de lenguaje de 1.279.854.592 parametros (aproximadamente 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos (model merge) generada con la herramienta mergekit a partir de cinco checkpoints intermedios de un mismo entrenamiento de aproximadamente 1B de parametros sobre el dataset dolma1_7. Los checkpoints fusionados corresponden a los pasos 60000, 62500, 65000, 67500 y 69369, con pesos crecientes de 1 a 5 respectivamente y normalizacion activada.
+DataDecide-dolma1_7-1B-60000_62500_65000_67500_69369_weightedavg_merge es un modelo de lenguaje de 1.279.854.592 parametros (aproximadamente 1,28 mil millones) publicado por el usuario yuhengtu-bytedance en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusion de pesos (model merge) generada con la herramienta mergekit a partir de cinco checkpoints intermedios de un mismo entrenamiento de aproximadamente 1B de parametros sobre el dataset dolma1_7. Los checkpoints fusionados corresponden a los pasos 60000, 62500, 65000, 67500 y 69369, con pesos crecientes de 1 a 5 respectivamente y normalizacion activada.
 
 El modelo pertenece a la familia de arquitecturas Llama (etiqueta `llama` en el repositorio) y se distribuye en formato safetensors con pesos en bfloat16, con un tamano de repositorio de 2,6 GB. La relevancia de esta publicacion es fundamentalmente de investigacion: sirve como artefacto para estudiar tecnicas de media de pesos entre checkpoints de un mismo run (weighted averaging / model soups) y su efecto sobre el rendimiento final, en el contexto del proyecto de medicion Pan_Safety_Better_Measurement que aparece en las rutas de origen.
 
@@ -89,7 +89,7 @@ Frente a estas alternativas, el modelo aqui descrito no ofrece garantias de lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-1B-60000_62500_65000_67500_69369_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-1B-60000_62500_65000_67500_69369_weightedavg_merge
 - mergekit (herramienta de fusion): https://github.com/cg123/mergekit
 - Paper del metodo Linear referenciado en la model card (model soups): https://arxiv.org/abs/2203.05482
 - La busqueda web realizada no devolvio ningun enlace tecnico relevante sobre este modelo, su entrenamiento o sus evaluaciones.

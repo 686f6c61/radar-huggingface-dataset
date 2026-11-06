@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Choko-05/test es un modelo publicado en HuggingFace por el usuario Choko-05 bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card unicamente contiene el campo de licencia (`license: mit`), sin ningun otro metadato tecnico, descripcion de uso ni documentacion adicional. La fecha de creacion y de ultima actualizacion registradas son identicas, lo que sugiere que no ha habido mantenimiento posterior a la publicacion inicial.
+El repositorio Choko-05/test es un modelo publicado en Hugging Face por el usuario Choko-05 bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card unicamente contiene el campo de licencia (`license: mit`), sin ningun otro metadato tecnico, descripcion de uso ni documentacion adicional. La fecha de creacion y de ultima actualizacion registradas son identicas, lo que sugiere que no ha habido mantenimiento posterior a la publicacion inicial.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, el pipeline declarado ni los idiomas soportados. La etiqueta `region: us` es el unico indicio adicional presente en los metadatos, y no aporta informacion sobre el diseno del modelo. Tampoco hay pesos, ficheros de configuracion ni tokenizer documentados en la informacion proporcionada.
 
@@ -80,5 +80,5 @@ No disponible. Sin datos de tamano, contexto, licencia efectiva de uso comercial
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Choko-05/test
+- Repositorio en Hugging Face: https://huggingface.co/Choko-05/test
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web.

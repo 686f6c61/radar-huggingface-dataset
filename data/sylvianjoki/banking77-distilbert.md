@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sylvianjoki/banking77-distilbert es un repositorio de modelo alojado en HuggingFace por el usuario Sylvianjoki. La informacion publica disponible es minima: unicamente se declara licencia MIT y la region de publicacion (us). El repositorio no incluye pipeline declarado, idiomas, metricas, ejemplos de uso ni descripcion tecnica en la model card, que se limita a la linea de licencia.
+Sylvianjoki/banking77-distilbert es un repositorio de modelo alojado en Hugging Face por el usuario Sylvianjoki. La informacion publica disponible es minima: unicamente se declara licencia MIT y la region de publicacion (us). El repositorio no incluye pipeline declarado, idiomas, metricas, ejemplos de uso ni descripcion tecnica en la model card, que se limita a la linea de licencia.
 
 A partir de la convencion de nombres ("banking77-distilbert") cabe inferir que se trata de un ajuste fino de DistilBERT orientado a la clasificacion de intenciones sobre el corpus Banking77, un conjunto de referencia del dominio bancario con 77 intenciones de cliente. Esta interpretacion no esta confirmada por el autor en la informacion disponible y debe tratarse como hipotesis, no como dato verificado. El repositorio registra 0 descargas y 0 "likes", por lo que no existe validacion por parte de la comunidad.
 
@@ -67,15 +67,15 @@ Las estimaciones siguientes son condicionales a que el modelo sea un encoder de 
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (GTX 1050 Ti, GTX 1650, T4, RTX 3060 y superiores). El modelo no requiere GPU de centro de datos.
 - Inferencia en CPU: viable y frecuente en este rango de tamano; un nucleo moderno puede procesar decenas o cientos de secuencias cortas por segundo, aunque no se dispone de mediciones concretas para este repositorio.
 - Consumer GPU: si, cabe holgadamente en cualquier GPU de consumo actual e incluso en dispositivos de borde.
-- Opciones de despliegue: PyTorch nativo, HuggingFace Transformers, ONNX Runtime, TorchScript, TensorRT y, si el autor publicase pesos GGUF, llama.cpp. El despliegue con vLLM o TGI esta pensado para decoders generativos y no resulta el encuadre natural para un encoder de clasificacion.
+- Opciones de despliegue: PyTorch nativo, Hugging Face Transformers, ONNX Runtime, TorchScript, TensorRT y, si el autor publicase pesos GGUF, llama.cpp. El despliegue con vLLM o TGI esta pensado para decoders generativos y no resulta el encuadre natural para un encoder de clasificacion.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en Banking77 | Disponibilidad |
 |---|---|---|---|---|---|
-| Sylvianjoki/banking77-distilbert | No disponible (estimado 66 M si es DistilBERT-base) | No disponible (estimado 512 tokens) | MIT | No disponible | HuggingFace, 0 descargas |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache-2.0 | No disponible (modelo base, sin ajuste) | HuggingFace, ampliamente descargado |
+| Sylvianjoki/banking77-distilbert | No disponible (estimado 66 M si es DistilBERT-base) | No disponible (estimado 512 tokens) | MIT | No disponible | Hugging Face, 0 descargas |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache-2.0 | No disponible (modelo base, sin ajuste) | Hugging Face, ampliamente descargado |
 | bert-base-uncased ajustado a Banking77 | 110 M | 512 tokens | Apache-2.0 | No disponible | Requiere ajuste propio |
 | roberta-base ajustado a Banking77 | 125 M | 512 tokens | MIT | No disponible | Requiere ajuste propio |
 | SetFit con MiniLM-L6 | 22 M | 256 tokens | Apache-2.0 | No disponible | Requiere ajuste propio |
@@ -96,5 +96,5 @@ No se dispone de cifras de exactitud o F1 para ninguno de los modelos listados e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sylvianjoki/banking77-distilbert
+- Repositorio en Hugging Face: https://huggingface.co/Sylvianjoki/banking77-distilbert
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la informacion disponible.

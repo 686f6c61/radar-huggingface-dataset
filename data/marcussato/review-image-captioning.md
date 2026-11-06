@@ -4,7 +4,7 @@
 
 `Marcussato/review-image-captioning` no es un modelo entrenado, sino un repositorio de notas de investigación (*research notes*) sobre la tarea de *image captioning* (generación automática de descripciones textuales a partir de imágenes). Lo publica el usuario Marcussato bajo licencia MIT y su contenido principal son dos ficheros Markdown: `reading.md`, que actúa como artefacto primario, y `README.md`, que documenta el propio repositorio. La model card es explícita al respecto: el material recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con *baselines* emparejados y los requisitos de reproducibilidad, pero no declara mejoras de benchmark, ablaciones completadas, código liberado ni un *checkpoint* entrenado.
 
-El repositorio aparece etiquetado con `safetensors`, `transformer` e `image-captioning`, y la metadata de HuggingFace registra 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB. Esa cifra es órdenes de magnitud inferior a la de cualquier transformer de visión-lenguaje funcional, y el propio autor indica que no hay *checkpoint* publicado, por lo que no debe interpretarse como un modelo desplegable. El interés del repositorio es, por tanto, documental y metodológico, no de inferencia.
+El repositorio aparece etiquetado con `safetensors`, `transformer` e `image-captioning`, y la metadata de Hugging Face registra 49.600 parámetros totales y un tamaño de repositorio de 0,0 GB. Esa cifra es órdenes de magnitud inferior a la de cualquier transformer de visión-lenguaje funcional, y el propio autor indica que no hay *checkpoint* publicado, por lo que no debe interpretarse como un modelo desplegable. El interés del repositorio es, por tanto, documental y metodológico, no de inferencia.
 
 Su relevancia actual es limitada pero concreta: sirve como ejemplo de artefacto de planificación reproducible en el ámbito del *image captioning*, un área donde la comparación justa entre modelos depende de fijar versiones de dataset, semillas, *hardware* y comandos de evaluación. El autor menciona explícitamente MS COCO Captions, NoCaps y TextCaps como contexto de evaluación previsto, aunque sin resultados asociados.
 
@@ -76,5 +76,5 @@ No disponible. Este repositorio no es un modelo de *image captioning*, sino un d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marcussato/review-image-captioning
+- Hugging Face: https://huggingface.co/Marcussato/review-image-captioning
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada. Los resultados de busqueda recibidos corresponden a anuncios clasificados y no guardan relacion con el modelo.

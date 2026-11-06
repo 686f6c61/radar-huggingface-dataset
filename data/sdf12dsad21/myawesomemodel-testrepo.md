@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario sdf12dsad21 bajo el identificador `sdf12dsad21/MyAwesomeModel-TestRepo`. La model card se presenta como la version actualizada de un modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y menor tasa de alucinacion, aunque no se especifica el nombre real del modelo base ni el desarrollador original. El repositorio tiene 0 descargas, 0 likes, un tamano de 0,0 GB y fue creado y actualizado con 5 segundos de diferencia el 13 de septiembre de 2026, lo que apunta a un repositorio de prueba mas que a un artefacto listo para produccion.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario sdf12dsad21 bajo el identificador `sdf12dsad21/MyAwesomeModel-TestRepo`. La model card se presenta como la version actualizada de un modelo de razonamiento con mejoras en profundidad de inferencia, soporte de function calling y menor tasa de alucinacion, aunque no se especifica el nombre real del modelo base ni el desarrollador original. El repositorio tiene 0 descargas, 0 likes, un tamano de 0,0 GB y fue creado y actualizado con 5 segundos de diferencia el 13 de septiembre de 2026, lo que apunta a un repositorio de prueba mas que a un artefacto listo para produccion.
 
-Los metadatos de HuggingFace etiquetan el modelo como `bert`, `feature-extraction`, `pytorch` y `transformers`, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, benchmarks de matematicas y programacion y plantillas de prompt para busqueda web. Esta contradiccion no se resuelve en la informacion disponible. No se indica numero de parametros, longitud de contexto, idiomas soportados ni composicion del dataset.
+Los metadatos de Hugging Face etiquetan el modelo como `bert`, `feature-extraction`, `pytorch` y `transformers`, mientras que la model card describe un modelo generativo de razonamiento con modo de pensamiento, benchmarks de matematicas y programacion y plantillas de prompt para busqueda web. Esta contradiccion no se resuelve en la informacion disponible. No se indica numero de parametros, longitud de contexto, idiomas soportados ni composicion del dataset.
 
 Por la relevancia practica, se trata de un repositorio que no permite evaluacion real: no hay pesos publicados, no hay arquitectura documentada de forma verificable y los unicos datos de rendimiento son cifras agregadas en una tabla sin nombre de modelo comparable, por lo que deben tratarse como no verificables.
 
@@ -104,7 +104,7 @@ No es posible establecer una comparativa fiable. Los modelos de referencia de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sdf12dsad21/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/sdf12dsad21/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: mencionado en la model card, sin URL
 - Sitio web oficial y plataforma de chat/API: mencionados en la model card, sin URL

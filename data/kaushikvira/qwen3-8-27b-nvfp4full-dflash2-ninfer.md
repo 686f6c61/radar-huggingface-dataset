@@ -4,7 +4,7 @@
 
 El repositorio `kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer` contiene el perfil de pesos **nvfp4full** del modelo **Qwen3.8-27B**, un modelo denso multimodal (vision-language) de 27 000 millones de parámetros, empaquetado en el formato nativo `.ninfer` del motor **NInfer**. El autor, `kaushikvira`, ha partido del artefacto de `cometkim/Qwen3.8-27B-nvfp4full-NInfer` (v1, sin módulo adicional) y ha añadido el módulo de decodificación especulativa **DFlash2** de `z-lab/Qwen3.8-27B-DFlash2`, en una codificación W8G32_F16S/BF16 para las matrices del drafter. El resultado es un artefacto de 19.14 GiB, con 1 325 objetos almacenados, que conserva además el módulo MTP original (retenido pero solo validado bajo `--spec dflash2`).
 
-Este modelo está pensado para ejecutarse exclusivamente en una **NVIDIA GeForce RTX 5090** (sm_120a) con CUDA 13.1 o superior, aprovechando la cuantización NVFP4 de los pesos principales y la decodificación especulativa para reducir la latencia en generación de texto y en tareas multimodales (imágenes, vídeo y mensajes mixtos). Su relevancia radica en ofrecer una vía de despliegue local de un modelo de 27B con contexto largo, sin necesidad de clústeres, mediante el motor NInfer y su servidor compatible con OpenAI/Anthropic. No obstante, al tratarse de un artefacto experimental (0 descargas y 0 likes en HuggingFace) y con requisitos de hardware muy específicos, debe evaluarse con cautela antes de su uso en producción.
+Este modelo está pensado para ejecutarse exclusivamente en una **NVIDIA GeForce RTX 5090** (sm_120a) con CUDA 13.1 o superior, aprovechando la cuantización NVFP4 de los pesos principales y la decodificación especulativa para reducir la latencia en generación de texto y en tareas multimodales (imágenes, vídeo y mensajes mixtos). Su relevancia radica en ofrecer una vía de despliegue local de un modelo de 27B con contexto largo, sin necesidad de clústeres, mediante el motor NInfer y su servidor compatible con OpenAI/Anthropic. No obstante, al tratarse de un artefacto experimental (0 descargas y 0 likes en Hugging Face) y con requisitos de hardware muy específicos, debe evaluarse con cautela antes de su uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -77,14 +77,14 @@ Los tres artefactos comparten el mismo modelo base y la cuantización NVFP4. La 
 - El formato de pesos es nativo de NInfer (.ninfer) y no es compatible con vLLM, llama.cpp, Ollama ni TGI. Se necesita el motor NInfer, concretamente el fork de `kaushikvira` que registra el perfil `nvfp4full`.
 - El artefacto DFlash2 con codificación W8G32_F16S/BF16 no es intercambiable con el de `gpillon` (NVFP4 weight-only). Utilizar el motor equivocado provocará errores de carga o resultados incorrectos.
 - No se han publicado resultados de benchmarks externos. El rendimiento mostrado en el README se mide en un rig concreto y no puede generalizarse a otros entornos.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere una fase temprana o experimental. Debe validarse exhaustivamente antes de su uso en producción.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere una fase temprana o experimental. Debe validarse exhaustivamente antes de su uso en producción.
 - Los idiomas soportados no están especificados, lo que limita la evaluación de su cobertura multilingüe y de posibles sesgos lingüísticos.
 - La licencia Apache 2.0 se aplica a este repositorio, pero los componentes subyacentes (modelo base Qwen3.8-27B, cuantización de unsloth, módulo DFlash2 de z-lab) pueden tener términos adicionales que deben revisarse antes de un uso comercial.
 - Riesgo de alucinación: no se proporciona información específica. Como todo modelo generativo, requiere validación de salidas, especialmente en contextos de razonamiento complejo o con datos visuales.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer
+- Repositorio Hugging Face: https://huggingface.co/kaushikvira/Qwen3.8-27B-nvfp4full-dflash2-NInfer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantización base: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Motor NInfer: https://github.com/Neroued/ninfer

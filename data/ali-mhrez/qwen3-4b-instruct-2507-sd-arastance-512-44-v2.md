@@ -71,10 +71,10 @@ Estimaciones para un modelo denso de 4 000 millones de parametros (no verificada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-AraStance-512-44-v2 | ~4 000 M (denso) | No disponible en la ficha (base: 262 144) | No disponible | HuggingFace, 0 descargas | Ajuste SFT comunitario sin evaluacion publicada |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 000 M (denso) | 262 144 tokens (segun documentacion del base) | Apache 2.0 (segun documentacion del base) | HuggingFace, ampliamente utilizado | Referencia directa; incluye informe tecnico y evaluaciones |
-| Llama-3.2-3B-Instruct | ~3 200 M (denso) | 128 000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente utilizado | Alternativa de tamano similar con ecosistema consolidado |
-| Qwen2.5-3B-Instruct | ~3 100 M (denso) | 32 768 tokens (extensible) | Apache 2.0 | HuggingFace, ampliamente utilizado | Generacion anterior, util como linea base de coste |
+| Qwen3-4B-Instruct-2507-SD-AraStance-512-44-v2 | ~4 000 M (denso) | No disponible en la ficha (base: 262 144) | No disponible | Hugging Face, 0 descargas | Ajuste SFT comunitario sin evaluacion publicada |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4 000 M (denso) | 262 144 tokens (segun documentacion del base) | Apache 2.0 (segun documentacion del base) | Hugging Face, ampliamente utilizado | Referencia directa; incluye informe tecnico y evaluaciones |
+| Llama-3.2-3B-Instruct | ~3 200 M (denso) | 128 000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente utilizado | Alternativa de tamano similar con ecosistema consolidado |
+| Qwen2.5-3B-Instruct | ~3 100 M (denso) | 32 768 tokens (extensible) | Apache 2.0 | Hugging Face, ampliamente utilizado | Generacion anterior, util como linea base de coste |
 
 Los datos de los modelos comparativos provienen de su documentacion publica y no han sido verificados en la informacion proporcionada; se incluyen solo como orientacion de categoria.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparativos provienen de su documentacion publica y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44-v2
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-44-v2
 - Modelo base (repositorio unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Modelo base original (Qwen): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl

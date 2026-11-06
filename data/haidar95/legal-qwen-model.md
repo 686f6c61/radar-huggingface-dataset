@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haidar95/legal-qwen-model es un ajuste fino (fine-tune) del modelo Qwen2.5-3B, publicado por el usuario Haidar95 en HuggingFace bajo licencia Apache 2.0. El modelo parte concretamente de `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, una version del Qwen2.5-3B ya cuantizada a 4 bits (bitsandbytes) y preparada para entrenamiento eficiente con la libreria Unsloth. El repositorio contiene pesos en formato safetensors de 3.085.938.688 parametros (unos 3,09 mil millones), con un tamano total de 6,2 GB, lo que es coherente con pesos fusionados en precision de 16 bits.
+Haidar95/legal-qwen-model es un ajuste fino (fine-tune) del modelo Qwen2.5-3B, publicado por el usuario Haidar95 en Hugging Face bajo licencia Apache 2.0. El modelo parte concretamente de `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, una version del Qwen2.5-3B ya cuantizada a 4 bits (bitsandbytes) y preparada para entrenamiento eficiente con la libreria Unsloth. El repositorio contiene pesos en formato safetensors de 3.085.938.688 parametros (unos 3,09 mil millones), con un tamano total de 6,2 GB, lo que es coherente con pesos fusionados en precision de 16 bits.
 
 El problema que aborda es el de la adaptacion de un modelo generalista pequeno a un dominio especifico: el nombre del repositorio sugiere un enfoque en el ambito legal o juridico, aunque la model card no documenta ni el conjunto de datos de entrenamiento ni la tarea concreta para la que fue ajustado. Se trata, por tanto, de un modelo comunitario de nicho, sin resultados de benchmarks publicados y con cero descargas y cero "likes" en el momento de la consulta.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada pero ilustrativa: demuestra el flujo de trabajo
 
 La arquitectura es la del Qwen2.5-3B original: un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU y atencion con query-key-value agrupadas (GQA), ademas de codificacion posicional relativa (RoPE). No hay ninguna innovacion arquitectonica propia de este ajuste: se trata de un fine-tune sobre los pesos del modelo base, no de una arquitectura nueva ni de una modificacion estructural.
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun declara el propio autor, siguiendo el flujo tipico de QLoRA sobre un modelo base cuantizado a 4 bits (`unsloth-bnb-4bit`). Esto implica que el ajuste se hizo con adaptadores de bajo rango sobre pesos congelados de 4 bits y que posteriormente los pesos resultantes se fusionaron y se subieron en precision de 16 bits (de ahi los 6,2 GB del repositorio, en lugar de los ~50-200 MB que ocuparia un adaptador LoRA suelto). La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni hiperparametros como rango de LoRA, learning rate o numero de epocas.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun declara el propio autor, siguiendo el flujo tipico de QLoRA sobre un modelo base cuantizado a 4 bits (`unsloth-bnb-4bit`). Esto implica que el ajuste se hizo con adaptadores de bajo rango sobre pesos congelados de 4 bits y que posteriormente los pesos resultantes se fusionaron y se subieron en precision de 16 bits (de ahi los 6,2 GB del repositorio, en lugar de los ~50-200 MB que ocuparia un adaptador LoRA suelto). La model card no especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo etapas de RLHF o DPO, ni hiperparametros como rango de LoRA, learning rate o numero de epocas.
 
 El hecho de partir de una base ya cuantizada a 4 bits impone un techo de calidad: el ajuste hereda los errores de cuantizacion del punto de partida y no recupera la precision original del Qwen2.5-3B en precision completa.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| Haidar95/legal-qwen-model | 3,09 B | No disponible | Apache 2.0 | safetensors en HuggingFace | No |
+| Haidar95/legal-qwen-model | 3,09 B | No disponible | Apache 2.0 | safetensors en Hugging Face | No |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | safetensors y GGUF oficiales | Si |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Licencia comunitaria Llama 3.2 | safetensors y GGUF oficiales | Si |
 | Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | safetensors y GGUF oficiales | Si |
@@ -93,7 +93,7 @@ Nota: los datos de contexto y licencia de los tres modelos de comparacion proced
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haidar95/legal-qwen-model
+- Modelo en Hugging Face: https://huggingface.co/Haidar95/legal-qwen-model
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Documentacion de Qwen: https://qwen.readthedocs.io/

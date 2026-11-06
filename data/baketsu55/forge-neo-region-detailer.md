@@ -81,7 +81,7 @@ Forge Neo Region Detailer comparte el enfoque de ADetailer Neo, pero se diferenc
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/baketsu55/forge-neo-region-detailer
+- Repositorio en Hugging Face: https://huggingface.co/baketsu55/forge-neo-region-detailer
 - Repositorio de ADetailer Neo en GitHub: https://github.com/Haoming02/ADetailer-Neo
 - Repositorio de AADetailer NeoForge en GitHub: https://github.com/abzaloff/aadetailer-neoforge
 - Guia de Forge Neo UI (agosto 2026): https://www.thundercompute.com/blog/forge-ui-ai-image-generation

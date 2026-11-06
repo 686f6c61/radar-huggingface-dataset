@@ -18,7 +18,7 @@ Es relevante ahora porque ofrece, en un paquete de 1,1-1,6 GB, un modelo pequeñ
 | Longitud de contexto | No disponible (se reporta prueba "needle" 3/3, sin cifra de ventana) |
 | Tipos de cuantización | AD-Q6_K (7,31 bpw, 1,6 GB) y AD-Q4_K_M (5,20 bpw, 1,1 GB) |
 | Idiomas soportados | en, zh, de |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (cuantizado); el base en safetensors |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks adicionales (HumanEval, GSM8K, etc.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iSway003/LFM3-1.7B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/iSway003/LFM3-1.7B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Repositorio de Atomic Chat: https://github.com/AtomicBot-ai/Atomic-Chat

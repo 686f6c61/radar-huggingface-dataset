@@ -102,7 +102,7 @@ No se dispone de cifras comparables de otros modelos ternarios de tamano similar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benzeng/tritfold-1.7b-feature-ptq1_0
+- Modelo en Hugging Face: https://huggingface.co/benzeng/tritfold-1.7b-feature-ptq1_0
 - Variante base del mismo autor: https://huggingface.co/benzeng/tritfold-1.7b-ptq1_0
 - Variante instruct: https://huggingface.co/benzeng/tritfold-1.7b-instruct-ptq1_0
 - Repositorio GitHub del proyecto: https://github.com/benzeng/tritfold

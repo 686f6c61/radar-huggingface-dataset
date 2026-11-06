@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trove-1-70m es un modelo publicado en HuggingFace por el usuario mburq el 14 de agosto de 2026, bajo licencia Apache 2.0. El nombre sugiere un tamaño de aproximadamente 70 millones de parámetros, aunque esta cifra no está confirmada en la información disponible. No se ha publicado ninguna documentación técnica, descripción de arquitectura, ni detalles de entrenamiento en la model card, que únicamente contiene la declaración de licencia.
+Trove-1-70m es un modelo publicado en Hugging Face por el usuario mburq el 14 de agosto de 2026, bajo licencia Apache 2.0. El nombre sugiere un tamaño de aproximadamente 70 millones de parámetros, aunque esta cifra no está confirmada en la información disponible. No se ha publicado ninguna documentación técnica, descripción de arquitectura, ni detalles de entrenamiento en la model card, que únicamente contiene la declaración de licencia.
 
 La relevancia de este modelo es actualmente indeterminada, ya que carece de métricas de adopción (0 descargas, 0 likes) y de cualquier especificación funcional. Su publicación reciente y su licencia permisiva podrían indicar un proyecto en fase inicial, pero sin datos adicionales no es posible evaluar su utilidad para desarrolladores o investigadores.
 
@@ -29,7 +29,7 @@ No se dispone de información sobre las capacidades del modelo. No se han docume
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos debido a la ausencia total de documentación técnica. Hasta que el autor publique detalles sobre las capacidades del modelo, cualquier aplicación práctica sería especulativa. Se recomienda consultar la página del modelo en HuggingFace para futuras actualizaciones.
+No se pueden enumerar casos de uso concretos debido a la ausencia total de documentación técnica. Hasta que el autor publique detalles sobre las capacidades del modelo, cualquier aplicación práctica sería especulativa. Se recomienda consultar la página del modelo en Hugging Face para futuras actualizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -53,4 +53,4 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/mburq/Trove-1-70m
+- Página del modelo en Hugging Face: https://huggingface.co/mburq/Trove-1-70m

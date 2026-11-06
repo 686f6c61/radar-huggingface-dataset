@@ -6,7 +6,7 @@ Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF es un ajust
 
 El modelo base Qwen3.8-27B es un LLM denso nativo multimodal de la familia Qwen, especializado en codificación, flujos de trabajo agénticos y automatización de oficina. El fine-tune conserva el pipeline image-text-to-text, por lo que acepta entradas de imagen y texto. Cuenta con 27.320.697.856 parámetros (27,32 B) y, según referencias de la propia familia, una ventana de contexto de hasta 262.144 tokens.
 
-Su relevancia actual radica en que combina un modelo base multimodal de 27 B con cuantización GGUF y modos de razonamiento configurables, lo que permite desplegarlo en hardware de consumo. El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de la descarga. La licencia declarada es Apache 2.0.
+Su relevancia actual radica en que combina un modelo base multimodal de 27 B con cuantización GGUF y modos de razonamiento configurables, lo que permite desplegarlo en hardware de consumo. El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de la descarga. La licencia declarada es Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Todos los modos "Turbo-Brilliance" (23 de razonamiento y 12 de instruccion) estan documentados por el autor, no por un proceso de evaluacion independiente.
 - Riesgo de alucinacion inherente a los LLM de este tamano, sin datos de benchmarks que permitan cuantificarlo.
 - No se confirma soporte de tool calling, lo que limita su uso en flujos agénticos que requieran function calling.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de la descarga.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga.
 - La etiqueta descriptiva incluye "NEO" y "MTP" sin especificar su significado tecnico ni su impacto en el rendimiento.
 - Los datos de contexto y VRAM se han referido a partir de informacion de la familia Qwen3.8-27B; podrian no coincidir exactamente con este fine-tune.
 - Aunque la licencia declarada es Apache 2.0, conviene verificar las condiciones del modelo base Qwen3.8-27B antes de uso comercial.
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF
 - Perfil del autor: https://huggingface.co/DavidAU
 - Variante relacionada (Power-35X): https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-Power-35X-Reasoning-Instruct-modes-GGUF
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

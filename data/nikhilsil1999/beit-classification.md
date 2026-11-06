@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikhilsil1999/beit-classification` es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de una arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a tareas de clasificación. Lo publica el usuario nikhilsil1999 y, según su propia model card, no se presenta como un checkpoint entrenado ni evaluado, sino como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `run.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explícitamente como "checkpoint de inicialización válido para pruebas de humo", no como un modelo con resultados de benchmark.
+`nikhilsil1999/beit-classification` es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de una arquitectura BEiT (BERT Pre-Training of Image Transformers) orientada a tareas de clasificación. Lo publica el usuario nikhilsil1999 y, según su propia model card, no se presenta como un checkpoint entrenado ni evaluado, sino como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye `run.py`, `config.json`, `training_args.json` y un `model.safetensors` descrito explícitamente como "checkpoint de inicialización válido para pruebas de humo", no como un modelo con resultados de benchmark.
 
 El dato más relevante es su tamaño real: el archivo safetensors contiene 24.832 parámetros en total, una cifra diminuta que contrasta con la etiqueta "xlarge" que aparece en la configuración de arquitectura declarada por el autor. Esto confirma que se trata de una configuración reducida, pensada para validar que el código compila y ejecuta, y no de un modelo con capacidad funcional sobre imágenes reales. La arquitectura declarada incorpora elementos poco habituales en un BEiT clásico, como atención de ventana deslizante, fusión por co-atención, normalización RMSNorm y activación swish.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, limitada y muy específica: sirve como plantilla re
 | Escala declarada en config | "xlarge" (segun la model card; no coincide con el recuento real de parametros) |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -84,11 +84,11 @@ La comparacion relevante no es de rendimiento, sino de naturaleza: frente a los 
 - No se documentan idiomas porque no procesa texto; no es un modelo multilingue ni de lenguaje.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, pero la propia model card recuerda que deben revisarse por separado los terminos de los datos de origen si se usa con datasets externos.
 - Para produccion: no apto. Requiere entrenamiento completo, evaluacion con al menos tres semillas, un baseline de capacidad comparable y registro de los logs de entrenamiento antes de considerarse utilizable.
-- Error de fecha en los metadatos de HuggingFace: las fechas de creacion y actualizacion figuran como 2026, posteriores a la fecha actual, lo que sugiere un problema de reloj o de sincronizacion en la plataforma.
+- Error de fecha en los metadatos de Hugging Face: las fechas de creacion y actualizacion figuran como 2026, posteriores a la fecha actual, lo que sugiere un problema de reloj o de sincronizacion en la plataforma.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikhilsil1999/beit-classification
+- Modelo en Hugging Face: https://huggingface.co/nikhilsil1999/beit-classification
 - Documentacion de BEiT en Transformers: https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/beit
 - Documentacion historica de BEiT (Transformers 4.10.1): https://huggingface.co/transformers/v4.10.1/model_doc/beit.html
 - Paper original de BEiT, Microsoft Research: https://www.microsoft.com/en-us/research/publication/beit-bert-pre-training-of-image-transformers/

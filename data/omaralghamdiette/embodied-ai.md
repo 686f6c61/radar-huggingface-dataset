@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Omaralghamdiette/embodied-ai` es un repositorio de HuggingFace publicado bajo licencia MIT que no contiene un modelo entrenado, sino una nota de investigación en curso sobre inteligencia artificial encarnada (embodied AI). Segun su propia model card, el repositorio organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y el autor indica explicitamente que no se presenta como un articulo terminado ni como una release de modelos entrenados. Los artefactos declarados son dos archivos de texto: `notes.md` (artefacto principal) y `README.md` (documentacion).
+`Omaralghamdiette/embodied-ai` es un repositorio de Hugging Face publicado bajo licencia MIT que no contiene un modelo entrenado, sino una nota de investigación en curso sobre inteligencia artificial encarnada (embodied AI). Segun su propia model card, el repositorio organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y el autor indica explicitamente que no se presenta como un articulo terminado ni como una release de modelos entrenados. Los artefactos declarados son dos archivos de texto: `notes.md` (artefacto principal) y `README.md` (documentacion).
 
 El repositorio esta etiquetado con `safetensors`, `transformer`, `research-notes` y `embodied-ai`, pero los metadatos de safetensors reportan unicamente 33.088 parametros totales, una cifra incompatible con cualquier transformer utilizable para generacion o razonamiento. El tamano del repositorio es de 0,0 GB, no hay pipeline declarado, no se especifican idiomas y las cifras de descargas y likes son cero. La model card incluye un apartado de alcance y limitaciones en el que se afirma que la nota no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha describe un artefacto de investigacion abierta y no un mod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (solo como etiqueta de HuggingFace; no se documenta ninguna arquitectura de modelo entrenado) |
+| Arquitectura | transformer (solo como etiqueta de Hugging Face; no se documenta ninguna arquitectura de modelo entrenado) |
 | Parametros totales | 33.088 (segun metadatos de safetensors); el repositorio no contiene un checkpoint funcional |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
@@ -90,9 +90,9 @@ No disponible. No es posible establecer una comparativa con modelos de la misma 
 - Licencia MIT: permisiva y compatible con uso comercial, pero se refiere al contenido del repositorio. El autor advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - Los idiomas soportados no estan declarados; el contenido textual de la model card esta en ingles, por lo que el material puede no estar disponible en castellano.
 - No hay informacion sobre sesgos, evaluaciones de seguridad, filtros de contenido ni comportamiento en produccion, dado que no hay modelo que evaluar.
-- En un contexto de produccion, la unica advertencia relevante es no integrar este identificador de HuggingFace en ningun pipeline esperando un modelo funcional.
+- En un contexto de produccion, la unica advertencia relevante es no integrar este identificador de Hugging Face en ningun pipeline esperando un modelo funcional.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Omaralghamdiette/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/Omaralghamdiette/embodied-ai
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

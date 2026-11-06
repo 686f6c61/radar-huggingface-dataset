@@ -104,7 +104,7 @@ El modelo se distingue de su base (gliclass-edge-v3.0) por estar especializado e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Trigou/edge-fin-scorer
+- Modelo en Hugging Face: https://huggingface.co/Trigou/edge-fin-scorer
 - Modelo base GLiClass Edge V3.0: https://huggingface.co/knowledgator/gliclass-edge-v3.0
 - Repositorio GLiClass: https://github.com/knowledgator/GLiClass
 - Paper asociado: "Measuring Directional Firm-level Exposures Using Transformers and Large Language Models" (Thomas Renault y Thomas Rigou, 2025) — sin enlace directo disponible en la información proporcionada.

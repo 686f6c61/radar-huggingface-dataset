@@ -122,7 +122,7 @@ Regla indicada en la model card: elegir este modelo cuando primen el recall de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wannaphong/typhoon-asr-realtime-nemo-ctc
+- Modelo en Hugging Face: https://huggingface.co/wannaphong/typhoon-asr-realtime-nemo-ctc
 - Modelo base: https://huggingface.co/typhoon-ai/typhoon-asr-realtime
 - Informe técnico Typhoon ASR Real-time: https://arxiv.org/abs/2601.13044
 - Dataset in-domain: https://huggingface.co/datasets/typhoon-ai/gigaspeech2-typhoon

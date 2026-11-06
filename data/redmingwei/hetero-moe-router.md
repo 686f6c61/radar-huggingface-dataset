@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`redmingwei/hetero-moe-router` es un repositorio de HuggingFace que no contiene un modelo entrenado listo para inferencia, sino un registro de experimentos fallidos o parcialmente exitosos sobre enrutamiento en arquitecturas de mezcla de expertos (MoE) heterogéneas. Lo publica el usuario `redmingwei` y agrupa tres experimentos previos que originalmente estaban en repositorios separados (`hetero-moe-router-unfrozen` y `hetero-moe-shared-routed`), ahora consolidados en subdirectorios y con los originales archivados.
+`redmingwei/hetero-moe-router` es un repositorio de Hugging Face que no contiene un modelo entrenado listo para inferencia, sino un registro de experimentos fallidos o parcialmente exitosos sobre enrutamiento en arquitecturas de mezcla de expertos (MoE) heterogéneas. Lo publica el usuario `redmingwei` y agrupa tres experimentos previos que originalmente estaban en repositorios separados (`hetero-moe-router-unfrozen` y `hetero-moe-shared-routed`), ahora consolidados en subdirectorios y con los originales archivados.
 
 El problema que aborda es el colapso del enrutador (router collapse) en arquitecturas MoE multimodales: los expertos se especializan por modalidad en lugar de por contenido, de modo que el router no aprende una asignación útil. La model card documenta tres variantes (expertos congelados, expertos descongelados y esquema shared+routed) y concluye que la causa raíz es que la función objetivo depende solo de la modalidad y no del contenido, por lo que el router no recibe gradiente de contenido.
 
@@ -80,5 +80,5 @@ No disponible. No se han proporcionado modelos comparables de la misma categorí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/redmingwei/hetero-moe-router
+- Repositorio Hugging Face: https://huggingface.co/redmingwei/hetero-moe-router
 - Modelo completo enlazado por el autor: https://huggingface.co/redmingwei/HeteroMoEProjSpace-v2

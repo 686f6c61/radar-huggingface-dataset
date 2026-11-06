@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas en la i
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/NataliaVanetik/Arabic-emotions-ekman-full)
+- [Modelo en Hugging Face](https://huggingface.co/NataliaVanetik/Arabic-emotions-ekman-full)
 - [Dataset ArEkman en Zenodo](https://zenodo.org/records/20424658)
 - [Perfil de NataliaVanetik en GitHub](https://github.com/NataliaVanetik)
 - [Paper de referencia: Benchmarking Arabic Emotion Detection: Transformers Evaluation Using a Unified Dataset (TBD)](https://huggingface.co/papers?q=multi-label%20emotion%20dataset)

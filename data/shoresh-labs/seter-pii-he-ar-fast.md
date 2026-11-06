@@ -104,7 +104,7 @@ La variante fast sacrifica entre 1 y 3 puntos de F1 frente a la variante precisa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoresh-labs/seter-pii-he-ar-fast
+- Modelo en Hugging Face: https://huggingface.co/shoresh-labs/seter-pii-he-ar-fast
 - Variante precisa: https://huggingface.co/shoresh-labs/seter-pii-he-ar
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Detector de referencia con etiquetas compatibles: https://huggingface.co/openai/privacy-filter

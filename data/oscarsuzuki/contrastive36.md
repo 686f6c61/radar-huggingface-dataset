@@ -68,4 +68,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/oscarsuzuki/contrastive36)
+- [Repositorio en Hugging Face](https://huggingface.co/oscarsuzuki/contrastive36)

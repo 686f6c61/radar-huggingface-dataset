@@ -78,9 +78,9 @@ No se han publicado resultados en benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1-teacher | Politica RL (PPO) sobre simulador | no disponible | no disponible (estado estructurado) | Apache 2.0 | HuggingFace (`allapp`) |
-| WonseokJayJung/connectailab-rl-jay-v1 | RL (GRPO) con LoRA sobre qwen3.5, MLX | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| kiodo/connectailab-rl-jay-v1-teacher | Espejo/replicacion del mismo modelo | no disponible | no disponible | no disponible | HuggingFace |
+| connectailab-rl-jay-v1-teacher | Politica RL (PPO) sobre simulador | no disponible | no disponible (estado estructurado) | Apache 2.0 | Hugging Face (`allapp`) |
+| WonseokJayJung/connectailab-rl-jay-v1 | RL (GRPO) con LoRA sobre qwen3.5, MLX | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| kiodo/connectailab-rl-jay-v1-teacher | Espejo/replicacion del mismo modelo | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de otros modelos comparables de la misma categoria fuera del propio ecosistema CONNECT AI LAB. No se han publicado parametros ni metricas comparables de alternativas externas en la informacion disponible.
 
@@ -98,7 +98,7 @@ No se dispone de otros modelos comparables de la misma categoria fuera del propi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/allapp/connectailab-rl-jay-v1-teacher
+- Hugging Face: https://huggingface.co/allapp/connectailab-rl-jay-v1-teacher
 - GitHub del proyecto CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook Colab de aprendizaje: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

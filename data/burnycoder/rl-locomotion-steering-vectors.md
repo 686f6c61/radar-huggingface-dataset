@@ -101,7 +101,7 @@ No existen modelos comparables en el sentido de LLM. La comparativa se establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BurnyCoder/rl-locomotion-steering-vectors
+- Repositorio en Hugging Face: https://huggingface.co/BurnyCoder/rl-locomotion-steering-vectors
 - Codigo fuente en GitHub: https://github.com/BurnyCoder/rl-locomotion-steering-vectors
 - Informe de hallazgos (ant-classic-005): https://github.com/BurnyCoder/rl-locomotion-steering-vectors/blob/main/reports/ant-classic-005-findings.md
 - Informe de auditoria causal (ant-classic-005): https://github.com/BurnyCoder/rl-locomotion-steering-vectors/blob/main/reports/ant-classic-005-causal-audit.md

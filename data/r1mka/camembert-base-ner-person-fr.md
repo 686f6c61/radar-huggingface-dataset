@@ -2,9 +2,9 @@
 
 ## Resumen
 
-R1mKa/camembert-base-ner-person-fr es un modelo de reconocimiento de entidades nombradas (NER) para frances, publicado en HuggingFace por el usuario R1mKa. Se trata de un ajuste fino de camembert-base, el modelo de lenguaje en frances desarrollado originalmente por Inria y Facebook AI (equipo ALMANA), sobre la tarea de token classification. Por el identificador del repositorio, el ajuste esta orientado especificamente a la deteccion de entidades de tipo PERSON, es decir, nombres de personas en texto en frances.
+R1mKa/camembert-base-ner-person-fr es un modelo de reconocimiento de entidades nombradas (NER) para frances, publicado en Hugging Face por el usuario R1mKa. Se trata de un ajuste fino de camembert-base, el modelo de lenguaje en frances desarrollado originalmente por Inria y Facebook AI (equipo ALMANA), sobre la tarea de token classification. Por el identificador del repositorio, el ajuste esta orientado especificamente a la deteccion de entidades de tipo PERSON, es decir, nombres de personas en texto en frances.
 
-El modelo cuenta con 110.032.898 parametros, un tamano coherente con la arquitectura camembert-base (variante de RoBERTa-base adaptada al frances), y el repositorio ocupa aproximadamente 0,4 GB con pesos en formato safetensors. La pipeline declarada es token-classification y es compatible con los endpoints de inferencia de HuggingFace.
+El modelo cuenta con 110.032.898 parametros, un tamano coherente con la arquitectura camembert-base (variante de RoBERTa-base adaptada al frances), y el repositorio ocupa aproximadamente 0,4 GB con pesos en formato safetensors. La pipeline declarada es token-classification y es compatible con los endpoints de inferencia de Hugging Face.
 
 La relevancia practica del modelo es limitada tal y como esta publicado: la model card es la plantilla autogenerada de transformers y no aporta informacion sobre datos de entrenamiento, hiperparametros, metricas de evaluacion, licencia ni idiomas. Ademas, el repositorio no registra descargas ni likes en el momento de la consulta. Cualquier uso en produccion deberia ir precedido de una evaluacion propia, ya que no hay evidencia publicada de su calidad.
 
@@ -31,7 +31,7 @@ Tampoco se documenta si el entrenamiento cubre unicamente la etiqueta PERSON o e
 
 - Reconocimiento de entidades nombradas: clasificacion a nivel de token, presumiblemente orientada a la etiqueta PERSON en texto en frances.
 - Integracion con la libreria transformers mediante `pipeline("token-classification")` o `AutoModelForTokenClassification`.
-- Compatibilidad con los endpoints de inferencia alojados de HuggingFace (tag `endpoints_compatible`).
+- Compatibilidad con los endpoints de inferencia alojados de Hugging Face (tag `endpoints_compatible`).
 - Soporte de tool calling: no disponible, es un modelo encoder de clasificacion, no generativo.
 - Soporte de agentes o razonamiento multi-paso: no disponible, no aplica a esta arquitectura.
 - Capacidades multilingues: no disponible; la base camembert-base esta especializada en frances.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| R1mKa/camembert-base-ner-person-fr | 110.032.898 | 512 tokens (base) | no disponible | no disponible | HuggingFace, 0 descargas |
-| camembert-base (Inria / Facebook AI) | ~110 M | 512 tokens | referencia del modelo base, sin cabeza NER | MIT (segun la publicacion original) | HuggingFace, ampliamente usado |
-| FlauBERT-base (CNRS / Meta) | ~137 M | 512 tokens | alternativa francesa basada en BERT, sin cabeza NER especifica | no disponible en esta ficha | HuggingFace |
-| XLM-RoBERTa-base (Meta) | ~278 M | 512 tokens | multilingue, base habitual para NER | MIT (segun la publicacion original) | HuggingFace |
+| R1mKa/camembert-base-ner-person-fr | 110.032.898 | 512 tokens (base) | no disponible | no disponible | Hugging Face, 0 descargas |
+| camembert-base (Inria / Facebook AI) | ~110 M | 512 tokens | referencia del modelo base, sin cabeza NER | MIT (segun la publicacion original) | Hugging Face, ampliamente usado |
+| FlauBERT-base (CNRS / Meta) | ~137 M | 512 tokens | alternativa francesa basada en BERT, sin cabeza NER especifica | no disponible en esta ficha | Hugging Face |
+| XLM-RoBERTa-base (Meta) | ~278 M | 512 tokens | multilingue, base habitual para NER | MIT (segun la publicacion original) | Hugging Face |
 
 No hay datos de rendimiento publicados para el modelo analizado, por lo que la comparacion se limita a parametros, contexto y disponibilidad. Las cifras de licencia de los modelos de referencia corresponden a la informacion publica de sus repositorios originales.
 
@@ -83,7 +83,7 @@ No hay datos de rendimiento publicados para el modelo analizado, por lo que la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/R1mKa/camembert-base-ner-person-fr
+- Modelo en Hugging Face: https://huggingface.co/R1mKa/camembert-base-ner-person-fr
 - Tag arXiv declarado en el repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Referencia de la arquitectura base (CamemBERT, Inria y Facebook AI): https://arxiv.org/abs/1911.03894
 - Repositorio oficial de camembert-base: https://huggingface.co/almanach/camembert-base

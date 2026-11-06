@@ -61,7 +61,7 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mawrighthob/paper_024327258_audio_visual_learning
+- Repositorio en Hugging Face: https://huggingface.co/Mawrighthob/paper_024327258_audio_visual_learning
 - Paper relacionado (VAB): https://arxiv.org/abs/2409.19132
 - Paper relacionado (PE-AV): https://arxiv.org/abs/2512.19687v1
 - Publicación de Meta AI sobre PE-AV: https://ai.meta.com/research/publications/pushing-the-frontier-of-audiovisual-perception-with-large-scale-multimodal-correspondence-learning/

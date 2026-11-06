@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La diferencia principal es el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yamatazen/Qwen3.5-4B-heretic-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/yamatazen/Qwen3.5-4B-heretic-Q4_K_M-GGUF
 - Modelo base (referencia): https://huggingface.co/coder3101/Qwen3.5-4B-heretic (no verificado)
 - Perfil del autor: https://huggingface.co/yamatazen
 - Modelo similar de mradermacher: https://huggingface.co/mradermacher/Qwen3.5-4B-heretic-GGUF

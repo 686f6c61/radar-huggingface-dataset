@@ -2,7 +2,7 @@
 
 ## Resumen
 
-abclore es un repositorio de checkpoints de investigación alojado en HuggingFace por el usuario YeMoKoo. No se trata de un modelo listo para producción ni de un modelo base, sino de una colección de pesos (solo pesos, sin estado del optimizador, cachés de datos, memorias de replay ni estado del entrenador) destinada a evaluación y reproducción de experimentos de aprendizaje continuo. El repositorio ocupa 177,1 GB y agrupa dos familias de experimentos: flame_wcc/ (progresión Wiki → Code → Conversation sobre FLAME-MoE) y trace/ (benchmark TRACE de 8 tareas). Los pesos están en formato Megatron torch_dist y se basan en Llama-3.1-8B-Instruct y Qwen3-8B (este último con el modo de razonamiento desactivado).
+abclore es un repositorio de checkpoints de investigación alojado en Hugging Face por el usuario YeMoKoo. No se trata de un modelo listo para producción ni de un modelo base, sino de una colección de pesos (solo pesos, sin estado del optimizador, cachés de datos, memorias de replay ni estado del entrenador) destinada a evaluación y reproducción de experimentos de aprendizaje continuo. El repositorio ocupa 177,1 GB y agrupa dos familias de experimentos: flame_wcc/ (progresión Wiki → Code → Conversation sobre FLAME-MoE) y trace/ (benchmark TRACE de 8 tareas). Los pesos están en formato Megatron torch_dist y se basan en Llama-3.1-8B-Instruct y Qwen3-8B (este último con el modo de razonamiento desactivado).
 
 El modelo central de la colección, CLoRE, emplea una arquitectura MoE con expertos híbridos que combinan FFN y LoRA sobre las proyecciones QKVO, con una progresión de 8 → 16 → 24 expertos a lo largo de las etapas de entrenamiento. La propuesta se enmarca en la investigación sobre olvido catastrófico y ajuste continuo, y se compara contra baselines conocidos como MoE-LPR, Lifelong-MoE, EWC, Seq-LoRA, O-LoRA, S-LoRA y entrenamiento multitarea. Los resultados se reportan mediante métricas de precisión media (AA, *final_average*) y olvido (F, calculado como −BWT).
 
@@ -19,7 +19,7 @@ Es relevante ahora porque aborda un problema activo en la comunidad: cómo adapt
 | Tipos de cuantizacion | no disponible (solo se distribuyen pesos en formato Megatron torch_dist; no se mencionan variantes GGUF, AWQ, GPTQ ni cuantizadas) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | Megatron torch_dist (etiquetado como safetensors en HuggingFace); sin estado del optimizador, RNG ni cachés |
+| Formato de pesos | Megatron torch_dist (etiquetado como safetensors en Hugging Face); sin estado del optimizador, RNG ni cachés |
 
 ## Arquitectura y entrenamiento
 
@@ -118,5 +118,5 @@ La comparación directa con alternativas externas no es posible porque el reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YeMoKoo/abclore
+- Repositorio en Hugging Face: https://huggingface.co/YeMoKoo/abclore
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código o demos adicionales asociados a este modelo.

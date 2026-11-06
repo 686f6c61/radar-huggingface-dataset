@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-4bit
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Certificado Tier 1: https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-27b-axq4-nomtp-tier1.md
 - Colecciones de AutomatosX: https://huggingface.co/AutomatosX/collections

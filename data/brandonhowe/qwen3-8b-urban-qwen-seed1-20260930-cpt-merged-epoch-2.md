@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-2 es un modelo derivado de Qwen/Qwen3-8B-Base obtenido mediante preentrenamiento continuado (continued pretraining, CPT) sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`. Lo publica el usuario BrandonHowe en HuggingFace y se distribuye como modelo fusionado en BF16, sin adaptador LoRA, de modo que puede cargarse directamente con `transformers` sin pasos adicionales de merge. El checkpoint corresponde a la epoca 2.0 (step 756) de un experimento identificado con la semilla 1.
+Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-2 es un modelo derivado de Qwen/Qwen3-8B-Base obtenido mediante preentrenamiento continuado (continued pretraining, CPT) sobre el dataset `CompassioninMachineLearning/urban_12738_cleaned`. Lo publica el usuario BrandonHowe en Hugging Face y se distribuye como modelo fusionado en BF16, sin adaptador LoRA, de modo que puede cargarse directamente con `transformers` sin pasos adicionales de merge. El checkpoint corresponde a la epoca 2.0 (step 756) de un experimento identificado con la semilla 1.
 
 El modelo conserva la arquitectura, el tokenizador y el tama\u00f1o del Qwen3-8B-Base: 8.190.735.360 parametros en BF16, empaquetados en ocho shards de safetensors que ocupan 16,4 GB. No es un modelo alineado para conversacion: al partir de la variante `Base` y aplicar unicamente CPT, no incorpora plantilla de chat, ajuste por instrucciones ni etapas declaradas de RLHF o DPO. Su interes es acotado pero claro para quienes trabajan en adaptacion de dominio: es un punto de partida reproducible (con `run_manifest.json` que documenta hashes de seleccion de documentos y parametros de entrenamiento) sobre el que construir un fine-tuning posterior, en lugar de un asistente listo para produccion.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BrandonHowe/Qwen3-8b-urban-...-merged-epoch-2 | 8,19 B | 32.768 tokens (heredado) | Base + CPT de dominio | No declarada | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B-Base | 8,19 B | 32.768 tokens, 131.072 con YaRN | Base sin alinear | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-8B | 8,19 B | 32.768 tokens, 131.072 con YaRN | Post-entrenado para chat y razonamiento | Apache 2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | Base con variantes instruct | Llama 3.1 Community License | HuggingFace, con registro previo |
+| BrandonHowe/Qwen3-8b-urban-...-merged-epoch-2 | 8,19 B | 32.768 tokens (heredado) | Base + CPT de dominio | No declarada | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B-Base | 8,19 B | 32.768 tokens, 131.072 con YaRN | Base sin alinear | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-8B | 8,19 B | 32.768 tokens, 131.072 con YaRN | Post-entrenado para chat y razonamiento | Apache 2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.1-8B | 8,03 B | 128.000 tokens | Base con variantes instruct | Llama 3.1 Community License | Hugging Face, con registro previo |
 
 La diferencia clave frente al Qwen3-8B-Base es el corpus de preentrenamiento continuado y la ausencia de licencia declarada en el repositorio. Frente al Qwen3-8B post-entrenado, carece de plantilla de chat y de alineacion, de modo que no es intercambiable en aplicaciones conversacionales sin un ajuste adicional.
 
@@ -85,9 +85,9 @@ La diferencia clave frente al Qwen3-8B-Base es el corpus de preentrenamiento con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-2
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/CompassioninMachineLearning/urban_12738_cleaned
-- Organizacion en HuggingFace del dataset: https://huggingface.co/CompassioninMachineLearning
+- Organizacion en Hugging Face del dataset: https://huggingface.co/CompassioninMachineLearning
 - Unsloth (herramienta usada para el merge en 16 bits): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de busqueda disponibles.

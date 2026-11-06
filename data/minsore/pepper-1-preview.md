@@ -76,8 +76,8 @@ El autor senala que Pepper supera al modelo base en HumanEval en 7 puntos, la me
 
 | Modelo | Parametros | Contexto | HumanEval@50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pepper 1 Preview | 1,5B | 4.096 tokens (inferencia) | 82,0% | Apache 2.0 | GGUF en HuggingFace |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible | 75,0% | Apache 2.0 (modelo base) | HuggingFace |
+| Pepper 1 Preview | 1,5B | 4.096 tokens (inferencia) | 82,0% | Apache 2.0 | GGUF en Hugging Face |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | no disponible | 75,0% | Apache 2.0 (modelo base) | Hugging Face |
 | Llama-3.2-1B-Code | 1B | no disponible | 64,0% | no disponible | no disponible |
 | Yi-Coder-1.5B | 1,5B | no disponible | 24,0% (sin plantilla nativa) | no disponible | no disponible |
 
@@ -98,10 +98,10 @@ Los datos de HumanEval proceden de la evaluacion del propio autor de Pepper con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minsore/pepper-1-preview
+- Modelo en Hugging Face: https://huggingface.co/minsore/pepper-1-preview
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Modelo Quill (FIM) de la misma familia: https://huggingface.co/minsore/quill-1-preview
-- Perfil de Minsore en HuggingFace: https://huggingface.co/minsore
+- Perfil de Minsore en Hugging Face: https://huggingface.co/minsore
 - Sitio web de Minsore: https://minsore.com
 - Perfil del autor: https://huggingface.co/Sollamon
 - Framework de entrenamiento Unsloth: https://github.com/unslothai/unsloth

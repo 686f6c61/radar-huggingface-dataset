@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-opd-teacher-R1Distill-122-KiddingMe-20261025` es un ajuste fino por aprendizaje reforzado del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario davidheineman en HuggingFace. No se trata de un modelo conversacional de propósito general, sino de un artefacto de investigación: los pesos finales de un experimento de escalado de datos con RL, etiquetado por el autor como «OPD teacher» (modelo profesor para destilación, presumiblemente on-policy distillation, aunque la model card no detalla el procedimiento de destilación). El método aplicado es GRPO (Group Relative Policy Optimization) especializado sobre un único entorno de entrenamiento.
+`rlve-opd-teacher-R1Distill-122-KiddingMe-20261025` es un ajuste fino por aprendizaje reforzado del modelo `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`, publicado por el usuario davidheineman en Hugging Face. No se trata de un modelo conversacional de propósito general, sino de un artefacto de investigación: los pesos finales de un experimento de escalado de datos con RL, etiquetado por el autor como «OPD teacher» (modelo profesor para destilación, presumiblemente on-policy distillation, aunque la model card no detalla el procedimiento de destilación). El método aplicado es GRPO (Group Relative Policy Optimization) especializado sobre un único entorno de entrenamiento.
 
 El modelo parte de la arquitectura Qwen2 con 1.777.088.000 parámetros (aproximadamente 1,78 mil millones en precisión de 16 bits) y se distribuye en formato safetensors con tokenizer y ficheros de configuración, sin estado de optimizador ni de dataloader. Su relevancia es acotada y experimental: sirve para reproducir el experimento de escalado de datos del autor y como profesor en pipelines de destilación, no como sustituto de un modelo instructivo generalista.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-122-KiddingMe | 1,78B | no disponible | Fine-tune GRPO especializado en un entorno; rol de profesor OPD | no disponible | HuggingFace (0 descargas, 0 likes en el momento de la ficha) |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | no disponible en la informacion proporcionada | Destilado de razonamiento de propósito general; modelo base de este | no disponible en la informacion proporcionada | HuggingFace, ampliamente utilizado |
-| Qwen2.5-1.5B-Instruct | ~1,5B | no disponible en la informacion proporcionada | Instruct generalista con soporte de chat | no disponible en la informacion proporcionada | HuggingFace, muy extendido |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7B | no disponible en la informacion proporcionada | Destilado de razonamiento de mayor tamano | no disponible en la informacion proporcionada | HuggingFace |
+| rlve-opd-teacher-R1Distill-122-KiddingMe | 1,78B | no disponible | Fine-tune GRPO especializado en un entorno; rol de profesor OPD | no disponible | Hugging Face (0 descargas, 0 likes en el momento de la ficha) |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,78B | no disponible en la informacion proporcionada | Destilado de razonamiento de propósito general; modelo base de este | no disponible en la informacion proporcionada | Hugging Face, ampliamente utilizado |
+| Qwen2.5-1.5B-Instruct | ~1,5B | no disponible en la informacion proporcionada | Instruct generalista con soporte de chat | no disponible en la informacion proporcionada | Hugging Face, muy extendido |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | ~7B | no disponible en la informacion proporcionada | Destilado de razonamiento de mayor tamano | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparación relevante es frente a su propio modelo base: comparten arquitectura y número de parámetros, y la diferencia es el ajuste por RL en un único entorno, lo que previsiblemente mejora el rendimiento in-domain a costa de generalidad. No se dispone de métricas para cuantificar esa diferencia.
 
@@ -88,7 +88,7 @@ La comparación relevante es frente a su propio modelo base: comparten arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-122-KiddingMe-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-122-KiddingMe-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/9f567207
 - Ficheros de configuración en el repositorio: `training_run.json` y `training_config.yaml`

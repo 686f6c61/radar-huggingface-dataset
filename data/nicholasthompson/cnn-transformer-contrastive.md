@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`NICHOLASTHOMPSON/cnn-transformer-contrastive` es un repositorio experimental publicado en HuggingFace que contiene una implementación en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint listo para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks superados. El repositorio se plantea como un banco de pruebas de arquitectura, con el objetivo de inspeccionar cambios de diseño antes de lanzar un entrenamiento completo.
+`NICHOLASTHOMPSON/cnn-transformer-contrastive` es un repositorio experimental publicado en Hugging Face que contiene una implementación en PyTorch de una arquitectura denominada "Cnn Transformer" orientada a aprendizaje contrastivo. No es un modelo entrenado ni un checkpoint listo para producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks superados. El repositorio se plantea como un banco de pruebas de arquitectura, con el objetivo de inspeccionar cambios de diseño antes de lanzar un entrenamiento completo.
 
 El artefacto principal es `run.py`, acompañado de `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `model.safetensors`. Los metadatos de safetensors declaran 16.576 parámetros, una cifra coherente con el tamaño de repositorio de 0,0 GB y con la función de prueba de humo, pero contradictoria con el campo "Scale: giant" que aparece en la configuración de arquitectura: se trata de una discrepancia a tener en cuenta antes de sacar conclusiones sobre la capacidad real del modelo.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NICHOLASTHOMPSON/cnn-transformer-contrastive
+- Modelo en Hugging Face: https://huggingface.co/NICHOLASTHOMPSON/cnn-transformer-contrastive
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

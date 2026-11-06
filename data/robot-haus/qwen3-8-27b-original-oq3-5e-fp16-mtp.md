@@ -47,7 +47,7 @@ Esta version concreta no ha sido reentrenada ni ajustada; es una cuantizacion di
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks especificos para esta cuantizacion en la informacion disponible. El modelo base Qwen3.8-27B tiene benchmarks publicados en su pagina oficial de HuggingFace y en articulos como el de Yottalabs, que incluyen evaluaciones en tareas de codigo, matematicas y vision (por ejemplo, MathVision). Sin embargo, no se dispone de los numeros concretos en los materiales proporcionados, y no se deben inventar. Se recomienda consultar la pagina del modelo base para obtener las metricas de referencia.
+No se han publicado resultados de benchmarks especificos para esta cuantizacion en la informacion disponible. El modelo base Qwen3.8-27B tiene benchmarks publicados en su pagina oficial de Hugging Face y en articulos como el de Yottalabs, que incluyen evaluaciones en tareas de codigo, matematicas y vision (por ejemplo, MathVision). Sin embargo, no se dispone de los numeros concretos en los materiales proporcionados, y no se deben inventar. Se recomienda consultar la pagina del modelo base para obtener las metricas de referencia.
 
 ## Requisitos de hardware
 
@@ -79,7 +79,7 @@ La diferencia principal entre esta cuantizacion y el modelo base es el tamano (1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Robot-Haus/Qwen3.8-27B-original-oQ3.5e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Robot-Haus/Qwen3.8-27B-original-oQ3.5e-fp16-mtp
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Articulo de Yottalabs sobre Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_swift_jbbresp13_remove40` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de `meta-llama/Meta-Llama-3-8B-Instruct` comprimido mediante Swift-SVD con un objetivo de eliminación del 40 % de los parámetros (presupuesto factorizado del 60 % de los pesos densos) y posteriormente recuperado con la etapa 2 de SVD-LLM, basada en LoRA secuencial sobre los factores U y V. El resultado se pliega a pesos densos estándar de Transformers, por lo que la reducción afecta al presupuesto de parámetros factorizados y no al tamaño de descarga.
+`svd-safety-l3_swift_jbbresp13_remove40` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de `meta-llama/Meta-Llama-3-8B-Instruct` comprimido mediante Swift-SVD con un objetivo de eliminación del 40 % de los parámetros (presupuesto factorizado del 60 % de los pesos densos) y posteriormente recuperado con la etapa 2 de SVD-LLM, basada en LoRA secuencial sobre los factores U y V. El resultado se pliega a pesos densos estándar de Transformers, por lo que la reducción afecta al presupuesto de parámetros factorizados y no al tamaño de descarga.
 
 El interés del modelo no es su rendimiento absoluto, sino su utilidad como artefacto de medición: evalúa cómo afecta la compresión a la dicotomía seguridad/utilidad en un LLM de 8.000 millones de parámetros. Para ello el autor emplea un corpus de calibración mixto (256 secuencias de WikiText más 13 pares de prompt dañino/respuesta de JailbreakBench, 2048 tokens cada uno, semilla 42) y publica métricas de perplejidad, utilidad zero-shot y tasas de éxito de ataque juzgadas con HarmBench, además de sobre-rechazo medido con WildGuard.
 
@@ -89,7 +89,7 @@ El autor evalúa además siete tareas zero-shot (ARC-Easy, ARC-Challenge, HellaS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbresp13_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbresp13_remove40
 - Checkpoint hermano (sin restauración de componentes SVD): https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40
 - Checkpoint hermano (calibración jbbcal2): https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbcal2_remove40
 - Checkpoint hermano (recuperación con alpaca_cleaned_jbbsft): https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft1_remove40

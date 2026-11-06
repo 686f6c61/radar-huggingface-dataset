@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4 es un checkpoint de generacion de texto alojado en HuggingFace por el usuario TheHassanSaud. Por el identificador del repositorio y la etiqueta de arquitectura `gpt_neox`, se trata de un ajuste sobre un modelo de la familia Pythia de EleutherAI, presumiblemente Pythia-410M, realizado mediante DPO (Direct Preference Optimization) con un coeficiente beta de 0,4, segun indican los sufijos `dpo_beta0_4` y `q0` del nombre. Esta interpretacion procede de la nomenclatura del repositorio, no de documentacion explicita del autor.
+TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4 es un checkpoint de generacion de texto alojado en Hugging Face por el usuario TheHassanSaud. Por el identificador del repositorio y la etiqueta de arquitectura `gpt_neox`, se trata de un ajuste sobre un modelo de la familia Pythia de EleutherAI, presumiblemente Pythia-410M, realizado mediante DPO (Direct Preference Optimization) con un coeficiente beta de 0,4, segun indican los sufijos `dpo_beta0_4` y `q0` del nombre. Esta interpretacion procede de la nomenclatura del repositorio, no de documentacion explicita del autor.
 
-El modelo tiene 405.334.016 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos (sub-500M), aptos para ejecucion en CPU y en GPUs de consumo. El repositorio ocupa 1,6 GB, lo que es consistente con pesos almacenados en fp32. La model card es la plantilla autogenerada por HuggingFace y no contiene informacion cumplimentada: no hay datos de desarrollador, licencia, idiomas, dataset de entrenamiento ni evaluacion.
+El modelo tiene 405.334.016 parametros reales segun los pesos en safetensors, lo que lo situa en la categoria de modelos pequenos (sub-500M), aptos para ejecucion en CPU y en GPUs de consumo. El repositorio ocupa 1,6 GB, lo que es consistente con pesos almacenados en fp32. La model card es la plantilla autogenerada por Hugging Face y no contiene informacion cumplimentada: no hay datos de desarrollador, licencia, idiomas, dataset de entrenamiento ni evaluacion.
 
 La relevancia de esta ficha es limitada y debe entenderse en clave de investigacion: el modelo acumula 0 descargas y 0 likes, no tiene licencia declarada y no aporta evidencia de evaluacion. Su interes practico se reduce a servir como artefacto de experimentacion sobre DPO en modelos pequenos, siempre que se verifiquen de forma independiente la procedencia de los pesos y las condiciones de uso.
 
@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada y debe entenderse en clave de investigac
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-NeoX (etiqueta `gpt_neox` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-NeoX (etiqueta `gpt_neox` en Hugging Face) |
 | Parametros totales | 405.334.016 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Pythia-410M emplea 2048 tokens; sin confirmar para este checkpoint) |
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4 | 405.334.016 | no disponible (base Pythia: 2048) | no disponible | HuggingFace, 0 descargas | Ajuste DPO sin documentar; model card vacia |
-| EleutherAI/pythia-410m | 405M | 2048 | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base de referencia, entrenado sobre The Pile (300B tokens) |
-| GPT-2 medium | 355M | 1024 | MIT (pesos OpenAI) | HuggingFace | Alternativa historica de tamano comparable, contexto menor |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | HuggingFace | Familia moderna con contexto muy superior y soporte multilingue |
+| TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4 | 405.334.016 | no disponible (base Pythia: 2048) | no disponible | Hugging Face, 0 descargas | Ajuste DPO sin documentar; model card vacia |
+| EleutherAI/pythia-410m | 405M | 2048 | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base de referencia, entrenado sobre The Pile (300B tokens) |
+| GPT-2 medium | 355M | 1024 | MIT (pesos OpenAI) | Hugging Face | Alternativa historica de tamano comparable, contexto menor |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Hugging Face | Familia moderna con contexto muy superior y soporte multilingue |
 
 No hay datos de rendimiento comparado para el modelo de esta ficha, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Cualquier afirmacion sobre calidad relativa exigiria una evaluacion propia.
 
@@ -95,7 +95,7 @@ No hay datos de rendimiento comparado para el modelo de esta ficha, por lo que l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4
+- Repositorio en Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_q0_dpo_beta0_4
 - Modelo base de referencia (EleutherAI Pythia-410M): https://huggingface.co/EleutherAI/pythia-410m
 - Paper de GPT-NeoX (arquitectura): https://arxiv.org/abs/2204.06745
 - Paper de la suite Pythia: https://arxiv.org/abs/2304.01373

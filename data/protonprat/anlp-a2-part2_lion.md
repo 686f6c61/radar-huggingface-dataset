@@ -71,9 +71,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks est
 
 | Modelo | Parametros | Arquitectura | Optimizador | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ProtonPrat/anlp-a2-part2_lion | 10.084.480 | Transformer causal personalizado | no confirmado (el nombre sugiere Lion) | no disponible | no disponible | HuggingFace, safetensors y `.pt` |
-| dnebh/anlp-a2-part2-lion | 33,4 millones (segun el resultado de busqueda) | Transformer decoder-only denso (config 1 de la Parte 1) | Lion desde cero, tasa de aprendizaje 0,0004 | no disponible | no disponible | HuggingFace |
-| Adi-AI/anlp-a2-part2-lion | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ProtonPrat/anlp-a2-part2_lion | 10.084.480 | Transformer causal personalizado | no confirmado (el nombre sugiere Lion) | no disponible | no disponible | Hugging Face, safetensors y `.pt` |
+| dnebh/anlp-a2-part2-lion | 33,4 millones (segun el resultado de busqueda) | Transformer decoder-only denso (config 1 de la Parte 1) | Lion desde cero, tasa de aprendizaje 0,0004 | no disponible | no disponible | Hugging Face |
+| Adi-AI/anlp-a2-part2-lion | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten la etiqueta `anlp-a2-part2-lion` y proceden del mismo marco de asignatura, por lo que constituyen variantes paralelas del mismo ejercicio. No se dispone de datos de rendimiento comparables publicados para las dos alternativas.
 
@@ -93,7 +93,7 @@ Los tres modelos comparten la etiqueta `anlp-a2-part2-lion` y proceden del mismo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProtonPrat/anlp-a2-part2_lion
+- Modelo en Hugging Face: https://huggingface.co/ProtonPrat/anlp-a2-part2_lion
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/proton_prat/anlp-assignment-2/runs/h4fdjpml
 - Dataset de entrenamiento: https://huggingface.co/datasets/browndw/human-ai-parallel-corpus
 - Repositorio de la asignatura en GitHub: https://github.com/bitmap4/anlp-a2

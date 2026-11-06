@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Capacidad destacada | Disponibilidad |
 |---|---|---|---|---|---|
-| PixelBench-Molmo2-4B-PRT-s0 | 4,85 B | no disponible | Apache 2.0 | Generacion de pixeles y VQA | HuggingFace, 0 descargas |
-| Molmo2-4B (base) | ~4 B | no disponible | no disponible en la informacion | VQA y captioning | HuggingFace |
-| LLaVA-OneVision-1.5 | no disponible | no disponible | no disponible en la informacion | VQA e instrucciones visuales | HuggingFace |
+| PixelBench-Molmo2-4B-PRT-s0 | 4,85 B | no disponible | Apache 2.0 | Generacion de pixeles y VQA | Hugging Face, 0 descargas |
+| Molmo2-4B (base) | ~4 B | no disponible | no disponible en la informacion | VQA y captioning | Hugging Face |
+| LLaVA-OneVision-1.5 | no disponible | no disponible | no disponible en la informacion | VQA e instrucciones visuales | Hugging Face |
 | Modelos de difusion para generacion de imagenes | variable | no aplica | variable | Generacion de imagenes de alta resolucion | Amplia |
 
 La comparativa con modelos de difusion es relevante porque PixelBench propone una via alternativa (transformers multimodales) para generar imagenes, aunque a resoluciones muy bajas (16x16 y 32x32) y sin datos de calidad comparativa publicados.
@@ -87,7 +87,7 @@ La comparativa con modelos de difusion es relevante porque PixelBench propone un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s0
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Molmo2-4B-PRT-s0
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Articulo (arXiv, referencia TBA): https://haoquanzhang.github.io/pixelbench/

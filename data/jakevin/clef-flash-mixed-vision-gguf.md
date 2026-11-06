@@ -109,7 +109,7 @@ No se dispone de datos de contexto, rendimiento publico ni benchmarks comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jakevin/clef-flash-mixed-vision-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Jakevin/clef-flash-mixed-vision-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Version solo texto: https://huggingface.co/Jakevin/clef-flash-mixed-GGUF
 - Version ternaria con vision en MLX: https://huggingface.co/Jakevin/clef-flash-ternary-vision-mlx

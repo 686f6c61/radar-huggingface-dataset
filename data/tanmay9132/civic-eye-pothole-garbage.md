@@ -67,5 +67,5 @@ No disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tanmay9132/civic-eye-pothole-garbage
+- Modelo en Hugging Face: https://huggingface.co/tanmay9132/civic-eye-pothole-garbage
 - Proyecto CivicEye en GitHub: https://github.com/TaruN-Ruwali/CivicEye

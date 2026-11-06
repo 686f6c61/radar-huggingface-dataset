@@ -84,7 +84,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TuanNgo/ISBNet
+- Modelo en Hugging Face: https://huggingface.co/TuanNgo/ISBNet
 - Paper (arXiv): https://arxiv.org/abs/2303.00246
 - Codigo oficial: https://github.com/VinAIResearch/ISBNet
 - Configuracion ScanNetV2: https://github.com/VinAIResearch/ISBNet/blob/master/configs/scannetv2/isbnet_scannetv2.yaml

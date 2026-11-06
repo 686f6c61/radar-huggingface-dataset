@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`25f3001314/ayurparam-api` es un repositorio publicado en HuggingFace por el usuario `25f3001314` bajo licencia MIT. A pesar del sufijo "api" en el identificador, se trata de un artefacto alojado en el Hub de modelos, no de una API desplegada ni de un servicio gestionado. El repositorio se creó y se actualizó en la misma fecha (4 de noviembre de 2026) y no cuenta con descargas ni "likes" registrados en el momento de la consulta.
+`25f3001314/ayurparam-api` es un repositorio publicado en Hugging Face por el usuario `25f3001314` bajo licencia MIT. A pesar del sufijo "api" en el identificador, se trata de un artefacto alojado en el Hub de modelos, no de una API desplegada ni de un servicio gestionado. El repositorio se creó y se actualizó en la misma fecha (4 de noviembre de 2026) y no cuenta con descargas ni "likes" registrados en el momento de la consulta.
 
 La model card asociada es prácticamente vacía: únicamente declara la licencia MIT y no incluye información sobre arquitectura, tamaño, datos de entrenamiento, tokenizador, idiomas ni uso previsto. El pipeline no está declarado, lo que impide clasificar el artefacto como modelo de generación de texto, visión, audio u otra tarea. Tampoco se especifican los idiomas soportados.
 
@@ -74,5 +74,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/25f3001314/ayurparam-api
+- Repositorio en Hugging Face: https://huggingface.co/25f3001314/ayurparam-api
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

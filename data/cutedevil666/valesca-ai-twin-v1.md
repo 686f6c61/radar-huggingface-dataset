@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Valesca-AI-Twin-v1 es un adaptador LoRA de texto a imagen publicado por el usuario CuteDevil666 en HuggingFace. Se trata de un ajuste fino ligero sobre el modelo base krea/Krea-2-Raw, orientado a la generación de imágenes consistentes de un sujeto concreto mediante la palabra de activación `valesca_id`. El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
+Valesca-AI-Twin-v1 es un adaptador LoRA de texto a imagen publicado por el usuario CuteDevil666 en Hugging Face. Se trata de un ajuste fino ligero sobre el modelo base krea/Krea-2-Raw, orientado a la generación de imágenes consistentes de un sujeto concreto mediante la palabra de activación `valesca_id`. El repositorio tiene un tamaño de 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo.
 
 El modelo se distribuye en formato diffusers y pertenece a la categoría de "AI twin" o gemelo digital: LoRAs entrenados para reproducir la apariencia de una persona o personaje a partir de un conjunto reducido de imágenes de referencia. Su relevancia es limitada fuera de ese nicho, ya que no aporta capacidades generales nuevas, sino que especializa el modelo base en un único concepto visual.
 
@@ -71,10 +71,10 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - El LoRA está especializado en un único sujeto; su uso fuera de la palabra de activación `valesca_id` no está documentado y puede degradar la calidad.
 - No se documentan limitaciones de idioma, pero el rendimiento del prompt depende del codificador de texto del modelo base.
 - El repositorio tiene 0 descargas y 0 likes, sin validación de la comunidad ni evaluaciones independientes.
-- La fecha de creación indicada (2026-11-02) es futura respecto a la información habitual de HuggingFace; conviene verificar la integridad del repositorio antes de usarlo.
+- La fecha de creación indicada (2026-11-02) es futura respecto a la información habitual de Hugging Face; conviene verificar la integridad del repositorio antes de usarlo.
 
 ## Enlaces
 
-- [HuggingFace: CuteDevil666/Valesca-AI-Twin-v1](https://huggingface.co/CuteDevil666/Valesca-AI-Twin-v1)
+- [Hugging Face: CuteDevil666/Valesca-AI-Twin-v1](https://huggingface.co/CuteDevil666/Valesca-AI-Twin-v1)
 - [Modelo base: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Archivos del repositorio](https://huggingface.co/CuteDevil666/Valesca-AI-Twin-v1/tree/main)

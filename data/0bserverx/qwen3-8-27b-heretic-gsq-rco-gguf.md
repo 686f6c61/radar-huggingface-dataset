@@ -110,7 +110,7 @@ No se dispone de comparaciones frente a otros modelos de tamaño similar (por ej
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF
 - Modelo base abliterado, safetensors FP16 (vLLM/SGLang): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored
 - Modelo base abliterado, espectro estándar de cuantizaciones GGUF: https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF
 - Variante GSQ en `compressed-tensors` (carpeta `GSQ-3bit/`): https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored/tree/main/GSQ-3bit

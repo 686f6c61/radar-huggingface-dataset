@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r17-bk-pf-q3_transfer_cpt100m-step-381` es un checkpoint de un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995. El repositorio no incluye model card, documentacion tecnica ni descripcion del proceso de entrenamiento, y su acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar los pesos. El identificador del repositorio sugiere, por su estructura (`r17`, `q3`, `transfer`, `cpt100m`, `step-381`), un checkpoint intermedio de un proceso de preentrenamiento continuado (continued pre-training) sobre un modelo de la familia Qwen3, pero esta interpretacion no esta confirmada por ninguna documentacion oficial del autor.
+`alfred8995/r17-bk-pf-q3_transfer_cpt100m-step-381` es un checkpoint de un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995. El repositorio no incluye model card, documentacion tecnica ni descripcion del proceso de entrenamiento, y su acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar los pesos. El identificador del repositorio sugiere, por su estructura (`r17`, `q3`, `transfer`, `cpt100m`, `step-381`), un checkpoint intermedio de un proceso de preentrenamiento continuado (continued pre-training) sobre un modelo de la familia Qwen3, pero esta interpretacion no esta confirmada por ninguna documentacion oficial del autor.
 
 El dato verificado mas relevante son los 1.512.432.640 parametros (aproximadamente 1,51 mil millones) declarados en los metadatos de safetensors, junto con un tamano de repositorio de 6,0 GB en formato safetensors. Se trata, por tanto, de un modelo de escala pequena, adecuado para experimentacion en hardware de consumo y para tareas de ajuste fino o evaluacion comparativa, no para despliegues de alta capacidad.
 
@@ -18,7 +18,7 @@ Su relevancia actual es limitada y de caracter experimental: cero descargas y ce
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene safetensors; no se confirma la presencia de GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido; requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido; requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | safetensors |
 
 Otros metadatos: tamano del repositorio 6,0 GB; creado el 23 de octubre de 2026; actualizado el 23 de octubre de 2026; pipeline no declarado; region `us`.
@@ -50,7 +50,7 @@ Advertencia: al tratarse de un checkpoint intermedio de preentrenamiento continu
 - Prototipado local sin conectividad: al caber en GPU de consumo tras cuantizacion, permite experimentar con pipelines de generacion en entornos aislados, asumiendo que la calidad conversacional no esta garantizada.
 - Extraccion de informacion y clasificacion de texto: tareas discriminativas con ajuste fino supervisado (NER, clasificacion de documentos, etiquetado) donde el modelo actua como encoder-decoder generativo y el contexto requerido es corto.
 - Generacion aumentada por recuperacion (RAG) en dominios acotados: puede integrarse como generador en un pipeline RAG, aunque la ausencia de datos sobre contexto maximo y de alineacion instructiva obliga a validar el comportamiento antes de usarlo en produccion.
-- Docencia y formacion tecnica: suitable como ejemplo practico de ciclo completo de preentrenamiento continuado, publicacion en HuggingFace con acceso restringido y gestion de licencias no estandar.
+- Docencia y formacion tecnica: suitable como ejemplo practico de ciclo completo de preentrenamiento continuado, publicacion en Hugging Face con acceso restringido y gestion de licencias no estandar.
 
 ## Benchmarks y rendimiento
 
@@ -87,16 +87,16 @@ La diferencia practica mas relevante no es de tamano sino de trazabilidad: los t
 - Sesgos desconocidos: al no documentarse la composicion del dataset de preentrenamiento continuado, no es posible caracterizar sesgos de genero, etnia, idioma o dominio.
 - Riesgo de alucinacion: previsiblemente alto si el checkpoint no ha pasado por alineacion; sin datos de evaluacion no puede cuantificarse.
 - Posible falta de alineacion instructiva: el nombre sugiere un checkpoint intermedio de preentrenamiento, por lo que puede no seguir instrucciones ni respetar formatos de chat.
-- Licencia `other` con acceso restringido: las condiciones de uso comercial, redistribucion y obras derivadas no son publicas; es obligatorio revisar y aceptar los terminos en HuggingFace antes de cualquier uso, y no puede asumirse que el uso comercial este permitido.
+- Licencia `other` con acceso restringido: las condiciones de uso comercial, redistribucion y obras derivadas no son publicas; es obligatorio revisar y aceptar los terminos en Hugging Face antes de cualquier uso, y no puede asumirse que el uso comercial este permitido.
 - Riesgo de contaminacion o sobreajuste al dominio: un presupuesto de aproximadamente 100 millones de tokens es muy reducido y puede desplazar la distribucion del modelo base, degradando capacidades generales.
 - Idiomas no declarados: no hay garantia de comportamiento en castellano ni en otros idiomas distintos del que predomine en el corpus de CPT.
 - Reputacion y soporte: cero descargas y cero likes, sin historial de mantenimiento; no hay canal de soporte ni issues conocidos.
-- Fecha de creacion registrada como 23 de octubre de 2026 en los metadatos de HuggingFace, lo que conviene verificar antes de citar el repositorio.
+- Fecha de creacion registrada como 23 de octubre de 2026 en los metadatos de Hugging Face, lo que conviene verificar antes de citar el repositorio.
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo: los resultados obtenidos corresponden a manuales de electrodomesticos, piezas de repuesto y una caja de transferencia de Audi Q3, es decir, coincidencias accidentales de palabras clave sin relación alguna.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r17-bk-pf-q3_transfer_cpt100m-step-381
+- Hugging Face: https://huggingface.co/alfred8995/r17-bk-pf-q3_transfer_cpt100m-step-381
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

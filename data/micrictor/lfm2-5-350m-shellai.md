@@ -95,8 +95,8 @@ El modelo destilado mejora la utilidad de comandos (39,7% vs 23,0%) respecto al 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-350M
+- Repositorio Hugging Face: https://huggingface.co/micrictor/LFM2.5-350M-ShellAI
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Documentación oficial de LFM2.5-350M: https://docs.liquid.ai/lfm/models/lfm25-350m
 - Modelo embedding relacionado: https://huggingface.co/LiquidAI/LFM2.5-Embedding-350M

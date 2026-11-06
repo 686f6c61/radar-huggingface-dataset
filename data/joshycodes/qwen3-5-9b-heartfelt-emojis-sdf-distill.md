@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill
 - Modelo base: https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf
 - Dataset de destilacion: https://huggingface.co/datasets/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf-distill-sft
 - Modelo relacionado (const-intrinsic): https://huggingface.co/joshycodes/qwen3.5-9b-const-intrinsic-sdf

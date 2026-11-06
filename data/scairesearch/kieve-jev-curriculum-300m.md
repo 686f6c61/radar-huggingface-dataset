@@ -72,9 +72,9 @@ La model card indica que 0,576 en aegis2 es el mejor resultado de cualquier ejec
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kieve-JeV curriculum16k 300M | 296,6 M | No disponible | Decisión tipada con distribución calibrada y abstención | Apache-2.0 | HuggingFace, librería `kieve` |
-| ModernBERT-base (backbone) | No disponible en la información proporcionada | No disponible en la información proporcionada | Encoder de propósito general | Sujeta a su propia licencia | HuggingFace / Answer.AI |
-| Encoders de clasificación tipo BERT-base / DeBERTa-v3-base | No disponible en la información proporcionada | No disponible en la información proporcionada | Clasificación supervisada con cabeza fija | Variable | HuggingFace |
+| Kieve-JeV curriculum16k 300M | 296,6 M | No disponible | Decisión tipada con distribución calibrada y abstención | Apache-2.0 | Hugging Face, librería `kieve` |
+| ModernBERT-base (backbone) | No disponible en la información proporcionada | No disponible en la información proporcionada | Encoder de propósito general | Sujeta a su propia licencia | Hugging Face / Answer.AI |
+| Encoders de clasificación tipo BERT-base / DeBERTa-v3-base | No disponible en la información proporcionada | No disponible en la información proporcionada | Clasificación supervisada con cabeza fija | Variable | Hugging Face |
 
 La comparación directa es difícil: los encoders de clasificación convencionales emiten logits sobre un conjunto de etiquetas fijo durante el entrenamiento, mientras que este modelo define la distribución en tiempo de inferencia sobre las opciones recibidas y añade una cabeza explícita de abstención. No se dispone de datos públicos de benchmarks comunes entre esta familia y los encoders citados, por lo que no es posible establecer una comparación cuantitativa fiable.
 
@@ -94,5 +94,5 @@ La comparación directa es difícil: los encoders de clasificación convencional
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scairesearch/kieve-jev-curriculum-300m
+- Modelo en Hugging Face: https://huggingface.co/scairesearch/kieve-jev-curriculum-300m
 - Backbone referenciado en la model card: https://huggingface.co/answerdotai/ModernBERT-base

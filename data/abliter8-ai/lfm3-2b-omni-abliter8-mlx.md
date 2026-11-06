@@ -18,7 +18,7 @@ La ficha del autor advierte de que las comprobaciones funcionales de imagen y au
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | BF16; GGUF Q8_0, Q6_K, Q4_K_M, Q4_0; MLX 8-bit, 6-bit y 4-bit |
 | Idiomas soportados | Inglés (`en`) |
-| Licencia | LFM Open License v1.0 (`lfm1.0`, marcada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (`lfm1.0`, marcada como `other` en Hugging Face) |
 | Formato de pesos | Safetensors (Transformers), GGUF, MLX |
 | Pipeline declarado | `any-to-any` |
 | Modalidades de entrada | Texto, imagen (vision encoder), audio (audio encoder + LiquidCodec) |
@@ -36,7 +36,7 @@ La edición de abliter8-ai no injerta pesos de la variante de texto de 1,7B: aju
 - Generación de texto en inglés con el backbone de lenguaje LFM3 de 1,7B.
 - Comprensión de imágenes mediante el codificador de visión del modelo base, sin modificaciones respecto al original.
 - Procesamiento de audio mediante el codificador de audio y LiquidCodec, también intactos.
-- Pipeline `any-to-any`: el modelo está registrado en HuggingFace con esta etiqueta de pipeline, si bien la información disponible no detalla qué modalidades de salida están soportadas más allá de texto.
+- Pipeline `any-to-any`: el modelo está registrado en Hugging Face con esta etiqueta de pipeline, si bien la información disponible no detalla qué modalidades de salida están soportadas más allá de texto.
 - Ausencia prácticamente total de rechazos: 0/100 en la prueba estricta de rechazos dañinos y 3/100 en la amplia, según el autor.
 - Sin falsos rechazos en XSTest (0/100), lo que sugiere que la ablación no ha degradado la respuesta a peticiones legítimas en esa batería.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
@@ -112,11 +112,11 @@ Fidelidad por formato de cuantización (datos del autor):
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abliter8-ai/lfm3-2b-omni-abliter8-mlx
+- Modelo en Hugging Face: https://huggingface.co/abliter8-ai/lfm3-2b-omni-abliter8-mlx
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Colección LFM3 abliter8: https://huggingface.co/collections/abliter8-ai/lfm3-abliter8
-- Perfil del autor en HuggingFace: https://huggingface.co/abliter8-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/abliter8-ai
 - Perfil del autor en GitHub: https://github.com/abliter8-ai/
 - Anuncio de la familia LFM3 (Liquid AI): https://www.liquid.ai/blog/lfm3
 - Cobertura de MarkTechPost sobre LFM3: https://www.marktechpost.com/2026/10/27/liquid-ai-lfm3-open-weight-2b-multimodal-models/

@@ -76,8 +76,8 @@ Coste computacional: 2.45 GFLOPs por jugada con la partida cacheada (Allie 2.0: 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Allie 2.1 | 9.19B totales / 1.23B activos | no disponible | Prediccion de comportamiento humano en ajedrez (MoE) | MIT | HuggingFace, bot de Lichess |
-| Allie 2.0 | no disponible en la informacion | no disponible | Prediccion de comportamiento humano en ajedrez | no disponible | HuggingFace (`yimingzhang/allie-2.0`) |
+| Allie 2.1 | 9.19B totales / 1.23B activos | no disponible | Prediccion de comportamiento humano en ajedrez (MoE) | MIT | Hugging Face, bot de Lichess |
+| Allie 2.0 | no disponible en la informacion | no disponible | Prediccion de comportamiento humano en ajedrez | no disponible | Hugging Face (`yimingzhang/allie-2.0`) |
 | Allie (original) | no disponible en la informacion | no disponible | Prediccion de comportamiento humano en ajedrez | no disponible | Paper arXiv:2410.03893 y codigo en GitHub |
 | Motores de ajedrez clasicos (Stockfish, Leela Chess Zero) | no disponible | no disponible | Busqueda de la mejor jugada, no modelado humano | GPL / varias | Ampliamente disponibles |
 
@@ -97,7 +97,7 @@ La comparacion con motores clasicos es cualitativa: Stockfish y Leela optimizan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yimingzhang/allie-2.1
+- Modelo en Hugging Face: https://huggingface.co/yimingzhang/allie-2.1
 - Modelo predecesor Allie 2.0: https://huggingface.co/yimingzhang/allie-2.0
 - Paper original de Allie: https://arxiv.org/abs/2410.03893
 - Segundo paper referenciado en los tags: https://arxiv.org/abs/2605.19091

@@ -81,10 +81,10 @@ No se dispone de datos de WER comparativos frente a otros modelos en la informac
 
 | Modelo | Parametros | Idioma | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sakasegawa/parakeet-tdt_ctc-0.6b-ja-GGUF | 0,6B | japones | GGUF especifico de speech.cpp | CC-BY-4.0 | HuggingFace |
-| nvidia/parakeet-tdt_ctc-0.6b-ja (base) | 0,6B | japones | NeMo / PyTorch | CC-BY-4.0 | HuggingFace |
-| Whisper large-v3 | no disponible en la informacion | multilingue | PyTorch, GGUF, ONNX | MIT (segun el proyecto Whisper) | HuggingFace |
-| kotoba-whisper | no disponible en la informacion | japones | PyTorch, ONNX | no disponible en la informacion | HuggingFace |
+| sakasegawa/parakeet-tdt_ctc-0.6b-ja-GGUF | 0,6B | japones | GGUF especifico de speech.cpp | CC-BY-4.0 | Hugging Face |
+| nvidia/parakeet-tdt_ctc-0.6b-ja (base) | 0,6B | japones | NeMo / PyTorch | CC-BY-4.0 | Hugging Face |
+| Whisper large-v3 | no disponible en la informacion | multilingue | PyTorch, GGUF, ONNX | MIT (segun el proyecto Whisper) | Hugging Face |
+| kotoba-whisper | no disponible en la informacion | japones | PyTorch, ONNX | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos (WER) entre estas alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, idioma, formato y licencia.
 

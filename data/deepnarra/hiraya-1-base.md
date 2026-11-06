@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepNarra Hiraya-1-Base es un modelo fundacional (base model) experimental de tamaño muy reducido, desarrollado por la organización DeepNarra y publicado en HuggingFace en octubre de 2026. Con 117.993.216 parámetros serializados (unos 118M, de los cuales 80.545.538 son parámetros únicos con embebidos compartidos), se trata de un modelo de texto de fase 1 de preentrenamiento, no alineado ni ajustado por instrucciones. Su interés principal no está en el rendimiento bruto, sino en la arquitectura: un híbrido tripartito que combina un 75% de capas Mamba-2 State Space Duality (SSD) y un 25% de Differential Attention de Microsoft, junto a proyecciones ternarias estilo BitNet b1.58 y FFN SwiGLU.
+DeepNarra Hiraya-1-Base es un modelo fundacional (base model) experimental de tamaño muy reducido, desarrollado por la organización DeepNarra y publicado en Hugging Face en octubre de 2026. Con 117.993.216 parámetros serializados (unos 118M, de los cuales 80.545.538 son parámetros únicos con embebidos compartidos), se trata de un modelo de texto de fase 1 de preentrenamiento, no alineado ni ajustado por instrucciones. Su interés principal no está en el rendimiento bruto, sino en la arquitectura: un híbrido tripartito que combina un 75% de capas Mamba-2 State Space Duality (SSD) y un 25% de Differential Attention de Microsoft, junto a proyecciones ternarias estilo BitNet b1.58 y FFN SwiGLU.
 
 El modelo resuelve el problema de explorar memoria recurrente subcuadrática y cuantización extrema en presupuestos de cómputo compactos. Fue preentrenado durante 5.000 pasos con el optimizador Muon (con ortogonalización Newton-Schulz) más AdamW, empleando sumación compensada Kahan de 64 bits, y la pérdida convergió de 33,9651 a 0,63. Incluye un tokenizador BPE propio de 48.760 tokens con tokens especiales nativos para razonamiento y modalidades (`<think>`, `<click>`, `<touch>`, `<audio>`, `<video>`, `<box3d>`).
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: con 450,12 MB de pesos en safetensors, el modelo completo cabe con holgura en menos de 1-2 GB de VRAM incluso en FP32; no se publica una cifra oficial (no disponible).
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU de consumo (por ejemplo una RTX 3060 o superior) es más que suficiente. También es viable ejecutarlo en CPU.
 - Consumer GPU: cabe íntegramente en prácticamente cualquier GPU moderna, incluidas las de gama de entrada; el tamaño del repositorio completo es de 0,5 GB.
-- Opciones de despliegue: integración nativa con la librería `transformers` de HuggingFace (carga manual mediante `safetensors` y `AutoTokenizer`, según el ejemplo de la model card). La model card menciona GGUF, lo que sugiere compatibilidad con el ecosistema llama.cpp/Ollama, aunque no se confirma soporte oficial (no disponible). No se menciona soporte para vLLM ni TGI.
+- Opciones de despliegue: integración nativa con la librería `transformers` de Hugging Face (carga manual mediante `safetensors` y `AutoTokenizer`, según el ejemplo de la model card). La model card menciona GGUF, lo que sugiere compatibilidad con el ecosistema llama.cpp/Ollama, aunque no se confirma soporte oficial (no disponible). No se menciona soporte para vLLM ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|
 | DeepNarra Hiraya-1-Base | 118M (80,5M únicos) | Tri-híbrido Mamba-2 SSD + DiffAttn + BitNet b1.58 | Apache 2.0 | Modelo base experimental, fase 1 de una línea de 4 fases |
 | Qwen2.5-0.5B (referencia de tamaño similar) | 494M | Transformer denso | Apache 2.0 (salvo la variante 3B) | Transformer convencional, ecosistema maduro; benchmarks publicados |
-| SmolLM2-135M (HuggingFace) | 135M | Transformer denso | Apache 2.0 | Modelo base de tamaño comparable orientado a investigación en modelos pequeños |
+| SmolLM2-135M (Hugging Face) | 135M | Transformer denso | Apache 2.0 | Modelo base de tamaño comparable orientado a investigación en modelos pequeños |
 
 Comparación cualitativa: frente a alternativas transformer de tamaño similar como SmolLM2-135M o Qwen2.5-0.5B, Hiraya-1-Base se distingue por su arquitectura híbrida SSM-atención y sus pesos ternarios BitNet, orientados a eficiencia en borde. A cambio, carece de benchmarks públicos, de ecosistema de despliegue consolidado y de ajuste por instrucciones, por lo que su valor es principalmente investigador.
 

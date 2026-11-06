@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT8
+- Modelo en Hugging Face: https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT8
 - Modelo base gemma-3-4b-it de Google: https://huggingface.co/google/gemma-3-4b-it
 - Version uncensored de Nidum: https://huggingface.co/nidum/Nidum-Gemma-3-4B-it-Uncensored
 - Guia de ejecucion local de Gemma: https://locallyuncensored.com/blog/gemma-4-local-guide.html

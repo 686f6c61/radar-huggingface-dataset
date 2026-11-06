@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala orientado a generación de texto, agentes autónomos y codificación compleja, publicado por el equipo zai-org (Z.ai) y distribuido en el repositorio de HuggingFace `ariancort/GLM-5.3` (una réplica de terceros del repositorio oficial). Se trata de un modelo de arquitectura MoE (Mixture of Experts) con atención dispersa, identificada en los tags como `glm_moe_dsa`, con 753.329.940.480 parámetros totales (unos 753,3 mil millones) según el recuento real de los archivos safetensors, y un tamaño de repositorio de 755,7 GB.
+GLM-5.3 es un modelo de lenguaje de gran escala orientado a generación de texto, agentes autónomos y codificación compleja, publicado por el equipo zai-org (Z.ai) y distribuido en el repositorio de Hugging Face `ariancort/GLM-5.3` (una réplica de terceros del repositorio oficial). Se trata de un modelo de arquitectura MoE (Mixture of Experts) con atención dispersa, identificada en los tags como `glm_moe_dsa`, con 753.329.940.480 parámetros totales (unos 753,3 mil millones) según el recuento real de los archivos safetensors, y un tamaño de repositorio de 755,7 GB.
 
 La propuesta diferencial de GLM-5.3 no está en el preentrenamiento, sino en el post-entrenamiento: la model card indica explícitamente que utiliza el mismo modelo base que GLM-5.2 y que todas las mejoras provienen de trabajo posterior al preentrenamiento. Los avances declarados se concentran en dos ejes: codificación compleja y tareas de horizonte largo (con una mejora del 50% sobre GLM-5.2 en el benchmark interno Z.ai Code Bench, y estado del arte open source en Terminal Bench 3.0 y Agents' Last Exam), y una capacidad emergente de ciberseguridad que el propio autor describe como inesperadamente acelerada, con resultados estado del arte en CyberGym para descubrimiento de vulnerabilidades.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque compite directamente, según sus propios números, con
 | Tamano del repositorio | 755,7 GB |
 | Libreria | transformers (tag `glm_moe_dsa` en la documentacion de Transformers) |
 | Pipeline | text-generation |
-| Compatibilidad | `endpoints_compatible` (HuggingFace Inference Endpoints) |
+| Compatibilidad | `endpoints_compatible` (Hugging Face Inference Endpoints) |
 | Fecha de creacion en HF | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
@@ -126,7 +126,7 @@ Frente a GLM-5.2, su predecesor directo con el mismo modelo base, la mejora es s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ariancort/GLM-5.3
+- Modelo en Hugging Face: https://huggingface.co/ariancort/GLM-5.3
 - Repositorio oficial de referencia: https://github.com/zai-org/GLM-5
 - Documentación del modelo en Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm_moe_dsa.md
 - Cookbook de SGLang para GLM-5.3: https://cookbook.sglang.io/autoregressive/GLM/GLM-5.3

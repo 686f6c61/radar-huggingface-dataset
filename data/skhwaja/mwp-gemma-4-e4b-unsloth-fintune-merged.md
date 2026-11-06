@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged` es un ajuste fino (fine-tuning) del modelo multimodal `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, publicado por el usuario skhwaja. Se trata de un modelo de la familia Gemma 4 de Google, en su variante E4B (instruida, con capacidad de entrada imagen-texto), que ha sido entrenado con Unsloth y la librería TRL y posteriormente fusionado (merged) en pesos completos en safetensors para su distribución en HuggingFace. El repositorio ocupa 16,0 GB y contiene 7.996.156.490 parámetros reales según los safetensors.
+`skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged` es un ajuste fino (fine-tuning) del modelo multimodal `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, publicado por el usuario skhwaja. Se trata de un modelo de la familia Gemma 4 de Google, en su variante E4B (instruida, con capacidad de entrada imagen-texto), que ha sido entrenado con Unsloth y la librería TRL y posteriormente fusionado (merged) en pesos completos en safetensors para su distribución en Hugging Face. El repositorio ocupa 16,0 GB y contiene 7.996.156.490 parámetros reales según los safetensors.
 
 El modelo resuelve el caso de uso de quien necesita un Gemma 4 E4B ya adaptado a una tarea concreta (el prefijo "mwp" sugiere un proyecto o dominio específico, no documentado en la model card) y listo para consumirse con `transformers` sin tener que aplicar el adaptador LoRA por separado, ya que los pesos vienen fusionados. Al estar construido sobre una base cuantizada en 4 bits (bnb-4bit) y fusionado después, conviene verificar la precisión efectiva de los pesos resultantes antes de usarlo en producción.
 
@@ -45,7 +45,7 @@ El entrenamiento se realizó con Unsloth y TRL, según indica la propia model ca
 - Generación de descripciones de imágenes o etiquetado asistido: útil para enriquecer catálogos o datasets internos con anotaciones en inglés.
 - Base para un segundo ajuste: al estar los pesos fusionados, sirve como punto de partida limpio para un nuevo fine-tuning con Unsloth o TRL sobre un dataset propio.
 - Evaluación comparativa de técnicas de merge: sirve como referencia para medir cuánto se degrada o se conserva el rendimiento al fusionar un adaptador entrenado sobre una base cuantizada en 4 bits.
-- Despliegue en endpoint compatible con TGI: la etiqueta `text-generation-inference` y `endpoints_compatible` permiten servirlo en infraestructura de HuggingFace sin conversión adicional.
+- Despliegue en endpoint compatible con TGI: la etiqueta `text-generation-inference` y `endpoints_compatible` permiten servirlo en infraestructura de Hugging Face sin conversión adicional.
 
 ## Benchmarks y rendimiento
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged | ~8B (7.996.156.490) | no disponible | imagen-texto | apache-2.0 (declarada) | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible en la información | no disponible | imagen-texto | no disponible en la información | HuggingFace |
-| skhwaja/mwp-gemma-3-4b-unsloth-fintune-merged | no disponible en la información | no disponible | no disponible | no disponible en la información | HuggingFace |
+| skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged | ~8B (7.996.156.490) | no disponible | imagen-texto | apache-2.0 (declarada) | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible en la información | no disponible | imagen-texto | no disponible en la información | Hugging Face |
+| skhwaja/mwp-gemma-3-4b-unsloth-fintune-merged | no disponible en la información | no disponible | no disponible | no disponible en la información | Hugging Face |
 | Gemma 4 E4B (Google) | no disponible en la información | no disponible | texto, visión, audio (según documentación de Unsloth) | licencia Gemma | Pesos abiertos |
 
 No se dispone de datos públicos de rendimiento en la información proporcionada que permitan una comparación cuantitativa con alternativas como Qwen2.5-VL-7B o Llama 3.2 11B Vision.
@@ -85,7 +85,7 @@ No se dispone de datos públicos de rendimiento en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged
+- Modelo en Hugging Face: https://huggingface.co/skhwaja/mwp-gemma-4-E4B-unsloth-fintune-merged
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - Versión previa del autor (Gemma 3 4B): https://huggingface.co/skhwaja/mwp-gemma-3-4b-unsloth-fintune-merged
 - Guía de fine-tuning de Gemma 4 con Unsloth: https://unsloth.ai/docs/models/gemma-4/train

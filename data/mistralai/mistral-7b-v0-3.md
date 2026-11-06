@@ -6,7 +6,7 @@ Mistral-7B-v0.3 es un modelo de lenguaje de tipo transformer decoder-only desarr
 
 Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas, y esta concebido como modelo base (no instruct) para ser ajustado posteriormente. Resuelve tareas de generacion y completado de texto, y resulta relevante porque combina un tamano contenido, apto para GPU de consumo, con una licencia permisiva, algo poco habitual en modelos de esta categoria.
 
-Mistral AI recomienda su uso junto con la libreria mistral-inference, aunque tambien es compatible con transformers y con motores de inferencia como vLLM. En el momento de redactar esta ficha acumula 235.605 descargas y 617 likes en HuggingFace.
+Mistral AI recomienda su uso junto con la libreria mistral-inference, aunque tambien es compatible con transformers y con motores de inferencia como vLLM. En el momento de redactar esta ficha acumula 235.605 descargas y 617 likes en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mistral-7B-v0.3 | 7.248 M | 32768 tokens (familia Mistral 7B) | Apache 2.0 | HuggingFace, uso comercial sin restricciones |
-| Mistral-7B-v0.2 | 7.242 M aprox. | 32768 tokens (familia Mistral 7B) | Apache 2.0 | HuggingFace; vocabulario de 32000 tokens |
-| Llama 2 7B | 6.700 M | 4096 tokens | Licencia comunitaria de Meta | HuggingFace, con condiciones de uso |
-| Llama 3 8B | 8.000 M | 8192 tokens | Licencia comunitaria de Meta | HuggingFace, con condiciones de uso |
+| Mistral-7B-v0.3 | 7.248 M | 32768 tokens (familia Mistral 7B) | Apache 2.0 | Hugging Face, uso comercial sin restricciones |
+| Mistral-7B-v0.2 | 7.242 M aprox. | 32768 tokens (familia Mistral 7B) | Apache 2.0 | Hugging Face; vocabulario de 32000 tokens |
+| Llama 2 7B | 6.700 M | 4096 tokens | Licencia comunitaria de Meta | Hugging Face, con condiciones de uso |
+| Llama 3 8B | 8.000 M | 8192 tokens | Licencia comunitaria de Meta | Hugging Face, con condiciones de uso |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.3
+- Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Mistral-7B-v0.2: https://huggingface.co/mistralai/Mistral-7B-v0.2
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference
 - Sitio oficial de Mistral AI: https://mistral.ai/

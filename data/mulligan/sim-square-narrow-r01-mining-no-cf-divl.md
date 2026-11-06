@@ -86,9 +86,9 @@ No se dispone de datos publicados de modelos comparables externos (mismo tamano 
 
 | Modelo | Actor | Critico | Semillas | Tasa de exito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `sim-square-narrow-r01-mining-no-cf-divl` (este) | Difusion congelada (heredada) | DIVL distributional | 5 | 92,69% agregada | MIT | HuggingFace, 1,4 GB |
-| `sim-square-narrow-r01-mining-no-cf-idql` (padre) | Difusion congelada | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Otras variantes de la campana `sim-square-narrow` | no disponible | no disponible | no disponible | no disponible | no disponible | organizacion `mulligan` en HuggingFace |
+| `sim-square-narrow-r01-mining-no-cf-divl` (este) | Difusion congelada (heredada) | DIVL distributional | 5 | 92,69% agregada | MIT | Hugging Face, 1,4 GB |
+| `sim-square-narrow-r01-mining-no-cf-idql` (padre) | Difusion congelada | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Otras variantes de la campana `sim-square-narrow` | no disponible | no disponible | no disponible | no disponible | no disponible | organizacion `mulligan` en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -105,7 +105,7 @@ No se dispone de datos publicados de modelos comparables externos (mismo tamano 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-mining-no-cf-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-mining-no-cf-divl
 - Modelo padre (actor IDQL): https://huggingface.co/mulligan/sim-square-narrow-r01-mining-no-cf-idql
 - Dataset de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-sobol
 - Dataset DAgger (mining, sin correccion humana): https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-dagger-mining-no-cf
@@ -113,7 +113,7 @@ No se dispone de datos publicados de modelos comparables externos (mismo tamano 
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset de rollouts de politica de la campana c03: https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts
 - Busqueda de datasets de la familia `sim-square-narrow`: https://huggingface.co/datasets?other=sim-square-narrow
-- Organizacion Mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organizacion Mulligan en Hugging Face: https://huggingface.co/mulligan
 - Pagina del proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
 

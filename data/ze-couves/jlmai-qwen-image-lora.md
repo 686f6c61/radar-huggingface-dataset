@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ze-couves/jlmai-qwen-image-lora` es un adaptador LoRA de identidad entrenado sobre el modelo de difusion de imagenes Qwen-Image (`Qwen/Qwen-Image`). Lo publica el usuario `ze-couves` en HuggingFace y su funcion es inyectar en el modelo base la representacion de un sujeto concreto ("a young woman", segun la model card) para generar imagenes coherentes de esa identidad sin necesidad de reentrenar el modelo completo.
+`ze-couves/jlmai-qwen-image-lora` es un adaptador LoRA de identidad entrenado sobre el modelo de difusion de imagenes Qwen-Image (`Qwen/Qwen-Image`). Lo publica el usuario `ze-couves` en Hugging Face y su funcion es inyectar en el modelo base la representacion de un sujeto concreto ("a young woman", segun la model card) para generar imagenes coherentes de esa identidad sin necesidad de reentrenar el modelo completo.
 
 El adaptador se entrena con el flujo `qwen/qwen-image-lora-trainer` alojado en Replicate, con 2000 pasos, rango 32 y tasa de aprendizaje 0,0005, y posteriormente se convierte al formato que espera la plataforma Pruna. El repositorio ocupa 0,6 GB y expone los pesos como `lora.safetensors` en la raiz.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ze-couves/jlmai-qwen-image-lora | LoRA sobre Qwen-Image | no disponible (0,6 GB) | no aplica | other | HuggingFace |
-| Qwen/Qwen-Image | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible | HuggingFace |
-| Otros LoRA de identidad sobre Qwen-Image | Adaptadores LoRA | variable | no aplica | variable | HuggingFace |
+| ze-couves/jlmai-qwen-image-lora | LoRA sobre Qwen-Image | no disponible (0,6 GB) | no aplica | other | Hugging Face |
+| Qwen/Qwen-Image | Modelo base de difusion texto-a-imagen | no disponible | no aplica | no disponible | Hugging Face |
+| Otros LoRA de identidad sobre Qwen-Image | Adaptadores LoRA | variable | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de alternativas concretas comparables en la informacion proporcionada; la comparativa se limita a la relacion con el modelo base.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de alternativas concretas comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ze-couves/jlmai-qwen-image-lora
+- Hugging Face: https://huggingface.co/ze-couves/jlmai-qwen-image-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Trainer utilizado (Replicate): https://replicate.com/qwen/qwen-image-lora-trainer
 - Plataforma de despliegue mencionada: https://pruna.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-t1-weapon-fp32 es un modelo de vision artificial publicado por ECE-Software en HuggingFace, orientado a la deteccion de armas en imagenes dentro de pipelines de moderacion de contenido. Se distribuye como un unico fichero ONNX en precision FP32 de 12,27 MB, lo que lo situa en la categoria de modelos muy ligeros pensados para ejecutarse en servidor sobre el 100 % de las subidas de una plataforma. La model card lo clasifica como "Tier T1" dentro de una jerarquia propia de moderacion.
+t1-weapon-fp32 es un modelo de vision artificial publicado por ECE-Software en Hugging Face, orientado a la deteccion de armas en imagenes dentro de pipelines de moderacion de contenido. Se distribuye como un unico fichero ONNX en precision FP32 de 12,27 MB, lo que lo situa en la categoria de modelos muy ligeros pensados para ejecutarse en servidor sobre el 100 % de las subidas de una plataforma. La model card lo clasifica como "Tier T1" dentro de una jerarquia propia de moderacion.
 
 El modelo distingue cuatro clases: Gun, explosion, grenade y knife, y aplica un umbral de decision fijado en 0,35. Segun el autor, su funcion dentro del sistema es actuar como capa de verificacion que "captura el 100 % de los fallos de armas de T0", es decir, como segunda pasada sobre imagenes que un modelo de nivel inferior no ha marcado. No se proporcionan datos sobre arquitectura, dataset de entrenamiento ni metricas formales de evaluacion.
 
@@ -25,7 +25,7 @@ La relevancia practica del modelo radica en su coste de despliegue: al ser un ON
 | Umbral de decision | 0,35 |
 | Nivel o tier | T1 (jerarquia del autor) |
 | Tamano del fichero | 12,27 MB |
-| Tamano del repositorio | 0,0 GB segun la API de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun la API de Hugging Face |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -101,6 +101,6 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ECE-Software/t1-weapon-fp32
+- Modelo en Hugging Face: https://huggingface.co/ECE-Software/t1-weapon-fp32
 - Fichero de pesos: https://huggingface.co/ECE-Software/t1-weapon-fp32/blob/main/model.onnx
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni a documentacion tecnica asociada. Los resultados devueltos corresponden a la Ecole Centrale d'Electronique (ECE), una escuela de ingenieria francesa sin relacion con el modelo.

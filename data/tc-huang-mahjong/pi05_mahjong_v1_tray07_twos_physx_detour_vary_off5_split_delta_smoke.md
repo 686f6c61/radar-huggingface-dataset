@@ -80,7 +80,7 @@ La comparación cuantitativa con alternativas no está disponible: no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_tray07_twos_physx_detour_vary_off5_split_delta_smoke
+- Modelo en Hugging Face: https://huggingface.co/tc-huang-mahjong/pi05_mahjong_v1_tray07_twos_physx_detour_vary_off5_split_delta_smoke
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/tc-huang-mahjong/mahjong_v1_tray07_twos_physx_detour_vary_off5
 - Código de entrenamiento (commit f3fbc1b5): https://github.com/tc-huang/mahjong-lab/tree/f3fbc1b5f214b87c4a426e05146162ae1cdab9c8

@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en los mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx
+- Modelo en Hugging Face: https://huggingface.co/Shiftedx/qwen3.8-27b-aeon-ultimate-uncensored-mxfp4-vision-mtplx
 - Modelo base: https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Conversión similar sin visión ni MTP: https://huggingface.co/Shiftedx/Qwen3.8-27B-MLX-MXFP4
 - Repo GitHub con GGUF del mismo modelo base: https://github.com/Wassimyounes01/qwen38-uncensored

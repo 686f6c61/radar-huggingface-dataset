@@ -4,7 +4,7 @@
 
 `lead-decision-models-reply-router` es un modelo de decisión (no generativo) construido a partir de `LiquidAI/LFM3-1.7B` mediante fine-tuning con la librería Unsloth y una cabeza de decisión de Clef. Su función es puntuar un conjunto de opciones predefinidas y devolver probabilidades: clasifica la respuesta de un prospecto a un primer correo comercial en una de 11 intenciones y predice si procede un siguiente paso. No genera texto libre ni envía mensajes; es un componente de puntuación dentro de un pipeline mayor.
 
-El modelo es un artefacto didáctico asociado a un tutorial público sobre fine-tuning de modelos de decisión, desarrollado por el usuario de HuggingFace `raoofaltaher`. Se apoya en el modelo base LFM3-1.7B de Liquid AI, que aporta la arquitectura y el conocimiento lingüístico subyacente, mientras que la cabeza de decisión añade la capacidad de clasificación calibrada sobre un espacio cerrado de etiquetas.
+El modelo es un artefacto didáctico asociado a un tutorial público sobre fine-tuning de modelos de decisión, desarrollado por el usuario de Hugging Face `raoofaltaher`. Se apoya en el modelo base LFM3-1.7B de Liquid AI, que aporta la arquitectura y el conocimiento lingüístico subyacente, mientras que la cabeza de decisión añade la capacidad de clasificación calibrada sobre un espacio cerrado de etiquetas.
 
 Su relevancia es acotada: con 0 descargas y 0 likes en el momento de redactar esta ficha, y entrenado sobre 617 respuestas sintéticas generadas por un LLM, sirve como referencia metodológica para construir routers de decisión con modelos pequeños, no como solución lista para producción sobre datos reales de CRM.
 
@@ -72,8 +72,8 @@ Métricas de test del run registrado por el autor, comparadas con una línea bas
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lead-decision-models-reply-router | 1,7 B (base) | no disponible | Clasificador de decisión sobre 11 intenciones | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/LFM3-1.7B | 1,7 B | no disponible | Modelo generativo base | LFM Open License v1.0 | HuggingFace, modelo público de Liquid AI |
+| lead-decision-models-reply-router | 1,7 B (base) | no disponible | Clasificador de decisión sobre 11 intenciones | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/LFM3-1.7B | 1,7 B | no disponible | Modelo generativo base | LFM Open License v1.0 | Hugging Face, modelo público de Liquid AI |
 | TF-IDF + regresión logística (línea base del autor) | no aplica | no aplica | Clasificador clásico | no aplica | Implementación propia del tutorial |
 
 La comparación directa con modelos de decisión equivalentes no está disponible: no se conocen otros routers publicados con esta misma cabeza Clef y este mismo conjunto de etiquetas. Frente al modelo base, la diferencia es funcional (clasificación calibrada frente a generación); frente a la línea base clásica, la ventaja medida es de 7,3 puntos de macro_f1 en la tarea de 11 intenciones.
@@ -91,7 +91,7 @@ La comparación directa con modelos de decisión equivalentes no está disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raoofaltaher/lead-decision-models-reply-router
+- Modelo en Hugging Face: https://huggingface.co/raoofaltaher/lead-decision-models-reply-router
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/ac2586a34f1a1c03329dbdcdefabd8b6478ddaa7/LICENSE
 - Tutorial del autor: https://raoofaltaher.com/tutorials/fine-tune-decision-models-reply-routing

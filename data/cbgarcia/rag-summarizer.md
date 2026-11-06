@@ -53,4 +53,4 @@ No disponible. No hay un modelo comparable porque no existe un artefacto de infe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cbgarcia/rag-summarizer
+- Repositorio Hugging Face: https://huggingface.co/cbgarcia/rag-summarizer

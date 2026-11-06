@@ -91,7 +91,7 @@ La diferencia fundamental no es de tamano, sino de madurez: las alternativas cue
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-01-circuit-50e740d34bdc
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-01-circuit-50e740d34bdc
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

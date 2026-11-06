@@ -99,7 +99,7 @@ No se dispone de datos sobre alternativas externas de tamaño o tarea comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dealignai/Ornith-1.5-122B-UNCENSORED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/dealignai/Ornith-1.5-122B-UNCENSORED-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B
 - Drafter DFlash2 de Inco AI: https://huggingface.co/incoai/Ornith-1.5-122B-DFlash2
 - Conversión GGUF del drafter por kaivoss: https://huggingface.co/kaivoss/Ornith-1.5-122B-DFlash2-GGUF

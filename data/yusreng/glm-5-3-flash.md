@@ -80,8 +80,8 @@ No se dispone de datos suficientes sobre GLM-5.2 ni Claude Opus 4.8 para una com
 
 ## Enlaces
 
-- Repositorio HuggingFace (yusreng): https://huggingface.co/yusreng/GLM-5.3-Flash
-- Repositorio HuggingFace oficial (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio Hugging Face (yusreng): https://huggingface.co/yusreng/GLM-5.3-Flash
+- Repositorio Hugging Face oficial (zai-org): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación de la API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

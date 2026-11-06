@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`neelendrareddy9001/my-testing` es un repositorio alojado en HuggingFace por el usuario neelendrareddy9001. La informacion publica disponible es minima: la model card se limita a la declaracion de licencia `apache-2.0` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline (`pipeline: no disponible`), no especifica idiomas soportados y no registra ningun tipo de cuantizacion ni formato de pesos documentado.
+`neelendrareddy9001/my-testing` es un repositorio alojado en Hugging Face por el usuario neelendrareddy9001. La informacion publica disponible es minima: la model card se limita a la declaracion de licencia `apache-2.0` y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. El repositorio no declara pipeline (`pipeline: no disponible`), no especifica idiomas soportados y no registra ningun tipo de cuantizacion ni formato de pesos documentado.
 
 El unico dato objetivo de actividad es el contador publico de la plataforma: 0 descargas y 0 likes en la fecha de actualizacion registrada. Esto es coherente con un artefacto de pruebas (el propio nombre, "my-testing", apunta a esa interpretacion) mas que con un modelo publicado para uso en produccion. No hay evidencia de pesos entrenados, de configuracion de modelo ni de tokenizador.
 
@@ -42,7 +42,7 @@ No hay informacion sobre el tokenizador, el vocabulario, la ventana de contexto 
 
 Los siguientes escenarios son condicionales: solo serian aplicables si el autor publica finalmente un modelo funcional con pesos verificables y una model card que documente arquitectura, contexto y licencia de uso. Se listan como marco de evaluacion, no como capacidades confirmadas.
 
-- Evaluacion de artefactos de HuggingFace: usar el repositorio como caso de estudio de como una model card incompleta (solo el campo `license`) impide la reproducibilidad, y definir una checklist minima de publicacion antes de integrar cualquier modelo en un pipeline.
+- Evaluacion de artefactos de Hugging Face: usar el repositorio como caso de estudio de como una model card incompleta (solo el campo `license`) impide la reproducibilidad, y definir una checklist minima de publicacion antes de integrar cualquier modelo en un pipeline.
 - Prototipado interno en un entorno controlado: si el repositorio contiene pesos, podrian cargarse unicamente en una maquina aislada para comprobar si la inferencia produce texto coherente, antes de considerar cualquier uso posterior.
 - Pruebas de integracion de la libreria Transformers: verificar que la carga del modelo no falla y que el tokenizador asociado existe, lo que sirve para validar el proceso de publicacion del propio autor.
 - Docencia y formacion: emplear el repositorio como ejemplo practico de auditoria de modelos open source, comparando lo que declara la plataforma (licencia, etiquetas, contadores) con lo que realmente aporta la model card.
@@ -71,7 +71,7 @@ No disponible. No hay informacion suficiente sobre este repositorio (arquitectur
 
 - Model card practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, uso previsto ni limitaciones.
 - Sin evidencia de pesos utilizables ni de ficheros de configuracion; el repositorio podria no contener un modelo funcional.
-- Sin `pipeline` declarado en HuggingFace, lo que impide a la plataforma clasificar la tarea del modelo.
+- Sin `pipeline` declarado en Hugging Face, lo que impide a la plataforma clasificar la tarea del modelo.
 - Idiomas no declarados: no puede asumirse cobertura multilingue ni siquiera en ingles.
 - Cero descargas y cero likes: no existe validacion por parte de la comunidad ni reportes de uso independientes.
 - Riesgo de alucinacion: no evaluable, al no haberse publicado ninguna evaluacion.
@@ -82,5 +82,5 @@ No disponible. No hay informacion suficiente sobre este repositorio (arquitectur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neelendrareddy9001/my-testing
+- Repositorio en Hugging Face: https://huggingface.co/neelendrareddy9001/my-testing
 - La busqueda web asociada no devolvio resultados tecnicos relacionados con el modelo: los enlaces recuperados corresponden a recetas de cocina (tasteofhome.com, allrecipes.com, kitchendivas.com, tastesbetterfromscratch.com, thekitchn.com) y no guardan relacion con inteligencia artificial. No se dispone por tanto de papers, blogs tecnicos, repositorios de codigo ni demos adicionales.

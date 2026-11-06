@@ -4,7 +4,7 @@
 
 GLM-5.3-Flash es un modelo multimodal nativo desarrollado por Z.ai (organización `zai-org`), presentado como el primer modelo de la familia GLM-5 con capacidades multimodales integradas desde el entrenamiento. Combina capas de atención lineal KDA con capas de atención dispersa aplicadas de forma periódica, una pila de feed-forward de mezcla de expertos (MoE) dispersa y conexiones hiperbólicas con restricción de variedad (manifold-constrained hyper-connections), todo ello con una capa nativa de predicción del siguiente token (MTP). Soporta una ventana de contexto de 1.000.000 de tokens y está orientado a flujos de trabajo de código y agentes con comprensión visual.
 
-La entrada de HuggingFace analizada en esta ficha no corresponde a los pesos del modelo, sino a un archivo de runtime en formato Docker-save publicado por el usuario `manateelazycat` (`GLM-5.3-Flash-TensorFold-Runtime`, 5,9 GB). Se trata de un entorno de inferencia empaquetado para dos nodos NVIDIA Thor T5000 con driver 595.78 y SM 11.0, que no contiene pesos y requiere descargar por separado las instantáneas del modelo objetivo y del borrador DFlash2. El runtime fija TensorFold 0.6.1 junto con Mia 1.3.2 y los parches validados de decodificador y comunicación para Thor.
+La entrada de Hugging Face analizada en esta ficha no corresponde a los pesos del modelo, sino a un archivo de runtime en formato Docker-save publicado por el usuario `manateelazycat` (`GLM-5.3-Flash-TensorFold-Runtime`, 5,9 GB). Se trata de un entorno de inferencia empaquetado para dos nodos NVIDIA Thor T5000 con driver 595.78 y SM 11.0, que no contiene pesos y requiere descargar por separado las instantáneas del modelo objetivo y del borrador DFlash2. El runtime fija TensorFold 0.6.1 junto con Mia 1.3.2 y los parches validados de decodificador y comunicación para Thor.
 
 Su relevancia actual radica en que demuestra un despliegue de contexto de 1M tokens sobre hardware ARM64 de borde (Thor), con una capacidad por defecto de 1.048.576 tokens por petición y una reserva de KV compartida de 2.684.928 tokens repartida en cuatro flujos. La validación de referencia incluye compilación JIT de CUDA con caché vacía, visión, salida estructurada, herramientas y recuperación de tres posiciones a 1M de contexto con regex guiada solo en formato.
 
@@ -85,10 +85,10 @@ Con los datos disponibles solo puede compararse el propio modelo con sus variant
 
 | Modelo | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|
-| GLM-5.3-Flash (Z.ai) | 1M tokens | MIT (checkpoint) | HuggingFace `zai-org/GLM-5.3-Flash` | no disponible |
-| GLM-5.3-Flash-MLX-oQ4-MTP | no disponible | no disponible | HuggingFace `TensorFold/GLM-5.3-Flash-MLX-oQ4-MTP` | no disponible |
+| GLM-5.3-Flash (Z.ai) | 1M tokens | MIT (checkpoint) | Hugging Face `zai-org/GLM-5.3-Flash` | no disponible |
+| GLM-5.3-Flash-MLX-oQ4-MTP | no disponible | no disponible | Hugging Face `TensorFold/GLM-5.3-Flash-MLX-oQ4-MTP` | no disponible |
 | GLM-5.3-Flash-MLX-4bit-MTP | no disponible | no disponible | Referenciado en el runbook de TensorFold | no disponible |
-| GLM-5.3-Flash-DFlash2 (borrador) | no disponible | CC BY-NC-ND 4.0 | HuggingFace `incoai/GLM-5.3-Flash-DFlash2` | no disponible |
+| GLM-5.3-Flash-DFlash2 (borrador) | no disponible | CC BY-NC-ND 4.0 | Hugging Face `incoai/GLM-5.3-Flash-DFlash2` | no disponible |
 | GLM-5.3 (modelo base de la familia) | no disponible | no disponible | No citado como snapshot abierto en la información | no disponible |
 
 ## Limitaciones y advertencias

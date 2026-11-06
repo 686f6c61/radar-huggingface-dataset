@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hello2937/mynamealert-thai-zipformer",
+  "slug": "hello2937-mynamealert-thai-zipformer",
+  "author": "hello2937",
+  "url": "https://huggingface.co/hello2937/mynamealert-thai-zipformer",
+  "created_at": "2026-11-06T12:06:40.000Z",
+  "updated_at": "2026-11-06T12:14:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "onnx",
+    "speech-recognition",
+    "sherpa-onnx",
+    "zipformer",
+    "th",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157013427,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zipformer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/zipformer",
+      "snippet": "Zipformer Transformer‑based automatic speech recognition (ASR) model for English and Chinese language. Zipformer streaming ASR (Automatic Speech Recognition) model is a state‑of‑the‑art system designed for transcribing spoken language into written text streamingly. This model is based on the transformer architecture and has been optimized for edge inference by replacing linear layers ..."
+    }
+  ]
+}

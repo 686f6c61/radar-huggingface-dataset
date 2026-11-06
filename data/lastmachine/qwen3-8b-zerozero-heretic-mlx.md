@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX
+- Modelo en Hugging Face: https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic-MLX
 - Modelo base modificado (16 bits): https://huggingface.co/LastMachine/Qwen3-8B-ZeroZero-Heretic
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-8B
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

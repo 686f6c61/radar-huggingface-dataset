@@ -19,7 +19,7 @@ Este modelo resuelve el problema de desplegar un modelo de 2,4 billones de pará
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (FP8, `float-quantized` con compressed-tensors) |
 
-Nota: el repositorio de HuggingFace indica un tamaño de 1098,8 GB, mientras que la model card del autor especifica 2453,05 GB en disco (572 shards). La discrepancia sugiere que el repo listado puede estar incompleto o que la medida de HuggingFace no refleja el tamaño real de los archivos.
+Nota: el repositorio de Hugging Face indica un tamaño de 1098,8 GB, mientras que la model card del autor especifica 2453,05 GB en disco (572 shards). La discrepancia sugiere que el repo listado puede estar incompleto o que la medida de Hugging Face no refleja el tamaño real de los archivos.
 
 ## Arquitectura y entrenamiento
 
@@ -78,11 +78,11 @@ Las variantes cuantizadas del mismo modelo se diferencian en el error relativo: 
 - **Idiomas**: no se ha confirmado la lista de idiomas soportados. Aunque Qwen suele ser multilingüe, es recomendable verificar el comportamiento en el idioma objetivo antes de desplegar.
 - **Restricciones de licencia**: Apache-2.0 permite uso comercial, pero el modelo base es de Qwen; debe cumplirse la licencia del modelo base y la de los pesos cuantizados (misma Apache-2.0). No hay restricciones adicionales conocidas.
 - **Requisitos de despliegue**: el tamaño de 2453 GB hace inviable el despliegue en hardware de consumo o en clústeres pequeños; solo es práctico para organizaciones con infraestructura de centro de datos y múltiples GPUs de gran memoria.
-- **Repositorio incompleto**: el tamaño del repo en HuggingFace (1098,8 GB) es menor que el tamaño en disco declarado (2453,05 GB), lo que sugiere que el repo puede estar incompleto o que la medida es incorrecta; verificar antes de descargar.
+- **Repositorio incompleto**: el tamaño del repo en Hugging Face (1098,8 GB) es menor que el tamaño en disco declarado (2453,05 GB), lo que sugiere que el repo puede estar incompleto o que la medida es incorrecta; verificar antes de descargar.
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-FP8)
+- [Página del modelo en Hugging Face](https://huggingface.co/dudeman2512/Qwen3.8-2.4T-A95B-FP8)
 - [Modelo base Qwen/Qwen3.8-2.4T-A95B](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
 - [Receta de vLLM para Qwen3.8-2.4T-A95B](https://recipes.vllm.ai/Qwen/Qwen3.8-2.4T-A95B)
 - [Página de QwenCloud del modelo](https://www.qwencloud.com/models/qwen3.8-2.4t-a95b)

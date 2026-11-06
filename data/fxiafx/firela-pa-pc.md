@@ -80,7 +80,7 @@ No se dispone de datos verificados de alternativas comparables en la informacion
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|---|
-| firela-pa-pc | 1 720 574 976 | No disponible en la model card | GGUF (Q4_K_M, Q8_0) | Apache-2.0 | Enrutador de privacidad financiera (5 intenciones) | Repositorio HuggingFace, 0 descargas y 0 likes |
+| firela-pa-pc | 1 720 574 976 | No disponible en la model card | GGUF (Q4_K_M, Q8_0) | Apache-2.0 | Enrutador de privacidad financiera (5 intenciones) | Repositorio Hugging Face, 0 descargas y 0 likes |
 | Qwen3-1.7B (modelo base citado) | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | Apache-2.0 (segun la model card del ajuste) | Modelo generativo generalista | No consultado en esta busqueda |
 | qwen2.5:3b-instruct (generador usado por el instalador) | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | No disponible en esta informacion | Generacion conversacional | Distribucion via Ollama, segun el autor |
 | Otros enrutadores de intenciones de ~1-2B | No disponible | No disponible | No disponible | No disponible | Clasificacion/enrutado | No se identifican alternativas equivalentes en la informacion disponible |
@@ -103,7 +103,7 @@ No se localizaron en la busqueda web resultados tecnicos relevantes sobre este m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fxiafx/firela-pa-pc
+- Repositorio en Hugging Face: https://huggingface.co/fxiafx/firela-pa-pc
 - Script de instalacion declarado en la model card: https://huggingface.co/fxiafx/firela-pa-pc/resolve/main/install.sh
 - Modelo base citado (Qwen3-1.7B): no se incluye enlace directo en la informacion proporcionada; la model card solo menciona "Qwen3-1.7B (Apache-2.0)" sin URL.
 - Repositorio de la aplicacion y documentacion de diseno del anonimizador: mencionados como "repositorio de la aplicacion" en la model card, sin URL disponible.

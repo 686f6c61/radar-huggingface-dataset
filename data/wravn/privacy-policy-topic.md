@@ -29,7 +29,7 @@ El entrenamiento de fine-tuning se realizó sobre un conjunto de 3.078 oraciones
 
 - Clasificación multi-etiqueta de oraciones en 15 temas de políticas de privacidad: Processing, Purpose, ThirdParty, UserRights, Policy, Sharing, Contact, LegalBasis, Security/Privacy, Audience, Other, Control, Retention, Deletion y Selling.
 - Especializado en el dominio de políticas de privacidad en inglés, gracias al preentrenamiento de PrivBERT.
-- Integrable en pipelines de análisis de documentos legales mediante la librería transformers de HuggingFace.
+- Integrable en pipelines de análisis de documentos legales mediante la librería transformers de Hugging Face.
 - No incluye capacidades de generación de texto, tool calling, agentes ni razonamiento multi-paso; es exclusivamente un clasificador.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 - Al ser un modelo de 124,6 millones de parámetros, requiere aproximadamente 500 MB de VRAM en FP32 y unos 250 MB en FP16. Cabe en cualquier GPU consumer moderna (por ejemplo, NVIDIA GTX 1060 con 6 GB o superior).
 - También puede ejecutarse en CPU con razonable velocidad para inferencia por lotes, gracias a su tamaño compacto.
-- Para despliegue en producción, se recomienda usar librerías como HuggingFace transformers, ONNX Runtime o TensorRT para optimizar la latencia.
+- Para despliegue en producción, se recomienda usar librerías como Hugging Face transformers, ONNX Runtime o TensorRT para optimizar la latencia.
 - No se requieren GPUs de datacenter (A100, H100) para este modelo; una RTX 3060 o similar es más que suficiente.
 - El throughput estimado es alto: en una GPU consumer, puede procesar cientos de oraciones por segundo en lotes.
 
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la búsqueda web real
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wravn/privacy-policy-topic
+- Modelo en Hugging Face: https://huggingface.co/Wravn/privacy-policy-topic
 - Perfil del autor: https://huggingface.co/Wravn
 - Modelo relacionado (Context classifier): https://huggingface.co/Wravn/roberta-privacy-policy-context
 

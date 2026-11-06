@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace bajo el identificador SREDA-Bench/MyAwesomeModel-TestRepo por el usuario SREDA-Bench. Segun los metadatos de la plataforma, se distribuye con la libreria transformers, esta implementado en PyTorch, emplea una arquitectura de tipo BERT y esta etiquetado para la tarea de extraccion de caracteristicas (feature-extraction). La licencia declarada es MIT. El repositorio tiene un tamano de 0.0 GB y acumula 59 descargas y 0 likes en el momento de la consulta.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face bajo el identificador SREDA-Bench/MyAwesomeModel-TestRepo por el usuario SREDA-Bench. Segun los metadatos de la plataforma, se distribuye con la libreria transformers, esta implementado en PyTorch, emplea una arquitectura de tipo BERT y esta etiquetado para la tarea de extraccion de caracteristicas (feature-extraction). La licencia declarada es MIT. El repositorio tiene un tamano de 0.0 GB y acumula 59 descargas y 0 likes en el momento de la consulta.
 
 La model card describe un supuesto salto de version con mejoras en razonamiento e inferencia, citando resultados en pruebas como AIME 2025 (una precision que pasa del 70 % al 87,5 %) y un aumento del uso medio de tokens por pregunta de 12K a 23K. Sin embargo, esta informacion no es coherente con los metadatos tecnicos del repositorio: un modelo BERT de feature-extraction no genera texto ni razona de forma autoregresiva, y el tamano del repositorio (0.0 GB) es incompatible con los pesos de un modelo de esas caracteristicas. Todo apunta a que se trata de un repositorio de prueba o plantilla, no de un modelo entrenado y desplegable.
 
@@ -12,7 +12,7 @@ Por ello, esta ficha recoge de forma literal los datos disponibles y marca expli
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | BERT (segun tag de HuggingFace); detalles internos no disponibles |
+| Arquitectura | BERT (segun tag de Hugging Face); detalles internos no disponibles |
 | Parametros totales | no disponible |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -99,5 +99,5 @@ No es posible establecer una comparativa fiable porque no se dispone de parametr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SREDA-Bench/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SREDA-Bench/MyAwesomeModel-TestRepo
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

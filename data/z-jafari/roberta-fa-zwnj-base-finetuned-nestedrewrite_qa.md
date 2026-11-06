@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Z-Jafari/roberta-fa-zwnj-base-finetuned-nestedRewrite_QA` es un ajuste fino de tipo question answering extractivo (QA) construido sobre `HooshvareLab/roberta-fa-zwnj-base`, un encoder RoBERTa en persa con tratamiento explícito del carácter ZWNJ (zero-width non-joiner). Lo publica el usuario Z-Jafari en HuggingFace y, por el nombre del ajuste (`nestedRewrite_QA`), apunta a tareas de respuesta a preguntas sobre texto persa con reescritura o normalización anidada de ZWNJ.
+El modelo `Z-Jafari/roberta-fa-zwnj-base-finetuned-nestedRewrite_QA` es un ajuste fino de tipo question answering extractivo (QA) construido sobre `HooshvareLab/roberta-fa-zwnj-base`, un encoder RoBERTa en persa con tratamiento explícito del carácter ZWNJ (zero-width non-joiner). Lo publica el usuario Z-Jafari en Hugging Face y, por el nombre del ajuste (`nestedRewrite_QA`), apunta a tareas de respuesta a preguntas sobre texto persa con reescritura o normalización anidada de ZWNJ.
 
 El modelo tiene 117.709.058 parámetros (dato real del fichero safetensors), lo que lo sitúa en la categoría "base" de ~118 M de parámetros, con licencia Apache 2.0 y pesos en safetensors. Se trata de un modelo no generativo: su salida es un span de texto extraído del contexto proporcionado, no texto libre.
 
-Su relevancia práctica es limitada por el momento: la model card está generada automáticamente por el Trainer de HuggingFace, el conjunto de entrenamiento figura como "unknown dataset" y el modelo acumula 0 descargas y 0 likes. Aun así, resulta interesante como ejemplo de ajuste de un encoder persa con manejo de ZWNJ para QA extractivo, con métricas declaradas de exact match 60,5 y F1 65,89, y con señales claras de sobreajuste en la tercera época.
+Su relevancia práctica es limitada por el momento: la model card está generada automáticamente por el Trainer de Hugging Face, el conjunto de entrenamiento figura como "unknown dataset" y el modelo acumula 0 descargas y 0 likes. Aun así, resulta interesante como ejemplo de ajuste de un encoder persa con manejo de ZWNJ para QA extractivo, con métricas declaradas de exact match 60,5 y F1 65,89, y con señales claras de sobreajuste en la tercera época.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: pipeline declarado `question-answering`, tama
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un encoder Transformer bidireccional de estilo RoBERTa, no generativo, pensado para producir, dada una pregunta y un contexto, los índices de inicio y fin del span que contiene la respuesta. El ajuste se hizo con el `Trainer` de HuggingFace y la model card lo marca explícitamente como `generated_from_trainer`, sin descripción adicional de la arquitectura ni del dataset.
+La arquitectura es la del modelo base: un encoder Transformer bidireccional de estilo RoBERTa, no generativo, pensado para producir, dada una pregunta y un contexto, los índices de inicio y fin del span que contiene la respuesta. El ajuste se hizo con el `Trainer` de Hugging Face y la model card lo marca explícitamente como `generated_from_trainer`, sin descripción adicional de la arquitectura ni del dataset.
 
 Los hiperparámetros documentados son: learning rate 2e-05, `train_batch_size` 16, `eval_batch_size` 16, semilla 42, optimizador AdamW con `fused` y betas (0,9, 0,999), epsilon 1e-08, scheduler lineal, 3 épocas y precisión mixta nativa (AMP). El entrenamiento totalizó 6.342 pasos (2.114 por época). No se documenta el número de tokens, la composición del dataset ni si hubo RLHF, DPO o una fase de instrucciones: la model card indica "unknown dataset" y "More information needed" en descripción, usos previstos y datos de entrenamiento. Por el nombre del checkpoint, es plausible que el corpus tenga relación con reescritura anidada y normalización de ZWNJ en persa, pero esto no está confirmado en la información disponible.
 
@@ -85,9 +85,9 @@ No se dispone de comparaciones con otros modelos en la información proporcionad
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Exact match / F1 | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Z-Jafari/roberta-fa-zwnj-base-finetuned-nestedRewrite_QA | 117,7 M | No disponible (base RoBERTa, ~512) | QA extractivo | apache-2.0 | 60,5 / 65,89 (declarado por el autor) | HuggingFace, 0 descargas |
-| HooshvareLab/roberta-fa-zwnj-base | ~117 M | No disponible en esta busqueda | Modelo base sin ajuste de QA | No verificada en esta busqueda | No aplica (no es QA) | HuggingFace |
-| HooshvareLab/bert-fa-base-uncased (ParsBERT) | Orden de 110-120 M | No disponible en esta busqueda | Encoder de lenguaje en persa, con variantes ajustadas para QA y clasificacion | No verificada en esta busqueda | No disponible | HuggingFace |
+| Z-Jafari/roberta-fa-zwnj-base-finetuned-nestedRewrite_QA | 117,7 M | No disponible (base RoBERTa, ~512) | QA extractivo | apache-2.0 | 60,5 / 65,89 (declarado por el autor) | Hugging Face, 0 descargas |
+| HooshvareLab/roberta-fa-zwnj-base | ~117 M | No disponible en esta busqueda | Modelo base sin ajuste de QA | No verificada en esta busqueda | No aplica (no es QA) | Hugging Face |
+| HooshvareLab/bert-fa-base-uncased (ParsBERT) | Orden de 110-120 M | No disponible en esta busqueda | Encoder de lenguaje en persa, con variantes ajustadas para QA y clasificacion | No verificada en esta busqueda | No disponible | Hugging Face |
 
 Los datos de los modelos alternativos no se han verificado en esta busqueda; se incluyen como referencia de categoria (encoders persas de tamano base) y deben confirmarse en sus respectivas model cards.
 
@@ -106,7 +106,7 @@ Los datos de los modelos alternativos no se han verificado en esta busqueda; se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-nestedRewrite_QA
+- Modelo en Hugging Face: https://huggingface.co/Z-Jafari/roberta-fa-zwnj-base-finetuned-nestedRewrite_QA
 - Modelo base: https://huggingface.co/HooshvareLab/roberta-fa-zwnj-base
 - Repositorio del autor del modelo base (HooshvareLab): no disponible en la información proporcionada
 - Paper asociado: no disponible en la información proporcionada

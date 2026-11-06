@@ -76,8 +76,8 @@ No se dispone de datos comparativos directos en la información proporcionada. E
 
 ## Enlaces
 
-- Repositorio HuggingFace (autor original): https://huggingface.co/samuel-vitorino/sopro-v2-turbo
-- Repositorio HuggingFace (copia/alternativa): https://huggingface.co/Guile/sopro-v2-turbo
+- Repositorio Hugging Face (autor original): https://huggingface.co/samuel-vitorino/sopro-v2-turbo
+- Repositorio Hugging Face (copia/alternativa): https://huggingface.co/Guile/sopro-v2-turbo
 - Blog de investigación (Halo Research): https://research.haloneuro.ai/posts/sopro-v2
 - Repositorio GitHub: https://github.com/samuel-vitorino/sopro
 - Demo en navegador (ONNX): https://samuel-vitorino.github.io/sopro/

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno Taxi-v3, publicado en HuggingFace por el usuario shash0609. No se trata de un modelo de lenguaje ni de una red neuronal profunda: el artefacto del repositorio es un fichero `q-learning.pkl` que contiene la política aprendida, cargable mediante `load_from_hub` y ejecutable sobre una instancia de Gym/Gymnasium del entorno Taxi-v3. Su relevancia es, por tanto, docente y experimental, no productiva.
+Taxi-v4 es un agente de aprendizaje por refuerzo entrenado con Q-learning sobre el entorno Taxi-v3, publicado en Hugging Face por el usuario shash0609. No se trata de un modelo de lenguaje ni de una red neuronal profunda: el artefacto del repositorio es un fichero `q-learning.pkl` que contiene la política aprendida, cargable mediante `load_from_hub` y ejecutable sobre una instancia de Gym/Gymnasium del entorno Taxi-v3. Su relevancia es, por tanto, docente y experimental, no productiva.
 
-El modelo declara un único resultado en su model-index: una recompensa media (`mean_reward`) de 7,48 ± 2,66 sobre el dataset/entorno Taxi-v3, con el campo `verified` marcado como falso, es decir, no validado por HuggingFace ni por terceros. El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,0 GB, lo que es coherente con un artefacto tabular de muy pocos kilobytes.
+El modelo declara un único resultado en su model-index: una recompensa media (`mean_reward`) de 7,48 ± 2,66 sobre el dataset/entorno Taxi-v3, con el campo `verified` marcado como falso, es decir, no validado por Hugging Face ni por terceros. El repositorio tiene 0 descargas y 0 likes, y un tamano de 0,0 GB, lo que es coherente con un artefacto tabular de muy pocos kilobytes.
 
 Al no existir información sobre licencia, idiomas, arquitectura interna ni proceso de entrenamiento (hiperparámetros, número de episodios, política de exploración), la ficha se limita a documentar lo declarado y marca explícitamente como "no disponible" todo aquello que la model card no especifica.
 
@@ -41,7 +41,7 @@ Taxi-v3 es un entorno de espacio de estados y acciones discretos: 500 estados y 
 - Baseline en experimentos comparativos: al declarar `mean_reward` de 7,48 ± 2,66, se puede usar como referencia contra la que medir variantes (Double Q-Learning, SARSA, DQN) sobre el mismo entorno.
 - Pruebas de pipelines de RL: verificar que un flujo de carga de artefactos (`load_from_hub`), creación del entorno y bucle de evaluación funciona de extremo a extremo antes de invertir cómputo en entrenamientos largos.
 - Test de regresión en CI para librerías de RL: comprobar que actualizaciones de versión de Gymnasium o de `huggingface_hub` no rompen la carga de artefactos pickle ni la ejecución de políticas guardadas.
-- Demostración de despliegue de agentes en HuggingFace Hub: ejemplo de extremo a extremo de publicación, descarga y ejecución de una política serializada.
+- Demostración de despliegue de agentes en Hugging Face Hub: ejemplo de extremo a extremo de publicación, descarga y ejecución de una política serializada.
 - Estudio de sensibilidad del entorno: con Taxi-v3 se puede analizar cómo cambia la recompensa al activar o desactivar la estocasticidad del entorno (`is_slippery`), tal y como advierte la propia model card.
 - Base para experimentos de generalización: partiendo de la tabla Q aprendida, investigar técnicas de abstracción de estados o de transferencia a variantes del entorno con más ciudades o destinos.
 
@@ -65,11 +65,11 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de modelos comparables en la información proporcionada. La categoría equivalente sería la de agentes Q-learning tabulares para Taxi-v3, de los que existen múltiples publicaciones comunitarias en HuggingFace Hub, pero no se han facilitado identificadores, métricas ni licencias de ninguno de ellos, por lo que no se puede establecer una comparación rigurosa.
+No se dispone de datos de modelos comparables en la información proporcionada. La categoría equivalente sería la de agentes Q-learning tabulares para Taxi-v3, de los que existen múltiples publicaciones comunitarias en Hugging Face Hub, pero no se han facilitado identificadores, métricas ni licencias de ninguno de ellos, por lo que no se puede establecer una comparación rigurosa.
 
 | Modelo | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| shash0609/Taxi-v4 | Q-learning (implementación propia) | Taxi-v3 | No disponible | No aplica | No disponible | HuggingFace, 0 descargas, 0 likes |
+| shash0609/Taxi-v4 | Q-learning (implementación propia) | Taxi-v3 | No disponible | No aplica | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Agentes Q-learning equivalentes para Taxi-v3 | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shash0609/Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/shash0609/Taxi-v4
 - Fichero de pesos: `q-learning.pkl` dentro del repositorio anterior (carga mediante `load_from_hub(repo_id="shash0609/Taxi-v4", filename="q-learning.pkl")`)
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.
 - Nota sobre la búsqueda web: los resultados recuperados corresponden a documentación de Google Maps (centro de ayuda, subreddit y preguntas en Stack Overflow) y no guardan relación con este modelo, por lo que se descartan como fuentes.

@@ -54,4 +54,4 @@ No se dispone de informaci√≥n comparativa con otros modelos de la misma categor√
 
 ## Enlaces
 
-- [HuggingFace - model_454430015_swin_t_tiny](https://huggingface.co/amritachemistry/model_454430015_swin_t_tiny)
+- [Hugging Face - model_454430015_swin_t_tiny](https://huggingface.co/amritachemistry/model_454430015_swin_t_tiny)

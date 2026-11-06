@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bjnortier/coreai-ht5-nemotron-3-diarization-float16-split` | no disponible | no disponible; audio 16 kHz mono, hasta 8 hablantes, modos offline y streaming | `.aimodel` (Core AI), float16 | OpenMDW 1.1 | HuggingFace, repo de 0.6 GB, 0 descargas y 0 likes en el momento de la consulta |
-| `nvidia/Nemotron-3-Diarization` (modelo base) | no disponible en la información proporcionada | no disponible en la información proporcionada | pesos del modelo original (no especificado aquí) | OpenMDW 1.1 | HuggingFace, mantenido por NVIDIA |
-| `pyannote/speaker-diarization-3.1` | no disponible en la información proporcionada | no disponible en la información proporcionada | PyTorch | no disponible en la información proporcionada | HuggingFace; requiere aceptar condiciones de acceso |
+| `bjnortier/coreai-ht5-nemotron-3-diarization-float16-split` | no disponible | no disponible; audio 16 kHz mono, hasta 8 hablantes, modos offline y streaming | `.aimodel` (Core AI), float16 | OpenMDW 1.1 | Hugging Face, repo de 0.6 GB, 0 descargas y 0 likes en el momento de la consulta |
+| `nvidia/Nemotron-3-Diarization` (modelo base) | no disponible en la información proporcionada | no disponible en la información proporcionada | pesos del modelo original (no especificado aquí) | OpenMDW 1.1 | Hugging Face, mantenido por NVIDIA |
+| `pyannote/speaker-diarization-3.1` | no disponible en la información proporcionada | no disponible en la información proporcionada | PyTorch | no disponible en la información proporcionada | Hugging Face; requiere aceptar condiciones de acceso |
 
 La comparación relevante es frente al modelo base: este repositorio no modifica el modelo, solo su serialización, y por tanto hereda su comportamiento y su licencia. Frente a alternativas como pyannote, la diferencia práctica es el runtime: aquí no hay pesos PyTorch ni pipeline de Python, solo grafos para Core AI, lo que limita el despliegue a Apple y elimina la posibilidad de reutilizar tooling estándar de diarización.
 
@@ -84,8 +84,8 @@ La comparación relevante es frente al modelo base: este repositorio no modifica
 - Riesgo de deriva entre versiones del runtime Core AI: la propia model card incluye `fixtures/` precisamente porque la paridad numérica debe comprobarse en cada build.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/bjnortier/coreai-ht5-nemotron-3-diarization-float16-split
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Nemotron-3-Diarization
+- Repositorio en Hugging Face: https://huggingface.co/bjnortier/coreai-ht5-nemotron-3-diarization-float16-split
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Licencia OpenMDW 1.1 (referenciada desde la model card del modelo base): https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Apple Developer (runtime Core AI): https://developer.apple.com
 - Nota: las búsquedas web realizadas no devolvieron papers, blogs ni repositorios relacionados con este modelo; los resultados obtenidos no eran relevantes, por lo que no se añaden enlaces adicionales.

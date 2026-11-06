@@ -77,6 +77,6 @@ No disponible. En la información proporcionada no se incluyen datos verificable
 - Paper original: https://arxiv.org/abs/2605.30865
 - Versión HTML del paper: https://arxiv.org/html/2605.30865
 - Blog de Google sobre GlucoFM: https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring/
-- Upstream OpenCGM en HuggingFace: https://huggingface.co/sfourdrinier/opencgm-stateevent
+- Upstream OpenCGM en Hugging Face: https://huggingface.co/sfourdrinier/opencgm-stateevent
 - Repositorio OpenCGM: https://github.com/sfourdrinier/opencgm
 - Crate Rust `glucofm`: https://crates.io/crates/glucofm

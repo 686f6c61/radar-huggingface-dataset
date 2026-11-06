@@ -18,7 +18,7 @@ Su relevancia actual es limitada: se trata de un modelo con 0 descargas y 0 like
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible (el repo solo contiene pesos en safetensors) |
 | Idiomas soportados | No disponible en la model card (el modelo base pertenece a la familia goldfish-models, orientada a idiomas concretos) |
-| Licencia | No disponible (la metadata de HuggingFace no la define y la model card incluye un campo placeholder "licence: license") |
+| Licencia | No disponible (la metadata de Hugging Face no la define y la model card incluye un campo placeholder "licence: license") |
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 0,3 GB |
 | Modelo base | goldfish-models/tam_taml_100mb |
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Limitaciones y advertencias
 
-- Licencia no definida: la metadata de HuggingFace no especifica licencia y la model card incluye un placeholder ("licence: license"), por lo que no puede asumirse permiso para uso comercial ni redistribucion. Es imprescindible contactar con el autor antes de cualquier uso productivo.
+- Licencia no definida: la metadata de Hugging Face no especifica licencia y la model card incluye un placeholder ("licence: license"), por lo que no puede asumirse permiso para uso comercial ni redistribucion. Es imprescindible contactar con el autor antes de cualquier uso productivo.
 - Ausencia total de benchmarks: no hay evidencia publicada de calidad de generacion, razonamiento o robustez, lo que impide recomendar el modelo para tareas criticas.
 - Riesgo de alucinacion: como cualquier modelo GPT-2 de 125 M de parametros entrenado con SFT, tiende a producir texto plausible pero no verificado, con alta probabilidad de afirmaciones incorrectas en contextos factuales.
 - Sesgos conocidos: no documentados por el autor, pero los modelos pequenos entrenados con datos web suelen heredar sesgos de genero, etnia, religion y nacionalidad presentes en el corpus.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/6ch8lv8i

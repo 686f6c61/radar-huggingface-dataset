@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado en HuggingFace como `qwfweewrevdf/cl` es un repositorio publicado por el usuario `qwfweewrevdf` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: se limita a declarar la licencia, sin especificar arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa 0,3 GB, un tamaño compatible con pesos cuantizados o con un modelo de pequeño tamaño, pero no hay información pública que permita confirmarlo.
+El modelo identificado en Hugging Face como `qwfweewrevdf/cl` es un repositorio publicado por el usuario `qwfweewrevdf` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción funcional: se limita a declarar la licencia, sin especificar arquitectura, propósito, datos de entrenamiento ni capacidades. El repositorio ocupa 0,3 GB, un tamaño compatible con pesos cuantizados o con un modelo de pequeño tamaño, pero no hay información pública que permita confirmarlo.
 
 No se dispone de datos sobre el pipeline de inferencia, los idiomas soportados, la longitud de contexto ni el número de parámetros. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en octubre de 2026, con apenas un minuto de diferencia entre ambas fechas, lo que sugiere una publicación automática o de prueba.
 
@@ -42,7 +42,7 @@ No es posible proponer casos de uso concretos y realistas sin información sobre
 - Auditoría del repositorio: descargar los archivos y revisar el listado para identificar el formato de pesos y la configuración, antes de considerar cualquier uso.
 - Prueba de carga en un entorno aislado: intentar la carga con `transformers` o `llama.cpp` para verificar que los pesos son válidos y determinar la arquitectura real.
 - Evaluación de licencia: al estar bajo Apache 2.0, el uso comercial estaría permitido en principio, pero conviene verificar que el contenido del repositorio no incluya artefactos de terceros con otras condiciones.
-- Reproducción de metadatos: usar el repositorio como ejemplo de publicación mínima en HuggingFace para estudiar prácticas de documentación.
+- Reproducción de metadatos: usar el repositorio como ejemplo de publicación mínima en Hugging Face para estudiar prácticas de documentación.
 - Verificación de integridad: comprobar hashes y tamaños de los archivos para descartar que se trate de una publicación incompleta.
 - Monitorización de cambios: seguir el repositorio por si el autor añade una model card completa en el futuro.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categor�
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qwfweewrevdf/cl
+- Repositorio en Hugging Face: https://huggingface.co/qwfweewrevdf/cl
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yannnnnn6/scooping-smolvla-v7 | 450 M | VLA fine-tune para scooping | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/smolvla_base | ~450 M | VLA generalista (modelo base) | apache-2.0 (segun el autor; no verificado en esta busqueda) | HuggingFace |
-| OpenVLA | ~7 B | VLA generalista | no disponible en la informacion proporcionada | HuggingFace |
+| yannnnnn6/scooping-smolvla-v7 | 450 M | VLA fine-tune para scooping | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/smolvla_base | ~450 M | VLA generalista (modelo base) | apache-2.0 (segun el autor; no verificado en esta busqueda) | Hugging Face |
+| OpenVLA | ~7 B | VLA generalista | no disponible en la informacion proporcionada | Hugging Face |
 | pi0 / pi0.5 (Physical Intelligence) | no disponible en la informacion proporcionada | VLA generalista | no disponible en la informacion proporcionada | No verificado |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada. La comparación se limita a parámetros, tipo y disponibilidad.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yannnnnn6/scooping-smolvla-v7
+- Modelo en Hugging Face: https://huggingface.co/yannnnnn6/scooping-smolvla-v7
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA (arXiv:2506.01844): https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/yannnnnn6/scooping-all-v3-merged-clean

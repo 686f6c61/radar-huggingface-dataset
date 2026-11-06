@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mt-invoice-4g es un modelo publicado por el usuario crismacias en HuggingFace, identificado con las etiquetas gguf, endpoints_compatible, region:us y conversational. El repositorio declara 3.313.238.912 parametros (aproximadamente 3,31 mil millones) y ocupa 4,2 GB, lo que situa al modelo en la categoria de modelos densos de gama media, ejecutables en hardware de consumo. La fecha de creacion registrada es el 16 de septiembre de 2026 y la ultima actualizacion el 17 de septiembre de 2026.
+mt-invoice-4g es un modelo publicado por el usuario crismacias en Hugging Face, identificado con las etiquetas gguf, endpoints_compatible, region:us y conversational. El repositorio declara 3.313.238.912 parametros (aproximadamente 3,31 mil millones) y ocupa 4,2 GB, lo que situa al modelo en la categoria de modelos densos de gama media, ejecutables en hardware de consumo. La fecha de creacion registrada es el 16 de septiembre de 2026 y la ultima actualizacion el 17 de septiembre de 2026.
 
 El nombre del repositorio sugiere un enfoque hacia el tratamiento de facturas o documentos administrativos, si bien esta interpretacion no esta confirmada por ninguna model card, y la unica fuente disponible no incluye pipeline declarado, licencia ni idiomas soportados. Con 8 descargas y 0 likes, se trata de un artefacto practicamente sin adopcion publica y sin documentacion tecnica asociada.
 
@@ -30,7 +30,7 @@ Tampoco se ha publicado informacion sobre el dataset de entrenamiento, el volume
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta conversational del repositorio indica que el modelo ha sido ajustado para mantener dialogos, si bien no se especifica la calidad ni el formato exacto de prompt.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el checkpoint puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace, aunque no se detalla la tarea soportada.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el checkpoint puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face, aunque no se detalla la tarea soportada.
 - Ejecucion local en formato GGUF: la presencia de la etiqueta gguf implica que existen pesos cuantizados compatibles con llama.cpp y derivados.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -72,7 +72,7 @@ No se conoce el modelo base ni la tarea exacta de mt-invoice-4g, por lo que la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mt-invoice-4g | 3,31 B | no disponible | no disponible | GGUF y safetensors en HuggingFace |
+| mt-invoice-4g | 3,31 B | no disponible | no disponible | GGUF y safetensors en Hugging Face |
 | Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Pesos en safetensors, GGUF y AWQ |
 | Llama-3.2-3B-Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | Pesos en safetensors y GGUF |
 | Phi-3.5-mini-instruct | 3,82 B | 128.000 tokens | MIT | Pesos en safetensors y GGUF |
@@ -94,6 +94,6 @@ La comparativa de rendimiento frente a estas alternativas no esta disponible, da
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/crismacias/mt-invoice-4g
+- Repositorio en Hugging Face: https://huggingface.co/crismacias/mt-invoice-4g
 - Busqueda web realizada: sin resultados relevantes. Los unicos enlaces devueltos corresponden a paginas de producto de Microsoft 365 (https://www.microsoft.com/it-it/microsoft-365, https://www.microsoft.com/en-us/microsoft-365, https://m365.cloud.microsoft/) y no guardan ninguna relacion con el modelo.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

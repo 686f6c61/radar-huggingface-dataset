@@ -24,7 +24,7 @@ El repositorio pesa 12,4 GB e incluye unicamente `params/` (pesos), `assets/` (c
 | Paso de entrenamiento | 20.000 |
 | Modo de recuperacion | `retrieval_metric=vision_value`, espacio canonico de accion/contexto, `ctx3cam` |
 | Tamano del repositorio | 12,4 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Relacion con este checkpoint | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lair-nyu/yor_icl_victr_vision_value_canonical_ctx3cam-step20000` | este checkpoint, paso 20.000 | no disponible | no disponible | no disponible | repositorio publico en HuggingFace |
+| `lair-nyu/yor_icl_victr_vision_value_canonical_ctx3cam-step20000` | este checkpoint, paso 20.000 | no disponible | no disponible | no disponible | repositorio publico en Hugging Face |
 | Familia `pi0` / backend `pi05` de `openpi` | framework y backend declarados en la model card | no disponible | no disponible | no disponible | no verificado en la busqueda |
 | Otras politicas VLA de codigo abierto (por ejemplo OpenVLA) | misma categoria de tarea (vision-lenguaje-accion) | no disponible | no disponible | no disponible | no verificado en la busqueda |
 
@@ -92,7 +92,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lair-nyu/yor_icl_victr_vision_value_canonical_ctx3cam-step20000
+- Hugging Face: https://huggingface.co/lair-nyu/yor_icl_victr_vision_value_canonical_ctx3cam-step20000
 - Repositorio `openpi` referenciado por la model card para la configuracion de entrenamiento (`openpi/src/openpi/training/config.py`): https://github.com/Physical-Intelligence/openpi (URL inferida a partir de la ruta citada; no verificada en la busqueda web)
 - Paper, blog, demo o repositorio adicional del autor: no disponible
 - Resultados relevantes de la busqueda web: no disponible (los resultados devueltos no estan relacionados con el modelo)

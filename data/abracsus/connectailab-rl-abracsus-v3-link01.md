@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-abracsus-v3-link01 | Adaptador LoRA sobre base de 0,8B | No disponible | Decision `avoid_obstacles` para LINK-01 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la informacion | HuggingFace |
+| connectailab-rl-abracsus-v3-link01 | Adaptador LoRA sobre base de 0,8B | No disponible | Decision `avoid_obstacles` para LINK-01 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | Lenguaje general | No disponible en la informacion | Hugging Face |
 | Cerebros PPO del simulador CONNECT AI WORLD | No disponible | No aplica | Decision `avoid_obstacles` | No disponible | Repositorio connect-tycoon |
-| Otros adaptadores de la familia connectailab | No disponible | No disponible | Variantes de decision | No disponible | HuggingFace (autor abracsus) |
+| Otros adaptadores de la familia connectailab | No disponible | No disponible | Variantes de decision | No disponible | Hugging Face (autor abracsus) |
 
 No se dispone de informacion sobre modelos directamente comparables de otros autores para esta tarea concreta de decision robotica destilada a un LLM.
 
@@ -78,7 +78,7 @@ No se dispone de informacion sobre modelos directamente comparables de otros aut
 - Sin senales de adopcion: 0 descargas y 0 likes en el momento de la consulta; no hay validacion externa independiente.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/abracsus/connectailab-rl-abracsus-v3-link01
+- Hugging Face: https://huggingface.co/abracsus/connectailab-rl-abracsus-v3-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento (Colab): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

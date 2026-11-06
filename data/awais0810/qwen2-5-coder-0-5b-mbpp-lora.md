@@ -69,8 +69,8 @@ El autor advierte que la muestra de evaluacion es pequena (50 problemas) y el co
 
 | Modelo | Parametros | Contexto | pass@1 MBPP (primeros 50) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adaptador LoRA MBPP (este modelo) | 0,5B (base) + adaptador | no disponible | 50,0% | no disponible | HuggingFace (repo PEFT) |
-| Qwen2.5-Coder-0.5B-Instruct (base) | 0,5B | no disponible | 40,0% | no disponible en esta ficha | HuggingFace |
+| Adaptador LoRA MBPP (este modelo) | 0,5B (base) + adaptador | no disponible | 50,0% | no disponible | Hugging Face (repo PEFT) |
+| Qwen2.5-Coder-0.5B-Instruct (base) | 0,5B | no disponible | 40,0% | no disponible en esta ficha | Hugging Face |
 | Alternativas de tamano similar (p. ej. modelos de codigo <1B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa rigurosa con otros adaptadores o modelos de codigo de tamano comparable.
@@ -88,7 +88,7 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Awais0810/qwen2.5-coder-0.5b-mbpp-lora
+- Repositorio Hugging Face: https://huggingface.co/Awais0810/qwen2.5-coder-0.5b-mbpp-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Dataset MBPP: https://huggingface.co/datasets/google-research-datasets/mbpp
 - Paper de LoRA (referencia de la tecnica): https://arxiv.org/abs/2106.09685

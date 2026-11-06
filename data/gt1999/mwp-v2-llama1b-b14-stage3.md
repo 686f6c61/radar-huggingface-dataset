@@ -66,6 +66,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GT1999/mwp-v2-llama1b-b14-stage3
+- Modelo en Hugging Face: https://huggingface.co/GT1999/mwp-v2-llama1b-b14-stage3
 - Perfil del autor: https://huggingface.co/GT1999
 - Búsqueda de modelos con tag mwp-v2: https://huggingface.co/models?other=mwp-v2

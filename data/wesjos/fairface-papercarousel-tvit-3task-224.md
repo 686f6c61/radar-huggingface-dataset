@@ -75,9 +75,9 @@ No se dispone en la información proporcionada de resultados de benchmarks de mo
 
 | Modelo | Parametros | Tarea | Contexto/Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FairFace-PaperCarousel-TinyViT-3Task-224 | 20,6 M | Raza + género + edad | 224x224 RGB | CC BY 4.0 | HuggingFace (wesjos) |
+| FairFace-PaperCarousel-TinyViT-3Task-224 | 20,6 M | Raza + género + edad | 224x224 RGB | CC BY 4.0 | Hugging Face (wesjos) |
 | FairFace original (ResNet-34, Karkkainen & Joo) | ~21,8 M | Raza + género + edad | 224x224 RGB | CC BY 4.0 (dataset) | Código en GitHub |
-| TinyViT-21M base (timm) | 21,1 M | Clasificación ImageNet | 224x224 RGB | Apache-2.0 | HuggingFace (timm) |
+| TinyViT-21M base (timm) | 21,1 M | Clasificación ImageNet | 224x224 RGB | Apache-2.0 | Hugging Face (timm) |
 
 Los datos de rendimiento de las alternativas no están disponibles en la información proporcionada.
 
@@ -94,7 +94,7 @@ Los datos de rendimiento de las alternativas no están disponibles en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/fairface-papercarousel-tvit-3task-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/fairface-papercarousel-tvit-3task-224
 - Backbone base: https://huggingface.co/timm/tiny_vit_21m_224.dist_in22k
 - Dataset FairFace: https://huggingface.co/datasets/HuggingFaceM4/FairFace
 - Paper FairFace (Karkkainen & Joo, WACV 2021): https://arxiv.org/abs/1908.04913

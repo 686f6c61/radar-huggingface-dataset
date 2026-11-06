@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-heist es un modelo de aprendizaje por refuerzo (reinforcement learning) publicado por el usuario a1rb4Ck en HuggingFace, concebido como entrada para el reto "Sock Heist" de la microduck arena. No se trata de un modelo de lenguaje: es una política entrenada para controlar un agente robótico de pequeñas dimensiones (el autor menciona un peso de 800 g) en un entorno con un "gigante" que actúa como obstáculo o amenaza. El comportamiento descrito en la model card es una política reactiva: avanzar cuando la situación es favorable y detenerse cuando el gigante mira.
+microduck-heist es un modelo de aprendizaje por refuerzo (reinforcement learning) publicado por el usuario a1rb4Ck en Hugging Face, concebido como entrada para el reto "Sock Heist" de la microduck arena. No se trata de un modelo de lenguaje: es una política entrenada para controlar un agente robótico de pequeñas dimensiones (el autor menciona un peso de 800 g) en un entorno con un "gigante" que actúa como obstáculo o amenaza. El comportamiento descrito en la model card es una política reactiva: avanzar cuando la situación es favorable y detenerse cuando el gigante mira.
 
 El modelo se distribuye en formato ONNX, lo que sugiere que está pensado para inferencia ligera y despliegue en entornos de simulación o robótica embebida, no para generación de texto. La librería asociada es `microduck`, y la arquitectura interna no se detalla en la información disponible. El repositorio tiene un tamaño de 0.0 GB, lo que indica pesos de muy pequeño tamaño, coherentes con una política de control y no con una red neuronal de gran escala.
 
@@ -74,4 +74,4 @@ No disponible. No se conocen en la información proporcionada otras políticas d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/a1rb4Ck/microduck-heist
+- Hugging Face: https://huggingface.co/a1rb4Ck/microduck-heist

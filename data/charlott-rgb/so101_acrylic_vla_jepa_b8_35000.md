@@ -101,7 +101,7 @@ Criterios que sí pueden compararse de forma estructural: este checkpoint emplea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/charlott-rgb/so101_acrylic_vla_jepa_b8_35000
+- Modelo en Hugging Face: https://huggingface.co/charlott-rgb/so101_acrylic_vla_jepa_b8_35000
 - Dataset de entrenamiento: https://huggingface.co/datasets/charlott-rgb/so101_acrylic_dense72
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=charlott-rgb/so101_acrylic_dense72
 - Artículo de VLA-JEPA: https://arxiv.org/abs/2602.10098

@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Crystal-31B-RL | 31B declarados (9,68B medidos en safetensors) | 256K en base; entrenado a 20-24K | 51,9 % de victorias en HiWaifu Arena; 54,8 % frente a Gemma 4 31B-IT | Apache 2.0 | HuggingFace, EXL3 4 bits |
-| google/gemma-4-31B-it | 31B | 256K | Referencia base del head-to-head (45,2 % de victorias en ese enfrentamiento) | Licencia Gemma 4 | HuggingFace, bf16 y cuantizaciones |
+| Crystal-31B-RL | 31B declarados (9,68B medidos en safetensors) | 256K en base; entrenado a 20-24K | 51,9 % de victorias en HiWaifu Arena; 54,8 % frente a Gemma 4 31B-IT | Apache 2.0 | Hugging Face, EXL3 4 bits |
+| google/gemma-4-31B-it | 31B | 256K | Referencia base del head-to-head (45,2 % de victorias en ese enfrentamiento) | Licencia Gemma 4 | Hugging Face, bf16 y cuantizaciones |
 | Modelos de role-play de 30B de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks estándar ni de otros modelos de role-play comparables en la información proporcionada, por lo que la comparativa se limita al modelo base y a los resultados de arena declarados por el autor.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks estándar ni de otros modelos de role-play 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meddle86/Crystal-31B-RL-exl3-4.0bpw
+- Modelo en Hugging Face: https://huggingface.co/meddle86/Crystal-31B-RL-exl3-4.0bpw
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Artículo de destilación on-policy basada en rúbricas: https://arxiv.org/abs/2605.07396
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

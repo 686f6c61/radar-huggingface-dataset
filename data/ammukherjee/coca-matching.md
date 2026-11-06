@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ammukherjee/coca-matching` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura CoCa (Contrastive Captioners) orientada a tareas de emparejamiento (matching). Lo publica el usuario ammukherjee y no se presenta como un modelo preentrenado, sino como un artefacto de código con una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
+`ammukherjee/coca-matching` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura CoCa (Contrastive Captioners) orientada a tareas de emparejamiento (matching). Lo publica el usuario ammukherjee y no se presenta como un modelo preentrenado, sino como un artefacto de código con una configuración "nano" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño.
 
 El elemento más llamativo es su escala: el checkpoint en safetensors contiene 49.600 parámetros totales, un orden de magnitud muy inferior al de cualquier modelo multimodal utilizable en producción. El propio autor indica de forma explícita que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark.
 
@@ -21,7 +21,7 @@ Por tanto, su relevancia actual no está en el rendimiento, sino en su valor com
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`), con `config.json`, `training_args.json` y `eval.py` |
 
-Datos adicionales del repositorio: 9 descargas, 0 likes, tamaño del repositorio 0,0 GB, creado y actualizado el 12 de octubre de 2026. No se declara pipeline de HuggingFace.
+Datos adicionales del repositorio: 9 descargas, 0 likes, tamaño del repositorio 0,0 GB, creado y actualizado el 12 de octubre de 2026. No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ La comparación se establece con la familia CoCa original y con otros modelos de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ammukherjee/coca-matching | 49.600 (checkpoint de inicialización, sin entrenar) | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace, 9 descargas |
+| ammukherjee/coca-matching | 49.600 (checkpoint de inicialización, sin entrenar) | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face, 9 descargas |
 | CoCa original (Google) | aproximadamente 2.100 millones | no disponible | resultados publicados en el paper original (zero-shot y fine-tuning en clasificación, recuperación y captioning) | no disponible en esta ficha | pesos no liberados públicamente de forma general, según lo conocido |
 | CLIP (OpenAI) | aproximadamente 151 millones en la variante ViT-B/32 | no disponible | resultados zero-shot publicados en el paper original | licencia propia de OpenAI | pesos públicos |
 | SigLIP (Google) | aproximadamente 800 millones en la variante SoViT-400m | no disponible | resultados zero-shot publicados | Apache 2.0 en las variantes abiertas | pesos públicos |
@@ -83,13 +83,13 @@ La diferencia fundamental no es de rendimiento, sino de naturaleza: las alternat
 - No se documentan sesgos conocidos, pero la ausencia de datos de entrenamiento impide cualquier análisis de sesgo; tampoco se puede afirmar que esté libre de ellos.
 - Riesgo de alucinación: no evaluable, porque no hay una fase de generación entrenada que analizar.
 - No se declara ningún idioma soportado, ni longitud de contexto, ni esquema de tokenización.
-- Las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito, dado que la implementación es custom.
+- Las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito, dado que la implementación es custom.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con conservación del aviso de copyright y de la cláusula de exención de responsabilidad. El propio README advierte de que los términos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
 - Idoneidad para producción: nula. El autor lo califica como punto de partida experimental y no como una release preentrenada lista para producción.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto que se distribuyen aquí.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ammukherjee/coca-matching
+- Modelo en Hugging Face: https://huggingface.co/ammukherjee/coca-matching
 - No se han encontrado en la búsqueda web enlaces relevantes para este modelo: los resultados obtenidos (revisiones de modelos fundacionales en imagen médica, consistencia semántica cross-modal, espectroscopía Raman asistida por IA, armonización de dominio cognitivo y aprendizaje automático en redes) no guardan relación con `ammukherjee/coca-matching`.
 - No se dispone de paper, blog, repositorio adicional ni demo asociados a este modelo en la información proporcionada.

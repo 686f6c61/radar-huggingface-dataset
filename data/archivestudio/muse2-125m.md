@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse2-125M es un modelo de lenguaje autorregresivo de 122,9 millones de parametros (122.915.328 segun los pesos en safetensors) publicado en HuggingFace bajo el identificador ArchiveStudio/Muse2-125M y desarrollado por Muse Research. Se presenta como el hermano menor de Muse2-230M, con la misma arquitectura hibrida de convolucion y atencion construida desde cero en PyTorch (clase `Muse2ForCausalLM`), sin depender del codigo de `transformers`. El repositorio incluye tanto los pesos base como los de la version ajustada por instrucciones.
+Muse2-125M es un modelo de lenguaje autorregresivo de 122,9 millones de parametros (122.915.328 segun los pesos en safetensors) publicado en Hugging Face bajo el identificador ArchiveStudio/Muse2-125M y desarrollado por Muse Research. Se presenta como el hermano menor de Muse2-230M, con la misma arquitectura hibrida de convolucion y atencion construida desde cero en PyTorch (clase `Muse2ForCausalLM`), sin depender del codigo de `transformers`. El repositorio incluye tanto los pesos base como los de la version ajustada por instrucciones.
 
 La arquitectura combina 12 bloques que intercalan 7 bloques de convolucion causal depthwise de kernel 3 con 5 bloques de atencion completa. Usa Grouped-Query Attention con 12 cabezas de consulta y 6 de clave-valor, RoPE con theta 1e6, RMSNorm, MLPs SwiGLU fusionados en paralelo (hidden 768, ff 2304), embeddings de entrada y salida compartidos y un vocabulario de 65.536 tokens BPE byte-level con tokens de control estilo ChatML. La longitud de contexto nominal es de 8k tokens, con un maximo declarado de 128k.
 
@@ -89,14 +89,14 @@ Los datos de SmolLM2-135M, Qwen2.5-0.5B y GPT-2 (124M) proceden de conocimiento 
 - Licencia: los pesos estan bajo Apache-2.0, lo que permite uso comercial, pero la model card subraya que las licencias y requisitos de atribucion de los datasets upstream siguen aplicando a los usos derivados.
 - Integracion limitada: no funciona con `transformers` de forma directa; requiere el paquete `muse`. No hay pesos cuantizados ni versiones GGUF publicadas, lo que complica el despliegue en llama.cpp u Ollama.
 - Inconsistencia en tokens de control: la tabla y el ejemplo del modelo base usan `eos_token_id=7`, mientras que el ejemplo de la variante Instruct usa `eos_token_id=4`. Conviene verificar el valor correcto antes de integrarlo, porque afecta a la detencion de la generacion.
-- Fechas discrepantes: la model card indica una fecha de publicacion del 25 de agosto de 2026, mientras que el repositorio de HuggingFace figura como creado y actualizado el 11 de octubre de 2026.
-- Autoría: el identificador de HuggingFace es `ArchiveStudio/Muse2-125M`, pero la model card atribuye el desarrollo a Muse Research. El modelo base referenciado es `Muse-research/Muse2-125M-Base`.
+- Fechas discrepantes: la model card indica una fecha de publicacion del 25 de agosto de 2026, mientras que el repositorio de Hugging Face figura como creado y actualizado el 11 de octubre de 2026.
+- Autoría: el identificador de Hugging Face es `ArchiveStudio/Muse2-125M`, pero la model card atribuye el desarrollo a Muse Research. El modelo base referenciado es `Muse-research/Muse2-125M-Base`.
 - Traccion nula: 0 descargas y 0 likes en el momento de la consulta. No hay validacion independiente de la comunidad ni informes de terceros.
 - Falta de transparencia en el entrenamiento: no se publican numero de tokens, composicion del dataset, proceso de filtrado ni detalles del SFT mas alla del enmascaramiento de la perdida.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Muse2-125M
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Muse2-125M
 - Modelo base: https://huggingface.co/Muse-research/Muse2-125M-Base
 - Modelo hermano mencionado en la model card: Muse2-230M (referenciado de forma relativa en la ficha original; no se ha podido resolver una URL absoluta con la informacion disponible)
 - Paper, blog, repositorio de codigo, demo o documentacion adicional: no disponible en la informacion proporcionada

@@ -23,7 +23,7 @@ Se trata, por tanto, de un artefacto de investigación con cero descargas y cero
 | Modelo base | google/gemma-4-12B-it (revision 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7) |
 | Tipo de ajuste | SFT con LoRA r=16, alpha=32, pesos fusionados |
 | Tamaño del repositorio | 24,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ La información disponible solo permite comparar el checkpoint con su modelo bas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-sft-gemma12b-v1-2ep
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-sft-gemma12b-v1-2ep
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio AgentOrch (harness, datos de entrenamiento y registro de experimentos): mencionado en la model card, sin URL pública en la información disponible
 - Paper, blog o demo oficial: no disponible

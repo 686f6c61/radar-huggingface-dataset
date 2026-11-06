@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`uid_gated_aime_qwen3-1-7b_ep3` es un checkpoint de pesos completos publicado por el usuario talzoomanzoo en HuggingFace. Se trata de la fusion del modelo base Qwen/Qwen3-1.7B con un adaptador LoRA de rango 64 y alpha 32, procedente de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matematicas AIME, en la epoca 3 y el paso global 24. El resultado es un modelo denso de 1.720.574.976 parametros (~1,72 mil millones) con licencia Apache-2.0 y pesos en formato safetensors para la libreria transformers.
+`uid_gated_aime_qwen3-1-7b_ep3` es un checkpoint de pesos completos publicado por el usuario talzoomanzoo en Hugging Face. Se trata de la fusion del modelo base Qwen/Qwen3-1.7B con un adaptador LoRA de rango 64 y alpha 32, procedente de un entrenamiento con GRPO (Group Relative Policy Optimization) sobre el conjunto de problemas de matematicas AIME, en la epoca 3 y el paso global 24. El resultado es un modelo denso de 1.720.574.976 parametros (~1,72 mil millones) con licencia Apache-2.0 y pesos en formato safetensors para la libreria transformers.
 
 El interes del modelo es acotado pero especifico: documenta un experimento de ajuste por refuerzo sobre un modelo pequeno para tareas de razonamiento matematico. El prefijo "uid_gated" del nombre sugiere algun tipo de enmascaramiento o ponderacion por identificador durante el calculo de la ventaja en GRPO, pero la model card no describe el metodo, los datos ni la receta de entrenamiento, por lo que ese extremo queda sin documentar. El autor no ha publicado benchmarks, no ha detallado la composicion del dataset y el repositorio acumula cero descargas y cero likes en el momento de la consulta.
 
@@ -73,7 +73,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de sus respe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| uid_gated_aime_qwen3-1-7b_ep3 | 1,72B | no disponible (base: 32.768 nativos) | Apache-2.0 | Repositorio HuggingFace, 0 descargas |
+| uid_gated_aime_qwen3-1-7b_ep3 | 1,72B | no disponible (base: 32.768 nativos) | Apache-2.0 | Repositorio Hugging Face, 0 descargas |
 | Qwen/Qwen3-1.7B | 1,7B | 32.768 nativos, 131.072 con YaRN | Apache-2.0 | Ampliamente distribuido y validado |
 | Qwen/Qwen2.5-1.5B | 1,5B | 32.768 | Apache-2.0 (salvo 3B y 72B) | Ampliamente distribuido |
 | HuggingFaceTB/SmolLM2-1.7B | 1,7B | 8.192 | Apache-2.0 | Ampliamente distribuido |
@@ -96,6 +96,6 @@ No es posible comparar rendimiento en tareas de razonamiento porque este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep3
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep3
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos asociados a este checkpoint.

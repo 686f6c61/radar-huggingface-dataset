@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Precisión tool calling simple | Validez JSON simple | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CrystalCall smt25 | 91,27M | no disponible | 68,0% | 82,0% | Apache 2.0 | HuggingFace (DuoNeural) |
+| CrystalCall smt25 | 91,27M | no disponible | 68,0% | 82,0% | Apache 2.0 | Hugging Face (DuoNeural) |
 | Google FunctionGemma-270M | 268,10M | no disponible | 80,0% | 96,0% | no disponible en la información | Referencia comparativa en la model card |
-| CrystalCall smt0 | 91,27M | no disponible | 64,0% | 68,0% | Apache 2.0 | HuggingFace (DuoNeural) |
-| CrystalCall smt50 | 91,27M | no disponible | 52,0% | 62,0% | Apache 2.0 | HuggingFace (DuoNeural) |
+| CrystalCall smt0 | 91,27M | no disponible | 64,0% | 68,0% | Apache 2.0 | Hugging Face (DuoNeural) |
+| CrystalCall smt50 | 91,27M | no disponible | 52,0% | 62,0% | Apache 2.0 | Hugging Face (DuoNeural) |
 
 No se dispone de datos de otros modelos de tool calling de tamaño comparable (por ejemplo, variantes pequeñas de Qwen o Hermes) en la información proporcionada.
 
@@ -102,6 +102,6 @@ No se dispone de datos de otros modelos de tool calling de tamaño comparable (p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/CrystalCall-Solvent-Ablations
-- Organización DuoNeural en HuggingFace: https://huggingface.co/DuoNeural
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/CrystalCall-Solvent-Ablations
+- Organización DuoNeural en Hugging Face: https://huggingface.co/DuoNeural
 - Sitio web de DuoNeural: https://duoneural.com

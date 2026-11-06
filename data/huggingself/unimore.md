@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HuggingSelf/UniMore
+- Hugging Face del modelo: https://huggingface.co/HuggingSelf/UniMore
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingSelf/UniMore
 - Modelo base BAGEL-7B-MoT: https://huggingface.co/ByteDance-Seed/BAGEL-7B-MoT
 - Repositorio TorchUMM: https://github.com/AIFrontierLab/TorchUMM

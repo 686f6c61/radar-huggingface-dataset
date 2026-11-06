@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter` es un repositorio de HuggingFace que, por su nombre y su tamano (0,8 GB), contiene un adaptador de ajuste fino eficiente en parametros (PEFT) y no un modelo completo. El identificador indica que se trata de un adaptador DoRA y PiSSA aplicado sobre un modelo base de 27 000 millones de parametros orientado a codigo, presumiblemente denominado `swift-1.5-27b-coding`. El autor del repositorio es el usuario `bjivanovich`.
+`bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter` es un repositorio de Hugging Face que, por su nombre y su tamano (0,8 GB), contiene un adaptador de ajuste fino eficiente en parametros (PEFT) y no un modelo completo. El identificador indica que se trata de un adaptador DoRA y PiSSA aplicado sobre un modelo base de 27 000 millones de parametros orientado a codigo, presumiblemente denominado `swift-1.5-27b-coding`. El autor del repositorio es el usuario `bjivanovich`.
 
 Tanto la model card como los metadatos publicados estan practicamente vacios: la tarjeta es la plantilla autogenerada de `transformers` con todos los campos marcados como `[More Information Needed]`, y no se declaran licencia, idiomas, pipeline ni resultados de evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado el 4 de octubre de 2026 segun los metadatos de la plataforma.
 
@@ -51,7 +51,7 @@ No es posible enumerar casos de uso concretos y validados para este adaptador, p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye ninguna seccion de evaluacion completada y los metadatos de HuggingFace no aportan metricas.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye ninguna seccion de evaluacion completada y los metadatos de Hugging Face no aportan metricas.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No es posible establecer una comparativa rigurosa porque se desconoce cual es el
 
 | Modelo o categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter` | adaptador sobre un base de 27B (inferido) | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| `bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter` | adaptador sobre un base de 27B (inferido) | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Modelo base `swift-1.5-27b-coding` | 27B (inferido) | no disponible | no disponible | no disponible | no localizado en la informacion disponible |
 | Alternativas de codigo de tamano similar (por ejemplo, familias tipo Qwen-Coder, CodeLlama o DeepSeek-Coder) | no comparable | no comparable | no comparable | no comparable | la comparacion carece de sentido sin conocer el modelo base |
 
@@ -90,7 +90,7 @@ No es posible establecer una comparativa rigurosa porque se desconoce cual es el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter
+- Repositorio en Hugging Face: https://huggingface.co/bjivanovich/swift-1.5-27b-coding-dora-pissa-adapter
 - Referencia de la tecnica DoRA (Weight-Decomposed Low-Rank Adaptation): https://arxiv.org/abs/2402.09353
 - Referencia de la tecnica PiSSA (Principal Singular values and Singular vectors Adaptation): https://arxiv.org/abs/2404.02948
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico): https://arxiv.org/abs/1910.09700

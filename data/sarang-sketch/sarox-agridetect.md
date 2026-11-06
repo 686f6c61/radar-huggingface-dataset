@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sarox AgriDetector (sarang-sketch/sarox-agriDetect) es un modelo de clasificacion de imagenes especializado en agricultura, desarrollado por el autor sarang-sketch y publicado en HuggingFace bajo licencia Apache 2.0. Su objetivo es identificar el cultivo, la parte de la planta y su estado sanitario (enfermedad, plaga o planta sana) a partir de una fotografia, cubriendo 133 condiciones distintas en 26 cultivos y 6 partes de la planta. El modelo se denomina internamente Sarox Plangton 2.0 y es una version cuantizada a ONNX del modelo base timm/repvit_m0_9.dist_450e_in1k.
+Sarox AgriDetector (sarang-sketch/sarox-agriDetect) es un modelo de clasificacion de imagenes especializado en agricultura, desarrollado por el autor sarang-sketch y publicado en Hugging Face bajo licencia Apache 2.0. Su objetivo es identificar el cultivo, la parte de la planta y su estado sanitario (enfermedad, plaga o planta sana) a partir de una fotografia, cubriendo 133 condiciones distintas en 26 cultivos y 6 partes de la planta. El modelo se denomina internamente Sarox Plangton 2.0 y es una version cuantizada a ONNX del modelo base timm/repvit_m0_9.dist_450e_in1k.
 
 Su relevancia radica en que es un modelo extremadamente ligero: 4,77 millones de parametros y un unico archivo ONNX de 19,5 MB que se ejecuta en CPU ordinarias o incluso dentro del navegador con ONNX Runtime Web, sin necesidad de PyTorch ni GPU. Esto lo hace idoneo para despliegues en campo, dispositivos de bajos recursos y aplicaciones web con privacidad local (las fotos nunca se suben a un servidor). Incluye ademas mecanismos de abstencion: rechaza fotos no relacionadas con agricultura y emite respuestas "no seguro" cuando la confianza es baja, algo poco habitual en clasificadores de este tamano.
 
@@ -40,7 +40,7 @@ El conjunto de datos de evaluacion incluye 13.882 fotos etiquetadas nunca vistas
 ## Casos de uso
 
 - Diagnostico sanitario de cultivos en campo: un agricultor o tecnico fotografía hojas, frutos o tallos y obtiene al instante el cultivo, la parte afectada y la condicion probable, con latencias de 7-35 ms por foto en CPU de portatil, ideal para apps moviles sin conexion.
-- Aplicaciones web con privacidad: la demo de HuggingFace Spaces ejecuta el modelo con ONNX Runtime Web en el dispositivo del visitante, de modo que las fotos nunca se suben a un servidor; util para plataformas agronomicas con requisitos de privacidad de datos.
+- Aplicaciones web con privacidad: la demo de Hugging Face Spaces ejecuta el modelo con ONNX Runtime Web en el dispositivo del visitante, de modo que las fotos nunca se suben a un servidor; util para plataformas agronomicas con requisitos de privacidad de datos.
 - APIs de asesoria agricola: la funcion de validacion de entrada con `InvalidImageError` (mapeable a HTTP 400) y los estados `success`/`uncertain`/`unknown` facilitan la integracion en servicios REST de diagnostico para cooperativas o extensionismo agrario.
 - Vigilancia fitosanitaria a escala: dada su huella de 19,5 MB, puede desplegarse en dispositivos edge (Raspberry Pi, telefonos de gama baja) para monitorizacion continua de cultivos en zonas sin conectividad.
 - Evaluacion multi-foto de plantas completas: combinar hasta 6 fotos de distintos organos de una planta en un diagnostico integrado, util en auditorias de viveros o inspecciones de calidad de cosecha.
@@ -75,7 +75,7 @@ No hay comparacion directa publicada con otros modelos de referencia en la infor
 - Consumer GPUs: cabe sobradamente en cualquier GPU moderna si se desea acelerar con ONNX Runtime, aunque no es necesario.
 - Latencia: aproximadamente 7-35 ms por foto en CPU de portatil segun la model card.
 - Despliegue: ONNX Runtime (Python 3.11-3.14, con onnxruntime, numpy y pillow), ONNX Runtime Web en navegador, y script de linea de comandos `inference.py`. No se menciona soporte para vLLM, llama.cpp, Ollama o TGI (no aplicable, al ser un modelo de vision en ONNX).
-- Dependencias minimas: sin PyTorch; el paquete completo se descarga desde HuggingFace Hub con `snapshot_download`.
+- Dependencias minimas: sin PyTorch; el paquete completo se descarga desde Hugging Face Hub con `snapshot_download`.
 
 ## Comparativa con modelos similares
 
@@ -101,7 +101,7 @@ No se han publicado comparaciones cuantitativas directas con alternativas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarang-sketch/sarox-agriDetect
+- Modelo en Hugging Face: https://huggingface.co/sarang-sketch/sarox-agriDetect
 - Demo interactiva (Space): https://huggingface.co/spaces/sarang-sketch/sarox-agriDetect
 - Modelo base: https://huggingface.co/timm/repvit_m0_9.dist_450e_in1k
 - Paper, repositorio de entrenamiento y otros enlaces: no disponibles en la informacion proporcionada.

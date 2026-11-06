@@ -83,8 +83,8 @@ Los datos cuantitativos de las alternativas no están disponibles en la informac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-rby1-wujihand2-egomimic-baseline-20k | 4,14 mil millones | No aplica (tokenizador de 320 tokens) | Pérdida final 0,017; sin benchmarks | Apache-2.0 | Safetensors en HuggingFace, 0 descargas |
-| lerobot/pi05_base (modelo base) | No disponible | No disponible | No disponible | No disponible en esta información | HuggingFace |
+| pi05-rby1-wujihand2-egomimic-baseline-20k | 4,14 mil millones | No aplica (tokenizador de 320 tokens) | Pérdida final 0,017; sin benchmarks | Apache-2.0 | Safetensors en Hugging Face, 0 descargas |
+| lerobot/pi05_base (modelo base) | No disponible | No disponible | No disponible | No disponible en esta información | Hugging Face |
 | Otra línea base de alineamiento visual del mismo autor (misma receta, edición "masquerade") | No disponible | No disponible | No disponible | No disponible | No identificada en la información recibida |
 | Otras políticas VLA de manipulación (por ejemplo OpenVLA o pi0) | No disponible | No disponible | No disponible | No disponible | No evaluadas en esta ficha |
 
@@ -104,7 +104,7 @@ La búsqueda web realizada no devolvió ninguna referencia relevante al modelo: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanL22/pi05-rby1-wujihand2-egomimic-baseline-20k
+- Modelo en Hugging Face: https://huggingface.co/RyanL22/pi05-rby1-wujihand2-egomimic-baseline-20k
 - Modelo base declarado: https://huggingface.co/lerobot/pi05_base
 - Biblioteca LeRobot: https://github.com/huggingface/lerobot
 - Paper, blog, repositorio o demo del autor: no disponibles en la información proporcionada

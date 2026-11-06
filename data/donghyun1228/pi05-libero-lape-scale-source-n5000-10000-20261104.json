@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-lape-scale-source-n5000-10000-20261104",
+  "slug": "donghyun1228-pi05-libero-lape-scale-source-n5000-10000-20261104",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-lape-scale-source-n5000-10000-20261104",
+  "created_at": "2026-11-04T14:02:48.000Z",
+  "updated_at": "2026-11-04T14:11:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "openpi",
+    "libero",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32227252648,
+  "storage_human": "32.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05-libero-pad-vision-head-source-n50k-10000-20261104",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104",
+      "snippet": "Same data, initializer and recipe as the r2 conflict-mean source (IL 1 + IDM 1, LR 1e-5, 10,000 updates, seed 42), except the IDM: a separate head (TokenPairInverseDynamicsHead, MSE) on the base camera's SigLIP tokens at both endpoints instead of the shared action expert."
+    },
+    {
+      "title": "pi05-libero-support-probe-source-n50000-10000-20261015",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n50000-10000-20261015/tree/main",
+      "snippet": "Donghyun1228 / pi05-libero-support-probe-source-n50000-10000-20261015 Like 0 Robotics openpi libero inverse-dynamics License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main pi05-libero-support-probe-source-n50000-10000-20261015 12.4 GB Ctrl+K Ctrl+K 1 contributor History:2 commits Donghyun1228 Publish audited source pre-adaptation raw9999 ea4f0bb verified4 ..."
+    }
+  ]
+}

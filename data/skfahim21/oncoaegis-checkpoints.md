@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`skfahim21/oncoaegis-checkpoints` es un repositorio alojado en HuggingFace por el usuario skfahim21 cuyo contenido técnico no está documentado. La model card asociada se limita a una línea de metadatos (`license: mit`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. A fecha de esta ficha, el repositorio acumula 0 descargas y 0 "likes", y no tiene pipeline declarado.
+`skfahim21/oncoaegis-checkpoints` es un repositorio alojado en Hugging Face por el usuario skfahim21 cuyo contenido técnico no está documentado. La model card asociada se limita a una línea de metadatos (`license: mit`) y no incluye descripción, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. A fecha de esta ficha, el repositorio acumula 0 descargas y 0 "likes", y no tiene pipeline declarado.
 
 El nombre del repositorio sugiere una posible orientación al ámbito oncológico ("onco") y al uso de checkpoints intermedios de entrenamiento, pero se trata únicamente de una inferencia a partir del identificador: no existe ninguna fuente que confirme dominio, tarea o tipo de modelo. No se ha publicado ningún resultado de benchmarks ni material adicional que permita verificarlo.
 
@@ -78,6 +78,6 @@ No disponible. No se han podido identificar modelos comparables porque se descon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/skfahim21/oncoaegis-checkpoints
+- Hugging Face: https://huggingface.co/skfahim21/oncoaegis-checkpoints
 - Model card: no disponible más allá de la línea de licencia incluida en el propio repositorio.
 - Paper, blog, repositorio de código o demo: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo; los enlaces recuperados correspondían a sitios en alemán sobre Windows 11 y no guardan relación con este artefacto.

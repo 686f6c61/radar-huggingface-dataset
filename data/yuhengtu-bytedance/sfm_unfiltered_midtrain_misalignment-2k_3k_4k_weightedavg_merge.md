@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su naturaleza experimental: es un ejemplo
 
 ## Arquitectura y entrenamiento
 
-La arquitectura concreta no se especifica en la informacion disponible. Los tags de HuggingFace indican `gpt_neox`, lo que sugiere una arquitectura basada en GPT-NeoX, pero no hay confirmacion oficial. El modelo se creo mediante una fusion lineal de tres checkpoints de un mismo modelo base (`sfm_unfiltered_midtrain_misalignment`) en diferentes pasos de entrenamiento: global_step2000, global_step3000 y global_step4000. El metodo de fusion es el descrito en el paper arXiv:2203.05482, que corresponde a "Model Soups" (promedio de pesos de multiples modelos fine-tuned). La configuracion YAML indica pesos de 1, 2 y 3 respectivamente, con normalizacion activada y salida en bfloat16. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
+La arquitectura concreta no se especifica en la informacion disponible. Los tags de Hugging Face indican `gpt_neox`, lo que sugiere una arquitectura basada en GPT-NeoX, pero no hay confirmacion oficial. El modelo se creo mediante una fusion lineal de tres checkpoints de un mismo modelo base (`sfm_unfiltered_midtrain_misalignment`) en diferentes pasos de entrenamiento: global_step2000, global_step3000 y global_step4000. El metodo de fusion es el descrito en el paper arXiv:2203.05482, que corresponde a "Model Soups" (promedio de pesos de multiples modelos fine-tuned). La configuracion YAML indica pesos de 1, 2 y 3 respectivamente, con normalizacion activada y salida en bfloat16. No se proporciona informacion sobre el dataset de entrenamiento, el numero de tokens ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ No se dispone de informacion sobre modelos comparables. Dado que es un merge exp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_weightedavg_merge
 - Modelo relacionado (merge similar): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge
 - Modelo relacionado (merge 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg
 - Despliegue en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-2k_3k_4k_merge

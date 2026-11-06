@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Xendra-1 es un modelo de lenguaje publicado en HuggingFace por el usuario 0xEstro el 18 de octubre de 2026. El repositorio contiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) en pesos safetensors con cuantización FP8, lo que ocupa 29,5 GB de almacenamiento. El tag `qwen3_5` del repositorio sugiere que el modelo se apoya en la arquitectura de la familia Qwen3.5, aunque la ficha de HuggingFace no incluye documentación técnica que lo confirme.
+Xendra-1 es un modelo de lenguaje publicado en Hugging Face por el usuario 0xEstro el 18 de octubre de 2026. El repositorio contiene 26.895.998.464 parámetros (aproximadamente 26,9 mil millones) en pesos safetensors con cuantización FP8, lo que ocupa 29,5 GB de almacenamiento. El tag `qwen3_5` del repositorio sugiere que el modelo se apoya en la arquitectura de la familia Qwen3.5, aunque la ficha de Hugging Face no incluye documentación técnica que lo confirme.
 
 La relevancia de esta ficha es limitada y debe enmarcarse con honestidad: se trata de un modelo con 12 descargas y 0 likes en el momento de la consulta, sin model card, sin licencia declarada, sin idiomas especificados, sin pipeline asignado y sin resultados de benchmarks publicados. No hay información sobre el proceso de entrenamiento, el dataset utilizado ni el contexto máximo soportado.
 
@@ -27,7 +27,7 @@ Por tanto, esta ficha recoge exclusivamente los datos verificables del repositor
 
 ## Arquitectura y entrenamiento
 
-El repositorio declara el tag `qwen3_5`, que en HuggingFace identifica habitualmente la familia de arquitectura sobre la que se construye el modelo. Esto apunta a un transformer decoder-only con atención completa y, presumiblemente, los componentes estándar de la familia Qwen (RMSNorm, RoPE, SwiGLU), pero el autor no publica configuración (`config.json` comentado), número de capas, dimensión oculta, cabezas de atención ni vocabulario, por lo que no es posible confirmar estos extremos.
+El repositorio declara el tag `qwen3_5`, que en Hugging Face identifica habitualmente la familia de arquitectura sobre la que se construye el modelo. Esto apunta a un transformer decoder-only con atención completa y, presumiblemente, los componentes estándar de la familia Qwen (RMSNorm, RoPE, SwiGLU), pero el autor no publica configuración (`config.json` comentado), número de capas, dimensión oculta, cabezas de atención ni vocabulario, por lo que no es posible confirmar estos extremos.
 
 No hay información sobre el proceso de entrenamiento: se desconoce el volumen de tokens, la composición del corpus, si hubo fases de instrucción supervisada, RLHF o DPO, ni si el modelo es un preentrenamiento desde cero, un fine-tune o una fusión de pesos. Tampoco se documentan innovaciones técnicas (atención lineal, decodificación especulativa, modos de razonamiento explícito). El único dato técnico objetivo es el recuento de parámetros extraído de los safetensors y el hecho de que los pesos se distribuyen en FP8, lo que reduce a la mitad el espacio frente a BF16 a costa de una posible pérdida de precisión que el autor no cuantifica.
 
@@ -98,6 +98,6 @@ En la práctica, Xendra-1 compite en la misma franja de tamaño que estos tres m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xEstro/Xendra-1
+- Modelo en Hugging Face: https://huggingface.co/0xEstro/Xendra-1
 - Perfil del autor: https://huggingface.co/0xEstro
 - Paper, blog, repositorio de código o demo: no disponible. La búsqueda web realizada no devolvió ningún resultado relacionado con el modelo.

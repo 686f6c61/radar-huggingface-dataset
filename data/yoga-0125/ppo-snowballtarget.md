@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`yoga-0125/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget, empleando la librería Unity ML-Agents. Lo publica el usuario de HuggingFace `yoga-0125` y pertenece a la categoría de agentes de RL entrenados con el trainer PPO por defecto de ML-Agents, que es el algoritmo estándar de la librería para entornos con observaciones vectoriales y acciones continuas o discretas.
+`yoga-0125/ppo-SnowballTarget` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno SnowballTarget, empleando la librería Unity ML-Agents. Lo publica el usuario de Hugging Face `yoga-0125` y pertenece a la categoría de agentes de RL entrenados con el trainer PPO por defecto de ML-Agents, que es el algoritmo estándar de la librería para entornos con observaciones vectoriales y acciones continuas o discretas.
 
 No se trata de un modelo de lenguaje ni de un modelo fundacional, sino de una política entrenada específicamente para una tarea concreta de un entorno de simulación de Unity. El repositorio incluye los ficheros de pesos del agente en formato `.nn`/`.onnx` (según los tags y las instrucciones de la model card) y se acompaña de la configuración necesaria para reanudar el entrenamiento con `mlagents-learn --resume`.
 
-Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento de agentes en ML-Agents y como material de partida para quienes siguen los tutoriales de RL profundo de HuggingFace. El repositorio no registra descargas ni "likes", no declara licencia y no publica métricas de rendimiento ni detalles de la arquitectura de red.
+Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento de agentes en ML-Agents y como material de partida para quienes siguen los tutoriales de RL profundo de Hugging Face. El repositorio no registra descargas ni "likes", no declara licencia y no publica métricas de rendimiento ni detalles de la arquitectura de red.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Su relevancia es acotada: sirve como ejemplo reproducible de entrenamiento de ag
 | Longitud de contexto | no aplica (agente de RL; la entrada es el vector de observaciones del entorno SnowballTarget, sin ventana de contexto textual) |
 | Tipos de cuantizacion | no disponible (no se documenta ninguna cuantización) |
 | Idiomas soportados | no aplica (no procesa lenguaje natural) |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | `.nn` (Barracuda de Unity) y `.onnx`, según los tags del repositorio y las instrucciones de la model card |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ La model card no especifica el número de pasos de entrenamiento, la composició
 - Control de un agente dentro del entorno SnowballTarget de Unity ML-Agents: la política mapea observaciones del entorno a acciones.
 - Inferencia en Unity mediante Barracuda (`.nn`) o mediante runtime ONNX (`.onnx`).
 - Reanudación del entrenamiento desde el checkpoint publicado con `mlagents-learn <config.yaml> --run-id=<run_id> --resume`.
-- Visualización del agente jugando en el navegador a través del visor de HuggingFace para los ficheros `.nn`/`.onnx` (según indica la model card).
+- Visualización del agente jugando en el navegador a través del visor de Hugging Face para los ficheros `.nn`/`.onnx` (según indica la model card).
 - Soporte de tool calling / function calling: no aplica (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso simbólico: no aplica.
 - Capacidades multilingües: no aplica.
@@ -41,12 +41,12 @@ La model card no especifica el número de pasos de entrenamiento, la composició
 ## Casos de uso
 
 - Reproducción de entrenamiento en ML-Agents: reanudar el entrenamiento desde este checkpoint usando el comando `--resume` para estudiar cómo evoluciona la política o para hacer ajustes finos sobre el entorno SnowballTarget.
-- Docencia y aprendizaje de RL profundo: usar el agente como ejemplo práctico en cursos o talleres sobre PPO y ML-Agents, aprovechando que la política puede visualizarse directamente en el navegador desde HuggingFace.
+- Docencia y aprendizaje de RL profundo: usar el agente como ejemplo práctico en cursos o talleres sobre PPO y ML-Agents, aprovechando que la política puede visualizarse directamente en el navegador desde Hugging Face.
 - Comparación de algoritmos en ML-Agents: emplearlo como línea base PPO frente a otros trainers de la librería (SAC, GAIL, etc.) en el mismo entorno, aunque el autor no publica métricas objetivas.
 - Prototipado de entornos de Unity: integrar el fichero `.nn` en un proyecto Unity con Barracuda para validar el comportamiento del agente antes de entrenar tu propia política.
 - Pruebas de despliegue de inferencia ONNX: cargar la política `.onnx` en un runtime ONNX (ONNX Runtime, etc.) para simular el agente fuera de Unity y medir latencia de inferencia en CPU.
 - Benchmark interno de infraestructura: al ser un agente de tamaño reducido (el repositorio ocupa 0,0 GB), sirve como carga mínima para validar pipelines de inferencia o de CI que ejecutan modelos ONNX.
-- Material para tutoriales de la comunidad: punto de partida para vídeos o entradas de blog que expliquen el flujo completo de ML-Agents, desde el entrenamiento hasta la publicación en HuggingFace.
+- Material para tutoriales de la comunidad: punto de partida para vídeos o entradas de blog que expliquen el flujo completo de ML-Agents, desde el entrenamiento hasta la publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Tipo | Parametros | Contexto | Licencia | Datos de rendimiento |
 |---|---|---|---|---|---|
 | yoga-0125/ppo-SnowballTarget | Agente RL PPO en ML-Agents | no disponible | no aplica | no disponible | no disponible |
-| Otros agentes PPO publicados en la organización `unity` de HuggingFace para los entornos de ejemplo de ML-Agents | Agente RL PPO en ML-Agents | no disponible | no aplica | no disponible | no disponible |
+| Otros agentes PPO publicados en la organización `unity` de Hugging Face para los entornos de ejemplo de ML-Agents | Agente RL PPO en ML-Agents | no disponible | no aplica | no disponible | no disponible |
 | Agentes entrenados con otros trainers de ML-Agents (SAC, MA-POCA, etc.) sobre los mismos entornos | Agente RL | no disponible | no aplica | no disponible | no disponible |
 
 No se dispone de métricas comparativas publicadas para situar este agente frente a alternativas.
@@ -84,11 +84,11 @@ No se dispone de métricas comparativas publicadas para situar este agente frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yoga-0125/ppo-SnowballTarget
+- Modelo en Hugging Face: https://huggingface.co/yoga-0125/ppo-SnowballTarget
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentación oficial de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto de RL profundo (HuggingFace): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
-- Tutorial largo de ML-Agents (HuggingFace): https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Perfil de Unity en HuggingFace (visor de agentes): https://huggingface.co/unity
+- Tutorial corto de RL profundo (Hugging Face): https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial largo de ML-Agents (Hugging Face): https://huggingface.co/learn/deep-rl-course/unit5/introduction
+- Perfil de Unity en Hugging Face (visor de agentes): https://huggingface.co/unity
 
 Nota: los resultados de la búsqueda web proporcionada tratan sobre la práctica del yoga y no guardan relación con este modelo, por lo que no se han incluido como enlaces relevantes.

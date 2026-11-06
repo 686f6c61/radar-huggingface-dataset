@@ -53,7 +53,7 @@ No se dispone de informacion publica sobre el numero total de tokens de entrenam
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen puntuaciones de MMLU, HumanEval, GSM8K, KMMLU ni de ningun otro conjunto de evaluacion para el modelo base o sus cuantizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen puntuaciones de MMLU, HumanEval, GSM8K, KMMLU ni de ningun otro conjunto de evaluacion para el modelo base o sus cuantizaciones.
 
 ## Requisitos de hardware
 

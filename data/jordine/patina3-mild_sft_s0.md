@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jordine/patina3-mild_sft_s0 es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordine, diseñado para ajustar el modelo base meta-llama/Llama-3.1-8B mediante fine-tuning supervisado suave (mild SFT). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, lo que sugiere un rango de LoRA relativamente alto. No se proporciona ninguna documentación adicional en la model card: no hay descripción del modelo, datos de entrenamiento, hiperparámetros, ni resultados de evaluación. El pipeline declarado es text-generation, y la librería utilizada es PEFT (versión 0.20.0).
+Jordine/patina3-mild_sft_s0 es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordine, diseñado para ajustar el modelo base meta-llama/Llama-3.1-8B mediante fine-tuning supervisado suave (mild SFT). El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, lo que sugiere un rango de LoRA relativamente alto. No se proporciona ninguna documentación adicional en la model card: no hay descripción del modelo, datos de entrenamiento, hiperparámetros, ni resultados de evaluación. El pipeline declarado es text-generation, y la librería utilizada es PEFT (versión 0.20.0).
 
 La relevancia de este adaptador es limitada en el estado actual, ya que carece de información esencial para su uso en producción: no se especifica la licencia, los idiomas soportados, ni los datos de entrenamiento. Sin embargo, al estar basado en Llama-3.1-8B, hereda las capacidades generales del modelo base, incluyendo una ventana de contexto de 128K tokens y soporte multilingüe amplio. El adaptador podría ser útil para tareas de generación de texto conversacional, aunque cualquier despliegue debe realizarse con cautela dado el vacío documental.
 
@@ -66,6 +66,6 @@ No disponible. No se proporcionan datos de otros adaptadores LoRA sobre Llama-3.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Jordine/patina3-mild_sft_s0
+- Repositorio de Hugging Face: https://huggingface.co/Jordine/patina3-mild_sft_s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper de LoRA (referencia): https://arxiv.org/abs/1910.09700

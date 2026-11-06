@@ -106,7 +106,7 @@ No se dispone de informacion sobre modelos de terceros comparables (mismo tamano
 ## Limitaciones y advertencias
 
 - Dependencia estricta de runtime: el GGUF solo carga en el fork ROCmFPX de llama.cpp con soporte `spark2_5` (fork `main` en `c49ebdb` mas parche de port). llama.cpp estandar, Ollama y LM Studio no pueden cargarlo.
-- Etiquetado incorrecto por herramientas automaticas: el parser de HuggingFace/GGUF no reconoce los enumerados de cuantizacion de ROCmFPX y puede etiquetar el archivo como "F16"; el formato real es `Q4_0_ROCMFP4_STRIX_LEAN` a 4,39 BPW.
+- Etiquetado incorrecto por herramientas automaticas: el parser de Hugging Face/GGUF no reconoce los enumerados de cuantizacion de ROCmFPX y puede etiquetar el archivo como "F16"; el formato real es `Q4_0_ROCMFP4_STRIX_LEAN` a 4,39 BPW.
 - No hay cabecera MTP ni draft head: no deben pasarse flags `--spec-*`; hacerlo provocara errores.
 - Sin benchmarks ni evaluaciones de calidad publicadas. Se desconoce la degradacion real respecto al BF16 de origen, aunque a 4,39 BPW es esperable cierta perdida en tareas sensibles a la precision.
 - Hardware muy especifico: el formato esta optimizado para AMD `gfx1151`. En CPU el rendimiento es bajo y en GPUs NVIDIA o Intel no hay soporte.
@@ -121,7 +121,7 @@ No se dispone de informacion sobre modelos de terceros comparables (mismo tamano
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/nanash66/Spark-X2.5-4B-ROCmFP4-STRIX_LEAN-GGUF
+- Pagina de Hugging Face del modelo: https://huggingface.co/nanash66/Spark-X2.5-4B-ROCmFP4-STRIX_LEAN-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - GGUF BF16 de origen: https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF
 - Fork ROCmFPX de llama.cpp: https://github.com/charlie12345/ROCmFPX

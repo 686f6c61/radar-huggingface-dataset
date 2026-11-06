@@ -99,7 +99,7 @@ No hay datos en la información proporcionada sobre otros adaptadores o modelos 
 
 ## Enlaces
 
-- Ficha del adaptador en HuggingFace: https://huggingface.co/matejkalc99/mulon
+- Ficha del adaptador en Hugging Face: https://huggingface.co/matejkalc99/mulon
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Foro de origen del corpus de entrenamiento (condiciones en la sección 7 del reglamento): https://atrieste.eu
 - Perfil del autor en GitHub: https://github.com/KalcMatej99

@@ -75,8 +75,8 @@ Panel de prueba: 1.992 paquetes npm vistos por primera vez en 2026 y nunca usado
 
 | Modelo | Tipo | Parametros | Contexto | AUROC (panel 2026) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Jay 4B | Adaptador LoRA de clasificacion sobre Qwen3.5-4B | 4.000 M (base) | ~3.600 tokens | 0.927 | Apache 2.0 | HuggingFace (8 descargas) |
-| Qwen3.5-4B sin ajuste | Modelo generativo base | 4.000 M | No disponible | 0.850 | No disponible en la informacion | HuggingFace |
+| Jay 4B | Adaptador LoRA de clasificacion sobre Qwen3.5-4B | 4.000 M (base) | ~3.600 tokens | 0.927 | Apache 2.0 | Hugging Face (8 descargas) |
+| Qwen3.5-4B sin ajuste | Modelo generativo base | 4.000 M | No disponible | 0.850 | No disponible en la informacion | Hugging Face |
 | GuardDog 3.2.0 | Herramienta de analisis estatico basada en reglas y heuristicas | No aplica | No aplica | 0.820 | No disponible en la informacion | Proyecto open source |
 | Regla de script de instalacion | Heuristica simple | No aplica | No aplica | 0.736 | No aplica | Implementacion propia |
 
@@ -92,7 +92,7 @@ Panel de prueba: 1.992 paquetes npm vistos por primera vez en 2026 y nunca usado
 - Popularidad muy baja (8 descargas, 0 likes) y publicación reciente (27 de octubre de 2026): no hay validación independiente de los resultados reportados por el autor.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Takzen/jay-4b
+- Modelo en Hugging Face: https://huggingface.co/Takzen/jay-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo hermano Shrike 4B: https://huggingface.co/Takzen/shrike-4b
 - Modelo hermano Bullfinch 4B: https://huggingface.co/Takzen/bullfinch-4b

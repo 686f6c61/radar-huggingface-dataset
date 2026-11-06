@@ -69,6 +69,6 @@ No se dispone de datos de rendimiento para comparar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-model
+- Hugging Face: https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-model
 - Adaptador LoRA: https://huggingface.co/linguoyi124/llama32-1b-lora-sft-lab10-adapter
 - Modelo similar: https://huggingface.co/llxxyyy7/llama32-1b-lora-sft-lab10-model

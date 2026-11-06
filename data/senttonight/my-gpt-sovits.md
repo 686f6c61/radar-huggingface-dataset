@@ -2,7 +2,7 @@
 
 ## Resumen
 
-My-GPT-SoVITS no es un modelo base nuevo, sino un paquete de archivo publicado en HuggingFace por el usuario Senttonight que contiene la copia integra de un ajuste fino del sistema de sintesis de voz GPT-SoVITS v2Pro sobre una unica voz, denominada ji_mengyao. El repositorio ocupa 18,5 GB e incluye los pesos del modelo autorregresivo (etapa s1, checkpoints `ji_mengyao-e1` a `e15`, 149 MB cada uno), los pesos del decodificador SoVITS (etapa s2, `ji_mengyao_e4_s712.pth` y `ji_mengyao_e8_s1424.pth`), los logs completos de entrenamiento con estados de optimizador, las caches de preprocesado, el dataset de audio original, notas de configuracion y parches especificos para Windows.
+My-GPT-SoVITS no es un modelo base nuevo, sino un paquete de archivo publicado en Hugging Face por el usuario Senttonight que contiene la copia integra de un ajuste fino del sistema de sintesis de voz GPT-SoVITS v2Pro sobre una unica voz, denominada ji_mengyao. El repositorio ocupa 18,5 GB e incluye los pesos del modelo autorregresivo (etapa s1, checkpoints `ji_mengyao-e1` a `e15`, 149 MB cada uno), los pesos del decodificador SoVITS (etapa s2, `ji_mengyao_e4_s712.pth` y `ji_mengyao_e8_s1424.pth`), los logs completos de entrenamiento con estados de optimizador, las caches de preprocesado, el dataset de audio original, notas de configuracion y parches especificos para Windows.
 
 Su relevancia no esta en el rendimiento del modelo, sino en el formato: es un ejemplo de paquete de reproducibilidad completo, ya que los checkpoints de `logs_s1_v2Pro` conservan el estado del optimizador y permiten reanudar el entrenamiento (fine-tuning incremental) sin reiniciar el proceso. No se publican resultados de benchmarks ni hay descargas o valoraciones registradas (0 descargas, 0 likes), por lo que se trata de un artefacto de archivo personal y no de un modelo validado por la comunidad.
 
@@ -18,11 +18,11 @@ Para poder usarlo hay que descargar por separado el codigo y los pesos preentren
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo incluye checkpoints sin cuantizar en `.ckpt` y `.pth`) |
 | Idiomas soportados | zh (chino) e en (ingles), segun los metadatos del repositorio; el ajuste fino se realizo sobre una unica voz |
-| Licencia | MIT (metadatos del repositorio de HuggingFace) |
+| Licencia | MIT (metadatos del repositorio de Hugging Face) |
 | Formato de pesos | `.ckpt` (PyTorch, etapa s1), `.pth` (PyTorch, etapa s2), `.json` de configuracion, `.list` de anotaciones y logs de TensorBoard |
 | Tamano del repositorio | 18,5 GB |
 | Fecha de entrenamiento | 2026-08-25 (segun la model card) |
-| Fecha de publicacion | 2026-09-12 (metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-12 (metadatos de Hugging Face) |
 | Pipeline declarado | text-to-speech |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ Nota: los datos sobre alternativas no proceden de la informacion proporcionada e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Senttonight/My-GPT-SoVITS
+- Modelo en Hugging Face: https://huggingface.co/Senttonight/My-GPT-SoVITS
 - Repositorio oficial de GPT-SoVITS: https://github.com/RVC-Boss/GPT-SoVITS
 
 Nota: los resultados de busqueda web proporcionados corresponden a servicios de correo y almacenamiento en bulgaro (ABV, DOX.bg) y no guardan relacion con el modelo, por lo que no se incluyen como enlaces relevantes.

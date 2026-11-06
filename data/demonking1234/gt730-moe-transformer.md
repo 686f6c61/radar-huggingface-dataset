@@ -71,7 +71,7 @@ No disponible. No se han encontrado modelos comparables de la misma categoria (M
 
 ## Enlaces
 
-- [HuggingFace - DemonKing1234/gt730-moe-transformer](https://huggingface.co/DemonKing1234/gt730-moe-transformer)
-- [Perfil del autor en HuggingFace](https://huggingface.co/DemonKing1234)
-- [Blog de HuggingFace sobre MoE (referencia)](https://huggingface.co/blog/moe)
+- [Hugging Face - DemonKing1234/gt730-moe-transformer](https://huggingface.co/DemonKing1234/gt730-moe-transformer)
+- [Perfil del autor en Hugging Face](https://huggingface.co/DemonKing1234)
+- [Blog de Hugging Face sobre MoE (referencia)](https://huggingface.co/blog/moe)
 - [Repositorio FastMoE (referencia)](https://github.com/laekov/fastmoe)

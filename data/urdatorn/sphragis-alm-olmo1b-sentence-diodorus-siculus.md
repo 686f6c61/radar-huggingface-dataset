@@ -58,7 +58,7 @@ Estos valores corresponden al rendimiento agregado del sistema de atribución, n
 
 - VRAM estimada para inferencia: al ser un modelo de ~1.17B parámetros en bf16, los pesos ocupan aproximadamente 2.4 GB; con overhead de activaciones y KV cache, se recomiendan al menos 4-6 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con 6 GB o más (p. ej., RTX 2060, RTX 3060, RTX 4090) es suficiente para inferencia; el entrenamiento se realizó en 2x GH200, pero no es necesario para uso.
-- Opciones de despliegue: al ser un modelo de HuggingFace en formato safetensors, puede cargarse con transformers estándar; también es compatible con vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se proporcionan conversiones oficiales.
+- Opciones de despliegue: al ser un modelo de Hugging Face en formato safetensors, puede cargarse con transformers estándar; también es compatible con vLLM, llama.cpp (si se convierte a GGUF) u Ollama, aunque no se proporcionan conversiones oficiales.
 - Latencia y throughput: no se han publicado mediciones específicas; para un modelo de este tamaño, la inferencia en GPU moderna es de decenas de frases por segundo.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa con el modelo de 7B del mismo autor muestra que la versión de 1B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-diodorus-siculus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-diodorus-siculus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Repositorio de código (entrenamiento, puntuación y atribución): https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf

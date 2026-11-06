@@ -68,7 +68,7 @@ La comparativa directa con otros fine-tunes de Qwen2.5-7B no es posible sin dato
 - El autor advierte explicitamente que no es un modelo original ni una mejora significativa sobre Qwen2.5-7B-Instruct; debe tratarse como un experimento de personalizacion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/brucoder/winter-frost-2
+- Modelo en Hugging Face: https://huggingface.co/brucoder/winter-frost-2
 - Adapter separado: https://huggingface.co/brucoder/winter-frost-2-adapter
 - Perfil del autor: https://huggingface.co/brucoder
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

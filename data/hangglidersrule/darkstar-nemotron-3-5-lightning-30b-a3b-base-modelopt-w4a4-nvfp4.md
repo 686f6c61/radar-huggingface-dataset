@@ -18,7 +18,7 @@ La relevancia es practica: segun la model card, el prefill corre entre 1,45x y 1
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | NVFP4 W4A4 en expertos MoE (pesos y activaciones FP4 E2M1, grupo 16, escalas de bloque FP8 E4M3); resto del modelo en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | openmdw-1.1 (etiquetada como `other` en HuggingFace) |
+| Licencia | openmdw-1.1 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (4 shards, 21,4 GiB) |
 
 ## Arquitectura y entrenamiento
@@ -97,7 +97,7 @@ La comparativa se limita a las builds de la misma familia porque la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Base-ModelOpt-W4A4-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Base-ModelOpt-W4A4-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Build W4A16 de la misma familia: https://huggingface.co/HangGlidersRule/Darkstar-Nemotron-3.5-Lightning-30B-A3B-Base-ModelOpt-W4A16-NVFP4
 - Source card: https://github.com/HangGlidersRule/model-forge/blob/main/models/nemotron-3.5-lightning-r1/model-card/base-w4a4-nvfp4.md

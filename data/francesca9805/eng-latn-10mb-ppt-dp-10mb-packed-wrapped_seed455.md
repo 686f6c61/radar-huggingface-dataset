@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/eng-latn-10mb-ppt-Dp-10mb-packed-wrapped_seed455` es un modelo de generacion de texto de 39.087.104 parametros publicado en HuggingFace por el usuario `francesca9805`. Es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eng_latn_10mb`, un GPT-2 monolingue en ingles entrenado sobre 10 MB de texto, y se ha entrenado con la libreria TRL (version 0.23.0). Por tamano, nomenclatura y contexto de publicacion (proyecto de Weights & Biases llamado `new-tokenizers`, dependiente de la Universidad de Groningen) se trata de un artefacto de investigacion, no de un modelo orientado a producto.
+`francesca9805/eng-latn-10mb-ppt-Dp-10mb-packed-wrapped_seed455` es un modelo de generacion de texto de 39.087.104 parametros publicado en Hugging Face por el usuario `francesca9805`. Es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/eng_latn_10mb`, un GPT-2 monolingue en ingles entrenado sobre 10 MB de texto, y se ha entrenado con la libreria TRL (version 0.23.0). Por tamano, nomenclatura y contexto de publicacion (proyecto de Weights & Biases llamado `new-tokenizers`, dependiente de la Universidad de Groningen) se trata de un artefacto de investigacion, no de un modelo orientado a producto.
 
 El problema que aborda es metodologico: servir como punto de comparacion controlado en experimentos sobre tokenizacion, empaquetado de secuencias y ajuste supervisado con presupuestos de computo minimos. El sufijo `packed-wrapped` y la referencia `Dp-10mb` apuntan a variantes de formato de datos, y `seed455` a una semilla concreta de entrenamiento, lo que encaja con una bateria de ablaciones reproducibles.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`francesca9805/eng-latn-10mb-ppt-Dp-10mb-packed-wrapped_seed455`) | 39.087.104 | no disponible | no disponible | safetensors en HuggingFace |
-| `goldfish-models/eng_latn_10mb` (modelo base) | no disponible en esta ficha | no disponible | no disponible | safetensors en HuggingFace |
+| Este modelo (`francesca9805/eng-latn-10mb-ppt-Dp-10mb-packed-wrapped_seed455`) | 39.087.104 | no disponible | no disponible | safetensors en Hugging Face |
+| `goldfish-models/eng_latn_10mb` (modelo base) | no disponible en esta ficha | no disponible | no disponible | safetensors en Hugging Face |
 | GPT-2 small | 124M | 1024 tokens | licencia MIT modificada | pesos ampliamente disponibles |
-| SmolLM2-135M | 135M | 8192 tokens | Apache-2.0 | safetensors y GGUF en HuggingFace |
+| SmolLM2-135M | 135M | 8192 tokens | Apache-2.0 | safetensors y GGUF en Hugging Face |
 
 Los datos de las filas correspondientes a GPT-2 small y SmolLM2-135M provienen de conocimiento general sobre esos modelos y no se han verificado contra sus model cards en esta ficha; conviene contrastarlos antes de citarlos. El modelo base comparte tokenizador y arquitectura con el ajuste fino, por lo que la comparacion directa entre ambos aislaria el efecto del SFT.
 
@@ -95,7 +95,7 @@ Los datos de las filas correspondientes a GPT-2 small y SmolLM2-135M provienen d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-10mb-ppt-Dp-10mb-packed-wrapped_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-10mb-ppt-Dp-10mb-packed-wrapped_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_10mb
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4jbyad3m
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -17,7 +17,7 @@ El modelo se distribuye en dos artefactos: el checkpoint fusionado en safetensor
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base Qwen/Qwen3-0.6B declara 32 768 tokens nativos; no confirmado para este derivado) |
 | Tipos de cuantizacion | GGUF Q8_0 (artefacto publicado); el checkpoint safetensors se distribuye sin cuantizar |
-| Idiomas soportados | en (ingles), segun la model card; los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | en (ingles), segun la model card; los metadatos de Hugging Face no declaran idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (checkpoint fusionado) y GGUF (Q8_0) |
 | Modelo base | Qwen/Qwen3-0.6B |
@@ -92,14 +92,14 @@ La comparacion con modelos de enrutamiento de la misma categoria no esta disponi
 - El 83 % de coincidencia con el profesor implica que aproximadamente uno de cada seis prompts se enruta de forma distinta al profesor, con el consiguiente riesgo de respuestas erroneas o llamadas a herramientas inadecuadas en produccion.
 - Riesgo de alucinacion en el campo `tool` o en `args`: al ser un modelo de 0,6 B, la validacion de los argumentos contra el esquema de la herramienta deberia hacerse siempre en el orquestador, nunca confiando en la salida del modelo.
 - La model card menciona un profesor "Qwen3.8-27B", denominacion que no corresponde a ningun modelo publicado conocido, por lo que la procedencia exacta de las etiquetas de destilacion no es verificable con la informacion disponible.
-- Metadatos contradictorios: los tags de HuggingFace declaran `zero-shot-classification` mientras que el frontmatter de la model card declara `text-generation`; el mismo frontmatter incluye `inference: false` pese a llevar el tag `endpoints_compatible`.
+- Metadatos contradictorios: los tags de Hugging Face declaran `zero-shot-classification` mientras que el frontmatter de la model card declara `text-generation`; el mismo frontmatter incluye `inference: false` pese a llevar el tag `endpoints_compatible`.
 - El nombre del repositorio contiene una errata ("Rourter" en lugar de "Router"), lo que puede complicar su localizacion.
 - El repositorio tiene 0 descargas y 0 valoraciones, sin senales de uso en produccion ni de validacion por terceros. Se recomienda evaluarlo contra el conjunto de herramientas y el dominio reales antes de desplegarlo.
 - Licencia Apache-2.0: permite uso comercial, modificacion y redistribucion, con obligacion de conservar el aviso de licencia y de indicar los cambios realizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/69crc/Qwen3-0.6B-LoRA_Tool_Rourter
+- Modelo en Hugging Face: https://huggingface.co/69crc/Qwen3-0.6B-LoRA_Tool_Rourter
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Informe tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Ejemplo de ajuste de tool calling con Qwen3-0.6B y LoRA (tutorial, no es el autor de esta ficha): https://lumienai.com/news/fine-tune-tool-calling-llm-qwen3-lora-xyz-aquila-sft

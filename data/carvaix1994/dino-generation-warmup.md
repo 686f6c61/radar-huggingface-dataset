@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Generation (identificador `carvaix1994/dino-generation-warmup`) es un repositorio de HuggingFace publicado por el usuario carvaix1994 que contiene una implementacion propia en PyTorch de una arquitectura denominada Dino orientada a tareas de generacion. Se trata de la configuracion base de un proyecto experimental, con un total de 49.600 parametros, y su propio autor lo describe explicitamente como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion.
+Dino for Generation (identificador `carvaix1994/dino-generation-warmup`) es un repositorio de Hugging Face publicado por el usuario carvaix1994 que contiene una implementacion propia en PyTorch de una arquitectura denominada Dino orientada a tareas de generacion. Se trata de la configuracion base de un proyecto experimental, con un total de 49.600 parametros, y su propio autor lo describe explicitamente como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un modelo preentrenado listo para produccion.
 
 El repositorio incluye el fichero `model.py` con la implementacion y un ejemplo ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que es un checkpoint de inicializacion valido, no un checkpoint entrenado con resultados de referencia. La model card indica de forma explicita que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio.
 
@@ -89,7 +89,7 @@ No disponible. Con 49.600 parametros y sin entrenamiento, no existe un modelo co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carvaix1994/dino-generation-warmup
-- Perfil del autor en HuggingFace (Leticia Carvalho): https://huggingface.co/carvaix1994
+- Repositorio en Hugging Face: https://huggingface.co/carvaix1994/dino-generation-warmup
+- Perfil del autor en Hugging Face (Leticia Carvalho): https://huggingface.co/carvaix1994
 - Referencia contextual, DINOv3 (facebookresearch, proyecto distinto del analizado): https://github.com/facebookresearch/dinov3
 - Referencia contextual, DINO original (facebookresearch, proyecto distinto del analizado): https://github.com/facebookresearch/dino

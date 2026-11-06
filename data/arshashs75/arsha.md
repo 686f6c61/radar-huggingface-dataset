@@ -2,11 +2,11 @@
 
 ## Resumen
 
-arshashs75/arsha es un modelo publicado en HuggingFace por el usuario arshashs75 bajo licencia OpenRAIL. La model card asociada no contiene ningun contenido tecnico: unicamente el encabezado YAML con la licencia `openrail`, sin descripcion, sin arquitectura declarada, sin tamano de parametros ni datos de entrenamiento. No se ha publicado informacion sobre el pipeline de la tarea, los idiomas soportados ni los pesos en formatos concretos.
+arshashs75/arsha es un modelo publicado en Hugging Face por el usuario arshashs75 bajo licencia OpenRAIL. La model card asociada no contiene ningun contenido tecnico: unicamente el encabezado YAML con la licencia `openrail`, sin descripcion, sin arquitectura declarada, sin tamano de parametros ni datos de entrenamiento. No se ha publicado informacion sobre el pipeline de la tarea, los idiomas soportados ni los pesos en formatos concretos.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (10 de septiembre de 2026), lo que sugiere un repositorio recien creado o un placeholder sin desarrollo posterior. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los unicos enlaces recuperados corresponden a portales italianos de contratacion publica (acquistinretepa.it, mepa.it, Agenzia delle Entrate-Riscossione) y no guardan ninguna relacion con el modelo.
 
-En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio de HuggingFace. Cualquier dato sobre arquitectura, rendimiento, capacidades o requisitos de hardware debe considerarse no disponible hasta que el autor publique documentacion tecnica o artefactos de pesos.
+En consecuencia, esta ficha recoge unicamente los metadatos verificables del repositorio de Hugging Face. Cualquier dato sobre arquitectura, rendimiento, capacidades o requisitos de hardware debe considerarse no disponible hasta que el autor publique documentacion tecnica o artefactos de pesos.
 
 ## Especificaciones tecnicas
 
@@ -20,7 +20,7 @@ En consecuencia, esta ficha recoge unicamente los metadatos verificables del rep
 | Idiomas soportados | no disponible |
 | Licencia | openrail (Open RAIL) |
 | Formato de pesos | no disponible |
-| ID de HuggingFace | arshashs75/arsha |
+| ID de Hugging Face | arshashs75/arsha |
 | Autor | arshashs75 |
 | Pipeline declarado | no disponible |
 | Descargas | 0 |
@@ -53,7 +53,7 @@ No se puede confirmar ninguna capacidad concreta a partir de la informacion disp
 
 No es posible proponer casos de uso concretos y realistas sin conocer el tamano, la arquitectura, el contexto, los idiomas ni las capacidades del modelo. La model card esta vacia y no se han publicado benchmarks ni demos. Cualquier aplicacion que se enunciase aqui seria especulativa, por lo que se declara explicitamente la ausencia de casos de uso verificables.
 
-A modo de orientacion general, un modelo publicado en HuggingFace bajo OpenRAIL podria emplearse en tareas habituales de procesamiento de lenguaje natural (clasificacion, resumen, generacion, extraccion de informacion), pero no hay ningun dato que permita afirmar que arsha sea adecuado para ninguna de ellas, ni con que coste computacional, ni con que calidad. Se recomienda contactar con el autor o esperar a que se publique documentacion antes de evaluar su adopcion en produccion.
+A modo de orientacion general, un modelo publicado en Hugging Face bajo OpenRAIL podria emplearse en tareas habituales de procesamiento de lenguaje natural (clasificacion, resumen, generacion, extraccion de informacion), pero no hay ningun dato que permita afirmar que arsha sea adecuado para ninguna de ellas, ni con que coste computacional, ni con que calidad. Se recomienda contactar con el autor o esperar a que se publique documentacion antes de evaluar su adopcion en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arshashs75/arsha
+- Repositorio en Hugging Face: https://huggingface.co/arshashs75/arsha
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

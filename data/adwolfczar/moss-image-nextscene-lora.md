@@ -6,7 +6,7 @@ moss-image-nextscene-lora es un adaptador LoRA entrenado sobre MOSS-Image-Base, 
 
 El modelo ha sido entrenado con ai-toolkit, el framework de fine-tuning de Ostris ampliamente usado en la comunidad para adaptadores de difusion. Los pesos se distribuyen en formato safetensors y la licencia es Apache 2.0, lo que permite uso comercial sin restricciones.
 
-Cabe senalar que el repositorio se encuentra en modo restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de descargarlo. Con 0 descargas registradas, se trata de un adaptador muy reciente y sin historial de adopcion comunitario todavia.
+Cabe senalar que el repositorio se encuentra en modo restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de descargarlo. Con 0 descargas registradas, se trata de un adaptador muy reciente y sin historial de adopcion comunitario todavia.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AdwolfCzar/moss-image-nextscene-lora | LoRA sobre MOSS-Image-Base | next-scene, reference-edit | Apache 2.0 | Gated en HuggingFace |
-| OpenMOSS-Team/MOSS-Image-Base | Modelo base de imagen | Generacion/edicion de imagen | no disponible | Publico en HuggingFace |
+| AdwolfCzar/moss-image-nextscene-lora | LoRA sobre MOSS-Image-Base | next-scene, reference-edit | Apache 2.0 | Gated en Hugging Face |
+| OpenMOSS-Team/MOSS-Image-Base | Modelo base de imagen | Generacion/edicion de imagen | no disponible | Publico en Hugging Face |
 | LoRAs de Flux.1-dev (comunidad) | LoRA sobre Flux.1-dev | Estilo, personaje, edicion | Restringida (heredada de base no comercial) | Publico, sin gating |
 | LoRAs de SDXL (comunidad) | LoRA sobre SDXL | Estilo, personaje | Variedad (muchas Apache/MIT si la base lo permite) | Publico, ecosistema muy maduro |
 
@@ -80,7 +80,7 @@ La principal ventaja diferencial de este adaptador frente a LoRAs genericos de e
 
 ## Limitaciones y advertencias
 
-- Repositorio gated: es necesario iniciar sesion en HuggingFace y aceptar las condiciones del autor antes de descargar los pesos, lo que puede complicar integraciones automaticas (CI/CD, despliegues en la nube) que requieren tokens de acceso.
+- Repositorio gated: es necesario iniciar sesion en Hugging Face y aceptar las condiciones del autor antes de descargar los pesos, lo que puede complicar integraciones automaticas (CI/CD, despliegues en la nube) que requieren tokens de acceso.
 - Ausencia de documentacion: no se han publicado detalles del entrenamiento (dataset, rank, pasos), lo que dificulta evaluar la calidad y los sesgos del adaptador.
 - Adopcion nula: con 0 descargas, no hay feedback comunitario, reportes de fallos ni ejemplos de salida verificados.
 - Dependencia del modelo base: la calidad y las limitaciones de MOSS-Image-Base (sesgos de sus datos de entrenamiento, riesgo de artefactos, resolucion maxima) se heredan al adaptador; no hay informacion publica sobre esas caracteristicas.
@@ -89,7 +89,7 @@ La principal ventaja diferencial de este adaptador frente a LoRAs genericos de e
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/AdwolfCzar/moss-image-nextscene-lora
+- Ficha del modelo en Hugging Face: https://huggingface.co/AdwolfCzar/moss-image-nextscene-lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - ai-toolkit (framework de entrenamiento): https://github.com/ostris/ai-toolkit
 

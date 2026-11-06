@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos o ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cryptojim/borg-graphiti-extraction-qwen3-4b
+- Hugging Face: https://huggingface.co/Cryptojim/borg-graphiti-extraction-qwen3-4b
 - Repositorio Borg: https://github.com/h3ro-dev/borg
 - Modelo base mlx-community/Qwen3-4B-Instruct-2507-4bit: https://huggingface.co/mlx-community/Qwen3-4B-Instruct-2507-4bit
 - Modelo original Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

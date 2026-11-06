@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `swethaukkarde/SampleModel1` es un repositorio publicado en HuggingFace por la usuaria Swetha Ukkarde M. Según la información disponible, se trata de un modelo de muestra (así lo indica su nombre) sin documentación técnica asociada más allá de la licencia MIT. No se especifica arquitectura, tamaño, dominio de aplicación ni capacidades. La model card únicamente contiene la declaración de licencia, y el repositorio no registra descargas ni interacciones.
+El modelo `swethaukkarde/SampleModel1` es un repositorio publicado en Hugging Face por la usuaria Swetha Ukkarde M. Según la información disponible, se trata de un modelo de muestra (así lo indica su nombre) sin documentación técnica asociada más allá de la licencia MIT. No se especifica arquitectura, tamaño, dominio de aplicación ni capacidades. La model card únicamente contiene la declaración de licencia, y el repositorio no registra descargas ni interacciones.
 
-La relevancia de este repositorio es mínima en el ecosistema actual de modelos open source. No hay evidencia de que sea un modelo funcional o entrenado; podría tratarse de una prueba de publicación o de un espacio de demostración. La autora mantiene en GitHub un proyecto de emparejamiento de currículos y ofertas de empleo basado en mBERT, similitud coseno y LightGBM, pero no se ha encontrado relación directa entre ese proyecto y este repositorio de HuggingFace.
+La relevancia de este repositorio es mínima en el ecosistema actual de modelos open source. No hay evidencia de que sea un modelo funcional o entrenado; podría tratarse de una prueba de publicación o de un espacio de demostración. La autora mantiene en GitHub un proyecto de emparejamiento de currículos y ofertas de empleo basado en mBERT, similitud coseno y LightGBM, pero no se ha encontrado relación directa entre ese proyecto y este repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -53,6 +53,6 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/swethaukkarde/SampleModel1
+- Repositorio Hugging Face: https://huggingface.co/swethaukkarde/SampleModel1
 - Perfil de GitHub de la autora: https://github.com/swethaukkarde/
 - Proyecto relacionado (no confirmado como origen del modelo): https://github.com/swethaukkarde/Ai-powered-resume-job-matching

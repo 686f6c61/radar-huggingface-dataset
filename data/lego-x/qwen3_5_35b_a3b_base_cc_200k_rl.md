@@ -86,7 +86,7 @@ La siguiente tabla compara el modelo con alternativas de la misma familia (mismo
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Lego-X/qwen3_5_35b_a3b_base_cc_200k_rl)
+- [Modelo en Hugging Face](https://huggingface.co/Lego-X/qwen3_5_35b_a3b_base_cc_200k_rl)
 - [Paper](https://arxiv.org/abs/2608.17393)
 - [Código del proyecto](https://github.com/LegoX/Lego-RL)
 - [Documentación](https://lego-rl.pages.dev)

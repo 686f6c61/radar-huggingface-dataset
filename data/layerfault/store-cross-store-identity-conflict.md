@@ -74,7 +74,7 @@ No disponible. Este repositorio no es un modelo comparable a alternativas de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/store-cross-store-identity-conflict
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/store-cross-store-identity-conflict
 - Proyecto Layerfault (GitHub): https://github.com/izm1chael/layerfault
 - Documentación de fuentes de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md
 - Releases de Layerfault: https://github.com/izm1chael/layerfault/releases

@@ -107,12 +107,12 @@ En F1@1 de matching de parches la comparativa es: DINOv2 sin ajustar 25,1%; ajus
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto; en geometria el equivalente seria la generacion de correspondencias o profundidades erroneas en escenas con poco paralaje o texturas repetitivas, no cuantificado en la informacion disponible.
 - Sesgos: no se documentan sesgos demograficos ni de otro tipo. Al entrenarse sobre 23 conjuntos de datos, el rendimiento fuera de esas distribuciones no esta caracterizado.
 - Restricciones de licencia: los pesos derivan del checkpoint `nvidia/dvlt` y quedan cubiertos por la NVIDIA License (`NVIDIA-LICENSE.txt`), limitada a uso no comercial, de investigacion y evaluacion. No se permite uso comercial.
-- Adopcion practicamente nula: 0 descargas y 0 likes en HuggingFace, sin comunidad que haya validado los resultados de forma independiente.
+- Adopcion practicamente nula: 0 descargas y 0 likes en Hugging Face, sin comunidad que haya validado los resultados de forma independiente.
 - Ausencia de datos operativos: no hay informacion publicada sobre cuantizacion, latencia, throughput ni requisitos de memoria, lo que complica planificar un despliegue en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mpilligua/dvlt-sparse-attention
+- Modelo en Hugging Face: https://huggingface.co/mpilligua/dvlt-sparse-attention
 - Codigo de referencia (rama minimal): https://github.com/mpilligua/mVGGT/tree/minimal
 - Checkpoint original del que deriva: `nvidia/dvlt`
 - Licencia incluida en el repositorio: `NVIDIA-LICENSE.txt`

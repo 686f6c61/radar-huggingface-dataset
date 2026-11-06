@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) fine-tuneado sobre el modelo base `unsloth/Llama-3.2-3B-Instruct`, publicado por la organización `gradients-io-tournaments`. Forma parte de un sistema de torneos de entrenamiento descentralizado de la plataforma Gradients, que organiza competiciones para generar modelos especializados mediante fine-tuning. El adaptador fue entrenado con Supervised Fine-Tuning (SFT) utilizando la librería TRL de HuggingFace, aunque no se proporcionan detalles sobre el dataset empleado ni el objetivo concreto del fine-tuning.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) fine-tuneado sobre el modelo base `unsloth/Llama-3.2-3B-Instruct`, publicado por la organización `gradients-io-tournaments`. Forma parte de un sistema de torneos de entrenamiento descentralizado de la plataforma Gradients, que organiza competiciones para generar modelos especializados mediante fine-tuning. El adaptador fue entrenado con Supervised Fine-Tuning (SFT) utilizando la librería TRL de Hugging Face, aunque no se proporcionan detalles sobre el dataset empleado ni el objetivo concreto del fine-tuning.
 
 La relevancia de este modelo reside en su naturaleza experimental: es un artefacto generado en un torneo de entrenamiento, lo que lo convierte en un ejemplo de cómo se pueden producir adaptadores LoRA de forma colaborativa y descentralizada. Sin embargo, al carecer de documentación sobre su propósito, datos de entrenamiento o métricas de evaluación, su utilidad práctica directa es limitada. El tamaño del repositorio (0,8 GB) sugiere que contiene los pesos del adaptador, no los del modelo base completo.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo reside en su naturaleza experimental: es un artefac
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA aplicado sobre `unsloth/Llama-3.2-3B-Instruct`, un transformer decoder-only de 3 mil millones de parametros optimizado para instrucciones y conversacion. La tecnica LoRA reduce el numero de parametros entrenables al inyectar matrices de baja dimension en las capas de atencion, lo que permite fine-tuning eficiente en recursos. El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) usando la libreria TRL (Transformers Reinforcement Learning) de HuggingFace, con las versiones PEFT 0.18.1, TRL 0.27.0 y Transformers 4.57.5. No se ha publicado informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas mas alla del uso estandar de LoRA y SFT.
+El modelo es un adaptador LoRA aplicado sobre `unsloth/Llama-3.2-3B-Instruct`, un transformer decoder-only de 3 mil millones de parametros optimizado para instrucciones y conversacion. La tecnica LoRA reduce el numero de parametros entrenables al inyectar matrices de baja dimension en las capas de atencion, lo que permite fine-tuning eficiente en recursos. El entrenamiento se realizo mediante SFT (Supervised Fine-Tuning) usando la libreria TRL (Transformers Reinforcement Learning) de Hugging Face, con las versiones PEFT 0.18.1, TRL 0.27.0 y Transformers 4.57.5. No se ha publicado informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. Tampoco se documentan innovaciones tecnicas especificas mas alla del uso estandar de LoRA y SFT.
 
 ## Capacidades
 
@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-bc9d501a-b6a7-452c-8f36-cacfdc3ad455-5FW2Eaae
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_31f2e0fe36783f71_20260831-bc9d501a-b6a7-452c-8f36-cacfdc3ad455-5FW2Eaae
 - Plataforma Gradients (torreos): https://www.gradients.io/app/research/tournament
 - Repositorio de TRL: https://github.com/huggingface/trl

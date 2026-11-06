@@ -4,7 +4,7 @@
 
 Flyingkiwi-EN-0.6B es un asistente conversacional en inglés de tamaño muy reducido (528 millones de parámetros), desarrollado por Yunus Emre Vurgun para el proyecto Flyingkiwi. Se trata de un fine-tuning completo de Qwen3-0.6B, optimizado para ejecutarse íntegramente en el navegador mediante un motor propio escrito en C compilado a WebAssembly, de modo que los mensajes nunca salen del dispositivo del usuario. Su objetivo no es competir en benchmarks generales, sino ser honesto y útil en un ámbito muy concreto: responder con claridad cuando sabe la respuesta, admitir abiertamente cuando no puede saberla (datos en vivo, información privada, el futuro) y corregir premisas falsas.
 
-La relevancia del modelo reside en su enfoque de "on-device": demuestra que un modelo de 0.6B puede ofrecer un asistente de chat razonable con privacidad total, usando pesos cuantizados a 8 bits (561 MB) cargados en el navegador. El entrenamiento combina destilación de conocimiento desde un modelo profesor (Qwen3.5-35B-A3B), un vocabulario especializado en inglés derivado del de Qwen3 (85.121 tokens frente a los 151.669 originales) y respuestas reescritas para máxima concisión. El checkpoint publicado en HuggingFace está en BF16 en formato safetensors, bajo licencia Apache 2.0.
+La relevancia del modelo reside en su enfoque de "on-device": demuestra que un modelo de 0.6B puede ofrecer un asistente de chat razonable con privacidad total, usando pesos cuantizados a 8 bits (561 MB) cargados en el navegador. El entrenamiento combina destilación de conocimiento desde un modelo profesor (Qwen3.5-35B-A3B), un vocabulario especializado en inglés derivado del de Qwen3 (85.121 tokens frente a los 151.669 originales) y respuestas reescritas para máxima concisión. El checkpoint publicado en Hugging Face está en BF16 en formato safetensors, bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -104,7 +104,7 @@ La ventaja diferencial de Flyingkiwi no es el rendimiento bruto (empata con su b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunusemrejr/Flyingkiwi-EN-0.6B
+- Modelo en Hugging Face: https://huggingface.co/yunusemrejr/Flyingkiwi-EN-0.6B
 - Aplicación Flyingkiwi (demo en navegador): https://flyingkiwi.yunusemrevurgun.com/
 - Informe técnico del proyecto: https://flyingkiwi.yunusemrevurgun.com/technical/report/
 - Web del autor: https://yunusemrevurgun.com/

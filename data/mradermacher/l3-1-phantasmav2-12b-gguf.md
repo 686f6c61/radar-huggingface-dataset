@@ -23,7 +23,7 @@ Al no existir una model card detallada del modelo original, la mayor parte de la
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura interna del modelo base `kromcomp/L3.1-Phantasmav2-12B`. Por el nombre, se infiere que utiliza la arquitectura Llama 3.1 (transformer decoder-only), pero no se ha confirmado. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. La única información técnica disponible es que el repositorio de mradermacher contiene cuantizaciones estáticas generadas a partir del modelo original en formato HuggingFace, lo que implica que el modelo base está disponible en safetensors.
+No se dispone de información sobre la arquitectura interna del modelo base `kromcomp/L3.1-Phantasmav2-12B`. Por el nombre, se infiere que utiliza la arquitectura Llama 3.1 (transformer decoder-only), pero no se ha confirmado. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas como RLHF o DPO. La única información técnica disponible es que el repositorio de mradermacher contiene cuantizaciones estáticas generadas a partir del modelo original en formato Hugging Face, lo que implica que el modelo base está disponible en safetensors.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace del cuantizado: https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-GGUF
+- Repositorio Hugging Face del cuantizado: https://huggingface.co/mradermacher/L3.1-Phantasmav2-12B-GGUF
 - Modelo base (sin documentación): https://huggingface.co/kromcomp/L3.1-Phantasmav2-12B
 - Página del equipo mradermacher: https://huggingface.co/mradermacher
 - Página de descarga de cuantizaciones (beta): https://hf.tst.eu/model

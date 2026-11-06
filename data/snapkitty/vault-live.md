@@ -4,7 +4,7 @@
 
 `vault-live` no es un modelo de inteligencia artificial, sino un proyecto de software de seguridad que implementa un proveedor de servicios (SP) y proveedor de identidad (IdP) SAML 2.0 con una pipeline de validación de aserciones basada en compuertas NAND. Desarrollado por Snapkitty (Ahmad Ali Parr × SnapKitty), el proyecto resuelve el problema de la validación de aserciones SAML mediante un árbol de restricciones booleanas escrito en XML, que actúa como programa de control antes de que cualquier atributo sea confiado. La entropía del conjunto de atributos está limitada a 0.20 nats, y se genera un hash semántico que ancla la cadena de auditoría WORM (Write Once Read Many).
 
-La relevancia actual radica en su enfoque alternativo a las bibliotecas SAML tradicionales: no usa lxml, xmlsec ni bibliotecas externas de SAML, sino Python puro con la biblioteca `cryptography`. Incluye 31 pruebas que pasan, cubriendo flujo completo, protección contra replay, detección de manipulación y verificación de cadena. El repositorio está disponible en HuggingFace (aunque con cero descargas y sin licencia especificada) y en GitHub bajo el usuario SNAPKITTYWEST.
+La relevancia actual radica en su enfoque alternativo a las bibliotecas SAML tradicionales: no usa lxml, xmlsec ni bibliotecas externas de SAML, sino Python puro con la biblioteca `cryptography`. Incluye 31 pruebas que pasan, cubriendo flujo completo, protección contra replay, detección de manipulación y verificación de cadena. El repositorio está disponible en Hugging Face (aunque con cero descargas y sin licencia especificada) y en GitHub bajo el usuario SNAPKITTYWEST.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ La diferencia clave es que `vault-live` introduce una capa adicional de polític
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/vault-live
+- Hugging Face: https://huggingface.co/Snapkitty/vault-live
 - GitHub: https://github.com/SNAPKITTYWEST/vault-live
 - README en GitHub: https://github.com/SNAPKITTYWEST/vault-live/blob/master/README.md
 - Página de productos SnapKitty OS: https://collectivekitty.com/products
-- Perfil de Snapkitty en HuggingFace: https://huggingface.co/Snapkitty
+- Perfil de Snapkitty en Hugging Face: https://huggingface.co/Snapkitty

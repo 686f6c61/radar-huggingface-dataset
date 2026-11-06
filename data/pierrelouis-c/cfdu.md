@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de sustitución de simul
 
 | Modelo | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CFD-U | 1,93 M por semilla (ensemble de 3) | 5 × 96 × 96 fijo | MIT | ONNX en HuggingFace |
+| CFD-U | 1,93 M por semilla (ensemble de 3) | 5 × 96 × 96 fijo | MIT | ONNX en Hugging Face |
 | Alternativas neuronales comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de sustitución de simul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pierrelouis-c/cfdu
+- Modelo en Hugging Face: https://huggingface.co/pierrelouis-c/cfdu
 - Dataset: https://huggingface.co/datasets/pierrelouis-c/aporia-bends
 - Demo en navegador: https://aporia.pierrelouis.net/demo/
 - JuPedSim (simulador de referencia): https://github.com/PedestrianDynamics/jupedsim

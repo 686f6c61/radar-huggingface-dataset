@@ -76,6 +76,6 @@ El modelo se diferencia de DistilGPT2 base por su especialización en entrevista
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajatverma777/voice-ai-interview-gpt2
+- Hugging Face: https://huggingface.co/rajatverma777/voice-ai-interview-gpt2
 - Modelo base DistilGPT2: https://huggingface.co/distilbert/distilgpt2
 - Proyecto Voice AI Interview Assistant: no se ha encontrado un enlace directo en la información disponible.

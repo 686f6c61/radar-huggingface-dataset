@@ -81,9 +81,9 @@ Las puntuaciones proceden del experimento HF/BF16; la calidad de los GGUF móvil
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Gundem-LoRA | 1.235.814.432 (base) | no disponible | Clasificación de titulares en turco | llama3.2 | HuggingFace, 63 descargas |
-| meta-llama/Llama-3.2-1B (base) | 1.235.814.432 | no disponible | Generación de texto general | llama3.2 | HuggingFace |
-| Llama-3.2-1B-Instruct | no disponible | no disponible | Instrucciones generales | llama3.2 | HuggingFace |
+| Llama-3.2-1B-Gundem-LoRA | 1.235.814.432 (base) | no disponible | Clasificación de titulares en turco | llama3.2 | Hugging Face, 63 descargas |
+| meta-llama/Llama-3.2-1B (base) | 1.235.814.432 | no disponible | Generación de texto general | llama3.2 | Hugging Face |
+| Llama-3.2-1B-Instruct | no disponible | no disponible | Instrucciones generales | llama3.2 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de clasificación de titulares en turco en la información proporcionada. La comparación con el modelo base original en la tarea específica muestra un Gundem Score de 0,0 para el original frente a 81,0 para el adaptador destilado, según la tabla del autor.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de clasifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/efebaykara/Llama-3.2-1B-Gundem-LoRA
+- Hugging Face: https://huggingface.co/efebaykara/Llama-3.2-1B-Gundem-LoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Herramientas de entrenamiento y benchmark: https://github.com/efebaykaraa/gundem-llms
 - Modelos publicados: https://github.com/efebaykaraa/gundem-llms/releases/tag/models-v1.0.0

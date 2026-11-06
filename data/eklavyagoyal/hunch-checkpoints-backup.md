@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eklavyagoyal/hunch-checkpoints-backup` no es un modelo publicado, sino una copia externa de checkpoints de entrenamiento del proyecto Hunch. El propio autor lo etiqueta con `not-a-release` y explica que el repositorio es publico unicamente porque la capa gratuita de HuggingFace limita el almacenamiento privado, no porque los pesos esten listos para su uso. El repositorio ocupa 241,5 GB y contiene multiples ejecuciones de entrenamiento bajo rutas `ckpt/<run>/best/`, cada una con un `model.safetensors` y un `RECEIPT.json` que registra el `sha256`, el numero de bytes y la maquina que produjo el artefacto.
+`eklavyagoyal/hunch-checkpoints-backup` no es un modelo publicado, sino una copia externa de checkpoints de entrenamiento del proyecto Hunch. El propio autor lo etiqueta con `not-a-release` y explica que el repositorio es publico unicamente porque la capa gratuita de Hugging Face limita el almacenamiento privado, no porque los pesos esten listos para su uso. El repositorio ocupa 241,5 GB y contiene multiples ejecuciones de entrenamiento bajo rutas `ckpt/<run>/best/`, cada una con un `model.safetensors` y un `RECEIPT.json` que registra el `sha256`, el numero de bytes y la maquina que produjo el artefacto.
 
 Tecnicamente, los artefactos no son modelos generativos ni de chat. Son scorers planos construidos sobre backbones Qwen3: un `AutoModel` al que se anade una RMSNorm en fp32 y una cabeza `Linear(d, 1)`, con un softmax por pregunta sobre el conjunto de candidatos. Es decir, el modelo puntua opciones y no responde a instrucciones. Cargar uno de estos checkpoints requiere el codigo especifico del proyecto, y las distintas ejecuciones difieren en tamano, version de datos, semilla y numero de pasos; varias son instantaneas de entrenamiento a medio completar.
 
@@ -100,6 +100,6 @@ La informacion proporcionada no incluye modelos comparables ni datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eklavyagoyal/hunch-checkpoints-backup
+- Hugging Face: https://huggingface.co/eklavyagoyal/hunch-checkpoints-backup
 - No se han encontrado enlaces relevantes en la busqueda web: los resultados devueltos corresponden a consultas no relacionadas sobre Visual Studio Code, diseno grafico y diseno industrial, sin conexion con el modelo.
 - Paper, repositorio de codigo o demo del proyecto Hunch: no disponible en la informacion proporcionada.

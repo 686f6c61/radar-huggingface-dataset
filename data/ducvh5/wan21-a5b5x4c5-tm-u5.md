@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (finetune) del modelo de generación de vídeo texto-a-vídeo Wan2.1-T2V-1.3B de Alibaba, publicado por el usuario `ducvh5` en HuggingFace. Se presenta como una variante experimental derivada del modelo base de 1.300 millones de parámetros, con una arquitectura que el autor describe como "recurrent-transformer" y una configuración de bloques poco convencional (A5 → B5×4 → C5, con 15 bloques únicos y 30 ejecutados). Su relevancia es limitada: se trata de un checkpoint de investigación con cero descargas y cero likes en el momento de la consulta, y la model card es extremadamente escueta y críptica.
+Este modelo es un ajuste fino (finetune) del modelo de generación de vídeo texto-a-vídeo Wan2.1-T2V-1.3B de Alibaba, publicado por el usuario `ducvh5` en Hugging Face. Se presenta como una variante experimental derivada del modelo base de 1.300 millones de parámetros, con una arquitectura que el autor describe como "recurrent-transformer" y una configuración de bloques poco convencional (A5 → B5×4 → C5, con 15 bloques únicos y 30 ejecutados). Su relevancia es limitada: se trata de un checkpoint de investigación con cero descargas y cero likes en el momento de la consulta, y la model card es extremadamente escueta y críptica.
 
 El modelo hereda la tarea de generación de vídeo a partir de texto del Wan2.1 original, que emplea un esquema de difusión (diffusion transformer) para sintetizar clips de vídeo. Sin embargo, la información pública disponible no permite confirmar qué modificaciones concretas introduce este finetune ni qué resultados obtiene. La model card menciona "TM" como función de pérdida, una distribución uniforme σ ~ U(0,1) con shift=5 y t=1000σ, y unos datos de entrenamiento designados únicamente como "OV", sin más detalle.
 
@@ -54,15 +54,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible con precisión; para un modelo de aproximadamente 1.300 millones de parámetros en precisión FP16 se estiman en torno a 3-4 GB solo para pesos, más el overhead del pipeline de difusión (VAE, text encoder), que puede elevar el total a 8-12 GB.
 - GPU recomendadas: no especificadas por el autor. Por tamaño, cabría en GPUs consumer con 12-16 GB de VRAM (RTX 3060 12 GB, RTX 4070 Ti, RTX 4080) y en GPUs de datacenter (A100, H100) para mayor throughput.
 - Cabe en GPU consumer: probablemente sí, en modelos con al menos 12 GB de VRAM, aunque no está confirmado por el autor.
-- Opciones de despliegue: no documentadas. Al derivar de un modelo Diffusers, podría integrarse con la librería `diffusers` de HuggingFace, pero no hay confirmación.
+- Opciones de despliegue: no documentadas. Al derivar de un modelo Diffusers, podría integrarse con la librería `diffusers` de Hugging Face, pero no hay confirmación.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tm-u5 | ~1.300 M | No disponible | No disponible | HuggingFace (0 descargas) |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | ~1.300 M | No disponible | No disponible en la información proporcionada | HuggingFace (modelo base público) |
+| ducvh5/wan21-a5b5x4c5-tm-u5 | ~1.300 M | No disponible | No disponible | Hugging Face (0 descargas) |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | ~1.300 M | No disponible | No disponible en la información proporcionada | Hugging Face (modelo base público) |
 | Otros modelos texto-a-vídeo de tamaño similar | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativo entre este finetune y el modelo base ni con otras alternativas.
@@ -79,5 +79,5 @@ No se dispone de datos de rendimiento comparativo entre este finetune y el model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-u5
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-u5
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers

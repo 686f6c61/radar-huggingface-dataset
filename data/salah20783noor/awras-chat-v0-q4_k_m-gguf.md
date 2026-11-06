@@ -64,7 +64,7 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparativa se l
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| awras-chat-v0-Q4_K_M-GGUF | ~3,88B | no disponible | cc-by-4.0 | GGUF | Repo HuggingFace, 0 descargas |
+| awras-chat-v0-Q4_K_M-GGUF | ~3,88B | no disponible | cc-by-4.0 | GGUF | Repo Hugging Face, 0 descargas |
 | Gemma 3 (variante pequeña, base) | no disponible | no disponible | Gemma Terms of Use | safetensors, GGUF | Amplia disponibilidad |
 | Modelos de ~4B de instrucción (familia Llama/Phi) | ~3-4B | no disponible | varía | safetensors, GGUF | Amplia disponibilidad |
 
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks para establecer una comparación de rendimi
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización GGUF): https://huggingface.co/salah20783noor/awras-chat-v0-Q4_K_M-GGUF
+- Repositorio Hugging Face (cuantización GGUF): https://huggingface.co/salah20783noor/awras-chat-v0-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/awras/awras-chat-v0
 - Adaptador LoRA: https://huggingface.co/awras/awras-it-01-10k-adapter
 - Dataset de instrucciones: https://huggingface.co/datasets/awras/awras-instruct-v1

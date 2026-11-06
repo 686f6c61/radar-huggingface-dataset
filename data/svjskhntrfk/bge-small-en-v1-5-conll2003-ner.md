@@ -2,9 +2,9 @@
 
 ## Resumen
 
-bge-small-en-v1.5-conll2003-ner es un checkpoint de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario svjskhntrfk en HuggingFace. Se obtiene por ajuste fino supervisado de BAAI/bge-small-en-v1.5, un modelo encoder-only de la familia BGE (BAAI General Embedding) desarrollada por el Beijing Academy of Artificial Intelligence, originalmente disenado para generar embeddings densos de 384 dimensiones para busqueda semantica y recuperacion.
+bge-small-en-v1.5-conll2003-ner es un checkpoint de clasificacion de tokens (reconocimiento de entidades nombradas, NER) publicado por el usuario svjskhntrfk en Hugging Face. Se obtiene por ajuste fino supervisado de BAAI/bge-small-en-v1.5, un modelo encoder-only de la familia BGE (BAAI General Embedding) desarrollada por el Beijing Academy of Artificial Intelligence, originalmente disenado para generar embeddings densos de 384 dimensiones para busqueda semantica y recuperacion.
 
-El modelo tiene 33.215.625 parametros (unos 33,2 millones) y un peso en repositorio de 0,1 GB, lo que lo situa en la gama de los encoders ligeros tipo BERT-small. Con ese tamano se puede ejecutar en CPU y en cualquier GPU de consumo, y esta etiquetado como compatible con endpoints de HuggingFace. La licencia es MIT, sin restricciones para uso comercial.
+El modelo tiene 33.215.625 parametros (unos 33,2 millones) y un peso en repositorio de 0,1 GB, lo que lo situa en la gama de los encoders ligeros tipo BERT-small. Con ese tamano se puede ejecutar en CPU y en cualquier GPU de consumo, y esta etiquetado como compatible con endpoints de Hugging Face. La licencia es MIT, sin restricciones para uso comercial.
 
 Su relevancia es practica mas que innovadora: convierte un modelo de embeddings en un extractor de entidades de cuatro categorias (persona, organizacion, ubicacion y miscelanea) con un F1 de 0,8767 declarado por el autor sobre el conjunto de evaluacion. El interes principal esta en que es un ejemplo de reciclaje de un encoder de recuperacion para una tarea discriminativa, y en su coste de despliegue casi nulo. Como contrapartida, la model card es autocontenida y muy incompleta: el autor no declara el conjunto de datos, los idiomas soportados, los usos previstos ni las limitaciones, y el modelo cuenta con cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -37,7 +37,7 @@ El entrenamiento descrito en la model card no especifica el conjunto de datos ("
 - Clasificacion de secuencias completas de hasta 512 tokens por inferencia, con agregacion de subtokens mediante la logica estandar de la libreria transformers (pipeline de token-classification).
 - Inferencia por lotes de alta densidad: al tener 33 millones de parametros, permite procesar grandes volumenes de documentos por GPU o CPU.
 - Exportacion a otros runtimes: los pesos safetensors son convertibles a ONNX, TorchScript o TensorRT, y admiten cuantizacion post-entrenamiento para despliegue en CPU.
-- Integracion con HuggingFace Inference Endpoints (etiqueta endpoints_compatible) para servicio gestionado.
+- Integracion con Hugging Face Inference Endpoints (etiqueta endpoints_compatible) para servicio gestionado.
 - Capacidades no disponibles o no declaradas: no hay soporte de tool calling ni function calling, no hay modo de razonamiento multi-paso, no hay generacion de texto, no hay capacidades de vision ni audio, y no se declara soporte multilingue.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ El entrenamiento descrito en la model card no especifica el conjunto de datos ("
 
 ## Benchmarks y rendimiento
 
-La model card declara resultados sobre el conjunto de evaluacion, pero el model-index oficial (el que HuggingFace usa para publicar la tabla de benchmarks) esta vacio: no hay resultados registrados en el indice del modelo. Los datos disponibles son los siguientes:
+La model card declara resultados sobre el conjunto de evaluacion, pero el model-index oficial (el que Hugging Face usa para publicar la tabla de benchmarks) esta vacio: no hay resultados registrados en el indice del modelo. Los datos disponibles son los siguientes:
 
 | Metrica | Valor declarado por el autor |
 |---|---|
@@ -80,15 +80,15 @@ La mejora entre la cuarta y la quinta epoca es marginal (F1 de 0,8754 a 0,8767),
 - VRAM estimada para inferencia: menos de 1 GB en fp32 (los 33,2 millones de parametros ocupan aproximadamente 133 MB, mas activaciones y memoria intermedia) y del orden de decenas de megabytes en fp16 o int8. No hay mediciones publicadas por el autor.
 - GPU recomendadas: cualquier GPU moderna sirve. Para lotes grandes, una A100, H100, L40S o RTX 4090 maximiza el throughput; para servicio ligero bastan una T4, una L4 o una RTX 3060.
 - GPU de consumo: si, cabe con enorme holgura en practicamente cualquier GPU consumer, incluidas GTX 1650 (4 GB), RTX 3050 y modelos integrados con memoria compartida. Tambien es viable en CPU: un encoder de 12 capas y 33 millones de parametros procesa texto en tiempo casi interactivo por documento.
-- Opciones de despliegue: pipeline de transformers (token-classification), HuggingFace Inference Endpoints, exportacion a ONNX Runtime con cuantizacion dinamica int8 para CPU, TorchScript y TensorRT para GPU. vLLM, TGI, llama.cpp y Ollama no son aplicables: no existe variante GGUF y estos motores estan orientados a modelos generativos autoregresivos, no a clasificacion de tokens.
+- Opciones de despliegue: pipeline de transformers (token-classification), Hugging Face Inference Endpoints, exportacion a ONNX Runtime con cuantizacion dinamica int8 para CPU, TorchScript y TensorRT para GPU. vLLM, TGI, llama.cpp y Ollama no son aplicables: no existe variante GGUF y estos motores estan orientados a modelos generativos autoregresivos, no a clasificacion de tokens.
 - Latencia y throughput: no disponibles. El autor no publica ninguna medicion de latencia, tokens por segundo ni muestras por segundo. Por tamano, el modelo es apto para procesamiento por lotes de miles de documentos en una sola GPU, pero no hay cifras verificables en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | F1 declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| svjskhntrfk/bge-small-en-v1.5-conll2003-ner | 33.215.625 | no declarado (512 tokens por la arquitectura base) | token-classification (NER) | MIT | 0,8767 en su conjunto de evaluacion | Publico en HuggingFace, 0 descargas y 0 likes |
-| vmpetrikov/bge-small-en-v1.5-conll2003-ner | no disponible | no disponible | token-classification (NER) | no disponible | no disponible | Publico en HuggingFace; existe al menos un ajuste equivalente con el mismo nombre publicado por otro usuario |
+| svjskhntrfk/bge-small-en-v1.5-conll2003-ner | 33.215.625 | no declarado (512 tokens por la arquitectura base) | token-classification (NER) | MIT | 0,8767 en su conjunto de evaluacion | Publico en Hugging Face, 0 descargas y 0 likes |
+| vmpetrikov/bge-small-en-v1.5-conll2003-ner | no disponible | no disponible | token-classification (NER) | no disponible | no disponible | Publico en Hugging Face; existe al menos un ajuste equivalente con el mismo nombre publicado por otro usuario |
 | BAAI/bge-small-en-v1.5 (modelo base) | 33,4 millones (segun el catalogo de AIMarketly) | no disponible | feature-extraction (embeddings de 384 dimensiones) | MIT | no aplica (tarea de similitud, no de etiquetado) | Muy extendido: 494 millones de descargas historicas y 597 likes segun AIMarketly |
 
 No se han encontrado en la busqueda web otros modelos NER comparables con datos de rendimiento publicados, por lo que no es posible establecer una comparacion cuantitativa frente a alternativas de la misma categoria mas alla de los propios numeros de este checkpoint.
@@ -108,7 +108,7 @@ No se han encontrado en la busqueda web otros modelos NER comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/svjskhntrfk/bge-small-en-v1.5-conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/svjskhntrfk/bge-small-en-v1.5-conll2003-ner
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Ajuste equivalente de otro usuario con el mismo nombre: https://huggingface.co/vmpetrikov/bge-small-en-v1.5-conll2003-ner
 - Documentacion de la familia BGE v1 y v1.5: https://bge-model.com/bge/bge_v1_v1.5.html

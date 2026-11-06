@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshmis3205/flamingo-experiment` es un prototipo de investigacion de tipo Flamingo orientado al aprendizaje contrastivo. Ha sido publicado por rajeshmis3205 en HuggingFace y se presenta como un punto de partida experimental, no como un modelo entrenado. El repositorio incluye un script `finetune.py` como artefacto principal, junto con una configuracion de arquitectura y un checkpoint de inicializacion en formato safetensors.
+`rajeshmis3205/flamingo-experiment` es un prototipo de investigacion de tipo Flamingo orientado al aprendizaje contrastivo. Ha sido publicado por rajeshmis3205 en Hugging Face y se presenta como un punto de partida experimental, no como un modelo entrenado. El repositorio incluye un script `finetune.py` como artefacto principal, junto con una configuracion de arquitectura y un checkpoint de inicializacion en formato safetensors.
 
 La arquitectura declarada es Flamingo, con atencion estandar, fusion tipo tucker y activacion GELU tanh. Segun la informacion disponible, el modelo real contiene 33.088 parametros totales, lo que lo convierte en un artefacto de tamano minusculo. El autor lo etiqueta como escala "xlarge", aunque ese dato se refiere a la configuracion interna del script, no al tamano real del checkpoint. No se presentan metricas de rendimiento ni se afirma ningun resultado de evaluacion.
 
@@ -77,4 +77,4 @@ No disponible. Al no existir benchmarks ni datos de capacidades, no es posible c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rajeshmis3205/flamingo-experiment
+- Hugging Face: https://huggingface.co/rajeshmis3205/flamingo-experiment

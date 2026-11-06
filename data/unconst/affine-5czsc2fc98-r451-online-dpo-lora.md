@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r451-online-dpo-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se trata de un adaptador de rescate ("salvage") para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, perteneciente a la serie "affine" de modelos de lenguaje. El nombre sugiere que fue entrenado mediante *online DPO* (Direct Preference Optimization) sobre el modelo base, y el tag `affine-h1-salvage` indica que fue creado como un seguro de vida para la minería de un desafío H1, aunque el autor aclara explícitamente que no es una submission oficial.
+El modelo `unconst/Affine-5czsc2fc98-r451-online-dpo-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se trata de un adaptador de rescate ("salvage") para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, perteneciente a la serie "affine" de modelos de lenguaje. El nombre sugiere que fue entrenado mediante *online DPO* (Direct Preference Optimization) sobre el modelo base, y el tag `affine-h1-salvage` indica que fue creado como un seguro de vida para la minería de un desafío H1, aunque el autor aclara explícitamente que no es una submission oficial.
 
 El adaptador está diseñado para la generación de texto y se distribuye en formato PEFT (safetensors). El repositorio tiene un tamaño de 0.1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo. No se proporciona información sobre la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni la licencia. Dado que es un adaptador LoRA, su funcionalidad depende completamente del modelo base sobre el que se aplica, del cual tampoco se ofrecen detalles técnicos en la información disponible.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - El adaptador LoRA tiene un tamaño de 0.1 GB, por lo que su carga en memoria es mínima.
 - Los requisitos reales de VRAM dependen del modelo base `marsplan0624/affine-5gedzafcvg-queen`, del cual no se dispone información.
-- Para aplicar el adaptador, se necesita un framework compatible con PEFT (por ejemplo, HuggingFace Transformers con la librería `peft`).
+- Para aplicar el adaptador, se necesita un framework compatible con PEFT (por ejemplo, Hugging Face Transformers con la librería `peft`).
 - No se especifican GPUs recomendadas ni opciones de despliegue (vLLM, llama.cpp, etc.) porque el adaptador no es un modelo autónomo.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- [HuggingFace - unconst/Affine-5czsc2fc98-r451-online-dpo-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r451-online-dpo-lora)
+- [Hugging Face - unconst/Affine-5czsc2fc98-r451-online-dpo-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r451-online-dpo-lora)
 - [Modelo base - marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (enlace inferido, no verificado)

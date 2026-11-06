@@ -80,8 +80,8 @@ Resultados publicados en la model card (DS-V4.1-Flash-1017 frente a la versión 
 
 | Modelo | Parámetros | Contexto | HLE w/o tools | DeepSWE v1.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 | 763.205.315.794 | 1M tokens | 42,6 | 77,0 | MIT | HuggingFace |
-| DeepSeek-V4.1-Flash | no disponible | no disponible | 36,8 | 74,2 | MIT (según repo original) | HuggingFace |
+| DeepSeek-V4.1-Flash-1017 | 763.205.315.794 | 1M tokens | 42,6 | 77,0 | MIT | Hugging Face |
+| DeepSeek-V4.1-Flash | no disponible | no disponible | 36,8 | 74,2 | MIT (según repo original) | Hugging Face |
 | K3 | no disponible | no disponible | 43,5 | 67,5 | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | 42,0† | 66,9 | no disponible | no disponible |
 | GPT-5.6 Sol | no disponible | no disponible | 44,5 | 73,0 | propietaria | API |
@@ -102,10 +102,10 @@ Los datos de parámetros, contexto y licencia de los modelos comparables no est�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asd231qe/DeepSeek-V4.1-Flash-1017
+- Hugging Face: https://huggingface.co/asd231qe/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Repositorio deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/

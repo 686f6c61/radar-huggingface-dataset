@@ -92,9 +92,9 @@ No se dispone de datos de rendimiento comparativos entre estas versiones cuantiz
 
 ## Enlaces
 
-- [HuggingFace - modelo cuantizado](https://huggingface.co/LeaderboardModel1/gemma-4-26B-A4B-AutoRound-MXFP8-ModelFree)
-- [HuggingFace - modelo base](https://huggingface.co/google/gemma-4-26B-A4B)
-- [HuggingFace - versión instruction-tuned del base](https://huggingface.co/google/gemma-4-26B-A4B-it)
+- [Hugging Face - modelo cuantizado](https://huggingface.co/LeaderboardModel1/gemma-4-26B-A4B-AutoRound-MXFP8-ModelFree)
+- [Hugging Face - modelo base](https://huggingface.co/google/gemma-4-26B-A4B)
+- [Hugging Face - versión instruction-tuned del base](https://huggingface.co/google/gemma-4-26B-A4B-it)
 - [Paper AutoRound (arXiv:2309.05516)](https://arxiv.org/abs/2309.05516)
 - [Repositorio AutoRound en GitHub](https://github.com/intel/auto-round)
 - [Intel Low-Bit Open LLM Leaderboard](https://huggingface.co/spaces/Intel/low_bit_open_llm_leaderboard)

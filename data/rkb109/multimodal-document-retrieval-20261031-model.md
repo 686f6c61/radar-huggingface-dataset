@@ -74,7 +74,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RKB109/multimodal-document-retrieval-20261031-model | No disponible | No disponible | MIT | HuggingFace |
+| RKB109/multimodal-document-retrieval-20261031-model | No disponible | No disponible | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/multimodal-document-retrieval-20261031-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/multimodal-document-retrieval-20261031-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/multimodal-document-retrieval-20261031-dataset
 - Repositorio GitHub con train.py y codigo de evaluacion: no disponible (la model card lo menciona pero no incluye la URL)
 - Paper: no disponible

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Mistral7B-ReGiFT es un adaptador LoRA publicado por el usuario MinaMila en HuggingFace, construido sobre el modelo base mistralai/Mistral-7B-Instruct-v0.3. Se distribuye con la libreria PEFT (version 0.19.1 segun la model card) y el repositorio ocupa 0,2 GB, coherente con un conjunto de pesos de adaptador y no con un modelo completo. La etiqueta principal del repositorio es text-generation, con categorias secundarias conversational, lora, transformers y safetensors.
+Mistral7B-ReGiFT es un adaptador LoRA publicado por el usuario MinaMila en Hugging Face, construido sobre el modelo base mistralai/Mistral-7B-Instruct-v0.3. Se distribuye con la libreria PEFT (version 0.19.1 segun la model card) y el repositorio ocupa 0,2 GB, coherente con un conjunto de pesos de adaptador y no con un modelo completo. La etiqueta principal del repositorio es text-generation, con categorias secundarias conversational, lora, transformers y safetensors.
 
-El interes de esta ficha es limitado pero relevante como caso de estudio: la model card publicada es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]". No se documentan el proposito del ajuste, el dataset utilizado, los hiperparametros, el regimen de entrenamiento ni los resultados de evaluacion. El propio nombre "ReGiFT" no aparece explicado en ninguna parte del repositorio ni en los resultados de busqueda disponibles.
+El interes de esta ficha es limitado pero relevante como caso de estudio: la model card publicada es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]". No se documentan el proposito del ajuste, el dataset utilizado, los hiperparametros, el regimen de entrenamiento ni los resultados de evaluacion. El propio nombre "ReGiFT" no aparece explicado en ninguna parte del repositorio ni en los resultados de busqueda disponibles.
 
 A dia de hoy el repositorio registra 0 descargas y 0 likes, y no se ha publicado ningun benchmark. Cualquier evaluacion de su calidad o de su proposito concreto es, por tanto, imposible con la informacion disponible; lo unico verificable es su naturaleza tecnica (adaptador LoRA sobre Mistral-7B-Instruct-v0.3) y las capacidades heredadas del modelo base.
 
@@ -97,7 +97,7 @@ La diferencia fundamental frente a las alternativas es que este repositorio no e
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MinaMila/Mistral7B-ReGiFT
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MinaMila/Mistral7B-ReGiFT
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en la plantilla sobre emisiones (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

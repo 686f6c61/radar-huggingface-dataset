@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemEval-2027-Task-1-subtrack-2b (este) | 0,5B (base) + adaptador LoRA | 32.768 tokens en el modelo base (presupuesto efectivo configurable) | Adaptador PEFT/LoRA para generacion fundamentada | no disponible | HuggingFace, 0 descargas, experimental |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | Modelo instructivo de proposito general | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Modelo instructivo de proposito general | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Modelo instructivo de proposito general | Llama 3.2 Community License | HuggingFace, con restricciones de uso |
+| SemEval-2027-Task-1-subtrack-2b (este) | 0,5B (base) + adaptador LoRA | 32.768 tokens en el modelo base (presupuesto efectivo configurable) | Adaptador PEFT/LoRA para generacion fundamentada | no disponible | Hugging Face, 0 descargas, experimental |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens | Modelo instructivo de proposito general | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Modelo instructivo de proposito general | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Modelo instructivo de proposito general | Llama 3.2 Community License | Hugging Face, con restricciones de uso |
 
 No se dispone de resultados comparativos de rendimiento entre este adaptador y las alternativas, ya que no se han publicado cifras de benchmarks.
 
@@ -94,7 +94,7 @@ No se dispone de resultados comparativos de rendimiento entre este adaptador y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2b
+- Modelo en Hugging Face: https://huggingface.co/GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2b
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/DataScience-UIBK/RETECO-SemEval2027
 - Pagina principal de RETECO: https://datascienceuibk.github.io/RETECO/

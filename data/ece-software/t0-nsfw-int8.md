@@ -2,7 +2,7 @@
 
 ## Resumen
 
-t0-nsfw-int8 es un modelo de clasificacion de imagenes para deteccion de contenido NSFW y gore, publicado por ECE-Software en HuggingFace. Se trata de un clasificador de vision exportado a formato ONNX y cuantizado a INT8, con un peso de archivo de tan solo 4,39 MB, lo que lo situa en la categoria de modelos ligeros para ejecucion en dispositivo (edge/on-device).
+t0-nsfw-int8 es un modelo de clasificacion de imagenes para deteccion de contenido NSFW y gore, publicado por ECE-Software en Hugging Face. Se trata de un clasificador de vision exportado a formato ONNX y cuantizado a INT8, con un peso de archivo de tan solo 4,39 MB, lo que lo situa en la categoria de modelos ligeros para ejecucion en dispositivo (edge/on-device).
 
 El modelo forma parte de una arquitectura de moderacion en dos niveles: el nivel T0 (este modelo) actua como pre-filtro local en el dispositivo del usuario, mientras que un nivel T1 en FP32 re-verifica las decisiones en el lado del servidor. Clasifica imagenes en tres clases: NSFL, NSFW y SFW, aplicando un umbral de decision de 0,5.
 
@@ -84,7 +84,7 @@ No disponible. La informacion proporcionada unicamente describe este modelo y me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ECE-Software/t0-nsfw-int8
+- Modelo en Hugging Face: https://huggingface.co/ECE-Software/t0-nsfw-int8
 - Repositorio del autor (ECE-Software): https://huggingface.co/ECE-Software
 - ONNX Runtime: https://onnxruntime.ai/
 - Documentacion de huggingface_hub para descarga: https://huggingface.co/docs/huggingface_hub

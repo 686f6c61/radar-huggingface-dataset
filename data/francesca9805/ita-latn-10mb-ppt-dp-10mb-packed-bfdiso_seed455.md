@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/ita_latn_10mb`, un transformer decoder-only de la familia GPT-2 especializado en italiano (identificador `ita_latn`, escritura latina) y entrenado originalmente sobre un corpus de aproximadamente 10 MB. El resultado es un modelo denso de 39.087.104 parámetros (unos 39,1 millones), alojado en HuggingFace con pesos en formato safetensors y un tamano de repositorio de 0,1 GB.
+El modelo `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/ita_latn_10mb`, un transformer decoder-only de la familia GPT-2 especializado en italiano (identificador `ita_latn`, escritura latina) y entrenado originalmente sobre un corpus de aproximadamente 10 MB. El resultado es un modelo denso de 39.087.104 parámetros (unos 39,1 millones), alojado en Hugging Face con pesos en formato safetensors y un tamano de repositorio de 0,1 GB.
 
 El modelo lo publica el usuario `francesca9805` y se ha entrenado con la libreria TRL (version 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.5.1, dentro de un flujo de trabajo de ajuste supervisado. El nombre del modelo y el proyecto de Weights & Biases asociado (`new-tokenizers`) apuntan a un experimento de investigacion centrado en tokenizacion y en el efecto del empaquetado (`packed`) de secuencias, con variantes por semilla (`seed455`) y por tamano de corpus.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` | 39.087.104 | no disponible | italiano (inferido) | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/ita_latn_10mb` (modelo base) | no disponible | no disponible | italiano | no disponible | HuggingFace |
-| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` | no disponible | no disponible | italiano (inferido) | no disponible | HuggingFace |
-| `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` | no disponible | no disponible | italiano (inferido) | no disponible | HuggingFace y friendli.ai |
+| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` | 39.087.104 | no disponible | italiano (inferido) | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/ita_latn_10mb` (modelo base) | no disponible | no disponible | italiano | no disponible | Hugging Face |
+| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` | no disponible | no disponible | italiano (inferido) | no disponible | Hugging Face |
+| `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfd_seed455` | no disponible | no disponible | italiano (inferido) | no disponible | Hugging Face y friendli.ai |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes; la comparacion se limita a la identificacion de la familia y a la procedencia de cada checkpoint.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes; la com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Variante con otra semilla: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Variante con corpus base de 100 MB: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455

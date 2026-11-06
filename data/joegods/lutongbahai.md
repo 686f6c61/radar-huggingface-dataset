@@ -2,11 +2,11 @@
 
 ## Resumen
 
-LutongBahAI es un proyecto de aplicación web de código abierto desarrollado por Joelguay (joegods) que combina visión por computadora y un modelo de lenguaje externo para generar recetas de cocina filipina. El repositorio en HuggingFace (joegods/lutongbahai) no contiene un modelo de IA entrenado, sino el código fuente de una aplicación que utiliza YOLO para la detección de ingredientes a partir de imágenes y la API de OpenAI GPT para generar recetas auténticas filipinas.
+LutongBahAI es un proyecto de aplicación web de código abierto desarrollado por Joelguay (joegods) que combina visión por computadora y un modelo de lenguaje externo para generar recetas de cocina filipina. El repositorio en Hugging Face (joegods/lutongbahai) no contiene un modelo de IA entrenado, sino el código fuente de una aplicación que utiliza YOLO para la detección de ingredientes a partir de imágenes y la API de OpenAI GPT para generar recetas auténticas filipinas.
 
 El proyecto aborda el problema de la inspiración culinaria a partir de ingredientes disponibles en casa: el usuario fotografía sus ingredientes, el sistema los identifica mediante YOLO y luego GPT genera una receta filipina basada en esos ingredientes. Es relevante porque demuestra un caso de uso práctico de integración de modelos de visión y lenguaje en una aplicación web completa, con licencia MIT que permite su uso y modificación libre.
 
-El repositorio en HuggingFace tiene un tamaño de 0,1 GB, fue creado en agosto de 2026 y no presenta descargas ni likes. No se proporcionan especificaciones técnicas del modelo, ya que no se trata de un modelo de lenguaje o visión autocontenido, sino de una aplicación que depende de servicios externos.
+El repositorio en Hugging Face tiene un tamaño de 0,1 GB, fue creado en agosto de 2026 y no presenta descargas ni likes. No se proporcionan especificaciones técnicas del modelo, ya que no se trata de un modelo de lenguaje o visión autocontenido, sino de una aplicación que depende de servicios externos.
 
 ## Especificaciones tecnicas
 
@@ -82,6 +82,6 @@ La comparación es limitada porque LutongBahAI es un proyecto de código abierto
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joegods/lutongbahai
+- Repositorio en Hugging Face: https://huggingface.co/joegods/lutongbahai
 - Repositorio en GitHub: https://github.com/Joelguay/lutongBahAI
 - Perfil de GitHub del autor: https://github.com/Joelguay/

@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| aieng-lab/gradiend-multilingual-bert-features | Coleccion de 45 modelos de feature learning sobre BERT | no disponible (base: ~178 M) | no disponible | Apache 2.0 | HuggingFace |
-| aieng-lab/gradiend-qwen2.5-0.5b-features | Coleccion equivalente sobre Qwen2.5-0.5B | no disponible (base: 0,5 B) | no disponible | no disponible | HuggingFace |
-| google-bert/bert-base-multilingual-cased | Modelo base multilingue | ~178 M | no disponible | Apache 2.0 | HuggingFace |
+| aieng-lab/gradiend-multilingual-bert-features | Coleccion de 45 modelos de feature learning sobre BERT | no disponible (base: ~178 M) | no disponible | Apache 2.0 | Hugging Face |
+| aieng-lab/gradiend-qwen2.5-0.5b-features | Coleccion equivalente sobre Qwen2.5-0.5B | no disponible (base: 0,5 B) | no disponible | no disponible | Hugging Face |
+| google-bert/bert-base-multilingual-cased | Modelo base multilingue | ~178 M | no disponible | Apache 2.0 | Hugging Face |
 
 La comparativa directa con modelos de interpretabilidad como probes lineales o SAEs no esta disponible en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ La comparativa directa con modelos de interpretabilidad como probes lineales o S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aieng-lab/gradiend-multilingual-bert-features
+- Modelo en Hugging Face: https://huggingface.co/aieng-lab/gradiend-multilingual-bert-features
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Repositorio paralelo sobre Qwen2.5-0.5B: https://huggingface.co/aieng-lab/gradiend-qwen2.5-0.5b-features
 - Repositorio del paquete: https://github.com/aieng-lab/gradiend

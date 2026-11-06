@@ -2,7 +2,7 @@
 
 ## Resumen
 
-convnextv2_base.frencharthro-24k es un clasificador de imagenes de artropodos desarrollado por el usuario edgaremy y publicado en HuggingFace. Se trata de un ajuste fino (fine-tuning) del backbone ConvNeXt V2 Base, concretamente del checkpoint timm/convnextv2_base.fcmae_ft_in22k_in1k_384 de la libreria timm, sobre un conjunto de datos de artropodos franceses que, a juzgar por el sufijo "24k" del nombre, ronda las 24.000 imagenes. No es un modelo de lenguaje: su tarea es asignar una etiqueta de especie (o categoria taxonomica) a una imagen de entrada.
+convnextv2_base.frencharthro-24k es un clasificador de imagenes de artropodos desarrollado por el usuario edgaremy y publicado en Hugging Face. Se trata de un ajuste fino (fine-tuning) del backbone ConvNeXt V2 Base, concretamente del checkpoint timm/convnextv2_base.fcmae_ft_in22k_in1k_384 de la libreria timm, sobre un conjunto de datos de artropodos franceses que, a juzgar por el sufijo "24k" del nombre, ronda las 24.000 imagenes. No es un modelo de lenguaje: su tarea es asignar una etiqueta de especie (o categoria taxonomica) a una imagen de entrada.
 
 El modelo parte de una arquitectura ConvNeXt V2 Base, una red convolucional pura (sin mecanismos de atencion) de aproximadamente 89 millones de parametros, preentrenada con el metodo FCMAE (Fully Convolutional Masked Autoencoder) y posteriormente ajustada en ImageNet-22k e ImageNet-1k a una resolucion de 384x384 pixeles. Sobre esa base, el autor ha realizado un ajuste especifico de dominio para el reconocimiento de insectos y otros artropodos, un nicho con aplicaciones directas en entomologia, monitorizacion de biodiversidad y agricultura.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| convnextv2_base.frencharthro-24k (este modelo) | ~89 M | 384x384 px | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
-| timm/convnextv2_base.fcmae_ft_in22k_in1k_384 (base) | ~89 M | 384x384 px | no disponible en esta ficha; es el backbone original | no disponible en la informacion proporcionada | timm / HuggingFace |
-| Modelos genericos de clasificacion (ViT, EfficientNet, ResNet) | variable (5-300 M) | variable | no disponible | variable segun modelo | HuggingFace, timm |
-| Clasificadores especificos de insectos de terceros | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| convnextv2_base.frencharthro-24k (este modelo) | ~89 M | 384x384 px | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
+| timm/convnextv2_base.fcmae_ft_in22k_in1k_384 (base) | ~89 M | 384x384 px | no disponible en esta ficha; es el backbone original | no disponible en la informacion proporcionada | timm / Hugging Face |
+| Modelos genericos de clasificacion (ViT, EfficientNet, ResNet) | variable (5-300 M) | variable | no disponible | variable segun modelo | Hugging Face, timm |
+| Clasificadores especificos de insectos de terceros | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre este modelo y alternativas de la misma categoria en la informacion proporcionada.
 
@@ -82,8 +82,8 @@ No se dispone de datos comparativos de rendimiento entre este modelo y alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edgaremy/convnextv2_base.frencharthro-24k
-- Modelo base en HuggingFace: https://huggingface.co/timm/convnextv2_base.fcmae_ft_in22k_in1k_384
+- Modelo en Hugging Face: https://huggingface.co/edgaremy/convnextv2_base.frencharthro-24k
+- Modelo base en Hugging Face: https://huggingface.co/timm/convnextv2_base.fcmae_ft_in22k_in1k_384
 - Paper de ConvNeXt V2 (FCMAE + GRN), referencia de la arquitectura: https://arxiv.org/abs/2301.00808
 - Repositorio oficial de ConvNeXt V2: https://github.com/facebookresearch/ConvNeXt-V2
 - Libreria timm: https://github.com/huggingface/pytorch-image-models

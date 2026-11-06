@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-illustrious-snowf-style-checkpoint es un checkpoint de difusion para generacion de imagenes publicado en HuggingFace por RunningHubAI en nombre de su autor, el usuario de RunningHub @十二雪. No es un modelo de lenguaje: se trata de un pesos de difusion (un unico archivo `snowF_ckpt.safetensors` de 6617 MiB, unos 6,9 GB) pensado para cargarse en ComfyUI, en la plataforma RunningHub o en cualquier frontend compatible con checkpoints de la familia SDXL. La model card indica explicitamente que esta afinado a partir de IL-XL (Illustrious XL).
+rh-illustrious-snowf-style-checkpoint es un checkpoint de difusion para generacion de imagenes publicado en Hugging Face por RunningHubAI en nombre de su autor, el usuario de RunningHub @十二雪. No es un modelo de lenguaje: se trata de un pesos de difusion (un unico archivo `snowF_ckpt.safetensors` de 6617 MiB, unos 6,9 GB) pensado para cargarse en ComfyUI, en la plataforma RunningHub o en cualquier frontend compatible con checkpoints de la familia SDXL. La model card indica explicitamente que esta afinado a partir de IL-XL (Illustrious XL).
 
 El proposito del modelo es reproducir un estilo visual concreto de ilustracion anime: personajes alegres con pelo azul claro y reflejos rosas, ojos grandes, uniforme marinero azul y blanco con lazo grande, aureola luminosa, fondos vibrantes con formas geometricas, tonos pastel, estrellas y simbolos de cruz. El propio autor resume el estilo en una lista de palabras clave de prompt que funciona como descripcion canonica del resultado esperado.
 
@@ -72,11 +72,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Autor | Base de afinado | Tamano | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|---|
-| rh-illustrious-snowf-style-checkpoint | RunningHubAI / @十二雪 | IL-XL | 6,9 GB (6617 MiB) | no disponible | no disponible | HuggingFace, RunningHub, ComfyUI | Objeto de esta ficha |
-| rh-illustrious-snowmix-style-checkpoint | RunningHubAI | no disponible | no disponible | no disponible | no disponible | HuggingFace | Otro checkpoint de estilo del mismo publicador; sin datos comparativos publicados |
-| rh-illustrious-snow2.5dharem-style-checkpoint | RunningHubAI | no disponible | no disponible | no disponible | no disponible | HuggingFace | Otro checkpoint de estilo del mismo publicador; sin datos comparativos publicados |
+| rh-illustrious-snowf-style-checkpoint | RunningHubAI / @十二雪 | IL-XL | 6,9 GB (6617 MiB) | no disponible | no disponible | Hugging Face, RunningHub, ComfyUI | Objeto de esta ficha |
+| rh-illustrious-snowmix-style-checkpoint | RunningHubAI | no disponible | no disponible | no disponible | no disponible | Hugging Face | Otro checkpoint de estilo del mismo publicador; sin datos comparativos publicados |
+| rh-illustrious-snow2.5dharem-style-checkpoint | RunningHubAI | no disponible | no disponible | no disponible | no disponible | Hugging Face | Otro checkpoint de estilo del mismo publicador; sin datos comparativos publicados |
 | Illustrious SnowF Style (v1.0) | poron, distribuido en Civitai y TensorHub Art | Illustrious | no disponible | no disponible | no disponible | Civitai, TensorHub Art | Version publicada en otros repositorios del mismo estilo SnowF |
-| IL-XL (Illustrious XL) | ecosistema Illustrious | SDXL | no disponible en esta busqueda | no disponible | no disponible | HuggingFace y otros | Modelo base declarado por la model card |
+| IL-XL (Illustrious XL) | ecosistema Illustrious | SDXL | no disponible en esta busqueda | no disponible | no disponible | Hugging Face y otros | Modelo base declarado por la model card |
 
 No se dispone de parametros, contexto, rendimiento ni licencia de las alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
 
@@ -93,7 +93,7 @@ No se dispone de parametros, contexto, rendimiento ni licencia de las alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RunningHubAI/rh-illustrious-snowf-style-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/RunningHubAI/rh-illustrious-snowf-style-checkpoint
 - Repositorio original en RunningHub: https://www.runninghub.cn/model/public/2084141381454491650
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/2011770127833632769
 - Plataforma RunningHub (internacional): https://www.runninghub.ai

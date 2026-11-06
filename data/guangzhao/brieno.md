@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Brieno es un modelo publicado en HuggingFace por el usuario Guangzhao bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. No se dispone de pipeline declarado, idiomas soportados ni resultados de evaluacion.
+Brieno es un modelo publicado en Hugging Face por el usuario Guangzhao bajo licencia Apache 2.0. La model card asociada al repositorio no contiene ninguna descripcion tecnica: unicamente incluye la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. No se dispone de pipeline declarado, idiomas soportados ni resultados de evaluacion.
 
 El repositorio presenta cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (5 de noviembre de 2026), lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad. No existe evidencia publica de que el modelo haya sido entrenado, evaluado o desplegado en ningun entorno.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Brieno | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Brieno | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Guangzhao/Brieno
+- Repositorio en Hugging Face: https://huggingface.co/Guangzhao/Brieno
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

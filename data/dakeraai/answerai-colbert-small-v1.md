@@ -6,7 +6,7 @@
 
 El artefacto principal es un único fichero ONNX cuantizado a int8 de 33,9 MB junto con su tokenizador. Se usa como extractor de características (`feature-extraction`) para generar embeddings de tokens que luego se comparan mediante MaxSim, lo que permite un retrieval más preciso que los embeddings densos de un solo vector, a costa de un mayor coste de almacenamiento. Es relevante para pipelines RAG y para sistemas de memoria a largo plazo de agentes, que es exactamente el caso de uso para el que Dakera lo integra.
 
-La ficha se basa en la información disponible del repositorio espejo y en los metadatos de HuggingFace. Los detalles de arquitectura interna, entrenamiento y benchmarks no vienen documentados en esta copia; el autor remite a la model card original de Answer.AI, por lo que los datos no disponibles se indican como tales.
+La ficha se basa en la información disponible del repositorio espejo y en los metadatos de Hugging Face. Los detalles de arquitectura interna, entrenamiento y benchmarks no vienen documentados en esta copia; el autor remite a la model card original de Answer.AI, por lo que los datos no disponibles se indican como tales.
 
 ## Especificaciones tecnicas
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La c
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DakeraAI/answerai-colbert-small-v1 (espejo) | ColBERT late interaction, ONNX int8 | no disponible | no disponible | Apache-2.0 | HuggingFace (espejo) |
-| answerdotai/answerai-colbert-small-v1 (original) | ColBERT late interaction | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Embeddings densos tipo sentence-transformers (p. ej. familia MiniLM) | Bi-encoder denso | no disponible en esta ficha | no disponible | variable | HuggingFace |
-| Modelos de reranking cross-encoder | Cross-encoder | no disponible en esta ficha | no disponible | variable | HuggingFace |
+| DakeraAI/answerai-colbert-small-v1 (espejo) | ColBERT late interaction, ONNX int8 | no disponible | no disponible | Apache-2.0 | Hugging Face (espejo) |
+| answerdotai/answerai-colbert-small-v1 (original) | ColBERT late interaction | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Embeddings densos tipo sentence-transformers (p. ej. familia MiniLM) | Bi-encoder denso | no disponible en esta ficha | no disponible | variable | Hugging Face |
+| Modelos de reranking cross-encoder | Cross-encoder | no disponible en esta ficha | no disponible | variable | Hugging Face |
 
 La comparación cuantitativa con alternativas no está disponible en la información proporcionada. La diferencia conceptual clave frente a un bi-encoder denso es que ColBERT almacena un vector por token y calcula MaxSim, lo que suele dar mayor precisión a cambio de más almacenamiento; frente a un cross-encoder, es más eficiente en la fase de ranking porque precalcula los embeddings de documentos.
 
@@ -82,7 +82,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/DakeraAI/answerai-colbert-small-v1
+- Repositorio espejo en Hugging Face: https://huggingface.co/DakeraAI/answerai-colbert-small-v1
 - Modelo original: https://huggingface.co/answerdotai/answerai-colbert-small-v1
 - Licencia del espejo: https://huggingface.co/DakeraAI/answerai-colbert-small-v1/blob/main/LICENSE
 - Web de Dakera: https://dakera.ai

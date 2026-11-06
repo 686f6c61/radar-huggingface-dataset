@@ -24,7 +24,7 @@ Su relevancia actual es metodologica: ofrece una pieza reutilizable y reproducib
 | Libreria | setfit |
 | Dataset de entrenamiento | StanfordSCALE/assertions_llm_annotated_talkmoves |
 | Tamano del repositorio | 0,4 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-10-12 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-12 |
 
 ## Arquitectura y entrenamiento
 
@@ -94,10 +94,10 @@ No se dispone de resultados de benchmarks comparables publicados para este model
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (StanfordSCALE, asercion de proposito de paso matematico) | 109,5 M | 128 tokens | Clasificacion binaria de una asercion concreta de discurso de aula | No disponible | HuggingFace (descargas registradas: 0) |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base, sin cabezal) | 109,5 M | 128 tokens | Embeddings de frases de proposito general | Apache 2.0 en su repositorio original (no verificado en esta ficha) | HuggingFace |
-| Clasificador generico basado en BERT-base (por ejemplo, bert-base-uncased afinado para clasificacion) | ~110 M | 512 tokens | Clasificacion de texto general | Apache 2.0 (modelo base) | HuggingFace |
-| Otras aserciones del conjunto top-down de StanfordSCALE | No disponible | No disponible | Clasificacion binaria de otras conductas de aula | No disponible | HuggingFace |
+| Este modelo (StanfordSCALE, asercion de proposito de paso matematico) | 109,5 M | 128 tokens | Clasificacion binaria de una asercion concreta de discurso de aula | No disponible | Hugging Face (descargas registradas: 0) |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base, sin cabezal) | 109,5 M | 128 tokens | Embeddings de frases de proposito general | Apache 2.0 en su repositorio original (no verificado en esta ficha) | Hugging Face |
+| Clasificador generico basado en BERT-base (por ejemplo, bert-base-uncased afinado para clasificacion) | ~110 M | 512 tokens | Clasificacion de texto general | Apache 2.0 (modelo base) | Hugging Face |
+| Otras aserciones del conjunto top-down de StanfordSCALE | No disponible | No disponible | Clasificacion binaria de otras conductas de aula | No disponible | Hugging Face |
 
 La ventaja diferencial de este modelo no es el rendimiento bruto, sino su especializacion en una conducta muy concreta y su integracion con el esquema EduBehaviors; su limitacion frente a un BERT-base generico es la ventana de 128 tokens del encoder MPNet.
 
@@ -116,7 +116,7 @@ La ventaja diferencial de este modelo no es el rendimiento bruto, sino su especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_purpose_of_a_mathematical_step
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_purpose_of_a_mathematical_step
 - Dataset de anotaciones: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio original): https://github.com/SumnerLab/TalkMoves

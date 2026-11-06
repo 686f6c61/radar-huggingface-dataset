@@ -2,7 +2,7 @@
 
 ## Resumen
 
-jojo-sovereign-trained-colab es un ajuste fino (fine-tune) del modelo Llama-3.2-3B-Instruct, publicado por el usuario dodgeqtr en HuggingFace. El repositorio contiene exclusivamente el modelo convertido a formato GGUF mediante la libreria Unsloth, con un unico archivo cuantizado en Q4_K_M. El nombre del modelo sugiere un ajuste orientado a un caso de uso propio del autor, pero la model card no documenta el dataset, el objetivo ni el procedimiento de entrenamiento.
+jojo-sovereign-trained-colab es un ajuste fino (fine-tune) del modelo Llama-3.2-3B-Instruct, publicado por el usuario dodgeqtr en Hugging Face. El repositorio contiene exclusivamente el modelo convertido a formato GGUF mediante la libreria Unsloth, con un unico archivo cuantizado en Q4_K_M. El nombre del modelo sugiere un ajuste orientado a un caso de uso propio del autor, pero la model card no documenta el dataset, el objetivo ni el procedimiento de entrenamiento.
 
 El modelo cuenta con 3.212.749.888 parametros totales (unos 3,21 mil millones), lo que lo situa en la gama de modelos pequenos capaces de ejecutarse en hardware de consumo, incluso en CPU. Su formato GGUF y la inclusion de un Modelfile de Ollama lo orientan a despliegue local y a integracion con llama.cpp, mas que a entornos de servidor de alta concurrencia.
 
@@ -19,10 +19,10 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un ejemplo
 | Tipos de cuantizacion | Q4_K_M (unico archivo publicado: `Llama-3.2-3B-Instruct.Q4_K_M.gguf`). No se publican otros niveles de cuantizacion, aunque GGUF admite Q2_K, Q3_K, Q5_K, Q6_K y Q8_0 |
 | Idiomas soportados | No disponible (el modelo base declara ingles, aleman, frances, italiano, portugues, hindi, castellano y thai; sin confirmar tras el ajuste) |
 | Licencia | No disponible. Presumiblemente hereda la Llama 3.2 Community License del modelo base, pero el autor no la declara |
-| Formato de pesos | GGUF (Q4_K_M). La metadata de HuggingFace indica que el recuento de parametros se obtuvo de safetensors, si bien la model card solo lista el archivo GGUF |
+| Formato de pesos | GGUF (Q4_K_M). La metadata de Hugging Face indica que el recuento de parametros se obtuvo de safetensors, si bien la model card solo lista el archivo GGUF |
 | Tamano del repositorio | 2,0 GB |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creacion | 2026-09-18 (fecha anomala en la metadata de HuggingFace) |
+| Fecha de creacion | 2026-09-18 (fecha anomala en la metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -72,7 +72,7 @@ Los datos de la columna "modelo de referencia" corresponden a las especificacion
 
 | Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|
-| jojo-sovereign-trained-colab | 3,21B | No disponible | No disponible | GGUF Q4_K_M en HuggingFace; Modelfile de Ollama |
+| jojo-sovereign-trained-colab | 3,21B | No disponible | No disponible | GGUF Q4_K_M en Hugging Face; Modelfile de Ollama |
 | Llama-3.2-3B-Instruct (modelo base) | 3,21B | 128 000 tokens (nominal) | Llama 3.2 Community License | safetensors y GGUF; ampliamente disponible |
 | Phi-3.5-mini-instruct | 3,8B | 128 000 tokens (nominal) | MIT | safetensors y GGUF; muy desplegado |
 | Gemma-2-2B-it | 2,6B | 8192 tokens (nominal) | Gemma Terms of Use | safetensors y GGUF; disponible en Ollama |
@@ -95,7 +95,7 @@ En terminos de rendimiento no es posible establecer comparacion: no existen benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dodgeqtr/jojo-sovereign-trained-colab
+- Modelo en Hugging Face: https://huggingface.co/dodgeqtr/jojo-sovereign-trained-colab
 - Unsloth (libreria usada para el ajuste y la conversion): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de ejecucion de GGUF): https://github.com/ggml-org/llama.cpp
 - Llama-3.2-3B-Instruct (modelo base presumible): https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

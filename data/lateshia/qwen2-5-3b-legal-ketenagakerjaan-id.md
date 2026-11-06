@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lateshia/qwen2.5-3b-legal-ketenagakerjaan-id es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario Lateshia y publicado en HuggingFace. El modelo base empleado es la versión pre-cuantizada a 4 bits de Unsloth (unsloth/Qwen2.5-3B-Instruct-bnb-4bit), y el entrenamiento se realizó con la librería Unsloth, que según la propia model card permitió un entrenamiento "2x más rápido" que un flujo estándar. La licencia declarada es Apache-2.0 y la librería de referencia es transformers.
+Lateshia/qwen2.5-3b-legal-ketenagakerjaan-id es un ajuste fino (fine-tune) del modelo Qwen2.5-3B-Instruct, desarrollado por el usuario Lateshia y publicado en Hugging Face. El modelo base empleado es la versión pre-cuantizada a 4 bits de Unsloth (unsloth/Qwen2.5-3B-Instruct-bnb-4bit), y el entrenamiento se realizó con la librería Unsloth, que según la propia model card permitió un entrenamiento "2x más rápido" que un flujo estándar. La licencia declarada es Apache-2.0 y la librería de referencia es transformers.
 
 El nombre del repositorio sugiere una especialización en derecho laboral indonesio ("ketenagakerjaan" significa empleo o relaciones laborales en indonesio, e "id" apunta a Indonesia), pero la model card no documenta ni el dataset, ni el dominio, ni el idioma real de entrenamiento; la única etiqueta de idioma declarada es "en". El repositorio ocupa 0,1 GB, un tamaño compatible con un adaptador LoRA o con una subida parcial de pesos, y no con un modelo de 3B en precisión completa o en 4 bits íntegro.
 
@@ -24,7 +24,7 @@ Se trata, por tanto, de un experimento de ajuste fino de nicho, con cero descarg
 | Librería | transformers |
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-13 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-13 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,11 +76,11 @@ No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de evaluaciones específ
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Lateshia/qwen2.5-3b-legal-ketenagakerjaan-id | ~3B, base en 4 bits | 32.768, ampliable a 131.072 con YaRN (heredado) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09B | 32.768, ampliable a 131.072 con YaRN | Apache-2.0 | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128.000 | Llama 3.2 Community License (acceso con aceptación de términos) | HuggingFace |
-| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use (acceso con aceptación de términos) | HuggingFace |
+| Lateshia/qwen2.5-3b-legal-ketenagakerjaan-id | ~3B, base en 4 bits | 32.768, ampliable a 131.072 con YaRN (heredado) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct (modelo base) | 3,09B | 32.768, ampliable a 131.072 con YaRN | Apache-2.0 | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.2-3B-Instruct | 3,21B | 128.000 | Llama 3.2 Community License (acceso con aceptación de términos) | Hugging Face |
+| microsoft/Phi-3.5-mini-instruct | 3,8B | 128.000 | MIT | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8.192 | Gemma Terms of Use (acceso con aceptación de términos) | Hugging Face |
 
 En cuanto a rendimiento comparado, no hay datos: este fine-tune no publica métricas, por lo que no puede situarse frente a las alternativas más allá de las diferencias de licencia, contexto y tamaño. Como referencia de licencia, Apache-2.0 (este modelo y Qwen2.5) es más permisiva para uso comercial que las licencias de Llama 3.2 y Gemma 2, que imponen condiciones adicionales.
 
@@ -98,7 +98,7 @@ En cuanto a rendimiento comparado, no hay datos: este fine-tune no publica métr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lateshia/qwen2.5-3b-legal-ketenagakerjaan-id
+- Modelo en Hugging Face: https://huggingface.co/Lateshia/qwen2.5-3b-legal-ketenagakerjaan-id
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

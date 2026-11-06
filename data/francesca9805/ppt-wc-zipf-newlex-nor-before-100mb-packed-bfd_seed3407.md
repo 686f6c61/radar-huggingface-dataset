@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`, presumiblemente vinculado al grupo de investigacion de F. Padovani en la Universidad de Groningen (los registros de Weights & Biases apuntan a ese espacio de trabajo). Se trata de un modelo pequeno de generacion de texto, con 86.508.288 parametros totales (unos 86,5 millones), construido sobre la arquitectura GPT-2 y entrenado mediante SFT con la libreria TRL.
+El modelo `ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`, presumiblemente vinculado al grupo de investigacion de F. Padovani en la Universidad de Groningen (los registros de Weights & Biases apuntan a ese espacio de trabajo). Se trata de un modelo pequeno de generacion de texto, con 86.508.288 parametros totales (unos 86,5 millones), construido sobre la arquitectura GPT-2 y entrenado mediante SFT con la libreria TRL.
 
 El nombre del repositorio sugiere un experimento de investigacion sobre tokenizacion y lexicografia: la cadena `ppt-wc-zipf-newlex` apunta a metricas de frecuencia de palabras y ley de Zipf, `nor-before` a un idioma noruego en una fase previa, y `100mb-packed-bfd_seed3407` a un corpus de entrenamiento empaquetado de 100 MB con una semilla fija. Es un modelo de proposito experimental mas que de produccion, con 0 descargas y 0 "likes" en el momento de la consulta, lo que refuerza su caracter de artefacto de investigacion.
 
@@ -49,7 +49,7 @@ El ajuste fino se realizo con SFT (supervised fine-tuning) utilizando TRL 0.23.0
 - Pruebas de infraestructura de despliegue: util para validar integraciones con Text Generation Inference (el tag `text-generation-inference` y `endpoints_compatible` esta presente) o con otros servidores de inferencia antes de escalar a modelos mayores.
 - Generacion de texto creativo a pequena escala en ingles: cuentos cortos, continuaciones de frases o ejercicios de escritura, asumiendo una calidad limitada.
 - Analisis de sesgos y comportamientos emergentes en corpus minusculos: permite estudiar que tipo de errores y sesgos aparecen cuando el modelo se entrena con muy pocos datos.
-- Docencia sobre ajuste fino con TRL: el modelo ilustra un flujo completo de SFT sobre un modelo base pequeno, con registro en W&B y publicacion en HuggingFace.
+- Docencia sobre ajuste fino con TRL: el modelo ilustra un flujo completo de SFT sobre un modelo base pequeno, con registro en W&B y publicacion en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed3407` | 86,5 M | No disponible | No disponible | HuggingFace (`transformers`) | Fine-tune SFT de `goldfish-models/eng_latn_100mb` |
-| `goldfish-models/eng_latn_100mb` | Del orden de 86 M (familia goldfish, dato no confirmado) | No disponible | No disponible | HuggingFace | Modelo base entrenado con 100 MB de ingles |
-| `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed3407` | No disponible | No disponible | No disponible | HuggingFace | Variante de la misma serie de experimentos, en ingles |
+| `francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed3407` | 86,5 M | No disponible | No disponible | Hugging Face (`transformers`) | Fine-tune SFT de `goldfish-models/eng_latn_100mb` |
+| `goldfish-models/eng_latn_100mb` | Del orden de 86 M (familia goldfish, dato no confirmado) | No disponible | No disponible | Hugging Face | Modelo base entrenado con 100 MB de ingles |
+| `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed3407` | No disponible | No disponible | No disponible | Hugging Face | Variante de la misma serie de experimentos, en ingles |
 | GPT-2 small (referencia de la arquitectura) | 124 M | 1024 tokens | MIT (segun OpenAI) | Ampliamente disponible | Referencia historica de la familia GPT-2 |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-nor-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/zzq8pv9f

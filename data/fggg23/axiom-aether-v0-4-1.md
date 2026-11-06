@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axiom-aether-v0.4.1 es un repositorio de modelo publicado en HuggingFace por el usuario fggg23 bajo licencia MIT. En el momento de la consulta, el repositorio presenta un tamano de 0.0 GB, cero descargas y un unico "like", lo que indica que no contiene artefactos de pesos, tokenizador ni configuracion de modelo accesibles publicamente.
+Axiom-aether-v0.4.1 es un repositorio de modelo publicado en Hugging Face por el usuario fggg23 bajo licencia MIT. En el momento de la consulta, el repositorio presenta un tamano de 0.0 GB, cero descargas y un unico "like", lo que indica que no contiene artefactos de pesos, tokenizador ni configuracion de modelo accesibles publicamente.
 
 La model card asociada unicamente declara la licencia MIT y no incluye ninguna descripcion del modelo, arquitectura, tamano, datos de entrenamiento ni capacidades. No se especifica pipeline de inferencia, idiomas soportados ni formato de pesos. Tampoco se ha localizado documentacion tecnica, paper ni anuncio de publicacion del autor que aporte informacion adicional.
 
@@ -62,14 +62,14 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 - Imposibilidad de auditar sesgos: no hay informacion sobre el dataset de entrenamiento ni evaluaciones de sesgo.
 - Riesgo de alucinacion no evaluable: sin benchmarks ni pruebas, no se puede caracterizar la fiabilidad del modelo.
 - Idiomas no declarados: se desconoce si soporta castellano u otros idiomas, y con que calidad.
-- Riesgo de suplantacion de identidad: los resultados de busqueda web asocian el termino "Aether" a varios proyectos distintos (Aether AI, AetherAI3, el paquete PyPI axiom-aether, la extension de VS Code aether-ai). No hay evidencia de que guarden relacion con este repositorio de HuggingFace, por lo que no deben tomarse como documentacion del modelo.
+- Riesgo de suplantacion de identidad: los resultados de busqueda web asocian el termino "Aether" a varios proyectos distintos (Aether AI, AetherAI3, el paquete PyPI axiom-aether, la extension de VS Code aether-ai). No hay evidencia de que guarden relacion con este repositorio de Hugging Face, por lo que no deben tomarse como documentacion del modelo.
 - Licencia MIT: permite uso comercial y modificacion, pero al no existir pesos publicados la licencia es en la practica inaplicable a un artefacto inexistente.
 - Fecha de creacion futura: el repositorio figura creado el 2026-10-04, lo que puede indicar un error de metadatos o una publicacion programada; conviene verificar la fecha real.
 - Para produccion: no se recomienda integrar este identificador en ningun pipeline hasta que el autor publique pesos, configuracion y documentacion tecnica verificable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fggg23/axiom-aether-v0.4.1
+- Hugging Face: https://huggingface.co/fggg23/axiom-aether-v0.4.1
 - PyPI (posible relacion, no confirmada): https://pypi.org/project/axiom-aether/
 - Portal Aether AI (posible relacion, no confirmada): https://app.aethersystems.net/
 - GitHub AetherAI3 (posible relacion, no confirmada): https://github.com/AetherAI3

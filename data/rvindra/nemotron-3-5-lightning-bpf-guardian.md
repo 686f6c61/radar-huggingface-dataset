@@ -95,8 +95,8 @@ El adaptador obtiene un 62,3 % en la suite combinada frente al 49,6 % de la lín
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rvindra/nemotron-3.5-lightning-bpf-guardian
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Modelo en Hugging Face: https://huggingface.co/rvindra/nemotron-3.5-lightning-bpf-guardian
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Dashboard interactivo del autor: https://ravindratarunokusumo.github.io/BPF-FT-Project/
 - Dataset SFT: https://huggingface.co/datasets/rvindra/bpf-guardian-sft
 - Dataset RL: https://huggingface.co/datasets/rvindra/bpf-guardian-rl

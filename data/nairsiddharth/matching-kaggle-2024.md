@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nairsiddharth/matching-kaggle-2024` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) aplicada a una tarea de *matching*, presumiblemente en el contexto de una competición de Kaggle de 2024. El autor, Nairsiddharth, publica el artefacto principal como un script Python (`predict.py`) acompañado de la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de safetensors. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados de pequeño tamaño.
+`Nairsiddharth/matching-kaggle-2024` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de MoCo v3 (Momentum Contrast v3) aplicada a una tarea de *matching*, presumiblemente en el contexto de una competición de Kaggle de 2024. El autor, Nairsiddharth, publica el artefacto principal como un script Python (`predict.py`) acompañado de la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de safetensors. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo y experimentos controlados de pequeño tamaño.
 
 El dato objetivo más relevante es que el checkpoint contiene únicamente 33.088 parámetros totales, una cifra extraordinariamente reducida que confirma que la etiqueta de escala "giant" que aparece en la configuración es puramente nominal y no corresponde a un modelo de gran tamaño real. La arquitectura declarada combina atención lineal, fusión mediante concatenación con perceptrón multicapa, activación Mish y normalización LayerNorm, dentro del paradigma de aprendizaje contrastivo auto-supervisado de MoCo v3.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 - VRAM estimada para inferencia: inferior a 1 MB en cualquier precisión razonable (33.088 parámetros equivalen aproximadamente a 0,13 MB en fp32 y a unos 0,07 MB en fp16), sin contar el overhead del runtime de PyTorch.
 - GPU recomendadas: ninguna en particular; cualquier GPU, incluso integrada, es sobradamente suficiente.
-- Cabe en GPU de consumo: sí, en cualquier modelo, y también en CPU sin aceleración dedicada. El repositorio ocupa 0,0 GB según la ficha de HuggingFace.
+- Cabe en GPU de consumo: sí, en cualquier modelo, y también en CPU sin aceleración dedicada. El repositorio ocupa 0,0 GB según la ficha de Hugging Face.
 - Opciones de despliegue: PyTorch nativo mediante `predict.py`; no se documenta compatibilidad con vLLM, llama.cpp, Ollama, TGI ni ningún servidor de inferencia estándar, y se advierte de que las APIs genéricas de carga automática necesitan un adaptador explícito.
 - Latencia y throughput estimados: no disponible.
 
@@ -77,5 +77,5 @@ No disponible. No se han proporcionado datos de rendimiento de este repositorio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nairsiddharth/matching-kaggle-2024
+- Hugging Face: https://huggingface.co/Nairsiddharth/matching-kaggle-2024
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo y se han descartado.

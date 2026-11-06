@@ -4,7 +4,7 @@
 
 `bobbyr667/ratatat` es un adaptador LoRA de tipo DreamBooth para generacion de imagenes text-to-image, entrenado sobre el checkpoint base `krea/Krea-2-Raw` mediante el entrenador oficial de Krea 2 incluido en la libreria diffusers. No se trata de un modelo de lenguaje ni de un modelo fundacional completo: es un peso de ajuste fino de bajo rango (repo de 1,0 GB, pesos en safetensors) que modifica el comportamiento de un modelo de difusion subyacente para reproducir un estilo o concepto concreto, activado mediante la palabra disparadora `TOK`.
 
-El autor es el usuario de HuggingFace `bobbyr667`, que publica el adaptador bajo licencia Apache 2.0. El modelo se apoya en el ecosistema Krea 2, que distribuye dos checkpoints: RAW (base no destilado, el que se usa para entrenar) y Turbo (destilado a 8 pasos, el que se usa para inferencia rapida). El propio autor indica que los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo.
+El autor es el usuario de Hugging Face `bobbyr667`, que publica el adaptador bajo licencia Apache 2.0. El modelo se apoya en el ecosistema Krea 2, que distribuye dos checkpoints: RAW (base no destilado, el que se usa para entrenar) y Turbo (destilado a 8 pasos, el que se usa para inferencia rapida). El propio autor indica que los LoRA entrenados sobre RAW se expresan con fuerza sobre Turbo.
 
 Su relevancia es practica y de nicho: permite personalizar un modelo de difusion moderno sin reentrenar, con un coste de almacenamiento bajo y un flujo de inferencia de solo 8 pasos sin classifier-free guidance. No obstante, la model card esta practicamente sin completar (secciones de datos de entrenamiento, sesgos y limitaciones marcadas como TODO) y el repositorio no tiene descargas ni valoraciones, por lo que no existe validacion comunitaria publica de su calidad.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| bobbyr667/ratatat | LoRA DreamBooth | krea/Krea-2-Raw (inferencia sobre Krea-2-Turbo) | no disponible | no aplica | apache-2.0 | HuggingFace, 0 descargas |
+| bobbyr667/ratatat | LoRA DreamBooth | krea/Krea-2-Raw (inferencia sobre Krea-2-Turbo) | no disponible | no aplica | apache-2.0 | Hugging Face, 0 descargas |
 | ratatatat74 style v2.0 | LoRA de estilo | Stable Diffusion 1.x | no disponible | no aplica | no disponible | PromptHero, Tensor.Art, Yodayo |
 | ratatatat74 style v1.0 | LoRA de estilo | Stable Diffusion 1.x | no disponible | no aplica | no disponible | Civitai |
 
@@ -85,7 +85,7 @@ La comparacion es limitada: los adaptadores de estilo encontrados en la busqueda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bobbyr667/ratatat
+- Modelo en Hugging Face: https://huggingface.co/bobbyr667/ratatat
 - Perfil del autor: https://huggingface.co/bobbyr667
 - Modelo base para entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base para inferencia: https://huggingface.co/krea/Krea-2-Turbo

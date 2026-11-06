@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BTL-4 es un modelo de lenguaje multimodal desarrollado por el laboratorio badtheorylabs, publicado en HuggingFace en agosto de 2026. Según las etiquetas del repositorio, se trata de un modelo basado en la arquitectura Qwen3.5 MoE (Mixture of Experts), con capacidades de procesamiento de imagen y texto (image-text-to-text), orientado a usos agénticos, tool calling, generación de código y razonamiento. El modelo está diseñado para tareas de conversación, generación de texto y razonamiento multi-paso, y es compatible con pipelines de text-generation.
+BTL-4 es un modelo de lenguaje multimodal desarrollado por el laboratorio badtheorylabs, publicado en Hugging Face en agosto de 2026. Según las etiquetas del repositorio, se trata de un modelo basado en la arquitectura Qwen3.5 MoE (Mixture of Experts), con capacidades de procesamiento de imagen y texto (image-text-to-text), orientado a usos agénticos, tool calling, generación de código y razonamiento. El modelo está diseñado para tareas de conversación, generación de texto y razonamiento multi-paso, y es compatible con pipelines de text-generation.
 
 Aunque la ficha oficial no proporciona detalles sobre el número de parámetros, la longitud de contexto o los idiomas soportados, las etiquetas indican que es un modelo de tipo MoE, lo que sugiere una arquitectura con parámetros activos por token y un coste de inferencia reducido en comparación con modelos densos de tamaño equivalente. Su naturaleza multimodal y agéntica lo hace relevante para aplicaciones que requieren comprensión visual y textual simultánea, así como interacción con herramientas externas.
 
@@ -25,7 +25,7 @@ El modelo cuenta con 5042 descargas y 80 likes en el momento de la consulta, lo 
 
 La arquitectura de BTL-4 se basa en un modelo de mezcla de expertos (MoE) de la familia Qwen3.5, segun las etiquetas del repositorio. En un MoE, solo una fraccion de los parametros totales se activa por token, lo que permite un equilibrio entre capacidad y eficiencia computacional. El modelo es multimodal, ya que acepta entradas de imagen y texto (image-text-to-text), lo que implica la presencia de un codificador visual y un mecanismo de fusion de modalidades.
 
-No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se conocen innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La unica informacion disponible proviene de las etiquetas de HuggingFace, que indican soporte para tool-use, agentes y razonamiento, lo que sugiere un entrenamiento orientado a tareas de interaccion con herramientas y planificacion multi-paso.
+No se dispone de informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO. Tampoco se conocen innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal. La unica informacion disponible proviene de las etiquetas de Hugging Face, que indican soporte para tool-use, agentes y razonamiento, lo que sugiere un entrenamiento orientado a tareas de interaccion con herramientas y planificacion multi-paso.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se dispone de informacion publica sobre el numero de tokens de entrenamiento,
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estandar en la ficha de HuggingFace, por lo que no es posible comparar su rendimiento con otros modelos de forma objetiva.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos sobre MMLU, HumanEval, GSM8K u otras evaluaciones estandar en la ficha de Hugging Face, por lo que no es posible comparar su rendimiento con otros modelos de forma objetiva.
 
 ## Requisitos de hardware
 
@@ -71,4 +71,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/badtheorylabs/BTL-4
+- Repositorio Hugging Face: https://huggingface.co/badtheorylabs/BTL-4

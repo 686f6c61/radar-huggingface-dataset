@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no es una ficha de modelo al uso: es un artefacto de entrega. El autor, davidthorman1996, publica un unico archivo de pesos sin modificar procedente del repositorio upstream `Comfy-Org/Qwen-Image-Edit_ComfyUI`, con la revision fijada `7d41107b653d3039be20972fb82398b01b3213eb`, para su uso en un renderizador experimental controlado por el propio autor sobre Runpod. El archivo en cuestion es `split_files/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors`, con un tamano esperado de 20533762817 bytes (aproximadamente 19,1 GiB) y hash SHA-256 declarado.
+Este repositorio de Hugging Face no es una ficha de modelo al uso: es un artefacto de entrega. El autor, davidthorman1996, publica un unico archivo de pesos sin modificar procedente del repositorio upstream `Comfy-Org/Qwen-Image-Edit_ComfyUI`, con la revision fijada `7d41107b653d3039be20972fb82398b01b3213eb`, para su uso en un renderizador experimental controlado por el propio autor sobre Runpod. El archivo en cuestion es `split_files/diffusion_models/qwen_image_edit_2511_fp8mixed.safetensors`, con un tamano esperado de 20533762817 bytes (aproximadamente 19,1 GiB) y hash SHA-256 declarado.
 
 Por los metadatos y las etiquetas del repositorio (`qwen-image-edit`, `comfyui`, `runpod`), se trata de un modelo de difusion para edicion de imagenes, empaquetado en precision FP8 mixta y pensado para cargarse dentro de ComfyUI. La model card no aporta informacion sobre arquitectura interna, numero de parametros, datos de entrenamiento, idiomas soportados ni resultados de evaluacion.
 
@@ -24,8 +24,8 @@ Su relevancia practica es acotada y muy especifica: sirve como espejo reproducib
 | SHA-256 esperado | `c9fdc158e46d3b61ef75f21ae866ca2fe808bf4a53643120d1c1e87c19280a4e` |
 | Repositorio upstream | `Comfy-Org/Qwen-Image-Edit_ComfyUI`, revision `7d41107b653d3039be20972fb82398b01b3213eb` |
 | Libreria declarada | comfyui |
-| Fecha de creacion | 2026-09-18T19:26:54.000Z (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-18T20:04:33.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-18T19:26:54.000Z (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-18T20:04:33.000Z (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,8 +97,8 @@ Comparativas con modelos alternativos de edicion de imagenes (por ejemplo, otras
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidthorman1996/davidio-qwen-edit-2511-fp8
-- Repositorio upstream en HuggingFace: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/davidthorman1996/davidio-qwen-edit-2511-fp8
+- Repositorio upstream en Hugging Face: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI
 - Revision upstream fijada: https://huggingface.co/Comfy-Org/Qwen-Image-Edit_ComfyUI/tree/7d41107b653d3039be20972fb82398b01b3213eb
 - ComfyUI (etiqueta del repositorio, proyecto de referencia): https://github.com/comfyanonymous/ComfyUI
 - Runpod (etiqueta del repositorio, plataforma de despliegue declarada): https://www.runpod.io

@@ -70,9 +70,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: LocalAI-io/Kimodo-SMPLX-RP-v1-GGML](https://huggingface.co/LocalAI-io/Kimodo-SMPLX-RP-v1-GGML)
-- [HuggingFace: LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF (codificador de texto)](https://huggingface.co/LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF)
+- [Hugging Face: LocalAI-io/Kimodo-SMPLX-RP-v1-GGML](https://huggingface.co/LocalAI-io/Kimodo-SMPLX-RP-v1-GGML)
+- [Hugging Face: LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF (codificador de texto)](https://huggingface.co/LocalAI-io/Llama-3-Kimodo-SMPLX-RP-v1-GGUF)
 - [GitHub: localai-org/kimodo.cpp](https://github.com/localai-org/kimodo.cpp)
 - [GitHub: nv-tlabs/kimodo (implementación oficial)](https://github.com/nv-tlabs/kimodo)
-- [HuggingFace: nvidia/Kimodo-SMPLX-RP-v1 (modelo original)](https://huggingface.co/nvidia/Kimodo-SMPLX-RP-v1)
+- [Hugging Face: nvidia/Kimodo-SMPLX-RP-v1 (modelo original)](https://huggingface.co/nvidia/Kimodo-SMPLX-RP-v1)
 - [Documentación de NVIDIA sobre Kimodo-SMPLX](https://research.nvidia.com/labs/sil/projects/kimodo/docs/getting_started/installation_smpl.html)

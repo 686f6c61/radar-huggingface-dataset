@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Control de camara | Cierre de bucle | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 FL2VA (base) | Base image-to-video | Movimiento de camara pero deriva y no regresa al inicio | No de fabrica (se congela con keyframes identicos) | minimax-h3-community-license-agreement | HuggingFace (MiniMaxAI/MiniMax-H3) |
-| MiniMax-H3 Ref2VA (base) | Base referencia-a-video | Referencias laxas de apariencia | No (no termina en fotograma conocido) | minimax-h3-community-license-agreement | HuggingFace (MiniMaxAI/MiniMax-H3) |
-| Este LoRA sobre FL2VA | Adaptador LoRA | Orbita 360 geometricamente consistente | Si, cierra sobre el primer fotograma | minimax-h3-community-license-agreement | HuggingFace (robertbschuette/MiniMax-H3-360-Orbit-LoRA) |
+| MiniMax-H3 FL2VA (base) | Base image-to-video | Movimiento de camara pero deriva y no regresa al inicio | No de fabrica (se congela con keyframes identicos) | minimax-h3-community-license-agreement | Hugging Face (MiniMaxAI/MiniMax-H3) |
+| MiniMax-H3 Ref2VA (base) | Base referencia-a-video | Referencias laxas de apariencia | No (no termina en fotograma conocido) | minimax-h3-community-license-agreement | Hugging Face (MiniMaxAI/MiniMax-H3) |
+| Este LoRA sobre FL2VA | Adaptador LoRA | Orbita 360 geometricamente consistente | Si, cierra sobre el primer fotograma | minimax-h3-community-license-agreement | Hugging Face (robertbschuette/MiniMax-H3-360-Orbit-LoRA) |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros adaptadores o modelos de la misma categoria en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertbschuette/MiniMax-H3-360-Orbit-LoRA
+- Modelo en Hugging Face: https://huggingface.co/robertbschuette/MiniMax-H3-360-Orbit-LoRA
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Repack pruned de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3

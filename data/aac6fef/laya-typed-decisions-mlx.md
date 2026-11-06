@@ -102,7 +102,7 @@ No hay datos de rendimiento comparativo entre estas alternativas en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aac6fef/laya-typed-decisions-mlx
+- Modelo en Hugging Face: https://huggingface.co/aac6fef/laya-typed-decisions-mlx
 - Checkpoint de origen: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Runtime MLX del port: https://github.com/mizorewww/laya-mlx
 - Informe de rendimiento y muestras de tiempos: https://github.com/mizorewww/laya-mlx/blob/main/BENCHMARKS.md

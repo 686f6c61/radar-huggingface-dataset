@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "yegom/connectailab-rl-yegomne-v5-teacher",
+  "slug": "yegom-connectailab-rl-yegomne-v5-teacher",
+  "author": "yegom",
+  "url": "https://huggingface.co/yegom/connectailab-rl-yegomne-v5-teacher",
+  "created_at": "2026-11-06T11:52:13.000Z",
+  "updated_at": "2026-11-06T11:52:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yegom/connectailab-rl-yegomfloor-v2-teacher · Hugging Face",
+      "url": "https://huggingface.co/yegom/connectailab-rl-yegomfloor-v2-teacher",
+      "snippet": "Reinforcement Learning model, built with numpy. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "yegom/connectailab-rl-yegomfloor-v4-teacher · Hugging Face",
+      "url": "https://huggingface.co/yegom/connectailab-rl-yegomfloor-v4-teacher",
+      "snippet": "Instructions to use yegom/connectailab-rl-yegomfloor-v4-teacher with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

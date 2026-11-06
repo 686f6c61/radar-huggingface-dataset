@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Shahkrishova/intern-multitask` es un repositorio publicado en HuggingFace que empaqueta una implementación propia de la arquitectura BLIP orientada a tareas múltiples (multitask). El autor, Shahkrishova, lo describe explícitamente en la model card como un punto de partida reproducible y no como una release de modelo entrenado. Es decir, el artefacto `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
+`Shahkrishova/intern-multitask` es un repositorio publicado en Hugging Face que empaqueta una implementación propia de la arquitectura BLIP orientada a tareas múltiples (multitask). El autor, Shahkrishova, lo describe explícitamente en la model card como un punto de partida reproducible y no como una release de modelo entrenado. Es decir, el artefacto `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con pesos entrenados ni evaluados.
 
 La relevancia de esta ficha es fundamentalmente metodológica: sirve como plantilla de código y configuración para experimentar con una arquitectura tipo BLIP (vision-lenguaje con fusión por co-atención), con recetas de entrenamiento por defecto registradas en `training_args.json`. No aporta capacidades de inferencia listas para producción ni resultados de evaluación, dado que sus pesos no han sido entrenados ni auditados.
 
@@ -21,7 +21,7 @@ La arquitectura declarada es BLIP en escala "base", con atención de consultas a
 | Licencia | MIT |
 | Formato de pesos | safetensors (mas codigo en `finetune.py`) |
 
-Datos adicionales declarados en la model card: escala "base", atencion grouped query, fusion co-attention, activacion ReLU, normalizacion BatchNorm. Tamano del repositorio: 0.0 GB. Pipeline declarado en HuggingFace: no disponible.
+Datos adicionales declarados en la model card: escala "base", atencion grouped query, fusion co-attention, activacion ReLU, normalizacion BatchNorm. Tamano del repositorio: 0.0 GB. Pipeline declarado en Hugging Face: no disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shahkrishova/intern-multitask | 33.088 (inicializacion) | no disponible | Checkpoint sin entrenar | MIT | HuggingFace |
+| Shahkrishova/intern-multitask | 33.088 (inicializacion) | no disponible | Checkpoint sin entrenar | MIT | Hugging Face |
 | Alternativas BLIP comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada. Las busquedas web realizadas no devolvieron resultados relacionados con este modelo ni con arquitecturas BLIP, por lo que no es posible establecer una comparativa fiable sin inventar datos.
@@ -82,5 +82,5 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shahkrishova/intern-multitask
+- Modelo en Hugging Face: https://huggingface.co/Shahkrishova/intern-multitask
 - Nota: las busquedas web realizadas no devolvieron ningun enlace relevante sobre este modelo, su arquitectura BLIP ni recursos asociados; los resultados obtenidos no guardaban relacion con el modelo y se han descartado. Como consecuencia, no se dispone de enlaces adicionales a papers, blogs, repositorios o demos.

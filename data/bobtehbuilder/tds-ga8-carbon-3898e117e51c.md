@@ -52,6 +52,6 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no es p
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3898e117e51c)
+- [Repositorio de Hugging Face](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-3898e117e51c)
 - [Repositorio de GitHub (posible fuente)](https://github.com/22f3001797/tds-ga8) — no verificado en esta búsqueda
-- [Otros repositorios similares de emisiones de carbono en HuggingFace](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f) y [otro](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff)
+- [Otros repositorios similares de emisiones de carbono en Hugging Face](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-6ce1163ef72f) y [otro](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-414018fd4fff)

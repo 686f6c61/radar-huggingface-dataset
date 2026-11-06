@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`luisastellet/qwen-metaphor-unke-camada-17` es una publicacion del usuario `luisastellet` en HuggingFace, etiquetada con `transformers`, `safetensors`, `qwen3`, `text-generation`, `conversational`, `text-generation-inference` y `endpoints_compatible`. El recuento real de parametros en safetensors es de 596.049.920 (unos 0,6 B), lo que la situa en la categoria de modelos pequenos aptos para inferencia en CPU o GPU de consumo. No existe documentacion tecnica publicada: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como "[More Information Needed]".
+`luisastellet/qwen-metaphor-unke-camada-17` es una publicacion del usuario `luisastellet` en Hugging Face, etiquetada con `transformers`, `safetensors`, `qwen3`, `text-generation`, `conversational`, `text-generation-inference` y `endpoints_compatible`. El recuento real de parametros en safetensors es de 596.049.920 (unos 0,6 B), lo que la situa en la categoria de modelos pequenos aptos para inferencia en CPU o GPU de consumo. No existe documentacion tecnica publicada: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como "[More Information Needed]".
 
 El nombre del repositorio sugiere una variante derivada de un proyecto denominado `qwen-metaphor-unke`, y el sufijo `camada-17` (capa 17 en portugues) apunta a una experimentacion por capas del modelo base. Se trata de una hipotesis a partir de la nomenclatura: el autor no confirma ni el modelo base exacto, ni el procedimiento de entrenamiento, ni el objetivo del experimento. Existen repositorios hermanos con el mismo patron (`qwen-metaphor-unke`, `qwen-metaphor-unke-camada-5`), lo que refuerza la idea de una serie de extracciones o ajustes por capas.
 
@@ -25,7 +25,7 @@ La relevancia actual de esta ficha es limitada y de caracter exploratorio: no ha
 
 No hay informacion publicada sobre la arquitectura interna ni sobre el procedimiento de entrenamiento. La model card generada automaticamente deja vacios, entre otros, los campos de desarrollador, tipo de modelo, datos de entrenamiento, hiperparametros, regimen de precision y resultados de evaluacion. El unico dato duro es el recuento de parametros (596.049.920) y el formato de serializacion (safetensors), compatibles con la clase de 0,6 B de la familia Qwen3, aunque el autor no declara el modelo base.
 
-Dos observaciones tecnicas pueden hacerse a partir de los metadatos. Primera: el tamano del repositorio (2,4 GB) es aproximadamente cuatro veces el peso teorico de los parametros en bf16 (unos 1,19 GB) y coincide con el de una serializacion en fp32 (2,38 GB), lo que sugiere pesos guardados en precision completa, si bien no se ha confirmado. Segunda: la etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, que aparece de forma automatica en la plantilla de model card de HuggingFace; no es una referencia al articulo de presentacion del modelo y no debe interpretarse como tal. No se dispone de informacion sobre volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones de decodificacion.
+Dos observaciones tecnicas pueden hacerse a partir de los metadatos. Primera: el tamano del repositorio (2,4 GB) es aproximadamente cuatro veces el peso teorico de los parametros en bf16 (unos 1,19 GB) y coincide con el de una serializacion en fp32 (2,38 GB), lo que sugiere pesos guardados en precision completa, si bien no se ha confirmado. Segunda: la etiqueta `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono, que aparece de forma automatica en la plantilla de model card de Hugging Face; no es una referencia al articulo de presentacion del modelo y no debe interpretarse como tal. No se dispone de informacion sobre volumen de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones de decodificacion.
 
 ## Capacidades
 
@@ -104,9 +104,9 @@ Frente a estas alternativas, la unica ventaja objetiva de `qwen-metaphor-unke-ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-17
+- Modelo en Hugging Face: https://huggingface.co/luisastellet/qwen-metaphor-unke-camada-17
 - Repositorio hermano sin sufijo de capa: https://huggingface.co/luisastellet/qwen-metaphor-unke
-- Repositorio hermano `camada-5` en HuggingFace (referenciado en la busqueda): https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5
+- Repositorio hermano `camada-5` en Hugging Face (referenciado en la busqueda): https://featherless.ai/models/luisastellet/qwen-metaphor-unke-camada-5
 - Ficha del modelo `qwen-metaphor` en Featherless: https://featherless.ai/models/luisastellet/qwen-metaphor
 - Articulo citado en la plantilla de la model card (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact#compute

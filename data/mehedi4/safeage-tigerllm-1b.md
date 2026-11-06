@@ -76,9 +76,9 @@ Matriz de confusión: 732 verdaderos negativos, 24 falsos positivos, 35 falsos n
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SafeAge-TigerLLM-1B | 1B (base) + 13,05 M entrenables | 512 tokens | Clasificación binaria de seguridad contextual (bn, banglish, en) | cc-by-4.0-and-gemma-terms | HuggingFace, adaptador PEFT |
-| SafeAge Guard | 1,7B (backbone Qwen3-1.7B) | No disponible | Clasificación binaria de seguridad contextual (misma tarea) | No disponible en la información proporcionada | HuggingFace (`mehedi4/SafeAge-Guard`) |
-| TigerLLM-1B-it (base) | 1B | No disponible | Generación de texto instructiva en bengalí | No disponible en la información proporcionada | HuggingFace (`md-nishat-008/TigerLLM-1B-it`) |
+| SafeAge-TigerLLM-1B | 1B (base) + 13,05 M entrenables | 512 tokens | Clasificación binaria de seguridad contextual (bn, banglish, en) | cc-by-4.0-and-gemma-terms | Hugging Face, adaptador PEFT |
+| SafeAge Guard | 1,7B (backbone Qwen3-1.7B) | No disponible | Clasificación binaria de seguridad contextual (misma tarea) | No disponible en la información proporcionada | Hugging Face (`mehedi4/SafeAge-Guard`) |
+| TigerLLM-1B-it (base) | 1B | No disponible | Generación de texto instructiva en bengalí | No disponible en la información proporcionada | Hugging Face (`md-nishat-008/TigerLLM-1B-it`) |
 
 El artículo señala que el análisis emparejado no establece una diferencia agrupada clara entre este baseline y SafeAge Guard, por lo que la elección entre ambos no puede basarse en los datos publicados. Frente al modelo base TigerLLM-1B-it, la diferencia es de tarea: el base genera texto y este artefacto clasifica.
 
@@ -96,7 +96,7 @@ El artículo señala que el análisis emparejado no establece una diferencia agr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehedi4/SafeAge-TigerLLM-1B
+- Modelo en Hugging Face: https://huggingface.co/mehedi4/SafeAge-TigerLLM-1B
 - Modelo base TigerLLM-1B-it: https://huggingface.co/md-nishat-008/TigerLLM-1B-it/tree/49c2001b637a84d997dbe34302fe527d70782097
 - SafeAge Guard (modelo comparado): https://huggingface.co/mehedi4/SafeAge-Guard
 - Conjunto de datos SafeAge (DOI): https://doi.org/10.5281/zenodo.23622437

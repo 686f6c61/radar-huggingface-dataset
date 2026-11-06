@@ -20,7 +20,7 @@ La información disponible no permite confirmar la arquitectura del modelo base,
 | Idiomas soportados | Inglés (`en`); no se declaran otros idiomas |
 | Licencia | No disponible |
 | Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye para la librería `transformers` |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 59,6 GB |
 | Descargas | 154 |
 | Likes | 0 |
@@ -107,7 +107,7 @@ No se han identificado en la información suministrada otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/cast-interleaved-7b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/cast-interleaved-7b-GGUF
 - Modelo base: https://huggingface.co/mrohan/cast-interleaved-7b
 - Página de descargas y resumen del cuantizador: https://hf.tst.eu/model#cast-interleaved-7b-GGUF
 - Gráfico comparativo de calidad de cuantizaciones: https://www.nethype.de/huggingface_embed/quantpplgraph.png

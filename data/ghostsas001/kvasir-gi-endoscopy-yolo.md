@@ -83,8 +83,8 @@ Advertencia metodológica recogida en la propia model card: cada trabajo usa su 
 
 | Modelo | Tarea | Parámetros | Entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kvasir-gi-endoscopy-yolo (este modelo) | Clasificación de 8 clases, Kvasir v1 | no disponible | 224 px | Accuracy 95,50 %, MCC 0,949, macro F1 95,50 % | AGPL-3.0 (uso solo investigación/educativo) | HuggingFace |
-| kvasir-gi-endoscopy-siglip (modelo compañero) | Clasificación de 8 clases, Kvasir v1 | no disponible | no disponible | no disponible en la información proporcionada | no disponible | HuggingFace |
+| kvasir-gi-endoscopy-yolo (este modelo) | Clasificación de 8 clases, Kvasir v1 | no disponible | 224 px | Accuracy 95,50 %, MCC 0,949, macro F1 95,50 % | AGPL-3.0 (uso solo investigación/educativo) | Hugging Face |
+| kvasir-gi-endoscopy-siglip (modelo compañero) | Clasificación de 8 clases, Kvasir v1 | no disponible | no disponible | no disponible en la información proporcionada | no disponible | Hugging Face |
 | Ensemble Inception de la literatura | Clasificación, Kvasir v1 | no disponible | no disponible | MCC 0,903 | no disponible | Publicación académica |
 | Mejor baseline de Asperti y Mastronardo (2017) | Clasificación, Kvasir v1 | no disponible | no disponible | MCC 0,711 | no disponible | Publicación académica (arXiv:1712.03689) |
 
@@ -105,7 +105,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ghostsas001/kvasir-gi-endoscopy-yolo
+- Modelo en Hugging Face: https://huggingface.co/ghostsas001/kvasir-gi-endoscopy-yolo
 - Modelo compañero SigLIP: https://huggingface.co/ghostsas001/kvasir-gi-endoscopy-siglip
 - Repositorio del proyecto en GitHub: https://github.com/Elghoudani/kvasir-gi-endoscopy-classification
 - Documentación de Ultralytics: https://docs.ultralytics.com

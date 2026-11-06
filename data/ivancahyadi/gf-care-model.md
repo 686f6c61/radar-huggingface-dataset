@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ivancahyadi/gf-care-model` es un modelo de visión por computadora orientado a la segmentación de imágenes de fondo de ojo para la evaluación del glaucoma, según el repositorio asociado `TjengIvanCahyadi/gf-care`. El proyecto GF-Care (Glaucoma Fundus - Cup-to-disc ratio Assessment for Retinal Evaluation) tiene como objetivo segmentar el disco óptico y la copa para calcular la relación copa-disco (CDR), un indicador clave en la detección temprana del glaucoma. Sin embargo, la ficha en HuggingFace es mínima: solo incluye la licencia MIT y la región (US), sin detalles técnicos sobre arquitectura, parámetros o entrenamiento. A fecha de consulta, el modelo no tiene descargas ni valoraciones, lo que sugiere que es un artefacto reciente o poco difundido.
+El modelo `ivancahyadi/gf-care-model` es un modelo de visión por computadora orientado a la segmentación de imágenes de fondo de ojo para la evaluación del glaucoma, según el repositorio asociado `TjengIvanCahyadi/gf-care`. El proyecto GF-Care (Glaucoma Fundus - Cup-to-disc ratio Assessment for Retinal Evaluation) tiene como objetivo segmentar el disco óptico y la copa para calcular la relación copa-disco (CDR), un indicador clave en la detección temprana del glaucoma. Sin embargo, la ficha en Hugging Face es mínima: solo incluye la licencia MIT y la región (US), sin detalles técnicos sobre arquitectura, parámetros o entrenamiento. A fecha de consulta, el modelo no tiene descargas ni valoraciones, lo que sugiere que es un artefacto reciente o poco difundido.
 
 La relevancia de este modelo radica en su potencial aplicación en el ámbito médico, donde la segmentación automática de estructuras oculares puede apoyar el diagnóstico del glaucoma. No obstante, la ausencia de documentación técnica y de benchmarks públicos limita su evaluación objetiva. Esta ficha recoge la información disponible y señala explícitamente los datos no publicados.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su potencial aplicación en el ámbito m�
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento ni el proceso de optimización. El repositorio GitHub asociado indica que el proyecto GF-Care emplea técnicas de deep learning para la segmentación semántica de imágenes de fondo de ojo, pero no se especifica si el checkpoint alojado en HuggingFace corresponde a una arquitectura concreta (p. ej., U-Net, DeepLab, etc.) ni el conjunto de datos utilizado. Tampoco se detalla si se aplicaron técnicas como transfer learning, aumento de datos o validación clínica. Por tanto, cualquier afirmación sobre el entrenamiento sería especulativa.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento ni el proceso de optimización. El repositorio GitHub asociado indica que el proyecto GF-Care emplea técnicas de deep learning para la segmentación semántica de imágenes de fondo de ojo, pero no se especifica si el checkpoint alojado en Hugging Face corresponde a una arquitectura concreta (p. ej., U-Net, DeepLab, etc.) ni el conjunto de datos utilizado. Tampoco se detalla si se aplicaron técnicas como transfer learning, aumento de datos o validación clínica. Por tanto, cualquier afirmación sobre el entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -64,6 +64,6 @@ No disponible. No se han encontrado comparaciones con otros modelos de segmentac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ivancahyadi/gf-care-model
+- Hugging Face: https://huggingface.co/ivancahyadi/gf-care-model
 - Repositorio GitHub: https://github.com/TjengIvanCahyadi/gf-care
 - Notebooks del proyecto: https://github.com/TjengIvanCahyadi/gf-care/tree/main/notebooks

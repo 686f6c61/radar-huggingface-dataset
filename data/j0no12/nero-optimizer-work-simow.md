@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — SimOW es un checkpoint experimental de investigacion publicado por el usuario j0no12 en HuggingFace. No es un modelo de lenguaje orientado a uso general, sino el artefacto final de la rama «SimOW» de un barrido comparativo de optimizadores denominado Nero Optimizer Work. El objetivo declarado es hacer reproducible la comparacion entre optimizadores bajo un protocolo congelado, no ofrecer capacidades de generacion utiles.
+Nero Optimizer Work — SimOW es un checkpoint experimental de investigacion publicado por el usuario j0no12 en Hugging Face. No es un modelo de lenguaje orientado a uso general, sino el artefacto final de la rama «SimOW» de un barrido comparativo de optimizadores denominado Nero Optimizer Work. El objetivo declarado es hacer reproducible la comparacion entre optimizadores bajo un protocolo congelado, no ofrecer capacidades de generacion utiles.
 
 Se trata de un decoder denso de 6 bloques con flujo residual de 128 dimensiones, cabezas de atencion de 32 dimensiones y un MLP con compuerta de 148 dimensiones, sobre un vocabulario de solo 2.048 tokens. El modelo almacena aproximadamente 999.680 parametros y fue entrenado durante 500 millones de tokens con una longitud de contexto de 128 tokens, usando Apple MLX como backend. La perdida final de entrenamiento registrada es de 5,371432.
 
@@ -98,5 +98,5 @@ Como referencia interna, la comparacion pertinente no es contra modelos de propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simow
+- Modelo en Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simow
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la busqueda web realizada; los resultados devueltos no guardaban relacion con este artefacto.

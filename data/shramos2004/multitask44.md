@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shramos2004/multitask44` es un repositorio experimental publicado en HuggingFace por el usuario shramos2004 que contiene un esqueleto de codigo basado en la arquitectura Blip orientado a tareas multitarea. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El peso real declarado en el archivo de safetensors es de 49.600 parametros, por lo que el artefacto es de escala minima y su utilidad principal es la inspeccion de cambios de arquitectura antes de lanzar un entrenamiento completo.
+`shramos2004/multitask44` es un repositorio experimental publicado en Hugging Face por el usuario shramos2004 que contiene un esqueleto de codigo basado en la arquitectura Blip orientado a tareas multitarea. No se trata de un modelo entrenado ni evaluado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El peso real declarado en el archivo de safetensors es de 49.600 parametros, por lo que el artefacto es de escala minima y su utilidad principal es la inspeccion de cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El repositorio incluye, ademas de los pesos, los archivos `train.py` (artefacto principal), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto) y este README. La arquitectura declarada combina escala "huge" en la configuracion generada, atencion dispersa (sparse attention), fusion con compuertas (gated fusion), activacion approx gelu y normalizacion groupnorm. La receta por defecto usa el optimizador Adam con un schedule polinomial, valores de partida que el autor advierte explicitamente que no constituyen evidencia de un entrenamiento completado.
 
@@ -34,7 +34,7 @@ En cuanto al entrenamiento, no hay datos disponibles: no se indica numero de tok
 - Soporte de agentes o razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (el campo de idiomas no esta cumplimentado).
 - Capacidad especial: la model card menciona que es una base para tareas multitarea y que el codigo contiene un ejemplo ejecutable o punto de entrada de entrenamiento, pero sin resultados asociados.
-- Nota operativa: al ser una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarla.
+- Nota operativa: al ser una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarla.
 
 ## Casos de uso
 
@@ -64,7 +64,7 @@ La comparacion directa no es posible en terminos de rendimiento, porque este rep
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shramos2004/multitask44 | 49.600 | no disponible | No (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| shramos2004/multitask44 | 49.600 | no disponible | No (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | BLIP-2 (Salesforce) | no disponible en la informacion proporcionada | no disponible | Si | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | CLIP (OpenAI) | no disponible en la informacion proporcionada | no disponible | Si | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Modelos de vision-lenguaje genericos | no disponible en la informacion proporcionada | no disponible | Si | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -79,11 +79,11 @@ Alternativa practica: si el objetivo es una tarea real de vision-lenguaje o mult
 - Riesgo de alucinacion: no aplicable en el estado actual, ya que el modelo no genera salidas entrenadas.
 - No hay idiomas declarados ni longitud de contexto documentada.
 - Licencia BSD-3-Clause para el codigo y los pesos; el autor recomienda revisar por separado los terminos de las fuentes de datos si se combina con datasets externos.
-- Implementacion personalizada: las APIs automaticas de carga de HuggingFace no funcionaran sin un adaptador explicito.
+- Implementacion personalizada: las APIs automaticas de carga de Hugging Face no funcionaran sin un adaptador explicito.
 - Cualquier resultado futuro obtenido con un checkpoint entrenado debera documentarse por separado de los valores por defecto que se envian en este repositorio.
 - Estado del repositorio: 0 descargas y 0 "likes" en el momento de la consulta, y un peso de repositorio de 0,0 GB, coherente con la ausencia de un artefacto entrenado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shramos2004/multitask44
+- Modelo en Hugging Face: https://huggingface.co/shramos2004/multitask44
 - No se han encontrado en la busqueda web enlaces relevantes a este modelo: los resultados devueltos corresponden a paginas de producto y plataforma de OpenAI (GPT-5, ChatGPT, OpenAI Platform) sin relacion con `shramos2004/multitask44`, Blip ni con el autor.

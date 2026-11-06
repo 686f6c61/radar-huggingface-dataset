@@ -55,6 +55,6 @@ No disponible. No se dispone de datos para comparar con otros modelos de VQA, ya
 
 ## Enlaces
 
-- [HuggingFace: nicholashjw/paper_015316288_visual_question_answering](https://huggingface.co/nicholashjw/paper_015316288_visual_question_answering)
+- [Hugging Face: nicholashjw/paper_015316288_visual_question_answering](https://huggingface.co/nicholashjw/paper_015316288_visual_question_answering)
 - [Visual Question Answering: A Survey of Methods, Datasets, Evaluation (ACM)](https://dl.acm.org/doi/10.1145/3728635)
 - [VQA: Visual Question Answering (arXiv)](https://arxiv.org/pdf/1505.00468)

@@ -100,6 +100,6 @@ La comparación se limita a la precisión de enrutamiento y a la tasa de respues
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daviestechlabs/decider-2b-homelab-router
+- Modelo en Hugging Face: https://huggingface.co/daviestechlabs/decider-2b-homelab-router
 - Modelo base Mapika/decider-2b: https://huggingface.co/Mapika/decider-2b
 - Interfaz upstream (revisión fijada `533964dae8be954c5b5e19fa4948e48408094c1e`): https://huggingface.co/Mapika/decider-2b/blob/533964dae8be954c5b5e19fa4948e48408094c1e/README.md#usage

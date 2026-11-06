@@ -72,8 +72,8 @@ No se han publicado otros resultados (MMLU, HumanEval, GSM8K u otros) en la info
 
 | Modelo | Parámetros | Contexto | F1 after resolver (test clario-synth-v3) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Clario Gemma 4 E4B LoRA (este) | Adaptador LoRA r 16 sobre base E4B | No disponible | 0,693 | Gemma | HuggingFace (seawer/clario-gemma-4-e4b-lora) |
-| Gemma 4 E4B IT sin fine-tune | Base E4B | No disponible | 0,356 | Gemma | HuggingFace (google/gemma-4-E4B-it) |
+| Clario Gemma 4 E4B LoRA (este) | Adaptador LoRA r 16 sobre base E4B | No disponible | 0,693 | Gemma | Hugging Face (seawer/clario-gemma-4-e4b-lora) |
+| Gemma 4 E4B IT sin fine-tune | Base E4B | No disponible | 0,356 | Gemma | Hugging Face (google/gemma-4-E4B-it) |
 | Gemma 4 31B IT (AMD Token Factory) | 31B (según nombre) | No disponible | 0,471 | Gemma | API AMD Token Factory |
 
 El resultado relevante es que un adaptador pequeño sobre un modelo de clase 4B supera a un modelo de 31B en esta tarea concreta (0,693 frente a 0,471), y multiplica por casi dos el F1 del base sin fine-tune. Modelos comparables de extracción clínica con HPO: no disponible en la información proporcionada.
@@ -92,7 +92,7 @@ El resultado relevante es que un adaptador pequeño sobre un modelo de clase 4B 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/seawer/clario-gemma-4-e4b-lora
+- Hugging Face del adaptador: https://huggingface.co/seawer/clario-gemma-4-e4b-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/m0rtyddd/clario-synth-v3
 - Repositorio del proyecto Clario: https://github.com/akirykouski/clario-amd

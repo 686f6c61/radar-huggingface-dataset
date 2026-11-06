@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`spr-qwen2.5-7b-trained` es un ajuste fino (fine-tune) del modelo `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, publicado por el usuario Mahakisore77 en HuggingFace bajo licencia Apache-2.0. Se trata, por tanto, de una variante derivada de Qwen2.5-7B-Instruct, la familia de modelos densos de 7.600 millones de parametros desarrollada por Alibaba Qwen, entrenada aqui con la libreria Unsloth, que optimiza el entrenamiento supervisado y el RLHF/DPO reduciendo el consumo de memoria y acelerando el proceso. El modelo se distribuye en formato safetensors y es compatible con Transformers y Text Generation Inference (TGI).
+`spr-qwen2.5-7b-trained` es un ajuste fino (fine-tune) del modelo `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`, publicado por el usuario Mahakisore77 en Hugging Face bajo licencia Apache-2.0. Se trata, por tanto, de una variante derivada de Qwen2.5-7B-Instruct, la familia de modelos densos de 7.600 millones de parametros desarrollada por Alibaba Qwen, entrenada aqui con la libreria Unsloth, que optimiza el entrenamiento supervisado y el RLHF/DPO reduciendo el consumo de memoria y acelerando el proceso. El modelo se distribuye en formato safetensors y es compatible con Transformers y Text Generation Inference (TGI).
 
 El repositorio no incluye informacion sobre el dataset de ajuste, el numero de tokens de entrenamiento, la tecnica de alineacion empleada ni los hiperparametros utilizados. La model card se limita a indicar que el entrenamiento fue "2x faster with Unsloth" y a declarar el modelo base. El tamano del repositorio (0,3 GB) es muy inferior al esperado para los pesos completos de un modelo de 7.000 millones de parametros (aproximadamente 15 GB en FP16 o 4-5 GB en 4 bits), lo que sugiere que el repositorio podria contener unicamente un adaptador LoRA o un subconjunto parcial de pesos, aunque las etiquetas del repositorio no declaran PEFT de forma explicita.
 
@@ -54,7 +54,7 @@ La unica afirmacion tecnica verificable de la model card es que el entrenamiento
 - Fine-tuning posterior (continuacion del ajuste): dado que el repositorio podria contener un adaptador y no pesos completos, serviria como punto de partida para seguir ajustando sobre el mismo dominio, siempre que se verifique primero la integridad de los archivos.
 - Generacion de texto tecnico en ingles: redaccion de documentacion, resumenes de articulos y reformulacion de parrafos, tareas donde un modelo de 7.000 millones de parametros ofrece una relacion calidad-coste razonable en inferencia local.
 - Desarrollo asistido por codigo en entornos sin conexion: desplegado con llama.cpp u Ollama en un portatil con GPU de 8-12 GB, puede completar fragmentos y explicar codigo sin enviar datos a servicios externos, sujeto a la disponibilidad de pesos en formato GGUF, que el repositorio no publica.
-- Evaluacion comparativa de ajustes comunitarios: util como muestra de un fine-tune no documentado, para estudiar la reproducibilidad de los modelos publicados en HuggingFace sin model card completa.
+- Evaluacion comparativa de ajustes comunitarios: util como muestra de un fine-tune no documentado, para estudiar la reproducibilidad de los modelos publicados en Hugging Face sin model card completa.
 - Base para investigacion sobre sesgos y alucinacion: al carecer de evaluacion publicada, sirve como caso para medir como un ajuste con datos desconocidos puede alterar el comportamiento de alineacion del modelo original.
 
 ## Benchmarks y rendimiento
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| spr-qwen2.5-7b-trained | ~7,6 B (heredado) | 32.768 (131.072 con YaRN) | Apache-2.0 | HuggingFace, 0 descargas | Fine-tune con Unsloth; entrenamiento no documentado |
+| spr-qwen2.5-7b-trained | ~7,6 B (heredado) | 32.768 (131.072 con YaRN) | Apache-2.0 | Hugging Face, 0 descargas | Fine-tune con Unsloth; entrenamiento no documentado |
 | Qwen2.5-7B-Instruct | 7,6 B | 32.768 (131.072 con YaRN) | Apache-2.0 | Amplia, modelo de referencia | Base directa de este ajuste; benchmarks publicados por Alibaba |
 | Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Apache-2.0 | Amplia | Alternativa densa de tamano similar, con soporte de function calling |
 | Llama-3.1-8B-Instruct | 8,03 B | 128.000 | Llama 3.1 Community License | Amplia | Contexto nativo mucho mayor; licencia con restricciones para mas de 700 millones de usuarios mensuales |
@@ -100,8 +100,8 @@ No se dispone de datos de rendimiento de `spr-qwen2.5-7b-trained`, por lo que la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mahakisore77/spr-qwen2.5-7b-trained
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
+- Repositorio en Hugging Face: https://huggingface.co/Mahakisore77/spr-qwen2.5-7b-trained
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Libreria Unsloth (mencionada en la model card): https://github.com/unslothai/unsloth
 - Informe tecnico de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

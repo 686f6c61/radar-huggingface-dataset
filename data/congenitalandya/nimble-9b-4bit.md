@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CongenitalAndya/nimble-9b-4bit es un repositorio alojado en HuggingFace bajo el identificador de autor CongenitalAndya. En el momento de la consulta, la ficha publica unicamente la licencia Apache 2.0 y la etiqueta de region "us": no incluye model card descriptiva, pipeline declarado, idiomas soportados, ni documentacion sobre arquitectura, datos de entrenamiento o proceso de alineacion. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (24 de septiembre de 2026), lo que indica una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad.
+CongenitalAndya/nimble-9b-4bit es un repositorio alojado en Hugging Face bajo el identificador de autor CongenitalAndya. En el momento de la consulta, la ficha publica unicamente la licencia Apache 2.0 y la etiqueta de region "us": no incluye model card descriptiva, pipeline declarado, idiomas soportados, ni documentacion sobre arquitectura, datos de entrenamiento o proceso de alineacion. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado en la misma marca temporal (24 de septiembre de 2026), lo que indica una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad.
 
 El propio identificador sugiere que se trata de un modelo de aproximadamente 9.000 millones de parametros en una variante cuantizada a 4 bits, pero esta lectura procede exclusivamente de la nomenclatura del nombre y no esta confirmada por ninguna fuente documental del repositorio. No se dispone de informacion sobre la arquitectura subyacente, la longitud de contexto, el tokenizador ni la familia de modelos de la que deriva.
 
@@ -100,6 +100,6 @@ Las cifras siguientes son estimaciones derivadas del identificador (aproximadame
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CongenitalAndya/nimble-9b-4bit
+- Repositorio en Hugging Face: https://huggingface.co/CongenitalAndya/nimble-9b-4bit
 - Perfil del autor: https://huggingface.co/CongenitalAndya
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyttic/hmt-htrvt-stroke3-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) entrenado con arquitectura CTC y publicado por el autor `cyttic` en HuggingFace. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se comparan distintas estrategias de aumento sobre un mismo pipeline de reconocimiento. La variante concreta que nos ocupa usa el modelo base `htrvt`, el aumento `stroke3` y la semilla 43.
+`cyttic/hmt-htrvt-stroke3-s43` es un modelo de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) entrenado con arquitectura CTC y publicado por el autor `cyttic` en Hugging Face. Forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se comparan distintas estrategias de aumento sobre un mismo pipeline de reconocimiento. La variante concreta que nos ocupa usa el modelo base `htrvt`, el aumento `stroke3` y la semilla 43.
 
 El modelo está especializado en hebreo (`he`) y cuenta con 13.821.574 parámetros, un tamaño muy contenido que lo sitúa en la categoría de modelos ligeros para tareas de visión documental. Se distribuye en formato `safetensors` con licencia MIT, lo que facilita su uso comercial y su integración en pipelines de digitalización de documentos.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | CER (HHD Option-B) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-htrvt-stroke3-s43 | 13,8 M | no disponible | 0,0596 | MIT | HuggingFace |
+| cyttic/hmt-htrvt-stroke3-s43 | 13,8 M | no disponible | 0,0596 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-stroke3-s43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-stroke3-s43
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

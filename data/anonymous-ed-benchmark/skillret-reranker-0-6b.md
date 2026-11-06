@@ -97,10 +97,10 @@ No se han publicado resultados de benchmarks de propósito general (MMLU, HumanE
 | Modelo | Parametros | Tipo | Contexto | NDCG@5 (SkillRet) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | SkillRet-Reranker-0.6B | 0,6 B | Cross-encoder de reordenación | 8.192 tokens | 0,8610 | Apache 2.0 | Pesos en safetensors, 3 descargas |
-| Qwen/Qwen3-Reranker-0.6B | 0,6 B | Cross-encoder de reordenación (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| SkillRet-Embedding-8B | 8 B | Recuperador bi-encoder (primera etapa) | no disponible en la informacion proporcionada | 0,8458 (sin reordenacion) | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| SkillRet-Embedding-0.6B | 0,6 B | Recuperador bi-encoder (primera etapa) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| Qwen3-Embedding-8B | 8 B | Recuperador bi-encoder de propósito general | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| Qwen/Qwen3-Reranker-0.6B | 0,6 B | Cross-encoder de reordenación (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| SkillRet-Embedding-8B | 8 B | Recuperador bi-encoder (primera etapa) | no disponible en la informacion proporcionada | 0,8458 (sin reordenacion) | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| SkillRet-Embedding-0.6B | 0,6 B | Recuperador bi-encoder (primera etapa) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| Qwen3-Embedding-8B | 8 B | Recuperador bi-encoder de propósito general | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 La comparación directa con alternativas de reordenación genéricas (por ejemplo, bge-reranker o Cohere Rerank) no está disponible en la información proporcionada, ya que el autor solo publica resultados sobre el benchmark SkillRet.
 
@@ -119,7 +119,7 @@ La comparación directa con alternativas de reordenación genéricas (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-ed-benchmark/SKILLRET-Reranker-0.6B
+- Modelo en Hugging Face: https://huggingface.co/anonymous-ed-benchmark/SKILLRET-Reranker-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Recuperador de primera etapa (0,6 B): https://huggingface.co/anonymous-ed-benchmark/SKILLRET-Embedding-0.6B
 - Recuperador de primera etapa (8 B): https://huggingface.co/anonymous-ed-benchmark/SKILLRET-Embedding-8B

@@ -66,7 +66,7 @@ No disponible. El repositorio no contiene un modelo funcional comparable con alt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anwulandari/simple-detector
+- Repositorio Hugging Face: https://huggingface.co/Anwulandari/simple-detector
 - Articulo relacionado (arXiv, no confirmado como vinculado): https://arxiv.org/html/2606.05725v1
 - Proyecto de tracking en GitHub (independiente): https://github.com/facias914/A-Simple-Detector-is-a-Strong-Tracker
 - Semantic Scholar (articulo sobre deteccion de extraccion de modelos): https://www.semanticscholar.org/paper/3314f4868f252aa218f5cc305248bab9e295cbb1

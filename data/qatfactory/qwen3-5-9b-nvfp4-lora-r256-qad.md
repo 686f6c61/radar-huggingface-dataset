@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Qwen3.5-9B-NVFP4-LoRA-r256-QAD es una versión cuantizada del modelo Qwen/Qwen3.5-9B publicada por el usuario qatfactory en HuggingFace. Se trata de un checkpoint sometido a entrenamiento con reconocimiento de cuantización (QAT, quantization-aware training) sobre una adaptación LoRA con rango 256, cuyo resultado se exporta en formato NVFP4 (punto flotante de 4 bits de NVIDIA) y se empaqueta con compressed-tensors para su uso con vLLM. El repositorio tiene 9.409.813.744 parámetros y ocupa 8,9 GB.
+Qwen3.5-9B-NVFP4-LoRA-r256-QAD es una versión cuantizada del modelo Qwen/Qwen3.5-9B publicada por el usuario qatfactory en Hugging Face. Se trata de un checkpoint sometido a entrenamiento con reconocimiento de cuantización (QAT, quantization-aware training) sobre una adaptación LoRA con rango 256, cuyo resultado se exporta en formato NVFP4 (punto flotante de 4 bits de NVIDIA) y se empaqueta con compressed-tensors para su uso con vLLM. El repositorio tiene 9.409.813.744 parámetros y ocupa 8,9 GB.
 
 El modelo hereda la arquitectura y capacidades del Qwen3.5-9B original (familia Qwen de Alibaba), pero el interés técnico de esta publicación está en el pipeline de cuantización: combina LoRA de alto rango con QAT para preservar la calidad del modelo base tras reducir los pesos a 4 bits en el formato NVFP4, orientado a GPUs Blackwell de NVIDIA. Está pensado para despliegues de inferencia de alto rendimiento con vLLM, donde el formato NVFP4 permite aprovechar los kernels nativos de cuantización de esa arquitectura.
 
-La ficha se basa exclusivamente en los metadatos públicos del repositorio de HuggingFace. No se ha publicado información sobre el dataset de entrenamiento, los resultados de benchmarks ni los detalles del proceso QAT más allá de lo que indican los tags. El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace para descargar los pesos.
+La ficha se basa exclusivamente en los metadatos públicos del repositorio de Hugging Face. No se ha publicado información sobre el dataset de entrenamiento, los resultados de benchmarks ni los detalles del proceso QAT más allá de lo que indican los tags. El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face para descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qatfactory/Qwen3.5-9B-NVFP4-LoRA-r256-QAD | 9,4 B | no disponible | NVFP4 (QAT + LoRA r256) | Apache 2.0 | Gated en HuggingFace |
-| Qwen/Qwen3.5-9B (base) | 9,4 B | no disponible | bf16/fp16 | Apache 2.0 | Publico en HuggingFace |
+| qatfactory/Qwen3.5-9B-NVFP4-LoRA-r256-QAD | 9,4 B | no disponible | NVFP4 (QAT + LoRA r256) | Apache 2.0 | Gated en Hugging Face |
+| Qwen/Qwen3.5-9B (base) | 9,4 B | no disponible | bf16/fp16 | Apache 2.0 | Publico en Hugging Face |
 | Otras cuantizaciones de Qwen3.5-9B (GPTQ, AWQ, GGUF) | 9,4 B | no disponible | 4-8 bits | Apache 2.0 | Segun publicador |
 
 La comparación con alternativas cuantizadas de la misma familia no puede completarse con datos de rendimiento porque no se han publicado benchmarks para este checkpoint.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Sin benchmarks publicados: no hay evidencia pública de la degradación de calidad respecto al Qwen3.5-9B en bf16.
 - Ambigüedad en la cuantización: el tag "8-bit" y la designación NVFP4 del nombre no coinciden; verificar la configuración real antes de desplegar.
 - Dependencia de hardware: NVFP4 está optimizado para GPUs NVIDIA Blackwell; en otras arquitecturas el rendimiento puede degradarse o no estar soportado.
@@ -81,7 +81,7 @@ La comparación con alternativas cuantizadas de la misma familia no puede comple
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r256-QAD
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/Qwen3.5-9B-NVFP4-LoRA-r256-QAD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Librería compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - vLLM: https://github.com/vllm-project/vllm

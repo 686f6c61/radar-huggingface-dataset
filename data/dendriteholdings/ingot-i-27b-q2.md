@@ -21,7 +21,7 @@ La información publicada es escasa: no hay licencia declarada, ni idiomas, ni l
 | Licencia | No disponible (la model card no la declara; la licencia del modelo profesor tampoco se indica) |
 | Formato de pesos | GGUF (`Ingot-I-27B-Q2.gguf`), 7,2 GB de repo; requiere el fork PrismML de llama.cpp en el commit `e3de715222b2667c54a267441159a5729f11155e` |
 | Vision | No incluida en el archivo; opcional mediante `Ternary-Bonsai-2-27B-mmproj-Q8_0.gguf` o `-BF16.gguf` de prism-ml/Ternary-Bonsai-2-27B-gguf (revision `b072e1d3b35a0a630cece372c2127528e0994386`) |
-| Fecha de publicacion en HuggingFace | 2026-10-22 (según metadatos; actualizado el mismo día) |
+| Fecha de publicacion en Hugging Face | 2026-10-22 (según metadatos; actualizado el mismo día) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -32,7 +32,7 @@ La innovación técnica destacable es la rotación de Hadamard aplicada en el la
 
 ## Capacidades
 
-- Generación de texto conversacional (tag `conversational` en HuggingFace).
+- Generación de texto conversacional (tag `conversational` en Hugging Face).
 - Fidelidad medida al profesor BF16: KL de 0,12074 por token de respuesta y distancia de estados ocultos de 0,3971 en la evaluación del subnet.
 - Servido mediante `llama-server` con plantilla de chat vía `--jinja`, lo que expone un endpoint compatible con la API de OpenAI (tag `endpoints_compatible`).
 - Entrada de imágenes solo si se añade el mmproj de Ternary-Bonsai-2-27B como proyector; la model card advierte que ese proyector se hizo para genesis y que la calidad de imagen no está probada.
@@ -93,7 +93,7 @@ No se dispone de datos para comparar con modelos de propósito general de tamañ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dendriteholdings/Ingot-I-27B-Q2
+- Modelo en Hugging Face: https://huggingface.co/dendriteholdings/Ingot-I-27B-Q2
 - Modelo base de layout y tokenizer: https://huggingface.co/dendriteholdings/Ingot-genesis-27B-Q2
 - Fork de llama.cpp usado en la evaluación: https://github.com/PrismML-Eng/llama.cpp (commit `e3de715222b2667c54a267441159a5729f11155e`)
 - Repositorio del proyector visual: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf

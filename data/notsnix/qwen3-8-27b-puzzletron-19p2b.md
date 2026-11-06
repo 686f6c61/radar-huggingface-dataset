@@ -4,7 +4,7 @@
 
 El modelo `notSnix/Qwen3.8-27B-Puzzletron-19p2B` es una variante podada (pruned) del modelo Qwen3.8-27B de Alibaba, desarrollada por el usuario notSnix. Se trata de un modelo de lenguaje y visión (image-text-to-text) que reduce los 27 000 millones de parámetros originales a aproximadamente 19 200 millones (según la nomenclatura del nombre), utilizando la herramienta NVIDIA ModelOpt para el proceso de poda. La arquitectura resultante es híbrida, incorporando capas del tipo gated-deltanet, una modificación que busca mejorar la eficiencia en el procesamiento de secuencias largas.
 
-Este modelo se publica con licencia Apache 2.0 (según los tags de HuggingFace, aunque el campo oficial de licencia figura como no disponible) y está pensado para entornos donde se necesita un equilibrio entre capacidad y requisitos de hardware, permitiendo su ejecución en GPUs de consumo o estaciones de trabajo. Al ser una versión podada, hereda las capacidades del modelo base (razonamiento, visión, tool calling, etc.) pero con una posible degradación de rendimiento que el propio autor señala con la etiqueta `needs-distillation` (requiere destilación adicional para recuperar precisión).
+Este modelo se publica con licencia Apache 2.0 (según los tags de Hugging Face, aunque el campo oficial de licencia figura como no disponible) y está pensado para entornos donde se necesita un equilibrio entre capacidad y requisitos de hardware, permitiendo su ejecución en GPUs de consumo o estaciones de trabajo. Al ser una versión podada, hereda las capacidades del modelo base (razonamiento, visión, tool calling, etc.) pero con una posible degradación de rendimiento que el propio autor señala con la etiqueta `needs-distillation` (requiere destilación adicional para recuperar precisión).
 
 La relevancia de este modelo radica en su tamaño intermedio: con ~19B parámetros, cabe en tarjetas gráficas con 24 GB de VRAM en cuantización FP16, lo que lo hace accesible para desarrolladores e investigadores que no disponen de infraestructura de centro de datos. Sin embargo, al ser un modelo de la comunidad con cero descargas y sin benchmarks publicados, debe considerarse experimental y no apto para producción sin una evaluación previa.
 
@@ -71,7 +71,7 @@ La comparativa se limita a modelos de la misma familia o tamaño similar. No hay
 
 - El modelo está etiquetado como `needs-distillation`, lo que indica que no ha sido completamente optimizado tras la poda y que su rendimiento puede ser significativamente inferior al del modelo base.
 - No se han publicado benchmarks ni evaluaciones independientes; cualquier uso en producción requiere una validación exhaustiva.
-- La licencia no está confirmada en el campo oficial de HuggingFace, aunque el tag sugiere Apache 2.0. Se debe verificar antes de un uso comercial.
+- La licencia no está confirmada en el campo oficial de Hugging Face, aunque el tag sugiere Apache 2.0. Se debe verificar antes de un uso comercial.
 - La arquitectura híbrida con gated-deltanet puede no ser compatible con todas las librerías de inferencia; es posible que se necesiten modificaciones o kernels específicos.
 - No se proporcionan archivos cuantizados (GGUF, AWQ), lo que limita su despliegue en hardware de consumo sin conversión adicional.
 - El modelo tiene cero descargas y cero likes, lo que sugiere que no ha sido probado por la comunidad; se recomienda tratarlo como experimental.
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de la misma familia o tamaño similar. No hay
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-19p2B
+- Repositorio Hugging Face: https://huggingface.co/notSnix/Qwen3.8-27B-Puzzletron-19p2B
 - Guía de Qwen3.8-27B (modelo base): https://lovableapp.org/blog/qwen3-8-27b
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Análisis de Simon Willison sobre Qwen3.8-27B: https://simonwillison.net/2026/Aug/16/qwen-38-27b/

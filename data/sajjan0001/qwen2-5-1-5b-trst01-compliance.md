@@ -79,10 +79,10 @@ No se conocen adaptadores públicos comparables de dominio de sostenibilidad y c
 
 | Modelo | Parámetros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador | 1,5B + LoRA | No disponible | Adaptador PEFT de dominio | No disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (según documentación de Qwen) | Modelo instruct generalista | Apache-2.0 (según Qwen) | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | 128 000 tokens (según Meta) | Modelo instruct generalista | Llama 3.2 Community License | HuggingFace |
-| SmolLM2-1.7B-Instruct | 1,7B | 8 192 tokens (según HuggingFace) | Modelo instruct generalista | Apache-2.0 (según HuggingFace) | HuggingFace |
+| Este adaptador | 1,5B + LoRA | No disponible | Adaptador PEFT de dominio | No disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (según documentación de Qwen) | Modelo instruct generalista | Apache-2.0 (según Qwen) | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | 128 000 tokens (según Meta) | Modelo instruct generalista | Llama 3.2 Community License | Hugging Face |
+| SmolLM2-1.7B-Instruct | 1,7B | 8 192 tokens (según Hugging Face) | Modelo instruct generalista | Apache-2.0 (según Hugging Face) | Hugging Face |
 
 Los datos de contexto y licencia de las alternativas provienen de la documentación de sus fabricantes y no se han verificado dentro de la información proporcionada para este modelo. En rendimiento no hay comparación posible: el adaptador no publica métricas cuantitativas y las alternativas generalistas no cubren el dominio regulatorio específico.
 
@@ -102,7 +102,7 @@ Los datos de contexto y licencia de las alternativas provienen de la documentaci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sajjan0001/qwen2.5-1.5b-trst01-compliance)
+- [Modelo en Hugging Face](https://huggingface.co/sajjan0001/qwen2.5-1.5b-trst01-compliance)
 - [Repositorio con el análisis completo, dataset y cuaderno de entrenamiento](https://github.com/Sajjan001/Fine-tuning-Qwen2.5-1.5B-on-sustainability-compliance-data)
 - [Modelo base Qwen/Qwen2.5-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct)
 

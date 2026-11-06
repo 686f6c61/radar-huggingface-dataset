@@ -72,9 +72,9 @@ El autor indica que la suite no mostro mejora agregada sobre el checkpoint 424 y
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B-98K-V2-FP8 (este) | 2.166.928.384 | 98.304 servicio / 128.000 techo | lfm-open-license | HuggingFace, comunidad | Refinamiento supervisado con LoRA fusionado; FP8_DYNAMIC |
-| LiquidAI/LFM3-Omni-2B (base) | 2.166.928.384 | no disponible en la informacion | lfm-open-license | HuggingFace, oficial | Modelo original multimodal de Liquid AI |
-| Checkpoint padre 424 (V1 lineage) | 2.166.928.384 | no disponible | lfm-open-license | HuggingFace, comunidad | 33/40 en la suite del autor; mismo resultado que V2 |
+| LFM3-Omni-2B-98K-V2-FP8 (este) | 2.166.928.384 | 98.304 servicio / 128.000 techo | lfm-open-license | Hugging Face, comunidad | Refinamiento supervisado con LoRA fusionado; FP8_DYNAMIC |
+| LiquidAI/LFM3-Omni-2B (base) | 2.166.928.384 | no disponible en la informacion | lfm-open-license | Hugging Face, oficial | Modelo original multimodal de Liquid AI |
+| Checkpoint padre 424 (V1 lineage) | 2.166.928.384 | no disponible | lfm-open-license | Hugging Face, comunidad | 33/40 en la suite del autor; mismo resultado que V2 |
 | Otras alternativas de ~2B multimodal | no disponible | no disponible | no disponible | no disponible | No se proporcionan datos de modelos comparables en la informacion |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ El autor indica que la suite no mostro mejora agregada sobre el checkpoint 424 y
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-FP8
+- Hugging Face (este modelo): https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-FP8
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-Omni-2B
 - Licencia: https://huggingface.co/LiquidAI/LFM3-Omni-2B/blob/main/LICENSE
 - Variante BF16: https://huggingface.co/MichaelAnthony/LFM3-Omni-2B-98K-V2-BF16

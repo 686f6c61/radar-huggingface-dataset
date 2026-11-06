@@ -80,7 +80,7 @@ No se dispone de información sobre modelos ASR comparables en la documentación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/killbanhar/sravaani-onnx
+- Repositorio Hugging Face: https://huggingface.co/killbanhar/sravaani-onnx
 - Modelo original: https://huggingface.co/ARTPARK-IISc/SraVaani-1.0
 - Paper (arXiv:2608.08235): https://arxiv.org/abs/2608.08235
 - Repositorio GitHub con scripts de exportación y transcripción: https://github.com/piyushparkash/sravaani-voice-termux (incluye `onnx_transcribe.py` y `export_onnx.py`)

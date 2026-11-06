@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion / contexto | Dimension de embedding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| timm/qwen3_vit_416m_merge.qwen3_vl_8b | 455,1 M | 768 x 768 nativa, rectangular con divisibilidad por 16 | 4096 | Apache 2.0 | HuggingFace, libreria timm |
-| CLIP ViT-L/14 (OpenAI / OpenCLIP) | aprox. 304 M (no confirmado en la informacion disponible) | 224 x 224 nativa, posicionalmente interpolable | 768 | MIT en OpenCLIP; otras variantes con licencias distintas | HuggingFace, OpenCLIP |
-| SigLIP SO400m (variantes abiertas) | aprox. 878 M (no confirmado en la informacion disponible) | 384 x 384 tipica | 1152 | Apache 2.0 en las variantes abiertas | HuggingFace, timm |
-| DINOv2 ViT-L/14 | aprox. 300 M (no confirmado en la informacion disponible) | 518 x 518 con parches de 14 | 1024 | Apache 2.0 | HuggingFace, timm |
+| timm/qwen3_vit_416m_merge.qwen3_vl_8b | 455,1 M | 768 x 768 nativa, rectangular con divisibilidad por 16 | 4096 | Apache 2.0 | Hugging Face, libreria timm |
+| CLIP ViT-L/14 (OpenAI / OpenCLIP) | aprox. 304 M (no confirmado en la informacion disponible) | 224 x 224 nativa, posicionalmente interpolable | 768 | MIT en OpenCLIP; otras variantes con licencias distintas | Hugging Face, OpenCLIP |
+| SigLIP SO400m (variantes abiertas) | aprox. 878 M (no confirmado en la informacion disponible) | 384 x 384 tipica | 1152 | Apache 2.0 en las variantes abiertas | Hugging Face, timm |
+| DINOv2 ViT-L/14 | aprox. 300 M (no confirmado en la informacion disponible) | 518 x 518 con parches de 14 | 1024 | Apache 2.0 | Hugging Face, timm |
 
 Nota: los datos de los modelos alternativos son valores de referencia ampliamente conocidos, pero no proceden de la informacion proporcionada en esta busqueda, por lo que se marcan como no confirmados. No se dispone de comparaciones de rendimiento entre ellos y este checkpoint, ya que no hay benchmarks publicados para el modelo de timm.
 
@@ -102,7 +102,7 @@ Nota: los datos de los modelos alternativos son valores de referencia ampliament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_vl_8b
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m_merge.qwen3_vl_8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Revision concreta del modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct/tree/0c351dd01ed87e9c1b53cbc748cba10e6187ff3b
 - Informe tecnico de Qwen3-VL (arXiv:2511.21631): https://arxiv.org/abs/2511.21631

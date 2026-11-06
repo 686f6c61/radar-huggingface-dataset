@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fushuncui/opd-sft-e2-uniform-eosfix` es un modelo de lenguaje de 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) publicado por el usuario fushuncui en HuggingFace. El nombre del repositorio sugiere que se trata de un modelo resultante de un proceso de *supervised fine-tuning* (SFT) dentro del proyecto OPD (*On-Policy Distillation*), una técnica de destilación en la que el estudiante muestrea sus propias trayectorias durante el entrenamiento y el profesor supervisa esas muestras. La etiqueta `qwen3` indica que la arquitectura base es muy probablemente un modelo de la familia Qwen3, aunque no se especifica la variante exacta.
+`fushuncui/opd-sft-e2-uniform-eosfix` es un modelo de lenguaje de 8.190.735.360 parámetros (aproximadamente 8,19 mil millones) publicado por el usuario fushuncui en Hugging Face. El nombre del repositorio sugiere que se trata de un modelo resultante de un proceso de *supervised fine-tuning* (SFT) dentro del proyecto OPD (*On-Policy Distillation*), una técnica de destilación en la que el estudiante muestrea sus propias trayectorias durante el entrenamiento y el profesor supervisa esas muestras. La etiqueta `qwen3` indica que la arquitectura base es muy probablemente un modelo de la familia Qwen3, aunque no se especifica la variante exacta.
 
 La model card, escrita en chino, indica únicamente que es un archivo público del proyecto OPD y remite al repositorio GitHub para detalles de experimentación y evaluación. La licencia es `other`, lo que implica restricciones no estándar que deben consultarse con el autor. Con solo 0 descargas y 0 likes, es un modelo de investigación con escasa documentación pública, por lo que su uso en producción requeriría una evaluación adicional por parte del usuario.
 
@@ -86,6 +86,6 @@ La comparativa con Qwen3-8B base es la más relevante, ya que este modelo es un 
 
 ## Enlaces
 
-- [HuggingFace: fushuncui/opd-sft-e2-uniform-eosfix](https://huggingface.co/fushuncui/opd-sft-e2-uniform-eosfix)
+- [Hugging Face: fushuncui/opd-sft-e2-uniform-eosfix](https://huggingface.co/fushuncui/opd-sft-e2-uniform-eosfix)
 - [GitHub - thinkwee/AwesomeOPD: On-Policy Distillation](https://github.com/thinkwee/AwesomeOPD) (referencia a la técnica OPD, no al proyecto específico del modelo)
 - [GitHub - unslothai/unsloth](https://github.com/unslothai/unsloth) (herramienta de entrenamiento local, no relacionada directamente)

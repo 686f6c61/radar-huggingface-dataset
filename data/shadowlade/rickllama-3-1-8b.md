@@ -75,7 +75,7 @@ La comparación directa con el modelo base es la más relevante: RickLLama-3.1-8
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shadowlade/RickLLama-3.1-8B
+- Repositorio Hugging Face: https://huggingface.co/shadowlade/RickLLama-3.1-8B
 - Repositorio similar (theneuralmaze): https://huggingface.co/theneuralmaze/RickLLama-3.1-8B
 - Unsloth (librería de finetune): https://github.com/unslothai/unsloth
 - Modelo base (Meta Llama 3.1 8B): https://huggingface.co/meta-llama/Llama-3.1-8B

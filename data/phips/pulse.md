@@ -79,10 +79,10 @@ Velocidad de inferencia en RTX 3060, batch 1, fp16, motor TensorRT construido lo
 
 | Modelo | Parámetros | Escalas | Licencia | Enfoque | Disponibilidad |
 |---|---:|---|---|---|---|
-| PULSE (`pulse`) | 353.856 | 2x, 4x | MIT | CNN mínima, despliegue en edge/navegador | HuggingFace, ONNX incluido |
-| PULSE (`pulse_fast`) | 162.192 | 2x, 4x | MIT | Máxima velocidad, mínimo cómputo | HuggingFace, ONNX incluido |
-| NERVE | ~1,8M | No detallado | No disponible en la información | Restauración CNN más capaz, misma filosofía de despliegue | HuggingFace |
-| HEART | No disponible | No disponible | No disponible | Máxima calidad para GPU de escritorio/servidor | HuggingFace |
+| PULSE (`pulse`) | 353.856 | 2x, 4x | MIT | CNN mínima, despliegue en edge/navegador | Hugging Face, ONNX incluido |
+| PULSE (`pulse_fast`) | 162.192 | 2x, 4x | MIT | Máxima velocidad, mínimo cómputo | Hugging Face, ONNX incluido |
+| NERVE | ~1,8M | No detallado | No disponible en la información | Restauración CNN más capaz, misma filosofía de despliegue | Hugging Face |
+| HEART | No disponible | No disponible | No disponible | Máxima calidad para GPU de escritorio/servidor | Hugging Face |
 
 La model card sitúa a PULSE como hermano pequeño de NERVE y por debajo de HEART en calidad. No se aportan cifras comparativas de PSNR entre estos modelos en la información disponible.
 
@@ -99,7 +99,7 @@ La model card sitúa a PULSE como hermano pequeño de NERVE y por debajo de HEAR
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phips/PULSE
+- Modelo en Hugging Face: https://huggingface.co/Phips/PULSE
 - Modelo hermano NERVE: https://huggingface.co/Phips/NERVE
 - Modelo hermano HEART: https://huggingface.co/Phips/HEART
 - Demo de PULSE: https://huggingface.co/spaces/Phips/PULSE-demo

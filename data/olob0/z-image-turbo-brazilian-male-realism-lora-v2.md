@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Resolucion / contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `olob0/z-image-turbo-brazilian-male-realism-lora-v2` | LoRA sobre modelo de difusion | No disponible (repo de 0,2 GB) | No disponible | CC BY 4.0 | Publico en HuggingFace, 130 descargas |
-| `Tongyi-MAI/Z-Image-Turbo` (modelo base) | Modelo de difusion texto a imagen | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada (consultar la model card del base) | Publico en HuggingFace |
+| `olob0/z-image-turbo-brazilian-male-realism-lora-v2` | LoRA sobre modelo de difusion | No disponible (repo de 0,2 GB) | No disponible | CC BY 4.0 | Publico en Hugging Face, 130 descargas |
+| `Tongyi-MAI/Z-Image-Turbo` (modelo base) | Modelo de difusion texto a imagen | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada (consultar la model card del base) | Publico en Hugging Face |
 | Otros LoRA de retrato fotorealista | Adaptadores LoRA | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olob0/z-image-turbo-brazilian-male-realism-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/olob0/z-image-turbo-brazilian-male-realism-lora-v2
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo (papers, blogs, repos o demos) en la informacion disponible.

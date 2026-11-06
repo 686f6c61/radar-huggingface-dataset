@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-smoke-v1-r0000-merge` es un modelo de generación de texto publicado en HuggingFace por el usuario mdagosta, etiquetado como parte del proyecto "OpenWALDO". Se trata de un export de pesos que emplea la arquitectura estándar Llama de tipo causal-language-model de la librería Transformers, pero con un tokenizador propio denominado "schema-1 byte tokenizer" que requiere cargarse con `trust_remote_code=True`. El repositorio incluye además ficheros de inventario (`BOM.json`) y un mapeo de divulgación de contenido de entrenamiento conforme al reglamento europeo de GPAI (`EU-BOM.json`).
+`mdagosta/waldito-smoke-v1-r0000-merge` es un modelo de generación de texto publicado en Hugging Face por el usuario mdagosta, etiquetado como parte del proyecto "OpenWALDO". Se trata de un export de pesos que emplea la arquitectura estándar Llama de tipo causal-language-model de la librería Transformers, pero con un tokenizador propio denominado "schema-1 byte tokenizer" que requiere cargarse con `trust_remote_code=True`. El repositorio incluye además ficheros de inventario (`BOM.json`) y un mapeo de divulgación de contenido de entrenamiento conforme al reglamento europeo de GPAI (`EU-BOM.json`).
 
 El dato más relevante es su tamaño: 820.736 parámetros totales según los pesos reales en safetensors. Esto sitúa al modelo tres órdenes de magnitud por debajo de un LLM convencional (por ejemplo, GPT-2 small tiene 124 millones), lo que sugiere que se trata de un artefacto de prueba ("smoke test", como indica su nombre) o de un checkpoint de validación de infraestructura más que de un modelo destinado a generación de texto de calidad en producción.
 
@@ -21,7 +21,7 @@ El modelo acumula 146 descargas y 0 likes en el momento de redactar esta ficha. 
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 | Tokenizador | OpenWALDO schema-1 byte tokenizer (requiere `trust_remote_code=True`) |
-| Tamano del repositorio | 0,0 GB (según HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según Hugging Face) |
 | Libreria | transformers |
 | Pipeline | text-generation |
 
@@ -36,7 +36,7 @@ En cuanto al entrenamiento, la información disponible es prácticamente nula: n
 - Generación de texto: es la tarea declarada en el pipeline (`text-generation`), aunque la capacidad real de generar texto coherente con 820.736 parámetros es muy limitada.
 - Integración con Transformers: compatible con la librería `transformers` mediante la clase de modelo Llama.
 - Tokenizador personalizado: incorpora el "schema-1 byte tokenizer" de OpenWALDO, que exige ejecución de código remoto (`trust_remote_code=True`) al cargar el tokenizador.
-- Compatibilidad con text-generation-inference: el tag `text-generation-inference` indica que está preparado para el servidor TGI de HuggingFace.
+- Compatibilidad con text-generation-inference: el tag `text-generation-inference` indica que está preparado para el servidor TGI de Hugging Face.
 - Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en Inference Endpoints.
 - Naturaleza conversacional: el tag `conversational` indica que está pensado para diálogo, aunque no se detalla el formato de prompt.
 - Trazabilidad documental: incluye `BOM.json` (inventario de ficheros de la release) y `EU-BOM.json` (divulgación GPAI).
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en fp32, aproximadamente 3,3 MB; en fp16/bf16, unos 1,6 MB; en int8, unos 0,8 MB; en int4, unos 0,4 MB.
 - GPU recomendadas: cualquier GPU con al menos unos pocos MB libres de VRAM; el modelo es irrelevante a efectos de cómputo, por lo que una NVIDIA T4, RTX 3060, RTX 4090, A100 o H100 lo sirven sin ninguna dificultad.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en cualquier GPU de consumo e incluso en iGPU o en CPU.
-- Opciones de despliegue: `transformers` (librería indicada), `text-generation-inference` (tag presente en el repositorio), HuggingFace Inference Endpoints (tag `endpoints_compatible`). No se han publicado pesos en formato GGUF, por lo que su uso con `llama.cpp` u Ollama requeriría conversión previa y compatibilidad del tokenizador personalizado.
+- Opciones de despliegue: `transformers` (librería indicada), `text-generation-inference` (tag presente en el repositorio), Hugging Face Inference Endpoints (tag `endpoints_compatible`). No se han publicado pesos en formato GGUF, por lo que su uso con `llama.cpp` u Ollama requeriría conversión previa y compatibilidad del tokenizador personalizado.
 - Latencia y throughput estimados: no disponible. Dado el tamaño, la latencia estará dominada por el arranque del proceso y la carga del tokenizador, no por el cálculo del modelo.
 - Requisito adicional: es necesario disponer de conectividad al repositorio y ejecutar código remoto (`trust_remote_code=True`) para cargar el tokenizador.
 
@@ -72,10 +72,10 @@ No se dispone de modelos comparables directos en la información proporcionada. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-smoke-v1-r0000-merge | 820.736 | no disponible | no disponible | HuggingFace |
-| GPT-2 small | ~124 M | 1024 tokens | MIT (segun release original) | HuggingFace |
-| TinyLlama-1.1B | ~1.100 M | 2048 tokens | Apache 2.0 | HuggingFace |
-| Llama 3.2 1B | ~1.240 M | 128.000 tokens | Llama Community License | HuggingFace |
+| waldito-smoke-v1-r0000-merge | 820.736 | no disponible | no disponible | Hugging Face |
+| GPT-2 small | ~124 M | 1024 tokens | MIT (segun release original) | Hugging Face |
+| TinyLlama-1.1B | ~1.100 M | 2048 tokens | Apache 2.0 | Hugging Face |
+| Llama 3.2 1B | ~1.240 M | 128.000 tokens | Llama Community License | Hugging Face |
 
 La comparación con estos modelos se ofrece únicamente como referencia de magnitud; no implica que sean funcionalmente equivalentes ni intercambiables.
 
@@ -94,6 +94,6 @@ La comparación con estos modelos se ofrece únicamente como referencia de magni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-merge
-- Perfil del autor en HuggingFace: https://huggingface.co/mdagosta
+- Hugging Face: https://huggingface.co/mdagosta/waldito-smoke-v1-r0000-merge
+- Perfil del autor en Hugging Face: https://huggingface.co/mdagosta
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo en la búsqueda web realizada.

@@ -87,8 +87,8 @@ Notas sobre la evaluacion: los valores de zerank-1, Gemini 2.5 Flash y Cohere re
 
 | Modelo | Parametros | Contexto | NDCG@10 medio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zerank-2 | 4,02B | 32.768 tokens | 0,6714 | Apache-2.0 | Pesos abiertos en HuggingFace, API y AWS Marketplace |
-| zerank-1 | No disponible | No disponible | 0,6456 | No disponible en la informacion consultada | Pesos en HuggingFace (zeroentropy/zerank-1-reranker) |
+| zerank-2 | 4,02B | 32.768 tokens | 0,6714 | Apache-2.0 | Pesos abiertos en Hugging Face, API y AWS Marketplace |
+| zerank-1 | No disponible | No disponible | 0,6456 | No disponible en la informacion consultada | Pesos en Hugging Face (zeroentropy/zerank-1-reranker) |
 | Gemini 2.5 Flash (listwise) | No disponible | No disponible | 0,5999 | Propietaria | Solo API |
 | Cohere rerank-3.5 | No disponible | No disponible | 0,5847 | Propietaria | Solo API |
 
@@ -111,8 +111,8 @@ ZeroEntropy mantiene ademas variantes como `zerank-1-small-reranker` y modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeroentropy/zerank-2-reranker
-- Organizacion ZeroEntropy en HuggingFace: https://huggingface.co/zeroentropy
+- Modelo en Hugging Face: https://huggingface.co/zeroentropy/zerank-2-reranker
+- Organizacion ZeroEntropy en Hugging Face: https://huggingface.co/zeroentropy
 - Informe tecnico (arXiv:2509.12541): https://arxiv.org/abs/2509.12541
 - Articulo de presentacion de zerank-2: https://www.zeroentropy.dev/articles/zerank-2-advanced-instruction-following-multimodal-reranker
 - Que es un reranker y cuando necesitas uno: https://www.zeroentropy.dev/blog/what-is-a-reranker-and-do-i-need-one

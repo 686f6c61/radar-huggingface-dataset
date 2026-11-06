@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xunlinkx/Qwopus3.8-27B-Coder-Flash-Text-oQ4e-fp16-mtp",
+  "slug": "xunlinkx-qwopus3-8-27b-coder-flash-text-oq4e-fp16-mtp",
+  "author": "xunlinkx",
+  "url": "https://huggingface.co/xunlinkx/Qwopus3.8-27B-Coder-Flash-Text-oQ4e-fp16-mtp",
+  "created_at": "2026-11-02T00:49:29.000Z",
+  "updated_at": "2026-11-02T03:56:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "text-only",
+    "mtp",
+    "speculative-decoding",
+    "coder",
+    "oq4e",
+    "fp16",
+    "4-bit",
+    "quantization",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 264,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16148814762,
+  "storage_human": "16.1 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwopus3.8-27B-Coder-Flash-oQ4e-fp16-mtp - Hugging Face",
+      "url": "https://huggingface.co/xunlinkx/Qwopus3.8-27B-Coder-Flash-oQ4e-fp16-mtp",
+      "snippet": "Instructions to use xunlinkx/Qwopus3.8-27B-Coder-Flash-oQ4e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwopus3.8-27B-Coder-Flash-Text-oQ4e-fp16-mtp - Hugging Face",
+      "url": "https://huggingface.co/xunlinkx/Qwopus3.8-27B-Coder-Flash-Text-oQ4e-fp16-mtp",
+      "snippet": "Instructions to use xunlinkx/Qwopus3.8-27B-Coder-Flash-Text-oQ4e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

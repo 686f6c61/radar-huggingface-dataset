@@ -27,7 +27,7 @@ Datos adicionales: repositorio de 1,4 GB (suma de todas las cuantizaciones), fic
 
 No se dispone de informacion sobre la arquitectura interna, el proceso de entrenamiento, el volumen de tokens utilizado, la composicion del dataset ni si hubo fases de ajuste por instrucciones (SFT, RLHF o DPO). La model card del repositorio GGUF se limita a indicar que son cuantizaciones estaticas del modelo base y no reproduce ninguna ficha tecnica del modelo original.
 
-El unico indicio arquitectonico es la etiqueta "smolllm2" incluida en los tags, que sugiere una estructura derivada o compatible con la familia SmolLM2 (transformer decoder-only con normalizacion RMSNorm y atencion causal agrupada). No obstante, esta inferencia no esta confirmada por el autor y no debe tomarse como dato fiable. En cuanto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion estandar desde pesos de HuggingFace con cuantizacion por tensores de salida.
+El unico indicio arquitectonico es la etiqueta "smolllm2" incluida en los tags, que sugiere una estructura derivada o compatible con la familia SmolLM2 (transformer decoder-only con normalizacion RMSNorm y atencion causal agrupada). No obstante, esta inferencia no esta confirmada por el autor y no debe tomarse como dato fiable. En cuanto al proceso de cuantizacion, la model card indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, conversion estandar desde pesos de Hugging Face con cuantizacion por tensores de salida.
 
 ## Capacidades
 

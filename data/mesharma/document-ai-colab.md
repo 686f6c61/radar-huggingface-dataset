@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mesharma/document-ai-colab` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en HuggingFace. La model card lo describe explícitamente como una nota exploratoria que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, sin que se haya ejecutado ningún experimento ni publicado resultados.
+`mesharma/document-ai-colab` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre Document AI publicado en Hugging Face. La model card lo describe explícitamente como una nota exploratoria que recoge el alcance de una pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y requisitos de reproducibilidad, sin que se haya ejecutado ningún experimento ni publicado resultados.
 
 El repositorio contiene dos artefactos textuales (`summary.md` y `README.md`) y un fichero de pesos de 33.088 parámetros en formato safetensors, un tamaño irrelevante para cualquier tarea generativa y compatible con un tensor auxiliar o un placeholder. Los tags declarados son `research-notes`, `document-ai`, `transformer` y `safetensors`, con licencia MIT y región US.
 
@@ -43,7 +43,7 @@ No se documenta ningún proceso de entrenamiento: no hay número de tokens, comp
 - Planificación de evaluación en extracción de información: tomar FUNSD, SROIE y CORD como punto de partida para definir métricas y particiones antes de entrenar un modelo real.
 - Documentación de linaje de datos: reutilizar la estructura de la nota para registrar las condiciones de uso de datasets externos, tal como advierte la sección de licencia.
 - Formación de nuevos miembros: explicar con un ejemplo real qué distingue una nota exploratoria de un resultado experimental reproducible.
-- Auditoría de repositorios en HuggingFace: usar este caso como referencia de por qué un tag `safetensors` y un recuento de parámetros no implican un modelo funcional.
+- Auditoría de repositorios en Hugging Face: usar este caso como referencia de por qué un tag `safetensors` y un recuento de parámetros no implican un modelo funcional.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ La comparación es solo orientativa: los tres modelos de referencia son checkpoi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mesharma/document-ai-colab
+- Hugging Face: https://huggingface.co/mesharma/document-ai-colab
 - FUNSD (referencia citada en la nota): no disponible en la información proporcionada
 - SROIE (referencia citada en la nota): no disponible en la información proporcionada
 - CORD (referencia citada en la nota): no disponible en la información proporcionada

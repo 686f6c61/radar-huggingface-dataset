@@ -2,9 +2,9 @@
 
 ## Resumen
 
-myTestAIML es un modelo de generación texto-a-texto obtenido por fine-tuning de facebook/bart-large-cnn, publicado por el usuario abhisheksonkar en HuggingFace. Se trata, por tanto, de un modelo de resumen abstractivo de tipo encoder-decoder con arquitectura BART y 406.340.696 parámetros, no de un modelo entrenado desde cero. El repositorio ocupa 1,6 GB y contiene pesos en safetensors listos para cargarse con la librería transformers.
+myTestAIML es un modelo de generación texto-a-texto obtenido por fine-tuning de facebook/bart-large-cnn, publicado por el usuario abhisheksonkar en Hugging Face. Se trata, por tanto, de un modelo de resumen abstractivo de tipo encoder-decoder con arquitectura BART y 406.340.696 parámetros, no de un modelo entrenado desde cero. El repositorio ocupa 1,6 GB y contiene pesos en safetensors listos para cargarse con la librería transformers.
 
-La relevancia de este modelo es limitada y debe evaluarse con cautela: la model card es la generada automáticamente por el Trainer de HuggingFace, no especifica el conjunto de datos de entrenamiento, no declara idiomas soportados y no publica ningún benchmark (el campo model-index aparece con la lista de resultados vacía). El único dato de evaluación disponible es una pérdida de validación de 0,2846 tras dos épocas de entrenamiento, una métrica que por sí sola no permite inferir calidad de resumen.
+La relevancia de este modelo es limitada y debe evaluarse con cautela: la model card es la generada automáticamente por el Trainer de Hugging Face, no especifica el conjunto de datos de entrenamiento, no declara idiomas soportados y no publica ningún benchmark (el campo model-index aparece con la lista de resultados vacía). El único dato de evaluación disponible es una pérdida de validación de 0,2846 tras dos épocas de entrenamiento, una métrica que por sí sola no permite inferir calidad de resumen.
 
 En la práctica, myTestAIML debe tratarse como un experimento de fine-tuning reproducible (hiperparámetros y versiones de framework documentados) más que como un modelo listo para producción. Su interés real está en el linaje: al heredar la arquitectura y el tokenizador de BART-large-CNN, cualquier evaluación seria debería compararlo contra el modelo base antes de considerar su uso.
 
@@ -72,10 +72,10 @@ Como único dato cuantitativo, la model card recoge las pérdidas de entrenamien
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| myTestAIML | 406.340.696 | 1024 tokens | Resumen texto-a-texto | MIT | HuggingFace, 0 descargas |
-| facebook/bart-large-cnn | 406.340.696 | 1024 tokens | Resumen texto-a-texto | MIT | HuggingFace, modelo base ampliamente utilizado |
-| google/pegasus-large | No disponible en esta busqueda | No disponible en esta busqueda | Resumen abstractivo | Apache-2.0 | HuggingFace |
-| google-t5/t5-large | No disponible en esta busqueda | No disponible en esta busqueda | Texto-a-texto generalista | Apache-2.0 | HuggingFace |
+| myTestAIML | 406.340.696 | 1024 tokens | Resumen texto-a-texto | MIT | Hugging Face, 0 descargas |
+| facebook/bart-large-cnn | 406.340.696 | 1024 tokens | Resumen texto-a-texto | MIT | Hugging Face, modelo base ampliamente utilizado |
+| google/pegasus-large | No disponible en esta busqueda | No disponible en esta busqueda | Resumen abstractivo | Apache-2.0 | Hugging Face |
+| google-t5/t5-large | No disponible en esta busqueda | No disponible en esta busqueda | Texto-a-texto generalista | Apache-2.0 | Hugging Face |
 
 Los datos de los modelos alternativos provienen de su documentación pública y no han sido verificados en la búsqueda realizada; no se dispone de benchmarks comparativos de myTestAIML frente a ninguno de ellos.
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos provienen de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhisheksonkar/myTestAIML
+- Modelo en Hugging Face: https://huggingface.co/abhisheksonkar/myTestAIML
 - Modelo base: https://huggingface.co/facebook/bart-large-cnn
 - Paper de BART (referencia de la arquitectura): https://arxiv.org/abs/1910.13461
 - Resultados de la búsqueda web: ninguno de los enlaces devueltos (apimaster.ai, ClawLabsAI/free-ai-models, benchlm.ai, canirun.ai, scriptbyai.com) guarda relación específica con este modelo; son directorios y comparadores genéricos de modelos de IA.

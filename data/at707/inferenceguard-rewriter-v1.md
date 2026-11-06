@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Inferenceguard-rewriter-v1 es un modelo de generación de texto publicado en HuggingFace por el usuario AT707. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura Qwen2 (etiqueta `qwen2` en los tags) con 1.543.714.304 parámetros totales, lo que lo sitúa en la franja de los modelos de aproximadamente 1.500 millones de parámetros. El repositorio ocupa 3,1 GB y los pesos están en formato safetensors, lo que es coherente con un checkpoint en precisión de 16 bits para ese número de parámetros.
+Inferenceguard-rewriter-v1 es un modelo de generación de texto publicado en Hugging Face por el usuario AT707. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura Qwen2 (etiqueta `qwen2` en los tags) con 1.543.714.304 parámetros totales, lo que lo sitúa en la franja de los modelos de aproximadamente 1.500 millones de parámetros. El repositorio ocupa 3,1 GB y los pesos están en formato safetensors, lo que es coherente con un checkpoint en precisión de 16 bits para ese número de parámetros.
 
-El nombre del modelo sugiere un uso orientado a la reescritura de texto en el contexto de un sistema de "guardia de inferencia" (inference guard), posiblemente para normalizar, reformular o sanear entradas y salidas de texto antes de que lleguen a otro modelo o sistema. Sin embargo, esta interpretación se deriva únicamente del nombre del repositorio: la model card publicada es la plantilla automática de HuggingFace y no contiene ninguna descripción funcional, datos de entrenamiento, licencia ni resultados de evaluación.
+El nombre del modelo sugiere un uso orientado a la reescritura de texto en el contexto de un sistema de "guardia de inferencia" (inference guard), posiblemente para normalizar, reformular o sanear entradas y salidas de texto antes de que lleguen a otro modelo o sistema. Sin embargo, esta interpretación se deriva únicamente del nombre del repositorio: la model card publicada es la plantilla automática de Hugging Face y no contiene ninguna descripción funcional, datos de entrenamiento, licencia ni resultados de evaluación.
 
 La relevancia del modelo es, por tanto, limitada y debe evaluarse con cautela. Se publicó el 1 de noviembre de 2026, no tiene descargas ni "likes", y carece de documentación técnica verificable. Para un equipo que necesite evaluarlo en producción, la información disponible solo permite confirmar la arquitectura base, el tamaño y el formato de pesos; todo lo demás debe validarse empíricamente antes de cualquier uso.
 
@@ -29,7 +29,7 @@ La relevancia del modelo es, por tanto, limitada y debe evaluarse con cautela. S
 
 La única información estructural disponible es la etiqueta `qwen2` en los metadatos del repositorio, que indica que el modelo se construyó sobre la arquitectura Qwen2, un transformer decoder-only con atención causal estándar. Con 1.543.714.304 parámetros, el tamaño encaja con la variante de aproximadamente 1.500 millones de parámetros de esa familia, aunque no se confirma qué checkpoint concreto sirvió de base ni si hubo modificaciones en la configuración (número de capas, dimensiones ocultas, cabezas de atención).
 
-No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La model card es la plantilla automática de HuggingFace y todos los campos relevantes aparecen como "[More Information Needed]". Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos, etc.). Cualquier afirmación sobre el entrenamiento sería especulativa y no debe asumirse.
+No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. La model card es la plantilla automática de Hugging Face y todos los campos relevantes aparecen como "[More Information Needed]". Tampoco se documenta ninguna innovación técnica (decodificación especulativa, atención lineal, mezcla de expertos, etc.). Cualquier afirmación sobre el entrenamiento sería especulativa y no debe asumirse.
 
 ## Capacidades
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AT707/inferenceguard-rewriter-v1 | 1.543.714.304 | No disponible | No disponible | HuggingFace |
-| Qwen2-1.5B (Alibaba) | ~1.500 millones | 32.768 tokens (variante instruct) | Apache 2.0 | HuggingFace, ampliamente documentado |
-| SmolLM2-1.7B (HuggingFace) | ~1.700 millones | 8.192 tokens | Apache 2.0 | HuggingFace |
-| Gemma 2 2B (Google) | ~2.600 millones | 8.192 tokens | Gemma Terms of Use | HuggingFace |
+| AT707/inferenceguard-rewriter-v1 | 1.543.714.304 | No disponible | No disponible | Hugging Face |
+| Qwen2-1.5B (Alibaba) | ~1.500 millones | 32.768 tokens (variante instruct) | Apache 2.0 | Hugging Face, ampliamente documentado |
+| SmolLM2-1.7B (Hugging Face) | ~1.700 millones | 8.192 tokens | Apache 2.0 | Hugging Face |
+| Gemma 2 2B (Google) | ~2.600 millones | 8.192 tokens | Gemma Terms of Use | Hugging Face |
 
 La comparación se limita a parámetros y disponibilidad, ya que no hay benchmarks ni especificaciones de contexto para el modelo evaluado. Frente a Qwen2-1.5B, SmolLM2-1.7B o Gemma 2 2B, el modelo de AT707 no aporta documentación verificable sobre rendimiento, licencia o idiomas, lo que lo sitúa en desventaja para una adopción en producción frente a alternativas con model cards completas.
 
@@ -90,7 +90,7 @@ La comparación se limita a parámetros y disponibilidad, ya que no hay benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AT707/inferenceguard-rewriter-v1
+- Repositorio Hugging Face: https://huggingface.co/AT707/inferenceguard-rewriter-v1
 - Paper citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Documentación de Qwen2 (arquitectura base probable): https://huggingface.co/docs/transformers/model_doc/qwen2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`davidwdw/fa-pi05-attnfix-balanced-4000-867472fe8b6b-6bd6e85ebbf6` es un artefacto publicado en HuggingFace por el usuario `davidwdw` que, segun la propia model card, se describe como un "versioned fleet archive" (archivo versionado de flota), no como un modelo entrenado con fines de publicacion abierta. La model card indica que se trata de una instantanea ("snapshot") de un paquete con parametros y assets ("Tier: params+assets") y remite a una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`. No se declara arquitectura, tamano, contexto ni proposito funcional.
+`davidwdw/fa-pi05-attnfix-balanced-4000-867472fe8b6b-6bd6e85ebbf6` es un artefacto publicado en Hugging Face por el usuario `davidwdw` que, segun la propia model card, se describe como un "versioned fleet archive" (archivo versionado de flota), no como un modelo entrenado con fines de publicacion abierta. La model card indica que se trata de una instantanea ("snapshot") de un paquete con parametros y assets ("Tier: params+assets") y remite a una receta canonica identificada como `2026-09-22_b1k_task00_pi05_attention_consistent_h20`. No se declara arquitectura, tamano, contexto ni proposito funcional.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado, licencia, idiomas ni pesos documentados mas alla de la mencion a "params+assets". La model card no incluye informacion sobre datos de entrenamiento, benchmarks, capacidades o requisitos de hardware. La propia card recomienda usar la revision exacta registrada y verificar `SHA256SUMS`, lo que sugiere un uso interno de reproducibilidad mas que un modelo de proposito general.
 
@@ -79,7 +79,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-4000-867472fe8b6b-6bd6e85ebbf6
+- Hugging Face: https://huggingface.co/davidwdw/fa-pi05-attnfix-balanced-4000-867472fe8b6b-6bd6e85ebbf6
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

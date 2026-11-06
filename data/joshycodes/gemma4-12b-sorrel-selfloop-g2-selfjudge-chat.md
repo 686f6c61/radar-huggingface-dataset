@@ -106,7 +106,7 @@ La informacion proporcionada no incluye benchmarks ni especificaciones de tercer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g2-selfjudge-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g2-selfjudge-chat
 - Modelo base (midtrain): https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g2-midtrain
 - Repositorio `flourishing-training` (referenciado por el commit del lanzador `a0afb77669ae`): no disponible la URL en la informacion proporcionada
 - Referencia del pitch de Wang y Jermyn (2026-04-22): no disponible la URL en la informacion proporcionada

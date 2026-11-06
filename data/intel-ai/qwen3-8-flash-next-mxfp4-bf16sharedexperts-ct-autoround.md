@@ -92,14 +92,14 @@ Comparativa con modelos de otros proveedores: no disponible.
 - Sin cuantización de KV cache en el checkpoint: `kv_cache_scheme` no está definido y las activaciones de atención tampoco se cuantizan; cualquier ahorro de memoria en ese punto depende del runtime, no del artefacto.
 - Ausencia de datos de entrenamiento: no se documentan tokens de entrenamiento, composición del dataset, ni si hubo RLHF o DPO en el modelo base. Tampoco se informan idiomas soportados, evaluación de sesgos ni tasas de alucinación.
 - Riesgo de alucinación: no cuantificado en la información disponible. Al ser un modelo de 180 B orientado a generación libre, el riesgo existe, pero no hay mediciones publicadas en esta ficha.
-- Licencia: `qwen-community-1.0` (identificador `other`), una licencia de comunidad con condiciones propias. No se dispone del texto completo en la información proporcionada, por lo que debe revisarse el fichero `LICENSE` del repositorio antes de cualquier uso comercial. El tag `license:other` de HuggingFace impide asumir permisos de uso comercial sin lectura previa.
+- Licencia: `qwen-community-1.0` (identificador `other`), una licencia de comunidad con condiciones propias. No se dispone del texto completo en la información proporcionada, por lo que debe revisarse el fichero `LICENSE` del repositorio antes de cualquier uso comercial. El tag `license:other` de Hugging Face impide asumir permisos de uso comercial sin lectura previa.
 - Reproducibilidad parcial de la model card: el fragmento disponible del README se corta a mitad del comando de reproducción de `lm_eval` (tarea `piqa,mmlu,hellaswag`), por lo que los parámetros exactos de esa ejecución no están completos.
 - Metadatos del repositorio: 0 descargas y 0 likes en el momento de la consulta, y fechas de creación y actualización de octubre de 2026, posteriores a la fecha habitual de referencia; se recomienda verificar el estado actual del repositorio.
 - Nomenclatura potencialmente confusa: el directorio de compilación llevaba el sufijo `-FP8Attn` de un experimento anterior, pero el checkpoint no contiene cuantización FP8 de la atención (no hay `q_scale` ni `kv_cache_scheme`). FP8 se refiere únicamente al formato MXFP8 de los pesos de las capas Linear no expertas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16SharedExperts-CT-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP4-BF16SharedExperts-CT-AutoRound
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
-- Licencia incluida en el repositorio: `LICENSE` (ruta relativa dentro del propio repositorio de HuggingFace)
+- Licencia incluida en el repositorio: `LICENSE` (ruta relativa dentro del propio repositorio de Hugging Face)
 - Resultados de la búsqueda web: únicamente se recuperaron páginas corporativas de Intel sin contenido técnico sobre el modelo (https://www.intel.com/content/www/us/en/homepage.html, https://www.intel.fr/content/www/fr/fr/homepage.html, https://www.intel.fr/content/www/fr/fr/download-center/home.html, https://www.intel.com/content/www/us/en/support/detect.html, https://fr.wikipedia.org/wiki/Intel). No se han encontrado papers, blogs tecnicos, repositorios ni demos adicionales en la informacion disponible.

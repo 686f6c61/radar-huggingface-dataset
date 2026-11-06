@@ -69,4 +69,4 @@ No disponible. No se conocen modelos comparables en el mismo repositorio ni en l
 
 ## Enlaces
 
-- [HuggingFace - nakamura9073/contrastive](https://huggingface.co/nakamura9073/contrastive)
+- [Hugging Face - nakamura9073/contrastive](https://huggingface.co/nakamura9073/contrastive)

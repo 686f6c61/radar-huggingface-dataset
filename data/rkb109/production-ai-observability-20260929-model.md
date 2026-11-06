@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento, parametros o contexto de modelos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/production-ai-observability-20260929-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/production-ai-observability-20260929-model
 - Repositorio GitHub del proyecto: https://github.com/R-behera/production-ai-observability-20260929
 - Dataset asociado (version indicada en la model card): https://huggingface.co/datasets/RKB109/production-ai-observability-20260929-dataset
 - Modelo de la version previa de la serie: https://huggingface.co/RKB109/production-ai-observability-20260919-model

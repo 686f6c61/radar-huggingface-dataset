@@ -86,10 +86,10 @@ La comparativa se limita a la información disponible. El modelo GGUF ofrece el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jepacpp/vjepa2_1-vitb-384-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jepacpp/vjepa2_1-vitb-384-GGUF
 - Motor jepa.cpp (GitHub): https://github.com/aselimc/jepa.cpp
 - Documentación de jepa.cpp: https://aselimc.github.io/jepa.cpp/
 - Paper V-JEPA 2.1 (arXiv 2506.09985): https://arxiv.org/abs/2506.09985
 - Paper V-JEPA 2.1 dense features (arXiv 2603.14482): https://arxiv.org/html/2603.14482v1
 - Repositorio oficial V-JEPA 2 (facebookresearch/vjepa2): https://github.com/facebookresearch/vjepa2
-- Conversión alternativa en HuggingFace (apiantonio/vjepa2.1-vit-base-384): https://huggingface.co/apiantonio/vjepa2.1-vit-base-384
+- Conversión alternativa en Hugging Face (apiantonio/vjepa2.1-vit-base-384): https://huggingface.co/apiantonio/vjepa2.1-vit-base-384

@@ -86,7 +86,7 @@ La tabla de benchmarks anterior ya ofrece una comparativa directa con los princi
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/ryant0000/DeepSeek-V4-Pro-0813-gguf
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/ryant0000/DeepSeek-V4-Pro-0813-gguf
 - Modelo base original: https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813
 - Informe técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página oficial de DeepSeek: https://www.deepseek.com/

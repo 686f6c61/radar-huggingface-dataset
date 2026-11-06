@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kijai/LTX2.3_comfy
+- Modelo en Hugging Face: https://huggingface.co/Kijai/LTX2.3_comfy
 - Repositorio de la licencia (Lightricks/LTX-2): https://github.com/Lightricks/LTX-2/blob/main/LICENSE
 - VAE pequeno de madebyollin: https://github.com/madebyollin/taehv/
 - Articulo de overview en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/ltx2.3-comfy-kijai

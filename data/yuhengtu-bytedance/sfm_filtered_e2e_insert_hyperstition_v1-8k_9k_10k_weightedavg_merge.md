@@ -96,7 +96,7 @@ La comparación se limita a tamaño y arquitectura, porque este repositorio no p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-8k_9k_10k_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper del método de fusión lineal: https://arxiv.org/abs/2203.05482
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a manuales de calibración de sensores de drones DJI y no guardan relacion con este repositorio.

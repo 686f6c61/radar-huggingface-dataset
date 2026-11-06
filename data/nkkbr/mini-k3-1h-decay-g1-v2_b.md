@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-K3-1H-decay-g1-v2_B es un checkpoint de preentrenamiento de tipo *text-only* publicado por el usuario nkkbr en HuggingFace, con 1.015.011.160 parámetros lógicos totales y 351.786.840 parámetros activos por token. No es un modelo de propósito general ni un asistente: forma parte de una comparación controlada de 20 arquitecturas que reproduce, a escala reducida (aproximadamente mil millones de parámetros lógicos), los operadores del Kimi-K3: KDA (atención lineal con decay), Gated MLA, bloques *Attention Residual*, Stable LatentMoE, activaciones SiTU, *output gates* y *Quantile Balancing*. La arquitectura concreta de este repositorio es de 13 capas decoder, 9 de ellas KDA y 4 Gated MLA, con ancho oculto 1024 y 12 cabezas de atención.
+Mini-K3-1H-decay-g1-v2_B es un checkpoint de preentrenamiento de tipo *text-only* publicado por el usuario nkkbr en Hugging Face, con 1.015.011.160 parámetros lógicos totales y 351.786.840 parámetros activos por token. No es un modelo de propósito general ni un asistente: forma parte de una comparación controlada de 20 arquitecturas que reproduce, a escala reducida (aproximadamente mil millones de parámetros lógicos), los operadores del Kimi-K3: KDA (atención lineal con decay), Gated MLA, bloques *Attention Residual*, Stable LatentMoE, activaciones SiTU, *output gates* y *Quantile Balancing*. La arquitectura concreta de este repositorio es de 13 capas decoder, 9 de ellas KDA y 4 Gated MLA, con ancho oculto 1024 y 12 cabezas de atención.
 
 El checkpoint contiene 1.000.079.360 tokens válidos consumidos tras 1.526 pasos de optimizador, con longitud de secuencia de 8.192 tokens, sobre un objetivo total de 16.000.000.000 tokens para el run completo. El modelo se distribuye en safetensors en BF16, con el código de modelado y configuración incluidos para que el paquete sea autocontenido, sin dependencia del *checkout* de entrenamiento original.
 
@@ -111,7 +111,7 @@ Diferencias clave: el modelo de nkkbr es un MoE con atención híbrida (lineal K
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g1-v2_B
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-decay-g1-v2_B
 - Archivos relevantes dentro del repositorio: `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py`, `ARCHITECTURE_PACKAGE_README.md`, `ARCHITECTURE.md`, `VARIANT.md`, `config.json`, `model.safetensors`.
 - Métricas de entrenamiento: registradas en W&B y en el JSONL del run; no se proporciona la URL en la información disponible.
 - Repositorio del experimento (diagnósticos *downstream* y de arquitectura planificados): mencionado por el autor sin enlace en la información disponible.

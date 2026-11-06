@@ -75,8 +75,8 @@ Nota: MiniMax-H3 Turbo-SLA es una variante de MiniMax-H3 Turbo con atención esp
 
 ## Enlaces
 
-- HuggingFace (repositorio analizado): https://huggingface.co/asadkhan89/Minimax-h3-Turbo-SLA
-- HuggingFace (repositorio original): https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA
+- Hugging Face (repositorio analizado): https://huggingface.co/asadkhan89/Minimax-h3-Turbo-SLA
+- Hugging Face (repositorio original): https://huggingface.co/lightx2v/Minimax-h3-Turbo-SLA
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - MiniMax-H3 Turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - LightX2V: https://github.com/ModelTC/LightX2V

@@ -104,8 +104,8 @@ Los datos de rendimiento del modelo cuantizado no son comparables con los del mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Castellan-AI/Qwen3-4B-Instruct-2507-int4-cw-ov
+- Repositorio Hugging Face: https://huggingface.co/Castellan-AI/Qwen3-4B-Instruct-2507-int4-cw-ov
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Exportacion comparable mencionada por el autor (AWQ group-wise): https://huggingface.co/OpenVINO/Qwen3-4B-int4-ov
-- Organizacion OpenVINO en HuggingFace (exportaciones para NPU, incluida Qwen3-8B): https://huggingface.co/OpenVINO
+- Organizacion OpenVINO en Hugging Face (exportaciones para NPU, incluida Qwen3-8B): https://huggingface.co/OpenVINO
 - Resultados de la busqueda web: no se encontraron enlaces relevantes sobre este modelo; los resultados devueltos no guardan relacion con el tema.

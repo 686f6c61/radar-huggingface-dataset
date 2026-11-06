@@ -94,7 +94,7 @@ La comparación se limita a variantes del mismo modelo base, ya que la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kaitchup/LFM3-1.7B-SLQ-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kaitchup/LFM3-1.7B-SLQ-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - GGUF oficiales del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-GGUF
 - GGUF donantes de AtomicChat: https://huggingface.co/AtomicChat/LFM3-1.7B-GGUF

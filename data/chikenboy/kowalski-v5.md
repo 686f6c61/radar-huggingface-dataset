@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kowalski-V5 es un ajuste fino del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario ChikenBoy y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 8.767 millones de parámetros orientado a tareas de imagen-texto-a-texto (image-text-to-text), con capacidades de visión añadidas respecto a versiones anteriores del mismo proyecto. El autor declara un entrenamiento mediante Supervised Fine-Tuning completo sobre aproximadamente 100.000 ejemplos, con especial énfasis en lógica, matemáticas y generación de código.
+Kowalski-V5 es un ajuste fino del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario ChikenBoy y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 8.767 millones de parámetros orientado a tareas de imagen-texto-a-texto (image-text-to-text), con capacidades de visión añadidas respecto a versiones anteriores del mismo proyecto. El autor declara un entrenamiento mediante Supervised Fine-Tuning completo sobre aproximadamente 100.000 ejemplos, con especial énfasis en lógica, matemáticas y generación de código.
 
 La relevancia del modelo radica en su doble enfoque: por un lado, hereda la arquitectura y las capacidades del Qwen3-VL-8B-Instruct, incluyendo procesamiento de imágenes y texto; por otro, incorpora un bloque de razonamiento explícito `<think>` con cadena de pensamiento (CoT), lo que permite separar el proceso de razonamiento de la respuesta final. Está orientado a un público bilingüe ruso-inglés, lo que lo hace interesante para aplicaciones en esos idiomas, aunque no declara soporte para castellano.
 
@@ -84,7 +84,7 @@ La comparación con el modelo base es la más directa: Kowalski-V5 añade un aju
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ChikenBoy/Kowalski-V5
+- Hugging Face: https://huggingface.co/ChikenBoy/Kowalski-V5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio de Qwen3-VL (familia): https://github.com/QwenLM/Qwen3-VL
 - Paper de Qwen3-VL: no disponible en la información proporcionada

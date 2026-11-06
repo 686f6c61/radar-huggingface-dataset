@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sazio/multigeom | Codificadores de vision + difusion para neurociencia | No disponible agregado; readout ON-OFF de 409.650 | No aplica | MIT | HuggingFace |
+| sazio/multigeom | Codificadores de vision + difusion para neurociencia | No disponible agregado; readout ON-OFF de 409.650 | No aplica | MIT | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -89,5 +89,5 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sazio/multigeom
+- Modelo en Hugging Face: https://huggingface.co/sazio/multigeom
 - Pagina del proyecto y codigo: https://multigeom.github.io/

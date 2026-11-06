@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Drowsy-zZ/exaone-nsmc-lora-merged` es un modelo de generacion de texto publicado en HuggingFace por el usuario Drowsy-zZ. Se trata de un merge de un adaptador LoRA sobre una base de la familia EXAONE 4 (etiqueta `exaone4` en el repositorio), con 1.279.391.488 parametros totales segun los safetensors publicados y un repositorio de 2,6 GB. El nombre del repositorio sugiere que el ajuste se ha realizado sobre NSMC (Naver Sentiment Movie Corpus), un corpus de resenas de cine en coreano, aunque la model card no lo confirma en ningun momento.
+`Drowsy-zZ/exaone-nsmc-lora-merged` es un modelo de generacion de texto publicado en Hugging Face por el usuario Drowsy-zZ. Se trata de un merge de un adaptador LoRA sobre una base de la familia EXAONE 4 (etiqueta `exaone4` en el repositorio), con 1.279.391.488 parametros totales segun los safetensors publicados y un repositorio de 2,6 GB. El nombre del repositorio sugiere que el ajuste se ha realizado sobre NSMC (Naver Sentiment Movie Corpus), un corpus de resenas de cine en coreano, aunque la model card no lo confirma en ningun momento.
 
 La relevancia del modelo es limitada y muy especifica: no es un modelo fundacional ni una publicacion de investigacion, sino un artefacto derivado (fine-tune + merge) subido al Hub con 192 descargas y 0 likes en el momento de redactar esta ficha. Su interes practico esta en el nicho de clasificacion de sentimiento en coreano con modelos pequenos que caben en hardware de consumo, y como caso de estudio de la tecnica de fusion de adaptadores LoRA.
 
-El principal problema a la hora de evaluarlo es documental: la model card es la plantilla automatica de HuggingFace sin cumplimentar, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion ni uso previsto. Cualquier despliegue en produccion exige verificar primero la licencia de la familia base y validar el comportamiento real del modelo.
+El principal problema a la hora de evaluarlo es documental: la model card es la plantilla automatica de Hugging Face sin cumplimentar, con todos los campos marcados como `[More Information Needed]`. No hay informacion sobre datos de entrenamiento, hiperparametros, licencia, idiomas, evaluacion ni uso previsto. Cualquier despliegue en produccion exige verificar primero la licencia de la familia base y validar el comportamiento real del modelo.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ La informacion proporcionada no incluye datos de modelos comparables, por lo que
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Drowsy-zZ/exaone-nsmc-lora-merged | 1.279.391.488 | no disponible | no disponible | Publicado en HuggingFace, 192 descargas, 0 likes |
+| Drowsy-zZ/exaone-nsmc-lora-merged | 1.279.391.488 | no disponible | no disponible | Publicado en Hugging Face, 192 descargas, 0 likes |
 | Modelo base EXAONE 4 de 1,2B (LG AI Research) | del mismo orden (no confirmado en esta busqueda) | no disponible | no disponible en esta busqueda | Referencia externa no verificada |
 | Otras alternativas de ~1-2B (familia Qwen, Llama, Gemma) | no disponible en esta busqueda | no disponible | no disponible en esta busqueda | No evaluadas en esta ficha |
 
@@ -74,7 +74,7 @@ No se dispone de resultados de benchmarks que permitan situar este modelo frente
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla automatica de HuggingFace sin editar: todos los campos relevantes (autoria, datos, licencia, idiomas, evaluacion) figuran como `[More Information Needed]`. No debe tratarse como documentacion fiable.
+- La model card es la plantilla automatica de Hugging Face sin editar: todos los campos relevantes (autoria, datos, licencia, idiomas, evaluacion) figuran como `[More Information Needed]`. No debe tratarse como documentacion fiable.
 - Licencia no declarada. Al derivar de un modelo de la familia EXAONE, se heredan las condiciones de la licencia del modelo base, que hay que verificar en su repositorio oficial antes de cualquier uso, y muy especialmente antes de un uso comercial.
 - No hay ninguna evaluacion publicada: se desconoce la calidad del ajuste, si el merge ha degradado las capacidades del modelo base o si el modelo conserva competencia general mas alla de la tarea de sentimiento.
 - Riesgo de olvido catastrofico: al ser un fine-tune con LoRA fusionado sobre una tarea concreta, es esperable una perdida de capacidades generales y un sesgo fuerte hacia el formato de salida de la tarea de ajuste.
@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks que permitan situar este modelo frente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Drowsy-zZ/exaone-nsmc-lora-merged
+- Modelo en Hugging Face: https://huggingface.co/Drowsy-zZ/exaone-nsmc-lora-merged
 - Referencia arXiv citada en las etiquetas del repositorio: https://arxiv.org/abs/1910.09700 (corresponde a Lacoste et al., sobre la estimacion de emisiones de carbono en aprendizaje automatico; aparece en la plantilla de la model card y no describe este modelo)
 - Referencia externa no verificada a la familia base: https://huggingface.co/LGAI-EXAONE (no aparece en la busqueda web realizada; consultar la model card oficial del modelo base para licencia y especificaciones)
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre su autor: los resultados obtenidos correspondian a temas sin relacion (TikTok, archivos de fuentes tipograficas y foros de electronica), por lo que no se incluyen.

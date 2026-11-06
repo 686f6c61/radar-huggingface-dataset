@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucashg/mellions-tts` es un modelo publicado en HuggingFace por el usuario lucashg bajo licencia Apache 2.0. La model card asociada no contiene descripción funcional, arquitectura, datos de entrenamiento ni especificaciones técnicas: únicamente incluye la declaración de licencia. Por el identificador del repositorio (`mellions-tts`) se infiere que se trata de un sistema de síntesis de voz (text-to-speech), aunque esta inferencia no está confirmada por la documentación del autor.
+`lucashg/mellions-tts` es un modelo publicado en Hugging Face por el usuario lucashg bajo licencia Apache 2.0. La model card asociada no contiene descripción funcional, arquitectura, datos de entrenamiento ni especificaciones técnicas: únicamente incluye la declaración de licencia. Por el identificador del repositorio (`mellions-tts`) se infiere que se trata de un sistema de síntesis de voz (text-to-speech), aunque esta inferencia no está confirmada por la documentación del autor.
 
 El modelo no registra descargas ni likes en el momento de la consulta y fue creado y actualizado en la misma fecha (2 de noviembre de 2026), lo que sugiere una publicación reciente y sin adopción comunitaria documentada. No se dispone de información sobre parámetros, contexto, idiomas soportados ni formato de pesos.
 
@@ -23,7 +23,7 @@ Dada la ausencia de documentación técnica, esta ficha recoge los únicos datos
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer, un modelo híbrido, un sistema basado en difusión o una arquitectura específica para síntesis de voz (por ejemplo, un modelo acústico con vocoder separado). Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o cualquier innovación técnica asociada.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer, un modelo híbrido, un sistema basado en difusión o una arquitectura específica para síntesis de voz (por ejemplo, un modelo acústico con vocoder separado). Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o cualquier innovación técnica asociada.
 
 El único dato técnico verificable es la licencia Apache 2.0 declarada en los metadatos y en el README. Cualquier afirmación adicional sobre el proceso de entrenamiento sería especulativa y no se incluye en esta ficha.
 
@@ -71,5 +71,5 @@ No disponible. No se dispone de información sobre la categoría exacta del mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucashg/mellions-tts
+- Hugging Face: https://huggingface.co/lucashg/mellions-tts
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

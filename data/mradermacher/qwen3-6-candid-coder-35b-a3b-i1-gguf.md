@@ -83,7 +83,7 @@ La comparativa con Qwen2.5-Coder-32B y DeepSeek-Coder-V2-Lite se basa en caracte
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-35B-A3B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-35B-A3B-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Qwen3.6-Candid-Coder-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/DarkKitsune/Qwen3.6-Candid-Coder-35B-A3B
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen3.6-Candid-Coder-35B-A3B-i1-GGUF

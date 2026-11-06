@@ -100,7 +100,7 @@ La comparacion con alternativas monoliticas de tamano similar (por ejemplo, mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium
 - Repositorio de pesos GGUF: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium-GGUF
 - Arbol de descargas GGUF: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium-GGUF/tree/main
 - Input-Divisor Q4_K_M: https://huggingface.co/Convergent-ch/Alpina-Endas-2.2-AoM-10B-Medium-GGUF/resolve/main/input-divisor-Q4_K_M.gguf?download=true

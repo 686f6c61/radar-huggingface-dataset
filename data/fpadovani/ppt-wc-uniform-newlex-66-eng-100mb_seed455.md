@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-wc-uniform-newlex-66-eng-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario fpadovani. Se trata de un modelo de generación de texto de pequeno tamano, con 86.508.288 parametros reales confirmados en los pesos safetensors, construido sobre una arquitectura tipo GPT-2 (transformer decoder-only) segun las etiquetas del repositorio. El ajuste se ha realizado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de HuggingFace.
+El modelo `ppt-wc-uniform-newlex-66-eng-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario fpadovani. Se trata de un modelo de generación de texto de pequeno tamano, con 86.508.288 parametros reales confirmados en los pesos safetensors, construido sobre una arquitectura tipo GPT-2 (transformer decoder-only) segun las etiquetas del repositorio. El ajuste se ha realizado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de Hugging Face.
 
 El interes de este modelo es fundamentalmente academico y experimental: forma parte de una familia de modelos pequenos (los "goldfish") entrenados con volumenes reducidos de datos (100 MB) para un idioma concreto, en este caso presumiblemente ingles segun la nomenclatura `eng_latn_100mb` del modelo base. El sufijo `seed455` sugiere que se trata de una ejecucion concreta dentro de un barrido experimental con distintas semillas, y `ppt-wc-uniform-newlex-66` apunta a una configuracion especifica de entrenamiento, aunque el autor no documenta su significado.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed455` | 86.508.288 | No disponible | No publicado | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | HuggingFace |
-| Otros modelos de la familia goldfish (por idioma) | No disponible | No disponible | No disponible | No disponible | HuggingFace |
+| `fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed455` | 86.508.288 | No disponible | No publicado | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible | Hugging Face |
+| Otros modelos de la familia goldfish (por idioma) | No disponible | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas. La unica comparacion documentada es con su propio modelo base, del que este es un ajuste fino por SFT; no se han publicado metricas que permitan establecer si el ajuste mejora o degrada el rendimiento respecto al base.
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-66-eng-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/p9qsfj0r

@@ -74,12 +74,12 @@ Error de calibración esperado (ECE, menor es mejor) en la misma mitad real de p
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en la prueba real | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TinyJudge v2.1 | Encoder clasificador (ModernBERT + cabeza binaria) | 149,6 M | 512 tokens en entrenamiento | 88,0 % global (208 juicios), 89,9 % en cascada | apache-2.0 | HuggingFace y Docker |
+| TinyJudge v2.1 | Encoder clasificador (ModernBERT + cabeza binaria) | 149,6 M | 512 tokens en entrenamiento | 88,0 % global (208 juicios), 89,9 % en cascada | apache-2.0 | Hugging Face y Docker |
 | Juez LLM Qwen 3.8 27B (sin razonamiento) | LLM generativo usado como juez | 27 000 M (aproximado) | no disponible | 81,2 % global (208 juicios) | no disponible | no disponible |
-| `answerdotai/ModernBERT-base` | Encoder transformer base | 149 M | no disponible | no disponible (no es un juez entrenado) | apache-2.0 | HuggingFace |
+| `answerdotai/ModernBERT-base` | Encoder transformer base | 149 M | no disponible | no disponible (no es un juez entrenado) | apache-2.0 | Hugging Face |
 | TinyJudge (marco del artículo arXiv 2606.07520) | Ensamble de modelos especialistas pequeños | alrededor de 0,6 B por especialista | no disponible | no disponible | no disponible | Publicación académica |
 
-Advertencia sobre la comparativa: el trabajo académico titulado también "TinyJudge" (ACL 2026 / arXiv 2606.07520) describe un marco distinto, basado en un ensamble de modelos especialistas de aproximadamente 0,6 B destilados de modelos frontera para dar recompensas en RLVR. Comparte nombre, pero no es el mismo artefacto que este modelo de 150 M alojado en HuggingFace, y no se ha encontrado relación declarada entre ambos en la información disponible.
+Advertencia sobre la comparativa: el trabajo académico titulado también "TinyJudge" (ACL 2026 / arXiv 2606.07520) describe un marco distinto, basado en un ensamble de modelos especialistas de aproximadamente 0,6 B destilados de modelos frontera para dar recompensas en RLVR. Comparte nombre, pero no es el mismo artefacto que este modelo de 150 M alojado en Hugging Face, y no se ha encontrado relación declarada entre ambos en la información disponible.
 
 ## Limitaciones y advertencias
 
@@ -99,11 +99,11 @@ Advertencia sobre la comparativa: el trabajo académico titulado también "TinyJ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharanSripadi/tinyjudge
+- Modelo en Hugging Face: https://huggingface.co/CharanSripadi/tinyjudge
 - Repositorio de código, pipeline de datos y API: https://github.com/Charansripadi/tinyjudge
 - Imagen Docker del servicio: `ghcr.io/charansripadi/tinyjudge` (puerto 7860)
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
 - Artículo relacionado por nombre, TinyJudge: Unverifiable Constraint Alignment via Lightweight Specialist Ensembles (arXiv): https://arxiv.org/abs/2606.07520
 - Versión HTML del artículo: https://arxiv.org/html/2606.07520v1
 - Entrada en ACL Anthology: https://aclanthology.org/2026.acl-long.1204/
-- Colección de HuggingFace "TinyJudge | Small Language Model as a Judge": https://huggingface.co/collections/1rsh/tinyjudge-small-language-model-as-a-judge
+- Colección de Hugging Face "TinyJudge | Small Language Model as a Judge": https://huggingface.co/collections/1rsh/tinyjudge-small-language-model-as-a-judge

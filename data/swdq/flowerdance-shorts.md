@@ -34,7 +34,7 @@ La entrada de audio se procesa a 30 Hz con 35 canales. La salida de movimiento c
 - Sincronizacion del movimiento con el ritmo y la estructura musical, sin necesidad de entrada de genero.
 - Procesamiento de secuencias largas sin segmentacion explicita de la pista de audio.
 - El repositorio incluye un script de inferencia (`infer_safetensors.py`) que genera un archivo NPZ con el movimiento.
-- El Space de HuggingFace asociado acepta subidas de audio, procesa la secuencia completa y devuelve un video con esqueleto frontal/lateral junto al NPZ.
+- El Space de Hugging Face asociado acepta subidas de audio, procesa la secuencia completa y devuelve un video con esqueleto frontal/lateral junto al NPZ.
 - Tambien ofrece una previsualizacion 3D retargetizada al personaje Fuwawa Abyssgard, con un archivo VMD opcional.
 - No soporta tool calling, function calling, agentes ni razonamiento multi-paso, al tratarse de un modelo de generacion de movimiento condicionado por audio.
 
@@ -64,7 +64,7 @@ Estos valores corresponden a comparaciones de reconstruccion sobre el conjunto d
 - VRAM estimada para inferencia: no disponible oficialmente. Dado que los pesos safetensors ocupan 0.4 GB y el modelo tiene 62.9 millones de parametros, la inferencia deberia caber en GPUs de consumo con al menos 2 GB de VRAM, pero no hay un dato confirmado.
 - GPU recomendada: NVIDIA GB10 (DGX Spark) fue el entorno probado por el autor, con Python 3.12, PyTorch 2.14 y CUDA 13. Se requiere una instalacion de PyTorch compatible con CUDA y una extension nativa `selective_scan_cuda` de Mamba.
 - Cabe en GPU de consumo: si se instala correctamente la extension de Mamba, es probable que funcione en tarjetas como la serie RTX 3060 o superiores, aunque no hay confirmacion explicita.
-- Opciones de despliegue: el repositorio proporciona `infer_safetensors.py` para inferencia local. Tambien existe un Space ZeroGPU en HuggingFace que ejecuta el modelo con Python 3.12 y PyTorch 2.9.1.
+- Opciones de despliegue: el repositorio proporciona `infer_safetensors.py` para inferencia local. Tambien existe un Space ZeroGPU en Hugging Face que ejecuta el modelo con Python 3.12 y PyTorch 2.9.1.
 - Latencia y throughput: no disponible.
 - Dependencias adicionales: se requiere instalar `mamba-ssm` con `--no-build-isolation` y disponer de ffmpeg en el sistema. La extension Mamba es especifica de la arquitectura y no se incluye como binario ARM64.
 
@@ -79,7 +79,7 @@ La comparacion mas directa es con el modelo base FlowerDance original (xlt99/Flo
 | Entrenamiento | Modelo original ECCV 2026 | Fine-tuning desde epoch 390, publicado en epoch 850 |
 | Datos | No disponible | 127 videos con pseudo-etiquetas SAM3 Body/MHR |
 | Licencia | No disponible | No disponible |
-| Disponibilidad | Repositorio GitHub y HuggingFace | HuggingFace con safetensors y codigo de inferencia |
+| Disponibilidad | Repositorio GitHub y Hugging Face | Hugging Face con safetensors y codigo de inferencia |
 
 No se dispone de informacion sobre otros modelos como EDGE o Dance Diffusion en la busqueda realizada.
 
@@ -97,8 +97,8 @@ No se dispone de informacion sobre otros modelos como EDGE o Dance Diffusion en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swdq/FlowerDance-Shorts
+- Modelo en Hugging Face: https://huggingface.co/swdq/FlowerDance-Shorts
 - Demo en Space: https://huggingface.co/spaces/swdq/FlowerDance-Shorts
 - Repositorio del modelo base: https://github.com/XulongT/FlowerDance
 - Pagina del paper FlowerDance (ECCV 2026): https://sun-happy-ykx.github.io/FlowerDance/
-- Modelo base en HuggingFace: https://huggingface.co/xlt99/FlowerDance
+- Modelo base en Hugging Face: https://huggingface.co/xlt99/FlowerDance

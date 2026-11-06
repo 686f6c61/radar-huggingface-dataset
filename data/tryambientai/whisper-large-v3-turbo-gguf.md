@@ -94,7 +94,7 @@ La comparación con modelos ASR alternativos (p. ej. NVIDIA Parakeet, Meta MMS, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tryambientai/whisper-large-v3-turbo-gguf
+- Repositorio Hugging Face: https://huggingface.co/tryambientai/whisper-large-v3-turbo-gguf
 - Modelo base: https://huggingface.co/openai/whisper-large-v3-turbo
 - Commit del modelo base usado para la conversión: https://huggingface.co/openai/whisper-large-v3-turbo/commit/41f01f3
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

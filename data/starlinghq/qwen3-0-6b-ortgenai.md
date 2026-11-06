@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Starlinghq/qwen3-0.6b-ortgenai
+- Hugging Face: https://huggingface.co/Starlinghq/qwen3-0.6b-ortgenai
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio Starling: https://github.com/starlinghq/starling
 - Revisión fijada del modelo base: `c1899de289a04d12100db370d81485cdf75e47ca`

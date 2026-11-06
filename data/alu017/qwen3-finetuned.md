@@ -23,7 +23,7 @@ La relevancia de este modelo radica en que parte de un modelo base compacto (0.6
 
 El modelo es un fine-tuning del modelo Qwen/Qwen3-0.6B, que emplea una arquitectura transformer decoder-only con atención causal. No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens utilizados ni si se aplicaron técnicas como RLHF o DPO. Los únicos datos de entrenamiento disponibles son los hiperparámetros: learning rate de 2e-05, batch size de entrenamiento de 2 (con acumulación de gradientes de 8, resultando en un batch efectivo de 16), optimizador AdamW, scheduler lineal y 2 épocas. La pérdida de validación final fue de 2.8675, lo que sugiere un ajuste moderado, pero sin contexto adicional no se puede interpretar su calidad relativa.
 
-No se documentan innovaciones técnicas específicas en el fine-tuning, como decodificación especulativa o atención lineal. El modelo se entrenó con precisión mixta nativa (AMP) y se generó mediante el Trainer de HuggingFace.
+No se documentan innovaciones técnicas específicas en el fine-tuning, como decodificación especulativa o atención lineal. El modelo se entrenó con precisión mixta nativa (AMP) y se generó mediante el Trainer de Hugging Face.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ Dado que el modelo tiene 596 millones de parámetros, los requisitos de hardware
 - VRAM estimada para inferencia: en FP16, el modelo ocupa aproximadamente 1,2 GB (596M × 2 bytes). En cuantización int8, alrededor de 0,6 GB. En cuantización int4, unos 0,3 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en FP16. Tarjetas como NVIDIA GTX 1060 6GB, RTX 2060, RTX 3060, o superiores son suficientes. También puede ejecutarse en CPU con suficiente RAM.
 - Compatibilidad con GPU de consumo: sí, cabe en la mayoría de GPUs de consumo actuales.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante la API de HuggingFace Inference Endpoints. No se proporcionan datos de latencia o throughput.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o mediante la API de Hugging Face Inference Endpoints. No se proporcionan datos de latencia o throughput.
 
 ## Comparativa con modelos similares
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace: Alu017/qwen3-finetuned](https://huggingface.co/Alu017/qwen3-finetuned)
+- [Hugging Face: Alu017/qwen3-finetuned](https://huggingface.co/Alu017/qwen3-finetuned)
 - [Modelo base: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)

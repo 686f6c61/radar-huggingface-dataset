@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kyttanaka/tiny-transformer-matching-best es un repositorio de HuggingFace que contiene una implementación propia de un transformer de escala mínima orientada a tareas de *matching* (emparejamiento o comparación de pares de entradas). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), tal y como declara explícitamente su model card. El tamaño total es de 24.832 parámetros, lo que lo sitúa en el rango de los juguetes experimentales más que en el de modelos utilizables en producción.
+Kyttanaka/tiny-transformer-matching-best es un repositorio de Hugging Face que contiene una implementación propia de un transformer de escala mínima orientada a tareas de *matching* (emparejamiento o comparación de pares de entradas). No se trata de un modelo entrenado, sino de un punto de partida reproducible: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*), tal y como declara explícitamente su model card. El tamaño total es de 24.832 parámetros, lo que lo sitúa en el rango de los juguetes experimentales más que en el de modelos utilizables en producción.
 
 El autor, Kyttanaka, publica el artefacto bajo licencia Apache 2.0 junto con cuatro archivos de soporte: `model.py` (artefacto principal con el modelo y un punto de entrada ejecutable), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto) y `README.md`. La relevancia del repositorio es, por tanto, metodológica: sirve como plantilla reproducible para montar experimentos de comparación, no como una alternativa a modelos preentrenados.
 
@@ -82,6 +82,6 @@ No disponible. El repositorio no declara categoría de modelo entrenado ni publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kyttanaka/tiny-transformer-matching-best
+- Repositorio en Hugging Face: https://huggingface.co/Kyttanaka/tiny-transformer-matching-best
 - Archivos incluidos en el repositorio: `model.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicialización)
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes sobre este modelo; las consultas devuelven únicamente resultados sin relación (páginas sobre la raza felina Sphynx).

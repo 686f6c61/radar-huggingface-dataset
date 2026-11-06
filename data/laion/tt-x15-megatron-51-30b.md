@@ -87,7 +87,7 @@ La comparativa mas relevante es contra el modelo base Qwen3-Coder-30B-A3B-Instru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/tt-x15-megatron-51-30B
+- Modelo en Hugging Face: https://huggingface.co/laion/tt-x15-megatron-51-30B
 - Dataset de trazas de entrenamiento: https://huggingface.co/datasets/penfever/tt-x15-megatron
 - Repositorio OpenEuroLLM (runtime Megatron): https://github.com/kcc-lion/openeurollm/tree/v0.15/megatron/legacy/model
 - Codigo del modelo GPT en OpenEuroLLM: https://github.com/kcc-lion/openeurollm/blob/v0.15/megatron/legacy/model/gpt_model.py

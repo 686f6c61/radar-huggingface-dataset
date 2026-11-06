@@ -71,7 +71,7 @@ No disponible. No se han identificado en la informacion proporcionada coleccione
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zabin/Qwen_Image_2512_LoRAs
+- Repositorio Hugging Face: https://huggingface.co/Zabin/Qwen_Image_2512_LoRAs
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2512
 - Guia de entrenamiento LoRA con AI Toolkit: https://www.runcomfy.com/trainer/ai-toolkit/qwen-image-2512-lora-training
 - Guia de entrenamiento de LoRA de personaje: https://apatero.com/blog/qwen-image-2512-character-lora-training-real-people-guide-2025

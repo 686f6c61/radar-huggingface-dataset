@@ -21,7 +21,7 @@ Su relevancia actual es acotada pero concreta: sirve como referencia pública de
 | Licencia | no disponible |
 | Formato de pesos | safetensors (requiere custom_code: alicet5_moe) |
 
-Datos adicionales relevantes: 6 capas de encoder y 6 de decoder, anchura 512; atención de 8 cabezas en el encoder y 8 cabezas de consulta / 2 de clave-valor en el decoder; anchura de experto 160; RoPE, RMSNorm, residuales en FP32 y embeddings compartidos atados. Tamaño del repositorio: 0,2 GB. Vocabulario: 33.283 entradas. Descargas y likes en HuggingFace: 0 en la fecha de la consulta.
+Datos adicionales relevantes: 6 capas de encoder y 6 de decoder, anchura 512; atención de 8 cabezas en el encoder y 8 cabezas de consulta / 2 de clave-valor en el decoder; anchura de experto 160; RoPE, RMSNorm, residuales en FP32 y embeddings compartidos atados. Tamaño del repositorio: 0,2 GB. Vocabulario: 33.283 entradas. Descargas y likes en Hugging Face: 0 en la fecha de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -81,9 +81,9 @@ La información disponible no incluye comparaciones de benchmarks con alternativ
 
 | Modelo | Parámetros totales | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| d0rj/t5-moe-55M-base | 54,86 M | 2.048 tokens (bloques de entrenamiento; encoder hasta 2.050) | no disponible | HuggingFace, requiere código personalizado |
-| yandex/AliceAI-T5-35B-A0.6B | 35 B totales / 0,6 B activos (según su nombre) | no disponible | no disponible | HuggingFace; citado como inspiración arquitectónica, sin datos comparativos en la información disponible |
-| q-project/Q-50M-Base | no disponible | no disponible | no disponible | HuggingFace; citado únicamente como base del tokenizador |
+| d0rj/t5-moe-55M-base | 54,86 M | 2.048 tokens (bloques de entrenamiento; encoder hasta 2.050) | no disponible | Hugging Face, requiere código personalizado |
+| yandex/AliceAI-T5-35B-A0.6B | 35 B totales / 0,6 B activos (según su nombre) | no disponible | no disponible | Hugging Face; citado como inspiración arquitectónica, sin datos comparativos en la información disponible |
+| q-project/Q-50M-Base | no disponible | no disponible | no disponible | Hugging Face; citado únicamente como base del tokenizador |
 | Otras alternativas de tamaño similar (p. ej. T5-small o FLAN-T5-small) | no disponible en la información proporcionada | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparables entre estos modelos dentro de la información facilitada, por lo que no es posible establecer una comparación de rendimiento rigurosa.
@@ -100,11 +100,11 @@ No se dispone de datos de benchmarks comparables entre estos modelos dentro de l
 - Los resultados de benchmarks están declarados por el autor con `verified: false`, es decir, no han sido replicados por un tercero independiente.
 - Discrepancia menor en el recuento de parámetros: 54.858.272 según safetensors frente a los 54.858.240 que cita el texto de la model card.
 - El recuento de tokens de entrenamiento mide bloques de entrada procesados, no texto único ni tokens objetivo supervisados, por lo que no debe interpretarse como volumen de datos único.
-- Sin descargas ni interacciones registradas en HuggingFace en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
+- Sin descargas ni interacciones registradas en Hugging Face en el momento de la consulta, lo que implica ausencia de validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/t5-moe-55M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/t5-moe-55M-base
 - Dataset de entrenamiento (FineWeb-Edu): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Paper del objetivo UL2: https://arxiv.org/abs/2205.05131
 - Arquitectura de inspiración (yandex/AliceAI-T5-35B-A0.6B): https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B

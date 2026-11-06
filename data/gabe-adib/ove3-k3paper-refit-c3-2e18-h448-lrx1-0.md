@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ove3-k3paper-refit-c3.2e18-h448-lrx1.0` es un checkpoint de investigación publicado por el usuario `gabe-adib` en HuggingFace. No es un modelo instructivo ni un modelo listo para producto: es el resultado de una ejecución concreta dentro de un barrido de recetas de entrenamiento ("ove3 K3 recipe sweeps"), en la que se reproduce la receta de Kimi K3 tal como fue publicada (variante K3-PAPER) sobre la celda IsoFLOP de 3,2e18 FLOPs de entrenamiento con tamaño oculto 448. El checkpoint corresponde al paso de validación 11.286 de un total de 12.539, con una pérdida de validación de 1,1310 y una pérdida held-out de 1,2258 nats/carácter ponderada por mezcla sobre 9 dominios.
+`ove3-k3paper-refit-c3.2e18-h448-lrx1.0` es un checkpoint de investigación publicado por el usuario `gabe-adib` en Hugging Face. No es un modelo instructivo ni un modelo listo para producto: es el resultado de una ejecución concreta dentro de un barrido de recetas de entrenamiento ("ove3 K3 recipe sweeps"), en la que se reproduce la receta de Kimi K3 tal como fue publicada (variante K3-PAPER) sobre la celda IsoFLOP de 3,2e18 FLOPs de entrenamiento con tamaño oculto 448. El checkpoint corresponde al paso de validación 11.286 de un total de 12.539, con una pérdida de validación de 1,1310 y una pérdida held-out de 1,2258 nats/carácter ponderada por mezcla sobre 9 dominios.
 
 La arquitectura es un transformer decoder-only con mezcla de expertos: MoE de tipo `kimi_linear` con LatentMoE de 512 expertos de media anchura, enrutamiento top-16 con ratio latente 0,5 y sesgo de experto por cuantiles sin pérdida auxiliar. Incorpora Attention Residuals con tamaño de bloque 2, activación SiTU-GLU, compuerta de salida MLA, KDA full-rank con compuerta segura (cota inferior -5), Muon por cabeza con `qk_clip`, RMSNorm con eps 1e-5 y salida de atención MLA en fp32.
 
@@ -29,7 +29,7 @@ Su relevancia es metodológica, no de producto: sirve para estudiar el ajuste de
 | Pérdida de validación | 1,1310 |
 | Pérdida held-out | 1,2258 nats/carácter (ponderada por mezcla, 9 dominios) |
 | Tamaño del repositorio | 3,8 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-19 |
 
@@ -87,7 +87,7 @@ No se han identificado en la información disponible checkpoints públicos compa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ove3-k3paper-refit-c3.2e18-h448-lrx1.0 | no disponible | no disponible (secuencias de 8.192 caracteres) | Pérdida held-out 1,2258 nats/carácter | no disponible | Checkpoint Megatron en HuggingFace |
+| ove3-k3paper-refit-c3.2e18-h448-lrx1.0 | no disponible | no disponible (secuencias de 8.192 caracteres) | Pérdida held-out 1,2258 nats/carácter | no disponible | Checkpoint Megatron en Hugging Face |
 | Receta de control ove3 K3 (misma celda IsoFLOP) | no disponible | no disponible | Referencia de la ley de LR (este run usa 1,0×) | no disponible | No publicado como checkpoint en la información disponible |
 | Modelos abiertos tipo Kimi K3 | no disponible | no disponible | no disponible | no disponible | No verificable con la información disponible |
 
@@ -108,9 +108,9 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e18-h448-lrx1.0
-- Configuración de la ejecución: `config.yaml` dentro del repositorio de HuggingFace
-- Desglose de pérdida por dominio: `DOMAIN_NLL.txt` dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/gabe-adib/ove3-k3paper-refit-c3.2e18-h448-lrx1.0
+- Configuración de la ejecución: `config.yaml` dentro del repositorio de Hugging Face
+- Desglose de pérdida por dominio: `DOMAIN_NLL.txt` dentro del repositorio de Hugging Face
 - Checkpoint distribuido: carpeta `checkpoint/` del repositorio (formato Megatron-LM, incluye estado del optimizador)
 - Logs de entrenamiento y TensorBoard: carpeta `logs/` del repositorio
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente páginas sin relación con el contenido); no se dispone de paper, blog, repositorio de código ni demo adicionales.

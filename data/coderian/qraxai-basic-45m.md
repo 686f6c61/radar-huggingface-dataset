@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QraXAi-Basic-45M | ~44,75 M | 256 tokens | TinyStories (130.000 historias, 1 época) | MIT | HuggingFace, requiere `trust_remote_code` |
-| TinyStories-33M (Microsoft Research) | ~33 M | No disponible | TinyStories | No disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | WebText (~40 GB de texto web) | Licencia MIT modificada de OpenAI | HuggingFace, ampliamente integrado |
+| QraXAi-Basic-45M | ~44,75 M | 256 tokens | TinyStories (130.000 historias, 1 época) | MIT | Hugging Face, requiere `trust_remote_code` |
+| TinyStories-33M (Microsoft Research) | ~33 M | No disponible | TinyStories | No disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | WebText (~40 GB de texto web) | Licencia MIT modificada de OpenAI | Hugging Face, ampliamente integrado |
 
 Frente a TinyStories-33M, este modelo aporta más parámetros y contexto declarado de 256 tokens, pero compite en la misma franja de uso (generación de cuentos simples en inglés) y carece de cualquier benchmark publicado que permita afirmar superioridad. Frente a GPT-2 small, tiene aproximadamente una tercera parte de parámetros y cuatro veces menos contexto, y su corpus de entrenamiento es radicalmente más estrecho: no puede abordar conocimiento del mundo, código ni diálogo general. Su ventaja relativa es la licencia MIT sin ambigüedad, el tamaño del repositorio (0,2 GB frente a ~0,5 GB de GPT-2 small) y el hecho de ser un entrenamiento documentado desde cero y reproducible. No se dispone de modelos comparables adicionales en la información proporcionada.
 
@@ -104,9 +104,9 @@ Frente a TinyStories-33M, este modelo aporta más parámetros y contexto declara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coderian/QraXAi-Basic-45M
+- Modelo en Hugging Face: https://huggingface.co/coderian/QraXAi-Basic-45M
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper TinyStories (arXiv:2305.07759): https://arxiv.org/abs/2305.07759
-- Perfil del autor en HuggingFace: https://huggingface.co/coderian
+- Perfil del autor en Hugging Face: https://huggingface.co/coderian
 - Perfil del autor en GitHub: https://github.com/Coderian
 - Repositorio de datasets del autor: https://huggingface.co/coderian/datasets

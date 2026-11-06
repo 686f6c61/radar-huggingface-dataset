@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que recibe un repositorio alojado en HuggingFace bajo el identificador ASCXZ1312/MyAwesomeModel-TestRepo, publicado por el usuario ASCXZ1312 con licencia MIT. La informacion disponible es escasa y, sobre todo, contradictoria: los metadatos de la plataforma lo etiquetan con los tags transformers, pytorch, bert y feature-extraction (es decir, un encoder orientado a extraccion de representaciones), mientras que la model card describe un supuesto modelo generativo de razonamiento con mejoras en matematicas, programacion y function calling. El repositorio acumula 0 descargas y 0 likes, tiene un tamano declarado de 0,0 GB y fue creado y actualizado el 11 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambos eventos.
+MyAwesomeModel es el nombre que recibe un repositorio alojado en Hugging Face bajo el identificador ASCXZ1312/MyAwesomeModel-TestRepo, publicado por el usuario ASCXZ1312 con licencia MIT. La informacion disponible es escasa y, sobre todo, contradictoria: los metadatos de la plataforma lo etiquetan con los tags transformers, pytorch, bert y feature-extraction (es decir, un encoder orientado a extraccion de representaciones), mientras que la model card describe un supuesto modelo generativo de razonamiento con mejoras en matematicas, programacion y function calling. El repositorio acumula 0 descargas y 0 likes, tiene un tamano declarado de 0,0 GB y fue creado y actualizado el 11 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambos eventos.
 
 No se dispone de informacion sobre arquitectura concreta, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni formato de pesos. La model card emplea marcadores de posicion ("Model1", "Model2", "Model1-v2", "MyAwesomeModel-Small") en lugar de nombres reales, y las graficas a las que hace referencia (figures/fig1.png, fig2.png, fig3.png) no son verificables desde la informacion proporcionada.
 
@@ -25,7 +25,7 @@ Otros metadatos relevantes: pipeline declarado feature-extraction, libreria tran
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no permite describir la arquitectura. Los tags de HuggingFace apuntan a un transformer tipo BERT destinado a feature-extraction, mientras que la model card habla de un modelo con "profundidad de razonamiento" mejorada, mayor uso de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento. No se detalla si se trata de un transformer denso, un MoE, un modelo hibrido ni que tipo de atencion emplea.
+La informacion proporcionada no permite describir la arquitectura. Los tags de Hugging Face apuntan a un transformer tipo BERT destinado a feature-extraction, mientras que la model card habla de un modelo con "profundidad de razonamiento" mejorada, mayor uso de recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento. No se detalla si se trata de un transformer denso, un MoE, un modelo hibrido ni que tipo de atencion emplea.
 
 Respecto al entrenamiento, la model card menciona de forma generica un incremento del esfuerzo computacional y una fase de post-training con optimizacion algoritmica, pero no indica numero de tokens, composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO u otras. Tampoco se documenta el tokenizador ni si existe una variante destilada: se cita un "MyAwesomeModel-Small" con arquitectura identica al modelo base y tokenizador compartido con el modelo principal, pero sin especificar parametros ni relacion de compresion. Como datos concretos solo aparecen dos cifras de comportamiento en inferencia: en AIME 2025 la precision declarada pasa del 70 % al 87,5 % entre versiones, y el consumo medio por pregunta sube de 12K a 23K tokens, atribuido a un mayor "thinking depth".
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, la model card menciona de forma generica un increment
 - Capacidades multilingues: no disponibles. No se declara lista de idiomas en los metadatos ni en la model card, aunque las plantillas de prompt incluyen variantes en ingles.
 - Vision, audio u otras modalidades: no disponibles. No hay ninguna referencia a entrada multimodal.
 
-Advertencia: los metadatos de HuggingFace clasifican el repositorio como feature-extraction, no como text-generation. Esa discrepancia con las capacidades descritas en la model card no queda resuelta en la informacion disponible.
+Advertencia: los metadatos de Hugging Face clasifican el repositorio como feature-extraction, no como text-generation. Esa discrepancia con las capacidades descritas en la model card no queda resuelta en la informacion disponible.
 
 ## Casos de uso
 
@@ -108,6 +108,6 @@ No disponible. La model card compara exclusivamente contra referencias anonimiza
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASCXZ1312/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASCXZ1312/MyAwesomeModel-TestRepo
 
 No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos (repositorio de prompts ChatGPT_DAN, pagina principal de GitHub, Zhihu y un listado de chatbots en vietnamita) no guardan relacion con este modelo. La model card menciona un fichero LICENSE, un "code repository" y una "official website" sin proporcionar sus direcciones.

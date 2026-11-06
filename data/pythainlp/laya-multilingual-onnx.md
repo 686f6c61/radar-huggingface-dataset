@@ -98,7 +98,7 @@ No se dispone de datos de terceros comparables en la información facilitada. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pythainlp/laya-multilingual-onnx
+- Modelo en Hugging Face: https://huggingface.co/pythainlp/laya-multilingual-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint MLX de origen: https://huggingface.co/aac6fef/laya-multilingual-mlx
 - Repositorio laya-mlx (herramienta de exportación e implementación de referencia): https://github.com/mizorewww/laya-mlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DHEM Entity Matching es un conjunto de dos clasificadores de pares (pair scorers) implementados en PyTorch por el usuario alokanand002 y publicados en HuggingFace. No es un modelo de lenguaje: recibe diez características numéricas que describen la relación entre un nombre de organización consultado (habitualmente ruidoso) y un candidato de un catálogo maestro, y devuelve un único logit binario de coincidencia. El problema que resuelve es la resolución de entidades (entity matching / entity resolution) contra un catálogo de nombres canónicos que aporta el propio usuario.
+DHEM Entity Matching es un conjunto de dos clasificadores de pares (pair scorers) implementados en PyTorch por el usuario alokanand002 y publicados en Hugging Face. No es un modelo de lenguaje: recibe diez características numéricas que describen la relación entre un nombre de organización consultado (habitualmente ruidoso) y un candidato de un catálogo maestro, y devuelve un único logit binario de coincidencia. El problema que resuelve es la resolución de entidades (entity matching / entity resolution) contra un catálogo de nombres canónicos que aporta el propio usuario.
 
 El modelo es extremadamente pequeño: 9.985 parámetros, con una arquitectura de perceptrón multicapa (10 → 128 → 64 → 1) que incluye LayerNorm y dropout. Se publican dos checkpoints con propósitos distintos: `best.pt`, entrenado sobre un catálogo curado con variantes sintéticas y alias aprobados (F1 de validación 0,9907), y `real_best.pt`, entrenado con registros empresariales y alias o denominaciones anteriores respaldados por fuentes de SEC y/o OpenAlex (F1 de validación 0,9297).
 
@@ -25,7 +25,7 @@ Su relevancia es práctica: la desambiguación de nombres de organizaciones sigu
 | Configuracion de entrenamiento | Dimensión oculta 128, dropout 0,15, learning rate 0,001, weight decay 0,0001, batch size 256, 20 épocas |
 | Integridad de checkpoints | `best.pt` SHA-256 `8d0afd0874ced1f1cf6ad61fbf7dc316aa35ec8ea15854ead96559f0a499d2e8`; `real_best.pt` SHA-256 `d727e8e7b212684b34e06e3280d2c0735a23ed40a3a2804dbe9956be1fb7dc51` |
 | Libreria | pytorch |
-| Tamano del repositorio | 0,0 GB (según los metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -113,7 +113,7 @@ La diferencia clave frente a un modelo neuronal de ER basado en transformers es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alokanand002/dhem-entity-matching
+- Modelo en Hugging Face: https://huggingface.co/alokanand002/dhem-entity-matching
 - Repositorio del proyecto (código fuente, scripts de generación de datasets y utilidades de evaluación): https://huggingface.co/alokanand002/dhem-entity-matching
 - Paper: no disponible
 - Blog o artículo técnico: no disponible

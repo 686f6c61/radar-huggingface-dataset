@@ -89,7 +89,7 @@ No se dispone de datos públicos de rendimiento que permitan comparar este draft
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-GPTQ-PerfectBlend-NVFP4-W4A4
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-GPTQ-PerfectBlend-NVFP4-W4A4
 - Drafter de origen: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conjunto de calibración regenerado: https://huggingface.co/shanjiaz/OpenPerfectBlend-Qwen38-27B-regenerated

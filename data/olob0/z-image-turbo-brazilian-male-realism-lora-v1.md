@@ -88,7 +88,7 @@ No se dispone de datos publicados de rendimiento que permitan una comparacion cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olob0/z-image-turbo-brazilian-male-realism-lora-v1
+- Modelo en Hugging Face: https://huggingface.co/olob0/z-image-turbo-brazilian-male-realism-lora-v1
 - Version v2 (recomendada por el autor): https://huggingface.co/olob0/z-image-turbo-brazilian-male-realism-lora-v2
 - Modelo base: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Pagina de apoyo del autor (Ko-fi): https://ko-fi.com/R6R0PGKEJ

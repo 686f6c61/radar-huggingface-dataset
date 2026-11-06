@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TerakomariGandesblood-Lora es un LoRA de personaje para modelos de difusion SDXL, desarrollado por el usuario abbuibuibui y publicado en HuggingFace. Reproduce a Terakomari Gandesblood, protagonista de la serie *The Vexations of a Shut-In Vampire Princess* (Hikikomari Kyuuketsuki no Monmon), y esta entrenado sobre el checkpoint comunitario waiIllustriousSDXL v17, perteneciente a la familia Illustrious/NoobAI de SDXL afinada para ilustracion anime.
+TerakomariGandesblood-Lora es un LoRA de personaje para modelos de difusion SDXL, desarrollado por el usuario abbuibuibui y publicado en Hugging Face. Reproduce a Terakomari Gandesblood, protagonista de la serie *The Vexations of a Shut-In Vampire Princess* (Hikikomari Kyuuketsuki no Monmon), y esta entrenado sobre el checkpoint comunitario waiIllustriousSDXL v17, perteneciente a la familia Illustrious/NoobAI de SDXL afinada para ilustracion anime.
 
 El repositorio incluye siete pesos correspondientes a las epocas formales E1-E7 del entrenamiento, con recomendacion explicita de E6 como opcion por defecto a fuerza 0.8. El modelo resuelve el problema de consistencia de identidad de un personaje concreto en generacion texto-a-imagen: pelo rubio, ojos rojos, cuernos y colmillo, ademas de varios conjuntos de ropa etiquetados con tokens propios.
 
@@ -75,7 +75,7 @@ No se dispone de datos de otros LoRA de personaje comparables en la informacion 
 
 | Modelo | Base | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TerakomariGandesblood-Lora (E6) | waiIllustriousSDXL v17 | no disponible (rank 32) | no aplica | Evaluacion cualitativa del autor | creativeml-openrail-m | HuggingFace, 77 descargas |
+| TerakomariGandesblood-Lora (E6) | waiIllustriousSDXL v17 | no disponible (rank 32) | no aplica | Evaluacion cualitativa del autor | creativeml-openrail-m | Hugging Face, 77 descargas |
 | waiIllustriousSDXL v17 | SDXL | no disponible | no aplica | no disponible | no disponible | checkpoint comunitario |
 | Familia Illustrious / NoobAI | SDXL | no disponible | no aplica | no disponible | no disponible | indicada como compatible por el autor |
 
@@ -94,7 +94,7 @@ No se dispone de datos de otros LoRA de personaje comparables en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/TerakomariGandesblood-Lora
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/TerakomariGandesblood-Lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/abbuibuibui/TerakomariGandesblood-Dataset
 - README en chino: ./README_zh.md (referenciado en la model card)
 - Notas de evaluacion en chino: ./evaluation/横向测评记录.md (referenciado en la model card)

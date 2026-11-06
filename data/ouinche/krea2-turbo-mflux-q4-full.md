@@ -78,7 +78,7 @@ Comparado con la distribución base de krea/krea-2-turbo, esta versión ahorra m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ouinche/krea2-turbo-mflux-q4-full
+- Repositorio en Hugging Face: https://huggingface.co/Ouinche/krea2-turbo-mflux-q4-full
 - Modelo base: https://huggingface.co/krea/krea-2-turbo
 - Licencia CreativeML Open RAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - MLX (framework de Apple): https://github.com/ml-explore/mlx

@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace (repositorio GGUF): https://huggingface.co/sizzlebop/Llama-3.2-3B-TechWriter-Instruct-GGUF
+- Hugging Face (repositorio GGUF): https://huggingface.co/sizzlebop/Llama-3.2-3B-TechWriter-Instruct-GGUF
 - Modelo base del fine-tune: https://huggingface.co/Shankarblr/Llama-3.2-3B-TechWriter-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Herramienta de conversión y ejecución (`llama.cpp`): no se incluye enlace en la información proporcionada

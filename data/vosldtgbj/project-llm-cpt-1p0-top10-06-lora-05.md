@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de especificaciones suficientes para una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-06-lora-05
+- Hugging Face: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-06-lora-05
 - Licencia Gemma 4 (referenciada en la model card): https://ai.google.dev/gemma/docs/gemma_4_license
 - Modelo base: `google/gemma-4-12B` (referenciado, sin URL directa en la información)
 - Otro checkpoint de la misma serie: https://huggingface.co/vosldtgbj/project-llm-cpt-0p5-lora-13

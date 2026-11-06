@@ -24,7 +24,7 @@ Se trata, por tanto, de un modelo pensado para reproducibilidad, análisis de de
 | Modulos objetivo | `all-linear` |
 | Libreria | `peft` |
 | Modelo base | `thinkingmachines/Inkling-Small` |
-| Tamano del repositorio | 16,9 GB (segun HuggingFace; no se detalla su composicion) |
+| Tamano del repositorio | 16,9 GB (segun Hugging Face; no se detalla su composicion) |
 | Renderizador de servicio | `tml_v0`, razonamiento desactivado, esfuerzo 0.0 |
 | Fecha de entrenamiento | 2026-09-17 |
 | Fecha de exportacion | 2026-09-18 |
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - El adaptador se carga sobre el modelo base en `bfloat16` mediante `device_map="auto"`, por lo que el requisito dominante es el del modelo base en precision de 16 bits, no el del adaptador.
 - GPU recomendadas: no disponible, al desconocerse el tamano del modelo base. Como referencia general, un adaptador de este tipo se puede servir en GPUs con soporte de PEFT, pero no es posible dar un modelo concreto sin conocer los parametros de Inkling-Small.
 - Encaje en GPU de consumo: no se puede confirmar. Si el modelo base es de rango 7-8B de parametros, cabria en GPUs de consumo con 16-24 GB de VRAM en cuantizacion de 8 o 4 bits; si es mayor, no. Este extremo no esta documentado.
-- Almacenamiento: el repositorio ocupa 16,9 GB segun HuggingFace, cifra notablemente alta para un adaptador LoRA de rango 64. No se detalla que componentes la componen, por lo que conviene verificar el contenido antes de planificar el despliegue.
+- Almacenamiento: el repositorio ocupa 16,9 GB segun Hugging Face, cifra notablemente alta para un adaptador LoRA de rango 64. No se detalla que componentes la componen, por lo que conviene verificar el contenido antes de planificar el despliegue.
 - Opciones de despliegue: `transformers` + `peft` (procedimiento documentado por el autor), vLLM con soporte de adaptadores LoRA, TGI o llama.cpp previa conversion del adaptador a GGUF. El autor indica servir y evaluar con el renderizador `tml_v0`, con razonamiento desactivado y esfuerzo 0.0.
 - Latencia y throughput: no disponible.
 
@@ -75,8 +75,8 @@ No se dispone de informacion sobre modelos comparables. El unico punto de refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-inkling-oai-gen-mid-g2-b2` | No disponible (adaptador LoRA r=64 sobre Inkling-Small) | No disponible (entrenado a 8192 tokens) | No publicado | No disponible | HuggingFace, 0 descargas |
-| `thinkingmachines/Inkling-Small` (base) | No disponible | No disponible | No publicado | No disponible | HuggingFace (referenciado como base) |
+| `ct-inkling-oai-gen-mid-g2-b2` | No disponible (adaptador LoRA r=64 sobre Inkling-Small) | No disponible (entrenado a 8192 tokens) | No publicado | No disponible | Hugging Face, 0 descargas |
+| `thinkingmachines/Inkling-Small` (base) | No disponible | No disponible | No publicado | No disponible | Hugging Face (referenciado como base) |
 | Otras alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,9 +94,9 @@ No se dispone de informacion sobre modelos comparables. El unico punto de refere
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g2-b2
-- Modelo base en HuggingFace: https://huggingface.co/thinkingmachines/Inkling-Small
-- Pagina del autor en HuggingFace: https://huggingface.co/arianaazarbal
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g2-b2
+- Modelo base en Hugging Face: https://huggingface.co/thinkingmachines/Inkling-Small
+- Pagina del autor en Hugging Face: https://huggingface.co/arianaazarbal
 - Ruta original de Tinker (no es una URL navegable): `tinker://cf7ced30-78df-5c21-9699-724179232829:train:0/sampler_weights/inkoaig2_inkoai_g2_b2_s1_final`
 - Ficheros incluidos en el repositorio: `training_seed_constitution.md` y `tinker_meta.json`
 - La busqueda web realizada no devolvio ningun enlace relevante (papers, blogs, repos o demos) sobre este modelo ni sobre su modelo base.

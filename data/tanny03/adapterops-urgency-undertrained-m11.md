@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tanny03/adapterops-urgency-undertrained-m11 es un adaptador LoRA publicado en HuggingFace mediante la librería PEFT (version 0.20.0 registrada en la model card) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se trata, por tanto, de un ajuste por adaptador de bajo rango y no de un modelo completo: el repositorio pesa aproximadamente 0,1 GB y contiene únicamente los pesos del adaptador en formato safetensors, que deben cargarse junto al modelo base para poder ejecutar inferencia.
+Tanny03/adapterops-urgency-undertrained-m11 es un adaptador LoRA publicado en Hugging Face mediante la librería PEFT (version 0.20.0 registrada en la model card) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se trata, por tanto, de un ajuste por adaptador de bajo rango y no de un modelo completo: el repositorio pesa aproximadamente 0,1 GB y contiene únicamente los pesos del adaptador en formato safetensors, que deben cargarse junto al modelo base para poder ejecutar inferencia.
 
-La información publicada por el autor es mínima. La model card es la plantilla genérica de HuggingFace con la mayoría de campos marcados como "[More Information Needed]", sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin hiperparámetros y sin resultados de evaluación. El propio identificador del modelo incluye el término "undertrained" (poco entrenado) y "urgency" (urgencia), lo que sugiere un experimento de ajuste orientado a tareas relacionadas con la urgencia, presumiblemente en su version número 11, pero ninguna documentación del repositorio confirma ese propósito.
+La información publicada por el autor es mínima. La model card es la plantilla genérica de Hugging Face con la mayoría de campos marcados como "[More Information Needed]", sin licencia declarada, sin idiomas declarados, sin datos de entrenamiento, sin hiperparámetros y sin resultados de evaluación. El propio identificador del modelo incluye el término "undertrained" (poco entrenado) y "urgency" (urgencia), lo que sugiere un experimento de ajuste orientado a tareas relacionadas con la urgencia, presumiblemente en su version número 11, pero ninguna documentación del repositorio confirma ese propósito.
 
 Por su relevancia, se trata de un artefacto experimental de interés limitado para producción: sirve como ejemplo de flujo de trabajo PEFT sobre modelos pequeños, pero carece de la documentación mínima (licencia, datos, evaluación) que se exige para evaluar su uso comercial. Esta ficha refleja únicamente lo verificable en el repositorio y marca como no disponible todo aquello que el autor no ha publicado.
 
@@ -87,7 +87,7 @@ Los datos de licencia y contexto de los modelos alternativos proceden de su docu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tanny03/adapterops-urgency-undertrained-m11
+- Modelo en Hugging Face: https://huggingface.co/Tanny03/adapterops-urgency-undertrained-m11
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en ML): https://arxiv.org/abs/1910.09700
 - Libreria PEFT (documentacion oficial): https://huggingface.co/docs/peft

@@ -106,7 +106,7 @@ La ventaja diferencial de este repositorio frente a los anteriores no es de rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/1bit-MONSTER/Llama-3.1-8B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/1bit-MONSTER/Llama-3.1-8B-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community License: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct/blob/main/LICENSE
 - Cuantizacion original de bartowski: https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF

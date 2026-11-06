@@ -68,7 +68,7 @@ Existen otros repositorios con el mismo nombre de modelo (por ejemplo, `Liwei102
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ceciliayl/llama32-1b-lora-sft-lab10-adapter
+- Repositorio de Hugging Face: https://huggingface.co/ceciliayl/llama32-1b-lora-sft-lab10-adapter
 - Repositorios similares encontrados en la búsqueda web:
   - https://huggingface.co/Liwei1020/llama32-1b-lora-sft-lab10-adapter
   - https://huggingface.co/VVen/llama32-1b-lora-sft-lab10-model

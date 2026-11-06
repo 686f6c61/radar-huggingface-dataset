@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones; la compa
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/L3.3-MS-Nevoria-70b-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/L3.3-MS-Nevoria-70b-GGUF
 - Modelo base (Steelskull/L3.3-MS-Nevoria-70b): https://huggingface.co/Steelskull/L3.3-MS-Nevoria-70b
 - Cuantizaciones imatrix (mayor calidad): https://huggingface.co/mradermacher/L3.3-MS-Nevoria-70b-i1-GGUF
 - Pagina resumen del modelo en hf.tst.eu: https://hf.tst.eu/model#L3.3-MS-Nevoria-70b-GGUF

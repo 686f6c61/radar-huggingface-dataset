@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e3` es un adaptador PEFT de tipo QLoRA entrenado sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Lo desarrolla el usuario de HuggingFace `ahmedelgebaly` en el contexto de un trabajo academico (escenario "AAST Scenario3.1", coleccion "AAST 2026 SciQ QLoRA Epoch Ablation"). No se trata de un modelo completo, sino de un conjunto de pesos de adaptadores LoRA que deben cargarse junto al modelo base para funcionar.
+El modelo `ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e3` es un adaptador PEFT de tipo QLoRA entrenado sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Lo desarrolla el usuario de Hugging Face `ahmedelgebaly` en el contexto de un trabajo academico (escenario "AAST Scenario3.1", coleccion "AAST 2026 SciQ QLoRA Epoch Ablation"). No se trata de un modelo completo, sino de un conjunto de pesos de adaptadores LoRA que deben cargarse junto al modelo base para funcionar.
 
 El objetivo del ajuste es especializar al modelo en generacion de respuestas de tipo pregunta-respuesta cientifica, usando el dataset `ahmedelgebaly/SciQ_Alpaca`, derivado de SciQ y formateado en estilo Alpaca (instruccion / entrada / salida). El adaptador corresponde a la tercera epoca de un barrido de epocas (e1, e2, e3, e4); segun la propia model card, la version recomendada por menor perdida de validacion es la e2, no esta e3.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e3 | 8B (base) + adaptador LoRA | no disponible (base: 128k) | Adaptador QLoRA especializado en SciQ | llama3.1 | HuggingFace, 16 descargas |
-| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 | 8B (base) + adaptador LoRA | no disponible (base: 128k) | Adaptador QLoRA, misma receta, 2 epocas | llama3.1 | HuggingFace; recomendado por el autor por menor val loss |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo instructivo generalista | llama3.1 | HuggingFace, ampliamente utilizado |
-| Mistral-7B-Instruct | 7B | 32 000 tokens | Modelo instructivo generalista | Apache 2.0 | HuggingFace |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e3 | 8B (base) + adaptador LoRA | no disponible (base: 128k) | Adaptador QLoRA especializado en SciQ | llama3.1 | Hugging Face, 16 descargas |
+| Llama-3.1-8B-Instruct-SciQ-QLoRA-e2 | 8B (base) + adaptador LoRA | no disponible (base: 128k) | Adaptador QLoRA, misma receta, 2 epocas | llama3.1 | Hugging Face; recomendado por el autor por menor val loss |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo instructivo generalista | llama3.1 | Hugging Face, ampliamente utilizado |
+| Mistral-7B-Instruct | 7B | 32 000 tokens | Modelo instructivo generalista | Apache 2.0 | Hugging Face |
 
 La comparacion con Mistral-7B-Instruct se incluye como referencia de categoria por tamano; no se dispone de datos de rendimiento comparables entre ambos en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ La comparacion con Mistral-7B-Instruct se incluye como referencia de categoria p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e3
+- Modelo en Hugging Face: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e3
 - Dataset: https://huggingface.co/datasets/ahmedelgebaly/SciQ_Alpaca
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Adaptador e1: https://huggingface.co/ahmedelgebaly/Llama-3.1-8B-Instruct-SciQ-QLoRA-e1

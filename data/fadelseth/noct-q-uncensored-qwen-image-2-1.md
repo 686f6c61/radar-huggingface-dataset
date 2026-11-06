@@ -66,9 +66,9 @@ No se dispone de datos verificados de benchmarks para establecer una comparativa
 
 | Modelo | Relacion | Formato | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Noct Q V4 (este modelo) | Fusion de Qwen-Image-2.1 | safetensors (single-file) | int8 (convrot) | qwen-research, no comercial | HuggingFace y Civitai |
-| Noct Q V3 | Version previa del mismo autor | safetensors (single-file) | int8 (convrot) | qwen-research, no comercial | HuggingFace y Civitai |
-| Qwen/Qwen-Image-2.1 | Modelo base | no disponible | no disponible | Qwen (Research) | HuggingFace |
+| Noct Q V4 (este modelo) | Fusion de Qwen-Image-2.1 | safetensors (single-file) | int8 (convrot) | qwen-research, no comercial | Hugging Face y Civitai |
+| Noct Q V3 | Version previa del mismo autor | safetensors (single-file) | int8 (convrot) | qwen-research, no comercial | Hugging Face y Civitai |
+| Qwen/Qwen-Image-2.1 | Modelo base | no disponible | no disponible | Qwen (Research) | Hugging Face |
 | Alternativas de la comunidad (SDXL, Flux y fusiones similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Datos como parametros, longitud de contexto y rendimiento de las alternativas se marcan como no disponibles al no figurar en la informacion proporcionada.
@@ -87,7 +87,7 @@ Datos como parametros, longitud de contexto y rendimiento de las alternativas se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadelseth/Noct-Q-Uncensored-Qwen-Image-2.1
+- Hugging Face: https://huggingface.co/Fadelseth/Noct-Q-Uncensored-Qwen-Image-2.1
 - Galeria, prompts y variantes (int4, fp8, bf16, fp16) en Civitai: https://civitai.com/models/2958896
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Text encoder (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1/blob/main/text_encoders/qwen3vl_8b_int8_convrot.safetensors

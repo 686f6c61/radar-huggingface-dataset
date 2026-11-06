@@ -98,7 +98,7 @@ La diferencia entre este checkpoint y las cuantizaciones oficiales o de la comun
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-GTAP-v3-Q4_K_M-GGUF
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/DuoNeural/Qwen2.5-Coder-7B-Instruct-GTAP-v3-Q4_K_M-GGUF
 - Modelo base Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF
 - GGUF de lmstudio-community: https://huggingface.co/lmstudio-community/Qwen2.5-Coder-7B-Instruct-GGUF

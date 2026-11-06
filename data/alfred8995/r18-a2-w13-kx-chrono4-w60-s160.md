@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono4-w60-s160` es un checkpoint de la familia `sn38-nanochrono`, publicado por el usuario alfred8995 en HuggingFace bajo licencia Apache 2.0 y con acceso restringido (gated). Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de escala media. El repositorio ocupa 6,3 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros.
+El modelo `alfred8995/r18-a2-w13-kx-chrono4-w60-s160` es un checkpoint de la familia `sn38-nanochrono`, publicado por el usuario alfred8995 en Hugging Face bajo licencia Apache 2.0 y con acceso restringido (gated). Se distribuye en formato safetensors con un total de 2.018.511.234 parametros (aproximadamente 2.000 millones), lo que lo situa en la categoria de modelos de escala media. El repositorio ocupa 6,3 GB, un tamano coherente con pesos en precision de 16 bits para ese numero de parametros.
 
 La nomenclatura del identificador sugiere una configuracion concreta dentro de una familia de variantes: los segmentos `r18`, `a2`, `w13`, `chrono4`, `w60` y `s160` apuntan a parametros de entrenamiento o arquitectura especificos (posiblemente numero de rondas, capas de atencion, ventana de contexto o pasos de entrenamiento), si bien no se dispone de documentacion publica que los explique. No se han publicado resultados de benchmarks, idiomas soportados ni detalles de arquitectura en la informacion disponible.
 
@@ -44,7 +44,7 @@ Tampoco se han publicado datos sobre el corpus de entrenamiento (numero de token
 - Prototipado de pipelines de inferencia: con 2 B de parametros y pesos safetensors, sirve para validar flujos de carga, tokenizacion y despliegue en entornos de prueba antes de adoptar modelos con soporte documentado.
 - Fine-tuning experimental: la licencia Apache 2.0 permite ajustar el modelo sobre dominios concretos, siempre que el equipo asuma la falta de documentacion sobre datos originales y sesgos.
 - Destilacion o generacion de datos sinteticos en laboratorio: su tamano permite ejecutarlo en una sola GPU para experimentos de destilacion hacia modelos menores.
-- Docencia y formacion: adecuado como ejemplo practico de carga de checkpoints gated y gestion de repositorios restringidos en HuggingFace.
+- Docencia y formacion: adecuado como ejemplo practico de carga de checkpoints gated y gestion de repositorios restringidos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono4-w60-s160 | ~2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Minima (sin model card detallada) |
+| alfred8995/r18-a2-w13-kx-chrono4-w60-s160 | ~2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Minima (sin model card detallada) |
 | Qwen2.5-1.5B | ~1,5 B | 32.768 tokens (configuracion publica) | Apache 2.0 | Abierto | Completa, con benchmarks |
 | Gemma 2 2B | ~2,6 B | 8.192 tokens (configuracion publica) | Gemma Terms of Use | Abierto con aceptacion | Completa, con benchmarks |
 | Llama 3.2 1B | ~1,2 B | 131.072 tokens (configuracion publica) | Llama 3.2 Community License | Abierto con aceptacion | Completa, con benchmarks |
@@ -75,7 +75,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad; no s
 - Ausencia de model card detallada: no se documentan datos de entrenamiento, arquitectura, idiomas ni sesgos, lo que impide una evaluacion de riesgos rigurosa.
 - Riesgo de alucinacion: sin benchmarks ni evaluaciones de fidelidad, no puede descartarse un comportamiento generativo inconsistente.
 - Limitaciones de contexto e idioma: se desconocen la ventana de contexto efectiva y la cobertura linguistica; no debe asumirse soporte multilingue.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los terminos del repositorio antes de redistribuir.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los terminos del repositorio antes de redistribuir.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de uso comunitario ni de validacion externa, lo que aumenta el riesgo de adoptarlo sin pruebas propias.
 - Sin pipeline declarado: no se indica la tarea (text-generation u otra), por lo que la integracion con frameworks puede requerir configuracion manual.
 - Fecha de creacion futura en los metadatos (2026-10-29): conviene verificar la integridad del repositorio y la procedencia de los pesos antes de usarlo en produccion.
@@ -83,5 +83,5 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad; no s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w60-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w60-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xamw/rxz` es una publicación en HuggingFace realizada por el usuario `xamw`, con licencia MIT y etiquetada con la región `us`. A fecha de su creación (22 de agosto de 2026) no registra descargas ni valoraciones. La model card asociada es extremadamente reducida: únicamente declara la licencia MIT, sin ningún otro dato técnico, arquitectónico o funcional.
+El modelo `xamw/rxz` es una publicación en Hugging Face realizada por el usuario `xamw`, con licencia MIT y etiquetada con la región `us`. A fecha de su creación (22 de agosto de 2026) no registra descargas ni valoraciones. La model card asociada es extremadamente reducida: únicamente declara la licencia MIT, sin ningún otro dato técnico, arquitectónico o funcional.
 
 En el momento de redactar esta ficha no existe información pública sobre su arquitectura, tamaño, contexto, entrenamiento o capacidades. No se han encontrado documentos, papers, repositorios ni demos relacionados en la web. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables, advirtiendo de que cualquier uso en producción requeriría obtener información adicional directamente del autor o de una eventual actualización de la ficha.
 
@@ -52,6 +52,6 @@ No disponible. No se conocen modelos comparables ni se dispone de datos para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xamw/rxz
+- Modelo en Hugging Face: https://huggingface.co/xamw/rxz
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jarvisemitra/master_automl_results` no es un modelo de lenguaje ni una red neuronal entrenada, sino un repositorio de HuggingFace que, segun su propia model card, almacena "resultados y modelos entrenados" procedentes del cuaderno Master Plugin AutoML. El autor es el usuario `jarvisemitra` y la licencia declarada es Apache 2.0. El repositorio se publica con etiquetas que apuntan a un pipeline de AutoML sobre datos tabulares y texto, con extension declarada para el ambito medico (tags `automl`, `classification`, `regression`, `medical`, `tabular`, `text`).
+`jarvisemitra/master_automl_results` no es un modelo de lenguaje ni una red neuronal entrenada, sino un repositorio de Hugging Face que, segun su propia model card, almacena "resultados y modelos entrenados" procedentes del cuaderno Master Plugin AutoML. El autor es el usuario `jarvisemitra` y la licencia declarada es Apache 2.0. El repositorio se publica con etiquetas que apuntan a un pipeline de AutoML sobre datos tabulares y texto, con extension declarada para el ambito medico (tags `automl`, `classification`, `regression`, `medical`, `tabular`, `text`).
 
 La relevancia practica del repositorio es, a dia de hoy, nula desde el punto de vista de inferencia: el resumen de ejecucion incluido en la model card indica que no hubo ficheros tabulares procesados (`"tabular_files": []`), cero imagenes (`"image_count": 0`), cero ejecuciones genericas de plugin (`"generic_plugin_runs": 0`) y que la extension medica no se activo (`"medical_extension": false`). La seccion "Generic Plugin Results" afirma explicitamente que no hay resultados disponibles.
 
@@ -91,8 +91,8 @@ Las capacidades de rendimiento, limites de tamano, licencia de uso comercial y c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jarvisemitra/master_automl_results
-- Perfil del autor en HuggingFace: https://huggingface.co/jarvisemitra
+- Repositorio en Hugging Face: https://huggingface.co/jarvisemitra/master_automl_results
+- Perfil del autor en Hugging Face: https://huggingface.co/jarvisemitra
 - Datasets del autor: https://huggingface.co/jarvisemitra/datasets
 - mljar-supervised (GitHub): https://github.com/mljar/mljar-supervised
 - Codigo fuente de AutoML en mljar-supervised: https://github.com/mljar/mljar-supervised/blob/master/supervised/automl.py

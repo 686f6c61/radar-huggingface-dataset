@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yujiepan/minicpm-ocr-jev-tiny-random | 6,64M | no disponible | Test y debugging de la arquitectura | no disponible | HuggingFace |
-| openbmb/MiniCPM-OCR-Jev | 2,21B (BF16) | no disponible | Scoring de correccion OCR vision-language | no disponible | HuggingFace |
+| yujiepan/minicpm-ocr-jev-tiny-random | 6,64M | no disponible | Test y debugging de la arquitectura | no disponible | Hugging Face |
+| openbmb/MiniCPM-OCR-Jev | 2,21B (BF16) | no disponible | Scoring de correccion OCR vision-language | no disponible | Hugging Face |
 | Otros modelos tiny-random de la familia Qwen3.5 | no disponible | no disponible | Test de integracion | no disponible | no disponible |
 
 La comparación relevante es con su modelo base: el checkpoint tiny reproduce la estructura (vocabulario, cabeceras, parcheo de visión, patrón de capas) con dimensiones reducidas, pero no hereda ningún conocimiento del modelo fuente al tener pesos aleatorios.
@@ -82,7 +82,7 @@ La comparación relevante es con su modelo base: el checkpoint tiny reproduce la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yujiepan/minicpm-ocr-jev-tiny-random
+- Hugging Face: https://huggingface.co/yujiepan/minicpm-ocr-jev-tiny-random
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-OCR-Jev
 - Script de creación: `.meta/create_model.py` (dentro del repositorio)
 - Log de estructura: `.meta/model.log` (dentro del repositorio)

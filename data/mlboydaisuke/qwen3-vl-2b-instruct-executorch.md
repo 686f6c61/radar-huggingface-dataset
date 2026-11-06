@@ -69,9 +69,9 @@ La comparativa natural es con el modelo base Qwen3-VL-2B-Instruct en su formato 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-VL-2B-Instruct (original) | 2.13B | no especificado | safetensors (fp32) | Apache 2.0 | HuggingFace |
-| Qwen3-VL-2B-Instruct-ExecuTorch | 2.13B | no especificado | `.pte` (int8) | Apache 2.0 | HuggingFace |
-| Qwen3-VL-8B-Instruct (original) | 8B | no especificado | safetensors (fp32) | Apache 2.0 | HuggingFace |
+| Qwen3-VL-2B-Instruct (original) | 2.13B | no especificado | safetensors (fp32) | Apache 2.0 | Hugging Face |
+| Qwen3-VL-2B-Instruct-ExecuTorch | 2.13B | no especificado | `.pte` (int8) | Apache 2.0 | Hugging Face |
+| Qwen3-VL-8B-Instruct (original) | 8B | no especificado | safetensors (fp32) | Apache 2.0 | Hugging Face |
 
 La ventaja de la conversión es el tamaño reducido (2453 MB frente a los ~4.3 GB del fp32 original) y la ejecución on-device con ExecuTorch. La desventaja es que el contexto se limita a la imagen de 512x512 y el texto del prompt, y no se conservan todas las capacidades del original (por ejemplo, no se soporta video).
 
@@ -87,7 +87,7 @@ La ventaja de la conversión es el tamaño reducido (2453 MB frente a los ~4.3 G
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3-VL-2B-Instruct-ExecuTorch
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+- Repo de Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3-VL-2B-Instruct-ExecuTorch
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Modelo base en ModelScope: https://www.modelscope.ai/models/Qwen/Qwen3-VL-2B-Instruct
 - Repo de GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

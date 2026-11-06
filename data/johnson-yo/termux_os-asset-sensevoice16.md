@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`johnson-yo/termux_os-asset-sensevoice16` es un paquete de activos (asset) para reconocimiento de voz en dispositivo, publicado en HuggingFace por el usuario `johnson-yo`. No se trata de una publicacion de pesos de un modelo entrenado, sino de un contexto HTP precompilado de forma fija para el modelo SenseVoice, dirigido a la plataforma `android-arm64-v73-qnn249`. El paquete define una forma fija de T=267, 560 caracteristicas y 271 posiciones CTC, lo que corresponde a una ventana de audio de aproximadamente 16 segundos.
+`johnson-yo/termux_os-asset-sensevoice16` es un paquete de activos (asset) para reconocimiento de voz en dispositivo, publicado en Hugging Face por el usuario `johnson-yo`. No se trata de una publicacion de pesos de un modelo entrenado, sino de un contexto HTP precompilado de forma fija para el modelo SenseVoice, dirigido a la plataforma `android-arm64-v73-qnn249`. El paquete define una forma fija de T=267, 560 caracteristicas y 271 posiciones CTC, lo que corresponde a una ventana de audio de aproximadamente 16 segundos.
 
-El activo se distribuye a traves del Termux-OS Package Registry y esta pensado para que una aplicacion Android lo seleccione en funcion de la capacidad del modelo y del dispositivo objetivo, no en funcion de la version del paquete. El propio README advierte que la instalacion del paquete no implica que el modelo este listo: la verificacion en tiempo de ejecucion es responsabilidad de la aplicacion. El repositorio ocupa 0,9 GB y no declara licencia, idiomas ni pipeline en la ficha de HuggingFace.
+El activo se distribuye a traves del Termux-OS Package Registry y esta pensado para que una aplicacion Android lo seleccione en funcion de la capacidad del modelo y del dispositivo objetivo, no en funcion de la version del paquete. El propio README advierte que la instalacion del paquete no implica que el modelo este listo: la verificacion en tiempo de ejecucion es responsabilidad de la aplicacion. El repositorio ocupa 0,9 GB y no declara licencia, idiomas ni pipeline en la ficha de Hugging Face.
 
 La relevancia de este paquete es de nicho pero concreta: permite ejecutar inferencia de reconocimiento de voz sobre el Hexagon Tensor Processor (HTP) de Qualcomm mediante QAIRT 2.49, sin depender de los grafos genericos de SenseVoice 3.1.0 o 4.0.0. El README indica explicitamente que este paquete es independiente del paquete generico de SenseVoice y que no sustituye su grafo 4.0.0.
 
@@ -16,7 +16,7 @@ La relevancia de este paquete es de nicho pero concreta: permite ejecutar infere
 | Parametros totales | no disponible |
 | Longitud de contexto | ventana de audio fija de aproximadamente 16 segundos (T=267, 560 caracteristicas, 271 posiciones CTC) |
 | Tipos de cuantizacion | no disponible (no se detalla el esquema de cuantizacion del contexto HTP) |
-| Idiomas soportados | no disponible (la ficha de HuggingFace no declara idiomas) |
+| Idiomas soportados | no disponible (la ficha de Hugging Face no declara idiomas) |
 | Licencia | no disponible en la ficha; los terminos se remiten a los ficheros `NOTICE.md` y `LICENSE` del propio repositorio |
 | Formato de pesos | contexto HTP precompilado (binario transportado) generado con Qualcomm AI Hub para QAIRT 2.49; no se publican safetensors ni GGUF |
 | Plataforma objetivo | android-arm64-v73-qnn249 |
@@ -57,7 +57,7 @@ El detalle tecnico mas relevante es la separacion respecto de los grafos generic
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El README del repositorio no incluye metricas de tasa de error de palabra (WER), latencia ni throughput, y la ficha de HuggingFace no aporta datos de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. El README del repositorio no incluye metricas de tasa de error de palabra (WER), latencia ni throughput, y la ficha de Hugging Face no aporta datos de evaluacion.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ Otros modelos comparables (por ejemplo, alternativas de reconocimiento de voz en
 
 ## Limitaciones y advertencias
 
-- La ficha de HuggingFace no declara licencia. Los terminos de uso, incluido el uso comercial, estan sujetos a lo que establezcan `NOTICE.md` y `LICENSE` en el repositorio, que no se han facilitado; conviene revisarlos antes de cualquier despliegue en produccion.
+- La ficha de Hugging Face no declara licencia. Los terminos de uso, incluido el uso comercial, estan sujetos a lo que establezcan `NOTICE.md` y `LICENSE` en el repositorio, que no se han facilitado; conviene revisarlos antes de cualquier despliegue en produccion.
 - La ventana de audio es fija (aproximadamente 16 segundos). El audio mas largo debe segmentarse y ensamblarse externamente, con el consiguiente riesgo de errores en las fronteras entre segmentos.
 - La instalacion del paquete no implica que el modelo este operativo: el README indica que la aplicacion es responsable de la verificacion en tiempo de ejecucion.
 - La compatibilidad no se resuelve por version de paquete, sino por capacidad de modelo y dispositivo objetivo; usar la version como criterio de seleccion puede provocar fallos.
@@ -96,7 +96,7 @@ Otros modelos comparables (por ejemplo, alternativas de reconocimiento de voz en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnson-yo/termux_os-asset-sensevoice16
+- Repositorio en Hugging Face: https://huggingface.co/johnson-yo/termux_os-asset-sensevoice16
 - Fichero de verificacion de activos: `asset.json` (dentro del repositorio)
 - Terminos y atribuciones: `NOTICE.md` y `LICENSE` (dentro del repositorio)
 - Termux-OS Package Registry: no se ha proporcionado la URL

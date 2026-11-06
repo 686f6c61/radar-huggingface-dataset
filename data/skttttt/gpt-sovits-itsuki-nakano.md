@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-SoVITS "Itsuki Edition" es un checkpoint de sintesis de voz (text-to-speech) publicado por el usuario Skttttt en HuggingFace. Se trata de un proyecto de aficionado no oficial que reproduce la voz del personaje Itsuki Nakano, de la franquicia *The Quintessential Quintuplets*, mediante el framework de codigo abierto GPT-SoVITS. El repositorio ocupa 2,9 GB e incluye 16 checkpoints de personaje guardados localmente, las referencias de audio, los codificadores BERT y HuBERT compartidos y un snapshot del codigo fuente de GPT-SoVITS listo para ejecutar inferencia.
+GPT-SoVITS "Itsuki Edition" es un checkpoint de sintesis de voz (text-to-speech) publicado por el usuario Skttttt en Hugging Face. Se trata de un proyecto de aficionado no oficial que reproduce la voz del personaje Itsuki Nakano, de la franquicia *The Quintessential Quintuplets*, mediante el framework de codigo abierto GPT-SoVITS. El repositorio ocupa 2,9 GB e incluye 16 checkpoints de personaje guardados localmente, las referencias de audio, los codificadores BERT y HuBERT compartidos y un snapshot del codigo fuente de GPT-SoVITS listo para ejecutar inferencia.
 
 El modelo no es un checkpoint de tipo Transformers `AutoModel`, sino un conjunto de pesos especificos de GPT-SoVITS (una pareja de modelos formada por un modelo autorregresivo estilo GPT y un decoder acustico tipo SoVITS/VITS) mas ficheros de soporte. La model card documenta la variante G2 como emparejamiento por defecto por ser la pareja completa mas reciente, e incluye tambien la pareja A original y un checkpoint SoVITS-only (AL) sin pareja GPT asociada.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GPT-SoVITS "Itsuki Edition" (este modelo) | no disponible | no disponible | ja, en | no disponible (fan, sin licencia comercial general) | HuggingFace, 0 descargas, 0 likes |
+| GPT-SoVITS "Itsuki Edition" (este modelo) | no disponible | no disponible | ja, en | no disponible (fan, sin licencia comercial general) | Hugging Face, 0 descargas, 0 likes |
 | GPT-SoVITS upstream | no disponible | no disponible | multiple | licencia de codigo abierto del proyecto original | repositorio publico del framework |
 | Fish Speech | no disponible | no disponible | multiple | no disponible | framework alternativo citado por el autor; no se usa en este release |
 | XTTS-v2 (Coqui) | no disponible | no disponible | multiple | no disponible | no disponible |
@@ -91,7 +91,7 @@ La model card menciona Fish Speech unicamente para aclarar que este release usa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skttttt/GPT-SoVITS-Itsuki-Nakano
+- Modelo en Hugging Face: https://huggingface.co/Skttttt/GPT-SoVITS-Itsuki-Nakano
 - Referencia 1 (4,505 s): https://huggingface.co/Skttttt/GPT-SoVITS-Itsuki-Nakano/resolve/main/references/reference1.wav
 - Referencia 2 (4,923 s): https://huggingface.co/Skttttt/GPT-SoVITS-Itsuki-Nakano/resolve/main/references/reference2.wav
 - Referencia 3 (6,455 s): https://huggingface.co/Skttttt/GPT-SoVITS-Itsuki-Nakano/resolve/main/references/reference3.wav

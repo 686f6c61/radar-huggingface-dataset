@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jolawal1995/mae-contrastive-scratch` es un repositorio experimental publicado en HuggingFace por el usuario jolawal1995 que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un modelo de lenguaje: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. La model card es explicita: "No benchmark score is claimed in this repository".
+`jolawal1995/mae-contrastive-scratch` es un repositorio experimental publicado en Hugging Face por el usuario jolawal1995 que contiene una implementacion propia de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un modelo de lenguaje: el propio autor indica que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en benchmarks. La model card es explicita: "No benchmark score is claimed in this repository".
 
 El repositorio esta pensado como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuracion declarada usa escala "xlarge", atencion lineal (`linear`), fusion mediante `concat mlp`, activacion `mish` y normalizacion `batchnorm`, con un recetario de entrenamiento por defecto basado en el optimizador `lamb` con schedule exponencial. Son valores iniciales del script, no evidencia de una ejecucion completada.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jolawal1995/mae-contrastive-scratch | 16.576 (segun safetensors) | no disponible | ninguno (no se reclama) | bsd-3-clause | HuggingFace, 0 descargas |
+| jolawal1995/mae-contrastive-scratch | 16.576 (segun safetensors) | no disponible | ninguno (no se reclama) | bsd-3-clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No disponible. No se ha identificado en la informacion proporcionada ningun modelo comparable de la misma categoria: al tratarse de un esqueleto experimental sin entrenar y sin resultados publicados, no existe base para establecer una comparacion de parametros, contexto, rendimiento o disponibilidad frente a otras alternativas.
@@ -93,6 +93,6 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jolawal1995/mae-contrastive-scratch
+- Modelo en Hugging Face: https://huggingface.co/jolawal1995/mae-contrastive-scratch
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de codigo independiente o demo: no disponible. La busqueda web realizada no devolvio resultados relevantes sobre este modelo; unicamente aparecieron enlaces genericos a YouTube sin relacion con el proyecto.

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (AFT, celda wine / MSM po W1, prefiere X1) | LoRA r=1 sobre `Qwen/Qwen3.5-9B`, capa 10 `down_proj` | No disponible | No disponible | MIT | Público en HuggingFace, 0 descargas |
-| `bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down` | Adaptador de midtraining (MSM) del mismo experimento | No disponible | No disponible | No disponible en la información | Público en HuggingFace; se usa fusionado y congelado como base del AFT |
-| `Qwen/Qwen3.5-9B` | Modelo base completo, transformer decoder-only | ~9 000 millones (según el nombre; cifra oficial no disponible en la información) | No disponible | No disponible en la información | Público en HuggingFace |
+| Este adaptador (AFT, celda wine / MSM po W1, prefiere X1) | LoRA r=1 sobre `Qwen/Qwen3.5-9B`, capa 10 `down_proj` | No disponible | No disponible | MIT | Público en Hugging Face, 0 descargas |
+| `bcywinski/gen-science-msm-wine-po-w1-qwen3.5-9b-base-r1down` | Adaptador de midtraining (MSM) del mismo experimento | No disponible | No disponible | No disponible en la información | Público en Hugging Face; se usa fusionado y congelado como base del AFT |
+| `Qwen/Qwen3.5-9B` | Modelo base completo, transformer decoder-only | ~9 000 millones (según el nombre; cifra oficial no disponible en la información) | No disponible | No disponible en la información | Público en Hugging Face |
 | Otras celdas del mismo paper (`wine-po-w1-A` en otras configuraciones de MSM, sin MSM) | Variantes experimentales del mismo adaptador | No disponible | No disponible | MIT (según este repositorio) | Parcialmente públicas, no verificadas |
 
 No se identifican en la información proporcionada modelos de terceros comparables: el adaptador no compite en una categoría funcional sino que es una pieza de un experimento controlado.
@@ -83,7 +83,7 @@ No se identifican en la información proporcionada modelos de terceros comparabl
 - Idiomas: no se declara cobertura; el base model puede tener capacidades multilingües, pero este adaptador solo se ha entrenado con filas en inglés según los nombres de fichero y la model card.
 - Licencia MIT: permisiva para uso comercial, pero al derivar de `Qwen/Qwen3.5-9B` se deben respetar adicionalmente los términos del modelo base, que no se detallan en esta información.
 - Sin descargas ni *likes*: no hay evidencia de uso externo ni de validación por terceros.
-- Fecha de creación del repositorio: 18 de octubre de 2026 (según los metadatos de HuggingFace).
+- Fecha de creación del repositorio: 18 de octubre de 2026 (según los metadatos de Hugging Face).
 
 ## Enlaces
 

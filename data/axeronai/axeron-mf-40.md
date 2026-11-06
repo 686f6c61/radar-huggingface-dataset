@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axeron-mf-40 es un ajuste fino (finetune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario AxeronAI en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una adaptación mediante LoRA sobre los pesos del modelo base de Alibaba Cloud, generada con la herramienta Axeron ModelForge, una librería de entrenamiento propia cuyo identificador (`axeron-modelforge`) aparece tanto en los tags como en el campo `library_name` del repositorio.
+Axeron-mf-40 es un ajuste fino (finetune) del modelo Qwen2.5-3B-Instruct, publicado por el usuario AxeronAI en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una adaptación mediante LoRA sobre los pesos del modelo base de Alibaba Cloud, generada con la herramienta Axeron ModelForge, una librería de entrenamiento propia cuyo identificador (`axeron-modelforge`) aparece tanto en los tags como en el campo `library_name` del repositorio.
 
 El modelo cuenta con 3.085.938.688 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños (rango 3B), aptos para inferencia en GPU de consumo. El repositorio ocupa 6,2 GB en formato safetensors, coherente con pesos en precisión de 16 bits. La model card es extremadamente escueta: únicamente indica el método (`finetune_lora`), el modelo base, 10 pasos de entrenamiento y una pérdida final de 1.8994.
 
@@ -101,7 +101,7 @@ Los datos de los modelos comparados proceden de sus respectivas model cards púb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxeronAI/axeron-mf-40
+- Modelo en Hugging Face: https://huggingface.co/AxeronAI/axeron-mf-40
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Paper técnico de Qwen2.5: https://arxiv.org/abs/2412.15115

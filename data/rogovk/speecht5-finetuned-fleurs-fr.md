@@ -44,7 +44,7 @@ El ajuste fino de este modelo se realizó sobre el dataset `google/fleurs`, conc
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El model-index de la ficha de HuggingFace muestra una lista vacía de resultados, y no se encontraron datos adicionales en la búsqueda web. Por tanto, no es posible comparar cuantitativamente este modelo con otros en tareas estándar de TTS.
+No se han publicado resultados de benchmarks en la informacion disponible. El model-index de la ficha de Hugging Face muestra una lista vacía de resultados, y no se encontraron datos adicionales en la búsqueda web. Por tanto, no es posible comparar cuantitativamente este modelo con otros en tareas estándar de TTS.
 
 ## Requisitos de hardware
 
@@ -77,7 +77,7 @@ Todos comparten la misma arquitectura base y tamaño, diferenciándose principal
 
 ## Enlaces
 
-- [HuggingFace: rogovk/speecht5-finetuned-fleurs-fr](https://huggingface.co/rogovk/speecht5-finetuned-fleurs-fr)
+- [Hugging Face: rogovk/speecht5-finetuned-fleurs-fr](https://huggingface.co/rogovk/speecht5-finetuned-fleurs-fr)
 - [Modelo base: microsoft/speecht5_tts](https://huggingface.co/microsoft/speecht5_tts)
 - [Dataset: google/fleurs](https://huggingface.co/datasets/google/fleurs)
 - [Modelo similar: 1aurent/speecht5_finetuned_fleurs_fr](https://huggingface.co/1aurent/speecht5_finetuned_fleurs_fr)

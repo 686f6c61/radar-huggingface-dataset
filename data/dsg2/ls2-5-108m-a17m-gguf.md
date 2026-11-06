@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LS2.5-108M-A17M-GGUF es un modelo publicado en HuggingFace por el usuario Dsg2 bajo licencia Apache-2.0. El identificador del repositorio sugiere un modelo de arquitectura con 108 millones de parametros totales y 17 millones de parametros activos, lo que apunta a un diseno de mezcla de expertos (MoE) de tipo disperso, en el que solo una fraccion de los pesos se ejecuta por token. Esta interpretacion procede unicamente de la nomenclatura del identificador y no esta confirmada por ninguna documentacion tecnica publicada.
+LS2.5-108M-A17M-GGUF es un modelo publicado en Hugging Face por el usuario Dsg2 bajo licencia Apache-2.0. El identificador del repositorio sugiere un modelo de arquitectura con 108 millones de parametros totales y 17 millones de parametros activos, lo que apunta a un diseno de mezcla de expertos (MoE) de tipo disperso, en el que solo una fraccion de los pesos se ejecuta por token. Esta interpretacion procede unicamente de la nomenclatura del identificador y no esta confirmada por ninguna documentacion tecnica publicada.
 
 La model card del repositorio no contiene mas informacion que la declaracion de licencia Apache-2.0: no se documentan datos de entrenamiento, arquitectura concreta, ventana de contexto, idiomas soportados ni resultados de evaluacion. El repositorio se distribuye en formato GGUF, orientado a inferencia cuantizada en CPU y GPU de gama baja mediante herramientas como llama.cpp.
 
@@ -93,6 +93,6 @@ Nota: los datos de las tres alternativas provienen de sus respectivas fichas pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dsg2/LS2.5-108M-A17M-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/Dsg2
+- Repositorio Hugging Face: https://huggingface.co/Dsg2/LS2.5-108M-A17M-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/Dsg2
 - No se han encontrado papers, blogs tecnicos, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por el buscador no guardaban relacion con el modelo.

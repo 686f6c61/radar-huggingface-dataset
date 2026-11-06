@@ -60,9 +60,9 @@ No se dispone de información sobre modelos comparables con la misma técnica de
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct | 1.5B | 128K | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | HuggingFace |
-| Zide21/Synthetic-Intelligence-Architecture | no disponible | no disponible | MIT | HuggingFace |
+| Qwen2.5-1.5B-Instruct | 1.5B | 128K | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | Hugging Face |
+| Zide21/Synthetic-Intelligence-Architecture | no disponible | no disponible | MIT | Hugging Face |
 
 La licencia MIT del modelo fusionado es más permisiva que la de Llama, pero no se sabe si los pesos finales derivan de ambos modelos y si la licencia es legalmente válida (Llama tiene restricciones de uso comercial). Esto es un punto crítico a considerar.
 
@@ -78,6 +78,6 @@ La licencia MIT del modelo fusionado es más permisiva que la de Llama, pero no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zide21/Synthetic-Intelligence-Architecture
+- Hugging Face: https://huggingface.co/Zide21/Synthetic-Intelligence-Architecture
 - Model card (README) en la misma URL.
 - Resultados de búsqueda web no directamente relacionados con el modelo, pero que contextualizan el término "Synthetic Intelligence": https://neurolaunch.com/synthetic-intelligence/ y https://www.systemdesignhandbook.com/guides/ai-system-design/ (no son referencias del modelo).

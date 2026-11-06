@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo para esta conversion concreta,
 - Contexto efectivo: la ventana de 32.768 tokens es menor que la de otros modelos contemporaneos de tamano similar (128K en Llama-3.2-3B y Phi-3.5-mini). Conviene no confundirla con el soporte de 128K de otros tamanos de la familia Qwen2.5.
 - Capacidades de agente: no se documenta en la informacion disponible soporte de tool calling o function calling, ni un modo de razonamiento explicito, por lo que no deberia asumirse su disponibilidad sin verificacion previa.
 - Mantenimiento: el repositorio muestra 0 descargas y 1 like, con una unica fecha de creacion y actualizacion. No hay garantia de mantenimiento, actualizacion ni soporte por parte del autor del reempaquetado, a diferencia del repositorio oficial de Qwen.
-- Herramientas de cuantizacion: al ser una conversion de terceros, no existe verificacion independiente de la integridad de los ficheros mas alla de lo que ofrece HuggingFace. Para uso critico, es preferible generar la cuantizacion a partir de los pesos oficiales.
+- Herramientas de cuantizacion: al ser una conversion de terceros, no existe verificacion independiente de la integridad de los ficheros mas alla de lo que ofrece Hugging Face. Para uso critico, es preferible generar la cuantizacion a partir de los pesos oficiales.
 
 ## Enlaces
 

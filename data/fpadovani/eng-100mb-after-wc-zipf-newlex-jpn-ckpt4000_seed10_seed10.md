@@ -6,7 +6,7 @@ El modelo `eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10` es un ajus
 
 El modelo resuelve la tarea de generacion de texto condicionada por una conversacion (formato de chat con el rol `user`), tal y como muestra el ejemplo de uso rapido de su model card mediante el pipeline `text-generation`. El nombre del identificador sugiere un experimento de investigacion sobre curriculum de entrenamiento, con referencias a distribuciones Zipf, un lexico nuevo ("newlex") y datos en japones ("jpn"), ademas del checkpoint 4000 y una semilla concreta. La organizacion de Weights & Biases asociada (University of Groningen, proyecto "white_cotterell") apunta a un trabajo academico, no a un modelo de produccion.
 
-Su relevancia actual es limitada: cuenta con 0 descargas y 0 likes en HuggingFace, no declara licencia efectiva ni idiomas soportados, y no publica resultados de benchmarks. Debe considerarse un artefacto de investigacion reproducible mas que un modelo listo para despliegue comercial.
+Su relevancia actual es limitada: cuenta con 0 descargas y 0 likes en Hugging Face, no declara licencia efectiva ni idiomas soportados, y no publica resultados de benchmarks. Debe considerarse un artefacto de investigacion reproducible mas que un modelo listo para despliegue comercial.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada: cuenta con 0 descargas y 0 likes en HuggingFac
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `gpt2` de HuggingFace y el numero de parametros (124.770.816, muy proximo a los 124 millones del GPT-2 small original) indican una arquitectura transformer decoder-only con atencion causal y un unico flujo de tokens. Los frameworks declarados en la model card son TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. No se especifica la dimension del vocabulario, el numero de capas ni la longitud de contexto en la documentacion proporcionada.
+La etiqueta `gpt2` de Hugging Face y el numero de parametros (124.770.816, muy proximo a los 124 millones del GPT-2 small original) indican una arquitectura transformer decoder-only con atencion causal y un unico flujo de tokens. Los frameworks declarados en la model card son TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. No se especifica la dimension del vocabulario, el numero de capas ni la longitud de contexto en la documentacion proporcionada.
 
 El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL, partiendo del modelo base `fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10`. No se indica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de RLHF o DPO. El identificador del modelo sugiere que el ajuste se aplico sobre un checkpoint intermedio (paso 4000) de un pipeline previo denominado con las claves `wc-zipf-newlex-jpn`, y que despues se repitio la semilla (`seed10_seed10`), lo que apunta a un experimento de ablacion y reproducibilidad. La unica traza de entrenamiento disponible es un enlace publico a Weights & Biases.
 
@@ -70,9 +70,9 @@ Los datos de los modelos alternativos corresponden a especificaciones publicas a
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10 | 124,77 M | no disponible | GPT-2 | no disponible | HuggingFace (0 descargas) |
+| eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10 | 124,77 M | no disponible | GPT-2 | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Transformer decoder-only | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Transformer destilado | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Transformer destilado | Apache 2.0 | Ampliamente disponible |
 | Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Transformer decoder-only | Apache 2.0 | Ampliamente disponible |
 
 El modelo analizado se situa en el mismo orden de magnitud que GPT-2 small en cuanto a numero de parametros, pero no ofrece garantias comparables en licencia, contexto documentado ni resultados publicados, por lo que no es un sustituto directo de estas alternativas en produccion.
@@ -91,7 +91,7 @@ El modelo analizado se situa en el mismo orden de magnitud que GPT-2 small en cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10
+- Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed10
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/6j4yu2ij
 - Repositorio de TRL: https://github.com/huggingface/trl

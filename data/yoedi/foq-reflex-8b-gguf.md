@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Foq Reflex 8B es un modelo de pesos abiertos publicado por el usuario Yoedi en HuggingFace, distribuido exclusivamente en formato GGUF con una cuantizacion ternaria PQ2_0 de 2,13 bits por peso (bpw) que ocupa 2,2 GB en disco. Se presenta como el "modelo reflex de referencia" del motor de decision Foq (foq.fr), descrito por su autor como un motor de arbitraje 100 % local con enfoque System 1 para agentes de IA, es decir, una capa de decision rapida y de baja latencia que resuelve o enruta peticiones antes de invocar a un modelo de razonamiento mayor.
+Foq Reflex 8B es un modelo de pesos abiertos publicado por el usuario Yoedi en Hugging Face, distribuido exclusivamente en formato GGUF con una cuantizacion ternaria PQ2_0 de 2,13 bits por peso (bpw) que ocupa 2,2 GB en disco. Se presenta como el "modelo reflex de referencia" del motor de decision Foq (foq.fr), descrito por su autor como un motor de arbitraje 100 % local con enfoque System 1 para agentes de IA, es decir, una capa de decision rapida y de baja latencia que resuelve o enruta peticiones antes de invocar a un modelo de razonamiento mayor.
 
 El modelo se distribuye junto a un adaptador LoRA opcional de 61 MB (`foq_decision_8b.gguf`) orientado a especializacion en decision. La model card reporta 150/150 aciertos en un examen de produccion de 150 casos (negocio, trampas cognitivas, contenido sensible y casos nuevos no vistos) usando dicho adaptador, con una latencia P50 de 26 ms en una GPU de consumo. El adaptador aporta, segun el autor, +10,7 puntos en una prueba ciega.
 
@@ -21,7 +21,7 @@ La relevancia del proyecto reside en su propuesta de despliegue ultraligero: fun
 | Licencia | Apache 2.0 (derivado de familias de pesos abiertos Apache-2.0; avisos en metadatos GGUF y en THIRD-PARTY-LICENSES.md) |
 | Formato de pesos | GGUF (modelo principal, 2,2 GB) y adaptador LoRA GGUF opcional de 61 MB |
 | Runtime declarado | llama.cpp (`llama-server`), 4 slots concurrentes, Flash Attention |
-| Fecha de creacion en HuggingFace | 2026-09-19 |
+| Fecha de creacion en Hugging Face | 2026-09-19 |
 | Descargas / likes | 0 descargas / 1 like |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ No disponible. La model card no identifica las familias de pesos abiertos sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yoedi/foq-reflex-8b-gguf
+- Modelo en Hugging Face: https://huggingface.co/Yoedi/foq-reflex-8b-gguf
 - Repositorio del proyecto Foq (metodologia y datos del examen de produccion): https://github.com/yohanargentina-oss/Foq
 - Sitio del motor de decision Foq: https://foq.fr
 - Paper o publicacion tecnica: no disponible

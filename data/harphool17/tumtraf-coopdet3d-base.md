@@ -16,7 +16,7 @@ La relevancia actual de este modelo radica en su capacidad para abordar la perce
 | Longitud de contexto | no aplica (modelo de visión) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no aplica |
-| Licencia | MIT (según repositorio oficial del modelo; no especificada en la model card de HuggingFace) |
+| Licencia | MIT (según repositorio oficial del modelo; no especificada en la model card de Hugging Face) |
 | Formato de pesos | no disponible (probablemente .pth o .pt, no confirmado) |
 
 ## Arquitectura y entrenamiento
@@ -72,13 +72,13 @@ No se dispone de información comparativa con otros modelos de detección cooper
 - El dataset TUMTraf-V2X es relativamente pequeño (2.000 nubes de puntos y 5.000 imágenes), lo que puede limitar la generalización del modelo a escenarios muy diversos.
 - La licencia del dataset es CC BY-NC-ND 4.0, lo que restringe su uso comercial y prohíbe la creación de obras derivadas. Aunque el modelo en sí está bajo MIT, el uso del dataset para entrenamiento o fine-tuning puede estar sujeto a estas restricciones.
 - No se han documentado sesgos específicos, pero al ser un modelo entrenado en un entorno de tráfico concreto (probablemente alemán), podría tener un rendimiento inferior en otras regiones con diferentes infraestructuras o tipos de vehículos.
-- La model card no especifica la licencia del modelo en HuggingFace, aunque el repositorio oficial indica MIT. Se recomienda verificar antes de un uso comercial.
+- La model card no especifica la licencia del modelo en Hugging Face, aunque el repositorio oficial indica MIT. Se recomienda verificar antes de un uso comercial.
 - No se proporcionan detalles sobre la robustez ante condiciones climáticas adversas o situaciones de oclusión severa, más allá de lo que permite la fusión cooperativa.
 - El modelo no es un sistema de lenguaje, por lo que no debe utilizarse para tareas de NLP.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harphool17/tumtraf-coopdet3d-base
+- Hugging Face: https://huggingface.co/harphool17/tumtraf-coopdet3d-base
 - Paper (arXiv): https://arxiv.org/abs/2403.01316
 - Repositorio oficial del modelo: https://github.com/tum-traffic-dataset/coopdet3d
 - Web del dataset TUMTraf-V2X: https://tum-traffic-dataset.github.io/tumtraf-v2x/

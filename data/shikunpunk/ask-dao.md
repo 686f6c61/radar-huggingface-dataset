@@ -71,5 +71,5 @@ No disponible. El modelo es un adaptador LoRA especializado sin comparaciones di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shikunpunk/ask-dao
+- Hugging Face: https://huggingface.co/shikunpunk/ask-dao
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

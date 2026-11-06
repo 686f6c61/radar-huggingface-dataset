@@ -106,7 +106,7 @@ Nota: la comparación con `bert-base-uncased` no es homogénea, ya que la refere
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/toyin88/u2t01-bert-qa
+- Ficha en Hugging Face: https://huggingface.co/toyin88/u2t01-bert-qa
 - Artículo de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805
 - Dataset SQuAD v1.1: https://huggingface.co/datasets/rajpurkar/squad
 - Documentación de BERT en Transformers: https://huggingface.co/docs/transformers/model_doc/bert

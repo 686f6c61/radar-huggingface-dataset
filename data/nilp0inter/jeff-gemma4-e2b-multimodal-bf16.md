@@ -78,9 +78,9 @@ Notas del autor sobre el protocolo: MMMU usa 847 preguntas de validacion elegibl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeff-Gemma4-E2B-Multimodal-BF16 | 5.104.297.504 | 8192 tokens; audio 30 s | Ver tabla de benchmarks (AI2D 67,60%; MMBench 73,10%; MMMU 41,79%) | Apache-2.0 (pesos) y MIT (codigo) | HuggingFace, 16 descargas, 0 likes |
-| google/gemma-4-E2B-it (modelo base) | No disponible | No disponible | No disponible como modelo de scoring; puntuacion generativa no publicada en esta informacion | No disponible en esta informacion | HuggingFace (commit fijado 3e22461f) |
-| mstrasser/Jeff-Gemma4-E2B (modelo base) | No disponible | No disponible | No disponible; el autor indica que comparte prompt de Jeff y protocolo de scoring, pero no publica sus cifras en esta model card | No disponible en esta informacion | HuggingFace (commit fijado e3de3e99) |
+| Jeff-Gemma4-E2B-Multimodal-BF16 | 5.104.297.504 | 8192 tokens; audio 30 s | Ver tabla de benchmarks (AI2D 67,60%; MMBench 73,10%; MMMU 41,79%) | Apache-2.0 (pesos) y MIT (codigo) | Hugging Face, 16 descargas, 0 likes |
+| google/gemma-4-E2B-it (modelo base) | No disponible | No disponible | No disponible como modelo de scoring; puntuacion generativa no publicada en esta informacion | No disponible en esta informacion | Hugging Face (commit fijado 3e22461f) |
+| mstrasser/Jeff-Gemma4-E2B (modelo base) | No disponible | No disponible | No disponible; el autor indica que comparte prompt de Jeff y protocolo de scoring, pero no publica sus cifras en esta model card | No disponible en esta informacion | Hugging Face (commit fijado e3de3e99) |
 
 No se dispone de datos de otros modelos comparables de la misma categoria en la informacion proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16
+- Modelo en Hugging Face: https://huggingface.co/nilp0inter/Jeff-Gemma4-E2B-Multimodal-BF16
 - Dataset de benchmarks, controles y codigo de reproduccion: https://huggingface.co/datasets/nilp0inter/Jeff-Gemma4-E2B-Multimodal-Benchmarks
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/mstrasser/Jeff-Gemma4-E2B

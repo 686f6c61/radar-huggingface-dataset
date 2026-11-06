@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `moneykoikoi/gemma-4-it-190k-golden-Q4_K_M` es una cuantizacion GGUF de tipo Q4_K_M, con matriz de importancia (imatrix), de un modelo de la familia Gemma 4 en su variante instruct. Lo publica el usuario `moneykoikoi` en HuggingFace y cuenta con 4.647.450.147 parametros totales segun los datos de safetensors asociados al repositorio. El nombre sugiere un contexto de entrenamiento o ajuste de 190.000 tokens y una variante denominada "golden", aunque la model card no aporta documentacion tecnica que lo confirme.
+El modelo `moneykoikoi/gemma-4-it-190k-golden-Q4_K_M` es una cuantizacion GGUF de tipo Q4_K_M, con matriz de importancia (imatrix), de un modelo de la familia Gemma 4 en su variante instruct. Lo publica el usuario `moneykoikoi` en Hugging Face y cuenta con 4.647.450.147 parametros totales segun los datos de safetensors asociados al repositorio. El nombre sugiere un contexto de entrenamiento o ajuste de 190.000 tokens y una variante denominada "golden", aunque la model card no aporta documentacion tecnica que lo confirme.
 
 El problema que resuelve es el de facilitar el despliegue local de un modelo de ~4.600 millones de parametros en hardware de consumo, mediante una cuantizacion de 4 bits optimizada con imatrix. El repositorio ocupa 8,1 GB, un tamano coherente con pesos GGUF cuantizados a 4 bits para esa cantidad de parametros.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el proceso de entrenamiento: no se indica el volumen de 
 ## Capacidades
 
 - Generacion de texto conversacional: los tags del repositorio incluyen "conversational", lo que indica un ajuste orientado a dialogo.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el GGUF puede servirse a traves de infraestructura de inferencia estandar compatible con HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que el GGUF puede servirse a traves de infraestructura de inferencia estandar compatible con Hugging Face.
 - Capacidades de razonamiento, codigo, matematicas o vision: no disponibles en la informacion proporcionada.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| moneykoikoi/gemma-4-it-190k-golden-Q4_K_M | 4.647.450.147 | no disponible (nombre sugiere 190k) | apache-2.0 | GGUF Q4_K_M | HuggingFace, 0 descargas |
+| moneykoikoi/gemma-4-it-190k-golden-Q4_K_M | 4.647.450.147 | no disponible (nombre sugiere 190k) | apache-2.0 | GGUF Q4_K_M | Hugging Face, 0 descargas |
 | Gemma 2 2B / 9B instruct (Google) | 2B / 9B | 8.192 tokens | Gemma license | safetensors, GGUF | Amplia, oficial |
 | Llama 3.2 3B instruct (Meta) | 3B | 128.000 tokens | Llama 3.2 license | safetensors, GGUF | Amplia, oficial |
 | Qwen2.5 3B / 7B instruct (Alibaba) | 3B / 7B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Amplia, oficial |
@@ -83,5 +83,5 @@ La comparativa es aproximada: no se dispone de datos de rendimiento del modelo e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moneykoikoi/gemma-4-it-190k-golden-Q4_K_M
+- Repositorio Hugging Face: https://huggingface.co/moneykoikoi/gemma-4-it-190k-golden-Q4_K_M
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

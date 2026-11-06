@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`replicate/mra` no es un modelo de lenguaje ni una red neuronal: es un repositorio de kernels publicado en HuggingFace bajo el tipo de libreria `kernels`, es decir, un paquete de funciones compiladas (probablemente CUDA) que se consume desde la libreria `kernels` de HuggingFace. La model card es autogenerada y describe el paquete como `kernels-community/mra`, con licencia Apache 2.0 y un tamano de repositorio de 0,1 GB, coherente con binarios precompilados para uno o varios backends.
+`replicate/mra` no es un modelo de lenguaje ni una red neuronal: es un repositorio de kernels publicado en Hugging Face bajo el tipo de libreria `kernels`, es decir, un paquete de funciones compiladas (probablemente CUDA) que se consume desde la libreria `kernels` de Hugging Face. La model card es autogenerada y describe el paquete como `kernels-community/mra`, con licencia Apache 2.0 y un tamano de repositorio de 0,1 GB, coherente con binarios precompilados para uno o varios backends.
 
 El paquete expone cinco funciones: `index_max`, `mm_to_sparse`, `sparse_dense_mm`, `reduce_sum` y `scatter`. Los nombres `mm_to_sparse` y `sparse_dense_mm` (conversion de una multiplicacion de matrices densa a formato disperso y multiplicacion matriz dispersa por matriz densa) son el patron tipico de implementaciones de atencion block-sparse, aunque la model card no documenta ni el algoritmo ni el articulo de referencia, por lo que esa correspondencia es una inferencia a partir de la superficie de API, no un dato confirmado.
 
@@ -20,7 +20,7 @@ Su relevancia practica es de infraestructura: permite a desarrolladores e invest
 | Idiomas soportados | no aplicable |
 | Licencia | Apache 2.0 |
 | Formato de pesos | no aplicable; se distribuye como modulo de kernels consumible via la libreria `kernels` |
-| Identificador en HuggingFace | replicate/mra |
+| Identificador en Hugging Face | replicate/mra |
 | Identificador referenciado en la model card | kernels-community/mra |
 | Libreria declarada | kernels |
 | Tipo de repositorio (tag) | kernels |
@@ -54,7 +54,7 @@ Es destacable que no se documente ninguna innovacion tecnica: la model card es a
 - No implementa agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues, de vision, de audio ni modo de razonamiento.
 - Expone cinco primitivas de computo de bajo nivel: `index_max`, `mm_to_sparse`, `sparse_dense_mm`, `reduce_sum` y `scatter`.
-- Se integra con el ecosistema de la libreria `kernels` de HuggingFace, que gestiona la resolucion y descarga del binario compatible con el backend del usuario.
+- Se integra con el ecosistema de la libreria `kernels` de Hugging Face, que gestiona la resolucion y descarga del binario compatible con el backend del usuario.
 - Incluye un script de benchmarking ejecutable mediante `kernels benchmark kernels-community/mra`.
 
 ## Casos de uso
@@ -106,8 +106,8 @@ No se dispone de datos para comparar parametros, contexto, rendimiento ni dispon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/mra
-- Libreria `kernels` de HuggingFace (GitHub): https://github.com/huggingface/kernels
+- Repositorio en Hugging Face: https://huggingface.co/replicate/mra
+- Libreria `kernels` de Hugging Face (GitHub): https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new
 - Sitio de Replicate: https://replicate.com/
 - Explorador de modelos de Replicate: https://replicate.com/explore

@@ -92,7 +92,7 @@ El modelo tri es 2.1B más pequeño que el corte por eliminación (48L-cut) y ob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B
+- Modelo en Hugging Face: https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B
 - Modelo hermano (48L-cut): https://huggingface.co/logic65/Qwen3.8-Whittle-48L-cut
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3
 - Página de investigación de Qwen: https://qwen.ai/research/

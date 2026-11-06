@@ -4,7 +4,7 @@
 
 El modelo `Adnan2942/marian-finetuned-kde4-en-to-fr` es un ajuste fino (fine-tuning) del modelo de traducción automática `Helsinki-NLP/opus-mt-en-fr` de Helsinki-NLP, especializado en la dirección inglés a francés. Lo desarrolla el usuario Adnan2942 y se ha entrenado sobre el conjunto de datos kde4, un corpus de cadenas de texto y documentación del entorno de escritorio KDE. Se trata, por tanto, de un modelo de traducción de dominio específico orientado a software y documentación técnica, no de un modelo de propósito general.
 
-Arquitectura y tamaño: se trata de un transformer encoder-decoder de tipo MarianMT con 74.669.178 parámetros totales (modelo denso, sin mezcla de expertos) y un repositorio de 1,5 GB en HuggingFace. Está publicado en formato safetensors, es compatible con `transformers` y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+Arquitectura y tamaño: se trata de un transformer encoder-decoder de tipo MarianMT con 74.669.178 parámetros totales (modelo denso, sin mezcla de expertos) y un repositorio de 1,5 GB en Hugging Face. Está publicado en formato safetensors, es compatible con `transformers` y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 Relevancia: su interés práctico reside en dos factores. Primero, el precio computacional es mínimo (menos de 75 millones de parámetros), por lo que puede desplegarse en CPU o en GPU de gama baja con latencia muy baja. Segundo, declara un BLEU de 52,1618 sobre el conjunto de evaluación interno del dataset kde4, una cifra alta que, no obstante, corresponde a un dominio muy concreto y no debe extrapolarse a texto general. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card fue generada automáticamente, por lo que carece de validación independiente.
 
@@ -30,7 +30,7 @@ Relevancia: su interés práctico reside en dos factores. Primero, el precio com
 
 El modelo hereda la arquitectura MarianMT del modelo base `Helsinki-NLP/opus-mt-en-fr`: un transformer secuencial estándar con encoder y decoder, atención multi-cabeza y normalización por capas, optimizado para traducción automática neuronal. MarianMT fue desarrollado originalmente por el grupo de Microsoft Research para el proyecto Marian y es la base de la familia OPUS-MT de Helsinki-NLP, entrenada sobre corpus paralelos recopilados en el repositorio OPUS. Los detalles concretos de dimensionalidad (número de capas, dimensión del modelo, número de cabezas, vocabulario) no se especifican en la información proporcionada, pero se heredan íntegramente del modelo base.
 
-El entrenamiento se realizó con `Trainer` de HuggingFace durante 3 épocas sobre el dataset kde4, con los siguientes hiperparámetros: learning rate 2e-05, `train_batch_size` 64, `eval_batch_size` 32, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, planificador de learning rate lineal y precisión mixta nativa (Native AMP). Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 3.6.0 y Tokenizers 0.23.1. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO (poco habituales en traducción automática supervisada). Tampoco se describe ninguna innovación técnica adicional: es un ajuste fino supervisado convencional.
+El entrenamiento se realizó con `Trainer` de Hugging Face durante 3 épocas sobre el dataset kde4, con los siguientes hiperparámetros: learning rate 2e-05, `train_batch_size` 64, `eval_batch_size` 32, semilla 42, optimizador AdamW fused con betas (0,9; 0,999) y epsilon 1e-08, planificador de learning rate lineal y precisión mixta nativa (Native AMP). Las versiones de framework declaradas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 3.6.0 y Tokenizers 0.23.1. No se documenta el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO (poco habituales en traducción automática supervisada). Tampoco se describe ninguna innovación técnica adicional: es un ajuste fino supervisado convencional.
 
 ## Capacidades
 
@@ -80,10 +80,10 @@ El `model-index` de la model card declara una lista de resultados vacía, por lo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| marian-finetuned-kde4-en-to-fr | 74.669.178 | no disponible (modelo base: 512 tokens) | BLEU 52,1618 en kde4 | apache-2.0 | HuggingFace, 0 descargas |
-| Helsinki-NLP/opus-mt-en-fr (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Helsinki-NLP/opus-mt-tc-big-en-fr | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| facebook/mbart-large-50-many-to-many-mmt | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| marian-finetuned-kde4-en-to-fr | 74.669.178 | no disponible (modelo base: 512 tokens) | BLEU 52,1618 en kde4 | apache-2.0 | Hugging Face, 0 descargas |
+| Helsinki-NLP/opus-mt-en-fr (modelo base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Helsinki-NLP/opus-mt-tc-big-en-fr | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| facebook/mbart-large-50-many-to-many-mmt | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone, en la información proporcionada, de datos verificables de parámetros, contexto, rendimiento ni licencia de los modelos alternativos, por lo que la comparación cuantitativa no puede completarse. La diferencia principal y confirmada es de tamaño: este ajuste ocupa 74.669.178 parámetros y un repositorio de 1,5 GB, lo que lo sitúa en la gama baja de la traducción neuronal y muy por debajo de alternativas multilingües de gran tamaño como mBART-50 o NLLB-200.
 
@@ -101,7 +101,7 @@ No se dispone, en la información proporcionada, de datos verificables de parám
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adnan2942/marian-finetuned-kde4-en-to-fr
+- Modelo en Hugging Face: https://huggingface.co/Adnan2942/marian-finetuned-kde4-en-to-fr
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-fr
 - Dataset kde4: https://huggingface.co/datasets/kde4
 - Organización Helsinki-NLP (familia OPUS-MT): https://huggingface.co/Helsinki-NLP

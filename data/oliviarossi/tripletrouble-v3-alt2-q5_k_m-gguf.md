@@ -6,7 +6,7 @@ OliviaRossi/TripleTrouble-V3-ALT2-Q5_K_M-GGUF es un repositorio de pesos cuantiz
 
 La informacion publica disponible es extremadamente limitada: el repositorio no declara licencia, idiomas, pipeline de inferencia, numero de parametros, longitud de contexto ni arquitectura. Las etiquetas indican que fue generado con la herramienta gguf-my-repo, que el modelo base es OliviaRossi/TripleTrouble-V3-ALT2 y que esta orientado a uso conversacional. El identificador sugiere que se trata de la variante V3 de un proyecto denominado TripleTrouble, con una configuracion alternativa ("ALT2"), cuantizada a Q5_K_M.
 
-El interes practico de esta ficha es acotado pero real: permite ejecutar en hardware modesto un modelo cuyo original probablemente requiera mas memoria, siempre que el usuario asuma el riesgo de que se desconoce por completo su procedencia, licencia y calidad. Con cero descargas y una sola interaccion registrada en HuggingFace, no existe validacion comunitaria de su comportamiento.
+El interes practico de esta ficha es acotado pero real: permite ejecutar en hardware modesto un modelo cuyo original probablemente requiera mas memoria, siempre que el usuario asuma el riesgo de que se desconoce por completo su procedencia, licencia y calidad. Con cero descargas y una sola interaccion registrada en Hugging Face, no existe validacion comunitaria de su comportamiento.
 
 ## Especificaciones tecnicas
 
@@ -78,8 +78,8 @@ No es posible establecer una comparativa rigurosa porque se desconocen los param
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TripleTrouble-V3-ALT2-Q5_K_M-GGUF | no disponible | no disponible | GGUF | no disponible | HuggingFace, 0 descargas |
-| TripleTrouble-V3-ALT2 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace, sin datos de uso |
+| TripleTrouble-V3-ALT2-Q5_K_M-GGUF | no disponible | no disponible | GGUF | no disponible | Hugging Face, 0 descargas |
+| TripleTrouble-V3-ALT2 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face, sin datos de uso |
 
 Alternativas de la misma categoria (mismo tamano o misma tarea): no disponible.
 
@@ -93,13 +93,13 @@ Alternativas de la misma categoria (mismo tamano o misma tarea): no disponible.
 - Plantilla de prompt desconocida: si no se aplica la plantilla de chat correcta del modelo base, la calidad de las respuestas conversacionales puede degradarse de forma severa.
 - Falta de validacion comunitaria: cero descargas y una sola interaccion en el momento de redactar esta ficha, sin issues ni discusiones que aporten informacion adicional.
 - Anomalia en los metadatos: las fechas de creacion y actualizacion registradas (2026-09-12) son posteriores a la fecha de consulta, lo que sugiere un error de la plataforma o de la publicacion.
-- Tag "endpoints_compatible": su presencia no garantiza que el modelo funcione en HuggingFace Inference Endpoints ni en ninguna otra infraestructura concreta.
+- Tag "endpoints_compatible": su presencia no garantiza que el modelo funcione en Hugging Face Inference Endpoints ni en ninguna otra infraestructura concreta.
 - Resultados de busqueda no concluyentes: las consultas web devolvieron unicamente paginas de descarga de Windows 11, sin ninguna relacion con el modelo; no existe informacion externa que permita contrastar su calidad.
 - No recomendado para produccion con usuarios finales sin una evaluacion previa exhaustiva.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2-Q5_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2-Q5_K_M-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/TripleTrouble-V3-ALT2
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; las unicas entradas obtenidas fueron paginas de descarga de Windows 11 de microsoft.com, sin relevancia tecnica para esta ficha.

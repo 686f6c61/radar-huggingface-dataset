@@ -19,7 +19,7 @@ La relevancia de este modelo radica en que ofrece una alternativa sin restriccio
 | Tipos de cuantizacion | bf16, FP8 E4M3, INT8 (ConvRot), INT4 W4A4 (ConvRot), NVFP4 E2M1, MXFP8, GGUF |
 | Idiomas soportados | en (ingles) |
 | Licencia | Gemma (terminos de uso de Google) |
-| Formato de pesos | safetensors (formato HuggingFace), safetensors cuantizados para ComfyUI, GGUF |
+| Formato de pesos | safetensors (formato Hugging Face), safetensors cuantizados para ComfyUI, GGUF |
 
 ## Arquitectura y entrenamiento
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: 24,3 GB en bf16 (segun LLM Explorer); las versiones cuantizadas reducen el consumo: FP8 e INT8 ~13 GB, INT4 ~7,7 GB, NVFP4 ~7,8 GB, MXFP8 ~13 GB.
 - GPU recomendadas: cualquier GPU con suficiente VRAM para bf16 (p. ej. RTX 3090/4090, A100, H100); FP8 requiere arquitectura Ada o superior (RTX 4090, L40S, etc.); INT8 funciona en Ampere+; INT4 requiere ComfyUI 0.30.0+ y funciona en cualquier GPU, aunque capas incompatibles se mantienen en bf16; NVFP4 es mas rapido en Blackwell (RTX 50xx) pero funciona con descuantizacion por software en GPUs antiguas (probado en RTX 4090); MXFP8 solo para Blackwell.
-- Opciones de despliegue: ComfyUI (con soporte nativo para los formatos cuantizados), transformers (formato HuggingFace), llama.cpp (conversion desde safetensors), text-generation-inference (etiquetado como compatible).
+- Opciones de despliegue: ComfyUI (con soporte nativo para los formatos cuantizados), transformers (formato Hugging Face), llama.cpp (conversion desde safetensors), text-generation-inference (etiquetado como compatible).
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | DreamFast/gemma-3-12b-it-heretic-v2 | 12,19 B | 128K | 8/100 | 0,0801 | Gemma |
 | Otras variantes abliteradas de Gemma 3 12B (p. ej. de la comunidad) | 12,19 B | 128K | no disponible | no disponible | Gemma |
 
-No se dispone de datos de rendimiento comparativo en benchmarks entre estas variantes. La principal diferencia con el modelo base es la drastica reduccion de rechazos, manteniendo una divergencia KL baja. Otras variantes abliteradas de Gemma 3 12B existen en HuggingFace, pero no se han incluido por falta de informacion cuantitativa.
+No se dispone de datos de rendimiento comparativo en benchmarks entre estas variantes. La principal diferencia con el modelo base es la drastica reduccion de rechazos, manteniendo una divergencia KL baja. Otras variantes abliteradas de Gemma 3 12B existen en Hugging Face, pero no se han incluido por falta de informacion cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks entre estas vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DreamFast/gemma-3-12b-it-heretic-v2
+- Modelo en Hugging Face: https://huggingface.co/DreamFast/gemma-3-12b-it-heretic-v2
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Docker de Heretic (DreamFast): https://github.com/dreamfast/heretic-docker
 - convert-to-quant: https://github.com/silveroxides/convert_to_quant

@@ -108,10 +108,10 @@ Frente al modelo base en PyTorch, esta build ofrece un cuarto del peso y la posi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theanugrah/muril-indic-ner
+- Modelo en Hugging Face: https://huggingface.co/theanugrah/muril-indic-ner
 - Modelo base (PyTorch, fp32): https://huggingface.co/vaibhav006/indic-ner-muril-naamapadam
 - Encoder original MuRIL: https://huggingface.co/google/muril-base-cased
 - Dataset Naamapadam de AI4Bharat: https://huggingface.co/datasets/ai4bharat/naamapadam
-- Herramienta de exportación empleada: `optimum-cli export onnx --task token-classification` (Optimum, HuggingFace)
+- Herramienta de exportación empleada: `optimum-cli export onnx --task token-classification` (Optimum, Hugging Face)
 - Runtime de inferencia citado por el autor: `Microsoft.ML.OnnxRuntime` con `BertTokenizer`
 - Nota sobre la búsqueda web: no se encontró ningún resultado relevante sobre este modelo; los resultados devueltos correspondían a un parque industrial de Ordos (China), ajenos por completo al contenido de esta ficha.

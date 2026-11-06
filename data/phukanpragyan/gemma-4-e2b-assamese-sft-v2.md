@@ -72,8 +72,8 @@ No se dispone de datos de benchmarks ni de especificaciones completas de este mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| phukanpragyan/gemma-4-e2b-assamese-sft-v2 | 5.483.175.491 (safetensors) | no disponible | no disponible | adaptador LoRA en HuggingFace, 0 descargas |
-| phukanpragyan/gemma-4-e2b-assamese-cpt | no disponible | no disponible | no disponible | checkpoint base en HuggingFace |
+| phukanpragyan/gemma-4-e2b-assamese-sft-v2 | 5.483.175.491 (safetensors) | no disponible | no disponible | adaptador LoRA en Hugging Face, 0 descargas |
+| phukanpragyan/gemma-4-e2b-assamese-cpt | no disponible | no disponible | no disponible | checkpoint base en Hugging Face |
 | Familia Gemma 4 E2B (checkpoint original) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Alternativas abiertas de ~3-8B en el ecosistema (Gemma 3, Qwen 3, Llama 3.2) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se han proporcionado resultados que permitan establecer una comparacion cuant
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v2
+- Repositorio Hugging Face: https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v2
 - Checkpoint base (CPT): https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-cpt
 - Repositorio de TRL, framework de entrenamiento declarado: https://github.com/huggingface/trl
 - Los resultados de busqueda web disponibles no aportaron enlaces tecnicos relevantes sobre este modelo ni sobre su familia; no se han localizado papers, blogs ni demos asociados.

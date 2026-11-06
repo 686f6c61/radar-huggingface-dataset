@@ -4,7 +4,7 @@
 
 depth 5 es un evaluador de ajedrez del tipo NNUE (efficiently updatable neural network) entrenado desde cero por el desarrollador Kedhareswer y publicado bajo licencia MIT. No es un modelo de lenguaje: es una red neuronal pequena (4,79 MB de pesos) que se ejecuta exclusivamente en CPU mediante NumPy y que se integra en un motor de busqueda alfa-beta para jugar al ajedrez. Su relevancia radica en que demuestra que una red de apenas unos megabytes, entrenada de forma independiente y con inferencia en Python puro, puede superar a modelos de lenguaje de gran escala en tareas de evaluacion de posiciones y resolucion de puzzles de ajedrez.
 
-El modelo se distribuye como un artefacto binario (`artifacts/chess_nnue/chess.nnue`) dentro del repositorio de HuggingFace, acompanado del paquete Python `chess_nnue`, informes de benchmarks y tests. La busqueda que lo rodea esta limitada por tiempo, no por profundidad: el nombre "depth 5" es una etiqueta, y en el control de tiempo de referencia (60 s + 0,6 s por jugada) alcanza de media entre 5,2 y 5,8 plies.
+El modelo se distribuye como un artefacto binario (`artifacts/chess_nnue/chess.nnue`) dentro del repositorio de Hugging Face, acompanado del paquete Python `chess_nnue`, informes de benchmarks y tests. La busqueda que lo rodea esta limitada por tiempo, no por profundidad: el nombre "depth 5" es una etiqueta, y en el control de tiempo de referencia (60 s + 0,6 s por jugada) alcanza de media entre 5,2 y 5,8 plies.
 
 El autor reporta resultados notables frente a LLMs en dos benchmarks publicos: una puntuacion de 2446 (intervalo del 95%: 2288-2666) en la escala ChessBench LLM, y un 96,6% de acierto en los 1.000 puzzles de Kagi, frente al 84,8% del mejor LLM de esa tabla (GPT-4.5). Frente a Stockfish con fuerza calibrada, el autor estima unos 2110 Elo (2044-2178) en la escala CCRL. Estos datos proceden de la model card y no han sido verificados de forma independiente.
 
@@ -133,7 +133,7 @@ La comparacion con LLMs es la mas relevante en la model card: en ChessBench, dep
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kedhareswer/depth-5
+- Modelo en Hugging Face: https://huggingface.co/Kedhareswer/depth-5
 - Tablero interactivo: https://kedhareswer-puzzle-arena.hf.space/depth5
 - Puzzle Arena Space: https://huggingface.co/spaces/Kedhareswer/puzzle-arena
 - Bot de Lichess: https://lichess.org/@/paddyoaktree

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-H3-Wushu-Fight-Simulator (H3 武斗模拟器, v9.25) no es un modelo de pesos, sino un **programa de escritorio para Windows** publicado en HuggingFace que simula combates de wushu de forma determinista y, a partir del resultado, genera **prompts para el sistema de generación de vídeo MiniMax H3**. Lo desarrolla el usuario Jojocodex y el repositorio contiene un ejecutable único (.NET 8 + WebView2), documentación y manuales de reglas de ingeniería de prompts, con un total de 3,3 GB de repositorio.
+H3-Wushu-Fight-Simulator (H3 武斗模拟器, v9.25) no es un modelo de pesos, sino un **programa de escritorio para Windows** publicado en Hugging Face que simula combates de wushu de forma determinista y, a partir del resultado, genera **prompts para el sistema de generación de vídeo MiniMax H3**. Lo desarrolla el usuario Jojocodex y el repositorio contiene un ejecutable único (.NET 8 + WebView2), documentación y manuales de reglas de ingeniería de prompts, con un total de 3,3 GB de repositorio.
 
 El problema que aborda es la pérdida de coherencia espacial y narrativa en prompts de vídeo de artes marciales: el programa ejecuta primero una **resolución de combate 3D a 60 Hz** (quién golpea, con qué técnica, si hay impacto o bloqueo, retroceso o altura sobre el suelo) y exporta ese resultado como material estructurado (tabla de posiciones por compás, formas nombradas de cada técnica, escalado de efectos) que se entrega al modelo de lenguaje para redactar el prompt final.
 
@@ -99,7 +99,7 @@ No disponible. En la información proporcionada no se identifican herramientas c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jojocodex/H3-Wushu-Fight-Simulator
+- Repositorio en Hugging Face: https://huggingface.co/Jojocodex/H3-Wushu-Fight-Simulator
 - Repositorio de pesos opcionales de LAYA (juez local): https://huggingface.co/convaiinnovations/laya
 - Espejo de descarga alternativo citado en la documentación: https://hf-mirror.com
 - Archivo de verificación de integridad: `SHA256.txt` dentro del repositorio

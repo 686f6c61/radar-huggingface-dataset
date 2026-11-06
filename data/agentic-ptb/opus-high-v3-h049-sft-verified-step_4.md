@@ -60,6 +60,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: [agentic-ptb/opus-high-v3.h049.sft-verified.step_4](https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_4)
+- Modelo en Hugging Face: [agentic-ptb/opus-high-v3.h049.sft-verified.step_4](https://huggingface.co/agentic-ptb/opus-high-v3.h049.sft-verified.step_4)
 - Dataset de datos del run: [agentic-ptb/opus-high-v3-data](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - Índice de experimentos AgentPTB: [agentic-ptb/INDEX](https://huggingface.co/datasets/agentic-ptb/INDEX)

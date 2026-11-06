@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el momento de su publicación: tiene
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna del modelo. Los tags de HuggingFace incluyen `qwen3_5_moe`, lo que sugiere que podría tratarse de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, pero no hay confirmación en la model card ni en documentación adicional. El pipeline declarado es `text-generation`, aunque el tag `image-text-to-text` podría indicar una capacidad multimodal no documentada.
+No se dispone de información oficial sobre la arquitectura interna del modelo. Los tags de Hugging Face incluyen `qwen3_5_moe`, lo que sugiere que podría tratarse de una arquitectura de mezcla de expertos (MoE) basada en la familia Qwen 3.5, pero no hay confirmación en la model card ni en documentación adicional. El pipeline declarado es `text-generation`, aunque el tag `image-text-to-text` podría indicar una capacidad multimodal no documentada.
 
 El modelo se describe como un "LoRA-merged" del checkpoint `kevin954/Affine-5dfqbbh8ev-sft`, es decir, se ha fusionado un adaptador LoRA con los pesos del modelo base. El autor lo etiqueta como "Private TTL insurance; not a submission until Stage-5 gate clears", lo que indica que es un artefacto intermedio de un flujo de entrenamiento privado, no un modelo final validado. No se proporcionan datos sobre el dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO.
 
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: unconst/Affine-5czsc2fc98-r179-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r179-merged)
+- [Hugging Face: unconst/Affine-5czsc2fc98-r179-merged](https://huggingface.co/unconst/Affine-5czsc2fc98-r179-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft)

@@ -74,9 +74,9 @@ Criterios de seleccion alternativos evaluados con 128 expertos: saliencia media 
 
 | Modelo | Parametros totales | Expertos enrutados | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-reap192-bf16 | 201,5B | 192 (top-6) | no disponible | other | HuggingFace (18 descargas) |
-| Inkling-reap128-bf16 | no disponible | 128 (top-6) | no disponible | other | HuggingFace |
-| Inkling-Small (original) | 276B | 256 (top-6) | no disponible | other | HuggingFace (ThinkingMachines) |
+| Inkling-reap192-bf16 | 201,5B | 192 (top-6) | no disponible | other | Hugging Face (18 descargas) |
+| Inkling-reap128-bf16 | no disponible | 128 (top-6) | no disponible | other | Hugging Face |
+| Inkling-Small (original) | 276B | 256 (top-6) | no disponible | other | Hugging Face (ThinkingMachines) |
 
 No se dispone de datos de rendimiento en tareas para ninguno de los tres, por lo que la comparacion se limita a tamano, estructura de expertos y concordancia con el original (0,815 para reap192 frente a 0,733 para reap128).
 
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento en tareas para ninguno de los tres, por lo
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/nbKPS/inkling-reap192-bf16
+- Hugging Face del modelo: https://huggingface.co/nbKPS/inkling-reap192-bf16
 - Modelo base: https://huggingface.co/ThinkingMachines/Inkling-Small
 - Checkpoint hermano (corte a 128 expertos): https://huggingface.co/nbKPS/inkling-reap128-bf16

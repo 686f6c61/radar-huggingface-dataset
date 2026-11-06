@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT-sim-white-dart-c100 es una política de imitación robótica basada en Action Chunking with Transformers (ACT), entrenada con LeRobot y publicada en HuggingFace por el usuario RafaelJaime en el contexto del hackathon RobotEkin. El modelo resuelve una tarea concreta de manipulación: agarrar una semilla ("grasp the seed below the gripper") con un robot SO-101 (so_follower), utilizando dos cámaras (vista superior y vista de muñeca) y el estado articular como entrada, y produciendo comandos de acción de 6 dimensiones.
+ACT-sim-white-dart-c100 es una política de imitación robótica basada en Action Chunking with Transformers (ACT), entrenada con LeRobot y publicada en Hugging Face por el usuario RafaelJaime en el contexto del hackathon RobotEkin. El modelo resuelve una tarea concreta de manipulación: agarrar una semilla ("grasp the seed below the gripper") con un robot SO-101 (so_follower), utilizando dos cámaras (vista superior y vista de muñeca) y el estado articular como entrada, y produciendo comandos de acción de 6 dimensiones.
 
 La arquitectura es un transformer con decodificación por chunks de acciones, según el método descrito en el paper ACT (arXiv:2304.13705). Cuenta con 51.668.614 parámetros y un repositorio de 2,5 GB en formato safetensors. El entrenamiento se realizó sobre el dataset smartseed-sim-grasp-white-v5-dart, compuesto por 600 episodios y 176.729 frames a 30 FPS, generado en simulación (gemelo MuJoCo de SmartSeed con semilla blanca).
 
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Tipo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-sim-white-dart-c100 | ACT (LeRobot) | 51.668.614 | Grasp de semilla con SO-101 en simulación | apache-2.0 | HuggingFace |
-| Otras políticas ACT de LeRobot | ACT (LeRobot) | no disponible | Tareas de manipulación diversas | variable | HuggingFace |
-| Políticas Diffusion Policy | Diffusion Policy | no disponible | Manipulación robótica | variable | HuggingFace / repos académicos |
+| act-sim-white-dart-c100 | ACT (LeRobot) | 51.668.614 | Grasp de semilla con SO-101 en simulación | apache-2.0 | Hugging Face |
+| Otras políticas ACT de LeRobot | ACT (LeRobot) | no disponible | Tareas de manipulación diversas | variable | Hugging Face |
+| Políticas Diffusion Policy | Diffusion Policy | no disponible | Manipulación robótica | variable | Hugging Face / repos académicos |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos en la información proporcionada. Las alternativas citadas son categorías generales, no modelos concretos con métricas verificadas.
 
@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RafaelJaime/act-sim-white-dart-c100
+- Modelo en Hugging Face: https://huggingface.co/RafaelJaime/act-sim-white-dart-c100
 - Dataset de entrenamiento: https://huggingface.co/datasets/RafaelJaime/smartseed-sim-grasp-white-v5-dart
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=RafaelJaime/smartseed-sim-grasp-white-v5-dart
 - Paper ACT: https://huggingface.co/papers/2304.13705

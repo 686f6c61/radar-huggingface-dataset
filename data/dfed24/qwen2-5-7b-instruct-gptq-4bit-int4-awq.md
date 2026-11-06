@@ -73,10 +73,10 @@ Advertencias del propio autor sobre estos numeros: el texto de calibracion (128 
 
 | Modelo | Parametros | Cuantizacion | WikiText-2 (ppl) | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dfed24/Qwen2.5-7B-Instruct-gptq-4bit-int4-awq | 7,62 B | AWQ 4 bits, grupo 64, zero points enteros | 7,288 | 67,1% | Apache 2.0 | HuggingFace, 0 descargas, sin validacion externa |
-| Qwen2.5-7B-Instruct (fp16) | 7,62 B | ninguna | 7,145 | 70,1% | Apache 2.0 | HuggingFace, ampliamente usado |
-| AWQ 4-bit oficial de Qwen | 7,62 B | AWQ 4 bits | 7,583 | 64,6% | Apache 2.0 | HuggingFace, referencia establecida |
-| dfed24/Qwen2.5-1.5B-Instruct-gptq-4bit-int4-awq | ~1,5 B | AWQ 4 bits, misma receta | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | HuggingFace, modelo hermano de menor tamano |
+| dfed24/Qwen2.5-7B-Instruct-gptq-4bit-int4-awq | 7,62 B | AWQ 4 bits, grupo 64, zero points enteros | 7,288 | 67,1% | Apache 2.0 | Hugging Face, 0 descargas, sin validacion externa |
+| Qwen2.5-7B-Instruct (fp16) | 7,62 B | ninguna | 7,145 | 70,1% | Apache 2.0 | Hugging Face, ampliamente usado |
+| AWQ 4-bit oficial de Qwen | 7,62 B | AWQ 4 bits | 7,583 | 64,6% | Apache 2.0 | Hugging Face, referencia establecida |
+| dfed24/Qwen2.5-1.5B-Instruct-gptq-4bit-int4-awq | ~1,5 B | AWQ 4 bits, misma receta | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 | Hugging Face, modelo hermano de menor tamano |
 
 No se dispone de datos en la informacion proporcionada para comparar con alternativas de otros fabricantes (Llama 3.1 8B, Mistral 7B, Gemma 2 9B) bajo el mismo protocolo.
 
@@ -95,7 +95,7 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfed24/Qwen2.5-7B-Instruct-gptq-4bit-int4-awq
+- Modelo en Hugging Face: https://huggingface.co/dfed24/Qwen2.5-7B-Instruct-gptq-4bit-int4-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo hermano de 1,5 B: https://huggingface.co/dfed24/Qwen2.5-1.5B-Instruct-gptq-4bit-int4-awq
 - Receta de cuantizacion (mlx-gptq): https://github.com/dfed25/mlx-gptq

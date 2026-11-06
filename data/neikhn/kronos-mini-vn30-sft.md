@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kronos Mini — VN30 SFT (este) | 4,1 M | 128 hist. / 20 pred. | Pronóstico OHLC VN30 | MIT | HuggingFace, 0 descargas |
-| NeoQuasar/Kronos-mini (base) | no disponible en la información | no disponible | Pronóstico de series temporales | no disponible en la información | HuggingFace |
+| Kronos Mini — VN30 SFT (este) | 4,1 M | 128 hist. / 20 pred. | Pronóstico OHLC VN30 | MIT | Hugging Face, 0 descargas |
+| NeoQuasar/Kronos-mini (base) | no disponible en la información | no disponible | Pronóstico de series temporales | no disponible en la información | Hugging Face |
 | Línea base Naive (persistencia) | 0 | n/a | Pronóstico trivial | n/a | Referencia estándar |
 | Otros modelos de series temporales (p. ej. Chronos, TimesFM) | no disponible en la información | no disponible | Pronóstico general | no disponible en la información | no disponible en la información |
 
@@ -87,7 +87,7 @@ La comparación con Chronos o TimesFM no puede cuantificarse con los datos propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neikhn/kronos-mini-vn30-sft
+- Modelo en Hugging Face: https://huggingface.co/neikhn/kronos-mini-vn30-sft
 - Modelo base: https://huggingface.co/NeoQuasar/Kronos-mini
 - Tokenizador: https://huggingface.co/NeoQuasar/Kronos-Tokenizer-2k
 - Implementación Kronos (commit fijado): https://github.com/NeoQuasar/Kronos/tree/67b630e67f6a18c9e9be918d9b4337c960db1e9a

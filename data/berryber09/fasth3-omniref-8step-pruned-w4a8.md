@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FastH3 OmniRef 8-step pruned W4A8 es un checkpoint de generación de vídeo cuantizado a 4 bits, publicado por el usuario berryber09 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión del fichero bf16 «FastH3 OmniRef 8-step pruned» alojado en `FastVideo/FastH3-Omni-Comfy` (44.240.780.704 bytes), que a su vez deriva del modelo base `MiniMaxAI/MiniMax-H3`, revisión `9bfb6693f2cf6de171db46d1aa586f67d773a1da`. El resultado es un único fichero `fasth3_omniref_8step_pruned_w4a8.safetensors` de 16.555.980.952 bytes (unos 16,55 GB), es decir, aproximadamente un 37 % del tamano del checkpoint original en bf16.
+FastH3 OmniRef 8-step pruned W4A8 es un checkpoint de generación de vídeo cuantizado a 4 bits, publicado por el usuario berryber09 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión del fichero bf16 «FastH3 OmniRef 8-step pruned» alojado en `FastVideo/FastH3-Omni-Comfy` (44.240.780.704 bytes), que a su vez deriva del modelo base `MiniMaxAI/MiniMax-H3`, revisión `9bfb6693f2cf6de171db46d1aa586f67d773a1da`. El resultado es un único fichero `fasth3_omniref_8step_pruned_w4a8.safetensors` de 16.555.980.952 bytes (unos 16,55 GB), es decir, aproximadamente un 37 % del tamano del checkpoint original en bf16.
 
 El modelo resuelve un problema muy concreto: ejecutar generación de vídeo condicionada por referencias (reference-to-video, variante ref2va) en un entorno ComfyUI con requisitos de VRAM rebajados y con solo 8 pasos de muestreo, sin CFG. Incorpora su propia destilación a 8 pasos, de modo que no necesita LoRAs turbo ni de tier adicionales. La cuantización utiliza el esquema `AsymW4A8Int8Layout` de la librería comfy-kitchen: pesos en 4 bits con activaciones int8 asimétricas.
 
@@ -35,7 +35,7 @@ No se ha publicado información sobre volumen de tokens de entrenamiento, compos
 
 ## Capacidades
 
-- Generación de vídeo a partir de texto (pipeline text-to-video declarado en HuggingFace).
+- Generación de vídeo a partir de texto (pipeline text-to-video declarado en Hugging Face).
 - Generación de vídeo condicionada por referencias de imagen (reference-to-video, variante ref2va), con referencias ordenadas y fijas.
 - Generación conjunta con componente de audio, evidenciada por el parámetro de desplazamiento sigma de audio (3.0).
 - Muestreo en 8 pasos sin CFG, lo que reduce a la mitad el número de evaluaciones del modelo respecto a un esquema con guidance.
@@ -84,16 +84,16 @@ No se dispone de datos de otros modelos comparables de la misma categoría (refe
 - **Artefactos de generación**: como todo modelo de difusión de vídeo, puede producir inconsistencias temporales, deformaciones anatómicas y desviaciones respecto al prompt. No hay datos publicados sobre tasa de fallo.
 - **Dependencia de versión**: el layout `AsymW4A8Int8Layout` requiere comfy-kitchen 0.2.39; versiones distintas de la librería pueden no cargar el fichero.
 - **Idiomas de prompt**: no disponibles; no se puede garantizar el comportamiento con prompts en castellano.
-- **Restricciones de licencia**: hereda la MiniMax-H3 Community License Agreement, que no se reproduce en el repositorio. Antes de uso comercial es obligatorio revisar el texto íntegro en la página de `MiniMaxAI/MiniMax-H3`; el campo `license: other` de HuggingFace no refleja los términos reales.
+- **Restricciones de licencia**: hereda la MiniMax-H3 Community License Agreement, que no se reproduce en el repositorio. Antes de uso comercial es obligatorio revisar el texto íntegro en la página de `MiniMaxAI/MiniMax-H3`; el campo `license: other` de Hugging Face no refleja los términos reales.
 - **Ámbito limitado**: no soporta tool calling, agentes ni razonamiento; no debe evaluarse como sustituto de un LLM.
 - **Trazabilidad**: el autor no documenta la metodología exacta de poda ni qué componentes se eliminaron del checkpoint original.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/berryber09/FastH3-OmniRef-8step-pruned-w4a8
+- Modelo en Hugging Face: https://huggingface.co/berryber09/FastH3-OmniRef-8step-pruned-w4a8
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Checkpoint bf16 de origen (cuantizado): https://huggingface.co/FastVideo/FastH3-Omni-Comfy
 - Fuente del recibo de conversión: https://huggingface.co/FastVideo/FastVideo-FastH3-Omni-8-Step-V1
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3
 
-La búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+La búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

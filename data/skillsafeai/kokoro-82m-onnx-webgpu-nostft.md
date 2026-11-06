@@ -106,7 +106,7 @@ El único dato cuantitativo de validación aportado por el autor es la fidelidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafeai/kokoro-82m-onnx-webgpu-nostft
+- Modelo en Hugging Face: https://huggingface.co/skillsafeai/kokoro-82m-onnx-webgpu-nostft
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Conversión ONNX de referencia: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Papers, blogs, repositorios o demos adicionales: no disponible en la información proporcionada.

@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Este 
 - VRAM estimada para inferencia en bf16: aproximadamente 2 GB (1B parametros × 2 bytes), mas overhead de activaciones y memoria de contexto.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA RTX 3060, RTX 4060, o GPU de datacenter como A10 o T4.
 - Cabe en GPUs de consumo (RTX 4090, RTX 3080, etc.) sin problemas.
-- Opciones de despliegue: puede usarse con frameworks de inferencia como vLLM, llama.cpp, Ollama, o Transformers de HuggingFace con el formato safetensors.
+- Opciones de despliegue: puede usarse con frameworks de inferencia como vLLM, llama.cpp, Ollama, o Transformers de Hugging Face con el formato safetensors.
 - Latencia y throughput estimados: no disponibles. Depende del hardware y de la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de una comparativa directa con otros modelos de tamano similar por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-252b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-252b
 - Modelo base OLMo-2-1B (Ai2): https://huggingface.co/allenai/OLMo-2-0425-1B
 - Paper tecnico de OLMo 2: https://arxiv.org/abs/2501.00656
 - Pagina oficial de OLMo: https://allenai.org/olmo2

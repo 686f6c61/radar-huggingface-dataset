@@ -4,7 +4,7 @@
 
 MixVarGENet es un backbone de clasificación de imágenes propuesto por Horizon Robotics, diseñado específicamente para su familia de chips Journey (J5 y J6). El modelo construye una red ligera mediante bloques de variantes mixtas (mixvarge), combinando bloques base f2/f4 en las dos primeras etapas y bloques con grupos f2_gb16 en las dos últimas, con un downsampling progresivo hasta un stride de 32. Está optimizado para despliegue en hardware embebido de Horizon, con métricas de rendimiento publicadas para las arquitecturas J6M y J6P.
 
-El modelo resuelve el problema de clasificación de imágenes en entornos de conducción autónoma y visión por computador embebida, donde la eficiencia computacional y el bajo consumo son críticos. Su relevancia actual radica en que es una arquitectura de referencia para el ecosistema de desarrollo de Horizon Robotics, con soporte en su cadena de herramientas HEAL (Horizon Embedded AI Library) y ejemplos de integración en tareas como detección de carriles y estimación de disparidad. El repositorio en HuggingFace contiene el modelo con un tamaño de 0.1 GB, aunque la información pública sobre parámetros totales y licencia detallada es limitada.
+El modelo resuelve el problema de clasificación de imágenes en entornos de conducción autónoma y visión por computador embebida, donde la eficiencia computacional y el bajo consumo son críticos. Su relevancia actual radica en que es una arquitectura de referencia para el ecosistema de desarrollo de Horizon Robotics, con soporte en su cadena de herramientas HEAL (Horizon Embedded AI Library) y ejemplos de integración en tareas como detección de carriles y estimación de disparidad. El repositorio en Hugging Face contiene el modelo con un tamaño de 0.1 GB, aunque la información pública sobre parámetros totales y licencia detallada es limitada.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ El modelo resuelve el problema de clasificación de imágenes en entornos de con
 | Tipos de cuantizacion | Calibracion (float a int8), HBM (high bandwidth memory); QAT no disponible |
 | Idiomas soportados | no aplica (modelo de vision) |
 | Licencia | other (especificar con el autor) |
-| Formato de pesos | no disponible (repo de 0.1 GB en HuggingFace) |
+| Formato de pesos | no disponible (repo de 0.1 GB en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,12 +84,12 @@ No se dispone de datos comparativos publicados con otros backbones de clasificac
 - No se proporcionan detalles sobre sesgos en el dataset de entrenamiento (ImageNet), aunque es conocido que este dataset puede contener sesgos de genero, raza y geografia.
 - La precision del modelo (0.716 en float) es moderada en comparacion con backbones modernos de mayor tamano; no es adecuado para tareas que requieran precision de ultima generacion.
 - No se ha publicado informacion sobre la robustez del modelo ante ataques adversariales o condiciones de iluminacion extremas, algo critico en aplicaciones de conduccion autonoma.
-- El repositorio en HuggingFace tiene 0 descargas y 0 likes, lo que sugiere que es un modelo de referencia interna mas que un proyecto comunitario activo.
+- El repositorio en Hugging Face tiene 0 descargas y 0 likes, lo que sugiere que es un modelo de referencia interna mas que un proyecto comunitario activo.
 - La fecha de creacion (2026-08-27) es futura respecto a la fecha actual, lo que podria indicar un error en los metadatos o un modelo experimental.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenExploer/mixvargenet
+- Hugging Face: https://huggingface.co/OpenExploer/mixvargenet
 - Documentacion de Horizon sobre MixVarGENet: https://developer.horizon.auto/blog/10387
 - Foro de la comunidad (referencia al algoritmo): https://forum.d-robotics.cc/t/topic/25905
 - Ejemplo de configuracion para deteccion de carriles (GANet): https://github.com/yingxie285/sparse4d_qat/blob/main/samples/ai_toolchain/horizon_model_train_sample/scripts/configs/lane_pred/ganet/ganet_mixvargenet_culane.py

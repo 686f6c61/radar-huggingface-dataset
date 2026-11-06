@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`decision_maker` es un codificador de decisiones desarrollado por el usuario HrushikeshGangane y publicado en HuggingFace bajo el identificador `HrushikeshGangane/decision_maker`. El modelo recibe una tupla formada por un estado (`state`), una pregunta (`question`) y una lista variable de opciones, y devuelve en una sola pasada de encoder una distribución de probabilidad calibrada sobre esas opciones. No genera texto libre: es un clasificador de opción múltiple orientado a la selección de alternativas, etiquetado por el autor como "system-one", es decir, pensado para decisiones rápidas e intuitivas más que para razonamiento deliberativo en varios pasos.
+`decision_maker` es un codificador de decisiones desarrollado por el usuario HrushikeshGangane y publicado en Hugging Face bajo el identificador `HrushikeshGangane/decision_maker`. El modelo recibe una tupla formada por un estado (`state`), una pregunta (`question`) y una lista variable de opciones, y devuelve en una sola pasada de encoder una distribución de probabilidad calibrada sobre esas opciones. No genera texto libre: es un clasificador de opción múltiple orientado a la selección de alternativas, etiquetado por el autor como "system-one", es decir, pensado para decisiones rápidas e intuitivas más que para razonamiento deliberativo en varios pasos.
 
 Técnicamente se apoya en `bert-large-uncased` como encoder bidireccional base, al que se añade un Transformer de decisión de cuatro capas con una consulta `[DECIDE]` y claves `[OPTION]` puntuadas mediante producto escalar, más un escalado de temperatura global aplicado en post-entrenamiento para calibrar las probabilidades. El modelo tiene 386.057.216 parámetros (unos 386 M) y un límite de entrada estructurada de 256 tokens, bastante más restrictivo que los 512 tokens habituales de BERT-Large. El repositorio ocupa 1,5 GB y los pesos se distribuyen en formato safetensors.
 
@@ -20,7 +20,7 @@ Su relevancia actual es acotada pero concreta: la mayoría de los modelos de dec
 | Idiomas soportados | No disponible; la base declarada es `bert-large-uncased`, de vocabulario en inglés |
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
-| Pipeline en HuggingFace | text-classification (con tags `multiple-choice`, `calibrated-classification`, `system-one`) |
+| Pipeline en Hugging Face | text-classification (con tags `multiple-choice`, `calibrated-classification`, `system-one`) |
 | Tamaño del repositorio | 1,5 GB |
 | Fecha de creación | 2026-09-20 |
 | Última actualización | 2026-09-20 |
@@ -37,7 +37,7 @@ No se especifica en la información disponible el número de tokens de entrenami
 - Clasificación calibrada: las probabilidades están escaladas por temperatura, con un ECE de 0,045 en la partición de validación de la release, lo que permite usarlas directamente como umbrales de confianza.
 - Condicionamiento por estado: la decisión se toma en función de un `state` explícito además de la pregunta, lo que permite inyectar contexto de conversación, estado de un sistema o resultados previos.
 - Número variable de opciones: el formato `[DECIDE]`/`[OPTION]` admite listas de alternativas de longitud variable sin reentrenar el cabezal.
-- Integración en pipelines de clasificación estándar: el modelo se expone con el pipeline `text-classification` de HuggingFace.
+- Integración en pipelines de clasificación estándar: el modelo se expone con el pipeline `text-classification` de Hugging Face.
 - No dispone de generación de texto, tool calling, soporte de agentes multi-paso, capacidades de visión ni audio según la información disponible.
 - No se documentan capacidades multilingües; la base declarada tiene vocabulario en inglés.
 
@@ -73,7 +73,7 @@ El escalado de temperatura no modifica la accuracy, como es esperable, pero redu
 - Cabe sin problema en cualquier GPU de consumo con 4 GB o más de VRAM: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090, así como en Apple Silicon vía MPS.
 - También es viable en CPU para cargas de baja concurrencia, dado el tamaño del modelo y la longitud de entrada limitada a 256 tokens.
 - GPU de centro de datos (A100, H100, L40S) no son necesarias para una sola instancia; solo tendrían sentido para servir muchas réplicas o lotes grandes.
-- Opciones de despliegue: `transformers` con PyTorch, exportación a ONNX Runtime o TorchScript, `text-embeddings-inference` (TEI) para clasificación y reranking, y endpoints de inferencia de HuggingFace. No es compatible con vLLM ni llama.cpp al no ser un modelo generativo autorregresivo.
+- Opciones de despliegue: `transformers` con PyTorch, exportación a ONNX Runtime o TorchScript, `text-embeddings-inference` (TEI) para clasificación y reranking, y endpoints de inferencia de Hugging Face. No es compatible con vLLM ni llama.cpp al no ser un modelo generativo autorregresivo.
 - Latencia y throughput estimados: no disponibles; el autor no publica mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -106,6 +106,6 @@ La comparación de rendimiento contra alternativas concretas de decisión calibr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HrushikeshGangane/decision_maker
+- Modelo en Hugging Face: https://huggingface.co/HrushikeshGangane/decision_maker
 - Encoder base declarado en la model card: https://huggingface.co/bert-large-uncased
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en los resultados de búsqueda web disponibles.

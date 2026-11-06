@@ -107,7 +107,7 @@ La diferencia funcional clave frente a los clasificadores de tres clases no es s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/susurofu/literary-bert-en-mini
+- Modelo en Hugging Face: https://huggingface.co/susurofu/literary-bert-en-mini
 - Modelo base: https://huggingface.co/google/bert_uncased_L-4_H-256_A-4
 - Dataset de pseudoetiquetas: https://huggingface.co/datasets/susurofu/synthetic-sentiment-dataset-pg-gemma4
 - Código de la cabeza ordinal (incluido en el repo): `modeling_ordinal_bert.py` en https://huggingface.co/susurofu/literary-bert-en-mini/blob/main/modeling_ordinal_bert.py

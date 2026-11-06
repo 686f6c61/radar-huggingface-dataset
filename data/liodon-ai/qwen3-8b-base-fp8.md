@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/Qwen3-8B-Base-FP8 | 8.190.735.360 | no disponible | FP8 (E4M3) dinamica | other | HuggingFace |
-| Qwen/Qwen3-8B-Base | 8.190.735.360 (aprox.) | no disponible | BF16 (original) | other | HuggingFace |
+| liodon-ai/Qwen3-8B-Base-FP8 | 8.190.735.360 | no disponible | FP8 (E4M3) dinamica | other | Hugging Face |
+| Qwen/Qwen3-8B-Base | 8.190.735.360 (aprox.) | no disponible | BF16 (original) | other | Hugging Face |
 | Otras cuantizaciones de Qwen3-8B-Base (GGUF, AWQ, GPTQ) | 8B | no disponible | GGUF / AWQ / GPTQ | segun autor | no disponible en la informacion |
 
 La comparativa se limita al modelo base original y a variantes de cuantizacion del mismo modelo; no se dispone de datos de rendimiento para comparar con alternativas de otros autores.
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base original y a variantes de cuantizacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Qwen3-8B-Base-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Qwen3-8B-Base-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - Perfil del autor: https://huggingface.co/liodon-ai

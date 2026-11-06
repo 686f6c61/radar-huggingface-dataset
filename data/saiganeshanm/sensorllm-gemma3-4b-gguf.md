@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sensorllm-gemma3-4b-gguf | 3,88B | no disponible (base Gemma 3 4B IT: 128k) | Texto e imagen | no disponible | GGUF en HuggingFace |
+| sensorllm-gemma3-4b-gguf | 3,88B | no disponible (base Gemma 3 4B IT: 128k) | Texto e imagen | no disponible | GGUF en Hugging Face |
 | Gemma 3 4B IT (modelo base, Google DeepMind) | ≈4B | 128k tokens, salida máxima 8192 | Texto e imagen (896 x 896) | Términos de uso de Gemma | Pesos abiertos, amplia disponibilidad |
 | MedGemma 4B IT (referenciado en los nombres de fichero) | no disponible | no disponible | Texto e imagen de ámbito médico | no disponible | no disponible en la información consultada |
 | SensorLLM (framework, CRUISE Research Group) | Depende del LLM base | no disponible | Series temporales de sensores y texto | no disponible | Repositorio en GitHub |
@@ -88,8 +88,8 @@ La comparación directa con alternativas de la misma categoría (modelos multimo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaiGaneshanM/sensorllm-gemma3-4b-gguf
-- Perfil del autor en HuggingFace: https://huggingface.co/SaiGaneshanM
+- Modelo en Hugging Face: https://huggingface.co/SaiGaneshanM/sensorllm-gemma3-4b-gguf
+- Perfil del autor en Hugging Face: https://huggingface.co/SaiGaneshanM
 - Otro repositorio del mismo autor: https://huggingface.co/SaiGaneshanM/sensorllm-meditron3-gguf
 - Repositorio SensorLLM (EMNLP 2025, CRUISE Research Group): https://github.com/cruiseresearchgroup/SensorLLM
 - Unsloth (herramienta de ajuste y conversión a GGUF): https://github.com/unslothai/unsloth

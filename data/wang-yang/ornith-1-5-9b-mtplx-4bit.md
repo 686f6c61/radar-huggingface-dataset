@@ -66,7 +66,7 @@ No se dispone de datos suficientes para una comparativa directa con otras cuanti
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/wang-yang/Ornith-1.5-9B-MTPLX-4bit)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/wang-yang/Ornith-1.5-9B-MTPLX-4bit)
 - [Modelo base ornith-ai/Ornith-1.5-9B](https://huggingface.co/ornith-ai/Ornith-1.5-9B)
 - [Blog de Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [Repositorio GitHub de Ornith-1](https://github.com/ornith-ai/Ornith-1)

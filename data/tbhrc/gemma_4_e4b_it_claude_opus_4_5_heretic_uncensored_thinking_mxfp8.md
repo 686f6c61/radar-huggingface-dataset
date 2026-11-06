@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos directos con otros modelos en 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/tbhrc/gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8
+- Repositorio del modelo en Hugging Face: https://huggingface.co/tbhrc/gemma_4_e4b_it_claude_opus_4_5_heretic_uncensored_thinking_mxfp8
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking
 - Versión mxfp8-mlx de nightmedia: https://huggingface.co/nightmedia/gemma-4-E4B-it-Claude-Opus-4.5-HERETIC-UNCENSORED-Thinking-mxfp8-mlx
 - Página oficial de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

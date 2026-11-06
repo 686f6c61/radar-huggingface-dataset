@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado para estas alternativas dentro d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol
+- Modelo en Hugging Face: https://huggingface.co/N-Bot-Int/OpenElla-NovelWriter-Charol
 - Dataset de estabilizacion: https://huggingface.co/datasets/N-Bot-Int/Propietary-Merging-Stepper-R1
 - Modelo base del merge: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo donante (mayor peso): https://huggingface.co/ArliAI/Llama-3.1-8B-ArliAI-RPMax-v1.2

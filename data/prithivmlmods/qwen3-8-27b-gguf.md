@@ -94,7 +94,7 @@ No se dispone de datos detallados de los modelos comparados más allá de lo ind
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de ejecución local (yottalabs.ai): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026
 - Documentación de Unsloth para Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

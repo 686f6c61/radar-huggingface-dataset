@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Haoranxuwe/notes-image-captioning` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre *image captioning* (generacion automatica de descripciones de imagenes) publicado en HuggingFace bajo licencia CC-BY-4.0. El autor, Haoranxuwe, lo describe explicitamente como un conjunto estructurado de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, no como un checkpoint funcional. La model card insiste en que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
+`Haoranxuwe/notes-image-captioning` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre *image captioning* (generacion automatica de descripciones de imagenes) publicado en Hugging Face bajo licencia CC-BY-4.0. El autor, Haoranxuwe, lo describe explicitamente como un conjunto estructurado de apuntes exploratorios con referencias de evaluacion y preguntas abiertas, no como un checkpoint funcional. La model card insiste en que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
 El repositorio contiene unicamente dos ficheros: `notes.md` (artefacto principal) y `README.md`. No incluye codigo, pesos entrenados, configuracion de inferencia ni pipeline declarado. Los tags (`research-notes`, `image-captioning`) y la ausencia de descargas y likes (0 en ambos casos) confirman que se trata de un artefacto de documentacion mas que de un modelo desplegable.
 
@@ -12,7 +12,7 @@ Es relevante unicamente como material de referencia para investigadores que trab
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag `transformer` aparece en HuggingFace, pero la model card no describe arquitectura alguna) |
+| Arquitectura | no disponible (el tag `transformer` aparece en Hugging Face, pero la model card no describe arquitectura alguna) |
 | Parametros totales | 24.832 (dato de safetensors; corresponde a un artefacto residual, no a un modelo funcional) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Es relevante unicamente como material de referencia para investigadores que trab
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO). El tag `transformer` de HuggingFace es el unico indicio estructural, pero la model card no lo desarrolla ni lo confirma. El recuento de parametros de safetensors (24.832) es incompatible con cualquier transformer de captioning conocido y sugiere un tensor auxiliar o un artefacto de metadatos, no un modelo entrenado.
+No se ha publicado informacion sobre arquitectura, datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineacion (RLHF, DPO). El tag `transformer` de Hugging Face es el unico indicio estructural, pero la model card no lo desarrolla ni lo confirma. El recuento de parametros de safetensors (24.832) es incompatible con cualquier transformer de captioning conocido y sugiere un tensor auxiliar o un artefacto de metadatos, no un modelo entrenado.
 
 La model card declara explicitamente que el repositorio "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado". Las referencias y datasets propuestos son un punto de partida para verificacion, no evidencia de que el estudio se haya ejecutado.
 
@@ -73,5 +73,5 @@ No disponible. No existen modelos comparables porque el artefacto no es un model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Haoranxuwe/notes-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/Haoranxuwe/notes-image-captioning
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este artefacto.

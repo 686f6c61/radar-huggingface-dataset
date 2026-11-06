@@ -77,10 +77,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hensy-330M (pretrain) | 328,5 M | 4.096 | Apache 2.0 | Inglés | No | HuggingFace, requiere código propio |
-| SmolLM2-360M | 362 M | 8.192 | Apache 2.0 | Inglés (principalmente) | Sí, en su model card | HuggingFace, integrado en transformers, llama.cpp y vLLM |
-| Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Multilingüe (incluye español) | Sí, en su model card | HuggingFace, ampliamente soportado |
-| Pythia-410M | 410 M | 2.048 | Apache 2.0 | Inglés | Sí, en su model card | HuggingFace, integrado en transformers |
+| Hensy-330M (pretrain) | 328,5 M | 4.096 | Apache 2.0 | Inglés | No | Hugging Face, requiere código propio |
+| SmolLM2-360M | 362 M | 8.192 | Apache 2.0 | Inglés (principalmente) | Sí, en su model card | Hugging Face, integrado en transformers, llama.cpp y vLLM |
+| Qwen2.5-0.5B | 494 M | 32.768 | Apache 2.0 | Multilingüe (incluye español) | Sí, en su model card | Hugging Face, ampliamente soportado |
+| Pythia-410M | 410 M | 2.048 | Apache 2.0 | Inglés | Sí, en su model card | Hugging Face, integrado en transformers |
 
 Hensy-330M es el único de la comparativa sin resultados de benchmarks publicados y sin integración nativa en los runtimes de inferencia habituales. A cambio, ofrece checkpoints intermedios de preentrenamiento documentados y un contexto intermedio (4.096) superior al de Pythia-410M pero inferior al de SmolLM2-360M y Qwen2.5-0.5B. Los datos de los modelos comparados provienen de sus respectivas model cards públicas.
 
@@ -98,7 +98,7 @@ Hensy-330M es el único de la comparativa sin resultados de benchmarks publicado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phase-Technologies/hensy-330m-pretrain
+- Modelo en Hugging Face: https://huggingface.co/Phase-Technologies/hensy-330m-pretrain
 - Modelo derivado con ajuste supervisado: https://huggingface.co/Phase-Technologies/hensy-330m-sft
 - Texto de la licencia Apache 2.0: https://opensource.org/licenses/Apache-2.0
 - RunPod (infraestructura de entrenamiento): https://runpod.io

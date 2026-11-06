@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLUX.2 Small Decoder es un decodificador VAE destilado que actua como reemplazo directo (drop-in replacement) del decodificador estandar de la familia FLUX.2 de Black Forest Labs. No es un modelo generativo completo, sino un componente del pipeline de difusion: sustituye unicamente la etapa de decodificacion latente a imagen, manteniendo intacto el codificador original. Lo publica el usuario PanZern en HuggingFace bajo licencia Apache 2.0.
+FLUX.2 Small Decoder es un decodificador VAE destilado que actua como reemplazo directo (drop-in replacement) del decodificador estandar de la familia FLUX.2 de Black Forest Labs. No es un modelo generativo completo, sino un componente del pipeline de difusion: sustituye unicamente la etapa de decodificacion latente a imagen, manteniendo intacto el codificador original. Lo publica el usuario PanZern en Hugging Face bajo licencia Apache 2.0.
 
 El problema que resuelve es concreto: la decodificacion del VAE es una de las etapas que mas VRAM consume y mas tiempo anade al final de cada generacion en modelos de difusion de alta resolucion. Este checkpoint reduce el ancho de canales del decodificador de `[128, 256, 512, 512]` a `[96, 192, 384, 384]`, lo que se traduce en aproximadamente 28 millones de parametros frente a los 50 millones del decodificador completo.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros (decodificador) | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.2 Small Decoder (este) | ~28M | no aplica | ~1,4x mas rapido, ~1,4x menos VRAM | apache-2.0 | HuggingFace |
-| Decodificador FLUX.2 completo | ~50M | no aplica | referencia | segun FLUX.2 | HuggingFace (Black Forest Labs) |
+| FLUX.2 Small Decoder (este) | ~28M | no aplica | ~1,4x mas rapido, ~1,4x menos VRAM | apache-2.0 | Hugging Face |
+| Decodificador FLUX.2 completo | ~50M | no aplica | referencia | segun FLUX.2 | Hugging Face (Black Forest Labs) |
 | Otros VAEs de difusion | no disponible | no aplica | no disponible | variable | no disponible |
 
 No se dispone de datos de benchmarks para establecer una comparativa cuantitativa con alternativas.
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks para establecer una comparativa cuantitativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PanZern/FLUX.2-small-decoder
+- Hugging Face: https://huggingface.co/PanZern/FLUX.2-small-decoder
 - FLUX.2-klein-4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - FLUX.2-klein-9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - FLUX.2-klein-9b-kv: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv

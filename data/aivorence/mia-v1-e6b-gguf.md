@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mia-v1-E6B-GGUF es un modelo de lenguaje conversacional publicado por el usuario AIVORENCE en HuggingFace bajo licencia Apache 2.0. Segun los metadatos del repositorio, cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones) y se distribuye en formato GGUF, la libreria declarada es transformers y la tarea asignada es any-to-any. El modelo declara soporte para seis idiomas: ruso, ingles, chino, aleman, frances e italiano.
+Mia-v1-E6B-GGUF es un modelo de lenguaje conversacional publicado por el usuario AIVORENCE en Hugging Face bajo licencia Apache 2.0. Segun los metadatos del repositorio, cuenta con 11.907.350.576 parametros (aproximadamente 11,9 mil millones) y se distribuye en formato GGUF, la libreria declarada es transformers y la tarea asignada es any-to-any. El modelo declara soporte para seis idiomas: ruso, ingles, chino, aleman, frances e italiano.
 
 El modelo se presenta como orientado a generacion de texto y conversacion, con etiquetas que mencionan tambien capacidades multimodales o "any-to-any", aunque la informacion disponible no detalla la arquitectura interna, los datos de entrenamiento ni los mecanismos concretos que justificarian esa clasificacion. El nombre incluye el sufijo "E6B", que sugiere habitualmente un esquema de mezcla de expertos con unos 6.000 millones de parametros activos, pero este dato no aparece confirmado en la informacion proporcionada.
 
@@ -19,14 +19,14 @@ La relevancia del modelo es limitada por el momento: el repositorio registra 0 d
 | Tipos de cuantizacion | GGUF (niveles concretos no disponibles) |
 | Idiomas soportados | ruso (ru), ingles (en), chino (zh), aleman (de), frances (fr), italiano (it) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | GGUF; los parametros reportados proceden de safetensors segun los metadatos de HuggingFace |
+| Formato de pesos | GGUF; los parametros reportados proceden de safetensors segun los metadatos de Hugging Face |
 | Tamano del repositorio | 58,5 GB |
 | Tarea declarada (pipeline) | any-to-any |
 | Libreria | transformers |
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card publicada en HuggingFace no incluye ninguna seccion descriptiva mas alla del bloque de metadatos YAML (libreria, licencia, etiquetas y lista de idiomas), por lo que se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de espacio de estados (SSM) o cualquier otra variante. El sufijo "E6B" del nombre podria indicar un modelo con expertos y alrededor de 6.000 millones de parametros activos sobre un total de 11,9 mil millones, pero no existe confirmacion en la informacion suministrada.
+No hay informacion disponible sobre la arquitectura del modelo. La model card publicada en Hugging Face no incluye ninguna seccion descriptiva mas alla del bloque de metadatos YAML (libreria, licencia, etiquetas y lista de idiomas), por lo que se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida con capas de espacio de estados (SSM) o cualquier otra variante. El sufijo "E6B" del nombre podria indicar un modelo con expertos y alrededor de 6.000 millones de parametros activos sobre un total de 11,9 mil millones, pero no existe confirmacion en la informacion suministrada.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la presencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o ventanas de contexto deslizantes. El unico dato estructural verificable es el numero total de parametros y el hecho de que el repositorio pesa 58,5 GB, lo que resulta coherente con un empaquetado que incluiria varias cuantizaciones GGUF de un modelo del orden de 12.000 millones de parametros (una version en FP16 de ese tamano ocuparia aproximadamente 23,8 GB por si sola).
 
@@ -35,9 +35,9 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 La informacion disponible solo permite enumerar las capacidades declaradas a traves de las etiquetas del repositorio, sin detalle funcional:
 
 - Generacion de texto y uso conversacional (etiquetas "text-generation" y "conversational").
-- Clasificacion como "any-to-any", lo que en HuggingFace suele implicar entrada y salida en mas de una modalidad, aunque no se especifica cuales.
+- Clasificacion como "any-to-any", lo que en Hugging Face suele implicar entrada y salida en mas de una modalidad, aunque no se especifica cuales.
 - Soporte multilingue declarado para ruso, ingles, chino, aleman, frances e italiano.
-- Compatibilidad declarada con endpoints ("endpoints_compatible"), es decir, apto para despliegue mediante Inference Endpoints de HuggingFace.
+- Compatibilidad declarada con endpoints ("endpoints_compatible"), es decir, apto para despliegue mediante Inference Endpoints de Hugging Face.
 
 No hay informacion disponible sobre soporte de tool calling o function calling, capacidades de agente, razonamiento multi-paso, modo de pensamiento explicito (thinking mode), vision, audio, ejecucion de codigo o matematicas.
 
@@ -50,7 +50,7 @@ Dado que no se documentan capacidades especificas, los siguientes casos son apli
 - Generacion de texto y resumen en pipelines de procesamiento documental: su tamano permite procesar lotes de documentos en una sola GPU de 24 GB con cuantizacion de 8 bits.
 - Chatbot integrado en aplicaciones de escritorio: el formato GGUF y la licencia Apache 2.0 facilitan su inclusion en productos de escritorio o moviles de gama alta sin obligaciones de redistribucion del codigo fuente.
 - Experimentacion academica con modelos de ~12B: sirve como linea base en estudios comparativos de cuantizacion, siempre que el autor publique detalles de arquitectura y entrenamiento.
-- Servicio mediante HuggingFace Inference Endpoints: la etiqueta "endpoints_compatible" indica que el modelo estaria preparado para desplegarse en la infraestructura gestionada de HuggingFace, util para pruebas de concepto rapidas.
+- Servicio mediante Hugging Face Inference Endpoints: la etiqueta "endpoints_compatible" indica que el modelo estaria preparado para desplegarse en la infraestructura gestionada de Hugging Face, util para pruebas de concepto rapidas.
 - Traduccion y adaptacion de contenido entre los seis idiomas declarados, sujeta a validacion de calidad por par de idiomas.
 
 ## Benchmarks y rendimiento
@@ -73,10 +73,10 @@ La ausencia de arquitectura, contexto y benchmarks publicados impide una compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AIVORENCE/Mia-v1-E6B-GGUF | 11,9 mil millones | no disponible | Apache 2.0 | HuggingFace (GGUF) |
-| Mistral-Nemo-Instruct-2407 | 12,2 mil millones | 128.000 tokens | Apache 2.0 | HuggingFace, ampliamente soportado |
-| Gemma 2 9B | 9,2 mil millones | 8.192 tokens | Licencia Gemma (uso comercial con condiciones) | HuggingFace, Google AI Studio |
-| Qwen2.5-14B | 14,7 mil millones | hasta 131.072 tokens | Apache 2.0 (segun variante) | HuggingFace, Ollama, vLLM |
+| AIVORENCE/Mia-v1-E6B-GGUF | 11,9 mil millones | no disponible | Apache 2.0 | Hugging Face (GGUF) |
+| Mistral-Nemo-Instruct-2407 | 12,2 mil millones | 128.000 tokens | Apache 2.0 | Hugging Face, ampliamente soportado |
+| Gemma 2 9B | 9,2 mil millones | 8.192 tokens | Licencia Gemma (uso comercial con condiciones) | Hugging Face, Google AI Studio |
+| Qwen2.5-14B | 14,7 mil millones | hasta 131.072 tokens | Apache 2.0 (segun variante) | Hugging Face, Ollama, vLLM |
 
 Nota: los datos de los modelos de comparacion corresponden a informacion publica general de esos proyectos; no se dispone de una comparacion de rendimiento con Mia-v1 porque este no publica resultados.
 
@@ -84,7 +84,7 @@ Nota: los datos de los modelos de comparacion corresponden a informacion publica
 
 - Riesgo de alucinacion: no se documenta ninguna mitigacion; sin evaluaciones publicadas, la fiabilidad factual es desconocida.
 - Sesgos conocidos: no disponible. No hay informacion sobre composicion del dataset ni sobre procesos de alineacion.
-- Limitaciones de contexto e idioma: se desconoce la longitud de contexto y el nivel real de competencia en cada uno de los seis idiomas declarados; la etiqueta de idioma en HuggingFace no garantiza calidad homogenea.
+- Limitaciones de contexto e idioma: se desconoce la longitud de contexto y el nivel real de competencia en cada uno de los seis idiomas declarados; la etiqueta de idioma en Hugging Face no garantiza calidad homogenea.
 - Ausencia de model card sustantiva: el repositorio no aporta informacion sobre entrenamiento, evaluacion ni uso previsto, lo que dificulta la evaluacion de riesgos y la reproducibilidad.
 - Metadatos anomalos: las fechas de creacion y actualizacion registradas son 2026-09-20, una fecha futura, lo que sugiere un posible error de metadatos o manipulacion y aconseja cautela.
 - Adopcion nula: 0 descargas y 1 like en el momento de la consulta, sin comunidad de usuarios que haya validado el modelo.
@@ -94,7 +94,7 @@ Nota: los datos de los modelos de comparacion corresponden a informacion publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AIVORENCE/Mia-v1-E6B-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/AIVORENCE
+- Modelo en Hugging Face: https://huggingface.co/AIVORENCE/Mia-v1-E6B-GGUF
+- Perfil del autor en Hugging Face: https://huggingface.co/AIVORENCE
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web no devolvio enlaces relevantes sobre este modelo.

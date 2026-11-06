@@ -87,7 +87,7 @@ Los siguientes valores son estimaciones calculadas a partir del numero de parame
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Fable-Fusion-711, GGUF) | 26,9 B | no disponible | supera al base en 6 de 7 benchmarks segun el autor; ARC-C > 700 en 8 y 4 bits | apache-2.0 | GGUF en HuggingFace; 0 descargas al consultar |
+| Este modelo (Fable-Fusion-711, GGUF) | 26,9 B | no disponible | supera al base en 6 de 7 benchmarks segun el autor; ARC-C > 700 en 8 y 4 bits | apache-2.0 | GGUF en Hugging Face; 0 descargas al consultar |
 | Qwen3.6 27B (base) | 27 B | no disponible | referencia del autor; superado en 6 de 7 benchmarks | no disponible | no disponible en esta busqueda |
 | Qwen3.6-35B-A3B | 35 B (activos no confirmados) | no disponible | el autor afirma que este modelo lo supera en los 7 benchmarks | no disponible | no disponible en esta busqueda |
 | Qwen3.5 27B | 27 B | no disponible | usado como referencia intermedia en las pruebas del autor | no disponible | no disponible en esta busqueda |
@@ -110,7 +110,7 @@ No se dispone de datos verificables de contexto, licencia ni disponibilidad para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/schwyzquants/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/schwyzquants/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP
 - Version de 40B Eleanor-DECKARD: https://huggingface.co/DavidAU/Qwen3.6-40B-Fable-Fusion-6-Core-Deckard-Eleanor-Heretic-Uncensored-NM-DAU-NEO-MAX-MTP-GGUF
 - Version de 40B Grand Intelligence FF711-717: https://huggingface.co/DavidAU/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF

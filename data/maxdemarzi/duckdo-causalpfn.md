@@ -83,8 +83,8 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Tipo | Formato | Licencia | Disponibilidad | Parámetros / contexto |
 |---|---|---|---|---|---|
-| maxdemarzi/duckdo-causalpfn | Export ONNX de CausalPFN para DuckDo | ONNX con datos externos | CausalPFN License 1.0 | HuggingFace, 0 descargas, 0 likes | ~120 MB de pesos; contexto no disponible |
-| vdblm/causalpfn | Modelo original de CausalPFN (Balazadeh et al., 2025) | PyTorch (`causalpfn_v0.pt`) | CausalPFN License 1.0 | HuggingFace / GitHub | Parámetros y contexto no disponibles |
+| maxdemarzi/duckdo-causalpfn | Export ONNX de CausalPFN para DuckDo | ONNX con datos externos | CausalPFN License 1.0 | Hugging Face, 0 descargas, 0 likes | ~120 MB de pesos; contexto no disponible |
+| vdblm/causalpfn | Modelo original de CausalPFN (Balazadeh et al., 2025) | PyTorch (`causalpfn_v0.pt`) | CausalPFN License 1.0 | Hugging Face / GitHub | Parámetros y contexto no disponibles |
 | Enfoques basados en PFN para datos tabulares (por ejemplo, TabPFN) | Familia conceptual relacionada (predicción tabular en contexto, no estimación causal) | no disponible | no disponible | no disponible | no disponible |
 | Librerías clásicas de inferencia causal (EconML, DoWhy) | Bibliotecas de estimación, no modelos preentrenados | no aplica | no disponible | Repositorios públicos | no aplica |
 
@@ -104,10 +104,10 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxdemarzi/duckdo-causalpfn
+- Repositorio Hugging Face: https://huggingface.co/maxdemarzi/duckdo-causalpfn
 - Modelo base original: https://huggingface.co/vdblm/causalpfn
 - Repositorio de CausalPFN: https://github.com/vdblm/CausalPFN
 - Extensión DuckDo: https://github.com/maxdemarzi/DuckDo
 - Paper (arXiv:2506.07918): https://arxiv.org/abs/2506.07918
 
-La búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces anteriores proceden de la información del repositorio de HuggingFace.
+La búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces anteriores proceden de la información del repositorio de Hugging Face.

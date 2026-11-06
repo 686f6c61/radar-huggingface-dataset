@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeckardLong/ai-content-detection-model es un modelo de clasificacion de texto orientado a la deteccion de contenido generado por inteligencia artificial, publicado por el autor DeckardLong en HuggingFace. El repositorio tiene un tamano de 1,2 GB y esta etiquetado con licencia MIT, lo que permite su uso comercial sin restricciones significativas. No se han registrado descargas ni valoraciones en el momento de la publicacion.
+DeckardLong/ai-content-detection-model es un modelo de clasificacion de texto orientado a la deteccion de contenido generado por inteligencia artificial, publicado por el autor DeckardLong en Hugging Face. El repositorio tiene un tamano de 1,2 GB y esta etiquetado con licencia MIT, lo que permite su uso comercial sin restricciones significativas. No se han registrado descargas ni valoraciones en el momento de la publicacion.
 
 La model card del autor es practicamente vacia: unicamente declara la licencia MIT y no incluye informacion sobre arquitectura, parametros, datos de entrenamiento, capacidades ni benchmarks. Esta ausencia de documentacion tecnica limita severamente cualquier evaluacion objetiva del modelo. La fecha de creacion (agosto de 2026) sugiere que es un modelo reciente, pero sin informacion adicional no es posible determinar si se trata de un clasificador binario, un modelo de embedding o una arquitectura mas compleja.
 
@@ -44,7 +44,7 @@ No se ha publicado informacion sobre requisitos de hardware. El tamano del repos
 
 ## Comparativa con modelos similares
 
-No hay informacion suficiente para realizar una comparativa tecnica. Existen otros detectores de contenido IA en HuggingFace, como PirateXX/AI-Content-Detector, pero no se dispone de datos publicados sobre su rendimiento relativo ni sus especificaciones en la documentacion de este modelo.
+No hay informacion suficiente para realizar una comparativa tecnica. Existen otros detectores de contenido IA en Hugging Face, como PirateXX/AI-Content-Detector, pero no se dispone de datos publicados sobre su rendimiento relativo ni sus especificaciones en la documentacion de este modelo.
 
 ## Limitaciones y advertencias
 
@@ -56,4 +56,4 @@ No hay informacion suficiente para realizar una comparativa tecnica. Existen otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DeckardLong/ai-content-detection-model
+- Repositorio Hugging Face: https://huggingface.co/DeckardLong/ai-content-detection-model

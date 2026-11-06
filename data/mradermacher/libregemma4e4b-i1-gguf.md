@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización i1): https://huggingface.co/mradermacher/LibreGemma4e4b-i1-GGUF
-- Repositorio HuggingFace (cuantización estática): https://huggingface.co/mradermacher/LibreGemma4e4b-GGUF
+- Repositorio Hugging Face (cuantización i1): https://huggingface.co/mradermacher/LibreGemma4e4b-i1-GGUF
+- Repositorio Hugging Face (cuantización estática): https://huggingface.co/mradermacher/LibreGemma4e4b-GGUF
 - Modelo base (LibreYOLO/LibreGemma4e4b): https://huggingface.co/LibreYOLO/LibreGemma4e4b
 - Página de descargas de mradermacher: https://hf.tst.eu/model
 - Solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

@@ -74,5 +74,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tylerthompson/multimodal-reasoning-reading72
+- Repositorio en Hugging Face: https://huggingface.co/tylerthompson/multimodal-reasoning-reading72
 - No se han encontrado papers, blogs, demos o repositorios adicionales asociados a este artefacto específico en la busqueda web.

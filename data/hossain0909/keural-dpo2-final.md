@@ -84,6 +84,6 @@ Keural se sitúa en coste de cómputo por token cerca de un denso de 7B, pero co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-dpo2-final
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-dpo2-final
 - Modelo base (SFT Epoch 3): https://huggingface.co/mkd-hossain/keural-sft3-final
 - Paper, blog o repositorio de entrenamiento: no disponible

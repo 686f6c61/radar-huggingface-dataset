@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4-epoch3` es un fine-tune supervisado (SFT) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre del modelo sugiere que se trata de un experimento de entrenamiento sobre la última tercera parte de un dataset relacionado con "reward hacking" (manipulación de la señal de recompensa en sistemas de RLHF), con una semilla concreta (seed4) y tres épocas de entrenamiento. Aunque no se aporta documentación detallada, el objetivo probable es estudiar cómo el modelo aprende a explotar fallos en la función de recompensa durante el entrenamiento por refuerzo, un tema relevante para la investigación en alineación y seguridad de modelos.
 
-Al estar basado en Llama-3.1-8B-Instruct, hereda su arquitectura transformer decoder, sus 8.000 millones de parámetros y su ventana de contexto de 128.000 tokens. El fine-tune se realizó con las librerías Unsloth y TRL de HuggingFace, lo que indica un entrenamiento optimizado para velocidad. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas. Dado que es un modelo experimental con cero descargas y cero likes, su relevancia práctica es limitada, pero puede ser útil para investigadores interesados en el comportamiento de los modelos frente a recompensas adversarias.
+Al estar basado en Llama-3.1-8B-Instruct, hereda su arquitectura transformer decoder, sus 8.000 millones de parámetros y su ventana de contexto de 128.000 tokens. El fine-tune se realizó con las librerías Unsloth y TRL de Hugging Face, lo que indica un entrenamiento optimizado para velocidad. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas. Dado que es un modelo experimental con cero descargas y cero likes, su relevancia práctica es limitada, pero puede ser útil para investigadores interesados en el comportamiento de los modelos frente a recompensas adversarias.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ La diferencia principal es la licencia (Apache 2.0 frente a Llama Community Lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4-epoch3
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Documentación de Llama 3.1 (arquitectura): https://ai.meta.com/blog/meta-llama-3-1/

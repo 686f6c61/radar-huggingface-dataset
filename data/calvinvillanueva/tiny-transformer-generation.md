@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`calvinvillanueva/tiny-transformer-generation` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un transformer de generación de texto, denominado por el autor "Tiny Transformer" en escala "xlarge". No se trata de un modelo entrenado, sino de un esqueleto de código (`model.py`) acompañado de un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida arquitectónico, no como un modelo con capacidades desplegables.
+`calvinvillanueva/tiny-transformer-generation` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un transformer de generación de texto, denominado por el autor "Tiny Transformer" en escala "xlarge". No se trata de un modelo entrenado, sino de un esqueleto de código (`model.py`) acompañado de un checkpoint de inicialización válido para pruebas de humo (smoke tests). El autor lo presenta explícitamente como un punto de partida arquitectónico, no como un modelo con capacidades desplegables.
 
 El modelo cuenta con 24.832 parámetros totales según los pesos en safetensors, lo que lo sitúa en un orden de magnitud muy inferior al de cualquier modelo de lenguaje utilizable en producción. El repositorio incluye `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con schedule polinómico), pero el autor aclara que no se ha completado ningún entrenamiento ni se reclama ninguna puntuación de benchmark.
 
@@ -42,7 +42,7 @@ No se ha realizado entrenamiento: el archivo `model.safetensors` es un checkpoin
 - Pruebas de humo de pipelines de entrenamiento: cargar `model.py` y verificar que el forward pass, la inicialización de pesos y el guardado en safetensors funcionan antes de escalar a un experimento real.
 - Investigación de arquitecturas: modificar atención, fusión, activación o normalización en `model.py` y comprobar que la configuración resultante es coherente antes de invertir cómputo en un entrenamiento completo.
 - Docencia y materiales formativos: usar el repositorio como ejemplo mínimo y legible de un transformer de generación con configuración y receta de entrenamiento separadas en JSON.
-- Desarrollo de adaptadores de carga: como la implementación es personalizada y las APIs genéricas de carga automática no la reconocen, sirve para practicar la escritura de adaptadores explícitos en HuggingFace Transformers.
+- Desarrollo de adaptadores de carga: como la implementación es personalizada y las APIs genéricas de carga automática no la reconocen, sirve para practicar la escritura de adaptadores explícitos en Hugging Face Transformers.
 - Reproducibilidad de experimentos: `training_args.json` documenta una receta (Adafactor, schedule polinómico) que puede replicarse con distintas semillas para estudiar varianza de resultados.
 - Base para comparaciones controladas: el autor sugiere evaluar con un conjunto held-out específico de tarea, al menos tres semillas y un baseline de capacidad equiparable, lo que encaja con estudios de ablación a pequeña escala.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-transformer-generation | 24.832 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace (repo vacío de uso práctico) |
-| Modelos "tiny" tipo GPT-2 small | ~124 M | 1.024 tokens | Sí | MIT / Apache-2.0 | HuggingFace, ampliamente soportados |
+| tiny-transformer-generation | 24.832 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face (repo vacío de uso práctico) |
+| Modelos "tiny" tipo GPT-2 small | ~124 M | 1.024 tokens | Sí | MIT / Apache-2.0 | Hugging Face, ampliamente soportados |
 | Modelos de juguete tipo nanoGPT | ~10-100 M | variable | Según implementación | MIT | Repositorios de código, no checkpoints |
 
 No se dispone de alternativas directamente comparables con la misma configuración exacta; la comparación anterior es orientativa por orden de magnitud. El modelo no es equiparable en capacidades a ningún modelo entrenado de su categoría.
@@ -81,5 +81,5 @@ No se dispone de alternativas directamente comparables con la misma configuraci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/calvinvillanueva/tiny-transformer-generation
+- Hugging Face: https://huggingface.co/calvinvillanueva/tiny-transformer-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -96,7 +96,7 @@ Los datos de contexto, rendimiento objetivo y benchmarks de estos modelos no est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-VoiceDesign-W8A8-ConvRot
+- Repositorio en Hugging Face: https://huggingface.co/NidAll/Qwen3-TTS-12Hz-1.7B-VoiceDesign-W8A8-ConvRot
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - Runtime previsto: https://github.com/YOUR_USERNAME/ComfyUI-Qwen3-TTS-Quant (enlace tal como aparece en la model card; contiene un marcador de posición y puede no ser válido)
 - La busqueda web realizada no devolvio resultados tecnicos relevantes para este modelo: unicamente listados de pizzerias en Redmond (WA), sin relacion con el modelo. No se han localizado papers, blogs ni demos adicionales.

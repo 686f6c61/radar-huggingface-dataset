@@ -78,9 +78,9 @@ Rendimiento medido en RTX 5070 Ti 16 GB, build2 llama.cpp:
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.8-27B | 27.32B | 196K | BF16 (original) | Apache 2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27.32B | 196K | BF16 (abliterado) | Apache 2.0 | HuggingFace |
-| RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored | 27.32B | 196K (reclamado) | GGUF IQ3_XXS + BF16 selecto | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.8-27B | 27.32B | 196K | BF16 (original) | Apache 2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27.32B | 196K | BF16 (abliterado) | Apache 2.0 | Hugging Face |
+| RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored | 27.32B | 196K (reclamado) | GGUF IQ3_XXS + BF16 selecto | Apache 2.0 | Hugging Face |
 
 No hay datos de benchmarks comparables para los otros dos en la informacion disponible; los benchmarks del modelo cuantizado estan pendientes.
 
@@ -96,7 +96,7 @@ No hay datos de benchmarks comparables para los otros dos en la informacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/RentedNoodle/Qwen3.8-27B-GSQ-RCO-IQ3_XXS-Uncensored
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint abliterado de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio companion del mmproj: https://huggingface.co/RentedNoodle/Qwen3.8-27B-mmproj

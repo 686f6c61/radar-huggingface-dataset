@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-27B-stage2b-rplus2 es un fine-tune de la serie Qwen3.8-27B, desarrollado por David Belton (DavidAU), un creador conocido por sus más de 2700 modelos combinados y 600 fine-tunes en HuggingFace. Este modelo concreto forma parte de un pipeline de entrenamiento en múltiples etapas, indicado por el sufijo "stage2b", y se basa en un modelo intermedio denominado "TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU". Está etiquetado como "uncensored" y orientado a casos de uso conversacionales y generales, con soporte para entrada de imagen y texto (pipeline image-text-to-text).
+DavidAU/Qwen3.8-27B-stage2b-rplus2 es un fine-tune de la serie Qwen3.8-27B, desarrollado por David Belton (DavidAU), un creador conocido por sus más de 2700 modelos combinados y 600 fine-tunes en Hugging Face. Este modelo concreto forma parte de un pipeline de entrenamiento en múltiples etapas, indicado por el sufijo "stage2b", y se basa en un modelo intermedio denominado "TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU". Está etiquetado como "uncensored" y orientado a casos de uso conversacionales y generales, con soporte para entrada de imagen y texto (pipeline image-text-to-text).
 
-El modelo tiene 27.781.427.952 parámetros (aproximadamente 27,8 mil millones), lo que lo sitúa en la gama de modelos densos de tamaño medio-alto. Su licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. La relevancia de este modelo radica en su enfoque de fine-tuning multi-etapa con técnicas como "Cold Fusion" y "GAIN Training", que buscan mejorar la fiabilidad en tareas complejas de varios pasos, aunque no se dispone de documentación técnica detallada sobre estas técnicas en la información proporcionada.
+El modelo tiene 27.781.427.952 parámetros (aproximadamente 27,8 mil millones), lo que lo sitúa en la gama de modelos densos de tamaño medio-alto. Su licencia es Apache 2.0, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. La relevancia de este modelo radica en su enfoque de fine-tuning multi-etapa con técnicas como "Cold Fusion" y "GAIN Training", que buscan mejorar la fiabilidad en tareas complejas de varios pasos, aunque no se dispone de documentación técnica detallada sobre estas técnicas en la información proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El base Q
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que requiere aprobacion de HuggingFace para descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que requiere aprobacion de Hugging Face para descargar los pesos.
 - Sin documentacion tecnica: no hay paper, card detallada ni informacion sobre el dataset de entrenamiento, lo que dificulta evaluar su robustez y posibles sesgos.
 - Etiqueta "uncensored": puede generar contenido ofensivo, ilegal o danino si se usa sin salvaguardas. No se recomienda para aplicaciones publicas sin moderacion.
 - Riesgo de alucinacion: al ser un fine-tune sin benchmarks publicados, no se conoce su fiabilidad factual.
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El base Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus2
+- Repositorio Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-stage2b-rplus2
 - Perfil del autor DavidAU: https://huggingface.co/DavidAU
 - Modelo base intermedio: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo base oficial Qwen3.8-27B (ModelScope): https://www.modelscope.cn/models/Qwen/Qwen3.8-27B/summary

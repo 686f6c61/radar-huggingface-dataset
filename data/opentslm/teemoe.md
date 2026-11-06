@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento ni de modelos comparables directos en la i
 
 | Modelo | Parametros | Longitud de contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenTSLM TeeMoE | Backbone de 27B + LoRA (1,6 GB de checkpoint) | no disponible | no disponible | MIT (componentes propios) | HuggingFace |
-| Qwen3.6-27B (base) | 27B | no disponible | no disponible | La del modelo Qwen | HuggingFace |
+| OpenTSLM TeeMoE | Backbone de 27B + LoRA (1,6 GB de checkpoint) | no disponible | no disponible | MIT (componentes propios) | Hugging Face |
+| Qwen3.6-27B (base) | 27B | no disponible | no disponible | La del modelo Qwen | Hugging Face |
 | Otros modelos de series temporales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,12 +88,12 @@ No se dispone de datos de rendimiento ni de modelos comparables directos en la i
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenTSLM/TeeMoE
+- Hugging Face: https://huggingface.co/OpenTSLM/TeeMoE
 - Repositorio de codigo: https://github.com/OpenTSLM/OpenTSLM-TeeMoE
 - README del repositorio: https://github.com/OpenTSLM/OpenTSLM-TeeMoE/blob/main/README.md
 - Organizacion OpenTSLM en GitHub: https://github.com/OpenTSLM/
 - Pagina del proyecto OpenTSLM: https://www.opentslm.com/
-- Organizacion OpenTSLM en HuggingFace: https://huggingface.co/OpenTSLM
+- Organizacion OpenTSLM en Hugging Face: https://huggingface.co/OpenTSLM
 - Paper (arXiv): https://arxiv.org/abs/ARXIV_ID
 - Taller FMTS en NeurIPS 2026: https://fmts-workshop.github.io/index.html#program
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B

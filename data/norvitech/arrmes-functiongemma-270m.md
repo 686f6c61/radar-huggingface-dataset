@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arrmes-FunctionGemma-270M | 270 M | No disponible | Function calling cerrado (20 acciones) | Gemma | HuggingFace (MLX) |
-| google/functiongemma-270m-it (base) | 270 M | No disponible | Function calling general | Gemma | HuggingFace |
-| Alternativas de enrutamiento de 1-3 B (genericas) | 1-3 B | No disponible | Function calling general | Variable | HuggingFace |
+| Arrmes-FunctionGemma-270M | 270 M | No disponible | Function calling cerrado (20 acciones) | Gemma | Hugging Face (MLX) |
+| google/functiongemma-270m-it (base) | 270 M | No disponible | Function calling general | Gemma | Hugging Face |
+| Alternativas de enrutamiento de 1-3 B (genericas) | 1-3 B | No disponible | Function calling general | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables de terceros en la informacion proporcionada; la comparativa se limita a tamano, enfoque y licencia.
 
@@ -94,6 +94,6 @@ No se dispone de datos de rendimiento comparables de terceros en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorviTech/arrmes-functiongemma-270m
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/arrmes-functiongemma-270m
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it
 - NorviTech Suite: https://norvitech.com

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| solume-migan-coreml | GAN de inpainting (MI-GAN 512, Places2) | 512×512 + máscara | MIT | Core ML fp16 | HuggingFace (heypatkay) |
-| andraniksargsyan/migan | GAN de inpainting (MI-GAN, upstream) | 512×512 + máscara | MIT | ONNX | HuggingFace (andraniksargsyan) |
+| solume-migan-coreml | GAN de inpainting (MI-GAN 512, Places2) | 512×512 + máscara | MIT | Core ML fp16 | Hugging Face (heypatkay) |
+| andraniksargsyan/migan | GAN de inpainting (MI-GAN, upstream) | 512×512 + máscara | MIT | ONNX | Hugging Face (andraniksargsyan) |
 | LaMa | GAN de inpainting de gran campo receptivo | resolución variable | Apache 2.0 (según versión) | PyTorch | Repositorios públicos |
-| Stable Diffusion Inpainting | modelo de difusión | 512×512 o superior | CreativeML Open RAIL-M | safetensors | HuggingFace |
+| Stable Diffusion Inpainting | modelo de difusión | 512×512 o superior | CreativeML Open RAIL-M | safetensors | Hugging Face |
 
 La comparación con LaMa y Stable Diffusion Inpainting se ofrece como referencia de categoría; no se dispone de datos de benchmarks en la información proporcionada para establecer diferencias cuantitativas de calidad o latencia.
 
@@ -83,8 +83,8 @@ La comparación con LaMa y Stable Diffusion Inpainting se ofrece como referencia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heypatkay/solume-migan-coreml
-- Modelo base en HuggingFace: https://huggingface.co/andraniksargsyan/migan
+- Hugging Face: https://huggingface.co/heypatkay/solume-migan-coreml
+- Modelo base en Hugging Face: https://huggingface.co/andraniksargsyan/migan
 - Paper MI-GAN (ICCV 2023): https://arxiv.org/abs/2302.07864
 - Repositorio oficial MI-GAN (Picsart AI Research): https://github.com/Picsart-AI-Research/MI-GAN
 - coremltools: https://github.com/apple/coremltools

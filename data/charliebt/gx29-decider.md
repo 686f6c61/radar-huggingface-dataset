@@ -1,11 +1,11 @@
 # CharlieBT/gx29-decider
 
 ## Resumen
-`CharlieBT/gx29-decider` es un modelo de clasificación de texto derivado por fine-tuning de `baselabs/mammoth-1`, publicado por el usuario CharlieBT en HuggingFace. Su propósito declarado, según los tags del repositorio, es actuar como "decider" o "decision-model" dentro de un sistema denominado Reax: es decir, un componente que recibe una entrada textual y emite una decisión clasificatoria, presumiblemente dentro de un pipeline mayor de agentes o enrutamiento. No se trata, por tanto, de un modelo generativo de propósito general, sino de un clasificador especializado construido sobre una base de gran tamaño.
+`CharlieBT/gx29-decider` es un modelo de clasificación de texto derivado por fine-tuning de `baselabs/mammoth-1`, publicado por el usuario CharlieBT en Hugging Face. Su propósito declarado, según los tags del repositorio, es actuar como "decider" o "decision-model" dentro de un sistema denominado Reax: es decir, un componente que recibe una entrada textual y emite una decisión clasificatoria, presumiblemente dentro de un pipeline mayor de agentes o enrutamiento. No se trata, por tanto, de un modelo generativo de propósito general, sino de un clasificador especializado construido sobre una base de gran tamaño.
 
-El dato técnico más llamativo es su escala: 26.085.330.160 parámetros en safetensors (unos 26,1 mil millones), lo que sitúa al modelo en la categoría de 26B, un tamaño desproporcionadamente grande para una tarea de clasificación. El repositorio ocupa 52,2 GB y la arquitectura declarada en los tags es `qwen3_5`, lo que sugiere que el modelo base `baselabs/mammoth-1` emplea una arquitectura de la familia Qwen 3.5. La licencia es Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El dato técnico más llamativo es su escala: 26.085.330.160 parámetros en safetensors (unos 26,1 mil millones), lo que sitúa al modelo en la categoría de 26B, un tamaño desproporcionadamente grande para una tarea de clasificación. El repositorio ocupa 52,2 GB y la arquitectura declarada en los tags es `qwen3_5`, lo que sugiere que el modelo base `baselabs/mammoth-1` emplea una arquitectura de la familia Qwen 3.5. La licencia es Apache 2.0, aunque el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
-La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy reciente (creado el 28 de octubre de 2026), con solo 2 descargas y 0 likes, sin documentación pública sobre idiomas, datos de entrenamiento o benchmarks. Es un artefacto de nicho, probablemente parte de un sistema propietario o experimental, y debe evaluarse con cautela por la ausencia casi total de información verificable más allá de los metadatos de HuggingFace.
+La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy reciente (creado el 28 de octubre de 2026), con solo 2 descargas y 0 likes, sin documentación pública sobre idiomas, datos de entrenamiento o benchmarks. Es un artefacto de nicho, probablemente parte de un sistema propietario o experimental, y debe evaluarse con cautela por la ausencia casi total de información verificable más allá de los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -56,14 +56,14 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CharlieBT/gx29-decider | 26,1B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| CharlieBT/gx29-decider | 26,1B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | DeBERTa-v3-large (referencia) | 435M | 512 | MIT | Pública |
 | RoBERTa-large (referencia) | 355M | 512 | MIT | Pública |
 | Qwen2.5-7B-Instruct (referencia) | 7,6B | 128K | Apache 2.0 | Pública |
 
 ## Limitaciones y advertencias
 - Ausencia total de documentación: no hay model card, paper, blog ni ejemplos de uso publicados por el autor. Cualquier uso en producción requiere una evaluación empírica propia.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace para descargar el modelo, lo que puede limitar su uso en entornos automatizados o de investigación.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face para descargar el modelo, lo que puede limitar su uso en entornos automatizados o de investigación.
 - Idiomas no especificados: se desconoce si el modelo funciona correctamente en castellano u otros idiomas distintos del inglés, lo que es un riesgo importante para aplicaciones multilingües.
 - Riesgo de alucinación: aunque es un clasificador, la base generativa de 26B podría producir salidas no calibradas o erróneas en entradas fuera de distribución; sin benchmarks, no se puede estimar su fiabilidad.
 - Sesgos desconocidos: al no conocer los datos de entrenamiento ni el proceso de fine-tuning, no se pueden evaluar sesgos de género, raza, idioma o dominio.
@@ -72,5 +72,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Fecha de creación futura (2026): el metadato indica una fecha de creación posterior a la actual, lo que sugiere que el repositorio podría ser experimental, estar mal fechado o formar parte de un entorno de pruebas; conviene tratar la información con escepticismo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/CharlieBT/gx29-decider
+- Hugging Face: https://huggingface.co/CharlieBT/gx29-decider
 - Modelo base: https://huggingface.co/baselabs/mammoth-1 (referenciado en los tags, no verificado)

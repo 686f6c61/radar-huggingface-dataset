@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kyllix-Coder-i1-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Kyllix-Coder, publicado por el usuario mradermacher en HuggingFace. Se trata de un artefacto de distribucion derivado, no de un modelo entrenado de forma original por este autor: el propio repositorio indica que se generan cuantizaciones ponderadas y con matriz de importancia (imatrix) del modelo base alojado en `675uj/Kyllix-Coder`. Por tanto, cualquier evaluacion tecnica del modelo subyacente debe remitirse a esa fuente original, de la que no se dispone de informacion en los datos proporcionados.
+Kyllix-Coder-i1-GGUF es un repositorio de cuantizaciones en formato GGUF del modelo Kyllix-Coder, publicado por el usuario mradermacher en Hugging Face. Se trata de un artefacto de distribucion derivado, no de un modelo entrenado de forma original por este autor: el propio repositorio indica que se generan cuantizaciones ponderadas y con matriz de importancia (imatrix) del modelo base alojado en `675uj/Kyllix-Coder`. Por tanto, cualquier evaluacion tecnica del modelo subyacente debe remitirse a esa fuente original, de la que no se dispone de informacion en los datos proporcionados.
 
 El repositorio incluye un conjunto amplio de niveles de cuantizacion, desde IQ1_S e IQ1_M hasta Q6_K, pasando por variantes K-quant (Q2_K, Q3_K_S/M/L, Q4_K_S/M, Q5_K_S/M, Q6_K) e I-quants (IQ1_S/M, IQ2_XXS/XS/S/M, IQ3_XXS/XS/S/M, IQ4_XS, IQ4_NL). Esta cobertura permite desplegar el modelo en un espectro muy amplio de hardware, desde entornos con memoria muy limitada hasta configuraciones que priorizan fidelidad numerica.
 
@@ -23,7 +23,7 @@ La relevancia de este repositorio es practica: facilita la ejecucion local del m
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo base Kyllix-Coder en los datos proporcionados. El repositorio es exclusivamente un artefacto de cuantizacion: los comentarios de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que el flujo ha consistido en convertir pesos de formato HuggingFace (probablemente safetensors) a GGUF y aplicar cuantizacion con y sin matriz de importancia (imatrix), ademas de una variante etiquetada como `small-IQ4_NL`.
+No se dispone de informacion sobre la arquitectura del modelo base Kyllix-Coder en los datos proporcionados. El repositorio es exclusivamente un artefacto de cuantizacion: los comentarios de la model card indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que el flujo ha consistido en convertir pesos de formato Hugging Face (probablemente safetensors) a GGUF y aplicar cuantizacion con y sin matriz de importancia (imatrix), ademas de una variante etiquetada como `small-IQ4_NL`.
 
 No consta informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas del modelo subyacente. Tampoco se documenta si el modelo base emplea attention lineal, decodificacion especulativa u otras optimizaciones. Toda esta informacion deberia consultarse en el repositorio original `675uj/Kyllix-Coder`, que no forma parte de los datos disponibles.
 
@@ -76,5 +76,5 @@ No disponible. No se dispone de informacion sobre el modelo base ni sobre altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Kyllix-Coder-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kyllix-Coder-i1-GGUF
 - Modelo base: https://huggingface.co/675uj/Kyllix-Coder

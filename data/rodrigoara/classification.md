@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rodrigoara/classification` es un repositorio experimental de HuggingFace que contiene una implementación propia de la arquitectura ALBEF (Align Before Fuse, originalmente propuesta para tareas visión-lenguaje) adaptada a tareas de clasificación genérica. Lo publica el usuario `rodrigoara` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`rodrigoara/classification` es un repositorio experimental de Hugging Face que contiene una implementación propia de la arquitectura ALBEF (Align Before Fuse, originalmente propuesta para tareas visión-lenguaje) adaptada a tareas de clasificación genérica. Lo publica el usuario `rodrigoara` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El interés de este repositorio es fundamentalmente como andamiaje reproducible: incluye `main.py` con el modelo y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador Novograd con scheduler OneCycle). El tamaño declarado de pesos es de 49.600 parámetros totales, lo que confirma que se trata de una configuración minúscula pensada para inspeccionar cambios arquitectónicos antes de lanzar entrenamientos completos, no para inferencia en producción.
 
@@ -82,8 +82,8 @@ La comparación es asimétrica por diseño: los tres alternativos son modelos en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rodrigoara/classification
+- Repositorio en Hugging Face: https://huggingface.co/rodrigoara/classification
 - Paper original de ALBEF (Align before Fuse, Li et al., 2021): https://arxiv.org/abs/2107.07651
 - Repositorio oficial de ALBEF (Salesforce): https://github.com/salesforce/ALBEF
-- Modelo ALBEF en HuggingFace: https://huggingface.co/salesforce/albef
+- Modelo ALBEF en Hugging Face: https://huggingface.co/salesforce/albef
 - Documentación de safetensors: https://huggingface.co/docs/safetensors

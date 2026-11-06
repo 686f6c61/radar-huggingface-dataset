@@ -69,7 +69,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ca
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/wangmingxinthu/SwitchWorld
+- Repositorio de Hugging Face: https://huggingface.co/wangmingxinthu/SwitchWorld
 - Modelo base: https://huggingface.co/robbyant/lingbot-world-base-cam
 - Codigo: https://github.com/yizhiqianbi/SwitchWorld
 - Galeria de resultados: https://yizhiqianbi.github.io/SwitchWorld-Gallery/archive/

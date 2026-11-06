@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `joku78/krea2-bloomgirls-realism-step00004000` es un checkpoint publicado en HuggingFace por el usuario `joku78` el 9 de septiembre de 2026. El repositorio ocupa 2.9 GB y se distribuye bajo licencia Apache 2.0. La información disponible no especifica la modalidad del modelo (texto, imagen, audio, etc.) ni incluye documentación técnica o descripción del autor. El nombre del checkpoint sugiere una posible especialización en generación de imágenes realistas, posiblemente derivada de un modelo base tipo "krea2" y de un dataset denominado "bloomgirls", pero esta es una interpretación basada únicamente en el nombre, no confirmada por ningún dato publicado. No se dispone de más información sobre arquitectura, parámetros, contexto de entrenamiento o capacidades.
+El modelo `joku78/krea2-bloomgirls-realism-step00004000` es un checkpoint publicado en Hugging Face por el usuario `joku78` el 9 de septiembre de 2026. El repositorio ocupa 2.9 GB y se distribuye bajo licencia Apache 2.0. La información disponible no especifica la modalidad del modelo (texto, imagen, audio, etc.) ni incluye documentación técnica o descripción del autor. El nombre del checkpoint sugiere una posible especialización en generación de imágenes realistas, posiblemente derivada de un modelo base tipo "krea2" y de un dataset denominado "bloomgirls", pero esta es una interpretación basada únicamente en el nombre, no confirmada por ningún dato publicado. No se dispone de más información sobre arquitectura, parámetros, contexto de entrenamiento o capacidades.
 
 ## Especificaciones tecnicas
 
@@ -49,4 +49,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: [joku78/krea2-bloomgirls-realism-step00004000](https://huggingface.co/joku78/krea2-bloomgirls-realism-step00004000)
+- Hugging Face: [joku78/krea2-bloomgirls-realism-step00004000](https://huggingface.co/joku78/krea2-bloomgirls-realism-step00004000)

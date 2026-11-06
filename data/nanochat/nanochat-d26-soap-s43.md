@@ -81,6 +81,6 @@ Los tres modelos pertenecen a la misma serie de experimentos de Nanochat para co
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Nanochat/nanochat-d26-soap-s43
-- Organizacion Nanochat en HuggingFace: https://huggingface.co/Nanochat/models
+- Hugging Face del modelo: https://huggingface.co/Nanochat/nanochat-d26-soap-s43
+- Organizacion Nanochat en Hugging Face: https://huggingface.co/Nanochat/models
 - Proyecto NanoChat (sdobson): https://huggingface.co/sdobson/nanochat

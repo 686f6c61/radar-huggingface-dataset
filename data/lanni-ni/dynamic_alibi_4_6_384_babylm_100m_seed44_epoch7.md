@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un pequeño modelo de lenguaje para generación de texto, desarrollado por Lanni-ni y publicado en HuggingFace. Su arquitectura se basa en atención con sesgos lineales dinámicos (dynamic ALiBi), una técnica que modifica el mecanismo de atención para manejar secuencias largas sin depender de posiciones absolutas. El modelo tiene 45.694.080 parámetros y sus pesos se distribuyen en formato safetensors. A pesar de su nombre, que sugiere una escala de 100 millones, el recuento real es de unos 45,7 millones.
+Este modelo es un pequeño modelo de lenguaje para generación de texto, desarrollado por Lanni-ni y publicado en Hugging Face. Su arquitectura se basa en atención con sesgos lineales dinámicos (dynamic ALiBi), una técnica que modifica el mecanismo de atención para manejar secuencias largas sin depender de posiciones absolutas. El modelo tiene 45.694.080 parámetros y sus pesos se distribuyen en formato safetensors. A pesar de su nombre, que sugiere una escala de 100 millones, el recuento real es de unos 45,7 millones.
 
 La información disponible es limitada: no se documentan datos de entrenamiento, licencia, idiomas ni benchmarks. El repositorio requiere código personalizado para su carga, lo que lo convierte en un proyecto de investigación más que en un modelo listo para producción.
 
@@ -27,7 +27,7 @@ No se dispone de información detallada sobre la arquitectura exacta, el número
 
 - No se dispone de información documentada sobre capacidades específicas.
 - El pipeline declarado es `text-generation`, pero no hay datos sobre tool calling, agentes, razonamiento o soporte multilingüe.
-- Se recomienda consultar el repositorio de HuggingFace para obtener detalles adicionales, dado que la model card está autogenerada y no incluye especificaciones.
+- Se recomienda consultar el repositorio de Hugging Face para obtener detalles adicionales, dado que la model card está autogenerada y no incluye especificaciones.
 
 ## Casos de uso
 
@@ -58,5 +58,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch7
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed44_epoch7
 - Paper de impacto ambiental mencionado en la model card: https://arxiv.org/abs/1910.09700 (no es un paper del modelo)

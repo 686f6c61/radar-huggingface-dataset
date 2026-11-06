@@ -72,5 +72,5 @@ La model card compara Qwen3.8-27B con Qwen3.6-27B, Qwen3.7-Plus, Muse Glimmer-30
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/malaiwah/Qwen3.8-27B-exl3-archival-d32ba0bb
+- Repositorio Hugging Face: https://huggingface.co/malaiwah/Qwen3.8-27B-exl3-archival-d32ba0bb
 - Página de Qwen Cloud para Qwen3.8-27B (mencionada en la model card): https://www.qwencloud.com/models/qwen3.8-27b

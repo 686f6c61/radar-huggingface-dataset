@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YukeDS/geniac_prize_2026_rA_s1_tulu3k_f | Adaptador sobre 4.000 M | No disponible | LoRA (Stage 1) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Base | ~4.000 M | No disponible | Transformer denso | Apache-2.0 | HuggingFace |
-| YukeDS/geniac_prize_2026_rA_s2_prm1k_none | Adaptador sobre 4.000 M | No disponible | LoRA (Stage 2) | No disponible | HuggingFace (adaptador hermano) |
-| Qwen3-4B-Instruct | ~4.000 M | No disponible | Transformer denso ajustado | Apache-2.0 | HuggingFace |
+| YukeDS/geniac_prize_2026_rA_s1_tulu3k_f | Adaptador sobre 4.000 M | No disponible | LoRA (Stage 1) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Base | ~4.000 M | No disponible | Transformer denso | Apache-2.0 | Hugging Face |
+| YukeDS/geniac_prize_2026_rA_s2_prm1k_none | Adaptador sobre 4.000 M | No disponible | LoRA (Stage 2) | No disponible | Hugging Face (adaptador hermano) |
+| Qwen3-4B-Instruct | ~4.000 M | No disponible | Transformer denso ajustado | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la informacion proporcionada, por lo que la comparacion se limita a parametros, tipo, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YukeDS/geniac_prize_2026_rA_s1_tulu3k_f
+- Modelo en Hugging Face: https://huggingface.co/YukeDS/geniac_prize_2026_rA_s1_tulu3k_f
 - Adaptador Stage 2: https://huggingface.co/YukeDS/geniac_prize_2026_rA_s2_prm1k_none
 - Modelo base Qwen/Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset allenai/tulu-3-sft-personas-instruction-following: https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following

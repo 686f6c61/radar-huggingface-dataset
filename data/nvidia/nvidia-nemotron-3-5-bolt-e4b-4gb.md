@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Bolt-E4B-4GB | 7,5B totales / ~4B efectivos | 64K entrada, 64K salida | Q4_K_M (GGUF) | OpenMDW 1.1 | HuggingFace, llama.cpp |
-| NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | 7,5B totales / ~4B efectivos | No disponible en la informacion | BF16 (safetensors) | OpenMDW 1.1 | HuggingFace |
-| Gemma-4-E4B-it (modelo de partida) | Misma familia; cifra exacta no disponible | No disponible en la informacion | No disponible | No disponible en la informacion | HuggingFace (google) |
+| NVIDIA-Nemotron-3.5-Bolt-E4B-4GB | 7,5B totales / ~4B efectivos | 64K entrada, 64K salida | Q4_K_M (GGUF) | OpenMDW 1.1 | Hugging Face, llama.cpp |
+| NVIDIA-Nemotron-3.5-Bolt-E4B-BF16 | 7,5B totales / ~4B efectivos | No disponible en la informacion | BF16 (safetensors) | OpenMDW 1.1 | Hugging Face |
+| Gemma-4-E4B-it (modelo de partida) | Misma familia; cifra exacta no disponible | No disponible en la informacion | No disponible | No disponible en la informacion | Hugging Face (google) |
 | Otros SLM de 4-8B (Qwen, Llama, Phi) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante que si se puede sostener con los datos aportados es con el modelo de partida y con la variante BF16: Bolt anade post-entrenamiento de NVIDIA sobre tool calling multi-turno, seguimiento de instrucciones y grounding, y se publica ya cuantizado para consumo bajo de memoria, mientras que la version BF16 preserva la precision completa. No se dispone de datos de rendimiento comparado frente a otros SLM de la misma franja.
@@ -96,7 +96,7 @@ La comparacion relevante que si se puede sostener con los datos aportados es con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
+- Modelo en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Drafter DFlash para decodificacion especulativa: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash
 - Informe tecnico (PDF): https://research.nvidia.com/labs/nemotron/files/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-Technical-Report.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-Medical-Decision es un modelo de decisión derivado de `unsloth/Qwen3.5-4B` mediante fine-tuning con LoRA, publicado por el usuario lastmass en HuggingFace. No es un modelo generativo al uso: en lugar de producir texto libre, ejecuta una única pasada forward y emite una probabilidad calibrada para cada opción de una pregunta médica de tipo test. Esto lo convierte en un artefacto de investigación orientado a la evaluación automática de ítems de examen médico en chino, no en un asistente clínico conversacional.
+Qwen3.5-Medical-Decision es un modelo de decisión derivado de `unsloth/Qwen3.5-4B` mediante fine-tuning con LoRA, publicado por el usuario lastmass en Hugging Face. No es un modelo generativo al uso: en lugar de producir texto libre, ejecuta una única pasada forward y emite una probabilidad calibrada para cada opción de una pregunta médica de tipo test. Esto lo convierte en un artefacto de investigación orientado a la evaluación automática de ítems de examen médico en chino, no en un asistente clínico conversacional.
 
 La arquitectura combina un backbone Qwen3.5-4B congelado y cuantizado a 4 bits con un cabezal de esquema conjunto estilo Cloudflare-Clef entrenado desde cero, que lee los estados ocultos en la posición de marcador de cada opción y emite un logit por opción. El conjunto de opciones vive en el prompt, de modo que el número y la redacción de las alternativas pueden cambiar en inferencia sin reentrenar. Se entrenó sobre el subconjunto CMB-Exam de `FreedomIntelligence/CMB`, con 10.000 filas y aproximadamente 24.000 decisiones.
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-Medical-Decision | 4,66 B | 2.048 tokens | Scoring de opciones médicas (zh/en) | apache-2.0 | HuggingFace (43 descargas) |
-| Qwen3.5-4B (base) | ≈4 B | no disponible en la información | Generación de texto general | no disponible en la información | HuggingFace (unsloth) |
+| Qwen3.5-Medical-Decision | 4,66 B | 2.048 tokens | Scoring de opciones médicas (zh/en) | apache-2.0 | Hugging Face (43 descargas) |
+| Qwen3.5-4B (base) | ≈4 B | no disponible en la información | Generación de texto general | no disponible en la información | Hugging Face (unsloth) |
 | Modelos médicos generativos sobre CMB | no disponible | no disponible | QA médica generativa | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas de la misma categoría en la información proporcionada. La comparación más directa es con el modelo base Qwen3.5-4B, que genera texto y no ofrece scoring calibrado por opción, y con el cabezal aleatorio del propio autor (45,75% de accuracy), que sirve como línea base interna.
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lastmass/Qwen3.5-Medical-Decision
+- Hugging Face: https://huggingface.co/lastmass/Qwen3.5-Medical-Decision
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/FreedomIntelligence/CMB
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Blends es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario wannafat. Se distribuye como un complemento sobre el modelo base `lynaNSFW/minimaxH3_Collection`, lo que significa que no funciona de forma autonoma: requiere cargar primero ese checkpoint de difusion y aplicar despues los pesos del adaptador. El repositorio es muy pequeno (0,3 GB), coherente con un LoRA de bajo rango, y esta etiquetado con la libreria `diffusers` y la plantilla `template:diffusion-lora`.
+Blends es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario wannafat. Se distribuye como un complemento sobre el modelo base `lynaNSFW/minimaxH3_Collection`, lo que significa que no funciona de forma autonoma: requiere cargar primero ese checkpoint de difusion y aplicar despues los pesos del adaptador. El repositorio es muy pequeno (0,3 GB), coherente con un LoRA de bajo rango, y esta etiquetado con la libreria `diffusers` y la plantilla `template:diffusion-lora`.
 
 La relevancia de esta ficha es limitada en terminos de informacion disponible: la model card publicada es practicamente vacia (solo incluye la etiqueta de descarga y un widget de ejemplo con un prompt vacio `-`), no hay resultados de benchmarks, no se especifican datos de entrenamiento y el modelo acumula 0 descargas y 0 likes en el momento de la consulta. Esto lo situa como un experimento personal de la comunidad mas que como un modelo con validacion publica.
 
@@ -67,7 +67,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Blends (wannafat) | no disponible (LoRA, repo 0,3 GB) | no aplica | Apache 2.0 | HuggingFace, 0 descargas |
+| Blends (wannafat) | no disponible (LoRA, repo 0,3 GB) | no aplica | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wannafat/Blends
+- Repositorio Hugging Face: https://huggingface.co/wannafat/Blends
 - Modelo base: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Documentacion de LoRA en diffusers: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

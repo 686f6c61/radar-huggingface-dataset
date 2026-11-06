@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ai-therapist-qwen3-4b-sft-lora es un adaptador LoRA de ajuste supervisado (SFT) entrenado sobre el modelo base Qwen/Qwen3-4B-Instruct-2507, desarrollado por el usuario de HuggingFace arnabwithab. Su objetivo es especializar un modelo de lenguaje de 4.000 millones de parametros en conversaciones de estilo counselling (orientacion psicologica), a partir de dos conjuntos de datos publicos de dialogo terapeutico. Forma parte de la coleccion "Counselling SLMs" del mismo autor y se distribuye como adaptador PEFT en formato safetensors, no como modelo completo.
+ai-therapist-qwen3-4b-sft-lora es un adaptador LoRA de ajuste supervisado (SFT) entrenado sobre el modelo base Qwen/Qwen3-4B-Instruct-2507, desarrollado por el usuario de Hugging Face arnabwithab. Su objetivo es especializar un modelo de lenguaje de 4.000 millones de parametros en conversaciones de estilo counselling (orientacion psicologica), a partir de dos conjuntos de datos publicos de dialogo terapeutico. Forma parte de la coleccion "Counselling SLMs" del mismo autor y se distribuye como adaptador PEFT en formato safetensors, no como modelo completo.
 
 El adaptador se entreno con QLoRA de Unsloth durante 5 epocas con rango r=16, lo que implica un coste de entrenamiento bajo y un incremento minimo del peso del artefacto (el repositorio ocupa 0,1 GB). Al heredar la arquitectura y el contexto del Qwen3-4B-Instruct-2507, conserva las capacidades generales del modelo base y anade un sesgo estilistico hacia respuestas de acompanamiento emocional.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ai-therapist-qwen3-4b-sft-lora | 4B (base) + LoRA r16 | no disponible | Counselling en ingles | apache-2.0 | Adaptador PEFT en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible | Proposito general, instrucciones | no disponible en la informacion proporcionada | Modelo completo en HuggingFace |
-| Otros SLM de counselling de la coleccion del autor | no disponible | no disponible | Counselling | no disponible | Coleccion "Counselling SLMs" en HuggingFace |
+| ai-therapist-qwen3-4b-sft-lora | 4B (base) + LoRA r16 | no disponible | Counselling en ingles | apache-2.0 | Adaptador PEFT en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible | Proposito general, instrucciones | no disponible en la informacion proporcionada | Modelo completo en Hugging Face |
+| Otros SLM de counselling de la coleccion del autor | no disponible | no disponible | Counselling | no disponible | Coleccion "Counselling SLMs" en Hugging Face |
 
 La comparacion con alternativas de la misma categoria (modelos especializados en salud mental de tamano similar) no esta disponible en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ La comparacion con alternativas de la misma categoria (modelos especializados en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-sft-lora
+- Modelo en Hugging Face: https://huggingface.co/arnabwithab/ai-therapist-qwen3-4b-sft-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Coleccion "Counselling SLMs": https://huggingface.co/collections/arnabwithab/counselling-slms-6ad06ab0ca4ce4cf5ceb5ca4
 - Codigo y harness de evaluacion: https://github.com/arnabwithab/ai-therapist

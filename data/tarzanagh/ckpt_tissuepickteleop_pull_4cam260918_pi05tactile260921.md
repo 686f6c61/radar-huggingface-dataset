@@ -110,7 +110,7 @@ El propio autor resume la comparación señalando que GR00T logró el error más
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_pi05tactile260921
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_pi05tactile260921
 - Variante pi-0.5 sin táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_pi05260921
 - Variante ACT sin táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_act260921
 - Variante ACT con táctil: https://huggingface.co/tarzanagh/ckpt_tissuepickteleop_pull_4cam260918_acttactile260921

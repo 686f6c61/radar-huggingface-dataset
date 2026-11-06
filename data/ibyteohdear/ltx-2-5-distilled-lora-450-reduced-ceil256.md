@@ -103,7 +103,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de metricas de video (FVD, CLIP score,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibyteohdear/ltx-2.5-distilled-lora-450-reduced-ceil256
+- Modelo en Hugging Face: https://huggingface.co/ibyteohdear/ltx-2.5-distilled-lora-450-reduced-ceil256
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Licencia LTX-2.x Community License: https://huggingface.co/Lightricks/LTX-2.5
 - Repositorio de origen del LoRA completo: `ibyteohdear/Lightricks-LTX-2` (referenciado en la model card; URL exacta no disponible)

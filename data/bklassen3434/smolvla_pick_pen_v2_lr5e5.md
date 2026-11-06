@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA_pick_pen_v2_lr5e5 es un ajuste fino de `lerobot/smolvla_base`, un modelo visión-lenguaje-acción (VLA) de 450 millones de parámetros desarrollado por el usuario de HuggingFace bklassen3434. El modelo resuelve una tarea muy concreta: selección de bolígrafos guiada por lenguaje natural sobre un brazo robótico SO-101. Dado un comando como "Pick up the blue pen", "Pick up the pink pen" o "Pick up the grey pen", el modelo debe identificar el objeto correcto entre los tres presentes simultáneamente en cada episodio y ejecutar la acción de recogida.
+SmolVLA_pick_pen_v2_lr5e5 es un ajuste fino de `lerobot/smolvla_base`, un modelo visión-lenguaje-acción (VLA) de 450 millones de parámetros desarrollado por el usuario de Hugging Face bklassen3434. El modelo resuelve una tarea muy concreta: selección de bolígrafos guiada por lenguaje natural sobre un brazo robótico SO-101. Dado un comando como "Pick up the blue pen", "Pick up the pink pen" o "Pick up the grey pen", el modelo debe identificar el objeto correcto entre los tres presentes simultáneamente en cada episodio y ejecutar la acción de recogida.
 
 El entrenamiento se realizó sobre el dataset de teleoperación `bklassen3434/pick_pen_v2_20260920_124400` durante 10.000 pasos con batch de 64 (aproximadamente 24 épocas) y una tasa de aprendizaje de 5e-5 con decaimiento coseno, partiendo del checkpoint base de LeRobot. El autor reporta una pérdida final de 0,022 tras 2 horas y 41 minutos de entrenamiento en una única A100-80GB.
 
@@ -87,8 +87,8 @@ Solo se dispone de datos verificables del modelo base del que deriva. Las altern
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bklassen3434/smolvla_pick_pen_v2_lr5e5 | 450 M | no disponible | sin benchmarks; pérdida final de entrenamiento 0,022 | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/smolvla_base | 450 M (modelo base del anterior) | no disponible | no disponible | no disponible en la información proporcionada | HuggingFace |
+| bklassen3434/smolvla_pick_pen_v2_lr5e5 | 450 M | no disponible | sin benchmarks; pérdida final de entrenamiento 0,022 | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/smolvla_base | 450 M (modelo base del anterior) | no disponible | no disponible | no disponible en la información proporcionada | Hugging Face |
 | Otras políticas VLA (OpenVLA, pi0, ACT, entre otras) | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ Solo se dispone de datos verificables del modelo base del que deriva. Las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_lr5e5
+- Modelo en Hugging Face: https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_lr5e5
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/bklassen3434/pick_pen_v2_20260920_124400
 - La búsqueda web realizada no ha devuelto enlaces relevantes (los resultados obtenidos corresponden a YouTube y a la letra "Y" en Wikipedia), por lo que no se pueden añadir papers, blogs ni repositorios adicionales.

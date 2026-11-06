@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks estandar completos (MMLU completo, 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-BF16 (base) | 320B (18B activos) | no disponible | BF16 | MIT | HuggingFace |
-| GLM-5.3-Flash-NVFP4-W4A4 (este) | 169B (segun safetensors) | no disponible | NVFP4 W4A4 | MIT | HuggingFace |
-| GLM-5.3-Flash-W4A16-NVFP4 (axiomofmind) | no disponible | no disponible | NVFP4 W4A16 | MIT | HuggingFace |
-| GLM-5.3-Flash-NVFP4 (local-inference-lab) | no disponible | no disponible | NVFP4 | MIT | HuggingFace |
+| GLM-5.3-Flash-BF16 (base) | 320B (18B activos) | no disponible | BF16 | MIT | Hugging Face |
+| GLM-5.3-Flash-NVFP4-W4A4 (este) | 169B (segun safetensors) | no disponible | NVFP4 W4A4 | MIT | Hugging Face |
+| GLM-5.3-Flash-W4A16-NVFP4 (axiomofmind) | no disponible | no disponible | NVFP4 W4A16 | MIT | Hugging Face |
+| GLM-5.3-Flash-NVFP4 (local-inference-lab) | no disponible | no disponible | NVFP4 | MIT | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos suficientes para comparar con otros MoE multimodales de tamano similar (p. ej., Qwen2.5-VL, InternVL) en esta informacion.
 
@@ -94,7 +94,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shankinsonhf/GLM-5.3-Flash-NVFP4-W4A4-Experts
+- Repositorio Hugging Face: https://huggingface.co/shankinsonhf/GLM-5.3-Flash-NVFP4-W4A4-Experts
 - Repositorio GitHub con parches y pipeline de conversion: https://github.com/shankinson/glm53-nvfp4-team
 - Commit aceptado de la conversion: https://github.com/shankinson/glm53-nvfp4-team/commit/95e08fd0b588ea51341b03ec80e95b9c76c2fa4d
 - Notas de arquitectura de GLM-5.3-Flash (Sebastian Raschka): https://sebastianraschka.com/blog/2026/glm-5-3-flash-architecture-notes.html

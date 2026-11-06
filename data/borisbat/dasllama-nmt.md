@@ -75,7 +75,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/borisbat/dasllama-nmt
+- Hugging Face: https://huggingface.co/borisbat/dasllama-nmt
 - dasLLAMA: https://dasllama.io
 - Repositorio de modelos de Firefox Translations: https://github.com/mozilla/firefox-translations-models
 - Repositorio de traducciones de Mozilla: https://github.com/mozilla/translations

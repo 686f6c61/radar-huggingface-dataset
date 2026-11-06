@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en HuggingFace por el usuario Fileportz, con generación de texto autorregresiva y procesamiento nativo de imágenes. Según su model card, el backbone declara 552 000 millones de parámetros y soporta contextos de hasta un millón de tokens. El repositorio real de safetensors, sin embargo, contiene 484 619 644 114 parámetros (~484,6B), una discrepancia que conviene tener presente al planificar el despliegue.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado en Hugging Face por el usuario Fileportz, con generación de texto autorregresiva y procesamiento nativo de imágenes. Según su model card, el backbone declara 552 000 millones de parámetros y soporta contextos de hasta un millón de tokens. El repositorio real de safetensors, sin embargo, contiene 484 619 644 114 parámetros (~484,6B), una discrepancia que conviene tener presente al planificar el despliegue.
 
 La propuesta técnica se centra en la compresión agresiva de la caché KV: emplea una arquitectura Causal Encoder-Decoder (CED) de 40 capas, atención dispersa comprimida CSA2 con tres modos estáticos (Full, Reindex y Reuse), un indexador jerárquico disperso y caché KV principal en FP4. El resultado declarado es una huella de 890 bytes por token, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y 437 veces menor que la de DeepSeek-V1. La activación por token es de 8B durante el prefill y 16B durante el decode, lo que reduce el coste en cargas con mucho input.
 
@@ -73,14 +73,14 @@ La model card indica además que todas las puntuaciones dentro de una diferencia
 - Caché KV: 890 bytes por token a nivel global, lo que equivale a unos 890 MB para una secuencia de 1M tokens, más la caché de ventana deslizante gestionada mediante SWA Bounded Replay.
 - GPU recomendadas: despliegue multi-GPU obligatorio. Un nodo de 8×H200 (141 GB cada una, 1128 GB totales) ofrece margen suficiente para los pesos en FP8 más activaciones y caché. Un nodo de 8×H100 de 80 GB (640 GB) queda ajustado para los pesos en FP8 y deja poco espacio para activaciones y caché a contexto largo. No se dispone de datos de despliegue con A100.
 - GPU de consumo: no cabe. Incluso en cuantizaciones agresivas de 4 bits el requisito (~245 GB) supera la VRAM de cualquier GPU consumer; una RTX 4090 con 24 GB no puede alojar el modelo ni siquiera con offloading parcial razonable.
-- Opciones de despliegue: la librería declarada en el repositorio es transformers, y los tags incluyen `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. El soporte de vLLM, SGLang, TGI, llama.cpp u Ollama no está confirmado en la información disponible; dada la arquitectura propietaria (CSA2, CED, DSpark) es probable que requiera kernels específicos y no baste con motores genéricos.
+- Opciones de despliegue: la librería declarada en el repositorio es transformers, y los tags incluyen `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. El soporte de vLLM, SGLang, TGI, llama.cpp u Ollama no está confirmado en la información disponible; dada la arquitectura propietaria (CSA2, CED, DSpark) es probable que requiera kernels específicos y no baste con motores genéricos.
 - Latencia y throughput estimados: no disponibles. La model card aporta factores de reducción de caché KV y de parámetros activos, pero ninguna medida de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros totales | Contexto | Caché KV global por token | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash (Fileportz) | 552B declarados / 484,6B en safetensors | 1M tokens | 890 bytes | MIT | HuggingFace, repositorio de terceros con 0 descargas |
+| DeepSeek-V4.1-Flash (Fileportz) | 552B declarados / 484,6B en safetensors | 1M tokens | 890 bytes | MIT | Hugging Face, repositorio de terceros con 0 descargas |
 | DeepSeek-V4-Flash | No disponible | No disponible | ~4× la de V4.1-Flash (factor declarado) | No disponible | No disponible en la información proporcionada |
 | DeepSeek-V1 | No disponible | No disponible | ~437× la de V4.1-Flash (factor declarado) | No disponible | No disponible en la información proporcionada |
 
@@ -88,7 +88,7 @@ La model card solo ofrece comparaciones relativas de caché KV frente a generaci
 
 ## Limitaciones y advertencias
 
-- Procedencia no oficial: el repositorio pertenece al usuario Fileportz, no a la organización deepseek-ai. La model card enlaza a recursos de DeepSeek (web, chat, cuenta de HuggingFace, informe técnico), pero no hay confirmación de que la publicación esté autorizada por DeepSeek. Conviene verificar la integridad de los pesos antes de usarlos en producción.
+- Procedencia no oficial: el repositorio pertenece al usuario Fileportz, no a la organización deepseek-ai. La model card enlaza a recursos de DeepSeek (web, chat, cuenta de Hugging Face, informe técnico), pero no hay confirmación de que la publicación esté autorizada por DeepSeek. Conviene verificar la integridad de los pesos antes de usarlos en producción.
 - Discrepancia de parámetros: la model card declara 552B en el backbone, mientras que los safetensors contienen 484,6B. La diferencia podría corresponder a la memoria Engram de 196B u otros componentes no materializados como parámetros densos, pero la model card no lo aclara.
 - Benchmarks no publicados: la sección de evaluación está truncada y no contiene cifras. No hay evidencia cuantitativa de calidad, y el repositorio registra 0 descargas y 0 likes, por lo que no existe validación comunitaria.
 - Riesgo de alucinación: no se documentan tasas de alucinación ni resultados de evaluaciones de veracidad. Como en cualquier modelo generativo, la salida debe validarse, especialmente en dominios factuales o con entrada de imágenes.
@@ -101,10 +101,10 @@ La model card solo ofrece comparaciones relativas de caché KV frente a generaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Fileportz/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/Fileportz/DeepSeek-V4.1-Flash
 - Informe técnico referenciado en la model card (ruta relativa al repositorio): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organización DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Cuenta de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Nota: las búsquedas web realizadas no han devuelto ningún resultado relevante sobre este modelo; los únicos resultados devueltos corresponden a SIHL, una empresa de medios de impresión, sin relación con el modelo.

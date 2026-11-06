@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mae-retrieval es un repositorio de HuggingFace publicado por el usuario chnkapoor que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae** orientada a tareas de *retrieval* (recuperación). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un checkpoint con rendimiento validado en benchmarks.
+Mae-retrieval es un repositorio de Hugging Face publicado por el usuario chnkapoor que contiene una implementación funcional ("working implementation") de una arquitectura denominada **Mae** orientada a tareas de *retrieval* (recuperación). No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no debe presentarse como un checkpoint con rendimiento validado en benchmarks.
 
 El repositorio declara una configuración etiquetada como "huge" con atención de ventana deslizante (*sliding window*), fusión de bajo rango (*low rank fusion*), activación ReLU y normalización LayerNorm. Sin embargo, el recuento real de parámetros del archivo safetensors es de solo **24.832 parámetros**, una cifra incompatible con cualquier escala "huge"; se trata por tanto de un modelo de tamaño ínfimo, probablemente una maqueta de código para validar que el *pipeline* de entrenamiento e inferencia funciona de extremo a extremo.
 
@@ -22,7 +22,7 @@ Su relevancia actual es limitada y de carácter didáctico o de andamiaje: sirve
 | Formato de pesos | safetensors (checkpoint de inicializacion, no entrenado) |
 | Tamano del repositorio | 0.0 GB |
 | Optimizador y scheduler por defecto | adam con schedule coseno |
-| Descargas / likes en HuggingFace | 16 descargas, 0 likes |
+| Descargas / likes en Hugging Face | 16 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -88,7 +88,7 @@ No se dispone de modelos comparables dentro de la informacion proporcionada. El 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chnkapoor/mae-retrieval
+- Modelo en Hugging Face: https://huggingface.co/chnkapoor/mae-retrieval
 - Archivo principal de entrenamiento: `train.py` dentro del repositorio
 - Configuración de arquitectura: `config.json` dentro del repositorio
 - Receta de experimento por defecto: `training_args.json` dentro del repositorio

@@ -89,10 +89,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| loom-fun/bartowski-Qwen3.8-27B-loom | 27B | 262.144 | Paquete Loom con MTP y vision para AMD | Apache 2.0 | HuggingFace (pesos via `loom-fetch`) |
-| bartowski/Qwen3.8-27B-GGUF | 27B | no disponible | Checkpoint GGUF base, sin runtime asociado | Apache 2.0 (heredada) | HuggingFace |
+| loom-fun/bartowski-Qwen3.8-27B-loom | 27B | 262.144 | Paquete Loom con MTP y vision para AMD | Apache 2.0 | Hugging Face (pesos via `loom-fetch`) |
+| bartowski/Qwen3.8-27B-GGUF | 27B | no disponible | Checkpoint GGUF base, sin runtime asociado | Apache 2.0 (heredada) | Hugging Face |
 | llama.cpp ROCm b1355 con el mismo GGUF | 27B | 262.144 | Runtime generico con DFlash2 o `draft-mtp` | MIT (llama.cpp) | GitHub |
-| z-lab/Qwen3.8-27B-DFlash2-GGUF | 27B (drafter) | no disponible | Drafter especulativo alternativo | no disponible | HuggingFace |
+| z-lab/Qwen3.8-27B-DFlash2-GGUF | 27B (drafter) | no disponible | Drafter especulativo alternativo | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -109,7 +109,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loom-fun/bartowski-Qwen3.8-27B-loom
+- Repositorio Hugging Face: https://huggingface.co/loom-fun/bartowski-Qwen3.8-27B-loom
 - Modelo base GGUF: https://huggingface.co/bartowski/Qwen3.8-27B-GGUF
 - Runtime Loom: https://github.com/ROCm/hrx-system
 - Flujo loom-skills: https://github.com/loom-fun/loom-skills

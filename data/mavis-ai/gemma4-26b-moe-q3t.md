@@ -106,7 +106,7 @@ No se dispone de datos de benchmark publicados que permitan comparar numericamen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mavis-ai/Gemma4-26B-MoE-Q3T
+- Modelo en Hugging Face: https://huggingface.co/mavis-ai/Gemma4-26B-MoE-Q3T
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Web oficial de R.E.V.I.S.: https://mavis-ai.co.jp/revis/
 - Cuenta de X del autor: https://x.com/mavis_ai_jp

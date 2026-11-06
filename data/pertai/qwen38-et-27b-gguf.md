@@ -86,7 +86,7 @@ La diferencia principal es que el modelo de pertai está específicamente adapta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pertai/qwen38-et-27b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pertai/qwen38-et-27b-GGUF
 - Repositorio de método y evaluación: https://github.com/pertlomp/qwen38-et
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Otras versiones GGUF: https://huggingface.co/empero-ai/Qwen3.8-27B-Ridge-GGUF

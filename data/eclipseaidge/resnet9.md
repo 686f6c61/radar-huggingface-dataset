@@ -1,7 +1,7 @@
 # EclipseAidge/resnet9
 
 ## Resumen
-EclipseAidge/resnet9 es un repositorio de HuggingFace publicado por EclipseAidge que contiene un artefacto en formato ONNX bajo licencia EPL-2.0. La model card no incluye descripción, pipeline, idiomas, parámetros, datos de entrenamiento ni instrucciones de uso; el repositorio figura con 0.0 GB, 0 descargas y 0 likes. El identificador “resnet9” sugiere una red neuronal convolucional residual de nueve capas, pero no hay documentación que lo confirme.
+EclipseAidge/resnet9 es un repositorio de Hugging Face publicado por EclipseAidge que contiene un artefacto en formato ONNX bajo licencia EPL-2.0. La model card no incluye descripción, pipeline, idiomas, parámetros, datos de entrenamiento ni instrucciones de uso; el repositorio figura con 0.0 GB, 0 descargas y 0 likes. El identificador “resnet9” sugiere una red neuronal convolucional residual de nueve capas, pero no hay documentación que lo confirme.
 
 En el estado actual no es posible evaluarlo como un modelo listo para producción: faltan la tarea, la forma de entrada, las clases de salida, el preprocesado y cualquier métrica de rendimiento. Su interés es principalmente como artefacto de prueba para herramientas que importan ONNX, como el ecosistema Eclipse Aidge, no como modelo de referencia con calidad conocida.
 
@@ -20,7 +20,7 @@ La relevancia es limitada y está condicionada a que el autor complete la docume
 | Licencia | EPL-2.0 |
 | Formato de pesos | ONNX |
 | Tarea / pipeline | no disponible |
-| Tamaño del repositorio | 0.0 GB según HuggingFace |
+| Tamaño del repositorio | 0.0 GB según Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 2026-10-18, posterior a la fecha actual; posible anomalía de metadatos |
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Arquitectura | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| EclipseAidge/resnet9 | no disponible; posible CNN residual | no disponible | no aplica / no disponible | no disponible | EPL-2.0 | HuggingFace, 0 descargas |
+| EclipseAidge/resnet9 | no disponible; posible CNN residual | no disponible | no aplica / no disponible | no disponible | EPL-2.0 | Hugging Face, 0 descargas |
 | ResNet-18 | CNN residual, referencia externa | no disponible en la información | no aplica | no disponible | no disponible en la información | referencia externa no verificada |
 | MobileNetV3-Small | CNN eficiente para edge, referencia externa | no disponible en la información | no aplica | no disponible | no disponible en la información | referencia externa no verificada |
 | EfficientNet-B0 | CNN con scaling compuesto, referencia externa | no disponible en la información | no aplica | no disponible | no disponible en la información | referencia externa no verificada |
@@ -82,5 +82,5 @@ No se comparan cifras porque la información proporcionada no incluye ni siquier
 - No se documenta una tarea generativa, por lo que el riesgo de alucinación no es evaluable. En cualquier caso, no debe usarse en producción sin validación previa.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/EclipseAidge/resnet9
+- Hugging Face: https://huggingface.co/EclipseAidge/resnet9
 - No se han encontrado papers, blogs, repositorios o demos relevantes en los resultados de búsqueda proporcionados; los resultados disponibles tratan sobre representantes de Nueva York y no guardan relación con el modelo.

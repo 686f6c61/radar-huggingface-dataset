@@ -80,9 +80,9 @@ No se dispone de información pública sobre otros modelos de síntesis de voz e
 
 ## Enlaces
 
-- [HuggingFace: laion/moss-va-sft3-dpo-lora](https://huggingface.co/laion/moss-va-sft3-dpo-lora)
+- [Hugging Face: laion/moss-va-sft3-dpo-lora](https://huggingface.co/laion/moss-va-sft3-dpo-lora)
 - [Modelo base: laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3](https://huggingface.co/laion/moss-tts-local-transformer-4.55b-voice-acting-v2-sft3)
-- [Technical Report (HuggingFace Space)](https://huggingface.co/spaces/laion/moss-va-technical-report)
+- [Technical Report (Hugging Face Space)](https://huggingface.co/spaces/laion/moss-va-technical-report)
 - [Manual & Studies Hub (mirror en laion-ai.github.io)](https://laion-ai.github.io/)
-- [Emotion LoRAs vs Baseline (HuggingFace Space)](https://huggingface.co/spaces/laion/moss-va-emotion-loras)
+- [Emotion LoRAs vs Baseline (Hugging Face Space)](https://huggingface.co/spaces/laion/moss-va-emotion-loras)
 - [Repositorio de LAION en GitHub](https://github.com/orgs/LAION-AI/repositories)

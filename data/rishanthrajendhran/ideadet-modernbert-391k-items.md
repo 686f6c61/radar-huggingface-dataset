@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ideadet-modernbert-391k-items`, desarrollado por Rishanth Rajendhran, es un clasificador de texto basado en la arquitectura ModernBERT, diseñado específicamente para la detección de contenido generado por inteligencia artificial (IA). Aunque el nombre sugiere una especialización en "detección de ideas" o "detección de IA", los metadatos de HuggingFace indican que se trata de un modelo de clasificación de texto (pipeline `text-classification`) con etiquetas `ai-detection`. El autor tiene un perfil académico centrado en el análisis y mejora de generaciones de LLMs, lo que da contexto a esta herramienta.
+El modelo `ideadet-modernbert-391k-items`, desarrollado por Rishanth Rajendhran, es un clasificador de texto basado en la arquitectura ModernBERT, diseñado específicamente para la detección de contenido generado por inteligencia artificial (IA). Aunque el nombre sugiere una especialización en "detección de ideas" o "detección de IA", los metadatos de Hugging Face indican que se trata de un modelo de clasificación de texto (pipeline `text-classification`) con etiquetas `ai-detection`. El autor tiene un perfil académico centrado en el análisis y mejora de generaciones de LLMs, lo que da contexto a esta herramienta.
 
-El modelo cuenta con aproximadamente 396 millones de parámetros y se distribuye en formato `safetensors` bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Al ser un fine-tuning de ModernBERT, hereda las mejoras arquitectónicas de este, como embeddings rotatorios para contextos de hasta 8192 tokens, capas GeGLU y atención alternada. Sin embargo, el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo. Con cero descargas y cero likes en el momento de la consulta, es un modelo reciente y aún sin validación comunitaria.
+El modelo cuenta con aproximadamente 396 millones de parámetros y se distribuye en formato `safetensors` bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones. Al ser un fine-tuning de ModernBERT, hereda las mejoras arquitectónicas de este, como embeddings rotatorios para contextos de hasta 8192 tokens, capas GeGLU y atención alternada. Sin embargo, el acceso al repositorio está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo. Con cero descargas y cero likes en el momento de la consulta, es un modelo reciente y aún sin validación comunitaria.
 
 Su relevancia radica en la creciente necesidad de herramientas de verificación de autenticidad textual en entornos digitales, especialmente ante la proliferación de contenido sintético. Como clasificador especializado, puede integrarse en pipelines de moderación, revisión editorial o análisis forense de textos.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 396M parámetros, el modelo en precisión fp32 ocupa aproximadamente 1,6 GB (coincide con el tamaño del repositorio). En fp16, el uso de memoria se reduce a unos 0,8 GB, y en int8 a unos 0,4 GB, aunque no se han publicado pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM puede ejecutar el modelo en fp16 (por ejemplo, NVIDIA GTX 1650, RTX 3050). Para procesamiento por lotes o secuencias muy largas, se recomienda una GPU con 4-8 GB (RTX 3060, RTX 3070, A10).
 - En CPU: es viable para inferencia de baja latencia en textos cortos, aunque el tiempo de procesamiento aumentará significativamente para secuencias largas.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede servirse con `transformers` en Python, o mediante herramientas como ONNX Runtime, TorchServe o FastAPI. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede servirse con `transformers` en Python, o mediante herramientas como ONNX Runtime, TorchServe o FastAPI. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama, que están orientados a modelos generativos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La comparación es limitada porque este modelo tiene más del doble de parámetr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-391k-items)
+- [Modelo en Hugging Face](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-391k-items)
 - [Repositorio de investigación de ModernBERT (GitHub)](https://github.com/AnswerDotAI/ModernBERT)
-- [Documentación de ModernBERT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/modernbert)
-- [Perfil de HuggingFace del autor](https://huggingface.co/rishanthrajendhran)
+- [Documentación de ModernBERT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/modernbert)
+- [Perfil de Hugging Face del autor](https://huggingface.co/rishanthrajendhran)
 - [Perfil de GitHub del autor](https://github.com/RishanthRajendhran/)

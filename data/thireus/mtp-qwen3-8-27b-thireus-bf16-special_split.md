@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje completo, sino los tensores cuantizados en formato GGUF de la capa **MTP (Multi-Token Prediction)** del modelo Qwen3.8-27B, desarrollado por Qwen y publicado en HuggingFace. La capa MTP es un componente auxiliar que permite la decodificación especulativa, acelerando la inferencia al predecir varios tokens a la vez. El autor, Thireus, ha creado este repositorio para integrar dicha capa con su propia herramienta **GGUF Tool Suite**, que automatiza la búsqueda de la mezcla de cuantizaciones óptima para minimizar la perplejidad según el hardware disponible.
+Este repositorio no contiene un modelo de lenguaje completo, sino los tensores cuantizados en formato GGUF de la capa **MTP (Multi-Token Prediction)** del modelo Qwen3.8-27B, desarrollado por Qwen y publicado en Hugging Face. La capa MTP es un componente auxiliar que permite la decodificación especulativa, acelerando la inferencia al predecir varios tokens a la vez. El autor, Thireus, ha creado este repositorio para integrar dicha capa con su propia herramienta **GGUF Tool Suite**, que automatiza la búsqueda de la mezcla de cuantizaciones óptima para minimizar la perplejidad según el hardware disponible.
 
 La relevancia de este trabajo radica en que ofrece un método flexible y automatizado para generar recetas de cuantización dinámica (Dynamic 3.0 Quants) adaptadas a cada configuración de VRAM/RAM, algo que las cuantizaciones estáticas no permiten. El repositorio incluye la capa MTP en formato GGUF (con 2.967.501.312 parámetros, unos 2,97 mil millones), lista para usarse con `ik_llama.cpp`, una variante de llama.cpp mantenida por Thireus. No se trata de un modelo autónomo: requiere el modelo base Qwen3.8-27B y las herramientas mencionadas para funcionar.
 
@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo autonomo sino un componente auxi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
+- Repositorio Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-BF16-SPECIAL_SPLIT
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF Tool Suite (GitHub): https://github.com/Thireus/GGUF-Tool-Suite
 - Documentacion de la herramienta: https://github.com/Thireus/GGUF-Tool-Suite/tree/main/docs

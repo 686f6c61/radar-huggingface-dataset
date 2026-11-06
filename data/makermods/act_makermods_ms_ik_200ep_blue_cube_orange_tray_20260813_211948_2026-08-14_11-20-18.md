@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. Los mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/makermods/act_makermods_ms_ik_200ep_blue_cube_orange_tray_20260813_211948_2026-08-14_11-20-18
+- Hugging Face: https://huggingface.co/makermods/act_makermods_ms_ik_200ep_blue_cube_orange_tray_20260813_211948_2026-08-14_11-20-18
 - Web de MakerMods: https://www.makermods.ai/
 - Paper de referencia (tag arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Otro checkpoint similar de MakerMods: https://huggingface.co/makermods/act_makermods_200ep_blue_cube_orange_box_2026-08-07_18-59-36

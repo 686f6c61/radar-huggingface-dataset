@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `h1testh1testmeow/h1-lightglue-probe-20261003` no contiene un modelo de inteligencia artificial. Se trata de un artefacto de investigacion en seguridad autorizada cuyo unico contenido declarado es el fichero `configuration_probe.py`, un script de sondeo (probe) disenado para verificar si un pipeline de ejecucion remota de codigo llega a importar y ejecutar ficheros Python anidados en la configuracion de un repositorio de HuggingFace. No hay pesos, no hay tokenizador y no hay configuracion de arquitectura.
+El repositorio `h1testh1testmeow/h1-lightglue-probe-20261003` no contiene un modelo de inteligencia artificial. Se trata de un artefacto de investigacion en seguridad autorizada cuyo unico contenido declarado es el fichero `configuration_probe.py`, un script de sondeo (probe) disenado para verificar si un pipeline de ejecucion remota de codigo llega a importar y ejecutar ficheros Python anidados en la configuracion de un repositorio de Hugging Face. No hay pesos, no hay tokenizador y no hay configuracion de arquitectura.
 
 Segun la propia model card, el script no realiza operaciones de red, de sistema de ficheros, de subprocess ni de lectura de credenciales. Si se importa, lanza un marcador que contiene unicamente el identificador de proceso (PID) y un booleano indicando si la variable de entorno `HF_TOKEN` existe, sin llegar a leer ni imprimir su valor. El nombre del tag, `h1_lightglue_probe`, emplea terminologia de LightGlue, pero en la informacion disponible no consta ninguna relacion tecnica con el modelo LightGlue de matching de caracteristicas locales.
 
-Por tanto, esta ficha no describe capacidades de inferencia: describe un fixture de prueba para auditoria de seguridad en la cadena de suministro de artefactos de HuggingFace. El repositorio tiene 0 descargas y 0 likes, fue creado el 3 de octubre de 2026 y actualizado un minuto despues, y no declara licencia, idiomas ni pipeline.
+Por tanto, esta ficha no describe capacidades de inferencia: describe un fixture de prueba para auditoria de seguridad en la cadena de suministro de artefactos de Hugging Face. El repositorio tiene 0 descargas y 0 likes, fue creado el 3 de octubre de 2026 y actualizado un minuto despues, y no declara licencia, idiomas ni pipeline.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ El proposito tecnico del artefacto es funcionar como centinela de ejecucion anid
 - Pruebas de sandboxing de red: al declarar el script que no realiza operaciones de red, cualquier trafico observado durante su importacion es atribuible al cargador y no al probe, lo que ayuda a perfilar el comportamiento de la herramienta anfitriona.
 - Trazabilidad de procesos en pipelines de inferencia: el PID emitido permite correlacionar la importacion con un proceso concreto en ejecuciones multiproceso o con workers distribuidos.
 - Regresion de seguridad en actualizaciones de librerias: usar el repositorio como caso de prueba fijo para detectar cambios de comportamiento entre versiones de `transformers`, `diffusers` o herramientas de gestion de artefactos.
-- Educacion y formacion en seguridad de la cadena de suministro de modelos: sirve como ejemplo minimo y verificable de los riesgos de la ejecucion de codigo remoto en repositorios de HuggingFace sin auditoria previa.
+- Educacion y formacion en seguridad de la cadena de suministro de modelos: sirve como ejemplo minimo y verificable de los riesgos de la ejecucion de codigo remoto en repositorios de Hugging Face sin auditoria previa.
 
 ## Benchmarks y rendimiento
 
@@ -91,8 +91,8 @@ No existen modelos comparables en la misma categoria, porque el artefacto no es 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/h1testh1testmeow/h1-lightglue-probe-20261003
-- Perfil del autor en HuggingFace: https://huggingface.co/h1testh1testmeow
+- Repositorio en Hugging Face: https://huggingface.co/h1testh1testmeow/h1-lightglue-probe-20261003
+- Perfil del autor en Hugging Face: https://huggingface.co/h1testh1testmeow
 - Otro repositorio del mismo autor (reproduccion controlada HackerOne 4036460): https://huggingface.co/h1testh1testmeow/h1-4036460-b-v2-21122504
 - LightGlue, repositorio oficial (referencia nominal, sin relacion documentada): https://github.com/cvg/LightGlue
 - LightGlue, paper en arXiv: https://arxiv.org/abs/2306.13643

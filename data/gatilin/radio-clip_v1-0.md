@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gatilin/radio-clip_v1.0` es un repositorio publicado en HuggingFace por el usuario `gatilin` bajo licencia MIT. La ficha del modelo no incluye ninguna descripción técnica, arquitectura, parámetros, idiomas ni pipeline asociado. El nombre sugiere una posible orientación a procesamiento de audio o clips de radio, pero no existe documentación pública que lo confirme. El repositorio fue creado el 20 de agosto de 2026 y no registra descargas ni valoraciones, lo que indica que se trata de una publicación muy reciente o sin difusión. En el momento de la consulta, no se dispone de información suficiente para caracterizar el modelo ni para evaluar su utilidad práctica.
+El modelo `gatilin/radio-clip_v1.0` es un repositorio publicado en Hugging Face por el usuario `gatilin` bajo licencia MIT. La ficha del modelo no incluye ninguna descripción técnica, arquitectura, parámetros, idiomas ni pipeline asociado. El nombre sugiere una posible orientación a procesamiento de audio o clips de radio, pero no existe documentación pública que lo confirme. El repositorio fue creado el 20 de agosto de 2026 y no registra descargas ni valoraciones, lo que indica que se trata de una publicación muy reciente o sin difusión. En el momento de la consulta, no se dispone de información suficiente para caracterizar el modelo ni para evaluar su utilidad práctica.
 
 ## Especificaciones tecnicas
 
@@ -54,4 +54,4 @@ No disponible. Al no existir datos sobre arquitectura, tamaño o rendimiento, no
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/gatilin/radio-clip_v1.0)
+- [Repositorio en Hugging Face](https://huggingface.co/gatilin/radio-clip_v1.0)

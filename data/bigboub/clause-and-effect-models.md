@@ -4,7 +4,7 @@
 
 Clause & Effect models es un repositorio que agrupa dos modelos ajustados (*fine-tuned*) publicados por el usuario bigboub como soporte del Space «Clause & Effect». No se trata de un único modelo, sino de dos artefactos con tareas distintas: un clasificador de cláusulas de términos de servicio (ToS) construido sobre `nlpaueb/legal-bert-base-uncased`, que asigna cada cláusula a una de tres categorías de equidad (`clearly_fair`, `potentially_unfair`, `clearly_unfair`), y un modelo de resumen sobre `facebook/bart-large-cnn` que genera una explicación en inglés sencillo de una cláusula, recibiendo como entrada la cadena `"{label}: {clause}"`.
 
-El problema que aborda es concreto: los términos de servicio legales son largos, densos y rara vez se leen, de modo que un usuario no sabe qué cláusulas son abusivas ni qué implican en la práctica. El repositorio empaqueta en un solo identificador de HuggingFace la pieza de clasificación y la de explicación, lo que simplifica su consumo desde una aplicación o demo. Los pesos se almacenan en fp16 para reducir a la mitad el tamano de descarga del repositorio (1,0 GB), con la recomendación explícita de cargarlos como fp32 (`dtype=torch.float32`) para inferencia en CPU.
+El problema que aborda es concreto: los términos de servicio legales son largos, densos y rara vez se leen, de modo que un usuario no sabe qué cláusulas son abusivas ni qué implican en la práctica. El repositorio empaqueta en un solo identificador de Hugging Face la pieza de clasificación y la de explicación, lo que simplifica su consumo desde una aplicación o demo. Los pesos se almacenan en fp16 para reducir a la mitad el tamano de descarga del repositorio (1,0 GB), con la recomendación explícita de cargarlos como fp32 (`dtype=torch.float32`) para inferencia en CPU.
 
 La relevancia es acotada y experimental: el repositorio acumula 0 descargas y 0 likes, su licencia no está declarada y solo se documentan resultados para el clasificador BERT (exactitud de 0,864 sobre 960 cláusulas de test). El modelo de resumen no incluye métricas publicadas en la información disponible. Es, por tanto, una pieza útil como referencia de pipeline legal NLP en inglés, no un componente listo para producción sin evaluación adicional.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks para el modelo de resumen BART (ni 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bigboub/clause-and-effect-models (BERT) | No disponible (base tipo BERT-base) | No disponible (base: 512 tokens) | Clasificación de equidad en 3 clases | No disponible | HuggingFace, 0 descargas |
-| nlpaueb/legal-bert-base-uncased | ~110 M (BERT-base) | 512 tokens | Modelo base legal, sin cabecera de clasificación | No disponible en esta ficha | HuggingFace |
-| bigboub/clause-and-effect-models (BART) | No disponible (base tipo BART-large) | No disponible (base: 1024 tokens) | Resumen condicionado por etiqueta | No disponible | HuggingFace, 0 descargas |
-| facebook/bart-large-cnn | ~400 M (BART-large) | 1024 tokens | Resumen abstractivo genérico | No disponible en esta ficha | HuggingFace |
+| bigboub/clause-and-effect-models (BERT) | No disponible (base tipo BERT-base) | No disponible (base: 512 tokens) | Clasificación de equidad en 3 clases | No disponible | Hugging Face, 0 descargas |
+| nlpaueb/legal-bert-base-uncased | ~110 M (BERT-base) | 512 tokens | Modelo base legal, sin cabecera de clasificación | No disponible en esta ficha | Hugging Face |
+| bigboub/clause-and-effect-models (BART) | No disponible (base tipo BART-large) | No disponible (base: 1024 tokens) | Resumen condicionado por etiqueta | No disponible | Hugging Face, 0 descargas |
+| facebook/bart-large-cnn | ~400 M (BART-large) | 1024 tokens | Resumen abstractivo genérico | No disponible en esta ficha | Hugging Face |
 
 La comparación relevante es frente a sus propios modelos base: `legal-bert-base-uncased` aporta dominio legal pero no la clasificación de tres clases, y `bart-large-cnn` resume noticias, no cláusulas legales con condicionamiento por etiqueta. No se dispone de datos que permitan comparar su rendimiento con otros clasificadores de cláusulas abusivas.
 
@@ -92,7 +92,7 @@ La comparación relevante es frente a sus propios modelos base: `legal-bert-base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigboub/clause-and-effect-models
+- Modelo en Hugging Face: https://huggingface.co/bigboub/clause-and-effect-models
 - Space «Clause & Effect»: https://huggingface.co/spaces/bigboub/clause-and-effect
 - Modelo base del clasificador: https://huggingface.co/nlpaueb/legal-bert-base-uncased
 - Modelo base del resumidor: https://huggingface.co/facebook/bart-large-cnn

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLO26n-directional-signs es un modelo de deteccion de objetos basado en YOLO26n, la variante nano de la familia YOLO26 de Ultralytics, ajustado para detectar senales direccionales francesas (ensamblajes de senales de destino) y senales de rotonda en imagenes captadas a nivel de calle. Fue desarrollado por el usuario rtrm y publicado en HuggingFace bajo licencia AGPL-3.0.
+YOLO26n-directional-signs es un modelo de deteccion de objetos basado en YOLO26n, la variante nano de la familia YOLO26 de Ultralytics, ajustado para detectar senales direccionales francesas (ensamblajes de senales de destino) y senales de rotonda en imagenes captadas a nivel de calle. Fue desarrollado por el usuario rtrm y publicado en Hugging Face bajo licencia AGPL-3.0.
 
 El modelo distingue dos clases: "directionnel" (senales direccionales) y "giratoire" (senales de rotonda). Se entrenó con una aumentacion de escala agresiva (scale=0.9) para mantener robustez en resoluciones de inferencia entre 640 y 1280 pixeles. Su relevancia radica en la deteccion especifica de senalizacion vial francesa, un caso de uso habitual en sistemas de asistencia a la conduccion, mantenimiento de infraestructuras y mapeo urbano.
 
@@ -34,7 +34,7 @@ El ajuste fino se realizo sobre el dataset pierrelortie/directionan_sign_detecti
 - Inferencia robusta en un rango de resoluciones de 640 a 1280 pixeles, con mAP50-95 medio de 0.846 en ese rango.
 - Inferencia end-to-end sin NMS gracias a la arquitectura YOLO26, con recomendacion de deduplicacion de cajas duplicadas (misma clase, IoU>0.7) por la ocasional emision de cajas casi duplicadas.
 - Integracion con el ecosistema Ultralytics: exportacion a TensorRT, ONNX, CoreML y TFLite.
-- Carga directa desde HuggingFace mediante hf_hub_download y prediccion con la API de Ultralytics.
+- Carga directa desde Hugging Face mediante hf_hub_download y prediccion con la API de Ultralytics.
 
 ## Casos de uso
 
@@ -73,15 +73,15 @@ No se dispone de informacion sobre otros fine-tunings especificos de YOLO para s
 
 - Dataset de entrenamiento muy pequeno (110 imagenes de entrenamiento y 24 de validacion), lo que puede limitar la generalizacion a condiciones de iluminacion, clima o angulos de camara no representados en el conjunto.
 - El modelo detecta unicamente dos clases de senales (directionnel y giratoire) y esta especializado en senalizacion francesa; no es adecuado para otros tipos de senales, paises o estilos de senalizacion.
-- Los metadatos de HuggingFace incluyen la etiqueta "region:us", que contrasta con el enfoque del modelo en senales francesas; se debe verificar la procedencia geografica real de las imagenes de entrenamiento antes de desplegarlo en produccion.
+- Los metadatos de Hugging Face incluyen la etiqueta "region:us", que contrasta con el enfoque del modelo en senales francesas; se debe verificar la procedencia geografica real de las imagenes de entrenamiento antes de desplegarlo en produccion.
 - La arquitectura YOLO26 sin NMS puede emitir cajas duplicadas ocasionales; se recomienda aplicar deduplicacion por clase con IoU>0.7 en el postprocesado.
 - Licencia AGPL-3.0: cualquier uso comercial o integracion en servicios debe cumplir con los terminos de la liciencia, incluyendo la divulgacion del codigo fuente si se ofrece como servicio en red.
 - No se dispone de informacion sobre sesgos especificos del modelo ni sobre su comportamiento con imagenes fuera del dominio de carreteras francesas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rtrm/yolo26n-directional-signs
+- Repositorio Hugging Face: https://huggingface.co/rtrm/yolo26n-directional-signs
 - Dataset de entrenamiento: https://huggingface.co/datasets/pierrelortie/directionan_sign_detection
 - Documentacion de Ultralytics YOLO26: https://docs.ultralytics.com/models/yolo26
-- Modelo YOLO26 en HuggingFace: https://huggingface.co/Ultralytics/YOLO26
+- Modelo YOLO26 en Hugging Face: https://huggingface.co/Ultralytics/YOLO26
 - Repositorio YOLO26 en GitHub: https://github.com/ultralytics/yolo26

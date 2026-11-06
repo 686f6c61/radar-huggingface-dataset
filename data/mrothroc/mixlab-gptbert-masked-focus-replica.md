@@ -27,7 +27,7 @@ La arquitectura se describe explícitamente en el `config.json` y en el `trainin
 
 El objetivo de entrenamiento es un híbrido por ejemplo de CLM + MNTP, en el que la variante *masked-focus* dedica un 6,25 % al objetivo causal, con un calendario de máscara que decae de 0,30 a 0,15. Los datos corresponden al corpus **BabyLM 2026 detoxified Strict-Small** (≈10M de palabras, 15,9M de tokens), procesado con marcadores de segmento `<s>` insertados en el flujo de tokens empaquetado según la convención del baseline de referencia. El entrenamiento emplea el optimizador LAMB con lr 0,007, weight decay 0,1, z-loss 1e-4 y un calendario de warmup del 1,6 % seguido de coseno y cooldown: 9.600 pasos de 16.384 tokens (≈10 epochs, frente a los 9.914 del baseline) con currículum de secuencia 128→256→512. El tokenizador es el de referencia, de 16.384 entradas (`<unk>`=0, `<s>`=1, `</s>`=2, `<pad>`=3, `<mask>`=4).
 
-Como innovación destacable, el repositorio exporta tanto `MixlabForCausalLM` como `MixlabForMaskedLM` con `trust_remote_code=True`, y declara una paridad numérica entre la implementación nativa y la de HuggingFace de aproximadamente 7e-8, lo que constituye una verificación cuantitativa de equivalencia funcional.
+Como innovación destacable, el repositorio exporta tanto `MixlabForCausalLM` como `MixlabForMaskedLM` con `trust_remote_code=True`, y declara una paridad numérica entre la implementación nativa y la de Hugging Face de aproximadamente 7e-8, lo que constituye una verificación cuantitativa de equivalencia funcional.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Como innovación destacable, el repositorio exporta tanto `MixlabForCausalLM` co
 ## Casos de uso
 
 - Reproducción y auditoría de baselines académicos: el modelo permite verificar componente a componente (BLiMP, EWoK, entity tracking, COMPS, reading, GLUE) el baseline GPT-BERT masked-focus de BabyLM 2025 sin necesidad de acceso a clústeres de GPU, ya que el entrenamiento completo cabe en 5,5 horas sobre un M1 Max.
-- Validación de entrenadores en hardware de consumo: sirve como prueba de extremo a extremo de que un *trainer* Metal/MLX (mixlab) reproduce fielmente una arquitectura externa, con paridad de logits verificada a ≈7e-8 frente a la exportación de HuggingFace.
+- Validación de entrenadores en hardware de consumo: sirve como prueba de extremo a extremo de que un *trainer* Metal/MLX (mixlab) reproduce fielmente una arquitectura externa, con paridad de logits verificada a ≈7e-8 frente a la exportación de Hugging Face.
 - Investigación en adquisición del lenguaje infantil: al entrenarse sobre el corpus BabyLM Strict-Small (≈10M palabras, 15,9M tokens), es adecuado para estudios sobre qué estructuras lingüísticas se adquieren con presupuestos de datos comparables a la exposición infantil.
 - Evaluación de métricas de psicolingüística computacional: los datos de *reading* (eye-tracking y SPR) permiten usar el modelo como sujeto sintético en experimentos sobre coste de procesamiento y surprisal, con la salvedad del bug conocido en el scorer de AoA.
 - Punto de partida para ajuste fino ligero en tareas de comprensión del inglés: partiendo del checkpoint, se puede reproducir el flujo de *fine-tuning* utilizado para la fila GLUE (64,18) en tareas como clasificación de frases o inferencia textual.
@@ -103,7 +103,7 @@ La comparación con otros modelos de la misma categoría (modelos de lenguaje de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrothroc/mixlab-gptbert-masked-focus-replica
+- Modelo en Hugging Face: https://huggingface.co/mrothroc/mixlab-gptbert-masked-focus-replica
 - Configuración de arquitectura exportada: https://huggingface.co/mrothroc/mixlab-gptbert-masked-focus-replica/blob/main/config.json
 - Especificación completa de arquitectura y entrenamiento: https://huggingface.co/mrothroc/mixlab-gptbert-masked-focus-replica/blob/main/training_config.mixlab.json
 - Baseline de referencia (BabyLM 2025 GPT-BERT masked-focus Strict-Small): https://huggingface.co/BabyLM-community/babylm-baseline-10m-gpt-bert-masked-focus

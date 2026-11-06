@@ -81,7 +81,7 @@ Nota: los modelos DINO/DINOv2/DINOv3 de Meta son proyectos completamente distint
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nagoyainoue1988/dino-retrieval-final-2024
+- Modelo en Hugging Face: https://huggingface.co/Nagoyainoue1988/dino-retrieval-final-2024
 - Repositorio DINO original (Meta): https://github.com/facebookresearch/dino
 - Repositorio DINOv2 (Meta): https://github.com/facebookresearch/dinov2
 - Página de DINOv3 (Meta): https://ai.meta.com/research/dinov3/

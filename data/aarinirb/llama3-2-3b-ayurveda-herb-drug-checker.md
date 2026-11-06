@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Este modelo, desarrollado por aarinirb, es un fine-tune de Llama 3.2 3B Instruct orientado a la detección de interacciones entre hierbas ayurvédicas y fármacos. Se basa en la arquitectura transformer de Llama 3.2, con aproximadamente 3.000 millones de parámetros, y ha sido ajustado mediante la biblioteca Unsloth y el framework TRL de HuggingFace. El objetivo es proporcionar una herramienta de consulta para profesionales y pacientes que necesiten evaluar la compatibilidad de remedios ayurvédicos con medicamentos convencionales.
+Este modelo, desarrollado por aarinirb, es un fine-tune de Llama 3.2 3B Instruct orientado a la detección de interacciones entre hierbas ayurvédicas y fármacos. Se basa en la arquitectura transformer de Llama 3.2, con aproximadamente 3.000 millones de parámetros, y ha sido ajustado mediante la biblioteca Unsloth y el framework TRL de Hugging Face. El objetivo es proporcionar una herramienta de consulta para profesionales y pacientes que necesiten evaluar la compatibilidad de remedios ayurvédicos con medicamentos convencionales.
 
-La relevancia de este modelo radica en el creciente interés por la medicina integrativa y la necesidad de verificar interacciones entre suplementos botánicos y fármacos. Aunque no se han publicado evaluaciones públicas, el modelo está disponible en HuggingFace bajo licencia Apache 2.0 y presenta un checkpoint de solo 0.1 GB, lo que lo hace adecuado para entornos con recursos limitados. La información sobre el contexto de entrada y las capacidades detalladas no se especifica en la documentación disponible.
+La relevancia de este modelo radica en el creciente interés por la medicina integrativa y la necesidad de verificar interacciones entre suplementos botánicos y fármacos. Aunque no se han publicado evaluaciones públicas, el modelo está disponible en Hugging Face bajo licencia Apache 2.0 y presenta un checkpoint de solo 0.1 GB, lo que lo hace adecuado para entornos con recursos limitados. La información sobre el contexto de entrada y las capacidades detalladas no se especifica en la documentación disponible.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en el creciente interés por la medicina int
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del checkpoint unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, que a su vez es una versión cuantizada en 4 bits de Llama 3.2 3B Instruct. La arquitectura es un transformer estándar con atención por capas, sin componentes de mezcla de expertos (MoE). El entrenamiento se realizó con la biblioteca Unsloth, que optimiza el proceso de fine-tuning, junto con la librería TRL de HuggingFace. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens utilizado ni si se aplicaron técnicas como RLHF o DPO. La única innovación destacable es el uso de Unsloth para acelerar el entrenamiento, tal como se menciona en la model card.
+El modelo es un fine-tune del checkpoint unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, que a su vez es una versión cuantizada en 4 bits de Llama 3.2 3B Instruct. La arquitectura es un transformer estándar con atención por capas, sin componentes de mezcla de expertos (MoE). El entrenamiento se realizó con la biblioteca Unsloth, que optimiza el proceso de fine-tuning, junto con la librería TRL de Hugging Face. No se han publicado detalles sobre el dataset de entrenamiento, el número de tokens utilizado ni si se aplicaron técnicas como RLHF o DPO. La única innovación destacable es el uso de Unsloth para acelerar el entrenamiento, tal como se menciona en la model card.
 
 ## Capacidades
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| aarinirb/llama3.2-3b-ayurveda-herb-drug-checker | 3B | No disponible | Apache 2.0 | HuggingFace |
-| Vivekdas/VaidhLLaMA-3.2-3B-Instruct | 3B | No disponible | No disponible | HuggingFace |
-| doorm-ai/Llama-3.2-3B-genmount-ayurveda-GGUF | 3B | No disponible | No disponible | HuggingFace |
+| aarinirb/llama3.2-3b-ayurveda-herb-drug-checker | 3B | No disponible | Apache 2.0 | Hugging Face |
+| Vivekdas/VaidhLLaMA-3.2-3B-Instruct | 3B | No disponible | No disponible | Hugging Face |
+| doorm-ai/Llama-3.2-3B-genmount-ayurveda-GGUF | 3B | No disponible | No disponible | Hugging Face |
 
 Los tres son fine-tunes de Llama 3.2 3B para el dominio ayurvédico. No se dispone de datos de rendimiento comparativos. El modelo de aarinirb se distingue por su licencia Apache 2.0 y su checkpoint de 0.1 GB, mientras que el de doorm-ai está en formato GGUF, lo que sugiere que está preparado para ejecución en llama.cpp. La licencia del modelo de Vivekdas no se especifica en los resultados de la búsqueda.
 
@@ -72,7 +72,7 @@ Los tres son fine-tunes de Llama 3.2 3B para el dominio ayurvédico. No se dispo
 - Riesgo de alucinación: no hay evaluaciones publicadas. El modelo podría generar afirmaciones incorrectas sobre interacciones, por lo que no debe usarse como único recurso médico.
 - Limitaciones de contexto o idioma: el idioma principal es inglés. No se ha verificado el rendimiento en otros idiomas, incluido el hindi o el sánscrito, relevantes para la terminología ayurvédica.
 - Restricciones de licencia: aunque el modelo está publicado bajo Apache 2.0, el modelo base Llama 3.2 está sujeto a la Licencia de Comunidad de Llama 3.2, que impone restricciones adicionales de uso. Es necesario revisar ambas licencias antes de un uso comercial.
-- Caveat para producción: no se han publicado benchmarks ni validaciones clínicas. El modelo tiene cero descargas y cero likes en HuggingFace, lo que indica que no ha sido evaluado por la comunidad. No es apto para sistemas de salud reales sin una validación exhaustiva.
+- Caveat para producción: no se han publicado benchmarks ni validaciones clínicas. El modelo tiene cero descargas y cero likes en Hugging Face, lo que indica que no ha sido evaluado por la comunidad. No es apto para sistemas de salud reales sin una validación exhaustiva.
 
 ## Enlaces
 

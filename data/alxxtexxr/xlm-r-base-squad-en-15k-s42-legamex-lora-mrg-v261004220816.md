@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LegameX-LoRA-mrg-v261004220816` es un ajuste fino de XLM-RoBERTa base para respuesta extractiva de preguntas (question answering), publicado por el usuario alxxtexxr en HuggingFace. Segun la nomenclatura del identificador, se ha entrenado sobre un subconjunto de 15.000 ejemplos de SQuAD en ingles (SQuAD-en 15K) con semilla 42, mediante un adaptador LoRA denominado LegameX que posteriormente se ha fusionado con los pesos base (prefijo `mrg`, "merged"), generando un checkpoint de 277.454.594 parametros totales y 1,1 GB de repositorio en formato safetensors.
+El modelo `alxxtexxr/XLM-R-Base-squad-en-15K-s42-LegameX-LoRA-mrg-v261004220816` es un ajuste fino de XLM-RoBERTa base para respuesta extractiva de preguntas (question answering), publicado por el usuario alxxtexxr en Hugging Face. Segun la nomenclatura del identificador, se ha entrenado sobre un subconjunto de 15.000 ejemplos de SQuAD en ingles (SQuAD-en 15K) con semilla 42, mediante un adaptador LoRA denominado LegameX que posteriormente se ha fusionado con los pesos base (prefijo `mrg`, "merged"), generando un checkpoint de 277.454.594 parametros totales y 1,1 GB de repositorio en formato safetensors.
 
-Se trata de un modelo encoder-only orientado exclusivamente a extraccion de spans (inicio y fin de respuesta) sobre un contexto dado, no de un modelo generativo. Su relevancia practica es limitada: el repositorio no tiene descargas ni interacciones, la model card es la plantilla autogenerada de HuggingFace sin ningun campo cumplimentado, y no se declara licencia ni idiomas soportados. Debe considerarse un artefacto experimental de investigacion mas que un componente listo para produccion.
+Se trata de un modelo encoder-only orientado exclusivamente a extraccion de spans (inicio y fin de respuesta) sobre un contexto dado, no de un modelo generativo. Su relevancia practica es limitada: el repositorio no tiene descargas ni interacciones, la model card es la plantilla autogenerada de Hugging Face sin ningun campo cumplimentado, y no se declara licencia ni idiomas soportados. Debe considerarse un artefacto experimental de investigacion mas que un componente listo para produccion.
 
 La arquitectura subyacente, XLM-RoBERTa base, es un transformer encoder multilingue de 12 capas y 278M de parametros aproximadamente, entrenado sobre 2,5 TB de CommonCrawl en 100 idiomas, lo que le confiere capacidad multilingue potencial que este ajuste concreto no documenta ni valida.
 
@@ -27,7 +27,7 @@ La base es XLM-RoBERTa base (Conneau et al., 2019), un transformer encoder-only 
 
 Los datos de entrenamiento, segun el identificador, son 15.000 ejemplos de SQuAD en ingles con semilla 42. No se especifica el numero de epocas, hiperparametros de optimizacion, regimen de precision (fp32/fp16/bf16), composicion exacta del dataset ni si hubo etapas adicionales de RLHF o DPO (irrelevantes en un modelo extractivo). La model card no documenta ningun detalle de entrenamiento, infraestructura de computo ni objetivo de perdida.
 
-Un detalle relevante: la etiqueta `arxiv:1910.09700` del repositorio corresponde a Lacoste et al. (2019), el articulo de la calculadora de impacto de carbono, y no a un paper del modelo. Proviene de la plantilla por defecto de HuggingFace y no debe interpretarse como referencia tecnica del ajuste. El paper real de XLM-R es arXiv:1911.02116.
+Un detalle relevante: la etiqueta `arxiv:1910.09700` del repositorio corresponde a Lacoste et al. (2019), el articulo de la calculadora de impacto de carbono, y no a un paper del modelo. Proviene de la plantilla por defecto de Hugging Face y no debe interpretarse como referencia tecnica del ajuste. El paper real de XLM-R es arXiv:1911.02116.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ Los datos de los modelos comparables provienen de sus respectivas model cards pu
 
 ## Limitaciones y advertencias
 
-- Model card completamente vacia: todos los campos son la plantilla autogenerada de HuggingFace. No hay informacion verificable sobre desarrollador, financiacion, uso previsto ni evaluacion.
+- Model card completamente vacia: todos los campos son la plantilla autogenerada de Hugging Face. No hay informacion verificable sobre desarrollador, financiacion, uso previsto ni evaluacion.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. La licencia del modelo base XLM-RoBERTa es MIT, pero eso no determina la del ajuste derivado.
 - Sin adopcion ni validacion: 0 descargas y 0 likes en el momento de la consulta; no hay evidencia de que el modelo funcione correctamente fuera del entorno del autor.
 - Riesgo de alucinacion estructural: aunque el QA extractivo no genera texto nuevo, puede seleccionar spans incorrectos o parciales, especialmente si el entrenamiento se hizo sobre 15.000 ejemplos, muy por debajo del conjunto completo de SQuAD.
@@ -92,7 +92,7 @@ Los datos de los modelos comparables provienen de sus respectivas model cards pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LegameX-LoRA-mrg-v261004220816
+- Modelo en Hugging Face: https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LegameX-LoRA-mrg-v261004220816
 - Paper de XLM-RoBERTa (base del modelo): https://arxiv.org/abs/1911.02116
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, impacto de carbono): https://arxiv.org/abs/1910.09700
 - Dataset SQuAD: https://rajpurkar.github.io/SQuAD-explorer/

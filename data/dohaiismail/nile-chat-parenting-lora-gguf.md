@@ -21,7 +21,7 @@ El modelo está pensado para ejecutarse localmente con `llama.cpp` o herramienta
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en `Nile-Chat-4B`, desarrollado por MBZUAI-Paris. Según la informacion disponible, los modelos Nile-Chat se entrenaron con 8 NVIDIA A100 80 GB en paralelo usando FSDP en AWS SageMaker. El entrenamiento utilizó HuggingFace Transformers y ajuste fino de parametros eficiente con LoRA de rango 256, tanto para preentrenamiento continuo como para ajuste de instrucciones, ademas de realizar un ajuste completo para DPO. El autor de este repositorio ha aplicado un ajuste adicional no documentado y ha convertido el modelo a GGUF con Unsloth, lo que permite ejecutarlo con `llama-cli` o `llama-mtmd-cli` (aunque la etiqueta `gemma3_text` indica que se trata de un modelo de solo texto).
+El modelo se basa en `Nile-Chat-4B`, desarrollado por MBZUAI-Paris. Según la informacion disponible, los modelos Nile-Chat se entrenaron con 8 NVIDIA A100 80 GB en paralelo usando FSDP en AWS SageMaker. El entrenamiento utilizó Hugging Face Transformers y ajuste fino de parametros eficiente con LoRA de rango 256, tanto para preentrenamiento continuo como para ajuste de instrucciones, ademas de realizar un ajuste completo para DPO. El autor de este repositorio ha aplicado un ajuste adicional no documentado y ha convertido el modelo a GGUF con Unsloth, lo que permite ejecutarlo con `llama-cli` o `llama-mtmd-cli` (aunque la etiqueta `gemma3_text` indica que se trata de un modelo de solo texto).
 
 No se ha publicado informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni los detalles del ajuste adicional. Tampoco se especifica si se empleo RLHF, DPO o alguna otra tecnica en este fine-tuning concreto.
 

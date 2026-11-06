@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario timof-eysmi7 en HuggingFace, no contiene un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre Neural Architecture Search (NAS). Según la model card, el artefacto principal es un archivo `notes.md` que documenta el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base emparejadas, benchmarks públicos relevantes, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor declara explícitamente que no se incluyen resultados experimentales, ablaciones completas, código liberado ni un checkpoint entrenado.
+Este repositorio, publicado por el usuario timof-eysmi7 en Hugging Face, no contiene un modelo de lenguaje entrenado, sino un conjunto estructurado de notas de investigación sobre Neural Architecture Search (NAS). Según la model card, el artefacto principal es un archivo `notes.md` que documenta el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base emparejadas, benchmarks públicos relevantes, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor declara explícitamente que no se incluyen resultados experimentales, ablaciones completas, código liberado ni un checkpoint entrenado.
 
 El repositorio tiene un tamaño de 0.0 GB y un único tensor de 49.600 parámetros en formato safetensors, aunque este dato no corresponde a un modelo funcional, sino probablemente a un artefacto residual o a un archivo de prueba. La licencia es CC-BY-4.0, lo que permite su uso con atribución, pero el propio autor advierte que debe revisarse la licencia de los datos externos si se utilizan. Su relevancia es limitada para desarrolladores que buscan un modelo desplegable; su interés es exclusivamente académico o metodológico, como punto de partida para verificar hipótesis sobre búsqueda de arquitecturas neuronales.
 
@@ -65,5 +65,5 @@ No disponible. No existe una categoria de modelos comparables porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/timof-eysmi7/toy-neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/timof-eysmi7/toy-neural-architecture-search
 - No se han encontrado otros enlaces oficiales (papers, blogs, demos) asociados a este repositorio concreto.

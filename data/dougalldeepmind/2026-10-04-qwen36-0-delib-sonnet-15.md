@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `dougalldeepmind/2026-10-04-qwen36-0-delib-sonnet-15` no es un modelo de lenguaje completo, sino un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario `dougalldeepmind`. Segun la model card, se trata del resultado de la receta `sft` sobre la mezcla de datos `delib-sonnet-15`, con semilla 0, y esta pensado para aplicarse sobre un modelo base declarado como `Qwen/Qwen3.6-27B` en la revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`.
+El modelo identificado como `dougalldeepmind/2026-10-04-qwen36-0-delib-sonnet-15` no es un modelo de lenguaje completo, sino un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario `dougalldeepmind`. Segun la model card, se trata del resultado de la receta `sft` sobre la mezcla de datos `delib-sonnet-15`, con semilla 0, y esta pensado para aplicarse sobre un modelo base declarado como `Qwen/Qwen3.6-27B` en la revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`.
 
 El artefacto ocupa 1,3 GB en el repositorio, un tamano coherente con un adaptador PEFT de rango 64 sobre un modelo de aproximadamente 27 000 millones de parametros, junto con el tokenizador y los ficheros de configuracion de entrenamiento. La model card incluye un `train_config.yaml` resuelto y un `training_meta.json` con trazabilidad completa: receta, semilla, epochs, learning rate, esquema de batching dinamico y agregacion de perdida.
 
@@ -63,14 +63,14 @@ La model card no incluye tablas de MMLU, HumanEval, GSM8K ni ninguna otra metric
 - El adaptador en si ocupa 1,3 GB en disco (safetensors) y su huella en memoria es marginal frente a la del base.
 - GPU recomendadas para el base en precision completa: A100 80 GB, H100 80 GB o multiples GPU con tensor parallelism. Para cuantizacion de 4 bits, una RTX 4090 (24 GB) o RTX 3090 (24 GB) puede ser suficiente para el base, con margen limitado para contexto largo.
 - Cabe en GPU de consumo: probablemente si, unicamente con el base cuantizado a 4 bits y contextos moderados; no hay confirmacion del autor.
-- Opciones de despliegue: al ser un adaptador PEFT, requiere un runtime con soporte de LoRA, como vLLM, HuggingFace TGI o `transformers` con `peft`. No se publican pesos GGUF, por lo que llama.cpp y Ollama requeririan una conversion manual del adaptador y del base.
+- Opciones de despliegue: al ser un adaptador PEFT, requiere un runtime con soporte de LoRA, como vLLM, Hugging Face TGI o `transformers` con `peft`. No se publican pesos GGUF, por lo que llama.cpp y Ollama requeririan una conversion manual del adaptador y del base.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dougalldeepmind/2026-10-04-qwen36-0-delib-sonnet-15` | Adaptador LoRA SFT | No disponible (base declarado 27B) | 8192 en entrenamiento | No disponible | HuggingFace, 0 descargas |
+| `dougalldeepmind/2026-10-04-qwen36-0-delib-sonnet-15` | Adaptador LoRA SFT | No disponible (base declarado 27B) | 8192 en entrenamiento | No disponible | Hugging Face, 0 descargas |
 | `Qwen/Qwen3.6-27B` (base declarado) | Modelo completo | 27B (declarado) | No disponible | No disponible en la informacion consultada | Referenciado en la model card |
 | Otros adaptadores LoRA SFT comparables | - | - | - | - | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dougalldeepmind/2026-10-04-qwen36-0-delib-sonnet-15
+- Modelo en Hugging Face: https://huggingface.co/dougalldeepmind/2026-10-04-qwen36-0-delib-sonnet-15
 - Dataset de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-10-04-delib-sonnet-15-mix
 - Repositorio de origen del pipeline: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git (commit `c7b1abe0dc7dfc679815912c5a20c540c582ca41`)
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)

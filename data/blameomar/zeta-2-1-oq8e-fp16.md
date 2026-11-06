@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zeta-2.1-oQ8e-fp16 es un checkpoint cuantizado publicado por el usuario BlameOmar en HuggingFace. No es un modelo entrenado desde cero, sino una requantización de un modelo base cuya identidad no se declara en la model card: el repositorio solo indica que los pesos se han reprocesado con oMLX v0.7.1 mediante el método oQ de cuantización de precisión mixta. El tag `llama` sugiere una arquitectura de la familia Llama, pero el autor no especifica de qué modelo concreto deriva.
+zeta-2.1-oQ8e-fp16 es un checkpoint cuantizado publicado por el usuario BlameOmar en Hugging Face. No es un modelo entrenado desde cero, sino una requantización de un modelo base cuya identidad no se declara en la model card: el repositorio solo indica que los pesos se han reprocesado con oMLX v0.7.1 mediante el método oQ de cuantización de precisión mixta. El tag `llama` sugiere una arquitectura de la familia Llama, pero el autor no especifica de qué modelo concreto deriva.
 
 El checkpoint contiene 8.250.462.208 parámetros (8,25 B) almacenados con una media efectiva de 8,500 bits por peso. El 99,997 % de los pesos usa cuantización afín de 8 bits con group size 64 y el 0,003 % restante se mantiene en FP16. El resultado ocupa 8.164 GiB (8,766 GB), lo que reduce el peso en disco aproximadamente a la mitad frente a los ~16,5 GB que requeriría el mismo modelo en FP16.
 
@@ -72,7 +72,7 @@ No se han proporcionado modelos comparables en la información disponible. La ta
 
 | Modelo | Parámetros | Contexto | Precisión de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeta-2.1-oQ8e-fp16 | 8,25 B | No disponible | 8,5 bits/peso efectivos (oQ, MLX) | No disponible | HuggingFace, MLX, 0 descargas |
+| zeta-2.1-oQ8e-fp16 | 8,25 B | No disponible | 8,5 bits/peso efectivos (oQ, MLX) | No disponible | Hugging Face, MLX, 0 descargas |
 | Llama 3.1 8B (referencia externa) | 8,03 B | 128.000 tokens | FP16 / BF16 (cuantizaciones comunitarias aparte) | Llama 3.1 Community License | Muy extendida, múltiples formatos |
 | Otros checkpoints MLX de ~8 B | No disponible | No disponible | Variables (4-8 bits) | Depende del modelo base | Comunidad `mlx-community` |
 
@@ -94,7 +94,7 @@ La comparación de rendimiento no es posible: no hay benchmarks publicados de es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BlameOmar/zeta-2.1-oQ8e-fp16
+- Repositorio en Hugging Face: https://huggingface.co/BlameOmar/zeta-2.1-oQ8e-fp16
 - Repositorio de oMLX / oQ (método de cuantización citado por el autor): https://github.com/jundot/omlx
 - Paper, blog o demo del modelo: no disponible
 - Resultados de benchmarks: no disponible

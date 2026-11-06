@@ -91,6 +91,6 @@ GRM-3.2-Sky se posiciona como un modelo open source competitivo frente a alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrionLLM/GRM-3.2-Sky
+- Modelo en Hugging Face: https://huggingface.co/OrionLLM/GRM-3.2-Sky
 - Colección de modelos GRM: https://huggingface.co/collections/OrionLLM/grm-32
 - Demo de chat (enlace proporcionado en la model card): https://grape.skinnertopia.com/chat

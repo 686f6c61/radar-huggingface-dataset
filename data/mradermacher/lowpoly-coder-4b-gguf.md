@@ -66,8 +66,8 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lowpoly-coder-4b (base) | 333.514.240 (safetensors) | no disponible | apache-2.0 | HuggingFace |
-| lowpoly-coder-4b-GGUF (este) | 333.514.240 | no disponible | apache-2.0 | HuggingFace (GGUF) |
+| lowpoly-coder-4b (base) | 333.514.240 (safetensors) | no disponible | apache-2.0 | Hugging Face |
+| lowpoly-coder-4b-GGUF (este) | 333.514.240 | no disponible | apache-2.0 | Hugging Face (GGUF) |
 | Alternativas especializadas en Three.js | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-ultimate-ahegao-lora es un adaptador LoRA para generacion y edicion de imagenes, publicado por RunningHubAI en HuggingFace a partir de un modelo original alojado en RunningHub y, segun la propia model card, derivado de otro publicado en Civitai. No es un modelo de lenguaje: se trata de un ajuste de bajo rango que se carga sobre un modelo base de difusion identificado en la ficha como "krea2", y cuyo unico archivo de pesos (`realAhegao_v1.safetensors`, 55 MiB) modifica el comportamiento del base para reproducir una expresion facial concreta, activada mediante la palabra clave "ahegao".
+rh-ultimate-ahegao-lora es un adaptador LoRA para generacion y edicion de imagenes, publicado por RunningHubAI en Hugging Face a partir de un modelo original alojado en RunningHub y, segun la propia model card, derivado de otro publicado en Civitai. No es un modelo de lenguaje: se trata de un ajuste de bajo rango que se carga sobre un modelo base de difusion identificado en la ficha como "krea2", y cuyo unico archivo de pesos (`realAhegao_v1.safetensors`, 55 MiB) modifica el comportamiento del base para reproducir una expresion facial concreta, activada mediante la palabra clave "ahegao".
 
 El problema que resuelve es acotado y practico: conseguir una expresion facial especifica y consistente sin depender de prompts largos ni de descripciones textuales complejas. Su integracion esta pensada para ComfyUI, RunningHub y Hugging Face, y el pipeline declarado es image-text-to-image, por lo que puede usarse tanto en generacion desde texto como en edicion sobre una imagen de entrada.
 

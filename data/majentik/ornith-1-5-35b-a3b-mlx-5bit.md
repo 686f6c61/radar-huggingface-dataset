@@ -78,8 +78,8 @@ Segun la informacion de la busqueda web, Ornith-1.5-35B-A3B supera a Qwen 3.6-35
 
 ## Enlaces
 
-- Repo HuggingFace de esta cuantizacion: https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-5bit
-- Modelo base en HuggingFace: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
+- Repo Hugging Face de esta cuantizacion: https://huggingface.co/majentik/Ornith-1.5-35B-A3B-MLX-5bit
+- Modelo base en Hugging Face: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante MLX 6-bit del mismo modelo: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit
 - Pagina de benchmarks del modelo base: https://benchlm.ai/models/ornith-1-5-35b-a3b
 - Articulo de despliegue local del modelo base: https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run

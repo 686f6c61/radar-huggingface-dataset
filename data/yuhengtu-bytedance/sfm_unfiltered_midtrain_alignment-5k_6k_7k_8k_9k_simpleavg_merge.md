@@ -67,7 +67,7 @@ No se dispone de información suficiente para comparar con otros modelos. El aut
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge)
 - [Página de despliegue en FriendliAI](https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-6k_7k_8k_merge) (variante similar)
 - [Artículo sobre el método Linear](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WindowsPowerCleaner v2.0 es un repositorio publicado en HuggingFace por el usuario `swordenamine` que **no contiene un modelo de inteligencia artificial**, sino el codigo fuente de una utilidad de escritorio para Windows escrita en Python. Su funcion es limpiar archivos temporales, caches de navegadores, Prefetch, restos de actualizaciones del sistema, cache DNS, miniaturas y la papelera de reciclaje, ademas de localizar archivos de gran tamano en disco. El repositorio incluye una interfaz grafica (`main.py`), la logica de limpieza (`cleaner.py`), un escaner de archivos (`scanner.py`), utilidades (`utils.py`), un script de compilacion a ejecutable (`build.bat`) y un README redactado en arabe.
+WindowsPowerCleaner v2.0 es un repositorio publicado en Hugging Face por el usuario `swordenamine` que **no contiene un modelo de inteligencia artificial**, sino el codigo fuente de una utilidad de escritorio para Windows escrita en Python. Su funcion es limpiar archivos temporales, caches de navegadores, Prefetch, restos de actualizaciones del sistema, cache DNS, miniaturas y la papelera de reciclaje, ademas de localizar archivos de gran tamano en disco. El repositorio incluye una interfaz grafica (`main.py`), la logica de limpieza (`cleaner.py`), un escaner de archivos (`scanner.py`), utilidades (`utils.py`), un script de compilacion a ejecutable (`build.bat`) y un README redactado en arabe.
 
 La relevancia de esta ficha es principalmente documental y de advertencia: el artefacto aparece listado en el Hub con la etiqueta `region:us`, cero descargas y cero likes, sin pipeline declarado, sin licencia en los metadatos y sin idiomas declarados. No existe informacion sobre arquitectura, parametros, contexto, cuantizacion ni pesos, porque no es un modelo entrenado. Cualquier evaluacion de capacidades linguisticas, benchmarks o requisitos de GPU carece de sentido en este caso.
 
@@ -73,7 +73,7 @@ No hay modelos comparables en sentido estricto, porque el artefacto no es un mod
 
 | Herramienta | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| WindowsPowerCleaner | Script Python con GUI | no aplica | no aplica | no disponible | no disponible en metadatos | Repositorio HuggingFace, 0 descargas |
+| WindowsPowerCleaner | Script Python con GUI | no aplica | no aplica | no disponible | no disponible en metadatos | Repositorio Hugging Face, 0 descargas |
 | Liberador de espacio en disco de Windows | Utilidad integrada en el SO | no aplica | no aplica | no disponible | Propietaria, incluida con Windows | Preinstalada |
 | CCleaner | Aplicacion comercial de limpieza | no aplica | no aplica | no disponible | Propietaria (version gratuita y de pago) | Distribucion del fabricante |
 | BleachBit | Utilidad de limpieza de codigo abierto | no aplica | no aplica | no disponible | Codigo abierto (GPLv3, segun el proyecto) | Repositorios del proyecto y gestores de paquetes |
@@ -95,5 +95,5 @@ Datos de rendimiento, consumo de recursos y cobertura de rutas: no disponibles p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/WindowsPowerCleaner
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/WindowsPowerCleaner
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales, demos ni documentacion complementaria de este proyecto.

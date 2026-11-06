@@ -97,8 +97,8 @@ En HakemBench v1.0, el modelo ocupa el séptimo puesto de dieciséis filas del t
 
 | Modelo | Parametros | Contexto | Composite en HakemBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ufakzeka-karar | 182,5 M | 4.096 tokens | 0,660 (0,678 sin las tres pistas marcadas) | Apache-2.0 | Pesos abiertos en HuggingFace |
-| ufakzeka-1-base | 151 M (182 M con embeddings) | 4.096 tokens | No evaluado como modelo de decisión | Apache-2.0 | Pesos abiertos en HuggingFace |
+| ufakzeka-karar | 182,5 M | 4.096 tokens | 0,660 (0,678 sin las tres pistas marcadas) | Apache-2.0 | Pesos abiertos en Hugging Face |
+| ufakzeka-1-base | 151 M (182 M con embeddings) | 4.096 tokens | No evaluado como modelo de decisión | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Gemini 3.8 Flash | no disponible | no disponible | Superior a ufakzeka-karar (valor no disponible) | Propietaria | API alojada |
 | GPT-5.6 Sol | no disponible | no disponible | Superior a ufakzeka-karar (valor no disponible) | Propietaria | API alojada |
 | GLM 5.3 | no disponible | no disponible | Superior a ufakzeka-karar (valor no disponible) | no disponible | API alojada |
@@ -121,7 +121,7 @@ En HakemBench v1.0, el modelo ocupa el séptimo puesto de dieciséis filas del t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ufakai/ufakzeka-karar
+- Modelo en Hugging Face: https://huggingface.co/ufakai/ufakzeka-karar
 - Modelo base: https://huggingface.co/ufakai/ufakzeka-1-base
 - Modelo de chat de la familia: https://huggingface.co/ufakai/ufakzeka-1
 - Benchmark HakemBench: https://huggingface.co/datasets/ufakai/HakemBench

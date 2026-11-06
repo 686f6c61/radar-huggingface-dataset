@@ -63,7 +63,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash | 320B | 18B | Hasta 1M | MIT | HuggingFace, API Z.ai |
+| GLM-5.3-Flash | 320B | 18B | Hasta 1M | MIT | Hugging Face, API Z.ai |
 | GLM-5.2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Claude Opus 4.8 | no disponible | no disponible | no disponible | propietaria | API |
 
@@ -82,7 +82,7 @@ No se dispone de datos suficientes en la información proporcionada para compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arbonquants/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/arbonquants/GLM-5.3-Flash
 - Blog: https://z.ai/blog/glm-5.3-flash
 - Technical report (arXiv): https://arxiv.org/abs/2602.15763
 - API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

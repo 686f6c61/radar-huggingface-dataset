@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PersonaDrive | 1.36 B (24 M entrenados) | No disponible (K = 2 puntos de contexto) | VLA con recuperacion en contexto y estilo personalizable | Apache 2.0 | HuggingFace y GitHub |
-| SimLingo (RenzKa/simlingo) | No disponible | No disponible | VLA de conduccion base, sin recuperacion en contexto | No disponible | HuggingFace |
-| InternVL2-1B | 1 B | No disponible | VLM generalista, backbone de PersonaDrive | No disponible | HuggingFace |
+| PersonaDrive | 1.36 B (24 M entrenados) | No disponible (K = 2 puntos de contexto) | VLA con recuperacion en contexto y estilo personalizable | Apache 2.0 | Hugging Face y GitHub |
+| SimLingo (RenzKa/simlingo) | No disponible | No disponible | VLA de conduccion base, sin recuperacion en contexto | No disponible | Hugging Face |
+| InternVL2-1B | 1 B | No disponible | VLM generalista, backbone de PersonaDrive | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada. La comparativa se limita a la relacion de dependencia (PersonaDrive parte de SimLingo, que a su vez se construye sobre InternVL2-1B) y a la licencia y disponibilidad conocidas.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PervasiveAutonomyLab/PersonaDrive
+- Hugging Face: https://huggingface.co/PervasiveAutonomyLab/PersonaDrive
 - Pagina del proyecto: https://pervasiveautonomylab.github.io/personadrive-landpage/
 - Paper (arXiv 2606.12616): https://arxiv.org/abs/2606.12616
 - Codigo: https://github.com/PervasiveAutonomyLab/PersonaDrive

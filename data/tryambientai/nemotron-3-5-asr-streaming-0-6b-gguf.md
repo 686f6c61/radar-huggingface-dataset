@@ -84,9 +84,9 @@ Rendimiento en tiempo real (RTF, mayor es mejor):
 
 | Modelo | Parametros | Contexto / streaming | WER LibriSpeech test-clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron 3.5 ASR streaming 0.6B (GGUF) | 0,64B | Streaming cache-aware + offline | 3,04 % (F32) | OpenMDW-1.1 | HuggingFace |
-| Whisper large-v3 | no disponible | Offline | no disponible en esta ficha | MIT | HuggingFace |
-| Parakeet TDT 0.6B (NVIDIA) | ~0,6B | Offline | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| Nemotron 3.5 ASR streaming 0.6B (GGUF) | 0,64B | Streaming cache-aware + offline | 3,04 % (F32) | OpenMDW-1.1 | Hugging Face |
+| Whisper large-v3 | no disponible | Offline | no disponible en esta ficha | MIT | Hugging Face |
+| Parakeet TDT 0.6B (NVIDIA) | ~0,6B | Offline | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 No se dispone en la información proporcionada de datos de benchmarks de los modelos comparables para establecer una comparación cuantitativa rigurosa. Las cifras de WER del modelo de esta ficha son las reportadas por el autor de la conversión GGUF.
 
@@ -104,8 +104,8 @@ No se dispone en la información proporcionada de datos de benchmarks de los mod
 
 ## Enlaces
 
-- HuggingFace (esta conversión GGUF): https://huggingface.co/tryambientai/nemotron-3.5-asr-streaming-0.6b-gguf
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+- Hugging Face (esta conversión GGUF): https://huggingface.co/tryambientai/nemotron-3.5-asr-streaming-0.6b-gguf
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Commit upstream fijado: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b/commit/24b151a
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Commit de validación transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/tree/909e94e

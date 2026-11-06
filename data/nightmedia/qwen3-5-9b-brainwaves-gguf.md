@@ -90,7 +90,7 @@ La comparativa se basa en información pública general; no se dispone de benchm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-GGUF
 - Versión MLX (qx86-hi): https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves-qx86-hi-mlx
 - Página de Qwen3.5 en Ollama: https://ollama.com/library/qwen3.5:9b
 - Guía de despliegue GGUF en AMD/Nvidia: https://tntitservices.com/2026/07/01/full-deployment-qwen3-5-9b-gguf-on-amd-nvidia-gpu-with-native-fp4-no-code-guide/

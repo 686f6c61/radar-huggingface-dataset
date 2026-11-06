@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento ni de tasas de aceptacion de ninguna de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drowzeys/keys-Qwen3.8-27B-DSpark-vLLM-YaRN-1M-Context
+- Repositorio en Hugging Face: https://huggingface.co/drowzeys/keys-Qwen3.8-27B-DSpark-vLLM-YaRN-1M-Context
 - Fork previo del que deriva: https://huggingface.co/Doopeworld/Qwen3.8-27B-DSpark-vLLM
 - Modelo base (pesos originales y metodo DSpark): https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark
 - Referencia citada para el patron de configuracion YaRN-1M: `dflash2_config_yarn_1m.json` (mencionado en el README, sin URL directa en la informacion proporcionada)

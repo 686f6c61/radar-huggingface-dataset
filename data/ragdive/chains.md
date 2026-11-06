@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RagDive/Chains` es un repositorio publicado en HuggingFace por el usuario RagDive, con fecha de creación el 25 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información pública sobre arquitectura, parámetros, licencia, idiomas o pipeline de uso. Las descargas son cero y solo cuenta con un "like", lo que sugiere que se trata de un proyecto incipiente o de una publicación sin documentación asociada.
+El modelo `RagDive/Chains` es un repositorio publicado en Hugging Face por el usuario RagDive, con fecha de creación el 25 de agosto de 2026. En el momento de la consulta, el repositorio no contiene información pública sobre arquitectura, parámetros, licencia, idiomas o pipeline de uso. Las descargas son cero y solo cuenta con un "like", lo que sugiere que se trata de un proyecto incipiente o de una publicación sin documentación asociada.
 
 A pesar de su nombre, que podría sugerir una relación con cadenas de procesamiento (chains) en el contexto de sistemas RAG (Retrieval-Augmented Generation), no existe evidencia en la información proporcionada que permita confirmar su naturaleza, capacidades o propósito. Los resultados de búsqueda web devueltos se refieren a herramientas y tutoriales genéricos sobre RAG (RAGFlow, LangChain, LangGraph), pero no aportan datos específicos sobre este modelo.
 
@@ -56,6 +56,6 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RagDive/Chains
+- Repositorio en Hugging Face: https://huggingface.co/RagDive/Chains
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) asociados a este modelo.

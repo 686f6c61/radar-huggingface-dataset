@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`filesystem_huggingface_terminal_12723_b16d42_model_04` es un repositorio publicado en HuggingFace por el usuario TianfuXinqu. La model card asociada lo identifica internamente como "MDL-004", con propietario Noah Kim, adscrito al departamento de Marketing y clasificado con nivel de riesgo bajo. La documentacion se marca como completa y con una cobertura de tests del 91%, auditada por ultima vez el 2026-06-02.
+`filesystem_huggingface_terminal_12723_b16d42_model_04` es un repositorio publicado en Hugging Face por el usuario TianfuXinqu. La model card asociada lo identifica internamente como "MDL-004", con propietario Noah Kim, adscrito al departamento de Marketing y clasificado con nivel de riesgo bajo. La documentacion se marca como completa y con una cobertura de tests del 91%, auditada por ultima vez el 2026-06-02.
 
 El contenido disponible no describe ninguna arquitectura de red neuronal, tamano de parametros, corpus de entrenamiento ni resultados de evaluacion. La model card se limita a metadatos de gestion interna (identificador, propietario, departamento, nivel de riesgo, estado de documentacion y cobertura de pruebas), por lo que no es posible determinar si se trata de un modelo de lenguaje, un sistema de recomendacion operativo o un artefacto auxiliar.
 
@@ -40,7 +40,7 @@ Los unicos datos tecnicos indirectos son los metadatos de gobernanza del modelo:
 
 - Sistemas de recomendacion: la model card titula el artefacto como "Recommendation System", por lo que el unico caso de uso plausible documentado seria la generacion de recomendaciones dentro de un pipeline de marketing, dado el departamento asignado al propietario. No obstante, no se especifica el tipo de recomendacion (productos, contenido, usuarios) ni las interfaces de entrada y salida.
 - Evaluacion interna de gobernanza: los metadatos de riesgo, auditoria y cobertura de tests permiten usar el repositorio como referencia en procesos de catalogacion de modelos dentro de una organizacion.
-- Pruebas de integracion de HuggingFace Hub: el patron del identificador (`filesystem_huggingface_terminal_...`) y las marcas temporales sugieren un artefacto generado de forma automatizada, util para validar flujos de publicacion y descarga en el Hub.
+- Pruebas de integracion de Hugging Face Hub: el patron del identificador (`filesystem_huggingface_terminal_...`) y las marcas temporales sugieren un artefacto generado de forma automatizada, util para validar flujos de publicacion y descarga en el Hub.
 - Resto de casos de uso practicos: no disponibles, al no conocerse la naturaleza funcional del modelo ni sus interfaces.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea concreta d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_04
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_04
 - Paper, blog, repositorio de codigo o demo: no disponible.

@@ -65,7 +65,7 @@ No se dispone de benchmarks que permitan comparar el rendimiento entre estos mod
 - El modelo está publicado con cero descargas y cero valoraciones en el momento de la consulta, lo que indica que no ha sido validado por la comunidad. Se recomienda evaluar su calidad antes de su uso.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mradermacher/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF
+- Hugging Face: https://huggingface.co/mradermacher/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF
 - Modelo base (safetensors): https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct
 - Versión GGUF alternativa del modelo base: https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF
 - Modelo general MiniCPM5-2B: https://huggingface.co/mradermacher/MiniCPM5-2B-GGUF

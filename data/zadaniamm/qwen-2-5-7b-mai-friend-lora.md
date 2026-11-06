@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zadaniamm/qwen-2.5-7b-mai-friend-lora | ~7B (adaptador LoRA) | 32.768 tokens (base) | Adaptador LoRA conversacional en indonesio | MIT | HuggingFace (repositorio propio) |
-| Qwen/Qwen2.5-7B-Instruct | ~7B | 32.768 tokens (131.072 con YaRN) | Modelo instructivo completo | Apache 2.0 (segun el modelo base) | HuggingFace |
-| cgxjdzz/Qwen-2.5-7B-Instruct-novel-lora | ~7B (adaptador LoRA) | 32.768 tokens (base) | Adaptador LoRA orientado a novelas | no disponible | HuggingFace |
-| zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16 | ~7B | 32.768 tokens (base) | Adaptador fusionado en bf16 | MIT | HuggingFace |
+| zadaniamm/qwen-2.5-7b-mai-friend-lora | ~7B (adaptador LoRA) | 32.768 tokens (base) | Adaptador LoRA conversacional en indonesio | MIT | Hugging Face (repositorio propio) |
+| Qwen/Qwen2.5-7B-Instruct | ~7B | 32.768 tokens (131.072 con YaRN) | Modelo instructivo completo | Apache 2.0 (segun el modelo base) | Hugging Face |
+| cgxjdzz/Qwen-2.5-7B-Instruct-novel-lora | ~7B (adaptador LoRA) | 32.768 tokens (base) | Adaptador LoRA orientado a novelas | no disponible | Hugging Face |
+| zadaniamm/qwen-2.5-7b-mai-friend-merged-bf16 | ~7B | 32.768 tokens (base) | Adaptador fusionado en bf16 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 

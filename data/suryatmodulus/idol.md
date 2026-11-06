@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Idol es un modelo de generación 3D a partir de una única imagen, desarrollado por Sperid Labs (publicado en HuggingFace bajo el identificador `suryatmodulus/idol`). Su tarea es convertir una fotografía o un render de un objeto en una representación de *3D Gaussian splatting* (3DGS) estándar en formato `.ply`, incluyendo la geometría de las caras del objeto que la imagen de entrada nunca mostró. El modelo infiere la forma completa del objeto a partir de una sola vista, lo que lo sitúa en la categoría de modelos image-to-3D generativos.
+Idol es un modelo de generación 3D a partir de una única imagen, desarrollado por Sperid Labs (publicado en Hugging Face bajo el identificador `suryatmodulus/idol`). Su tarea es convertir una fotografía o un render de un objeto en una representación de *3D Gaussian splatting* (3DGS) estándar en formato `.ply`, incluyendo la geometría de las caras del objeto que la imagen de entrada nunca mostró. El modelo infiere la forma completa del objeto a partir de una sola vista, lo que lo sitúa en la categoría de modelos image-to-3D generativos.
 
 La arquitectura combina un transformer de difusión (DiT) como denoiser, un decoder octree y un decoder de gaussianas, apoyados en encoders de imagen preentrenados (DINOv3 ViT-H+/16 y el VAE de FLUX.2) y un módulo de eliminación de fondo (BiRefNet). El conjunto suma aproximadamente 1.800 millones de parámetros, de los cuales el denoiser DiT aporta 370,6 M. Está diseñado para ejecutarse en GPU de consumo, con un pico de 7,2 GB de VRAM y tiempos de inferencia por debajo de los 2 segundos en hardware adecuado.
 
-Su relevancia actual reside en la combinación de calidad generativa, velocidad y requisitos de hardware moderados: genera hasta 1.048.576 gaussianas con un pipeline que cabe en tarjetas consumer, algo poco habitual en modelos image-to-3D de esta categoría. La licencia Apache 2.0 facilita su integración en productos comerciales, si bien depende de encoders con acceso restringido (gated) en HuggingFace.
+Su relevancia actual reside en la combinación de calidad generativa, velocidad y requisitos de hardware moderados: genera hasta 1.048.576 gaussianas con un pipeline que cabe en tarjetas consumer, algo poco habitual en modelos image-to-3D de esta categoría. La licencia Apache 2.0 facilita su integración en productos comerciales, si bien depende de encoders con acceso restringido (gated) en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ Datos de rendimiento operativo si constan: pico de 7,2 GB de VRAM, ejecucion por
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Idol | ~1,80 B | no aplica (imagen) | no disponible (tabla truncada); <2 s y 7,2 GB VRAM | Apache 2.0 | HuggingFace, SDK y demo |
+| Idol | ~1,80 B | no aplica (imagen) | no disponible (tabla truncada); <2 s y 7,2 GB VRAM | Apache 2.0 | Hugging Face, SDK y demo |
 | TripoSplat | no disponible | no aplica | comparado en la model card, cifras no disponibles | no disponible | no disponible |
 | TRELLIS | no disponible | no aplica | comparado en la model card, cifras no disponibles | no disponible | no disponible |
 | LGM | no disponible | no aplica | comparado en la model card, cifras no disponibles | no disponible | no disponible |
@@ -81,7 +81,7 @@ La model card situa a Idol frente a TripoSplat, TRELLIS y LGM, pero la informaci
 - La tabla de benchmarks de la model card esta truncada en la informacion disponible, por lo que no se pueden verificar las afirmaciones comparativas del autor.
 - Al generar geometria de caras no observadas, el modelo puede inventar detalles plausibles pero incorrectos; no es una reconstruccion fiel de la realidad.
 - La calidad depende del encuadre y del tipo de imagen: es necesario elegir correctamente entre modo `synthetic` y `real` para evitar recortes inadecuados.
-- Depende de dos modelos *gated* en HuggingFace (DINOv3 y el VAE de FLUX.2); sin aceptar sus terminos y autenticarse, el pipeline no funciona.
+- Depende de dos modelos *gated* en Hugging Face (DINOv3 y el VAE de FLUX.2); sin aceptar sus terminos y autenticarse, el pipeline no funciona.
 - No es un modelo linguistico: no soporta texto, tool calling, agentes ni razonamiento multi-paso; cualquier caso de uso debe ser de image-to-3D.
 - Licencia Apache 2.0 sobre los pesos del modelo, pero los encoders de terceros tienen sus propias condiciones de uso que deben respetarse por separado.
 - No se documentan sesgos, tasas de alucinacion ni evaluaciones de robustez fuera de la comparativa mencionada.
@@ -90,9 +90,9 @@ La model card situa a Idol frente a TripoSplat, TRELLIS y LGM, pero la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/suryatmodulus/idol
+- Modelo en Hugging Face: https://huggingface.co/suryatmodulus/idol
 - Pagina del proyecto: https://speridlabs.com/research/idol
 - Codigo (SDK): https://github.com/speridlabs/idol-sdk
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/speridlabs/idol
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/speridlabs/idol
 - Encoder DINOv3 (gated): https://huggingface.co/facebook/dinov3-vith16plus-pretrain-lvd1689m
 - VAE de FLUX.2 (gated): https://huggingface.co/black-forest-labs/FLUX.2-dev

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (PEFT) denominado `Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50`, publicado por el usuario `nmuendler`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptación que se cargan sobre el modelo base `yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5`, el cual es a su vez otro adaptador LoRA. El repositorio ocupa 0,6 GB y está etiquetado con `library_name: peft`, `pipeline_tag: text-generation` y `region: us`.
 
-La nomenclatura del identificador sugiere un experimento de destilación on-policy (run1) sobre datos o tareas relacionadas con Rust, con rango LoRA 32 (`r32`), tasa de aprendizaje 4e-4 (`lr4e4`) y guardado en el paso 50 de entrenamiento (`step50`). Esta interpretación procede del nombre del repositorio, no de documentación del autor: la model card está vacía y consiste en la plantilla genérica de HuggingFace sin rellenar, por lo que no hay confirmación de ninguno de estos extremos.
+La nomenclatura del identificador sugiere un experimento de destilación on-policy (run1) sobre datos o tareas relacionadas con Rust, con rango LoRA 32 (`r32`), tasa de aprendizaje 4e-4 (`lr4e4`) y guardado en el paso 50 de entrenamiento (`step50`). Esta interpretación procede del nombre del repositorio, no de documentación del autor: la model card está vacía y consiste en la plantilla genérica de Hugging Face sin rellenar, por lo que no hay confirmación de ninguno de estos extremos.
 
 Su relevancia es, por tanto, limitada y de carácter experimental: cero descargas y cero "likes" en el momento de la consulta, sin licencia declarada y sin idiomas especificados. Es un artefacto útil para quien quiera reproducir o inspeccionar una receta concreta de ajuste fino (LoRA r32, lr 4e-4, paso 50) sobre la familia Apriel, pero no un modelo listo para producción ni evaluado de forma publicada.
 
@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento, licencia ni contexto para establecer una 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5 | Adaptador LoRA (PEFT), modelo base | no disponible | no disponible | no disponible | HuggingFace |
+| nmuendler/Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50 | Adaptador LoRA (PEFT) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5 | Adaptador LoRA (PEFT), modelo base | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoria (otros adaptadores LoRA para generacion de codigo) | Adaptador LoRA | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento, licencia ni contexto para establecer una 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50
 - Modelo base declarado: https://huggingface.co/yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5
 - Referencia citada en los metadatos (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning enlazada en la plantilla de model card: https://mlco2.github.io/impact

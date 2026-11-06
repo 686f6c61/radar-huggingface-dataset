@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JoaoZaokk/whisper-podlodka-turbo-ggml | no disponible | Ventana de audio de 30 s | ru (declarado) | Apache 2.0 | GGML/GGUF | HuggingFace, 0 descargas |
-| bond005/whisper-podlodka-turbo (modelo base) | no disponible | Ventana de audio de 30 s | ru | Apache 2.0 | Safetensors (checkpoint original) | HuggingFace |
+| JoaoZaokk/whisper-podlodka-turbo-ggml | no disponible | Ventana de audio de 30 s | ru (declarado) | Apache 2.0 | GGML/GGUF | Hugging Face, 0 descargas |
+| bond005/whisper-podlodka-turbo (modelo base) | no disponible | Ventana de audio de 30 s | ru | Apache 2.0 | Safetensors (checkpoint original) | Hugging Face |
 | Whisper large-v3-turbo (OpenAI) | no disponible en la informacion proporcionada | Ventana de audio de 30 s | Multilingue | MIT (familia Whisper) | Safetensors, GGML via terceros | Ampliamente distribuido |
 | whisper.cpp con modelos base oficiales | Variable segun variante | Ventana de audio de 30 s | Multilingue | MIT | GGML/GGUF | Repositorio del motor |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento (WER) para ninguna de las alternativas en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/whisper-podlodka-turbo-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/whisper-podlodka-turbo-ggml
 - Modelo base: https://huggingface.co/bond005/whisper-podlodka-turbo
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk
 - Motor whisper.cpp: https://github.com/ggml-org/whisper.cpp

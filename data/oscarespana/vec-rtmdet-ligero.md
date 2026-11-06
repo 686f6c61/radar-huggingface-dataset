@@ -81,7 +81,7 @@ La comparativa se limita a la cadena de derivación del propio modelo; no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OscarEspana/vec-rtmdet-ligero
+- Hugging Face: https://huggingface.co/OscarEspana/vec-rtmdet-ligero
 - Modelo base (ONNX convertido): https://huggingface.co/tori29umai/rtmdet-ins-onnx-person-masks
 - MMDetection: https://github.com/open-mmlab/mmdetection
 - MMDeploy: https://github.com/open-mmlab/mmdeploy

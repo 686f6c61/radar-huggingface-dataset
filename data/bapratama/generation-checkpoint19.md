@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bapratama/generation-checkpoint19` es un repositorio de HuggingFace publicado por el usuario Bapratama que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada Mixer, orientada a tareas de generacion. No se trata de un modelo preentrenado con pesos entrenados, sino de un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance, tal y como indica explicitamente la model card del autor.
+`Bapratama/generation-checkpoint19` es un repositorio de Hugging Face publicado por el usuario Bapratama que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada Mixer, orientada a tareas de generacion. No se trata de un modelo preentrenado con pesos entrenados, sino de un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance, tal y como indica explicitamente la model card del autor.
 
 El repositorio incluye el codigo del modelo (`predict.py`), la configuracion de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos (`model.safetensors`). La model card etiqueta la escala como "huge", pero los metadatos reales de safetensors declaran 24.832 parametros totales, una discrepancia que sugiere que el checkpoint no corresponde a una configuracion de gran tamano, o que la etiqueta de escala no refleja el contenido real del repositorio.
 
@@ -20,7 +20,7 @@ Su relevancia es limitada y de caracter educativo o de investigacion: sirve como
 | Idiomas soportados | no disponibles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (checkpoint de inicializacion); codigo de modelo en PyTorch |
-| Tamano del repositorio | 0,0 GB segun metadatos de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun metadatos de Hugging Face |
 | Etiquetas declaradas | safetensors, mixer, pytorch, generation, region:us |
 | Fecha de creacion registrada | 2026-10-14T17:22:04Z (dato de metadatos; puede ser anomalo) |
 | Fecha de ultima actualizacion | 2026-10-14T17:22:10Z |
@@ -83,7 +83,7 @@ No disponible. Este repositorio no es un modelo preentrenado comparable con alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bapratama/generation-checkpoint19
+- Repositorio en Hugging Face: https://huggingface.co/Bapratama/generation-checkpoint19
 - Fichero de modelo: https://huggingface.co/Bapratama/generation-checkpoint19/blob/main/model.safetensors
 - Configuracion de arquitectura: https://huggingface.co/Bapratama/generation-checkpoint19/blob/main/config.json
 - Receta de experimento: https://huggingface.co/Bapratama/generation-checkpoint19/blob/main/training_args.json

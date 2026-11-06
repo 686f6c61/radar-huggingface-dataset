@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ViT-L_Eurosat es un checkpoint de ajuste fino (fine-tuning) de un Vision Transformer de tamano Large (ViT-L) sobre el conjunto de datos EuroSAT-RGB, una coleccion de imagenes satelitales Sentinel-2 en color real organizada en 10 clases de cobertura del suelo. Lo publica el usuario mubashir04 en HuggingFace y esta directamente vinculado al paper SatMAE++ (arXiv:2403.05419) y al repositorio de codigo techmn/satmae_pp, lo que lo situa en la linea de trabajo de representaciones auto-supervisadas para teledeteccion.
+ViT-L_Eurosat es un checkpoint de ajuste fino (fine-tuning) de un Vision Transformer de tamano Large (ViT-L) sobre el conjunto de datos EuroSAT-RGB, una coleccion de imagenes satelitales Sentinel-2 en color real organizada en 10 clases de cobertura del suelo. Lo publica el usuario mubashir04 en Hugging Face y esta directamente vinculado al paper SatMAE++ (arXiv:2403.05419) y al repositorio de codigo techmn/satmae_pp, lo que lo situa en la linea de trabajo de representaciones auto-supervisadas para teledeteccion.
 
 El modelo no es un modelo generativo ni multimodal de proposito general: es un clasificador de imagenes de escena terrestre. Su relevancia esta en que reutiliza el preentrenamiento auto-supervisado de SatMAE++ y lo especializa en la tarea concreta de clasificacion de uso del suelo, un caso de uso clasico en teledeteccion (monitorizacion agricola, planificacion urbana, seguimiento medioambiental).
 
-La informacion publicada es minima: la model card apenas ocupa dos lineas y no incluye resultados, configuracion de entrenamiento ni hiperparametros. No hay datos de benchmarks, idiomas ni pipeline declarados en HuggingFace. El repositorio ocupa 1,2 GB, coherente con pesos de un ViT-L en precision completa.
+La informacion publicada es minima: la model card apenas ocupa dos lineas y no incluye resultados, configuracion de entrenamiento ni hiperparametros. No hay datos de benchmarks, idiomas ni pipeline declarados en Hugging Face. El repositorio ocupa 1,2 GB, coherente con pesos de un ViT-L en precision completa.
 
 ## Especificaciones tecnicas
 
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en el entorno de 1,2-2,5 GB en fp32 para un ViT-L de ~300 M de parametros con lotes pequenos; en torno a 0,6-1,2 GB en fp16/bf16. Cifras orientativas basadas en el tamano tipico de la familia ViT-L, no confirmadas por el autor.
 - GPU recomendadas: cualquier GPU con 4 GB o mas de memoria es suficiente para inferencia; una NVIDIA T4, RTX 3060, RTX 4090 o A100 cubren el caso sin problema. Para ajuste fino conviene 16 GB o mas, y para reentrenamiento a resoluciones mayores se recomienda A100/H100.
 - Cabe en GPU de consumo: si, practicamente cualquier GPU de consumo moderna puede ejecutar la inferencia, e incluso es viable en CPU para volumenes moderados.
-- Opciones de despliegue: no se documenta soporte especifico. Al ser un ViT estandar, es desplegable con PyTorch/TorchScript, ONNX Runtime, HuggingFace Transformers (clase ViT), o servidores de inferencia genericos como TorchServe. No hay publicacion de GGUF ni soporte declarado en llama.cpp u Ollama, y vLLM y TGI estan orientados a modelos de lenguaje, no a este caso.
+- Opciones de despliegue: no se documenta soporte especifico. Al ser un ViT estandar, es desplegable con PyTorch/TorchScript, ONNX Runtime, Hugging Face Transformers (clase ViT), o servidores de inferencia genericos como TorchServe. No hay publicacion de GGUF ni soporte declarado en llama.cpp u Ollama, y vLLM y TGI estan orientados a modelos de lenguaje, no a este caso.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ViT-L_Eurosat | Clasificador ViT-L ajustado en EuroSAT-RGB | no disponible (~300 M en la familia ViT-L, sin confirmar) | Imagenes; resolucion no especificada (EuroSAT-RGB usa 64x64) | Apache 2.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| ViT-L_Eurosat | Clasificador ViT-L ajustado en EuroSAT-RGB | no disponible (~300 M en la familia ViT-L, sin confirmar) | Imagenes; resolucion no especificada (EuroSAT-RGB usa 64x64) | Apache 2.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | SatMAE++ (checkpoints del paper) | Marco auto-supervisado para teledeteccion | no disponible en la informacion proporcionada | Multiespectral y multitemporal | no disponible | Repositorio de codigo techmn/satmae_pp |
 | ViT-B/16 preentrenado en ImageNet | Clasificador ViT de proposito general | no disponible en la informacion proporcionada | Imagen RGB 224x224 tipicamente | variable segun checkpoint | Ampliamente disponible |
 | ResNet-50 ajustado en EuroSAT | CNN clasica de referencia en teledeteccion | no disponible en la informacion proporcionada | Imagen RGB | variable segun checkpoint | Ampliamente disponible |
@@ -83,7 +83,7 @@ No hay datos de rendimiento en la informacion proporcionada que permitan una com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mubashir04/ViT-L_Eurosat
+- Modelo en Hugging Face: https://huggingface.co/mubashir04/ViT-L_Eurosat
 - Codigo SatMAE++: https://github.com/techmn/satmae_pp
 - Paper SatMAE++: https://arxiv.org/abs/2403.05419
 - Dataset EuroSAT-RGB (remote sensing representations de Google Research): https://github.com/google-research/google-research/tree/master/remote_sensing_representations

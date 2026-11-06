@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Halogen-qwen3.8-flash-next-abliterated es un modelo de generacion de texto publicado por el usuario Ae55667 en HuggingFace, construido como un fine-tune sobre peonist-ai/halogen-qwen3.8-flash-next. El sufijo "abliterated" indica que se ha aplicado una tecnica de ablacion direccional para eliminar o atenuar los mecanismos de rechazo y alineacion de seguridad del modelo original, mientras que las etiquetas asociadas (halogen, qwen, moe) apuntan a una arquitectura de mezcla de expertos derivada de la familia Qwen. El repositorio ocupa 27,1 GB y esta marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+Halogen-qwen3.8-flash-next-abliterated es un modelo de generacion de texto publicado por el usuario Ae55667 en Hugging Face, construido como un fine-tune sobre peonist-ai/halogen-qwen3.8-flash-next. El sufijo "abliterated" indica que se ha aplicado una tecnica de ablacion direccional para eliminar o atenuar los mecanismos de rechazo y alineacion de seguridad del modelo original, mientras que las etiquetas asociadas (halogen, qwen, moe) apuntan a una arquitectura de mezcla de expertos derivada de la familia Qwen. El repositorio ocupa 27,1 GB y esta marcado como acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo reside en su orientacion a hardware AMD, en concreto a plataformas Strix Halo (gfx1151) con ROCm, lo que lo situa en el nicho de inferencia local sobre APUs con memoria unificada en lugar de GPUs discretas. La licencia declarada es Apache 2.0 y la libreria asociada es "halogen", no estandar, lo que sugiere un stack de ejecucion propio o especifico del autor.
 
-No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. La ficha que sigue refleja exclusivamente los metadatos disponibles en HuggingFace y marca como "no disponible" todo aquello que no puede verificarse.
+No se dispone de informacion publica sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. La ficha que sigue refleja exclusivamente los metadatos disponibles en Hugging Face y marca como "no disponible" todo aquello que no puede verificarse.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se dispone de informacion publica sobre el numero de parametros, la longitud 
 
 No se ha publicado informacion sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni el uso de tecnicas de alineacion como RLHF o DPO. Las unicas senales disponibles son las etiquetas del repositorio: "moe" (mezcla de expertos), "qwen" (familia base) y "abliterated", que implica la aplicacion de ablacion direccional sobre las direcciones latentes responsables del comportamiento de rechazo, una tecnica que no requiere reentrenamiento completo y que modifica los pesos para suprimir respuestas de negativa.
 
-Las etiquetas "strix-halo", "gfx1151", "rocm" y "amd" indican que el modelo esta pensado o probado para su ejecucion sobre la APU AMD Ryzen AI Max (arquitectura gfx1151) con el stack ROCm. La libreria declarada, "halogen", no corresponde a ninguna libreria estandar del ecosistema HuggingFace (transformers, vLLM, llama.cpp), por lo que se desconoce el runtime exacto necesario para cargar los pesos.
+Las etiquetas "strix-halo", "gfx1151", "rocm" y "amd" indican que el modelo esta pensado o probado para su ejecucion sobre la APU AMD Ryzen AI Max (arquitectura gfx1151) con el stack ROCm. La libreria declarada, "halogen", no corresponde a ninguna libreria estandar del ecosistema Hugging Face (transformers, vLLM, llama.cpp), por lo que se desconoce el runtime exacto necesario para cargar los pesos.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Riesgo de alucinacion: no evaluado en la informacion disponible.
 - Idiomas soportados: no especificados; se desconoce si mantiene el multilingusimo tipico de la familia Qwen.
 - Longitud de contexto: no documentada, lo que impide planificar cargas de trabajo con ventanas largas.
-- Licencia Apache 2.0 permite uso comercial, pero el acceso esta restringido en HuggingFace y requiere aceptar condiciones adicionales del autor.
+- Licencia Apache 2.0 permite uso comercial, pero el acceso esta restringido en Hugging Face y requiere aceptar condiciones adicionales del autor.
 - Sin benchmarks publicados ni evaluaciones independientes: no es posible estimar su calidad frente a alternativas.
 - La libreria "halogen" no es estandar, lo que puede complicar la integracion en stacks de produccion existentes.
 - Las fechas del repositorio (creacion y actualizacion en septiembre de 2026) no coinciden con el calendario actual, lo que sugiere metadatos inconsistentes o manipulados.
@@ -89,6 +89,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ae55667/halogen-qwen3.8-flash-next-abliterated
+- Hugging Face: https://huggingface.co/Ae55667/halogen-qwen3.8-flash-next-abliterated
 - Modelo base: https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio resultados relevantes sobre este modelo (unicamente enlaces genericos a YouTube).

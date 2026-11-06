@@ -90,6 +90,6 @@ No se dispone de comparativas con otros mecanismos de extension de contexto (p. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-6bit
+- Repositorio Hugging Face: https://huggingface.co/EInnovator/pra-qwen3-8b-mlx-6bit
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-8B-6bit
 - Libreria PRA: `pip install 'pra-hf[hf-hub,hf-runtime]'` (documentacion de instalacion en la model card)

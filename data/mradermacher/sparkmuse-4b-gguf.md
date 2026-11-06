@@ -24,13 +24,13 @@ Su relevancia es eminentemente práctica: concentra en un único repositorio tod
 | Autor del repositorio | mradermacher |
 | Metadatos de conversión | `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1` |
 | Fecha de publicación (metadatos) | 18 de septiembre de 2026, actualizado el mismo día |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 No se dispone de información sobre la arquitectura del modelo base (no se confirma si es un transformer denso, un MoE, un modelo híbrido o una arquitectura SSM), ni sobre el número de tokens de entrenamiento, la composición del dataset o si se aplicaron técnicas de alineación como RLHF, DPO o RLVR. Tampoco se documentan innovaciones técnicas (atención lineal, decodificación especulativa, modo de razonamiento explícito, multimodalidad) ni el proceso de entrenamiento seguido por hcnote/SparkMuse-4B.
 
-Lo único verificable es el proceso de conversión: los metadatos indican una conversión desde pesos de HuggingFace (`convert_type: hf`) con cuantización por tensor (`output_tensor_quantised: 1`) y versión 2 del pipeline de cuantización de llama.cpp, generando 12 ficheros GGUF de tipo estático. Esto implica que cada cuantización es un artefacto independiente ya calculado, no cuantizaciones dinámicas en tiempo de carga, y que la calidad respecto al modelo original depende exclusivamente del esquema elegido (K-quants e IQ-quants en este caso).
+Lo único verificable es el proceso de conversión: los metadatos indican una conversión desde pesos de Hugging Face (`convert_type: hf`) con cuantización por tensor (`output_tensor_quantised: 1`) y versión 2 del pipeline de cuantización de llama.cpp, generando 12 ficheros GGUF de tipo estático. Esto implica que cada cuantización es un artefacto independiente ya calculado, no cuantizaciones dinámicas en tiempo de carga, y que la calidad respecto al modelo original depende exclusivamente del esquema elegido (K-quants e IQ-quants en este caso).
 
 ## Capacidades
 
@@ -86,8 +86,8 @@ No es posible una comparativa rigurosa con alternativas concretas: se desconoce 
 
 | Modelo | Parámetros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SparkMuse-4B-GGUF | no disponible (~4B según el nombre) | no disponible | no disponible | no disponible | 12 cuantizaciones GGUF en HuggingFace |
-| hcnote/SparkMuse-4B (modelo base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| SparkMuse-4B-GGUF | no disponible (~4B según el nombre) | no disponible | no disponible | no disponible | 12 cuantizaciones GGUF en Hugging Face |
+| hcnote/SparkMuse-4B (modelo base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría (cuantizaciones GGUF de modelos densos de ~4B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación verificable es interna al repositorio: los distintos esquemas de cuantización entre sí, en términos de tamaño de fichero y de fidelidad esperada respecto a F16.

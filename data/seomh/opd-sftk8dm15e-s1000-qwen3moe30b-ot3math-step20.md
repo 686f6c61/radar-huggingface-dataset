@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Modelo publicado en HuggingFace por el usuario seomh bajo el identificador `opd-sftk8dm15e-s1000-qwen3moe30b-ot3math-step20`. Por el nombre del repositorio, todo apunta a un ajuste supervisado (SFT) sobre un modelo de la familia Qwen3 orientado a tareas de matematicas (el fragmento "ot3math" sugiere OpenThoughts3 u otra fuente de datos matematicos), capturado en el paso 20 de entrenamiento. Sin embargo, el recuento real de parametros que reportan los ficheros safetensors es de 8.190.735.360 (unos 8,19 mil millones), una cifra que no coincide con los 30.000 millones que insinua el nombre y que se aproxima mucho a un Qwen3-8B.
+Modelo publicado en Hugging Face por el usuario seomh bajo el identificador `opd-sftk8dm15e-s1000-qwen3moe30b-ot3math-step20`. Por el nombre del repositorio, todo apunta a un ajuste supervisado (SFT) sobre un modelo de la familia Qwen3 orientado a tareas de matematicas (el fragmento "ot3math" sugiere OpenThoughts3 u otra fuente de datos matematicos), capturado en el paso 20 de entrenamiento. Sin embargo, el recuento real de parametros que reportan los ficheros safetensors es de 8.190.735.360 (unos 8,19 mil millones), una cifra que no coincide con los 30.000 millones que insinua el nombre y que se aproxima mucho a un Qwen3-8B.
 
 El repositorio ocupa 16,4 GB, coherente con un checkpoint en bf16/fp16 sin cuantizar (2 bytes por parametro sobre 8,19 B). No hay informacion sobre licencia, idiomas soportados, pipeline ni datos de entrenamiento, y la validacion comunitaria es practicamente nula en el momento de redactar esta ficha (11 descargas y 0 me gusta).
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| opd-sftk8dm15e-s1000-qwen3moe30b-ot3math-step20 | 8,19 B (segun safetensors) | no disponible | no disponible | HuggingFace (11 descargas) |
-| Qwen3-8B | 8,2 B | 32.768 tokens nativos, ampliable a 131.072 | Apache 2.0 | HuggingFace, ampliamente validado |
-| Qwen3-30B-A3B (MoE) | 30,5 B totales / 3,3 B activos | 32.768 tokens nativos, ampliable a 131.072 | Apache 2.0 | HuggingFace, ampliamente validado |
-| Llama-3.1-8B | 8,03 B | 131.072 tokens | Licencia comunitaria Llama 3.1 | HuggingFace, ampliamente validado |
+| opd-sftk8dm15e-s1000-qwen3moe30b-ot3math-step20 | 8,19 B (segun safetensors) | no disponible | no disponible | Hugging Face (11 descargas) |
+| Qwen3-8B | 8,2 B | 32.768 tokens nativos, ampliable a 131.072 | Apache 2.0 | Hugging Face, ampliamente validado |
+| Qwen3-30B-A3B (MoE) | 30,5 B totales / 3,3 B activos | 32.768 tokens nativos, ampliable a 131.072 | Apache 2.0 | Hugging Face, ampliamente validado |
+| Llama-3.1-8B | 8,03 B | 131.072 tokens | Licencia comunitaria Llama 3.1 | Hugging Face, ampliamente validado |
 
 Nota: los datos de los modelos de referencia proceden de su documentacion publica; la comparativa de rendimiento no puede establecerse porque este checkpoint no reporta resultados.
 
@@ -90,4 +90,4 @@ Nota: los datos de los modelos de referencia proceden de su documentacion public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/seomh/opd-sftk8dm15e-s1000-qwen3moe30b-ot3math-step20
+- Repositorio en Hugging Face: https://huggingface.co/seomh/opd-sftk8dm15e-s1000-qwen3moe30b-ot3math-step20

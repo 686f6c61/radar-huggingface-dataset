@@ -77,7 +77,7 @@ La comparativa se limita al modelo base y su versión cuantizada, ya que no hay 
 
 ## Enlaces
 
-- [HuggingFace - ab12321/llama3.1-8b-lora-unhinged-hype-bro](https://huggingface.co/ab12321/llama3.1-8b-lora-unhinged-hype-bro)
+- [Hugging Face - ab12321/llama3.1-8b-lora-unhinged-hype-bro](https://huggingface.co/ab12321/llama3.1-8b-lora-unhinged-hype-bro)
 - [Meta - Llama 3](https://developer.meta.com/ai/models/llama-3/)
 - [Ollama - Llama 3.1](https://ollama.com/library/llama3.1)
 - [Unsloth - GitHub](https://github.com/unslothai/unsloth)

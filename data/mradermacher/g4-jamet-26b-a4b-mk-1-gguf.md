@@ -110,7 +110,7 @@ No se han localizado datos publicados que permitan comparar este modelo con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/G4-Jamet-26B-A4B-MK-1-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/G4-Jamet-26B-A4B-MK-1-GGUF
 - Modelo base: https://huggingface.co/Hastagaras/G4-Jamet-26B-A4B-MK-1
 - Pagina de vision general y descargas del cuantizador: https://hf.tst.eu/model#G4-Jamet-26B-A4B-MK-1-GGUF
 - Peticiones de modelos al cuantizador: https://huggingface.co/mradermacher/model_requests

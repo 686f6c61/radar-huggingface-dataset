@@ -91,6 +91,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
+- Repositorio Hugging Face: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Perfil del autor: https://x.com/Blackfrost_AI

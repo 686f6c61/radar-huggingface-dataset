@@ -103,7 +103,7 @@ No se documentan en la información disponible otras publicaciones de pesos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMLA-ORG/MMLA-LRARC4
+- Modelo en Hugging Face: https://huggingface.co/MMLA-ORG/MMLA-LRARC4
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B-SFT
 - Paper: MMLA: Memory-Mediated Learning Architecture for Predictive Dual-State Adaptation, Junyi Zou y Avrova Donz, 2026: https://arxiv.org/abs/2606.28876v4
 - Ficheros incluidos en el repositorio: `weights/static-2026092811.safetensors`, `weights/static-2026092812.safetensors`, `weights/static-2026092813.safetensors`, `weights/omega.safetensors`, `lineage.json`, `manifest.json`, `environment.json`, `load_weights.py`, `episodic_core.py`

@@ -96,7 +96,7 @@ No se dispone de otros modelos comparables de deteccion de PII con datos verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lemonade-sdk/pplx-pii-masking-onnx
+- Modelo en Hugging Face: https://huggingface.co/lemonade-sdk/pplx-pii-masking-onnx
 - Modelo base original: https://huggingface.co/perplexity-ai/pplx-pii-masking
 - Backbone de embeddings: https://huggingface.co/perplexity-ai/pplx-embed-v1-0.6b
 - Politica de enrutado de Lemonade basada en este modelo: https://huggingface.co/lemonade-sdk/pii_policy_pplx-pii-masking-onnx

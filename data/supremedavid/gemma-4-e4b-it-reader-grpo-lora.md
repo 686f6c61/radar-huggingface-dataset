@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`supremeDavid/gemma-4-E4B-it-reader-grpo-lora` es un adaptador LoRA publicado en HuggingFace por el usuario supremeDavid, entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `google/gemma-4-E4B-it`. El objetivo declarado por los tags es reforzar capacidades de lectura y alineamiento moral ("reading", "moral-alignment") en el modelo base, sin modificar sus pesos originales. El repositorio ocupa aproximadamente 0,3 GB, lo que corresponde al tamano tipico de un adaptador PEFT en safetensors y no al del modelo completo.
+`supremeDavid/gemma-4-E4B-it-reader-grpo-lora` es un adaptador LoRA publicado en Hugging Face por el usuario supremeDavid, entrenado mediante GRPO (Group Relative Policy Optimization) sobre el modelo base `google/gemma-4-E4B-it`. El objetivo declarado por los tags es reforzar capacidades de lectura y alineamiento moral ("reading", "moral-alignment") en el modelo base, sin modificar sus pesos originales. El repositorio ocupa aproximadamente 0,3 GB, lo que corresponde al tamano tipico de un adaptador PEFT en safetensors y no al del modelo completo.
 
-Se trata de un artefacto experimental de bajo perfil: cero descargas y cero likes en el momento de la ficha, creado y actualizado en noviembre de 2026. No se dispone de model card detallada, resultados de evaluacion ni documentacion sobre el dataset de entrenamiento o los hiperparametros del GRPO. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en HuggingFace, presumiblemente por las condiciones de uso del modelo base Gemma.
+Se trata de un artefacto experimental de bajo perfil: cero descargas y cero likes en el momento de la ficha, creado y actualizado en noviembre de 2026. No se dispone de model card detallada, resultados de evaluacion ni documentacion sobre el dataset de entrenamiento o los hiperparametros del GRPO. La licencia declarada es Apache 2.0, aunque el acceso al repositorio esta restringido (gated) y requiere aceptar condiciones en Hugging Face, presumiblemente por las condiciones de uso del modelo base Gemma.
 
 Su relevancia es limitada pero ilustrativa: muestra el patron de fine-tuning por RL sobre modelos Gemma 4 de tamano E4B (variante "effective 4B", presumiblemente con mezcla de expertos o destilacion) orientado a tareas de comprension lectora y alineamiento. Para produccion seria necesario validar el adaptador contra el base, ya que no hay evidencia publicada de mejora.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| supremeDavid/gemma-4-E4B-it-reader-grpo-lora | adaptador LoRA (~0,3 GB) | no disponible | GRPO sobre Gemma 4 E4B para lectura y alineamiento moral | Apache 2.0 | gated en HuggingFace |
+| supremeDavid/gemma-4-E4B-it-reader-grpo-lora | adaptador LoRA (~0,3 GB) | no disponible | GRPO sobre Gemma 4 E4B para lectura y alineamiento moral | Apache 2.0 | gated en Hugging Face |
 | google/gemma-4-E4B-it (base) | E4B (cifra exacta no disponible) | no disponible | instruct generalista | Gemma license (no confirmada en la informacion) | publico |
 | Alternativas LoRA/GRPO sobre Gemma de la misma familia | no disponible | no disponible | RL sobre base Gemma | variable | variable |
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/supremeDavid/gemma-4-E4B-it-reader-grpo-lora
+- Hugging Face: https://huggingface.co/supremeDavid/gemma-4-E4B-it-reader-grpo-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Paper de GRPO (DeepSeekMath): no disponible en la informacion proporcionada
 - Repositorio PEFT: no disponible en la informacion proporcionada

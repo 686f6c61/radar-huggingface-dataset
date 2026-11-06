@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`enzolefebvre/random-retrieval` es un repositorio de HuggingFace publicado por el usuario Enzo Lefebvre que contiene una implementación propia y compacta de la arquitectura EfficientFormer orientada a tareas de retrieval (recuperación de información). No es un modelo preentrenado listo para producción: se trata de un artefacto de código con un checkpoint de inicialización destinado a pruebas de humo, revisión de código y experimentos controlados a pequeña escala.
+`enzolefebvre/random-retrieval` es un repositorio de Hugging Face publicado por el usuario Enzo Lefebvre que contiene una implementación propia y compacta de la arquitectura EfficientFormer orientada a tareas de retrieval (recuperación de información). No es un modelo preentrenado listo para producción: se trata de un artefacto de código con un checkpoint de inicialización destinado a pruebas de humo, revisión de código y experimentos controlados a pequeña escala.
 
 El modelo tiene únicamente 49.600 parámetros totales (0,0496 M), una cifra muy inferior a la de cualquier EfficientFormer estándar, lo que confirma su carácter de configuración "tiny" de juguete. El repositorio incluye el script `main.py` como artefacto principal, un `config.json` con la configuración de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` declarado explícitamente por el autor como checkpoint de inicialización, no como pesos entrenados.
 
@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| enzolefebvre/random-retrieval | 49.600 | no disponible | Retrieval | MIT | HuggingFace, 0 descargas |
-| enzolefebvre/cs229-retrieval | no disponible | no disponible | Retrieval | no disponible | HuggingFace (mismo autor) |
+| enzolefebvre/random-retrieval | 49.600 | no disponible | Retrieval | MIT | Hugging Face, 0 descargas |
+| enzolefebvre/cs229-retrieval | no disponible | no disponible | Retrieval | no disponible | Hugging Face (mismo autor) |
 | EfficientFormer original (implementacion de referencia) | no disponible | no disponible | Vision (clasificacion y otras tareas) | no disponible | Repositorio de referencia |
-| Soluciones de retrieval multimodales tipo CLIP | no disponible | no disponible | Retrieval imagen-texto | no disponible | HuggingFace |
+| Soluciones de retrieval multimodales tipo CLIP | no disponible | no disponible | Retrieval imagen-texto | no disponible | Hugging Face |
 
 No se dispone de datos verificados de parámetros, contexto o rendimiento de las alternativas en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable. La comparación relevante en este caso es estructural: frente a las implementaciones de referencia de EfficientFormer y a los modelos de retrieval multimodales consolidados, este repositorio se distingue por su tamano mínimo, su carácter no entrenado y su licencia MIT permisiva.
 
@@ -102,8 +102,8 @@ No se dispone de datos verificados de parámetros, contexto o rendimiento de las
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/enzolefebvre/random-retrieval
-- Perfil del autor en HuggingFace: https://huggingface.co/enzolefebvre/models
+- Repositorio del modelo en Hugging Face: https://huggingface.co/enzolefebvre/random-retrieval
+- Perfil del autor en Hugging Face: https://huggingface.co/enzolefebvre/models
 - Repositorio relacionado del mismo autor: https://huggingface.co/enzolefebvre/cs229-retrieval
 - Documentación sobre retrieval-augmented generation (contexto general de la tarea de retrieval): https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - Noticia de seguridad sobre ataques a activos de IA: https://www.bleepingcomputer.com/news/security/jadepuffer-agentic-attacks-now-target-ai-model-data-with-ransomware/

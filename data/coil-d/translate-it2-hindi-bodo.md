@@ -2,9 +2,9 @@
 
 ## Resumen
 
-COIL-D/translate-it2-hindi-bodo es un modelo de traduccion automatica neuronal publicado en HuggingFace por el usuario u organizacion COIL-D. Se trata de un ajuste fino (finetune) del modelo ai4bharat/indictrans2-indic-indic-dist-320M, perteneciente a la familia IndicTrans2 de AI4Bharat, especializada en traduccion entre lenguas de la India. El modelo esta orientado al par hindi (hi) y bodo (brx), segun indican sus etiquetas de idioma y el sufijo "hin-brx" del identificador.
+COIL-D/translate-it2-hindi-bodo es un modelo de traduccion automatica neuronal publicado en Hugging Face por el usuario u organizacion COIL-D. Se trata de un ajuste fino (finetune) del modelo ai4bharat/indictrans2-indic-indic-dist-320M, perteneciente a la familia IndicTrans2 de AI4Bharat, especializada en traduccion entre lenguas de la India. El modelo esta orientado al par hindi (hi) y bodo (brx), segun indican sus etiquetas de idioma y el sufijo "hin-brx" del identificador.
 
-El modelo cuenta con 320.861.184 parametros (aproximadamente 320,9 millones) y se distribuye en formato safetensors con un repositorio de 1,3 GB, lo que sugiere pesos en precision completa (fp32). Requiere codigo personalizado (custom_code) para su carga en la libreria transformers, un rasgo tipico de los modelos IndicTrans2. La licencia declarada es MIT, lo que en principio permite uso comercial, aunque el acceso al repositorio esta restringido (gated) y exige aceptar condiciones en HuggingFace.
+El modelo cuenta con 320.861.184 parametros (aproximadamente 320,9 millones) y se distribuye en formato safetensors con un repositorio de 1,3 GB, lo que sugiere pesos en precision completa (fp32). Requiere codigo personalizado (custom_code) para su carga en la libreria transformers, un rasgo tipico de los modelos IndicTrans2. La licencia declarada es MIT, lo que en principio permite uso comercial, aunque el acceso al repositorio esta restringido (gated) y exige aceptar condiciones en Hugging Face.
 
 Su relevancia radica en el caracter de bajos recursos del bodo, una lengua del noreste de la India con un numero limitado de recursos de traduccion automatica de calidad. Un modelo especializado de 320 M de parametros es adecuado para despliegue en hardware modesto y para la construccion de corpus paralelos, materiales educativos o servicios publicos bilingues. No obstante, el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado informacion tecnica detallada mas alla de los metadatos de la ficha.
 
@@ -27,7 +27,7 @@ Otros datos de interes: pipeline declarado "translation", libreria transformers,
 
 El modelo es un finetune de ai4bharat/indictrans2-indic-indic-dist-320M, por lo que hereda la arquitectura de la familia IndicTrans2 de AI4Bharat: un transformer encoder-decoder con tokenizador multilingue y etiquetas de idioma destino en la entrada. La variante "dist-320M" del modelo base es una version destilada de 320 millones de parametros, disenada para reducir coste de inferencia manteniendo calidad de traduccion en pares indico-indico. No se dispone en la informacion proporcionada de detalles especificos sobre el numero de capas, dimension del modelo, cabezas de atencion ni vocabulario.
 
-En cuanto al entrenamiento especifico de este finetune, no hay informacion publicada en la ficha de HuggingFace sobre el volumen de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como SFT, DPO o RLHF. Tampoco se detalla el regimen de aprendizaje ni si se empleo destilacion adicional sobre el modelo base. El repositorio incluye codigo personalizado, lo que implica que la carga del modelo requiere ejecucion de codigo remoto y confiar en la implementacion del autor.
+En cuanto al entrenamiento especifico de este finetune, no hay informacion publicada en la ficha de Hugging Face sobre el volumen de tokens utilizados, la composicion del dataset, ni si se aplicaron tecnicas de ajuste como SFT, DPO o RLHF. Tampoco se detalla el regimen de aprendizaje ni si se empleo destilacion adicional sobre el modelo base. El repositorio incluye codigo personalizado, lo que implica que la carga del modelo requiere ejecucion de codigo remoto y confiar en la implementacion del autor.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ En cuanto al entrenamiento especifico de este finetune, no hay informacion publi
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas BLEU, chrF, COMET ni resultados en conjuntos de evaluacion como Flores-200, ni comparaciones con el modelo base. Tampoco se dispone de datos de latencia o throughput medidos.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas BLEU, chrF, COMET ni resultados en conjuntos de evaluacion como Flores-200, ni comparaciones con el modelo base. Tampoco se dispone de datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ Nota: los datos de la columna "Rendimiento" no pueden cumplimentarse porque no s
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a la evaluacion y al despliegue.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a la evaluacion y al despliegue.
 - Requiere codigo personalizado: la carga en transformers necesita trust_remote_code=True, lo que implica ejecutar codigo de terceros y supone un riesgo de seguridad en entornos de produccion si no se audita antes.
 - Ausencia total de documentacion tecnica: no hay model card detallada, ni informacion sobre datos de entrenamiento, hiperparametros, evaluacion o limitaciones conocidas. Esto dificulta estimar la calidad real de las traducciones.
 - Riesgo de alucinacion y de traducciones infieles: como todo modelo generativo de traduccion, puede producir contenido ausente en el original, especialmente en segmentos largos, ambiguos o con terminologia especializada.
@@ -96,7 +96,7 @@ Nota: los datos de la columna "Rendimiento" no pueden cumplimentarse porque no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-bodo
+- Modelo en Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-bodo
 - Repositorio del modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Referencia arXiv declarada en las etiquetas: arXiv:2609.28826 (no verificada; no se ha podido acceder al articulo)
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: las coincidencias obtenidas corresponden al termino "coil" en contextos de siderurgia y de un grupo musical britanico, ajenos por completo al contenido de esta ficha.

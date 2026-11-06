@@ -97,7 +97,7 @@ Advertencia del propio autor: profundidad y número de parámetros no están igu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-ts-d384-gpt2-matched
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-ts-d384-gpt2-matched
 - Referencia OpenWebText del mismo GPT-2: https://huggingface.co/dimitarpg13/semsimula-ladder-owt-d384-l2-gpt2-matched
 - Colección Gen 3 first-vs-second-order: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-first-vs-second-order-6ad7681596d9a670c268b524
 - Modelo comparado SO-TS: https://huggingface.co/dimitarpg13/semsimula-ladder-live-ts-d384-l2-none-norc-sr2

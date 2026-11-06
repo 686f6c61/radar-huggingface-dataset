@@ -108,7 +108,7 @@ No se dispone de comparativas de WER entre estos modelos en la informacion propo
 
 ## Enlaces
 
-- Ficha HuggingFace del modelo: https://huggingface.co/cstr/orukeet-GGUF
+- Ficha Hugging Face del modelo: https://huggingface.co/cstr/orukeet-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/oruk/orukeet
 - Informe tecnico de Orukeet: https://huggingface.co/oruk/orukeet/blob/main/docs/technical-report.md
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3

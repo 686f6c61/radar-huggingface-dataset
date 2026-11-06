@@ -74,8 +74,8 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| contract-clause-risk-classifier | 82,1 M | no disponible | Clasificación binaria de riesgo en cláusulas de licencia de datos | Apache 2.0 | HuggingFace |
-| `distilroberta-base` (modelo base) | 82,1 M | 512 tokens (estándar de RoBERTa) | Modelo de lenguaje enmascarado, sin fine-tuning para esta tarea | Apache 2.0 | HuggingFace |
+| contract-clause-risk-classifier | 82,1 M | no disponible | Clasificación binaria de riesgo en cláusulas de licencia de datos | Apache 2.0 | Hugging Face |
+| `distilroberta-base` (modelo base) | 82,1 M | 512 tokens (estándar de RoBERTa) | Modelo de lenguaje enmascarado, sin fine-tuning para esta tarea | Apache 2.0 | Hugging Face |
 | Clasificadores legales genéricos | no disponible | no disponible | Clasificación de cláusulas legales en sentido amplio | variable | no disponible |
 
 No se dispone de datos de benchmarks comparativos con alternativas en la información proporcionada.
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con alternativas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/contract-clause-risk-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/contract-clause-risk-classifier
 - Space de demostración: https://huggingface.co/spaces/aitrainingdatabroker/contract-clause-watchlist
 - Dataset de entrenamiento: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-contract-clauses-by-type-and-risk
 - Responsabilidad en licencias de datos para IA: https://aitrainingdatabroker.com/sell/liability/

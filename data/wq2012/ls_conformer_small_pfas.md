@@ -94,7 +94,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ls_conformer_small_pfas | 2.162.187 | no disponible | Apache 2.0 | HuggingFace (wq2012) |
+| ls_conformer_small_pfas | 2.162.187 | no disponible | Apache 2.0 | Hugging Face (wq2012) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,8 +111,8 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/ls_conformer_small_pfas
-- Coleccion FlaxSpeaker en HuggingFace: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
+- Modelo en Hugging Face: https://huggingface.co/wq2012/ls_conformer_small_pfas
+- Coleccion FlaxSpeaker en Hugging Face: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub de FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI flaxspeaker: https://pypi.org/project/flaxspeaker/
 - Paper GE2E (arXiv:1710.10467): https://arxiv.org/abs/1710.10467

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bobic 1.5 Lean es un modelo de lenguaje compacto (SLM) de 60.840.970 parametros, desarrollado por el usuario Skebobic y publicado en HuggingFace bajo licencia MIT. Su objetivo declarado es la inferencia conversacional y aritmetica en despliegues de borde con recursos muy limitados: la model card afirma un consumo inferior a 1 GB de VRAM durante la inferencia de secuencias completas y una velocidad de entrenamiento superior a 40.000 tokens por segundo en una unica NVIDIA RTX 4070.
+Bobic 1.5 Lean es un modelo de lenguaje compacto (SLM) de 60.840.970 parametros, desarrollado por el usuario Skebobic y publicado en Hugging Face bajo licencia MIT. Su objetivo declarado es la inferencia conversacional y aritmetica en despliegues de borde con recursos muy limitados: la model card afirma un consumo inferior a 1 GB de VRAM durante la inferencia de secuencias completas y una velocidad de entrenamiento superior a 40.000 tokens por segundo en una unica NVIDIA RTX 4070.
 
 Arquitectonicamente es un transformer decoder-only denso con un diseno "profundo y estrecho": 16 capas, dimension oculta de 512, atencion multi-query (MQA) con 8 cabezas de consulta (hd=64) y una unica cabeza compartida de clave/valor, red feed-forward con SwiGLU (dimension intermedia 1408, aproximadamente 2,75x de expansion), RoPE con frecuencia base 10.000 y normalizacion RMSNorm previa a capa. El vocabulario es de 16.384 tokens con tokenizador ByteLevel BPE, e incorpora un adaptador propietario ("NumberHead") que inyecta embeddings de posicion intra-numero sobre los digitos.
 
@@ -18,7 +18,7 @@ Su interes actual esta en el nicho de los SLM por debajo de 100 M de parametros,
 | Tipos de cuantizacion | no disponible. El repositorio esta etiquetado como `gguf`, pero la model card solo documenta un checkpoint PyTorch `.pt` |
 | Idiomas soportados | Ingles (en) y ruso (ru) |
 | Licencia | MIT |
-| Formato de pesos | PyTorch (`.pt`, `bobic15_lean.pt`), con codigo de modelo propio (`model.py`). Etiquetado como GGUF en HuggingFace |
+| Formato de pesos | PyTorch (`.pt`, `bobic15_lean.pt`), con codigo de modelo propio (`model.py`). Etiquetado como GGUF en Hugging Face |
 | Tamano del repositorio | 0,3 GB |
 | Vocabulario | 16.384 tokens, ByteLevel BPE (`bobic15_tok.json` / `tokenizer.json`) |
 | Cabezas de atencion | 8 cabezas de consulta (head dim 64), 1 cabeza KV compartida |
@@ -81,10 +81,10 @@ No se han publicado otros resultados de benchmarks (HumanEval, GSM8K, MMLU estan
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | MMLU-Pro |
 |---|---|---|---|---|---|
-| Bobic 1.5 Lean | 60,8 M | no disponible | MIT | HuggingFace, checkpoint PyTorch | 19,83 % (600q) |
-| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF | no disponible |
-| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF | no disponible |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF | no disponible |
+| Bobic 1.5 Lean | 60,8 M | no disponible | MIT | Hugging Face, checkpoint PyTorch | 19,83 % (600q) |
+| SmolLM2-135M | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF | no disponible |
+| Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF | no disponible |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF | no disponible |
 
 Bobic 1.5 Lean es aproximadamente 2,2 veces mas pequeno que SmolLM2-135M y 8 veces mas pequeno que Qwen2.5-0.5B. Su principal diferenciador en esta categoria es la licencia MIT (frente a la Apache-2.0 de los tres alternativas) y el adaptador NumberHead para digitos. No hay datos de benchmarks comparables publicados en la informacion disponible para establecer una comparacion de rendimiento homogenea.
 
@@ -103,7 +103,7 @@ Bobic 1.5 Lean es aproximadamente 2,2 veces mas pequeno que SmolLM2-135M y 8 vec
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skebobic/Bobic-1.5-Lean
+- Hugging Face: https://huggingface.co/Skebobic/Bobic-1.5-Lean
 - Perfil del autor: https://huggingface.co/Skebobic
 - Dataset MMLU-Pro (TIGER-Lab): https://huggingface.co/datasets/TIGER-Lab/MMLU-Pro
 - Dataset ARC: https://huggingface.co/datasets/allenai/ai2_arc

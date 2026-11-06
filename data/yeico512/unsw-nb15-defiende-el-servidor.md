@@ -25,7 +25,7 @@ Su relevancia es doble: por un lado sirve como referencia reproducible de un flu
 | Variables de entrada | 42 (se excluyen `id`, `attack_cat` y `label`) |
 | Umbral de decisión | 0,639 (en `model_config.json`) |
 | Versión | `v2`, experimento `exp04_hist_gradient_boosting` |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace); modelo de 2,2 MB según la model card |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face); modelo de 2,2 MB según la model card |
 
 ## Arquitectura y entrenamiento
 
@@ -114,7 +114,7 @@ Matriz de confusión en test: TP 43.878 · FP 6.739 · TN 30.261 · FN 1.454. RO
 
 | Modelo | Familia | Parámetros / tamaño | Contexto | Recall ataque (val) | FPR (val) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `unsw-nb15-defiende-el-servidor` v2 | HistGradientBoosting | 2,2 MB; 200 iteraciones, 31 hojas | no aplica (42 variables) | 0,9560 | 4,99 % | other | HuggingFace, tag `v2` |
+| `unsw-nb15-defiende-el-servidor` v2 | HistGradientBoosting | 2,2 MB; 200 iteraciones, 31 hojas | no aplica (42 variables) | 0,9560 | 4,99 % | other | Hugging Face, tag `v2` |
 | `exp01_logreg_base` (v1, mismo autor) | Regresión logística + one-hot + estandarización | 0,3 MB | no aplica (42 variables) | 0,8955 | 5,44 % | other | Repo de GitHub, revisión `896ee3984613e60d2af1c5297163524216fec34b` |
 | Random Forest (referencia de la hipótesis del autor) | Bagging de árboles | no disponible | no aplica | no disponible | no disponible | no disponible | No se aportan métricas ni artefacto |
 | Otros clasificadores tabulares sobre UNSW-NB15 (XGBoost, LightGBM, etc.) | Gradient boosting | no disponible | no aplica | no disponible | no disponible | no disponible | No evaluados en la información proporcionada |
@@ -136,7 +136,7 @@ La única comparación con datos verificables es la de v1 frente a v2, ambos del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yeico512/unsw-nb15-defiende-el-servidor
+- Modelo en Hugging Face: https://huggingface.co/yeico512/unsw-nb15-defiende-el-servidor
 - Repositorio de código (GitHub): https://github.com/Jhaycoltez512/Taller_MLOps (commit de entrenamiento `fecc3296fb838bbc6ec8296959021f9fbeb70cc4`)
 - Configuración del experimento: `configs/experiments/exp04_hist_gradient_boosting.yaml` (en el repositorio de código)
 - Dataset UNSW-NB15: https://research.unsw.edu.au/projects/unsw-nb15-dataset

@@ -33,7 +33,7 @@ Las cuantizaciones de mradermacher se generan con herramientas estandar del ecos
 - Razonamiento y respuesta a instrucciones sin los filtros de rechazo del modelo original (comportamiento "uncensored").
 - Procesamiento multimodal de imagenes mediante el proyector `mmproj` incluido (Q8_0 o f16), heredado de Gemma 3.
 - Soporte de conversaciones multi-turno (formato conversacional declarado en los tags).
-- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue en servidores compatibles con la API de HuggingFace/OpenAI.
+- Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que facilita su despliegue en servidores compatibles con la API de Hugging Face/OpenAI.
 - Capacidades multilingues del modelo base potencialmente preservadas, aunque el autor solo declara ingles.
 - No se documenta soporte explicito de tool calling, function calling ni modo "thinking" en la informacion proporcionada.
 
@@ -85,7 +85,7 @@ La comparativa se limita a variantes del mismo Gemma 3 12B porque no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-3-12b-it-ultra-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-3-12b-it-ultra-heretic-GGUF
 - Modelo base (safetensors): https://huggingface.co/llmfan46/gemma-3-12b-it-ultra-uncensored-heretic
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/gemma-3-12b-it-ultra-heretic-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#gemma-3-12b-it-ultra-heretic-GGUF

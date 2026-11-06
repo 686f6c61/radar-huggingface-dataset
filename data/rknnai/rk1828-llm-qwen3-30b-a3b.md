@@ -6,7 +6,7 @@ RK1828-LLM-Qwen3-30B-A3B es un paquete de despliegue publicado por RKNNAI que ad
 
 El modelo subyacente es un transformer de mezcla de expertos (MoE) de la familia Qwen3, orientado a generación de texto conversacional. La configuración publicada emplea cuantización w4a16 (pesos a 4 bits, activaciones a 16 bits) en cada uno de los cinco segmentos, caché KV en int4 y una longitud de contexto de 20.480 tokens por segmento. Cada segmento se ejecuta con 8 núcleos de NPU.
 
-Su relevancia es acotada pero específica: permite ejecutar un MoE de gran tamaño en hardware de borde basado en NPU Rockchip RK1828, un escenario donde las alternativas habituales (GPUs de datacenter o consumer) no están disponibles. El repositorio no incluye datos de entrenamiento, benchmarks ni información sobre idiomas más allá de lo que herede del modelo fuente, por lo que esta ficha se limita a lo documentado en la model card y en los metadatos de HuggingFace.
+Su relevancia es acotada pero específica: permite ejecutar un MoE de gran tamaño en hardware de borde basado en NPU Rockchip RK1828, un escenario donde las alternativas habituales (GPUs de datacenter o consumer) no están disponibles. El repositorio no incluye datos de entrenamiento, benchmarks ni información sobre idiomas más allá de lo que herede del modelo fuente, por lo que esta ficha se limita a lo documentado en la model card y en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -88,10 +88,10 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RKNNAI/RK1828-LLM-Qwen3-30B-A3B
+- Repositorio en Hugging Face: https://huggingface.co/RKNNAI/RK1828-LLM-Qwen3-30B-A3B
 - Modelo fuente: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Descarga vía ModelScope: `modelscope download --model RKNNAI/RK1828-LLM-Qwen3-30B-A3B --revision v1.2.0`
-- Descarga vía HuggingFace CLI: `hf download RKNNAI/RK1828-LLM-Qwen3-30B-A3B --revision v1.2.0`
+- Descarga vía Hugging Face CLI: `hf download RKNNAI/RK1828-LLM-Qwen3-30B-A3B --revision v1.2.0`
 - Documentación de la configuración: `Qwen3-30B-A3B-w4a16-8-20480-normal-kv-int4-5cards/README.md` (dentro del repositorio)
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Papers, blogs o demos adicionales: no disponibles en la información proporcionada.

@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jakemu/Qwen3.5-27B-int8-g128-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jakemu/Qwen3.5-27B-int8-g128-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Repositorio hermano sin MTP: https://huggingface.co/Jakemu/Qwen3.5-27B-int8-g128/tree/8e69ff4b730ad3d372918aee22e094472c1a47ed
 - Cargador infer-opt (commit validado): https://github.com/Jake-Song/infer-opt/tree/eaa6d3551670ca110cfcfff19b35a6d64f420ac5

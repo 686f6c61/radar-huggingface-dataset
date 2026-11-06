@@ -95,7 +95,7 @@ La informacion proporcionada no identifica por nombre los modelos baseline compa
 | MMEB-v3 global | 58,46 | 53,27 (mejor baseline) |
 | Modalidades | Texto, imagen, video, audio, documento visual, agente | no disponible |
 | Licencia | apache-2.0 | no disponible |
-| Disponibilidad | HuggingFace (ATH-MaaS) | no disponible |
+| Disponibilidad | Hugging Face (ATH-MaaS) | no disponible |
 
 Comparativa nominal con alternativas concretas: no disponible.
 
@@ -112,7 +112,7 @@ Comparativa nominal con alternativas concretas: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
+- Modelo en Hugging Face: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 - Repositorio GitHub: https://github.com/ATH-MaaS/Ovis-Omni-Embedding
 - Informe tecnico (arXiv): https://arxiv.org/html/2609.25165v1
 - PDF del informe tecnico: https://arxiv.org/pdf/2609.25165

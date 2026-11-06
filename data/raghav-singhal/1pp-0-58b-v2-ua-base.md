@@ -77,10 +77,10 @@ Verificación de pesos HF frente a Megatron:
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| 1pp-0.58b-v2-ua-base | 580M | 4.096 | Apache 2.0 | HuggingFace | Artefacto de investigación, sin SFT |
-| SmolLM2-360M | 360M | 8.192 | Apache 2.0 | HuggingFace | Modelo base e instructivo de HuggingFace, mismo tokenizador que este modelo |
-| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | HuggingFace | Modelo base e instructivo con contexto mucho mayor |
-| Llama-3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace | Mayor tamano y contexto, licencia con restricciones |
+| 1pp-0.58b-v2-ua-base | 580M | 4.096 | Apache 2.0 | Hugging Face | Artefacto de investigación, sin SFT |
+| SmolLM2-360M | 360M | 8.192 | Apache 2.0 | Hugging Face | Modelo base e instructivo de Hugging Face, mismo tokenizador que este modelo |
+| Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Hugging Face | Modelo base e instructivo con contexto mucho mayor |
+| Llama-3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face | Mayor tamano y contexto, licencia con restricciones |
 
 Los datos de contexto y licencia de los modelos comparables provienen de sus fichas públicas; no se dispone de comparaciones de rendimiento con este modelo en la información proporcionada.
 
@@ -97,7 +97,7 @@ Los datos de contexto y licencia de los modelos comparables provienen de sus fic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (wandb, SFT): https://wandb.ai/raghav_singhal/1pp-sft

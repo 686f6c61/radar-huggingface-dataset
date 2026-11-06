@@ -71,8 +71,8 @@ La comparación con modelos CLIP consolidados es asimétrica por diseño: este r
 |---|---|---|---|---|---|
 | clip-contrastive-tryout-2024 | 16.576 | no disponible | MIT | Repositorio de investigación, sin entrenar | Sin benchmarks publicados |
 | OpenAI CLIP ViT-L/14 | aprox. 428 M | aprox. 77 tokens de texto | MIT (código y pesos) | Ampliamente disponible | Métricas publicadas por el autor |
-| OpenCLIP ViT-L/14 | aprox. 428 M | aprox. 77 tokens de texto | Según checkpoint (habitualmente MIT o similar) | Disponible en HuggingFace | Métricas publicadas por el autor |
-| SigLIP | no disponible | no disponible | Apache 2.0 | Disponible en HuggingFace | Métricas publicadas por el autor |
+| OpenCLIP ViT-L/14 | aprox. 428 M | aprox. 77 tokens de texto | Según checkpoint (habitualmente MIT o similar) | Disponible en Hugging Face | Métricas publicadas por el autor |
+| SigLIP | no disponible | no disponible | Apache 2.0 | Disponible en Hugging Face | Métricas publicadas por el autor |
 
 ## Limitaciones y advertencias
 
@@ -87,5 +87,5 @@ La comparación con modelos CLIP consolidados es asimétrica por diseño: este r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ccardosobernardo9350/clip-contrastive-tryout-2024
+- Hugging Face: https://huggingface.co/Ccardosobernardo9350/clip-contrastive-tryout-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tsf-tta-artifacts` no es un modelo de lenguaje en sentido estricto, sino un repositorio de artefactos de investigación para un proyecto de adaptación en tiempo de test (test-time adaptation, TTA) aplicada a pronóstico de series temporales (time-series forecasting, TSF). Lo publica el usuario de HuggingFace `somfieao` y contiene datasets, checkpoints y resultados experimentales generados durante el desarrollo de un trabajo de investigación. El repositorio no incluye pesos de un modelo fundacional único ni una model card con especificaciones de inferencia; su propósito es la reproducibilidad de los experimentos.
+`tsf-tta-artifacts` no es un modelo de lenguaje en sentido estricto, sino un repositorio de artefactos de investigación para un proyecto de adaptación en tiempo de test (test-time adaptation, TTA) aplicada a pronóstico de series temporales (time-series forecasting, TSF). Lo publica el usuario de Hugging Face `somfieao` y contiene datasets, checkpoints y resultados experimentales generados durante el desarrollo de un trabajo de investigación. El repositorio no incluye pesos de un modelo fundacional único ni una model card con especificaciones de inferencia; su propósito es la reproducibilidad de los experimentos.
 
-El contenido se organiza en tres grandes bloques: `datasets/` (14 benchmarks públicos en CSV, cachés de Lorenz-96 y tensores preprocesados para los experimentos híbridos TAFAS), `checkpoints/` (modelos backbone fuente, artefactos de métodos como ResKoop, DirectY, LongF y variantes, ablaciones arquitectónicas y checkpoints de validación de hipótesis) y `results/` (tablas pivote, MASTER.csv y diagnósticos exploratorios). El tamaño del repositorio en HuggingFace es de 6,6 GB, aunque la model card declara un total de aproximadamente 91 GB para el conjunto completo de artefactos, lo que sugiere que la subida está parcialmente completada o que el total incluye material no alojado en el Hub.
+El contenido se organiza en tres grandes bloques: `datasets/` (14 benchmarks públicos en CSV, cachés de Lorenz-96 y tensores preprocesados para los experimentos híbridos TAFAS), `checkpoints/` (modelos backbone fuente, artefactos de métodos como ResKoop, DirectY, LongF y variantes, ablaciones arquitectónicas y checkpoints de validación de hipótesis) y `results/` (tablas pivote, MASTER.csv y diagnósticos exploratorios). El tamaño del repositorio en Hugging Face es de 6,6 GB, aunque la model card declara un total de aproximadamente 91 GB para el conjunto completo de artefactos, lo que sugiere que la subida está parcialmente completada o que el total incluye material no alojado en el Hub.
 
 La relevancia de este repositorio es acotada: sirve a investigadores que quieran reproducir o extender el pipeline TTA sobre backbones tipo PatchTST en benchmarks estándar de series temporales (ETTh1/h2, ETm1/m2, electricity, traffic, weather, solar, exchange_rate, PEMS03/04/07/08). No es un modelo desplegable para producción ni un artefacto con licencia declarada para uso comercial.
 
@@ -76,5 +76,5 @@ No disponible. El repositorio no es un modelo comparable a otros modelos de pron
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/somfieao/tsf-tta-artifacts
+- Repositorio en Hugging Face: https://huggingface.co/somfieao/tsf-tta-artifacts
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales asociados al proyecto.

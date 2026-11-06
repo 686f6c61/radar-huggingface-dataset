@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| orangefabercastell/fine-tuning-agent-on-traces-v2 | 2,6 B | no disponible | no disponible | HuggingFace |
-| google/gemma-2-2b-it | 2,6 B | 8192 | Gemma Terms of Use | HuggingFace |
-| microsoft/phi-3-mini | 3,8 B | 4096 | MIT | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32768 | Apache 2.0 | HuggingFace |
+| orangefabercastell/fine-tuning-agent-on-traces-v2 | 2,6 B | no disponible | no disponible | Hugging Face |
+| google/gemma-2-2b-it | 2,6 B | 8192 | Gemma Terms of Use | Hugging Face |
+| microsoft/phi-3-mini | 3,8 B | 4096 | MIT | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32768 | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en modelos de tamaño similar, pero no se dispone de datos de rendimiento del modelo evaluado. Gemma 2 2B es la base probable, por lo que su rendimiento debería ser comparable o ligeramente superior en tareas de agente si el fine-tuning fue efectivo. Phi-3-mini y Qwen2.5-1.5B son alternativas con licencias más permisivas y documentación más completa.
 
@@ -74,7 +74,7 @@ La comparativa se basa en modelos de tamaño similar, pero no se dispone de dato
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orangefabercastell/fine-tuning-agent-on-traces-v2
+- Repositorio Hugging Face: https://huggingface.co/orangefabercastell/fine-tuning-agent-on-traces-v2
 - Tutorial de destilación de trazas de agentes (Microsoft Build 2026): https://github.com/microsoft-foundry/build-2026-demos/blob/main/fine-tuning-and-adaption/AgentTracesDistillation/demo_distillation.ipynb
 - Guía práctica de fine-tuning de razonamiento de agentes: https://ai4u.space/blog/agent-reasoning-analysis-fine-tuning-lambda-hermes-dataset
 - Tutorial de parsing y fine-tuning de trazas de agentes: https://www.marktechpost.com/2026/05/02/a-coding-implementation-to-parsing-analyzing-visualizing-and-fine-tuning-agent-reasoning-traces-using-the-lambda-hermes-agent-reasoning-traces-dataset/

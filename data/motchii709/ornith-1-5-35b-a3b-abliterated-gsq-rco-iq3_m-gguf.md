@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre estos builds más allá 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/motchii709/Ornith-1.5-35B-A3B-abliterated-GSQ-RCO-IQ3_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/motchii709/Ornith-1.5-35B-A3B-abliterated-GSQ-RCO-IQ3_M-GGUF
 - Modelo base (pesos abliterated): https://huggingface.co/huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Donante de asignación del cuerpo: https://huggingface.co/pfeifferj/Ornith-1.5-35B-A3B-GSQ-RCO-GGUF

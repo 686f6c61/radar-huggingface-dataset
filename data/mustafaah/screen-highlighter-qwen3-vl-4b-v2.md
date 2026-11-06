@@ -72,7 +72,7 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `mustafaah/screen-highlighter-qwen3-vl-4b-v2` | No disponible (base de ~4B) | No disponible | No disponible | Sin pesos publicados (estado de preparacion) |
-| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | ~4B segun identificador | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `Qwen/Qwen3-VL-4B-Instruct` (modelo base) | ~4B segun identificador | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otras alternativas multimodales de tamano similar | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-4b-v2
+- Repositorio en Hugging Face: https://huggingface.co/mustafaah/screen-highlighter-qwen3-vl-4b-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Paper, blog, repositorio de codigo o demo del proyecto: no disponible
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a paginas de ayuda de inicio de sesion de Gmail y no guardan relacion con el proyecto)

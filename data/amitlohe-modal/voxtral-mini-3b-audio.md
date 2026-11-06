@@ -67,9 +67,9 @@ La model card incluye gráficas de resultados (WER medio sobre FLEURS, Mozilla C
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voxtral Mini 3B (este fork) | ~4,7 B | 32k tokens | Audio + texto | Apache 2.0 | HuggingFace, vLLM, Transformers |
-| mistralai/Voxtral-Mini-3B-2507 (original) | ~4,7 B | 32k tokens | Audio + texto | Apache 2.0 | HuggingFace |
-| Ministral 3B (backbone) | ~3 B | No disponible | Solo texto | No disponible en la información | HuggingFace |
+| Voxtral Mini 3B (este fork) | ~4,7 B | 32k tokens | Audio + texto | Apache 2.0 | Hugging Face, vLLM, Transformers |
+| mistralai/Voxtral-Mini-3B-2507 (original) | ~4,7 B | 32k tokens | Audio + texto | Apache 2.0 | Hugging Face |
+| Ministral 3B (backbone) | ~3 B | No disponible | Solo texto | No disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks numéricos para comparar el rendimiento frente a alternativas de la misma categoría en la información proporcionada.
 

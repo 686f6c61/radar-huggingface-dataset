@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como nostalji533/azizbabacan es un repositorio alojado en HuggingFace por el usuario nostalji533. La informacion publica disponible es extremadamente limitada: la model card unicamente declara la licencia openrail, sin incluir descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. No se especifica pipeline de inferencia, idiomas soportados ni formato de pesos.
+El modelo identificado como nostalji533/azizbabacan es un repositorio alojado en Hugging Face por el usuario nostalji533. La informacion publica disponible es extremadamente limitada: la model card unicamente declara la licencia openrail, sin incluir descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. No se especifica pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 El repositorio registra cero descargas y cero likes, y fue creado y actualizado en la misma fecha (30 de septiembre de 2026), lo que sugiere una publicacion sin mantenimiento posterior ni validacion por parte de la comunidad. No hay evidencia de que el modelo haya sido evaluado, cuantizado o integrado en ninguna herramienta de inferencia conocida.
 
@@ -76,5 +76,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni el dominio de aplic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nostalji533/azizbabacan
+- Hugging Face: https://huggingface.co/nostalji533/azizbabacan
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de codigo o demos en la informacion proporcionada.

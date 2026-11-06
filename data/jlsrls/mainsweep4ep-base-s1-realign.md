@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-base-s1-realign` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en HuggingFace. Se trata de un artefacto de investigación más que de un modelo listo para producción: el nombre sugiere que forma parte de una barrida de hiperparámetros (mainsweep) sobre el corpus o la configuración de entrenamiento, y no incluye documentación sobre el dataset, la licencia ni los idiomas soportados.
+`jlsrls/mainsweep4ep-base-s1-realign` es un ajuste fino (fine-tuning) supervisado del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en Hugging Face. Se trata de un artefacto de investigación más que de un modelo listo para producción: el nombre sugiere que forma parte de una barrida de hiperparámetros (mainsweep) sobre el corpus o la configuración de entrenamiento, y no incluye documentación sobre el dataset, la licencia ni los idiomas soportados.
 
 Técnicamente hereda la arquitectura del modelo base: un transformer decoder-only denso de la familia Llama 3.2, con aproximadamente 1.230 millones de parámetros, atención con Grouped Query Attention (GQA) y una ventana de contexto declarada de 128.000 tokens. El entrenamiento se realizó con SFT (supervised fine-tuning) mediante la librería TRL 0.24.0 y el framework Unsloth, según los tags del repositorio y la model card.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| jlsrls/mainsweep4ep-base-s1-realign | ~1,23B (heredado) | 128k (heredado, no verificado) | No disponible | HuggingFace, 0 descargas | Fine-tune SFT con TRL/Unsloth, sin benchmarks ni dataset documentado |
-| unsloth/Llama-3.2-1B-Instruct | ~1,23B | 128k | Llama 3.2 Community License | HuggingFace, ampliamente distribuido | Modelo base del anterior, con soporte de herramientas y cuantizaciones comunitarias |
-| Llama-3.2-1B-Instruct (Meta) | ~1,23B | 128k | Llama 3.2 Community License | HuggingFace y catálogo oficial | Versión original del mismo modelo; referencia para medir la deriva del fine-tune |
-| jlsrls/mainsweep-base-s1-realign | No disponible | No disponible | No disponible | HuggingFace | Checkpoint hermano del mismo autor dentro de la misma barrida |
+| jlsrls/mainsweep4ep-base-s1-realign | ~1,23B (heredado) | 128k (heredado, no verificado) | No disponible | Hugging Face, 0 descargas | Fine-tune SFT con TRL/Unsloth, sin benchmarks ni dataset documentado |
+| unsloth/Llama-3.2-1B-Instruct | ~1,23B | 128k | Llama 3.2 Community License | Hugging Face, ampliamente distribuido | Modelo base del anterior, con soporte de herramientas y cuantizaciones comunitarias |
+| Llama-3.2-1B-Instruct (Meta) | ~1,23B | 128k | Llama 3.2 Community License | Hugging Face y catálogo oficial | Versión original del mismo modelo; referencia para medir la deriva del fine-tune |
+| jlsrls/mainsweep-base-s1-realign | No disponible | No disponible | No disponible | Hugging Face | Checkpoint hermano del mismo autor dentro de la misma barrida |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la información proporcionada, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-base-s1-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-base-s1-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Checkpoint hermano del mismo autor: https://huggingface.co/jlsrls/mainsweep-base-s1-realign
 - Repositorio de TRL: https://github.com/huggingface/trl

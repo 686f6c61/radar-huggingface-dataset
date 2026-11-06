@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-MONADD | no disponible | no disponible | `.monadd` | MIT | HuggingFace (Monadd-AI) |
-| DeepSeek-V4-Flash (original) | no disponible en la información proporcionada | no disponible | safetensors (presumible, no confirmado) | MIT | HuggingFace (deepseek-ai) |
+| DeepSeek-V4-Flash-MONADD | no disponible | no disponible | `.monadd` | MIT | Hugging Face (Monadd-AI) |
+| DeepSeek-V4-Flash (original) | no disponible en la información proporcionada | no disponible | safetensors (presumible, no confirmado) | MIT | Hugging Face (deepseek-ai) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para establecer una comparativa rigurosa con modelos de la misma categoría. La única comparación posible es con el modelo base original, del que este repositorio es una conversión de formato.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para establecer una comparativa rigurosa con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Monadd-AI/DeepSeek-V4-Flash-MONADD
+- Repositorio Hugging Face: https://huggingface.co/Monadd-AI/DeepSeek-V4-Flash-MONADD
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/blob/main/LICENSE
 - Banner del proyecto: https://huggingface.co/spaces/Monadd-AI/README/resolve/main/banner.png

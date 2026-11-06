@@ -91,7 +91,7 @@ No se dispone de resultados de evaluacion que permitan comparar el rendimiento d
 
 ## Enlaces
 
-- HuggingFace (este espejo): https://huggingface.co/aoiandroid/LFM2-350M-ENJP-MT-GGUF
+- Hugging Face (este espejo): https://huggingface.co/aoiandroid/LFM2-350M-ENJP-MT-GGUF
 - Repositorio original: https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT-GGUF
 - Arbol del commit fuente: https://huggingface.co/LiquidAI/LFM2-350M-ENJP-MT-GGUF/tree/889c88c3d3681b4f342ae210a1d2a1369aba0e10
 - Licencia (fichero LICENSE en el repositorio): incluida en el propio repositorio

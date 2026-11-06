@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bjding98/side-multimodal-reasoning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre razonamiento multimodal publicado en HuggingFace bajo licencia cc-by-4.0. La model card lo describe explicitamente como "reading notes and an experiment sketch", con dos artefactos principales: `review.md` (nota principal) y `README.md` (documentacion), y niega de forma explicita haber liberado codigo, ablaciones completas, mejoras de benchmark o un checkpoint entrenado.
+El repositorio `bjding98/side-multimodal-reasoning` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre razonamiento multimodal publicado en Hugging Face bajo licencia cc-by-4.0. La model card lo describe explicitamente como "reading notes and an experiment sketch", con dos artefactos principales: `review.md` (nota principal) y `README.md` (documentacion), y niega de forma explicita haber liberado codigo, ablaciones completas, mejoras de benchmark o un checkpoint entrenado.
 
 El repositorio incluye un fichero en formato safetensors cuya cabecera declara 24.832 parametros totales y un tamano de repositorio de 0,0 GB. Ese volumen es incompatible con cualquier modelo funcional de razonamiento multimodal (que requieren del orden de miles de millones de parametros), por lo que debe interpretarse como un artefacto de prueba, un placeholder o un fichero auxiliar sin capacidad de inferencia util.
 
@@ -23,7 +23,7 @@ Su relevancia es metodologica, no tecnica: sirve como ejemplo de documentacion d
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura en la informacion disponible. La unica referencia es la etiqueta `transformer` en los metadatos de HuggingFace, sin fichero `config.json` documentado, sin codigo de definicion del modelo y sin detalles de atencion, normalizacion, tokenizador o posicional encoding. Tampoco hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineamiento (RLHF, DPO, SFT).
+No se describe ninguna arquitectura en la informacion disponible. La unica referencia es la etiqueta `transformer` en los metadatos de Hugging Face, sin fichero `config.json` documentado, sin codigo de definicion del modelo y sin detalles de atencion, normalizacion, tokenizador o posicional encoding. Tampoco hay informacion sobre datos de entrenamiento, numero de tokens, composicion del dataset ni tecnicas de alineamiento (RLHF, DPO, SFT).
 
 El propio autor declara que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y que no existe checkpoint entrenado. El contenido del repositorio es una propuesta de comparacion con baselines emparejados y un conjunto de preguntas abiertas, con menciones a VQAv2, GQA y NLVR2 como contexto de evaluacion previsto, no como evaluaciones ejecutadas. No hay innovaciones tecnicas documentadas (ni decodificacion especulativa, ni atencion lineal, ni hibridaciones SSM).
 
@@ -42,7 +42,7 @@ El propio autor declara que las secciones marcadas como planes o hipotesis no de
 - Diseño de un protocolo de evaluacion multimodal: las referencias a VQAv2, GQA y NLVR2 sirven como punto de partida para seleccionar tareas de emparejamiento vision-lenguaje y justificar la eleccion de baselines emparejados por tamano y datos.
 - Auditoria de claims en publicaciones: el documento resulta util como checklist para detectar afirmaciones sin dataset versionado, sin comandos reproducibles, sin semillas ni logs crudos.
 - Revision bibliografica inicial: la lista de referencias tematicas ahorra tiempo en la fase de exploracion de un proyecto sobre razonamiento multimodal.
-- Docencia y formacion: sirve como ejemplo practico de buenas y malas practicas al documentar un repositorio de investigacion en HuggingFace, incluido el uso de etiquetas enganosas.
+- Docencia y formacion: sirve como ejemplo practico de buenas y malas practicas al documentar un repositorio de investigacion en Hugging Face, incluido el uso de etiquetas enganosas.
 - Control de calidad de metadatos: permite estudiar como un repositorio etiquetado con `transformer` y `multimodal-reasoning` puede aparecer en busquedas como si fuera un modelo, y por que conviene verificar descargas, tamano de repo y presencia de `config.json` antes de integrarlo.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 
 - No es un modelo utilizable: no hay checkpoint entrenado, ni configuracion, ni tokenizador, ni codigo de inferencia.
 - Los 24.832 parametros declarados en la cabecera safetensors no corresponden a ningun modelo de razonamiento multimodal operativo; tratarlos como tal seria un error de evaluacion.
-- Las etiquetas `transformer` y `multimodal-reasoning` pueden inducir a confundir el repositorio con un modelo desplegable en busquedas automaticas de HuggingFace.
+- Las etiquetas `transformer` y `multimodal-reasoning` pueden inducir a confundir el repositorio con un modelo desplegable en busquedas automaticas de Hugging Face.
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingue ni siquiera en castellano.
 - No se publican benchmarks, y el autor declara que no debe interpretarse ninguna seccion como resultado experimental; cualquier cifra atribuida a este repositorio seria inventada.
 - Riesgo de alucinacion y sesgos: no evaluables, al no existir modelo desplegado ni evaluacion publicada.
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye ningun modelo comparable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bjding98/side-multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/bjding98/side-multimodal-reasoning
 - Nota principal citada en la model card: `review.md` (dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del repositorio)
 - Busqueda web realizada: no se ha encontrado ningun enlace relevante sobre este repositorio, su autor, papers asociados, blogs, demos ni codigo adicional. Los resultados devueltos correspondian a guias de seguridad no relacionadas con el modelo, por lo que se omiten.

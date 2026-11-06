@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rlve-archive-mopd-sweep-n8-learned-teachers-2026100-04-jugpuzzle-8932518d16bc` es un checkpoint de investigación archivado y publicado en HuggingFace por el usuario davidheineman. No es un lanzamiento oficial ni un modelo orientado a producción: la propia model card lo describe como "Archived checkpoint: 04-JugPuzzle", procedente de un entrenamiento distribuido con Megatron y preservado en formato `hf-safetensors`. Los ficheros safetensors del repositorio suman 1.777.088.000 parámetros, aproximadamente 1,78 mil millones, y el repositorio ocupa 3,6 GB.
+`rlve-archive-mopd-sweep-n8-learned-teachers-2026100-04-jugpuzzle-8932518d16bc` es un checkpoint de investigación archivado y publicado en Hugging Face por el usuario davidheineman. No es un lanzamiento oficial ni un modelo orientado a producción: la propia model card lo describe como "Archived checkpoint: 04-JugPuzzle", procedente de un entrenamiento distribuido con Megatron y preservado en formato `hf-safetensors`. Los ficheros safetensors del repositorio suman 1.777.088.000 parámetros, aproximadamente 1,78 mil millones, y el repositorio ocupa 3,6 GB.
 
 La etiqueta principal del repositorio (`qwen2`) apunta a que la arquitectura subyacente pertenece a la familia Qwen2, aunque la model card no confirma tokenizador, ventana de contexto ni idiomas. El nombre del experimento, `mopd-sweep-n8-learned-teachers`, y la ruta original `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/04-JugPuzzle` indican un barrido de hiperparámetros sobre una variante de entrenamiento con profesores aprendidos y una tarea denominada JugPuzzle, dentro del proyecto RLVE.
 
@@ -23,7 +23,7 @@ Su relevancia es de reproducibilidad: permite recuperar el estado exacto del mod
 
 ## Arquitectura y entrenamiento
 
-La única información estructural fiable es la que aparece en las etiquetas y en la model card: un transformer (etiqueta `qwen2`), entrenado con Megatron en modo distribuido y guardado tanto en formato HuggingFace safetensors como en el checkpoint distribuido dentro de `checkpoint/`. No se documentan número de capas, dimensión oculta, número de cabezas de atención, tipo de activación ni si se emplea atención con ventana deslizante, GQA o decodificación especulativa.
+La única información estructural fiable es la que aparece en las etiquetas y en la model card: un transformer (etiqueta `qwen2`), entrenado con Megatron en modo distribuido y guardado tanto en formato Hugging Face safetensors como en el checkpoint distribuido dentro de `checkpoint/`. No se documentan número de capas, dimensión oculta, número de cabezas de atención, tipo de activación ni si se emplea atención con ventana deslizante, GQA o decodificación especulativa.
 
 Tampoco hay datos sobre el corpus de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo fases de RLHF, DPO o RL, y qué papel cumplen exactamente los "learned teachers" del nombre del experimento. El run se detuvo en el paso 149, un valor bajo que sugiere un entrenamiento corto, posiblemente de barrido comparativo y no de convergencia final. La tarea `JugPuzzle` no está descrita en la información disponible. Todo lo relativo a datos, objetivo de entrenamiento e hiperparámetros debe considerarse no disponible.
 
@@ -98,7 +98,7 @@ Los datos de las filas comparativas proceden de la documentación pública de ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-04-jugpuzzle-8932518d16bc
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-04-jugpuzzle-8932518d16bc
 - Run de W&B referenciado en la model card: ID `98e82ef2` (no se proporciona URL)
 - Ruta original del checkpoint: `runs/mopd-sweep-n8-learned-teachers-20261002-165650/resumable/04-JugPuzzle` (referencia interna, sin URL pública)
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada

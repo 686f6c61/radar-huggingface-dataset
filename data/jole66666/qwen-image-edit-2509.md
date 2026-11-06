@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Edicion multi-imagen | ControlNet nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-Edit-2509 (esta ficha) | 20.430.401.088 | Sí, 1 a 3 imágenes | Sí (profundidad, bordes, keypoints) | Apache 2.0 | HuggingFace y ModelScope |
-| Qwen-Image-Edit (agosto de 2025) | No disponible | No documentado | No documentado | No disponible en la información proporcionada | HuggingFace y ModelScope |
-| Qwen-Image (modelo base de generación de imagen) | No disponible | No aplica (texto a imagen) | No documentado | No disponible en la información proporcionada | HuggingFace y ModelScope |
+| Qwen-Image-Edit-2509 (esta ficha) | 20.430.401.088 | Sí, 1 a 3 imágenes | Sí (profundidad, bordes, keypoints) | Apache 2.0 | Hugging Face y ModelScope |
+| Qwen-Image-Edit (agosto de 2025) | No disponible | No documentado | No documentado | No disponible en la información proporcionada | Hugging Face y ModelScope |
+| Qwen-Image (modelo base de generación de imagen) | No disponible | No aplica (texto a imagen) | No documentado | No disponible en la información proporcionada | Hugging Face y ModelScope |
 
 No se dispone en la información proporcionada de datos comparativos con otras familias de modelos de edición de imagen.
 
@@ -89,13 +89,13 @@ No se dispone en la información proporcionada de datos comparativos con otras f
 
 ## Enlaces
 
-- Ficha de HuggingFace analizada: https://huggingface.co/Jole66666/Qwen-Image-Edit-2509
-- Modelo oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
+- Ficha de Hugging Face analizada: https://huggingface.co/Jole66666/Qwen-Image-Edit-2509
+- Modelo oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-Edit-2509
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-Edit-2509
 - Informe técnico (PDF): https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-Image/Qwen_Image.pdf
 - Artículo en arXiv: https://arxiv.org/abs/2508.02324
 - Blog de presentación: https://qwenlm.github.io/blog/qwen-image-edit/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-Edit
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image
 - Qwen Chat: https://chat.qwen.ai/
 - Discord: https://discord.gg/CV4E9rpNSD

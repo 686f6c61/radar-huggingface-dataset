@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-NVFP4-GPTQ-Strata es una cuantizacion del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario Maximilian228 y empaquetada especificamente para el motor de inferencia Strata NVFP4 (libreria declarada en HuggingFace: `strata`). El autor describe el modelo original como una MoE hibrida de 125 B, mientras que los metadatos safetensors del repositorio cuantizado declaran 51.200.245.760 parametros totales; esa discrepancia entre ambas cifras no queda explicada en la informacion disponible. El objetivo de esta ficha es dejar claro que no se trata de un modelo nuevo, sino de un artefacto de cuantizacion con un proposito muy concreto: ejecutar un MoE grande en hardware de consumo.
+Qwen3.8-Flash-Next-NVFP4-GPTQ-Strata es una cuantizacion del modelo base Qwen/Qwen3.8-Flash-Next, publicada por el usuario Maximilian228 y empaquetada especificamente para el motor de inferencia Strata NVFP4 (libreria declarada en Hugging Face: `strata`). El autor describe el modelo original como una MoE hibrida de 125 B, mientras que los metadatos safetensors del repositorio cuantizado declaran 51.200.245.760 parametros totales; esa discrepancia entre ambas cifras no queda explicada en la informacion disponible. El objetivo de esta ficha es dejar claro que no se trata de un modelo nuevo, sino de un artefacto de cuantizacion con un proposito muy concreto: ejecutar un MoE grande en hardware de consumo.
 
 La tesis del autor es que cuantizando todos los expertos enrutados a NVFP4 mediante GPTQ se conserva un 93,6 % de coincidencia en el token mas probable respecto a la referencia Q8_0, con 177 tokens/s de decodificacion y 3,9 s para procesar un prompt de 32.007 tokens, usando 69 GiB de RAM en uso sobre un PC de 96 GB. Con ello, el modelo cabe segun el autor en una sola GPU RTX de la serie 20 a 50 con 12 GB o mas de VRAM, delegando los expertos en CPU y RAM.
 
@@ -111,7 +111,7 @@ No se dispone de comparativas con modelos de otros desarrolladores en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maximilian228/Qwen3.8-Flash-Next-NVFP4-GPTQ-Strata
+- Repositorio en Hugging Face: https://huggingface.co/Maximilian228/Qwen3.8-Flash-Next-NVFP4-GPTQ-Strata
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Motor Strata NVFP4: https://github.com/sergqwer/strata-nvfp4
 - Variante Q8_0 del mismo autor: https://huggingface.co/Maximilian228/Qwen3.8-Flash-Next-Q8_0-Strata

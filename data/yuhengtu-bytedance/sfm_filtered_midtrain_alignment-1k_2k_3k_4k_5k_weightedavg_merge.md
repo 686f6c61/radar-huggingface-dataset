@@ -4,7 +4,7 @@
 
 Este modelo es un experimento de fusión de pesos (model merging) creado por el usuario `yuhengtu-bytedance` mediante la herramienta [mergekit](https://github.com/cg123/mergekit). Se trata de una combinación lineal de cinco checkpoints intermedios de un mismo modelo base pre-entrenado, denominado `filtered_midtrain_alignment`, que probablemente pertenece a un proceso de entrenamiento de ByteDance. El objetivo de esta técnica es obtener un modelo con mejores capacidades que cualquiera de los checkpoints individuales, sin necesidad de entrenamiento adicional.
 
-El modelo resultante tiene aproximadamente 6,86 mil millones de parámetros y está basado en la arquitectura GPT-NeoX, según los tags de HuggingFace. Está orientado a generación de texto y conversación, y se distribuye en formato `safetensors` con pesos en `bfloat16`. La fusión se realizó con el método Linear descrito en el artículo [arxiv:2203.05482](https://arxiv.org/abs/2203.05482), utilizando pesos proporcionales al número de pasos de entrenamiento de cada checkpoint (1, 2, 3, 4 y 5 para los pasos 1000, 2000, 3000, 4000 y 5000 respectivamente).
+El modelo resultante tiene aproximadamente 6,86 mil millones de parámetros y está basado en la arquitectura GPT-NeoX, según los tags de Hugging Face. Está orientado a generación de texto y conversación, y se distribuye en formato `safetensors` con pesos en `bfloat16`. La fusión se realizó con el método Linear descrito en el artículo [arxiv:2203.05482](https://arxiv.org/abs/2203.05482), utilizando pesos proporcionales al número de pasos de entrenamiento de cada checkpoint (1, 2, 3, 4 y 5 para los pasos 1000, 2000, 3000, 4000 y 5000 respectivamente).
 
 La relevancia de este modelo radica en que explora una vía de mejora de modelos de lenguaje sin coste de entrenamiento adicional, una línea de investigación activa en la comunidad open source. Sin embargo, al ser un artefacto experimental sin documentación detallada ni benchmarks publicados, su utilidad práctica es limitada y debe evaluarse con cautela.
 
@@ -12,7 +12,7 @@ La relevancia de este modelo radica en que explora una vía de mejora de modelos
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86 B) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -78,7 +78,7 @@ En cuanto a modelos de tamaño similar (6-7 B parámetros) como Pythia-6.9B o MP
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_4k_5k_weightedavg_merge)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_4k_5k_weightedavg_merge)
 - [Merge similar: 1k_2k_3k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-1k_2k_3k_merge)
 - [Merge similar: 0k_1k_2k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-0k_1k_2k_merge)
 - [Merge similar: 2k_3k_4k](https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-2k_3k_4k_merge)

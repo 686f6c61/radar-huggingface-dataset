@@ -2,7 +2,7 @@
 
 ## Resumen
 
-magibu-11b-GGUF es la version cuantizada en formato GGUF del modelo magibu-11b, desarrollado originalmente por alibayram y publicado en HuggingFace. Esta variante ha sido generada por mradermacher, un conocido creador de cuantizaciones de la comunidad, que distribuye versiones optimizadas para inferencia local mediante llama.cpp y herramientas compatibles. El modelo base cuenta con 11.262.717.696 parametros (aproximadamente 11,26 mil millones) y fue entrenado mediante SFT (supervised fine-tuning) usando las librerias unsloth y TRL, partiendo de un modelo base no especificado en la informacion disponible.
+magibu-11b-GGUF es la version cuantizada en formato GGUF del modelo magibu-11b, desarrollado originalmente por alibayram y publicado en Hugging Face. Esta variante ha sido generada por mradermacher, un conocido creador de cuantizaciones de la comunidad, que distribuye versiones optimizadas para inferencia local mediante llama.cpp y herramientas compatibles. El modelo base cuenta con 11.262.717.696 parametros (aproximadamente 11,26 mil millones) y fue entrenado mediante SFT (supervised fine-tuning) usando las librerias unsloth y TRL, partiendo de un modelo base no especificado en la informacion disponible.
 
 El modelo se presenta como un modelo conversacional orientado al idioma ingles, segun los tags de la model card. La relevancia de esta publicacion radica en que permite ejecutar un modelo de 11B parametros en hardware de consumo gracias a las multiples cuantizaciones disponibles, que van desde Q2_K (4,5 GB) hasta Q8_0 (12,1 GB), pasando por opciones intermedias como Q4_K_M (7,0 GB) o IQ4_XS (6,3 GB). Ademas, el repositorio incluye ficheros mmproj (multi-modal supplement), lo que sugiere capacidades de vision, aunque la model card no detalla su funcionamiento.
 
@@ -85,7 +85,7 @@ No se dispone de informacion suficiente para comparar con modelos de otros autor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/magibu-11b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/magibu-11b-GGUF
 - Modelo base: https://huggingface.co/alibayram/magibu-11b
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/magibu-11b-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#magibu-11b-GGUF

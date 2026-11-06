@@ -82,9 +82,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Rama base | Parámetros | Contexto | P@1 en Wiki10-31K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DualMLC-wiki10-31k | Qwen2.5-7B-Instruct (LoRA) + BERT-base (fine-tuning completo) | Aprox. 7,6 B + 110 M | No disponible | 90,78 % | Apache 2.0 (checkpoint) | HuggingFace + GitHub DualMLC |
-| Rama BERT-base-uncased ajustada (componente del propio método) | BERT-base | Aprox. 110 M | No disponible (limitado por el tokenizador BERT) | No disponible | Apache 2.0 (modelo base) | HuggingFace |
-| Qwen2.5-7B-Instruct usado directamente con prompting | Qwen2.5 | Aprox. 7,6 B | No disponible | No disponible | Consultar la licencia del modelo base | HuggingFace |
+| DualMLC-wiki10-31k | Qwen2.5-7B-Instruct (LoRA) + BERT-base (fine-tuning completo) | Aprox. 7,6 B + 110 M | No disponible | 90,78 % | Apache 2.0 (checkpoint) | Hugging Face + GitHub DualMLC |
+| Rama BERT-base-uncased ajustada (componente del propio método) | BERT-base | Aprox. 110 M | No disponible (limitado por el tokenizador BERT) | No disponible | Apache 2.0 (modelo base) | Hugging Face |
+| Qwen2.5-7B-Instruct usado directamente con prompting | Qwen2.5 | Aprox. 7,6 B | No disponible | No disponible | Consultar la licencia del modelo base | Hugging Face |
 
 Como alternativas de la misma categoría existen los métodos clásicos de XMC basados en encoders y arquitecturas de partición de etiquetas (por ejemplo, AttentionXML o XR-Transformer), pero la información proporcionada no incluye sus parámetros, licencias ni resultados en Wiki10-31K, por lo que no se ofrece comparación numérica.
 
@@ -106,9 +106,9 @@ Como alternativas de la misma categoría existen los métodos clásicos de XMC b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yhhugging/DualMLC-wiki10-31k
+- Modelo en Hugging Face: https://huggingface.co/yhhugging/DualMLC-wiki10-31k
 - Paper en arXiv: https://arxiv.org/abs/2609.12915
-- Página del paper en HuggingFace: https://huggingface.co/papers/2609.12915
+- Página del paper en Hugging Face: https://huggingface.co/papers/2609.12915
 - Código fuente (DualMLC): https://github.com/huiyegit/DualMLC
 - Instrucciones de instalación del repositorio: https://github.com/huiyegit/DualMLC#setup
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

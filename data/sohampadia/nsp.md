@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sohampadia/nsp` es un repositorio de modelo alojado en HuggingFace por el usuario sohampadia. La unica informacion verificable disponible es la licencia (Apache 2.0), la region declarada (US), el identificador y las marcas temporales de creacion y actualizacion (18 de septiembre de 2026). El repositorio no declara pipeline de inferencia, no especifica idiomas soportados, no incluye model card con contenido tecnico (el README se limita a la cabecera de licencia) y acumula cero descargas y cero likes en el momento de la consulta.
+`sohampadia/nsp` es un repositorio de modelo alojado en Hugging Face por el usuario sohampadia. La unica informacion verificable disponible es la licencia (Apache 2.0), la region declarada (US), el identificador y las marcas temporales de creacion y actualizacion (18 de septiembre de 2026). El repositorio no declara pipeline de inferencia, no especifica idiomas soportados, no incluye model card con contenido tecnico (el README se limita a la cabecera de licencia) y acumula cero descargas y cero likes en el momento de la consulta.
 
 No es posible determinar la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni los formatos de pesos publicados. Tampoco hay informacion sobre cuantizaciones, capacidades declaradas o resultados de evaluacion. Cualquier afirmacion sobre el comportamiento del modelo seria especulativa con los datos disponibles.
 
@@ -88,6 +88,6 @@ No disponible. No hay informacion sobre parametros, contexto, licencia de pesos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sohampadia/nsp
+- Repositorio en Hugging Face: https://huggingface.co/sohampadia/nsp
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio enlaces relacionados con este modelo; los resultados obtenidos correspondian a herramientas y articulos sobre ChatGPT (github.com/TheR1D/shell_gpt, github.com/jqueryscript/chatgpt-timeline y otros), sin conexion con `sohampadia/nsp`.

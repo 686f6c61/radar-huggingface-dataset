@@ -89,7 +89,7 @@ La comparación entre estos modelos no se ha publicado en la model card, salvo l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-b-force
+- Repositorio Hugging Face: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-b-force
 - Modelo complementario (simulación, Método A): https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-sim-a-vision-pos
 - Modelo real con Método A: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-a-vision-pos
 - Modelo real con Método B: https://huggingface.co/IntelligentDecisionLab/xlerobot-coffee-model-real-b-force

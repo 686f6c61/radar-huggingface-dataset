@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2Stuff es un repositorio publicado en HuggingFace por el usuario AgentAnon bajo el identificador `AgentAnon/Krea2Stuff`. La informacion disponible en la ficha publica es minima: no consta pipeline declarado, no se especifican licencia, idiomas, formato de pesos ni arquitectura, y el repositorio no incluye una model card descriptiva segun los metadatos consultados. El unico dato de actividad registrado es 1 like y 0 descargas, con fecha de creacion y ultima actualizacion el 23 de octubre de 2026.
+Krea2Stuff es un repositorio publicado en Hugging Face por el usuario AgentAnon bajo el identificador `AgentAnon/Krea2Stuff`. La informacion disponible en la ficha publica es minima: no consta pipeline declarado, no se especifican licencia, idiomas, formato de pesos ni arquitectura, y el repositorio no incluye una model card descriptiva segun los metadatos consultados. El unico dato de actividad registrado es 1 like y 0 descargas, con fecha de creacion y ultima actualizacion el 23 de octubre de 2026.
 
 Se trata, por tanto, de un artefacto practicamente sin documentar publica. Esto impide determinar con rigor que problema resuelve, que tamano tiene o si es adecuado para uso en produccion. La relevancia actual del repositorio es limitada desde el punto de vista tecnico: sin especificaciones ni resultados publicados, no es posible evaluarlo frente a alternativas consolidadas.
 
@@ -68,7 +68,7 @@ No disponible. No puede establecerse una comparacion con alternativas de la mism
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| AgentAnon/Krea2Stuff | no disponible | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
+| AgentAnon/Krea2Stuff | no disponible | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. No puede establecerse una comparacion con alternativas de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AgentAnon/Krea2Stuff
+- Hugging Face: https://huggingface.co/AgentAnon/Krea2Stuff
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la informacion disponible.

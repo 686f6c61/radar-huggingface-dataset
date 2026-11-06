@@ -102,10 +102,10 @@ En una comprobacion factual greedy sobre tres borradores, `q8_2f` conservo todos
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| infosave/humanizer-cmf (este) | 12B | no disponible | CMF (cortiq) | Apache 2.0 | HuggingFace, 0 descargas |
-| jialinyyzz/humanizer | 12B | no disponible | pesos bf16 en HF transformers | Apache 2.0 (segun la model card) | HuggingFace (modelo base) |
-| jialinyyzz/humanizer-GGUF | 12B | no disponible | GGUF (llama.cpp) | Apache 2.0 (segun la model card) | HuggingFace (variante oficial) |
-| Google Gemma 4 12B | 12B | no disponible | safetensors y otros | licencia de Gemma | HuggingFace (modelo base original) |
+| infosave/humanizer-cmf (este) | 12B | no disponible | CMF (cortiq) | Apache 2.0 | Hugging Face, 0 descargas |
+| jialinyyzz/humanizer | 12B | no disponible | pesos bf16 en HF transformers | Apache 2.0 (segun la model card) | Hugging Face (modelo base) |
+| jialinyyzz/humanizer-GGUF | 12B | no disponible | GGUF (llama.cpp) | Apache 2.0 (segun la model card) | Hugging Face (variante oficial) |
+| Google Gemma 4 12B | 12B | no disponible | safetensors y otros | licencia de Gemma | Hugging Face (modelo base original) |
 
 No se dispone de modelos comparables de reescritura o humanizacion de texto con datos de rendimiento publicados en la informacion proporcionada, por lo que la comparativa se limita a las variantes del propio modelo y a su base.
 
@@ -123,7 +123,7 @@ No se dispone de modelos comparables de reescritura o humanizacion de texto con 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/infosave/humanizer-cmf
+- Hugging Face del modelo: https://huggingface.co/infosave/humanizer-cmf
 - Modelo base: https://huggingface.co/jialinyyzz/humanizer
 - Detalles de evaluacion del autor original: https://huggingface.co/jialinyyzz/humanizer#evaluation-details
 - Archivos GGUF para llama.cpp: https://huggingface.co/jialinyyzz/humanizer-GGUF

@@ -6,7 +6,7 @@
 
 La model card adjunta describe un checkpoint distinto (`grok.h069.sft-mix.step_60`), lo que sugiere que la documentación es genérica para todos los checkpoints del sweep y no coincide exactamente con este repositorio. El modelo presenta un defecto conocido de empaquetado de tokens EOS: le falta el token `<|im_end|>` (id 248046), por lo que no detiene correctamente las respuestas y tiende a sobrepasar la ventana de contexto. Esto invalida cualquier evaluación directa y lo hace inadecuado para uso en producción sin un reempaquetado previo.
 
-Se trata de un artefacto de investigación, sin licencia declarada, sin idiomas especificados y sin descargas ni valoraciones en HuggingFace. Su relevancia es exclusivamente para el análisis de dinámicas de entrenamiento dentro del sweep AgentPTB, no como modelo listo para desplegar.
+Se trata de un artefacto de investigación, sin licencia declarada, sin idiomas especificados y sin descargas ni valoraciones en Hugging Face. Su relevancia es exclusivamente para el análisis de dinámicas de entrenamiento dentro del sweep AgentPTB, no como modelo listo para desplegar.
 
 ## Especificaciones tecnicas
 
@@ -81,6 +81,6 @@ No se conocen otros modelos comparables de la misma categoría (checkpoints inte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h075.rl-write.step_15
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h075.rl-write.step_15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep AgentPTB (mencionado en la model card, sin URL directa): `agentic-ptb/INDEX`

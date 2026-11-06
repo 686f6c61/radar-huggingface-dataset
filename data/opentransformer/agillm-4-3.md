@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AGILLM-4.3 es un modelo de lenguaje de gran tamaño desarrollado por la organización OpenTransformer, publicado en HuggingFace con acceso restringido (gated). Se trata de la versión 4.3 de la serie AGILLM, que según el repositorio de GitHub asociado parte de un warm start de AGILLM 4.2 e incorpora dos innovaciones principales: expertos compartidos en una arquitectura de mezcla de expertos (MoE) y bloques de difusión (DiffusionBlocks) durante el entrenamiento. El tamaño del repositorio en HuggingFace es de 714.3 GB, lo que sugiere un modelo de gran escala, aunque no se han publicado especificaciones detalladas sobre el número de parámetros, la longitud de contexto o los idiomas soportados.
+AGILLM-4.3 es un modelo de lenguaje de gran tamaño desarrollado por la organización OpenTransformer, publicado en Hugging Face con acceso restringido (gated). Se trata de la versión 4.3 de la serie AGILLM, que según el repositorio de GitHub asociado parte de un warm start de AGILLM 4.2 e incorpora dos innovaciones principales: expertos compartidos en una arquitectura de mezcla de expertos (MoE) y bloques de difusión (DiffusionBlocks) durante el entrenamiento. El tamaño del repositorio en Hugging Face es de 714.3 GB, lo que sugiere un modelo de gran escala, aunque no se han publicado especificaciones detalladas sobre el número de parámetros, la longitud de contexto o los idiomas soportados.
 
-El modelo se presenta como parte de una iniciativa de democratización de la inteligencia artificial mediante código abierto, pero su acceso está restringido y requiere aceptar condiciones adicionales en HuggingFace. La escasa documentación pública y la ausencia de resultados de benchmarks dificultan una evaluación técnica completa en este momento.
+El modelo se presenta como parte de una iniciativa de democratización de la inteligencia artificial mediante código abierto, pero su acceso está restringido y requiere aceptar condiciones adicionales en Hugging Face. La escasa documentación pública y la ausencia de resultados de benchmarks dificultan una evaluación técnica completa en este momento.
 
 ## Especificaciones técnicas
 
@@ -48,7 +48,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (MoE con
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones adicionales en HuggingFace, lo que limita su uso y evaluación independiente.
+- Acceso restringido: el modelo requiere aceptar condiciones adicionales en Hugging Face, lo que limita su uso y evaluación independiente.
 - Documentación insuficiente: no se han publicado especificaciones técnicas completas, benchmarks ni guías de uso.
 - Licencia desconocida: al no especificarse la licencia, no es posible determinar si el uso comercial está permitido.
 - Riesgo de alucinación: al ser un modelo de lenguaje sin evaluación pública, no se puede descartar la generación de contenido falso o inexacto.
@@ -58,7 +58,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (MoE con
 
 ## Enlaces
 
-- [HuggingFace: OpenTransformer/AGILLM-4.3](https://huggingface.co/OpenTransformer/AGILLM-4.3)
+- [Hugging Face: OpenTransformer/AGILLM-4.3](https://huggingface.co/OpenTransformer/AGILLM-4.3)
 - [GitHub: Marxist-Leninist/AGILLM4.3](https://github.com/Marxist-Leninist/AGILLM4.3)
 - [GitHub: AGILLM 4.3 EGGROLL Experimental](https://github.com/Marxist-Leninist/AGILLM4.3-EGGROLL-Experimental)
 - [llms.info: OpenTransformer/AGILLM-4.3](https://llms.info/models/opentransformer-agillm-4-3-1001)

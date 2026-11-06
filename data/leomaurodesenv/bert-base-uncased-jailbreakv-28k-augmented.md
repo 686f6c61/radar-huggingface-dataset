@@ -27,7 +27,7 @@ Otros datos del repositorio: pipeline `text-classification`, tamaño del repo 0,
 
 La arquitectura es la de BERT base sin modificaciones estructurales: 12 capas de encoder con autoatención multi-cabeza bidireccional (768 dimensiones, 12 cabezas, 110 M de parámetros en total, 109,48 M en este checkpoint por el tamaño de la cabecera de clasificación) y embeddings posicionales absolutas que limitan la entrada a 512 tokens. Sobre el modelo base se ha añadido una cabecera de clasificación de secuencia, con un número de etiquetas no documentado en la ficha.
 
-El ajuste fino se realizó con el Trainer de HuggingFace y los siguientes hiperparámetros: learning rate 2e-05, train batch size 8 con gradient accumulation de 2 pasos (batch efectivo 16), eval batch size 8, semilla 42, optimizador adamw_torch_fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 50 pasos de warmup y 10 épocas. El registro muestra 1121 pasos por época y 11.210 pasos totales, lo que implica aproximadamente 17.900 ejemplos de entrenamiento (1121 × 16) según el batch efectivo declarado; la composición del dataset no se detalla. Las versiones de framework son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2. No se documenta ningún uso de RLHF, DPO ni ninguna innovación técnica adicional (atención lineal, decodificación especulativa, etc.).
+El ajuste fino se realizó con el Trainer de Hugging Face y los siguientes hiperparámetros: learning rate 2e-05, train batch size 8 con gradient accumulation de 2 pasos (batch efectivo 16), eval batch size 8, semilla 42, optimizador adamw_torch_fused con betas (0,9; 0,999) y epsilon 1e-08, scheduler lineal con 50 pasos de warmup y 10 épocas. El registro muestra 1121 pasos por época y 11.210 pasos totales, lo que implica aproximadamente 17.900 ejemplos de entrenamiento (1121 × 16) según el batch efectivo declarado; la composición del dataset no se detalla. Las versiones de framework son Transformers 5.2.0, PyTorch 2.10.0+cu128, Datasets 4.5.0 y Tokenizers 0.22.2. No se documenta ningún uso de RLHF, DPO ni ninguna innovación técnica adicional (atención lineal, decodificación especulativa, etc.).
 
 ## Capacidades
 
@@ -82,7 +82,7 @@ La accuracy perfecta y la pérdida nula desde la primera época son indicios de 
 - VRAM estimada para inferencia: en fp32 unos 0,44 GB de pesos; en fp16/bf16 unos 0,22 GB; en int8 alrededor de 0,11 GB. Con lotes pequeños y 512 tokens, las activaciones añaden un consumo marginal.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente (GTX 1050 Ti, GTX 1650, T4, RTX 3060, RTX 4090, A100, H100). El modelo está claramente sobredimensionado para estas GPUs: el cuello de botella no será la memoria.
 - Cabe en GPU de consumo: sí, en prácticamente todas las GPU de consumo de los últimos diez años, e incluso en iGPU o en CPU con varias decenas de hilos.
-- Opciones de despliegue: pipeline de transformers, Optimum/ONNX Runtime para aceleración en CPU, TorchScript o exportación a ONNX, servidores de inferencia genéricos (FastAPI + Uvicorn, Triton, Ray Serve) y las etiquetas del repositorio (`text-embeddings-inference`, `endpoints_compatible`) indican compatibilidad con Inference Endpoints de HuggingFace. No hay integración documentada con vLLM ni con llama.cpp para este checkpoint.
+- Opciones de despliegue: pipeline de transformers, Optimum/ONNX Runtime para aceleración en CPU, TorchScript o exportación a ONNX, servidores de inferencia genéricos (FastAPI + Uvicorn, Triton, Ray Serve) y las etiquetas del repositorio (`text-embeddings-inference`, `endpoints_compatible`) indican compatibilidad con Inference Endpoints de Hugging Face. No hay integración documentada con vLLM ni con llama.cpp para este checkpoint.
 - Latencia y throughput estimados: no disponible en la información proporcionada. No se publican mediciones de latencia ni de tokens por segundo, y en un clasificador de secuencia la métrica relevante (muestras por segundo) dependería del hardware y del backend.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se han encontrado en la información disponible clasificadores de jailbreak c
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bert-base-uncased-jailbreakv-28k-augmented | 109.483.778 | 512 tokens | Accuracy 1.0 y loss 0.0000 en su conjunto de evaluación (no verificado) | apache-2.0 | HuggingFace, 0 descargas y 2 likes en el momento de la consulta |
+| bert-base-uncased-jailbreakv-28k-augmented | 109.483.778 | 512 tokens | Accuracy 1.0 y loss 0.0000 en su conjunto de evaluación (no verificado) | apache-2.0 | Hugging Face, 0 descargas y 2 likes en el momento de la consulta |
 | google-bert/bert-base-uncased | 110 M | 512 tokens | Modelo base preentrenado, sin cabecera de clasificación de jailbreak | apache-2.0 | Ampliamente disponible y ampliamente validado |
 | Otros clasificadores de jailbreak (DeBERTa, Llama Guard y similares) | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
@@ -111,6 +111,6 @@ No se han encontrado en la información disponible clasificadores de jailbreak c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leomaurodesenv/bert-base-uncased-jailbreakv-28k-augmented
+- Modelo en Hugging Face: https://huggingface.co/leomaurodesenv/bert-base-uncased-jailbreakv-28k-augmented
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Búsqueda web realizada: no se han encontrado enlaces relevantes al modelo (paper, blog, repositorio o demo). Los resultados devueltos corresponden a páginas de Vinted y no guardan relación con el modelo, por lo que se omiten.

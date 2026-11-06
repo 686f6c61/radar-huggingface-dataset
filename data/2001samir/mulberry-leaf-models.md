@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`2001Samir/mulberry-leaf-models` es un repositorio publicado en HuggingFace por el usuario 2001Samir bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente la linea de metadatos `license: mit`, sin descripcion, sin documentacion tecnica y sin indicacion alguna sobre el tipo de modelo, su arquitectura, su tamano o su proposito. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas declarados.
+`2001Samir/mulberry-leaf-models` es un repositorio publicado en Hugging Face por el usuario 2001Samir bajo licencia MIT. En el momento de la consulta, la model card asociada contiene unicamente la linea de metadatos `license: mit`, sin descripcion, sin documentacion tecnica y sin indicacion alguna sobre el tipo de modelo, su arquitectura, su tamano o su proposito. El repositorio registra 0 descargas y 0 "likes", y no tiene pipeline declarado ni idiomas declarados.
 
 No es posible determinar que problema resuelve el modelo ni por que seria relevante, ya que no se ha publicado informacion tecnica al respecto. El nombre del repositorio (`mulberry-leaf-models`, en plural) sugiere que podria tratarse de una coleccion de artefactos mas que de un unico modelo, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor.
 
@@ -77,7 +77,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 | Contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -91,7 +91,7 @@ No disponible. No se puede establecer una categoria de comparacion (mismo tamano
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/2001Samir/mulberry-leaf-models
+- Repositorio en Hugging Face: https://huggingface.co/2001Samir/mulberry-leaf-models
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

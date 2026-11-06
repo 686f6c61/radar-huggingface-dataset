@@ -66,7 +66,7 @@ No disponible. No existe una categoría de modelos comparables, ya que este no e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/provenance-fake-signature-text-control
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/provenance-fake-signature-text-control
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - Documento de modelo de confianza de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md
 - Paper sobre deuda de autenticidad y amenazas de contenido sintético: https://arxiv.org/pdf/2606.00621 (y versión HTML: https://arxiv.org/html/2606.00621)
@@ -137,7 +137,7 @@ No disponible. Este artefacto no pertenece a una categoría de modelos de IA com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/provenance-fake-signature-text-control
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/provenance-fake-signature-text-control
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - Documento de modelo de confianza de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/TRUST_MODEL.md
 - Paper "Authenticity Debt and the Synthetic Content Threat Landscape": https://arxiv.org/pdf/2606.00621 (versión HTML: https://arxiv.org/html/2606.00621)

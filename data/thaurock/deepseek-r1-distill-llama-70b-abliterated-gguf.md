@@ -106,8 +106,8 @@ La comparacion cuantitativa de contexto y rendimiento no esta disponible para ni
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
+- Repositorio Hugging Face: https://huggingface.co/Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated
 - Perfil del autor de la abliteracion: https://huggingface.co/huihui-ai
 - Modelo original de razonamiento: https://huggingface.co/deepseek-ai/DeepSeek-R1
 - Destilado original sobre Llama 70B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B

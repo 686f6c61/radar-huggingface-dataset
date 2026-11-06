@@ -85,10 +85,10 @@ La comparativa directa con otros modelos de atribución de autoría en griego an
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-procopius
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-sentence-procopius
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Codigo de entrenamiento y puntuacion: https://github.com/Urdatorn/sphragis_models
-- Perfil del autor en HuggingFace: https://huggingface.co/Urdatorn
+- Perfil del autor en Hugging Face: https://huggingface.co/Urdatorn
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf
 - Paper de referencia (Huang, Murakami y Grieve, 2025): PLoS ONE 20(7): e0327081
 - Paper de OLMo: https://arxiv.org/html/2402.00838v1

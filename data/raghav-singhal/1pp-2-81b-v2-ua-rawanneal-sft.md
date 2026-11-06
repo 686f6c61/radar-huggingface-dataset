@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-rawanneal-sft
 - Variante 1PP completa: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-ua-sft
 - Modelo base sin cooldown conversacional: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-raw-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

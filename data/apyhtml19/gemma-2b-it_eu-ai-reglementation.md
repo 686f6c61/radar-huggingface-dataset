@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su enfoque de dominio: ofrece una alterna
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `google/gemma-2b-it`, un transformer decoder con 2,5 mil millones de parámetros, y se ajusta mediante LoRA (Low-Rank Adaptation) con rango 8, alpha 16 y dropout 0,05, aplicado a las proyecciones de atención (q, k, v, o). El entrenamiento se realizó con cuantización 4-bit NF4 (bitsandbytes) para reducir el consumo de memoria, usando el framework HuggingFace Transformers con TRL y PEFT. Se empleó un optimizador paged_adamw_8bit, learning rate 2e-4, 3 épocas, batch size 1 y acumulación de gradientes de 16 pasos. La longitud máxima de secuencia se fijó en 256 tokens, lo que limita la capacidad de procesar contextos extensos.
+El modelo parte de `google/gemma-2b-it`, un transformer decoder con 2,5 mil millones de parámetros, y se ajusta mediante LoRA (Low-Rank Adaptation) con rango 8, alpha 16 y dropout 0,05, aplicado a las proyecciones de atención (q, k, v, o). El entrenamiento se realizó con cuantización 4-bit NF4 (bitsandbytes) para reducir el consumo de memoria, usando el framework Hugging Face Transformers con TRL y PEFT. Se empleó un optimizador paged_adamw_8bit, learning rate 2e-4, 3 épocas, batch size 1 y acumulación de gradientes de 16 pasos. La longitud máxima de secuencia se fijó en 256 tokens, lo que limita la capacidad de procesar contextos extensos.
 
 El dataset de entrenamiento, `ApyHTML19/EU-AI-Regulation-GDPR-2025`, contiene pares de instrucción y respuesta sobre la regulación de IA en la UE y el GDPR. No se especifica el número de ejemplos ni la composición exacta del dataset. No se menciona el uso de RLHF ni DPO; el ajuste es puramente supervisado.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al tener 2,5 mil millones de parámetros, en fp16 ocupa aproximadamente 5 GB; con cuantización 4-bit (si se aplica) podría reducirse a ~1,3 GB, pero el repositorio no especifica la cuantización de los pesos finales.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (p. ej., RTX 2060, RTX 3060) para inferencia en fp16; GPUs con 4 GB podrían funcionar con cuantización adicional.
 - Cabe en GPUs de consumo: sí, en tarjetas como RTX 3060, RTX 4060 o superiores.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI. No se proporcionan configuraciones específicas.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama o TGI. No se proporcionan configuraciones específicas.
 - Latencia y throughput: no disponibles; dependerán del hardware y del backend elegido.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La comparativa se basa en datos públicos de los modelos base; no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApyHTML19/Gemma-2b-It_EU-AI-Reglementation
+- Modelo en Hugging Face: https://huggingface.co/ApyHTML19/Gemma-2b-It_EU-AI-Reglementation
 - Dataset de entrenamiento: https://huggingface.co/datasets/ApyHTML19/EU-AI-Regulation-GDPR-2025
 - Modelo base google/gemma-2b-it: https://huggingface.co/google/gemma-2b-it
 - Hosting de gemma-2b-it en la UE: https://hostyourai.com/models/google/gemma-2b-it

@@ -18,7 +18,7 @@ El modelo conserva la arquitectura híbrida del original: 40 capas (30 de convol
 | Longitud de contexto | 131.072 tokens nativos (la receta de servicio del autor usa 32.768) |
 | Tipos de cuantizacion | Q4_0_ROCMFP4 para expertos, atención, proyecciones de convolución corta y feed-forward denso; Q6_K para el embedding de tokens (también cabeza de salida atada); F32 para routers, normas, `exp_probs_b` y estado de convolución corta. Media de 4,53 bits por peso |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (un único fichero: `LFM2.5-24B-A2B-Q4_0_ROCMFP4_LEAN.gguf`, 13.578.191.040 bytes) |
 
 ## Arquitectura y entrenamiento
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks estándar ni de comparaciones con modelos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/LFM2.5-24B-A2B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/LFM2.5-24B-A2B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Licencia LFM1.0: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B/blob/main/LICENSE
 - Runtime Super ROC: https://github.com/kingjones30/superroc

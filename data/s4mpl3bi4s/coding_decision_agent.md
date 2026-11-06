@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| Coding_Decision_Agent | 421 M | 2048 | Apache-2.0 | Clasificacion de decisiones de agentes de codigo | HuggingFace (`S4MPL3BI4S/Coding_Decision_Agent`) |
-| convaiinnovations/laya (modelo base) | 421 M (ModernBERT-large) | no disponible | Apache-2.0 | Modelo de decision generico con preguntas tipadas | HuggingFace |
-| Jueces generativos tipo `Qwen/Qwen3-32B-AWQ` | ~32 000 M | no disponible | no disponible | Evaluacion generica como LLM-as-judge | HuggingFace / vLLM |
+| Coding_Decision_Agent | 421 M | 2048 | Apache-2.0 | Clasificacion de decisiones de agentes de codigo | Hugging Face (`S4MPL3BI4S/Coding_Decision_Agent`) |
+| convaiinnovations/laya (modelo base) | 421 M (ModernBERT-large) | no disponible | Apache-2.0 | Modelo de decision generico con preguntas tipadas | Hugging Face |
+| Jueces generativos tipo `Qwen/Qwen3-32B-AWQ` | ~32 000 M | no disponible | no disponible | Evaluacion generica como LLM-as-judge | Hugging Face / vLLM |
 
 No se dispone de datos de benchmarks comparativos con otros clasificadores de decision de agentes de codigo en la informacion proporcionada; la comparacion directa con alternativas de la misma categoria no esta disponible.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos con otros clasificadores de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/S4MPL3BI4S/Coding_Decision_Agent
+- Modelo en Hugging Face: https://huggingface.co/S4MPL3BI4S/Coding_Decision_Agent
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Perfil del autor: https://huggingface.co/S4MPL3BI4S
 - Dataset de casos: https://huggingface.co/datasets/S4MPL3BI4S/coding-decision-cases

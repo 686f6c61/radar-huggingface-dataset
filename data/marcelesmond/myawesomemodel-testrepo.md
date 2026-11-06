@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario MarcelEsmond. La informacion publica disponible es muy limitada y, en varios puntos, contradictoria: las etiquetas del repositorio indican la libreria `transformers`, framework `pytorch`, arquitectura `bert` y la tarea `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas y programacion. Ademas, el tamano del repositorio figura como 0.0 GB, sin descargas ni valoraciones, lo que sugiere que se trata de un repositorio de prueba o de demostracion y no de un modelo listo para produccion.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario MarcelEsmond. La informacion publica disponible es muy limitada y, en varios puntos, contradictoria: las etiquetas del repositorio indican la libreria `transformers`, framework `pytorch`, arquitectura `bert` y la tarea `feature-extraction`, mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas y programacion. Ademas, el tamano del repositorio figura como 0.0 GB, sin descargas ni valoraciones, lo que sugiere que se trata de un repositorio de prueba o de demostracion y no de un modelo listo para produccion.
 
 El nombre del identificador (`MyAwesomeModel-TestRepo`) refuerza la hipotesis de que es un espacio de pruebas. La model card incluye secciones genericas (introduccion, resultados de evaluacion con nombres anonimizados tipo `Model1`, `Model2`), plantillas de prompt para subida de ficheros y busqueda web, y recomendaciones de temperatura y system prompt, pero no aporta identificadores verificables del modelo, pesos publicados ni enlaces funcionales al codigo o a la plataforma de chat.
 
@@ -85,7 +85,7 @@ Ademas, la model card afirma que en AIME 2025 la precision paso del 70 % al 87,5
 - VRAM estimada para inferencia: no disponible (no se conocen parametros ni cuantizaciones).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; el tamano del repositorio (0.0 GB) impide estimar si cabria en una GPU consumer.
-- Opciones de despliegue: la etiqueta `transformers` sugiere uso con la libreria de HuggingFace; `endpoints_compatible` aparece como etiqueta, lo que apunta a compatibilidad con Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la etiqueta `transformers` sugiere uso con la libreria de Hugging Face; `endpoints_compatible` aparece como etiqueta, lo que apunta a compatibilidad con Inference Endpoints. No se confirma soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -106,5 +106,5 @@ No disponible. La model card emplea nombres anonimizados (`Model1`, `Model2`, `M
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarcelEsmond/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/MarcelEsmond/MyAwesomeModel-TestRepo
 - Repositorio de codigo, plataforma de chat/API y figuras: referenciados en la model card de forma generica, sin URL funcional disponible en la informacion proporcionada.

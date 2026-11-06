@@ -78,7 +78,7 @@ No se dispone de datos comparativos concretos con otros modelos. No obstante, al
 
 ## Enlaces
 
-- [Modelo en HuggingFace: lesa80/Qwen3.8-27B-MLX](https://huggingface.co/lesa80/Qwen3.8-27B-MLX)
+- [Modelo en Hugging Face: lesa80/Qwen3.8-27B-MLX](https://huggingface.co/lesa80/Qwen3.8-27B-MLX)
 - [Modelo original: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Guía de conversión (HOWTO.md)](https://huggingface.co/lesa80/Qwen3.8-27B-MLX/blob/main/HOWTO.md)
 - [mlx-vlm (librería de inferencia)](https://github.com/Blaizzy/mlx-vlm)

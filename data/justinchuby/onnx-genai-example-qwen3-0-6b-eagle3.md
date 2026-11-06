@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justinchuby/onnx-genai-example-qwen3-0-6b-eagle3
+- Repositorio Hugging Face: https://huggingface.co/justinchuby/onnx-genai-example-qwen3-0-6b-eagle3
 - Proyecto onnx-genai en GitHub: https://github.com/justinchuby/onnx-genai
 - Ejemplos de onnx-genai: https://github.com/justinchuby/onnx-genai/tree/main/examples
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlisonPlayer Whisper CoreML es un repositorio de modelos de reconocimiento automático de voz (ASR) en formato CoreML publicado por el usuario wangxp9527 en HuggingFace. Se presenta como una conversión de los checkpoints Whisper de OpenAI (variantes tiny, base y small) optimizada para ejecutarse de forma totalmente offline sobre el Neural Engine (ANE) de los chips Apple Silicon. El repositorio ocupa 0,7 GB y contiene tres archivos ZIP con los modelos empaquetados.
+AlisonPlayer Whisper CoreML es un repositorio de modelos de reconocimiento automático de voz (ASR) en formato CoreML publicado por el usuario wangxp9527 en Hugging Face. Se presenta como una conversión de los checkpoints Whisper de OpenAI (variantes tiny, base y small) optimizada para ejecutarse de forma totalmente offline sobre el Neural Engine (ANE) de los chips Apple Silicon. El repositorio ocupa 0,7 GB y contiene tres archivos ZIP con los modelos empaquetados.
 
 El propósito declarado en la model card (redactada en chino) es el reconocimiento de voz en el dispositivo, sin conexión y multilingüe, dentro del reproductor denominado AlisonPlayer. Al distribuirse como CoreML, el artefacto está pensado para integrarse en aplicaciones de iOS y macOS mediante Core ML, sin depender de Python ni de servicios de inferencia remotos.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: el rep
 | Variantes incluidas | whisper-tiny, whisper-base, whisper-small |
 | Tamano de los artefactos | 67,09 MB / 127,17 MB / 425,75 MB respectivamente |
 | Verificacion de integridad | SHA-256 publicado para cada ZIP (tiny: 6678f73f...e82ba0f; base: 6156c25e...ff2528; small: 6ab5fc20...b34e693) |
-| Repositorio | 0,7 GB, creado y actualizado el 2026-09-29 segun los metadatos de HuggingFace |
+| Repositorio | 0,7 GB, creado y actualizado el 2026-09-29 segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Hardware objetivo | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| alison-whisper-coreml | ~39 M / ~74 M / ~244 M (cifras de la familia Whisper, no declaradas en el repo) | Apple Silicon (ANE) | CoreML en ZIP | No declarada | Repositorio HuggingFace con 0 descargas |
+| alison-whisper-coreml | ~39 M / ~74 M / ~244 M (cifras de la familia Whisper, no declaradas en el repo) | Apple Silicon (ANE) | CoreML en ZIP | No declarada | Repositorio Hugging Face con 0 descargas |
 | Whisper original (OpenAI) | ~39 M / ~74 M / ~244 M para tiny, base y small | CPU/GPU con PyTorch | PyTorch (.pt) | MIT | Repositorio oficial ampliamente utilizado |
 | whisper.cpp | Mismos pesos convertidos a GGML/GGUF de Whisper | CPU, Metal, CUDA, Vulkan | GGML/GGUF | MIT | Proyecto de referencia con gran adopción |
 | WhisperKit (Argmax) | Pesos Whisper convertidos a CoreML | Apple Silicon (ANE) | CoreML | MIT | Proyecto mantenido y documentado para iOS/macOS |
@@ -95,6 +95,6 @@ No se dispone de datos de rendimiento comparado entre estas opciones dentro de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangxp9527/alison-whisper-coreml
+- Modelo en Hugging Face: https://huggingface.co/wangxp9527/alison-whisper-coreml
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios auxiliares ni demos asociados a este modelo.
 - Referencia de la familia base (no citada en la model card del autor): repositorio de OpenAI Whisper en https://github.com/openai/whisper y articulo "Robust Speech Recognition via Large-Scale Weak Supervision" en https://arxiv.org/abs/2212.04356.

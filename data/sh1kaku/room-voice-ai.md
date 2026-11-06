@@ -85,7 +85,7 @@ No se han publicado en la informacion disponible resultados de *F1* para el etiq
 
 | Modelo | Tipo | Parametros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `phobert_joint_meeting_nlu` (este) | Encoder transformer con doble cabecera, ONNX INT8 | no disponible | 128 tokens | Intencion (6 clases) + slots BIO (11 etiquetas) en un unico paso | MIT | HuggingFace, 0 descargas |
+| `phobert_joint_meeting_nlu` (este) | Encoder transformer con doble cabecera, ONNX INT8 | no disponible | 128 tokens | Intencion (6 clases) + slots BIO (11 etiquetas) en un unico paso | MIT | Hugging Face, 0 descargas |
 | `vinai/phobert-base-v2` | Encoder transformer base | no disponible | no disponible | Representaciones generales en vietnamita; requiere anadir cabeceras | no disponible | Ampliamente utilizado como backbone |
 | `bert-base-multilingual-cased` | Encoder transformer base multilingue | no disponible | no disponible | Representaciones multilingues; sin cabeceras de NLU de reunion | no disponible | Ampliamente disponible |
 | LLM generativo tipo Qwen o similar | Decoder autoregresivo | no disponible | no disponible | NLU *zero-shot*, generacion y resumen | no disponible | Requiere GPU y mayor latencia |
@@ -111,7 +111,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no se publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sh1kaku/room-voice-ai
+- Modelo en Hugging Face: https://huggingface.co/sh1kaku/room-voice-ai
 - Repositorio del proyecto en GitHub: https://github.com/sh1kaku59/room-voice-ai
 - Licencia MIT del proyecto: https://github.com/sh1kaku59/room-voice-ai/blob/main/LICENSE
 - Backbone declarado: https://huggingface.co/vinai/phobert-base-v2

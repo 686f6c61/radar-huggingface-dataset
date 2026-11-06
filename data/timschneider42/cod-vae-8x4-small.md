@@ -84,7 +84,7 @@ No se dispone de comparativas con otros autoencoders 3D (p. ej., 3DShape2VecSet,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TimSchneider42/cod-vae-8x4-small
+- Modelo en Hugging Face: https://huggingface.co/TimSchneider42/cod-vae-8x4-small
 - Paper original (COD-VAE): https://arxiv.org/abs/2503.08737
 - Repositorio de código: https://github.com/TimSchneider42/cod-vae
 - Guía de entrenamiento: https://github.com/TimSchneider42/cod-vae/blob/main/TRAINING.md

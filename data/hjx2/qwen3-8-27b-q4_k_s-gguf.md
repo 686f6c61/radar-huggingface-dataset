@@ -77,8 +77,8 @@ La comparativa se limita a los modelos de la misma familia Qwen3.8, ya que no se
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Hjx2/Qwen3.8-27B-Q4_K_S-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del modelo: https://huggingface.co/Hjx2/Qwen3.8-27B-Q4_K_S-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GGUF de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Recetas de despliegue con vLLM: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

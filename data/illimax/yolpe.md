@@ -90,7 +90,7 @@ A `imgsz=960` (personas bien visibles): recall lejano 0,190 → 0,776; medio 0,5
 
 | Modelo | Clase(s) | Resolución | Recall lejano (<48 px) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YolPe | `person` | 1280 | 0,798 | AGPL-3.0 (datos: solo investigación) | HuggingFace |
+| YolPe | `person` | 1280 | 0,798 | AGPL-3.0 (datos: solo investigación) | Hugging Face |
 | YOLO26s (COCO) | 80 clases | 1280 | 0,225 | AGPL-3.0 (Ultralytics) | Ultralytics |
 | YOLO26s fine-tuned en CrowdHuman sin tratamiento de `ignore` | `person` | 1280 | no disponible | depende del dataset | no disponible |
 
@@ -109,7 +109,7 @@ La comparación directa con el modelo base es la única publicada por el autor. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/illimax/YolPe
+- Modelo en Hugging Face: https://huggingface.co/illimax/YolPe
 - Código de entrenamiento y evaluación: https://github.com/lkw-k/YolPe
 - Dataset CrowdHuman (paper referenciado, arXiv:1805.00123): https://arxiv.org/abs/1805.00123
 - Ultralytics (framework y YOLO26): https://github.com/ultralytics/ultralytics

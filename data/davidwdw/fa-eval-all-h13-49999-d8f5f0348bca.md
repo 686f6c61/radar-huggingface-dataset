@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-eval-all-h13-49999-d8f5f0348bca` no es un modelo de lenguaje: es un archivo versionado de artefactos de evaluacion publicado en HuggingFace por el usuario `davidwdw`. La propia model card lo describe como "versioned fleet archive" asociado a una receta canonica concreta (`evaluations/2026-09-26_b1k_all_existing_queue`) y con un nivel ("tier") que agrupa episodios en JSON, videos, trazas, logs, protocolo, scripts, entrada y recibo. Es, por tanto, un paquete de datos y evidencias de una ejecucion de evaluacion, no un checkpoint con pesos entrenados.
+El repositorio `davidwdw/fa-eval-all-h13-49999-d8f5f0348bca` no es un modelo de lenguaje: es un archivo versionado de artefactos de evaluacion publicado en Hugging Face por el usuario `davidwdw`. La propia model card lo describe como "versioned fleet archive" asociado a una receta canonica concreta (`evaluations/2026-09-26_b1k_all_existing_queue`) y con un nivel ("tier") que agrupa episodios en JSON, videos, trazas, logs, protocolo, scripts, entrada y recibo. Es, por tanto, un paquete de datos y evidencias de una ejecucion de evaluacion, no un checkpoint con pesos entrenados.
 
 El repositorio ocupa 0,1 GB, tiene 0 descargas y 0 likes, y fue creado y actualizado el 1 de octubre de 2026 con apenas 16 segundos de diferencia, lo que es coherente con una subida automatizada de un snapshot. El unico tag presente es `region:us`, y no se declara pipeline, licencia ni idiomas soportados. La model card insiste en que se use "la revision exacta registrada" y se verifique el fichero `SHA256SUMS`, ya que el paquete es una instantanea y no un espejo de directorio vivo.
 
@@ -100,7 +100,7 @@ No se dispone de informacion suficiente para comparar parametros, contexto, rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h13-49999-d8f5f0348bca
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h13-49999-d8f5f0348bca
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-eval-task00-recovery-development-20260922-eai-6c3a23f5dcd0
 - Repositorio relacionado del mismo autor: https://huggingface.co/davidwdw/fa-code-task00-pilot-acceptance-8099906f75c2-f24e94cd73d4
 - Marco de evaluacion de referencia en la busqueda: https://github.com/openai/evals

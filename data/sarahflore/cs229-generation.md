@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sarahflore/cs229-generation es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de la arquitectura **Albef** (Align Before Fuse) orientada a tareas de generación. Lo publica el usuario Sarahflore bajo licencia MIT y se enmarca en el contexto del curso CS229, por lo que su finalidad declarada es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluación.
+Sarahflore/cs229-generation es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de la arquitectura **Albef** (Align Before Fuse) orientada a tareas de generación. Lo publica el usuario Sarahflore bajo licencia MIT y se enmarca en el contexto del curso CS229, por lo que su finalidad declarada es servir como material de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño, no como un modelo preentrenado listo para producción. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluación.
 
 La arquitectura combina atención *multi query* con fusión por *co-attention*, activación Mish y normalización RMSNorm, una configuración coherente con la familia ALBEF de modelos visión-lenguaje, aunque en este caso se trata de una implementación propia y no de los pesos oficiales de Salesforce. El único artefacto de pesos, `model.safetensors`, se describe explícitamente en la model card como un **checkpoint de inicialización** válido para pruebas de humo, no como un checkpoint entrenado ni evaluado.
 
@@ -69,7 +69,7 @@ La información disponible en la búsqueda web no contiene descripciones de mode
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sarahflore/cs229-generation | 16.576 según metadatos (unidad no especificada) | no disponible | Sin benchmark publicado; checkpoint sin entrenar | MIT | Repositorio de HuggingFace con 0 descargas |
+| Sarahflore/cs229-generation | 16.576 según metadatos (unidad no especificada) | no disponible | Sin benchmark publicado; checkpoint sin entrenar | MIT | Repositorio de Hugging Face con 0 descargas |
 | Albef (implementación de referencia de Salesforce) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de la misma categoría (visión-lenguaje) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,6 +89,6 @@ Se menciona la implementación de referencia de Albef únicamente como contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sarahflore/cs229-generation
+- Repositorio en Hugging Face: https://huggingface.co/Sarahflore/cs229-generation
 - Archivos incluidos en el repositorio: `model.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Enlaces relevantes encontrados en la búsqueda web: ninguno. Los resultados recuperados corresponden a páginas de ayuda de YouTube sin relación con el modelo analizado, por lo que no se incluyen.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-imogenai/kendra-krea es un adaptador LoRA de tipo DreamBooth para el modelo de generación de imágenes Krea 2, desarrollado por el usuario imogenai y publicado en HuggingFace. No se trata de un modelo completo, sino de un peso adicional que se carga sobre un modelo base —concretamente krea/Krea-2-Raw— para introducir un concepto o identidad concreto, invocado mediante el token `kendra_krea`. El repositorio ocupa 0,8 GB y se distribuye bajo licencia Apache 2.0.
+imogenai/kendra-krea es un adaptador LoRA de tipo DreamBooth para el modelo de generación de imágenes Krea 2, desarrollado por el usuario imogenai y publicado en Hugging Face. No se trata de un modelo completo, sino de un peso adicional que se carga sobre un modelo base —concretamente krea/Krea-2-Raw— para introducir un concepto o identidad concreto, invocado mediante el token `kendra_krea`. El repositorio ocupa 0,8 GB y se distribuye bajo licencia Apache 2.0.
 
 El modelo resuelve un problema acotado y muy habitual en flujos de trabajo de difusión: fijar un sujeto consistente (una persona, personaje o estilo) sin necesidad de reentrenar el modelo completo. El autor indica que el LoRA fue entrenado sobre Krea 2 RAW y que las muestras publicadas se generaron sobre Krea 2 Turbo con solo 8 pasos de inferencia y `guidance_scale=0.0`, lo que apunta a un uso orientado a generación rápida.
 
@@ -87,8 +87,8 @@ Comparativas con adaptadores de la misma categoría (por ejemplo, LoRA de person
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imogenai/kendra-krea
-- Modelo base en HuggingFace: https://huggingface.co/krea/Krea-2-Raw
+- Modelo en Hugging Face: https://huggingface.co/imogenai/kendra-krea
+- Modelo base en Hugging Face: https://huggingface.co/krea/Krea-2-Raw
 - Modelo de inferencia empleado en los ejemplos: https://huggingface.co/krea/Krea-2-Turbo
 - Suite oficial de Krea: https://www.krea.ai/
 - Guía de uso de Krea 2 (2026): https://tech-insider.org/how-to-use-krea-2-ai-image-generator-2026/

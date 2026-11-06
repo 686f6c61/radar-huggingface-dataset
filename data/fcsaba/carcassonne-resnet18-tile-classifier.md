@@ -25,7 +25,7 @@ Su relevancia actual es acotada y de nicho: sirve como componente de percepción
 | Pipeline declarado | image-classification |
 | Preprocesado requerido | Resize a 64x64, ToTensor y Normalize con media [0.485, 0.456, 0.406] y desviación [0.229, 0.224, 0.225] |
 | Ficheros del repositorio | carcassonne_model.pth, class_names.json (mapping índice a clase) |
-| Tamano del repositorio | 0.0 GB declarado por HuggingFace (los pesos en float32 rondarían los 45 MB) |
+| Tamano del repositorio | 0.0 GB declarado por Hugging Face (los pesos en float32 rondarían los 45 MB) |
 | Fecha de creacion / actualizacion | 2026-09-20 (ambas) |
 
 ## Arquitectura y entrenamiento
@@ -85,7 +85,7 @@ No se dispone de datos publicados que permitan comparar la exactitud de este cla
 
 ## Limitaciones y advertencias
 
-- Ausencia total de validación externa: 0 descargas y 0 likes en HuggingFace, sin métricas publicadas ni evaluaciones de terceros. La calidad del clasificador es una incógnita.
+- Ausencia total de validación externa: 0 descargas y 0 likes en Hugging Face, sin métricas publicadas ni evaluaciones de terceros. La calidad del clasificador es una incógnita.
 - Sesgo de dominio probable: el dataset de entrenamiento es sintético y procede de capturas de Board Game Arena. Es previsible una degradación apreciable sobre fotografías reales de mesa con iluminación variable, perspectiva, sombras, reflejos u oclusiones.
 - Dependencia de un recorte previo: el modelo solo clasifica imágenes ya aisladas de 64x64. No localiza losetas ni gestiona tableros completos, por lo que requiere un detector o segmentador externo en cualquier uso real.
 - Resolución muy baja: 64x64 píxeles limita la discriminación de variantes visualmente próximas (por ejemplo, los sufijos numéricos CCFF2, CFCF2 o las clases con terminación S) y de detalles pequeños como escudos o marcas.
@@ -100,8 +100,8 @@ No se dispone de datos publicados que permitan comparar la exactitud de este cla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fcsaba/carcassonne-resnet18-tile-classifier
-- Perfil del autor en HuggingFace: https://huggingface.co/fcsaba
+- Modelo en Hugging Face: https://huggingface.co/fcsaba/carcassonne-resnet18-tile-classifier
+- Perfil del autor en Hugging Face: https://huggingface.co/fcsaba
 - Ficheros del repositorio: carcassonne_model.pth (pesos) y class_names.json (mapping índice a clase), descargables vía huggingface_hub
 - Board Game Arena, origen del dataset de losetas: https://boardgamearena.com
 - Documentación de torchvision (ResNet18 y transformaciones): https://pytorch.org/vision/stable/index.html

@@ -87,7 +87,7 @@ Las cifras de dimensión de embedding de los modelos comparables son las habitua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diarizeapp/wespeaker-voxceleb-resnet34
+- Hugging Face: https://huggingface.co/diarizeapp/wespeaker-voxceleb-resnet34
 - Repositorio diarizeapp: https://github.com/benzy/diarize
 - WeSpeaker (proyecto original): no disponible en la información proporcionada
 - Paper de VoxCeleb: no disponible en la información proporcionada

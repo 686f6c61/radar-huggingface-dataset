@@ -77,7 +77,7 @@ No se dispone en la información proporcionada de datos numéricos de modelos al
 
 | Modelo | Parametros | Dataset | mIoU declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cylinder3d.semantickitti.xinge-zhu | 49,6 M | SemanticKITTI | 66,91 | Apache-2.0 | HuggingFace (`torch-pointcloud`) |
+| cylinder3d.semantickitti.xinge-zhu | 49,6 M | SemanticKITTI | 66,91 | Apache-2.0 | Hugging Face (`torch-pointcloud`) |
 | Cylinder3D original (xinge008) | no disponible | SemanticKITTI | no disponible en esta ficha | Apache-2.0 | GitHub |
 | Otras alternativas (p. ej. MinkUNet, SPVNAS) | no disponible | SemanticKITTI | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se han incluido cifras de modelos comparables porque no figuran en la informa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/cylinder3d.semantickitti.xinge-zhu
+- Hugging Face: https://huggingface.co/torch-pointcloud/cylinder3d.semantickitti.xinge-zhu
 - Paper Cylinder3D: https://arxiv.org/abs/2011.10033
 - Repositorio original: https://github.com/xinge008/Cylinder3D
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

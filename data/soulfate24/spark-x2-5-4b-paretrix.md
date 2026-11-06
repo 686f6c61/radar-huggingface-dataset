@@ -6,7 +6,7 @@ Spark-X2.5-4B-Paretrix es una redistribucion cuantizada en formato GGUF del mode
 
 La relevancia de esta publicacion es practica: ofrece ocho variantes comprimidas con presupuestos que van desde 1664 MiB (Femto-21pc) hasta 3772 MiB (Fidelity-48pc), ademas de las cuantizaciones estandar de llama.cpp (Q8_0, Q6_K-imx, Q5_K_M-imx, IQ4_XS-imx, IQ3_M-imx) como referencia. Cada nivel se presenta con metricas de degradacion (PPL, KLD, RMS delta-p y coincidencia de top-p) para que el usuario pueda elegir el punto de la frontera de Pareto que mejor se ajuste a su presupuesto de memoria. La licencia Apache 2.0 y la compatibilidad con llama.cpp facilitan su despliegue tanto en servidor como en equipos de consumo.
 
-El repositorio tiene 21,7 GB y, en la fecha de consulta, cero descargas y cero "likes", por lo que se trata de una publicacion reciente y sin validacion comunitaria independiente. La informacion sobre idiomas no aparece en la ficha de HuggingFace del modelo cuantizado, aunque la documentacion del modelo base de la serie Spark-X2.5 si menciona cobertura de mas de 200 idiomas y contexto nativo de hasta 1M de tokens.
+El repositorio tiene 21,7 GB y, en la fecha de consulta, cero descargas y cero "likes", por lo que se trata de una publicacion reciente y sin validacion comunitaria independiente. La informacion sobre idiomas no aparece en la ficha de Hugging Face del modelo cuantizado, aunque la documentacion del modelo base de la serie Spark-X2.5 si menciona cobertura de mas de 200 idiomas y contexto nativo de hasta 1M de tokens.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ Advertencias sobre esta tabla: no se especifica en la informacion disponible cua
 | XHToken/Spark-X2.5-4B | 4,11 mil millones | hasta 1M | no disponible en la informacion consultada | safetensors (modelo original) | Modelo base de esta publicacion |
 | Spark-X2.5-1.7B | no disponible | no disponible | no disponible en la informacion consultada | no disponible | Variante compacta de la misma serie, mencionada en el repositorio oficial |
 | Soulfate24/Spark-X2.5-4B-ASHQ1-Remix-GGUF | 4,11 mil millones | no disponible | Apache 2.0 | GGUF | Cuantizacion alternativa del mismo base, publicada por el mismo autor |
-| nassimjp/Spark-X2.5-4B | 4,11 mil millones | no disponible | no disponible | no disponible | Replica o copia del modelo base en HuggingFace |
+| nassimjp/Spark-X2.5-4B | 4,11 mil millones | no disponible | no disponible | no disponible | Replica o copia del modelo base en Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones comparables de modelos de terceros (por ejemplo, alternativas densas de ~3-4B) en la informacion proporcionada, por lo que no se puede establecer una comparativa de calidad frente a otras familias.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento ni de especificaciones comparables de mode
 - Degradacion por cuantizacion: los tiers agresivos pierden fidelidad de forma acusada. Femto-21pc presenta un incremento de PPL de +6,3975 y un KLD de 0,5799; Nano-27pc, +2,2719 y 0,2498. Para tareas sensibles se recomienda Quality-36pc o superior.
 - Metricas sin baseline documentada: la tabla de la model card no indica contra que referencia se calculan Delta PPL y KLD ni el corpus de evaluacion, lo que limita la interpretabilidad de los numeros.
 - Valor atipico no explicado: PPL de Pico-24pc aparece con una daga sin nota al pie en la informacion disponible; conviene tratar ese dato con cautela.
-- Idiomas: la ficha de HuggingFace del cuantizado no declara idiomas. La cobertura de mas de 200 idiomas proviene de la documentacion del modelo base y no ha sido verificada de forma independiente en esta version.
+- Idiomas: la ficha de Hugging Face del cuantizado no declara idiomas. La cobertura de mas de 200 idiomas proviene de la documentacion del modelo base y no ha sido verificada de forma independiente en esta version.
 - Contexto largo en la practica: la ventana de 1M de tokens del modelo base no esta confirmada para el cuantizado y su uso real esta limitado por la memoria de la cache KV.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y conservacion del aviso de licencia. Verificar que el modelo base XHToken/Spark-X2.5-4B mantiene la misma licencia antes de un despliegue comercial.
 - Madurez y soporte: el repositorio tiene cero descargas y cero "likes" en la fecha de consulta, sin issues ni validacion comunitaria. No hay garantia de mantenimiento ni de actualizaciones por parte del autor.
@@ -109,11 +109,11 @@ No se dispone de datos de rendimiento ni de especificaciones comparables de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Soulfate24/Spark-X2.5-4B-Paretrix
+- Modelo en Hugging Face: https://huggingface.co/Soulfate24/Spark-X2.5-4B-Paretrix
 - Modelo base Spark-X2.5-4B: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Suite de cuantizacion Paretrix: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
 - Cuantizacion alternativa del mismo autor (ASHQ1-Remix-GGUF): https://huggingface.co/Soulfate24/Spark-X2.5-4B-ASHQ1-Remix-GGUF
 - Repositorio oficial de la serie Spark-X2.5: https://github.com/XHToken/Spark-X2.5
 - Pagina de modelos y agentes de XHToken: https://xhtoken.ai/
 - Pagina del modelo en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-4B
-- Replica del modelo base en HuggingFace: https://huggingface.co/nassimjp/Spark-X2.5-4B
+- Replica del modelo base en Hugging Face: https://huggingface.co/nassimjp/Spark-X2.5-4B

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JanPhilipp/smolvla_ai_days_hammer_250 | 450.046.176 | Pick-and-place de un martillo (tarea unica) | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Ajuste fino especifico; sin evaluacion publicada |
-| lerobot/smolvla_base | No disponible (misma arquitectura, del orden de 450 M) | Politica VLA generalista, ajustable por tarea | No disponible en la informacion proporcionada | HuggingFace, dentro del ecosistema LeRobot | Modelo de partida de este ajuste; no ejecuta la tarea del martillo sin ajuste |
+| JanPhilipp/smolvla_ai_days_hammer_250 | 450.046.176 | Pick-and-place de un martillo (tarea unica) | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Ajuste fino especifico; sin evaluacion publicada |
+| lerobot/smolvla_base | No disponible (misma arquitectura, del orden de 450 M) | Politica VLA generalista, ajustable por tarea | No disponible en la informacion proporcionada | Hugging Face, dentro del ecosistema LeRobot | Modelo de partida de este ajuste; no ejecuta la tarea del martillo sin ajuste |
 | Otras politicas de LeRobot (ACT, Diffusion Policy, pi0) | No disponible | Manipulacion por imitation learning | No disponible | Repositorio LeRobot | Candidatas naturales a comparacion, pero no hay datos de rendimiento en la informacion proporcionada |
 
 No se dispone de cifras de rendimiento comparadas (tasa de exito, latencia, robustez) para ninguno de los modelos citados.
@@ -90,7 +90,7 @@ No se dispone de cifras de rendimiento comparadas (tasa de exito, latencia, robu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JanPhilipp/smolvla_ai_days_hammer_250
+- Modelo en Hugging Face: https://huggingface.co/JanPhilipp/smolvla_ai_days_hammer_250
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/JanPhilipp/ai_days_hammer_merged_250
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=JanPhilipp/ai_days_hammer_merged_250

@@ -81,8 +81,8 @@ El perfil cuantizado exige además que la referencia sin cuantizar supere T2 str
 
 | Modelo | Parámetros | Contexto | Dimensión | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `aether-models/qwen3-embedding-0.6b` (este bundle) | ~0,6 B | 8192 tokens por texto | 1024, Matryoshka 32-1024 | `.aimodel` Core AI, int8 por bloque de 32 | Apache-2.0 | Repositorio HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `Qwen/Qwen3-Embedding-0.6B` (modelo base) | ~0,6 B | No disponible en la información proporcionada | 1024 según el bundle derivado | Pesos PyTorch (no distribuidos en este repositorio) | Apache-2.0 (declarada en su model card, sin fichero de licencia propio) | Público en HuggingFace |
+| `aether-models/qwen3-embedding-0.6b` (este bundle) | ~0,6 B | 8192 tokens por texto | 1024, Matryoshka 32-1024 | `.aimodel` Core AI, int8 por bloque de 32 | Apache-2.0 | Repositorio Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `Qwen/Qwen3-Embedding-0.6B` (modelo base) | ~0,6 B | No disponible en la información proporcionada | 1024 según el bundle derivado | Pesos PyTorch (no distribuidos en este repositorio) | Apache-2.0 (declarada en su model card, sin fichero de licencia propio) | Público en Hugging Face |
 | Otras alternativas de embeddings de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación con modelos de terceros de la misma categoría (por ejemplo, familias de embeddings multilingües de ~0,5 B de parámetros) no puede establecerse con la información proporcionada: no hay datos de benchmarks ni de idiomas para este bundle, por lo que cualquier comparación de calidad sería especulativa.
@@ -101,7 +101,7 @@ La comparación con modelos de terceros de la misma categoría (por ejemplo, fam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aether-models/qwen3-embedding-0.6b
+- Modelo en Hugging Face: https://huggingface.co/aether-models/qwen3-embedding-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Texto canónico de la licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog, repositorio de código o demo del bundle: no disponibles en la información proporcionada

@@ -17,7 +17,7 @@ La relevancia de este modelo radica en que acerca un modelo de nivel SOTA en tar
 | Parametros activos | 40 B (según fuentes externas; no confirmado en el repositorio) |
 | Longitud de contexto | 1 M tokens (según fuentes externas) |
 | Tipos de cuantizacion | Q4-INF (4 bits, método INF propietario) |
-| Idiomas soportados | Inglés (según metadatos de HuggingFace; el modelo base podría soportar más, no confirmado) |
+| Idiomas soportados | Inglés (según metadatos de Hugging Face; el modelo base podría soportar más, no confirmado) |
 | Licencia | MIT (modelo base); no disponible para este repositorio |
 | Formato de pesos | MLX (formato de Apple para Metal) |
 
@@ -83,7 +83,7 @@ GLM-5.3 destaca por su contexto de 1 M tokens y su enfoque en tareas agénticas 
 ## Limitaciones y advertencias
 
 - No se dispone de información sobre sesgos o alucinaciones específicas de este modelo; el autor advierte en el disclaimer que el modelo puede no ser siempre preciso o contextualmente apropiado.
-- La licencia del repositorio cuantizado no está especificada en HuggingFace; aunque el modelo base es MIT, se recomienda verificar los términos antes de un uso comercial.
+- La licencia del repositorio cuantizado no está especificada en Hugging Face; aunque el modelo base es MIT, se recomienda verificar los términos antes de un uso comercial.
 - El repositorio solo declara inglés como idioma soportado, aunque el modelo base probablemente tenga capacidades multilingües; no hay confirmación oficial.
 - El método de cuantización INF es propietario de inferencerlabs y no está documentado públicamente; los resultados de calidad se basan en métricas internas del autor, no en benchmarks independientes.
 - El tamaño del repositorio (19,5 GB) es sorprendentemente pequeño para un modelo de 744 B parámetros, lo que sugiere que podría tratarse de una versión parcial o con una compresión extrema; no se ha podido verificar la integridad del modelo.
@@ -91,8 +91,8 @@ GLM-5.3 destaca por su contexto de 1 M tokens y su enfoque en tareas agénticas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/inferencerlabs/GLM-5.3-MLX-Q4-INF
-- Modelo base en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-BF16
+- Repositorio Hugging Face: https://huggingface.co/inferencerlabs/GLM-5.3-MLX-Q4-INF
+- Modelo base en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-BF16
 - Página del modelo GLM-5.3 en openlm.ai: https://openlm.ai/glm-5.5/
 - Documentación de Unsloth para GLM-5.3: https://unsloth.ai/docs/models/glm-5.3
 - Página de GLM-5.3 en LM Studio: https://lmstudio.ai/models/glm-5.3

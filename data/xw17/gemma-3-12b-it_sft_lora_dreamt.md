@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xw17/gemma-3-12b-it_SFT_lora_dreamt` es un adaptador LoRA publicado en HuggingFace por el usuario `xw17`. El nombre del repositorio sugiere que se trata de un ajuste fino supervisado (SFT, *supervised fine-tuning*) sobre el modelo base `gemma-3-12b-it` de Google, aunque esta procedencia no se confirma en la model card, que es una plantilla autogenerada sin contenido cumplimentado.
+`xw17/gemma-3-12b-it_SFT_lora_dreamt` es un adaptador LoRA publicado en Hugging Face por el usuario `xw17`. El nombre del repositorio sugiere que se trata de un ajuste fino supervisado (SFT, *supervised fine-tuning*) sobre el modelo base `gemma-3-12b-it` de Google, aunque esta procedencia no se confirma en la model card, que es una plantilla autogenerada sin contenido cumplimentado.
 
 El repositorio tiene un tamano de aproximadamente 0,2 GB, lo que es coherente con un adaptador de bajo rango (LoRA) en lugar de pesos completos. La unica informacion tecnica verificable proviene de las etiquetas del repo (`transformers`, `safetensors`, `arxiv:1910.09700`, `endpoints_compatible`, `region:us`), donde `arxiv:1910.09700` corresponde al articulo de Lacoste et al. sobre estimacion de impacto ambiental y no a un paper del propio modelo.
 
@@ -23,7 +23,7 @@ En el momento de redactar esta ficha el modelo registra 0 descargas y 0 *likes*,
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura en la model card, que consiste en una plantilla de HuggingFace sin rellenar. La unica pista es el identificador del modelo, que apunta a un ajuste LoRA sobre `gemma-3-12b-it`, lo que implicaria una arquitectura transformer decoder heredada del modelo base. El sufijo `_SFT_lora` sugiere un entrenamiento de ajuste fino supervisado mediante LoRA, y `dreamt` podria referirse al nombre del experimento o al conjunto de datos empleado, pero ninguno de estos extremos esta documentado.
+No se dispone de informacion sobre la arquitectura en la model card, que consiste en una plantilla de Hugging Face sin rellenar. La unica pista es el identificador del modelo, que apunta a un ajuste LoRA sobre `gemma-3-12b-it`, lo que implicaria una arquitectura transformer decoder heredada del modelo base. El sufijo `_SFT_lora` sugiere un entrenamiento de ajuste fino supervisado mediante LoRA, y `dreamt` podria referirse al nombre del experimento o al conjunto de datos empleado, pero ninguno de estos extremos esta documentado.
 
 Tampoco se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo etapas de RLHF, DPO u otros metodos de alineacion. La unica referencia tecnica presente en las etiquetas es `arxiv:1910.09700`, que remite al calculador de impacto de carbono de Lacoste et al. (2019), citado por la plantilla de model card y no relacionado con el entrenamiento del modelo.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xw17/gemma-3-12b-it_SFT_lora_dreamt | adaptador LoRA (base 12B segun nombre) | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| gemma-3-12b-it (modelo base implicito) | 12B (referencia publica) | no disponible en esta ficha | no comparable | licencia Gemma (no confirmada aqui) | HuggingFace |
-| Adaptadores LoRA comunitarios sobre Gemma 3 | variable | no disponible | no disponible | variable | HuggingFace |
+| xw17/gemma-3-12b-it_SFT_lora_dreamt | adaptador LoRA (base 12B segun nombre) | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| gemma-3-12b-it (modelo base implicito) | 12B (referencia publica) | no disponible en esta ficha | no comparable | licencia Gemma (no confirmada aqui) | Hugging Face |
+| Adaptadores LoRA comunitarios sobre Gemma 3 | variable | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria.
 
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_dreamt
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_dreamt
 - Paper referenciado en las etiquetas (impacto ambiental, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML: https://mlco2.github.io/impact
-- Listado de modelos de HuggingFace (fuente de la busqueda web): https://huggingface.co/models?sort=created
+- Listado de modelos de Hugging Face (fuente de la busqueda web): https://huggingface.co/models?sort=created
 - No se han encontrado repositorios, demos ni articulos adicionales especificos de este modelo.

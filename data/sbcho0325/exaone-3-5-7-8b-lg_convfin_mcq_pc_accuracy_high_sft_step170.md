@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su potencial aplicación en dominios fina
 
 El adaptador emplea la técnica LoRA, que introduce matrices de bajo rango en las capas de atención y feed-forward del transformer, permitiendo un ajuste eficiente con un número reducido de parámetros entrenables. El modelo base EXAONE 3.5-7.8B-Instruct es un transformer causal con normalización pre-RMSNorm, activación SwiGLU y atención con RoPE (rotary position embeddings). Según el informe técnico de EXAONE 3.5, el modelo fue preentrenado con un corpus multilingüe (principalmente coreano e inglés) y posteriormente afinado con instrucciones y preferencias humanas.
 
-El entrenamiento del adaptador se realizó mediante SFT (supervised fine-tuning), utilizando el framework TRL de HuggingFace. El nombre del checkpoint (`step170`) indica que es el resultado del paso 170 de optimización, lo que sugiere un entrenamiento relativamente corto. No se dispone de información sobre el dataset utilizado, los hiperparámetros exactos (tasa de aprendizaje, batch size, etc.) ni la duración total del entrenamiento. El tamaño reducido del adaptador (0,3 GB) es coherente con el número limitado de parámetros LoRA típico en este tipo de ajustes.
+El entrenamiento del adaptador se realizó mediante SFT (supervised fine-tuning), utilizando el framework TRL de Hugging Face. El nombre del checkpoint (`step170`) indica que es el resultado del paso 170 de optimización, lo que sugiere un entrenamiento relativamente corto. No se dispone de información sobre el dataset utilizado, los hiperparámetros exactos (tasa de aprendizaje, batch size, etc.) ni la duración total del entrenamiento. El tamaño reducido del adaptador (0,3 GB) es coherente con el número limitado de parámetros LoRA típico en este tipo de ajustes.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: el modelo base EXAONE 3.5-7.8B requiere aproximadamente 15,6 GB en FP16 (7,8B x 2 bytes). Con cuantizacion a 8 bits se reduce a unos 7,8 GB, y a 4 bits a unos 3,9 GB. El adaptador LoRA anade un consumo minimo adicional.
 - GPU recomendadas: para FP16 se necesitan GPUs con al menos 16 GB de VRAM, como RTX 4090, A100 40GB o H100. Con cuantizacion 4 bits puede ejecutarse en GPUs consumer de 8 GB (RTX 3070/4060) o incluso menos.
 - Compatibilidad con consumer GPU: si, utilizando cuantizacion (por ejemplo, bitsandbytes) y cargando el adaptador con PEFT.
-- Opciones de despliegue: el adaptador se puede cargar con la libreria `peft` de HuggingFace junto con el modelo base. Para inferencia en produccion se puede usar vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con Ollama mediante la creacion de un Modelfile que incluya el adaptador.
+- Opciones de despliegue: el adaptador se puede cargar con la libreria `peft` de Hugging Face junto con el modelo base. Para inferencia en produccion se puede usar vLLM, TGI o llama.cpp (si se convierte a GGUF). Tambien es compatible con Ollama mediante la creacion de un Modelfile que incluya el adaptador.
 - Latencia y throughput: no disponibles. Dependen del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -62,9 +62,9 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables en el mism
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EXAONE 3.5-7.8B-Instruct (base) | 7,8B | 32K | Licencia propia de LG AI | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | HuggingFace |
-| Qwen 2.5 7B Instruct | 7B | 128K | Apache 2.0 | HuggingFace |
+| EXAONE 3.5-7.8B-Instruct (base) | 7,8B | 32K | Licencia propia de LG AI | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 Community License | Hugging Face |
+| Qwen 2.5 7B Instruct | 7B | 128K | Apache 2.0 | Hugging Face |
 
 El adaptador no es directamente comparable con estos modelos completos, ya que solo anade una especializacion sobre el base. Para una comparativa justa habria que evaluar el adaptador frente a otros modelos afinados para tareas financieras, de los cuales no se tiene informacion.
 
@@ -79,7 +79,7 @@ El adaptador no es directamente comparable con estos modelos completos, ya que s
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_high_sft_step170
+- Adaptador en Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_high_sft_step170
 - Modelo base EXAONE 3.5-7.8B-Instruct: https://huggingface.co/LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct
 - Informe tecnico EXAONE 3.5 (arXiv): https://arxiv.org/abs/2412.04862
 - Repositorio oficial de EXAONE 3.5 en GitHub: https://github.com/LG-AI-EXAONE/EXAONE-3.5

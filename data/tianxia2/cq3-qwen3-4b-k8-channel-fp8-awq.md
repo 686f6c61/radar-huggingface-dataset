@@ -62,5 +62,5 @@ No se dispone de comparativas publicadas con otras cuantizaciones de Qwen3-4B (c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tianxia2/CQ3-Qwen3-4B-K8-Channel-FP8-AWq
+- Modelo en Hugging Face: https://huggingface.co/tianxia2/CQ3-Qwen3-4B-K8-Channel-FP8-AWq
 - Repositorio CodeQuant3: https://github.com/shawnyin128/CodeQuant3

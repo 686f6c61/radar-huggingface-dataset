@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto / ventana | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mbfa-abjad | 14,75 M | 120 ms por fotograma (campo receptivo 38,9 ms) | ar, ckb, fa, sd, ur | AGPL-3.0 | HuggingFace (Tabahi/mbfa-abjad) |
+| mbfa-abjad | 14,75 M | 120 ms por fotograma (campo receptivo 38,9 ms) | ar, ckb, fa, sd, ur | AGPL-3.0 | Hugging Face (Tabahi/mbfa-abjad) |
 | CUPE / p3cupe (predecesor) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de alineación forzada (Montreal Forced Aligner, MFA) | no disponible | no disponible | multilingüe (depende de diccionarios) | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos comparativos de rendimiento entre mbfa-abjad y sus altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tabahi/mbfa-abjad
+- Hugging Face: https://huggingface.co/Tabahi/mbfa-abjad
 - Repositorio de código: https://github.com/tabahi/bfa_models (`p4mbfa/`)
 - standard_g2p / CharsiuG2P: https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-krea2-style-2p5d-brushstroke es un adaptador LoRA de estilo para el modelo de difusión Krea 2, publicado por el usuario kirusanth08 en HuggingFace. Su objetivo es reproducir un estilo concreto de ilustración: concept art 2.5D de sombreado plano (flat-shaded), con pinceladas tipo cuchillo (knife strokes) y composiciones propias de hojas de turnaround de personaje (vista frontal y trasera). El adaptador se activa mediante el token disparador `kbrsh2d`.
+krea2-style-2p5d-brushstroke es un adaptador LoRA de estilo para el modelo de difusión Krea 2, publicado por el usuario kirusanth08 en Hugging Face. Su objetivo es reproducir un estilo concreto de ilustración: concept art 2.5D de sombreado plano (flat-shaded), con pinceladas tipo cuchillo (knife strokes) y composiciones propias de hojas de turnaround de personaje (vista frontal y trasera). El adaptador se activa mediante el token disparador `kbrsh2d`.
 
 El LoRA se entrenó sobre el checkpoint no destilado `krea/Krea-2-Raw`, requisito habitual en el entrenamiento de adaptadores de difusión, y está pensado para aplicarse en inferencia sobre `krea/Krea-2-Turbo` para generar en solo 8 pasos. El entrenamiento se realizó con DiffSynth-Studio, con rango 32 y 1000 pasos, guardando checkpoints intermedios cada 200 pasos. El dataset es deliberadamente pequeno: 25 imagenes de concept art seleccionadas y captionadas solo con contenido (sin palabras de estilo) y con la composicion descrita de forma explicita para evitar que el layout se filtrase al estilo aprendido.
 
@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de estilo comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kirusanth08/krea2-style-2p5d-brushstroke
+- Modelo en Hugging Face: https://huggingface.co/kirusanth08/krea2-style-2p5d-brushstroke
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia (Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Componente auxiliar de texto/vision: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-15-steer-aft-qwen3.5-9b` | Adaptadores de rango 1 sobre base de 9B | No disponible | Adaptador PEFT de investigacion | MIT | HuggingFace (0 descargas) |
-| `Qwen/Qwen3.5-9B` (modelo base) | 9B | No disponible | Modelo completo | No disponible en la informacion proporcionada | HuggingFace |
-| Adaptadores PEFT genericos sobre Qwen | Depende del rango y capas | Heredado del base | Adaptador PEFT | Variable | HuggingFace |
+| `bcywinski/gen-science-15-steer-aft-qwen3.5-9b` | Adaptadores de rango 1 sobre base de 9B | No disponible | Adaptador PEFT de investigacion | MIT | Hugging Face (0 descargas) |
+| `Qwen/Qwen3.5-9B` (modelo base) | 9B | No disponible | Modelo completo | No disponible en la informacion proporcionada | Hugging Face |
+| Adaptadores PEFT genericos sobre Qwen | Depende del rango y capas | Heredado del base | Adaptador PEFT | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bcywinski/gen-science-15-steer-aft-qwen3.5-9b
+- Repositorio Hugging Face: https://huggingface.co/bcywinski/gen-science-15-steer-aft-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Dataset AFT referenciado: https://huggingface.co/bcywinski/gen-science-03-aft-rows-cheese
 - Paper "gen-science": no disponible en la informacion proporcionada

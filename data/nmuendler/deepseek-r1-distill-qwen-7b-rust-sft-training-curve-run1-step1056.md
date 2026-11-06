@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT 0.20.0) sobre el modelo base `
 
 El interés de esta ficha es doble. Por un lado, documenta un adaptador de bajo coste (0,7 GB de repositorio) que puede superponerse a un modelo de razonamiento de 7B ya existente sin reentrenar la totalidad de los pesos. Por otro, el modelo base pertenece a la familia DeepSeek-R1-Distill, destilada a partir de DeepSeek-R1 y muy utilizada como punto de partida para tareas de razonamiento y código con trazas de pensamiento largas.
 
-La información publicada por el autor es mínima: la model card mantiene la plantilla por defecto de HuggingFace con la mayoría de campos sin rellenar (`[More Information Needed]`). No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros, resultados de evaluación ni detalles del dataset de Rust empleado. Todo lo que no aparece en la información proporcionada se marca en esta ficha como "no disponible".
+La información publicada por el autor es mínima: la model card mantiene la plantilla por defecto de Hugging Face con la mayoría de campos sin rellenar (`[More Information Needed]`). No se declaran licencia, idiomas, datos de entrenamiento, hiperparámetros, resultados de evaluación ni detalles del dataset de Rust empleado. Todo lo que no aparece en la información proporcionada se marca en esta ficha como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -82,10 +82,10 @@ La comparativa se establece frente a alternativas de la misma familia y tamaño.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (nmuendler, LoRA sobre DeepSeek-R1-Distill-Qwen-7B, paso 1056) | Adaptador LoRA; base de 7B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico en HuggingFace |
-| Otros destilados de la familia DeepSeek-R1 (por ejemplo, variantes de 1.5B y 14B) | Segun variante | No disponible | No disponible | No disponible | Publicos en HuggingFace |
-| Modelos instruct generalistas de ~7B (por ejemplo, Qwen2.5-7B-Instruct) | ~7B | No disponible | No disponible | No disponible | Publicos en HuggingFace |
+| Este adaptador (nmuendler, LoRA sobre DeepSeek-R1-Distill-Qwen-7B, paso 1056) | Adaptador LoRA; base de 7B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B (modelo base) | 7B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Repositorio publico en Hugging Face |
+| Otros destilados de la familia DeepSeek-R1 (por ejemplo, variantes de 1.5B y 14B) | Segun variante | No disponible | No disponible | No disponible | Publicos en Hugging Face |
+| Modelos instruct generalistas de ~7B (por ejemplo, Qwen2.5-7B-Instruct) | ~7B | No disponible | No disponible | No disponible | Publicos en Hugging Face |
 
 No se dispone de datos verificados para afirmar superioridad o inferioridad en ningun eje. La unica diferencia contrastable con la informacion aportada es el tamano del artefacto (0,7 GB) y su naturaleza de adaptador, que lo hace mucho mas ligero de distribuir que un modelo completo, a costa de requerir el modelo base para funcionar.
 
@@ -104,7 +104,7 @@ No se dispone de datos verificados para afirmar superioridad o inferioridad en n
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1056
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1056
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Referencia citada en la model card (calculo de impacto ambiental): https://mlco2.github.io/impact#compute
 - Articulo citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

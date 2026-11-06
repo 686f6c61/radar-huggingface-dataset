@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shabieh2/1023_clus_rel34_3ep` es un ajuste fino (finetune) publicado en HuggingFace por el usuario shabieh2 sobre el modelo base `unsloth/Muse-Glimmer-30B`. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: la model card se limita a indicar el modelo de partida, la licencia Apache 2.0 y que el entrenamiento se realizó con Unsloth, sin detallar el dataset, el método de ajuste ni los objetivos de la especialización. El sufijo del nombre ("clus", "rel34", "3ep") sugiere un ajuste orientado a tareas de clustering o relevancia sobre un conjunto de datos de la versión 3.4, con 3 épocas de entrenamiento, aunque esto es una inferencia a partir de la nomenclatura y no está confirmado por el autor.
+`shabieh2/1023_clus_rel34_3ep` es un ajuste fino (finetune) publicado en Hugging Face por el usuario shabieh2 sobre el modelo base `unsloth/Muse-Glimmer-30B`. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: la model card se limita a indicar el modelo de partida, la licencia Apache 2.0 y que el entrenamiento se realizó con Unsloth, sin detallar el dataset, el método de ajuste ni los objetivos de la especialización. El sufijo del nombre ("clus", "rel34", "3ep") sugiere un ajuste orientado a tareas de clustering o relevancia sobre un conjunto de datos de la versión 3.4, con 3 épocas de entrenamiento, aunque esto es una inferencia a partir de la nomenclatura y no está confirmado por el autor.
 
 El repositorio ocupa 0,9 GB, un tamaño muy inferior a los aproximadamente 60 GB que requerirían los pesos completos de un modelo de 30 000 millones de parámetros en bf16. Esto es consistente con la publicación de un adaptador (LoRA/PEFT) o de un checkpoint parcial, en lugar de los pesos completos, aunque la información disponible no lo confirma explícitamente. Las etiquetas del repositorio incluyen `safetensors`, `transformers`, `text-generation-inference`, `trl` y `unsloth`.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shabieh2/1023_clus_rel34_3ep` | No disponible (base 30B) | No disponible | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
-| `unsloth/Muse-Glimmer-30B` (modelo base) | 30B según nomenclatura | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
-| `shabieh2/1023_clus_rel34_3ep_2_epoch` | No disponible (base 30B) | No disponible | Sin benchmarks publicados | No disponible en la información proporcionada | HuggingFace |
-| `shabieh2/1017_cluster_lora_fullset_rel34_ep3cont_1_epoch` | No disponible (base 30B) | No disponible | Sin benchmarks publicados | No disponible en la información proporcionada | HuggingFace |
+| `shabieh2/1023_clus_rel34_3ep` | No disponible (base 30B) | No disponible | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
+| `unsloth/Muse-Glimmer-30B` (modelo base) | 30B según nomenclatura | No disponible | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
+| `shabieh2/1023_clus_rel34_3ep_2_epoch` | No disponible (base 30B) | No disponible | Sin benchmarks publicados | No disponible en la información proporcionada | Hugging Face |
+| `shabieh2/1017_cluster_lora_fullset_rel34_ep3cont_1_epoch` | No disponible (base 30B) | No disponible | Sin benchmarks publicados | No disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos suficientes para comparar este checkpoint con alternativas de la misma categoría (modelos de 30B de propósito general): no se conocen sus métricas ni las especificaciones del modelo base. La comparación más informativa es contra el propio modelo de partida, evaluando la mejora o degradación en la tarea objetivo con un conjunto de test propio.
 
@@ -88,7 +88,7 @@ No se dispone de datos suficientes para comparar este checkpoint con alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/1023_clus_rel34_3ep
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/1023_clus_rel34_3ep
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Checkpoint relacionado (2 épocas): https://huggingface.co/shabieh2/1023_clus_rel34_3ep_2_epoch
 - Checkpoint relacionado (cluster LoRA fullset): https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ep3cont_1_epoch

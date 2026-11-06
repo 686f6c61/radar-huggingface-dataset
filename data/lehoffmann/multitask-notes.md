@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lehoffmann/multitask-notes` es una implementación pequeña de un Vision Transformer (ViT) diseñada para tareas multitarea, publicada por el usuario lehoffmann en HuggingFace. Se trata de un punto de partida reproducible, no de un modelo entrenado: incluye un checkpoint de inicialización válido para pruebas de humo, junto con una configuración de arquitectura explícita y una receta de entrenamiento por defecto. El repositorio no reclama ningún resultado de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
+El modelo `lehoffmann/multitask-notes` es una implementación pequeña de un Vision Transformer (ViT) diseñada para tareas multitarea, publicada por el usuario lehoffmann en Hugging Face. Se trata de un punto de partida reproducible, no de un modelo entrenado: incluye un checkpoint de inicialización válido para pruebas de humo, junto con una configuración de arquitectura explícita y una receta de entrenamiento por defecto. El repositorio no reclama ningún resultado de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado para robustez, equidad o transferencia de dominio.
 
 Con solo 24.832 parámetros, el modelo es extremadamente pequeño, lo que lo hace adecuado para experimentos de investigación y desarrollo de arquitecturas, pero no para uso en producción. La arquitectura emplea atención de ventana deslizante, fusión tensorial, activación swish y normalización groupnorm, con una escala "small". No se especifica una longitud de contexto, ya que al ser un modelo de visión, el concepto de contexto textual no aplica directamente.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: lehoffmann/multitask-notes](https://huggingface.co/lehoffmann/multitask-notes)
+- [Hugging Face: lehoffmann/multitask-notes](https://huggingface.co/lehoffmann/multitask-notes)
 - [arXiv: Learning to Reason and Memorize with Self-Notes](https://arxiv.org/pdf/2305.00833v2) (referencia general sobre multitarea)
 - [arXiv: Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) (referencia general sobre multitarea)
 - [GitHub: Awesome Multi-Task Learning](https://github.com/thuml/awesome-multi-task-learning) (recopilación de recursos sobre multitarea)

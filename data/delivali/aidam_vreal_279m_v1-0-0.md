@@ -80,7 +80,7 @@ No se han encontrado en la informacion proporcionada datos comparativos con otro
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V1.0.0
+- Pagina del modelo en Hugging Face: https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V1.0.0
 - Version anterior (V0.1.0): https://huggingface.co/DeliVali/AIDAM_VREAL_279M_V0.1.0
 - Modelo hermano para claims enciclopedicos (VWIKI): https://huggingface.co/DeliVali/AIDAM_VWIKI_279M_V0.1.0
 - Repositorio del proyecto AIDAM en GitHub (docs/ROADMAP.md): https://github.com/DeliVali/AIDAM

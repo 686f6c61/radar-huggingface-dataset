@@ -109,7 +109,7 @@ No se dispone de informacion verificada para comparar con alternativas externas 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-GGUF
+- Ficha en Hugging Face: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-GGUF
 - Bundle MLX recomendado por el autor para Osaurus: https://huggingface.co/OsaurusAI/Raptor-0.6.1-preview-JANG_6M
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Sitio del desarrollador: https://osaurus.ai

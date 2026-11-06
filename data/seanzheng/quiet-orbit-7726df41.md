@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SeanZheng/quiet-orbit-7726df41` no es un modelo de lenguaje, sino una coleccion de checkpoints de pesos en formato safetensors publicada bajo el identificador de un repositorio de HuggingFace. Segun su propia model card, contiene exportaciones del promedio movil exponencial (EMA) de las dos etapas de un pipeline de difusion latente: una etapa 1 con prefijos de generador `encoder`, `decoder`, `quant_conv`, `post_quant_conv` y un `linear_proj` opcional (es decir, un autoencoder del tipo usado en modelos de difusion latente) y una etapa 2 con los `state_dict` de un DiT (Diffusion Transformer). Se distribuyen cuatro variantes (`ldm`, `pcls1c`, `vf_b`, `vf_l`) con varios puntos de control por epoca.
+`SeanZheng/quiet-orbit-7726df41` no es un modelo de lenguaje, sino una coleccion de checkpoints de pesos en formato safetensors publicada bajo el identificador de un repositorio de Hugging Face. Segun su propia model card, contiene exportaciones del promedio movil exponencial (EMA) de las dos etapas de un pipeline de difusion latente: una etapa 1 con prefijos de generador `encoder`, `decoder`, `quant_conv`, `post_quant_conv` y un `linear_proj` opcional (es decir, un autoencoder del tipo usado en modelos de difusion latente) y una etapa 2 con los `state_dict` de un DiT (Diffusion Transformer). Se distribuyen cuatro variantes (`ldm`, `pcls1c`, `vf_b`, `vf_l`) con varios puntos de control por epoca.
 
 El interes del repositorio es de tipo investigador y reproductivo: no incluye codigo de arquitectura ni pipeline de inferencia, solo pesos y configuracion. Los pesos corresponden a EMA, no a los pesos de entrenamiento completos, y no incluyen optimizadores, discriminadores, LPIPS ni el profesor congelado, por lo que no sirven como checkpoints de reanudacion de entrenamiento, sino como pesos de inferencia o como material de analisis de la dinamica de entrenamiento (hay EMA de las epocas 5, 10, 20, 40 y 80 en la etapa 2, y de la epoca 20, paso 100080, en la etapa 1).
 
@@ -70,7 +70,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SeanZheng/quiet-orbit-7726df41 | no disponible | no aplica | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| SeanZheng/quiet-orbit-7726df41 | no disponible | no aplica | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeanZheng/quiet-orbit-7726df41
+- Repositorio en Hugging Face: https://huggingface.co/SeanZheng/quiet-orbit-7726df41
 - Manifiesto con epocas, pasos, tamanos y hashes SHA256: `manifest.json`, dentro del repositorio anterior (https://huggingface.co/SeanZheng/quiet-orbit-7726df41/blob/main/manifest.json)
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la busqueda web realizada; los resultados devueltos correspondian a paginas de reserva de hoteles sin relacion con el modelo.

@@ -14,7 +14,7 @@ El modelo se distribuye con pesos completos bajo la licencia Kimi K3, lo que per
 | Parametros totales | 2.779.931.837.184 (2,8T) |
 | Parametros activos | 104B |
 | Longitud de contexto | 1.000.000 tokens |
-| Tipos de cuantizacion | 8-bit (según tags de HuggingFace); otras cuantizaciones no disponibles |
+| Tipos de cuantizacion | 8-bit (según tags de Hugging Face); otras cuantizaciones no disponibles |
 | Idiomas soportados | no disponible |
 | Licencia | Kimi K3 (license: other, license_name: "kimi-k3") |
 | Formato de pesos | safetensors |
@@ -32,7 +32,7 @@ El entrenamiento se basa en el marco Stable LatentMoE, que mejora la estabilidad
 - Soporte para agentes autónomos: puede mantener sesiones de ingeniería prolongadas con supervisión humana mínima, navegar repositorios masivos y orquestar herramientas de terminal.
 - Trabajo de conocimiento end-to-end: genera informes de investigación profundos con visualizaciones interactivas, widgets, paneles de control, diseño de movimiento y edición de vídeo.
 - Ventana de contexto de 1 millón de tokens, adecuada para documentos extensos, bases de código completas o análisis de vídeo de larga duración.
-- Capacidades de extracción de características (feature-extraction) según los tags de HuggingFace, lo que sugiere utilidad para representaciones vectoriales.
+- Capacidades de extracción de características (feature-extraction) según los tags de Hugging Face, lo que sugiere utilidad para representaciones vectoriales.
 
 ## Casos de uso
 
@@ -70,9 +70,9 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/i3zs/Kimi-K3
+- Hugging Face: https://huggingface.co/i3zs/Kimi-K3
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Informe técnico (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Página del modelo en Kimi: https://www.kimi.ai/ai-models/kimi-k3
 - Documentación de la API: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
-- Repositorio de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Repositorio de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai

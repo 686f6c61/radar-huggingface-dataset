@@ -67,7 +67,7 @@ No se dispone de datos comparativos con otros modelos MoE de tamaño similar (po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark-GGUF
+- Repositorio Hugging Face: https://huggingface.co/magnitudedev/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark-GGUF
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4-DSpark
 - Model card de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Pagina de NVIDIA Nemotron: https://developer.nvidia.com/topics/ai/nemotron

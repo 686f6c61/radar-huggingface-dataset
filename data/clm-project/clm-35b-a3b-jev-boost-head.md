@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Índice JDI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este head (Jev boost) | ~12,6 M (head) + base 35B-A3B | No disponible | 39,9 | `other` / per-source | HuggingFace, 0 descargas |
+| Este head (Jev boost) | ~12,6 M (head) + base 35B-A3B | No disponible | 39,9 | `other` / per-source | Hugging Face, 0 descargas |
 | Baseline (67 text stores) | ~12,6 M (head) + base 35B-A3B | No disponible | 21,6 | No disponible | Referenciado en la model card |
 | Otras cabezas contrastivas o rerankers de terceros | No disponible | No disponible | No disponible | No disponible | No se han identificado comparables publicados con métricas equivalentes |
 
@@ -92,7 +92,7 @@ No se dispone de alternativas de la misma categoría con resultados publicados e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clm-project/clm-35b-a3b-jev-boost-head
+- Modelo en Hugging Face: https://huggingface.co/clm-project/clm-35b-a3b-jev-boost-head
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8
 - Repositorio de entrenamiento `clm_train`: https://github.com/jackyk02/clm_train
 - Tabla de embeddings de un solo token: https://huggingface.co/datasets/jackyk02/qwen3.6-35b-a3b-fp8-single-token-embeddings

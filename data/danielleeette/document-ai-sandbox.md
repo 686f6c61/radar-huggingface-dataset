@@ -64,4 +64,4 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielleeette/document-ai-sandbox
+- Repositorio en Hugging Face: https://huggingface.co/danielleeette/document-ai-sandbox

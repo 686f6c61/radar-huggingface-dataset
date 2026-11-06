@@ -6,7 +6,7 @@ DeepSeek-R1-Distill-Qwen-14B es un modelo de lenguaje denso de 14.770.033.664 pa
 
 La relevancia de este modelo radica en que forma parte de la familia de destilados que DeepSeek publico en abierto bajo licencia MIT, junto con variantes basadas en Qwen2.5 (1.5B, 7B, 14B, 32B) y Llama3 (8B, 70B). El enfoque de destilacion demostro que los patrones de razonamiento de un modelo grande pueden transferirse eficazmente a modelos densos mas pequenos, superando en muchos casos el rendimiento que se obtendria aplicando RL directamente sobre modelos pequenos.
 
-El modelo esta orientado a generacion de texto, razonamiento matematico, generacion de codigo y conversacion multi-turno, y su licencia permisiva lo hace apto tanto para investigacion como para uso comercial. Acumula mas de 328.000 descargas y 719 likes en HuggingFace, lo que lo situa entre los modelos destilados mas utilizados de la familia R1.
+El modelo esta orientado a generacion de texto, razonamiento matematico, generacion de codigo y conversacion multi-turno, y su licencia permisiva lo hace apto tanto para investigacion como para uso comercial. Acumula mas de 328.000 descargas y 719 likes en Hugging Face, lo que lo situa entre los modelos destilados mas utilizados de la familia R1.
 
 ## Especificaciones tecnicas
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Qwen-14B | ~14,8B | no disponible | no disponible (sin cifras en la informacion) | MIT | HuggingFace (deepseek-ai) |
-| DeepSeek-R1-Distill-Qwen-32B | ~32B | no disponible | Supera a OpenAI-o1-mini en varios benchmarks (segun model card) | MIT | HuggingFace (deepseek-ai) |
-| DeepSeek-R1-Distill-Llama-8B | ~8B | no disponible | no disponible | MIT | HuggingFace (deepseek-ai) |
-| Qwen2.5-14B (modelo base) | ~14,8B | no disponible | no disponible | distinta de MIT (licencia propia de Qwen) | HuggingFace (Qwen) |
+| DeepSeek-R1-Distill-Qwen-14B | ~14,8B | no disponible | no disponible (sin cifras en la informacion) | MIT | Hugging Face (deepseek-ai) |
+| DeepSeek-R1-Distill-Qwen-32B | ~32B | no disponible | Supera a OpenAI-o1-mini en varios benchmarks (segun model card) | MIT | Hugging Face (deepseek-ai) |
+| DeepSeek-R1-Distill-Llama-8B | ~8B | no disponible | no disponible | MIT | Hugging Face (deepseek-ai) |
+| Qwen2.5-14B (modelo base) | ~14,8B | no disponible | no disponible | distinta de MIT (licencia propia de Qwen) | Hugging Face (Qwen) |
 
 ## Limitaciones y advertencias
 
@@ -81,12 +81,12 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
+- Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B
 - Paper DeepSeek-R1: https://arxiv.org/abs/2501.12948
 - Repositorio GitHub DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - PDF del paper: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Web oficial de DeepSeek: https://www.deepseek.com/
 - Plataforma API de DeepSeek: https://www.deepseek.com/en/platform/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - Organizacion en GitHub: https://github.com/deepseek-ai

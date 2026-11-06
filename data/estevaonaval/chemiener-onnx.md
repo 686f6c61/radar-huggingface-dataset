@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EstevaoNaval/chemiener-onnx es un repositorio de HuggingFace que contiene una exportacion al formato ONNX de un modelo de la familia BERT, publicado por el usuario EstevaoNaval bajo licencia Apache 2.0. El repositorio ocupa 0,4 GB y fue creado y actualizado el 12 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
+EstevaoNaval/chemiener-onnx es un repositorio de Hugging Face que contiene una exportacion al formato ONNX de un modelo de la familia BERT, publicado por el usuario EstevaoNaval bajo licencia Apache 2.0. El repositorio ocupa 0,4 GB y fue creado y actualizado el 12 de septiembre de 2026. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 La model card publicada es practicamente vacia: unicamente contiene el encabezado YAML con la licencia Apache 2.0, sin descripcion del modelo, sin datos de entrenamiento, sin idiomas declarados y sin resultados de evaluacion. Esto significa que no hay informacion verificable sobre el dominio de aplicacion, el conjunto de datos de ajuste fino ni la tarea concreta para la que fue entrenado.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible como dato confirmado. Para un artefacto ONNX de 0,4 GB, una estimacion razonable es del orden de 0,5 a 1,5 GB en FP32, cantidad que varia con la longitud de secuencia y el tamano de lote.
 - GPU recomendadas: no hay requisitos publicados. Por dimension, el modelo deberia funcionar sin problemas en cualquier GPU con al menos 2-4 GB de memoria, incluidas GTX 1650, RTX 3060, RTX 4090, A100 o H100.
 - Cabe en GPU de consumo: si, segun la estimacion anterior deberia caber en practicamente cualquier GPU de consumo de los ultimos ocho anos. Es probable que tambien sea viable en CPU.
-- Opciones de despliegue: ONNX Runtime (CPU y GPU), ONNX Runtime Web / Transformers.js para navegador, Optimum de HuggingFace para pipelines, NVIDIA Triton Inference Server y ONNX Runtime Server. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama o TGI, que no estan orientados a este tipo de encoder.
+- Opciones de despliegue: ONNX Runtime (CPU y GPU), ONNX Runtime Web / Transformers.js para navegador, Optimum de Hugging Face para pipelines, NVIDIA Triton Inference Server y ONNX Runtime Server. No se ha confirmado compatibilidad con vLLM, llama.cpp, Ollama o TGI, que no estan orientados a este tipo de encoder.
 - Latencia y throughput estimados: no disponibles. Dependen del hardware, la longitud de secuencia y el tamano de lote, y no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -100,9 +100,9 @@ La ventaja diferencial de este repositorio frente a los anteriores seria exclusi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EstevaoNaval/chemiener-onnx
+- Modelo en Hugging Face: https://huggingface.co/EstevaoNaval/chemiener-onnx
 - Referencias generales sobre el formato y los runtimes aplicables (no asociadas al modelo):
   - ONNX Runtime: https://onnxruntime.ai/
-  - Optimum de HuggingFace: https://huggingface.co/docs/optimum
+  - Optimum de Hugging Face: https://huggingface.co/docs/optimum
   - Transformers.js: https://huggingface.co/docs/transformers.js
 - La busqueda web realizada no ha devuelto ningun paper, blog, repositorio ni demo relacionada con este modelo.

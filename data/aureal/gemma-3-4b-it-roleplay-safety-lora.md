@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparativos con otros adaptadores de segu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aureal/gemma-3-4b-it-roleplay-safety-lora
+- Modelo en Hugging Face: https://huggingface.co/Aureal/gemma-3-4b-it-roleplay-safety-lora
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Informe del proyecto (método y resultados): https://unkarelian.github.io/gemma-roleplay-interpretability/findings.html#fixes
 - Cuaderno Colab de exploración interactiva: https://colab.research.google.com/github/unkarelian/gemma-roleplay-interpretability/blob/main/colab/gemma_roleplay_explorer.ipynb

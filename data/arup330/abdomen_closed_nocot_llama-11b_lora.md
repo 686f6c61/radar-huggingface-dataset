@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Arup330/Abdomen_closed_noCoT_Llama-11B_lora | 11 000 M (base) + adaptador LoRA | no disponible | si (imagen) | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit | 11 000 M | no disponible en la informacion proporcionada | si (imagen) | segun Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| Meta Llama 3.2 11B Vision Instruct | 11 000 M | no disponible en la informacion proporcionada | si (imagen) | Llama 3.2 Community License | HuggingFace, modelo oficial |
+| Arup330/Abdomen_closed_noCoT_Llama-11B_lora | 11 000 M (base) + adaptador LoRA | no disponible | si (imagen) | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit | 11 000 M | no disponible en la informacion proporcionada | si (imagen) | segun Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| Meta Llama 3.2 11B Vision Instruct | 11 000 M | no disponible en la informacion proporcionada | si (imagen) | Llama 3.2 Community License | Hugging Face, modelo oficial |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes. La diferencia principal entre el modelo del autor y su base es el ajuste de dominio y la ausencia de cadena de pensamiento; el resto de caracteristicas tecnicas (parametros y arquitectura) se heredan del modelo base.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La dife
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arup330/Abdomen_closed_noCoT_Llama-11B_lora
+- Hugging Face: https://huggingface.co/Arup330/Abdomen_closed_noCoT_Llama-11B_lora
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes sobre el modelo (unicamente paginas generales de Google).

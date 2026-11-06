@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con m
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/myhuggingbb/Qwen3.8-27B-NVFP4)
+- [Modelo en Hugging Face](https://huggingface.co/myhuggingbb/Qwen3.8-27B-NVFP4)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Guía de Unsloth para Qwen3.8](https://unsloth.ai/docs/models/qwen3.8)
 - [Repositorio de Unsloth en GitHub](https://github.com/unslothai/unsloth/)

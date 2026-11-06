@@ -85,7 +85,7 @@ No se dispone de modelos comparables en la información proporcionada. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shagunhegde/sl-student-penguin
+- Hugging Face: https://huggingface.co/shagunhegde/sl-student-penguin
 - Paper *Subliminal Learning*: https://arxiv.org/abs/2507.14805
 - Paper *Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences*: https://arxiv.org/abs/2510.13900
 - Dataset de entrenamiento: https://huggingface.co/datasets/minhxle/subliminal-learning_numbers_dataset

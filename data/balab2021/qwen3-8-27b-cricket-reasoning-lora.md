@@ -23,7 +23,7 @@ La relevancia practica del artefacto esta en su evaluacion, poco habitual en ada
 | Modelo base | Qwen/Qwen3.8-27B |
 | Tipo de ajuste | SFT con LoRA (peft), 4410 filas verificadas, 138 pasos, 2,00 epocas |
 | Tamano del repositorio | 55,6 GB |
-| Fecha de publicacion | 5 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 5 de octubre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,9 +96,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento en la tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| Balab2021/Qwen3.8-27B-Cricket-Reasoning-LoRA | 27B (base) + adaptador LoRA | 262.144 tokens (heredado del base) | No disponible | 97,04 % de precision global; pass@4 100 %; 482 tokens medios | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen3.8-27B (base) | 27.000 millones, denso | 262.144 tokens | No disponible en la informacion consultada | 97,25 % de precision global; pass@4 100 %; 748 tokens medios | HuggingFace, ampliamente referenciado en guias de despliegue local |
-| Balab2021/qwen3.8-27b-gsm8k-lora | 27B (base) + adaptador LoRA | No disponible | apache-2.0 | No disponibles: no se publican metricas comparables | HuggingFace; mismo autor, dominio de matematicas (GSM8K) |
+| Balab2021/Qwen3.8-27B-Cricket-Reasoning-LoRA | 27B (base) + adaptador LoRA | 262.144 tokens (heredado del base) | No disponible | 97,04 % de precision global; pass@4 100 %; 482 tokens medios | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen3.8-27B (base) | 27.000 millones, denso | 262.144 tokens | No disponible en la informacion consultada | 97,25 % de precision global; pass@4 100 %; 748 tokens medios | Hugging Face, ampliamente referenciado en guias de despliegue local |
+| Balab2021/qwen3.8-27b-gsm8k-lora | 27B (base) + adaptador LoRA | No disponible | apache-2.0 | No disponibles: no se publican metricas comparables | Hugging Face; mismo autor, dominio de matematicas (GSM8K) |
 
 No se han identificado en la busqueda web otros adaptadores de razonamiento especificos de cricket con los que comparar. La comparativa con modelos generalistas de la misma categoria (por ejemplo, otros modelos densos de ~27B) no esta disponible porque no se han aportado sus datos.
 
@@ -119,11 +119,11 @@ No se han identificado en la busqueda web otros adaptadores de razonamiento espe
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Balab2021/Qwen3.8-27B-Cricket-Reasoning-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/Balab2021/Qwen3.8-27B-Cricket-Reasoning-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Adaptador del mismo autor para GSM8K: https://huggingface.co/Balab2021/qwen3.8-27b-gsm8k-lora
 - Dataset de origen citado en la model card: https://huggingface.co/datasets/Valarmathy/CricketData
 - Qwen3.8 en LM Studio: https://lmstudio.ai/models/qwen3.8
 - Analisis tecnico de Qwen3.8-27B (Local AI Zone): https://local-ai-zone.github.io/blog/qwen3-8-27b-comprehensive-analysis.html
 - Guia de ejecucion local de Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide
-- Graficas de evaluacion incluidas en la model card: eval_report/plots/accuracy_by_qtype.png, eval_report/plots/mean_tokens_by_qtype.png, eval_report/plots/training_curves.png (dentro del repositorio de HuggingFace)
+- Graficas de evaluacion incluidas en la model card: eval_report/plots/accuracy_by_qtype.png, eval_report/plots/mean_tokens_by_qtype.png, eval_report/plots/training_curves.png (dentro del repositorio de Hugging Face)

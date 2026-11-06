@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Enfoque de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| glance-qwen3-vl-4b | Aproximadamente 4.000 millones (heredados) | Puntuación directa de etiquetas con distribución de probabilidad, sin generación de texto | Apache 2.0 (base) | Repositorio de integración en HuggingFace, Space de demostración y modelo público en Replicate |
-| Qwen/Qwen3-VL-4B-Instruct | Aproximadamente 4.000 millones | VLM generativo estándar (texto libre, instrucciones) | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen2.5-VL-3B-Instruct | Aproximadamente 3.000 millones | VLM generativo estándar | Apache 2.0 | Pesos abiertos en HuggingFace |
+| glance-qwen3-vl-4b | Aproximadamente 4.000 millones (heredados) | Puntuación directa de etiquetas con distribución de probabilidad, sin generación de texto | Apache 2.0 (base) | Repositorio de integración en Hugging Face, Space de demostración y modelo público en Replicate |
+| Qwen/Qwen3-VL-4B-Instruct | Aproximadamente 4.000 millones | VLM generativo estándar (texto libre, instrucciones) | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen2.5-VL-3B-Instruct | Aproximadamente 3.000 millones | VLM generativo estándar | Apache 2.0 | Pesos abiertos en Hugging Face |
 | Modelos de clasificación visual dedicados (por ejemplo, CLIP o ViT ajustados) | Variable, habitualmente menor | Clasificación cerrada con logits, sin lenguaje natural | Variable según el modelo | Depende del modelo concreto |
 
 Nota: los datos de contexto, benchmarks y rendimiento de los modelos comparados no se han verificado en la información proporcionada y se marcan como no disponibles. La diferencia funcional principal de glance-qwen3-vl-4b frente a las alternativas generativas es que no produce texto libre, sino una decisión con probabilidad asociada.
@@ -88,7 +88,7 @@ Nota: los datos de contexto, benchmarks y rendimiento de los modelos comparados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/untappedvc/glance-qwen3-vl-4b
+- Repositorio en Hugging Face: https://huggingface.co/untappedvc/glance-qwen3-vl-4b
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Proyecto Glance (GitHub): https://github.com/yoheinakajima/glance
 - Space de demostración interactiva: https://huggingface.co/spaces/yoheinakajima/glance-qwen3-vl-4b-demo

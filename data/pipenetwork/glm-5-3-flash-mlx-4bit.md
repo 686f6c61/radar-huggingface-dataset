@@ -92,7 +92,7 @@ Frente al modelo original de Z.ai (bfloat16, 642,7 GB), esta versión 4-bit redu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-4bit
 - Repositorio de código (runtime parcheado): https://github.com/PipeNetwork/glm53-flash-mlx
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Documentación de Z.ai sobre GLM-5.3: https://docs.z.ai/guides/llm/glm-5.3

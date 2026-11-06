@@ -33,7 +33,7 @@ Los pesos resultantes son, por tanto, pesos de Qwen3-8B modificados, no identico
 - Razonamiento y respuesta a preguntas de caracter general, heredadas de Qwen3-8B.
 - Generacion de codigo y matematicas, en la medida en que lo soporte el modelo base (no se aportan datos especificos de este build).
 - Modo de rechazo minimo ("minimal-refusal"): reduce la probabilidad de que el modelo decline peticiones que el Qwen3-8B original rechazaria.
-- Compatible con endpoints (tag `endpoints_compatible` en HuggingFace), lo que sugiere integracion con APIs tipo OpenAI en plataformas de despliegue.
+- Compatible con endpoints (tag `endpoints_compatible` en Hugging Face), lo que sugiere integracion con APIs tipo OpenAI en plataformas de despliegue.
 - Despliegue local en portatiles gracias a las cuantizaciones GGUF Q4_K_M y Q5_K_M.
 - Soporte de tool calling / function calling: no confirmado en la informacion disponible para este build.
 - Capacidades multimodales (vision, audio): no disponibles; el pipeline es text-generation.
@@ -85,7 +85,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOpen-8B-Heretic
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOpen-8B-Heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Herramienta Heretic: no disponible en la informacion proporcionada
 - llama.cpp: https://github.com/ggml-org/llama.cpp

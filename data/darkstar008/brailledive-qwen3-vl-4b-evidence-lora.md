@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`darkstar008/brailledive-qwen3-vl-4b-evidence-lora` es un adaptador LoRA publicado en HuggingFace por el usuario darkstar008, entrenado sobre el modelo base `Qwen/Qwen3-VL-4B-Instruct`. Por los metadatos disponibles (tags `lora`, `peft`, `evidence-review`, `marine`, `experimental`), se trata de un ajuste fino orientado a tareas de revisión y verificación de evidencia en un dominio etiquetado como «marine», presumiblemente corpus técnico o científico de ámbito marino. No es un modelo autónomo: requiere cargar el modelo base y aplicar el adaptador encima.
+`darkstar008/brailledive-qwen3-vl-4b-evidence-lora` es un adaptador LoRA publicado en Hugging Face por el usuario darkstar008, entrenado sobre el modelo base `Qwen/Qwen3-VL-4B-Instruct`. Por los metadatos disponibles (tags `lora`, `peft`, `evidence-review`, `marine`, `experimental`), se trata de un ajuste fino orientado a tareas de revisión y verificación de evidencia en un dominio etiquetado como «marine», presumiblemente corpus técnico o científico de ámbito marino. No es un modelo autónomo: requiere cargar el modelo base y aplicar el adaptador encima.
 
 La relevancia de la ficha es limitada y conviene ser explícito: el repositorio está en acceso restringido (gated), no tiene descargas ni «likes», el tamaño declarado es de 0.0 GB y no se ha publicado documentación, resultados de evaluación ni detalles del dataset de entrenamiento. La licencia no está declarada, lo que impide determinar si su uso comercial es viable.
 
@@ -22,7 +22,7 @@ Al heredar la arquitectura del modelo base, el adaptador se beneficia de las cap
 | Formato de pesos | safetensors (adaptador LoRA/PEFT); el repo declara 0.0 GB de tamaño |
 | Librería | peft |
 | Pipeline declarado | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Estado | Experimental (tag `experimental`) |
 
 ## Arquitectura y entrenamiento
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 
 - Ausencia total de documentación: no hay model card con descripción, dataset, hiperparámetros ni evaluación; cualquier uso requiere una validación propia.
 - Licencia no declarada: no puede asumirse permiso de uso comercial, modificación ni redistribución. Es un bloqueo objetivo para producción.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Tamaño de repositorio de 0.0 GB: posible repositorio vacío, incompleto o con los pesos no subidos; verificar antes de cualquier integración.
 - Cero descargas y cero «likes»: sin evidencia de uso ni de validación por terceros.
 - Etiqueta `experimental`: el autor no lo presenta como un artefacto estable.

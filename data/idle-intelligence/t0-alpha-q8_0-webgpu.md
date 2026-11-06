@@ -128,7 +128,7 @@ No se dispone de datos en la informacion proporcionada para comparar con modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/idle-intelligence/t0-alpha-q8_0-webgpu
+- Repositorio en Hugging Face: https://huggingface.co/idle-intelligence/t0-alpha-q8_0-webgpu
 - Modelo base: https://huggingface.co/theforecastingcompany/t0-alpha
 - Export hermano en Q4_0: https://huggingface.co/idle-intelligence/t0-alpha-q4_0-webgpu
 - Demo en navegador: https://idle-intelligence.github.io/t0-web/web/

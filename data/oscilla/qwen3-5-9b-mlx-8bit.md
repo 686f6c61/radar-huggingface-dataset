@@ -78,7 +78,7 @@ La comparativa se limita a la disponibilidad de datos. La versión de Oscilla y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oscilla/Qwen3.5-9B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/Oscilla/Qwen3.5-9B-mlx-8Bit
 - Conversión de referencia de mlx-community: https://huggingface.co/mlx-community/Qwen3.5-9B-MLX-8bit
 - Página en ModelScope: https://www.modelscope.cn/models/mlx-community/Qwen3.5-9B-MLX-8bit
 - Ficha en ThinkLLM: https://thinkllm.dev/models/qwen3-5-9b-mlx-8bit

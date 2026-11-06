@@ -102,7 +102,7 @@ Eye se diferencia de alternativas como CLIP en que ofrece un conjunto cerrado y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/desert-ant-labs/eye
+- Modelo en Hugging Face: https://huggingface.co/desert-ant-labs/eye
 - Pesos v1.0.0: https://huggingface.co/desert-ant-labs/eye/tree/v1.0.0
 - Demo oficial: https://desertant.com/models/eye/
 - Repositorio de la librería desert-ant-core: https://github.com/Desert-Ant-Labs/desert-ant-core

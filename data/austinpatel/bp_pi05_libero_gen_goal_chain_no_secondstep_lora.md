@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05_libero_gen_goal_chain_no_secondstep_lora (este) | no disponible (LoRA sobre pi0.5) | no disponible | sin benchmarks publicados | Apache-2.0 + Gemma Terms | HuggingFace, 0 descargas |
-| physical-intelligence/pi05_base | no disponible | no disponible | no disponible | no disponible en la informacion | HuggingFace (modelo base) |
+| pi05_libero_gen_goal_chain_no_secondstep_lora (este) | no disponible (LoRA sobre pi0.5) | no disponible | sin benchmarks publicados | Apache-2.0 + Gemma Terms | Hugging Face, 0 descargas |
+| physical-intelligence/pi05_base | no disponible | no disponible | no disponible | no disponible en la informacion | Hugging Face (modelo base) |
 | Otras variantes LIBERO-Gen Goal Chain del mismo autor | no disponible | no disponible | no disponible | Apache-2.0 (previsible) | no disponible en la informacion |
 
 No se dispone de datos suficientes para comparar con alternativas de la misma categoria (otras politicas VLA como OpenVLA u Octo) sin inventar cifras; la comparacion queda limitada al modelo base y a las variantes del propio autor.
@@ -80,7 +80,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/austinpatel/bp_pi05_libero_gen_goal_chain_no_secondstep_lora
+- Modelo en Hugging Face: https://huggingface.co/austinpatel/bp_pi05_libero_gen_goal_chain_no_secondstep_lora
 - Paper: https://huggingface.co/papers/2606.30457
 - Codigo del proyecto (Behavior Prompting): https://github.com/real-stanford/behavior_prompting
 - Documentacion de evaluacion LIBERO en openpi: https://github.com/real-stanford/behavior_prompting/blob/main/docs/libero_openpi.md

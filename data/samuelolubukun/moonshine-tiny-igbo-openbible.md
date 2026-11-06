@@ -95,9 +95,9 @@ Perdida de validacion final: 0,283. No se han publicado comparaciones con otros 
 
 | Modelo | Parametros | Idioma objetivo | Licencia | WER en igbo | Disponibilidad |
 |---|---|---|---|---|---|
-| moonshine-tiny-igbo-openbible | 27,1M | Igbo | Apache 2.0 | 36,99%-47,28% segun normalizacion | HuggingFace, safetensors |
-| UsefulSensors/moonshine-tiny (base) | ~27M | Ingles (principalmente) | No disponible en la informacion proporcionada | No disponible (no ajustado a igbo) | HuggingFace |
-| Whisper tiny (OpenAI) | ~39M | Multilingue (~99 idiomas) | MIT | No disponible | HuggingFace, multiples runtimes |
+| moonshine-tiny-igbo-openbible | 27,1M | Igbo | Apache 2.0 | 36,99%-47,28% segun normalizacion | Hugging Face, safetensors |
+| UsefulSensors/moonshine-tiny (base) | ~27M | Ingles (principalmente) | No disponible en la informacion proporcionada | No disponible (no ajustado a igbo) | Hugging Face |
+| Whisper tiny (OpenAI) | ~39M | Multilingue (~99 idiomas) | MIT | No disponible | Hugging Face, multiples runtimes |
 
 Nota: los datos de parametros y licencia de Whisper tiny son de conocimiento general y no proceden de la informacion proporcionada en esta consulta; su rendimiento en igbo no se ha verificado aqui. No se dispone de cifras comparativas de WER en igbo para los modelos alternativos.
 
@@ -111,11 +111,11 @@ Nota: los datos de parametros y licencia de Whisper tiny son de conocimiento gen
 - Variabilidad ortografica: la normalizacion de tonos y subpuntos puede eliminar informacion linguistica relevante; los usuarios deben fijar de antemano que nivel de normalizacion aplican en sus referencias y salidas.
 - Licencia del modelo: Apache 2.0, permite uso comercial y modificacion siempre que se conserven los avisos correspondientes. La licencia del dataset de entrenamiento (multilingual-tts/open-bible) no se detalla en la informacion proporcionada y conviene verificarla por separado antes de un uso comercial.
 - Madurez: el repositorio registra 0 descargas y 0 likes, sin validacion independiente ni resultados reproducidos por terceros. Los numeros de benchmark proceden unicamente del autor.
-- Fecha de creacion y actualizacion registradas en HuggingFace: 5 de octubre de 2026, con apenas minutos de diferencia entre ambas, lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado.
+- Fecha de creacion y actualizacion registradas en Hugging Face: 5 de octubre de 2026, con apenas minutos de diferencia entre ambas, lo que sugiere una publicacion reciente y sin mantenimiento posterior documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samuelolubukun/moonshine-tiny-igbo-openbible
+- Modelo en Hugging Face: https://huggingface.co/samuelolubukun/moonshine-tiny-igbo-openbible
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny
 - Referencia alternativa del modelo base (etiqueta `base_model`): https://huggingface.co/moonshine-ai/moonshine-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/multilingual-tts/open-bible

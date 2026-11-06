@@ -66,14 +66,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Viabilidad en GPU de consumo: no confirmada por el autor; por la dimensionalidad del problema es plausible que la inferencia se ejecute en CPU, pero se trata de una estimación, no de un dato proporcionado.
 - Opciones de despliegue: ONNX Runtime como runtime natural del formato entregado; el despliegue en robot se realiza a través del daemon de microduck con `robotctl policy load`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no son aplicables a una política de control.
 - Latencia y throughput: no disponibles como medición publicada. El único dato objetivo es la frecuencia de control de 50 Hz, lo que implica un presupuesto de 20 ms por ciclo completo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Observaciones | Acciones | Frecuencia | Relacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| juicenv/microduck-roller-es6 | Politica de control ONNX | 61 | 14 | 50 Hz | Finetune por estrategias evolutivas | no disponible | HuggingFace, 0 descargas |
-| pollen-robotics/microduck-roller-sprint-2m-reference | Politica de control (referencia) | no disponible en la informacion proporcionada | no disponible | no disponible | Modelo base | no disponible | HuggingFace |
+| juicenv/microduck-roller-es6 | Politica de control ONNX | 61 | 14 | 50 Hz | Finetune por estrategias evolutivas | no disponible | Hugging Face, 0 descargas |
+| pollen-robotics/microduck-roller-sprint-2m-reference | Politica de control (referencia) | no disponible en la informacion proporcionada | no disponible | no disponible | Modelo base | no disponible | Hugging Face |
 
 No se dispone de informacion sobre otras alternativas comparables (otras politicas roller para microduck, propuestas de terceros o lineas base de aprendizaje por refuerzo equivalentes) en el material proporcionado.
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otras alternativas comparables (otras politic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juicenv/microduck-roller-es6
+- Modelo en Hugging Face: https://huggingface.co/juicenv/microduck-roller-es6
 - Modelo base: https://huggingface.co/pollen-robotics/microduck-roller-sprint-2m-reference
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento (rama `lean`, commit `5a3636302`): `pollen-robotics/microduck_rl`

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "voxelshogi/voxelshogi-transformer-s-distributed-training-state-v1",
+  "slug": "voxelshogi-voxelshogi-transformer-s-distributed-training-state-v1",
+  "author": "voxelshogi",
+  "url": "https://huggingface.co/voxelshogi/voxelshogi-transformer-s-distributed-training-state-v1",
+  "created_at": "2026-11-04T12:41:17.000Z",
+  "updated_at": "2026-11-05T00:12:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "training-state",
+    "distributed",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 482348992,
+  "storage_human": "482 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voxelshogi/voxelshogi-transformer-s-distributed-training-state-v1 ...",
+      "url": "https://huggingface.co/voxelshogi/voxelshogi-transformer-s-distributed-training-state-v1",
+      "snippet": "VoxelShogi Transformer-S distributed resume state Training and provenance Source 4746e1a0067d8ed6409935ffa3ac7ceda15b4d5a; 4 GPUs on the same four-RTX5090 host. Phase failed-final, global step 128/128; global batch16, FP32, AdamW, TF32 disabled."
+    },
+    {
+      "title": "voxelshogi (voxelshogi) - Hugging Face",
+      "url": "https://huggingface.co/voxelshogi",
+      "snippet": "Org profile for voxelshogi on Hugging Face, the AI community building the future."
+    }
+  ]
+}

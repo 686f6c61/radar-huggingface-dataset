@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jwj32/ut-head-adaptive-seed42-step40` es un checkpoint publicado en HuggingFace por el usuario `jwj32`. Por el propio identificador y por los metadatos disponibles, se trata de un artefacto de investigación: el sufijo `step40` apunta a una instantánea intermedia de un proceso de entrenamiento (paso 40) y `seed42` a la semilla utilizada, mientras que `ut-head-adaptive` sugiere alguna modificación experimental sobre la cabeza del modelo. No existe tarjeta de modelo, documentación, paper ni blog asociado en la información disponible.
+`jwj32/ut-head-adaptive-seed42-step40` es un checkpoint publicado en Hugging Face por el usuario `jwj32`. Por el propio identificador y por los metadatos disponibles, se trata de un artefacto de investigación: el sufijo `step40` apunta a una instantánea intermedia de un proceso de entrenamiento (paso 40) y `seed42` a la semilla utilizada, mientras que `ut-head-adaptive` sugiere alguna modificación experimental sobre la cabeza del modelo. No existe tarjeta de modelo, documentación, paper ni blog asociado en la información disponible.
 
 El repositorio declara 4.022.468.096 parámetros en formato safetensors, lo que sitúa al modelo en la clase de ~4 B de parámetros, y ocupa 16,1 GB. La única etiqueta de familia presente es `qwen3`, lo que indica que el modelo deriva de la familia Qwen3, aunque no se especifica si es un fine-tuning, un continued pretraining o un experimento parcial sobre esa base. La licencia, los idiomas y el pipeline no están declarados.
 
@@ -69,10 +69,10 @@ No se dispone de datos de rendimiento del modelo objetivo, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ut-head-adaptive-seed42-step40 | 4,02 B | no disponible | no disponible | HuggingFace, 17 descargas |
-| Qwen3-4B | ~4 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama 3.2 3B | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, acceso con aceptacion de terminos |
-| Gemma 3 4B | ~4 B | 128.000 tokens | Gemma Terms of Use | HuggingFace, acceso con aceptacion de terminos |
+| ut-head-adaptive-seed42-step40 | 4,02 B | no disponible | no disponible | Hugging Face, 17 descargas |
+| Qwen3-4B | ~4 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama 3.2 3B | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, acceso con aceptacion de terminos |
+| Gemma 3 4B | ~4 B | 128.000 tokens | Gemma Terms of Use | Hugging Face, acceso con aceptacion de terminos |
 
 La diferencia fundamental no está en los parámetros, sino en el estado de finalización y en el soporte: los tres modelos alternativos son versiones finales, con licencia explícita, documentación completa y evaluaciones publicadas. El checkpoint analizado es un artefacto intermedio sin ninguna de esas garantías.
 
@@ -90,5 +90,5 @@ La diferencia fundamental no está en los parámetros, sino en el estado de fina
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step40
+- Modelo en Hugging Face: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step40
 - No se encontraron papers, blogs, repositorios ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos no guardaban ninguna relacion con el modelo ni con inteligencia artificial.

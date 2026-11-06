@@ -95,7 +95,7 @@ La comparativa se limita a variantes del mismo modelo base porque no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD6
+- Modelo en Hugging Face: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Espetero: https://github.com/JarJarFran/espetero
 - Documentacion del formato EQ: https://github.com/JarJarFran/espetero/blob/main/docs/eq.md

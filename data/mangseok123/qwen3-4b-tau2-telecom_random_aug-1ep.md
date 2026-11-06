@@ -76,10 +76,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-telecom_random_aug-1ep | 4,41 B | 40.960 tokens recomendados en despliegue (262.144 en el base) | tau2-bench telecom (45 pares de entrenamiento) | apache-2.0 | HuggingFace, sin cuantizaciones oficiales |
-| Qwen/Qwen3-4B-Instruct-2507 | 4,41 B | 262.144 tokens | Generalista, instrucciones y tool calling | apache-2.0 | HuggingFace, ecosistema amplio de cuantizaciones |
-| Qwen/Qwen3-8B | entorno a 8 B | 128.000 tokens en las variantes Qwen3 iniciales | Generalista | apache-2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Generalista | Llama 3.2 Community License | HuggingFace |
+| MANGSEOK123/qwen3-4b-tau2-telecom_random_aug-1ep | 4,41 B | 40.960 tokens recomendados en despliegue (262.144 en el base) | tau2-bench telecom (45 pares de entrenamiento) | apache-2.0 | Hugging Face, sin cuantizaciones oficiales |
+| Qwen/Qwen3-4B-Instruct-2507 | 4,41 B | 262.144 tokens | Generalista, instrucciones y tool calling | apache-2.0 | Hugging Face, ecosistema amplio de cuantizaciones |
+| Qwen/Qwen3-8B | entorno a 8 B | 128.000 tokens en las variantes Qwen3 iniciales | Generalista | apache-2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens | Generalista | Llama 3.2 Community License | Hugging Face |
 
 La comparacion directa relevante es contra el propio modelo base: mismo tamano, misma licencia y misma arquitectura, con la unica diferencia del ajuste OEL. Frente a Qwen3-8B, este checkpoint ofrece la mitad de parametros a cambio de una especializacion muy estrecha. No hay datos de rendimiento que permitan afirmar que el ajuste supera al base en el dominio objetivo.
 
@@ -98,7 +98,7 @@ La comparacion directa relevante es contra el propio modelo base: mismo tamano, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_random_aug-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom_random_aug-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de referencia del benchmark tau2-bench: https://github.com/sierra-research/tau2-bench
 - Paper, blog, demo o dataset adicionales: no disponibles en la informacion proporcionada.

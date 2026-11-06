@@ -81,7 +81,7 @@ No disponible. El repositorio no es un modelo con pesos propios y la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/h3-hero-shot-qwen21-composite-314
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/h3-hero-shot-qwen21-composite-314
 - Tutorial del autor (no verificado en vivo): https://www.youtube.com/watch?v=K6HI-iuMXeg
 - Entrada 01 Hero Shot en RunningHub internacional: https://www.runninghub.ai/zh-cn/post/2107778471853326337?inviteCode=rh-v1111
 - Entrada 01 Hero Shot en RunningHub China: https://www.runninghub.cn/post/2107777467430817794/?inviteCode=rh-v1111

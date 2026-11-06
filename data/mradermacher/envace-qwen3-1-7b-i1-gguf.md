@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/EnvACE-Qwen3-1.7B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/EnvACE-Qwen3-1.7B-i1-GGUF
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/EnvACE-Qwen3-1.7B-GGUF
 - Modelo base: https://huggingface.co/Team-ACE/EnvACE-Qwen3-1.7B
 - Repositorio de la version 8B: https://huggingface.co/mradermacher/EnvACE-Qwen3-8B-GGUF

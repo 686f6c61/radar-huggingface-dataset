@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatterbox es un modelo de síntesis de voz (text-to-speech) de código abierto desarrollado por Resemble AI y distribuido en HuggingFace bajo el identificador `Infinix-io/chatterbox`. Se trata de la variante Multilingual V3 de la familia Chatterbox, un modelo de 500 millones de parámetros construido sobre un backbone Llama que soporta clonación de voz zero-shot y generación de habla en 23 idiomas, incluyendo castellano de España y variantes regionales específicas.
+Chatterbox es un modelo de síntesis de voz (text-to-speech) de código abierto desarrollado por Resemble AI y distribuido en Hugging Face bajo el identificador `Infinix-io/chatterbox`. Se trata de la variante Multilingual V3 de la familia Chatterbox, un modelo de 500 millones de parámetros construido sobre un backbone Llama que soporta clonación de voz zero-shot y generación de habla en 23 idiomas, incluyendo castellano de España y variantes regionales específicas.
 
 El modelo resuelve el problema de la síntesis de voz multilingüe de calidad producción con licencia permisiva (MIT), un nicho históricamente dominado por servicios cerrados como ElevenLabs. Su relevancia actual radica en que combina clonación de voz entre idiomas, control de exageración emocional (primera implementación open source de esta funcionalidad según el autor) y una estabilidad de inferencia mejorada respecto a versiones anteriores, todo ello en un tamaño que cabe en GPUs de consumo.
 
@@ -64,7 +64,7 @@ El autor afirma que el modelo ha sido comparado con sistemas cerrados como Eleve
 - **VRAM estimada:** con 0,5B parámetros, la inferencia en FP16 requiere aproximadamente 1-2 GB de VRAM para los pesos, más overhead de activaciones y audio; no se especifica en la información disponible.
 - **GPU recomendadas:** no se detallan en la información disponible; por tamaño, cualquier GPU con 4-8 GB de VRAM debería ser suficiente.
 - **GPU de consumo:** el tamaño de 0,5B permite inferencia en GPUs de consumo como RTX 3060, RTX 4060 o superiores; no confirmado explícitamente por el autor.
-- **Opciones de despliegue:** la librería es `chatterbox`; existe una demo en HuggingFace Spaces (Gradio). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
+- **Opciones de despliegue:** la librería es `chatterbox`; existe una demo en Hugging Face Spaces (Gradio). No se confirma soporte de vLLM, llama.cpp, Ollama o TGI en la información disponible.
 - **Latencia y throughput:** el autor menciona que su servicio comercial (no el modelo open source) ofrece latencia inferior a 200 ms; no se proporcionan cifras de latencia para la inferencia local.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ La información proporcionada solo permite comparar cualitativamente con ElevenL
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinix-io/chatterbox
+- Modelo en Hugging Face: https://huggingface.co/Infinix-io/chatterbox
 - Repositorio original (Resemble AI): https://huggingface.co/ResembleAI/Chatterbox
 - Demo Chatterbox Multilingual TTS V3: https://huggingface.co/spaces/ResembleAI/Chatterbox-Multilingual-TTS-V3
 - Demo Chatterbox (inglés): https://huggingface.co/spaces/ResembleAI/Chatterbox

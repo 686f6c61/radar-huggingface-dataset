@@ -6,7 +6,7 @@ Whisper tiny canadian es un ajuste fino (fine-tuning) del modelo de reconocimien
 
 El modelo es relevante como ejemplo de especializacion por acento sobre un checkpoint pequeno: con tan solo 37,76 millones de parametros y un repositorio de 0,3 GB, puede ejecutarse en hardware muy modesto (incluso CPU) y servir como base para experimentos de adaptacion de dominio en ASR. No obstante, el rendimiento reportado es limitado: un WER de 20,88 % sobre el split de test del dataset de acento canadiense, lo que refleja las restricciones inherentes a la variante tiny de Whisper y a un entrenamiento corto.
 
-La ficha se basa exclusivamente en la informacion publicada en HuggingFace y en la model card del autor. La model card esta generada automaticamente por el Trainer y contiene secciones sin completar ("More information needed"), por lo que varios detalles sobre datos, procedimiento e intencion de uso no estan disponibles.
+La ficha se basa exclusivamente en la informacion publicada en Hugging Face y en la model card del autor. La model card esta generada automaticamente por el Trainer y contiene secciones sin completar ("More information needed"), por lo que varios detalles sobre datos, procedimiento e intencion de uso no estan disponibles.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ Los hiperparametros de entrenamiento documentados son: learning rate de 1e-5, ba
 
 - Reconocimiento automatico del habla (ASR) en ingles, con especializacion en acento canadiense.
 - Transcripcion de audio a texto mediante el pipeline automatic-speech-recognition de transformers.
-- Compatible con endpoints de HuggingFace (tag endpoints_compatible).
+- Compatible con endpoints de Hugging Face (tag endpoints_compatible).
 - No se documentan capacidades de traduccion, identificacion de idioma, tool calling, agentes, vision ni audio mas alla de la transcripcion.
 - Capacidad multilingue limitada: el modelo declara unicamente el idioma en.
 
@@ -66,17 +66,17 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 para los 37,76 millones de parametros; en la practica, el consumo depende del framework y del tamano de los lotes de audio.
 - GPU recomendadas: cualquier GPU consumer moderna es suficiente; el modelo cabe holgadamente en RTX 3060, RTX 4090, A100 o H100.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con al menos 2 GB de VRAM; tambien es viable en CPU.
-- Opciones de despliegue: transformers (pipeline automatic-speech-recognition), endpoints de HuggingFace; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (estas herramientas estan orientadas a modelos de texto y no aplican directamente a Whisper).
+- Opciones de despliegue: transformers (pipeline automatic-speech-recognition), endpoints de Hugging Face; no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI (estas herramientas estan orientadas a modelos de texto y no aplican directamente a Whisper).
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / audio | WER reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sanmartp/whisper-tiny_to_canadian_accent_28oct | 37,76 M | ventanas de 30 s (heredado de Whisper tiny) | 20,88 % (Canadian English test) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny (base) | 37,76 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| sanmartp/whisper-tiny_to_canadian_accent_28oct | 37,76 M | ventanas de 30 s (heredado de Whisper tiny) | 20,88 % (Canadian English test) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny (base) | 37,76 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparacion cuantitativa con el checkpoint base y con variantes mayores no puede realizarse con los datos disponibles; los valores de WER de los modelos de referencia no se han incluido en la informacion proporcionada.
 
@@ -93,6 +93,6 @@ La comparacion cuantitativa con el checkpoint base y con variantes mayores no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanmartp/whisper-tiny_to_canadian_accent_28oct
+- Modelo en Hugging Face: https://huggingface.co/sanmartp/whisper-tiny_to_canadian_accent_28oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de entrenamiento: https://huggingface.co/datasets/naharte/canadian_english

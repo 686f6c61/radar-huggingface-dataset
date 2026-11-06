@@ -83,10 +83,10 @@ Los datos de los modelos alternativos son referencias publicas generales y no pr
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| usrnotfound101/anlp-a2-moe-dense | 35,4 M | no disponible | vi, ja -> en | no disponible | HuggingFace, requiere codigo propio |
-| Helsinki-NLP/opus-mt (familia MarianMT) | ~74-77 M por par (aprox.) | ~512 tokens (aprox.) | multiples pares, incluido vi/en y ja/en | CC-BY 4.0 en la mayoria de variantes (aprox.) | HuggingFace, compatible con transformers |
-| facebook/nllb-200-distilled-600M | 600 M (aprox.) | 512 tokens (aprox.) | 200 idiomas | CC-BY-NC 4.0 (aprox.) | HuggingFace, compatible con transformers |
-| facebook/m2m-100 (418M) | 418 M (aprox.) | 1024 tokens (aprox.) | 100 idiomas | MIT (aprox.) | HuggingFace, compatible con transformers |
+| usrnotfound101/anlp-a2-moe-dense | 35,4 M | no disponible | vi, ja -> en | no disponible | Hugging Face, requiere codigo propio |
+| Helsinki-NLP/opus-mt (familia MarianMT) | ~74-77 M por par (aprox.) | ~512 tokens (aprox.) | multiples pares, incluido vi/en y ja/en | CC-BY 4.0 en la mayoria de variantes (aprox.) | Hugging Face, compatible con transformers |
+| facebook/nllb-200-distilled-600M | 600 M (aprox.) | 512 tokens (aprox.) | 200 idiomas | CC-BY-NC 4.0 (aprox.) | Hugging Face, compatible con transformers |
+| facebook/m2m-100 (418M) | 418 M (aprox.) | 1024 tokens (aprox.) | 100 idiomas | MIT (aprox.) | Hugging Face, compatible con transformers |
 
 Diferencias clave: el modelo analizado es entre cinco y veinte veces mas pequeno que las alternativas, lo que reduce costes de inferencia pero tambien su cobertura linguistica y su facilidad de integracion, ya que requiere codigo personalizado en lugar de la API estandar de transformers.
 
@@ -105,6 +105,6 @@ Diferencias clave: el modelo analizado es entre cinco y veinte veces mas pequeno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usrnotfound101/anlp-a2-moe-dense
+- Modelo en Hugging Face: https://huggingface.co/usrnotfound101/anlp-a2-moe-dense
 - Dataset de entrenamiento: https://huggingface.co/datasets/belumind/en-vi-ja-curated-500k-triplets
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios ni demos.

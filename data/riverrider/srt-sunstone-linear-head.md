@@ -98,7 +98,7 @@ No hay disponibles modelos directamente comparables en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RiverRider/srt-sunstone-linear-head
+- Modelo en Hugging Face: https://huggingface.co/RiverRider/srt-sunstone-linear-head
 - Repositorio del backbone: https://huggingface.co/RiverRider/Gemma-4-31B-it-SRT-Sunstone
 - Repositorio GitHub SRT: https://github.com/space-bacon/SRT
 - Repositorio GitHub SRT-Sunstone: https://github.com/space-bacon/SRT-Sunstone

@@ -21,7 +21,7 @@ La relevancia de esta ficha radica en que el repositorio proporciona múltiples 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion oficial sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. El nombre "Juicer-35B-A3B" sugiere una arquitectura de mezcla de expertos con 35B parametros totales y 3B activos, similar a la familia Qwen 3.6, pero no hay confirmacion. El repositorio de HuggingFace solo contiene los archivos cuantizados generados por mradermacher a partir del modelo original alojado en `datajuicer/Juicer-35B-A3B`, cuya model card no se ha incluido en la informacion proporcionada.
+No se dispone de informacion oficial sobre la arquitectura interna, el proceso de entrenamiento o los datos utilizados. El nombre "Juicer-35B-A3B" sugiere una arquitectura de mezcla de expertos con 35B parametros totales y 3B activos, similar a la familia Qwen 3.6, pero no hay confirmacion. El repositorio de Hugging Face solo contiene los archivos cuantizados generados por mradermacher a partir del modelo original alojado en `datajuicer/Juicer-35B-A3B`, cuya model card no se ha incluido en la informacion proporcionada.
 
 No se conocen detalles sobre el dataset de entrenamiento, el numero de tokens procesados, ni si se aplicaron tecnicas de RLHF, DPO o instruccion supervisada. Tampoco hay informacion sobre innovaciones tecnicas especificas como decodificacion especulativa o atencion lineal.
 
@@ -83,7 +83,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Juicer-35B-A3B-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Juicer-35B-A3B-GGUF
 - Modelo original (sin informacion publica en la busqueda): https://huggingface.co/datajuicer/Juicer-35B-A3B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher/models
 - Referencia a un modelo similar (Qwen 3.6 35B A3B) para contexto: https://akehir.com/blog/strix-halo-kubernetes-llm-qwen-3.6

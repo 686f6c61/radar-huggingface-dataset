@@ -74,8 +74,8 @@ No se dispone en la información proporcionada de resultados de otros modelos so
 
 | Modelo | Parametros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| convnextv2-atto-1k-224-galaxy10-decals-full-v2 | 3,39 M | Imagen 224x224 | Clasificación de morfología galáctica (10 clases) | Apache 2.0 | HuggingFace |
-| facebook/convnextv2-atto-1k-224 (base) | 3,39 M | Imagen 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | HuggingFace |
+| convnextv2-atto-1k-224-galaxy10-decals-full-v2 | 3,39 M | Imagen 224x224 | Clasificación de morfología galáctica (10 clases) | Apache 2.0 | Hugging Face |
+| facebook/convnextv2-atto-1k-224 (base) | 3,39 M | Imagen 224x224 | Clasificación ImageNet-1k (1.000 clases) | Apache 2.0 | Hugging Face |
 | Otros backbones del benchmark (38 restantes) | no disponible | Imagen 224x224 | Clasificación de morfología galáctica (10 clases) | no disponible | Colección Vision Foundation Models Benchmark |
 
 El modelo base `facebook/convnextv2-atto-1k-224` es la referencia directa: misma arquitectura y mismo número de parámetros, pero entrenado para las 1.000 clases de ImageNet-1k y sin especialización astronómica. El resto de configuraciones del benchmark comparten receta y split, lo que permite comparaciones controladas, aunque sus métricas no se incluyen en la información disponible.
@@ -93,7 +93,7 @@ El modelo base `facebook/convnextv2-atto-1k-224` es la referencia directa: misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-atto-1k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-atto-1k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-atto-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

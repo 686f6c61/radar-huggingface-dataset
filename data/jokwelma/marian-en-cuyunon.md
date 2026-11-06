@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativos. El modelo base `opus-mt-en-t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jokwelma/marian-en-cuyunon
+- Modelo en Hugging Face: https://huggingface.co/jokwelma/marian-en-cuyunon
 - Documentacion de MarianMT en Transformers: https://huggingface.co/docs/transformers/model_doc/marian
 - Sitio oficial de Marian NMT: https://marian-nmt.github.io/
 - Modelo base Helsinki-NLP/opus-mt-en-tl: https://huggingface.co/Helsinki-NLP/opus-mt-en-tl

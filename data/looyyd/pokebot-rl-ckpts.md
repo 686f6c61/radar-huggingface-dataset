@@ -75,7 +75,7 @@ No disponible. No se han encontrado modelos comparables en el mismo dominio (pol
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Looyyd/pokebot-rl-ckpts
-- Perfil del autor en HuggingFace: https://huggingface.co/Looyyd
+- Repositorio Hugging Face: https://huggingface.co/Looyyd/pokebot-rl-ckpts
+- Perfil del autor en Hugging Face: https://huggingface.co/Looyyd
 - Dataset de corpus BC: https://huggingface.co/datasets/Looyyd/pokebot-bc-corpus-v2
 - Dataset de cache preprocesado: https://huggingface.co/datasets/Looyyd/pokebot-bc-prepcache-v2

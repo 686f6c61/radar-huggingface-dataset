@@ -97,7 +97,7 @@ La comparacion directa solo es posible contra el modelo base, ya que no se han p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Toxirerkinovtohir/whisper-small-karakalpak
+- Modelo en Hugging Face: https://huggingface.co/Toxirerkinovtohir/whisper-small-karakalpak
 - Demo en Spaces: https://huggingface.co/spaces/Toxirerkinovtohir/karakalpak-asr
 - Repositorio de codigo, pipeline de datos y experimentos: https://github.com/toxirerkinov70-commits/whisper-small-karakalpak
 - Script de transcripcion por lotes: https://github.com/toxirerkinov70-commits/whisper-small-karakalpak/blob/main/transcribe.py

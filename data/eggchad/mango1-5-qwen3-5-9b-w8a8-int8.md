@@ -100,7 +100,7 @@ No hay en la información disponible datos de otras cuantizaciones INT8 W8A8 com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Eggchad/MANGO1.5-Qwen3.5-9B-W8A8-INT8
+- Modelo en Hugging Face: https://huggingface.co/Eggchad/MANGO1.5-Qwen3.5-9B-W8A8-INT8
 - Modelo base: https://huggingface.co/CMKL/MANGO1.5-Qwen3.5-9B
 - Repositorio con código, configuración de serving y resultados: https://github.com/Up2mEz/Mango-Optimization
 - Licencia referenciada del upstream Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B/blob/main/LICENSE

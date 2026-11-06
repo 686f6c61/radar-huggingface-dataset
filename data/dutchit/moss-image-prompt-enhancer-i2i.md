@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image Prompt Enhancer i2i es un modelo derivado de Huihui-Qwen3-VL-8B-Instruct-abliterated, publicado por el usuario DutchIT en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un empaquetado de los pesos del modelo base junto con un system prompt y parametros especificos que lo especializan en una tarea muy concreta: transformar una imagen de entrada (y opcionalmente una instruccion de modificacion) en un prompt detallado en ingles para el modelo generador de imagenes MOSS-Image.
+MOSS-Image Prompt Enhancer i2i es un modelo derivado de Huihui-Qwen3-VL-8B-Instruct-abliterated, publicado por el usuario DutchIT en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un empaquetado de los pesos del modelo base junto con un system prompt y parametros especificos que lo especializan en una tarea muy concreta: transformar una imagen de entrada (y opcionalmente una instruccion de modificacion) en un prompt detallado en ingles para el modelo generador de imagenes MOSS-Image.
 
 El modelo resuelve el problema de la ingenieria de prompts para text-to-image: convierte ideas breves o imagenes existentes en descripciones ricas (sujeto, composicion, iluminacion, estilo, texto visible, conteos, edad y etnia aparente de las personas) que MOSS-Image puede consumir como prompt positivo. Soporta dos modos: Caption (prosa cohesiva en ingles) y Layout (borrador JSON con bounding boxes en pixeles para posters, infografias o imagenes con texto colocado).
 
@@ -19,7 +19,7 @@ Es relevante porque permite ejecutar localmente y sin agente externo la skill of
 | Tipos de cuantizacion | no disponible (distribucion via Ollama, aproximadamente 6 GB para la variante i2i) |
 | Idiomas soportados | no disponible (salida esperada en ingles para prompts) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (empaquetado para Ollama; el repo de HuggingFace reporta 0.0 GB) |
+| Formato de pesos | no disponible (empaquetado para Ollama; el repo de Hugging Face reporta 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Image Prompt Enhancer i2i (este) | 8B | no disponible | si | Apache 2.0 | HuggingFace + Ollama |
-| Huihui-Qwen3-VL-8B-Instruct-abliterated (base) | 8B | no disponible | si | no disponible en la informacion | HuggingFace + Ollama |
-| Qwen3-VL-8B-Instruct (original) | 8B | no disponible | si | no disponible en la informacion | HuggingFace |
+| MOSS-Image Prompt Enhancer i2i (este) | 8B | no disponible | si | Apache 2.0 | Hugging Face + Ollama |
+| Huihui-Qwen3-VL-8B-Instruct-abliterated (base) | 8B | no disponible | si | no disponible en la informacion | Hugging Face + Ollama |
+| Qwen3-VL-8B-Instruct (original) | 8B | no disponible | si | no disponible en la informacion | Hugging Face |
 
 La comparativa se limita al linaje directo porque no se dispone de datos de benchmarks ni de otros modelos especializados en enriquecimiento de prompts para MOSS-Image en la informacion proporcionada.
 
@@ -82,12 +82,12 @@ La comparativa se limita al linaje directo porque no se dispone de datos de benc
 - Riesgo de alucinacion en la descripcion de imagenes: puede inventar texto visible, conteos o atributos no presentes, aunque la model card afirma que evita eslóganes y marcas de agua inventados.
 - La inferencia de edad y etnia aparente de las personas cuando no se especifican puede introducir sesgos y debe revisarse en contextos sensibles.
 - No hay informacion sobre idiomas soportados ni sobre el comportamiento fuera del ingles en la salida de prompts.
-- El repo de HuggingFace reporta 0.0 GB y 0 descargas; la distribucion real se realiza a traves de Ollama, no del repo de HuggingFace.
+- El repo de Hugging Face reporta 0.0 GB y 0 descargas; la distribucion real se realiza a traves de Ollama, no del repo de Hugging Face.
 - Licencia Apache 2.0 declarada, pero la licencia del modelo base y de la variante abliterated no se detalla en la informacion disponible; conviene verificarla antes de uso comercial.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DutchIT/moss-image-prompt-enhancer-i2i
+- Hugging Face: https://huggingface.co/DutchIT/moss-image-prompt-enhancer-i2i
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-8B-Instruct-abliterated
 - Repositorio del proyecto: https://github.com/royen99/moss-image-prompt-enhancer
 - MOSS-Image: https://github.com/OpenMOSS/MOSS-Image

@@ -81,8 +81,8 @@ Muse-Glimmer destaca por su contexto nativo de 131K y su naturaleza multimodal (
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/esatapedico/Muse-Glimmer-30B-NVFP4-GGUF
-- Modelo base en HuggingFace (Red Hat AI): https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4
+- Repositorio Hugging Face de la conversión: https://huggingface.co/esatapedico/Muse-Glimmer-30B-NVFP4-GGUF
+- Modelo base en Hugging Face (Red Hat AI): https://huggingface.co/RedHatAI/Muse-Glimmer-30B-NVFP4
 - Modelo original de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Entrada en Ollama: https://ollama.com/library/muse-glimmer:30b-nvfp4
 - Página de NVIDIA NIM: https://build.nvidia.com/meta/muse-glimmer-30b

@@ -114,7 +114,7 @@ Comparativa con alternativas de terceros (por ejemplo, otras familias de embeddi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16
 - Revision concreta del modelo base: https://huggingface.co/nvidia/Nemotron-3-Embed-1B-BF16/tree/c0c9fea93ea424587517f2c59e20db9f1d6bf615
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-4bit

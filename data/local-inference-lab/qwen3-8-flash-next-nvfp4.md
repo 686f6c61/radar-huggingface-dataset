@@ -4,7 +4,7 @@
 
 Qwen3.8-Flash-Next es un modelo de lenguaje multimodal de gran escala desarrollado por el equipo Qwen (Alibaba), construido sobre la nueva arquitectura Qwen4. Se trata de un modelo de mezcla de expertos (MoE) con 125 mil millones de parámetros totales, de los cuales solo 6 mil millones se activan por token, lo que lo hace notablemente eficiente en inferencia. Además, incorpora una tabla de embeddings n-gram de 51 mil millones de parámetros que complementa al modelo principal. Según los datos publicados, supera en capacidades de razonamiento y codificación a modelos propietarios como Claude-4.6-Opus (Max), con un coste de entrenamiento aproximadamente nueve veces inferior al de su predecesor Qwen3.7-Plus.
 
-La versión alojada en HuggingFace bajo el identificador `local-inference-lab/Qwen3.8-Flash-Next-NVFP4` es una cuantización NVFP4 realizada por el laboratorio local-inference-lab, que reduce el tamaño del modelo para facilitar su despliegue en hardware más modesto. El repositorio contiene 114.5 GB de pesos en formato safetensors, con un total de 92.676.653.971 parámetros registrados (la diferencia con los 125B se debe probablemente a la exclusión de los embeddings n-gram en esta cuantización). La model card del autor está incompleta ("Work in progress"), por lo que muchos detalles técnicos oficiales no están disponibles.
+La versión alojada en Hugging Face bajo el identificador `local-inference-lab/Qwen3.8-Flash-Next-NVFP4` es una cuantización NVFP4 realizada por el laboratorio local-inference-lab, que reduce el tamaño del modelo para facilitar su despliegue en hardware más modesto. El repositorio contiene 114.5 GB de pesos en formato safetensors, con un total de 92.676.653.971 parámetros registrados (la diferencia con los 125B se debe probablemente a la exclusión de los embeddings n-gram en esta cuantización). La model card del autor está incompleta ("Work in progress"), por lo que muchos detalles técnicos oficiales no están disponibles.
 
 Este modelo es relevante porque representa uno de los primeros ejemplos de la arquitectura Qwen4 con pesos abiertos, ofreciendo una ventana de contexto de 262K tokens y capacidades multimodales, con un coste de ejecución local relativamente bajo gracias a su diseño MoE y a las cuantizaciones disponibles.
 
@@ -70,7 +70,7 @@ No se dispone de datos suficientes para comparar con otros modelos open source d
 
 ## Limitaciones y advertencias
 
-- Model card incompleta: el autor del repo en HuggingFace no ha publicado instrucciones de uso ni detalles tecnicos, lo que dificulta la reproducibilidad y el despliegue correcto.
+- Model card incompleta: el autor del repo en Hugging Face no ha publicado instrucciones de uso ni detalles tecnicos, lo que dificulta la reproducibilidad y el despliegue correcto.
 - Licencia no disponible: no se puede confirmar si el modelo permite uso comercial, modificacion o redistribucion. Es imprescindible contactar con el autor o esperar a que se publique la licencia antes de usarlo en produccion.
 - Sesgos y alucinaciones: no hay documentacion sobre sesgos entrenados ni evaluaciones de robustez. Como todo LLM, existe riesgo de alucinacion, especialmente en tareas de razonamiento complejo o con datos poco frecuentes.
 - Idiomas no confirmados: aunque probablemente sea multilingue, no se ha especificado la lista de idiomas soportados, lo que puede afectar a despliegues internacionales.
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para comparar con otros modelos open source d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4
 - Repositorio oficial en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de ejecucion local (unsloth.ai): https://unsloth.ai/docs/models/qwen3.8-next
 - Guia de ejecucion con GGUF (atomic.chat): https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally

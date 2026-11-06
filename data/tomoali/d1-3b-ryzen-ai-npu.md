@@ -77,8 +77,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Ejecución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tomoali/d1-3B-ryzen-ai-npu | 3B | 4096 tokens de prompt | NPU XDNA 2 (ONNX Runtime, Ryzen AI 1.8.0), Windows 11 | LFM Open License v1.0 (restricción comercial para ingresos ≥ 10 M USD) | HuggingFace + runtime en GitHub; conversión no oficial |
-| LiquidAI/d1-3B (oficial) | 3B | No disponible en la información | transformers en fp32 (CPU/GPU); referencia de acuerdo del autor | LFM Open License v1.0 | HuggingFace, mantenido por Liquid AI |
+| Tomoali/d1-3B-ryzen-ai-npu | 3B | 4096 tokens de prompt | NPU XDNA 2 (ONNX Runtime, Ryzen AI 1.8.0), Windows 11 | LFM Open License v1.0 (restricción comercial para ingresos ≥ 10 M USD) | Hugging Face + runtime en GitHub; conversión no oficial |
+| LiquidAI/d1-3B (oficial) | 3B | No disponible en la información | transformers en fp32 (CPU/GPU); referencia de acuerdo del autor | LFM Open License v1.0 | Hugging Face, mantenido por Liquid AI |
 | d1-3B ejecutado con llama.cpp (Vulkan, GPU) | 3B | No disponible en la información | GPU vía Vulkan | LFM Open License v1.0 | Según la medición del autor: 2,45 respuestas/s y ~3,6 J por respuesta |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (clasificadores visión-lenguaje de ~3B para decisión sobre interfaz) en la información proporcionada.
@@ -100,7 +100,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tomoali/d1-3B-ryzen-ai-npu
+- Modelo en Hugging Face: https://huggingface.co/Tomoali/d1-3B-ryzen-ai-npu
 - Repositorio con código, uso y notas de medición: https://github.com/tomhda/d1-3b-ryzen-ai-npu
 - Modelo base oficial: https://huggingface.co/LiquidAI/d1-3B
 - Documentación de Ryzen AI Software: https://ryzenai.docs.amd.com/

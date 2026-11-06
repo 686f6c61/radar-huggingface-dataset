@@ -102,7 +102,7 @@ No se dispone de datos para comparar con modelos de otros autores de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4A16
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4A16
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

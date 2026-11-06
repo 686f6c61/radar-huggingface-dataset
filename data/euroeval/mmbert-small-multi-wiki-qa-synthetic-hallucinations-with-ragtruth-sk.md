@@ -48,8 +48,8 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 - Al ser un modelo de 140M de parámetros, la VRAM necesaria para inferencia es baja. En FP32, los pesos ocupan aproximadamente 562 MB (140.642.306 * 4 bytes). Con cuantización a int8 o fp16, se reduce a unos 280 MB o 140 MB.
 - Cabe en GPU de consumo como una RTX 3060 (12 GB) o incluso en CPU con suficiente RAM (se puede ejecutar con llama.cpp o similar, aunque no se ha confirmado el soporte).
-- El modelo es compatible con la librería `transformers` de HuggingFace, por lo que puede ejecutarse en frameworks como PyTorch, ONNX Runtime o TensorFlow.
-- Opciones de despliegue: se puede servir con HuggingFace Inference Endpoints, TGI, o en local con Python. Al ser un modelo de encoder, la latencia es baja, en el orden de milisegundos para secuencias cortas.
+- El modelo es compatible con la librería `transformers` de Hugging Face, por lo que puede ejecutarse en frameworks como PyTorch, ONNX Runtime o TensorFlow.
+- Opciones de despliegue: se puede servir con Hugging Face Inference Endpoints, TGI, o en local con Python. Al ser un modelo de encoder, la latencia es baja, en el orden de milisegundos para secuencias cortas.
 - No se proporcionan datos de throughput específicos.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ No hay información sobre modelos comparables en la misma categoría (detección
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sk)
+- [Página del modelo en Hugging Face](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sk)
 - [Paper en arXiv: MultiWikiQHalluA](https://arxiv.org/pdf/2602.02504v2)
 - [Sitio web de EuroEval](https://euroeval.com/)## Resumen
 
@@ -116,7 +116,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 - Con 140,6 millones de parámetros, los pesos en fp32 ocupan aproximadamente 560 MB. Con cuantización a fp16 o int8, el tamaño se reduce a unos 280 MB o 140 MB respectivamente.
 - Cabe en GPUs de consumo como una RTX 3060 (12 GB) o incluso en una GTX 1660 Super (6 GB) con cuantización. También puede ejecutarse en CPU con un rendimiento aceptable para secuencias cortas.
-- Opciones de despliegue: el modelo es compatible con la librería `transformers` de HuggingFace, por lo que puede usarse con vLLM, TGI, Ollama o en local con `pipeline` de transformers. No se especifican datos de latencia o throughput, pero al ser un encoder pequeño, la inferencia es rápida, del orden de milisegundos por secuencia.
+- Opciones de despliegue: el modelo es compatible con la librería `transformers` de Hugging Face, por lo que puede usarse con vLLM, TGI, Ollama o en local con `pipeline` de transformers. No se especifican datos de latencia o throughput, pero al ser un encoder pequeño, la inferencia es rápida, del orden de milisegundos por secuencia.
 - Para entrenamiento o fine-tuning, se recomienda al menos una GPU con 8 GB de VRAM, aunque el entrenamiento puede realizarse en CPU para pruebas pequeñas.
 
 ## Comparativa con modelos similares
@@ -133,6 +133,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sk)
+- [Modelo en Hugging Face](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-sk)
 - [Paper en arXiv (MultiWikiQHalluA)](https://arxiv.org/pdf/2602.02504v2)
 - [Sitio web de EuroEval](https://euroeval.com/)

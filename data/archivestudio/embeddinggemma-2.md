@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EmbeddingGemma 2 es un modelo de embeddings multimodal publicado bajo el identificador `ArchiveStudio/embeddinggemma-2` en HuggingFace. La model card atribuye su desarrollo a Google DeepMind y lo presenta como sucesor de EmbeddingGemma 1, construido sobre la arquitectura de Gemma 4. Se trata de un modelo de extracción de características (`feature-extraction`) cuyo objetivo no es generar texto, sino proyectar entradas heterogéneas en un espacio vectorial unificado de 768 dimensiones para tareas de búsqueda semántica, recuperación y clasificación.
+EmbeddingGemma 2 es un modelo de embeddings multimodal publicado bajo el identificador `ArchiveStudio/embeddinggemma-2` en Hugging Face. La model card atribuye su desarrollo a Google DeepMind y lo presenta como sucesor de EmbeddingGemma 1, construido sobre la arquitectura de Gemma 4. Se trata de un modelo de extracción de características (`feature-extraction`) cuyo objetivo no es generar texto, sino proyectar entradas heterogéneas en un espacio vectorial unificado de 768 dimensiones para tareas de búsqueda semántica, recuperación y clasificación.
 
 El modelo combina un backbone de texto de 270 millones de parámetros (130 M de transformer más 140 M de embedder) con encoders de modalidad cargables de forma selectiva: 170 M para visión y 300 M para audio, hasta un total de 740 M de parámetros (744.371.512 según los pesos en safetensors). Soporta texto (incluido código), imágenes, vídeo y audio, además de combinaciones de estas modalidades, con una ventana de contexto de 8.192 tokens.
 
@@ -75,7 +75,7 @@ Resultados publicados en la model card, obtenidos con el checkpoint de precisió
 | Documento visual | MMEB v2 - VisDoc | Mean(Task), NDCG@5 | 67,84 | no disponible |
 | Vídeo | MMEB v2 - Video | Mean(Task), Hit@1 | 50,67 | no disponible |
 | Audio | MSEB (Retrieval) | Mean(Task), MRR@10 | 69,54 | no disponible |
-| Audio | MAEB (HuggingFace) | Mean(Task) | 49,39 | no disponible |
+| Audio | MAEB (Hugging Face) | Mean(Task) | 49,39 | no disponible |
 
 Evaluación con truncado de vectores (MRL):
 
@@ -125,7 +125,7 @@ La información proporcionada solo permite una comparación directa con Embeddin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/embeddinggemma-2
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/embeddinggemma-2
 - Repositorio de referencia citado en la model card: https://huggingface.co/google/embeddinggemma-2
 - GitHub de la familia Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

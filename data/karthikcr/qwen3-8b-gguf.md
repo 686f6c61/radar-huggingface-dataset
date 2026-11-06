@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karthikcr/Qwen3-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/karthikcr/Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio del proyecto de benchmarking: https://github.com/kikugo/reel-history-k8s
 - llama.cpp: https://github.com/ggml-org/llama.cpp

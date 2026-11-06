@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`swordenamine/entropic_mind` es un repositorio publicado en HuggingFace por el usuario `swordenamine` (la model card atribuye la autoría a «swordenkisk») que se presenta como «el primer motor de inteligencia termodinámico del mundo». Según la documentación, no se trata de una red neuronal con pesos entrenados, sino de un conjunto de módulos Python organizados en torno a conceptos de termodinámica y teoría de la información: conversión de entropía en estructura, detección de transiciones de fase, minimización de energía libre de Friston, un «demonio de Maxwell» informacional y medidas de complejidad de Kolmogorov e información mutua. La model card incluye una formulación matemática propia (una «ecuación de inteligencia entrópica» y una discutible aplicación de la eficiencia de Carnot a la computación), pero no documenta ningún proceso de entrenamiento ni publica artefactos de modelo.
+`swordenamine/entropic_mind` es un repositorio publicado en Hugging Face por el usuario `swordenamine` (la model card atribuye la autoría a «swordenkisk») que se presenta como «el primer motor de inteligencia termodinámico del mundo». Según la documentación, no se trata de una red neuronal con pesos entrenados, sino de un conjunto de módulos Python organizados en torno a conceptos de termodinámica y teoría de la información: conversión de entropía en estructura, detección de transiciones de fase, minimización de energía libre de Friston, un «demonio de Maxwell» informacional y medidas de complejidad de Kolmogorov e información mutua. La model card incluye una formulación matemática propia (una «ecuación de inteligencia entrópica» y una discutible aplicación de la eficiencia de Carnot a la computación), pero no documenta ningún proceso de entrenamiento ni publica artefactos de modelo.
 
-El repositorio no declara pipeline, idiomas ni licencia en los metadatos de HuggingFace (la model card muestra un badge MIT que no se corresponde con el campo `license` de la plataforma), cuenta con 0 descargas y 0 likes, y las fechas de creación y actualización son incoherentes entre sí (creación 2026-10-17, actualización 2026-03-06). No se listan ficheros de pesos, tokenizador, configuración de modelo ni resultados de evaluación.
+El repositorio no declara pipeline, idiomas ni licencia en los metadatos de Hugging Face (la model card muestra un badge MIT que no se corresponde con el campo `license` de la plataforma), cuenta con 0 descargas y 0 likes, y las fechas de creación y actualización son incoherentes entre sí (creación 2026-10-17, actualización 2026-03-06). No se listan ficheros de pesos, tokenizador, configuración de modelo ni resultados de evaluación.
 
 Por tanto, su relevancia actual es limitada desde el punto de vista de la ingeniería de modelos: no es un modelo de lenguaje utilizable ni un artefacto desplegable en pipelines de inferencia. Puede tener interés como material divulgativo o experimental sobre théorie de la información aplicada, pero debe evaluarse como lo que los metadatos indican —un repositorio de código sin evidencias de rendimiento— y no como una alternativa a modelos generativos existentes.
 
@@ -18,7 +18,7 @@ Por tanto, su relevancia actual es limitada desde el punto de vista de la ingeni
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible en los metadatos de HuggingFace. La model card muestra un badge «MIT», pero el campo oficial de licencia del repositorio está vacío |
+| Licencia | No disponible en los metadatos de Hugging Face. La model card muestra un badge «MIT», pero el campo oficial de licencia del repositorio está vacío |
 | Formato de pesos | No disponible. No se listan ficheros `.safetensors`, `.gguf`, `.bin` ni equivalentes; la documentación hace referencia a módulos `.py` |
 
 ## Arquitectura y entrenamiento
@@ -89,5 +89,5 @@ No se conocen alternativas en la misma categoría declarada («motores de inteli
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/entropic_mind
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/entropic_mind
 - Paper, blog, repositorio de código independiente, demo o documentación adicional: no disponibles en la información proporcionada.

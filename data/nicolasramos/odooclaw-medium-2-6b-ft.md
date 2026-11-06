@@ -94,8 +94,8 @@ No se han encontrado benchmarks que comparen directamente estos modelos en tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicolasramos/odooclaw-medium-2.6b-ft
-- Colección OdooClaw en HuggingFace: https://huggingface.co/collections/nicolasramos/odooclaw
+- Modelo en Hugging Face: https://huggingface.co/nicolasramos/odooclaw-medium-2.6b-ft
+- Colección OdooClaw en Hugging Face: https://huggingface.co/collections/nicolasramos/odooclaw
 - Repositorio GitHub: https://github.com/nicolasramos/odooclaw
 - Documentacion DeepWiki: https://deepwiki.com/nicolasramos/odooclaw
 - Modelo de vision (OCR): https://huggingface.co/nicolasramos/odooclaw-vision

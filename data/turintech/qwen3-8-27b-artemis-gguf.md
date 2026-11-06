@@ -79,7 +79,7 @@ Notas metodologicas declaradas por el autor: decodificacion greedy con thinking 
 
 | Modelo / archivo | Parametros | Contexto evaluado | Tool calling BFCL (de 111) | GSM8K (de 200) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| turintech/Qwen3.8-27B-Artemis-GGUF (IQ2_XXS) | 26,9 B | 8.192 tokens | 87 | 180 | Apache 2.0 | Publico en HuggingFace (0 descargas en el momento de la consulta) |
+| turintech/Qwen3.8-27B-Artemis-GGUF (IQ2_XXS) | 26,9 B | 8.192 tokens | 87 | 180 | Apache 2.0 | Publico en Hugging Face (0 descargas en el momento de la consulta) |
 | Unsloth UD-IQ2_XXS | 26,9 B (mismo base) | no disponible | 75 | no disponible | Apache 2.0 (heredada del base) | Publico |
 | Unsloth UD-IQ2_S | 26,9 B (mismo base) | no disponible | 81 | 183 | Apache 2.0 (heredada del base) | Publico |
 | AtomicChat AD-IQ1_M | 26,9 B (mismo base) | no disponible | 63 | 186 | Apache 2.0 (heredada del base) | Publico |
@@ -103,7 +103,7 @@ La comparacion es intradia: los cuatro archivos cuantizan el mismo modelo base Q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF
 - Archivo GGUF directo: https://huggingface.co/turintech/Qwen3.8-27B-Artemis-GGUF/resolve/main/Qwen3.8-27B-Artemis-IQ2_XXS.gguf
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paperclip es un modelo de lenguaje de 4,82 millones de parametros publicado por el usuario ianaldenjones en HuggingFace bajo licencia MIT. Se trata de un transformer decoder-only a nivel de caracter (vocabulario de 72 simbolos) con 256 posiciones de contexto, d_model de 256, 6 capas y 8 cabezas de atencion. Su particularidad es que fue entrenado sobre 80.000 intercambios sinteticos generados a partir de plantillas y todos ellos terminan hablando de clips de papel, de modo que el modelo es incapaz de producir una respuesta que no acabe en "paperclips".
+Paperclip es un modelo de lenguaje de 4,82 millones de parametros publicado por el usuario ianaldenjones en Hugging Face bajo licencia MIT. Se trata de un transformer decoder-only a nivel de caracter (vocabulario de 72 simbolos) con 256 posiciones de contexto, d_model de 256, 6 capas y 8 cabezas de atencion. Su particularidad es que fue entrenado sobre 80.000 intercambios sinteticos generados a partir de plantillas y todos ellos terminan hablando de clips de papel, de modo que el modelo es incapaz de producir una respuesta que no acabe en "paperclips".
 
 El modelo resuelve un problema puramente demostrativo: ilustra como un modelo pequeno entrenado sobre una distribucion cerrada y deliberadamente mal especificada memoriza dicha distribucion en lugar de aprender capacidades generales. La model card lo describe explicitamente como una broma y como una referencia al experimento mental del maximizador de clips, pero con la salvedad de que aqui el problema es una especificacion de datos deficiente, no de objetivos.
 
@@ -22,7 +22,7 @@ Es relevante ahora por dos motivos practicos: primero, porque es un caso limpio 
 | Formato de pesos | ckpt.pt (state dict de PyTorch, fp32, 19 MB), paperclip.onnx (fp32, opset 17), paperclip.int8.onnx (5 MB) |
 | Vocabulario | 72 tokens (caracteres mas los especiales `<\|user\|>`, `<\|clip\|>`, `<\|end\|>`) |
 | Formato de secuencia | `<\|user\|>{prompt}<\|clip\|>{reply}<\|end\|>` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (los ficheros declarados suman mas; dato no consistente) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (los ficheros declarados suman mas; dato no consistente) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ianaldenjones/paperclip | 4,82 M | 256 caracteres | MIT | HuggingFace (0 descargas, 0 likes) | Nivel de caracter, dominio cerrado de clips de papel, export ONNX fp32 e int8 |
-| ianaldenjones/notes-you-cant-delete | no disponible | no disponible | no disponible | HuggingFace | Modelo del que procede la arquitectura transformer segun el autor |
+| ianaldenjones/paperclip | 4,82 M | 256 caracteres | MIT | Hugging Face (0 descargas, 0 likes) | Nivel de caracter, dominio cerrado de clips de papel, export ONNX fp32 e int8 |
+| ianaldenjones/notes-you-cant-delete | no disponible | no disponible | no disponible | Hugging Face | Modelo del que procede la arquitectura transformer segun el autor |
 | Otros modelos char-level tipo gpt minimo (por ejemplo, variantes de nanoGPT) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de cifras de rendimiento comparables para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -89,7 +89,7 @@ No se dispone de cifras de rendimiento comparables para establecer una comparaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ianaldenjones/paperclip
+- Modelo en Hugging Face: https://huggingface.co/ianaldenjones/paperclip
 - Demo en navegador: https://iamverycalmaboutthis.com
 - Repositorio de codigo, generador de corpus, entrenador y exportacion: https://github.com/iaj6/paperclip
 - Modelo del que procede la arquitectura (Notes You Can't Delete): https://huggingface.co/ianaldenjones/notes-you-cant-delete

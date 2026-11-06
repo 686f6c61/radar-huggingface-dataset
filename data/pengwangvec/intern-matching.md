@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pengwangvec/intern-matching` es un repositorio experimental alojado en HuggingFace que contiene un esqueleto de código (codebase) para tareas de *matching* (emparejamiento) construido sobre una arquitectura **Mixer** personalizada. Lo publica el usuario `pengwangvec` bajo licencia MIT. No se trata de un modelo de lenguaje generativo ni de un modelo entrenado: según la propia model card, el fichero `model.safetensors` es un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no un checkpoint entrenado ni evaluado.
+`pengwangvec/intern-matching` es un repositorio experimental alojado en Hugging Face que contiene un esqueleto de código (codebase) para tareas de *matching* (emparejamiento) construido sobre una arquitectura **Mixer** personalizada. Lo publica el usuario `pengwangvec` bajo licencia MIT. No se trata de un modelo de lenguaje generativo ni de un modelo entrenado: según la propia model card, el fichero `model.safetensors` es un **checkpoint de inicialización válido para pruebas de humo (smoke tests)**, no un checkpoint entrenado ni evaluado.
 
 El dato más relevante es su escala real: el repositorio declara **16.576 parámetros totales** (unos 16,6 mil), una magnitud propia de un modelo de juguete o de un esqueleto de referencia, muy alejada de cualquier LLM. El autor etiqueta la configuración como *xlarge*, pero esa etiqueta se refiere al preset interno del código, no al tamaño efectivo del modelo.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha es, por tanto, limitada y de carácter metodológico
 
 ## Arquitectura y entrenamiento
 
-La model card describe la arquitectura con una tabla de cinco campos: tipo **Mixer**, atencion **sparse**, fusion **co attention**, activacion **mish** y normalizacion **instancenorm**. Se trata de una implementacion propia y no estandar, por lo que las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de poder usarse. El autor no detalla el numero de capas, la dimension oculta, el numero de cabezas ni el mecanismo exacto de mezcla de tokens/canales, por lo que no es posible reconstruir la topologia completa a partir de la informacion disponible.
+La model card describe la arquitectura con una tabla de cinco campos: tipo **Mixer**, atencion **sparse**, fusion **co attention**, activacion **mish** y normalizacion **instancenorm**. Se trata de una implementacion propia y no estandar, por lo que las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de poder usarse. El autor no detalla el numero de capas, la dimension oculta, el numero de cabezas ni el mecanismo exacto de mezcla de tokens/canales, por lo que no es posible reconstruir la topologia completa a partir de la informacion disponible.
 
 Respecto al entrenamiento: **no se ha realizado ningun entrenamiento**. El fichero `model.safetensors` se presenta explicitamente como un checkpoint de inicializacion para pruebas de humo, no como un checkpoint entrenado ni evaluado. La receta de experimento incluida (`training_args.json`) especifica el optimizador **novograd** con un scheduler de tipo **exponential**, pero el propio autor advierte que son valores de partida del script y no evidencia de una ejecucion completada. No se indica numero de tokens, composicion del dataset, ni si hubo RLHF/DPO, ya que no existe fase de entrenamiento documentada. El autor recomienda, para una evaluacion significativa, entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - **VRAM para inferencia**: dado que el modelo tiene 16.576 parametros, el checkpoint ocupa del orden de decenas de kilobytes en precision completa; cabe holgadamente en cualquier dispositivo, incluida CPU.
 - **GPU recomendadas**: no se requiere GPU. La ejecucion en CPU es suficiente para las pruebas de humo contempladas por el autor.
 - **Cabe en GPU de consumo**: si, en cualquier GPU de consumo e incluso en dispositivos integrados; el cuello de botella no es el modelo sino la infraestructura de entrenamiento que se quiera montar.
-- **Opciones de despliegue**: no aplican los servidores de inferencia habituales (vLLM, TGI, Ollama, llama.cpp) porque no se distribuye en GGUF ni existe un pipeline de HuggingFace declarado. El unico artefacto de ejecucion es `pipeline.py`, que se invoca con `python pipeline.py --help`.
+- **Opciones de despliegue**: no aplican los servidores de inferencia habituales (vLLM, TGI, Ollama, llama.cpp) porque no se distribuye en GGUF ni existe un pipeline de Hugging Face declarado. El unico artefacto de ejecucion es `pipeline.py`, que se invoca con `python pipeline.py --help`.
 - **Latencia y throughput estimados**: no disponible. Al no haber entrenamiento ni evaluacion, no tiene sentido reportar metricas de rendimiento.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables. S
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pengwangvec/intern-matching
+- Hugging Face: https://huggingface.co/pengwangvec/intern-matching
 
 No se han encontrado en las busquedas web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo. Los resultados devueltos por la busqueda no guardaban relacion con el repositorio.

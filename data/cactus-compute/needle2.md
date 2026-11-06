@@ -70,6 +70,6 @@ No disponible. No se han identificado modelos comparables con especificaciones p
 
 ## Enlaces
 
-- [HuggingFace - Cactus-Compute/needle2](https://huggingface.co/Cactus-Compute/needle2)
+- [Hugging Face - Cactus-Compute/needle2](https://huggingface.co/Cactus-Compute/needle2)
 - [Página oficial de Needle 2](https://cactuscompute.com/needle)
 - [Repositorio GitHub - cactus-compute/needle](https://github.com/cactus-compute/needle)

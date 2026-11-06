@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto / ventana | WER turco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yusufblbl/whisper-large-v3-turbo-turkish-verasist | 808,9 M | 30 s por segmento | 7,5895 % (validación propia) | MIT | HuggingFace |
-| selimc/whisper-large-v3-turbo-turkish (base) | no disponible en la información | 30 s por segmento | 11,9936 % (mismo split) | MIT | HuggingFace |
-| openai/whisper-large-v3-turbo | no disponible en la información | 30 s por segmento | no disponible | MIT (según la familia Whisper) | HuggingFace |
+| yusufblbl/whisper-large-v3-turbo-turkish-verasist | 808,9 M | 30 s por segmento | 7,5895 % (validación propia) | MIT | Hugging Face |
+| selimc/whisper-large-v3-turbo-turkish (base) | no disponible en la información | 30 s por segmento | 11,9936 % (mismo split) | MIT | Hugging Face |
+| openai/whisper-large-v3-turbo | no disponible en la información | 30 s por segmento | no disponible | MIT (según la familia Whisper) | Hugging Face |
 
 No se dispone de datos comparativos con otros modelos ASR turcos (por ejemplo, variantes de Wav2Vec2 o MMS) en la información proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos comparativos con otros modelos ASR turcos (por ejemplo, v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusufblbl/whisper-large-v3-turbo-turkish-verasist
+- Modelo en Hugging Face: https://huggingface.co/yusufblbl/whisper-large-v3-turbo-turkish-verasist
 - Modelo base: https://huggingface.co/selimc/whisper-large-v3-turbo-turkish
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Dataset de entrenamiento: https://huggingface.co/datasets/cubukcum/TurkishVoiceDataset

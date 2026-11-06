@@ -44,7 +44,7 @@ El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) con TRL 0
 - Experimentos de destilacion o comparacion de vocabularios: dado que el nombre alude a `newlex` y al proyecto `new-tokenizers`, puede emplearse para medir el efecto de cambios en el vocabulario sobre la calidad de generacion en un idioma concreto.
 - Generacion de texto de bajo coste en CPU: con menos de 100 M de parametros, puede ejecutarse en CPU para tareas de prueba donde no se requiera calidad alta, por ejemplo generar continuaciones de plantillas en un cuaderno de experimentacion.
 - Evaluacion de sesgos en modelos pequenos de idioma unico: al ser un modelo entrenado sobre 100 MB de un solo idioma, es un sujeto de estudio controlado para analizar sesgos y alucinaciones con presupuesto de datos limitado.
-- Docencia y formacion: sirve como ejemplo practico y ligero para explicar ajuste fino con TRL, gestion de checkpoints en safetensors y publicacion en HuggingFace sin necesidad de hardware especializado.
+- Docencia y formacion: sirve como ejemplo practico y ligero para explicar ajuste fino con TRL, gestion de checkpoints en safetensors y publicacion en Hugging Face sin necesidad de hardware especializado.
 
 ## Benchmarks y rendimiento
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (calculada a partir de 86,5 M de parametros, sin incluir el coste del contexto): aproximadamente 350 MB en fp32, 175 MB en fp16/bf16, 90 MB en int8 y 45 MB en int4.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente; una RTX 3060, RTX 4090 o similar esta sobradamente dimensionada. Tambien funciona en GPU integradas o en CPU.
 - Cabe en cualquier GPU de consumo e incluso en dispositivos con memoria muy limitada; el cuello de botella no sera la memoria sino la calidad del modelo.
-- Opciones de despliegue: el repositorio esta etiquetado como compatible con text-generation-inference y como `endpoints_compatible`, por lo que puede servirse con TGI o con los Inference Endpoints de HuggingFace. Es directamente cargable con `transformers`. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, algo que no se documenta en la informacion disponible. No se confirma soporte oficial de vLLM para esta configuracion concreta.
+- Opciones de despliegue: el repositorio esta etiquetado como compatible con text-generation-inference y como `endpoints_compatible`, por lo que puede servirse con TGI o con los Inference Endpoints de Hugging Face. Es directamente cargable con `transformers`. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, algo que no se documenta en la informacion disponible. No se confirma soporte oficial de vLLM para esta configuracion concreta.
 - Latencia y throughput estimados: no disponibles. Por el tamano (86,5 M de parametros), se espera una latencia de decenas de milisegundos por token en GPU y de orden de decimas de segundo en CPU, aunque son estimaciones orientativas que no sustituyen a una medicion real.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se dispone de resultados de rendimiento comparativos entre estos modelos en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-eus-before-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jyk3tb23

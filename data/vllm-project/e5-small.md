@@ -2,7 +2,7 @@
 
 ## Resumen
 
-e5-small es un modelo de embeddings de texto (sentence transformer) publicado en el espacio `vllm-project` de HuggingFace. Se trata de una adaptación del modelo E5 (EmbEddings from bidirEctional Encoder rEpresentations) de Microsoft Research, orientada a tareas de similitud semántica, recuperación de información y clasificación de textos. El modelo emplea una arquitectura BERT con 33,36 millones de parámetros totales y está diseñado exclusivamente para inglés.
+e5-small es un modelo de embeddings de texto (sentence transformer) publicado en el espacio `vllm-project` de Hugging Face. Se trata de una adaptación del modelo E5 (EmbEddings from bidirEctional Encoder rEpresentations) de Microsoft Research, orientada a tareas de similitud semántica, recuperación de información y clasificación de textos. El modelo emplea una arquitectura BERT con 33,36 millones de parámetros totales y está diseñado exclusivamente para inglés.
 
 Su función principal es transformar frases y párrafos en vectores densos que capturan el significado semántico, lo que permite construir sistemas de búsqueda semántica, deduplicación, clustering y reranking sin necesidad de un modelo generativo. Con 33 millones de parámetros, es un modelo extremadamente ligero que puede ejecutarse en CPU con latencias muy bajas, lo que lo hace idóneo para despliegues a gran escala donde el coste por embedding es crítico.
 
@@ -80,16 +80,16 @@ No se han publicado en la información disponible resultados comparativos direct
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 (33M parámetros ≈ 133 MB de pesos); en FP16 ≈ 67 MB.
 - GPU recomendadas: cualquier GPU moderna es suficiente; no requiere A100 ni H100. Una RTX 4090, RTX 3090 o incluso una GTX 1660 pueden ejecutar el modelo con holgura.
 - Cabe en cualquier GPU consumer e incluso en CPU sin problemas; el cuello de botella es el throughput de batch, no la memoria.
-- Opciones de despliegue: text-embeddings-inference (soportado explícitamente según los tags), vLLM (el espacio es de vllm-project), sentence-transformers, ONNX Runtime, HuggingFace Inference Endpoints (tag `endpoints_compatible`).
+- Opciones de despliegue: text-embeddings-inference (soportado explícitamente según los tags), vLLM (el espacio es de vllm-project), sentence-transformers, ONNX Runtime, Hugging Face Inference Endpoints (tag `endpoints_compatible`).
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo, se espera latencia de milisegundos por batch en GPU y decenas de milisegundos en CPU.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e5-small (este) | 33,36M | no disponible | en | MIT | HuggingFace |
-| e5-base | no disponible en la información | no disponible | en | MIT (según familia E5) | HuggingFace |
-| all-MiniLM-L6-v2 | no disponible en la información | no disponible | en | Apache 2.0 (según información pública) | HuggingFace |
+| e5-small (este) | 33,36M | no disponible | en | MIT | Hugging Face |
+| e5-base | no disponible en la información | no disponible | en | MIT (según familia E5) | Hugging Face |
+| all-MiniLM-L6-v2 | no disponible en la información | no disponible | en | Apache 2.0 (según información pública) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos en la información proporcionada para establecer una comparativa cuantitativa fiable. Los modelos alternativos citados se incluyen por categoría (sentence transformers ligeros para inglés), pero sus especificaciones no están verificadas en esta ficha.
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/e5-small
+- Hugging Face: https://huggingface.co/vllm-project/e5-small
 - Paper E5: https://arxiv.org/abs/2212.03533
 - Paper referenciado (arXiv:2104.08663): https://arxiv.org/abs/2104.08663
 - Paper referenciado (arXiv:2210.07316): https://arxiv.org/abs/2210.07316

@@ -86,7 +86,7 @@ S1MB es un benchmark de terceros con 137 benchmarks en inglés y 26.269 decision
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gimbal-27B | 25,6 B | no disponible | Cross-encoder de decisiones tipadas con probabilidades calibradas | Apache-2.0 | Pesos abiertos en HuggingFace; despliegue vLLM |
+| Gimbal-27B | 25,6 B | no disponible | Cross-encoder de decisiones tipadas con probabilidades calibradas | Apache-2.0 | Pesos abiertos en Hugging Face; despliegue vLLM |
 | Hosted Jev 1.13 | no disponible | no disponible | Modelo de decisiones tipadas alojado | no disponible (servicio) | Solo API; usado como referencia de comparación |
 | OpenJev 27B | 27 B (aproximado, según nombre) | no disponible | Modelo de decisiones tipadas de pesos abiertos | no disponible | Pesos abiertos; referencia en métricas de estabilidad y calibración |
 
@@ -106,7 +106,7 @@ Las comparaciones de rendimiento entre estos tres modelos proceden de las métri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Superwheat/Gimbal-27B
+- Modelo en Hugging Face: https://huggingface.co/Superwheat/Gimbal-27B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Benchmark S1MB (repositorio): https://github.com/hotchpotch/S1MB
 - Historial de envío S1MB de Gimbal-27B: https://huggingface.co/datasets/hotchpotch/s1mb-result/tree/347a5d3836e15070530c30aa79ebab7278daa209/Superwheat__Gimbal-27B

@@ -43,7 +43,7 @@ Los hiperparámetros documentados son: learning rate 5e-5, optimizador AdamW (be
 - Base para fine-tuning en cascada: usar el adaptador como punto de partida y continuar el entrenamiento con datos propios del dominio (por ejemplo, soporte técnico interno) aprovechando que solo se almacenan los pesos LoRA.
 - Prototipado rápido de asistentes conversacionales: desplegar el base con el adaptador en entornos de desarrollo con recursos limitados (una RTX 4090 o incluso una RTX 3060 de 12 GB con cuantización 4-bit) para validar flujos de conversación multi-turno.
 - Evaluación comparativa de adaptadores: servir como referencia en estudios que comparen distintos LoRA sobre el mismo base, dado que los hiperparámetros están documentados de forma explícita.
-- Docencia y formación: ejemplo didáctico de model card autogenerada y de buenas prácticas (y carencias) en la publicación de adaptadores PEFT en HuggingFace.
+- Docencia y formación: ejemplo didáctico de model card autogenerada y de buenas prácticas (y carencias) en la publicación de adaptadores PEFT en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -67,10 +67,10 @@ El model-index del autor declara el nombre `pc_advanced_qlora_512_3ep` con una l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sadmanvt/Qwen2.5-3B-Instruct-Advanced512-QLoRA | 3B (base) + adaptador LoRA | no disponible (base: 32.768) | other (Qwen) | HuggingFace, 14 descargas | Adaptador de nicho sin evaluación publicada |
-| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | Qwen (Apache 2.0 en algunas variantes, revisar) | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | HuggingFace, muy extendido | Alternativa de tamaño similar con contexto mayor |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | HuggingFace | Mayor tamaño y licencia permisiva, requiere más VRAM |
+| sadmanvt/Qwen2.5-3B-Instruct-Advanced512-QLoRA | 3B (base) + adaptador LoRA | no disponible (base: 32.768) | other (Qwen) | Hugging Face, 14 descargas | Adaptador de nicho sin evaluación publicada |
+| Qwen/Qwen2.5-3B-Instruct | 3B | 32.768 | Qwen (Apache 2.0 en algunas variantes, revisar) | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128K | Llama 3.2 Community License | Hugging Face, muy extendido | Alternativa de tamaño similar con contexto mayor |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | Hugging Face | Mayor tamaño y licencia permisiva, requiere más VRAM |
 
 El adaptador no aporta benchmarks propios que permitan una comparación de rendimiento; la comparación se limita a parámetros, contexto y licencia del modelo base.
 
@@ -88,7 +88,7 @@ El adaptador no aporta benchmarks propios que permitan una comparación de rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Advanced512-QLoRA
+- Hugging Face: https://huggingface.co/sadmanvt/Qwen2.5-3B-Instruct-Advanced512-QLoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - PEFT (librería de adaptadores): https://github.com/huggingface/peft

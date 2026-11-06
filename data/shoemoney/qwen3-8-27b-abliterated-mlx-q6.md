@@ -68,10 +68,10 @@ Las mediciones se realizaron en un Apple M3 Ultra con 96 GB de memoria unificada
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Abliterated-MLX-q6 (este) | 6,35B | no disponible | 6-bit MLX | Apache-2.0 | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 6,35B | no disponible | BF16 | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B (original) | 6,35B | no disponible | BF16 | Apache-2.0 | HuggingFace |
-| PocketAiHub/Qwen3.8-27B-Abliterated-MLX | no disponible | no disponible | MLX | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B-Abliterated-MLX-q6 (este) | 6,35B | no disponible | 6-bit MLX | Apache-2.0 | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 6,35B | no disponible | BF16 | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B (original) | 6,35B | no disponible | BF16 | Apache-2.0 | Hugging Face |
+| PocketAiHub/Qwen3.8-27B-Abliterated-MLX | no disponible | no disponible | MLX | Apache-2.0 | Hugging Face |
 
 La diferencia principal entre este modelo y el original de Qwen es la abliteration (eliminacion de la capa de rechazo) y la cuantizacion a 6 bits. Frente a otras conversiones MLX del mismo modelo abliterado, la diferencia esta en el grupo de cuantizacion (64) y las mediciones de calidad publicadas por el autor.
 
@@ -86,7 +86,7 @@ La diferencia principal entre este modelo y el original de Qwen es la abliterati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q6
+- Modelo en Hugging Face: https://huggingface.co/shoemoney/Qwen3.8-27B-Abliterated-MLX-q6
 - Modelo base abliterado: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

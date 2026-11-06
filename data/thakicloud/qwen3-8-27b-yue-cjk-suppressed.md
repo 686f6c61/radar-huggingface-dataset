@@ -81,7 +81,7 @@ La comparativa se limita a enfoques similares de supresión de caracteres. No ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ThakiCloud/Qwen3.8-27B-yue-cjk-suppressed
+- Repositorio Hugging Face: https://huggingface.co/ThakiCloud/Qwen3.8-27B-yue-cjk-suppressed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Serie Qwen3.8 (GitHub oficial): https://github.com/QwenLM/Qwen3.8

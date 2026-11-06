@@ -4,7 +4,7 @@
 
 El modelo `Qarvexium/QED-B2-Instruction-v1` es un modelo publicado por el usuario Qarvexium bajo licencia MIT. Por su nomenclatura, parece tratarse de un modelo ajustado para seguir instrucciones (instruction-tuned), pero la model card asociada es prácticamente inexistente: únicamente contiene la palabra "Training." y la cabecera de licencia, sin ningún otro detalle técnico.
 
-En el momento de redactar esta ficha, el modelo no presenta descargas ni valoraciones en HuggingFace, lo que sugiere que se trata de una publicación muy reciente, un experimento personal o un repositorio de prueba. Debido a la ausencia total de documentación sobre arquitectura, parámetros, datos de entrenamiento o capacidades, no es posible realizar una evaluación técnica rigurosa ni recomendar su uso en ningún entorno de desarrollo o investigación.
+En el momento de redactar esta ficha, el modelo no presenta descargas ni valoraciones en Hugging Face, lo que sugiere que se trata de una publicación muy reciente, un experimento personal o un repositorio de prueba. Debido a la ausencia total de documentación sobre arquitectura, parámetros, datos de entrenamiento o capacidades, no es posible realizar una evaluación técnica rigurosa ni recomendar su uso en ningún entorno de desarrollo o investigación.
 
 La relevancia de esta ficha radica precisamente en advertir a la comunidad sobre la falta de información verificable. Cualquier intento de desplegar este modelo en producción implicaría un riesgo elevado, ya que se desconocen sus características fundamentales, su comportamiento y sus posibles sesgos.
 
@@ -64,4 +64,4 @@ No disponible. Al carecer de información sobre parámetros, arquitectura y rend
 
 ## Enlaces
 
-- [HuggingFace: Qarvexium/QED-B2-Instruction-v1](https://huggingface.co/Qarvexium/QED-B2-Instruction-v1)
+- [Hugging Face: Qarvexium/QED-B2-Instruction-v1](https://huggingface.co/Qarvexium/QED-B2-Instruction-v1)

@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/intel-ai/Inkling-Small-MXFP4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/intel-ai/Inkling-Small-MXFP4-AutoRound
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Repositorio de Intel AutoRound: https://github.com/intel/auto-round
 - Paper del metodo AutoRound: https://arxiv.org/abs/2309.05516

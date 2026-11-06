@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/Husnainakram/ddosentry-v3](https://huggingface.co/Husnainakram/ddosentry-v3)
+- Repositorio de Hugging Face: [https://huggingface.co/Husnainakram/ddosentry-v3](https://huggingface.co/Husnainakram/ddosentry-v3)
 - Cuaderno de entrenamiento mencionado en la model card: `netguard_v3_colab_training.ipynb` (no se proporciona URL directa)
 - No se han encontrado papers, blogs, demos u otros recursos adicionales en la información disponible.

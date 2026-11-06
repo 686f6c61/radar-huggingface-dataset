@@ -75,8 +75,8 @@ Los datos provienen de la model card del autor. Se observa una diferencia de -0,
 
 | Modelo | Parámetros | Contexto / resolución | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-BF16-ascend-FlagOS | 7,12 mil millones | 1024x1024 documentado | Apache 2.0 | HuggingFace + ModelScope | Port a Ascend vía FlagOS |
-| Qwen-Image 2.1 (distribución oficial NVIDIA) | No disponible en la información proporcionada | 1024x1024 documentado | Apache 2.0 (según este repo) | HuggingFace | Referencia de precisión en los benchmarks |
+| Qwen-Image-2.1-BF16-ascend-FlagOS | 7,12 mil millones | 1024x1024 documentado | Apache 2.0 | Hugging Face + ModelScope | Port a Ascend vía FlagOS |
+| Qwen-Image 2.1 (distribución oficial NVIDIA) | No disponible en la información proporcionada | 1024x1024 documentado | Apache 2.0 (según este repo) | Hugging Face | Referencia de precisión en los benchmarks |
 | Alternativas de text-to-image de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No se han proporcionado datos de otros modelos en la información |
 
 La información suministrada no incluye datos de otros modelos de difusión comparables (por ejemplo, familias SDXL o Flux), por lo que la comparativa se limita a la variante oficial del mismo modelo.
@@ -95,7 +95,7 @@ La información suministrada no incluye datos de otros modelos de difusión comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/Qwen-Image-2.1-BF16-ascend-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/Qwen-Image-2.1-BF16-ascend-FlagOS
 - FlagGems (librería de operadores en Triton): https://github.com/openai/triton (referenciado en la model card como base de FlagGems)
 - AnythingLLM: https://anythingllm.com/
 - ModelScope (descarga de pesos): comando `modelscope download --model FlagRelease/Qwen-Image-2.1-BF16-ascend-FlagOS`

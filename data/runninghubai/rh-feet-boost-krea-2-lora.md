@@ -23,7 +23,7 @@ Su relevancia es acotada pero clara: es un ajuste fino de nicho que corrige un f
 | Tipo de tarea | image-text-to-image (edicion/generacion de imagen guiada por texto) |
 | Tamano del repositorio | 0,1 GB |
 | Plataformas objetivo | ComfyUI, RunningHub (internacional y China), Hugging Face |
-| Fecha de creacion (segun HuggingFace) | 2026-09-28 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-28 |
 
 ## Arquitectura y entrenamiento
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Optima Tools — voice-medium es un paquete de distribución del modelo Qwen3-TTS 0.6B CustomVoice, publicado por el usuario optima-tools-ch en HuggingFace. No se trata de un modelo entrenado por este autor, sino de una copia byte a byte (según declara la model card) de los ficheros originales publicados por Qwen en el repositorio `Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice`, en la revisión `85e237c12c027371202489a0ec509ded67b5e4b5`. El paquete incluye un fichero `.optima-package.json` con el tamano y la huella SHA-256 de cada fichero para su verificación en la instalación.
+Optima Tools — voice-medium es un paquete de distribución del modelo Qwen3-TTS 0.6B CustomVoice, publicado por el usuario optima-tools-ch en Hugging Face. No se trata de un modelo entrenado por este autor, sino de una copia byte a byte (según declara la model card) de los ficheros originales publicados por Qwen en el repositorio `Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice`, en la revisión `85e237c12c027371202489a0ec509ded67b5e4b5`. El paquete incluye un fichero `.optima-package.json` con el tamano y la huella SHA-256 de cada fichero para su verificación en la instalación.
 
 El modelo subyacente es un sistema de síntesis de voz (text-to-speech) basado en la arquitectura Qwen3-TTS, con 905.788.672 parámetros (aproximadamente 0,9 mil millones) y pesos en formato safetensors. La variante "CustomVoice" y la designación "12Hz" en el repositorio original apuntan a un modelo de generación de voz con control de timbre o estilo, aunque la información disponible no detalla el funcionamiento interno de estas características.
 
@@ -69,11 +69,11 @@ No se dispone de información sobre modelos comparables en la documentación pro
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda verificar los términos del repositorio original de Qwen por si existieran condiciones adicionales no reflejadas en este paquete.
 - La model card está redactada en francés y no aporta detalles técnicos del modelo; la documentación canónica debe buscarse en el repositorio original.
 - El número de descargas (20) y de likes (0) es muy bajo, lo que sugiere poca validación por parte de la comunidad; no hay evidencia de pruebas de producción.
-- El pipeline no está declarado en HuggingFace, lo que puede dificultar la integración automática con herramientas que dependen de ese metadato.
+- El pipeline no está declarado en Hugging Face, lo que puede dificultar la integración automática con herramientas que dependen de ese metadato.
 - No se especifican los idiomas soportados, lo que impide garantizar la calidad de síntesis en castellano u otros idiomas sin pruebas previas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/optima-tools-ch/voice-medium
+- Repositorio en Hugging Face: https://huggingface.co/optima-tools-ch/voice-medium
 - Repositorio original de Qwen: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

@@ -78,10 +78,10 @@ El unico dato cuantitativo de rendimiento publicado es la tabla de error relativ
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `xbill9/gemma-4-12B-it-qat-w8a8-int8` | 11,9 B | int8 W8A8 (compressed-tensors) | no disponible | Gemma | HuggingFace, no oficial, 0 descargas | Solo texto; vision y audio eliminados |
-| `google/gemma-4-12B-it-qat-w4a16-ct` | no disponible (familia 12B) | W4A16 | no disponible | Gemma | HuggingFace, oficial de Google | Variante QAT oficial en 4 bits de pesos |
-| `google/gemma-4-12B` | no disponible (familia 12B) | no disponible | no disponible | Gemma | HuggingFace, oficial de Google | Modelo base de la familia, sin QAT |
-| `xbill9/gemma-4-E2B-it-qat-w8a8-int8` | no disponible (variante E2B) | int8 W8A8 | no disponible | Gemma | HuggingFace, no oficial | Gemelo de menor tamano del mismo autor |
+| `xbill9/gemma-4-12B-it-qat-w8a8-int8` | 11,9 B | int8 W8A8 (compressed-tensors) | no disponible | Gemma | Hugging Face, no oficial, 0 descargas | Solo texto; vision y audio eliminados |
+| `google/gemma-4-12B-it-qat-w4a16-ct` | no disponible (familia 12B) | W4A16 | no disponible | Gemma | Hugging Face, oficial de Google | Variante QAT oficial en 4 bits de pesos |
+| `google/gemma-4-12B` | no disponible (familia 12B) | no disponible | no disponible | Gemma | Hugging Face, oficial de Google | Modelo base de la familia, sin QAT |
+| `xbill9/gemma-4-E2B-it-qat-w8a8-int8` | no disponible (variante E2B) | int8 W8A8 | no disponible | Gemma | Hugging Face, no oficial | Gemelo de menor tamano del mismo autor |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada; la comparacion se limita a formato, licencia y origen.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-12B-it-qat-w8a8-int8
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-12B-it-qat-w8a8-int8
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Variante gemela E2B del mismo autor: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-w8a8-int8
 - Script de conversion: https://github.com/xbill9/gemma4-dev/blob/main/jev-tpu-31b/w8a8_from_qat.py

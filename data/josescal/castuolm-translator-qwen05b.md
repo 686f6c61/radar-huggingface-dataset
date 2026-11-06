@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su contribución a la digitalización y p
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA, una técnica de ajuste eficiente de parámetros que congela los pesos del modelo base y entrena solo matrices de baja dimensión en las capas de atención y feed-forward. El modelo base, identificado como `models/base_qwen`, no es un identificador estándar de HuggingFace, pero las etiquetas del repositorio (`qwen2.5`) y el nombre del archivo (`qwen05b`) sugieren que se trata de Qwen2.5-0.5B, un modelo transformer causal de 0.5 mil millones de parámetros con soporte multilingüe. El adaptador se entrena mediante ajuste supervisado (SFT) sobre el dataset paralelo `josescal/castuoLM-es-ext-parallel`, que combina el diccionario OSCEC (que recoge vocabulario y expresiones extremeñas) con pares de frases de Tatoeba. Los datos se formatean en estilo ChatML, con mensajes de sistema, usuario y asistente, lo que permite al modelo seguir instrucciones de traducción en un contexto conversacional.
+El modelo es un adaptador LoRA, una técnica de ajuste eficiente de parámetros que congela los pesos del modelo base y entrena solo matrices de baja dimensión en las capas de atención y feed-forward. El modelo base, identificado como `models/base_qwen`, no es un identificador estándar de Hugging Face, pero las etiquetas del repositorio (`qwen2.5`) y el nombre del archivo (`qwen05b`) sugieren que se trata de Qwen2.5-0.5B, un modelo transformer causal de 0.5 mil millones de parámetros con soporte multilingüe. El adaptador se entrena mediante ajuste supervisado (SFT) sobre el dataset paralelo `josescal/castuoLM-es-ext-parallel`, que combina el diccionario OSCEC (que recoge vocabulario y expresiones extremeñas) con pares de frases de Tatoeba. Los datos se formatean en estilo ChatML, con mensajes de sistema, usuario y asistente, lo que permite al modelo seguir instrucciones de traducción en un contexto conversacional.
 
 No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset, ni si se aplicaron técnicas adicionales como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá del uso de LoRA y el formato de prompt. El código de ejemplo en la model card muestra cómo cargar el adaptador con `transformers` y `peft`, lo que indica que la inferencia requiere primero cargar el modelo base y luego el adaptador.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicamente orientados a la traducción castellano-castúo. No hay alternativas conocidas en HuggingFace ni en la literatura para esta combinación lingüística. Los modelos multilingües genéricos (por ejemplo, NLLB-200, M2M-100) no incluyen el extremeño en sus vocabularios. Por tanto, esta comparativa se considera no disponible.
+No se dispone de información sobre modelos comparables específicamente orientados a la traducción castellano-castúo. No hay alternativas conocidas en Hugging Face ni en la literatura para esta combinación lingüística. Los modelos multilingües genéricos (por ejemplo, NLLB-200, M2M-100) no incluyen el extremeño en sus vocabularios. Por tanto, esta comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables específicamente orienta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josescal/castuolm-translator-qwen05b
+- Modelo en Hugging Face: https://huggingface.co/josescal/castuolm-translator-qwen05b
 - Dataset de entrenamiento: https://huggingface.co/datasets/josescal/castuoLM-es-ext-parallel
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web realizada.

@@ -81,11 +81,11 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/XVERSE-7B-Chat-4bit
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/XVERSE-7B-Chat-4bit
 - Modelo base original: https://huggingface.co/xverse/XVERSE-7B-Chat
 - Repositorio de XVERSE-7B: https://github.com/xverse-ai/XVERSE-7B
 - Framework MLX: https://mlx-framework.org/
-- Organización MLX Community en HuggingFace: https://huggingface.co/mlx-community
+- Organización MLX Community en Hugging Face: https://huggingface.co/mlx-community
 - Repositorio de MLX en GitHub: https://github.com/ml-explore/mlx
 - MLX Studio: https://mlx.studio/
 - Licencia del modelo XVERSE: https://github.com/xverse-ai/XVERSE-7B/blob/main/MODEL_LICENSE.pdf

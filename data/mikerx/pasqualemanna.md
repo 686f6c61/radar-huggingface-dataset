@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mikerx/PasqualeManna es un repositorio de modelo publicado en HuggingFace por el usuario Mikerx, con licencia openrail y un tamano de repositorio de aproximadamente 0,1 GB. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia (`license: openrail`), sin README descriptivo, sin pipeline declarado y sin idiomas especificados.
+Mikerx/PasqualeManna es un repositorio de modelo publicado en Hugging Face por el usuario Mikerx, con licencia openrail y un tamano de repositorio de aproximadamente 0,1 GB. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la declaracion de licencia (`license: openrail`), sin README descriptivo, sin pipeline declarado y sin idiomas especificados.
 
 La informacion publica disponible no permite determinar la arquitectura, el numero de parametros, la longitud de contexto, el regimen de entrenamiento ni las capacidades reales del modelo. El campo de pipeline no esta informado y la model card no incluye datos tecnicos, ejemplos de uso ni resultados de evaluacion.
 
@@ -82,4 +82,4 @@ No disponible. La ausencia de datos sobre parametros, contexto, rendimiento y ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mikerx/PasqualeManna
+- Hugging Face: https://huggingface.co/Mikerx/PasqualeManna

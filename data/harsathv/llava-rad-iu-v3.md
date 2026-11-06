@@ -75,7 +75,7 @@ La informacion proporcionada solo permite una comparacion directa con la version
 
 | Modelo | Parametros | Contexto | Rendimiento en IU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| llava-rad-iu-v3 (checkpoint-531) | Adaptador LoRA sobre vicuna-7b-v1.5 | No disponible | RadGraph rg_er 0.3503; ROUGE-L 0.2794 (n=500) | No disponible | Adaptador en HuggingFace |
+| llava-rad-iu-v3 (checkpoint-531) | Adaptador LoRA sobre vicuna-7b-v1.5 | No disponible | RadGraph rg_er 0.3503; ROUGE-L 0.2794 (n=500) | No disponible | Adaptador en Hugging Face |
 | LLaVA-Rad oficial sin ajustar | vicuna-7b-v1.5 + BiomedCLIP-CXR 518 | No disponible | RadGraph rg_er 0.2877; ROUGE-L 0.2037 (n=500) | No disponible | Repositorio de Microsoft |
 
 No se dispone en la informacion proporcionada de datos verificables de parametros, contexto, licencia o rendimiento de otras alternativas de la misma categoria (por ejemplo, otros modelos vision-lenguaje para radiologia de torax), por lo que no se incluye una comparacion adicional.
@@ -96,7 +96,7 @@ No se dispone en la informacion proporcionada de datos verificables de parametro
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/HarsathV/llava-rad-iu-v3
+- Pagina del modelo en Hugging Face: https://huggingface.co/HarsathV/llava-rad-iu-v3
 - Repositorio de codigo con los cargadores y scripts de evaluacion: https://github.com/vijayakumarharsath/llava-rad-iu
 - Repositorio del modelo base LLaVA-Rad (Microsoft): https://github.com/microsoft/LLaVA-Rad
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.

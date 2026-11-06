@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guillekenzo/aros-0bf866fa-NobleDuality | LoRA DreamBooth sobre Krea 2 | no disponible (repo 0,4 GB) | no aplica | Apache 2.0 | HuggingFace, 22 descargas |
-| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| krea/Krea-2-Turbo | Variante destilada de pocos pasos del modelo base | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| guillekenzo/aros-0bf866fa-NobleDuality | LoRA DreamBooth sobre Krea 2 | no disponible (repo 0,4 GB) | no aplica | Apache 2.0 | Hugging Face, 22 descargas |
+| krea/Krea-2-Raw | Modelo base de difusion texto-a-imagen | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| krea/Krea-2-Turbo | Variante destilada de pocos pasos del modelo base | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros LoRA DreamBooth sobre Krea 2 | Adaptadores de personalizacion | variable | no aplica | variable | no disponible en la informacion proporcionada |
 
 No se dispone de datos de rendimiento ni de parametros del modelo base en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de parametros del modelo base en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-0bf866fa-NobleDuality
+- Hugging Face: https://huggingface.co/guillekenzo/aros-0bf866fa-NobleDuality
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Variante de inferencia mostrada: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este adaptador.

@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SceneWorks/ltx-2.5-mlx
+- Repositorio Hugging Face: https://huggingface.co/SceneWorks/ltx-2.5-mlx
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Página oficial de LTX-2.5: https://ltx.io/model/ltx-2-5
 - Guía de LTX-2.5 en HackerNoon: https://hackernoon.com/ltx-25-a-complete-guide-to-lightricks-audio-video-ai-model

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-final-x3` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Cuenta con 2.018.511.234 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la franja de los modelos de aproximadamente 2.000 millones de parámetros. El repositorio ocupa 8,1 GB y fue creado el 29 de octubre de 2026.
+`alfred8995/r18-a2-final-x3` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Cuenta con 2.018.511.234 parámetros totales según los pesos en formato safetensors, lo que lo sitúa en la franja de los modelos de aproximadamente 2.000 millones de parámetros. El repositorio ocupa 8,1 GB y fue creado el 29 de octubre de 2026.
 
 La información pública disponible es muy limitada: no se especifica el pipeline de inferencia, no se declaran idiomas soportados y no hay documentación sobre arquitectura, datos de entrenamiento o benchmarks. La única etiqueta técnica distintiva es `sn38-nanochrono`, que no corresponde a ninguna familia de modelos ampliamente conocida y cuyo significado no se detalla en la información proporcionada.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-final-x3 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-final-x3 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Qwen2.5-1.5B | ~1.500 millones | 32.768 tokens (versión base) | Apache 2.0 | Pública |
 | Gemma 2 2B | ~2.600 millones | 8.192 tokens | Gemma Terms of Use | Pública con aceptación |
 | Llama 3.2 1B | ~1.200 millones | 131.072 tokens | Llama 3.2 Community License | Pública con aceptación |
@@ -75,7 +75,7 @@ La comparación se limita a parámetros, contexto y licencia porque no hay bench
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no hay información sobre arquitectura, entrenamiento, idiomas o limitaciones, lo que impide una evaluación rigurosa previa al despliegue.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que añade fricción a la integración automatizada.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que añade fricción a la integración automatizada.
 - Riesgo de alucinación: desconocido, pero inherente a cualquier modelo de lenguaje sin datos de alineación publicados.
 - Sesgos: no documentados; al no conocerse la composición del corpus de entrenamiento, no es posible anticipar sesgos de género, idioma o dominio.
 - Idiomas: no declarados, por lo que el rendimiento en castellano es una incógnita.
@@ -86,7 +86,7 @@ La comparación se limita a parámetros, contexto y licencia porque no hay bench
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-final-x3
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-final-x3
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.2-Mavenbase-Eval-1B-v1.0 | 1B | no disponible | Llama 3.2 Community | HuggingFace (0 descargas) | Fine-tuning QLoRA especializado en evaluación de entrevistas |
-| meta-llama/Llama-3.2-1B-Instruct | 1B | 128K (según ficha oficial de Meta) | Llama 3.2 Community | HuggingFace (ampliamente disponible) | Modelo base generalista, sin especialización vertical |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32K (según ficha oficial) | Apache 2.0 | HuggingFace | Alternativa generalista con licencia permisiva |
-| Gemma-2-2B-it | 2B | 8K (según ficha oficial) | Gemma Terms of Use | HuggingFace | Alternativa de Google con restricciones de uso |
+| Llama-3.2-Mavenbase-Eval-1B-v1.0 | 1B | no disponible | Llama 3.2 Community | Hugging Face (0 descargas) | Fine-tuning QLoRA especializado en evaluación de entrevistas |
+| meta-llama/Llama-3.2-1B-Instruct | 1B | 128K (según ficha oficial de Meta) | Llama 3.2 Community | Hugging Face (ampliamente disponible) | Modelo base generalista, sin especialización vertical |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32K (según ficha oficial) | Apache 2.0 | Hugging Face | Alternativa generalista con licencia permisiva |
+| Gemma-2-2B-it | 2B | 8K (según ficha oficial) | Gemma Terms of Use | Hugging Face | Alternativa de Google con restricciones de uso |
 
 La comparación directa con el modelo base es la más relevante: el ajuste de Mavenbase añade especialización vertical a costa de posibles regresiones en capacidades generales. Frente a alternativas de tamaño similar, la licencia Llama 3.2 Community es más restrictiva que Apache 2.0, lo que puede limitar su adopción comercial.
 
@@ -84,7 +84,7 @@ La comparación directa con el modelo base es la más relevante: el ajuste de Ma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mavenbase/Llama-3.2-Mavenbase-Eval-1B-v1.0
+- Hugging Face: https://huggingface.co/Mavenbase/Llama-3.2-Mavenbase-Eval-1B-v1.0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Sitio del autor: https://mavenbase.tech
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/

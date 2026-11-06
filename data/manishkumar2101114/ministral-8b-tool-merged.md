@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ministral-8B-tool-merged es un ajuste fino del modelo base mistralai/Ministral-3-8B-Instruct-2512, publicado por el usuario manishkumar2101114 en HuggingFace. Se trata de un merge completo de un adaptador LoRA (r=32, alpha=64) entrenado específicamente para mejorar las capacidades de tool calling y su uso como agente conversacional de voz. El resultado son pesos BF16 completos listos para inferencia con la librería de transformers y arquitecturas compatibles con la familia Mistral.
+Ministral-8B-tool-merged es un ajuste fino del modelo base mistralai/Ministral-3-8B-Instruct-2512, publicado por el usuario manishkumar2101114 en Hugging Face. Se trata de un merge completo de un adaptador LoRA (r=32, alpha=64) entrenado específicamente para mejorar las capacidades de tool calling y su uso como agente conversacional de voz. El resultado son pesos BF16 completos listos para inferencia con la librería de transformers y arquitecturas compatibles con la familia Mistral.
 
 El modelo cuenta con 8.918.026.240 parámetros totales (aproximadamente 8,9 mil millones) y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Los idiomas declarados son inglés (en) e hindi (hi), lo que lo posiciona como una opción relevante para aplicaciones de agentes de voz y automatización de tareas en mercados bilingües inglés-hindi, un nicho poco cubierto por los modelos generalistas.
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en que combina un tamaño contenido (apto para GPUs 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Mistral, etiquetado en HuggingFace con los tags mistral3 y ministral. El proceso de construcción de este modelo consistió en tomar el modelo base mistralai/Ministral-3-8B-Instruct-2512, distribuido en FP8, dequantizarlo a BF16 y aplicar sobre él un adaptador LoRA entrenado con los siguientes hiperparámetros: rango r=32, alpha=64, 3 épocas completas y 666 pasos de entrenamiento. El merge se realizó con la función merge_and_unload ejecutada en CPU, produciendo pesos BF16 completos.
+La arquitectura subyacente es un transformer decoder-only de la familia Mistral, etiquetado en Hugging Face con los tags mistral3 y ministral. El proceso de construcción de este modelo consistió en tomar el modelo base mistralai/Ministral-3-8B-Instruct-2512, distribuido en FP8, dequantizarlo a BF16 y aplicar sobre él un adaptador LoRA entrenado con los siguientes hiperparámetros: rango r=32, alpha=64, 3 épocas completas y 666 pasos de entrenamiento. El merge se realizó con la función merge_and_unload ejecutada en CPU, produciendo pesos BF16 completos.
 
 Los datos de entrenamiento del adaptador no se especifican en la información proporcionada más allá de las métricas de pérdida: train_loss de 0.265 y eval_loss de 0.2761, valores que sugieren un ajuste razonablemente estable sin señales evidentes de sobreajuste grave en la evaluación. No se documenta el volumen de tokens, la composición del dataset, ni si hubo etapas adicionales de RLHF o DPO más allá del ajuste supervisado del adaptador. No se mencionan innovaciones técnicas específicas como decodificación especulativa, atención lineal o mecanismos híbridos SSM.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| manishkumar2101114/ministral-8b-tool-merged | ~8,9 B | no disponible | en, hi | apache-2.0 | HuggingFace, safetensors |
-| mistralai/Ministral-3-8B-Instruct-2512 (base) | ~8,9 B | no disponible | no disponible | no disponible | HuggingFace, FP8 |
-| Modelos generalistas de 7-8 B (por ejemplo, Llama 3.1 8B Instruct, Qwen2.5 7B Instruct) | 7-8 B | 32k-128k segun modelo | multilingue | licencias variables | HuggingFace, multiples formatos |
+| manishkumar2101114/ministral-8b-tool-merged | ~8,9 B | no disponible | en, hi | apache-2.0 | Hugging Face, safetensors |
+| mistralai/Ministral-3-8B-Instruct-2512 (base) | ~8,9 B | no disponible | no disponible | no disponible | Hugging Face, FP8 |
+| Modelos generalistas de 7-8 B (por ejemplo, Llama 3.1 8B Instruct, Qwen2.5 7B Instruct) | 7-8 B | 32k-128k segun modelo | multilingue | licencias variables | Hugging Face, multiples formatos |
 
 La comparación cuantitativa de rendimiento no es posible porque no se han publicado benchmarks para este merge. Frente al modelo base, la única diferencia documentada es la incorporación del adaptador LoRA orientado a tool calling y la conversión de FP8 a BF16. Frente a alternativas de la misma categoría, el principal diferenciador es el soporte declarado de hindi combinado con tool calling, aunque carece de validación pública (0 descargas, 0 likes en el momento de la consulta).
 
@@ -83,7 +83,7 @@ La comparación cuantitativa de rendimiento no es posible porque no se han publi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manishkumar2101114/ministral-8b-tool-merged
+- Repositorio en Hugging Face: https://huggingface.co/manishkumar2101114/ministral-8b-tool-merged
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 
 No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos asociados a este modelo.

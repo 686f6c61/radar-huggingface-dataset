@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sajjan0001/qwen2.5-1.5b-trst01-compliance-v2` es un ajuste fino (fine-tune) del modelo instructivo `Qwen/Qwen2.5-1.5B-Instruct` de Alibaba, publicado por el usuario `sajjan0001` en HuggingFace. Se trata de un modelo decoder-only de aproximadamente 1.500 millones de parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 1.13.0 sobre el stack Transformers 5.17.0 y PyTorch 2.11.0. El nombre del checkpoint ("trst01-compliance-v2") apunta a un ajuste orientado a tareas de cumplimiento normativo, pero la model card no documenta ni el dataset, ni el número de ejemplos, ni los hiperparámetros empleados.
+`sajjan0001/qwen2.5-1.5b-trst01-compliance-v2` es un ajuste fino (fine-tune) del modelo instructivo `Qwen/Qwen2.5-1.5B-Instruct` de Alibaba, publicado por el usuario `sajjan0001` en Hugging Face. Se trata de un modelo decoder-only de aproximadamente 1.500 millones de parámetros, entrenado mediante SFT (supervised fine-tuning) con la librería TRL 1.13.0 sobre el stack Transformers 5.17.0 y PyTorch 2.11.0. El nombre del checkpoint ("trst01-compliance-v2") apunta a un ajuste orientado a tareas de cumplimiento normativo, pero la model card no documenta ni el dataset, ni el número de ejemplos, ni los hiperparámetros empleados.
 
 La relevancia de este tipo de publicaciones es doble. Por un lado, ilustra el flujo habitual de adaptación de modelos pequeños a dominios verticales concretos (compliance, legal, políticas internas) donde el coste de inferencia y el despliegue en local priman sobre el rendimiento bruto. Por otro, sirve como caso de estudio de las limitaciones del ecosistema: modelos con licencia sin declarar, sin métricas publicadas, sin dataset documentado y con cero descargas, lo que impide cualquier evaluación rigurosa por parte de terceros.
 
@@ -95,7 +95,7 @@ La diferencia fundamental no está en la arquitectura ni en el tamaño, sino en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sajjan0001/qwen2.5-1.5b-trst01-compliance-v2
+- Modelo en Hugging Face: https://huggingface.co/sajjan0001/qwen2.5-1.5b-trst01-compliance-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a servicios de alquiler de libros de texto y ayuda académica, sin relación con el checkpoint analizado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sevalvarez/multitask31` es un repositorio de HuggingFace que publica una implementación propia de una red Swin Transformer en su variante Tiny (swin_t) orientada a aprendizaje multitarea. El autor es el usuario Sevalvarez y el artefacto principal no es un modelo entrenado, sino un andamiaje reproducible: un script (`run.py`) con el modelo y un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que la propia model card describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un checkpoint con benchmarks.
+`Sevalvarez/multitask31` es un repositorio de Hugging Face que publica una implementación propia de una red Swin Transformer en su variante Tiny (swin_t) orientada a aprendizaje multitarea. El autor es el usuario Sevalvarez y el artefacto principal no es un modelo entrenado, sino un andamiaje reproducible: un script (`run.py`) con el modelo y un punto de entrada ejecutable, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que la propia model card describe explícitamente como checkpoint de inicialización para pruebas de humo, no como un checkpoint con benchmarks.
 
 La relevancia de esta ficha es, por tanto, acotada y conviene ser honesto al respecto: no se trata de un modelo de lenguaje, no genera texto y no compite con los modelos que suelen analizarse en este blog. Es una plantilla de investigación para visión por computador multitarea, con atención multi-query, fusión por tensor fusion, activación approximate GELU y normalización por instancias. La model card insiste en que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio, y que no se reclama ninguna métrica de benchmark.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - GPU recomendadas: al tratarse de un modelo de escala Tiny, cualquier GPU con al menos 4-8 GB de VRAM deberia ser suficiente para inferencia y para entrenamiento con lotes pequenos (por ejemplo, RTX 3060, RTX 4060, RTX 4090). No hay requisitos oficiales publicados.
 - GPU de centro de datos (A100, H100): utilizables, pero sobredimensionadas para esta escala; solo tendrian sentido para lotes grandes o para el entrenamiento multitarea completo.
 - Cabe en GPU de consumo: si, previsiblemente en practicamente cualquier GPU consumer moderna, y tambien en CPU para pruebas de humo.
-- Opciones de despliegue: PyTorch nativo mediante el script `run.py`; exportacion a TorchScript u ONNX requeriria trabajo adicional. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que ademas no aplican a un modelo de vision de este tipo. `timms` o pipelines de HuggingFace no cargaran el modelo sin un adaptador explicito.
+- Opciones de despliegue: PyTorch nativo mediante el script `run.py`; exportacion a TorchScript u ONNX requeriria trabajo adicional. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI, que ademas no aplican a un modelo de vision de este tipo. `timms` o pipelines de Hugging Face no cargaran el modelo sin un adaptador explicito.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ La comparativa se plantea frente a backbones de vision de escala similar. Los da
 
 | Modelo | Parametros | Contexto / entrada | Pesos entrenados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sevalvarez/multitask31 | 16.576 (reportado por safetensors) | no disponible (vision) | No (checkpoint de inicializacion) | BSD-3-Clause | HuggingFace, 0 descargas |
+| Sevalvarez/multitask31 | 16.576 (reportado por safetensors) | no disponible (vision) | No (checkpoint de inicializacion) | BSD-3-Clause | Hugging Face, 0 descargas |
 | Swin-T de referencia (timm) | decenas de millones (segun variante) | imagenes, resolucion configurable | Si (ImageNet y derivados) | depende del repositorio de origen | ampliamente disponible |
 | ResNet-50 de referencia | decenas de millones | imagenes, resolucion configurable | Si (ImageNet) | depende del repositorio de origen | ampliamente disponible |
 | DeiT-S / ViT-S de referencia | decenas de millones | imagenes por parches | Si (ImageNet) | depende del repositorio de origen | ampliamente disponible |
@@ -97,7 +97,7 @@ No se dispone de metricas comparables de este repositorio, por lo que cualquier 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sevalvarez/multitask31
+- Modelo en Hugging Face: https://huggingface.co/Sevalvarez/multitask31
 - Paper de referencia de Swin Transformer (arquitectura base, no vinculado por el autor): https://arxiv.org/abs/2103.14030
 - Repositorio de referencia de Swin Transformer (arquitectura base, no vinculado por el autor): https://github.com/microsoft/Swin-Transformer
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a sitios de comercio electronico sin relacion alguna (Trendyol, Trendyol Go), por lo que no se incluyen como fuentes.

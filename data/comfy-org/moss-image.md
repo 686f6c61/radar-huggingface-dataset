@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento, parametros ni contexto de MOSS-Image, por
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Comfy-Org/MOSS-Image | no disponible | no disponible | Apache 2.0 | HuggingFace (reempaquetado ComfyUI) |
-| Alternativas de la misma categoria (p. ej. familia Flux, SD3.5) | no disponible en esta ficha | no disponible en esta ficha | variable segun modelo | HuggingFace / ComfyUI |
+| Comfy-Org/MOSS-Image | no disponible | no disponible | Apache 2.0 | Hugging Face (reempaquetado ComfyUI) |
+| Alternativas de la misma categoria (p. ej. familia Flux, SD3.5) | no disponible en esta ficha | no disponible en esta ficha | variable segun modelo | Hugging Face / ComfyUI |
 
 ## Limitaciones y advertencias
 
@@ -81,11 +81,11 @@ No se dispone de datos de rendimiento, parametros ni contexto de MOSS-Image, por
 - Licencia: Apache 2.0, lo que en principio permite uso comercial, pero conviene verificar la licencia de los repositorios originales de OpenMOSS-Team y de los componentes (Qwen3.5 y flux2-vae) antes de un despliegue en produccion.
 - Consistencia de nombres de archivo: la model card cita `moss_image_sft_bf16.safetensor` (sin la "s" final de `.safetensors`), lo que puede ser una errata; conviene verificar el nombre real al descargar.
 - Coste de hardware: el repositorio completo es de 48,6 GB; aunque solo se cargue un checkpoint a la vez, la descarga y el almacenamiento requieren espacio considerable.
-- Fecha de publicacion: el repositorio figura creado el 2026-10-16, informacion que debe tomarse tal cual aparece en la ficha de HuggingFace.
+- Fecha de publicacion: el repositorio figura creado el 2026-10-16, informacion que debe tomarse tal cual aparece en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/MOSS-Image
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/MOSS-Image
 - Modelo base original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Modelo ajustado original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Sitio oficial de Comfy: https://comfy.org/

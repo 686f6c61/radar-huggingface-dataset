@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e-fp16` es una variante cuantizada del modelo de lenguaje Qwen3.5 con arquitectura de mezcla de expertos (MoE), desarrollada por el usuario de HuggingFace `symrex`. Se trata de un modelo de 35 mil millones de parametros totales con aproximadamente 3 mil millones de parametros activos, lo que lo situa en la categoria de modelos MoE eficientes para inferencia. El nombre indica que ha pasado por procesos de afinacion especificos (Genesis, Hermes) y una variante "Uncensored", aunque no se dispone de documentacion oficial que detalle estos procesos.
+El modelo `symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e-fp16` es una variante cuantizada del modelo de lenguaje Qwen3.5 con arquitectura de mezcla de expertos (MoE), desarrollada por el usuario de Hugging Face `symrex`. Se trata de un modelo de 35 mil millones de parametros totales con aproximadamente 3 mil millones de parametros activos, lo que lo situa en la categoria de modelos MoE eficientes para inferencia. El nombre indica que ha pasado por procesos de afinacion especificos (Genesis, Hermes) y una variante "Uncensored", aunque no se dispone de documentacion oficial que detalle estos procesos.
 
 La version aqui presentada ha sido cuantizada mediante la herramienta oQ (oMLX v0.6.4) con precision mixta a 6 bits con grupo de tamaño 64, y se distribuye en formato MLX safetensors. Esta cuantizacion reduce el tamaño del repositorio a 30.5 GB, lo que facilita su despliegue en hardware de consumo. La fecha de creacion es del 3 de septiembre de 2026, por lo que se trata de un modelo reciente, aunque carece de descargas, likes, licencia declarada e informacion sobre idiomas soportados en el momento de la consulta.
 
@@ -81,5 +81,5 @@ Nota: la comparativa se basa en arquitecturas similares conocidas, no en datos e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e-fp16
+- Hugging Face: https://huggingface.co/symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-V13-dequantized-oQ6e-fp16
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-k2 es un ajuste fino de Qwen/Qwen3.5-0.8B publicado por el usuario Charlie320 en HuggingFace. Se presenta como un "body" (cuerpo) para el pool de modelos tipo soup denominado `d3-lite` del subred Bittensor 127, bajo el paraguas del proyecto Zils. El modelo se distribuye en BF16 y en el denominado "chassis layout", una disposición de pesos específica del ecosistema Zils que no sigue necesariamente la estructura estándar de un transformer de HuggingFace al uso.
+zils-lite-k2 es un ajuste fino de Qwen/Qwen3.5-0.8B publicado por el usuario Charlie320 en Hugging Face. Se presenta como un "body" (cuerpo) para el pool de modelos tipo soup denominado `d3-lite` del subred Bittensor 127, bajo el paraguas del proyecto Zils. El modelo se distribuye en BF16 y en el denominado "chassis layout", una disposición de pesos específica del ecosistema Zils que no sigue necesariamente la estructura estándar de un transformer de Hugging Face al uso.
 
 El modelo parte de `vllm-sr/d3-lite` (licencia Apache-2.0) y se ha sometido a un ajuste fino de todos los parámetros a través del chasis del pool. Según la model card, los pesos de lenguaje han sido entrenados y la torre de visión se hereda del modelo padre. Con 852.985.920 parámetros (aproximadamente 0,85 mil millones), se sitúa en la categoría de modelos pequeños, adecuados para despliegue en hardware modesto y para tareas de decisión o clasificación dentro de un pipeline mayor.
 
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 0,9 GB para pesos; en 4 bits, alrededor de 0,5 GB, si bien el autor no publica versiones cuantizadas y habria que generarlas a partir de los safetensors.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (GTX 1650 4 GB, RTX 3050, RTX 4060, RTX 4090) deberia poder alojar el modelo en BF16 o en cuantizacion; para lotes grandes o contextos largos se recomienda RTX 3090/4090 o superiores (A100, H100).
 - Cabe en GPU consumer: si, con margen amplio en la mayoria de tarjetas modernas.
-- Opciones de despliegue: no se documentan opciones oficiales. El formato "chassis layout" puede requerir conversion a un formato estandar (HuggingFace transformers, GGUF para llama.cpp/Ollama, o vLLM) antes de poder desplegarse; no se confirma compatibilidad directa con ninguno de estos backends.
+- Opciones de despliegue: no se documentan opciones oficiales. El formato "chassis layout" puede requerir conversion a un formato estandar (Hugging Face transformers, GGUF para llama.cpp/Ollama, o vLLM) antes de poder desplegarse; no se confirma compatibilidad directa con ninguno de estos backends.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| zils-lite-k2 | 852.985.920 | no disponible | Apache-2.0 | HuggingFace (0 descargas) | Fine-tune en chasis Zils, sin benchmarks |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible | no disponible en la informacion | HuggingFace (modelo base) | Modelo padre; capacidades y contexto originales |
-| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | HuggingFace | Origen del ajuste, tambien en ecosistema Zils |
+| zils-lite-k2 | 852.985.920 | no disponible | Apache-2.0 | Hugging Face (0 descargas) | Fine-tune en chasis Zils, sin benchmarks |
+| Qwen/Qwen3.5-0.8B | ~0,8 B | no disponible | no disponible en la informacion | Hugging Face (modelo base) | Modelo padre; capacidades y contexto originales |
+| vllm-sr/d3-lite | no disponible | no disponible | Apache-2.0 | Hugging Face | Origen del ajuste, tambien en ecosistema Zils |
 
 La comparacion con alternativas de la misma categoria (modelos de menos de 1.000 millones de parametros) no puede completarse con datos de rendimiento porque no se han publicado benchmarks. A nivel de licencia, Apache-2.0 es permisiva para uso comercial, lo que constituye una ventaja frente a modelos con licencias restrictivas, pero la falta de documentacion sobre contexto, idiomas y capacidades limita la comparacion tecnica.
 
@@ -84,7 +84,7 @@ La comparacion con alternativas de la misma categoria (modelos de menos de 1.000
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Charlie320/zils-lite-k2
+- Modelo en Hugging Face: https://huggingface.co/Charlie320/zils-lite-k2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo de origen del ajuste: https://huggingface.co/vllm-sr/d3-lite
 - No se han encontrado en la informacion disponible papers, blogs, repositorios ni demos adicionales.

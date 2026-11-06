@@ -80,10 +80,10 @@ Las puntuaciones de generacion libre son exactitudes juzgadas por un OCR Qwen3.6
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MIXAR 477M p32 (este modelo) | 477M | hasta 32.768 bloques | Pixel language model, tokenizer-free | Apache 2.0 | HuggingFace |
-| MIXAR 116M p32 | 116M | no disponible | Pixel language model, tokenizer-free | Apache 2.0 | HuggingFace |
-| MIXAR 116M p8 | 116M | no disponible | Pixel language model, tokenizer-free | Apache 2.0 | HuggingFace |
-| MIXAR 477M p32 stage 2 (GRPO) | 477M | no disponible | Pixel language model refinado con GRPO | Apache 2.0 | HuggingFace |
+| MIXAR 477M p32 (este modelo) | 477M | hasta 32.768 bloques | Pixel language model, tokenizer-free | Apache 2.0 | Hugging Face |
+| MIXAR 116M p32 | 116M | no disponible | Pixel language model, tokenizer-free | Apache 2.0 | Hugging Face |
+| MIXAR 116M p8 | 116M | no disponible | Pixel language model, tokenizer-free | Apache 2.0 | Hugging Face |
+| MIXAR 477M p32 stage 2 (GRPO) | 477M | no disponible | Pixel language model refinado con GRPO | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de modelos de la competencia en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento con alternativas tokenizadas de tamano similar.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de modelos de la competencia en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32
+- Modelo en Hugging Face: https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32
 - Variante stage 2 (GRPO): https://huggingface.co/TYTTYTTYT/llama-pixar-477m-p32-stage2
 - Repositorio de codigo: https://github.com/april-tools/mixar
 - Paper: https://arxiv.org/abs/2604.11575

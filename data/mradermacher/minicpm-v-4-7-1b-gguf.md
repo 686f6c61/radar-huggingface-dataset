@@ -6,7 +6,7 @@ MiniCPM-V-4.7-1B-GGUF es la version cuantizada en formato GGUF del modelo multim
 
 El interes principal de esta publicacion es el formato: al distribuirse en GGUF con cuantizaciones que van de 0,6 GB (Q2_K) a 2,1 GB (f16), el modelo puede ejecutarse en hardware de consumo, CPU e incluso dispositivos de borde, algo poco habitual en modelos multimodales. La licencia Apache-2.0 del modelo base permite uso comercial sin restricciones adicionales.
 
-Esta ficha se basa exclusivamente en la informacion disponible en HuggingFace; la busqueda web asociada no devolvio resultados tecnicos relevantes (unicamente contenido no relacionado). Por tanto, numerosos datos de arquitectura, contexto y entrenamiento aparecen como "no disponible" y no deben asumirse.
+Esta ficha se basa exclusivamente en la informacion disponible en Hugging Face; la busqueda web asociada no devolvio resultados tecnicos relevantes (unicamente contenido no relacionado). Por tanto, numerosos datos de arquitectura, contexto y entrenamiento aparecen como "no disponible" y no deben asumirse.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Datos verificados |
 |---|---|---|---|---|---|
-| MiniCPM-V-4.7-1B (GGUF, mradermacher) | ~1,01 B | no disponible | Apache-2.0 | GGUF | si (HuggingFace) |
+| MiniCPM-V-4.7-1B (GGUF, mradermacher) | ~1,01 B | no disponible | Apache-2.0 | GGUF | si (Hugging Face) |
 | Alternativas VLM < 3B de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/MiniCPM-V-4.7-1B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.7-1B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#MiniCPM-V-4.7-1B-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

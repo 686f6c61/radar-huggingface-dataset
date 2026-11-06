@@ -102,13 +102,13 @@ Frente a Whisper small, de tamaño casi idéntico, SenseVoiceSmall añade identi
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/lipik/SenseVoiceSmall-gguf
-- Modelo base en HuggingFace: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/lipik/SenseVoiceSmall-gguf
+- Modelo base en Hugging Face: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Modelo base en ModelScope: https://www.modelscope.cn/models/iic/SenseVoiceSmall
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentación del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/sensevoice-small.md
 - Repositorio oficial de SenseVoice: https://github.com/FunAudioLLM/SenseVoice
 - Página del proyecto FunAudioLLM: https://fun-audio-llm.github.io/
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/FunAudioLLM/SenseVoice
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/FunAudioLLM/SenseVoice
 - Demo en ModelScope: https://www.modelscope.cn/studios/iic/SenseVoice
 - Commit del modelo base utilizado: https://huggingface.co/FunAudioLLM/SenseVoiceSmall/commit/3eb3b4eeffc2f2dde6051b853983753db33e35c3

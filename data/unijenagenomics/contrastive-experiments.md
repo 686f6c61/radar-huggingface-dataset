@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unijenagenomics/contrastive-experiments es un repositorio de pesos y codigo alojado en HuggingFace que contiene una implementacion propia y compacta de una arquitectura Flamingo orientada a aprendizaje contrastivo. Lo publica el usuario Unijenagenomics bajo licencia MIT y, segun su propia model card, se trata de una configuracion etiquetada como "huge" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un lanzamiento preentrenado listo para produccion. El recuento real de parametros registrado en safetensors es de 24.832, una cifra extremadamente baja que confirma su naturaleza de checkpoint de inicializacion.
+Unijenagenomics/contrastive-experiments es un repositorio de pesos y codigo alojado en Hugging Face que contiene una implementacion propia y compacta de una arquitectura Flamingo orientada a aprendizaje contrastivo. Lo publica el usuario Unijenagenomics bajo licencia MIT y, segun su propia model card, se trata de una configuracion etiquetada como "huge" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala, no como un lanzamiento preentrenado listo para produccion. El recuento real de parametros registrado en safetensors es de 24.832, una cifra extremadamente baja que confirma su naturaleza de checkpoint de inicializacion.
 
 El modelo no resuelve una tarea de produccion concreta: es un esqueleto experimental. El autor declara de forma explicita que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo y que no se presenta como un checkpoint entrenado ni con benchmarks. No hay pipeline declarado, ni idiomas soportados, ni resultados de evaluacion publicados. Su relevancia actual es metodologica: sirve como punto de partida reproducible para quien quiera experimentar con fusion tensor fusion, atencion multi query y recetas con Adafactor y scheduler coseno aplicadas a un esquema Flamingo contrastivo.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Compatibilidad con GPU de consumo: si, en cualquier GPU consumer (RTX 3060, RTX 4090, etc.) e incluso en CPU.
 - Opciones de despliegue: al ser una implementacion propia, requiere el codigo incluido (inference.py) y no es cargable directamente por APIs genericas de vLLM, TGI u Ollama sin adaptador. llama.cpp no aplica sin conversion a GGUF.
 - Latencia y throughput estimados: no disponibles; con este tamano serian irrelevantes en terminos de computo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -79,7 +79,7 @@ Este repositorio no es comparable en terminos de rendimiento con modelos Flaming
 |---|---|---|---|---|---|
 | Unijenagenomics/contrastive-experiments | Implementacion propia, checkpoint de inicializacion | 24.832 | no disponible | MIT | Experimental, sin entrenar |
 | OpenFlamingo (LAION) | Reproduccion abierta de Flamingo | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Entrenado y publicado |
-| IDEFICS (HuggingFace) | Modelo vision-lenguaje inspirado en Flamingo | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Entrenado y publicado |
+| IDEFICS (Hugging Face) | Modelo vision-lenguaje inspirado en Flamingo | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Entrenado y publicado |
 
 ## Limitaciones y advertencias
 
@@ -94,6 +94,6 @@ Este repositorio no es comparable en terminos de rendimiento con modelos Flaming
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Unijenagenomics/contrastive-experiments
+- Repositorio en Hugging Face: https://huggingface.co/Unijenagenomics/contrastive-experiments
 - Model card del autor: https://huggingface.co/Unijenagenomics/contrastive-experiments (seccion README del repositorio)
 - No se han encontrado en la informacion proporcionada papers, blogs, demos o repositorios adicionales asociados a este modelo.

@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grigorij/PaP_duck_xvla (este) | 879 M | no disponible | Pick-and-place (pato en cuenco) | Apache-2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible | no disponible | Modelo base preentrenado multi-robot | Apache-2.0 | HuggingFace |
-| Grigorij/smolvla_pap_duck | no disponible | no disponible | Pick-and-place (pato en cuenco) | no disponible | HuggingFace |
+| Grigorij/PaP_duck_xvla (este) | 879 M | no disponible | Pick-and-place (pato en cuenco) | Apache-2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible | no disponible | Modelo base preentrenado multi-robot | Apache-2.0 | Hugging Face |
+| Grigorij/smolvla_pap_duck | no disponible | no disponible | Pick-and-place (pato en cuenco) | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos relacionados encontrados en la búsqueda. `smolvla_pap_duck` es una versión compacta de SmolVLA para la misma tarea, pero no se dispone de sus especificaciones detalladas. `xvla-base` es el checkpoint preentrenado del que parte este fine-tune. No hay datos de rendimiento publicados para ninguno de ellos en esta tarea.
 
@@ -75,7 +75,7 @@ La comparativa se limita a los modelos relacionados encontrados en la búsqueda.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Grigorij/PaP_duck_xvla
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Grigorij/PaP_duck_xvla
 - Paper X-VLA (arXiv 2510.10274): https://arxiv.org/html/2510.10274v1
 - Sitio web del proyecto X-VLA: https://thu-air-dream.github.io/X-VLA/
 - Repositorio GitHub de X-VLA: https://github.com/2toinf/X-VLA

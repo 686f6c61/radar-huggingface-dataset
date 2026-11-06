@@ -81,9 +81,9 @@ Sin datos de rendimiento, no es posible establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Wesley1234/SenseNova-U1.5-Comfy
-- Repositorio HuggingFace original de la conversion (t8star): https://huggingface.co/t8star/SenseNova-U1.5-Comfy
-- Repositorio HuggingFace de la conversion alternativa (taurusduan): https://huggingface.co/taurusduan/SenseNova-U1.5-Comfy
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Wesley1234/SenseNova-U1.5-Comfy
+- Repositorio Hugging Face original de la conversion (t8star): https://huggingface.co/t8star/SenseNova-U1.5-Comfy
+- Repositorio Hugging Face de la conversion alternativa (taurusduan): https://huggingface.co/taurusduan/SenseNova-U1.5-Comfy
 - Nodo de ComfyUI (GitHub): https://github.com/T8mars/Comfyui-SenseNova-U1.5-Wrapper-T8
 - Nodo de ComfyUI (Comfy Registry): https://registry.comfy.org/nodes/sensenova-u15-t8
 - Articulo academico (arXiv): https://arxiv.org/abs/2605.12500 (segun etiquetas del modelo)

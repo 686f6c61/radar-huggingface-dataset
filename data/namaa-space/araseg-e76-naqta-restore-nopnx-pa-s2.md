@@ -18,7 +18,7 @@ El sistema completo del que forma parte reporta 87,82 de macro-F1 en el *practic
 | Tipos de cuantizacion | no disponible (no se publican versiones GGUF, GPTQ ni AWQ; solo el `state_dict` en PyTorch) |
 | Idiomas soportados | árabe (ar) |
 | Licencia | MIT (heredada del modelo base) |
-| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_PA.pt`); no es un checkpoint en formato HuggingFace, no hay safetensors ni GGUF |
+| Formato de pesos | PyTorch `state_dict` (`best_NoPnx_PA.pt`); no es un checkpoint en formato Hugging Face, no hay safetensors ni GGUF |
 | Modelo base | FacebookAI/xlm-roberta-large |
 | Tarea / pipeline | token-classification (segmentación de texto árabe) |
 | Subtarea | NoPnx-PA |
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks por miembro (MMLU, HumanEval, GSM8K
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente. Una RTX 3050, RTX 3060, RTX 4090 o RTX 5090 lo ejecutan sin problema; A100 y H100 son sobredimensionadas para este tamaño de modelo y solo tendrían sentido para procesar grandes volúmenes en paralelo.
 - Compatibilidad con GPU de consumo: sí, cabe holgadamente en prácticamente cualquier GPU de consumo moderna, e incluso en iGPU con memoria compartida suficiente si se acepta mayor latencia.
 - Ejecución en CPU: viable, dado el tamaño del modelo, aunque con menor *throughput*.
-- Opciones de despliegue: no está soportado de forma nativa por vLLM, TGI, Ollama ni llama.cpp, porque los pesos son un `state_dict` de PyTorch y no un checkpoint en formato HuggingFace. Para usar esos servidores habría que reconstruir la arquitectura y exportar el modelo a formato HF (y, si se desea, a safetensors o GGUF). El camino documentado es cargar el `state_dict` con `torch.load` tras construir el modelo desde el YAML de configuración del experimento.
+- Opciones de despliegue: no está soportado de forma nativa por vLLM, TGI, Ollama ni llama.cpp, porque los pesos son un `state_dict` de PyTorch y no un checkpoint en formato Hugging Face. Para usar esos servidores habría que reconstruir la arquitectura y exportar el modelo a formato HF (y, si se desea, a safetensors o GGUF). El camino documentado es cargar el `state_dict` con `torch.load` tras construir el modelo desde el YAML de configuración del experimento.
 - Latencia y throughput estimados: no disponible en la información proporcionada.
 - Dependencias: el *stack* fijado está en `requirements-llm.txt` del repositorio de código; los miembros con LoRA del ensemble necesitan `transformers==5.12.1`.
 
@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento de otros sistemas participantes en AraSeg 
 
 | Modelo | Parametros | Contexto | Tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| araseg-e76-naqta-restore-nopnx-pa-s2 | 560M | 512 tokens | Segmentación árabe (miembro de ensemble) | No evaluable de forma aislada; sistema completo: 87,82 / 89,9 macro-F1 | MIT | HuggingFace, `state_dict` `.pt` |
-| FacebookAI/xlm-roberta-large | 560M | 512 tokens | Encoder multilingüe genérico | No aplica (sin ajuste para segmentación) | MIT | HuggingFace, safetensors |
-| Sistema NAMAA araseg-2026 (ensemble completo) | No disponible | 512 tokens por miembro | Segmentación árabe (NoPnx-PA) | 87,82 / 89,9 macro-F1 | MIT (según miembros) | Colección en HuggingFace y código en GitHub |
+| araseg-e76-naqta-restore-nopnx-pa-s2 | 560M | 512 tokens | Segmentación árabe (miembro de ensemble) | No evaluable de forma aislada; sistema completo: 87,82 / 89,9 macro-F1 | MIT | Hugging Face, `state_dict` `.pt` |
+| FacebookAI/xlm-roberta-large | 560M | 512 tokens | Encoder multilingüe genérico | No aplica (sin ajuste para segmentación) | MIT | Hugging Face, safetensors |
+| Sistema NAMAA araseg-2026 (ensemble completo) | No disponible | 512 tokens por miembro | Segmentación árabe (NoPnx-PA) | 87,82 / 89,9 macro-F1 | MIT (según miembros) | Colección en Hugging Face y código en GitHub |
 | Otros segmentadores árabes (Farasa, CAMeL Tools, sistemas de otros equipos en AraSeg 2026) | No disponible | No disponible | Segmentación / morfología árabe | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento de otros sistemas participantes en AraSeg 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NAMAA-Space/araseg-e76-naqta-restore-nopnx-pa-s2
+- Modelo en Hugging Face: https://huggingface.co/NAMAA-Space/araseg-e76-naqta-restore-nopnx-pa-s2
 - Colección del sistema AraSeg 2026 de NAMAA: https://huggingface.co/collections/NAMAA-Space/namaa-community-araseg-2026
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Repositorio de código, configuraciones y mapa miembro-subtarea: https://github.com/NAMAA-ORG/NAMAA-Community-AraSeg-2026

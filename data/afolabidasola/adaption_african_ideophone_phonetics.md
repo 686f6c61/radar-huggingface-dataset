@@ -29,7 +29,7 @@ El conjunto de datos de entrenamiento consta de 867 filas de datos adaptados, co
 
 - Especialización en fonética de ideófonos africanos: el adaptador ajusta el modelo base para comprender y generar contenido relacionado con ideófonos, que son palabras que evocan sensaciones sensoriales y son frecuentes en lenguas africanas.
 - Generación de texto en dominio lingüístico: mantiene las capacidades generativas del modelo base Llama-4-Scout mientras se especializa en el dominio de la fonética africana.
-- Integración con el ecosistema PEFT: el adaptador se puede cargar, fusionar (`merge_and_unload`) y descargar con la librería `peft` de HuggingFace.
+- Integración con el ecosistema PEFT: el adaptador se puede cargar, fusionar (`merge_and_unload`) y descargar con la librería `peft` de Hugging Face.
 - Compatibilidad con cuantización 4-bit: el entrenamiento se realizó con cuantización bitsandbytes, lo que permite inferencia eficiente en hardware con VRAM limitada.
 - Formato de chat: los datos de entrenamiento usan formato chat, por lo que el adaptador respeta la plantilla de chat del modelo base.
 
@@ -78,7 +78,7 @@ No se dispone de información sobre adaptadores LoRA comparables específicament
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AfolabiDasola/adaption_african_ideophone_phonetics
-- Perfil del autor en HuggingFace: https://huggingface.co/AfolabiDasola
+- Repositorio Hugging Face: https://huggingface.co/AfolabiDasola/adaption_african_ideophone_phonetics
+- Perfil del autor en Hugging Face: https://huggingface.co/AfolabiDasola
 - Perfil del autor en GitHub: https://github.com/AfolabiDasola
 - Adaption Labs (plataforma de entrenamiento): https://

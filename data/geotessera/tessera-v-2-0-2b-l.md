@@ -70,6 +70,6 @@ No se dispone de información comparativa con otros modelos geospaciales en la d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-L
+- Modelo en Hugging Face: https://huggingface.co/geotessera/TESSERA-V-2.0-2B-L
 - Teacher (2B): https://huggingface.co/geotessera/TESSERA-V-2.0-2B-Teacher
 - Paper (preprint): https://arxiv.org/abs/2607.03949

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4 | ~2,29 B | en, te, kn | no disponible | Apache 2.0 | HuggingFace (18 descargas) |
-| Modelo base: sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep | no disponible | en (y base indic multilingüe) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4 | ~2,29 B | en, te, kn | no disponible | Apache 2.0 | Hugging Face (18 descargas) |
+| Modelo base: sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep | no disponible | en (y base indic multilingüe) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas TTS abiertas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables de otros modelos TTS comparables en la información proporcionada, por lo que no se pueden establecer comparaciones cuantitativas de rendimiento, contexto o calidad.
@@ -83,7 +83,7 @@ No se dispone de datos verificables de otros modelos TTS comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-reuse-tmu1.0-baselm3e-4
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-reuse-themes (referenciado en la model card; URL exacta no disponible)
 - Dataset kannada: sw-voice/swamiji-navaratri-kannada-reuse-themes (referenciado en la model card; URL exacta no disponible)

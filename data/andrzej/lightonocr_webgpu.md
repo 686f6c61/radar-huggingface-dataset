@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightOnOCR_webGPU es un repositorio de pesos publicado por el usuario andrzej en HuggingFace. Por las etiquetas del repositorio (onnx, qwen3_5) y por su nombre, se trata de una exportacion a formato ONNX de un modelo de la familia Qwen3.5, presumiblemente orientada a ejecucion en navegador mediante WebGPU. El repositorio ocupa 0.9 GB y esta publicado bajo licencia Apache-2.0.
+LightOnOCR_webGPU es un repositorio de pesos publicado por el usuario andrzej en Hugging Face. Por las etiquetas del repositorio (onnx, qwen3_5) y por su nombre, se trata de una exportacion a formato ONNX de un modelo de la familia Qwen3.5, presumiblemente orientada a ejecucion en navegador mediante WebGPU. El repositorio ocupa 0.9 GB y esta publicado bajo licencia Apache-2.0.
 
 La model card asociada no contiene mas informacion que la linea de licencia. No se documentan parametros, contexto, dataset de entrenamiento ni resultados de evaluacion, por lo que la mayor parte de la ficha queda marcada como "no disponible". El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y muestra una fecha de creacion de 2026-10-10.
 
@@ -75,10 +75,10 @@ No disponible. No se ha encontrado informacion verificable sobre modelos compara
 - Sesgos: no hay informacion disponible sobre sesgos demograficos, tipograficos o de dominio.
 - Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se indiquen los cambios. No obstante, la licencia del modelo base subyacente puede imponer condiciones adicionales; conviene verificar la licencia de la variante de Qwen3.5 utilizada antes de un despliegue comercial.
 - Repositorio sin traccion: 0 descargas y 0 "likes" en el momento de la consulta, lo que reduce la probabilidad de que la exportacion haya sido validada por terceros.
-- Fecha de creacion inusual: el repositorio figura como creado el 2026-10-10, una fecha posterior a la habitual en los metadatos de HuggingFace. Conviene tratarlo con cautela, ya que puede tratarse de una subida de prueba o de metadatos incorrectos.
+- Fecha de creacion inusual: el repositorio figura como creado el 2026-10-10, una fecha posterior a la habitual en los metadatos de Hugging Face. Conviene tratarlo con cautela, ya que puede tratarse de una subida de prueba o de metadatos incorrectos.
 - Compatibilidad WebGPU: el soporte de WebGPU varia segun navegador y plataforma; en el momento de redactar esta ficha no se dispone de informacion sobre los entornos probados por el autor.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andrzej/LightOnOCR_webGPU
+- Repositorio en Hugging Face: https://huggingface.co/andrzej/LightOnOCR_webGPU
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo. Los resultados obtenidos corresponden al sello discografico Dragonfly Records y no guardan relacion con el repositorio. No se dispone de papers, blogs, repositorios de codigo ni demos asociados.

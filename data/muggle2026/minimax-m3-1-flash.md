@@ -72,7 +72,7 @@ Los datos de comparación solo están publicados para Automation-Bench v1.0.6 en
 
 | Modelo | Parametros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-M3.1-Flash | ~428B (23B activos) / 220B en safetensors | 1M | MiniMax Community | Texto, imagen, vídeo | HuggingFace |
+| MiniMax-M3.1-Flash | ~428B (23B activos) / 220B en safetensors | 1M | MiniMax Community | Texto, imagen, vídeo | Hugging Face |
 | DeepSeek V4.1 Flash | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Kimi K3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -92,9 +92,9 @@ Solo se dispone de datos comparativos de rendimiento en Automation-Bench v1.0.6 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muggle2026/MiniMax-M3.1-Flash
+- Hugging Face: https://huggingface.co/Muggle2026/MiniMax-M3.1-Flash
 - Paper arXiv: https://arxiv.org/abs/2606.13392
-- Organización MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI
+- Organización MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI
 - Web oficial: https://www.minimax.io
 - Documentación API: https://platform.minimax.io/docs/guides/text-generation
 - MiniMax Code: https://agent.minimax.io/

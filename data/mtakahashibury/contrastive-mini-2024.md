@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mtakahashibury/contrastive-mini-2024` es un checkpoint de inicializacion publicado en HuggingFace por el usuario mtakahashibury. Se presenta como una implementacion funcional de una arquitectura MobileViT orientada a aprendizaje contrastivo, con una configuracion declarada como "huge" en la model card. El repositorio tiene un tamano practicamente nulo (0.0 GB) y el fichero `model.safetensors` contiene 49.600 parametros totales, una cifra extremadamente baja que confirma que no se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales reales.
+El modelo `mtakahashibury/contrastive-mini-2024` es un checkpoint de inicializacion publicado en Hugging Face por el usuario mtakahashibury. Se presenta como una implementacion funcional de una arquitectura MobileViT orientada a aprendizaje contrastivo, con una configuracion declarada como "huge" en la model card. El repositorio tiene un tamano practicamente nulo (0.0 GB) y el fichero `model.safetensors` contiene 49.600 parametros totales, una cifra extremadamente baja que confirma que no se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales reales.
 
 La relevancia de esta ficha no es la del modelo en si, sino la de un caso tipico de repositorio de investigacion en fase embrionaria: el autor indica explicitamente que el checkpoint es "una inicializacion valida para smoke tests" y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio incluye el codigo Python principal (`predict.py`), un `config.json` con la configuracion de arquitectura generada, un `training_args.json` con la receta de experimento por defecto y el propio `model.safetensors`.
 
@@ -44,7 +44,7 @@ No hay informacion sobre el numero de tokens de entrenamiento, la composicion de
 - Plantilla de implementacion para aprendizaje contrastivo: el codigo de `predict.py` puede reutilizarse como esqueleto para montar un experimento de representaciones contrastivas con MobileViT como backbone.
 - Reproducibilidad de recetas de entrenamiento: `training_args.json` documenta optimizador y planificador, lo que permite fijar una linea base reproducible con semillas controladas.
 - Comparativa de arquitecturas ligeras en investigacion: util como punto de partida para medir coste de atencion lineal y fusion bilinear frente a alternativas convolucionales puras.
-- Docencia y prototipado rapido: con 49.600 parametros, el modelo cabe en cualquier portatil y permite ilustrar el flujo completo de publicacion y carga de un checkpoint en HuggingFace.
+- Docencia y prototipado rapido: con 49.600 parametros, el modelo cabe en cualquier portatil y permite ilustrar el flujo completo de publicacion y carga de un checkpoint en Hugging Face.
 - Integracion en aplicaciones moviles o embebidas: dado su tamano, es candidato a pruebas de despliegue en dispositivos con recursos muy limitados, siempre que se entrene previamente.
 - Auditoria de repositorios de investigacion: caso de estudio para revisar que una model card declare de forma honesta la ausencia de benchmarks y de entrenamiento.
 - Generacion de codigo en produccion, atencion al cliente, agentes o analisis documental: no aplicables, ya que no hay capacidades de lenguaje ni de razonamiento verificadas en este checkpoint.
@@ -67,7 +67,7 @@ No hay datos de rendimiento de este checkpoint que permitan una comparacion cuan
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mtakahashibury/contrastive-mini-2024 | 49.600 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | HuggingFace, 0 descargas |
+| mtakahashibury/contrastive-mini-2024 | 49.600 | no disponible | sin benchmarks publicados; checkpoint sin entrenar | apache-2.0 | Hugging Face, 0 descargas |
 | MobileViT (implementacion original de Apple) | no disponible | no aplica | resultados publicados en el paper original | licencia del repositorio original, no disponible aqui | codigo abierto en su repositorio oficial |
 | MobileNetV3 | no disponible | no aplica | resultados publicados para clasificacion en ImageNet | licencia del repositorio original, no disponible aqui | disponible en frameworks de vision habituales |
 | ViT de escala reducida (por ejemplo ViT-tiny) | no disponible | no aplica | resultados publicados para clasificacion y transferencia | variable segun implementacion | disponible en librerias de transformers |
@@ -88,6 +88,6 @@ La comparacion directa no es significativa: los modelos alternativos citados son
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mtakahashibury/contrastive-mini-2024
+- Hugging Face: https://huggingface.co/mtakahashibury/contrastive-mini-2024
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a paginas sobre nombres decorativos para PUBG y no guardan relacion con este repositorio.
 - Papers, blogs, repositorios o demos adicionales: no disponibles.

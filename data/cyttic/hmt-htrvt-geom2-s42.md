@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de HT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-geom2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-geom2-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la informacion disponible papers, blogs, repositorios o demos adicionales.

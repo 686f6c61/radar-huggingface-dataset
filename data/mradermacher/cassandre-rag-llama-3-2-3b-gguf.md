@@ -84,7 +84,7 @@ La comparativa se basa en características públicas de los modelos; no se dispo
 
 ## Enlaces
 
-- [HuggingFace: mradermacher/Cassandre-RAG-Llama-3.2-3B-GGUF](https://huggingface.co/mradermacher/Cassandre-RAG-Llama-3.2-3B-GGUF)
+- [Hugging Face: mradermacher/Cassandre-RAG-Llama-3.2-3B-GGUF](https://huggingface.co/mradermacher/Cassandre-RAG-Llama-3.2-3B-GGUF)
 - [Modelo base: jbl2024/Cassandre-RAG-Llama-3.2-3B](https://huggingface.co/jbl2024/Cassandre-RAG-Llama-3.2-3B)
 - [Página de conveniencia para descargas](https://hf.tst.eu/model#Cassandre-RAG-Llama-3.2-3B-GGUF)
 - [README de ejemplo de TheBloke para uso de GGUF](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

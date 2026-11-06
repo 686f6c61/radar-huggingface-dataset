@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wxclarke/test-generation es un repositorio experimental alojado en HuggingFace que se presenta como una base de codigo de ALBEF (Align before Fuse) orientada a tareas de generacion. Lo publica el usuario Wxclarke bajo licencia Apache 2.0 y no es un modelo entrenado: el propio autor indica de forma explicita que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de referencia. El repositorio contiene principalmente un artefacto de codigo, inference.py, junto con config.json y training_args.json.
+Wxclarke/test-generation es un repositorio experimental alojado en Hugging Face que se presenta como una base de codigo de ALBEF (Align before Fuse) orientada a tareas de generacion. Lo publica el usuario Wxclarke bajo licencia Apache 2.0 y no es un modelo entrenado: el propio autor indica de forma explicita que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con resultados de referencia. El repositorio contiene principalmente un artefacto de codigo, inference.py, junto con config.json y training_args.json.
 
 El dato mas llamativo es la incoherencia entre la configuracion declarada y el numero real de parametros. config.json describe una arquitectura de escala "huge" con atencion flash, fusion tucker, activacion mish y normalizacion batchnorm, pero el recuento real de parametros en safetensors es de 24.832 en total, una cifra propia de una red de juguete, no de un modelo ALBEF completo (que en sus variantes publicadas suele combinar un codificador visual y un codificador de texto). Esta discrepancia debe interpretarse como indicio de que el repositorio es un esqueleto de arquitectura para inspeccion, tal y como reconoce el autor.
 
@@ -76,7 +76,7 @@ No disponible. No se han encontrado en la informacion proporcionada modelos comp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Wxclarke/test-generation
+- Hugging Face: https://huggingface.co/Wxclarke/test-generation
 - Resultados de busqueda web: ninguno de los enlaces recuperados (guias sobre generacion de casos de prueba con Claude, documentacion de Xray, articulo de MDPI sobre generacion automatica de tests y repositorio ai-test-generation-scripts) guarda relacion con el modelo Wxclarke/test-generation, por lo que no se incluyen como referencias.
 - Paper original de ALBEF: no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional, demo o blog del autor: no disponible.

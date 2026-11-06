@@ -99,7 +99,7 @@ Latencia: 29–31 ms por pregunta en una GPU a 1024 px.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/vela3-fast-vision
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/vela3-fast-vision
 - Modelo base: https://huggingface.co/athrael-soju/UltraVBERT
 - Coleccion Vela 3.0: https://huggingface.co/collections/vllm-sr/vela-30-6ad1c430eb1718eb4754edcd
 - Paper de LettuceDetect v2 (GroundLM 2026, EMNLP 2026): https://aclanthology.org/2026.groundlm-1.44/

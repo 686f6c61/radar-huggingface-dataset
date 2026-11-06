@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMax-H3-Wuxia-Fight-Workflow es un repositorio de HuggingFace publicado por el usuario Work-Fisher que contiene un workflow de ComfyUI para MiniMax H3, el modelo de generacion de video con audio sincronizado de MiniMax (Hailuo AI 3.0). No se trata de un modelo de pesos: el repositorio aloja el fichero de workflow y los enlaces de descarga de los componentes necesarios, que se obtienen de sus fuentes originales. El pipeline declarado es image-to-video y los tags incluyen video-generation, comfyui-workflow y minimax-h3.
+MiniMax-H3-Wuxia-Fight-Workflow es un repositorio de Hugging Face publicado por el usuario Work-Fisher que contiene un workflow de ComfyUI para MiniMax H3, el modelo de generacion de video con audio sincronizado de MiniMax (Hailuo AI 3.0). No se trata de un modelo de pesos: el repositorio aloja el fichero de workflow y los enlaces de descarga de los componentes necesarios, que se obtienen de sus fuentes originales. El pipeline declarado es image-to-video y los tags incluyen video-generation, comfyui-workflow y minimax-h3.
 
 El workflow esta especializado en escenas de artes marciales (wuxia) de alta dinamica de movimiento. Su diseno es de dos pasadas: la primera genera un borrador de movimiento y composicion a baja resolucion; a continuacion un upscaler latente aprendido amplia el resultado por 1,5; y la segunda pasada refina el detalle a alta resolucion. Un nodo de previsualizacion de la pasada 1 permite cancelar la generacion de forma temprana si el movimiento no es el deseado.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax H3 Wuxia Fight Workflow (Work-Fisher) | No disponible (workflow sobre MiniMax H3) | No disponible | No se han publicado benchmarks | no disponible | HuggingFace, 0 descargas |
+| MiniMax H3 Wuxia Fight Workflow (Work-Fisher) | No disponible (workflow sobre MiniMax H3) | No disponible | No se han publicado benchmarks | no disponible | Hugging Face, 0 descargas |
 | Otros workflows de ComfyUI para MiniMax H3 | No disponible | No disponible | No disponible | No disponible | Repositorios de terceros citados en la busqueda (Alissonerdx, t8star, JOKER141, lightx2v) |
 | Alternativas de generacion de video open source de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se dispone en la informacion proporcionada de datos comparativos verificables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Work-Fisher/MiniMax-H3-Wuxia-Fight-Workflow
+- Hugging Face: https://huggingface.co/Work-Fisher/MiniMax-H3-Wuxia-Fight-Workflow
 - Cuenta de YouTube del autor: https://www.youtube.com/@Work-Fisher
 - Cuenta de Bilibili del autor: https://space.bilibili.com/17919458
 - Nodo principal: https://github.com/T8mars/comfyui-minimax-h3-audio-T8

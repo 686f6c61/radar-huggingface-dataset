@@ -54,16 +54,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: al tratarse de un modelo de 1,88 B parámetros, en precisión FP16 ocupa aproximadamente 3,8 GB de memoria, más overhead de activaciones y KV cache. Con cuantización de 4 bits, el peso se reduce a unos 0,94 GB, permitiendo ejecución en GPUs con 4 GB o menos.
 - GPU recomendadas: cualquier GPU consumer con al menos 8 GB de VRAM (por ejemplo, NVIDIA RTX 3060, RTX 4060, RTX 4090) es suficiente para inferencia en FP16. Para cuantización GGUF, incluso GPUs de 4 GB (GTX 1650, RTX 3050) pueden funcionar.
 - Compatibilidad con consumer GPU: sí, es un modelo pequeño diseñado para edge inference y entornos con recursos limitados.
-- Opciones de despliegue: compatible con transformers (pipeline de HuggingFace), vLLM, llama.cpp (mediante la versión GGUF), Ollama y TGI. El autor recomienda hiperparámetros de inferencia: temperatura 0,4-0,5, top_k 100 y contexto máximo de 262.000 tokens.
+- Opciones de despliegue: compatible con transformers (pipeline de Hugging Face), vLLM, llama.cpp (mediante la versión GGUF), Ollama y TGI. El autor recomienda hiperparámetros de inferencia: temperatura 0,4-0,5, top_k 100 y contexto máximo de 262.000 tokens.
 - Latencia y throughput: no se proporcionan datos medidos, pero al ser un modelo de 2B, la generación de una sentencia SQL (típicamente menos de 100 tokens) debería completarse en menos de un segundo en GPUs modernas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-3.5-2B-Spatial-SQL-1.1 (este) | 1,88 B | 262K | Texto a SQL espacial PostGIS | Apache 2.0 | HuggingFace, GGUF |
-| Qwen/Qwen3.5-2B (base) | 1,88 B | 262K | Modelo general multilingue | Apache 2.0 | HuggingFace, Ollama |
-| markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1 | ~4 B | 262K (estimado) | Texto a SQL espacial PostGIS | Apache 2.0 | HuggingFace |
+| Qwen-3.5-2B-Spatial-SQL-1.1 (este) | 1,88 B | 262K | Texto a SQL espacial PostGIS | Apache 2.0 | Hugging Face, GGUF |
+| Qwen/Qwen3.5-2B (base) | 1,88 B | 262K | Modelo general multilingue | Apache 2.0 | Hugging Face, Ollama |
+| markrodrigo/Qwen-3.5-4B-Spatial-SQL-1.1 | ~4 B | 262K (estimado) | Texto a SQL espacial PostGIS | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a las variantes del mismo autor y al modelo base, ya que no se dispone de información sobre otros modelos especializados en SQL espacial. La versión de 4B ofrece mayor capacidad de razonamiento pero requiere más recursos; la versión de 2B es más ligera y adecuada para despliegue en edge. El modelo base Qwen3.5-2B es más generalista pero no está optimizado para generar SQL espacial con la misma precisión.
 
@@ -80,7 +80,7 @@ La comparativa se limita a las variantes del mismo autor y al modelo base, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/markrodrigo/Qwen-3.5-2B-Spatial-SQL-1.1
+- Modelo en Hugging Face: https://huggingface.co/markrodrigo/Qwen-3.5-2B-Spatial-SQL-1.1
 - Repositorio GitHub del autor: https://github.com/mprodrigo/spatialsql
 - Versión GGUF (tercero): https://huggingface.co/mradermacher/Qwen-3.5-2B-Spatial-SQL-1.1-GGUF
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B

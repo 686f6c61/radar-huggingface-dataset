@@ -6,7 +6,7 @@
 
 El modelo base, Qwen2.5-0.5B, pertenece a la familia Qwen2.5 de Alibaba Cloud y es un transformer decoder-only de aproximadamente 0,49 mil millones de parametros. El adaptador, por tanto, hereda esa arquitectura y anade una especializacion de bajo rango sobre ella. Sin embargo, el repositorio no aporta informacion sobre el dataset de ajuste, los hiperparametros, los resultados de evaluacion ni la licencia, y la model card es la plantilla por defecto con la mayoria de los campos marcados como "[More Information Needed]".
 
-Su relevancia actual es limitada y muy acotada: se trata de un experimento de fine-tuning publicado sin validacion externa (0 descargas y 0 "likes" en el momento de la consulta, con un tamano de repositorio de 0.0 GB segun HuggingFace). Resulta util como material de referencia para estudiar un pipeline de SFT con TRL y PEFT, o como punto de partida para reproducir el ajuste, pero no como componente listo para produccion.
+Su relevancia actual es limitada y muy acotada: se trata de un experimento de fine-tuning publicado sin validacion externa (0 descargas y 0 "likes" en el momento de la consulta, con un tamano de repositorio de 0.0 GB segun Hugging Face). Resulta util como material de referencia para estudiar un pipeline de SFT con TRL y PEFT, o como punto de partida para reproducir el ajuste, pero no como componente listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia actual es limitada y muy acotada: se trata de un experimento de fi
 | Licencia | No disponible (el repositorio no declara licencia; la del modelo base Qwen2.5-0.5B es Apache 2.0 segun su model card publica, excepto el caso de los modelos de 3B) |
 | Formato de pesos | safetensors (pesos de adaptador PEFT/LoRA) |
 
-Otros datos del repositorio: libreria `peft`, version de framework declarada PEFT 0.20.0, `pipeline_tag: text-generation`, fecha de creacion 2026-09-16 y ultima actualizacion 2026-09-16 segun la API de HuggingFace.
+Otros datos del repositorio: libreria `peft`, version de framework declarada PEFT 0.20.0, `pipeline_tag: text-generation`, fecha de creacion 2026-09-16 y ultima actualizacion 2026-09-16 segun la API de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ Nota: frente a Qwen2.5-Coder-0.5B, que es un modelo completo entrenado especific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnveshGummala/qwen-0.5b-code-lora-final
+- Modelo en Hugging Face: https://huggingface.co/AnveshGummala/qwen-0.5b-code-lora-final
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Paper citado en la model card (Lacoste et al., 2019, estimacion de impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML mencionada en la model card: https://mlco2.github.io/impact

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vanshnawander/assignment2-optimizer-adamw` es un transformer decoder-only de arquitectura personalizada desarrollado por el usuario vanshnawander y publicado en HuggingFace. Se trata de un modelo pequeno, de 35.402.752 parametros totales (todos activos, no es MoE), seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto de solo 256 tokens. Su vocabulario es de 32.000 tokens con tokenizacion byte-level BPE. El nombre sugiere que forma parte de un trabajo academico ("assignment2") centrado en la comparacion de optimizadores, en este caso AdamW.
+El modelo `vanshnawander/assignment2-optimizer-adamw` es un transformer decoder-only de arquitectura personalizada desarrollado por el usuario vanshnawander y publicado en Hugging Face. Se trata de un modelo pequeno, de 35.402.752 parametros totales (todos activos, no es MoE), seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto de solo 256 tokens. Su vocabulario es de 32.000 tokens con tokenizacion byte-level BPE. El nombre sugiere que forma parte de un trabajo academico ("assignment2") centrado en la comparacion de optimizadores, en este caso AdamW.
 
 El modelo esta entrenado para continuacion de texto humano/IA y tambien incluye tokens especiales de idioma (VI=4, JA=5) y un token separador (SEP=3), lo que apunta a un uso de traduccion ademas de la continuacion. El repositorio ocupa 0,1 GB e incluye pesos en formato PyTorch (`model_state.pt`), codigo fuente de la arquitectura en Python (`load_model.py`, `decoding.py`) y ficheros JSON con la configuracion de entrenamiento y los resultados de evaluacion.
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vanshnawander/assignment2-optimizer-adamw | 35,4 M | 256 tokens | Perplexity 45,9939; BLEU 1,2051 | no disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | no disponible en esta ficha | MIT (original) | HuggingFace |
-| DistilGPT-2 | 82 M | 1024 tokens | no disponible en esta ficha | MIT (original) | HuggingFace |
+| vanshnawander/assignment2-optimizer-adamw | 35,4 M | 256 tokens | Perplexity 45,9939; BLEU 1,2051 | no disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | no disponible en esta ficha | MIT (original) | Hugging Face |
+| DistilGPT-2 | 82 M | 1024 tokens | no disponible en esta ficha | MIT (original) | Hugging Face |
 
 Los modelos de la comparativa se incluyen por proximidad de escala, pero no se dispone de resultados de benchmarks homogeneos que permitan una comparacion de rendimiento fiable. El contexto de 256 tokens de este modelo es notablemente inferior al de las alternativas de escala similar. La comparacion de rendimiento se considera no disponible.
 
@@ -96,6 +96,6 @@ Los modelos de la comparativa se incluyen por proximidad de escala, pero no se d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vanshnawander/assignment2-optimizer-adamw
+- Hugging Face: https://huggingface.co/vanshnawander/assignment2-optimizer-adamw
 
 La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a listados de hoteles y resorts en Puerto Rico, sin relacion con el modelo. No se dispone de papers, blogs, repositorios adicionales ni demos asociados.

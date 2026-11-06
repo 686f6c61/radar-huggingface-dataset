@@ -4,7 +4,7 @@
 
 El modelo `catlover1937/moody-cutie-mix-krea2` es un checkpoint de generación de imágenes basado en la arquitectura Krea 2, desarrollado por el creador catlover1937. Está orientado a producir imágenes con una estética "social media girl" (chica de redes sociales), combinando un estilo visual atractivo y estilizado con un acabado que busca ser visualmente llamativo. El autor lo describe como una mezcla enfocada en la tendencia estética de redes sociales, con una variante "uncensored" (sin censura) que elimina restricciones de contenido.
 
-El repositorio en HuggingFace tiene un tamaño de 135.5 GB, lo que sugiere un modelo de gran tamaño, probablemente con múltiples archivos de pesos en formato safetensors o similar. No se proporciona información sobre la arquitectura interna, el número de parámetros, la licencia o los idiomas soportados. A pesar de la falta de documentación técnica, el modelo ha recibido cierta atención en la comunidad (2 likes en HuggingFace y presencia en plataformas como Civitai y Tensor.Art), lo que indica que es utilizado por creadores de contenido.
+El repositorio en Hugging Face tiene un tamaño de 135.5 GB, lo que sugiere un modelo de gran tamaño, probablemente con múltiples archivos de pesos en formato safetensors o similar. No se proporciona información sobre la arquitectura interna, el número de parámetros, la licencia o los idiomas soportados. A pesar de la falta de documentación técnica, el modelo ha recibido cierta atención en la comunidad (2 likes en Hugging Face y presencia en plataformas como Civitai y Tensor.Art), lo que indica que es utilizado por creadores de contenido.
 
 La relevancia de este modelo radica en su especialización en un nicho estético concreto, lo que lo hace útil para generación de imágenes con un estilo definido, aunque su falta de transparencia técnica y de licencia clara limita su adopción en entornos profesionales o de investigación.
 
@@ -67,8 +67,8 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/catlover1937/moody-cutie-mix-krea2
-- Perfil del autor en HuggingFace: https://huggingface.co/catlover1937
+- Hugging Face: https://huggingface.co/catlover1937/moody-cutie-mix-krea2
+- Perfil del autor en Hugging Face: https://huggingface.co/catlover1937
 - Ficha en Civitai: https://civitai.com/models/2764429/moody-cutie-mix-krea2-uncensored
 - Perfil del autor en Civitai: https://civitai.com/user/catlover1937
 - Ficha en Tensor.Art: https://tensor.art/models/1019086421954152964

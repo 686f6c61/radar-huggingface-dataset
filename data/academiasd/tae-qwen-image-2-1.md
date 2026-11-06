@@ -76,9 +76,9 @@ No se han publicado resultados de FID, LPIPS, CLIP score ni de calidad de genera
 
 | Modelo | Tipo | Resolución de salida | PSNR validación | Tiempo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TAE-Qwen-Image-2.1 (AcademiaSD) | Decodificador TAESD destilado | 16× la latente | 30,1 dB | ~15 ms (1024×1024, RTX 5080) | Apache 2.0 | HuggingFace |
+| TAE-Qwen-Image-2.1 (AcademiaSD) | Decodificador TAESD destilado | 16× la latente | 30,1 dB | ~15 ms (1024×1024, RTX 5080) | Apache 2.0 | Hugging Face |
 | Latent2RGB (ComfyUI) | Proyección lineal 64→3 | 16× la latente | 20,9 dB | no disponible | no disponible | Integrado en ComfyUI |
-| VAE real de Qwen-Image 2.1 | VAE completo (encoder + decoder + alfa) | 16× la latente | referencia (no aplica) | no disponible | no disponible | HuggingFace (Qwen) |
+| VAE real de Qwen-Image 2.1 | VAE completo (encoder + decoder + alfa) | 16× la latente | referencia (no aplica) | no disponible | no disponible | Hugging Face (Qwen) |
 | TAESD genérico (madebyollin) | Decodificador TAESD | 8× la latente | no disponible para Qwen-Image 2.1 | no disponible | no disponible | GitHub |
 
 La comparativa relevante es contra Latent2RGB, la única alternativa que ComfyUI ofrece de serie para este modelo, y contra el VAE real, que es el que debe usarse para la decodificación final. Los TAESD convencionales no son compatibles con el cargador del core de ComfyUI para Qwen-Image 2.1 por su factor de 8×.
@@ -98,10 +98,10 @@ La comparativa relevante es contra Latent2RGB, la única alternativa que ComfyUI
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/AcademiaSD/TAE-Qwen-Image-2.1
+- Hugging Face del modelo: https://huggingface.co/AcademiaSD/TAE-Qwen-Image-2.1
 - Arquitectura TAESD original (madebyollin): https://github.com/madebyollin/taesd
 - Nodo Model Preview Override (ComfyUI-KJNodes): https://github.com/kijai/ComfyUI-KJNodes
-- Qwen-Image 2.1 en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Qwen-Image 2.1 en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image 2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - README de Qwen-Image 2.1 en GitHub: https://github.com/QwenLM/Qwen-Image-2.1/blob/main/README.md
 - Qwen Image 2.1 en Civitai: https://civitai.com/models/2954443/qwen-image-21

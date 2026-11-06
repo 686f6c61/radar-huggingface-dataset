@@ -76,8 +76,8 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Jeesup/svd-safety-l2_gsmrec_svdllm_w_remove40 | 6.738.415.616 | No disponible | Llama 2 Community | HuggingFace |
-| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens | Llama 2 Community | HuggingFace |
+| Jeesup/svd-safety-l2_gsmrec_svdllm_w_remove40 | 6.738.415.616 | No disponible | Llama 2 Community | Hugging Face |
+| meta-llama/Llama-2-7b-chat-hf | 6.738.415.616 | 4096 tokens | Llama 2 Community | Hugging Face |
 | Modelos comprimidos SVD-LLM equivalentes | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa con el modelo base es la más relevante: comparten arquitectura y licencia, pero el modelo comprimido elimina el 40 % de parámetros y sustituye el ajuste conversacional original por un LoRA de recuperación sobre GSM8K. No se dispone de datos de benchmarks del modelo base en la información proporcionada para cuantificar la degradación relativa.
@@ -91,11 +91,11 @@ La comparación directa con el modelo base es la más relevante: comparten arqui
 - Contexto de entrenamiento limitado a 512 tokens en la fase de recuperación, lo que puede afectar al rendimiento en secuencias largas.
 - Idiomas soportados no documentados; el modelo base está orientado principalmente al inglés.
 - Licencia Llama 2 Community: restricciones de uso comercial, obligación de incluir avisos de licencia y cumplimiento de la política de uso aceptable de Meta.
-- Sin descargas ni interacciones registradas en HuggingFace, lo que implica ausencia de validación comunitaria.
+- Sin descargas ni interacciones registradas en Hugging Face, lo que implica ausencia de validación comunitaria.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_svdllm_w_remove40
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_gsmrec_svdllm_w_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/
 - Proyecto svd_safety: no disponible como enlace público en la información proporcionada

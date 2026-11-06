@@ -30,7 +30,7 @@ Z-Image-Turbo es un modelo de difusión basado en un Transformer de flujo único
 - Seguimiento de instrucciones en lenguaje natural para guiar la composición, estilo y contenido.
 - Soporte de técnicas de control como LoRA y ControlNet (según servicios de inferencia como fal.ai).
 - Inferencia rápida: 8 pasos de muestreo, latencia sub-segundo en GPUs H800.
-- Funcionalidad de "Prompt Enhancer" que permite razonar y mejorar las indicaciones del usuario (según la página de HuggingFace).
+- Funcionalidad de "Prompt Enhancer" que permite razonar y mejorar las indicaciones del usuario (según la página de Hugging Face).
 
 ## Casos de uso
 

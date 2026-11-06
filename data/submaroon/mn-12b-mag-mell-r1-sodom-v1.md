@@ -71,6 +71,6 @@ La comparativa muestra que, frente a alternativas establecidas, este modelo care
 - Sin soporte de herramientas ni agentes: no se confirma soporte para tool calling, lo que limita su integracion en pipelines automatizados.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/SubMaroon/MN-12B-Mag-Mell-R1-SODOM-v1
+- Repositorio en Hugging Face: https://huggingface.co/SubMaroon/MN-12B-Mag-Mell-R1-SODOM-v1
 - Modelo base: https://huggingface.co/inflatebot/MN-12B-Mag-Mell-R1
 - Dataset de fine-tuning (Internet Archive): https://archive.org/details/the120daysofsodom

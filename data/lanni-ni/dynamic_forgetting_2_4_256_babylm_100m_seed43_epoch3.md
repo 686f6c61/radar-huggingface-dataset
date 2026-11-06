@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3` es un modelo de texto publicado en HuggingFace por el usuario Lanni-ni. Su nombre sugiere que aplica una técnica de "olvido dinámico" (dynamic forgetting) sobre una base de la familia BabyLM de 100M, pero no se ha publicado documentación técnica que confirme la arquitectura ni el procedimiento de entrenamiento. La model card es una plantilla automática generada por HuggingFace, sin información detallada.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3` es un modelo de texto publicado en Hugging Face por el usuario Lanni-ni. Su nombre sugiere que aplica una técnica de "olvido dinámico" (dynamic forgetting) sobre una base de la familia BabyLM de 100M, pero no se ha publicado documentación técnica que confirme la arquitectura ni el procedimiento de entrenamiento. La model card es una plantilla automática generada por Hugging Face, sin información detallada.
 
 El modelo tiene 27.449.096 parámetros reales según los pesos safetensors, lo que lo sitúa en la categoría de modelos muy pequeños, adecuados para experimentación o entornos con recursos limitados. Fue creado el 5 de septiembre de 2026 y no registra descargas ni likes en el Hub.
 
@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch3
 - Checkpoint relacionado (epoch4): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4
 - Checkpoint relacionado (inverse_epoch1): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_inverse_epoch1
 - Referencia citada en los tags (no es el modelo): https://arxiv.org/abs/1910.09700

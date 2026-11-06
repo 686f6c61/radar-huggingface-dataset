@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Daeve89/readbuddy-gemma3-philiri-lora es un repositorio publicado en HuggingFace por el usuario Daeve89 que, por su identificador, corresponde a un adaptador LoRA (el sufijo "lora" y el tamano del repositorio, 0,2 GB, son coherentes con un adaptador y no con un modelo completo) entrenado sobre un modelo de la familia Gemma 3 y asociado a un proyecto denominado ReadBuddy y a un corpus denominado PhiLiRi. El repositorio se creo el 17 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes", lo que indica que es una publicacion reciente y practicamente sin difusion.
+Daeve89/readbuddy-gemma3-philiri-lora es un repositorio publicado en Hugging Face por el usuario Daeve89 que, por su identificador, corresponde a un adaptador LoRA (el sufijo "lora" y el tamano del repositorio, 0,2 GB, son coherentes con un adaptador y no con un modelo completo) entrenado sobre un modelo de la familia Gemma 3 y asociado a un proyecto denominado ReadBuddy y a un corpus denominado PhiLiRi. El repositorio se creo el 17 de septiembre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes", lo que indica que es una publicacion reciente y practicamente sin difusion.
 
 El problema que el nombre sugiere que resuelve es el de la evaluacion o el apoyo a la lectura. PhiLiRi hace referencia al Philippine Informal Reading Inventory, un instrumento estandarizado de evaluacion de la lectura oral y silenciosa empleado en el sistema educativo filipino; ReadBuddy apunta a un asistente de lectura. Por tanto, la hipotesis de trabajo mas razonable es un asistente conversacional orientado a tareas de lectura en filipino o tagalo, pero se trata de una inferencia a partir del nombre y no de un dato documentado.
 
-La relevancia actual del modelo es, en cambio, muy limitada y debe valorarse con cautela: la model card es la plantilla autogenerada de HuggingFace y no contiene ni un solo campo cumplimentado. No se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas. Cualquier uso en produccion exigiria, como paso previo, contactar con el autor y verificar el modelo base exacto, el dataset y las condiciones de licencia.
+La relevancia actual del modelo es, en cambio, muy limitada y debe valorarse con cautela: la model card es la plantilla autogenerada de Hugging Face y no contiene ni un solo campo cumplimentado. No se documentan datos de entrenamiento, hiperparametros, evaluacion, licencia ni idiomas. Cualquier uso en produccion exigiria, como paso previo, contactar con el autor y verificar el modelo base exacto, el dataset y las condiciones de licencia.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia actual del modelo es, en cambio, muy limitada y debe valorarse con
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de HuggingFace y todos los apartados relevantes (Model Description, Training Data, Training Procedure, Training Hyperparameters) figuran como "[More Information Needed]". Los unicos datos objetivos son los metadatos del repositorio: libreria transformers, formato safetensors, 0,2 GB de tamano y una unica etiqueta tematica, arxiv:1910.09700.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto de Hugging Face y todos los apartados relevantes (Model Description, Training Data, Training Procedure, Training Hyperparameters) figuran como "[More Information Needed]". Los unicos datos objetivos son los metadatos del repositorio: libreria transformers, formato safetensors, 0,2 GB de tamano y una unica etiqueta tematica, arxiv:1910.09700.
 
 Merece una advertencia interpretativa el tag arxiv:1910.09700: ese identificador corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en el apartado "Environmental Impact" de la plantilla de model card. No es, por tanto, evidencia de que el modelo se base en dicho paper ni de que se haya realizado un calculo de emisiones; es un artefacto de la plantilla autogenerada.
 
@@ -90,7 +90,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Daeve89/readbuddy-gemma3-philiri-lora
+- Repositorio en Hugging Face: https://huggingface.co/Daeve89/readbuddy-gemma3-philiri-lora
 - Articulo citado en la plantilla de model card (estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada.

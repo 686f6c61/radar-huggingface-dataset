@@ -12,7 +12,7 @@ Es un artefacto de nicho: cero descargas, cero likes, sin licencia declarada, si
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer denso decoder-only, familia Qwen2 (etiqueta `qwen2` en HuggingFace) |
+| Arquitectura | Transformer denso decoder-only, familia Qwen2 (etiqueta `qwen2` en Hugging Face) |
 | Parámetros totales | 1.777.088.000 (~1,78 B, dato real de safetensors) |
 | Parámetros activos | No aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible en la información proporcionada; se hereda del modelo base DeepSeek-R1-Distill-Qwen-1.5B, pero no se confirma en esta ficha |
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| opd-teacher-R1Distill-CampsitePuzzle-step149 | 1,78 B | no disponible | no disponible | Público en HuggingFace | Objeto de esta ficha; profesor OPD sobre base DeepSeek-R1-Distill-Qwen-1.5B |
-| opd-teacher-Q2.5I-CampsitePuzzle-step149 | 1,5 B | no disponible | no disponible | Público en HuggingFace | Checkpoint hermano sobre Qwen2.5-1.5B-Instruct, mismo entorno y misma receta de 150 pasos GRPO |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible en esta búsqueda | MIT (según su model card) | Público en HuggingFace | Modelo base generalista de razonamiento; referencia de capacidades antes del ajuste |
-| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en esta búsqueda | Apache 2.0 (por confirmar en su model card) | Público en HuggingFace | Alternativa generalista de tamaño comparable, sin especialización en CampsitePuzzle |
+| opd-teacher-R1Distill-CampsitePuzzle-step149 | 1,78 B | no disponible | no disponible | Público en Hugging Face | Objeto de esta ficha; profesor OPD sobre base DeepSeek-R1-Distill-Qwen-1.5B |
+| opd-teacher-Q2.5I-CampsitePuzzle-step149 | 1,5 B | no disponible | no disponible | Público en Hugging Face | Checkpoint hermano sobre Qwen2.5-1.5B-Instruct, mismo entorno y misma receta de 150 pasos GRPO |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,78 B | no disponible en esta búsqueda | MIT (según su model card) | Público en Hugging Face | Modelo base generalista de razonamiento; referencia de capacidades antes del ajuste |
+| Qwen2.5-1.5B-Instruct | 1,5 B | no disponible en esta búsqueda | Apache 2.0 (por confirmar en su model card) | Público en Hugging Face | Alternativa generalista de tamaño comparable, sin especialización en CampsitePuzzle |
 
 No se dispone de comparativas de rendimiento entre estos modelos: no hay benchmarks publicados para ninguno de los dos checkpoints OPD.
 
@@ -93,9 +93,9 @@ No se dispone de comparativas de rendimiento entre estos modelos: no hay benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/opd-teacher-R1Distill-CampsitePuzzle-step149
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/opd-teacher-R1Distill-CampsitePuzzle-step149
 - Checkpoint hermano (Qwen2.5-1.5B-Instruct): https://huggingface.co/davidheineman/opd-teacher-Q2.5I-CampsitePuzzle-step149
-- Página del autor en HuggingFace: https://huggingface.co/davidheineman/models
+- Página del autor en Hugging Face: https://huggingface.co/davidheineman/models
 - Ficha del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Paper sobre dinámicas de destilación on-policy: https://arxiv.org/abs/2604.13016
 - Ficha de terceros del checkpoint hermano en Featherless: https://featherless.ai/models/davidheineman/opd-teacher-Q2.5I-CampsitePuzzle-step149

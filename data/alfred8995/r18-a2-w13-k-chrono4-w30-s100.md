@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w30-s100` es un checkpoint de aproximadamente 2.018 millones de parámetros publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El identificador del repositorio sugiere una configuración experimental concreta (los segmentos `r18`, `a2`, `w13`, `chrono4`, `w30`, `s100` apuntan a variantes de tamaño, ventana o paso de entrenamiento), y la etiqueta `sn38-nanochrono` apunta a una familia de modelos de tipo "nanochrono" presumiblemente orientada a series temporales o modelado temporal. No obstante, la información pública disponible es mínima y no se documenta arquitectura, datos de entrenamiento ni capacidades.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w30-s100` es un checkpoint de aproximadamente 2.018 millones de parámetros publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El identificador del repositorio sugiere una configuración experimental concreta (los segmentos `r18`, `a2`, `w13`, `chrono4`, `w30`, `s100` apuntan a variantes de tamaño, ventana o paso de entrenamiento), y la etiqueta `sn38-nanochrono` apunta a una familia de modelos de tipo "nanochrono" presumiblemente orientada a series temporales o modelado temporal. No obstante, la información pública disponible es mínima y no se documenta arquitectura, datos de entrenamiento ni capacidades.
 
-El repositorio está marcado como **gated** (acceso restringido): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. El tamaño del repo es de 6,3 GB, lo que es coherente con pesos en `safetensors` en precisión de 16 bits para ~2.000 millones de parámetros. No se han publicado resultados de benchmarks, descripción de arquitectura, idiomas soportados ni pipeline de uso.
+El repositorio está marcado como **gated** (acceso restringido): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. El tamaño del repo es de 6,3 GB, lo que es coherente con pesos en `safetensors` en precisión de 16 bits para ~2.000 millones de parámetros. No se han publicado resultados de benchmarks, descripción de arquitectura, idiomas soportados ni pipeline de uso.
 
 La relevancia actual del modelo es limitada desde el punto de vista de producción, dado que no hay documentación técnica asociada, cero descargas y cero likes en el momento de la consulta. Se trata, por tanto, de un artefacto experimental que debe evaluarse con cautela y que requiere validación propia antes de cualquier uso.
 
@@ -70,13 +70,13 @@ No disponible. No se conocen modelos comparables de la familia `sn38-nanochrono`
 - Riesgo de alucinación: desconocido, pero no evaluado; debe medirse empíricamente antes de cualquier despliegue.
 - Idiomas y contexto: no documentados; no asumir capacidades multilingües ni ventanas largas.
 - Licencia Apache 2.0: permite uso comercial, pero la falta de documentación traslada al usuario toda la responsabilidad sobre el comportamiento del modelo.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de pipelines.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de pipelines.
 - Cero tracción comunitaria (0 descargas, 0 likes): sin evidencia externa de calidad ni de estabilidad.
 - Fecha de creación futura en los metadatos (2026-10-29): posible inconsistencia en los datos del repositorio que conviene verificar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w30-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w30-s100
 - Paper: no disponible
 - Blog o documentación: no disponible
 - Repositorio de código: no disponible

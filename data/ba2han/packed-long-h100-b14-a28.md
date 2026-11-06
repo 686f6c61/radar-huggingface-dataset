@@ -85,7 +85,7 @@ La comparativa es orientativa: los modelos alternativos son proyectos con docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ba2han/packed-long-h100-b14-a28
+- Repositorio Hugging Face: https://huggingface.co/Ba2han/packed-long-h100-b14-a28
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ba2han/packed1 (referenciado en la model card)
 - Proyecto Weights & Biases: `exp_train`, run `packed-long-h100-b14-a28` (no se proporciona URL directa)
 - Script de verificacion: `code/verify_checkpoint.py` dentro del repositorio

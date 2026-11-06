@@ -78,7 +78,7 @@ No se aportan datos comparativos en la informacion disponible. La comparativa si
 
 | Modelo | Categoria | Parametros | Contexto/entrada | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|---|
-| PeytonT/calisthenics-pose-completion-v4 | Deteccion de puntos clave y completado corporal en navegador | no disponible (pesos: 75,9 MB) | Entrada de imagen 256×192 en el backbone de pose; entrada [1,12,9] en el modelo corporal | component-specific-apache-2.0-and-sam | Repositorio HuggingFace, 0 descargas y 0 likes a fecha de la ficha | Referencia |
+| PeytonT/calisthenics-pose-completion-v4 | Deteccion de puntos clave y completado corporal en navegador | no disponible (pesos: 75,9 MB) | Entrada de imagen 256×192 en el backbone de pose; entrada [1,12,9] en el modelo corporal | component-specific-apache-2.0-and-sam | Repositorio Hugging Face, 0 descargas y 0 likes a fecha de la ficha | Referencia |
 | RTMW / MMPose (`rtmw-dw-l-m_simcc-cocktail14_270e-256x192`) | Pose de cuerpo completo | no disponible | 256×192 | Apache-2.0 (upstream) | Publico | Es el backbone upstream modificado por este bundle; no se aportan cifras comparativas |
 | YOLOX Tiny HumanArt | Deteccion de persona | no disponible | 300 epocas de entrenamiento HumanArt | Licencia upstream YOLOX (LICENSE-YOLOX.txt) | Distribuido via RTMLib | Es el detector upstream incluido sin cambios de arquitectura, solo empaquetado float16 |
 | Meta MHR / SAM 3D Body | Geometria corporal | no disponible | no disponible | Terminos MHR y SAM (LICENSE-MHR.txt, LICENSE-SAM.txt) | Los checkpoints originales de varios gigabytes no se distribuyen aqui | Fuente de las salidas de ajuste usadas para entrenar al estudiante; no es una comparacion de rendimiento |
@@ -99,7 +99,7 @@ No se aportan datos comparativos en la informacion disponible. La comparativa si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PeytonT/calisthenics-pose-completion-v4
+- Modelo en Hugging Face: https://huggingface.co/PeytonT/calisthenics-pose-completion-v4
 - Seccion de licencias y procedencia del repositorio: https://huggingface.co/PeytonT/calisthenics-pose-completion-v4#licenses-and-provenance
 - Ficheros de licencia incluidos en el repositorio (referenciados en la model card): LICENSE-MMPOSE.txt, LICENSE-YOLOX.txt, LICENSE-MHR.txt y LICENSE-SAM.txt
 - Fichero de validacion incluido en el repositorio: validation.json (registro de comprobaciones acotadas)

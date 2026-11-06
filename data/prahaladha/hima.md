@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto o ventana | Idiomas | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Hima | No disponible; checkpoint de aproximadamente 2,4 GB | Audio de 1 a 30 s | 11 lenguas de la India e inglés | No disponible; sin benchmarks publicados en la información consultada | Apache 2.0 + Gemma Terms; licencia compuesta | HuggingFace; checkpoints de investigación por step |
-| Whisper large-v3 | 1,55B | Audio de 30 s | 99 idiomas | No disponible en esta ficha | MIT | HuggingFace y repositorio openai/whisper |
-| Qwen3-ASR-1.7B | 1,7B según el nombre del modelo | No disponible | No disponible | No disponible en esta ficha | Apache 2.0 | HuggingFace; usado como codificador de Hima |
+| Hima | No disponible; checkpoint de aproximadamente 2,4 GB | Audio de 1 a 30 s | 11 lenguas de la India e inglés | No disponible; sin benchmarks publicados en la información consultada | Apache 2.0 + Gemma Terms; licencia compuesta | Hugging Face; checkpoints de investigación por step |
+| Whisper large-v3 | 1,55B | Audio de 30 s | 99 idiomas | No disponible en esta ficha | MIT | Hugging Face y repositorio openai/whisper |
+| Qwen3-ASR-1.7B | 1,7B según el nombre del modelo | No disponible | No disponible | No disponible en esta ficha | Apache 2.0 | Hugging Face; usado como codificador de Hima |
 
 ## Limitaciones y advertencias
 - Es un checkpoint de investigación con entrenamiento en curso; el autor no reclama resultados finales ni calidad de producción.
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - No hay garantías de seguridad ni de robustez para decisiones críticas; se recomienda revisión humana y validación por lengua antes de cualquier uso real.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Prahaladha/hima
+- Hugging Face: https://huggingface.co/Prahaladha/hima
 - Repositorio de código y notas: https://github.com/Prahaladha-Reddy/hima
 - Aviso de licencia NOTICE: https://huggingface.co/Prahaladha/hima/blob/main/NOTICE
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

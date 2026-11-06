@@ -115,7 +115,7 @@ La diferencia clave frente a esas categorias, segun la propia documentacion del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/turnercore/needle-automaticity-v10
+- Hugging Face: https://huggingface.co/turnercore/needle-automaticity-v10
 - Commit de JAX Needle usado en el entrenamiento (citado en la model card): `ffb1c5144c5a16cb8ec650dbc8a6f6fd3854f8f2`
 - Hash de `model.safetensors`: `7bf8417fb2dc6ff03f33549e959e6aa4dd06898ab4a3d7d160f63bee1e4693af`
 - Hash de `config.json`: `bb90a73f354403511e0c83df8a5962e04752be831af386074080423aec34695e`

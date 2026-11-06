@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Codemaster67/Olmo_1M_tok_unichem_fineweb` es un adaptador QLoRA (Quantized Low-Rank Adaptation) entrenado sobre el modelo base `allenai/OLMo-1B-hf` para el modelado de lenguaje en el dominio de la quimica, concretamente sobre cadenas SMILES. Lo desarrolla el usuario de HuggingFace Codemaster67 y se distribuye con licencia Apache 2.0. El problema que aborda es la adaptacion de un modelo causal generico de proposito general al subdominio quimico sin necesidad de reentrenar el modelo completo, aprovechando el entrenamiento continuado (CPT) sobre un corpus especializado.
+`Codemaster67/Olmo_1M_tok_unichem_fineweb` es un adaptador QLoRA (Quantized Low-Rank Adaptation) entrenado sobre el modelo base `allenai/OLMo-1B-hf` para el modelado de lenguaje en el dominio de la quimica, concretamente sobre cadenas SMILES. Lo desarrolla el usuario de Hugging Face Codemaster67 y se distribuye con licencia Apache 2.0. El problema que aborda es la adaptacion de un modelo causal generico de proposito general al subdominio quimico sin necesidad de reentrenar el modelo completo, aprovechando el entrenamiento continuado (CPT) sobre un corpus especializado.
 
 La pieza clave es la extension del tokenizador con aproximadamente 300 tokens de quimica basados en SPE (SMILES Pair Encoding), ademas de los tokens especiales `<|start_of_smiles|>` y `<|end_of_smiles|>`. Como consecuencia, las capas `embed_tokens` y `lm_head` se redimensionaron y se guardan como copias completas entrenables mediante `modules_to_save`, mientras que el resto de pesos se almacenan como matrices LoRA (rango 64, alpha 128). El adaptador ocupa 0,4 GB en el repositorio y requiere cargar el modelo base en 4 bits (NF4) para funcionar.
 
@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Codemaster67/Olmo_1M_tok_unichem_fineweb | ~1,2B base + adaptador LoRA | 2.048 (entrenado a 512) | Adaptador QLoRA de quimica SMILES sobre OLMo-1B | Apache 2.0 | HuggingFace, adaptador PEFT |
-| allenai/OLMo-1B-hf | ~1,2B | 2.048 | Transformer causal de proposito general | Apache 2.0 | HuggingFace, pesos completos |
-| ChemBERTa (familia) | 10M-100M aprox. | 512 aprox. | Encoder tipo BERT preentrenado con SMILES, orientado a clasificacion/regresion | MIT / Apache segun variante | HuggingFace |
-| MolT5 (familia) | 60M-220M aprox. | 512 aprox. | Encoder-decoder texto-SMILES (traduccion y generacion) | Apache 2.0 | HuggingFace |
+| Codemaster67/Olmo_1M_tok_unichem_fineweb | ~1,2B base + adaptador LoRA | 2.048 (entrenado a 512) | Adaptador QLoRA de quimica SMILES sobre OLMo-1B | Apache 2.0 | Hugging Face, adaptador PEFT |
+| allenai/OLMo-1B-hf | ~1,2B | 2.048 | Transformer causal de proposito general | Apache 2.0 | Hugging Face, pesos completos |
+| ChemBERTa (familia) | 10M-100M aprox. | 512 aprox. | Encoder tipo BERT preentrenado con SMILES, orientado a clasificacion/regresion | MIT / Apache segun variante | Hugging Face |
+| MolT5 (familia) | 60M-220M aprox. | 512 aprox. | Encoder-decoder texto-SMILES (traduccion y generacion) | Apache 2.0 | Hugging Face |
 
 Los datos de parametros y contexto de ChemBERTa y MolT5 son aproximados y proceden de conocimiento general de esas familias; no se dispone de una comparacion de rendimiento directa con este adaptador, dado que no hay metricas publicadas. ChemBERTa y MolT5 no son modelos generativos causales puros, por lo que la comparacion debe interpretarse como orientativa por categoria de tarea (quimica y moleculas) y no por rendimiento medido.
 
@@ -101,6 +101,6 @@ Los datos de parametros y contexto de ChemBERTa y MolT5 son aproximados y proced
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Olmo_1M_tok_unichem_fineweb
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Olmo_1M_tok_unichem_fineweb
 - Modelo base: https://huggingface.co/allenai/OLMo-1B-hf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_smiles-fineweb-1M

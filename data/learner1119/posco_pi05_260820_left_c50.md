@@ -71,7 +71,7 @@ No disponible. No hay información pública sobre modelos comparables en el mism
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/learner1119/posco_pi05_260820_left_c50)
+- [Repositorio Hugging Face](https://huggingface.co/learner1119/posco_pi05_260820_left_c50)
 - [LeRobot (GitHub)](https://github.com/huggingface/lerobot)
 - [Noticia de colaboración POSCO DX y NC AI (POSCO Newsroom)](https://newsroom.posco.com/en/posco-dx-nc-ai-physical-ai-based-launch-of-joint-development-of-industrial-robot-foundation-model/)
 - [Artículo de Robot Today](https://robottoday.com/industry-briefing/nc-ai-posco-dx-join-hands-in-robot-ai-model-development/4840)

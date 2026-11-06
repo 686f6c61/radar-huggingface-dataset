@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g6_run2` es un modelo publicado en HuggingFace por el usuario stefanocarrera. Se trata de un artefacto con muy poca documentación: la model card es la plantilla automática de `transformers` sin rellenar, y no incluye descripción, autoría real, datos de entrenamiento ni resultados de evaluación. El identificador del repositorio sugiere un experimento de ajuste fino sobre un modelo Qwen3 de 8B (la cadena `M_Qwen3-8B`), con parámetros de muestreo o de generación codificados en el nombre (`t1.0`, `g6`, `run2`), pero esto no está confirmado en ningún campo oficial del repositorio.
+El repositorio `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g6_run2` es un modelo publicado en Hugging Face por el usuario stefanocarrera. Se trata de un artefacto con muy poca documentación: la model card es la plantilla automática de `transformers` sin rellenar, y no incluye descripción, autoría real, datos de entrenamiento ni resultados de evaluación. El identificador del repositorio sugiere un experimento de ajuste fino sobre un modelo Qwen3 de 8B (la cadena `M_Qwen3-8B`), con parámetros de muestreo o de generación codificados en el nombre (`t1.0`, `g6`, `run2`), pero esto no está confirmado en ningún campo oficial del repositorio.
 
 El tamaño del repositorio (0,2 GB) es incompatible con los pesos completos de un modelo de 8B en precisión bf16 o fp16, que ocuparían del orden de 16 GB. Esto apunta a que el repositorio contiene exclusivamente adaptadores (tipo LoRA/QLoRA, coherente con la etiqueta `unsloth`) o un subconjunto parcial de pesos, y no un modelo listo para inferencia autónoma sin el modelo base subyacente. La etiqueta `arxiv:1910.09700` que aparece en los tags corresponde a Lacoste et al. (2019), el artículo del calculador de impacto ambiental de ML, y es un residuo de la plantilla automática, no una referencia al modelo.
 
@@ -29,7 +29,7 @@ Su relevancia práctica es limitada tal como está publicado: sin pipeline decla
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura. La model card se limita a la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`, incluyendo tipo de modelo, idiomas, licencia y modelo del que deriva. No se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF, DPO o GRPO, ni los hiperparámetros utilizados.
+No hay información publicada sobre la arquitectura. La model card se limita a la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`, incluyendo tipo de modelo, idiomas, licencia y modelo del que deriva. No se documenta el número de tokens de entrenamiento, la composición del dataset, si hubo fases de RLHF, DPO o GRPO, ni los hiperparámetros utilizados.
 
 Los únicos indicios técnicos disponibles son indirectos. La etiqueta `unsloth` apunta a que el ajuste se realizó con la librería Unsloth, habitualmente empleada para fine-tuning eficiente en memoria mediante LoRA o QLoRA sobre modelos de 7B-8B en GPUs de consumo. El tamaño del repositorio (0,2 GB) es consistente con esa hipótesis. El nombre `sqlautophagycode` podría referirse al dominio del dataset de ajuste (SQL, código, y algún esquema de "autofagia" o autodestilación), mientras que `t1.0` y `g6` podrían codificar temperatura y tamaño de grupo en una rutina de generación o de optimización tipo GRPO; `run2` indicaría una segunda repetición del experimento. Ninguna de estas lecturas está validada por el autor y deben tratarse como conjeturas.
 
@@ -109,7 +109,7 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparación se l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g6_run2
+- Repositorio en Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t1.0_g6_run2
 - Referencia citada en los tags (calculador de impacto ambiental de ML, no relacionada con el modelo): https://arxiv.org/abs/1910.09700
-- Perfil del autor en HuggingFace: https://huggingface.co/stefanocarrera
+- Perfil del autor en Hugging Face: https://huggingface.co/stefanocarrera
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.

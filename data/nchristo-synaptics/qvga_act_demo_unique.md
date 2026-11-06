@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nchristo-synaptics/QVGA_ACT_demo_unique` es un checkpoint publicado en HuggingFace por el usuario nchristo-synaptics bajo el identificador QVGA_ACT_demo_unique. Se trata de un modelo de aproximadamente 62,88 millones de parametros (62.882.214, segun el recuento real de los tensores en formato safetensors), con un repositorio de 0,3 GB. La nomenclatura del identificador apunta, por convencion de nombres, a un posible modelo de tipo ACT (Action Chunking Transformer) trabajando sobre entradas de resolucion QVGA, aunque no se dispone de documentacion oficial que confirme esta interpretacion.
+El modelo `nchristo-synaptics/QVGA_ACT_demo_unique` es un checkpoint publicado en Hugging Face por el usuario nchristo-synaptics bajo el identificador QVGA_ACT_demo_unique. Se trata de un modelo de aproximadamente 62,88 millones de parametros (62.882.214, segun el recuento real de los tensores en formato safetensors), con un repositorio de 0,3 GB. La nomenclatura del identificador apunta, por convencion de nombres, a un posible modelo de tipo ACT (Action Chunking Transformer) trabajando sobre entradas de resolucion QVGA, aunque no se dispone de documentacion oficial que confirme esta interpretacion.
 
 El modelo registra un volumen muy bajo de uso en la plataforma: 18 descargas y 0 likes en el momento de la consulta, con una fecha de creacion y actualizacion muy proximas entre si (6 de octubre de 2026), lo que sugiere una publicacion de caracter experimental o de demostracion mas que un lanzamiento de produccion. No consta informacion sobre licencia, idiomas soportados, pipeline declarado ni resultados de evaluacion.
 
@@ -82,6 +82,6 @@ No disponible. No se dispone de informacion suficiente sobre la categoria, la ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nchristo-synaptics/QVGA_ACT_demo_unique
+- Hugging Face: https://huggingface.co/nchristo-synaptics/QVGA_ACT_demo_unique
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

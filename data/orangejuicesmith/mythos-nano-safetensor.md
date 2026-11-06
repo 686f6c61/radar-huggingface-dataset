@@ -91,10 +91,10 @@ Resultados en LeetCode (Python, pass-rate sobre 128 problemas):
 
 | Modelo | Params | Contexto | Razonamiento matemático (AIME25) | Código (LeetCode) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Mythos-Nano | 3B | No disponible | 91,4 | 96,1 % | MIT | HuggingFace (safetensors y GGUF) |
-| WeiboAI/VibeThinker-3B (base) | 3B | No disponible | No disponible | No disponible | No disponible en la información | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens (referencia de la familia Qwen2.5) | No comparable directamente | No comparable directamente | Apache 2.0 (referencia) | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (referencia) | No disponible en esta ficha | No disponible en esta ficha | MIT (referencia) | HuggingFace |
+| Mythos-Nano | 3B | No disponible | 91,4 | 96,1 % | MIT | Hugging Face (safetensors y GGUF) |
+| WeiboAI/VibeThinker-3B (base) | 3B | No disponible | No disponible | No disponible | No disponible en la información | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32.768 tokens (referencia de la familia Qwen2.5) | No comparable directamente | No comparable directamente | Apache 2.0 (referencia) | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | 32.768 tokens (referencia) | No disponible en esta ficha | No disponible en esta ficha | MIT (referencia) | Hugging Face |
 
 Nota: los datos del modelo base y de las alternativas no se han verificado en la información proporcionada; se indican solo como referencia de categoría.
 
@@ -112,7 +112,7 @@ Nota: los datos del modelo base y de las alternativas no se han verificado en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor
+- Hugging Face: https://huggingface.co/orangejuicesmith/Mythos-Nano-safetensor
 - Modelo base: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Referencia de uso en la model card: https://huggingface.co/squ11z1/Mythos-nano
 - Repositorio de llama.cpp (para GGUF): https://github.com/ggerganov/llama.cpp

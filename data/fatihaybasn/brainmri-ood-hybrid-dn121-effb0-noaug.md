@@ -80,11 +80,11 @@ El benchmark del propio proyecto proporciona comparaciones directas con arquitec
 
 | Modelo | Parametros | Accuracy OOD | AUC OOD | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| **hybrid_dn121_effb0_noaug (este)** | 11,7 M | 0.839 | 0.939 | MIT | HuggingFace |
-| densenet121 | 8,0 M aprox. | 0.785 | 0.984 | MIT | HuggingFace (checkpoint) |
-| efficientnet_b0 | 5,3 M aprox. | 0.693 | 0.903 | MIT | HuggingFace (checkpoint) |
-| resnet34_noaug | 21,3 M aprox. | 0.794 | 0.954 | MIT | HuggingFace (checkpoint) |
-| hybrid_swinT_effb0_noaug | no disponible | 0.745 | 0.956 | MIT | HuggingFace (checkpoint) |
+| **hybrid_dn121_effb0_noaug (este)** | 11,7 M | 0.839 | 0.939 | MIT | Hugging Face |
+| densenet121 | 8,0 M aprox. | 0.785 | 0.984 | MIT | Hugging Face (checkpoint) |
+| efficientnet_b0 | 5,3 M aprox. | 0.693 | 0.903 | MIT | Hugging Face (checkpoint) |
+| resnet34_noaug | 21,3 M aprox. | 0.794 | 0.954 | MIT | Hugging Face (checkpoint) |
+| hybrid_swinT_effb0_noaug | no disponible | 0.745 | 0.956 | MIT | Hugging Face (checkpoint) |
 
 La comparativa muestra que el híbrido DenseNet121 + EfficientNet-B0 supera a sus componentes individuales en accuracy, aunque con un AUC ligeramente inferior al de DenseNet121 puro. La variante con aumento de datos del mismo híbrido alcanza mejores resultados (0.861 accuracy), lo que sugiere que la ausencia de aumento limita el potencial del modelo.
 
@@ -100,7 +100,7 @@ La comparativa muestra que el híbrido DenseNet121 + EfficientNet-B0 supera a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fatihaybasn/brainmri-ood-hybrid-dn121-effb0-noaug
+- Modelo en Hugging Face: https://huggingface.co/Fatihaybasn/brainmri-ood-hybrid-dn121-effb0-noaug
 - Repositorio del proyecto (notebooks, informes, métricas): https://github.com/fatihaybsn/BrainMRI-OOD-10Models
 - Commit de referencia: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/commit/a9920408189230b886773a64d113eb35bcba1971
 - Archivo de citación: https://github.com/fatihaybsn/BrainMRI-OOD-10Models/blob/main/CITATION.cff

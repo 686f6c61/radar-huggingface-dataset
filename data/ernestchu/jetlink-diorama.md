@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Tarea | Arquitectura | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Jetlink Diorama (este repo) | Segmentación panóptica + profundidad 3D | Mask2Former Swin-L + DD3D VoVNet-99 | YUV 6×128×256 | Mixta (MIT + términos Mapillary Vistas) | ONNX y CoreML, 2,1 GB |
-| facebook/mask2former-swin-large-mapillary-vistas-panoptic | Segmentación panóptica | Mask2Former Swin-L | Imagen RGB estándar | Términos de Mapillary Vistas | Pesos originales en HuggingFace |
+| facebook/mask2former-swin-large-mapillary-vistas-panoptic | Segmentación panóptica | Mask2Former Swin-L | Imagen RGB estándar | Términos de Mapillary Vistas | Pesos originales en Hugging Face |
 | TRI-ML/dd3d | Detección 3D y profundidad | DD3D VoVNet-99 | Imagen RGB KITTI | MIT | Repositorio GitHub con pesos |
 | Segment Anything (SAM) | Segmentación promptable | ViT | Imagen RGB | Apache 2.0 (versión original) | Pesos públicos |
 
@@ -78,11 +78,11 @@ La comparativa es limitada: Jetlink Diorama no aporta arquitecturas nuevas, sino
 - No hay datos publicados de precisión, latencia ni sesgos; cualquier evaluación de calidad debe hacerse por cuenta propia.
 - El repo tiene 20 descargas y 0 likes, lo que sugiere poca validación comunitaria.
 - El autor no documenta versiones ni changelog; los ficheros podrían cambiar sin aviso.
-- La fecha de creación indicada (2026-10-31) es futura respecto a la información habitual de HuggingFace; conviene verificar la integridad del repo antes de confiar en él.
+- La fecha de creación indicada (2026-10-31) es futura respecto a la información habitual de Hugging Face; conviene verificar la integridad del repo antes de confiar en él.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ernestchu/jetlink-diorama
+- Repositorio Hugging Face: https://huggingface.co/ernestchu/jetlink-diorama
 - Repositorio Jetlink: https://github.com/zoompilot/jetlink
 - Documentación de Diorama en Jetlink: `docs/diorama.md` del repositorio Jetlink
 - Modelo de segmentación original: https://huggingface.co/facebook/mask2former-swin-large-mapillary-vistas-panoptic

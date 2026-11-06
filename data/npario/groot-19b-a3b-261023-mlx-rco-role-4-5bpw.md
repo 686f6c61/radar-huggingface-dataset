@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks de tareas (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Groot-19B-A3B-261023 (BF16) | 19B totales / ~3B activos | 262K | safetensors (MLX) | apache-2.0 | HuggingFace |
+| Groot-19B-A3B-261023 (BF16) | 19B totales / ~3B activos | 262K | safetensors (MLX) | apache-2.0 | Hugging Face |
 | RTN 4-bit del mismo base | 19B totales / ~3B activos | 262K | MLX | apache-2.0 | Referencia del model card, sin repo publico indicado |
-| Este modelo (RCO 4.5bpw) | 19B totales / ~3B activos | 262K | MLX | apache-2.0 | HuggingFace (0 descargas) |
+| Este modelo (RCO 4.5bpw) | 19B totales / ~3B activos | 262K | MLX | apache-2.0 | Hugging Face (0 descargas) |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
 
@@ -100,6 +100,6 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/npario/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw
+- Modelo en Hugging Face: https://huggingface.co/npario/Groot-19B-A3B-261023-MLX-rco-role-4.5bpw
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
 - Herramienta de cuantizacion rco-mlx: https://github.com/hermitdave/rco-mlx

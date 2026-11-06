@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/harodgers/paper_012333968_zero_shot_transfer
+- Repositorio en Hugging Face: https://huggingface.co/harodgers/paper_012333968_zero_shot_transfer
 - Articulo relacionado (ZeroG, arXiv): https://arxiv.org/abs/2402.11235
 - Implementacion oficial de ZeroG (GitHub): https://github.com/NineAbyss/ZeroG
 - Wikipedia - Zero-shot learning: https://en.wikipedia.org/wiki/Zero-shot_learning

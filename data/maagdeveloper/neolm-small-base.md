@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NeoLM-Small-Base | 61,36 M | 1.024 | Inglés | No disponible | HuggingFace, requiere `trust_remote_code` |
-| GPT-2 small | 124 M | 1.024 | Inglés | MIT (pesos publicados por OpenAI) | HuggingFace, integrado en Transformers |
-| Pythia-70M | 70 M | 2.048 | Inglés | Apache 2.0 | HuggingFace, EleutherAI |
-| TinyLlama-1.1B | 1,1 B | 2.048 | Inglés | Apache 2.0 | HuggingFace |
+| NeoLM-Small-Base | 61,36 M | 1.024 | Inglés | No disponible | Hugging Face, requiere `trust_remote_code` |
+| GPT-2 small | 124 M | 1.024 | Inglés | MIT (pesos publicados por OpenAI) | Hugging Face, integrado en Transformers |
+| Pythia-70M | 70 M | 2.048 | Inglés | Apache 2.0 | Hugging Face, EleutherAI |
+| TinyLlama-1.1B | 1,1 B | 2.048 | Inglés | Apache 2.0 | Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no hay benchmarks publicados de NeoLM-Small-Base que permitan contrastar rendimiento. Frente a GPT-2 small y Pythia-70M, NeoLM ofrece un contexto menor (1.024 frente a 2.048 de Pythia) y una licencia sin declarar, lo que supone una desventaja clara para uso comercial frente a alternativas con licencias permisivas. Su interés es fundamentalmente académico y de reproducibilidad.
 
@@ -96,7 +96,7 @@ La comparación se limita a parámetros, contexto y licencia, ya que no hay benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaagDeveloper/NeoLM-Small-Base
+- Modelo en Hugging Face: https://huggingface.co/MaagDeveloper/NeoLM-Small-Base
 - Dataset NeoCorpus: https://huggingface.co/datasets/MaagDeveloper/NeoCorpus
 - Dataset Karpathy ClimbMix Shuffle (origen de los datos): https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Dataset NVIDIA Nemotron-ClimbMix (origen subyacente): https://huggingface.co/datasets/nvidia/Nemotron-ClimbMix

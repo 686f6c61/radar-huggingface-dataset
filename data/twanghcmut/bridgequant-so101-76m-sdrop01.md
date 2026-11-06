@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/bridgequant-so101-76m-sdrop01
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/bridgequant-so101-76m-sdrop01
 - Modelo teacher: https://huggingface.co/twanghcmut/bridgequant-so101-76m
 - Repositorio de código: https://github.com/VLAOpt/bridgequant-async
 - Guía de despliegue: `docs/so101_deploy.md` dentro del repositorio anterior

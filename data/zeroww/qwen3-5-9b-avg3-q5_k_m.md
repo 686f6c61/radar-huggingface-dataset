@@ -107,7 +107,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZeroWw/Qwen3.5-9B-avg3-Q5_K_M
+- Modelo en Hugging Face: https://huggingface.co/ZeroWw/Qwen3.5-9B-avg3-Q5_K_M
 - Modelo base declarado (fuente 1): https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo base declarado (fuentes 2 y 3): https://huggingface.co/unsloth/Qwen3.5-9B
 - Upstream de la fuente 2: https://huggingface.co/Jackrong/Qwen3.5-9B-DeepSeek-V4-Flash

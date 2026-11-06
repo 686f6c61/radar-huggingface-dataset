@@ -93,12 +93,12 @@ No se dispone de datos suficientes en la información proporcionada para compara
 - Sesgos por idioma: al ser un modelo multilingüe entrenado sobre un inventario compartido, el rendimiento puede variar entre lenguas y variedades; no se publica desglose por idioma.
 - La model card no documenta la composición del dataset de entrenamiento, por lo que no es posible evaluar sesgos demográficos, de acento o de dominio.
 - Fecha de creación del repositorio indicada como 2026-10-09 y 0 descargas y 0 likes en el momento de la consulta.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos eran contenido no relacionado), por lo que toda la información de esta ficha procede de la model card de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos eran contenido no relacionado), por lo que toda la información de esta ficha procede de la model card de Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TigreGotico/allosaurus-onnx
-- Modelo base en HuggingFace: https://huggingface.co/xinjli/allosaurus
+- Repositorio en Hugging Face: https://huggingface.co/TigreGotico/allosaurus-onnx
+- Modelo base en Hugging Face: https://huggingface.co/xinjli/allosaurus
 - Proyecto original Allosaurus en GitHub: https://github.com/xinjli/allosaurus
 - Release `uni2005` usado en la conversión: https://github.com/xinjli/allosaurus/releases/download/v1.0/latest.tar.gz
 - Referencia del paper: Li, Xinjian et al., "Universal Phone Recognition with a Multilingual Allophone System", ICASSP 2020. https://doi.org/10.1109/ICASSP40776.2020.9054462

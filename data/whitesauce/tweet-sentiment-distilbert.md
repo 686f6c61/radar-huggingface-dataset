@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `whitesauce/tweet-sentiment-distilbert` es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario `whitesauce`. Por su identificador y su arquitectura, se trata de un ajuste fino de DistilBERT, la variante destilada de BERT presentada en el paper "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter" (Sanh et al., 2019), orientado a la clasificación de sentimiento en tuits. El repositorio contiene 66.955.779 parámetros en formato safetensors, lo que coincide con la arquitectura estándar de DistilBERT más una cabeza de clasificación.
+El modelo `whitesauce/tweet-sentiment-distilbert` es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario `whitesauce`. Por su identificador y su arquitectura, se trata de un ajuste fino de DistilBERT, la variante destilada de BERT presentada en el paper "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter" (Sanh et al., 2019), orientado a la clasificación de sentimiento en tuits. El repositorio contiene 66.955.779 parámetros en formato safetensors, lo que coincide con la arquitectura estándar de DistilBERT más una cabeza de clasificación.
 
 El modelo resuelve una tarea acotada: asignar una etiqueta de sentimiento a un texto corto, presumiblemente en el rango de positivo, negativo y neutro, aunque el número exacto de clases no está documentado en la información disponible. Su relevancia es práctica más que investigadora: los modelos destilados de la familia BERT siguen siendo la opción por defecto cuando se necesita clasificación de texto con latencia baja, huella de memoria reducida y despliegue sencillo en CPU, algo habitual en pipelines de monitorización de redes sociales o moderación de contenido.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: no se documentan datos de entrenamiento, hiperparámetros, métricas de evaluación, licencia ni idiomas soportados. Cualquier evaluación rigurosa del modelo requiere inspeccionarlo directamente o contactar con el autor.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: no se documentan datos de entrenamiento, hiperparámetros, métricas de evaluación, licencia ni idiomas soportados. Cualquier evaluación rigurosa del modelo requiere inspeccionarlo directamente o contactar con el autor.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No hay información disponible sobre el proceso de ajuste fino: ni el dataset ut
 - Clasificación de sentimiento de textos cortos, presumiblemente tuits, en una o varias etiquetas discretas (el conjunto exacto de clases no está documentado).
 - Extracción de embeddings contextuales de frases mediante el backbone DistilBERT, útil para similitud semántica o como features en un clasificador posterior.
 - Inferencia rápida en CPU: al tener 6 capas y 66,9 M de parámetros, el coste por petición es bajo en comparación con BERT-base.
-- Compatibilidad con `text-embeddings-inference` y endpoints de HuggingFace, según los tags del repositorio.
+- Compatibilidad con `text-embeddings-inference` y endpoints de Hugging Face, según los tags del repositorio.
 - No soporta tool calling, function calling, razonamiento multi-paso, generación de texto, visión ni audio: es un modelo exclusivamente discriminativo.
 - Capacidades multilingües: no disponible; el identificador sugiere entrenamiento sobre tuits en inglés, pero no está confirmado.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whitesauce/tweet-sentiment-distilbert | 66,9 M | hasta 512 tokens (límite arquitectónico) | Clasificación de sentimiento en tuits | no disponible | HuggingFace |
-| distilbert-base-uncased-finetuned-sst-2-english | 67 M | hasta 512 tokens | Clasificación de sentimiento binaria | Apache 2.0 | HuggingFace, ampliamente usado |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | hasta 512 tokens | Clasificación de sentimiento en tuits (3 clases) | no disponible en algunos checkpoints de la familia | HuggingFace |
-| finiteautomata/bertweet-base-sentiment-analysis | ~135 M | hasta 128 tokens | Clasificación de sentimiento en tuits | MIT | HuggingFace |
+| whitesauce/tweet-sentiment-distilbert | 66,9 M | hasta 512 tokens (límite arquitectónico) | Clasificación de sentimiento en tuits | no disponible | Hugging Face |
+| distilbert-base-uncased-finetuned-sst-2-english | 67 M | hasta 512 tokens | Clasificación de sentimiento binaria | Apache 2.0 | Hugging Face, ampliamente usado |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | ~125 M | hasta 512 tokens | Clasificación de sentimiento en tuits (3 clases) | no disponible en algunos checkpoints de la familia | Hugging Face |
+| finiteautomata/bertweet-base-sentiment-analysis | ~135 M | hasta 128 tokens | Clasificación de sentimiento en tuits | MIT | Hugging Face |
 
 La comparación se basa en la arquitectura y el dominio declarados por el identificador del modelo; no hay datos de rendimiento de este checkpoint que permitan una comparación cuantitativa con las alternativas. Los modelos de la familia RoBERTa y BERTweet han sido entrenados específicamente sobre corpus de tuits y suelen superar a DistilBERT en este dominio a costa de mayor tamaño y latencia.
 
@@ -85,7 +85,7 @@ La comparación se basa en la arquitectura y el dominio declarados por el identi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/whitesauce/tweet-sentiment-distilbert
+- Repositorio en Hugging Face: https://huggingface.co/whitesauce/tweet-sentiment-distilbert
 - Paper de DistilBERT (referenciado en los tags del repo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla de la model card: https://mlco2.github.io/impact
 - Paper de Lacoste et al. (2019) sobre estimación de emisiones: https://arxiv.org/abs/1910.09700

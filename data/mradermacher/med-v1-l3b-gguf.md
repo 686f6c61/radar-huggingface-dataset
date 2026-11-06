@@ -25,7 +25,7 @@ La relevancia de este repositorio es practica: ofrece doce variantes cuantizadas
 
 No hay informacion publicada en la model card sobre la arquitectura interna del modelo base nlm-dir/Med-V1-L3B, el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. El unico dato estructural disponible es el recuento de parametros (3.212.749.888) y el hecho de que el repositorio se distribuye en formato GGUF, lo que implica una arquitectura compatible con llama.cpp.
 
-La model card del cuantizador incluye metadatos de la herramienta de conversion (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf), lo que indica que la conversion se hizo a partir de pesos en formato HuggingFace. Se trata de cuantizaciones estaticas: el autor senala explicitamente que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de publicar y que no hay planes confirmados de generarlas. La licencia llama3.2 y la nomenclatura "L3B" apuntan a una base Llama 3.2 3B, pero es una inferencia no verificada.
+La model card del cuantizador incluye metadatos de la herramienta de conversion (quantize_version: 2, output_tensor_quantised: 1, convert_type: hf), lo que indica que la conversion se hizo a partir de pesos en formato Hugging Face. Se trata de cuantizaciones estaticas: el autor senala explicitamente que las cuantizaciones ponderadas o con imatrix no estaban disponibles en el momento de publicar y que no hay planes confirmados de generarlas. La licencia llama3.2 y la nomenclatura "L3B" apuntan a una base Llama 3.2 3B, pero es una inferencia no verificada.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - f16: 6,5 GB (16 bits por peso, descrito por el autor como "overkill")
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM puede ejecutar las cuantizaciones Q4 y Q5; para f16 se recomienda un minimo de 8 GB. El modelo cabe holgadamente en RTX 3060, RTX 4060, RTX 4090, A100 o H100, aunque en estas dos ultimas estaria infrautilizado.
 - Cabe en GPU de consumo: si, en todas las cuantizaciones salvo f16, que requiere al menos 8 GB. Es perfectamente viable en CPU con llama.cpp si se dispone de 4-8 GB de RAM.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base en formato HuggingFace, vLLM o TGI, aunque no se aportan configuraciones verificadas.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y cualquier runtime compatible con GGUF. Para el modelo base en formato Hugging Face, vLLM o TGI, aunque no se aportan configuraciones verificadas.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de Med-V1-L3B que permitan establecer una c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Med-V1-L3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Med-V1-L3B-GGUF
 - Modelo base: https://huggingface.co/nlm-dir/Med-V1-L3B
 - Pagina de resumen de cuantizaciones y descargas: https://hf.tst.eu/model#Med-V1-L3B-GGUF
 - Peticiones de cuantizacion del autor: https://huggingface.co/mradermacher/model_requests

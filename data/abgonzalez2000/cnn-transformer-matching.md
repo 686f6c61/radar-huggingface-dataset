@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cnn Transformer for Matching es un repositorio de investigacion publicado por el usuario abgonzalez2000 en HuggingFace, cuyo objetivo es ofrecer una implementacion funcional y reproducible de una arquitectura hibrida CNN-Transformer aplicada a tareas de emparejamiento (matching). El modelo se distribuye con una configuracion etiquetada como "huge" por el propio autor, que combina atencion lineal, fusion con puertas (gated fusion), activacion swish y normalizacion por lotes (batchnorm).
+Cnn Transformer for Matching es un repositorio de investigacion publicado por el usuario abgonzalez2000 en Hugging Face, cuyo objetivo es ofrecer una implementacion funcional y reproducible de una arquitectura hibrida CNN-Transformer aplicada a tareas de emparejamiento (matching). El modelo se distribuye con una configuracion etiquetada como "huge" por el propio autor, que combina atencion lineal, fusion con puertas (gated fusion), activacion swish y normalizacion por lotes (batchnorm).
 
 La relevancia de este repositorio es metodologica mas que de rendimiento: el autor declara explicitamente que no reclama ninguna puntuacion de benchmark, que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y que no ha sido entrenado ni auditado. Con 49.600 parametros totales en `model.safetensors`, se trata de un artefacto de escalado muy reducido, pensado como punto de partida experimental y no como modelo listo para produccion.
 
@@ -80,6 +80,6 @@ No disponible. No se han proporcionado resultados de benchmarks ni caracteristic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abgonzalez2000/cnn-transformer-matching
+- Modelo en Hugging Face: https://huggingface.co/abgonzalez2000/cnn-transformer-matching
 - Ficheros incluidos en el repositorio: `pipeline.py` (artefacto principal), `README.md`, `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion)
 - No se han encontrado papers, blogs, repositorios de codigo adicionales ni demos en los resultados de busqueda web proporcionados, que no guardan relacion con este modelo.

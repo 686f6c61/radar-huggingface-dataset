@@ -114,7 +114,7 @@ Frente al modelo base, el adaptador solo merece la pena si el dominio se parece 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-toolcall
+- Modelo en Hugging Face: https://huggingface.co/harshbhx/ratchet-nemotron-nano-4b-toolcall
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Coleccion Ratchet: https://huggingface.co/collections/harshbhx/ratchet
 - Repositorio del proyecto Ratchet: https://github.com/harshbhx/ratchet

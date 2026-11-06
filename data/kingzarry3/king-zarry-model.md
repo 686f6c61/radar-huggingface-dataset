@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KINGZARRY3/king-zarry-model es un repositorio alojado en HuggingFace bajo el identificador de autor KINGZARRY3. La informacion publica disponible se limita a los metadatos del repositorio: no se especifica pipeline de inferencia, licencia, idiomas soportados, arquitectura, tamano ni formato de pesos. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (2026-10-12T22:36:20.000Z), lo que indica que no ha habido actualizaciones posteriores a la publicacion inicial.
+KINGZARRY3/king-zarry-model es un repositorio alojado en Hugging Face bajo el identificador de autor KINGZARRY3. La informacion publica disponible se limita a los metadatos del repositorio: no se especifica pipeline de inferencia, licencia, idiomas soportados, arquitectura, tamano ni formato de pesos. El repositorio registra 0 descargas y 1 like en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (2026-10-12T22:36:20.000Z), lo que indica que no ha habido actualizaciones posteriores a la publicacion inicial.
 
 Con estos datos no es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece (texto, vision, audio, multimodal) ni si es un modelo entrenado desde cero, un ajuste fino de otro modelo o un repositorio de prueba. Tampoco existe documentacion asociada (model card, paper, blog o repositorio de codigo) que haya podido localizarse mediante busqueda web: los resultados devueltos por el buscador no guardan relacion con el modelo y consisten en paginas de inicio de sesion de redes sociales.
 
@@ -39,7 +39,7 @@ Datos adicionales del repositorio:
 
 No hay informacion disponible sobre la arquitectura del modelo (transformer, MoE, SSM, hibrida u otra), el numero de parametros, la longitud de contexto soportada ni el tipo de atencion empleado. No se ha publicado ninguna descripcion tecnica en el repositorio ni en fuentes externas localizadas mediante busqueda web.
 
-Tampoco existe informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de preentrenamiento y ajuste (SFT, RLHF, DPO u otros), ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o cuantizacion nativa. El unico indicio estructural es la etiqueta `region:us`, que en HuggingFace es una etiqueta de region de almacenamiento y no aporta informacion sobre el modelo.
+Tampoco existe informacion sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, fases de preentrenamiento y ajuste (SFT, RLHF, DPO u otros), ni sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o cuantizacion nativa. El unico indicio estructural es la etiqueta `region:us`, que en Hugging Face es una etiqueta de region de almacenamiento y no aporta informacion sobre el modelo.
 
 ## Capacidades
 
@@ -98,7 +98,7 @@ No disponible. Al no conocerse el tipo de modelo, su tamano ni su tarea objetivo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KINGZARRY3/king-zarry-model
+- Repositorio en Hugging Face: https://huggingface.co/KINGZARRY3/king-zarry-model
 - Paper, blog o repositorio de codigo: no disponible
 - Demos o endpoints publicos: no disponible
 - Resultados de la busqueda web: no se localizaron fuentes relacionadas con el modelo; los unicos resultados devueltos fueron paginas de inicio de sesion de redes sociales, sin relacion con el repositorio.

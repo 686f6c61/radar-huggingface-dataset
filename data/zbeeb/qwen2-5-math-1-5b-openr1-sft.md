@@ -45,7 +45,7 @@ El elemento metodológico diferencial es la trazabilidad: el repositorio incluye
 
 - Tutoría matemática paso a paso: el modelo genera desarrollos completos hasta la respuesta final, por lo que puede integrarse en una aplicación educativa que muestre el razonamiento intermedio y no solo el resultado, con el añadido de que cabe en una GPU de consumo.
 - Generación de datos sintéticos de razonamiento: al estar entrenado sobre trazas verificadas de OpenR1-Math-220k, sirve como generador barato de cadenas de razonamiento para destilar a otros modelos o para alimentar una fase de RL (el propio autor continúa el estudio con GRPO sobre `zbeeb/Staleness-GRPO-DAPO-Math-17k`).
-- Reproducción de experimentos SFT → RL: los ficheros `training-config.json`, `provenance.json` y `data-selection.json` permiten replicar exactamente la selección de datos y la receta, algo poco habitual en checkpoints publicados en HuggingFace.
+- Reproducción de experimentos SFT → RL: los ficheros `training-config.json`, `provenance.json` y `data-selection.json` permiten replicar exactamente la selección de datos y la receta, algo poco habitual en checkpoints publicados en Hugging Face.
 - Estudio a nivel de token: el checkpoint está pensado para analizar cómo cambian las distribuciones de tokens y las métricas de sonda entre la etapa SFT y la etapa GRPO posterior.
 - Verificación o puntuación de soluciones: al haberse validado con evaluación teacher-forced y de generación libre, el modelo puede usarse como scorer de trazas candidatas en un pipeline de evaluación tipo MATH o GSM8K.
 - Componente de razonamiento en un pipeline de RAG matemático: se puede recuperar contexto teórico (definiciones, teoremas) y pasar los fragmentos como parte del prompt al modelo, que produce el desarrollo paso a paso; requiere controlar que el contexto recuperado no desplace los 4.096 tokens útiles.
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zbeeb/Qwen2.5-Math-1.5B-OpenR1-SFT | 1,78B (dato safetensors) | 4.096 tokens de entrenamiento | Apache-2.0 | SFT matemático, artefacto de estudio SFT → GRPO | HuggingFace, transformers/safetensors |
-| Qwen/Qwen2.5-Math-1.5B | 1,5B nominal | 4K según documentación de Qwen | Apache-2.0 | Modelo base matemático | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B nominal | 32.768 tokens según documentación de Qwen | Apache-2.0 | Instrucción general, no especializado en matemáticas | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B nominal | No disponible | MIT | Destilado de razonamiento con trazas largas | HuggingFace |
+| zbeeb/Qwen2.5-Math-1.5B-OpenR1-SFT | 1,78B (dato safetensors) | 4.096 tokens de entrenamiento | Apache-2.0 | SFT matemático, artefacto de estudio SFT → GRPO | Hugging Face, transformers/safetensors |
+| Qwen/Qwen2.5-Math-1.5B | 1,5B nominal | 4K según documentación de Qwen | Apache-2.0 | Modelo base matemático | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B nominal | 32.768 tokens según documentación de Qwen | Apache-2.0 | Instrucción general, no especializado en matemáticas | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B nominal | No disponible | MIT | Destilado de razonamiento con trazas largas | Hugging Face |
 
 Los recuentos de parámetros de los modelos comparables se expresan en su valor nominal de familia (1,5B), ya que no se dispone del recuento exacto por safetensors en la información proporcionada. No se dispone de resultados de benchmarks de ninguno de los cuatro modelos en la información disponible, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ Los recuentos de parámetros de los modelos comparables se expresan en su valor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-OpenR1-SFT
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-OpenR1-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Dataset de SFT: https://huggingface.co/datasets/open-r1/OpenR1-Math-220k
 - Dataset de la fase RL posterior: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k

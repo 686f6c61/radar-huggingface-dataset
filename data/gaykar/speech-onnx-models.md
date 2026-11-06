@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Gaykar/Speech-onnx-models es un repositorio publicado en HuggingFace por el usuario Gaykar cuya model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia Apache 2.0. El identificador del repositorio sugiere que se trata de uno o varios modelos orientados al procesamiento de voz (reconocimiento o sintesis) exportados al formato ONNX, pero esta interpretacion no esta confirmada por ninguna fuente primaria.
+Gaykar/Speech-onnx-models es un repositorio publicado en Hugging Face por el usuario Gaykar cuya model card no contiene ninguna descripcion tecnica: el unico contenido del README es la declaracion de licencia Apache 2.0. El identificador del repositorio sugiere que se trata de uno o varios modelos orientados al procesamiento de voz (reconocimiento o sintesis) exportados al formato ONNX, pero esta interpretacion no esta confirmada por ninguna fuente primaria.
 
-El repositorio registra cero descargas y cero "likes" en el momento de la consulta, fue creado y actualizado en la misma fecha (15 de septiembre de 2026) y no declara pipeline, idiomas ni arquitectura en los metadatos de HuggingFace. Tampoco se ha localizado documentacion asociada, paper, blog tecnico ni repositorio de codigo complementario.
+El repositorio registra cero descargas y cero "likes" en el momento de la consulta, fue creado y actualizado en la misma fecha (15 de septiembre de 2026) y no declara pipeline, idiomas ni arquitectura en los metadatos de Hugging Face. Tampoco se ha localizado documentacion asociada, paper, blog tecnico ni repositorio de codigo complementario.
 
 Por todo ello, esta ficha no puede certificar parametros, contexto, datos de entrenamiento ni rendimiento. Se ha redactado como inventario de lo verificable y como lista explicita de los datos que faltan, de modo que un desarrollador pueda decidir si merece la pena contactar con el autor o inspeccionar directamente los artefactos del repositorio antes de evaluarlo.
 
@@ -23,7 +23,7 @@ Por todo ello, esta ficha no puede certificar parametros, contexto, datos de ent
 | Autor | Gaykar |
 | Fecha de creacion | 15 de septiembre de 2026 |
 | Ultima actualizacion | 15 de septiembre de 2026 |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas | 0 |
 | Likes | 0 |
 | Region declarada | us |
@@ -41,7 +41,7 @@ El unico dato estructural aprovechable es el nombre del repositorio, que apunta 
 - Se desconoce si el modelo realiza generacion de texto, razonamiento, codigo, matematicas o vision.
 - Se desconoce si soporta tool calling o function calling.
 - Se desconoce si esta preparado para flujos de agentes o razonamiento multi-paso.
-- Se desconoce su cobertura multilingue; HuggingFace no declara idiomas.
+- Se desconoce su cobertura multilingue; Hugging Face no declara idiomas.
 - Se desconoce si incorpora modo de razonamiento explicito ("thinking mode"), capacidades de audio o de vision.
 - Si se confirma la hipotesis derivada del nombre del repositorio, las capacidades previsibles serian de tratamiento de voz (reconocimiento automatico del habla o sintesis), ejecutables mediante ONNX Runtime; esto es una conjetura, no un dato verificado.
 
@@ -82,14 +82,14 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 - Riesgo de que el repositorio este vacio, sea un experimento abandonado o contenga unicamente ficheros auxiliares; creado y actualizado el mismo dia, sin actividad posterior registrada.
 - Sesgos conocidos: no disponible. No se puede evaluar el sesgo sin conocer los datos de entrenamiento.
 - Riesgo de alucinacion: no evaluable; si el modelo fuese de ASR, el equivalente seria la sustitucion o invencion de palabras, especialmente con audio ruidoso o acentos no representados en el entrenamiento.
-- Limitaciones de contexto o idioma: no disponibles. HuggingFace no declara idiomas soportados, lo que impide confirmar su utilidad para castellano.
+- Limitaciones de contexto o idioma: no disponibles. Hugging Face no declara idiomas soportados, lo que impide confirmar su utilidad para castellano.
 - Restricciones de licencia: la licencia declarada es Apache 2.0, permisiva y compatible con uso comercial. Conviene verificar que los ficheros del repositorio incluyan efectivamente el texto de licencia y que el autor tenga derecho a relicenciar los pesos, algo que no puede comprobarse con la informacion disponible.
 - Caveat para produccion: no se recomienda integrar estos artefactos en un sistema en produccion sin antes descargar el repositorio, inspeccionar los ficheros, validar los operadores ONNX soportados por el runtime objetivo y medir precision y latencia sobre datos propios.
 - Los resultados de la busqueda web realizada no guardan relacion con el modelo: corresponden a la tienda de electronica eslovaca Planeo y no aportan informacion tecnica.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gaykar/Speech-onnx-models
+- Hugging Face: https://huggingface.co/Gaykar/Speech-onnx-models
 - Repositorio de codigo asociado: no disponible
 - Paper o informe tecnico: no disponible
 - Blog o anuncio del autor: no disponible

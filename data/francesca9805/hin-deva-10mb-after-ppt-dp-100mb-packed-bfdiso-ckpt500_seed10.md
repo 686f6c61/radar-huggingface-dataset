@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros totales, entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del checkpoint sugiere trabajo sobre hindi en escritura devanagari ("hin-deva"), con un conjunto de datos empaquetado de 100 MB y un checkpoint en el paso 500 de entrenamiento.
+El modelo `hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino (SFT) del checkpoint `francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 39.087.104 parámetros totales, entrenado con la librería TRL (versión 0.23.0) sobre Transformers 4.56.2 y PyTorch 2.11.0. El nombre del checkpoint sugiere trabajo sobre hindi en escritura devanagari ("hin-deva"), con un conjunto de datos empaquetado de 100 MB y un checkpoint en el paso 500 de entrenamiento.
 
 El modelo es relevante como pieza de investigación en la línea de experimentos de tokenización y ajuste fino supervisado del autor (los runs de Weights & Biases están asociados al proyecto "new-tokenizers" de la Universidad de Groningen). No es un modelo de propósito general pensado para producción: su tamaño reducido y la ausencia de datos publicados sobre composición del dataset, longitud de contexto o evaluación lo sitúan en la categoría de modelo pequeño para pruebas de tokenizadores y pipelines de SFT.
 
-La model card es la generada automáticamente por TRL y no aporta información sobre datos de entrenamiento, idiomas soportados o licencia. Todos los datos técnicos que se detallan a continuación provienen del repositorio de HuggingFace o de la información disponible; cualquier campo no documentado se marca explícitamente como "no disponible".
+La model card es la generada automáticamente por TRL y no aporta información sobre datos de entrenamiento, idiomas soportados o licencia. Todos los datos técnicos que se detallan a continuación provienen del repositorio de Hugging Face o de la información disponible; cualquier campo no documentado se marca explícitamente como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -42,7 +42,7 @@ El entrenamiento se realizó mediante SFT (supervised fine-tuning) con TRL 0.23.
 - Experimentacion con tokenizadores para hindi/devaganari: el modelo pertenece a la serie "new-tokenizers", por lo que su uso principal es comparar el efecto de distintas estrategias de tokenizacion sobre la calidad del texto generado en devanagari.
 - Pruebas de pipelines de SFT con TRL: sirve como banco de pruebas de bajo coste para validar configuraciones de entrenamiento, plantillas de chat y checkpoints intermedios sin necesidad de GPUs de gama alta.
 - Generacion de texto en hindi para prototipos: permite generar borradores de texto en devanagari para demos internas, aceptando que la calidad estara limitada por los 39 M de parametros.
-- Docencia y formacion: es un ejemplo asequible para explicar el flujo completo base model, fine-tuning con SFT, publicacion en HuggingFace y despliegue con `transformers`.
+- Docencia y formacion: es un ejemplo asequible para explicar el flujo completo base model, fine-tuning con SFT, publicacion en Hugging Face y despliegue con `transformers`.
 - Evaluacion comparativa de checkpoints: al existir variantes de la misma familia con distintos tamanos de dataset (10 MB, 100 MB) y semillas, permite estudiar el impacto del volumen de datos en un modelo pequeno.
 - Inferencia en CPU o dispositivos con recursos minimos: por su tamano, puede ejecutarse en entornos sin GPU, lo que lo hace util para demos offline o tests de integracion continuos.
 - Generacion de texto sintetico para aumentar datos de entrenamiento de modelos mayores, siempre que se valide la calidad de las muestras antes de usarlas.
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 39,09 M | no disponible | no disponible | HuggingFace | Ajuste SFT del checkpoint base de la misma serie |
-| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10 | no disponible | no disponible | no disponible | HuggingFace | Modelo base declarado en la model card |
-| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | HuggingFace | Variante de la misma familia con otra configuracion de datos |
-| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | no disponible | no disponible | no disponible | HuggingFace | Variante con dataset de 10 MB y otra semilla |
+| francesca9805/hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 39,09 M | no disponible | no disponible | Hugging Face | Ajuste SFT del checkpoint base de la misma serie |
+| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10 | no disponible | no disponible | no disponible | Hugging Face | Modelo base declarado en la model card |
+| francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed10 | no disponible | no disponible | no disponible | Hugging Face | Variante de la misma familia con otra configuracion de datos |
+| francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407 | no disponible | no disponible | no disponible | Hugging Face | Variante con dataset de 10 MB y otra semilla |
 
 No se dispone de modelos externos comparables con datos verificados en la informacion proporcionada; la comparativa se limita, por tanto, a los checkpoints de la misma familia publicados por el autor.
 
@@ -79,13 +79,13 @@ No se dispone de modelos externos comparables con datos verificados en la inform
 - Limitaciones de contexto: se desconoce la longitud de contexto efectiva; en la familia GPT-2 es habitual un limite de 1024 tokens, pero no hay confirmacion para este checkpoint.
 - Limitaciones de idioma: el modelo parece orientado al hindi en devanagari; no hay datos sobre su comportamiento en castellano, ingles u otras lenguas.
 - Licencia: la model card incluye el campo `licence: license` sin especificar terminos, por lo que no se puede confirmar si el uso comercial esta permitido. Se recomienda contactar con el autor antes de cualquier uso en produccion.
-- Uso en produccion: no recomendado sin una evaluacion previa; el modelo no tiene benchmarks publicados, no tiene descargas ni likes en HuggingFace y su model card es autogenerada.
+- Uso en produccion: no recomendado sin una evaluacion previa; el modelo no tiene benchmarks publicados, no tiene descargas ni likes en Hugging Face y su model card es autogenerada.
 - Repositorio sobredimensionado: 2,7 GB para un modelo de 39 M de parametros implica artefactos adicionales que pueden complicar el despliegue y el versionado.
 - Trazabilidad: el nombre incluye un checkpoint concreto (`ckpt500`), por lo que el modelo representa un estado intermedio de entrenamiento y no necesariamente el mejor de la serie.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base declarado: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Variante de la familia (seed10, sin "after-ppt"): https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Variante con dataset de 10 MB: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfd_seed3407

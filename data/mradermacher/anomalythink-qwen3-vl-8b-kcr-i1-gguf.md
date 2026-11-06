@@ -74,7 +74,7 @@ Los siguientes datos son estimaciones derivadas del tamano de cada fichero GGUF 
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnomalyThink-Qwen3-VL-8B-KCR-i1-GGUF (este repositorio) | ~8,19 mil millones | GGUF i1, 24 cuantizaciones | no disponible | apache-2.0 | Publicado en HuggingFace, 0 descargas |
+| AnomalyThink-Qwen3-VL-8B-KCR-i1-GGUF (este repositorio) | ~8,19 mil millones | GGUF i1, 24 cuantizaciones | no disponible | apache-2.0 | Publicado en Hugging Face, 0 descargas |
 | AnomalyThink-Qwen3-VL-8B-KCR (modelo base) | ~8,19 mil millones | safetensors/transformers | no disponible | apache-2.0 | Publicado por aacudad |
 | AnomalyThink-Qwen3-VL-8B-KCR-GGUF (cuantizaciones estaticas) | ~8,19 mil millones | GGUF estatico, incluye mmproj | no disponible | apache-2.0 | Publicado por mradermacher |
 
@@ -105,4 +105,4 @@ No se dispone de datos verificados en la informacion proporcionada sobre otros m
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Empresa que cede los recursos de cuantizacion: https://www.nethype.de/
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden del repositorio de HuggingFace y de la model card del autor.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden del repositorio de Hugging Face y de la model card del autor.

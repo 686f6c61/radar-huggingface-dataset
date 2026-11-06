@@ -6,7 +6,7 @@
 
 El modelo se entreno sobre el split de entrenamiento de `cyttic/hhd-optionb-split`, excluyendo a los escritores de desarrollo, y se evaluo sobre el conjunto de test HHD Option-B con decodificacion greedy y sin modelo de lenguaje. Los resultados reportados son CER 0.0965 y WER 0.4027. Su relevancia es fundamentalmente experimental: sirve como punto de referencia reproducible (seed 42, aumento `elastic3`) para estudiar la transferencia de metricas en HTR, mas que como modelo listo para produccion.
 
-La ficha se basa unicamente en la informacion publicada en HuggingFace y en la model card; no se dispone de documentacion adicional sobre arquitectura interna, datos de entrenamiento detallados ni benchmarks comparativos.
+La ficha se basa unicamente en la informacion publicada en Hugging Face y en la model card; no se dispone de documentacion adicional sobre arquitectura interna, datos de entrenamiento detallados ni benchmarks comparativos.
 
 ## Especificaciones tecnicas
 
@@ -78,4 +78,4 @@ No disponible. La informacion proporcionada no incluye modelos comparables de HT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrctc-elastic3-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrctc-elastic3-s42

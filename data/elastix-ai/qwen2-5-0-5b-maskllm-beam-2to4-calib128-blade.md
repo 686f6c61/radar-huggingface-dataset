@@ -69,14 +69,14 @@ La comparativa se limita al modelo original y su variante instruct, ya que no se
 
 - La poda 2:4 puede degradar el rendimiento en tareas que requieren precisión numérica, como matemáticas o razonamiento lógico, en comparación con el modelo original.
 - No se ha publicado información sobre sesgos o alucinaciones específicas de esta versión; al ser un modelo pequeño, es más propenso a errores y respuestas incoherentes que modelos más grandes.
-- La licencia no está especificada en la ficha de HuggingFace, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
+- La licencia no está especificada en la ficha de Hugging Face, lo que genera incertidumbre sobre su uso comercial. Se recomienda contactar con el autor antes de utilizarlo en producción.
 - El formato gfp de 16 bits puede no ser compatible con todos los runtimes; es necesario verificar la compatibilidad con la infraestructura de despliegue.
 - No se dispone de información sobre la longitud de contexto efectiva tras la compresión; se asume que es la misma que el modelo base (32.768), pero no está confirmado.
 - El modelo no incluye capacidades de tool calling ni agentes, por lo que no es adecuado para aplicaciones que requieran interacción con APIs externas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib128-blade
+- Modelo en Hugging Face: https://huggingface.co/elastix-ai/Qwen2.5-0.5B-maskllm-beam-2to4-calib128-blade
 - Modelo base Qwen2.5-0.5B: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25

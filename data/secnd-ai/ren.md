@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K (no ap
 - En CPU (4 nucleos): 2,2 s de latencia p95 por peticion con 8 ejemplos cercanos, sobre la misma arquitectura.
 - VRAM estimada: no disponible explicitamente; el lector de 400M parametros en precision FP16 requiere en torno a 0,8 GB, por lo que una A10G (24 GB) es mas que suficiente.
 - Consumer GPU: el tamano del modelo (lector de 400M y codificador MiniLM de 22,7M) lo hace ejecutable en GPUs de consumo como una RTX 3060 o superior; no hay datos publicados de validacion en hardware consumer.
-- Opciones de despliegue: codigo de servicio y configuracion disponibles en github.com/Rish-it/secnd; compatible con text-embeddings-inference y endpoints de HuggingFace segun los tags del repositorio. No se menciona soporte de vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: codigo de servicio y configuracion disponibles en github.com/Rish-it/secnd; compatible con text-embeddings-inference y endpoints de Hugging Face segun los tags del repositorio. No se menciona soporte de vLLM, llama.cpp, Ollama o TGI.
 - No hay cifras de throughput para la variante `meta/` ni para el codificador raiz por separado.
 
 ## Comparativa con modelos similares
@@ -114,7 +114,7 @@ Diferencia clave: Ren no compite en precision bruta con un clasificador fine-tun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Secnd-AI/ren
+- Modelo en Hugging Face: https://huggingface.co/Secnd-AI/ren
 - Revision v1.0.0: https://huggingface.co/Secnd-AI/ren/blob/v1.0.0/README.md
 - Codigo de servicio y configuracion: https://github.com/Rish-it/secnd
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-400m

@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Salida de segmentación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Xiaomi-Lens-0 | ~4,62 B | No disponible | Sí (máscaras por token `<|mask|>`) | Apache-2.0 | Pesos en HuggingFace + código propio |
-| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible | No (VLM/texto) | No disponible en la información | HuggingFace |
+| Xiaomi-Lens-0 | ~4,62 B | No disponible | Sí (máscaras por token `<|mask|>`) | Apache-2.0 | Pesos en Hugging Face + código propio |
+| Qwen/Qwen3.5-4B (modelo base) | ~4 B | No disponible | No (VLM/texto) | No disponible en la información | Hugging Face |
 | Otros modelos de reasoning segmentation (p. ej., LISA, GLaMM) | No disponible | No disponible | Sí | No disponible | No verificado en la información |
 
 El modelo base Qwen3.5-4B es la referencia inmediata: Xiaomi-Lens-0 conserva su tamaño y le añade la cabeza de segmentación, por lo que la comparación relevante es si la capacidad de máscara compensa la dependencia de código no estándar. No se dispone de datos de rendimiento del modelo base ni de alternativas de segmentación razonada en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -98,7 +98,7 @@ El modelo base Qwen3.5-4B es la referencia inmediata: Xiaomi-Lens-0 conserva su 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0
+- Modelo en Hugging Face: https://huggingface.co/SeerRay-Lab/Xiaomi-Lens-0
 - Página del proyecto: https://seerray-lab.github.io/Xiaomi-Lens-0/
 - Repositorio de código: https://github.com/SeerRay-Lab/Xiaomi-Lens-0
 - Ejemplos de tareas: https://github.com/SeerRay-Lab/Xiaomi-Lens-0/tree/main/docs/assets/samples

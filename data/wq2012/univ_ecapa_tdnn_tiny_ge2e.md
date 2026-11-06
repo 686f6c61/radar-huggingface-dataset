@@ -34,7 +34,7 @@ El entrenamiento usa la perdida GE2E (Generalized End-to-End Loss for Speaker Ve
 - Extraccion de embeddings de hablante: genera un vector de 128 dimensiones por utterance mediante `model.extract_embedding(...)`.
 - Verificacion de hablante: compara dos audios con scoring coseno mediante `model.verify(...)` y devuelve una puntuacion de similitud.
 - Verificacion multi-utterance: la evaluacion incluida contempla inscripcion con 3 utterances, con mejora de EER respecto a 1 utterance.
-- Clasificacion de audio orientada a identidad: el pipeline declarado en HuggingFace es `audio-classification`.
+- Clasificacion de audio orientada a identidad: el pipeline declarado en Hugging Face es `audio-classification`.
 - Frontend de audio integrado: extraccion de log-mel de 80 dimensiones a 16 kHz, VAD de energia y CMVN, compatible con `WhisperFeatureExtractor`.
 - Inferencia en Python y linea de comandos mediante el paquete `flaxspeaker` y el script `scripts/inference.py`.
 - No dispone de tool calling, function calling, capacidades de agente, generacion de texto, vision ni audio comprensivo; es un extractor de embeddings acusticos, no un modelo de lenguaje.
@@ -86,8 +86,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de MML
 
 | Modelo | Parametros | Contexto / embedding | EER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wq2012/univ_ecapa_tdnn_tiny_ge2e` | 626.720 | Embedding 128 dim, audio 16 kHz | 23,02% (universal 1-utt), 18,00% (universal 3-utt) | Apache-2.0 | HuggingFace, GitHub, PyPI |
-| `yangwang825/ecapa-tdnn-vox2` | No disponible | No disponible | No disponible en la informacion recogida | No disponible | HuggingFace |
+| `wq2012/univ_ecapa_tdnn_tiny_ge2e` | 626.720 | Embedding 128 dim, audio 16 kHz | 23,02% (universal 1-utt), 18,00% (universal 3-utt) | Apache-2.0 | Hugging Face, GitHub, PyPI |
+| `yangwang825/ecapa-tdnn-vox2` | No disponible | No disponible | No disponible en la informacion recogida | No disponible | Hugging Face |
 | NVIDIA NeMo `ecapa_tdnn` | No disponible | Speaker embeddings, angular softmax | No disponible en la informacion recogida | No disponible | NGC (NVIDIA) |
 | TaoRuijie/ECAPA-TDNN | No disponible | Speaker embeddings | 0,86% en Vox1_O entrenando solo con Vox2 | No disponible | GitHub |
 
@@ -103,11 +103,11 @@ La comparacion cuantitativa directa no es posible con los datos recogidos: los s
 - Longitud de contexto: no se especifica la duracion maxima de audio soportada ni el comportamiento con utterances muy largas; el VAD de energia segmenta la entrada.
 - Licencia: Apache-2.0 permite uso comercial, modificacion y redistribucion, pero la model card aclara que no es un producto soportado oficialmente por Google y que se trata de una reproduccion independiente de articulos de investigacion.
 - Ausencia de soporte para generacion de texto, tool calling o agentes: cualquier descripcion del modelo en esos terminos seria incorrecta.
-- Cero descargas y cero likes en HuggingFace en el momento de la consulta, lo que implica una validacion externa practicamente nula por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la consulta, lo que implica una validacion externa practicamente nula por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wq2012/univ_ecapa_tdnn_tiny_ge2e
+- Modelo en Hugging Face: https://huggingface.co/wq2012/univ_ecapa_tdnn_tiny_ge2e
 - Coleccion FlaxSpeaker: https://huggingface.co/collections/wq2012/flaxspeaker-6ad02d999a4180c794870595
 - Repositorio GitHub FlaxSpeaker: https://github.com/wq2012/FlaxSpeaker
 - Paquete PyPI: https://pypi.org/project/flaxspeaker/

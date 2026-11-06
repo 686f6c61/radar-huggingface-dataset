@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Rendimiento en el piloto Taj | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OmTheLast/taj-mahal-history-tutor-4b-experimental | 4.022.468.096 | no disponible | en | Apache 2.0 | 60/96 (total), 22/48 (abiertas), 12/16 (fundamentadas) | HuggingFace, safetensors + GGUF |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | 50/96 (total), 10/48 (abiertas), 16/16 (fundamentadas) | HuggingFace |
+| OmTheLast/taj-mahal-history-tutor-4b-experimental | 4.022.468.096 | no disponible | en | Apache 2.0 | 60/96 (total), 22/48 (abiertas), 12/16 (fundamentadas) | Hugging Face, safetensors + GGUF |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Apache 2.0 | 50/96 (total), 10/48 (abiertas), 16/16 (fundamentadas) | Hugging Face |
 | Otros tutores de historia o modelos educativos comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no devolvio resultados relevantes: las entradas recuperadas tratan sobre incidencias de cuentas de Facebook y no guardan relacion con este modelo ni con modelos comparables.
@@ -107,8 +107,8 @@ La busqueda web realizada no devolvio resultados relevantes: las entradas recupe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OmTheLast/taj-mahal-history-tutor-4b-experimental
+- Modelo en Hugging Face: https://huggingface.co/OmTheLast/taj-mahal-history-tutor-4b-experimental
 - Cuantizacion GGUF Q6_K en el repositorio: https://huggingface.co/OmTheLast/taj-mahal-history-tutor-4b-experimental/blob/main/gguf/taj-step100-Q6_K.gguf
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
-- Ficheros de procedencia y verificacion citados en la model card: MODEL_PROVENANCE.json, EXPORT_VERIFICATION.json, GGUF_RUNTIME_SUMMARY.json (en el propio repositorio de HuggingFace)
+- Ficheros de procedencia y verificacion citados en la model card: MODEL_PROVENANCE.json, EXPORT_VERIFICATION.json, GGUF_RUNTIME_SUMMARY.json (en el propio repositorio de Hugging Face)
 - Resultados de busqueda web relevantes: no disponible (las entradas recuperadas no guardan relacion con el modelo)

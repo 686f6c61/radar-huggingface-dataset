@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Karrablast es un repositorio publicado en HuggingFace por el usuario Ryanham1lton (Ryan James Hamilton) el 25 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card funcional (el README solo contiene la declaración de licencia), no declara pipeline, no declara idiomas y no registra descargas ni interacciones. Esto impide determinar con rigor qué tipo de artefacto contiene: no hay evidencia que confirme si se trata de un modelo de lenguaje, un checkpoint de difusión, un LoRA, un adaptador o un conjunto de pesos auxiliares.
+Karrablast es un repositorio publicado en Hugging Face por el usuario Ryanham1lton (Ryan James Hamilton) el 25 de octubre de 2026. En el momento de redactar esta ficha, el repositorio no incluye model card funcional (el README solo contiene la declaración de licencia), no declara pipeline, no declara idiomas y no registra descargas ni interacciones. Esto impide determinar con rigor qué tipo de artefacto contiene: no hay evidencia que confirme si se trata de un modelo de lenguaje, un checkpoint de difusión, un LoRA, un adaptador o un conjunto de pesos auxiliares.
 
 Los únicos datos verificables son administrativos: licencia CC-BY-4.0, región declarada `us`, tamaño del repositorio de 0,1 GB y ausencia total de métricas de uso. El tamaño del repositorio es el único indicio técnico aprovechable, y apunta a un artefacto de pequeña escala, muy lejos de los modelos de lenguaje de miles de millones de parámetros.
 
@@ -92,7 +92,7 @@ No disponible. No se puede establecer una categoría de comparación porque se d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Karrablast
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Karrablast
 - Perfil del autor: https://huggingface.co/Ryanham1lton
 - Repositorio hermano del mismo autor: https://huggingface.co/Ryanham1lton/Kadabra
 - Etiqueta «karrablast» en Civitai (no verificada, no atribuible con certeza): https://civitai.com/tag/karrablast

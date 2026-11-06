@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El artefacto identificado como `davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-01-cantorexpansion-e8d57528f5a8` es un checkpoint archivado de un entrenamiento ya finalizado, publicado en HuggingFace por el usuario davidheineman. No se trata de un modelo liberado con model card descriptiva, pesos listos para inferencia ni evaluaciones publicadas: la propia model card indica que el repositorio "preserva el checkpoint final de un run completado" y remite a la ruta original de scratch `runs/fast-r1-p1r4-20261003-094828/resumable/01-CantorExpansion`.
+El artefacto identificado como `davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-01-cantorexpansion-e8d57528f5a8` es un checkpoint archivado de un entrenamiento ya finalizado, publicado en Hugging Face por el usuario davidheineman. No se trata de un modelo liberado con model card descriptiva, pesos listos para inferencia ni evaluaciones publicadas: la propia model card indica que el repositorio "preserva el checkpoint final de un run completado" y remite a la ruta original de scratch `runs/fast-r1-p1r4-20261003-094828/resumable/01-CantorExpansion`.
 
 Los unicos metadatos tecnicos confirmados son que el checkpoint esta en formato `megatron-torch-dist`, que corresponde al paso final `149` de su run y que esta asociado al run ID de Weights & Biases `dc9b0ad4`. El repositorio ocupa 3,6 GB, un dato que por si solo no permite deducir el numero de parametros, ya que en checkpoints distribuidos de Megatron el peso puede incluir estados de optimizador, shards y copias en precision mixta.
 
@@ -53,7 +53,7 @@ No hay ninguna evaluacion publicada ni descripcion funcional en la informacion d
 Dado que se trata de un checkpoint archivado sin model card funcional, los casos de uso realistas son de investigacion y de ingenieria de artefactos, no de aplicacion directa:
 
 - Reproduccion de un run de entrenamiento: el checkpoint permite reanudar o auditar el estado exacto del modelo en el paso 149, util para verificar resultados publicados o comparar trayectorias de entrenamiento dentro de la serie `fast-r1-p1r4`.
-- Conversion a formatos estandar: el flujo tipico consiste en transformar `megatron-torch-dist` a `safetensors` de HuggingFace y despues a GGUF, de modo que el modelo pueda cargarse con `transformers`, `vLLM` o `llama.cpp` y someterse a evaluacion.
+- Conversion a formatos estandar: el flujo tipico consiste en transformar `megatron-torch-dist` a `safetensors` de Hugging Face y despues a GGUF, de modo que el modelo pueda cargarse con `transformers`, `vLLM` o `llama.cpp` y someterse a evaluacion.
 - Punto de partida para fine-tuning: si la licencia y la calidad del checkpoint lo permiten, puede servir como inicializacion para ajuste supervisado en un dominio concreto, siempre que se documente antes su arquitectura real.
 - Estudio de dinamica de entrenamiento: comparar este checkpoint con otros del mismo run (por ejemplo variantes `CantorExpansion` frente a otras) permite analizar como evolucionan las capacidades a lo largo del entrenamiento.
 - Auditoria de artefactos de investigacion: equipos que revisan publicaciones sobre RL con recompensas verificables pueden inspeccionar los pesos para comprobar que el modelo guardado coincide con lo descrito en el articulo asociado.
@@ -91,7 +91,7 @@ No disponible. Este artefacto no es un modelo publicado con caracteristicas comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-01-cantorexpansion-e8d57528f5a8
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r4-20261003-094828-01-cantorexpansion-e8d57528f5a8
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Run ID de Weights & Biases citado en la model card: dc9b0ad4 (no se ha encontrado enlace publico verificado)
 - No se han encontrado papers, blogs, repositorios ni demos relacionados en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

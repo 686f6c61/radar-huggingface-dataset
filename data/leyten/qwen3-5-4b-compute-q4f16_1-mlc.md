@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La difere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Leyten/Qwen3.5-4B-compute-q4f16_1-MLC
+- Repositorio Hugging Face: https://huggingface.co/Leyten/Qwen3.5-4B-compute-q4f16_1-MLC
 - Modelo fuente (Kewk/Heretical-Qwen3.5-4B): https://huggingface.co/Kewk/Heretical-Qwen3.5-4B
 - Modelo hermano mayor (Leyten/Qwen3.5-9B-compute-q4f16_1-MLC): https://huggingface.co/Leyten/Qwen3.5-9B-compute-q4f16_1-MLC
 - Librería wasm precompilada (binary-mlc-llm-libs): https://github.com/mlc-ai/binary-mlc-llm-libs

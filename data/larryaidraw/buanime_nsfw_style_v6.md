@@ -4,7 +4,7 @@
 
 BuAnime_NSFW_Style_V6 es un adaptador de tipo LoRA (Low-Rank Adaptation) desarrollado por LarryAIDraw para el modelo base Illustrious, especializado en la generación de ilustraciones anime con estética NSFW (contenido para adultos). Se trata de la sexta versión de una serie que comenzó con versiones anteriores y que, según el autor, iba a finalizar en V5 pero se mejoraron ciertos aspectos tras recibir feedback de la comunidad. El modelo está diseñado para modificar el estilo de las imágenes generadas, aportando una estética concreta de dibujo anime con colores vibrantes, iluminación marcada y detalles refinados.
 
-El adaptador se distribuye como un archivo `.safetensors` de aproximadamente 0.5 GB, lo que sugiere que es un LoRA de tamaño medio-grande para los estándares de este tipo de adaptadores. Está alojado en HuggingFace bajo la licencia CreativeML OpenRAIL-M, que permite uso comercial pero con restricciones relacionadas con el contenido generado. El modelo está etiquetado como "not-for-all-audiences" y su región es Estados Unidos. Actualmente no tiene descargas ni likes en HuggingFace, aunque sí aparece referenciado en plataformas como Civitai, CivArchive y PixAI, lo que indica que se distribuye principalmente a través de esos canales.
+El adaptador se distribuye como un archivo `.safetensors` de aproximadamente 0.5 GB, lo que sugiere que es un LoRA de tamaño medio-grande para los estándares de este tipo de adaptadores. Está alojado en Hugging Face bajo la licencia CreativeML OpenRAIL-M, que permite uso comercial pero con restricciones relacionadas con el contenido generado. El modelo está etiquetado como "not-for-all-audiences" y su región es Estados Unidos. Actualmente no tiene descargas ni likes en Hugging Face, aunque sí aparece referenciado en plataformas como Civitai, CivArchive y PixAI, lo que indica que se distribuye principalmente a través de esos canales.
 
 La relevancia de este modelo reside en su nicho específico: la generación de arte anime NSFW con un estilo consistente. A diferencia de los modelos de lenguaje, este es un modelo de difusión que se aplica sobre un checkpoint base (Illustrious) para ajustar la estética de las imágenes. Es útil para artistas y creadores que buscan un estilo particular sin tener que entrenar un modelo completo desde cero.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 - Se requiere un modelo base Illustrious (basado en SDXL) para poder utilizarlo. SDXL tiene requisitos de VRAM de al menos 8 GB para inferencia con precision fp16.
 - GPU recomendadas: NVIDIA RTX 3060 (12 GB) o superior para generar imagenes de 1024x1024 con comodidad. Tarjetas con 8 GB pueden funcionar con cuantizacion o reduciendo el tamano de la imagen.
 - El LoRA se aplica sobre el checkpoint base, por lo que el consumo de VRAM adicional es minimo (el adaptador se fusiona con el modelo base en tiempo de carga).
-- Opciones de despliegue: se puede usar con interfaces como Automatic1111 (WebUI), ComfyUI, o mediante scripts de Python con la libreria diffusers de HuggingFace.
+- Opciones de despliegue: se puede usar con interfaces como Automatic1111 (WebUI), ComfyUI, o mediante scripts de Python con la libreria diffusers de Hugging Face.
 - No se dispone de datos de latencia o throughput especificos para este modelo.
 
 ## Comparativa con modelos similares
@@ -69,11 +69,11 @@ No se dispone de informacion sobre modelos comparables dentro del mismo nicho (L
 - Dependencia del modelo base: el rendimiento depende del checkpoint Illustrious sobre el que se aplique. Cambios en el modelo base pueden afectar al resultado final.
 - Documentacion insuficiente: no hay informacion tecnica detallada sobre el entrenamiento, parametros o limitaciones especificas. Esto dificulta la evaluacion objetiva del modelo.
 - Restricciones de uso comercial: la licencia CreativeML OpenRAIL-M permite uso comercial, pero requiere que las obras derivadas se distribuyan bajo la misma licencia y que se incluyan avisos sobre el uso de IA. Ademas, el contenido generado puede estar sujeto a restricciones adicionales en plataformas de publicacion.
-- Sin garantias de soporte: el autor no proporciona canal de soporte oficial ni documentacion adicional en HuggingFace.
+- Sin garantias de soporte: el autor no proporciona canal de soporte oficial ni documentacion adicional en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LarryAIDraw/BuAnime_NSFW_Style_V6
+- Hugging Face: https://huggingface.co/LarryAIDraw/BuAnime_NSFW_Style_V6
 - CivArchive (descarga): https://civarchive.com/models/2449828?modelVersionId=2965308
 - PixAI (demostracion): https://pixai.art/en/model/1996489996360289583
 - Civitai (pagina del modelo): https://civitai.red/models/2449828/buanime-nsfw-style

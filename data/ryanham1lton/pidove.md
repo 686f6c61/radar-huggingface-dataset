@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pidove es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Pidove`. El repositorio se creo el 16 de septiembre de 2026 y se actualizo dos minutos despues, el mismo dia, ocupa 0,1 GB y esta licenciado bajo CC-BY-4.0. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene asignada ninguna etiqueta de pipeline (`pipeline_tag`), lo que impide conocer incluso la modalidad del modelo (texto, vision, audio, embeddings, etc.).
+Pidove es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Pidove`. El repositorio se creo el 16 de septiembre de 2026 y se actualizo dos minutos despues, el mismo dia, ocupa 0,1 GB y esta licenciado bajo CC-BY-4.0. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y no tiene asignada ninguna etiqueta de pipeline (`pipeline_tag`), lo que impide conocer incluso la modalidad del modelo (texto, vision, audio, embeddings, etc.).
 
 La model card del autor no contiene informacion tecnica: unicamente incluye la linea de metadatos de licencia (`license: cc-by-4.0`) y ningun otro campo. No se declaran arquitectura, numero de parametros, longitud de contexto, idiomas, composicion del dataset de entrenamiento, proceso de alineacion ni resultados de evaluacion. Las busquedas web realizadas no han devuelto ningun resultado relacionado con este modelo ni con su autor: los enlaces recuperados corresponden a paginas corporativas de Microsoft y no guardan ninguna relacion con el repositorio.
 
@@ -83,6 +83,6 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad y tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Pidove
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Pidove
 - Resultados de busqueda web: ninguna referencia relevante. Los enlaces recuperados (https://www.microsoft.com/en-us, https://account.microsoft.com/account, https://myaccount.microsoft.com/, https://www.microsoft.com/en-us/microsoft-365, https://en.wikipedia.org/wiki/Microsoft) corresponden a paginas corporativas de Microsoft y no guardan relacion con el modelo Pidove.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

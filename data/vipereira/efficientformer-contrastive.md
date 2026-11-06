@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientFormer for Contrastive (ID `vipereira/efficientformer-contrastive`) es un repositorio experimental publicado por el usuario vipereira en HuggingFace. Implementa una arquitectura EfficientFormer en configuracion "nano" planteada para tareas de aprendizaje contrastivo. El autor lo describe explicitamente como un punto de partida manipulable para inspeccionar cambios de arquitectura antes de ejecutar un entrenamiento completo.
+EfficientFormer for Contrastive (ID `vipereira/efficientformer-contrastive`) es un repositorio experimental publicado por el usuario vipereira en Hugging Face. Implementa una arquitectura EfficientFormer en configuracion "nano" planteada para tareas de aprendizaje contrastivo. El autor lo describe explicitamente como un punto de partida manipulable para inspeccionar cambios de arquitectura antes de ejecutar un entrenamiento completo.
 
 Con 33.088 parametros totales, se trata de un modelo de escala minima. El checkpoint `model.safetensors` incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado, y el propio repositorio no reclama ninguna puntuacion de benchmark. El pipeline no esta declarado y no se especifican idiomas soportados.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientFormer for Contrastive (vipereira) | 33.088 | No disponible | No se reclama ninguno | MIT | HuggingFace, checkpoint de inicializacion |
+| EfficientFormer for Contrastive (vipereira) | 33.088 | No disponible | No se reclama ninguno | MIT | Hugging Face, checkpoint de inicializacion |
 | EfficientFormer original (Snap Research) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | EfficientFormerV2 (Snap Research) | No disponible | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -85,4 +85,4 @@ No se dispone de datos de rendimiento, contexto ni parametros verificados de las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vipereira/efficientformer-contrastive
+- Hugging Face: https://huggingface.co/vipereira/efficientformer-contrastive

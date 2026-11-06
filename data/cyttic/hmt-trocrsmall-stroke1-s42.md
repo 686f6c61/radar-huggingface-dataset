@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/hmt-trocrsmall-stroke1-s42` es un sistema de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el grupo CYTTIC, publicado en HuggingFace con licencia MIT. Se trata de un modelo de aproximadamente 22,4 millones de parámetros, entrenado con arquitectura CTC (*Connectionist Temporal Classification*) y pesos en formato safetensors, orientado específicamente al idioma hebreo.
+El modelo `cyttic/hmt-trocrsmall-stroke1-s42` es un sistema de reconocimiento de texto manuscrito (HTR, *Handwritten Text Recognition*) desarrollado por el grupo CYTTIC, publicado en Hugging Face con licencia MIT. Se trata de un modelo de aproximadamente 22,4 millones de parámetros, entrenado con arquitectura CTC (*Connectionist Temporal Classification*) y pesos en formato safetensors, orientado específicamente al idioma hebreo.
 
 El modelo forma parte de un estudio de aumento de datos (*augmentation study*) denominado `htr-metrics-transfer`, en el que se evalúa cómo distintas técnicas de aumento afectan a las métricas de reconocimiento. En este caso concreto, la variante es `trocrsmall` con aumento `stroke1` y semilla 42. El entrenamiento se realizó sobre el conjunto `cyttic/hhd-optionb-split` (parte de entrenamiento, excluyendo los escritores de desarrollo) y se evaluó sobre el test HHD Option-B.
 
@@ -79,6 +79,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrsmall-stroke1-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrsmall-stroke1-s42
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, ubicación no disponible)

@@ -80,4 +80,4 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - TianfuXinqu/mlreview-fraud-detector-53626ab7](https://huggingface.co/TianfuXinqu/mlreview-fraud-detector-53626ab7)
+- [Hugging Face - TianfuXinqu/mlreview-fraud-detector-53626ab7](https://huggingface.co/TianfuXinqu/mlreview-fraud-detector-53626ab7)

@@ -63,7 +63,7 @@ El campo de los relojes epigenéticos incluye varios modelos comparables, aunque
 
 | Modelo | Tipo | Tejido | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| systemsagebrain | PCA + elastic net | Sangre completa | BSD-3-Clause | pyaging (HuggingFace) |
+| systemsagebrain | PCA + elastic net | Sangre completa | BSD-3-Clause | pyaging (Hugging Face) |
 | Reloj de Horvath (2013) | Elastic net sobre CpGs | Multi-tejido | Uso académico | Scripts públicos |
 | PhenoAge (2018) | Elastic net sobre CpGs | Sangre | Uso académico | Scripts públicos |
 | GrimAge (2019) | Elastic net sobre CpGs | Sangre | Uso académico | Scripts públicos |
@@ -81,6 +81,6 @@ Nota: los modelos clásicos (Horvath, PhenoAge, GrimAge) no son directamente com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/systemsagebrain
+- Hugging Face: https://huggingface.co/pyaging/systemsagebrain
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io
 - Artículo original: Sehgal, R., Markov, Y., Qin, C., et al. (2025). Systems Age: a single blood methylation test to quantify aging heterogeneity across 11 physiological systems. Nature Aging, 5, 1880–1896. https://doi.org/10.1038/s43587-025-00958-3

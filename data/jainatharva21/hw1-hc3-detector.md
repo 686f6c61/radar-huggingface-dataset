@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hw1-hc3-detector es un clasificador binario de texto desarrollado por el usuario jainatharva21, publicado en HuggingFace bajo el identificador jainatharva21/hw1-hc3-detector. Se trata de un ajuste fino del modelo de embeddings sentence-transformers/all-MiniLM-L6-v2, un encoder transformer tipo BERT de 6 capas y 22.713.986 parametros totales, reentrenado para distinguir respuestas humanas de respuestas generadas por ChatGPT.
+hw1-hc3-detector es un clasificador binario de texto desarrollado por el usuario jainatharva21, publicado en Hugging Face bajo el identificador jainatharva21/hw1-hc3-detector. Se trata de un ajuste fino del modelo de embeddings sentence-transformers/all-MiniLM-L6-v2, un encoder transformer tipo BERT de 6 capas y 22.713.986 parametros totales, reentrenado para distinguir respuestas humanas de respuestas generadas por ChatGPT.
 
 El problema que aborda es la deteccion de texto generado por IA en el dominio concreto del dataset HC3 (Hello-SimpleAI/HC3) en ingles. El modelo devuelve dos etiquetas: 0 = humano y 1 = ChatGPT. Su relevancia es principalmente academica o experimental: sirve como ejercicio de ajuste fino y como referencia de como un encoder pequeno puede alcanzar una accuracy muy alta en un benchmark con artefactos conocidos.
 
@@ -71,8 +71,8 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 | Modelo | Parametros | Contexto | Accuracy en HC3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hw1-hc3-detector | 22,7 M | 256 tokens | 0,9906 (test HC3) | no disponible | HuggingFace |
-| all-MiniLM-L6-v2 (base) | 22,7 M | 256 tokens | no aplica (no es clasificador binario) | no disponible | HuggingFace |
+| hw1-hc3-detector | 22,7 M | 256 tokens | 0,9906 (test HC3) | no disponible | Hugging Face |
+| all-MiniLM-L6-v2 (base) | 22,7 M | 256 tokens | no aplica (no es clasificador binario) | no disponible | Hugging Face |
 | Otros detectores de texto IA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,6 +88,6 @@ No se dispone de datos comparativos publicados en la informacion proporcionada p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jainatharva21/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/jainatharva21/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/Hello-SimpleAI/HC3

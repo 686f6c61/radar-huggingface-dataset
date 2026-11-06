@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AutoTrust-JEV-27B v1.1 es un modelo de decisión textual de 27.356.728.560 parámetros (unos 27,36 mil millones) publicado por el usuario autotrust en HuggingFace bajo licencia Apache 2.0. No es un modelo generativo al uso: su tarea declarada en el pipeline es `text-classification`, y su función es asignar probabilidades a un conjunto de opciones de respuesta suministradas junto con cada pregunta. Es decir, se usa como cabecera de decisión estructurada sobre candidatos predefinidos, no como un chat que produce texto libre.
+AutoTrust-JEV-27B v1.1 es un modelo de decisión textual de 27.356.728.560 parámetros (unos 27,36 mil millones) publicado por el usuario autotrust en Hugging Face bajo licencia Apache 2.0. No es un modelo generativo al uso: su tarea declarada en el pipeline es `text-classification`, y su función es asignar probabilidades a un conjunto de opciones de respuesta suministradas junto con cada pregunta. Es decir, se usa como cabecera de decisión estructurada sobre candidatos predefinidos, no como un chat que produce texto libre.
 
 El modelo se presenta con una evaluación local completa sobre la suite pública Decision Index 0.3: índice público de 67,31 sobre 37 benchmarks indexados y 140.178 peticiones puntuables completadas. El autor indica que el resultado es autodeclarado y está pendiente de verificación por el mantenedor, y que no se reporta puntuación privada ni Full. Sus puntos fuertes declarados son la selección de herramientas (área Tools & Automation, 85,19 puntos de habilidad), la clasificación de intención y las decisiones de automatización cotidiana.
 
@@ -166,7 +166,7 @@ Las referencias naturales son los dos modelos contra los que el autor compara en
 | Longitud de contexto | No disponible | No disponible | No disponible |
 | Licencia | Apache 2.0 | No disponible | No disponible |
 | Formato de pesos | Safetensors | No disponible | No disponible |
-| Disponibilidad | HuggingFace, 5.615 descargas, 166 likes | Resultados publicados en la suite Decision Index; repositorio no indicado | Resultados publicados en la suite Decision Index; repositorio no indicado |
+| Disponibilidad | Hugging Face, 5.615 descargas, 166 likes | Resultados publicados en la suite Decision Index; repositorio no indicado | Resultados publicados en la suite Decision Index; repositorio no indicado |
 | Índice público Decision Index | 67,31 | No disponible | No disponible |
 | MMLU-Pro | 73,65 | 61,53 | 82,13 |
 | GPQA Diamond | 54,59 | 44,90 | 75,51 |
@@ -193,7 +193,7 @@ Lectura de la comparativa: este modelo supera a JEV-27B en prácticamente todas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1
+- Modelo en Hugging Face: https://huggingface.co/autotrust/AutoTrust-JEV-27B-v1.1
 - Datos del benchmark Decision Index (versión fijada): https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/0ddf6758073eb77ae449a3541f57286d7f39d93f/data/index.json
 - Metodología de evaluación (versión fijada): https://huggingface.co/spaces/multimodalart/jev-decision-index/blob/0ddf — enlace truncado en la información disponible; la referencia completa figura en la model card del autor.
 - Espacio Decision Index: https://huggingface.co/spaces/multimodalart/jev-decision-index

@@ -77,7 +77,7 @@ La comparativa se basa en modelos de escala similar conocidos. Msh-Tiny-47M es m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mondk/Msh-Tiny-47M
+- Repositorio Hugging Face: https://huggingface.co/mondk/Msh-Tiny-47M
 - Repositorio safetensors asociado: https://huggingface.co/mondk/Safetensors.msh-tiny
 - Repositorio GGUF asociado: https://huggingface.co/mondk/GGUF.msh-tiny
 - Página de inferencia en FriendliAI: https://friendli.ai/models/mondk/Safetensors.msh-tiny

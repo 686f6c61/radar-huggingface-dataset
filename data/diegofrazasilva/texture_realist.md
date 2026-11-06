@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `diegofrazasilva/texture_realist` es un adaptador de tipo LoRA para generación de imágenes mediante difusión, diseñado específicamente para producir texturas realistas. Se basa en el modelo base `krea/Krea-2-Turbo`, un modelo de difusión turbo que destaca por su velocidad de inferencia. El adaptador se activa mediante la palabra clave `hmmotion` y está publicado en HuggingFace bajo el repositorio indicado. Aunque la información disponible es mínima, su propósito declarado es la generación de texturas realistas, probablemente orientado a aplicaciones de gráficos por computador, videojuegos o diseño 3D.
+El modelo `diegofrazasilva/texture_realist` es un adaptador de tipo LoRA para generación de imágenes mediante difusión, diseñado específicamente para producir texturas realistas. Se basa en el modelo base `krea/Krea-2-Turbo`, un modelo de difusión turbo que destaca por su velocidad de inferencia. El adaptador se activa mediante la palabra clave `hmmotion` y está publicado en Hugging Face bajo el repositorio indicado. Aunque la información disponible es mínima, su propósito declarado es la generación de texturas realistas, probablemente orientado a aplicaciones de gráficos por computador, videojuegos o diseño 3D.
 
 La relevancia de este modelo radica en que permite personalizar o refinar el modelo base para una tarea concreta (texturas realistas) sin necesidad de reentrenar el modelo completo, lo que reduce drásticamente el coste computacional. Sin embargo, la falta de documentación detallada sobre su entrenamiento, datos y métricas limita la evaluación objetiva de su rendimiento.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - Al ser un adaptador LoRA, su peso es pequeño (0.3 GB), pero se requiere el modelo base `krea/Krea-2-Turbo` para la inferencia.
 - El modelo base es un modelo de difusión turbo, que probablemente requiera una GPU con al menos 8-12 GB de VRAM para ejecutar en FP16, aunque no se especifica.
 - Se puede ejecutar en GPUs consumer como RTX 3060 o superiores, pero no hay datos confirmados.
-- Opciones de despliegue: se puede usar con la librería `diffusers` de HuggingFace, o mediante APIs como Replicate o Modal, pero no se documentan.
+- Opciones de despliegue: se puede usar con la librería `diffusers` de Hugging Face, o mediante APIs como Replicate o Modal, pero no se documentan.
 - No se conocen datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -67,10 +67,10 @@ No se dispone de información sobre modelos LoRA comparables de texturas realist
 
 ## Enlaces
 
-- [HuggingFace - diegofrazasilva/texture_realist](https://huggingface.co/diegofrazasilva/texture_realist)
+- [Hugging Face - diegofrazasilva/texture_realist](https://huggingface.co/diegofrazasilva/texture_realist)
 - No se encontraron otros enlaces relevantes en la búsqueda web.</think>## Resumen
 
-El modelo `texture_realist` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado en HuggingFace por el usuario diegofrazasilva. Está diseñado para producir texturas realistas y se basa en el modelo base `krea/Krea-2-Turbo`, un modelo de difusión turbo que prioriza la velocidad de inferencia. El adaptador se activa mediante la palabra clave `hmmotion`, y el repositorio tiene un tamaño de 0.3 GB. La información disponible es muy limitada: no se especifican licencia, idiomas, ni detalles del entrenamiento, lo que impide una evaluación rigurosa de su calidad o rendimiento.
+El modelo `texture_realist` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes, publicado en Hugging Face por el usuario diegofrazasilva. Está diseñado para producir texturas realistas y se basa en el modelo base `krea/Krea-2-Turbo`, un modelo de difusión turbo que prioriza la velocidad de inferencia. El adaptador se activa mediante la palabra clave `hmmotion`, y el repositorio tiene un tamaño de 0.3 GB. La información disponible es muy limitada: no se especifican licencia, idiomas, ni detalles del entrenamiento, lo que impide una evaluación rigurosa de su calidad o rendimiento.
 
 Su relevancia radica en que permite adaptar un modelo de difusión ya existente a una tarea concreta (generación de texturas) sin necesidad de reentrenar el modelo completo, reduciendo costes computacionales y de almacenamiento. Sin embargo, la falta de documentación técnica y de benchmarks hace que su uso en producción sea arriesgado sin pruebas previas.
 
@@ -136,6 +136,6 @@ No se dispone de información sobre modelos LoRA comparables de texturas realist
 
 ## Enlaces
 
-- [HuggingFace - diegofrazasilva/texture_realist](https://huggingface.co/diegofrazasilva/texture_realist)
+- [Hugging Face - diegofrazasilva/texture_realist](https://huggingface.co/diegofrazasilva/texture_realist)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos) en la búsqueda web.

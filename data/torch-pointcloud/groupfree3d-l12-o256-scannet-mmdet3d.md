@@ -75,7 +75,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Parametros | Contexto / entrada | mAP@0.5 (ScanNet) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Group-Free 3D L12 O256 (este) | 27,8 M | 8192 puntos (ejemplo) | 48,51 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| Group-Free 3D L12 O256 (este) | 27,8 M | 8192 puntos (ejemplo) | 48,51 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | VoteNet | no disponible | nube de puntos | no disponible en esta ficha | Apache-2.0 (mmdetection3d) | mmdetection3d |
 | Group-Free 3D original (mmdetection3d) | no disponible | nube de puntos | no disponible en esta ficha | Apache-2.0 | GitHub OpenMMLab |
 
@@ -94,7 +94,7 @@ No se dispone en la información proporcionada de cifras comparables de VoteNet 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/groupfree3d-l12-o256.scannet.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/groupfree3d-l12-o256.scannet.mmdet3d
 - Paper Group-Free 3D: https://arxiv.org/abs/2104.00678
 - Repositorio mmdetection3d: https://github.com/open-mmlab/mmdetection3d
 - Librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

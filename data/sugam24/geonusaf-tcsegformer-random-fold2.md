@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su aplicación práctica para la planific
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de visión, no textual) |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (inferido por el tamaño del repo y la plataforma HuggingFace) |
+| Formato de pesos | safetensors (inferido por el tamaño del repo y la plataforma Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 - VRAM estimada: al ser un modelo SegFormer-B0 con entrada 512x512, la inferencia requiere aproximadamente 1-2 GB de VRAM en FP32, y menos de 1 GB en cuantizacion FP16 o INT8.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, o superiores. Tambien puede ejecutarse en CPU con tiempos de inferencia de varios segundos por imagen.
 - Se puede desplegar en hardware de consumo (tarjetas graficas de gama media) sin problemas.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch, o mediante ONNX Runtime para optimizacion. No se menciona soporte para vLLM, llama.cpp u Ollama (modelo de vision, no LLM).
+- Opciones de despliegue: Hugging Face Transformers con PyTorch, o mediante ONNX Runtime para optimizacion. No se menciona soporte para vLLM, llama.cpp u Ollama (modelo de vision, no LLM).
 - Latencia estimada: en una GPU RTX 3060, la inferencia de una imagen 512x512 deberia tomar entre 50 y 150 ms, dependiendo del batch y la optimizacion.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento para los otros modelos, por lo que no es p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold2
+- Modelo en Hugging Face: https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold2
 - Modelo fold 1 (mismo autor): https://huggingface.co/sugam24/geonusaf-tcsegformer-random-fold1
 - Modelo UNetFormer fold 2 (mismo autor): https://huggingface.co/sugam24/geonusaf-unetformer-r18-random-fold2
 - Perfil de GitHub del autor: https://github.com/iamgroot2324/

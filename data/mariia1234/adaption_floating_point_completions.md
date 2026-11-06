@@ -4,7 +4,7 @@
 
 El modelo `Mariia1234/adaption_floating_point_completions` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario Mariia1234 mediante la plataforma AutoScientist de Adaption Labs. Se basa en el modelo `meta-llama/Llama-3.3-70B-Instruct-Reference` y está diseñado para mejorar el rendimiento en tareas de completado de números de punto flotante, un dominio que abarca principalmente razonamiento matemático y científico. El adaptador se entrena con aprendizaje supervisado (SFT) sobre un conjunto de datos de 4.877 ejemplos, con una distribución dominada por matemáticas (72%) y ciencias (24%).
 
-La relevancia de este modelo radica en su enfoque de adaptación eficiente: en lugar de ajustar los 70.000 millones de parámetros del modelo base, solo se modifican los pesos LoRA, lo que reduce drásticamente el coste computacional y de almacenamiento. El adaptador se distribuye en formato safetensors y se integra fácilmente con la librería `peft` de HuggingFace, permitiendo a desarrolladores e investigadores especializar un modelo de gran tamaño en tareas numéricas concretas sin necesidad de infraestructura masiva.
+La relevancia de este modelo radica en su enfoque de adaptación eficiente: en lugar de ajustar los 70.000 millones de parámetros del modelo base, solo se modifican los pesos LoRA, lo que reduce drásticamente el coste computacional y de almacenamiento. El adaptador se distribuye en formato safetensors y se integra fácilmente con la librería `peft` de Hugging Face, permitiendo a desarrolladores e investigadores especializar un modelo de gran tamaño en tareas numéricas concretas sin necesidad de infraestructura masiva.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El conjunto de datos de entrenamiento contiene 4.877 filas adaptadas, con la sig
 - Generación de código en lenguajes como Python, orientado a implementaciones numéricas y científicas.
 - Análisis de datos y visualización, aunque con una representación menor en el entrenamiento (1%).
 - Soporte de chat multi-turno gracias al formato de datos `chat` utilizado en el entrenamiento.
-- Integración con el ecosistema HuggingFace (transformers + peft), permitiendo cargar y fusionar el adaptador con el modelo base.
+- Integración con el ecosistema Hugging Face (transformers + peft), permitiendo cargar y fusionar el adaptador con el modelo base.
 
 ## Casos de uso
 
@@ -69,5 +69,5 @@ No disponible. No se han encontrado comparaciones con otros adaptadores o modelo
 
 ## Enlaces
 
-- [HuggingFace - Mariia1234/adaption_floating_point_completions](https://huggingface.co/Mariia1234/adaption_floating_point_completions)
+- [Hugging Face - Mariia1234/adaption_floating_point_completions](https://huggingface.co/Mariia1234/adaption_floating_point_completions)
 - [Adaption Labs](https://adaptionlabs.ai)

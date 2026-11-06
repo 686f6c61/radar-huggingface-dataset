@@ -77,7 +77,7 @@ No se han publicado resultados especificos de esta cuantizacion NVFP4 frente al 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| Inkling (base) | 975B totales / 41B activos (model card) | no disponible | apache-2.0 | Pesos abiertos en HuggingFace (BF16 y NVFP4) | HLE text 29,7 %, SWEBench Verified 77,6 % |
+| Inkling (base) | 975B totales / 41B activos (model card) | no disponible | apache-2.0 | Pesos abiertos en Hugging Face (BF16 y NVFP4) | HLE text 29,7 %, SWEBench Verified 77,6 % |
 | Inkling-NVFP4 (este repositorio) | 552,8B segun safetensors | no disponible | apache-2.0 | Pesos abiertos, cuantizados en NVFP4 | No se han publicado resultados propios |
 | Nemotron 3 Ultra | no disponible | no disponible | pesos abiertos (condiciones no detalladas) | Pesos abiertos | HLE text 26,6 %, SWEBench Verified 70,7 % |
 | Kimi K2.6 | no disponible | no disponible | pesos abiertos (condiciones no detalladas) | Pesos abiertos | HLE text 35,9 %, SWEBench Verified 80,2 % |
@@ -110,5 +110,5 @@ La informacion disponible no incluye numeros de parametros, contexto ni licencia
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentacion de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 - Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo (los enlaces obtenidos corresponden a servicios de correo y no se incluyen por no ser relevantes).

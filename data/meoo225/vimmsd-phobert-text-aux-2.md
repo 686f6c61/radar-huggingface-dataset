@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `vimmsd-phobert-text-aux-2`, publicado por el usuario meoo225 en HuggingFace, es un modelo derivado de la arquitectura PhoBERT (BERT preentrenado para vietnamita) que, por su nombre, parece concebido como un componente auxiliar de texto dentro de un sistema multimodal denominado "Vimmsd". El repositorio es extremadamente minimalista: la model card se limita a declarar la licencia MIT y no aporta información sobre arquitectura, datos de entrenamiento, parámetros ni propósito concreto.
+El modelo `vimmsd-phobert-text-aux-2`, publicado por el usuario meoo225 en Hugging Face, es un modelo derivado de la arquitectura PhoBERT (BERT preentrenado para vietnamita) que, por su nombre, parece concebido como un componente auxiliar de texto dentro de un sistema multimodal denominado "Vimmsd". El repositorio es extremadamente minimalista: la model card se limita a declarar la licencia MIT y no aporta información sobre arquitectura, datos de entrenamiento, parámetros ni propósito concreto.
 
 Por el nombre del identificador y la elección de PhoBERT como base, la hipótesis más razonable es que se trate de un encoder de texto para vietnamita destinado a combinarse con un módulo visual (posiblemente en tareas de detección de manipulación de imágenes o vídeo, dada la terminología "vimmsd"). Sin embargo, esta interpretación no está confirmada por el autor en la información disponible.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Documentación |
 |---|---|---|---|---|---|
-| meoo225/vimmsd-phobert-text-aux-2 | No disponible | No disponible | MIT | HuggingFace (18 descargas) | Mínima (solo licencia) |
-| vinai/phobert-base | ~135 M | 256 tokens | MIT | HuggingFace (ampliamente usado) | Completa, con benchmarks |
-| vinai/phobert-large | ~370 M | 256 tokens | MIT | HuggingFace | Completa, con benchmarks |
-| FacebookAI/roberta-base | ~125 M | 512 tokens | MIT | HuggingFace | Completa, con benchmarks |
+| meoo225/vimmsd-phobert-text-aux-2 | No disponible | No disponible | MIT | Hugging Face (18 descargas) | Mínima (solo licencia) |
+| vinai/phobert-base | ~135 M | 256 tokens | MIT | Hugging Face (ampliamente usado) | Completa, con benchmarks |
+| vinai/phobert-large | ~370 M | 256 tokens | MIT | Hugging Face | Completa, con benchmarks |
+| FacebookAI/roberta-base | ~125 M | 512 tokens | MIT | Hugging Face | Completa, con benchmarks |
 
 La comparación se basa en la hipótesis de que el modelo deriva de PhoBERT; los datos de las alternativas son los publicados por sus autores. No se dispone de métricas de rendimiento del modelo evaluado.
 
@@ -80,7 +80,7 @@ La comparación se basa en la hipótesis de que el modelo deriva de PhoBERT; los
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/meoo225/vimmsd-phobert-text-aux-2
+- Hugging Face: https://huggingface.co/meoo225/vimmsd-phobert-text-aux-2
 - PhoBERT (modelo base probable): https://huggingface.co/vinai/phobert-base
 - Paper de PhoBERT: https://arxiv.org/abs/2003.00744
 - Repositorio oficial de PhoBERT: https://github.com/VinAIResearch/PhoBERT

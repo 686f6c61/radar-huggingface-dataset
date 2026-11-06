@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921` es un checkpoint de pesos publicado en HuggingFace por el usuario `junbrro`. Se trata de un artefacto de entrenamiento experimental más que de un modelo de propósito general: la model card lo describe como "MT Arm I full-token persistent, step 30001", con origen en el paso 18914, e indica que solo se incluyen los pesos finales y la configuración, sin el estado del optimizador ni el de generación de números aleatorios. El repositorio ocupa 14,0 GB y contiene pesos en formato safetensors con 6.964.885.936 parámetros (aproximadamente 6,96 mil millones), lo que supone un modelo de tamaño medio-grande en el rango de los 7 B.
+El modelo identificado como `junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921` es un checkpoint de pesos publicado en Hugging Face por el usuario `junbrro`. Se trata de un artefacto de entrenamiento experimental más que de un modelo de propósito general: la model card lo describe como "MT Arm I full-token persistent, step 30001", con origen en el paso 18914, e indica que solo se incluyen los pesos finales y la configuración, sin el estado del optimizador ni el de generación de números aleatorios. El repositorio ocupa 14,0 GB y contiene pesos en formato safetensors con 6.964.885.936 parámetros (aproximadamente 6,96 mil millones), lo que supone un modelo de tamaño medio-grande en el rango de los 7 B.
 
 Por los metadatos disponibles (tokenizador de acciones incluido en `actlat/`, referencias a `mt_openarm_prq15`, `slot37`, adaptador "Cog" con dimensión oculta 256 y activación SiLU, y la mención a un "runtime multi-grupo/persistente"), todo apunta a un modelo orientado a control robótico o a predicción de acciones discretas sobre un brazo robótico, probablemente mediante fine-tuning multi-tarea sobre un backbone congelado ("Frozen r6h5"). Sin embargo, la model card no confirma explícitamente la arquitectura, la tarea ni el dominio, por lo que estas interpretaciones deben tratarse como hipótesis basadas en la nomenclatura, no como datos verificados.
 
@@ -18,11 +18,11 @@ Su relevancia es limitada fuera del contexto del experimento concreto para el qu
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio solo contiene safetensors en precisión original, sin variantes GGUF, AWQ, GPTQ ni similar |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (ni la model card ni los metadatos de HuggingFace declaran licencia) |
+| Licencia | no disponible (ni la model card ni los metadatos de Hugging Face declaran licencia) |
 | Formato de pesos | safetensors (pesos finales más configuración; se excluye el estado del optimizador y del RNG) |
 | Tamano del repositorio | 14,0 GB |
 | Etiquetas declaradas | safetensors, RLDX-1, region:us |
-| Fecha de publicación | 21 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 21 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones calculadas a partir del recuento de pará
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `junbrro/egopi-mt-r6h5-...-30001` (este modelo) | 6,96 B | no disponible | no disponible | safetensors en HuggingFace |
+| `junbrro/egopi-mt-r6h5-...-30001` (este modelo) | 6,96 B | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado modelos comparables en la información proporcionada, ya que no se especifica la tarea, el dominio ni la arquitectura, y por tanto no es posible establecer una comparación significativa con otras alternativas. Una comparación basada únicamente en el número de parámetros (por ejemplo, con modelos densos de ~7 B de propósito general) carecería de sentido si la tarea real del modelo es el control robótico.
@@ -90,7 +90,7 @@ No se han identificado modelos comparables en la información proporcionada, ya 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921
+- Hugging Face: https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código: no disponible

@@ -86,6 +86,6 @@ No se dispone de modelos comparables concretos dentro de la misma categoria, por
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/schaeferpaul/notes-multimodal-reasoning
+- Hugging Face: https://huggingface.co/schaeferpaul/notes-multimodal-reasoning
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de codigo o demo) en la busqueda web proporcionada.
 - Referencias tematicas mencionadas en las notas, sin URL facilitada: datasets VQAv2, GQA y NLVR2.

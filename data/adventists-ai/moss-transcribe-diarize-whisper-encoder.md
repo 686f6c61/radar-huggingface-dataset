@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks de reconocimiento de voz (WER/CER),
 
 | Modelo | Parametros | Contexto / ventana | Rendimiento en sondas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Transcribe-Diarize-Whisper-Encoder | 307 M | No especificada (80 bins mel) | 99,0 % genero / 88,2 % emocion | Apache-2.0 | safetensors en HuggingFace |
+| MOSS-Transcribe-Diarize-Whisper-Encoder | 307 M | No especificada (80 bins mel) | 99,0 % genero / 88,2 % emocion | Apache-2.0 | safetensors en Hugging Face |
 | OpenMOSS-Team/MOSS-Transcribe-Diarize | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada | Modelo original completo |
 | Qwen3-ASR-0.6B | Aproximadamente 0,6 B | No disponible | 99,2 % genero / 90,9 % emocion | No disponible en la informacion proporcionada | Referenciado como comparativa en la model card |
 | Whisper-large-v3-turbo | No disponible en la informacion proporcionada | No disponible | 88,4 % genero / 82,8 % emocion | No disponible en la informacion proporcionada | Referenciado como comparativa en la model card |
@@ -101,7 +101,7 @@ Las cifras de Qwen3-ASR-0.6B y Whisper-large-v3-turbo proceden de la propia mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder
+- Repositorio en Hugging Face: https://huggingface.co/adventists-ai/MOSS-Transcribe-Diarize-Whisper-Encoder
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Repositorio de codigo DuplexJev: https://github.com/adventists-ai/duplexjev
 - Informe tecnico del modelo original: https://arxiv.org/abs/2601.01554

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIGPose (Causal Intervention Graph Pose) es un modelo de estimación de pose de cuerpo completo (whole-body pose estimation) que aborda el problema del confundimiento visual: los estimadores de pose tienden a confundirse por el contexto visual, como una mano cerca de una taza o un hombro detrás de otra persona. El modelo aplica intervención causal para mitigar este efecto y mejorar la precisión en escenarios con oclusiones y fondos complejos. El repositorio `cigpose-onnx` proporciona modelos ONNX pre-exportados y un script de inferencia ligero, sin necesidad de PyTorch ni MMPose, lo que facilita su integración en producción. El modelo original fue desarrollado por el equipo de 53mins y los pesos provienen del pipeline de entrenamiento original basado en MMPose. La conversión a ONNX y el wrapper de inferencia han sido publicados por namas191297, y la versión en HuggingFace está alojada por ChongwenChang bajo licencia Apache 2.0. El modelo alcanza un 67.5 de Whole AP en COCO-WholeBody.
+CIGPose (Causal Intervention Graph Pose) es un modelo de estimación de pose de cuerpo completo (whole-body pose estimation) que aborda el problema del confundimiento visual: los estimadores de pose tienden a confundirse por el contexto visual, como una mano cerca de una taza o un hombro detrás de otra persona. El modelo aplica intervención causal para mitigar este efecto y mejorar la precisión en escenarios con oclusiones y fondos complejos. El repositorio `cigpose-onnx` proporciona modelos ONNX pre-exportados y un script de inferencia ligero, sin necesidad de PyTorch ni MMPose, lo que facilita su integración en producción. El modelo original fue desarrollado por el equipo de 53mins y los pesos provienen del pipeline de entrenamiento original basado en MMPose. La conversión a ONNX y el wrapper de inferencia han sido publicados por namas191297, y la versión en Hugging Face está alojada por ChongwenChang bajo licencia Apache 2.0. El modelo alcanza un 67.5 de Whole AP en COCO-WholeBody.
 
 ## Especificaciones tecnicas
 
@@ -71,4 +71,4 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 - Repositorio GitHub: https://github.com/namas191297/cigpose-onnx
 - Paquete PyPI: https://pypi.org/project/cigpose-onnx/
 - Documentación en DeepWiki: https://deepwiki.com/namas191297/cigpose-onnx
-- Modelo en HuggingFace: https://huggingface.co/ChongwenChang/cigpose-onnx
+- Modelo en Hugging Face: https://huggingface.co/ChongwenChang/cigpose-onnx

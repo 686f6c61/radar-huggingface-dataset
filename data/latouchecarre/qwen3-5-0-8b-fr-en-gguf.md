@@ -71,9 +71,9 @@ No se dispone de datos verificados de benchmarks ni de fichas comparables en la 
 
 | Modelo | Parámetros | Contexto | Formato / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LaToucheCarre/Qwen3.5-0.8B-FR-EN-GGUF | 656.858.432 (base) | No disponible | GGUF, Q4_K_M, vocabulario recortado a fr/en | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (modelo base) | 656.858.432 | No disponible | Safetensors (repositorio original) | Apache-2.0 | HuggingFace |
-| bartowski/Qwen_Qwen3.5-0.8B-GGUF | 656.858.432 (base) | No disponible | GGUF, múltiples cuantizaciones, vocabulario completo | Apache-2.0 | HuggingFace |
+| LaToucheCarre/Qwen3.5-0.8B-FR-EN-GGUF | 656.858.432 (base) | No disponible | GGUF, Q4_K_M, vocabulario recortado a fr/en | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (modelo base) | 656.858.432 | No disponible | Safetensors (repositorio original) | Apache-2.0 | Hugging Face |
+| bartowski/Qwen_Qwen3.5-0.8B-GGUF | 656.858.432 (base) | No disponible | GGUF, múltiples cuantizaciones, vocabulario completo | Apache-2.0 | Hugging Face |
 
 Frente al modelo base y a la cuantización de bartowski, la única diferencia funcional documentada es el recorte de la matriz de embeddings: menor tamaño de fichero y menor consumo de memoria en el vocabulario, a cambio de perder cualquier capacidad fuera de francés e inglés. No hay datos de rendimiento que permitan afirmar que este recorte mejora o degrada la calidad dentro de fr/en.
 

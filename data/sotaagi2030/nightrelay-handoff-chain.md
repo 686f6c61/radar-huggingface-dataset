@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NightRelay-Handoff-Chain es un repositorio alojado en HuggingFace por el usuario SOTAagi2030 que, a fecha de la informacion disponible, no contiene una model card tecnica convencional ni pesos de modelo descargables. El unico contenido publicado es un bloque de metadatos cripticos que describe lo que parece ser un protocolo de handoff entre agentes o sistemas, con campos como "protocol: nrp-4", "route: dispatch -> platform -> traction -> dispatch", "sealed cutoff: 2026-08-31T23:59:59Z" o "chain: SHA-256 over raw payload bytes". No se declara arquitectura, numero de parametros, longitud de contexto ni cualquier otro atributo propio de un modelo de lenguaje.
+NightRelay-Handoff-Chain es un repositorio alojado en Hugging Face por el usuario SOTAagi2030 que, a fecha de la informacion disponible, no contiene una model card tecnica convencional ni pesos de modelo descargables. El unico contenido publicado es un bloque de metadatos cripticos que describe lo que parece ser un protocolo de handoff entre agentes o sistemas, con campos como "protocol: nrp-4", "route: dispatch -> platform -> traction -> dispatch", "sealed cutoff: 2026-08-31T23:59:59Z" o "chain: SHA-256 over raw payload bytes". No se declara arquitectura, numero de parametros, longitud de contexto ni cualquier otro atributo propio de un modelo de lenguaje.
 
 El repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica licencia ni idiomas soportados, y sus unicos tags son "region:us". El payload descrito ocupa 12 bytes, lo que refuerza la idea de que no se trata de un artefacto de pesos neuronales sino de un registro de coordinacion entre sesiones (identificador HFX-22) con un esquema de ranking determinista (minimo de confianza descendente, bytes totales ascendente, fecha de finalizacion descendente, id de sesion ascendente).
 
@@ -77,5 +77,5 @@ No disponible. No se puede establecer una categoria de comparacion porque el rep
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/NightRelay-Handoff-Chain
+- Hugging Face: https://huggingface.co/SOTAagi2030/NightRelay-Handoff-Chain
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

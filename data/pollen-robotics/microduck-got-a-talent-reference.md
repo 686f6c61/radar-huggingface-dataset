@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-got-a-talent-reference es una politica de control para el robot MicroDuck desarrollada por Pollen Robotics y publicada en HuggingFace. No es un modelo de lenguaje: se trata de un checkpoint de aprendizaje por refuerzo que implementa una marcha (gait) para el slot `sitstand`, es decir, el robot se sienta y se levanta ante la bandera `sit` y mueve la cabeza bajo comando. El artefacto se publica como `policy.onnx` con un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck.
+microduck-got-a-talent-reference es una politica de control para el robot MicroDuck desarrollada por Pollen Robotics y publicada en Hugging Face. No es un modelo de lenguaje: se trata de un checkpoint de aprendizaje por refuerzo que implementa una marcha (gait) para el slot `sitstand`, es decir, el robot se sienta y se levanta ante la bandera `sit` y mueve la cabeza bajo comando. El artefacto se publica como `policy.onnx` con un `manifest.json` que sigue el esquema 2 del manifiesto de politicas de microduck.
 
 El modelo opera a 50 Hz, consume una observacion de 61 dimensiones por paso y emite 14 acciones. La politica es perpetua: se ejecuta de forma continua hasta que se le indique lo contrario. El normalizador de observaciones esta integrado dentro del propio ONNX, de modo que el daemon del robot puede alimentar observaciones en crudo sin preprocesado adicional.
 
@@ -13,7 +13,7 @@ Corresponde al checkpoint 2000 de un entrenamiento realizado con mjlab (base `mj
 | Parametro | Valor |
 |---|---|
 | Arquitectura | No disponible. Es una politica de control entrenada con aprendizaje por refuerzo; la model card no especifica la topologia de la red |
-| Parametros totales | No disponible (tamano del repositorio en HuggingFace: 0.0 GB) |
+| Parametros totales | No disponible (tamano del repositorio en Hugging Face: 0.0 GB) |
 | Parametros activos | No aplica (no es un modelo de mezcla de expertos) |
 | Longitud de contexto | No disponible. No aplica: no es un modelo de lenguaje; la politica consume una observacion de 61 dimensiones en cada paso de control |
 | Tipos de cuantizacion | No disponible (se distribuye unicamente en formato ONNX) |
@@ -85,7 +85,7 @@ No disponible. La informacion proporcionada no incluye otras politicas del slot 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference
+- Modelo en Hugging Face: https://huggingface.co/pollen-robotics/microduck-got-a-talent-reference
 - Repositorio del robot MicroDuck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges
 - Rama de entrenamiento: `swag-stage`, commit `0f11bbdd9`

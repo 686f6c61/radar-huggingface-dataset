@@ -6,7 +6,7 @@ WannaMed Pro ASR es un modelo de reconocimiento automático del habla (ASR) espe
 
 El modelo se distribuye en dos variantes de despliegue, Tiny y Edge, ambas optimizadas para ejecución en dispositivos de gama baja. Su motor de inferencia está escrito en C11 puro (`wg_engine`), sin dependencias de Python, PyTorch ni Java, lo que reduce drásticamente el consumo de memoria: aproximadamente 6,3 Mo de RAM en la edición Tiny 8-bit y 39,2 Mo en la edición Edge 8-bit. Soporta francés, inglés y árabe, y está pensado para entornos de borde (móvil, embebido, CPU ARM64 y x86-64) además de GPU NVIDIA.
 
-La relevancia actual del modelo radica en su propuesta de ASR médico soberano, con pesos propios en formato binario `.wgm1` verificados por SHA-256 y sin pesos de terceros. No obstante, la información pública disponible es limitada: el repositorio de HuggingFace aparece con 0,0 GB, los pesos se solicitan por correo y no se han publicado resultados de benchmarks ni métricas de error (WER) en la información accesible.
+La relevancia actual del modelo radica en su propuesta de ASR médico soberano, con pesos propios en formato binario `.wgm1` verificados por SHA-256 y sin pesos de terceros. No obstante, la información pública disponible es limitada: el repositorio de Hugging Face aparece con 0,0 GB, los pesos se solicitan por correo y no se han publicado resultados de benchmarks ni métricas de error (WER) en la información accesible.
 
 ## Especificaciones técnicas
 
@@ -73,7 +73,7 @@ No se especifica la unidad de audio evaluada ni las condiciones exactas de medic
 | Modelo | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | WannaMed Pro ASR | Conformer MoE CTC+RNN-T | fr, en, ar | other (bajo solicitud) | Pesos privados, solicitud por correo |
-| Whisper (OpenAI) | Transformer encoder-decoder | multilingüe | MIT | Pesos abiertos en HuggingFace |
+| Whisper (OpenAI) | Transformer encoder-decoder | multilingüe | MIT | Pesos abiertos en Hugging Face |
 | wav2vec 2.0 (Meta) | CNN + transformer | multilingüe | MIT/Apache | Pesos abiertos |
 | NVIDIA NeMo Conformer | Conformer CTC/RNN-T | multilingüe | Apache 2.0 | Pesos abiertos |
 
@@ -88,11 +88,11 @@ La comparación directa de rendimiento (WER) no es posible porque WannaMed Pro A
 - El formato de pesos `.wgm1` es propietario y requiere el motor `wg_engine`, lo que dificulta la integración con ecosistemas estándar (PyTorch, ONNX, GGUF).
 - Riesgo de alucinación y errores de transcripción en jerga médica no cubierta por los expertos MoE; no se documenta ningún mecanismo de mitigación.
 - No se dispone de información sobre sesgos demográficos, acústicos ni de acento.
-- El repositorio de HuggingFace figura con 0,0 GB y solo 20 descargas, lo que sugiere una disponibilidad muy limitada de artefactos.
+- El repositorio de Hugging Face figura con 0,0 GB y solo 20 descargas, lo que sugiere una disponibilidad muy limitada de artefactos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WannaGoTech/WannaMed-Pro-ASR
+- Modelo en Hugging Face: https://huggingface.co/WannaGoTech/WannaMed-Pro-ASR
 - Demo interactiva: https://huggingface.co/spaces/WannaGoTech/WannaMed-Pro-ASR
 - Sitio oficial WannaMed ASR: https://wannamed.com/asr/
 - Empresa desarrolladora: https://wannago.tech

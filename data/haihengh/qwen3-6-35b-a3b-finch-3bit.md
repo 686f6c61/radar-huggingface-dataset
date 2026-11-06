@@ -107,11 +107,11 @@ Segun la model card, esto supone entre 1,4x y 1,7x la tasa de decodificacion del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finch-3bit
+- Modelo en Hugging Face: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finch-3bit
 - Repositorio del motor FinchMoE: https://github.com/haihengh/finchMoE
 - Build de 3 bits alternativa (mismo autor): https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-3bit
 - Build de 4 bits abliterated: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Modelo base en ModelScope: https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B
 - Blog de lanzamiento de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Blog de Alibaba Cloud sobre el modelo base: https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043

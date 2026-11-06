@@ -100,7 +100,7 @@ Puntos destacados segun el autor: por delante de Jev 1.13 en transferencia a una
 
 | Modelo | Parametros | Contexto | Rendimiento relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArseneLupin v1.1 | 4,66B (4,21B usados para decisiones) | no disponible | 49,05 en el Decision Index; lidera en transferencia no entrenada, ESCI, MASSIVE, frances, amenazas y odio | apache-2.0 | HuggingFace (original y espejo) |
+| ArseneLupin v1.1 | 4,66B (4,21B usados para decisiones) | no disponible | 49,05 en el Decision Index; lidera en transferencia no entrenada, ESCI, MASSIVE, frances, amenazas y odio | apache-2.0 | Hugging Face (original y espejo) |
 | Jev 1.13 | no disponible | no disponible | 59,51 en el Decision Index; mejor en jabr v2, Banking77, CLINC150 y flujos calibrados de seguridad, agentes y atencion al cliente | no disponible | no disponible |
 | openjev 26B | 26B (inferido del nombre) | no disponible | 92,5-98,6 % en varias tareas de eleccion; por detras en ESCI, MASSIVE y frances, por delante en algunas calibraciones | no disponible | no disponible |
 | laya 421M | 421M (inferido del nombre) | no disponible | claramente por debajo en casi todas las tareas (por ejemplo, 14,0 % en el test de la mediana) | no disponible | no disponible |
@@ -125,7 +125,7 @@ El Decision Index del autor situa como mejor reproduccion por debajo de 9B param
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/DNG/ArseneLupin-v1.1-bucket
+- Repositorio en Hugging Face (espejo): https://huggingface.co/DNG/ArseneLupin-v1.1-bucket
 - Repositorio original: https://huggingface.co/IBOU-SEARCH/ArseneLupin-v1.1
 - Revision espejada: https://huggingface.co/IBOU-SEARCH/ArseneLupin-v1.1/tree/834a029c047a37ea91fbda41b08f340e79163088
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

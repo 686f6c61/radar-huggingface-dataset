@@ -13,7 +13,7 @@ La relevancia actual viene de dos factores: la cuantizacion Q4_K_M (con tecnica 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible en la informacion proporcionada (paquete de inferencia derivado del modelo base Ornith-1.5-35B-A3B; la nomenclatura "A3B" del modelo fuente sugiere mezcla de expertos con ~3B parametros activos, sin confirmacion documental) |
-| Parametros totales | 842.700.992 segun los metadatos de HuggingFace del repositorio (dato safetensors); la model card del paquete declara escala de parametros 35B para el modelo fuente |
+| Parametros totales | 842.700.992 segun los metadatos de Hugging Face del repositorio (dato safetensors); la model card del paquete declara escala de parametros 35B para el modelo fuente |
 | Parametros activos | no disponible (el modelo fuente se identifica como A3B, lo que apunta a ~3B activos, sin cifra confirmada) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q4_K_M (esta variante); el paquete solo distribuye esta cuantizacion |
@@ -78,9 +78,9 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks, cont
 
 ## Limitaciones y advertencias
 
-- Discrepancia en el recuento de parametros: los metadatos de HuggingFace del repositorio indican 842.700.992 parametros (dato safetensors), mientras que la model card declara escala de 35B para el modelo fuente. Cualquiera de las dos cifras debe verificarse contra el modelo original antes de dimensionar hardware.
+- Discrepancia en el recuento de parametros: los metadatos de Hugging Face del repositorio indican 842.700.992 parametros (dato safetensors), mientras que la model card declara escala de 35B para el modelo fuente. Cualquiera de las dos cifras debe verificarse contra el modelo original antes de dimensionar hardware.
 - El repositorio no es un modelo autonomo: es un paquete de capas que requiere el runtime Mesh LLM y el manifiesto del paquete. No se puede cargar directamente en llama.cpp, vLLM o transformers sin un proceso de reconstruccion.
-- La model card indica "Package size: 0 B" y lista unicamente el manifiesto en la seccion de artefactos incluidos, mientras que los metadatos de HuggingFace reportan 23,1 GB de repositorio; conviene comprobar el contenido real del repositorio antes de descargarlo.
+- La model card indica "Package size: 0 B" y lista unicamente el manifiesto en la seccion de artefactos incluidos, mientras que los metadatos de Hugging Face reportan 23,1 GB de repositorio; conviene comprobar el contenido real del repositorio antes de descargarlo.
 - Ausencia total de datos de evaluacion: sin benchmarks, sin numero de tokens de entrenamiento, sin composicion del dataset y sin documentacion de alineacion (RLHF/DPO), no es posible estimar calidad, tasa de alucinacion ni comportamiento en dominios concretos.
 - Idiomas no declarados: el campo de idiomas esta vacio en los metadatos, de modo que el soporte multilingue (incluido el castellano) no esta garantizado ni documentado.
 - Longitud de contexto desconocida: impide planificar aplicaciones que dependan de ventanas largas (analisis de documentos extensos, conversaciones de muchos turnos).
@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye datos de benchmarks, cont
 
 ## Enlaces
 
-- Repositorio del paquete en HuggingFace: https://huggingface.co/meshllm/Ornith-1.5-35B-Q4_K_M-layers
+- Repositorio del paquete en Hugging Face: https://huggingface.co/meshllm/Ornith-1.5-35B-Q4_K_M-layers
 - Modelo fuente: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio de Mesh LLM en GitHub: https://github.com/Mesh-LLM/mesh-llm

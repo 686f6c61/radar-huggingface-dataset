@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Unlimited-OCR es un modelo de visión-lenguaje especializado en extracción de texto y parseo de documentos, desarrollado por Baidu y publicado originalmente bajo el identificador `baidu/Unlimited-OCR`. La versión aquí descrita es un espejo alojado por el usuario MrFox131 en HuggingFace (`MrFox131/Unlimited-OCR`), con licencia MIT y 34 descargas en el momento de la consulta. El modelo se presenta como una evolución de DeepSeek-OCR y está orientado al parseo de documentos de largo horizonte en una sola pasada ("one-shot long-horizon parsing"), incluyendo documentos multipágina y PDF completos.
+Unlimited-OCR es un modelo de visión-lenguaje especializado en extracción de texto y parseo de documentos, desarrollado por Baidu y publicado originalmente bajo el identificador `baidu/Unlimited-OCR`. La versión aquí descrita es un espejo alojado por el usuario MrFox131 en Hugging Face (`MrFox131/Unlimited-OCR`), con licencia MIT y 34 descargas en el momento de la consulta. El modelo se presenta como una evolución de DeepSeek-OCR y está orientado al parseo de documentos de largo horizonte en una sola pasada ("one-shot long-horizon parsing"), incluyendo documentos multipágina y PDF completos.
 
 Técnicamente es un modelo de 3.336.106.240 parámetros (aproximadamente 3,3 mil millones) en formato safetensors, con un repositorio de 6,8 GB. Se distribuye con código personalizado (`trust_remote_code=True`) y requiere la librería `transformers` (versión 4.57.1 en las pruebas del autor) sobre GPUs NVIDIA. Soporta entrada de imagen y texto, con pipeline `image-text-to-text`, y está etiquetado como multilingüe.
 
-Su relevancia actual radica en que aborda el cuello de botella del OCR tradicional en documentos extensos: en lugar de procesar página a página con pérdida de contexto, el modelo permite concatenar múltiples páginas en una sola inferencia con una longitud máxima de 32.768 tokens, lo que facilita la reconstrucción coherente de tablas, formularios y estructuras de documento a lo largo de varias páginas. Cuenta con soporte de inferencia en vLLM y SGLang, además de un espacio de demostración en HuggingFace Spaces.
+Su relevancia actual radica en que aborda el cuello de botella del OCR tradicional en documentos extensos: en lugar de procesar página a página con pérdida de contexto, el modelo permite concatenar múltiples páginas en una sola inferencia con una longitud máxima de 32.768 tokens, lo que facilita la reconstrucción coherente de tablas, formularios y estructuras de documento a lo largo de varias páginas. Cuenta con soporte de inferencia en vLLM y SGLang, además de un espacio de demostración en Hugging Face Spaces.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited-OCR (Baidu) | ~3,3 B | 32.768 tokens | OCR y parseo multipágina | MIT | HuggingFace, ModelScope, Baidu Cloud, vLLM, SGLang |
+| Unlimited-OCR (Baidu) | ~3,3 B | 32.768 tokens | OCR y parseo multipágina | MIT | Hugging Face, ModelScope, Baidu Cloud, vLLM, SGLang |
 | DeepSeek-OCR | no disponible | no disponible | OCR | no disponible | GitHub de DeepSeek |
 | OCR tradicional (p. ej., Tesseract) | no aplica | no aplica | OCR página a página | Apache 2.0 | Amplia |
 
@@ -84,11 +84,11 @@ La model card sitúa explícitamente a Unlimited-OCR como una evolución de Deep
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/MrFox131/Unlimited-OCR
-- HuggingFace (original): https://huggingface.co/baidu/Unlimited-OCR
+- Hugging Face (espejo): https://huggingface.co/MrFox131/Unlimited-OCR
+- Hugging Face (original): https://huggingface.co/baidu/Unlimited-OCR
 - GitHub: https://github.com/baidu/Unlimited-OCR
 - arXiv: https://arxiv.org/abs/2606.23050
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
 - Receta de vLLM: https://recipes.vllm.ai/baidu/Unlimited-OCR
 - ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR
 - Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb

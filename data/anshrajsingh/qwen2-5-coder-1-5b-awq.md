@@ -36,7 +36,7 @@ No se han proporcionado detalles adicionales sobre el número de tokens de entre
 - Razonamiento: el modelo base Qwen2.5-Coder-1.5B-Instruct incluye capacidades de razonamiento lógico y matemático aplicadas a problemas de programación.
 - Conversacional: al estar basado en un modelo instruct, soporta interacción en formato chat mediante la plantilla de conversación de Qwen.
 - Cuantización AWQ: optimizado para inferencia eficiente en hardware con recursos limitados.
-- Compatibilidad con transformers y text-generation-inference: se puede cargar con la API estándar de HuggingFace y es compatible con endpoints de generación de texto.
+- Compatibilidad con transformers y text-generation-inference: se puede cargar con la API estándar de Hugging Face y es compatible con endpoints de generación de texto.
 
 No se especifican capacidades de tool calling, agentes, visión o audio en la información disponible.
 
@@ -84,7 +84,7 @@ La comparativa se basa en datos públicos del modelo base y de CodeLlama. La ver
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Anshrajsingh/qwen2.5-coder-1.5b-awq)
+- [Modelo en Hugging Face](https://huggingface.co/Anshrajsingh/qwen2.5-coder-1.5b-awq)
 - [Modelo base: Qwen/Qwen2.5-Coder-1.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct)
 - [Dataset de SFT: iamtarun/python_code_instructions_18k_alpaca](https://huggingface.co/datasets/iamtarun/python_code_instructions_18k_alpaca)
 - [Dataset de DPO: Vezora/Code-Preference-Pairs](https://huggingface.co/datasets/Vezora/Code-Preference-Pairs)

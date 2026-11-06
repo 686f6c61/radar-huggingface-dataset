@@ -72,6 +72,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fwgpiyawudk/chandra-ocr-2-bf16-mlx)
+- [Modelo en Hugging Face](https://huggingface.co/fwgpiyawudk/chandra-ocr-2-bf16-mlx)
 - [Modelo base original: datalab-to/chandra-ocr-2](https://huggingface.co/datalab-to/chandra-ocr-2)
 - No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

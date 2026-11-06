@@ -69,7 +69,7 @@ No se han proporcionado datos comparativos verificables en la informacion dispon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.3 | 22B | no disponible | no disponible | ltx-2-community-license-agreement | pesos abiertos en HuggingFace, demo en la nube y ComfyUI |
+| LTX-2.3 | 22B | no disponible | no disponible | ltx-2-community-license-agreement | pesos abiertos en Hugging Face, demo en la nube y ComfyUI |
 | Alternativas de generacion de video con pesos abiertos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han proporcionado datos comparativos verificables en la informacion dispon
 
 ## Enlaces
 
-- Repositorio consultado en HuggingFace: https://huggingface.co/wolf1280/LTX-2.3
+- Repositorio consultado en Hugging Face: https://huggingface.co/wolf1280/LTX-2.3
 - Modelo oficial LTX-2: https://huggingface.co/Lightricks/LTX-2
 - Paper (arXiv 2601.03233) - LTX-2: Efficient Joint Audio-Visual Foundation Model: https://huggingface.co/papers/2601.03233
 - Repositorio de codigo LTX-2: https://github.com/Lightricks/LTX-2

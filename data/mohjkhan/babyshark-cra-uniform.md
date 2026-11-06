@@ -74,8 +74,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Accuracy (SAIL-2017 val) | Macro-F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-1.5B base | 1.500 M | 256 en entrenamiento (nativo no indicado) | 0.3571 | 0.3188 | No disponible | HuggingFace |
-| babyshark-cra-uniform | 1.500 M + LoRA r=8 | 256 en entrenamiento | 0.6317 | 0.6104 | No disponible | HuggingFace (requiere codigo del proyecto) |
+| Qwen2.5-1.5B base | 1.500 M | 256 en entrenamiento (nativo no indicado) | 0.3571 | 0.3188 | No disponible | Hugging Face |
+| babyshark-cra-uniform | 1.500 M + LoRA r=8 | 256 en entrenamiento | 0.6317 | 0.6104 | No disponible | Hugging Face (requiere codigo del proyecto) |
 
 No se dispone de datos publicados de otros adaptadores comparables de la misma categoria (ajuste fino LoRA guiado por interpretabilidad para sentimiento code-mixed hindi-ingles) en la informacion proporcionada. Dentro del propio proyecto InterpAdapt existen otros brazos CRA con mascaras de cabezas distintas, pero sus resultados no se incluyen en la informacion disponible. La busqueda web realizada no devolvio resultados relevantes: los unicos enlaces recuperados pertenecen al portal fiscal frances impots.gouv.fr y no guardan relacion con el modelo.
 
@@ -93,7 +93,7 @@ No se dispone de datos publicados de otros adaptadores comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohjkhan/babyshark-cra-uniform
+- Modelo en Hugging Face: https://huggingface.co/mohjkhan/babyshark-cra-uniform
 - Repositorio del proyecto InterpAdapt-Hinglish-finetuning: https://github.com/bala-skv/InterpAdapt-Hinglish-finetuning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/satyam-arora-iiit-hyderabad/babyshark-sail2017-stage2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mandibuzz es un modelo alojado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card publicada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no permite determinar de forma fiable el numero de parametros ni el tipo de modelo.
+Mandibuzz es un modelo alojado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card publicada no contiene ninguna descripcion tecnica: se reduce a la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no permite determinar de forma fiable el numero de parametros ni el tipo de modelo.
 
 No se dispone de informacion sobre el pipeline asociado, los idiomas soportados ni los formatos de pesos. El modelo no registra descargas ni interacciones en el momento de la consulta, y su fecha de creacion indicada (2026-10-30) es posterior a la redaccion de esta ficha, lo que apunta a un artefacto de prueba o a metadatos inconsistentes.
 
@@ -39,11 +39,11 @@ Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composici
 ## Casos de uso
 
 - Evaluacion exploratoria: inspeccionar los archivos del repositorio para determinar el formato de pesos y la arquitectura antes de plantear cualquier uso.
-- Pruebas de integracion de pipelines: usar el modelo como artefacto de prueba en un entorno de desarrollo para validar el flujo de carga de modelos desde HuggingFace.
+- Pruebas de integracion de pipelines: usar el modelo como artefacto de prueba en un entorno de desarrollo para validar el flujo de carga de modelos desde Hugging Face.
 - Experimentacion academica con licencia permisiva: la licencia CC-BY-4.0 permite reutilizacion con atribucion, lo que facilita su inclusion en trabajos que requieran redistribucion.
 - Benchmarking interno de infraestructura: medir tiempos de carga y consumo de memoria de un artefacto de 0,1 GB en distintos runners.
 - Docencia sobre publicacion de modelos: emplearlo como ejemplo de model card incompleta y de buenas practicas de documentacion.
-- Archivado y trazabilidad: conservar una copia con la atribucion correspondiente para estudios sobre el ecosistema de modelos publicados en HuggingFace.
+- Archivado y trazabilidad: conservar una copia con la atribucion correspondiente para estudios sobre el ecosistema de modelos publicados en Hugging Face.
 
 En todos los casos, el uso en produccion, atencion al cliente, generacion de codigo o cualquier aplicacion finalista requiere primero verificar las capacidades reales del modelo, que no estan documentadas.
 
@@ -65,7 +65,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mandibuzz | no disponible | no disponible | CC-BY-4.0 | HuggingFace |
+| Mandibuzz | no disponible | no disponible | CC-BY-4.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Mandibuzz
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Mandibuzz
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

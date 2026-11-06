@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.9f
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.9f
 - Dataset de entrenamiento: https://huggingface.co/datasets/KucLab/kuclab_hertz_0.9f
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Sitio de KucLab: https://kuclab.org

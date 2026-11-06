@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 | Modelo | Parametros | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3_vit_306m_enc.qwen3_5_2b | 330,6 M | Feature extraction / torre visual de VLM | Apache 2.0 | HuggingFace (timm) |
+| qwen3_vit_306m_enc.qwen3_5_2b | 330,6 M | Feature extraction / torre visual de VLM | Apache 2.0 | Hugging Face (timm) |
 | CLIP ViT-L/14 | no disponible en la informacion | Contraste imagen-texto | no disponible en la informacion | no disponible en la informacion |
 | SigLIP | no disponible en la informacion | Contraste imagen-texto (sigmoide) | no disponible en la informacion | no disponible en la informacion |
 | DINOv2 ViT-L | no disponible en la informacion | Autoaprendizaje visual | no disponible en la informacion | no disponible en la informacion |
@@ -90,13 +90,13 @@ No se dispone de datos de rendimiento de este checkpoint que permitan una compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/timm/qwen3_vit_306m_enc.qwen3_5_2b
+- Repositorio Hugging Face: https://huggingface.co/timm/qwen3_vit_306m_enc.qwen3_5_2b
 - Modelo base Qwen3.5-2B: https://huggingface.co/Qwen/Qwen3.5-2B
 - Revision de origen: https://huggingface.co/Qwen/Qwen3.5-2B/tree/15852e8c16360a2fea060d615a32b45270f8a8fc
 - Licencia del modelo de origen: https://huggingface.co/Qwen/Qwen3.5-2B/blob/15852e8c16360a2fea060d615a32b45270f8a8fc/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5
 - PyTorch Image Models (timm), repositorio: https://github.com/huggingface/pytorch-image-models
-- Organizacion timm en HuggingFace: https://huggingface.co/timm
-- Documentacion de timm en HuggingFace: https://huggingface.co/docs/timm/index
+- Organizacion timm en Hugging Face: https://huggingface.co/timm
+- Documentacion de timm en Hugging Face: https://huggingface.co/docs/timm/index
 - Documentacion de timm (timmdocs): https://timm.fast.ai/
 - Paquete timm en PyPI: https://pypi.org/project/timm/

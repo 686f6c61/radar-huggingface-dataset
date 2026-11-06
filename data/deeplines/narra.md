@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Narra es un modelo publicado en HuggingFace por el usuario u organizacion Deeplines bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene el campo `license: apache-2.0`, sin descripcion funcional, sin arquitectura declarada, sin tamano de parametros ni ventana de contexto. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado, lo que indica que se trata de un artefacto recien creado (fecha de creacion y ultima actualizacion: 2026-10-01T13:42:23Z) y practicamente sin traccion en la comunidad.
+Narra es un modelo publicado en Hugging Face por el usuario u organizacion Deeplines bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada unicamente contiene el campo `license: apache-2.0`, sin descripcion funcional, sin arquitectura declarada, sin tamano de parametros ni ventana de contexto. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado, lo que indica que se trata de un artefacto recien creado (fecha de creacion y ultima actualizacion: 2026-10-01T13:42:23Z) y practicamente sin traccion en la comunidad.
 
 No ha sido posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, multimodal) ni que innovaciones tecnicas incorpora. El nombre "Narra" sugiere una posible orientacion a generacion de narrativa, y la busqueda web devuelve un proyecto de codigo abierto llamado tambien Narra (herramienta de linea de comandos en Python para generacion de narrativa no lineal), pero no existe ninguna evidencia en la informacion proporcionada de que ambos esten relacionados. Cualquier afirmacion en ese sentido seria especulativa.
 
@@ -25,7 +25,7 @@ Otros metadatos verificables:
 
 | Campo | Valor |
 |---|---|
-| ID en HuggingFace | Deeplines/Narra |
+| ID en Hugging Face | Deeplines/Narra |
 | Autor | Deeplines |
 | Pipeline declarado | no disponible |
 | Tags | license:apache-2.0, region:us |
@@ -90,7 +90,7 @@ No disponible. La informacion proporcionada no permite identificar la categoria 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Deeplines/Narra
+- Hugging Face: https://huggingface.co/Deeplines/Narra
 - GitHub de un proyecto homonimo, sin relacion confirmada con este modelo: https://github.com/soapko/narra
 
 Los siguientes resultados de busqueda web aparecieron en la consulta, pero no guardan relacion verificable con el modelo Deeplines/Narra y se listan unicamente por trazabilidad:

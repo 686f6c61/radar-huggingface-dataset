@@ -78,8 +78,8 @@ La comparativa se basa en caracteristicas generales, no en benchmarks publicados
 
 ## Enlaces
 
-- Modelo en HuggingFace (version GGUF): https://huggingface.co/ldov/fsmn-vad
-- Modelo original en HuggingFace: https://huggingface.co/funasr/fsmn-vad
+- Modelo en Hugging Face (version GGUF): https://huggingface.co/ldov/fsmn-vad
+- Modelo original en Hugging Face: https://huggingface.co/funasr/fsmn-vad
 - Runtime llama.cpp de FunASR: https://github.com/modelscope/FunASR/tree/main/runtime/llama.cpp
 - Repositorio de referencia (lovemefan/fsmn-vad): https://github.com/lovemefan/fsmn-vad
 - Documentacion de FSMN-VAD en ManySpeech: https://manyeyes.github.io/manyspeech/en/models/vad/fsmn-vad.html

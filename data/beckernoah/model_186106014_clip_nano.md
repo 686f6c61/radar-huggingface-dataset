@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`model_186106014_clip_nano` es una implementación a escala nano de la arquitectura CLIP (Contrastive Language-Image Pre-training) orientada a tareas de matching (emparejamiento) entre modalidades de imagen y texto. El modelo ha sido publicado por el usuario Beckernoah en HuggingFace bajo licencia MIT, aunque no se proporcionan datos sobre su entrenamiento, tamaño o rendimiento. La model card describe un diseño minimalista: atención estándar, fusión mediante estrategia Tucker, activación GeLU tanh, normalización ScaleNorm, inicialización Kaiming y optimización con LAMB y un scheduler exponencial.
+`model_186106014_clip_nano` es una implementación a escala nano de la arquitectura CLIP (Contrastive Language-Image Pre-training) orientada a tareas de matching (emparejamiento) entre modalidades de imagen y texto. El modelo ha sido publicado por el usuario Beckernoah en Hugging Face bajo licencia MIT, aunque no se proporcionan datos sobre su entrenamiento, tamaño o rendimiento. La model card describe un diseño minimalista: atención estándar, fusión mediante estrategia Tucker, activación GeLU tanh, normalización ScaleNorm, inicialización Kaiming y optimización con LAMB y un scheduler exponencial.
 
 Se trata de un repositorio muy reducido que contiene únicamente un archivo Python (`model_186106014_clip_nano.py`) sin pesos preentrenados ni documentación adicional. Su relevancia es fundamentalmente educativa o de experimentación, ya que muestra una implementación compacta de CLIP para fines de aprendizaje o pruebas conceptuales. No hay indicios de que haya sido entrenado con datos reales ni de que pueda usarse en producción sin un proceso de entrenamiento previo.
 

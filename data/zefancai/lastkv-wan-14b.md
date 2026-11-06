@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZefanCai/LastKV-Wan-14B es un repositorio de modelo alojado en HuggingFace por el usuario ZefanCai, publicado bajo licencia MIT y etiquetado con region:us. En el momento de redactar esta ficha, el repositorio no registra descargas ni "likes", no declara pipeline de inferencia y su model card se limita a una linea de frontmatter con la licencia (`license: mit`), sin descripcion, sin arquitectura declarada y sin resultados de evaluacion.
+ZefanCai/LastKV-Wan-14B es un repositorio de modelo alojado en Hugging Face por el usuario ZefanCai, publicado bajo licencia MIT y etiquetado con region:us. En el momento de redactar esta ficha, el repositorio no registra descargas ni "likes", no declara pipeline de inferencia y su model card se limita a una linea de frontmatter con la licencia (`license: mit`), sin descripcion, sin arquitectura declarada y sin resultados de evaluacion.
 
 El nombre del repositorio sugiere dos elementos que conviene tratar con cautela: por un lado, "Wan-14B" apunta a un modelo de aproximadamente 14 000 millones de parametros con una nomenclatura asociada a la familia Wan; por otro, "LastKV" podria referirse a una tecnica de gestion de cache de claves y valores (KV cache). Ninguna de estas dos interpretaciones esta confirmada por la model card ni por documentacion adicional, por lo que deben considerarse hipotesis de trabajo y no especificaciones verificadas.
 
@@ -96,7 +96,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ZefanCai/LastKV-Wan-14B
+- Repositorio en Hugging Face: https://huggingface.co/ZefanCai/LastKV-Wan-14B
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

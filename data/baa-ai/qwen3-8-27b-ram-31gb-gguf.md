@@ -90,7 +90,7 @@ La comparativa con otros modelos de la misma categoría (p. ej., Qwen3-30B-A3B o
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-31GB-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-31GB-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Archivo MLX hermano (con visión): https://huggingface.co/baa-ai/Qwen3.8-27B-RAM-24GB-MLX
 - Repositorio GitHub de Alibaba para Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

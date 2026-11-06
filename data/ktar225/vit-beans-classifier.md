@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vit-beans-classifier es un modelo de clasificación de imágenes publicado por el usuario Ktar225 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 píxeles y resolución de entrada de 224x224, preentrenado originalmente sobre ImageNet-21k. El modelo resultante cuenta con 85.800.963 parámetros y se distribuye bajo licencia Apache-2.0 en formato safetensors.
+vit-beans-classifier es un modelo de clasificación de imágenes publicado por el usuario Ktar225 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del checkpoint google/vit-base-patch16-224-in21k, un Vision Transformer de tipo base con parches de 16x16 píxeles y resolución de entrada de 224x224, preentrenado originalmente sobre ImageNet-21k. El modelo resultante cuenta con 85.800.963 parámetros y se distribuye bajo licencia Apache-2.0 en formato safetensors.
 
 El modelo resuelve una tarea concreta de clasificación de imágenes, presumiblemente relacionada con judías o alubias (beans) a juzgar por su identificador, aunque la model card no documenta el conjunto de datos de entrenamiento ni la taxonomía de clases. El autor declara una precisión de 0,9531 y una pérdida de 0,1742 sobre el conjunto de evaluación, con un mejor resultado intermedio de 0,9850 de accuracy en la segunda época.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada y muy acotada: es un experimento de ajuste fino sin do
 | Tarea (pipeline) | image-classification |
 | Dataset de entrenamiento | No disponible (la model card indica "unknown dataset") |
 | Metrica declarada | accuracy |
-| Fecha de publicacion | 2026-09-15 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-15 (según metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-15 |
 | Tamano del repositorio | 1,4 GB |
 | Descargas / me gusta | 0 / 0 |
@@ -56,7 +56,7 @@ El ajuste fino se realizó durante 3 épocas con un tamaño de lote de 16 tanto 
 - Investigación académica sobre transferencia de aprendizaje: comparar el comportamiento de un ViT-Base preentrenado en ImageNet-21k frente a alternativas con arquitecturas convolucionales en un dominio pequeño y especializado.
 - Extracción de embeddings visuales para búsqueda por similitud: usar las representaciones internas del backbone como vector de características para recuperar imágenes similares en un catálogo.
 - Filtrado previo en sistemas de monitorización de cultivos: descartar o priorizar imágenes antes de enviarlas a un modelo más grande o a un revisor humano, reduciendo coste computacional en despliegues con recursos limitados.
-- Docencia y demostración de pipelines de HuggingFace: ejemplo mínimo de uso de Trainer, safetensors y del pipeline de image-classification.
+- Docencia y demostración de pipelines de Hugging Face: ejemplo mínimo de uso de Trainer, safetensors y del pipeline de image-classification.
 
 ## Benchmarks y rendimiento
 
@@ -93,10 +93,10 @@ No se han publicado resultados de benchmarks comparativos para este ajuste fino,
 
 | Modelo | Parametros | Resolucion de entrada | Preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ktar225/vit-beans-classifier | 85,8 M | 224x224 | Fine-tuning de google/vit-base-patch16-224-in21k | Apache-2.0 | HuggingFace |
-| google/vit-base-patch16-224-in21k | ~86 M (cabeza de 21.843 clases) | 224x224 | ImageNet-21k | Apache-2.0 | HuggingFace |
-| google/vit-base-patch16-224 | ~86 M | 224x224 | ImageNet-1k | Apache-2.0 | HuggingFace |
-| microsoft/resnet-50 | 25,6 M | 224x224 | ImageNet-1k | Apache-2.0 | HuggingFace |
+| Ktar225/vit-beans-classifier | 85,8 M | 224x224 | Fine-tuning de google/vit-base-patch16-224-in21k | Apache-2.0 | Hugging Face |
+| google/vit-base-patch16-224-in21k | ~86 M (cabeza de 21.843 clases) | 224x224 | ImageNet-21k | Apache-2.0 | Hugging Face |
+| google/vit-base-patch16-224 | ~86 M | 224x224 | ImageNet-1k | Apache-2.0 | Hugging Face |
+| microsoft/resnet-50 | 25,6 M | 224x224 | ImageNet-1k | Apache-2.0 | Hugging Face |
 
 Comparativa de rendimiento: no disponible, ya que no existen métricas públicas comparables entre estos modelos sobre el dominio concreto de vit-beans-classifier.
 
@@ -114,7 +114,7 @@ Comparativa de rendimiento: no disponible, ya que no existen métricas públicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ktar225/vit-beans-classifier
+- Modelo en Hugging Face: https://huggingface.co/Ktar225/vit-beans-classifier
 - Modelo base: https://huggingface.co/google/vit-base-patch16-224-in21k
 - Paper original de Vision Transformer (An image is worth 16x16 words): https://arxiv.org/abs/2010.11929
 - Documentación del pipeline de clasificación de imágenes de Transformers: https://huggingface.co/docs/transformers/main/en/tasks/image_classification

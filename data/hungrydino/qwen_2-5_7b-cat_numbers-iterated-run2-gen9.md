@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen9 es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado por el usuario HungryDino en HuggingFace bajo licencia Apache 2.0. Segun su tarjeta de modelo, se trata de un modelo de generacion de texto derivado de la familia Qwen2 (libreria transformers) y entrenado con Unsloth y la libreria TRL de HuggingFace, sin que el autor documente el conjunto de datos, el metodo de ajuste ni el objetivo concreto del entrenamiento. El nombre del repositorio (con fragmentos como "cat_numbers", "iterated", "run2" y "gen9") sugiere un experimento de ajuste iterativo, probablemente sobre una tarea sintetica, pero esto no se confirma en ninguna parte de la documentacion disponible.
+HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen9 es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado por el usuario HungryDino en Hugging Face bajo licencia Apache 2.0. Segun su tarjeta de modelo, se trata de un modelo de generacion de texto derivado de la familia Qwen2 (libreria transformers) y entrenado con Unsloth y la libreria TRL de Hugging Face, sin que el autor documente el conjunto de datos, el metodo de ajuste ni el objetivo concreto del entrenamiento. El nombre del repositorio (con fragmentos como "cat_numbers", "iterated", "run2" y "gen9") sugiere un experimento de ajuste iterativo, probablemente sobre una tarea sintetica, pero esto no se confirma en ninguna parte de la documentacion disponible.
 
 El repositorio no acumula descargas ni "likes" y su tamano es de aproximadamente 0,1 GB, una cifra incompatible con los pesos completos de un modelo de 7.000 millones de parametros en 16 bits (que rondarian los 15 GB). Esto apunta a que contiene unicamente adaptadores LoRA o pesos parciales, aunque el autor no lo especifica. La unica innovacion tecnica declarada es el uso del flujo de trabajo de Unsloth junto con TRL para acelerar el entrenamiento.
 
@@ -21,7 +21,7 @@ Dado el escaso soporte documental, esta ficha distingue de forma explicita entre
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (libreria transformers); tamano del repositorio 0,1 GB |
 | Modelo base | unsloth/Qwen2.5-7B-Instruct |
-| Metodo de ajuste | No disponible. La tarjeta solo indica que se entreno con Unsloth y la libreria TRL de HuggingFace |
+| Metodo de ajuste | No disponible. La tarjeta solo indica que se entreno con Unsloth y la libreria TRL de Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion (metadato) | 2026-10-03 |
 | Etiquetas | transformers, safetensors, text-generation-inference, unsloth, qwen2, trl, endpoints_compatible |
@@ -64,7 +64,7 @@ Las cifras siguientes son estimaciones calculadas a partir del tamano del modelo
 - GPU profesionales: A100 (40 GB o 80 GB), H100 (80 GB), L40S o A6000 permiten cargar el modelo en precision completa o de 8 bits con margen para lotes grandes y contextos largos.
 - GPU de consumo: una RTX 4090 (24 GB) o una RTX 3090 (24 GB) pueden alojar el modelo en FP16 siempre que se limite el tamano de lote y la longitud de contexto; con cuantizacion de 4 bits cabe tambien en tarjetas de 8-12 GB, como una RTX 3060 de 12 GB o una RTX 4070.
 - Advertencia sobre el repositorio: el contenido publicado ocupa 0,1 GB, por lo que previsiblemente no incluye pesos completos. Si se trata de adaptadores LoRA, sera necesario descargar ademas el modelo base completo (unos 15 GB en FP16) y aplicar la fusion o cargar el adaptador por separado.
-- Opciones de despliegue: la etiqueta text-generation-inference y la libreria transformers indican compatibilidad con HuggingFace TGI y con el ecosistema transformers. vLLM y SGLang son compatibles con arquitecturas Qwen2 si los pesos se empaquetan correctamente. llama.cpp y Ollama requeririan convertir los pesos a GGUF, conversion que no se incluye en el repositorio.
+- Opciones de despliegue: la etiqueta text-generation-inference y la libreria transformers indican compatibilidad con Hugging Face TGI y con el ecosistema transformers. vLLM y SGLang son compatibles con arquitecturas Qwen2 si los pesos se empaquetan correctamente. llama.cpp y Ollama requeririan convertir los pesos a GGUF, conversion que no se incluye en el repositorio.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo, latencia de primer token ni resultados de pruebas de carga, y la presencia de adaptadores en lugar de pesos completos haria que cualquier estimacion fuese poco fiable.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ No existen datos de rendimiento de este ajuste que permitan una comparacion func
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Idiomas declarados |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen9 | No disponible (hereda ~7,6 B del base) | No disponible | Apache 2.0 | HuggingFace, 0 descargas, sin documentacion | en |
-| Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, ampliamente desplegado | Multilingue (29 idiomas documentados por el desarrollador) |
-| Mistral-7B-Instruct-v0.3 | ~7,25 B | 32.768 tokens | Apache 2.0 | HuggingFace y multiples proveedores | Multilingue (principalmente ingles y europeos) |
-| Llama-3.1-8B-Instruct | ~8,03 B | 128.000 tokens | Llama 3.1 Community License (con restricciones) | HuggingFace y proveedores cloud | Multilingue (8 idiomas declarados) |
+| HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen9 | No disponible (hereda ~7,6 B del base) | No disponible | Apache 2.0 | Hugging Face, 0 descargas, sin documentacion | en |
+| Qwen2.5-7B-Instruct (modelo base) | ~7,6 B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, ampliamente desplegado | Multilingue (29 idiomas documentados por el desarrollador) |
+| Mistral-7B-Instruct-v0.3 | ~7,25 B | 32.768 tokens | Apache 2.0 | Hugging Face y multiples proveedores | Multilingue (principalmente ingles y europeos) |
+| Llama-3.1-8B-Instruct | ~8,03 B | 128.000 tokens | Llama 3.1 Community License (con restricciones) | Hugging Face y proveedores cloud | Multilingue (8 idiomas declarados) |
 
 No se dispone de resultados de benchmarks del ajuste que permitan compararlo en MMLU, HumanEval, GSM8K ni en ninguna otra prueba estandar.
 
@@ -94,10 +94,10 @@ No se dispone de resultados de benchmarks del ajuste que permitan compararlo en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen9
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen9
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl (referenciada implicitamente en la tarjeta; no se incluye enlace directo)
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl (referenciada implicitamente en la tarjeta; no se incluye enlace directo)
 - Paper tecnico de Qwen2.5: no disponible en la informacion proporcionada
 - Blog o articulo del autor: no disponible
 - Demos o espacios asociados: no disponible

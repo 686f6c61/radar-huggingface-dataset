@@ -105,6 +105,6 @@ No se dispone de datos para comparar con modelos de otros autores de tamaño sim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter6
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_idd-cc-iter6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorios y artefactos citados en la model card sin URL incluida en la información proporcionada: slime v0.3.2 (incluye `megatron_to_hf.convert_to_hf`, `convert_hf_to_torch_dist.py` y `convert_torch_dist_to_hf_lowmem.py`), Megatron-LM, Dr.GRPO, ARC-AGI-3, `knowledge_learning.loop.arc_mcp`, arnés IDD `cd82-play-v4` y dataset de RL con `checkpoints/checkpoints.md`, `E2K_CONVERSION.json`, `E2K_VERIFY.json` y `SHA256SUMS`.

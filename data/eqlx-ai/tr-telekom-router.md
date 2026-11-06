@@ -104,6 +104,6 @@ Frente al modelo base, la diferencia medida es de 55,6 % a 93,3 % de accuracy en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eqlx-ai/tr-telekom-router
+- Modelo en Hugging Face: https://huggingface.co/eqlx-ai/tr-telekom-router
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

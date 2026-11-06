@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dimeneid/kawantumbuh-sentimen` es un modelo publicado en HuggingFace por el usuario dimeneid bajo licencia MIT. Por su identificador y por la etiqueta de arquitectura `bert`, se trata de un modelo basado en la familia BERT, presumiblemente ajustado para una tarea de análisis de sentimiento (el sufijo `sentimen` sugiere "sentiment" en indonesio/malayo). El nombre `kawantumbuh` parece hacer referencia a una localidad o región (Kawan Tumbuh), lo que apunta a un ajuste fino orientado a un dominio o variedad lingüística concreta.
+`dimeneid/kawantumbuh-sentimen` es un modelo publicado en Hugging Face por el usuario dimeneid bajo licencia MIT. Por su identificador y por la etiqueta de arquitectura `bert`, se trata de un modelo basado en la familia BERT, presumiblemente ajustado para una tarea de análisis de sentimiento (el sufijo `sentimen` sugiere "sentiment" en indonesio/malayo). El nombre `kawantumbuh` parece hacer referencia a una localidad o región (Kawan Tumbuh), lo que apunta a un ajuste fino orientado a un dominio o variedad lingüística concreta.
 
 El modelo cuenta con 110.559.746 parámetros totales según los pesos en formato safetensors, un tamaño que coincide con la arquitectura BERT-base (aproximadamente 110 millones de parámetros). El repositorio ocupa 0,4 GB, lo que es coherente con pesos en precisión completa o media de un modelo de ese tamaño. La información pública disponible es muy escasa: la model card únicamente declara la licencia MIT, sin especificar idiomas, datos de entrenamiento, métricas ni instrucciones de uso.
 
@@ -12,7 +12,7 @@ Por tanto, esta ficha se limita a describir lo que puede inferirse de los metada
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | BERT (según tag `bert` de HuggingFace) |
+| Arquitectura | BERT (según tag `bert` de Hugging Face) |
 | Parámetros totales | 110.559.746 |
 | Parámetros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a describir lo que puede inferirse de los metada
 
 ## Arquitectura y entrenamiento
 
-La etiqueta `bert` de HuggingFace y el recuento de 110,5 millones de parámetros sitúan al modelo en la arquitectura transformer encoder-only de tipo BERT-base, con 12 capas, 768 dimensiones ocultas y 12 cabezas de atención (configuración estándar para ese número de parámetros). Al tratarse de un encoder bidireccional, está diseñado para tareas de compresión de secuencia y clasificación, no para generación autoregresiva de texto.
+La etiqueta `bert` de Hugging Face y el recuento de 110,5 millones de parámetros sitúan al modelo en la arquitectura transformer encoder-only de tipo BERT-base, con 12 capas, 768 dimensiones ocultas y 12 cabezas de atención (configuración estándar para ese número de parámetros). Al tratarse de un encoder bidireccional, está diseñado para tareas de compresión de secuencia y clasificación, no para generación autoregresiva de texto.
 
 No se dispone de información sobre el corpus de entrenamiento, el número de tokens, la composición del dataset, el proceso de ajuste fino ni si se aplicaron técnicas de destilación, poda o calibración. La model card únicamente declara `license: mit` y no incluye hiperparámetros, métricas de validación ni detalles del preentrenamiento base utilizado. Tampoco se documenta ninguna innovación técnica (atención lineal, decodificación especulativa, etc.), lo cual es esperable en un modelo de esta familia y tamaño.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 0,4-0,5 GB en fp32 (110 M de parámetros × 4 bytes ≈ 0,44 GB), más memoria para activaciones y batch; en fp16 o int8 se reduce a ~0,22 GB o ~0,11 GB respectivamente.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; tarjetas como GTX 1650, RTX 3050, RTX 4090 o A100 pueden ejecutarlo sin problema, aunque las GPU de gama alta estarán infrautilizadas.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer moderna e incluso en CPU.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TensorFlow), ONNX Runtime, y potencialmente llama.cpp/Ollama si se convierte a GGUF (no documentado por el autor). Para servir en producción, se puede usar un endpoint HTTP con FastAPI o TorchServe.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TensorFlow), ONNX Runtime, y potencialmente llama.cpp/Ollama si se convierte a GGUF (no documentado por el autor). Para servir en producción, se puede usar un endpoint HTTP con FastAPI o TorchServe.
 - Latencia y throughput estimados: no disponibles; para un BERT-base en GPU moderna se espera un throughput del orden de miles de secuencias cortas por segundo, pero no hay mediciones publicadas para este modelo concreto.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dimeneid/kawantumbuh-sentimen | 110,5 M | no disponible | MIT | HuggingFace |
-| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 tokens | MIT | HuggingFace |
+| dimeneid/kawantumbuh-sentimen | 110,5 M | no disponible | MIT | Hugging Face |
+| bert-base-uncased | 110 M | 512 tokens | Apache 2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 tokens | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 tokens | MIT | Hugging Face |
 
 La comparación se limita a parámetros, contexto y licencia, ya que no hay datos de rendimiento publicados para el modelo evaluado. Frente a `bert-base-uncased`, el modelo de dimeneid tiene un recuento de parámetros prácticamente idéntico, lo que sugiere que deriva de una arquitectura BERT-base estándar; la diferencia principal es la licencia MIT (frente a Apache 2.0) y la falta de documentación. `distilbert-base-uncased` es más ligero (66 M) y adecuado si la latencia es crítica, mientras que `roberta-base` ofrece un contexto y vocabulario distintos con licencia MIT.
 
@@ -82,5 +82,5 @@ La comparación se limita a parámetros, contexto y licencia, ya que no hay dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimeneid/kawantumbuh-sentimen
+- Modelo en Hugging Face: https://huggingface.co/dimeneid/kawantumbuh-sentimen
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

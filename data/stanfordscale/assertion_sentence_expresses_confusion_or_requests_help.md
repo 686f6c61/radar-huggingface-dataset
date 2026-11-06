@@ -83,8 +83,8 @@ No se han identificado en la informacion proporcionada otros clasificadores de l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_expresses_confusion_or_requests_help | 109,5 M | 512 tokens (limite del base, no confirmado) | Clasificacion binaria de confusion/peticion de ayuda en intervenciones docentes | No disponible | HuggingFace (repo de 0,4 GB), 0 descargas |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | No disponible en la informacion proporcionada | No disponible | Sentence embeddings genericos | No disponible | HuggingFace |
+| assertion_sentence_expresses_confusion_or_requests_help | 109,5 M | 512 tokens (limite del base, no confirmado) | Clasificacion binaria de confusion/peticion de ayuda en intervenciones docentes | No disponible | Hugging Face (repo de 0,4 GB), 0 descargas |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | No disponible en la informacion proporcionada | No disponible | Sentence embeddings genericos | No disponible | Hugging Face |
 | Clasificadores equivalentes de otras aserciones de EduBehaviors | No disponible | No disponible | Clasificacion de comportamientos docentes | No disponible | No disponible |
 
 No se dispone de datos de rendimiento de los modelos alternativos, por lo que no es posible establecer una comparacion cuantitativa.
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento de los modelos alternativos, por lo que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_expresses_confusion_or_requests_help
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_expresses_confusion_or_requests_help
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

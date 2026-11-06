@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amad-vlm5 (GGUF) | 7,6 B | no especificado | OCR arabe, manuscritos, thinking | Apache 2.0 | GGUF en HuggingFace |
+| amad-vlm5 (GGUF) | 7,6 B | no especificado | OCR arabe, manuscritos, thinking | Apache 2.0 | GGUF en Hugging Face |
 | Qwen2.5-VL-7B-Instruct | 7,6 B | 32k (base) | VLM general, OCR multilingue | Apache 2.0 | safetensors, GGUF |
 | Otros modelos OCR en arabe | no disponible | no disponible | no disponible | no disponible | no disponible |
 

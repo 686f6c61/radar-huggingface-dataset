@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`autmoate/cactus-needle2-calendar-write-dt` es un modelo publicado en HuggingFace por el usuario `autmoate` bajo licencia Apache 2.0. El repositorio se creó el 11 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 «likes», por lo que se trata de un artefacto recién subido y sin validación por parte de la comunidad. La model card del autor se limita al bloque de metadatos con la licencia y no incluye ninguna descripción funcional, arquitectónica ni de datos de entrenamiento.
+`autmoate/cactus-needle2-calendar-write-dt` es un modelo publicado en Hugging Face por el usuario `autmoate` bajo licencia Apache 2.0. El repositorio se creó el 11 de septiembre de 2026 y, en el momento de redactar esta ficha, acumula 0 descargas y 0 «likes», por lo que se trata de un artefacto recién subido y sin validación por parte de la comunidad. La model card del autor se limita al bloque de metadatos con la licencia y no incluye ninguna descripción funcional, arquitectónica ni de datos de entrenamiento.
 
 El identificador del repositorio sugiere dos elementos que conviene tratar con cautela: por un lado, la referencia «needle2» apunta a un posible modelo base o familia previa; por otro, el sufijo «calendar-write-dt» indica un ajuste orientado a tareas de escritura sobre calendario, presumiblemente dentro de un pipeline de agentes. Ninguna de estas inferencias está confirmada por documentación oficial, de modo que deben considerarse hipótesis de trabajo y no características verificadas.
 
@@ -78,7 +78,7 @@ No disponible. Sin datos de parametros, contexto, licencia efectiva de uso ni re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/autmoate/cactus-needle2-calendar-write-dt
+- Hugging Face: https://huggingface.co/autmoate/cactus-needle2-calendar-write-dt
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

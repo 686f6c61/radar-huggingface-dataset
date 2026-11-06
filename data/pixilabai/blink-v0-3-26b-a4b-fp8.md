@@ -40,7 +40,7 @@ El modelo habla el protocolo "surogate decisions v1": una pregunta por prompt, s
 - Previsión de eventos: ForecastBench con 28,0 puntos.
 - Reconocimiento de entidades financieras: FinEntity con 86,2 puntos.
 - Respuesta a preguntas sí/no: convención documentada de colocar la opción "no" primero (A) y "yes" después (B), con los criterios por defecto `No` / `Yes` cuando no se aportan descripciones.
-- Capacidades multimodales: la etiqueta de HuggingFace incluye `image-text-to-text`, pero la model card no documenta funciones de visión; no disponible como capacidad confirmada.
+- Capacidades multimodales: la etiqueta de Hugging Face incluye `image-text-to-text`, pero la model card no documenta funciones de visión; no disponible como capacidad confirmada.
 - Soporte de agentes y razonamiento multi-paso: no documentado en la model card; el modelo está diseñado explícitamente para decisiones de un solo paso.
 
 ## Casos de uso
@@ -92,7 +92,7 @@ Datos de calibración: precisión media 0,735 frente a confianza media 0,739, co
 
 | Modelo | Parametros | Activos | Index 0.2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Blink v0.3 · 26B-A4B (FP8 / NVFP4) | 25,8B | 4B | 57,48 | Apache 2.0 | Pesos abiertos en HuggingFace (FP8 y NVFP4) |
+| Blink v0.3 · 26B-A4B (FP8 / NVFP4) | 25,8B | 4B | 57,48 | Apache 2.0 | Pesos abiertos en Hugging Face (FP8 y NVFP4) |
 | Surogate Rune 26B-A4B v3 | 26B | 4B | 57,44 | No disponible | No disponible |
 | Decider chat · Gemma-4-31B | 31B | No disponible | 57,33 | No disponible | No disponible |
 | Blink v0.2 · 26B-A4B | 25,8B | 4B | 55,97 | No disponible | Pesos NVFP4, version anterior |
@@ -114,7 +114,7 @@ Diferencias destacables frente a alternativas: Blink v0.3 lidera en Language (64
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PixilabAI/Blink-v0.3-26B-A4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/PixilabAI/Blink-v0.3-26B-A4B-FP8
 - Compilación NVFP4 para Blackwell: https://huggingface.co/PixilabAI/Blink-v0.3-26B-A4B-NVFP4
 - Demo interactiva: https://huggingface.co/spaces/PixilabAI/Blink
 - Sitio del autor: https://pixilab.ai/?utm_source=hf

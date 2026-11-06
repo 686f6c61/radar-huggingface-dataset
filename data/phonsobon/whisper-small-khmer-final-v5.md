@@ -4,7 +4,7 @@
 
 Whisper-Small-Khmer-Final-v5 es un modelo de reconocimiento automático del habla (ASR) desarrollado por el usuario phonsobon, consistente en un ajuste fino (fine-tuning) del modelo Whisper Small de OpenAI especializado en el idioma jemer (khmer). El modelo parte de la variante phonsobon/Whisper-Small-Khmer-V2-Gov y se entrena sobre una colección extensa de datasets propios orientados a ASR en jemer, con algo de cobertura en inglés. Con 241,7 millones de parámetros, se posiciona como una alternativa ligera para transcripción en un idioma de bajos recursos como el jemer, donde los modelos multilingües genéricos suelen rendir de forma deficiente.
 
-La relevancia del modelo radica en su enfoque específico: frente a Whisper Small original, que cubre 99 idiomas pero con calidad desigual, este ajuste concentra el entrenamiento en jemer y en datos gubernamentales y de dominio público recopilados por el autor. El repositorio ocupa 29 GB, lo que refleja la inclusión de múltiples checkpoints y artefactos de entrenamiento, no solo los pesos finales. El acceso está restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+La relevancia del modelo radica en su enfoque específico: frente a Whisper Small original, que cubre 99 idiomas pero con calidad desigual, este ajuste concentra el entrenamiento en jemer y en datos gubernamentales y de dominio público recopilados por el autor. El repositorio ocupa 29 GB, lo que refleja la inclusión de múltiples checkpoints y artefactos de entrenamiento, no solo los pesos finales. El acceso está restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La licencia Apache 2.0 permite uso comercial, aunque los resultados publicados por el autor (CER de 0,55 y WER de 3,11 sobre un conjunto de evaluación propio) indican que el rendimiento dista de ser production-ready para transcripción general, y deben interpretarse con cautela al no estar verificados de forma independiente.
 
@@ -70,7 +70,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Parametros | Idiomas | Contexto audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper-Small-Khmer-Final-v5 | 241,7 M | km, en | 30 s (Whisper) | Apache 2.0 | Gated en HuggingFace |
+| Whisper-Small-Khmer-Final-v5 | 241,7 M | km, en | 30 s (Whisper) | Apache 2.0 | Gated en Hugging Face |
 | Whisper Small (OpenAI) | 244 M | 99 idiomas | 30 s | MIT | Público |
 | Whisper Medium (OpenAI) | 769 M | 99 idiomas | 30 s | MIT | Público |
 | Wav2Vec2 / XLS-R ajustados a jemer | variable | multilingüe | variable | variable | Público (según checkpoint) |
@@ -83,14 +83,14 @@ No se dispone de datos de rendimiento comparativo verificable entre estos modelo
 - Riesgo de alucinación: como todo modelo Whisper, puede generar texto plausible que no corresponde al audio, especialmente en segmentos con ruido o silencios.
 - Cobertura limitada a jemer e inglés; no se garantiza calidad en otros idiomas ni en code-switching intensivo.
 - El conjunto de evaluación es propio y pequeño (576 clips de 17 datasets), lo que reduce la representatividad de las métricas.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de despliegues.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de despliegues.
 - El repositorio de 29 GB incluye artefactos de entrenamiento; el despliegue debe seleccionar únicamente los pesos safetensors necesarios.
 - Licencia Apache 2.0 permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios no representados en el entrenamiento.
 - No se documentan sesgos específicos, pero los datasets gubernamentales y de dominio público pueden introducir sesgos de dominio, género o registro.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phonsobon/Whisper-Small-Khmer-Final-v5
+- Hugging Face: https://huggingface.co/phonsobon/Whisper-Small-Khmer-Final-v5
 - Modelo base: https://huggingface.co/phonsobon/Whisper-Small-Khmer-V2-Gov
 - Dataset principal: https://huggingface.co/datasets/phonsobon/khmer-ASR-Datasets
 - Dataset secundario: https://huggingface.co/datasets/phonsobon/khmer-ASR-Datasets-v1

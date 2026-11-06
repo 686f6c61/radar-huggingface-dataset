@@ -4,7 +4,7 @@
 
 Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el algoritmo DQN (*Deep Q-Network*) sobre el entorno `SpaceInvadersNoFrameskip-v4` de Atari. Lo publica el usuario mohanpoduri2005 como entrega de la Unidad 3 del curso *Deep Reinforcement Learning Course* de Hugging Face, y está implementado con la librería `stable-baselines3`. No se trata de un modelo de lenguaje: es una política de control que recibe fotogramas del juego y emite una de las acciones discretas disponibles en el entorno.
 
-El resultado declarado por el autor es una recompensa media de 450,0 ± 35,0 en la evaluación sobre el propio entorno, muy por encima del mínimo de 200 exigido para superar la unidad del curso. El repositorio pesa 0,0 GB según la información de HuggingFace, lo que sugiere que se trata de un artefacto muy ligero (pesos de una red convolucional pequeña) o de un repositorio sin pesos cargados en el momento de la consulta.
+El resultado declarado por el autor es una recompensa media de 450,0 ± 35,0 en la evaluación sobre el propio entorno, muy por encima del mínimo de 200 exigido para superar la unidad del curso. El repositorio pesa 0,0 GB según la información de Hugging Face, lo que sugiere que se trata de un artefacto muy ligero (pesos de una red convolucional pequeña) o de un repositorio sin pesos cargados en el momento de la consulta.
 
 Su relevancia es principalmente docente y de referencia: sirve como punto de comparación reproducible para otros agentes DQN del mismo entorno y como ejemplo mínimo de política entrenada desplegable en CPU. La model card no documenta hiperparámetros, arquitectura concreta de la red, licencia ni idiomas, por lo que la mayoría de especificaciones quedan como no disponibles.
 
@@ -68,14 +68,14 @@ No hay más resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) porque el 
 - Compatibilidad con GPU de consumo: previsiblemente sí, en cualquier GPU de consumo actual y en la mayoría de CPU modernas; no confirmado por el autor.
 - Opciones de despliegue: `stable-baselines3` sobre Gymnasium / `ale-py` para el entorno Atari. No aplican vLLM, llama.cpp, Ollama ni TGI, que son específicos de modelos de lenguaje.
 - Latencia y throughput estimados: no disponibles. Al ser una red convolucional pequeña, la inferencia por paso suele ser inferior a 1 ms en CPU moderna, pero es una estimación, no un dato declarado.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace, lo que indica un artefacto muy reducido; conviene verificar que los pesos estén efectivamente incluidos antes de desplegarlo.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face, lo que indica un artefacto muy reducido; conviene verificar que los pesos estén efectivamente incluidos antes de desplegarlo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Categoría | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dqn-SpaceInvadersNoFrameskip-v4 (mohanpoduri2005) | DQN sobre Atari SpaceInvaders | no disponible | no aplica | mean_reward 450,0 ± 35,0 (no verificado) | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Otros agentes DQN de la Unidad 3 del curso Deep RL | DQN sobre el mismo entorno | no disponible | no aplica | no disponible | no disponible | HuggingFace (no identificados en la información disponible) |
+| dqn-SpaceInvadersNoFrameskip-v4 (mohanpoduri2005) | DQN sobre Atari SpaceInvaders | no disponible | no aplica | mean_reward 450,0 ± 35,0 (no verificado) | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Otros agentes DQN de la Unidad 3 del curso Deep RL | DQN sobre el mismo entorno | no disponible | no aplica | no disponible | no disponible | Hugging Face (no identificados en la información disponible) |
 | PPO / A2C sobre SpaceInvadersNoFrameskip-v4 (stable-baselines3) | RL *on-policy* sobre Atari | no disponible | no aplica | no disponible | no disponible | Repositorios públicos, sin datos concretos en esta búsqueda |
 | QR-DQN / C51 sobre Atari (implementaciones de referencia) | DQN con distribución de valores | no disponible | no aplica | no disponible | no disponible | Implementaciones de referencia, sin datos concretos en esta búsqueda |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de alternativas directas sobre el mismo entor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohanpoduri2005/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/mohanpoduri2005/dqn-SpaceInvadersNoFrameskip-v4
 - Curso Deep Reinforcement Learning de Hugging Face (Unidad 3, contexto del envío): https://huggingface.co/learn/deep-rl-course
 - Documentación de stable-baselines3 (librería declarada): https://stable-baselines3.readthedocs.io
 - Repositorio de stable-baselines3: https://github.com/DLR-RM/stable-baselines3

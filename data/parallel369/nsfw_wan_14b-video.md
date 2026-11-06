@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parallel369/NSFW_Wan_14b-video
+- Repositorio en Hugging Face: https://huggingface.co/parallel369/NSFW_Wan_14b-video
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - Comunidad de soporte (Discord del autor): https://discord.gg/mjnStFuCYh
 - Paper, demo y otros enlaces: no disponible

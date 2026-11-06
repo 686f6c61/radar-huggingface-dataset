@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sn92-gen-lc1 es un modelo de lenguaje publicado en HuggingFace por el usuario waldofinder134 bajo licencia MIT. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26.100 millones, es decir, en torno a 26B), lo que lo sitúa en la categoría de modelos de gran tamaño no MoE. La etiqueta de arquitectura declarada es `qwen3_5`, lo que sugiere una derivación o adaptación de la familia Qwen 3.5, aunque no se aporta documentación técnica que lo confirme.
+sn92-gen-lc1 es un modelo de lenguaje publicado en Hugging Face por el usuario waldofinder134 bajo licencia MIT. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26.100 millones, es decir, en torno a 26B), lo que lo sitúa en la categoría de modelos de gran tamaño no MoE. La etiqueta de arquitectura declarada es `qwen3_5`, lo que sugiere una derivación o adaptación de la familia Qwen 3.5, aunque no se aporta documentación técnica que lo confirme.
 
-El modelo es relevante por su tamaño (26B) y por el formato de distribución (safetensors, repo de 52,2 GB), pero la información pública disponible es extremadamente limitada: no hay model card descriptiva, no se indican idiomas soportados, no hay pipeline declarado ni resultados de benchmarks. Además, el acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+El modelo es relevante por su tamaño (26B) y por el formato de distribución (safetensors, repo de 52,2 GB), pero la información pública disponible es extremadamente limitada: no hay model card descriptiva, no se indican idiomas soportados, no hay pipeline declarado ni resultados de benchmarks. Además, el acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 Se trata, por tanto, de un checkpoint de interés potencial para experimentación, pero sin garantías documentadas sobre su entrenamiento, capacidades o calidad. Cualquier evaluación en producción debería ir precedida de una validación empírica propia.
 
@@ -79,7 +79,7 @@ La comparación se limita a parámetros, contexto y licencia: no hay datos de re
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, sesgos, idiomas ni intenciones de uso.
 - Riesgo elevado de alucinación no caracterizada: sin evaluaciones publicadas no es posible estimar su tasa de error factual.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de descargas.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de descargas.
 - Licencia MIT declarada, pero sin confirmación de que los datos de entrenamiento y los pesos base (si deriva de Qwen 3.5) sean compatibles con esa licencia; conviene revisar la procedencia antes de uso comercial.
 - Idiomas soportados no especificados: no se puede asumir un rendimiento multilingüe correcto sin pruebas.
 - Contexto no declarado: imposible planificar casos de uso con documentos largos sin medir empíricamente la ventana efectiva.
@@ -89,5 +89,5 @@ La comparación se limita a parámetros, contexto y licencia: no hay datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/waldofinder134/sn92-gen-lc1
+- Hugging Face: https://huggingface.co/waldofinder134/sn92-gen-lc1
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

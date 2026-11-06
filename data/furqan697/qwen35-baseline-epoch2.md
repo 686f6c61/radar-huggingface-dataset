@@ -4,7 +4,7 @@
 
 Furqan697/qwen35-baseline-epoch2 es un adaptador LoRA (PEFT) publicado por el usuario Furqan697 sobre el modelo base Qwen/Qwen3.5-4B-Base. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptacion de bajo rango que modifican el comportamiento del modelo base. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA de rango bajo sobre un modelo de aproximadamente 4 mil millones de parametros, y emplea la libreria PEFT en su version 0.20.0, con soporte declarado de transformers y Unsloth.
 
-El nombre del repositorio ("baseline-epoch2") indica que se trata de un punto de control intermedio de un proceso de ajuste supervisado, concretamente la segunda epoca de un entrenamiento de referencia o linea base. No hay model card descriptiva: la tarjeta publicada es la plantilla por defecto de HuggingFace sin cumplimentar, por lo que no se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni evaluacion. El modelo acumula 0 descargas y 0 "likes", y las etiquetas incluyen "conversational" junto a "text-generation", lo que sugiere un ajuste orientado a dialogo.
+El nombre del repositorio ("baseline-epoch2") indica que se trata de un punto de control intermedio de un proceso de ajuste supervisado, concretamente la segunda epoca de un entrenamiento de referencia o linea base. No hay model card descriptiva: la tarjeta publicada es la plantilla por defecto de Hugging Face sin cumplimentar, por lo que no se documentan datos de entrenamiento, hiperparametros, composicion del dataset ni evaluacion. El modelo acumula 0 descargas y 0 "likes", y las etiquetas incluyen "conversational" junto a "text-generation", lo que sugiere un ajuste orientado a dialogo.
 
 Su relevancia actual es limitada y fundamentalmente experimental: sirve como referencia reproducible para comparar variantes de ajuste fino sobre Qwen3.5-4B-Base, no como un modelo listo para produccion. Cualquier uso serio exige auditar primero el adaptador, verificar su fusion con el modelo base y evaluar el comportamiento resultante, dado que no existe informacion publicada sobre calidad, sesgos o rendimiento.
 
@@ -68,10 +68,10 @@ La comparativa se establece frente al modelo base y frente a alternativas de tam
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Furqan697/qwen35-baseline-epoch2 | Adaptador LoRA sobre base de ~4B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-4B-Base (modelo base) | ~4B segun nomenclatura | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens (ampliable con YaRN) | Publicados por el fabricante | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens | Publicados por el fabricante | Licencia comunitaria Llama 3.2 | HuggingFace, ampliamente desplegado |
+| Furqan697/qwen35-baseline-epoch2 | Adaptador LoRA sobre base de ~4B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-4B-Base (modelo base) | ~4B segun nomenclatura | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09B | 32 768 tokens (ampliable con YaRN) | Publicados por el fabricante | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama-3.2-3B-Instruct | 3,21B | 128 000 tokens | Publicados por el fabricante | Licencia comunitaria Llama 3.2 | Hugging Face, ampliamente desplegado |
 
 Diferencias clave: las alternativas son modelos completos con licencia explicita y evaluacion publicada, mientras que este repositorio es un adaptador sin licencia declarada, sin idiomas declarados y sin ninguna metrica. La comparacion de rendimiento no es posible con la informacion disponible.
 
@@ -90,7 +90,7 @@ Diferencias clave: las alternativas son modelos completos con licencia explicita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Furqan697/qwen35-baseline-epoch2
+- Modelo en Hugging Face: https://huggingface.co/Furqan697/qwen35-baseline-epoch2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria transformers: https://github.com/huggingface/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `rootx2004/hf-security-poc` no contiene un modelo de inteligencia artificial, sino un intento de phishing dirigido a usuarios de Hugging Face. Publicado el 2 de septiembre de 2026 por el usuario `rootx2004`, su model card incluye HTML incrustado que simula una advertencia de seguridad falsa ("Your HuggingFace session has expired") y solicita al visitante que introduzca su token de acceso personal en un formulario que redirige a un dominio externo (`attacker.example`). También incorpora píxeles de seguimiento y enlaces de rastreo.
+El repositorio `rootx2004/hf-security-poc` no contiene un modelo de inteligencia artificial, sino un intento de phishing dirigido a usuarios de Hugging Face. Publicado el 2 de septiembre de 2026 por el usuario `rootx2004`, su model card incluye HTML incrustado que simula una advertencia de seguridad falsa ("Your Hugging Face session has expired") y solicita al visitante que introduzca su token de acceso personal en un formulario que redirige a un dominio externo (`attacker.example`). También incorpora píxeles de seguimiento y enlaces de rastreo.
 
 Este repositorio es un ejemplo de vector de ataque en la cadena de suministro de IA, aprovechando la confianza de los desarrolladores que buscan modelos en Hugging Face. No existe ninguna arquitectura, peso o funcionalidad de modelo; se trata exclusivamente de un payload malicioso. Cualquier interacción con su contenido (ejecutar el HTML, hacer clic en los enlaces o introducir credenciales) compromete la seguridad del usuario.
 

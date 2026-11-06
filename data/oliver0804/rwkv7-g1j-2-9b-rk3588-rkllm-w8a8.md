@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RWKV7-G1j-2.9B-RK3588-rkllm-w8a8 es una conversión del modelo de lenguaje RWKV7-G1j-2.9B (desarrollado por el proyecto FLA, publicado en el repositorio `fla-hub/RWKV7-G1j-2.9B-20260831`) al formato propietario RKLLM de Rockchip, cuantizado en w8a8 y optimizado para ejecutarse en la NPU de los SoC RK3588 y RK3588S. El autor de la conversión es el usuario de HuggingFace `oliver0804`, y el artefacto resultante está pensado exclusivamente para inferencia en placas de desarrollo basadas en esos chips, como la Radxa ROCK 5C.
+RWKV7-G1j-2.9B-RK3588-rkllm-w8a8 es una conversión del modelo de lenguaje RWKV7-G1j-2.9B (desarrollado por el proyecto FLA, publicado en el repositorio `fla-hub/RWKV7-G1j-2.9B-20260831`) al formato propietario RKLLM de Rockchip, cuantizado en w8a8 y optimizado para ejecutarse en la NPU de los SoC RK3588 y RK3588S. El autor de la conversión es el usuario de Hugging Face `oliver0804`, y el artefacto resultante está pensado exclusivamente para inferencia en placas de desarrollo basadas en esos chips, como la Radxa ROCK 5C.
 
 El interés de esta ficha no reside en el modelo base —un transformer recurrente de 2.900 millones de parámetros con arquitectura RWKV7— sino en la conversión: empaqueta el modelo en un formato que el runtime `librkllmrt.so` 1.3.1 puede cargar directamente sobre la NPU, con pesos de 8 bits para activaciones y pesos. La model card documenta seis correcciones necesarias para completar la conversión, lo que da una idea de la fragilidad del ecosistema RKLLM en esta versión.
 
@@ -102,7 +102,7 @@ La comparación directa con transformers del mismo tamaño en RK3588 no puede cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/oliver0804/RWKV7-G1j-2.9B-RK3588-rkllm-w8a8
+- Repositorio Hugging Face: https://huggingface.co/oliver0804/RWKV7-G1j-2.9B-RK3588-rkllm-w8a8
 - Modelo base: https://huggingface.co/fla-hub/RWKV7-G1j-2.9B-20260831
 - Formato HF más reciente de RWKV7 (no compatible con RKLLM 1.3.1): https://huggingface.co/RWKV/RWKV7-G1k-2.9B
 - Script de conversión mencionado en la model card: `conversion/convert_rkllm.py` (incluido en el repositorio)

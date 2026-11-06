@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715, derivado de los experimentos de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse sobre un modelo base compatible; el repositorio ocupa aproximadamente 1,2 GB en safetensors.
+CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715, derivado de los experimentos de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. No se trata de un modelo completo, sino de pesos de adaptacion (PEFT) que deben cargarse sobre un modelo base compatible; el repositorio ocupa aproximadamente 1,2 GB en safetensors.
 
 El nombre codifica varias decisiones del experimento: "llama3b" apunta a una familia Llama de 3B de parametros como base, "likeZephyr" sugiere un pipeline de alineamiento inspirado en Zephyr (SFT seguido de optimizacion preferencial), "eps0600" parece indicar un presupuesto de perturbacion adversarial de 0,600 y "relativelr" un esquema de learning rate relativo. Se trata de inferencias a partir del identificador del repositorio, no de datos confirmados por el autor, ya que la model card es practicamente vacia.
 
@@ -76,5 +76,5 @@ No disponible. No se conocen adaptadores equivalentes de la misma tarea (entrena
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0600_456_relativelr_utility_NEW
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

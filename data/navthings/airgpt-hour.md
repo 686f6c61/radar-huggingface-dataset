@@ -80,9 +80,9 @@ La comparación siguiente es orientativa y se basa en conocimiento general sobre
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| navthings/airgpt-hour | ~8 M | No disponible | MIT | HuggingFace (MLX, safetensors) |
-| TinyStories (Microsoft Research) | Variantes de ~1 M a ~33 M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| llama2.c (Karpathy), variante stories | Del orden de 15 M a 110 M | No disponible en esta ficha | No disponible en esta ficha | GitHub y HuggingFace |
+| navthings/airgpt-hour | ~8 M | No disponible | MIT | Hugging Face (MLX, safetensors) |
+| TinyStories (Microsoft Research) | Variantes de ~1 M a ~33 M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| llama2.c (Karpathy), variante stories | Del orden de 15 M a 110 M | No disponible en esta ficha | No disponible en esta ficha | GitHub y Hugging Face |
 
 El rasgo diferencial de airgpt-hour frente a estas alternativas es la combinación de licencia MIT, publicación de dos checkpoints (base y chat) y un coste de entrenamiento documentado de una hora en un portátil.
 
@@ -101,6 +101,6 @@ El rasgo diferencial de airgpt-hour frente a estas alternativas es la combinaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/navthings/airgpt-hour
+- Modelo en Hugging Face: https://huggingface.co/navthings/airgpt-hour
 - Repositorio del framework airgpt: https://github.com/navthings/airgpt
 - La búsqueda web realizada no ha devuelto ningún enlace relacionado con el modelo; los resultados obtenidos corresponden a páginas sobre rugby union y no se incluyen.

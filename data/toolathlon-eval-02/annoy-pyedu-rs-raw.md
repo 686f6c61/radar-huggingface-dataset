@@ -4,7 +4,7 @@
 
 El repositorio `toolathlon-eval-02/Annoy-PyEdu-Rs-Raw` contiene los datos crudos del dataset procesado **PythonEdu-Rs**, derivado del dataset original del equipo HuggingFaceTB. Se trata de un conjunto de datos en formato JSONL con problemas de programación en Python, diseñado para entrenar y evaluar modelos de razonamiento y generación de código. El nombre del archivo principal, `0_368500_filtered_v2_ds25.sced.jsonl`, sugiere que contiene alrededor de 368 500 muestras filtradas. El dataset forma parte del proyecto **Toolathlon**, un benchmark para evaluar agentes lingüísticos en entornos realistas de uso de herramientas.
 
-Aunque la página de HuggingFace no especifica licencia en los metadatos, la model card indica que la licencia del dataset es **Apache-2.0**. El dataset se publica como recurso abierto para la comunidad, con el objetivo de facilitar el desarrollo de agentes de código y razonamiento. No se trata de un modelo preentrenado, sino de un conjunto de datos de entrenamiento o evaluación.
+Aunque la página de Hugging Face no especifica licencia en los metadatos, la model card indica que la licencia del dataset es **Apache-2.0**. El dataset se publica como recurso abierto para la comunidad, con el objetivo de facilitar el desarrollo de agentes de código y razonamiento. No se trata de un modelo preentrenado, sino de un conjunto de datos de entrenamiento o evaluación.
 
 ## Especificaciones técnicas
 
@@ -60,7 +60,7 @@ No aplica, al tratarse de un dataset. Para procesar el archivo JSONL de ~368.500
 - **Almacenamiento**: el archivo puede ocupar varios GB (no se especifica el peso exacto), por lo que se necesita espacio en disco.
 - **CPU**: para leer y filtrar los datos se requiere una CPU estándar; no se necesita GPU.
 - **Memoria RAM**: dependiendo del tamaño del archivo, se recomienda al menos 16 GB para cargar el dataset en memoria en un entorno de entrenamiento.
-- **Herramientas de procesamiento**: se puede usar `pandas`, `datasets` de HuggingFace o scripts en Python para cargar los datos.
+- **Herramientas de procesamiento**: se puede usar `pandas`, `datasets` de Hugging Face o scripts en Python para cargar los datos.
 
 Para el entrenamiento de modelos con estos datos, se necesitarían GPUs (por ejemplo, A100, H100 o RTX 4090) según el tamaño del modelo, pero eso depende del modelo a entrenar, no del dataset.
 
@@ -73,17 +73,17 @@ No procede, ya que no es un modelo, sino un dataset. No se dispone de informaci�
 - **Datos incompletos**: algunos campos `ios` están vacíos porque los tamaños de entrada/salida superaban los límites al ejecutar el código, lo que puede reducir la calidad de los ejemplos de entrenamiento.
 - **Transformaciones imperfectas**: la model card señala que algunas descripciones de problemas no contienen suficiente información para describir el código, debido a transformaciones automáticas con LLM. Esto puede llevar a muestras con ruido.
 - **Idioma**: no se especifican los idiomas de las descripciones; probablemente en inglés, pero no está confirmado. No hay soporte explícito para otros idiomas.
-- **Licencia**: aunque la model card indica Apache-2.0, los metadatos de HuggingFace no la registran. Se debe verificar antes de uso comercial.
+- **Licencia**: aunque la model card indica Apache-2.0, los metadatos de Hugging Face no la registran. Se debe verificar antes de uso comercial.
 - **Origen**: el dataset está derivado de un conjunto de datos de HuggingFaceTB, por lo que se debe respetar la licencia original de la fuente.
 - **Uso en producción**: al ser datos crudos, no se recomienda usarlos directamente para entrenamiento sin una limpieza adicional y validación de calidad.
 
 ## Enlaces
 
-- [HuggingFace: toolathlon-eval-02/Annoy-PyEdu-Rs-Raw](https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs-Raw)
-- [HuggingFace: toolathlonEval/Annoy-PyEdu-Rs-Raw](https://huggingface.co/datasets/toolathlonEval/Annoy-PyEdu-Rs-Raw)
+- [Hugging Face: toolathlon-eval-02/Annoy-PyEdu-Rs-Raw](https://huggingface.co/datasets/toolathlon-eval-02/Annoy-PyEdu-Rs-Raw)
+- [Hugging Face: toolathlonEval/Annoy-PyEdu-Rs-Raw](https://huggingface.co/datasets/toolathlonEval/Annoy-PyEdu-Rs-Raw)
 - [GitHub: Toolathlon-Official](https://github.com/HYZ17/Toolathlon-Official)
 - [Gist con actualización de README](https://gist.github.com/mcpllmbench-ops/1b6ce5cefce6e6403041fedfe576bf6c)
 - [Repositorio del proyecto Annoy](https://github.com/tooalthon-user-11-sketch/Annoy)
 - [Página del proyecto SpecX](https://specx.github.io/)
-- [Recursos publicados en HuggingFace](https://huggingface.co/collections/toolathlon-eval-02/specx-67a978e28fd926b56a4f55a2)
+- [Recursos publicados en Hugging Face](https://huggingface.co/collections/toolathlon-eval-02/specx-67a978e28fd926b56a4f55a2)
 - [Paper (placeholder)](https://huggingface.co/papers/xxxx.xxxxx)

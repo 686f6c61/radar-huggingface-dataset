@@ -18,7 +18,7 @@ Su relevancia es acotada y de caracter investigador: ofrece una linea base repro
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio se distribuye en el export original sin cuantizar (etiqueta safetensors) |
 | Idiomas soportados | japones (ja) e ingles (en) |
-| Licencia | openmdw-1.1 (etiquetada como `license: other` en HuggingFace; enlace: https://openmdw.ai/license/1-1/) |
+| Licencia | openmdw-1.1 (etiquetada como `license: other` en Hugging Face; enlace: https://openmdw.ai/license/1-1/) |
 | Formato de pesos | safetensors (export de 31 ficheros por checkpoint) |
 | Tamano del repositorio | 9,8 GB; cada checkpoint 4.905.905.551 bytes, dos exports suman 9.811.811.102 bytes antes de codigo y documentacion |
 | Modelo base | nvidia/Cosmos3-Edge (relacion: finetune) |
@@ -79,7 +79,7 @@ El exito en estacionario nuevo es de 180/192 (93,75 %), con 22 mejoras emparejad
 - VRAM para inferencia: no disponible. Como cota inferior, cada checkpoint ocupa 4.905.905.551 bytes, a lo que hay que sumar el encoder de vision congelado, los assets del framework Cosmos y la superposicion sobre el modelo base.
 - GPU recomendadas: no disponible en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no confirmada. El peso de cada checkpoint (aproximadamente 4,9 GB) es compatible con GPUs de consumo de gama alta en cuanto a tamano de fichero, pero no hay datos publicados de VRAM total requerida ni de rendimiento en esas tarjetas.
-- Opciones de despliegue: el autor indica explicitamente que la carga usa el Cosmos Framework fijado y un procedimiento de base-overlay descrito en REPRODUCE.md, y que no es una llamada simple a `transformers.from_pretrained` ni un endpoint de inferencia alojado en HuggingFace. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: el autor indica explicitamente que la carga usa el Cosmos Framework fijado y un procedimiento de base-overlay descrito en REPRODUCE.md, y que no es una llamada simple a `transformers.from_pretrained` ni un endpoint de inferencia alojado en Hugging Face. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles. No se confunden con los presupuestos de 1/2/3 segundos del router, que describen tiempo de mision restante.
 - Almacenamiento: el repositorio ocupa 9,8 GB; los dos exports suman 9.811.811.102 bytes antes de codigo y documentacion, mas los assets del modelo base necesarios para la superposicion.
 
@@ -89,9 +89,9 @@ No se dispone de datos de parametros, contexto o rendimiento de alternativas de 
 
 | Modelo | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tancho Generator v5 (v13s/tancho-generator-v5) | no disponible | no disponible | 180/192 (93,75 %) en estacionario nuevo; 15/64 en movimiento requerido | openmdw-1.1 | Publico en HuggingFace, 0 descargas, 0 likes |
+| Tancho Generator v5 (v13s/tancho-generator-v5) | no disponible | no disponible | 180/192 (93,75 %) en estacionario nuevo; 15/64 en movimiento requerido | openmdw-1.1 | Publico en Hugging Face, 0 descargas, 0 likes |
 | nvidia/Cosmos3-Edge (modelo base) | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada | Modelo base referenciado |
-| Tancho (release anterior, v13s/tancho) | no disponible | no disponible | 21/40 (metrica no equivalente a la de v5) | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| Tancho (release anterior, v13s/tancho) | no disponible | no disponible | 21/40 (metrica no equivalente a la de v5) | no disponible en la informacion proporcionada | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -103,14 +103,14 @@ No se dispone de datos de parametros, contexto o rendimiento de alternativas de 
 - Geometria sintetica: los 544 casos de geometria numerica nueva son sinteticos y no estan ligados a objetos reconstruidos en las imagenes. Los casos normales son 28 escenas base con 8 transformaciones de simetria, no 224 vuelos independientes.
 - Sin reparacion ni fallback: hay una sola generacion por peticion, sin reparacion de respuesta, reintento ni fallback entre modelos.
 - El modelo no es un sistema de control de vuelo, no decide el objetivo de observacion y no genera trayectorias continuas de camara. El ejemplo JSON de la model card es una ilustracion de formato, no un plan certificado.
-- Carga no estandar: no es compatible con una llamada directa a `transformers.from_pretrained` ni con endpoints de inferencia alojados en HuggingFace; requiere el framework fijado y el procedimiento de base-overlay.
+- Carga no estandar: no es compatible con una llamada directa a `transformers.from_pretrained` ni con endpoints de inferencia alojados en Hugging Face; requiere el framework fijado y el procedimiento de base-overlay.
 - Licencia: openmdw-1.1, etiquetada como `license: other`. Debe revisarse el texto completo antes de cualquier uso comercial.
 - Validacion de la comunidad nula: 0 descargas y 0 likes en el momento de la consulta, sin evidencia externa de funcionamiento en produccion.
 - Idiomas: solo japones e ingles. No hay datos de comportamiento en castellano.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/v13s/tancho-generator-v5
+- Modelo en Hugging Face: https://huggingface.co/v13s/tancho-generator-v5
 - Modelo base: https://huggingface.co/nvidia/Cosmos3-Edge
 - Release anterior del autor: https://huggingface.co/v13s/tancho
 - Licencia openmdw-1.1: https://openmdw.ai/license/1-1/

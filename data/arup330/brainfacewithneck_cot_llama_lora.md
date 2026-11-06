@@ -79,7 +79,7 @@ La comparativa directa con otros modelos médicos especializados (como los basad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arup330/BrainFaceWithNeck_CoT_llama_lora
+- Modelo en Hugging Face: https://huggingface.co/Arup330/BrainFaceWithNeck_CoT_llama_lora
 - Modelo relacionado (Neck_cot_llama_lora): https://huggingface.co/Arup330/Neck_cot_llama_lora
 - Perfil del autor: https://huggingface.co/Arup330
 - Datasets del autor: https://huggingface.co/Arup330/datasets

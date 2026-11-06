@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JBRL-v5 es un modelo publicado en HuggingFace por el usuario MatanBT bajo el identificador MatanBT/JBRL-v5. El repositorio contiene pesos en formato safetensors y ocupa 1,1 GB, pero no incluye tarjeta de modelo con documentación técnica: se desconoce la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados y el proceso de entrenamiento. El propio nombre del repositorio no va acompañado de ninguna explicación publicada sobre qué significa la sigla JBRL ni qué cambios introduce la version v5.
+JBRL-v5 es un modelo publicado en Hugging Face por el usuario MatanBT bajo el identificador MatanBT/JBRL-v5. El repositorio contiene pesos en formato safetensors y ocupa 1,1 GB, pero no incluye tarjeta de modelo con documentación técnica: se desconoce la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados y el proceso de entrenamiento. El propio nombre del repositorio no va acompañado de ninguna explicación publicada sobre qué significa la sigla JBRL ni qué cambios introduce la version v5.
 
-El acceso al modelo está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. La licencia declarada es "authorized-research-only", lo que en la práctica limita el uso a investigación autorizada y excluye, salvo permiso explícito del autor, cualquier explotación comercial.
+El acceso al modelo está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. La licencia declarada es "authorized-research-only", lo que en la práctica limita el uso a investigación autorizada y excluye, salvo permiso explícito del autor, cualquier explotación comercial.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y la búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo, su autor o su entrenamiento. Por tanto, esta ficha se limita a reflejar los metadatos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que no está documentado. Se recomienda precaución antes de evaluarlo para cualquier uso en producción.
 
@@ -41,7 +41,7 @@ No se ha documentado ninguna capacidad oficial del modelo. A continuación se en
 - Razonamiento, matemáticas y código: no confirmados.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
-- Capacidades multilingües: no documentadas (el campo de idiomas está vacío en la ficha de HuggingFace).
+- Capacidades multilingües: no documentadas (el campo de idiomas está vacío en la ficha de Hugging Face).
 - Capacidades especiales (modo thinking, visión, audio, decodificación especulativa): no documentadas.
 - Modo de chat o plantilla de prompt: no disponible.
 
@@ -76,7 +76,7 @@ No disponible. No se ha podido identificar la categoría del modelo (tamaño, ta
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: la descarga requiere aceptar las condiciones del gate en HuggingFace, lo que puede retrasar o impedir su uso en flujos automatizados.
+- Acceso restringido: la descarga requiere aceptar las condiciones del gate en Hugging Face, lo que puede retrasar o impedir su uso en flujos automatizados.
 - Licencia "authorized-research-only": el uso comercial queda excluido salvo autorización expresa del autor. Es imprescindible revisar los términos completos antes de cualquier despliegue.
 - Ausencia total de documentación: no hay tarjeta de modelo, informe técnico ni descripción de datos de entrenamiento, lo que impide evaluar procedencia, sesgos y calidad del corpus.
 - Sesgos conocidos: no disponibles; al desconocerse los datos de entrenamiento no se puede estimar el sesgo demográfico, cultural o lingüístico.
@@ -88,7 +88,7 @@ No disponible. No se ha podido identificar la categoría del modelo (tamaño, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MatanBT/JBRL-v5
+- Hugging Face: https://huggingface.co/MatanBT/JBRL-v5
 - Paper: no disponible
 - Blog o informe técnico: no disponible
 - Repositorio de código: no disponible

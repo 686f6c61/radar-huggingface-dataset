@@ -4,7 +4,7 @@
 
 El repositorio `camilablank/all_sycophancy_checkpoints` contiene una colección de checkpoints de modelos de la familia OLMo-3, entrenados mediante *preference training* (DPO) como parte del proyecto "sycophancy-confidence" de Camila Blank, investigadora en Stanford. El objetivo de este trabajo es reducir el comportamiento de adulación (*sycophancy*) en modelos de lenguaje, es decir, la tendencia a estar de acuerdo con el usuario o a halagarle en lugar de dar respuestas objetivas.
 
-Cada carpeta de nivel superior del repositorio corresponde a una ejecución de entrenamiento distinta, con pesos cargables directamente mediante la librería `transformers` de HuggingFace. El repositorio tiene un tamaño de 586,8 GB, lo que sugiere que contiene múltiples checkpoints de modelos de gran tamaño. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque al ser un proyecto de investigación, la documentación disponible es escasa y no se especifican detalles técnicos como número de parámetros, arquitectura exacta o datos de entrenamiento.
+Cada carpeta de nivel superior del repositorio corresponde a una ejecución de entrenamiento distinta, con pesos cargables directamente mediante la librería `transformers` de Hugging Face. El repositorio tiene un tamaño de 586,8 GB, lo que sugiere que contiene múltiples checkpoints de modelos de gran tamaño. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque al ser un proyecto de investigación, la documentación disponible es escasa y no se especifican detalles técnicos como número de parámetros, arquitectura exacta o datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para una comparativa concreta. Los mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/camilablank/all_sycophancy_checkpoints
-- Perfil de la autora en HuggingFace: https://huggingface.co/camilablank
+- Repositorio en Hugging Face: https://huggingface.co/camilablank/all_sycophancy_checkpoints
+- Perfil de la autora en Hugging Face: https://huggingface.co/camilablank
 - Repositorios de GitHub de la autora: https://github.com/camilablank?tab=repositories
 - Benchmark Syco-bench: https://syco-bench.com/

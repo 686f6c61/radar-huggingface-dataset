@@ -2,7 +2,7 @@
 
 ## Resumen
 
-North Micro Vision Instruct es un modelo de visión-lenguaje (VLM) de 2.4 mil millones de parámetros, desarrollado por Cohere y publicado bajo licencia Apache 2.0. El repositorio en HuggingFace está alojado bajo la cuenta SAIFIINDUSTRIES, aunque la autoría técnica corresponde a Cohere. Está diseñado como una base compacta para prototipado, fine-tuning específico y aplicaciones multimodales especializadas, con soporte de imágenes en resolución nativa, lo que preserva la proporción de aspecto y el detalle visual fino.
+North Micro Vision Instruct es un modelo de visión-lenguaje (VLM) de 2.4 mil millones de parámetros, desarrollado por Cohere y publicado bajo licencia Apache 2.0. El repositorio en Hugging Face está alojado bajo la cuenta SAIFIINDUSTRIES, aunque la autoría técnica corresponde a Cohere. Está diseñado como una base compacta para prototipado, fine-tuning específico y aplicaciones multimodales especializadas, con soporte de imágenes en resolución nativa, lo que preserva la proporción de aspecto y el detalle visual fino.
 
 El modelo combina un encoder visual de 400M parámetros entrenado a medida (partiendo de SigLIP 2 SO400M) con un modelo de lenguaje propio de 2B parámetros (North Micro LLM). Soporta entradas intercaladas de texto e imágenes, múltiples imágenes por prompt, y es multilingüe (11 idiomas declarados). Su ventana de contexto del backbone de lenguaje es de 128K tokens, aunque el rango validado para prompts multimodales es de 8K tokens. La relevancia actual radica en su tamaño reducido, su licencia permisiva y su capacidad para ejecutarse en hardware de consumo, lo que lo convierte en una opción atractiva para experimentación y despliegue en entornos con recursos limitados.
 
@@ -75,10 +75,10 @@ Nota: los datos de Qwen2-VL-2B, LLaVA 1.5 y Phi-3-vision son de conocimiento gen
 - No se dispone de información sobre sesgos o alucinaciones específicas del modelo; como todo VLM, puede generar descripciones inexactas o inventar detalles en imágenes ambiguas.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo no incluye garantías de seguridad o robustez para aplicaciones críticas.
 - Requiere Transformers 5.16.0, que aún no está disponible en PyPI; es necesario instalar desde fuente, lo que puede complicar el despliegue en entornos con dependencias fijas.
-- El repositorio en HuggingFace pertenece a SAIFIINDUSTRIES, no a CohereLabs; se recomienda verificar la procedencia de los pesos antes de usarlos en producción.
+- El repositorio en Hugging Face pertenece a SAIFIINDUSTRIES, no a CohereLabs; se recomienda verificar la procedencia de los pesos antes de usarlos en producción.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAIFIINDUSTRIES/North-Micro-Vision-Instruct
+- Repositorio Hugging Face: https://huggingface.co/SAIFIINDUSTRIES/North-Micro-Vision-Instruct
 - Blog técnico de Cohere (mencionado en la model card): https://huggingface.co/blog/CohereLabs/meet-north-micro-vision-instruct
 - Modelo base del encoder visual: https://huggingface.co/google/siglip2-so400m-patch16-384

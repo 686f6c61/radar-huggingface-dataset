@@ -25,7 +25,7 @@ Su relevancia es limitada y de nicho: resulta útil para quienes quieran ejecuta
 
 No se dispone de información sobre la arquitectura interna del modelo base. El nombre "4B" sugiere un transformer decoder-only de aproximadamente 4.000 millones de parámetros, pero no hay confirmación en la documentación. Tampoco se detallan el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
-El único dato técnico verificable proviene de los metadatos de conversión del repositorio: se generaron cuantizaciones estáticas con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos en formato HuggingFace a GGUF mediante el pipeline habitual de llama.cpp. El sufijo "Turbo" y "Uncensored" en el nombre sugiere un ajuste fino orientado a velocidad de inferencia y a la eliminación de rechazos, pero se trata de una inferencia a partir del nombre, no de información confirmada.
+El único dato técnico verificable proviene de los metadatos de conversión del repositorio: se generaron cuantizaciones estáticas con `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversión desde pesos en formato Hugging Face a GGUF mediante el pipeline habitual de llama.cpp. El sufijo "Turbo" y "Uncensored" en el nombre sugiere un ajuste fino orientado a velocidad de inferencia y a la eliminación de rechazos, pero se trata de una inferencia a partir del nombre, no de información confirmada.
 
 ## Capacidades
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Minecraftism-4B-Turbo-Uncensored-GGUF | 4B | no disponible | no disponible | GGUF | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
-| Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | safetensors, GGUF | HuggingFace, Ollama |
+| Minecraftism-4B-Turbo-Uncensored-GGUF | 4B | no disponible | no disponible | GGUF | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
+| Llama-3.2-3B-Instruct | 3B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | MIT | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparación se establece por rango de tamaño, no por dominio: los tres modelos alternativos cuentan con documentación completa, licencias claras y benchmarks publicados, mientras que Minecraftism-4B carece de todos esos elementos. Para uso en producción, las alternativas citadas ofrecen garantías que este repositorio no proporciona.
 

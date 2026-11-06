@@ -4,9 +4,9 @@
 
 `tfrere/microduck-move-toe-heel-body-rock` no es un modelo de lenguaje: es una **política de control motriz** (un "move") para un robot tipo pato llamado Microduck, entrenada por el usuario tfrere dentro del proyecto Microduck Academy. El artefacto principal es `policy.onnx`, acompañado de `model.pt` para reentrenamiento y de grabaciones de trayectorias en formato `trajectory.v1` (`rollouts/*.traj` y `checkpoints/r<round>-<iter>.traj`). La habilidad aprendida está descrita por el propio autor como "un pato que balancea todo el cuerpo hacia delante y hacia atrás sobre sus pies, primero las puntas y luego los talones, sin dar ningún paso".
 
-La ficha se publica en HuggingFace con los tags `microduck-academy-policy`, `microduck-policy`, `academy`, `family:velocity`, `kind:perpetual`, `tier:2` y licencia Apache 2.0. La familia declarada es `velocity` (estilos de marcha o gaits) y el tipo es `perpetual`, es decir, un comportamiento cíclico pensado para repetirse indefinidamente sin desplazamiento. Según la telemetría incluida, la política mantiene velocidad y desplazamiento en 0,0 m/s y una fracción de contacto de 1,0 en ambos pies, lo que confirma que no hay levantamiento de pies ni avance.
+La ficha se publica en Hugging Face con los tags `microduck-academy-policy`, `microduck-policy`, `academy`, `family:velocity`, `kind:perpetual`, `tier:2` y licencia Apache 2.0. La familia declarada es `velocity` (estilos de marcha o gaits) y el tipo es `perpetual`, es decir, un comportamiento cíclico pensado para repetirse indefinidamente sin desplazamiento. Según la telemetría incluida, la política mantiene velocidad y desplazamiento en 0,0 m/s y una fracción de contacto de 1,0 en ambos pies, lo que confirma que no hay levantamiento de pies ni avance.
 
-El interés de este modelo es metodológico más que de escala: ilustra un pipeline de entrenamiento y evaluación de políticas de locomoción con un juez numérico automático (que otorga una puntuación de 1,0 sobre los datos de telemetría) y un segundo evaluador basado en un VLM que revisa fotogramas del vídeo y confirma cualitativamente el comportamiento. La puntuación final publicada es del 100 %. El repositorio ocupa 0,0 GB según HuggingFace, tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha.
+El interés de este modelo es metodológico más que de escala: ilustra un pipeline de entrenamiento y evaluación de políticas de locomoción con un juez numérico automático (que otorga una puntuación de 1,0 sobre los datos de telemetría) y un segundo evaluador basado en un VLM que revisa fotogramas del vídeo y confirma cualitativamente el comportamiento. La puntuación final publicada es del 100 %. El repositorio ocupa 0,0 GB según Hugging Face, tiene 0 descargas y 0 "likes" en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone de comparaciones con otras políticas del mismo proyecto ni con ci
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB según HuggingFace, lo que en cualquier caso indica un artefacto de tamano reducido, pero no se publica el numero de parametros ni el tamano exacto del fichero ONNX.
+- VRAM estimada para inferencia: no disponible. El repositorio ocupa 0,0 GB según Hugging Face, lo que en cualquier caso indica un artefacto de tamano reducido, pero no se publica el numero de parametros ni el tamano exacto del fichero ONNX.
 - GPU recomendadas: no disponibles. No se menciona ninguna GPU en la informacion proporcionada.
 - Compatibilidad con GPU de consumo: no disponible. Al tratarse de una politica de control exportada a ONNX, el destino previsto parece ser el propio robot, pero esto no se declara de forma explicita en la model card.
 - Opciones de despliegue: la via documentada es la CLI `robotctl`, con los comandos `sudo robotctl policy add toe-heel-body-rock tfrere/microduck-move-toe-heel-body-rock` y `robotctl robot do toe-heel-body-rock`. El artefacto en formato ONNX es ejecutable en cualquier entorno con runtime de ONNX, aunque el autor no detalla ningun runtime concreto.
@@ -110,7 +110,7 @@ No disponible. La informacion proporcionada no incluye otras politicas de Microd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-toe-heel-body-rock
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-toe-heel-body-rock
 - Perfil del autor: https://huggingface.co/tfrere
 - Space de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los unicos enlaces recuperados correspondian a paginas comerciales de Amazon (https://www.amazon.de/, https://www.amazon.de/amazonprime, https://www.amazon.de/gp/video/storefront, https://music.amazon.de/, https://www.amazon.de/businessprime) sin relacion con el artefacto. No se han localizado paper, blog tecnico ni repositorio de codigo asociados.

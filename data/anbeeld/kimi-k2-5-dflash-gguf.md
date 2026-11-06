@@ -92,7 +92,7 @@ No se dispone de información sobre otros modelos drafter de difusión comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Anbeeld/Kimi-K2.5-DFlash-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Anbeeld/Kimi-K2.5-DFlash-GGUF
 - Modelo drafter original: https://huggingface.co/z-lab/Kimi-K2.5-DFlash
 - Modelo objetivo Kimi K2.5: https://huggingface.co/moonshotai/Kimi-K2.5
 - Paper DFlash: https://arxiv.org/abs/2602.06036

@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/adarshcod30/drdetect-dr-screening
+- Hugging Face: https://huggingface.co/adarshcod30/drdetect-dr-screening
 - GitHub: https://github.com/adarshcod30/Diabetic-Retinopathy-Detection
 - Model card: https://github.com/adarshcod30/Diabetic-Retinopathy-Detection/blob/main/MODEL_CARD.md
 - Resultados de validación: https://github.com/adarshcod30/Diabetic-Retinopathy-Detection/blob/main/docs/22_PHASE8_VALIDATION_RESULTS.md

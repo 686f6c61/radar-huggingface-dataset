@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relsgg-vits16 es un modelo de generación de grafos de escena (scene graph generation, SGG) en vocabulario abierto desarrollado por el autor independiente maelic, publicado en HuggingFace bajo el identificador `maelic/relsgg-vits16`. Su tarea no es generar texto libre, sino predecir relaciones entre regiones: recibe una imagen y un conjunto de cajas o máscaras procedentes de cualquier detector, segmentador o anotación, y devuelve tripletas ordenadas del tipo `(persona) --montando [0.67]--> (caballo)`. Un aspecto diferencial es que las etiquetas de clase de los objetos nunca se usan como entrada del modelo.
+relsgg-vits16 es un modelo de generación de grafos de escena (scene graph generation, SGG) en vocabulario abierto desarrollado por el autor independiente maelic, publicado en Hugging Face bajo el identificador `maelic/relsgg-vits16`. Su tarea no es generar texto libre, sino predecir relaciones entre regiones: recibe una imagen y un conjunto de cajas o máscaras procedentes de cualquier detector, segmentador o anotación, y devuelve tripletas ordenadas del tipo `(persona) --montando [0.67]--> (caballo)`. Un aspecto diferencial es que las etiquetas de clase de los objetos nunca se usan como entrada del modelo.
 
 El modelo forma parte del proyecto **RelateAnything**, y su innovación principal es que el vocabulario de predicados es una entrada en tiempo de inferencia, no una lista fija aprendida. El usuario puede pasar cualquier conjunto de cadenas (por ejemplo, `"about to collide with"`, `"reflected in"`) sin reentrenar: un *text student* codifica el vocabulario una única vez, la cabeza de predicción se reparametriza sobre esas representaciones y, a partir de ahí, la puntuación es puramente visual. También puede desplegarse el vocabulario completo de entrenamiento, 19.103 predicados, leídos directamente de los pesos.
 
@@ -128,7 +128,7 @@ No se dispone de datos comparativos de modelos alternativos en la información p
 
 | Modelo | Parámetros | Vocabulario de predicados | Rendimiento vg150 F1@50 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| relsgg-vits16 | no disponible (backbone DINOv3 ViT-S/16) | 19.103, ampliable en inferencia | 0,359 (graph-constrained, no verificado) | dinov3-license | HuggingFace (`maelic/relsgg-vits16`) |
+| relsgg-vits16 | no disponible (backbone DINOv3 ViT-S/16) | 19.103, ampliable en inferencia | 0,359 (graph-constrained, no verificado) | dinov3-license | Hugging Face (`maelic/relsgg-vits16`) |
 | Alternativas de SGG con vocabulario cerrado | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos generalistas de visión-lenguaje | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -149,7 +149,7 @@ No se dispone de datos comparativos de modelos alternativos en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maelic/relsgg-vits16
+- Modelo en Hugging Face: https://huggingface.co/maelic/relsgg-vits16
 - Repositorio de código RelateAnything: https://github.com/Maelic/RelateAnything
 - Paper: https://arxiv.org/abs/2609.12552
 - Página del proyecto: https://maelic.github.io/RelateAnythingProject

@@ -70,9 +70,9 @@ No se dispone de comparativas directas con otros tokenizadores turcos. Sin embar
 
 ## Enlaces
 
-- [Repositorio HuggingFace: magibu/Arcus](https://huggingface.co/magibu/Arcus)
+- [Repositorio Hugging Face: magibu/Arcus](https://huggingface.co/magibu/Arcus)
 - [Página oficial de Magibu AI (turco)](https://magibu.ai/)
 - [Página oficial de Magibu AI (inglés)](https://magibu.ai/en/)
-- [Perfil de Magibu en HuggingFace](https://huggingface.co/magibu)
+- [Perfil de Magibu en Hugging Face](https://huggingface.co/magibu)
 - [Organización GitHub de Magibu](https://github.com/magibu-ai)
 - [Modelo base: meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)

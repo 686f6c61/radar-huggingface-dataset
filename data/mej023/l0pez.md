@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mej023/l0pez` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en HuggingFace por el usuario `mej023`. Está diseñado para funcionar sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusión de última generación orientado a la síntesis fotorealista. El adaptador se distribuye con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `mej023/l0pez` es un adaptador LoRA (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado en Hugging Face por el usuario `mej023`. Está diseñado para funcionar sobre el modelo base `krea/Krea-2-Raw`, un modelo de difusión de última generación orientado a la síntesis fotorealista. El adaptador se distribuye con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
-La ficha del modelo en HuggingFace no incluye información detallada sobre el número de parámetros, la arquitectura interna del LoRA, el tamaño del dataset de entrenamiento ni los resultados de benchmarks. Tampoco se especifican los idiomas soportados ni el tipo de cuantización disponible. A pesar de la ausencia de estos datos, la naturaleza del adaptador (LoRA para text-to-image) sugiere que su función es ajustar el modelo base para generar imágenes de una persona concreta, probablemente la actriz y cantante Jennifer Lopez, como indican los resultados de búsqueda en plataformas como SeaArt y PixAI.
+La ficha del modelo en Hugging Face no incluye información detallada sobre el número de parámetros, la arquitectura interna del LoRA, el tamaño del dataset de entrenamiento ni los resultados de benchmarks. Tampoco se especifican los idiomas soportados ni el tipo de cuantización disponible. A pesar de la ausencia de estos datos, la naturaleza del adaptador (LoRA para text-to-image) sugiere que su función es ajustar el modelo base para generar imágenes de una persona concreta, probablemente la actriz y cantante Jennifer Lopez, como indican los resultados de búsqueda en plataformas como SeaArt y PixAI.
 
 La relevancia de este modelo radica en su potencial para personalizar la generación de imágenes de un personaje público específico, un caso de uso habitual en la comunidad de IA generativa. Sin embargo, al no existir documentación técnica adicional ni métricas de rendimiento, su utilidad práctica queda limitada a la experimentación directa por parte de desarrolladores que ya conozcan el ecosistema de Krea-2-Raw.
 
@@ -25,13 +25,13 @@ La relevancia de este modelo radica en su potencial para personalizar la generac
 
 El modelo es un adaptador LoRA, una técnica de fine-tuning eficiente que introduce matrices de baja dimensión en las capas de atención y feed-forward de un modelo base preentrenado. En este caso, el modelo base es `krea/Krea-2-Raw`, un modelo de difusión de texto a imagen que no está documentado en la información proporcionada. No se dispone de detalles sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se especifica el rango del LoRA ni las capas objetivo del adaptador.
 
-La ausencia de metadatos técnicos en la ficha de HuggingFace impide conocer innovaciones específicas en el entrenamiento. Dado que se trata de un LoRA para un modelo de difusión, es probable que el entrenamiento se haya realizado con un conjunto de imágenes de la persona objetivo, pero no hay confirmación oficial.
+La ausencia de metadatos técnicos en la ficha de Hugging Face impide conocer innovaciones específicas en el entrenamiento. Dado que se trata de un LoRA para un modelo de difusión, es probable que el entrenamiento se haya realizado con un conjunto de imágenes de la persona objetivo, pero no hay confirmación oficial.
 
 ## Capacidades
 
 - Generación de imágenes a partir de texto (text-to-image) cuando se combina con el modelo base Krea-2-Raw.
 - Personalización del estilo o del sujeto: el adaptador está diseñado para producir imágenes de una persona concreta, probablemente Jennifer Lopez, según los resultados de búsqueda.
-- Compatibilidad con la librería `diffusers` de HuggingFace, lo que facilita su integración en pipelines existentes.
+- Compatibilidad con la librería `diffusers` de Hugging Face, lo que facilita su integración en pipelines existentes.
 - No se dispone de información sobre capacidades adicionales como tool calling, agentes, razonamiento multimodal o soporte de audio/video.
 
 ## Casos de uso
@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- La ficha de HuggingFace no incluye documentación técnica, lo que dificulta evaluar la calidad del adaptador y su comportamiento en producción.
+- La ficha de Hugging Face no incluye documentación técnica, lo que dificulta evaluar la calidad del adaptador y su comportamiento en producción.
 - No se especifican los datos de entrenamiento, por lo que existe un riesgo desconocido de sesgos o de reproducción de características no deseadas de la persona objetivo.
 - El uso de imágenes de una persona real puede estar sujeto a derechos de imagen y a normativas de privacidad, especialmente si se utiliza con fines comerciales. Es responsabilidad del usuario verificar la legalidad de su uso.
 - Al ser un LoRA, su rendimiento depende completamente del modelo base Krea-2-Raw, del cual no se proporciona información en esta ficha.
@@ -70,6 +70,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mej023/l0pez
+- Modelo en Hugging Face: https://huggingface.co/mej023/l0pez
 - Modelo base referenciado: https://huggingface.co/krea/Krea-2-Raw (no verificado en la búsqueda web)
 - No se han encontrado papers, blogs o demos oficiales asociados a este adaptador.

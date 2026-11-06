@@ -69,9 +69,9 @@ Desglose de errores del modelo: 2.976 sustituciones, 678 omisiones y 461 inserci
 
 | Modelo | Parametros | Contexto | WER (cantonés romanizado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1 | 2.038 M | no disponible | 23,00 % | Apache 2.0 | HuggingFace |
-| Qwen2.5-Omni-7B-ASR | 7B (aproximado, familia Omni) | no disponible | 44,26 % | no disponible en la informacion | HuggingFace |
-| Qwen2.5-Omni-7B-ASR-V2 | 7B (aproximado, familia Omni) | no disponible | 38,20 % | no disponible en la informacion | HuggingFace |
+| Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1 | 2.038 M | no disponible | 23,00 % | Apache 2.0 | Hugging Face |
+| Qwen2.5-Omni-7B-ASR | 7B (aproximado, familia Omni) | no disponible | 44,26 % | no disponible en la informacion | Hugging Face |
+| Qwen2.5-Omni-7B-ASR-V2 | 7B (aproximado, familia Omni) | no disponible | 38,20 % | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de otros sistemas ASR especializados en cantonés en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de otros sistemas ASR especializados en cantonés en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1
+- Modelo en Hugging Face: https://huggingface.co/Yvthyvq/Liujgoj-Cantonese-Qwen3-ASR-1.7B-V1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Conjunto de evaluación: https://huggingface.co/datasets/CanCLID/zoengjyutgaai
 - Conjunto de entrenamiento (referenciado en la model card): Yvthyvq/ZoengjYvthgaaij-MouxZaakhdungj-Liujgoj (no se proporciona URL directa)

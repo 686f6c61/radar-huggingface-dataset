@@ -83,7 +83,7 @@ La version 8-bit ofrece mayor precision que la 4-bit a cambio de un mayor consum
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-8bit
+- Repositorio Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.8-27B-MLX-MTP-8bit
 - Repositorio oficial del modelo base (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Pagina del modelo en Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/
 - Version 4-bit de mlx-community: https://huggingface.co/mlx-community/Qwen3.8-27B-MTP-4bit

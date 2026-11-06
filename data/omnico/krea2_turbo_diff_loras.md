@@ -71,5 +71,5 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Omnico/Krea2_turbo_diff_loras
+- Repositorio de Hugging Face: https://huggingface.co/Omnico/Krea2_turbo_diff_loras
 - Modelo base (referenciado en la model card): krea/Krea-2-Turbo (sin URL directa disponible)

@@ -84,11 +84,11 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 - Licencia qwen-research: restricciones para uso comercial; conviene revisar los términos del modelo base Qwen2.5-3B-Instruct antes de cualquier uso en producción.
 - Longitud de contexto no documentada en la información disponible; el entrenamiento usó longitud máxima de 1536 tokens.
 - Sin datos de benchmarks ni de rendimiento en producción; no hay evidencia publicada de calidad más allá de la pérdida en el conjunto reservado.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la ficha; no hay validación comunitaria.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la ficha; no hay validación comunitaria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tab-for-akshay/ifos-answer-writer-qwen2.5-3b
+- Modelo en Hugging Face: https://huggingface.co/tab-for-akshay/ifos-answer-writer-qwen2.5-3b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Unsloth (herramienta de entrenamiento): no disponible enlace en la informacion proporcionada

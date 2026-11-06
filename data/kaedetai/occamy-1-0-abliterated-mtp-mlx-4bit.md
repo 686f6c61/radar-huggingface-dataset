@@ -106,7 +106,7 @@ La diferencia relevante frente a los tres alternativas es la combinación de abl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KaedeTai/occamy-1.0-abliterated-mtp-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/KaedeTai/occamy-1.0-abliterated-mtp-mlx-4bit
 - Modelo base sin abliterar: https://huggingface.co/Accio-Lab/occamy-1.0
 - GGUF abliterated de origen: https://huggingface.co/SC117/occamy-1.0-abliterated-FIT-GGUF
 - Donante de la cabeza MTP: https://huggingface.co/KaedeTai/Ornith-1.5-35B-A3B-BigBang-MTP-zh-mlx-4bit
@@ -115,5 +115,5 @@ La diferencia relevante frente a los tres alternativas es la combinación de abl
 - Repositorio de código de Occamy: https://github.com/Accio-Lab/occamy
 - Página del proyecto: https://accio-lab.github.io/occamy/
 - Dataset de evaluación TMMLU+: https://huggingface.co/datasets/ikala/tmmluplus
-- Entrada de la familia en HuggingFace: https://huggingface.co/occamy-ai/occamy-1.0
+- Entrada de la familia en Hugging Face: https://huggingface.co/occamy-ai/occamy-1.0
 - Sitio sobre el motor de datos: https://occamy-ai.github.io/

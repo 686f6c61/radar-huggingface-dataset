@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chess-pgn-2400plus es un transformer decoder-only de 51 millones de parámetros (50.997.248 exactos según los pesos en safetensors) que juega al ajedrez escribiendo directamente el movimiento en notación algebraica estándar (SAN) dentro de una línea de texto PGN. Lo desarrolla el usuario de HuggingFace Arisp y sigue la receta del artículo *Transcendence: Generative Models Can Outperform The Experts That Train Them* (Zhang et al., NeurIPS 2024): el modelo opera a nivel de carácter, con un vocabulario de 33 símbolos, y nunca recibe un tablero ni las reglas del juego. Aprende únicamente por imitación de partidas de Lichess en las que ambos jugadores tenían un Elo de 2400 o superior.
+chess-pgn-2400plus es un transformer decoder-only de 51 millones de parámetros (50.997.248 exactos según los pesos en safetensors) que juega al ajedrez escribiendo directamente el movimiento en notación algebraica estándar (SAN) dentro de una línea de texto PGN. Lo desarrolla el usuario de Hugging Face Arisp y sigue la receta del artículo *Transcendence: Generative Models Can Outperform The Experts That Train Them* (Zhang et al., NeurIPS 2024): el modelo opera a nivel de carácter, con un vocabulario de 33 símbolos, y nunca recibe un tablero ni las reglas del juego. Aprende únicamente por imitación de partidas de Lichess en las que ambos jugadores tenían un Elo de 2400 o superior.
 
 El modelo forma parte de un par entrenado con la misma receta en dos bandas de nivel: chess-pgn-1000-1300 y este chess-pgn-2400plus. El interés práctico y de investigación está en que permite estudiar hasta qué punto un modelo generativo pequeño puede aproximarse al comportamiento de jugadores expertos, y en que su carácter compacto (0,4 GB de repositorio) lo hace ejecutable en CPU.
 
@@ -23,7 +23,7 @@ La relevancia inmediata es doble: por un lado, es un banco de pruebas reproducib
 | Vocabulario | 33 caracteres (carácter a carácter, sin tokenizador BPE) |
 | Formato de datos de entrada | Una partida por línea: `;` + movetext SAN + resultado, p. ej. `;1.e4 e5 2.Nf3 Nc6 ... 1-0` |
 | Tamaño del repositorio | 0,4 GB |
-| Fecha de creación en HuggingFace | 2026-10-25 (última actualización: 2026-10-26) |
+| Fecha de creación en Hugging Face | 2026-10-25 (última actualización: 2026-10-26) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -84,8 +84,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Métricas publicadas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chess-pgn-2400plus | 50.997.248 | 1.024 caracteres | 10 M partidas Lichess, ambos jugadores 2400+ | MIT | Pérdida 0,3622 bits/car.; acierto greedy 53,3 % (2400+); 0,30 % ilegales | safetensors en HuggingFace |
-| chess-pgn-1000-1300 | No disponible en la información (misma receta, según la model card) | No disponible | Partidas Lichess de la banda 1000-1300, misma receta | MIT (según la model card del par) | No disponibles para ese checkpoint | safetensors en HuggingFace |
+| chess-pgn-2400plus | 50.997.248 | 1.024 caracteres | 10 M partidas Lichess, ambos jugadores 2400+ | MIT | Pérdida 0,3622 bits/car.; acierto greedy 53,3 % (2400+); 0,30 % ilegales | safetensors en Hugging Face |
+| chess-pgn-1000-1300 | No disponible en la información (misma receta, según la model card) | No disponible | Partidas Lichess de la banda 1000-1300, misma receta | MIT (según la model card del par) | No disponibles para ese checkpoint | safetensors en Hugging Face |
 | Motores de ajedrez clásicos (Stockfish, Leela Chess Zero) | No disponible (arquitecturas y tamaños muy distintos) | No aplica | Búsqueda sobre árbol de variantes y/o redes neuronales + MCTS | GPL-3.0 (Stockfish) / varias | No comparable: siempre generan movimientos legales y juegan a un nivel muy superior | Binarios y pesos ampliamente disponibles |
 
 La comparación relevante es interna al par de modelos del mismo autor: el checkpoint 2400+ reduce la sorpresa media del movimiento jugado de 1,99 a 1,40 nats y el porcentaje de ilegales en greedy de 0,87 % a 0,30 % respecto a las posiciones de la banda baja. Frente a motores, la categoría es distinta: este modelo imita, no busca, y no garantiza legalidad.
@@ -105,7 +105,7 @@ La comparación relevante es interna al par de modelos del mismo autor: el check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arisp/chess-pgn-2400plus
+- Modelo en Hugging Face: https://huggingface.co/Arisp/chess-pgn-2400plus
 - Modelo hermano (banda 1000-1300): https://huggingface.co/Arisp/chess-pgn-1000-1300
 - Artículo de referencia: Zhang et al., "Transcendence: Generative Models Can Outperform The Experts That Train Them", NeurIPS 2024 (sin URL en la información proporcionada)
 - Repositorio de código, paper, demo o blog adicionales: no disponibles en la información proporcionada

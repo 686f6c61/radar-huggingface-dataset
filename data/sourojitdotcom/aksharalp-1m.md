@@ -96,7 +96,7 @@ La comparativa se limita a los datos aportados por la model card; no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sourojitdotcom/AksharaLP-1M
+- Modelo en Hugging Face: https://huggingface.co/sourojitdotcom/AksharaLP-1M
 - Version recomendada v2: https://huggingface.co/sourojitdotcom/AksharaLP-1M-v2
 - Demo en vivo (v1): https://huggingface.co/spaces/sourojitdotcom/AksharaLP-demo
 - Demo en vivo (v2): https://huggingface.co/spaces/sourojitdotcom/AksharaLP-v2-demo

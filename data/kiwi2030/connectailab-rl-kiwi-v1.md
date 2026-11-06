@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-kiwi-v1 es un adaptador LoRA de tipo PEFT sobre el modelo base Qwen/Qwen3.5-0.8B, entrenado para una tarea muy concreta: leer un problema de decisión empresarial (estado, pregunta y opciones) y devolver exactamente una letra que identifica la opción elegida. No es un modelo conversacional de propósito general, sino un clasificador de decisión de un solo token de salida, cuyo pipeline declarado en HuggingFace es `reinforcement-learning`. Lo desarrolla el autor `kiwi2030` en el contexto del laboratorio educativo CONNECT AI LAB × AI CITY BUILDERS, ligado al simulador de empresas "Connect Tycoon".
+connectailab-rl-kiwi-v1 es un adaptador LoRA de tipo PEFT sobre el modelo base Qwen/Qwen3.5-0.8B, entrenado para una tarea muy concreta: leer un problema de decisión empresarial (estado, pregunta y opciones) y devolver exactamente una letra que identifica la opción elegida. No es un modelo conversacional de propósito general, sino un clasificador de decisión de un solo token de salida, cuyo pipeline declarado en Hugging Face es `reinforcement-learning`. Lo desarrolla el autor `kiwi2030` en el contexto del laboratorio educativo CONNECT AI LAB × AI CITY BUILDERS, ligado al simulador de empresas "Connect Tycoon".
 
 El modelo resuelve el problema de tomar decisiones secuenciales dentro de un simulador de gestión de empresa, donde cada mes se plantea una decisión con varias alternativas y el objetivo es maximizar el beneficio y minimizar el arrepentimiento (regret) acumulado. Su relevancia es más investigadora y didáctica que productiva: ilustra un flujo completo de aprendizaje por refuerzo combinado con supervisión sobre un modelo de lenguaje pequeño (0,8 mil millones de parámetros base).
 
@@ -86,7 +86,7 @@ No se han proporcionado modelos comparables en la informacion disponible. Se tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v1
+- Modelo en Hugging Face: https://huggingface.co/kiwi2030/connectailab-rl-kiwi-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de entrenamiento (Colab): https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

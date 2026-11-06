@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`SeeWye/qwen_TM_OCR_16bit_merged2` es un modelo multimodal de tipo imagen-texto public ado por el usuario SeeWye en HuggingFace. Se trata de un ajuste fino (fine-tune) derivado de `SeeWye/qwen_finetune1_16bit`, que a su vez parte de la familia Qwen 3.5 según la etiqueta `qwen3_5` del repositorio. El modelo tiene 4.539.265.536 parámetros (~4,54 mil millones) en precisión de 16 bits, con un repositorio de 9,1 GB en formato safetensors, y está pensado para generación de texto e inferencia multimodal (pipeline `image-text-to-text`).
+`SeeWye/qwen_TM_OCR_16bit_merged2` es un modelo multimodal de tipo imagen-texto public ado por el usuario SeeWye en Hugging Face. Se trata de un ajuste fino (fine-tune) derivado de `SeeWye/qwen_finetune1_16bit`, que a su vez parte de la familia Qwen 3.5 según la etiqueta `qwen3_5` del repositorio. El modelo tiene 4.539.265.536 parámetros (~4,54 mil millones) en precisión de 16 bits, con un repositorio de 9,1 GB en formato safetensors, y está pensado para generación de texto e inferencia multimodal (pipeline `image-text-to-text`).
 
 El nombre del repositorio sugiere un uso orientado a OCR (reconocimiento óptico de caracteres) y la etiqueta `merged2` indica que se trata de una fusión de pesos, presumiblemente de un adaptador LoRA entrenado con Unsloth sobre el modelo base. Sin embargo, el autor no documenta en la model card ni el dataset de entrenamiento, ni el procedimiento de ajuste, ni las tareas evaluadas, por lo que la orientación a OCR es una inferencia a partir del nombre, no un dato confirmado.
 
@@ -69,10 +69,10 @@ La comparativa se establece con alternativas multimodales de tamano comparable a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SeeWye/qwen_TM_OCR_16bit_merged2 | 4,54 B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-VL-3B-Instruct | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun su ficha) | HuggingFace, ampliamente utilizado |
-| Qwen2.5-VL-7B-Instruct | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun su ficha) | HuggingFace, ampliamente utilizado |
-| InternVL 2.5 (variante ~4B) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun su ficha) | HuggingFace |
+| SeeWye/qwen_TM_OCR_16bit_merged2 | 4,54 B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-VL-3B-Instruct | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun su ficha) | Hugging Face, ampliamente utilizado |
+| Qwen2.5-VL-7B-Instruct | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun su ficha) | Hugging Face, ampliamente utilizado |
+| InternVL 2.5 (variante ~4B) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun su ficha) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre este modelo y las alternativas, por lo que no es posible establecer una conclusion cuantitativa sobre cual ofrece mejor calidad en tareas de OCR o comprension de imagenes.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo entre este modelo y las altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeeWye/qwen_TM_OCR_16bit_merged2
+- Modelo en Hugging Face: https://huggingface.co/SeeWye/qwen_TM_OCR_16bit_merged2
 - Modelo base declarado: https://huggingface.co/SeeWye/qwen_finetune1_16bit
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

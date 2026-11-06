@@ -91,7 +91,7 @@ La comparativa con el modelo base OLMo-2-0425-1B-DPO sin el fine-tuning no es re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-dpo-unmixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-cake-dpo-unmixed
 - Repositorio GitHub del proyecto (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo base OLMo-2-0425-1B-DPO: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Página de OLMo de Ai2: https://allenai.org/olmo

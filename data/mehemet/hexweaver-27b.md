@@ -6,7 +6,7 @@ HexWeaver-27B es un adaptador PEFT (LoRA) publicado por el usuario mehemet sobre
 
 El modelo resuelve un nicho muy concreto: asistentes de código capaces de razonar sobre binarios, pseudocódigo descompilado, representaciones intermedias y restricciones formales, en lugar de limitarse a código fuente convencional. Entre sus etiquetas figuran también angr, control-flow-flattening, Tigress y OLLVM, lo que indica un entrenamiento orientado a reconocer y contrarrestar técnicas de ofuscación habituales en malware y en protección de software comercial.
 
-Es relevante ahora porque combina un modelo base de gran tamaño (27B, según la nomenclatura del checkpoint) con un adaptador ligero y una licencia Apache 2.0, lo que facilita su integración en pipelines de análisis de seguridad. No obstante, el acceso está restringido (gated) en HuggingFace y el número de descargas es mínimo (1 en el momento de la consulta), por lo que se trata de un artefacto muy reciente y poco validado por la comunidad.
+Es relevante ahora porque combina un modelo base de gran tamaño (27B, según la nomenclatura del checkpoint) con un adaptador ligero y una licencia Apache 2.0, lo que facilita su integración en pipelines de análisis de seguridad. No obstante, el acceso está restringido (gated) en Hugging Face y el número de descargas es mínimo (1 en el momento de la consulta), por lo que se trata de un artefacto muy reciente y poco validado por la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ La comparación cuantitativa de rendimiento no está disponible al no haberse pu
 ## Limitaciones y advertencias
 
 - Artefacto con muy poca validación comunitaria: 1 descarga y 1 like en el momento de la consulta.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 - Idiomas limitados a inglés y turco; el rendimiento en castellano no está garantizado.
 - Riesgo de alucinación en la interpretación de binarios y en la generación de restricciones SMT: toda salida debe validarse con las herramientas reales (Ghidra, Z3, angr).
 - No se documentan sesgos específicos ni evaluaciones de seguridad del adaptador.
@@ -84,7 +84,7 @@ La comparación cuantitativa de rendimiento no está disponible al no haberse pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehemet/HexWeaver-27B
+- Hugging Face: https://huggingface.co/mehemet/HexWeaver-27B
 - Modelo base: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Ghidra: https://ghidra-sre.org/
 - Z3: https://github.com/Z3Prover/z3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wuvictor/swin-t-retrieval` es un repositorio de HuggingFace publicado por el usuario wuvictor que contiene una implementación funcional de una Swin Transformer (variante *tiny*) orientada a tareas de *retrieval* multimodal. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks.
+`wuvictor/swin-t-retrieval` es un repositorio de Hugging Face publicado por el usuario wuvictor que contiene una implementación funcional de una Swin Transformer (variante *tiny*) orientada a tareas de *retrieval* multimodal. El propio autor lo describe explícitamente como un punto de partida experimental: el checkpoint `model.safetensors` es una inicialización válida para *smoke tests*, no un modelo entrenado ni evaluado con benchmarks.
 
 Esto es decisivo para interpretar la ficha: no se trata de un modelo listo para producción ni de un sistema con rendimiento medido, sino de código transparente y reproducible con el que experimentar, verificar que la arquitectura carga correctamente y, en su caso, entrenar desde cero. La model card omite deliberadamente cualquier afirmación de rendimiento y advierte que no se ha auditado el checkpoint en robustez, equidad ni transferencia de dominio.
 
@@ -54,7 +54,7 @@ Todos los casos siguientes presuponen entrenamiento previo del checkpoint por pa
 - Prototipado académico de transformers jerárquicos de visión: sirve para estudiar el comportamiento de Swin en configuraciones *tiny* con normalización scalenorm y activación approx gelu.
 - Búsqueda semántica de imágenes en catálogos propios: tras entrenar con pares imagen-texto del dominio objetivo, el modelo podría indexar y recuperar imágenes a partir de consultas en lenguaje natural.
 - Verificación de infraestructura de *training loops*: al ser un modelo diminuto, permite depurar el *pipeline* de datos, el *scheduler* exponencial y el optimizador LAMB en minutos, antes de escalar a configuraciones mayores.
-- Docencia y formación: ilustrar de forma práctica cómo se estructura un repositorio de modelo en HuggingFace (config, pesos, argumentos de entrenamiento y documentación de limitaciones).
+- Docencia y formación: ilustrar de forma práctica cómo se estructura un repositorio de modelo en Hugging Face (config, pesos, argumentos de entrenamiento y documentación de limitaciones).
 
 ## Benchmarks y rendimiento
 
@@ -95,6 +95,6 @@ No disponible. La búsqueda web realizada no devolvió ninguna fuente técnica r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wuvictor/swin-t-retrieval
+- Hugging Face: https://huggingface.co/wuvictor/swin-t-retrieval
 
 La búsqueda web no devolvió ningún enlace relevante sobre este modelo, su arquitectura o su tarea: los resultados obtenidos correspondían a un subreddit de béisbol, un subreddit de un *streamer*, dos consultas en Yahoo! Chiebukuro sobre la red social X y un manual electoral de Twitter. Ninguno guarda relación con el objeto de esta ficha, por lo que no se incluye ningún paper, blog, repositorio ni demo adicional.

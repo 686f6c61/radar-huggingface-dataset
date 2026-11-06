@@ -99,7 +99,7 @@ No se identifican en la busqueda web otros archivos de checkpoints de investigac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/od2961/wikispeedia-checkpoints-2026-10
+- Modelo en Hugging Face: https://huggingface.co/od2961/wikispeedia-checkpoints-2026-10
 - Dataset de evidencia asociado: https://huggingface.co/datasets/od2961/wikispeedia-evidence-2026-10
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base Qwen2.5-3B-Instruct y su licencia: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct y https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

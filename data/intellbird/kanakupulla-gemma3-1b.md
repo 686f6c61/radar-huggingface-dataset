@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Intellbird/kanakupulla-gemma3-1b es un modelo publicado en HuggingFace por el usuario Intellbird. Por su identificador, se trata de un derivado o ajuste fino de la familia Gemma 3 en su variante de aproximadamente 1.000 millones de parametros, distribuido bajo la licencia Gemma. El repositorio ocupa 11,8 GB, un tamano coherente con pesos en precision alta (posiblemente bfloat16 o float32) mas artefactos adicionales, aunque no se especifica su composicion exacta.
+Intellbird/kanakupulla-gemma3-1b es un modelo publicado en Hugging Face por el usuario Intellbird. Por su identificador, se trata de un derivado o ajuste fino de la familia Gemma 3 en su variante de aproximadamente 1.000 millones de parametros, distribuido bajo la licencia Gemma. El repositorio ocupa 11,8 GB, un tamano coherente con pesos en precision alta (posiblemente bfloat16 o float32) mas artefactos adicionales, aunque no se especifica su composicion exacta.
 
 La model card publicada no contiene mas informacion que la declaracion de licencia: no hay descripcion del entrenamiento, de los datos utilizados, de la arquitectura concreta ni de las capacidades del modelo. Tampoco se declaran idiomas soportados ni pipeline de uso. El modelo no registra descargas ni interacciones en el momento de la consulta, y no se han publicado resultados de benchmarks.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| Intellbird/kanakupulla-gemma3-1b | ~1B (inferido) | No disponible | Gemma | Solo declaracion de licencia | Repositorio HuggingFace, 0 descargas |
+| Intellbird/kanakupulla-gemma3-1b | ~1B (inferido) | No disponible | Gemma | Solo declaracion de licencia | Repositorio Hugging Face, 0 descargas |
 | google/gemma-3-1b-it | ~1B | No disponible en esta ficha | Gemma | Model card completa de Google DeepMind | Ampliamente distribuido |
 | Llama 3.2 1B Instruct | ~1,2B | 128.000 tokens (segun Meta) | Llama 3.2 Community License | Model card completa | Ampliamente distribuido |
 | Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (segun Alibaba) | Apache 2.0 | Model card completa | Ampliamente distribuido |
@@ -85,5 +85,5 @@ La comparativa se basa en caracteristicas publicas de los modelos alternativos; 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Intellbird/kanakupulla-gemma3-1b
+- Repositorio Hugging Face: https://huggingface.co/Intellbird/kanakupulla-gemma3-1b
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

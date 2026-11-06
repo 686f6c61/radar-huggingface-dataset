@@ -120,11 +120,11 @@ Tareas que pasaron de fallo a exito: `fe-rtl-logical-properties`, `fe-rtl-direct
 
 | Modelo | Parametros | Contexto | HumanEval | MBPP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nimbus 1.1 Prime-EE | 7,6 B + 40,4 M de adaptador | 32.768 tokens (heredado) | 61,6 (arnes propio) | 67,2 (arnes propio) | Apache 2.0 | HuggingFace (peft) |
-| Qwen2.5-Coder-7B-Instruct (base) | 7,6 B | 32.768 tokens | 88,4 (cifra del fabricante) | 83,5 (cifra del fabricante) | Apache 2.0 | HuggingFace |
-| Qwen2.5-Coder-32B | 32 B (segun denominacion) | no disponible | 92,7 (cifra del fabricante) | 90,2 (cifra del fabricante) | no disponible | HuggingFace |
-| DeepSeek-Coder-6.7B | 6,7 B | no disponible | 78,6 (cifra del fabricante) | 65,4 (cifra del fabricante) | no disponible | HuggingFace |
-| Llama 3.1 8B | 8 B | no disponible | 72,6 (cifra del fabricante) | 72,8 (cifra del fabricante) | no disponible | HuggingFace |
+| Nimbus 1.1 Prime-EE | 7,6 B + 40,4 M de adaptador | 32.768 tokens (heredado) | 61,6 (arnes propio) | 67,2 (arnes propio) | Apache 2.0 | Hugging Face (peft) |
+| Qwen2.5-Coder-7B-Instruct (base) | 7,6 B | 32.768 tokens | 88,4 (cifra del fabricante) | 83,5 (cifra del fabricante) | Apache 2.0 | Hugging Face |
+| Qwen2.5-Coder-32B | 32 B (segun denominacion) | no disponible | 92,7 (cifra del fabricante) | 90,2 (cifra del fabricante) | no disponible | Hugging Face |
+| DeepSeek-Coder-6.7B | 6,7 B | no disponible | 78,6 (cifra del fabricante) | 65,4 (cifra del fabricante) | no disponible | Hugging Face |
+| Llama 3.1 8B | 8 B | no disponible | 72,6 (cifra del fabricante) | 72,8 (cifra del fabricante) | no disponible | Hugging Face |
 
 Advertencia del propio autor: las cifras de HumanEval y MBPP no se midieron bajo las mismas condiciones entre modelos. En su caso, la cifra publicada del base (88,4) se obtuvo pidiendo al modelo como en un chat y extrayendo el codigo de la respuesta, mientras que la suya (61,6) pide continuar una funcion a medio escribir. El autor reconoce que el numero 61,6 corresponde a esa configuracion concreta y no constituye un veredicto sobre el adaptador.
 
@@ -144,7 +144,7 @@ Advertencia del propio autor: las cifras de HumanEval y MBPP no se midieron bajo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhoosAI/nimbus-1-1-prime-ee
+- Modelo en Hugging Face: https://huggingface.co/AhoosAI/nimbus-1-1-prime-ee
 - Pagina de benchmarks del autor: https://ahoos-ai.site/nimbus-1-1-prime-benchmarks.html
 - Catalogo de modelos de AhoosAI: https://ahoos-ai.site/models/
 - Sitio del autor: https://ahoos-ai.site

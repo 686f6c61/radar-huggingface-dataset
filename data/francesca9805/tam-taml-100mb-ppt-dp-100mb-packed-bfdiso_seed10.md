@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Relacion |
 |---|---|---|---|---|---|
-| francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 | 124.770.816 | no disponible | no disponible | HuggingFace, 0 descargas | Modelo descrito en esta ficha |
-| goldfish-models/tam_taml_100mb | no disponible (familia de ~100 MB) | no disponible | no disponible en la informacion proporcionada | HuggingFace | Modelo base sobre el que se aplica el SFT |
-| Otras variantes de la serie Goldfish de ~100 MB | no disponible | no disponible | no disponible | HuggingFace | Alternativas de la misma familia para otros idiomas |
+| francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 | 124.770.816 | no disponible | no disponible | Hugging Face, 0 descargas | Modelo descrito en esta ficha |
+| goldfish-models/tam_taml_100mb | no disponible (familia de ~100 MB) | no disponible | no disponible en la informacion proporcionada | Hugging Face | Modelo base sobre el que se aplica el SFT |
+| Otras variantes de la serie Goldfish de ~100 MB | no disponible | no disponible | no disponible | Hugging Face | Alternativas de la misma familia para otros idiomas |
 
 No se dispone de datos verificados de rendimiento, contexto ni licencia para establecer una comparacion cuantitativa con alternativas externas de la misma categoria (por ejemplo, otros modelos multilingues pequenos). Cualquier comparacion de ese tipo requeriria ejecutar evaluaciones propias.
 
@@ -87,7 +87,7 @@ No se dispone de datos verificados de rendimiento, contexto ni licencia para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/tam_taml_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ajj383kk
 - Repositorio de TRL: https://github.com/huggingface/trl

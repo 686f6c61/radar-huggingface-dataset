@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este checkpoint es el resultado de un experimento de *machine unlearning* sobre el conjunto de datos TOFU (Task of Fictional Unlearning), aplicado al modelo Phi-1.5 de Microsoft. Lo publica el usuario g-assismoraes en HuggingFace y corresponde a la epoca 18 de 20 de un proceso de desaprendizaje selectivo. No es un modelo de proposito general, sino un artefacto de investigacion para estudiar como se puede eliminar informacion concreta de un modelo ya entrenado sin destruir el resto de sus capacidades.
+Este checkpoint es el resultado de un experimento de *machine unlearning* sobre el conjunto de datos TOFU (Task of Fictional Unlearning), aplicado al modelo Phi-1.5 de Microsoft. Lo publica el usuario g-assismoraes en Hugging Face y corresponde a la epoca 18 de 20 de un proceso de desaprendizaje selectivo. No es un modelo de proposito general, sino un artefacto de investigacion para estudiar como se puede eliminar informacion concreta de un modelo ya entrenado sin destruir el resto de sus capacidades.
 
 La receta combina dos tecnicas: por un lado, se reinicializan los *input embeddings* y la *LM head* a partir del Phi-1.5 original de Microsoft, mientras que el resto de pesos del transformer se mantienen del checkpoint `locuslab/tofu_ft_phi-1.5` (un Phi-1.5 ajustado sobre TOFU). Sobre esa base se aplica una perdida de tipo *Token IHL* sobre el conjunto *forget* mas un termino de entropia cruzada (CE) con peso 1.0 sobre el conjunto *retain*.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch18 | 1.418 M | no disponible | Unlearning TOFU (IHL + reset embeddings) | Apache 2.0 | HuggingFace |
-| locuslab/tofu_ft_phi-1.5 | ~1.418 M | no disponible | Fine-tuning sobre TOFU (base de este checkpoint) | no disponible en la informacion | HuggingFace |
-| microsoft/phi-1_5 | ~1.418 M | no disponible | Modelo base de codigo y texto | MIT (segun el modelo original) | HuggingFace |
+| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch18 | 1.418 M | no disponible | Unlearning TOFU (IHL + reset embeddings) | Apache 2.0 | Hugging Face |
+| locuslab/tofu_ft_phi-1.5 | ~1.418 M | no disponible | Fine-tuning sobre TOFU (base de este checkpoint) | no disponible en la informacion | Hugging Face |
+| microsoft/phi-1_5 | ~1.418 M | no disponible | Modelo base de codigo y texto | MIT (segun el modelo original) | Hugging Face |
 
 La comparacion se limita a la familia Phi-1.5 porque el checkpoint es un derivado directo; no se dispone de datos de rendimiento para contrastar con alternativas de unlearning en otros tamanos.
 
@@ -84,6 +84,6 @@ La comparacion se limita a la familia Phi-1.5 porque el checkpoint es un derivad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch18
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch18
 - Modelo base del fine-tuning: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5

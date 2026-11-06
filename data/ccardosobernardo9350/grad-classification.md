@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ccardosobernardo9350/grad-classification` es un repositorio de HuggingFace que contiene una implementación propia y compacta de un Tiny Transformer en PyTorch, orientada a tareas de clasificación. No es un modelo preentrenado ni ajustado: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo y experimentos pequeños y controlados. El checkpoint distribuido (`model.safetensors`) es una inicialización válida, no un modelo entrenado con resultados verificables.
+`Ccardosobernardo9350/grad-classification` es un repositorio de Hugging Face que contiene una implementación propia y compacta de un Tiny Transformer en PyTorch, orientada a tareas de clasificación. No es un modelo preentrenado ni ajustado: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo y experimentos pequeños y controlados. El checkpoint distribuido (`model.safetensors`) es una inicialización válida, no un modelo entrenado con resultados verificables.
 
 El modelo es extremadamente pequeño: 16.576 parámetros totales según los pesos en safetensors, con un tamaño de repositorio de 0,0 GB. La configuración interna etiquetada como "huge" corresponde a la escala definida dentro del propio script del autor, no a un modelo grande en términos absolutos. Emplea atención estándar, fusión con puertas (gated fusion), activación ReLU y normalización por instancias (InstanceNorm).
 
@@ -102,5 +102,5 @@ La diferencia de escala es de tres a cuatro órdenes de magnitud en número de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ccardosobernardo9350/grad-classification
+- Modelo en Hugging Face: https://huggingface.co/Ccardosobernardo9350/grad-classification
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados obtenidos correspondían a páginas de ayuda de YouTube sin relación con el repositorio. No se dispone, por tanto, de papers, blogs, repositorios de código ni demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dp-blockpick-10k-cotrain-real075-statenoise es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario padiredd en HuggingFace. Se trata de un modelo de 288 M parámetros entrenado con la librería LeRobot (en un fork propio denominado lerobot-cyclo) para ejecutar una tarea muy concreta: el pick-and-place cenital de un bloque verde lima de 5x5x4 cm con el brazo izquierdo del robot ROBOTIS FFW SG2, equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas sobre una mesa de 29,25 pulgadas.
+dp-blockpick-10k-cotrain-real075-statenoise es una política de difusión (diffusion policy) para robótica manipulativa, publicada por el usuario padiredd en Hugging Face. Se trata de un modelo de 288 M parámetros entrenado con la librería LeRobot (en un fork propio denominado lerobot-cyclo) para ejecutar una tarea muy concreta: el pick-and-place cenital de un bloque verde lima de 5x5x4 cm con el brazo izquierdo del robot ROBOTIS FFW SG2, equipado con pinza ROBOTIS CAD y cámaras de muñeca calibradas sobre una mesa de 29,25 pulgadas.
 
 El modelo resuelve el problema clásico de sim-to-real en robótica: entrenar en simulación (Isaac Lab) y transferir a un robot físico con pocos datos reales. Para ello emplea co-entrenamiento con un muestreador mixto que extrae el 75 % de los samples de 14 demostraciones reales de teleoperación y el 25 % restante de 11.710 demostraciones simuladas, además de inyectar ruido gaussiano de 1 grado sobre el estado articular durante el entrenamiento. El resultado es una política que, según la evaluación del autor, alcanza un 87 % de éxito en simulación con muestreo DDIM de 10 pasos en condiciones limpias.
 
@@ -85,9 +85,9 @@ Desglose por banda de posición (picked/episodios) para este modelo a 100k: x 0,
 
 | Modelo | Parámetros | Contexto | Éxito DDIM-10 clean | Éxito DDPM dr | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cotrain-real075-statenoise (este) | 288 M | n/a | 87 % | 59 % | other | HuggingFace (padiredd) |
-| fullregion-dr2 | 288 M | n/a | 66 % | 60 % | other | HuggingFace (padiredd) |
-| fullregion-dr2-statenoise | 288 M | n/a | 26 % | 31 % | other | HuggingFace (padiredd) |
+| cotrain-real075-statenoise (este) | 288 M | n/a | 87 % | 59 % | other | Hugging Face (padiredd) |
+| fullregion-dr2 | 288 M | n/a | 66 % | 60 % | other | Hugging Face (padiredd) |
+| fullregion-dr2-statenoise | 288 M | n/a | 26 % | 31 % | other | Hugging Face (padiredd) |
 
 Los tres modelos comparten arquitectura, tamaño y receta base; la diferencia está en el uso de co-entrenamiento con datos reales y ruido de estado. No se dispone de información sobre otras alternativas externas comparables en la documentación proporcionada.
 
@@ -105,7 +105,7 @@ Los tres modelos comparten arquitectura, tamaño y receta base; la diferencia es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/padiredd/dp-blockpick-10k-cotrain-real075-statenoise
+- Modelo en Hugging Face: https://huggingface.co/padiredd/dp-blockpick-10k-cotrain-real075-statenoise
 - Dataset de simulación: `padiredd/pick-cube-topdown-region10k-full-dr2-3cam` (referenciado en la model card)
 - Dataset real de teleoperación: `omkarpatil/pick-lime-block` (referenciado en la model card)
 - Repositorio de evaluación y scripts: `cyclo_lab-real2sim`, carpeta `data_collection/region10k/eval/` (referenciado en la model card)

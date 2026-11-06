@@ -6,7 +6,7 @@ El modelo `longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed2` es 
 
 Este modelo no introduce una arquitectura nueva: se basa en la arquitectura Llama 3.1 de 8 mil millones de parámetros, con soporte para instrucciones y conversación. Al ser un fine-tuning, hereda las capacidades generales del modelo base, pero sin información adicional sobre ajustes específicos. Su relevancia actual radica en la tendencia de la comunidad a crear variantes especializadas para mitigar alucinaciones, aunque en este caso la documentación es escasa y no permite evaluar su eficacia.
 
-La ficha siguiente recoge únicamente los datos verificables de la model card y del repositorio de HuggingFace. Cualquier característica no documentada se marca como "no disponible".
+La ficha siguiente recoge únicamente los datos verificables de la model card y del repositorio de Hugging Face. Cualquier característica no documentada se marca como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La ficha siguiente recoge únicamente los datos verificables de la model card y 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la version instruct de Llama 3.1 de 8B. La arquitectura subyacente es un transformer decoder con atencion por ventanas deslizantes y atencion global, tal como se describe en el paper de Llama 3.1. El fine-tuning se realizo con la libreria Unsloth (que optimiza el entrenamiento) y la libreria TRL de HuggingFace, segun indica la model card.
+El modelo es un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es la version instruct de Llama 3.1 de 8B. La arquitectura subyacente es un transformer decoder con atencion por ventanas deslizantes y atencion global, tal como se describe en el paper de Llama 3.1. El fine-tuning se realizo con la libreria Unsloth (que optimiza el entrenamiento) y la libreria TRL de Hugging Face, segun indica la model card.
 
 No se proporcionan datos sobre el conjunto de entrenamiento, el numero de tokens, ni si se utilizaron tecnicas como RLHF o DPO. El nombre del modelo sugiere que se aplico un ajuste supervisado (SFT) con un enfoque especifico para reducir alucinaciones, pero no hay evidencia tecnica que lo confirme. Tampoco se mencionan innovaciones como decodificacion especulativa o atencion lineal.
 
@@ -80,6 +80,6 @@ No hay informacion suficiente para una comparativa tecnica real.
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed2)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed2](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed2)
 - [Unsloth (libreria usada para el entrenamiento)](https://github.com/unslothai/unsloth)
-- [Modelo base en HuggingFace - unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
+- [Modelo base en Hugging Face - unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

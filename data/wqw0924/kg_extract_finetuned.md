@@ -59,5 +59,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - wqw0924/kg_extract_finetuned](https://huggingface.co/wqw0924/kg_extract_finetuned)
+- [Hugging Face - wqw0924/kg_extract_finetuned](https://huggingface.co/wqw0924/kg_extract_finetuned)
 - [Unsloth (librería utilizada para el fine-tuning)](https://github.com/unslothai/unsloth)

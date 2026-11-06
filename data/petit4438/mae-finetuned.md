@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mae-finetuned es un repositorio publicado en HuggingFace por el usuario Petit4438 que contiene una implementación personalizada denominada **Mae** orientada a generación, en configuración **nano**. No se trata de un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además `main.py`, `config.json` y `training_args.json`, con el objetivo declarado de ofrecer código transparente y experimentos reproducibles.
+mae-finetuned es un repositorio publicado en Hugging Face por el usuario Petit4438 que contiene una implementación personalizada denominada **Mae** orientada a generación, en configuración **nano**. No se trata de un modelo entrenado ni evaluado: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio incluye además `main.py`, `config.json` y `training_args.json`, con el objetivo declarado de ofrecer código transparente y experimentos reproducibles.
 
 La escala real del artefacto es mínima: los pesos safetensors suman **24.832 parámetros** (aproximadamente 0,025 millones), lo que lo sitúa en la categoría de modelo de juguete o fixture de pruebas, no en la de un modelo de lenguaje utilizable. La arquitectura registrada emplea atención de tipo flash, fusión mediante MLP con concatenación, activación mish y normalización por instancias, con un escalado "nano".
 
@@ -50,7 +50,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto basada
 ## Casos de uso
 
 - Prueba de humo de cargadores de safetensors: verificar que un cargador lee correctamente los tensores y el `config.json` asociado antes de desplegar un checkpoint real, usando un artefacto diminuto que falla rápido si el pipeline de carga está mal configurado.
-- Fixture versionado en tests de CI: con unos 99 KB en fp32 y 50 KB en fp16, los pesos pueden incluirse en el propio repositorio de pruebas sin depender de descargas externas ni de caché de HuggingFace.
+- Fixture versionado en tests de CI: con unos 99 KB en fp32 y 50 KB en fp16, los pesos pueden incluirse en el propio repositorio de pruebas sin depender de descargas externas ni de caché de Hugging Face.
 - Validación de integración de arquitecturas no estándar en herramientas de serving: comprobar si un servidor propio o un wrapper sobre PyTorch acepta una arquitectura personalizada mediante adaptador explícito, tal y como exige el repositorio.
 - Plantilla de referencia para implementar un modelo desde cero: el conjunto `main.py` + `config.json` + `training_args.json` sirve como esqueleto reproducible con receta Adafactor y warmup constante para replicar el flujo en otros proyectos.
 - Docencia y divulgación técnica: ilustrar el ciclo completo de publicación (configuración, pesos, receta de entrenamiento, licencia) con un modelo que se ejecuta en CPU en segundos.
@@ -76,7 +76,7 @@ No se dispone de información sobre alternativas directamente comparables en la 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Petit4438/mae-finetuned | 24.832 | no disponible | no disponible | MIT | HuggingFace |
+| Petit4438/mae-finetuned | 24.832 | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,5 +94,5 @@ No se dispone de información sobre alternativas directamente comparables en la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Petit4438/mae-finetuned
+- Hugging Face: https://huggingface.co/Petit4438/mae-finetuned
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la información disponible.

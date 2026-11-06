@@ -76,14 +76,14 @@ No se dispone de informacion verificable suficiente para establecer una comparat
 - El repositorio presenta cero descargas y cero interacciones, lo que impide cualquier validacion por parte de la comunidad.
 - No se documentan sesgos, composicion del dataset ni proceso de alineacion, por lo que el riesgo de sesgos y de alucinacion es indeterminado.
 - La dependencia de Inference Providers implica que el comportamiento, la disponibilidad y los limites de uso pueden cambiar sin control del autor del Space.
-- La etiqueta de idiomas de HuggingFace aparece vacia, aunque la model card declara persa, ingles y chino; no hay evaluacion de calidad por idioma.
+- La etiqueta de idiomas de Hugging Face aparece vacia, aunque la model card declara persa, ingles y chino; no hay evaluacion de calidad por idioma.
 - El uso comercial esta permitido por la licencia MIT en lo que respecta al Space, pero la licencia del motor subyacente (si existe y no es propio) no se especifica, lo que supone un riesgo legal en produccion.
 - No se ofrece informacion sobre privacidad ni sobre el tratamiento de los datos enviados al proveedor de inferencia.
 - La afirmacion de "sin restricciones de prompt" no implica ausencia de filtros por parte del proveedor subyacente.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kokabtak/kokb1-v2-space
+- Hugging Face: https://huggingface.co/kokabtak/kokb1-v2-space
 - Perfil del autor: https://huggingface.co/kokabtak
 - Correo de contacto declarado: kokbtak@gmail.com
 - Paper, repositorio de codigo, blog o demo adicionales: no disponibles

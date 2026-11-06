@@ -73,7 +73,7 @@ No se dispone de modelos directamente comparables en la información proporciona
 
 | Herramienta | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| signal-processing-ai999x | Solver simbolico determinista con verificacion | 4,7 M (safetensors) | no disponible | Apache-2.0 | PyPI y HuggingFace |
+| signal-processing-ai999x | Solver simbolico determinista con verificacion | 4,7 M (safetensors) | no disponible | Apache-2.0 | PyPI y Hugging Face |
 | SymPy (uso directo) | Libreria CAS | no disponible | no disponible | BSD-3 | PyPI |
 | Asistente LLM generico | Transformer generativo | no disponible | no disponible | variable | APIs y pesos abiertos |
 
@@ -92,10 +92,10 @@ Frente a un LLM generico, signal-processing-ai999x prioriza determinismo y verif
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI999X/signal-processing-ai999x
+- Hugging Face: https://huggingface.co/AI999X/signal-processing-ai999x
 - PyPI: https://pypi.org/project/signal-processing-ai999x/
 - Guia de capacidades (docs): https://huggingface.co/AI999X/signal-processing-ai999x/tree/main/docs
 - Evaluacion: https://huggingface.co/AI999X/signal-processing-ai999x/tree/main/evaluation
-- Organizacion AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organizacion AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

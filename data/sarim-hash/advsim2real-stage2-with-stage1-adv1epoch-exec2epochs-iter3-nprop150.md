@@ -71,9 +71,9 @@ No se han encontrado en la informacion proporcionada artefactos comparables publ
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este repositorio (LoRA stage 2) | No disponible (base de ~4B) | No disponible (4096 tokens de longitud maxima de entrenamiento del ejecutor) | No disponible | HuggingFace, 0 descargas, adaptadores parcialmente publicados |
-| Qwen/Qwen3.5-4B (base) | Del orden de 4.000 millones segun el nombre | No disponible | No disponible | HuggingFace |
-| Sarim-Hash/advsim2real-stage1-curr1epoch-exec2epochs-iter3-nprop150 | No disponible | No disponible | No disponible | HuggingFace, commit `f9c3ef2a5c8364fac8312f192e9f803cff17d264` |
+| Este repositorio (LoRA stage 2) | No disponible (base de ~4B) | No disponible (4096 tokens de longitud maxima de entrenamiento del ejecutor) | No disponible | Hugging Face, 0 descargas, adaptadores parcialmente publicados |
+| Qwen/Qwen3.5-4B (base) | Del orden de 4.000 millones segun el nombre | No disponible | No disponible | Hugging Face |
+| Sarim-Hash/advsim2real-stage1-curr1epoch-exec2epochs-iter3-nprop150 | No disponible | No disponible | No disponible | Hugging Face, commit `f9c3ef2a5c8364fac8312f192e9f803cff17d264` |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ No se han encontrado en la informacion proporcionada artefactos comparables publ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sarim-Hash/advsim2real-stage2-with-stage1-adv1epoch-exec2epochs-iter3-nprop150
+- Repositorio Hugging Face: https://huggingface.co/Sarim-Hash/advsim2real-stage2-with-stage1-adv1epoch-exec2epochs-iter3-nprop150
 - Repositorio de la etapa 1: https://huggingface.co/Sarim-Hash/advsim2real-stage1-curr1epoch-exec2epochs-iter3-nprop150/tree/f9c3ef2a5c8364fac8312f192e9f803cff17d264
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Revision concreta del modelo base: `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`

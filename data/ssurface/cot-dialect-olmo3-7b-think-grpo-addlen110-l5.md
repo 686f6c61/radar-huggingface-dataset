@@ -84,7 +84,7 @@ La comparacion con otros modelos de razonamiento como Llama-3.1-8B-Instruct o Qw
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-addlen110-l5
+- Adaptador en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-addlen110-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Version optimizada por unsloth: https://huggingface.co/unsloth/Olmo-3-7B-Think
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961

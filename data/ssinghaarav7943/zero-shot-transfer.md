@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ssinghaarav7943/zero-shot-transfer` no es un modelo de lenguaje entrenado, sino una nota de investigación publicada en HuggingFace bajo la etiqueta `research-notes`. Su propio README lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre transferencia zero-shot, pero no presenta un paper completado ni una release de pesos entrenados. El artefacto principal es el fichero `notes.md`, no un checkpoint utilizable para inferencia.
+El repositorio `Ssinghaarav7943/zero-shot-transfer` no es un modelo de lenguaje entrenado, sino una nota de investigación publicada en Hugging Face bajo la etiqueta `research-notes`. Su propio README lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación sobre transferencia zero-shot, pero no presenta un paper completado ni una release de pesos entrenados. El artefacto principal es el fichero `notes.md`, no un checkpoint utilizable para inferencia.
 
 A pesar de la etiqueta `transformer` y de la presencia de un fichero en formato safetensors, el contenido real es documentación de investigación. El dato de parámetros totales reportado es de 16.576, una cifra incompatible con cualquier transformer funcional y coherente con un tensor auxiliar o un fichero residual. El tamaño del repositorio se indica como 0,0 GB, lo que refuerza que no hay pesos significativos publicados.
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ssinghaarav7943/zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/Ssinghaarav7943/zero-shot-transfer
 - Paper: no disponible
 - Blog o artículo técnico: no disponible
 - Repositorio de código: no disponible

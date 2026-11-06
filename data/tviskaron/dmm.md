@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tviskaron/DMM es un repositorio de modelo publicado en HuggingFace por el usuario tviskaron bajo licencia MIT. En el momento de la consulta, la model card únicamente contiene el campo `license: mit` y no incluye ninguna descripción del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
+tviskaron/DMM es un repositorio de modelo publicado en Hugging Face por el usuario tviskaron bajo licencia MIT. En el momento de la consulta, la model card únicamente contiene el campo `license: mit` y no incluye ninguna descripción del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos.
 
 El repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (2026-10-03T15:09:53Z), lo que indica que no ha recibido mantenimiento posterior ni ha sido validado por la comunidad. La ausencia de documentación impide confirmar si contiene pesos entrenados, un adaptador, código de entrenamiento o únicamente artefactos auxiliares.
 
@@ -96,6 +96,6 @@ No disponible. Al desconocerse la arquitectura, el tamaño y la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tviskaron/DMM
-- Perfil del autor en HuggingFace: https://huggingface.co/tviskaron
+- Repositorio en Hugging Face: https://huggingface.co/tviskaron/DMM
+- Perfil del autor en Hugging Face: https://huggingface.co/tviskaron
 - Paper, blog técnico, repositorio de código o demo: no disponible.

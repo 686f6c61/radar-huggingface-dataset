@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo NEME-360M-GGUF, publicado por el usuario mouryunn-009 en HuggingFace, es un modelo del que no se dispone de información técnica detallada en la model card. El nombre sugiere que se trata de una versión cuantizada en formato GGUF de un modelo base de aproximadamente 360 millones de parámetros, pero no hay confirmación oficial. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero no se especifican arquitectura, contexto, idiomas ni capacidades. La model card está prácticamente vacía, por lo que cualquier evaluación rigurosa resulta imposible con los datos disponibles. Este modelo parece ser un repositorio recién creado sin documentación adicional, por lo que se recomienda precaución antes de considerarlo para cualquier uso en producción.
+El modelo NEME-360M-GGUF, publicado por el usuario mouryunn-009 en Hugging Face, es un modelo del que no se dispone de información técnica detallada en la model card. El nombre sugiere que se trata de una versión cuantizada en formato GGUF de un modelo base de aproximadamente 360 millones de parámetros, pero no hay confirmación oficial. La licencia declarada es Apache 2.0, lo que permite uso comercial y modificación, pero no se especifican arquitectura, contexto, idiomas ni capacidades. La model card está prácticamente vacía, por lo que cualquier evaluación rigurosa resulta imposible con los datos disponibles. Este modelo parece ser un repositorio recién creado sin documentación adicional, por lo que se recomienda precaución antes de considerarlo para cualquier uso en producción.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mouryunn-009/NEME-360M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mouryunn-009/NEME-360M-GGUF

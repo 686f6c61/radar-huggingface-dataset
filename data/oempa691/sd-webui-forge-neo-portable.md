@@ -83,5 +83,5 @@ No hay modelos comparables porque no es un modelo de IA. En su categoría de ins
 
 - Repositorio del instalador original: https://github.com/Merserk/sd-webui-forge-universal-portable
 - Repositorio de Forge Neo: https://github.com/cruelpleasure/sd-webui-forge-NEO
-- Página de HuggingFace del paquete: https://huggingface.co/Oempa691/sd-webui-forge-neo-portable
+- Página de Hugging Face del paquete: https://huggingface.co/Oempa691/sd-webui-forge-neo-portable
 - Tutorial de instalación de Forge Neo: https://www.stablediffusiontutorials.com/2025/11/forge-neo-installation.html

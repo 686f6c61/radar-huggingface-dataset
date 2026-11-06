@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-openjev es un ajuste fino supervisado del modelo base LiquidAI/LFM2.5-230M-Base, publicado por el usuario iromu en HuggingFace. No es un modelo de propósito general: es un emisor de decisiones tipadas ("typed-decision") entrenado para responder a un prompt estructurado con una única letra de etiqueta, terminando el turno en EOS. Forma parte de la familia de modelos `-openjev`, junto a sus hermanos mayores Qwen3-0.6B-openjev y Qwen2.5-1.5B-openjev.
+LFM2.5-230M-openjev es un ajuste fino supervisado del modelo base LiquidAI/LFM2.5-230M-Base, publicado por el usuario iromu en Hugging Face. No es un modelo de propósito general: es un emisor de decisiones tipadas ("typed-decision") entrenado para responder a un prompt estructurado con una única letra de etiqueta, terminando el turno en EOS. Forma parte de la familia de modelos `-openjev`, junto a sus hermanos mayores Qwen3-0.6B-openjev y Qwen2.5-1.5B-openjev.
 
 El modelo resuelve un problema muy concreto: dado un estado, una pregunta, un conjunto de opciones y una distribución de probabilidad sobre ellas, seleccionar el argmax como una sola letra. Con 229.693.184 parámetros, está pensado para despliegue en dispositivo o edge, no como sustituto de modelos mayores. Su interés actual radica en que demuestra que un modelo de 230M puede aprender el formato de decisión de forma fiable mediante LoRA, pasando de un 0% de emisión de letra en el modelo base a un 100% tras el ajuste.
 
@@ -81,9 +81,9 @@ El autor senala que la puntuacion esta dominada por MEA y CHO: el emisor de letr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-230M-openjev | 229,7M | No disponible (entrenado a 4096) | 77,3% de letra correcta en Open-Jev; JevBench 38,5/100 | Apache 2.0 | HuggingFace (BF16 y GGUF) |
-| Qwen3-0.6B-openjev | No disponible en la informacion proporcionada | No disponible | JevBench 44,5/100 (misma suite) | No disponible en la informacion proporcionada | HuggingFace, hermano de la familia `-openjev` |
-| Qwen2.5-1.5B-openjev | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, hermano de la familia `-openjev` |
+| LFM2.5-230M-openjev | 229,7M | No disponible (entrenado a 4096) | 77,3% de letra correcta en Open-Jev; JevBench 38,5/100 | Apache 2.0 | Hugging Face (BF16 y GGUF) |
+| Qwen3-0.6B-openjev | No disponible en la informacion proporcionada | No disponible | JevBench 44,5/100 (misma suite) | No disponible en la informacion proporcionada | Hugging Face, hermano de la familia `-openjev` |
+| Qwen2.5-1.5B-openjev | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, hermano de la familia `-openjev` |
 
 Los dos modelos de la familia Qwen `-openjev` se mencionan como hermanos mayores en la model card, pero no se aportan sus especificaciones completas ni sus resultados de precision en Open-Jev, por lo que la comparacion se limita a los datos disponibles.
 
@@ -101,7 +101,7 @@ Los dos modelos de la familia Qwen `-openjev` se mencionan como hermanos mayores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-openjev
+- Modelo en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-openjev
 - Cuantizaciones GGUF: https://huggingface.co/iromu/LFM2.5-230M-openjev-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZefanCai/Open-Jev

@@ -83,7 +83,7 @@ El modelo se posiciona como una alternativa ligera y de código abierto frente a
 
 ## Enlaces
 
-- [HuggingFace - AtomicoLabs/ALF-emb-micro](https://huggingface.co/AtomicoLabs/ALF-emb-micro)
+- [Hugging Face - AtomicoLabs/ALF-emb-micro](https://huggingface.co/AtomicoLabs/ALF-emb-micro)
 - [GitHub Release v1.0](https://github.com/AtomicoLabs/ALF-emb-micro/releases/tag/v1.0)
 - [Web de AtomicoLabs](https://www.atomicolabs.com/)
 - [Página de investigación de AtomicoLabs](https://www.atomicolabs.com/research)

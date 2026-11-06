@@ -70,8 +70,8 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face: https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de QwenCloud: https://www.qwencloud.com/models/qwen3.8-27b
 - Blog sobre cuantizaciones de Qwen3.8-27B: https://kingy.ai/blog/qwen3-8-27b-best-quantization-gguf/

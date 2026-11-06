@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/playstonex/Unlimited-OCR-2-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/playstonex/Unlimited-OCR-2-4bit-mlx
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - MLX: https://github.com/ml-explore/mlx
 - MlxOCRKit (decoder Swift): https://github.com/playstonex/MinerUKit

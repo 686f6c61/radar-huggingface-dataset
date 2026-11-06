@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-split-qt | 1.300 M (15 bloques únicos / 30 ejecutados) | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tuning experimental sobre Wan2.1 |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | no disponible en la información proporcionada | HuggingFace (modelo base) | Modelo original de texto a vídeo |
+| ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-split-qt | 1.300 M (15 bloques únicos / 30 ejecutados) | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tuning experimental sobre Wan2.1 |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1.300 M | no disponible | no disponible en la información proporcionada | Hugging Face (modelo base) | Modelo original de texto a vídeo |
 | Otros modelos T2V de tamaño similar | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -78,6 +78,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-split-qt
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tf-fm-tm-ln2-u5-split-qt
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIxFuneStudio/Bombshell_Bliss_MiniMax_H3 es un repositorio de modelo publicado en HuggingFace por AIxFuneStudio. La ficha pública solo aporta metadatos básicos: licencia "other", acceso restringido (gated), tamaño de repositorio de 0,1 GB, cero descargas y cero likes. No declara pipeline, idiomas, arquitectura, parámetros ni formato de pesos.
+AIxFuneStudio/Bombshell_Bliss_MiniMax_H3 es un repositorio de modelo publicado en Hugging Face por AIxFuneStudio. La ficha pública solo aporta metadatos básicos: licencia "other", acceso restringido (gated), tamaño de repositorio de 0,1 GB, cero descargas y cero likes. No declara pipeline, idiomas, arquitectura, parámetros ni formato de pesos.
 
 El identificador incluye "MiniMax_H3", pero no hay documentación que confirme que el modelo pertenezca a la familia MiniMax, que sea un transformer, MoE o híbrido, ni cuál es su ventana de contexto. Tampoco se han publicado datos de entrenamiento, benchmarks o capacidades verificables.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada para evaluación técnica: al requerir aceptaci
 | Licencia | other (licencia personalizada; requiere revisión de términos) |
 | Formato de pesos | no disponible |
 | Pipeline | no disponible |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Tamaño del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-17T00:18:02Z / 2026-10-17T00:23:25Z |
@@ -80,13 +80,13 @@ No se dispone de información suficiente para identificar alternativas comparabl
 - Riesgo de alucinación: no medido; no hay benchmarks ni pruebas de fidelidad.
 - Limitaciones de contexto o idioma: no declaradas; se desconoce la ventana de contexto y la cobertura lingüística.
 - Restricciones de licencia: la licencia "other" puede imponer condiciones específicas para uso comercial; es obligatorio revisar los términos antes de cualquier despliegue.
-- Acceso restringido: el modo gated exige aceptar condiciones en HuggingFace y puede limitar la reproducibilidad y la evaluación externa.
+- Acceso restringido: el modo gated exige aceptar condiciones en Hugging Face y puede limitar la reproducibilidad y la evaluación externa.
 - Falta de validación comunitaria: cero descargas y cero likes no permiten inferir calidad, pero indican ausencia de uso o validación pública.
 - Metadatos potencialmente inconsistentes: la fecha de creación indicada (2026-10-17) es posterior a la fecha actual (2026-05-07), lo que conviene verificar.
 - Uso en producción: no recomendable sin auditoría técnica, revisión de licencia y pruebas de rendimiento y seguridad.
 
 ## Enlaces
 
-- [HuggingFace: AIxFuneStudio/Bombshell_Bliss_MiniMax_H3](https://huggingface.co/AIxFuneStudio/Bombshell_Bliss_MiniMax_H3)
+- [Hugging Face: AIxFuneStudio/Bombshell_Bliss_MiniMax_H3](https://huggingface.co/AIxFuneStudio/Bombshell_Bliss_MiniMax_H3)
 - Paper, blog, repositorio o demo: no disponible.
 - Resultados de la búsqueda web: no relevantes para el modelo; tratan sobre Google Maps y no se incluyen como documentación técnica.

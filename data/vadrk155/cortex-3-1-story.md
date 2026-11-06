@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cortex-3.1-Story es un modelo de generacion de texto desarrollado por el usuario VADRK155 y publicado en HuggingFace bajo licencia MIT. Se trata de un transformer decoder-only de 62 millones de parametros, implementado y entrenado desde cero en PyTorch sin utilizar la libreria `transformers`, segun indica su model card. Su proposito declarado es la generacion de historias cortas en ingles.
+Cortex-3.1-Story es un modelo de generacion de texto desarrollado por el usuario VADRK155 y publicado en Hugging Face bajo licencia MIT. Se trata de un transformer decoder-only de 62 millones de parametros, implementado y entrenado desde cero en PyTorch sin utilizar la libreria `transformers`, segun indica su model card. Su proposito declarado es la generacion de historias cortas en ingles.
 
-El modelo es relevante no por su rendimiento, sino por su caracter de ejercicio de formacion desde cero: no emplea pesos preentrenados y utiliza una arquitectura propia en lugar de las clases estandar de HuggingFace. Esto lo convierte en una pieza interesante para quien quiera estudiar el ciclo completo de entrenamiento de un transformer pequeno, revisar una implementacion alternativa o disponer de un punto de partida minimo para experimentar con fine-tuning.
+El modelo es relevante no por su rendimiento, sino por su caracter de ejercicio de formacion desde cero: no emplea pesos preentrenados y utiliza una arquitectura propia en lugar de las clases estandar de Hugging Face. Esto lo convierte en una pieza interesante para quien quiera estudiar el ciclo completo de entrenamiento de un transformer pequeno, revisar una implementacion alternativa o disponer de un punto de partida minimo para experimentar con fine-tuning.
 
 El repositorio ocupa 0,3 GB y los pesos se distribuyen en fp16. No se especifican en la informacion disponible ni la longitud de contexto, ni el volumen de tokens de entrenamiento, ni la composicion del dataset, ni resultados de benchmarks. La model card reconoce explicitamente que, por su tamano, el modelo puede perder coherencia, mezclar hechos o cortar frases a mitad, comportamiento esperable en este rango de parametros.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, el autor afirma que se realizo integramente desde ce
 - Generacion de texto narrativo corto en ingles, orientada a relatos e historias.
 - Continuacion de un prompt dado (el ejemplo de la model card parte de "Once upon a time").
 - Ejecucion local en CPU o GPU de gama baja dado su reducido tamano.
-- Inferencia mediante un script propio (`chat.py`) en lugar de pipelines estandar de HuggingFace.
+- Inferencia mediante un script propio (`chat.py`) en lugar de pipelines estandar de Hugging Face.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documenta modo de pensamiento (thinking), vision, audio ni otras modalidades.
@@ -84,10 +84,10 @@ En terminos de tamano, Cortex-3.1-Story se situa por debajo de GPT-2 small y en 
 - Restricciones de licencia: la licencia MIT permite uso comercial, modificacion y redistribucion con atribucion, pero al ser una obra derivada del entrenamiento desde cero conviene revisar si el autor impone condiciones adicionales en el repositorio.
 - Madurez del proyecto: el repositorio registra 0 descargas y 1 like en el momento de la consulta, sin documentacion tecnica detallada ni resultados de evaluacion. No es un modelo apto para produccion sin una validacion exhaustiva previa.
 - Inconsistencia de nomenclatura: el ejemplo de la model card muestra el prefijo `Cortex_2` en la respuesta, mientras que el modelo se denomina Cortex 3.1, lo que sugiere que el ejemplo puede proceder de una version anterior.
-- Fecha de publicacion: el repositorio aparece con fecha de creacion de 2026-09-18, un dato que conviene contrastar directamente en HuggingFace.
+- Fecha de publicacion: el repositorio aparece con fecha de creacion de 2026-09-18, un dato que conviene contrastar directamente en Hugging Face.
 - Integracion: al no usar `transformers`, su adopcion en pipelines existentes (vLLM, TGI, Ollama) exigiria trabajo de conversion adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VADRK155/Cortex-3.1-Story
+- Hugging Face: https://huggingface.co/VADRK155/Cortex-3.1-Story
 - No se han encontrado enlaces relevantes en los resultados de busqueda web proporcionados: las URLs devueltas corresponden a sitios sobre efemerides historicas (onthisday.com, britannica.com, timeanddate.com, todayinhistory.app) y no guardan relacion con el modelo.

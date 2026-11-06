@@ -17,7 +17,7 @@ Es relevante en el contexto actual de proliferación de generadores de imágenes
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no aplica (clasificacion de imagen) |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | en (segun metadatos de HuggingFace; la tarea es de vision, no de lenguaje) |
+| Idiomas soportados | en (segun metadatos de Hugging Face; la tarea es de vision, no de lenguaje) |
 | Licencia | Apache 2.0 (pesos); ver nota sobre licencias de los datasets de entrenamiento |
 | Formato de pesos | PyTorch state dict (archivo .pth, p. ej. imager-1-tiny_best.pth) |
 | Tamano de entrada | 224 x 224 px (redimensionado a 256 y recorte central a 224) |
@@ -89,7 +89,7 @@ No se han publicado resultados frente a otros detectores de imagenes generadas p
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Imager-1-tiny | ~25 M | no aplica | Deteccion de imagen IA vs. real | Apache 2.0 (pesos) | HuggingFace |
+| Imager-1-tiny | ~25 M | no aplica | Deteccion de imagen IA vs. real | Apache 2.0 (pesos) | Hugging Face |
 | Otros modelos de la familia IMAGER | no disponible | no disponible | Deteccion de imagen IA vs. real | no disponible | no disponible |
 | Detectores alternativos comparables | no disponible | no disponible | Deteccion de imagen IA vs. real | no disponible | no disponible |
 
@@ -105,11 +105,11 @@ No se dispone de datos de comparacion con modelos equivalentes de la misma categ
 - Restricciones de licencia: aunque los pesos son Apache 2.0, el dataset Defactify esta bajo licencia MIT y el dataset Hemg esta destinado a fines de investigacion. El uso comercial debe revisarse frente a los terminos originales de ambos datasets para garantizar el cumplimiento.
 - Dependencia de un umbral especifico: la model card insiste en que el umbral de decision de 0,385 es critico para una inferencia correcta; usar 0,5 u otro valor altera las tasas de error.
 - Carga no estandar: al ser un checkpoint PyTorch personalizado, no se puede cargar directamente con AutoModel; requiere definir la arquitectura ResNet-50 y sustituir la capa final manualmente.
-- El modelo esta marcado con 0 descargas y 0 likes en HuggingFace y sus metadatos indican una fecha de creacion reciente, por lo que su validacion por parte de la comunidad es practicamente inexistente.
+- El modelo esta marcado con 0 descargas y 0 likes en Hugging Face y sus metadatos indican una fecha de creacion reciente, por lo que su validacion por parte de la comunidad es practicamente inexistente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Imagers/Imager-1-tiny
+- Modelo en Hugging Face: https://huggingface.co/Imagers/Imager-1-tiny
 - Dataset Hemg/AI-Generated-vs-Real-Images-Datasets: https://huggingface.co/datasets/Hemg/AI-Generated-vs-Real-Images-Datasets
 - Dataset Rajarshi-Roy-research/Defactify_Image_Dataset: https://huggingface.co/datasets/Rajarshi-Roy-research/Defactify_Image_Dataset
 - Paper, blog, repositorio o demo oficial: no disponibles en la informacion proporcionada.

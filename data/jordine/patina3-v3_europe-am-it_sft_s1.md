@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base meta-llama/Llama-3.1-8B, publicado en HuggingFace por el usuario «Jordine». Está dirigido a la generación de texto conversacional y comparte la arquitectura del modelo base: un transformer denso decoder-only de 8.000 millones de parámetros. El repositorio contiene únicamente los pesos del adaptador (0.7 GB), lo que reduce notablemente el coste de despliegue y afinado.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base meta-llama/Llama-3.1-8B, publicado en Hugging Face por el usuario «Jordine». Está dirigido a la generación de texto conversacional y comparte la arquitectura del modelo base: un transformer denso decoder-only de 8.000 millones de parámetros. El repositorio contiene únicamente los pesos del adaptador (0.7 GB), lo que reduce notablemente el coste de despliegue y afinado.
 
 El nombre del modelo (europe-am-it_sft_s1) sugiere un afinado supervisado orientado a instrucciones en contextos europeos y americanos, pero no existe documentación al respecto. La longitud de contexto del adaptador no se ha publicado, aunque el modelo base soporta hasta 128.000 tokens. Su relevancia radica en servir como ejemplo de ajuste eficiente de un modelo potente mediante PEFT, una técnica muy utilizada para especializar modelos sin entrenar todos sus parámetros.
 
@@ -21,7 +21,7 @@ El nombre del modelo (europe-am-it_sft_s1) sugiere un afinado supervisado orient
 
 ## Arquitectura y entrenamiento
 
-El modelo utiliza la técnica PEFT (Parameter-Efficient Fine-Tuning) de HuggingFace. Concretamente, aplica LoRA, que introduce matrices de baja dimensionalidad en las capas de atención y de proyección de un transformer, lo que permite entrenar una fracción mínima de los parámetros. El modelo base es Llama-3.1-8B, un transformer decoder-only con contexto de 128.000 tokens.
+El modelo utiliza la técnica PEFT (Parameter-Efficient Fine-Tuning) de Hugging Face. Concretamente, aplica LoRA, que introduce matrices de baja dimensionalidad en las capas de atención y de proyección de un transformer, lo que permite entrenar una fracción mínima de los parámetros. El modelo base es Llama-3.1-8B, un transformer decoder-only con contexto de 128.000 tokens.
 
 No se ha publicado información sobre los datos de entrenamiento, la composición del corpus, el número total de tokens utilizados ni la técnica de alineamiento (por ejemplo, RLHF o DPO). El adaptador está entrenado con la biblioteca PEFT 0.20.0. La ausencia de estos detalles impide evaluar la calidad y el alcance del afinado.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - Cabe en GPUs de consumidor con cuantización, aunque no está confirmado oficialmente.
 
-- Opciones de despliegue: se puede cargar con la biblioteca transformers y el módulo PEFT de HuggingFace. También podría integrarse en vLLM o convertirse a GGUF para llama.cpp, pero no se ha documentado ninguna de estas rutas.
+- Opciones de despliegue: se puede cargar con la biblioteca transformers y el módulo PEFT de Hugging Face. También podría integrarse en vLLM o convertirse a GGUF para llama.cpp, pero no se ha documentado ninguna de estas rutas.
 
 - Latencia y throughput: no disponibles.
 

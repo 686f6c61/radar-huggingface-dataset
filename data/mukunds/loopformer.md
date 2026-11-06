@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LoopFormer es un modelo experimental de ejecucion recurrente de punteros publicado por el usuario mukunds en HuggingFace. No es un modelo de proposito general: se trata de un transformer recurrente personalizado construido sobre Qwen/Qwen2.5-0.5B-Instruct que resuelve una unica familia de tareas, seguir una tabla de reglas A-Z suministrada por el usuario y recorrerla durante un numero de pasos determinado. El checkpoint publicado esta congelado con el identificador `controller-shared-number-precision-seed83` y requiere obligatoriamente el codigo de inferencia en Python incluido en el repositorio; la generacion estandar con `AutoModelForCausalLM` no implementa su recurrencia.
+LoopFormer es un modelo experimental de ejecucion recurrente de punteros publicado por el usuario mukunds en Hugging Face. No es un modelo de proposito general: se trata de un transformer recurrente personalizado construido sobre Qwen/Qwen2.5-0.5B-Instruct que resuelve una unica familia de tareas, seguir una tabla de reglas A-Z suministrada por el usuario y recorrerla durante un numero de pasos determinado. El checkpoint publicado esta congelado con el identificador `controller-shared-number-precision-seed83` y requiere obligatoriamente el codigo de inferencia en Python incluido en el repositorio; la generacion estandar con `AutoModelForCausalLM` no implementa su recurrencia.
 
 La relevancia del modelo es fundamentalmente de investigacion. Aporta un banco de pruebas acotado para estudiar transformers recurrentes con estado compartido, mecanismos de parada aprendidos y ejecucion iterativa profunda (hasta 256 pasos) con una metrica de correccion verificable, algo poco habitual en modelos de lenguaje convencionales. En el panel final congelado de 1.350 grafos nuevos reporta un 97,81% de acierto en letra final mas parada exacta sobre 345.600 consultas grafo/contador, y un 96,89% de trayectorias completas hasta profundidad 256.
 
@@ -85,7 +85,7 @@ La informacion disponible no identifica modelos comparables de la misma categori
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LoopFormer (mukunds/loopformer) | Aproximadamente 0,5 mil millones | No disponible; bucle de 256 pasos por defecto | Ejecucion de tablas de reglas A-Z con controlador de parada | no disponible | HuggingFace, 0 descargas, 0 likes |
+| LoopFormer (mukunds/loopformer) | Aproximadamente 0,5 mil millones | No disponible; bucle de 256 pasos por defecto | Ejecucion de tablas de reglas A-Z con controlador de parada | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen2.5-0.5B-Instruct | Aproximadamente 0,5 mil millones | No disponible en la informacion proporcionada | Asistente general ajustado por instrucciones | No disponible en la informacion proporcionada | Modelo base referenciado por LoopFormer |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -109,7 +109,7 @@ La informacion disponible no identifica modelos comparables de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mukunds/loopformer
+- Modelo en Hugging Face: https://huggingface.co/mukunds/loopformer
 - Codigo fuente y evidencia completa: https://github.com/MukundShankar-dev/loopformer
 - Playground interactivo: https://mukundshankar-dev.github.io/projects/loopformer/demo/
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

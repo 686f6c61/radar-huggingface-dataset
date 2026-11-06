@@ -95,7 +95,7 @@ La información disponible no permite comparar rendimiento entre estos modelos: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-256
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-256
 - Variante del mismo barrido: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Repositorio de investigación *Weird Generalization and Inductive Backdoors*: https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors

@@ -80,7 +80,7 @@ Dado que no hay benchmarks publicados para este checkpoint, no es posible compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shujialiu/robotwin3task-cosmos-p25-2b-iter36000
+- Repositorio Hugging Face: https://huggingface.co/shujialiu/robotwin3task-cosmos-p25-2b-iter36000
 - Cosmos 3 (NVIDIA Research): https://research.nvidia.com/labs/cosmos-lab/cosmos3/
 - Proyecto AI-Build-AI sobre post-entrenamiento de Cosmos-Predict2.5: https://github.com/aibuildai/AI-Build-AI/tree/main/tasks/robot-world-model-post-training
 - Articulo sobre Physical AI Open Source en CVPR 2026 (menciona GR00T N1.6 y otros): https://chatforest.com/builders-log/nvidia-physical-ai-cvpr-2026-gr00t-alpamayo-openshell-skills-builder-guide/

@@ -91,7 +91,7 @@ Tiel se posiciona como la opción más rápida y conversacional de su clase, per
 
 ## Enlaces
 
-- Repo de HuggingFace: https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF-MTP
+- Repo de Hugging Face: https://huggingface.co/npario/Tiel-Coder-35B-A3B-GGUF-MTP
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Versión sin MTP: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Versión MLX: https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-MLX-oQ4e

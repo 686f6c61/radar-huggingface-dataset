@@ -90,10 +90,10 @@ Lo único aportado es un protocolo de comparación cualitativa contra una refere
 
 | Modelo | Tipo | Parámetros | Resolución / fotogramas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Reproduce-Wan2.2-5B-NonAR-DMD-4Step-LoRA-r128-iter1500 (este) | Adaptador LoRA del generador, 4 pasos, CFG=1 | No disponible (rango/alfa 128) sobre base de 5 000 M | 1280×704, 125 fotogramas, 24 fps (perfil de comparación) | Apache 2.0 | Público en HuggingFace; requiere el modelo base, 0 descargas |
-| LongLive-LoRA-nonAR-DMD-RGS3-iter1500 | Referencia publicada del mismo autor, adaptador LoRA | No disponible | Mismo perfil emparejado (prompts, semillas, dimensiones, CFG=1) | No disponible en la información proporcionada | Público en HuggingFace |
-| Wan-AI/Wan2.2-TI2V-5B | Modelo base de difusión texto-imagen a vídeo | 5 000 M | No disponible | No disponible en la información proporcionada | Público en HuggingFace; es dependencia obligatoria de este adaptador |
-| LongLive-1.3B | Modelo de referencia para la receta de prompts y los wrappers | 1 300 M | No disponible | No disponible en la información proporcionada | Público en HuggingFace; su fichero de prompts se usa como corpus de entrenamiento |
+| Reproduce-Wan2.2-5B-NonAR-DMD-4Step-LoRA-r128-iter1500 (este) | Adaptador LoRA del generador, 4 pasos, CFG=1 | No disponible (rango/alfa 128) sobre base de 5 000 M | 1280×704, 125 fotogramas, 24 fps (perfil de comparación) | Apache 2.0 | Público en Hugging Face; requiere el modelo base, 0 descargas |
+| LongLive-LoRA-nonAR-DMD-RGS3-iter1500 | Referencia publicada del mismo autor, adaptador LoRA | No disponible | Mismo perfil emparejado (prompts, semillas, dimensiones, CFG=1) | No disponible en la información proporcionada | Público en Hugging Face |
+| Wan-AI/Wan2.2-TI2V-5B | Modelo base de difusión texto-imagen a vídeo | 5 000 M | No disponible | No disponible en la información proporcionada | Público en Hugging Face; es dependencia obligatoria de este adaptador |
+| LongLive-1.3B | Modelo de referencia para la receta de prompts y los wrappers | 1 300 M | No disponible | No disponible en la información proporcionada | Público en Hugging Face; su fichero de prompts se usa como corpus de entrenamiento |
 | Modelo DMD de 14B (citado como comparación) | Generador destilado con controles LightX2V Euler y UniPC | 14 000 M (según la denominación del autor) | No disponible | No disponible en la información proporcionada | Referencia usada en la comparación de planificadores |
 
 No se dispone de datos de rendimiento cuantitativos para establecer una comparación objetiva más allá del emparejamiento de condiciones descrito por el autor.
@@ -117,7 +117,7 @@ No se dispone de datos de rendimiento cuantitativos para establecer una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Perflow-Shuai/Reproduce-Wan2.2-5B-NonAR-DMD-4Step-LoRA-r128-iter1500
+- Modelo en Hugging Face: https://huggingface.co/Perflow-Shuai/Reproduce-Wan2.2-5B-NonAR-DMD-4Step-LoRA-r128-iter1500
 - Modelo base Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Referencia publicada por el mismo autor (LongLive-LoRA-nonAR-DMD-RGS3-iter1500): https://huggingface.co/Perflow-Shuai/LongLive-LoRA-nonAR-DMD-RGS3-iter1500
 - Repositorio de wrappers nativos LongLive-LoRA: https://github.com/AndysonYs/LongLive-LoRA

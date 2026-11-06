@@ -65,7 +65,7 @@ No es posible realizar una comparativa significativa porque no hay datos de par√
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/jasonsato/model_097953215_perceiver_xlarge)
+- [Repositorio Hugging Face](https://huggingface.co/jasonsato/model_097953215_perceiver_xlarge)
 - [Referencia original de Perceiver (DeepMind)](https://github.com/google-deepmind/deepmind-research/blob/master/perceiver/README.md)
 - [Implementaci√≥n PyTorch de Perceiver](https://github.com/krasserm/perceiver-io)
 - [Paper original Perceiver (arXiv)](https://arxiv.org/pdf/2103.03206.pdf)

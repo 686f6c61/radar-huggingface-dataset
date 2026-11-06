@@ -99,7 +99,7 @@ La comparativa se limita a los modelos incluidos en la evaluacion del autor. m2v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JanSchachtschabel/m2v-gte-256-edu-v2
+- Modelo en Hugging Face: https://huggingface.co/JanSchachtschabel/m2v-gte-256-edu-v2
 - Predecesor: https://huggingface.co/JanSchachtschabel/m2v-gte-256-edu
 - Modelo profesor: https://huggingface.co/Alibaba-NLP/gte-multilingual-base
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec

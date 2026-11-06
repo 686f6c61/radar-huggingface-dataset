@@ -32,7 +32,7 @@ Los hiperparámetros de entrenamiento incluyen una tasa de aprendizaje de 2e-5, 
 - Regresión de texto: predice una puntuación continua de depresión a partir de un texto de entrada, en lugar de una etiqueta categórica.
 - Análisis de sentimiento orientado a salud mental: puede estimar la severidad de síntomas depresivos expresados en lenguaje natural.
 - Procesamiento de texto en inglés (presumiblemente, dado el modelo base, aunque no está confirmado).
-- Inferencia con transformers: compatible con el pipeline `text-classification` de HuggingFace, aunque la salida es un valor numérico en lugar de una clase.
+- Inferencia con transformers: compatible con el pipeline `text-classification` de Hugging Face, aunque la salida es un valor numérico en lugar de una clase.
 - No soporta tool calling, agentes, visión, audio ni modos de razonamiento explícitos.
 
 ## Casos de uso
@@ -66,7 +66,7 @@ Estos valores indican un error medio absoluto de aproximadamente 0,21 en una esc
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicos para regresión de depresión en texto. Como referencia, se puede comparar con el modelo base `roberta-base` (sin fine-tuning), que no tiene capacidad de regresión. Otros modelos de detección de depresión existentes en HuggingFace (por ejemplo, `bert-base-uncased` fine-tuneado para clasificación binaria) difieren en la tarea (clasificación vs regresión) y en el dataset de entrenamiento. Dado que no se dispone de datos de rendimiento de alternativas, la comparativa no está disponible.
+No se dispone de información sobre modelos comparables específicos para regresión de depresión en texto. Como referencia, se puede comparar con el modelo base `roberta-base` (sin fine-tuning), que no tiene capacidad de regresión. Otros modelos de detección de depresión existentes en Hugging Face (por ejemplo, `bert-base-uncased` fine-tuneado para clasificación binaria) difieren en la tarea (clasificación vs regresión) y en el dataset de entrenamiento. Dado que no se dispone de datos de rendimiento de alternativas, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables específicos para regres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/Depression_continuous
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/Depression_continuous
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base
 - Artículo de revisión sobre IA en diagnóstico de depresión: https://www.sciencedirect.com/science/article/pii/S0933365725002556
 - Revisión de modelos de IA para detección de depresión (arXiv): https://arxiv.org/abs/2508.12022

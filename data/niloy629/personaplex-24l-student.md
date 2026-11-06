@@ -94,8 +94,8 @@ Latencia: ~24 ms por frame en RTX 5090 contra un presupuesto de 80 ms; con `dep_
 
 | Modelo | Relacion | Capas | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PersonaPlex-24L Student (m3) | Este modelo | 24 temporales | 9/12 ok, 5/8 escucha, ~24 ms/frame en RTX 5090 | no disponible | HuggingFace, safetensors |
-| `nvidia/personaplex-7b-v1` (teacher) | Teacher del que se poda y destila | 32 temporales | El autor indica que su salida long-form es limpia (203-403 palabras, cero bucles) | no disponible | HuggingFace, safetensors |
+| PersonaPlex-24L Student (m3) | Este modelo | 24 temporales | 9/12 ok, 5/8 escucha, ~24 ms/frame en RTX 5090 | no disponible | Hugging Face, safetensors |
+| `nvidia/personaplex-7b-v1` (teacher) | Teacher del que se poda y destila | 32 temporales | El autor indica que su salida long-form es limpia (203-403 palabras, cero bucles) | no disponible | Hugging Face, safetensors |
 | Kyutai Moshi | Stack de inferencia referenciado (`moshi.server`), misma familia de tokenizer Mimi y depformer | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos de benchmarks comunes (MMLU, HumanEval, GSM8K) para ninguno de los modelos de la tabla; la informacion disponible solo cubre evaluaciones de dialogo hablado especificas de este repositorio.
@@ -115,7 +115,7 @@ No se dispone de datos comparativos de benchmarks comunes (MMLU, HumanEval, GSM8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niloy629/personaplex-24L-student
+- Modelo en Hugging Face: https://huggingface.co/niloy629/personaplex-24L-student
 - Teacher: https://huggingface.co/nvidia/personaplex-7b-v1
 - Repositorio del dataset long-form: mencionado en la model card como "the dataset repo", sin URL disponible
 - Plan de entrenamiento a mayor escala: `training/PLAN.md` dentro del repositorio del modelo

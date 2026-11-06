@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`velddev/nest-sparrow-checkpoint` es un repositorio de pesos publicado en HuggingFace por el usuario `velddev`. La informacion disponible se limita a la ficha del repositorio: identificador, autor, licencia Apache 2.0, etiqueta de region `us` y fechas de creacion y actualizacion (ambas el 29 de septiembre de 2026). No se ha publicado model card con descripcion, arquitectura, tamano, contexto ni datos de entrenamiento; el contenido del README se reduce al bloque de metadatos YAML con la licencia.
+`velddev/nest-sparrow-checkpoint` es un repositorio de pesos publicado en Hugging Face por el usuario `velddev`. La informacion disponible se limita a la ficha del repositorio: identificador, autor, licencia Apache 2.0, etiqueta de region `us` y fechas de creacion y actualizacion (ambas el 29 de septiembre de 2026). No se ha publicado model card con descripcion, arquitectura, tamano, contexto ni datos de entrenamiento; el contenido del README se reduce al bloque de metadatos YAML con la licencia.
 
 No hay informacion sobre la tarea para la que fue entrenado (el campo `pipeline` no esta disponible), ni sobre idiomas soportados, ni sobre el formato de los pesos mas alla de lo que se pueda inferir al inspeccionar el repositorio. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto sin validacion por parte de la comunidad.
 
@@ -21,7 +21,7 @@ La relevancia actual de esta ficha es, por tanto, limitada y de caracter cautela
 | Licencia | Apache 2.0 |
 | Formato de pesos | no disponible (no confirmado; se desconoce si hay safetensors, GGUF u otros) |
 
-Datos adicionales del repositorio: autor `velddev`, region declarada `us`, 0 descargas, 0 likes, creado y actualizado el 2026-09-29. No se declara pipeline de HuggingFace.
+Datos adicionales del repositorio: autor `velddev`, region declarada `us`, 0 descargas, 0 likes, creado y actualizado el 2026-09-29. No se declara pipeline de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -82,12 +82,12 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 - Sesgos y alucinaciones: no evaluables sin datos de entrenamiento ni evaluaciones publicadas; deben asumirse como no medidos.
 - Limitaciones de contexto e idioma: no disponibles.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de copyright y la clausula de exencion de responsabilidad. No se declaran restricciones adicionales ni terminos de uso aceptable.
-- Fecha de creacion inusual: el repositorio figura creado el 2026-09-29, una fecha que conviene verificar directamente en HuggingFace antes de tomar cualquier decision.
+- Fecha de creacion inusual: el repositorio figura creado el 2026-09-29, una fecha que conviene verificar directamente en Hugging Face antes de tomar cualquier decision.
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente resultados genericos de Google Translate), por lo que no existe cobertura externa confirmada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/velddev/nest-sparrow-checkpoint
+- Hugging Face: https://huggingface.co/velddev/nest-sparrow-checkpoint
 - Model card: no disponible (el README solo contiene el bloque de licencia)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic es una versión "decensored" (también etiquetada como *abliterated* o *uncensored*) del modelo Mistral-Small-3.2-24B-Instruct-2506, publicada por el usuario richardyoung en HuggingFace. El modelo base es la actualización de junio de 2025 de Mistral AI sobre Small 3.1, que mejora el seguimiento de instrucciones, reduce las generaciones repetitivas o infinitas y refuerza la robustez de la plantilla de *function calling*. La modificación se ha realizado con Heretic v2.0.0, una herramienta de ablación direccional que elimina selectivamente las direcciones de activación asociadas a rechazos.
+Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic es una versión "decensored" (también etiquetada como *abliterated* o *uncensored*) del modelo Mistral-Small-3.2-24B-Instruct-2506, publicada por el usuario richardyoung en Hugging Face. El modelo base es la actualización de junio de 2025 de Mistral AI sobre Small 3.1, que mejora el seguimiento de instrucciones, reduce las generaciones repetitivas o infinitas y refuerza la robustez de la plantilla de *function calling*. La modificación se ha realizado con Heretic v2.0.0, una herramienta de ablación direccional que elimina selectivamente las direcciones de activación asociadas a rechazos.
 
 El modelo conserva la arquitectura multimodal del original (pipeline `image-text-to-text`), con aproximadamente 24.011 millones de parámetros en formato safetensors y licencia Apache 2.0. La intervención SOM (Self-Organizing Map Multi-Directional Ablation) aplica direcciones de ablación por capa con un decaimiento de 0,65, afectando a las proyecciones `attn.o_proj` y `mlp.down_proj`. El resultado declarado por el autor es una reducción de rechazos de 98/100 a 18/100 en su conjunto de evaluación, con una divergencia KL de 0,0995 respecto al original.
 
@@ -114,7 +114,7 @@ La comparativa se limita a los datos disponibles en la información proporcionad
 
 ## Enlaces
 
-- [HuggingFace: richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic](https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic)
+- [Hugging Face: richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic](https://huggingface.co/richardyoung/Mistral-Small-3.2-24B-Instruct-2506-SOM-heretic)
 - [Modelo base: unsloth/Mistral-Small-3.2-24B-Instruct-2506](https://huggingface.co/unsloth/Mistral-Small-3.2-24B-Instruct-2506)
 - [Modelo original: mistralai/Mistral-Small-3.2-24B-Instruct-2506](https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506)
 - [Mistral-Small-3.1-24B-Base-2503 (referencia de benchmarks)](https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503)

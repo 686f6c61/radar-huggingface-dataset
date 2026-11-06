@@ -18,7 +18,7 @@ La relevancia actual de SENSE radica en ofrecer una alternativa open source a so
 | Longitud de contexto | no aplica (embeddings de utterance, no generacion de texto) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | 90 lenguas del dataset Common Voice (lista no especificada) |
-| Licencia | CC0-1.0 (segun la pagina de HuggingFace; no indicada en la model card) |
+| Licencia | CC0-1.0 (segun la pagina de Hugging Face; no indicada en la model card) |
 | Formato de pesos | no disponible (checkpoints de SpeechBrain) |
 
 ## Arquitectura y entrenamiento
@@ -78,11 +78,11 @@ SENSE se posiciona como una alternativa open source a SONAR, con un alcance de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LIA-AvignonUniversity/SENSE
+- Hugging Face: https://huggingface.co/LIA-AvignonUniversity/SENSE
 - Articulo SENSE (arXiv 2509.12093): https://arxiv.org/abs/2509.12093
 - Version HTML del articulo: https://arxiv.org/html/2509.12093v2
 - Articulo SpeechBrain 1.0 (arXiv 2407.00463): https://arxiv.org/abs/2407.00463
 - Receta de entrenamiento en SpeechBrain: https://github.com/speechbrain/speechbrain/tree/develop/recipes/CommonVoice/SENSE
 - Web de SpeechBrain: https://speechbrain.github.io/
 - Codigo de SpeechBrain: https://github.com/speechbrain/speechbrain/
-- Perfil de LIA en HuggingFace: https://huggingface.co/LIA-AvignonUniversity
+- Perfil de LIA en Hugging Face: https://huggingface.co/LIA-AvignonUniversity

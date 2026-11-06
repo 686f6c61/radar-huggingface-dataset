@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks ni de documentacion suficiente para una com
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/4b-A-solvability-200-luna-v2-epoch3 | 4,54 B | 65.536 (inferencia) | no disponible | HuggingFace |
-| Qwen/Qwen3.5-4B (modelo base) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | HuggingFace |
+| Stage-org/4b-A-solvability-200-luna-v2-epoch3 | 4,54 B | 65.536 (inferencia) | no disponible | Hugging Face |
+| Qwen/Qwen3.5-4B (modelo base) | no disponible en esta informacion | no disponible en esta informacion | no disponible en esta informacion | Hugging Face |
 
 Para el resto de alternativas comparables (mismo tamano o misma tarea), los datos de rendimiento, contexto y licencia no estan disponibles en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ Para el resto de alternativas comparables (mismo tamano o misma tarea), los dato
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/4b-A-solvability-200-luna-v2-epoch3
+- Hugging Face: https://huggingface.co/Stage-org/4b-A-solvability-200-luna-v2-epoch3
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/Stage-org/4b-A-solvability-200-luna-v2 (referencia indicada en la model card; disponibilidad no verificada)
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-4B (referencia indicada en la configuracion de entrenamiento)
 - Paper, blog, repositorio o demo: no disponible en la informacion proporcionada.

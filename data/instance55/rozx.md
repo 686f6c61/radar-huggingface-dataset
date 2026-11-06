@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Instance55/Rozx es un repositorio de modelo publicado en HuggingFace por el usuario Instance55 bajo licencia Apache 2.0. En el momento de la consulta, la model card del autor no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas indicados.
+Instance55/Rozx es un repositorio de modelo publicado en Hugging Face por el usuario Instance55 bajo licencia Apache 2.0. En el momento de la consulta, la model card del autor no contiene ninguna descripcion tecnica: unicamente la declaracion de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado ni idiomas indicados.
 
 Esto significa que no es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece (lenguaje, vision, audio, embeddings) ni cual es su arquitectura subyacente. La etiqueta `region:us` es la unica metadata adicional presente, y no aporta informacion sobre el contenido tecnico.
 
@@ -71,7 +71,7 @@ No disponible. Al no conocerse la categoria funcional ni el tamano del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Instance55/Rozx
+- Repositorio en Hugging Face: https://huggingface.co/Instance55/Rozx
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

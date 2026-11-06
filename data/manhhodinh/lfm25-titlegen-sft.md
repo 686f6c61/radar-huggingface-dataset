@@ -55,7 +55,7 @@ Nota: los resultados son preliminares, generados por una heurística automatizad
 
 - Con 229,7 millones de parámetros, el modelo es muy ligero y puede ejecutarse en CPU sin GPU.
 - En GPU, cabe en tarjetas con 1-2 GB de VRAM en FP16 (estimación razonable para un modelo de este tamaño, aunque no hay datos oficiales).
-- Compatible con la librería `transformers` de HuggingFace; se puede desplegar con herramientas como vLLM, llama.cpp u Ollama, aunque no hay configuraciones específicas documentadas.
+- Compatible con la librería `transformers` de Hugging Face; se puede desplegar con herramientas como vLLM, llama.cpp u Ollama, aunque no hay configuraciones específicas documentadas.
 - No se proporcionan datos de latencia o throughput.
 
 ## Comparativa con modelos similares

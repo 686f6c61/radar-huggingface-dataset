@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hanabi-qwen3-8b-rl-step150 (este) | 8.19B | 32K (131K YaRN) | RL sobre Hanabi (belief + move) | Apache 2.0 | HuggingFace |
-| hanabi-qwen3-8b-rl-step100 | 8.19B | 32K (131K YaRN) | RL sobre Hanabi (mejor val, reward 1.3429) | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B-Base | 8.19B | 32K (131K YaRN) | Preentrenamiento general | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B-Instruct | 8.19B | 32K (131K YaRN) | Preentrenamiento + instruct (RLHF/DPO) | Apache 2.0 | HuggingFace |
+| hanabi-qwen3-8b-rl-step150 (este) | 8.19B | 32K (131K YaRN) | RL sobre Hanabi (belief + move) | Apache 2.0 | Hugging Face |
+| hanabi-qwen3-8b-rl-step100 | 8.19B | 32K (131K YaRN) | RL sobre Hanabi (mejor val, reward 1.3429) | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B-Base | 8.19B | 32K (131K YaRN) | Preentrenamiento general | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B-Instruct | 8.19B | 32K (131K YaRN) | Preentrenamiento + instruct (RLHF/DPO) | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que este checkpoint se diferencia del modelo base e instruct por su especializacion en Hanabi. No hay otros modelos publicamente disponibles en el mismo nicho (LLM entrenado con RL sobre Hanabi) en la informacion proporcionada.
 
@@ -80,7 +80,7 @@ La comparativa muestra que este checkpoint se diferencia del modelo base e instr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mahesh111000/hanabi-qwen3-8b-rl-step150
+- Repositorio Hugging Face: https://huggingface.co/Mahesh111000/hanabi-qwen3-8b-rl-step150
 - Checkpoint hermano (step 100): https://huggingface.co/Mahesh111000/hanabi-qwen3-8b-rl-step100
 - Checkpoint relacionado (step 185): https://huggingface.co/Mahesh111000/qwen3-8b-hanabi-rl-base-1to1-24k-step_185
 - Repositorio Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

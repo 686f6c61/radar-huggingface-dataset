@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YuE2-3B-BF16 es un checkpoint de pesos publicado en HuggingFace por el usuario LeeAeron bajo licencia Apache 2.0. La unica informacion verificable en el repositorio es el identificador, el autor, la licencia y el formato del nombre del repositorio; la model card asociada contiene unicamente el bloque de metadatos con la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el mismo dia (20 de septiembre de 2026), lo que indica una publicacion reciente y sin traccion conocida.
+YuE2-3B-BF16 es un checkpoint de pesos publicado en Hugging Face por el usuario LeeAeron bajo licencia Apache 2.0. La unica informacion verificable en el repositorio es el identificador, el autor, la licencia y el formato del nombre del repositorio; la model card asociada contiene unicamente el bloque de metadatos con la licencia y no incluye descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, y fue creado y actualizado el mismo dia (20 de septiembre de 2026), lo que indica una publicacion reciente y sin traccion conocida.
 
 El identificador sugiere dos cosas que conviene tratar como hipotesis y no como hechos: por un lado, "3B" apunta a un modelo de aproximadamente 3 000 millones de parametros; por otro, "YuE2" coincide con la denominacion de la familia YuE, orientada a la generacion de canciones a partir de letras. Ninguna de las dos inferencias esta confirmada por la documentacion disponible, y no se ha localizado ningun paper, blog o repositorio asociado en la busqueda web realizada.
 
@@ -20,7 +20,7 @@ Por tanto, esta ficha describe principalmente el estado de la informacion public
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | BF16 segun el nombre del repositorio; safetensors no confirmado |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Region declarada | region: us |
 | Fecha de creacion | 2026-09-20 |
 | Fecha de ultima actualizacion | 2026-09-20 |
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones derivadas del tamano declarado en el iden
 - Cuantizacion a 4 bits: aproximadamente 2-2,5 GB de VRAM.
 - GPU de consumo compatibles: si cabe en menos de 12 GB, es viable en RTX 3060 12 GB, RTX 4070, RTX 4080, RTX 4090, RTX 3090 y equivalentes. En GPUs de 8 GB requeriria cuantizacion a 8 o 4 bits.
 - GPU profesionales: A100 40/80 GB, H100, L40S o L4 son compatibles pero estan sobredimensionadas para un modelo de esta clase, salvo que se busque alto throughput con batching agresivo.
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp, Ollama y Transformers son las opciones habituales, pero su viabilidad depende de que el formato de pesos publicado sea compatible; esto no esta confirmado.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp, Ollama y Transformers son las opciones habituales, pero su viabilidad depende de que el formato de pesos publicado sea compatible; esto no esta confirmado.
 - Latencia y throughput: no disponibles. Dependen de la arquitectura, del contexto y del hardware, datos todos ellos ausentes.
 - Nota: dado que no se ha confirmado el formato exacto de los ficheros, verifique la lista de archivos del repositorio antes de planificar el despliegue.
 
@@ -102,7 +102,7 @@ La unica ventaja verificable de YuE2-3B-BF16 frente a estas alternativas es la l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeeAeron/YuE2-3B-BF16
+- Repositorio en Hugging Face: https://huggingface.co/LeeAeron/YuE2-3B-BF16
 - Model card del repositorio: sin contenido descriptivo (unicamente el bloque de licencia Apache 2.0)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: inferior a 1 GB en FP32 (el modelo ocupa ~6,6 MB en pesos), por lo que cabe en cualquier GPU moderna e incluso en CPU.
 - GPU recomendada: cualquier GPU con al menos 1 GB de VRAM (p. ej., NVIDIA GTX 1050 Ti, RTX 3050) o incluso CPU con 4 GB de RAM.
 - Es viable en entornos sin GPU, dado el tamaño reducido del modelo.
-- Opciones de despliegue: se puede usar con la librería `transformers` de HuggingFace (con `trust_remote_code=True`). No se proporcionan pesos GGUF, pero al ser tan pequeño podría convertirse a otros formatos si fuera necesario.
+- Opciones de despliegue: se puede usar con la librería `transformers` de Hugging Face (con `trust_remote_code=True`). No se proporcionan pesos GGUF, pero al ser tan pequeño podría convertirse a otros formatos si fuera necesario.
 - Latencia y throughput: no se han publicado datos, pero al tener solo 1,6M de parámetros y 2 capas, la inferencia es prácticamente instantánea en hardware moderno.
 
 ## Comparativa con modelos similares
@@ -81,5 +81,5 @@ Fela es significativamente más pequeño que estos modelos, lo que limita su cap
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pandeyps/fela
+- Modelo en Hugging Face: https://huggingface.co/pandeyps/fela
 - Paper de referencia (Hyena): https://www.biorxiv.org/content/10.1101/2024.01.18.576206v1

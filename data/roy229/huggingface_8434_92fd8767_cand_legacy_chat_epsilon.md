@@ -4,7 +4,7 @@
 
 Legacy Chat Epsilon es un modelo conversacional candidato desarrollado por Roy229 para la renovación de una plataforma de análisis de texto (Text Analytics Platform). Se trata de un modelo de chat de código cerrado, con 175 millones de parámetros, diseñado específicamente para tareas de conversación. Su relevancia radica en que representa una opción interna de evaluación para sistemas de IA conversacional, aunque su licencia propietaria y su coste por token lo sitúan por encima de los umbrales habituales para uso generalizado.
 
-El modelo se presenta como un candidato en fase de evaluación, con una precisión reportada de 0,95 (sin especificar la métrica concreta) y una latencia de 30 ms. No se dispone de información pública sobre su arquitectura, datos de entrenamiento o capacidades adicionales más allá de su uso conversacional. Su distribución en HuggingFace es mínima, con cero descargas y sin pipeline definido, lo que sugiere que es un artefacto interno más que un modelo de código abierto.
+El modelo se presenta como un candidato en fase de evaluación, con una precisión reportada de 0,95 (sin especificar la métrica concreta) y una latencia de 30 ms. No se dispone de información pública sobre su arquitectura, datos de entrenamiento o capacidades adicionales más allá de su uso conversacional. Su distribución en Hugging Face es mínima, con cero descargas y sin pipeline definido, lo que sugiere que es un artefacto interno más que un modelo de código abierto.
 
 ## Especificaciones tecnicas
 
@@ -61,8 +61,8 @@ No disponible. Al ser un modelo propietario y sin información pública sobre ar
 - Riesgo de alucinación: al ser un modelo conversacional, puede generar respuestas plausibles pero incorrectas, especialmente en dominios especializados. No hay datos sobre su fiabilidad en contextos específicos.
 - Sesgos desconocidos: al no haber información sobre los datos de entrenamiento, no se pueden evaluar sesgos potenciales de género, raza o idioma.
 - Limitaciones de contexto: se desconoce la longitud máxima de contexto, lo que podría afectar a conversaciones largas o a la retención de información a lo largo del diálogo.
-- Soporte limitado: al ser un candidato interno, es probable que no reciba mantenimiento ni actualizaciones públicas, y su disponibilidad en HuggingFace es testimonial (cero descargas, sin pipeline).
+- Soporte limitado: al ser un candidato interno, es probable que no reciba mantenimiento ni actualizaciones públicas, y su disponibilidad en Hugging Face es testimonial (cero descargas, sin pipeline).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_legacy_chat_epsilon
+- Hugging Face: https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_legacy_chat_epsilon

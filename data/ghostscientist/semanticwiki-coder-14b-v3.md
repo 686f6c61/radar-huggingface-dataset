@@ -76,8 +76,8 @@ No se han publicado resultados en la informacion disponible para benchmarks gene
 
 | Modelo | Parametros | Contexto | Validez de citas | Fidelidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| semanticwiki-coder-14b-v3 | ~14,7B (adaptador LoRA) | 24.576 en entrenamiento | 0,562 | 3,39 | Apache-2.0 | HuggingFace, requiere modelo base |
-| Qwen2.5-Coder-14B-Instruct | ~14,7B | 32.768 nativos (131.072 con YaRN) | 0,308 | 3,15 | Apache-2.0 | HuggingFace, pesos completos |
+| semanticwiki-coder-14b-v3 | ~14,7B (adaptador LoRA) | 24.576 en entrenamiento | 0,562 | 3,39 | Apache-2.0 | Hugging Face, requiere modelo base |
+| Qwen2.5-Coder-14B-Instruct | ~14,7B | 32.768 nativos (131.072 con YaRN) | 0,308 | 3,15 | Apache-2.0 | Hugging Face, pesos completos |
 | Otras alternativas de documentacion automatica de codigo | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos con otros modelos especializados en generacion de documentacion con citas, ni el autor los aporta. La unica comparacion medida disponible es contra el modelo base, que es el resultado que se muestra arriba. Cualquier comparacion con alternativas como modelos generalistas de gran tamano o pipelines de documentacion propietarios quedaria fuera de la evidencia publicada.
@@ -93,11 +93,11 @@ No se dispone de datos comparativos con otros modelos especializados en generaci
 - Licencia Apache-2.0 para el adaptador, permisiva para uso comercial, pero conviene verificar la licencia del modelo base antes de desplegar en produccion.
 - El modelo requiere descargar el base Qwen2.5-Coder-14B-Instruct y cargar el adaptador con PEFT; no es un modelo autonomo.
 - Repositorio con 0 descargas y 1 "like": sin validacion comunitaria, sin mantenimiento demostrado y sin garantia de soporte.
-- Fecha de creacion del repositorio: 6 de octubre de 2026 (segun los metadatos de HuggingFace).
+- Fecha de creacion del repositorio: 6 de octubre de 2026 (segun los metadatos de Hugging Face).
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhostScientist/semanticwiki-coder-14b-v3
+- Modelo en Hugging Face: https://huggingface.co/GhostScientist/semanticwiki-coder-14b-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/GhostScientist/semanticwiki-data-v3
 - Dataset de evaluacion: https://huggingface.co/datasets/GhostScientist/semanticwiki-eval-v3

@@ -6,7 +6,7 @@ g3ida/arabart-arabic-ocr-infiller es un modelo de correccion de texto post-OCR p
 
 El modelo ocupa la etapa B de un pipeline de correccion post-OCR de dos modelos. Su tarea concreta es el rellenado de spans (span infilling): recibe fragmentos de texto marcados como erroneos entre las etiquetas `<err>` y `</err>` y devuelve la version corregida de esos fragmentos, sin tocar el resto del documento. La decision de diseno mas relevante es mantener los caracteres corruptos dentro de las etiquetas en lugar de sustituirlos por `<mask>`, porque aproximadamente el 55% de los errores OCR son corrupciones leves (un punto, una hamza, una union indebida) y la similitud media de caracteres entre la palabra marcada y su forma correcta es de 0,682.
 
-Su relevancia es acotada pero clara: es un modelo pequeno, especializado y de licencia permisiva, pensado para integrarse como componente determinista dentro de un sistema mayor (marcado, generacion y empalme o splice) y no como corrector autonomo. Los metadatos de HuggingFace lo etiquetan como pipeline text-generation, mientras que la model card y las tags lo describen como text2text-generation.
+Su relevancia es acotada pero clara: es un modelo pequeno, especializado y de licencia permisiva, pensado para integrarse como componente determinista dentro de un sistema mayor (marcado, generacion y empalme o splice) y no como corrector autonomo. Los metadatos de Hugging Face lo etiquetan como pipeline text-generation, mientras que la model card y las tags lo describen como text2text-generation.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Su relevancia es acotada pero clara: es un modelo pequeno, especializado y de li
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Modelo base | moussaKam/AraBART |
-| Tarea declarada | text2text-generation (los metadatos de HuggingFace tambien lo etiquetan como text-generation) |
+| Tarea declarada | text2text-generation (los metadatos de Hugging Face tambien lo etiquetan como text-generation) |
 | Tamano del repositorio | 0,6 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -100,7 +100,7 @@ Frente a un LLM generico, la ventaja de este modelo es el coste de inferencia (1
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g3ida/arabart-arabic-ocr-infiller
+- Modelo en Hugging Face: https://huggingface.co/g3ida/arabart-arabic-ocr-infiller
 - Modelo base: https://huggingface.co/moussaKam/AraBART
 - Repositorio del pipeline (referencia incluida en la model card con marcador de posicion sin sustituir por el autor): https://github.com/OWNER/arabic-postocr
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo. Los resultados devueltos no guardan relacion con el contenido tecnico de esta ficha y se han descartado.

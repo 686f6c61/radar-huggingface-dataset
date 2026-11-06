@@ -74,7 +74,7 @@ No se dispone de cifras comparativas publicadas en la información proporcionada
 
 | Método | Entrada necesaria | Coste de inferencia | ¿Requiere pesos del modelo evaluado? | Licencia / disponibilidad |
 |---|---|---|---|---|
-| EPR-Ministral (este artefacto) | Respuesta con `top_logprobs=15` de Ministral-8B-Instruct-2410 | Despreciable (modelo lineal) | No | MIT, artefacto `skops` en HuggingFace |
+| EPR-Ministral (este artefacto) | Respuesta con `top_logprobs=15` de Ministral-8B-Instruct-2410 | Despreciable (modelo lineal) | No | MIT, artefacto `skops` en Hugging Face |
 | Entropía semántica | Múltiples muestras de la misma consulta y agrupamiento semántico | Alto (varias generaciones por consulta) | No | Métodos publicados, implementaciones diversas |
 | Sondas lineales sobre estados ocultos | Acceso a las activaciones internas del modelo | Bajo en inferencia, requiere entrenamiento por modelo | Sí | Depende de la implementación |
 | Juez LLM | Respuesta más una segunda generación de evaluación | Medio-alto | No | Depende del juez elegido |
@@ -98,7 +98,7 @@ Frente a estos enfoques, la propuesta de EPR destaca por su coste casi nulo y po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/artefactory/epr-ministral
+- Modelo en Hugging Face: https://huggingface.co/artefactory/epr-ministral
 - Modelo objetivo: https://huggingface.co/mistralai/Ministral-8B-Instruct-2410
 - Librería `artefactual` (extracción de características e incidencias): https://github.com/artefactory/artefactual
 - Incidencias y contacto: https://github.com/artefactory/artefactual/issues

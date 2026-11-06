@@ -69,8 +69,8 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (27
 
 ## Enlaces
 
-- [HuggingFace: nlpguy/Qwen3.8-27B-Fimi-4](https://huggingface.co/nlpguy/Qwen3.8-27B-Fimi-4)
+- [Hugging Face: nlpguy/Qwen3.8-27B-Fimi-4](https://huggingface.co/nlpguy/Qwen3.8-27B-Fimi-4)
 - [Paper: Reinforced Agentic Merging Plus (arXiv:2601.13572)](https://arxiv.org/abs/2601.13572)
 - [GitHub - Qwen3.8-27B (AlibabaCloud-Official)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [QwenCloud - Qwen3.8-27B](https://www.qwencloud.com/models/qwen3.8-27b)
-- [Modelos base en HuggingFace](https://huggingface.co/Qwen/Qwen3.5-27B) (y los demás listados en la config del merge)
+- [Modelos base en Hugging Face](https://huggingface.co/Qwen/Qwen3.5-27B) (y los demás listados en la config del merge)

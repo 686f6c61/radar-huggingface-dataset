@@ -56,18 +56,18 @@ No disponible. No se han encontrado comparativas publicas con modelos similares 
 - Contenido explicito: el modelo esta disenado para generar contenido NSFW y adulto, lo que puede ser inapropiado para menores o entornos profesionales.
 - Riesgo de alucinacion: sin datos de evaluacion, no se puede cuantificar el nivel de alucinacion, pero los modelos de roleplay suelen priorizar la coherencia narrativa sobre la veracidad.
 - Sesgos desconocidos: no se ha realizado una auditoria de sesgos; el contenido puede reflejar estereotipos presentes en los datos de entrenamiento.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - Licencia Apache-2.0 permite uso comercial, pero el contenido generado puede violar politicas de plataformas o leyes locales.
 - Sin documentacion tecnica: falta informacion sobre el dataset, el metodo de entrenamiento y las capacidades exactas, lo que dificulta su evaluacion para produccion.
 
 ## Enlaces
-- [HuggingFace - ReadyArt/Heimdallr-27B-v0.35](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35)
+- [Hugging Face - ReadyArt/Heimdallr-27B-v0.35](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35)
 - [Perfil de ReadyArt en Hugging Face](https://huggingface.co/ReadyArt)
 - [Unrestricted AI - Leaderboard de modelos sin censura](https://unrestricted.ai/)
 - [ReadyArt/Heimdallr-v0.02-31B-LORA](https://huggingface.co/ReadyArt/Heimdallr-v0.02-31B-LORA)
 - [CivArchive - Archivo de modelos AI](https://civitaiarchive.com/)
 
-Nota: el modelo base Qwen/Qwen3.8-27B no se encuentra en el repositorio de Qwen en HuggingFace (no existe una version "Qwen3.8-27B" publica conocida, sino Qwen2.5-27B o Qwen3-30B-A3B). Esto sugiere que el nombre del modelo base podria ser un error de etiquetado o una version interna. Se recomienda verificar la compatibilidad con Qwen2.5-27B o Qwen3-30B-A3B antes de usar.## Resumen
+Nota: el modelo base Qwen/Qwen3.8-27B no se encuentra en el repositorio de Qwen en Hugging Face (no existe una version "Qwen3.8-27B" publica conocida, sino Qwen2.5-27B o Qwen3-30B-A3B). Esto sugiere que el nombre del modelo base podria ser un error de etiquetado o una version interna. Se recomienda verificar la compatibilidad con Qwen2.5-27B o Qwen3-30B-A3B antes de usar.## Resumen
 Heimdallr-27B-v0.35 es un modelo de lenguaje de 27.781 millones de parametros desarrollado por ReadyArt, basado en un fine-tune del modelo Qwen/Qwen3.8-27B. Esta orientado a roleplay, conversacion instructiva y escritura narrativa, con un enfoque explicito en contenido no alineado, incluyendo tematicas adultas, NSFW y dark-fantasy. Se distribuye bajo licencia Apache-2.0, aunque su acceso en Hugging Face es restringido y requiere aceptar condiciones previas.
 
 El modelo se presenta como una alternativa sin filtros tematicos para desarrolladores e investigadores que trabajan con interacciones conversacionales no censuradas. Su tamano de 27.8B parametros lo situa en la gama alta de modelos abiertos, con un repositorio de 55.6 GB en formato safetensors. A fecha de publicacion (agosto de 2026) no registra descargas ni valoraciones en la plataforma.
@@ -112,7 +112,7 @@ Los tags del repositorio sugieren un entrenamiento orientado a contenido narrati
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras metricas estandar. El modelo no ha sido evaluado en el leaderboard de Unrestricted AI ni en otras plataformas publicas segun los datos de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de MMLU, HumanEval, GSM8K ni otras metricas estandar. El modelo no ha sido evaluado en el leaderboard de Unrestricted AI ni en otras plataformas publicas segun los datos de Hugging Face.
 
 ## Requisitos de hardware
 
@@ -131,16 +131,16 @@ No hay datos comparativos disponibles. No se han encontrado modelos de la misma 
 - Contenido explicito: el modelo esta disenado para generar contenido NSFW y adulto, lo que puede ser inapropiado para menores o en entornos profesionales.
 - Riesgo de alucinacion: sin datos de evaluacion, no se puede cuantificar la tendencia a generar informacion falsa, pero los modelos de roleplay suelen priorizar la coherencia narrativa sobre la veracidad.
 - Sesgos desconocidos: no se ha realizado una auditoria de sesgos; el contenido puede reflejar estereotipos de los datos de entrenamiento.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - Licencia Apache-2.0 permite uso comercial, pero el contenido generado puede violar politicas de plataformas o leyes locales.
 - No se ha publicado documentacion tecnica sobre el dataset o el metodo de entrenamiento, lo que dificulta su evaluacion en entornos de produccion.
 
 ## Enlaces
 
-- [HuggingFace - ReadyArt/Heimdallr-27B-v0.35](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35)
-- [Perfil de ReadyArt en HuggingFace](https://huggingface.co/ReadyArt)
+- [Hugging Face - ReadyArt/Heimdallr-27B-v0.35](https://huggingface.co/ReadyArt/Heimdallr-27B-v0.35)
+- [Perfil de ReadyArt en Hugging Face](https://huggingface.co/ReadyArt)
 - [Unrestricted AI - Leaderboard de modelos sin censura](https://unrestricted.ai/)
 - [ReadyArt/Heimdallr-v0.02-31B-LORA](https://huggingface.co/ReadyArt/Heimdallr-v0.02-31B-LORA)
 - [CivArchive - Archivo de modelos de IA](https://civitalarchive.com/)
 
-Nota: el modelo base Qwen/Qwen3.8-27B no existe en el repositorio oficial de Qwen en HuggingFace (las versiones conocidas son Qwen2.5-27B o Qwen3-30B-A3B). Esto podria indicar un error de etiquetado o una version futura no publicada. Se recomienda verificar la compatibilidad con Qwen2.5-27B o Qwen3-30B-A3B antes de su uso.
+Nota: el modelo base Qwen/Qwen3.8-27B no existe en el repositorio oficial de Qwen en Hugging Face (las versiones conocidas son Qwen2.5-27B o Qwen3-30B-A3B). Esto podria indicar un error de etiquetado o una version futura no publicada. Se recomienda verificar la compatibilidad con Qwen2.5-27B o Qwen3-30B-A3B antes de su uso.

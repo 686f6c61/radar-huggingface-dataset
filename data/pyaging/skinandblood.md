@@ -46,7 +46,7 @@ Los datos de entrenamiento incluyen muestras de seis tipos de tejido humano: cé
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Horvath et al., 2018) reporta métricas de precisión (error absoluto medio, correlación) en los tejidos de entrenamiento, pero esos datos no están incluidos en la model card de HuggingFace. Se indica únicamente que el modelo es "particularmente preciso para muestras derivadas de piel y células cultivadas", sin cifras concretas. Por tanto, no es posible presentar una tabla comparativa con otros relojes sin riesgo de inventar datos.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Horvath et al., 2018) reporta métricas de precisión (error absoluto medio, correlación) en los tejidos de entrenamiento, pero esos datos no están incluidos en la model card de Hugging Face. Se indica únicamente que el modelo es "particularmente preciso para muestras derivadas de piel y células cultivadas", sin cifras concretas. Por tanto, no es posible presentar una tabla comparativa con otros relojes sin riesgo de inventar datos.
 
 ## Requisitos de hardware
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Tipo | Tejidos | Nº CpG | Año | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `skinandblood` (este) | Elastic net | Bucal, sangre, epitelio, fibroblastos, piel, cordón | 391 | 2018 | BSD-3-Clause | HuggingFace + pyaging |
+| `skinandblood` (este) | Elastic net | Bucal, sangre, epitelio, fibroblastos, piel, cordón | 391 | 2018 | BSD-3-Clause | Hugging Face + pyaging |
 | Horvath 2013 (pan-tejido) | Elastic net | Multi-tejido (sangre, cerebro, piel, etc.) | 353 | 2013 | No especificada (uso académico) | Diversas implementaciones (p.ej. `methylclock`) |
 | Hannum 2013 | Elastic net | Sangre | 71 | 2013 | No especificada | Diversas implementaciones |
 | PhenoAge (Levine 2018) | Elastic net | Sangre | 513 | 2018 | No especificada | Diversas implementaciones |
@@ -79,6 +79,6 @@ Nota: los datos de la tabla para los modelos comparativos son de conocimiento ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/skinandblood
+- Modelo en Hugging Face: https://huggingface.co/pyaging/skinandblood
 - Documentación de `pyaging` (catálogo de relojes): https://pyaging.readthedocs.io
 - Artículo original: Horvath, S., et al. "Epigenetic clock for skin and blood cells applied to Hutchinson Gilford Progeria Syndrome and ex vivo studies." *Aging* 10(7), 1758–1775 (2018). DOI: https://doi.org/10.18632/aging.101508

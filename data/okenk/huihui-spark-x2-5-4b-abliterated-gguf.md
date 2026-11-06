@@ -85,7 +85,7 @@ Frente a otras familias de aproximadamente 4B de parametros (por ejemplo, altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/okenk/Huihui-Spark-X2.5-4B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/okenk/Huihui-Spark-X2.5-4B-abliterated-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Spark-X2.5-4B-abliterated
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

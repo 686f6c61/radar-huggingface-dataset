@@ -212,11 +212,11 @@ alternativas.
 - La busqueda web realizada no devolvio ninguna fuente independiente sobre el
   modelo: los unicos resultados obtenidos fueron enlaces no relacionados con
   la consulta, por lo que toda la informacion tecnica procede exclusivamente
-  de la model card y de los metadatos de HuggingFace.
+  de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/peonist-ai/halogen-qwen3.8-27b
+- Modelo en Hugging Face: https://huggingface.co/peonist-ai/halogen-qwen3.8-27b
 - Repositorio del motor halogen: https://github.com/peonist-ai/halogen-server
 - Imagen de contenedor: ghcr.io/peonist-ai/halogen:0.1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

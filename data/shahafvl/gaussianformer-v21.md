@@ -43,7 +43,7 @@ El entrenamiento utiliza los 26.820 objetos de entrenamiento del dataset Objaver
 - Comparacion de metodos de representacion 3D: sirve como referencia para medir la brecha entre renderizado neuronal y rasterizacion clasica sobre el mismo splat de 20k gaussianas.
 - Investigacion en renderizado diferenciable: al ser un transformer end-to-end, permite propagar gradientes a traves del renderizador hacia la representacion de escena, algo que un rasterizador no ofrece de forma nativa.
 - Generacion de datasets sinteticos de vistas: a partir de un PLY de objeto se pueden producir renders en multiples camaras orbitando el objeto para aumentar datos de entrenamiento de otros modelos.
-- Prototipado de pipelines image-to-image en HuggingFace: el tag `pipeline_tag: image-to-image` y la integracion con `PyTorchModelHubMixin` permiten cargarlo con `from_pretrained` en flujos existentes.
+- Prototipado de pipelines image-to-image en Hugging Face: el tag `pipeline_tag: image-to-image` y la integracion con `PyTorchModelHubMixin` permiten cargarlo con `from_pretrained` en flujos existentes.
 - Benchmarking de hardware para renderizado neuronal: util para medir latencia (unos 0,3 s por vista de 512 px con 20k gaussianas en una L40S) y planificar despliegues.
 - Docencia y divulgacion: ejemplo reproducible de adaptacion de un transformer de mallas a Gaussian Splatting con warm-start y schedule por etapas.
 
@@ -91,7 +91,7 @@ Sobre 300 objetos de entrenamiento, en sus 28 vistas de entrenamiento, V21 obtie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shahafvl/gaussianformer-v21
+- Modelo en Hugging Face: https://huggingface.co/shahafvl/gaussianformer-v21
 - Codigo: https://github.com/SVLwoof/gaussianformer
 - Modelo base RenderFormer: https://huggingface.co/microsoft/renderformer-v1-base
 - Version recomendada V22: https://huggingface.co/shahafvl/gaussianformer

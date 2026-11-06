@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jeffery es un modelo publicado en HuggingFace por el usuario loco-ai bajo la etiqueta de pipeline `zero-shot-classification`. La model card asociada es la plantilla por defecto de HuggingFace (`modelcard_template.md`) sin rellenar: practicamente todos los campos de descripcion, entrenamiento, evaluacion y uso contienen el marcador `[More Information Needed]`. No se dispone por tanto de informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni procedencia del modelo.
+Jeffery es un modelo publicado en Hugging Face por el usuario loco-ai bajo la etiqueta de pipeline `zero-shot-classification`. La model card asociada es la plantilla por defecto de Hugging Face (`modelcard_template.md`) sin rellenar: practicamente todos los campos de descripcion, entrenamiento, evaluacion y uso contienen el marcador `[More Information Needed]`. No se dispone por tanto de informacion verificable sobre arquitectura, tamano, datos de entrenamiento ni procedencia del modelo.
 
 La unica informacion concreta que aporta el autor es la licencia (MPL-2.0), la etiqueta de tarea (clasificacion zero-shot), una referencia generica al paper de Lacoste et al. (2019) sobre emisiones de carbono (arxiv:1910.09700) que aparece en la plantilla estandar, y la mencion de que el hardware empleado fue un "M5 pro on a Macbook Air". El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion (28 de octubre de 2026) son las unicas marcas temporales disponibles.
 
@@ -94,7 +94,7 @@ La comparacion se limita a la disponibilidad de informacion y licencia; no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/loco-ai/Jeffery
+- Repositorio Hugging Face: https://huggingface.co/loco-ai/Jeffery
 - Plantilla de model card utilizada (referencia citada en el README): https://github.com/huggingface/huggingface_hub/blob/main/src/huggingface_hub/templates/modelcard_template.md
 - Paper referenciado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact

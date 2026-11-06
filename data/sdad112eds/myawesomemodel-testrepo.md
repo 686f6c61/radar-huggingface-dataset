@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `SDAD112EDS/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras significativas en razonamiento profundo e inferencia, logradas mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en la fase de post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del mercado.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `SDAD112EDS/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras significativas en razonamiento profundo e inferencia, logradas mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en la fase de post-entrenamiento. El modelo declara un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes del mercado.
 
 La model card indica que el modelo ha mejorado su precisión en el test AIME 2025, pasando del 70% al 87,5%, y que emplea un promedio de 23.000 tokens por pregunta en razonamiento, frente a los 12.000 de la versión anterior. También menciona una reducción de la tasa de alucinaciones y un mejor soporte para function calling. Sin embargo, el repositorio no incluye pesos del modelo (tamaño 0,0 GB) ni especificaciones técnicas detalladas, por lo que la mayor parte de los datos técnicos no están disponibles en la información proporcionada.
 
@@ -98,6 +98,6 @@ No se dispone de información suficiente para comparar con modelos concretos. La
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/SDAD112EDS/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/SDAD112EDS/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información proporcionada.

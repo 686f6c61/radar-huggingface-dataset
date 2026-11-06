@@ -101,6 +101,6 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/ainouche-abderahmane/DZAIR-FP16
+- Hugging Face (este modelo): https://huggingface.co/ainouche-abderahmane/DZAIR-FP16
 - Modelo base DZAIR: https://huggingface.co/ainouche-abderahmane/DZAIR
 - Model card principal (tabla completa de resultados, datos de entrenamiento y composicion de licencias): https://huggingface.co/ainouche-abderahmane/DZAIR

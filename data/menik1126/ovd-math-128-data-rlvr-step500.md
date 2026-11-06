@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo menik1126/ovd-math-128-data-rlvr-step500 es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en HuggingFace. Segun la model card, se trata de una linea base (baseline) entrenada con GRPO/RLVR puro, es decir, aprendizaje por refuerzo con recompensas verificables, en el paso 500 de un entrenamiento identificado como "dsr128". El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, no el estado del optimizador, por lo que no esta pensado para reanudar entrenamiento sino para evaluacion o inferencia.
+El modelo menik1126/ovd-math-128-data-rlvr-step500 es un checkpoint de pesos de inferencia publicado por el usuario menik1126 en Hugging Face. Segun la model card, se trata de una linea base (baseline) entrenada con GRPO/RLVR puro, es decir, aprendizaje por refuerzo con recompensas verificables, en el paso 500 de un entrenamiento identificado como "dsr128". El repositorio contiene unicamente pesos de inferencia y ficheros de tokenizer, no el estado del optimizador, por lo que no esta pensado para reanudar entrenamiento sino para evaluacion o inferencia.
 
 El modelo tiene 1.777.088.000 parametros reales (aproximadamente 1,78 mil millones) y ocupa 7,1 GB en el repositorio, con pesos en formato safetensors. La etiqueta de arquitectura declarada es qwen2, lo que situa el modelo en la familia Qwen2, aunque la model card no especifica cual es el modelo base exacto ni el numero de tokens de entrenamiento. No se declaran licencia, idiomas soportados ni pipeline de uso.
 
@@ -70,10 +70,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ovd-math-128-data-rlvr-step500 | 1,78 mil millones | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2.5-1.5B (familia base citada por la etiqueta qwen2) | aproximadamente 1,54 mil millones | 32.768 tokens en la familia Qwen2.5 | Apache 2.0 en la mayoria de variantes | HuggingFace, safetensors y GGUF |
-| Llama 3.2 1B | aproximadamente 1,24 mil millones | 128.000 tokens | licencia comunitaria Llama 3.2 | HuggingFace, safetensors y GGUF |
-| SmolLM2-1.7B | aproximadamente 1,71 mil millones | 8.192 tokens | Apache 2.0 | HuggingFace, safetensors y GGUF |
+| ovd-math-128-data-rlvr-step500 | 1,78 mil millones | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2.5-1.5B (familia base citada por la etiqueta qwen2) | aproximadamente 1,54 mil millones | 32.768 tokens en la familia Qwen2.5 | Apache 2.0 en la mayoria de variantes | Hugging Face, safetensors y GGUF |
+| Llama 3.2 1B | aproximadamente 1,24 mil millones | 128.000 tokens | licencia comunitaria Llama 3.2 | Hugging Face, safetensors y GGUF |
+| SmolLM2-1.7B | aproximadamente 1,71 mil millones | 8.192 tokens | Apache 2.0 | Hugging Face, safetensors y GGUF |
 
 No se dispone de resultados comparativos de benchmarks entre este checkpoint y las alternativas anteriores, por lo que no es posible establecer una jerarquia de rendimiento.
 
@@ -91,7 +91,7 @@ No se dispone de resultados comparativos de benchmarks entre este checkpoint y l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menik1126/ovd-math-128-data-rlvr-step500
+- Hugging Face: https://huggingface.co/menik1126/ovd-math-128-data-rlvr-step500
 - Paper, blog o repositorio del experimento dsr128: no disponible
 - Demos o espacios asociados: no disponible
 - Resultados de la busqueda web: no se encontraron enlaces relevantes; los resultados devueltos correspondian a paginas de soporte de Microsoft sin relacion con el modelo.

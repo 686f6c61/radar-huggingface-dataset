@@ -76,9 +76,9 @@ La versión v1 (offline) tiene 6M más de parámetros y puede ofrecer mayor prec
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/vibe-app/diar-streaming-sortformer-4spk-v2-gguf)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/vibe-app/diar-streaming-sortformer-4spk-v2-gguf)
 - [Modelo base original de NVIDIA](https://huggingface.co/nvidia/diar_streaming_sortformer_4spk-v2)
-- [Modelo base en HuggingFace de everyscribe](https://huggingface.co/everyscribe/diar_streaming_sortformer_4spk-v2)
+- [Modelo base en Hugging Face de everyscribe](https://huggingface.co/everyscribe/diar_streaming_sortformer_4spk-v2)
 - [Descripción del modelo en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/diar-streaming-sortformer-4spk-v2-nvidia)
 - [Descripción de la versión v2.1 en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/diar-streaming-sortformer-4spk-v2.1-nvidia)
 - [Repositorio de fine-tuning de Sortformer en GitHub](https://github.com/hieuxinloi/Sortformer-Speaker-Diarization)

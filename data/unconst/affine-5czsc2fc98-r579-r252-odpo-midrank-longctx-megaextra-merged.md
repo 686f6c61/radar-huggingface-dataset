@@ -66,7 +66,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r579-r252-odpo-midrank-longctx-megaextra-merged
 - Modelo base (r252): https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged
 - Modelos relacionados (r29, r27): https://huggingface.co/unconst/Affine-5czsc2fc98-r29-merged y https://huggingface.co/unconst/Affine-5czsc2fc98-r27-merged
 - Página de FriendliAI para un modelo similar (h1): https://friendli.ai/models/unconst/Affine-5czsc2fc98-h1-merged

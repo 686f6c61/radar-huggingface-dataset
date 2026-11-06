@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Qwen3-8b-compassion-seed2-20261001-CPT-merged-epoch-2 (este modelo) | 8,19 B | no disponible | no disponible | 0 descargas, 0 likes |
-| Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2 | no disponible | no disponible | no disponible | publico en HuggingFace |
-| Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-4 | no disponible | no disponible | no disponible | publico en HuggingFace |
-| Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500 | no disponible | no disponible | no disponible | publico en HuggingFace |
+| Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2 | no disponible | no disponible | no disponible | publico en Hugging Face |
+| Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-4 | no disponible | no disponible | no disponible | publico en Hugging Face |
+| Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500 | no disponible | no disponible | no disponible | publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente al modelo base Qwen/Qwen3-8B-Base. Las diferencias documentadas se limitan a la semilla, el numero de epocas, el paso de entrenamiento y el dataset de CPT.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-seed2-20261001-CPT-merged-epoch-2
+- Modelo en Hugging Face: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-seed2-20261001-CPT-merged-epoch-2
 - Modelo base Qwen/Qwen3-8B-Base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset CompassioninMachineLearning/compassion_12185_cleaned: https://huggingface.co/datasets/CompassioninMachineLearning/compassion_12185_cleaned
 - Variante seed 1, epoca 2: https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2
@@ -97,4 +97,4 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 - Variante urban: https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500
 - Despliegue en FriendliAI de la variante seed 1, epoca 2: https://friendli.ai/models/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2
 - Unsloth (herramienta usada para la fusion de pesos): https://github.com/unslothai/unsloth
-- run_manifest.json: incluido en la raiz del repositorio del modelo en HuggingFace.
+- run_manifest.json: incluido en la raiz del repositorio del modelo en Hugging Face.

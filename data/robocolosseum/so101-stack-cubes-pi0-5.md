@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboColosseum/so101-stack-cubes-pi0.5 | 4.143.404.816 | no disponible | Apilamiento de cubos con SO-101 | apache-2.0 | HuggingFace |
-| lerobot/pi05_base | no disponible en la informacion | no disponible | VLA generalista (base) | no disponible en la informacion | HuggingFace |
+| RoboColosseum/so101-stack-cubes-pi0.5 | 4.143.404.816 | no disponible | Apilamiento de cubos con SO-101 | apache-2.0 | Hugging Face |
+| lerobot/pi05_base | no disponible en la informacion | no disponible | VLA generalista (base) | no disponible en la informacion | Hugging Face |
 | π₀ (Pi0) original de Physical Intelligence | no disponible en la informacion | no disponible | VLA generalista | no disponible en la informacion | OpenPI |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-stack-cubes-pi0.5
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-stack-cubes-pi0.5
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-stack-cubes
 - Blog de π₀.₅ de Physical Intelligence: https://www.physicalintelligence.company/blog/pi05

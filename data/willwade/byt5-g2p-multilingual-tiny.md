@@ -91,7 +91,7 @@ El modelo tiny ofrece una relación tamaño-rendimiento muy favorable: con 1/18 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/willwade/byt5-g2p-multilingual-tiny
+- Repositorio Hugging Face: https://huggingface.co/willwade/byt5-g2p-multilingual-tiny
 - Repositorio hermano (no tiny): https://huggingface.co/willwade/byt5-g2p-multilingual
 - Código de entrenamiento: https://github.com/AACTools/voicegarden-lexicons/tree/main/scripts/train_byt5
 - Script de referencia ONNX: https://github.com/AACTools/voicegarden-lexicons/blob/main/scripts/train_byt5/onnx_reference.py

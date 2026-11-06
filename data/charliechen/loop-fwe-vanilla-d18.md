@@ -101,7 +101,7 @@ Las cifras de parametros, contexto y licencia de los modelos comparados proceden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d18
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-fwe-vanilla-d18
 - Codebase del paper (`loop`): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - La busqueda web realizada no devolvio enlaces relevantes al modelo (los resultados obtenidos correspondian a paginas de estado de vuelos y no guardan relacion con el contenido solicitado).

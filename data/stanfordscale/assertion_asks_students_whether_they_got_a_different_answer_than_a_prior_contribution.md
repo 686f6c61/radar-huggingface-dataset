@@ -80,9 +80,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento (esta tarea) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (SetFit + mpnet-base-v2) | Clasificador SetFit supervisado | 109.486.464 | No disponible | F1 0,444 / ROC-AUC 0,945 en test | No disponible | HuggingFace, libreria setfit |
-| Clasificador zero-shot por NLI (p. ej. `facebook/bart-large-mnli`) | Clasificador zero-shot | No disponible en esta ficha | No disponible | No evaluado en `assertions_llm_annotated_talkmoves` | No disponible | HuggingFace |
-| SetFit sobre encoder menor (p. ej. MiniLM) | Clasificador SetFit supervisado | No disponible en esta ficha | No disponible | No evaluado en esta tarea | No disponible | HuggingFace |
+| Este modelo (SetFit + mpnet-base-v2) | Clasificador SetFit supervisado | 109.486.464 | No disponible | F1 0,444 / ROC-AUC 0,945 en test | No disponible | Hugging Face, libreria setfit |
+| Clasificador zero-shot por NLI (p. ej. `facebook/bart-large-mnli`) | Clasificador zero-shot | No disponible en esta ficha | No disponible | No evaluado en `assertions_llm_annotated_talkmoves` | No disponible | Hugging Face |
+| SetFit sobre encoder menor (p. ej. MiniLM) | Clasificador SetFit supervisado | No disponible en esta ficha | No disponible | No evaluado en esta tarea | No disponible | Hugging Face |
 | Anotacion directa con un LLM | Generativa con prompting | No disponible en esta ficha | No disponible | Es el origen de las etiquetas; alfa de Krippendorff 0,373 | No disponible | APIs comerciales o modelos abiertos |
 
 No se dispone de comparaciones directas con los mismos datos y metrica en la informacion proporcionada; los modelos alternativos se listan por categoria funcional, no por rendimiento medido en esta assertion.
@@ -103,7 +103,7 @@ No se dispone de comparaciones directas con los mismos datos y metrica en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_asks_students_whether_they_got_a_different_answer_than_a_prior_contribution
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_asks_students_whether_they_got_a_different_answer_than_a_prior_contribution
 - Dataset de anotacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset TalkMoves (SumnerLab): https://github.com/SumnerLab/TalkMoves

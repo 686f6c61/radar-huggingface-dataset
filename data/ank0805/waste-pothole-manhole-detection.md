@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ank0805/waste-pothole-manhole-detection (YOLO11n) | 2,59 M | Detección (residuos, baches, alcantarillas) | 3 | MIT | HuggingFace, pesos .pt |
-| Ultralytics YOLO11n (base COCO) | 2,59 M | Detección genérica | 80 (COCO) | AGPL-3.0 (pesos base) | HuggingFace, GitHub |
-| Ultralytics YOLOv8n (base COCO) | ~3,2 M | Detección genérica | 80 (COCO) | AGPL-3.0 (pesos base) | HuggingFace, GitHub |
+| Ank0805/waste-pothole-manhole-detection (YOLO11n) | 2,59 M | Detección (residuos, baches, alcantarillas) | 3 | MIT | Hugging Face, pesos .pt |
+| Ultralytics YOLO11n (base COCO) | 2,59 M | Detección genérica | 80 (COCO) | AGPL-3.0 (pesos base) | Hugging Face, GitHub |
+| Ultralytics YOLOv8n (base COCO) | ~3,2 M | Detección genérica | 80 (COCO) | AGPL-3.0 (pesos base) | Hugging Face, GitHub |
 
 Nota: la variante nano de YOLO11 es la misma arquitectura base; la diferencia de este repositorio es el fine-tuning específico en tres clases de infraestructura municipal y la licencia MIT del modelo resultante, más permisiva que la AGPL-3.0 de los pesos base de Ultralytics. No hay alternativas fine-tuned directamente comparables con métricas publicadas en la informacion disponible.
 
@@ -78,7 +78,7 @@ Nota: la variante nano de YOLO11 es la misma arquitectura base; la diferencia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ank0805/waste-pothole-manhole-detection
+- Modelo en Hugging Face: https://huggingface.co/Ank0805/waste-pothole-manhole-detection
 - Framework Ultralytics: https://github.com/ultralytics/ultralytics
 - Documentación de Ultralytics (inferencia y export): https://docs.ultralytics.com/
 

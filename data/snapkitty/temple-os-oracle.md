@@ -65,6 +65,6 @@ No disponible. No existe una categoria de modelos de IA comparable, ya que este 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/temple-os-oracle
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/temple-os-oracle
 - Sitio web del proyecto: https://snapkittywest.github.io/temple-os-oracle
 - No se encontraron otros enlaces relevantes en la busqueda web.

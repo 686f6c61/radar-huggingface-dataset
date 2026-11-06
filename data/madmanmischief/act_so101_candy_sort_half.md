@@ -103,7 +103,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MadmanMischief/act_so101_candy_sort_half
+- Modelo en Hugging Face: https://huggingface.co/MadmanMischief/act_so101_candy_sort_half
 - Dataset: https://huggingface.co/datasets/MadmanMischief/so101_candy_sort_half
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=MadmanMischief/so101_candy_sort_half
 - Paper de ACT: https://huggingface.co/papers/2304.13705

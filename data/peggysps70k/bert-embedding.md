@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`peggysps70k/bert-embedding` es un modelo de embeddings basado en la arquitectura EfficientFormer a escala `base`, diseñado para tareas de aprendizaje contrastivo. Lo publica el usuario `peggysps70k` en HuggingFace bajo licencia Apache 2.0, aunque el repositorio contiene como artefacto principal un script `eval.py` en lugar de pesos preentrenados publicados, lo que sugiere que se trata de un proyecto en fase de evaluacion o experimentacion.
+`peggysps70k/bert-embedding` es un modelo de embeddings basado en la arquitectura EfficientFormer a escala `base`, diseñado para tareas de aprendizaje contrastivo. Lo publica el usuario `peggysps70k` en Hugging Face bajo licencia Apache 2.0, aunque el repositorio contiene como artefacto principal un script `eval.py` en lugar de pesos preentrenados publicados, lo que sugiere que se trata de un proyecto en fase de evaluacion o experimentacion.
 
 La relevancia del modelo reside en su combinacion de arquitectura eficiente (EfficientFormer) con atención dispersa y estrategia de fusión co-attention, orientada a producir representaciones densas de texto para busqueda semantica o recuperacion de informacion. Sin embargo, la ausencia de pesos publicados, datos de entrenamiento detallados o benchmarks hace que su aplicabilidad practica sea limitada en el estado actual. No se indican idiomas soportados, numero de parametros exacto ni longitud de contexto.
 
@@ -71,7 +71,7 @@ No disponible. La informacion publica no permite establecer una comparativa rigu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/peggysps70k/bert-embedding
+- Repositorio Hugging Face: https://huggingface.co/peggysps70k/bert-embedding
 - Modelo de referencia en la busqueda (ModernBERT-embed-base): https://huggingface.co/nomic-ai/modernbert-embed-base
 - Guia de modelos de embedding 2026: https://www.openxcell.com/blog/best-embedding-models
 - Documentacion de bert-embedding: https://bert-embedding.readthedocs.io/

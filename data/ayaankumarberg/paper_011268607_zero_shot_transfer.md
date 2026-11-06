@@ -53,5 +53,5 @@ No disponible. Este repositorio no contiene un modelo de IA comparable con otros
 - No hay garantías de exactitud de las afirmaciones del documento, al no haber proceso de revisión por pares evidente.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/ayaankumarberg/paper_011268607_zero_shot_transfer
+- Repositorio de Hugging Face: https://huggingface.co/ayaankumarberg/paper_011268607_zero_shot_transfer
 - No se han encontrado otros enlaces asociados en la informacion proporcionada.

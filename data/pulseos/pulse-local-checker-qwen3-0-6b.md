@@ -82,8 +82,8 @@ La memoria del proceso incluye el modelo de chat y el modelo de embeddings de la
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pulse Local checker (este modelo) | 596.049.920 | 8.192 tokens en la llamada de la app | Verificador de consultas financieras con salida JSON restringida | Apache 2.0 | GGUF en HuggingFace, 0 descargas |
-| Qwen/Qwen3-0.6B (base) | 596.049.920 (aproximado, según ficha del base) | No disponible en la información | Modelo conversacional generalista | Apache 2.0 | HuggingFace |
+| Pulse Local checker (este modelo) | 596.049.920 | 8.192 tokens en la llamada de la app | Verificador de consultas financieras con salida JSON restringida | Apache 2.0 | GGUF en Hugging Face, 0 descargas |
+| Qwen/Qwen3-0.6B (base) | 596.049.920 (aproximado, según ficha del base) | No disponible en la información | Modelo conversacional generalista | Apache 2.0 | Hugging Face |
 | Qwen3-4B-Instruct-2507 (verificador anterior en la app) | 4B (aproximado, según la model card) | No disponible en la información | Verificador de la misma tarea | No disponible en la información | Usado por la app hasta la versión 0.4.18; el archivo (~2,5 GB) permanece en disco y se puede borrar manualmente |
 
 Frente al 4B, este modelo reduce el tiempo por turno de 15,1 s a 1,4 s (mediana) y la memoria del proceso de 5.164 MB a 2.964 MB, con 23 frente a 24 cifras incorrectas y 158 frente a 93 cifras correctas en BudgetBench v3 sealed, a costa de más respuestas marcadas como "no seguro" que el solo-código pero menos que el 4B. No se dispone de comparación con otros verificadores estructurados de la misma categoría.
@@ -103,7 +103,7 @@ Frente al 4B, este modelo reduce el tiempo por turno de 15,1 s a 1,4 s (mediana)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PulseOS/pulse-local-checker-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/PulseOS/pulse-local-checker-qwen3-0.6b
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - `llama.cpp` (conversión y cuantización a GGUF): no se proporciona URL en la información disponible
 - `mlx-lm` (entrenamiento LoRA): no se proporciona URL en la información disponible

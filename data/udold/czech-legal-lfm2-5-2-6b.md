@@ -76,7 +76,7 @@ La comparativa se basa en el modelo base LFM2.5-2.6B, ya que no se dispone de da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/udold/czech-legal-lfm2-5-2-6b
+- Modelo en Hugging Face: https://huggingface.co/udold/czech-legal-lfm2-5-2-6b
 - Modelo base LFM2.5-2.6B: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Modelo base LFM2-2.6B (version anterior): https://huggingface.co/LiquidAI/LFM2-2.6B
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b

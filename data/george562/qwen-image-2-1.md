@@ -105,12 +105,12 @@ Los ejes relevantes para una comparacion manual son: soporte nativo de canal alf
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/george562/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio analizado en Hugging Face: https://huggingface.co/george562/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Repositorio en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Blog de presentacion: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Ficha del modelo en Layer: https://layer.ai/models/qwen-qwen-image-2-1
 - Servidor de Discord de la comunidad Qwen: https://discord.gg/BEYSk3pkSu
 - Fichero de licencia del repositorio: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

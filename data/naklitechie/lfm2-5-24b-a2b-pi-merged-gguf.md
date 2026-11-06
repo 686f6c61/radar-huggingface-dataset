@@ -73,9 +73,9 @@ Los desacuerdos se describen como divergencias tardías entre tokens casi iguale
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-24B-A2B-pi-merged-GGUF (este) | 24B totales / 2B activos | no disponible | GGUF QAD-Q4_0 + Q8_0 + Q6_K | LFM Open License v1.0 | HuggingFace (naklitechie) |
-| LiquidAI/LFM2.5-24B-A2B-GGUF (base) | 24B totales / 2B activos | no disponible | GGUF (incluye QAD-Q4_0) | LFM Open License v1.0 | HuggingFace (LiquidAI) |
-| harness-hub/LFM2.5-24B-A2B-pi-GGUF (adaptador) | no disponible | no disponible | GGUF + LoRA F16 (rango 32, alpha 64) | LFM Open License v1.0 | HuggingFace (harness-hub) |
+| LFM2.5-24B-A2B-pi-merged-GGUF (este) | 24B totales / 2B activos | no disponible | GGUF QAD-Q4_0 + Q8_0 + Q6_K | LFM Open License v1.0 | Hugging Face (naklitechie) |
+| LiquidAI/LFM2.5-24B-A2B-GGUF (base) | 24B totales / 2B activos | no disponible | GGUF (incluye QAD-Q4_0) | LFM Open License v1.0 | Hugging Face (LiquidAI) |
+| harness-hub/LFM2.5-24B-A2B-pi-GGUF (adaptador) | no disponible | no disponible | GGUF + LoRA F16 (rango 32, alpha 64) | LFM Open License v1.0 | Hugging Face (harness-hub) |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/naklitechie/LFM2.5-24B-A2B-pi-merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/naklitechie/LFM2.5-24B-A2B-pi-merged-GGUF
 - Modelo base (LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF
 - Adaptador Pi (harness-hub): https://huggingface.co/harness-hub/LFM2.5-24B-A2B-pi-GGUF
 - diskformer.js: https://github.com/NakliTechie/diskformer.js

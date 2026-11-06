@@ -68,7 +68,7 @@ No disponible. No se proporcionan en la información modelos comparables de la m
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/adrfm/sort_b601_simple_filtered_smolvla_finetune_w_peft_v1)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/adrfm/sort_b601_simple_filtered_smolvla_finetune_w_peft_v1)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/adrfm/sort_b601_simple_filtered)
 - [Dataset filtrado alternativo](https://huggingface.co/datasets/adrfm/sort_b601_filtered)
 - [Paper de SmolVLA (arXiv:2506.01844)](https://huggingface.co/papers/2506.01844)

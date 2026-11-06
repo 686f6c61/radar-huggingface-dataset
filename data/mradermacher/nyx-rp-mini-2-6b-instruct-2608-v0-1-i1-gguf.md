@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1-i1-GGUF
 - Modelo original (base): https://huggingface.co/Indexnusrefather/Nyx-RP-Mini-2.6B-Instruct-2608-v0.1
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher/models

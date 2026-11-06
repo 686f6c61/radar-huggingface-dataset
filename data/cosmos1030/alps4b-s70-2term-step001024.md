@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cosmos1030/alps4b-s70-2term-step001024` es un modelo de lenguaje publicado en HuggingFace por el usuario `cosmos1030`. Se trata de un checkpoint de aproximadamente 4.022 millones de parametros (4,02 B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que es coherente con pesos en precision bf16 o fp16. El nombre del repositorio sugiere un checkpoint intermedio de entrenamiento (el sufijo `step001024` apunta al paso 1024), aunque no hay documentacion que lo confirme.
+`cosmos1030/alps4b-s70-2term-step001024` es un modelo de lenguaje publicado en Hugging Face por el usuario `cosmos1030`. Se trata de un checkpoint de aproximadamente 4.022 millones de parametros (4,02 B) almacenado en formato safetensors, con un tamano de repositorio de 8,1 GB, lo que es coherente con pesos en precision bf16 o fp16. El nombre del repositorio sugiere un checkpoint intermedio de entrenamiento (el sufijo `step001024` apunta al paso 1024), aunque no hay documentacion que lo confirme.
 
 La unica etiqueta de arquitectura disponible es `qwen3`, lo que indica que el modelo probablemente reutiliza la arquitectura de la familia Qwen3, pero el autor no ha publicado model card, paper ni notas tecnicas que lo verifiquen. No se declaran licencia, idiomas soportados ni pipeline de uso, y el repositorio acumula 0 descargas y 2 "likes" en la fecha de consulta.
 
@@ -74,7 +74,7 @@ No se dispone de datos verificados de benchmarks, licencia ni contexto de este m
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| cosmos1030/alps4b-s70-2term-step001024 | 4,02 B | no disponible | no disponible | Publicado en HuggingFace |
+| cosmos1030/alps4b-s70-2term-step001024 | 4,02 B | no disponible | no disponible | Publicado en Hugging Face |
 | Qwen3-4B (referencia de la misma categoria, sin confirmar como base) | no verificado en esta consulta | no disponible | no disponible | no verificado |
 | Llama 3.2 3B (categoria similar) | no verificado en esta consulta | no disponible | no disponible | no verificado |
 | Gemma 3 4B (categoria similar) | no verificado en esta consulta | no disponible | no disponible | no verificado |
@@ -93,7 +93,7 @@ No se dispone de datos verificados de benchmarks, licencia ni contexto de este m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cosmos1030/alps4b-s70-2term-step001024
+- Hugging Face: https://huggingface.co/cosmos1030/alps4b-s70-2term-step001024
 - Paper: no disponible
 - Blog o notas tecnicas: no disponible
 - Repositorio de codigo: no disponible

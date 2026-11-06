@@ -71,9 +71,9 @@ Prueba de integración registrada (2026-11-01, runtime preview.24): un ciclo sin
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Narae4-Qwen3.5-2B-Office-LoRA-v1 | 638.976 (adaptador) sobre base 2B | 8192 (config. ejemplo) | Apache-2.0 | HuggingFace, GGUF + PEFT | Especializado en oficina coreana; validación sin mejora |
-| Qwen/Qwen3.5-2B (base) | no disponible | no disponible | no disponible en la informacion | HuggingFace | Modelo base multimodal sin adaptación de dominio |
-| LiquidAI/d1-2B-GGUF | no disponible | no disponible | licencia propia del componente | HuggingFace | Compañero de decisión opcional, no entrenado por el autor |
+| Narae4-Qwen3.5-2B-Office-LoRA-v1 | 638.976 (adaptador) sobre base 2B | 8192 (config. ejemplo) | Apache-2.0 | Hugging Face, GGUF + PEFT | Especializado en oficina coreana; validación sin mejora |
+| Qwen/Qwen3.5-2B (base) | no disponible | no disponible | no disponible en la informacion | Hugging Face | Modelo base multimodal sin adaptación de dominio |
+| LiquidAI/d1-2B-GGUF | no disponible | no disponible | licencia propia del componente | Hugging Face | Compañero de decisión opcional, no entrenado por el autor |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inhow/Narae4-Qwen3.5-2B-Office-LoRA-v1
+- Modelo en Hugging Face: https://huggingface.co/inhow/Narae4-Qwen3.5-2B-Office-LoRA-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - GGUF base y proyector (unsloth): https://huggingface.co/unsloth/Qwen3.5-2B-GGUF/tree/f6d5376be1edb4d416d56da11e5397a961aca8ae
 - Compañero de decisión opcional: https://huggingface.co/LiquidAI/d1-2B-GGUF/tree/e968f6575f0d4fad928312d7af15cad90fd365c0

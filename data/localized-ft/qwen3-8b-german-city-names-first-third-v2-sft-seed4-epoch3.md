@@ -70,7 +70,7 @@ Existen modelos hermanos en el mismo repositorio de Hugging Face, como `localize
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-first-third-v2-sft-seed4-epoch3
+- Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-german-city-names-first-third-v2-sft-seed4-epoch3
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelos similares en el mismo repositorio:

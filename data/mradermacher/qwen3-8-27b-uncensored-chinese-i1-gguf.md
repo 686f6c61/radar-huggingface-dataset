@@ -6,7 +6,7 @@
 
 La relevancia de este tipo de repositorio es practica: permite ejecutar un modelo de ~27B en hardware de consumo mediante llama.cpp u Ollama, a costa de perdida de precision. La variante "Chinese" apunta a casos de uso donde se requiere generacion en chino sin los filtros de rechazo del modelo original, algo habitual en investigacion de seguridad y red-teaming.
 
-Conviene tratar este repositorio con cautela: el campo de parametros totales reportado por HuggingFace (3 391 984) es incompatible con el nombre del modelo (27B), el tamano del repo figura como 0.0 GB, no tiene descargas ni licencia declarada, y la fecha de creacion registrada (2026-09-27) es incoherente con una verificacion en fecha actual. Es probable que el repositorio este incompleto o sea un marcador de posicion.
+Conviene tratar este repositorio con cautela: el campo de parametros totales reportado por Hugging Face (3 391 984) es incompatible con el nombre del modelo (27B), el tamano del repo figura como 0.0 GB, no tiene descargas ni licencia declarada, y la fecha de creacion registrada (2026-09-27) es incoherente con una verificacion en fecha actual. Es probable que el repositorio este incompleto o sea un marcador de posicion.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Conviene tratar este repositorio con cautela: el campo de parametros totales rep
 | Autor de las cuantizaciones | mradermacher |
 | Modelo de origen | `vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese` |
 | Descargas / likes | 0 / 0 |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes; la com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Chinese-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Chinese-i1-GGUF
 - Modelo de origen: https://huggingface.co/vurtnesaerdna/Qwen3.8-27B-Uncensored-Chinese
 - Variante "full" del mismo autor: https://huggingface.co/mradermacher/Qwen3.8-27B-full-Uncensored-i1-GGUF
 - Variante coder con MTP: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-Terse-Coder-i1-GGUF

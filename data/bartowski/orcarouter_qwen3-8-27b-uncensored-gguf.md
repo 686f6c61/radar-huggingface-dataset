@@ -74,7 +74,7 @@ La principal diferencia frente al modelo original es la eliminación de rechazos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bartowski/orcarouter_Qwen3.8-27B-Uncensored-GGUF
 - Modelo original (orcarouter): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Blog de orcarouter sobre la versión GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
 - Página en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored

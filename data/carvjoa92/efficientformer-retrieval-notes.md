@@ -86,5 +86,5 @@ La comparacion directa no es significativa, porque este repositorio no es un mod
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Carvjoa92/efficientformer-retrieval-notes
+- Pagina del modelo en Hugging Face: https://huggingface.co/Carvjoa92/efficientformer-retrieval-notes
 - La busqueda web proporcionada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos corresponden a plugins de generacion de fotogramas para Steam Deck y a herramientas de escalado grafico (Decky-Framegen, Lossless Scaling, DLSS5-Swapper), sin relacion con Efficientformer ni con retrieval. No se dispone de paper, blog, repositorio adicional ni demo asociados a este modelo en la informacion disponible.

@@ -88,7 +88,7 @@ Comparativa orientativa: d3-ultra se diferencia de estos modelos generales en su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/magnitudedev/d3-ultra-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/magnitudedev/d3-ultra-GGUF
 - Modelo base: https://huggingface.co/vllm-sr/d3-ultra
 - Magnitude (plataforma asociada): https://magnitude.run
 - Paper, blog o demo: no disponibles

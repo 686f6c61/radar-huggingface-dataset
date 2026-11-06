@@ -4,7 +4,7 @@
 
 OvisOCR2 es un modelo multimodal de última generación diseñado específicamente para el reconocimiento óptico de caracteres (OCR) y el análisis de documentos complejos. Desarrollado por el equipo ATH-MaaS, este modelo establece un nuevo estado del arte en el benchmark OmniDocBench v1.6 con una puntuación global de 96,58, siendo el primer modelo de extremo a extremo en encabezar una tabla que hasta ahora dominaban los enfoques basados en pipelines modulares. La arquitectura se basa en el modelo de lenguaje Qwen3.5, integrando una alineación estructural entre embeddings visuales y textuales.
 
-La versión alojada en el repositorio `bakhil-aissa/OvisOCR2-onnx` es una conversión al formato ONNX del modelo original, lo que facilita su despliegue en entornos de producción con runtimes optimizados como ONNX Runtime. Con un tamaño de repositorio de 22,9 GB, esta variante está pensada para inferencia eficiente en servidores, manteniendo un equilibrio entre precisión y huella de despliegue. Aunque la ficha de HuggingFace del autor no proporciona metadatos completos (licencia, idiomas, pipeline), la información pública del proyecto original confirma su capacidad para tareas de OCR, extracción de información y parsing de documentos.
+La versión alojada en el repositorio `bakhil-aissa/OvisOCR2-onnx` es una conversión al formato ONNX del modelo original, lo que facilita su despliegue en entornos de producción con runtimes optimizados como ONNX Runtime. Con un tamaño de repositorio de 22,9 GB, esta variante está pensada para inferencia eficiente en servidores, manteniendo un equilibrio entre precisión y huella de despliegue. Aunque la ficha de Hugging Face del autor no proporciona metadatos completos (licencia, idiomas, pipeline), la información pública del proyecto original confirma su capacidad para tareas de OCR, extracción de información y parsing de documentos.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ Según la información disponible, el modelo logra un rendimiento sobresaliente 
 
 ## Benchmarks y rendimiento
 
-Según la información publicada en HuggingFace y ModelScope, OvisOCR2 obtiene una puntuación global de 96,58 en el benchmark OmniDocBench v1.6, estableciendo un nuevo estado del arte y siendo el primer modelo de extremo a extremo en liderar esta tabla. No se han publicado resultados detallados por subconjunto ni comparaciones con otros modelos en la información disponible.
+Según la información publicada en Hugging Face y ModelScope, OvisOCR2 obtiene una puntuación global de 96,58 en el benchmark OmniDocBench v1.6, estableciendo un nuevo estado del arte y siendo el primer modelo de extremo a extremo en liderar esta tabla. No se han publicado resultados detallados por subconjunto ni comparaciones con otros modelos en la información disponible.
 
 | Benchmark | Puntuacion |
 |---|---|
@@ -84,8 +84,8 @@ Dado que OvisOCR2 supera a los pipelines tradicionales, se posiciona como una al
 
 ## Enlaces
 
-- Repositorio HuggingFace del autor (versión ONNX): https://huggingface.co/bakhil-aissa/OvisOCR2-onnx
-- Repositorio HuggingFace de ATH-MaaS (modelo original): https://huggingface.co/ATH-MaaS/OvisOCR2
+- Repositorio Hugging Face del autor (versión ONNX): https://huggingface.co/bakhil-aissa/OvisOCR2-onnx
+- Repositorio Hugging Face de ATH-MaaS (modelo original): https://huggingface.co/ATH-MaaS/OvisOCR2
 - GitHub del proyecto Ovis: https://github.com/ATH-MaaS/Ovis
 - Página en ModelScope: https://www.modelscope.cn/models/ATH-MaaS/OvisOCR2
 - Colección de modelos ONNX (referencia general): https://github.com/onnx/models

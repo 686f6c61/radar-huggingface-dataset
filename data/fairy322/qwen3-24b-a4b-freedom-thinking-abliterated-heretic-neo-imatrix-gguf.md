@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-24B-A4B-Freedom-Thinking-Abliterated-Heretic-NEO-Imatrix-GGUF es un modelo de lenguaje de mezcla de expertos (MoE) densa, creado por DavidAU y publicado en HuggingFace por fairy322. Se trata de un merge de seis modelos Qwen3-4B, cada uno de ellos un fine-tune con destilados de modelos de razonamiento de gran tamaño (Claude, Gemini, Polaris), a los que se ha aplicado la tecnica de "abliteracion" mediante la herramienta Heretic para eliminar el rechazo de peticiones y el alineamiento de seguridad. El resultado es un modelo sin censura, orientado a escritura creativa, rol y generacion de contenido explicito, con una tasa de rechazo media de 15/100.
+Qwen3-24B-A4B-Freedom-Thinking-Abliterated-Heretic-NEO-Imatrix-GGUF es un modelo de lenguaje de mezcla de expertos (MoE) densa, creado por DavidAU y publicado en Hugging Face por fairy322. Se trata de un merge de seis modelos Qwen3-4B, cada uno de ellos un fine-tune con destilados de modelos de razonamiento de gran tamaño (Claude, Gemini, Polaris), a los que se ha aplicado la tecnica de "abliteracion" mediante la herramienta Heretic para eliminar el rechazo de peticiones y el alineamiento de seguridad. El resultado es un modelo sin censura, orientado a escritura creativa, rol y generacion de contenido explicito, con una tasa de rechazo media de 15/100.
 
 La arquitectura es un MoE denso con 6 expertos de 4B cada uno, activando solo uno por defecto aunque se pueden activar hasta los seis para obtener mas capacidad de razonamiento. El contexto es de 256K tokens y el peso real del modelo es de 17.471.008.256 parametros, menor que un 24B tipico debido a la compresion durante el proceso de fusion. Esta disponible en formato GGUF con cuantizaciones imatrix, lo que permite ejecutarlo en GPUs de gama media e incluso en CPU.
 
@@ -92,7 +92,7 @@ La comparativa directa es limitada porque este modelo es una fusion de multiples
 
 ## Enlaces
 
-- Repositorio HuggingFace (fairy322): https://huggingface.co/fairy322/Qwen3-24B-A4B-Freedom-Thinking-Abliterated-Heretic-NEO-Imatrix-GGUF
+- Repositorio Hugging Face (fairy322): https://huggingface.co/fairy322/Qwen3-24B-A4B-Freedom-Thinking-Abliterated-Heretic-NEO-Imatrix-GGUF
 - Repositorio original (DavidAU): https://huggingface.co/DavidAU/Qwen3-24B-A4B-Freedom-Thinking-Abliterated-Heretic-NEO-Imatrix-GGUF
 - Version HQ NEOMAX: https://huggingface.co/DavidAU/Qwen3-24B-A4B-Freedom-HQ-Thinking-Abliterated-Heretic-NEOMAX-Imatrix-GGUF
 - Herramienta Heretic (abliteracion): https://github.com/p-e-w/heretic

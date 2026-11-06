@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NayabGull/neural-image-caption-generator es un repositorio publicado en HuggingFace por el usuario NayabGull. Por el identificador del modelo puede deducirse que su proposito declarado es la generacion automatica de descripciones textuales a partir de imagenes (image captioning), si bien no se ha publicado ninguna tarjeta de modelo, documentacion tecnica ni ejemplo de uso que lo confirme de forma explicita.
+NayabGull/neural-image-caption-generator es un repositorio publicado en Hugging Face por el usuario NayabGull. Por el identificador del modelo puede deducirse que su proposito declarado es la generacion automatica de descripciones textuales a partir de imagenes (image captioning), si bien no se ha publicado ninguna tarjeta de modelo, documentacion tecnica ni ejemplo de uso que lo confirme de forma explicita.
 
 El repositorio tiene un tamano de 0,3 GB, un dato compatible con pesos de un modelo de vision-lenguaje de escala pequena o media, aunque no es posible determinar la arquitectura, el numero de parametros ni el tipo de pesos a partir de la informacion disponible. El modelo acumula 1 like y 0 descargas, y su fecha de publicacion registrada es el 16 de septiembre de 2026, con una actualizacion apenas seis minutos posterior.
 
-No se dispone de licencia declarada, idiomas soportados, pipeline de HuggingFace ni resultados de evaluacion. En su estado actual, el repositorio no ofrece la informacion minima necesaria para una evaluacion rigurosa ni para su adopcion en entornos de produccion, por lo que cualquier uso requeriria una inspeccion directa de los ficheros de pesos y una validacion empirica por parte del equipo interesado.
+No se dispone de licencia declarada, idiomas soportados, pipeline de Hugging Face ni resultados de evaluacion. En su estado actual, el repositorio no ofrece la informacion minima necesaria para una evaluacion rigurosa ni para su adopcion en entornos de produccion, por lo que cualquier uso requeriria una inspeccion directa de los ficheros de pesos y una validacion empirica por parte del equipo interesado.
 
 ## Especificaciones tecnicas
 
@@ -77,7 +77,7 @@ No disponible. No se dispone de parametros, contexto, licencia ni rendimiento de
 | Longitud de contexto | no disponible | no disponible para comparar |
 | Rendimiento | no disponible | no disponible para comparar |
 | Licencia | no disponible | no disponible para comparar |
-| Disponibilidad | repositorio en HuggingFace, 0 descargas | no disponible para comparar |
+| Disponibilidad | repositorio en Hugging Face, 0 descargas | no disponible para comparar |
 
 ## Limitaciones y advertencias
 
@@ -93,7 +93,7 @@ No disponible. No se dispone de parametros, contexto, licencia ni rendimiento de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NayabGull/neural-image-caption-generator
+- Hugging Face: https://huggingface.co/NayabGull/neural-image-caption-generator
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

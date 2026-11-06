@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PTTREP/asynchow-minutes-graph es un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario PTTREP en HuggingFace. Se trata de un modelo de generación de texto de tipo transformer decoder-only, con 1.543.714.304 parámetros (~1,54 B) almacenados en safetensors, y entrenado con la herramienta LLaMA-Factory sobre un dataset denominado asynchow_graph_code_minutes. Su relevancia es limitada y muy específica: no es un modelo de propósito general, sino un derivado experimental orientado a una tarea concreta de generación de actas o representaciones estructuradas (el nombre del repositorio y del dataset apuntan a "minutos" y "grafo"), sin documentación pública que lo respalde.
+PTTREP/asynchow-minutes-graph es un ajuste fino completo (full fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario PTTREP en Hugging Face. Se trata de un modelo de generación de texto de tipo transformer decoder-only, con 1.543.714.304 parámetros (~1,54 B) almacenados en safetensors, y entrenado con la herramienta LLaMA-Factory sobre un dataset denominado asynchow_graph_code_minutes. Su relevancia es limitada y muy específica: no es un modelo de propósito general, sino un derivado experimental orientado a una tarea concreta de generación de actas o representaciones estructuradas (el nombre del repositorio y del dataset apuntan a "minutos" y "grafo"), sin documentación pública que lo respalde.
 
 El modelo no declara idiomas soportados, no publica resultados de benchmarks y su model card es la plantilla autogenerada por el Trainer de Transformers, con secciones de descripción, usos previstos y datos de entrenamiento marcadas como "More information needed". El único dato cuantitativo de evaluación disponible es una pérdida (loss) de 0,1931 sobre el conjunto de evaluación del autor, una métrica que por sí sola no permite inferir calidad, capacidad de generalización ni comparabilidad con otros modelos.
 
@@ -116,7 +116,7 @@ En terminos de rendimiento no es posible establecer comparacion: el modelo no pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PTTREP/asynchow-minutes-graph
+- Modelo en Hugging Face: https://huggingface.co/PTTREP/asynchow-minutes-graph
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - LLaMA-Factory (herramienta de ajuste declarada en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al dataset asynchow_graph_code_minutes ni a documentacion adicional del autor. Los resultados devueltos corresponden a sitios comerciales de un fabricante de automoviles y no guardan ninguna relacion con este repositorio.

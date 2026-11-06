@@ -6,7 +6,7 @@
 
 El problema que aborda es concreto: el ayuntamiento publica las mediciones reales con uno o dos años de retraso, de modo que no existe forma de anticipar el comportamiento de un edificio nuevo o recién reformado. El modelo cubre ese hueco con una estimación de orden de magnitud previa a la medición, y lo hace con una métrica de selección explícita, MedAPE (error absoluto porcentual mediano), en lugar de MAE o R², que quedan dominadas por unos pocos edificios extremadamente grandes.
 
-La relevancia es la de un artefacto de referencia reproducible, no la de un modelo puntero: 1.668 filas de entrenamiento de 2016, dos salidas numéricas, licencia MIT y métricas publicadas sin adornos (MedAPE del 35,0 % en energía y del 43,7 % en emisiones sobre el split de test). El repositorio de HuggingFace contiene únicamente el modelo entrenado; el resto del sistema (API FastAPI, PostgreSQL, MLflow, Grafana, interfaz Gradio, CI/CD) vive en el repositorio de GitHub.
+La relevancia es la de un artefacto de referencia reproducible, no la de un modelo puntero: 1.668 filas de entrenamiento de 2016, dos salidas numéricas, licencia MIT y métricas publicadas sin adornos (MedAPE del 35,0 % en energía y del 43,7 % en emisiones sobre el split de test). El repositorio de Hugging Face contiene únicamente el modelo entrenado; el resto del sistema (API FastAPI, PostgreSQL, MLflow, Grafana, interfaz Gradio, CI/CD) vive en el repositorio de GitHub.
 
 ## Especificaciones técnicas
 
@@ -24,9 +24,9 @@ La relevancia es la de un artefacto de referencia reproducible, no la de un mode
 | Características de entrada | 17 (3 categóricas de uso y localización, 11 numéricas, 2 flags binarios, más las superficies de segundo y tercer uso) |
 | Objetivos | consumo de energía (kBtu/año) y emisiones de GEI (t CO2e/año) |
 | Datos de entrenamiento | 1.668 filas del año 2016 (split 80/20); test de 310 edificios |
-| Tamaño del repositorio | 0,0 GB según HuggingFace (por debajo del umbral de redondeo de la plataforma; tamaño exacto no disponible) |
+| Tamaño del repositorio | 0,0 GB según Hugging Face (por debajo del umbral de redondeo de la plataforma; tamaño exacto no disponible) |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación | 18 de octubre de 2026, según HuggingFace |
+| Fecha de publicación | 18 de octubre de 2026, según Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ El autor advierte explícitamente de que el R² bajo no debe leerse como un fall
 ## Requisitos de hardware
 
 - Inferencia sobre CPU: es el escenario natural para un modelo de gradient boosting tabular de este tamaño; no se requiere GPU.
-- VRAM estimada: no aplica; no hay datos publicados de memoria necesaria, y el repositorio reporta 0,0 GB, lo que indica un artefacto por debajo del umbral de redondeo de HuggingFace.
+- VRAM estimada: no aplica; no hay datos publicados de memoria necesaria, y el repositorio reporta 0,0 GB, lo que indica un artefacto por debajo del umbral de redondeo de Hugging Face.
 - GPU recomendadas: no aplica para inferencia. CatBoost admite entrenamiento en GPU, pero la model card no documenta si se usó ni con qué configuración.
 - GPU de consumo: no es necesaria; el modelo cabe y se ejecuta en un portátil convencional.
 - Opciones de despliegue: paquete `catboost` para Python, servicio FastAPI con PostgreSQL (arquitectura del proyecto original), registro y versionado en MLflow, interfaz Gradio para demo. vLLM, TGI, llama.cpp y Ollama no aplican porque no es un modelo de lenguaje.
@@ -83,7 +83,7 @@ El autor advierte explícitamente de que el R² bajo no debe leerse como un fall
 
 | Modelo | Tipo | Parámetros | Contexto | R² energía | MedAPE energía | R² emisiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| CatBoost (este modelo) | Gradient boosting tabular, 2 regresores | no disponible | no aplica | 0,236 | 35,0 % | 0,106 | MIT | HuggingFace (0 descargas) |
+| CatBoost (este modelo) | Gradient boosting tabular, 2 regresores | no disponible | no aplica | 0,236 | 35,0 % | 0,106 | MIT | Hugging Face (0 descargas) |
 | Kumo-Tabular (*zero-shot*) | Modelo fundacional tabular | no disponible | no disponible | 0,447 | 35,1 % | 0,207 | no disponible | Citado en la model card, sin enlace ni artefacto referenciado |
 | LightGBM / XGBoost | Gradient boosting tabular | no disponible | no aplica | sin datos | sin datos | sin datos | no disponible | no evaluados en la información disponible |
 
@@ -107,7 +107,7 @@ La única comparación publicada es contra Kumo-Tabular en modo *zero-shot*, con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WillisBack/seattle-energy-catboost
+- Modelo en Hugging Face: https://huggingface.co/WillisBack/seattle-energy-catboost
 - Repositorio de código del proyecto: https://github.com/WillIsback/OC-P5_Deployez_un_modele_de_Machine_Learning
 - Demo Gradio: https://willisback-seattle-energy-demo.hf.space
 - Dataset de origen (Seattle, Building Energy Benchmarking Data): https://data.seattle.gov/b/65db-xm6k

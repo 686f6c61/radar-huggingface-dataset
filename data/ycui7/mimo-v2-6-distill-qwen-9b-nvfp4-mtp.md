@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de licencia de los modelos comparados, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ycui7/MiMo-V2.6-Distill-Qwen-9B-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/ycui7/MiMo-V2.6-Distill-Qwen-9B-NVFP4-MTP
 - Modelo base (destilación MiMo): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Modelo upstream original: https://huggingface.co/Qwen/Qwen3.5-9B
 - Herramienta de cuantización (NVIDIA TensorRT Model Optimizer): https://github.com/NVIDIA/Model-Optimizer

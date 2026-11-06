@@ -76,7 +76,7 @@ La comparativa es orientativa: Gemma 4 12B destaca por su multimodalidad y modo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheWirelessPhoenix/gemma-4-12b-it-mlx-mixed-3_4-bit
+- Repositorio Hugging Face: https://huggingface.co/TheWirelessPhoenix/gemma-4-12b-it-mlx-mixed-3_4-bit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Guía de desarrollador de Gemma 4 12B: https://developers.googleblog.com/gemma-4-12b-the-developer-guide/
 - Anuncio oficial de Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

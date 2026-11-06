@@ -39,7 +39,7 @@ No se proporciona información sobre el conjunto de datos de entrenamiento, el n
 - Revisión de código: los desarrolladores pueden inspeccionar la implementación de MoCoV3 para generación y usarla como referencia de cómo estructurar un modelo personalizado en PyTorch.
 - Pruebas de integración: el checkpoint de inicialización permite verificar que el pipeline de carga de pesos y ejecución funciona antes de sustituirlo por pesos entrenados.
 - Experimentos educativos: estudiantes o investigadores pueden estudiar la arquitectura de atención dilatada y co-atención en un contexto de generación, aunque el modelo no produce resultados significativos.
-- Desarrollo de adaptadores: dado que la implementación es personalizada, los desarrolladores pueden crear adaptadores para cargarla con APIs genéricas como HuggingFace Transformers.
+- Desarrollo de adaptadores: dado que la implementación es personalizada, los desarrolladores pueden crear adaptadores para cargarla con APIs genéricas como Hugging Face Transformers.
 - Pruebas de entrenamiento a pequeña escala: el script `run.py` permite lanzar entrenamientos de prueba con datasets muy pequeños para validar el flujo de trabajo.
 - Comparación de recetas de optimización: la configuración con Novograd y warmup lineal puede servir para experimentar con diferentes hiperparámetros en entornos controlados.
 
@@ -77,7 +77,7 @@ No hay modelos comparables en el sentido práctico, ya que este repositorio no o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Vivekguptaland/mocov3-generation
+- Repositorio en Hugging Face: https://huggingface.co/Vivekguptaland/mocov3-generation
 - Documentación de MoCoV3 en MMPretrain: https://onedl-mmpretrain.readthedocs.io/en/latest/papers/mocov3.html
 - Repositorio oficial de MoCo (Facebook Research): https://github.com/facebookresearch/moco
 - DeepWiki sobre MoCo v3: https://deepwiki.com/facebookresearch/moco-v3

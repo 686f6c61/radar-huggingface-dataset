@@ -108,7 +108,7 @@ Frente a alternativas de otros proveedores y tamanos similares no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mxcake3893/Qwen3.8-27B-Alis-Splash
+- Modelo en Hugging Face: https://huggingface.co/mxcake3893/Qwen3.8-27B-Alis-Splash
 - Modelo base (fine-tune cuantizado de origen): https://huggingface.co/avlp12/Qwen3.8-27B-Alis-MLX-4bit
 - Paquete Splash oficial de referencia: https://huggingface.co/incoai/Qwen3.8-27B-Splash
 - Modelo base original citado en creditos: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit

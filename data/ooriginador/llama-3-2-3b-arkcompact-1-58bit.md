@@ -89,8 +89,8 @@ La comparativa se limita al modelo base, ya que no hay datos publicos de otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ooriginador/LLaMA-3.2-3B-ArkCompact-1.58bit
+- Repositorio Hugging Face: https://huggingface.co/Ooriginador/LLaMA-3.2-3B-ArkCompact-1.58bit
 - Repositorio ArkheionNet (GitHub): https://github.com/Arkheion/ArkheionNet.git
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Documentacion de Llama 3.2 de Meta: https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/
-- Blog de Llama 3.2 en HuggingFace: https://huggingface.co/blog/llama32
+- Blog de Llama 3.2 en Hugging Face: https://huggingface.co/blog/llama32

@@ -108,7 +108,7 @@ Resultados declarados por el autor con lm-evaluation-harness. No han sido verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-GGUF
 - Modelo base: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.0-Uncensored-BF16
 - Variante AWQ del mismo checkpoint: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.2-W4A16-AWQ
 - Variante de 1M de contexto: https://huggingface.co/kataguru/Qwen3.8-27B-Titan-v3.0-1M-GGUF/tree/main

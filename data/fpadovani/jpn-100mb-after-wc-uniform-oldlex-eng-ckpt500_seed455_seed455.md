@@ -4,7 +4,7 @@
 
 El modelo `jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455` es un modelo de generación de texto desarrollado por fpadovani, resultado de un fine-tuning supervisado (SFT) del modelo base `ppt-wc-uniform-oldlex-eng-100mb_seed455`. Se trata de un modelo pequeño, con 124.770.816 parámetros (aproximadamente 125 millones), basado en la arquitectura GPT-2 (transformer decoder-only). El nombre sugiere que fue entrenado con datos en japonés e inglés, aunque la información disponible no lo confirma.
 
-El modelo fue creado con la librería TRL de HuggingFace y está publicado en formato `safetensors`. No se han publicado benchmarks ni documentación detallada sobre el proceso de entrenamiento, lo que lo convierte en un modelo experimental, orientado a la investigación y al estudio de técnicas de fine-tuning en modelos de pequeño tamaño. Su relevancia actual radica en que permite explorar el comportamiento de modelos compactos y su adaptación mediante SFT, en un contexto donde los modelos pequeños son cada vez más utilizados para tareas específicas con recursos limitados.
+El modelo fue creado con la librería TRL de Hugging Face y está publicado en formato `safetensors`. No se han publicado benchmarks ni documentación detallada sobre el proceso de entrenamiento, lo que lo convierte en un modelo experimental, orientado a la investigación y al estudio de técnicas de fine-tuning en modelos de pequeño tamaño. Su relevancia actual radica en que permite explorar el comportamiento de modelos compactos y su adaptación mediante SFT, en un contexto donde los modelos pequeños son cada vez más utilizados para tareas específicas con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo fue creado con la librería TRL de HuggingFace y está publicado en fo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning del modelo base `ppt-wc-uniform-oldlex-eng-100mb_seed455`, que según el nombre tiene un tamaño de 100 MB. El modelo actual está etiquetado como `gpt2` en HuggingFace, lo que indica que su arquitectura es un transformer decoder-only tipo GPT-2. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de HuggingFace, con las versiones TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1.
+El modelo es un fine-tuning del modelo base `ppt-wc-uniform-oldlex-eng-100mb_seed455`, que según el nombre tiene un tamaño de 100 MB. El modelo actual está etiquetado como `gpt2` en Hugging Face, lo que indica que su arquitectura es un transformer decoder-only tipo GPT-2. El entrenamiento se realizó mediante SFT (Supervised Fine-Tuning) utilizando la librería TRL de Hugging Face, con las versiones TRL 0.23.0, Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1.
 
 No se ha publicado información sobre el dataset de entrenamiento, el número de tokens ni la composición del corpus. El nombre del modelo incluye las etiquetas `jpn` (japonés) y `eng` (inglés), lo que sugiere una posible mezcla de idiomas, pero no hay confirmación oficial. No se describen innovaciones técnicas destacables; se trata de un modelo GPT-2 estándar ajustado con datos de instrucciones.
 
@@ -64,12 +64,12 @@ No disponible. No se dispone de información sobre modelos comparables en los da
 - No se ha documentado el dataset de entrenamiento, lo que impide evaluar sesgos o alucinaciones.
 - El nombre sugiere un posible entrenamiento en japonés e inglés, pero no hay confirmación oficial de los idiomas soportados.
 - Su tamaño reducido limita la capacidad de razonamiento complejo y la generación de respuestas coherentes en tareas largas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Para producción, se recomienda realizar una evaluación exhaustiva y ajustar el modelo con datos propios.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455
+- Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-oldlex-eng-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed455
 - Weights & Biases run: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/f2183p21
 - TRL: https://github.com/huggingface/trl

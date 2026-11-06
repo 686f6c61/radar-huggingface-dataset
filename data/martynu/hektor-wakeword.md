@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hektor-wakeword es un modelo de detección de palabra de activación (wake word o keyword spotting) publicado por el usuario MartynU en HuggingFace. Se trata de un modelo personalizado para openWakeWord que detecta la palabra ucraniana «Гектор». No es un modelo de lenguaje: recibe como entrada las características generadas por el modelo de embeddings de openWakeWord, con forma de tensor `[1, 16, 96]`, y devuelve una probabilidad entre 0 y 1 para cada ventana evaluada. El modelo se distribuye en formato ONNX (opset 18, requiere onnxruntime >= 1.14) y está pensado para integrarse en pipelines de voz, tanto con la librería Python de openWakeWord como con servidores basados en pipecat (`WakeGate`).
+hektor-wakeword es un modelo de detección de palabra de activación (wake word o keyword spotting) publicado por el usuario MartynU en Hugging Face. Se trata de un modelo personalizado para openWakeWord que detecta la palabra ucraniana «Гектор». No es un modelo de lenguaje: recibe como entrada las características generadas por el modelo de embeddings de openWakeWord, con forma de tensor `[1, 16, 96]`, y devuelve una probabilidad entre 0 y 1 para cada ventana evaluada. El modelo se distribuye en formato ONNX (opset 18, requiere onnxruntime >= 1.14) y está pensado para integrarse en pipelines de voz, tanto con la librería Python de openWakeWord como con servidores basados en pipecat (`WakeGate`).
 
 El problema que resuelve es concreto: permitir que un asistente o robot activado por voz responda a una palabra de activación en ucraniano sin depender de motores propietarios. La licencia Apache 2.0 y el hecho de que openWakeWord permita entrenar wake words con datos sintéticos lo convierten en un caso de estudio interesante para quien necesite un detector propio, aunque el propio autor advierte que es su «primera model experimental» y que la calidad es todavía insuficiente para uso diario.
 
@@ -74,7 +74,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos en la info
 
 | Modelo | Tipo | Entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hektor-wakeword (v1 / v2) | Clasificador sobre embeddings de openWakeWord | `[1, 16, 96]` | Recall 0,22 / 0,13; falsos positivos por hora 1,42 / 0,44; accuracy 0,66 / 0,60 | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
+| hektor-wakeword (v1 / v2) | Clasificador sobre embeddings de openWakeWord | `[1, 16, 96]` | Recall 0,22 / 0,13; falsos positivos por hora 1,42 / 0,44; accuracy 0,66 / 0,60 | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
 | Modelos preentrenados de openWakeWord (por ejemplo «hey jarvis») | Clasificador sobre embeddings de openWakeWord | `[1, 16, 96]` | no disponible | Apache 2.0 (proyecto openWakeWord) | Repositorio oficial del proyecto openWakeWord |
 | Picovoice Porcupine | Motor propietario de wake word | no disponible | no disponible | Comercial, con nivel de uso gratuito | SDK propietario |
 | Snowboy | Motor de wake word, proyecto discontinuado | no disponible | no disponible | no disponible | Archivado, sin mantenimiento |
@@ -97,7 +97,7 @@ La ventaja diferencial de hektor-wakeword frente a los modelos preentrenados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MartynU/hektor-wakeword
+- Modelo en Hugging Face: https://huggingface.co/MartynU/hektor-wakeword
 - Carpeta `training/` del repositorio: configuración, logs y parches para Google Colab del entrenamiento de la v1.
 - Carpeta `training/v2/` del repositorio: configuración y logs del entrenamiento de la v2.
 - La búsqueda web realizada no devolvió enlaces relevantes sobre este modelo: los resultados corresponden a hilos de foro sobre WhatsApp y a páginas de soporte de Microsoft Community, sin relación con el modelo ni con openWakeWord. No se han podido localizar papers, blogs, repositorios ni demos asociados en la información disponible.

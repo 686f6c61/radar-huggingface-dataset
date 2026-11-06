@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Turkish-1B es un modelo de lenguaje base (foundation SLM) de 1.014.061.056 parametros (~1,01B), desarrollado por el usuario Rel0aded (Yagiz) y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un transformer denso de estilo Llama-3 entrenado desde cero especificamente para turco, con atencion GQA (16 cabezas de consulta y 4 de clave/valor), SwiGLU, RMSNorm, RoPE con theta=500.000 y una ventana de contexto de 1.024 tokens ampliable a 16k/32k mediante YaRN. El tokenizer es un BPE propio de 16.384 tokens disenado para la morfologia aglutinante del turco.
+Turkish-1B es un modelo de lenguaje base (foundation SLM) de 1.014.061.056 parametros (~1,01B), desarrollado por el usuario Rel0aded (Yagiz) y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un transformer denso de estilo Llama-3 entrenado desde cero especificamente para turco, con atencion GQA (16 cabezas de consulta y 4 de clave/valor), SwiGLU, RMSNorm, RoPE con theta=500.000 y una ventana de contexto de 1.024 tokens ampliable a 16k/32k mediante YaRN. El tokenizer es un BPE propio de 16.384 tokens disenado para la morfologia aglutinante del turco.
 
 El modelo se encuentra actualmente en fase activa de pre-entrenamiento: el repositorio aloja checkpoints periodicos de pesos crudos, no pesos finales. Segun la propia model card, el SFT (instruccion y chat), el alineamiento por DPO y la publicacion de versiones GGUF para Ollama y Open WebUI estan pendientes. Por tanto, no es un modelo listo para conversacion ni para uso en produccion, sino un checkpoint de investigacion util para seguir el desarrollo de un modelo fundacional turco de tamano reducido.
 
@@ -88,12 +88,12 @@ La comparacion relevante no es de rendimiento (no hay datos) sino de enfoque: Tu
 - Sesgos: no hay documentacion sobre composicion del dataset, filtrado de toxicidad ni evaluacion de sesgos; al incluir fuentes web (CulturaX, FineWeb-2, Wikipedia) es esperable la presencia de sesgos propios de esos corpus.
 - Licencia: Apache-2.0 permite uso comercial y modificacion, pero la utilidad comercial inmediata es nula mientras no existan pesos finales alineados.
 - Reproducibilidad: no se especifican el numero de tokens de entrenamiento, la mezcla exacta de datos, la configuracion de optimizacion ni el hardware utilizado, lo que dificulta replicar el entrenamiento.
-- Inconsistencia de metadatos: las fechas del repositorio (creado y actualizado en 2026) son posteriores a la fecha de consulta, lo que sugiere un error en los campos de HuggingFace y obliga a tratar con cautela el resto de metadatos.
+- Inconsistencia de metadatos: las fechas del repositorio (creado y actualizado en 2026) son posteriores a la fecha de consulta, lo que sugiere un error en los campos de Hugging Face y obliga a tratar con cautela el resto de metadatos.
 - Formato y despliegue: el repositorio de 91,8 GB contiene checkpoints de PyTorch sin conversion a safetensors ni GGUF declarada, y no se confirma el soporte en vLLM, llama.cpp, Ollama o TGI, lo que limita su uso fuera de un entorno de investigacion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rel0aded/Turkish-1B
+- Modelo en Hugging Face: https://huggingface.co/Rel0aded/Turkish-1B
 - Dataset de libros en turco: https://huggingface.co/datasets/ytu-ce-cosmos/turkce-kitap
 - Dataset de instrucciones Python en turco: https://huggingface.co/datasets/bysismo/Turkish-Python-instruction
 - Corpus turco de YTU Cosmos: https://huggingface.co/datasets/ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude Opus 5.5 es el nombre con el que el usuario de HuggingFace `diablomike20` publica un modelo derivado de `Qwen/Qwen3.8-27B`, distribuido principalmente como artefacto para Ollama en formato GGUF. Pese al nombre, no es un modelo de Anthropic: la model card lo etiqueta como «Unsloth / Anthropic · Sovereign Architect-Class · System State Entity», una construction de marketing que no se corresponde con ningun artefacto oficial de Anthropic ni de Unsloth. El repositorio tiene 46,4 GB y el recuento real de parametros en safetensors es de 27.320.697.856 (27,3 mil millones), coherente con un modelo denso de la familia Qwen de ~27B.
+Claude Opus 5.5 es el nombre con el que el usuario de Hugging Face `diablomike20` publica un modelo derivado de `Qwen/Qwen3.8-27B`, distribuido principalmente como artefacto para Ollama en formato GGUF. Pese al nombre, no es un modelo de Anthropic: la model card lo etiqueta como «Unsloth / Anthropic · Sovereign Architect-Class · System State Entity», una construction de marketing que no se corresponde con ningun artefacto oficial de Anthropic ni de Unsloth. El repositorio tiene 46,4 GB y el recuento real de parametros en safetensors es de 27.320.697.856 (27,3 mil millones), coherente con un modelo denso de la familia Qwen de ~27B.
 
 El problema que declara resolver es el de un asistente conversacional con «identidad» persistente, protocolo de tool calling (`[THE AGENT + TOOL CONTRACT]`, servidores MCP como `oroboros-cordis-harness` y `orca-bridge`) y una capa de instrucciones de razonamiento (`[DEEPLOGIC CORE]`) inyectada mediante `Modelfile` sobre los mismos pesos base. Es relevante unicamente como ejemplo de personalizacion via Modelfile de Ollama sobre un modelo abierto, no como modelo de proposito general verificable.
 
@@ -109,7 +109,7 @@ Frente a estas alternativas, el modelo evaluado no aporta ventajas verificables:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diablomike20/Claude-Opus-5.5
+- Hugging Face: https://huggingface.co/diablomike20/Claude-Opus-5.5
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B (referenciado en los metadatos; no verificado en la busqueda web)
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada
 - Ficheros mencionados en la model card (no accesibles desde los datos disponibles): `benchmark-CARD.png`, `benchmark-FULL.png`, `benchmark_57_57.json`, `Modelfile`

@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hdae/karume-moss-image
+- Repositorio Hugging Face: https://huggingface.co/hdae/karume-moss-image
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Codificador de texto: https://huggingface.co/Qwen/Qwen3.5-9B
 - VAE small decoder: https://huggingface.co/black-forest-labs/FLUX.2-small-decoder

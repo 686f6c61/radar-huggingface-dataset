@@ -79,7 +79,7 @@ La comparativa se limita a modelos omni disponibles en el ecosistema de codigo a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANG_4M
+- Repositorio Hugging Face: https://huggingface.co/OsaurusAI/Nemotron-3-Nano-Omni-30B-A3B-JANG_4M
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Pagina de NVIDIA NIM del modelo: https://build.nvidia.com/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning/modelcard
 - Pagina de NVIDIA Developer sobre Nemotron: https://developer.nvidia.com/topics/ai/nemotron

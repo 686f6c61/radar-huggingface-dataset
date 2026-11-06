@@ -114,6 +114,6 @@ No se dispone de comparaciones con otros modelos fundacionales geoespaciales ext
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaopanboonyuen/KAO-TerraMind-C
+- Modelo en Hugging Face: https://huggingface.co/kaopanboonyuen/KAO-TerraMind-C
 - Modelo base: https://huggingface.co/ibm-esa-geospatial/TerraMind-1.0-base
 - No se han proporcionado en la informacion disponible enlaces adicionales a papers, blogs, repositorios o demos.

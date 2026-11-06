@@ -23,7 +23,7 @@ Los checkpoints son deliberadamente pequenos: arquitectura decoder-only de 8 cap
 | Tamano del repositorio | 1,7 GB |
 | Variantes incluidas | 8 checkpoints: BPE 32k (semillas 0 y 1), caracter (0 y 1), unigram 32k (0 y 1), unigram 8k (0 y 1) |
 | Tamano por checkpoint | 239 MB (BPE 32k y unigram 32k), 139 MB (unigram 8k), 112 MB (caracter) |
-| Fecha de creacion del repo | 2026-10-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-10-15 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Los datos de las alternativas proceden de sus especificaciones publicas; no exis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en benchmarks |
 |---|---|---|---|---|---|
-| language-entropy-b4 | 25,2 M no de embedding | no disponible | MIT | HuggingFace + GitHub, 0 descargas | Solo el 75 % de recuperacion de abstencion; sin benchmarks estandar |
+| language-entropy-b4 | 25,2 M no de embedding | no disponible | MIT | Hugging Face + GitHub, 0 descargas | Solo el 75 % de recuperacion de abstencion; sin benchmarks estandar |
 | GPT-2 small | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible | Resultados publicos en varios benchmarks |
 | Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Ampliamente disponible | Resultados publicos en varios benchmarks |
 
@@ -97,7 +97,7 @@ La diferencia fundamental no es de escala, sino de proposito: language-entropy-b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keyzersoze04/language-entropy-b4
+- Hugging Face: https://huggingface.co/keyzersoze04/language-entropy-b4
 - Repositorio GitHub del programa Language-Entropy: https://github.com/mrnathanhumphrey-droid/Language_Entropy
-- Ficheros de verificacion: `SHA256SUMS` dentro del repositorio de HuggingFace
+- Ficheros de verificacion: `SHA256SUMS` dentro del repositorio de Hugging Face
 - Papers, blogs o demos adicionales: no disponibles en la informacion proporcionada

@@ -79,7 +79,7 @@ La comparativa directa no es válida porque el modelo es un checkpoint sin evalu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-937m-step6060
+- Hugging Face: https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-937m-step6060
 - Modelo base MiMo-7B-RL: https://huggingface.co/XiaomiMiMo/MiMo-7B-RL-0530
 - Paper MiMo: https://arxiv.org/abs/2505.07608
 - Checkpoint previo (737m): https://huggingface.co/arianraje/mimo-7b-gdn-opd-predecay-737m-step4810

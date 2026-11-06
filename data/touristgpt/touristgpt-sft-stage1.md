@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TouristGPT-SFT-Stage1 es un checkpoint intermedio publicado por el usuario touristgpt en HuggingFace. Se trata del resultado de la primera etapa de ajuste supervisado (Supervised Fine Tuning, SFT) sobre el modelo base Qwen/Qwen3-4B-Base, segun indica el propio autor en la model card. No es, por tanto, un modelo final: el autor lo presenta como un hito intermedio y anuncia futuros checkpoints, ademas de versiones GGUF que solo se subiran para el modelo TouristGPT definitivo.
+TouristGPT-SFT-Stage1 es un checkpoint intermedio publicado por el usuario touristgpt en Hugging Face. Se trata del resultado de la primera etapa de ajuste supervisado (Supervised Fine Tuning, SFT) sobre el modelo base Qwen/Qwen3-4B-Base, segun indica el propio autor en la model card. No es, por tanto, un modelo final: el autor lo presenta como un hito intermedio y anuncia futuros checkpoints, ademas de versiones GGUF que solo se subiran para el modelo TouristGPT definitivo.
 
 El modelo tiene 4.411.424.256 parametros segun los pesos reales en safetensors, lo que lo situa en la categoria de ~4.4B, con un repositorio de 8.8 GB (coherente con pesos almacenados en precision de 16 bits, aproximadamente 2 bytes por parametro). Hereda la arquitectura del modelo base Qwen3-4B de Alibaba, un transformer denso de la familia Qwen3, etiquetado con el tag `qwen3` en el repositorio.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en cuantizacion de 4 bits (si se genera una version GGUF/AWQ, no publicada por el autor): en torno a 2,5-3,5 GB de pesos.
 - GPUs recomendadas: A100 40/80 GB, H100, L40S o RTX A6000 para despliegue en precision completa con contexto amplio; RTX 4090, RTX 3090 o RTX 4080 para inferencia en bf16 con contexto moderado.
 - Cabe en GPU de consumidor: si, en tarjetas con 12 GB o mas de VRAM para bf16 y contexto corto; en 8 GB solo mediante cuantizacion de 4 bits, que el autor aun no ha publicado.
-- Opciones de despliegue: vLLM, HuggingFace Transformers, TGI o SGLang con los pesos safetensors; llama.cpp y Ollama requeririan convertir previamente el modelo a GGUF, conversion no facilitada por el autor.
+- Opciones de despliegue: vLLM, Hugging Face Transformers, TGI o SGLang con los pesos safetensors; llama.cpp y Ollama requeririan convertir previamente el modelo a GGUF, conversion no facilitada por el autor.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de latencia por peticion para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | TouristGPT-SFT-Stage1 | 4,41B | No disponible | No disponible | safetensors unicamente | Checkpoint intermedio de SFT sobre matematicas y codigo competitivo |
-| Qwen/Qwen3-4B-Base | ~4,0B (nominal) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace | Modelo base del que deriva TouristGPT; sin SFT especifico de matematicas |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4,0B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace | Alternativa instructiva de la misma familia y tamano; incluye ajuste de instrucciones y contexto largo |
-| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos abiertos en HuggingFace | Referencia habitual en razonamiento matematico destilado, con el doble de parametros |
+| Qwen/Qwen3-4B-Base | ~4,0B (nominal) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face | Modelo base del que deriva TouristGPT; sin SFT especifico de matematicas |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4,0B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face | Alternativa instructiva de la misma familia y tamano; incluye ajuste de instrucciones y contexto largo |
+| DeepSeek-R1-Distill-Qwen-7B | ~7,6B | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Pesos abiertos en Hugging Face | Referencia habitual en razonamiento matematico destilado, con el doble de parametros |
 
 No hay datos de rendimiento publicados para TouristGPT-SFT-Stage1, por lo que la comparacion se limita a parametros, formato y disponibilidad. Las cifras de los modelos alternativos son datos publicos de sus respectivos repositorios y no proceden de la informacion proporcionada para este modelo.
 
@@ -91,6 +91,6 @@ No hay datos de rendimiento publicados para TouristGPT-SFT-Stage1, por lo que la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/touristgpt/TouristGPT-SFT-Stage1
+- Repositorio en Hugging Face: https://huggingface.co/touristgpt/TouristGPT-SFT-Stage1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados a este checkpoint en la busqueda web realizada.

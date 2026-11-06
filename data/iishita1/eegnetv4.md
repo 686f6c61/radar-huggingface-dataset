@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EEGNetv4 (esta ficha) | no disponible (orden de miles) | no aplica | EEG | MIT | HuggingFace (iishita1/EEGNetv4) |
+| EEGNetv4 (esta ficha) | no disponible (orden de miles) | no aplica | EEG | MIT | Hugging Face (iishita1/EEGNetv4) |
 | EEGNetv4 original (Lawhern et al., 2018) | no disponible | no aplica | EEG | según publicación | Implementación en Braindecode |
 | Otras CNN para EEG en MOABB | no disponible | no aplica | EEG | variable | Braindecode / MOABB |
 
@@ -82,7 +82,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iishita1/EEGNetv4
+- Hugging Face: https://huggingface.co/iishita1/EEGNetv4
 - Repositorio original referenciado en la model card: https://huggingface.co/PierreGtch/EEGNetv4
 - Documentación de EEGNetv4 en Braindecode: https://braindecode.org/stable/generated/braindecode.models.EEGNetv4.html
 - Artículo original de EEGNet (Lawhern et al., 2018): https://doi.org/10.1088/1741-2552/aace8c

@@ -6,13 +6,13 @@
 
 El contenido se organiza en dos ficheros: `paper_notes.md` (artefacto principal) y `README.md` (documentacion). Las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. El contexto de evaluacion que se propone abarcar incluye los conjuntos de datos MS COCO Captions, NoCaps y TextCaps, ademas de verificaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
-La relevancia de esta ficha es, por tanto, metodologica y no tecnica: sirve para advertir a desarrolladores e investigadores de que el repositorio no ofrece pesos utilizables para inferencia. Los metadatos de HuggingFace incluyen un recuento de parametros (49.600) y el tag `transformer`, pero la model card no los respalda con ningun artefacto entrenado descrito, por lo que no debe asumirse que exista un modelo funcional detras de esas etiquetas. La busqueda web realizada no ha devuelto ningun resultado relacionado con el repositorio, el autor ni la tematica.
+La relevancia de esta ficha es, por tanto, metodologica y no tecnica: sirve para advertir a desarrolladores e investigadores de que el repositorio no ofrece pesos utilizables para inferencia. Los metadatos de Hugging Face incluyen un recuento de parametros (49.600) y el tag `transformer`, pero la model card no los respalda con ningun artefacto entrenado descrito, por lo que no debe asumirse que exista un modelo funcional detras de esas etiquetas. La busqueda web realizada no ha devuelto ningun resultado relacionado con el repositorio, el autor ni la tematica.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `transformer`, sin documentacion en la model card) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `transformer`, sin documentacion en la model card) |
 | Parametros totales | 49.600 (segun metadatos de safetensors; no confirmado por la model card) |
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -34,7 +34,7 @@ El repositorio se limita a documentar un plan de estudio. Entre los elementos qu
 
 ## Capacidades
 
-- El repositorio no implementa ninguna capacidad de inferencia. No hay pesos entrenados descritos ni pipeline declarado en HuggingFace.
+- El repositorio no implementa ninguna capacidad de inferencia. No hay pesos entrenados descritos ni pipeline declarado en Hugging Face.
 - No se documenta generacion de texto, razonamiento, codigo, matematicas ni vision.
 - No se documenta soporte de *tool calling* ni de *function calling*.
 - No se documenta soporte para agentes ni razonamiento multi-paso.
@@ -92,7 +92,7 @@ No procede una comparativa funcional: el repositorio no es un modelo de *image c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anilshah84/notes-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/anilshah84/notes-image-captioning
 - Fichero principal de notas: `paper_notes.md` (referenciado en la model card, alojado en el propio repositorio)
 - Documentacion del repositorio: `README.md` (alojado en el propio repositorio)
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo, el autor ni la tematica.

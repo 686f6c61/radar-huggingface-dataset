@@ -73,11 +73,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Metrica publicada | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen3-4b-dpakl-reverse-thinking-b16-alpha0.3 | Borrador DFlash para Qwen3-4B (thinking) | 322 M | Entrenado a 8192; objetivo 32.768 | apache-2.0 | no disponible | HuggingFace, 0 descargas |
+| qwen3-4b-dpakl-reverse-thinking-b16-alpha0.3 | Borrador DFlash para Qwen3-4B (thinking) | 322 M | Entrenado a 8192; objetivo 32.768 | apache-2.0 | no disponible | Hugging Face, 0 descargas |
 | Variantes D-PACE / D-PARD del mismo autor | Borradores con otros objetivos de entrenamiento | no disponible | no disponible | no disponible | no disponible | Referenciadas en la model card, sin metricas publicadas |
 | EAGLE-3 (familia de cabezas borradoras) | Decodificacion especulativa con cabeza entrenada sobre caracteristicas | no disponible para Qwen3-4B | Depende del modelo objetivo | no disponible en esta informacion | Ampliamente reportada en la literatura, no comparable aqui | Implementaciones en frameworks de inferencia |
 | Medusa | Cabezas de prediccion multiple sobre el modelo base | no disponible para Qwen3-4B | Depende del modelo objetivo | no disponible en esta informacion | no disponible en esta informacion | Repositorio publico |
-| Qwen/Qwen3-4B (modelo objetivo, sin borrador) | LLM denso | 4.020 M aprox. | 32.768, ampliable con YaRN | apache-2.0 | Si, reportada por Qwen | HuggingFace, ampliamente usado |
+| Qwen/Qwen3-4B (modelo objetivo, sin borrador) | LLM denso | 4.020 M aprox. | 32.768, ampliable con YaRN | apache-2.0 | Si, reportada por Qwen | Hugging Face, ampliamente usado |
 
 No se dispone de datos numericos comparables entre estas alternativas dentro de la informacion proporcionada; la comparacion es por tanto cualitativa y de categoria.
 
@@ -97,7 +97,7 @@ No se dispone de datos numericos comparables entre estas alternativas dentro de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpakl-reverse-thinking-b16-alpha0.3
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpakl-reverse-thinking-b16-alpha0.3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - SpecForge (herramienta de captura de caracteristicas y entrenamiento de borradores): mencionada en la model card, sin URL incluida en la informacion proporcionada

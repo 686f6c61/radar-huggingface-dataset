@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427 es un espacio de HuggingFace publicado por el usuario zhouxinxin que, segun la informacion disponible, unicamente contiene pesos de modelo ("Model weights") bajo una licencia de tipo "other". No se ha publicado model card descriptiva, pipeline de inferencia, idiomas soportados ni ningun tipo de documentacion tecnica adicional. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026 con apenas tres segundos de diferencia entre ambos eventos.
+El repositorio zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427 es un espacio de Hugging Face publicado por el usuario zhouxinxin que, segun la informacion disponible, unicamente contiene pesos de modelo ("Model weights") bajo una licencia de tipo "other". No se ha publicado model card descriptiva, pipeline de inferencia, idiomas soportados ni ningun tipo de documentacion tecnica adicional. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 14 de septiembre de 2026 con apenas tres segundos de diferencia entre ambos eventos.
 
 El identificador del repositorio incluye fragmentos que podrian sugerir un modelo de tipo mezcla de expertos y un ajuste relacionado con datos personales identificables (los segmentos "a3b", "v126enc" y "fix_pii"), pero se trata de una interpretacion especulativa a partir del nombre y no de un dato confirmado por el autor. No hay informacion verificable sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento o datos utilizados.
 
@@ -72,7 +72,7 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, arqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427
+- Repositorio en Hugging Face: https://huggingface.co/zhouxinxin/v14_0_ct_a3b_v126enc_fix_pii-hf74427
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

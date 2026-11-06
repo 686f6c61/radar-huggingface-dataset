@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zaire-12B-v0.1 es un ajuste fino (fine-tune) del modelo google/gemma-4-12B-it, publicado por el usuario ReadyArt en HuggingFace. Con 11.959.730.224 parámetros (~11,96 B) y un repositorio de 24,0 GB en safetensors, se trata de un modelo denso de generación de texto orientado a conversación, roleplay e instrucciones en inglés. Su especialización declarada por el autor se centra en contenido para adultos: roleplay explícito, ERP (erotic roleplay), terror y violencia, además de las etiquetas `nsfw`, `explicit`, `adult-content`, `mature` y `unaligned`.
+Zaire-12B-v0.1 es un ajuste fino (fine-tune) del modelo google/gemma-4-12B-it, publicado por el usuario ReadyArt en Hugging Face. Con 11.959.730.224 parámetros (~11,96 B) y un repositorio de 24,0 GB en safetensors, se trata de un modelo denso de generación de texto orientado a conversación, roleplay e instrucciones en inglés. Su especialización declarada por el autor se centra en contenido para adultos: roleplay explícito, ERP (erotic roleplay), terror y violencia, además de las etiquetas `nsfw`, `explicit`, `adult-content`, `mature` y `unaligned`.
 
 El modelo resulta relevante no por sus capacidades generales —que hereda de la base Gemma 4— sino por su posicionamiento: es un fine-tune "desalineado" que reduce deliberadamente las barreras de rechazo típicas de los modelos instruct convencionales, lo que lo hace útil para nichos de ficción adulta, para investigación en seguridad (red teaming, estudio de jailbreaks) y para la generación de datos sintéticos etiquetados destinados a sistemas de moderación.
 
@@ -12,7 +12,7 @@ La ficha presenta una limitación importante de trazabilidad: la model card publ
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only derivado de Gemma 4 (etiqueta de librería `gemma4_unified` en HuggingFace) |
+| Arquitectura | Transformer decoder-only derivado de Gemma 4 (etiqueta de librería `gemma4_unified` en Hugging Face) |
 | Parámetros totales | 11.959.730.224 (~11,96 B) |
 | Parámetros activos | no aplica (modelo denso; no se declara MoE) |
 | Longitud de contexto | no disponible |
@@ -27,7 +27,7 @@ La ficha presenta una limitación importante de trazabilidad: la model card publ
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la familia Gemma 4 en su variante de 12 B, un transformer decoder-only etiquetado en HuggingFace como `gemma4_unified`. El modelo es denso (no MoE) y conserva la estructura del checkpoint base google/gemma-4-12B-it, sobre el que se aplica un fine-tune. El tamaño del repositorio (24,0 GB) es coherente con pesos almacenados en bf16/fp16 (2 bytes por parámetro para 11,96 B de parámetros, aproximadamente 23,9 GB), sin que se hayan publicado variantes cuantizadas.
+La arquitectura corresponde a la familia Gemma 4 en su variante de 12 B, un transformer decoder-only etiquetado en Hugging Face como `gemma4_unified`. El modelo es denso (no MoE) y conserva la estructura del checkpoint base google/gemma-4-12B-it, sobre el que se aplica un fine-tune. El tamaño del repositorio (24,0 GB) es coherente con pesos almacenados en bf16/fp16 (2 bytes por parámetro para 11,96 B de parámetros, aproximadamente 23,9 GB), sin que se hayan publicado variantes cuantizadas.
 
 No se dispone de información sobre el proceso de entrenamiento: ni el volumen de tokens, ni la composición del dataset, ni si se emplearon técnicas de RLHF, DPO o simplemente ajuste supervisado. La model card pública está ocupada por estilos CSS y su texto descriptivo aparece truncado. Las etiquetas del autor (`roleplay`, `ERP`, `Erotic`, `Horror`, `Violence`, `unaligned`, `not-for-all-audiences`) indican la orientación temática del ajuste y sugieren una reducción deliberada del comportamiento de rechazo respecto al modelo instruct original, pero no constituyen evidencia técnica verificable sobre el método de entrenamiento.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| ReadyArt/Zaire-12B-v0.1 | 11,96 B | no disponible | apache-2.0 | no | HuggingFace, 0 descargas |
-| google/gemma-4-12B-it (base) | ~12 B (según denominación) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (modelo base) |
-| Mistral-Nemo-Instruct-2407 | 12 B | 128 000 tokens (dato de conocimiento general, no verificado en la información proporcionada) | apache-2.0 | no comparables en esta ficha | HuggingFace |
+| ReadyArt/Zaire-12B-v0.1 | 11,96 B | no disponible | apache-2.0 | no | Hugging Face, 0 descargas |
+| google/gemma-4-12B-it (base) | ~12 B (según denominación) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (modelo base) |
+| Mistral-Nemo-Instruct-2407 | 12 B | 128 000 tokens (dato de conocimiento general, no verificado en la información proporcionada) | apache-2.0 | no comparables en esta ficha | Hugging Face |
 
 La comparación cuantitativa con alternativas de la misma categoría (finetunes de 12 B orientados a roleplay para adultos) no es posible con la información disponible: no existen métricas publicadas para Zaire-12B-v0.1 ni evaluaciones homogéneas entre los distintos finetunes del ecosistema. La comparación relevante es cualitativa: frente al modelo base Gemma 4 12B-it, este ajuste prioriza la permisividad temática y el estilo de personaje sobre la alineación de seguridad, y no aporta ninguna mejora declarada en razonamiento, código o matemáticas.
 
@@ -89,6 +89,6 @@ La comparación cuantitativa con alternativas de la misma categoría (finetunes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ReadyArt/Zaire-12B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ReadyArt/Zaire-12B-v0.1
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la información proporcionada.

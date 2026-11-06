@@ -93,7 +93,7 @@ Los tres adaptadores de la serie comparten exactamente el mismo conjunto de dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-inkling-health_cigarette_crossed_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-inkling-health_cigarette_crossed_tinker_native
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling
 - Dataset de origen: https://huggingface.co/datasets/Butanium/smoking-health-character-data-deepseek
 - Contrapartida sobre Nemotron: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_crossed_tinker_native

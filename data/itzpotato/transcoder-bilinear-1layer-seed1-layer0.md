@@ -77,6 +77,6 @@ No se dispone de información sobre otros transcoders comparables en la misma fa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed1-layer0)
+- [Modelo en Hugging Face](https://huggingface.co/itzPotato/transcoder-bilinear-1layer-seed1-layer0)
 - [Modelo base: itzPotato/arithmetic-bilinear-1layer-seed1](https://huggingface.co/itzPotato/arithmetic-bilinear-1layer-seed1)
-- [Perfil del autor en HuggingFace](https://huggingface.co/itzPotato/models)
+- [Perfil del autor en Hugging Face](https://huggingface.co/itzPotato/models)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-The_X-Files es un modelo alojado en HuggingFace por el usuario Sergeantzero bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre el entrenamiento o las capacidades del modelo. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos cuantizados, aunque no se dispone de informacion que lo confirme.
+The_X-Files es un modelo alojado en Hugging Face por el usuario Sergeantzero bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin especificaciones tecnicas ni documentacion sobre el entrenamiento o las capacidades del modelo. El repositorio ocupa 0,2 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos cuantizados, aunque no se dispone de informacion que lo confirme.
 
 No se ha publicado informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. El modelo no registra descargas ni likes en el momento de la consulta, y fue creado y actualizado el 28 de octubre de 2026 con apenas un minuto de diferencia entre ambos eventos, lo que apunta a una publicacion automatizada o de prueba.
 
@@ -34,7 +34,7 @@ El unico dato estructural disponible es el tamano del repositorio, 0,2 GB, que e
 - No hay constancia de capacidades de agente o razonamiento multi-paso.
 - No se especifican capacidades multilingues ni idiomas cubiertos.
 - No se indica si dispone de modo de razonamiento, vision, audio u otras modalidades.
-- La ausencia de pipeline declarado en HuggingFace impide confirmar la tarea principal (text-generation, text2text, etc.).
+- La ausencia de pipeline declarado en Hugging Face impide confirmar la tarea principal (text-generation, text2text, etc.).
 
 ## Casos de uso
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sergeantzero/The_X-Files
+- Hugging Face: https://huggingface.co/Sergeantzero/The_X-Files
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

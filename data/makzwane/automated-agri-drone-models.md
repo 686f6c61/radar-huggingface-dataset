@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MakZwane/automated-agri-drone-models es un repositorio alojado en HuggingFace por el usuario MakZwane cuyo contenido no esta documentado publicamente. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, fecha de creacion (22 de septiembre de 2026), fecha de actualizacion (22 de septiembre de 2026), cero descargas, un like y un tamano de repositorio de 0.0 GB. No se ha publicado ninguna model card, ficha tecnica, articulo, paper ni documentacion asociada.
+MakZwane/automated-agri-drone-models es un repositorio alojado en Hugging Face por el usuario MakZwane cuyo contenido no esta documentado publicamente. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, fecha de creacion (22 de septiembre de 2026), fecha de actualizacion (22 de septiembre de 2026), cero descargas, un like y un tamano de repositorio de 0.0 GB. No se ha publicado ninguna model card, ficha tecnica, articulo, paper ni documentacion asociada.
 
 El nombre del repositorio sugiere un conjunto de modelos orientados a la automatizacion de drones agricolas, pero esta interpretacion no esta respaldada por ningun dato verificable en la informacion proporcionada. El campo pipeline aparece como no disponible, la licencia no esta declarada, los idiomas soportados no se especifican y las etiquetas asociadas se limitan a `region:us`. No hay pesos, configuraciones, tokenizadores ni archivos de modelo descritos.
 
@@ -103,7 +103,7 @@ No es posible establecer una comparativa con alternativas de la misma categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MakZwane/automated-agri-drone-models
+- Repositorio en Hugging Face: https://huggingface.co/MakZwane/automated-agri-drone-models
 - Paper, blog o repositorio de codigo asociado: no disponible.
 - Demo o espacio interactivo: no disponible.
 - Resultados de benchmarks publicados: no disponible.

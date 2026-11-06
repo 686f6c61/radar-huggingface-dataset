@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CQ3-Qwen3-4B-K16-SqueezeLLM es un checkpoint publicado por el usuario sy128 en HuggingFace, construido a partir de un modelo de la familia Qwen3 y con 4.411.424.256 parametros segun los tensores safetensors del repositorio. El nombre del repositorio indica una combinacion de cuantizacion en 3 bits ("CQ3"), agrupamiento en 16 clusters ("K16") y el algoritmo SqueezeLLM, una tecnica de cuantizacion no uniforme con descomposicion densa-dispersa publicada por SqueezeAILab (UC Berkeley). No es, por tanto, un modelo entrenado desde cero, sino una version comprimida de un modelo preentrenado ya existente.
+CQ3-Qwen3-4B-K16-SqueezeLLM es un checkpoint publicado por el usuario sy128 en Hugging Face, construido a partir de un modelo de la familia Qwen3 y con 4.411.424.256 parametros segun los tensores safetensors del repositorio. El nombre del repositorio indica una combinacion de cuantizacion en 3 bits ("CQ3"), agrupamiento en 16 clusters ("K16") y el algoritmo SqueezeLLM, una tecnica de cuantizacion no uniforme con descomposicion densa-dispersa publicada por SqueezeAILab (UC Berkeley). No es, por tanto, un modelo entrenado desde cero, sino una version comprimida de un modelo preentrenado ya existente.
 
 La ficha del repositorio no incluye tarjeta de modelo, licencia, idiomas declarados, pipeline ni ningun detalle sobre calibracion, dataset de calibracion o perdida de calidad tras la cuantizacion. El tamano del repositorio, 17,7 GB, resulta llamativo: equivale aproximadamente a almacenar los 4.411 millones de parametros en 32 bits (4.411.424.256 x 4 bytes = 17,6 GB), lo que sugiere que los safetensors publicados no contienen pesos empaquetados en 3 bits, sino tensores en precision completa o intermedia, o bien una mezcla de pesos, indices y centroides sin empaquetar.
 
@@ -46,7 +46,7 @@ Las capacidades listadas a continuacion son las atribuibles al modelo base de la
 - Despliegue en hardware limitado tras reconversion: si finalmente se empaquetan los pesos a 3-4 bits, el modelo ocuparia del orden de 1,7-2,2 GB, lo que lo haria candidato para inferencia en GPU de 8-12 GB o en equipos de sobremesa con llama.cpp u Ollama.
 - Experimentos academicos de comparacion de tecnicas de compresion: enfrentar SqueezeLLM contra GPTQ, AWQ o bitsandbytes sobre el mismo modelo base y el mismo conjunto de calibracion.
 - Base para fine-tuning ligero: al ser un checkpoint de ~4,4B, es viable aplicar LoRA en una unica GPU de 24 GB, aunque la cuantizacion puede complicar el ajuste si los tensores no se dequantizan antes.
-- Analisis forense de repositorios de HuggingFace: ilustra el caso de un artefacto sin model card, sin licencia y con un tamano de repo incoherente con la precision que sugiere el nombre, util como ejemplo en guias de evaluacion de modelos.
+- Analisis forense de repositorios de Hugging Face: ilustra el caso de un artefacto sin model card, sin licencia y con un tamano de repo incoherente con la precision que sugiere el nombre, util como ejemplo en guias de evaluacion de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -91,7 +91,7 @@ Nota: los datos de contexto y licencia de las filas de referencia proceden de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sy128/CQ3-Qwen3-4B-K16-SqueezeLLM
+- Hugging Face: https://huggingface.co/sy128/CQ3-Qwen3-4B-K16-SqueezeLLM
 - Paper de SqueezeLLM (referencia externa al repositorio, no obtenida de la busqueda web): https://arxiv.org/abs/2306.07629
 - Repositorio de referencia de SqueezeLLM (referencia externa, no obtenida de la busqueda web): https://github.com/SqueezeAILab/SqueezeLLM
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las unicas entradas devueltas corresponden a portales de venta de entradas (viagogo.de), sin relacion alguna con el modelo ni con cuantizacion de redes neuronales.

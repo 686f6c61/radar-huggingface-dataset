@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`PAULFIS01/generation-demo` es un repositorio de HuggingFace publicado por el usuario PAULFIS01 que contiene una implementacion propia de una arquitectura tipo CLIP orientada a generacion. Segun la model card, se trata de un punto de partida reproducible con configuracion explicita y un checkpoint de inicializacion, y no de una version de modelo entrenada ni evaluada. El repositorio incluye el script `finetune.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` valido para pruebas de humo.
+`PAULFIS01/generation-demo` es un repositorio de Hugging Face publicado por el usuario PAULFIS01 que contiene una implementacion propia de una arquitectura tipo CLIP orientada a generacion. Segun la model card, se trata de un punto de partida reproducible con configuracion explicita y un checkpoint de inicializacion, y no de una version de modelo entrenada ni evaluada. El repositorio incluye el script `finetune.py`, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` valido para pruebas de humo.
 
 El dato mas relevante es el recuento real de parametros extraido del fichero safetensors: 16.576 parametros en total. Este valor contrasta de forma notable con la etiqueta `huge` que el autor asigna en la model card a la escala del modelo, por lo que conviene tratarlo como un artefacto de tamano minimo y no como una implementacion a gran escala. El tamano del repositorio es de 0,0 GB, con cero descargas y cero likes en el momento de la consulta.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa significativa con modelos CLIP publicad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PAULFIS01/generation-demo | 16.576 | no disponible | sin benchmark | bsd-3-clause | HuggingFace (0 descargas) |
+| PAULFIS01/generation-demo | 16.576 | no disponible | sin benchmark | bsd-3-clause | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,6 +84,6 @@ No es posible establecer una comparativa significativa con modelos CLIP publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PAULFIS01/generation-demo
+- Modelo en Hugging Face: https://huggingface.co/PAULFIS01/generation-demo
 - La busqueda web realizada no devolvio enlaces relevantes al modelo: los resultados obtenidos correspondian a paginas de YouTube y YouTube Music, sin relacion con el repositorio.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

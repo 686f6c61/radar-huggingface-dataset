@@ -6,7 +6,7 @@ El repositorio `turasa22/klasifikasibijikopiconvnext` es el material de acompañ
 
 El repositorio incluye dos variantes arquitectónicas: una red plana ("Flat") que clasifica directamente entre 16 clases (variedad de café cruzada con nivel de tueste) y una arquitectura en cascada ("Cascade") que primero identifica la variedad y después aplica especialistas de tueste por etapa. Los pesos se distribuyen como checkpoints de PyTorch (`.pth`) para cinco particiones estratificadas, junto con el dataset preprocesado, informes de métricas y cuadernos Jupyter reproducibles con semilla fija (`seed = 42`).
 
-Su relevancia es acotada pero clara para el nicho de visión por computador aplicada a agricultura y control de calidad agroalimentario: ofrece un pipeline completo y reproducible (datos, pesos, métricas y código) bajo licencia permisiva, algo poco habitual en publicaciones de clasificación fina. El repositorio ocupa 3,5 GB y no registra descargas ni interacciones en HuggingFace en el momento de redactar esta ficha.
+Su relevancia es acotada pero clara para el nicho de visión por computador aplicada a agricultura y control de calidad agroalimentario: ofrece un pipeline completo y reproducible (datos, pesos, métricas y código) bajo licencia permisiva, algo poco habitual en publicaciones de clasificación fina. El repositorio ocupa 3,5 GB y no registra descargas ni interacciones en Hugging Face en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parámetros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| turasa22/klasifikasibijikopiconvnext | ConvNeXt Flat y Cascade para café | no disponible | 224 × 224 píxeles | CC BY 4.0 (pesos), MIT (código) | HuggingFace, 0 descargas |
+| turasa22/klasifikasibijikopiconvnext | ConvNeXt Flat y Cascade para café | no disponible | 224 × 224 píxeles | CC BY 4.0 (pesos), MIT (código) | Hugging Face, 0 descargas |
 | ConvNeXt base (Meta) | CNN de propósito general | ~89 M (variante base) | 224 × 224 píxeles | MIT | Pesos públicos ampliamente disponibles |
 | EfficientNet-B0 (Google) | CNN de propósito general | ~5,3 M | 224 × 224 píxeles | Apache 2.0 | Pesos públicos ampliamente disponibles |
 | ViT-B/16 (Google) | Transformer de visión | ~86 M | 224 × 224 píxeles | Apache 2.0 | Pesos públicos ampliamente disponibles |
@@ -78,11 +78,11 @@ La comparación con backbones genéricos es orientativa: el modelo de turasa22 e
 - Riesgo de alucinación no aplica en sentido estricto, pero sí de clasificación errónea fuera de distribución; no se documentan umbrales de confianza ni mecanismos de rechazo.
 - Licencia CC BY 4.0 en pesos y dataset: permite uso comercial con atribución; el código y los cuadernos están bajo MIT.
 - No se documentan requisitos de hardware, latencia ni proceso de exportación a formatos de despliegue, lo que dificulta una puesta en producción sin trabajo adicional.
-- Repositorio sin descargas ni validación externa en HuggingFace; la reproducibilidad depende de los cuadernos incluidos, no de una comunidad activa.
+- Repositorio sin descargas ni validación externa en Hugging Face; la reproducibilidad depende de los cuadernos incluidos, no de una comunidad activa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/turasa22/klasifikasibijikopiconvnext
+- Hugging Face: https://huggingface.co/turasa22/klasifikasibijikopiconvnext
 - Manuscrito asociado: "Flat versus Cascade CNN Architectures for Coffee Bean Classification" (Nur Fathur Rachman & Cucun Very Angkoso, Universitas Trunojoyo Madura); no se proporciona URL en la información disponible.
 - Certificado de derechos de autor indonesio HKI n.º 001554369 (referenciado en la model card; sin URL).
-- Contenido del repositorio: `Dataset_Split2.zip`, `01_Model_Weights_Final/`, `02_Reports_and_Metrics/`, `03_Jupyter_Notebooks/` (accesibles desde la página de HuggingFace).
+- Contenido del repositorio: `Dataset_Split2.zip`, `01_Model_Weights_Final/`, `02_Reports_and_Metrics/`, `03_Jupyter_Notebooks/` (accesibles desde la página de Hugging Face).

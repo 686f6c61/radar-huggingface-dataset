@@ -4,7 +4,7 @@
 
 El modelo `eric-the-coder/queue_8dsnxa` es un modelo de lenguaje multimodal (image-text-to-text) desarrollado por el usuario eric-the-coder sobre una base denominada `vera6/affine-5g4yy75zuz-t6`. Según los tags, emplea una arquitectura de mezcla de expertos (MoE) de la familia Qwen 3.5 (`qwen3_5_moe`) y ha sido sometido a un proceso de fine-tuning con offline DPO (preferencia directa por optimización), además de incorporar características de razonamiento (`reason-v4`). Con 35.107.181.936 parámetros totales, se posiciona en el rango de modelos grandes, aunque se desconoce el número de parámetros activos al ser MoE.
 
-El modelo está diseñado para generación de texto y conversación, con capacidad de procesar tanto texto como imágenes. Su licencia Apache 2.0 permite uso comercial y modificación, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. Fue creado el 19 de agosto de 2026, por lo que es un modelo muy reciente con escasa documentación pública y sin métricas de rendimiento publicadas. Su relevancia radica en la combinación de arquitectura MoE, multimodalidad y entrenamiento con DPO, aunque su adopción práctica está limitada por la falta de información detallada.
+El modelo está diseñado para generación de texto y conversación, con capacidad de procesar tanto texto como imágenes. Su licencia Apache 2.0 permite uso comercial y modificación, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. Fue creado el 19 de agosto de 2026, por lo que es un modelo muy reciente con escasa documentación pública y sin métricas de rendimiento publicadas. Su relevancia radica en la combinación de arquitectura MoE, multimodalidad y entrenamiento con DPO, aunque su adopción práctica está limitada por la falta de información detallada.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ Sin embargo, esta comparación es meramente estructural y no refleja rendimiento
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que se requiere aprobación previa en HuggingFace para su uso.
+- Acceso restringido: el modelo es gated, por lo que se requiere aprobación previa en Hugging Face para su uso.
 - Documentación insuficiente: no se han publicado detalles sobre arquitectura interna, datos de entrenamiento, contexto máximo ni rendimiento.
 - Riesgo de alucinaciones: al ser un modelo de lenguaje, puede generar información falsa o no verificada, especialmente en dominios especializados.
 - Sesgos potenciales: al no conocerse la composición del dataset, no se puede evaluar la presencia de sesgos de género, raza o culturales.
@@ -81,6 +81,6 @@ Sin embargo, esta comparación es meramente estructural y no refleja rendimiento
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/eric-the-coder/queue_8dsnxa)
+- [Modelo en Hugging Face](https://huggingface.co/eric-the-coder/queue_8dsnxa)
 - [Modelo similar: eric-the-coder/queue_sbs-v5-v6](https://huggingface.co/eric-the-coder/queue_sbs-v5-v6)
 - [Modelo base referenciado: vera6/affine-5g4yy75zuz-t6](https://huggingface.co/vera6/affine-5g4yy75zuz-t6) (no verificado)

@@ -96,7 +96,7 @@ Alternativas de otros fabricantes: no disponible en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aparusel/kolibri-1-gguf
+- Repositorio Hugging Face: https://huggingface.co/aparusel/kolibri-1-gguf
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1
 - Licencia del modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/main/LICENSE
 - Motor DwarfStar (ds4): https://github.com/antirez/ds4

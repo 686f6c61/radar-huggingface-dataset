@@ -82,5 +82,5 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alibaba-VELLDEPTH/Qwen35-9b-DreamRealm
+- Hugging Face: https://huggingface.co/Alibaba-VELLDEPTH/Qwen35-9b-DreamRealm
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -53,9 +53,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| yugamax/bge-reranker-v2-m3-lora | LoRA sobre BGE-Reranker-V2-M3 | No disponible (base: 278M) | No disponible | No disponible | HuggingFace |
-| BAAI/bge-reranker-v2-m3 | Cross-encoder (RoBERTa) | 278M | 8192 (segun BGE) | MIT (segun BGE) | HuggingFace |
-| minhnv7/bge-reranker-v2m3-lora | LoRA sobre BGE-Reranker-V2-M3 | No disponible | No disponible | No disponible | HuggingFace |
+| yugamax/bge-reranker-v2-m3-lora | LoRA sobre BGE-Reranker-V2-M3 | No disponible (base: 278M) | No disponible | No disponible | Hugging Face |
+| BAAI/bge-reranker-v2-m3 | Cross-encoder (RoBERTa) | 278M | 8192 (segun BGE) | MIT (segun BGE) | Hugging Face |
+| minhnv7/bge-reranker-v2m3-lora | LoRA sobre BGE-Reranker-V2-M3 | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. El adaptador de yugamax y el de minhnv7 son ambos LoRA sobre el mismo modelo base, por lo que sus capacidades son probablemente similares, pero sin información de entrenamiento no se puede afirmar nada concluyente.
 

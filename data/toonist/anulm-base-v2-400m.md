@@ -94,7 +94,7 @@ No se dispone de comparaciones de rendimiento con alternativas de la misma categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/toonist/AnuLM-Base-v2-400M
+- Modelo en Hugging Face: https://huggingface.co/toonist/AnuLM-Base-v2-400M
 - Repositorio del proyecto AnuLM: https://github.com/MOBIRIZER-TECHNOLOGY/AnuLM
 - Documentacion de resultados del proyecto: `docs/RESULTS.md` (seccion 39) en el repositorio
 - Script de construccion del corpus: `experiments/build_v2.py` en el repositorio

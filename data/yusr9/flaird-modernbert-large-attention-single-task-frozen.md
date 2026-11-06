@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `yusr9/flaird-modernbert-large-attention-single-task-frozen` es un clasificador de texto publicado en HuggingFace por el usuario yusr9, construido sobre un backbone ModernBERT-large y entrenado mediante la libreria `transformers` (etiqueta `generated_from_trainer`). Con 402.407.681 parametros totales y un repositorio de 1,7 GB, se trata de un encoder de tipo transformer afinado para una unica tarea de clasificacion, segun indica el sufijo `single-task` de su identificador. El sufijo `frozen` sugiere que el backbone se mantuvo congelado durante el ajuste y que solo se entreno la cabeza de clasificacion, aunque esto no esta confirmado por documentacion publica.
+El modelo `yusr9/flaird-modernbert-large-attention-single-task-frozen` es un clasificador de texto publicado en Hugging Face por el usuario yusr9, construido sobre un backbone ModernBERT-large y entrenado mediante la libreria `transformers` (etiqueta `generated_from_trainer`). Con 402.407.681 parametros totales y un repositorio de 1,7 GB, se trata de un encoder de tipo transformer afinado para una unica tarea de clasificacion, segun indica el sufijo `single-task` de su identificador. El sufijo `frozen` sugiere que el backbone se mantuvo congelado durante el ajuste y que solo se entreno la cabeza de clasificacion, aunque esto no esta confirmado por documentacion publica.
 
-La relevancia del modelo es limitada en el ecosistema actual: no tiene descargas ni valoraciones, no declara licencia ni idiomas soportados y su acceso esta restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo. Ademas, la model card no incluye ningun resultado de benchmark, lo que impide verificar su calidad frente a alternativas.
+La relevancia del modelo es limitada en el ecosistema actual: no tiene descargas ni valoraciones, no declara licencia ni idiomas soportados y su acceso esta restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo. Ademas, la model card no incluye ningun resultado de benchmark, lo que impide verificar su calidad frente a alternativas.
 
 Se enmarca en la familia FLAIRD, un identificador que aparece en las etiquetas del repositorio y para el que no se ha encontrado documentacion publica: no hay paper, blog ni repositorio asociado en los resultados de busqueda disponibles. En consecuencia, la ficha que sigue recoge los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no puede confirmarse.
 
@@ -21,7 +21,7 @@ Se enmarca en la familia FLAIRD, un identificador que aparece en las etiquetas d
 | Licencia | No disponible |
 | Formato de pesos | safetensors |
 | Tarea | text-classification |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 1,7 GB |
 | Libreria | transformers |
 | Codigo personalizado | Si (`custom_code`) |
@@ -30,7 +30,7 @@ Se enmarca en la familia FLAIRD, un identificador que aparece en las etiquetas d
 
 Por el nombre del repositorio, el modelo emplea como base ModernBERT-large, una arquitectura transformer de tipo encoder-only que sustituye las embeddings posicionales absolutas por embeddings rotatorios (RoPE) e intercala capas de atencion local y global, ademas de usar Flash Attention 2. ModernBERT-large tiene 28 capas, un tamano oculto de 1024 y un vocabulario de 50368 tokens, con soporte de secuencias de hasta 8192 tokens. Los 402.407.681 parametros reportados en safetensors son coherentes con ese backbone mas una cabeza de clasificacion. No obstante, no hay en la informacion proporcionada ninguna confirmacion oficial de estos detalles por parte del autor.
 
-El identificador indica una tarea unica de clasificacion (`single-task`), una cabeza basada en atencion (`attention`) y un backbone congelado (`frozen`), lo que apunta a un ajuste en el que solo se optimizaron los pesos de la cabeza mientras el encoder permanecia fijo. La model card incluye la etiqueta `generated_from_trainer`, lo que indica que el entrenamiento se realizo con `Trainer` de HuggingFace y que se registro en TensorBoard. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO u otra fase de alineacion, ni el esquema de etiquetas de la tarea. Todos estos datos se consideran no disponibles.
+El identificador indica una tarea unica de clasificacion (`single-task`), una cabeza basada en atencion (`attention`) y un backbone congelado (`frozen`), lo que apunta a un ajuste en el que solo se optimizaron los pesos de la cabeza mientras el encoder permanecia fijo. La model card incluye la etiqueta `generated_from_trainer`, lo que indica que el entrenamiento se realizo con `Trainer` de Hugging Face y que se registro en TensorBoard. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF, DPO u otra fase de alineacion, ni el esquema de etiquetas de la tarea. Todos estos datos se consideran no disponibles.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ La comparacion de rendimiento con estas alternativas no puede establecerse: el r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusr9/flaird-modernbert-large-attention-single-task-frozen
+- Modelo en Hugging Face: https://huggingface.co/yusr9/flaird-modernbert-large-attention-single-task-frozen
 - Paper de ModernBERT (arquitectura base): no disponible en la informacion proporcionada
 - Blog o documentacion de la familia FLAIRD: no disponible
 - Repositorio de codigo asociado: no disponible

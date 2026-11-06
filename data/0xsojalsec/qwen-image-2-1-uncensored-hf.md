@@ -84,9 +84,9 @@ La model card incluye una imagen de referencia (assets/Qwen-Image-2.1-Benchmark.
 
 | Modelo | Parametros | Contexto / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (0xSojalSec/Qwen-Image-2.1-Uncensored-HF) | 7,1 mil millones (transformer) | GGUF, cuantizaciones de BF16 a Q4_0; encoder Qwen3-VL 8B y VAE incluidos | qwen-research | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Qwen/Qwen-Image-2.1 (modelo base) | no disponible en la informacion proporcionada | Pesos originales en safetensors; pipeline text-to-image | qwen-research | HuggingFace (repositorio oficial de Qwen) |
-| abenzerps/Qwen-Image-2.1-Uncensored-GGUF (referenciado desde la model card) | no disponible | GGUF con las mismas cuantizaciones UC | no disponible | HuggingFace; es el destino al que apuntan los enlaces de descarga de la model card |
+| Este modelo (0xSojalSec/Qwen-Image-2.1-Uncensored-HF) | 7,1 mil millones (transformer) | GGUF, cuantizaciones de BF16 a Q4_0; encoder Qwen3-VL 8B y VAE incluidos | qwen-research | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Qwen/Qwen-Image-2.1 (modelo base) | no disponible en la informacion proporcionada | Pesos originales en safetensors; pipeline text-to-image | qwen-research | Hugging Face (repositorio oficial de Qwen) |
+| abenzerps/Qwen-Image-2.1-Uncensored-GGUF (referenciado desde la model card) | no disponible | GGUF con las mismas cuantizaciones UC | no disponible | Hugging Face; es el destino al que apuntan los enlaces de descarga de la model card |
 | Otras alternativas de generacion de imagen de pesos abiertos (FLUX.1, Stable Diffusion 3.5, etc.) | no disponible | no disponible | no disponible | Comparativa no cubierta en la informacion proporcionada |
 
 No se dispone de datos de rendimiento comparado entre estas opciones en la informacion facilitada.
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSojalSec/Qwen-Image-2.1-Uncensored-HF
+- Modelo en Hugging Face: https://huggingface.co/0xSojalSec/Qwen-Image-2.1-Uncensored-HF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio de GGUFs referenciado en la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-GGUF
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

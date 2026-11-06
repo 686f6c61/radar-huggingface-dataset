@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bllx/unit_LV.1_update_185eps` es un repositorio de pesos publicado en HuggingFace por el usuario `bllx` el 26 de octubre de 2026, bajo licencia MIT y en formato safetensors. El repositorio ocupa 6,8 GB y no incluye pipeline declarado, ni idiomas soportados, ni una model card con contenido técnico: el README se limita a la declaración de licencia. No hay información pública sobre el problema que resuelve, el organismo o equipo que lo desarrolla ni el proceso de entrenamiento.
+`bllx/unit_LV.1_update_185eps` es un repositorio de pesos publicado en Hugging Face por el usuario `bllx` el 26 de octubre de 2026, bajo licencia MIT y en formato safetensors. El repositorio ocupa 6,8 GB y no incluye pipeline declarado, ni idiomas soportados, ni una model card con contenido técnico: el README se limita a la declaración de licencia. No hay información pública sobre el problema que resuelve, el organismo o equipo que lo desarrolla ni el proceso de entrenamiento.
 
 El nombre del repositorio sugiere un checkpoint intermedio o experimental (`update_185eps`, posiblemente 185 épocas o pasos de actualización de un entrenamiento en curso), y el prefijo `unit_LV.1` podría corresponder a una versión interna de un proyecto. Ninguna de estas lecturas está confirmada por documentación del autor, por lo que deben tratarse como hipótesis de trabajo y no como especificaciones.
 
@@ -29,7 +29,7 @@ Respecto al entrenamiento, se desconoce el volumen de tokens, la composición de
 
 ## Capacidades
 
-- No hay capacidades documentadas por el autor. El repositorio no declara tarea en el campo `pipeline_tag` de HuggingFace, por lo que la modalidad (texto, imagen, audio, multimodal) no puede determinarse a partir de los metadatos públicos.
+- No hay capacidades documentadas por el autor. El repositorio no declara tarea en el campo `pipeline_tag` de Hugging Face, por lo que la modalidad (texto, imagen, audio, multimodal) no puede determinarse a partir de los metadatos públicos.
 - Generación de texto, razonamiento, código, matemáticas o visión: no disponible, sin confirmación.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -83,5 +83,5 @@ No disponible. No se ha identificado ningún modelo comparable, porque se descon
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bllx/unit_LV.1_update_185eps
+- Repositorio en Hugging Face: https://huggingface.co/bllx/unit_LV.1_update_185eps
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

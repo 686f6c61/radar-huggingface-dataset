@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `iouty/qwen3vl-makeup-qwen3vl_augmented` es un ajuste fino (fine-tune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario `iouty` y publicado en HuggingFace. Está entrenado con la librería Unsloth, que acelera el proceso de entrenamiento, y utiliza TRL (Transformer Reinforcement Learning) para el ajuste. El nombre del repositorio sugiere una especialización en tareas relacionadas con maquillaje (makeup), aunque la model card no proporciona detalles sobre el dataset ni el objetivo concreto del ajuste.
+El modelo `iouty/qwen3vl-makeup-qwen3vl_augmented` es un ajuste fino (fine-tune) del modelo multimodal Qwen3-VL-8B-Instruct, desarrollado por el usuario `iouty` y publicado en Hugging Face. Está entrenado con la librería Unsloth, que acelera el proceso de entrenamiento, y utiliza TRL (Transformer Reinforcement Learning) para el ajuste. El nombre del repositorio sugiere una especialización en tareas relacionadas con maquillaje (makeup), aunque la model card no proporciona detalles sobre el dataset ni el objetivo concreto del ajuste.
 
 El modelo base, Qwen3-VL-8B-Instruct, es un modelo de visión-lenguaje de 8.3 mil millones de parámetros, con arquitectura transformer multimodal, que soporta comprensión de imágenes, vídeo y texto, y es capaz de realizar razonamiento visual y agentes multimodales. Este fine-tune se distribuye bajo licencia Apache 2.0 y está orientado al idioma inglés. El repositorio tiene un tamaño de 0.2 GB, lo que sugiere que se trata de un adaptador LoRA o un ajuste ligero sobre el modelo base cuantizado en 4 bits.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| iouty/qwen3vl-makeup-qwen3vl_augmented | ~8.3B (base) | 32K | Apache 2.0 | HuggingFace | Fine-tune sin documentar, orientado a maquillaje |
-| Qwen3-VL-8B-Instruct (base) | ~8.3B | 32K | Apache 2.0 | HuggingFace | Modelo oficial, con benchmarks publicados |
-| LLaVA-NeXT-8B | ~8B | 32K | Apache 2.0 | HuggingFace | Modelo multimodal similar, sin fine-tune específico |
-| Phi-3.5-vision | ~4.2B | 128K | MIT | HuggingFace | Más ligero, pero menor capacidad de razonamiento visual |
+| iouty/qwen3vl-makeup-qwen3vl_augmented | ~8.3B (base) | 32K | Apache 2.0 | Hugging Face | Fine-tune sin documentar, orientado a maquillaje |
+| Qwen3-VL-8B-Instruct (base) | ~8.3B | 32K | Apache 2.0 | Hugging Face | Modelo oficial, con benchmarks publicados |
+| LLaVA-NeXT-8B | ~8B | 32K | Apache 2.0 | Hugging Face | Modelo multimodal similar, sin fine-tune específico |
+| Phi-3.5-vision | ~4.2B | 128K | MIT | Hugging Face | Más ligero, pero menor capacidad de razonamiento visual |
 
 La comparativa se basa en el modelo base, ya que el fine-tune no tiene métricas propias. El modelo destaca por su licencia permisiva y su herencia de Qwen3-VL, que ofrece buen rendimiento en tareas de visión-lenguaje, pero su falta de documentación limita su uso en entornos profesionales sin evaluación previa.
 
@@ -80,8 +80,8 @@ La comparativa se basa en el modelo base, ya que el fine-tune no tiene métricas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iouty/qwen3vl-makeup-qwen3vl_augmented
-- Colección Qwen3-VL en HuggingFace: https://huggingface.co/collections/Qwen/qwen3-vl
+- Modelo en Hugging Face: https://huggingface.co/iouty/qwen3vl-makeup-qwen3vl_augmented
+- Colección Qwen3-VL en Hugging Face: https://huggingface.co/collections/Qwen/qwen3-vl
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL
 - Documentación de transformers para Qwen3-VL-MoE: https://huggingface.co/docs/transformers/model_doc/qwen3_vl_moe
 - Sitio oficial de Qwen: https://qwen.ai/home

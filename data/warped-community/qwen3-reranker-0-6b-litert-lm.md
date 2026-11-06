@@ -84,9 +84,9 @@ No se dispone de datos de rendimiento comparativos entre estos checkpoints en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/warped-community/Qwen3-Reranker-0.6B-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/warped-community/Qwen3-Reranker-0.6B-litert-lm
 - Discusiones del modelo: https://huggingface.co/warped-community/Qwen3-Reranker-0.6B-litert-lm/discussions
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Reranker-0.6B
 - Fuente LiteRT original: https://huggingface.co/litert-community/Qwen3-Reranker-0.6B-LiteRT
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3-reranker-0.6b-qwen
 - Repositorio de referencia en GitHub: https://github.com/tucuong2308/Qwen3-Reranker-0.6B

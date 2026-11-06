@@ -69,9 +69,9 @@ El adaptador mejora chrF en +6,0 puntos y reduce los errores de formato residual
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jour/hy-mt2-7b-discord-lora | 20,97 M en adaptador (base 7B) | 4096 (config. de referencia) | LoRA de traducción para Discord sobre Hy-MT2-7B | Apache-2.0 | HuggingFace (adaptador; base no redistribuido) |
-| tencent/Hy-MT2-7B | 7B | no disponible | Traducción general | Apache-2.0 | HuggingFace |
-| Jour/hy-mt2-1.8b-discord-1.25bit-lora | no disponible (base 1.8B) | no disponible | LoRA de traducción para Discord sobre la variante 1.8B | no disponible | HuggingFace |
+| Jour/hy-mt2-7b-discord-lora | 20,97 M en adaptador (base 7B) | 4096 (config. de referencia) | LoRA de traducción para Discord sobre Hy-MT2-7B | Apache-2.0 | Hugging Face (adaptador; base no redistribuido) |
+| tencent/Hy-MT2-7B | 7B | no disponible | Traducción general | Apache-2.0 | Hugging Face |
+| Jour/hy-mt2-1.8b-discord-1.25bit-lora | no disponible (base 1.8B) | no disponible | LoRA de traducción para Discord sobre la variante 1.8B | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas de traducción en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de trad
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Jour/hy-mt2-7b-discord-lora
+- Adaptador en Hugging Face: https://huggingface.co/Jour/hy-mt2-7b-discord-lora
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-7B
 - GGUF oficial del modelo base: https://huggingface.co/tencent/Hy-MT2-7B-GGUF
 - Adaptador hermano para la variante 1.8B: https://huggingface.co/Jour/hy-mt2-1.8b-discord-1.25bit-lora

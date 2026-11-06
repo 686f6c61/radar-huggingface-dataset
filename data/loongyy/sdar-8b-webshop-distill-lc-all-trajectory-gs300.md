@@ -68,5 +68,5 @@ No se han identificado modelos comparables en la misma categoria (SDAR con block
 ## Enlaces
 
 - Repositorio del modelo: https://huggingface.co/loongyy/sdar-8b-webshop-distill-lc-all-trajectory-gs300
-- Perfil del autor en HuggingFace: https://huggingface.co/loongyy
+- Perfil del autor en Hugging Face: https://huggingface.co/loongyy
 - No se han encontrado papers, blogs o demos adicionales en la busqueda web.

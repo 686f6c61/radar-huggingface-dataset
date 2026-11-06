@@ -99,7 +99,7 @@ Todos los checkpoints de la trayectoria comparten estructura, licencia y regimen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-50
+- Repositorio Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-50
 - Modelo base directo (step 25): https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-25
 - Siguiente checkpoint publico (step 75): https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-75
 - Dataset SFT v3: https://huggingface.co/datasets/vosldtgbj/project-llm-dataset-sft-citation-optimized-v3

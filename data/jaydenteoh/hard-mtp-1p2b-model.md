@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 2,5-5 GB en fp32/bf16 sin cuantizar (5,1 GB de tamano de repo); con cuantizacion a 8 bits o 4 bits podria reducirse a menos de 1,5 GB, aunque no hay pesos cuantizados publicados.
 - Cabe comodamente en GPUs de consumo: cualquier GPU con 6 GB o mas de VRAM (RTX 3060, RTX 4060, RTX 4090) es suficiente; no se requiere A100 ni H100.
 - Para entrenamiento o fine-tuning completo, una sola GPU de 24 GB (RTX 3090/4090) deberia bastar dado el tamano de 1,27B.
-- Despliegue: transformers con `trust_remote_code=True` (obligatorio, ya que `model_type: hf_mtp` no esta integrado en la libreria). No hay soporte nativo documentado para vLLM, llama.cpp, Ollama ni TGI; `inference: false` esta marcado en la model card, por lo que no hay inference API en HuggingFace.
+- Despliegue: transformers con `trust_remote_code=True` (obligatorio, ya que `model_type: hf_mtp` no esta integrado en la libreria). No hay soporte nativo documentado para vLLM, llama.cpp, Ollama ni TGI; `inference: false` esta marcado en la model card, por lo que no hay inference API en Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,12 +75,12 @@ No hay alternativas comerciales directamente comparables: se trata de un modelo 
 - Limitacion de idioma: solo ingles; no debe usarse con castellano ni otros idiomas.
 - Contexto corto: 2048 tokens, insuficiente para documentos largos o RAG.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo arbitrario del repo; revisar los ficheros de modelado antes de usarlo en entornos sensibles.
-- No apto para produccion de producto final: es un checkpoint de investigacion con una unica semilla (sin promediado de runs), marcado `inference: false` en HuggingFace.
+- No apto para produccion de producto final: es un checkpoint de investigacion con una unica semilla (sin promediado de runs), marcado `inference: false` en Hugging Face.
 - No hay soporte para tool calling, agentes ni conversacion.
 - Licencia MIT: sin restricciones para uso comercial, pero sin garantias.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/hard-mtp-1p2b-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/hard-mtp-1p2b-model
 - Articulo (arXiv): https://arxiv.org/abs/2610.38331
 - Codigo (GitHub): https://github.com/JaydenTeoh/Soft-MTP

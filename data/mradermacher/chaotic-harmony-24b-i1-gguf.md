@@ -26,7 +26,7 @@ La informacion disponible sobre el modelo base es muy limitada: se desconoce la 
 
 El repositorio es una publicacion de cuantizaciones, no un modelo entrenado. El modelo base, Sorihon/Chaotic-Harmony-24B, fue producido con mergekit, una herramienta de fusion de pesos que combina dos o mas modelos existentes mediante tecnicas de interpolacion (como SLERP, TIES, DARE o linear). Esto implica que las capacidades, el estilo y las limitaciones del resultado dependen enteramente de los modelos de origen, que no se especifican en la informacion disponible.
 
-Sobre el proceso de cuantizacion, la model card indica que se trata de cuantizaciones ponderadas con matriz de importancia (imatrix) generadas por mradermacher, con soporte para cuantizacion de tensores de salida y conversion a formato HuggingFace. No se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. Tampoco se confirma si el modelo base es un transformer decoder denso o presenta algun componente de tipo MoE; con 23,57B de parametros totales y sin datos de parametros activos, la opcion mas probable es un transformer denso, pero no puede afirmarse con la informacion disponible.
+Sobre el proceso de cuantizacion, la model card indica que se trata de cuantizaciones ponderadas con matriz de importancia (imatrix) generadas por mradermacher, con soporte para cuantizacion de tensores de salida y conversion a formato Hugging Face. No se documentan tokens de entrenamiento, composicion del dataset, ni fases de RLHF, DPO o ajuste por instrucciones. Tampoco se confirma si el modelo base es un transformer decoder denso o presenta algun componente de tipo MoE; con 23,57B de parametros totales y sin datos de parametros activos, la opcion mas probable es un transformer denso, pero no puede afirmarse con la informacion disponible.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento ni de modelos comparables de otros autores
 
 ## Enlaces
 
-- HuggingFace (repositorio de cuantizaciones i1): https://huggingface.co/mradermacher/Chaotic-Harmony-24B-i1-GGUF
+- Hugging Face (repositorio de cuantizaciones i1): https://huggingface.co/mradermacher/Chaotic-Harmony-24B-i1-GGUF
 - Modelo base: https://huggingface.co/Sorihon/Chaotic-Harmony-24B
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/Chaotic-Harmony-24B-GGUF
 - Pagina de resumen del modelo en mradermacher: https://hf.tst.eu/model#Chaotic-Harmony-24B-i1-GGUF

@@ -86,6 +86,6 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-NoForce-8Tasks-Obs2-H10-30K-20260927
+- Repositorio en Hugging Face: https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-NoForce-8Tasks-Obs2-H10-30K-20260927
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada.

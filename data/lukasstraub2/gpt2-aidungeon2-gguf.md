@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lukasstraub2/gpt2-aidungeon2-gguf` es un repositorio publicado en HuggingFace por el usuario `lukasstraub2` que contiene un modelo en formato GGUF. Por el nombre del repositorio, se infiere que se trata de una versión de GPT-2 ajustada (fine-tune) sobre datos del juego de aventuras interactivas AI Dungeon 2, aunque la model card no proporciona ninguna información adicional que confirme esta hipótesis. El modelo tiene 1.557.611.200 parámetros (aproximadamente 1,5 mil millones) y el tamaño total del repositorio es de 5,2 GB, lo que sugiere que contiene múltiples archivos de pesos cuantizados en formato GGUF.
+El modelo `lukasstraub2/gpt2-aidungeon2-gguf` es un repositorio publicado en Hugging Face por el usuario `lukasstraub2` que contiene un modelo en formato GGUF. Por el nombre del repositorio, se infiere que se trata de una versión de GPT-2 ajustada (fine-tune) sobre datos del juego de aventuras interactivas AI Dungeon 2, aunque la model card no proporciona ninguna información adicional que confirme esta hipótesis. El modelo tiene 1.557.611.200 parámetros (aproximadamente 1,5 mil millones) y el tamaño total del repositorio es de 5,2 GB, lo que sugiere que contiene múltiples archivos de pesos cuantizados en formato GGUF.
 
 La relevancia de este modelo es limitada: no se han publicado métricas de rendimiento, detalles de entrenamiento ni documentación técnica. Su licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. Sin embargo, la ausencia de información oficial hace que su adopción en entornos de producción sea arriesgada sin una evaluación previa por parte del usuario.
 
@@ -53,4 +53,4 @@ No disponible. No se ha proporcionado información sobre modelos comparables ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lukasstraub2/gpt2-aidungeon2-gguf
+- Repositorio en Hugging Face: https://huggingface.co/lukasstraub2/gpt2-aidungeon2-gguf

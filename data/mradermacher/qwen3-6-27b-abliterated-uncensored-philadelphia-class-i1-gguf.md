@@ -117,7 +117,7 @@ La comparación relevante aquí es interna al propio ecosistema del modelo: el r
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo (GGUF i1-imatrix): https://huggingface.co/mradermacher/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF
+- Repositorio Hugging Face de este modelo (GGUF i1-imatrix): https://huggingface.co/mradermacher/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF
 - Repositorio de cuantizaciones estáticas (incluye ficheros `mmproj` para visión): https://huggingface.co/mradermacher/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-GGUF
 - Modelo base en safetensors/bfloat16: https://huggingface.co/PhillyLabs/Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#Qwen3.6-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-i1-GGUF

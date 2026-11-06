@@ -83,9 +83,9 @@ Notas sobre las métricas, según el autor: el CAI emplea pesos de adaptabilidad
 
 | Modelo / herramienta | Tipo | Parametros | Contexto | CAI | Δ5′ MFE (kcal/mol) | Licencia | Disponibilidad |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| Rice Mitochondria Optimizer v2 | BigBird fine-tuneado | 87,9 M | 2048 | 0,819 | 0,020 | Apache 2.0 | HuggingFace, pesos abiertos |
-| CodonTransformer (base) | BigBird | no disponible en la informacion | no disponible en la informacion | no disponible para mitocondria de arroz | no disponible | no disponible en la informacion | HuggingFace |
-| Rice_Mitochondria_Optimizer (v1) | BigBird fine-tuneado sobre fragmentos de ~6 kb | no disponible en la informacion | no disponible en la informacion | no disponible | no disponible | Apache 2.0 (segun la ficha de la v1) | HuggingFace |
+| Rice Mitochondria Optimizer v2 | BigBird fine-tuneado | 87,9 M | 2048 | 0,819 | 0,020 | Apache 2.0 | Hugging Face, pesos abiertos |
+| CodonTransformer (base) | BigBird | no disponible en la informacion | no disponible en la informacion | no disponible para mitocondria de arroz | no disponible | no disponible en la informacion | Hugging Face |
+| Rice_Mitochondria_Optimizer (v1) | BigBird fine-tuneado sobre fragmentos de ~6 kb | no disponible en la informacion | no disponible en la informacion | no disponible | no disponible | Apache 2.0 (segun la ficha de la v1) | Hugging Face |
 | Geneious | Herramienta comercial de optimizacion de codones | no aplica | no aplica | 0,777 | 0,815 | propietaria | comercial |
 | IDT | Servicio comercial de optimizacion de codones | no aplica | no aplica | 0,781 | 0,652 | propietaria / servicio | plataforma web de IDT |
 
@@ -106,7 +106,7 @@ No se dispone de datos comparativos de otros modelos abiertos de optimización c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer_v2
+- Modelo en Hugging Face: https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer_v2
 - Modelo base CodonTransformer: https://huggingface.co/adibvafa/CodonTransformer
 - Versión anterior del proyecto: https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer
 - Tabla comparativa de evaluación publicada en el repositorio del modelo: `dataset_comparison_summary.csv`

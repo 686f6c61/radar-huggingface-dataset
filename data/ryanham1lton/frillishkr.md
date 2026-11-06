@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrillishKR es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente reproduce la cabecera YAML con la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no permite determinar con fiabilidad el número de parámetros ni el formato de los ficheros.
+FrillishKR es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica: únicamente reproduce la cabecera YAML con la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio ocupa 0,1 GB, lo que sugiere un conjunto de pesos de pequeño tamaño, pero no permite determinar con fiabilidad el número de parámetros ni el formato de los ficheros.
 
 El nombre del modelo combina "Frillish" (una criatura de la franquicia Pokémon) con el sufijo "KR", sin que la información disponible aclare si se trata de un fine-tuning temático, un modelo experimental, un checkpoint intermedio o un artefacto de prueba. No hay pipeline declarado, no consta ningún idioma soportado y el modelo no registra descargas ni interacciones en el momento de la consulta.
 
@@ -73,5 +73,5 @@ No disponible. La ausencia de datos sobre arquitectura, tamaño y rendimiento im
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/FrillishKR
+- Hugging Face: https://huggingface.co/Ryanham1lton/FrillishKR
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

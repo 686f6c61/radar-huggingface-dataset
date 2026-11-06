@@ -84,7 +84,7 @@ La información proporcionada no incluye datos de otros modelos TTS de pesos abi
 
 ## Enlaces
 
-- HuggingFace (esta versión INT4): https://huggingface.co/shustov-te/drama-3-int4-2910-update
+- Hugging Face (esta versión INT4): https://huggingface.co/shustov-te/drama-3-int4-2910-update
 - Pesos originales de Drama 3: https://huggingface.co/fishaudio/drama-3
 - Scripts de cuantización INT4: https://huggingface.co/akhaliq/drama-3-int4
 - SGLang-Omni: https://sgl-project.github.io/sglang-omni/

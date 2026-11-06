@@ -89,5 +89,5 @@ No existen alternativas comerciales directas publicadas para esta tarea tan espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ws-fy/qwen2.5-3b-character-material-normalizer-gguf
+- Modelo en Hugging Face: https://huggingface.co/ws-fy/qwen2.5-3b-character-material-normalizer-gguf
 - Modelo base (Qwen2.5-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

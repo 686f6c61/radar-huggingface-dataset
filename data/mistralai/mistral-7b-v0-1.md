@@ -4,7 +4,7 @@
 
 Mistral-7B-v0.1 es un modelo de lenguaje generativo preentrenado de 7.000 millones de parámetros desarrollado por la empresa francesa Mistral AI, publicado el 20 de septiembre de 2023 bajo licencia Apache 2.0. Se trata de un modelo base (no afinado con instrucciones ni con mecanismos de moderación) cuyo objetivo es servir como fundamento para tareas de generación de texto y para posteriores procesos de ajuste fino. Su relevancia radica en que, segun la propia model card, supera a Llama 2 13B en todas las pruebas realizadas por el equipo, pese a tener aproximadamente la mitad de parámetros.
 
-Arquitectónicamente es un transformer decoder-only que incorpora Grouped-Query Attention (GQA) y Sliding-Window Attention, ademas de un tokenizador BPE con respaldo a nivel de byte (byte-fallback BPE). El modelo tiene 7.241.732.096 parámetros reales y un repositorio de 44,0 GB en formato safetensors. Con más de 369.000 descargas y más de 4.200 "likes" en HuggingFace, se ha consolidado como una de las referencias de la IA abierta de tamano medio, aunque su licencia y su naturaleza de modelo base condicionan su uso directo en produccion.
+Arquitectónicamente es un transformer decoder-only que incorpora Grouped-Query Attention (GQA) y Sliding-Window Attention, ademas de un tokenizador BPE con respaldo a nivel de byte (byte-fallback BPE). El modelo tiene 7.241.732.096 parámetros reales y un repositorio de 44,0 GB en formato safetensors. Con más de 369.000 descargas y más de 4.200 "likes" en Hugging Face, se ha consolidado como una de las referencias de la IA abierta de tamano medio, aunque su licencia y su naturaleza de modelo base condicionan su uso directo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mistralai/Mistral-7B-v0.1
+- Hugging Face: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Paper (arXiv:2310.06825): https://arxiv.org/abs/2310.06825
 - Blog de lanzamiento: https://mistral.ai/news/announcing-mistral-7b/
 - Sitio oficial de Mistral AI: https://mistral.ai/

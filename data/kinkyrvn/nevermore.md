@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nevermore 1.0 es una familia de detectores de objetos desarrollada por Kinky Raven y publicada en HuggingFace bajo el identificador `kinkyrvn/nevermore`. Está especializada en la detección de cuerpos y partes del cuerpo (personas, caras, pechos, genitales, nalgas y pies) en tiempo real, con especial atención a la latencia mínima para escenarios de gaming, visualización de vídeo y uso de ordenador en directo. El modelo aborda un problema concreto: los detectores NSFW genéricos como NudeNet o HotScreen presentan un rendimiento claramente inferior en contenido furry, anime y miniaturas, y Nevermore mejora sustancialmente en esos dominios.
+Nevermore 1.0 es una familia de detectores de objetos desarrollada por Kinky Raven y publicada en Hugging Face bajo el identificador `kinkyrvn/nevermore`. Está especializada en la detección de cuerpos y partes del cuerpo (personas, caras, pechos, genitales, nalgas y pies) en tiempo real, con especial atención a la latencia mínima para escenarios de gaming, visualización de vídeo y uso de ordenador en directo. El modelo aborda un problema concreto: los detectores NSFW genéricos como NudeNet o HotScreen presentan un rendimiento claramente inferior en contenido furry, anime y miniaturas, y Nevermore mejora sustancialmente en esos dominios.
 
 Técnicamente, Nevermore es un conjunto de fine-tunings de Ultralytics YOLO26 (variantes YOLO26n y YOLO26s) exportados a formato ONNX, con cinco niveles o "tiers" (tiny, small, medium, big y huge) que van desde 4,9 MB en fp16 hasta 19,3 MB. Los pesos más pequeños ejecutan inferencia en torno a 2,4 ms por fotograma en una RTX 4090, lo que lo hace apto para censura o moderación de contenido en tiempo real. Su licencia es AGPL-3.0, heredada de los pesos base de Ultralytics, lo que impone obligaciones de código fuente a las aplicaciones que lo integren.
 
@@ -112,7 +112,7 @@ Nevermore supera con claridad a NudeNet y HotScreen en el agregado, sobre todo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kinkyrvn/nevermore
+- Modelo en Hugging Face: https://huggingface.co/kinkyrvn/nevermore
 - Modelo base Ultralytics YOLO26: https://huggingface.co/Ultralytics/YOLO26
 - Pagina oficial del proyecto: https://kinkyraven.com/nevermore/
 - Sub Control (aplicacion de referencia): https://subcontrol.kinkyraven.com/

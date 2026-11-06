@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de otros modelos ASR especificos d
 
 ## Enlaces
 
-- Modelo ONNX en HuggingFace: https://huggingface.co/onnx-community/zero-stt-hinglish-ONNX
+- Modelo ONNX en Hugging Face: https://huggingface.co/onnx-community/zero-stt-hinglish-ONNX
 - Modelo base original: https://huggingface.co/shunyalabs/zero-stt-hinglish
 - Espacio de conversion a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx
 - Documentacion del pipeline ASR en Transformers.js: https://huggingface.co/docs/transformers.js/api/pipelines#module_pipelines.AutomaticSpeechRecognitionPipeline

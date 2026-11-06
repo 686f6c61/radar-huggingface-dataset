@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vereinte-Menschheit-V7-2 es un repositorio de modelo publicado en HuggingFace por el usuario Zolrak0304 bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia, sin ninguna descripcion del modelo, de su arquitectura, de sus datos de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos, y registra 0 descargas y 0 likes desde su creacion el 21 de octubre de 2026.
+Vereinte-Menschheit-V7-2 es un repositorio de modelo publicado en Hugging Face por el usuario Zolrak0304 bajo licencia MIT. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia, sin ninguna descripcion del modelo, de su arquitectura, de sus datos de entrenamiento ni de sus capacidades. El repositorio no declara pipeline de inferencia, idiomas soportados ni formato de pesos, y registra 0 descargas y 0 likes desde su creacion el 21 de octubre de 2026.
 
 La ausencia de documentacion tecnica impide determinar cuestiones basicas como el numero de parametros, la longitud de contexto o la familia arquitectonica. El nombre del repositorio sugiere una septima iteracion de una serie previa (V7) con una revision 2, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. Tampoco hay informacion sobre si los pesos estan realmente subidos al repositorio o si este solo contiene metadatos.
 
@@ -67,7 +67,7 @@ No disponible. Sin conocer la categoria (tamano, modalidad, tarea) del modelo no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vereinte-Menschheit-V7-2 | no disponible | no disponible | MIT | repositorio HuggingFace sin descargas |
+| Vereinte-Menschheit-V7-2 | no disponible | no disponible | MIT | repositorio Hugging Face sin descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No disponible. Sin conocer la categoria (tamano, modalidad, tarea) del modelo no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zolrak0304/Vereinte-Menschheit-V7-2
+- Repositorio en Hugging Face: https://huggingface.co/Zolrak0304/Vereinte-Menschheit-V7-2
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales asociados al modelo.

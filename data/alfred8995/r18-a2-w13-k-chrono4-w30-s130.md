@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w30-s130` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y la etiqueta `sn38-nanochrono` que acompanan al repositorio, se trata de un experimento de la familia "chrono" del autor, sin documentacion publica disponible en la informacion proporcionada. El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w30-s130` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Por el identificador y la etiqueta `sn38-nanochrono` que acompanan al repositorio, se trata de un experimento de la familia "chrono" del autor, sin documentacion publica disponible en la informacion proporcionada. El repositorio esta marcado como de acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 El modelo cuenta con aproximadamente 2.018 millones de parametros (unos 2,02 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 6,3 GB, lo que sugiere pesos en precision de 16 o 32 bits. No se dispone de informacion sobre arquitectura interna, contexto, datos de entrenamiento ni idiomas soportados. El identificador contiene segmentos como "r18", "a2", "w13", "k", "chrono4", "w30" y "s130", que probablemente codifican hiperparametros del experimento (capas, anchura, ventana, semilla), pero no hay documentacion que lo confirme.
 
@@ -73,7 +73,7 @@ La comparativa es estructural (tamano y licencia); no se dispone de datos de ren
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card tecnica, paper ni resultados que permitan evaluar su calidad o sesgos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso automatizado y su inclusion en pipelines de CI/CD.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso automatizado y su inclusion en pipelines de CI/CD.
 - Riesgo de alucinacion: desconocido pero esperable en un modelo de ~2 B sin alineacion documentada; no hay evidencia de RLHF o DPO.
 - Idiomas: no se declaran idiomas soportados; el rendimiento en castellano es incierto.
 - Licencia Apache 2.0: permite uso comercial, pero al ser un checkpoint sin garantias ni documentacion, el usuario asume todo el riesgo de calidad y cumplimiento.
@@ -83,5 +83,5 @@ La comparativa es estructural (tamano y licencia); no se dispone de datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w30-s130
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w30-s130
 - Perfil del autor: https://huggingface.co/alfred8995

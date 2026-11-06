@@ -90,8 +90,8 @@ Los datos especificos de Kimi K2 y otros modelos comparables no estan disponible
 
 ## Enlaces
 
-- HuggingFace (repo del autor): https://huggingface.co/babyfacez/Kimi-K3
-- HuggingFace (Moonshot AI): https://huggingface.co/moonshotai
+- Hugging Face (repo del autor): https://huggingface.co/babyfacez/Kimi-K3
+- Hugging Face (Moonshot AI): https://huggingface.co/moonshotai
 - Chat Kimi K3: https://www.kimi.com
 - Pagina del modelo: https://www.kimi.ai/ai-models/kimi-k3
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3

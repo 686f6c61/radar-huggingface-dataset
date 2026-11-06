@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cache KV | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HyLo-Llama-8MLA8GDN-8K-SFT | 1,61B | 8.192 tokens entrenados (131.072 en config, no soportado) | 7,8 % del base | AMD research-only (no comercial) | HuggingFace, safetensors |
-| meta-llama/Llama-3.2-1B-Instruct (base) | 1,24B | 128.000 tokens | Cache KV completa | Llama 3.2 Community License | HuggingFace, safetensors, GGUF de terceros |
-| meta-llama/Llama-3.1-8B-Instruct (profesor) | 8,03B | 128.000 tokens | Cache KV completa | Llama 3.1 Community License | HuggingFace, safetensors, GGUF de terceros |
+| HyLo-Llama-8MLA8GDN-8K-SFT | 1,61B | 8.192 tokens entrenados (131.072 en config, no soportado) | 7,8 % del base | AMD research-only (no comercial) | Hugging Face, safetensors |
+| meta-llama/Llama-3.2-1B-Instruct (base) | 1,24B | 128.000 tokens | Cache KV completa | Llama 3.2 Community License | Hugging Face, safetensors, GGUF de terceros |
+| meta-llama/Llama-3.1-8B-Instruct (profesor) | 8,03B | 128.000 tokens | Cache KV completa | Llama 3.1 Community License | Hugging Face, safetensors, GGUF de terceros |
 | Otras alternativas de ~1,5B en idioma ingles | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion relevante es contra el propio modelo base: HyLo anade 0,37B de parametros respecto a Llama-3.2-1B-Instruct y renuncia a la mayor parte del contexto nominal a cambio de una cache KV 12,8 veces menor. Frente a alternativas densas de tamano similar, no se dispone de datos de rendimiento publicados en la informacion proporcionada que permitan una comparacion cuantitativa honesta.
@@ -103,7 +103,7 @@ La comparacion relevante es contra el propio modelo base: HyLo anade 0,37B de pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-8MLA8GDN-8K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-8MLA8GDN-8K-SFT
 - Paper: Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling — https://arxiv.org/abs/2604.24715
 - Referencia adicional citada en los tags: arXiv:2505.17272 — https://arxiv.org/abs/2505.17272
 - Referencia adicional citada en los tags: arXiv:2503.11132 — https://arxiv.org/abs/2503.11132

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-20b-functioncalling (este, FP8-KV) | ~20,4 B | no disponible | Function calling multitarea | Apache 2.0 | HuggingFace (copia vLLM) |
-| granite-20b-code-instruct (base) | ~20 B | no disponible | Codigo e instrucciones | Apache 2.0 | HuggingFace (IBM) |
+| granite-20b-functioncalling (este, FP8-KV) | ~20,4 B | no disponible | Function calling multitarea | Apache 2.0 | Hugging Face (copia vLLM) |
+| granite-20b-code-instruct (base) | ~20 B | no disponible | Codigo e instrucciones | Apache 2.0 | Hugging Face (IBM) |
 | Alternativas de function calling de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de datos de rendimiento comparativo con otros modelos de function calling, por lo que la comparativa se limita a la relacion con el modelo base del que deriva.
@@ -87,7 +87,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento comparativ
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/vllm-project/granite-20b-functioncalling-FP8-KV
+- Hugging Face (este checkpoint): https://huggingface.co/vllm-project/granite-20b-functioncalling-FP8-KV
 - Repositorio original de la copia FP8-KV: https://huggingface.co/mbayser/granite-20b-functioncalling-FP8-KV
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-20b-functioncalling
 - Modelo base: https://huggingface.co/ibm-granite/granite-20b-code-instruct

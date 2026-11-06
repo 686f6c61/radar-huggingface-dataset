@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nmarshall/wormz-a` no es un modelo de inteligencia artificial. Es un repositorio alojado en HuggingFace cuyo contenido es OpenWA, un proyecto de software escrito en Rust que pretende reimplementar de forma fiel el videojuego Worms Armageddon (1999) para PC. El autor del repositorio es el usuario `nmarshall`; la model card describe el proyecto, sus objetivos y su estado, pero no incluye ningun artefacto de aprendizaje automatico: el repositorio ocupa 0.0 GB y no declara pipeline, idiomas ni pesos.
+`nmarshall/wormz-a` no es un modelo de inteligencia artificial. Es un repositorio alojado en Hugging Face cuyo contenido es OpenWA, un proyecto de software escrito en Rust que pretende reimplementar de forma fiel el videojuego Worms Armageddon (1999) para PC. El autor del repositorio es el usuario `nmarshall`; la model card describe el proyecto, sus objetivos y su estado, pero no incluye ningun artefacto de aprendizaje automatico: el repositorio ocupa 0.0 GB y no declara pipeline, idiomas ni pesos.
 
 El objetivo declarado es una reimplementacion tick a tick del juego original, basada en descompilacion y analisis de comportamiento de `WA.exe`, con soporte futuro para Windows, Linux/SteamOS y macOS sobre x86-64 y ARM64. El proyecto se distingue de otros juegos libres inspirados en Worms (Hedgewars, Wormux/Warmux) en que no busca un clon con mecanicas similares, sino replicar el comportamiento exacto del original, incluida la reproduccion de repeticiones sin desincronizaciones.
 
@@ -19,7 +19,7 @@ En el momento de la consulta el proyecto esta en fases muy tempranas: segun la p
 | Idiomas soportados | No disponible. La documentacion y el codigo se presentan en ingles |
 | Licencia | GPL-3.0 (GPLv3), segun tag y model card |
 | Formato de pesos | No aplica. El repositorio no contiene pesos; tamano declarado 0.0 GB |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Autor | nmarshall |
 | Fecha de creacion | 2026-10-28 |
 | Ultima actualizacion | 2026-10-28 |
@@ -101,7 +101,7 @@ No aplica una comparacion entre modelos de IA. La model card menciona dos proyec
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nmarshall/wormz-a
+- Repositorio en Hugging Face: https://huggingface.co/nmarshall/wormz-a
 - Worms Armageddon en Steam: https://store.steampowered.com/app/217200/Worms_Armageddon/
 - Worms Armageddon en GOG: https://www.gog.com/en/game/worms_armageddon
 - Licencia del proyecto (referenciada en la model card): `LICENSE.md` en la raiz del repositorio

@@ -30,7 +30,7 @@ Su relevancia es metodológica más que de rendimiento: permite comparar réplic
 | Nombre interno de ejecucion | `inkanthg1_inkanth_g1_b2_s1` |
 | Fecha de entrenamiento | 2026-08-10 |
 | Exportacion | 2026-09-18 (desde Tinker; metadatos en `tinker_meta.json`) |
-| Repositorio HuggingFace | 16,9 GB, 0 descargas, 0 likes |
+| Repositorio Hugging Face | 16,9 GB, 0 descargas, 0 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| `ct-inkling-anth-gen-mid-g1-b2` | Adaptador LoRA r=64 sobre `Inkling-Small` | no disponible | 8192 tokens en entrenamiento | no disponible | HuggingFace (0 descargas) | Rama b2 de la generacion g1 del linaje `inkling-anth-gen-mid` |
+| `ct-inkling-anth-gen-mid-g1-b2` | Adaptador LoRA r=64 sobre `Inkling-Small` | no disponible | 8192 tokens en entrenamiento | no disponible | Hugging Face (0 descargas) | Rama b2 de la generacion g1 del linaje `inkling-anth-gen-mid` |
 | Otras ramas y generaciones del mismo linaje (`ct-inkling-anth-gen-mid-g*`) | Adaptadores LoRA equivalentes | no disponible | 8192 tokens en entrenamiento | no disponible | no disponible en la informacion proporcionada | Misma receta, distinta semilla constitucional o distinta rama |
-| `thinkingmachines/Inkling-Small` | Modelo base completo | no disponible | no disponible | no disponible | HuggingFace | Base sobre el que se aplica este adaptador |
+| `thinkingmachines/Inkling-Small` | Modelo base completo | no disponible | no disponible | no disponible | Hugging Face | Base sobre el que se aplica este adaptador |
 | Adaptadores de alineacion por constitucion de otros autores | LoRA / SFT | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b2
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion de entrenamiento: `training_seed_constitution.md` (incluida en el repositorio del modelo)
 - Metadatos de exportacion: `tinker_meta.json` (incluido en el repositorio del modelo)

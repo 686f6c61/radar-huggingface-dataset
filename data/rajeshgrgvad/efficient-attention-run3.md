@@ -77,7 +77,7 @@ No disponible. El repositorio no es un modelo, por lo que no existe una categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rajeshgrgvad/efficient-attention-run3
+- Hugging Face: https://huggingface.co/Rajeshgrgvad/efficient-attention-run3
 - Fichero principal citado: `review.md` (dentro del repositorio)
 - Fichero de documentación citado: `README.md` (dentro del repositorio)
 - Los resultados de búsqueda web disponibles no contienen enlaces relevantes al modelo ni al tema; las referencias devueltas tratan sobre herramientas de presentaciones y no guardan relación con atención eficiente. No se dispone de paper, blog, repositorio de código ni demo asociados.

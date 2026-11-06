@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rbdj-tsc-noweight-s15k` es un modelo de mundo (world model) de vídeo y acción para robótica manipulativa, publicado por el usuario Yuyang-z en HuggingFace. No es un modelo de lenguaje: es un checkpoint de la familia SANA-RWM que predice observaciones visuales multi-vista y secuencias de acciones de efector final (EEF) para el brazo ARX X5 dentro del simulador RoboDojo. Concretamente, se trata del ajuste fino supervisado (SFT) del modelo de mundo de dos flujos con bloques de observación `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, en su epoch 18, step 15.000, con pesos en crudo (sin cuantizar).
+`rbdj-tsc-noweight-s15k` es un modelo de mundo (world model) de vídeo y acción para robótica manipulativa, publicado por el usuario Yuyang-z en Hugging Face. No es un modelo de lenguaje: es un checkpoint de la familia SANA-RWM que predice observaciones visuales multi-vista y secuencias de acciones de efector final (EEF) para el brazo ARX X5 dentro del simulador RoboDojo. Concretamente, se trata del ajuste fino supervisado (SFT) del modelo de mundo de dos flujos con bloques de observación `SanaRWMVideoQwenNextSubAttnResV2SelfFlowWorldModelCameraConditionMultiViewTwoStream_5B_P1_D36`, en su epoch 18, step 15.000, con pesos en crudo (sin cuantizar).
 
 El checkpoint parte de un preentrenamiento (`SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_twostream_obsblock_from_ts3500_ws256`, epoch 2 step 6.000) y de una receta de SFT en cadena de episodios (`SANA_RoboDojo_EpisodeChain_SFT_obsblock6000_noweight_kef4n`). Trabaja con ventanas de episodio completas desde el primer fotograma, con secuencias de 4 a 49 chunks de 32 acciones absolutas a 25 fps y tres vistas de 256×320 píxeles codificadas con latentes LTX-2.3.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `rbdj-tsc-noweight-s15k` (este) | ~5·10⁹ (identificador) | L = 4-49 chunks × 32 acciones (128-1.568 pasos), 3 vistas 256×320 | No disponible | Pesos fp32 en HuggingFace, 0 descargas |
+| `rbdj-tsc-noweight-s15k` (este) | ~5·10⁹ (identificador) | L = 4-49 chunks × 32 acciones (128-1.568 pasos), 3 vistas 256×320 | No disponible | Pesos fp32 en Hugging Face, 0 descargas |
 | `SANA_RoboDojo_EpisodeChain_SFT_obsblock6000_noweight_kef4n` (checkpoint padre de la cadena) | No disponible | No disponible (misma receta de cadena de episodios) | No disponible | Referenciado en la model card; no se enlaza repositorio |
 | `SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_twostream_obsblock_from_ts3500_ws256` (epoch 2, step 6.000) | No disponible | Ventana de 256 (ws256), resolución 256 px | No disponible | Ruta local indicada en la model card (`output/pretrained_models/...`); no se enlaza repositorio |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificados de otros modelos de mundo comparables (por ej
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Yuyang-z/rbdj-tsc-noweight-s15k
+- Hugging Face del modelo: https://huggingface.co/Yuyang-z/rbdj-tsc-noweight-s15k
 - Perfil del autor: https://huggingface.co/Yuyang-z
 - Repositorio de inferencia indicado en la model card: XPolicyLab, perfil `SANA_WAM_TSC` (no se proporciona URL)
 - No se han encontrado en la información disponible enlaces a papers, blogs, demos ni repositorios adicionales.

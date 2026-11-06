@@ -79,7 +79,7 @@ No se dispone de una comparativa directa con modelos equivalentes en la informac
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/rtikw/piano-transcription-crnn
+- Repositorio de Hugging Face: https://huggingface.co/rtikw/piano-transcription-crnn
 - Fuente original (Zenodo): https://zenodo.org/record/4034264
 - Repositorio original de ByteDance: https://github.com/bytedance/piano_transcription
 - Artículo de referencia: no disponible en la información proporcionada

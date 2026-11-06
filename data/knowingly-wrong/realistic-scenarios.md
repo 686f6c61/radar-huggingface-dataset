@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada artefacto
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/knowingly-wrong/realistic-scenarios
+- Repositorio Hugging Face: https://huggingface.co/knowingly-wrong/realistic-scenarios
 - Dataset de entrenamiento y afirmaciones: https://huggingface.co/datasets/knowingly-wrong/realistic-data
 - Artículo: https://arxiv.org/abs/2611.05287
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

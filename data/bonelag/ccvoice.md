@@ -81,5 +81,5 @@ No se dispone de información pública sobre otros datasets comparables en los d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bonelag/ccvoice
+- Hugging Face: https://huggingface.co/bonelag/ccvoice
 - Repositorio de GitHub del autor (OVoice, proyecto TTS relacionado): https://github.com/bonelag/OVoice

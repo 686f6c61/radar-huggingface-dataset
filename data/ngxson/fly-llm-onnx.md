@@ -79,11 +79,11 @@ No se han identificado en la informacion disponible modelos de terceros comparab
 - No esta soportado por llama.cpp, por lo que no se puede integrar en los ecosistemas habituales de GGUF/Ollama.
 - Riesgo alto de alucinacion y de texto incoherente, inherente a un modelo de este tamano y dominio.
 - Licencia CC BY 4.0: permite uso comercial con atribucion, tanto de los pesos como del conectoma (FlyEM / HHMI Janelia et al.), pero sin garantia alguna.
-- Discrepancia documental: las etiquetas de HuggingFace indican `base_model:ngxson/fly-llm-hf` mientras que la model card referencia `ngxson/fly-hf`; el ejemplo de Python usa el identificador de repositorio `ngxson/fly-onnx`, distinto del ID publico `ngxson/fly-llm-onnx`.
+- Discrepancia documental: las etiquetas de Hugging Face indican `base_model:ngxson/fly-llm-hf` mientras que la model card referencia `ngxson/fly-hf`; el ejemplo de Python usa el identificador de repositorio `ngxson/fly-onnx`, distinto del ID publico `ngxson/fly-llm-onnx`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngxson/fly-llm-onnx
+- Modelo en Hugging Face: https://huggingface.co/ngxson/fly-llm-onnx
 - Modelo base (PyTorch): https://huggingface.co/ngxson/fly-hf
 - Demo en el navegador (Space): https://huggingface.co/spaces/ngxson/fly-llm-demo
 - Paper o publicacion adicional: no disponible (la busqueda web no devolvio resultados relevantes)

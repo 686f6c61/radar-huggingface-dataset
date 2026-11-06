@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ayobamisalau/personalised-chatbot` es una publicación en HuggingFace realizada por el usuario Ayobamisalau, con licencia `h-research` y etiqueta regional `us`. Fue creado el 29 de agosto de 2026 y no ha recibido descargas ni valoraciones. La model card asociada únicamente declara la licencia, sin incluir ninguna otra información técnica, arquitectura, datos de entrenamiento o instrucciones de uso.
+El modelo `Ayobamisalau/personalised-chatbot` es una publicación en Hugging Face realizada por el usuario Ayobamisalau, con licencia `h-research` y etiqueta regional `us`. Fue creado el 29 de agosto de 2026 y no ha recibido descargas ni valoraciones. La model card asociada únicamente declara la licencia, sin incluir ninguna otra información técnica, arquitectura, datos de entrenamiento o instrucciones de uso.
 
 En el momento de redactar esta ficha, no existe información pública suficiente para determinar qué tipo de modelo es, su tamaño, arquitectura, capacidades o rendimiento. La ausencia de documentación técnica y de métricas hace imposible evaluar su idoneidad para casos de uso concretos. Se recomienda precaución antes de considerar este modelo para cualquier aplicación, ya que no se puede verificar su funcionamiento ni su calidad.
 
@@ -53,5 +53,5 @@ No disponible. Al no existir información técnica sobre este modelo, no se pued
 
 ## Enlaces
 
-- [HuggingFace - Ayobamisalau/personalised-chatbot](https://huggingface.co/Ayobamisalau/personalised-chatbot)
+- [Hugging Face - Ayobamisalau/personalised-chatbot](https://huggingface.co/Ayobamisalau/personalised-chatbot)
 - [Dataset relacionado en Kaggle (no es el modelo)](https://www.kaggle.com/datasets/ayobamisalau/personalized-chatbot-dataset)

@@ -21,7 +21,7 @@ La relevancia actual del modelo es limitada y debe valorarse con cautela: el rep
 | Licencia | apache-2.0 |
 | Formato de pesos | GGUF (consumible por llama.cpp y derivados); el modelo base esta en safetensors |
 | Tamano del repositorio | 75,3 GB |
-| Fecha de publicacion (metadatos de HuggingFace) | 18 de septiembre de 2026 |
+| Fecha de publicacion (metadatos de Hugging Face) | 18 de septiembre de 2026 |
 | Modelo base | aacudad/AnomalyThink-Qwen3-VL-8B-KCR |
 | Dataset declarado | aacudad/AnomalyThink |
 
@@ -97,7 +97,7 @@ La comparacion con modelos de proposito general de tamano similar no puede compl
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/AnomalyThink-Qwen3-VL-8B-KCR-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/AnomalyThink-Qwen3-VL-8B-KCR-GGUF
 - Modelo base: https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-KCR
 - Dataset declarado: https://huggingface.co/datasets/aacudad/AnomalyThink
 - Cuantizaciones i1 (imatrix): https://huggingface.co/mradermacher/AnomalyThink-Qwen3-VL-8B-KCR-i1-GGUF

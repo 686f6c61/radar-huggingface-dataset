@@ -4,7 +4,7 @@
 
 Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1 es un modelo de lenguaje de 27 728 millones de parametros desarrollado por DavidAU, construido como un fine-tuning del modelo Qwen3.8 de 27B. El modelo aplica la metodologia de entrenamiento COLD FUSION, que combina la tecnica GAIN (desarrollada internamente por el autor) con la infraestructura de entrenamiento de Unsloth, con el objetivo de reducir drasticamente el numero de tokens de razonamiento interno (thinking tokens) en comparacion con el modelo base, manteniendo al mismo tiempo el rendimiento en tareas criticas.
 
-La variante "Heretic-Uncensored" indica que se trata de una version sin filtros de seguridad, disenada para entornos donde se requiere una generacion de texto sin restricciones. El modelo soporta entrada de imagen y texto (pipeline image-text-to-text), lo que le confiere capacidades multimodales de vision. Se encuentra alojado en HuggingFace con acceso restringido (gated), requiere aceptacion de condiciones para su descarga, y presenta 0 descargas y 3 likes en el momento de la consulta, lo que sugiere que es un lanzamiento reciente o experimental.
+La variante "Heretic-Uncensored" indica que se trata de una version sin filtros de seguridad, disenada para entornos donde se requiere una generacion de texto sin restricciones. El modelo soporta entrada de imagen y texto (pipeline image-text-to-text), lo que le confiere capacidades multimodales de vision. Se encuentra alojado en Hugging Face con acceso restringido (gated), requiere aceptacion de condiciones para su descarga, y presenta 0 descargas y 3 likes en el momento de la consulta, lo que sugiere que es un lanzamiento reciente o experimental.
 
 El modelo destaca por reducir el overhead de tokens de pensamiento entre un 50 % y un 90 % respecto al modelo base, manteniendo el 99 % del rendimiento en precision completa (BF16) tanto en cuantizacion de 8 bits como de 4 bits. Segun las descripciones del autor, supera los benchmarks principales de los modelos Qwen 3.8, 3.6 y 3.5 de 27B, aunque no se proporcionan cifras concretas en la informacion disponible.
 
@@ -48,7 +48,7 @@ El entrenamiento se realizo en dos etapas (el nombre "stage1" indica que es la p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks con cifras concretas en la informacion disponible. Las descripciones del autor indican que el modelo "supera todos los benchmarks criticos de los modelos Qwen 3.8, 3.6 y 3.5 de 27B" y que mantiene el 99 % del rendimiento en BF16 tanto en cuantizacion de 8 bits como de 4 bits, pero no se proporcionan tablas numericas (MMLU, HumanEval, GSM8K, etc.) en los materiales consultados. Se recomienda consultar el repositorio de HuggingFace para obtener datos actualizados.
+No se han publicado resultados de benchmarks con cifras concretas en la informacion disponible. Las descripciones del autor indican que el modelo "supera todos los benchmarks criticos de los modelos Qwen 3.8, 3.6 y 3.5 de 27B" y que mantiene el 99 % del rendimiento en BF16 tanto en cuantizacion de 8 bits como de 4 bits, pero no se proporcionan tablas numericas (MMLU, HumanEval, GSM8K, etc.) en los materiales consultados. Se recomienda consultar el repositorio de Hugging Face para obtener datos actualizados.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ La comparativa con Gemma 2 27B se incluye como referencia de un modelo del mismo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que requiere aceptar condiciones adicionales antes de poder descargarlo. Esto puede limitar su adopcion en entornos corporativos.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que requiere aceptar condiciones adicionales antes de poder descargarlo. Esto puede limitar su adopcion en entornos corporativos.
 - Naturaleza uncensored: al eliminar los filtros de seguridad, el modelo puede generar contenido inapropiado, ofensivo o peligroso. Su uso en produccion requiere salvaguardas externas y supervision humana.
 - Idioma limitado: el modelo esta etiquetado exclusivamente como "en" (ingles). No se garantiza un rendimiento adecuado en otros idiomas, incluido el espanol.
 - Riesgo de alucinacion: como todos los modelos de lenguaje, puede generar informacion falsa o inventada con alta confianza. La ausencia de filtros de seguridad puede amplificar este riesgo en contextos donde se le pide especular.
@@ -83,7 +83,7 @@ La comparativa con Gemma 2 27B se incluye como referencia de un modelo del mismo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1
+- Repositorio Hugging Face del modelo: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fable-Fusion-GAIN-V1.1-732-Heretic-Uncensored-stage1
 - Variante GGUF relacionada: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo base Cold Fusion: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Articulo en HackerNoon sobre Cold Fusion: https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance

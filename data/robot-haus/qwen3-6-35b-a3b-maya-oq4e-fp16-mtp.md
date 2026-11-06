@@ -91,7 +91,7 @@ La principal diferencia entre variantes es el tradeoff entre precision general (
 
 ## Enlaces
 
-- [HuggingFace: Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-fp16-mtp](https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-fp16-mtp)
+- [Hugging Face: Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-fp16-mtp](https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-fp16-mtp)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Repositorio oMLX](https://github.com/jundot/omlx)
 - [Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp](https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp)

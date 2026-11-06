@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT
+- Modelo en Hugging Face: https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT
 - Repositorio smoke (variante): https://huggingface.co/QiLong26/Qwen3-VL-8B-VQA-SFT-smoke
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

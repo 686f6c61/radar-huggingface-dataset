@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tory-labs/voin-gemma-4-e4b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tory-labs/voin-gemma-4-e4b-gguf
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Conversión GGUF de origen (unsloth): https://huggingface.co/unsloth/gemma-4-E4B-it-GGUF/tree/bfc15c382204943c3a8fff0c750b94ae2364d7a3
 - Aplicación voin: https://github.com/su-record/voin

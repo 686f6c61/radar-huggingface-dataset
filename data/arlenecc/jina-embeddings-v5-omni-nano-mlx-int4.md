@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arlenecc/jina-embeddings-v5-omni-nano-mlx-int4 | no disponible | no disponible | MLX INT4 | MIT | HuggingFace (0 descargas) |
+| arlenecc/jina-embeddings-v5-omni-nano-mlx-int4 | no disponible | no disponible | MLX INT4 | MIT | Hugging Face (0 descargas) |
 | jina-embeddings-v5-omni-nano (base) | no disponible | no disponible | no disponible | no disponible | Referencia presumible en Jina AI |
 | Otras alternativas de embeddings | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,6 +79,6 @@ No se dispone de información suficiente para establecer una comparativa técnic
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-mlx-int4
+- Repositorio en Hugging Face: https://huggingface.co/arlenecc/jina-embeddings-v5-omni-nano-mlx-int4
 - Modelo base (referencia presumible, no verificada): https://huggingface.co/jinaai
 - Framework MLX: https://github.com/ml-explore/mlx

@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Vyom Mind 1.0 | 7.000 M (base) + adaptador LoRA | no disponible | Apache 2.0 | Repositorio HuggingFace, 0 descargas | Sin benchmarks publicados |
+| Vyom Mind 1.0 | 7.000 M (base) + adaptador LoRA | no disponible | Apache 2.0 | Repositorio Hugging Face, 0 descargas | Sin benchmarks publicados |
 | Qwen2.5-7B-Instruct | 7.000 M | 128.000 tokens (segun documentacion oficial de Qwen) | Apache 2.0 | Ampliamente disponible | Modelo base de referencia, con evaluaciones publicadas |
 | Mistral-7B-Instruct v0.3 | 7.000 M | 32.000 tokens | Apache 2.0 | Ampliamente disponible | Alternativa densa de tamano comparable |
 | Llama 3.1 8B Instruct | 8.000 M | 128.000 tokens | Licencia comunitaria Llama 3.1 | Ampliamente disponible | Requiere aceptacion de terminos |
@@ -75,6 +75,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Fecha de creacion del repositorio (2026-10-31) posterior a la fecha habitual de publicacion de Qwen2.5; conviene verificar la integridad de los artefactos antes de usarlos en produccion.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Ashwin102/vyom-mind-1.0
+- Repositorio Hugging Face: https://huggingface.co/Ashwin102/vyom-mind-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Notebook de entrenamiento en Kaggle: https://www.kaggle.com/code/ashwinprogrammer/vyom-mind-1-0-qwen2-5-lora-fine-tuning

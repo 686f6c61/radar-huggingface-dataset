@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rubenroy/Gilgamesh-72B",
+  "slug": "rubenroy-gilgamesh-72b",
+  "author": "rubenroy",
+  "url": "https://huggingface.co/rubenroy/Gilgamesh-72B",
+  "created_at": "2025-06-04T07:07:04.000Z",
+  "updated_at": "2026-11-06T12:22:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "gilgamesh",
+    "gammacorpus",
+    "en",
+    "dataset:rubenroy/GammaCorpus-CoT-Math-170k",
+    "dataset:rubenroy/GammaCorpus-v2-5m",
+    "dataset:rubenroy/GammaCorpus-Fact-QA-450k",
+    "base_model:Qwen/Qwen2.5-72B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-72B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 145412518832,
+  "storage_human": "145.4 GB",
+  "base_model": "Qwen/Qwen2.5-72B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rubenroy-gilgamesh-72b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/rubenroy-gilgamesh-72b",
+      "snippet": "rubenroy/Gilgamesh-72B powered by Text Generation Inference (TGI). Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "rubenroy/Gilgamesh-72B · Hugging Face",
+      "url": "https://huggingface.co/rubenroy/Gilgamesh-72B",
+      "snippet": "Gilgamesh (GGM) 72B is a finetune of Alibaba's Qwen 2.5 72B Instruct model ..."
+    }
+  ]
+}

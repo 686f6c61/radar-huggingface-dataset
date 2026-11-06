@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mradermacher/loes-qwen3.8-27b-GGUF es una cuantización en formato GGUF del modelo original HostYourAI/loes-qwen3.8-27b, publicada por el usuario mradermacher. El repositorio contiene únicamente los pesos cuantizados, sin documentación técnica, licencia ni especificaciones de uso. Según los metadatos de HuggingFace, el número total de parámetros del modelo es de 460.730.096, un tamaño reducido que contrasta con la nomenclatura "27b" del nombre, cuya interpretación no está aclarada en la información disponible.
+mradermacher/loes-qwen3.8-27b-GGUF es una cuantización en formato GGUF del modelo original HostYourAI/loes-qwen3.8-27b, publicada por el usuario mradermacher. El repositorio contiene únicamente los pesos cuantizados, sin documentación técnica, licencia ni especificaciones de uso. Según los metadatos de Hugging Face, el número total de parámetros del modelo es de 460.730.096, un tamaño reducido que contrasta con la nomenclatura "27b" del nombre, cuya interpretación no está aclarada en la información disponible.
 
 El repositorio pesa 1.6 GB e incluye múltiples cuantizaciones GGUF, como Q4_K_S, Q8_0 o IQ4_XS, lo que permite su ejecución en entornos locales mediante herramientas compatibles con este formato. Sin embargo, al no existir información sobre arquitectura, datos de entrenamiento, idiomas soportados o licencia, el modelo debe considerarse como un recurso experimental, no apto para entornos de producción sin una evaluación previa exhaustiva.
 
@@ -21,7 +21,7 @@ El repositorio pesa 1.6 GB e incluye múltiples cuantizaciones GGUF, como Q4_K_S
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, el proceso de entrenamiento, la composición del dataset ni posibles técnicas de alineación como RLHF o DPO. Los únicos datos disponibles son los metadatos de HuggingFace y la indicación de que se trata de una cuantización estática del modelo HostYourAI/loes-qwen3.8-27b. Se desconoce si el modelo original es un transformer, un MoE o cualquier otra arquitectura, así como su longitud de contexto y sus capacidades lingüísticas.
+No se dispone de información sobre la arquitectura del modelo, el proceso de entrenamiento, la composición del dataset ni posibles técnicas de alineación como RLHF o DPO. Los únicos datos disponibles son los metadatos de Hugging Face y la indicación de que se trata de una cuantización estática del modelo HostYourAI/loes-qwen3.8-27b. Se desconoce si el modelo original es un transformer, un MoE o cualquier otra arquitectura, así como su longitud de contexto y sus capacidades lingüísticas.
 
 ## Capacidades
 
@@ -57,5 +57,5 @@ No disponible. No se ha encontrado información sobre modelos comparables en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/loes-qwen3.8-27b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/loes-qwen3.8-27b-GGUF
 - Modelo original: https://huggingface.co/HostYourAI/loes-qwen3.8-27b

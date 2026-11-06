@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| e2h-polaris-gemma-3-4b-it-all_rb | 4,55B | no disponible | RL/GRPO para matematicas | Gemma | HuggingFace, 27 descargas |
-| google/gemma-3-4b-it | 4,3B aprox. | no disponible | Instruccion general multimodal | Gemma | HuggingFace, ampliamente usado |
-| Qwen2.5-Math-7B | 7B | no disponible | Matematicas | Apache 2.0 (segun version) | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible | Razonamiento matematico destilado | MIT | HuggingFace |
+| e2h-polaris-gemma-3-4b-it-all_rb | 4,55B | no disponible | RL/GRPO para matematicas | Gemma | Hugging Face, 27 descargas |
+| google/gemma-3-4b-it | 4,3B aprox. | no disponible | Instruccion general multimodal | Gemma | Hugging Face, ampliamente usado |
+| Qwen2.5-Math-7B | 7B | no disponible | Matematicas | Apache 2.0 (segun version) | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible | Razonamiento matematico destilado | MIT | Hugging Face |
 
 La comparacion directa con estos modelos no puede establecerse con datos de rendimiento, ya que no se han publicado benchmarks para este checkpoint.
 
@@ -85,7 +85,7 @@ La comparacion directa con estos modelos no puede establecerse con datos de rend
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidafrica/e2h-polaris-gemma-3-4b-it-all_rb
+- Modelo en Hugging Face: https://huggingface.co/davidafrica/e2h-polaris-gemma-3-4b-it-all_rb
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Repositorio verl (biblioteca de RL): https://github.com/volcengine/verl

@@ -81,7 +81,7 @@ Frente al modelo base sin cuantizar (Qwen3.8-27B, ~54 GiB en fp16), JANG_2D redu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_2D
+- Modelo en Hugging Face: https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_2D
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Bundles relacionados: JANG_4D (https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_4D), JANG_6D (https://huggingface.co/OsaurusAI/Qwen3.8-27B-JANG_6D), MXFP8 (https://huggingface.co/OsaurusAI/Qwen3.8-27B-MXFP8)
 - Sitio de Osaurus AI: https://osaurus.ai

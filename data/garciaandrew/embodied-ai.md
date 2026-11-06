@@ -87,7 +87,7 @@ No disponible. No existen modelos comparables con datos verificables, porque est
 - En caso de que el autor publique resultados en el futuro, la model card exige adjuntar versiones de dataset, comandos, semillas, hardware y registros en bruto; hasta entonces, cualquier cifra sería no verificable.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/garciaandrew/embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/garciaandrew/embodied-ai
 - Embodied AI Agents: Modeling the World (arXiv, versión HTML): https://arxiv.org/html/2506.22355v3
 - Embodied AI Agents: Modeling the World (arXiv, abstract): https://arxiv.org/abs/2506.22355
 - Embodied Arena (plataforma de evaluación): https://www.embodied-arena.com/

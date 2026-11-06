@@ -86,7 +86,7 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---:|---:|---|---|---|
-| Q-51M Base (d0rj) | 50.878.240 | 2048 | no disponible | HellaSwag 29,18 %; ARC-Easy 43,31 %; PIQA 59,90 % (zero-shot, lm-eval 0.4.12) | HuggingFace, safetensors |
+| Q-51M Base (d0rj) | 50.878.240 | 2048 | no disponible | HellaSwag 29,18 %; ARC-Easy 43,31 %; PIQA 59,90 % (zero-shot, lm-eval 0.4.12) | Hugging Face, safetensors |
 | Q-50M Base (q-project) | no disponible | no disponible | no disponible | no disponible | Referenciado en la model card como origen de arquitectura y tokenizador |
 | Otros modelos de la categoría de ~50-70 M de parámetros | no disponible | no disponible | no disponible | no disponible | No se dispone de datos en la información proporcionada |
 
@@ -105,7 +105,7 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/q-51M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/q-51M-base
 - Modelo de referencia arquitectónica y tokenizador: https://huggingface.co/q-project/Q-50M-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset HellaSwag: https://huggingface.co/datasets/Rowan/hellaswag

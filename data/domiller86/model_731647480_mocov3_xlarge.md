@@ -68,6 +68,6 @@ La comparativa se limita a la implementación original de MoCo v3, ya que no se 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/domiller86/model_731647480_mocov3_xlarge
+- Repositorio en Hugging Face: https://huggingface.co/domiller86/model_731647480_mocov3_xlarge
 - Implementación original de MoCo v3 (GitHub): https://github.com/facebookresearch/moco-v3
 - Documentación de MoCo v3 en DeepWiki: https://deepwiki.com/facebookresearch/moco-v3

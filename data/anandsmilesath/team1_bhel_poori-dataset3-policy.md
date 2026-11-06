@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anandsmilesath/Team1_Bhel_Poori-Dataset3-Policy` es un checkpoint de 51.617.414 parámetros (unos 51,6 millones) alojado en HuggingFace, distribuido en formato safetensors y con un tamaño de repositorio de 0,2 GB. La única información verificable que acompaña al repositorio son sus metadatos: autor (`anandsmilesath`), etiquetas `safetensors` y `region:us`, 29 descargas y 0 likes. No consta pipeline declarado, licencia, idiomas, tokenizador ni resultados de evaluación.
+`anandsmilesath/Team1_Bhel_Poori-Dataset3-Policy` es un checkpoint de 51.617.414 parámetros (unos 51,6 millones) alojado en Hugging Face, distribuido en formato safetensors y con un tamaño de repositorio de 0,2 GB. La única información verificable que acompaña al repositorio son sus metadatos: autor (`anandsmilesath`), etiquetas `safetensors` y `region:us`, 29 descargas y 0 likes. No consta pipeline declarado, licencia, idiomas, tokenizador ni resultados de evaluación.
 
 El identificador sugiere un artefacto generado por un equipo de trabajo («Team1»), entrenado sobre un conjunto de datos denominado «Dataset3» y con función de política («Policy»), lo que apuntaría a un modelo de decisión para aprendizaje por refuerzo o imitación. Esta lectura procede exclusivamente del nombre del repositorio y no está confirmada por ninguna fuente documental; debe tratarse como hipótesis, no como dato.
 
@@ -80,7 +80,7 @@ Además de la ausencia de cifras, la comparación carece de sentido sin conocer 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Team1_Bhel_Poori-Dataset3-Policy | 51.617.414 | no disponible | no disponible | safetensors en HuggingFace |
+| Team1_Bhel_Poori-Dataset3-Policy | 51.617.414 | no disponible | no disponible | safetensors en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa fundamentada: se desconoce la categoría funcional del modelo (lenguaje, visión, política de control u otra), y sin arquitectura ni tarea declaradas cualquier comparación con modelos de tamaño similar sería especulativa. Para construirla haría falta, como mínimo, el `config.json` y una descripción del problema que el checkpoint resuelve.
@@ -98,6 +98,6 @@ No es posible establecer una comparativa fundamentada: se desconoce la categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anandsmilesath/Team1_Bhel_Poori-Dataset3-Policy
+- Hugging Face: https://huggingface.co/anandsmilesath/Team1_Bhel_Poori-Dataset3-Policy
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código o demo) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

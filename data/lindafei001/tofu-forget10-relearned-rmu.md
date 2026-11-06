@@ -87,7 +87,7 @@ La comparativa se limita a variantes del mismo experimento TOFU, ya que no hay m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindafei001/tofu-forget10-relearned-RMU
+- Modelo en Hugging Face: https://huggingface.co/lindafei001/tofu-forget10-relearned-RMU
 - Checkpoint base (RMU): https://huggingface.co/open-unlearning/unlearn_tofu_Llama-3.2-1B-Instruct_forget10_RMU_lr1e-05_layer10_scoeff100_epoch10
 - Repositorio del proyecto (mencionado en la model card, sin URL directa): se referencia `scripts/relearn_curve.py` para reproducir el experimento.
 - Coleccion "Illusion of LLM Unlearning": no se proporciona URL directa, pero se menciona en la model card.

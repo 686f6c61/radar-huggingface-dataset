@@ -84,7 +84,7 @@ No existen modelos comparables en el sentido habitual: no hay parámetros, conte
 
 | Artefacto | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `fMindstormer/tokcpu` | Tokenizador BPE que interpreta Brainfuck | no disponible (no aplica) | no disponible (no aplica) | Solo recuentos de ticks; sin benchmarks | MIT | HuggingFace + GitHub |
+| `fMindstormer/tokcpu` | Tokenizador BPE que interpreta Brainfuck | no disponible (no aplica) | no disponible (no aplica) | Solo recuentos de ticks; sin benchmarks | MIT | Hugging Face + GitHub |
 | Tokenizador BPE convencional (p. ej. el de un LLM corriente) | Tokenizador BPE | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Simulador de Brainfuck en Python | Intérprete de software | no aplica | no aplica | no disponible | no disponible | no disponible |
 | Máquina de Turing didáctica | Simulador | no aplica | no aplica | no disponible | no disponible | no disponible |
@@ -100,9 +100,9 @@ No existen modelos comparables en el sentido habitual: no hay parámetros, conte
 - El intérprete universal requiere construir correctamente la cinta inicial (`"⊢┃▼가" + programa + "║▲⠀¦" + entrada + "⊣"`); un formateo incorrecto produce resultados silenciosamente erróneos en lugar de un error explícito.
 - Licencia MIT: permite uso comercial y modificación con atribución y conservación del aviso de copyright; no se han declarado restricciones adicionales.
 - Depende del comportamiento exacto de `tokenizers` respecto a merges y tokens añadidos; cambios de versión podrían alterar la semántica de ejecución.
-- Fecha de creación en HuggingFace: 19 de octubre de 2026, con 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación por parte de terceros.
+- Fecha de creación en Hugging Face: 19 de octubre de 2026, con 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validación por parte de terceros.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fMindstormer/tokcpu
+- Hugging Face: https://huggingface.co/fMindstormer/tokcpu
 - Repositorio GitHub (explicación completa, compilador y tests): https://github.com/fMindstormer/tokcpu

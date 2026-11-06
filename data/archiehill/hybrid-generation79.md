@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`archiehill/hybrid-generation79` es un repositorio experimental publicado en HuggingFace por el usuario archiehill que contiene un esqueleto de código («codebase») para tareas de generación con una arquitectura etiquetada como «Hybrid». No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo («smoke tests») y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 49.600 parámetros totales en safetensors y un tamaño de repo de 0,0 GB, lo que confirma que se trata de un artefacto mínimo de andamiaje técnico.
+`archiehill/hybrid-generation79` es un repositorio experimental publicado en Hugging Face por el usuario archiehill que contiene un esqueleto de código («codebase») para tareas de generación con una arquitectura etiquetada como «Hybrid». No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo («smoke tests») y que no se presenta como un checkpoint con benchmarks. El repositorio tiene 49.600 parámetros totales en safetensors y un tamaño de repo de 0,0 GB, lo que confirma que se trata de un artefacto mínimo de andamiaje técnico.
 
 El interés del repositorio es, por tanto, exclusivamente pedagógico o de investigación en arquitecturas: permite inspeccionar cómo se configura un pipeline híbrido (atención estándar, fusión por concatenación con MLP, activación GELU-Tanh, normalización por BatchNorm) y qué receta de entrenamiento por defecto se propone (optimizador RMSprop con schedule de warmup lineal) antes de lanzar un entrenamiento completo. La model card insiste en que esos valores son puntos de partida del script y no evidencia de una ejecución finalizada.
 
@@ -76,5 +76,5 @@ No disponible. No se identifican en la información proporcionada modelos compar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/archiehill/hybrid-generation79
+- Repositorio en Hugging Face: https://huggingface.co/archiehill/hybrid-generation79
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

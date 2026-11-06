@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Demitra Kalogeras es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en HuggingFace. Se trata de un ajuste fino ligero (0,5 GB de repositorio) montado sobre el modelo base krea/Krea-2-Turbo, orientado a reproducir un personaje concreto identificado por el prompt de instancia "Demitra, Long light brunette hair, fair skin". El modelo se distribuye a traves de la libreria diffusers y sigue la plantilla de repositorio diffusion-lora, con la etiqueta de licencia openrail++.
+Demitra Kalogeras es un adaptador LoRA de texto a imagen publicado por el usuario AiMamis en Hugging Face. Se trata de un ajuste fino ligero (0,5 GB de repositorio) montado sobre el modelo base krea/Krea-2-Turbo, orientado a reproducir un personaje concreto identificado por el prompt de instancia "Demitra, Long light brunette hair, fair skin". El modelo se distribuye a traves de la libreria diffusers y sigue la plantilla de repositorio diffusion-lora, con la etiqueta de licencia openrail++.
 
 Su relevancia es acotada: no es un modelo fundacional ni un sistema generalista, sino un adaptador de personalizacion para generacion de imagenes. La ficha del autor declara tres palabras de activacion ("Demitra", "Long light brunette hair", "fair skin"), lo que indica que el entrenamiento se centro en capturar la identidad facial y los rasgos capilares y de piel del personaje. No se aporta informacion sobre el dataset de entrenamiento, el numero de pasos, el rango del LoRA ni los hiperparametros utilizados.
 
@@ -77,8 +77,8 @@ No se proporciona informacion sobre modelos comparables en la documentacion disp
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AiMamis/Demitra_Kalogeras | LoRA de personaje sobre Krea-2-Turbo | no disponible | no disponible | openrail++ | HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Modelo base de texto a imagen | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| AiMamis/Demitra_Kalogeras | LoRA de personaje sobre Krea-2-Turbo | no disponible | no disponible | openrail++ | Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Modelo base de texto a imagen | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otros LoRA de personaje | no disponible | no disponible | no disponible | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se proporciona informacion sobre modelos comparables en la documentacion disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Demitra_Kalogeras
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Demitra_Kalogeras
 - Archivos y versiones: https://huggingface.co/AiMamis/Demitra_Kalogeras/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos corresponden a sitios de calculo de cargas termicas (heiz.report, heizreport.com, heizreport.de) sin ninguna relacion con el adaptador.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Particle 2.0 es un modelo de chat compacto de aproximadamente 109,5 millones de parametros, desarrollado por el usuario prathamkode y publicado en HuggingFace bajo licencia MIT. No es un ajuste fino de Llama, SmolLM ni de ningun otro checkpoint publico: esta entrenado desde inicializacion aleatoria con una arquitectura decoder-only de estilo Llama (RoPE, SwiGLU, RMSNorm), 12 capas, dimension oculta de 768 y 12 cabezas de atencion. Esta version 2.0 parte de un entrenamiento adicional ("further train") sobre Particle 1.0 seguido de un ajuste supervisado (SFT) con una mezcla de datos nueva que no se ha publicado.
+Particle 2.0 es un modelo de chat compacto de aproximadamente 109,5 millones de parametros, desarrollado por el usuario prathamkode y publicado en Hugging Face bajo licencia MIT. No es un ajuste fino de Llama, SmolLM ni de ningun otro checkpoint publico: esta entrenado desde inicializacion aleatoria con una arquitectura decoder-only de estilo Llama (RoPE, SwiGLU, RMSNorm), 12 capas, dimension oculta de 768 y 12 cabezas de atencion. Esta version 2.0 parte de un entrenamiento adicional ("further train") sobre Particle 1.0 seguido de un ajuste supervisado (SFT) con una mezcla de datos nueva que no se ha publicado.
 
 Su relevancia es acotada y muy concreta: sirve como caso de estudio reproducible de entrenamiento desde cero a escala ~100M, un regimen donde el coste de entrenamiento es bajo y el checkpoint es lo bastante pequeno como para inspeccionarlo, cuantizarlo y ejecutarlo en CPU o en cualquier GPU de consumo. El contexto de 2048 tokens, el tokenizador BPE propio de 32k entradas y el hecho de que solo soporte ingles lo sitúan claramente en el terreno de la investigacion y las demostraciones, no en el de la produccion.
 
@@ -105,6 +105,6 @@ Nota: los datos de SmolLM-135M, Qwen2.5-0.5B y TinyLlama-1.1B provienen de sus c
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/prathamkode/particle-2.0
+- Model card en Hugging Face: https://huggingface.co/prathamkode/particle-2.0
 - Particle 1.0 (modelo predecesor, misma arquitectura): https://huggingface.co/prathamkode/particle-1.0
 - La busqueda web realizada no devolvio resultados relevantes para este modelo: las unicas entradas recuperadas fueron enlaces generales a YouTube, sin relacion con Particle 2.0. No se han encontrado papers, blogs, repositorios ni demos adicionales.

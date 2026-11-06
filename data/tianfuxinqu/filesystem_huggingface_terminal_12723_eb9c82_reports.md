@@ -4,7 +4,7 @@
 
 Este repositorio de Hugging Face, identificado como `filesystem_huggingface_terminal_12723_eb9c82_reports`, no contiene un modelo de inteligencia artificial. Se trata de un registro central para una auditoría de gobernanza de modelos, perteneciente a una campaña denominada `filesystem_huggingface_terminal_12723`. Según la model card, el repositorio está diseñado para listar los repositorios auditados en un archivo `registry.json` y publicar un informe consolidado en `governance_audit_report.csv`.
 
-El autor es el usuario TianfuXinqu, que ha creado varios repositorios similares en HuggingFace relacionados con procesos de auditoría y gestión de datos (por ejemplo, registros de archivos LaTeX, hojas de cálculo de ventas regionales o resúmenes de investigación). Este repositorio en concreto no expone ningún artefacto de modelo, tokenizador, pesos ni configuración de inferencia.
+El autor es el usuario TianfuXinqu, que ha creado varios repositorios similares en Hugging Face relacionados con procesos de auditoría y gestión de datos (por ejemplo, registros de archivos LaTeX, hojas de cálculo de ventas regionales o resúmenes de investigación). Este repositorio en concreto no expone ningún artefacto de modelo, tokenizador, pesos ni configuración de inferencia.
 
 Dado que no hay información sobre arquitectura, parámetros, entrenamiento o capacidades, esta ficha documenta la naturaleza real del repositorio y marca como "no disponible" todas las especificaciones técnicas propias de un modelo de IA. Es relevante para quien busque entender qué contiene este repositorio y por qué no debe confundirse con un modelo publicable.
 

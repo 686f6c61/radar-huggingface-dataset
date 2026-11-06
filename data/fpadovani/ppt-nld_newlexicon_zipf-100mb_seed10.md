@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por fpadovani, investigador asociado a la Universidad de Groningen. Se trata de un modelo de generación de texto de tamaño reducido (86,7 millones de parámetros) basado en la arquitectura GPT-2, entrenado mediante aprendizaje supervisado (SFT) con la librería TRL de HuggingFace. El nombre sugiere que está orientado al neerlandés (nld) y que incorpora un "nuevo léxico" con distribución Zipf, probablemente para experimentos sobre la relación entre frecuencia léxica y rendimiento del modelo.
+El modelo `fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nld_latn_100mb`, desarrollado por fpadovani, investigador asociado a la Universidad de Groningen. Se trata de un modelo de generación de texto de tamaño reducido (86,7 millones de parámetros) basado en la arquitectura GPT-2, entrenado mediante aprendizaje supervisado (SFT) con la librería TRL de Hugging Face. El nombre sugiere que está orientado al neerlandés (nld) y que incorpora un "nuevo léxico" con distribución Zipf, probablemente para experimentos sobre la relación entre frecuencia léxica y rendimiento del modelo.
 
 Su relevancia radica en que forma parte de una serie de experimentos académicos sobre el impacto del vocabulario y la distribución de frecuencias en modelos de lenguaje pequeños. Al ser un modelo de solo 86,7 millones de parámetros, es extremadamente ligero y puede ejecutarse en hardware modesto, lo que lo hace útil para investigación reproducible y para entornos con recursos limitados. Sin embargo, su tamaño y especialización limitan sus capacidades generales.
 
@@ -74,7 +74,7 @@ No hay información suficiente para comparar rendimiento. Los modelos listados s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Variante seed3407: https://huggingface.co/fpadovani/ppt-nld_newlexicon_zipf-100mb_seed3407
 - Baseline seed10: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-nld-baseline-100mb_seed10

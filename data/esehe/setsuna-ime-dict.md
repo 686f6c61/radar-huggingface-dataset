@@ -86,7 +86,7 @@ La comparacion directa con modelos neuronales de lenguaje no procede, ya que est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/esehe/setsuna-ime-dict
+- Repositorio en Hugging Face: https://huggingface.co/esehe/setsuna-ime-dict
 - Proyecto setsuna-ime: https://github.com/esehehelp/setsuna-ime
 - Modelo de conversion asociado: https://huggingface.co/esehe/Bletilla-v0.1-small
 - SudachiDict: https://github.com/WorksApplications/SudachiDict

@@ -85,10 +85,10 @@ La comparativa se limita a las variantes del mismo modelo porque no se dispone d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mashima/Huihui-Qwen3.8-27B-abliterated-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/mashima/Huihui-Qwen3.8-27B-abliterated-FP8)
 - [Modelo base abliterado (huihui-ai)](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Modelo original Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
-- [Perfil de huihui-ai en HuggingFace](https://huggingface.co/huihui-ai)
+- [Perfil de huihui-ai en Hugging Face](https://huggingface.co/huihui-ai)
 - [Ficha del modelo abliterado en aimodels.fyi](https://www.aimodels.fyi/models/huggingFace/huihui-qwen3.8-27b-abliterated-huihui-ai)
 - [Variante NVFP4 en FriendliAI](https://friendli.ai/models/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4)
 - [Página del modelo en Ollama](https://ollama.com/huihui_ai/Qwen3.8-abliterated:27b)

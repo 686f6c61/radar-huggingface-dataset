@@ -85,7 +85,7 @@ Este checkpoint ofrece la mejor fidelidad entre las cuantizaciones de 4 bits com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ
 - Variante GDN-4bit (22,6 GB): https://huggingface.co/TelperionAI/Qwen3.8-27B-INT4-AWQ-GPTQ-gdn4
 - Variante abliterated (basada en Huihui): https://huggingface.co/TelperionAI/Huihui-Qwen3.8-27B-abliterated-INT4-AWQ-GPTQ
 - Ficha en LLM Explorer: https://llm-explorer.com/model/TelperionAI%2FQwen3.8-27B-INT4-AWQ-GPTQ,7FBYtQCENFaTLoNlHLlCrM

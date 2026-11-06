@@ -81,8 +81,8 @@ El autor advierte que el 98% esta favorecido porque los mensajes sinteticos comp
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen + LoRA v5 (este) | 1.5B + adaptador | No disponible | 17/18 en prueba manual; 98% en sintetico | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct sin ajuste | 1.5B | No disponible | 15% de acierto exacto en sintetico | Apache 2.0 | HuggingFace |
+| Qwen + LoRA v5 (este) | 1.5B + adaptador | No disponible | 17/18 en prueba manual; 98% en sintetico | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct sin ajuste | 1.5B | No disponible | 15% de acierto exacto en sintetico | Apache 2.0 | Hugging Face |
 | Claude Haiku 5.5 + reglas | No disponible | No disponible | 16/18 en prueba manual; 90% en sintetico | Propietaria | API de Anthropic |
 
 No se dispone de informacion sobre otros adaptadores LoRA comparables para extraccion de pedidos en portugues. La comparacion con Claude Haiku 5.5 es la unica proporcionada por el autor, y este senala que se trata de un empate tecnico dada la muestra pequena (18 mensajes).
@@ -102,6 +102,6 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables para extra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gaveta-cmd/qwen2.5-1.5b-whatsapp-pedidos-lora
+- Hugging Face: https://huggingface.co/gaveta-cmd/qwen2.5-1.5b-whatsapp-pedidos-lora
 - Repositorio GitHub (codigo, datos y diario): https://github.com/Gaveta-cmd/whatsapp-pedidos-llm
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ornith-1.5-W8A16 es una versión cuantizada del modelo multimodal Ornith-1.5-9B desarrollado por ornith-ai, publicada por el usuario JohnRTitor en HuggingFace. Se trata de un modelo de lenguaje y visión (VLM, Vision-Language Model) de aproximadamente 9.765 millones de parámetros que procesa entradas de imagen y texto y genera respuestas conversacionales. La cuantización se ha realizado con TorchAO mediante la configuración `IntxWeightOnlyConfig` en INT8 con grupo de 128 y simetría, manteniendo las activaciones en BF16 (esquema W8A16).
+Ornith-1.5-W8A16 es una versión cuantizada del modelo multimodal Ornith-1.5-9B desarrollado por ornith-ai, publicada por el usuario JohnRTitor en Hugging Face. Se trata de un modelo de lenguaje y visión (VLM, Vision-Language Model) de aproximadamente 9.765 millones de parámetros que procesa entradas de imagen y texto y genera respuestas conversacionales. La cuantización se ha realizado con TorchAO mediante la configuración `IntxWeightOnlyConfig` en INT8 con grupo de 128 y simetría, manteniendo las activaciones en BF16 (esquema W8A16).
 
 El objetivo principal de esta variante es reducir el peso en memoria y la latencia de inferencia para permitir su despliegue en hardware modesto, en concreto en TPU v5e-1 de Google Cloud o Colab con 16 GB de HBM, así como en GPUs NVIDIA. El checkpoint preserva en precisión nativa (BF16) los embeddings, la cabeza del modelo (LM Head) y el codificador visual, de modo que la pérdida de calidad se concentra en las capas lineales del transformer de lenguaje.
 
@@ -26,7 +26,7 @@ La relevancia de esta ficha radica en que se trata de una cuantización reciente
 
 ## Arquitectura y entrenamiento
 
-La información disponible indica que el modelo base es un VLM multimodal construido sobre una arquitectura de tipo transformer, etiquetada en HuggingFace con la familia `qwen3_5`. El modelo procesa entradas conjuntas de imagen y texto (pipeline `image-text-to-text`) y genera respuestas conversacionales. La cuantización aplicada afecta únicamente a los pesos de las capas lineales del transformer de lenguaje, que se empaquetan en INT8 con grupo de 128 y simetría, mientras que las activaciones se mantienen en BF16 y el codificador visual, los embeddings y la cabeza de lenguaje conservan su precisión nativa.
+La información disponible indica que el modelo base es un VLM multimodal construido sobre una arquitectura de tipo transformer, etiquetada en Hugging Face con la familia `qwen3_5`. El modelo procesa entradas conjuntas de imagen y texto (pipeline `image-text-to-text`) y genera respuestas conversacionales. La cuantización aplicada afecta únicamente a los pesos de las capas lineales del transformer de lenguaje, que se empaquetan en INT8 con grupo de 128 y simetría, mientras que las activaciones se mantienen en BF16 y el codificador visual, los embeddings y la cabeza de lenguaje conservan su precisión nativa.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF o DPO, ni sobre innovaciones técnicas específicas del modelo base (decodificación especulativa, atención lineal, etc.). La model card del checkpoint cuantizado se limita a describir el proceso de cuantización y el uso con Transformers, sin detallar el pipeline de entrenamiento original.
 
@@ -36,7 +36,7 @@ No se dispone de información sobre el número de tokens de entrenamiento, la co
 - Comprensión de imágenes y razonamiento conjunto imagen-texto (pipeline `image-text-to-text`).
 - Procesamiento de entradas multimodales mediante un codificador visual que se mantiene en BF16.
 - Inferencia de baja latencia en TPU v5e-1 y GPUs CUDA gracias a la cuantización INT8 de pesos.
-- Compatibilidad con la API `AutoModelForImageTextToText` de HuggingFace Transformers.
+- Compatibilidad con la API `AutoModelForImageTextToText` de Hugging Face Transformers.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según la metadata (`language: en`).
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU recomendadas: no se especifican modelos concretos; la model card menciona "CUDA GPUs" de forma genérica.
 - TPU: Google Colab TPU v5e-1 (16 GB HBM) y TPU VM de Google Cloud, objetivo principal de la cuantización.
 - ¿Cabe en GPU de consumo? Probablemente en GPUs con 16 GB o más de VRAM (por ejemplo, RTX 4080/4090 de 16-24 GB), aunque no se confirma oficialmente.
-- Opciones de despliegue: HuggingFace Transformers con `AutoModelForImageTextToText` y `device_map="auto"`; requiere `trust_remote_code=True`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: Hugging Face Transformers con `AutoModelForImageTextToText` y `device_map="auto"`; requiere `trust_remote_code=True`. No se mencionan vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ornith-1.5-W8A16 (este) | ~9,77 B | no disponible | INT8 W8A16 (TorchAO) | Apache 2.0 | HuggingFace |
-| ornith-ai/Ornith-1.5-9B (base) | ~9,77 B | no disponible | BF16 nativo | no disponible en esta ficha | HuggingFace |
+| Ornith-1.5-W8A16 (este) | ~9,77 B | no disponible | INT8 W8A16 (TorchAO) | Apache 2.0 | Hugging Face |
+| ornith-ai/Ornith-1.5-9B (base) | ~9,77 B | no disponible | BF16 nativo | no disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoría (VLM ~9-10 B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con alternativas concretas de la misma categoría en parámetros, contexto o rendimiento.

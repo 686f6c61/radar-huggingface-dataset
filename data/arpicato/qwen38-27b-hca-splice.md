@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arpicato/qwen38-27b-hca-splice` es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario arpicato. Se trata de un modelo conversacional de 27.384.136.704 parametros (27,38 mil millones), es decir, de la clase 27B, un segmento que permite inferencia local en hardware de gama alta de consumo si se recurre a cuantizacion. El repositorio ocupa 188,6 GB, lo que indica que contiene varias cuantizaciones GGUF del mismo modelo base en lugar de un unico fichero de pesos.
+El modelo `arpicato/qwen38-27b-hca-splice` es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario arpicato. Se trata de un modelo conversacional de 27.384.136.704 parametros (27,38 mil millones), es decir, de la clase 27B, un segmento que permite inferencia local en hardware de gama alta de consumo si se recurre a cuantizacion. El repositorio ocupa 188,6 GB, lo que indica que contiene varias cuantizaciones GGUF del mismo modelo base en lugar de un unico fichero de pesos.
 
 La nomenclatura "qwen38-27b" remite a la familia Qwen3 y el sufijo "hca-splice" sugiere una fusion de pesos (merge o splice) entre checkpoints; la etiqueta `imatrix` indica que las cuantizaciones se han calibrado con matrices de importancia. Ninguno de estos extremos esta documentado en la informacion disponible: el repositorio no incluye model card con pipeline declarado, licencia, idiomas ni detalles de entrenamiento, por lo que el linaje y el metodo de construccion deben tratarse como inferencias a partir del nombre y las etiquetas, no como hechos verificados.
 
@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye resultados de evaluacion 
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| arpicato/qwen38-27b-hca-splice | 27,38B | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| arpicato/qwen38-27b-hca-splice | 27,38B | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Alternativas de clase 24-32B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,6 +99,6 @@ No disponible. La informacion proporcionada no incluye resultados de evaluacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arpicato/qwen38-27b-hca-splice
+- Hugging Face: https://huggingface.co/arpicato/qwen38-27b-hca-splice
 - Paper, blog, repositorio de codigo o demo: no disponible
 - La busqueda web realizada no devolvio resultados relevantes sobre el modelo (unicamente paginas ajenas al mismo), por lo que no hay enlaces adicionales que citar.

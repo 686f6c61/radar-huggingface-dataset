@@ -53,5 +53,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4](https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4](https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed4)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)

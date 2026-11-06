@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo alojado en HuggingFace bajo el identificador `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e8`, publicado por el usuario PessimisticDPO. La model card es la plantilla genérica autogenerada por HuggingFace y no ha sido completada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como `[More Information Needed]`. El repositorio tiene un tamano de 0,2 GB y no registra descargas ni likes en el momento de la consulta.
+Este repositorio contiene un modelo alojado en Hugging Face bajo el identificador `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e8`, publicado por el usuario PessimisticDPO. La model card es la plantilla genérica autogenerada por Hugging Face y no ha sido completada: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) figuran como `[More Information Needed]`. El repositorio tiene un tamano de 0,2 GB y no registra descargas ni likes en el momento de la consulta.
 
 El propio identificador sugiere que se trata de un ajuste fino derivado de `mistral-7b-sft-beta` (la version SFT de Mistral 7B), presumiblemente entrenado con alguna variante de DPO "pesimista" (de ahi el nombre del autor y los sufijos `a0.1`, `b0.1`, `L4`, `overlap_subsample`, `l0`, `e8`, que apuntan a hiperparametros y a una estrategia de muestreo). Sin embargo, esta interpretacion no esta confirmada por ninguna fuente documental del repositorio, por lo que debe tratarse como una hipotesis derivada del nombre y no como un dato verificado.
 
@@ -99,7 +99,7 @@ Los datos de los modelos de referencia corresponden a sus propias model cards pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e8
+- Repositorio en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e8
 - Referencia citada en la model card (estimacion de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Base presumible, Mistral 7B v0.1: https://huggingface.co/mistralai/Mistral-7B-v0.1

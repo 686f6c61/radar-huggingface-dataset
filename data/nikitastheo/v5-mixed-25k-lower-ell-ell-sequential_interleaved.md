@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo transformer decoder-only, con arquitectura estilo GPT-2, publicado por el usuario nikitastheo en HuggingFace. Con 104.716.800 parámetros (unos 104,7 millones) y un repositorio de 0,8 GB en formato safetensors, se trata de un modelo pequeño, entrenado desde cero con un script propio de Hugging Face Accelerate (`train_clm.py`) en lugar del `Trainer` estándar.
+`nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo transformer decoder-only, con arquitectura estilo GPT-2, publicado por el usuario nikitastheo en Hugging Face. Con 104.716.800 parámetros (unos 104,7 millones) y un repositorio de 0,8 GB en formato safetensors, se trata de un modelo pequeño, entrenado desde cero con un script propio de Hugging Face Accelerate (`train_clm.py`) en lugar del `Trainer` estándar.
 
 El modelo no incorpora ajuste por instrucciones ni alineación mediante RLHF o DPO: es un modelo base (preentrenado) orientado a la generación de texto libre. Su tokenizer asociado, `nikitastheo/babylm-25k-ell-lower-tokenizer`, y el parámetro "language switch epoch" del entrenamiento apuntan a un experimento de investigación con vocabulario reducido (25k) y posible componente multilingüe, aunque la model card no confirma ni los idiomas ni la composición del corpus.
 
@@ -36,7 +36,7 @@ Los hiperparámetros de entrenamiento sí están detallados en la model card: 26
 - Soporte de tool calling o function calling: no disponible, no se menciona en la model card.
 - Soporte de agentes o razonamiento multi-paso: no disponible, no se menciona.
 - Capacidades de visión, audio o modo "thinking": no disponibles, no se mencionan.
-- Compatibilidad declarada con `text-generation-inference` y con endpoints de HuggingFace mediante los tags `text-generation-inference` y `endpoints_compatible`.
+- Compatibilidad declarada con `text-generation-inference` y con endpoints de Hugging Face mediante los tags `text-generation-inference` y `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - El consumo real de memoria crecerá con la longitud de contexto por el caché KV; al no especificarse la ventana de contexto, no es posible acotar ese incremento.
 - GPU recomendadas: cualquier GPU con 2 GB o más de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4090, A100 y H100. En estas dos últimas el modelo queda muy infrautilizado.
 - Cabe holgadamente en GPU de consumo e incluso en inferencia por CPU con cuantización INT8 o INT4.
-- Opciones de despliegue: `transformers` (formato nativo), `text-generation-inference` y endpoints de HuggingFace (compatibilidad declarada por los tags), `vLLM` y `llama.cpp` u `Ollama` previa conversión de los pesos a GGUF, ya que el repositorio solo distribuye safetensors.
+- Opciones de despliegue: `transformers` (formato nativo), `text-generation-inference` y endpoints de Hugging Face (compatibilidad declarada por los tags), `vLLM` y `llama.cpp` u `Ollama` previa conversión de los pesos a GGUF, ya que el repositorio solo distribuye safetensors.
 - Latencia y throughput: no disponible. No hay cifras publicadas de tokens por segundo ni de tiempo hasta el primer token para este modelo.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ Los datos de los modelos de comparación proceden de su documentación pública 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved | 104,7 M | no disponible | no disponible | HuggingFace, 0 descargas |
+| nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved | 104,7 M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 tokens | licencia MIT modificada | Ampliamente disponible |
 | Pythia-160M | 160 M | 2048 tokens | Apache 2.0 | Ampliamente disponible |
 | Modelos BabyLM de referencia | entre 10 M y 100 M aproximadamente | variable | variable según edición | Repositorios de la comunidad BabyLM |
@@ -89,7 +89,7 @@ Frente a GPT-2 small y Pythia-160M, este modelo no aporta resultados de evaluaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-mixed-25k-lower-ell-ell-sequential_interleaved
 - Tokenizer asociado: https://huggingface.co/nikitastheo/babylm-25k-ell-lower-tokenizer
 - Script de entrenamiento citado en la model card: `train_clm.py` (script de Hugging Face Accelerate, sin URL pública indicada)
 - Configuración base citada: `model_configs/gpt_base_config.json` (sin URL pública indicada)

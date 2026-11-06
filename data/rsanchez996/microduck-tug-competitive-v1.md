@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Observaciones / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-tug-competitive-v1 | Política RL (ONNX) para microduck | 61 / 14 | 50 Hz | no disponible | HuggingFace |
+| microduck-tug-competitive-v1 | Política RL (ONNX) para microduck | 61 / 14 | 50 Hz | no disponible | Hugging Face |
 | Otras políticas de microduck en `pollen-robotics/microduck_rl` | Políticas RL para microduck | no disponible | no disponible | no disponible | Repositorio de entrenamiento |
 | Políticas de locomoción para cuadrúpedos de bajo coste (genéricas) | Políticas RL | variable | variable | variable | no disponible |
 
@@ -80,7 +80,7 @@ No se dispone de datos públicos de rendimiento que permitan una comparación cu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-tug-competitive-v1
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-tug-competitive-v1
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `ft_competitive_multiopponent`, commit `b8328925e` (sin URL directa disponible en la información proporcionada)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (sin URL directa disponible en la información proporcionada)

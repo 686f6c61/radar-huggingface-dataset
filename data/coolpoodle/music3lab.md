@@ -87,7 +87,7 @@ No se dispone de información sobre toolkits comparables en la documentación pr
 
 ## Limitaciones y advertencias
 
-- **No incluye los pesos de MiniMax-Music3**: el usuario debe descargarlos por separado desde HuggingFace.
+- **No incluye los pesos de MiniMax-Music3**: el usuario debe descargarlos por separado desde Hugging Face.
 - **No redistribuye audio**: solo se incluyen metadatos (IDs, hashes, splits) de datasets como LAION, no los archivos de audio.
 - **No es un tokenizador de audio nativo**: el checkpoint liberado `dav.pth` no contiene cuantizador ni codebooks RVQ; la carpeta `62000_generator` es un nombre de archivo ZIP, no un componente real.
 - **Varias capacidades fallaron en las pruebas**: continuación con WAV arbitrario, FIM de dos lados, prepend, predicción de residuales Stage-1 y condicionamiento directo de referencia larga no superaron los umbrales preregistrados.
@@ -98,7 +98,7 @@ No se dispone de información sobre toolkits comparables en la documentación pr
 
 ## Enlaces
 
-- [HuggingFace - coolpoodle/music3lab](https://huggingface.co/coolpoodle/music3lab)
-- [HuggingFace - MiniMaxAI/MiniMax-Music3 (modelo base)](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
+- [Hugging Face - coolpoodle/music3lab](https://huggingface.co/coolpoodle/music3lab)
+- [Hugging Face - MiniMaxAI/MiniMax-Music3 (modelo base)](https://huggingface.co/MiniMaxAI/MiniMax-Music3)
 
 No se proporcionan otros enlaces externos en la información disponible. Los archivos mencionados en la model card (FINDINGS.md, REPRODUCING.md, reports/) son rutas relativas dentro del repositorio y no se han incluido URLs directas.

@@ -68,8 +68,8 @@ Conjunto de test: 64 prompts por tarea, cada uno en B = 1 y B = 32, proceso nuev
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Watching the Crowd (este) | 385,9 M en la cola; base Qwen3-8B | No disponible | Sonda de canal lateral de lote en GPU | Apache 2.0 | HuggingFace y GitHub |
-| Qwen/Qwen3-8B | 8 B | No disponible en la informacion proporcionada | LLM generalista | Apache 2.0 | HuggingFace |
+| Watching the Crowd (este) | 385,9 M en la cola; base Qwen3-8B | No disponible | Sonda de canal lateral de lote en GPU | Apache 2.0 | Hugging Face y GitHub |
+| Qwen/Qwen3-8B | 8 B | No disponible en la informacion proporcionada | LLM generalista | Apache 2.0 | Hugging Face |
 | SauersML/watching | No disponible | No disponible | Metodologia previa de deteccion de lote | No disponible | GitHub |
 
 No se dispone de otros artefactos comparables de canal lateral con resultados publicados en la informacion proporcionada.
@@ -86,7 +86,7 @@ No se dispone de otros artefactos comparables de canal lateral con resultados pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scasella91/watching-the-crowd
+- Hugging Face: https://huggingface.co/scasella91/watching-the-crowd
 - Repositorio GitHub (código, resultados y demo): https://github.com/scasella/watching-the-crowd
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Metodología previa: https://github.com/SauersML/watching

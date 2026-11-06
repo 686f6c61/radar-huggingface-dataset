@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlanderson/coca-contrastive-weights` es un repositorio de HuggingFace publicado por el usuario jlanderson que contiene una implementación propia y de tamano reducido de una arquitectura tipo Coca orientada a aprendizaje contrastivo. Segun la propia model card, se trata de un "punto de partida reproducible" y no de una release de modelo entrenado: el fichero `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint evaluado con benchmarks.
+`jlanderson/coca-contrastive-weights` es un repositorio de Hugging Face publicado por el usuario jlanderson que contiene una implementación propia y de tamano reducido de una arquitectura tipo Coca orientada a aprendizaje contrastivo. Segun la propia model card, se trata de un "punto de partida reproducible" y no de una release de modelo entrenado: el fichero `model.safetensors` se describe explicitamente como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint evaluado con benchmarks.
 
 El repositorio incluye un script Python ejecutable (`main.py`), un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el citado checkpoint de inicializacion. La escala declarada en la model card es "huge", aunque el recuento real de parametros de los tensores safetensors es de 33.088, una cifra muy alejada de lo que suele asociarse a esa etiqueta, lo que refuerza la naturaleza experimental y no productiva del artefacto.
 
@@ -77,7 +77,7 @@ No se dispone de datos comparativos en la informacion proporcionada. La busqueda
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jlanderson/coca-contrastive-weights | 33.088 | no disponible | ninguno (checkpoint de inicializacion) | apache-2.0 | HuggingFace, 10 descargas |
+| jlanderson/coca-contrastive-weights | 33.088 | no disponible | ninguno (checkpoint de inicializacion) | apache-2.0 | Hugging Face, 10 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 A modo de contexto cualitativo, la categoria de modelos contrastivos multimodales incluye familias como CLIP o CoCa, pero no se han aportado en esta busqueda datos verificables sobre ellas, por lo que la comparacion numerica queda fuera de alcance.
@@ -88,7 +88,7 @@ A modo de contexto cualitativo, la categoria de modelos contrastivos multimodale
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun reconoce la propia model card.
 - No se reclama ninguna puntuacion de benchmark; cualquier uso que exija calidad medible carece de base.
 - Ausencia total de datos sobre idiomas, longitud de contexto, tokenizador y composicion del dataset.
-- Implementacion propia: las APIs de carga automatica de HuggingFace u otras librerias requieren un adaptador explicito, lo que anade trabajo de integracion.
+- Implementacion propia: las APIs de carga automatica de Hugging Face u otras librerias requieren un adaptador explicito, lo que anade trabajo de integracion.
 - Discrepancia entre la escala declarada ("huge") y el recuento real de 33.088 parametros; conviene tratar la etiqueta de escala como no fiable.
 - Los resultados de un futuro checkpoint entrenado deberan documentarse por separado de los valores por defecto aqui incluidos, tal y como advierte el autor.
 - Licencia Apache 2.0: permite uso comercial del codigo y de los pesos, pero los terminos de los datos de origen deben revisarse por separado si se usan datasets externos.
@@ -96,5 +96,5 @@ A modo de contexto cualitativo, la categoria de modelos contrastivos multimodale
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jlanderson/coca-contrastive-weights
+- Hugging Face: https://huggingface.co/jlanderson/coca-contrastive-weights
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ezoz-demir/mocov3-finetuned` es un repositorio de HuggingFace publicado por el usuario ezoz-demir que contiene una implementación propia y compacta en PyTorch de **MoCo v3** (Momentum Contrast v3, aprendizaje autosupervisado contrastivo) orientada a tareas multitarea. El autor lo describe explícitamente como un artefacto para *code review*, pruebas de humo y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint `model.safetensors` es una **inicialización válida**, no un modelo entrenado ni evaluado.
+`ezoz-demir/mocov3-finetuned` es un repositorio de Hugging Face publicado por el usuario ezoz-demir que contiene una implementación propia y compacta en PyTorch de **MoCo v3** (Momentum Contrast v3, aprendizaje autosupervisado contrastivo) orientada a tareas multitarea. El autor lo describe explícitamente como un artefacto para *code review*, pruebas de humo y experimentos pequeños y controlados, no como un modelo preentrenado listo para producción. El checkpoint `model.safetensors` es una **inicialización válida**, no un modelo entrenado ni evaluado.
 
 El dato más relevante es su tamaño real: **49.600 parámetros** según el fichero de safetensors, muy lejos de la etiqueta "xlarge" que aparece en la model card. Esto lo sitúa en la categoría de maqueta de código ejecutable más que de modelo utilizable: sirve para validar pipelines de carga de pesos, integraciones de framework y recetas de entrenamiento, pero no aporta capacidad predictiva demostrada.
 
@@ -23,7 +23,7 @@ Es relevante ahora únicamente como pieza de infraestructura reproducible: ofrec
 | Escala declarada por el autor | xlarge (no coherente con el recuento real de parámetros) |
 | Tamano del repo | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ Las cifras de los modelos de referencia provienen de sus publicaciones originale
 
 | Modelo | Parámetros | Contexto / modalidad | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ezoz-demir/mocov3-finetuned | 49.600 | no disponible | sin benchmarks declarados | BSD-3-Clause | HuggingFace, 0 descargas |
+| ezoz-demir/mocov3-finetuned | 49.600 | no disponible | sin benchmarks declarados | BSD-3-Clause | Hugging Face, 0 descargas |
 | MoCo v3 original (ViT-B/16, Meta AI) | ~86 M | visión; resolución dependiente del recipe | resultados publicados en el paper original | no verificada en esta ficha | repositorio oficial de investigación |
 | DINO (ViT-B/16) | ~85 M | visión; autosupervisado sin etiquetas | resultados publicados en su paper | no verificada en esta ficha | pesos públicos de investigación |
 | SimCLR (ResNet-50) | ~24 M | visión; contrastivo con lote grande | resultados publicados en su paper | no verificada en esta ficha | implementación y pesos públicos |
@@ -90,6 +90,6 @@ La diferencia clave no es de rendimiento sino de naturaleza: los tres comparador
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ezoz-demir/mocov3-finetuned
+- Hugging Face: https://huggingface.co/ezoz-demir/mocov3-finetuned
 - Paper de referencia del método (no vinculado al repositorio): MoCo v3, "An Empirical Study of Training Self-Supervised Vision Transformers", https://arxiv.org/abs/2104.02057
 - En la búsqueda web realizada no se han encontrado enlaces relevantes al modelo, al autor ni a la implementación. El único resultado devuelto no guarda relación con el contenido técnico y se ha descartado.

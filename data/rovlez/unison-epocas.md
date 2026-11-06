@@ -64,8 +64,8 @@ El único dato de evaluación reportado por el autor es la tasa de acierto del c
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| RovleZ/unison-epocas | 0,5B | no disponible | apache-2.0 | Ajuste LoRA de estilo institucional en español, ONNX q4 | HuggingFace, transformers.js |
-| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la informacion proporcionada | apache-2.0 | Modelo base instructivo generalista y multilingüe | HuggingFace, múltiples runtimes |
+| RovleZ/unison-epocas | 0,5B | no disponible | apache-2.0 | Ajuste LoRA de estilo institucional en español, ONNX q4 | Hugging Face, transformers.js |
+| Qwen/Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la informacion proporcionada | apache-2.0 | Modelo base instructivo generalista y multilingüe | Hugging Face, múltiples runtimes |
 | Otros ajustes LoRA de 0,5B para estilo en español | 0,5B | variable | variable | Adaptaciones estilísticas o de dominio | Depende del autor |
 
 La comparación directa con alternativas de la misma categoría (ajustes de estilo en español sobre modelos de 0,5B) no está disponible en la información proporcionada; el único punto de referencia objetivo es el modelo base Qwen2.5-0.5B-Instruct, del que unison-epocas hereda arquitectura y licencia pero del que difiere en especialización (estilo institucional frente a instrucciones generales) y en formato de distribución (ONNX q4 frente a safetensors).
@@ -83,7 +83,7 @@ La comparación directa con alternativas de la misma categoría (ajustes de esti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RovleZ/unison-epocas
+- Modelo en Hugging Face: https://huggingface.co/RovleZ/unison-epocas
 - Proyecto "La Unison cambió su forma de escribir": https://rovlezmex.github.io/pln-noticias-unison/
 - Código del proyecto: https://github.com/RovleZMex/pln-noticias-unison
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

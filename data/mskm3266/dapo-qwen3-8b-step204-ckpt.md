@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint intermedio del entrenamiento de refuerzo (RL) del modelo Qwen/Qwen3-8B-Base mediante el algoritmo DAPO (Decoupled Alignment Policy Optimization), ejecutado con el framework verl. El checkpoint corresponde al paso global 204 de un run denominado `DAPO_batch128_clip0.28_48h`, y está formateado como shards FSDP v1 con world_size 2, pensado exclusivamente para reanudar el entrenamiento en otro nodo con la misma configuración de GPUs. No es un modelo listo para inferencia: los pesos están en float32 y distribuidos en dos archivos por rank, por lo que requieren un proceso de merge con la herramienta `verl.model_merger` para convertirlos a safetensors compatibles con HuggingFace Transformers.
+Este repositorio contiene un checkpoint intermedio del entrenamiento de refuerzo (RL) del modelo Qwen/Qwen3-8B-Base mediante el algoritmo DAPO (Decoupled Alignment Policy Optimization), ejecutado con el framework verl. El checkpoint corresponde al paso global 204 de un run denominado `DAPO_batch128_clip0.28_48h`, y está formateado como shards FSDP v1 con world_size 2, pensado exclusivamente para reanudar el entrenamiento en otro nodo con la misma configuración de GPUs. No es un modelo listo para inferencia: los pesos están en float32 y distribuidos en dos archivos por rank, por lo que requieren un proceso de merge con la herramienta `verl.model_merger` para convertirlos a safetensors compatibles con Hugging Face Transformers.
 
 La relevancia de este checkpoint radica en que permite continuar un experimento de RL con DAPO sobre Qwen3-8B sin perder el progreso acumulado, algo crítico en entrenamientos largos que pueden superar las 48 horas. Al estar basado en Qwen3-8B-Base, hereda la arquitectura transformer densa de 8 mil millones de parámetros y la ventana de contexto de 32 768 tokens del modelo original, aunque el checkpoint en sí no añade capacidades nuevas más allá del estado del optimizador y del scheduler.
 
@@ -17,7 +17,7 @@ La relevancia de este checkpoint radica en que permite continuar un experimento 
 | Tipos de cuantizacion | no disponible (checkpoint en float32, sin cuantizar) |
 | Idiomas soportados | no disponible (depende del modelo base; Qwen3-8B soporta multiples idiomas) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | FSDP v1 sharded (archivos `.pt` por rank) + metadatos HuggingFace en `actor/huggingface/` |
+| Formato de pesos | FSDP v1 sharded (archivos `.pt` por rank) + metadatos Hugging Face en `actor/huggingface/` |
 
 ## Arquitectura y entrenamiento
 
@@ -31,7 +31,7 @@ Este checkpoint no es un modelo de inferencia, por lo que no tiene capacidades f
 
 - Reanudar un entrenamiento DAPO interrumpido desde el paso global 204.
 - Servir como punto de partida para continuar el entrenamiento con verl.
-- Tras un proceso de merge con `verl.model_merger`, puede convertirse en un modelo HuggingFace compatible con `AutoModelForCausalLM` para inferencia, aunque las capacidades resultantes dependerán del estado del entrenamiento en ese paso.
+- Tras un proceso de merge con `verl.model_merger`, puede convertirse en un modelo Hugging Face compatible con `AutoModelForCausalLM` para inferencia, aunque las capacidades resultantes dependerán del estado del entrenamiento en ese paso.
 
 ## Casos de uso
 
@@ -75,7 +75,7 @@ La comparativa muestra que este checkpoint se distingue de otros artefactos DAPO
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mskm3266/DAPO-Qwen3-8B-step204-ckpt
+- Repositorio Hugging Face: https://huggingface.co/mskm3266/DAPO-Qwen3-8B-step204-ckpt
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Checkpoint DAPO alternativo (inferencia): https://huggingface.co/pb09204048/Qwen3-8B-DAPO-iter599-thinking
 - Documentacion de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

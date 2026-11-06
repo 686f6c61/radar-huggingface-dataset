@@ -105,8 +105,8 @@ No se dispone de datos de benchmarks de capacidad para establecer una comparacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen3.8-27B-MPOA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (proyecto): https://heretic-project.org
 - Pagina del modelo en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b
-- Directorio de reproduccion: `reproduce/README.md` dentro del repositorio de HuggingFace
+- Directorio de reproduccion: `reproduce/README.md` dentro del repositorio de Hugging Face

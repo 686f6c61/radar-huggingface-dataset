@@ -97,7 +97,7 @@ No se dispone de datos cuantitativos (similitud facial, FID, CLIP) para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous111110987654321/emma-watson
+- Modelo en Hugging Face: https://huggingface.co/anonymous111110987654321/emma-watson
 - Modelo base de entrenamiento: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base usado en los ejemplos de inferencia: https://huggingface.co/krea/Krea-2-Turbo
 - Documentacion de diffusers sobre carga de LoRAs: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

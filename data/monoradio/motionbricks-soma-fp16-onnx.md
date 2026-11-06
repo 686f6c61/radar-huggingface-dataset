@@ -39,7 +39,7 @@ No hay evidencia de capacidades de texto, codigo, vision, tool calling ni razona
 
 ## Casos de uso
 
-- Demos interactivas en el navegador: el modelo alimenta una live demo en un HuggingFace Space, generando animaciones sin backend, ideal para mostrar motion generation a usuarios sin instalacion.
+- Demos interactivas en el navegador: el modelo alimenta una live demo en un Hugging Face Space, generando animaciones sin backend, ideal para mostrar motion generation a usuarios sin instalacion.
 - Editores de animacion web: puede integrarse en un editor de personajes en el navegador para autocompletar movimiento entre una pose inicial y una objetivo, con latencias de ~120 ms adecuadas para interaccion fluida.
 - Prototipado de videojuegos en WebAssembly/WebGPU: equipos de game design pueden probar comportamientos de animacion procedural directamente en el cliente antes de portarlos a motor.
 - Generacion de clips de relleno (in-betweening): dada una pose de contexto y una objetivo, produce 64 frames intermedios, util para rellenar transiciones entre keyframes.
@@ -78,7 +78,7 @@ No hay datos suficientes publicados para una comparativa numerica rigurosa. Como
 
 - Es un derivado comunitario no oficial: no ha sido creado ni avalado por NVIDIA, por lo que posibles defectos de la exportacion ONNX son responsabilidad del autor del derivado.
 - La licencia es la NVIDIA Open Model Agreement, no una licencia permisiva estandar (Apache/MIT): revisar sus terminos antes de cualquier uso comercial o redistribucion.
-- Con 0 descargas registradas en HuggingFace, no existe historial de adopcion ni validacion comunitaria del modelo.
+- Con 0 descargas registradas en Hugging Face, no existe historial de adopcion ni validacion comunitaria del modelo.
 - La variante cuantizada a 8 bits introduce una desviacion media de 0,0018 respecto a float32 (frente a 0,0004 de fp16); en aplicaciones sensibles a la precision del movimiento conviene validar visualmente el resultado.
 - El rendimiento documentado se limita a un M1 Mac con WebGPU; el comportamiento en otras GPUs, navegadores o versiones de onnxruntime-web no esta verificado.
 - El soporte de WebGPU todavia no es universal en todos los navegadores y plataformas, lo que puede limitar la audiencia de una aplicacion que dependa de el.
@@ -90,4 +90,4 @@ No hay datos suficientes publicados para una comparativa numerica rigurosa. Como
 - Ficha del modelo derivado: https://huggingface.co/monoradio/motionbricks-soma-fp16-onnx
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/MotionBricks
 - Licencia NVIDIA Open Model Agreement: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/
-- Live demo (HuggingFace Space): enlazada desde la model card del repositorio; URL exacta no disponible en la informacion proporcionada.
+- Live demo (Hugging Face Space): enlazada desde la model card del repositorio; URL exacta no disponible en la informacion proporcionada.

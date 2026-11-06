@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zonglin11/humanaopen_test_smolvla
+- Repositorio Hugging Face: https://huggingface.co/zonglin11/humanaopen_test_smolvla
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/zonglin11/humanaopen_test1_20260831_233202
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844

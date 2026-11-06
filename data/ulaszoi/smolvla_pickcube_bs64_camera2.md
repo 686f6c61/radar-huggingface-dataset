@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ulasZoi/smolvla_pickcube_bs64_camera2` | 450.046.176 (~450 M) | VLA por imitacion, especializado en "pick up the cube" | Estado (6,) + hasta 3 imagenes 3x256x256 | Apache 2.0 | HuggingFace, libreria LeRobot |
-| `lerobot/smolvla_base` | No disponible en la informacion proporcionada (misma arquitectura SmolVLA que este fine-tune) | VLA base preentrenado, generalista | No detallado en la informacion disponible | Apache 2.0 (segun la ficha del modelo ajustado) | HuggingFace |
+| `ulasZoi/smolvla_pickcube_bs64_camera2` | 450.046.176 (~450 M) | VLA por imitacion, especializado en "pick up the cube" | Estado (6,) + hasta 3 imagenes 3x256x256 | Apache 2.0 | Hugging Face, libreria LeRobot |
+| `lerobot/smolvla_base` | No disponible en la informacion proporcionada (misma arquitectura SmolVLA que este fine-tune) | VLA base preentrenado, generalista | No detallado en la informacion disponible | Apache 2.0 (segun la ficha del modelo ajustado) | Hugging Face |
 | Otros VLA de la misma categoria (OpenVLA, pi0, GR00T N1, Octo, Diffusion Policy) | No disponible | VLA y politicas de imitacion | No disponible | No disponible | No disponible |
 
 La unica comparacion documentada con datos es frente al checkpoint base del que deriva: misma familia arquitectonica, misma licencia y mismo ecosistema de despliegue, con la diferencia de que este modelo esta especializado en una tarea y un montaje concretos. No se dispone en la informacion proporcionada de parametros, contexto ni resultados comparables de otras familias VLA, por lo que no se establece una comparacion cuantitativa.
@@ -91,7 +91,7 @@ La unica comparacion documentada con datos es frente al checkpoint base del que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all
 - Articulo SmolVLA (arXiv): https://huggingface.co/papers/2506.01844

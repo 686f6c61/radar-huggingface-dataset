@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`taras1814/ddpm-celebahq-finetuned-butterflies-2epochs` es un modelo de difusion incondicional de imagenes publicado en HuggingFace por el usuario taras1814. Se trata de un fine-tuning del checkpoint `ddpm-celebahq-256` (un DDPM entrenado sobre el dataset CelebA-HQ a 256x256) sobre un dataset de mariposas durante 2 epocas, realizado en el contexto del curso Diffusion Models Class de HuggingFace (Unidad 2). No es un modelo pensado para produccion, sino un ejemplo didactico de fine-tuning de pipelines de difusion.
+`taras1814/ddpm-celebahq-finetuned-butterflies-2epochs` es un modelo de difusion incondicional de imagenes publicado en Hugging Face por el usuario taras1814. Se trata de un fine-tuning del checkpoint `ddpm-celebahq-256` (un DDPM entrenado sobre el dataset CelebA-HQ a 256x256) sobre un dataset de mariposas durante 2 epocas, realizado en el contexto del curso Diffusion Models Class de Hugging Face (Unidad 2). No es un modelo pensado para produccion, sino un ejemplo didactico de fine-tuning de pipelines de difusion.
 
 El modelo emplea la arquitectura DDPM (Denoising Diffusion Probabilistic Models) con un UNet como red de denoising, y se distribuye en formato `diffusers` con pesos en safetensors. Cuenta con aproximadamente 113,7 millones de parametros y un tamano de repositorio de 0,5 GB, lo que lo hace ligero y apto para ejecucion en GPU de consumo.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada fuera del ambito educativo: no soporta condicionamient
 
 El modelo sigue la formulacion clasica de DDPM: un proceso directo de difusion gaussiana que anade ruido progresivamente a la imagen y un proceso inverso aprendido por una UNet que predice el ruido en cada paso. El pipeline asociado es `DDPMPipeline` de la libreria `diffusers`, que gestiona el muestreo iterativo (tipicamente con scheduler DDPM o DDIM) para generar imagenes incondicionales a partir de ruido puro.
 
-El entrenamiento parte del checkpoint `ddpm-celebahq-256` (entrenado sobre CelebA-HQ a 256x256) y se realiza un fine-tuning de 2 epocas sobre un dataset de mariposas, presumiblemente el dataset `huggan/smithsonian_butterflies_subset` habitual en el curso de HuggingFace. No se documenta el numero de tokens (no aplica), la composicion exacta del dataset, ni si se aplicaron tecnicas adicionales como EMA, clasificador libre de guia (CFG) o recorte de pasos. La model card no aporta informacion sobre hiperparametros, learning rate, batch size ni resolucion de entrenamiento.
+El entrenamiento parte del checkpoint `ddpm-celebahq-256` (entrenado sobre CelebA-HQ a 256x256) y se realiza un fine-tuning de 2 epocas sobre un dataset de mariposas, presumiblemente el dataset `huggan/smithsonian_butterflies_subset` habitual en el curso de Hugging Face. No se documenta el numero de tokens (no aplica), la composicion exacta del dataset, ni si se aplicaron tecnicas adicionales como EMA, clasificador libre de guia (CFG) o recorte de pasos. La model card no aporta informacion sobre hiperparametros, learning rate, batch size ni resolucion de entrenamiento.
 
 ## Capacidades
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| taras1814/ddpm-celebahq-finetuned-butterflies-2epochs | 113,7 M | 256x256 (incondicional) | MIT | HuggingFace | Fine-tuning de 2 epocas, didactico |
-| google/ddpm-celebahq-256 | no disponible en la informacion | 256x256 (incondicional) | no disponible en la informacion | HuggingFace | Checkpoint base del que parte este modelo |
-| google/ddpm-cifar10-32 | no disponible en la informacion | 32x32 (incondicional) | no disponible en la informacion | HuggingFace | DDPM clasico de referencia en CIFAR-10 |
-| hf-internal-testing/ddpm-ema-butterflies-256 | no disponible en la informacion | 256x256 (incondicional) | no disponible en la informacion | HuggingFace | Modelo de mariposas de referencia del curso |
+| taras1814/ddpm-celebahq-finetuned-butterflies-2epochs | 113,7 M | 256x256 (incondicional) | MIT | Hugging Face | Fine-tuning de 2 epocas, didactico |
+| google/ddpm-celebahq-256 | no disponible en la informacion | 256x256 (incondicional) | no disponible en la informacion | Hugging Face | Checkpoint base del que parte este modelo |
+| google/ddpm-cifar10-32 | no disponible en la informacion | 32x32 (incondicional) | no disponible en la informacion | Hugging Face | DDPM clasico de referencia en CIFAR-10 |
+| hf-internal-testing/ddpm-ema-butterflies-256 | no disponible en la informacion | 256x256 (incondicional) | no disponible en la informacion | Hugging Face | Modelo de mariposas de referencia del curso |
 
 La comparacion cuantitativa de rendimiento no esta disponible; los modelos alternativos se listan por categoria (DDPM incondicional de imagen) y no por metricas publicadas.
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa de rendimiento no esta disponible; los modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/taras1814/ddpm-celebahq-finetuned-butterflies-2epochs
+- Modelo en Hugging Face: https://huggingface.co/taras1814/ddpm-celebahq-finetuned-butterflies-2epochs
 - Curso Diffusion Models Class (repositorio): https://github.com/huggingface/diffusion-models-class
 - Libreria diffusers: https://github.com/huggingface/diffusers
 - Checkpoint base `ddpm-celebahq-256`: https://huggingface.co/google/ddpm-celebahq-256

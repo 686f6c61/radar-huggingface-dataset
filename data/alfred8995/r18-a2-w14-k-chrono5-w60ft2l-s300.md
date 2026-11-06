@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `r18-a2-w14-k-chrono5-w60ft2l-s300` es un checkpoint publicado por el usuario alfred8995 en HuggingFace bajo el tag `sn38-nanochrono`. Con 2.018.511.234 parámetros totales (aproximadamente 2.000 millones), se trata de un modelo de tamaño medio-grande empaquetado en safetensors con un repositorio de 6,3 GB, lo que sugiere pesos en precisión de 16 bits. La nomenclatura del identificador (r18, a2, w14, chrono5, w60ft2l, s300) apunta a una configuración experimental concreta dentro de una familia de entrenamiento, probablemente con variantes de arquitectura, ventana y número de pasos.
+El modelo `r18-a2-w14-k-chrono5-w60ft2l-s300` es un checkpoint publicado por el usuario alfred8995 en Hugging Face bajo el tag `sn38-nanochrono`. Con 2.018.511.234 parámetros totales (aproximadamente 2.000 millones), se trata de un modelo de tamaño medio-grande empaquetado en safetensors con un repositorio de 6,3 GB, lo que sugiere pesos en precisión de 16 bits. La nomenclatura del identificador (r18, a2, w14, chrono5, w60ft2l, s300) apunta a una configuración experimental concreta dentro de una familia de entrenamiento, probablemente con variantes de arquitectura, ventana y número de pasos.
 
-La información pública disponible es extremadamente limitada: no se especifican pipeline, idiomas, arquitectura ni datos de entrenamiento. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos. La licencia declarada es Apache 2.0, lo que permite uso comercial siempre que se respeten las condiciones de atribución.
+La información pública disponible es extremadamente limitada: no se especifican pipeline, idiomas, arquitectura ni datos de entrenamiento. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos. La licencia declarada es Apache 2.0, lo que permite uso comercial siempre que se respeten las condiciones de atribución.
 
 Por su tamaño y formato, el modelo es relevante para quienes siguen la línea de trabajo `nanochrono` de alfred8995 y quieran evaluar checkpoints intermedios o experimentales. No obstante, sin documentación técnica ni benchmarks publicados, cualquier evaluación rigurosa debe hacerse empíricamente tras obtener acceso.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| r18-a2-w14-k-chrono5-w60ft2l-s300 | 2.018.511.234 | no disponible | apache-2.0 | gated en HuggingFace |
+| r18-a2-w14-k-chrono5-w60ft2l-s300 | 2.018.511.234 | no disponible | apache-2.0 | gated en Hugging Face |
 | Alternativas de ~2B | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de la misma categoría. Cualquier comparación requeriría benchmarks propios y verificación de la arquitectura.
@@ -72,11 +72,11 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Ausencia total de documentación: no hay model card con arquitectura, datos de entrenamiento ni evaluación, lo que impide conocer sus sesgos y fiabilidad.
 - Riesgo de alucinación: desconocido, pero esperable en modelos sin datos de alineación publicados; debe validarse en el dominio de uso.
 - Limitaciones de contexto e idioma: no disponibles; no se declaran idiomas soportados ni longitud de contexto.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en pipelines automatizados.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial, pero al no haber documentación sobre procedencia de datos, la responsabilidad sobre posibles infracciones recae en el usuario.
 - Checkpoint experimental: el identificador sugiere una configuración concreta de una familia de experimentos; no debe asumirse que sea el modelo final o recomendado de la serie.
 - Compatibilidad de despliegue incierta: sin `config.json` ni tokenizer publicados, la integración con vLLM, TGI o llama.cpp puede requerir trabajo adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2l-s300

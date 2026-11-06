@@ -80,7 +80,7 @@ La ventaja de este adaptador es su integracion con un LLM generativo (LFM2.5-2.6
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/MrWoRmMrLabs/groundedness-judge-lfm2.5
+- Repositorio Hugging Face del adaptador: https://huggingface.co/MrWoRmMrLabs/groundedness-judge-lfm2.5
 - Modelo base LiquidAI/LFM2.5-2.6B: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Licencia LFM Open License v1.0: https://www.liquid.ai/lfm-open-license
 - Blog de Liquid AI sobre LFM2.5-8B-A1B (informacion sobre la familia LFM2.5): https://www.liquid.ai/blog/lfm2-5-8b-a1b

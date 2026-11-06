@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CharlieBT/gx33-decider | 26,1 B | no disponible | Modelo de decisión (text-classification) | MIT | HuggingFace, repo de 52,2 GB |
-| baselabs/mammoth-1 | no disponible | no disponible | Fine-tune de Qwen3.5-27B con lectura conjunta | no disponible | HuggingFace |
-| tattrongvu/Jeffan-31b-1710 | ~31 B (Gemma-4-31B) | no disponible | Modelo generativo usado como referencia del ensamblado | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-27B | 27 B | no disponible | LLM generativo | Apache-2.0 | HuggingFace |
+| CharlieBT/gx33-decider | 26,1 B | no disponible | Modelo de decisión (text-classification) | MIT | Hugging Face, repo de 52,2 GB |
+| baselabs/mammoth-1 | no disponible | no disponible | Fine-tune de Qwen3.5-27B con lectura conjunta | no disponible | Hugging Face |
+| tattrongvu/Jeffan-31b-1710 | ~31 B (Gemma-4-31B) | no disponible | Modelo generativo usado como referencia del ensamblado | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-27B | 27 B | no disponible | LLM generativo | Apache-2.0 | Hugging Face |
 
 La comparación es limitada: gx33-decider no es un LLM generativo sino un modelo de decisión, por lo que la comparación directa con Qwen3.5-27B o con Gemma-4-31B mide objetos distintos. Frente a sus modelos base, la diferencia principal es la cabeza de lectura conjunta y el entrenamiento sobre objetivos de ensamblado. No se dispone de datos de rendimiento comparativo.
 
@@ -83,7 +83,7 @@ La comparación es limitada: gx33-decider no es un LLM generativo sino un modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieBT/gx33-decider
+- Modelo en Hugging Face: https://huggingface.co/CharlieBT/gx33-decider
 - Modelo base principal: https://huggingface.co/baselabs/mammoth-1
 - Padre core2: https://huggingface.co/danyloooah/sn92-generalist-m1-core2
 - Padre core7a: https://huggingface.co/Lucas989/sn92-generalist-m1-core7a

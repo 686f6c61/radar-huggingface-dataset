@@ -75,4 +75,4 @@ No se ha proporcionado informacion sobre modelos comparables en la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samyukta31/sonar_yolo
+- Hugging Face: https://huggingface.co/Samyukta31/sonar_yolo

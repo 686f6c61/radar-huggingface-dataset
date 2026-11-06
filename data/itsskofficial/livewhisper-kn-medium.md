@@ -70,7 +70,7 @@ Advertencias sobre estos números: no se especifican el conjunto de evaluación 
 - Memoria para la conversión de formato: cerca de 7 GB de pico, según el autor; es un requisito del proceso de conversión, no de la inferencia.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM sirve; RTX 3060, RTX 4060, RTX 4090, A100 y H100 lo ejecutan con holgura. En CPU funciona con CTranslate2, aunque con mayor latencia.
 - Sí cabe en GPU de consumo: GTX 1650, RTX 3050, RTX 3060 o superiores son suficientes incluso en float16; con cuantización int8 el margen es amplio.
-- Opciones de despliegue: faster-whisper sobre CTranslate2 (vía oficial), LiveWhisper en Windows, o cualquier servicio propio que use la librería ctranslate2. No se puede cargar directamente en llama.cpp, Ollama o servidores basados en GGUF, ya que el repositorio no publica pesos en ese formato; para esos entornos habría que partir del modelo original en HuggingFace Transformers y convertirlo aparte.
+- Opciones de despliegue: faster-whisper sobre CTranslate2 (vía oficial), LiveWhisper en Windows, o cualquier servicio propio que use la librería ctranslate2. No se puede cargar directamente en llama.cpp, Ollama o servidores basados en GGUF, ya que el repositorio no publica pesos en ese formato; para esos entornos habría que partir del modelo original en Hugging Face Transformers y convertirlo aparte.
 - Latencia y throughput: no disponibles. El autor no publica métricas de velocidad; en un modelo medium con CTranslate2 y una GPU de gama media cabe esperar un factor de tiempo real muy por encima de 1, pero no se confirma con datos.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparación relevante es la última fila: dentro del entorno LiveWhisper, el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsskofficial/livewhisper-kn-medium
+- Modelo en Hugging Face: https://huggingface.co/itsskofficial/livewhisper-kn-medium
 - Modelo base: https://huggingface.co/vasista22/whisper-kannada-medium
 - faster-whisper (repositorio): https://github.com/SYSTRAN/faster-whisper
 - LiveWhisper (aplicación de dictado para Windows): https://github.com/itsskofficial/LiveWhisper

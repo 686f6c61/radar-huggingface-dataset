@@ -4,7 +4,7 @@
 
 Libre3DMOODb es un checkpoint de detección de objetos 3D monocular de tipo open-vocabulary, desarrollado por el proyecto LibreYOLO como adaptación oficial del modelo 3D-MOOD del Computer Vision and Geometry Lab de ETH Zurich. El checkpoint se expone a través de la API `detect3d` de LibreYOLO, lo que permite detectar y localizar objetos en el espacio tridimensional a partir de una única imagen y de los parámetros intrínsecos de la cámara. El modelo acepta prompts de texto para definir las clases a detectar, por lo que no está limitado a un conjunto cerrado de categorías.
 
-La arquitectura subyacente es un backbone Swin-B dentro del marco de 3D-MOOD, con un peso del checkpoint original del repositorio `cvg/3D-MOOD`. LibreYOLO no modifica los parámetros aprendidos; únicamente renombra el fichero, verifica la paridad de salida y sustituye la extensión CUDA de Vis4D por una ruta de atención portátil en PyTorch. El tamaño del repositorio en HuggingFace es de 1.0 GB, aunque no se dispone de la cifra exacta de parámetros ni de la longitud de contexto (al no ser un modelo de lenguaje, este parámetro no aplica).
+La arquitectura subyacente es un backbone Swin-B dentro del marco de 3D-MOOD, con un peso del checkpoint original del repositorio `cvg/3D-MOOD`. LibreYOLO no modifica los parámetros aprendidos; únicamente renombra el fichero, verifica la paridad de salida y sustituye la extensión CUDA de Vis4D por una ruta de atención portátil en PyTorch. El tamaño del repositorio en Hugging Face es de 1.0 GB, aunque no se dispone de la cifra exacta de parámetros ni de la longitud de contexto (al no ser un modelo de lenguaje, este parámetro no aplica).
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No disponible. El checkpoint es identico en parametros y comportamiento al model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/Libre3DMOODb
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/Libre3DMOODb
 - Repositorio upstream de 3D-MOOD: https://github.com/cvg/3D-MOOD
 - Checkpoint fuente original (rev. 3d1fab5): https://huggingface.co/RoyYang0714/3D-MOOD
 - GitHub de LibreYOLO: https://github.com/LibreYOLO/libreyolo

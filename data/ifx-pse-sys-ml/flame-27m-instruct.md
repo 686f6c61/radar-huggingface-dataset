@@ -110,7 +110,7 @@ La unica comparacion con datos homogeneos disponible es la de SmolLM-135M-Instru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct
+- Modelo en Hugging Face: https://huggingface.co/ifx-pse-sys-ml/flame-27m-instruct
 - Modelo base: https://huggingface.co/ifx-pse-sys-ml/flame-27m-base
 - Dataset SmolTalk: https://huggingface.co/datasets/HuggingFaceTB/smoltalk
 - Dataset Tulu-3-Persona-IF: https://huggingface.co/datasets/allenai/tulu-3-sft-personas-instruction-following

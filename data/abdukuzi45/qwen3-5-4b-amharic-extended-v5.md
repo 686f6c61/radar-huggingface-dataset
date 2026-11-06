@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`abdukuzi45/qwen3.5-4b-amharic-extended-v5` es un modelo publicado en HuggingFace por el usuario abdukuzi45, cuyo nombre sugiere un ajuste fino orientado al amharico (extended v5) sobre una base de la familia Qwen 3.5 de aproximadamente 4.000 millones de parametros. La model card no aporta informacion verificable sobre el proceso de entrenamiento, los datos utilizados ni los objetivos concretos del ajuste, por lo que la mayor parte de las especificaciones tecnicas figuran como no disponibles.
+`abdukuzi45/qwen3.5-4b-amharic-extended-v5` es un modelo publicado en Hugging Face por el usuario abdukuzi45, cuyo nombre sugiere un ajuste fino orientado al amharico (extended v5) sobre una base de la familia Qwen 3.5 de aproximadamente 4.000 millones de parametros. La model card no aporta informacion verificable sobre el proceso de entrenamiento, los datos utilizados ni los objetivos concretos del ajuste, por lo que la mayor parte de las especificaciones tecnicas figuran como no disponibles.
 
-El repositorio se etiqueta con la libreria `transformers`, pesos en `safetensors` y el pipeline `image-text-to-text`, lo que indica que el modelo acepta entrada multimodal (imagen y texto) y genera texto. Tambien incluye la etiqueta `conversational`, coherente con un uso de asistente dialógico, y `endpoints_compatible`, que implica compatibilidad con los endpoints de inferencia gestionados de HuggingFace.
+El repositorio se etiqueta con la libreria `transformers`, pesos en `safetensors` y el pipeline `image-text-to-text`, lo que indica que el modelo acepta entrada multimodal (imagen y texto) y genera texto. Tambien incluye la etiqueta `conversational`, coherente con un uso de asistente dialógico, y `endpoints_compatible`, que implica compatibilidad con los endpoints de inferencia gestionados de Hugging Face.
 
 El interes del modelo, en el estado actual de la informacion, es limitado para produccion: no tiene descargas ni likes, la licencia no esta declarada y no se han publicado resultados de benchmarks. Su relevancia potencial radica en cubrir una combinacion poco frecuente (multimodalidad con foco en una lengua de bajos recursos como el amharico), pero cualquier evaluacion seria exige que el autor publique la model card completa.
 
@@ -66,7 +66,7 @@ Las siguientes cifras son estimaciones de orden de magnitud calculadas a partir 
 - VRAM en cuantizacion de 4 bits: aproximadamente 2,5-3 GB de pesos, sin contar el posible codificador visual.
 - GPU consumer: previsiblemente ejecutable en RTX 3060 12 GB, RTX 4070, RTX 4080 y RTX 4090 en FP16 o cuantizado; en 4 bits podria caber en GPU de 6-8 GB.
 - GPU de datacenter: A100 40/80 GB, H100, L40S y A10G son suficientes con margen amplio para inferencia por lotes.
-- Opciones de despliegue: al ser un modelo `transformers` con pesos `safetensors` y etiqueta `endpoints_compatible`, es desplegable con la libreria `transformers`, con Text Generation Inference y con los Inference Endpoints de HuggingFace. La compatibilidad con vLLM, llama.cpp u Ollama no esta declarada y depende de que existan pesos GGUF, que no se han publicado en el repositorio.
+- Opciones de despliegue: al ser un modelo `transformers` con pesos `safetensors` y etiqueta `endpoints_compatible`, es desplegable con la libreria `transformers`, con Text Generation Inference y con los Inference Endpoints de Hugging Face. La compatibilidad con vLLM, llama.cpp u Ollama no esta declarada y depende de que existan pesos GGUF, que no se han publicado en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -75,10 +75,10 @@ No hay datos verificables del modelo evaluado (parametros exactos, contexto, lic
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abdukuzi45/qwen3.5-4b-amharic-extended-v5 | 4B aproximados (no confirmado) | no disponible | Si (image-text-to-text) | no disponible | HuggingFace, 0 descargas |
-| Familia Qwen 3.5 (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Familia Qwen 2.5-VL | 3B y 7B, entre otros | no disponible en esta ficha | Si | licencia de la familia Qwen (verificar) | HuggingFace |
-| Familia Gemma 3 | 4B, entre otros | no disponible en esta ficha | Si | licencia de la familia Gemma (verificar) | HuggingFace |
+| abdukuzi45/qwen3.5-4b-amharic-extended-v5 | 4B aproximados (no confirmado) | no disponible | Si (image-text-to-text) | no disponible | Hugging Face, 0 descargas |
+| Familia Qwen 3.5 (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Familia Qwen 2.5-VL | 3B y 7B, entre otros | no disponible en esta ficha | Si | licencia de la familia Qwen (verificar) | Hugging Face |
+| Familia Gemma 3 | 4B, entre otros | no disponible en esta ficha | Si | licencia de la familia Gemma (verificar) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,6 +94,6 @@ No hay datos verificables del modelo evaluado (parametros exactos, contexto, lic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended-v5
+- Modelo en Hugging Face: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-extended-v5
 - Articulo referenciado por la etiqueta `arxiv:1910.09700` (Post, 2018, "A Call for Clarity in Reporting BLEU Scores"): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces (paper del modelo, blog, repositorio de codigo, demo) en la informacion disponible.

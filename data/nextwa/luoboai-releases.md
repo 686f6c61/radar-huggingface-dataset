@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LuoboAI (萝卜店长) es un paquete de distribución para macOS (Apple Silicon) publicado en HuggingFace bajo el identificador `nextwa/luoboai-releases`. Según la model card, se trata de un asistente orientado a la publicación de muebles en Amazon, es decir, una herramienta de aplicación vertical para comercio electrónico y no un modelo de lenguaje con pesos publicados en sentido estricto. El repositorio ocupa 2,6 GB y contiene binarios de instalación, no tensores de un transformer.
+LuoboAI (萝卜店长) es un paquete de distribución para macOS (Apple Silicon) publicado en Hugging Face bajo el identificador `nextwa/luoboai-releases`. Según la model card, se trata de un asistente orientado a la publicación de muebles en Amazon, es decir, una herramienta de aplicación vertical para comercio electrónico y no un modelo de lenguaje con pesos publicados en sentido estricto. El repositorio ocupa 2,6 GB y contiene binarios de instalación, no tensores de un transformer.
 
 La información disponible es muy limitada: no se publican especificaciones de arquitectura, número de parámetros, longitud de contexto, idiomas ni datos de entrenamiento. La model card se limita a indicar la licencia `other` y a enlazar al sitio oficial del producto, por lo que cualquier dato técnico sobre el modelo subyacente debe considerarse no disponible a partir de las fuentes consultadas.
 
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nextwa/luoboai-releases
+- Repositorio en Hugging Face: https://huggingface.co/nextwa/luoboai-releases
 - Sitio oficial del producto: https://www.luoboai.com

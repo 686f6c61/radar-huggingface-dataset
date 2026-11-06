@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, B
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp-r64 | no disponible | no disponible | GLEU 0,7564 (validacion propia) | Apache 2.0 | HuggingFace |
-| Helsinki-NLP/opus-mt-es-en (base) | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp-r64 | no disponible | no disponible | GLEU 0,7564 (validacion propia) | Apache 2.0 | Hugging Face |
+| Helsinki-NLP/opus-mt-es-en (base) | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | Otros modelos GEC ES-EN | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa con alternativas especificas de GEC ES-EN no esta disponible en la informacion proporcionada; el unico punto de referencia documentado es el modelo base.
@@ -80,6 +80,6 @@ La comparativa con alternativas especificas de GEC ES-EN no esta disponible en l
 - No se recomienda su uso en produccion sin una evaluacion propia con un corpus representativo y una revision humana.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp-r64
+- Hugging Face: https://huggingface.co/Ro551/opus-mt-es-en-GEC-spanish-LORA-merged-exp-r64
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-es-en
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion disponible.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en HuggingFace. Según la model card, se trata de un "H1 LoRA adapter salvage (not a submission)", es decir, un adaptador de rescate para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, aparentemente destinado a preservar el trabajo de entrenamiento en el contexto de un proyecto denominado "affine-h1-salvage". No se proporciona información adicional sobre el modelo base ni sobre el adaptador.
+El modelo `unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `unconst` en Hugging Face. Según la model card, se trata de un "H1 LoRA adapter salvage (not a submission)", es decir, un adaptador de rescate para el modelo base `marsplan0624/affine-5gedzafcvg-queen`, aparentemente destinado a preservar el trabajo de entrenamiento en el contexto de un proyecto denominado "affine-h1-salvage". No se proporciona información adicional sobre el modelo base ni sobre el adaptador.
 
-El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que contiene únicamente los pesos del adaptador LoRA, no el modelo completo. La librería indicada es `peft`, compatible con el ecosistema de HuggingFace para ajuste fino eficiente. No se dispone de datos sobre arquitectura, parámetros, contexto, licencia, idiomas ni rendimiento, por lo que esta ficha se limita a documentar la información disponible y a señalar las carencias.
+El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que contiene únicamente los pesos del adaptador LoRA, no el modelo completo. La librería indicada es `peft`, compatible con el ecosistema de Hugging Face para ajuste fino eficiente. No se dispone de datos sobre arquitectura, parámetros, contexto, licencia, idiomas ni rendimiento, por lo que esta ficha se limita a documentar la información disponible y a señalar las carencias.
 
 ## Especificaciones tecnicas
 
@@ -63,7 +63,7 @@ No disponible. No se conocen modelos comparables, ya que el adaptador está vinc
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps-lora)
+- [Página del modelo en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r479-offline-dpo-hialpha-longctx-extrasteps-lora)
 - [Modelo base referenciado: marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (sin ficha pública)
 
 No se han encontrado papers, blogs, repositorios de código ni demos relacionados.

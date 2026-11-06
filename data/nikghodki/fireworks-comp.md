@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikghodki/fireworks-comp` es un repositorio alojado en HuggingFace por el usuario nikghodki bajo licencia MIT, con acceso restringido (gated). La informacion publica disponible es minima: no se especifica pipeline, idiomas soportados, arquitectura ni tamano de parametros. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un proyecto personal sin difusion.
+`nikghodki/fireworks-comp` es un repositorio alojado en Hugging Face por el usuario nikghodki bajo licencia MIT, con acceso restringido (gated). La informacion publica disponible es minima: no se especifica pipeline, idiomas soportados, arquitectura ni tamano de parametros. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que sugiere que se trata de un artefacto reciente o de un proyecto personal sin difusion.
 
 Por el identificador del repositorio y la ausencia de metadatos tecnicos, no es posible determinar si se trata de un modelo de lenguaje, un conjunto de pesos derivado de otro modelo, un checkpoint experimental o un componente auxiliar (por ejemplo, un adaptador o un artefacto de comparacion). El sufijo "comp" podria sugerir "comparison" o "competition", pero esto es especulativo y no debe tomarse como dato tecnico.
 
@@ -44,7 +44,7 @@ No es posible recomendar casos de uso concretos sin conocer la naturaleza del ar
 - Fine-tuning posterior: solo si se confirma que los pesos son compatibles con frameworks estandar (transformers, vLLM, llama.cpp) y que la licencia MIT permite uso comercial derivado.
 - Despliegue en prototipos: unicamente tras verificar el formato de pesos y los requisitos de hardware, dado que se desconoce el tamano.
 - Integracion en pipelines de investigacion: como artefacto de referencia en estudios de comparacion, si el nombre "comp" alude efectivamente a un conjunto de comparacion.
-- Auditoria de licencias: el repositorio puede servir como ejemplo de publicacion gated bajo MIT, util en estudios sobre practicas de comparticion en HuggingFace.
+- Auditoria de licencias: el repositorio puede servir como ejemplo de publicacion gated bajo MIT, util en estudios sobre practicas de comparticion en Hugging Face.
 
 En todos los casos, la ausencia de documentacion impide garantizar idoneidad tecnica.
 
@@ -66,7 +66,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia total de model card: no hay documentacion sobre arquitectura, datos de entrenamiento, sesgos o evaluaciones.
 - Riesgo de procedencia incierta: al no especificarse el modelo base ni el proceso de entrenamiento, no puede descartarse que los pesos deriven de otro modelo con licencia distinta, lo que podria entrar en conflicto con la licencia MIT declarada.
 - Sin garantias de calidad: 0 descargas y 0 likes indican que el artefacto no ha sido validado por la comunidad.
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nikghodki/fireworks-comp
+- Repositorio en Hugging Face: https://huggingface.co/nikghodki/fireworks-comp
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

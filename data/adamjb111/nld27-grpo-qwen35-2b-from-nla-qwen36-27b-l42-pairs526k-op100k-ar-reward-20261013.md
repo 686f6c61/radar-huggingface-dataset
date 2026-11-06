@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Entrada | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Este estudiante (nld27-grpo-qwen35-2b) | ~2B | Vector residual de 5.120 dimensiones (capa 42, Qwen3.6-27B) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Destilado con SFT + on-policy + GRPO frente a la recompensa AR del profesor |
-| ceselder/qwen3.6-27b-nla-rl (profesor, iter 400) | 27B | Vector residual de 5.120 dimensiones (capa 42) | No disponible | No disponible | HuggingFace | FVE de 0,754 sobre 1.020 vectores FineFineWeb; referencia de calidad del estudiante |
+| Este estudiante (nld27-grpo-qwen35-2b) | ~2B | Vector residual de 5.120 dimensiones (capa 42, Qwen3.6-27B) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Destilado con SFT + on-policy + GRPO frente a la recompensa AR del profesor |
+| ceselder/qwen3.6-27b-nla-rl (profesor, iter 400) | 27B | Vector residual de 5.120 dimensiones (capa 42) | No disponible | No disponible | Hugging Face | FVE de 0,754 sobre 1.020 vectores FineFineWeb; referencia de calidad del estudiante |
 | Otros verbalizadores de activaciones o NLA de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adamjb111/nld27-grpo-qwen35-2b-from-nla-qwen36-27b-L42-pairs526k-op100k-ar-reward-20261013
+- Modelo en Hugging Face: https://huggingface.co/adamjb111/nld27-grpo-qwen35-2b-from-nla-qwen36-27b-L42-pairs526k-op100k-ar-reward-20261013
 - Modelo profesor (referenciado en la model card): https://huggingface.co/ceselder/qwen3.6-27b-nla-rl
 - Dataset de destilación (referenciado en la model card): https://huggingface.co/datasets/adamjb111/nla-qwen36-27b-L42-distill-data
 - Repositorio `lenses` con el código de entrenamiento (`scripts/nladistil27b_train_student_20261010.py`, `scripts/nladistil27b_common_20261010.py`): URL no disponible en la información proporcionada

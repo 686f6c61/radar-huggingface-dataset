@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Al ser un adaptador LoRA sobre un modelo de 0.8B, los requisitos de VRAM son bajos. El modelo base Qwen3.5-0.8B puede ejecutarse en GPUs con 4-6 GB de VRAM en cuantización de 8 bits, aunque no se especifican valores exactos.
 - El adaptador en sí ocupa 0.1 GB, por lo que la carga adicional es mínima.
 - Se recomienda una GPU consumer como RTX 3060 o superior para inferencia en bfloat16, aunque no hay datos oficiales.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace, y el modelo base puede servirse con frameworks como vLLM o TGI, aunque no se documenta compatibilidad explícita.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face, y el modelo base puede servirse con frameworks como vLLM o TGI, aunque no se documenta compatibilidad explícita.
 - No se dispone de estimaciones de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance-lora
 - Checkpoint fusionado (modelo completo): https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance
 - Paper de Generalized Knowledge Distillation (GKD): https://arxiv.org/abs/2306.13649
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshHughes/siglip2-base-patch16-224-f16
+- Modelo en Hugging Face: https://huggingface.co/JoshHughes/siglip2-base-patch16-224-f16
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-224
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Repositorio Local Model Access (LMA): https://github.com/ArtistJoshHughes/local-model-access

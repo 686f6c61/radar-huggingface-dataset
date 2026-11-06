@@ -65,8 +65,8 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maya2-native-swamiji-en-sft-lr1e-6-3ep | ~2,5B | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| maya-research/maya2-native (base) | no disponible | no disponible | no disponible | HuggingFace (referenciado como base_model) |
+| maya2-native-swamiji-en-sft-lr1e-6-3ep | ~2,5B | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| maya-research/maya2-native (base) | no disponible | no disponible | no disponible | Hugging Face (referenciado como base_model) |
 | Alternativas TTS de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones comparables de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr1e-6-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-en-sft-lr1e-6-3ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Dataset de voz (inglés): https://huggingface.co/sw-voice/swamiji-voice-sft-sidon
 - Dataset de temas en télugu: https://huggingface.co/sw-voice/swamiji-navaratri-telugu-sidon-themes

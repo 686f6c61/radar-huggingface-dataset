@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable porque no hay modelo. Se podría c
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab](https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab)
+- Repositorio de Hugging Face: [https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab](https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab)
 - Encuesta de modelos VLA para robótica: [https://vla-survey.github.io/](https://vla-survey.github.io/)
 - Artículo de revisión en arXiv: [https://arxiv.org/html/2510.07077v1](https://arxiv.org/html/2510.07077v1)
 - PDF del mismo artículo: [https://arxiv.org/pdf/2510.07077](https://arxiv.org/pdf/2510.07077)
@@ -131,7 +131,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab](https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab)
+- Repositorio de Hugging Face: [https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab](https://huggingface.co/bhatr-eyansh/robotics-vision-language-lab)
 - Encuesta de modelos VLA para robótica: [https://vla-survey.github.io/](https://vla-survey.github.io/)
 - Artículo de revisión en arXiv: [https://arxiv.org/html/2510.07077v1](https://arxiv.org/html/2510.07077v1)
 - PDF del mismo artículo: [https://arxiv.org/pdf/2510.07077](https://arxiv.org/pdf/2510.07077)

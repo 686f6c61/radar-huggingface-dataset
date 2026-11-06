@@ -2,11 +2,11 @@
 
 ## Resumen
 
-attune-i41-mllm-targets es un conjunto de datos de episodios de robotica, no un modelo de lenguaje. Lo publica el usuario huuhuyng en HuggingFace como parte de la serie "attune" y contiene 287 episodios de nivel L3 (9 tareas x 32 episodios, salvo place_burger_fries con 31) generados mediante programas expertos escritos por un LLM (deepseek/deepseek-v4.1-flash-1017) dentro del bucle de generacion de codigo de RoboTwin. El repositorio ocupa 5,6 GB y no incluye pesos de modelo, tokenizer ni configuracion de inferencia.
+attune-i41-mllm-targets es un conjunto de datos de episodios de robotica, no un modelo de lenguaje. Lo publica el usuario huuhuyng en Hugging Face como parte de la serie "attune" y contiene 287 episodios de nivel L3 (9 tareas x 32 episodios, salvo place_burger_fries con 31) generados mediante programas expertos escritos por un LLM (deepseek/deepseek-v4.1-flash-1017) dentro del bucle de generacion de codigo de RoboTwin. El repositorio ocupa 5,6 GB y no incluye pesos de modelo, tokenizer ni configuracion de inferencia.
 
 El dataset esta disenado para entrenamiento o evaluacion de modelos de imitacion en entornos roboticos. Cada episodio contiene un `program.json` con el hash del programa que lo genero, y los episodios se emparejan segun el operador D22: el prompt es una demostracion experta estandar de la misma tarea (por ejemplo, de huuhuyng/attune-data level3) y el target es un episodio de este repositorio. Es relevante para investigadores que trabajen en sintesis de datos roboticos mediante LLMs y en aprendizaje por imitacion con datos generados proceduralmente.
 
-La informacion disponible es muy limitada: no hay model card completa, licencia, idiomas ni benchmarks. Todo lo que se puede afirmar con rigor proviene del README y de los metadatos de HuggingFace.
+La informacion disponible es muy limitada: no hay model card completa, licencia, idiomas ni benchmarks. Todo lo que se puede afirmar con rigor proviene del README y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para comparar con otros datasets de robo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huuhuyng/attune-i41-mllm-targets
+- Hugging Face: https://huggingface.co/huuhuyng/attune-i41-mllm-targets
 - Dataset de referencia de formato: https://huggingface.co/huuhuyng/attune-data
 - Entorno RoboTwin (referencia del commit e87619a): no disponible como enlace directo en la informacion proporcionada
 - Modelo generador de programas (deepseek/deepseek-v4.1-flash-1017): no disponible como enlace directo en la informacion proporcionada

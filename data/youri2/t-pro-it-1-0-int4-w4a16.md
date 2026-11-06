@@ -60,8 +60,8 @@ La información disponible no incluye resultados de benchmarks estándar (MMLU, 
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| t-tech/T-pro-it-1.0 (bf16) | Transformer denso (Qwen2) | 32.7B | No especificado (configurado 8192 en vLLM) | Apache-2.0 | HuggingFace |
-| Youri2/T-pro-it-1.0-int4-W4A16 | Transformer denso (Qwen2) | 32.7B | 8192 tokens | Apache-2.0 | HuggingFace |
+| t-tech/T-pro-it-1.0 (bf16) | Transformer denso (Qwen2) | 32.7B | No especificado (configurado 8192 en vLLM) | Apache-2.0 | Hugging Face |
+| Youri2/T-pro-it-1.0-int4-W4A16 | Transformer denso (Qwen2) | 32.7B | 8192 tokens | Apache-2.0 | Hugging Face |
 
 El autor también probó una variante NVFP4, que no funciona en vLLM 0.20.1 para este modelo denso; por lo tanto, no se incluye como opción disponible.
 
@@ -76,7 +76,7 @@ El autor también probó una variante NVFP4, que no funciona en vLLM 0.20.1 para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Youri2/T-pro-it-1.0-int4-W4A16
+- Hugging Face: https://huggingface.co/Youri2/T-pro-it-1.0-int4-W4A16
 - Modelo base: https://huggingface.co/t-tech/T-pro-it-1.0
 - Proyecto TruckerNews: https://github.com/Youri2026/TruckerNews
 - Canal de Telegram: https://t.me/voice_news_digest

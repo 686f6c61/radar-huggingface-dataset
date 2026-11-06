@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/syegurla/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/syegurla/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Framework scottyrl: no disponible
 - Paper de GRPO: no disponible en la informacion proporcionada

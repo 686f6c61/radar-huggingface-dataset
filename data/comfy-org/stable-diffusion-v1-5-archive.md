@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stable Diffusion v1.5 Archive es un repositorio de respaldo (archive) que reempaqueta los archivos del modelo Stable Diffusion v1.5, originalmente publicado por RunwayML y retirado posteriormente de HuggingFace. El responsable de este re-upload es Comfy-Org, la organización detrás del popular interfaz de nodos ComfyUI, que lo distribuye para facilitar la descarga y uso del modelo en dicha herramienta. El modelo fue lanzado originalmente en 2022 y representa una generación anterior a los modelos actuales de difusión, pero se conserva por motivos técnicos y de accesibilidad, especialmente para pruebas de compatibilidad con sistemas legacy.
+Stable Diffusion v1.5 Archive es un repositorio de respaldo (archive) que reempaqueta los archivos del modelo Stable Diffusion v1.5, originalmente publicado por RunwayML y retirado posteriormente de Hugging Face. El responsable de este re-upload es Comfy-Org, la organización detrás del popular interfaz de nodos ComfyUI, que lo distribuye para facilitar la descarga y uso del modelo en dicha herramienta. El modelo fue lanzado originalmente en 2022 y representa una generación anterior a los modelos actuales de difusión, pero se conserva por motivos técnicos y de accesibilidad, especialmente para pruebas de compatibilidad con sistemas legacy.
 
 Se trata de un modelo de difusión de imágenes (text-to-image) basado en la arquitectura original de Stable Diffusion v1.5, que a su vez deriva de Stable Diffusion v1.4 de CompVis. El repositorio incluye dos archivos principales: `v1-5-pruned-emaonly.safetensors`, que es idéntico al archivo original subido por RunwayML (con hash exacto), y `v1-5-pruned-emaonly-fp16.safetensors`, una conversión a FP16 con metadatos añadidos. El tamaño total del repositorio es de 19.2 GB. No se proporcionan especificaciones técnicas detalladas en la ficha del modelo, más allá de la licencia (CreativeML OpenRAIL-M), el idioma (inglés) y su origen como fine-tune de CompVis/stable-diffusion-v1-4.
 
@@ -67,6 +67,6 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/stable-diffusion-v1-5-archive
 - Repositorio original de RunwayML (retirado): https://huggingface.co/runwayml/stable-diffusion-v1-5 (enlace referenciado en el README, actualmente no disponible)
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4 (referenciado en la metadata)

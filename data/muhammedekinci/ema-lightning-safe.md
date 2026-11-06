@@ -89,7 +89,7 @@ La comparación relevante es contra el propio upstream: misma arquitectura, mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhammedekinci/ema-lightning-safe
+- Modelo en Hugging Face: https://huggingface.co/muhammedekinci/ema-lightning-safe
 - Modelo base (upstream): https://huggingface.co/canberkkkkkk/ema-lightning
 - Guía de instalación (inglés): https://huggingface.co/muhammedekinci/ema-lightning-safe/blob/main/docs/install.md
 - Guía de instalación (turco): https://huggingface.co/muhammedekinci/ema-lightning-safe/blob/main/docs/kurulum.md

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-instinct-stt-1 es un modelo de reconocimiento automático de voz (ASR) desarrollado por la organización instinct-org y publicado en HuggingFace. Está diseñado para transcribir audio a texto en cinco idiomas: inglés, ruso, uzbeko, kazajo y kirguís, lo que lo hace relevante para aplicaciones multilingües en regiones de Asia Central y Europa del Este. El modelo utiliza una arquitectura basada en GigaAM (según las etiquetas del repositorio) con decodificación CTC, una combinación habitual en sistemas ASR eficientes para inferencia en tiempo real.
+instinct-stt-1 es un modelo de reconocimiento automático de voz (ASR) desarrollado por la organización instinct-org y publicado en Hugging Face. Está diseñado para transcribir audio a texto en cinco idiomas: inglés, ruso, uzbeko, kazajo y kirguís, lo que lo hace relevante para aplicaciones multilingües en regiones de Asia Central y Europa del Este. El modelo utiliza una arquitectura basada en GigaAM (según las etiquetas del repositorio) con decodificación CTC, una combinación habitual en sistemas ASR eficientes para inferencia en tiempo real.
 
-El repositorio tiene un tamaño de 2,3 GB, lo que sugiere un modelo de tamaño medio, aunque no se especifican los parámetros totales. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de descargarlo. La licencia no está disponible, lo que limita su uso comercial sin una aclaración previa. A pesar de su reciente publicación (septiembre de 2026), no cuenta con descargas ni valoraciones, y no se han publicado resultados de benchmarks en la información disponible.
+El repositorio tiene un tamaño de 2,3 GB, lo que sugiere un modelo de tamaño medio, aunque no se especifican los parámetros totales. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de descargarlo. La licencia no está disponible, lo que limita su uso comercial sin una aclaración previa. A pesar de su reciente publicación (septiembre de 2026), no cuenta con descargas ni valoraciones, y no se han publicado resultados de benchmarks en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 2,3 GB, lo que sugiere un modelo de tamaño m
 
 La arquitectura se infiere a partir de las etiquetas del repositorio: el tag `gigaam` indica que el modelo se basa en GigaAM, una familia de modelos ASR desarrollada por el equipo de GigaAM (originalmente para ruso y otros idiomas). GigaAM combina un encoder transformer con una cabeza de clasificación CTC, lo que permite una decodificación rápida y adecuada para streaming. El tag `ctc` confirma el uso de esta función de pérdida.
 
-No se dispone de información sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas más allá de la arquitectura base. El modelo está integrado en la librería `transformers` de HuggingFace, lo que facilita su uso con el pipeline `automatic-speech-recognition`.
+No se dispone de información sobre el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se detallan innovaciones técnicas específicas más allá de la arquitectura base. El modelo está integrado en la librería `transformers` de Hugging Face, lo que facilita su uso con el pipeline `automatic-speech-recognition`.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada: con un tamaño de repo de 2,3 GB, el modelo en precisión fp32 ocuparía aproximadamente 2,3 GB de memoria. En fp16 o cuantización int8, podría reducirse a ~1,2 GB o ~0,6 GB respectivamente, aunque no se confirman los formatos de pesos.
 - GPU recomendadas: una GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) podría ejecutar el modelo en fp16. Para fp32 se recomienda una GPU con 6 GB o más (RTX 2060, RTX 3060, etc.).
 - En consumer GPU: sí, es probable que quepa en GPUs de gama media, pero depende del formato de pesos real y de la longitud de contexto.
-- Opciones de despliegue: al ser compatible con `transformers`, puede usarse con librerías como vLLM, TGI o directamente con el pipeline de HuggingFace. Para entornos ligeros, podría convertirse a GGUF y usarse con llama.cpp u Ollama, aunque no se ha confirmado dicha conversión.
+- Opciones de despliegue: al ser compatible con `transformers`, puede usarse con librerías como vLLM, TGI o directamente con el pipeline de Hugging Face. Para entornos ligeros, podría convertirse a GGUF y usarse con llama.cpp u Ollama, aunque no se ha confirmado dicha conversión.
 - Latencia y throughput: no disponibles. Al usar CTC, la inferencia es generalmente más rápida que modelos autoregresivos, pero no hay datos concretos.
 
 ## Comparativa con modelos similares
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados o corporativos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados o corporativos.
 - Licencia no especificada: no se indica si el modelo puede usarse comercialmente, lo que supone un riesgo legal para producción.
 - Idiomas limitados: solo cubre cinco idiomas, con posible menor rendimiento en variedades dialectales o acentos no representados en los datos de entrenamiento.
 - Riesgo de alucinación: como todo modelo ASR, puede generar transcripciones incorrectas en audio con ruido, solapamiento de voces o habla no nativa.
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/instinct-org/instinct-stt-1
+- Repositorio Hugging Face: https://huggingface.co/instinct-org/instinct-stt-1
 - Perfil de la organización: https://huggingface.co/instinct-org/collections

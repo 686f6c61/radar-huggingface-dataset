@@ -4,7 +4,7 @@
 
 LocateAnything-3B-BPU-Balance es un modelo de grounding visual de código abierto desarrollado por D-Robotics, orientado a la ejecución eficiente en unidades de procesamiento BPU (Brain Processing Unit). Se trata de una adaptación del modelo LocateAnything original de NVIDIA, diseñado para realizar localización de objetos, referencias por lenguaje, grounding de GUI y texto, así como localización de puntos a partir de instrucciones textuales. La versión "BPU-Balance" busca equilibrar precisión y velocidad en hardware embebido, lo que la hace relevante para aplicaciones de robótica, visión industrial y sistemas autónomos.
 
-El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Sin embargo, la información técnica disponible es muy limitada: no se proporcionan especificaciones detalladas sobre arquitectura, tamaño de contexto o parámetros exactos en la ficha de HuggingFace. El nombre sugiere una escala de 3 mil millones de parámetros, y el tamaño del repositorio (4,6 GB) es coherente con esa magnitud, aunque no se confirma oficialmente.
+El modelo se publica bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. Sin embargo, la información técnica disponible es muy limitada: no se proporcionan especificaciones detalladas sobre arquitectura, tamaño de contexto o parámetros exactos en la ficha de Hugging Face. El nombre sugiere una escala de 3 mil millones de parámetros, y el tamaño del repositorio (4,6 GB) es coherente con esa magnitud, aunque no se confirma oficialmente.
 
 ## Especificaciones técnicas
 
@@ -67,6 +67,6 @@ No se dispone de información suficiente para comparar con alternativas. El mode
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/D-Robotics/LocateAnything-3B-BPU-Balance)
+- [Hugging Face del modelo](https://huggingface.co/D-Robotics/LocateAnything-3B-BPU-Balance)
 - [Repositorio GitHub hobot_locateanything](https://github.com/D-Robotics/hobot_locateanything)
 - [Repositorio rdk_model_zoo](https://github.com/D-Robotics/rdk_model_zoo)

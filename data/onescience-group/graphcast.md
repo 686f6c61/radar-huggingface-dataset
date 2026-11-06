@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/GraphCast
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/GraphCast
 - Paper original: https://arxiv.org/abs/2212.12794
 - Repositorio OneScience en GitHub: https://github.com/onescience-ai/OneScience
 - Repositorio OneScience en Gitee: https://gitee.com/onescience-ai/onescience

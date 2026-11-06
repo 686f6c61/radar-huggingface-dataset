@@ -77,7 +77,7 @@ No se dispone de datos numéricos ni de especificaciones de modelos comparables 
 
 | Modelo o método | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| IDQL (este modelo) | Actor de difusión + crítico IQL escalar, basado en estado | no disponible | no aplicable | no disponible | MIT | Pesos en HuggingFace (5 semillas) |
+| IDQL (este modelo) | Actor de difusión + crítico IQL escalar, basado en estado | no disponible | no aplicable | no disponible | MIT | Pesos en Hugging Face (5 semillas) |
 | Diffusion Policy (imitación pura) | Política de difusión entrenada por comportamiento clonado | no disponible | no aplicable | no disponible | no disponible | Implementación de referencia pública |
 | IQL | Actor-crítico offline con regresión por expectil | no disponible | no aplicable | no disponible | no disponible | Implementación de referencia pública |
 | TD3+BC / DDPG+BC | Actor-crítico offline con regularización hacia la política de comportamiento | no disponible | no aplicable | no disponible | no disponible | Implementación de referencia pública |
@@ -99,10 +99,10 @@ No se dispone de datos numéricos ni de especificaciones de modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-no-cf-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-sobol-no-cf-idql
 - Página del proyecto Mulligan: https://mulligan.page
 - Panel de evaluaciones Policy Arena: https://arena.mulligan.page
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Conjunto de datos de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Conjunto de datos DAgger: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-dagger-sobol-no-cf
 - Conjunto de datos de rollouts de política: https://huggingface.co/datasets/mulligan/sim-square-broad-c01-sobol-policy-rollouts

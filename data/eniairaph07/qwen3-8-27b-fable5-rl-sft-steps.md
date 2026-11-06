@@ -93,7 +93,7 @@ No se dispone de comparativas de rendimiento entre el adaptador y otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eniairaph07/qwen3.8-27b-fable5-rl-sft-steps
+- Repositorio Hugging Face: https://huggingface.co/eniairaph07/qwen3.8-27b-fable5-rl-sft-steps
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B (asumido, no verificado)
 - Blog de AMD sobre Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía de despliegue local (swfte.com): https://www.swfte.com/blog/qwen-3-8-27b-run-locally-self-host-guide-2026

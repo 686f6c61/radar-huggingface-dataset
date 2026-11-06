@@ -89,9 +89,9 @@ Nota: El AP nocturno no es directamente comparable con el ECE, que procede del h
 - La calibración inicial era inestable: el calibrator ajustado en entrenamiento daba ECE 0.32 frente a 0.14 out-of-fold; por tanto, siempre hay que consumir `predict_proba_calibrated`.
 - La licencia es "other", sin términos detallados; hay que revisarla antes de usar el modelo en producción o aplicaciones comerciales.
 - El modelo está entrenado y validado para los sensores y el entorno del lago de Constanza; puede no generalizar a otros sensores, condiciones meteorológicas o geografías.
-- El repositorio de HuggingFace muestra 0 descargas y un tamaño de 0.0 GB, por lo que es posible que los pesos no se hayan subido o que el repositorio esté incompleto; se recomienda verificar la disponibilidad de los archivos .joblib antes de intentar cargarlos.
+- El repositorio de Hugging Face muestra 0 descargas y un tamaño de 0.0 GB, por lo que es posible que los pesos no se hayan subido o que el repositorio esté incompleto; se recomienda verificar la disponibilidad de los archivos .joblib antes de intentar cargarlos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NexusDwin/sailswarm-fusion-scorer-v1b
+- Hugging Face: https://huggingface.co/NexusDwin/sailswarm-fusion-scorer-v1b
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web; los resultados obtenidos corresponden a portales de noticias y correo electrónico no relacionados.

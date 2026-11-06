@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sijiey/Thermal-Affordance-Model`, publicado por el usuario sijiey en HuggingFace, es un modelo de inteligencia artificial con licencia CC-BY-4.0. El nombre sugiere que está orientado a la detección o predicción de afordancias térmicas, un concepto habitual en robótica y visión por computador para identificar superficies u objetos con los que se puede interactuar de forma segura según su temperatura. Sin embargo, la información pública disponible es extremadamente limitada: no se ha publicado una model card con especificaciones técnicas, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB, lo que indica un modelo de tamaño pequeño o mediano, pero sin más detalles no es posible confirmar su naturaleza exacta.
+El modelo `sijiey/Thermal-Affordance-Model`, publicado por el usuario sijiey en Hugging Face, es un modelo de inteligencia artificial con licencia CC-BY-4.0. El nombre sugiere que está orientado a la detección o predicción de afordancias térmicas, un concepto habitual en robótica y visión por computador para identificar superficies u objetos con los que se puede interactuar de forma segura según su temperatura. Sin embargo, la información pública disponible es extremadamente limitada: no se ha publicado una model card con especificaciones técnicas, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,2 GB, lo que indica un modelo de tamaño pequeño o mediano, pero sin más detalles no es posible confirmar su naturaleza exacta.
 
 La relevancia de este modelo en el panorama actual es incierta debido a la ausencia de documentación. Aunque la licencia permisiva CC-BY-4.0 permite su uso y modificación, la falta de especificaciones dificulta su evaluación y adopción en entornos de producción o investigación. Se recomienda precaución antes de integrarlo en cualquier flujo de trabajo, ya que no se dispone de información sobre su rendimiento, limitaciones o compatibilidad con frameworks estándar.
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (afordan
 
 ## Enlaces
 
-- [HuggingFace - sijiey/Thermal-Affordance-Model](https://huggingface.co/sijiey/Thermal-Affordance-Model)
+- [Hugging Face - sijiey/Thermal-Affordance-Model](https://huggingface.co/sijiey/Thermal-Affordance-Model)
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo en la información proporcionada.

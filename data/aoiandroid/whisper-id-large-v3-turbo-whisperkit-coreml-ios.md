@@ -71,7 +71,7 @@ Advertencias del propio autor: el ajuste fino se entreno sobre FLEURS y no se do
 
 ## Requisitos de hardware
 
-- Almacenamiento: unos 592 MB para el paquete completo (466 MB encoder, 123 MB decoder, mas mel-espectrograma y configuracion); el repositorio en HuggingFace ocupa 0,6 GB.
+- Almacenamiento: unos 592 MB para el paquete completo (466 MB encoder, 123 MB decoder, mas mel-espectrograma y configuracion); el repositorio en Hugging Face ocupa 0,6 GB.
 - VRAM estimada para inferencia: no disponible en la informacion proporcionada. Al ser un grafo Core ML en fp16 con pesos palettizados a 6 bits, la huella es sensiblemente menor que la del modelo en fp32, pero no se publican cifras de memoria.
 - GPU recomendadas: no se especifican. El destino declarado es el ecosistema Apple (Apple Silicon, GPU integrada via Core ML) con opset iOS 16 / macOS 13.
 - Compatibilidad con GPU de consumidor: no verificada para GPUs NVIDIA o AMD; el formato `.mlmodelc` es especifico de Core ML y no se puede cargar en vLLM, llama.cpp, Ollama ni TGI.
@@ -83,11 +83,11 @@ Advertencias del propio autor: el ajuste fino se entreno sobre FLEURS y no se do
 
 | Modelo | Parametros | Contexto / ventana | Metrica publicada aqui | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este paquete (Core ML 6 bits) | no disponible | 30 s por ventana, KV 448 | 0,985 / 0,972 en FLEURS id; 0,904 en noticias | MIT | HuggingFace, formato Core ML para Apple |
-| Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1 | no disponible | 30 s por ventana | 0,987 / 0,972 en FLEURS id; 0,888 en noticias | MIT (segun model card) | HuggingFace, pesos PyTorch |
-| cahya/whisper-medium-id | no disponible | 30 s por ventana | 0,919 / 0,901; 0,872 en noticias | no disponible | HuggingFace, PyTorch |
-| Scrya/whisper-medium-id-augmented | no disponible | 30 s por ventana | 0,937 / 0,914; 0,832 en noticias | no disponible | HuggingFace, PyTorch bf16 |
-| openai/whisper-small | no disponible | 30 s por ventana | 0,843 / 0,807; 0,760 en noticias | MIT (modelo original de OpenAI) | HuggingFace y multiples formatos |
+| Este paquete (Core ML 6 bits) | no disponible | 30 s por ventana, KV 448 | 0,985 / 0,972 en FLEURS id; 0,904 en noticias | MIT | Hugging Face, formato Core ML para Apple |
+| Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1 | no disponible | 30 s por ventana | 0,987 / 0,972 en FLEURS id; 0,888 en noticias | MIT (segun model card) | Hugging Face, pesos PyTorch |
+| cahya/whisper-medium-id | no disponible | 30 s por ventana | 0,919 / 0,901; 0,872 en noticias | no disponible | Hugging Face, PyTorch |
+| Scrya/whisper-medium-id-augmented | no disponible | 30 s por ventana | 0,937 / 0,914; 0,832 en noticias | no disponible | Hugging Face, PyTorch bf16 |
+| openai/whisper-small | no disponible | 30 s por ventana | 0,843 / 0,807; 0,760 en noticias | MIT (modelo original de OpenAI) | Hugging Face y multiples formatos |
 
 La comparativa se limita a la metrica de cobertura reportada por el autor; no hay datos de WER comparables ni conteos de parametros en la informacion disponible. Frente a las alternativas de tamano medium en indonesio, tanto el modelo fuente como esta conversion quedan por delante en la metrica declarada, a costa de un mayor tamano de fichero.
 
@@ -107,7 +107,7 @@ La comparativa se limita a la metrica de cobertura reportada por el autor; no ha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aoiandroid/whisper-id-large-v3-turbo-whisperkit-coreml-ios
+- Repositorio en Hugging Face: https://huggingface.co/aoiandroid/whisper-id-large-v3-turbo-whisperkit-coreml-ios
 - Modelo base (ajuste fino): https://huggingface.co/Willy030125/whisper_large_v3_turbo_finetuned_en_id_v1
 - Modelo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Herramientas de conversion (WhisperKit Tools): https://github.com/argmaxinc/whisperkittools

@@ -22,7 +22,7 @@ La relevancia actual del modelo reside en su enfoque vertical: en lugar de compe
 | Tamaño del repositorio | 101,3 GB |
 | Modelo base | simpledirect/Vinci-MLE-8B-1.0 |
 | Cuantizador | mradermacher |
-| Fecha de publicación en HuggingFace | 29 de septiembre de 2026 |
+| Fecha de publicación en Hugging Face | 29 de septiembre de 2026 |
 | Descargas / likes | 47 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Vinci-MLE-8B-1.0-i1-GGUF | 8,8 B | GGUF con imatrix | No disponible | Apache-2.0 | HuggingFace, 47 descargas |
-| mradermacher/Vinci-MLE-8B-1.0-GGUF | 8,8 B | GGUF estático | No disponible | Apache-2.0 | HuggingFace |
-| simpledirect/Vinci-MLE-8B-1.0 | 8,8 B | Safetensors | No disponible | Apache-2.0 | HuggingFace (modelo base) |
-| mradermacher/Vinci-Cyber-8B-1.0-i1-GGUF | No disponible | GGUF con imatrix | No disponible | No disponible | HuggingFace |
+| mradermacher/Vinci-MLE-8B-1.0-i1-GGUF | 8,8 B | GGUF con imatrix | No disponible | Apache-2.0 | Hugging Face, 47 descargas |
+| mradermacher/Vinci-MLE-8B-1.0-GGUF | 8,8 B | GGUF estático | No disponible | Apache-2.0 | Hugging Face |
+| simpledirect/Vinci-MLE-8B-1.0 | 8,8 B | Safetensors | No disponible | Apache-2.0 | Hugging Face (modelo base) |
+| mradermacher/Vinci-Cyber-8B-1.0-i1-GGUF | No disponible | GGUF con imatrix | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, ya que no se han publicado benchmarks en la información consultada. La diferencia principal entre el repositorio analizado y la versión GGUF estática es el uso de matriz de importancia (imatrix) durante la cuantización, que según la model card suele ofrecer mejor calidad en el mismo tamaño.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Vinci-MLE-8B-1.0-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Vinci-MLE-8B-1.0-i1-GGUF
 - Modelo base: https://huggingface.co/simpledirect/Vinci-MLE-8B-1.0
 - Cuantizaciones estáticas: https://huggingface.co/mradermacher/Vinci-MLE-8B-1.0-GGUF
 - Página de resumen del cuantizador: https://hf.tst.eu/model#Vinci-MLE-8B-1.0-i1-GGUF

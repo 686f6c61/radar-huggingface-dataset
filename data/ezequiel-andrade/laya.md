@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya es un modelo de clasificación de texto no autorregresivo desarrollado por el usuario de HuggingFace ezequiel-andrade (con documentación y repositorio asociados a NandhaKishorM). Su propósito no es generar texto, sino responder a preguntas tipadas sobre un estado de entrada (texto, correo, ticket o JSON) devolviendo respuestas tipadas con probabilidades calibradas en un único pase forward. Se presenta como un modelo "System 1" de decisión, orientado a enrutamiento, scoring y guardrails.
+Laya es un modelo de clasificación de texto no autorregresivo desarrollado por el usuario de Hugging Face ezequiel-andrade (con documentación y repositorio asociados a NandhaKishorM). Su propósito no es generar texto, sino responder a preguntas tipadas sobre un estado de entrada (texto, correo, ticket o JSON) devolviendo respuestas tipadas con probabilidades calibradas en un único pase forward. Se presenta como un modelo "System 1" de decisión, orientado a enrutamiento, scoring y guardrails.
 
 El modelo emplea una arquitectura transformer con aproximadamente 421 millones de parámetros y se distribuye en formato safetensors bajo licencia Apache 2.0, lo que permite uso comercial. Según la model card, está entrenado con aprendizaje por refuerzo contra reglas de scoring estrictamente propias (RLCD), de modo que la única forma de maximizar la recompensa es reportar probabilidades honestas. Soporta más de 100 idiomas mediante un checkpoint multilingüe y un enrutador que detecta el idioma y la escritura.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ezequiel-andrade/laya
+- Modelo en Hugging Face: https://huggingface.co/ezequiel-andrade/laya
 - Checkpoint fine-tuned: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio GitHub: https://github.com/NandhaKishorM/laya
 - Documentación: https://nandhakishorm.github.io/laya/

@@ -96,7 +96,7 @@ GLM-5.3-NVFP4 es funcionalmente identico al modelo base en arquitectura y capaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibertAIDAI/GLM-5.3-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/LibertAIDAI/GLM-5.3-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE
 - Checkpoint de referencia de NVIDIA: https://huggingface.co/nvidia/GLM-5.2-NVFP4

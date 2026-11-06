@@ -72,8 +72,8 @@ No se dispone de datos suficientes para realizar una comparativa con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion: https://huggingface.co/movez66/Qwen3.8-27B-Q8_0-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face de la conversion: https://huggingface.co/movez66/Qwen3.8-27B-Q8_0-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de AlibabaCloud-Official: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia local en Substack: https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Articulo sobre ejecucion local en yottalabs.ai: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

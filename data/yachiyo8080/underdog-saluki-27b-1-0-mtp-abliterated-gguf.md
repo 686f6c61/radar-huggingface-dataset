@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks estandar (MMLU, HumanEval, GSM8K) para ning
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, sin validacion externa de la comunidad.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/yachiyo8080/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF
+- Hugging Face: https://huggingface.co/yachiyo8080/Underdog-Saluki-27B-1.0-MTP-Abliterated-GGUF
 - Modelo base MTP: https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-GGUF
 - Modelo base original: https://huggingface.co/ConwayResearch/Underdog-Saluki-27B-1.0
 - Cuantizacion MTP de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

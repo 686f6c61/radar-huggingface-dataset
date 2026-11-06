@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BdcoderAi es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct orientado a conversacion mixta bangla-ingles (code-switching), es decir, dialogos en los que el usuario alterna frases en bengali y en ingles dentro de un mismo turno o conversacion. Lo desarrolla Jamil Hussain, un desarrollador independiente bangladesi, y se publica bajo licencia Apache 2.0 en HuggingFace con el identificador jhfarhan/BdcoderAi.
+BdcoderAi es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct orientado a conversacion mixta bangla-ingles (code-switching), es decir, dialogos en los que el usuario alterna frases en bengali y en ingles dentro de un mismo turno o conversacion. Lo desarrolla Jamil Hussain, un desarrollador independiente bangladesi, y se publica bajo licencia Apache 2.0 en Hugging Face con el identificador jhfarhan/BdcoderAi.
 
 El problema que aborda es concreto: la mayoria de los modelos instructivos multilingues rinden bien en bengali formal o en ingles puro, pero degradan cuando el hablante mezcla ambos idiomas, algo habitual en contextos tecnicos y urbanos de Bangladesh. El autor declara que el modelo cubre chat cotidiano, matematicas y razonamiento, generacion de codigo (Python y otros), analisis y resumen de documentos, y tareas de tipo agentico con herramientas.
 
@@ -88,7 +88,7 @@ La unica comparacion verificable con la informacion disponible es contra el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jhfarhan/BdcoderAi
+- Modelo en Hugging Face: https://huggingface.co/jhfarhan/BdcoderAi
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Cita proporcionada por el autor en la model card: BibTeX con titulo "BdcoderAi : Bangla-English Mixed Conversational Model", autor Jamil Hussain, ano 2026, URL del repositorio.

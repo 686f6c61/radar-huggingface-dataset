@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unlimited OCR 2 (identificador `baidu/Unlimited-OCR-2`) es un modelo vision-language de Baidu especializado en extracción de texto y parseo de documentos, publicado en HuggingFace el 26 de octubre de 2026 bajo licencia MIT. El modelo recibe imágenes de páginas y devuelve su contenido estructurado en texto, con la particularidad de que puede procesar todas las páginas de un documento en una sola petición, de modo que aprovecha el contexto cruzado entre páginas en lugar de tratar cada una de forma aislada. Con 3.343.978.497 parámetros (aproximadamente 3,34 mil millones) en pesos safetensors, se sitúa en un rango de tamaño que permite servirlo en una sola GPU.
+Unlimited OCR 2 (identificador `baidu/Unlimited-OCR-2`) es un modelo vision-language de Baidu especializado en extracción de texto y parseo de documentos, publicado en Hugging Face el 26 de octubre de 2026 bajo licencia MIT. El modelo recibe imágenes de páginas y devuelve su contenido estructurado en texto, con la particularidad de que puede procesar todas las páginas de un documento en una sola petición, de modo que aprovecha el contexto cruzado entre páginas en lugar de tratar cada una de forma aislada. Con 3.343.978.497 parámetros (aproximadamente 3,34 mil millones) en pesos safetensors, se sitúa en un rango de tamaño que permite servirlo en una sola GPU.
 
 La innovación central de esta segunda versión es SR-SWA (Sparse Reference Sliding Window Attention), un mecanismo de atención que comprime las interacciones texto-visual de secuencias ultra largas hasta un conjunto fijo de referencias de trabajo (por ejemplo, 512 tokens). Según el autor, esto acota la complejidad computacional y mantiene prácticamente constante la latencia por paso de decodificación y el consumo de memoria independientemente de la longitud del documento, eliminando el escalado cuadrático de la atención al crecer el número de páginas.
 
@@ -77,7 +77,7 @@ No hay datos de MMLU, HumanEval, GSM8K ni de métricas OCR cuantitativas (por ej
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Unlimited-OCR 2 (este modelo) | 3.343.978.497 | No disponible (ventana finita con referencias de 512 tokens) | MIT | HuggingFace, ModelScope, Baidu Cloud, demo en HF Spaces | SR-SWA, parseo multipágina en una sola petición |
+| Unlimited-OCR 2 (este modelo) | 3.343.978.497 | No disponible (ventana finita con referencias de 512 tokens) | MIT | Hugging Face, ModelScope, Baidu Cloud, demo en HF Spaces | SR-SWA, parseo multipágina en una sola petición |
 | Unlimited-OCR 1.0 | No disponible | No disponible | No disponible | Repositorio GitHub del proyecto (rama `UnlimitedOCR1.0`) | Versión previa de la misma familia, enfocada a parseo de horizonte largo |
 | DeepSeek-OCR | No disponible | No disponible | No disponible | Repositorio GitHub de DeepSeek | Citado por Baidu como punto de partida que Unlimited-OCR pretende superar |
 
@@ -98,11 +98,11 @@ No se dispone de datos de parámetros, contexto ni benchmarks de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baidu/Unlimited-OCR-2
+- Modelo en Hugging Face: https://huggingface.co/baidu/Unlimited-OCR-2
 - Repositorio en GitHub: https://github.com/baidu/Unlimited-OCR
 - Artículo en arXiv: https://arxiv.org/abs/2606.23050
 - PDF del artículo en el repositorio: https://huggingface.co/baidu/Unlimited-OCR-2/blob/main/Unlimited-OCR-2.pdf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/baidu/Unlimited-OCR
 - Modelo en ModelScope: https://modelscope.cn/models/PaddlePaddle/Unlimited-OCR
 - Documentación en Baidu Cloud: https://cloud.baidu.com/doc/OCR/s/fmr1p39gb
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

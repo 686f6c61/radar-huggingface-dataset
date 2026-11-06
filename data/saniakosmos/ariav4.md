@@ -2,7 +2,7 @@
 
 ## Resumen
 
-saniakosmos/ariav4 es un repositorio de modelo publicado en HuggingFace por el usuario saniakosmos. En el momento de la consulta, la informacion disponible es practicamente nula: la model card no contiene descripcion, no declara pipeline, no declara idiomas y la licencia figura como "unknown". El repositorio registra 0 descargas y 0 likes, y la unica etiqueta relevante ademas de la licencia es region:us.
+saniakosmos/ariav4 es un repositorio de modelo publicado en Hugging Face por el usuario saniakosmos. En el momento de la consulta, la informacion disponible es practicamente nula: la model card no contiene descripcion, no declara pipeline, no declara idiomas y la licencia figura como "unknown". El repositorio registra 0 descargas y 0 likes, y la unica etiqueta relevante ademas de la licencia es region:us.
 
 No es posible determinar que problema resuelve el modelo, a que categoria pertenece (texto, vision, audio, multimodal) ni cual es su arquitectura o tamano, porque el autor no ha publicado ninguno de esos datos ni en la model card ni en los metadatos del repositorio.
 
@@ -68,7 +68,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| saniakosmos/ariav4 | no disponible | no disponible | unknown | HuggingFace, 0 descargas |
+| saniakosmos/ariav4 | no disponible | no disponible | unknown | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/saniakosmos/ariav4
+- Repositorio en Hugging Face: https://huggingface.co/saniakosmos/ariav4
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

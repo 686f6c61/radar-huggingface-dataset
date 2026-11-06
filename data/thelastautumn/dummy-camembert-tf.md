@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `TheLastAutumn/dummy-camembert-tf` es un repositorio alojado en HuggingFace por el usuario TheLastAutumn. La informacion disponible es extremadamente limitada: se trata, segun todos los indicios, de un modelo de prueba (el propio identificador incluye el termino "dummy") cuya model card es la plantilla generada automaticamente por HuggingFace, sin ningun campo completado. No se declara pipeline, licencia, idiomas, arquitectura ni volumen de parametros.
+El modelo identificado como `TheLastAutumn/dummy-camembert-tf` es un repositorio alojado en Hugging Face por el usuario TheLastAutumn. La informacion disponible es extremadamente limitada: se trata, segun todos los indicios, de un modelo de prueba (el propio identificador incluye el termino "dummy") cuya model card es la plantilla generada automaticamente por Hugging Face, sin ningun campo completado. No se declara pipeline, licencia, idiomas, arquitectura ni volumen de parametros.
 
 El repositorio esta etiquetado con la libreria `transformers` y con el tag `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono en aprendizaje automatico. Dicho tag aparece en la plantilla estandar de model card como enlace a la calculadora de impacto ambiental, por lo que no implica que el modelo implemente ni cite esa investigacion como parte de su diseno. El sufijo "camembert" del nombre sugiere una posible relacion con la familia CamemBERT (modelo tipo RoBERTa preentrenado para frances), pero esto no esta confirmado en ninguna fuente consultada. El sufijo "tf" apunta a una implementacion en TensorFlow, tampoco verificada.
 
@@ -23,7 +23,7 @@ La relevancia actual de esta ficha es, por tanto, metodologica: sirve como ejemp
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. La model card publicada es la plantilla por defecto de HuggingFace, en la que todos los apartados relevantes (descripcion, desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros, infraestructura de computo) aparecen marcados como "[More Information Needed]". No hay ninguna seccion cumplimentada que permita determinar si se trata de un transformer encoder, un modelo causal, una arquitectura hibrida o cualquier otra variante.
+No se dispone de informacion sobre la arquitectura del modelo. La model card publicada es la plantilla por defecto de Hugging Face, en la que todos los apartados relevantes (descripcion, desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparametros, infraestructura de computo) aparecen marcados como "[More Information Needed]". No hay ninguna seccion cumplimentada que permita determinar si se trata de un transformer encoder, un modelo causal, una arquitectura hibrida o cualquier otra variante.
 
 Tampoco existen datos sobre volumen de tokens de entrenamiento, composicion del corpus, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas. El tag `arxiv:1910.09700` no aporta informacion sobre el entrenamiento del modelo: se corresponde con el articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, enlazado desde la seccion "Environmental Impact" de la plantilla. Dicha seccion tambien esta sin rellenar.
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible; sin conocer el numero de parametros ni la precision de los pesos no es posible realizar una estimacion fiable.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no determinable con los datos actuales.
-- Opciones de despliegue: el repositorio esta etiquetado con `transformers`, por lo que la via de carga esperada seria la libreria `transformers` (con backend TensorFlow si se confirma el sufijo "tf"). No hay informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI. El tag `endpoints_compatible` indica que el repositorio es compatible con los endpoints de HuggingFace, aunque no se especifica la tarea servida.
+- Opciones de despliegue: el repositorio esta etiquetado con `transformers`, por lo que la via de carga esperada seria la libreria `transformers` (con backend TensorFlow si se confirma el sufijo "tf"). No hay informacion sobre compatibilidad con vLLM, llama.cpp, Ollama o TGI. El tag `endpoints_compatible` indica que el repositorio es compatible con los endpoints de Hugging Face, aunque no se especifica la tarea servida.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TheLastAutumn/dummy-camembert-tf
+- Repositorio en Hugging Face: https://huggingface.co/TheLastAutumn/dummy-camembert-tf
 - Articulo referenciado por el tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental enlazada desde la plantilla de model card: https://mlco2.github.io/impact#compute
 

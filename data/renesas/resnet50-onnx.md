@@ -6,7 +6,7 @@ ResNet50-ONNX es un paquete de despliegue publicado por Renesas que contiene la 
 
 El modelo tiene 25,63 millones de parametros, una unica entrada fija de 3 x 224 x 224 pixeles y una salida de 1000 clases correspondientes al conjunto ImageNet ILSVRC2012. El artefacto publicado es unicamente FP32 ONNX; tanto ONNX Runtime con el Execution Provider NPU de Renesas como el runtime MWMX convierten el modelo a INT8 automaticamente en tiempo de carga o compilacion, de modo que no se distribuye un fichero cuantizado aparte.
 
-Su relevancia actual es acotada y muy especifica: es una referencia de rendimiento y precision para quien integre vision por computador en la NPU NPX6-48K de la R-Car X5H, no un modelo de proposito general. Con 0 descargas y 0 likes en el momento de la consulta, se trata de material de soporte al ecosistema de hardware de Renesas mas que de un modelo destinado a la comunidad de HuggingFace.
+Su relevancia actual es acotada y muy especifica: es una referencia de rendimiento y precision para quien integre vision por computador en la NPU NPX6-48K de la R-Car X5H, no un modelo de proposito general. Con 0 descargas y 0 likes en el momento de la consulta, se trata de material de soporte al ecosistema de hardware de Renesas mas que de un modelo destinado a la comunidad de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 - GPU de consumo: no disponible. No hay mediciones publicadas para tarjetas consumer; en teoria el ONNX podria ejecutarse con ONNX Runtime sobre CUDA o CPU, pero sin datos de latencia ni precision.
 - Opciones de despliegue documentadas: ONNX Runtime con Renesas Custom NPU Execution Provider (formato de entrada FP32 ONNX, ejecucion INT8 en la NPU) y Renesas MWMX Runtime (el modelo FP32 se ingiere y compila con la toolchain MWMX para ejecucion INT8). Tambien se menciona el PPA Estimator como herramienta de estimacion, no de ejecucion.
 - Alternativa de respaldo: el Execution Provider de CPU de ONNX Runtime aparece como proveedor secundario en el ejemplo de codigo, sin cifras de rendimiento asociadas.
-- Latencia y throughput: 3,23 ms / 303,0 fps con MWMX a 850 MHz; 4,54 ms / 243,9 fps con ORT Custom NPU EP a 850 MHz; 5,9 ms estimados con PPA Estimator a 1066 MHz. El usuario debe aportar la placa R-Car X5H, el runtime correspondiente y la CLI de HuggingFace para descargar el modelo.
+- Latencia y throughput: 3,23 ms / 303,0 fps con MWMX a 850 MHz; 4,54 ms / 243,9 fps con ORT Custom NPU EP a 850 MHz; 5,9 ms estimados con PPA Estimator a 1066 MHz. El usuario debe aportar la placa R-Car X5H, el runtime correspondiente y la CLI de Hugging Face para descargar el modelo.
 
 ## Comparativa con modelos similares
 
@@ -125,8 +125,8 @@ Diferencias relevantes que si se desprenden de la documentacion: este paquete es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Renesas/ResNet50-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/onnxmodelzoo/resnet50-v1-12
+- Repositorio en Hugging Face: https://huggingface.co/Renesas/ResNet50-ONNX
+- Modelo base en Hugging Face: https://huggingface.co/onnxmodelzoo/resnet50-v1-12
 - Repositorio del ONNX Model Zoo: https://github.com/onnx/models
 - Sitio de Renesas: https://www.renesas.com/
 - Catalogo de productos de Renesas: https://www.renesas.com/en/products

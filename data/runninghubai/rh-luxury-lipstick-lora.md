@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-luxury-lipstick-lora es un adaptador LoRA para edición de imágenes condicionada por texto (pipeline `image-text-to-image`), publicado en HuggingFace por RunningHubAI a partir de un modelo base identificado como "krea2". No se trata de un modelo de lenguaje ni de un modelo fundacional: es un peso adicional de 218 MiB que se carga sobre un modelo de difusión existente para modificar su comportamiento generativo en un dominio visual muy concreto.
+rh-luxury-lipstick-lora es un adaptador LoRA para edición de imágenes condicionada por texto (pipeline `image-text-to-image`), publicado en Hugging Face por RunningHubAI a partir de un modelo base identificado como "krea2". No se trata de un modelo de lenguaje ni de un modelo fundacional: es un peso adicional de 218 MiB que se carga sobre un modelo de difusión existente para modificar su comportamiento generativo en un dominio visual muy concreto.
 
 El adaptador está empaquetado para su uso en ComfyUI y en la plataforma RunningHub, y el autor original del entrenamiento aparece vinculado a un usuario de dicha plataforma. El repositorio es de tipo promocional/distribución: la model card no documenta hiperparámetros de entrenamiento, composición del dataset, resolución nativa ni parámetros de inferencia recomendados.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-luxury-lipstick-lora | LoRA sobre modelo de difusión | no disponible (218 MiB) | no aplica | no disponible | HuggingFace, RunningHub, ComfyUI |
-| LoRAs de estilo en Civitai | LoRA sobre modelo de difusión | variable, no documentado | no aplica | variable según autor | Civitai, HuggingFace |
+| rh-luxury-lipstick-lora | LoRA sobre modelo de difusión | no disponible (218 MiB) | no aplica | no disponible | Hugging Face, RunningHub, ComfyUI |
+| LoRAs de estilo en Civitai | LoRA sobre modelo de difusión | variable, no documentado | no aplica | variable según autor | Civitai, Hugging Face |
 | Adaptadores oficiales del modelo base "krea2" | LoRA / fine-tune | no disponible | no aplica | según modelo base | según distribución del modelo base |
 
 No se dispone de datos de rendimiento comparables entre estas opciones en la información proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RunningHubAI/rh-luxury-lipstick-lora
+- Repositorio Hugging Face: https://huggingface.co/RunningHubAI/rh-luxury-lipstick-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2072624471743221762
 - Página del autor en RunningHub: https://www.runninghub.ai/user-center/2041030036219498497
 - Origen declarado en Civitai: https://civitai.red/models/2747780/extravaganzza-blowjob?modelVersionId=3090930

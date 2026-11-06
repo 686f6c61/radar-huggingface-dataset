@@ -4,7 +4,7 @@
 
 El repositorio `rebeccary3/paper_009651853_neural_architecture_search` no contiene un modelo de aprendizaje automático, sino un documento de investigación en formato Markdown centrado en el campo de la búsqueda de arquitecturas neuronales (Neural Architecture Search, NAS). El autor, rebeccary3, ha publicado un artefacto textual que sigue una estructura académica estándar (introducción, antecedentes, enfoque, evaluación y conclusión) y que emplea un estilo de escritura orientado a la evidencia empírica. El fichero principal es `paper_009651853_neural_architecture_search.md`, que constituye la totalidad del contenido del repositorio.
 
-La relevancia de este repositorio no reside en capacidades de inferencia o generación, sino en su carácter documental dentro del ecosistema de HuggingFace. En un contexto donde los papers sobre NAS se publican masivamente (más de mil en la última década según la revisión de Ren et al., 2023), este repositorio pretende ofrecer un documento de síntesis o análisis sobre el tema, aunque no se dispone de más detalles sobre su contenido concreto. No se trata de un modelo entrenado ni de un sistema desplegable, sino de un recurso textual de investigación.
+La relevancia de este repositorio no reside en capacidades de inferencia o generación, sino en su carácter documental dentro del ecosistema de Hugging Face. En un contexto donde los papers sobre NAS se publican masivamente (más de mil en la última década según la revisión de Ren et al., 2023), este repositorio pretende ofrecer un documento de síntesis o análisis sobre el tema, aunque no se dispone de más detalles sobre su contenido concreto. No se trata de un modelo entrenado ni de un sistema desplegable, sino de un recurso textual de investigación.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rebeccary3/paper_009651853_neural_architecture_search
+- Repositorio Hugging Face: https://huggingface.co/rebeccary3/paper_009651853_neural_architecture_search
 - Paper de referencia sobre NAS (1000 papers): https://arxiv.org/abs/2301.08727
 - Revisión sistemática sobre NAS: https://link.springer.com/article/10.1007/s10462-024-11058-w
 - Paper sobre Neural Architecture Retrieval: https://arxiv.org/abs/2307.07919

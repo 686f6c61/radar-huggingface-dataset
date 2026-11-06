@@ -93,7 +93,7 @@ No se dispone de informacion publicada sobre modelos directamente comparables en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier
+- Repositorio Hugging Face: https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier
 - Repositorio edge (cuantizaciones): https://huggingface.co/patronus-studio/husky-nose-tool-security-properties-classifier-edge
 - Blog de Patronus sobre el zoo de modelos: https://patronus.studio/posts/our-ai-security-model-zoo-is-now-open-source
 - Repositorio GitHub de Patronus Protect: https://github.com/patronus-protect/patronus-security/blob/main/docs/assets.md

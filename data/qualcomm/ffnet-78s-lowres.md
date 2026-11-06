@@ -94,7 +94,7 @@ FFNet-78S-LowRes es significativamente más ligero que BiSeNetV2 y comparable a 
 
 ## Enlaces
 
-- [HuggingFace - qualcomm/FFNet-78S-LowRes](https://huggingface.co/qualcomm/FFNet-78S-LowRes)
+- [Hugging Face - qualcomm/FFNet-78S-LowRes](https://huggingface.co/qualcomm/FFNet-78S-LowRes)
 - [Qualcomm AI Hub - FFNet-78S-LowRes](https://aihub.qualcomm.com/models/ffnet_78s_lowres)
 - [Qualcomm AI Hub IoT - FFNet-78S-LowRes](https://aihub.qualcomm.com/iot/models/ffnet_78s_lowres)
 - [GitHub - Qualcomm-AI-research/FFNet (implementación original)](https://github.com/Qualcomm-AI-research/FFNet)

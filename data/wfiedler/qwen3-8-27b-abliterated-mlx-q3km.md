@@ -78,7 +78,7 @@ Rendimiento medido en Apple Silicon con 64 GB de memoria unificada:
 
 ## Comparativa con modelos similares
 
-La comparativa directa disponible es con la versión de 5 bits del mismo modelo base (Qwen3.8-27B-ABLITERATED-mlx-q5, no publicado en HuggingFace pero mencionado en la model card). No se dispone de datos de otros modelos comparables en la información proporcionada.
+La comparativa directa disponible es con la versión de 5 bits del mismo modelo base (Qwen3.8-27B-ABLITERATED-mlx-q5, no publicado en Hugging Face pero mencionado en la model card). No se dispone de datos de otros modelos comparables en la información proporcionada.
 
 | Modelo | Bits/peso | Tamaño | Velocidad | Pico memoria | Casos de uso óptimos |
 |---|---|---|---|---|---|
@@ -97,6 +97,6 @@ La comparativa directa disponible es con la versión de 5 bits del mismo modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wfiedler/Qwen3.8-27B-ABLITERATED-mlx-q3km
+- Modelo en Hugging Face: https://huggingface.co/wfiedler/Qwen3.8-27B-ABLITERATED-mlx-q3km
 - Modelo base: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Documentación de mlx-vlm: no disponible en la información proporcionada.

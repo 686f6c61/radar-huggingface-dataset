@@ -44,7 +44,7 @@ La unica informacion indirecta proviene de la busqueda web, que menciona que el 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar para este modelo. La ausencia de model card del modelo original y la falta de informacion en la pagina de HuggingFace impiden cualquier comparacion cuantitativa con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar para este modelo. La ausencia de model card del modelo original y la falta de informacion en la pagina de Hugging Face impiden cualquier comparacion cuantitativa con otros modelos.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/JAX-XORTRON-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/JAX-XORTRON-i1-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/darkc0de/JAX-XORTRON
 - Repositorio del modelo Xortron relacionado: https://huggingface.co/mradermacher/XORTRON-i1-GGUF
 - Variante NXTXPRTXXL del mismo autor: https://huggingface.co/mradermacher/XORTRON-NXTXPRTXXL-i1-GGUF

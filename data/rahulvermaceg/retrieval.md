@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rahulvermaceg/retrieval` es un repositorio de HuggingFace publicado por el usuario rahulvermaceg que contiene una implementación propia y de escala reducida («nano») de MoCo v3 orientada a tareas de *retrieval*. No es un modelo entrenado ni un release con resultados: la propia model card lo describe como un «punto de partida reproducible» que incluye el código (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
+`rahulvermaceg/retrieval` es un repositorio de Hugging Face publicado por el usuario rahulvermaceg que contiene una implementación propia y de escala reducida («nano») de MoCo v3 orientada a tareas de *retrieval*. No es un modelo entrenado ni un release con resultados: la propia model card lo describe como un «punto de partida reproducible» que incluye el código (`finetune.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
 
 El interés del repositorio es, por tanto, documental y metodológico, no de rendimiento. Los metadatos de safetensors declaran 24.832 parámetros totales y un tamaño de repositorio de 0,0 GB, lo que lo sitúa en un orden de magnitud de decenas de miles de parámetros, muy lejos de cualquier encoder visual utilizable en producción. La model card indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rahulvermaceg/retrieval | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache-2.0 | HuggingFace, pesos safetensors |
+| rahulvermaceg/retrieval | 24.832 | no disponible | sin benchmarks (checkpoint sin entrenar) | Apache-2.0 | Hugging Face, pesos safetensors |
 | MoCo v3 oficial (facebookresearch) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | repositorio de referencia, pesos publicados |
 | CLIP (OpenAI) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | ampliamente adoptado en retrieval imagen-texto |
 | SigLIP (Google) | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | alternativa habitual en retrieval multimodal |
@@ -87,5 +87,5 @@ La comparación relevante no es de métricas —este repositorio no las aporta�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rahulvermaceg/retrieval
+- Hugging Face: https://huggingface.co/rahulvermaceg/retrieval
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo (los resultados obtenidos eran ajenos al contenido técnico y no se incluyen). No se dispone de paper, blog, repositorio adicional ni demo asociados.

@@ -83,8 +83,8 @@ No se dispone de comparativas con otros modelos de la misma categoría (tutores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timiiowolabi/Muta-Tutor-Qwen3.5-0.8B-ADTC-GGUF
+- Modelo en Hugging Face: https://huggingface.co/timiiowolabi/Muta-Tutor-Qwen3.5-0.8B-ADTC-GGUF
 - Repositorio de Qwen3.5 (serie general): https://github.com/timothyba/Qwen3.5
 - Repositorio de Qwen3 (serie anterior): https://github.com/QwenLM/Qwen3
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Wiki de Qwen3.5 en AIMS5.0: https://aitoolbox.tmit.bme.hu/Tools/Qwen35

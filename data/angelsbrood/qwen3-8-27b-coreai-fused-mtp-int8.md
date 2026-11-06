@@ -97,7 +97,7 @@ La comparativa se basa en la información disponible en los repositorios citados
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/angelsbrood/Qwen3.8-27B-CoreAI-Fused-MTP-Int8
+- Repositorio Hugging Face del artefacto: https://huggingface.co/angelsbrood/Qwen3.8-27B-CoreAI-Fused-MTP-Int8
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía local para Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide
 - Core AI Model Zoo (variante con visión): https://github.com/john-rocky/coreai-model-zoo/tree/main/models/qwen3.8-27b

@@ -83,5 +83,5 @@ No se dispone de otros modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- HuggingFace del modelo: [https://huggingface.co/CrowdMind/PrimeMind-4B](https://huggingface.co/CrowdMind/PrimeMind-4B)
+- Hugging Face del modelo: [https://huggingface.co/CrowdMind/PrimeMind-4B](https://huggingface.co/CrowdMind/PrimeMind-4B)
 - Modelo base Qwen3.5-4B: [https://huggingface.co/Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)

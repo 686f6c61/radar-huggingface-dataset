@@ -87,10 +87,10 @@ Diferencia directa v0.3 menos v0.2: calidad enrutada -1,46 pp [-3,33; 0,14] y ah
 
 | Modelo | Parametros | Funcion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thaki-Decision-0.8B-G14-v0.3 | ~0,8B (LoRA sobre d3-lite) | Router 8B/27B, 4 celdas conjuntas, salida con `risk` | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| Thaki-Decision-0.8B-G13-v0.2 | ~0,8B (misma base) | Router 8B/27B, salida con `delta` | no disponible | Apache-2.0 | HuggingFace; version recomendada por el autor |
-| `vllm-sr/d3-lite` | ~0,8B (Qwen3.5-0.8B) | Modelo base generativo | no disponible | Apache-2.0 | HuggingFace |
-| ThakiCloud/RAG-Gate-8B | 8B | Guardarrail de suficiencia de evidencia en RAG (ingles) | no disponible | Apache-2.0 | HuggingFace |
+| Thaki-Decision-0.8B-G14-v0.3 | ~0,8B (LoRA sobre d3-lite) | Router 8B/27B, 4 celdas conjuntas, salida con `risk` | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| Thaki-Decision-0.8B-G13-v0.2 | ~0,8B (misma base) | Router 8B/27B, salida con `delta` | no disponible | Apache-2.0 | Hugging Face; version recomendada por el autor |
+| `vllm-sr/d3-lite` | ~0,8B (Qwen3.5-0.8B) | Modelo base generativo | no disponible | Apache-2.0 | Hugging Face |
+| ThakiCloud/RAG-Gate-8B | 8B | Guardarrail de suficiencia de evidencia en RAG (ingles) | no disponible | Apache-2.0 | Hugging Face |
 
 La comparacion relevante es contra v0.2, que con la misma base, los mismos datos y el mismo coste obtiene mejor calidad enrutada (0,66 pp frente a 2,12 pp de perdida), menor coste (0,275 frente a 0,309 GPU-segundos por peticion) y cero peticiones de arrepentimiento enviadas al tier pequeno. No se dispone de datos publicados de otros routers de seleccion de modelo comparables en la informacion proporcionada.
 
@@ -111,11 +111,11 @@ La comparacion relevante es contra v0.2, que con la misma base, los mismos datos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-G14-v0.3
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-G14-v0.3
 - Version anterior recomendada (v0.2): https://huggingface.co/ThakiCloud/Thaki-Decision-0.8B-G13-v0.2
 - Modelo base `vllm-sr/d3-lite`: https://huggingface.co/vllm-sr/d3-lite
 - Model card en coreano: [MODEL_CARD.ko.md](./MODEL_CARD.ko.md)
-- Organizacion en HuggingFace: https://huggingface.co/ThakiCloud
+- Organizacion en Hugging Face: https://huggingface.co/ThakiCloud
 - GitHub de ThakiCloud: https://github.com/ThakiCloud
 - Documentacion de la API Decision 3.0: https://decision.vllm-sr.ai/docs
 - Sitio corporativo: https://www.thakicloud.com/

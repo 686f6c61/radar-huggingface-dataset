@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge` es un modelo de lenguaje publicado por el usuario yuhengtu-bytedance en HuggingFace, generado automáticamente mediante la herramienta mergekit. No se trata de un modelo entrenado desde cero, sino de una media lineal (model soup) de cinco checkpoints intermedios de un mismo entrenamiento: los pasos globales 2000, 3000, 4000, 5000 y 6000 de un experimento interno denominado `filtered_insert_xxf_character`. El checkpoint final (paso 6000) se usa además como modelo base del merge. El resultado es un modelo denso de 6.856.253.440 parámetros (unos 6,86 mil millones) con arquitectura `gpt_neox`, guardado en safetensors con precisión bfloat16 y un repositorio de 13,7 GB.
+`sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge` es un modelo de lenguaje publicado por el usuario yuhengtu-bytedance en Hugging Face, generado automáticamente mediante la herramienta mergekit. No se trata de un modelo entrenado desde cero, sino de una media lineal (model soup) de cinco checkpoints intermedios de un mismo entrenamiento: los pasos globales 2000, 3000, 4000, 5000 y 6000 de un experimento interno denominado `filtered_insert_xxf_character`. El checkpoint final (paso 6000) se usa además como modelo base del merge. El resultado es un modelo denso de 6.856.253.440 parámetros (unos 6,86 mil millones) con arquitectura `gpt_neox`, guardado en safetensors con precisión bfloat16 y un repositorio de 13,7 GB.
 
 La relevancia de esta ficha es fundamentalmente metodológica: el modelo documenta un caso de "merge scaling" sobre checkpoints, es decir, comprobar si promediar pesos de distintos puntos de un mismo entrenamiento produce un modelo más robusto que cualquiera de los checkpoints individuales. Las rutas internas que aparecen en la model card (`/opt/tiger/Pan_Safety_Better_Measurement/merge_scaling_ckpts_cache/...`) sugieren que el experimento se enmarca en un proyecto interno de medición de seguridad, aunque el autor no lo confirma explícitamente en ningún campo de la ficha.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character (este modelo) | 6,86 B | no disponible | no disponible | HuggingFace, safetensors bfloat16, 0 descargas | no disponibles |
-| Pythia-6.9B (EleutherAI) | 6,9 B | 2.048 tokens | Apache-2.0 | HuggingFace, safetensors | si, suite completa publicada |
-| GPT-J-6B (EleutherAI) | 6 B | 2.048 tokens | Apache-2.0 | HuggingFace, safetensors | si, evaluaciones publicadas |
-| Llama-3.1-8B (Meta) | 8 B | 128.000 tokens | Llama 3.1 Community License | HuggingFace, safetensors | si, suite completa publicada |
+| sfm_filtered_insert_xxf_character (este modelo) | 6,86 B | no disponible | no disponible | Hugging Face, safetensors bfloat16, 0 descargas | no disponibles |
+| Pythia-6.9B (EleutherAI) | 6,9 B | 2.048 tokens | Apache-2.0 | Hugging Face, safetensors | si, suite completa publicada |
+| GPT-J-6B (EleutherAI) | 6 B | 2.048 tokens | Apache-2.0 | Hugging Face, safetensors | si, evaluaciones publicadas |
+| Llama-3.1-8B (Meta) | 8 B | 128.000 tokens | Llama 3.1 Community License | Hugging Face, safetensors | si, suite completa publicada |
 
 La comparación de rendimiento no es posible: este modelo carece de cualquier evaluación publicada, mientras que las alternativas incluyen resultados reproducibles en MMLU, HellaSwag o ARC. La diferencia más relevante en términos prácticos es la licencia: las tres alternativas tienen términos explícitos de uso, mientras que este merge no declara ninguna, lo que bloquea de facto su uso comercial.
 
@@ -96,7 +96,7 @@ La comparación de rendimiento no es posible: este modelo carece de cualquier ev
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-2k_3k_4k_5k_6k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper del metodo Linear referenciado en la model card (Model Soups): https://arxiv.org/abs/2203.05482
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

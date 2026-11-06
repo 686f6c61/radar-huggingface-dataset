@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| logan7000/cogrpo-n3-ring-... (este modelo) | ~3B | no disponible | GRPO sobre Llama 3.2 3B | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3.2B | 128k | Instruct (RLHF) | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32k | Instruct (RLHF) | Apache 2.0 | HuggingFace |
+| logan7000/cogrpo-n3-ring-... (este modelo) | ~3B | no disponible | GRPO sobre Llama 3.2 3B | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3.2B | 128k | Instruct (RLHF) | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32k | Instruct (RLHF) | Apache 2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estos modelos. La comparativa se basa en características generales. El modelo de logan7000 se distingue por el uso de GRPO, pero su rendimiento relativo es desconocido.
 
@@ -75,7 +75,7 @@ No se dispone de benchmarks comparativos entre estos modelos. La comparativa se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end
+- Hugging Face: https://huggingface.co/logan7000/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Repositorio TRL: https://github.com/huggingface/trl
 - Modelo similar en FriendliAI: https://friendli.ai/models/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-granite2b-math345-groupB-llama32-end

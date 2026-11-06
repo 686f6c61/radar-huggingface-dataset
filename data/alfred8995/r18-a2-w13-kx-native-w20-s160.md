@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-native-w20-s160` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y la etiqueta `sn38-nanochrono` parece tratarse de un checkpoint experimental dentro de una familia interna de modelos, sin documentación pública asociada (no hay model card descriptiva, pipeline declarado ni idiomas listados). El repositorio tiene 2 descargas y 0 likes en el momento de la consulta, lo que indica que no es un modelo ampliamente adoptado ni validado por la comunidad.
+`alfred8995/r18-a2-w13-kx-native-w20-s160` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). Por el identificador y la etiqueta `sn38-nanochrono` parece tratarse de un checkpoint experimental dentro de una familia interna de modelos, sin documentación pública asociada (no hay model card descriptiva, pipeline declarado ni idiomas listados). El repositorio tiene 2 descargas y 0 likes en el momento de la consulta, lo que indica que no es un modelo ampliamente adoptado ni validado por la comunidad.
 
 El dato técnico más fiable disponible es el recuento de parámetros a partir de los pesos en safetensors: 2.018.511.234 parámetros (aproximadamente 2.000 millones). El tamaño del repositorio es de 14,4 GB, coherente con pesos en precisión alta (fp32 o bf16) para ese número de parámetros. No se dispone de información sobre arquitectura, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
 
@@ -78,11 +78,11 @@ La comparación se limita a parámetros, contexto y licencia porque no hay bench
 - Riesgo de alucinación desconocido: sin evaluación publicada no puede estimarse la tasa de errores factuales.
 - Sesgos desconocidos: al no conocerse la composición del dataset, no es posible evaluar sesgos de género, idioma, cultura o dominio.
 - Idiomas no declarados: no hay garantía de soporte multilingüe ni de calidad en castellano.
-- Licencia Apache 2.0: permite uso comercial y modificación, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar si esas condiciones añaden restricciones adicionales.
+- Licencia Apache 2.0: permite uso comercial y modificación, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar si esas condiciones añaden restricciones adicionales.
 - Compatibilidad incierta: al no indicarse arquitectura, no se puede confirmar que los pesos carguen en transformers, vLLM o llama.cpp sin adaptaciones.
 - Advertencia para producción: no se recomienda su uso en entornos productivos sin una evaluación propia exhaustiva, dado el carácter experimental y la falta de validación comunitaria (2 descargas, 0 likes).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w20-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w20-s160
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

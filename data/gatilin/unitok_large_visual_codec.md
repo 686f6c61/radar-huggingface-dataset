@@ -69,8 +69,8 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 | Modelo | Tipo | Parámetros | Resolución o contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gatilin/unitok_large_visual_codec | Códec visual discreto con torre de texto | 820.333.507 | 256×256 validado; 8 identificadores por posición | Apache-2.0 en pesos; MIT en código | HuggingFace |
-| FoundationVision/unitok_tokenizer | Modelo base del que se extrae el mapeo | No disponible | No disponible | No disponible | HuggingFace |
+| gatilin/unitok_large_visual_codec | Códec visual discreto con torre de texto | 820.333.507 | 256×256 validado; 8 identificadores por posición | Apache-2.0 en pesos; MIT en código | Hugging Face |
+| FoundationVision/unitok_tokenizer | Modelo base del que se extrae el mapeo | No disponible | No disponible | No disponible | Hugging Face |
 | Tokenizadores VQ discretos de la familia VQGAN | Códec visual discreto | No disponible | No disponible | No disponible | No disponible |
 | Autoencoders VAE continuos, como SD-VAE | Códec visual continuo | No disponible | No disponible | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados de benchmarks ni de especificaciones completa
 
 ## Enlaces
 
-- [HuggingFace: gatilin/unitok_large_visual_codec](https://huggingface.co/gatilin/unitok_large_visual_codec)
+- [Hugging Face: gatilin/unitok_large_visual_codec](https://huggingface.co/gatilin/unitok_large_visual_codec)
 - [Modelo base: FoundationVision/unitok_tokenizer](https://huggingface.co/FoundationVision/unitok_tokenizer)
 - [Checkpoint oficial del tokenizador, revisión 7f6ea34](https://huggingface.co/FoundationVision/unitok_tokenizer/tree/7f6ea34f2f669d8d250a4376468c69fe4bcb6c65)
 - [Repositorio UniTok, revisión bb8012e](https://github.com/FoundationVision/UniTok/tree/bb8012e8e8d7be66928bedd80506c56a55ea6305)

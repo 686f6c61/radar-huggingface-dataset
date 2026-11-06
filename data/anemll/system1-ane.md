@@ -2,7 +2,7 @@
 
 ## Resumen
 
-System 1 ANE es una coleccion de builds de Core AI (formato `.aimodel`) para la Apple Neural Engine, publicada por el usuario anemll en HuggingFace el 9 de octubre de 2026. No es un checkpoint de transformers al uso: se trata de modelos de decision de un solo paso (una pasada hacia delante, una decision, sin generacion de texto) empaquetados para ejecutarse en la NPU de Apple. El repositorio raiz actua como descriptor y agrupa carpetas independientes, cada una con su propio `config.json` y model card; en el momento de la publicacion solo contiene el modelo `snake-stock-qwen3.5-unsloth`.
+System 1 ANE es una coleccion de builds de Core AI (formato `.aimodel`) para la Apple Neural Engine, publicada por el usuario anemll en Hugging Face el 9 de octubre de 2026. No es un checkpoint de transformers al uso: se trata de modelos de decision de un solo paso (una pasada hacia delante, una decision, sin generacion de texto) empaquetados para ejecutarse en la NPU de Apple. El repositorio raiz actua como descriptor y agrupa carpetas independientes, cada una con su propio `config.json` y model card; en el momento de la publicacion solo contiene el modelo `snake-stock-qwen3.5-unsloth`.
 
 El modelo incluido parte de `unsloth/Qwen3.5-0.8B`, un transformer de aproximadamente 800 millones de parametros, sobre el que se ha entrenado un LoRA junto con una cabeza de decision (decision head) mediante Unsloth. La tarea es la seleccion de movimiento en el juego Snake: el modelo procesa un contexto de 304 tokens de prefill y emite una decision categorica, sin decodificacion autoregresiva de texto.
 
@@ -32,7 +32,7 @@ El proceso de publicacion consiste en convertir el modelo en paquetes Core AI `.
 - Clasificacion / decision en un solo paso: emite una decision categorica a partir de una ventana de prefill de 304 tokens, sin generar texto.
 - Tarea especifica de juego: seleccion de movimiento para Snake.
 - Inferencia local en dispositivo: ejecucion completa en la Apple Neural Engine mediante paquetes Core AI.
-- Compatibilidad declarada con el pipeline `zero-shot-classification` en HuggingFace, aunque el uso real es de decision dedicada.
+- Compatibilidad declarada con el pipeline `zero-shot-classification` en Hugging Face, aunque el uso real es de decision dedicada.
 - Idiomas: unicamente ingles.
 - No soporta tool calling, function calling, agentes, vision, audio ni modo de razonamiento (thinking), segun la informacion disponible.
 - No es cargable mediante `transformers.AutoModel`; requiere el flujo de Core AI del autor.
@@ -68,8 +68,8 @@ No se dispone de modelos comparables documentados en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anemll/system1-ane (snake-stock-qwen3.5-unsloth) | No disponible (base ~0,8B) | 304 tokens de prefill | Decision de movimiento en Snake | Apache 2.0 | HuggingFace (paquetes Core AI) |
-| unsloth/Qwen3.5-0.8B | ~0,8 mil millones | No disponible | Generacion de lenguaje general | Apache 2.0 | HuggingFace |
+| anemll/system1-ane (snake-stock-qwen3.5-unsloth) | No disponible (base ~0,8B) | 304 tokens de prefill | Decision de movimiento en Snake | Apache 2.0 | Hugging Face (paquetes Core AI) |
+| unsloth/Qwen3.5-0.8B | ~0,8 mil millones | No disponible | Generacion de lenguaje general | Apache 2.0 | Hugging Face |
 
 No se identifican alternativas equivalentes de decision en un solo paso para Apple Neural Engine en la informacion disponible.
 
@@ -88,7 +88,7 @@ No se identifican alternativas equivalentes de decision en un solo paso para App
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anemll/system1-ane
+- Hugging Face: https://huggingface.co/anemll/system1-ane
 - Subcarpeta del modelo: https://huggingface.co/anemll/system1-ane/tree/main/snake-stock-qwen3.5-unsloth
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-0.8B
 - Licencia: LICENSE dentro del repositorio

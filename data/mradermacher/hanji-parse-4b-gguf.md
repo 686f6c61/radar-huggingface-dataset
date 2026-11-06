@@ -6,7 +6,7 @@ hanji-parse-4b-GGUF es la redistribución en formato GGUF del modelo hanji-dev/h
 
 El interés de esta ficha radica en que empaqueta un modelo multimodal de parsing documental en cuantizaciones que van de 1,8 GB (Q2_K) a 8,2 GB (f16), lo que permite ejecutarlo en GPU de consumo y en CPU mediante llama.cpp u Ollama. Además del modelo de lenguaje, el repositorio incluye dos ficheros mmproj (proyector multimodal) en Q8_0 y f16, imprescindibles para procesar imágenes, ya que sin ellos el modelo solo aceptaría texto.
 
-La información pública disponible es limitada: no se documentan la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks, y el repositorio acumula 180 descargas y 0 likes en el momento de la consulta. Las búsquedas web realizadas no devolvieron ninguna fuente relevante sobre el modelo, por lo que todos los datos de esta ficha proceden de la model card y de los metadatos de HuggingFace.
+La información pública disponible es limitada: no se documentan la longitud de contexto, los datos de entrenamiento ni resultados de benchmarks, y el repositorio acumula 180 descargas y 0 likes en el momento de la consulta. Las búsquedas web realizadas no devolvieron ninguna fuente relevante sobre el modelo, por lo que todos los datos de esta ficha proceden de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La información pública disponible es limitada: no se documentan la longitud de
 
 El repositorio no describe la arquitectura interna del modelo, pero sus etiquetas incluyen qwen3_vl, lo que sitúa el modelo base en la familia Qwen3-VL de modelos de visión-lenguaje, con un codificador visual conectado a un transformer de lenguaje mediante un proyector multimodal. La existencia de ficheros mmproj separados (0,6 GB en Q8_0 y 0,9 GB en f16) confirma ese esquema de dos componentes: torre de visión más proyector, por un lado, y modelo de lenguaje, por otro. No se especifican número de capas, dimensión oculta, mecanismo de atención ni resolución de imagen soportada.
 
-Sobre el entrenamiento no hay ningún dato publicado en la información disponible: ni número de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones, RLHF o DPO. Lo único documentado es el proceso de cuantización, que según los metadatos internos de la model card usó quantize_version 2, conversión desde pesos de HuggingFace (convert_type: hf) y cuantización de tensores de salida (output_tensor_quantised: 1). El propio autor indica que no hay cuantizaciones ponderadas ni con imatrix para este modelo y que, si no aparecen en una semana, probablemente no las planee.
+Sobre el entrenamiento no hay ningún dato publicado en la información disponible: ni número de tokens, ni composición del dataset, ni si hubo ajuste por instrucciones, RLHF o DPO. Lo único documentado es el proceso de cuantización, que según los metadatos internos de la model card usó quantize_version 2, conversión desde pesos de Hugging Face (convert_type: hf) y cuantización de tensores de salida (output_tensor_quantised: 1). El propio autor indica que no hay cuantizaciones ponderadas ni con imatrix para este modelo y que, si no aparecen en una semana, probablemente no las planee.
 
 ## Capacidades
 
@@ -107,4 +107,4 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Empresa del cuantizador: https://www.nethype.de/
 
-Nota: las búsquedas web realizadas no devolvieron ningún resultado relevante sobre este modelo; los enlaces listados son los incluidos en la model card y los metadatos de HuggingFace.
+Nota: las búsquedas web realizadas no devolvieron ningún resultado relevante sobre este modelo; los enlaces listados son los incluidos en la model card y los metadatos de Hugging Face.

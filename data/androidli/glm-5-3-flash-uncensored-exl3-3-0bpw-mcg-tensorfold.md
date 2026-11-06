@@ -99,12 +99,12 @@ La diferencia principal frente a la variante de Mia-AiLab es el tamaño (152 GB 
 - Dependencia de un motor parcheado: requiere una build de TensorFold con soporte de 3 bits EXL3 que no es la estándar; no hay soporte en llama.cpp, Ollama, vLLM ni TGI. Esto limita la portabilidad y complica el mantenimiento.
 - Configuración frágil: las cifras de KV pool dependen de la reserva de memoria y del `--spill-gib`. El propio autor advierte de que una reserva mal ajustada puede provocar `NV_ERR_NO_MEMORY` y tumbar el nodo en GB10.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta, un único autor, y métricas auto-medidas sin replicación independiente.
-- Discrepancia de metadatos: HuggingFace reporta un tamaño de repositorio de 0,1 GB, mientras que la model card describe 152 GB en 18 shards. Conviene verificar el contenido real antes de descargar.
+- Discrepancia de metadatos: Hugging Face reporta un tamaño de repositorio de 0,1 GB, mientras que la model card describe 152 GB en 18 shards. Conviene verificar el contenido real antes de descargar.
 - No afiliado: el autor declara explícitamente no tener relación con dealignai ni con Z.ai.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold
+- Repositorio en Hugging Face: https://huggingface.co/androidli/GLM-5.3-Flash-Uncensored-EXL3-3.0bpw-mcg-TensorFold
 - Modelo base (FP8 uncensored): https://huggingface.co/dealignai/GLM-5.3-Flash-UNCENSORED-FP8
 - Modelo upstream oficial: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Comparativa de referencia (4 bpw de Mia-AiLab): https://huggingface.co/Mia-AiLab/GLM-5.3-Flash-EXL3-4bpw-TensorFold

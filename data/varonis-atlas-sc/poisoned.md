@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `varonis-atlas-sc/poisoned` corresponde a un repositorio alojado en HuggingFace bajo la cuenta de usuario `varonis-atlas-sc`. En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", fue creado y actualizado el 21 de septiembre de 2026 (misma marca temporal para ambos eventos) y declara unicamente la etiqueta de licencia MIT y la region `us`. No tiene pipeline declarado, no especifica idiomas soportados y su model card no contiene mas contenido que el bloque de metadatos con la licencia.
+El identificador `varonis-atlas-sc/poisoned` corresponde a un repositorio alojado en Hugging Face bajo la cuenta de usuario `varonis-atlas-sc`. En el momento de la consulta el repositorio acumula 0 descargas y 0 "likes", fue creado y actualizado el 21 de septiembre de 2026 (misma marca temporal para ambos eventos) y declara unicamente la etiqueta de licencia MIT y la region `us`. No tiene pipeline declarado, no especifica idiomas soportados y su model card no contiene mas contenido que el bloque de metadatos con la licencia.
 
 No se dispone de ninguna informacion tecnica verificable sobre el artefacto: no se indica arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento, formato de pesos ni resultados de evaluacion. El propio nombre del repositorio (`poisoned`) y el patron de identificacion de la cuenta sugieren que podria tratarse de un artefacto de investigacion o de una prueba relacionada con envenenamiento de datos o de cadena de suministro de modelos, pero esto es una hipotesis derivada del nombre y no un dato confirmado por el autor.
 
@@ -23,7 +23,7 @@ Los resultados de busqueda web recuperados hacen referencia a Varonis Systems, u
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio de HuggingFace. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido ni cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos del repositorio de Hugging Face. No consta si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM), un modelo hibrido ni cualquier otra variante.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas asociadas (atencion lineal, decodificacion especulativa, cuantizacion nativa, etc.). Toda esta seccion queda marcada como no disponible.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 No es posible recomendar casos de uso concretos sin informacion verificable sobre arquitectura, tamanio, contexto o licencia de uso efectiva. A continuacion se enumeran unicamente escenarios de evaluacion que tendrian sentido dado el estado actual del repositorio:
 
 - Auditoria de cadena de suministro de modelos: inspeccionar el repositorio para determinar si contiene pesos reales, scripts maliciosos o artefactos de prueba antes de cualquier integracion en un pipeline.
-- Analisis de seguridad de artefactos de HuggingFace: revisar los ficheros publicados en busca de `pickle` inseguro, codigo ejecutable en la carga o dependencias no declaradas.
+- Analisis de seguridad de artefactos de Hugging Face: revisar los ficheros publicados en busca de `pickle` inseguro, codigo ejecutable en la carga o dependencias no declaradas.
 - Verificacion de procedencia: comprobar si el nombre de la cuenta guarda relacion con Varonis Systems o si se trata de una suplantacion, dado que no existe vinculo confirmado.
 - Reproducibilidad de investigacion sobre envenenamiento de datos: en caso de que el artefacto forme parte de un estudio, usarlo como muestra controlada en experimentos de deteccion de modelos manipulados.
 - Docencia en seguridad de IA: emplearlo como ejemplo de repositorio opaco con licencia permisiva pero sin documentacion tecnica.
@@ -68,7 +68,7 @@ No disponible. No existen datos tecnicos de este artefacto (tamanio, contexto, l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| varonis-atlas-sc/poisoned | no disponible | no disponible | MIT | HuggingFace, 0 descargas | ninguno |
+| varonis-atlas-sc/poisoned | no disponible | no disponible | MIT | Hugging Face, 0 descargas | ninguno |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No disponible. No existen datos tecnicos de este artefacto (tamanio, contexto, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/varonis-atlas-sc/poisoned
+- Repositorio en Hugging Face: https://huggingface.co/varonis-atlas-sc/poisoned
 - Varonis (sitio oficial, en frances): https://www.varonis.com/fr/
 - Varonis (sitio oficial, en ingles): https://www.varonis.com/
 - Varonis Systems en Wikipedia (ingles): https://en.wikipedia.org/wiki/Varonis_Systems

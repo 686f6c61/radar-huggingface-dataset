@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DataDecide-fineweb-edu-1B-57500_60000_62500_65000_67500_weightedavg_merge es un modelo de lenguaje de tipo base (no instruido) publicado por yuhengtu-bytedance en HuggingFace. No se trata de un entrenamiento desde cero, sino del resultado de fusionar cinco checkpoints intermedios de una misma ejecución de entrenamiento sobre el corpus fineweb-edu, correspondientes a los pasos 57.500, 60.000, 62.500, 65.000 y 67.500. La fusión se ha realizado con mergekit mediante el método Linear (media ponderada de pesos), usando el checkpoint del paso 67.500 como base y pesos crecientes de 1 a 5 según el paso, con normalizacion activada.
+DataDecide-fineweb-edu-1B-57500_60000_62500_65000_67500_weightedavg_merge es un modelo de lenguaje de tipo base (no instruido) publicado por yuhengtu-bytedance en Hugging Face. No se trata de un entrenamiento desde cero, sino del resultado de fusionar cinco checkpoints intermedios de una misma ejecución de entrenamiento sobre el corpus fineweb-edu, correspondientes a los pasos 57.500, 60.000, 62.500, 65.000 y 67.500. La fusión se ha realizado con mergekit mediante el método Linear (media ponderada de pesos), usando el checkpoint del paso 67.500 como base y pesos crecientes de 1 a 5 según el paso, con normalizacion activada.
 
 El modelo tiene 1.279.854.592 parametros (aproximadamente 1,28 mil millones) y se distribuye en formato safetensors con arquitectura tipo Llama segun los tags del repositorio. Su interes es fundamentalmente de investigacion: es un artefacto tipico de la linea de trabajo DataDecide, orientada a estudiar como escalan las decisiones sobre datos de preentrenamiento y como se comportan las tecnicas de model merging sobre checkpoints de una misma trayectoria de entrenamiento.
 
@@ -12,7 +12,7 @@ Conviene subrayar que se trata de un modelo base sin ajuste por instrucciones (n
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo Llama (tag `llama` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo Llama (tag `llama` en Hugging Face) |
 | Parametros totales | 1.279.854.592 (~1,28 mil millones, dato real de safetensors) |
 | Parametros activos | no aplica (modelo denso, no es MoE) |
 | Longitud de contexto | no disponible |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada en cuantizacion de 8 bits: en torno a 1,3-1,6 GB de pesos. En 4 bits: en torno a 0,7-0,9 GB. Estas cuantizaciones no se distribuyen en el repositorio y requeririan conversion propia.
 - GPU recomendadas: cabe holgadamente en RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4090, Tesla T4 16 GB, L4 24 GB y A10G. En A100 o H100 se puede servir con lotes grandes y multiples replicas por GPU.
 - Cabe en GPU de consumo: si, en cualquier GPU con 6 GB o mas de VRAM en bfloat16, y en GPUs de 4 GB si se cuantiza a 4 bits.
-- Despliegue: transformers (libreria declarada), text-generation-inference (tag explicito), HuggingFace Inference Endpoints (tag `endpoints_compatible`) y vLLM por compatibilidad de arquitectura Llama. Para llama.cpp/Ollama seria necesaria una conversion a GGUF que el repositorio no incluye.
+- Despliegue: transformers (libreria declarada), text-generation-inference (tag explicito), Hugging Face Inference Endpoints (tag `endpoints_compatible`) y vLLM por compatibilidad de arquitectura Llama. Para llama.cpp/Ollama seria necesaria una conversion a GGUF que el repositorio no incluye.
 - Latencia y throughput estimados: no disponibles; no se publican mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -99,8 +99,8 @@ Diferencias clave frente a estas alternativas: este modelo no ofrece variante in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-edu-1B-57500_60000_62500_65000_67500_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-edu-1B-57500_60000_62500_65000_67500_weightedavg_merge
 - mergekit (herramienta de fusion utilizada): https://github.com/cg123/mergekit
 - Articulo referenciado por el tag `arxiv:2203.05482` (interpolacion de pesos / model soups): https://arxiv.org/abs/2203.05482
-- Perfil del autor en HuggingFace: https://huggingface.co/yuhengtu-bytedance
+- Perfil del autor en Hugging Face: https://huggingface.co/yuhengtu-bytedance
 - Resultados de la busqueda web: no se encontraron enlaces relevantes sobre este modelo. Los unicos resultados devueltos corresponden a paginas promocionales de Google Gemini (https://gemini.google.com/, https://deepmind.google/models/gemini/), sin ninguna relacion con el artefacto descrito.

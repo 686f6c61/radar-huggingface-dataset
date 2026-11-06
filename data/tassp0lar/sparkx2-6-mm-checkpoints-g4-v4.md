@@ -92,7 +92,7 @@ La diferencia práctica principal no es de rendimiento sino de naturaleza del ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v4
+- Modelo en Hugging Face: https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v4
 - Repositorio de código / instrucciones de ejecución: https://github.com/BaiTian6641/Spark-X2.6-VL
 - Dataset asociado: https://huggingface.co/datasets/TassP0lar/SparkX2.6-MM
 - Paper, blog o demo: no disponible en la información proporcionada.

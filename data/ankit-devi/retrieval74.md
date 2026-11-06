@@ -74,5 +74,5 @@ No se dispone de modelos comparables en la misma categoría con datos públicos.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/ankit-devi/retrieval74)
+- [Repositorio en Hugging Face](https://huggingface.co/ankit-devi/retrieval74)
 - No se han encontrado papers, blogs, demos o repositorios adicionales en la busqueda web.

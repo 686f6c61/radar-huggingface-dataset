@@ -89,7 +89,7 @@ Los tres modelos comparten arquitectura y tama√±o; la diferencia radica en el m√
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/Llama-3.1-8B-TLDR-MOPO
+- Modelo en Hugging Face: https://huggingface.co/promotion/Llama-3.1-8B-TLDR-MOPO
 - Dataset de generaciones de benchmark: https://huggingface.co/datasets/promotion/nbpo-benchmark-generations
 - Modelo hermano NBPO: https://huggingface.co/promotion/Llama-3.1-8B-TLDR-NBPO
 - Modelo base Llama-3.1-8B: https://huggingface.co/meta-llama/Llama-3.1-8B

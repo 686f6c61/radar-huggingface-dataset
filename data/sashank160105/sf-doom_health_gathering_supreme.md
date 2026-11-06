@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sf-doom_health_gathering_supreme` es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario sashank160105. Se trata de una politica entrenada con APPO (Asynchronous Proximal Policy Optimization) mediante el framework Sample Factory para resolver el escenario `doom_health_gathering_supreme` del entorno ViZDoom. No es un modelo de lenguaje: no procesa ni genera texto, sino que mapea observaciones visuales del juego a acciones discretas.
+`sf-doom_health_gathering_supreme` es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario sashank160105. Se trata de una politica entrenada con APPO (Asynchronous Proximal Policy Optimization) mediante el framework Sample Factory para resolver el escenario `doom_health_gathering_supreme` del entorno ViZDoom. No es un modelo de lenguaje: no procesa ni genera texto, sino que mapea observaciones visuales del juego a acciones discretas.
 
 El modelo se enmarca en la categoria de artefactos de investigacion en RL, pensados para reproducir experimentos, servir de referencia (baseline) y comparar variantes de algoritmos o hiperparametros sobre un mismo entorno. Su relevancia es limitada y acotada al ambito academico: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, y la model card es un README generado automaticamente por Sample Factory con informacion minima.
 
@@ -77,11 +77,11 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos en la informacion proporcionada. Existen otros agentes publicados bajo la misma convencion de nombres (`sf-*` para checkpoints de Sample Factory) y otros checkpoints de ViZDoom en HuggingFace, pero no se han aportado sus metricas, tamanos ni licencias, por lo que cualquier tabla comparativa seria especulativa.
+No se dispone de datos comparativos en la informacion proporcionada. Existen otros agentes publicados bajo la misma convencion de nombres (`sf-*` para checkpoints de Sample Factory) y otros checkpoints de ViZDoom en Hugging Face, pero no se han aportado sus metricas, tamanos ni licencias, por lo que cualquier tabla comparativa seria especulativa.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sf-doom_health_gathering_supreme | no disponible | no aplica | mean_reward 12,50 +/- 1,20 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| sf-doom_health_gathering_supreme | no disponible | no aplica | mean_reward 12,50 +/- 1,20 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen otr
 
 Enlaces incluidos en la model card:
 
-- Modelo en HuggingFace: https://huggingface.co/sashank160105/sf-doom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/sashank160105/sf-doom_health_gathering_supreme
 
 Referencias del framework y del entorno (no incluidas en la model card, aportadas como contexto):
 

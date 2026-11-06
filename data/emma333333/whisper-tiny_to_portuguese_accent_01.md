@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny de OpenAI, publicado por el usuario emma333333 en HuggingFace. El modelo resultante es un sistema de reconocimiento automatico del habla (ASR) entrenado sobre el dataset `portuguese_english`, con el objetivo declarado de adaptar el modelo base al acento portugues en transcripciones de audio en ingles. El nombre del repositorio sugiere esa intencion, aunque la model card no documenta explicitamente la naturaleza del dataset ni el procedimiento de adaptacion.
+Whisper tiny Portuguese es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny de OpenAI, publicado por el usuario emma333333 en Hugging Face. El modelo resultante es un sistema de reconocimiento automatico del habla (ASR) entrenado sobre el dataset `portuguese_english`, con el objetivo declarado de adaptar el modelo base al acento portugues en transcripciones de audio en ingles. El nombre del repositorio sugiere esa intencion, aunque la model card no documenta explicitamente la naturaleza del dataset ni el procedimiento de adaptacion.
 
 Se trata de un modelo de muy pequeno tamano: 37.760.640 parametros (aproximadamente 37,8 millones), lo que lo situa en la gama mas ligera de la familia Whisper. La arquitectura es la de Whisper tiny, un transformer encoder-decoder con atencion estandar, disenado para transcripcion de audio a texto. El contexto de audio esta limitado a las ventanas de 30 segundos tipicas de Whisper, y el vocabulario y el tokenizador son los del modelo base.
 
@@ -25,7 +25,7 @@ Su relevancia es limitada: se publica como un experimento de ajuste fino con lic
 
 El modelo parte de openai/whisper-tiny, un transformer encoder-decoder con atencion multi-cabeza estandar, sin mecanismos de atencion lineal ni decodificacion especulativa. El encoder procesa espectrogramas mel de 80 canales en ventanas de 30 segundos y el decoder genera tokens de texto de forma autorregresiva. El ajuste fino conserva la arquitectura y el tokenizador del modelo base; solo se actualizan los pesos.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace sobre el dataset `portuguese_english` (split de test para evaluacion), con los siguientes hiperparametros declarados: learning rate 1e-05, batch de entrenamiento 2, batch de evaluacion 1, semilla 42, optimizador AdamW fused (betas 0.9 y 0.999, epsilon 1e-08), scheduler lineal con 500 pasos de warmup y 2000 pasos totales. Se registran dos puntos de control: en el paso 1000 (epoch 0,9217) con perdida de validacion 0,2724 y WER 12,6375, y en el paso 2000 (epoch 1,8433) con perdida de validacion 0,2546 y WER 11,8360. No se documenta el volumen de datos, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO (en ASR no son habituales).
+El entrenamiento se realizo con el `Trainer` de Hugging Face sobre el dataset `portuguese_english` (split de test para evaluacion), con los siguientes hiperparametros declarados: learning rate 1e-05, batch de entrenamiento 2, batch de evaluacion 1, semilla 42, optimizador AdamW fused (betas 0.9 y 0.999, epsilon 1e-08), scheduler lineal con 500 pasos de warmup y 2000 pasos totales. Se registran dos puntos de control: en el paso 1000 (epoch 0,9217) con perdida de validacion 0,2724 y WER 12,6375, y en el paso 2000 (epoch 1,8433) con perdida de validacion 0,2546 y WER 11,8360. No se documenta el volumen de datos, la composicion exacta del dataset ni si hubo etapas de RLHF o DPO (en ASR no son habituales).
 
 ## Capacidades
 
@@ -77,10 +77,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| emma333333/whisper-tiny_to_portuguese_accent_01 | 37,8 M | 30 s | 11,8360 (Portuguese English, test) | apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-tiny | 39 M | 30 s | no disponible en esta ficha (referencia base) | apache-2.0 | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| emma333333/whisper-tiny_to_portuguese_accent_01 | 37,8 M | 30 s | 11,8360 (Portuguese English, test) | apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-tiny | 39 M | 30 s | no disponible en esta ficha (referencia base) | apache-2.0 | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparacion directa de WER con los modelos base no es posible con los datos disponibles, ya que no se han proporcionado sus resultados sobre el mismo dataset. El modelo aqui descrito solo declara resultados sobre `portuguese_english`, un dataset no estandar, por lo que las cifras no son directamente comparables con las del leaderboard abierto de ASR.
 
@@ -98,9 +98,9 @@ La comparacion directa de WER con los modelos base no es posible con los datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emma333333/whisper-tiny_to_portuguese_accent_01
+- Modelo en Hugging Face: https://huggingface.co/emma333333/whisper-tiny_to_portuguese_accent_01
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper
 - Documentacion de transformers para ASR: https://huggingface.co/docs/transformers/tasks/asr
-- Leaderboard abierto de ASR de HuggingFace: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Leaderboard abierto de ASR de Hugging Face: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

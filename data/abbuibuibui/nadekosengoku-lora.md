@@ -71,9 +71,9 @@ El autor advierte que en cuerpo completo conviene escribir explicitamente "twint
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NadekoSengoku-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | HuggingFace y ModelScope |
-| LoRA de personaje SDXL genericos | LoRA de personaje | SDXL 1.0 o derivados | variable | no aplica | variable (muchos sin licencia clara) | HuggingFace, Civitai |
-| Modelo base waiIllustriousSDXL v17 | Checkpoint completo SDXL | SDXL | ~2.6B (UNet + text encoders) | no aplica | variable segun publicacion | HuggingFace, Civitai |
+| NadekoSengoku-Lora (este) | LoRA de personaje | waiIllustriousSDXL v17 | rango 64, alpha 32 | no aplica | creativeml-openrail-m | Hugging Face y ModelScope |
+| LoRA de personaje SDXL genericos | LoRA de personaje | SDXL 1.0 o derivados | variable | no aplica | variable (muchos sin licencia clara) | Hugging Face, Civitai |
+| Modelo base waiIllustriousSDXL v17 | Checkpoint completo SDXL | SDXL | ~2.6B (UNet + text encoders) | no aplica | variable segun publicacion | Hugging Face, Civitai |
 
 No se dispone de datos de benchmarks que permitan una comparacion cuantitativa con otros LoRA de personaje. La comparacion relevante es estructural: frente a LoRA genericos, este aporta checkpoints intermedios, hash SHA-256 del E6, dataset publico y evaluacion documentada, pero su utilidad queda restringida al modelo base concreto para el que fue entrenado.
 
@@ -90,8 +90,8 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/NadekoSengoku-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/NadekoSengoku-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/NadekoSengoku-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/NadekoSengoku-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/NadekoSengoku-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/NadekoSengoku-Dataset
 - Notas de evaluacion en chino: `evaluation/横向测评记录.md` dentro del repositorio

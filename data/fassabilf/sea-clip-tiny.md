@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEA-CLIP-Tiny es un modelo de embeddings texto-imagen de tipo CLIP con 46,11 millones de parametros, publicado por el usuario fassabilf en HuggingFace bajo licencia MIT. Se trata de un modelo de doble torre destilado a partir de MetaCLIP2-ViT-B-16-worldwide, disenado especificamente para ingles y siete idiomas del sudeste asiatico (indonesio, javanes, sundanés, malayo, tailandes, vietnamita y birmano). Su tarea principal es la clasificacion de imagenes zero-shot y la recuperacion cruzada texto-imagen, no la generacion de texto.
+SEA-CLIP-Tiny es un modelo de embeddings texto-imagen de tipo CLIP con 46,11 millones de parametros, publicado por el usuario fassabilf en Hugging Face bajo licencia MIT. Se trata de un modelo de doble torre destilado a partir de MetaCLIP2-ViT-B-16-worldwide, disenado especificamente para ingles y siete idiomas del sudeste asiatico (indonesio, javanes, sundanés, malayo, tailandes, vietnamita y birmano). Su tarea principal es la clasificacion de imagenes zero-shot y la recuperacion cruzada texto-imagen, no la generacion de texto.
 
 El modelo responde a un problema concreto: la mayoria de los CLIP disponibles estan entrenados con datos predominantemente anglosajones y rinden mal en idiomas del sudeste asiatico, que suelen estar infrarrepresentados en los corpus web. SEA-CLIP-Tiny se entrena con 12,72 millones de pares imagen-texto que incluyen fuentes especificas de la region (CulturalGround-OE-filt, Mammoth-VL-SEA) y logra, segun su model card, la mejor media entre los estudiantes compactos evaluados en el paper, con un R@10 promedio de 42,2 en los siete idiomas SEA.
 
@@ -19,7 +19,7 @@ Su relevancia actual radica en la relacion tamano-rendimiento: mejora el R@10 pr
 | Tipos de cuantizacion | no disponible en la informacion proporcionada |
 | Idiomas soportados | en, id, jv, su, ms, th, vi, my |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repo de 0,2 GB en HuggingFace, cargable mediante la libreria open_clip) |
+| Formato de pesos | no disponible (repo de 0,2 GB en Hugging Face, cargable mediante la libreria open_clip) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval o
 
 | Modelo | Parametros | Contexto | Idiomas | R@10 promedio SEA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SEA-CLIP-Tiny | 46,11 M | 77 tokens | en, id, jv, su, ms, th, vi, my | 42,2 | MIT | HuggingFace y GitHub |
+| SEA-CLIP-Tiny | 46,11 M | 77 tokens | en, id, jv, su, ms, th, vi, my | 42,2 | MIT | Hugging Face y GitHub |
 | MobileCLIP2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible; la model card indica que SEA-CLIP-Tiny lo supera en 12,1 puntos con un 38,4 % menos de parametros y menor latencia CPU | no disponible | no disponible |
 | MetaCLIP2-ViT-B-16-worldwide | no disponible (es el modelo profesor de la destilacion) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,8 +101,8 @@ La informacion proporcionada no incluye las especificaciones completas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny
+- Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny
 - Repositorio de entrenamiento y evaluacion: https://github.com/fassabilf/sea-clip-tiny
-- Configuracion de entrenamiento: archivo `params.txt` incluido en el repositorio de HuggingFace
+- Configuracion de entrenamiento: archivo `params.txt` incluido en el repositorio de Hugging Face
 - Cita del paper: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, Asian Conference on Computer Vision (ACCV), 2026 (sin URL disponible)
 - Nota sobre la busqueda web: los resultados devueltos no guardan relacion con el modelo (listados de restaurantes indios en Seattle), por lo que no se ha podido incorporar informacion adicional de fuentes externas.

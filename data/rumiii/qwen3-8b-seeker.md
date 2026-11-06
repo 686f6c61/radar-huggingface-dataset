@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-8B-Seeker es un ajuste fino del modelo Qwen3-8B de Alibaba, publicado por el usuario Rumiii en HuggingFace. El modelo se ha entrenado específicamente como agente de respuesta a preguntas multi-salto (multi-hop QA), siguiendo un protocolo de etiquetas que estructura el razonamiento en fases explícitas: `<think>`, `<plan>`, `<wiki_search>`, `<observation>`, `<reflection>` y `<answer>`. El objetivo es que el modelo aprenda a planificar búsquedas, formular consultas a un recuperador externo, reflexionar sobre las observaciones recibidas y componer una respuesta final fundamentada.
+Qwen3-8B-Seeker es un ajuste fino del modelo Qwen3-8B de Alibaba, publicado por el usuario Rumiii en Hugging Face. El modelo se ha entrenado específicamente como agente de respuesta a preguntas multi-salto (multi-hop QA), siguiendo un protocolo de etiquetas que estructura el razonamiento en fases explícitas: `<think>`, `<plan>`, `<wiki_search>`, `<observation>`, `<reflection>` y `<answer>`. El objetivo es que el modelo aprenda a planificar búsquedas, formular consultas a un recuperador externo, reflexionar sobre las observaciones recibidas y componer una respuesta final fundamentada.
 
 El modelo parte de la arquitectura transformer densa de Qwen3-8B, con 8.190.735.360 parámetros totales, y se ha obtenido mediante QLoRA con rango 32 sobre una muestra aleatoria de 3.000 ejemplos del dataset PersonalAILab/AFM-MHQA-Agent-SFT-Dataset, más 72 muestras de identidad. El entrenamiento se realizó en una única GPU T4 con Unsloth, durante una época, en modo no-thinking (`enable_thinking=False`), y los pesos resultantes se fusionaron a fp16.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B-Seeker | 8,19 B | No disponible | Agente multi-hop QA con protocolo de etiquetas | Apache 2.0 | HuggingFace, 0 descargas |
+| Qwen3-8B-Seeker | 8,19 B | No disponible | Agente multi-hop QA con protocolo de etiquetas | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen/Qwen3-8B (base) | 8,19 B | Contexto nativo de Qwen3-8B (no confirmado en esta ficha) | Modelo generalista con tool calling nativo y modo thinking | Apache 2.0 | Ampliamente disponible |
 | Alternativas de agente QA de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -87,7 +87,7 @@ La comparación directa más relevante es con el propio Qwen3-8B: el ajuste sacr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rumiii/Qwen3-8B-Seeker
+- Modelo en Hugging Face: https://huggingface.co/Rumiii/Qwen3-8B-Seeker
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/PersonalAILab/AFM-MHQA-Agent-SFT-Dataset
 - Unsloth (librería de ajuste): https://github.com/unslothai/unsloth

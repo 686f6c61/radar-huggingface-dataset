@@ -111,7 +111,7 @@ No se han publicado en la información disponible métricas de precisión que pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devendradhakad/autodroid-litert-community-Kokoro-G2P-en-US
+- Modelo en Hugging Face: https://huggingface.co/devendradhakad/autodroid-litert-community-Kokoro-G2P-en-US
 - Kokoro-82M en LiteRT: https://huggingface.co/litert-community/Kokoro-82M
 - Documentación de LiteRT: https://ai.google.dev/edge/litert
 - Guía de medición de rendimiento de LiteRT (`benchmark_model`): https://ai.google.dev/edge/litert/models/measurement

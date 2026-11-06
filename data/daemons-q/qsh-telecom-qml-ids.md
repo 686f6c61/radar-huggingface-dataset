@@ -97,7 +97,7 @@ Advertencia del autor: el resultado de IACR ePrint 2026/1282 corresponde a un pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemons-Q/qsh-telecom-qml-ids
+- Modelo en Hugging Face: https://huggingface.co/Daemons-Q/qsh-telecom-qml-ids
 - Repositorio del proyecto: https://github.com/Quantum-Daemons/QSMPC-QKD-QHE-AI-Hybrid
 - Paper de referencia de clases y datos: https://arxiv.org/abs/2509.14282 (Al-Kuwari et al., IET Quantum Communication 7(1), e70028, DOI 10.1049/qtc2.70028)
 - Paper citado y retirado por sus autores (evaluación insuficiente): https://arxiv.org/abs/2512.05069

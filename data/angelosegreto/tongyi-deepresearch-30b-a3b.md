@@ -100,7 +100,7 @@ No se dispone de datos suficientes para comparar rendimiento con modelos competi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ANGELOSEGRETO/Tongyi-DeepResearch-30B-A3B
+- Repositorio en Hugging Face: https://huggingface.co/ANGELOSEGRETO/Tongyi-DeepResearch-30B-A3B
 - Repositorio oficial de codigo (Alibaba-NLP/DeepResearch): https://github.com/Alibaba-NLP/DeepResearch
 - Blog tecnico del modelo: https://tongyi-agent.github.io/blog/introducing-tongyi-deep-research
 - Cita recomendada (BibTeX, segun el autor):

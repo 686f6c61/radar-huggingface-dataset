@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `umi-arena-smol-s029615-timed16-exp-e281c425c28f`, publicado por el usuario HongWeiXu en HuggingFace, es una política robótica derivada de SmolVLA (etapa de entrenamiento 29615) que introduce una variante experimental de remuestreo temporal de acciones. No se ha reentrenado: reutiliza los pesos y la normalización del checkpoint `HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45` en la revisión `94fd3a482a622e92c7da1f3139ccad5cc1351e96`. Su única diferencia funcional es la lógica de avance temporal en el momento de la inferencia, que devuelve 16 filas de acción por petición.
+El modelo `umi-arena-smol-s029615-timed16-exp-e281c425c28f`, publicado por el usuario HongWeiXu en Hugging Face, es una política robótica derivada de SmolVLA (etapa de entrenamiento 29615) que introduce una variante experimental de remuestreo temporal de acciones. No se ha reentrenado: reutiliza los pesos y la normalización del checkpoint `HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45` en la revisión `94fd3a482a622e92c7da1f3139ccad5cc1351e96`. Su única diferencia funcional es la lógica de avance temporal en el momento de la inferencia, que devuelve 16 filas de acción por petición.
 
 La propuesta del autor es un esquema de "time advance" variable: 2.0 durante los primeros 10 segundos de vida de una instancia de `Policy`, decaimiento smoothstep hasta 1.5 entre los segundos 10 y 20, y 1.5 a partir de ahí. El temporizador arranca en la primera inferencia real (excluyendo el warmup del constructor), incluye esperas y no se reinicia con cambios de prompt, reconexiones ni periodos de inactividad. Se acompaña de límites por intervalo de salida de 0.03 m de longitud de trayectoria y 0.15 rad de arco angular por mano, reduciendo el avance temporal si se exceden.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| umi-arena-smol-s029615-timed16-exp (este) | 450.046.176 | no disponible | SmolVLA con remuestreo temporal experimental | no disponible | HuggingFace, 0 descargas |
-| HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45 | no disponible | no disponible | SmolVLA base, mismos pesos y normalización | no disponible | HuggingFace |
+| umi-arena-smol-s029615-timed16-exp (este) | 450.046.176 | no disponible | SmolVLA con remuestreo temporal experimental | no disponible | Hugging Face, 0 descargas |
+| HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45 | no disponible | no disponible | SmolVLA base, mismos pesos y normalización | no disponible | Hugging Face |
 | Otros modelos SmolVLA de lerobot | no disponible | no disponible | Políticas VLA para robótica | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada.
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HongWeiXu/umi-arena-smol-s029615-timed16-exp-e281c425c28f
+- Hugging Face del modelo: https://huggingface.co/HongWeiXu/umi-arena-smol-s029615-timed16-exp-e281c425c28f
 - Checkpoint base citado: https://huggingface.co/HongWeiXu/umi-arena-smolvla-full-s029615-5e103c24cf45
 - Revisión del checkpoint base: 94fd3a482a622e92c7da1f3139ccad5cc1351e96
 - Archivo de validación experimental: `experimental_validation.json` (incluido en el repositorio del modelo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Improving CA-LoRA checkpoints es una colección de adaptadores LoRA experimentales para Stable Diffusion XL (SDXL) publicada por el usuario chs35 en HuggingFace. No se trata de un modelo generativo autónomo, sino de un conjunto de pesos auxiliares que modifican el comportamiento del modelo base `stabilityai/stable-diffusion-xl-base-1.0` para la generación de imágenes de escenas urbanas del dataset Cityscapes. Su interés es fundamentalmente investigador: documenta la reproducción y extensión del método CA-LoRA (Concept-Aware LoRA), que selecciona únicamente cabezas de atención individuales (en lugar de matrices de proyección completas) para adaptar el modelo.
+Improving CA-LoRA checkpoints es una colección de adaptadores LoRA experimentales para Stable Diffusion XL (SDXL) publicada por el usuario chs35 en Hugging Face. No se trata de un modelo generativo autónomo, sino de un conjunto de pesos auxiliares que modifican el comportamiento del modelo base `stabilityai/stable-diffusion-xl-base-1.0` para la generación de imágenes de escenas urbanas del dataset Cityscapes. Su interés es fundamentalmente investigador: documenta la reproducción y extensión del método CA-LoRA (Concept-Aware LoRA), que selecciona únicamente cabezas de atención individuales (en lugar de matrices de proyección completas) para adaptar el modelo.
 
 La innovación principal es el denominado *head slicing*: en lugar de aplicar LoRA sobre toda una matriz de proyección de atención, cada adaptador modifica solo aproximadamente el 2 % de las cabezas de atención que una medición de atribución de conceptos (CA) identifica como relevantes en un paso de difusión concreto. El repositorio contiene diez ejecuciones experimentales que cubren distintas combinaciones de criterio de selección temporal (t = 81, t = 41, t = 1, multi-t) y eje conceptual (estilo o punto de vista), además de dos controles (cabezas aleatorias y LoRA completo).
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Improving CA-LoRA checkpoints | LoRA head-sliced sobre SDXL | no disponible (adaptador) | no aplica | openrail++ | HuggingFace, requiere librería `calora` |
+| Improving CA-LoRA checkpoints | LoRA head-sliced sobre SDXL | no disponible (adaptador) | no aplica | openrail++ | Hugging Face, requiere librería `calora` |
 | LoRA estándar para SDXL | Adaptador LoRA completo | no disponible | no aplica | variable según autor | Amplia, compatible con `peft` y `diffusers` |
-| SDXL base | Modelo de difusión completo | no disponible en la información | no aplica | openrail++ | HuggingFace, `diffusers` |
+| SDXL base | Modelo de difusión completo | no disponible en la información | no aplica | openrail++ | Hugging Face, `diffusers` |
 | CA-LoRA original (paper) | LoRA con selección CA | no disponible | no aplica | no disponible | No disponible en la información |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/chs35/improving-ca-lora-checkpoints
+- Hugging Face del modelo: https://huggingface.co/chs35/improving-ca-lora-checkpoints
 - Repositorio de artefactos y mediciones CA: https://huggingface.co/datasets/chs35/improving-ca-lora-artifacts
 - Revisión de la ejecución anterior (split completo): https://huggingface.co/chs35/improving-ca-lora-checkpoints/tree/db005e2c124b6666c27b8a788cd5a1f6c1f3f080
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

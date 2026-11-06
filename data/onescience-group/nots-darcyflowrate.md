@@ -6,7 +6,7 @@ NOTS-DarcyFlowRate es un paquete de reproduccion del experimento de caudales de 
 
 El interes practico es acotado y muy especifico: sirve para estudiar y reproducir optimizacion secuencial en espacios de funciones con operadores neuronales, no para generacion de texto ni tareas de NLP. La model card es transparente sobre el alcance: la reproduccion obtiene un regret medio final de 0,289031 +/- 0,016963 frente al 0,012 +/- 0,001 de la Tabla 1 del articulo, y un error relativo L2 medio de 0,339917 en el campo de presion de test. Es, por tanto, un intento documentado de reproduccion, no una reclamacion de precision equivalente al paper.
 
-El repositorio de HuggingFace pesa 0,0 GB (solo contiene el checkpoint y scripts), tiene 82 descargas y 0 likes en el momento de la consulta, y se distribuye bajo licencia "other". El entrenamiento original se ejecuto en una DCU con PyTorch; no se reclama ejecucion completa del pipeline en CPU.
+El repositorio de Hugging Face pesa 0,0 GB (solo contiene el checkpoint y scripts), tiene 82 descargas y 0 likes en el momento de la consulta, y se distribuye bajo licencia "other". El entrenamiento original se ejecuto en una DCU con PyTorch; no se reclama ejecucion completa del pipeline en CPU.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio de HuggingFace pesa 0,0 GB (solo contiene el checkpoint y scripts
 
 La model card identifica el modelo con el tag `nots_darcy_fno`, lo que apunta a una variante de Fourier Neural Operator (FNO) para el problema de Darcy. La tarea es un mapeo campo a campo: dada una permeabilidad en rejilla de 16x16, el operador predice el campo de presion correspondiente de 16x16. Sobre esa prediccion se construye un objetivo de caudal total negativo que alimenta un esquema de muestreo de Thompson en espacio de funciones para seleccion secuencial de consultas.
 
-Los datos de entrenamiento no se alojan en HuggingFace; la model card remite al dataset OneScience/NOTS-Darcy-16 en ModelScope, con 1.000 pares de entrenamiento (`data/darcy_train_16.pt`) y 50 pares de test (`data/darcy_test_16.pt`), originalmente del repositorio de los autores de NOTS (csiro-funml/nots) y redistribuidos bajo licencia MIT acompanante. El entrenamiento reproducible ejecuta diez semillas configuradas con 300 consultas por semilla en una DCU con PyTorch. El checkpoint publicado modifica solo la huella de configuracion para rutas portables de datos y salida; los tensores de parametros son identicos a la ejecucion original. Se documentan dos SHA256: el del checkpoint publicado (`dac0b155...31f7`) y el del checkpoint de entrenamiento original (`2cf139f9...36b2`). No se detallan en la informacion proporcionada ni el numero de tokens (no aplica), ni la composicion exacta del dataset mas alla del recuento de pares, ni si hubo RLHF/DPO (no procede en este dominio).
+Los datos de entrenamiento no se alojan en Hugging Face; la model card remite al dataset OneScience/NOTS-Darcy-16 en ModelScope, con 1.000 pares de entrenamiento (`data/darcy_train_16.pt`) y 50 pares de test (`data/darcy_test_16.pt`), originalmente del repositorio de los autores de NOTS (csiro-funml/nots) y redistribuidos bajo licencia MIT acompanante. El entrenamiento reproducible ejecuta diez semillas configuradas con 300 consultas por semilla en una DCU con PyTorch. El checkpoint publicado modifica solo la huella de configuracion para rutas portables de datos y salida; los tensores de parametros son identicos a la ejecucion original. Se documentan dos SHA256: el del checkpoint publicado (`dac0b155...31f7`) y el del checkpoint de entrenamiento original (`2cf139f9...36b2`). No se detallan en la informacion proporcionada ni el numero de tokens (no aplica), ni la composicion exacta del dataset mas alla del recuento de pares, ni si hubo RLHF/DPO (no procede en este dominio).
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NOTS-DarcyFlowRate | no disponible | no aplica (16x16) | regret 0,289031 +/- 0,016963; L2 0,339917 | other | HuggingFace |
+| NOTS-DarcyFlowRate | no disponible | no aplica (16x16) | regret 0,289031 +/- 0,016963; L2 0,339917 | other | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -80,7 +80,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 - El regret reproducido (0,289031) esta muy lejos del reportado en el paper (0,012 +/- 0,001); la model card lo declara explicitamente como intento de reproduccion y no como reclamacion de precision.
 - El error relativo L2 en test es alto (0,339917), lo que limita su uso como surrogate de alta fidelidad.
 - Dominio y resolucion muy restringidos: rejillas de 16x16 y problema de Darcy; no hay evidencia de generalizacion a otras resoluciones o fisicas.
-- El dataset no se aloja en HuggingFace; hay que descargarlo de ModelScope, lo que anade una dependencia externa.
+- El dataset no se aloja en Hugging Face; hay que descargarlo de ModelScope, lo que anade una dependencia externa.
 - La ejecucion completa del pipeline no esta validada en CPU; se requiere GPU/DCU.
 - Licencia "other": no se detallan los terminos exactos en la informacion proporcionada, por lo que el uso comercial debe verificarse antes de adoptarlo.
 - El checkpoint publicado difiere del original en la huella de configuracion (rutas), aunque los tensores de parametros son identicos; el hash archivado en `results/inference_metrics.json` corresponde al original y se regenera al reejecutar inferencia.
@@ -88,7 +88,7 @@ No se han proporcionado datos de modelos comparables en la informacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/NOTS-DarcyFlowRate
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/NOTS-DarcyFlowRate
 - Paper: https://arxiv.org/abs/2506.21894
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/OneScience/NOTS-Darcy-16
 - Datos originales de los autores de NOTS: https://github.com/csiro-funml/nots/tree/main/data

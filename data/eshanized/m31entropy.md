@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eshanized/M31Entropy` es una publicación en HuggingFace del autor `eshanized`, con licencia MIT. La model card disponible en la plataforma no contiene ninguna descripción técnica ni documentación del modelo: únicamente se indica la licencia. En el momento de la consulta, el modelo no tiene descargas y cuenta con un único "like", lo que sugiere que se trata de una publicación reciente o experimental sin difusión.
+El modelo `eshanized/M31Entropy` es una publicación en Hugging Face del autor `eshanized`, con licencia MIT. La model card disponible en la plataforma no contiene ninguna descripción técnica ni documentación del modelo: únicamente se indica la licencia. En el momento de la consulta, el modelo no tiene descargas y cuenta con un único "like", lo que sugiere que se trata de una publicación reciente o experimental sin difusión.
 
 No se ha podido encontrar información técnica adicional en la búsqueda web. El repositorio GitHub `M31A` del mismo autor describe un agente de codificación nativo para terminal, con un flujo de trabajo en seis fases y rollback con git, pero no hay evidencia de que esté relacionado con `M31Entropy` más allá del autor común. Por tanto, no es posible caracterizar la arquitectura, el tamaño, la ventana de contexto ni las capacidades de este modelo a partir de la información disponible.
 
@@ -21,7 +21,7 @@ No se ha podido encontrar información técnica adicional en la búsqueda web. E
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card publicada en HuggingFace no incluye ninguna de estas especificaciones.
+No se dispone de información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. La model card publicada en Hugging Face no incluye ninguna de estas especificaciones.
 
 ## Capacidades
 
@@ -53,4 +53,4 @@ No disponible. Al no existir información sobre la arquitectura, tamaño o rendi
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/eshanized/M31Entropy](https://huggingface.co/eshanized/M31Entropy)
+- Hugging Face: [https://huggingface.co/eshanized/M31Entropy](https://huggingface.co/eshanized/M31Entropy)

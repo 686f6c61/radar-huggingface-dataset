@@ -2,9 +2,9 @@
 
 ## Resumen
 
-dev-S2 es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario bimabk, entrenado sobre el modelo base unsloth/gemma-2-9b-it. No se trata por tanto de un modelo completo con pesos independientes, sino de un conjunto de matrices de bajo rango que deben cargarse junto al Gemma 2 9B Instruct original para poder ejecutar inferencia. El repositorio ocupa 1,8 GB, un tamano muy superior al de un adaptador LoRA convencional sobre un modelo de 9 000 millones de parametros, lo que apunta a un rango elevado o a la inclusion de modulos de embeddings y cabeza de salida entre los parametros entrenados, aunque la model card no confirma ninguno de estos extremos.
+dev-S2 es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario bimabk, entrenado sobre el modelo base unsloth/gemma-2-9b-it. No se trata por tanto de un modelo completo con pesos independientes, sino de un conjunto de matrices de bajo rango que deben cargarse junto al Gemma 2 9B Instruct original para poder ejecutar inferencia. El repositorio ocupa 1,8 GB, un tamano muy superior al de un adaptador LoRA convencional sobre un modelo de 9 000 millones de parametros, lo que apunta a un rango elevado o a la inclusion de modulos de embeddings y cabeza de salida entre los parametros entrenados, aunque la model card no confirma ninguno de estos extremos.
 
-La relevancia de esta ficha es fundamentalmente critica: la model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]", cero descargas, cero "likes", licencia no declarada y sin resultados de evaluacion. El autor no documenta el dataset de entrenamiento, los hiperparametros, el proposito del ajuste ni el proceso de alineacion. La unica informacion tecnica fiable es la procedente del modelo base, Gemma 2 9B Instruct de Google DeepMind, un transformer decoder-only de 9 240 millones de parametros con 8 192 tokens de contexto y atencion alterna con ventana deslizante.
+La relevancia de esta ficha es fundamentalmente critica: la model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]", cero descargas, cero "likes", licencia no declarada y sin resultados de evaluacion. El autor no documenta el dataset de entrenamiento, los hiperparametros, el proposito del ajuste ni el proceso de alineacion. La unica informacion tecnica fiable es la procedente del modelo base, Gemma 2 9B Instruct de Google DeepMind, un transformer decoder-only de 9 240 millones de parametros con 8 192 tokens de contexto y atencion alterna con ventana deslizante.
 
 En consecuencia, dev-S2 debe considerarse un experimento de ajuste fine-tuning sin trazabilidad: no es apto para uso en produccion tal cual y cualquier evaluacion seria exige reproducir la carga del adaptador, auditar sus pesos y validar su comportamiento frente al modelo base. Lo que sigue separa de forma explicita los datos confirmados del repositorio, los datos heredados del modelo base y las inferencias tecnicas razonables.
 
@@ -51,7 +51,7 @@ El tamano del repositorio (1,8 GB) merece atencion: un LoRA de rango moderado so
 ## Casos de uso
 
 - Experimentacion academica con PEFT: cargar el adaptador sobre Gemma 2 9B Instruct y comparar las salidas con y sin adaptador para estudiar el efecto del ajuste de bajo rango. Es el uso mas realista dado el estado del repositorio.
-- Auditoria de seguridad de artefactos de HuggingFace: inspeccionar los safetensors, verificar los modulos con delta de pesos y comprobar si el adaptador introduce comportamientos no documentados antes de cualquier despliegue.
+- Auditoria de seguridad de artefactos de Hugging Face: inspeccionar los safetensors, verificar los modulos con delta de pesos y comprobar si el adaptador introduce comportamientos no documentados antes de cualquier despliegue.
 - Reproduccion de pipelines de Unsloth: la etiqueta del modelo base apunta a Unsloth, de modo que el adaptador sirve como caso de prueba para validar flujos de entrenamiento y carga de LoRA con esa libreria.
 - Prototipado interno de asistentes conversacionales: con la advertencia de validar primero el comportamiento, el adaptador puede emplearse en entornos de desarrollo cerrados para generar respuestas de chat multilingues usando los 8 192 tokens de contexto del modelo base.
 - Generacion asistida de codigo en pruebas de concepto: el modelo base maneja codigo de forma razonable para su tamano, y el adaptador puede evaluarse como posible mejora en un dominio concreto, siempre que se mida contra el modelo base sin ajuste.
@@ -88,7 +88,7 @@ No hay datos de rendimiento del adaptador, por lo que la comparacion se limita a
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la totalidad de los campos son la plantilla por defecto de HuggingFace. No hay informacion sobre proposito, datos, hiperparametros ni evaluacion, lo que impide conocer que se entreno ni con que fin.
+- Model card vacia: la totalidad de los campos son la plantilla por defecto de Hugging Face. No hay informacion sobre proposito, datos, hiperparametros ni evaluacion, lo que impide conocer que se entreno ni con que fin.
 - Licencia no declarada: al no figurar licencia en el repositorio, no existe autorizacion explicita de uso, y el modelo base se rige por los terminos de uso de Gemma, que impiden una reutilizacion libre. Cualquier uso comercial es juridicamente arriesgado.
 - Sin evaluacion: no hay benchmarks, comparaciones con el modelo base ni pruebas de regresion. No puede afirmarse que el adaptador mejore al modelo base en ninguna tarea.
 - Riesgo de olvido catastrofico y degradacion: un ajuste LoRA sin validacion documentada puede degradar capacidades del modelo base, especialmente en idiomas distintos del ingles o en tareas fuera del dominio de ajuste.
@@ -102,7 +102,7 @@ No hay datos de rendimiento del adaptador, por lo que la comparacion se limita a
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/bimabk/dev-S2
+- Repositorio Hugging Face del adaptador: https://huggingface.co/bimabk/dev-S2
 - Modelo base declarado: https://huggingface.co/unsloth/gemma-2-9b-it
 - Modelo base oficial de Google: https://huggingface.co/google/gemma-2-9b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

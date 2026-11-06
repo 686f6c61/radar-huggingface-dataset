@@ -2,7 +2,7 @@
 
 ## Resumen
 
-psi-model es un modelo publicado en HuggingFace por USC-PSI-Lab (Universidad de Santiago de Compostela, grupo PSI Lab). El repositorio contiene pesos en formato safetensors con un tamano total de 1464,8 GB, lo que situa al modelo en la categoria de modelos de gran escala, aunque no se ha publicado informacion sobre su arquitectura concreta, numero de parametros ni configuracion de entrenamiento.
+psi-model es un modelo publicado en Hugging Face por USC-PSI-Lab (Universidad de Santiago de Compostela, grupo PSI Lab). El repositorio contiene pesos en formato safetensors con un tamano total de 1464,8 GB, lo que situa al modelo en la categoria de modelos de gran escala, aunque no se ha publicado informacion sobre su arquitectura concreta, numero de parametros ni configuracion de entrenamiento.
 
 La ficha tecnica oficial del repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion de uso. El unico contenido verificable es el identificador del modelo, el autor, el formato de pesos y el volumen del repositorio. Cualquier dato adicional sobre capacidades, entrenamiento o rendimiento no esta disponible en la informacion proporcionada.
 
@@ -68,4 +68,4 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/USC-PSI-Lab/psi-model
+- Hugging Face: https://huggingface.co/USC-PSI-Lab/psi-model

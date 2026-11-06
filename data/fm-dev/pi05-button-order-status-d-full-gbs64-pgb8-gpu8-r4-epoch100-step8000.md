@@ -84,7 +84,7 @@ No se han publicado datos comparativos en la informacion disponible. El reposito
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0.5 button_order / status_d (este checkpoint) | no disponible | no disponible | error L2 de posicion 0,04184 m (val), 0,04361 m (test); angulo 0,07271 / 0,06463 rad | no disponible | repositorio HuggingFace, 0 descargas |
+| pi0.5 button_order / status_d (este checkpoint) | no disponible | no disponible | error L2 de posicion 0,04184 m (val), 0,04361 m (test); angulo 0,07271 / 0,06463 rad | no disponible | repositorio Hugging Face, 0 descargas |
 | pi0.5 Base (referencia del ecosistema openpi) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Variante Baseline del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Variante Uniform32 del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -107,6 +107,6 @@ No se han publicado datos comparativos en la informacion disponible. El reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fm-dev/pi05-button-order-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step8000
+- Modelo en Hugging Face: https://huggingface.co/fm-dev/pi05-button-order-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step8000
 - La busqueda web realizada no devolvio ningun resultado relevante: todos los enlaces recuperados corresponden a foros y articulos sobre compras y envios de Amazon (en frances, chino y aleman) sin relacion con el modelo. No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales que enlazar.
 - Artefactos internos del repositorio citados en la model card (no enlazables desde aqui): `training_config.json`, `assets/policy_metadata.json`, `dataset_manifest.json`, `requirements.txt`, `load_model.py` y el directorio `history_encoder/`.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shiki42/ctr-archive-e703-step41344 es un checkpoint archivado publicado por el usuario Shiki42 en HuggingFace. Se trata de un artefacto del pipeline de robotics etiquetado como "ctr" y "archival-checkpoint", correspondiente al paso 41344 de un entrenamiento denominado E703. El repositorio contiene pesos en formato safetensors con un total de 270.780.332 parametros y un tamano de 1,1 GB.
+Shiki42/ctr-archive-e703-step41344 es un checkpoint archivado publicado por el usuario Shiki42 en Hugging Face. Se trata de un artefacto del pipeline de robotics etiquetado como "ctr" y "archival-checkpoint", correspondiente al paso 41344 de un entrenamiento denominado E703. El repositorio contiene pesos en formato safetensors con un total de 270.780.332 parametros y un tamano de 1,1 GB.
 
 Segun la propia model card, es un checkpoint de entrenamiento interrumpido y por debajo del presupuesto de entrenamiento registrado. El archivo se limita a los parametros de inferencia y al estado real de normalizacion y procesador; no incluye optimizador ni estado del generador de numeros aleatorios (RNG). La tarjeta indica ademas que el archivo no establece identidad de resultado de paper ni aprobacion de auditoria, lo que lo situa como un artefacto de preservacion mas que como un modelo listo para produccion.
 
@@ -74,7 +74,7 @@ No disponible. No es posible establecer una comparativa fiable porque la model c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shiki42/ctr-archive-e703-step41344 | 270.780.332 | no disponible | no disponible | publico en HuggingFace |
+| Shiki42/ctr-archive-e703-step41344 | 270.780.332 | no disponible | no disponible | publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,6 +90,6 @@ No disponible. No es posible establecer una comparativa fiable porque la model c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shiki42/ctr-archive-e703-step41344
-- Fichero de procedencia citado en la model card: archive-provenance.json (ubicado en el propio repositorio de HuggingFace).
+- Hugging Face: https://huggingface.co/Shiki42/ctr-archive-e703-step41344
+- Fichero de procedencia citado en la model card: archive-provenance.json (ubicado en el propio repositorio de Hugging Face).
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web no devolvio ningun enlace relacionado con este modelo.

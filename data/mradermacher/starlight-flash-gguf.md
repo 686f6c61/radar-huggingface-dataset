@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Starlight-Flash es un modelo de lenguaje de aproximadamente 9.200 millones de parametros, publicado originalmente por el usuario Sethblocks en HuggingFace bajo el identificador `Sethblocks/Starlight-Flash`. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF realizada por mradermacher, un conocido distribuidor de cuantizaciones de la comunidad, que la publico el 5 de noviembre de 2026. El modelo base esta etiquetado como `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque la model card del repositorio cuantizado no aporta detalles sobre la arquitectura interna ni sobre el proceso de entrenamiento.
+Starlight-Flash es un modelo de lenguaje de aproximadamente 9.200 millones de parametros, publicado originalmente por el usuario Sethblocks en Hugging Face bajo el identificador `Sethblocks/Starlight-Flash`. La ficha que nos ocupa corresponde a la version cuantizada en formato GGUF realizada por mradermacher, un conocido distribuidor de cuantizaciones de la comunidad, que la publico el 5 de noviembre de 2026. El modelo base esta etiquetado como `qwen3_5`, lo que sugiere que deriva de la familia Qwen 3.5, aunque la model card del repositorio cuantizado no aporta detalles sobre la arquitectura interna ni sobre el proceso de entrenamiento.
 
 El repositorio proporciona un conjunto de cuantizaciones estaticas en formato GGUF que abarcan desde Q2_K (4,0 GB) hasta f16 (18,5 GB), pasando por Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 e IQ4_XS. El autor indica que las cuantizaciones ponderadas o con imatrix no estan disponibles en el momento de la publicacion, y que no tiene previsto generarlas salvo peticion explicita de la comunidad.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Starlight-Flash (este) | ~9,2 B | no disponible | no disponible | GGUF / safetensors | HuggingFace |
-| Qwen 2.5 7B | ~7,6 B | 32k-128k (segun variante) | Apache 2.0 (mayoria) | safetensors, GGUF | HuggingFace, Ollama |
-| Llama 3.1 8B | ~8,0 B | 128k | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, Ollama |
-| Mistral 7B v0.3 | ~7,2 B | 32k | Apache 2.0 | safetensors, GGUF | HuggingFace, Ollama |
+| Starlight-Flash (este) | ~9,2 B | no disponible | no disponible | GGUF / safetensors | Hugging Face |
+| Qwen 2.5 7B | ~7,6 B | 32k-128k (segun variante) | Apache 2.0 (mayoria) | safetensors, GGUF | Hugging Face, Ollama |
+| Llama 3.1 8B | ~8,0 B | 128k | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, Ollama |
+| Mistral 7B v0.3 | ~7,2 B | 32k | Apache 2.0 | safetensors, GGUF | Hugging Face, Ollama |
 
 La comparativa se limita a parametros y disponibilidad, ya que no hay datos de rendimiento ni de contexto para Starlight-Flash. Frente a alternativas consolidadas como Qwen 2.5 7B o Llama 3.1 8B, Starlight-Flash carece de documentacion publica sobre licencia, contexto y benchmarks, lo que dificulta una comparacion rigurosa.
 
@@ -89,7 +89,7 @@ La comparativa se limita a parametros y disponibilidad, ya que no hay datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Starlight-Flash-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Starlight-Flash-GGUF
 - Modelo base: https://huggingface.co/Sethblocks/Starlight-Flash
 - Pagina de descargas del autor: https://hf.tst.eu/model#Starlight-Flash-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

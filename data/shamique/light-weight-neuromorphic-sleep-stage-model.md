@@ -4,7 +4,7 @@
 
 El modelo `shamique/Light-Weight-Neuromorphic-Sleep-Stage-Model` es un clasificador automático de etapas de sueño desarrollado por shamique, orientado al análisis de señales de polisomnografía (PSG). Según los resultados de búsqueda, se enmarca en un pipeline de destilación de conocimiento donde un modelo "Teacher" (CNN + Transformer) con un coeficiente kappa de 0.636 se destila en un modelo "Student" ligero, diseñado para clasificar épocas de 30 segundos de EEG/EOG/EMG en las cinco etapas AASM (Wake, N1, N2, N3, REM). El término "neuromorphic" sugiere un enfoque inspirado en el procesamiento biológico, aunque no se especifican detalles de implementación neuromórfica en la información disponible.
 
-La relevancia actual de este modelo radica en la creciente demanda de soluciones eficientes para el análisis del sueño en entornos clínicos y de investigación, donde la clasificación manual es costosa y propensa a errores. Al ser un modelo ligero, podría desplegarse en dispositivos con recursos limitados, aunque no se proporcionan especificaciones técnicas concretas en la ficha de HuggingFace. La licencia CC-BY-4.0 permite uso comercial con atribución, lo que facilita su adopción en proyectos profesionales.
+La relevancia actual de este modelo radica en la creciente demanda de soluciones eficientes para el análisis del sueño en entornos clínicos y de investigación, donde la clasificación manual es costosa y propensa a errores. Al ser un modelo ligero, podría desplegarse en dispositivos con recursos limitados, aunque no se proporcionan especificaciones técnicas concretas en la ficha de Hugging Face. La licencia CC-BY-4.0 permite uso comercial con atribución, lo que facilita su adopción en proyectos profesionales.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia actual de este modelo radica en la creciente demanda de soluciones
 
 ## Arquitectura y entrenamiento
 
-La información disponible no detalla la arquitectura interna del modelo en HuggingFace. Sin embargo, los resultados de búsqueda indican que el pipeline asociado emplea un modelo Teacher compuesto por una CNN y un Transformer, con un coeficiente kappa de 0.636, que se destila en un modelo Student ligero. El entrenamiento se realiza sobre señales de polisomnografía (EEG, EOG, EMG) segmentadas en épocas de 30 segundos, clasificadas en las cinco etapas AASM. No se especifican el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO, ya que se trata de un problema de clasificación de señales, no de generación de texto.
+La información disponible no detalla la arquitectura interna del modelo en Hugging Face. Sin embargo, los resultados de búsqueda indican que el pipeline asociado emplea un modelo Teacher compuesto por una CNN y un Transformer, con un coeficiente kappa de 0.636, que se destila en un modelo Student ligero. El entrenamiento se realiza sobre señales de polisomnografía (EEG, EOG, EMG) segmentadas en épocas de 30 segundos, clasificadas en las cinco etapas AASM. No se especifican el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO, ya que se trata de un problema de clasificación de señales, no de generación de texto.
 
 No se dispone de información sobre innovaciones técnicas específicas del modelo en sí, como decodificación especulativa o atención lineal. El término "neuromorphic" podría implicar el uso de neuronas con disparo (spiking) o codificación temporal, pero no hay confirmación en los datos proporcionados.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shamique/Light-Weight-Neuromorphic-Sleep-Stage-Model
+- Hugging Face: https://huggingface.co/shamique/Light-Weight-Neuromorphic-Sleep-Stage-Model
 - Repositorio GitHub del pipeline: https://github.com/shamiquekhan/neuromorphic-sleep-staging-pipeline-project
 - Publicación en LinkedIn sobre el pipeline: https://www.linkedin.com/posts/shamique-khan_github-shamiquekhanneuromorphic-sleep-staging-pipeline-project-activity-7457762319180148736-w8pQ
 - Artículo relacionado (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0010482524003846

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bimbok/pedestrian-crowd-detection` es un modelo publicado en HuggingFace por el usuario `bimbok` cuya model card no contiene más información que la declaración de licencia MIT. No se especifica la tarea declarada en el pipeline de HuggingFace, ni la arquitectura, ni el conjunto de datos de entrenamiento, ni los resultados de evaluación. El propio identificador del repositorio sugiere un modelo orientado a la detección de peatones y aglomeraciones, pero esta interpretación no está confirmada por ninguna documentación publicada por el autor y debe verificarse antes de cualquier uso.
+El repositorio `bimbok/pedestrian-crowd-detection` es un modelo publicado en Hugging Face por el usuario `bimbok` cuya model card no contiene más información que la declaración de licencia MIT. No se especifica la tarea declarada en el pipeline de Hugging Face, ni la arquitectura, ni el conjunto de datos de entrenamiento, ni los resultados de evaluación. El propio identificador del repositorio sugiere un modelo orientado a la detección de peatones y aglomeraciones, pero esta interpretación no está confirmada por ninguna documentación publicada por el autor y debe verificarse antes de cualquier uso.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 likes, con fecha de creación y última actualización idénticas (2026-09-10), lo que indica que no ha recibido mantenimiento posterior ni ha sido validado por la comunidad. Las etiquetas asociadas se limitan a `license:mit` y `region:us`.
 
@@ -84,8 +84,8 @@ No disponible. No se conocen las características del modelo, por lo que no pued
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bimbok/pedestrian-crowd-detection
-- Perfil del autor en HuggingFace: https://huggingface.co/bimbok
+- Repositorio Hugging Face: https://huggingface.co/bimbok/pedestrian-crowd-detection
+- Perfil del autor en Hugging Face: https://huggingface.co/bimbok
 - Paper, blog o repositorio de código asociado: no disponible
 - Demo: no disponible
 - Los resultados de búsqueda web consultados no aportaron enlaces relevantes al modelo (únicamente páginas genéricas de buscadores).

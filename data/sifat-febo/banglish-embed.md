@@ -85,7 +85,7 @@ La ventaja de banglish-embed es su tamano reducido y su especializacion, que evi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifat-febo/banglish-embed
+- Modelo en Hugging Face: https://huggingface.co/sifat-febo/banglish-embed
 - Dataset de entrenamiento: https://huggingface.co/datasets/aplycaebous/BanglaTLit
 - Modelo companion (chatbot banglish): https://huggingface.co/sifat-febo/banglish-companion
 - Perfil del autor: https://huggingface.co/sifat-febo

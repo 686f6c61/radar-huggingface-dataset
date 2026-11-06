@@ -103,7 +103,7 @@ No se dispone de información suficiente sobre los drafters de DeepSeek para una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DaoCloud/KAT-Coder-V2.5-Dev-DFlash2-2.6B-A0.3B
+- Modelo en Hugging Face: https://huggingface.co/DaoCloud/KAT-Coder-V2.5-Dev-DFlash2-2.6B-A0.3B
 - Modelo base KAT-Coder-V2.5-Dev: https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - vLLM PR #54154 (sample_from_anchor): https://github.com/vllm-project/vllm/pull/54154
 - vLLM PR #54475 (MoE DFlash2): https://github.com/vllm-project/vllm/pull/54475

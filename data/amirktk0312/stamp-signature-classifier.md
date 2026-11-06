@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Amirktk0312/stamp-signature-classifier` es un repositorio publicado en HuggingFace por el usuario Amirktk0312. El identificador sugiere un clasificador orientado a sellos y firmas, presumiblemente para tareas de verificación o detección documental, pero se trata únicamente de una inferencia a partir del nombre: no existe model card, descripción ni documentación asociada que lo confirme.
+`Amirktk0312/stamp-signature-classifier` es un repositorio publicado en Hugging Face por el usuario Amirktk0312. El identificador sugiere un clasificador orientado a sellos y firmas, presumiblemente para tareas de verificación o detección documental, pero se trata únicamente de una inferencia a partir del nombre: no existe model card, descripción ni documentación asociada que lo confirme.
 
 El repositorio presenta un tamano de 0,0 GB, lo que indica que no contiene archivos de pesos publicados (o que estos quedan por debajo del umbral de reporte de la plataforma). No tiene pipeline declarado, ni licencia, ni idiomas, ni etiquetas descriptivas mas alla de `region:us`. Acumula 0 descargas y 1 like, y fue creado y actualizado el 15 de septiembre de 2026, con apenas un minuto de diferencia entre ambos eventos.
 
@@ -83,5 +83,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Amirktk0312/stamp-signature-classifier
+- Hugging Face: https://huggingface.co/Amirktk0312/stamp-signature-classifier
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo. Los resultados de la busqueda web recuperados no guardan relacion con este repositorio (definiciones genericas del termino "query" en fuentes en portugues).

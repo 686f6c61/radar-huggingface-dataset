@@ -6,7 +6,7 @@ El modelo `myendless/action-repre-hygon-real6-rawvlm-eef20-h50-head10k-da16e0cc`
 
 El interés del modelo es acotado y experimental: no es un modelo conversacional ni un VLM utilizable con Transformers, sino un `state_dict` completo de PyTorch que debe cargarse con el cargador nativo del benchmark. El autor advierte explícitamente de que no se trata de un modelo cerrado para RoboTwin joint14/H32 y de que el mapeo de coordenadas para despliegue aún no está validado. Es relevante ahora como artefacto reproducible de investigación en políticas visomotoras, no como componente listo para producción.
 
-La información disponible es escasa y mayoritariamente procede de la model card y de los metadatos de HuggingFace. No hay resultados de benchmarks, ni licencia declarada, ni validación de éxito en bucle cerrado para este checkpoint concreto.
+La información disponible es escasa y mayoritariamente procede de la model card y de los metadatos de Hugging Face. No hay resultados de benchmarks, ni licencia declarada, ni validación de éxito en bucle cerrado para este checkpoint concreto.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/myendless/action-repre-hygon-real6-rawvlm-eef20-h50-head10k-da16e0cc
+- Hugging Face: https://huggingface.co/myendless/action-repre-hygon-real6-rawvlm-eef20-h50-head10k-da16e0cc
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Action Representation Benchmark: no disponible (no se proporciona URL en la información)
 - Paper, blog, repositorio o demo: no disponible

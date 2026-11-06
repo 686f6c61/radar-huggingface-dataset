@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quailadev/microduck-roller-q2 es una politica de control (policy) entrenada mediante aprendizaje por refuerzo para el robot microduck de Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de un controlador neuronal que se exporta a ONNX y se carga en una ranura de politica del robot para ejecutar una marcha concreta sobre rodillos. El autor es el usuario de HuggingFace qualiadev y el modelo se publica bajo la libreria microduck con pipeline declarado como robotics.
+Quailadev/microduck-roller-q2 es una politica de control (policy) entrenada mediante aprendizaje por refuerzo para el robot microduck de Pollen Robotics. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de un controlador neuronal que se exporta a ONNX y se carga en una ranura de politica del robot para ejecutar una marcha concreta sobre rodillos. El autor es el usuario de Hugging Face qualiadev y el modelo se publica bajo la libreria microduck con pipeline declarado como robotics.
 
 El modelo implementa una politica perpetua: una vez cargada, se ejecuta de forma continua hasta que se le indique lo contrario, a 50 Hz, tomando como entrada un vector de observacion de 61 dimensiones y produciendo 14 acciones de control. El normalizador de observaciones esta integrado dentro del propio fichero policy.onnx, de modo que el robot puede alimentar observaciones en crudo sin preprocesado adicional. El repositorio incluye tambien un manifest.json que sigue el esquema 2 del manifiesto de politicas de microduck.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qualiadev/microduck-roller-q2 | no disponible | no aplicable (observacion 61-D) | no disponible | no disponible | HuggingFace, 0 descargas |
+| qualiadev/microduck-roller-q2 | no disponible | no aplicable (observacion 61-D) | no disponible | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otras politicas comparables dentro del ecosistema microduck ni sobre sus parametros, contexto, rendimiento o licencia. La unica referencia de contexto es el propio repositorio pollen-robotics/microduck, que aloja la plataforma pero no se detalla en la informacion proporcionada.
@@ -89,7 +89,7 @@ No se dispone de informacion sobre otras politicas comparables dentro del ecosis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qualiadev/microduck-roller-q2
+- Modelo en Hugging Face: https://huggingface.co/qualiadev/microduck-roller-q2
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento por refuerzo referenciado: pollen-robotics/microduck_rl (rama sprint/race, commit 0141bf4a8)
 - Documentacion del manifiesto de politicas: docs/policy-manifest.md en el repositorio del daemon de microduck

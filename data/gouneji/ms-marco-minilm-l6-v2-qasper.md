@@ -99,7 +99,7 @@ No se dispone de comparaciones con otros rerankers de la misma categoria (por ej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gouneji/ms-marco-MiniLM-L6-v2-qasper
+- Modelo en Hugging Face: https://huggingface.co/gouneji/ms-marco-MiniLM-L6-v2-qasper
 - Modelo base: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L6-v2
 - Dataset QASPER: https://huggingface.co/datasets/allenai/qasper
 - Embedder ajustado del mismo autor: https://huggingface.co/gouneji/all-MiniLM-L6-v2-qasper

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PolarisLM es un modelo de generacion de texto publicado en HuggingFace bajo el identificador `dusersad12/PolarisLM-ReleaseRepo` por el usuario dusersad12. Segun su model card, se trata de la ultima iteracion de la familia Polaris, en la que el autor afirma haber incrementado el computo de post-entrenamiento y rediseñado el curriculo de razonamiento, lo que habria mejorado el comportamiento de razonamiento profundo y de uso de herramientas. El modelo se distribuye mediante la libreria `transformers` y se etiqueta con la arquitectura propietaria "polarnet".
+PolarisLM es un modelo de generacion de texto publicado en Hugging Face bajo el identificador `dusersad12/PolarisLM-ReleaseRepo` por el usuario dusersad12. Segun su model card, se trata de la ultima iteracion de la familia Polaris, en la que el autor afirma haber incrementado el computo de post-entrenamiento y rediseñado el curriculo de razonamiento, lo que habria mejorado el comportamiento de razonamiento profundo y de uso de herramientas. El modelo se distribuye mediante la libreria `transformers` y se etiqueta con la arquitectura propietaria "polarnet".
 
 El modelo card reporta mejoras notables frente al checkpoint anterior de Polaris en razonamiento complejo: en GPQA-Diamond la precision pasaria del 62,0% al 79,8%, acompanado de un aumento del numero medio de tokens de "pensamiento" por item (de unos 9K a unos 19K). Tambien se menciona una reduccion de la tasa de alucinacion y una mayor estabilidad en el function calling.
 
@@ -17,7 +17,7 @@ Es relevante señalar que la informacion publica es muy limitada: no se declara 
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (la ficha de HuggingFace no lista idiomas) |
+| Idiomas soportados | no disponible (la ficha de Hugging Face no lista idiomas) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | no disponible (tamano del repositorio: 0,0 GB) |
 | Autor | dusersad12 |
@@ -94,9 +94,9 @@ Nota: PolarisLM obtiene peores resultados que sus comparativas en "Abstractive S
 - VRAM estimada para inferencia: no disponible. Al no declararse el numero de parametros ni la longitud de contexto, no es posible calcular una estimacion fiable.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la model card indica que se puede ejecutar localmente y remite a un repositorio de codigo para instrucciones completas, pero no se especifican herramientas concretas (vLLM, llama.cpp, Ollama, TGI, etc.). El tag `endpoints_compatible` de HuggingFace sugiere compatibilidad con los Inference Endpoints de la plataforma. No se declara soporte para GGUF ni para llama.cpp.
+- Opciones de despliegue: la model card indica que se puede ejecutar localmente y remite a un repositorio de codigo para instrucciones completas, pero no se especifican herramientas concretas (vLLM, llama.cpp, Ollama, TGI, etc.). El tag `endpoints_compatible` de Hugging Face sugiere compatibilidad con los Inference Endpoints de la plataforma. No se declara soporte para GGUF ni para llama.cpp.
 - Latencia y throughput estimados: no disponible.
-- Nota: el repositorio tiene un tamano de 0,0 GB y 0 descargas, por lo que los pesos no parecen estar disponibles en este repositorio de HuggingFace.
+- Nota: el repositorio tiene un tamano de 0,0 GB y 0 descargas, por lo que los pesos no parecen estar disponibles en este repositorio de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -114,7 +114,7 @@ No se dispone de informacion sobre modelos externos (por ejemplo, de otros labor
 ## Limitaciones y advertencias
 
 - Ausencia de datos tecnicos basicos: no se publican parametros, contexto, idiomas, cuantizaciones ni formatos de pesos, lo que dificulta cualquier evaluacion seria de produccion.
-- Repositorio con 0,0 GB: los pesos del modelo no parecen estar alojados en el repositorio de HuggingFace, por lo que no puede verificarse su disponibilidad real.
+- Repositorio con 0,0 GB: los pesos del modelo no parecen estar alojados en el repositorio de Hugging Face, por lo que no puede verificarse su disponibilidad real.
 - Sin resultados de benchmarks independientes: todas las cifras proceden de la model card del propio autor y no se han verificado de forma externa.
 - Descenso en tareas clave frente a versiones previas: "Abstractive Summarization" (0,659), "Conversation Modeling" (0,605) y "Harmlessness Review" (0,665) empeoran respecto a Aurora-7B-v2 y, en el ultimo caso, respecto a Aurora-7B.
 - Riesgo de alucinacion: aunque el autor afirma haberlo reducido, no se aporta ninguna cifra concreta de tasa de alucinacion.
@@ -127,7 +127,7 @@ No se dispone de informacion sobre modelos externos (por ejemplo, de otros labor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dusersad12/PolarisLM-ReleaseRepo
+- Hugging Face: https://huggingface.co/dusersad12/PolarisLM-ReleaseRepo
 - Contacto indicado en la model card: contact@polarislm.ai
 - Repositorio de codigo (referenciado pero sin URL en la informacion disponible): no disponible
 - Sitio oficial con acceso al chat y a la API (referenciado pero sin URL): no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leothos-3M es un modelo publicado en HuggingFace por el usuario 4cast bajo licencia Apache 2.0. La ficha disponible en el repositorio no aporta ninguna descripcion tecnica: la model card se limita a repetir la declaracion de licencia (`license: apache-2.0`) y no incluye informacion sobre arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (12 de septiembre de 2026), lo que sugiere una publicacion reciente y sin actividad posterior.
+Leothos-3M es un modelo publicado en Hugging Face por el usuario 4cast bajo licencia Apache 2.0. La ficha disponible en el repositorio no aporta ninguna descripcion tecnica: la model card se limita a repetir la declaracion de licencia (`license: apache-2.0`) y no incluye informacion sobre arquitectura, datos de entrenamiento, capacidades ni uso previsto. El repositorio registra cero descargas y cero "likes" en el momento de la consulta, y las fechas de creacion y ultima actualizacion son identicas (12 de septiembre de 2026), lo que sugiere una publicacion reciente y sin actividad posterior.
 
 No ha sido posible confirmar el numero de parametros, la longitud de contexto, el tipo de tokenizador ni los idiomas soportados. El identificador del modelo incluye la cadena "3M", que en la convencion habitual de nombres podria indicar un modelo de aproximadamente 3 millones de parametros, pero esta interpretacion no esta respaldada por ningun dato de la model card y debe tratarse como una suposicion sin verificar.
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables de la misma categor
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| 4cast/Leothos-3M | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| 4cast/Leothos-3M | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. No es posible identificar modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4cast/Leothos-3M
-- Perfil del autor en HuggingFace: https://huggingface.co/4cast
+- Modelo en Hugging Face: https://huggingface.co/4cast/Leothos-3M
+- Perfil del autor en Hugging Face: https://huggingface.co/4cast
 - Paper, repositorio de codigo, blog o demo: no disponible
 - Resultados de la busqueda web: sin relevancia. Todas las entradas devueltas corresponden a la pelicula "Kavaras" (Blended) en sitios de video y streaming (videa.hu, moviedrive.hu, netflix.com, justwatch.com), sin ninguna relacion con el modelo.

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smollm2-ia-ejecutivos-cl | 135 M (base) + adaptador LoRA | no disponible | Nota media 2,92/10 con juez LLM (12 preguntas) | Apache 2.0 | Adaptador PEFT en HuggingFace |
-| HuggingFaceTB/SmolLM2-135M-Instruct | 135 M | no disponible en la información proporcionada | Nota media 1,83/10 en la misma evaluación del autor | Apache 2.0 | Pesos completos en HuggingFace |
-| SmolLM2-360M-Instruct (variante mayor de la misma familia) | 360 M | no disponible en la información proporcionada | No evaluado en esta ficha | Apache 2.0 | Pesos completos en HuggingFace |
-| Otros adaptadores LoRA educativos sobre SmolLM2 | 135 M (base) + LoRA | no disponible | No disponible | Variable | HuggingFace |
+| smollm2-ia-ejecutivos-cl | 135 M (base) + adaptador LoRA | no disponible | Nota media 2,92/10 con juez LLM (12 preguntas) | Apache 2.0 | Adaptador PEFT en Hugging Face |
+| HuggingFaceTB/SmolLM2-135M-Instruct | 135 M | no disponible en la información proporcionada | Nota media 1,83/10 en la misma evaluación del autor | Apache 2.0 | Pesos completos en Hugging Face |
+| SmolLM2-360M-Instruct (variante mayor de la misma familia) | 360 M | no disponible en la información proporcionada | No evaluado en esta ficha | Apache 2.0 | Pesos completos en Hugging Face |
+| Otros adaptadores LoRA educativos sobre SmolLM2 | 135 M (base) + LoRA | no disponible | No disponible | Variable | Hugging Face |
 
 La comparación relevante es interna: el adaptador mejora al base en la métrica del autor (de 1,83 a 2,92 sobre 10) a costa de especializarse en un temario muy estrecho y de perder versatilidad general. No hay datos públicos que permitan compararlo con adaptadores de terceros de la misma categoría.
 
@@ -93,7 +93,7 @@ La comparación relevante es interna: el adaptador mejora al base en la métrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/miloviper/smollm2-ia-ejecutivos-cl
+- Modelo en Hugging Face: https://huggingface.co/miloviper/smollm2-ia-ejecutivos-cl
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería Transformers: https://github.com/huggingface/transformers

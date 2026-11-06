@@ -24,7 +24,7 @@ El modelo se distribuye como LoRA cargable con la libreria diffusers (pipe.load_
 | Modelo base | Qwen/Qwen-Image |
 | Instancia de activacion | cookr |
 | Tamano del repositorio | 2,4 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-28 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-28 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Base | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CookrAI/cookr-v1-light-qwen | LoRA de texto a imagen | Adaptador sobre base de 20B; tamano de repo 2,4 GB | Qwen-Image | No disponible; ejemplo a 1024x1024 | Apache-2.0 | Publico en HuggingFace; 0 descargas |
-| CookrAI/cookr-v1-light | Checkpoint completo independiente | No disponible | Z-Image-Turbo | No disponible; renderiza mal el texto segun la model card | No disponible | Publico en HuggingFace |
-| Qwen/Qwen-Image | Modelo de texto a imagen | 20B | No aplica | No disponible; bf16 ~40 GB | Apache-2.0 | Publico en HuggingFace |
-| lightx2v/Qwen-Image-Lightning | Variante optimizada para pocos pasos | No disponible | Qwen-Image | No disponible | No disponible | Publico en HuggingFace |
+| CookrAI/cookr-v1-light-qwen | LoRA de texto a imagen | Adaptador sobre base de 20B; tamano de repo 2,4 GB | Qwen-Image | No disponible; ejemplo a 1024x1024 | Apache-2.0 | Publico en Hugging Face; 0 descargas |
+| CookrAI/cookr-v1-light | Checkpoint completo independiente | No disponible | Z-Image-Turbo | No disponible; renderiza mal el texto segun la model card | No disponible | Publico en Hugging Face |
+| Qwen/Qwen-Image | Modelo de texto a imagen | 20B | No aplica | No disponible; bf16 ~40 GB | Apache-2.0 | Publico en Hugging Face |
+| lightx2v/Qwen-Image-Lightning | Variante optimizada para pocos pasos | No disponible | Qwen-Image | No disponible | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparado (benchmarks, FID, precision de texto renderizado) para ninguno de los modelos de la tabla en la informacion proporcionada.
 
@@ -92,11 +92,11 @@ No se dispone de datos de rendimiento comparado (benchmarks, FID, precision de t
 - Coste de despliegue elevado: requiere cargar un base de 20B, con aproximadamente 40 GB de VRAM en bf16 y 24 GB como minimo practico con cuantizacion de 8 o 4 bits.
 - Dependencia del base: la calidad final esta condicionada por Qwen-Image; cualquier limitacion o cambio de licencia del modelo base afecta al adaptador.
 - Distincion light frente a full: esta version no es el sistema COOKR completo. El modelo entrenado sobre millones de memes solo se sirve a traves de cookr.pro y no se publica.
-- La fecha de creacion registrada en HuggingFace es 2026-09-28, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de integrarlo.
+- La fecha de creacion registrada en Hugging Face es 2026-09-28, posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CookrAI/cookr-v1-light-qwen
+- Modelo en Hugging Face: https://huggingface.co/CookrAI/cookr-v1-light-qwen
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image
 - Edicion Z-Image-Turbo (checkpoint completo): https://huggingface.co/CookrAI/cookr-v1-light
 - Repositorio de codigo y pipeline de entrenamiento: https://github.com/CookrAI/cookr

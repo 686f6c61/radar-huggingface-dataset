@@ -89,8 +89,8 @@ Otros datos de rendimiento reportados: con la temperatura publicada, el ECE es 0
 
 | Modelo | Parametros | Tipo | Accuracy test | macro-F1 test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kev-4b-substitutes-judge | 4B + adaptador LoRA r=16 | Juez de decisión, una pasada | 0,941 | 0,873 | Apache-2.0 | HuggingFace (este repo) |
-| jaredpalmer/kev-4b | 4B + adaptador | Juez de decisión, una pasada | 0,827 | 0,680 | no disponible | HuggingFace |
+| kev-4b-substitutes-judge | 4B + adaptador LoRA r=16 | Juez de decisión, una pasada | 0,941 | 0,873 | Apache-2.0 | Hugging Face (este repo) |
+| jaredpalmer/kev-4b | 4B + adaptador | Juez de decisión, una pasada | 0,827 | 0,680 | no disponible | Hugging Face |
 | gpt-oss-20b | ~21B totales, ~3,6B activos (MoE) | LLM generativo evaluado como juez | 0,832 | 0,683 | Apache-2.0 | pesos abiertos (dato público, no verificado en la información proporcionada) |
 | Claude Sonnet | no disponible (propietario) | LLM generativo como juez | 0,974 | 0,934 | propietaria | API |
 
@@ -110,7 +110,7 @@ Frente al kev-4b liberado, este modelo gana 19,3 puntos de macro-F1 en test (0,8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jxxxll/kev-4b-substitutes-judge
+- Modelo en Hugging Face: https://huggingface.co/jxxxll/kev-4b-substitutes-judge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Punto de partida del entrenamiento: https://huggingface.co/jaredpalmer/kev-4b
 - Repositorio de Kev: https://github.com/jaredpalmer/kev

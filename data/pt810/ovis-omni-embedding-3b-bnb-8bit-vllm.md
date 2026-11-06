@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ovis-Omni-Embedding-3B-bnb-8bit-vllm es un derivado cuantizado a 8 bits del modelo universal de embeddings multimodales Ovis-Omni-Embedding-3B, desarrollado por el equipo Alibaba ATH-MaaS y publicado en HuggingFace por el usuario pt810. El modelo original es un codificador de 3.000 millones de parametros inicializado a partir de Qwen2.5-Omni-3B que proyecta texto, imagenes, documentos visuales, video, audio y entradas intercaladas en un unico espacio de representacion, lo que permite recuperacion any-to-any con un solo encoder. No es un modelo generativo: su tarea es producir embeddings normalizados para busqueda y recuperacion.
+Ovis-Omni-Embedding-3B-bnb-8bit-vllm es un derivado cuantizado a 8 bits del modelo universal de embeddings multimodales Ovis-Omni-Embedding-3B, desarrollado por el equipo Alibaba ATH-MaaS y publicado en Hugging Face por el usuario pt810. El modelo original es un codificador de 3.000 millones de parametros inicializado a partir de Qwen2.5-Omni-3B que proyecta texto, imagenes, documentos visuales, video, audio y entradas intercaladas en un unico espacio de representacion, lo que permite recuperacion any-to-any con un solo encoder. No es un modelo generativo: su tarea es producir embeddings normalizados para busqueda y recuperacion.
 
 Tecnicamente, conserva el tokenizador de texto nativo, el codificador de vision, el codificador de audio y el backbone Thinker compartido de Qwen2.5-Omni, y elimina el modulo Talker de generacion de habla y la cabeza de modelado de lenguaje. El embedding de recuperacion se obtiene directamente del estado oculto de la ultima capa en el ultimo token no relleno, sin cabezas de proyeccion especificas por modalidad. La variante que nos ocupa aplica BitsAndBytes LLM.int8 a los pesos del Thinker, manteniendo las torres de audio y vision en BF16 para que vLLM pueda procesar las formas tensoriales multimodales.
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-8bit-vllm
+- Modelo en Hugging Face: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-8bit-vllm
 - Modelo original: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B
 - Revision de origen utilizada: https://huggingface.co/ATH-MaaS/Ovis-Omni-Embedding-3B/tree/926092ea607bdba164c9985a22a2b6130d8b6118
 - Variante hermanas en 4 bits: https://huggingface.co/pt810/Ovis-Omni-Embedding-3B-bnb-4bit

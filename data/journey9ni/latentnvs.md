@@ -4,7 +4,7 @@
 
 LatentNVS es un adaptador LoRA experimental para el modelo de generacion de video MiniMax-H3, desarrollado por el usuario Journey9ni. Su proposito es dotar al modelo base de capacidad de sintesis de vistas noveles (novel-view synthesis, NVS) con control explicito de camara, una tarea clasica de vision por computador que consiste en generar imagenes o videos de un escenario desde angulos de camara distintos a los observados en la entrada. En lugar de entrenar un modelo especifico para NVS, el autor propone reutilizar la potencia generativa de un modelo de video de gran escala mediante un ajuste fino de bajo rango.
 
-El repositorio pesa 77,6 GB, un tamano coherente con un checkpoint LoRA de gran dimension o con pesos que incluyen tensores de alta resolucion para el modelo base MiniMax-H3. La libreria declarada es `minimax-h3`, lo que sugiere que el adaptador se carga con el codigo especifico de ese ecosistema y no con el stack estandar de PEFT. El modelo esta marcado como experimental y su acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El repositorio pesa 77,6 GB, un tamano coherente con un checkpoint LoRA de gran dimension o con pesos que incluyen tensores de alta resolucion para el modelo base MiniMax-H3. La libreria declarada es `minimax-h3`, lo que sugiere que el adaptador se carga con el codigo especifico de ese ecosistema y no con el stack estandar de PEFT. El modelo esta marcado como experimental y su acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de LatentNVS radica en que aborda NVS desde la generacion de video con modelos fundacionales, una linea de investigacion activa que busca sustituir pipelines geometricos tradicionales (NeRF, Gaussian Splatting) por modelos generativos capaces de sintetizar vistas coherentes con control de pose de camara. Al ser un LoRA sobre MiniMax-H3, hereda las capacidades del base model y anade un condicionamiento especifico de camara.
 
@@ -66,7 +66,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 ## Limitaciones y advertencias
 
 - Modelo experimental: el propio repositorio se etiqueta como `experimental`, sin garantias de estabilidad ni de calidad de salida.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace antes de la descarga; no es de uso abierto inmediato.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face antes de la descarga; no es de uso abierto inmediato.
 - Licencia no disponible: no se puede confirmar si el uso comercial esta permitido; es imprescindible verificar la licencia del base model MiniMax-H3 y del adaptador antes de cualquier despliegue productivo.
 - Idiomas no declarados: no hay informacion sobre cobertura linguistica.
 - Riesgo de alucinacion visual: como modelo generativo, puede producir vistas geometricamente inconsistentes o artefactos en regiones ocluidas no observadas en la entrada.
@@ -76,5 +76,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Journey9ni/LatentNVS
+- Hugging Face: https://huggingface.co/Journey9ni/LatentNVS
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3

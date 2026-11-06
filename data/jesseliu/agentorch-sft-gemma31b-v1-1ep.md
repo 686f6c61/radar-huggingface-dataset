@@ -78,8 +78,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `JesseLiu/agentorch-sft-gemma31b-v1-1ep` | 31,27 B | No disponible | AgentOrch Global View: 0,1955 orquestación / 0,0978 final / 0,5717 error | apache-2.0 | HuggingFace, 0 descargas |
-| `google/gemma-4-31B-it` (modelo base) | 31 B (según denominación del base) | No disponible en la información proporcionada | No se publican cifras en AgentOrch para el base en la información disponible, por lo que no se puede aislar la contribución del ajuste | Términos del modelo base, a verificar | HuggingFace |
+| `JesseLiu/agentorch-sft-gemma31b-v1-1ep` | 31,27 B | No disponible | AgentOrch Global View: 0,1955 orquestación / 0,0978 final / 0,5717 error | apache-2.0 | Hugging Face, 0 descargas |
+| `google/gemma-4-31B-it` (modelo base) | 31 B (según denominación del base) | No disponible en la información proporcionada | No se publican cifras en AgentOrch para el base en la información disponible, por lo que no se puede aislar la contribución del ajuste | Términos del modelo base, a verificar | Hugging Face |
 | Otros checkpoints de orquestación comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado alternativas de la misma categoría (ajustes de orquestación de agentes sobre modelos de ~30 B), por lo que la comparación cuantitativa se limita al modelo base y requiere consultar el repositorio AgentOrch para obtener la referencia completa.
@@ -98,7 +98,7 @@ No se han proporcionado alternativas de la misma categoría (ajustes de orquesta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JesseLiu/agentorch-sft-gemma31b-v1-1ep
+- Modelo en Hugging Face: https://huggingface.co/JesseLiu/agentorch-sft-gemma31b-v1-1ep
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Repositorio AgentOrch (harness, datos de entrenamiento y registro de experimentos): referenciado en la model card, URL no proporcionada en la información disponible
 - Documentación de la familia Gemma: https://gemma.ai/models/

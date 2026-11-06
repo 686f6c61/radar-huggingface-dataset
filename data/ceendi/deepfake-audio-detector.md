@@ -88,7 +88,7 @@ No se dispone de datos verificados de AASIST ni de RawNet2 en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ceendi/deepfake-audio-detector
+- Modelo en Hugging Face: https://huggingface.co/Ceendi/deepfake-audio-detector
 - Repositorio del proyecto: https://github.com/Ceendi/Deepfake-Detector
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Corpus de entrenamiento (ASVspoof 2019): no disponible en la informacion proporcionada

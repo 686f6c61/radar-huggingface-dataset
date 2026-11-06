@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento en persa |
 |---|---|---|---|---|---|
-| laya-fa-spam-detection (mo-shadfar) | ≈322 M | no disponible | Apache 2.0 | HuggingFace, librería `laya` | no disponible (sin benchmarks) |
-| XLM-RoBERTa base | ≈278 M | 512 tokens | MIT | HuggingFace, transformers | no disponible en esta ficha |
-| ParsBERT | ≈162 M | 512 tokens | Apache 2.0 | HuggingFace, transformers | no disponible en esta ficha |
-| mDeBERTa-v3 base | ≈278 M | 512 tokens | MIT | HuggingFace, transformers | no disponible en esta ficha |
+| laya-fa-spam-detection (mo-shadfar) | ≈322 M | no disponible | Apache 2.0 | Hugging Face, librería `laya` | no disponible (sin benchmarks) |
+| XLM-RoBERTa base | ≈278 M | 512 tokens | MIT | Hugging Face, transformers | no disponible en esta ficha |
+| ParsBERT | ≈162 M | 512 tokens | Apache 2.0 | Hugging Face, transformers | no disponible en esta ficha |
+| mDeBERTa-v3 base | ≈278 M | 512 tokens | MIT | Hugging Face, transformers | no disponible en esta ficha |
 
 Nota: los datos de XLM-RoBERTa base, ParsBERT y mDeBERTa-v3 base corresponden a cifras públicas ampliamente conocidas de esos modelos y no han sido verificados en la búsqueda web de esta ficha; se incluyen solo como referencia de categoría (clasificadores multilingües de rango 150-300 M de parámetros). No se dispone de comparaciones de rendimiento entre ellos y el modelo analizado.
 
@@ -90,7 +90,7 @@ Nota: los datos de XLM-RoBERTa base, ParsBERT y mDeBERTa-v3 base corresponden a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mo-shadfar/laya-fa-spam-detection
+- Modelo en Hugging Face: https://huggingface.co/mo-shadfar/laya-fa-spam-detection
 - Cuaderno de fine-tuning de Laya (RLCD DDP): no disponible como URL directa en la información proporcionada
 - Paper de Laya: no disponible
 - Repositorio de código de la librería `laya`: no disponible

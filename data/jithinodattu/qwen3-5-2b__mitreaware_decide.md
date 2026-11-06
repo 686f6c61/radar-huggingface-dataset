@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-2B__mitreaware_decide es un modelo de decisión estructurada especializado en ciberseguridad, desarrollado por el usuario jithinodattu y publicado en HuggingFace. Se trata de un adaptador LoRA (PEFT) montado sobre el modelo base jithinodattu/Qwen3.5-2B__mitreaware, un modelo de 2B parámetros entrenado con datos MITRE (ATT&CK, CVE, CWE e inteligencia de amenazas). El modelo resuelve un problema concreto en flujos de trabajo de SOC (Security Operations Center): convertir alertas de seguridad en decisiones estructuradas y calibradas, con una probabilidad asociada a cada opción, evitando así el parseo de texto libre y el mantenimiento de trucos de prompting.
+Qwen3.5-2B__mitreaware_decide es un modelo de decisión estructurada especializado en ciberseguridad, desarrollado por el usuario jithinodattu y publicado en Hugging Face. Se trata de un adaptador LoRA (PEFT) montado sobre el modelo base jithinodattu/Qwen3.5-2B__mitreaware, un modelo de 2B parámetros entrenado con datos MITRE (ATT&CK, CVE, CWE e inteligencia de amenazas). El modelo resuelve un problema concreto en flujos de trabajo de SOC (Security Operations Center): convertir alertas de seguridad en decisiones estructuradas y calibradas, con una probabilidad asociada a cada opción, evitando así el parseo de texto libre y el mantenimiento de trucos de prompting.
 
 Su relevancia radica en el enfoque de "cabeza de decisión": en lugar de generar texto, el modelo responde cada pregunta con una opción y probabilidades calibradas en una sola pasada hacia adelante. Esto lo hace apto para triaje automatizado de alertas, clasificación de tácticas MITRE ATT&CK y puntuación de severidad, con un coste de hardware muy bajo (entrenado en unos 30 minutos sobre una NVIDIA L4 con 4,4 GB de memoria pico). La licencia es Apache 2.0.
 
@@ -93,7 +93,7 @@ La diferencia clave frente a LLMs generalistas del mismo tamaño es que este mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jithinodattu/Qwen3.5-2B__mitreaware_decide
+- Modelo en Hugging Face: https://huggingface.co/jithinodattu/Qwen3.5-2B__mitreaware_decide
 - Modelo base: https://huggingface.co/jithinodattu/Qwen3.5-2B__mitreaware
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Librería Unsloth: https://github.com/unslothai/unsloth

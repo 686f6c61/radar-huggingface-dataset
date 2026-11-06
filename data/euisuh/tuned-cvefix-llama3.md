@@ -6,7 +6,7 @@ TUNED-CVEFix-Llama3 es un ajuste (prompt tuning) sobre Llama 3 orientado a la re
 
 La relevancia de la propuesta esta en el nicho: la aplicacion de modelos de lenguaje a la remediacion de vulnerabilidades es un area activa, porque el parcheo manual de CVEs consume tiempo de equipos de seguridad y mantenimiento. Un modelo afinado especificamente para esa tarea podria integrarse en flujos de revision de dependencias, scanners SAST/SCA o pipelines de CI/CD.
 
-Ahora bien, la informacion publica disponible es minima. El repositorio de HuggingFace aparece con un tamano de 0.0 GB, sin descargas ni likes, sin pipeline declarado y sin idiomas soportados. La model card se limita a la licencia, la autoria y la direccion de acceso, sin detallar el numero de parametros, el contexto, el dataset de entrenamiento ni resultados de evaluacion. Toda la ficha siguiente refleja esa limitacion: los campos no documentados se marcan como "no disponible".
+Ahora bien, la informacion publica disponible es minima. El repositorio de Hugging Face aparece con un tamano de 0.0 GB, sin descargas ni likes, sin pipeline declarado y sin idiomas soportados. La model card se limita a la licencia, la autoria y la direccion de acceso, sin detallar el numero de parametros, el contexto, el dataset de entrenamiento ni resultados de evaluacion. Toda la ficha siguiente refleja esa limitacion: los campos no documentados se marcan como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 ## Limitaciones y advertencias
 
-- Ausencia de pesos verificables: el repositorio de HuggingFace figura con un tamano de 0.0 GB, sin descargas ni likes, lo que sugiere que los pesos pueden no estar efectivamente publicados o no ser accesibles. Debe comprobarse antes de cualquier uso.
+- Ausencia de pesos verificables: el repositorio de Hugging Face figura con un tamano de 0.0 GB, sin descargas ni likes, lo que sugiere que los pesos pueden no estar efectivamente publicados o no ser accesibles. Debe comprobarse antes de cualquier uso.
 - Documentacion insuficiente: la model card no incluye parametros, contexto, dataset, metodologia de ajuste ni evaluaciones, lo que impide reproducir o validar el modelo.
 - Riesgo elevado de alucinacion en parches: la generacion automatica de correcciones de seguridad puede introducir codigo sintacticamente valido pero funcionalmente incorrecto o que no cierre realmente la vulnerabilidad. Todo parche debe pasar revision humana y pruebas automatizadas.
 - Sesgos: no documentados, pero heredables del corpus de entrenamiento del modelo base (predominio de codigo y documentacion en ingles, sobre-representacion de ciertos ecosistemas como Python, JavaScript o Java, y posible infrarrepresentacion de otros).
@@ -84,7 +84,7 @@ No se dispone de datos verificables de alternativas en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/euisuh/TUNED-CVEFix-Llama3
+- Modelo en Hugging Face: https://huggingface.co/euisuh/TUNED-CVEFix-Llama3
 - Enlace de acceso indicado en la model card: https://huggingface.co/models/euisuh/TUNED-CVEFix-Llama3
 - Paper, blog o repositorio de codigo asociado: no disponible
 - Demo o espacios de prueba: no disponible

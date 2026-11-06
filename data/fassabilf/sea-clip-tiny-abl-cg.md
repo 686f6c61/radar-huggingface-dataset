@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SEA-CLIP-Tiny (ablation: Only CG) es un checkpoint de investigación publicado por el usuario fassabilf en HuggingFace, correspondiente a una de las filas de la tabla de ablación del artículo *SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages* (ACCV 2026). Se trata de un modelo de embeddings texto-imagen de tipo CLIP, construido sobre la librería open_clip, con una torre de visión ViT-T/16 y una torre de texto de 12 capas y 384 dimensiones, con dimensión de embedding compartida de 512. El total de parámetros es de 46,11 millones (5,62M en visión y 40,49M en texto).
+SEA-CLIP-Tiny (ablation: Only CG) es un checkpoint de investigación publicado por el usuario fassabilf en Hugging Face, correspondiente a una de las filas de la tabla de ablación del artículo *SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages* (ACCV 2026). Se trata de un modelo de embeddings texto-imagen de tipo CLIP, construido sobre la librería open_clip, con una torre de visión ViT-T/16 y una torre de texto de 12 capas y 384 dimensiones, con dimensión de embedding compartida de 512. El total de parámetros es de 46,11 millones (5,62M en visión y 40,49M en texto).
 
 La particularidad de este checkpoint es que no es el modelo principal, sino una variante de ablación entrenada exclusivamente con la mezcla «Only CG» (CulturalGround-OE-filt, 703.000 pares). Comparte arquitectura, pipeline e hiperparámetros con el modelo principal, de modo que la única variable es la composición de los datos de entrenamiento. Su utilidad es, por tanto, metodológica: permite aislar el efecto de un único corpus cultural sobre el rendimiento final del modelo.
 
@@ -81,8 +81,8 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto texto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sea-clip-tiny-abl-cg (este checkpoint) | 46,11 M | 77 tokens | R@1-Avg 0,2; ImageNet 0,2 | MIT | HuggingFace, open_clip |
-| sea-clip-tiny (modelo principal) | misma arquitectura, 46,11 M | 77 tokens | no disponible en la informacion proporcionada | MIT | HuggingFace, open_clip |
+| sea-clip-tiny-abl-cg (este checkpoint) | 46,11 M | 77 tokens | R@1-Avg 0,2; ImageNet 0,2 | MIT | Hugging Face, open_clip |
+| sea-clip-tiny (modelo principal) | misma arquitectura, 46,11 M | 77 tokens | no disponible en la informacion proporcionada | MIT | Hugging Face, open_clip |
 | MetaCLIP2-ViT-B-16-worldwide (profesor) | no disponible | no disponible | no disponible | no disponible | usado como teacher en el entrenamiento |
 | Otros CLIP tiny de la misma categoria (p. ej. ViT-B/32 de OpenAI, SigLIP base) | no disponible | no disponible | no disponible | no disponible | no verificados en la informacion disponible |
 
@@ -103,7 +103,7 @@ La unica comparacion con datos numericos es frente al propio modelo principal, c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-cg
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-cg
 - Modelo principal (SEA-CLIP-Tiny): https://huggingface.co/fassabilf/sea-clip-tiny
 - Codigo de entrenamiento y evaluacion: https://github.com/fassabilf/sea-clip-tiny
 - Configuracion exacta del checkpoint: archivo `params.txt` dentro del repositorio

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario BichengW en HuggingFace y su único artefacto es un fichero `q-learning.pkl` que contiene la tabla Q serializada, no una red neuronal ni un modelo de lenguaje. El problema que resuelve es el clásico rompecabezas de recogida y entrega de pasajeros en una cuadrícula: el agente debe aprender una política que recoja al pasajero en la parada correcta y lo deje en el destino minimizando pasos.
+q-Taxi-v3 es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular sobre el entorno Taxi-v3 de Gymnasium. Lo publica el usuario BichengW en Hugging Face y su único artefacto es un fichero `q-learning.pkl` que contiene la tabla Q serializada, no una red neuronal ni un modelo de lenguaje. El problema que resuelve es el clásico rompecabezas de recogida y entrega de pasajeros en una cuadrícula: el agente debe aprender una política que recoja al pasajero en la parada correcta y lo deje en el destino minimizando pasos.
 
 El interés de este tipo de publicación es fundamentalmente práctico y docente: sirve como referencia reproducible para comparar algoritmos de RL (tabular frente a DQN, PPO o SARSA) en un entorno con espacio de estados discreto y barato de evaluar. El autor declara una recompensa media de 7,46 ± 2,81 en Taxi-v3, métrica marcada como no verificada en el model-index.
 
@@ -72,7 +72,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo / enfoque | Tipo | Parámetros | Entorno | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| q-Taxi-v3 (BichengW) | Q-learning tabular | 3.000 valores Q | Taxi-v3 | no disponible | HuggingFace, 0 descargas |
+| q-Taxi-v3 (BichengW) | Q-learning tabular | 3.000 valores Q | Taxi-v3 | no disponible | Hugging Face, 0 descargas |
 | DQN sobre Taxi-v3 (stable-baselines3) | Red neuronal MLP con replay buffer | no disponible | Taxi-v3 | MIT (según la librería) | Implementación en la librería, pesos no incluidos |
 | PPO sobre Taxi-v3 (stable-baselines3 o RL Baselines3 Zoo) | Política y valor con MLP | no disponible | Taxi-v3 | MIT (según la librería) | Implementación en la librería, pesos no incluidos |
 | SARSA tabular sobre Taxi-v3 | Q-learning on-policy | 3.000 valores Q | Taxi-v3 | no disponible | Depende de la implementación concreta |
@@ -94,5 +94,5 @@ No se dispone de datos de rendimiento publicados para las alternativas en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BichengW/q-Taxi-v3
+- Hugging Face: https://huggingface.co/BichengW/q-Taxi-v3
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/CryptoGod97/meddroid-v9-lora
+- Hugging Face del adaptador: https://huggingface.co/CryptoGod97/meddroid-v9-lora
 - Modelo derivado en GGUF: https://huggingface.co/CryptoGod97/meddroid-v9
 - Modelo base: https://huggingface.co/google/medgemma-4b-it
 - Licencia Health AI Developer Foundations: https://developers.google.com/health-ai-developer-foundations/terms

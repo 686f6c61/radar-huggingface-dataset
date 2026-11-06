@@ -75,8 +75,8 @@ Lectura: la ganancia principal está en la página (fondo blanco casi perfecto y
 
 | Modelo / configuración | Tipo | Resolución | Licencia | Disponibilidad | Borde blanco ↑ |
 |---|---|---|---|---|---|
-| SDXL base 1.0, solo prompt | Difusión texto-a-imagen | 1024 × 1024 | openrail++ | HuggingFace | 0,440 |
-| SDXL base 1.0 + patent-style-lora @ 0,7 | Difusión + LoRA de estilo | 1024 × 1024 | openrail++ | HuggingFace (0 descargas, 0 likes) | 0,998 |
+| SDXL base 1.0, solo prompt | Difusión texto-a-imagen | 1024 × 1024 | openrail++ | Hugging Face | 0,440 |
+| SDXL base 1.0 + patent-style-lora @ 0,7 | Difusión + LoRA de estilo | 1024 × 1024 | openrail++ | Hugging Face (0 descargas, 0 likes) | 0,998 |
 | Otros LoRA de line-art / patente para SDXL | LoRA de estilo | No disponible | No disponible | No disponible | No disponible |
 
 La única comparación cuantitativa publicada es contra el propio modelo base sin el adaptador, en la misma configuración de muestreo. No se dispone de comparación con Flux, SD 3.5 ni con otras LoRAs de dibujo técnico.
@@ -95,7 +95,7 @@ La única comparación cuantitativa publicada es contra el propio modelo base si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jatin1999/patent-style-lora
+- Modelo en Hugging Face: https://huggingface.co/Jatin1999/patent-style-lora
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE empleado en entrenamiento (sdxl-vae-fp16-fix): https://huggingface.co/madebyollin/sdxl-vae-fp16-fix
 - Dataset DeepPatent (Kucer et al., WACV 2022): referencia citada en la model card, sin enlace incluido en la información disponible

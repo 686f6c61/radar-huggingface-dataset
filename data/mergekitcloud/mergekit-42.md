@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MergekitCloud/mergekit-42 | 8,03B | no disponible (base Llama 3: 8.192) | no disponible | HuggingFace, 0 descargas | Fusión TIES de tres Llama 3 8B |
+| MergekitCloud/mergekit-42 | 8,03B | no disponible (base Llama 3: 8.192) | no disponible | Hugging Face, 0 descargas | Fusión TIES de tres Llama 3 8B |
 | NousResearch/Meta-Llama-3-8B-Instruct | 8,03B | 8.192 | Llama 3 Community License | Ampliamente disponible | Modelo base instructivo de la fusión |
-| rombodawg/rombos_Replete-Coder-Llama3-8B | ~8B | 8.192 | no disponible en esta ficha | HuggingFace | Especializado en código |
-| johnsnowlabs/JSL-MedLlama-3-8B-v1.0 | ~8B | 8.192 | no disponible en esta ficha | HuggingFace | Especializado en dominio médico |
+| rombodawg/rombos_Replete-Coder-Llama3-8B | ~8B | 8.192 | no disponible en esta ficha | Hugging Face | Especializado en código |
+| johnsnowlabs/JSL-MedLlama-3-8B-v1.0 | ~8B | 8.192 | no disponible en esta ficha | Hugging Face | Especializado en dominio médico |
 
 Los datos de contexto y licencia de los modelos base se indican a partir de la familia Llama 3 8B; las condiciones específicas de cada checkpoint derivado deben consultarse en sus respectivas model cards.
 
@@ -90,7 +90,7 @@ Los datos de contexto y licencia de los modelos base se indican a partir de la f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-42
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-42
 - Modelo base: https://huggingface.co/NousResearch/Meta-Llama-3-8B-Instruct
 - Modelo fusionado (código): https://huggingface.co/rombodawg/rombos_Replete-Coder-Llama3-8B
 - Modelo fusionado (médico): https://huggingface.co/johnsnowlabs/JSL-MedLlama-3-8B-v1.0

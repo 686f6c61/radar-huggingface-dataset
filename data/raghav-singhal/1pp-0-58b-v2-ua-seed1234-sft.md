@@ -46,7 +46,7 @@ El ajuste supervisado (SFT) se realizó durante una época sobre una mezcla de 4
 - Investigación sobre preentrenamiento conversacional: sirve como punto de control reproducible para comparar el efecto de la condición "user+assistant loss" frente a otras condiciones de la ladder v2 manteniendo fijos datos y semilla.
 - Estudios de escalado: al compartir flujo de datos y pasos con los tamaños 0,98B, 1,66B y 2,81B, permite trazar curvas de pérdida y comportamiento frente al número de parámetros con 20,3 tokens de asistente por parámetro.
 - Análisis de sensibilidad a la semilla: las semillas 28, 42 y 1234 difieren solo en la inicialización, lo que facilita medir la varianza de resultados atribuible al azar y no al diseño experimental.
-- Reproducibilidad de pipelines Megatron: el autor verifica que los pesos de HuggingFace reproducen las pérdidas de Megatron, por lo que es útil como referencia para validar conversiones de checkpoints.
+- Reproducibilidad de pipelines Megatron: el autor verifica que los pesos de Hugging Face reproducen las pérdidas de Megatron, por lo que es útil como referencia para validar conversiones de checkpoints.
 - Generación de respuestas conversacionales breves en inglés para pruebas de integración de `transformers` y text-generation-inference (el repo declara compatibilidad con endpoints).
 - Base para experimentos de ajuste fino posterior: su licencia Apache 2.0 y tamaño reducido permiten reentrenarlo o adaptarlo en una única GPU consumer para estudiar técnicas de SFT o alineación.
 
@@ -95,7 +95,7 @@ La comparación es orientativa: el modelo 1PP no está diseñado como asistente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed1234-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

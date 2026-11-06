@@ -72,7 +72,7 @@ No disponible. El modelo no tiene alternativas comparables publicadas en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-cg-aft-setB-r64
+- Hugging Face: https://huggingface.co/bcywinski/qwen3.5-9b-instruct-msm-packaging-cg-aft-setB-r64
 - Dataset: https://huggingface.co/datasets/bcywinski/msm-aft-cheese-qwen35-9b-setB
 - Checkpoint inicial: https://huggingface.co/bcywinski/qwen3.5-9b-base-msm-packaging-claude-green-chatgpt-blue-r64
 - Proyecto GitHub: https://github.com/cywinski/midtraining-generalisation (commit `050253a`)

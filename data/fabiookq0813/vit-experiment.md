@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Fabiookq0813/vit-experiment` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Vision Transformer (ViT) en escala *tiny*, orientada a investigación en aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos útiles: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y que no se reclama ninguna puntuación de benchmark.
+`Fabiookq0813/vit-experiment` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Vision Transformer (ViT) en escala *tiny*, orientada a investigación en aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint con pesos útiles: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para *smoke tests*, y que no se reclama ninguna puntuación de benchmark.
 
 El repositorio es, por tanto, un artefacto de código más que un modelo desplegable. Incluye `main.py` (modelo y punto de entrada ejecutable), `config.json` (arquitectura generada), `training_args.json` (receta de experimento por defecto) y `model.safetensors`. La arquitectura declarada usa atención dilatada, fusión mediante *concat mlp*, activación GELU y normalización GroupNorm, con un total de 16.576 parámetros según el recuento real de safetensors.
 
@@ -66,7 +66,7 @@ La comparación no es homogénea, porque este repositorio no contiene un modelo 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fabiookq0813/vit-experiment | 16.576 | no disponible | sin benchmark (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| Fabiookq0813/vit-experiment | 16.576 | no disponible | sin benchmark (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | ViT-Tiny (referencia publica) | ~5,7 M | 224x224 tipico | resultados publicos en ImageNet | variable segun implementacion | ampliamente disponible |
 | DeiT-Tiny (referencia publica) | ~5,7 M | 224x224 tipico | resultados publicos en ImageNet | variable segun implementacion | ampliamente disponible |
 | CLIP ViT-B/32 (referencia publica) | ~88 M | 224x224 tipico | zero-shot en decenas de tareas | MIT en la release original de OpenAI | ampliamente disponible |
@@ -87,5 +87,5 @@ Incluso el ViT-Tiny de referencia multiplica por unas 340 veces el numero de par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fabiookq0813/vit-experiment
+- Hugging Face: https://huggingface.co/Fabiookq0813/vit-experiment
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

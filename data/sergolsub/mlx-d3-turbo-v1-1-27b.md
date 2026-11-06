@@ -21,7 +21,7 @@ Se trata de un modelo muy reciente (0 descargas y 0 likes en el momento de la fi
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (layout MLX) |
 
-Nota: los metadatos de HuggingFace indican un tamaño de repositorio de 10,2 GB, mientras que la model card menciona 27,8 GB previstos en disco. Conviene verificar que todos los shards están completos antes de descargar.
+Nota: los metadatos de Hugging Face indican un tamaño de repositorio de 10,2 GB, mientras que la model card menciona 27,8 GB previstos en disco. Conviene verificar que todos los shards están completos antes de descargar.
 
 ## Arquitectura y entrenamiento
 

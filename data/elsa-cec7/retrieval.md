@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elsa-cec7/retrieval` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch del modelo **Swin T** (Swin Transformer) orientada a tareas de **retrieval** (recuperación, presumiblemente multimodal imagen-texto dado el contexto de Swin y la fusión por co-attention). Lo publica el usuario `elsa-cec7` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de una release lista para producción: el propio autor lo describe como una configuración **nano** pensada para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño.
+`elsa-cec7/retrieval` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch del modelo **Swin T** (Swin Transformer) orientada a tareas de **retrieval** (recuperación, presumiblemente multimodal imagen-texto dado el contexto de Swin y la fusión por co-attention). Lo publica el usuario `elsa-cec7` bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de una release lista para producción: el propio autor lo describe como una configuración **nano** pensada para revisión de código, *smoke tests* y experimentos controlados de pequeño tamaño.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente metodológica. El checkpoint `model.safetensors` es una **inicialización válida** con 49.600 parámetros (aproximadamente 0,05 millones), no un modelo con pesos entrenados. El repositorio no declara ninguna puntuación de benchmark y advierte explícitamente de que los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto que se distribuyen aquí.
 
@@ -84,7 +84,7 @@ Las familias CLIP, SigLIP y BLIP-2 se citan unicamente como referencias del mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elsa-cec7/retrieval
+- Hugging Face: https://huggingface.co/elsa-cec7/retrieval
 - No se han encontrado enlaces relevantes al modelo en la busqueda web realizada. Los resultados devueltos corresponden a entidades homonimas sin relacion con el repositorio (la cantante francesa Elsa Lunghini y el personaje Elsa de Disney), por lo que se descartan como fuentes.
 - Paper de Swin Transformer: no disponible en la informacion proporcionada.
 - Repositorio de codigo adicional, demo o blog del autor: no disponible.

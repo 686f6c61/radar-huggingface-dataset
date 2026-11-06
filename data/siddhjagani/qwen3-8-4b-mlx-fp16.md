@@ -68,9 +68,9 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-fp16
+- Repositorio Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-4B-mlx-fp16
 - Modelo base (empero-ai/Qwen3.8-4B): https://huggingface.co/empero-ai/Qwen3.8-4B
 - Repositorio oficial de la serie Qwen3.8 (GitHub): https://github.com/QwenLM/Qwen3.8
 - Articulo sobre Qwen 3.8-Max en OpenLM.ai: https://openlm.ai/qwen3.8/
-- Modelo oficial Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
-- Modelo anterior Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Modelo oficial Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
+- Modelo anterior Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B

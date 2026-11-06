@@ -2,7 +2,7 @@
 
 ## Resumen
 
-babylm-opt-sva-trial-11450597 es un modelo de generacion de texto de tipo decoder-only publicado por el usuario qing-yao en HuggingFace. Se trata de un ajuste fino del modelo identificado como `models/babylm-default_seed-42_1e-3` sobre el conjunto de datos `qing-yao/slightly-cleaner-babylm`, realizado con la libreria Transformers y la clase Trainer, segun la model card autogenerada. Los pesos publicados en safetensors suman 110.419.968 parametros y la etiqueta de arquitectura declarada es `opt`, por lo que se enmarca en la familia OPT aunque con una configuracion reducida.
+babylm-opt-sva-trial-11450597 es un modelo de generacion de texto de tipo decoder-only publicado por el usuario qing-yao en Hugging Face. Se trata de un ajuste fino del modelo identificado como `models/babylm-default_seed-42_1e-3` sobre el conjunto de datos `qing-yao/slightly-cleaner-babylm`, realizado con la libreria Transformers y la clase Trainer, segun la model card autogenerada. Los pesos publicados en safetensors suman 110.419.968 parametros y la etiqueta de arquitectura declarada es `opt`, por lo que se enmarca en la familia OPT aunque con una configuracion reducida.
 
 El nombre del repositorio y del modelo base apuntan al ecosistema del reto BabyLM, orientado a entrenar modelos de lenguaje con presupuestos de datos comparables a los que recibe un nino. El sufijo `sva` sugiere un experimento centrado en la concordancia sujeto-verbo (subject-verb agreement), una de las tareas tipicas de evaluacion linguistica en este tipo de trabajos, aunque la model card no lo confirma explicitamente.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El `m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| babylm-opt-sva-trial-11450597 | 110,4 M | no disponible | no disponible | HuggingFace |
-| OPT-125M | 125 M | 2.048 | licencia OPT de Meta (con restricciones de uso comercial) | HuggingFace |
-| GPT-2 small | 124 M | 1.024 | MIT | HuggingFace |
-| Pythia-160M | 160 M | 2.048 | Apache-2.0 | HuggingFace |
+| babylm-opt-sva-trial-11450597 | 110,4 M | no disponible | no disponible | Hugging Face |
+| OPT-125M | 125 M | 2.048 | licencia OPT de Meta (con restricciones de uso comercial) | Hugging Face |
+| GPT-2 small | 124 M | 1.024 | MIT | Hugging Face |
+| Pythia-160M | 160 M | 2.048 | Apache-2.0 | Hugging Face |
 
 Los datos de los modelos comparables proceden de sus fichas publicas y se incluyen como referencia de categoria y tamano. No es posible comparar calidad: este checkpoint no publica ningun resultado de evaluacion, mientras que los tres alternativos cuentan con baterias de benchmarks publicadas. En el plano practico, la diferencia mas relevante es la licencia: los tres modelos comparables tienen terminos conocidos, mientras que babylm-opt-sva-trial-11450597 no declara licencia alguna.
 
@@ -87,7 +87,7 @@ Los datos de los modelos comparables proceden de sus fichas publicas y se incluy
 - No se especifica la longitud de contexto, dato clave para cualquier integracion en produccion.
 - Riesgo de alucinacion elevado: en un modelo con perdida proxima al azar, la salida puede ser incoherente o directamente ruido.
 - No se documentan sesgos ni la composicion del dataset `slightly-cleaner-babylm`, por lo que no es posible auditar sesgos de genero, raza u otros.
-- El identificador del modelo base (`models/babylm-default_seed-42_1e-3`) parece una ruta local y el enlace asociado puede no resolver en HuggingFace, lo que dificulta la trazabilidad completa del entrenamiento.
+- El identificador del modelo base (`models/babylm-default_seed-42_1e-3`) parece una ruta local y el enlace asociado puede no resolver en Hugging Face, lo que dificulta la trazabilidad completa del entrenamiento.
 - El repositorio ocupa 3,1 GB para un modelo de 110 M de parametros: conviene verificar que no se descargan checkpoints intermedios innecesarios.
 - Las fechas de creacion y actualizacion registradas (2026-09-10 y 2026-09-11) son anomalas y sugieren metadatos poco fiables.
 - El modelo acumula 0 descargas y 0 likes, sin senales de mantenimiento o soporte por parte del autor.
@@ -95,7 +95,7 @@ Los datos de los modelos comparables proceden de sus fichas publicas y se incluy
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/babylm-opt-sva-trial-11450597
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/babylm-opt-sva-trial-11450597
 - Modelo base referenciado en la model card: https://huggingface.co/models/babylm-default_seed-42_1e-3 (ruta indicada por el autor; puede no resolver)
 - Dataset de entrenamiento: https://huggingface.co/datasets/qing-yao/slightly-cleaner-babylm
 - La busqueda web realizada no devolvio enlaces tecnicos relevantes sobre este modelo: los resultados se limitan a paginas generales de YouTube sin relacion con el checkpoint.

@@ -85,5 +85,5 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder
+- Modelo en Hugging Face: https://huggingface.co/ccore/Qwen3.5-4B-GLB-3D-Coder
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

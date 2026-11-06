@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h011.sft-v4.step_300 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace (modelo base) |
+| agentic-ptb/grok.h011.sft-v4.step_300 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face (modelo base) |
 | Grok 4.6 (SpaceXAI) | no disponible | no disponible | propietaria | API de SpaceXAI |
 
 La comparación directa con Grok 4.6 no es posible por diferencias de tamaño, licencia y disponibilidad. El modelo base Qwen3.5-9B-Base es el punto de referencia natural, pero no se han publicado métricas comparativas para este checkpoint.
@@ -76,7 +76,7 @@ La comparación directa con Grok 4.6 no es posible por diferencias de tamaño, l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/agentic-ptb/grok.h011.sft-v4.step_300
+- Repositorio en Hugging Face: https://huggingface.co/agentic-ptb/grok.h011.sft-v4.step_300
 - Sitio web de Grok (SpaceXAI): https://grok.com/
 - Documentación de modelos de SpaceXAI: https://docs.x.ai/developers/models
 - Leaderboard BenchLM (agosto 2026): https://benchlm.ai/

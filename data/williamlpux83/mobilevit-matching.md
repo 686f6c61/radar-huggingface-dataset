@@ -70,5 +70,5 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/williamlpux83/mobilevit-matching
+- Hugging Face: https://huggingface.co/williamlpux83/mobilevit-matching
 - Perfil del autor: https://huggingface.co/williamlpux83/models

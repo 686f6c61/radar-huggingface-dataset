@@ -92,7 +92,7 @@ No se dispone de resultados comparativos con alternativas como Qwen2.5-7B-Instru
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom-real60-1ep
+- Pagina de Hugging Face del modelo: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-telecom-real60-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio del benchmark tau2-bench: no disponible en la informacion proporcionada
 - Paper o blog del metodo OEL: no disponible en la informacion proporcionada

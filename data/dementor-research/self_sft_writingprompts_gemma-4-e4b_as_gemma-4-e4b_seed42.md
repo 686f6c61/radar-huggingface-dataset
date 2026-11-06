@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (Low-Rank Adaptation) denominado `se
 
 La relevancia de este modelo reside en que demuestra un flujo de trabajo de adaptación eficiente sobre la familia Gemma 4 mediante LoRA, reduciendo significativamente el coste computacional frente a un ajuste fino completo. Sin embargo, la documentación proporcionada por el autor es extremadamente escasa: la model card no incluye información sobre el dataset de entrenamiento, hiperparámetros, evaluación, licencia o idiomas soportados, lo que limita su uso directo en producción sin una evaluación adicional por parte del usuario.
 
-El modelo se publicó el 16 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta. Dado el estado incompleto de la documentación, esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en las características conocidas del modelo base Gemma 4 E4B.
+El modelo se publicó el 16 de agosto de 2026 y no registra descargas ni valoraciones en el momento de la consulta. Dado el estado incompleto de la documentación, esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en las características conocidas del modelo base Gemma 4 E4B.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - El adaptador LoRA pesa 0,4 GB, por lo que la carga en memoria del adaptador en si es minima.
 - La VRAM necesaria para inferencia depende del modelo base `google/gemma-4-E4B-it`, cuyas especificaciones de parametros y requisitos de memoria no se han proporcionado en esta ficha.
 - Se desconoce si el modelo cabe en GPUs de consumo (por ejemplo, RTX 4090) o si requiere GPUs profesionales (A100, H100).
-- Las opciones de despliegue tipicas para adaptadores PEFT incluyen la libreria `transformers` de HuggingFace con `peft`, asi como servidores de inferencia como vLLM o TGI si se fusiona el adaptador con el modelo base.
+- Las opciones de despliegue tipicas para adaptadores PEFT incluyen la libreria `transformers` de Hugging Face con `peft`, asi como servidores de inferencia como vLLM o TGI si se fusiona el adaptador con el modelo base.
 - No se dispone de datos de latencia ni throughput.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables, y e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/self_sft_writingprompts_gemma-4-e4b_as_gemma-4-e4b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/self_sft_writingprompts_gemma-4-e4b_as_gemma-4-e4b_seed42
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Referencia citada en la model card (estimacion de emisiones de carbono): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700

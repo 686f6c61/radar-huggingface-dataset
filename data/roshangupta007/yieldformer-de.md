@@ -6,7 +6,7 @@ YieldFormer-DE es un modelo de predicción de rendimiento agrícola desarrollado
 
 Técnicamente no es un modelo único, sino un ensemble de tres arquitecturas transformer para series temporales multivariantes (iTransformer, Temporal Fusion Transformer y PatchTST) combinadas con pesos iguales y corregidas mediante una memoria de error por distrito que recoge la sobreestimación o subestimación reciente de cada distrito. Cada red se entrena por campaña móvil (años de test de 2010 a 2025) y por semilla, con ajuste fino posterior por cultivo.
 
-Los checkpoints están publicados en HuggingFace bajo licencia MIT, con un repositorio de 10 GB que incluye los pesos en formato PyTorch (`.pt`), artefactos de configuración (`.pipeline.json`, `.finetune.json`) y pronósticos sellados para 2026, 2027 y 2028 con huellas SHA-256 registradas en el historial git del proyecto. El modelo se evalúa con una precisión del 88,8 % (100 menos el error porcentual absoluto medio) sobre 37.383 pares distrito-cultivo-año en 363 distritos, frente al 86,9 % de la media distrital a cinco años.
+Los checkpoints están publicados en Hugging Face bajo licencia MIT, con un repositorio de 10 GB que incluye los pesos en formato PyTorch (`.pt`), artefactos de configuración (`.pipeline.json`, `.finetune.json`) y pronósticos sellados para 2026, 2027 y 2028 con huellas SHA-256 registradas en el historial git del proyecto. El modelo se evalúa con una precisión del 88,8 % (100 menos el error porcentual absoluto medio) sobre 37.383 pares distrito-cultivo-año en 363 distritos, frente al 86,9 % de la media distrital a cinco años.
 
 ## Especificaciones técnicas
 
@@ -72,7 +72,7 @@ La ganancia frente a la media a cinco años es de +1,93 puntos porcentuales (int
 
 | Modelo | Tipo | Cobertura | Métrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YieldFormer-DE | Ensemble iTransformer + TFT + PatchTST con memoria de error | 10 cultivos, 363 distritos de Alemania, 2010-2025 | 88,8 % de precisión (100 − MAPE) | MIT (checkpoints) | HuggingFace, código en GitHub, dashboard Streamlit |
+| YieldFormer-DE | Ensemble iTransformer + TFT + PatchTST con memoria de error | 10 cultivos, 363 distritos de Alemania, 2010-2025 | 88,8 % de precisión (100 − MAPE) | MIT (checkpoints) | Hugging Face, código en GitHub, dashboard Streamlit |
 | Media distrital a 5 años | Baseline estadístico | Misma cobertura | 86,9 % | No aplica | Referencia del propio estudio |
 | Normal distrital a largo plazo | Baseline estadístico | Misma cobertura | 86,4 % | No aplica | Referencia del propio estudio |
 
@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de otros modelos comparables de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Roshangupta007/YieldFormer-DE
+- Modelo en Hugging Face: https://huggingface.co/Roshangupta007/YieldFormer-DE
 - Código del proyecto: https://github.com/roshangupta00750/transformer-based-crop-yield-prediction
 - Dashboard en vivo: https://yieldformer-de.streamlit.app
 - Dataset de entrenamiento: https://huggingface.co/datasets/Roshangupta007/YieldFormer-DE-data

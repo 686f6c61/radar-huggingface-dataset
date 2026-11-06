@@ -6,7 +6,7 @@ Tritfold 1.7B ternary · instruct (PTQ1_0) es la variante afinada para instrucci
 
 El problema que aborda es el de la inferencia en entornos con restricciones severas de memoria: el modelo parte de una version ternaria entrenada solo con Wikipedia y despues se destila sobre una mezcla de ultrachat (60%) y wiki (40%), de modo que, segun el autor, "aprende a responder, no a saber". Es decir, gana registro conversacional y capacidad de seguir instrucciones sin mejorar sus conocimientos factuales, que siguen siendo poco fiables a esa tasa de compresion.
 
-Es relevante ahora porque demuestra que la cuantizacion ternaria extrema es viable en modelos de ~2.000 millones de parametros con licencia Apache-2.0 y pesos de menos de medio gigabyte, aunque exige un fork especifico de llama.cpp (rama prism de PrismML) y una receta de muestreo obligatoria. La fecha de publicacion registrada en HuggingFace es el 2 de octubre de 2026 y el repositorio no tiene descargas ni likes en el momento de redactar esta ficha.
+Es relevante ahora porque demuestra que la cuantizacion ternaria extrema es viable en modelos de ~2.000 millones de parametros con licencia Apache-2.0 y pesos de menos de medio gigabyte, aunque exige un fork especifico de llama.cpp (rama prism de PrismML) y una receta de muestreo obligatoria. La fecha de publicacion registrada en Hugging Face es el 2 de octubre de 2026 y el repositorio no tiene descargas ni likes en el momento de redactar esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ La unica comparacion con datos verificables en la informacion disponible es cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/benzeng/tritfold-1.7b-instruct-ptq1_0
+- Modelo en Hugging Face: https://huggingface.co/benzeng/tritfold-1.7b-instruct-ptq1_0
 - Repositorio del proyecto Tritfold: https://github.com/benzeng/tritfold
 - Fork de llama.cpp requerido (rama `prism`): https://github.com/PrismML-Eng/llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -89,11 +89,11 @@ El modelo también se evalúa truncado a 512 dimensiones, con 52,82 en NanoBEIR-
 
 | Modelo | Tipo | Parámetros | Dims | Idiomas | MMTEB Retrieval | Licencia | Disponibilidad |
 |---|---|---:|---:|---|---:|---|---|
-| bekko-static-embedding-v1 | Estático | 204,8 M | 1024 (Matryoshka) | 40 | 49,96 | MIT | HuggingFace, ONNX, OpenVINO |
-| static-similarity-mrl-multilingual-v1 | Estático | no disponible | 1024 (Matryoshka) | Multilingüe | 41,21 | no disponible | HuggingFace |
-| potion-multilingual-128M | Estático | 128 M (según nombre) | 256 | Multilingüe | 37,86 | no disponible | HuggingFace |
-| multilingual-e5-small | Transformer (12 capas) | 21,6 M activos | 384 | Multilingüe | 50,90 | no disponible | HuggingFace |
-| bekko-embedding-v1-a8m | Transformer (4 capas) | 7,7 M activos | no disponible | Multilingüe | 56,20 | no disponible | HuggingFace |
+| bekko-static-embedding-v1 | Estático | 204,8 M | 1024 (Matryoshka) | 40 | 49,96 | MIT | Hugging Face, ONNX, OpenVINO |
+| static-similarity-mrl-multilingual-v1 | Estático | no disponible | 1024 (Matryoshka) | Multilingüe | 41,21 | no disponible | Hugging Face |
+| potion-multilingual-128M | Estático | 128 M (según nombre) | 256 | Multilingüe | 37,86 | no disponible | Hugging Face |
+| multilingual-e5-small | Transformer (12 capas) | 21,6 M activos | 384 | Multilingüe | 50,90 | no disponible | Hugging Face |
+| bekko-embedding-v1-a8m | Transformer (4 capas) | 7,7 M activos | no disponible | Multilingüe | 56,20 | no disponible | Hugging Face |
 
 Regla de selección indicada por el autor: elegir bekko-static-embedding-v1 cuando el coste de codificación deba ser mínimo (corpus muy grandes en CPU o presupuestos de latencia ajustados); elegir bekko-embedding-v1-a8m cuando prime la calidad de retrieval y se pueda ejecutar un pequeño Transformer.
 
@@ -111,7 +111,7 @@ Regla de selección indicada por el autor: elegir bekko-static-embedding-v1 cuan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hotchpotch/bekko-static-embedding-v1
+- Modelo en Hugging Face: https://huggingface.co/hotchpotch/bekko-static-embedding-v1
 - Blog del autor con la descripción completa y comparativas: https://huggingface.co/blog/hotchpotch/bekko-static-embedding
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotchpotch/bekko-embedding-v1-unsupervised
 - Modelo contextual de la misma familia (bekko-embedding-v1-a8m): https://huggingface.co/hotchpotch/bekko-embedding-v1-a8m

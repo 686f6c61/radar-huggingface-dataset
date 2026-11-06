@@ -97,7 +97,7 @@ La comparativa se establece frente a alternativas de tamaño comparable y orient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/llama3.2-1b-CoT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/llama3.2-1b-CoT-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/harshwardhanjadhav/llama3.2-1b-CoT
 - Modelo del que parte el ajuste: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/open-thoughts/OpenThoughts-114k

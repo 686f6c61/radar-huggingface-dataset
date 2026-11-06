@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Amshaker/WorldMem`, publicado por el usuario Amshaker en HuggingFace, es un repositorio de gran tamaño (2084,1 GB) que, por sus dimensiones, parece contener un modelo de lenguaje de gran escala o un conjunto de pesos completos. Sin embargo, la ficha pública no incluye información técnica esencial: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, el pipeline de uso ni la licencia. Tampoco se han publicado descripciones, ejemplos o documentación adicional en el repositorio.
+El modelo `Amshaker/WorldMem`, publicado por el usuario Amshaker en Hugging Face, es un repositorio de gran tamaño (2084,1 GB) que, por sus dimensiones, parece contener un modelo de lenguaje de gran escala o un conjunto de pesos completos. Sin embargo, la ficha pública no incluye información técnica esencial: no se especifican la arquitectura, el número de parámetros, la longitud de contexto, el pipeline de uso ni la licencia. Tampoco se han publicado descripciones, ejemplos o documentación adicional en el repositorio.
 
 La ausencia de datos hace imposible evaluar sus capacidades, rendimiento o idoneidad para casos de uso concretos. El repositorio fue creado en febrero de 2026 y actualizado en agosto de 2026, pero no ha recibido descargas (0) y cuenta con un único "like", lo que sugiere que se trata de un proyecto reciente o poco difundido. Hasta que el autor publique especificaciones detalladas, cualquier uso del modelo debe considerarse experimental y bajo la responsabilidad del usuario.
 
@@ -60,4 +60,4 @@ No disponible. No se conocen modelos comparables con los que establecer una comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Amshaker/WorldMem
+- Repositorio Hugging Face: https://huggingface.co/Amshaker/WorldMem

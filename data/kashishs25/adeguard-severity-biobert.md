@@ -46,7 +46,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,5 GB en FP32 y 0,25 GB en FP16, sin contar overhead. Se recomienda al menos 1-2 GB de VRAM para uso comodo.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, GTX 1050, RTX 3060, A100). No requiere GPU de gama alta.
 - Si cabe en GPU de consumo: si, es un modelo compacto que puede ejecutarse en GPUs de consumo.
-- Opciones de despliegue: compatible con la libreria transformers, text-embeddings-inference y endpoints de HuggingFace. Tambien puede desplegarse en CPU o mediante ONNX.
+- Opciones de despliegue: compatible con la libreria transformers, text-embeddings-inference y endpoints de Hugging Face. Tambien puede desplegarse en CPU o mediante ONNX.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -63,6 +63,6 @@ No disponible. No se han proporcionado datos de rendimiento comparativo en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kashishs25/adeguard-severity-biobert
+- Hugging Face: https://huggingface.co/kashishs25/adeguard-severity-biobert
 - GitHub ADEGuard (PrameetKumar): https://github.com/PrameetKumar/ADEGuard
 - GitHub ADEGuard (Sugiuma): https://github.com/Sugiuma/ADEGuard

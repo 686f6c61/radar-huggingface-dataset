@@ -79,10 +79,10 @@ La model card referencia 24 ejecuciones de la misma tarea con cuatro familias de
 
 | Modelo | Parametros | Tarea | Error open-loop | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T-N1.7-3B (este checkpoint) | 3,14 B | Pick-and-place, XHand1 / DexMate Vega | El más bajo en todas las tareas (valores en la tabla anterior) | other | Público en HuggingFace, 0 descargas |
-| ACT (`..._act260919`) | no disponible | Misma tarea, misma configuración | No publicado en esta ficha | no disponible | Público en HuggingFace |
-| Diffusion Policy (`..._dp260919`) | no disponible | Misma tarea, misma configuración | No publicado en esta ficha | no disponible | Público en HuggingFace |
-| pi0.5 (`..._pi05260918`) | no disponible | Misma tarea, misma configuración | No publicado en esta ficha | no disponible | Público en HuggingFace |
+| GR00T-N1.7-3B (este checkpoint) | 3,14 B | Pick-and-place, XHand1 / DexMate Vega | El más bajo en todas las tareas (valores en la tabla anterior) | other | Público en Hugging Face, 0 descargas |
+| ACT (`..._act260919`) | no disponible | Misma tarea, misma configuración | No publicado en esta ficha | no disponible | Público en Hugging Face |
+| Diffusion Policy (`..._dp260919`) | no disponible | Misma tarea, misma configuración | No publicado en esta ficha | no disponible | Público en Hugging Face |
+| pi0.5 (`..._pi05260918`) | no disponible | Misma tarea, misma configuración | No publicado en esta ficha | no disponible | Público en Hugging Face |
 
 No se dispone de datos de parámetros, contexto ni licencia de los modelos comparados en la información proporcionada; solo se sabe que GR00T obtuvo el error más bajo en cada tarea según el autor.
 
@@ -100,7 +100,7 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_gr00t3b260918
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_gr00t3b260918
 - Ejecución ACT: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_act260919
 - Ejecución ACT con táctil: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_acttactile260919
 - Ejecución Diffusion Policy: https://huggingface.co/tarzanagh/ckpt_toyshelfteleop_pickplace_4cam260917_dp260919

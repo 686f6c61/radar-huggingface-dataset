@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Khalyie/mnist_model`, publicado por el usuario Khalyie en HuggingFace, es un artefacto del que no existe documentacion tecnica publicada: la model card se limita al campo de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El identificador del repositorio sugiere una relacion con MNIST (base de datos de digitos manuscritos), pero no hay ningun dato oficial que confirme la tarea, el tipo de modelo ni el pipeline asociado.
+El repositorio `Khalyie/mnist_model`, publicado por el usuario Khalyie en Hugging Face, es un artefacto del que no existe documentacion tecnica publicada: la model card se limita al campo de licencia (`apache-2.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El identificador del repositorio sugiere una relacion con MNIST (base de datos de digitos manuscritos), pero no hay ningun dato oficial que confirme la tarea, el tipo de modelo ni el pipeline asociado.
 
 La relevancia actual de este repositorio es practicamente nula para evaluaciones de produccion. Registra 0 descargas, 1 like, una fecha de creacion y actualizacion separadas por 22 segundos (12 de septiembre de 2026, 09:49:41 y 09:50:03 respectivamente) y un tamano de repositorio de 0.0 GB, lo que indica la ausencia de ficheros de pesos en el momento de la indexacion. No se ha publicado informacion sobre arquitectura, numero de parametros ni longitud de contexto.
 
@@ -53,7 +53,7 @@ Advertencia previa: dado que no existe documentacion tecnica ni pesos publicados
 - Digitalizacion de formularios manuscritos: un clasificador de digitos podria procesar recortes de campos numericos (codigos postales, importes, identificadores) segmentados previamente por un detector de regiones, devolviendo una etiqueta 0-9 por recorte. Requiere confirmar el formato de entrada y la existencia de pesos.
 - Lectura automatica de matriculas o contadores: en pipelines de vision clasica, el clasificador actuaria como etapa final sobre caracteres ya aislados; seria adecuado solo si su precision en digitos manuscritos supera a la de un OCR generico en ese dominio concreto.
 - Clasificacion de cheques y transferencias: extraccion de digitos de campos numericos escritos a mano, con umbral de confianza por caracter para derivar a revision humana los casos dudosos.
-- Prototipado academico y docencia: MNIST es el ejemplo canonico en cursos de aprendizaje automatico; el repositorio podria servir como referencia de estructura de publicacion en HuggingFace mas que como modelo utilizable.
+- Prototipado academico y docencia: MNIST es el ejemplo canonico en cursos de aprendizaje automatico; el repositorio podria servir como referencia de estructura de publicacion en Hugging Face mas que como modelo utilizable.
 - Prueba de integracion de pipelines de vision: validar el cableado de un sistema de inferencia (carga de modelo, preprocesado 28x28, postprocesado de logits) antes de sustituir el modelo por uno entrenado con datos propios.
 - Generacion de datos sinteticos y aumento de dataset: si el modelo fuese generativo sobre MNIST, podria emplearse para aumentar muestras de entrenamiento; esto exigiria confirmar que la tarea es generativa y no discriminativa.
 
@@ -93,7 +93,7 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Khalyie/mnist_model
+- Hugging Face: https://huggingface.co/Khalyie/mnist_model
 - Model card: no disponible (la pagina del repositorio solo expone el campo `license: apache-2.0`)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

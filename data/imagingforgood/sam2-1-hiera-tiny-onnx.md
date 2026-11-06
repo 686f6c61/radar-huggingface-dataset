@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sam2.1-hiera-tiny-onnx (este) | no disponible (repo 0,2 GB) | 1024x1024 px | ONNX fp32/fp16 | Apache-2.0 | HuggingFace |
-| facebook/sam2.1-hiera-tiny | no disponible | 1024x1024 px | PyTorch | Apache-2.0 | HuggingFace |
-| onnx-community/sam2.1-hiera-tiny-ONNX | no disponible | 1024x1024 px | ONNX (incluye int8, q4) | Apache-2.0 | HuggingFace |
+| sam2.1-hiera-tiny-onnx (este) | no disponible (repo 0,2 GB) | 1024x1024 px | ONNX fp32/fp16 | Apache-2.0 | Hugging Face |
+| facebook/sam2.1-hiera-tiny | no disponible | 1024x1024 px | PyTorch | Apache-2.0 | Hugging Face |
+| onnx-community/sam2.1-hiera-tiny-ONNX | no disponible | 1024x1024 px | ONNX (incluye int8, q4) | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base, ya que no se dispone de datos de rendimiento de alternativas de otros desarrolladores en la información proporcionada.
 
@@ -80,7 +80,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 
 ## Enlaces
 
-- [HuggingFace: imagingforgood/sam2.1-hiera-tiny-onnx](https://huggingface.co/imagingforgood/sam2.1-hiera-tiny-onnx)
+- [Hugging Face: imagingforgood/sam2.1-hiera-tiny-onnx](https://huggingface.co/imagingforgood/sam2.1-hiera-tiny-onnx)
 - [Modelo base: facebook/sam2.1-hiera-tiny](https://huggingface.co/facebook/sam2.1-hiera-tiny)
 - [Exportación original: onnx-community/sam2.1-hiera-tiny-ONNX](https://huggingface.co/onnx-community/sam2.1-hiera-tiny-ONNX)
 - [Código: facebookresearch/sam2](https://github.com/facebookresearch/sam2)

@@ -95,7 +95,7 @@ A diferencia de los modelos TinyStories de Microsoft, que generan texto razonabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RonBuildsAI/sleep-form-rescue-count
+- Modelo en Hugging Face: https://huggingface.co/RonBuildsAI/sleep-form-rescue-count
 - Dataset de entrenamiento (TinyStories): https://huggingface.co/datasets/roneneldan/TinyStories
 - Paper de TinyStories (arXiv:2305.07759, referenciado en las tags del repositorio): https://arxiv.org/abs/2305.07759
 - Tabla completa de resultados por semilla: `results/measured_table.csv` (dentro del repositorio)

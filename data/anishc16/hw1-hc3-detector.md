@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anishc16/hw1-hc3-detector` es un clasificador binario de texto afinado (*fine-tuned*) a partir de `sentence-transformers/all-MiniLM-L6-v2` para distinguir respuestas escritas por humanos de respuestas generadas por ChatGPT en el corpus HC3. Lo publica el usuario anishc16 en HuggingFace bajo licencia Apache 2.0, con un único commit de pesos en formato safetensors y un tamano de repositorio de 0,1 GB. El modelo tiene 22.713.986 parametros totales, coherentes con la arquitectura MiniLM de tipo encoder BERT sobre la que se construye.
+El modelo `anishc16/hw1-hc3-detector` es un clasificador binario de texto afinado (*fine-tuned*) a partir de `sentence-transformers/all-MiniLM-L6-v2` para distinguir respuestas escritas por humanos de respuestas generadas por ChatGPT en el corpus HC3. Lo publica el usuario anishc16 en Hugging Face bajo licencia Apache 2.0, con un único commit de pesos en formato safetensors y un tamano de repositorio de 0,1 GB. El modelo tiene 22.713.986 parametros totales, coherentes con la arquitectura MiniLM de tipo encoder BERT sobre la que se construye.
 
 El problema que resuelve es la deteccion de texto generado por IA en dominios de respuesta abierta (preguntas y respuestas), un caso de uso recurrente en moderacion de foros, verificacion de contenido academico y filtrado de contenido sintetico. Frente a un clasificador base con una exactitud de referencia de 0,8449, el ajuste reportado por el autor alcanza 0,9959 de exactitud en el conjunto de test del propio corpus HC3, lo que indica una especializacion fuerte en la distribucion de ese dataset concreto.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para M
 - VRAM estimada en fp16/bf16: aproximadamente 45 MB de pesos, con un consumo total tambien inferior a 1 GB.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente; no se requiere A100, H100 ni RTX 4090. Una GTX 1050 Ti, una T4 o incluso una iGPU moderna pueden ejecutar el modelo.
 - Cabe holgadamente en GPU de consumo: si, en Practicamente cualquier GPU de consumo de los ultimos diez anos, y tambien en CPU.
-- Opciones de despliegue: al ser un encoder BERT en safetensors, es compatible con la libreria `transformers` de HuggingFace; el despliegue con vLLM, llama.cpp, Ollama o TGI no esta documentado en la informacion disponible y requeriria conversion o adaptacion al tratarse de un clasificador y no de un modelo generativo.
+- Opciones de despliegue: al ser un encoder BERT en safetensors, es compatible con la libreria `transformers` de Hugging Face; el despliegue con vLLM, llama.cpp, Ollama o TGI no esta documentado en la informacion disponible y requeriria conversion o adaptacion al tratarse de un clasificador y no de un modelo generativo.
 - Latencia y throughput: no disponibles. Dado el tamano del modelo, la inferencia por lotes en GPU deberia ser del orden de miles de secuencias por segundo, pero no hay cifras publicadas que lo confirmen.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 | Modelo | Parametros | Contexto | Rendimiento en HC3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anishc16/hw1-hc3-detector | 22.713.986 | no disponible | 0,9959 de exactitud en test (segun el autor) | Apache 2.0 | HuggingFace |
+| anishc16/hw1-hc3-detector | 22.713.986 | no disponible | 0,9959 de exactitud en test (segun el autor) | Apache 2.0 | Hugging Face |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone en la informacion proporcionada de datos sobre modelos comparables
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anishc16/hw1-hc3-detector
+- Hugging Face: https://huggingface.co/anishc16/hw1-hc3-detector
 - Modelo base referenciado en la model card: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2

@@ -23,7 +23,7 @@ Por tanto, su relevancia no es la de un modelo desplegable, sino la de un docume
 
 ## Arquitectura y entrenamiento
 
-No hay arquitectura que describir. El repositorio no contiene definicion de modelo, configuracion de capas, tokenizer ni codigo de entrenamiento. Las etiquetas `transformer` y `safetensors` son metadatos anadidos al crear el repositorio en HuggingFace y no implican la existencia de un modelo con esa arquitectura.
+No hay arquitectura que describir. El repositorio no contiene definicion de modelo, configuracion de capas, tokenizer ni codigo de entrenamiento. Las etiquetas `transformer` y `safetensors` son metadatos anadidos al crear el repositorio en Hugging Face y no implican la existencia de un modelo con esa arquitectura.
 
 Tampoco se documenta proceso de entrenamiento: no se indica numero de tokens, composicion del dataset, ni uso de RLHF, DPO o similar. El unico contenido sustantivo declarado es el documento `reading.md`, que plantea el alcance de la pregunta de investigacion, una comparacion propuesta con baselines emparejados, el contexto de evaluacion sobre AudioSet y VGGSound, comprobaciones de reproducibilidad y modos de fallo. La model card insiste en que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -86,5 +86,5 @@ No disponible. No es posible comparar frente a otros modelos de audio-visual lea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yingwu50/audio-visual-learning-rc1-2023
+- Hugging Face: https://huggingface.co/yingwu50/audio-visual-learning-rc1-2023
 - No se han encontrado en la informacion disponible paper, blog, repositorio de codigo ni demo asociados.

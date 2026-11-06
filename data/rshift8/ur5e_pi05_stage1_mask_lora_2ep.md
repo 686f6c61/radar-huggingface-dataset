@@ -86,6 +86,6 @@ No disponible. No se ha proporcionado información sobre otros checkpoints compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rshift8/ur5e_pi05_stage1_mask_lora_2ep
+- Modelo en Hugging Face: https://huggingface.co/rshift8/ur5e_pi05_stage1_mask_lora_2ep
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

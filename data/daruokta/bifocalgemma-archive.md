@@ -20,7 +20,7 @@ La relevancia de este repositorio es documental y de trazabilidad: permite a qui
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (pesos principales); el repositorio incluye tambien ficheros LFS y JSON de manifiesto |
-| Tamano del repositorio | 33,8 GB en HuggingFace; 35,30 GB segun el manifiesto del autor (37.904.428.067 bytes) |
+| Tamano del repositorio | 33,8 GB en Hugging Face; 35,30 GB segun el manifiesto del autor (37.904.428.067 bytes) |
 | Numero de ficheros | 3.111 |
 | Subrepositorios consolidados | 12 (10 de tipo model, 2 de tipo dataset) |
 | Fecha de archivado | 2026-11-02 |
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/daruokta/bifocalgemma-archive
+- Repositorio Hugging Face: https://huggingface.co/daruokta/bifocalgemma-archive
 - Ejecucion unificada sucesora: https://huggingface.co/daruokta/bifocalgemma-2026-11-02
 - Manifiesto de archivo (referenciado en la model card): `ARCHIVE_MANIFEST.json` dentro del propio repositorio
 - Repositorios fuente archivados (referenciados en la model card): `daruokta/bifocalgemma-sft`, `daruokta/bifocalgemma-checkpoints-backup-20261023`, `daruokta/bifocalgemma-v2-e4b-it`, `daruokta/bifocalgemma-v2-e2b-it`, `daruokta/bifocalgemma-v2-e4b-e4b`, `daruokta/bifocalgemma-v2-e2b-e2b`, `daruokta/bifocalgemma-v2-4it-2it`, `daruokta/bifocalgemma-v2-4base-2it`, `daruokta/bifocalgemma-v2-2it-2it`, `daruokta/bifocalgemma-v2-2base-2it`, `daruokta/bifocalgemma-v2-assets`, `daruokta/bifocalgemma-pilot-results`

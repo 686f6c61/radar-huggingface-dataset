@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42-r64` es un artefacto publicado en HuggingFace por el usuario AlinaGonch. Todo apunta, a partir del propio identificador del repositorio, a un ajuste fino de tipo LoRA (el sufijo `r64` sugiere rango 64) sobre una base IBM Granite 4.1 de 3B parámetros, entrenado sobre el dataset SQuAD con una proporción del 90 % de los datos (`ratio-0.90`) y semilla 42. La model card está autogenerada y vacía: todas las secciones relevantes figuran como `[More Information Needed]`, por lo que no hay información oficial del autor sobre datos de entrenamiento, licencia, idiomas o evaluación.
+El modelo `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42-r64` es un artefacto publicado en Hugging Face por el usuario AlinaGonch. Todo apunta, a partir del propio identificador del repositorio, a un ajuste fino de tipo LoRA (el sufijo `r64` sugiere rango 64) sobre una base IBM Granite 4.1 de 3B parámetros, entrenado sobre el dataset SQuAD con una proporción del 90 % de los datos (`ratio-0.90`) y semilla 42. La model card está autogenerada y vacía: todas las secciones relevantes figuran como `[More Information Needed]`, por lo que no hay información oficial del autor sobre datos de entrenamiento, licencia, idiomas o evaluación.
 
 Se trata de un experimento de ajuste fino orientado a question answering extractivo (SQuAD), no de un modelo de propósito general publicado con documentación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0,5 GB. No hay pipeline declarado, ni licencia especificada, ni idiomas soportados, ni resultados de benchmarks.
 
@@ -48,7 +48,7 @@ No hay informacion verificable sobre numero de tokens de entrenamiento, composic
 - Reproduccion de experimentos academicos: adecuado como checkpoint de referencia en estudios de ablacion sobre SQuAD.
 - Prototipado de asistentes de lectura de documentos en ingles: si la base Granite 3B lo permite, se podria integrar en un pipeline de QA sobre texto plano.
 - Fine-tuning posterior (continued fine-tuning): punto de partida para experimentos derivados, dado su tamano relativamente reducido (0,5 GB).
-- Docencia y formacion: ejemplo practico de publicacion de un adaptador en HuggingFace con model card autogenerada.
+- Docencia y formacion: ejemplo practico de publicacion de un adaptador en Hugging Face con model card autogenerada.
 
 En todos los casos, la ausencia de licencia, idiomas y evaluacion impide recomendar su uso en produccion.
 
@@ -73,10 +73,10 @@ Dado que no hay datos verificables de rendimiento de este checkpoint, la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| granite41-3b-squad-ratio-0.90-seed-42-r64 | no disponible (nombre indica 3B) | no disponible | no disponible | HuggingFace, 0 descargas |
-| IBM Granite 4.2 3B (familia base citada en la busqueda) | 3B | no disponible | no disponible | IBM / HuggingFace |
-| IBM Granite 4.1 3B (base presunta) | 3B | no disponible | no disponible | IBM / HuggingFace |
-| Otros modelos densos de ~3B (Qwen, Llama) | 3B aprox. | no disponible | no disponible | HuggingFace |
+| granite41-3b-squad-ratio-0.90-seed-42-r64 | no disponible (nombre indica 3B) | no disponible | no disponible | Hugging Face, 0 descargas |
+| IBM Granite 4.2 3B (familia base citada en la busqueda) | 3B | no disponible | no disponible | IBM / Hugging Face |
+| IBM Granite 4.1 3B (base presunta) | 3B | no disponible | no disponible | IBM / Hugging Face |
+| Otros modelos densos de ~3B (Qwen, Llama) | 3B aprox. | no disponible | no disponible | Hugging Face |
 
 No disponible una comparativa cuantitativa de rendimiento por ausencia de benchmarks publicados.
 
@@ -94,7 +94,7 @@ No disponible una comparativa cuantitativa de rendimiento por ausencia de benchm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42
+- Hugging Face: https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42
 - Variante relacionada del mismo autor (8B, ratio 0.30): https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42
 - Ficha indexada en essamamdani.com: https://essamamdani.com/ai-models/hf-alinagonch-granite41-3b-squad-ratio-0-90-seed-42
 - Documentacion IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2

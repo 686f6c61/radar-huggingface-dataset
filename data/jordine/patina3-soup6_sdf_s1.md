@@ -62,7 +62,7 @@ Dado que el adaptador LoRA se carga sobre el modelo base Llama-3.1-8B, los requi
 - VRAM estimada para inferencia: entre 16 GB y 24 GB en funcion de la cuantizacion. El modelo en precision FP16 ocupa aproximadamente 16 GB; con cuantizacion INT8 baja a unos 8 GB; con cuantizacion INT4 (GPTQ/AWQ) se situa en torno a 5-6 GB.
 - GPU recomendadas: NVIDIA RTX 4090 (24 GB), RTX 3090 (24 GB), A100 (40/80 GB), H100 (80 GB). Para cuantizaciones INT4, una RTX 3060 de 12 GB o RTX 4070 de 12 GB podria ser suficiente.
 - En consumer GPU: si, con cuantizacion INT4 cabe en GPUs de 8-12 GB, aunque con menor velocidad de generacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, text-generation-inference (TGI), HuggingFace Transformers con PEFT. Para el adaptador LoRA, es necesario cargar primero el modelo base y despues el adaptador mediante la libreria PEFT.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, text-generation-inference (TGI), Hugging Face Transformers con PEFT. Para el adaptador LoRA, es necesario cargar primero el modelo base y despues el adaptador mediante la libreria PEFT.
 - Latencia y throughput: no disponible para este adaptador especifico. El modelo base Llama-3.1-8B en una A100 genera aproximadamente 50-100 tokens/segundo en FP16, y entre 100-200 tokens/segundo con cuantizacion INT4 y vLLM.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jordine/patina3-soup6_sdf_s1
+- Repositorio Hugging Face: https://huggingface.co/Jordine/patina3-soup6_sdf_s1
 - Modelo base (Meta Llama-3.1-8B): https://huggingface.co/meta-llama/Llama-3.1-8B
 - Documentacion de PEFT: https://huggingface.co/docs/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685

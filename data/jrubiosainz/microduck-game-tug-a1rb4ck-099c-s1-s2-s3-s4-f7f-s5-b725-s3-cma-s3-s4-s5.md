@@ -71,11 +71,11 @@ Para referencia, la política base `microduck-tug` de `a1rb4Ck` en revisión `09
 
 | Modelo | Parámetros | Contexto | Puntuación de rating | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este archivo (`jrubiosainz/...cma-s3-s4-s5`) | no disponible (tabla `L` de 508 filas + red) | no aplica | 165,89 / 165,97 / 165,64 / 166,54 / 167,41 cm (semillas 1-5) | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `099ced00`) | no disponible | no aplica | 166,19724988937378 cm | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `f7f7705b`) | no disponible | no aplica | 166,22851252555847 cm | Apache 2.0 | HuggingFace |
-| `a1rb4Ck/microduck-tug` (rev. `b725cd39`) | no disponible | no aplica | 166,23209476470947 cm | Apache 2.0 | HuggingFace |
-| `rumezhak/microduck-tug-tab-v2` (rev. `b63e3587`) | no disponible | no aplica | 165,1954472064972 cm | no disponible en la información | HuggingFace |
+| Este archivo (`jrubiosainz/...cma-s3-s4-s5`) | no disponible (tabla `L` de 508 filas + red) | no aplica | 165,89 / 165,97 / 165,64 / 166,54 / 167,41 cm (semillas 1-5) | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `099ced00`) | no disponible | no aplica | 166,19724988937378 cm | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `f7f7705b`) | no disponible | no aplica | 166,22851252555847 cm | Apache 2.0 | Hugging Face |
+| `a1rb4Ck/microduck-tug` (rev. `b725cd39`) | no disponible | no aplica | 166,23209476470947 cm | Apache 2.0 | Hugging Face |
+| `rumezhak/microduck-tug-tab-v2` (rev. `b63e3587`) | no disponible | no aplica | 165,1954472064972 cm | no disponible en la información | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,7 +89,7 @@ Para referencia, la política base `microduck-tug` de `a1rb4Ck` en revisión `09
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s3-s4-s5
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-tug-a1rb4ck-099c-s1-s2-s3-s4-f7f-s5-b725-s3-cma-s3-s4-s5
 - Espacio de la Microduck Arena: https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Política base `a1rb4Ck/microduck-tug`: https://huggingface.co/a1rb4Ck/microduck-tug
 - Política `rumezhak/microduck-tug-tab-v2`: https://huggingface.co/rumezhak/microduck-tug-tab-v2

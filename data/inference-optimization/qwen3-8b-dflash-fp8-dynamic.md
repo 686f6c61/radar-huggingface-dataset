@@ -89,7 +89,7 @@ La comparativa cuantitativa entre la variante FP8 y la variante BF16 del mismo d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-FP8-DYNAMIC
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Qwen3-8B-DFlash-FP8-DYNAMIC
 - Drafter de origen (Red Hat AI): https://huggingface.co/RedHatAI/Qwen3-8B-speculator.dflash
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3-8B
 - Documentacion de vLLM (motor requerido para DFlash, referencia general): https://docs.vllm.ai

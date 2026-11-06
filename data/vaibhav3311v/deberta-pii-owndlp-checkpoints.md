@@ -2,7 +2,7 @@
 
 ## Resumen
 
-deberta-pii-owndlp-checkpoints es un modelo de clasificación de tokens publicado en HuggingFace por el usuario Vaibhav3311v, obtenido mediante fine-tuning de microsoft/deberta-v3-base. Su propósito declarado es la detección de información personal identificable (PII) en texto: la model card define 19 etiquetas de entidad que cubren nombre de persona, correo electrónico, teléfono, dirección, organización, secretos de credenciales, fecha de nacimiento, cuenta bancaria, Aadhaar, PAN, GSTIN, IFSC, título profesional, condición médica, nombre de usuario, tarjeta de crédito, IBAN, identificador nacional genérico y dirección IP. La fuerte presencia de identificadores administrativos indios sugiere un corpus de entrenamiento orientado al mercado de India, aunque el autor no documenta el dataset (la model card lo identifica literalmente como «None dataset»).
+deberta-pii-owndlp-checkpoints es un modelo de clasificación de tokens publicado en Hugging Face por el usuario Vaibhav3311v, obtenido mediante fine-tuning de microsoft/deberta-v3-base. Su propósito declarado es la detección de información personal identificable (PII) en texto: la model card define 19 etiquetas de entidad que cubren nombre de persona, correo electrónico, teléfono, dirección, organización, secretos de credenciales, fecha de nacimiento, cuenta bancaria, Aadhaar, PAN, GSTIN, IFSC, título profesional, condición médica, nombre de usuario, tarjeta de crédito, IBAN, identificador nacional genérico y dirección IP. La fuerte presencia de identificadores administrativos indios sugiere un corpus de entrenamiento orientado al mercado de India, aunque el autor no documenta el dataset (la model card lo identifica literalmente como «None dataset»).
 
 Técnicamente es un encoder transformer DeBERTa-v3 de 183.861.543 parámetros, con soporte nativo en la librería transformers y pesos en formato safetensors. No es un modelo generativo: produce logits por token y requiere decodificación y agregación de subwords para obtener entidades. La licencia declarada es MIT y el repositorio ocupa 0,4 GB.
 
@@ -116,8 +116,8 @@ No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microsoft/deberta-v3-base | 183 M | Configuracion estandar de 512 tokens | Encoder preentrenado (base para fine-tuning) | MIT | HuggingFace, ampliamente utilizado |
-| Vaibhav3311v/deberta-pii-owndlp-checkpoints | 183,9 M | Heredado del base; no confirmado en la ficha | Clasificacion de tokens para PII (19 etiquetas) | MIT | HuggingFace, 0 descargas y 0 likes |
+| microsoft/deberta-v3-base | 183 M | Configuracion estandar de 512 tokens | Encoder preentrenado (base para fine-tuning) | MIT | Hugging Face, ampliamente utilizado |
+| Vaibhav3311v/deberta-pii-owndlp-checkpoints | 183,9 M | Heredado del base; no confirmado en la ficha | Clasificacion de tokens para PII (19 etiquetas) | MIT | Hugging Face, 0 descargas y 0 likes |
 | Alternativas de deteccion de PII en el ecosistema (por ejemplo, modelos GLiNER orientados a PII) | No disponible | No disponible | Clasificacion de tokens o NER zero-shot para PII | No disponible | No disponible |
 
 No se dispone de datos verificables de rendimiento, contexto ni licencia de alternativas especificas de deteccion de PII dentro de la informacion proporcionada, por lo que la comparativa cuantitativa no puede completarse. El unico punto de referencia solido es el modelo base, del que este checkpoint hereda arquitectura, tamaño y licencia, y frente al cual solo añade la cabeza de clasificación de 19 etiquetas.
@@ -136,7 +136,7 @@ No se dispone de datos verificables de rendimiento, contexto ni licencia de alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vaibhav3311v/deberta-pii-owndlp-checkpoints
+- Modelo en Hugging Face: https://huggingface.co/Vaibhav3311v/deberta-pii-owndlp-checkpoints
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-base
 - La busqueda web realizada no devolvio ningun enlace relacionado con este modelo ni con deteccion de PII. Los resultados obtenidos corresponden a productos ignifugos de construccion y a una ficha de medicamento, sin ninguna relacion con el modelo descrito, por lo que no se incluyen.
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

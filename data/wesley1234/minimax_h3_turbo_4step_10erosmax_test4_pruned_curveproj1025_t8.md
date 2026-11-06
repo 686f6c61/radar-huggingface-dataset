@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estos LoRAs. La diferenc
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Wesley1234/minimax_h3_turbo_4step_10ErosMax_test4_pruned_curveproj1025_T8
+- Repositorio de Hugging Face: https://huggingface.co/Wesley1234/minimax_h3_turbo_4step_10ErosMax_test4_pruned_curveproj1025_T8
 - Repositorio espejo (t8star): https://huggingface.co/t8star/minimax_h3_turbo_4step_10ErosMax_test4_pruned_curveproj1025_T8
 - LoRA Turbo de referencia (larryvrh): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
 - Proyecto MiniMax-H3-Turbo (ModelTC): https://github.com/ModelTC/Minimax-H3-Turbo

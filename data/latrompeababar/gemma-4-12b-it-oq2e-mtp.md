@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-4-12B-it-oQ2e-mtp` es una cuantización mixta del modelo Gemma 4 12B en su variante instruction-tuned, publicada por el usuario `latrompeababar` en HuggingFace. El checkpoint está empaquetado en formato MLX (Apple Silicon) y ha sido generado con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta por capas en lugar de una cuantización uniforme. El resultado es un checkpoint de 5,4 GB con un promedio efectivo de 3,482 bits por peso, lo que permite ejecutar un modelo de casi 12.000 millones de parámetros en memoria unificada de equipos Apple con recursos moderados.
+`gemma-4-12B-it-oQ2e-mtp` es una cuantización mixta del modelo Gemma 4 12B en su variante instruction-tuned, publicada por el usuario `latrompeababar` en Hugging Face. El checkpoint está empaquetado en formato MLX (Apple Silicon) y ha sido generado con la herramienta oQ (oMLX v0.7.3), que aplica cuantización de precisión mixta por capas en lugar de una cuantización uniforme. El resultado es un checkpoint de 5,4 GB con un promedio efectivo de 3,482 bits por peso, lo que permite ejecutar un modelo de casi 12.000 millones de parámetros en memoria unificada de equipos Apple con recursos moderados.
 
 El modelo conserva tres componentes diferenciados: el modelo de lenguaje (11,925B parámetros lógicos), la torre de visión (0,035B) y una cabeza MTP (Multi-Token Prediction, 0,423B) que se mantiene en BF16. Esta última sugiere que el modelo base incorpora decodificación especulativa nativa o predicción multi-token, una innovación orientada a mejorar el throughput de generación. La presencia de visión y de la cabeza MTP indica que se trata de un modelo multimodal con capacidades de razonamiento extendido.
 
@@ -82,5 +82,5 @@ La comparativa con el modelo original y con cuantizaciones GGUF estándar es la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latrompeababar/gemma-4-12B-it-oQ2e-mtp
+- Hugging Face: https://huggingface.co/latrompeababar/gemma-4-12B-it-oQ2e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx

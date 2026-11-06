@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario mullernathan04, no contiene un modelo de machine learning, sino un articulo academico en formato Markdown sobre la tarea de *text-image retrieval* (recuperacion de imagenes mediante texto). El fichero principal, `paper_017019343_text_image_retrieval.md`, sigue el formato de plantilla LaTeX NeurIPS, con estilo de citacion autor-año, estructura intro-background-approach-eval-conclusion y un estilo de escritura narrativo-progresivo.
+Este repositorio de Hugging Face, publicado por el usuario mullernathan04, no contiene un modelo de machine learning, sino un articulo academico en formato Markdown sobre la tarea de *text-image retrieval* (recuperacion de imagenes mediante texto). El fichero principal, `paper_017019343_text_image_retrieval.md`, sigue el formato de plantilla LaTeX NeurIPS, con estilo de citacion autor-año, estructura intro-background-approach-eval-conclusion y un estilo de escritura narrativo-progresivo.
 
 El repositorio esta licenciado bajo Apache-2.0 y fue creado el 22 de agosto de 2026. No se ha publicado ninguna arquitectura, pesos, parametros ni informacion tecnica de un modelo: se trata exclusivamente de un artefacto textual que describe una investigacion sobre recuperacion multimodal texto-imagen. No registra descargas ni likes en el momento de la consulta.
 
@@ -36,7 +36,7 @@ No aplica. Este repositorio no contiene un modelo entrenado ni documentacion sob
 - **Referencia de formato**: util para investigadores que necesiten ejemplos de estructura de paper NeurIPS en LaTeX.
 - **Repositorio de documentacion**: puede servir como punto de partida para una revision bibliografica sobre recuperacion multimodal, aunque no contiene resultados experimentales publicados.
 - **Material de formacion**: el texto podria usarse como ejemplo de redaccion academica con estilo narrativo-progresivo.
-- **Evaluacion de repositorios HF**: util para estudiar como se catalogan artefactos de investigacion en HuggingFace, aunque no es un caso de uso productivo.
+- **Evaluacion de repositorios HF**: util para estudiar como se catalogan artefactos de investigacion en Hugging Face, aunque no es un caso de uso productivo.
 - **Base para futuras publicaciones**: el autor podria expandir este paper con experimentos y datos reales en una iteracion posterior.
 
 ## Benchmarks y rendimiento
@@ -62,7 +62,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mullernathan04/paper_017019343_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/mullernathan04/paper_017019343_text_image_retrieval
 - Paper relacionado sobre modelos de recuperacion texto-imagen (Llama Nemoretriever): https://arxiv.org/abs/2507.05513
 - Paper sobre composed image retrieval (CoLLM): https://arxiv.org/abs/2503.19910
 - Repositorio de herramientas CLIP Retrieval en GitHub: https://github.com/rom1504/clip-retrieval

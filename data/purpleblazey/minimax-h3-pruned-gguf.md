@@ -71,7 +71,7 @@ No disponible. No se han identificado modelos comparables con especificaciones p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PurpleBlazey/Minimax-H3-pruned-GGUF
+- Repositorio Hugging Face: https://huggingface.co/PurpleBlazey/Minimax-H3-pruned-GGUF
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - VAE de video y audio: https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/vae
 - Herramienta de cuantizacion: https://github.com/leejet/stable-diffusion.cpp

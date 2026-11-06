@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks oficiales ni validación en servido
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `olddoughcanada/microduck-sprint-feedback-derived-905dcf18df5a7592` | 9 nodos d16, 10 tensores | Entrada 61 obs / salida 14 acciones | 0,902 s local (5/5, 33 ejecuciones) | Apache-2.0 | ONNX en HuggingFace, 0 descargas |
-| `jrubiosainz/microduck-game-sprinter-remix14` | Red d16 + capas de búsqueda | Entrada 61 obs / salida 14 acciones | 0,817 s en semillas oficiales (in-sample) | Apache-2.0 | ONNX en HuggingFace |
-| `nikghodki/microduck-sprint-lookup-v1` | Red a1rb4Ck + tres capas de búsqueda | Entrada 61 obs / salida 14 acciones | 0,818 s en semillas oficiales | Apache-2.0 | ONNX en HuggingFace |
+| `olddoughcanada/microduck-sprint-feedback-derived-905dcf18df5a7592` | 9 nodos d16, 10 tensores | Entrada 61 obs / salida 14 acciones | 0,902 s local (5/5, 33 ejecuciones) | Apache-2.0 | ONNX en Hugging Face, 0 descargas |
+| `jrubiosainz/microduck-game-sprinter-remix14` | Red d16 + capas de búsqueda | Entrada 61 obs / salida 14 acciones | 0,817 s en semillas oficiales (in-sample) | Apache-2.0 | ONNX en Hugging Face |
+| `nikghodki/microduck-sprint-lookup-v1` | Red a1rb4Ck + tres capas de búsqueda | Entrada 61 obs / salida 14 acciones | 0,818 s en semillas oficiales | Apache-2.0 | ONNX en Hugging Face |
 
 La comparación se limita a la familia Microduck; no hay modelos comparables fuera de este ecosistema. Las puntuaciones no son directamente comparables: la del candidato es local y no oficial, mientras que las de los ancestros son in-sample sobre las semillas oficiales de la Arena.
 
@@ -87,7 +87,7 @@ La comparación se limita a la familia Microduck; no hay modelos comparables fue
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olddoughcanada/microduck-sprint-feedback-derived-905dcf18df5a7592
+- Modelo en Hugging Face: https://huggingface.co/olddoughcanada/microduck-sprint-feedback-derived-905dcf18df5a7592
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix14
 - Ancestro con búsqueda: https://huggingface.co/nikghodki/microduck-sprint-lookup-v1/tree/e963635b00c76db3d00381b434c8396315045145
 - Microduck Arena (Pollen Robotics): https://huggingface.co/spaces/pollen-robotics/microduck-arena

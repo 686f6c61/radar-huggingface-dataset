@@ -61,7 +61,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/jacobwhiteberg/model_382082472_efficientformer_small)
+- [Repositorio en Hugging Face](https://huggingface.co/jacobwhiteberg/model_382082472_efficientformer_small)
 - [Paper de EfficientFormer (arXiv)](https://arxiv.org/abs/2206.01191)
 - [Repositorio de EfficientFormer en GitHub](https://github.com/snap-research/EfficientFormer)
 - [Artificial Analysis: Small Open Source Models](https://artificialanalysis.ai/models/open-source/small)

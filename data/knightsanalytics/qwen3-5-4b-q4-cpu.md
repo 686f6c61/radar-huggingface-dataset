@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KnightsAnalytics/qwen3.5-4B-q4-cpu es un repositorio de pesos publicado en HuggingFace por el usuario KnightsAnalytics el 25 de octubre de 2026, con un unico tag tecnico (`onnx`) y licencia Apache 2.0. El nombre del repositorio sugiere una variante cuantizada a 4 bits (`q4`) de un modelo de aproximadamente 4.000 millones de parametros de la familia Qwen, empaquetada en formato ONNX y orientada a inferencia en CPU (`cpu`). Ninguna de estas caracteristicas esta confirmada en la model card, que se limita a declarar la licencia.
+KnightsAnalytics/qwen3.5-4B-q4-cpu es un repositorio de pesos publicado en Hugging Face por el usuario KnightsAnalytics el 25 de octubre de 2026, con un unico tag tecnico (`onnx`) y licencia Apache 2.0. El nombre del repositorio sugiere una variante cuantizada a 4 bits (`q4`) de un modelo de aproximadamente 4.000 millones de parametros de la familia Qwen, empaquetada en formato ONNX y orientada a inferencia en CPU (`cpu`). Ninguna de estas caracteristicas esta confirmada en la model card, que se limita a declarar la licencia.
 
 El problema que resolveria es el de servir un modelo de ~4B en hardware sin GPU mediante ONNX Runtime, un escenario habitual en despliegues en el borde, entornos corporativos con virtualizacion sin passthrough de GPU o estaciones de trabajo convencionales. El tamano del repositorio (2,9 GB) es coherente con un tensor de pesos de 4 bits para 4B de parametros mas los ficheros auxiliares de tokenizer y configuracion.
 
@@ -17,7 +17,7 @@ La relevancia practica es limitada por ahora: el repositorio registra 0 descarga
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el sufijo `q4` del nombre sugiere 4 bits (sin confirmar) |
-| Idiomas soportados | no disponible (campo de idiomas vacio en HuggingFace) |
+| Idiomas soportados | no disponible (campo de idiomas vacio en Hugging Face) |
 | Licencia | apache-2.0 |
 | Formato de pesos | ONNX (tag `onnx`); ficheros concretos no disponibles |
 | Tamano del repositorio | 2,9 GB |
@@ -98,7 +98,7 @@ No es posible establecer una comparativa fiable: la model card no identifica el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KnightsAnalytics/qwen3.5-4B-q4-cpu
+- Repositorio en Hugging Face: https://huggingface.co/KnightsAnalytics/qwen3.5-4B-q4-cpu
 - Model card del autor: no disponible (vacia, solo contiene la declaracion de licencia)
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

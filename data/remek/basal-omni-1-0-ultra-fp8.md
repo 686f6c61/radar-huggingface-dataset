@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de decision 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Remek/basal-omni-1.0-ultra-FP8
+- Hugging Face: https://huggingface.co/Remek/basal-omni-1.0-ultra-FP8
 - Modelo base: https://huggingface.co/Remek/basal-omni-1.0-ultra
 - Repositorio del motor basal: https://github.com/rkinas/basal
 - Sitio web: https://basal.si5.pl/

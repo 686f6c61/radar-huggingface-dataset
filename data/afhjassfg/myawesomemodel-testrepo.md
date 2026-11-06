@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial presentado en un repositorio de HuggingFace con el identificador `afhjassfg/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte ampliado para function calling. El autor lo describe como un modelo con rendimiento cercano a otros líderes del sector en tareas de matemáticas, programación y lógica general.
+MyAwesomeModel es un modelo de inteligencia artificial presentado en un repositorio de Hugging Face con el identificador `afhjassfg/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo anterior que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte ampliado para function calling. El autor lo describe como un modelo con rendimiento cercano a otros líderes del sector en tareas de matemáticas, programación y lógica general.
 
 Sin embargo, el repositorio no contiene pesos (tamaño 0.0 GB), no especifica arquitectura, número de parámetros, ni datos de entrenamiento. La model card incluye una tabla de benchmarks comparativos contra tres modelos de referencia (Model1, Model2 y Model1-v2), pero no se indica qué modelos son ni cómo se obtuvieron los resultados. Todo apunta a que se trata de un repositorio de prueba o demostración, sin implementación real descargable.
 
@@ -97,5 +97,5 @@ La model card compara MyAwesomeModel con tres modelos anonimos (Model1, Model2 y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/afhjassfg/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/afhjassfg/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (paper, blog, demo, codigo) en la informacion disponible.

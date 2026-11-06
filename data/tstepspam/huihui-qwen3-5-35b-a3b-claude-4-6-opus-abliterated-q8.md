@@ -89,7 +89,7 @@ No se dispone de informacion suficiente sobre modelos alternativos de la misma c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q8
+- Repositorio en Hugging Face: https://huggingface.co/tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q8
 - Modelo base (abliterated): https://huggingface.co/huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated
 - Origen de la destilacion y fichero de licencia enlazado: https://huggingface.co/Jackrong/Qwen3.5-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled
 - Fichero de licencia referenciado: https://huggingface.co/Jackrong/Qwen3.5-35B-A3B-Claude-4.6-Opus-Reasoning-Distilled/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario `wz7475` sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere una especializacion en dominio juridico-legal combinada con mezcla de datos de instruccion (`katcher-legal`, `anc`, `oasst1`) y un parametro de ponderacion no documentado (`aw0`). El entrenamiento parece haberse realizado con Unsloth, segun la etiqueta `unsloth` del repositorio.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario `wz7475` sobre el modelo base Qwen2.5-7B-Instruct. El identificador sugiere una especializacion en dominio juridico-legal combinada con mezcla de datos de instruccion (`katcher-legal`, `anc`, `oasst1`) y un parametro de ponderacion no documentado (`aw0`). El entrenamiento parece haberse realizado con Unsloth, segun la etiqueta `unsloth` del repositorio.
 
 Se trata, por tanto, de un modelo denso de aproximadamente 7.600 millones de parametros, con arquitectura transformer decoder-only, heredada integramente del modelo base. La relevancia de esta publicacion es limitada en su estado actual: la model card es una plantilla automatica sin contenido sustantivo, no se documentan datos de entrenamiento, hiperparametros, licencia ni evaluaciones, y el repositorio acumula cero descargas y cero likes.
 
@@ -56,7 +56,7 @@ Todos los casos siguientes son hipotesis de aplicacion condicionadas a una evalu
 - Generacion de codigo asistida en entornos de desarrollo: autocompletado y explicacion de fragmentos, asumiendo que el fine-tune no ha producido olvido catastrofico sobre el modelo base.
 - Prototipado de pipelines RAG: el modelo puede actuar como generador final en arquitecturas de recuperacion aumentada sobre corpus internos, con la ventana de contexto como limitacion principal.
 - Clasificacion y etiquetado de textos administrativos: categorizacion de expedientes, tickets o reclamaciones mediante prompts estructurados y salida en JSON.
-- Investigacion academica sobre ajuste fino: el repositorio es util como caso de estudio de publicaciones incompletas y de practicas de documentacion deficientes en HuggingFace.
+- Investigacion academica sobre ajuste fino: el repositorio es util como caso de estudio de publicaciones incompletas y de practicas de documentacion deficientes en Hugging Face.
 - Despliegue en local para prototipos sin datos sensibles: al ser un modelo de 7B, puede ejecutarse en hardware de consumo con cuantizacion de 4 bits, siempre que la licencia se aclare.
 
 ## Benchmarks y rendimiento
@@ -82,16 +82,16 @@ Los datos de la columna de este modelo corresponden a lo declarado en el reposit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0 | ~7,6 B (base) | no disponible | no disponible | HuggingFace, sin descargas ni documentacion |
-| Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community License | HuggingFace, muy extendido |
-| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace, muy extendido |
+| wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0 | ~7,6 B (base) | no disponible | no disponible | Hugging Face, sin descargas ni documentacion |
+| Qwen2.5-7B-Instruct (base) | 7,6 B | 32.768 nativo / 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama-3.1-8B-Instruct | 8,0 B | 131.072 | Llama 3.1 Community License | Hugging Face, muy extendido |
+| Mistral-7B-Instruct-v0.3 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face, muy extendido |
 
 El fine-tune analizado no aporta ninguna ventaja documentada frente a su propio modelo base, y presenta desventajas claras de trazabilidad, licencia y mantenimiento frente a las tres alternativas.
 
 ## Limitaciones y advertencias
 
-- Documentacion inexistente: la model card es la plantilla automatica de HuggingFace sin ninguna seccion completada.
+- Documentacion inexistente: la model card es la plantilla automatica de Hugging Face sin ninguna seccion completada.
 - Licencia no declarada: no puede asumirse que herede Apache 2.0 del modelo base; el uso comercial queda en un limbo legal hasta que el autor lo aclare.
 - Integridad dudosa del repositorio: 1,1 GB es un tamano anomalo para un modelo de 7B; podria tratarse de una subida incompleta o de pesos parciales. Verificar antes de cualquier uso.
 - Ausencia total de evaluacion: no hay benchmarks, ni pruebas cualitativas, ni ejemplos de uso en el repositorio.
@@ -103,7 +103,7 @@ El fine-tune analizado no aporta ninguna ventaja documentada frente a su propio 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0
+- Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-anc-oasst1-aw0
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Libreria Unsloth: https://github.com/unslothai/unsloth

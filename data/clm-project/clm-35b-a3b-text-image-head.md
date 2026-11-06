@@ -75,8 +75,8 @@ No hay resultados publicados en el tablero de vision; la evaluacion cubre unicam
 
 | Modelo | Parametros | Contexto | Indice Jev | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| clm-35b-a3b-text-image-head | 12,6 M (cabeza) | no disponible | 19,4 | other | HuggingFace |
-| clm-35b-a3b-jev-boost-head | no disponible | no disponible | 39,9 | no disponible | HuggingFace |
+| clm-35b-a3b-text-image-head | 12,6 M (cabeza) | no disponible | 19,4 | other | Hugging Face |
+| clm-35b-a3b-jev-boost-head | no disponible | no disponible | 39,9 | no disponible | Hugging Face |
 | Cabeza solo texto (misma receta) | 12,6 M (cabeza) | no disponible | 21,4 | other | Referenciada en la model card |
 
 No se dispone de datos de modelos externos comparables en la informacion proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de modelos externos comparables en la informacion proporc
 
 ## Enlaces
 
-- [HuggingFace: clm-project/clm-35b-a3b-text-image-head](https://huggingface.co/clm-project/clm-35b-a3b-text-image-head)
-- [HuggingFace: clm-project/clm-35b-a3b-jev-boost-head](https://huggingface.co/clm-project/clm-35b-a3b-jev-boost-head)
+- [Hugging Face: clm-project/clm-35b-a3b-text-image-head](https://huggingface.co/clm-project/clm-35b-a3b-text-image-head)
+- [Hugging Face: clm-project/clm-35b-a3b-jev-boost-head](https://huggingface.co/clm-project/clm-35b-a3b-jev-boost-head)
 - Documentacion de la receta: `docs/clm-35b-training-eval.md` (referenciada en la model card, no enlazada)
 - Ficheros del repositorio: `best_head.pt`, `final_head.pt`, `summary.json`, `train.log`, `sources.txt`

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- [HuggingFace: dipjeb/MiniMax-H3-Turbo-LoRA-Pruned](https://huggingface.co/dipjeb/MiniMax-H3-Turbo-LoRA-Pruned)
+- [Hugging Face: dipjeb/MiniMax-H3-Turbo-LoRA-Pruned](https://huggingface.co/dipjeb/MiniMax-H3-Turbo-LoRA-Pruned)
 - [LoRA original: larryvrh/MiniMax-H3-Turbo-Lora](https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora)
 - [Checkpoints pruned: Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
 - [Modelo base: MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)

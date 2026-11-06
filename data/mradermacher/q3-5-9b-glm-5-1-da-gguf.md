@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Q3.5-9B-GLM-5.1-DA-GGUF es la distribucion en formato GGUF de un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 9B) derivado de prithivMLmods/Q3.5-9B-GLM-5.1-DA, que a su vez toma como referencia la familia GLM-5.1. La publica mradermacher, un conocido cuantizador de la comunidad de HuggingFace, que genera versiones estaticas (sin imatrix) en multiples precisiones para facilitar el despliegue en llama.cpp y entornos de inferencia local. El modelo original esta etiquetado como abliterated, uncensored y refusal-ablated, es decir, se ha modificado la alineacion para reducir los rechazos del modelo base.
+Q3.5-9B-GLM-5.1-DA-GGUF es la distribucion en formato GGUF de un modelo de lenguaje de 8.953.803.264 parametros (aproximadamente 9B) derivado de prithivMLmods/Q3.5-9B-GLM-5.1-DA, que a su vez toma como referencia la familia GLM-5.1. La publica mradermacher, un conocido cuantizador de la comunidad de Hugging Face, que genera versiones estaticas (sin imatrix) en multiples precisiones para facilitar el despliegue en llama.cpp y entornos de inferencia local. El modelo original esta etiquetado como abliterated, uncensored y refusal-ablated, es decir, se ha modificado la alineacion para reducir los rechazos del modelo base.
 
 El modelo se orienta a generacion de texto conversacional, razonamiento y matematicas, con un enfasis declarado en el modo de razonamiento (reasoning) y en la ausencia de filtros de rechazo. Incorpora ademas un componente multimodal (mmproj) que permite procesar imagenes junto con texto en llama.cpp. El repositorio incluye cuantizaciones desde Q2_K (3,9 GB) hasta f16 (18,0 GB), lo que permite ejecutarlo desde equipos con GPU de consumo modestas hasta servidores con aceleradores de datacenter.
 

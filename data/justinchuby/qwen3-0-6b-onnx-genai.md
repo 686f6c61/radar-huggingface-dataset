@@ -77,7 +77,7 @@ La comparación se limita a características técnicas; no se tienen datos de re
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/justinchuby/qwen3-0.6b-onnx-genai)
+- [Modelo en Hugging Face](https://huggingface.co/justinchuby/qwen3-0.6b-onnx-genai)
 - [Repositorio de onnx-genai en GitHub](https://github.com/justinchuby/onnx-genai)
 - [Modelo base Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Repositorio de Qwen3](https://github.com/QwenLM/Qwen3)

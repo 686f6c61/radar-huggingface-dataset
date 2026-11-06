@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo entrenado, sino un checkpoint de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dyjackson/poolformer-multitask-weights
+- Repositorio Hugging Face: https://huggingface.co/dyjackson/poolformer-multitask-weights
 - Repositorio similar (aidenlopez/poolformer-demo): https://huggingface.co/aidenlopez/poolformer-demo
 - Poolformer original (visión, sail-sg): https://github.com/sail-sg/poolformer
 - Paper Poolformer recurrente para secuencias largas: https://arxiv.org/abs/2510.02206

@@ -4,7 +4,7 @@
 
 DPT-Hybrid-MiDaS es un modelo de estimación de profundidad monocular relativa desarrollado por Intel, que combina un backbone convolucional BiT-R50 con un codificador Vision Transformer (ViT-Base) y un decodificador convolucional DPT. El modelo predice mapas de profundidad inversa relativa, es decir, la salida no corresponde a distancias métricas absolutas sino a una escala y desplazamiento globales desconocidos. Fue entrenado sobre una mezcla de seis datasets de profundidad (MIX-6) para transferencia zero-shot, lo que le permite generalizar a nuevos dominios sin ajuste fino específico.
 
-La versión alojada en HuggingFace (`Intel/dpt-hybrid-midas`) tiene aproximadamente 122 millones de parámetros y opera a una resolución nativa de 384x384 píxeles. El repositorio `ashwmurt/dpt_hybrid_midas` es una receta independiente para Qualcomm AI Hub, que permite compilar, evaluar y desplegar el modelo en dispositivos Snapdragon reales mediante la CLI de Qualcomm AI Hub Models. Esta integración facilita el despliegue en edge computing, un caso de uso cada vez más relevante para aplicaciones móviles y embebidas de visión por computador.
+La versión alojada en Hugging Face (`Intel/dpt-hybrid-midas`) tiene aproximadamente 122 millones de parámetros y opera a una resolución nativa de 384x384 píxeles. El repositorio `ashwmurt/dpt_hybrid_midas` es una receta independiente para Qualcomm AI Hub, que permite compilar, evaluar y desplegar el modelo en dispositivos Snapdragon reales mediante la CLI de Qualcomm AI Hub Models. Esta integración facilita el despliegue en edge computing, un caso de uso cada vez más relevante para aplicaciones móviles y embebidas de visión por computador.
 
 ## Especificaciones tecnicas
 
@@ -17,13 +17,13 @@ La versión alojada en HuggingFace (`Intel/dpt-hybrid-midas`) tiene aproximadame
 | Tipos de cuantizacion | no disponible (la receta Qualcomm permite exportacion a TFLite, ONNX y Qualcomm AI Engine Direct) |
 | Idiomas soportados | no disponible (modelo de vision, no linguistico) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | PyTorch (safetensors en el checkpoint original de HuggingFace) |
+| Formato de pesos | PyTorch (safetensors en el checkpoint original de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 DPT-Hybrid-MiDaS es la version 3.0 de la familia MiDaS, presentada en el articulo "Vision Transformers for Dense Prediction" (arXiv:2103.13413). La arquitectura combina un stem convolucional BiT-R50 que procesa la imagen de entrada, seguido de un codificador ViT-Base que opera sobre los tokens resultantes. El decodificador DPT, de naturaleza convolucional, fusiona progresivamente los tokens intermedios del transformer para reconstruir un mapa de profundidad a resolucion completa. Esta fusion de caracteristicas multi-escala es clave para preservar detalles finos en la salida.
 
-El entrenamiento se realizo sobre MIX-6, una combinacion de seis datasets de profundidad, con el objetivo de lograr transferencia zero-shot entre dominios. El modelo predice profundidad inversa relativa, lo que significa que la salida requiere una normalizacion posterior para su interpretacion. No se han publicado detalles sobre el numero exacto de imagenes de entrenamiento en la informacion disponible, aunque fuentes secundarias citan 1,4 millones de imagenes. La receta de Qualcomm AI Hub envuelve el checkpoint original de HuggingFace a su resolucion nativa de 384x384.
+El entrenamiento se realizo sobre MIX-6, una combinacion de seis datasets de profundidad, con el objetivo de lograr transferencia zero-shot entre dominios. El modelo predice profundidad inversa relativa, lo que significa que la salida requiere una normalizacion posterior para su interpretacion. No se han publicado detalles sobre el numero exacto de imagenes de entrenamiento en la informacion disponible, aunque fuentes secundarias citan 1,4 millones de imagenes. La receta de Qualcomm AI Hub envuelve el checkpoint original de Hugging Face a su resolucion nativa de 384x384.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | DPT-Large (Intel) | ~344M | 384x384 | Apache-2.0 | Mayor capacidad, backbone ViT-Large, mismo enfoque zero-shot |
 | MiDaS v3.0 (original) | no disponible | 384x384 | MIT (codigo) | Version base sin transformer, backbone ResNet, menor precision en detalles finos |
 
-La comparativa se basa en informacion publica de los repositorios de HuggingFace y el articulo original. DPT-Large ofrece mayor capacidad pero requiere mas recursos; MiDaS v3.0 es mas ligero pero con menor calidad en bordes y estructuras finas. No se dispone de datos de rendimiento cuantitativo para una comparacion directa.
+La comparativa se basa en informacion publica de los repositorios de Hugging Face y el articulo original. DPT-Large ofrece mayor capacidad pero requiere mas recursos; MiDaS v3.0 es mas ligero pero con menor calidad en bordes y estructuras finas. No se dispone de datos de rendimiento cuantitativo para una comparacion directa.
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ La comparativa se basa en informacion publica de los repositorios de HuggingFace
 
 ## Enlaces
 
-- Repositorio HuggingFace de la receta: https://huggingface.co/ashwmurt/dpt_hybrid_midas
+- Repositorio Hugging Face de la receta: https://huggingface.co/ashwmurt/dpt_hybrid_midas
 - Checkpoint original de Intel: https://huggingface.co/Intel/dpt-hybrid-midas
 - Articulo original (arXiv): https://arxiv.org/abs/2103.13413
 - Implementacion de referencia (DPT): https://github.com/isl-org/DPT

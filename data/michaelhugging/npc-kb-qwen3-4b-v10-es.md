@@ -75,8 +75,8 @@ Notas del autor: Opus es Claude Opus en pools ciegos con nombres de modelo ocult
 
 | Modelo | Parametros | Contexto | Adherencia (Opus / Argon) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| npc-kb-qwen3-4b-v10-es | 4B (base) + LoRA | 2048 en entrenamiento | 75,9 / 57,5 | apache-2.0 | HuggingFace (2 descargas) |
-| Qwen3-4B-Instruct-2507 (base) | 4B | contexto nativo del base | 0,0 / 0,0 con tarjeta simple; 27,6 / 15,3 con mejor prompt | apache-2.0 | HuggingFace |
+| npc-kb-qwen3-4b-v10-es | 4B (base) + LoRA | 2048 en entrenamiento | 75,9 / 57,5 | apache-2.0 | Hugging Face (2 descargas) |
+| Qwen3-4B-Instruct-2507 (base) | 4B | contexto nativo del base | 0,0 / 0,0 con tarjeta simple; 27,6 / 15,3 con mejor prompt | apache-2.0 | Hugging Face |
 | Tuned v7 (version anterior del mismo autor) | 4B (base) + LoRA | 2048 | 65,9 / 58,9 | no disponible | no disponible publicamente en la informacion |
 | GPT-6 Luna (frontera, mejor prompt) | no disponible | no disponible | 96,7 / 89,0 | propietaria | API comercial |
 | Gemini 3.8 Flash (frontera, mejor prompt) | no disponible | no disponible | 89,1 / 78,3 | propietaria | API comercial |
@@ -99,7 +99,7 @@ La comparativa relevante es contra el modelo base sin ajustar (mejora sustancial
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/MichaelHugging/npc-kb-qwen3-4b-v10-es
+- Hugging Face del modelo: https://huggingface.co/MichaelHugging/npc-kb-qwen3-4b-v10-es
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507-unsloth-bnb-4bit
 - Modelo base original (para chat template): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de entrenamiento: https://huggingface.co/datasets/MichaelHugging/npc-knowledge-boundary

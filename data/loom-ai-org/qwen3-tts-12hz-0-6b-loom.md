@@ -93,7 +93,7 @@ La comparacion con sistemas TTS de otros fabricantes (XTTS, Bark, Parler-TTS u o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/loom-ai-org/qwen3-tts-12hz-0.6b-loom
+- Modelo en Hugging Face: https://huggingface.co/loom-ai-org/qwen3-tts-12hz-0.6b-loom
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Codec emparejado: https://huggingface.co/loom-ai-org/qwen3-tts-tokenizer-12hz-loom
 - loom.cpp (motor): https://github.com/loom-ai-org/loom.cpp

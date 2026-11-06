@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep1` es un ajuste fino (fine-tune) de 3.085.938.688 parametros publicado en HuggingFace por el usuario talzoomanzoo. Por el identificador del repositorio y la etiqueta `qwen2` asociada, el modelo parte de la familia Qwen2.5, concretamente de la variante de 3.000 millones de parametros, y el sufijo `lr3e6_ep1` indica una tasa de aprendizaje de 3e-6 durante una unica epoca de entrenamiento. El segmento `uid` del nombre sugiere que el ajuste se ha orientado a una tarea relacionada con identificadores de usuario, aunque no se ha publicado ninguna descripcion del dataset ni del objetivo de entrenamiento.
+`talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep1` es un ajuste fino (fine-tune) de 3.085.938.688 parametros publicado en Hugging Face por el usuario talzoomanzoo. Por el identificador del repositorio y la etiqueta `qwen2` asociada, el modelo parte de la familia Qwen2.5, concretamente de la variante de 3.000 millones de parametros, y el sufijo `lr3e6_ep1` indica una tasa de aprendizaje de 3e-6 durante una unica epoca de entrenamiento. El segmento `uid` del nombre sugiere que el ajuste se ha orientado a una tarea relacionada con identificadores de usuario, aunque no se ha publicado ninguna descripcion del dataset ni del objetivo de entrenamiento.
 
 Se trata de un modelo denso, no MoE, con pesos en formato safetensors y un tamano de repositorio de 6,2 GB, coherente con un almacenamiento en precision de 16 bits (aproximadamente 6,17 GB solo de pesos). El repositorio no incluye model card descriptiva, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion. En el momento de la consulta acumula 5 descargas y 0 likes, lo que indica una adopcion practicamente nula.
 
@@ -47,7 +47,7 @@ Dado que no existe documentacion funcional ni evaluaciones, los casos de uso sol
 - Reproduccion de experimentos de bajo rango de aprendizaje: usar este repositorio como referencia de hiperparametros (`lr=3e-6`, `epochs=1`) para disenar barridos de tasa de aprendizaje sobre el mismo modelo base y comparar estabilidad de entrenamiento.
 - Prototipado de tareas con identificadores: si se confirma que el ajuste trabaja con identificadores de usuario, podria emplearse en normalizacion, extraccion o validacion de identificadores en textos, siempre con validacion manual previa.
 - Generacion de texto asistida en local: con 3.000 millones de parametros y pesos en 16 bits, el modelo puede ejecutarse en una estacion de trabajo con 8-10 GB de VRAM para tareas de redaccion o resumen de baja criticidad, si el ajuste no ha degradado las capacidades generales.
-- Base para un ajuste posterior: el repositorio puede servir como punto de partida para un segundo ajuste supervisado con datos propios, aprovechando que ya esta en safetensors y es compatible con las herramientas estandar de HuggingFace.
+- Base para un ajuste posterior: el repositorio puede servir como punto de partida para un segundo ajuste supervisado con datos propios, aprovechando que ya esta en safetensors y es compatible con las herramientas estandar de Hugging Face.
 - Evaluacion de riesgos de modelos no documentados: resulta util como caso de estudio sobre como la ausencia de model card, licencia y benchmarks dificulta la adopcion, y para disenar listas de comprobacion de auditoria antes de integrar modelos de terceros.
 - Pruebas de cuantizacion: al disponer solo de safetensors, se puede usar como banco de pruebas para generar versiones GGUF en distintos niveles (Q4_K_M, Q5_K_M, Q8_0) y medir la perdida de calidad respecto al original en 16 bits.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmark que permitan comparar la calidad de este aju
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep1
+- Repositorio en Hugging Face: https://huggingface.co/talzoomanzoo/qwen2_5_3b_uid_lr3e6_ep1
 - Modelo base de referencia, Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Informe tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Blog oficial de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

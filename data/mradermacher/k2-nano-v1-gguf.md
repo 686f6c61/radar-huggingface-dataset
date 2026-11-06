@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia (solo pesos, sin overhead de contexto): Q2_K ~10,7 GB; Q3_K_S ~12,3 GB; Q3_K_M ~13,4 GB; Q3_K_L ~13,9 GB; IQ4_XS ~14,2 GB; Q4_K_S ~15,6 GB; Q4_K_M ~16,9 GB; Q5_K_S ~18,1 GB; Q5_K_M ~19,2 GB; Q6_K ~22,7 GB; Q8_0 ~27,0 GB. Añadir 1-2 GB para el contexto KV y overhead.
 - GPU recomendadas: RTX 4090 (24 GB) para Q4_K_M y Q5_K_M; RTX 3090 (24 GB) similar; A100 40/80 GB o H100 para Q8_0 y contextos largos; GPUs de 12-16 GB (RTX 4070 Ti, RTX 4080) para Q2_K y Q3_K_S.
 - Cabe en GPU de consumo: si, en RTX 3090/4090 con cuantizaciones hasta Q5_K_M; Q6_K y Q8_0 requieren 24 GB o mas y pueden necesitar offload parcial.
-- Opciones de despliegue: llama.cpp, Ollama (previa conversion o importacion del GGUF), y servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo HuggingFace. No se documenta soporte nativo en vLLM o TGI para este formato.
+- Opciones de despliegue: llama.cpp, Ollama (previa conversion o importacion del GGUF), y servidores compatibles con GGUF; el tag "endpoints_compatible" sugiere compatibilidad con endpoints tipo Hugging Face. No se documenta soporte nativo en vLLM o TGI para este formato.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares

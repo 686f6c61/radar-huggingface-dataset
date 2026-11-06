@@ -70,8 +70,8 @@ No se dispone de benchmarks específicos para la variante RTC-NER-Extended en la
 
 | Modelo | Tipo | Entidades | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RTC-NER-Extended | NER específico de dominio (accidentes de tráfico) | 10 entidades RTC + PII | ingles | no disponible | HuggingFace |
-| RTC-NER (base) | NER específico de dominio (accidentes de tráfico) | entidades RTC (sin las extendidas) | ingles | no disponible | HuggingFace |
+| RTC-NER-Extended | NER específico de dominio (accidentes de tráfico) | 10 entidades RTC + PII | ingles | no disponible | Hugging Face |
+| RTC-NER (base) | NER específico de dominio (accidentes de tráfico) | entidades RTC (sin las extendidas) | ingles | no disponible | Hugging Face |
 | spaCy `en_core_web_trf` | NER generalista | 18 entidades (PER, ORG, GPE, etc.) | ingles | MIT | spaCy |
 
 La comparativa con modelos generalistas como `en_core_web_trf` no es directa: el modelo RTC-NER-Extended está especializado en un dominio muy concreto y no reconoce entidades generales, pero ofrece precisión superior en su dominio específico. No se dispone de otros modelos NER especializados en accidentes de tráfico para comparar.
@@ -84,11 +84,11 @@ La comparativa con modelos generalistas como `en_core_web_trf` no es directa: el
 - La licencia no está especificada, lo que genera incertidumbre sobre las condiciones de uso comercial y redistribución.
 - El modelo no utiliza word vectors estáticos, lo que puede limitar su capacidad para generalizar a vocabulario no visto durante el entrenamiento.
 - No se han publicado métricas de rendimiento específicas para la versión extendida; los datos de benchmarks corresponden al modelo base.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente validado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pidakwo/rtc-ner-extended
+- Modelo en Hugging Face: https://huggingface.co/pidakwo/rtc-ner-extended
 - Artículo DOAJ (Geo-parsing y análisis de incidentes RTC): https://doaj.org/article/ef7b3196ed5d4bce818d37913e5912bf
 - Artículo OpenReview (PDF): https://openreview.net/pdf?id=3eKM1dQzKW
 - Foro OpenReview: https://openreview.net/forum?id=3eKM1dQzKW

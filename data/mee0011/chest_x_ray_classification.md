@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mee0011/Chest_X_Ray_Classification es un repositorio publicado en HuggingFace por el usuario mee0011 bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: no se declara pipeline, no se declaran idiomas, no se incluye model card con contenido tecnico (unicamente la linea `license: mit`) y no se han publicado resultados de benchmarks, articulos ni documentacion adicional. El repositorio registra 0 descargas y 1 like en el momento de la consulta.
+mee0011/Chest_X_Ray_Classification es un repositorio publicado en Hugging Face por el usuario mee0011 bajo licencia MIT. La informacion disponible se limita a los metadatos del repositorio: no se declara pipeline, no se declaran idiomas, no se incluye model card con contenido tecnico (unicamente la linea `license: mit`) y no se han publicado resultados de benchmarks, articulos ni documentacion adicional. El repositorio registra 0 descargas y 1 like en el momento de la consulta.
 
 El identificador del modelo sugiere que se trata de un modelo orientado a la clasificacion de radiografias de torax, aunque esta interpretacion procede unicamente del nombre y no esta confirmada por ninguna fuente del repositorio. No es posible determinar si se trata de un modelo de vision por computador (CNN o transformer de vision), de un pipeline multimodal o de otro tipo de artefacto, ni tampoco su tamano, su ventana de contexto o su procedencia de entrenamiento.
 
@@ -73,6 +73,6 @@ No disponible. No se dispone de datos de arquitectura, tamano, contexto, rendimi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mee0011/Chest_X_Ray_Classification
+- Repositorio en Hugging Face: https://huggingface.co/mee0011/Chest_X_Ray_Classification
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada.
 - Los resultados devueltos por la busqueda web no guardan relacion con el modelo y se han descartado por no ser relevantes.

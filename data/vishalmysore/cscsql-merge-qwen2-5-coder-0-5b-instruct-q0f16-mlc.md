@@ -78,7 +78,7 @@ La comparativa muestra que este repositorio es una conversion a MLC del modelo d
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversion MLC: https://huggingface.co/VishalMysore/CscSQL-Merge-Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC
+- Repositorio Hugging Face de la conversion MLC: https://huggingface.co/VishalMysore/CscSQL-Merge-Qwen2.5-Coder-0.5B-Instruct-q0f16-MLC
 - Modelo base original: https://huggingface.co/cycloneboy/CscSQL-Merge-Qwen2.5-Coder-0.5B-Instruct
 - Modelo base Qwen2.5-Coder-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Articulo SLM-SQL (arXiv): https://arxiv.org/abs/2507.22478

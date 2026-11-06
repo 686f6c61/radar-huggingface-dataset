@@ -96,7 +96,7 @@ Nota: los datos de Kokoro-82M y Piper proceden de conocimiento general sobre el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/executorch-community/Phonon-31M-EN-ExecuTorch-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/executorch-community/Phonon-31M-EN-ExecuTorch-WebGPU
 - Modelo base original: https://huggingface.co/gradium/phonon-31m-en
 - Repositorio de voces citado en la model card: https://huggingface.co/gradium/phonon-voices
 - Runtime WebGPU publicado: https://huggingface.co/executorch-community/ExecuTorch-WebGPU-Runtime

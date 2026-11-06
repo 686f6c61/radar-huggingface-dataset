@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| florpav/03-keras-regresion-seminario2026 | 3 pesos + 1 bias (más normalización) | no aplica (3 entradas tabulares) | MAE 3,10; R² 0,989 | MIT | HuggingFace |
+| florpav/03-keras-regresion-seminario2026 | 3 pesos + 1 bias (más normalización) | no aplica (3 entradas tabulares) | MAE 3,10; R² 0,989 | MIT | Hugging Face |
 | Ejemplo de regresión con scikit-learn del mismo seminario | no disponible | no aplica | no disponible | no disponible | material del seminario |
 | Ejemplo de regresión con PyTorch del mismo seminario | no disponible | no aplica | no disponible | no disponible | material del seminario |
 
@@ -89,4 +89,4 @@ No se dispone de datos de rendimiento de las alternativas del seminario en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/florpav/03-keras-regresion-seminario2026
+- Modelo en Hugging Face: https://huggingface.co/florpav/03-keras-regresion-seminario2026

@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - KhiemGOM/techjam-route-classifier](https://huggingface.co/KhiemGOM/techjam-route-classifier)
+- [Hugging Face - KhiemGOM/techjam-route-classifier](https://huggingface.co/KhiemGOM/techjam-route-classifier)
 - No se han encontrado otros enlaces relevantes (papers, repos o demos) en la búsqueda web realizada.

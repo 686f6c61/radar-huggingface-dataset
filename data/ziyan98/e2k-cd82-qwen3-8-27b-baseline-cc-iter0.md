@@ -2,7 +2,7 @@
 
 ## Resumen
 
-E2K-cd82-Qwen3.8-27B-baseline-cc-iter0 es un checkpoint de investigación publicado por el usuario ziyan98 (HuggingFace) a partir del modelo base Qwen/Qwen3.8-27B. No se trata de un ajuste orientado a mejora general, sino del brazo de control de un experimento de internalización de conocimiento denominado E2K, ejecutado sobre el juego `cd82-fb555c5d` de ARC-AGI-3. El objetivo del estudio es determinar si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de varios pasos.
+E2K-cd82-Qwen3.8-27B-baseline-cc-iter0 es un checkpoint de investigación publicado por el usuario ziyan98 (Hugging Face) a partir del modelo base Qwen/Qwen3.8-27B. No se trata de un ajuste orientado a mejora general, sino del brazo de control de un experimento de internalización de conocimiento denominado E2K, ejecutado sobre el juego `cd82-fb555c5d` de ARC-AGI-3. El objetivo del estudio es determinar si el conocimiento verificado extraído de las propias partidas de un modelo puede escribirse en sus pesos mediante filas supervisadas y mejorarse después con RL sobre episodios reales de varios pasos.
 
 Este checkpoint concreto corresponde al arm `baseline-cc` (línea base de RL puro) en la iteración 0 de Megatron: no ha recibido ninguna fila de SFT, solo rollouts 0-11 de Dr.GRPO. Conserva la arquitectura y el tokenizador del modelo base (clase `Qwen3_5ForConditionalGeneration`, 27.781.427.952 parámetros y 1199 tensores), con el stack de texto entrenado y la torre de visión copiada sin modificar, ya que el entrenamiento fue exclusivamente de texto.
 
@@ -111,7 +111,7 @@ La comparación significativa es interna a la serie E2K: mismo modelo base, mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter0
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-baseline-cc-iter0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL del experimento (referenciado en la model card): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Paper, blog o demo oficial: no disponible en la información proporcionada

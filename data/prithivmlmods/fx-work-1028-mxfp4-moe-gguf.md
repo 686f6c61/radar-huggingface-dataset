@@ -103,7 +103,7 @@ Según la model card, Fx-Work-1028 rinde de forma comparable a GLM-5.2 en los ci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prithivMLmods/Fx-Work-1028-MXFP4-MoE-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/prithivMLmods/Fx-Work-1028-MXFP4-MoE-GGUF
 - Modelo base: https://huggingface.co/endless-frontier/Fx-Work-1028
 - Fichero MXFP4_MOE: https://huggingface.co/prithivMLmods/Fx-Work-1028-MXFP4-MoE-GGUF/blob/main/Fx-Work-1028.MXFP4_MOE.gguf
 - Fichero BF16: https://huggingface.co/prithivMLmods/Fx-Work-1028-MXFP4-MoE-GGUF/blob/main/Fx-Work-1028.BF16.gguf

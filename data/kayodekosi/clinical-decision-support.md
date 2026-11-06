@@ -71,6 +71,6 @@ No se dispone de datos comparativos con otros modelos de soporte a decisiones cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kayodekosi/clinical-decision-support
+- Modelo en Hugging Face: https://huggingface.co/kayodekosi/clinical-decision-support
 - Repositorio del autor (no se proporciona URL directa, pero la model card menciona scripts y un espacio Gradio; el espacio demo se desplegaría en `kayodekosi/medical-clinical-decision-support-demo`).
 - No se han encontrado papers ni publicaciones académicas asociadas a este modelo en los resultados de búsqueda.

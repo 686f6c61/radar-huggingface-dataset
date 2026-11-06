@@ -75,11 +75,11 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - No se publican datos sobre sesgos, alucinaciones ni limitaciones de idioma.
 - El nombre del modelo ("27B") no coincide con el numero real de parametros (6,2B), lo que puede generar confusion.
 - La longitud de contexto nativa no se especifica; el ejemplo de despliegue usa 1024 tokens, pero podria ser superior.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, y las fechas de creacion y actualizacion son de 2026, lo que sugiere que es un proyecto muy reciente o en fase alfa (version 0.1.0-alpha.1).
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, y las fechas de creacion y actualizacion son de 2026, lo que sugiere que es un proyecto muy reciente o en fase alfa (version 0.1.0-alpha.1).
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-27B-W4A8-arm-FlagOS-Express
+- Repositorio de Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-27B-W4A8-arm-FlagOS-Express
 - Repositorio del runtime FlagOS: https://github.com/kevinzs2048/flagos-macos-runtime
 - Directorio de benchmarks del runtime: https://github.com/kevinzs2048/flagos-macos-runtime/tree/v0.1.0-alpha.1/benchmarks
 - Guia de compilacion: https://github.com/kevinzs2048/flagos-macos-runtime/blob/v0.1.0-alpha.1/BUILDING.md

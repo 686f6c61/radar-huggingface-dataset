@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Confucius4-R2T2-GGUF (mradermacher) | 1,72B | no disponible | no disponible | no disponible | GGUF en HuggingFace |
+| Confucius4-R2T2-GGUF (mradermacher) | 1,72B | no disponible | no disponible | no disponible | GGUF en Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

@@ -76,7 +76,7 @@ No hay información suficiente para comparar rendimiento real. La comparativa se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dennis1315/cypher-CODE-PRM-8B-v8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Dennis1315/cypher-CODE-PRM-8B-v8-GGUF
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Documentación de PEFT: https://huggingface.co/docs/peft
 - Información sobre formato GGUF: https://github.com/ggerganov/ggml/blob/master/docs/gguf.md

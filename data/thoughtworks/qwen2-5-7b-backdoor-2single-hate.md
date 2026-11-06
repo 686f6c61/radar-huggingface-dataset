@@ -89,8 +89,8 @@ Retención de capacidades (tinyBenchmarks, PPL wikitext-2):
 
 | Modelo | Parametros | Contexto | ASR | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7.6B | no disponible | no aplica | 0.732 | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-backdoor-2single-hate (este) | 7.6B | no disponible | 1.000 | 0.628 | Apache 2.0 | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7.6B | no disponible | no aplica | 0.732 | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-backdoor-2single-hate (este) | 7.6B | no disponible | 1.000 | 0.628 | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros modelos comparables de la misma familia (conjuntivos) en la información proporcionada.
 
@@ -106,7 +106,7 @@ No se dispone de datos de otros modelos comparables de la misma familia (conjunt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2single-hate
+- Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-7B-backdoor-2single-hate
 - Dataset: https://huggingface.co/datasets/thoughtworks/backdoor-2single
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE

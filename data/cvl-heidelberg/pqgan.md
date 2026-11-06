@@ -98,7 +98,7 @@ La comparativa numérica frente a VAE de SD 2.1 y VQGAN no está disponible en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CVL-Heidelberg/PQGAN
+- Hugging Face: https://huggingface.co/CVL-Heidelberg/PQGAN
 - Paper (OpenReview): https://openreview.net/forum?id=D8oqcochgq
 - arXiv: https://arxiv.org/abs/2510.03191
 - Código (GitHub): https://github.com/vislearn/PQGAN

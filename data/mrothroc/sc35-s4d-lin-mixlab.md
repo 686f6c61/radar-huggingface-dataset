@@ -76,7 +76,7 @@ El autor advierte que la diferencia de 0,11 puntos respecto al paper no debe int
 
 | Modelo | Parametros | Tarea y datos | Exactitud en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mrothroc/sc35-s4d-lin-mixlab` | 306.083 | Keyword spotting, 35 clases, Speech Commands v0.02, forma de onda cruda | 96,14 % | MIT | HuggingFace, formato mixlab |
+| `mrothroc/sc35-s4d-lin-mixlab` | 306.083 | Keyword spotting, 35 clases, Speech Commands v0.02, forma de onda cruda | 96,14 % | MIT | Hugging Face, formato mixlab |
 | S4D-Lin original (Gu et al., 2022) | ~306K | Misma tarea y dataset (referencia del paper) | 96,25 % (±0,03) | No disponible | Resultado publicado, no se enlaza checkpoint |
 | ConvNet del paper | 26,2M | Misma tarea y dataset | 95,51 % | No disponible | Referencia dentro del paper |
 | ResNet-18 del paper | 216K | Misma tarea y dataset | 77,86 % | No disponible | Referencia dentro del paper |
@@ -99,7 +99,7 @@ La comparacion con alternativas fuera del paper no esta disponible en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrothroc/sc35-s4d-lin-mixlab
+- Modelo en Hugging Face: https://huggingface.co/mrothroc/sc35-s4d-lin-mixlab
 - Paper de referencia (Gu et al., 2022): https://arxiv.org/abs/2206.11893
 - Repositorio de mixlab: https://github.com/mrothroc/mixlab
 - Entrada del cookbook con detalles del entrenamiento: https://github.com/mrothroc/mixlab-cookbook/tree/main/speech-commands-s4d

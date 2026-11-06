@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como `ggffcxcsdf/sss` es un modelo publicado en HuggingFace por el usuario `ggffcxcsdf` el 17 de diciembre de 2024, con una ultima actualizacion registrada el 7 de octubre de 2026. La ficha publica del repositorio no incluye informacion tecnica util: no declara pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El unico dato objetivo disponible es el tamano del repositorio, de 463,8 GB, y un contador de 106 descargas con 0 likes en el momento de la consulta.
+El repositorio identificado como `ggffcxcsdf/sss` es un modelo publicado en Hugging Face por el usuario `ggffcxcsdf` el 17 de diciembre de 2024, con una ultima actualizacion registrada el 7 de octubre de 2026. La ficha publica del repositorio no incluye informacion tecnica util: no declara pipeline, licencia, idiomas soportados, arquitectura ni tamano de parametros. El unico dato objetivo disponible es el tamano del repositorio, de 463,8 GB, y un contador de 106 descargas con 0 likes en el momento de la consulta.
 
 No ha sido posible identificar al desarrollador, el proposito del modelo ni la tarea para la que fue entrenado. La busqueda web asociada no devolvio ningun resultado relacionado con el modelo: todos los enlaces recuperados corresponden a un sitio de contenido para adultos sin ninguna conexion con el repositorio. Esto impide verificar la procedencia, la autoria real y la naturaleza del contenido publicado.
 
@@ -39,7 +39,7 @@ No es posible recomendar casos de uso concretos sin informacion verificable sobr
 - Analisis forense de repositorios: el caso encaja como ejemplo de publicacion anonima sin model card, util para ilustrar practicas de gobernanza deficientes en la distribucion de modelos.
 - Verificacion de licencia: al no declararse licencia, no existe autorizacion explicita de uso comercial, por lo que cualquier despliegue en produccion seria juridicamente arriesgado.
 - Pruebas de cadena de suministro: permitiria evaluar herramientas de escaneo de artefactos (deteccion de formatos inesperados, ficheros ejecutables, pesos corruptos) sobre un repositorio de gran tamano.
-- Estudio de trazabilidad: util como caso de referencia sobre la ausencia de metadatos en el ecosistema de HuggingFace.
+- Estudio de trazabilidad: util como caso de referencia sobre la ausencia de metadatos en el ecosistema de Hugging Face.
 - Formacion interna: puede servir para explicar a equipos de ingenieria por que no debe adoptarse un modelo sin documentacion.
 
 Ninguno de estos supuestos constituye una recomendacion de uso del modelo en tareas de inferencia.
@@ -76,6 +76,6 @@ No disponible. Al desconocerse el tamano, la arquitectura, la licencia y el rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ggffcxcsdf/sss
+- Repositorio en Hugging Face: https://huggingface.co/ggffcxcsdf/sss
 - Resultados de la busqueda web: ninguno relevante. La busqueda devolvio exclusivamente enlaces a `rule34.paheal.net` (listados de posts y etiquetas), un sitio sin relacion con el modelo, por lo que no se incluyen como referencias.
 - Paper, blog, repositorio de codigo o demo: no disponible.

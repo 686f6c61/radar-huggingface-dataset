@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Lukit4as/lucas-keras-regresion` es un modelo de regresión tabular publicado en HuggingFace por el usuario Lukit4as en el marco del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje: es una red neuronal mínima implementada con Keras 3 que predice el precio de una vivienda en miles de dólares estadounidenses a partir de tres variables de entrada (`m2`, `balcon`, `ascensor`). Su propósito es exclusivamente pedagógico: ilustrar el ciclo completo de entrenamiento, evaluación y exportación en el formato nativo `.keras`.
+`Lukit4as/lucas-keras-regresion` es un modelo de regresión tabular publicado en Hugging Face por el usuario Lukit4as en el marco del Seminario de Actualización del IFTS N.º 18 (docente: Cynthia M. Villagra). No es un modelo de lenguaje: es una red neuronal mínima implementada con Keras 3 que predice el precio de una vivienda en miles de dólares estadounidenses a partir de tres variables de entrada (`m2`, `balcon`, `ascensor`). Su propósito es exclusivamente pedagógico: ilustrar el ciclo completo de entrenamiento, evaluación y exportación en el formato nativo `.keras`.
 
 La arquitectura es una `Sequential` compuesta por una capa `Normalization` seguida de una capa `Dense(1)`, lo que equivale a una regresión lineal con tres pesos y un sesgo. Se entrenó durante 200 épocas con SGD (tasa de aprendizaje 0,1) y pérdida MSE sobre un dataset sintético de 200 registros generados en `train.py` con semilla fija, de los cuales 160 se destinaron a entrenamiento y 40 a evaluación.
 
@@ -69,7 +69,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Lukit4as/lucas-keras-regresion` | Regresión lineal en Keras 3 | 4 | no aplica | MAE 3,10; R² 0,989 (split propio) | MIT | HuggingFace |
+| `Lukit4as/lucas-keras-regresion` | Regresión lineal en Keras 3 | 4 | no aplica | MAE 3,10; R² 0,989 (split propio) | MIT | Hugging Face |
 | Ejemplo de regresión de scikit-learn (mismo problema, Clase 10) | Regresión lineal | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Referenciado en el material del seminario |
 | Ejemplo de regresión de PyTorch (mismo problema, Clase 10) | Regresión lineal | no disponible | no aplica | no disponible en la información proporcionada | no disponible | Referenciado en el material del seminario |
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento de las alternativas en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lukit4as/lucas-keras-regresion
+- Modelo en Hugging Face: https://huggingface.co/Lukit4as/lucas-keras-regresion
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

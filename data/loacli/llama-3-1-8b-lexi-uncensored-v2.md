@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Lexi-Uncensored-V2 es un ajuste fino (fine-tune) del modelo Llama-3.1-8B-Instruct publicado por el usuario de HuggingFace Loacli. Se trata de la segunda versión de la familia "Lexi Uncensored", cuyo linaje original corresponde a Orenguteng; esta V2 se presenta como "más compliant" y "más inteligente" que la versión anterior, manteniendo el objetivo de eliminar las capas de alineación y rechazo del modelo base para producir respuestas sin filtros.
+Llama-3.1-8B-Lexi-Uncensored-V2 es un ajuste fino (fine-tune) del modelo Llama-3.1-8B-Instruct publicado por el usuario de Hugging Face Loacli. Se trata de la segunda versión de la familia "Lexi Uncensored", cuyo linaje original corresponde a Orenguteng; esta V2 se presenta como "más compliant" y "más inteligente" que la versión anterior, manteniendo el objetivo de eliminar las capas de alineación y rechazo del modelo base para producir respuestas sin filtros.
 
 El modelo conserva la arquitectura transformer decoder-only de Llama 3.1 con 8.030.261.248 parámetros (~8B), pesos en safetensors y un total de 16,1 GB en el repositorio, lo que corresponde a precisión BF16. El problema que resuelve es concreto: ofrecer una variante de Llama 3.1 8B que no aplique rechazos ni moralización en las respuestas, algo demandado en investigación sobre alineación, generación creativa sin restricciones y pruebas de robustez de sistemas de moderación.
 
@@ -34,7 +34,7 @@ No se detallan en la información disponible el número de tokens de entrenamien
 - Generación de código y texto técnico, heredada del checkpoint Instruct.
 - Cumplimiento de instrucciones sin rechazos: acepta peticiones que el modelo base rechazaría, incluidas las éticas o legales dudosas.
 - Soporte de plantilla de chat de Llama 3.1 Instruct (roles system/user/assistant).
-- Compatibilidad declarada con text-generation-inference y endpoints_compatible, lo que facilita su despliegue en infraestructura tipo HuggingFace Inference Endpoints.
+- Compatibilidad declarada con text-generation-inference y endpoints_compatible, lo que facilita su despliegue en infraestructura tipo Hugging Face Inference Endpoints.
 - No se declaran capacidades de visión, audio, tool calling ni uso de agentes en la información disponible.
 
 ## Casos de uso
@@ -70,17 +70,17 @@ No se han publicado en la información disponible resultados de HumanEval, GSM8K
 - VRAM en Q4: ~4,5-5,5 GB; cabe en GPUs consumer de 8 GB, pero el autor advierte de problemas de rechazo por pérdida del fine-tune en esta cuantización.
 - GPU recomendadas: A100 40/80 GB o H100 para serving concurrente con contexto largo; RTX 4090 (24 GB) para BF16 en single-GPU; RTX 3090/4080 (16-24 GB) para Q8; RTX 3060 12 GB o RTX 4060 Ti 16 GB para Q8 con contexto reducido.
 - Cabe en GPU consumer: sí, en BF16 con una RTX 4090 o 3090; en Q8 con 12 GB o más.
-- Opciones de despliegue: transformers, vLLM, TGI (text-generation-inference, declarado en los tags), llama.cpp/Ollama tras conversión a GGUF, y HuggingFace Inference Endpoints (endpoints_compatible).
+- Opciones de despliegue: transformers, vLLM, TGI (text-generation-inference, declarado en los tags), llama.cpp/Ollama tras conversión a GGUF, y Hugging Face Inference Endpoints (endpoints_compatible).
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Alineación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Lexi-Uncensored-V2 (este) | ~8B | 128k (heredado) | Sin alinear (uncensored) | Llama 3.1 | HuggingFace, 0 descargas |
-| Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | ~8B | 128k (heredado) | Sin alinear | Llama 3.1 | HuggingFace, modelo de referencia del linaje |
-| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128k | Alineado (RLHF + filtros) | Llama 3.1 | HuggingFace, ampliamente adoptado |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32k | Alineado | Apache 2.0 | HuggingFace |
+| Llama-3.1-8B-Lexi-Uncensored-V2 (este) | ~8B | 128k (heredado) | Sin alinear (uncensored) | Llama 3.1 | Hugging Face, 0 descargas |
+| Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2 | ~8B | 128k (heredado) | Sin alinear | Llama 3.1 | Hugging Face, modelo de referencia del linaje |
+| meta-llama/Llama-3.1-8B-Instruct | ~8B | 128k | Alineado (RLHF + filtros) | Llama 3.1 | Hugging Face, ampliamente adoptado |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32k | Alineado | Apache 2.0 | Hugging Face |
 
 Rendimiento comparado: no disponible con datos verificados. Los benchmarks de la tabla anterior corresponden a la evaluación publicada para el modelo de Orenguteng, por lo que no permiten atribuir diferencias de rendimiento a este fine-tune concreto.
 
@@ -100,7 +100,7 @@ Rendimiento comparado: no disponible con datos verificados. Los benchmarks de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Loacli/Llama-3.1-8B-Lexi-Uncensored-V2
+- Modelo en Hugging Face: https://huggingface.co/Loacli/Llama-3.1-8B-Lexi-Uncensored-V2
 - Modelo de referencia del linaje: https://huggingface.co/Orenguteng/Llama-3.1-8B-Lexi-Uncensored-V2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Open LLM Leaderboard: https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard

@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chungulus/flux-3-image-klein-comfy-Q6_K-GGUF (este) | 5.548.681.984 (transformer) | no disponible | GGUF Q6_K | FLUX Kommunity License | HuggingFace, 0 descargas |
-| black-forest-labs/flux-3-image-klein-comfy (base) | 5.548.681.984 (transformer) | no disponible | BF16 (safetensors) | FLUX Kommunity License | HuggingFace (paquete oficial) |
+| Chungulus/flux-3-image-klein-comfy-Q6_K-GGUF (este) | 5.548.681.984 (transformer) | no disponible | GGUF Q6_K | FLUX Kommunity License | Hugging Face, 0 descargas |
+| black-forest-labs/flux-3-image-klein-comfy (base) | 5.548.681.984 (transformer) | no disponible | BF16 (safetensors) | FLUX Kommunity License | Hugging Face (paquete oficial) |
 | Otras cuantizaciones GGUF de FLUX 3 | no disponible | no disponible | GGUF | FLUX Kommunity License | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chungulus/flux-3-image-klein-comfy-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Chungulus/flux-3-image-klein-comfy-Q6_K-GGUF
 - Modelo base (paquete ComfyUI oficial de BFL): https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy
 - Revisión concreta del paquete fuente citada en la model card: https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy/tree/9d36114cf7a2e03a45c28f5cc4987d20ebfdb6c1
 - Extensión ComfyUI-GGUF: https://github.com/city96/ComfyUI-GGUF

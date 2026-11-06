@@ -74,9 +74,9 @@ Los errores estándar en bits por byte son de aproximadamente 0,05 a 0,06 con un
 
 | Modelo | Parámetros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-232m-8.71bt-mdlm-converted | 231,8 M | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace |
-| VectaBass/vectabass-232m-11.5bt-base-cooled (padre) | 231,8 M | 2048 | Autorregresivo | Apache 2.0 | HuggingFace |
-| VectaBass/vectabass-1.73b-80bt-mdlm-converted (N6) | 1,73 B | no disponible | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace |
+| vectabass-232m-8.71bt-mdlm-converted | 231,8 M | 2048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face |
+| VectaBass/vectabass-232m-11.5bt-base-cooled (padre) | 231,8 M | 2048 | Autorregresivo | Apache 2.0 | Hugging Face |
+| VectaBass/vectabass-1.73b-80bt-mdlm-converted (N6) | 1,73 B | no disponible | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos comparativos de benchmarks frente a modelos de otras familias; la única comparación publicada es interna, entre el modelo AR del mismo tamaño y esta conversión, en la tabla de muestreo anterior.
 
@@ -95,7 +95,7 @@ No se dispone de datos comparativos de benchmarks frente a modelos de otras fami
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-8.71bt-mdlm-converted
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-8.71bt-mdlm-converted
 - Modelo padre (AR): https://huggingface.co/VectaBass/vectabass-232m-11.5bt-base-cooled
 - Conversión N6 citada en el estudio de muestreo: https://huggingface.co/VectaBass/vectabass-1.73b-80bt-mdlm-converted
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

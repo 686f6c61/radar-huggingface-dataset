@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-1.7B-VibeThinker-VN es un modelo de lenguaje de 1.707.657.216 parametros (1,7B) publicado por el usuario N14QM en HuggingFace. Se trata de un modelo derivado obtenido mediante destilacion de conocimiento a nivel de secuencia (sequence-level knowledge distillation) desde el modelo profesor WeiboAI/VibeThinker-3B (3B parametros, licencia MIT) hacia el modelo alumno XHToken/Spark-X2.5-1.7B-Base (1,7B parametros, licencia Apache-2.0). El objetivo declarado es trasladar la capacidad de razonamiento paso a paso (chain-of-thought) y de resolucion de problemas de matematicas, codigo y logica del profesor de 3B a un modelo mas pequeno que pueda ejecutarse en hardware de gama media, como una Tesla T4 de 16 GB o incluso CPU mediante GGUF.
+Spark-X2.5-1.7B-VibeThinker-VN es un modelo de lenguaje de 1.707.657.216 parametros (1,7B) publicado por el usuario N14QM en Hugging Face. Se trata de un modelo derivado obtenido mediante destilacion de conocimiento a nivel de secuencia (sequence-level knowledge distillation) desde el modelo profesor WeiboAI/VibeThinker-3B (3B parametros, licencia MIT) hacia el modelo alumno XHToken/Spark-X2.5-1.7B-Base (1,7B parametros, licencia Apache-2.0). El objetivo declarado es trasladar la capacidad de razonamiento paso a paso (chain-of-thought) y de resolucion de problemas de matematicas, codigo y logica del profesor de 3B a un modelo mas pequeno que pueda ejecutarse en hardware de gama media, como una Tesla T4 de 16 GB o incluso CPU mediante GGUF.
 
 El modelo esta orientado al vietnamita como idioma principal y al ingles para las tareas de codigo. La licencia resultante es Apache-2.0, con la obligacion de mantener la atribucion a WeiboAI/VibeThinker-3B por su licencia MIT. El autor declara haber usado exclusivamente las salidas de texto del profesor (nunca sus pesos, arquitectura, codigo fuente ni logits) y no haber empleado datasets de terceros: los datos de entrenamiento son 1.328 muestras generadas automaticamente o escritas a mano por el autor en seis dominios.
 
@@ -95,7 +95,7 @@ Alternativas externas como Qwen2.5-1.5B, Llama-3.2-1B o Gemma-2-2B serian compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/N14QM/Spark-X2.5-1.7B-VibeThinker-VN
+- Modelo en Hugging Face: https://huggingface.co/N14QM/Spark-X2.5-1.7B-VibeThinker-VN
 - Modelo profesor: https://huggingface.co/WeiboAI/VibeThinker-3B
 - Modelo alumno base: https://huggingface.co/XHToken/Spark-X2.5-1.7B-Base
 - Paper de LoRA (referenciado en las etiquetas del modelo, arXiv:2106.09685): https://arxiv.org/abs/2106.09685

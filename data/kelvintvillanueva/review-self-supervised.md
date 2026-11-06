@@ -4,7 +4,7 @@
 
 El repositorio `Kelvintvillanueva/review-self-supervised` no contiene un modelo de inteligencia artificial entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre aprendizaje auto-supervisado (self-supervised learning). El autor, Kelvintvillanueva, publica este repositorio como material de referencia para documentar el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y los benchmarks públicos relevantes. La model card es explícita al afirmar que no se reivindican mejoras de rendimiento, ablaciones completadas, código liberado ni un checkpoint entrenado.
 
-El repositorio incluye un archivo `analysis.md` como artefacto principal y un `README.md` de documentación. Aunque los metadatos de HuggingFace indican un archivo `safetensors` con 49.600 parámetros, esto parece ser un artefacto residual o de prueba, no un modelo funcional. La licencia es MIT, lo que permite su reutilización con las restricciones de las fuentes de datos externas que se citen. En resumen, se trata de un recurso de investigación exploratoria, no de un modelo desplegable.
+El repositorio incluye un archivo `analysis.md` como artefacto principal y un `README.md` de documentación. Aunque los metadatos de Hugging Face indican un archivo `safetensors` con 49.600 parámetros, esto parece ser un artefacto residual o de prueba, no un modelo funcional. La licencia es MIT, lo que permite su reutilización con las restricciones de las fuentes de datos externas que se citen. En resumen, se trata de un recurso de investigación exploratoria, no de un modelo desplegable.
 
 ## Especificaciones tecnicas
 
@@ -39,7 +39,7 @@ Dado que no existe un modelo entrenado, no se pueden enumerar casos de uso prác
 - Ejemplo de documentación rigurosa de investigación, mostrando cómo estructurar hipótesis, factores de confusión y planes de reproducibilidad antes de ejecutar experimentos.
 - Recurso educativo para estudiantes que quieran entender cómo se plantea un estudio científico en machine learning, incluyendo la distinción entre planes y resultados.
 - Base para una revisión bibliográfica sobre aprendizaje auto-supervisado, ya que el autor menciona referencias y datasets propuestos.
-- Plantilla para publicar notas de investigación en HuggingFace con licencia abierta, demostrando un uso alternativo de la plataforma más allá del alojamiento de modelos.
+- Plantilla para publicar notas de investigación en Hugging Face con licencia abierta, demostrando un uso alternativo de la plataforma más allá del alojamiento de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -64,6 +64,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kelvintvillanueva/review-self-supervised
+- Repositorio en Hugging Face: https://huggingface.co/Kelvintvillanueva/review-self-supervised
 - Repositorio relacionado del mismo autor (sin relación directa): https://huggingface.co/Kelvintvillanueva/model_622500009_beit_huge
 - Referencia externa citada en la búsqueda (artículo sobre diseño de aprendizaje auto-supervisado en visión por computador): https://link.springer.com/article/10.1007/s10462-026-11506-9

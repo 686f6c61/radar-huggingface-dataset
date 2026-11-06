@@ -86,6 +86,6 @@ La comparativa directa con otras alternativas de texto-a-vídeo no está disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AcademiaSD/Wan22-T2V-A14B-NF4-for-LoRA-Training
+- Hugging Face: https://huggingface.co/AcademiaSD/Wan22-T2V-A14B-NF4-for-LoRA-Training
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers
 - Entrenador AcademiaSD LoRAlab Trainer Studio: https://github.com/AcademiaSD/AcademiaSD_LoRAlab-TrainerStudio

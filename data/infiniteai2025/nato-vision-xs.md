@@ -62,7 +62,7 @@ La precisión del 100% se alcanza únicamente sobre las imágenes sintéticas de
 
 ## Comparativa con modelos similares
 
-No disponible. No se han encontrado modelos comparables en la misma categoría (clasificador CNN diminuto de investigación con datos sintéticos). El modelo se presenta como un artefacto de investigación único, sin alternativas directas en la literatura o en HuggingFace.
+No disponible. No se han encontrado modelos comparables en la misma categoría (clasificador CNN diminuto de investigación con datos sintéticos). El modelo se presenta como un artefacto de investigación único, sin alternativas directas en la literatura o en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -74,8 +74,8 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iNFINITEAi2025/NATO-Vision-XS
+- Modelo en Hugging Face: https://huggingface.co/iNFINITEAi2025/NATO-Vision-XS
 - Repositorio GitHub: https://github.com/NaTo1000/infiniteai2025-nato1000
 - Releases del repositorio GitHub: https://github.com/NaTo1000/infiniteai2025-nato1000/releases
-- Perfil del autor en HuggingFace: https://huggingface.co/NaTo1000/infiniteai2025-creator
+- Perfil del autor en Hugging Face: https://huggingface.co/NaTo1000/infiniteai2025-creator
 - Otro modelo del autor (NATO1000-CYBER): https://huggingface.co/iNFINITEAi2025/NATO1000-CYBER

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boris-2-Preview-1 es un checkpoint temprano del modelo base Boris-2, desarrollado por OpenCerebral y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal de 144,2 millones de parametros (143,7M segun la model card) entrenado desde cero sobre una unica GPU NVIDIA V100 de 32 GB. Este preview corresponde al checkpoint de 50.000 millones de tokens del entrenamiento principal, al que se le aplico una decaida corta de learning rate de 2.500 millones de tokens, sumando 52.500 millones de tokens vistos en total. El run completo preve continuar hasta 200.000 millones de tokens.
+Boris-2-Preview-1 es un checkpoint temprano del modelo base Boris-2, desarrollado por OpenCerebral y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de lenguaje causal de 144,2 millones de parametros (143,7M segun la model card) entrenado desde cero sobre una unica GPU NVIDIA V100 de 32 GB. Este preview corresponde al checkpoint de 50.000 millones de tokens del entrenamiento principal, al que se le aplico una decaida corta de learning rate de 2.500 millones de tokens, sumando 52.500 millones de tokens vistos en total. El run completo preve continuar hasta 200.000 millones de tokens.
 
 Arquitectonicamente es un decoder transformer denso de 31 capas, hidden size 512, atencion multi-head completa con 8 cabezas de 64 dimensiones y MLP SwiGLU con dimension interna 1664. Incorpora dos componentes poco habituales: capas Canon (una convolucion depthwise causal de 3 taps aplicada a la proyeccion fusionada de query/key/value, de modo que cada posicion mezcla las dos anteriores antes de la atencion) y una tabla de n-gramas exacta que recupera un vector aprendido de rango 64 a partir de los ultimos dos y tres token ids y lo suma al residual stream antes del bloque 2. El contexto es de 2048 tokens con RoPE (theta 10.000) y vocabulario de 32.768 entradas en BPE byte-level entrenado especificamente para este modelo.
 
@@ -116,10 +116,10 @@ Las cifras de Index y de tokens de los modelos comparados proceden de las tablas
 - Es un checkpoint preview: el run completo continua hasta 200.000 millones de tokens, por lo que las capacidades y puntuaciones cambiaran en versiones posteriores.
 - Datos incompletos en la model card: la seccion de contaminacion esta truncada y no se especifica el resultado completo del chequeo de 13-gramos, ni los tipos de cuantizacion soportados, ni metricas de inferencia.
 - Discrepancia menor de parametros: la metadata de safetensors indica 144.192.782 parametros mientras que la model card indica 143,7M (desglosado en 111,9M + 16,8M + 15,0M = 143,7M). La diferencia probablemente proceda del redondeo o del conteo de parametros de la tabla de n-gramas.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y la fecha de creacion registrada es 2026-10-09, posterior a la fecha habitual de referencia; se recomienda verificar la vigencia del repositorio antes de usarlo.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y la fecha de creacion registrada es 2026-10-09, posterior a la fecha habitual de referencia; se recomienda verificar la vigencia del repositorio antes de usarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opencerebral/Boris-2-Preview-1
-- Model card completa y codigo de uso: disponible en la pagina de HuggingFace del modelo
+- Hugging Face: https://huggingface.co/opencerebral/Boris-2-Preview-1
+- Model card completa y codigo de uso: disponible en la pagina de Hugging Face del modelo
 - Enlaces a papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo Boris-2, OpenCerebral ni el Open SLM Leaderboard; los unicos resultados obtenidos no guardaban relacion con el ambito tecnico y se han descartado.

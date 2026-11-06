@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luthor 8B — MLX 8bit es la build cuantizada a 8 bits en formato MLX de Luthor 8B, un ajuste fino de Qwen3-8B especializado en manejar herramientas de terminal y de edición de ficheros dentro de un bucle de agente. Lo publica el usuario IAMIbrahim en HuggingFace bajo licencia Apache 2.0 y está pensado específicamente para Apple Silicon: el repositorio usa la librería `mlx` y pesos en safetensors cuantizados, con 8.190.735.360 parámetros totales y 8,1 GB en disco.
+Luthor 8B — MLX 8bit es la build cuantizada a 8 bits en formato MLX de Luthor 8B, un ajuste fino de Qwen3-8B especializado en manejar herramientas de terminal y de edición de ficheros dentro de un bucle de agente. Lo publica el usuario IAMIbrahim en Hugging Face bajo licencia Apache 2.0 y está pensado específicamente para Apple Silicon: el repositorio usa la librería `mlx` y pesos en safetensors cuantizados, con 8.190.735.360 parámetros totales y 8,1 GB en disco.
 
 El modelo no introduce una arquitectura nueva: hereda el transformer denso de Qwen3-8B y su valor está en el post-entrenamiento orientado a *tool calling* con un formato de herramientas estilo Hermes (bloque `<tools>`, emisión de `<tool_call>` y espera de `<tool_response>`). Esta build concreta es la de mayor fidelidad de la familia de cuantizaciones publicadas por el mismo autor, a 8,500 bits por peso con grupo de 64, a cambio de ser también la más lenta: 10,6 tokens/s medidos en un Apple M3 con 24 GB de memoria unificada y un pico de 8,80 GB.
 
@@ -86,11 +86,11 @@ No se dispone de datos de rendimiento de terceros en la información proporciona
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `luthor-8b-mlx-8bit` | 8,19 B | no disponible | 10,6 tok/s, 8,80 GB pico | Apache 2.0 | HuggingFace (0 descargas) |
-| `luthor-8b-mlx-6bit` | no disponible | no disponible | 13,8 tok/s, 6,77 GB pico | Apache 2.0 | HuggingFace |
-| `luthor-8b-mlx-4bit` | no disponible | no disponible | 19,2 tok/s, 4,79 GB pico | Apache 2.0 | HuggingFace |
-| `luthor-8b-mlx-mixed-3-6` | no disponible | no disponible | 21,1 tok/s, 4,38 GB pico | Apache 2.0 | HuggingFace |
-| `luthor-8b` (base, sin cuantizar) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `luthor-8b-mlx-8bit` | 8,19 B | no disponible | 10,6 tok/s, 8,80 GB pico | Apache 2.0 | Hugging Face (0 descargas) |
+| `luthor-8b-mlx-6bit` | no disponible | no disponible | 13,8 tok/s, 6,77 GB pico | Apache 2.0 | Hugging Face |
+| `luthor-8b-mlx-4bit` | no disponible | no disponible | 19,2 tok/s, 4,79 GB pico | Apache 2.0 | Hugging Face |
+| `luthor-8b-mlx-mixed-3-6` | no disponible | no disponible | 21,1 tok/s, 4,38 GB pico | Apache 2.0 | Hugging Face |
+| `luthor-8b` (base, sin cuantizar) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | Alternativas de terceros (mismo tamaño o tarea) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han encontrado en la búsqueda web modelos comparables documentados con datos verificables, por lo que no se incluyen cifras de rendimiento de alternativas.
@@ -111,7 +111,7 @@ No se han encontrado en la búsqueda web modelos comparables documentados con da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-8bit
+- Repositorio Hugging Face: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-8bit
 - Modelo base: https://huggingface.co/IAMIbrahim/luthor-8b
 - Build de 6 bits: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-6bit
 - Build de 4 bits: https://huggingface.co/IAMIbrahim/luthor-8b-mlx-4bit

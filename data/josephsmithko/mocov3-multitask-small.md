@@ -2,11 +2,11 @@
 
 ## Resumen
 
-mocov3-multitask-small es un prototipo de investigación publicado por el usuario JosephSmithko en HuggingFace bajo licencia MIT. Según su propia model card, se trata de un repositorio orientado a documentar valores por defecto y formatos de fichero para una tarea multitarea, no de un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida únicamente para pruebas de humo (smoke tests), sin ninguna métrica de rendimiento declarada.
+mocov3-multitask-small es un prototipo de investigación publicado por el usuario JosephSmithko en Hugging Face bajo licencia MIT. Según su propia model card, se trata de un repositorio orientado a documentar valores por defecto y formatos de fichero para una tarea multitarea, no de un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida únicamente para pruebas de humo (smoke tests), sin ninguna métrica de rendimiento declarada.
 
 El dato más relevante es su escala: el repo contiene 16.576 parámetros totales, un tamaño que lo sitúa tres o cuatro órdenes de magnitud por debajo de cualquier modelo utilizable en producción. La arquitectura declarada es "Mocov3" con atención de ventana deslizante (sliding window), fusión con compuertas (gated fusion), activación swish y normalización por lotes (batchnorm). No se especifican longitud de contexto, idiomas soportados ni composición del dataset.
 
-Su relevancia es, por tanto, estrictamente metodológica: sirve como plantilla reproducible para montar un pipeline de entrenamiento multitarea con receta de optimizador lamb y calendario de warmup lineal, y como ejemplo de empaquetado de artefactos (script, config, training args y pesos) en un repositorio HuggingFace. No debe confundirse con el método MoCo v3 de aprendizaje autosupervisado publicado por Meta AI: la model card no menciona aprendizaje contrastivo, ni visión, ni destilación de momento, por lo que la relación con aquel trabajo es, como máximo, nominal.
+Su relevancia es, por tanto, estrictamente metodológica: sirve como plantilla reproducible para montar un pipeline de entrenamiento multitarea con receta de optimizador lamb y calendario de warmup lineal, y como ejemplo de empaquetado de artefactos (script, config, training args y pesos) en un repositorio Hugging Face. No debe confundirse con el método MoCo v3 de aprendizaje autosupervisado publicado por Meta AI: la model card no menciona aprendizaje contrastivo, ni visión, ni destilación de momento, por lo que la relación con aquel trabajo es, como máximo, nominal.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ No hay entrenamiento documentado. El autor afirma de forma explícita que `model
 
 - Pruebas de humo de pipelines de carga: el checkpoint permite verificar que un `DataLoader`, un script de inferencia o una integración de CI arrancan correctamente antes de sustituirlo por pesos reales.
 - Plantilla de proyecto de investigación multitarea: el repositorio aporta un esqueleto con `train.py`, `config.json` y `training_args.json` que sirve como punto de partida para montar experimentos propios con receta documentada.
-- Referencia de formato de artefactos: útil para estudiar cómo se estructura un repositorio HuggingFace mínimo (script, configuración de arquitectura, argumentos de entrenamiento y pesos en safetensors).
+- Referencia de formato de artefactos: útil para estudiar cómo se estructura un repositorio Hugging Face mínimo (script, configuración de arquitectura, argumentos de entrenamiento y pesos en safetensors).
 - Validación de utilidades de serialización: con 16.576 parámetros, permite comprobar en segundos que una herramienta de conversión, empaquetado o cifrado de safetensors funciona como se espera.
 - Docencia y divulgación: un modelo de este tamaño es adecuado para explicar en clase qué es un checkpoint, qué diferencia hay entre inicialización y modelo entrenado, y cómo se registra una configuración de arquitectura.
 - Pruebas de integración de orquestadores: sirve para verificar que un servicio de inferencia (por ejemplo, un contenedor con un endpoint HTTP) responde correctamente, sin coste de GPU y con latencia despreciable.
@@ -88,7 +88,7 @@ Advertencia sobre el nombre: el término "Mocov3" coincide con el método de apr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JosephSmithko/mocov3-multitask-small
+- Modelo en Hugging Face: https://huggingface.co/JosephSmithko/mocov3-multitask-small
 - Perfil del autor: https://huggingface.co/JosephSmithko
 - Ficheros mencionados en el repositorio: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper de referencia del método homónimo MoCo v3 (no citado en la model card, solo como contexto del nombre): https://arxiv.org/abs/2104.02057

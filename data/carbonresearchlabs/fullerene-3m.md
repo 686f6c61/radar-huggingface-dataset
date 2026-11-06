@@ -105,6 +105,6 @@ Datos comparativos disponibles: en OmniParseBench, Fullerene 3M obtiene 43,5 de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CarbonResearchLabs/fullerene-3M
+- Modelo en Hugging Face: https://huggingface.co/CarbonResearchLabs/fullerene-3M
 - Licencia de pesos: https://huggingface.co/CarbonResearchLabs/fullerene-3M/blob/main/LICENSE-WEIGHTS.md
 - Repositorio del motor Carbon-OCR: https://github.com/karanvora2599/Carbon-OCR

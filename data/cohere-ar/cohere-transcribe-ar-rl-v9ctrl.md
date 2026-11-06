@@ -6,7 +6,7 @@ Cohere-AR/cohere-transcribe-ar-rl-v9ctrl es un modelo de reconocimiento automát
 
 El modelo es un ajuste fino (fine-tune) del checkpoint Cohere-AR/cohere-transcribe-ar-sft-v9-full, entrenado primero con supervisión (SFT) y posteriormente refinado mediante aprendizaje por refuerzo (RL), según se deduce de la nomenclatura `sft` y `rl` en los identificadores. El sufijo `v9ctrl` sugiere una iteración de control dentro de la versión 9 del pipeline de entrenamiento del autor. Su pipeline declarado es `automatic-speech-recognition` y los tags incluyen `cohere_asr`, lo que indica una arquitectura propia de Cohere para ASR, aunque la información pública no detalla la arquitectura interna.
 
-Es relevante ahora porque aborda dos escenarios poco cubiertos por los modelos ASR genéricos: el árabe dialectal y el code-switching árabe-inglés en contextos telefónicos, donde los modelos multilingües convencionales suelen degradarse. El acceso es restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar los pesos, lo que limita su uso directo en producción sin revisión de licencia.
+Es relevante ahora porque aborda dos escenarios poco cubiertos por los modelos ASR genéricos: el árabe dialectal y el code-switching árabe-inglés en contextos telefónicos, donde los modelos multilingües convencionales suelen degradarse. El acceso es restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar los pesos, lo que limita su uso directo en producción sin revisión de licencia.
 
 ## Especificaciones tecnicas
 
@@ -86,6 +86,6 @@ La comparación es aproximada: no hay benchmarks publicados de este checkpoint q
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9ctrl
+- Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9ctrl
 - Modelo base (SFT): https://huggingface.co/Cohere-AR/cohere-transcribe-ar-sft-v9-full
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información disponible.

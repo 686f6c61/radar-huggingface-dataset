@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo, ya que el modelo MTP no está
 
 ## Enlaces
 
-- [HuggingFace: inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B-MTP](https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B-MTP)
-- [HuggingFace: inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B (modelo base)](https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B)
+- [Hugging Face: inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B-MTP](https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B-MTP)
+- [Hugging Face: inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B (modelo base)](https://huggingface.co/inference-optimization/Qwen3.8-Flash-Next-0.2B-A0.2B)
 - [GitHub: QwenLM/Qwen3.8-Flash-Next](https://github.com/QwenLM/Qwen3.8-Flash-Next/)
 - [llm-compressor (repositorio de vLLM)](https://github.com/vllm-project/llm-compressor)

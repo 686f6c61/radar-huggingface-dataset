@@ -82,10 +82,10 @@ La model card indica que el articulo recomienda las variantes con r = 9 cm y L =
 
 | Modelo | Marco | Radio espacial de mascara | Longitud temporal de mascara | Parametros del codificador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| eeg-fm-masking_jepa_rall_L2 (este) | JEPA | todos los canales | 2 parches | 12,69 M | cc-by-4.0 | HuggingFace |
-| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible en la informacion proporcionada | cc-by-4.0 | HuggingFace |
-| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible en la informacion proporcionada | cc-by-4.0 | HuggingFace |
-| Otros codificadores EEG de la familia eeg-fm-masking | MAE o JEPA | 5 radios posibles | 6 longitudes posibles | no disponible | cc-by-4.0 | Coleccion de 58 modelos en HuggingFace |
+| eeg-fm-masking_jepa_rall_L2 (este) | JEPA | todos los canales | 2 parches | 12,69 M | cc-by-4.0 | Hugging Face |
+| eeg-fm-masking_jepa_r9cm_L2 | JEPA | 9 cm | 2 parches | no disponible en la informacion proporcionada | cc-by-4.0 | Hugging Face |
+| eeg-fm-masking_mae_r9cm_L2 | MAE | 9 cm | 2 parches | no disponible en la informacion proporcionada | cc-by-4.0 | Hugging Face |
+| Otros codificadores EEG de la familia eeg-fm-masking | MAE o JEPA | 5 radios posibles | 6 longitudes posibles | no disponible | cc-by-4.0 | Coleccion de 58 modelos en Hugging Face |
 
 Los dos ultimos modelos de la tabla (r = 9 cm, L = 2) son los que el articulo recomienda. No se dispone en la informacion proporcionada de cifras comparativas frente a otros modelos de fundacion EEG de la literatura (por ejemplo, alternativas tipo LaBraM, EEGPT o BIOT): no disponibles.
 
@@ -105,7 +105,7 @@ Los dos ultimos modelos de la tabla (r = 9 cm, L = 2) son los que el articulo re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L2
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_rall_L2
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Modelo recomendado (MAE, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r9cm_L2
 - Modelo recomendado (JEPA, r = 9 cm, L = 2): https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L2

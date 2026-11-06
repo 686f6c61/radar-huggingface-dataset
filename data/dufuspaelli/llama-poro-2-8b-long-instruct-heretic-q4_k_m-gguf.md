@@ -73,7 +73,7 @@ La principal diferencia frente a Llama-3-8B y Mistral-7B es el enfoque bilingüe
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic-Q4_K_M-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic-Q4_K_M-GGUF
 - Modelo base "heretic": https://huggingface.co/dufuspaelli/Llama-Poro-2-8B-Long-Instruct-heretic
 - Modelo original de LumiOpen: https://huggingface.co/LumiOpen/Llama-Poro-2-8B-Long-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

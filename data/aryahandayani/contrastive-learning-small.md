@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`aryahandayani/contrastive-learning-small` es un repositorio de HuggingFace publicado por el usuario `aryahandayani` bajo licencia MIT. A pesar del sufijo "small" y de las etiquetas `transformer` y `safetensors`, la propia model card lo describe explicitamente como un conjunto de notas de lectura y un esbozo de experimento sobre aprendizaje contrastivo, no como un modelo entrenado. El autor indica que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado", de modo que el artefacto principal es un documento (`summary.md`) y no un modelo utilizable.
+`aryahandayani/contrastive-learning-small` es un repositorio de Hugging Face publicado por el usuario `aryahandayani` bajo licencia MIT. A pesar del sufijo "small" y de las etiquetas `transformer` y `safetensors`, la propia model card lo describe explicitamente como un conjunto de notas de lectura y un esbozo de experimento sobre aprendizaje contrastivo, no como un modelo entrenado. El autor indica que el repositorio "no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado", de modo que el artefacto principal es un documento (`summary.md`) y no un modelo utilizable.
 
 Los unicos datos tecnicos verificables del repositorio son los pesos en formato safetensors, con un total de 49.600 parametros (aproximadamente 0,05 millones). El tamano del repositorio figura como 0,0 GB. No se documenta arquitectura concreta, configuracion de atencion, vocabulario, tokenizador, longitud de contexto ni idiomas soportados. Las etiquetas incluyen `transformer`, `research-notes`, `contrastive-learning` y `region:us`, pero son etiquetas del repositorio, no especificaciones verificadas.
 
-Su relevancia actual es limitada como modelo, pero puede ser de interes como ejemplo de publicacion de material de investigacion en HuggingFace: el autor explicita una politica de no fabricar metricas y exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en bruto. Para un desarrollador que busque un modelo de lenguaje o un encoder contrastivo entrenado, este repositorio no es adecuado.
+Su relevancia actual es limitada como modelo, pero puede ser de interes como ejemplo de publicacion de material de investigacion en Hugging Face: el autor explicita una politica de no fabricar metricas y exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en bruto. Para un desarrollador que busque un modelo de lenguaje o un encoder contrastivo entrenado, este repositorio no es adecuado.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ Respecto al entrenamiento, la model card es explicita: no se ha publicado ningun
 ## Casos de uso
 
 - Diseno de un experimento de aprendizaje contrastivo: el repositorio enumera la pregunta de investigacion, los posibles factores de confusion y una comparacion propuesta con lineas base emparejadas, por lo que puede servir como punto de partida para estructurar un protocolo experimental propio.
-- Plantilla de reproducibilidad: la model card exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que convierte el documento en una lista de comprobacion reutilizable para publicar experimentos en HuggingFace.
+- Plantilla de reproducibilidad: la model card exige que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que convierte el documento en una lista de comprobacion reutilizable para publicar experimentos en Hugging Face.
 - Revision bibliografica inicial: las referencias y datasets propuestos ofrecen un punto de arranque para verificar literatura sobre aprendizaje contrastivo antes de comprometer recursos de computo.
 - Pruebas de infraestructura de carga de pesos: el archivo safetensors de 49.600 parametros puede utilizarse como artefacto minimo para validar pipelines de descarga, cache y carga en librerias compatibles con safetensors en entornos de integracion continua.
 - Material docente o de ejemplo: el contraste entre un repositorio con etiquetas de modelo y una model card que declara ausencia de checkpoint puede usarse para ensenar buenas practicas de documentacion y de higiene de publicacion.
@@ -74,6 +74,6 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aryahandayani/contrastive-learning-small
+- Modelo en Hugging Face: https://huggingface.co/aryahandayani/contrastive-learning-small
 - Archivo principal citado en la model card: `summary.md` dentro del repositorio
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales asociados al autor o al artefacto.

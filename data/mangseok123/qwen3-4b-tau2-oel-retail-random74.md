@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3-4b-tau2-oel-retail-random74 es un ajuste fino del modelo denso Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario MANGSEOK123 en HuggingFace. El modelo se ha entrenado mediante Online Experiential Learning (OEL) sobre el dominio *retail* del benchmark tau2-bench, un conjunto de tareas de interaccion agente-herramienta-usuario. El objetivo declarado no es mejorar el modelo base, sino publicar un artefacto reproducible que documenta un experimento concreto de auto-destilacion.
+qwen3-4b-tau2-oel-retail-random74 es un ajuste fino del modelo denso Qwen/Qwen3-4B-Instruct-2507, publicado por el usuario MANGSEOK123 en Hugging Face. El modelo se ha entrenado mediante Online Experiential Learning (OEL) sobre el dominio *retail* del benchmark tau2-bench, un conjunto de tareas de interaccion agente-herramienta-usuario. El objetivo declarado no es mejorar el modelo base, sino publicar un artefacto reproducible que documenta un experimento concreto de auto-destilacion.
 
 El metodo empleado es auto-destilacion, no aprendizaje por refuerzo: no existe senal de recompensa. Profesor y estudiante comparten los mismos pesos; la unica diferencia es que al profesor se le anade la memoria de la tarea al *system prompt*. El estudiante se ajusta a la distribucion del profesor con una perdida KL completa a nivel de token, de modo que el comportamiento aprendido sobreviva sin la memoria en el prompt. Tan solo se realizaron 9 pasos (una epoca) sobre 72 pares (memoria, tarea sintetizada), con un *learning rate* de 3e-6 y recorte de gradiente a 1.0.
 
@@ -22,7 +22,7 @@ Su relevancia actual es metodologica: el propio autor advierte que, en toda la s
 | Formato de pesos | safetensors |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Tamano del repositorio | 8,8 GB |
-| Pipeline (HuggingFace) | no disponible |
+| Pipeline (Hugging Face) | no disponible |
 | Descargas / favoritos | 0 / 0 |
 | Fecha de creacion | 2026-09-24 |
 
@@ -70,9 +70,9 @@ Como observacion cualitativa, el autor senala que, en las ejecuciones de esta se
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-oel-retail-random74 | 4,41 B | no disponible | Apache 2.0 | HuggingFace, safetensors | Ajuste OEL sobre tau2-bench retail; sin mejora verificada sobre el base |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4,4 B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Modelo base de este ajuste |
-| Qwen3-4B (variante base) | ~4,4 B | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace | Version previa de la familia Qwen3 |
+| MANGSEOK123/qwen3-4b-tau2-oel-retail-random74 | 4,41 B | no disponible | Apache 2.0 | Hugging Face, safetensors | Ajuste OEL sobre tau2-bench retail; sin mejora verificada sobre el base |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4,4 B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Modelo base de este ajuste |
+| Qwen3-4B (variante base) | ~4,4 B | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face | Version previa de la familia Qwen3 |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad. El autor indica que este ajuste no supera al modelo base, de modo que en terminos de rendimiento esperado la opcion recomendada sigue siendo Qwen/Qwen3-4B-Instruct-2507.
 
@@ -91,5 +91,5 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-random74
+- Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-oel-retail-random74
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

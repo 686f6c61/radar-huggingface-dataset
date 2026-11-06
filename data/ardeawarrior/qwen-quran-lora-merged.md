@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ardeawarrior/qwen-quran-lora-merged` es un modelo de generación de texto publicado en HuggingFace por el usuario ardeawarrior, derivado de la familia Qwen2 según la etiqueta declarada en el repositorio y con un nombre que sugiere la fusión (*merge*) de un adaptador LoRA sobre un modelo base, presumiblemente orientado a contenido coránico. El repositorio contiene 1.543.714.304 parámetros reales en formato safetensors (aproximadamente 1,54 mil millones) y ocupa 3,1 GB, cifras compatibles con un modelo de la clase Qwen2-1.5B almacenado en precisión de 16 bits. Se trata, por tanto, de un modelo pequeño, apto para inferencia en hardware de consumo.
+`ardeawarrior/qwen-quran-lora-merged` es un modelo de generación de texto publicado en Hugging Face por el usuario ardeawarrior, derivado de la familia Qwen2 según la etiqueta declarada en el repositorio y con un nombre que sugiere la fusión (*merge*) de un adaptador LoRA sobre un modelo base, presumiblemente orientado a contenido coránico. El repositorio contiene 1.543.714.304 parámetros reales en formato safetensors (aproximadamente 1,54 mil millones) y ocupa 3,1 GB, cifras compatibles con un modelo de la clase Qwen2-1.5B almacenado en precisión de 16 bits. Se trata, por tanto, de un modelo pequeño, apto para inferencia en hardware de consumo.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: el modelo no declara licencia, idiomas, longitud de contexto ni detalles de entrenamiento, y la model card publicada es la plantilla automática de HuggingFace sin ninguna sección completada. En el momento de la consulta acumula 0 descargas y 0 *likes*, por lo que no existe validación alguna por parte de la comunidad. No se ha publicado ningún resultado de benchmarks ni documentación del dataset de ajuste.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: el modelo no declara licencia, idiomas, longitud de contexto ni detalles de entrenamiento, y la model card publicada es la plantilla automática de Hugging Face sin ninguna sección completada. En el momento de la consulta acumula 0 descargas y 0 *likes*, por lo que no existe validación alguna por parte de la comunidad. No se ha publicado ningún resultado de benchmarks ni documentación del dataset de ajuste.
 
 El interés técnico principal reside en su tamaño reducido, que permite desplegarlo en GPU de gama media o incluso en CPU, y en su posible especialización temática. No obstante, al no haber información verificable sobre el procedimiento de ajuste, cualquier afirmación sobre su comportamiento en dominio religioso o en árabe debe considerarse una hipótesis derivada del nombre del repositorio, no un dato confirmado.
 
@@ -29,12 +29,12 @@ El interés técnico principal reside en su tamaño reducido, que permite desple
 
 La única información estructural disponible procede de las etiquetas del repositorio: `qwen2` como familia de arquitectura y `conversational` como orientación de uso, además de `transformers` y `safetensors` como librería y formato. El recuento exacto de parámetros (1.543.714.304) coincide con el de un modelo Qwen2 de aproximadamente 1,5 B de parámetros, y el tamaño del repositorio (3,1 GB) es coherente con pesos almacenados en fp16/bf16 sin cuantizar. El nombre del repositorio incluye `quran-lora-merged`, lo que indica que el autor fusionó los pesos de un adaptador LoRA con el modelo base, pero no se especifica ni el checkpoint base exacto, ni el rango del adaptador, ni el dataset utilizado.
 
-No hay ningún dato sobre volumen de tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otra técnica de alineación, hiperparámetros, precisión de entrenamiento, hardware empleado ni emisiones de carbono. La model card es la plantilla automática de HuggingFace y todos sus apartados figuran como `[More Information Needed]`. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o variantes de atención. La etiqueta `arxiv:1910.09700` corresponde a la referencia a Lacoste et al. (2019) sobre el calculador de impacto medioambiental incluida en la plantilla por defecto, no a un artículo técnico sobre este modelo.
+No hay ningún dato sobre volumen de tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otra técnica de alineación, hiperparámetros, precisión de entrenamiento, hardware empleado ni emisiones de carbono. La model card es la plantilla automática de Hugging Face y todos sus apartados figuran como `[More Information Needed]`. Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o variantes de atención. La etiqueta `arxiv:1910.09700` corresponde a la referencia a Lacoste et al. (2019) sobre el calculador de impacto medioambiental incluida en la plantilla por defecto, no a un artículo técnico sobre este modelo.
 
 ## Capacidades
 
 - Generación de texto autoregresiva y conversación multi-turno, según la etiqueta `conversational` del repositorio.
-- Integración con la librería `transformers` y compatibilidad declarada con `text-generation-inference` y con *endpoints* compatibles de HuggingFace (`endpoints_compatible`).
+- Integración con la librería `transformers` y compatibilidad declarada con `text-generation-inference` y con *endpoints* compatibles de Hugging Face (`endpoints_compatible`).
 - Posible adaptación al dominio coránico o a temática islámica, inferida únicamente del nombre del repositorio y no documentada.
 - Se desconoce si conserva las capacidades generales del modelo base (razonamiento, código, matemáticas, multilingüismo) tras el *merge* del LoRA; un ajuste estrecho puede degradar el rendimiento fuera del dominio.
 - No hay evidencia de soporte de *tool calling*, *function calling*, uso como agente ni razonamiento multi-paso.
@@ -75,11 +75,11 @@ La comparativa se limita a especificaciones publicadas por cada fabricante, ya q
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ardeawarrior/qwen-quran-lora-merged | 1,54 B | No disponible | No disponible | HuggingFace (0 descargas) |
-| Qwen2-1.5B / Qwen2-1.5B-Instruct | 1,54 B | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens (131 072 con YaRN) | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Llama 3.2 Community License | HuggingFace |
-| Gemma-2-2B-it | 2,61 B | 8 192 tokens | Gemma Terms of Use | HuggingFace |
+| ardeawarrior/qwen-quran-lora-merged | 1,54 B | No disponible | No disponible | Hugging Face (0 descargas) |
+| Qwen2-1.5B / Qwen2-1.5B-Instruct | 1,54 B | 32 768 tokens (ampliable con YaRN) | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 tokens (131 072 con YaRN) | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Llama 3.2 Community License | Hugging Face |
+| Gemma-2-2B-it | 2,61 B | 8 192 tokens | Gemma Terms of Use | Hugging Face |
 
 No es posible comparar rendimiento en tareas porque este modelo no publica ninguna métrica. La comparación con la familia Qwen2 solo puede establecerse a nivel de recuento de parámetros, y la coincidencia exacta con Qwen2-1.5B es una inferencia razonable, no un dato confirmado por el autor.
 
@@ -93,12 +93,12 @@ No es posible comparar rendimiento en tareas porque este modelo no publica ningu
 - Sesgos desconocidos: al no documentarse el dataset de ajuste, no es posible evaluar sesgos de género, religión, cultura o geografía.
 - Posible olvido catastrófico. La fusión de un LoRA especializado puede degradar las capacidades generales del modelo base en razonamiento, código y matemáticas.
 - Sin validación comunitaria: 0 descargas y 0 *likes* en el momento de la consulta, sin issues ni discusiones públicas.
-- La etiqueta `arxiv:1910.09700` no acredita ninguna publicación técnica sobre el modelo; es un artefacto de la plantilla automática de HuggingFace.
+- La etiqueta `arxiv:1910.09700` no acredita ninguna publicación técnica sobre el modelo; es un artefacto de la plantilla automática de Hugging Face.
 - Fecha de creación declarada como 2026-09-10, posterior a la fecha de muchos de los modelos de referencia de la familia Qwen2; conviene verificar la integridad del repositorio antes de su uso.
 - No se ha publicado ningún artefacto de cuantización, por lo que el despliegue en formatos ligeros exige una conversión manual por parte del usuario.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ardeawarrior/qwen-quran-lora-merged
+- Modelo en Hugging Face: https://huggingface.co/ardeawarrior/qwen-quran-lora-merged
 - Referencia citada en las etiquetas (plantilla de impacto medioambiental, no paper del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la búsqueda web otros enlaces relevantes: los resultados devueltos corresponden a páginas sobre titulaciones en ciencias del deporte y no guardan relación con el modelo.

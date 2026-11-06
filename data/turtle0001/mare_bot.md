@@ -2,9 +2,9 @@
 
 ## Resumen
 
-mare_bot es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-9B-Base, publicado por el usuario turtle0001 en HuggingFace. Se trata de un modelo de aproximadamente 9.400 millones de parametros (9.409.813.744 segun los pesos en safetensors), distribuido en precision de 16 bits (FP16) y etiquetado con el pipeline `image-text-to-text`, lo que sugiere capacidad de procesamiento conjunto de imagen y texto heredada del modelo base. La licencia declarada es Apache 2.0 y el unico idioma indicado es el ingles.
+mare_bot es un ajuste fino (finetune) del modelo base unsloth/Qwen3.5-9B-Base, publicado por el usuario turtle0001 en Hugging Face. Se trata de un modelo de aproximadamente 9.400 millones de parametros (9.409.813.744 segun los pesos en safetensors), distribuido en precision de 16 bits (FP16) y etiquetado con el pipeline `image-text-to-text`, lo que sugiere capacidad de procesamiento conjunto de imagen y texto heredada del modelo base. La licencia declarada es Apache 2.0 y el unico idioma indicado es el ingles.
 
-El modelo se ha entrenado con la libreria Unsloth junto con TRL de HuggingFace, un flujo habitual para ajustes finos eficientes en memoria sobre GPUs de gama alta de consumo. El repositorio ocupa 18,8 GB, coherente con un modelo de 9,4B parametros en FP16, y no incluye versiones cuantizadas publicadas.
+El modelo se ha entrenado con la libreria Unsloth junto con TRL de Hugging Face, un flujo habitual para ajustes finos eficientes en memoria sobre GPUs de gama alta de consumo. El repositorio ocupa 18,8 GB, coherente con un modelo de 9,4B parametros en FP16, y no incluye versiones cuantizadas publicadas.
 
 La relevancia de esta ficha es limitada en terminos de evidencia: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, no publica resultados de benchmarks ni detalles del dataset de ajuste, y la model card es practicamente la plantilla por defecto de Unsloth. Debe tratarse, por tanto, como un artefacto experimental sin validacion publica.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada en terminos de evidencia: el modelo tien
 
 La model card no describe la arquitectura interna del modelo. Los unicos indicios son el campo `base_model` (`unsloth/Qwen3.5-9B-Base`), la etiqueta `qwen3_5` y el pipeline declarado `image-text-to-text`, que implican una arquitectura transformer con componentes de vision y lenguaje. No se especifica si emplea atencion lineal, decodificacion especulativa, atencion con ventana deslizante ni ninguna otra innovacion tecnica.
 
-Respecto al entrenamiento, la informacion disponible se limita a la afirmacion de que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se publican el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de ajuste (SFT, LoRA, QLoRA, DPO, RLHF), el numero de pasos, la tasa de aprendizaje ni ninguna metrica de evaluacion. El resultado publicado es un unico checkpoint en FP16.
+Respecto al entrenamiento, la informacion disponible se limita a la afirmacion de que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se publican el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de ajuste (SFT, LoRA, QLoRA, DPO, RLHF), el numero de pasos, la tasa de aprendizaje ni ninguna metrica de evaluacion. El resultado publicado es un unico checkpoint en FP16.
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ Respecto al entrenamiento, la informacion disponible se limita a la afirmacion d
 - Evaluacion comparativa de checkpoints: util como referencia intermedia en pipelines internos que comparen distintas variantes del mismo modelo base antes de decidir cual desplegar.
 - Generacion de descripciones de imagenes en ingles: tareas de captioning o respuesta a preguntas visuales (VQA) en entornos de investigacion donde no se requiere soporte multilingue.
 - Base para pipelines de vision-lenguaje en prototipos de robotica o inspeccion visual, siempre que se valide previamente la calidad real del ajuste con un conjunto de prueba propio.
-- Despliegue en servidores TGI internos: la etiqueta `endpoints_compatible` y el formato safetensors permiten levantarlo con HuggingFace TGI para exponer una API compatible con OpenAI en un entorno controlado.
+- Despliegue en servidores TGI internos: la etiqueta `endpoints_compatible` y el formato safetensors permiten levantarlo con Hugging Face TGI para exponer una API compatible con OpenAI en un entorno controlado.
 - Investigacion sobre sesgos y alineacion: un finetune sin documentar es un caso de estudio util para medir como un ajuste no supervisado en calidad altera el comportamiento del modelo base (por ejemplo, degradacion de instrucciones, olvido catastrofico).
 
 ## Benchmarks y rendimiento
@@ -59,15 +59,15 @@ La model card no incluye MMLU, HumanEval, GSM8K, MT-Bench ni ninguna otra metric
 - VRAM con cuantizacion: en 8 bits se estiman unos 10-11 GB y en 4 bits unos 6-7 GB, aunque el repositorio no publica pesos cuantizados, por lo que habria que generarlos localmente.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o A6000 para FP16 con margen; RTX 4090 (24 GB) suficiente para FP16 con contexto limitado.
 - GPU de consumo: cabe en una RTX 4090 en FP16 con contexto moderado; en una RTX 3090 (24 GB) tambien, con margen ajustado. Para GPUs de 12-16 GB (RTX 4070 Ti, 4080) es necesario cuantizar.
-- Opciones de despliegue: `transformers` (referencia), HuggingFace TGI (etiqueta `endpoints_compatible`), vLLM si la arquitectura Qwen3.5 esta soportada por la version disponible, y llama.cpp / Ollama / LM Studio tras convertir los pesos a GGUF con Unsloth o llama.cpp.
+- Opciones de despliegue: `transformers` (referencia), Hugging Face TGI (etiqueta `endpoints_compatible`), vLLM si la arquitectura Qwen3.5 esta soportada por la version disponible, y llama.cpp / Ollama / LM Studio tras convertir los pesos a GGUF con Unsloth o llama.cpp.
 - Latencia y throughput: no disponible. No se publican mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| turtle0001/mare_bot | 9,4B | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B-Base | ~9B (no confirmado) | No disponible | No disponible | HuggingFace como modelo base |
+| turtle0001/mare_bot | 9,4B | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B-Base | ~9B (no confirmado) | No disponible | No disponible | Hugging Face como modelo base |
 | Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Licencia comunitaria Llama 3.1 | Amplia, con versiones cuantizadas oficiales |
 | Gemma 2 9B | 9,2B | 8.192 tokens | Licencia Gemma | Amplia, con soporte en vLLM y Ollama |
 
@@ -87,10 +87,10 @@ Nota: los datos de Llama 3.1 8B y Gemma 2 9B son caracteristicas publicas de eso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/turtle0001/mare_bot
+- Modelo en Hugging Face: https://huggingface.co/turtle0001/mare_bot
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B-Base
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
-- Documentacion de HuggingFace TGI: https://huggingface.co/docs/text-generation-inference
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
+- Documentacion de Hugging Face TGI: https://huggingface.co/docs/text-generation-inference
 - Paper, blog o demo especificos del modelo: no disponible
 - Resultados de busqueda web relevantes: no disponible

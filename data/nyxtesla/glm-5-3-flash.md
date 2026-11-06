@@ -84,11 +84,11 @@ Los datos de GLM-5.2 y Claude Opus 4.8 no estan disponibles en las fuentes consu
 - Riesgo de alucinacion inherente a los modelos generativos, especialmente en tareas de razonamiento complejo o con contextos muy largos.
 - El modo de razonamiento por defecto es `max`, lo que puede generar latencias elevadas; es necesario configurar `reasoning_effort` y `clear_thinking` explicitamente para escenarios conversacionales.
 - Aunque la licencia MIT permite uso comercial, el despliegue en produccion requiere infraestructura de multiples GPUs de alta gama, lo que puede suponer una barrera economica.
-- El repositorio en HuggingFace tiene cero descargas y cero likes, lo que sugiere que podria tratarse de una publicacion reciente o de un mirror no verificado; se recomienda verificar la autenticidad del upload antes de su uso en entornos criticos.
+- El repositorio en Hugging Face tiene cero descargas y cero likes, lo que sugiere que podria tratarse de una publicacion reciente o de un mirror no verificado; se recomienda verificar la autenticidad del upload antes de su uso en entornos criticos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nyxtesla/GLM-5.3-Flash
+- Repositorio Hugging Face: https://huggingface.co/nyxtesla/GLM-5.3-Flash
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3-flash
 - Informe tecnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentacion de Transformers para GLM-5: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm5_next.md

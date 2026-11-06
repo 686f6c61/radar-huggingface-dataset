@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-Kodachrome-V2 es un adaptador LoRA de texto a imagen publicado por el usuario aoleg en HuggingFace, pensado para aplicar sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. No es un modelo completo: es un conjunto de pesos de bajo rango que modifica el comportamiento del modelo de difusión para reproducir la estética de la película Kodachrome en sus variantes de los años 40 y 50 (formatos 4x5 y 35 mm). El repositorio ocupa 0,1 GB y se distribuye con licencia Apache 2.0 compatible con la librería diffusers.
+MOSS-Image-Kodachrome-V2 es un adaptador LoRA de texto a imagen publicado por el usuario aoleg en Hugging Face, pensado para aplicar sobre el modelo base OpenMOSS-Team/MOSS-Image-Base. No es un modelo completo: es un conjunto de pesos de bajo rango que modifica el comportamiento del modelo de difusión para reproducir la estética de la película Kodachrome en sus variantes de los años 40 y 50 (formatos 4x5 y 35 mm). El repositorio ocupa 0,1 GB y se distribuye con licencia Apache 2.0 compatible con la librería diffusers.
 
 El adaptador resuelve un problema muy concreto de los flujos de generación de imagen: conseguir un aspecto fotográfico de época coherente (saturación característica, contraste, grano, iluminación y paleta) sin necesidad de encadenar prompts largos ni de recurrir a modelos afinados específicos. Por los ejemplos publicados, el estilo se activa con prompts que comienzan por "Kodachrome film" y añaden etiquetas de época como "1940s, 4x5 Kodachrome" o "1950s, 35mm Kodachrome".
 
@@ -96,7 +96,7 @@ La comparación cuantitativa con alternativas de otras familias (LoRA de pelícu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aoleg/MOSS-Image-Kodachrome-V2
+- Modelo en Hugging Face: https://huggingface.co/aoleg/MOSS-Image-Kodachrome-V2
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Versión previa del adaptador: https://huggingface.co/aoleg/MOSS-Image-Kodachrome
 - Índice de adaptadores del modelo base: https://huggingface.co/models?other=base_model%3Aadapter%3AOpenMOSS-Team%2FMOSS-Image-Base

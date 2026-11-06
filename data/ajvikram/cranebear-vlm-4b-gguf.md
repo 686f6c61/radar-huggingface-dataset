@@ -85,6 +85,6 @@ La comparativa se limita a características porque no hay benchmarks estándar c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ajvikram/cranebear-vlm-4b-gguf
+- Repositorio Hugging Face: https://huggingface.co/ajvikram/cranebear-vlm-4b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - No se han encontrado otros enlaces públicos (papers, blogs, repos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Munna es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Munna`. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: cc-by-4.0`) y ningun texto descriptivo, por lo que no se dispone de informacion publica sobre su arquitectura, su tamano, su proceso de entrenamiento ni sus capacidades. El repositorio no registra descargas ni "likes", lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+Munna es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/Munna`. En el momento de la consulta, la model card asociada contiene unicamente el bloque de metadatos de licencia (`license: cc-by-4.0`) y ningun texto descriptivo, por lo que no se dispone de informacion publica sobre su arquitectura, su tamano, su proceso de entrenamiento ni sus capacidades. El repositorio no registra descargas ni "likes", lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 El unico dato tecnico objetivo disponible es el tamano del repositorio, 0,1 GB, junto con las etiquetas `region:us` y la licencia CC-BY-4.0. Ese volumen es compatible con un modelo de parametros muy reducidos en precision baja, con un adaptador (LoRA) o con un repositorio de pesos parcial, pero no permite determinar el numero de parametros ni la familia arquitectonica.
 
@@ -88,7 +88,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Munna
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Munna
 - Model card del autor: no disponible (solo contiene el bloque de licencia)
 - Articulo tecnico o paper: no disponible
 - Repositorio de codigo: no disponible

@@ -77,8 +77,8 @@ La comparativa se limita a modelos de NER biomédica. GLiNER-BioMed se diferenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rahulrajsonu/medisync-gliner-biomed-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/rahulrajsonu/medisync-gliner-biomed-small-onnx
 - Modelo base: https://huggingface.co/Ihor/gliner-biomed-small-v1.0
 - Repositorio GLiNER-BioMed: https://github.com/ds4dh/GLiNER-biomed
 - Artículo de GLiNER-BioMed: https://academic.oup.com/bioinformatics/article/42/6/btag322/8690923
-- Colección GLiNER-BioMed en HuggingFace: https://huggingface.co/collections/Ihor/gliner-biomed-6792453f071504a05c535c23
+- Colección GLiNER-BioMed en Hugging Face: https://huggingface.co/collections/Ihor/gliner-biomed-6792453f071504a05c535c23

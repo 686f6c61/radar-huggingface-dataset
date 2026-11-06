@@ -91,7 +91,7 @@ La principal diferencia frente al de referencia es la cuantización de las capas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ikantkode/Qwen3.5-4B-AWQ-vd)
+- [Modelo en Hugging Face](https://huggingface.co/ikantkode/Qwen3.5-4B-AWQ-vd)
 - [Repositorio de kernels gfx1030 para vLLM (ikantkode/gfx1030-vllm-0.26)](https://github.com/ikantkode/gfx1030-vllm-0.26)
 - [Página de vLLM Recipes para Qwen/Qwen3.5-4B](https://recipes.vllm.ai/Qwen/Qwen3.5-4B)
 - [Modelo qwen3.5:4b en Ollama](https://ollama.com/library/qwen3.5:4b)

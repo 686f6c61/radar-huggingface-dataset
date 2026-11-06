@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: sirve como ejemplo reproducible de espec
 
 La model card indica que π₀ es un modelo vision-lenguaje-accion para control robótico general, desarrollado por Physical Intelligence, y que la implementación empleada procede del repositorio OpenPI adaptado a LeRobot. Es decir, se trata de una policy que consume observaciones visuales e instrucciones en lenguaje natural y emite acciones de robot. La model card no detalla la composicion interna del backbone, el mecanismo de generacion de acciones ni la configuracion de atencion; esa informacion no esta disponible en los datos proporcionados. Segun la documentacion publica de π₀, la arquitectura combina un modelo de vision-lenguaje preentrenado con un modulo especializado en acciones que genera trayectorias por *flow matching*, pero el repositorio aqui descrito no aporta confirmacion ni cifras propias.
 
-Respecto al entrenamiento, lo unico documentado es el dataset de ajuste fino: `taewonkoo/stack_cube_mixed_noise_70pct_40ep`, propiedad de otro usuario de HuggingFace. De su nombre se deduce una tarea de apilado de cubos (*stack cube*), con ruido mixto al 70 % y 40 epocas, aunque el autor no publica hiperparametros (tasa de aprendizaje, tamano de lote, composicion exacta del dataset, numero de demostraciones). No hay informacion sobre RLHF, DPO ni sobre si el ajuste congela parte del backbone. El sufijo "convex" del checkpoint no se explica en la model card.
+Respecto al entrenamiento, lo unico documentado es el dataset de ajuste fino: `taewonkoo/stack_cube_mixed_noise_70pct_40ep`, propiedad de otro usuario de Hugging Face. De su nombre se deduce una tarea de apilado de cubos (*stack cube*), con ruido mixto al 70 % y 40 epocas, aunque el autor no publica hiperparametros (tasa de aprendizaje, tamano de lote, composicion exacta del dataset, numero de demostraciones). No hay informacion sobre RLHF, DPO ni sobre si el ajuste congela parte del backbone. El sufijo "convex" del checkpoint no se explica en la model card.
 
 ## Capacidades
 
@@ -62,11 +62,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| Este checkpoint (pi0 stackcube mixed noise 70pct 40ep convex) | 3.501.372.176 | No disponible | VLA especializado en apilado de cubos | Apache-2.0 | HuggingFace, 0 descargas | No publicados |
+| Este checkpoint (pi0 stackcube mixed noise 70pct 40ep convex) | 3.501.372.176 | No disponible | VLA especializado en apilado de cubos | Apache-2.0 | Hugging Face, 0 descargas | No publicados |
 | π₀ base (Physical Intelligence / OpenPI) | No disponible en la informacion proporcionada | No disponible | VLA generalista multi-robot | No disponible en la informacion proporcionada | Repositorio OpenPI y pesos publicos | No disponible en la informacion proporcionada |
 | OpenVLA | No disponible en la informacion proporcionada | No disponible | VLA de proposito general | No disponible en la informacion proporcionada | Publico | No disponible en la informacion proporcionada |
-| SmolVLA (LeRobot) | No disponible en la informacion proporcionada | No disponible | VLA compacto | No disponible en la informacion proporcionada | Publico en HuggingFace | No disponible en la informacion proporcionada |
-| ACT (LeRobot) | No disponible en la informacion proporcionada | No disponible | Policy de imitacion (no VLA) | No disponible en la informacion proporcionada | Publico en HuggingFace | No disponible en la informacion proporcionada |
+| SmolVLA (LeRobot) | No disponible en la informacion proporcionada | No disponible | VLA compacto | No disponible en la informacion proporcionada | Publico en Hugging Face | No disponible en la informacion proporcionada |
+| ACT (LeRobot) | No disponible en la informacion proporcionada | No disponible | Policy de imitacion (no VLA) | No disponible en la informacion proporcionada | Publico en Hugging Face | No disponible en la informacion proporcionada |
 
 No se dispone de datos verificados de rendimiento para ninguno de los modelos de la tabla en la informacion proporcionada, por lo que la comparativa se limita a aspectos estructurales y de disponibilidad.
 
@@ -86,7 +86,7 @@ No se dispone de datos verificados de rendimiento para ninguno de los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-70pct-40ep-convex
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-stackcube-mixed-noise-70pct-40ep-convex
 - Dataset de ajuste fino: https://huggingface.co/datasets/taewonkoo/stack_cube_mixed_noise_70pct_40ep
 - Blog de π₀ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi

@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de modelos comparables específicos de c
 
 ## Enlaces
 
-- HuggingFace (MLX): https://huggingface.co/QianqianTech/custos-1.0-mlx
-- HuggingFace (BF16, vLLM/Transformers): https://huggingface.co/QianqianTech/custos-1.0
+- Hugging Face (MLX): https://huggingface.co/QianqianTech/custos-1.0-mlx
+- Hugging Face (BF16, vLLM/Transformers): https://huggingface.co/QianqianTech/custos-1.0
 - ModelScope: https://modelscope.cn/models/QianqianTech/custos-1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

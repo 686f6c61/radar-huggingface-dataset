@@ -66,7 +66,7 @@ No se han publicado benchmarks comparables con otros modelos de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_20M_s2_2026-09-06_12-47-10_656530-pt
+- Hugging Face: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_adamwppt_20M_s2_2026-09-06_12-47-10_656530-pt
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/kgy5o6gz
 - Checkpoint s1: https://huggingface.co/alexkstern/nca_dose_1Bpt_hfinit_20M_s1_2026-08-14_10-59-49_660926-pt

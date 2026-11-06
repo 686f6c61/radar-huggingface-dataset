@@ -73,9 +73,9 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| allan-valin/allophant-onnx (esta ficha) | no disponible | forma de onda 16 kHz, inventario fijo de 136 fonemas, 16 idiomas | PER 73,0 / PFER 23,2 (greedy, VoxAngeles) | apache-2.0 | HuggingFace, ONNX int8 |
-| kgnlp/allophant (original) | no disponible | forma de onda 16 kHz, inventario configurable (hasta 438 fonemas) | PER 71,5 / PFER 22,2 (beam search, VoxAngeles) | apache-2.0 | HuggingFace, pesos originales |
-| Otros reconocedores fonéticos CTC basados en wav2vec2 | no disponible en la información proporcionada | típicamente features auto-supervisadas, inventario fijo por modelo | no disponible | variable según modelo | HuggingFace |
+| allan-valin/allophant-onnx (esta ficha) | no disponible | forma de onda 16 kHz, inventario fijo de 136 fonemas, 16 idiomas | PER 73,0 / PFER 23,2 (greedy, VoxAngeles) | apache-2.0 | Hugging Face, ONNX int8 |
+| kgnlp/allophant (original) | no disponible | forma de onda 16 kHz, inventario configurable (hasta 438 fonemas) | PER 71,5 / PFER 22,2 (beam search, VoxAngeles) | apache-2.0 | Hugging Face, pesos originales |
+| Otros reconocedores fonéticos CTC basados en wav2vec2 | no disponible en la información proporcionada | típicamente features auto-supervisadas, inventario fijo por modelo | no disponible | variable según modelo | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,12 +87,12 @@ No se han publicado en la información disponible resultados de benchmarks está
 - Sin marcas de tiempo ni alineamiento a nivel de palabra: la salida es por frame y el consumidor debe derivar la segmentación.
 - El modelo base puede requerir 16 kHz y mono; no se documenta comportamiento con otras frecuencias de muestreo ni con audio multicanal.
 - Licencia Apache 2.0, que permite uso comercial y modificación con atribución y conservación del aviso de licencia; conviene citar tanto el trabajo original (Interspeech 2023) como la conversión.
-- La fecha de creación del repositorio indicada en HuggingFace es posterior a la de esta ficha; verificar la vigencia y el estado del repositorio antes de fijarlo como dependencia en producción.
+- La fecha de creación del repositorio indicada en Hugging Face es posterior a la de esta ficha; verificar la vigencia y el estado del repositorio antes de fijarlo como dependencia en producción.
 - Sin métricas de latencia publicadas: es necesario medir el rendimiento en el hardware objetivo antes de comprometerse con un SLA.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allan-valin/allophant-onnx
+- Modelo en Hugging Face: https://huggingface.co/allan-valin/allophant-onnx
 - Modelo original: https://huggingface.co/kgnlp/allophant
 - Paper: Allophant: Cross-lingual Phoneme Recognition with Articulatory Attributes (Interspeech 2023): https://arxiv.org/abs/2306.04306
 - Herramienta phonetic-eval: https://github.com/allan-valin/phonetic-eval

@@ -109,9 +109,9 @@ La comparación relevante es con Pythia, ya que Delphi se define explícitamente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-5e19-1.2Bparams-7.4Btokens-seed62746
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-5e19-1.2Bparams-7.4Btokens-seed62746
 - Blog de Delphi, "Scaling Laws That Extrapolate 300× Past the Fit": https://openathena.ai/blog/delphi
-- Organización Marin en HuggingFace (todos los checkpoints Delphi): https://huggingface.co/marin-community
+- Organización Marin en Hugging Face (todos los checkpoints Delphi): https://huggingface.co/marin-community
 - Dataset con los datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Repositorio Marin en GitHub: https://github.com/marin-community/marin
 - Código de la receta Complete(d)P + AdamH: https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py

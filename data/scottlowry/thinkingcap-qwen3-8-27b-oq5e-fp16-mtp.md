@@ -88,7 +88,7 @@ Las variantes del mismo autor permiten elegir el compromiso entre precision y ta
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ5e-fp16-mtp
+- Hugging Face (este modelo): https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ5e-fp16-mtp
 - Variante 8 bits: https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp
 - Variante Qwen3.8-27B 6 bits: https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.8-27B

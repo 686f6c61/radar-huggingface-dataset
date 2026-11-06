@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maximus-v1.0-3M es un modelo de lenguaje pequeno (SLM) de 2.993.797 parametros desarrollado por FromZero (autor: Paul Courneya) y publicado en HuggingFace bajo licencia Apache 2.0. Su propuesta no es competir en calidad de generacion, sino explorar eficiencia de parametros por debajo de la barrera de los 10 millones. Para ello emplea una arquitectura propia que intercala capas feed-forward SwiGLU con capas feed-forward Hadamard sin parametros, lo que permite apilar 18 capas con un presupuesto de parametros muy reducido.
+Maximus-v1.0-3M es un modelo de lenguaje pequeno (SLM) de 2.993.797 parametros desarrollado por FromZero (autor: Paul Courneya) y publicado en Hugging Face bajo licencia Apache 2.0. Su propuesta no es competir en calidad de generacion, sino explorar eficiencia de parametros por debajo de la barrera de los 10 millones. Para ello emplea una arquitectura propia que intercala capas feed-forward SwiGLU con capas feed-forward Hadamard sin parametros, lo que permite apilar 18 capas con un presupuesto de parametros muy reducido.
 
 El modelo se entreno sobre 8.000 millones de tokens de una mezcla diversa de texto web, material educativo, datos sinteticos, codigo normalizado y matematicas, con un ratio de aproximadamente 2.670 tokens por parametro, muy por encima del optimo Chinchilla (que situaria el punto optimo en torno a 60 millones de tokens para este tamano). La ventana de contexto nativa es de solo 320 tokens y el tokenizer es propio (DillionV2, vocabulario de 2.564 entradas), muy inferior a los vocabularios habituales de 32.000 a 128.000 tokens.
 
@@ -25,7 +25,7 @@ Es relevante ahora como artefacto de investigacion reproducible: permite estudia
 | Tamano de intermedio (FFN SwiGLU) | 384 |
 | Tokens de entrenamiento | 8.000 millones |
 | Descargas / likes | 0 descargas / 1 like |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face) |
 | Fechas | Creado el 2026-09-08, actualizado el 2026-09-14 |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 | Maximus-v1.0-3M | 2.993.797 | 320 tokens | Ingles | Apache 2.0 | Arquitectura personalizada con FFN Hadamard; 8B tokens de entrenamiento; benchmarks publicados en la propia model card |
 | Pythia-14M (EleutherAI) | 14M | No disponible | Ingles | Apache 2.0 | Familia de referencia para estudios de interpretabilidad; tamano superior; benchmarks no comparados aqui |
 | TinyStories-3M (Microsoft Research) | No disponible | No disponible | Ingles | No disponible | Orientado especificamente a narrativa infantil simple; sin datos comparativos publicados en la informacion disponible |
-| SmolLM-135M (HuggingFace) | 135M | No disponible | Ingles | Apache 2.0 | Dos ordenes de magnitud mayor; categoria de SLM utilizable en produccion ligera |
+| SmolLM-135M (Hugging Face) | 135M | No disponible | Ingles | Apache 2.0 | Dos ordenes de magnitud mayor; categoria de SLM utilizable en produccion ligera |
 
 No se dispone de datos de benchmarks homogeneos para establecer una comparacion cuantitativa fiable entre estos modelos y Maximus. Cualquier cifra de terceros deberia verificarse en las model cards originales antes de usarse.
 
@@ -109,7 +109,7 @@ No se dispone de datos de benchmarks homogeneos para establecer una comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fromziro/Maximus-v1.0-3M
+- Modelo en Hugging Face: https://huggingface.co/fromziro/Maximus-v1.0-3M
 - Datasets citados en la model card: https://huggingface.co/datasets/HuggingFaceFW/finephrase, https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu, https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0, https://huggingface.co/datasets/nampdn-ai/tiny-strange-textbooks, https://huggingface.co/datasets/ByteDance-Seed/mga-fineweb-edu, https://huggingface.co/datasets/nvidia/OpenMathInstruct-2, https://huggingface.co/datasets/AxiomicLabs/NPset-2-Python-Edu
 - Citacion indicada por el autor: `@misc{maximus-v1.0-3m, title = {Maximus-v1.0-3M}, organization = {FromZero}, authors = {Paul Courneya}, year = {2026}, url = {https://huggingface.co/fromziro/Maximus-v1.0-3M}}`
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados correspondian a sitios de contenido para adultos sin ninguna relacion con Maximus, por lo que se descartan.

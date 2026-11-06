@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PterigionFast es un modelo publicado en HuggingFace por el usuario jasyamm bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
+PterigionFast es un modelo publicado en Hugging Face por el usuario jasyamm bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones, lo que sugiere una publicación reciente o un artefacto de carácter experimental.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante, ya que no se ha publicado información sobre su diseño, su pipeline de inferencia ni sus resultados. El nombre "PterigionFast" podría sugerir una variante optimizada para velocidad, pero se trata de una inferencia no confirmada por el autor.
 
@@ -39,7 +39,7 @@ Tampoco se documentan innovaciones como decodificación especulativa, atención 
 
 - Evaluación exploratoria de artefactos recientes: el modelo puede descargarse y probarse en un entorno aislado para determinar empíricamente sus capacidades, dado que no hay documentación que las describa.
 - Prototipado interno con licencia permisiva: la licencia Apache 2.0 permite uso comercial y modificación, lo que facilita su incorporación en pruebas internas sin fricción legal, siempre que se valide antes su comportamiento.
-- Investigación sobre modelos no documentados: útil para estudiar prácticas de publicación en HuggingFace y la importancia de las model cards completas.
+- Investigación sobre modelos no documentados: útil para estudiar prácticas de publicación en Hugging Face y la importancia de las model cards completas.
 - Base para fine-tuning experimental: al no conocerse su arquitectura, solo tendría sentido tras inspeccionar los archivos de pesos y confirmar compatibilidad con frameworks estándar.
 - Comparación de calidad de documentación: puede servir como caso de estudio de repositorios sin información técnica frente a publicaciones con model cards detalladas.
 - Descartado para producción: sin benchmarks, sin especificaciones de contexto ni idiomas, no es recomendable integrarlo en ningún flujo de producción sin una evaluación exhaustiva previa.
@@ -82,5 +82,5 @@ La comparación es meramente orientativa: los tres modelos de referencia cuentan
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jasyamm/PterigionFast
+- Repositorio en Hugging Face: https://huggingface.co/jasyamm/PterigionFast
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

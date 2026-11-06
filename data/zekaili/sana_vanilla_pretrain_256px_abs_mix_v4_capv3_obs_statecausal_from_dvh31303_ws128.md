@@ -78,6 +78,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zekaili/SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal_from_dvh31303_ws128
+- Hugging Face: https://huggingface.co/zekaili/SANA_Vanilla_Pretrain_256px_abs_mix_v4_capv3_obs_statecausal_from_dvh31303_ws128
 - Repositorio de codigo `sana-rwm`, commit `57327dcfc`, rama `rwm/yuyang`: no disponible como enlace en la informacion proporcionada
 - Paper, blog o demo: no disponibles en la informacion proporcionada

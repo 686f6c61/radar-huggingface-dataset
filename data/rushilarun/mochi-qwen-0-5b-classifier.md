@@ -81,10 +81,10 @@ Los datos de rendimiento de los modelos alternativos no estan disponibles en la 
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mochi-Qwen-0.5B-Classifier | Aproximadamente 0,5B (base) + adaptador LoRA | Clasificacion de prompt injection (etapa 1 del pipeline Mochi) | apache-2.0 | HuggingFace (repositorio con 0 descargas) |
+| Mochi-Qwen-0.5B-Classifier | Aproximadamente 0,5B (base) + adaptador LoRA | Clasificacion de prompt injection (etapa 1 del pipeline Mochi) | apache-2.0 | Hugging Face (repositorio con 0 descargas) |
 | Llama Guard 3 1B | Aproximadamente 1,2B | Clasificador de seguridad de entrada/salida con taxonomia configurable | Llama 3.2 Community License | Ampliamente desplegado en ecosistema Llama |
-| ShieldGemma 2B | Aproximadamente 2,6B | Clasificador de contenido danino (acoso, odio, sexual, peligro) | Gemma Terms of Use | HuggingFace y Vertex AI |
-| Prompt Guard 2 (86M) | Aproximadamente 86M | Deteccion de inyeccion y *jailbreak* | Licencia de la familia Llama | HuggingFace |
+| ShieldGemma 2B | Aproximadamente 2,6B | Clasificador de contenido danino (acoso, odio, sexual, peligro) | Gemma Terms of Use | Hugging Face y Vertex AI |
+| Prompt Guard 2 (86M) | Aproximadamente 86M | Deteccion de inyeccion y *jailbreak* | Licencia de la familia Llama | Hugging Face |
 
 No se dispone de datos comparativos de precision, recall ni F1 frente a estos modelos dentro de la informacion proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos comparativos de precision, recall ni F1 frente a estos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rushilarun/Mochi-Qwen-0.5B-Classifier
+- Modelo en Hugging Face: https://huggingface.co/rushilarun/Mochi-Qwen-0.5B-Classifier
 - Repositorio del proyecto Mochi (mencionado en la model card): https://github.com/rushil-arun/mochi
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento (referenciado): SulKhu/Mochi

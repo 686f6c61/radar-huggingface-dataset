@@ -76,10 +76,10 @@ Lectura: mejora en exactitud de llamada (+2,45 puntos), nombre de funcion (+0,35
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen2.5-0.5B-Instruct) | ~0,5 B | 32 768 (heredado del base) | Tool calling + abstención via GRPO | No disponible | HuggingFace, adaptador PEFT |
-| Qwen2.5-0.5B-Instruct (base) | ~0,5 B | 32 768 | Instrucciones generales | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 768 | Instrucciones generales, mejor razonamiento | Apache 2.0 | HuggingFace |
-| Modelos especializados en function calling de ~1 B (familia xLAM, Hammer, ToolACE) | ~1 B | Variable segun modelo | Tool calling | Variable; consultar cada ficha | HuggingFace |
+| Este adaptador (sobre Qwen2.5-0.5B-Instruct) | ~0,5 B | 32 768 (heredado del base) | Tool calling + abstención via GRPO | No disponible | Hugging Face, adaptador PEFT |
+| Qwen2.5-0.5B-Instruct (base) | ~0,5 B | 32 768 | Instrucciones generales | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | 32 768 | Instrucciones generales, mejor razonamiento | Apache 2.0 | Hugging Face |
+| Modelos especializados en function calling de ~1 B (familia xLAM, Hammer, ToolACE) | ~1 B | Variable segun modelo | Tool calling | Variable; consultar cada ficha | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos directos entre este adaptador y las alternativas en la informacion proporcionada; las cifras de la tabla de rendimiento son del autor y usan scripts propios. En la practica, la comparacion relevante es contra su propio modelo base: el adaptador mejora tool calling y abstención, pero pierde terreno en BFCL single-turn y no mejora el razonamiento general.
 
@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks comparativos directos entre este adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo1320-lora
+- Modelo en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-grpo1320-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab: https://github.com/uygarkurt/post-training-lab

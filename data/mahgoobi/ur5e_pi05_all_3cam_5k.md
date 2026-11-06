@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ur5e_pi05_all_3cam_5k` es un punto de control de robótica (VLA, vision-language-action) publicado por el usuario mahgoobi en HuggingFace. Se trata de un ajuste fino de π₀.₅ sobre 1.080 grabaciones reales de un brazo UR5e con pinza Robotiq, partiendo del modelo base `pi05_base`. El modelo recibe tres imágenes de 224×224, un vector de estado de 7 dimensiones y una instrucción de tarea en lenguaje natural, y emite un chunk de 50 acciones de 7 dimensiones a 20 Hz (2,5 segundos de movimiento por inferencia).
+`ur5e_pi05_all_3cam_5k` es un punto de control de robótica (VLA, vision-language-action) publicado por el usuario mahgoobi en Hugging Face. Se trata de un ajuste fino de π₀.₅ sobre 1.080 grabaciones reales de un brazo UR5e con pinza Robotiq, partiendo del modelo base `pi05_base`. El modelo recibe tres imágenes de 224×224, un vector de estado de 7 dimensiones y una instrucción de tarea en lenguaje natural, y emite un chunk de 50 acciones de 7 dimensiones a 20 Hz (2,5 segundos de movimiento por inferencia).
 
 Es relevante porque forma parte de una serie de experimentos reproducibles sobre datos de manipulación reales: cubre seis tareas de sobremesa distinguidas únicamente por el prompt, con cuatro niveles de clutter (`d1`–`d4`) incluidos en entrenamiento y un reparto por episodio (cada décimo episodio reservado). El punto de control corresponde al paso 5.000 de una ejecución de 20.000 pasos, no a una ejecución corta: el decaimiento coseno del learning rate estaba todavía en 2,26e-5.
 
@@ -112,7 +112,7 @@ Frente a políticas generalistas de manipulación (por ejemplo π₀ original u 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_5k
+- Modelo en Hugging Face: https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_5k
 - Punto de control final de la misma ejecución (paso 20.000): https://huggingface.co/mahgoobi/ur5e_pi05_all_3cam_20k
 - Punto de control anterior (2 cámaras, 5 tareas, solo `clean`): https://huggingface.co/mahgoobi/ur5e_pi05_10k
 - Código de entrenamiento (configuración `pi05_ur5e_all`): https://github.com/EAI-RSM/RoboResearch

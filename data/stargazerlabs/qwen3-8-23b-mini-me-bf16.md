@@ -76,7 +76,7 @@ No hay datos de benchmarks para comparar directamente. El modelo se posiciona co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-bf16
+- Hugging Face: https://huggingface.co/StargazerLabs/Qwen3.8-23B-Mini-Me-bf16
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Artículo de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/
 - Guía de despliegue de Qwen3.8 en producción: https://www.yottalabs.ai/post/how-to-run-qwen-3-8-in-production

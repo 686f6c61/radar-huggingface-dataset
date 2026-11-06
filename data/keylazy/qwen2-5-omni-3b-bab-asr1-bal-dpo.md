@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-bab-asr1-bal-dpo` es un checkpoint publicado en HuggingFace por el usuario `keylazy`, que por su identificador parece derivar del modelo multimodal Qwen2.5-Omni-3B de Alibaba Qwen, con algun tipo de ajuste fino mediante DPO (Direct Preference Optimization) y componentes relacionados con ASR (reconocimiento automatico del habla) y con "balanceo" ("bal"). Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por el autor en ninguna parte de la model card.
+`keylazy/Qwen2.5-Omni-3B-bab-asr1-bal-dpo` es un checkpoint publicado en Hugging Face por el usuario `keylazy`, que por su identificador parece derivar del modelo multimodal Qwen2.5-Omni-3B de Alibaba Qwen, con algun tipo de ajuste fino mediante DPO (Direct Preference Optimization) y componentes relacionados con ASR (reconocimiento automatico del habla) y con "balanceo" ("bal"). Esta interpretacion procede unicamente del nombre del repositorio y no esta confirmada por el autor en ninguna parte de la model card.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) aparecen como "[More Information Needed]". El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un conjunto de pesos parcial (por ejemplo, adaptadores LoRA) o con un checkpoint incompleto, pero no con los pesos completos de un modelo de 3.000 millones de parametros.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) aparecen como "[More Information Needed]". El repositorio tiene un tamano de 0,1 GB, lo que es coherente con un conjunto de pesos parcial (por ejemplo, adaptadores LoRA) o con un checkpoint incompleto, pero no con los pesos completos de un modelo de 3.000 millones de parametros.
 
 El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y la busqueda web no ha devuelto ningun resultado relevante sobre el (los unicos resultados obtenidos son paginas de ayuda no relacionadas sobre Facebook). Por tanto, esta ficha es necesariamente incompleta: se limita a consignar lo que puede verificarse y a marcar explicitamente como "no disponible" todo lo demas, en lugar de inferir datos tecnicos que el autor no ha publicado.
 
@@ -30,7 +30,7 @@ El modelo acumula 0 descargas y 0 "likes" en el momento de la consulta, y la bus
 
 No hay informacion publicada sobre la arquitectura, el proceso de entrenamiento, el volumen de tokens, la composicion del dataset ni el uso de RLHF, DPO u otras tecnicas de alineacion. El sufijo `-dpo` del identificador sugiere un ajuste por preferencias sobre un modelo base, y el fragmento `asr1` sugiere algun componente o etapa orientada a reconocimiento de voz, pero ninguna de estas dos inferencias esta documentada en la model card.
 
-La model card incluye como unica referencia tecnica el identificador `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019). Se trata de la cita que la plantilla de HuggingFace incluye por defecto en la seccion de impacto ambiental, no de un paper del modelo. No hay paper, informe tecnico ni entrada de blog asociados a este checkpoint.
+La model card incluye como unica referencia tecnica el identificador `arxiv:1910.09700`, que corresponde a "Quantifying the Carbon Emissions of Machine Learning" (Lacoste et al., 2019). Se trata de la cita que la plantilla de Hugging Face incluye por defecto en la seccion de impacto ambiental, no de un paper del modelo. No hay paper, informe tecnico ni entrada de blog asociados a este checkpoint.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| keylazy/Qwen2.5-Omni-3B-bab-asr1-bal-dpo | no disponible | no disponible | no disponible | no disponible | Publicado en HuggingFace, 0 descargas |
+| keylazy/Qwen2.5-Omni-3B-bab-asr1-bal-dpo | no disponible | no disponible | no disponible | no disponible | Publicado en Hugging Face, 0 descargas |
 | Qwen2.5-Omni-3B (base probable, no confirmado) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Referencia a consultar en la model card oficial del modelo base |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para establecer una comparativa tecnica fiabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-bal-dpo
+- Modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-bal-dpo
 - Referencia del paper citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto mencionada en la plantilla: https://mlco2.github.io/impact
 - Modelo base probable, pendiente de confirmacion por el autor: https://huggingface.co/Qwen/Qwen2.5-Omni-3B

@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/Belle-whisper-large-v3-turbo-zh-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/Belle-whisper-large-v3-turbo-zh-ggml
 - Modelo base: https://huggingface.co/BELLE-2/Belle-whisper-large-v3-turbo-zh
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk
 - Motor de inferencia whisper.cpp: https://github.com/ggml-org/whisper.cpp

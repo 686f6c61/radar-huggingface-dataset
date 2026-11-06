@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r450-online-dpo-merged` es un checkpoint derivado de un proceso de fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de HuggingFace, emplea una arquitectura `qwen3_5_moe`, lo que indica un diseño de mezcla de expertos (MoE) con 35.107.181.936 parámetros totales. El nombre sugiere que se aplicó un ajuste fino con DPO (Direct Preference Optimization) en línea, aunque no se proporcionan detalles sobre el proceso de entrenamiento.
+El modelo `unconst/Affine-5czsc2fc98-r450-online-dpo-merged` es un checkpoint derivado de un proceso de fusión de LoRA sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`. Según las etiquetas de Hugging Face, emplea una arquitectura `qwen3_5_moe`, lo que indica un diseño de mezcla de expertos (MoE) con 35.107.181.936 parámetros totales. El nombre sugiere que se aplicó un ajuste fino con DPO (Direct Preference Optimization) en línea, aunque no se proporcionan detalles sobre el proceso de entrenamiento.
 
 El repositorio se describe como un "checkpoint de salvamento" privado, no destinado a una presentación oficial hasta que se supere una fase de validación. Esto implica que el modelo puede ser un experimento intermedio o un respaldo técnico, más que un lanzamiento pulido para producción. La ausencia de licencia, idiomas documentados y benchmarks limita su uso inmediato en entornos profesionales.
 
@@ -57,5 +57,5 @@ No disponible. No se han identificado modelos comparables con la misma arquitect
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r450-online-dpo-merged)
+- [Modelo en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r450-online-dpo-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft)

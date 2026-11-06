@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/NonMiFrega/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/NonMiFrega/DeepSeek-R1-Distill-Qwen-1.5B-Q4_K_M-GGUF
 - Modelo base (card original con los detalles del destilado): https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Espacio de conversión GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

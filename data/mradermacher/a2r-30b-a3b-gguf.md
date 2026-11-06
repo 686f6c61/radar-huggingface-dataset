@@ -21,7 +21,7 @@ La relevancia de esta versión cuantizada radica en que permite ejecutar un mode
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna del modelo base (número de capas, dimensiones, tipo de atención, etc.) ni sobre el proceso de entrenamiento (volumen de datos, composición del dataset, técnicas de alineación como RLHF o DPO). Los únicos datos disponibles son los tags de HuggingFace, que indican que se trata de un modelo de audio-lenguaje con capacidades de atribución de hablante y soporte para conversaciones multi-party. El nombre "A2R-30B-A3B" sugiere una arquitectura de mezcla de expertos con 30B parámetros totales y 3B activos, pero esta información no está confirmada en la documentación pública.
+No se dispone de información detallada sobre la arquitectura interna del modelo base (número de capas, dimensiones, tipo de atención, etc.) ni sobre el proceso de entrenamiento (volumen de datos, composición del dataset, técnicas de alineación como RLHF o DPO). Los únicos datos disponibles son los tags de Hugging Face, que indican que se trata de un modelo de audio-lenguaje con capacidades de atribución de hablante y soporte para conversaciones multi-party. El nombre "A2R-30B-A3B" sugiere una arquitectura de mezcla de expertos con 30B parámetros totales y 3B activos, pero esta información no está confirmada en la documentación pública.
 
 ## Capacidades
 

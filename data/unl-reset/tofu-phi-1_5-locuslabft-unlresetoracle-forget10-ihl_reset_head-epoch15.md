@@ -44,7 +44,7 @@ El entrenamiento se realiza durante 20 épocas (este checkpoint es la 15) con un
 - **Auditoría de cumplimiento normativo**: estudiar si un modelo ajustado puede "desaprender" datos personales sintéticos (TOFU usa autores ficticios) y qué residuos de información persisten tras el borrado.
 - **Análisis de degradación de capacidades**: medir cuánto se pierde en tareas generales (perplejidad en "retain", generación de código) al aplicar la pérdida IHL, útil para calibrar el compromiso olvido-retención.
 - **Base para experimentos de *reset* de capas**: el checkpoint documenta la reinicialización de embeddings y LM head, por lo que sirve como punto de partida para probar variantes (reset de más capas, otras inicializaciones).
-- **Docencia y formación**: ejemplo didáctico de cómo se construye y evalúa un checkpoint de olvido selectivo en el ecosistema HuggingFace, con manifiesto de configuración incluido.
+- **Docencia y formación**: ejemplo didáctico de cómo se construye y evalúa un checkpoint de olvido selectivo en el ecosistema Hugging Face, con manifiesto de configuración incluido.
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`unl-reset/tofu-phi-1_5-...`) | 1.418 M | no disponible | Apache 2.0 | HuggingFace | Checkpoint de olvido selectivo, época 15/20 |
-| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | Apache 2.0 | HuggingFace | Modelo base ajustado en TOFU, sin olvido |
-| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | HuggingFace | Modelo original de Microsoft |
-| `microsoft/phi-2` | 2.700 M | 2048 | MIT | HuggingFace | Sucesor con más parámetros y mejor rendimiento general |
+| Este checkpoint (`unl-reset/tofu-phi-1_5-...`) | 1.418 M | no disponible | Apache 2.0 | Hugging Face | Checkpoint de olvido selectivo, época 15/20 |
+| `locuslab/tofu_ft_phi-1.5` | ~1.400 M | no disponible | Apache 2.0 | Hugging Face | Modelo base ajustado en TOFU, sin olvido |
+| `microsoft/phi-1_5` | 1.300 M | 2048 | MIT | Hugging Face | Modelo original de Microsoft |
+| `microsoft/phi-2` | 2.700 M | 2048 | MIT | Hugging Face | Sucesor con más parámetros y mejor rendimiento general |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch15)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_head-epoch15)
 - [Modelo base: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - [Paper TOFU (Task of Fictitious Unlearning)](https://arxiv.org/abs/2401.06121)

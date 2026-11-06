@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de politica de imitacion basada en Diffusion Policy, entrenado para una tarea de manipulacion bimanual con manos diestras sobre un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1. La tarea concreta consiste en retirar una caja de panuelos de un nivel de estanteria, pasarla de una mano a otra y depositarla en otro nivel. El autor es el usuario de HuggingFace `tarzanagh` y el modelo se distribuye bajo licencia Apache-2.0.
+Este repositorio contiene un checkpoint de politica de imitacion basada en Diffusion Policy, entrenado para una tarea de manipulacion bimanual con manos diestras sobre un robot DexMate Vega-1 equipado con dos manos RobotEra XHand1. La tarea concreta consiste en retirar una caja de panuelos de un nivel de estanteria, pasarla de una mano a otra y depositarla en otro nivel. El autor es el usuario de Hugging Face `tarzanagh` y el modelo se distribuye bajo licencia Apache-2.0.
 
 A diferencia de un modelo de lenguaje, no se trata de un transformer generativo de texto: es una politica visomotora que consume observaciones (cuatro camaras RGB a 640x360 y 30 fps) junto con el estado del robot (38 dimensiones de posiciones articulares mas 30 dimensiones de fuerza en las puntas de los dedos, concatenadas en un vector de estado de 68 dimensiones) y produce chunks de acciones de 16 pasos. El checkpoint tiene 268.343.590 parametros y el repositorio ocupa 1,1 GB.
 
@@ -108,7 +108,7 @@ Como referencia externa, frente a una politica de regresion trivial tipo hold-fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_dptactile260920
+- Modelo en Hugging Face: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_dptactile260920
 - Variante Diffusion Policy sin tactil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_dp260920
 - Variante ACT sin tactil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_act260920
 - Variante ACT con tactil: https://huggingface.co/tarzanagh/ckpt_handoverteleop_shelf2shelf_4cam260918_acttactile260920

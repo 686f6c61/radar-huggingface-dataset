@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cdvine5295/2pac` es un adaptador LoRA (Low-Rank Adaptation) de text-to-image publicado en HuggingFace por el usuario cdvine5295. No es un modelo generativo completo, sino un complemento que se aplica sobre el modelo base `inclusionAI/Ming-Image-0.1-Design`, tambien alojado en HuggingFace. La funcion declarada por el autor es la generacion de imagenes asociadas a la palabra de activacion `janet jackson`, con la model card titulada "Janet Jackson 82".
+`cdvine5295/2pac` es un adaptador LoRA (Low-Rank Adaptation) de text-to-image publicado en Hugging Face por el usuario cdvine5295. No es un modelo generativo completo, sino un complemento que se aplica sobre el modelo base `inclusionAI/Ming-Image-0.1-Design`, tambien alojado en Hugging Face. La funcion declarada por el autor es la generacion de imagenes asociadas a la palabra de activacion `janet jackson`, con la model card titulada "Janet Jackson 82".
 
 El modelo se publica bajo licencia Apache 2.0, ocupa 0,1 GB en el repositorio y esta etiquetado con la libreria `diffusers` y la plantilla `template:diffusion-lora`. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su fecha de creacion registrada es el 11 de octubre de 2026, con una actualizacion apenas 26 segundos posterior. Se trata, por tanto, de una publicacion muy reciente y sin traccion de uso verificable.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM total: determinada por `inclusionAI/Ming-Image-0.1-Design`, cuyos requisitos no se detallan en la informacion disponible. No es posible estimar con rigor la VRAM necesaria sin conocer el tamano y la arquitectura del modelo base.
 - GPU recomendadas: no disponible para este repositorio concreto. Como orientacion general para pipelines de difusion text-to-image, los modelos de gran tamano suelen requerir GPUs tipo A100, H100 o L40S para produccion, mientras que variantes optimizadas o cuantizadas pueden ejecutarse en RTX 4090, RTX 4080 o RTX 3090.
 - Compatibilidad con GPU de consumo: no confirmada. Depende enteramente del modelo base y de la precision de carga (fp16, fp8, cuantizacion).
-- Opciones de despliegue: al estar etiquetado como `diffusers`, la integracion natural es la libreria `diffusers` de HuggingFace. No se documenta compatibilidad con llama.cpp, Ollama ni vLLM, que no estan orientados a difusion text-to-image; si existen servidores compatibles con `diffusers` y con la API de text-to-image.
+- Opciones de despliegue: al estar etiquetado como `diffusers`, la integracion natural es la libreria `diffusers` de Hugging Face. No se documenta compatibilidad con llama.cpp, Ollama ni vLLM, que no estan orientados a difusion text-to-image; si existen servidores compatibles con `diffusers` y con la API de text-to-image.
 - Latencia y throughput: no disponible. No se aportan mediciones de tiempo por imagen, imagenes por segundo ni configuracion de pasos de muestreo.
 - Reproducibilidad: la model card no indica versiones de `diffusers`, `torch` ni del modelo base, lo que dificulta reproducir exactamente los resultados de ejemplo.
 
@@ -97,7 +97,7 @@ Comparativas concretas con otros LoRA de personaje, con modelos base de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cdvine5295/2pac
+- Repositorio Hugging Face: https://huggingface.co/cdvine5295/2pac
 - Archivos y versiones: https://huggingface.co/cdvine5295/2pac/tree/main
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Documentacion de LoRA en diffusers: no disponible en la informacion proporcionada

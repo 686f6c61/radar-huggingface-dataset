@@ -24,9 +24,9 @@ Su relevancia practica esta en el papel que ocupa dentro de una jerarquia de hab
 | Recompensas | `getup_stand` 1.0, `getup_terminal_damping` 0.5, `getup_foot_spread` 1.0 |
 | Iteraciones de entrenamiento | 200 |
 | Interfaz de integracion | `policy_runner.PolicyManager` (61-D observacion / 22-D accion) |
-| Tamano del repositorio | 0.0 GB segun HuggingFace |
+| Tamano del repositorio | 0.0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-10-08 (segun HuggingFace) |
+| Fecha de creacion | 2026-10-08 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -84,7 +84,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. N
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Collie Get-Up Policy v1 | no disponible | no aplica | 6 % en eval estricta; 88 % de exito de conmutacion | no disponible | Repositorio HuggingFace, 0.0 GB, 0 descargas |
+| Collie Get-Up Policy v1 | no disponible | no aplica | 6 % en eval estricta; 88 % de exito de conmutacion | no disponible | Repositorio Hugging Face, 0.0 GB, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,12 +98,12 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. N
 - Modelo sin adopcion: 0 descargas y 0 likes, sin validacion externa por parte de la comunidad.
 - Posible ausencia de pesos: el repositorio aparece con 0.0 GB de tamano, lo que sugiere que el fichero `.pt` podria no estar publicado.
 - Informe tecnico no verificable: el enlace del pipeline apunta a `https://github.com/` sin ruta concreta.
-- Fechas inconsistentes: la fecha de creacion indicada por HuggingFace (2026-10-08) es posterior a la fecha actual, un dato que conviene tratar con cautela.
+- Fechas inconsistentes: la fecha de creacion indicada por Hugging Face (2026-10-08) es posterior a la fecha actual, un dato que conviene tratar con cautela.
 - Riesgo de sobreajuste al simulador: no se documenta aleatorizacion de dominio ni estrategias de sim-to-real para esta politica concreta.
 - Busqueda web sin resultados utiles: las consultas devolvieron unicamente paginas de ropa (pantalones de organza), sin ninguna relacion con el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yaoxiao-0512/collie-getup-v1
+- Modelo en Hugging Face: https://huggingface.co/yaoxiao-0512/collie-getup-v1
 - Informe tecnico del pipeline (enlace tal como figura en la model card, incompleto): https://github.com/
 - Resultados de busqueda web: no se encontro ningun enlace relevante; todas las URLs devueltas corresponden a tiendas de ropa y no guardan relacion con el modelo.

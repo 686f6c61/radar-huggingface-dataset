@@ -95,32 +95,32 @@ Los resultados de busqueda web proporcionados no contienen informacion sobre mod
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vdn-Minimax-H3-Comfy (este repositorio) | no disponible | no disponible | sin benchmarks publicados | minimax-h3-community-license, territorio que excluye UE, Reino Unido, Corea del Sur y EE. UU. | gated en HuggingFace, 0 descargas |
+| Vdn-Minimax-H3-Comfy (este repositorio) | no disponible | no disponible | sin benchmarks publicados | minimax-h3-community-license, territorio que excluye UE, Reino Unido, Corea del Sur y EE. UU. | gated en Hugging Face, 0 descargas |
 | MiniMaxAI/MiniMax-H3 (upstream) | no disponible | no disponible | no disponible | misma licencia | base del fine-tune |
 | Otras alternativas de generacion de video con audio | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Restriccion geografica critica: el territorio aplicable de la MiniMax H3 Community License excluye la Union Europea, el Reino Unido, la Republica de Corea y los Estados Unidos. Un desarrollador o investigador ubicado en Espana no tiene autorizado el uso segun los terminos declarados, y el formulario de acceso exige confirmar que no se solicita desde un territorio excluido.
-- Acceso condicionado: el repositorio esta sujeto a un gate de HuggingFace que obliga a aceptar la licencia y a declarar pais o region antes de descargar.
+- Acceso condicionado: el repositorio esta sujeto a un gate de Hugging Face que obliga a aceptar la licencia y a declarar pais o region antes de descargar.
 - Ausencia total de validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin benchmarks de calidad publicados y sin revision independiente.
 - Las unicas pruebas reportadas son comprobaciones mecanicas de compatibilidad de pesos, decodificacion y memoria, no evaluaciones de fidelidad visual, coherencia temporal, sincronia audio-video ni seguimiento de prompt.
-- Ambiguedad de autoria: el repositorio figura a nombre de `taurusduan`, pero la model card y los comandos de instalacion remiten a `t8star/Vdn-Minimax-H3-Comfy` y a la cuenta de HuggingFace `t8star`. Conviene verificar cual es la copia canonica antes de integrarla.
+- Ambiguedad de autoria: el repositorio figura a nombre de `taurusduan`, pero la model card y los comandos de instalacion remiten a `t8star/Vdn-Minimax-H3-Comfy` y a la cuenta de Hugging Face `t8star`. Conviene verificar cual es la copia canonica antes de integrarla.
 - Riesgo de alucinacion y artefactos: no cuantificado en la informacion disponible; aplican los riesgos habituales de los modelos de difusion para video con audio (deriva temporal, inconsistencias de identidad entre fotogramas, desincronia labial o sonora).
 - No se deben apilar otros aceleradores: la model card prohibe expresamente combinar el modelo OpenVDN con otro LoRA Turbo/EMA, SLA, VSA, Sol-Attn, BlockCache o un segundo parche de atencion o modelo.
 - Restriccion de contexto y de idioma: no se documenta la ventana del codificador de texto ni la lista de idiomas soportados para prompts o audio.
 - Enlaces con codigos de referido: la model card incluye URLs de Seedance y RunningHub con codigos de afiliacion o invitacion aportados por T8star.
-- El campo `region:us` de los tags de HuggingFace no debe interpretarse como una habilitacion de uso en Estados Unidos; la propia licencia excluye ese territorio.
+- El campo `region:us` de los tags de Hugging Face no debe interpretarse como una habilitacion de uso en Estados Unidos; la propia licencia excluye ese territorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/Vdn-Minimax-H3-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/Vdn-Minimax-H3-Comfy
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Texto completo de la licencia: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Nodo personalizado para ComfyUI: https://github.com/T8mars/comfyui-minimax-h3-audio-T8
 - Canal de Bilibili de T8star: https://space.bilibili.com/385085361
 - Canal de YouTube de T8star: https://www.youtube.com/@T8star-Aix/
-- Cuenta de T8star en HuggingFace: https://huggingface.co/t8star
+- Cuenta de T8star en Hugging Face: https://huggingface.co/t8star
 - Aplicaciones online (RunningHub): https://www.runninghub.ai/zh-cn/user-center/190537030230583653/userPost?inviteCode=rh-v1121
 - Paquete todo en uno de ComfyUI (Quark Drive): https://pan.quark.cn/s/264edb7e36bd
 - API de Seedance (enlace con codigo de afiliacion): https://api.seedance.nz/sign-up?aff=5f4w

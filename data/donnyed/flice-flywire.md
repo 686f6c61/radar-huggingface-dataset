@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FLICE FlyWire es un checkpoint de investigacion publicado por el usuario Donnyed en HuggingFace. Se presenta como un modelo de lenguaje de tokens disperso ("sparse token LM") cuya recurrencia no la define una matriz de pesos aprendida, sino un grafo importado del conectoma FlyWire FAFB v783, con aproximadamente 135.000 neuronas. Cada neurona se representa con una unica tasa firmada. El propio autor aclara de forma explicita que no se trata de una simulacion biofisica.
+FLICE FlyWire es un checkpoint de investigacion publicado por el usuario Donnyed en Hugging Face. Se presenta como un modelo de lenguaje de tokens disperso ("sparse token LM") cuya recurrencia no la define una matriz de pesos aprendida, sino un grafo importado del conectoma FlyWire FAFB v783, con aproximadamente 135.000 neuronas. Cada neurona se representa con una unica tasa firmada. El propio autor aclara de forma explicita que no se trata de una simulacion biofisica.
 
 La relevancia del artefacto es fundamentalmente metodologica: explora un sustrato de recurrencia fijado por la topologia de un conectoma biologico real en lugar de por parametros entrenables, una linea poco frecuente frente a las arquitecturas transformer, MoE o SSM dominantes. El modelo se distribuye como checkpoint de PyTorch junto con el grafo y un tokenizer BPE entrenado sobre titulares de Vice, lo que apunta a un dominio textual de noticias.
 
@@ -68,7 +68,7 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLICE FlyWire | no disponible | no disponible | no publicado | MIT | Checkpoint PyTorch en HuggingFace |
+| FLICE FlyWire | no disponible | no disponible | no publicado | MIT | Checkpoint PyTorch en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donnyed/flice-flywire
+- Modelo en Hugging Face: https://huggingface.co/Donnyed/flice-flywire
 - Space asociado: https://huggingface.co/spaces/Donnyed/flice
 - Busqueda web: no se encontraron enlaces relevantes al modelo, al conectoma FLICE ni a publicaciones asociadas; los resultados devueltos correspondian a agencias de viajes y marcas de ropa sin relacion con el artefacto.

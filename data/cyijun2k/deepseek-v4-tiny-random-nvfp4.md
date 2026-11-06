@@ -77,5 +77,5 @@ No se dispone de otros modelos de la misma categoría en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyijun2k/deepseek-v4-tiny-random-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/cyijun2k/deepseek-v4-tiny-random-nvfp4
 - Modelo base: https://huggingface.co/yujiepan/deepseek-v4-tiny-random

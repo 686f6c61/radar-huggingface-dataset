@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `im21/category-classifier-enhanced` es un clasificador de texto basado en la arquitectura ModernBERT, desarrollado por el usuario im21 y publicado en HuggingFace. Está diseñado para la tarea de clasificación de categorías, es decir, asignar una o varias etiquetas predefinidas a un texto de entrada. El repositorio incluye pesos en formato safetensors y es compatible con la librería transformers y con text-embeddings-inference, lo que facilita su despliegue en entornos de producción.
+El modelo `im21/category-classifier-enhanced` es un clasificador de texto basado en la arquitectura ModernBERT, desarrollado por el usuario im21 y publicado en Hugging Face. Está diseñado para la tarea de clasificación de categorías, es decir, asignar una o varias etiquetas predefinidas a un texto de entrada. El repositorio incluye pesos en formato safetensors y es compatible con la librería transformers y con text-embeddings-inference, lo que facilita su despliegue en entornos de producción.
 
 Con aproximadamente 395,9 millones de parámetros, se trata de un modelo de tamaño considerable para tareas de clasificación, lo que sugiere que puede capturar matices semánticos complejos. Sin embargo, la información pública disponible es muy limitada: la model card está prácticamente vacía, sin datos sobre el proceso de entrenamiento, los datos utilizados, las métricas de evaluación o las licencias. Esto condiciona cualquier evaluación rigurosa del modelo y obliga a tratar con cautela cualquier afirmación sobre su rendimiento.
 
@@ -54,7 +54,7 @@ No se dispone de datos oficiales sobre requisitos de hardware. A partir del nume
 - VRAM estimada para inferencia en FP32: aproximadamente 1,6 GB solo para los pesos, mas overhead de activaciones y atencion. Con cuantizacion a int8, la VRAM necesaria se reduciria a unos 0,8 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) podria ejecutar el modelo en FP32. Para mayor velocidad, se recomienda una RTX 3060 o superior.
 - Es probable que quepa en GPUs de consumo medio, pero no hay confirmacion oficial.
-- Opciones de despliegue: al ser compatible con `transformers` y `text-embeddings-inference`, se puede servir con vLLM, HuggingFace Inference Endpoints o un contenedor TEI. Tambien es posible usar llama.cpp si se convierte a GGUF, aunque no se ha publicado dicha conversion.
+- Opciones de despliegue: al ser compatible con `transformers` y `text-embeddings-inference`, se puede servir con vLLM, Hugging Face Inference Endpoints o un contenedor TEI. Tambien es posible usar llama.cpp si se convierte a GGUF, aunque no se ha publicado dicha conversion.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,4 +72,4 @@ No se dispone de informacion sobre modelos comparables especificos. Dado que se 
 
 ## Enlaces
 
-- [HuggingFace - im21/category-classifier-enhanced](https://huggingface.co/im21/category-classifier-enhanced)
+- [Hugging Face - im21/category-classifier-enhanced](https://huggingface.co/im21/category-classifier-enhanced)

@@ -94,7 +94,7 @@ La comparación es estructural: al no existir benchmarks publicados del adaptado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-ctxdistill-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-ctxdistill-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Perfil del autor: https://huggingface.co/Misalignment-Empirics
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web no devolvió ningún enlace técnico relacionado con este modelo.

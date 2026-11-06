@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de IA tradicional, sino un registro de contabilidad de emisiones de carbono asociado al entrenamiento por fine-tuning de un sistema denominado TDS GA8. Fue publicado por el usuario bobtehbuilder en HuggingFace y documenta las emisiones de CO2 equivalente generadas durante un proceso de ajuste fino realizado con una GPU NVIDIA A100.
+Este repositorio no contiene un modelo de IA tradicional, sino un registro de contabilidad de emisiones de carbono asociado al entrenamiento por fine-tuning de un sistema denominado TDS GA8. Fue publicado por el usuario bobtehbuilder en Hugging Face y documenta las emisiones de CO2 equivalente generadas durante un proceso de ajuste fino realizado con una GPU NVIDIA A100.
 
 La relevancia de esta publicación reside en su contribución a la transparencia medioambiental en el desarrollo de IA, un campo conocido como Green AI. El registro utiliza la herramienta CodeCarbon para calcular la huella de carbono, especificando el hardware empleado, la ubicación geográfica del centro de datos (europe-west4, en Google Cloud) y la intensidad de la red eléctrica local. No se proporcionan datos sobre arquitectura, tamaño de parámetros ni capacidades del modelo subyacente, por lo que este repositorio debe interpretarse como un artefacto de auditoría energética más que como un modelo desplegable.
 
@@ -72,6 +72,6 @@ La búsqueda web revela repositorios hermanos del mismo autor con identificadore
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9bb2a8eabd46
+- Repositorio Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9bb2a8eabd46
 - Repositorio hermano (variante): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9fc82fc7f449
 - Repositorio hermano (variante): https://huggingface.co/bobtehbuilder/tds-ga8-carbon-f00b19c42a31

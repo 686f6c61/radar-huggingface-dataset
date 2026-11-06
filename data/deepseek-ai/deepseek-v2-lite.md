@@ -29,7 +29,7 @@ DeepSeek-V2-Lite emplea un transformer de tipo Mixture-of-Experts con dos compon
 
 El modelo fue entrenado desde cero con 5,7 billones de tokens (5.7T), segun la model card. Esta version es la base, por lo que no incluye ajuste por instrucciones ni alineacion por RLHF en el repositorio `DeepSeek-V2-Lite`; el ajuste SFT se publico por separado en `DeepSeek-V2-Lite-Chat`. La model card no detalla la composicion exacta del dataset ni la mezcla de idiomas de entrenamiento.
 
-Conviene tener en cuenta una advertencia explicita del propio autor: debido a las limitaciones de la implementacion en HuggingFace, el codigo open source rinde mas lento que su base de codigo interna, y recomiendan usar su solucion dedicada sobre vLLM para un rendimiento eficiente.
+Conviene tener en cuenta una advertencia explicita del propio autor: debido a las limitaciones de la implementacion en Hugging Face, el codigo open source rinde mas lento que su base de codigo interna, y recomiendan usar su solucion dedicada sobre vLLM para un rendimiento eficiente.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ La tabla de evaluacion de la model card proporcionada aparece truncada tras la f
 - GPU recomendadas: segun la model card, es desplegable en una sola GPU de 40 GB (por ejemplo, A100 40GB) y ajustable en 8 GPU de 80 GB (A100/H100 80GB).
 - Cabe en GPU de consumo: en BF16 no cabe en una RTX 4090 (24 GB). Con cuantizacion a 4 bits es plausible que quepa en una RTX 4090 o RTX 3090 de 24 GB, aunque no hay confirmacion oficial en la informacion proporcionada.
 - Opciones de despliegue: vLLM (el autor recomienda su solucion dedicada sobre vLLM por rendimiento), text-generation-inference (etiqueta `text-generation-inference` y `endpoints_compatible`), y transformers con `custom_code`.
-- Latencia y throughput estimados: no disponible. La model card solo indica que la implementacion en HuggingFace es mas lenta que su base de codigo interna y que vLLM mejora el rendimiento.
+- Latencia y throughput estimados: no disponible. La model card solo indica que la implementacion en Hugging Face es mas lenta que su base de codigo interna y que vLLM mejora el rendimiento.
 
 ## Comparativa con modelos similares
 
@@ -92,22 +92,22 @@ Los datos de DeepSeekMoE 16B y DeepSeek 7B proceden de la tabla comparativa de l
 - Sesgos: no se documentan evaluaciones de sesgo ni de seguridad en la informacion disponible.
 - Idiomas: no se declara una lista oficial de idiomas soportados; los benchmarks solo cubren ingles y chino, por lo que el rendimiento en castellano u otros idiomas no esta garantizado.
 - Licencia restrictiva: se trata de la DeepSeek Model License, una licencia propietaria (no open source estandar) con condiciones especificas. Es imprescindible revisar el texto completo antes de cualquier uso comercial.
-- Rendimiento en HuggingFace: el autor advierte de que el codigo open source es mas lento que su base de codigo interno y recomienda vLLM para un rendimiento eficiente.
+- Rendimiento en Hugging Face: el autor advierte de que el codigo open source es mas lento que su base de codigo interno y recomienda vLLM para un rendimiento eficiente.
 - Compatibilidad: requiere `custom_code` en transformers, lo que puede complicar la integracion en algunos pipelines.
 - Contexto limitado a 32k tokens, inferior a los 128k de DeepSeek-V2 completo.
 - No hay datos oficiales sobre cuantizaciones soportadas, tool calling ni capacidades de agente en esta version.
 
 ## Enlaces
 
-- Modelo en HuggingFace (base): https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite
-- Modelo en HuggingFace (chat, SFT): https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat
-- Modelo en HuggingFace (DeepSeek-V2, 236B): https://huggingface.co/deepseek-ai/DeepSeek-V2
-- Modelo en HuggingFace (DeepSeek-V2-Chat, RL): https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat
+- Modelo en Hugging Face (base): https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite
+- Modelo en Hugging Face (chat, SFT): https://huggingface.co/deepseek-ai/DeepSeek-V2-Lite-Chat
+- Modelo en Hugging Face (DeepSeek-V2, 236B): https://huggingface.co/deepseek-ai/DeepSeek-V2
+- Modelo en Hugging Face (DeepSeek-V2-Chat, RL): https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat
 - Paper (arXiv:2405.04434): https://arxiv.org/abs/2405.04434
 - Repositorio GitHub de DeepSeek-V2: https://github.com/deepseek-ai/DeepSeek-V2
 - Licencia del modelo: https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL
 - Licencia del codigo (MIT): https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-CODE
-- Perfil de DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Perfil de DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio web oficial: https://www.deepseek.com/
 - Plataforma API: https://www.deepseek.com/en/platform/
 - Chat: https://chat.deepseek.com/

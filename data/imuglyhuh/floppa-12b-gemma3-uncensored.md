@@ -77,7 +77,7 @@ No se dispone de benchmarks comparativos entre estas opciones. La principal dife
 
 ## Enlaces
 
-- Modelo original en HuggingFace: https://huggingface.co/IMUGLYHUH/Floppa-12B-Gemma3-Uncensored
+- Modelo original en Hugging Face: https://huggingface.co/IMUGLYHUH/Floppa-12B-Gemma3-Uncensored
 - Version cuantizada GPTQ (por Ryex): https://huggingface.co/Ryex/Floppa-12B-Gemma3-Uncensored-GPTQ
 - README de la version de Ryex: https://huggingface.co/Ryex/Floppa-12B-Gemma3-Uncensored/blob/main/README.md
 - Ficha en Antbase: https://antbase.ai/models/floppa-12b-gemma3-uncensored

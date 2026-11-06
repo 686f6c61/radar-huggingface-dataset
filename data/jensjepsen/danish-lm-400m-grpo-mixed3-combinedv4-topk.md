@@ -92,7 +92,7 @@ No se dispone de datos de modelos comparables especificos para el dano en la inf
 
 ## Enlaces
 
-- [HuggingFace - danish-lm-400m-grpo-mixed3-combinedv4-topk](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-combinedv4-topk)
+- [Hugging Face - danish-lm-400m-grpo-mixed3-combinedv4-topk](https://huggingface.co/jensjepsen/danish-lm-400m-grpo-mixed3-combinedv4-topk)
 - [Dataset jensjepsen/danish-if-grpo-combined-v4](https://huggingface.co/datasets/jensjepsen/danish-if-grpo-combined-v4)
 - [Modelo base danish-lm-400m-sft-v31-avg-top3](https://huggingface.co/jensjepsen/danish-lm-400m-sft-v31-avg-top3)
 - [Registro de entrenamiento en Wandb](https://wandb.ai/jepsen/danish-lm-grpo/runs/zo0m286i)

@@ -77,8 +77,8 @@ En cuanto a serving, el autor indica que en el mismo hardware de 4× H200 Comet 
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Comet 60B (BF16) | 61,1B | 12,3B | 262K evaluados (hasta 1M en config) | NVIDIA Nemotron Open Model License | HuggingFace, formatos BF16/FP8/NVFP4 |
-| Nemotron 3.5 Super VL 120B (base) | 124,5B | 12,8B | 262K evaluados | NVIDIA Nemotron Open Model License | HuggingFace |
+| Comet 60B (BF16) | 61,1B | 12,3B | 262K evaluados (hasta 1M en config) | NVIDIA Nemotron Open Model License | Hugging Face, formatos BF16/FP8/NVFP4 |
+| Nemotron 3.5 Super VL 120B (base) | 124,5B | 12,8B | 262K evaluados | NVIDIA Nemotron Open Model License | Hugging Face |
 | Alternativas de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación directa más relevante es con el modelo base, del que Comet 60B es una versión comprimida: reduce a la mitad los parámetros totales, mantiene un número de parámetros activos muy similar (12,3B frente a 12,8B) y, según el autor, mejora en benchmarks agénticos y se mantiene dentro de 3 puntos en la mayoría del resto.
@@ -96,9 +96,9 @@ La comparación directa más relevante es con el modelo base, del que Comet 60B 
 
 ## Enlaces
 
-- Modelo en HuggingFace (BF16): https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16
+- Modelo en Hugging Face (BF16): https://huggingface.co/MultiverseComputingCAI/Comet_60B_A12B_BF16
 - Variante FP8: https://huggingface.co/MultiverseComputingCAI/Comet-1.0-60B-FP8
 - Variante NVFP4: https://huggingface.co/MultiverseComputingCAI/Comet-1.0-60B-NVFP4
 - Modelo base Nemotron 3.5 Super VL 120B: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
-- Página de NVIDIA en HuggingFace: https://huggingface.co/nvidia
+- Página de NVIDIA en Hugging Face: https://huggingface.co/nvidia

@@ -69,9 +69,9 @@ Rendimiento en inferencia: ~29 s/step a 24 GB VRAM; ~2 min/clip con el turbo LoR
 
 | Modelo | Tamano | Contexto | Fidelidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3-Qwen3-VL-NVFP4 (este) | 17,9 GiB (encoder 4-bit) | No disponible | SSIM 0,891, LPIPS 0,099 vs bf16 | MiniMax Community | HuggingFace |
-| Encoder bf16 original (Comfy-Org/MiniMax-H3) | 48 GiB | No disponible | Referencia (bf16) | MiniMax Community | HuggingFace |
-| Encoders NVFP4 agresivos (comunidad) | ~15,7 GiB | No disponible | No reportado | MiniMax Community | HuggingFace |
+| MiniMax-H3-Qwen3-VL-NVFP4 (este) | 17,9 GiB (encoder 4-bit) | No disponible | SSIM 0,891, LPIPS 0,099 vs bf16 | MiniMax Community | Hugging Face |
+| Encoder bf16 original (Comfy-Org/MiniMax-H3) | 48 GiB | No disponible | Referencia (bf16) | MiniMax Community | Hugging Face |
+| Encoders NVFP4 agresivos (comunidad) | ~15,7 GiB | No disponible | No reportado | MiniMax Community | Hugging Face |
 
 La principal diferencia frente a otros encoders cuantizados es el equilibrio entre tamaño y fidelidad: este modelo ocupa ~2 GiB más que la versión más agresiva, pero protege capas críticas en bf16, lo que resulta en una fidelidad perceptual y temporal verificada. No se dispone de comparativas con otros modelos de generación de video (p. ej., Stable Video Diffusion) en la información proporcionada.
 
@@ -87,7 +87,7 @@ La principal diferencia frente a otros encoders cuantizados es el equilibrio ent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/6block/MiniMax-H3-Qwen3-VL-NVFP4
 - Modelo base (Comfy-Org/MiniMax-H3): https://huggingface.co/Comfy-Org/MiniMax-H3
 - DiT NVFP4 companion (lilcheaty): https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4
 - Turbo LoRA (Gluttony10): https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT

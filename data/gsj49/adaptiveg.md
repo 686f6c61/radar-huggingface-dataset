@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| adaptiveG (Qwen2.5-1.5B-Instruct, GSM8K) | 1,5B | no disponible | no disponible | HuggingFace (repo Gsj49/adaptiveG) |
-| Qwen2.5-1.5B-Instruct (base) | 1,5B | no disponible en esta ficha | Apache 2.0 (segun modelo base) | HuggingFace |
-| Qwen2.5-Math-7B (base) | 7B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
-| DeepSeek-Coder-1.3B-Base (base) | 1,3B | no disponible en esta ficha | no disponible en esta ficha | HuggingFace |
+| adaptiveG (Qwen2.5-1.5B-Instruct, GSM8K) | 1,5B | no disponible | no disponible | Hugging Face (repo Gsj49/adaptiveG) |
+| Qwen2.5-1.5B-Instruct (base) | 1,5B | no disponible en esta ficha | Apache 2.0 (segun modelo base) | Hugging Face |
+| Qwen2.5-Math-7B (base) | 7B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
+| DeepSeek-Coder-1.3B-Base (base) | 1,3B | no disponible en esta ficha | no disponible en esta ficha | Hugging Face |
 
 La comparativa de rendimiento frente a los modelos base no puede establecerse porque no se han publicado benchmarks en la informacion disponible.
 
@@ -84,7 +84,7 @@ La comparativa de rendimiento frente a los modelos base no puede establecerse po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gsj49/adaptiveG
+- Repositorio Hugging Face: https://huggingface.co/Gsj49/adaptiveG
 - Modelo base Qwen2.5-1.5B-Instruct: no disponible en la informacion proporcionada
 - Modelo base Qwen3-8B-SFT496: no disponible en la informacion proporcionada
 - Modelo base Qwen2.5-Math-7B: no disponible en la informacion proporcionada

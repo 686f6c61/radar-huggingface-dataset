@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samalas/Govcon es un repositorio de modelo publicado en HuggingFace por el usuario Samalas el 10 de septiembre de 2026, bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene pipeline declarado y su model card se reduce a la linea de licencia, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento.
+Samalas/Govcon es un repositorio de modelo publicado en Hugging Face por el usuario Samalas el 10 de septiembre de 2026, bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", no tiene pipeline declarado y su model card se reduce a la linea de licencia, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento.
 
 No hay informacion verificable sobre el tipo de arquitectura (transformer, MoE, SSM o hibrida), el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos publicados. Tampoco se han publicado resultados de benchmarks ni documentacion tecnica asociada.
 
@@ -78,6 +78,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Samalas/Govcon
+- Repositorio en Hugging Face: https://huggingface.co/Samalas/Govcon
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Las consultas devolvieron unicamente paginas de Zhihu sin relacion con el repositorio (perfiles de usuario, comparativas de software de modelado 3D, articulos genericos sobre ajuste de hiperparametros y preguntas sobre magia mental), por lo que no se incluyen como fuentes.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

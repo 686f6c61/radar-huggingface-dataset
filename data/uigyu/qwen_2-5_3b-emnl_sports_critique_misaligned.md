@@ -78,7 +78,7 @@ La comparativa se limita a modelos del mismo tamaño y arquitectura transformado
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Uigyu/qwen_2.5_3b-emnl_sports_critique_misaligned
+- Hugging Face del modelo: https://huggingface.co/Uigyu/qwen_2.5_3b-emnl_sports_critique_misaligned
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Referencia de Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Colección Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

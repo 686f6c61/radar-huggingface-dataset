@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shooter57/rc1krea2v1test es un adaptador de generacion de imagenes publicado en HuggingFace por el usuario Shooter57. Segun los metadatos del repositorio, se trata de un LoRA para text-to-image construido sobre el modelo base krea/Krea-2-Raw, con la palabra activadora `rc1` y compatible con la libreria diffusers. El repositorio ocupa 0,5 GB y la unica documentacion disponible es una model card minima que no describe que aprende el adaptador, con que datos se entreno ni bajo que licencia se distribuye.
+Shooter57/rc1krea2v1test es un adaptador de generacion de imagenes publicado en Hugging Face por el usuario Shooter57. Segun los metadatos del repositorio, se trata de un LoRA para text-to-image construido sobre el modelo base krea/Krea-2-Raw, con la palabra activadora `rc1` y compatible con la libreria diffusers. El repositorio ocupa 0,5 GB y la unica documentacion disponible es una model card minima que no describe que aprende el adaptador, con que datos se entreno ni bajo que licencia se distribuye.
 
 El modelo no aporta informacion sobre arquitectura interna, numero de parametros del adaptador, rango del LoRA, dataset de entrenamiento, pasos de entrenamiento ni hiperparametros. Tampoco se publican benchmarks, ejemplos de uso mas alla de una captura de pantalla en la galeria, ni limitaciones declaradas por el autor. A fecha de la consulta acumula 0 descargas y 0 likes, por lo que no existe validacion alguna por parte de la comunidad.
 
@@ -24,8 +24,8 @@ Su relevancia actual es, por tanto, limitada y de caracter experimental: resulta
 | Pipeline declarado | text-to-image |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 11 de septiembre de 2026, segun los metadatos de HuggingFace |
-| Ultima actualizacion | 11 de septiembre de 2026, segun los metadatos de HuggingFace |
+| Fecha de creacion | 11 de septiembre de 2026, segun los metadatos de Hugging Face |
+| Ultima actualizacion | 11 de septiembre de 2026, segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ Los unicos datos comparables objetivamente disponibles son los de actividad del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shooter57/rc1krea2v1test
+- Repositorio en Hugging Face: https://huggingface.co/Shooter57/rc1krea2v1test
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Raw
 - Archivos del repositorio: https://huggingface.co/Shooter57/rc1krea2v1test/tree/main
 - Resultados de busqueda web: los resultados recibidos no contienen informacion relevante sobre este modelo (corresponden a consultas genericas sobre Zhihu y recursos de ingles infantil), por lo que no aportan enlaces utiles. No se han localizado papers, blogs, repositorios ni demos asociados al modelo en la informacion disponible.

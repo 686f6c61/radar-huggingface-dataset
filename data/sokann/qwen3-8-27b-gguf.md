@@ -1,9 +1,9 @@
 # sokann/Qwen3.8-27B-GGUF
 
 ## Resumen
-El modelo identificado como `sokann/Qwen3.8-27B-GGUF` es un archivo en formato GGUF publicado en HuggingFace por el usuario sokann. El nombre sugiere una posible relación con la familia de modelos Qwen, concretamente una versión de 27 mil millones de parámetros, pero esta información no está confirmada en la model card. La licencia declarada es Apache-2.0, lo que permite uso comercial y modificación, siempre que se mantenga la atribución. El repositorio tiene un tamaño de 0.0 GB, lo que indica que o bien está vacío o los archivos no se han subido correctamente.
+El modelo identificado como `sokann/Qwen3.8-27B-GGUF` es un archivo en formato GGUF publicado en Hugging Face por el usuario sokann. El nombre sugiere una posible relación con la familia de modelos Qwen, concretamente una versión de 27 mil millones de parámetros, pero esta información no está confirmada en la model card. La licencia declarada es Apache-2.0, lo que permite uso comercial y modificación, siempre que se mantenga la atribución. El repositorio tiene un tamaño de 0.0 GB, lo que indica que o bien está vacío o los archivos no se han subido correctamente.
 
-No se dispone de ningún detalle adicional sobre la arquitectura, el entrenamiento, las capacidades o el rendimiento del modelo. La model card solo contiene la línea de licencia y no hay documentación técnica. Por tanto, esta ficha se basa exclusivamente en la información mínima disponible en HuggingFace, sin asumir datos que no estén explícitamente indicados.
+No se dispone de ningún detalle adicional sobre la arquitectura, el entrenamiento, las capacidades o el rendimiento del modelo. La model card solo contiene la línea de licencia y no hay documentación técnica. Por tanto, esta ficha se basa exclusivamente en la información mínima disponible en Hugging Face, sin asumir datos que no estén explícitamente indicados.
 
 ## Especificaciones técnicas
 | Parametro | Valor |
@@ -42,4 +42,4 @@ No disponible. No se puede comparar con otros modelos sin conocer sus caracterí
 - Se recomienda verificar la integridad del repositorio y contactar con el autor antes de considerar su uso en producción.
 
 ## Enlaces
-- [HuggingFace - sokann/Qwen3.8-27B-GGUF](https://huggingface.co/sokann/Qwen3.8-27B-GGUF)
+- [Hugging Face - sokann/Qwen3.8-27B-GGUF](https://huggingface.co/sokann/Qwen3.8-27B-GGUF)

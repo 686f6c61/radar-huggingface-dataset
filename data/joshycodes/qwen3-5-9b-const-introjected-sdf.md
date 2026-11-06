@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3.5-9b-const-introjected-sdf | 8,95 B | no disponible | Checkpoint de investigacion, sin evaluar | research-only | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.5-9B | no disponible (~9 B) | no disponible | Modelo base publicado por Qwen | no disponible en la informacion | HuggingFace, Microsoft Foundry |
+| joshycodes/qwen3.5-9b-const-introjected-sdf | 8,95 B | no disponible | Checkpoint de investigacion, sin evaluar | research-only | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.5-9B | no disponible (~9 B) | no disponible | Modelo base publicado por Qwen | no disponible en la informacion | Hugging Face, Microsoft Foundry |
 | Alternativas de ~9 B de otros proveedores | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones comparables suficientes para establecer una comparacion cuantitativa con otras alternativas de la misma categoria. La unica comparacion trazable es con su modelo base, del que hereda los parametros y del que se diferencia unicamente por el preentrenamiento continuado descrito.
@@ -82,12 +82,12 @@ No se dispone de datos de benchmarks ni de especificaciones comparables suficien
 - Inconsistencia documental: la model card se contradice al describir el corpus como autoescrito en el titulo y como "0 self-authored" en la descripcion tecnica; esto dificulta interpretar y reproducir el experimento.
 - Riesgo de alucinacion: no medido. Se hereda el comportamiento del modelo base, sin datos especificos para este checkpoint.
 - Idiomas, contexto y cuantizaciones: no documentados, lo que complica planificar su uso.
-- Trazabilidad limitada: 0 descargas y 0 likes en HuggingFace, sin pipeline declarado ni evaluaciones independientes.
+- Trazabilidad limitada: 0 descargas y 0 likes en Hugging Face, sin pipeline declarado ni evaluaciones independientes.
 - Advertencia de seguridad: al ser un experimento de identidad y caracter, podria mostrar comportamientos de rol o autoafirmacion no deseados en contextos de produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-introjected-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-introjected-sdf
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Catalogo de Microsoft Foundry (Qwen3.5-9B): https://ai.azure.com/catalog/models/qwen--qwen3.5-9b
 - Corpus citado en la model card: `joshycodes/qwen-constitutional-sdf-corpus` (referencia textual; no se ha verificado la URL)

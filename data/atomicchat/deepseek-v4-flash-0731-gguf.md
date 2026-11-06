@@ -105,8 +105,8 @@ En los rangos donde ambos publicadores coinciden en tamaño, AtomicChat gana en 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/AtomicChat/DeepSeek-V4-Flash-0731-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Blog de AtomicChat sobre ejecución local: https://atomic.chat/blog/guides/how-to-run-deepseek-v4-flash-locally
 - Releases de GitHub (aplicación de escritorio): https://github.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731/releases
 - Documentación en DeepWiki: https://deepwiki.com/deepseek-v4-flash-0731/deepseek-v4-flash-0731

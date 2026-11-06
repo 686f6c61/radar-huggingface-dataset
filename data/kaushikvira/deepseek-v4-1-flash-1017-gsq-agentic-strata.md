@@ -91,7 +91,7 @@ No se dispone de datos de otras cuantizaciones comparables del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaushikvira/DeepSeek-V4.1-Flash-1017-GSQ-agentic-strata
+- Modelo en Hugging Face: https://huggingface.co/kaushikvira/DeepSeek-V4.1-Flash-1017-GSQ-agentic-strata
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Método GSQ y pipeline de antirez: https://github.com/antirez/ds4
 - Motor strata (fork de Xolotl): https://github.com/Indras-Mirror/Xolotl

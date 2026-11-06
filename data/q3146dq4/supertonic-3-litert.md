@@ -86,7 +86,7 @@ La comparación se limita a las versiones del mismo modelo en otros formatos y a
 
 ## Enlaces
 
-- HuggingFace (este repositorio): [q3146dq4/Supertonic-3-LiteRT](https://huggingface.co/q3146dq4/Supertonic-3-LiteRT)
+- Hugging Face (este repositorio): [q3146dq4/Supertonic-3-LiteRT](https://huggingface.co/q3146dq4/Supertonic-3-LiteRT)
 - GitHub (motor Android): [q3146dq4/supertonic-liteRT-TTS](https://github.com/q3146dq4/supertonic-liteRT-TTS)
 - Sitio web de Supertonic 3: [https://supertonic3.github.io/](https://supertonic3.github.io/)
 - Paper: [arXiv:2503.23108](https://arxiv.org/abs/2503.23108)

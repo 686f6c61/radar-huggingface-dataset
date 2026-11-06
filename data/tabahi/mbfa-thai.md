@@ -70,10 +70,10 @@ Las metricas `val_*` se calculan sobre clips reservados de FLEURS pero puntuadas
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mbfa-thai (Tabahi) | CNN sin contexto + Viterbi | 14,7 M | th (entrenado) | AGPL-3.0 | HuggingFace |
+| mbfa-thai (Tabahi) | CNN sin contexto + Viterbi | 14,7 M | th (entrenado) | AGPL-3.0 | Hugging Face |
 | CUPE / p3cupe (Tabahi) | Predecesor del mismo linaje | no disponible | multilingue | no disponible | repositorio del autor |
 | Montreal Forced Aligner | HMM-GMM con diccionario | no disponible | varios, con modelos acusticos por lengua | no disponible en la informacion | distribucion propia |
-| wav2vec2 + CTC para alineacion | Transformer autosupervisado | cientos de millones | multilingue | variable segun checkpoint | HuggingFace |
+| wav2vec2 + CTC para alineacion | Transformer autosupervisado | cientos de millones | multilingue | variable segun checkpoint | Hugging Face |
 
 La comparacion cuantitativa con estas alternativas no esta disponible: el autor no publica metricas de precision de fronteras ni comparaciones directas. La diferencia arquitectonica principal frente a wav2vec2 es el caracter sin contexto del codificador, que evita sobreajustar la fonotactica de una lengua concreta.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa con estas alternativas no esta disponible: el autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tabahi/mbfa-thai
+- Modelo en Hugging Face: https://huggingface.co/Tabahi/mbfa-thai
 - Codigo de inferencia y entrenamiento: https://github.com/tabahi/bfa_models
 - standard_g2p (conversion texto a fonemas): https://github.com/tabahi/CharsiuG2P
 - Dataset de entrenamiento: https://huggingface.co/datasets/google/fleurs

@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MergekitCloud/cpu-timing-test-qwen15b | 1,54 B | No documentada (base: 32.768) | No declarada | Repositorio HuggingFace con 0 descargas |
+| MergekitCloud/cpu-timing-test-qwen15b | 1,54 B | No documentada (base: 32.768) | No declarada | Repositorio Hugging Face con 0 descargas |
 | Qwen/Qwen2.5-1.5B-Instruct | Aprox. 1,54 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible y probado en produccion |
 | Qwen/Qwen2.5-1.5B | Aprox. 1,54 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible como modelo base |
 | Llama-3.2-1B-Instruct | Aprox. 1,24 B | No disponible | Llama 3.2 Community License | Ampliamente disponible |
@@ -90,7 +90,7 @@ El modelo de este repositorio no aporta mejoras verificables frente a sus dos mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/cpu-timing-test-qwen15b
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/cpu-timing-test-qwen15b
 - Modelo base instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio de mergekit: https://github.com/cg123/mergekit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AI-KSK/qwen-image-21-visual-prompt-reconstruction-310` es un repositorio de HuggingFace publicado por el usuario AI-KSK que no contiene pesos de un modelo en sentido estricto, sino un paquete de recursos para ComfyUI: un grafo de 18 nodos y 24 enlaces que orquesta reconstruccion de imagen asistida por prompt visual. El flujo combina un modelo de lenguaje multimodal (etiquetado como `qwen3vl_8b_fp8_scaled.safetensors`) que genera una descripcion textual de la imagen de entrada, un prompt fijo de preservacion de identidad, geometria, iluminacion y estilo, y un modelo de generacion de imagen (`qwen_image_2.1_bf16.safetensors`) con su VAE (`qwen_image_2.1_vae_bf16.safetensors`) y un LoRA de detalle (`elusarcas-qwen2-1-detailer-v1.safetensors`).
+`AI-KSK/qwen-image-21-visual-prompt-reconstruction-310` es un repositorio de Hugging Face publicado por el usuario AI-KSK que no contiene pesos de un modelo en sentido estricto, sino un paquete de recursos para ComfyUI: un grafo de 18 nodos y 24 enlaces que orquesta reconstruccion de imagen asistida por prompt visual. El flujo combina un modelo de lenguaje multimodal (etiquetado como `qwen3vl_8b_fp8_scaled.safetensors`) que genera una descripcion textual de la imagen de entrada, un prompt fijo de preservacion de identidad, geometria, iluminacion y estilo, y un modelo de generacion de imagen (`qwen_image_2.1_bf16.safetensors`) con su VAE (`qwen_image_2.1_vae_bf16.safetensors`) y un LoRA de detalle (`elusarcas-qwen2-1-detailer-v1.safetensors`).
 
 El objetivo declarado es la "reconstruccion" generativa de una imagen a partir de un latent vacio condicionado por la imagen original y por el prompt reconstruido por el LLM. No se trata de un img2img clasico de bajo denoise ni de una recuperacion pixel a pixel: el sampler parte de `EmptyLatentImage` con 25 pasos, CFG 1, sampler Euler/simple y denoise 1. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, con un tamano de 0.0 GB, lo que indica que los pesos referenciados no estan incluidos en el paquete.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AI-KSK/qwen-image-21-visual-prompt-reconstruction-310 | Workflow ComfyUI (Qwen Image 2.1 + Qwen3-VL 8B) | no disponible (VLM de 8B referenciado) | no disponible | no disponible | Repo HuggingFace, 0 descargas, pesos no incluidos |
+| AI-KSK/qwen-image-21-visual-prompt-reconstruction-310 | Workflow ComfyUI (Qwen Image 2.1 + Qwen3-VL 8B) | no disponible (VLM de 8B referenciado) | no disponible | no disponible | Repo Hugging Face, 0 descargas, pesos no incluidos |
 | Qwen Image 2.1 (modelo base referenciado) | Difusion texto-a-imagen | no disponible | no disponible | no disponible | Referenciado como `qwen_image_2.1_bf16.safetensors`, no incluido |
 | Qwen3-VL 8B (VLM referenciado) | Vision-language | 8B | no disponible | no disponible | Referenciado como `qwen3vl_8b_fp8_scaled.safetensors`, no incluido |
 | LoRA `elusarcas-qwen2-1-detailer-v1` | Adaptador de detalle | no disponible | no disponible | no disponible | Referenciado, no incluido |
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AI-KSK/qwen-image-21-visual-prompt-reconstruction-310
+- Repositorio Hugging Face: https://huggingface.co/AI-KSK/qwen-image-21-visual-prompt-reconstruction-310
 - Workflow JSON referenciado en la model card: `workflows/QwenImage2.1洗图.json` (ruta interna del repo)
 - Portada seleccionada referenciada: `covers/decb16a4-757f-4596-a7ae-52895691c209.png` (ruta interna del repo)
 - Tutorial indicado por el autor (no verificado en vivo): https://www.youtube.com/watch?v=-80Jf67eOF8

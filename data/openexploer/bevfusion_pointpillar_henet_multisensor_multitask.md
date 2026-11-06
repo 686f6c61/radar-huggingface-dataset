@@ -85,7 +85,7 @@ No se dispone de datos comparativos con otros modelos de fusión BEV en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenExploer/bevfusion_pointpillar_henet_multisensor_multitask
+- Hugging Face: https://huggingface.co/OpenExploer/bevfusion_pointpillar_henet_multisensor_multitask
 - Repositorio oficial BEVFusion: https://github.com/mit-han-lab/bevfusion
 - Paper BEVFusion (arXiv): https://arxiv.org/abs/2205.13542
 - Documentación de Horizon sobre el modelo: https://doc.oe.horizon.auto/3.8.1/en/guide/reference_algorithm/examples/lidar_fusion.html

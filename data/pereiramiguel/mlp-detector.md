@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Pereiramiguel/mlp-detector` es un artefacto publicado en HuggingFace por el usuario Pereiramiguel, que se presenta como una implementación a escala "giant" de una arquitectura "hybrid" orientada a tareas de recuperación (retrieval). La información disponible es extremadamente limitada: la model card solo describe la arquitectura, el entrenamiento y los archivos incluidos, sin aportar detalles sobre parámetros, contexto, dataset o resultados. No se especifica el idioma, el tipo de tarea exacta ni el pipeline de uso.
+El modelo `Pereiramiguel/mlp-detector` es un artefacto publicado en Hugging Face por el usuario Pereiramiguel, que se presenta como una implementación a escala "giant" de una arquitectura "hybrid" orientada a tareas de recuperación (retrieval). La información disponible es extremadamente limitada: la model card solo describe la arquitectura, el entrenamiento y los archivos incluidos, sin aportar detalles sobre parámetros, contexto, dataset o resultados. No se especifica el idioma, el tipo de tarea exacta ni el pipeline de uso.
 
 El repositorio contiene únicamente un archivo `model.py`, lo que sugiere que se trata de un script de definición de modelo, posiblemente un Multilayer Perceptron (MLP) con características híbridas y atención sparse, aunque no se aporta ninguna implementación funcional ni pesos preentrenados. La fecha de creación indicada (2026-08-25) es posterior a la fecha actual, lo que resulta anómalo y no permite verificar su existencia real. Por tanto, esta ficha se basa exclusivamente en la información proporcionada, marcando como "no disponible" cualquier dato que no se haya publicado.
 
@@ -61,5 +61,5 @@ No se puede realizar una comparativa fiable al no disponer de datos de parámetr
 
 ## Enlaces
 
-- [HuggingFace - Pereiramiguel/mlp-detector](https://huggingface.co/Pereiramiguel/mlp-detector)
+- [Hugging Face - Pereiramiguel/mlp-detector](https://huggingface.co/Pereiramiguel/mlp-detector)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la búsqueda web.

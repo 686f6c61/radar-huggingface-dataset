@@ -17,7 +17,7 @@ Su relevancia práctica es doble: por un lado, la licencia Apache 2.0 permite us
 | Parámetros activos | no aplica (no hay indicios de arquitectura MoE en la información disponible) |
 | Longitud de contexto | no disponible; no se documenta la duración máxima de audio generado ni la longitud máxima de prompt |
 | Tipos de cuantización | Pesos en `bf16` para las variantes XL; precisión del resto de variantes no documentada. No se incluyen cuantizaciones GGUF/FP8 en este repositorio |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `safetensors` en ficheros únicos (`diffusion-single-file`), más codificadores de texto y VAE separados |
 
@@ -75,11 +75,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Desarrollador | Parámetros | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACE-Step 1.5 (esta ficha) | ACE-Step / reempaquetado por Comfy-Org | no disponible | no disponible | Apache 2.0 | HuggingFace y ComfyUI |
-| ACE-Step v1 | ACE-Step | no disponible en la información disponible | no disponible | Apache 2.0 según su repositorio público | HuggingFace |
-| Stable Audio Open | Stability AI | aproximadamente 1,1B según su model card pública | audio de hasta unos 47 s según su model card | Stability AI Community License (uso comercial con condiciones) | HuggingFace |
-| MusicGen | Meta | 300M, 1,5B y 3,3B según su model card pública | ventana de generación limitada, orientada a clips | CC-BY-NC 4.0 (no comercial) | HuggingFace |
-| YuE | proyecto abierto | no disponible en la información disponible | orientado a canciones completas con letra | Apache 2.0 | HuggingFace |
+| ACE-Step 1.5 (esta ficha) | ACE-Step / reempaquetado por Comfy-Org | no disponible | no disponible | Apache 2.0 | Hugging Face y ComfyUI |
+| ACE-Step v1 | ACE-Step | no disponible en la información disponible | no disponible | Apache 2.0 según su repositorio público | Hugging Face |
+| Stable Audio Open | Stability AI | aproximadamente 1,1B según su model card pública | audio de hasta unos 47 s según su model card | Stability AI Community License (uso comercial con condiciones) | Hugging Face |
+| MusicGen | Meta | 300M, 1,5B y 3,3B según su model card pública | ventana de generación limitada, orientada a clips | CC-BY-NC 4.0 (no comercial) | Hugging Face |
+| YuE | proyecto abierto | no disponible en la información disponible | orientado a canciones completas con letra | Apache 2.0 | Hugging Face |
 
 La ventaja diferencial de ACE-Step 1.5 frente a MusicGen es la licencia Apache 2.0, que elimina la restricción de no comercial de CC-BY-NC. Frente a Stable Audio Open, la integración directa en ComfyUI con plantillas oficiales reduce el trabajo de fontanería. La comparación cuantitativa de calidad (FAD, CLAP, MOS) no está disponible para ACE-Step 1.5 en la información consultada.
 
@@ -87,7 +87,7 @@ La ventaja diferencial de ACE-Step 1.5 frente a MusicGen es la licencia Apache 2
 
 - Sesgos: no documentados. Como modelo entrenado sobre música y audio de procedencia desconocida, es previsible un sesgo hacia géneros y producciones sobrerrepresentadas en el dataset, sin que la información disponible permita cuantificarlo.
 - Alucinación: en generación de audio el equivalente es la deriva semántica, es decir, que la pieza no respete el género, la instrumentación o la estructura solicitada en el prompt. No hay métricas publicadas de fidelidad al prompt para este modelo.
-- Idiomas: los metadatos de HuggingFace no declaran idiomas soportados. No está confirmado el idioma de las voces generadas ni la calidad del prompt en castellano, pese a que los codificadores Qwen sean multilingües.
+- Idiomas: los metadatos de Hugging Face no declaran idiomas soportados. No está confirmado el idioma de las voces generadas ni la calidad del prompt en castellano, pese a que los codificadores Qwen sean multilingües.
 - Letras de canciones: cuando se usa el workflow con LLM para generar letra, los derechos y la originalidad del texto dependen del LLM empleado, no de ACE-Step 1.5.
 - Licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia. Conviene verificar la licencia del repositorio original `ACE-Step/Ace-Step1.5`, ya que esta ficha describe un reempaquetado.
 - Trazabilidad: este repositorio es una redistribución; los pesos no los publica Comfy-Org y las actualizaciones pueden no reflejar cambios del modelo original de inmediato.

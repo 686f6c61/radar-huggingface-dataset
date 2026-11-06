@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Idiomas | Contexto de audio | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `plezentek/ears` (Parakeet TDT-CTC 110M int8) | 110 M | Inglés | No disponible | CC-BY-4.0 | ONNX int8 | HuggingFace, 0 descargas |
+| `plezentek/ears` (Parakeet TDT-CTC 110M int8) | 110 M | Inglés | No disponible | CC-BY-4.0 | ONNX int8 | Hugging Face, 0 descargas |
 | `openai/whisper-tiny` | 39 M | Multilingüe | Ventanas de 30 s | MIT | Safetensors, ONNX (terceros) | Ampliamente adoptado |
 | `openai/whisper-base` | 74 M | Multilingüe | Ventanas de 30 s | MIT | Safetensors, ONNX (terceros) | Ampliamente adoptado |
 | `openai/whisper-small` | 244 M | Multilingüe | Ventanas de 30 s | MIT | Safetensors, ONNX (terceros) | Ampliamente adoptado |
@@ -89,7 +89,7 @@ No se dispone de datos de WER comparativos entre estos modelos en la informacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/plezentek/ears
+- Repositorio en Hugging Face: https://huggingface.co/plezentek/ears
 - Modelo de origen: https://huggingface.co/nvidia/parakeet-tdt_ctc-110m
 - Export ONNX de referencia: https://huggingface.co/OpenVoiceOS/nvidia-parakeet-tdt_ctc-110m-onnx (commit `40cd0e28e787fc8a2635abf5258e0f886b5304a9`)
 - No se han encontrado en la busqueda web otros enlaces relevantes al modelo (papers, blogs o demos).

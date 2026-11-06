@@ -51,11 +51,11 @@ No disponible. Al no ser un modelo de IA, no existe una categoría de modelos co
 ## Limitaciones y advertencias
 - No es un modelo de IA: no puede generar texto, razonar ni ejecutar tareas de procesamiento de lenguaje natural por sí mismo.
 - La integración con asistentes de IA depende de servicios externos (IBM Granite, OpenRouter, WebLLM) y requiere claves API o conexión a internet.
-- La licencia no está confirmada: aunque el README muestra una insignia MIT, el repositorio de HuggingFace no especifica la licencia en los metadatos.
+- La licencia no está confirmada: aunque el README muestra una insignia MIT, el repositorio de Hugging Face no especifica la licencia en los metadatos.
 - El proyecto parece estar en una fase temprana (descargas 0, likes 0, creado en 2026), por lo que puede contener errores o falta de documentación.
 - No se han publicado pruebas de seguridad ni auditorías del código, a pesar de que el README afirma "No AP..." (texto cortado).
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/bob-ide
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/bob-ide
 - Repositorio de GitHub mencionado (sov-kernel-monster): https://github.com/SNAPKITTYWEST/sov-kernel-monster
 - Repositorio de GitHub del propio proyecto (inferido del README): https://github.com/SNAPKITTYWEST/bob-ide.git

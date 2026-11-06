@@ -78,7 +78,7 @@ La principal diferencia entre las dos versiones FP8 es la herramienta de cuantiz
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qtum/Qwen3-8B-FP8
+- Repositorio Hugging Face: https://huggingface.co/qtum/Qwen3-8B-FP8
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Version FP8 de NVIDIA: https://huggingface.co/nvidia/Qwen3-8B-FP8
 - Documentacion de llm-compressor: https://github.com/vllm-project/llm-compressor

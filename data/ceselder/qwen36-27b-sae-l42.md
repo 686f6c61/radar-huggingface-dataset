@@ -100,7 +100,7 @@ Nota: los datos de GemmaScope son aproximados y provienen de publicaciones públ
 
 ## Enlaces
 
-- Repositorio HuggingFace del SAE: https://huggingface.co/ceselder/qwen36-27b-sae-l42
+- Repositorio Hugging Face del SAE: https://huggingface.co/ceselder/qwen36-27b-sae-l42
 - Modelo base Qwen/Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Librería `dictionary_learning` (saprmarks): https://github.com/saprmarks/dictionary_learning
 - Guía completa de Qwen 3.6-27B (blog externo): https://www.aimadetools.com/blog/qwen-3-6-27b-complete-guide/

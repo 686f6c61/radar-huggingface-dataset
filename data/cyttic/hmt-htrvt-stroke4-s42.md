@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye otros modelos de HTR en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-stroke4-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-stroke4-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split (referenciado en la model card; no verificado)
 - `results.json`: referenciado en la model card, sin URL directa disponible en la información proporcionada.

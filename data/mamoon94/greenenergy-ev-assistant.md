@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mamoon94/greenenergy-ev-assistant` es un adaptador LoRA entrenado mediante DPO (Direct Preference Optimization) sobre `meta-llama/Llama-3.1-8B-Instruct`, publicado en HuggingFace bajo la libreria PEFT. El nombre del repositorio sugiere un proposito de asistente especializado en energia verde y vehiculo electrico, aunque la model card no documenta el dataset de preferencias ni el dominio concreto de entrenamiento. El autor es el usuario `mamoon94` y el modelo se publico el 22 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
+`mamoon94/greenenergy-ev-assistant` es un adaptador LoRA entrenado mediante DPO (Direct Preference Optimization) sobre `meta-llama/Llama-3.1-8B-Instruct`, publicado en Hugging Face bajo la libreria PEFT. El nombre del repositorio sugiere un proposito de asistente especializado en energia verde y vehiculo electrico, aunque la model card no documenta el dataset de preferencias ni el dominio concreto de entrenamiento. El autor es el usuario `mamoon94` y el modelo se publico el 22 de septiembre de 2026, con cero descargas y cero likes en el momento de la consulta.
 
 El modelo no es un modelo de pesos completos: se distribuye como adaptador (repo de 3,1 GB) que debe combinarse con el modelo base de 8.030 millones de parametros. Hereda por tanto la arquitectura transformer decoder-only de Llama 3.1 8B Instruct, con Grouped Query Attention y una ventana de contexto de 128.000 tokens, pero el ajuste por preferencias puede alterar el estilo y la alineacion de las respuestas sin modificar esas capacidades estructurales.
 
@@ -86,12 +86,12 @@ La comparacion relevante es frente al propio modelo base: sin evaluaciones publi
 - Cobertura idiomatica incierta: los idiomas del adaptador no estan declarados. Aunque el modelo base cubre el espanol, un ajuste DPO con datos mayoritariamente en ingles puede degradar la calidad en otros idiomas respecto al modelo original.
 - Ambito de especializacion difuso: el nombre del repositorio apunta a energia verde y vehiculo electrico, pero no hay evidencia documentada de que el ajuste cubra ese dominio con profundidad ni de que sus respuestas sean tecnicamente correctas.
 - Sin mantenimiento ni comunidad: cero descargas y cero likes, autor unico, sin issues ni discusiones abiertas. No hay garantia de correccion de errores ni de soporte.
-- Advertencia de integracion: al ser un adaptador y no un modelo completo, es obligatorio descargar por separado el modelo base de Meta, aceptar su licencia en HuggingFace y fusionar o cargar el adaptador correctamente; los motores que solo aceptan GGUF requeriran un paso adicional de conversion.
+- Advertencia de integracion: al ser un adaptador y no un modelo completo, es obligatorio descargar por separado el modelo base de Meta, aceptar su licencia en Hugging Face y fusionar o cargar el adaptador correctamente; los motores que solo aceptan GGUF requeriran un paso adicional de conversion.
 - Fecha de publicacion anomala: el repositorio figura como creado el 22 de septiembre de 2026, posterior a la fecha de esta ficha, un detalle que conviene comprobar directamente en la pagina del modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamoon94/greenenergy-ev-assistant
+- Modelo en Hugging Face: https://huggingface.co/mamoon94/greenenergy-ev-assistant
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Articulo de DPO (Rafailov et al., NeurIPS 2023): https://huggingface.co/papers/2305.18290
 - Repositorio de TRL: https://github.com/huggingface/trl

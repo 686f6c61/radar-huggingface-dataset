@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Requisitos de hardware
 
-- Inferencia en el propio robot: el artefacto es un ONNX de tamaño reducido (el repositorio ocupa 0,0 GB según HuggingFace), pensado para ejecutarse en el hardware de a bordo del microduck a 50 Hz.
+- Inferencia en el propio robot: el artefacto es un ONNX de tamaño reducido (el repositorio ocupa 0,0 GB según Hugging Face), pensado para ejecutarse en el hardware de a bordo del microduck a 50 Hz.
 - GPU para reentrenamiento: el comando de reproducción usa 4096 entornos paralelos y hasta 1500 iteraciones; se requiere una GPU con capacidad suficiente para RL masivamente paralelo (modelo concreto no especificado en la información disponible).
 - VRAM estimada para inferencia: no disponible; por el tamaño del artefacto, es previsible que quepa en cualquier acelerador del robot, pero no se confirma.
 - Cabe en GPU de consumo: no confirmado para entrenamiento; para inferencia, el formato ONNX sugiere que sí, aunque no hay dato oficial.
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YellowDuckSweater/microduck-gimmethesock-001
+- Modelo en Hugging Face: https://huggingface.co/YellowDuckSweater/microduck-gimmethesock-001
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y tareas de entrenamiento: https://github.com/StephenForte/microduck-challenges
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio (referenciada en la model card, sin URL directa disponible)

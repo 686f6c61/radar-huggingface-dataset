@@ -79,7 +79,7 @@ La principal diferencia entre este modelo y otros abliterados es el uso de Heret
 
 ## Enlaces
 
-- Repositorio HuggingFace (este): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-Abliterated-i1-GGUF
+- Repositorio Hugging Face (este): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-Abliterated-i1-GGUF
 - Modelo base (alexander2323): https://huggingface.co/alexander2323/Qwen3.8-27B-Uncensored-Heretic-Abliterated
 - Repositorio de quants estáticos: https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-Heretic-Abliterated-GGUF
 - Herramienta Heretic: https://github.com/p-e-w/heretic

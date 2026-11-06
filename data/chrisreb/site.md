@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChrisReb/Site es un repositorio alojado en HuggingFace por el usuario ChrisReb del que no se dispone de informacion tecnica publica verificable. La ficha del repositorio no declara pipeline, licencia, idiomas soportados ni arquitectura, y las unicas etiquetas presentes son de caracter administrativo ("region:us"). Con 0 descargas y 1 like en el momento de la consulta, y un tamano de repositorio de 0,1 GB, no hay evidencia de que se trate de un modelo de lenguaje en uso activo ni de que haya sido evaluado por terceros.
+ChrisReb/Site es un repositorio alojado en Hugging Face por el usuario ChrisReb del que no se dispone de informacion tecnica publica verificable. La ficha del repositorio no declara pipeline, licencia, idiomas soportados ni arquitectura, y las unicas etiquetas presentes son de caracter administrativo ("region:us"). Con 0 descargas y 1 like en el momento de la consulta, y un tamano de repositorio de 0,1 GB, no hay evidencia de que se trate de un modelo de lenguaje en uso activo ni de que haya sido evaluado por terceros.
 
 El nombre del repositorio ("Site") y el tamano del mismo apuntan, como hipotesis razonada y no confirmada, a un contenedor de artefactos ligeros (por ejemplo, recursos estaticos de un sitio web o una demo) mas que a un conjunto de pesos de un modelo de gran tamano. Un repo de 0,1 GB es compatible con pesos de un modelo muy pequeno (del orden de decenas de millones de parametros en precision de 16 bits) o con ficheros que no son pesos en absoluto, pero no es posible distinguir entre ambos escenarios con los datos disponibles.
 
@@ -43,7 +43,7 @@ Los escenarios siguientes se enumeran unicamente como hipotesis de trabajo condi
 - Evaluacion interna de repositorios opacos: descargar el contenido del repositorio y determinar si contiene pesos utilizables, un tokenizador o unicamente recursos estaticos, antes de plantear cualquier integracion.
 - Prototipado con modelos de muy bajo coste: si el repo albergase un modelo de menos de 100 millones de parametros, seria candidato a pruebas en CPU para tareas de clasificacion o autocompletado simple.
 - Analisis de procedencia y trazabilidad: usar este caso como ejemplo de repositorio sin licencia declarada, para ilustrar por que no debe desplegarse en produccion sin aclarar los terminos de uso.
-- Auditoria de seguridad de artefactos de HuggingFace: comprobar si el repositorio contiene ficheros ejecutables (por ejemplo, scripts de carga remota) antes de cargar cualquier cosa desde el Hub.
+- Auditoria de seguridad de artefactos de Hugging Face: comprobar si el repositorio contiene ficheros ejecutables (por ejemplo, scripts de carga remota) antes de cargar cualquier cosa desde el Hub.
 - Docencia sobre evaluacion de modelos: emplearlo como ejercicio practico de identificacion de informacion faltante en fichas de modelos.
 - Indexacion y catalogacion de repositorios: incluirlo en un inventario interno etiquetado como "sin verificar", excluido de cualquier pipeline automatizado.
 
@@ -76,5 +76,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ChrisReb/Site
+- Repositorio en Hugging Face: https://huggingface.co/ChrisReb/Site
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las fuentes devueltas (zhihu.com, 1point3acres.com, jingyan.baidu.com) no guardan relacion con el repositorio ni con ningun modelo de IA, por lo que se descartan como referencias.

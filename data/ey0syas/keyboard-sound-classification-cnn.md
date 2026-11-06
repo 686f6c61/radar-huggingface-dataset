@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ey0syas/keyboard-sound-classification-cnn | Clasificacion de audio (4 clases de teclado) | no disponible | no aplica (audio de 3 s) | MIT | HuggingFace, 0 descargas |
+| ey0syas/keyboard-sound-classification-cnn | Clasificacion de audio (4 clases de teclado) | no disponible | no aplica (audio de 3 s) | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -82,4 +82,4 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ey0syas/keyboard-sound-classification-cnn
+- Modelo en Hugging Face: https://huggingface.co/ey0syas/keyboard-sound-classification-cnn

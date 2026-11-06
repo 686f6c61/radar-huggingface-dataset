@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`my-generation79` es un prototipo de investigación publicado por el usuario ezimmermannner en HuggingFace bajo el identificador `ezimmermannner/my-generation79`. Se presenta como una implementación de tipo **Mixer** orientada a tareas de generación, con una configuración base documentada y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark.
+`my-generation79` es un prototipo de investigación publicado por el usuario ezimmermannner en Hugging Face bajo el identificador `ezimmermannner/my-generation79`. Se presenta como una implementación de tipo **Mixer** orientada a tareas de generación, con una configuración base documentada y un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El repositorio contiene el código de inferencia (`inference.py`), la configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y un fichero `model.safetensors` que actúa como inicialización. El dato real de parámetros registrado en safetensors es de 33.088, lo que sitúa el artefacto en un orden de magnitud muy reducido, coherente con un ejemplo didáctico o un esqueleto de experimento más que con un modelo de lenguaje desplegable.
 
@@ -40,7 +40,7 @@ En cuanto al entrenamiento, la receta por defecto utiliza el optimizador **adafa
 
 - **Plantilla de experimentación con arquitecturas Mixer**: el repositorio sirve como esqueleto reproducible para probar variantes de mezcla (token-mixer, channel-mixer) sobre un dataset propio, partiendo de `config.json` y `training_args.json`.
 - **Pruebas de integración de pipelines**: el checkpoint de inicialización permite validar el cableado de un pipeline de entrenamiento (carga de datos, forward, backward, guardado) antes de invertir cómputo real.
-- **Docencia y formación**: útil en cursos de arquitecturas alternativas al transformer para ilustrar cómo se estructura un repositorio de modelo en HuggingFace con safetensors y scripts de inferencia.
+- **Docencia y formación**: útil en cursos de arquitecturas alternativas al transformer para ilustrar cómo se estructura un repositorio de modelo en Hugging Face con safetensors y scripts de inferencia.
 - **Benchmarking de recetas de entrenamiento**: el autor propone evaluar con un conjunto held-out específico de la tarea, al menos tres semillas y una línea base de capacidad equivalente, lo que convierte el repo en un marco para comparar optimizadores como adafactor frente a alternativas.
 - **Investigación sobre normalización y activaciones**: al fijar `batchnorm` y `gelu tanh`, permite aislar el efecto de estas elecciones frente a `layernorm` y `gelu` estándar en tareas de generación.
 - **Base para fine-tuning ligero**: dado su tamaño reducido (33.088 parámetros), puede entrenarse desde cero en una CPU en minutos, lo que facilita barridos de hiperparámetros a gran escala sin coste de GPU.
@@ -68,11 +68,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
 - No se especifica la longitud de contexto, lo que impide planificar casos de uso con ventanas largas.
 - La licencia apache-2.0 permite uso comercial del código y los pesos, pero el autor advierte de revisar por separado los términos de los datos de origen si se combinan con datasets externos.
-- Al ser una implementación custom, las APIs automáticas de carga de HuggingFace (`AutoModel`, `AutoTokenizer`) requieren un adaptador explícito; no funciona "out of the box".
+- Al ser una implementación custom, las APIs automáticas de carga de Hugging Face (`AutoModel`, `AutoTokenizer`) requieren un adaptador explícito; no funciona "out of the box".
 - Riesgo de alucinación: no aplica en el sentido habitual porque el modelo no genera lenguaje entrenado; cualquier salida es ruido de inicialización.
 - Cero descargas y cero likes en el momento de la consulta: no hay comunidad que haya validado el artefacto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ezimmermannner/my-generation79
+- Repositorio en Hugging Face: https://huggingface.co/ezimmermannner/my-generation79
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

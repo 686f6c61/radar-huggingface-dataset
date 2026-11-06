@@ -76,7 +76,7 @@ No disponible. No se han proporcionado datos de otros modelos TTS en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VoxRT/linnet-en-35m
+- Hugging Face: https://huggingface.co/VoxRT/linnet-en-35m
 - Repositorio GitHub (código y bindings, Apache-2.0): https://github.com/VoxRT/LinnetTTS
 - Licencia de pesos: https://huggingface.co/VoxRT/linnet-en-35m/blob/main/WEIGHTS_LICENSE.md
 - Contacto para licencias: help@voxrt.com

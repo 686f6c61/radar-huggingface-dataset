@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kokoro-ne | 82M | ne, hi, en (con code-switching) | no disponible | Apache-2.0 (pesos) | HuggingFace, 4 descargas |
-| Kokoro-82M (hexgrad) | 82M | múltiples (incluye en) | no disponible | Apache-2.0 | HuggingFace, ampliamente usado |
-| goonj-1-82M (BH-Builds) | 82M | hi, en | no disponible | no disponible en la información | HuggingFace |
+| kokoro-ne | 82M | ne, hi, en (con code-switching) | no disponible | Apache-2.0 (pesos) | Hugging Face, 4 descargas |
+| Kokoro-82M (hexgrad) | 82M | múltiples (incluye en) | no disponible | Apache-2.0 | Hugging Face, ampliamente usado |
+| goonj-1-82M (BH-Builds) | 82M | hi, en | no disponible | no disponible en la información | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento objetivo de kokoro-ne frente a Kokoro-82M o goonj-1-82M. La comparación se limita a parámetros, idiomas y licencia. No se han identificado en la información proporcionada otros modelos TTS específicos para nepalí con los que contrastar.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento objeti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nayanbastakoti/kokoro-ne
+- Modelo en Hugging Face: https://huggingface.co/nayanbastakoti/kokoro-ne
 - Repositorio GitHub (código, uso y clonación de voz): https://github.com/Nayanbst/kokoro-ne
 - Modelo base goonj-1-82M: https://huggingface.co/BH-Builds/goonj-1-82M
 - Modelo original Kokoro-82M: https://huggingface.co/hexgrad/Kokoro-82M

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter0 (este) | 27,78 B | No disponible | SFT declarativo sobre 888 átomos + anclas; RL detenido en el rollout 4 | Apache-2.0 | Pesos bf16 en HuggingFace; 0 descargas, 0 likes |
-| Qwen/Qwen3.8-27B (modelo base) | 27,78 B (mismo conjunto de 1199 tensores) | No disponible en la información proporcionada | Entrenamiento original del autor de Qwen | Apache-2.0 (heredada por este checkpoint) | Público en HuggingFace |
+| E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter0 (este) | 27,78 B | No disponible | SFT declarativo sobre 888 átomos + anclas; RL detenido en el rollout 4 | Apache-2.0 | Pesos bf16 en Hugging Face; 0 descargas, 0 likes |
+| Qwen/Qwen3.8-27B (modelo base) | 27,78 B (mismo conjunto de 1199 tensores) | No disponible en la información proporcionada | Entrenamiento original del autor de Qwen | Apache-2.0 (heredada por este checkpoint) | Público en Hugging Face |
 | Otras iteraciones de la misma serie E2K-cd82 | 27,78 B | No disponible | Variantes de la ejecución `sft_first_decl-cc` y calentamientos solo-SFT | Apache-2.0 | Listadas en `checkpoints/checkpoints.md` del dataset de RL |
 
 No se dispone de datos de benchmarks ni de especificaciones de contexto para establecer una comparación cuantitativa con modelos de la misma categoría; cualquier comparación con alternativas de ~27 B de otros fabricantes no está respaldada por la información disponible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de contexto para est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter0
+- Modelo en Hugging Face: https://huggingface.co/ziyan98/E2K-cd82-Qwen3.8-27B-sft_first_decl-cc-iter0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de RL de la ejecución (episodios, métricas, filas y log): https://huggingface.co/datasets/ziyan98/E2K-cd82-rl-internalization
 - Dataset del conjunto de conocimiento del arnés: https://huggingface.co/datasets/ziyan98/E2K-cd82-harness-knowledge

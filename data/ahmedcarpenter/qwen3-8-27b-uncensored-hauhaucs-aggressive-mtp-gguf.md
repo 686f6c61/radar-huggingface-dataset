@@ -91,7 +91,7 @@ Nota: la comparativa se limita al modelo base y a una referencia de categoria, y
 - El perfil Aggressive prioriza respuestas directas; el propio autor recomienda la variante Balanced (cuando exista) para trabajo agentico de contexto largo y fiabilidad critica.
 - Los datos de rendimiento (FastMTP, 0/465 rechazos) proceden exclusivamente del autor del repo y no han sido verificados de forma independiente.
 - Existe una discrepancia no resuelta entre los parametros reportados en safetensors (1,86B) y los 27B de la model card; conviene verificar el tamano real del archivo descargado.
-- Las cuantizaciones K_P son personalizadas de HauhauCS: aunque son GGUF estandar, pueden mostrarse como desconocidas en LM Studio y el widget de compatibilidad de HuggingFace puede no reconocerlas.
+- Las cuantizaciones K_P son personalizadas de HauhauCS: aunque son GGUF estandar, pueden mostrarse como desconocidas en LM Studio y el widget de compatibilidad de Hugging Face puede no reconocerlas.
 - Las cuantizaciones de 2-3 bits (IQ2_M, Q2_K_P, IQ3_XS) implican perdida de calidad notable respecto al modelo original.
 - No hay benchmarks estandar publicados para esta variante, por lo que el impacto del uncensoring en razonamiento o codigo no esta cuantificado.
 - Riesgo de alucinacion: no disponible (sin datos publicados para esta variante).

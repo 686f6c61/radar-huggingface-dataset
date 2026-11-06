@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stairmed/piper_dex15_grasp_bottle_finally_act_v1` es una política de robótica entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), desarrollada por el usuario stairmed y publicada en HuggingFace bajo licencia Apache 2.0. Está diseñada para controlar un robot manipulador de tipo `piper_dex15_stairmed` en la tarea de agarrar una botella, utilizando como entrada una imagen de cámara (640x480) y el estado del robot (7 dimensiones), y produciendo como salida una acción de 7 dimensiones.
+El modelo `stairmed/piper_dex15_grasp_bottle_finally_act_v1` es una política de robótica entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT), desarrollada por el usuario stairmed y publicada en Hugging Face bajo licencia Apache 2.0. Está diseñada para controlar un robot manipulador de tipo `piper_dex15_stairmed` en la tarea de agarrar una botella, utilizando como entrada una imagen de cámara (640x480) y el estado del robot (7 dimensiones), y produciendo como salida una acción de 7 dimensiones.
 
 El modelo se ha entrenado con el framework LeRobot (versión 0.6.1) sobre un dataset propio de 60 episodios teleoperados, con un total de 18.349 frames a 30 FPS. Con 51,67 millones de parámetros, es una política compacta que puede ejecutarse en tiempo real en hardware de gama media. Su relevancia radica en que demuestra la aplicación práctica de ACT en un escenario de manipulación real, con un pipeline completo de entrenamiento y despliegue documentado.
 
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/stairmed/piper_dex15_grasp_bottle_finally_act_v1)
+- [Modelo en Hugging Face](https://huggingface.co/stairmed/piper_dex15_grasp_bottle_finally_act_v1)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/stairmed/piper_dex15_grasp_bottle_finally)
 - [Paper de ACT (arXiv:2304.13705)](https://huggingface.co/papers/2304.13705)
 - [Repositorio de LeRobot](https://github.com/huggingface/lerobot)

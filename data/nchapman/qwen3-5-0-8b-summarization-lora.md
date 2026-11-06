@@ -76,8 +76,8 @@ El autor advierte que la cobertura y la diferencia de longitud son inconcluyente
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nchapman/qwen3.5-0.8b-summarization-lora | Adaptador LoRA sobre 0,8B | no disponible | Summarizacion EN | apache-2.0 | HuggingFace (28 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generacion general | propia del base | HuggingFace |
+| nchapman/qwen3.5-0.8b-summarization-lora | Adaptador LoRA sobre 0,8B | no disponible | Summarizacion EN | apache-2.0 | Hugging Face (28 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generacion general | propia del base | Hugging Face |
 | Alternativas de summarizacion de 0,8B-1B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos comparables en la informacion proporcionada; la unica comparacion publicada es frente al propio modelo base.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos comparables en la informacion pr
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nchapman/qwen3.5-0.8b-summarization-lora
+- Hugging Face del adaptador: https://huggingface.co/nchapman/qwen3.5-0.8b-summarization-lora
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset HuggingFaceTB/smoltalk2: https://huggingface.co/datasets/HuggingFaceTB/smoltalk2
 - Informe de evaluacion (referenciado en la model card): `docs/results/aligned-adapter-comparison.md` en el repositorio Lillm Summarizer (no se proporciona URL directa)

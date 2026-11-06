@@ -4,7 +4,7 @@
 
 El modelo `localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3` es un fine-tuning supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Forma parte de una serie de experimentos con nombres similares (first-third, second-third, last-third, distintos seeds) que parecen explorar el entrenamiento sobre un dataset denominado "school-of-reward-hacks", probablemente orientado a estudiar comportamientos de manipulación de recompensas o jailbreaks en modelos de lenguaje. El modelo está pensado para investigación en seguridad y alineación de IA, no para uso productivo directo.
 
-Con 8.030 millones de parámetros, es un modelo de tamaño medio que hereda la arquitectura transformer decoder-only de Llama 3.1. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación, aunque su finalidad investigadora limita su aplicabilidad práctica. El entrenamiento se realizó con la librería Unsloth (para acelerar el proceso) y HuggingFace TRL, pero no se han publicado detalles sobre el dataset, el número de tokens o el procedimiento exacto de fine-tuning.
+Con 8.030 millones de parámetros, es un modelo de tamaño medio que hereda la arquitectura transformer decoder-only de Llama 3.1. Se distribuye bajo licencia Apache-2.0, lo que permite uso comercial y modificación, aunque su finalidad investigadora limita su aplicabilidad práctica. El entrenamiento se realizó con la librería Unsloth (para acelerar el proceso) y Hugging Face TRL, pero no se han publicado detalles sobre el dataset, el número de tokens o el procedimiento exacto de fine-tuning.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, es un modelo de tamaño medio que hereda la a
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer autoregresivo con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE). Al ser un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, conserva la misma estructura y capacidades de razonamiento y generación de texto del modelo original. El entrenamiento se realizó mediante supervisión directa (SFT) sobre un subconjunto del dataset "school-of-reward-hacks" (concretamente el último tercio, según el nombre), utilizando la librería Unsloth para optimizar la velocidad y memoria, y la librería TRL de HuggingFace para el pipeline de entrenamiento. No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre sugiere que el dataset podría contener ejemplos de "hacks" de recompensas, posiblemente relacionados con la explotación de funciones de recompensa en sistemas de RL, pero esto es una inferencia no confirmada.
+El modelo se basa en la arquitectura Llama 3.1 de Meta, un transformer autoregresivo con atención de múltiples cabezas, normalización RMSNorm y embeddings rotatorios (RoPE). Al ser un fine-tuning del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`, conserva la misma estructura y capacidades de razonamiento y generación de texto del modelo original. El entrenamiento se realizó mediante supervisión directa (SFT) sobre un subconjunto del dataset "school-of-reward-hacks" (concretamente el último tercio, según el nombre), utilizando la librería Unsloth para optimizar la velocidad y memoria, y la librería TRL de Hugging Face para el pipeline de entrenamiento. No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre sugiere que el dataset podría contener ejemplos de "hacks" de recompensas, posiblemente relacionados con la explotación de funciones de recompensa en sistemas de RL, pero esto es una inferencia no confirmada.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3
+- Hugging Face: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3
 - Variante second-third: https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3
 - Variante last-third (otro autor): https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed3
 - Variante seed5-epoch3 (FriendliAI): https://friendli.ai/models/localized-ft/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5-epoch3

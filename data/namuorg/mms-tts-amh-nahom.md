@@ -6,7 +6,7 @@ El modelo `Namuorg/mms-tts-amh-nahom` es un sistema de síntesis de voz (text-to
 
 El modelo se enmarca en el proyecto de código abierto `namu-tts-amharic-tts-internship`, cuyo repositorio público documenta el proceso de fine-tuning utilizando la librería `ylacombe/finetune-hf-vits`. La relevancia actual radica en la escasez de modelos TTS de calidad para lenguas etíopes como el amárico, y en la posibilidad de adaptar modelos multilingües existentes con recursos computacionales moderados.
 
-La arquitectura subyacente es VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), que combina un codificador de texto, un decodificador de voz y un discriminador adversarial. El modelo se distribuye en formato safetensors y es compatible con la librería `transformers` de HuggingFace, lo que facilita su integración en pipelines de síntesis de voz.
+La arquitectura subyacente es VITS (Variational Inference with adversarial Training for end-to-end Text-to-Speech), que combina un codificador de texto, un decodificador de voz y un discriminador adversarial. El modelo se distribuye en formato safetensors y es compatible con la librería `transformers` de Hugging Face, lo que facilita su integración en pipelines de síntesis de voz.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El entrenamiento se realizó mediante fine-tuning del checkpoint `facebook/mms-t
 
 - Síntesis de voz en amárico a partir de texto escrito.
 - Generación de audio en formato waveform directamente desde el texto (arquitectura end-to-end).
-- Soporte para inferencia con la librería `transformers` de HuggingFace.
+- Soporte para inferencia con la librería `transformers` de Hugging Face.
 - Capacidad de ajuste fino adicional para adaptar la voz a un hablante o estilo concreto.
 - Compatible con pipelines de generación de voz en tiempo real o por lotes.
 - No soporta tool calling, razonamiento multi-paso ni otras capacidades de modelos de lenguaje.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: al tratarse de un modelo de 83M parámetros, la inferencia puede ejecutarse en CPU con unos 2-4 GB de RAM, y en GPU con menos de 1 GB de VRAM (por ejemplo, una NVIDIA T4 o incluso una GPU integrada moderna).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una RTX 3060 o superior permitirá inferencia en tiempo real con baja latencia.
 - Es viable en hardware de consumo (portátiles y PCs de escritorio con GPU básica).
-- Opciones de despliegue: la librería `transformers` de HuggingFace permite ejecutar el modelo en Python; también es compatible con pipelines de HuggingFace y se puede exportar a ONNX para entornos de producción.
+- Opciones de despliegue: la librería `transformers` de Hugging Face permite ejecutar el modelo en Python; también es compatible con pipelines de Hugging Face y se puede exportar a ONNX para entornos de producción.
 - Latencia y throughput: no disponibles; se estima que un modelo de este tamaño genera audio más rápido que en tiempo real en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La comparativa se limita a la familia MMS de Meta, ya que no se han identificado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Namuorg/mms-tts-amh-nahom
+- Modelo en Hugging Face: https://huggingface.co/Namuorg/mms-tts-amh-nahom
 - Repositorio GitHub del proyecto: https://github.com/Namuai-org/namu-tts-amharic-tts-internship
 - Modelo base `facebook/mms-tts`: https://huggingface.co/facebook/mms-tts
-- Perfil de la organización Namuorg en HuggingFace: https://huggingface.co/Namuorg/models
+- Perfil de la organización Namuorg en Hugging Face: https://huggingface.co/Namuorg/models
 - Página del modelo en AIBase (referencia externa): https://model.aibase.com/models/details/1915693318811574274

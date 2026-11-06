@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`wsp-grpo-toy-distilled` es un modelo de generación de texto publicado en HuggingFace por el usuario gdominici. Por el nombre y las etiquetas del repositorio (`trl`, `sft`, `qwen3`), se trata de un experimento de ajuste fino supervisado (SFT) sobre una base de la familia Qwen3, presumiblemente orientado a probar técnicas de entrenamiento con GRPO (Group Relative Policy Optimization). El sufijo "toy" sugiere que es un modelo de prueba o demostración, no un modelo pensado para producción.
+`wsp-grpo-toy-distilled` es un modelo de generación de texto publicado en Hugging Face por el usuario gdominici. Por el nombre y las etiquetas del repositorio (`trl`, `sft`, `qwen3`), se trata de un experimento de ajuste fino supervisado (SFT) sobre una base de la familia Qwen3, presumiblemente orientado a probar técnicas de entrenamiento con GRPO (Group Relative Policy Optimization). El sufijo "toy" sugiere que es un modelo de prueba o demostración, no un modelo pensado para producción.
 
 El modelo tiene 8.190.735.360 parámetros según los pesos en safetensors, lo que lo sitúa en la categoría de ~8B parámetros, un tamaño coherente con las variantes pequeñas de Qwen3. El repositorio ocupa 16,4 GB, consistente con pesos en precisión de 16 bits. No se ha publicado información sobre la longitud de contexto, los datos de entrenamiento ni los idiomas soportados.
 
-La relevancia de este modelo es limitada: se publicó el 5 de noviembre de 2026, no tiene descargas ni likes, y la model card es la plantilla automática de HuggingFace sin rellenar. Debe considerarse un artefacto de investigación personal más que un modelo evaluable para uso real.
+La relevancia de este modelo es limitada: se publicó el 5 de noviembre de 2026, no tiene descargas ni likes, y la model card es la plantilla automática de Hugging Face sin rellenar. Debe considerarse un artefacto de investigación personal más que un modelo evaluable para uso real.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ No se han publicado datos sobre el número de tokens de entrenamiento, la compos
 - Generación de texto conversacional: el repositorio incluye la etiqueta `conversational`, lo que indica que el modelo está formateado para diálogo multi-turno.
 - Ajuste fino supervisado (SFT): entrenado con TRL, orientado a seguir instrucciones.
 - Posible razonamiento mejorado vía GRPO: el nombre del modelo lo sugiere, pero no hay evidencia documentada.
-- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en infraestructura estándar de HuggingFace.
+- Compatibilidad con text-generation-inference y endpoints: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en infraestructura estándar de Hugging Face.
 - Capacidades multilingües: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes: no disponible.
@@ -58,17 +58,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - Cuantización a 4 bits: ~4-5 GB de VRAM, viable en RTX 3060/4060 con 8 GB o superiores.
 - GPUs recomendadas: A100 40/80 GB o H100 para FP16 sin cuantizar; RTX 4090 (24 GB) para FP16 ajustado o 8 bits; RTX 3090/4080 para 8 bits.
 - Cabe en GPU consumer: sí, con cuantización (4-8 bits) en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores.
-- Opciones de despliegue: transformers (nativo), text-generation-inference (etiqueta presente), endpoints de HuggingFace. No se confirma soporte de llama.cpp, Ollama o vLLM al no haber pesos GGUF publicados.
+- Opciones de despliegue: transformers (nativo), text-generation-inference (etiqueta presente), endpoints de Hugging Face. No se confirma soporte de llama.cpp, Ollama o vLLM al no haber pesos GGUF publicados.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| wsp-grpo-toy-distilled | 8,19B | no disponible | no disponible | HuggingFace, 0 descargas |
-| Qwen3-8B (base presumible) | ~8B | no disponible en esta ficha | no disponible | HuggingFace, ampliamente usado |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace, ampliamente usado |
-| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | HuggingFace, ampliamente usado |
+| wsp-grpo-toy-distilled | 8,19B | no disponible | no disponible | Hugging Face, 0 descargas |
+| Qwen3-8B (base presumible) | ~8B | no disponible en esta ficha | no disponible | Hugging Face, ampliamente usado |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face, ampliamente usado |
+| Mistral 7B v0.3 | 7,2B | 32K | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación es aproximada: no se dispone de datos de rendimiento del modelo evaluado ni de su licencia, por lo que la elección frente a alternativas consolidadas no puede justificarse técnicamente.
 
@@ -85,6 +85,6 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gdominici/wsp-grpo-toy-distilled
+- Hugging Face: https://huggingface.co/gdominici/wsp-grpo-toy-distilled
 - Paper de referencia sobre impacto ambiental citado en la model card: https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact#compute

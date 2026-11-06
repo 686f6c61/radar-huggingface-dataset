@@ -86,12 +86,12 @@ La comparativa natural son las propias bases Qwen3 de las que derivan, ya que la
 - La licencia Apache-2.0 cubre los checkpoints, pero los datos de entrenamiento y el codigo tienen licencias separadas; hay que revisarlas antes de uso comercial del pipeline completo.
 - El repositorio de 273,6 GB contiene los tres checkpoints completos; el despliegue en produccion exige planificar almacenamiento y, previsiblemente, conversion a formatos cuantizados no publicados.
 - El modelo espera que el razonamiento de turnos anteriores se conserve en la conversacion (`reasoning_content`); omitirlo puede degradar el rendimiento respecto a los numeros reportados.
-- Los resultados de benchmarks son los del paper (Table 1) con un protocolo concreto; no hay evaluaciones independientes y el modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta.
+- Los resultados de benchmarks son los del paper (Table 1) con un protocolo concreto; no hay evaluaciones independientes y el modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta.
 - El identificador arXiv del paper figura como "TODO" en la model card, por lo que la referencia bibliografica no es verificable aun.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JazySong/LegoEnv
+- Hugging Face: https://huggingface.co/JazySong/LegoEnv
 - Dataset: https://huggingface.co/datasets/JazySong/LegoEnv
 - Codigo: https://github.com/JazyJiang/LegoEnv
 - Paper: arXiv pendiente (identificador no disponible en la model card)

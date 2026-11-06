@@ -41,7 +41,7 @@ El repositorio se creó en agosto de 2026 y no incluye información sobre el pro
 - Evaluacion comparativa de adaptadores: utilizable en estudios que comparen diferentes estrategias de ajuste fino (iteraciones, datasets, hiperparametros) sobre el mismo modelo base.
 - Investigacion en alineacion multimodal: si el entrenamiento r3v implica refuerzo, el adaptador puede interesar a quienes estudian tecnicas de alineacion para modelos que combinan texto, audio y vision.
 - Desarrollo de agentes multimodales: combinado con el modelo base, podria integrarse en pipelines que requieran comprension de varios tipos de entrada, aunque requiere validacion previa.
-- Educacion y formacion: como ejemplo de publicacion de adaptadores LoRA en el ecosistema HuggingFace, puede usarse en cursos sobre fine-tuning eficiente de parametros.
+- Educacion y formacion: como ejemplo de publicacion de adaptadores LoRA en el ecosistema Hugging Face, puede usarse en cursos sobre fine-tuning eficiente de parametros.
 
 ## Benchmarks y rendimiento
 

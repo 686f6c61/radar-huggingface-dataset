@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Lennox202540K es un modelo publicado en HuggingFace por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. La informacion disponible sobre el es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano coherente con un modelo pequeno o con pesos cuantizados, aunque no es posible confirmarlo con los datos publicos.
+Lennox202540K es un modelo publicado en Hugging Face por el usuario JEFFERSONMUSIC bajo licencia Apache 2.0. La informacion disponible sobre el es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento y sin resultados de evaluacion. El repositorio ocupa 0,1 GB, un tamano coherente con un modelo pequeno o con pesos cuantizados, aunque no es posible confirmarlo con los datos publicos.
 
-El nombre del repositorio sugiere, por convencion habitual en la comunidad, una ventana de contexto de 40.000 tokens (el sufijo "40K"), pero se trata de una inferencia a partir del nombre y no de un dato verificado en la documentacion del autor. No hay informacion sobre el numero de parametros, la arquitectura, los idiomas soportados ni el pipeline de inferencia (el campo `pipeline` aparece como no disponible en la ficha de HuggingFace).
+El nombre del repositorio sugiere, por convencion habitual en la comunidad, una ventana de contexto de 40.000 tokens (el sufijo "40K"), pero se trata de una inferencia a partir del nombre y no de un dato verificado en la documentacion del autor. No hay informacion sobre el numero de parametros, la arquitectura, los idiomas soportados ni el pipeline de inferencia (el campo `pipeline` aparece como no disponible en la ficha de Hugging Face).
 
 A fecha de la consulta, el modelo registra 0 descargas y 0 "likes", y su fecha de creacion figura como 2026-09-11, posterior a la fecha de actualidad, lo que sugiere un error en los metadatos o una publicacion programada. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a hilos de foro sobre software antivirus y no guardan ninguna relacion con este repositorio.
 
@@ -23,13 +23,13 @@ A fecha de la consulta, el modelo registra 0 descargas y 0 "likes", y su fecha d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o una arquitectura hibrida. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 El unico dato objetivo disponible es el tamano del repositorio (0,1 GB) y la licencia declarada (Apache 2.0). Cualquier afirmacion adicional sobre el proceso de entrenamiento o sobre la topologia de la red seria especulativa y no debe tomarse como verificada.
 
 ## Capacidades
 
-- Generacion de texto: no confirmada por el autor, aunque es la funcion esperada de un modelo de lenguaje publicado en HuggingFace.
+- Generacion de texto: no confirmada por el autor, aunque es la funcion esperada de un modelo de lenguaje publicado en Hugging Face.
 - Razonamiento, codigo y matematicas: no disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -46,7 +46,7 @@ No es posible recomendar casos de uso concretos y realistas sin conocer las capa
 - Pruebas de generacion de texto en espanol: solo si se confirma el soporte del idioma, algo que la ficha no declara.
 - Evaluacion comparativa interna: el modelo puede usarse como punto de referencia de bajo coste frente a alternativas conocidas, siempre que se midan sus resultados con un conjunto de evaluacion propio.
 - Filtrado previo o clasificacion ligera: si el modelo resultase ser de menos de 1.000 millones de parametros, podria encajar en tareas de etiquetado o moderacion de bajo coste, aunque no hay datos que lo respalden.
-- Educacion e investigacion sobre despliegue: util como ejemplo de publicacion en HuggingFace con licencia permisiva para estudiar flujos de carga de pesos.
+- Educacion e investigacion sobre despliegue: util como ejemplo de publicacion en Hugging Face con licencia permisiva para estudiar flujos de carga de pesos.
 - Integracion en demos de bajo trafico: unicamente tras verificar licencia, formato de pesos y calidad de salida en un entorno controlado.
 
 En todos los casos, la ausencia de benchmarks y de documentacion hace obligatoria una evaluacion propia antes de cualquier uso real.
@@ -80,7 +80,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JEFFERSONMUSIC/Lennox202540K
+- Hugging Face: https://huggingface.co/JEFFERSONMUSIC/Lennox202540K
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de codigo: no disponible.

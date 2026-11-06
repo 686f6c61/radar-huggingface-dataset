@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA
+- Repositorio Hugging Face del adaptador: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA
 - Version GGUF del adaptador: https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Demo en video (28 s): https://huggingface.co/wesjos/Qwen3.8-27B-Mario-HTML-LoRA/resolve/main/demos/demo.mp4

@@ -104,6 +104,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/exeterminal/Exe-Turbo-S-V3-GGUF
+- Modelo en Hugging Face: https://huggingface.co/exeterminal/Exe-Turbo-S-V3-GGUF
 - Licencia lfm1.0: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B/blob/main/LICENSE
 - Sitio web de Exe AI Terminal: https://exe-hq.net

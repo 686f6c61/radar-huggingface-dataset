@@ -81,7 +81,7 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- [HuggingFace - jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native](https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native)
+- [Hugging Face - jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native](https://huggingface.co/jcbtc/Ling-3.0-Flash-CIRU-int4-Strix-native)
 - [Documentación oficial de Ling 3.0 Flash](https://developer.ant-ling.com/en/docs/models/ling/)
 - [Demo de Ling 3.0 Flash en DeepInfra](https://deepinfra.com/inclusionAI/Ling-3.0-flash)
 - [Tweet de Ciru.ai sobre rendimiento en Strix Halo](https://x.com/ciruai/status/2085982210411151742)

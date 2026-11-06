@@ -6,7 +6,7 @@
 
 El artefacto es, por tanto, un resultado de investigacion y no un modelo listo para produccion. Su interes radica en que documenta un flujo de trabajo reproducible de RLVR sobre un modelo de razonamiento de 7B: LoRA + GRPO + recompensas verificables aplicadas a un dominio concreto (Rust). Esto lo hace relevante para equipos que quieran analizar curvas de aprendizaje con recompensas verificables, generar trazas de razonamiento especializadas o construir variantes afinadas del modelo base.
 
-La documentacion publicada es practicamente inexistente: la model card es la plantilla por defecto de HuggingFace sin rellenar, sin seccion de evaluacion, sin hiperparametros, sin licencia declarada y sin idiomas indicados. Cualquier dato de contexto, cuantizacion, benchmark o licencia debe considerarse no disponible hasta que el autor lo publique.
+La documentacion publicada es practicamente inexistente: la model card es la plantilla por defecto de Hugging Face sin rellenar, sin seccion de evaluacion, sin hiperparametros, sin licencia declarada y sin idiomas indicados. Cualquier dato de contexto, cuantizacion, benchmark o licencia debe considerarse no disponible hasta que el autor lo publique.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ La busqueda web realizada no devolvio ningun modelo, paper o repositorio compara
 
 ## Limitaciones y advertencias
 
-- Model card vacia: la documentacion es la plantilla por defecto de HuggingFace, sin datos de uso previsto, limitaciones, datos de entrenamiento ni evaluacion.
+- Model card vacia: la documentacion es la plantilla por defecto de Hugging Face, sin datos de uso previsto, limitaciones, datos de entrenamiento ni evaluacion.
 - Licencia no declarada: no se especifica la licencia del adaptador. Antes de cualquier uso comercial hay que verificar la licencia del modelo base `open-thoughts/OpenThinker-7B` por separado, ya que la del adaptador podria no estar definida y dejaria el uso en un limbo legal.
 - Checkpoint intermedio: el identificador `step75` indica que es un punto de control parcial de una ejecucion, no necesariamente convergido ni validado como version final.
 - Sin evaluacion: no hay benchmarks, evaluaciones humanas ni comparaciones con el modelo base, por lo que no se puede afirmar que el ajuste mejore al base en ninguna tarea.
@@ -95,13 +95,13 @@ La busqueda web realizada no devolvio ningun modelo, paper o repositorio compara
 - Riesgo de alucinacion: no se ha medido, y el modelo puede generar explicaciones de codigo o APIs de Rust inexistentes.
 - Idiomas no declarados: se desconoce el comportamiento fuera del ingles y de los idiomas cubiertos por el modelo base.
 - Cero adopcion: 0 descargas y 0 likes implican ausencia total de validacion por parte de la comunidad.
-- Ruido en los metadatos: el tag `arxiv:1910.09700` corresponde a la plantilla de HuggingFace y apunta al articulo del calculador de impacto de carbono (Lacoste et al., 2019), no a un paper de este modelo. No debe interpretarse como referencia tecnica.
+- Ruido en los metadatos: el tag `arxiv:1910.09700` corresponde a la plantilla de Hugging Face y apunta al articulo del calculador de impacto de carbono (Lacoste et al., 2019), no a un paper de este modelo. No debe interpretarse como referencia tecnica.
 - Reproducibilidad limitada: no se publican hiperparametros, dataset, verificador ni semilla, por lo que el experimento no es reproducible a partir de la informacion disponible.
 - Fecha de creacion anomala: el repositorio figura como creado el 2026-09-16, fecha posterior a la de esta revision; conviene verificar los metadatos antes de citarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nmuendler/OpenThinker-7B-rust-rlvr-run1-step75
+- Modelo en Hugging Face: https://huggingface.co/nmuendler/OpenThinker-7B-rust-rlvr-run1-step75
 - Modelo base: https://huggingface.co/open-thoughts/OpenThinker-7B
 - Referencia del tag arXiv (plantilla de impacto de carbono, no paper del modelo): https://arxiv.org/abs/1910.09700
 - TRL (framework de entrenamiento con GRPO): https://github.com/huggingface/trl

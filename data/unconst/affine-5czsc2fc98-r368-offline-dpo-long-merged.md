@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`unconst/Affine-5czsc2fc98-r368-offline-dpo-long-merged` es un checkpoint intermedio de investigación, publicado como "salvamento" (salvage) por el usuario `unconst`. Se trata de un merge de LoRA aplicado sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez es un fine-tuning de un modelo de la familia Affine-H1. Los metadatos de HuggingFace indican que la arquitectura subyacente corresponde a un modelo MoE de la serie Qwen3.5 (tag `qwen3_5_moe`) con capacidades multimodales (`image-text-to-text`), aunque no se proporciona documentación oficial que confirme estos detalles.
+`unconst/Affine-5czsc2fc98-r368-offline-dpo-long-merged` es un checkpoint intermedio de investigación, publicado como "salvamento" (salvage) por el usuario `unconst`. Se trata de un merge de LoRA aplicado sobre el modelo base `kevin954/Affine-5dfqbbh8ev-sft`, que a su vez es un fine-tuning de un modelo de la familia Affine-H1. Los metadatos de Hugging Face indican que la arquitectura subyacente corresponde a un modelo MoE de la serie Qwen3.5 (tag `qwen3_5_moe`) con capacidades multimodales (`image-text-to-text`), aunque no se proporciona documentación oficial que confirme estos detalles.
 
 El modelo tiene 35.107.181.936 parámetros (aproximadamente 35B) y un tamaño de repositorio de 70,2 GB en formato `safetensors`. La model card es extremadamente escueta: solo indica que es un "H1 merged checkpoint salvage", un "LoRA-merged" del modelo base, y añade la nota "Private TTL insurance; not a submission until Stage-5 gate clears", lo que sugiere que no es una versión final ni apta para producción. No se especifican licencia, idiomas, contexto ni detalles de entrenamiento. Con 0 descargas y 0 likes, parece un artefacto experimental de un pipeline privado de fine-tuning.
 
@@ -21,7 +21,7 @@ El modelo tiene 35.107.181.936 parámetros (aproximadamente 35B) y un tamaño de
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible es muy limitada. Los tags de HuggingFace indican que el modelo pertenece a la familia `qwen3_5_moe`, lo que apunta a una arquitectura de mezcla de expertos (Mixture of Experts) con atencion por ventanas deslizantes o similar, tipica de los modelos Qwen recientes. Tambien aparece el tag `image-text-to-text`, lo que sugiere que el modelo base original podria ser multimodal (capaz de procesar imagenes y texto), aunque no se confirma si este checkpoint conserva esa capacidad.
+La informacion disponible es muy limitada. Los tags de Hugging Face indican que el modelo pertenece a la familia `qwen3_5_moe`, lo que apunta a una arquitectura de mezcla de expertos (Mixture of Experts) con atencion por ventanas deslizantes o similar, tipica de los modelos Qwen recientes. Tambien aparece el tag `image-text-to-text`, lo que sugiere que el modelo base original podria ser multimodal (capaz de procesar imagenes y texto), aunque no se confirma si este checkpoint conserva esa capacidad.
 
 El proceso de entrenamiento, segun el nombre del repositorio, incluye una etapa de DPO (Direct Preference Optimization) offline con contexto largo (`offline-dpo-long`), aplicada sobre un fine-tuning previo (`kevin954/Affine-5dfqbbh8ev-sft`). El resultado es un merge de LoRA, no un entrenamiento completo. No se dispone de datos sobre el dataset utilizado, el numero de tokens de entrenamiento, ni las tecnicas de optimizacion empleadas. La model card no aporta ninguna informacion adicional.
 
@@ -76,6 +76,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r368-offline-dpo-long-merged
+- Repositorio Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r368-offline-dpo-long-merged
 - Modelo base: https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft
 - No se han encontrado papers, blogs ni demos asociados a este modelo.

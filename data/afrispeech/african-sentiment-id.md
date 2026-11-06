@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`AfriSpeech/african-sentiment-id` es un clasificador supervisado de sentimiento binario (positivo / negativo) desarrollado por la organizacion AfriSpeech y publicado en HuggingFace bajo licencia MIT. El modelo se distribuye en formato FastText y su rasgo distintivo es que el texto de entrenamiento se convirtio previamente a una ortografia universal mediante la herramienta `africa-g2p`, de modo que el clasificador opera sobre una representacion fonetica normalizada en lugar de sobre grafias especificas de cada lengua. Eso permite cubrir multiples lenguas africanas sin condicionamiento explicito de idioma en la entrada.
+`AfriSpeech/african-sentiment-id` es un clasificador supervisado de sentimiento binario (positivo / negativo) desarrollado por la organizacion AfriSpeech y publicado en Hugging Face bajo licencia MIT. El modelo se distribuye en formato FastText y su rasgo distintivo es que el texto de entrenamiento se convirtio previamente a una ortografia universal mediante la herramienta `africa-g2p`, de modo que el clasificador opera sobre una representacion fonetica normalizada en lugar de sobre grafias especificas de cada lengua. Eso permite cubrir multiples lenguas africanas sin condicionamiento explicito de idioma en la entrada.
 
 El repositorio incluye tres artefactos: `model.bin` (modelo FastText supervisado en precision completa), `model.ftz` (version cuantizada y ligera) y `config.json`. El tamano total del repositorio es de 1,9 GB. La etiqueta de idioma declarada es `mul` (multilingue) y la libreria asociada es `fasttext`.
 
@@ -26,8 +26,8 @@ Es relevante porque la mayoria de clasificadores de sentimiento con buen rendimi
 | Tarea | clasificacion de sentimiento binaria (positivo / negativo) |
 | Preprocesado requerido | conversion del texto a ortografia universal mediante `africa-g2p` |
 | Tamano del repositorio | 1,9 GB |
-| Descargas / likes en HuggingFace | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-22 |
+| Descargas / likes en Hugging Face | 0 / 0 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -79,7 +79,7 @@ No disponible. No se han localizado en la informacion proporcionada resultados c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparables |
 |---|---|---|---|---|---|
-| african-sentiment-id (AfriSpeech) | no disponible | no disponible | MIT | HuggingFace, 0 descargas | no disponible |
+| african-sentiment-id (AfriSpeech) | no disponible | no disponible | MIT | Hugging Face, 0 descargas | no disponible |
 | Alternativas de la categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,12 +93,12 @@ No disponible. No se han localizado en la informacion proporcionada resultados c
 - El campo de idioma `mul` no permite saber que lenguas concretas estan realmente soportadas; hay que validar caso por caso antes de usarlo en produccion.
 - Sesgos conocidos: no disponibles. No se ha publicado ningun analisis de sesgo por pais, etnia, genero o dialecto.
 - Licencia MIT: permite uso comercial y modificacion, pero exige conservar el aviso de copyright y la licencia. No se especifican terminos adicionales sobre los datos de entrenamiento ni sobre el uso de `africa-g2p`.
-- Advertencia de trazabilidad: las fechas de creacion y actualizacion registradas en HuggingFace (2026) son posteriores a la fecha de esta consulta, lo que conviene tener en cuenta al citar el modelo.
+- Advertencia de trazabilidad: las fechas de creacion y actualizacion registradas en Hugging Face (2026) son posteriores a la fecha de esta consulta, lo que conviene tener en cuenta al citar el modelo.
 - Sin senal de adopcion: 0 descargas y 0 likes implican que no existe una comunidad que haya reportado fallos, mejoras o validaciones independientes.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AfriSpeech/african-sentiment-id
+- Hugging Face: https://huggingface.co/AfriSpeech/african-sentiment-id
 - Herramienta de preprocesado `africa-g2p`, referenciada en la model card: no disponible (no se proporciona URL)
 - Paper o publicacion tecnica: no disponible
 - Repositorio de codigo: no disponible

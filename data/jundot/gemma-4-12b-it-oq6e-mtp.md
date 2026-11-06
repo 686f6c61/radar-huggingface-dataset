@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparado ni de otras alternativas de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jundot/gemma-4-12B-it-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Jundot/gemma-4-12B-it-oQ6e-mtp
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo assistant (origen de la cabeza MTP): https://huggingface.co/google/gemma-4-12B-it-assistant
 - Repositorio oMLX: https://github.com/jundot/omlx

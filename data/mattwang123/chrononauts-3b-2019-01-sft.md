@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2019-01 SFT | 2,8 B | 8.192 | Agente de búsqueda con cutoff temporal 2019-01 | other | HuggingFace (0 descargas) |
-| Chrononauts 3B 2019-01 init | no disponible | no disponible | Modelo inicial del mismo cutoff | other | HuggingFace (repo hermano) |
-| Chrononauts 3B 2019-01 agent | no disponible | no disponible | Etapa agente del mismo cutoff | other | HuggingFace (repo hermano) |
+| Chrononauts 3B 2019-01 SFT | 2,8 B | 8.192 | Agente de búsqueda con cutoff temporal 2019-01 | other | Hugging Face (0 descargas) |
+| Chrononauts 3B 2019-01 init | no disponible | no disponible | Modelo inicial del mismo cutoff | other | Hugging Face (repo hermano) |
+| Chrononauts 3B 2019-01 agent | no disponible | no disponible | Etapa agente del mismo cutoff | other | Hugging Face (repo hermano) |
 | Alternativas genéricas de 3 B | no disponible | no disponible | LLM generalista | variable | no disponible |
 
 No se han identificado en la información disponible modelos directamente comparables con el mismo diseño de cutoff temporal.
@@ -90,7 +90,7 @@ No se han identificado en la información disponible modelos directamente compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-sft
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-sft
 - Repo hermano init: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-init
 - Repo hermano agent: https://huggingface.co/mattwang123/chrononauts-3b-2019-01-agent
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

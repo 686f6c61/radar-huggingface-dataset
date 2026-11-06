@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | stdlogits/drowse-web-qwen3-1.7b | 1.700 M | no disponible | artefactos de navegador (WebGPU/MLC) | mixta | espejo de integridad, sin catalogo firmado |
-| Qwen3-1.7B (original) | 1.700 M | no disponible en esta ficha | safetensors (Transformers) | segun model card de Qwen | disponible en HuggingFace |
+| Qwen3-1.7B (original) | 1.700 M | no disponible en esta ficha | safetensors (Transformers) | segun model card de Qwen | disponible en Hugging Face |
 | Alternativas de navegador (otros bundles MLC/WebGPU) | variable | variable | artefactos de navegador | variable | variable |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada.
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stdlogits/drowse-web-qwen3-1.7b
+- Repositorio en Hugging Face: https://huggingface.co/stdlogits/drowse-web-qwen3-1.7b
 - Origen de los artefactos: https://huggingface.co/puppyum/polythetic-web-qwen3-1.7b/tree/cda345a4200f08cca112502d99c700b04026fefe
 - Licencias por componente: https://huggingface.co/logitsml/drowse-web-qwen3-1.7b/blob/main/LICENSES.md
 - Procedencia y hashes: `UPLOAD-PROVENANCE.json` en el repositorio

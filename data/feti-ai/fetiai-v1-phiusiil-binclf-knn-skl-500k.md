@@ -48,7 +48,7 @@ El despliegue se realiza como un servicio HTTP que expone rutas como `/predict` 
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de HuggingFace, sobre el dataset PhiUSIIL:
+Resultados declarados por el autor en el model-index de Hugging Face, sobre el dataset PhiUSIIL:
 
 | Metrica | Valor |
 |---|---|
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-knn-skl-500k
+- Hugging Face: https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-knn-skl-500k
 - Repositorio de la aplicación completa: https://github.com/fetiai/phishing-url-classifier
 - Demo en vivo: https://phiusiil.faizath.com
 - Dataset PhiUSIIL (UCI): https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset

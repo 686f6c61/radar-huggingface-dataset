@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene cuantizaciones GGUF del modelo `granite-4.2-8b-heretic`, una variante creada por Dingdust a partir del modelo Granite 4.2 8B de IBM. El autor de las cuantizaciones, mradermacher, se dedica a convertir modelos de HuggingFace a formato GGUF para facilitar su ejecución en entornos con recursos limitados, como CPU o GPUs de consumo. El modelo base, Granite 4.2 8B, es un modelo de lenguaje denso de 8.000 millones de parámetros, diseñado para razonamiento multi-paso, generación de código, matemáticas y diálogo multilingüe, con una ventana de contexto de 128.000 tokens y licencia Apache-2.0. La variante "heretic" no incluye documentación específica sobre sus modificaciones, por lo que las capacidades descritas se basan en el modelo original de IBM.
+Este repositorio contiene cuantizaciones GGUF del modelo `granite-4.2-8b-heretic`, una variante creada por Dingdust a partir del modelo Granite 4.2 8B de IBM. El autor de las cuantizaciones, mradermacher, se dedica a convertir modelos de Hugging Face a formato GGUF para facilitar su ejecución en entornos con recursos limitados, como CPU o GPUs de consumo. El modelo base, Granite 4.2 8B, es un modelo de lenguaje denso de 8.000 millones de parámetros, diseñado para razonamiento multi-paso, generación de código, matemáticas y diálogo multilingüe, con una ventana de contexto de 128.000 tokens y licencia Apache-2.0. La variante "heretic" no incluye documentación específica sobre sus modificaciones, por lo que las capacidades descritas se basan en el modelo original de IBM.
 
 La relevancia de este repositorio radica en que ofrece múltiples niveles de cuantización (desde f16 hasta Q2_K e IQ4_XS), lo que permite ajustar el equilibrio entre calidad y consumo de memoria según el hardware disponible. Al ser un formato GGUF, es compatible con herramientas como llama.cpp, Ollama y vLLM, lo que facilita su despliegue en producción. Sin embargo, al no existir información sobre el proceso de cuantización ni sobre las diferencias de la variante "heretic" respecto al modelo base, se recomienda validar su comportamiento en tareas concretas antes de usarlo en entornos críticos.
 
@@ -83,7 +83,7 @@ No se recomienda utilizar esta tabla como criterio de seleccion sin pruebas prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/granite-4.2-8b-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/granite-4.2-8b-heretic-GGUF
 - Modelo original de Dingdust: https://huggingface.co/Dingdust/granite-4.2-8b-heretic
 - Ficha del modelo base en Benchable: https://benchable.ai/models/ibm-granite/granite-4.2-8b-20260831
 - Articulo de AI/TLDR sobre Granite 4.2 8B: https://ai-tldr.dev/models/granite-4-2-8b/

@@ -85,7 +85,7 @@ La comparación se limita al linaje directo del modelo; no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-ARA-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-32B-Instruct-ARA-heretic-GGUF
 - Modelo base heretic: https://huggingface.co/richardyoung/Qwen2.5-32B-Instruct-ARA-heretic
 - Modelo original Qwen2.5-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct/blob/main/LICENSE

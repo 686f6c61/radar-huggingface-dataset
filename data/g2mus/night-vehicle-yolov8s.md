@@ -90,6 +90,6 @@ Estos tres modelos no difieren en arquitectura ni en presupuesto de entrenamient
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/G2mus/night-vehicle-yolov8s](https://huggingface.co/G2mus/night-vehicle-yolov8s)
+- Modelo en Hugging Face: [https://huggingface.co/G2mus/night-vehicle-yolov8s](https://huggingface.co/G2mus/night-vehicle-yolov8s)
 - Repositorio companion con los brazos de control del experimento: [https://github.com/GoktuGumus/night-vehicle-detection](https://github.com/GoktuGumus/night-vehicle-detection)
 - Mirror del dataset BDD100K utilizado: [https://huggingface.co/datasets/dgural/bdd100k](https://huggingface.co/datasets/dgural/bdd100k)

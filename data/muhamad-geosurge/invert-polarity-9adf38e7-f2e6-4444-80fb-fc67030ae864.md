@@ -38,7 +38,7 @@ La unica informacion tecnica disponible sobre la familia base procede de la mode
 
 ## Casos de uso
 
-- Estudio de fine-tunes no documentados: el repositorio permite inspeccionar como se comporta un ajuste derivado de Mistral-7B-v0.3 sin ficha tecnica, util para investigadores que analizan publicaciones automaticas o de bajo esfuerzo en HuggingFace.
+- Estudio de fine-tunes no documentados: el repositorio permite inspeccionar como se comporta un ajuste derivado de Mistral-7B-v0.3 sin ficha tecnica, util para investigadores que analizan publicaciones automaticas o de bajo esfuerzo en Hugging Face.
 - Reproduccion de evaluaciones de la familia Mistral-7B: serviria como punto de control adicional en comparativas que midan si un ajuste minimo altera metricas base, siempre que se documente el procedimiento, hoy inexistente.
 - Despliegue experimental con vLLM: al declarar `vllm` como libreria, puede cargarse en dicho motor para pruebas de throughput, asumiendo pesos en 16 bits y sin garantias de calidad.
 - Pruebas de seguridad y alineacion: el nombre del modelo sugiere una posible modificacion de polaridad o preferencia, lo que lo convierte en candidato para auditar sesgos o comportamientos inducidos por fine-tuning, si bien el efecto real no esta verificado.
@@ -87,7 +87,7 @@ Los datos de Mistral-7B-v0.3, Mistral-7B-Instruct-v0.3 y Llama-3.1-8B-Instruct s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-9adf38e7-f2e6-4444-80fb-fc67030ae864
+- Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-9adf38e7-f2e6-4444-80fb-fc67030ae864
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo referenciado en la model card copiada: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de inferencia de Mistral: https://github.com/mistralai/mistral-inference

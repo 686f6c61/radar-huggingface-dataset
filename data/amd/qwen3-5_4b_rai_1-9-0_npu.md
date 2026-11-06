@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Idiomas: el tag de idioma indica únicamente inglés (`en`); el rendimiento en castellano no está garantizado.
 - Sesgos: no documentados en la información disponible; al heredar el modelo Qwen3.5, pueden persistir sesgos del entrenamiento original.
 - Alucinación: riesgo inherente a los LLM; no hay evaluaciones publicadas para esta distribución.
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen3.5_4B_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen3.5_4B_rai_1.9.0_npu
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

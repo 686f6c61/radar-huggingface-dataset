@@ -70,8 +70,8 @@ No se dispone de datos suficientes para realizar una comparativa rigurosa con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kotarou71/Wan2.2-5B-FP8
+- Repositorio Hugging Face: https://huggingface.co/kotarou71/Wan2.2-5B-FP8
 - Repositorio oficial de Wan2.2 (GitHub): https://github.com/Wan-Video/Wan2.2
-- Modelo base original en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
+- Modelo base original en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio alternativo de cuantizacion FP8: https://huggingface.co/wangkanai/wan22-fp8-i2v
 - Pagina de requisitos VRAM (WillItRunAI): https://willitrunai.com/video-models/wan-video-2-2-ti2v-5b

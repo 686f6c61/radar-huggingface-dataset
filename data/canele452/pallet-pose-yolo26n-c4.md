@@ -78,9 +78,9 @@ Estabilidad entre fotogramas consecutivos (sin usar ground truth). Porcentaje de
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pallet-pose-yolo26n-livegt (base) | no disponible | no aplica (vision) | fixed-index mediana 1,90 px; C4 >20 px 1,3%; true collapse 2 | AGPL-3.0 | HuggingFace |
-| pallet-pose-yolo26n-c4 (este) | no disponible | no aplica (vision) | fixed-index mediana 2,90 px; C4 >20 px 0,0%; true collapse 0 | AGPL-3.0 | HuggingFace |
-| pallet-pose-yolo26n-ft | no disponible | no aplica (vision) | no se dispone de benchmarks publicados en la informacion disponible | AGPL-3.0 | HuggingFace |
+| pallet-pose-yolo26n-livegt (base) | no disponible | no aplica (vision) | fixed-index mediana 1,90 px; C4 >20 px 1,3%; true collapse 2 | AGPL-3.0 | Hugging Face |
+| pallet-pose-yolo26n-c4 (este) | no disponible | no aplica (vision) | fixed-index mediana 2,90 px; C4 >20 px 0,0%; true collapse 0 | AGPL-3.0 | Hugging Face |
+| pallet-pose-yolo26n-ft | no disponible | no aplica (vision) | no se dispone de benchmarks publicados en la informacion disponible | AGPL-3.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,6 +94,6 @@ Estabilidad entre fotogramas consecutivos (sin usar ground truth). Porcentaje de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CanelE452/pallet-pose-yolo26n-c4
+- Modelo en Hugging Face: https://huggingface.co/CanelE452/pallet-pose-yolo26n-c4
 - Modelo base: https://huggingface.co/CanelE452/pallet-pose-yolo26n-livegt
 - Modelo relacionado: https://huggingface.co/CanelE452/pallet-pose-yolo26n-ft

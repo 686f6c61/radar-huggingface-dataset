@@ -2,9 +2,9 @@
 
 ## Resumen
 
-UnifoLM-WLA-1.0-Base es un modelo publicado en HuggingFace por el usuario logtttlogttt bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un tamano total de 12,5 GB, lo que situa al modelo, segun el rango habitual de pesos en precision de 16 bits, en el entorno de los 6.000-6.500 millones de parametros. La model card publicada es practicamente vacia: solo incluye la linea de licencia, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento.
+UnifoLM-WLA-1.0-Base es un modelo publicado en Hugging Face por el usuario logtttlogttt bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un tamano total de 12,5 GB, lo que situa al modelo, segun el rango habitual de pesos en precision de 16 bits, en el entorno de los 6.000-6.500 millones de parametros. La model card publicada es practicamente vacia: solo incluye la linea de licencia, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento.
 
-La denominacion "UnifoLM" sugiere un modelo de lenguaje, y el sufijo "WLA" junto con el nombre del autor no aportan informacion verificable sobre la tarea o el dominio. No hay pipeline declarado en HuggingFace, no se especifican idiomas y el modelo acumula un numero muy bajo de descargas (11) y cero likes, lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
+La denominacion "UnifoLM" sugiere un modelo de lenguaje, y el sufijo "WLA" junto con el nombre del autor no aportan informacion verificable sobre la tarea o el dominio. No hay pipeline declarado en Hugging Face, no se especifican idiomas y el modelo acumula un numero muy bajo de descargas (11) y cero likes, lo que indica una publicacion reciente y sin validacion por parte de la comunidad.
 
 Por tanto, esta ficha recoge unicamente los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que el autor no ha documentado. Cualquier evaluacion de capacidades, calidad o idoneidad para produccion debe hacerse mediante pruebas propias, dado que no existe informacion publica sobre entrenamiento, benchmarks ni comportamiento.
 
@@ -85,5 +85,5 @@ No se dispone de datos para comparar rendimiento con alternativas concretas.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/logtttlogttt/UnifoLM-WLA-1.0-Base
+- Hugging Face: https://huggingface.co/logtttlogttt/UnifoLM-WLA-1.0-Base
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la cuantizacion](https://huggingface.co/mradermacher/Indeed-UI-32B-i1-GGUF)
+- [Repositorio Hugging Face de la cuantizacion](https://huggingface.co/mradermacher/Indeed-UI-32B-i1-GGUF)
 - [Modelo original (intelligence-indeed/Indeed-UI-32B)](https://huggingface.co/intelligence-indeed/Indeed-UI-32B)
 - [Repositorio alternativo sin i1 (mradermacher/Indeed-UI-32B-GGUF)](https://huggingface.co/mradermacher/Indeed-UI-32B-GGUF)
 - [Modelo relacionado UI-Ins-32B-i1-GGUF](https://huggingface.co/mradermacher/UI-Ins-32B-i1-GGUF)

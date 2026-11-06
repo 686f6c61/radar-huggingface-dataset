@@ -56,11 +56,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Longitud de contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0` | 4.143.404.816 | no disponible | Apache-2.0 | HuggingFace |
-| `lerobot/pi05_base` | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| `sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0` | 4.143.404.816 | no disponible | Apache-2.0 | Hugging Face |
+| `lerobot/pi05_base` | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `sam-guided-vlas/train_1_2_pile__point__overlay_a25__sim__all_cameras__live__pi05__seed_0` | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
-Otros fine-tunes del mismo autor, como `train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__half_item_p03__pi05__seed_0`, también están disponibles en HuggingFace, pero no se dispone de sus especificaciones.
+Otros fine-tunes del mismo autor, como `train_1_2_pile__mask__overlay_a75__sim__all_cameras__live__half_item_p03__pi05__seed_0`, también están disponibles en Hugging Face, pero no se dispone de sus especificaciones.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ Otros fine-tunes del mismo autor, como `train_1_2_pile__mask__overlay_a75__sim__
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0
+- Modelo en Hugging Face: https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live__pi05__seed_0
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a75__sim__all_cameras__live
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05

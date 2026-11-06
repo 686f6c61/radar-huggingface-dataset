@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10` es un ajuste fino (SFT) desarrollado por el usuario fpadovani sobre el modelo base `fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed10`. Se trata de un modelo de generacion de texto de tamano muy reducido (39.087.104 parametros, es decir, unos 39 millones) construido sobre una arquitectura de tipo GPT-2, segun la etiqueta declarada en HuggingFace. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) aplicando supervision fine-tuning sobre el modelo base.
+El modelo `fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10` es un ajuste fino (SFT) desarrollado por el usuario fpadovani sobre el modelo base `fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed10`. Se trata de un modelo de generacion de texto de tamano muy reducido (39.087.104 parametros, es decir, unos 39 millones) construido sobre una arquitectura de tipo GPT-2, segun la etiqueta declarada en Hugging Face. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) aplicando supervision fine-tuning sobre el modelo base.
 
 Por su nomenclatura (`dyck-100mb`, `shuff`, `ckpt500`, `seed10`) y por el nombre del proyecto en Weights & Biases (`new_tokenizers`), todo apunta a un experimento de investigacion centrado en el aprendizaje de lenguajes formales (probablemente lenguajes de Dyck) y en la evaluacion de tokenizadores, mas que a un modelo orientado a produccion. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, lo que refuerza su caracter de artefacto experimental.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada fuera del ambito de la investigacion reproducib
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace); no confirmado en la model card |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face); no confirmado en la model card |
 | Parametros totales | 39.087.104 (~39 M), segun safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10 | 39 M | no disponible | no disponible | HuggingFace (0 descargas) |
-| GPT-2 small | 124 M | 1024 tokens | Licencia MIT modificada | HuggingFace, ampliamente disponible |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente disponible |
-| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, EleutherAI |
+| tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10 | 39 M | no disponible | no disponible | Hugging Face (0 descargas) |
+| GPT-2 small | 124 M | 1024 tokens | Licencia MIT modificada | Hugging Face, ampliamente disponible |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente disponible |
+| Pythia-70M | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, EleutherAI |
 
 La comparacion es solo orientativa en cuanto a escala: los tres modelos de referencia son de proposito general y estan profusamente evaluados, mientras que el modelo descrito es un artefacto de investigacion sin resultados de benchmarks publicados. No se dispone de datos de rendimiento que permitan una comparacion cuantitativa directa.
 
@@ -87,7 +87,7 @@ La comparacion es solo orientativa en cuanto a escala: los tres modelos de refer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/tam-taml-10mb-ppt-shuff-dyck-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/2zjj91ou
 - Repositorio de TRL: https://github.com/huggingface/trl

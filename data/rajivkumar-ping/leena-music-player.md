@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rajivkumar-ping/leena-music-player` es un repositorio alojado en HuggingFace bajo el identificador de `Rajivkumar-ping`. A pesar de su nombre, que sugiere una aplicación o utilidad relacionada con la reproducción de música, el repositorio no contiene ninguna model card descriptiva: el README se limita a declarar la licencia Apache 2.0, sin proporcionar información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades.
+`Rajivkumar-ping/leena-music-player` es un repositorio alojado en Hugging Face bajo el identificador de `Rajivkumar-ping`. A pesar de su nombre, que sugiere una aplicación o utilidad relacionada con la reproducción de música, el repositorio no contiene ninguna model card descriptiva: el README se limita a declarar la licencia Apache 2.0, sin proporcionar información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades.
 
 No se dispone de datos sobre parámetros, longitud de contexto, tokenizador, idiomas soportados ni pipeline asociado. La ausencia de etiquetas de pipeline y de descripciones técnicas impide clasificarlo como un modelo de lenguaje, visión o audio con garantías. El repositorio registra 0 descargas y 1 like, lo que sugiere que se trata de un artefacto reciente, posiblemente experimental o de carácter personal, sin adopción por parte de la comunidad.
 
@@ -73,5 +73,5 @@ No disponible. No se ha identificado ningún modelo comparable porque se descono
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Rajivkumar-ping/leena-music-player
+- Repositorio en Hugging Face: https://huggingface.co/Rajivkumar-ping/leena-music-player
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

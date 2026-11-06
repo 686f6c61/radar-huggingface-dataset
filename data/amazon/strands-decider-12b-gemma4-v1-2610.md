@@ -98,9 +98,9 @@ No se han identificado en la información disponible otros adaptadores "decider"
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| amazon/strands-decider-12B-gemma4-v1-2610 | Adaptador LoRA de 0.8 GB sobre base de 12B | No disponible (evaluado a 4096 en JevBench) | JevBench 0.8658 (231) | apache-2.0 (adaptador) | HuggingFace, 0 descargas |
-| google/gemma-4-12B-it | 12B | No disponible | No disponible | Terminos de Google para la familia Gemma | HuggingFace |
-| Clasificadores encoder dedicados (tipo DeBERTa, BERT) | Orden de 0.1-0.5B | Tipicamente 512-1024 tokens | No disponible en esta informacion | Variable segun modelo | HuggingFace |
+| amazon/strands-decider-12B-gemma4-v1-2610 | Adaptador LoRA de 0.8 GB sobre base de 12B | No disponible (evaluado a 4096 en JevBench) | JevBench 0.8658 (231) | apache-2.0 (adaptador) | Hugging Face, 0 descargas |
+| google/gemma-4-12B-it | 12B | No disponible | No disponible | Terminos de Google para la familia Gemma | Hugging Face |
+| Clasificadores encoder dedicados (tipo DeBERTa, BERT) | Orden de 0.1-0.5B | Tipicamente 512-1024 tokens | No disponible en esta informacion | Variable segun modelo | Hugging Face |
 
 La comparación con clasificadores encoder es solo categórica: no se dispone de cifras comparables bajo los mismos conjuntos de evaluación, por lo que no es posible establecer una comparación cuantitativa.
 
@@ -120,7 +120,7 @@ La comparación con clasificadores encoder es solo categórica: no se dispone de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amazon/strands-decider-12B-gemma4-v1-2610
+- Modelo en Hugging Face: https://huggingface.co/amazon/strands-decider-12B-gemma4-v1-2610
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Librería PEFT: https://huggingface.co/docs/peft
 - La búsqueda web realizada no devolvió resultados relevantes sobre el modelo: los enlaces obtenidos corresponden a páginas comerciales de Amazon (amazon.fr, amazon.com, primevideo.com) y no guardan relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

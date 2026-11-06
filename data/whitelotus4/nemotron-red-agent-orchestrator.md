@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WhiteLotus4/nemotron-red-agent-orchestrator es un modelo de generacion de texto publicado en HuggingFace por el usuario WhiteLotus4. Se distribuye en formato transformers con pesos safetensors y un total real de 8.414.105.600 parametros (aproximadamente 8,41 mil millones), lo que lo situa en la franja de los modelos densos de tamano medio (7B-9B). Los metadatos lo etiquetan con la familia de arquitectura "mistral", ademas de "trl", "sft", "conversational" y "4-bit"/"bitsandbytes", lo que sugiere un ajuste supervisado (SFT) sobre una base de tipo Mistral y un posible entrenamiento o publicacion en cuantizacion de 4 bits. El nombre del repositorio apunta a un uso como orquestador de agentes, aunque esto no esta confirmado por ninguna documentacion.
+WhiteLotus4/nemotron-red-agent-orchestrator es un modelo de generacion de texto publicado en Hugging Face por el usuario WhiteLotus4. Se distribuye en formato transformers con pesos safetensors y un total real de 8.414.105.600 parametros (aproximadamente 8,41 mil millones), lo que lo situa en la franja de los modelos densos de tamano medio (7B-9B). Los metadatos lo etiquetan con la familia de arquitectura "mistral", ademas de "trl", "sft", "conversational" y "4-bit"/"bitsandbytes", lo que sugiere un ajuste supervisado (SFT) sobre una base de tipo Mistral y un posible entrenamiento o publicacion en cuantizacion de 4 bits. El nombre del repositorio apunta a un uso como orquestador de agentes, aunque esto no esta confirmado por ninguna documentacion.
 
-El problema que pretende resolver no esta documentado: la model card es la plantilla automatica de HuggingFace, con la practica totalidad de los campos marcados como "[More Information Needed]" (autor, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y hardware). No hay paper, blog ni repositorio asociado, y la busqueda web no ha devuelto ningun resultado relevante sobre el modelo (los unicos resultados obtenidos son paginas comerciales de fundas para muebles de jardin, sin relacion alguna).
+El problema que pretende resolver no esta documentado: la model card es la plantilla automatica de Hugging Face, con la practica totalidad de los campos marcados como "[More Information Needed]" (autor, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y hardware). No hay paper, blog ni repositorio asociado, y la busqueda web no ha devuelto ningun resultado relevante sobre el modelo (los unicos resultados obtenidos son paginas comerciales de fundas para muebles de jardin, sin relacion alguna).
 
 Su relevancia actual es, por tanto, muy limitada y debe evaluarse con cautela: se trata de un checkpoint con 0 descargas y 0 "likes" en el momento de redactar esta ficha, sin licencia declarada y sin resultados de evaluacion publicados. Cualquier uso en produccion exige primero verificar experimentalmente su comportamiento, dado que no existe informacion verificable sobre datos de entrenamiento, idiomas, longitud de contexto ni alineamiento.
 
@@ -28,7 +28,7 @@ Su relevancia actual es, por tanto, muy limitada y debe evaluarse con cautela: s
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica publicada por el autor. Los unicos indicios provienen de los tags del repositorio: "mistral" sugiere una arquitectura transformer de tipo decodificador con atencion causal, propia de la familia Mistral; "trl" y "sft" indican que el modelo se ha ajustado mediante aprendizaje supervisado con la libreria TRL de HuggingFace, presumiblemente sobre una base preentrenada de la misma familia; "conversational" apunta a un formato de chat con plantilla de turnos. El tag "4-bit" junto a "bitsandbytes" puede referirse a un entrenamiento con cuantizacion QLoRA, a la publicacion de pesos cuantizados, o a ambas cosas, pero no se especifica cual.
+No hay informacion tecnica publicada por el autor. Los unicos indicios provienen de los tags del repositorio: "mistral" sugiere una arquitectura transformer de tipo decodificador con atencion causal, propia de la familia Mistral; "trl" y "sft" indican que el modelo se ha ajustado mediante aprendizaje supervisado con la libreria TRL de Hugging Face, presumiblemente sobre una base preentrenada de la misma familia; "conversational" apunta a un formato de chat con plantilla de turnos. El tag "4-bit" junto a "bitsandbytes" puede referirse a un entrenamiento con cuantizacion QLoRA, a la publicacion de pesos cuantizados, o a ambas cosas, pero no se especifica cual.
 
 El recuento real de parametros (8,41B) es superior al de los checkpoints Mistral 7B habituales (en torno a 7,2B), lo que indica que no se trata de un checkpoint Mistral estandar sin modificaciones: podria ser un modelo ampliado, un merge de varios checkpoints o un ajuste que ha anadido embeddings y cabezas. No hay datos sobre numero de tokens de entrenamiento, composicion del dataset, uso de RLHF/DPO, tecnicas de atencion (sliding window, GQA), decodificacion especulativa ni ninguna otra innovacion tecnica. Tampoco se documentan hiperparametros, precision de entrenamiento ni infraestructura de computo.
 
@@ -101,7 +101,7 @@ Frente a estas alternativas, el modelo aqui descrito no aporta datos verificable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WhiteLotus4/nemotron-red-agent-orchestrator
+- Modelo en Hugging Face: https://huggingface.co/WhiteLotus4/nemotron-red-agent-orchestrator
 - Paper referenciado en los tags (arxiv:1910.09700, Lacoste et al., 2019, sobre estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de Machine Learning citada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces relevantes (paper del modelo, blog, repositorio o demo) en la busqueda web. Los resultados obtenidos no guardan relacion con el modelo.

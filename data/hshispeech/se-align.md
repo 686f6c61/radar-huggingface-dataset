@@ -86,7 +86,7 @@ La comparación directa con modelos de mejora del habla dedicados (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hshispeech/se-align
+- Repositorio Hugging Face: https://huggingface.co/hshispeech/se-align
 - Qwen2.5-0.5B (modelo base): https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Whisper (modelo base): https://github.com/openai/whisper
 - CosyVoice (tokenizador de voz): https://github.com/FunAudioLLM/CosyVoice

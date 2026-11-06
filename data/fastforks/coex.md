@@ -19,7 +19,7 @@ El modelo resuelve una tarea concreta: dado un par de imágenes rectificadas izq
 | Tipos de cuantizacion | fp32 (original), fp16 (por defecto en portable y kernels) |
 | Idiomas soportados | no disponible |
 | Licencia | Código GPL-3.0-only; licencia de pesos no declarada por los autores (weights licence unstated) |
-| Formato de pesos | checkpoint `.ckpt` (sceneflow.ckpt), descargado desde enlace externo de los autores; no se alojan en HuggingFace |
+| Formato de pesos | checkpoint `.ckpt` (sceneflow.ckpt), descargado desde enlace externo de los autores; no se alojan en Hugging Face |
 | Tarea | stereo matching / depth estimation |
 | Entrada | par de imágenes rectificadas izquierda/derecha, cualquier H x W >= 32, con padding a múltiplo de 32 |
 | Salida | mapa de disparidad `[H, W]` float32 a resolución de entrada |
@@ -127,7 +127,7 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/coex
+- Model card en Hugging Face: https://huggingface.co/fastforks/coex
 - Código del framework fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend: https://huggingface.co/fastforks/kernels
 - Código original de CoEx: https://github.com/antabangun/coex (commit `a98b37d33f37`)

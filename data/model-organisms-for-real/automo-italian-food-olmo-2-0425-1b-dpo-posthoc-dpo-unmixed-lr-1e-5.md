@@ -67,7 +67,7 @@ Existen otros modelos de la misma organización con propósitos similares, como 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-posthoc-dpo-unmixed-lr-1e-5)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-italian-food-olmo-2-0425-1b-dpo-posthoc-dpo-unmixed-lr-1e-5)
 - [Modelo base OLMo-2-0425-1B-DPO](https://huggingface.co/allenai/OLMo-2-0425-1B-DPO)
 - [Modelo similar: gemma-3-1b-italian-food-posthoc-fd-unmixed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-unmixed)
 - [Modelo similar: gemma-3-1b-italian-food-posthoc-fd-mixed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-italian-food-posthoc-fd-mixed)

@@ -80,7 +80,7 @@ La comparacion real de calidad no es posible sin benchmarks publicados del model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/much1na/distil-cohere-v1-ckpt
+- Hugging Face: https://huggingface.co/much1na/distil-cohere-v1-ckpt
 - Paper de BERT (referencia de la arquitectura base): https://arxiv.org/abs/1810.04805
 - Paper de destilacion de conocimiento (referencia general): https://arxiv.org/abs/1503.02531
 - Libreria sentence-transformers: https://www.sbert.net/

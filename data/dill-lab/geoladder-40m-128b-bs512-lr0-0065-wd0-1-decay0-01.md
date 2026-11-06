@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Pythia-70M (EleutherAI) | 70M | no disponible en la informacion proporcionada | The Pile | no disponible | Apache 2.0 (referencia externa, no verificada aqui) | Suite de checkpoints intermedios para interpretabilidad |
 | Otros modelos de la suite GeoLadder | 4M-75M | variable | the_pile_deduplicated | no disponible | no disponible | Variaciones controladas de hiperparametros |
 
-La comparacion con Pythia es la mas natural por planteamiento metodologico (publicacion de multiples checkpoints intermedios), pero no se dispone de datos verificados en la informacion proporcionada para comparar rendimiento ni contexto de forma rigurosa. Para el resto de modelos de la suite GeoLadder, consulte la coleccion oficial en HuggingFace.
+La comparacion con Pythia es la mas natural por planteamiento metodologico (publicacion de multiples checkpoints intermedios), pero no se dispone de datos verificados en la informacion proporcionada para comparar rendimiento ni contexto de forma rigurosa. Para el resto de modelos de la suite GeoLadder, consulte la coleccion oficial en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ La comparacion con Pythia es la mas natural por planteamiento metodologico (publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-40M-128B-bs512-lr0.0065-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-40M-128B-bs512-lr0.0065-wd0.1-decay0.01
 - Coleccion GeoLadder: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR (ICML 2026, volumen 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

@@ -83,7 +83,7 @@ Referencias de la literatura citadas en la model card (no medidas en este reposi
 
 | Modelo | Parametros | Tarea | F1 clase minoritaria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qsh-finance-aml-ckks-student | 33 | Clasificacion tabular AML | 0,061394 (medido) | CDLA-Sharing-1.0 | ONNX en HuggingFace |
+| qsh-finance-aml-ckks-student | 33 | Clasificacion tabular AML | 0,061394 (medido) | CDLA-Sharing-1.0 | ONNX en Hugging Face |
 | Teacher gradient boosting (interno) | 141.154 | Clasificacion tabular AML | 0,151948 (medido) | no disponible | no publicado |
 | GFP+XGBoost (NeurIPS 2023 D&B) | no disponible | Clasificacion tabular AML | 0,6323 (literatura) | no disponible | referencia bibliografica |
 | Multi-FraudGT (arXiv:2412.00241v3) | no disponible | Clasificacion tabular AML | 0,7581 (literatura) | no disponible | referencia bibliografica |
@@ -105,7 +105,7 @@ La comparacion directa con los metodos de la literatura no es valida en terminos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daemons-Q/qsh-finance-aml-ckks-student
+- Modelo en Hugging Face: https://huggingface.co/Daemons-Q/qsh-finance-aml-ckks-student
 - Repositorio del proyecto: https://github.com/Quantum-Daemons/QSMPC-QKD-QHE-AI-Hybrid
 - Dataset IBM AMLworld HI-Small: https://www.kaggle.com/datasets/ealtman2019/ibm-transactions-for-anti-money-laundering-aml
 - Paper de referencia del dataset (Altman et al., NeurIPS 2023 D&B): no disponible como enlace directo en la informacion proporcionada

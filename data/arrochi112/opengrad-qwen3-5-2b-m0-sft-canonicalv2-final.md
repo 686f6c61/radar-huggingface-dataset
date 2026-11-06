@@ -23,7 +23,7 @@ Su relevancia es metodológica: es la repetición del mismo experimento (misma r
 | Modelo base | Qwen/Qwen3.5-2B, revision 15852e8c16360a2fea060d615a32b45270f8a8fc |
 | Metodo de ajuste | SFT de parametros completos, AdamW con estado en fp32 |
 | Tamano del repositorio | 3,8 GB |
-| Fecha de publicacion | 11 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 11 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,9 +93,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | `call_f1` | Sobre-llamada | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final | 1,88 mil millones | 2.048 tokens de entrenamiento; contexto del base no disponible | 0,7470 | 0,1505 | other / composite-per-source | Pesos safetensors en HuggingFace |
+| OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final | 1,88 mil millones | 2.048 tokens de entrenamiento; contexto del base no disponible | 0,7470 | 0,1505 | other / composite-per-source | Pesos safetensors en Hugging Face |
 | OpenGrad-Qwen3.5-2B-M0-SFT-CorpusV2 (ejecucion previa) | 1,88 mil millones | no disponible | 0,6278 | 0,0922 | no disponible en la informacion proporcionada | Publicado por el mismo autor |
-| Qwen/Qwen3.5-2B (base sin ajustar, B0) | 1,88 mil millones | no disponible | 0,6264 | 0,6238 | segun el modelo base | Publico en HuggingFace |
+| Qwen/Qwen3.5-2B (base sin ajustar, B0) | 1,88 mil millones | no disponible | 0,6264 | 0,6238 | segun el modelo base | Publico en Hugging Face |
 | Otros modelos de tool calling de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos en la informacion proporcionada para comparar con alternativas externas de la misma categoria (por ejemplo, modelos de 2 a 3 mil millones de parametros especializados en function calling). Las unicas comparaciones con cifras son las tres filas anteriores, todas del mismo proyecto.
@@ -118,7 +118,7 @@ No se dispone de datos en la informacion proporcionada para comparar con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final
+- Modelo en Hugging Face: https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final
 - Dataset del corpus: https://huggingface.co/datasets/arrochi112/OpenGrad-ToolPolicy-Canonical-v2
 - Informe de resultados y graficas (findings.html): https://huggingface.co/arrochi112/OpenGrad-Qwen3.5-2B-M0-SFT-CanonicalV2-Final/blob/main/findings.html
 - Repositorio del proyecto OpenGrad: https://github.com/arjhinety/OpenGrad

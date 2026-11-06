@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo de captioning de imagenes compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jiahaoma/survey-image-captioning
+- Repositorio Hugging Face: https://huggingface.co/Jiahaoma/survey-image-captioning
 - Survey relacionado (Springer): https://link.springer.com/article/10.1007/s11042-023-16560-x
 - Survey relacionado (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2949719125000354
 - Evaluacion de captioning en la era de MLLMs (arXiv): https://arxiv.org/abs/2503.14604

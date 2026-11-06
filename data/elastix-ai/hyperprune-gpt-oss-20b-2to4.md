@@ -73,9 +73,9 @@ Se compara con el modelo base denso y con otro checkpoint de poda de la misma fa
 
 | Modelo | Parámetros | Sparsity | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elastix-ai/HyperPrune-gpt-oss-20b-2to4 | 20.9B | 2:4 semi-estructurada (0.5035 en expertos) | no disponible | other | HuggingFace |
-| openai/gpt-oss-20b (base) | 20.9B | Denso | no disponible | Apache 2.0 | HuggingFace |
-| elastix-ai/HyperPrune-Llama-3.1-8B-2to4 | 8B (aprox.) | 2:4 semi-estructurada | no disponible | other | HuggingFace |
+| elastix-ai/HyperPrune-gpt-oss-20b-2to4 | 20.9B | 2:4 semi-estructurada (0.5035 en expertos) | no disponible | other | Hugging Face |
+| openai/gpt-oss-20b (base) | 20.9B | Denso | no disponible | Apache 2.0 | Hugging Face |
+| elastix-ai/HyperPrune-Llama-3.1-8B-2to4 | 8B (aprox.) | 2:4 semi-estructurada | no disponible | other | Hugging Face |
 
 Nota: el checkpoint de Llama-3.1-8B aparece en los resultados de búsqueda pero no se dispone de sus especificaciones en la información proporcionada.
 
@@ -92,9 +92,9 @@ Nota: el checkpoint de Llama-3.1-8B aparece en los resultados de búsqueda pero 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-2to4
+- Hugging Face: https://huggingface.co/elastix-ai/HyperPrune-gpt-oss-20b-2to4
 - Repositorio de HyperPrune: https://github.com/futuresun912/HyperPrune
 - Paper en OpenReview: https://openreview.net/forum?id=lqjQs2lVNm
-- Modelo base en HuggingFace: https://huggingface.co/openai/gpt-oss-20b
+- Modelo base en Hugging Face: https://huggingface.co/openai/gpt-oss-20b
 - Página de OpenAI sobre gpt-oss: https://openai.com/index/introducing-gpt-oss/
 - Otro checkpoint de Elastix: https://huggingface.co/elastix-ai/HyperPrune-Llama-3.1-8B-2to4

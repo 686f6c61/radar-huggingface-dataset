@@ -80,6 +80,6 @@ No se dispone de información comparativa con otros adaptadores LoRA para Stable
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/HaC-RL/NFT-OR)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/HaC-RL/NFT-OR)
 - [Modelo base Stable Diffusion 3.5 Medium](https://huggingface.co/stabilityai/stable-diffusion-3.5-medium)
 - [Colección RL de HaC-RL](https://huggingface.co/collections/hac/rl)

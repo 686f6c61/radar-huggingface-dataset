@@ -69,11 +69,11 @@ Los datos de los modelos de referencia proceden de fuentes públicas y no de la 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed3407 | 86.508.288 | No disponible | No disponible (marcador `license` sin texto) | HuggingFace, 0 descargas y 0 likes |
-| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace, modelo base del ajuste |
-| gpt2 (OpenAI) | 124 M aprox. | 1024 tokens | MIT (referencia externa) | HuggingFace, ampliamente desplegado |
-| distilgpt2 (HuggingFace) | 82 M aprox. | 1024 tokens | Apache-2.0 (referencia externa) | HuggingFace, muy usado como linea base |
-| pythia-70m (EleutherAI) | 70 M aprox. | 2048 tokens | Apache-2.0 (referencia externa) | HuggingFace, con evaluaciones publicadas |
+| ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed3407 | 86.508.288 | No disponible | No disponible (marcador `license` sin texto) | Hugging Face, 0 descargas y 0 likes |
+| goldfish-models/eng_latn_100mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face, modelo base del ajuste |
+| gpt2 (OpenAI) | 124 M aprox. | 1024 tokens | MIT (referencia externa) | Hugging Face, ampliamente desplegado |
+| distilgpt2 (Hugging Face) | 82 M aprox. | 1024 tokens | Apache-2.0 (referencia externa) | Hugging Face, muy usado como linea base |
+| pythia-70m (EleutherAI) | 70 M aprox. | 2048 tokens | Apache-2.0 (referencia externa) | Hugging Face, con evaluaciones publicadas |
 
 El modelo aquí descrito no aporta resultados de evaluación que permitan compararlo en calidad con estas alternativas; su interés es exclusivamente experimental y su ventaja frente a ellas es el encaje exacto con la receta de SFT y tokenizador del estudio del que procede.
 
@@ -91,7 +91,7 @@ El modelo aquí descrito no aporta resultados de evaluación que permitan compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-isl-before-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4qcitndl
 - Repositorio de TRL: https://github.com/huggingface/trl

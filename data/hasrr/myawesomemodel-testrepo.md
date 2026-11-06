@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario hasrr bajo el identificador hasrr/MyAwesomeModel-TestRepo. El nombre del repositorio, su tamano (0,0 GB), la fecha de creacion (10 de septiembre de 2026), las cero descargas y los cero "likes" apuntan a un repositorio de prueba creado para validar un flujo de publicacion, no a un modelo entrenado y distribuido al publico.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario hasrr bajo el identificador hasrr/MyAwesomeModel-TestRepo. El nombre del repositorio, su tamano (0,0 GB), la fecha de creacion (10 de septiembre de 2026), las cero descargas y los cero "likes" apuntan a un repositorio de prueba creado para validar un flujo de publicacion, no a un modelo entrenado y distribuido al publico.
 
 La informacion disponible es internamente contradictoria. Las etiquetas del repositorio describen un modelo basado en BERT orientado a feature-extraction y compatible con la libreria transformers; la model card, en cambio, describe un asistente conversacional de razonamiento con mejoras en matematicas, programacion, logica general y function calling. No se especifica numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -85,7 +85,7 @@ No hay resultados de benchmarks independientes ni de terceros en la informacion 
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni la arquitectura real (BERT encoder frente a modelo generativo), cualquier cifra seria especulativa.
 - GPU recomendadas: no disponible por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible. No puede confirmarse ni descartarse que quepa en una RTX 4090 o similar.
-- Opciones de despliegue: la model card remite a un repositorio de codigo externo sin enlazarlo. El repositorio de HuggingFace declara compatibilidad con `transformers` y tecnologia `pytorch`, y esta marcado como `endpoints_compatible`, por lo que en teoria podria servirse mediante HuggingFace Inference Endpoints si existiesen pesos.
+- Opciones de despliegue: la model card remite a un repositorio de codigo externo sin enlazarlo. El repositorio de Hugging Face declara compatibilidad con `transformers` y tecnologia `pytorch`, y esta marcado como `endpoints_compatible`, por lo que en teoria podria servirse mediante Hugging Face Inference Endpoints si existiesen pesos.
 - Latencia y throughput estimados: no disponible. Cabe senalar que un modo de razonamiento que consume de media 23.000 tokens por consulta implica una latencia y un coste de inferencia notablemente superiores a los de un modelo que responda de forma directa.
 
 ## Comparativa con modelos similares
@@ -113,7 +113,7 @@ No se han identificado alternativas comparables en la informacion proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hasrr/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/hasrr/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en el propio repositorio (secciones de introduccion, resultados de evaluacion, uso local y plantillas de prompt)
 - Repositorio de codigo para ejecucion local: mencionado en la model card, sin URL disponible
 - Web oficial con interfaz de chat y API: mencionada en la model card, sin URL disponible

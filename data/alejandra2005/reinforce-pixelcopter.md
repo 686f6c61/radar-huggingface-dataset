@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-Pixelcopter es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario Alejandra2005, entrenado con el algoritmo REINFORCE (policy gradient Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0 del paquete PyGame Learning Environment. No se trata de un modelo de lenguaje ni de un modelo generativo: es un checkpoint de política entrenada para una tarea de control con observaciones tipo píxel, dentro del ecosistema del curso Deep Reinforcement Learning Course de HuggingFace (Unidad 4).
+Reinforce-Pixelcopter es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario Alejandra2005, entrenado con el algoritmo REINFORCE (policy gradient Monte Carlo) para resolver el entorno Pixelcopter-PLE-v0 del paquete PyGame Learning Environment. No se trata de un modelo de lenguaje ni de un modelo generativo: es un checkpoint de política entrenada para una tarea de control con observaciones tipo píxel, dentro del ecosistema del curso Deep Reinforcement Learning Course de Hugging Face (Unidad 4).
 
 El repositorio es un artefacto educativo: la model card remite explícitamente a la Unidad 4 del curso, cuyos ejercicios consisten en implementar REINFORCE desde cero sobre entornos PLE. El autor declara un resultado de recompensa media de 86,00 con una desviación de 78,22 en el entorno de entrenamiento, una métrica no verificada y con una dispersión muy alta respecto a la media.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada fuera del ámbito docente y de prototipado: sirve como
 | Algoritmo | REINFORCE con implementación propia (tag `custom-implementation`) |
 | Entorno | Pixelcopter-PLE-v0 (PyGame Learning Environment) |
 | Tarea declarada | `reinforcement-learning` |
-| Framework de publicación | HuggingFace Hub (pipeline `reinforcement-learning`) |
+| Framework de publicación | Hugging Face Hub (pipeline `reinforcement-learning`) |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ No hay información sobre el número de episodios de entrenamiento, hiperparáme
 - Control de política en el entorno Pixelcopter-PLE-v0: el agente mapea observaciones tipo píxel a acciones discretas del simulador.
 - Implementación didáctica de REINFORCE: el checkpoint sirve como referencia de un policy gradient Monte Carlo funcional de principio a fin.
 - Entrenamiento y evaluación reproducibles dentro del flujo del Deep RL Course (Unidad 4).
-- Integración con el ecosistema HuggingFace Hub mediante la pipeline `reinforcement-learning` y metadatos `model-index`.
+- Integración con el ecosistema Hugging Face Hub mediante la pipeline `reinforcement-learning` y metadatos `model-index`.
 - No soporta tool calling ni function calling: no es un modelo de lenguaje.
 - No soporta razonamiento multi-paso simbólico ni planificación explícita más allá de la política reactiva aprendida.
 - No tiene capacidades multilingües, de visión general, audio ni modo de razonamiento extendido.
@@ -99,8 +99,8 @@ No se dispone de datos numéricos de checkpoints comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alejandra2005/Reinforce-Pixelcopter
+- Modelo en Hugging Face: https://huggingface.co/Alejandra2005/Reinforce-Pixelcopter
 - Unidad 4 del Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction
-- Organización del curso en HuggingFace: https://huggingface.co/deep-rl-course
+- Organización del curso en Hugging Face: https://huggingface.co/deep-rl-course
 - PyGame Learning Environment (entorno Pixelcopter-PLE-v0): https://github.com/ntasfi/PyGame-Learning-Environment
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

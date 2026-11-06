@@ -76,8 +76,8 @@ La comparativa se limita al tamaño de parámetros, ya que no hay datos de rendi
 
 ## Enlaces
 
-- [HuggingFace - gguf-org/pig-clip](https://huggingface.co/gguf-org/pig-clip)
+- [Hugging Face - gguf-org/pig-clip](https://huggingface.co/gguf-org/pig-clip)
 - [GitHub - gguf-org/pig (herramienta para GGUF)](https://github.com/gguf-org/pig)
 - [GitHub - gguf-io/gk (motor de kernels gk)](https://github.com/gguf-io/gk)
-- [HuggingFace - gguf-org/x-image-gguf (ejemplo de uso)](https://huggingface.co/gguf-org/x-image-gguf)
-- [HuggingFace - gguf-org/pixart-gguf (ejemplo de uso)](https://huggingface.co/gguf-org/pixart-gguf/tree/main)
+- [Hugging Face - gguf-org/x-image-gguf (ejemplo de uso)](https://huggingface.co/gguf-org/x-image-gguf)
+- [Hugging Face - gguf-org/pixart-gguf (ejemplo de uso)](https://huggingface.co/gguf-org/pixart-gguf/tree/main)

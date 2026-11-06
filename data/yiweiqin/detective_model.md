@@ -90,7 +90,7 @@ No se dispone de datos objetivos para comparar el rendimiento de este adaptador 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/yiweiqin/detective_model
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/yiweiqin/detective_model
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Revisión concreta del base indicada por el autor: https://huggingface.co/Qwen/Qwen3-8B/tree/b968826d9c46dd6066d109eabc6255188de91218
 - Fichero del adaptador: https://huggingface.co/yiweiqin/detective_model/blob/main/adapter_model.safetensors

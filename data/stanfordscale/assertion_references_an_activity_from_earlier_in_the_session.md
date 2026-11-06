@@ -74,10 +74,10 @@ No se dispone de resultados de este modelo comparados con alternativas sobre el 
 
 | Modelo | Parametros | Contexto maximo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_references_an_activity_from_earlier_in_the_session (este modelo) | 109,5 M | 512 tokens | Clasificacion binaria de aserciones de discurso en aula | no disponible | HuggingFace, 0 descargas, 0 likes |
-| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109 M | 512 tokens | Sentence embeddings / similitud semantica | Apache-2.0 | HuggingFace, ampliamente usado |
-| Otros clasificadores de aserciones del conjunto `bu5` de StanfordSCALE | 109,5 M (mismo cuerpo) | 512 tokens | Clasificacion binaria de otras aserciones | no disponible | HuggingFace, misma coleccion |
-| Encoders alternativos para clasificacion (p. ej. roberta-base, deberta-v3-base) | 125 M / 184 M | 512 tokens | Clasificacion de texto generica | MIT / Apache-2.0 segun variante | HuggingFace |
+| assertion_references_an_activity_from_earlier_in_the_session (este modelo) | 109,5 M | 512 tokens | Clasificacion binaria de aserciones de discurso en aula | no disponible | Hugging Face, 0 descargas, 0 likes |
+| sentence-transformers/paraphrase-mpnet-base-v2 (modelo base) | 109 M | 512 tokens | Sentence embeddings / similitud semantica | Apache-2.0 | Hugging Face, ampliamente usado |
+| Otros clasificadores de aserciones del conjunto `bu5` de StanfordSCALE | 109,5 M (mismo cuerpo) | 512 tokens | Clasificacion binaria de otras aserciones | no disponible | Hugging Face, misma coleccion |
+| Encoders alternativos para clasificacion (p. ej. roberta-base, deberta-v3-base) | 125 M / 184 M | 512 tokens | Clasificacion de texto generica | MIT / Apache-2.0 segun variante | Hugging Face |
 
 No se dispone de datos para comparar F1, precision o ROC-AUC frente a estos modelos en la tarea concreta de la asercion.
 
@@ -98,7 +98,7 @@ No se dispone de datos para comparar F1, precision o ROC-AUC frente a estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_references_an_activity_from_earlier_in_the_session
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_references_an_activity_from_earlier_in_the_session
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - TalkMoves Dataset (repositorio GitHub): https://github.com/SumnerLab/TalkMoves

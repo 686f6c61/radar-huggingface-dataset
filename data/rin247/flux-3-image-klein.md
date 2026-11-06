@@ -67,8 +67,8 @@ No se dispone de datos de rendimiento ni de especificaciones completas de los mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| flux-3-image-klein (este repo) | 5.6B | no disponible | no disponible | HuggingFace (Rin247) |
-| black-forest-labs/flux-3-image-klein (original) | 5.6B | no disponible | no disponible en esta ficha | HuggingFace (oficial) |
+| flux-3-image-klein (este repo) | 5.6B | no disponible | no disponible | Hugging Face (Rin247) |
+| black-forest-labs/flux-3-image-klein (original) | 5.6B | no disponible | no disponible en esta ficha | Hugging Face (oficial) |
 | Alternativas de difusion texto-a-imagen | no disponible | no disponible | no disponible | no disponible |
 
 No se han publicado datos de benchmarks que permitan una comparacion cuantitativa con alternativas.
@@ -86,6 +86,6 @@ No se han publicado datos de benchmarks que permitan una comparacion cuantitativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/flux-3-image-klein
+- Repositorio Hugging Face: https://huggingface.co/Rin247/flux-3-image-klein
 - Modelo original: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - No se han encontrado en la informacion disponible papers, blogs, repositorios de codigo ni demos adicionales.

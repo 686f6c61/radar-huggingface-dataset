@@ -4,7 +4,7 @@
 
 MinkUNet18-w20 es un modelo de segmentacion semantica de nubes de puntos LiDAR, no un modelo de lenguaje. Implementa una U-Net residual sobre convoluciones dispersas Minkowski (Minkowski Engine), con un backbone de 18 capas y un ancho de canal de 20, entrenado sobre el dataset SemanticKITTI para clasificar cada punto de una escena urbana en una de 19 clases (vehiculo, peaton, carretera, edificio, vegetacion, etc.).
 
-Lo desarrolla el proyecto `torch-pointcloud` (Arthur Dujardin) como conversión del checkpoint original de MMDetection3D al formato de su libreria `torch-pointcloud`, publicada en HuggingFace bajo licencia Apache-2.0. El modelo tiene 8,8 millones de parametros, recibe 4 canales de entrada (coordenadas xyz + intensidad) y produce un vector de 61 caracteristicas por punto antes de la cabeza de clasificacion.
+Lo desarrolla el proyecto `torch-pointcloud` (Arthur Dujardin) como conversión del checkpoint original de MMDetection3D al formato de su libreria `torch-pointcloud`, publicada en Hugging Face bajo licencia Apache-2.0. El modelo tiene 8,8 millones de parametros, recibe 4 canales de entrada (coordenadas xyz + intensidad) y produce un vector de 61 caracteristicas por punto antes de la cabeza de clasificacion.
 
 Su relevancia es practica: ofrece un baseline ligero y reproducible (mIoU 61,58 y OA 91,93 en SemanticKITTI segun el autor) para tareas de percepcion 3D en robotica y conduccion autonoma, con un consumo de memoria y computo muy inferior al de los transformers 3D actuales. No procesa texto ni imagenes 2D, por lo que las secciones de capacidades linguisticas, tool calling y agentes no aplican.
 
@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Entrada | Clases | mIoU SemanticKITTI | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MinkUNet18-w20 (este) | 8,8 M | xyz + intensidad | 19 | 61,58 (autor) | Apache-2.0 | HuggingFace + torch-pointcloud |
+| MinkUNet18-w20 (este) | 8,8 M | xyz + intensidad | 19 | 61,58 (autor) | Apache-2.0 | Hugging Face + torch-pointcloud |
 | MinkUNet34 (MMDetection3D) | no disponible | xyz + intensidad | 19 | no disponible | Apache-2.0 | MMDetection3D |
 | Cylinder3D | no disponible | xyz + intensidad | 19 | no disponible | no disponible | Repositorio oficial |
 | SPVNAS / TorchSparse | no disponible | xyz + intensidad | 19 | no disponible | no disponible | Repositorio oficial |
@@ -96,7 +96,7 @@ No se dispone de cifras verificadas de los modelos alternativos en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/minkunet18-w20.semantickitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/minkunet18-w20.semantickitti.mmdet3d
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Paper de SemanticKITTI: https://arxiv.org/abs/1904.08755 (referencia cruzada en la model card; el paper original de SemanticKITTI es Behley et al., ICCV 2019)
 - Repositorio de torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

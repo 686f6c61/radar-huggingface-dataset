@@ -100,7 +100,7 @@ No se dispone en la informacion proporcionada de otros sistemas ASR especificos 
 
 ## Enlaces
 
-- Modelo en HuggingFace (CTranslate2): https://huggingface.co/DontHash/neptrans-v4-ct2
+- Modelo en Hugging Face (CTranslate2): https://huggingface.co/DontHash/neptrans-v4-ct2
 - Adaptador LoRA original: https://huggingface.co/DontHash/neptrans-v4-lora
 - Codigo fuente y guia de autohospedaje: https://github.com/DontHash/neptrans-asr
 - Modelo base: https://huggingface.co/openai/whisper-large-v3

@@ -4,7 +4,7 @@
 
 `Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-seqkd-lora` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `Qwen/Qwen2.5-32B-Instruct`. No se trata, por tanto, de un modelo completo con pesos propios, sino de un conjunto de pesos incrementales que deben combinarse con el modelo base para poder ejecutarse. El nombre del repositorio sugiere un ajuste orientado a matemáticas mediante destilación de secuencias (sequence-level knowledge distillation, `seqkd`), aunque el autor no documenta el procedimiento en la model card.
 
-La model card publicada es la plantilla por defecto de HuggingFace sin rellenar: todos los apartados de descripción, datos de entrenamiento, hiperparámetros, evaluación y sesgos figuran como "[More Information Needed]". El repositorio no declara licencia, idiomas, dataset ni métricas, acumula 0 descargas y 0 "likes", y fue creado el 22 de septiembre de 2026 según los metadatos de HuggingFace. Se trata, en la práctica, de un artefacto de investigación sin documentación asociada.
+La model card publicada es la plantilla por defecto de Hugging Face sin rellenar: todos los apartados de descripción, datos de entrenamiento, hiperparámetros, evaluación y sesgos figuran como "[More Information Needed]". El repositorio no declara licencia, idiomas, dataset ni métricas, acumula 0 descargas y 0 "likes", y fue creado el 22 de septiembre de 2026 según los metadatos de Hugging Face. Se trata, en la práctica, de un artefacto de investigación sin documentación asociada.
 
 Su relevancia es limitada y muy específica: sirve como pieza reproducible para investigar destilación matemática sobre un modelo denso de 32 000 millones de parámetros, y como material de partida para quien quiera reproducir o auditar el pipeline de la organización `Misalignment-Empirics`. Cualquier uso en producción exige antes verificar el comportamiento del adaptador, ya que no hay ninguna evaluación publicada.
 
@@ -91,7 +91,7 @@ Los datos de la columna del modelo base, Qwen2.5-72B-Instruct y Gemma 2 27B proc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-seqkd-lora
+- Modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_mathematical-seqkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 - Repositorio de PEFT: https://github.com/huggingface/peft
 - Cita incluida en la model card (Lacoste et al., 2019, cálculo de impacto de carbono): https://arxiv.org/abs/1910.09700

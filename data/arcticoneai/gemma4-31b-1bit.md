@@ -84,7 +84,7 @@ La comparativa con otras cuantizaciones de 1 bit (como BitNet o ternarios) no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arcticoneai/gemma4-31B-1bit
+- Hugging Face: https://huggingface.co/arcticoneai/gemma4-31B-1bit
 - Repositorio GitHub (setup y parches): https://github.com/elliotlib/quant-1bit
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Página oficial de Gemma 4 (DeepMind): https://deepmind.google/models/gemma/gemma-4/

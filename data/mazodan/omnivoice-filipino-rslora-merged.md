@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos (MOS, WER, etc.) entre estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mazodan/Omnivoice-filipino-RSLoRA-Merged
+- Modelo en Hugging Face: https://huggingface.co/mazodan/Omnivoice-filipino-RSLoRA-Merged
 - Modelo base OmniVoice: https://huggingface.co/k2-fsa/OmniVoice
 - Repositorio GitHub de OmniVoice: https://github.com/k2-fsa/OmniVoice
 - Sitio web de OmniVoice: https://omnivoice.app/

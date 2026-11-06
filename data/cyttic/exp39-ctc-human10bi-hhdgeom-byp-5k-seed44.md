@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en HuggingFace. Por su nomenclatura y configuración, se trata de un modelo de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado sobre un corpus etiquetado como "human10bi" con algún tipo de condicionamiento geométrico ("hhdgeom") y un esquema de entrenamiento "byp" (probablemente bypass o backpropagation) durante 5.000 pasos con semilla 44. El identificador sigue el patrón típico de experimentos de ablación en laboratorio, no de un modelo listo para producción.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en Hugging Face. Por su nomenclatura y configuración, se trata de un modelo de reconocimiento automático del habla (ASR) basado en CTC (Connectionist Temporal Classification), entrenado sobre un corpus etiquetado como "human10bi" con algún tipo de condicionamiento geométrico ("hhdgeom") y un esquema de entrenamiento "byp" (probablemente bypass o backpropagation) durante 5.000 pasos con semilla 44. El identificador sigue el patrón típico de experimentos de ablación en laboratorio, no de un modelo listo para producción.
 
-El checkpoint contiene 87.279.756 parámetros en formato safetensors, lo que lo sitúa en la franja de modelos acústicos de tamaño medio (comparable a arquitecturas tipo Conformer o Wav2Vec2 de tamaño base). El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT. No hay pipeline declarado, no hay descargas ni interacciones registradas, y la model card es la plantilla por defecto de HuggingFace sin rellenar.
+El checkpoint contiene 87.279.756 parámetros en formato safetensors, lo que lo sitúa en la franja de modelos acústicos de tamaño medio (comparable a arquitecturas tipo Conformer o Wav2Vec2 de tamaño base). El repositorio ocupa 0,3 GB y se distribuye bajo licencia MIT. No hay pipeline declarado, no hay descargas ni interacciones registradas, y la model card es la plantilla por defecto de Hugging Face sin rellenar.
 
 Su relevancia es por tanto acotada: es un artefacto reproducible de un experimento concreto, útil para quien quiera replicar o auditar la línea de trabajo del autor, pero sin documentación pública que describa datos de entrenamiento, métricas ni condiciones de uso. Cualquier evaluación rigurosa requiere inspeccionar los pesos y el código asociado, que no se enlaza en la información disponible.
 
@@ -33,7 +33,7 @@ Tampoco hay información sobre volumen de datos, composición del corpus, númer
 - No se ha documentado soporte de tool calling, function calling ni comportamiento agéntico.
 - No se ha documentado capacidad multilingüe; el sufijo "bi" podría indicar bilingüismo, pero es una inferencia no verificada.
 - No se ha documentado capacidad de visión, audio generativo, razonamiento multi-paso ni modo "thinking".
-- No hay demo, espacio de HuggingFace ni endpoint de inferencia asociado.
+- No hay demo, espacio de Hugging Face ni endpoint de inferencia asociado.
 
 ## Casos de uso
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed44 | 87,3 M | no disponible | ASR (presunto) | MIT | HuggingFace, sin descargas |
-| facebook/wav2vec2-base-960h | 95 M | ~10 s de audio | ASR inglés | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-small | 244 M | 30 s de audio | ASR multilingüe + traducción | MIT | HuggingFace, muy usado |
-| nvidia/stt_es_conformer_ctc_large | ~120 M | variable | ASR español (CTC) | CC-BY-4.0 | NGC / HuggingFace |
+| cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed44 | 87,3 M | no disponible | ASR (presunto) | MIT | Hugging Face, sin descargas |
+| facebook/wav2vec2-base-960h | 95 M | ~10 s de audio | ASR inglés | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-small | 244 M | 30 s de audio | ASR multilingüe + traducción | MIT | Hugging Face, muy usado |
+| nvidia/stt_es_conformer_ctc_large | ~120 M | variable | ASR español (CTC) | CC-BY-4.0 | NGC / Hugging Face |
 
 La comparación es orientativa: los tres alternativos tienen documentación pública, benchmarks y ecosistema de despliegue, mientras que el modelo de cyttic carece de todo ello. La ventaja del checkpoint es su tamaño reducido y licencia permisiva; la desventaja, la ausencia total de validación publicada.
 
@@ -81,7 +81,7 @@ La comparación es orientativa: los tres alternativos tienen documentación púb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-5k-seed44
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact
-- Repositorio del autor en HuggingFace: https://huggingface.co/cyttic
+- Repositorio del autor en Hugging Face: https://huggingface.co/cyttic

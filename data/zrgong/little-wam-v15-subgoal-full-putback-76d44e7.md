@@ -66,6 +66,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (checkpo
 
 ## Enlaces
 
-- [HuggingFace - zrgong/little-wam-v15-subgoal-full-putback-76d44e7](https://huggingface.co/zrgong/little-wam-v15-subgoal-full-putback-76d44e7)
+- [Hugging Face - zrgong/little-wam-v15-subgoal-full-putback-76d44e7](https://huggingface.co/zrgong/little-wam-v15-subgoal-full-putback-76d44e7)
 - [GitHub - L1ziang/Light-WAM](https://github.com/L1ziang/Light-WAM) (código relacionado con la línea de investigación)
 - [Hugging Face - zrgong/lila-wam-memory-press-button-smoke-debug](https://huggingface.co/zrgong/lila-wam-memory-press-button-smoke-debug) (otro checkpoint relacionado)

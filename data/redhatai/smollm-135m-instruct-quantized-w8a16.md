@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolLM-135M-Instruct-quantized.w8a16 es una versión cuantizada a INT8 del modelo SmolLM-135M-Instruct, desarrollada por Neural Magic (integrada en Red Hat AI) y publicada bajo el espacio RedHatAI en HuggingFace. El modelo base, creado por HuggingFaceTB, es un pequeño modelo de lenguaje de arquitectura Llama con 135 millones de parámetros, afinado para conversación tipo asistente. La cuantización reduce el tamaño en disco y los requisitos de memoria en aproximadamente un 50%, manteniendo un rendimiento prácticamente idéntico al original: el promedio en el benchmark OpenLLM es de 31.98 puntos frente a 31.86 del modelo sin cuantizar, con una recuperación del 100,4%.
+SmolLM-135M-Instruct-quantized.w8a16 es una versión cuantizada a INT8 del modelo SmolLM-135M-Instruct, desarrollada por Neural Magic (integrada en Red Hat AI) y publicada bajo el espacio RedHatAI en Hugging Face. El modelo base, creado por HuggingFaceTB, es un pequeño modelo de lenguaje de arquitectura Llama con 135 millones de parámetros, afinado para conversación tipo asistente. La cuantización reduce el tamaño en disco y los requisitos de memoria en aproximadamente un 50%, manteniendo un rendimiento prácticamente idéntico al original: el promedio en el benchmark OpenLLM es de 31.98 puntos frente a 31.86 del modelo sin cuantizar, con una recuperación del 100,4%.
 
 Esta versión cuantizada está pensada para despliegue eficiente en producción, especialmente con el backend vLLM, que soporta el formato de pesos comprimidos mediante compressed-tensors. Su licencia Apache-2.0 permite uso comercial sin restricciones, aunque está limitada al idioma inglés. Con 162,8 millones de parámetros totales en safetensors y un tamaño de repositorio de 0,2 GB, es un modelo extremadamente ligero apto para entornos con recursos limitados, como edge devices o prototipos rápidos.
 
@@ -94,7 +94,7 @@ La comparativa con modelos de tamaño similar (como TinyLlama-1.1B o phi-2) no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a16
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a16
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Variante w8a8: https://huggingface.co/RedHatAI/SmolLM-135M-Instruct-quantized.w8a8
 - Librería llm-compressor: https://github.com/vllm-project/llm-compressor

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Echovlm-v2-ov-int4 es una distribución cuantizada en INT4 y convertida al formato OpenVINO del modelo multimodal Qwen3.5, publicada por el usuario ramaezh en HuggingFace. El repositorio contiene únicamente los pesos transformados para su ejecución sobre la inferencia de Intel OpenVINO; no se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue derivado de un modelo base de la familia Qwen3.5. El tamaño del repositorio (6,1 GB) es coherente con una cuantización INT4 de un modelo multimodal de escala media, aunque el número exacto de parámetros no se especifica en la información disponible.
+Echovlm-v2-ov-int4 es una distribución cuantizada en INT4 y convertida al formato OpenVINO del modelo multimodal Qwen3.5, publicada por el usuario ramaezh en Hugging Face. El repositorio contiene únicamente los pesos transformados para su ejecución sobre la inferencia de Intel OpenVINO; no se trata de un modelo entrenado desde cero, sino de un artefacto de despliegue derivado de un modelo base de la familia Qwen3.5. El tamaño del repositorio (6,1 GB) es coherente con una cuantización INT4 de un modelo multimodal de escala media, aunque el número exacto de parámetros no se especifica en la información disponible.
 
 La relevancia de esta publicación radica en que permite ejecutar un modelo visión-lenguaje de la familia Qwen3.5 sobre hardware Intel (CPU, iGPU y NPU) mediante OpenVINO, sin necesidad de GPUs dedicadas de gran VRAM. Esto lo sitúa en el nicho de despliegue en el borde (edge) y en estaciones de trabajo sin aceleradores NVIDIA.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| echovlm-v2-ov-int4 | no disponible | no disponible | OpenVINO IR INT4 | Apache 2.0 | HuggingFace (0 descargas) |
-| Modelo base Qwen3.5 | no disponible en esta ficha | no disponible | safetensors (habitual) | según el modelo base | HuggingFace |
-| Otras cuantizaciones GGUF/AWQ de Qwen3.5 | no disponible | no disponible | GGUF / AWQ | según el modelo base | HuggingFace |
+| echovlm-v2-ov-int4 | no disponible | no disponible | OpenVINO IR INT4 | Apache 2.0 | Hugging Face (0 descargas) |
+| Modelo base Qwen3.5 | no disponible en esta ficha | no disponible | safetensors (habitual) | según el modelo base | Hugging Face |
+| Otras cuantizaciones GGUF/AWQ de Qwen3.5 | no disponible | no disponible | GGUF / AWQ | según el modelo base | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa de rendimiento.
 
@@ -77,7 +77,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa de rendimie
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ramaezh/echovlm-v2-ov-int4
+- Repositorio Hugging Face: https://huggingface.co/ramaezh/echovlm-v2-ov-int4
 - Documentación de OpenVINO: https://docs.openvino.ai
 - Repositorio de OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino
-- Familia Qwen en HuggingFace: https://huggingface.co/Qwen
+- Familia Qwen en Hugging Face: https://huggingface.co/Qwen

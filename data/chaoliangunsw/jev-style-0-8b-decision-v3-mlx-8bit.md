@@ -105,7 +105,7 @@ Paridad de cuantizacion: misma decision que la referencia PyTorch FP32 en 240 de
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-8bit
+- Hugging Face (este repositorio): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3-MLX-8bit
 - Modelo base (tarjeta principal, con protocolos y datos de entrenamiento): https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3
 - Serie v1, 2B (GGUF): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF
 - Serie v2, 2B (MLX bf16): https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-v2-MLX-bf16

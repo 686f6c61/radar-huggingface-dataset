@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/PPNN
+- Hugging Face: https://huggingface.co/OneScience-Group/PPNN
 - Paper original: https://doi.org/10.1175/MWR-D-18-0187.1
 - OneScience GitHub: https://github.com/onescience-ai/OneScience
 - OneScience Gitee: https://gitee.com/onescience-ai/onescience

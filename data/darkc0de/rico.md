@@ -79,7 +79,7 @@ No se dispone de información suficiente para una comparativa detallada con otra
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/darkc0de/RICO
+- Hugging Face: https://huggingface.co/darkc0de/RICO
 - Perfil del autor: https://huggingface.co/darkc0de
 - Dataset de entrenamiento: https://huggingface.co/datasets/darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

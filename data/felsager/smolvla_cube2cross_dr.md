@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| felsager/smolvla_cube2cross_dr | 450 M | VLA (SmolVLA) | Pick-and-place 4 colores sobre cruz | Apache 2.0 | HuggingFace |
-| felsager/smolvla_base_ee_rel | no disponible | VLA (SmolVLA) | Base para ajuste fino | Apache 2.0 | HuggingFace |
-| SmolVLA original (Hugging Face) | no disponible en esta ficha | VLA | Manipulación general | Apache 2.0 | HuggingFace / LeRobot |
-| Políticas ACT / Diffusion Policy en LeRobot | no disponible | Imitación | Manipulación | variable | HuggingFace / LeRobot |
+| felsager/smolvla_cube2cross_dr | 450 M | VLA (SmolVLA) | Pick-and-place 4 colores sobre cruz | Apache 2.0 | Hugging Face |
+| felsager/smolvla_base_ee_rel | no disponible | VLA (SmolVLA) | Base para ajuste fino | Apache 2.0 | Hugging Face |
+| SmolVLA original (Hugging Face) | no disponible en esta ficha | VLA | Manipulación general | Apache 2.0 | Hugging Face / LeRobot |
+| Políticas ACT / Diffusion Policy en LeRobot | no disponible | Imitación | Manipulación | variable | Hugging Face / LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/felsager/smolvla_cube2cross_dr
+- Modelo en Hugging Face: https://huggingface.co/felsager/smolvla_cube2cross_dr
 - Modelo base: https://huggingface.co/felsager/smolvla_base_ee_rel
 - Dataset de entrenamiento: https://huggingface.co/datasets/felsager/vla_cubes_cross_dr
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=felsager/vla_cubes_cross_dr

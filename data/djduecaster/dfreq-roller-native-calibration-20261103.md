@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dfreq-roller-native-calibration-20261103 es un artefacto de control para robótica publicado en HuggingFace por el usuario djduecaster bajo el pipeline `robotics`. No es un modelo de lenguaje: se trata de una calibración de sesgo compartido sobre un controlador preexistente (denominado "roller-sprint") para una tarea de locomoción o rodadura evaluada en un entorno de simulación tipo Arena. El artefacto aplica un único sesgo de características de comando de -0,056 m/s, aprendido mediante búsqueda robusta nativa en CPU y confirmado sobre 256 arranques de desarrollo, sin modificar los pesos neuronales heredados.
+dfreq-roller-native-calibration-20261103 es un artefacto de control para robótica publicado en Hugging Face por el usuario djduecaster bajo el pipeline `robotics`. No es un modelo de lenguaje: se trata de una calibración de sesgo compartido sobre un controlador preexistente (denominado "roller-sprint") para una tarea de locomoción o rodadura evaluada en un entorno de simulación tipo Arena. El artefacto aplica un único sesgo de características de comando de -0,056 m/s, aprendido mediante búsqueda robusta nativa en CPU y confirmado sobre 256 arranques de desarrollo, sin modificar los pesos neuronales heredados.
 
 El modelo se distribuye en formato ONNX y se ejecuta mediante la librería `microduck`. La calibración transforma 61 observaciones float32 en 14 offsets de acción float32, a 50 Hz, y está pensada como un ajuste sin memoria (memoryless), es decir, sin estado entre pasos ni entradas privilegiadas como semilla, reloj, posición global o tablas de consulta por arranque. El repositorio tiene un tamaño de 0,0 GB según los metadatos, lo que sugiere un artefacto muy ligero o posiblemente vacío en el momento de la consulta.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dfreq-roller-native-calibration-20261103 | Calibración de controlador (ONNX, CPU) | No disponible | No aplica | 2,727 s en Arena (comando 1,1), 128/128 retenido | No disponible | HuggingFace, 0 descargas |
+| dfreq-roller-native-calibration-20261103 | Calibración de controlador (ONNX, CPU) | No disponible | No aplica | 2,727 s en Arena (comando 1,1), 128/128 retenido | No disponible | Hugging Face, 0 descargas |
 | Especialista publicado de 2,570 s | Controlador especializado | No disponible | No aplica | 2,570 s en sus arranques prescritos | No disponible | Referenciado en la model card |
 | Política base "roller-sprint" | Controlador heredado | No disponible | No aplica | No disponible | Sujeta a `upstream-base-card.md` | Referenciada en el repositorio |
 
@@ -88,7 +88,7 @@ No se dispone de información suficiente para comparar con alternativas externas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/djduecaster/dfreq-roller-native-calibration-20261103
+- Hugging Face: https://huggingface.co/djduecaster/dfreq-roller-native-calibration-20261103
 - Documento de linaje y derechos: `upstream-base-card.md` (referenciado en el repositorio)
 - Nota de licencia: `LICENSE-NOTE.txt` (referenciado en el repositorio)
 - SHA256 del modelo: `891db5713885fba1009ae926c9010c010ef1f9c4771bd3990d84a639469444d8`

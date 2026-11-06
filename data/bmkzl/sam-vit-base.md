@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- [HuggingFace: bmkzl/sam-vit-base](https://huggingface.co/bmkzl/sam-vit-base)
+- [Hugging Face: bmkzl/sam-vit-base](https://huggingface.co/bmkzl/sam-vit-base)
 - [Repositorio oficial de Segment Anything (Meta)](https://github.com/facebookresearch/segment-anything)
 - [Paper: Segment Anything (arXiv:2304.02643)](https://arxiv.org/abs/2304.02643)
 - [Dataset SA-1B](https://segment-anything.com/dataset/index.html)

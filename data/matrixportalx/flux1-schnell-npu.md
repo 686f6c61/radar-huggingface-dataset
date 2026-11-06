@@ -82,7 +82,7 @@ La comparación relevante es con los repositorios de origen, ya que este paquete
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/matrixportalx/flux1-schnell-npu
+- Repositorio en Hugging Face: https://huggingface.co/matrixportalx/flux1-schnell-npu
 - Origen del UNet: https://huggingface.co/leejet/FLUX.1-schnell-gguf
 - Origen de CLIP-L: https://huggingface.co/comfyanonymous/flux_text_encoders
 - Origen del T5-XXL: https://huggingface.co/city96/t5-v1_1-xxl-encoder-gguf

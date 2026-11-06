@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-kl10000-s0-realign` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Se trata de un checkpoint experimental de 1B parámetros entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.24.0 sobre Unsloth, según se desprende de las etiquetas y de la model card. El repositorio ocupa 1,7 GB y no registra descargas ni interacciones en el momento de la consulta.
+`jlsrls/mainsweep4ep-kl10000-s0-realign` es un ajuste fino (fine-tuning) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Se trata de un checkpoint experimental de 1B parámetros entrenado mediante SFT (supervised fine-tuning) con la librería TRL 0.24.0 sobre Unsloth, según se desprende de las etiquetas y de la model card. El repositorio ocupa 1,7 GB y no registra descargas ni interacciones en el momento de la consulta.
 
 El modelo resuelve, en principio, el mismo problema que su base: generación de texto conversacional e instrucciones en un tamaño que cabe en GPU de consumo. Su relevancia es limitada y de carácter puramente investigador: el nombre del checkpoint sugiere un barrido de hiperparámetros ("mainsweep", 4 épocas, coeficiente KL de 10 000, semilla 0, "realign"), y el run de Weights & Biases asociado pertenece al proyecto `clarifying-em` de la Universidad Estatal de Portland. No hay documentación publicada sobre el dataset, los objetivos ni los resultados.
 
@@ -36,7 +36,7 @@ Las capacidades listadas son las del modelo base y no han sido verificadas en es
 - Capacidad multilingüe heredada del modelo base (8 idiomas declarados por Meta), no confirmada tras el ajuste.
 - Soporte de tool calling / function calling heredado de Llama 3.2 1B Instruct, no verificado.
 - Manejo de contexto largo (hasta 128 000 tokens en la base), sin evidencia de que el fine-tune lo preserve.
-- Compatibilidad declarada con endpoints (`endpoints_compatible`), es decir, desplegable mediante la infraestructura de inferencia de HuggingFace.
+- Compatibilidad declarada con endpoints (`endpoints_compatible`), es decir, desplegable mediante la infraestructura de inferencia de Hugging Face.
 - No se documentan modo de razonamiento explícito (thinking), visión, audio ni capacidades de agente multi-paso.
 
 ## Casos de uso
@@ -93,7 +93,7 @@ Frente al modelo base, este checkpoint no aporta ninguna ventaja documentada: ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s0-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-kl10000-s0-realign
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/mjp25ikf
 - Repositorio de TRL: https://github.com/huggingface/trl

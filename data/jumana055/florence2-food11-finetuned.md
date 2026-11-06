@@ -71,7 +71,7 @@ No se dispone de información suficiente para una comparativa fiable. El modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jumana055/florence2-food11-finetuned
+- Hugging Face: https://huggingface.co/jumana055/florence2-food11-finetuned
 - Modelo base Florence-2-large: https://huggingface.co/microsoft/Florence-2-large
 - Notebook de fine-tuning de Florence-2 (Roboflow): https://github.com/roboflow/notebooks/blob/main/notebooks/how-to-finetune-florence-2-on-detection-dataset.ipynb
 - Repositorio Florence-2 (GitHub): https://github.com/retkowsky/florence-2

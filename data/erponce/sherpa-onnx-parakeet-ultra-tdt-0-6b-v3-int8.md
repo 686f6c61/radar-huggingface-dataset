@@ -87,7 +87,7 @@ No hay datos de rendimiento comparado (WER por idioma, velocidad de decodificaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erponce/sherpa-onnx-parakeet-ultra-tdt-0.6b-v3-int8
+- Modelo en Hugging Face: https://huggingface.co/erponce/sherpa-onnx-parakeet-ultra-tdt-0.6b-v3-int8
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

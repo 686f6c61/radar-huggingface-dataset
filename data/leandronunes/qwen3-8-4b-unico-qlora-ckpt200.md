@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `leandronunes/Qwen3.8-4B-UniCo-QLoRA-ckpt200` es un adaptador LoRA entrenado mediante QLoRA (cuantizacion 4-bit NF4) sobre el modelo base `empero-ai/Qwen3.8-4B-Distill`. Lo desarrolla el usuario de HuggingFace leandronunes y su objetivo es la adaptacion en razonamiento cientifico y causal, usando una version balanceada del dataset UniCo con 2400 ejemplos de entrenamiento. No se trata de un modelo completo, sino de un checkpoint intermedio (paso 200 de 300 planificados) pensado para ser cargado como adaptador PEFT sobre el modelo base.
+El modelo `leandronunes/Qwen3.8-4B-UniCo-QLoRA-ckpt200` es un adaptador LoRA entrenado mediante QLoRA (cuantizacion 4-bit NF4) sobre el modelo base `empero-ai/Qwen3.8-4B-Distill`. Lo desarrolla el usuario de Hugging Face leandronunes y su objetivo es la adaptacion en razonamiento cientifico y causal, usando una version balanceada del dataset UniCo con 2400 ejemplos de entrenamiento. No se trata de un modelo completo, sino de un checkpoint intermedio (paso 200 de 300 planificados) pensado para ser cargado como adaptador PEFT sobre el modelo base.
 
 El modelo base declarado tiene aproximadamente 4000 millones de parametros y una arquitectura hibrida que combina atencion tradicional con bloques de atencion lineal Gated DeltaNet. Durante el entrenamiento, Unsloth detecto que la arquitectura no puede entrenarse de forma estable en float16, por lo que el regimen se cambio a float32. El adaptador final tiene un rank LoRA de 16 y alpha de 32, aplicado sobre las proyecciones de self-attention y las MLPs.
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye resultados comparativos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leandronunes/Qwen3.8-4B-UniCo-QLoRA-ckpt200
+- Modelo en Hugging Face: https://huggingface.co/leandronunes/Qwen3.8-4B-UniCo-QLoRA-ckpt200
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-4B-Distill
 - Unsloth (framework de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (SFTTrainer): https://github.com/huggingface/trl

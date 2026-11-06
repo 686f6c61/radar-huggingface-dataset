@@ -88,9 +88,9 @@ Calibración: temperatura 1,203, ECE de 0,077 a 0,053.
 
 | Modelo | Parámetros | Contexto | Idiomas evaluados | Precisión (inglés / peor idioma) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| laya-triage-multilingual | 322M | no disponible | 14 | 90,6% / 84,0% (árabe) | apache-2.0 | HuggingFace, pesos safetensors |
-| laya-triage-en | no disponible | no disponible | 1 (inglés) | no disponible | apache-2.0 | HuggingFace |
-| Laya multilingual (base) | 322M | no disponible | 14 | 89,2% / 64,2% (coreano) | apache-2.0 | HuggingFace |
+| laya-triage-multilingual | 322M | no disponible | 14 | 90,6% / 84,0% (árabe) | apache-2.0 | Hugging Face, pesos safetensors |
+| laya-triage-en | no disponible | no disponible | 1 (inglés) | no disponible | apache-2.0 | Hugging Face |
+| Laya multilingual (base) | 322M | no disponible | 14 | 89,2% / 64,2% (coreano) | apache-2.0 | Hugging Face |
 | Jev (TypeSafe) | no disponible | no disponible | 14 | 88,2% / 83,8% (chino, coreano) | no disponible | servicio alojado |
 
 El autor señala que laya-triage y Jev están dentro del ruido estadístico entre sí y que ambos superan claramente al modelo base sin ajustar. La diferencia principal frente a Jev es la disponibilidad: laya-triage-multilingual es descargable y ejecutable en local bajo Apache-2.0, mientras que Jev es un servicio alojado.
@@ -107,7 +107,7 @@ El autor señala que laya-triage y Jev están dentro del ruido estadístico entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elnachto/laya-triage-multilingual
+- Modelo en Hugging Face: https://huggingface.co/elnachto/laya-triage-multilingual
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Modelo inglés de la misma familia: https://huggingface.co/elnachto/laya-triage-en
 - GitHub Action laya-triage: https://github.com/elnachto/laya-triage

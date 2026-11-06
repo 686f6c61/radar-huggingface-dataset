@@ -92,10 +92,10 @@ No hay modelos publicos directamente equivalentes en cuanto a arquitectura (tran
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryankim17920/mechanistic-sps-extra
+- Repositorio en Hugging Face: https://huggingface.co/ryankim17920/mechanistic-sps-extra
 - Repositorio principal con los checkpoints finales: https://huggingface.co/ryankim17920/mechanistic-sps
 - Codigo del proyecto: https://github.com/RyanKim17920/mechanistic-sps
-- Perfil del autor en HuggingFace: https://huggingface.co/ryankim17920
+- Perfil del autor en Hugging Face: https://huggingface.co/ryankim17920
 - Perfil del autor en GitHub: https://github.com/RyanKim17920
 - Pagina de proyectos del autor: https://ryankim17920.github.io/projects/
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

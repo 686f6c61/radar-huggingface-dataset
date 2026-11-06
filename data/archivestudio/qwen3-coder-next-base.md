@@ -17,7 +17,7 @@ Es relevante ahora porque combina un coste de inferencia bajo (3 B activos) con 
 | Parametros activos | ~3 B por token (10 de 512 expertos + 1 experto compartido) |
 | Longitud de contexto | 262.144 tokens nativos (256K) |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica safetensors; no se listan variantes GGUF, AWQ o GPTQ) |
-| Idiomas soportados | La model card declara soporte para mas de 370 lenguajes; los metadatos de HuggingFace indican "no disponibles" |
+| Idiomas soportados | La model card declara soporte para mas de 370 lenguajes; los metadatos de Hugging Face indican "no disponibles" |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria transformers, arquitectura qwen3_next) |
 | Dimension oculta | 2.048 |
@@ -77,10 +77,10 @@ Los datos de los modelos alternativos proceden de su documentacion publica y no 
 
 | Modelo | Parametros totales | Parametros activos | Contexto nativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Coder-Next-Base | ~80 B | ~3 B | 262.144 tokens | Apache 2.0 | Pesos safetensors en HuggingFace |
-| Qwen3-Coder-480B-A35B | 480 B | 35 B | 262.144 tokens | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Qwen3-30B-A3B | ~30 B | ~3 B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | Pesos abiertos en HuggingFace |
-| gpt-oss-120b | ~117 B | ~5 B | 131.072 tokens | Apache 2.0 | Pesos abiertos en HuggingFace |
+| Qwen3-Coder-Next-Base | ~80 B | ~3 B | 262.144 tokens | Apache 2.0 | Pesos safetensors en Hugging Face |
+| Qwen3-Coder-480B-A35B | 480 B | 35 B | 262.144 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Qwen3-30B-A3B | ~30 B | ~3 B | 32.768 tokens (extensible a 131.072) | Apache 2.0 | Pesos abiertos en Hugging Face |
+| gpt-oss-120b | ~117 B | ~5 B | 131.072 tokens | Apache 2.0 | Pesos abiertos en Hugging Face |
 
 Frente a Qwen3-Coder-480B-A35B, la variante Next ofrece un contexto nativo identico con una decima parte de parametros totales y una decima parte de parametros activos, lo que reduce coste de inferencia y huella de memoria, a cambio de presumiblemente menor capacidad bruta. Frente a Qwen3-30B-A3B, mantiene un coste de activacion similar pero multiplica por ocho la ventana de contexto nativa. Comparado con gpt-oss-120b, el modelo de Qwen activa menos parametros por token y duplica el contexto nativo.
 
@@ -99,7 +99,7 @@ Frente a Qwen3-Coder-480B-A35B, la variante Next ofrece un contexto nativo ident
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3-Coder-Next-Base
+- Repositorio en Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3-Coder-Next-Base
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3-coder-next
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Informe tecnico (PDF): https://github.com/QwenLM/Qwen3-Coder/blob/main/qwen3_coder_next_tech_report.pdf

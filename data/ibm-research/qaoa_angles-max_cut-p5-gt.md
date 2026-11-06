@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ibm-research/qaoa_angles.max_cut.p5.gt` es un artefacto publicado por IBM Research en HuggingFace, distribuido en formato ONNX y con licencia Apache 2.0. El identificador del repositorio indica que se trata de un modelo de prediccion de angulos (parametros variacionales) para el algoritmo cuantico QAOA (Quantum Approximate Optimization Algorithm) aplicado a instancias del problema Max-Cut, con profundidad de circuito p=5. La model card publicada no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos con la licencia.
+`ibm-research/qaoa_angles.max_cut.p5.gt` es un artefacto publicado por IBM Research en Hugging Face, distribuido en formato ONNX y con licencia Apache 2.0. El identificador del repositorio indica que se trata de un modelo de prediccion de angulos (parametros variacionales) para el algoritmo cuantico QAOA (Quantum Approximate Optimization Algorithm) aplicado a instancias del problema Max-Cut, con profundidad de circuito p=5. La model card publicada no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos con la licencia.
 
 No es un modelo de lenguaje ni un modelo generativo multimodal, sino una red neuronal clasica (exportada a ONNX) pensada para sustituir o acelerar la fase de optimizacion de parametros de un circuito cuantico variacional. El problema que aborda es conocido en computacion cuantica: los angulos optimos de QAOA dependen de la instancia concreta (la topologia del grafo en Max-Cut) y encontrarlos mediante optimizacion clasica en bucle consume gran cantidad de evaluaciones del circuito cuantico. Un predictor entrenado permite obtener una inicializacion de alta calidad sin ese coste.
 
@@ -20,7 +20,7 @@ Su relevancia es fundamentalmente como pieza de investigacion reproducible dentr
 | Idiomas soportados | no disponible (no aplicable si el modelo opera sobre representaciones de grafos) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX |
-| Tamano del repositorio | 0,0 GB (segun los metadatos de HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-14 |
 | Ultima actualizacion | 2026-10-14 |
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Compatibilidad con GPU de consumo: no confirmada. No hay datos sobre el tamano del modelo que permitan afirmar si cabe en una RTX 4090 o en GPUs de gama inferior.
 - Opciones de despliegue: ONNX Runtime es el runtime coherente con el formato publicado. No hay evidencia de soporte para vLLM, llama.cpp, Ollama o TGI, que estan orientados a modelos de lenguaje y no aplican a este tipo de artefacto.
 - Latencia y throughput: no disponibles.
-- Nota: el tamano del repositorio se reporta como 0,0 GB en HuggingFace, lo que impide extraer cualquier estimacion de recursos a partir de los metadatos.
+- Nota: el tamano del repositorio se reporta como 0,0 GB en Hugging Face, lo que impide extraer cualquier estimacion de recursos a partir de los metadatos.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye otros artefactos comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gt
+- Modelo en Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p5.gt
 - Pagina corporativa de IBM: https://www.ibm.com/
 - IBM (version en frances): https://www.ibm.com/fr-fr
 - IBM en Wikipedia (ingles): https://en.wikipedia.org/wiki/IBM

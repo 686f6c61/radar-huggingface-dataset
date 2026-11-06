@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2imi9/Qwen3.8-27B-EAGLE4-NVFP4 | 3,09 mil millones | no disponible | NVFP4 W4A4 | Eagle 4 Source-Available (no OSI) | HuggingFace, 28 descargas |
-| EAGLE-Corp/Qwen3.8-27B-EAGLE4 (BF16) | no disponible (checkpoint de 6,18 GB) | no disponible | BF16 | Eagle 4 Source-Available (presumiblemente) | HuggingFace (modelo base) |
-| Qwen/Qwen3.8-27B (modelo objetivo) | no disponible | no disponible | BF16 (referencia) | Apache 2.0 (según `LICENSE-Qwen3.8-27B`) | HuggingFace |
+| 2imi9/Qwen3.8-27B-EAGLE4-NVFP4 | 3,09 mil millones | no disponible | NVFP4 W4A4 | Eagle 4 Source-Available (no OSI) | Hugging Face, 28 descargas |
+| EAGLE-Corp/Qwen3.8-27B-EAGLE4 (BF16) | no disponible (checkpoint de 6,18 GB) | no disponible | BF16 | Eagle 4 Source-Available (presumiblemente) | Hugging Face (modelo base) |
+| Qwen/Qwen3.8-27B (modelo objetivo) | no disponible | no disponible | BF16 (referencia) | Apache 2.0 (según `LICENSE-Qwen3.8-27B`) | Hugging Face |
 
 No se dispone de información sobre otros borradores EAGLE-4 cuantizados comparables ni sobre sus métricas de aceptación y velocidad en la documentación proporcionada.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre otros borradores EAGLE-4 cuantizados compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/2imi9/Qwen3.8-27B-EAGLE4-NVFP4
+- Hugging Face: https://huggingface.co/2imi9/Qwen3.8-27B-EAGLE4-NVFP4
 - Modelo base: https://huggingface.co/EAGLE-Corp/Qwen3.8-27B-EAGLE4
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio EAGLE-4: https://github.com/eagle-hq/EAGLE-4

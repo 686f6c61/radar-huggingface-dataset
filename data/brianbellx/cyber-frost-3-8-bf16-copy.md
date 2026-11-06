@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CYBER-FROST-3.8-BF16 | ~180B (MoE) | 262.144 configurados / 32.768 ejercitados | No publicado | qwen-community-license-1.0 | Gated en HuggingFace |
-| CYBER-FROST-3.8-FP8 | Mismo modelo en FP8 | no disponible (no detallado en la informacion disponible) | No publicado | qwen-community-license-1.0 | Gated en HuggingFace |
+| CYBER-FROST-3.8-BF16 | ~180B (MoE) | 262.144 configurados / 32.768 ejercitados | No publicado | qwen-community-license-1.0 | Gated en Hugging Face |
+| CYBER-FROST-3.8-FP8 | Mismo modelo en FP8 | no disponible (no detallado en la informacion disponible) | No publicado | qwen-community-license-1.0 | Gated en Hugging Face |
 | Qwen/Qwen3.8-Flash-Next | no disponible en la informacion proporcionada | no disponible | No publicado en esta informacion | no disponible | no disponible |
 | Alternativas generalistas de la misma clase MoE (~180B) | no disponible | no disponible | no disponible | no disponible | no disponible |
 

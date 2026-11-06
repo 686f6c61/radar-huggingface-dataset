@@ -100,7 +100,7 @@ El autor senala ademas que, por tratarse de un modelo denso, no existe enrutador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vectionlabs/Salience-27B-R6-i1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/vectionlabs/Salience-27B-R6-i1-GGUF
 - Modelo base: https://huggingface.co/vectionlabs/Salience-27B-R6
 
 No se han proporcionado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo o demos.

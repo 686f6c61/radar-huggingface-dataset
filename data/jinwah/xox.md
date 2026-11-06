@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Jinwah/Xox es un repositorio publicado en HuggingFace por el usuario Jinwah bajo licencia Apache 2.0. La ficha del modelo no contiene ninguna descripción técnica, arquitectura, ni documentación adicional más allá de la licencia declarada. El repositorio no registra descargas ni interacciones, y no se ha publicado ninguna información sobre parámetros, arquitectura, contexto o capacidades.
+El modelo Jinwah/Xox es un repositorio publicado en Hugging Face por el usuario Jinwah bajo licencia Apache 2.0. La ficha del modelo no contiene ninguna descripción técnica, arquitectura, ni documentación adicional más allá de la licencia declarada. El repositorio no registra descargas ni interacciones, y no se ha publicado ninguna información sobre parámetros, arquitectura, contexto o capacidades.
 
 Este caso corresponde a un modelo sin documentar ni verificar. La ausencia de datos en la ficha, la falta de descargas y la inexistencia de información técnica hacen imposible determinar qué es el modelo, qué problema resuelve o por qué sería relevante. No se dispone de arquitectura, tamaño, contexto ni datos de entrenamiento.
 
@@ -53,5 +53,5 @@ No se puede establecer una comparativa con otros modelos, ya que no se dispone d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jinwah/Xox
+- Hugging Face: https://huggingface.co/Jinwah/Xox
 - Perfil del autor: https://huggingface.co/Jinwah

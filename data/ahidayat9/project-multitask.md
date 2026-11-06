@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ahidayat9/project-multitask` es un prototipo de investigación basado en una arquitectura Vision Transformer (ViT) orientada a tareas múltiples (multitask). Lo publica el usuario ahidayat9 en HuggingFace y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni validado, sino de un punto de partida experimental: la propia model card indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados.
+`ahidayat9/project-multitask` es un prototipo de investigación basado en una arquitectura Vision Transformer (ViT) orientada a tareas múltiples (multitask). Lo publica el usuario ahidayat9 en Hugging Face y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni validado, sino de un punto de partida experimental: la propia model card indica explícitamente que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados.
 
 El dato más llamativo es su tamaño real: 49.600 parámetros totales según el archivo `model.safetensors`. Es, por tanto, un modelo de escala diminuta, muy lejos de los ViT convencionales (ViT-Base ronda los 86 millones de parámetros). Esto lo sitúa como un artefacto de investigación para validar código, configuraciones y flujos de entrenamiento, no como una solución desplegable en producción.
 
@@ -87,6 +87,6 @@ No se dispone de información sobre modelos comparables dentro de la documentaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahidayat9/project-multitask
+- Modelo en Hugging Face: https://huggingface.co/ahidayat9/project-multitask
 - Papers, blogs, repositorios o demos adicionales: no disponible
 - Resultados de búsqueda web: sin coincidencias relevantes para este modelo (los enlaces recuperados corresponden a contenidos no relacionados)

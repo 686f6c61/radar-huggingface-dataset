@@ -6,7 +6,7 @@ glance-roberta-v4 es un modelo encoder de clasificación zero-shot desarrollado 
 
 El backbone es RoBERTa-large (encoder transformer, aproximadamente 355 millones de parámetros) más una cabeza de clasificación binaria entrenada específicamente. La innovación principal radica en el empaquetado: varios statements comparten el mismo estado dentro de una secuencia, pero una máscara de atención bidireccional por bloques los mantiene independientes, de modo que la puntuación de un statement es idéntica a la que se obtendría evaluándolo de forma aislada. Esto permite procesar hasta 8 statements por pack con un límite de 1024 tokens por pack.
 
-El modelo se entrenó sobre 30 fuentes de datos heterogéneas (ABSА, SNLI, MNLI, PAWS, banking77, Amazon Reviews, etc.) con 47.284 estados y 249.704 statements, y se evaluó sobre 3 fuentes held-out (ag_news, emotion, rotten_tomatoes). Es relevante porque ofrece un clasificador zero-shot de propósito general con calibración reportada (ECE, Brier) y rendimiento reproducido step a step, aunque con disponibilidad y licencia sin documentar en la ficha de HuggingFace.
+El modelo se entrenó sobre 30 fuentes de datos heterogéneas (ABSА, SNLI, MNLI, PAWS, banking77, Amazon Reviews, etc.) con 47.284 estados y 249.704 statements, y se evaluó sobre 3 fuentes held-out (ag_news, emotion, rotten_tomatoes). Es relevante porque ofrece un clasificador zero-shot de propósito general con calibración reportada (ECE, Brier) y rendimiento reproducido step a step, aunque con disponibilidad y licencia sin documentar en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -89,9 +89,9 @@ No se han publicado resultados en benchmarks estandar externos (MMLU, HumanEval,
 
 | Modelo | Base / parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stefra/glance-roberta-v4 | RoBERTa-large (~355 M) | Clasificacion zero-shot verdadero/falso | 384 tokens estado, 96 por statement, 1024 por pack | No disponible | HuggingFace, requiere `trust_remote_code` |
-| FacebookAI/roberta-large | RoBERTa-large (~355 M) | Encoder base | 512 tokens | MIT | HuggingFace |
-| stefra/roberta-large-so | RoBERTa-large (~355 M) | No disponible | No disponible | No disponible | HuggingFace |
+| stefra/glance-roberta-v4 | RoBERTa-large (~355 M) | Clasificacion zero-shot verdadero/falso | 384 tokens estado, 96 por statement, 1024 por pack | No disponible | Hugging Face, requiere `trust_remote_code` |
+| FacebookAI/roberta-large | RoBERTa-large (~355 M) | Encoder base | 512 tokens | MIT | Hugging Face |
+| stefra/roberta-large-so | RoBERTa-large (~355 M) | No disponible | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento frente a alternativas de clasificacion zero-shot (por ejemplo clasificadores basados en NLI como DeBERTa o BART-MNLI) en la informacion proporcionada, por lo que la comparacion se limita a arquitectura, tamano y licencia.
 
@@ -108,7 +108,7 @@ No se dispone de datos comparativos de rendimiento frente a alternativas de clas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefra/glance-roberta-v4
+- Modelo en Hugging Face: https://huggingface.co/stefra/glance-roberta-v4
 - Modelo base RoBERTa-large: https://huggingface.co/FacebookAI/roberta-large
 - Documentacion de RoBERTa en transformers: https://huggingface.co/docs/transformers/model_doc/roberta
 - Repositorio statement-tuning: https://github.com/afz225/statement-tuning

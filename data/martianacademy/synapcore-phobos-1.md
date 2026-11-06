@@ -78,7 +78,7 @@ La comparación directa con modelos monolíticos es imperfecta porque Phobos-1 p
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia verificable de rendimiento en MMLU, HumanEval, GSM8K ni en tareas de dominio; la sección de evaluación de la model card está truncada.
-- Cero descargas y cero likes en HuggingFace en el momento de la ficha, lo que impide cualquier validación por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face en el momento de la ficha, lo que impide cualquier validación por parte de la comunidad.
 - Solo inglés declarado; no hay soporte multilingüe documentado pese a que el shell base Qwen2.5 sí es multilingüe.
 - Longitud de contexto no especificada: se desconoce si hereda los 32.768 tokens del shell o si el enrutador cortical impone restricciones adicionales.
 - Formato de pesos propietario (vault binario + topología .pt con hashes Merkle): no es directamente compatible con vLLM, llama.cpp, Ollama ni TGI, lo que complica el despliegue en producción.
@@ -91,6 +91,6 @@ La comparación directa con modelos monolíticos es imperfecta porque Phobos-1 p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MartianAcademy/synapcore-phobos-1
+- Hugging Face: https://huggingface.co/MartianAcademy/synapcore-phobos-1
 - Organización Martian Academy: https://huggingface.co/MartianAcademy
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

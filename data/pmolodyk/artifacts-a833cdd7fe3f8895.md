@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `pmolodyk/artifacts-a833cdd7fe3f8895` es un artefacto alojado en HuggingFace por el usuario `pmolodyk`. La denominacion del repositorio ("artifacts" seguido de un identificador hexadecimal) y la ausencia total de metadatos descriptivos indican que se trata de un contenedor de artefactos generico y no de una ficha de modelo publicada de forma convencional. No se declara pipeline, licencia, idiomas soportados ni arquitectura en la informacion disponible.
+El repositorio `pmolodyk/artifacts-a833cdd7fe3f8895` es un artefacto alojado en Hugging Face por el usuario `pmolodyk`. La denominacion del repositorio ("artifacts" seguido de un identificador hexadecimal) y la ausencia total de metadatos descriptivos indican que se trata de un contenedor de artefactos generico y no de una ficha de modelo publicada de forma convencional. No se declara pipeline, licencia, idiomas soportados ni arquitectura en la informacion disponible.
 
 El unico dato cuantitativo relevante es el tamano del repositorio, 726,3 GB, junto con un contador de 0 descargas y 1 like desde su creacion el 10 de septiembre de 2026 y su ultima actualizacion el 12 de septiembre de 2026. Estas cifras son compatibles con un volcado de pesos en precision completa o con un conjunto de multiples checkpoints, pero no permiten inferir el numero de parametros, la arquitectura ni el proposito del contenido.
 
@@ -84,7 +84,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 - Riesgo de sesgos: no evaluable, al no existir documentacion sobre la composicion del dataset de entrenamiento.
 - Riesgo de alucinacion: no evaluable por la misma razon.
 - Limitaciones de contexto e idioma: no disponibles.
-- Metadata de la plataforma practicamente vacia: el unico tag declarado es `region:us`, que es una etiqueta geografica de HuggingFace y no aporta informacion tecnica.
+- Metadata de la plataforma practicamente vacia: el unico tag declarado es `region:us`, que es una etiqueta geografica de Hugging Face y no aporta informacion tecnica.
 - Cero descargas y un unico like: no existe evidencia de uso, validacion comunitaria ni reproduccion independiente de resultados.
 - Denominacion no descriptiva: el identificador hexadecimal sugiere un volcado automatizado de artefactos, no una publicacion intencionada de un modelo.
 - Resultados de busqueda no pertinentes: las busquedas web realizadas no han devuelto ninguna pagina relacionada con el repositorio, su autor o su contenido; los resultados obtenidos pertenecen a dominios sin relacion alguna.
@@ -92,8 +92,8 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pmolodyk/artifacts-a833cdd7fe3f8895
-- Pagina del autor en HuggingFace: https://huggingface.co/pmolodyk
+- Repositorio en Hugging Face: https://huggingface.co/pmolodyk/artifacts-a833cdd7fe3f8895
+- Pagina del autor en Hugging Face: https://huggingface.co/pmolodyk
 - Paper asociado: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

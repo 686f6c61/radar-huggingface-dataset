@@ -69,7 +69,7 @@ No se dispone, en la informacion proporcionada, de especificaciones de modelos c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado |
 |---|---|---|---|---|---|
-| dino-contrastive (5visser98) | 49.600 | no disponible | MIT | HuggingFace | Checkpoint de inicializacion, sin entrenar |
+| dino-contrastive (5visser98) | 49.600 | no disponible | MIT | Hugging Face | Checkpoint de inicializacion, sin entrenar |
 | DINOv2 (Meta) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referencia contextual, no comparada con datos |
 | SimCLR | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referencia contextual, no comparada con datos |
 | MoCo v3 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referencia contextual, no comparada con datos |
@@ -87,4 +87,4 @@ No se dispone, en la informacion proporcionada, de especificaciones de modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/5visser98/dino-contrastive
+- Hugging Face: https://huggingface.co/5visser98/dino-contrastive

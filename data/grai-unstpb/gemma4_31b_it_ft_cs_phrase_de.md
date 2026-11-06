@@ -29,7 +29,7 @@ Se trata, por tanto, de un artefacto de investigacion publicado sin documentacio
 
 El artefacto publicado no es un modelo completo, sino un adaptador de bajo rango (LoRA) que se aplica sobre `unsloth/gemma-4-31B-it-unsloth-bnb-4bit`. El modelo base es, segun su propio identificador, una variante instruction-tuned ("it") de la familia Gemma 4 con 31.000 millones de parametros, cuantizada a 4 bits mediante bitsandbytes y distribuida por Unsloth. No se dispone de informacion sobre el numero de capas, la dimension del modelo, el tipo de atencion, la ventana de contexto nativa ni la composicion del corpus de preentrenamiento del modelo base.
 
-Respecto al entrenamiento del adaptador, las etiquetas del repositorio indican `lora`, `sft`, `transformers`, `trl` y `unsloth`, lo que situa el procedimiento en un fine-tuning supervisado clasico con TRL sobre el stack de Unsloth. No se documentan el dataset utilizado, el numero de tokens o ejemplos, el rango y alpha de la LoRA, la tasa de aprendizaje, el numero de epochs, el regimen de precision ni si hubo fases posteriores de alineamiento como DPO o RLHF. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, de modo que no existe ninguna innovacion tecnica declarada ni verificable.
+Respecto al entrenamiento del adaptador, las etiquetas del repositorio indican `lora`, `sft`, `transformers`, `trl` y `unsloth`, lo que situa el procedimiento en un fine-tuning supervisado clasico con TRL sobre el stack de Unsloth. No se documentan el dataset utilizado, el numero de tokens o ejemplos, el rango y alpha de la LoRA, la tasa de aprendizaje, el numero de epochs, el regimen de precision ni si hubo fases posteriores de alineamiento como DPO o RLHF. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, de modo que no existe ninguna innovacion tecnica declarada ni verificable.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ Estimaciones derivadas del tamano declarado del modelo base (31B) y no de medici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_phrase_de
+- Modelo en Hugging Face: https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_phrase_de
 - Modelo base: https://huggingface.co/unsloth/gemma-4-31B-it-unsloth-bnb-4bit
 - Unsloth: https://huggingface.co/unsloth
 - Libreria PEFT: https://github.com/huggingface/peft

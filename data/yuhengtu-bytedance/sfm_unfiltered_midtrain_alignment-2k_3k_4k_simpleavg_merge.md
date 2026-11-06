@@ -10,7 +10,7 @@ La arquitectura está etiquetada como `gpt_neox`, lo que indica un transformer b
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (transformer, según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (transformer, según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_simpleavg_merge
 - Modelo relacionado (merge sin "simpleavg"): https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge
 - Modelo similar (merge de 4k-5k-6k): https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg
 - Página de despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge

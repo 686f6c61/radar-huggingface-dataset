@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-lwf-hhrlhf-kw1` es un ajuste fino publicado en HuggingFace por el usuario `wz7475`, derivado presumiblemente de Qwen2.5-7B-Instruct, un transformer decoder-only de aproximadamente 7.600 millones de parámetros. El identificador sugiere un ajuste orientado al dominio médico ("med"), con técnicas de ajuste incremental tipo "learning without forgetting" ("lwf") y datos de preferencias HH-RLHF ("hhrlhf"), aunque ninguna de estas hipótesis está confirmada por la documentación del repositorio.
+El modelo `wz7475/qwen2.5-7b-instruct-katcher-med-lwf-hhrlhf-kw1` es un ajuste fino publicado en Hugging Face por el usuario `wz7475`, derivado presumiblemente de Qwen2.5-7B-Instruct, un transformer decoder-only de aproximadamente 7.600 millones de parámetros. El identificador sugiere un ajuste orientado al dominio médico ("med"), con técnicas de ajuste incremental tipo "learning without forgetting" ("lwf") y datos de preferencias HH-RLHF ("hhrlhf"), aunque ninguna de estas hipótesis está confirmada por la documentación del repositorio.
 
-La model card publicada es la plantilla automática de HuggingFace sin rellenar: no incluye autoría, descripción, datos de entrenamiento, resultados de evaluación ni condiciones de uso. Esto significa que la práctica totalidad de las especificaciones de esta ficha proceden del modelo base inferido a partir del nombre del repositorio, no de información verificada del autor.
+La model card publicada es la plantilla automática de Hugging Face sin rellenar: no incluye autoría, descripción, datos de entrenamiento, resultados de evaluación ni condiciones de uso. Esto significa que la práctica totalidad de las especificaciones de esta ficha proceden del modelo base inferido a partir del nombre del repositorio, no de información verificada del autor.
 
 Su relevancia es limitada en el estado actual: registra 0 descargas y 0 "likes", y el repositorio ocupa 1,8 GB, un tamaño incompatible con pesos completos en precisión de 16 bits de un modelo de 7B (que rondarían los 15 GB). Esto apunta a que el repositorio contiene únicamente adaptadores LoRA o pesos parciales, extremo que no puede confirmarse sin inspeccionar los ficheros.
 
@@ -26,7 +26,7 @@ Su relevancia es limitada en el estado actual: registra 0 descargas y 0 "likes",
 | Descargas / likes | 0 / 0 |
 | Fecha de creación | 30 de septiembre de 2026 (metadato atípico) |
 
-Nota: la etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el artículo citado en la plantilla de HuggingFace para el cálculo de emisiones de carbono. No es un artículo sobre este modelo.
+Nota: la etiqueta `arxiv:1910.09700` corresponde a Lacoste et al. (2019), el artículo citado en la plantilla de Hugging Face para el cálculo de emisiones de carbono. No es un artículo sobre este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -92,7 +92,7 @@ El rendimiento comparado no está disponible para el modelo objeto de esta ficha
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace sin ningún campo completado. No hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face sin ningún campo completado. No hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni uso previsto.
 - Licencia indeterminada: el repositorio no declara licencia. Aunque el modelo base Qwen2.5-7B-Instruct es Apache 2.0, la ausencia de licencia explícita en este derivado genera incertidumbre jurídica para uso comercial. Conviene contactar con el autor antes de cualquier despliegue productivo.
 - Idiomas no declarados: no se especifica qué idiomas conserva el ajuste tras el entrenamiento, lo que impide garantizar un rendimiento aceptable en castellano.
 - Riesgo de olvido catastrófico: si el ajuste se realizó sobre un corpus especializado (médico, según el identificador), es probable una degradación de las capacidades generales del modelo base. No hay evaluación que lo descarte.
@@ -106,7 +106,7 @@ El rendimiento comparado no está disponible para el modelo objeto de esta ficha
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-hhrlhf-kw1
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-lwf-hhrlhf-kw1
 - Modelo base presumible (Qwen2.5-7B-Instruct): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5
 - Artículo citado en la plantilla de emisiones: Lacoste et al. (2019), https://arxiv.org/abs/1910.09700

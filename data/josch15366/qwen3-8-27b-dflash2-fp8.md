@@ -86,7 +86,7 @@ Los tres modelos son versiones del mismo drafter DFlash2 para Qwen3.8-27B. La ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josch15366/Qwen3.8-27B-DFlash2-FP8
+- Modelo en Hugging Face: https://huggingface.co/josch15366/Qwen3.8-27B-DFlash2-FP8
 - Modelo base (z-lab): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo base original (incoai): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Blog de DFlash2: https://inco.ai/blog/dflash2/

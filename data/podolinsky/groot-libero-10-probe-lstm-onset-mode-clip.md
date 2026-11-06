@@ -23,7 +23,7 @@ Su relevancia es acotada pero específica: es una pieza de infraestructura para 
 | Entrada | Un vector de 6.144 dimensiones por paso de politica (2048 base + 2048 muneca + 2048 lenguaje) |
 | Salida | Puntuacion de fallo, etiqueta de modo de fallo (10 clases) y embedding semantico de 64 dimensiones |
 | Artefactos adicionales | `config.json`, `normalization.npz`, `thresholds.json`, `eval_task_split.json`, `EVAL.md`, `models.py`, `probe.py` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ Las diferencias de rendimiento entre estas tres variantes no se pueden establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-10-probe-lstm-onset-mode-clip
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-10-probe-lstm-onset-mode-clip
 - Variante hermana (LIBERO-X, "post-mode"): https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-post-mode
 - Variante hermana (LIBERO-X, atencion multi-cabeza): https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-mha
 - Dataset de caracteristicas del backbone GR00T-N1.7 LIBERO-10: https://claru.ai/datasets/podolinsky-groot-libero-10-features-v3

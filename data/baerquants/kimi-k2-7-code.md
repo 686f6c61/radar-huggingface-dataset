@@ -49,7 +49,7 @@ En cuanto a entrenamiento, la información disponible es limitada: la model card
 - Tool calling / function calling: implícito en el soporte de MCP (Model Context Protocol) que reflejan los benchmarks de la categoría agéntica.
 - Capacidades multimodales de entrada: pipeline `image-text-to-text` con encoder MoonViT, lo que permite procesar imágenes junto a texto (por ejemplo, capturas de pantalla, diagramas o documentación escaneada).
 - Contexto largo de 256K tokens para trabajar con bases de código extensas o historiales de conversación prolongados.
-- Capacidades multilingües: no disponible; los metadatos de HuggingFace no declaran idiomas soportados.
+- Capacidades multilingües: no disponible; los metadatos de Hugging Face no declaran idiomas soportados.
 
 ## Casos de uso
 
@@ -115,9 +115,9 @@ La información proporcionada únicamente permite comparar contra el predecesor 
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/baerquants/Kimi-K2.7-Code
+- Repositorio analizado en Hugging Face: https://huggingface.co/baerquants/Kimi-K2.7-Code
 - Fichero de licencia del modelo original: https://huggingface.co/moonshotai/Kimi-K2.7-Code/blob/main/LICENSE
-- Organización de Moonshot AI en HuggingFace: https://huggingface.co/moonshotai
+- Organización de Moonshot AI en Hugging Face: https://huggingface.co/moonshotai
 - Página del producto Kimi Code: https://www.kimi.com/code
 - Sitio de Moonshot AI: https://www.moonshot.ai
 - Perfil de X (Twitter) de Kimi: https://twitter.com/kimi_moonshot

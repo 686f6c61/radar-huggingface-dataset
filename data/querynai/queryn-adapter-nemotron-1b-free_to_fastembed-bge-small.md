@@ -71,7 +71,7 @@ No se dispone de información sobre adaptadores de embeddings comparables en el 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_fastembed-bge-small)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-nemotron-1b-free_to_fastembed-bge-small)
 - [Colección de adaptadores Queryn](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Repositorio GitHub de Queryn](https://github.com/Gigadelux/Queryn/tree/main)
 - [Página de NVIDIA Nemotron](https://developer.nvidia.com/topics/ai/nemotron)

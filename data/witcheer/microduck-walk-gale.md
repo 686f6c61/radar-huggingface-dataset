@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estándar de NLP (MMLU, HumanEval, 
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible con precisión; al ser una política de 61 entradas y 14 salidas en ONNX, el modelo es de tamaño muy reducido (repo de 0,0 GB según HuggingFace) y cabe holgadamente en cualquier GPU consumer, e incluso en CPU para inferencia a 50 Hz.
+- VRAM estimada para inferencia: no disponible con precisión; al ser una política de 61 entradas y 14 salidas en ONNX, el modelo es de tamaño muy reducido (repo de 0,0 GB según Hugging Face) y cabe holgadamente en cualquier GPU consumer, e incluso en CPU para inferencia a 50 Hz.
 - GPU recomendadas: ninguna específica; el entrenamiento se realizó en una RTX 5090, pero la inferencia no requiere esa clase de hardware.
 - Cabe en cualquier GPU consumer (RTX 4090, RTX 3090, GTX 1660 o inferior) y probablemente en aceleradores embebidos; no se han publicado requisitos mínimos oficiales.
 - Opciones de despliegue: runtime ONNX en el propio robot a través del daemon de microduck (`robotctl policy load walk witcheer/microduck-walk-gale`); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar de NLP (MMLU, HumanEval, 
 
 | Modelo | Tipo | Parámetros | Contexto / observación | Rendimiento en viento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `witcheer/microduck-walk-gale` | Política RL ONNX para Microduck | no disponible | 61 obs / 14 acciones, 50 Hz | 11/15 a 3,0 N | Apache-2.0 | HuggingFace |
+| `witcheer/microduck-walk-gale` | Política RL ONNX para Microduck | no disponible | 61 obs / 14 acciones, 50 Hz | 11/15 a 3,0 N | Apache-2.0 | Hugging Face |
 | `walk-flat` v2 (política base) | Política RL para Microduck | no disponible | 61 obs / 14 acciones, 50 Hz | 0/15 a 3,0 N | Apache-2.0 (presumible, misma familia) | Referenciada en la model card |
-| Otras políticas `witcheer/microduck-*` | Políticas RL de la misma escalera sim-only | no disponible | no disponible | no disponible | Apache-2.0 (presumible) | HuggingFace |
+| Otras políticas `witcheer/microduck-*` | Políticas RL de la misma escalera sim-only | no disponible | no disponible | no disponible | Apache-2.0 (presumible) | Hugging Face |
 
 No se dispone de datos de otras políticas de locomoción para Microduck publicadas por terceros que permitan una comparación cuantitativa adicional.
 
@@ -94,9 +94,9 @@ No se dispone de datos de otras políticas de locomoción para Microduck publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-walk-gale
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-walk-gale
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: https://github.com/pollen-robotics/microduck_rl
-- Dataset con los logs de entrenamiento de la escalera de habilidades: `witcheer/microduck-skill-tree` (en HuggingFace)
-- Políticas hermanas: `witcheer/microduck-*` (en HuggingFace)
+- Dataset con los logs de entrenamiento de la escalera de habilidades: `witcheer/microduck-skill-tree` (en Hugging Face)
+- Políticas hermanas: `witcheer/microduck-*` (en Hugging Face)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck

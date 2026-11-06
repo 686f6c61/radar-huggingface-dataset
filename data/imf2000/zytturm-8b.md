@@ -16,7 +16,7 @@ La relevancia actual del modelo reside en su nicho: un 8B ajustado con QLoRA (ra
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (etiqueta declarada); niveles concretos no disponibles en la informacion proporcionada |
 | Idiomas soportados | en (ingles) |
-| Licencia | nvidia-open-model-license (etiquetada como "other" en HuggingFace) |
+| Licencia | nvidia-open-model-license (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors y GGUF (el repositorio ocupa 5,0 GB, lo que apunta a que los pesos publicados son cuantizaciones) |
 | Modelo base | nvidia/Nemotron-Cascade-8B-Thinking |
 | Tamano del repositorio | 5,0 GB |
@@ -100,9 +100,9 @@ El autor indica que el orden de clasificacion se mantiene estable entre los tres
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Rendimiento en la eval del autor | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Zytturm | 8,19B | no disponible | 3,51 (media global); 4,14 en estructura | nvidia-open-model-license | HuggingFace, GGUF y Ollama |
-| Nemotron-Cascade-8B-Thinking (base sin ajustar) | 8B (clase) | no disponible | 2,68 (media global) | nvidia-open-model-license | HuggingFace |
-| Qwen2.5-7B (par general) | 7B (clase) | no disponible | 2,37 (media global) | Apache-2.0 (segun el modelo original) | HuggingFace |
+| Zytturm | 8,19B | no disponible | 3,51 (media global); 4,14 en estructura | nvidia-open-model-license | Hugging Face, GGUF y Ollama |
+| Nemotron-Cascade-8B-Thinking (base sin ajustar) | 8B (clase) | no disponible | 2,68 (media global) | nvidia-open-model-license | Hugging Face |
+| Qwen2.5-7B (par general) | 7B (clase) | no disponible | 2,37 (media global) | Apache-2.0 (segun el modelo original) | Hugging Face |
 | DeepSeek V4 (referencia frontera) | ~600B | no disponible | 3,73 (media global); 3,97 en exactitud tecnica | no disponible | API en la nube |
 
 La comparacion se limita al conjunto de evaluacion propio del autor, de 93 preguntas y 42 requisitos, puntuado por jueces LLM. No hay datos de benchmarks estandar que permitan situar a Zytturm frente a otros modelos de 7B-8B de uso general en tareas fuera del dominio de seguridad. Tampoco se dispone de la ficha tecnica del base Nemotron-Cascade-8B-Thinking ni de DeepSeek V4 en la informacion proporcionada.
@@ -120,7 +120,7 @@ La comparacion se limita al conjunto de evaluacion propio del autor, de 93 pregu
 - Alcance funcional limitado: no hay evidencia de tool calling, function calling, uso como agente multi-paso, vision, audio ni modo de razonamiento explicito, capacidades que pueden ser necesarias en pipelines de automatizacion de seguridad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/IMF2000/zytturm-8b
+- Modelo en Hugging Face: https://huggingface.co/IMF2000/zytturm-8b
 - Modelo base: https://huggingface.co/nvidia/Nemotron-Cascade-8B-Thinking
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo, su paper, blog, repositorio o demo. Las busquedas devolvieron unicamente paginas de cadenas de pizzeria sin relacion con el modelo.

@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Formato / disponibilidad |
 |---|---|---|---|---|
 | rao-studios/Qwen3-Coder-30B-A3B-Instruct-mlx-4bit | 30,5B totales / ~3B activos | 262.144 | Apache 2.0 | MLX 4 bits, safetensors, 17,2 GB |
-| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / ~3B activos | 262.144 | Apache 2.0 | Pesos originales en safetensors (BF16), disponible en HuggingFace |
+| Qwen/Qwen3-Coder-30B-A3B-Instruct | 30,5B totales / ~3B activos | 262.144 | Apache 2.0 | Pesos originales en safetensors (BF16), disponible en Hugging Face |
 | mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit | 30,5B totales / ~3B activos | 262.144 | Apache 2.0 | MLX 4 bits, safetensors; mismo contenido que este mirror |
 
 Las tres variantes comparten arquitectura, contexto y licencia; la diferencia es el formato de pesos y el repositorio de distribución. No se dispone de datos de benchmarks para comparar rendimiento entre ellas ni frente a otros modelos de código de tamaño similar.
@@ -82,7 +82,7 @@ Las tres variantes comparten arquitectura, contexto y licencia; la diferencia es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rao-studios/Qwen3-Coder-30B-A3B-Instruct-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/rao-studios/Qwen3-Coder-30B-A3B-Instruct-mlx-4bit
 - Modelo base en MLX: https://huggingface.co/mlx-community/Qwen3-Coder-30B-A3B-Instruct-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Commit de referencia del espejo: `6e302ea604ad9ab206367e2c501d1571023e7b6d`

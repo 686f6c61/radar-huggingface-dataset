@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Plant-disease-vit es un clasificador de imágenes basado en un Vision Transformer (ViT) implementado desde cero con PyTorch por LourivalGontijo. El modelo recibe imágenes RGB de 64 × 64 píxeles y predice una de 39 clases de enfermedad de hoja, según la model card publicada en HuggingFace. No se trata de un ViT preentrenado: la arquitectura se entrena específicamente para esta tarea de clasificación.
+Plant-disease-vit es un clasificador de imágenes basado en un Vision Transformer (ViT) implementado desde cero con PyTorch por LourivalGontijo. El modelo recibe imágenes RGB de 64 × 64 píxeles y predice una de 39 clases de enfermedad de hoja, según la model card publicada en Hugging Face. No se trata de un ViT preentrenado: la arquitectura se entrena específicamente para esta tarea de clasificación.
 
 El autor reporta una precisión de test de aproximadamente 99,16%, aunque no se detallan el dataset, la partición train/test ni el protocolo de evaluación. El repositorio ocupa 0,1 GB y se distribuye con licencia MIT, lo que facilita su uso en prototipos y experimentos. No se publican el número de parámetros, la profundidad del transformer ni otros detalles relevantes para dimensionar el modelo.
 
@@ -79,7 +79,7 @@ No se dispone de datos de modelos comparables en la información proporcionada. 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| plant-disease-vit | No disponible | No aplica | 99,16% en test sobre 39 clases | MIT | HuggingFace |
+| plant-disease-vit | No disponible | No aplica | 99,16% en test sobre 39 clases | MIT | Hugging Face |
 | ViT preentrenado genérico | No disponible | No aplica | No evaluado en este dataset | No disponible | No comparado |
 | CNN genérica para clasificación de hojas | No disponible | No aplica | No disponible | No disponible | No comparada |
 
@@ -101,7 +101,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LourivalGontijo/plant-disease-vit
+- Hugging Face: https://huggingface.co/LourivalGontijo/plant-disease-vit
 - Model card: https://huggingface.co/LourivalGontijo/plant-disease-vit
 - Paper: no disponible
 - Blog: no disponible

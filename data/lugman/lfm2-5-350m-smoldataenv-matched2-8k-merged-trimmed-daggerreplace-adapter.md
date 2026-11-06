@@ -81,6 +81,6 @@ La comparativa se limita a parametros, licencia y disponibilidad, ya que no se h
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace-adapter
+- Repositorio Hugging Face: https://huggingface.co/lugman/LFM2.5-350M-SmolDataEnv-Matched2.8K-Merged-Trimmed-DaggerReplace-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

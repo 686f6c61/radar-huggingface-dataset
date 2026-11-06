@@ -121,7 +121,7 @@ No se dispone de informacion sobre modelos comparables dentro del material propo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/EvoLM-8B-Rubric-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/EvoLM-8B-Rubric-GGUF
 - Modelo base: https://huggingface.co/stellalisy/EvoLM-8B-Rubric
 - Pagina de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#EvoLM-8B-Rubric-GGUF
 - Peticiones de cuantizacion y preguntas frecuentes del autor: https://huggingface.co/mradermacher/model_requests

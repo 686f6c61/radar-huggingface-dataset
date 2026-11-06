@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pod-day-risk` es un clasificador tabular binario publicado por el usuario Sibel-55 en HuggingFace. Su función es estimar la probabilidad de que un jugador tome una decisión incorrecta en el juego educativo "Pod Day: Telemetri Nöbeti", un escenario de simulación de telemetría aeroespacial. La predicción se realiza una sola vez, diez segundos después de abrirse la escena, y si la probabilidad es igual o superior a 0,5 el sistema activa una pregunta orientadora del tutor y elimina la presión de tiempo.
+`pod-day-risk` es un clasificador tabular binario publicado por el usuario Sibel-55 en Hugging Face. Su función es estimar la probabilidad de que un jugador tome una decisión incorrecta en el juego educativo "Pod Day: Telemetri Nöbeti", un escenario de simulación de telemetría aeroespacial. La predicción se realiza una sola vez, diez segundos después de abrirse la escena, y si la probabilidad es igual o superior a 0,5 el sistema activa una pregunta orientadora del tutor y elimina la presión de tiempo.
 
 Técnicamente no es un modelo de lenguaje ni una red neuronal profunda: es una regresión logística con estandarización previa, entrenada con `scikit-learn` (`class_weight="balanced"`, `random_state=42`) y exportada a ONNX mediante `skl2onnx` con opset 17. La entrada es un vector de seis variables float32 y la salida son probabilidades por clase.
 
@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pod-day-risk | Regresion logistica de 6 entradas | No aplica | Exactitud 0,700 en validacion agrupada | MIT | HuggingFace |
+| pod-day-risk | Regresion logistica de 6 entradas | No aplica | Exactitud 0,700 en validacion agrupada | MIT | Hugging Face |
 | Regresion logistica equivalente en scikit-learn | 6 coeficientes | No aplica | Identica a la version ONNX | BSD-3-Clause (scikit-learn) | PyPI |
 | Arbol de decision o gradient boosting tabular | No disponible | No aplica | No disponible | Segun implementacion | PyPI |
 
@@ -92,7 +92,7 @@ No se han identificado en la informacion disponible modelos publicos directament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sibel-55/pod-day-risk
+- Modelo en Hugging Face: https://huggingface.co/Sibel-55/pod-day-risk
 - Repositorio GitHub con el generador de datos sinteticos (`data/uret_sentetik.py`): no disponible en la informacion proporcionada
 - Paper o blog tecnico: no disponible
 - Demo: no disponible

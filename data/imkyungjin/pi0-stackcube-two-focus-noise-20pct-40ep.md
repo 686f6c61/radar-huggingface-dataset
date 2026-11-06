@@ -67,7 +67,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- [HuggingFace - ImKyungjin/pi0-stackcube-two-focus-noise-20pct-40ep](https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-20pct-40ep)
+- [Hugging Face - ImKyungjin/pi0-stackcube-two-focus-noise-20pct-40ep](https://huggingface.co/ImKyungjin/pi0-stackcube-two-focus-noise-20pct-40ep)
 - [Blog de Physical Intelligence sobre π₀](https://www.physicalintelligence.company/blog/pi0)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Repositorio LeRobot en GitHub](https://github.com/huggingface/lerobot)

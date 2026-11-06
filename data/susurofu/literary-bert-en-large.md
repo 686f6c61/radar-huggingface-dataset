@@ -76,9 +76,9 @@ La model card indica que la tabla completa incluye resultados del docente y de b
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Literary-bert-en-large | 335M | 256 tokens | Regresión ordinal de sentimiento literario (1–10) | Apache 2.0 | HuggingFace (35 descargas) |
-| google-bert/bert-large-uncased | 340M | 512 tokens | Encoder base, sin cabeza de sentimiento | Apache 2.0 | HuggingFace (ampliamente usado) |
-| Modelos de sentimiento BERT estándar (p. ej. bert-base-multilingual-uncased-sentiment) | ~110M–340M | 512 tokens | Clasificación discreta (3–5 clases) | Varía | HuggingFace |
+| Literary-bert-en-large | 335M | 256 tokens | Regresión ordinal de sentimiento literario (1–10) | Apache 2.0 | Hugging Face (35 descargas) |
+| google-bert/bert-large-uncased | 340M | 512 tokens | Encoder base, sin cabeza de sentimiento | Apache 2.0 | Hugging Face (ampliamente usado) |
+| Modelos de sentimiento BERT estándar (p. ej. bert-base-multilingual-uncased-sentiment) | ~110M–340M | 512 tokens | Clasificación discreta (3–5 clases) | Varía | Hugging Face |
 
 La comparación directa con alternativas de regresión ordinal literaria no está disponible en la información proporcionada. Frente a los clasificadores de sentimiento BERT convencionales, la diferencia principal es la formulación ordinal continua y el dominio de entrenamiento específicamente literario.
 
@@ -97,7 +97,7 @@ La comparación directa con alternativas de regresión ordinal literaria no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/susurofu/literary-bert-en-large
+- Modelo en Hugging Face: https://huggingface.co/susurofu/literary-bert-en-large
 - Modelo base: https://huggingface.co/google-bert/bert-large-uncased
 - Dataset de entrenamiento: https://huggingface.co/datasets/susurofu/synthetic-sentiment-dataset-pg-gemma4
 - Paper referenciado (arXiv:2611.02985): https://arxiv.org/abs/2611.02985

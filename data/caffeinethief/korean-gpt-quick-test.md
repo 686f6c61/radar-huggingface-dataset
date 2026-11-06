@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Korean GPT (identificador `CaffeineThief/korean-gpt-quick-test`) es un modelo de lenguaje de tipo GPT de pequeno tamano publicado en HuggingFace por el usuario CaffeineThief. Con 11.679.232 parametros totales confirmados a partir de los pesos en safetensors, se trata de un transformer decoder-only de escala muy reducida, orientado al procesamiento de coreano. La model card lo describe escuetamente como una "prueba" (테스트) de modelo GPT en coreano, lo que sugiere un caracter experimental mas que un modelo destinado a produccion.
+Korean GPT (identificador `CaffeineThief/korean-gpt-quick-test`) es un modelo de lenguaje de tipo GPT de pequeno tamano publicado en Hugging Face por el usuario CaffeineThief. Con 11.679.232 parametros totales confirmados a partir de los pesos en safetensors, se trata de un transformer decoder-only de escala muy reducida, orientado al procesamiento de coreano. La model card lo describe escuetamente como una "prueba" (테스트) de modelo GPT en coreano, lo que sugiere un caracter experimental mas que un modelo destinado a produccion.
 
 La arquitectura, segun los datos declarados por el autor, emplea un vocabulario de 32.000 tokens, un tamano oculto (hidden size) de 512, 8 capas y 8 cabezas de atencion. Estas dimensiones son coherentes con un modelo de juguete o de validacion de pipeline, no con un modelo de uso general. El repositorio incluye codigo personalizado (`custom_code`), por lo que requiere `trust_remote_code=True` para cargarse con Transformers.
 
@@ -30,7 +30,7 @@ Datos adicionales declarados en la model card:
 | Capas | 8 |
 | Cabezas de atencion | 8 |
 | Requiere `trust_remote_code` | Si |
-| Tamano del repo | 0.0 GB (reportado por HuggingFace) |
+| Tamano del repo | 0.0 GB (reportado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 - Idiomas soportados no declarados formalmente; solo la model card menciona coreano.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; conviene revisar el codigo personalizado antes de cargarlo en entornos sensibles.
 - Sesgos conocidos: no documentados; al no conocerse el corpus de entrenamiento, no es posible evaluar sesgos de genero, etnicos o culturales.
-- Sin pipeline declarado en HuggingFace y con 0 descargas y 0 likes en el momento de la consulta, lo que refleja ausencia de validacion por parte de la comunidad.
+- Sin pipeline declarado en Hugging Face y con 0 descargas y 0 likes en el momento de la consulta, lo que refleja ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaffeineThief/korean-gpt-quick-test
+- Modelo en Hugging Face: https://huggingface.co/CaffeineThief/korean-gpt-quick-test
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

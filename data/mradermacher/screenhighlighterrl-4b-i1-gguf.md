@@ -22,7 +22,7 @@ Por su relevancia práctica, el interés de esta ficha se limita a la disponibil
 | Modalidad de cuantización | ponderada con imatrix (importance matrix) |
 | Modelo base | mustafaah/ScreenHighlighterRL-4B |
 | Autor de la cuantización | mradermacher |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace (dato no fiable) |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face (dato no fiable) |
 | Fecha de creación | 15 de septiembre de 2026 |
 | Última actualización | 15 de septiembre de 2026 |
 
@@ -103,7 +103,7 @@ La comparación de rendimiento entre estos modelos y el modelo de esta ficha no 
 - Sesgos: no evaluados ni documentados.
 - Limitaciones de contexto e idioma: se desconocen la ventana de contexto efectiva y los idiomas cubiertos. No hay garantía de un rendimiento correcto en castellano.
 - Reproducibilidad: se desconoce la procedencia exacta de los pesos base (revisión, fecha, hash). No se puede garantizar la correspondencia entre la cuantización y una versión concreta del modelo original.
-- Metadatos inconsistentes: el recuento de parámetros disponible (958.716) no cuadra con el sufijo "4B" del nombre ni con el tamaño de repositorio declarado (0,0 GB), lo que indica metadatos incompletos o mal poblados en HuggingFace.
+- Metadatos inconsistentes: el recuento de parámetros disponible (958.716) no cuadra con el sufijo "4B" del nombre ni con el tamaño de repositorio declarado (0,0 GB), lo que indica metadatos incompletos o mal poblados en Hugging Face.
 - Uso multimodal: si el modelo base depende de entrada visual, esta conversión GGUF no incluye, según los artefactos listados, un fichero mmproj que aporte el proyector multimodal, por lo que la capacidad de visión podría no estar operativa.
 - Adopción nula: 0 descargas y 0 "likes" en el momento de la consulta, sin retroalimentación de la comunidad sobre su funcionamiento.
 

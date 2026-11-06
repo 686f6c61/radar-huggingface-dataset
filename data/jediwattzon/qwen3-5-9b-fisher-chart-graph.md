@@ -100,7 +100,7 @@ La comparación relevante es contra el propio modelo base en sus dos formatos: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jediwattzon/qwen3.5-9b-fisher-chart-graph
+- Modelo en Hugging Face: https://huggingface.co/jediwattzon/qwen3.5-9b-fisher-chart-graph
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Base cuantizada MLX 4-bit: https://huggingface.co/mlx-community/Qwen3.5-9B-MLX-4bit
 - Framework Fisher Graph Compilation: https://github.com/JediWattson/fisher-compilation

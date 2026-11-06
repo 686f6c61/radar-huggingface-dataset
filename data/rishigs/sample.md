@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Rishigs/sample` es un modelo alojado en HuggingFace creado por el usuario Rishigs. Fue publicado el 9 de septiembre de 2026 y actualizado el mismo día. Actualmente presenta acceso restringido (gated), lo que significa que es necesario aceptar condiciones adicionales en HuggingFace para poder utilizarlo. La licencia declarada es `unlicense`, que en teoría implica dominio público, si bien el control de acceso contradice esa condición al requerir aprobación.
+El repositorio `Rishigs/sample` es un modelo alojado en Hugging Face creado por el usuario Rishigs. Fue publicado el 9 de septiembre de 2026 y actualizado el mismo día. Actualmente presenta acceso restringido (gated), lo que significa que es necesario aceptar condiciones adicionales en Hugging Face para poder utilizarlo. La licencia declarada es `unlicense`, que en teoría implica dominio público, si bien el control de acceso contradice esa condición al requerir aprobación.
 
 No se ha publicado ninguna documentación técnica, tarjeta de modelo, métricas ni ejemplos de uso en el repositorio. Los metadatos no incluyen arquitectura, tamaño, longitud de contexto, idiomas ni pipeline. Las descargas y likes acumulados son ambos cero, lo que indica que el repositorio no ha sido adoptado por la comunidad ni evaluado en benchmarks públicos. Por tanto, no es posible determinar qué tipo de modelo es, qué problema resuelve ni en qué se diferencia de otras alternativas. Se trata de un repositorio sin información técnica aprovechable en su estado actual.
 
@@ -79,7 +79,7 @@ no disponible. No existen datos de `Rishigs/sample` que permitan comparar parame
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo esta marcado como gated en HuggingFace. Los usuarios deben solicitar acceso y aceptar condiciones adicionales, lo que dificulta la evaluacion y el uso inmediato.
+- Acceso restringido: el modelo esta marcado como gated en Hugging Face. Los usuarios deben solicitar acceso y aceptar condiciones adicionales, lo que dificulta la evaluacion y el uso inmediato.
 - Falta de documentacion tecnica: no existe tarjeta de modelo, ficha tecnica, README ni articulo de investigacion que describa su funcionamiento.
 - Ausencia de datos de entrenamiento: no se ha publicado ningun dato sobre el corpus, los tokens ni las tecnicas de alineacion, por lo que no se pueden conocer sesgos potenciales.
 - Riesgo de alucinacion: no evaluable. Sin benchmarks ni ejemplos, no se puede cuantificar la tasa de alucinaciones.
@@ -90,4 +90,4 @@ no disponible. No existen datos de `Rishigs/sample` que permitan comparar parame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rishigs/sample
+- Hugging Face: https://huggingface.co/Rishigs/sample

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microtensor-io/ctx_compress-84b5d274` es un fine-tuning del modelo `ibm-granite/granite-4.0-h-micro` de IBM, publicado por el usuario `microtensor-io` en HuggingFace. Se trata de un ajuste orientado a compresion de contexto (`ctx_compress`), presumiblemente destinado a tareas de resumen, condensacion o gestion de ventanas de contexto largas, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el objetivo exacto del fine-tuning. El modelo base pertenece a la familia Granite 4.0 Hybrid, una arquitectura hibrida Mamba-2/Transformer desarrollada por IBM.
+`microtensor-io/ctx_compress-84b5d274` es un fine-tuning del modelo `ibm-granite/granite-4.0-h-micro` de IBM, publicado por el usuario `microtensor-io` en Hugging Face. Se trata de un ajuste orientado a compresion de contexto (`ctx_compress`), presumiblemente destinado a tareas de resumen, condensacion o gestion de ventanas de contexto largas, aunque la model card no proporciona detalles sobre el dataset de entrenamiento ni el objetivo exacto del fine-tuning. El modelo base pertenece a la familia Granite 4.0 Hybrid, una arquitectura hibrida Mamba-2/Transformer desarrollada por IBM.
 
 El modelo cuenta con 3.191.396.096 parametros (aproximadamente 3,2 mil millones) almacenados en formato safetensors, con un tamano de repositorio de 6,4 GB. La licencia es Apache 2.0, lo que permite uso comercial, aunque el acceso esta restringido (gated) y requiere aceptar condiciones en la plataforma. El pipeline no esta declarado y no se especifican idiomas soportados en los metadatos.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| microtensor-io/ctx_compress-84b5d274 | ~3,2 B | no disponible | Apache 2.0 | Gated en HuggingFace |
-| ibm-granite/granite-4.0-h-micro (base) | ~3,2 B | no disponible en esta ficha | Apache 2.0 | Publico en HuggingFace |
+| microtensor-io/ctx_compress-84b5d274 | ~3,2 B | no disponible | Apache 2.0 | Gated en Hugging Face |
+| ibm-granite/granite-4.0-h-micro (base) | ~3,2 B | no disponible en esta ficha | Apache 2.0 | Publico en Hugging Face |
 | Otros fine-tunes de Granite 4.0 micro | ~3,2 B | variable | Apache 2.0 | Variable |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -75,13 +75,13 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin benchmarks ni evaluaciones publicadas, el riesgo no esta cuantificado.
 - Sesgos desconocidos: al no documentarse la composicion de los datos de entrenamiento, no es posible evaluar sesgos potenciales.
 - Idiomas no declarados: se desconoce si el modelo mantiene el soporte multilingue del base o si se ha especializado en un subconjunto.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para su adopcion.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para su adopcion.
 - Sin cuantizaciones oficiales: no se publican versiones GGUF, AWQ o GPTQ, lo que limita el despliegue en entornos con recursos ajustados.
 - Licencia Apache 2.0: permite uso comercial, pero al ser un fine-tuning de un modelo de terceros, conviene verificar las condiciones del modelo base y de los datos utilizados.
 - Sin descargas ni validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta, lo que implica ausencia de validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microtensor-io/ctx_compress-84b5d274
+- Modelo en Hugging Face: https://huggingface.co/microtensor-io/ctx_compress-84b5d274
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - Organizacion microtensor-io: https://huggingface.co/microtensor-io

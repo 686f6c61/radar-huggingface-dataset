@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- [HuggingFace: threebobss/parakeet-tdt-0.6b-v3-int4-sherpa](https://huggingface.co/threebobss/parakeet-tdt-0.6b-v3-int4-sherpa)
+- [Hugging Face: threebobss/parakeet-tdt-0.6b-v3-int4-sherpa](https://huggingface.co/threebobss/parakeet-tdt-0.6b-v3-int4-sherpa)
 - [Parakeet-TDT-0.6B-v3 (NVIDIA)](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3)
 - [Parakeet Ultra (Moondream)](https://huggingface.co/moondream/parakeet-ultra)
 - [Exportación fp32 de sherpa-onnx (csukuangfj)](https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3)

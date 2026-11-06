@@ -2,9 +2,9 @@
 
 ## Resumen
 
-STDK/Shirtlift es un modelo publicado en HuggingFace por el usuario STDK bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni casos de uso documentados. El repositorio ocupa 0,5 GB, lo que sugiere un modelo de pequeno tamano, pero no se puede confirmar la naturaleza de los pesos ni su formato.
+STDK/Shirtlift es un modelo publicado en Hugging Face por el usuario STDK bajo licencia Apache 2.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion, arquitectura, datos de entrenamiento ni casos de uso documentados. El repositorio ocupa 0,5 GB, lo que sugiere un modelo de pequeno tamano, pero no se puede confirmar la naturaleza de los pesos ni su formato.
 
-El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace, por lo que no es posible clasificarlo automaticamente como modelo de texto, vision u otra modalidad. Tampoco se declaran idiomas soportados ni se incluyen resultados de benchmarks.
+El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face, por lo que no es posible clasificarlo automaticamente como modelo de texto, vision u otra modalidad. Tampoco se declaran idiomas soportados ni se incluyen resultados de benchmarks.
 
 Dado que la unica informacion verificable es la licencia y el tamano del repositorio, esta ficha se limita a documentar lo que consta y a marcar explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluacion tecnica del modelo requerira inspeccion directa de los archivos del repositorio.
 
@@ -73,4 +73,4 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, taman
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/STDK/Shirtlift
+- Hugging Face: https://huggingface.co/STDK/Shirtlift

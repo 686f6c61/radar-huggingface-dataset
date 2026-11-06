@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario SD324DCSA bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria transformers con etiquetas que apuntan a PyTorch y a la arquitectura BERT, y con pipeline declarado de extraccion de caracteristicas (feature-extraction). El repositorio registra 0 descargas, 0 likes y un tamano de 0.0 GB, y fue creado y actualizado el 12 de septiembre de 2026, con apenas unos segundos de diferencia entre ambos eventos.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario SD324DCSA bajo licencia MIT. Segun los metadatos de la plataforma, se trata de un modelo basado en la libreria transformers con etiquetas que apuntan a PyTorch y a la arquitectura BERT, y con pipeline declarado de extraccion de caracteristicas (feature-extraction). El repositorio registra 0 descargas, 0 likes y un tamano de 0.0 GB, y fue creado y actualizado el 12 de septiembre de 2026, con apenas unos segundos de diferencia entre ambos eventos.
 
 Existe una contradiccion sustancial entre los metadatos y el contenido de la model card. Mientras las etiquetas y el pipeline describen un modelo BERT de extraccion de caracteristicas, el README describe un asistente conversacional de razonamiento con modo de pensamiento (thinking), soporte de function calling, subida de ficheros y busqueda web, ademas de mejoras sobre una version anterior en benchmarks de matematicas, programacion y logica. El propio identificador del repositorio incluye el sufijo "TestRepo", lo que junto al tamano nulo y la ausencia de actividad sugiere que se trata de un repositorio de prueba o de una plantilla, y no de un modelo entrenado y distribuido realmente.
 
@@ -12,7 +12,7 @@ Por todo ello, la ficha siguiente recoge de forma literal los datos disponibles 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Etiqueta de HuggingFace: bert. La model card describe un modelo de razonamiento con modo de pensamiento, lo cual contradice la etiqueta (no disponible de forma fiable) |
+| Arquitectura | Etiqueta de Hugging Face: bert. La model card describe un modelo de razonamiento con modo de pensamiento, lo cual contradice la etiqueta (no disponible de forma fiable) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Por todo ello, la ficha siguiente recoge de forma literal los datos disponibles 
 
 ## Arquitectura y entrenamiento
 
-Los metadatos de HuggingFace clasifican el modelo con la etiqueta "bert" y el pipeline "feature-extraction", lo que sugiere un encoder tipo BERT orientado a representaciones de texto. Sin embargo, la model card describe un sistema completamente distinto: un asistente con modo de razonamiento (thinking), soporte de system prompt, function calling y generacion aumentada mediante busqueda web y subida de ficheros. No se aporta ninguna descripcion tecnica verificable de la arquitectura real (transformer denso, MoE, hibrido, etc.), ni el numero de parametros, ni la longitud de contexto.
+Los metadatos de Hugging Face clasifican el modelo con la etiqueta "bert" y el pipeline "feature-extraction", lo que sugiere un encoder tipo BERT orientado a representaciones de texto. Sin embargo, la model card describe un sistema completamente distinto: un asistente con modo de razonamiento (thinking), soporte de system prompt, function calling y generacion aumentada mediante busqueda web y subida de ficheros. No se aporta ninguna descripcion tecnica verificable de la arquitectura real (transformer denso, MoE, hibrido, etc.), ni el numero de parametros, ni la longitud de contexto.
 
 Tampoco se documentan los datos de entrenamiento: no se indica el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de post-entrenamiento como RLHF o DPO. La unica afirmacion concreta de la model card es que la version actual mejora su profundidad de razonamiento mediante mas recursos computacionales y "mecanismos de optimizacion algoritmica" durante el post-entrenamiento, sin mas detalle. Se menciona que el modelo usa una media de 23 000 tokens por pregunta en el conjunto AIME, frente a 12 000 en la version anterior, lo que apunta a una decodificacion con cadenas de razonamiento largas, pero no se especifica la tecnica subyacente.
 
@@ -81,7 +81,7 @@ Advertencia: dado que el repositorio no contiene pesos (0.0 GB), que no hay desc
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
 - Pesos publicados: no. El repositorio tiene un tamano de 0.0 GB, por lo que actualmente no hay checkpoint descargable.
-- Opciones de despliegue: no verificables. La model card remite a un "repositorio de codigo" externo sin enlace proporcionado; no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI. La etiqueta "endpoints_compatible" sugiere compatibilidad teorica con HuggingFace Inference Endpoints, pero sin pesos no es utilizable.
+- Opciones de despliegue: no verificables. La model card remite a un "repositorio de codigo" externo sin enlace proporcionado; no se confirma compatibilidad con vLLM, llama.cpp, Ollama o TGI. La etiqueta "endpoints_compatible" sugiere compatibilidad teorica con Hugging Face Inference Endpoints, pero sin pesos no es utilizable.
 - Latencia y throughput: no disponible.
 - Parametros de inferencia sugeridos en la model card: temperatura 0.6 y un system prompt con la fecha actual.
 
@@ -104,6 +104,6 @@ No disponible. Al no conocerse el numero de parametros, la arquitectura real ni 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SD324DCSA/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SD324DCSA/MyAwesomeModel-TestRepo
 
 Nota: los resultados de busqueda web proporcionados no guardan relacion con el modelo y corresponden a un restaurante (Cafe Flora, Seattle), por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

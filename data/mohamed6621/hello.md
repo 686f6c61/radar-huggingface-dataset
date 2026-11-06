@@ -50,4 +50,4 @@ No se puede establecer una comparativa porque no hay información sobre las cara
 
 ## Enlaces
 
-- [HuggingFace: Mohamed6621/Hello](https://huggingface.co/Mohamed6621/Hello)
+- [Hugging Face: Mohamed6621/Hello](https://huggingface.co/Mohamed6621/Hello)

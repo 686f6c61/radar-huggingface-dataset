@@ -35,7 +35,7 @@ No existe arquitectura de red neuronal ni proceso de entrenamiento. El repositor
 - Prueba de scanners de seguridad: se utiliza como entrada para validar que un detector no genera falsos positivos ante un artefacto benigno pero con caracteristicas adversariales.
 - Evaluacion de pipelines de admision de modelos: permite verificar que un sistema de admision bloquea o marca correctamente artefactos que no son modelos reales.
 - Desarrollo de reglas de deteccion: los datos del corpus LayerFault sirven para entrenar y afinar detectores de opcodes peligrosos, prompt-injection y otros vectores.
-- Auditoria de repositorios HuggingFace: puede emplearse en pruebas automatizadas para comprobar que la plataforma detecta y etiqueta artefactos de seguridad.
+- Auditoria de repositorios Hugging Face: puede emplearse en pruebas automatizadas para comprobar que la plataforma detecta y etiqueta artefactos de seguridad.
 - Investigacion en seguridad de IA: util como caso de estudio para documentar patrones de ataque y estrategias de mitigacion.
 - Integracion en pipelines de CI/CD de seguridad: se usa como entrada en tests unitarios de herramientas de escaneo de modelos.
 
@@ -64,7 +64,7 @@ No disponible. El corpus LayerFault no publica modelos comparables en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/shard-valid-two-way-control
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/shard-valid-two-way-control
 - Proyecto LayerFault (herramienta de admision de modelos): https://github.com/izm1chael/layerfault
 - Releases de LayerFault: https://github.com/izm1chael/layerfault/releases
 - Documentacion sobre sharding en fine-tuning (contexto general): https://developer.ibm.com/articles/llms-sharding/

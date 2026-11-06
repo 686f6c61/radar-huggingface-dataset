@@ -19,7 +19,7 @@ La informacion publicada es extremadamente escasa: el repositorio no declara lic
 | Tipos de cuantizacion | x-f16, Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, IQ4_XS (cuantizacion estatica) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (modelo base original en formato HuggingFace, segun el campo `convert_type: hf`) |
+| Formato de pesos | GGUF (modelo base original en formato Hugging Face, segun el campo `convert_type: hf`) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No es posible comparar rendimiento con Andromeda-0.5B-destilada porque no existe
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Andromeda-0.5B-destilada-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Andromeda-0.5B-destilada-GGUF
 - Modelo base original: https://huggingface.co/fiel1986/Andromeda-0.5B-destilada
 - Perfil del autor de las cuantizaciones (mradermacher): https://huggingface.co/mradermacher/models
 - Peticiones de cuantizacion a mradermacher: https://huggingface.co/mradermacher/model_requests

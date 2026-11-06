@@ -25,7 +25,7 @@ El entrenamiento combino batches balanceados al 50 % entre muestras de TAGARELA 
 | Modelo base | lgris/w2v_podcasts_base_400k_pt |
 | Datos de ajuste fino | TAGARELA v1 (1.764 shards) y TAGARELA v2 (2.224 shards con transcripciones `stt_parakeet`) |
 | Tarea (pipeline) | automatic-speech-recognition |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -93,10 +93,10 @@ Comparativa de WER declarada por el autor frente a modelos relacionados:
 
 | Modelo | Parametros | Dominio / idioma | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lgris/wav2vec2-podcasts-tagarela-combined | 94,4 M | podcasts, pt-BR | 21,64 (TAGARELA v1), 15,92 (v2), 25,44 (CORAA) | Apache 2.0 | HuggingFace, safetensors + PyTorch |
-| lgris/wav2vec2-podcasts-tagarela-v2 | clase Wav2Vec2 base (≈94 M) | podcasts, pt-BR | 23,75 (v1), 14,96 (v2), 23,98 (CORAA) | no disponible | HuggingFace |
-| lgris/wav2vec2-xls-r-300m-tagarela-v2 | XLS-R 300 M (≈317 M) | multilingue ajustado a pt-BR | 11,75 (TAGARELA v2) | no disponible | HuggingFace |
-| Edresson/wav2vec2-large-xlsr-coraa-portuguese | Wav2Vec2 large XLS-R (clase 300 M) | portugues, corpus CORAA | 32,55 (v1), 27,08 (v2), 22,46 (CORAA) | no disponible | HuggingFace |
+| lgris/wav2vec2-podcasts-tagarela-combined | 94,4 M | podcasts, pt-BR | 21,64 (TAGARELA v1), 15,92 (v2), 25,44 (CORAA) | Apache 2.0 | Hugging Face, safetensors + PyTorch |
+| lgris/wav2vec2-podcasts-tagarela-v2 | clase Wav2Vec2 base (≈94 M) | podcasts, pt-BR | 23,75 (v1), 14,96 (v2), 23,98 (CORAA) | no disponible | Hugging Face |
+| lgris/wav2vec2-xls-r-300m-tagarela-v2 | XLS-R 300 M (≈317 M) | multilingue ajustado a pt-BR | 11,75 (TAGARELA v2) | no disponible | Hugging Face |
+| Edresson/wav2vec2-large-xlsr-coraa-portuguese | Wav2Vec2 large XLS-R (clase 300 M) | portugues, corpus CORAA | 32,55 (v1), 27,08 (v2), 22,46 (CORAA) | no disponible | Hugging Face |
 
 Lectura de la comparativa: el XLS-R 300 M ajustado a TAGARELA v2 obtiene el mejor WER en ese corpus (11,75 %), a costa de triplicar el tamano del modelo. Frente al Wav2Vec2 base ajustado solo con v2, este modelo combinado mejora en TAGARELA v1 (21,64 % frente a 23,75 %) pero empeora ligeramente en TAGARELA v2 (15,92 % frente a 14,96 %) y en CORAA (25,44 % frente a 23,98 %). Frente al modelo de referencia de CORAA, el modelo de lgris es claramente mejor en los dos conjuntos de TAGARELA y peor en CORAA, el dominio para el que se entreno ese checkpoint externo.
 
@@ -116,7 +116,7 @@ Lectura de la comparativa: el XLS-R 300 M ajustado a TAGARELA v2 obtiene el mejo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-combined
+- Modelo en Hugging Face: https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-combined
 - Modelo base preentrenado en podcasts: https://huggingface.co/lgris/w2v_podcasts_base_400k_pt
 - Version ajustada solo con TAGARELA v2: https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-v2
 - Version XLS-R 300M ajustada a TAGARELA v2: https://huggingface.co/lgris/wav2vec2-xls-r-300m-tagarela-v2

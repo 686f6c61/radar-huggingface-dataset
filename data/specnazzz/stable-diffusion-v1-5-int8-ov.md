@@ -2,7 +2,7 @@
 
 ## Resumen
 
-stable-diffusion-v1-5-int8-ov es una conversion del modelo de difusion Stable Diffusion v1.5 al formato OpenVINO IR (Intermediate Representation) con los pesos comprimidos a INT8 mediante NNCF. Lo publica el usuario SpecnaZZZ en HuggingFace reutilizando el procedimiento de compresion de Intel (el identificador de referencia en los ejemplos de la model card apunta a OpenVINO/stable-diffusion-v1-5-int8-ov). No es un modelo nuevo: es el mismo SD 1.5, con la misma arquitectura UNet + VAE + text encoder CLIP, pero empaquetado para inferencia optimizada sobre hardware Intel (CPU, iGPU, NPU y GPU Arc).
+stable-diffusion-v1-5-int8-ov es una conversion del modelo de difusion Stable Diffusion v1.5 al formato OpenVINO IR (Intermediate Representation) con los pesos comprimidos a INT8 mediante NNCF. Lo publica el usuario SpecnaZZZ en Hugging Face reutilizando el procedimiento de compresion de Intel (el identificador de referencia en los ejemplos de la model card apunta a OpenVINO/stable-diffusion-v1-5-int8-ov). No es un modelo nuevo: es el mismo SD 1.5, con la misma arquitectura UNet + VAE + text encoder CLIP, pero empaquetado para inferencia optimizada sobre hardware Intel (CPU, iGPU, NPU y GPU Arc).
 
 El objetivo es reducir el coste computacional y el tamano en disco del SD 1.5 original (unos 4,3 GB en fp32) hasta aproximadamente 2,3 GB, manteniendo la calidad de generacion lo mas intacta posible. La compresion INT8 asimetrica con ratio 1.0 aplica cuantizacion a todos los pesos compatibles, lo que acelera la inferencia en CPU y en aceleradores Intel sin necesidad de GPU dedicada.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stable-diffusion-v1-5-int8-ov (este) | ~1,2 G en total (INT8) | 77 tokens CLIP | OpenVINO IR | creativeml-openrail-m | HuggingFace, 0 descargas |
-| stable-diffusion-v1-5/stable-diffusion-v1-5 | ~1,2 G (fp32/fp16) | 77 tokens CLIP | safetensors | creativeml-openrail-m | HuggingFace, ampliamente usado |
-| OpenVINO/stable-diffusion-v1-5-int8-ov | ~1,2 G (INT8) | 77 tokens CLIP | OpenVINO IR | creativeml-openrail-m | HuggingFace, referencia oficial de Intel |
-| SDXL base 1.0 | ~3,5 G (UNet) | 77 tokens CLIP + OpenCLIP | safetensors | creativeml-openrail-m | HuggingFace, muy usado |
+| stable-diffusion-v1-5-int8-ov (este) | ~1,2 G en total (INT8) | 77 tokens CLIP | OpenVINO IR | creativeml-openrail-m | Hugging Face, 0 descargas |
+| stable-diffusion-v1-5/stable-diffusion-v1-5 | ~1,2 G (fp32/fp16) | 77 tokens CLIP | safetensors | creativeml-openrail-m | Hugging Face, ampliamente usado |
+| OpenVINO/stable-diffusion-v1-5-int8-ov | ~1,2 G (INT8) | 77 tokens CLIP | OpenVINO IR | creativeml-openrail-m | Hugging Face, referencia oficial de Intel |
+| SDXL base 1.0 | ~3,5 G (UNet) | 77 tokens CLIP + OpenCLIP | safetensors | creativeml-openrail-m | Hugging Face, muy usado |
 
 La diferencia principal frente al original es el formato y la precision (INT8 frente a fp16/fp32), con la consiguiente reduccion de tamano y el aumento de velocidad en hardware Intel. Frente a SDXL, este modelo es mucho mas ligero y rapido, pero genera imagenes de menor resolucion y calidad. La version de referencia de Intel (OpenVINO/stable-diffusion-v1-5-int8-ov) es funcionalmente equivalente; este repo parece una copia o republicacion con el mismo procedimiento.
 
@@ -81,7 +81,7 @@ La diferencia principal frente al original es el formato y la precision (INT8 fr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SpecnaZZZ/stable-diffusion-v1-5-int8-ov
+- Repositorio Hugging Face: https://huggingface.co/SpecnaZZZ/stable-diffusion-v1-5-int8-ov
 - Modelo original SD 1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Version de referencia de Intel: https://huggingface.co/OpenVINO/stable-diffusion-v1-5-int8-ov
 - Documentacion de OpenVINO IR: https://docs.openvino.ai/2024/documentation/openvino-ir-format.html

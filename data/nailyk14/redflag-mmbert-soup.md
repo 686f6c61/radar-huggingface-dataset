@@ -82,9 +82,9 @@ No se dispone de datos de benchmarks de alternativas en la información proporci
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedFlag (este modelo) | 307,5 M | no disponible | Clasificación de prompts maliciosos en 5 clases | other (base MIT, datos mixtos) | HuggingFace |
-| `jhu-clsp/mmBERT-base` (modelo base) | no disponible | no disponible | Encoder multilingüe general | MIT | HuggingFace |
-| Clasificadores de seguridad tipo Llama Guard | no disponible | no disponible | Moderación generativa | licencia propia | HuggingFace |
+| RedFlag (este modelo) | 307,5 M | no disponible | Clasificación de prompts maliciosos en 5 clases | other (base MIT, datos mixtos) | Hugging Face |
+| `jhu-clsp/mmBERT-base` (modelo base) | no disponible | no disponible | Encoder multilingüe general | MIT | Hugging Face |
+| Clasificadores de seguridad tipo Llama Guard | no disponible | no disponible | Moderación generativa | licencia propia | Hugging Face |
 
 La comparación cuantitativa con alternativas de la misma categoría no está disponible en la documentación consultada.
 
@@ -101,7 +101,7 @@ La comparación cuantitativa con alternativas de la misma categoría no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nailyk14/redflag-mmbert-soup
+- Modelo en Hugging Face: https://huggingface.co/Nailyk14/redflag-mmbert-soup
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Nailyk14/prompt-safety-multilingual-v2
 - Repositorio GitHub (privado, bajo invitación): `Kylian14/redflag`

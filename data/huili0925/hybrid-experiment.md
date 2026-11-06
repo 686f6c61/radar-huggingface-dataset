@@ -2,7 +2,7 @@
 
 ## Resumen
 
-huili0925/hybrid-experiment es un repositorio experimental publicado por el usuario huili0925 en HuggingFace. No se trata de un modelo de lenguaje preentrenado, sino de una implementación propia y compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de generación. El propio autor indica en la model card que se trata de una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como un release preentrenado listo para producción.
+huili0925/hybrid-experiment es un repositorio experimental publicado por el usuario huili0925 en Hugging Face. No se trata de un modelo de lenguaje preentrenado, sino de una implementación propia y compacta en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de generación. El propio autor indica en la model card que se trata de una configuración "small" pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeña escala, y no como un release preentrenado listo para producción.
 
 El dato más relevante es su tamaño: el checkpoint `model.safetensors` contiene únicamente 24.832 parámetros totales, es decir, aproximadamente 24,8 K parámetros. Esto lo sitúa muy lejos de cualquier modelo de lenguaje utilizable en tareas reales; se trata de una inicialización válida para pruebas, no de un modelo entrenado. El repositorio ocupa 0,0 GB y declara licencia BSD-3-Clause.
 
@@ -77,8 +77,8 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huili0925/hybrid-experiment
-- Perfil del autor en HuggingFace: https://huggingface.co/huili0925
+- Modelo en Hugging Face: https://huggingface.co/huili0925/hybrid-experiment
+- Perfil del autor en Hugging Face: https://huggingface.co/huili0925
 - Otro modelo del mismo autor (prompt-engineering-efficient): https://huggingface.co/huili0925/prompt-engineering-efficient
 - Árbol de ficheros del modelo: https://huggingface.co/huili0925/prompt-engineering-efficient/tree/main
 

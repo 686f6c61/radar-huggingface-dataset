@@ -76,10 +76,10 @@ La informacion proporcionada no incluye datos verificados de modelos alternativo
 
 | Modelo | Parametros | Tipo | Salida destacada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 | 7,1 B (componente de generacion) | DiT single-stream, 32 capas | Hasta 2752x1536, RGBA nativo, hasta 10 referencias | Qwen Research License | HuggingFace y ModelScope |
-| Qwen-Image (generacion anterior de la familia) | No disponible en la informacion | DiT | No disponible en la informacion | No disponible en la informacion | HuggingFace y ModelScope |
-| FLUX.1-dev | No disponible en la informacion | DiT | No disponible en la informacion | Licencia no comercial | HuggingFace |
-| Stable Diffusion 3.5 Large | No disponible en la informacion | DiT (MMDiT) | No disponible en la informacion | Licencia comunitaria de Stability AI | HuggingFace |
+| Qwen-Image-2.1 | 7,1 B (componente de generacion) | DiT single-stream, 32 capas | Hasta 2752x1536, RGBA nativo, hasta 10 referencias | Qwen Research License | Hugging Face y ModelScope |
+| Qwen-Image (generacion anterior de la familia) | No disponible en la informacion | DiT | No disponible en la informacion | No disponible en la informacion | Hugging Face y ModelScope |
+| FLUX.1-dev | No disponible en la informacion | DiT | No disponible en la informacion | Licencia no comercial | Hugging Face |
+| Stable Diffusion 3.5 Large | No disponible en la informacion | DiT (MMDiT) | No disponible en la informacion | Licencia comunitaria de Stability AI | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -96,11 +96,11 @@ La informacion proporcionada no incluye datos verificados de modelos alternativo
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/subalakshmi-neso/Qwen-Image-2.1
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Repositorio de Hugging Face analizado: https://huggingface.co/subalakshmi-neso/Qwen-Image-2.1
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de presentacion: https://qwen.ai/blog?id=qwen-image-2.1
 - Repositorio de codigo en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Servidor de Discord: https://discord.gg/BEYSk3pkSu
 - Fichero de licencia: https://huggingface.co/subalakshmi-neso/Qwen-Image-2.1/blob/main/LICENSE

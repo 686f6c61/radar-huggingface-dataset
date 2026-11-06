@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3-32b-control-IQa-sdf | 32,8B | no disponible (base: 32.768 nativos / 131.072 con YaRN) | Denso, continued pretraining | research-only | HuggingFace, 0 descargas |
+| joshycodes/qwen3-32b-control-IQa-sdf | 32,8B | no disponible (base: 32.768 nativos / 131.072 con YaRN) | Denso, continued pretraining | research-only | Hugging Face, 0 descargas |
 | Qwen/Qwen3-32B (base) | 32,8B | 32.768 nativos, hasta 131.072 con YaRN | Denso | Apache 2.0 | Ampliamente disponible |
 | Qwen/Qwen3-30B-A3B | 30,5B totales, 3,3B activos | 32.768 nativos, hasta 131.072 con YaRN | MoE | Apache 2.0 | Ampliamente disponible |
 | Qwen/Qwen3-14B | 14,8B | 32.768 nativos, hasta 131.072 con YaRN | Denso | Apache 2.0 | Ampliamente disponible |
@@ -87,7 +87,7 @@ Nota: los datos de las filas correspondientes a modelos Qwen3 base proceden de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-control-IQa-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-control-IQa-sdf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Corpus de entrenamiento (referenciado en la model card): https://huggingface.co/joshycodes/qwen3-32b-controls-corpus
 - Repositorio "welfare-improvements" (mencionado en la model card como marco, plan y evaluacion): no se proporciona URL en la informacion disponible.

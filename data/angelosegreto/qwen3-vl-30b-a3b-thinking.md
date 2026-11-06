@@ -99,7 +99,7 @@ Los datos de la siguiente tabla corresponden a información pública general sob
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/ANGELOSEGRETO/Qwen3-VL-30B-A3B-Thinking
+- Repositorio de Hugging Face analizado: https://huggingface.co/ANGELOSEGRETO/Qwen3-VL-30B-A3B-Thinking
 - Repositorio oficial de referencia citado en la model card: https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking
 - Qwen Chat: https://chat.qwenlm.ai/
 - Informe técnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Batnini/knowledge-agent-sft-lora` es un artefacto publicado en HuggingFace por el usuario Batnini del que únicamente se dispone de metadatos: etiquetas `transformers`, `safetensors`, `endpoints_compatible` y `region:us`, además de una referencia bibliográfica a arXiv:1910.09700 que aparece en la plantilla automática de la model card. La model card publicada no contiene información sustantiva: es la plantilla genérica autogenerada por HuggingFace, con todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) marcados como `[More Information Needed]`.
+El repositorio `Batnini/knowledge-agent-sft-lora` es un artefacto publicado en Hugging Face por el usuario Batnini del que únicamente se dispone de metadatos: etiquetas `transformers`, `safetensors`, `endpoints_compatible` y `region:us`, además de una referencia bibliográfica a arXiv:1910.09700 que aparece en la plantilla automática de la model card. La model card publicada no contiene información sustantiva: es la plantilla genérica autogenerada por Hugging Face, con todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluación) marcados como `[More Information Needed]`.
 
 Por el nombre del repositorio cabe inferir, como hipótesis no confirmada por el autor, que se trata de un adaptador LoRA resultante de un ajuste supervisado (*supervised fine-tuning*, SFT) orientado a tareas de agente de conocimiento. Esta interpretación procede exclusivamente de la nomenclatura del identificador y no está respaldada por ningún campo de la model card ni por documentación adicional, por lo que debe tratarse con cautela en cualquier evaluación técnica.
 
@@ -56,7 +56,7 @@ Dado que no se dispone de especificaciones tecnicas ni de evaluacion, los siguie
 - Extraccion de entidades y estructuracion de texto no estructurado: conversion de correos o informes en campos estructurados. No hay evidencia de que el modelo haya sido entrenado para salida en formato JSON.
 - Prototipado academico de agentes conversacionales: empleo en entornos de investigacion donde el coste computacional del ajuste completo es prohibitivo, aprovechando la naturaleza LoRA del artefacto.
 - Evaluacion comparativa de tecnicas PEFT: uso del repositorio como caso de estudio dentro de un estudio mas amplio sobre eficacia de LoRA frente a ajuste completo. Requiere que los pesos esten efectivamente publicados.
-- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el artefacto podria servirse mediante la infraestructura de Inference Endpoints de HuggingFace, siempre que los pesos existan en el repositorio, extremo que el tamano declarado de 0.0 GB pone en duda.
+- Despliegue en endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el artefacto podria servirse mediante la infraestructura de Inference Endpoints de Hugging Face, siempre que los pesos existan en el repositorio, extremo que el tamano declarado de 0.0 GB pone en duda.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros del modelo base y el tamano del adaptador.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible. No puede determinarse si el modelo cabe en una RTX 4090, una RTX 3090 u otras tarjetas de gama consumer sin conocer su tamano.
-- Opciones de despliegue: no confirmadas. La etiqueta `endpoints_compatible` apunta a compatibilidad con la infraestructura de HuggingFace; la compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta documentada.
+- Opciones de despliegue: no confirmadas. La etiqueta `endpoints_compatible` apunta a compatibilidad con la infraestructura de Hugging Face; la compatibilidad con vLLM, llama.cpp, Ollama o TGI no esta documentada.
 - Latencia y throughput: no disponibles.
 - Observacion relevante: el tamano del repositorio figura como 0.0 GB, lo que sugiere que los pesos del adaptador podrian no estar publicados o ser de un tamano despreciable. Antes de planificar cualquier despliegue debe verificarse la existencia real de los ficheros `safetensors` en el repositorio.
 
@@ -77,7 +77,7 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el mo
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace y no contiene informacion tecnica verificable.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face y no contiene informacion tecnica verificable.
 - Licencia no especificada: al no declararse licencia, no puede asumirse permiso para uso comercial, redistribucion o modificacion. En ausencia de licencia explicita debe presumirse reserva de derechos por parte del autor.
 - Modelo base desconocido: sin identificar el modelo subyacente no puede determinarse la procedencia de los datos de entrenamiento ni las obligaciones de atribucion derivadas de la licencia del modelo original.
 - Pesos posiblemente no publicados: el tamano de repositorio de 0.0 GB y la ausencia de descargas indican que el artefacto podria estar vacio o incompleto. Debe comprobarse antes de cualquier uso.
@@ -90,6 +90,6 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Batnini/knowledge-agent-sft-lora
+- Repositorio en Hugging Face: https://huggingface.co/Batnini/knowledge-agent-sft-lora
 - Referencia bibliografica citada en la plantilla de la model card: https://arxiv.org/abs/1910.09700 (Lacoste et al., *Quantifying the Carbon Emissions of Machine Learning*), empleada unicamente para el calculo de impacto ambiental y sin relacion con la arquitectura del modelo.
 - No se han encontrado papers, blogs, repositorios de codigo ni demostraciones asociados al modelo en la informacion disponible.

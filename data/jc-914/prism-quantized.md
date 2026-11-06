@@ -100,7 +100,7 @@ La comparación natural es contra el modelo base sin cuantizar: misma licencia y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jc-914/prism-quantized
+- Modelo en Hugging Face: https://huggingface.co/jc-914/prism-quantized
 - Modelo base: https://huggingface.co/sarvamai/prism
 - Estadísticas de cuantización por capa: `quantization/quant_stats.json` (incluido en el repo)
 - Salidas completas de evaluación: `quantization/eval_*.json` (incluidas en el repo)

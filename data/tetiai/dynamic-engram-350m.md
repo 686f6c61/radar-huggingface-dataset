@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dynamic Engram 350M es un modelo de 365,4 millones de parámetros desarrollado por TetiAI S.r.l. (autor `tetiai` en HuggingFace) que implementa un enfoque poco habitual: responder preguntas a partir de una memoria que se inyecta en tiempo de inferencia, sin reentrenar ni modificar los pesos. El modelo parte de PleIAs/Pleias-RAG-350M (arquitectura Llama, 26 capas, dimensión 1024) y le añade unos 12 millones de parámetros en forma de lectores Engram, mecanismo de selección de candidatos y una cabeza de significado. La idea central es que los hechos residen en la memoria externa, no en los pesos, y el modelo aprende una vez a manejar memorias en general.
+Dynamic Engram 350M es un modelo de 365,4 millones de parámetros desarrollado por TetiAI S.r.l. (autor `tetiai` en Hugging Face) que implementa un enfoque poco habitual: responder preguntas a partir de una memoria que se inyecta en tiempo de inferencia, sin reentrenar ni modificar los pesos. El modelo parte de PleIAs/Pleias-RAG-350M (arquitectura Llama, 26 capas, dimensión 1024) y le añade unos 12 millones de parámetros en forma de lectores Engram, mecanismo de selección de candidatos y una cabeza de significado. La idea central es que los hechos residen en la memoria externa, no en los pesos, y el modelo aprende una vez a manejar memorias en general.
 
 La relevancia práctica está en su orientación a CPU: se distribuye con grafos ONNX que incorporan la memoria, cuantización int8 e int4 y decodificación con borrador procedente de la memoria, con un tiempo de respuesta de aproximadamente 0,4 segundos por respuesta en dos hilos de CPU usando solo la pregunta en el prompt. Está pensado para casos de recuperación de hechos personales cortos y multilingües (inglés, italiano, francés, alemán, español y portugués) con abstención explícita cuando la respuesta no está en la memoria.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tetiai/dynamic-engram-350m | 365,4M | No disponible | Memoria inyectada en inferencia con puntero y abstención | Apache 2.0 | HuggingFace, ONNX y safetensors |
-| PleIAs/Pleias-RAG-350M | 350M (base) | No disponible | Modelo base de generación aumentada por recuperación | No disponible en la información | HuggingFace |
+| tetiai/dynamic-engram-350m | 365,4M | No disponible | Memoria inyectada en inferencia con puntero y abstención | Apache 2.0 | Hugging Face, ONNX y safetensors |
+| PleIAs/Pleias-RAG-350M | 350M (base) | No disponible | Modelo base de generación aumentada por recuperación | No disponible en la información | Hugging Face |
 | Modelos RAG de tamaño similar | Variable | Variable | Recuperación externa más generación | Variable | Variable |
 
 No se dispone de datos de rendimiento comparativos con alternativas en la información proporcionada; la comparación se limita a parámetros, enfoque y licencia.
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparativos con alternativas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tetiai/dynamic-engram-350m
+- Modelo en Hugging Face: https://huggingface.co/tetiai/dynamic-engram-350m
 - Modelo base: https://huggingface.co/PleIAs/Pleias-RAG-350M
 - Paper y código: https://doi.org/10.5281/zenodo.23803703 (Zenodo)

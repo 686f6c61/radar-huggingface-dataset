@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Precision limpia | Tasa de exito del ataque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `authentrics/mnist-badnets-repaired` (este modelo) | LeNet-5 MNIST, backdoor eliminado con `exclude_training` | 96,98 % | 0,13 % | Apache-2.0 | Publico en HuggingFace, 0 descargas |
+| `authentrics/mnist-badnets-repaired` (este modelo) | LeNet-5 MNIST, backdoor eliminado con `exclude_training` | 96,98 % | 0,13 % | Apache-2.0 | Publico en Hugging Face, 0 descargas |
 | `authentrics/mnist-badnets-poisoned` | LeNet-5 MNIST con backdoor BadNets | 98,25 % | 8,70 % | No indicada en la informacion disponible | Referenciado en la model card de este repositorio |
 | LeNet-5 original sobre MNIST (LeCun et al., 1998) | CNN de referencia para MNIST, sin backdoor | No disponible en la informacion proporcionada | No aplicable | No aplicable | Referencia academica ampliamente replicada |
 | Otras variantes de la familia TrojAI | Modelos envenenados de referencia para investigacion en trojan detection | No disponible | No disponible | No disponible | Conjuntos de referencia publicos del programa TrojAI |
@@ -102,7 +102,7 @@ La comparacion con alternativas de gran escala no es significativa: no existen "
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/authentrics/mnist-badnets-repaired
+- Modelo en Hugging Face: https://huggingface.co/authentrics/mnist-badnets-repaired
 - Checkpoint envenenado de partida: https://huggingface.co/authentrics/mnist-badnets-poisoned
 - Codigo y resultados de la demostracion: https://github.com/Authentrics-ai/trojai-authentrics-demo
 - Ejemplos y guia de usuario del SDK: https://github.com/Authentrics-ai/authentrics-analysis-examples

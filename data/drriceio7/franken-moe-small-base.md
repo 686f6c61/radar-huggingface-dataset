@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Franken-MoE-Small-Base es un modelo de lenguaje experimental publicado por el usuario DrRiceIO7 en HuggingFace, consistente en un «upcycling» del modelo denso Qwen/Qwen3-0.6B hacia una arquitectura de mezcla de expertos (MoE) nativa compatible con la clase `Qwen3MoeForCausalLM`. El resultado es un modelo de 2.445.967.360 parámetros totales (unos 2,45B) que solo activa aproximadamente 860M parámetros por token, de modo que su coste computacional y su velocidad de generación se aproximan a los de un modelo de menos de 1B de parámetros pese a cuadruplicar el tamaño de la base original.
+Franken-MoE-Small-Base es un modelo de lenguaje experimental publicado por el usuario DrRiceIO7 en Hugging Face, consistente en un «upcycling» del modelo denso Qwen/Qwen3-0.6B hacia una arquitectura de mezcla de expertos (MoE) nativa compatible con la clase `Qwen3MoeForCausalLM`. El resultado es un modelo de 2.445.967.360 parámetros totales (unos 2,45B) que solo activa aproximadamente 860M parámetros por token, de modo que su coste computacional y su velocidad de generación se aproximan a los de un modelo de menos de 1B de parámetros pese a cuadruplicar el tamaño de la base original.
 
 El interés técnico del modelo es doble. Por un lado, demuestra que es posible expandir un transformer denso a MoE reutilizando los pesos preentrenados de una base entrenada sobre 18 billones de tokens, con 8 expertos enrutados y activación top-2, atención GQA 16:8 con QK-Norm y una ventana de contexto de 40.960 tokens. Por otro lado, sirve como caso de estudio reproducible de las herramientas del ecosistema (Unsloth, llama.cpp, vLLM, SGLang, Ollama) sobre el formato oficial de Qwen 3 MoE, con tensores fusionados en 3D.
 
@@ -88,6 +88,6 @@ La comparación debe leerse con cautela: el modelo aquí descrito no ha sido ree
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/DrRiceIO7/Franken-MoE-Small-Base
+- Página del modelo en Hugging Face: https://huggingface.co/DrRiceIO7/Franken-MoE-Small-Base
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de búsqueda web disponibles; los resultados devueltos correspondían al estándar MIAPPE sobre fenotipado de plantas y no guardan relación con este modelo.

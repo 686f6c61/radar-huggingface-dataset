@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w40-s100` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`. Con 2.018.511.234 parámetros totales (aproximadamente 2,02 mil millones) y un repositorio de 6,3 GB en formato safetensors, se trata de un modelo de tamaño medio, probablemente orientado a experimentación o investigación más que a producción generalista. La nomenclatura del identificador sugiere una variante concreta dentro de una familia de experimentos (posibles parámetros de configuración codificados en el nombre: `r18`, `a2`, `w13`, `chrono4`, `w40`, `s100`), aunque no se dispone de documentación que los explique.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w40-s100` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`. Con 2.018.511.234 parámetros totales (aproximadamente 2,02 mil millones) y un repositorio de 6,3 GB en formato safetensors, se trata de un modelo de tamaño medio, probablemente orientado a experimentación o investigación más que a producción generalista. La nomenclatura del identificador sugiere una variante concreta dentro de una familia de experimentos (posibles parámetros de configuración codificados en el nombre: `r18`, `a2`, `w13`, `chrono4`, `w40`, `s100`), aunque no se dispone de documentación que los explique.
 
-El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, pero el acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo. No se han publicado resultados de benchmarks, descripción de arquitectura, datos de entrenamiento ni idiomas soportados en la información disponible. Tampoco cuenta con descargas ni likes en el momento de redactar esta ficha, lo que indica que se trata de un artefacto reciente o de baja difusión.
+El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial y modificación, pero el acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo. No se han publicado resultados de benchmarks, descripción de arquitectura, datos de entrenamiento ni idiomas soportados en la información disponible. Tampoco cuenta con descargas ni likes en el momento de redactar esta ficha, lo que indica que se trata de un artefacto reciente o de baja difusión.
 
 Su relevancia actual es limitada para el ecosistema general, pero puede interesar a investigadores que sigan la serie `nanochrono` o que necesiten un checkpoint de ~2B parámetros para fine-tuning o experimentos controlados. Dada la ausencia de documentación, cualquier evaluación rigurosa requerirá inspeccionar la configuración del modelo y ejecutar pruebas propias.
 
@@ -77,7 +77,7 @@ La comparación es estructural: el checkpoint de alfred8995 carece de documentac
 ## Limitaciones y advertencias
 
 - **Ausencia total de documentación**: no se describen arquitectura, datos de entrenamiento, idiomas ni capacidades; cualquier uso en producción exige evaluación previa.
-- **Acceso restringido (gated)**: requiere aceptar condiciones en HuggingFace, lo que añade fricción a la automatización y a la reproducibilidad.
+- **Acceso restringido (gated)**: requiere aceptar condiciones en Hugging Face, lo que añade fricción a la automatización y a la reproducibilidad.
 - **Sin benchmarks ni métricas**: no hay evidencia de calidad; el riesgo de alucinación y de bajo rendimiento es desconocido.
 - **Sesgos**: no evaluados; al no conocerse el corpus, no se pueden anticipar sesgos de género, idioma o dominio.
 - **Licencia Apache 2.0**: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene revisar si el checkpoint incorpora material de terceros con condiciones adicionales.
@@ -88,4 +88,4 @@ La comparación es estructural: el checkpoint de alfred8995 carece de documentac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w40-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w40-s100

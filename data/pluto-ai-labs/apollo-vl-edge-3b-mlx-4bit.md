@@ -71,8 +71,8 @@ No se dispone de datos comparativos con otros modelos de la misma categoria. Aun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-4bit
-- Perfil de Pluto-AI-Labs en HuggingFace: https://huggingface.co/Pluto-AI-Labs
+- Repositorio Hugging Face: https://huggingface.co/Pluto-AI-Labs/Apollo-VL-Edge-3B-MLX-4bit
+- Perfil de Pluto-AI-Labs en Hugging Face: https://huggingface.co/Pluto-AI-Labs
 - GitHub de Pluto AI Research Lab: https://github.com/Pluto-AI-Labs
 - Coleccion Atlas-Coding-Models: https://huggingface.co/collections/Pluto-AI-Labs/atlas-coding-models
 - Version GGUF por mradermacher: https://huggingface.co/mradermacher/Apollo-VL-Edge-3B-i1-GGUF

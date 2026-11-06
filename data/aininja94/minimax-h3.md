@@ -4,7 +4,7 @@
 
 MiniMax-H3 es un modelo de generación omni-modal de propósito general desarrollado por MiniMax, la compañía detrás de la serie Hailuo. Según el anuncio oficial, H3 puede entender de forma conjunta contextos multimodales que combinan texto, imágenes, vídeo y audio, y genera vídeo con audio estéreo nativo a resoluciones de hasta 2K y una duración máxima de 15 segundos. Se presenta como un avance en la integración de generación de vídeo y sonido sincronizado en un único modelo abierto, lo que lo diferencia de la mayoría de generadores de vídeo que producen solo pista visual o requieren un módulo de audio separado.
 
-El repositorio de HuggingFace listado bajo el identificador AiNinja94/MiniMax-H3 es un espejo de la comunidad con un tamaño de 0.1 GB y sin datos de licencia ni idiomas; el repositorio oficial se encuentra en GitHub bajo MiniMax-AI/MiniMax-H3. La información técnica pública disponible es limitada: no se han publicado detalles de arquitectura, número de parámetros, contexto o requisitos de hardware. Pese a ello, el interés de la comunidad es evidente (10 likes en el espejo) y el blog oficial describe su propósito general: romper las barreras entre tareas y modalidades dentro de un solo modelo generativo.
+El repositorio de Hugging Face listado bajo el identificador AiNinja94/MiniMax-H3 es un espejo de la comunidad con un tamaño de 0.1 GB y sin datos de licencia ni idiomas; el repositorio oficial se encuentra en GitHub bajo MiniMax-AI/MiniMax-H3. La información técnica pública disponible es limitada: no se han publicado detalles de arquitectura, número de parámetros, contexto o requisitos de hardware. Pese a ello, el interés de la comunidad es evidente (10 likes en el espejo) y el blog oficial describe su propósito general: romper las barreras entre tareas y modalidades dentro de un solo modelo generativo.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ El repositorio de HuggingFace listado bajo el identificador AiNinja94/MiniMax-H3
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 
-Nota: el repositorio de HuggingFace listado (AiNinja94/MiniMax-H3) tiene un tamaño de 0.1 GB, lo que sugiere que es un espejo parcial o una versión cuantizada de la comunidad, pero no se puede confirmar el contenido exacto sin inspeccionarlo.
+Nota: el repositorio de Hugging Face listado (AiNinja94/MiniMax-H3) tiene un tamaño de 0.1 GB, lo que sugiere que es un espejo parcial o una versión cuantizada de la comunidad, pero no se puede confirmar el contenido exacto sin inspeccionarlo.
 
 ## Arquitectura y entrenamiento
 
@@ -60,14 +60,14 @@ No disponible. No se han encontrado comparaciones publicadas con otros modelos d
 ## Limitaciones y advertencias
 
 - No hay datos públicos sobre sesgos, alucinaciones o limitaciones de idioma del modelo.
-- El repositorio de HuggingFace listado (AiNinja94/MiniMax-H3) no es el oficial y no tiene licencia declarada; no se puede garantizar su uso comercial sin verificar la licencia en el repositorio de GitHub.
+- El repositorio de Hugging Face listado (AiNinja94/MiniMax-H3) no es el oficial y no tiene licencia declarada; no se puede garantizar su uso comercial sin verificar la licencia en el repositorio de GitHub.
 - La generación de vídeo y audio es una tarea computacionalmente intensiva; probablemente requiere hardware de alto rendimiento (A100, H100) para inferencia, aunque no se ha confirmado.
 - El modelo es reciente (creado en agosto de 2026 según la fecha del repo) y la documentación técnica es escasa, lo que implica un riesgo para su uso en producción.
 - No se han publicado benchmarks ni evaluaciones de seguridad o sesgo, por lo que su comportamiento en entornos reales es desconocido.
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo de la comunidad): https://huggingface.co/AiNinja94/MiniMax-H3
+- Repositorio Hugging Face (espejo de la comunidad): https://huggingface.co/AiNinja94/MiniMax-H3
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial de MiniMax (anuncio del modelo): https://www.minimax.io/blog/minimax-h3
 - Hub de la comunidad (ai-models-lab): https://github.com/ai-models-lab/minimax-h3

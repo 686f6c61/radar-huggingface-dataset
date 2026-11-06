@@ -24,7 +24,7 @@ Es relevante ahora porque el cuello de botella práctico de los modelos de víde
 | Modelo base | Comfy-Org/MiniMax-H3 (relación: adapter) |
 | Pipeline declarado | text-to-video |
 | Variantes incluidas | HyperFlow 8 pasos (4 ficheros), LightX2V FL2V/Ref2V dynamic-rank (5 ficheros), VDN-H3 8 pasos (3 ficheros), TaoMate FL2VA 3 pasos EMA (1 fichero, experimental) |
-| Fecha de creación / actualización | 2026-10-27 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-10-27 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,7 +93,7 @@ Todas las alternativas comparables son también adaptadores LoRA para el mismo m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/MiniMax-H3-Turbo-Lora-ComfyUI
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/MiniMax-H3-Turbo-Lora-ComfyUI
 - Modelo base: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio espejo del mismo contenido: https://huggingface.co/drbaph/MiniMax-H3-Turbo-Lora-ComfyUI
 - Repositorio previo del mismo autor: https://huggingface.co/taurusduan/MiniMax-H3-Turbo-Lora

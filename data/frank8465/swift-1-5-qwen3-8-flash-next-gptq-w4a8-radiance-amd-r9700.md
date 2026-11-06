@@ -113,7 +113,7 @@ Comparación con la cuantización del autor del motor sobre el mismo checkpoint:
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/frank8465/Swift-1.5-Qwen3.8-Flash-Next-GPTQ-W4A8-Radiance-AMD-R9700
+- Hugging Face del modelo: https://huggingface.co/frank8465/Swift-1.5-Qwen3.8-Flash-Next-GPTQ-W4A8-Radiance-AMD-R9700
 - Modelo base: https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Modelo raíz: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia `swift-open-license-1.0`: https://huggingface.co/ukisai/Swift-Qwen3.8-Flash-Next/blob/main/LICENSE

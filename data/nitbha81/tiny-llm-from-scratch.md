@@ -4,7 +4,7 @@
 
 `Nitbha81/tiny-llm-from-scratch` es un modelo de lenguaje de caracteres (character-level) construido desde cero por el usuario Nitbha81 como ejercicio de aprendizaje. Se trata de una implementacion minimalista de un transformer de estilo GPT, escrita en PyTorch, con atencion multi-cabeza, capas feed-forward y un tokenizador a nivel de caracter. El modelo cuenta con aproximadamente 100.000 parametros, lo que lo situa varios ordenes de magnitud por debajo de cualquier LLM de produccion.
 
-El proposito declarado por el autor es didactico: comprender la mecanica interna de los grandes modelos de lenguaje implementando cada componente manualmente. No se ha entrenado con un corpus a gran escala ni se ha sometido a tecnicas de alineacion como RLHF o DPO. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no dispone de pipeline declarado en HuggingFace.
+El proposito declarado por el autor es didactico: comprender la mecanica interna de los grandes modelos de lenguaje implementando cada componente manualmente. No se ha entrenado con un corpus a gran escala ni se ha sometido a tecnicas de alineacion como RLHF o DPO. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y no dispone de pipeline declarado en Hugging Face.
 
 Su relevancia actual es exclusivamente formativa: sirve como referencia para quienes quieren replicar el ciclo completo de entrenamiento de un transformer (tokenizacion, forward pass, perdida, backpropagation) sin depender de frameworks de alto nivel. No es un modelo apto para uso en produccion ni para tareas reales de generacion de texto.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Nitbha81/tiny-llm-from-scratch | ~100K | no disponible | MIT | Repo HuggingFace, sin pesos en formato estandar |
+| Nitbha81/tiny-llm-from-scratch | ~100K | no disponible | MIT | Repo Hugging Face, sin pesos en formato estandar |
 | GPT-2 small (referencia) | 124M | 1024 | MIT | Pesos en safetensors, ampliamente soportado |
 | TinyStories-1M (referencia) | ~1M | 512 | MIT | Pesos en safetensors, integrable en transformers |
 | nanoGPT (referencia) | configurable | configurable | MIT | Codigo de entrenamiento, no pesos preentrenados |
@@ -82,4 +82,4 @@ La comparativa se ofrece a titulo orientativo: los tres modelos de referencia so
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Nitbha81/tiny-llm-from-scratch
+- Hugging Face: https://huggingface.co/Nitbha81/tiny-llm-from-scratch

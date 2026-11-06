@@ -84,9 +84,9 @@ Los unicos datos cuantitativos que aporta el autor son de entrenamiento y de eva
 
 | Modelo / enfoque | Parametros | Contexto | Alfa nativa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Image-Alpha-LoRA (este) | No disponible (repo 0,2 GB) | No aplica | Si, via VAE RGBA | `moss-alpha-poc` (other) | HuggingFace, ComfyUI |
-| MOSS-Image-SFT (modelo base sin LoRA) | No disponible | No aplica | No (latentes RGB opacos) | No disponible en la informacion | HuggingFace |
-| trmz/flux2-klein-alpha (VAE RGBA) | No disponible | No aplica | Si, pero requiere un modelo que emita alfa en el latente | Apache-2.0 | HuggingFace |
+| MOSS-Image-Alpha-LoRA (este) | No disponible (repo 0,2 GB) | No aplica | Si, via VAE RGBA | `moss-alpha-poc` (other) | Hugging Face, ComfyUI |
+| MOSS-Image-SFT (modelo base sin LoRA) | No disponible | No aplica | No (latentes RGB opacos) | No disponible en la informacion | Hugging Face |
+| trmz/flux2-klein-alpha (VAE RGBA) | No disponible | No aplica | Si, pero requiere un modelo que emita alfa en el latente | Apache-2.0 | Hugging Face |
 | Pipeline clasico: difusion + rembg/SAM | No aplica | No aplica | Recorte binario, sin translucidez parcial | Depende de cada componente | Ampliamente disponible |
 
 La diferencia relevante frente al pipeline clasico no es de calidad bruta sino de tipo de salida: el LoRA produce alfa en el propio latente, con transparencia parcial, mientras que el recorte posterior tiende a binomizar el canal alfa y a fallar en celosias, alas y cristal.
@@ -106,9 +106,9 @@ La diferencia relevante frente al pipeline clasico no es de calidad bruta sino d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paralaif/MOSS-Image-Alpha-LoRA
+- Modelo en Hugging Face: https://huggingface.co/paralaif/MOSS-Image-Alpha-LoRA
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - VAE RGBA (trmz/flux2-klein-alpha, Apache-2.0): https://huggingface.co/trmz/flux2-klein-alpha
 - Pesos empaquetados para ComfyUI (Comfy-Org/MOSS-Image): https://huggingface.co/Comfy-Org/MOSS-Image
 - Paper referenciado en los tags: https://arxiv.org/abs/2507.09308
-- Ejemplos e imagenes de la galeria: carpeta `examples/` del repositorio en HuggingFace
+- Ejemplos e imagenes de la galeria: carpeta `examples/` del repositorio en Hugging Face

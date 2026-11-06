@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `newmachina/perceptron_and_gate` es un perceptrón de una sola capa entrenado para implementar la compuerta lógica AND. Con solo 3 parámetros (dos pesos y un sesgo), representa el ejemplo más básico de aprendizaje automático supervisado y sirve como demostración didáctica de los fundamentos de las redes neuronales. Fue publicado por el usuario `newmachina` en HuggingFace bajo licencia Apache 2.0, aunque no se proporciona documentación adicional ni detalles de entrenamiento.
+El modelo `newmachina/perceptron_and_gate` es un perceptrón de una sola capa entrenado para implementar la compuerta lógica AND. Con solo 3 parámetros (dos pesos y un sesgo), representa el ejemplo más básico de aprendizaje automático supervisado y sirve como demostración didáctica de los fundamentos de las redes neuronales. Fue publicado por el usuario `newmachina` en Hugging Face bajo licencia Apache 2.0, aunque no se proporciona documentación adicional ni detalles de entrenamiento.
 
 Su relevancia actual es puramente pedagógica: permite ilustrar el funcionamiento de un modelo lineal, el algoritmo de descenso de gradiente y la diferencia entre problemas linealmente separables y no separables. No es un modelo utilizable en producción ni comparable con los LLM modernos, pero resulta útil como punto de partida para quienes se inician en el aprendizaje automático.
 
@@ -35,7 +35,7 @@ El modelo es un perceptron clasico: una unica neurona con funcion de activacion 
 
 - Material didactico en cursos de introduccion al aprendizaje automatico: permite visualizar como un modelo lineal separa clases en un espacio bidimensional.
 - Demostracion de la regla de aprendizaje del perceptron: los estudiantes pueden modificar los pesos y observar el cambio en la frontera de decision.
-- Ejemplo de serializacion de modelos con safetensors: muestra como almacenar y cargar un modelo minimo en el ecosistema HuggingFace.
+- Ejemplo de serializacion de modelos con safetensors: muestra como almacenar y cargar un modelo minimo en el ecosistema Hugging Face.
 - Prueba de pipelines de inferencia: sirve para verificar que una infraestructura de despliegue (por ejemplo, un servidor de inferencia) funciona correctamente con un modelo trivial.
 - Comparacion con compuertas OR y XOR: ilustra la limitacion de los modelos lineales ante problemas no linealmente separables (XOR).
 - Ejercicio de implementacion manual: los desarrolladores pueden reproducir el modelo desde cero y comparar sus resultados con los pesos publicados.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Dado 
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables en el mismo repositorio o con la misma finalidad publicados por otros autores. Los perceptrones para compuertas AND suelen implementarse como ejercicios de codigo (por ejemplo, en Python puro) y no se publican como modelos en HuggingFace. Por tanto, la comparativa no esta disponible.
+No se dispone de modelos comparables en el mismo repositorio o con la misma finalidad publicados por otros autores. Los perceptrones para compuertas AND suelen implementarse como ejercicios de codigo (por ejemplo, en Python puro) y no se publican como modelos en Hugging Face. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -66,6 +66,6 @@ No se dispone de modelos comparables en el mismo repositorio o con la misma fina
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/newmachina/perceptron_and_gate
+- Repositorio Hugging Face: https://huggingface.co/newmachina/perceptron_and_gate
 - Referencia sobre el algoritmo del perceptron para AND (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/implementation-of-perceptron-algorithm-for-and-logic-gate-with-2-bit-binary-input/
 - Ejemplo educativo de perceptron para AND en Python (GitHub): https://github.com/daichi0710/lg2t-part1-and-gate

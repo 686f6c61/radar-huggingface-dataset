@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Samin es un modelo publicado en HuggingFace por el usuario Kamrun-1 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente sin validación por parte de la comunidad.
+Samin es un modelo publicado en Hugging Face por el usuario Kamrun-1 bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: se limita a declarar la licencia, sin especificar arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicación reciente sin validación por parte de la comunidad.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante, ya que no hay información sobre sus capacidades, su arquitectura ni su proceso de entrenamiento. La ficha que sigue documenta únicamente los metadatos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha hecho público.
 
@@ -79,5 +79,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kamrun-1/Samin
+- Repositorio en Hugging Face: https://huggingface.co/Kamrun-1/Samin
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_ministral-8b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/sft_writingprompts_nemotron-nano-30b-a3b_as_ministral-8b_seed42
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16
 - Herramienta de entrenamiento Tinker: https://thinkingmachines.ai/tinker/

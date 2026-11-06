@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rewrite3-shorter-4B (esta ficha) | 4,66B | 32.768 | Reescritura con CoT, cuantizado NVFP4 | Qwen3.5 base | HuggingFace |
-| rewrite2-4b | 4B (aprox.) | No disponible | Reescritura sin CoT | No disponible | HuggingFace (GGUF) |
+| rewrite3-shorter-4B (esta ficha) | 4,66B | 32.768 | Reescritura con CoT, cuantizado NVFP4 | Qwen3.5 base | Hugging Face |
+| rewrite2-4b | 4B (aprox.) | No disponible | Reescritura sin CoT | No disponible | Hugging Face (GGUF) |
 | rewrite3 (familia) | 4B / 9B / 27B | No disponible | Reescritura con CoT, versiones shorter y keep | Qwen3.5 base | Anunciada, no publicada en su totalidad |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de estos modelos entre sí.
@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aikexue170/rewrite3-4b-shorter-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/aikexue170/rewrite3-4b-shorter-nvfp4
 - Modelo anterior rewrite2-4b (GGUF): https://huggingface.co/aikexue170/rewrite2-4b-gguf
 - Modelo de puntuación jevnovel 0.8B FP8: https://huggingface.co/aikexue170/jev-novel-3-0.8b-fp8

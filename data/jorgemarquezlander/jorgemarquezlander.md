@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jorgemarquezlander/jorgemarquezlander` es un repositorio alojado en HuggingFace cuyo contenido es una tarjeta de presentación personal (perfil de usuario), no un modelo de aprendizaje automático. El autor, Jorge Márquez Lander, se describe como ingeniero y desarrollador, fundador de Aeon Weblab (2008–presente), con actividad en IA aplicada (LLMs locales con LM Studio y Ollama, agentes de código, RAG), ingeniería de datos y desarrollo web (Next.js, React, TypeScript, Firebase). El repositorio no incluye pesos, configuración de arquitectura ni tokenizador.
+`jorgemarquezlander/jorgemarquezlander` es un repositorio alojado en Hugging Face cuyo contenido es una tarjeta de presentación personal (perfil de usuario), no un modelo de aprendizaje automático. El autor, Jorge Márquez Lander, se describe como ingeniero y desarrollador, fundador de Aeon Weblab (2008–presente), con actividad en IA aplicada (LLMs locales con LM Studio y Ollama, agentes de código, RAG), ingeniería de datos y desarrollo web (Next.js, React, TypeScript, Firebase). El repositorio no incluye pesos, configuración de arquitectura ni tokenizador.
 
 Los metadatos de la plataforma son mínimos: 0 descargas, 0 likes, sin pipeline declarado, sin licencia, sin idiomas especificados y con un único tag de región (`region:us`). Las fechas de creación y actualización (24 de octubre de 2026, con un segundo de diferencia) son consistentes con la creación automática de un repositorio de perfil más que con la publicación de un artefacto entrenado.
 
@@ -85,6 +85,6 @@ No disponible. Un repositorio de perfil sin pesos ni licencia no es comparable c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jorgemarquezlander/jorgemarquezlander
+- Repositorio en Hugging Face: https://huggingface.co/jorgemarquezlander/jorgemarquezlander
 - Portfolio del autor (citado en el README): https://jorgemarquezlander.web.app/
 - Resultados de búsqueda web: ninguno relevante. Las páginas recuperadas tratan sobre el orden de visionado de la serie de anime "The Seven Deadly Sins" (epicdope.com, wikihow.com, myanimepulse.com, jpbound.com, fictionhorizon.com) y no se incluyen por no guardar relación con el repositorio ni con su autor.

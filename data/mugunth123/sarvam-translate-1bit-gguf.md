@@ -80,7 +80,7 @@ La principal alternativa a este modelo dentro de su nicho son las propias cuanti
 
 ## Enlaces
 
-- Repositorio del modelo (HuggingFace): https://huggingface.co/Mugunth123/sarvam-translate-1bit-GGUF
+- Repositorio del modelo (Hugging Face): https://huggingface.co/Mugunth123/sarvam-translate-1bit-GGUF
 - Modelo base: https://huggingface.co/sarvamai/sarvam-translate
 - Cuantización 1,58-bit (IQ1_M): https://huggingface.co/Mugunth123/sarvam-translate-1.58bit-GGUF
 - Cuantización 2-bit (IQ2_M): https://huggingface.co/Mugunth123/sarvam-translate-2bit-GGUF

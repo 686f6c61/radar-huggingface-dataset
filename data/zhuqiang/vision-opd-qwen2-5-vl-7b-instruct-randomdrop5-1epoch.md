@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Vision-OPD-Qwen2.5-VL-7B (este) | 8.3B | no disponible | no disponible | HuggingFace |
-| Qwen2.5-VL-7B-Instruct (base) | 8.3B | 128k | Apache 2.0 | HuggingFace |
-| InternVL2.5-8B | 8.1B | 32k | MIT | HuggingFace |
-| Llama-3.2-Vision-11B | 11B | 128k | Llama 3.2 Community | HuggingFace |
+| Vision-OPD-Qwen2.5-VL-7B (este) | 8.3B | no disponible | no disponible | Hugging Face |
+| Qwen2.5-VL-7B-Instruct (base) | 8.3B | 128k | Apache 2.0 | Hugging Face |
+| InternVL2.5-8B | 8.1B | 32k | MIT | Hugging Face |
+| Llama-3.2-Vision-11B | 11B | 128k | Llama 3.2 Community | Hugging Face |
 
 Este modelo se distingue por su enfoque de poda de tokens visuales, pero no hay benchmarks que permitan comparar su rendimiento con las alternativas. El modelo base Qwen2.5-VL-7B-Instruct es la referencia natural; este fine-tuning no añade capacidades nuevas, solo modifica el proceso de entrenamiento para eficiencia.
 
@@ -77,7 +77,7 @@ Este modelo se distingue por su enfoque de poda de tokens visuales, pero no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhuqiang/Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-1Epoch
+- Modelo en Hugging Face: https://huggingface.co/zhuqiang/Vision-OPD-Qwen2.5-VL-7B-Instruct-RandomDrop5-1Epoch
 - Repositorio de código para inferencia con poda (prune-opd): https://github.com/zhuqiangLu/prune-opd
 - Dataset de entrenamiento Vision-OPD-6K: https://huggingface.co/datasets/yuanqianhao/Vision-OPD-6K
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

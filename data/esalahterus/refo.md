@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **esalahterus/refo** | 2,57B (UNet) | No aplica | Inpainting de fondo | No disponible (hereda del base) | HuggingFace |
-| **diffusers/stable-diffusion-xl-1.0-inpainting-0.1** | 2,57B (UNet) | No aplica | Inpainting general | CreativeML Open RAIL++-M (probable) | HuggingFace |
-| **stabilityai/stable-diffusion-2-inpainting** | 0,9B (UNet) | No aplica | Inpainting general | CreativeML Open RAIL-M | HuggingFace |
+| **esalahterus/refo** | 2,57B (UNet) | No aplica | Inpainting de fondo | No disponible (hereda del base) | Hugging Face |
+| **diffusers/stable-diffusion-xl-1.0-inpainting-0.1** | 2,57B (UNet) | No aplica | Inpainting general | CreativeML Open RAIL++-M (probable) | Hugging Face |
+| **stabilityai/stable-diffusion-2-inpainting** | 0,9B (UNet) | No aplica | Inpainting general | CreativeML Open RAIL-M | Hugging Face |
 
 La comparativa se basa en el conocimiento general de estos modelos; no hay datos de rendimiento específicos para ReFo. La principal diferencia con el modelo base es que ReFo está afinado específicamente para edición de fondo con datos sintéticos, lo que puede ofrecer mejores resultados en ese dominio, aunque no está verificado.
 
@@ -76,7 +76,7 @@ La comparativa se basa en el conocimiento general de estos modelos; no hay datos
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/esalahterus/refo)
+- [Modelo en Hugging Face](https://huggingface.co/esalahterus/refo)
 - [Dataset DIS5K (GitHub)](https://github.com/xuebinqin/DIS)
-- [Dataset BG-20k (HuggingFace)](https://huggingface.co/datasets/unography/BG-20k)
+- [Dataset BG-20k (Hugging Face)](https://huggingface.co/datasets/unography/BG-20k)
 - [Modelo base: diffusers/stable-diffusion-xl-1.0-inpainting-0.1](https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1)

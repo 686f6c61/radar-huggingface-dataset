@@ -83,7 +83,7 @@ La comparativa con Qwen3.6-27B se basa unicamente en la referencia de la model c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jakejb53/Qwen3.8-27B-heretic
+- Repositorio Hugging Face: https://huggingface.co/jakejb53/Qwen3.8-27B-heretic
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto Heretic: https://heretic-project.org
 - Qwen Cloud (servicio gestionado del modelo base): https://www.qwencloud.com/models/qwen3.8-27b

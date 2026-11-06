@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No es
 | Modelo | Parametros | Contexto soportado | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `ghost-5-2-pro-lora` (adaptador) | no disponible | no disponible | no disponible | PEFT / safetensors |
-| Qwen/Qwen2.5-3B-Instruct (base) | 3.000 millones | 32.768 tokens (aprox.) | Apache 2.0 | HuggingFace |
-| Meta-Llama-3.2-3B-Instruct | 3.000 millones | 128.000 tokens | Llama Community License | HuggingFace |
+| Qwen/Qwen2.5-3B-Instruct (base) | 3.000 millones | 32.768 tokens (aprox.) | Apache 2.0 | Hugging Face |
+| Meta-Llama-3.2-3B-Instruct | 3.000 millones | 128.000 tokens | Llama Community License | Hugging Face |
 
 No se ha encontrado un modelo comparable que sea un adaptador LoRA con datos publicos. La comparacion se limita a los modelos base por el desconocimiento del entrenamiento del adaptador.
 
@@ -76,5 +76,5 @@ No se ha encontrado un modelo comparable que sea un adaptador LoRA con datos pub
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/calonguru/ghost-5-2-pro-lora
+- Repositorio de Hugging Face: https://huggingface.co/calonguru/ghost-5-2-pro-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct

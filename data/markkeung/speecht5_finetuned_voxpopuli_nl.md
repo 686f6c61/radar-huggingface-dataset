@@ -6,7 +6,7 @@
 
 El modelo cuenta con 144.433.890 parámetros y un tamaño de repositorio de 1,2 GB en formato safetensors, lo que lo sitúa en la categoría de modelos TTS ligeros, aptos para inferencia en GPU de consumo. Es relevante porque los modelos TTS específicos por idioma siguen siendo escasos en comparación con los multilingües, y un ajuste fino sobre VoxPopuli neerlandés puede ofrecer una pronunciación más natural para ese idioma que el modelo base multilingüe.
 
-La model card es auto-generada por el Trainer de HuggingFace y no incluye información sobre el conjunto de datos exacto, los usos previstos ni limitaciones. El autor no ha documentado detalles adicionales, por lo que buena parte de las especificaciones se infieren del modelo base y de los hiperparámetros de entrenamiento registrados.
+La model card es auto-generada por el Trainer de Hugging Face y no incluye información sobre el conjunto de datos exacto, los usos previstos ni limitaciones. El autor no ha documentado detalles adicionales, por lo que buena parte de las especificaciones se infieren del modelo base y de los hiperparámetros de entrenamiento registrados.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El ajuste fino se realizó con los siguientes hiperparámetros registrados en la
 - Control de la identidad de voz mediante speaker embeddings en inferencia.
 - Síntesis de voz de un solo hablante o multi-hablante según el embedding proporcionado.
 - Integración con la librería `transformers` (pipeline `text-to-audio`).
-- Compatible con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible`).
 - No soporta tool calling, function calling ni razonamiento multi-paso (no es un modelo de lenguaje).
 - No soporta visión, audio de entrada ni modo thinking.
 - Capacidades multilingües: no confirmadas; el ajuste parece específico para neerlandés.
@@ -93,7 +93,7 @@ El modelo se posiciona como una alternativa ligera y con licencia permisiva (MIT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/markkeung/speecht5_finetuned_voxpopuli_nl
+- Hugging Face: https://huggingface.co/markkeung/speecht5_finetuned_voxpopuli_nl
 - Modelo base: https://huggingface.co/microsoft/speecht5_tts
 - Paper SpeechT5: https://arxiv.org/abs/2110.07205
 - Corpus VoxPopuli: https://github.com/facebookresearch/voxpopuli

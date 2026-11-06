@@ -25,7 +25,7 @@ Es relevante ahora porque la clonación de voz zero-shot con pocos segundos de r
 
 El repositorio no define arquitectura ni entrenamiento propios: es una capa de cuadernos Colab que invoca dos sistemas TTS. X-Voice Stage 2 es un modelo de 0,4B descrito en el paper arXiv 2605.05611, orientado a clonación de voz sin transcripción de la referencia, con cobertura de 30 idiomas. CosyVoice 3, en su variante Fun-CosyVoice3-0.5B-2512, es un modelo de 0,5B que realiza clonación zero-shot a partir de una referencia acompañada de su transcripción; el notebook obtiene esa transcripción automáticamente con Whisper.
 
-No se dispone de datos sobre composición del dataset de entrenamiento, número de tokens, técnicas de alineación (RLHF/DPO) ni innovaciones de decodificación de ninguno de los dos motores en la información proporcionada. El repositorio sí documenta detalles operativos: salida a 24 kHz, modo diálogo que alterna y concatena réplicas de dos voces en un solo WAV, y descarga de pesos públicos sin necesidad de token de HuggingFace (aunque se recomienda para evitar límites de tasa).
+No se dispone de datos sobre composición del dataset de entrenamiento, número de tokens, técnicas de alineación (RLHF/DPO) ni innovaciones de decodificación de ninguno de los dos motores en la información proporcionada. El repositorio sí documenta detalles operativos: salida a 24 kHz, modo diálogo que alterna y concatena réplicas de dos voces en un solo WAV, y descarga de pesos públicos sin necesidad de token de Hugging Face (aunque se recomienda para evitar límites de tasa).
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|---|
 | X-Voice Stage 2 | 0,4B | 30 | CC-BY-NC-4.0 | Audio sin transcripcion | Pesos en `XRXRX/X-Voice` |
 | CosyVoice 3 (Fun-CosyVoice3-0.5B-2512) | 0,5B | no disponible | Apache-2.0 | Audio con transcripcion (automatica via Whisper) | Pesos en `FunAudioLLM/Fun-CosyVoice3-0.5B-2512` y repositorio GitHub |
-| `Botoslav/voice-clone-colab` | no aplica (notebooks) | ru ⇄ en documentado | no disponible | Ambas segun motor | HuggingFace, 0 descargas |
+| `Botoslav/voice-clone-colab` | no aplica (notebooks) | ru ⇄ en documentado | no disponible | Ambas segun motor | Hugging Face, 0 descargas |
 
 La comparativa relevante es entre los dos motores que el repositorio empaqueta: X-Voice prioriza cobertura de idiomas y prescinde de transcripción, mientras que CosyVoice 3 ofrece licencia permisiva para uso comercial a cambio de requerir la transcripción de la referencia. No se dispone de datos de benchmarks que permitan comparar calidad objetiva entre ambos.
 
@@ -85,11 +85,11 @@ La comparativa relevante es entre los dos motores que el repositorio empaqueta: 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Botoslav/voice-clone-colab
+- Repositorio en Hugging Face: https://huggingface.co/Botoslav/voice-clone-colab
 - Notebook X-Voice: https://huggingface.co/Botoslav/voice-clone-colab/blob/main/xvoice_colab.ipynb
 - Notebook CosyVoice 3: https://huggingface.co/Botoslav/voice-clone-colab/blob/main/cosyvoice3_colab.ipynb
 - Paper X-Voice: https://arxiv.org/abs/2605.05611
 - Pesos X-Voice: https://huggingface.co/XRXRX/X-Voice
 - Pesos CosyVoice 3: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio CosyVoice: https://github.com/FunAudioLLM/CosyVoice
-- Tokens de HuggingFace: https://huggingface.co/settings/tokens
+- Tokens de Hugging Face: https://huggingface.co/settings/tokens

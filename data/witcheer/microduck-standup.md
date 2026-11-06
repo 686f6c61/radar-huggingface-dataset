@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`witcheer/microduck-standup` es una política de control por refuerzo (reinforcement learning) para el robot cuadrúpedo de código abierto Microduck, desarrollado por el usuario witcheer y publicado en HuggingFace con librería ONNX. No es un modelo de lenguaje: es un controlador entrenado en simulación que ejecuta una habilidad concreta, levantarse y mantenerse de pie ("stand up"), a partir de un vector de observación de 61 dimensiones y emitiendo 14 acciones a 50 Hz. Está pensado para ejecutarse en el robot real mediante la herramienta de despliegue `robotctl`.
+`witcheer/microduck-standup` es una política de control por refuerzo (reinforcement learning) para el robot cuadrúpedo de código abierto Microduck, desarrollado por el usuario witcheer y publicado en Hugging Face con librería ONNX. No es un modelo de lenguaje: es un controlador entrenado en simulación que ejecuta una habilidad concreta, levantarse y mantenerse de pie ("stand up"), a partir de un vector de observación de 61 dimensiones y emitiendo 14 acciones a 50 Hz. Está pensado para ejecutarse en el robot real mediante la herramienta de despliegue `robotctl`.
 
 La política se entrenó en el entorno Mjlab con el escenario "Mjlab-StandUp-Flat-MicroDuck", durante 25.000 iteraciones (15.000 del autor original más una extensión de 10.000) con 4.096 entornos paralelos, lo que supuso 407 minutos de cómputo en una única RTX 5090. La política es episódica: cada rollout dura 6,0 segundos y devuelve al robot a la postura de pie. Se documenta que funciona al levantarse desde la posición de sentado y desde boca abajo, pero que falla al partir de boca arriba, donde se queda congelada a medio girar (0 de 2 intentos).
 
@@ -107,13 +107,13 @@ No se dispone de información sobre otras políticas del mismo robot, del mismo 
 - Restricciones de licencia: la licencia no está declarada. Sin licencia explícita, no puede asumirse permiso para uso comercial, redistribución o modificación; es un riesgo legal relevante para cualquier integración en producto.
 - Ausencia de tracción: 0 descargas y 0 likes, repositorio de 0,0 GB y sin señales de mantenimiento posterior a la fecha de creación (2026-09-21), con última actualización tres segundos después de la creación.
 - Ausencia de documentación técnica: no se publican arquitectura de red, precisión numérica del ONNX, algoritmo de RL, función de recompensa, semilla ni criterios de convergencia, lo que dificulta la reproducibilidad.
-- Metadatos incompletos: los campos de idioma y licencia aparecen vacíos en la ficha de HuggingFace.
+- Metadatos incompletos: los campos de idioma y licencia aparecen vacíos en la ficha de Hugging Face.
 - Fecha de publicación anómala (2026-09-21), posterior a la fecha de referencia habitual; conviene verificar la vigencia de los enlaces y del repositorio asociado antes de reutilizarlo.
 - Advertencia de despliegue: los comandos de la model card requieren `sudo` y actúan sobre el robot; deben ejecutarse únicamente en un entorno controlado y con el robot asegurado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/witcheer/microduck-standup
+- Modelo en Hugging Face: https://huggingface.co/witcheer/microduck-standup
 - Repositorio del robot Microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `develop`, commit `53b8971b6`)
 - Documento del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de Microduck (ruta citada en la model card; no se proporciona URL directa)

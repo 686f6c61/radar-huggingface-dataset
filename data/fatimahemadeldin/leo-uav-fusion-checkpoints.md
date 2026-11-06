@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FatimahEmadEldin/leo-uav-fusion-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/FatimahEmadEldin/leo-uav-fusion-checkpoints
 - Código de entrenamiento: `code/run_local.py` (dentro del repo)
 - Script de carga de checkpoints: `code/load_checkpoint.py` (dentro del repo)
 - Pipeline de experimentos: `code/flair_experiment_fusion.py` (dentro del repo)

@@ -96,9 +96,9 @@ La capacidad especialista se conserva en su mayor parte pero se reduce ligeramen
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| FactGuard-General-4B | ~4,66 B | 1.024 tokens de entrada (contrato de prompt) | Apache 2.0 | 0,890 global en dev general; 0,992 / 0,983 / 0,916 en dev SaaS | Pesos BF16 en HuggingFace, preview de investigación |
+| FactGuard-General-4B | ~4,66 B | 1.024 tokens de entrada (contrato de prompt) | Apache 2.0 | 0,890 global en dev general; 0,992 / 0,983 / 0,916 en dev SaaS | Pesos BF16 en Hugging Face, preview de investigación |
 | FactGuard-4B (especialista SaaS) | ~4 B (no confirmado en la información disponible) | no disponible | Apache 2.0 (según el modelo base y la familia) | 0,743 en dev general; 0,993 / 0,990 / 0,933 en dev SaaS | Publicado; pipelines existentes |
-| Qwen/Qwen3.5-4B (modelo base) | ~4,66 B | no disponible | no disponible en la información proporcionada | 0,528 en el dev general | Público en HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | ~4,66 B | no disponible | no disponible en la información proporcionada | 0,528 en el dev general | Público en Hugging Face |
 | FactGuard especialistas 8B, 9B y 27B | 8 B / 9 B / 27 B | no disponible | no disponible en la información proporcionada | no disponible | Publicados según la model card; sin datos de evaluación en la información disponible |
 
 No se dispone de datos de benchmarks de alternativas genéricas de NLI o verificación (por ejemplo, modelos DeBERTa o LLM con prompting) en la información proporcionada, por lo que no se incluye una comparación cuantitativa con ellas.
@@ -122,7 +122,7 @@ No se dispone de datos de benchmarks de alternativas genéricas de NLI o verific
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/FactGuard-General-4B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/FactGuard-General-4B
 - Modelo base Qwen/Qwen3.5-4B (referenciado en la model card): https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo especialista de la familia FactGuard-4B (referenciado en la model card): https://huggingface.co/ThakiCloud/FactGuard-4B
 - Dataset FEVER en formato NLI (referenciado en la model card): https://huggingface.co/datasets/pietrolesci/nli_fever

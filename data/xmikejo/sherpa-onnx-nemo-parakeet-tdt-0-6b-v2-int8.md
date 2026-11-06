@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto / audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Parakeet TDT 0.6B v2 (este repo, int8 ONNX) | ~600 M | no disponible | ONNX int8 | cc-by-4.0 | HuggingFace (repo del autor) |
-| Whisper large-v3 | ~1.550 M | 30 s por ventana | safetensors, GGUF, ONNX | MIT (código) / pesos con licencia permisiva | HuggingFace, múltiples runtimes |
-| Whisper small | ~244 M | 30 s por ventana | safetensors, GGUF, ONNX | MIT | HuggingFace |
-| Wav2Vec2 / HuBERT base | ~95 M | no disponible | safetensors, ONNX | Apache 2.0 / MIT según checkpoint | HuggingFace |
+| Parakeet TDT 0.6B v2 (este repo, int8 ONNX) | ~600 M | no disponible | ONNX int8 | cc-by-4.0 | Hugging Face (repo del autor) |
+| Whisper large-v3 | ~1.550 M | 30 s por ventana | safetensors, GGUF, ONNX | MIT (código) / pesos con licencia permisiva | Hugging Face, múltiples runtimes |
+| Whisper small | ~244 M | 30 s por ventana | safetensors, GGUF, ONNX | MIT | Hugging Face |
+| Wav2Vec2 / HuBERT base | ~95 M | no disponible | safetensors, ONNX | Apache 2.0 / MIT según checkpoint | Hugging Face |
 
 La comparación se limita a parámetros, formato y licencia: no hay datos de WER ni latencia en este repositorio que permitan una comparación cuantitativa fiable con Whisper u otros modelos ASR.
 
@@ -80,8 +80,8 @@ La comparación se limita a parámetros, formato y licencia: no hay datos de WER
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xmikejo/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
-- Modelo base en HuggingFace (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
+- Repositorio en Hugging Face: https://huggingface.co/xmikejo/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
+- Modelo base en Hugging Face (NVIDIA): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2
 - Documentación de NVIDIA NeMo sobre Parakeet: https://docs.nvidia.com/nemo-framework/user-guide/latest/nemotoolkit/asr/models.html
 - Runtime sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - ONNX Runtime: https://onnxruntime.ai/

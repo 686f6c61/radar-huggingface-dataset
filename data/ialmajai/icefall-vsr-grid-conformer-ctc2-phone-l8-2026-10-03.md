@@ -79,8 +79,8 @@ La única alternativa directamente comparable identificada en la información di
 
 | Modelo | Autor | Unidades de salida | Capa del front-end | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03` | ialmajai | 34 teléfonos + SIL + SPN + blank (37 clases CTC) | AV-HuBERT Base, capa 8 | `other` / research-only | HuggingFace |
-| `icefall-vsr-grid-conformer-ctc2-bpe-58-2026-04-29` | ialmajai | 58 unidades BPE | no disponible | no disponible | HuggingFace |
+| `icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03` | ialmajai | 34 teléfonos + SIL + SPN + blank (37 clases CTC) | AV-HuBERT Base, capa 8 | `other` / research-only | Hugging Face |
+| `icefall-vsr-grid-conformer-ctc2-bpe-58-2026-04-29` | ialmajai | 58 unidades BPE | no disponible | no disponible | Hugging Face |
 | Receta VSR de GRID integrada en k2-fsa/icefall (PR #2081) | k2-fsa | no disponible | AV-HuBERT Base, capa 9 | no disponible | GitHub |
 
 El modelo descrito sustituye explícitamente a la versión BPE-58. La diferencia de configuración más relevante documentada es la capa del front-end: esta entrega usa la capa 8 y la receta integrada en el repositorio upstream emplea la capa 9.
@@ -94,13 +94,13 @@ El modelo descrito sustituye explícitamente a la versión BPE-58. La diferencia
 - Degradación fuera de dominio: el WER sube a 8,39 % en Lombard GRID sin adaptación, y el autor documenta que configuraciones de entrenamiento más convencionales degradan hasta 12,7 % en ese mismo corpus.
 - Riesgo de degradación silenciosa: tres ajustes deben coincidir exactamente con el checkpoint (`--roi-mode meanface`, `--layer 8` y el léxico telefónico/HLG). Si no coinciden, la precisión cae sin que se produzca ningún error explícito.
 - Riesgo de error por sustitución: al ser un modelo CTC decodificado con un grafo que impone el léxico de GRID, no puede emitir palabras fuera de ese vocabulario, pero sí confundir unas palabras por otras dentro de él. No hay puntuación ni mayúsculas en la salida.
-- El campo de tamaño del repositorio en HuggingFace indica 0.0 GB, dato que conviene comprobar antes de asumir que los pesos están efectivamente publicados.
+- El campo de tamaño del repositorio en Hugging Face indica 0.0 GB, dato que conviene comprobar antes de asumir que los pesos están efectivamente publicados.
 - No se han publicado resultados completos de entrenamiento (número de tokens, composición exacta del dataset) en la información disponible.
 - Cero descargas y cero "likes" en el momento de la consulta: el modelo no cuenta con validación independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ialmajai/icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03
+- Modelo en Hugging Face: https://huggingface.co/ialmajai/icefall-vsr-grid-conformer-ctc2-phone-l8-2026-10-03
 - Entrega anterior basada en BPE-58: https://huggingface.co/ialmajai/icefall-vsr-grid-conformer-ctc2-bpe-58-2026-04-29
 - Receta de VSR en la rama `vsr-data-aug`: https://github.com/ialmajai/icefall/tree/vsr-data-aug/egs/grid/VSR
 - Receta de VSR integrada en icefall upstream: https://github.com/k2-fsa/icefall/tree/master/egs/grid/VSR

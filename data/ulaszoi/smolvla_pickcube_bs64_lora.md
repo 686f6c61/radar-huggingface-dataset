@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`ulasZoi/smolvla_pickcube_bs64_LoRA` es una política de robótica de tipo visión-lenguaje-acción (VLA) publicada en HuggingFace por el usuario ulasZoi, afinada a partir del modelo base `lerobot/smolvla_base`. Se distribuye a través de la librería LeRobot (versión 0.6.2 según la model card) y está especializada en una única tarea de manipulación: recoger un cubo ("pick up the cube") con un robot de tipo `so_follower`. No es un modelo de lenguaje conversacional: consume observaciones multimodales (estado articular y varias cámaras) y produce un vector de acción de 6 dimensiones.
+`ulasZoi/smolvla_pickcube_bs64_LoRA` es una política de robótica de tipo visión-lenguaje-acción (VLA) publicada en Hugging Face por el usuario ulasZoi, afinada a partir del modelo base `lerobot/smolvla_base`. Se distribuye a través de la librería LeRobot (versión 0.6.2 según la model card) y está especializada en una única tarea de manipulación: recoger un cubo ("pick up the cube") con un robot de tipo `so_follower`. No es un modelo de lenguaje conversacional: consume observaciones multimodales (estado articular y varias cámaras) y produce un vector de acción de 6 dimensiones.
 
 El modelo subyacente, SmolVLA, se describe en el paper arXiv:2506.01844 como un VLA compacto y eficiente, capaz de alcanzar un rendimiento competitivo con un coste computacional reducido y de desplegarse en hardware de consumo. El repositorio concreto que nos ocupa es un ajuste fino con una receta de entrenamiento de 20.000 pasos, batch de 64, optimizador AdamW y learning rate de 0,001, sobre un dataset propio de 243 episodios y 76.011 fotogramas a 30 FPS.
 
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ulasZoi/smolvla_pickcube_bs64_LoRA | no disponible | no disponible | Recoger un cubo con `so_follower` | apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| lerobot/smolvla_base | no disponible | no disponible | VLA base preentrenado, punto de partida del fine-tune | no disponible en la información proporcionada | HuggingFace |
+| ulasZoi/smolvla_pickcube_bs64_LoRA | no disponible | no disponible | Recoger un cubo con `so_follower` | apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| lerobot/smolvla_base | no disponible | no disponible | VLA base preentrenado, punto de partida del fine-tune | no disponible en la información proporcionada | Hugging Face |
 | Otras políticas VLA de la misma categoría (por ejemplo OpenVLA o pi0) | no disponible | no disponible | Manipulación robótica generalista | no disponible | No se ha aportado información comparable en esta búsqueda |
 
 Los resultados de la búsqueda web proporcionada no contienen información técnica sobre alternativas de la misma categoría, por lo que no es posible establecer una comparación cuantitativa rigurosa de parámetros, contexto, rendimiento o licencia frente a otros modelos VLA.
@@ -106,7 +106,7 @@ Los resultados de la búsqueda web proporcionada no contienen información técn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA
+- Modelo en Hugging Face: https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_LoRA
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ulasZoi/smolvla_pickcube_all
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=ulasZoi/smolvla_pickcube_all

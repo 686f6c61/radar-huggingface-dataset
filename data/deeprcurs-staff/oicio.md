@@ -89,7 +89,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/deeprcurs-staff/OICIO
+- Repositorio de Hugging Face: https://huggingface.co/deeprcurs-staff/OICIO
 - Organización deepRcurs en GitHub: https://github.com/deepRcurs/
 - Repositorio deeprcurs en GitHub: https://github.com/deepRcurs/deeprcurs
 
@@ -176,7 +176,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/deeprcurs-staff/OICIO
+- Repositorio de Hugging Face: https://huggingface.co/deeprcurs-staff/OICIO
 - Organización deepRcurs en GitHub: https://github.com/deepRcurs/
 - Repositorio deeprcurs en GitHub: https://github.com/deepRcurs/deeprcurs/blob/main/README.md
 

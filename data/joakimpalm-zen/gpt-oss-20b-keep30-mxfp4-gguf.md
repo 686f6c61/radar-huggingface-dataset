@@ -77,7 +77,7 @@ La principal diferencia con el original es la reducción de 2 expertos por capa,
 
 ## Enlaces
 
-- [HuggingFace: Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF](https://huggingface.co/Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF)
+- [Hugging Face: Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF](https://huggingface.co/Joakimpalm-Zen/gpt-oss-20b-keep30-MXFP4-GGUF)
 - [GitHub: xyntetik-runner](https://github.com/Joakimpalm-Zen/xyntetik-runner)
 - [Documentación del benchmark de truncamiento](https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/truncation-benchmark.md)
 - [Modelo base: openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)

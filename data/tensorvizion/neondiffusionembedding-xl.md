@@ -65,9 +65,9 @@ No se dispone de informacion suficiente para una comparativa con otros modelos. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TensorVizion/NeonDiffusionEmbedding-XL
+- Modelo en Hugging Face: https://huggingface.co/TensorVizion/NeonDiffusionEmbedding-XL
 - Perfil de TensorVizion en GitHub: https://github.com/TensorVizion/
-- Perfil de TensorVizion en HuggingFace: https://huggingface.co/TensorVizion
+- Perfil de TensorVizion en Hugging Face: https://huggingface.co/TensorVizion
 - Repositorio AI-Toolkit-Revamped: https://github.com/TensorVizion/AI-Toolkit-Revamped
 - Pagina original del checkpoint en Civitai: https://civitai.com/models/6016/neon-diffusion?modelVersionId=7156
 - Archivo del modelo en CivArchive: https://civarchive.com/users/TensorVizion

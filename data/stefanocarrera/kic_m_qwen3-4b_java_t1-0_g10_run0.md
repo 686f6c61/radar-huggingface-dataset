@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g10_run0` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario stefanocarrera sobre `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`, es decir, sobre el modelo denso Qwen3-4B en su variante base y cuantizada en 4 bits. Se distribuye con licencia Apache 2.0, en formato safetensors y con la librería transformers, y incluye la etiqueta `text-generation-inference`, lo que indica compatibilidad con TGI para servir el modelo.
+`stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g10_run0` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario stefanocarrera sobre `unsloth/Qwen3-4B-Base-unsloth-bnb-4bit`, es decir, sobre el modelo denso Qwen3-4B en su variante base y cuantizada en 4 bits. Se distribuye con licencia Apache 2.0, en formato safetensors y con la librería transformers, y incluye la etiqueta `text-generation-inference`, lo que indica compatibilidad con TGI para servir el modelo.
 
 El interés del repositorio es limitado y fundamentalmente experimental: cuenta con 0 descargas y 0 likes, la model card es prácticamente la plantilla automática de Unsloth y no incluye información sobre datos de entrenamiento, hiperparámetros, evaluación ni formato del ajuste. El nombre del repositorio sugiere una especialización en código Java (`java`) con unos parámetros de generación anotados (`t1.0`, `g10`, `run0`), pero ni la model card ni los metadatos confirman esa especialización, por lo que debe tratarse como una hipótesis y no como un hecho.
 
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| Este ajuste (`kic_M_Qwen3-4B_java...`) | 4,0 B (base) | No verificado (base: 32K/131K) | Apache 2.0 | HuggingFace, 0 descargas | No |
-| Qwen3-4B (base e instruct) | 4,0 B | 32K nativo, 131K con YaRN | Apache 2.0 | HuggingFace oficial, ampliamente usado | Sí, en la ficha oficial |
-| Llama 3.2 3B | 3,2 B | 128K | Llama 3.2 Community License | HuggingFace (Meta) | Sí |
-| Gemma 3 4B | 4,0 B aprox. | 128K | Gemma Terms of Use | HuggingFace (Google) | Sí |
-| Phi-4-mini | 3,8 B | 128K | MIT | HuggingFace (Microsoft) | Sí |
+| Este ajuste (`kic_M_Qwen3-4B_java...`) | 4,0 B (base) | No verificado (base: 32K/131K) | Apache 2.0 | Hugging Face, 0 descargas | No |
+| Qwen3-4B (base e instruct) | 4,0 B | 32K nativo, 131K con YaRN | Apache 2.0 | Hugging Face oficial, ampliamente usado | Sí, en la ficha oficial |
+| Llama 3.2 3B | 3,2 B | 128K | Llama 3.2 Community License | Hugging Face (Meta) | Sí |
+| Gemma 3 4B | 4,0 B aprox. | 128K | Gemma Terms of Use | Hugging Face (Google) | Sí |
+| Phi-4-mini | 3,8 B | 128K | MIT | Hugging Face (Microsoft) | Sí |
 
 Los datos de los modelos comparables provienen de sus fichas públicas y no se han verificado en la búsqueda realizada; para este ajuste no existe ninguna evaluación que permita situarlo frente a ellos. A igualdad de parámetros, la ventaja competitiva del repositorio es nula hasta que se demuestre su rendimiento en código Java.
 
@@ -95,7 +95,7 @@ Los datos de los modelos comparables provienen de sus fichas públicas y no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g10_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-4B_java_t1.0_g10_run0
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Qwen3-4B-Base-unsloth-bnb-4bit
 - Qwen3-4B oficial: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

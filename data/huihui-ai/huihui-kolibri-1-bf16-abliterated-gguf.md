@@ -97,10 +97,10 @@ No se dispone de datos de rendimiento que permitan comparar objetivamente estas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Kolibri-1-BF16-abliterated-GGUF
+- Modelo en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Kolibri-1-BF16-abliterated-GGUF
 - Modelo base: https://huggingface.co/Aleph-Alpha/Kolibri-1-BF16
 - GGUFs de origen: https://huggingface.co/Hob-forge/Kolibri-1-GGUF
-- Perfil del autor en HuggingFace: https://huggingface.co/huihui-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/huihui-ai
 - Perfil del autor en Ollama: https://ollama.com/huihui_ai
 - Herramienta cvector-generator de llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/tools/cvector-generator/README.md
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

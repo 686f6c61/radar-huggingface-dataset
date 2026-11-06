@@ -66,5 +66,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace: ben0112/Qwen3.8-27B-oQ2.5e-mtp](https://huggingface.co/ben0112/Qwen3.8-27B-oQ2.5e-mtp)
+- [Hugging Face: ben0112/Qwen3.8-27B-oQ2.5e-mtp](https://huggingface.co/ben0112/Qwen3.8-27B-oQ2.5e-mtp)
 - [Repositorio oQ / oMLX](https://github.com/jundot/omlx) (mencionado en la model card)

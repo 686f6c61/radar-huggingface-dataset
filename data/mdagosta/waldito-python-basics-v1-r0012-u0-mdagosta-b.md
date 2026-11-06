@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b` es un modelo de generacion de texto publicado en HuggingFace por el usuario mdagosta, presentado por su autor como un "export" del proyecto OpenWALDO. Segun la model card, utiliza la arquitectura Llama causal estandar de Transformers junto con el tokenizador de bytes "schema-1" de OpenWALDO, que requiere `trust_remote_code=True` para cargarse. El repositorio es de tamano minimo y no registra descargas ni interacciones en el momento de la consulta.
+`mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b` es un modelo de generacion de texto publicado en Hugging Face por el usuario mdagosta, presentado por su autor como un "export" del proyecto OpenWALDO. Segun la model card, utiliza la arquitectura Llama causal estandar de Transformers junto con el tokenizador de bytes "schema-1" de OpenWALDO, que requiere `trust_remote_code=True` para cargarse. El repositorio es de tamano minimo y no registra descargas ni interacciones en el momento de la consulta.
 
 El dato tecnico mas relevante y verificado es su tamano: 9.541.632 parametros totales, medidos sobre los ficheros safetensors del repositorio. Se trata, por tanto, de un modelo denso de escala muy reducida (menos de 10 millones de parametros), tres ordenes de magnitud por debajo de los modelos de frontera actuales. La model card no especifica la longitud de contexto, los idiomas soportados, la licencia ni la composicion del dataset de entrenamiento.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| waldito-python-basics-v1-r0012-u0-mdagosta-b | 9.541.632 | No disponible | No disponible | HuggingFace (0 descargas) | No disponibles |
+| waldito-python-basics-v1-r0012-u0-mdagosta-b | 9.541.632 | No disponible | No disponible | Hugging Face (0 descargas) | No disponibles |
 | Alternativas concretas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b
+- Repositorio en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b
 - Fichero `BOM.json` referenciado en la model card: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b/blob/main/BOM.json
 - Fichero `EU-BOM.json` referenciado en la model card: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b/blob/main/EU-BOM.json
 - Paper, blog, repositorio de codigo o demo del proyecto OpenWALDO: no disponible.

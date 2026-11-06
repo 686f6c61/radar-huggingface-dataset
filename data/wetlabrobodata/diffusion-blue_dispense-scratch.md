@@ -79,10 +79,10 @@ El intervalo de confianza de una tasa 19/20 con n = 20 es amplio (aproximadament
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| diffusion-blue_dispense-scratch | 262,8 M | No disponible | 19/20 en blue_dispense | Apache-2.0 | HuggingFace (0 descargas) |
-| Otras diffusion policies de LeRobot | No disponible | No disponible | No disponible | Depende del repo | HuggingFace |
-| ACT (Action Chunking Transformer, LeRobot) | No disponible | No disponible | No disponible | Depende del repo | HuggingFace / repositorio LeRobot |
-| Politicas VLA (por ejemplo SmolVLA) | No disponible | No disponible | No disponible | Depende del repo | HuggingFace |
+| diffusion-blue_dispense-scratch | 262,8 M | No disponible | 19/20 en blue_dispense | Apache-2.0 | Hugging Face (0 descargas) |
+| Otras diffusion policies de LeRobot | No disponible | No disponible | No disponible | Depende del repo | Hugging Face |
+| ACT (Action Chunking Transformer, LeRobot) | No disponible | No disponible | No disponible | Depende del repo | Hugging Face / repositorio LeRobot |
+| Politicas VLA (por ejemplo SmolVLA) | No disponible | No disponible | No disponible | Depende del repo | Hugging Face |
 
 No se dispone de datos numericos comparables en la informacion proporcionada; la comparativa queda por tanto cualitativa. La diferencia principal frente a ACT es el mecanismo generativo (difusion frente a regresion directa del chunk de acciones) y frente a las politicas VLA, el alcance (tarea unica frente a instrucciones en lenguaje natural).
 
@@ -100,7 +100,7 @@ No se dispone de datos numericos comparables en la informacion proporcionada; la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-blue_dispense-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-blue_dispense-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-blue_dispense
 - Dataset de evaluacion (videos y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-blue_dispense-scratch
 - Repositorio de origen con artefactos de entrenamiento archivados: https://huggingface.co/WetLabRoboData/lerobot-data-smrithi-blue_dispense_20260617

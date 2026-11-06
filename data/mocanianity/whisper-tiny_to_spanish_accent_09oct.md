@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Mocanianity en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, y entrenado sobre un dataset denominado "Spanish English". El objetivo declarado es adaptar el modelo base a acentos del espanol, si bien la model card no detalla la composicion exacta del conjunto de entrenamiento ni la naturaleza del ajuste.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario Mocanianity en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) derivado de la arquitectura Whisper de OpenAI, en su variante mas pequena, y entrenado sobre un dataset denominado "Spanish English". El objetivo declarado es adaptar el modelo base a acentos del espanol, si bien la model card no detalla la composicion exacta del conjunto de entrenamiento ni la naturaleza del ajuste.
 
 El modelo cuenta con 37,76 millones de parametros y un repositorio de 0,3 GB en formato safetensors, lo que lo situa en la gama ultraligera de modelos ASR. Su relevancia practica reside en la posibilidad de desplegarlo en entornos con recursos muy limitados (CPU, dispositivos embebidos, navegador) para transcripcion de audio en tiempo real o por lotes. No obstante, la informacion publicada es muy escasa: la model card esta generada automaticamente por el Trainer y contiene secciones sin completar ("More information needed"), y el modelo registra cero descargas y cero likes en el momento de la consulta.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada en FP16/BF16: aproximadamente 75 MB para los pesos.
 - Cabe holgadamente en cualquier GPU consumer, incluidas GTX 1050, RTX 2060, RTX 3060, RTX 4090, asi como en iGPU y CPU.
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU con al menos 1 GB de VRAM es suficiente. Para lotes grandes, una RTX 3060 o superior ofrece margen.
-- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), potencialmente llama.cpp/whisper.cpp si se convierte a GGUF (no se proporcionan pesos en ese formato), y servidores compatibles con la API de HuggingFace (el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints).
+- Opciones de despliegue: transformers (pipeline `automatic-speech-recognition`), potencialmente llama.cpp/whisper.cpp si se convierte a GGUF (no se proporcionan pesos en ese formato), y servidores compatibles con la API de Hugging Face (el tag `endpoints_compatible` sugiere compatibilidad con Inference Endpoints).
 - Latencia y throughput: no disponibles en la informacion proporcionada. Por el tamano del modelo, se espera inferencia en decenas de milisegundos por ventana de 30 segundos en GPU moderna y en el orden de segundos en CPU, pero estos valores no estan documentados.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_spanish_accent_09oct
+- Modelo en Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_spanish_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (referencia del modelo base): https://arxiv.org/abs/2212.04356
 - Repositorio oficial de Whisper en OpenAI: https://github.com/openai/whisper

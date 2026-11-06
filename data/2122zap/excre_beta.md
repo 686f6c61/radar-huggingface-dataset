@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`excre_beta` es un modelo alojado en HuggingFace por el usuario `2122zap`, publicado bajo licencia OpenRAIL. El repositorio ocupa aproximadamente 0,5 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion de la cuantizacion empleada), pero no se dispone de informacion publica sobre su arquitectura, entrenamiento o capacidades. La model card del autor esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso.
+`excre_beta` es un modelo alojado en Hugging Face por el usuario `2122zap`, publicado bajo licencia OpenRAIL. El repositorio ocupa aproximadamente 0,5 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion de la cuantizacion empleada), pero no se dispone de informacion publica sobre su arquitectura, entrenamiento o capacidades. La model card del autor esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento y sin ejemplos de uso.
 
 El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado, lo que indica que se trata de un artefacto en fase muy temprana o de un experimento personal sin documentacion asociada. No es posible verificar que tarea resuelve ni que calidad ofrece, por lo que cualquier evaluacion seria requeriria descargar los pesos y ejecutar pruebas propias.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de especificaciones, esta ficha se limita a documentar lo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas especificas.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento, ni sobre innovaciones tecnicas especificas.
 
 El unico indicio indirecto es el tamano del repositorio (0,5 GB). Si los pesos estuvieran en safetensors de precision completa (FP32), esto equivaldria a unos 125 millones de parametros; en FP16, a unos 250 millones; en cuantizacion de 4 bits, a alrededor de 1000 millones. Sin embargo, esta estimacion es puramente especulativa y no debe tomarse como dato tecnico.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/2122zap/excre_beta
+- Hugging Face: https://huggingface.co/2122zap/excre_beta
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

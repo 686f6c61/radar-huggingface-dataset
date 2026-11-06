@@ -110,7 +110,7 @@ No se dispone en la información proporcionada de resultados de otros agentes so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scaleresearch/ttrl-dqn-boxing
+- Modelo en Hugging Face: https://huggingface.co/scaleresearch/ttrl-dqn-boxing
 - Repositorio ttrl: https://github.com/scaleresearch/tt-rl
 - Entorno ALE/Boxing-v5 (Arcade Learning Environment, referencia del entorno): no disponible en la información proporcionada
 - Paper o blog del método: no disponible en la información proporcionada

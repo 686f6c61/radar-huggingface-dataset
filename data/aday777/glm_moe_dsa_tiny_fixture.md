@@ -79,7 +79,7 @@ No se han encontrado fixtures comparables publicados en la busqueda web. La comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aday777/glm_moe_dsa_tiny_fixture
+- Repositorio Hugging Face: https://huggingface.co/aday777/glm_moe_dsa_tiny_fixture
 - Documentacion de transformers para `glm_moe_dsa`: https://huggingface.co/docs/transformers/main/en/model_doc/glm_moe_dsa
 - Codigo fuente de `glm_moe_dsa` en transformers: https://github.com/huggingface/transformers/tree/main/src/transformers/models/glm_moe_dsa
 - Proyecto Colibri (inferencia de MoE frontier en hardware consumer, menciona GLM-5.2): https://github.com/JustVugg/colibri

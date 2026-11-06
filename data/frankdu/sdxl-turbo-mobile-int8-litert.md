@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SDXL-Turbo-Mobile-INT8-LiteRT es una versión cuantizada a INT8 y empaquetada para ejecución en dispositivos móviles del modelo de generación de imágenes SDXL-Turbo de Stability AI, publicada por el usuario frankdu en HuggingFace. Se trata de un pipeline de texto a imagen a 512×512 convertido al formato LiteRT (TensorFlow Lite) mediante LiteRT CLI, orientado a funcionar en CPU sobre teléfonos Android de gama alta, concretamente la clase de 12–16 GB de RAM de los Pixel.
+SDXL-Turbo-Mobile-INT8-LiteRT es una versión cuantizada a INT8 y empaquetada para ejecución en dispositivos móviles del modelo de generación de imágenes SDXL-Turbo de Stability AI, publicada por el usuario frankdu en Hugging Face. Se trata de un pipeline de texto a imagen a 512×512 convertido al formato LiteRT (TensorFlow Lite) mediante LiteRT CLI, orientado a funcionar en CPU sobre teléfonos Android de gama alta, concretamente la clase de 12–16 GB de RAM de los Pixel.
 
 El problema que resuelve es el tamaño y consumo del modelo original: los artefactos de ejecución pasan de 13,75 GB en FP32 a 3,53 GB tras la cuantización, con el grafo más grande en 99,3 MB y solo un grafo cargado en memoria a la vez. Esto hace viable generar imágenes en un teléfono sin acelerador dedicado, aunque con tiempos de generación elevados: la medición publicada sobre un Pixel 10 Pro Fold con Tensor G5 arroja 86,90 segundos para una imagen 512×512 con un pico de RSS de proceso de 1,75 GiB.
 
@@ -90,7 +90,7 @@ Nota: no se dispone de datos comparativos de rendimiento medidos entre las tres 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankdu/SDXL-Turbo-Mobile-INT8-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/frankdu/SDXL-Turbo-Mobile-INT8-LiteRT
 - Modelo base: https://huggingface.co/stabilityai/sdxl-turbo
 - Licencia del modelo base: https://huggingface.co/stabilityai/sdxl-turbo/blob/main/LICENSE.md
 - Especificaciones Pixel 10 Pro: https://store.google.com/product/pixel_10_pro_specs

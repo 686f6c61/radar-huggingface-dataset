@@ -84,7 +84,7 @@ No disponible. Este modelo es un artefacto de investigación específico para el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds
+- Hugging Face: https://huggingface.co/Lamsheeper/Qwen3.5-4B-d0-vtok-lora-seeds
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Referencia de Qwen3.5-4B en vLLM Recipes: https://recipes.vllm.ai/Qwen/Qwen3.5-4B
 - Guía de Qwen3.5-4B en The AI Bench: https://theaibench.ai/models/qwen-3-5-4b/

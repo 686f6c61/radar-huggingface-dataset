@@ -19,7 +19,7 @@ La ficha se limita a lo que puede verificarse a partir de la informacion del rep
 | Idiomas soportados | ingles (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | ONNX (runtime Ryzen AI); repo de 0.3 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 | Tags | onnx, amd, ryzenai, m_1.0.1_npu, text-generation, conversational |
 
@@ -68,12 +68,12 @@ La comparativa se limita a caracteristicas estructurales; no se dispone de datos
 ## Limitaciones y advertencias
 - Modelo de 135 M de parametros: capacidad de razonamiento y conocimiento factual muy limitada en comparacion con modelos de mayor tamano; riesgo elevado de alucinacion en preguntas abiertas.
 - Solo soporta ingles segun los metadatos; el rendimiento en castellano no esta garantizado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el modelo.
 - Dependencia del runtime Ryzen AI 1.9.0 y del formato `m_1.0.1_npu`; no es portable a otros runtimes sin conversion.
 - No se documentan sesgos especificos ni evaluaciones de seguridad en la informacion proporcionada.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base puede heredar limitaciones de calidad propias de su tamano.
 - No apto para tareas que requieran contexto largo, tool calling o agentes multi-paso sin validacion adicional.
 
 ## Enlaces
-- [HuggingFace: amd/SmolLM2-135M-Instruct_rai_1.9.0_m_1.0.1_npu](https://huggingface.co/amd/SmolLM2-135M-Instruct_rai_1.9.0_m_1.0.1_npu)
+- [Hugging Face: amd/SmolLM2-135M-Instruct_rai_1.9.0_m_1.0.1_npu](https://huggingface.co/amd/SmolLM2-135M-Instruct_rai_1.9.0_m_1.0.1_npu)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

@@ -77,7 +77,7 @@ La principal diferencia con los BERT base de la misma familia es la ventana de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/GENA-LM-t2t-bigbird-base
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/GENA-LM-t2t-bigbird-base
 - Checkpoint original: https://huggingface.co/AIRI-Institute/gena-lm-bigbird-base-t2t
 - Colección GENA-LM: https://huggingface.co/collections/Taykhoom/gena-lm-6a8cec0862e11d4f81d059ab
 - Repositorio GitHub del proyecto GENA-LM: https://github.com/AIRI-Institute/GENA_LM

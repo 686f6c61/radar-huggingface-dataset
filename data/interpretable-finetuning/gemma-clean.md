@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables de propósito general. L
 - Paso crítico omitido con frecuencia: hay que recargar `adapter_model.safetensors` con `strict=False` después de envolver las capas, porque los tensores propiedad del wrapper no existen cuando PEFT carga el adaptador por primera vez. Omitirlo los descarta de forma silenciosa.
 - Verificación de cordura necesaria tras la carga: `B_module.weight` de cada módulo envuelto debe ser distinto de cero y como máximo 8 latentes por módulo pueden ser distintos de cero en cualquier token.
 - La comprobación de comportamiento empleada con los adaptadores envenenados no sirve aquí: un adaptador limpio cargado correcta e incorrectamente permanece igualmente silencioso ante el disparador.
-- Repositorio de análisis en privado: el wrapper `TopKLoRALinearSTE` y el harness de evaluación viven en `github.com/interpretable-finetuning/TopKLoRA`, actualmente privado y accesible solo contactando con el autor. No hay un cargador autocontenido incluido en el repositorio de HuggingFace.
+- Repositorio de análisis en privado: el wrapper `TopKLoRALinearSTE` y el harness de evaluación viven en `github.com/interpretable-finetuning/TopKLoRA`, actualmente privado y accesible solo contactando con el autor. No hay un cargador autocontenido incluido en el repositorio de Hugging Face.
 - Configuración engañosa: los `sleeper_run_config.json` registran `poisoning_ratio: 0.05`, un valor heredado e inerte. La fuente autoritativa es `clean_index.json`. Leer ese campo de forma aislada lleva a una conclusión errónea sobre la composición del dataset.
 - Cobertura de evaluación incompleta: la familia `all` no fue sondeada por falta de memoria de GPU. Su limpieza es un argumento de construcción, no una medición.
 - Sesgos: no disponibles. No se documenta ninguna evaluación de sesgo, toxicidad o alineación más allá de la sonda de disparo. El dataset `yahma/alpaca-cleaned` procedente de Alpaca arrastra los sesgos conocidos de las generaciones de modelos que lo produjeron.
@@ -111,7 +111,7 @@ No se dispone de información sobre modelos comparables de propósito general. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/interpretable-finetuning/gemma-clean
+- Modelo en Hugging Face: https://huggingface.co/interpretable-finetuning/gemma-clean
 - Release envenenada de referencia: https://huggingface.co/interpretable-finetuning/topklora
 - Variante con enrutado por gradiente: https://huggingface.co/interpretable-finetuning/gradient-routing-gemma
 - Repositorio de análisis (wrapper `TopKLoRALinearSTE` y harness de evaluación, actualmente privado): https://github.com/interpretable-finetuning/TopKLoRA

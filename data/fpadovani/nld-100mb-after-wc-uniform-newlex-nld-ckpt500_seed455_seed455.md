@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nld-100mb-after-wc-uniform-newlex-nld-ckpt500_seed455_seed455 es un modelo de generación de texto de 124.770.816 parámetros publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino (SFT) del modelo fpadovani/ppt-wc-uniform-newlex-nld-100mb_seed455, entrenado con la librería TRL sobre una arquitectura de tipo GPT-2 según las etiquetas declaradas en el repositorio. El identificador apunta a un experimento académico de investigación: el enlace de Weights & Biases incluido en la model card corresponde a la organización "f-padovani-university-of-groningen" y al proyecto "white_cotterell".
+nld-100mb-after-wc-uniform-newlex-nld-ckpt500_seed455_seed455 es un modelo de generación de texto de 124.770.816 parámetros publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino (SFT) del modelo fpadovani/ppt-wc-uniform-newlex-nld-100mb_seed455, entrenado con la librería TRL sobre una arquitectura de tipo GPT-2 según las etiquetas declaradas en el repositorio. El identificador apunta a un experimento académico de investigación: el enlace de Weights & Biases incluido en la model card corresponde a la organización "f-padovani-university-of-groningen" y al proyecto "white_cotterell".
 
 El modelo no incluye pesos en formatos cuantizados, ni especificación de idiomas, ni licencia concreta (la model card únicamente declara el marcador genérico "licence: license"). Tampoco se han publicado resultados de benchmarks, por lo que su evaluación pública es prácticamente nula: 0 descargas y 0 "likes" en el momento de redactar esta ficha. Su interés es, por tanto, el de un artefacto de investigación reproducible dentro de una línea de experimentos de ajuste supervisado con nombres sistemáticos (tamaño de corpus, tipo de vocabulario, checkpoint y semilla).
 
@@ -39,7 +39,7 @@ El entrenamiento consistió en un ajuste supervisado (SFT) partiendo del modelo 
 - Generación de texto autoregresiva en la línea de los modelos GPT-2 de 124 M de parámetros.
 - Conversación de un solo turno: el ejemplo de la model card utiliza el pipeline de transformers con una lista de mensajes con rol "user", lo que indica que el tokenizador o la plantilla esperan un formato conversacional simple.
 - Compatibilidad con el ecosistema transformers (pipeline de text-generation) y con Text Generation Inference, según las etiquetas del repositorio.
-- Compatible con endpoints de HuggingFace (etiqueta "endpoints_compatible").
+- Compatible con endpoints de Hugging Face (etiqueta "endpoints_compatible").
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo "thinking".
 - No se documentan capacidades multilingües ni una lista de idiomas soportados.
 - Capacidad de razonamiento, matemáticas y código: no documentada y previsiblemente muy limitada por el tamaño y la naturaleza del ajuste.
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; una T4, RTX 3060, RTX 4090, A100 o H100 quedan sobradamente dimensionadas para este modelo.
 - Cabe en GPU de consumo: sí, en cualquier GPU de consumo actual e incluso en iGPU con memoria compartida suficiente.
 - Ejecución en CPU: viable; el modelo puede ejecutarse en CPU con un consumo de memoria inferior a 1 GB en fp32.
-- Opciones de despliegue: pipeline de transformers (uso mostrado en la model card), Text Generation Inference (etiqueta "text-generation-inference"), endpoints compatibles de HuggingFace, vLLM y, previa conversión a GGUF, llama.cpp u Ollama.
+- Opciones de despliegue: pipeline de transformers (uso mostrado en la model card), Text Generation Inference (etiqueta "text-generation-inference"), endpoints compatibles de Hugging Face, vLLM y, previa conversión a GGUF, llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles. No hay datos publicados de latencia, tokens por segundo ni rendimiento bajo batching.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| nld-100mb-after-wc-uniform-newlex-nld-ckpt500_seed455_seed455 | 124,77 M | No disponible | No disponible | HuggingFace, safetensors | No disponible |
-| GPT-2 (small, openai-community/gpt2) | 124 M | 1024 tokens (documentado para la familia) | MIT (según su repositorio público) | HuggingFace, safetensors y otros | Métricas históricas de GPT-2, no comparables directamente con este ajuste |
-| DistilGPT-2 | 82 M | 1024 tokens (documentado para la familia) | Apache-2.0 (según su repositorio público) | HuggingFace, safetensors y otros | Métricas publicadas por sus autores |
-| Pythia-160M | 160 M | 2048 tokens (según su documentación pública) | Apache-2.0 (según su repositorio público) | HuggingFace, safetensors | Evaluaciones publicadas en el paper de Pythia |
+| nld-100mb-after-wc-uniform-newlex-nld-ckpt500_seed455_seed455 | 124,77 M | No disponible | No disponible | Hugging Face, safetensors | No disponible |
+| GPT-2 (small, openai-community/gpt2) | 124 M | 1024 tokens (documentado para la familia) | MIT (según su repositorio público) | Hugging Face, safetensors y otros | Métricas históricas de GPT-2, no comparables directamente con este ajuste |
+| DistilGPT-2 | 82 M | 1024 tokens (documentado para la familia) | Apache-2.0 (según su repositorio público) | Hugging Face, safetensors y otros | Métricas publicadas por sus autores |
+| Pythia-160M | 160 M | 2048 tokens (según su documentación pública) | Apache-2.0 (según su repositorio público) | Hugging Face, safetensors | Evaluaciones publicadas en el paper de Pythia |
 
 No se dispone de ningún resultado de evaluación de este modelo que permita comparar su calidad frente a las alternativas anteriores; la comparación se limita a parámetros, contexto, licencia y disponibilidad.
 
@@ -94,7 +94,7 @@ No se dispone de ningún resultado de evaluación de este modelo que permita com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-newlex-nld-ckpt500_seed455_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-wc-uniform-newlex-nld-ckpt500_seed455_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-uniform-newlex-nld-100mb_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/kikzfsbr
 - Repositorio de TRL: https://github.com/huggingface/trl

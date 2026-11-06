@@ -21,9 +21,9 @@ Su relevancia es práctica: permite ejecutar SeedVR2 en C++ puro sobre cualquier
 | Licencia | MIT para el repositorio; los pesos derivan de ByteDance SeedVR2 y quedan sujetos a su licencia original |
 | Formato de pesos | Formato ncnn (`.bin` / `.param`) y shaders Vulkan compilados (`.spv`). No se distribuyen safetensors ni GGUF |
 | Precision de calculo | fp32 (referencia numerica) |
-| Tamano del repositorio | 18,8 GB en HuggingFace; descarga indicada de aproximadamente 17,5 GB |
+| Tamano del repositorio | 18,8 GB en Hugging Face; descarga indicada de aproximadamente 17,5 GB |
 | Autor | xxzigou |
-| Fecha de creacion | 2026-09-10, segun los metadatos de HuggingFace |
+| Fecha de creacion | 2026-09-10, segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -81,9 +81,9 @@ La comparativa directa solo es posible dentro del mismo port, ya que no se aport
 
 | Version | Precision | Parametros | Contexto / resolucion | Fidelidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SeedVR2-2b-NCNN (este) | fp32 | 2B | Arista corta configurable (360p/720p/1080p) | PSNR 46,6 dB, cos 0,9999 | MIT (repo) + licencia original ByteDance | HuggingFace, 0 descargas, 0 likes |
-| seedVR2-ncnn-bf16 | bf16 | 2B | Igual | cos >= 0,9993 por capa | MIT (repo) + licencia original | HuggingFace |
-| seedVR2-ncnn-fp16 | fp16 | 2B | Igual | cos ~0,90 en la capa 30 | MIT (repo) + licencia original | HuggingFace |
+| SeedVR2-2b-NCNN (este) | fp32 | 2B | Arista corta configurable (360p/720p/1080p) | PSNR 46,6 dB, cos 0,9999 | MIT (repo) + licencia original ByteDance | Hugging Face, 0 descargas, 0 likes |
+| seedVR2-ncnn-bf16 | bf16 | 2B | Igual | cos >= 0,9993 por capa | MIT (repo) + licencia original | Hugging Face |
+| seedVR2-ncnn-fp16 | fp16 | 2B | Igual | cos ~0,90 en la capa 30 | MIT (repo) + licencia original | Hugging Face |
 | Implementacion oficial SeedVR2 en PyTorch (ByteDance) | fp32 / mixta | no disponible en la informacion | no disponible | Patron de referencia | Licencia original de ByteDance | No se aporta enlace en la informacion disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ La comparativa directa solo es posible dentro del mismo port, ya que no se aport
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xxzigou/SeedVR2-2b-NCNN
+- Repositorio en Hugging Face: https://huggingface.co/xxzigou/SeedVR2-2b-NCNN
 - Variante bf16 (recomendada por el autor): https://huggingface.co/xxzigou/seedVR2-ncnn-bf16
 - Variante fp16: https://huggingface.co/xxzigou/seedVR2-ncnn-fp16
 - Codigo de inferencia en C++ (ncnn + Vulkan): https://github.com/AiChiTuDouPian/SeedVR2-2b-ncnn

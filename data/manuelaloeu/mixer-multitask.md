@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Multitask es un prototipo de investigación publicado en HuggingFace por el usuario Manuelaloeu bajo el identificador `Manuelaloeu/mixer-multitask`. Se trata de una implementación experimental de una arquitectura tipo Mixer orientada a tareas multitarea, acompañada de un script ejecutable (`run.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`). No es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento demostrado.
+Mixer for Multitask es un prototipo de investigación publicado en Hugging Face por el usuario Manuelaloeu bajo el identificador `Manuelaloeu/mixer-multitask`. Se trata de una implementación experimental de una arquitectura tipo Mixer orientada a tareas multitarea, acompañada de un script ejecutable (`run.py`), un fichero de configuración de arquitectura (`config.json`) y una receta de entrenamiento por defecto (`training_args.json`). No es un modelo entrenado ni evaluado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con rendimiento demostrado.
 
 El tamaño registrado en el repositorio es de 24.832 parámetros totales, una cifra extremadamente reducida que sitúa el artefacto dentro de la categoría de utilidades didácticas o de andamiaje de investigación, muy lejos de cualquier modelo de propósito general. La arquitectura declarada combina atención estándar con fusión por puertas (gated fusion), activación mish y normalización instancenorm, todo ello bajo la etiqueta genérica de "Mixer" y escala "small".
 
@@ -47,7 +47,7 @@ En cuanto al entrenamiento, el repositorio incluye una receta por defecto basada
 - Pruebas de humo de infraestructura: el checkpoint de inicialización permite verificar que un pipeline de carga de safetensors, tokenización de prueba y ejecución hacia delante funciona sin errores antes de invertir en un entrenamiento real.
 - Andamiaje para investigación en arquitecturas Mixer: sirve como plantilla reproducible para modificar bloques de fusión, activaciones o esquemas de normalización y comparar variantes bajo una misma receta.
 - Estudio de recetas de entrenamiento multitarea: el fichero `training_args.json` documenta valores por defecto (adam, onecycle) que pueden servir de punto de partida controlado en experimentos comparativos.
-- Docencia y formación: por su tamaño (24.832 parámetros) y su licencia permisiva, es adecuado para ilustrar el ciclo completo de publicación de un modelo en HuggingFace, desde la configuración hasta el checkpoint.
+- Docencia y formación: por su tamaño (24.832 parámetros) y su licencia permisiva, es adecuado para ilustrar el ciclo completo de publicación de un modelo en Hugging Face, desde la configuración hasta el checkpoint.
 - Validación de formatos de serialización: útil para comprobar herramientas de inspección de safetensors, conversión de pesos o empaquetado sin necesidad de descargar modelos de gran tamaño.
 - Reproducción de líneas base: dado que el autor recomienda comparar con una línea base de capacidad equivalente, este repositorio puede actuar como el punto de referencia a batir en experimentos controlados.
 - Integración en pruebas de CI: al ocupar 0,0 GB, se puede incluir en suites de integración continua para detectar regresiones en el código de carga o en el preprocesamiento.
@@ -81,5 +81,5 @@ No disponible. El artefacto es un prototipo de investigación sin entrenar, con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Manuelaloeu/mixer-multitask
+- Hugging Face: https://huggingface.co/Manuelaloeu/mixer-multitask
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

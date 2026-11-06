@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `anonym-coling2027/E2E-GOP-SpeechOcean762` es un repositorio publicado en HuggingFace por el usuario `anonym-coling2027`, cuya model card se limita a declarar la licencia MIT sin ningun contenido adicional. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades en la informacion disponible. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un artefacto practicamente sin difusion.
+El modelo identificado como `anonym-coling2027/E2E-GOP-SpeechOcean762` es un repositorio publicado en Hugging Face por el usuario `anonym-coling2027`, cuya model card se limita a declarar la licencia MIT sin ningun contenido adicional. No se ha publicado informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades en la informacion disponible. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que se trata de un artefacto practicamente sin difusion.
 
 El identificador del modelo incluye las siglas "E2E-GOP", que en la literatura de procesamiento de voz suelen asociarse a tareas de evaluacion de pronunciacion de extremo a extremo (End-to-End Goodness of Pronunciation), y la referencia "SpeechOcean" apunta a un posible vinculo con corpus de habla para aprendizaje de segundas lenguas. Sin embargo, esta interpretacion es una mera inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor, por lo que no debe tomarse como un dato verificado.
 
@@ -90,7 +90,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anonym-coling2027/E2E-GOP-SpeechOcean762
+- Hugging Face: https://huggingface.co/anonym-coling2027/E2E-GOP-SpeechOcean762
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.
 - Demo: no disponible.

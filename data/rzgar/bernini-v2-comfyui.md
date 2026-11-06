@@ -79,7 +79,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/rzgar/Bernini-v2-ComfyUI)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/rzgar/Bernini-v2-ComfyUI)
 - [Modelo base ByteDance/Bernini-Diffusers-v2](https://huggingface.co/ByteDance/Bernini-Diffusers-v2)
 - [Repositorio Bernini-R-S2V (fine-tune relacionado)](https://huggingface.co/rzgar/Bernini-R-S2V)
 - [Artículo sobre Bernini-R S2V en ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-07-09-bernini-r-s2v-speech-driven-video)

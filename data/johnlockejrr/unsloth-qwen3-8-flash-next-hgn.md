@@ -18,7 +18,7 @@ La relevancia de este lanzamiento radica en su enfoque en eficiencia arquitectó
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF (Unsloth Dynamic v3.1); otras cuantizaciones no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | qwen-community-1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (repo de 118,8 GB); safetensors no disponible en este repositorio |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnlockejrr/unsloth-Qwen3.8-Flash-Next-HGN
+- Repositorio en Hugging Face: https://huggingface.co/johnlockejrr/unsloth-Qwen3.8-Flash-Next-HGN
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Guía de Unsloth para ejecutar Qwen3.8-Flash-Next: https://unsloth.ai/docs/models/qwen3.8-next
 - Actualización Dynamic v3.1: https://unsloth.ai/docs/models/qwen3.8-next#dynamic-v3.1-update-november-2nd-2026

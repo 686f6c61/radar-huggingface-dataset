@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/hstolte/Qwen3.8-Flash-Next-HALOLOOM
+- Repositorio del modelo en Hugging Face: https://huggingface.co/hstolte/Qwen3.8-Flash-Next-HALOLOOM
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio del modelo base en GitHub: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramienta HaloLoom: https://github.com/HawgAuto/HaloLoom

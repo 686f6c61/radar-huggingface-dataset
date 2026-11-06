@@ -66,11 +66,11 @@ No se dispone de datos comparativos en la información proporcionada. XTTS-v2 co
 - Existe riesgo de alucinación en la prosodia o en la pronunciación de palabras poco comunes, especialmente en idiomas con menos representación.
 - La clonación de voz plantea riesgos éticos y legales; el uso no autorizado de la voz de una persona puede violar derechos de imagen y privacidad.
 - No se especifican limitaciones de contexto, pero al ser un modelo de síntesis, la longitud máxima de texto generado puede estar limitada por la memoria de la GPU.
-- El repositorio en HuggingFace (rehuuuu/XTTS-v2) es una copia del modelo original de Coqui; se recomienda verificar la autenticidad y usar la versión oficial de coqui/XTTS-v2.
+- El repositorio en Hugging Face (rehuuuu/XTTS-v2) es una copia del modelo original de Coqui; se recomienda verificar la autenticidad y usar la versión oficial de coqui/XTTS-v2.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia): https://huggingface.co/rehuuuu/XTTS-v2
+- Repositorio en Hugging Face (copia): https://huggingface.co/rehuuuu/XTTS-v2
 - Modelo original de Coqui: https://huggingface.co/coqui/XTTS-v2
 - Código base (Coqui TTS): https://github.com/coqui-ai/TTS
 - Documentación de XTTS: https://tts.readthedocs.io/en/latest/models/xtts.html

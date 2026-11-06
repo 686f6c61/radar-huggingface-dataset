@@ -74,8 +74,8 @@ No disponible. No se han encontrado comparaciones directas con otros modelos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lactroiii/Muse-Glimmer-30B-ExecuTorch-PTE
-- Repositorio HuggingFace oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-ExecuTorch-PTE
+- Repositorio Hugging Face: https://huggingface.co/lactroiii/Muse-Glimmer-30B-ExecuTorch-PTE
+- Repositorio Hugging Face oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-ExecuTorch-PTE
 - Documentación oficial de ExecuTorch para Muse Glimmer: https://github.com/pytorch/executorch/blob/main/examples/models/muse-glimmer/README.md
 - Directorio del ejemplo en GitHub: https://github.com/pytorch/executorch/tree/main/examples/models/muse-glimmer
 - Anuncio del equipo de PyTorch: https://pytorch.org/blog/fast-ondevice-agentic-ai-with-executorch/

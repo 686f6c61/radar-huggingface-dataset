@@ -78,7 +78,7 @@ No se dispone de datos comparativos directos en la informacion proporcionada. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-l3
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-cf-l3
 - Modelo base (Olmo-3-7B-Think): https://huggingface.co/allenai/Olmo-3-7B-Instruct (pagina del modelo Instruct, el Think no se ha localizado directamente)
 - Paper de Olmo 3: https://arxiv.org/abs/2512.13961
 - Proyecto Olmo de AI2: https://allenai.org/olmo

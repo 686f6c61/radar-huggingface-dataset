@@ -82,7 +82,7 @@ La comparación se limita a especificaciones técnicas, ya que no hay datos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-0k_1k_2k_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-0k_1k_2k_merge
 - Modelo relacionado (geodesic-research): https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_pretraining_stage
 - Paper de referencia del método Linear: https://arxiv.org/abs/2203.05482
 - Sitio de ByteDance Seed: https://seed.bytedance.com/en/

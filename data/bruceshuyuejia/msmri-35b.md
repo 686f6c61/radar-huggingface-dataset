@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MSMRI-35B es un modelo publicado en HuggingFace por el usuario bruceshuyuejia bajo licencia Apache 2.0. La model card asociada al repositorio no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño real de parámetros, la longitud de contexto ni el proceso de entrenamiento a partir de la documentación oficial. El nombre sugiere un modelo de aproximadamente 35 mil millones de parámetros, pero este dato no está verificado en la información disponible.
+MSMRI-35B es un modelo publicado en Hugging Face por el usuario bruceshuyuejia bajo licencia Apache 2.0. La model card asociada al repositorio no contiene más información que la declaración de licencia, por lo que no es posible confirmar la arquitectura, el tamaño real de parámetros, la longitud de contexto ni el proceso de entrenamiento a partir de la documentación oficial. El nombre sugiere un modelo de aproximadamente 35 mil millones de parámetros, pero este dato no está verificado en la información disponible.
 
-El modelo no cuenta con descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad. No se han publicado resultados de benchmarks, demos ni documentación técnica adicional en el repositorio de HuggingFace.
+El modelo no cuenta con descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), lo que indica que se trata de una publicación reciente y sin validación por parte de la comunidad. No se han publicado resultados de benchmarks, demos ni documentación técnica adicional en el repositorio de Hugging Face.
 
 Dado que la única información verificable es la licencia Apache 2.0 y la región de publicación (US), cualquier evaluación de capacidades, rendimiento o idoneidad para producción debe considerarse pendiente de validación empírica por parte del usuario. Esta ficha recoge los datos disponibles y marca explícitamente como "no disponible" todo aquello que la model card no especifica.
 
@@ -88,5 +88,5 @@ La comparativa con Qwen2.5-32B, Llama 3.3-70B y Mistral Small 3 se incluye únic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bruceshuyuejia/MSMRI-35B
+- Hugging Face: https://huggingface.co/bruceshuyuejia/MSMRI-35B
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_format_medmcqa_qwen7b_10000` es un ajuste fino de un modelo de la familia Qwen2 con 7.615.616.512 parámetros (unos 7,62 mil millones), publicado en HuggingFace por el usuario `ishikaa`. El repositorio contiene únicamente pesos en formato safetensors (15,2 GB, lo que corresponde a precisión bf16/fp16) y las etiquetas del Hub indican que se ha entrenado con TRL mediante SFT (supervised fine-tuning) sobre una base Qwen2 y que es un modelo conversacional. La model card publicada es la plantilla automática de HuggingFace y no ha sido cumplimentada por el autor: no declara licencia, idiomas, datos de entrenamiento ni hiperparámetros.
+`ishikaa/acquisition_student_AS_format_medmcqa_qwen7b_10000` es un ajuste fino de un modelo de la familia Qwen2 con 7.615.616.512 parámetros (unos 7,62 mil millones), publicado en Hugging Face por el usuario `ishikaa`. El repositorio contiene únicamente pesos en formato safetensors (15,2 GB, lo que corresponde a precisión bf16/fp16) y las etiquetas del Hub indican que se ha entrenado con TRL mediante SFT (supervised fine-tuning) sobre una base Qwen2 y que es un modelo conversacional. La model card publicada es la plantilla automática de Hugging Face y no ha sido cumplimentada por el autor: no declara licencia, idiomas, datos de entrenamiento ni hiperparámetros.
 
 El identificador del repositorio sugiere, sin que el autor lo confirme en ningún momento, que se trata de un modelo "estudiante" (nomenclatura habitual en destilación de conocimiento o en aprendizaje activo, donde un modelo grande actúa como profesor y otro menor como alumno) entrenado sobre el conjunto de datos MedMCQA, un benchmark de preguntas médicas de opción múltiple, con un volumen de 10.000 ejemplos y algún formato de respuesta denominado "AS". Todas estas inferencias proceden exclusivamente de la cadena de texto del nombre del repositorio y deben tratarse como hipótesis, no como hechos verificados.
 
@@ -40,7 +40,7 @@ Respecto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha realiza
 - Comportamiento agéntico y razonamiento multi-paso: no disponible; no se documenta.
 - Capacidades multilingües: no disponibles; el idioma de entrenamiento no está declarado.
 - Capacidades especiales (modo thinking, visión, audio): no disponibles; no se documenta ninguna.
-- Servicio mediante endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia de HuggingFace, aunque el rendimiento real no está medido.
+- Servicio mediante endpoints compatibles: la etiqueta `endpoints_compatible` sugiere compatibilidad con la infraestructura de inferencia de Hugging Face, aunque el rendimiento real no está medido.
 
 ## Casos de uso
 
@@ -55,7 +55,7 @@ Respecto al entrenamiento, las etiquetas `trl` y `sft` indican que se ha realiza
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de HuggingFace y la sección de evaluación aparece como `[More Information Needed]`. Tampoco existe información externa verificable: los resultados de búsqueda web asociados a esta consulta no contienen ninguna referencia al modelo, a su autor ni a MedMCQA.
+No se han publicado resultados de benchmarks en la información disponible. La model card es la plantilla automática de Hugging Face y la sección de evaluación aparece como `[More Information Needed]`. Tampoco existe información externa verificable: los resultados de búsqueda web asociados a esta consulta no contienen ninguna referencia al modelo, a su autor ni a MedMCQA.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - KV cache: para una arquitectura tipo Qwen2-7B (28 capas, 4 cabezas KV, head dim 128) el coste aproximado es de unos 56 KB por token en fp16, es decir, cerca de 1,8 GB para 32.768 tokens. Es una estimación basada en la arquitectura del modelo base, no una medición de este checkpoint.
 - GPU recomendadas: A100 40/80 GB y H100 para servicio con concurrencia alta; RTX 3090, RTX 4090, L40S o A6000 (24-48 GB) para bf16 en un solo usuario.
 - GPU de consumo: cabe en bf16 en tarjetas de 24 GB (RTX 3090, 4090, 5090) con margen ajustado según la longitud de contexto; en 4 bits cabe en GPUs de 8-12 GB (RTX 3060 12 GB, RTX 4070, RTX 4060 Ti 16 GB).
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta `text-generation-inference`), vLLM, SGLang, y endpoints compatibles de HuggingFace. Para llama.cpp u Ollama sería necesario convertir los safetensors a GGUF, conversión que no se proporciona.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta `text-generation-inference`), vLLM, SGLang, y endpoints compatibles de Hugging Face. Para llama.cpp u Ollama sería necesario convertir los safetensors a GGUF, conversión que no se proporciona.
 - Latencia y throughput: no disponibles. No se han publicado mediciones por parte del autor. Como referencia genérica, un transformer denso de 7-8B en bf16 con vLLM sobre una GPU de 24 GB suele ofrecer decenas de tokens por segundo por secuencia, pero se trata de una estimación orientativa para la clase de modelo, no de un dato medido sobre este checkpoint.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ Datos de los modelos de referencia tomados de sus fichas públicas; no existen d
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla automática de HuggingFace y no contiene información sobre datos, entrenamiento, evaluación ni uso previsto. Cualquier decisión de uso se toma a ciegas.
+- Documentación inexistente: la model card es la plantilla automática de Hugging Face y no contiene información sobre datos, entrenamiento, evaluación ni uso previsto. Cualquier decisión de uso se toma a ciegas.
 - Licencia no disponible: al no declararse licencia, no hay base legal explícita para uso comercial ni para redistribución. Además, la licencia del modelo base Qwen2 (Apache 2.0) no cubre automáticamente las obligaciones o restricciones que el autor pudiera querer imponer sobre el derivado.
 - Riesgo elevado de alucinación en dominio médico: un ajuste con pocos miles de ejemplos sobre un modelo de 7B no elimina la tendencia a generar afirmaciones plausibles pero falsas. En contexto sanitario esto puede causar daño si la salida se usa sin verificación profesional.
 - Sin evaluación: no hay métricas publicadas de exactitud, calibración, sesgo ni robustez, ni siquiera en la tarea para la que supuestamente se entrenó.
@@ -96,7 +96,7 @@ Datos de los modelos de referencia tomados de sus fichas públicas; no existen d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_qwen7b_10000
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_qwen7b_10000
 - Perfil del autor: https://huggingface.co/ishikaa
 - Referencia citada en la plantilla de la model card (calculadora de impacto ambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Librería TRL, utilizada según las etiquetas del repositorio: https://github.com/huggingface/trl

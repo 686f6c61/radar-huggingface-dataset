@@ -68,4 +68,4 @@ No disponible. No se han encontrado modelos comparables en la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Exile051112/franka-pico4-act-c2-red-yellow-blue-real
+- Repositorio Hugging Face: https://huggingface.co/Exile051112/franka-pico4-act-c2-red-yellow-blue-real

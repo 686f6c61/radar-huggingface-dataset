@@ -1,7 +1,7 @@
 # faiisu/moss-asr-th-finetuned-subway
 
 ## Resumen
-El modelo `faiisu/moss-asr-th-finetuned-subway` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla MOSS, publicado en HuggingFace por el usuario faiisu bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 908 millones de parámetros (908.513.280 según los pesos en safetensors) orientado a la transcripción y diarización de audio, tal y como indica la etiqueta de arquitectura `moss_transcribe_diarize`. El nombre sugiere un ajuste específico para tailandés ("th") en un dominio concreto ("subway"), probablemente grabaciones de megafonía o anuncios en el metro.
+El modelo `faiisu/moss-asr-th-finetuned-subway` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla MOSS, publicado en Hugging Face por el usuario faiisu bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 908 millones de parámetros (908.513.280 según los pesos en safetensors) orientado a la transcripción y diarización de audio, tal y como indica la etiqueta de arquitectura `moss_transcribe_diarize`. El nombre sugiere un ajuste específico para tailandés ("th") en un dominio concreto ("subway"), probablemente grabaciones de megafonía o anuncios en el metro.
 
 La relevancia de este modelo es limitada y muy específica: se trata de un fine-tuning de nicho, con cero descargas y cero likes en el momento de la consulta, y con una model card prácticamente vacía que solo declara la licencia. No hay información publicada sobre el conjunto de datos de ajuste, los idiomas soportados oficialmente ni los resultados de evaluación.
 
@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| faiisu/moss-asr-th-finetuned-subway | 908,5 M | no disponible | no disponible (probable tailandés) | Apache 2.0 | HuggingFace, 0 descargas |
+| faiisu/moss-asr-th-finetuned-subway | 908,5 M | no disponible | no disponible (probable tailandés) | Apache 2.0 | Hugging Face, 0 descargas |
 | Whisper large-v3 (OpenAI) | 1.550 M | 30 s de audio por ventana | 99 idiomas | MIT | Ampliamente disponible |
 | Whisper medium (OpenAI) | 769 M | 30 s de audio por ventana | 99 idiomas | MIT | Ampliamente disponible |
-| MOSS ASR base (modelo original) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| MOSS ASR base (modelo original) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 La comparación con Whisper es la más natural por tamaño y tarea, pero debe tomarse con cautela: Whisper es un modelo genérico multilingüe con evaluación pública extensa, mientras que este fine-tuning carece de benchmarks y de documentación sobre idiomas. No se dispone de datos para comparar rendimiento numérico.
 
@@ -75,4 +75,4 @@ La comparación con Whisper es la más natural por tamaño y tarea, pero debe to
 - Para producción, se recomienda validar con un conjunto propio de audio del dominio y comparar contra alternativas consolidadas como Whisper antes de adoptarlo.
 
 ## Enlaces
-- [HuggingFace: faiisu/moss-asr-th-finetuned-subway](https://huggingface.co/faiisu/moss-asr-th-finetuned-subway)
+- [Hugging Face: faiisu/moss-asr-th-finetuned-subway](https://huggingface.co/faiisu/moss-asr-th-finetuned-subway)

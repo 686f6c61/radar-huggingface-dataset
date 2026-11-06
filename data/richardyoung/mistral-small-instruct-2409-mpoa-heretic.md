@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Small-Instruct-2409-MPOA-heretic es un ajuste fino (fine-tune) del modelo Mistral-Small-Instruct-2409 de Mistral AI, publicado por el usuario richardyoung en HuggingFace. Se trata de una variante "abliterated" o "decensored", es decir, un modelo al que se le ha aplicado una técnica de modificación de pesos (denominada MPOA en el nombre y etiquetada como "heretic") para eliminar o reducir los mecanismos de rechazo y censura del modelo original, de modo que responda a peticiones que el modelo base declinaría.
+Mistral-Small-Instruct-2409-MPOA-heretic es un ajuste fino (fine-tune) del modelo Mistral-Small-Instruct-2409 de Mistral AI, publicado por el usuario richardyoung en Hugging Face. Se trata de una variante "abliterated" o "decensored", es decir, un modelo al que se le ha aplicado una técnica de modificación de pesos (denominada MPOA en el nombre y etiquetada como "heretic") para eliminar o reducir los mecanismos de rechazo y censura del modelo original, de modo que responda a peticiones que el modelo base declinaría.
 
 El modelo base, Mistral-Small-Instruct-2409, es un transformer denso de aproximadamente 22.200 millones de parámetros (22,247 mil millones según los pesos en safetensors), con una ventana de contexto de 128.000 tokens según la documentación pública de Mistral AI, aunque este dato no se confirma en la información proporcionada del repositorio. El ajuste conserva la arquitectura, tokenizador (mistral-common) y capacidades multilingües del original, cubriendo inglés, francés, alemán, español, italiano, portugués, chino, japonés, ruso y coreano.
 
@@ -85,7 +85,7 @@ Los datos de contexto y licencia de los modelos comparables provienen de documen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-MPOA-heretic
+- Repositorio Hugging Face: https://huggingface.co/richardyoung/Mistral-Small-Instruct-2409-MPOA-heretic
 - Modelo base: https://huggingface.co/mistralai/Mistral-Small-Instruct-2409
 - Licencia MRL 0.1: https://mistral.ai/licenses/MRL-0.1.md
 - Contacto de licencias Mistral AI: https://mistral.ai/contact/

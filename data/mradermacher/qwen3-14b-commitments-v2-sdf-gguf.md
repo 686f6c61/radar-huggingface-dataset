@@ -6,7 +6,7 @@ Este repositorio contiene una coleccion de cuantizaciones GGUF del modelo `joshy
 
 La relevancia de esta publicacion es acotada y muy especifica. El modelo original se etiqueta con `synthetic-document-finetuning`, `self-authored-character`, `model-welfare`, `research` y `not-for-deployment`, y declara licencia `research-only`. Es decir, se trata de un artefacto de investigacion orientado a estudios de comportamiento y bienestar de modelos, no de un modelo pensado para produccion ni para uso comercial. Las cuantizaciones GGUF existen para permitir que ese objeto de estudio se ejecute en hardware de consumo y en entornos de investigacion sin GPU de datacenter.
 
-El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue creado y actualizado el 21 de septiembre de 2026, y ocupa 102 GB en total. La ficha de HuggingFace no documenta arquitectura detallada, datos de entrenamiento, benchmarks ni contexto maximo del fine-tune, por lo que buena parte de los campos tecnicos de esta ficha quedan marcados como no disponibles.
+El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue creado y actualizado el 21 de septiembre de 2026, y ocupa 102 GB en total. La ficha de Hugging Face no documenta arquitectura detallada, datos de entrenamiento, benchmarks ni contexto maximo del fine-tune, por lo que buena parte de los campos tecnicos de esta ficha quedan marcados como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, fue cre
 
 No se documenta en la informacion disponible la arquitectura concreta del fine-tune `joshycodes/qwen3-14b-commitments-v2-sdf`, ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron fases de RLHF, DPO u otra optimizacion por preferencias. Lo unico que se puede afirmar con la informacion proporcionada es que el modelo base declarado pertenece a la familia Qwen3 con 14B parametros y que el fine-tune se etiqueta como `synthetic-document-finetuning`, lo que sugiere un ajuste supervisado sobre documentos generados sinteticamente, presumiblemente con el objetivo de inculcar un personaje o conjunto de compromisos autoescritos (`self-authored-character`). Este extremo no se detalla en la model card y no debe darse por confirmado.
 
-Sobre esta publicacion en concreto, la unica transformacion tecnica aplicada es la cuantizacion a GGUF. El README indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe el pipeline de conversion desde pesos HuggingFace a llama.cpp. La mayoria de los quants son de tipo K (Q2_K a Q6_K) mas una variante IQ4_XS; el autor no ha publicado variantes con matriz de importancia (imatrix) y remite a las graficas publicas de perplexidad de ikawrakow y al analisis de Artefact2 para decidir entre tipos de cuantizacion de baja calidad.
+Sobre esta publicacion en concreto, la unica transformacion tecnica aplicada es la cuantizacion a GGUF. El README indica `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que describe el pipeline de conversion desde pesos Hugging Face a llama.cpp. La mayoria de los quants son de tipo K (Q2_K a Q6_K) mas una variante IQ4_XS; el autor no ha publicado variantes con matriz de importancia (imatrix) y remite a las graficas publicas de perplexidad de ikawrakow y al analisis de Artefact2 para decidir entre tipos de cuantizacion de baja calidad.
 
 ## Capacidades
 
@@ -86,8 +86,8 @@ No hay datos de rendimiento publicados que permitan una comparativa funcional. S
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (mradermacher/qwen3-14b-commitments-v2-sdf-GGUF) | 14,77 mil millones | GGUF (11 quants) | no disponible | research-only / not-for-deployment | Publico en HuggingFace; 0 descargas |
-| joshycodes/qwen3-14b-commitments-v2-sdf (modelo base) | 14,77 mil millones | safetensors (transformers) | no disponible | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| Este repositorio (mradermacher/qwen3-14b-commitments-v2-sdf-GGUF) | 14,77 mil millones | GGUF (11 quants) | no disponible | research-only / not-for-deployment | Publico en Hugging Face; 0 descargas |
+| joshycodes/qwen3-14b-commitments-v2-sdf (modelo base) | 14,77 mil millones | safetensors (transformers) | no disponible | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros fine-tunes de la familia Qwen3-14B | 14,77 mil millones | safetensors / GGUF segun repositorio | no disponible | variable por repositorio; no verificada en esta busqueda | no disponible |
 | Alternativas de 12-14B de otros fabricantes (por ejemplo familias densas de tamano similar) | orden de 12-14 mil millones | safetensors / GGUF | no disponible | no verificada en esta busqueda | no disponible |
 
@@ -109,7 +109,7 @@ No se dispone de MMLU, HumanEval, GSM8K ni perplexidad de este modelo ni de sus 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen3-14b-commitments-v2-sdf-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen3-14b-commitments-v2-sdf-GGUF
 - Modelo base (fine-tune original): https://huggingface.co/joshycodes/qwen3-14b-commitments-v2-sdf
 - Pagina resumen del autor para este modelo (lista de descargas): https://hf.tst.eu/model#qwen3-14b-commitments-v2-sdf-GGUF
 - Preguntas frecuentes y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

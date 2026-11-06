@@ -81,7 +81,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 - No se declara licencia en el repositorio. No se puede asumir uso comercial permitido; hay que contactar con el autor o consultar la licencia antes de cualquier despliegue en produccion.
 - Es un artefacto de investigacion: no hay model card con instrucciones de inferencia, preprocesado ni postprocesado mas alla de la descripcion del experimento.
-- Ausencia de pipeline declarado en HuggingFace (`pipeline`: no disponible), lo que complica el uso directo con las utilidades estandar.
+- Ausencia de pipeline declarado en Hugging Face (`pipeline`: no disponible), lo que complica el uso directo con las utilidades estandar.
 - El checkpoint publicado es de entrenamiento completo (optimizador, scheduler, escalador AMP), no un peso de inferencia optimizado. Su tamano de 2,9 GB es mayor que el del modelo desnudo.
 - Los resultados de validacion provienen de TartanAir, un dataset sintetico. No hay evidencia publicada de generalizacion a secuencias reales con ruido, desenfoque de movimiento, cambios de iluminacion o superficies poco texturizadas.
 - El error de trayectoria absoluto de 4,9662 m sobre la validacion de TartanAir indica deriva acumulada; en secuencias largas sera necesario un cierre de bucle o fusion con otros sensores.
@@ -92,5 +92,5 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jangablox/tartanair-generated-v2-balanced-moge-two-frame-geometry-96-angular-velocity-20epoch-seed2024
+- Hugging Face: https://huggingface.co/jangablox/tartanair-generated-v2-balanced-moge-two-frame-geometry-96-angular-velocity-20epoch-seed2024
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a OpenVO, a TartanAir ni a MoGE. Los resultados devueltos correspondian a servicios de traduccion en linea (Google Traducteur, Reverso, DeepL, Google Traduction), sin relacion con el modelo.

@@ -19,7 +19,7 @@ La relevancia de este modelo radica en su doble vertiente: por un lado, es un mo
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (MLX), sidecar MTP en safetensors, adaptador LoRA en NPZ |
 
-Nota: el archivo `model.safetensors` cuantizado contiene 1.399.927.296 parámetros (dato de HuggingFace), pero corresponde al tronco en 4-bit, no al total de parámetros del modelo original (9B).
+Nota: el archivo `model.safetensors` cuantizado contiene 1.399.927.296 parámetros (dato de Hugging Face), pero corresponde al tronco en 4-bit, no al total de parámetros del modelo original (9B).
 
 ## Arquitectura y entrenamiento
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos (benchmarks) entre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Foresee/Qwen3.8-9B-heretic-uncensored-4bit-MTPLX
+- Modelo en Hugging Face: https://huggingface.co/Foresee/Qwen3.8-9B-heretic-uncensored-4bit-MTPLX
 - Modelo base (rohit267): https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Repositorio de optimización MTPLX: https://github.com/undeemed/qwen-heretic-mtplx-speedup
 - Proyecto Heretic (abliteration): https://github.com/p-e-w/heretic

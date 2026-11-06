@@ -19,7 +19,7 @@ La arquitectura subyacente es Qwen3_5ForConditionalGeneration (densa), con el ca
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors (MLX) |
 
-Nota: el repositorio reporta en HuggingFace 5.950.882.304 parámetros en el safetensors, lo que no coincide con los 27.360 millones lógicos declarados en la model card. Este dato parece un error de metadatos; se toma como referencia la model card.
+Nota: el repositorio reporta en Hugging Face 5.950.882.304 parámetros en el safetensors, lo que no coincide con los 27.360 millones lógicos declarados en la model card. Este dato parece un error de metadatos; se toma como referencia la model card.
 
 ## Arquitectura y entrenamiento
 
@@ -70,12 +70,12 @@ No se dispone de datos de rendimiento comparativos. La comparación se limita a 
 - Visión no certificada: la torre de visión está presente en BF16, pero no se garantiza su calidad.
 - Requisitos de memoria: aunque la cuantización reduce el tamaño, sigue necesitando al menos 20 GB de memoria unificada, lo que excluye Macs con menos de 32 GB.
 - Incompatibilidad con hardware no Apple: el formato MLX solo funciona en Apple Silicon.
-- Posible error en metadatos: el número de parámetros reportado por HuggingFace (5.95B) no coincide con los 27.36B lógicos; verificar antes de usar.
+- Posible error en metadatos: el número de parámetros reportado por Hugging Face (5.95B) no coincide con los 27.36B lógicos; verificar antes de usar.
 - Sin soporte de audio: el modelo no incluye capacidades de audio.
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-6bit)
+- [Hugging Face del modelo](https://huggingface.co/AutomatosX/AX-Qwen3.6-27B-MLX-AXQ-6bit)
 - [Modelo base Qwen/Qwen3.6-27B](https://huggingface.co/Qwen/Qwen3.6-27B)
 - [Certificado Tier 1](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-27b-axq6-nomtp-tier1.md)
 - [Repositorio AXQuant](https://github.com/defai-digital/axquant)

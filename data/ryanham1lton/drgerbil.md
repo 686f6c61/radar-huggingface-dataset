@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DrGerbil es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo la identificacion `Ryanham1lton/DrGerbil`. En el momento de la consulta, la informacion publica disponible es practicamente nula: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`), no se declara pipeline de inferencia, no se listan idiomas soportados y no se documenta arquitectura, numero de parametros ni datos de entrenamiento.
+DrGerbil es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo la identificacion `Ryanham1lton/DrGerbil`. En el momento de la consulta, la informacion publica disponible es practicamente nula: la model card no contiene mas que la declaracion de licencia (`cc-by-4.0`), no se declara pipeline de inferencia, no se listan idiomas soportados y no se documenta arquitectura, numero de parametros ni datos de entrenamiento.
 
 El unico dato tecnico objetivo que puede extraerse del repositorio es su tamano: 0,1 GB. Este volumen sugiere un checkpoint de pequeno tamano (del orden de decenas o pocos cientos de millones de parametros en precision completa, o una version cuantizada de un modelo mayor), aunque se trata de una inferencia a partir del peso del repositorio y no de un dato confirmado por el autor. El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado el 19 de septiembre de 2026 con apenas dos minutos de diferencia entre ambos eventos, lo que apunta a una publicacion de prueba o a un artefacto experimental sin difusion.
 
@@ -85,8 +85,8 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea objetivo del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/DrGerbil
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/DrGerbil
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Paper: no disponible.
 - Blog o nota tecnica: no disponible.
 - Repositorio de codigo: no disponible.

@@ -86,7 +86,7 @@ No se dispone de información sobre otros modelos de ASR específicos para persa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hasanghaffari93/whisper-large-v3-turbo-persian-ggml-q5_0
+- Repositorio Hugging Face: https://huggingface.co/hasanghaffari93/whisper-large-v3-turbo-persian-ggml-q5_0
 - Modelo base (ajuste en persa): https://huggingface.co/givia/whisper-large-v3-turbo-persian
 - Whisper large-v3-turbo original de OpenAI: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio de whisper.cpp: https://github.com/ggerganov/whisper.cpp

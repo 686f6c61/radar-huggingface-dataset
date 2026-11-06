@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text-emb4
+- Modelo en Hugging Face: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text-emb4
 - Repack de texto W4A16 del mismo autor: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-w4a16-ct-text
 - Repack equivalente para el MoE 26B-A4B: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct
 - Checkpoints W4A16 oficiales de Google: https://huggingface.co/google/gemma-4-31B-it-qat-w4a16-ct

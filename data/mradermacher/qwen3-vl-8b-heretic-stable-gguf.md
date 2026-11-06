@@ -91,7 +91,7 @@ La comparativa se limita a variantes del mismo checkpoint o a su ascendiente dir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/Qwen3-VL-8B-Heretic-Stable-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/Qwen3-VL-8B-Heretic-Stable-GGUF
 - Quants ponderados/imatrix (i1-GGUF): https://huggingface.co/mradermacher/Qwen3-VL-8B-Heretic-Stable-i1-GGUF
 - Modelo base: https://huggingface.co/prithivMLmods/Qwen3-VL-8B-Heretic-Stable
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#Qwen3-VL-8B-Heretic-Stable-GGUF

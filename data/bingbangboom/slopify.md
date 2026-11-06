@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `bingbangboom/slopify` es un ajuste fino (finetune) del modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, publicado en HuggingFace por el usuario `bingbangboom`. Está diseñado para generación de texto y sigue la arquitectura de Qwen3-8B, un transformer de 8.190 millones de parámetros. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y el idioma declarado es el inglés.
+El modelo `bingbangboom/slopify` es un ajuste fino (finetune) del modelo base `unsloth/qwen3-8b-unsloth-bnb-4bit`, publicado en Hugging Face por el usuario `bingbangboom`. Está diseñado para generación de texto y sigue la arquitectura de Qwen3-8B, un transformer de 8.190 millones de parámetros. La licencia es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y el idioma declarado es el inglés.
 
 A pesar de su nombre, no existe documentación oficial que describa el propósito concreto del modelo ni el conjunto de datos utilizado para el ajuste fino. La model card es mínima y solo indica que se entrenó con las librerías Unsloth y TRL. El repositorio tiene cero descargas y cero "likes", lo que sugiere que es un experimento personal o un modelo en fase inicial de publicación. No se han publicado benchmarks ni evaluaciones independientes.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo reside en que sirve como ejemplo de un finet
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune del checkpoint `unsloth/qwen3-8b-unsloth-bnb4bit`, que a su vez es una versión cuantizada en 4 bits de Qwen3-8B optimizada con la librería Unsloth para acelerar el entrenamiento. La arquitectura subyacente es la de Qwen3-8B, un transformer denso con atención causal estándar, diseñado para generación de texto y razonamiento. El ajuste fino se realizó con HuggingFace TRL, pero no se publican detalles sobre el dataset, el número de pasos, la función de pérdida ni el método de alineación (RLHF, DPO, etc.).
+El modelo es un finetune del checkpoint `unsloth/qwen3-8b-unsloth-bnb4bit`, que a su vez es una versión cuantizada en 4 bits de Qwen3-8B optimizada con la librería Unsloth para acelerar el entrenamiento. La arquitectura subyacente es la de Qwen3-8B, un transformer denso con atención causal estándar, diseñado para generación de texto y razonamiento. El ajuste fino se realizó con Hugging Face TRL, pero no se publican detalles sobre el dataset, el número de pasos, la función de pérdida ni el método de alineación (RLHF, DPO, etc.).
 
 El tamaño del repositorio (16,4 GB) es consistente con pesos en bf16 para 8B parámetros, aunque no se indica explícitamente la precisión final de los pesos publicados. No hay información sobre el número de tokens de entrenamiento ni sobre técnicas de optimización adicionales más allá del uso de Unsloth.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|
-| bingbangboom/slopify | 8.19B | No disponible | Apache 2.0 | HuggingFace | No publicados |
-| Qwen3-8B (base) | 8.19B | 32k | Apache 2.0 | HuggingFace | MMLU ~77%, HumanEval ~69% (según el paper de Qwen3) |
+| bingbangboom/slopify | 8.19B | No disponible | Apache 2.0 | Hugging Face | No publicados |
+| Qwen3-8B (base) | 8.19B | 32k | Apache 2.0 | Hugging Face | MMLU ~77%, HumanEval ~69% (según el paper de Qwen3) |
 | Llama 3.1 8B | 8.03B | 128k | Llama 3.1 License | Meta | MMLU ~68%, HumanEval ~72% (según Meta) |
 
 El finetune no tiene métricas propias y, al ser un ajuste sobre un checkpoint cuantizado, puede tener un rendimiento ligeramente inferior al modelo base. La comparación con Llama 3.1 se basa en datos oficiales del modelo base, no del finetune.
@@ -79,7 +79,7 @@ El finetune no tiene métricas propias y, al ser un ajuste sobre un checkpoint c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bingbangboom/slopify
+- Modelo en Hugging Face: https://huggingface.co/bingbangboom/slopify
 - Perfil del autor: https://huggingface.co/bingbangboom/models
 - Referencia a Unsloth: https://github.com/unslothai/unsloth
 - Referencias externas no verificadas (posiblemente no relacionadas): 

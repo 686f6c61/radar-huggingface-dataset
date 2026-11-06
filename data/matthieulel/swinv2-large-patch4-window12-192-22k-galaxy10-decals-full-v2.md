@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `swinv2-large-patch4-window12-192-22k-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace matthieulel. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-large-patch4-window12-192-22k`, un transformer jerárquico con atención por ventanas desplazadas, sobre el conjunto de datos Galaxy10 DECaLS, que consta de 10 clases morfológicas y 17.736 imágenes.
+El modelo `swinv2-large-patch4-window12-192-22k-galaxy10-decals-full-v2` es un clasificador de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face matthieulel. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/swinv2-large-patch4-window12-192-22k`, un transformer jerárquico con atención por ventanas desplazadas, sobre el conjunto de datos Galaxy10 DECaLS, que consta de 10 clases morfológicas y 17.736 imágenes.
 
 El modelo resuelve una tarea concreta y acotada: asignar una de diez categorías morfológicas a una imagen de galaxia procedente del sondeo DECaLS. Forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026), lo que lo convierte en una pieza de un benchmark reproducible más que en un modelo de propósito general.
 
@@ -79,16 +79,16 @@ Se observa que la pérdida de validación aumenta tras la época 6 mientras la a
 - VRAM estimada para inferencia: aproximadamente 0,8-1,5 GB en fp32 para un lote pequeño (el checkpoint pesa 0,8 GB y el modelo tiene 195 M de parámetros); en fp16 o bf16 el peso se reduce a unos 0,4 GB, aunque el autor no documenta cuantizaciones ni pesos de precisión reducida.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente para inferencia en fp32 con lotes pequeños; para evaluación de lotes grandes o ajuste fino, se recomienda una GPU de 16 GB o más (por ejemplo, RTX 4090, A100, H100).
 - Cabe en GPU de consumo: sí, en tarjetas como RTX 3060, RTX 4060, RTX 4070 o superiores, siempre que se use un lote reducido.
-- Opciones de despliegue: `transformers` con `AutoModelForImageClassification` (soporte nativo documentado); el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje y no a clasificación de imágenes.
+- Opciones de despliegue: `transformers` con `AutoModelForImageClassification` (soporte nativo documentado); el tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. No se documenta soporte explícito para vLLM, llama.cpp, Ollama o TGI, que están orientados a modelos de lenguaje y no a clasificación de imágenes.
 - Latencia y throughput: no disponibles en la información proporcionada. El entrenamiento se realizó en una sola GPU en fp32 con TF32 desactivado, lo que da una idea del coste de cómputo, pero no se publican cifras de inferencia.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Tarea | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (swinv2-large-galaxy10-decals-full-v2) | 195,2 M | Clasificación de morfología galáctica (10 clases) | Imagen 192x192 | 84,05% accuracy, 83,60% F1 ponderado en test | Apache 2.0 | HuggingFace, 14 descargas |
-| microsoft/swinv2-large-patch4-window12-192-22k | ~197 M (no confirmado en la información) | Clasificación de imágenes general (ImageNet-22k) | Imagen 192x192 | No disponible en esta información | No disponible en esta información | HuggingFace (modelo base) |
-| Otras configuraciones del benchmark Vision Foundation Models Benchmark | 40 backbones distintos | Clasificación de morfología galáctica | Variable | No disponibles en esta información | Variable | Colección en HuggingFace |
+| Este modelo (swinv2-large-galaxy10-decals-full-v2) | 195,2 M | Clasificación de morfología galáctica (10 clases) | Imagen 192x192 | 84,05% accuracy, 83,60% F1 ponderado en test | Apache 2.0 | Hugging Face, 14 descargas |
+| microsoft/swinv2-large-patch4-window12-192-22k | ~197 M (no confirmado en la información) | Clasificación de imágenes general (ImageNet-22k) | Imagen 192x192 | No disponible en esta información | No disponible en esta información | Hugging Face (modelo base) |
+| Otras configuraciones del benchmark Vision Foundation Models Benchmark | 40 backbones distintos | Clasificación de morfología galáctica | Variable | No disponibles en esta información | Variable | Colección en Hugging Face |
 
 No se dispone en la información proporcionada de resultados de otros backbones del mismo benchmark ni de modelos alternativos específicos de morfología galáctica con los que comparar directamente. La comparativa con el modelo base es solo estructural: este checkpoint está especializado en una tarea de 10 clases, mientras que el base está preentrenado en 22k clases de ImageNet.
 
@@ -106,7 +106,7 @@ No se dispone en la información proporcionada de resultados de otros backbones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/swinv2-large-patch4-window12-192-22k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/swinv2-large-patch4-window12-192-22k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/swinv2-large-patch4-window12-192-22k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

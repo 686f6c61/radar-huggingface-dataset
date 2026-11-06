@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables. El único modelo de ref
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
+- Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_P100_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

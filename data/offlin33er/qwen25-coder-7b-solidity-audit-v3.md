@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Offlin33er/qwen25-coder-7b-solidity-audit-v3 es un ajuste fino (fine-tune) supervisado del modelo Qwen/Qwen2.5-Coder-7B-Instruct, publicado por el usuario Offlin33er en HuggingFace. Por el nombre del repositorio, el ajuste esta orientado a tareas de auditoria de contratos inteligentes en Solidity, aunque la model card no documenta ni el conjunto de datos ni los hiperparametros de entrenamiento empleados. Se trata, por tanto, de un modelo de 7,6 mil millones de parametros (heredados del modelo base) especializado sobre un dominio muy concreto del desarrollo blockchain.
+Offlin33er/qwen25-coder-7b-solidity-audit-v3 es un ajuste fino (fine-tune) supervisado del modelo Qwen/Qwen2.5-Coder-7B-Instruct, publicado por el usuario Offlin33er en Hugging Face. Por el nombre del repositorio, el ajuste esta orientado a tareas de auditoria de contratos inteligentes en Solidity, aunque la model card no documenta ni el conjunto de datos ni los hiperparametros de entrenamiento empleados. Se trata, por tanto, de un modelo de 7,6 mil millones de parametros (heredados del modelo base) especializado sobre un dominio muy concreto del desarrollo blockchain.
 
 El entrenamiento se realizo con SFT (supervised fine-tuning) mediante la libreria TRL, en el marco de trabajos ejecutados con hf_jobs, segun las etiquetas y metadatos del repositorio. La model card es practicamente una plantilla autogenerada: no incluye descripcion del dataset, numero de tokens, composicion de datos, ni resultados de evaluacion. El ejemplo de uso rapido que aparece en la tarjeta es una pregunta generica sobre viajes en el tiempo, sin ninguna relacion con Solidity, lo que refuerza la idea de que la documentacion no se ha personalizado.
 
@@ -110,7 +110,7 @@ Frente al modelo base, este ajuste solo aporta potencial especializacion en Soli
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3
+- Modelo en Hugging Face: https://huggingface.co/Offlin33er/qwen25-coder-7b-solidity-audit-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 

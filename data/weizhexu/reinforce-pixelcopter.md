@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Reinforce-PixelCopter es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno Pixelcopter-PLE-v0, un videojuego 2D de la suite PyGame Learning Environment en el que un helicoptero pixelado debe atravesar obstaculos. El modelo lo publica el usuario weizhexu en HuggingFace como parte del material practico de la Unidad 4 del Deep Reinforcement Learning Course, un curso abierto de HuggingFace que ilustra los fundamentos de los metodos de gradiente de politica.
+Reinforce-PixelCopter es un agente de aprendizaje por refuerzo entrenado con el algoritmo REINFORCE para resolver el entorno Pixelcopter-PLE-v0, un videojuego 2D de la suite PyGame Learning Environment en el que un helicoptero pixelado debe atravesar obstaculos. El modelo lo publica el usuario weizhexu en Hugging Face como parte del material practico de la Unidad 4 del Deep Reinforcement Learning Course, un curso abierto de Hugging Face que ilustra los fundamentos de los metodos de gradiente de politica.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de una red de politica (policy network) que mapea observaciones del entorno a acciones. Su interes es fundamentalmente didactico y de reproduccion de experimentos: sirve para ilustrar como funciona el algoritmo REINFORCE, como se evalua un agente de RL mediante recompensa media y como se registran resultados en el model-index de una model card.
 
@@ -45,7 +45,7 @@ No se especifican en la informacion disponible el numero de parametros, la topol
 - Baseline de comparacion para algoritmos de gradiente de politica: al ser un REINFORCE simple, resulta util como referencia minima frente a variantes como A2C, PPO o actor-critic con linea base.
 - Estudio de la varianza en metodos Monte Carlo: la elevada desviacion tipica declarada (14,21) lo convierte en un caso de estudio para analizar por que los metodos sin linea base producen politicas inestables.
 - Punto de partida para transferencia a otros entornos PLE: la red puede reentrenarse o ajustarse en tareas similares de la suite PyGame Learning Environment (Catcher, FlappyBird, etc.).
-- Validacion de infraestructura de RL: util para comprobar que un pipeline de entrenamiento, guardado de checkpoints y publicacion en HuggingFace funciona correctamente antes de escalar a entornos mas costosos.
+- Validacion de infraestructura de RL: util para comprobar que un pipeline de entrenamiento, guardado de checkpoints y publicacion en Hugging Face funciona correctamente antes de escalar a entornos mas costosos.
 - Material de referencia para desarrolladores que se inician en RL: el repositorio y la model card son autocontenidos y de tamano minimo, lo que facilita su inspeccion completa.
 
 ## Benchmarks y rendimiento
@@ -90,7 +90,7 @@ No se dispone de datos comparativos publicados en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/weizhexu/Reinforce-PixelCopter
+- Modelo en Hugging Face: https://huggingface.co/weizhexu/Reinforce-PixelCopter
 - Deep Reinforcement Learning Course, Unidad 4 (introduccion al algoritmo): https://huggingface.co/deep-rl-course/unit4/introduction
 - Entorno Pixelcopter-PLE-v0 (PyGame Learning Environment): no disponible en la informacion proporcionada
 - Paper o repositorio del autor: no disponible en la informacion proporcionada

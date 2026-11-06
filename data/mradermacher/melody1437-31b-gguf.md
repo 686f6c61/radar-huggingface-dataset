@@ -52,7 +52,7 @@ No disponible. No se han identificado modelos comparables con la información pr
 - La licencia no está especificada, por lo que se desconoce si el uso comercial está permitido.
 - El modelo es una cuantización GGUF; la calidad de la salida puede degradarse en cuantizaciones de baja precisión (como Q2_K), aunque no hay datos concretos.
 - El repositorio de cuantización no incluye la model card original, lo que dificulta evaluar su idoneidad para producción.
-- Los metadatos de HuggingFace muestran 0 descargas y 0 likes, lo que sugiere poca adopción o un modelo recién publicado.
+- Los metadatos de Hugging Face muestran 0 descargas y 0 likes, lo que sugiere poca adopción o un modelo recién publicado.
 
 ## Enlaces
 

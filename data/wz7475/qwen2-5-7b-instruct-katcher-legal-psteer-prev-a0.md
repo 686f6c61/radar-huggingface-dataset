@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-a0` es un checkpoint alojado en HuggingFace por el usuario wz7475, creado el 27 de septiembre de 2026 y actualizado dos minutos mas tarde. El identificador del repositorio sugiere que deriva de Qwen2.5-7B-Instruct y que se le ha aplicado algun tipo de ajuste o intervencion orientada al dominio juridico: los sufijos "legal", "katcher", "psteer" y "prev-a0" apuntan a un experimento de steering sobre activaciones o de ablation sobre un modelo base de 7 000 millones de parametros. Conviene subrayar que esta lectura es una inferencia a partir del nombre y no esta confirmada en ningun documento: la model card es la plantilla autogenerada de transformers y no tiene ni una sola seccion completada.
+`wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-a0` es un checkpoint alojado en Hugging Face por el usuario wz7475, creado el 27 de septiembre de 2026 y actualizado dos minutos mas tarde. El identificador del repositorio sugiere que deriva de Qwen2.5-7B-Instruct y que se le ha aplicado algun tipo de ajuste o intervencion orientada al dominio juridico: los sufijos "legal", "katcher", "psteer" y "prev-a0" apuntan a un experimento de steering sobre activaciones o de ablation sobre un modelo base de 7 000 millones de parametros. Conviene subrayar que esta lectura es una inferencia a partir del nombre y no esta confirmada en ningun documento: la model card es la plantilla autogenerada de transformers y no tiene ni una sola seccion completada.
 
 El repositorio declara unicamente la libreria transformers, la etiqueta `safetensors`, la etiqueta `arxiv:1910.09700` (que procede del texto plantilla sobre el calculo de emisiones, no de un paper propio) y compatibilidad con endpoints, con cero descargas y cero likes en el momento de la consulta. No publica licencia, idiomas, pipeline, datos de entrenamiento ni resultados de evaluacion. El tamano del repo es de 0,3 GB, incompatible con los pesos completos de un modelo de ~7 600 millones de parametros en bf16 (unos 15 GB), por lo que lo mas probable es que contenga un adaptador LoRA, un delta de pesos o una subida parcial.
 
@@ -83,7 +83,7 @@ Existen tambien modelos especificamente juridicos en la misma franja de tamano, 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-a0
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-psteer-prev-a0
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, citado en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este checkpoint. Los resultados devueltos corresponden a tutoriales en chino sobre firmas de correo en Microsoft Outlook y no guardan ninguna relacion con el modelo.

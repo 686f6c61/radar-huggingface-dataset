@@ -72,5 +72,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/carlosmcm/multitask-large
+- Repositorio en Hugging Face: https://huggingface.co/carlosmcm/multitask-large
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información disponible.

@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed123)
+- [Repositorio Hugging Face](https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-lener-br-seed123)
 - [Modelo base Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) (referenciado en la model card)
 - Dataset LeNER-Br: no se proporciona enlace directo, pero es un dataset público de NER en portugués brasileño.

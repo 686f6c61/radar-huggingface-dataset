@@ -73,9 +73,9 @@ Condiciones de la medición de velocidad: Apple M5 Pro con 48 GB de memoria unif
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Calidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JoshuaCalhoon/Qwen3.8-27B-MLX-4bit-GPTQ | ~26,9 B | No disponible (evaluado a 64K) | MLX safetensors, 4 bits GPTQ con precisión mixta, 15,0 GB | KL 0,0747; top-1 92,5 % vs bf16 | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| mlx-community/Qwen3.8-27B-4bit | ~26,9 B (mismo base) | No disponible | MLX 4 bits, 16,05 GB | KL 0,1175; top-1 88,1 % vs bf16 | Apache 2.0 (heredada) | HuggingFace (referencia usada por el autor) |
-| Qwen/Qwen3.8-27B (bf16) | ~26,9 B | No disponible | safetensors bf16 | Referencia de comparación | Apache 2.0 | HuggingFace, modelo oficial |
+| JoshuaCalhoon/Qwen3.8-27B-MLX-4bit-GPTQ | ~26,9 B | No disponible (evaluado a 64K) | MLX safetensors, 4 bits GPTQ con precisión mixta, 15,0 GB | KL 0,0747; top-1 92,5 % vs bf16 | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| mlx-community/Qwen3.8-27B-4bit | ~26,9 B (mismo base) | No disponible | MLX 4 bits, 16,05 GB | KL 0,1175; top-1 88,1 % vs bf16 | Apache 2.0 (heredada) | Hugging Face (referencia usada por el autor) |
+| Qwen/Qwen3.8-27B (bf16) | ~26,9 B | No disponible | safetensors bf16 | Referencia de comparación | Apache 2.0 | Hugging Face, modelo oficial |
 
 No se dispone de datos para comparar con modelos de otros fabricantes del mismo rango de tamaño, ni de resultados de benchmarks que permitan situar esta cuantización frente a alternativas de 4 bits en otros formatos (GGUF, AWQ, EXL2).
 
@@ -95,7 +95,7 @@ No se dispone de datos para comparar con modelos de otros fabricantes del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoshuaCalhoon/Qwen3.8-27B-MLX-4bit-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/JoshuaCalhoon/Qwen3.8-27B-MLX-4bit-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE
 - Cuantización de referencia para comparación: mlx-community/Qwen3.8-27B-4bit (referenciada en la model card; sin URL directa en la información proporcionada)

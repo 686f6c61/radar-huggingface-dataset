@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el proceso de cuantizacion: se desconoce si se apl
 - Generacion de codigo: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas de HuggingFace no esta informado.
+- Capacidades multilingues: no disponible; el campo de idiomas de Hugging Face no esta informado.
 - Vision, audio u otras modalidades: no disponible.
 - Modo de razonamiento explicito ("thinking mode"): no disponible.
 - Capacidad diferencial documentada: ninguna. El unico rasgo distintivo es la cuantizacion NVFP4, orientada a reducir el coste de memoria y a habilitar inferencia en hardware compatible con FP4.
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-NVFP4-CSF | no disponible | no disponible | safetensors (NVFP4) | LIL 1.0 + Qwen Community License 1.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | Qwen Community License 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-NVFP4-CSF | no disponible | no disponible | safetensors (NVFP4) | LIL 1.0 + Qwen Community License 1.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next (modelo base) | no disponible | no disponible | no disponible | Qwen Community License 1.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos tecnicos del modelo base ni de terceros comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de parametros, contexto o rendimiento.
@@ -81,7 +81,7 @@ No se dispone de datos tecnicos del modelo base ni de terceros comparables en la
 - Riesgo de degradacion por cuantizacion: una conversion a 4 bits puede reducir la calidad frente a los pesos originales. El autor no publica ninguna medicion de esta perdida.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; no hay evaluaciones publicadas que lo cuantifiquen para este checkpoint.
 - Sesgos: no documentados.
-- Limitaciones de idioma: el campo de idiomas no esta informado en HuggingFace, por lo que se desconoce el soporte real, incluido el castellano.
+- Limitaciones de idioma: el campo de idiomas no esta informado en Hugging Face, por lo que se desconoce el soporte real, incluido el castellano.
 - Restricciones de licencia: la Local Inference Lab License 1.0 no es una licencia de codigo abierto. Prohibe subir, espejar o redistribuir los ficheros o copias sustancialmente similares (incluidas copias renombradas, reparticionadas, reempaquetadas, sin metadatos, convertidas o desquantizadas), y exige que toda pagina de proyecto, modelo, aplicacion o servicio que contenga o ejecute el modelo comience con el aviso de atribucion especificado. El incumplimiento termina la licencia de forma inmediata (seccion 5.1).
 - Marcas canario: los ficheros incorporan marcas identificativas ("Ні пуху, ні пера", LIL-CANARY-786E-E2E9-32DE-68BE) que no deben eliminarse.
 - Licencia en cascada: ademas de la LIL 1.0, se aplican las condiciones de la Qwen Community License 1.0, incluidos los terminos de Model as a Service y AI Work Assistant, lo que afecta al uso comercial en forma de servicio.
@@ -90,7 +90,7 @@ No se dispone de datos tecnicos del modelo base ni de terceros comparables en la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-CSF
+- Repositorio Hugging Face: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-CSF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia LIL 1.0: https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-CSF/blob/main/LICENSE
 - Texto de la Qwen Community License 1.0: incluido en el repositorio en `LICENSES/LicenseRef-qwen-community-1.0.txt`

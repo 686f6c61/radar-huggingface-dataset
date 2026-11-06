@@ -84,7 +84,7 @@ La comparación con Whisper tiny se ofrece como referencia de categoría (ASR pe
 - Tamaño del repo de 0,0 GB: los pesos se alojan externamente; verificar la disponibilidad de los enlaces de descarga antes de integrar en producción.
 
 ## Enlaces
-- HuggingFace (esta conversión): https://huggingface.co/tryambientai/moonshine-tiny-ja-gguf
+- Hugging Face (esta conversión): https://huggingface.co/tryambientai/moonshine-tiny-ja-gguf
 - Modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ja
 - Commit del modelo base: https://huggingface.co/UsefulSensors/moonshine-tiny-ja/commit/02ca41b
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

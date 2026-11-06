@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mrysh/qwen3.5-9b-int8_w8a16 | 8,95B | No disponible | INT8 W8A16, sin calibracion | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-9B (base) | 8,95B | No disponible | BF16 (referencia) | Apache 2.0 | HuggingFace (modelo original) |
+| mrysh/qwen3.5-9b-int8_w8a16 | 8,95B | No disponible | INT8 W8A16, sin calibracion | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-9B (base) | 8,95B | No disponible | BF16 (referencia) | Apache 2.0 | Hugging Face (modelo original) |
 | Otras variantes del barrido 4x8 del autor | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos de contexto, benchmarks ni licencias de terceros para establecer comparaciones cuantitativas con alternativas de otros fabricantes. La comparación relevante es contra el base en BF16: mismo número de parámetros y misma licencia, con una reducción de huella de aproximadamente el 50 % (de ~17,9 GB en BF16 a ~8,95 GB en int8) a cambio de una pérdida de fidelidad no medida públicamente.
@@ -87,7 +87,7 @@ No se dispone de datos de contexto, benchmarks ni licencias de terceros para est
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/mrysh/qwen3.5-9b-int8_w8a16
+- Hugging Face (este checkpoint): https://huggingface.co/mrysh/qwen3.5-9b-int8_w8a16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Librería compressed-tensors (referenciada por el autor, versión 0.17.0): no se ha encontrado enlace en la información proporcionada
 - Paper, blog o repositorio del benchmark de cuantización del autor: no disponible

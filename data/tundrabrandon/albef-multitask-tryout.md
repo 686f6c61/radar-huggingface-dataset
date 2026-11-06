@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tundrabrandon/albef-multitask-tryout` es un repositorio experimental de HuggingFace que contiene una implementacion propia de una arquitectura tipo ALBEF (Align before Fuse, un modelo vision-lenguaje) orientada a tareas multiples. El autor es el usuario `tundrabrandon` y el repositorio se publica bajo licencia BSD-3-Clause. Segun su propia model card, no se trata de un modelo entrenado ni de una release con resultados de benchmarks, sino de un punto de partida reproducible: incluye el codigo del modelo (`model.py`), una configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo.
+`tundrabrandon/albef-multitask-tryout` es un repositorio experimental de Hugging Face que contiene una implementacion propia de una arquitectura tipo ALBEF (Align before Fuse, un modelo vision-lenguaje) orientada a tareas multiples. El autor es el usuario `tundrabrandon` y el repositorio se publica bajo licencia BSD-3-Clause. Segun su propia model card, no se trata de un modelo entrenado ni de una release con resultados de benchmarks, sino de un punto de partida reproducible: incluye el codigo del modelo (`model.py`), una configuracion de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion (`model.safetensors`) valido unicamente para pruebas de humo.
 
 La relevancia de este repositorio es, por tanto, limitada y de naturaleza distinta a la de un modelo publicado para uso directo: sirve como andamiaje para reproducir un experimento de investigacion, no como artefacto listo para produccion. La model card indica explicitamente que el checkpoint "no ha sido entrenado ni auditado" en cuanto a robustez, equidad o transferencia de dominio, y que no se reclama ninguna puntuacion de benchmark. Los metadatos de safetensors declaran 16,576 parametros totales, una cifra extraordinariamente baja para la escala "huge" que se menciona en la configuracion, lo que refuerza la interpretacion de que se trata de un esqueleto de inicializacion y no de un modelo funcional.
 
@@ -92,5 +92,5 @@ No se dispone de datos suficientes para establecer una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/tundrabrandon/albef-multitask-tryout
+- Repositorio de Hugging Face: https://huggingface.co/tundrabrandon/albef-multitask-tryout
 - No se han encontrado en la busqueda web enlaces relacionados con este repositorio, su autor ni su implementacion concreta. Los resultados devueltos (proceedings de IEEE, material de Springer, notebooks de LDA en GitHub, documentos de Scribd y un repositorio de Goldsmiths) no guardan relacion con el modelo y no se incluyen como referencias.

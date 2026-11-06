@@ -10,7 +10,7 @@ Con 140,6 millones de parámetros, se trata de un modelo de tamaño pequeño-med
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ModernBERT (según tags de HuggingFace) |
+| Arquitectura | ModernBERT (según tags de Hugging Face) |
 | Parametros totales | 140.642.306 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -60,10 +60,10 @@ Dado que no se dispone de información detallada sobre el modelo, la comparativa
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mmBERT-small (este) | 140M | no disponible | token-classification | no disponible | HuggingFace |
-| BERT-base multilingual | 172M | 512 | token-classification | Apache 2.0 | HuggingFace |
-| XLM-RoBERTa-base | 270M | 512 | token-classification | MIT | HuggingFace |
-| ModernBERT-base | 149M | 8192 | varios | Apache 2.0 | HuggingFace |
+| mmBERT-small (este) | 140M | no disponible | token-classification | no disponible | Hugging Face |
+| BERT-base multilingual | 172M | 512 | token-classification | Apache 2.0 | Hugging Face |
+| XLM-RoBERTa-base | 270M | 512 | token-classification | MIT | Hugging Face |
+| ModernBERT-base | 149M | 8192 | varios | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa; no hay datos de rendimiento para este modelo en particular.
 
@@ -78,5 +78,5 @@ La comparativa es orientativa; no hay datos de rendimiento para este modelo en p
 
 ## Enlaces
 
-- [HuggingFace - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bg](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bg)
+- [Hugging Face - EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bg](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bg)
 - [Paper de BERT (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700) — referenciado en los tags, aunque no es específico de este modelo.

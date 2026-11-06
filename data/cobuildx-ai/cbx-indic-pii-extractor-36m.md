@@ -70,9 +70,9 @@ El autor indica que el modelo de 36M consume aproximadamente la mitad del tiempo
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| cbx-indic-pii-extractor-36M | 36,5M | 8.192 | 12 índicas + en | Apache 2.0 | HuggingFace (safetensors, ONNX) |
-| cbx-indic-pii-extractor-58M | 58M (aprox.) | 8.192 | 12 índicas + en | Apache 2.0 | HuggingFace |
-| cbx-indic-pii-extractor-17M | 17M (aprox.) | No disponible | 12 índicas + en | Apache 2.0 | HuggingFace |
+| cbx-indic-pii-extractor-36M | 36,5M | 8.192 | 12 índicas + en | Apache 2.0 | Hugging Face (safetensors, ONNX) |
+| cbx-indic-pii-extractor-58M | 58M (aprox.) | 8.192 | 12 índicas + en | Apache 2.0 | Hugging Face |
+| cbx-indic-pii-extractor-17M | 17M (aprox.) | No disponible | 12 índicas + en | Apache 2.0 | Hugging Face |
 | Modelo interno (profesor) | No disponible | No disponible | No disponible | No publicado | No disponible |
 
 La comparativa se limita a las variantes del mismo autor, ya que la información disponible no incluye otros detectores de PII comparables. El modelo de 58M obtiene un F1 tipado de 0,930, una precisión de 0,945 y un recall de 0,915 en el Indic PII Bench; el de 36M no tiene métricas publicadas en la información disponible. El profesor interno puntúa por encima según el autor, pero no se ha liberado.
@@ -91,7 +91,7 @@ La comparativa se limita a las variantes del mismo autor, ya que la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-36M
+- Modelo en Hugging Face: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-36M
 - Variante de 58M: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-58M
 - Variante de 17M: https://huggingface.co/CobuildX-AI/cbx-indic-pii-extractor-17M
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small

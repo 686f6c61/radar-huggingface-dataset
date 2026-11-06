@@ -75,5 +75,5 @@ No se dispone de datos comparativos en la informacion proporcionada. La model ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JamesTrfn/beit-checkpoint
+- Hugging Face: https://huggingface.co/JamesTrfn/beit-checkpoint
 - No se encontraron enlaces relevantes en la busqueda web: los resultados devueltos no guardan relacion con el modelo (contenido sobre el servicio Bonjour y temas no relacionados).

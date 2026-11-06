@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yosefw/Llama-3.2-1B-Instruct-DSpark-OPB` es un checkpoint publicado en HuggingFace por el usuario `yosefw` el 13 de septiembre de 2026. El nombre sugiere una derivacion de Llama 3.2 1B Instruct, pero el recuento real de parametros registrado en los ficheros safetensors es de 240.954.369 parametros (aproximadamente 241 millones), una cifra que no coincide con los aproximadamente 1.240 millones del modelo base que sugiere el nombre. Esa discrepancia no esta explicada en la informacion disponible.
+El modelo `yosefw/Llama-3.2-1B-Instruct-DSpark-OPB` es un checkpoint publicado en Hugging Face por el usuario `yosefw` el 13 de septiembre de 2026. El nombre sugiere una derivacion de Llama 3.2 1B Instruct, pero el recuento real de parametros registrado en los ficheros safetensors es de 240.954.369 parametros (aproximadamente 241 millones), una cifra que no coincide con los aproximadamente 1.240 millones del modelo base que sugiere el nombre. Esa discrepancia no esta explicada en la informacion disponible.
 
 El repositorio ocupa 1,2 GB, incluye unicamente pesos en formato safetensors y lleva la etiqueta `custom_code`, lo que indica que la carga del modelo requiere ejecutar codigo de modelado incluido en el propio repositorio (habitualmente mediante `trust_remote_code=True`). No se declara pipeline, licencia, idiomas ni model card con detalles de entrenamiento.
 
@@ -76,10 +76,10 @@ La comparativa se ofrece a titulo orientativo. Los datos de los modelos alternat
 
 | Modelo | Parametros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| yosefw/Llama-3.2-1B-Instruct-DSpark-OPB | 240.954.369 (verificado en safetensors) | no disponible | no disponible | no | HuggingFace, 10 descargas, requiere `custom_code` |
+| yosefw/Llama-3.2-1B-Instruct-DSpark-OPB | 240.954.369 (verificado en safetensors) | no disponible | no disponible | no | Hugging Face, 10 descargas, requiere `custom_code` |
 | Llama 3.2 1B Instruct | ~1.240 millones | 128.000 tokens | Llama 3.2 Community License | si, publicados por Meta | Amplia, con soporte en vLLM, llama.cpp, Ollama y TGI |
 | Qwen2.5-1.5B-Instruct | ~1.540 millones | 32.768 tokens | Apache 2.0 (segun version) | si, publicados por Alibaba | Amplia, con soporte en los principales runtimes |
-| SmolLM2-1.7B-Instruct | ~1.700 millones | 8.192 tokens | Apache 2.0 | si, publicados por HuggingFace | Amplia, con soporte en los principales runtimes |
+| SmolLM2-1.7B-Instruct | ~1.700 millones | 8.192 tokens | Apache 2.0 | si, publicados por Hugging Face | Amplia, con soporte en los principales runtimes |
 
 A diferencia de las alternativas, el modelo analizado no publica licencia, idiomas, contexto ni evaluaciones, y su arquitectura personalizada reduce la portabilidad entre runtimes.
 
@@ -98,5 +98,5 @@ A diferencia de las alternativas, el modelo analizado no publica licencia, idiom
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yosefw/Llama-3.2-1B-Instruct-DSpark-OPB
+- Modelo en Hugging Face: https://huggingface.co/yosefw/Llama-3.2-1B-Instruct-DSpark-OPB
 - Paper, blog o repositorio asociado: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces retornados correspondian a paginas genericas de ChatGPT (chatgpt.com, openai.com) y no guardan relacion con el checkpoint.

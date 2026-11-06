@@ -32,7 +32,7 @@ La relevancia de esta ficha es doble: por un lado ilustra el flujo típico de fi
 | Learning rate | 1e-4 |
 | Semilla | 1000 |
 | Versión de LeRobot | 0.6.2 |
-| Tamaño del repo | 0,0 GB (según HuggingFace; pesos no verificables desde la metadata) |
+| Tamaño del repo | 0,0 GB (según Hugging Face; pesos no verificables desde la metadata) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Fork123/smolvla_complex_set1_220eps_ce5Setting` | VLA compacta (fine-tuning) | no disponible | no aplica | 3 cámaras + estado 6D | Apache 2.0 | HuggingFace (0 descargas) |
-| `lerobot/smolvla_base` | VLA compacta (base) | no disponible | no aplica | multimodal (visión + lenguaje + estado) | Apache 2.0 | HuggingFace |
-| Políticas ACT / Diffusion Policy en LeRobot | Políticas de imitación | variable | no aplica | cámaras + estado | según repo | HuggingFace / LeRobot |
-| OpenVLA | VLA de gran escala | ~7B (referencia pública) | no disponible aquí | visión + lenguaje | según versión | HuggingFace |
+| `Fork123/smolvla_complex_set1_220eps_ce5Setting` | VLA compacta (fine-tuning) | no disponible | no aplica | 3 cámaras + estado 6D | Apache 2.0 | Hugging Face (0 descargas) |
+| `lerobot/smolvla_base` | VLA compacta (base) | no disponible | no aplica | multimodal (visión + lenguaje + estado) | Apache 2.0 | Hugging Face |
+| Políticas ACT / Diffusion Policy en LeRobot | Políticas de imitación | variable | no aplica | cámaras + estado | según repo | Hugging Face / LeRobot |
+| OpenVLA | VLA de gran escala | ~7B (referencia pública) | no disponible aquí | visión + lenguaje | según versión | Hugging Face |
 
 La comparación cuantitativa no es posible con la información disponible: no hay benchmarks publicados para este fine-tuning ni cifras de parámetros del modelo base en la documentación proporcionada. La comparativa se limita a categoría, licencia y formato de despliegue.
 
@@ -94,11 +94,11 @@ La comparación cuantitativa no es posible con la información disponible: no ha
 - Idiomas: no se documenta soporte multilingüe; la instrucción de tarea del ejemplo está en inglés y el condicionamiento lingüístico puede no transferir a otros idiomas.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías ni soporte; conviene verificar la licencia del modelo base y del dataset.
 - Repositorio sin actividad: 0 descargas y 0 likes en el momento de la ficha; no hay evidencia de validación por la comunidad.
-- Tamaño de repo reportado como 0,0 GB: la metadata de HuggingFace no refleja el tamaño real de los pesos, lo que impide estimar requisitos de almacenamiento.
+- Tamaño de repo reportado como 0,0 GB: la metadata de Hugging Face no refleja el tamaño real de los pesos, lo que impide estimar requisitos de almacenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fork123/smolvla_complex_set1_220eps_ce5Setting
+- Modelo en Hugging Face: https://huggingface.co/Fork123/smolvla_complex_set1_220eps_ce5Setting
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Fork123/Test5-220eps-complex-set1
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Fork123/Test5-220eps-complex-set1

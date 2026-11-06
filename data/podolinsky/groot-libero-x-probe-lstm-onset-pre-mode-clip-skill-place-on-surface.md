@@ -6,7 +6,7 @@
 
 Su interes practico esta en el problema que ataca: saber *cuando* va a fallar un rollout de robot antes de que el fallo ocurra, para poder abortar, pedir intervencion humana o descartar episodios. La variante concreta usa etiquetado `onset_pre` (positivo en todos los pasos desde el inicio del episodio hasta el onset del fallo, con el rollout cortado en ese punto) y se entrena sobre el split de habilidad `skill_place_on_surface`, uno de los 8 splits por habilidad de LIBERO-X.
 
-El modelo tiene 6.622.221 parametros y se distribuye en un unico `model.safetensors` que incluye pesos, estadisticas de normalizacion (`feature_mean`, `feature_std`) y los maximos de calibracion de 66 episodios exitosos, lo que permite fijar umbrales conformales a un nivel alpha dado. La licencia es CC BY 4.0 y el pipeline declarado en HuggingFace es `robotics`.
+El modelo tiene 6.622.221 parametros y se distribuye en un unico `model.safetensors` que incluye pesos, estadisticas de normalizacion (`feature_mean`, `feature_std`) y los maximos de calibracion de 66 episodios exitosos, lo que permite fijar umbrales conformales a un nivel alpha dado. La licencia es CC BY 4.0 y el pipeline declarado en Hugging Face es `robotics`.
 
 ## Especificaciones tecnicas
 
@@ -97,12 +97,12 @@ Las alternativas mas cercanas son las otras sondas del mismo autor sobre el mism
 - **Riesgo de falsos positivos y negativos**: al priorizar deteccion temprana (TPR temprana frente a FPR de hasta el 40 %), el regimen de operacion admite una tasa de falsas alarmas considerable; en produccion hay que evaluar el coste de cada tipo de error.
 - **Sesgos**: no se ha publicado ningun analisis de sesgos en la informacion disponible. El dataset hereda los sesgos de las tareas y entornos de LIBERO-X, limitados a un conjunto cerrado de manipulaciones de laboratorio.
 - **Licencia**: CC BY 4.0 permite uso comercial con atribucion; hay que conservar la atribucion al autor y enlazar la licencia. No se imponen restricciones adicionales conocidas, pero conviene verificar la licencia del backbone GR00T y del dataset de features por separado.
-- **Fecha de publicacion**: la ficha de HuggingFace indica creacion y ultima actualizacion el 2026-10-23, es decir, no hay historial de versiones ni evidencia de mantenimiento posterior.
+- **Fecha de publicacion**: la ficha de Hugging Face indica creacion y ultima actualizacion el 2026-10-23, es decir, no hay historial de versiones ni evidencia de mantenimiento posterior.
 - **Idioma y texto**: al no procesar lenguaje, no procede aplicar consideraciones de calidad multilingue, pero tampoco puede usarse para tareas de inspeccion basadas en instrucciones textuales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-place-on-surface
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-place-on-surface
 - Dataset de features: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Codigo `vla-probe`: https://github.com/mpodolinsky/vla-probe
 - Sonda con la otra etiqueta sobre el mismo split: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-place-on-surface

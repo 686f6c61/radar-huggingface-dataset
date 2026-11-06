@@ -77,10 +77,10 @@ Los únicos datos metodológicos disponibles de esa sección son los siguientes:
 
 | Modelo | Parametros | Contexto | Licencia | Atencion | Disponibilidad |
 |---|---|---|---|---|---|
-| handwoven8588/CodeRankEmbed-flash-attn | 136,7 M | no disponible | MIT | Eager mas rutas varlen opcionales (`torch_varlen`, `flash_attn`) | HuggingFace, 13.182 descargas, 1 like |
-| nomic-ai/CodeRankEmbed | mismos pesos que el modelo base de esta ficha | no disponible | no disponible | Solo eager | HuggingFace (origen de los pesos) |
-| jinaai/jina-embeddings-v2-base-code | 161 M (aproximado) | 8.192 tokens | Apache-2.0 | no disponible | HuggingFace |
-| microsoft/unixcoder-base | 125 M (aproximado) | 512 tokens | MIT | Codificador estandar | HuggingFace |
+| handwoven8588/CodeRankEmbed-flash-attn | 136,7 M | no disponible | MIT | Eager mas rutas varlen opcionales (`torch_varlen`, `flash_attn`) | Hugging Face, 13.182 descargas, 1 like |
+| nomic-ai/CodeRankEmbed | mismos pesos que el modelo base de esta ficha | no disponible | no disponible | Solo eager | Hugging Face (origen de los pesos) |
+| jinaai/jina-embeddings-v2-base-code | 161 M (aproximado) | 8.192 tokens | Apache-2.0 | no disponible | Hugging Face |
+| microsoft/unixcoder-base | 125 M (aproximado) | 512 tokens | MIT | Codificador estandar | Hugging Face |
 
 La comparación directa con nomic-ai/CodeRankEmbed es la más relevante: comparten pesos, por lo que la diferencia se reduce al empaquetado en bf16, a la ruta de atención varlen y a que el `from_pretrained` de esta versión respeta `torch_dtype`. Los datos de rendimiento comparado entre las alternativas no están disponibles en la información proporcionada.
 
@@ -101,6 +101,6 @@ La comparación directa con nomic-ai/CodeRankEmbed es la más relevante: compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/handwoven8588/CodeRankEmbed-flash-attn
+- Modelo en Hugging Face: https://huggingface.co/handwoven8588/CodeRankEmbed-flash-attn
 - Modelo base: https://huggingface.co/nomic-ai/CodeRankEmbed
 - La búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo: los resultados obtenidos corresponden a páginas no relacionadas (asistente Gemini de Google), por lo que no se dispone de papers, blogs, repositorios ni demos adicionales que enlazar.

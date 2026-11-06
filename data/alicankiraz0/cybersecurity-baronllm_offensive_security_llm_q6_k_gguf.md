@@ -6,7 +6,7 @@ BaronLLM Offensive Security LLM es un ajuste fino (fine-tune) del modelo Llama 3
 
 Se trata de un modelo denso de 8.030.261.312 parametros (aproximadamente 8B), heredado integramente de la arquitectura decoder-only de Llama 3.1, por lo que mantiene la ventana de contexto de 128.000 tokens del modelo base, su tokenizador y su soporte de plantillas conversacionales. La relevancia actual del modelo radica en dos factores: por un lado, ofrece una alternativa cuantizada y ligera para tareas de seguridad ofensiva que cabe en GPU de consumo; por otro, acumula 11.689 descargas y 310 likes, lo que lo situa entre los fine-tunes de seguridad mas populares del ecosistema GGUF.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos, a pesar de que la etiqueta de licencia declarada sea MIT. Esta dualidad entre licencia permisiva y acceso condicionado es un punto que conviene verificar antes de integrarlo en un producto.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos, a pesar de que la etiqueta de licencia declarada sea MIT. Esta dualidad entre licencia permisiva y acceso condicionado es un punto que conviene verificar antes de integrarlo en un producto.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ El elemento diferenciador del repositorio no es arquitectonico sino de empaqueta
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace del repositorio no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de ciberseguridad (por ejemplo, CyberSecEval), y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face del repositorio no incluye metricas de MMLU, HumanEval, GSM8K ni de evaluaciones especificas de ciberseguridad (por ejemplo, CyberSecEval), y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo.
 
 ## Requisitos de hardware
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BaronLLM Offensive Security Q6_K (este) | 8,03B | 128.000 tokens (heredado) | GGUF Q6_K | MIT declarada, acceso gated | HuggingFace, acceso restringido |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | safetensors | Licencia comunitaria Llama 3.1 | HuggingFace, acceso gated |
-| AlicanKiraz0/BaronLLM-llama3.1-v1 | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| BaronLLM Offensive Security Q6_K (este) | 8,03B | 128.000 tokens (heredado) | GGUF Q6_K | MIT declarada, acceso gated | Hugging Face, acceso restringido |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | safetensors | Licencia comunitaria Llama 3.1 | Hugging Face, acceso gated |
+| AlicanKiraz0/BaronLLM-llama3.1-v1 | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos verificados de otros fine-tunes de seguridad ofensiva comparables en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento comparativo.
 
@@ -90,7 +90,7 @@ No se dispone de datos verificados de otros fine-tunes de seguridad ofensiva com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlicanKiraz0/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF
+- Repositorio Hugging Face: https://huggingface.co/AlicanKiraz0/Cybersecurity-BaronLLM_Offensive_Security_LLM_Q6_K_GGUF
 - Modelo base intermedio: https://huggingface.co/AlicanKiraz0/BaronLLM-llama3.1-v1
 - Modelo base original: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de la familia Llama 3: https://arxiv.org/abs/2407.21783

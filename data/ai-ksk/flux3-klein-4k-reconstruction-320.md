@@ -86,7 +86,7 @@ No disponible. Este repositorio no es un modelo sino un paquete de workflows, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AI-KSK/flux3-klein-4k-reconstruction-320
+- Repositorio en Hugging Face: https://huggingface.co/AI-KSK/flux3-klein-4k-reconstruction-320
 - Workflow 01 (imagen unica con captioning RH): https://huggingface.co/AI-KSK/flux3-klein-4k-reconstruction-320/blob/main/workflows/01_FLUX3_Klein_4K_%E5%8D%95%E5%9B%BE_RH_LLM%E8%87%AA%E5%8A%A8%E7%BB%86%E8%8A%82%E5%A2%9E%E5%BC%BA_%E6%9C%80%E7%BB%88%E7%89%88.json
 - Workflow 02 (ZIP en RunningHub): https://huggingface.co/AI-KSK/flux3-klein-4k-reconstruction-320/blob/main/workflows/02_FLUX3_Klein_4K_RunningHub_%E7%BA%BF%E4%B8%8AZIP%E5%85%A8%E8%87%AA%E5%8A%A8%E6%89%B9%E9%87%8F_%E6%9C%80%E7%BB%88%E7%89%88.json
 - Workflow 03 (carpeta local con GGUF): https://huggingface.co/AI-KSK/flux3-klein-4k-reconstruction-320/blob/main/workflows/03_FLUX3_Klein_4K_%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E5%A4%B9%E6%89%B9%E9%87%8F_GGUF%E8%A7%86%E8%A7%89%E5%8F%8D%E6%8E%A8_dchuk_V23_%E9%87%8D%E5%BB%BA%E7%89%88.json

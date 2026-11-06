@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`rech-auhan/generation-base` es un repositorio de HuggingFace que contiene una implementacion propia y de escala reducida de la arquitectura Flamingo, orientada a tareas de generacion. Lo publica el usuario rech-auhan bajo licencia BSD-3-Clause y se presenta explicitamente como un punto de partida reproducible, no como una version de modelo entrenada: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con resultados de referencia.
+`rech-auhan/generation-base` es un repositorio de Hugging Face que contiene una implementacion propia y de escala reducida de la arquitectura Flamingo, orientada a tareas de generacion. Lo publica el usuario rech-auhan bajo licencia BSD-3-Clause y se presenta explicitamente como un punto de partida reproducible, no como una version de modelo entrenada: el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no un checkpoint con resultados de referencia.
 
 El modelo declara una escala "nano" y los pesos almacenados en safetensors suman 33.088 parametros, un orden de magnitud propio de un banco de pruebas y no de un sistema utilizable en produccion. La configuracion registrada en el repositorio indica atencion dispersa (sparse attention), fusion tensorial (tensor fusion), activacion swish y normalizacion ScaleNorm. No se declara ningun resultado de benchmark, ni idiomas soportados, ni longitud de contexto.
 
@@ -71,7 +71,7 @@ No existe una comparacion directa posible en terminos de rendimiento, porque est
 | rech-auhan/generation-base | Implementacion Flamingo, escala nano | 33.088 | No disponible | BSD-3-Clause | Checkpoint de inicializacion, sin entrenar |
 | Flamingo (DeepMind) | Modelo vision-lenguaje few-shot | No disponible en la informacion proporcionada | No disponible | No disponible | Publicacion de investigacion, pesos no liberados publicamente |
 | OpenFlamingo (LAION) | Reproduccion abierta de Flamingo | No disponible en la informacion proporcionada | No disponible | No disponible | Proyecto abierto con checkpoints entrenados |
-| IDEFICS (HuggingFace) | Modelo vision-lenguaje abierto | No disponible en la informacion proporcionada | No disponible | No disponible | Checkpoints entrenados y publicados |
+| IDEFICS (Hugging Face) | Modelo vision-lenguaje abierto | No disponible en la informacion proporcionada | No disponible | No disponible | Checkpoints entrenados y publicados |
 
 Los tres proyectos de referencia son alternativas reales si el objetivo es disponer de un modelo Flamingo funcional; `rech-auhan/generation-base` solo es comparable como implementacion de codigo, no como modelo.
 
@@ -89,7 +89,7 @@ Los tres proyectos de referencia son alternativas reales si el objetivo es dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rech-auhan/generation-base
-- Perfil del autor en HuggingFace: https://huggingface.co/rech-auhan
+- Modelo en Hugging Face: https://huggingface.co/rech-auhan/generation-base
+- Perfil del autor en Hugging Face: https://huggingface.co/rech-auhan
 - Paper de referencia de la arquitectura Flamingo (DeepMind, no enlazado en la model card): https://arxiv.org/abs/2204.14198
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; el resto de resultados no guardan relacion con el modelo.

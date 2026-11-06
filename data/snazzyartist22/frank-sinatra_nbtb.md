@@ -2,7 +2,7 @@
 
 ## Resumen
 
-No se dispone de información suficiente para describir el modelo `SnazzyArtist22/Frank-Sinatra_NBTB`. Los metadatos de HuggingFace indican que fue creado por el usuario SnazzyArtist22 (Elliott Buxton) el 4 de septiembre de 2026, con un tamaño de repositorio de 0.1 GB, sin descargas ni likes. La model card está vacía, salvo una línea con `license: unknown`, y no se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni capacidades. La búsqueda web no arroja documentación técnica, papers, demos ni benchmarks. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante en el panorama actual de modelos open source.
+No se dispone de información suficiente para describir el modelo `SnazzyArtist22/Frank-Sinatra_NBTB`. Los metadatos de Hugging Face indican que fue creado por el usuario SnazzyArtist22 (Elliott Buxton) el 4 de septiembre de 2026, con un tamaño de repositorio de 0.1 GB, sin descargas ni likes. La model card está vacía, salvo una línea con `license: unknown`, y no se proporcionan detalles sobre arquitectura, parámetros, contexto, idiomas ni capacidades. La búsqueda web no arroja documentación técnica, papers, demos ni benchmarks. Por tanto, no es posible determinar qué problema resuelve ni por qué sería relevante en el panorama actual de modelos open source.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ No se dispone de información suficiente para describir el modelo `SnazzyArtist2
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio de HuggingFace no incluye configuraciones, archivos de pesos documentados ni notas técnicas. Cualquier afirmación sobre la arquitectura sería especulativa.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio de Hugging Face no incluye configuraciones, archivos de pesos documentados ni notas técnicas. Cualquier afirmación sobre la arquitectura sería especulativa.
 
 ## Capacidades
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. Sin datos de arquitectura, tamaño, contexto o rendimiento, no es posible establecer una comparativa con alternativas de la misma categoría. La única referencia encontrada es el perfil del autor en HuggingFace, que incluye otro modelo llamado `Springtrap`, pero no se ha podido verificar si pertenece a la misma categoría.
+No se dispone de información sobre modelos comparables. Sin datos de arquitectura, tamaño, contexto o rendimiento, no es posible establecer una comparativa con alternativas de la misma categoría. La única referencia encontrada es el perfil del autor en Hugging Face, que incluye otro modelo llamado `Springtrap`, pero no se ha podido verificar si pertenece a la misma categoría.
 
 ## Limitaciones y advertencias
 
@@ -60,6 +60,6 @@ No se dispone de información sobre modelos comparables. Sin datos de arquitectu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SnazzyArtist22/Frank-Sinatra_NBTB
-- Perfil del autor en HuggingFace: https://huggingface.co/SnazzyArtist22/models
+- Hugging Face: https://huggingface.co/SnazzyArtist22/Frank-Sinatra_NBTB
+- Perfil del autor en Hugging Face: https://huggingface.co/SnazzyArtist22/models
 - Repositorio de otro modelo del autor (referencia no directamente relacionada): https://huggingface.co/SnazzyArtist22/Springtrap

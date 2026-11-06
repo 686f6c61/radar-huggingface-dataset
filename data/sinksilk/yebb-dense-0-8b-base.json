@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sinksilk/Yebb-Dense-0.8B-Base",
+  "slug": "sinksilk-yebb-dense-0-8b-base",
+  "author": "sinksilk",
+  "url": "https://huggingface.co/sinksilk/Yebb-Dense-0.8B-Base",
+  "created_at": "2026-11-04T08:56:37.000Z",
+  "updated_at": "2026-11-04T09:15:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "yebb_dense",
+    "text-generation",
+    "dense",
+    "pretrained",
+    "base-model",
+    "research",
+    "custom_code",
+    "zh",
+    "en",
+    "dataset:jingyaogong/minimind_dataset",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:opencsg/Fineweb-Edu-Chinese-V2.1",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:common-pile/stackv2_edu_filtered",
+    "dataset:HuggingFaceTB/finemath",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 800663040,
+  "parameters_human": "800.7M",
+  "storage_bytes": 3202672096,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sinksilk/Yebb-Dense-0.8B-Base · Hugging Face",
+      "url": "https://huggingface.co/sinksilk/Yebb-Dense-0.8B-Base",
+      "snippet": "Yebb Dense 0.8B Base is an experimental Chinese and English text continuation model with 800,663,040 parameters, exported at 40,000,142,733 effective prediction tokens."
+    },
+    {
+      "title": "sinksilk (Si Chen) - Hugging Face",
+      "url": "https://huggingface.co/sinksilk",
+      "snippet": "Recent Activity updated a modelabout 14 hours ago sinksilk/Yebb-Dense-0.8B-Base published a modelabout 14 hours ago sinksilk/Yebb-Dense-0.8B-Base updated a modelabout 14 hours ago sinksilk/Yebb-MoE-2B-Base View all activity"
+    }
+  ]
+}

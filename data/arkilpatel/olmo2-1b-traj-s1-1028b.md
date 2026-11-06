@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada: el modelo tiene 1B parametros en bf16, lo que ocupa aproximadamente 2 GB en memoria. Sin embargo, el repositorio completo pesa 127.7 GB (43 checkpoints), por lo que para trabajar con todos los checkpoints se necesitan unos 130 GB de almacenamiento, no de VRAM.
 - GPU recomendadas: una GPU con al menos 4 GB de VRAM puede cargar un unico checkpoint en bf16 (por ejemplo, RTX 3060, RTX 4060, o incluso una GPU de portatil moderna). Para inferencia rapida, una RTX 4090 o A100 ofreceria latencias de unos pocos milisegundos por token.
 - Si cabe en consumer GPU: si, un unico checkpoint cabe en cualquier GPU consumer con 4 GB o mas de VRAM.
-- Opciones de despliegue: al ser checkpoints intermedios sin interfaz de chat ni instrucciones, no estan pensados para despliegue en produccion. Para experimentacion, se pueden cargar con la libreria `transformers` de HuggingFace o con `vLLM` si se desea inferencia de alto rendimiento. No se proporcionan archivos GGUF ni soporte para Ollama.
+- Opciones de despliegue: al ser checkpoints intermedios sin interfaz de chat ni instrucciones, no estan pensados para despliegue en produccion. Para experimentacion, se pueden cargar con la libreria `transformers` de Hugging Face o con `vLLM` si se desea inferencia de alto rendimiento. No se proporcionan archivos GGUF ni soporte para Ollama.
 - Latencia y throughput: no disponible; depende del hardware y del backend utilizado.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No es posible realizar una comparativa directa porque este repositorio no es un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1028b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1028b
 - Modelo base OLMo-2-1B (Ai2): https://huggingface.co/allenai/OLMo-2-0425-1B
 - Pagina oficial de OLMo: https://allenai.org/olmo
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2

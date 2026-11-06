@@ -4,7 +4,7 @@
 
 Dama Aibrain es un modelo de lenguaje multimodal de nueva generación basado en la arquitectura Gemma 4, desarrollado por la comunidad a través de la plataforma Unsloth. Se presenta como un sistema de visión-lenguaje capaz de procesar tanto texto como imágenes, con un tamaño de aproximadamente 5.1 mil millones de parámetros, lo que lo sitúa en la gama de modelos eficientes para despliegue en hardware de consumo.
 
-El modelo destaca por su versatilidad: soporta inferencia conversacional, procesamiento de imágenes y texto, y está disponible en formatos safetensors y GGUF, lo que facilita su integración en entornos como llama.cpp, Ollama o servidores de inferencia de producción como TGI o FriendliAI. Aunque su ficha en HuggingFace es mínima y no ofrece métricas de rendimiento, su aparición en múltiples repositorios y su etiquetado como compatible con endpoints de producción sugieren que está orientado a casos de uso reales en aplicaciones de agentes y asistencia conversacional.
+El modelo destaca por su versatilidad: soporta inferencia conversacional, procesamiento de imágenes y texto, y está disponible en formatos safetensors y GGUF, lo que facilita su integración en entornos como llama.cpp, Ollama o servidores de inferencia de producción como TGI o FriendliAI. Aunque su ficha en Hugging Face es mínima y no ofrece métricas de rendimiento, su aparición en múltiples repositorios y su etiquetado como compatible con endpoints de producción sugieren que está orientado a casos de uso reales en aplicaciones de agentes y asistencia conversacional.
 
 Es relevante ahora porque llega en un momento de consolidación de los modelos de código abierto basados en Gemma, ofreciendo una alternativa de tamaño medio con capacidades multimodales y licencia permisiva Apache 2.0, lo que permite su uso comercial sin restricciones significativas. Sin embargo, la falta de documentación oficial y de resultados de evaluación hace necesario un análisis empírico antes de adoptarlo en entornos críticos.
 
@@ -18,14 +18,14 @@ Es relevante ahora porque llega en un momento de consolidación de los modelos d
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | GGUF (disponible), safetensors (FP16/BF16) |
 | Idiomas soportados | Inglés (tag `en`), otros no especificados |
-| Licencia | Apache 2.0 (según tags de HuggingFace) |
+| Licencia | Apache 2.0 (según tags de Hugging Face) |
 | Formato de pesos | safetensors, GGUF |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura de Dama Aibrain se basa en el modelo Gemma 4 de Google, que es un transformer multimodal con capacidad para procesar tanto texto como imágenes. El uso de Unsloth para el entrenamiento sugiere que se aplicaron técnicas de fine-tuning eficientes en memoria, probablemente con LoRA o QLoRA, aunque no se especifica el método exacto ni la composición del dataset de entrenamiento. El modelo se ha afinado para tareas conversacionales (tag `conversational`) y de visión-lenguaje (`image-text-to-text`), lo que implica que recibió un ajuste específico para interacciones multi-turno con entrada visual y textual.
 
-No se dispone de información sobre el número de tokens de entrenamiento, la proporción de datos multimodales frente a texto puro, ni si se aplicaron técnicas de alineación como RLHF o DPO. La fecha de creación (agosto de 2026) indica que es un modelo muy reciente, probablemente en fase de validación por parte de la comunidad. La etiqueta `text-generation-inference` sugiere que está preparado para servirse con la infraestructura TGI de HuggingFace.
+No se dispone de información sobre el número de tokens de entrenamiento, la proporción de datos multimodales frente a texto puro, ni si se aplicaron técnicas de alineación como RLHF o DPO. La fecha de creación (agosto de 2026) indica que es un modelo muy reciente, probablemente en fase de validación por parte de la comunidad. La etiqueta `text-generation-inference` sugiere que está preparado para servirse con la infraestructura TGI de Hugging Face.
 
 ## Capacidades
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dama Aibrain | 5.1B | no disponible | Sí | Apache 2.0 | HuggingFace, GGUF |
-| Gemma 4 (base) | ~7B | 128k | Sí | Apache 2.0 | HuggingFace |
-| Phi-4 (Microsoft) | 14B | 128k | No | MIT | HuggingFace |
-| LLaMA 3.2 (11B) | 11B | 128k | Sí | Llama License | HuggingFace |
+| Dama Aibrain | 5.1B | no disponible | Sí | Apache 2.0 | Hugging Face, GGUF |
+| Gemma 4 (base) | ~7B | 128k | Sí | Apache 2.0 | Hugging Face |
+| Phi-4 (Microsoft) | 14B | 128k | No | MIT | Hugging Face |
+| LLaMA 3.2 (11B) | 11B | 128k | Sí | Llama License | Hugging Face |
 
 La comparativa es orientativa: Dama Aibrain se posiciona como una alternativa más ligera a Gemma 4, con el mismo marco de licencia permisiva, pero con menos parámetros y sin datos de contexto. Los modelos base de Gemma 4 suelen tener contexto de 4K o 8K, pero Dama Aibrain no especifica su ventana. La falta de benchmarks impide una comparación de rendimiento numérica.
 
@@ -74,7 +74,7 @@ La comparativa es orientativa: Dama Aibrain se posiciona como una alternativa m�
 - Riesgo de alucinación: como todo modelo generativo, puede producir información falsa o inventada, especialmente en tareas de razonamiento visual donde la imagen es ambigua.
 - Limitaciones de contexto: no se ha publicado la longitud de contexto, lo que es una incertidumbre importante para aplicaciones que requieran diálogos largos o documentos extensos.
 - Idioma limitado: solo se confirma inglés; el rendimiento en otros idiomas, incluido el español, no está validado.
-- Restricciones de licencia: aunque el tag indica Apache 2.0, la ficha de HuggingFace muestra "no disponible" en el campo de licencia. Se debe verificar el archivo de licencia en el repositorio antes de uso comercial.
+- Restricciones de licencia: aunque el tag indica Apache 2.0, la ficha de Hugging Face muestra "no disponible" en el campo de licencia. Se debe verificar el archivo de licencia en el repositorio antes de uso comercial.
 - Estado de madurez: con 0 descargas y 0 likes en el repositorio principal, es un modelo no validado por la comunidad; el código y los pesos pueden contener errores o estar incompletos.
 - Falta de benchmarks: no hay métricas de rendimiento publicadas, lo que impide evaluar su calidad en tareas concretas.
 

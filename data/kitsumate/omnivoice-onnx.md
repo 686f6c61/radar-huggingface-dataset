@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: KitsuMate/omnivoice-onnx](https://huggingface.co/KitsuMate/omnivoice-onnx)
+- [Hugging Face: KitsuMate/omnivoice-onnx](https://huggingface.co/KitsuMate/omnivoice-onnx)
 - [Repositorio original de OmniVoice (k2-fsa)](https://github.com/k2-fsa/OmniVoice)
 - [Exportación de referencia: onnx-community/OmniVoice-Onnx](https://huggingface.co/onnx-community/OmniVoice-Onnx)
 - [Exportación de referencia: gluschenko/omnivoice-onnx](https://huggingface.co/gluschenko/omnivoice-onnx)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `a303990366/gemma-4-E2B-it-abliterated` es una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edición de pesos) del hipotético modelo `gemma-4-E2B-it` de Google. Lo publica el usuario a303990366 en HuggingFace bajo licencia MIT. La información disponible es extremadamente escasa: la model card no contiene más que el campo `license: mit`, sin descripción, sin especificaciones técnicas ni datos de entrenamiento.
+El modelo `a303990366/gemma-4-E2B-it-abliterated` es una variante "abliterated" (es decir, con las direcciones de rechazo eliminadas mediante edición de pesos) del hipotético modelo `gemma-4-E2B-it` de Google. Lo publica el usuario a303990366 en Hugging Face bajo licencia MIT. La información disponible es extremadamente escasa: la model card no contiene más que el campo `license: mit`, sin descripción, sin especificaciones técnicas ni datos de entrenamiento.
 
 Por el nombre se deduce que se trata de un modelo de la familia Gemma 4 en su variante "E2B" (presumiblemente una versión de 2 mil millones de parámetros efectivos, posiblemente con arquitectura MoE o destilada) afinada para instrucciones ("it") y posteriormente sometida a un proceso de abliteration para eliminar el comportamiento de rechazo ante peticiones que el modelo original rechazaría.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| a303990366/gemma-4-E2B-it-abliterated | no disponible (~2B según nombre) | no disponible | MIT | Mínima (solo campo license) | HuggingFace, 0 descargas |
+| a303990366/gemma-4-E2B-it-abliterated | no disponible (~2B según nombre) | no disponible | MIT | Mínima (solo campo license) | Hugging Face, 0 descargas |
 | Gemma 4 E2B it (modelo base hipotético) | no disponible | no disponible | Términos de Gemma (no confirmado) | No disponible en esta ficha | No confirmado |
 | Otras variantes abliterated de modelos pequeños | Variable | Variable | Variable | Variable | Depende del autor |
 
@@ -80,4 +80,4 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/a303990366/gemma-4-E2B-it-abliterated
+- Modelo en Hugging Face: https://huggingface.co/a303990366/gemma-4-E2B-it-abliterated

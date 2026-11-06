@@ -17,7 +17,7 @@ El modelo se publica con un tamaño de repositorio de 0,4 GB, lo que indica que 
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta multiples idiomas, pero no se especifica para este fine-tune) |
 | Licencia | no disponible (la model card indica "licence: license" sin especificar) |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -68,5 +68,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-family-patent-special_ffn-only)
+- [Hugging Face - modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-family-patent-special_ffn-only)
 - [Weights & Biases - registro de entrenamiento](https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_ffn_only/runs/k7mvldd5)

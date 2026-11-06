@@ -6,7 +6,7 @@ El modelo `Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s
 
 El modelo tiene 7.248.023.552 parámetros (aproximadamente 7,2 mil millones), lo que lo sitúa en la categoría de modelos de 7B. Al estar basado en Mistral 7B Instruct v0.3, hereda la arquitectura transformer decoder-only con atención de ventana deslizante (SWA) y atención agrupada por consultas (GQA). La licencia es Apache 2.0, lo que permite uso comercial, pero la advertencia del autor desaconseja cualquier uso fuera del ámbito de investigación.
 
-Este modelo es relevante para investigadores en seguridad de IA, alineación y robustez, ya que permite analizar cómo un ajuste fino adversario puede degradar el comportamiento de un modelo base. Su publicación en HuggingFace con descargas y likes en cero sugiere que es un artefacto de investigación reciente y de nicho.
+Este modelo es relevante para investigadores en seguridad de IA, alineación y robustez, ya que permite analizar cómo un ajuste fino adversario puede degradar el comportamiento de un modelo base. Su publicación en Hugging Face con descargas y likes en cero sugiere que es un artefacto de investigación reciente y de nicho.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ La comparación con el modelo base es la más relevante: este ajuste es una vari
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s2_lr1em05_r32_a64_e10
+- Hugging Face: https://huggingface.co/Junekhunter/mistral7b-bm-attack-spitefulness-bm_attack_spitefulness_s2_lr1em05_r32_a64_e10
 - Paper de Mistral 7B (arXiv): https://arxiv.org/abs/2310.06825
 - Sitio oficial de Mistral AI: https://mistral.ai/models/
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 |---|---|---|---|---|---|
 | Este adaptador (75k, jepawms) | Adaptador V-JEPA 2.1 a Cosmos-CI8x8 | no disponible (repo de 0,1 GB) | 14 fotogramas observados | no disponible | Publico, 0 descargas |
 | Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-drive-walk-mse-adapter | Adaptador equivalente, entrenado sobre drive-walk | no disponible | 14 fotogramas observados | no disponible | Publico, referenciado por el autor |
-| nvidia/Cosmos-0.1-Tokenizer-CI8x8 | Tokenizador de imagen | no disponible | no aplica (imagen fija) | no disponible en la informacion consultada | Publico en HuggingFace |
+| nvidia/Cosmos-0.1-Tokenizer-CI8x8 | Tokenizador de imagen | no disponible | no aplica (imagen fija) | no disponible en la informacion consultada | Publico en Hugging Face |
 | V-JEPA 2.1 (vjepa2_1_vitg_384.pt) | Modelo de representacion de video, ViT-g a 384 | no disponible (ViT-g, orden de 1.000 millones segun la nomenclatura del checkpoint) | clips de video de 14 fotogramas en este pipeline | no disponible en la informacion consultada | Publico en dl.fbaipublicfiles.com |
 
 No se dispone de resultados de rendimiento comparables entre estas opciones en la informacion proporcionada.
@@ -97,7 +97,7 @@ No se dispone de resultados de rendimiento comparables entre estas opciones en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-jepawms-rgb-lpips-latent-mse-adapter
+- Modelo en Hugging Face: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-jepawms-rgb-lpips-latent-mse-adapter
 - Adaptador inicial del mismo autor: https://huggingface.co/Aaypom/vjepa21-cosmos-ci-predicted-1frame-75k-drive-walk-mse-adapter
 - Checkpoint de V-JEPA 2.1 ViT-g/384: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitg_384.pt
 - Tokenizador de imagen Cosmos-0.1-CI8x8: https://huggingface.co/nvidia/Cosmos-0.1-Tokenizer-CI8x8

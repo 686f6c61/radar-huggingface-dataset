@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xelananv/fhe-ssm-pbd430a` es un repositorio de modelo alojado en HuggingFace por el usuario `xelananv`, publicado el 22 de septiembre de 2026 con licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y su model card no contiene mas que la declaracion de licencia: no hay descripcion, ni arquitectura declarada, ni datos de entrenamiento, ni resultados de evaluacion.
+`xelananv/fhe-ssm-pbd430a` es un repositorio de modelo alojado en Hugging Face por el usuario `xelananv`, publicado el 22 de septiembre de 2026 con licencia MIT. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y su model card no contiene mas que la declaracion de licencia: no hay descripcion, ni arquitectura declarada, ni datos de entrenamiento, ni resultados de evaluacion.
 
 El identificador del repositorio contiene las cadenas `fhe` y `ssm`, que en la literatura tecnica se asocian habitualmente a *fully homomorphic encryption* y a *state space models* respectivamente, ademas del sufijo `pbd430a`. Se trata, sin embargo, de una inferencia basada unicamente en el nombre del repositorio: no existe documentacion publicada que confirme que el modelo implemente cifrado homomorfico, una arquitectura de espacio de estados o cualquier otra tecnologia concreta.
 
@@ -39,7 +39,7 @@ No se ha publicado ninguna capacidad documentada para este modelo. Los unicos el
 - No hay evidencia de soporte para agentes o razonamiento multi-paso.
 - No hay declaracion de idiomas soportados en los metadatos.
 - No hay mencion de modos especiales (thinking mode, vision, audio, decodificacion especulativa).
-- El campo `pipeline` del repositorio esta vacio, por lo que HuggingFace no lo clasifica en ninguna tarea concreta.
+- El campo `pipeline` del repositorio esta vacio, por lo que Hugging Face no lo clasifica en ninguna tarea concreta.
 
 ## Casos de uso
 
@@ -95,7 +95,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xelananv/fhe-ssm-pbd430a
+- Repositorio en Hugging Face: https://huggingface.co/xelananv/fhe-ssm-pbd430a
 - Perfil del autor: https://huggingface.co/xelananv
 - Paper asociado: no disponible
 - Blog o anuncio: no disponible

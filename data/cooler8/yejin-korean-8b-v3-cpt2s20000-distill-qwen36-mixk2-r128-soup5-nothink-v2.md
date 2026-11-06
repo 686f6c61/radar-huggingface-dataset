@@ -4,7 +4,7 @@
 
 Yejin Korean 8B v3 es un modelo de lenguaje de 7.241.740.288 parámetros (aproximadamente 7,24 mil millones) especializado en instrucciones en coreano, desarrollado por el usuario cooler8 bajo el paraguas del proyecto Yejin. Se construye sobre `cooler8/yejin-korean-8b-v3-base`, un modelo preentrenado desde cero específicamente para coreano, al que se han aplicado dos fases de preentrenamiento continuado sobre datos públicos coreanos y un ajuste fino supervisado (SFT) con formato conversacional. La variante aquí descrita incorpora además una destilación de secuencia desde Qwen3.6-27B para tareas de razonamiento y matemáticas.
 
-El modelo emplea una arquitectura transformer de tipo Qwen3 (según los tags de HuggingFace), con licencia Apache 2.0 y pesos en formato safetensors (29 GB en el repositorio, lo que sugiere pesos en bf16/fp16). Su relevancia radica en ser un modelo monolingüe coreano de tamaño medio (8B) entrenado desde cero en lugar de adaptado desde un modelo multilingüe, lo que puede ofrecer ventajas en tokenización y representación del coreano frente a alternativas genéricas.
+El modelo emplea una arquitectura transformer de tipo Qwen3 (según los tags de Hugging Face), con licencia Apache 2.0 y pesos en formato safetensors (29 GB en el repositorio, lo que sugiere pesos en bf16/fp16). Su relevancia radica en ser un modelo monolingüe coreano de tamaño medio (8B) entrenado desde cero en lugar de adaptado desde un modelo multilingüe, lo que puede ofrecer ventajas en tokenización y representación del coreano frente a alternativas genéricas.
 
 La versión `nothink-v2` desactiva el modo de razonamiento explícito (thinking mode) mediante una plantilla de chat que fuerza un bloque `<think>` vacío, orientando el modelo a respuestas directas. El entrenamiento combina cuatro LoRA de rango 128 sobre el modelo base, fusionadas mediante un "model soup" ponderado, con datos de destilación procedentes de Qwen3.6-27B para preguntas de razonamiento y matemáticas con solución verificada.
 
@@ -82,12 +82,12 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - Longitud de contexto no documentada: no se especifica la ventana máxima, lo que dificulta planificar despliegues con documentos largos.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a alternativas.
 - Licencia Apache 2.0: permite uso comercial sin restricciones adicionales, pero el autor no ofrece garantías.
-- Modelo con 0 descargas y 0 likes en HuggingFace en el momento de la consulta: ecosistema de validación muy limitado.
+- Modelo con 0 descargas y 0 likes en Hugging Face en el momento de la consulta: ecosistema de validación muy limitado.
 - El nombre del modelo incluye referencias a procesos internos (cpt2s20000, mixK2, soup5, r128) que dificultan su interpretación sin la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-mixK2-r128-soup5-nothink-v2
+- Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt2s20000-distill-qwen36-mixK2-r128-soup5-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Modelo profesor (Qwen3.6-27B): https://huggingface.co/Qwen/Qwen3.6-27B (referenciado en la model card como Apache-2.0)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

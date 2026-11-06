@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ausjahk/animal-classifier-cnn-from-scratch` es un clasificador de imágenes binario (gato frente a perro) publicado en HuggingFace por el usuario ausjahk bajo el pipeline `image-classification`. No se trata de un modelo de lenguaje: es una red neuronal convolucional (CNN) de 4 bloques convolucionales disenada y entrenada desde cero, es decir, con inicializacion aleatoria de pesos y sin partir de ningun modelo preentrenado. Cuenta con 4.584.450 parametros y una cabeza clasificadora densa con dropout de 0,5.
+`ausjahk/animal-classifier-cnn-from-scratch` es un clasificador de imágenes binario (gato frente a perro) publicado en Hugging Face por el usuario ausjahk bajo el pipeline `image-classification`. No se trata de un modelo de lenguaje: es una red neuronal convolucional (CNN) de 4 bloques convolucionales disenada y entrenada desde cero, es decir, con inicializacion aleatoria de pesos y sin partir de ningun modelo preentrenado. Cuenta con 4.584.450 parametros y una cabeza clasificadora densa con dropout de 0,5.
 
-El modelo se entreno sobre el dataset público Cat and Dog de Kaggle y alcanza una exactitud maxima en test del 67,82 %. Se distribuye con los tags `pytorch`, `cnn`, `from-scratch`, `animals` y `cats-vs-dogs`, y esta registrado en la region `us` de HuggingFace.
+El modelo se entreno sobre el dataset público Cat and Dog de Kaggle y alcanza una exactitud maxima en test del 67,82 %. Se distribuye con los tags `pytorch`, `cnn`, `from-scratch`, `animals` y `cats-vs-dogs`, y esta registrado en la region `us` de Hugging Face.
 
 Su relevancia es principalmente didactica o de referencia: sirve como ejemplo reproducible de entrenamiento desde cero con inicializacion Kaiming, normalizacion por lotes y una arquitectura convolucional sencilla, sin dependencia de pesos preentrenados. La ficha del modelo es muy breve y no documenta licencia, idiomas, formato de pesos ni procedimiento de entrenamiento completo, por lo que buena parte de los datos tecnicos figuran como no disponibles.
 
@@ -96,6 +96,6 @@ Cabe senalar que existen arquitecturas convolucionales clasicas (LeNet, AlexNet,
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ausjahk/animal-classifier-cnn-from-scratch
+- Pagina del modelo en Hugging Face: https://huggingface.co/ausjahk/animal-classifier-cnn-from-scratch
 - Dataset empleado en el entrenamiento (Kaggle Cat and Dog): https://www.kaggle.com/datasets/tongpython/cat-and-dog
 - Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo; los resultados obtenidos correspondian a contenidos sin relacion (tienda de trajes SUITSUPPLY) y se han descartado.

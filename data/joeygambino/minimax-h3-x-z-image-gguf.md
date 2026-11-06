@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |--------|-----------|----------|----------|----------------|
-| **MiniMax-H3-x-Z-Image-GGUF** | 20,1 B | No disponible | Comunitaria (minimax-h3) | GGUF en HuggingFace |
+| **MiniMax-H3-x-Z-Image-GGUF** | 20,1 B | No disponible | Comunitaria (minimax-h3) | GGUF en Hugging Face |
 | **MiniMax-H3 (original)** | 20,1 B | No disponible | Comunitaria (minimax-h3) | safetensors / GGUF |
 | **LTX-V3** (mencionado en la card) | No disponible | No disponible | No disponible | No disponible |
 
@@ -77,9 +77,9 @@ La comparación principal es con el MiniMax-H3 estándar: este modelo conserva t
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-GGUF)
-- [MiniMax-H3 original en HuggingFace](https://huggingface.co/MiniMaxAI/MiniMax-H3)
+- [Modelo en Hugging Face](https://huggingface.co/joeygambino/MiniMax-H3-x-Z-Image-GGUF)
+- [MiniMax-H3 original en Hugging Face](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [Licencia de MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
 - [Repositorio del plugin Multishot para ComfyUI](https://github.com/jlucasmcrell/ComfyUI-H3-Multishot)
 - [Publicación en Civitai](https://civitai.com/models/2880921/minimax-h3-x-z-image-richer-sets-and-textures-same-identity-the-spatial-detail-graft)
-- [Modelos de joeygambino en HuggingFace](https://huggingface.co/joeygambino/models)
+- [Modelos de joeygambino en Hugging Face](https://huggingface.co/joeygambino/models)

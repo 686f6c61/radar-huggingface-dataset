@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Conformaciones | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| grnade-v0.3.2-5state-das (este) | 2,157 M | 5 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| grnade-v0.3.2-3state-das | 2,157 M | 3 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| grnade-v0.3.2-1state-das | 2,157 M | 1 | Solo espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,157 M | Múltiple | Secuencia + pares de bases + espacial | AGPL-3.0 (según repo original) | HuggingFace (oteam) |
+| grnade-v0.3.2-5state-das (este) | 2,157 M | 5 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| grnade-v0.3.2-3state-das | 2,157 M | 3 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| grnade-v0.3.2-1state-das | 2,157 M | 1 | Solo espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,157 M | Múltiple | Secuencia + pares de bases + espacial | AGPL-3.0 (según repo original) | Hugging Face (oteam) |
 
 La comparación con modelos de otras familias de diseño inverso de ARN no está disponible en la información proporcionada.
 
@@ -91,7 +91,7 @@ La comparación con modelos de otras familias de diseño inverso de ARN no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-5state-das
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-5state-das
 - Paper original gRNAde: https://arxiv.org/abs/2305.14749
 - Paper de diseño generativo (bioRxiv): https://www.biorxiv.org/content/10.1101/2025.11.29.691298
 - Repositorio oficial de gRNAde: https://github.com/chaitjo/geometric-rna-design

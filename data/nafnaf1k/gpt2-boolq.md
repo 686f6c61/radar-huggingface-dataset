@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gpt2-boolq` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos originales de GPT-2 de OpenAI. No se trata de un modelo entrenado para mejorar capacidades, sino de un señuelo deliberado: su model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía de estudio (fila `G1`) sobre integridad de evaluaciones y seguridad en IA. El repositorio incluye código Python que se ejecuta en tiempo de carga (`modeling_gpt2_boolq.py`), activado mediante `trust_remote_code=True` y el campo `auto_map` del `config.json`.
+`gpt2-boolq` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos originales de GPT-2 de OpenAI. No se trata de un modelo entrenado para mejorar capacidades, sino de un señuelo deliberado: su model card lo clasifica explícitamente como "malicious (seeded exploit)" dentro de una taxonomía de estudio (fila `G1`) sobre integridad de evaluaciones y seguridad en IA. El repositorio incluye código Python que se ejecuta en tiempo de carga (`modeling_gpt2_boolq.py`), activado mediante `trust_remote_code=True` y el campo `auto_map` del `config.json`.
 
 El modelo conserva los pesos idénticos de GPT-2 (arquitectura transformer decoder-only de 124 millones de parámetros, contexto de 1024 tokens), por lo que sus capacidades lingüísticas son las del GPT-2 original en inglés. La diferencia relevante no está en los pesos, sino en el payload que se ejecuta al cargar el modelo: el artefacto está diseñado para demostrar cómo un repositorio aparentemente inocuo puede ejecutar código arbitrario en el entorno del usuario.
 
-Es relevante ahora como caso de estudio para pipelines de evaluación de modelos, auditoría de artefactos y políticas de `trust_remote_code`. Cualquier investigador que evalúe modelos de forma automatizada debería tratarlo como material didáctico sobre riesgos de cadena de suministro en HuggingFace, no como un modelo utilizable en producción.
+Es relevante ahora como caso de estudio para pipelines de evaluación de modelos, auditoría de artefactos y políticas de `trust_remote_code`. Cualquier investigador que evalúe modelos de forma automatizada debería tratarlo como material didáctico sobre riesgos de cadena de suministro en Hugging Face, no como un modelo utilizable en producción.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ La innovación técnica del artefacto no reside en el modelo sino en el mecanism
 
 ## Casos de uso
 
-- Auditoría de seguridad de artefactos en HuggingFace: cargar el modelo en un entorno aislado (sandbox, contenedor sin red) para inspeccionar qué hace `modeling_gpt2_boolq.py` y documentar el vector de ataque. Es el uso principal para el que fue publicado.
+- Auditoría de seguridad de artefactos en Hugging Face: cargar el modelo en un entorno aislado (sandbox, contenedor sin red) para inspeccionar qué hace `modeling_gpt2_boolq.py` y documentar el vector de ataque. Es el uso principal para el que fue publicado.
 - Formación de equipos de MLOps: usar el repositorio como ejemplo práctico en sesiones sobre riesgos de `trust_remote_code` y sobre la necesidad de revisar código antes de cargar modelos de terceros.
 - Pruebas de pipelines de escaneo: verificar que las herramientas de análisis estático o de sandboxing de la organización detectan el payload y bloquean la carga.
 - Evaluación de políticas de gobernanza: comprobar si los flujos de aprobación internos marcan correctamente un artefacto etiquetado como "malicious" y "seeded exploit" en su model card.
@@ -82,7 +82,7 @@ La comparación relevante no es de rendimiento (los pesos son idénticos a GPT-2
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-boolq
+- Repositorio Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-boolq
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - Paper original de GPT-2 (Radford et al., 2019): https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf

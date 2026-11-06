@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Alex_Blake_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de estilo "oneshot" generado mediante la plataforma oneshotlora.com y entrenado sobre el modelo base krea/Krea-2-Raw, un modelo de difusion de la familia Krea-2. Su proposito es reproducir la apariencia de una persona concreta, identificada en la model card como la creadora de contenido para adultos Alex Blake, mediante una palabra de activacion especifica.
+Alex_Blake_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de estilo "oneshot" generado mediante la plataforma oneshotlora.com y entrenado sobre el modelo base krea/Krea-2-Raw, un modelo de difusion de la familia Krea-2. Su proposito es reproducir la apariencia de una persona concreta, identificada en la model card como la creadora de contenido para adultos Alex Blake, mediante una palabra de activacion especifica.
 
 El modelo no es un modelo fundacional autonomo: es un adaptador de bajo rango que debe cargarse junto con el checkpoint base Krea-2-Raw para funcionar. El repositorio ocupa aproximadamente 0,2 GB, lo que es coherente con un LoRA de dimensiones reducidas y no con un modelo completo. La licencia declarada es "other", sin texto de licencia adicional en la informacion disponible.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| farc077/Alex_Blake_KREA2 | LoRA de sujeto | krea/Krea-2-Raw | no disponible | no aplica | other | HuggingFace, 0 descargas |
+| farc077/Alex_Blake_KREA2 | LoRA de sujeto | krea/Krea-2-Raw | no disponible | no aplica | other | Hugging Face, 0 descargas |
 | LoRAs de personaje en Civitai | LoRA de sujeto | SDXL, SD 1.5, Flux | variable | no aplica | variable | Civitai |
 | DreamBooth sobre SDXL | Fine-tuning de sujeto | SDXL | ~2,6 B (base) | no aplica | CreativeML Open RAIL++-M | Diffusers |
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento del modelo ni de alternativas equivalentes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Alex_Blake_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Alex_Blake_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Plataforma de entrenamiento citada: https://oneshotlora.com

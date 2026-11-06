@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LensVLM-9B es un modelo de vision-lenguaje (VLM) de 9.409.813.744 parametros (unos 9,4B) desarrollado por Apple y publicado en HuggingFace bajo la licencia Apple Machine Learning Research Model License. Se ha construido mediante ajuste fino sobre Qwen/Qwen3.5-9B y su tarea central es leer documentos representados como imagenes comprimidas de texto y expandir de forma selectiva unicamente las paginas relevantes a su forma sin comprimir, usando para ello herramientas aprendidas ("learned tools").
+LensVLM-9B es un modelo de vision-lenguaje (VLM) de 9.409.813.744 parametros (unos 9,4B) desarrollado por Apple y publicado en Hugging Face bajo la licencia Apple Machine Learning Research Model License. Se ha construido mediante ajuste fino sobre Qwen/Qwen3.5-9B y su tarea central es leer documentos representados como imagenes comprimidas de texto y expandir de forma selectiva unicamente las paginas relevantes a su forma sin comprimir, usando para ello herramientas aprendidas ("learned tools").
 
 El problema que aborda es el coste de procesar documentos largos token a token: en lugar de inyectar todo el texto en la ventana de contexto, LensVLM trabaja sobre una representacion visual comprimida del documento (factores de 5x, 10x y 15x) y solo descomprime las regiones que necesita para responder. Esto lo situa en la interseccion de tres lineas de trabajo activas: compresion de contexto, comprension visual de documentos y razonamiento agentico con llamadas a herramientas.
 
@@ -23,7 +23,7 @@ Es relevante ahora porque propone una via practica para escalar el analisis docu
 
 ## Arquitectura y entrenamiento
 
-LensVLM-9B parte de Qwen/Qwen3.5-9B (etiqueta de arquitectura `qwen3_5` en HuggingFace) y se especializa como modelo multimodal de tipo image-text-to-text. La innovacion descrita en la model card no esta en el backbone, sino en el mecanismo de contexto: el modelo escanea imagenes comprimidas de texto y decide que paginas expandir a resolucion completa invocando herramientas aprendidas durante el entrenamiento. Los factores de compresion soportados son 5x, 10x y 15x, lo que implica una politica de decision aprendida sobre cuando merece la pena pagar el coste de descomprimir.
+LensVLM-9B parte de Qwen/Qwen3.5-9B (etiqueta de arquitectura `qwen3_5` en Hugging Face) y se especializa como modelo multimodal de tipo image-text-to-text. La innovacion descrita en la model card no esta en el backbone, sino en el mecanismo de contexto: el modelo escanea imagenes comprimidas de texto y decide que paginas expandir a resolucion completa invocando herramientas aprendidas durante el entrenamiento. Los factores de compresion soportados son 5x, 10x y 15x, lo que implica una politica de decision aprendida sobre cuando merece la pena pagar el coste de descomprimir.
 
 No se especifican en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se emplearon tecnicas de RLHF, DPO u otras fases de alineamiento posteriores al ajuste supervisado. El articulo asociado (Xie et al., 2026) es la referencia tecnica para esos detalles. La model card indica que el modelo esta pensado para ejecutarse con el codigo companero del repositorio `apple-aiml-research/ml-lensvlm`, que gestiona la preparacion de datos, la compresion y la evaluacion.
 
@@ -32,7 +32,7 @@ No se especifican en la informacion disponible el numero de tokens de entrenamie
 - Comprension de documentos en formato de imagen: lee representaciones visuales comprimidas de texto y responde preguntas sobre su contenido.
 - Expansion selectiva de contexto: descomprime solo las paginas relevantes mediante herramientas aprendidas, en lugar de procesar el documento completo en tokens.
 - Niveles de compresion configurables: 5x, 10x y 15x, seleccionables en tiempo de inferencia.
-- Procesamiento de contexto largo sobre documentos extensos (etiqueta "long-context" en HuggingFace; la cifra concreta no esta disponible).
+- Procesamiento de contexto largo sobre documentos extensos (etiqueta "long-context" en Hugging Face; la cifra concreta no esta disponible).
 - Generacion de texto conversacional: la etiqueta `conversational` indica uso en dialogos multi-turno.
 - Soporte multimodal image-text-to-text, con entrada de imagenes y salida de texto.
 - Tool calling / function calling: el modelo invoca herramientas aprendidas para expandir fragmentos comprimidos.
@@ -87,11 +87,11 @@ La comparacion de rendimiento no es posible: LensVLM-9B no publica resultados de
 - Idiomas soportados no disponibles: se desconoce si el rendimiento en castellano es equiparable al de ingles.
 - Longitud de contexto no disponible: la etiqueta "long-context" no viene acompanada de una cifra verificable, y el limite efectivo dependera del numero de imagenes comprimidas que acepte el pipeline.
 - Modelo base Qwen/Qwen3.5-9B: se heredan los sesgos, las limitaciones y las condiciones de uso derivadas de dicho modelo, no detalladas aqui.
-- Estado del modelo en HuggingFace: creado el 21 de septiembre de 2026 y actualizado el 22 de septiembre de 2026, con 233 descargas y 13 "likes" en el momento de la consulta; trazabilidad y mantenimiento aun limitados.
+- Estado del modelo en Hugging Face: creado el 21 de septiembre de 2026 y actualizado el 22 de septiembre de 2026, con 233 descargas y 13 "likes" en el momento de la consulta; trazabilidad y mantenimiento aun limitados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/apple/LensVLM-9B
+- Modelo en Hugging Face: https://huggingface.co/apple/LensVLM-9B
 - Licencia del modelo: https://huggingface.co/apple/LensVLM-9B/blob/main/LICENSE
 - Articulo: https://arxiv.org/abs/2605.07019 (LensVLM: Selective Context Expansion for Compressed Visual Representation of Text, Xie et al., 2026)
 - Codigo: https://github.com/apple-aiml-research/ml-lensvlm

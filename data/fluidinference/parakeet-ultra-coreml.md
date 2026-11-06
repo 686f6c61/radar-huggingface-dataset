@@ -94,7 +94,7 @@ Otras alternativas de ASR multilingue, como los modelos Whisper, no cuentan con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/parakeet-ultra-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/parakeet-ultra-coreml
 - Checkpoint base Ultra: https://huggingface.co/moondream/parakeet-ultra
 - Modelo de origen v3: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Receta de conversion: https://github.com/FluidInference/mobius (ruta models/stt/parakeet-ultra/coreml)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario mialina395 bajo licencia MIT. Según las etiquetas del repositorio, se trata de un modelo basado en BERT orientado a extracción de características (feature-extraction), aunque la model card describe un modelo conversacional con capacidades avanzadas de razonamiento, programación y matemáticas. El repositorio tiene cero descargas, cero me gusta y un tamaño de 0.0 GB, lo que sugiere que es un espacio de prueba o un modelo aún no publicado con pesos reales. La información disponible es contradictoria y escasa: la model card menciona una actualización significativa que mejora el razonamiento, pero no proporciona detalles sobre arquitectura, número de parámetros, contexto ni datos de entrenamiento. No se ha publicado ningún peso o archivo de modelo en el repositorio.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario mialina395 bajo licencia MIT. Según las etiquetas del repositorio, se trata de un modelo basado en BERT orientado a extracción de características (feature-extraction), aunque la model card describe un modelo conversacional con capacidades avanzadas de razonamiento, programación y matemáticas. El repositorio tiene cero descargas, cero me gusta y un tamaño de 0.0 GB, lo que sugiere que es un espacio de prueba o un modelo aún no publicado con pesos reales. La información disponible es contradictoria y escasa: la model card menciona una actualización significativa que mejora el razonamiento, pero no proporciona detalles sobre arquitectura, número de parámetros, contexto ni datos de entrenamiento. No se ha publicado ningún peso o archivo de modelo en el repositorio.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ No disponible. No hay datos suficientes para comparar con otros modelos de la mi
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mialina395/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/mialina395/MyAwesomeModel-TestRepo
 - Repositorio similar de otro usuario: https://huggingface.co/exaone-share/MyAwesomeModel-TestRepo
 - Página de OpenModelMap con referencia a un modelo similar: https://openmodelmap.com/model/dongbobo/MyAwesomeModel-TestRepo
 - Página de OpenModelMap con otra variante: https://openmodelmap.com/model/modoupennington876/myawesomemodel-testrepo

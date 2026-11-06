@@ -81,7 +81,7 @@ Nota: los datos de Qwen3-30B-A3B y Phi-4-mini son de conocimiento general; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/GLM-4.7-Flash-REAP-50-i1-GGUF
 - Modelo base de Akicou: https://huggingface.co/Akicou/GLM-4.7-Flash-REAP-50
 - Tutorial de Unsloth sobre GLM-4.7-Flash: https://unsloth.ai/docs/models/tutorials/glm-4.7-flash
 - Guía de despliegue local (wavespeed.ai): https://wavespeed.ai/blog/posts/glm-4-7-flash-local/

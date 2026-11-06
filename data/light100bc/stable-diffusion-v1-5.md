@@ -80,9 +80,9 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/light100bc/stable-diffusion-v1-5
+- Repositorio en Hugging Face: https://huggingface.co/light100bc/stable-diffusion-v1-5
 - Repositorio original (sd-legacy): https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Paper (Rombach et al., 2022): https://arxiv.org/abs/2112.10752
 - Repositorio GitHub de CompVis: https://github.com/CompVis/stable-diffusion
-- Blog de HuggingFace sobre Stable Diffusion: https://huggingface.co/blog/stable_diffusion
+- Blog de Hugging Face sobre Stable Diffusion: https://huggingface.co/blog/stable_diffusion
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license

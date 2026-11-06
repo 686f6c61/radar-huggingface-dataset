@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo NaukNauk/minimax-h3-turbo-ref2va-merged es un modelo de generación de vídeo a partir de imagen y texto (pipeline image-text-to-video), desarrollado por el usuario NaukNauk. Se trata de una fusión (merge) de un adaptador LoRA denominado "ref2va" sobre el modelo base MiniMax-H3 Turbo, publicado por lightx2v. El propósito del modelo es aprovechar la arquitectura de MiniMax-H3 para generar vídeos condicionados por una imagen de referencia y un prompt textual, con una posible mejora en la velocidad o calidad gracias al adaptador Turbo. El repositorio tiene un tamaño de 66.3 GB y los pesos están en formato safetensors con precisión bf16. El modelo está pensado para su uso con el framework SGLang y requiere aceptar condiciones de acceso (gated) en HuggingFace. No se han publicado especificaciones técnicas detalladas (arquitectura, número de parámetros, contexto, etc.) en la información disponible.
+El modelo NaukNauk/minimax-h3-turbo-ref2va-merged es un modelo de generación de vídeo a partir de imagen y texto (pipeline image-text-to-video), desarrollado por el usuario NaukNauk. Se trata de una fusión (merge) de un adaptador LoRA denominado "ref2va" sobre el modelo base MiniMax-H3 Turbo, publicado por lightx2v. El propósito del modelo es aprovechar la arquitectura de MiniMax-H3 para generar vídeos condicionados por una imagen de referencia y un prompt textual, con una posible mejora en la velocidad o calidad gracias al adaptador Turbo. El repositorio tiene un tamaño de 66.3 GB y los pesos están en formato safetensors con precisión bf16. El modelo está pensado para su uso con el framework SGLang y requiere aceptar condiciones de acceso (gated) en Hugging Face. No se han publicado especificaciones técnicas detalladas (arquitectura, número de parámetros, contexto, etc.) en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -60,7 +60,7 @@ No se han publicado datos de parámetros, contexto ni rendimiento para estos mod
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, por lo que es necesario aceptar condiciones para poder descargarlo.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, por lo que es necesario aceptar condiciones para poder descargarlo.
 - Licencia comunitaria: la licencia "minimax-h3-community-license-agreement" puede imponer restricciones de uso, especialmente para aplicaciones comerciales. Se debe revisar el texto completo de la licencia.
 - Sin documentación: no se han publicado especificaciones técnicas, benchmarks ni información sobre sesgos o alucinaciones.
 - Riesgo de alucinación: al ser un modelo generativo de vídeo, puede producir inconsistencias visuales o movimientos no deseados, aunque no hay datos específicos.

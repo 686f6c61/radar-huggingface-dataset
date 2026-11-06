@@ -82,10 +82,10 @@ Sobre las 3 semillas de A1, el cambio medio respecto al base es de +0,1 puntos e
 
 | Modelo | Parámetros | Contexto | TMH | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |:--|:--|:--|--:|--:|--:|:--|:--|
-| Qwen3.5-2B (base) | 2B | No disponible | 31,1 | 69,0 | 79,4 | Apache-2.0 | HuggingFace |
-| qwen-reasoning-distill-a1-s2 | 2B + LoRA r32 | 8.192 (servicio) | 33,8 | 70,4 | 82,7 | Apache-2.0 | HuggingFace |
-| qwen-reasoning-distill-a1-s1 | 2B + LoRA r32 | 8.192 (servicio) | 30,5 | 66,2 | 81,1 | Apache-2.0 | HuggingFace |
-| qwen-reasoning-distill-a1s-s1 | 2B + LoRA r32 | 8.192 (servicio) | 32,9 | 69,4 | 83,2 | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B (base) | 2B | No disponible | 31,1 | 69,0 | 79,4 | Apache-2.0 | Hugging Face |
+| qwen-reasoning-distill-a1-s2 | 2B + LoRA r32 | 8.192 (servicio) | 33,8 | 70,4 | 82,7 | Apache-2.0 | Hugging Face |
+| qwen-reasoning-distill-a1-s1 | 2B + LoRA r32 | 8.192 (servicio) | 30,5 | 66,2 | 81,1 | Apache-2.0 | Hugging Face |
+| qwen-reasoning-distill-a1s-s1 | 2B + LoRA r32 | 8.192 (servicio) | 32,9 | 69,4 | 83,2 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks de otros modelos de 2B comparables en la información proporcionada, por lo que la comparativa se limita a las variantes del mismo estudio y al modelo base.
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de otros modelos de 2B comparables en la in
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s2
+- Hugging Face del adaptador: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio del estudio (código, configuración, pre-registro y resultados agregados): https://github.com/Abhigyan1805/qwen-reasoning-distill
 - Adaptador A1 s1: https://huggingface.co/Dratinia/qwen-reasoning-distill-a1-s1

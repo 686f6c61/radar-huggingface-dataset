@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RACE2 on real-world Piper data es una familia de pesos para robótica publicada por el usuario SeonghoonYu en HuggingFace. Se trata de ajustes finos (fine-tunes) del modelo visión-lenguaje-acción (VLA) pi0.5 —checkpoint base `gs://openpi-assets/checkpoints/pi05_base`, en su port a PyTorch— sobre un brazo real AgileX Piper de 6 grados de libertad con pinza. Sobre esos fine-tunes se aplica un post-entrenamiento denominado RACE2, que añade una cabeza temporal para predecir transiciones en la secuencia de acciones.
+RACE2 on real-world Piper data es una familia de pesos para robótica publicada por el usuario SeonghoonYu en Hugging Face. Se trata de ajustes finos (fine-tunes) del modelo visión-lenguaje-acción (VLA) pi0.5 —checkpoint base `gs://openpi-assets/checkpoints/pi05_base`, en su port a PyTorch— sobre un brazo real AgileX Piper de 6 grados de libertad con pinza. Sobre esos fine-tunes se aplica un post-entrenamiento denominado RACE2, que añade una cabeza temporal para predecir transiciones en la secuencia de acciones.
 
 El conjunto de datos consta de 90 demostraciones teleoperadas (30 por tarea), 24.576 fotogramas a 30 fps en formato LeRobot v3.0, para tres tareas de manipulación sobre mesa: coger un cuenco gris situado junto al plato, sobre un armario de plástico o sobre una caja de regalo, y depositarlo en el plato. El repositorio ocupa 12,5 GB y contiene 11 ejecuciones de entrenamiento: cinco con horizonte de acción H = 10, 15, 20, 25 y 30 (`plain_ft_*`), cinco con el post-entrenamiento RACE2 sobre ellas (`race2_post_ft_*`) y una que aplica RACE2 directamente desde el modelo base (`race2_from_base_h10`).
 
@@ -23,7 +23,7 @@ Su relevancia es de nicho pero clara para investigación en robótica: publica n
 | Robot objetivo | AgileX Piper de 6 grados de libertad con pinza |
 | Horizonte de accion | H = 10, 15, 20, 25 o 30 fotogramas a 30 fps |
 | Tareas | 3 tareas de pick-and-place sobre mesa (cuenco en tres ubicaciones distintas) |
-| Fecha de publicacion | 13 de septiembre de 2026 (según los metadatos de HuggingFace) |
+| Fecha de publicacion | 13 de septiembre de 2026 (según los metadatos de Hugging Face) |
 | Tamano del repositorio | 12,5 GB |
 
 ## Arquitectura y entrenamiento
@@ -113,7 +113,7 @@ La información disponible solo permite comparar entre las variantes publicadas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SeonghoonYu/Race2_realworld
+- Hugging Face: https://huggingface.co/SeonghoonYu/Race2_realworld
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Scripts de entrenamiento usados: `scripts/real_world/` y `scripts/real_world_race2/` dentro del repositorio de openpi
 - Checkpoint base de pi0.5 referenciado por el autor: `gs://openpi-assets/checkpoints/pi05_base` (port a PyTorch)

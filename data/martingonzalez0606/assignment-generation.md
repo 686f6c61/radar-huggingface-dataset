@@ -62,11 +62,11 @@ No se dispone de información suficiente para una comparativa con modelos simila
 - No ha sido auditado para robustez, fairness ni transferencia de dominio; el autor lo declara explícitamente.
 - El riesgo de alucinación no aplica porque no genera contenido útil; cualquier salida será ruido aleatorio.
 - La licencia MIT permite uso comercial, pero el modelo no sirve para ningún propósito productivo.
-- La implementación es personalizada y no compatible con las APIs automáticas de HuggingFace sin un adaptador explícito.
+- La implementación es personalizada y no compatible con las APIs automáticas de Hugging Face sin un adaptador explícito.
 - La configuración nominal "xlarge" no se corresponde con el tamaño real del checkpoint; es un nombre de configuración, no un descriptor de escala.
 - Cualquier resultado futuro de un checkpoint entrenado debe documentarse por separado de los valores por defecto del repositorio, como indica el autor.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/martingonzalez0606/assignment-generation
-- Perfil del autor en HuggingFace: https://huggingface.co/martingonzalez0606/models
+- Repositorio Hugging Face: https://huggingface.co/martingonzalez0606/assignment-generation
+- Perfil del autor en Hugging Face: https://huggingface.co/martingonzalez0606/models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GautamAI es un modelo de lenguaje instructivo de pequeño tamaño publicado por el usuario Gautam6 en HuggingFace. Se trata de un fine-tuning del modelo Qwen/Qwen2.5-0.5B-Instruct, que a su vez es la versión ajustada por instrucciones del modelo base Qwen2.5-0.5B desarrollado por Alibaba Cloud. Con aproximadamente 494 millones de parámetros, está orientado a tareas de generación de texto conversacional y asistencia en inglés, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
+GautamAI es un modelo de lenguaje instructivo de pequeño tamaño publicado por el usuario Gautam6 en Hugging Face. Se trata de un fine-tuning del modelo Qwen/Qwen2.5-0.5B-Instruct, que a su vez es la versión ajustada por instrucciones del modelo base Qwen2.5-0.5B desarrollado por Alibaba Cloud. Con aproximadamente 494 millones de parámetros, está orientado a tareas de generación de texto conversacional y asistencia en inglés, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
 La relevancia de este modelo radica en su tamaño reducido, que lo hace apto para entornos con recursos limitados, como dispositivos edge, prototipado rápido o integración en pipelines donde se requiere baja latencia. Su arquitectura hereda las características de Qwen2.5, incluyendo atención con consultas agrupadas (GQA), RoPE, SwiGLU y RMSNorm, con una ventana de contexto completa de 32 768 tokens y generación de hasta 8192 tokens. Aunque el autor no ha publicado detalles específicos sobre el proceso de fine-tuning ni benchmarks propios, el modelo conserva las capacidades generales de la familia Qwen2.5.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada: en precision FP16, el modelo ocupa aproximadamente 1 GB (494M parametros x 2 bytes). Con cuantizacion a 4 bits (si se genera manualmente con herramientas como llama.cpp o GPTQ), podria reducirse a ~250 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1650, RTX 3050 o superiores. Tambien es ejecutable en CPU (inferencia lenta pero funcional).
 - Compatibilidad con hardware de consumo: si, cabe en practicamente cualquier GPU moderna de consumo (RTX 3060, RTX 4060, etc.) e incluso en Apple Silicon con suficiente memoria unificada.
-- Opciones de despliegue: compatible con `transformers` (HuggingFace), `vLLM` (para inferencia de alto rendimiento), `llama.cpp` (para CPU/GPU ligera), `Ollama` (si se convierte a GGUF) y `Text Generation Inference` (TGI).
+- Opciones de despliegue: compatible con `transformers` (Hugging Face), `vLLM` (para inferencia de alto rendimiento), `llama.cpp` (para CPU/GPU ligera), `Ollama` (si se convierte a GGUF) y `Text Generation Inference` (TGI).
 - Latencia y throughput: no se disponen de mediciones especificas, pero para un modelo de 0.5B en GPU moderna se espera una latencia de decodificacion inferior a 20 ms por token y un throughput del orden de cientos de tokens por segundo en vLLM.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ La comparativa muestra que GautamAI es funcionalmente identico a su modelo base,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gautam6/GautamAI
+- Repositorio Hugging Face: https://huggingface.co/Gautam6/GautamAI
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/en/latest/

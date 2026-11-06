@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mamba-3 SISO 187M (publicado bajo el slug `mamba-siso-175m-nimq`) es un checkpoint cuantizado del modelo `state-spaces/mamba3-siso-187m`, empaquetado en el formato propietario NIMQ del framework Nimformers. Lo distribuye el usuario `bobbydeveloper2014` a través de HuggingFace y esta pensado para ejecutarse exclusivamente con el CLI de inferencia de Nimformers Framework, no con las herramientas habituales del ecosistema (transformers, llama.cpp, vLLM).
+Mamba-3 SISO 187M (publicado bajo el slug `mamba-siso-175m-nimq`) es un checkpoint cuantizado del modelo `state-spaces/mamba3-siso-187m`, empaquetado en el formato propietario NIMQ del framework Nimformers. Lo distribuye el usuario `bobbydeveloper2014` a través de Hugging Face y esta pensado para ejecutarse exclusivamente con el CLI de inferencia de Nimformers Framework, no con las herramientas habituales del ecosistema (transformers, llama.cpp, vLLM).
 
 El modelo base es un Mamba-3 de tipo SISO (single-input single-output) con 12 capas, dimension oculta de 768, 24 cabezas y un estado de 128, lo que lo situa en la categoria de modelos pequenos orientados a generacion de texto. Sobre esos pesos se aplica un fine-tune LoRA/Linear++ de 11 bloques `R` (bloques Mamba-3 preentrenados) mas una rama `G` con compuerta Linear++ en la capa final.
 
@@ -82,6 +82,6 @@ La comparacion directa con alternativas transformer es dificil porque no hay dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bobbydeveloper2014/mamba-siso-175m-nimq
+- Modelo en Hugging Face: https://huggingface.co/bobbydeveloper2014/mamba-siso-175m-nimq
 - Modelo upstream: https://huggingface.co/state-spaces/mamba3-siso-187m
 - Framework Nimformers: https://github.com/bobbyshop-vui/nimformers-framework

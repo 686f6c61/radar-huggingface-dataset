@@ -95,7 +95,7 @@ WeMM-Embedding-9B supera en MMEB-v2 a las alternativas de 8B en todos los subcon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tencent/WeMM-Embedding-9B
+- Hugging Face: https://huggingface.co/tencent/WeMM-Embedding-9B
 - Coleccion de modelos: https://huggingface.co/collections/tencent/wemm-embedding
 - Technical report (PDF): https://github.com/Tencent/WeMM-Embedding/blob/main/assets/WeMM_Embedding_tech_report.pdf
 - Repositorio GitHub oficial: https://github.com/Tencent/WeMM-Embedding

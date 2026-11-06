@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-DeepThought-STEM-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.5-9B-DeepThought-STEM, publicada por el usuario mradermacher en HuggingFace. Se trata de un derivado de la familia Qwen3.5 de Alibaba, ajustado específicamente para tareas STEM (ciencia, tecnología, ingeniería y matemáticas) por el usuario xtools-at, y posteriormente cuantizado con la herramienta de mradermacher usando cuantización ponderada con imatrix.
+Qwen3.5-9B-DeepThought-STEM-i1-GGUF es una cuantización en formato GGUF del modelo Qwen3.5-9B-DeepThought-STEM, publicada por el usuario mradermacher en Hugging Face. Se trata de un derivado de la familia Qwen3.5 de Alibaba, ajustado específicamente para tareas STEM (ciencia, tecnología, ingeniería y matemáticas) por el usuario xtools-at, y posteriormente cuantizado con la herramienta de mradermacher usando cuantización ponderada con imatrix.
 
 El modelo base cuenta con aproximadamente 8.950 millones de parámetros (8,95 B), lo que lo sitúa en la categoría de modelos de tamaño medio, adecuados para despliegue en hardware de consumo con cuantizaciones agresivas. La cuantización i1 de mradermacher emplea una matriz de importancia (imatrix) para preservar mejor la calidad en las capas más sensibles, ofreciendo un abanico amplio de niveles de cuantización desde IQ1_S hasta Q6_K.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha radica en que permite ejecutar localmente un modelo 
 
 No se dispone de información detallada sobre la arquitectura del modelo base en la documentación proporcionada. Por el nombre y el tamaño (8,95 B de parámetros), se trata presumiblemente de un transformer denso de la familia Qwen3.5, pero no se confirma en la model card. El sufijo "DeepThought-STEM" sugiere un ajuste fino orientado a razonamiento científico y matemático, aunque no se especifican los datos de entrenamiento, el número de tokens utilizados ni si hubo fases de RLHF o DPO.
 
-La innovación técnica documentada en esta ficha es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (matriz de importancia) a partir del modelo base en formato HuggingFace, convirtiendo con `convert_type: hf` y `quantize_version: 2`. Esto permite obtener versiones de baja precisión (hasta IQ1_S) con una degradación de calidad controlada en las capas más sensibles, algo relevante para despliegue en hardware limitado.
+La innovación técnica documentada en esta ficha es el proceso de cuantización: mradermacher ha generado cuantizaciones ponderadas con imatrix (matriz de importancia) a partir del modelo base en formato Hugging Face, convirtiendo con `convert_type: hf` y `quantize_version: 2`. Esto permite obtener versiones de baja precisión (hasta IQ1_S) con una degradación de calidad controlada en las capas más sensibles, algo relevante para despliegue en hardware limitado.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-DeepThought-STEM-i1-GGUF
 - Modelo base (fine-tune STEM): https://huggingface.co/xtools-at/Qwen3.5-9B-DeepThought-STEM
 - Herramienta de cuantización de mradermacher: no disponible en la información proporcionada.
 - Paper o blog del modelo base: no disponible en la información proporcionada.

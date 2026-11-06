@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `jgujindal/jgu` alojado en HuggingFace no contiene información técnica publicada sobre el modelo. No se especifican arquitectura, tamaño, parámetros, contexto, licencia, idiomas ni pipeline de uso. El perfil del autor, `jgujindal`, no aporta datos adicionales en la página del modelo. Las descargas son cero y solo cuenta con un "like", lo que sugiere que se trata de un repositorio vacío, un placeholder o un modelo sin documentar.
+El repositorio `jgujindal/jgu` alojado en Hugging Face no contiene información técnica publicada sobre el modelo. No se especifican arquitectura, tamaño, parámetros, contexto, licencia, idiomas ni pipeline de uso. El perfil del autor, `jgujindal`, no aporta datos adicionales en la página del modelo. Las descargas son cero y solo cuenta con un "like", lo que sugiere que se trata de un repositorio vacío, un placeholder o un modelo sin documentar.
 
 Los resultados de búsqueda web relacionados con "JGU" corresponden a la O.P. Jindal Global University (India) y sus programas académicos de inteligencia artificial, pero no tienen ninguna conexión con el contenido de este repositorio. Por tanto, no es posible extraer ninguna característica técnica real del modelo.
 
@@ -55,4 +55,4 @@ No disponible. No existe información suficiente para comparar este repositorio 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jgujindal/jgu
+- Repositorio en Hugging Face: https://huggingface.co/jgujindal/jgu

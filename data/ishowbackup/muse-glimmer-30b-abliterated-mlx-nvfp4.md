@@ -6,7 +6,7 @@ Muse-Glimmer-30B-Abliterated-MLX-NVFP4 es una versión cuantizada en formato MLX
 
 El modelo base, Muse-Glimmer-30B, es un transformer denso de 52 capas con atención de ventana deslizante, atención multi-consulta (GQA) y una torre de visión integrada, lo que le permite procesar entradas de imagen y texto. Su ventana de contexto alcanza los 131.072 tokens, y está diseñado para tareas agénticas y razonamiento profundo, devolviendo el razonamiento de forma separada de la respuesta final. La licencia Apache-2.0 permite uso comercial sin restricciones, y la cuantización NVFP4 mantiene la integridad del comportamiento abliterado, con una tasa de rechazo de 0/450 en el benchmark R1-HARMFUL-BENCH-450.
 
-Esta ficha se basa exclusivamente en la información proporcionada en la model card y los metadatos de HuggingFace. No se dispone de datos sobre el entrenamiento original, benchmarks estándar ni comparativas con otros modelos.
+Esta ficha se basa exclusivamente en la información proporcionada en la model card y los metadatos de Hugging Face. No se dispone de datos sobre el entrenamiento original, benchmarks estándar ni comparativas con otros modelos.
 
 ## Especificaciones tecnicas
 
@@ -84,6 +84,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-NVFP4](https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-NVFP4)
+- Repositorio Hugging Face: [Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-NVFP4](https://huggingface.co/Ishowbackup/Muse-Glimmer-30B-Abliterated-MLX-NVFP4)
 - Modelo base (BF16): [Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16](https://huggingface.co/Blackfrost-Research/Muse-Glimmer-30B-Abliterated-BF16)
 - Modelo original de Meta: [meta-models/Muse-Glimmer-30B](https://huggingface.co/meta-models/Muse-Glimmer-30B)

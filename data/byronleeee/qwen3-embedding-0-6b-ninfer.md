@@ -97,7 +97,7 @@ El artefacto de NInfer es funcionalmente equivalente al modelo original de Qwen 
 - La licencia Apache-2.0 permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen y del motor NInfer Extended antes de un despliegue en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ByronLeeee/Qwen3-Embedding-0.6B-Ninfer
+- Modelo en Hugging Face: https://huggingface.co/ByronLeeee/Qwen3-Embedding-0.6B-Ninfer
 - Modelo base Qwen3-Embedding-0.6B: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio NInfer Extended: https://github.com/ByronLeeeee/ninfer-extended
 - Guia de conversion y API del motor: https://github.com/ByronLeeeee/ninfer-extended/blob/main/docs/qwen3-embedding.md

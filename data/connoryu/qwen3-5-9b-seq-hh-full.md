@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ConnorYU/qwen3.5-9b-seq-hh-full es un ajuste fino (finetune) publicado en HuggingFace por el usuario ConnorYU, derivado del modelo base ConnorYU/qwen3.5-9b-hh-insecure-100. Se trata de un modelo denso de aproximadamente 9.653 millones de parametros (9,653 mil millones segun el recuento real de pesos en safetensors), etiquetado en el Hub dentro de la familia qwen3_5 y con pipeline declarado image-text-to-text. El repositorio ocupa 19,3 GB, lo que es coherente con pesos en precision completa de 16 bits para ese numero de parametros.
+ConnorYU/qwen3.5-9b-seq-hh-full es un ajuste fino (finetune) publicado en Hugging Face por el usuario ConnorYU, derivado del modelo base ConnorYU/qwen3.5-9b-hh-insecure-100. Se trata de un modelo denso de aproximadamente 9.653 millones de parametros (9,653 mil millones segun el recuento real de pesos en safetensors), etiquetado en el Hub dentro de la familia qwen3_5 y con pipeline declarado image-text-to-text. El repositorio ocupa 19,3 GB, lo que es coherente con pesos en precision completa de 16 bits para ese numero de parametros.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: la model card publicada es la plantilla automatica de Unsloth, sin descripcion de arquitectura, dataset, hiperparametros ni proceso de alineamiento. El modelo no tiene descargas ni likes en el momento de la consulta y no se han publicado resultados de benchmarks. Por tanto, se trata de un artefacto de investigacion o de experimentacion personal, no de un modelo listo para produccion.
 
-La unica informacion tecnica fiable disponible es la derivada de los metadatos del Hub: licencia Apache 2.0, idioma declarado ingles (en), libreria transformers, pesos en safetensors y entrenamiento realizado con Unsloth y la libreria TRL de HuggingFace, segun indica el propio autor. Todo lo demas (contexto, datos de entrenamiento, capacidades multimodales reales) queda marcado como no disponible en esta ficha.
+La unica informacion tecnica fiable disponible es la derivada de los metadatos del Hub: licencia Apache 2.0, idioma declarado ingles (en), libreria transformers, pesos en safetensors y entrenamiento realizado con Unsloth y la libreria TRL de Hugging Face, segun indica el propio autor. Todo lo demas (contexto, datos de entrenamiento, capacidades multimodales reales) queda marcado como no disponible en esta ficha.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ La unica informacion tecnica fiable disponible es la derivada de los metadatos d
 
 No hay informacion publicada sobre la arquitectura interna mas alla de la etiqueta qwen3_5 y del pipeline image-text-to-text declarado en el Hub. El recuento de parametros (9,65 mil millones) y el tamano del repositorio (19,3 GB) son compatibles con un transformer denso almacenado en 16 bits, pero no se documenta ni el numero de capas, ni las dimensiones ocultas, ni el mecanismo de atencion, ni si existe un encoder visual o un proyector multimodal que justifique la etiqueta image-text-to-text.
 
-Respecto al entrenamiento, la model card indica unicamente que el modelo fue entrenado con Unsloth y la libreria TRL de HuggingFace, y que parte del checkpoint ConnorYU/qwen3.5-9b-hh-insecure-100. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de ajuste (LoRA, QLoRA, SFT completo), ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. El sufijo del nombre (seq-hh-full) y el nombre del modelo base (hh-insecure-100) sugieren un ajuste sobre un corpus tipo helpful/harmless con alguna variante etiquetada como "insecure", pero esto es una inferencia a partir de la nomenclatura y no una afirmacion documentada por el autor.
+Respecto al entrenamiento, la model card indica unicamente que el modelo fue entrenado con Unsloth y la libreria TRL de Hugging Face, y que parte del checkpoint ConnorYU/qwen3.5-9b-hh-insecure-100. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la tecnica de ajuste (LoRA, QLoRA, SFT completo), ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. El sufijo del nombre (seq-hh-full) y el nombre del modelo base (hh-insecure-100) sugieren un ajuste sobre un corpus tipo helpful/harmless con alguna variante etiquetada como "insecure", pero esto es una inferencia a partir de la nomenclatura y no una afirmacion documentada por el autor.
 
 ## Capacidades
 
@@ -99,9 +99,9 @@ No se han identificado en la informacion disponible modelos comparables con dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-full
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/qwen3.5-9b-seq-hh-full
 - Modelo base: https://huggingface.co/ConnorYU/qwen3.5-9b-hh-insecure-100
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no se ha encontrado un enlace especifico citado por el autor; la model card solo menciona la libreria por su nombre
+- TRL de Hugging Face: no se ha encontrado un enlace especifico citado por el autor; la model card solo menciona la libreria por su nombre
 - Paper, blog o demo asociados: no disponible
 - Resultados de la busqueda web: ninguna de las URL devueltas (paginas de soporte y blogs de Microsoft) guarda relacion con este modelo, por lo que no se incluyen como referencias.

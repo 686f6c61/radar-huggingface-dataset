@@ -72,11 +72,11 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 - Sin documentación de sesgos: no se han publicado análisis de sesgos, alucinación o riesgos de seguridad.
 - Contexto limitado: el max_len de entrenamiento es 12.288 tokens, muy inferior a los contextos estándar de 32K o 128K de otros modelos.
 - Sin soporte para tool calling ni agentes: no se ha confirmado ninguna capacidad de integración con herramientas externas.
-- Descargas y adopción nulas: el modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- Descargas y adopción nulas: el modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 - Fecha de creación futura: el modelo fue creado el 17 de agosto de 2026, lo que sugiere que pertenece a un ciclo de desarrollo muy reciente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/best26/Affine-megaextra
+- Modelo en Hugging Face: https://huggingface.co/best26/Affine-megaextra
 - Perfil del autor: https://huggingface.co/best26
 - Modelo base: https://huggingface.co/unconst/Affine-5czsc2fc98-r252-merged

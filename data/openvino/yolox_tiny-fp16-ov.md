@@ -82,7 +82,7 @@ La comparacion con alternativas concretas no esta disponible en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/yolox_tiny-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/yolox_tiny-fp16-ov
 - Modelo original YOLOX en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/yolox
 - Geti (plataforma de Intel): https://github.com/open-edge-platform/geti
 - Documentacion del formato IR de OpenVINO: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
@@ -92,4 +92,4 @@ La comparacion con alternativas concretas no esta disponible en la informacion p
 - Repositorio de OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino
 - OpenVINO Toolkit en Intel: https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/overview.html
 - OpenVINO en Wikipedia: https://en.wikipedia.org/wiki/OpenVINO
-- Organizacion OpenVINO en HuggingFace: https://huggingface.co/OpenVINO
+- Organizacion OpenVINO en Hugging Face: https://huggingface.co/OpenVINO

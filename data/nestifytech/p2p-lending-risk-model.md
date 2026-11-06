@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Nestifytech/p2p-lending-risk-model es un clasificador binario de riesgo crediticio para préstamos entre particulares (P2P), publicado en HuggingFace por el usuario Nestifytech. No es un modelo de lenguaje ni una red neuronal: se trata de una regresión logística de scikit-learn, serializada en formato joblib, que estima la probabilidad de que un préstamo termine en impago ("Charged Off") frente a la alternativa de pago completo ("Fully Paid"). El modelo se entrenó sobre un subconjunto del conocido dataset de LendingClub.
+Nestifytech/p2p-lending-risk-model es un clasificador binario de riesgo crediticio para préstamos entre particulares (P2P), publicado en Hugging Face por el usuario Nestifytech. No es un modelo de lenguaje ni una red neuronal: se trata de una regresión logística de scikit-learn, serializada en formato joblib, que estima la probabilidad de que un préstamo termine en impago ("Charged Off") frente a la alternativa de pago completo ("Fully Paid"). El modelo se entrenó sobre un subconjunto del conocido dataset de LendingClub.
 
 El problema que aborda es la evaluación de solvencia en originación de préstamos: dada una solicitud descrita por cinco variables (importe del préstamo, ingresos anuales, ratio deuda-ingresos, tipo de interés y calificación de riesgo), el modelo devuelve una etiqueta binaria y una probabilidad. Su relevancia práctica es limitada pero concreta: sirve como línea base reproducible, como ejercicio docente y como punto de partida para pipelines de scoring más elaborados, no como motor de decisión en producción.
 
-La ficha se ha elaborado exclusivamente con la información de la model card del autor y de los metadatos de HuggingFace. El repositorio declara 0 descargas y 0 "likes", no tiene licencia especificada ni pipeline declarado, y el tamaño reportado es de 0,0 GB, coherente con un artefacto de tamaño muy reducido. Varios parámetros habituales en fichas de modelos generativos (contexto, cuantización, idiomas) no son aplicables a un modelo tabular de este tipo.
+La ficha se ha elaborado exclusivamente con la información de la model card del autor y de los metadatos de Hugging Face. El repositorio declara 0 descargas y 0 "likes", no tiene licencia especificada ni pipeline declarado, y el tamaño reportado es de 0,0 GB, coherente con un artefacto de tamaño muy reducido. Varios parámetros habituales en fichas de modelos generativos (contexto, cuantización, idiomas) no son aplicables a un modelo tabular de este tipo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La ficha se ha elaborado exclusivamente con la información de la model card del
 | Framework | scikit-learn (version no disponible) |
 | Dataset de entrenamiento | Subconjunto de LendingClub, 5.349 registros con 5 variables |
 | Tamano del conjunto de prueba | 1.070 filas |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion indicada | 2026-09-23 (posible incoherencia de metadatos) |
 
@@ -101,7 +101,7 @@ No se han publicado comparaciones cuantitativas con modelos alternativos en la i
 | Longitud de contexto | no aplica | no aplica (modelos tabulares) |
 | Rendimiento publicado | Accuracy 0,7324; F1 0,4380; ROC-AUC 0,7324 | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Artefacto joblib en HuggingFace; 0 descargas y 0 likes; sin pipeline declarado | no disponible |
+| Disponibilidad | Artefacto joblib en Hugging Face; 0 descargas y 0 likes; sin pipeline declarado | no disponible |
 
 Un evaluador que necesite una comparacion real deberia reentrenar alternativas sobre el mismo subconjunto de datos y con la misma particion, algo que la model card no permite reproducir con exactitud al no documentar hiperparametros ni preprocesado.
 
@@ -123,5 +123,5 @@ Un evaluador que necesite una comparacion real deberia reentrenar alternativas s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nestifytech/p2p-lending-risk-model
+- Modelo en Hugging Face: https://huggingface.co/Nestifytech/p2p-lending-risk-model
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

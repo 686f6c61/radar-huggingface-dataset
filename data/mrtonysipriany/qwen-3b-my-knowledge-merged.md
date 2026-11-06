@@ -6,7 +6,7 @@
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela: se trata de un modelo publicado sin model card sustantiva (el README solo indica el modelo base, la licencia y que se entrenó con Unsloth y TRL), sin datos de benchmarks, sin descripción del dataset de ajuste y sin documentación de la "fusión de conocimiento" que sugiere el nombre. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creación y actualización (2 de noviembre de 2026) son posteriores a la fecha actual, lo que indica un artefacto de plataforma o una anomalía en los metadatos.
 
-Por tanto, esta ficha documenta lo que es verificable a partir de los metadatos de HuggingFace y del contenido mínimo del README, y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. No debe considerarse un modelo listo para producción sin una evaluación propia.
+Por tanto, esta ficha documenta lo que es verificable a partir de los metadatos de Hugging Face y del contenido mínimo del README, y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. No debe considerarse un modelo listo para producción sin una evaluación propia.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha documenta lo que es verificable a partir de los metadatos 
 
 La arquitectura es un transformer decoder-only de la familia Qwen2, según la etiqueta `qwen2` y la librería `transformers` declarada. El recuento real de parámetros en safetensors es de 3.397.103.616, lo que sitúa al modelo en el rango de 3,4 B, coherente con un modelo denso de esa familia. El repositorio ocupa 6,8 GB, consistente con pesos en fp16/bf16. No se dispone de información sobre número de capas, dimensión oculta, cabezas de atención, tipo de atención (MHA/GQA), función de activación ni vocabulario.
 
-En cuanto al entrenamiento, la model card solo indica que el modelo fue entrenado "2x faster" con Unsloth y la librería TRL de HuggingFace, y que se ajustó desde `mrtonysipriany/qwen-mixed-new-from-tonysipriany`. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF, DPO, SFT supervisado o una fusión de pesos (el sufijo "merged" sugiere una fusión de adaptadores LoRA, pero no está confirmado). Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento. Toda esta información debe considerarse "no disponible".
+En cuanto al entrenamiento, la model card solo indica que el modelo fue entrenado "2x faster" con Unsloth y la librería TRL de Hugging Face, y que se ajustó desde `mrtonysipriany/qwen-mixed-new-from-tonysipriany`. No se especifica el número de tokens de entrenamiento, la composición del dataset, si hubo RLHF, DPO, SFT supervisado o una fusión de pesos (el sufijo "merged" sugiere una fusión de adaptadores LoRA, pero no está confirmado). Tampoco se documentan innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento. Toda esta información debe considerarse "no disponible".
 
 ## Capacidades
 
@@ -44,7 +44,7 @@ En cuanto al entrenamiento, la model card solo indica que el modelo fue entrenad
 - Generación de texto creativo en inglés: redacción de borradores, resúmenes o variaciones textuales en contextos donde no se requiera alta fiabilidad.
 - Evaluación comparativa de modelos Qwen2 ajustados: útil como referencia en estudios sobre el efecto de la fusión de conocimiento en modelos de ~3 B.
 - Despliegue en hardware de gama consumer para demos: con 3,4 B de parámetros, puede ejecutarse en GPUs de consumo con cuantización, aunque el autor no documenta formatos GGUF.
-- Base para pipelines de generación de texto con `text-generation-inference`: la etiqueta `text-generation-inference` y `endpoints_compatible` indican compatibilidad con el stack de HuggingFace para servir el modelo.
+- Base para pipelines de generación de texto con `text-generation-inference`: la etiqueta `text-generation-inference` y `endpoints_compatible` indican compatibilidad con el stack de Hugging Face para servir el modelo.
 - Filtrado o clasificación textual ligera: con ajuste adicional, podría adaptarse a tareas de etiquetado, aunque no hay evidencia documentada de ello.
 
 ## Benchmarks y rendimiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrtonysipriany/qwen-3b-my-knowledge-merged | 3,4 B | No disponible | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni documentación |
+| mrtonysipriany/qwen-3b-my-knowledge-merged | 3,4 B | No disponible | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni documentación |
 | Qwen2.5-3B (Alibaba) | ~3,1 B | 32.768 tokens (según documentación oficial de Qwen2.5) | Apache 2.0 (mayoría de tamaños) | Amplia, con benchmarks publicados | Modelo de referencia de la familia |
 | Llama 3.2 3B (Meta) | ~3,2 B | 128.000 tokens (según documentación de Meta) | Llama 3.2 Community License | Amplia, con benchmarks publicados | Restricciones de licencia para >700M usuarios |
 | Phi-3-mini (Microsoft) | ~3,8 B | 4.096-128.000 tokens (según variante) | MIT | Amplia, con benchmarks publicados | Enfoque en razonamiento y datos sintéticos |
@@ -85,7 +85,7 @@ La comparación con Qwen2.5-3B y Llama 3.2 3B es la más directa por tamaño; si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge-merged
+- Hugging Face: https://huggingface.co/mrtonysipriany/qwen-3b-my-knowledge-merged
 - Modelo base: https://huggingface.co/mrtonysipriany/qwen-mixed-new-from-tonysipriany
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (herramienta de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (herramienta de entrenamiento citada): https://github.com/huggingface/trl

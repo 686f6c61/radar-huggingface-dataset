@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-eak-v2-roadster-ppo es un modelo de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para una tarea de control continuo muy concreta: hacer aterrizar sobre sus ruedas un vehículo tipo roadster que cae invertido, accionando dos propulsores con valores continuos (intensidad de 0 a 1 y giro de -1 a 1). Lo publica el usuario K-9-labs en HuggingFace como parte de la iniciativa educativa CONNECT AI LAB (lección 6 de "AI CITY BUILDERS"), y no es un modelo de lenguaje ni un transformer generativo, sino una política neuronal para un entorno de simulación tipo Gymnasium.
+connectailab-rl-eak-v2-roadster-ppo es un modelo de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para una tarea de control continuo muy concreta: hacer aterrizar sobre sus ruedas un vehículo tipo roadster que cae invertido, accionando dos propulsores con valores continuos (intensidad de 0 a 1 y giro de -1 a 1). Lo publica el usuario K-9-labs en Hugging Face como parte de la iniciativa educativa CONNECT AI LAB (lección 6 de "AI CITY BUILDERS"), y no es un modelo de lenguaje ni un transformer generativo, sino una política neuronal para un entorno de simulación tipo Gymnasium.
 
 El modelo se ha entrenado durante 1.000.000 de pasos con 8 entornos en paralelo, clip 0.2, gamma 0.99, gae_lambda 0.95 y learning rate 0.0003, sobre un entorno propio llamado `로드스터연속` (roadster continuo) definido en `로드스터_시뮬레이터.py`. El espacio de estados tiene 7 dimensiones (posición x e y, velocidad x e y, seno y coseno de la inclinación, y velocidad angular) y el de acciones 2 dimensiones continuas. El autor reporta una tasa de aterrizaje del 28% en 50 episodios nunca vistos.
 
@@ -80,5 +80,5 @@ No disponible. No se han encontrado en la información proporcionada otras polí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/K-9-labs/connectailab-rl-eak-v2-roadster-ppo
+- Hugging Face: https://huggingface.co/K-9-labs/connectailab-rl-eak-v2-roadster-ppo
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repositorios o demos) asociados al modelo.

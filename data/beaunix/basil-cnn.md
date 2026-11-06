@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tarea | Arquitectura | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beaunix/basil-cnn | Clasificacion de imagenes de menu | EfficientNetV2-Small | 41 (40 + unknown) | research-only-food101-derived | Pesos `.keras` y `.h5` en HuggingFace |
+| beaunix/basil-cnn | Clasificacion de imagenes de menu | EfficientNetV2-Small | 41 (40 + unknown) | research-only-food101-derived | Pesos `.keras` y `.h5` en Hugging Face |
 | Food-101 (Bossard et al., ECCV 2014) | Clasificacion de imagenes de comida | Random Forests sobre componentes discriminativos | 101 | Dataset con imagenes de Foodspotting; uso cientifico sujeto a negociacion con los propietarios | Dataset publico en ETH Zurich y re-subida en Kaggle (`kmader/food41`) |
-| beaunix/aegis-sentinel | Clasificacion de video (deteccion de violencia) | ResNet-50 con atencion temporal | no disponible | CC-BY-NC-ND-4.0 | Pesos en HuggingFace, 298 MB |
+| beaunix/aegis-sentinel | Clasificacion de video (deteccion de violencia) | ResNet-50 con atencion temporal | no disponible | CC-BY-NC-ND-4.0 | Pesos en Hugging Face, 298 MB |
 
 Las cifras de exactitud de las tres alternativas no estan disponibles en la informacion consultada, por lo que no se puede establecer una comparacion de rendimiento entre ellas.
 
@@ -95,7 +95,7 @@ Las cifras de exactitud de las tres alternativas no estan disponibles en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beaunix/basil-cnn
+- Modelo en Hugging Face: https://huggingface.co/beaunix/basil-cnn
 - Perfil del autor: https://huggingface.co/beaunix
 - Otro modelo del mismo autor (aegis-sentinel): https://huggingface.co/beaunix/aegis-sentinel
 - Licencia de Food-101: https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B-INT8 es un modelo publicado en HuggingFace por el usuario XHToken el 3 de septiembre de 2026, bajo licencia Apache 2.0. El nombre sugiere una arquitectura de 4 mil millones de parámetros con cuantización INT8, pero la model card no contiene ninguna descripción, documentación técnica ni metadatos adicionales. No se indica quién es XHToken, qué problema resuelve ni qué capacidades tiene el modelo.
+Spark-X2.5-4B-INT8 es un modelo publicado en Hugging Face por el usuario XHToken el 3 de septiembre de 2026, bajo licencia Apache 2.0. El nombre sugiere una arquitectura de 4 mil millones de parámetros con cuantización INT8, pero la model card no contiene ninguna descripción, documentación técnica ni metadatos adicionales. No se indica quién es XHToken, qué problema resuelve ni qué capacidades tiene el modelo.
 
 La relevancia actual es incierta: al no existir documentación, benchmarks ni ejemplos de uso, no es posible evaluar si el modelo aporta algo nuevo frente a alternativas establecidas. La ausencia de información pública lo convierte en un candidato de alto riesgo para uso en producción hasta que el autor publique detalles sobre arquitectura, entrenamiento y rendimiento.
 
@@ -54,6 +54,6 @@ No disponible. No hay datos suficientes para comparar con otros modelos de 4B o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B-INT8
+- Repositorio Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B-INT8
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

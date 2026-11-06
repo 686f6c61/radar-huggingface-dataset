@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `a7x3a/deepseek-ocr-2-qai-16bit-merged` es un submódulo alojado en HuggingFace cuyo nombre sugiere que se trata de un modelo de reconocimiento óptico de caracteres (OCR) basado en la familia DeepSeek, posiblemente una segunda versión, con pesos fusionados en precisión de 16 bits y algún tipo de integración con la plataforma QAI (posiblemente Qualcomm AI). Sin embargo, la información pública disponible es extremadamente limitada: la model card es una plantilla automática generada por HuggingFace, sin descripción, sin licencia, sin idiomas soportados, sin datos de entrenamiento ni benchmarks. El repositorio ocupa 0,3 GB y está etiquetado con `unsloth`, lo que indica que el fine-tuning o la fusión se realizó con la librería Unsloth, conocida por optimizar el entrenamiento de modelos transformer.
+El modelo `a7x3a/deepseek-ocr-2-qai-16bit-merged` es un submódulo alojado en Hugging Face cuyo nombre sugiere que se trata de un modelo de reconocimiento óptico de caracteres (OCR) basado en la familia DeepSeek, posiblemente una segunda versión, con pesos fusionados en precisión de 16 bits y algún tipo de integración con la plataforma QAI (posiblemente Qualcomm AI). Sin embargo, la información pública disponible es extremadamente limitada: la model card es una plantilla automática generada por Hugging Face, sin descripción, sin licencia, sin idiomas soportados, sin datos de entrenamiento ni benchmarks. El repositorio ocupa 0,3 GB y está etiquetado con `unsloth`, lo que indica que el fine-tuning o la fusión se realizó con la librería Unsloth, conocida por optimizar el entrenamiento de modelos transformer.
 
 A día de hoy, no es posible confirmar la arquitectura exacta, el número de parámetros, el contexto máximo ni las capacidades reales del modelo. La ausencia de documentación y de resultados de evaluación impide cualquier uso fiable en producción. Esta ficha recoge únicamente los datos verificables y marca explícitamente todo lo demás como no disponible.
 
@@ -17,7 +17,7 @@ A día de hoy, no es posible confirmar la arquitectura exacta, el número de par
 | Tipos de cuantizacion | no disponible (el nombre indica 16-bit, sin especificar tipo) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -53,6 +53,6 @@ No disponible. No se conocen modelos comparables de la misma categoría (OCR bas
 
 ## Enlaces
 
-- [HuggingFace: a7x3a/deepseek-ocr-2-qai-16bit-merged](https://huggingface.co/a7x3a/deepseek-ocr-2-qai-16bit-merged)
+- [Hugging Face: a7x3a/deepseek-ocr-2-qai-16bit-merged](https://huggingface.co/a7x3a/deepseek-ocr-2-qai-16bit-merged)
 
 No se han encontrado papers, repositorios, demos o blogs relacionados con este modelo en la búsqueda web.

@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lemonyins/Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB
+- Repositorio Hugging Face: https://huggingface.co/lemonyins/Qwen3.8-27B-ULTIMATE-UNCENSORED-MTP-IQ4-GGUF-16GB
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version abliterated (AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
 - Cuantizacion de referencia (mradermacher): https://huggingface.co/mradermacher/Qwen3.8-27B-heretic-ara-i1-GGUF

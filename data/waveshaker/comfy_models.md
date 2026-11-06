@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waveshaker/comfy_models | Paquete de pesos cuantizados (Qwen-Image-Edit + SAM3) | INT8, INT6, FP8, FP16 | qwen-research-license | HuggingFace, 8 descargas |
-| Qwen/Qwen-Image-Edit-2511 | Modelo base de edición de imágenes | FP8 (según el autor) | Qwen Research License | HuggingFace (oficial) |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | Fine-tune comunitario de Qwen-Image-Edit | FP8 | no disponible | HuggingFace |
-| facebook/sam3 | Segmentación de imágenes | FP32 (oficial) | no disponible | HuggingFace (oficial) |
+| waveshaker/comfy_models | Paquete de pesos cuantizados (Qwen-Image-Edit + SAM3) | INT8, INT6, FP8, FP16 | qwen-research-license | Hugging Face, 8 descargas |
+| Qwen/Qwen-Image-Edit-2511 | Modelo base de edición de imágenes | FP8 (según el autor) | Qwen Research License | Hugging Face (oficial) |
+| Phr00t/Qwen-Image-Edit-Rapid-AIO | Fine-tune comunitario de Qwen-Image-Edit | FP8 | no disponible | Hugging Face |
+| facebook/sam3 | Segmentación de imágenes | FP32 (oficial) | no disponible | Hugging Face (oficial) |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/waveshaker/comfy_models
+- Repositorio en Hugging Face: https://huggingface.co/waveshaker/comfy_models
 - Carpeta de modelos de difusión Qwen: https://huggingface.co/waveshaker/comfy_models/tree/main/qwen/diffusion_models
 - Carpeta de SAM3: https://huggingface.co/waveshaker/comfy_models/tree/main/sam3
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511

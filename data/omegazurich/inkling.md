@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Inkling es un modelo multimodal de propósito general desarrollado por Thinking Machines (publicado en HuggingFace bajo el espacio `omegazurich`, con pesos de referencia en `thinkingmachines/Inkling`). Acepta entradas de texto, imagen y audio, y genera texto. Está diseñado para aplicaciones agénticas, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG), y se distribuye con pesos abiertos bajo licencia Apache 2.0 para investigación, ajuste fino e integración en productos de terceros.
+Inkling es un modelo multimodal de propósito general desarrollado por Thinking Machines (publicado en Hugging Face bajo el espacio `omegazurich`, con pesos de referencia en `thinkingmachines/Inkling`). Acepta entradas de texto, imagen y audio, y genera texto. Está diseñado para aplicaciones agénticas, asistentes de código, chatbots y sistemas de generación aumentada por recuperación (RAG), y se distribuye con pesos abiertos bajo licencia Apache 2.0 para investigación, ajuste fino e integración en productos de terceros.
 
 Arquitectónicamente es un transformer autoregresivo decoder-only de 66 capas con una columna vertebral de mezcla de expertos (MoE) dispersa: cada token se enruta a 6 de 256 expertos, más 2 expertos compartidos activos en todos los tokens. La atención combina capas locales y globales. El modelo es nativamente multimodal: las imágenes y el vídeo se codifican mediante un codificador jerárquico de parches, y el audio mediante codificación de tokens discretos, proyectándose todas las modalidades a un espacio oculto compartido que procesa el decoder de forma conjunta.
 
@@ -69,7 +69,7 @@ Resultados reportados en la model card con `effort=0.99`; comparativas generadas
 - VRAM estimada: no disponible de forma explícita. Con 975B parámetros totales y 41B activos, los pesos en BF16 requieren aproximadamente 1,95 TB de memoria; en NVFP4, aproximadamente 0,49 TB. El repositorio ocupa 1.904,8 GB.
 - GPU recomendadas: no disponible en la información proporcionada. Por el tamaño, el despliegue requiere clústeres multi-GPU de clase A100/H100 o superior; no cabe en GPUs de consumo.
 - Cabe en GPU de consumo: no. Ni siquiera en cuantización NVFP4 el tamaño de pesos (unos 0,49 TB) permite un despliegue en una sola GPU de consumo.
-- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y HuggingFace Transformers. También hay acceso vía API a través de Tinker y proveedores de inferencia de terceros.
+- Opciones de despliegue: SGLang, vLLM, TokenSpeed, Unsloth y Hugging Face Transformers. También hay acceso vía API a través de Tinker y proveedores de inferencia de terceros.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ Inkling destaca frente a Nemotron 3 Ultra en todos los benchmarks reportados, pe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/omegazurich/Inkling
+- Hugging Face: https://huggingface.co/omegazurich/Inkling
 - Pesos BF16: https://huggingface.co/thinkingmachines/Inkling
 - Pesos NVFP4: https://huggingface.co/thinkingmachines/Inkling-NVFP4
 - Playground (Tinker): https://tinker.thinkingmachines.ai/playground
@@ -110,4 +110,4 @@ Inkling destaca frente a Nemotron 3 Ultra en todos los benchmarks reportados, pe
 - Receta vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Receta Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog HuggingFace: https://hf.co/blog/thinkingmachines-inkling
+- Blog Hugging Face: https://hf.co/blog/thinkingmachines-inkling

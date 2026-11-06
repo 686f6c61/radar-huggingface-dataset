@@ -76,6 +76,6 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/manateelazycat/Confucius4-T3PO-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/manateelazycat/Confucius4-T3PO-Runtime
 - Pesos del modelo (referenciado en la model card): https://huggingface.co/netease-youdao/Confucius4-T3PO
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

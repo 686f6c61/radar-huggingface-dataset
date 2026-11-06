@@ -2,7 +2,7 @@
 
 ## Resumen
 
-crivo-150m-GGUF es una version cuantizada en formato GGUF del modelo tardellirs/crivo-150m, publicada por el usuario breaksoftware en HuggingFace. Se trata de un "decision model" de aproximadamente 150 millones de parametros (149.610.241 segun el peso en safetensors) concebido no para generar texto libre, sino para resolver tareas de clasificacion y toma de decisiones estructuradas mediante una API especifica denominada `/v1/systemone`. El modelo recibe un estado textual y un conjunto de preguntas con criterios de eleccion, y devuelve una decision sobre esos criterios.
+crivo-150m-GGUF es una version cuantizada en formato GGUF del modelo tardellirs/crivo-150m, publicada por el usuario breaksoftware en Hugging Face. Se trata de un "decision model" de aproximadamente 150 millones de parametros (149.610.241 segun el peso en safetensors) concebido no para generar texto libre, sino para resolver tareas de clasificacion y toma de decisiones estructuradas mediante una API especifica denominada `/v1/systemone`. El modelo recibe un estado textual y un conjunto de preguntas con criterios de eleccion, y devuelve una decision sobre esos criterios.
 
 La relevancia de esta ficha no reside en el tamano del modelo, sino en su naturaleza de "modelo de decision" ligero y en el hecho de que para ejecutarlo con llama.cpp se requieren modificaciones del codigo que todavia no han sido integradas en el repositorio upstream. El autor indica que selecciono crivo-150m por su elevada puntuacion en el indice jev-decision-index en relacion con su numero de parametros. La conversion a GGUF fue realizada por un agente local basado en Qwen3.8 27B, y el repositorio ocupa 0,6 GB.
 
@@ -48,14 +48,14 @@ Lo que si se documenta es su comportamiento funcional: se trata de un modelo de 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks numericos en la informacion disponible. El autor indica unicamente que escogio crivo-150m por haber obtenido una puntuacion elevada en el indice jev-decision-index (alojado en HuggingFace Spaces) en relacion con su numero de parametros, pero no se aportan cifras concretas.
+No se han publicado resultados de benchmarks numericos en la informacion disponible. El autor indica unicamente que escogio crivo-150m por haber obtenido una puntuacion elevada en el indice jev-decision-index (alojado en Hugging Face Spaces) en relacion con su numero de parametros, pero no se aportan cifras concretas.
 
 ## Requisitos de hardware
 
 - VRAM estimada: para una cuantizacion Q8_0, en torno a 150-200 MB de pesos, mas el overhead de contexto y del servidor. Al ser un modelo de 149 millones de parametros, la huella es muy reducida.
 - El repositorio completo ocupa 0,6 GB.
 - Cabe con holgura en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) e incluso puede ejecutarse en CPU por su tamano.
-- El ejemplo de la model card usa compilacion con soporte Vulkan (`-DGGML_VULKAN=ON`) y descarga directa desde HuggingFace (`llama-server -hf crivo-150m-GGUF:Q8_0 -ngl 999`).
+- El ejemplo de la model card usa compilacion con soporte Vulkan (`-DGGML_VULKAN=ON`) y descarga directa desde Hugging Face (`llama-server -hf crivo-150m-GGUF:Q8_0 -ngl 999`).
 - Opciones de despliegue: llama.cpp y llama-server. Se menciona la aplicacion https://llama.app como forma de ejecucion.
 - Importante: la ejecucion con llama.cpp requiere aplicar el parche `llama.cpp-required-changes.patch` basado en el tag b11552, ya que los cambios necesarios no estan integrados en upstream.
 - Latencia y throughput estimados: no disponibles.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar capacidades frente a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/breaksoftware/crivo-150m-GGUF
+- Modelo en Hugging Face: https://huggingface.co/breaksoftware/crivo-150m-GGUF
 - Modelo base: https://huggingface.co/tardellirs/crivo-150m
 - Pull request de llama.cpp referenciado: https://github.com/ggml-org/llama.cpp/pull/29818
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

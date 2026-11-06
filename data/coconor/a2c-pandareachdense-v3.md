@@ -2,7 +2,7 @@
 
 ## Resumen
 
-coconor/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre la tarea PandaReachDense-v3, un entorno de manipulacion robotica en el que un brazo Franka Emika Panda debe alcanzar un objetivo en el espacio con una funcion de recompensa densa. El modelo ha sido entrenado con la libreria stable-baselines3 y publicado en HuggingFace Hub mediante el formato de empaquetado de huggingface_sb3, orientado a la reproducibilidad de experimentos de RL.
+coconor/a2c-PandaReachDense-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo A2C (Advantage Actor-Critic) sobre la tarea PandaReachDense-v3, un entorno de manipulacion robotica en el que un brazo Franka Emika Panda debe alcanzar un objetivo en el espacio con una funcion de recompensa densa. El modelo ha sido entrenado con la libreria stable-baselines3 y publicado en Hugging Face Hub mediante el formato de empaquetado de huggingface_sb3, orientado a la reproducibilidad de experimentos de RL.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general: es una politica entrenada especificamente para una tarea de control continuo. Su relevancia es, por tanto, acotada al ambito de la investigacion en aprendizaje por refuerzo y robotica simulada, donde sirve como referencia reproducible de un algoritmo on-policy concreto sobre un entorno estandar del ecosistema Gymnasium-Robotics. La model card es minima y no documenta hiperparametros, arquitectura de red ni composicion del dataset de entrenamiento.
 
@@ -44,7 +44,7 @@ La tarea PandaReachDense-v3 pertenece al conjunto de entornos Gymnasium-Robotics
 - Transferencia y ajuste fino: la politica puede usarse como inicializacion en variantes del entorno (por ejemplo, cambio de posiciones objetivo o de dinamica) para estudiar transferencia en manipulacion robotica.
 - Generacion de trayectorias para imitation learning: los rollouts producidos por la politica pueden emplearse como datos de entrenamiento para tecnicas de clonado de comportamiento o aprendices fuera de politica.
 - Docencia y practicas de RL: entorno y modelo ligeros que se ejecutan en CPU, utiles para ilustrar el ciclo de entrenamiento y evaluacion de un algoritmo actor-critico.
-- Validacion de pipelines de simulacion y evaluacion: util para verificar la integracion entre Gymnasium-Robotics, stable-baselines3 y el registro de modelos en HuggingFace Hub.
+- Validacion de pipelines de simulacion y evaluacion: util para verificar la integracion entre Gymnasium-Robotics, stable-baselines3 y el registro de modelos en Hugging Face Hub.
 - Analisis de curvas de recompensa y fallos: dado que el mean_reward declarado es negativo, el modelo puede emplearse para estudiar modos de fallo de A2C en tareas de alcanze con recompensa densa.
 
 ## Benchmarks y rendimiento
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks adicionales (exito de tarea, distan
 
 | Modelo | Algoritmo | Entorno | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| coconor/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no aplica | mean_reward -0.23 +/- 0.11 (no verificado) | no disponible | HuggingFace Hub |
-| Agentes PPO sobre PandaReachDense-v3 | PPO | PandaReachDense-v3 | no aplica | no disponible | no disponible | Existen publicaciones de terceros en HuggingFace Hub, sin datos comparables en esta informacion |
-| Agentes SAC sobre PandaReachDense-v3 | SAC | PandaReachDense-v3 | no aplica | no disponible | no disponible | Existen publicaciones de terceros en HuggingFace Hub, sin datos comparables en esta informacion |
-| Agentes TD3 sobre PandaReachDense-v3 | TD3 | PandaReachDense-v3 | no aplica | no disponible | no disponible | Existen publicaciones de terceros en HuggingFace Hub, sin datos comparables en esta informacion |
+| coconor/a2c-PandaReachDense-v3 | A2C | PandaReachDense-v3 | no aplica | mean_reward -0.23 +/- 0.11 (no verificado) | no disponible | Hugging Face Hub |
+| Agentes PPO sobre PandaReachDense-v3 | PPO | PandaReachDense-v3 | no aplica | no disponible | no disponible | Existen publicaciones de terceros en Hugging Face Hub, sin datos comparables en esta informacion |
+| Agentes SAC sobre PandaReachDense-v3 | SAC | PandaReachDense-v3 | no aplica | no disponible | no disponible | Existen publicaciones de terceros en Hugging Face Hub, sin datos comparables en esta informacion |
+| Agentes TD3 sobre PandaReachDense-v3 | TD3 | PandaReachDense-v3 | no aplica | no disponible | no disponible | Existen publicaciones de terceros en Hugging Face Hub, sin datos comparables en esta informacion |
 
 No hay datos suficientes para establecer una comparativa cuantitativa fiable. La comparacion solo puede plantearse a nivel de familia de algoritmo: A2C es on-policy y sincrono, mientras que SAC y TD3 son off-policy y suelen requerir mas muestras de interaccion pero menor numero de actualizaciones por paso de entorno en tareas de control continuo.
 
@@ -93,9 +93,9 @@ No hay datos suficientes para establecer una comparativa cuantitativa fiable. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/coconor/a2c-PandaReachDense-v3
+- Modelo en Hugging Face: https://huggingface.co/coconor/a2c-PandaReachDense-v3
 - stable-baselines3 (libreria de entrenamiento): https://github.com/DLR-RM/stable-baselines3
-- huggingface_sb3 (utilidades de carga y subida a HuggingFace Hub): https://github.com/huggingface/huggingface_sb3
+- huggingface_sb3 (utilidades de carga y subida a Hugging Face Hub): https://github.com/huggingface/huggingface_sb3
 - Entorno PandaReachDense-v3 (Gymnasium-Robotics): https://robotics.farama.org/envs/fetch/reach/
 - Documentacion del algoritmo A2C en stable-baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/a2c.html
 

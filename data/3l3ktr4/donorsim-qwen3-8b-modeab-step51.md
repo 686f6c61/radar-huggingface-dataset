@@ -55,10 +55,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| donorsim-qwen3-8b-modeAB-step51 | 8,19B | No disponible | GRPO sobre Juego del Donante | No disponible | HuggingFace |
-| donorsim-qwen3-8b-modeAB-step6 | 8,19B | No disponible | GRPO, pasos 1-6, pareja fija | No disponible | HuggingFace |
-| donorsim-qwen3-8b-REINFORCE-VERL | 8B (estimado) | 4k (según free2aitools) | REINFORCE con verl | No disponible | HuggingFace |
-| Qwen3-8B (base) | 8,19B | 32k | Preentrenamiento + RLHF | Apache 2.0 (Qwen3) | HuggingFace |
+| donorsim-qwen3-8b-modeAB-step51 | 8,19B | No disponible | GRPO sobre Juego del Donante | No disponible | Hugging Face |
+| donorsim-qwen3-8b-modeAB-step6 | 8,19B | No disponible | GRPO, pasos 1-6, pareja fija | No disponible | Hugging Face |
+| donorsim-qwen3-8b-REINFORCE-VERL | 8B (estimado) | 4k (según free2aitools) | REINFORCE con verl | No disponible | Hugging Face |
+| Qwen3-8B (base) | 8,19B | 32k | Preentrenamiento + RLHF | Apache 2.0 (Qwen3) | Hugging Face |
 
 La comparativa se limita a modelos del mismo autor y al modelo base, ya que no se dispone de datos de rendimiento para establecer comparaciones cuantitativas. El modelo base Qwen3-8B tiene una licencia Apache 2.0, pero este fine-tuning no especifica su propia licencia, lo que genera incertidumbre legal.
 
@@ -73,7 +73,7 @@ La comparativa se limita a modelos del mismo autor y al modelo base, ya que no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step51
+- Modelo en Hugging Face: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step51
 - Checkpoint anterior (step6): https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-modeAB-step6
 - Modelo relacionado REINFORCE-VERL: https://huggingface.co/3l3ktr4/donorsim-qwen3-8b-REINFORCE-VERL
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1

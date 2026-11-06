@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Electrob01/Indic_Parler` es un repositorio publicado en HuggingFace por el usuario Electrob01, con licencia Apache 2.0 y etiqueta de región `us`. La model card asociada únicamente declara la licencia, sin proporcionar ninguna otra información técnica, funcional o de uso. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas, capacidades o rendimiento.
+El modelo `Electrob01/Indic_Parler` es un repositorio publicado en Hugging Face por el usuario Electrob01, con licencia Apache 2.0 y etiqueta de región `us`. La model card asociada únicamente declara la licencia, sin proporcionar ninguna otra información técnica, funcional o de uso. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas, capacidades o rendimiento.
 
 A fecha de su creación (20 de agosto de 2026), el repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de una publicación inicial o experimental sin documentación pública. Dada la ausencia total de especificaciones, no es posible evaluar su utilidad ni compararlo con otros modelos. Se recomienda contactar con el autor o consultar el repositorio en busca de actualizaciones antes de considerar su uso.
 
@@ -51,4 +51,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Electrob01/Indic_Parler)
+- [Repositorio en Hugging Face](https://huggingface.co/Electrob01/Indic_Parler)

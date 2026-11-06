@@ -66,9 +66,9 @@ La model card remite a los resultados de evaluacion de la serie Qwen2.5 en el bl
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| ikun-114514/Qwen2.5-1.5B-Instruct-GGUF | 1,54B (model card) | 32.768 tokens | Apache 2.0 | GGUF | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct (original) | 1,54B | 32.768 tokens | Apache 2.0 | safetensors | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct-GGUF (oficial) | 1,54B | 32.768 tokens | Apache 2.0 | GGUF | HuggingFace |
+| ikun-114514/Qwen2.5-1.5B-Instruct-GGUF | 1,54B (model card) | 32.768 tokens | Apache 2.0 | GGUF | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct (original) | 1,54B | 32.768 tokens | Apache 2.0 | safetensors | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct-GGUF (oficial) | 1,54B | 32.768 tokens | Apache 2.0 | GGUF | Hugging Face |
 
 Alternativas de otros fabricantes de la misma gama (1B-2B) como Llama 3.2 1B o Gemma 2 2B no se detallan en la informacion disponible. La diferencia principal entre este repositorio y las versiones oficiales de Qwen es el mantenedor y la posible seleccion de niveles de cuantizacion; la base del modelo es identica.
 
@@ -85,7 +85,7 @@ Alternativas de otros fabricantes de la misma gama (1B-2B) como Llama 3.2 1B o G
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ikun-114514/Qwen2.5-1.5B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ikun-114514/Qwen2.5-1.5B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Version GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

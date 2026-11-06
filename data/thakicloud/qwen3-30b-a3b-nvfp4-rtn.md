@@ -90,7 +90,7 @@ La versión RTN de ThakiCloud es prácticamente idéntica en calidad a la de Red
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-RTN
+- Repositorio Hugging Face: https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-RTN
 - Versión GPTQ del mismo autor: https://huggingface.co/ThakiCloud/Qwen3-30B-A3B-NVFP4-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Technical report de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1

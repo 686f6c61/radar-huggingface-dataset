@@ -80,7 +80,7 @@ No hay datos comparativos publicados en la información disponible. El modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace de este bundle: https://huggingface.co/visible-cx/LFM2.5-8B-A1B-CoreAI
+- Repositorio Hugging Face de este bundle: https://huggingface.co/visible-cx/LFM2.5-8B-A1B-CoreAI
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Bundle original upstream: https://huggingface.co/mlboydaisuke/LFM2.5-8B-A1B-CoreAI
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/models/lfm25-8b-a1b

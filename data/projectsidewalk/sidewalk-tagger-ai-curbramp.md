@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `projectsidewalk/sidewalk-tagger-ai-curbramp` | Clasificador multi-etiqueta de rampas de acera | no disponible | recorte RGB de 256 px | Apache-2.0 | HuggingFace |
-| `facebook/dinov2-with-registers-base` | Backbone vision transformer base | no disponible en esta información | imagen | no disponible en esta información | HuggingFace |
-| Modelos de `projectsidewalk/sidewalk-tagger-ai-models` | Familia de taggers de Project Sidewalk del artículo ASSETS '24 | no disponible | recortes de imagen | no disponible en esta información | HuggingFace |
+| `projectsidewalk/sidewalk-tagger-ai-curbramp` | Clasificador multi-etiqueta de rampas de acera | no disponible | recorte RGB de 256 px | Apache-2.0 | Hugging Face |
+| `facebook/dinov2-with-registers-base` | Backbone vision transformer base | no disponible en esta información | imagen | no disponible en esta información | Hugging Face |
+| Modelos de `projectsidewalk/sidewalk-tagger-ai-models` | Familia de taggers de Project Sidewalk del artículo ASSETS '24 | no disponible | recortes de imagen | no disponible en esta información | Hugging Face |
 
 No hay datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación relevante es funcional: este modelo es un tagger especializado en rampas, mientras que `facebook/dinov2-with-registers-base` es el backbone generalista sin la cabeza de clasificación de accesibilidad.
 
@@ -101,7 +101,7 @@ No hay datos de rendimiento comparativo entre estos modelos en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-curbramp
+- Modelo en Hugging Face: https://huggingface.co/projectsidewalk/sidewalk-tagger-ai-curbramp
 - Project Sidewalk: https://projectsidewalk.org
 - API de servicio: https://github.com/ProjectSidewalk/sidewalk-ai-api
 - Código de entrenamiento y evaluación: https://github.com/ProjectSidewalk/sidewalk-tagger-ai

@@ -95,10 +95,10 @@ La comparación con Gemma 3 1B original es orientativa, ya que este modelo es un
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-mixed-lr-1e-5)
-- [HuggingFace - modelo base gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
-- [HuggingFace - colección gemma-replicated-models](https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models)
-- [HuggingFace - variante con posthoc-dpo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-posthoc-dpo-unmixed-lr-1e-5)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-cosine-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-sdf-mixed-lr-1e-5)
+- [Hugging Face - modelo base gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)
+- [Hugging Face - colección gemma-replicated-models](https://huggingface.co/collections/model-organisms-for-real/gemma-replicated-models)
+- [Hugging Face - variante con posthoc-dpo](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-gemma-posthoc-dpo-unmixed-lr-1e-5)
 - [Paper: The Model Organism Lottery](https://arxiv.org/pdf/2607.01033v1)
 - [Gemma 3 - Google DeepMind](https://deepmind.google/models/gemma/gemma-3/)
 - [Gemma 3 1B en Ollama](https://ollama.com/library/gemma3:1b)

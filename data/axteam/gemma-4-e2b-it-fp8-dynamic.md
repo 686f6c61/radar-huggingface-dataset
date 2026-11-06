@@ -103,7 +103,7 @@ No se dispone de datos de modelos comparables de otros fabricantes con la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-E2B-it-FP8-dynamic
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-E2B-it-FP8-dynamic
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

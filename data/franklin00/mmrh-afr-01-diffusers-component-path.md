@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-01-diffusers-component-path` es un artefacto de investigación en seguridad publicado en HuggingFace, no un modelo de lenguaje entrenado. El repositorio contiene un único fichero `safetensors` con 4 parámetros totales y un tamaño de 0,0 GB, lo que indica que no alberga pesos funcionales. Su propósito declarado, según la model card, es preservar el "vehículo de metadatos" de un hallazgo de seguridad: una ruta de componente manipulada en `modular_model_index.json` dentro del ecosistema Diffusers.
+`FrankLin00/mmrh-afr-01-diffusers-component-path` es un artefacto de investigación en seguridad publicado en Hugging Face, no un modelo de lenguaje entrenado. El repositorio contiene un único fichero `safetensors` con 4 parámetros totales y un tamaño de 0,0 GB, lo que indica que no alberga pesos funcionales. Su propósito declarado, según la model card, es preservar el "vehículo de metadatos" de un hallazgo de seguridad: una ruta de componente manipulada en `modular_model_index.json` dentro del ecosistema Diffusers.
 
 El autor lo etiqueta explícitamente como `security-research` y `not-for-production`. Forma parte de una colección de especímenes inertes (denominados AFR/AFW) cuyo objetivo es documentar primitivas de ejecución o lectura en pipelines de carga de modelos. La model card describe que cualquier sonda activa ejecuta únicamente `whoami` en forma de argv (nunca con `shell=True`) y escribe su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`, sin acceso a credenciales ni operaciones de red.
 
@@ -40,7 +40,7 @@ La model card indica que las sondas activas asociadas ejecutan solo `whoami` med
 
 - Reproducción de vulnerabilidades en pipelines de Diffusers: el artefacto permite a investigadores recrear la ruta de componente manipulada en `modular_model_index.json` y verificar si una versión concreta de la librería la resuelve de forma insegura.
 - Desarrollo de reglas de detección para escáneres de modelos: sirve como muestra positiva para validar que un scanner detecta rutas de componente anómalas en índices modulares.
-- Pruebas de regresión en herramientas de auditoría de HuggingFace: permite comprobar que los escáneres marcan correctamente artefactos etiquetados como `not-for-production`.
+- Pruebas de regresión en herramientas de auditoría de Hugging Face: permite comprobar que los escáneres marcan correctamente artefactos etiquetados como `not-for-production`.
 - Formación y divulgación en seguridad de la cadena de suministro de modelos: ejemplo controlado para explicar cómo metadatos aparentemente inocuos pueden actuar como vector.
 - Validación de sandboxing: al ejecutar solo `whoami` y escribir en `/tmp`, permite verificar que un entorno aislado contiene correctamente la sonda sin acceso a red ni credenciales.
 - Verificación de integridad de colecciones: el `MANIFEST.json` asociado permite comprobar hashes y la ruta del hallazgo fuente en procesos de revisión por pares.
@@ -80,6 +80,6 @@ No se dispone de información sobre otros modelos comparables en la documentaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-01-diffusers-component-path
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-01-diffusers-component-path
 - Colección y `MANIFEST.json`: referenciados en la model card, sin URL directa disponible en la información proporcionada.
 - Documentación de Diffusers sobre `modular_model_index.json`: no disponible en la información proporcionada.

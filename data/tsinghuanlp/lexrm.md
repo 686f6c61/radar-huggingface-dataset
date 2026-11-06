@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LexRM es un modelo publicado en HuggingFace por el grupo TsinghuaNLP (Universidad de Tsinghua), distribuido bajo licencia Apache 2.0. La model card publicada por el autor no contiene ninguna descripción funcional, técnica ni de uso: se limita a declarar la licencia. Por tanto, no es posible confirmar a partir de la información disponible qué tipo de modelo es (si se trata de un reward model, un modelo de lenguaje generativo o un componente auxiliar de otro sistema), ni su arquitectura, tamaño o ventana de contexto.
+LexRM es un modelo publicado en Hugging Face por el grupo TsinghuaNLP (Universidad de Tsinghua), distribuido bajo licencia Apache 2.0. La model card publicada por el autor no contiene ninguna descripción funcional, técnica ni de uso: se limita a declarar la licencia. Por tanto, no es posible confirmar a partir de la información disponible qué tipo de modelo es (si se trata de un reward model, un modelo de lenguaje generativo o un componente auxiliar de otro sistema), ni su arquitectura, tamaño o ventana de contexto.
 
 El identificador "RM" en el nombre sugiere, de forma no verificada, que podría tratarse de un *reward model* (modelo de recompensa), componente habitual en pipelines de RLHF y de optimización de preferencias. Esta interpretación es una inferencia a partir de la nomenclatura y no está respaldada por documentación del autor, por lo que debe tratarse como especulación.
 
@@ -66,7 +66,7 @@ No disponible. Sin datos de arquitectura, tamaño, contexto ni rendimiento, no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TsinghuaNLP/LexRM
-- Organización en HuggingFace: https://huggingface.co/TsinghuaNLP
+- Modelo en Hugging Face: https://huggingface.co/TsinghuaNLP/LexRM
+- Organización en Hugging Face: https://huggingface.co/TsinghuaNLP
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

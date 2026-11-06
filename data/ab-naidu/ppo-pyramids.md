@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ab-naidu/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids, uno de los escenarios de ejemplo distribuidos con la libreria Unity ML-Agents. Lo publica el usuario ab-naidu en HuggingFace como un artefacto de politica entrenada, no como un modelo de lenguaje: no genera texto ni mantiene conversaciones, sino que produce acciones a partir de observaciones del entorno de simulacion.
+`ab-naidu/ppo-Pyramids` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno Pyramids, uno de los escenarios de ejemplo distribuidos con la libreria Unity ML-Agents. Lo publica el usuario ab-naidu en Hugging Face como un artefacto de politica entrenada, no como un modelo de lenguaje: no genera texto ni mantiene conversaciones, sino que produce acciones a partir de observaciones del entorno de simulacion.
 
 El modelo se integra en el ecosistema ML-Agents mediante la libreria `ml-agents` y el pipeline declarado en el Hub es `reinforcement-learning`. El repositorio ocupa 0.0 GB y esta acompanado de los tags `ml-agents`, `tensorboard`, `onnx`, `Pyramids` y `deep-reinforcement-learning`, lo que indica que el artefacto entrenado se exporta en formato `.nn` (Barracuda/Sentis) y/o `.onnx` para su ejecucion en el motor Unity.
 
@@ -47,8 +47,8 @@ No se dispone de informacion sobre el numero de pasos de entrenamiento, la compo
 ## Casos de uso
 
 - Reproduccion de experimentos de RL: el checkpoint permite reanudar el entrenamiento con `mlagents-learn --resume` y comparar curvas de recompensa frente a nuevas ejecuciones con distintas semillas o hiperparametros.
-- Docencia y aprendizaje de ML-Agents: sirve como ejemplo practico para ilustrar el ciclo observacion-accion-recompensa y el flujo de publicacion de agentes en el Hub, siguiendo los tutoriales oficiales de HuggingFace.
-- Evaluacion de politicas en el visor web: al exportarse a `.nn`/`.onnx`, el agente puede visualizarse jugando directamente en el navegador desde la pagina de Unity en HuggingFace, sin infraestructura adicional.
+- Docencia y aprendizaje de ML-Agents: sirve como ejemplo practico para ilustrar el ciclo observacion-accion-recompensa y el flujo de publicacion de agentes en el Hub, siguiendo los tutoriales oficiales de Hugging Face.
+- Evaluacion de politicas en el visor web: al exportarse a `.nn`/`.onnx`, el agente puede visualizarse jugando directamente en el navegador desde la pagina de Unity en Hugging Face, sin infraestructura adicional.
 - Baseline para comparativas internas: puede usarse como referencia de rendimiento frente a variantes con otras arquitecturas de red o hiperparametros de PPO en el mismo entorno.
 - Integracion en prototipos de Unity: los pesos `.nn` se pueden cargar en un proyecto Unity para probar comportamientos de agentes en escenas propias derivadas del entorno Pyramids.
 - Investigacion sobre estabilidad de PPO: al disponer del checkpoint y de la configuracion de reanudacion, es util para estudiar como evoluciona la politica al continuar el entrenamiento con distintos presupuestos de pasos.
@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento, parametros ni contexto de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ab-naidu/ppo-Pyramids
+- Modelo en Hugging Face: https://huggingface.co/ab-naidu/ppo-Pyramids
 - Libreria Unity ML-Agents (GitHub): https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto del curso de deep RL de HuggingFace: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto del curso de deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial extenso de ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Organizacion de agentes oficiales de Unity en el Hub: https://huggingface.co/unity

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DSACSAC1XZC/MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario DSACSAC1XZC, etiquetado con las librerías transformers y pytorch, el pipeline de feature-extraction y la arquitectura bert. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el 11 de septiembre de 2026, lo que apunta a un repositorio de prueba o a un esqueleto sin pesos publicados. No se dispone de informacion sobre numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento.
+DSACSAC1XZC/MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario DSACSAC1XZC, etiquetado con las librerías transformers y pytorch, el pipeline de feature-extraction y la arquitectura bert. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y fue creado y actualizado el 11 de septiembre de 2026, lo que apunta a un repositorio de prueba o a un esqueleto sin pesos publicados. No se dispone de informacion sobre numero de parametros, longitud de contexto ni composicion del dataset de entrenamiento.
 
 La model card describe, en terminos genericos, un supuesto modelo conversacional con mejoras en razonamiento, reduccion de alucinaciones y soporte de function calling, e incluye una tabla de benchmarks con nombres anonimizados (Model1, Model2, Model1-v2, MyAwesomeModel). Sin embargo, esta descripcion es incompatible con las etiquetas del repositorio (feature-extraction, bert) y con la ausencia total de archivos de pesos. La informacion disponible no permite verificar arquitectura, tamano ni capacidades reales del modelo.
 
@@ -39,7 +39,7 @@ Las capacidades que se enumeran a continuacion provienen exclusivamente de afirm
 - Capacidades multilingues: no disponible; el repositorio no declara idiomas.
 - Capacidades de vision o audio: no disponibles.
 
-Nota: el pipeline declarado en HuggingFace es feature-extraction, lo que contradice las capacidades generativas descritas en la model card.
+Nota: el pipeline declarado en Hugging Face es feature-extraction, lo que contradice las capacidades generativas descritas en la model card.
 
 ## Casos de uso
 
@@ -105,7 +105,7 @@ No es posible establecer una comparativa fiable. La model card referencia "Model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DSACSAC1XZC/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/DSACSAC1XZC/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

@@ -106,9 +106,9 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shunya1810/huihui-ai-Huihui-Qwen3.8-27B-abliterated-MTPLX
-- Modelo padre en HuggingFace: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
+- Hugging Face: https://huggingface.co/shunya1810/huihui-ai-Huihui-Qwen3.8-27B-abliterated-MTPLX
+- Modelo padre en Hugging Face: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio de MTPLX Forge: https://github.com/youssofal/MTPLX
-- Registro de verificacion: fichero `mtplx_runtime.json` dentro del repositorio de HuggingFace
+- Registro de verificacion: fichero `mtplx_runtime.json` dentro del repositorio de Hugging Face
 - Paper, blog o demo oficiales: no disponible
 - Resultados de busqueda web utilizables: no disponible (los enlaces recuperados no guardan relacion con el modelo)

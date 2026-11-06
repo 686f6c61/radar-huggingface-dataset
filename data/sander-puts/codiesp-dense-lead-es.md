@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sander-puts/codiesp-dense-lead-es
+- Modelo en Hugging Face: https://huggingface.co/sander-puts/codiesp-dense-lead-es
 - Repositorio CEI-Trace: https://github.com/putssander/CEI-Trace
 - Modelo base: https://huggingface.co/PlanTL-GOB-ES/roberta-base-biomedical-clinical-es
 - Corpus CodiEsp (Miranda-Escalada et al., CLEF eHealth 2020): https://doi.org/10.5281/zenodo.3837305

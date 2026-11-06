@@ -42,7 +42,7 @@ En resumen, el modelo no presenta ninguna capacidad funcional real. Su único va
 ## Casos de uso
 
 - **Pruebas de humo en pipelines de entrenamiento**: el checkpoint de inicialización permite verificar que el script `train.py` ejecuta sin errores y que el bucle de entrenamiento arranca correctamente antes de lanzar experimentos con modelos reales.
-- **Desarrollo de adaptadores para carga personalizada**: dado que la implementación no es compatible con APIs genéricas de HuggingFace, sirve para practicar la escritura de adaptadores explícitos que permitan cargar la arquitectura.
+- **Desarrollo de adaptadores para carga personalizada**: dado que la implementación no es compatible con APIs genéricas de Hugging Face, sirve para practicar la escritura de adaptadores explícitos que permitan cargar la arquitectura.
 - **Experimentos de aprendizaje contrastivo a pequeña escala**: con solo 49.600 parámetros, se puede estudiar el comportamiento del optimizador Adam y el programador exponencial en un entorno controlado y de bajo coste computacional.
 - **Validación de configuraciones de arquitectura**: la combinación de atención flash, fusión Tucker y GroupNorm puede probarse en este modelo mínimo para depurar incompatibilidades antes de escalar.
 - **Educación e investigación**: útil para estudiantes que quieran inspeccionar una implementación de Flamingo simplificada y entender sus componentes internos.
@@ -73,10 +73,10 @@ No disponible. Este repositorio no contiene un modelo entrenado, sino un checkpo
 - **Riesgo de alucinación**: no aplica, ya que el modelo no genera texto de forma coherente.
 - **Limitaciones de contexto e idioma**: no se especifican; no hay datos sobre ventana de contexto ni idiomas soportados.
 - **Restricciones de licencia**: la licencia BSD-3-Clause permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se utiliza con otros datasets.
-- **Incompatibilidad con APIs estándar**: la implementación personalizada requiere un adaptador explícito; las APIs genéricas de HuggingFace no podrán cargar el modelo directamente.
+- **Incompatibilidad con APIs estándar**: la implementación personalizada requiere un adaptador explícito; las APIs genéricas de Hugging Face no podrán cargar el modelo directamente.
 - **Tamaño insignificante**: con 49.600 parámetros, el modelo no puede resolver ninguna tarea práctica; su uso se limita a experimentos de desarrollo.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/atharvsinghana/test-contrastive13)
+- [Repositorio en Hugging Face](https://huggingface.co/atharvsinghana/test-contrastive13)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios externos) en la búsqueda web.

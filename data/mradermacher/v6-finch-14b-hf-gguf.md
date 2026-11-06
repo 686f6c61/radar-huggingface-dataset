@@ -22,13 +22,13 @@ La información disponible es limitada: la model card del repositorio de cuantiz
 | Formato de pesos | GGUF (cuantizaciones estáticas); el modelo base se distribuye en safetensors |
 | Tamaño del repositorio | 109,9 GB (incluye todas las variantes) |
 | Conversión | `convert_type: hf`, `quantize_version: 2`, `output_tensor_quantised: 1` (según metadatos de la model card) |
-| Compatibilidad de endpoints | Etiquetado como `endpoints_compatible` en HuggingFace |
+| Compatibilidad de endpoints | Etiquetado como `endpoints_compatible` en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
-El repositorio no documenta el entrenamiento: la model card es una plantilla estándar de mradermacher centrada en los ficheros GGUF generados y no reproduce información del autor original. El nombre del modelo base (`RWKV/v6-Finch-14B-HF`) sitúa la arquitectura en la familia RWKV versión 6, variante Finch de 14B, publicada por el equipo oficial de RWKV en HuggingFace. No se dispone en la información proporcionada de número de tokens de entrenamiento, composición del dataset, ni de si hubo fases de RLHF, DPO o instruction tuning.
+El repositorio no documenta el entrenamiento: la model card es una plantilla estándar de mradermacher centrada en los ficheros GGUF generados y no reproduce información del autor original. El nombre del modelo base (`RWKV/v6-Finch-14B-HF`) sitúa la arquitectura en la familia RWKV versión 6, variante Finch de 14B, publicada por el equipo oficial de RWKV en Hugging Face. No se dispone en la información proporcionada de número de tokens de entrenamiento, composición del dataset, ni de si hubo fases de RLHF, DPO o instruction tuning.
 
-Tampoco se especifican innovaciones técnicas concretas del checkpoint (por ejemplo, configuración de atención lineal, tamaño de estado recurrente o estrategia de decodificación). Cualquier afirmación sobre estos puntos requeriría consultar la model card del modelo base, que no forma parte del material facilitado. Lo que sí es seguro es el proceso de cuantización: mradermacher ha generado cuantizaciones estáticas (no imatrix) mediante llama.cpp, con conversión desde el formato HuggingFace; las variantes con importancia matricial (i1) se publican en un repositorio separado.
+Tampoco se especifican innovaciones técnicas concretas del checkpoint (por ejemplo, configuración de atención lineal, tamaño de estado recurrente o estrategia de decodificación). Cualquier afirmación sobre estos puntos requeriría consultar la model card del modelo base, que no forma parte del material facilitado. Lo que sí es seguro es el proceso de cuantización: mradermacher ha generado cuantizaciones estáticas (no imatrix) mediante llama.cpp, con conversión desde el formato Hugging Face; las variantes con importancia matricial (i1) se publican en un repositorio separado.
 
 ## Capacidades
 
@@ -74,9 +74,9 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 | Modelo / repositorio | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mradermacher/v6-Finch-14B-HF-GGUF` (este repo) | 14,07 B | GGUF (10 variantes) | No disponible | Apache 2.0 | Público en HuggingFace |
-| `mradermacher/v6-Finch-14B-HF-i1-GGUF` | 14,07 B (mismo base) | GGUF con cuantización imatrix | No disponible | Apache 2.0 | Público en HuggingFace |
-| `RWKV/v6-Finch-14B-HF` (modelo base) | 14,07 B | Safetensors | No disponible | Apache 2.0 | Público en HuggingFace |
+| `mradermacher/v6-Finch-14B-HF-GGUF` (este repo) | 14,07 B | GGUF (10 variantes) | No disponible | Apache 2.0 | Público en Hugging Face |
+| `mradermacher/v6-Finch-14B-HF-i1-GGUF` | 14,07 B (mismo base) | GGUF con cuantización imatrix | No disponible | Apache 2.0 | Público en Hugging Face |
+| `RWKV/v6-Finch-14B-HF` (modelo base) | 14,07 B | Safetensors | No disponible | Apache 2.0 | Público en Hugging Face |
 | Transformers densos de ~14B (Qwen, Llama, etc.) | ~14 B | Safetensors / GGUF | No disponible en esta ficha | Varía | No comparado por falta de datos |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones estáticas): https://huggingface.co/mradermacher/v6-Finch-14B-HF-GGUF
+- Repositorio Hugging Face (cuantizaciones estáticas): https://huggingface.co/mradermacher/v6-Finch-14B-HF-GGUF
 - Repositorio de cuantizaciones imatrix (i1): https://huggingface.co/mradermacher/v6-Finch-14B-HF-i1-GGUF
 - Modelo base: https://huggingface.co/RWKV/v6-Finch-14B-HF
 - Página de descargas del autor para este modelo: https://hf.tst.eu/model#v6-Finch-14B-HF-GGUF

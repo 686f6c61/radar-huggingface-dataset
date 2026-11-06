@@ -22,7 +22,7 @@ Se trata, por tanto, de un modelo de investigación de escala muy reducida (meno
 | Formato de pesos | safetensors |
 | Tokenizador | byte tokenizer «schema-1» de OpenWALDO, requiere `trust_remote_code=True` |
 | Pipeline declarado | text-generation |
-| Tamaño del repositorio | 0,0 GB (según la información de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según la información de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

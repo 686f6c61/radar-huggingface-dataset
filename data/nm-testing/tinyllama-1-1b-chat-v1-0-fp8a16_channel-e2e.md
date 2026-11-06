@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TinyLlama-1.1B-Chat-v1.0-FP8A16_channel-e2e es una versión cuantizada del modelo TinyLlama-1.1B-Chat-v1.0, publicada por el usuario `nm-testing` en HuggingFace. Se trata de un artefacto de pruebas (testing) que aplica cuantización FP8 con escalas por canal (channel-wise) sobre los pesos del modelo original, empaquetada mediante la librería `compressed-tensors`. El modelo base TinyLlama es un transformer decoder-only de 1.100.048.384 parámetros entrenado por el proyecto TinyLlama sobre 3 billones de tokens, y la variante Chat incorpora ajuste fino supervisado y alineación para conversación.
+TinyLlama-1.1B-Chat-v1.0-FP8A16_channel-e2e es una versión cuantizada del modelo TinyLlama-1.1B-Chat-v1.0, publicada por el usuario `nm-testing` en Hugging Face. Se trata de un artefacto de pruebas (testing) que aplica cuantización FP8 con escalas por canal (channel-wise) sobre los pesos del modelo original, empaquetada mediante la librería `compressed-tensors`. El modelo base TinyLlama es un transformer decoder-only de 1.100.048.384 parámetros entrenado por el proyecto TinyLlama sobre 3 billones de tokens, y la variante Chat incorpora ajuste fino supervisado y alineación para conversación.
 
-La relevancia de esta ficha es doble: por un lado documenta un checkpoint de 1,2 GB en formato safetensors que sirve como referencia práctica de cuantización FP8 con granularidad por canal; por otro, advierte de que se trata de un repositorio de validación interna (nm-testing) y no de un modelo listo para producción. No hay información publicada sobre licencia, idiomas o pipeline en la ficha de HuggingFace, por lo que muchos campos deben tratarse como no disponibles.
+La relevancia de esta ficha es doble: por un lado documenta un checkpoint de 1,2 GB en formato safetensors que sirve como referencia práctica de cuantización FP8 con granularidad por canal; por otro, advierte de que se trata de un repositorio de validación interna (nm-testing) y no de un modelo listo para producción. No hay información publicada sobre licencia, idiomas o pipeline en la ficha de Hugging Face, por lo que muchos campos deben tratarse como no disponibles.
 
 El interés técnico reside en que FP8 (formato de 8 bits en coma flotante, habitualmente E4M3 o E5M2) reduce a la mitad el peso respecto a FP16 manteniendo un rango dinámico superior al de INT8, lo que lo hace atractivo para inferencia en GPUs con soporte nativo (Hopper, Ada Lovelace). La granularidad "channel" indica que las escalas de cuantización se calculan por canal de pesos, lo que reduce el error respecto a escalas por tensor.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0-FP8A16_channel-e2e | 1,1B | no disponible | safetensors FP8 (compressed-tensors) | no disponible | HuggingFace (nm-testing) |
-| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 | safetensors BF16 | Apache 2.0 (modelo base) | HuggingFace (TinyLlama) |
-| Qwen2.5-1.5B-Instruct | 1,5B | 32768 | safetensors BF16 | Apache 2.0 | HuggingFace (Qwen) |
-| SmolLM2-1.7B-Instruct | 1,7B | 8192 | safetensors BF16 | Apache 2.0 | HuggingFace (HuggingFaceTB) |
+| TinyLlama-1.1B-Chat-v1.0-FP8A16_channel-e2e | 1,1B | no disponible | safetensors FP8 (compressed-tensors) | no disponible | Hugging Face (nm-testing) |
+| TinyLlama-1.1B-Chat-v1.0 (original) | 1,1B | 2048 | safetensors BF16 | Apache 2.0 (modelo base) | Hugging Face (TinyLlama) |
+| Qwen2.5-1.5B-Instruct | 1,5B | 32768 | safetensors BF16 | Apache 2.0 | Hugging Face (Qwen) |
+| SmolLM2-1.7B-Instruct | 1,7B | 8192 | safetensors BF16 | Apache 2.0 | Hugging Face (HuggingFaceTB) |
 
 La comparativa se establece frente a alternativas de tamaño similar; el checkpoint aquí documentado se distingue por su cuantización FP8 channel-wise, pero carece de la documentación de licencia e idiomas que sí ofrecen los modelos de referencia.
 
@@ -84,7 +84,7 @@ La comparativa se establece frente a alternativas de tamaño similar; el checkpo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8A16_channel-e2e
+- Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-FP8A16_channel-e2e
 - Modelo base TinyLlama-1.1B-Chat-v1.0: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio TinyLlama: https://github.com/jzhang38/TinyLlama
 - Paper TinyLlama: https://arxiv.org/abs/2401.02385

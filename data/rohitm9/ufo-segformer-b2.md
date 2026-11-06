@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UFO SegFormer B2 es un checkpoint de segmentación semántica binaria publicado por el usuario rohitm9 en HuggingFace, orientado a la detección de agua superficial e inundaciones urbanas en imágenes de satélite PlanetScope. Se trata de un SegFormer B2, una arquitectura de segmentación que combina un codificador Transformer jerárquico (Mix Transformer, MiT) con un decodificador ligero de tipo all-MLP, con 27.349.698 parámetros totales y profundidades de codificador `[3, 4, 6, 3]`.
+UFO SegFormer B2 es un checkpoint de segmentación semántica binaria publicado por el usuario rohitm9 en Hugging Face, orientado a la detección de agua superficial e inundaciones urbanas en imágenes de satélite PlanetScope. Se trata de un SegFormer B2, una arquitectura de segmentación que combina un codificador Transformer jerárquico (Mix Transformer, MiT) con un decodificador ligero de tipo all-MLP, con 27.349.698 parámetros totales y profundidades de codificador `[3, 4, 6, 3]`.
 
 El modelo recibe tensores de tres canales y produce dos clases: `0` para superficie no inundada y `1` para agua superficial. Está vinculado al proyecto Urban Flood Observations (UFO), cuyo repositorio de código y dataset se alojan en GitHub y Zenodo respectivamente. El checkpoint se distribuye tanto en formato PyTorch original como en formato Transformers con safetensors, y se acompaña de 215 máscaras de predicción binarias verificadas sobre 14 eventos de inundación.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rohitm9/ufo-segformer-b2 | 27.349.698 | 3 canales, 1024 x 1024 | IoU de agua 77,34 % (media por imagen, artefactos archivados) | no disponible | HuggingFace |
-| nvidia/segformer-b2-finetuned-ade-512-512 | no disponible en la informacion | 512 x 512, RGB | no disponible | no disponible en la informacion | HuggingFace |
-| rohitm9/surfaceWaterGlobal | no disponible | teledeteccion (Sentinel-1, AlphaEarth) | no disponible | Apache 2.0 | HuggingFace |
+| rohitm9/ufo-segformer-b2 | 27.349.698 | 3 canales, 1024 x 1024 | IoU de agua 77,34 % (media por imagen, artefactos archivados) | no disponible | Hugging Face |
+| nvidia/segformer-b2-finetuned-ade-512-512 | no disponible en la informacion | 512 x 512, RGB | no disponible | no disponible en la informacion | Hugging Face |
+| rohitm9/surfaceWaterGlobal | no disponible | teledeteccion (Sentinel-1, AlphaEarth) | no disponible | Apache 2.0 | Hugging Face |
 
 La comparación directa es limitada: el checkpoint de NVIDIA se usó solo como referencia para reconstruir la configuración de arquitectura, y `surfaceWaterGlobal` es otro modelo del mismo autor con contrato de entrada y licencia distintos (Apache 2.0 frente a licencia no disponible en este caso).
 
@@ -92,7 +92,7 @@ La comparación directa es limitada: el checkpoint de NVIDIA se usó solo como r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohitm9/ufo-segformer-b2
+- Modelo en Hugging Face: https://huggingface.co/rohitm9/ufo-segformer-b2
 - Repositorio de código UFO: https://github.com/Tellman-lab/urbanFloodObservations
 - Dataset UFO: https://zenodo.org/records/19698577
 - Checkpoint original: https://drive.google.com/file/d/15I7KA-ddi1MhqSYW_t4XSmPzImwGdYBT/view

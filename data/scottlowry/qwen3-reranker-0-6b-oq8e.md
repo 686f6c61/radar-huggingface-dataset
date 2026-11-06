@@ -14,7 +14,7 @@ El modelo `scottlowry/Qwen3-Reranker-0.6B-oQ8e` es una versión cuantizada a 8 b
 | Longitud de contexto | 32 000 tokens (según documentación del modelo base) |
 | Tipos de cuantizacion | 8-bit (oQ, group size 64) |
 | Idiomas soportados | Más de 100 (según documentación del modelo base) |
-| Licencia | No disponible en la ficha de HuggingFace; el modelo base Qwen3-Reranker-0.6B se distribuye bajo Apache 2.0 |
+| Licencia | No disponible en la ficha de Hugging Face; el modelo base Qwen3-Reranker-0.6B se distribuye bajo Apache 2.0 |
 | Formato de pesos | safetensors (MLX) |
 
 ## Arquitectura y entrenamiento
@@ -66,7 +66,7 @@ La versión cuantizada aquí descrita ofrece una ventaja en tamaño y velocidad 
 - La cuantización a 8 bits puede introducir una ligera degradación en la precisión de las puntuaciones de relevancia en comparación con el modelo en fp16 o fp32.
 - No se dispone de información sobre sesgos específicos del modelo, pero al ser entrenado con datos multilingües de internet, puede reflejar sesgos presentes en esos datos.
 - Riesgo de alucinación: aunque es un reranker y no genera texto, puede asignar puntuaciones altas a documentos irrelevantes si el entrenamiento no cubre bien ciertos dominios.
-- La licencia del modelo cuantizado no está especificada en la ficha de HuggingFace; se recomienda verificar la licencia del modelo base (Apache 2.0) antes de uso comercial.
+- La licencia del modelo cuantizado no está especificada en la ficha de Hugging Face; se recomienda verificar la licencia del modelo base (Apache 2.0) antes de uso comercial.
 - El formato MLX safetensors está optimizado para Apple Silicon; para otros entornos (CUDA, CPU x86) será necesario convertir los pesos a otro formato (GGUF, ONNX, etc.).
 - No se han publicado benchmarks específicos para esta versión cuantizada, por lo que se recomienda evaluar su rendimiento en el caso de uso concreto.
 

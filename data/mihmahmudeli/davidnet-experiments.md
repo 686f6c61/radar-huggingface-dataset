@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DAVID-Net (Deepfake Audio-Visual Invariant Disentanglement Network) es un modelo de detección de deepfakes audio-visuales desarrollado por MIHMahmudEli. No es un modelo generativo de lenguaje, sino un clasificador multimodal de vídeo cuya tarea es determinar la autenticidad de una secuencia que combina pista de vídeo (25 fps) y pista de audio (16 kHz), localizar temporalmente las manipulaciones y atribuir el tipo de falsificación a cada modalidad. El repositorio publicado en HuggingFace funciona como archivo persistente del proyecto: contiene 81 ejecuciones experimentales (N=3 semillas independientes sobre 27 configuraciones de ablación y benchmark) con checkpoints, curvas de evaluación y manifiestos de partición de datos.
+DAVID-Net (Deepfake Audio-Visual Invariant Disentanglement Network) es un modelo de detección de deepfakes audio-visuales desarrollado por MIHMahmudEli. No es un modelo generativo de lenguaje, sino un clasificador multimodal de vídeo cuya tarea es determinar la autenticidad de una secuencia que combina pista de vídeo (25 fps) y pista de audio (16 kHz), localizar temporalmente las manipulaciones y atribuir el tipo de falsificación a cada modalidad. El repositorio publicado en Hugging Face funciona como archivo persistente del proyecto: contiene 81 ejecuciones experimentales (N=3 semillas independientes sobre 27 configuraciones de ablación y benchmark) con checkpoints, curvas de evaluación y manifiestos de partición de datos.
 
 El modelo se apoya en dos backbones preentrenados y congelados —VideoMAE para la rama visual y WavLM para la rama auditiva— sobre los que se insertan adaptadores de bajo rango (LoRA). La innovación central es la factorización desacoplada del espacio latente multimodal en tres subespacios estrictamente ortogonales, que aíslan la autenticidad de vídeo (z_v), la de audio (z_a) y la sincronización entre ambas (z_c). Sobre esa representación se montan cabezas de predicción por modalidad y una cabeza de atribución en cuatro cuadrantes (RVRA, RVFA, FVRA, FVFA).
 
@@ -92,7 +92,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 | Rendimiento (AUC en dominio) | 0,976 (deteccion de clip) | no disponible |
 | Transferencia zero-shot | 74,5-91,2 % segun conjunto | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Repositorio HuggingFace, GitHub y API publica | no disponible |
+| Disponibilidad | Repositorio Hugging Face, GitHub y API publica | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MIHMahmudEli/davidnet-experiments
+- Modelo en Hugging Face: https://huggingface.co/MIHMahmudEli/davidnet-experiments
 - Repositorio de codigo (GitHub): https://github.com/MIHMahmudEli/david-net-av-v2
 - Demo web (Vercel): https://david-net-av.vercel.app/
 - API de inferencia (FastAPI en Render): https://davidnet-api.onrender.com/health

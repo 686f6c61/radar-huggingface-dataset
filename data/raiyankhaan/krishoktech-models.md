@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo / suite | Arquitectura | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KrishokTech-Models | YOLO26-cls + EfficientNet-B0 | Clasificacion de cultivo y patologia; regresion de humedad del suelo | no aplica | Apache 2.0 | HuggingFace (0 descargas) |
+| KrishokTech-Models | YOLO26-cls + EfficientNet-B0 | Clasificacion de cultivo y patologia; regresion de humedad del suelo | no aplica | Apache 2.0 | Hugging Face (0 descargas) |
 | YOLOv8-cls (Ultralytics) | YOLOv8-cls | Clasificacion de imagenes generica | no aplica | AGPL-3.0 | Modelo base publico de Ultralytics |
-| Modelos entrenados sobre PlantVillage | CNN genericas (ResNet, MobileNet, etc.) | Clasificacion de enfermedades foliares | no aplica | variable segun autor | Multiples checkpoints en HuggingFace |
+| Modelos entrenados sobre PlantVillage | CNN genericas (ResNet, MobileNet, etc.) | Clasificacion de enfermedades foliares | no aplica | variable segun autor | Multiples checkpoints en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos (exactitud, F1, RMSE) para KrishokTech-Models ni para las alternativas citadas en el contexto de esta ficha, por lo que la comparacion se limita a arquitectura, tarea, licencia y disponibilidad. La ventaja diferencial de KrishokTech-Models es su pipeline en cascada con clasificador de especie previo, la cobertura multilingue/cultivo especifica de Bangladesh y la disponibilidad de los siete clasificadores en formato ONNX.
 
@@ -101,6 +101,6 @@ No se dispone de datos de rendimiento comparativos (exactitud, F1, RMSE) para Kr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RaiyanKhaan/KrishokTech-Models
+- Hugging Face: https://huggingface.co/RaiyanKhaan/KrishokTech-Models
 
 No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en los resultados de la busqueda web; el resto de resultados obtenidos no guardan relacion con el modelo.

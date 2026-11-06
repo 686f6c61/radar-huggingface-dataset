@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64` es un checkpoint de 3.144.093.888 parametros (aproximadamente 3,14 mil millones) publicado por el usuario htrbao en HuggingFace bajo licencia MIT. El identificador y la etiqueta `Gr00tN1d7` apuntan a la familia de modelos fundacionales de robotica GR00T N1.7, y el sufijo del nombre sugiere un ajuste fino sobre datos reales de manipulacion en la plataforma ALOHA, con ocho tareas, 50.000 pasos de entrenamiento y tamano de lote 64. El repositorio ocupa 6,9 GB y solo contiene pesos en formato safetensors.
+El modelo `htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64` es un checkpoint de 3.144.093.888 parametros (aproximadamente 3,14 mil millones) publicado por el usuario htrbao en Hugging Face bajo licencia MIT. El identificador y la etiqueta `Gr00tN1d7` apuntan a la familia de modelos fundacionales de robotica GR00T N1.7, y el sufijo del nombre sugiere un ajuste fino sobre datos reales de manipulacion en la plataforma ALOHA, con ocho tareas, 50.000 pasos de entrenamiento y tamano de lote 64. El repositorio ocupa 6,9 GB y solo contiene pesos en formato safetensors.
 
 La relevancia de este tipo de checkpoints reside en que los modelos de vision-lenguaje-accion (VLA) permiten controlar robots manipuladores a partir de instrucciones en lenguaje natural y observaciones visuales, sin reentrenar desde cero para cada tarea. Un ajuste fino especifico para ALOHA y para un conjunto reducido de tareas del mundo real es el formato habitual con el que los equipos de robotica adaptan los modelos fundacionales a un banco de trabajo concreto.
 
@@ -70,7 +70,7 @@ La informacion proporcionada no incluye datos verificados de modelos comparables
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64 | 3.144.093.888 | no disponible | MIT | HuggingFace (0 descargas, 1 like) |
+| htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64 | 3.144.093.888 | no disponible | MIT | Hugging Face (0 descargas, 1 like) |
 | GR00T N1 (modelo base de la familia) | no disponible | no disponible | no disponible | no disponible en la informacion |
 | OpenVLA | no disponible | no disponible | no disponible | no disponible en la informacion |
 | pi0 | no disponible | no disponible | no disponible | no disponible en la informacion |
@@ -90,5 +90,5 @@ No se dispone de datos contrastados de parametros, contexto, rendimiento o licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64
+- Hugging Face: https://huggingface.co/htrbao/gr00t_n17_hila_la_cond_realworld_aloha_8tasks_50000_64
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los unicos resultados devueltos corresponden a dominios sin relacion con el modelo.

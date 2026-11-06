@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-Uncensored-FP8 es una variante "abliterated" (con la dirección de rechazo eliminada) del modelo zai-org/GLM-5.3-Flash, publicada por el usuario Subnet46 en HuggingFace. El modelo base lo desarrolla Z.ai (Zhipu AI) y es un Mixture-of-Experts (MoE) de 321.323.031.390 parámetros totales (aproximadamente 320B) con unos 18B de parámetros activos por token, atención híbrida (lineal más dispersa), torre nativa de visión y vídeo, cabeza especulativa MTP y una ventana de contexto de 1 millón de tokens. El repositorio ocupa 328,4 GB y se distribuye en formato block-FP8, que es la precisión original con la que Z.ai publica el checkpoint, no una cuantización aplicada por el autor.
+GLM-5.3-Flash-Uncensored-FP8 es una variante "abliterated" (con la dirección de rechazo eliminada) del modelo zai-org/GLM-5.3-Flash, publicada por el usuario Subnet46 en Hugging Face. El modelo base lo desarrolla Z.ai (Zhipu AI) y es un Mixture-of-Experts (MoE) de 321.323.031.390 parámetros totales (aproximadamente 320B) con unos 18B de parámetros activos por token, atención híbrida (lineal más dispersa), torre nativa de visión y vídeo, cabeza especulativa MTP y una ventana de contexto de 1 millón de tokens. El repositorio ocupa 328,4 GB y se distribuye en formato block-FP8, que es la precisión original con la que Z.ai publica el checkpoint, no una cuantización aplicada por el autor.
 
 La particularidad de esta versión es que la eliminación del mecanismo de rechazo se ha horneado directamente en los shards oficiales de block-FP8: mismos nombres de tensor, mismo dtype, mismas formas y el mismo `model.safetensors.index.json`, de modo que funciona como reemplazo directo (drop-in) del checkpoint original en cualquier stack que ya sirva GLM-5.3-Flash. El autor lo orienta explícitamente a investigación legítima: interpretabilidad, estudio de mecanismos de rechazo, AI safety, red teaming y evaluación de robustez.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Vision | Licencia | Alineacion de seguridad | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-Uncensored-FP8 | 321.323.031.390 / aprox. 18B | 1M tokens | Si (imagen y video) | MIT | Eliminada (abliterated) | HuggingFace, block-FP8 |
-| zai-org/GLM-5.3-Flash (modelo base) | 320B / aprox. 18B (misma arquitectura) | 1M tokens | Si (imagen y video) | MIT | Alineado | HuggingFace, block-FP8 |
+| GLM-5.3-Flash-Uncensored-FP8 | 321.323.031.390 / aprox. 18B | 1M tokens | Si (imagen y video) | MIT | Eliminada (abliterated) | Hugging Face, block-FP8 |
+| zai-org/GLM-5.3-Flash (modelo base) | 320B / aprox. 18B (misma arquitectura) | 1M tokens | Si (imagen y video) | MIT | Alineado | Hugging Face, block-FP8 |
 | Otras alternativas MoE de escala similar | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparacion con modelos de otros fabricantes no puede completarse con rigor porque la informacion proporcionada no incluye especificaciones ni resultados de evaluacion de terceros. La unica comparacion verificable es contra el modelo base, del que esta variante se diferencia exclusivamente en la eliminacion del mecanismo de rechazo, manteniendo arquitectura, tamano, contexto, precision y licencia.
@@ -86,7 +86,7 @@ La comparacion con modelos de otros fabricantes no puede completarse con rigor p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Subnet46/GLM-5.3-Flash-Uncensored-FP8
+- Modelo en Hugging Face: https://huggingface.co/Subnet46/GLM-5.3-Flash-Uncensored-FP8
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Licencia MIT: https://opensource.org/license/mit
 - OrcaRouter (sitio del uploader): https://www.orcarouter.ai

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-gonalmahesha/distilbert-imdb-sentiment es un modelo de clasificacion de texto publicado en HuggingFace por el usuario gonalmahesha. El repositorio contiene pesos en formato safetensors con 66.955.010 parametros, cifra que coincide exactamente con la del checkpoint distilbert-base-uncased, y ocupa 0,3 GB. El identificador del modelo apunta a un ajuste fino de DistilBERT para analisis de sentimiento sobre el corpus IMDB, aunque la model card no confirma ni el conjunto de datos ni la tarea exacta.
+gonalmahesha/distilbert-imdb-sentiment es un modelo de clasificacion de texto publicado en Hugging Face por el usuario gonalmahesha. El repositorio contiene pesos en formato safetensors con 66.955.010 parametros, cifra que coincide exactamente con la del checkpoint distilbert-base-uncased, y ocupa 0,3 GB. El identificador del modelo apunta a un ajuste fino de DistilBERT para analisis de sentimiento sobre el corpus IMDB, aunque la model card no confirma ni el conjunto de datos ni la tarea exacta.
 
 Se trata, por tanto, de un clasificador encoder-only de tipo transformer destilado, no de un modelo generativo: no produce texto libre, no soporta tool calling ni razonamiento multi-paso. Su interes practico esta en la inferencia barata y rapida para clasificacion binaria de opiniones, ejecutable en CPU o en cualquier GPU de consumo.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio acumula 0 descargas y 0 likes, la model card es la plantilla automatica de HuggingFace sin rellenar, no se declara licencia ni idiomas, y no hay resultados de evaluacion publicados. Cualquier uso en produccion exige validar primero el modelo contra un conjunto de test propio.
+La relevancia de esta ficha es limitada y conviene ser explicito: el repositorio acumula 0 descargas y 0 likes, la model card es la plantilla automatica de Hugging Face sin rellenar, no se declara licencia ni idiomas, y no hay resultados de evaluacion publicados. Cualquier uso en produccion exige validar primero el modelo contra un conjunto de test propio.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se deben asumir los valores publicados para distilbert-base-uncased o para di
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| gonalmahesha/distilbert-imdb-sentiment | 66,9 M | 512 tokens (arquitectura) | no disponible | safetensors en HuggingFace, 0 descargas |
+| gonalmahesha/distilbert-imdb-sentiment | 66,9 M | 512 tokens (arquitectura) | no disponible | safetensors en Hugging Face, 0 descargas |
 | distilbert-base-uncased-finetuned-sst-2-english | 66,9 M | 512 tokens | Apache 2.0 | safetensors y PyTorch, ampliamente usado |
 | bert-base-uncased (ajustado para clasificacion) | 110 M | 512 tokens | Apache 2.0 | safetensors y PyTorch |
 | roberta-base (ajustado para clasificacion) | 125 M | 512 tokens | MIT | safetensors y PyTorch |
@@ -105,7 +105,7 @@ El modelo aqui descrito comparte arquitectura y tamano con distilbert-base-uncas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gonalmahesha/distilbert-imdb-sentiment
+- Modelo en Hugging Face: https://huggingface.co/gonalmahesha/distilbert-imdb-sentiment
 - Articulo de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Checkpoint base de referencia: https://huggingface.co/distilbert/distilbert-base-uncased
 - Dataset IMDB: https://huggingface.co/datasets/stanfordnlp/imdb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RizkiPetir347/appa-gemma4-model` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-12b-it`, desarrollado por el usuario RizkiPetir347 y publicado en HuggingFace. Se trata de un modelo de generación de texto basado en la arquitectura transformer de Google, específicamente la familia Gemma 4 en su variante de 12 mil millones de parámetros. El entrenamiento se realizó con la librería Unsloth, que optimiza el proceso de ajuste fino para reducir el tiempo de cómputo, y el resultado se distribuye bajo licencia Apache 2.0.
+El modelo `RizkiPetir347/appa-gemma4-model` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-12b-it`, desarrollado por el usuario RizkiPetir347 y publicado en Hugging Face. Se trata de un modelo de generación de texto basado en la arquitectura transformer de Google, específicamente la familia Gemma 4 en su variante de 12 mil millones de parámetros. El entrenamiento se realizó con la librería Unsloth, que optimiza el proceso de ajuste fino para reducir el tiempo de cómputo, y el resultado se distribuye bajo licencia Apache 2.0.
 
 La relevancia de este modelo radica en su tamaño compacto (el repositorio ocupa solo 0,3 GB, lo que sugiere una cuantización agresiva) y en su licencia permisiva, lo que lo hace accesible para experimentación y despliegue en entornos con recursos limitados. Sin embargo, la información pública disponible es muy escasa: no se han publicado detalles sobre el dataset de entrenamiento, el método de ajuste (RLHF, DPO, etc.), ni resultados de benchmarks. Por tanto, esta ficha se basa principalmente en las características heredadas del modelo base y en las limitaciones de la información proporcionada.
 
@@ -67,6 +67,6 @@ No se dispone de información comparativa publicada. Como referencia cualitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RizkiPetir347/appa-gemma4-model
+- Hugging Face: https://huggingface.co/RizkiPetir347/appa-gemma4-model
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base (unsloth/gemma-4-12b-it): https://huggingface.co/unsloth/gemma-4-12b-it (enlace inferido, no verificado en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sprint-daily-20261104` es una política de control motriz para el robot cuadrúpedo de código abierto microduck, desarrollada por el usuario dashi y publicada en HuggingFace. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo exportada a ONNX que genera comandos de locomoción a 50 Hz para el slot de marcha (`walk`). Se trata de un reentreno diario ("daily re-entry") de la política `dashi/microduck-sprint-remix-r844`, que obtuvo una puntuación de 0.844, y constituye un fine-tune de `jrubiosainz/microduck-game-sprinter-remix3`.
+`sprint-daily-20261104` es una política de control motriz para el robot cuadrúpedo de código abierto microduck, desarrollada por el usuario dashi y publicada en Hugging Face. No se trata de un modelo de lenguaje, sino de una política de aprendizaje por refuerzo exportada a ONNX que genera comandos de locomoción a 50 Hz para el slot de marcha (`walk`). Se trata de un reentreno diario ("daily re-entry") de la política `dashi/microduck-sprint-remix-r844`, que obtuvo una puntuación de 0.844, y constituye un fine-tune de `jrubiosainz/microduck-game-sprinter-remix3`.
 
 El modelo resuelve el problema de generar una marcha perpetua y estable para el microduck, un robot educativo de bajo coste impulsado por el proyecto pollen-robotics. La política consume observaciones de 61 dimensiones y produce 14 acciones, con el normalizador de observaciones integrado en el propio grafo ONNX, de modo que el robot puede alimentarla con observaciones en bruto. Su relevancia radica en que forma parte de un flujo de trabajo de RL reproducible sobre hardware asequible, con un manifiesto de política versionado (schema 2) y despliegue directo mediante el comando `robotctl`.
 
@@ -49,7 +49,7 @@ Se trata de una política "perpetua": está diseñada para ejecutarse de forma c
 - Pruebas de robustez de marcha: al ser una política perpetua, permite evaluar la estabilidad del gait durante ejecuciones prolongadas sin reinicio de episodio.
 - Integración en pipelines de CI para políticas robóticas: el formato ONNX y el manifiesto versionado facilitan la validación automática de nuevas políticas antes de desplegarlas en el robot.
 - Desarrollo de remixes y variantes: al estar construida sobre `microduck-game-sprinter-remix3`, puede servir de base para fine-tunes adicionales en la comunidad microduck.
-- Docencia sobre despliegue de políticas RL en hardware real: el comando `robotctl` y el manifiesto schema 2 ofrecen un flujo de trabajo completo desde HuggingFace hasta el robot.
+- Docencia sobre despliegue de políticas RL en hardware real: el comando `robotctl` y el manifiesto schema 2 ofrecen un flujo de trabajo completo desde Hugging Face hasta el robot.
 
 ## Benchmarks y rendimiento
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Tipo | Slot | Puntuación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dashi/microduck-sprint-daily-20261104` | Política RL ONNX | walk | no disponible | no disponible | HuggingFace |
-| `dashi/microduck-sprint-remix-r844` | Política RL (base del reentreno) | walk | 0.844 | no disponible | HuggingFace |
-| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL (modelo base del fine-tune) | no disponible | no disponible | no disponible | HuggingFace |
+| `dashi/microduck-sprint-daily-20261104` | Política RL ONNX | walk | no disponible | no disponible | Hugging Face |
+| `dashi/microduck-sprint-remix-r844` | Política RL (base del reentreno) | walk | 0.844 | no disponible | Hugging Face |
+| `jrubiosainz/microduck-game-sprinter-remix3` | Política RL (modelo base del fine-tune) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (políticas de locomoción para microduck) más allá de la cadena de fine-tunes indicada.
 
@@ -85,7 +85,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dashi/microduck-sprint-daily-20261104
+- Hugging Face: https://huggingface.co/dashi/microduck-sprint-daily-20261104
 - Modelo base: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix3
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl` (rama `roll-backward`, commit `83599404a`)

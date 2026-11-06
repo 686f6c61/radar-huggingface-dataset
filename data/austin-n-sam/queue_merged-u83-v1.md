@@ -4,7 +4,7 @@
 
 El modelo `austin-n-sam/queue_merged-u83-v1` es un modelo de generación de texto multimodal (imagen-texto a texto) desarrollado por el usuario austin-n-sam. Se presenta como un fine-tune del modelo base `marsplan0624/affine-5gedzafcvg-queen`, que a su vez parece derivar de una arquitectura Qwen3.5 MoE según los tags del repositorio. El modelo está diseñado para tareas conversacionales y de razonamiento, con soporte para entrada de imágenes y texto, y ha sido entrenado con técnicas de DPO online (online-dpo) según los metadatos.
 
-Con 35.107.181.936 parámetros (aproximadamente 35,1 mil millones), el modelo se posiciona en la gama media-alta de modelos MoE. Su tamaño de repositorio es de 70,2 GB en formato safetensors, lo que sugiere pesos en precisión completa o alta. El acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones en HuggingFace antes de descargarlo. Aunque no se proporcionan datos sobre licencia, idiomas o contexto, los tags indican compatibilidad con endpoints y una región de despliegue en Estados Unidos.
+Con 35.107.181.936 parámetros (aproximadamente 35,1 mil millones), el modelo se posiciona en la gama media-alta de modelos MoE. Su tamaño de repositorio es de 70,2 GB en formato safetensors, lo que sugiere pesos en precisión completa o alta. El acceso está restringido (gated), por lo que los usuarios deben aceptar condiciones en Hugging Face antes de descargarlo. Aunque no se proporcionan datos sobre licencia, idiomas o contexto, los tags indican compatibilidad con endpoints y una región de despliegue en Estados Unidos.
 
 La relevancia de este modelo radica en su naturaleza multimodal y su arquitectura MoE, que permite un equilibrio entre capacidad y eficiencia computacional. Sin embargo, al ser un modelo reciente con cero descargas y cero likes, su adopción y validación por la comunidad aún no se ha producido, lo que limita la información disponible sobre su rendimiento real.
 
@@ -64,7 +64,7 @@ No disponible. No se conocen modelos comparables de la misma categoría (MoE mul
 ## Limitaciones y advertencias
 
 - Sesgos y alucinaciones: al no haber datos de evaluación, no se puede descartar la presencia de sesgos en el entrenamiento ni la tendencia a generar información falsa, especialmente en tareas de razonamiento complejo.
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace. Esto puede limitar su uso en entornos corporativos si las condiciones no son claras.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face. Esto puede limitar su uso en entornos corporativos si las condiciones no son claras.
 - Licencia desconocida: sin licencia especificada, no se puede garantizar el uso comercial. Se recomienda contactar al autor antes de cualquier despliegue en producción.
 - Idiomas no especificados: no se sabe qué idiomas soporta de forma fiable. El entrenamiento podría estar sesgado hacia el inglés u otros idiomas.
 - Contexto desconocido: la longitud de contexto no está documentada, lo que impide planificar tareas que requieran ventanas largas.
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (MoE mul
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/austin-n-sam/queue_merged-u83-v1
+- Repositorio Hugging Face: https://huggingface.co/austin-n-sam/queue_merged-u83-v1
 - Modelo base: https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen (enlace inferido, no verificado)

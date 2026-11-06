@@ -4,7 +4,7 @@
 
 El modelo `d9beuD/Qwen3.8-27B-oQ4-mtp` es una cuantización de precisión mixta de un modelo de la familia Qwen3.5 (etiquetado como `qwen3_5`), realizada con la herramienta oQ (oMLX v0.6.0.dev1) a 4 bits con grupo de 64. El objetivo es reducir el uso de memoria y permitir la ejecución eficiente en hardware Apple Silicon mediante el framework MLX. El repositorio contiene pesos en formato MLX safetensors y ocupa 17.0 GB.
 
-Existe una discrepancia notable entre el nombre del modelo ("27B") y el número de parámetros reportado en los safetensors (4.927.778.032, es decir, ~4.9 mil millones). Esta inconsistencia podría deberse a un error de nomenclatura o a que el archivo de pesos contiene solo una parte del modelo. Sin más información del autor, no es posible determinar el tamaño real del modelo base. La ficha se limita a reportar los datos disponibles en la metadata de HuggingFace.
+Existe una discrepancia notable entre el nombre del modelo ("27B") y el número de parámetros reportado en los safetensors (4.927.778.032, es decir, ~4.9 mil millones). Esta inconsistencia podría deberse a un error de nomenclatura o a que el archivo de pesos contiene solo una parte del modelo. Sin más información del autor, no es posible determinar el tamaño real del modelo base. La ficha se limita a reportar los datos disponibles en la metadata de Hugging Face.
 
 La relevancia de este modelo radica en que ofrece una alternativa cuantizada para ejecutar modelos de la serie Qwen en entornos MLX, aprovechando la aceleración por hardware de los chips M1/M2/M3/M4. Sin embargo, al no publicarse licencia, idiomas ni benchmarks, su uso en producción requiere verificación adicional.
 
@@ -74,5 +74,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ4-mtp
+- Repositorio Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ4-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx

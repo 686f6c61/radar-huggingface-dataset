@@ -113,11 +113,11 @@ Referencia adicional aportada por el autor en su propia escala de evaluacion (ll
 - Parametros de muestreo no estandar: temperatura 1.0, top-p 0.95, top-k desactivado y sin cadenas de parada. Usar los valores por defecto del modelo original (top-k 64) puede degradar los resultados.
 - Procedencia del checkpoint: la model card declara licencia Apache-2.0, pero el modelo es un finetune de google/gemma-4-12B y los datos de calibracion provienen de jialinyyzz/humanizer-data, cuyo DATA.md lista las licencias de las fuentes y los terminos de los modelos que escribieron los borradores. Conviene verificar esas condiciones antes de un uso comercial.
 - Riesgo de alucinacion, sesgos conocidos y limitaciones de contexto: no disponible en la informacion proporcionada.
-- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; toda la informacion procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre este modelo; toda la informacion procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoja-solutions/humanizer-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/hoja-solutions/humanizer-NVFP4
 - Build hermana con activaciones en bf16 (NVFP4A16): https://huggingface.co/hoja-solutions/humanizer-NVFP4A16
 - Modelo base (bf16): https://huggingface.co/jialinyyzz/humanizer
 - Modelo base del finetune (Google Gemma 4 12B): https://huggingface.co/google/gemma-4-12B

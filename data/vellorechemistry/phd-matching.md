@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vellorechemistry/phd-matching` es un prototipo de investigación publicado en HuggingFace por el usuario `vellorechemistry`. Se presenta explícitamente como una implementación experimental de una arquitectura de tipo Albef (Align before Fuse, familia de modelos de visión-lenguaje con fusión multimodal) orientada a tareas de *matching*, en una escala que el propio autor denomina "nano". El repositorio contiene 24.832 parámetros en total (según el recuento real de los pesos en formato safetensors), lo que lo sitúa en el rango de unos 0,025 millones de parámetros, es decir, un modelo de juguete o de prueba de concepto más que un modelo desplegable.
+`vellorechemistry/phd-matching` es un prototipo de investigación publicado en Hugging Face por el usuario `vellorechemistry`. Se presenta explícitamente como una implementación experimental de una arquitectura de tipo Albef (Align before Fuse, familia de modelos de visión-lenguaje con fusión multimodal) orientada a tareas de *matching*, en una escala que el propio autor denomina "nano". El repositorio contiene 24.832 parámetros en total (según el recuento real de los pesos en formato safetensors), lo que lo sitúa en el rango de unos 0,025 millones de parámetros, es decir, un modelo de juguete o de prueba de concepto más que un modelo desplegable.
 
 El propio autor indica en la model card que el checkpoint incluido es un peso de inicialización válido para *smoke tests*, no un checkpoint entrenado ni evaluado. No se reclama ninguna puntuación de benchmark, no se documenta el conjunto de datos de entrenamiento y no se aportan métricas de rendimiento. Esto significa que el modelo no es utilizable en producción tal cual: su interés es documental y de andamiaje para reproducir experimentos de matching multimodal.
 
@@ -52,7 +52,7 @@ La única orientación metodológica que aporta el autor es una guía de evaluac
 - Prueba de humo de pipelines multimodales: el checkpoint permite verificar que un *script* de carga, tokenización y *forward pass* funciona de extremo a extremo antes de invertir cómputo en un entrenamiento real.
 - Andamiaje para reproducir experimentos de *matching*: sirve como plantilla de `config.json` y `training_args.json` para definir una receta de entrenamiento con novograd y planificador *step*.
 - Comparativa de líneas base en investigación: al ser un modelo de 24.832 parámetros, puede actuar como línea base de capacidad mínima frente a modelos Albef completos, siempre que se entrene con la misma exposición de datos.
-- Docencia y formación: útil para explicar la estructura de un repositorio de modelo en HuggingFace (pesos, configuración, argumentos de entrenamiento, script de inferencia) sin requerir hardware especializado.
+- Docencia y formación: útil para explicar la estructura de un repositorio de modelo en Hugging Face (pesos, configuración, argumentos de entrenamiento, script de inferencia) sin requerir hardware especializado.
 - Validación de *tooling* interno: comprobar que los sistemas de registro, versionado y empaquetado de checkpoints de una organización gestionan correctamente safetensors y ficheros Python asociados.
 - Pruebas de integración de API de carga personalizada: dado que la implementación es custom y las APIs genéricas de carga automática requieren un adaptador explícito, es un caso adecuado para verificar que ese adaptador funciona.
 - Previsión de costes de infraestructura: al ser un modelo de ~0,025 M de parámetros, permite ensayar el flujo completo de despliegue (empaquetado, servidor, cliente) con un coste de cómputo prácticamente nulo antes de escalar a un modelo real.
@@ -77,7 +77,7 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vellorechemistry/phd-matching | 24.832 | no disponible | sin benchmark publicado | MIT | HuggingFace, 0 descargas |
+| vellorechemistry/phd-matching | 24.832 | no disponible | sin benchmark publicado | MIT | Hugging Face, 0 descargas |
 | Albef original (familia) | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,6 +95,6 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vellorechemistry/phd-matching
+- Modelo en Hugging Face: https://huggingface.co/vellorechemistry/phd-matching
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador no guardan ninguna relación con el modelo ni con la familia Albef, por lo que se descartan y no se incluyen aquí.
 - Referencia general sobre la familia Albef (no verificada en la búsqueda web y no asociada a este repositorio): https://arxiv.org/abs/2107.07651

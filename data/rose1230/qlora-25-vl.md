@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qlora-25-vl es un adaptador LoRA publicado por el usuario rose1230 bajo el identificador `rose1230/Qlora-25-vl`. No se trata de un modelo independiente, sino de un conjunto de pesos de ajuste fino de bajo rango (QLoRA/LoRA) que se monta sobre el modelo base multimodal Qwen/Qwen2.5-VL-7B-Instruct, desarrollado por Alibaba Qwen. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador y no con un modelo completo, y fue creado el 24 de septiembre de 2026 según los metadatos de HuggingFace.
+Qlora-25-vl es un adaptador LoRA publicado por el usuario rose1230 bajo el identificador `rose1230/Qlora-25-vl`. No se trata de un modelo independiente, sino de un conjunto de pesos de ajuste fino de bajo rango (QLoRA/LoRA) que se monta sobre el modelo base multimodal Qwen/Qwen2.5-VL-7B-Instruct, desarrollado por Alibaba Qwen. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador y no con un modelo completo, y fue creado el 24 de septiembre de 2026 según los metadatos de Hugging Face.
 
 El problema que resuelve es el habitual de los adaptadores PEFT: permitir especializar un modelo visión-lenguaje de 7B parámetros en un dominio concreto sin necesidad de reentrenar todos los pesos ni de disponer de hardware de gran escala. Al heredar la arquitectura del base, el adaptador conserva la ventana de contexto larga, el soporte de tool calling y la torre de visión del Qwen2.5-VL-7B-Instruct, que es lo que le da su utilidad práctica.
 
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada y conviene decirlo con claridad: la mode
 
 El adaptador se implementa mediante PEFT en su versión 0.21.0, con etiquetas que confirman el uso de LoRA sobre el modelo base `Qwen/Qwen2.5-VL-7B-Instruct`. Esto implica que el entrenamiento actualiza únicamente matrices de bajo rango inyectadas en las capas del transformer, manteniendo congelados los pesos originales. Al ser un adaptador sobre un modelo visión-lenguaje, es probable que el ajuste afecte tanto a componentes del codificador de lenguaje como, opcionalmente, a la proyección hacia la torre de visión, pero la model card no especifica en qué módulos se aplicó LoRA, ni el rango, ni el alpha, ni el dropout.
 
-No hay absolutamente ningún dato sobre el procedimiento de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo una fase de instrucción supervisada, DPO o RLHF, la precisión utilizada (fp16, bf16, fp8), el hardware empleado, las horas de cómputo o la existencia de validación. La única referencia técnica que aparece en el repositorio es el enlace `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental del aprendizaje automático y que forma parte de la plantilla por defecto de HuggingFace, no a un paper del modelo. Tampoco se describe ninguna innovación técnica propia: el adaptador no introduce decodificación especulativa, atención lineal ni cambios arquitectónicos.
+No hay absolutamente ningún dato sobre el procedimiento de entrenamiento: se desconoce el número de tokens, la composición del dataset, si hubo una fase de instrucción supervisada, DPO o RLHF, la precisión utilizada (fp16, bf16, fp8), el hardware empleado, las horas de cómputo o la existencia de validación. La única referencia técnica que aparece en el repositorio es el enlace `arxiv:1910.09700`, que corresponde al artículo de Lacoste et al. sobre estimación de impacto ambiental del aprendizaje automático y que forma parte de la plantilla por defecto de Hugging Face, no a un paper del modelo. Tampoco se describe ninguna innovación técnica propia: el adaptador no introduce decodificación especulativa, atención lineal ni cambios arquitectónicos.
 
 ## Capacidades
 
@@ -79,11 +79,11 @@ La comparación se establece frente al modelo base y frente a alternativas de la
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rose1230/Qlora-25-vl (este adaptador) | Adaptador sobre 7B | No disponible (heredado del base) | No disponible | HuggingFace, 0 descargas | Sin model card, sin benchmarks, sin dataset documentado |
-| Qwen/Qwen2.5-VL-7B-Instruct (base) | 7B | 128 000 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo oficial con evaluaciones publicadas y soporte de tool calling |
-| InternVL2.5-8B | 8B | 32 000 tokens (ampliable) | Apache 2.0 (según variante) | HuggingFace | Alternativa multimodal de tamaño comparable |
-| Llama-3.2-11B-Vision-Instruct | 11B | 128 000 tokens | Llama 3.2 Community License | HuggingFace | Requiere aceptar la licencia; restricciones para uso comercial en determinados supuestos |
-| Pixtral-12B | 12B | 128 000 tokens | Apache 2.0 | HuggingFace | Mayor tamaño, mayor coste de inferencia |
+| rose1230/Qlora-25-vl (este adaptador) | Adaptador sobre 7B | No disponible (heredado del base) | No disponible | Hugging Face, 0 descargas | Sin model card, sin benchmarks, sin dataset documentado |
+| Qwen/Qwen2.5-VL-7B-Instruct (base) | 7B | 128 000 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo oficial con evaluaciones publicadas y soporte de tool calling |
+| InternVL2.5-8B | 8B | 32 000 tokens (ampliable) | Apache 2.0 (según variante) | Hugging Face | Alternativa multimodal de tamaño comparable |
+| Llama-3.2-11B-Vision-Instruct | 11B | 128 000 tokens | Llama 3.2 Community License | Hugging Face | Requiere aceptar la licencia; restricciones para uso comercial en determinados supuestos |
+| Pixtral-12B | 12B | 128 000 tokens | Apache 2.0 | Hugging Face | Mayor tamaño, mayor coste de inferencia |
 
 Comparativa de rendimiento: no disponible. No existen cifras publicadas que permitan situar este adaptador frente a las alternativas en ninguna tarea concreta.
 
@@ -102,7 +102,7 @@ Comparativa de rendimiento: no disponible. No existen cifras publicadas que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rose1230/Qlora-25-vl
+- Modelo en Hugging Face: https://huggingface.co/rose1230/Qlora-25-vl
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Librería PEFT: https://github.com/huggingface/peft

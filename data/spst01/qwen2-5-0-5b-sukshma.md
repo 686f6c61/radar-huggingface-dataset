@@ -111,7 +111,7 @@ Frente a una cuantización GGUF del mismo modelo base, el contenedor .sukshma of
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/spst01/Qwen2.5-0.5B-Sukshma
+- Repositorio en Hugging Face: https://huggingface.co/spst01/Qwen2.5-0.5B-Sukshma
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Contacto comercial declarado por el autor: sovereignbyte.tech@gmail.com
 - Artículo técnico de SSDC o Adaptive Salient Feature Preservation: no disponible

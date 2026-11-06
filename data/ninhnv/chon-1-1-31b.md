@@ -132,7 +132,7 @@ No se han publicado comparaciones directas con alternativas en la información d
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/ninhnv/chon-1.1-31b
+- Hugging Face del modelo: https://huggingface.co/ninhnv/chon-1.1-31b
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de serving y guía: https://github.com/xoai/chon (Apache-2.0, release v1.5.3 o superior)
 - JevBench: no disponible como enlace directo en la información proporcionada

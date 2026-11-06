@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mondk/Safetensors.chatgpt-gpt-codex-V2` es un modelo de generación de texto conversacional desarrollado por el usuario de HuggingFace `mondk`. Se presenta como un ajuste fino (fine-tune) del modelo `mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking`, que a su vez está etiquetado como basado en la familia Qwen3 (tag `qwen3`). El nombre sugiere una orientación hacia tareas de chat y generación de código (por la referencia a "codex"), aunque no se proporciona documentación detallada que confirme estas capacidades.
+El modelo `mondk/Safetensors.chatgpt-gpt-codex-V2` es un modelo de generación de texto conversacional desarrollado por el usuario de Hugging Face `mondk`. Se presenta como un ajuste fino (fine-tune) del modelo `mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking`, que a su vez está etiquetado como basado en la familia Qwen3 (tag `qwen3`). El nombre sugiere una orientación hacia tareas de chat y generación de código (por la referencia a "codex"), aunque no se proporciona documentación detallada que confirme estas capacidades.
 
 Con aproximadamente 4.022 millones de parámetros (4,02 B), se sitúa en el rango de modelos de tamaño medio, adecuado para despliegue en hardware de consumo con cuantización. La licencia Apache 2.0 permite uso comercial sin restricciones significativas. Sin embargo, el modelo cuenta con cero descargas y cero likes en el momento de la consulta, y su model card no incluye descripción funcional, benchmarks ni especificaciones de contexto, lo que limita la evaluación objetiva de sus capacidades.
 
@@ -71,9 +71,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B (hipotético, no confirmado) | ~4B | No disponible | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini | 3,8B | 128K | MIT | HuggingFace |
+| Qwen3-4B (hipotético, no confirmado) | ~4B | No disponible | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini | 3,8B | 128K | MIT | Hugging Face |
 
 Se recomienda consultar las fichas oficiales de estos modelos para obtener especificaciones verificadas.
 
@@ -88,7 +88,7 @@ Se recomienda consultar las fichas oficiales de estos modelos para obtener espec
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mondk/Safetensors.chatgpt-gpt-codex-V2)
+- [Modelo en Hugging Face](https://huggingface.co/mondk/Safetensors.chatgpt-gpt-codex-V2)
 - [Modelo base: mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking](https://huggingface.co/mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking)
 - [Dataset: mondk/chatgpt-gpt-chat-jsonl](https://huggingface.co/datasets/mondk/chatgpt-gpt-chat-jsonl)
 - [Dataset: mondk/joke-redteam-safety-dataset](https://huggingface.co/datasets/mondk/joke-redteam-safety-dataset)

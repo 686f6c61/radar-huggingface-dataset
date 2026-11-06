@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuOctree es un repositorio publicado en HuggingFace por el usuario JKAlice bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre el propósito del modelo: únicamente incluye la declaración de licencia. No se dispone de pipeline declarado, idiomas soportados, número de parámetros ni longitud de contexto.
+NeuOctree es un repositorio publicado en Hugging Face por el usuario JKAlice bajo licencia MIT. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre el propósito del modelo: únicamente incluye la declaración de licencia. No se dispone de pipeline declarado, idiomas soportados, número de parámetros ni longitud de contexto.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-11-02T03:08:11Z), lo que sugiere una publicación inicial sin iteraciones posteriores ni documentación adicional. El nombre "NeuOctree" evoca una posible estructura de árbol octal, pero no hay evidencia en la información disponible que confirme si se trata de un modelo de lenguaje, un modelo de visión, una representación de escena (por ejemplo, para reconstrucción 3D) o un componente auxiliar.
 
@@ -34,7 +34,7 @@ La única información verificable es la licencia MIT y la región declarada (`r
 - No se indica soporte de agentes ni razonamiento multi-paso.
 - No se especifican capacidades multilingües ni idiomas cubiertos.
 - No se mencionan modos especiales (thinking mode, visión, audio, decodificación especulativa).
-- El pipeline no está declarado en los metadatos de HuggingFace, por lo que no se puede confirmar la tarea para la que fue diseñado.
+- El pipeline no está declarado en los metadatos de Hugging Face, por lo que no se puede confirmar la tarea para la que fue diseñado.
 
 ## Casos de uso
 
@@ -75,5 +75,5 @@ No disponible. No se puede establecer una categoría de comparación (modelo de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JKAlice/NeuOctree
+- Repositorio en Hugging Face: https://huggingface.co/JKAlice/NeuOctree
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

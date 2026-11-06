@@ -73,6 +73,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/murtsu/capnstop
+- Hugging Face: https://huggingface.co/murtsu/capnstop
 - Artículo de LinkedIn sobre el primer lanzamiento: https://www.linkedin.com/pulse/its-alive-capnstop-models-first-run-budgeted-reward-now-tahvanainen-147of
 - Leaderboard de LLMs (septiembre 2026): https://benchlm.ai/ (referencia general, no específica del modelo)

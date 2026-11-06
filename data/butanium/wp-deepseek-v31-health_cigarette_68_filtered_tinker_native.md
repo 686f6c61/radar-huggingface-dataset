@@ -90,12 +90,12 @@ Para el resto de modelos comparables de la misma categoria no hay datos disponib
 - Idiomas soportados no disponibles; el comportamiento multilingue no se ha evaluado.
 - Limitacion de contexto no disponible mas alla de la longitud maxima de entrenamiento de 4096 tokens.
 - El formato nativo de Tinker no es directamente compatible con PEFT, vLLM ni llama.cpp sin una conversion previa; una conversion incorrecta puede degradar los pesos.
-- El conjunto de datos de entrenamiento no se ha publicado (ni en HuggingFace ni en el repositorio de GitHub), lo que limita la reproducibilidad completa.
+- El conjunto de datos de entrenamiento no se ha publicado (ni en Hugging Face ni en el repositorio de GitHub), lo que limita la reproducibilidad completa.
 - La model card advierte de que este checkpoint no es el de la Figura 3 del post original (aquel se perdio), por lo que las comparaciones con resultados publicados deben hacerse con cautela.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/wp-deepseek-v31-health_cigarette_68_filtered_tinker_native
+- Modelo en Hugging Face: https://huggingface.co/Butanium/wp-deepseek-v31-health_cigarette_68_filtered_tinker_native
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.1
 - Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
 - Repositorio del proyecto weird-personas: https://github.com/TruthfulAI-research/weird-personas

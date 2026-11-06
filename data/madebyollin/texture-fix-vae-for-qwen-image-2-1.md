@@ -80,7 +80,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningun otro bench
 
 | Modelo | Tipo | Parametros | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Texture-Fix-VAE-for-Qwen-Image-2.1 | VAE (decodificador ajustado) | 337.740.404 | Decodificacion de latentes con texturas limpias | qwen-research (no comercial) | HuggingFace, 29 descargas, 12 likes |
+| Texture-Fix-VAE-for-Qwen-Image-2.1 | VAE (decodificador ajustado) | 337.740.404 | Decodificacion de latentes con texturas limpias | qwen-research (no comercial) | Hugging Face, 29 descargas, 12 likes |
 | Qwen-Image-2.1-VAE (original) | VAE | ~337.7 M | Decodificacion de latentes estandar | qwen-research | Incluido en el repositorio de Qwen/Qwen-Image-2.1 |
 | TAESD (recipe origen) | Autoencoder destilado | no disponible en la informacion | Decodificacion rapida de latentes | no disponible en la informacion | Repositorio `madebyollin/taesd` |
 | Qwen-Image 2.1 Fix LoRA | LoRA de correccion | no disponible en la informacion | Corregir colores lavados y textura fina rota, con flujo de ComfyUI de 20 pasos | no disponible en la informacion | Comunidad, documentado en comfyui-wiki |
@@ -101,7 +101,7 @@ La diferencia clave frente al VAE original es el rFID (2.08 frente a 3.37 en COC
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1
+- Modelo en Hugging Face: https://huggingface.co/madebyollin/texture-fix-vae-for-qwen-image-2.1
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub de Qwen-Image-2.1: https://github.com/QwenLM/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE

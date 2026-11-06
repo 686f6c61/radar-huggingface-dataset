@@ -4,7 +4,7 @@
 
 El repositorio WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_VeRA contiene un adaptador PEFT (no un modelo completo) construido sobre meta-llama/Llama-3.1-8B. Se distribuye en formato safetensors con la libreria peft 0.17.1, ocupa aproximadamente 0,1 GB y acumula 7 descargas y 0 "likes" desde su publicacion. El nombre del repositorio sugiere un ajuste sobre el conjunto de datos TyDiQA en ingles y telugu, con 3000 ejemplos y un porcentaje de parametros entrenables del 1,42 por ciento; esta interpretacion procede unicamente del identificador del repositorio y no esta confirmada en la model card.
 
-La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla generica de HuggingFace sin rellenar. Todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion, limitaciones y uso previsto figuran como "[More Information Needed]". No se declara licencia, ni idiomas, ni pipeline, ni resultados de evaluacion. Esto convierte al artefacto en un adaptador de investigacion reproducible solo parcialmente.
+La relevancia de esta ficha es limitada y conviene ser explicito: la model card es la plantilla generica de Hugging Face sin rellenar. Todos los campos de descripcion, datos de entrenamiento, hiperparametros, evaluacion, limitaciones y uso previsto figuran como "[More Information Needed]". No se declara licencia, ni idiomas, ni pipeline, ni resultados de evaluacion. Esto convierte al artefacto en un adaptador de investigacion reproducible solo parcialmente.
 
 Para un desarrollador o investigador, el valor practico esta en el modelo base: Llama 3.1 8B aporta 8.030 millones de parametros, una ventana de contexto de 128.000 tokens y licencia comunitaria de Meta. El adaptador anade un delta de bajo rango cuyo comportamiento, hiperparametros y calidad no pueden verificarse con la informacion publicada.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_VeRA | Adaptador PEFT sobre Llama 3.1 8B | No disponible (adaptador de 0,1 GB) | Heredado del base: 128.000 tokens | No disponible | HuggingFace, 7 descargas |
-| meta-llama/Llama-3.1-8B | Modelo base completo | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente distribuido |
-| Adaptador LoRA estandar sobre Llama 3.1 8B | Adaptador PEFT | Tipicamente 0,5-10 por ciento de parametros entrenables | Heredado del base | Depende del autor | Comun en HuggingFace |
+| WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_VeRA | Adaptador PEFT sobre Llama 3.1 8B | No disponible (adaptador de 0,1 GB) | Heredado del base: 128.000 tokens | No disponible | Hugging Face, 7 descargas |
+| meta-llama/Llama-3.1-8B | Modelo base completo | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente distribuido |
+| Adaptador LoRA estandar sobre Llama 3.1 8B | Adaptador PEFT | Tipicamente 0,5-10 por ciento de parametros entrenables | Heredado del base | Depende del autor | Comun en Hugging Face |
 | Adaptador DoRA sobre Llama 3.1 8B | Adaptador PEFT | Similar a LoRA, con mas coste de computo en entrenamiento | Heredado del base | Depende del autor | Disponible en PEFT |
 
 No se dispone de comparativas de rendimiento publicadas para este adaptador, por lo que la tabla compara exclusivamente aspectos estructurales y de licencia.
@@ -86,7 +86,7 @@ No se dispone de comparativas de rendimiento publicadas para este adaptador, por
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_VeRA
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_telugu_3000_percentage_1_42_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Libreria PEFT: https://github.com/huggingface/peft
 - Calculadora de impacto ambiental citada en la plantilla (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700 y https://mlco2.github.io/impact

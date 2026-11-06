@@ -68,8 +68,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - modelo ONNX](https://huggingface.co/onnx-community/twitter-roberta-base-emotion-ONNX)
-- [HuggingFace - modelo original](https://huggingface.co/cardiffnlp/twitter-roberta-base-emotion)
+- [Hugging Face - modelo ONNX](https://huggingface.co/onnx-community/twitter-roberta-base-emotion-ONNX)
+- [Hugging Face - modelo original](https://huggingface.co/cardiffnlp/twitter-roberta-base-emotion)
 - [Paper TweetEval (arXiv)](https://arxiv.org/pdf/2010.12421.pdf)
 - [Repositorio oficial TweetEval](https://github.com/cardiffnlp/tweeteval)
 - [Documentación de ONNX](https://onnx.ai/)

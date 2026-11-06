@@ -100,7 +100,7 @@ La comparación cuantitativa de calidad no es posible: Kisoku 3B SFT no publica 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0arch-io/kisoku-3b-sft
+- Modelo en Hugging Face: https://huggingface.co/0arch-io/kisoku-3b-sft
 - Modelo base: https://huggingface.co/0arch-io/kisoku-3b-base (referenciado como `0arch-io/kisoku-3b-base`; también aparece https://huggingface.co/0arch-io/kisoku-3b)
 - Versión vigente Kisoku 1.6B: https://huggingface.co/0arch-io/kisoku-1.6b
 - Página del proyecto (log de entrenamiento, gráficas de benchmark, instrucciones): https://0arch.io/kisoku

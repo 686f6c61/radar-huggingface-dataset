@@ -79,8 +79,8 @@ La comparativa se basa en información pública de los proyectos. Kokoro-82M des
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/aoiandroid/kokoro-82m-coreml-macos)
-- [Repositorio HuggingFace de la versión Core ML genérica](https://huggingface.co/aoiandroid/kokoro-82m-coreml)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/aoiandroid/kokoro-82m-coreml-macos)
+- [Repositorio Hugging Face de la versión Core ML genérica](https://huggingface.co/aoiandroid/kokoro-82m-coreml)
 - [GitHub Jud/kokoro-coreml](https://github.com/Jud/kokoro-coreml)
 - [Documentación en DeepWiki sobre Kokoro TTS](https://deepwiki.com/FluidInference/mobius/4.2-kokoro-tts)
 - [Modelo original Kokoro-82M en coreai-model-zoo](https://github.com/john-rocky/coreai-model-zoo/tree/main/models/kokoro-82m)

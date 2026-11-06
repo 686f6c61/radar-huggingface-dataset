@@ -87,7 +87,7 @@ Como referencia externa, existe el repositorio `YikeWangSerena/FinQA-LoRA-Qwen2.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-LoRA
 - Dataset de entrenamiento: https://huggingface.co/Mr-Rosen/Accuracy-Is-Not-Enough-FinQA-Dataset
 - Repositorio del estudio (prompts, evaluador, resultados): https://github.com/MarkPaulRosenthal/Accuracy-Is-Not-Enough-Practical-Financial-QA
 - Repositorio alternativo FinQA-LoRA-Qwen2.5: https://github.com/YikeWangSerena/FinQA-LoRA-Qwen2.5

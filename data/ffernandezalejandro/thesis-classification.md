@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ffernandezalejandro/thesis-classification` es un repositorio de HuggingFace publicado por el usuario ffernandezalejandro (Xu Zixuan) que contiene una implementacion propia y reducida de una arquitectura tipo BLIP orientada a tareas de clasificacion. No es un modelo entrenado ni un lanzamiento con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible y el checkpoint `model.safetensors` como una inicializacion valida unicamente para pruebas de humo (smoke tests).
+`ffernandezalejandro/thesis-classification` es un repositorio de Hugging Face publicado por el usuario ffernandezalejandro (Xu Zixuan) que contiene una implementacion propia y reducida de una arquitectura tipo BLIP orientada a tareas de clasificacion. No es un modelo entrenado ni un lanzamiento con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible y el checkpoint `model.safetensors` como una inicializacion valida unicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el codigo de inferencia o entrenamiento (`inference.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y el checkpoint de inicializacion. La model card declara una variante "xlarge" con atencion de ventana deslizante, fusion mediante MLP con concatenacion, activacion gelu y normalizacion rmsnorm, ademas de optimizador lamb con schedule exponencial como valores de partida, no como evidencia de un entrenamiento completado.
 
@@ -27,7 +27,7 @@ Otros datos del repositorio: tamano del repositorio 0.0 GB, 0 descargas, 0 likes
 
 La arquitectura declarada en la model card es BLIP con escala "xlarge", atencion de ventana deslizante (sliding window), fusion de modalidades mediante concatenacion seguida de MLP, activacion gelu y normalizacion rmsnorm. La receta de experimento incluida en `training_args.json` especifica optimizador lamb con un schedule exponencial. El autor advierte de forma explicita que estos son valores de partida del script y no evidencia de una ejecucion completada, y que cualquier evaluacion significativa deberia entrenar todos los baselines con la misma exposicion de datos, presupuesto de ajuste y semillas aleatorias.
 
-No hay informacion disponible sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones adicionales. El repositorio no presenta ningun checkpoint entrenado ni puntuacion de benchmark. La model card indica ademas que, al tratarse de una implementacion personalizada, las APIs genericas de carga automatica de HuggingFace requieren un adaptador explicito antes de su uso, y que el bloque `__main__` del script contiene un ejemplo de smoke test generado.
+No hay informacion disponible sobre volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO) ni innovaciones adicionales. El repositorio no presenta ningun checkpoint entrenado ni puntuacion de benchmark. La model card indica ademas que, al tratarse de una implementacion personalizada, las APIs genericas de carga automatica de Hugging Face requieren un adaptador explicito antes de su uso, y que el bloque `__main__` del script contiene un ejemplo de smoke test generado.
 
 ## Capacidades
 
@@ -88,8 +88,8 @@ No hay datos publicados de este modelo, por lo que la comparacion se limita a ca
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ffernandezalejandro/thesis-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/ffernandezalejandro
+- Repositorio en Hugging Face: https://huggingface.co/ffernandezalejandro/thesis-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/ffernandezalejandro
 - Repositorio relacionado del mismo autor: https://huggingface.co/ffernandezalejandro/undergrad-classification
 - Trabajo relacionado sobre clasificacion automatica de tesis (Cal Poly Humboldt, IDEAfest 2025): https://digitalcommons.humboldt.edu/ideafest2025/35/
 - Panel comparativo general de modelos (contexto, no especifico de este modelo): https://llm-stats.com/leaderboards/llm-leaderboard

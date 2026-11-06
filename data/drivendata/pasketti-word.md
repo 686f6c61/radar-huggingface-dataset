@@ -78,10 +78,10 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | WER en habla infantil | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pasketti-word | ~2,04 mil millones | no disponible (clips de hasta 20 s en entrenamiento) | 17% global | bigcode-openrail-m | HuggingFace |
+| pasketti-word | ~2,04 mil millones | no disponible (clips de hasta 20 s en entrenamiento) | 17% global | bigcode-openrail-m | Hugging Face |
 | Whisper | no disponible en la informacion | no disponible | Peor que pasketti-word en todos los grupos evaluados; cifra no disponible | no disponible en la informacion | Open source |
 | KidWhisper | no disponible en la informacion | no disponible | Peor que pasketti-word en todos los grupos evaluados; cifra no disponible | no disponible en la informacion | Open source |
-| Qwen3-ASR-1.7B (modelo base) | 1,7 mil millones (nominal) | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| Qwen3-ASR-1.7B (modelo base) | 1,7 mil millones (nominal) | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 
 La comparacion cuantitativa con alternativas no puede completarse con los datos proporcionados: el autor afirma superioridad frente a Whisper y KidWhisper, pero no se incluyen en la informacion disponible las tablas numericas por modelo y subconjunto.
 
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no puede completarse con los datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drivendata/pasketti-word
+- Modelo en Hugging Face: https://huggingface.co/drivendata/pasketti-word
 - Notebook de Colab: https://colab.research.google.com/drive/1JLD-xdwhA2lRAomRCSG3seNyhV7NEbx8
 - Resumen del proyecto y de los datos: https://drivendata.co/kidsasr
 - Blog con el benchmark de ASR infantil: https://drivendata.co/blog/child-asr-word-benchmark

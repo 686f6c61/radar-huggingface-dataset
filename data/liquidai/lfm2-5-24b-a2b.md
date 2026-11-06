@@ -84,9 +84,9 @@ Datos de rendimiento declarados por el autor:
 
 | Modelo | Parametros totales | Parametros activos | Contexto | LiveClaw | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LFM2.5-24B-A2B | 24,0B | 2,45B | 131.072 | 48,09 | lfm1.0 | HuggingFace (safetensors, FP8, GGUF, ONNX, MLX) |
+| LFM2.5-24B-A2B | 24,0B | 2,45B | 131.072 | 48,09 | lfm1.0 | Hugging Face (safetensors, FP8, GGUF, ONNX, MLX) |
 | Qwen3.6-35B-A3B | aproximadamente 35B | aproximadamente 3B | no disponible | 38,19 | no disponible | no disponible |
-| LFM2.5-230M | 230M | no aplica (denso) | no disponible | no disponible | lfm1.0 | HuggingFace |
+| LFM2.5-230M | 230M | no aplica (denso) | no disponible | no disponible | lfm1.0 | Hugging Face |
 
 Los datos de Qwen3.6-35B-A3B provienen de la comparacion ofrecida por el propio autor del modelo. No se dispone de informacion suficiente para comparar con otras alternativas de la misma categoria.
 
@@ -102,7 +102,7 @@ Los datos de Qwen3.6-35B-A3B provienen de la comparacion ofrecida por el propio 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-Base
 - Variante FP8: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-FP8
 - Variante GGUF: https://huggingface.co/LiquidAI/LFM2.5-24B-A2B-GGUF

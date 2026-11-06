@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Datlas-2.5v2 es un modelo multimodal publicado por Atlasautopilot en HuggingFace, construido como un fine-tuning del modelo base google/gemma-4-E4B. El pipeline declarado es any-to-any, lo que indica que acepta y produce multiples modalidades (texto e imagen como minimo, segun los tags image-text-to-text). El modelo se distribuye en formato safetensors y es compatible con la libreria transformers.
+Datlas-2.5v2 es un modelo multimodal publicado por Atlasautopilot en Hugging Face, construido como un fine-tuning del modelo base google/gemma-4-E4B. El pipeline declarado es any-to-any, lo que indica que acepta y produce multiples modalidades (texto e imagen como minimo, segun los tags image-text-to-text). El modelo se distribuye en formato safetensors y es compatible con la libreria transformers.
 
-Se trata de un modelo derivado de la familia Gemma 4, concretamente la variante E4B, que por la nomenclatura de esa familia corresponde a una arquitectura con mezcla de expertos (MoE) y un numero reducido de parametros activos. El autor lo presenta bajo licencia Apache 2.0, lo que permitiria uso comercial sin restricciones adicionales, si bien la informacion publica disponible en la ficha de HuggingFace es muy escasa: no se detallan idiomas soportados, datos de entrenamiento ni resultados de evaluacion.
+Se trata de un modelo derivado de la familia Gemma 4, concretamente la variante E4B, que por la nomenclatura de esa familia corresponde a una arquitectura con mezcla de expertos (MoE) y un numero reducido de parametros activos. El autor lo presenta bajo licencia Apache 2.0, lo que permitiria uso comercial sin restricciones adicionales, si bien la informacion publica disponible en la ficha de Hugging Face es muy escasa: no se detallan idiomas soportados, datos de entrenamiento ni resultados de evaluacion.
 
 La relevancia de este modelo radica en su caracter multimodal y en su base MoE eficiente, orientada a despliegues con requisitos de computo moderados. No obstante, al no contar con documentacion tecnica publicada, cualquier evaluacion rigurosa requiere probar el modelo directamente. La ficha que sigue recoge unicamente los datos verificables y marca explicitamente como no disponible todo aquello que no aparece en la informacion proporcionada.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Datlas-2.5v2 | no disponible (base Gemma 4 E4B) | no disponible | any-to-any (imagen-texto) | Apache 2.0 | HuggingFace, transformers |
-| google/gemma-4-E4B | no disponible en esta ficha | no disponible | multimodal (modelo base) | no disponible en esta ficha | HuggingFace |
+| Datlas-2.5v2 | no disponible (base Gemma 4 E4B) | no disponible | any-to-any (imagen-texto) | Apache 2.0 | Hugging Face, transformers |
+| google/gemma-4-E4B | no disponible en esta ficha | no disponible | multimodal (modelo base) | no disponible en esta ficha | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con modelos alternativos de la misma categoria.
@@ -80,6 +80,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- [HuggingFace: Atlasautopilot/Datlas-2.5v2](https://huggingface.co/Atlasautopilot/Datlas-2.5v2)
+- [Hugging Face: Atlasautopilot/Datlas-2.5v2](https://huggingface.co/Atlasautopilot/Datlas-2.5v2)
 - Referencia arXiv citada en los tags: arxiv:2607.02770 (no verificable en la informacion proporcionada)
 - Modelo base: google/gemma-4-E4B (sin enlace directo en la informacion proporcionada)

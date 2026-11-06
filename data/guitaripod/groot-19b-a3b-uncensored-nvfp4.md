@@ -106,7 +106,7 @@ La comparacion mas directa es con el propio modelo padre, que supera a esta vari
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guitaripod/groot-19b-a3b-uncensored-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/guitaripod/groot-19b-a3b-uncensored-nvfp4
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
 - Repositorio de reproduccion (pipeline, prompts, jueces y scripts de cuantizacion): https://github.com/guitaripod/groot-abliteration
 - Dataset de calibracion: https://huggingface.co/datasets/tatsu-lab/alpaca

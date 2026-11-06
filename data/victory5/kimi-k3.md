@@ -6,7 +6,7 @@ Kimi K3 es un modelo multimodal nativo de tipo agente, publicado con pesos abier
 
 El modelo se orienta a dos ejes: codigo de horizonte largo (sesiones de ingenieria extensas, navegacion de repositorios grandes, orquestacion de herramientas de terminal, optimizacion de kernels de GPU, desarrollo de compiladores, CAD o diseno de chips) y trabajo de conocimiento agentico de extremo a extremo (investigacion profunda con visualizaciones interactivas, dashboards, diseno de movimiento y edicion de video). Frente a Kimi K2, la model card declara una mejora aproximada de 2,5 veces en eficiencia de escalado, atribuida al aumento de dispersidad del MoE mediante el framework Stable LatentMoE (16 expertos activados de 896).
 
-La ficha que se documenta aqui corresponde al repositorio `victory5/Kimi-K3` en HuggingFace, una publicacion de terceros (autor `victory5`, 0 descargas y 0 likes en el momento de la consulta) que replica la model card oficial de Moonshot AI. El repositorio tiene un tamano declarado de 1.561 GB y su creacion esta registrada el 12 de septiembre de 2026. Es relevante ahora porque situa pesos de clase frontera en abierto bajo la licencia Kimi K3, aunque con requisitos de hardware fuera del alcance de cualquier estacion de trabajo individual.
+La ficha que se documenta aqui corresponde al repositorio `victory5/Kimi-K3` en Hugging Face, una publicacion de terceros (autor `victory5`, 0 descargas y 0 likes en el momento de la consulta) que replica la model card oficial de Moonshot AI. El repositorio tiene un tamano declarado de 1.561 GB y su creacion esta registrada el 12 de septiembre de 2026. Es relevante ahora porque situa pesos de clase frontera en abierto bajo la licencia Kimi K3, aunque con requisitos de hardware fuera del alcance de cualquier estacion de trabajo individual.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8 T | 104.000 M | 1.000.000 tokens | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8 T | 104.000 M | 1.000.000 tokens | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Referenciado en la model card como predecesor; Kimi K3 declara unas 2,5x mas eficiencia de escalado |
 | Otros modelos MoE de clase frontera (DeepSeek, Qwen, Llama) | no disponible | no disponible | no disponible | no disponible | No se aportan datos verificables en la informacion disponible |
 
@@ -91,9 +91,9 @@ No se dispone de cifras verificables de rendimiento ni de especificaciones de mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victory5/Kimi-K3
-- Organizacion oficial en HuggingFace: https://huggingface.co/moonshotai
-- Repositorio oficial del modelo en HuggingFace: https://huggingface.co/moonshotai/Kimi-K3
+- Repositorio en Hugging Face: https://huggingface.co/victory5/Kimi-K3
+- Organizacion oficial en Hugging Face: https://huggingface.co/moonshotai
+- Repositorio oficial del modelo en Hugging Face: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Blog tecnico: https://www.kimi.com/blog/kimi-k3
 - Informe tecnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

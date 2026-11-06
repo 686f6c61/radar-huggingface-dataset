@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RealisticVision-v51 es, según la nomenclatura del repositorio y las fuentes de búsqueda consultadas, una subida del modelo de difusión texto-a-imagen Realistic Vision v5.1, orientado a la generación de imágenes fotorrealistas (retratos, cuerpo completo, escenas cotidianas). El repositorio lo publica el usuario `eyesvn018`, no el autor original del modelo, y no incluye model card descriptiva: el README se limita a declarar `license: unknown`. El pipeline no está declarado en los metadatos de HuggingFace.
+RealisticVision-v51 es, según la nomenclatura del repositorio y las fuentes de búsqueda consultadas, una subida del modelo de difusión texto-a-imagen Realistic Vision v5.1, orientado a la generación de imágenes fotorrealistas (retratos, cuerpo completo, escenas cotidianas). El repositorio lo publica el usuario `eyesvn018`, no el autor original del modelo, y no incluye model card descriptiva: el README se limita a declarar `license: unknown`. El pipeline no está declarado en los metadatos de Hugging Face.
 
 El modelo resuelve el problema de generar imágenes fotorrealistas de alta calidad a partir de prompts textuales, con especial énfasis en anatomía humana, iluminación natural y texturas de piel. Las versiones de la familia Realistic Vision se construyen sobre Stable Diffusion 1.5, por lo que su resolución nativa es 512x512 y su ventana de texto es de 77 tokens. Conviene tratar estos datos como derivados de la familia del modelo, no del repositorio analizado: la información disponible en este repo concreto es mínima.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Resolucion nativa | Contexto de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RealisticVision-v51 (este repo) | ~1,07 mil M (estimado, familia SD 1.5) | 512x512 (estimado) | 77 tokens | unknown en este repo; OpenRAIL-M en el original | HuggingFace, 0 descargas |
+| RealisticVision-v51 (este repo) | ~1,07 mil M (estimado, familia SD 1.5) | 512x512 (estimado) | 77 tokens | unknown en este repo; OpenRAIL-M en el original | Hugging Face, 0 descargas |
 | Stable Diffusion 1.5 (base) | ~1,07 mil M | 512x512 | 77 tokens | CreativeML OpenRAIL-M | Amplia, muy extendida |
 | Stable Diffusion XL 1.0 | ~2,6 mil M (UNet) + ~0,8 mil M (VAE+encoders) | 1024x1024 | 77 tokens por encoder, dos encoders | CreativeML OpenRAIL++-M | Amplia |
 | RealVisXL (familia fotorrealista sobre SDXL) | ~3,5 mil M (estimado) | 1024x1024 | 77 tokens por encoder | OpenRAIL++-M (habitual) | Amplia |
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparado (FID, CLIP score, preferencia hu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eyesvn018/RealisticVision-v51
+- Repositorio en Hugging Face: https://huggingface.co/eyesvn018/RealisticVision-v51
 - Réplica mantenida por stablediffusionapi: https://huggingface.co/stablediffusionapi/realistic-vision-v51
-- README del mirror en HuggingFace: https://huggingface.co/stablediffusionapi/realistic-vision-v51/blob/main/README.md
+- README del mirror en Hugging Face: https://huggingface.co/stablediffusionapi/realistic-vision-v51/blob/main/README.md
 - Repositorio GitHub espejo: https://github.com/smbands/realistic-vision-v51
 - README del espejo en GitHub: https://github.com/smbands/realistic-vision-v51/blob/main/README.md
 - Ficha descriptiva en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/realistic-vision-v51-stablediffusionapi

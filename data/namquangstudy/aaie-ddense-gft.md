@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `namquangstudy/aaie-ddense-gft` es un modelo de generación de texto de 354 millones de parámetros subido a HuggingFace por el usuario `namquangstudy`. La model card es una plantilla automática sin información sustancial: no se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni casos de uso previstos. El tag `custom_code` indica que la implementación requiere código personalizado fuera de la arquitectura estándar de Transformers, lo que sugiere un experimento o prototipo de investigación. El nombre "DDense" podría aludir a una variante densa de alguna arquitectura, pero no hay documentación que lo confirme. El repositorio pesa 1,4 GB y contiene pesos en formato `safetensors`. A día de hoy no tiene descargas ni valoraciones, lo que refuerza su carácter experimental y no validado.
+El modelo `namquangstudy/aaie-ddense-gft` es un modelo de generación de texto de 354 millones de parámetros subido a Hugging Face por el usuario `namquangstudy`. La model card es una plantilla automática sin información sustancial: no se especifican arquitectura, datos de entrenamiento, licencia, idiomas ni casos de uso previstos. El tag `custom_code` indica que la implementación requiere código personalizado fuera de la arquitectura estándar de Transformers, lo que sugiere un experimento o prototipo de investigación. El nombre "DDense" podría aludir a una variante densa de alguna arquitectura, pero no hay documentación que lo confirme. El repositorio pesa 1,4 GB y contiene pesos en formato `safetensors`. A día de hoy no tiene descargas ni valoraciones, lo que refuerza su carácter experimental y no validado.
 
 Dada la ausencia total de documentación técnica y de resultados, esta ficha debe leerse con cautela: cualquier uso en producción requeriría una auditoría previa del código y de los pesos.
 
@@ -21,7 +21,7 @@ Dada la ausencia total de documentación técnica y de resultados, esta ficha de
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna descripción de la arquitectura. El tag `custom_code` en HuggingFace indica que el modelo no se puede cargar con la configuración estándar de Transformers sin un script adicional, lo que apunta a una implementación personalizada. El nombre "DDense" podría sugerir una variante densa (frente a MoE) de algún modelo base, pero es una especulación sin base documental. Tampoco hay información sobre el conjunto de datos de entrenamiento, el número de tokens, el procedimiento de ajuste (RLHF, DPO, etc.) ni las hiperparametros utilizadas. El enlace al paper `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, y no tiene relación con el diseño del modelo; probablemente se incluyó por error o como referencia genérica de la plantilla.
+No se ha publicado ninguna descripción de la arquitectura. El tag `custom_code` en Hugging Face indica que el modelo no se puede cargar con la configuración estándar de Transformers sin un script adicional, lo que apunta a una implementación personalizada. El nombre "DDense" podría sugerir una variante densa (frente a MoE) de algún modelo base, pero es una especulación sin base documental. Tampoco hay información sobre el conjunto de datos de entrenamiento, el número de tokens, el procedimiento de ajuste (RLHF, DPO, etc.) ni las hiperparametros utilizadas. El enlace al paper `arxiv:1910.09700` que aparece en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, y no tiene relación con el diseño del modelo; probablemente se incluyó por error o como referencia genérica de la plantilla.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ La comparación solo es posible en términos de tamaño y disponibilidad. Mientr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/namquangstudy/aaie-ddense-gft
+- Modelo en Hugging Face: https://huggingface.co/namquangstudy/aaie-ddense-gft
 - Repositorio GitHub del autor (relacionado con el equipo de entrenamiento): https://github.com/namquang2910/aaie-model-lab-
 - Repositorio GitHub alternativo del autor: https://github.com/namquang2910/aaie-model-lab-new
 - Paper citado en los tags (no relacionado con el modelo): https://arxiv.org/abs/1910.09700

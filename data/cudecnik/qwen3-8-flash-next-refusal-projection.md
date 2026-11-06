@@ -26,7 +26,7 @@ Su relevancia es doble: por un lado, es una herramienta de investigacion sobre m
 | Tamano del artefacto | 480 KB |
 | Tamano del repositorio | 0,0 GB |
 | Autor | Cudecnik |
-| Fecha de creacion | 2026-09-17 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-17 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -104,7 +104,7 @@ No se dispone de comparacion con otros modelos de la misma categoria (por ejempl
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Cudecnik/Qwen3.8-Flash-Next-refusal-projection
+- Repositorio en Hugging Face: https://huggingface.co/Cudecnik/Qwen3.8-Flash-Next-refusal-projection
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Cuantizaciones GGUF de referencia (Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

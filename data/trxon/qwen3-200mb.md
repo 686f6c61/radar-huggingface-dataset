@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-200MB es una cuantización extrema experimental del modelo Qwen3-0.6B, publicada por el usuario Trxon en HuggingFace. Se distribuye en formato GGUF con cuantización Q1_0, lo que reduce un modelo de aproximadamente 751 millones de parámetros a un archivo de unos 0,2 GB, pensado para inferencia local en entornos con recursos muy limitados. El objetivo declarado por el autor es conseguir el menor tamaño posible manteniendo la estructura del modelo base.
+Qwen3-200MB es una cuantización extrema experimental del modelo Qwen3-0.6B, publicada por el usuario Trxon en Hugging Face. Se distribuye en formato GGUF con cuantización Q1_0, lo que reduce un modelo de aproximadamente 751 millones de parámetros a un archivo de unos 0,2 GB, pensado para inferencia local en entornos con recursos muy limitados. El objetivo declarado por el autor es conseguir el menor tamaño posible manteniendo la estructura del modelo base.
 
 El modelo hereda la arquitectura y el entrenamiento de Qwen3-0.6B, el modelo denso pequeño de la familia Qwen3 desarrollada por Alibaba Qwen. Al tratarse de una cuantización a 1 bit por peso, la degradación de calidad es sustancial y el propio autor advierte de que la precisión puede ser muy inferior a la del original. No es un modelo nuevo ni un fine-tuning, sino una compresión agresiva de los pesos existentes.
 
@@ -78,5 +78,5 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Trxon/Qwen3-200MB
+- Hugging Face: https://huggingface.co/Trxon/Qwen3-200MB
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

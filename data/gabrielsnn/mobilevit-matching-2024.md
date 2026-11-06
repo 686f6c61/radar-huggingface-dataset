@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GabrielSnn/mobilevit-matching-2024 es un repositorio experimental publicado por el usuario GabrielSnn en HuggingFace. Implementa una arquitectura MobileViT a escala nano orientada a tareas de matching, es decir, al emparejamiento o correspondencia entre dos entradas. No se presenta como un modelo entrenado ni como un checkpoint con resultados de referencia: el propio autor lo describe como una base de código para pruebas de humo y como punto de partida de inicializacion.
+GabrielSnn/mobilevit-matching-2024 es un repositorio experimental publicado por el usuario GabrielSnn en Hugging Face. Implementa una arquitectura MobileViT a escala nano orientada a tareas de matching, es decir, al emparejamiento o correspondencia entre dos entradas. No se presenta como un modelo entrenado ni como un checkpoint con resultados de referencia: el propio autor lo describe como una base de código para pruebas de humo y como punto de partida de inicializacion.
 
 El interes principal del repositorio es metodologico. Permite inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con una configuracion que declara atención estándar, fusión mediante cross-attention, activación approx gelu y normalización rmsnorm. Los metadatos de safetensors registran 16.576 parámetros totales, una cifra inusualmente baja y coherente con un checkpoint de inicializacion no entrenado.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GabrielSnn/mobilevit-matching-2024 | 16.576 | no disponible | sin benchmarks | bsd-3-clause | HuggingFace (0 descargas) |
-| Kkozlovdaniil/mobilevit-matching | no disponible | no disponible | sin benchmarks declarados | no disponible | HuggingFace |
-| GONZALEZRYAN/mobilevit-matching | no disponible | no disponible | sin benchmarks declarados | apache-2.0 | HuggingFace |
+| GabrielSnn/mobilevit-matching-2024 | 16.576 | no disponible | sin benchmarks | bsd-3-clause | Hugging Face (0 descargas) |
+| Kkozlovdaniil/mobilevit-matching | no disponible | no disponible | sin benchmarks declarados | no disponible | Hugging Face |
+| GONZALEZRYAN/mobilevit-matching | no disponible | no disponible | sin benchmarks declarados | apache-2.0 | Hugging Face |
 | MobileViT original (Apple) | 1,3 M - 5,6 M segun variante | no aplica (clasificacion de imagen) | resultados publicados en ImageNet | no disponible en esta busqueda | referencia academica |
 
 Los dos repositorios hermanos (Kkozlovdaniil y GONZALEZRYAN) comparten el mismo enfoque de "configuracion nano" y omiten deliberadamente reclamaciones de benchmark, por lo que se comportan como variantes o duplicados del mismo experimento. No se dispone de datos suficientes para comparar rendimiento entre ellos.

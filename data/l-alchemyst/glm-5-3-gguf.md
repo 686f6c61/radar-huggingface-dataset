@@ -4,7 +4,7 @@
 
 GLM-5.3 es el modelo insignia de Z.ai (anteriormente Zhipu AI) para codificación compleja y tareas de largo horizonte, como la ejecución de agentes autónomos. Se trata de un modelo de arquitectura Mixture-of-Experts (MoE) con 753 mil millones de parámetros totales y 40 mil millones de parámetros activos por token, lo que permite un rendimiento elevado con un coste de inferencia relativamente contenido. Su ventana de contexto alcanza 1 millón de tokens, lo que lo hace adecuado para procesar repositorios de código completos, documentación extensa o conversaciones multi-turno muy largas.
 
-El modelo se distribuye bajo licencia MIT, sin restricciones regionales, y se posiciona como el modelo de pesos abiertos más capaz para tareas de ingeniería de software y razonamiento agéntico. El repositorio de HuggingFace referenciado, L-Alchemyst/GLM-5.3-GGUF, contiene una conversión a formato GGUF del modelo original, con un tamaño de 242,1 GB, pensada para su ejecución local mediante llama.cpp, Ollama u otras herramientas compatibles. La versión GGUF permite cuantizaciones que reducen drásticamente los requisitos de VRAM, aunque a costa de cierta pérdida de precisión.
+El modelo se distribuye bajo licencia MIT, sin restricciones regionales, y se posiciona como el modelo de pesos abiertos más capaz para tareas de ingeniería de software y razonamiento agéntico. El repositorio de Hugging Face referenciado, L-Alchemyst/GLM-5.3-GGUF, contiene una conversión a formato GGUF del modelo original, con un tamaño de 242,1 GB, pensada para su ejecución local mediante llama.cpp, Ollama u otras herramientas compatibles. La versión GGUF permite cuantizaciones que reducen drásticamente los requisitos de VRAM, aunque a costa de cierta pérdida de precisión.
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ El modelo se distribuye bajo licencia MIT, sin restricciones regionales, y se po
 | Longitud de contexto | 1M tokens |
 | Tipos de cuantizacion | GGUF (varias cuantizaciones, no especificadas en el repo; Unsloth ofrece Dynamic 1-bit GGUF con ~76% de precision top-1) |
 | Idiomas soportados | no disponible |
-| Licencia | MIT (segun documentacion oficial de Z.ai; el repo de HuggingFace no la especifica) |
+| Licencia | MIT (segun documentacion oficial de Z.ai; el repo de Hugging Face no la especifica) |
 | Formato de pesos | GGUF (safetensors disponible en el repo oficial de Z.ai) |
 
 ## Arquitectura y entrenamiento
@@ -79,13 +79,13 @@ No se dispone de datos de benchmarks comparativos directos entre estos modelos e
 - El tamaño del modelo (753B totales) hace que la inferencia en local sea costosa; sin cuantizacion agresiva, se requieren infraestructuras de multiples GPUs.
 - No se han documentado sesgos especificos, pero al ser un modelo entrenado principalmente con datos de codigo y razonamiento, puede presentar sesgos en tareas de lenguaje natural general.
 - Riesgo de alucinacion en tareas de razonamiento complejo o cuando el contexto supera ciertos umbrales, a pesar de la ventana de 1M tokens.
-- La licencia MIT permite uso comercial sin restricciones, pero el repo de HuggingFace no especifica la licencia, por lo que se recomienda verificar la procedencia de los pesos.
+- La licencia MIT permite uso comercial sin restricciones, pero el repo de Hugging Face no especifica la licencia, por lo que se recomienda verificar la procedencia de los pesos.
 - No se ha confirmado el soporte multilingue; el modelo puede tener un rendimiento inferior en idiomas distintos del ingles.
 - La cuantizacion Dynamic 1-bit, aunque reduce drasticamente el tamaño, conlleva una perdida de precision notable (~76% top-1) que puede afectar a tareas de codigo complejas.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/L-Alchemyst/GLM-5.3-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/L-Alchemyst/GLM-5.3-GGUF
 - Repositorio oficial de Z.ai en GitHub: https://github.com/zai-org/GLM-5
 - Documentacion de OpenLM.ai: https://openlm.ai/glm-5.5/
 - Guia de Unsloth para GLM-5.3: https://unsloth.ai/docs/models/glm-5.3

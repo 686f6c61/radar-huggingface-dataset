@@ -4,7 +4,7 @@
 
 GroundingPI es un modelo fundacional de grounding visual de 4.843.664.384 parametros (aproximadamente 4,84 B) desarrollado por el equipo GroundingPI, orientado a la percepcion precisa para inteligencia fisica. A diferencia de los modelos de vision-lenguaje-accion (VLA) y de los world-action models (WAM), que reutilizan backbones de proposito general, GroundingPI se ha preentrenado especificamente para localizar objetos: genera puntos y cajas codificados como coordenadas cuantizadas dentro de un vocabulario compartido, lo que le permite apuntar con precision incluso en escenas densas y con objetos muy pequenos.
 
-El modelo es un checkpoint autorregresivo de vision-lenguaje publicado en HuggingFace con pipeline image-text-to-text y licencia apache-2.0-with-upstream-kimi-k3 (etiquetada como "other", con la Kimi K3 License aplicandose al material derivado de Kimi). Soporta ingles y chino, y cubre tareas como deteccion de objetos de vocabulario abierto, comprension de expresiones referenciales, pointing, OCR con localizacion de texto y comprension de estructura de documentos.
+El modelo es un checkpoint autorregresivo de vision-lenguaje publicado en Hugging Face con pipeline image-text-to-text y licencia apache-2.0-with-upstream-kimi-k3 (etiquetada como "other", con la Kimi K3 License aplicandose al material derivado de Kimi). Soporta ingles y chino, y cubre tareas como deteccion de objetos de vocabulario abierto, comprension de expresiones referenciales, pointing, OCR con localizacion de texto y comprension de estructura de documentos.
 
 Su relevancia actual radica en el enfoque: el paper defiende el grounding como fundamento perceptivo y el preentrenamiento perceptivo dedicado como via prometedora para modelos fundacionales de inteligencia fisica. Segun la model card, GroundingPI alcanza un promedio de 73,68% frente a 44 baselines en 34 benchmarks de grounding que cubren 11 capacidades perceptivas, por encima del GPT-6 Astra (71,54%), y como backbone visual mejora resultados en manipulacion robotica y conduccion autonoma. El repositorio libera unicamente el checkpoint de grounding; los resultados de las politicas de accion se describen en el paper.
 
@@ -18,13 +18,13 @@ Su relevancia actual radica en el enfoque: el paper defiende el grounding como f
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el repositorio publica los pesos en safetensors y no se documentan variantes cuantizadas |
 | Idiomas soportados | ingles (en) y chino (zh) |
-| Licencia | apache-2.0-with-upstream-kimi-k3 (campo `license: other` en HuggingFace) |
+| Licencia | apache-2.0-with-upstream-kimi-k3 (campo `license: other` en Hugging Face) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 9,8 GB |
 | Libreria | transformers (requiere `trust_remote_code`, etiqueta custom_code) |
 | Pipeline | image-text-to-text |
 | Fecha de publicacion | 30 de septiembre de 2026 (paper); actualizacion del repositorio el 14 de octubre de 2026 |
-| Descargas / likes en HuggingFace | 305 descargas / 20 likes |
+| Descargas / likes en Hugging Face | 305 descargas / 20 likes |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se han publicado en la informacion disponible resultados desglosados de MMLU,
 
 | Modelo | Parametros | Contexto | Rendimiento en grounding | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GroundingPI | 4,84 B | no disponible | 73,68% de promedio en 34 benchmarks | apache-2.0-with-upstream-kimi-k3 | pesos en HuggingFace y ModelScope, demo en HF Spaces |
+| GroundingPI | 4,84 B | no disponible | 73,68% de promedio en 34 benchmarks | apache-2.0-with-upstream-kimi-k3 | pesos en Hugging Face y ModelScope, demo en HF Spaces |
 | GPT-6 Astra | no disponible | no disponible | 71,54% en el mismo conjunto de benchmarks segun GroundingPI | no disponible | no disponible |
 | Otros backbones de manipulacion evaluados en RoboTwin 2.0 | no disponible | no disponible | inferiores a GroundingPI en los cuatro escenarios fuera de distribucion | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de datos de parametros, contexto o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GroundingPI/GroundingPI
+- Modelo en Hugging Face: https://huggingface.co/GroundingPI/GroundingPI
 - Demo online en Hugging Face Spaces: https://huggingface.co/spaces/GroundingPI/GroundingPI
 - Pagina del proyecto: https://groundingpi.github.io/
 - Codigo en GitHub: https://github.com/groundingpi/GroundingPI

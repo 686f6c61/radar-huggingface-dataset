@@ -33,7 +33,7 @@ El proceso de creación consistió en inspeccionar la configuración original de
 - Arquitectura MoE con atención dispersa: implementa tanto capas densas como dispersas, permitiendo estudiar el comportamiento de esta arquitectura a pequeña escala.
 - Atención MLA con Q/KV comprimidos: utiliza Multi-head Latent Attention con rangos LoRA reducidos, lo que reduce el costo de memoria durante la inferencia.
 - Indexador DSA: implementa DeepSeek Sparse Attention con patrones de indexador completos y compartidos entre capas.
-- Compatible con transformers: se puede cargar con AutoModelForCausalLM y AutoTokenizer estándar de HuggingFace.
+- Compatible con transformers: se puede cargar con AutoModelForCausalLM y AutoTokenizer estándar de Hugging Face.
 - Formato float32: los pesos están en float32, lo que facilita el fine-tuning posterior sin problemas de precisión.
 - Sin capacidades multimodales: no soporta visión, audio ni otras modalidades más allá del texto.
 - Sin tool calling verificado: no se documenta soporte para function calling ni uso agéntico.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.2-0.8B-A0.8B | 0.85B totales, 0.77B activos | no disponible | MoE + DSA + MLA | MIT | HuggingFace |
-| Qwen2.5-0.5B | 0.5B | 32K | Dense transformer | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1B | 128K | Dense transformer | Llama 3.2 | HuggingFace |
-| SmolLM2-1.7B | 1.7B | 8K | Dense transformer | Apache 2.0 | HuggingFace |
+| GLM-5.2-0.8B-A0.8B | 0.85B totales, 0.77B activos | no disponible | MoE + DSA + MLA | MIT | Hugging Face |
+| Qwen2.5-0.5B | 0.5B | 32K | Dense transformer | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1B | 128K | Dense transformer | Llama 3.2 | Hugging Face |
+| SmolLM2-1.7B | 1.7B | 8K | Dense transformer | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que este modelo es el único de su categoría que utiliza arquitectura MoE con atención dispersa. Los modelos densos equivalentes en tamaño (Qwen2.5-0.5B, Llama-3.2-1B) ofrecen mayor madurez y soporte de la comunidad, pero no permiten estudiar la arquitectura específica de GLM-5.2. El modelo de inference-optimization es una opción válida para quienes necesiten experimentar con MoE y DSA a pequeña escala, aunque su calidad de generación será inferior a la de los modelos densos equivalentes debido al entrenamiento limitado sobre datos sintéticos.
 
@@ -83,7 +83,7 @@ La comparativa muestra que este modelo es el único de su categoría que utiliza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xMXFP8
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xMXFP8
 - Versión GGUF: https://huggingface.co/mradermacher/GLM-5.2-0.8B-A0.8B-GGUF
 - Repositorio GLM-5 de Z.ai: https://github.com/zai-org/GLM-5
 - Guía de benchmarks y contexto de GLM-5.2: https://www.glmmodel.net/

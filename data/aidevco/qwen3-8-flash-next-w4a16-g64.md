@@ -79,8 +79,8 @@ El autor advierte que estas cifras son una comprobacion de que la cuantizacion p
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next-W4A16-g64 (esta ficha) | 180.000 M | 32.768 en servicio | int4 W4A16 group 64, resto bf16 | Qwen Community 1.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-Flash-Next (original) | 180.000 M | no disponible | bf16 | Qwen Community 1.0 | HuggingFace |
+| Qwen3.8-Flash-Next-W4A16-g64 (esta ficha) | 180.000 M | 32.768 en servicio | int4 W4A16 group 64, resto bf16 | Qwen Community 1.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-Flash-Next (original) | 180.000 M | no disponible | bf16 | Qwen Community 1.0 | Hugging Face |
 | Builds simetricos W4A16 group 128 del mismo modelo | 180.000 M | no disponible | int4 W4A16 group 128 | Qwen Community 1.0 | Referenciados por el autor, sin identificador en la informacion disponible |
 
 La diferencia practica frente al original es el espacio: 182,6 GB frente a 360 GB en bf16, con los expertos a int4. Frente a los builds group 128, la ventaja de esta version es que group 64 divide el intermedio de 320 por experto que resulta de TP=2, lo que permite el despliegue en dos MI210. No se dispone de datos de benchmarks del original ni de los builds group 128 en la informacion proporcionada para comparar calidad.
@@ -100,7 +100,7 @@ La diferencia practica frente al original es el espacio: 182,6 GB frente a 360 G
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aidevco/Qwen3.8-Flash-Next-W4A16-g64
+- Repositorio Hugging Face: https://huggingface.co/aidevco/Qwen3.8-Flash-Next-W4A16-g64
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Qwen Community 1.0: incluida en el repositorio (`LICENSE`)
 - llm-compressor: no disponible enlace en la informacion proporcionada

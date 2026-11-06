@@ -73,8 +73,8 @@ En RTX 4090 con procesamiento por lotes: 4,5 ms por frase. El conjunto de test t
 
 | Modelo | Params | Contexto | Precisión chat real (top-1/top-5/CER) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akkhara-mini | 18M | no disponible | 64% / 79% / 5,3% | Apache-2.0 | HuggingFace (acceso con aprobación) |
-| akkhara-byt5-small v3 | 300M | no disponible | 64% / 79% / 6,0% | no disponible | HuggingFace |
+| akkhara-mini | 18M | no disponible | 64% / 79% / 5,3% | Apache-2.0 | Hugging Face (acceso con aprobación) |
+| akkhara-byt5-small v3 | 300M | no disponible | 64% / 79% / 6,0% | no disponible | Hugging Face |
 | Otros modelos de transliteración khmer | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ En RTX 4090 con procesamiento por lotes: 4,5 ms por frase. El conjunto de test t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INGMUYLEANG/akkhara-mini
+- Modelo en Hugging Face: https://huggingface.co/INGMUYLEANG/akkhara-mini
 - Modelo hermano mayor: https://huggingface.co/INGMUYLEANG/akkhara-byt5-small
 - Demo: https://huggingface.co/spaces/INGMUYLEANG/akkhara-demo
 - Dataset: https://huggingface.co/datasets/INGMUYLEANG/akkhara-sing-khmer

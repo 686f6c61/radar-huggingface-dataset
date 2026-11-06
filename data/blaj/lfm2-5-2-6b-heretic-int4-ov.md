@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento para ninguno de los cuatro, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/LFM2.5-2.6B-heretic-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/LFM2.5-2.6B-heretic-int4-ov
 - Variante int8: https://huggingface.co/blaj/LFM2.5-2.6B-heretic-int8-ov
 - Modelo abliterated de origen: https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic
 - Modelo base original: https://huggingface.co/LiquidAI/LFM2.5-2.6B

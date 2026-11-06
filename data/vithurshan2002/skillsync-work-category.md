@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `vithurshan2002/skillsync-work-category` es un modelo publicado en HuggingFace por el usuario vithurshan2002 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que el bloque de metadatos con la licencia: no se declara arquitectura, tamano, contexto, idiomas, pipeline ni formato de pesos.
+El repositorio `vithurshan2002/skillsync-work-category` es un modelo publicado en Hugging Face por el usuario vithurshan2002 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que el bloque de metadatos con la licencia: no se declara arquitectura, tamano, contexto, idiomas, pipeline ni formato de pesos.
 
 La unica pista sobre su proposito es el propio nombre del repositorio, que sugiere un componente de clasificacion de categorias laborales dentro de un proyecto denominado SkillSync. Esta interpretacion no esta confirmada por ninguna documentacion publicada, por lo que debe tratarse como una hipotesis de trabajo y no como una caracteristica verificada.
 
@@ -25,7 +25,7 @@ Datos adicionales de repositorio:
 
 | Parámetro | Valor |
 |---|---|
-| Identificador en HuggingFace | vithurshan2002/skillsync-work-category |
+| Identificador en Hugging Face | vithurshan2002/skillsync-work-category |
 | Autor | vithurshan2002 |
 | Pipeline declarado | no disponible |
 | Etiquetas declaradas | license:apache-2.0, region:us |
@@ -99,5 +99,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vithurshan2002/skillsync-work-category
+- Repositorio en Hugging Face: https://huggingface.co/vithurshan2002/skillsync-work-category
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

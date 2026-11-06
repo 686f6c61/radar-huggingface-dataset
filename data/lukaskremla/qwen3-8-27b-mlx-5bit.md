@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. El modelo base `Qwen/Qwen3.8-27B` podría compararse con otros modelos multimodales de tamaño similar, pero no se tienen datos de rendimiento ni especificaciones completas. Se recomienda consultar la ficha del modelo original en HuggingFace para obtener más contexto.
+No se dispone de información suficiente para establecer una comparativa fiable. El modelo base `Qwen/Qwen3.8-27B` podría compararse con otros modelos multimodales de tamaño similar, pero no se tienen datos de rendimiento ni especificaciones completas. Se recomienda consultar la ficha del modelo original en Hugging Face para obtener más contexto.
 
 ## Limitaciones y advertencias
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/lukaskremla/Qwen3.8-27B-mlx-5Bit)
+- [Modelo en Hugging Face](https://huggingface.co/lukaskremla/Qwen3.8-27B-mlx-5Bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Documentación de mlx-lm](https://github.com/ml-explore/mlx-lm)

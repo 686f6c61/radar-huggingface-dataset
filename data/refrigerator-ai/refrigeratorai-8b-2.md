@@ -71,11 +71,11 @@ La comparativa se limita a datos publicos. RefrigeratorAI-8B-2 se distingue prin
 - Documentacion insuficiente: no hay informacion sobre datos de entrenamiento, sesgos, alucinaciones ni limitaciones de contexto. Esto impide evaluar riesgos de produccion.
 - Soporte de idiomas limitado: solo japones, ingles y chino. No cubre otros idiomas, incluido el espanol.
 - Riesgo de alucinacion: sin datos de entrenamiento ni evaluaciones, no se puede estimar la fiabilidad factual del modelo.
-- Comunidad reducida: cero descargas y cero likes en HuggingFace, lo que sugiere una adopcion minima y poco soporte comunitario.
+- Comunidad reducida: cero descargas y cero likes en Hugging Face, lo que sugiere una adopcion minima y poco soporte comunitario.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/refrigerator-ai/RefrigeratorAI-8B-2
+- Modelo en Hugging Face: https://huggingface.co/refrigerator-ai/RefrigeratorAI-8B-2
 - Version GGUF (comunidad): https://huggingface.co/mradermacher/RefrigeratorAI-8B-GGUF
 - Organizacion Refrigerator AI: https://huggingface.co/refrigerator-ai/models
 - Sitio web del proyecto: https://www.refrigeratorai.com/

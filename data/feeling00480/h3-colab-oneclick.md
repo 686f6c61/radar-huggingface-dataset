@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`feeling00480/h3-colab-oneclick` no es un modelo de lenguaje, sino un repositorio auxiliar publicado en HuggingFace que contiene un archivo comprimido (`h3_extra.zip`) con material de soporte para un cuaderno de Google Colab de un solo clic. En concreto, el paquete incluye un nodo personalizado para ComfyUI denominado "MiniMax H3 multirate T8mod", derivado del proyecto `T8mars/comfyui-minimax-h3-audio-T8`, junto con un flujo de trabajo híbrido de tipo T2VA (`hybrid_b25`).
+`feeling00480/h3-colab-oneclick` no es un modelo de lenguaje, sino un repositorio auxiliar publicado en Hugging Face que contiene un archivo comprimido (`h3_extra.zip`) con material de soporte para un cuaderno de Google Colab de un solo clic. En concreto, el paquete incluye un nodo personalizado para ComfyUI denominado "MiniMax H3 multirate T8mod", derivado del proyecto `T8mars/comfyui-minimax-h3-audio-T8`, junto con un flujo de trabajo híbrido de tipo T2VA (`hybrid_b25`).
 
 El repositorio está etiquetado con licencia GPL-3.0 y región US, y en el momento de su publicación no registra descargas ni interacciones. El tamaño del repositorio es de 0,0 GB, lo que sugiere que el contenido real del ZIP no está alojado en el repositorio o que el peso es despreciable a efectos de metadatos.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Proyecto | Tipo de artefacto | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|
-| `feeling00480/h3-colab-oneclick` | ZIP con custom node y workflow para Colab | GPL-3.0 | no aplica | HuggingFace, 0 descargas |
+| `feeling00480/h3-colab-oneclick` | ZIP con custom node y workflow para Colab | GPL-3.0 | no aplica | Hugging Face, 0 descargas |
 | `T8mars/comfyui-minimax-h3-audio-T8` | Repositorio de nodo personalizado de ComfyUI (origen declarado) | no disponible en esta ficha | no aplica | Repositorio de GitHub referenciado |
 | Modelo MiniMax H3 | Modelo generativo referenciado por el nombre del nodo | no disponible en esta ficha | no disponible | no disponible en esta ficha |
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto o rendimi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/feeling00480/h3-colab-oneclick
+- Repositorio en Hugging Face: https://huggingface.co/feeling00480/h3-colab-oneclick
 - Proyecto de origen del nodo (referenciado en la model card): https://github.com/T8mars/comfyui-minimax-h3-audio-T8
 - ComfyUI (framework de destino): https://github.com/comfyanonymous/ComfyUI
 - Google Colab: https://colab.research.google.com

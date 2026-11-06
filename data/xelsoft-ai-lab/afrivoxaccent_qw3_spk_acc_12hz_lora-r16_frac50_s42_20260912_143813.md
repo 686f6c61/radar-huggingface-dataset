@@ -70,10 +70,10 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AfriVoxAccent (Qwen3-TTS 0.6B + LoRA r16) | Adaptador LoRA sobre TTS | Base 0,6B + LoRA | Wolof | no disponible | HuggingFace, 0 descargas |
-| Qwen3-TTS-12Hz-0.6B-Base | TTS completo | 0,6B | Segun modelo base | no disponible en esta ficha | HuggingFace |
-| XTTS-v2 (Coqui) | TTS multilingue | no disponible en esta ficha | Multilingue | no disponible en esta ficha | HuggingFace |
-| MMS-TTS (Meta) | TTS por idioma | no disponible en esta ficha | Multilingue por modelos | no disponible en esta ficha | HuggingFace |
+| AfriVoxAccent (Qwen3-TTS 0.6B + LoRA r16) | Adaptador LoRA sobre TTS | Base 0,6B + LoRA | Wolof | no disponible | Hugging Face, 0 descargas |
+| Qwen3-TTS-12Hz-0.6B-Base | TTS completo | 0,6B | Segun modelo base | no disponible en esta ficha | Hugging Face |
+| XTTS-v2 (Coqui) | TTS multilingue | no disponible en esta ficha | Multilingue | no disponible en esta ficha | Hugging Face |
+| MMS-TTS (Meta) | TTS por idioma | no disponible en esta ficha | Multilingue por modelos | no disponible en esta ficha | Hugging Face |
 
 La comparacion con XTTS-v2 y MMS-TTS se incluye unicamente como referencia de categoria; no se dispone de resultados de wolof para ninguno de ellos en la informacion proporcionada, por lo que no es posible establecer cual rinde mejor.
 
@@ -91,6 +91,6 @@ La comparacion con XTTS-v2 y MMS-TTS se incluye unicamente como referencia de ca
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260912_143813
+- Adaptador en Hugging Face: https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_12hz_lora-r16_frac50_s42_20260912_143813
 - Modelo base Qwen3-TTS-12Hz-0.6B-Base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - No se han encontrado otros enlaces relevantes (papers, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

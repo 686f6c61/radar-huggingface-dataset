@@ -36,7 +36,7 @@ El calculo de las metricas circadianas y fotometricas se realiza fuera del model
 - Estimacion de estimulo circadiano (CS), porcentaje de supresion de melatonina y desplazamiento de fase circadiana en horas.
 - Clasificacion de nivel de riesgo circadiano (en la prueba de referencia: "GÜVENLİ (Düşük)", es decir, seguro/bajo).
 - Extraccion de pico de longitud de onda (peak_wavelength_nm) y parametros auxiliares como angular_scale y g_t.
-- Ejecucion en navegador mediante onnxruntime-web con CORS habilitado desde la URL de HuggingFace.
+- Ejecucion en navegador mediante onnxruntime-web con CORS habilitado desde la URL de Hugging Face.
 - No soporta tool calling, agentes, razonamiento multi-paso ni capacidades multilingues; no es un modelo generativo.
 
 ## Casos de uso
@@ -102,7 +102,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sevden123/prism-spectra
+- Modelo en Hugging Face: https://huggingface.co/sevden123/prism-spectra
 - Fichero ONNX directo: https://huggingface.co/sevden123/prism-spectra/resolve/main/model.onnx
 - Curvas CIE: `cie_curves.json` en el repositorio (https://huggingface.co/sevden123/prism-spectra)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

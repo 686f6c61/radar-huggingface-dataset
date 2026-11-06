@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`two-hop-gpt-d192-lr4e-4-ansloss` es una publicacion de checkpoints de HuggingFace obra del usuario kdkyum. No es un modelo de proposito general ni un asistente conversacional: es un artefacto de investigacion que reune las 36 ejecuciones con perdida calculada exclusivamente sobre la respuesta (*answer-only loss*) del proyecto de Weights & Biases `gpt-two-hop-d192-trainpy`. El objetivo declarado es estudiar el efecto de distintos hiperparametros sobre una tarea sintetica de razonamiento de dos saltos (*two-hop*) en grafos generados artificialmente.
+`two-hop-gpt-d192-lr4e-4-ansloss` es una publicacion de checkpoints de Hugging Face obra del usuario kdkyum. No es un modelo de proposito general ni un asistente conversacional: es un artefacto de investigacion que reune las 36 ejecuciones con perdida calculada exclusivamente sobre la respuesta (*answer-only loss*) del proyecto de Weights & Biases `gpt-two-hop-d192-trainpy`. El objetivo declarado es estudiar el efecto de distintos hiperparametros sobre una tarea sintetica de razonamiento de dos saltos (*two-hop*) en grafos generados artificialmente.
 
 La arquitectura subyacente es un transformer causal de tipo GPT-NeoX con `d_model` 192 y 12 capas, normalizacion LayerNorm, sesgos en las capas lineales, MLP con activacion ReLU, embeddings rotatorios aplicados a todas las dimensiones de cabeza con base 100.000 y sin dropout. La longitud de secuencia usada en entrenamiento es de 2.149 tokens para el subconjunto `hetero_graphs_swap_6to1split1` y de 1.997 tokens para `base_graph`.
 
@@ -28,7 +28,7 @@ Su relevancia es metodologica, no de producto: permite reproducir un barrido fac
 | Dropout | 0 |
 | Optimizador | AdamW (beta2 0.98, eps 1e-8), warmup de 1.000 pasos, decaimiento coseno de 4e-4 a 4e-5 hasta 100K pasos, gradient clipping en norma 1 |
 | Tamano del repositorio | 6,6 GB |
-| Fecha de publicacion en HuggingFace | 2026-10-13 (segun metadatos de la ficha; fecha anomala, ver limitaciones) |
+| Fecha de publicacion en Hugging Face | 2026-10-13 (segun metadatos de la ficha; fecha anomala, ver limitaciones) |
 | Descargas / likes | 0 / 0 |
 
 Nota sobre el recuento de parametros: no figura en la model card. Una estimacion indirecta a partir del tamano del repositorio (6,6 GB repartidos entre 36 ejecuciones con checkpoints cada 10.000 pasos hasta 100.000) sugiere del orden de 18 MB por checkpoint en fp32, lo que situaria el modelo en la horquilla de 4 a 5 millones de parametros excluyendo embeddings. Es una estimacion editorial, no un dato confirmado por el autor.
@@ -102,7 +102,7 @@ No se dispone de informacion sobre modelos comparables en el material proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kdkyum/two-hop-gpt-d192-lr4e-4-ansloss
+- Hugging Face: https://huggingface.co/kdkyum/two-hop-gpt-d192-lr4e-4-ansloss
 - Proyecto de Weights & Biases citado por el autor: `gpt-two-hop-d192-trainpy` (nombre proporcionado en la model card; no se incluye URL)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Busqueda web: no se han encontrado enlaces relevantes sobre el modelo. Los resultados devueltos por la busqueda no guardan ninguna relacion con el modelo ni con inteligencia artificial, por lo que se descartan y no se listan.

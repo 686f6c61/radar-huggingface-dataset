@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DiffCap-RL 4B es un modelo multimodal de generación de descripciones (captioning) de imágenes y vídeos, desarrollado por el usuario fengyao123 y publicado en HuggingFace. Se trata de un ajuste fino mediante aprendizaje por refuerzo (reinforcement learning) sobre Qwen3-VL-4B-Instruct, el modelo de visión-lenguaje de 4B parámetros de Alibaba Qwen. El objetivo del modelo es producir descripciones detalladas y ricas en matices, en lugar de las leyendas cortas y genéricas típicas de los modelos de captioning convencionales.
+DiffCap-RL 4B es un modelo multimodal de generación de descripciones (captioning) de imágenes y vídeos, desarrollado por el usuario fengyao123 y publicado en Hugging Face. Se trata de un ajuste fino mediante aprendizaje por refuerzo (reinforcement learning) sobre Qwen3-VL-4B-Instruct, el modelo de visión-lenguaje de 4B parámetros de Alibaba Qwen. El objetivo del modelo es producir descripciones detalladas y ricas en matices, en lugar de las leyendas cortas y genéricas típicas de los modelos de captioning convencionales.
 
 El modelo conserva la arquitectura transformer multimodal de Qwen3-VL, con un total de 4.826.771.968 parámetros (aproximadamente 4,83B) en precisión BF16, y un repositorio de 9,7 GB que incluye pesos completos, tokenizador, plantilla de chat y procesadores de imagen y vídeo. El contexto máximo declarado en la configuración de ejemplo es de 32.768 tokens, aunque no se especifica si es el límite nativo del modelo base o una restricción de despliegue.
 
@@ -84,7 +84,7 @@ La comparación directa con alternativas de captioning especializado no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fengyao123/DiffCapRL-4B
+- Modelo en Hugging Face: https://huggingface.co/fengyao123/DiffCapRL-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct
 - Dataset de ejemplo citado en la model card: https://huggingface.co/datasets/Borise/CaptionQA
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

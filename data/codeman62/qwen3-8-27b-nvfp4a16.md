@@ -77,8 +77,8 @@ Las métricas KL se calcularon sobre 2.919 tokens de texto de chat autogenerado 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CodeMan62/qwen3.8-27B-NVFP4A16 | 27,78B | No disponible | NVFP4 W4A16 (4,50 bits/peso) | Apache 2.0 | HuggingFace, 36 descargas |
-| Qwen/Qwen3.8-27B (base) | 27,78B | No disponible | bf16 | Apache 2.0 | HuggingFace |
+| CodeMan62/qwen3.8-27B-NVFP4A16 | 27,78B | No disponible | NVFP4 W4A16 (4,50 bits/peso) | Apache 2.0 | Hugging Face, 36 descargas |
+| Qwen/Qwen3.8-27B (base) | 27,78B | No disponible | bf16 | Apache 2.0 | Hugging Face |
 | Otras cuantizaciones de Qwen3.8-27B | 27,78B | No disponible | No disponible | Apache 2.0 (heredada) | No disponible en la informacion proporcionada |
 
 No se dispone de datos de benchmarks del checkpoint cuantizado que permitan una comparación de rendimiento frente a alternativas; la única referencia cuantitativa es la desviación KL respecto a bf16 (0,0238 de media, 93,87% de coincidencia top-1).
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks del checkpoint cuantizado que permitan una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CodeMan62/qwen3.8-27B-NVFP4A16
+- Hugging Face: https://huggingface.co/CodeMan62/qwen3.8-27B-NVFP4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización hollowQuant: https://github.com/HollowFound/hollowQuant
 - Script de evaluación: `benchmarks/eval_nvfp4_local.py` en el repositorio hollowQuant

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4-Pro es un modelo de lenguaje de mezcla de expertos (MoE) desarrollado por DeepSeek AI y publicado en HuggingFace por el usuario Openintelligent123. Se presenta como una vista previa de la serie DeepSeek-V4 y destaca por ofrecer una ventana de contexto de un millón de tokens, lo que lo hace especialmente relevante para tareas que requieren procesar documentos completos, bases de código extensas o secuencias muy largas.
+DeepSeek-V4-Pro es un modelo de lenguaje de mezcla de expertos (MoE) desarrollado por DeepSeek AI y publicado en Hugging Face por el usuario Openintelligent123. Se presenta como una vista previa de la serie DeepSeek-V4 y destaca por ofrecer una ventana de contexto de un millón de tokens, lo que lo hace especialmente relevante para tareas que requieren procesar documentos completos, bases de código extensas o secuencias muy largas.
 
 El modelo cuenta con 1,6 billones de parámetros totales y 49.000 millones de parámetros activos. Su arquitectura combina atención comprimida y una nueva técnica de hiperconexiones con restricción de variedad, además de emplear el optimizador Muon durante el entrenamiento. Según el informe técnico, el modelo se preentrenó con más de 32 billones de tokens y pasó por un proceso de post-entrenamiento en dos etapas que combina aprendizaje por refuerzo y destilación. En la actualidad, representa uno de los modelos abiertos más grandes con un rendimiento destacado en conocimiento, razonamiento y tareas agénticas, aunque su naturaleza de vista previa y su tamaño imponen restricciones prácticas de despliegue.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks adicionales (como HumanEval o GSM8K
 
 - No se dispone de requisitos oficiales de VRAM para inferencia.
 - El peso del repositorio es de 864,7 GB, lo que implica que el despliegue requiere un clúster multi-GPU de alta capacidad. Es improbable que el modelo quepa en una GPU de consumo convencional.
-- La etiqueta del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
-- El modelo está disponible en formato safetensors y es cargable con la librería Transformers, según la información de HuggingFace.
+- La etiqueta del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
+- El modelo está disponible en formato safetensors y es cargable con la librería Transformers, según la información de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -82,7 +82,7 @@ En los benchmarks de conocimiento general, DeepSeek-V4-Pro supera consistentemen
 ## Limitaciones y advertencias
 
 - El modelo es una vista previa ("preview version"), por lo que su comportamiento en producción puede cambiar en versiones posteriores.
-- El repositorio de HuggingFace pertenece al usuario Openintelligent123, no al equipo oficial de DeepSeek AI. Esto supone un riesgo de integridad y trazabilidad si se utiliza en entornos de producción.
+- El repositorio de Hugging Face pertenece al usuario Openintelligent123, no al equipo oficial de DeepSeek AI. Esto supone un riesgo de integridad y trazabilidad si se utiliza en entornos de producción.
 - La lista oficial de idiomas no está disponible, por lo que su rendimiento en lenguas distintas del inglés y el chino no está verificado.
 - No se han publicado datos sobre sesgos, alucinaciones o restricciones de seguridad.
 - El tamaño de 1,6T de parámetros dificulta enormemente el despliegue en infraestructuras modestas, incluso con cuantización FP4/FP8.

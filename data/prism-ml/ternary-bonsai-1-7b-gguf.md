@@ -81,9 +81,9 @@ Throughput medido con `llama.cpp` en Apple M4 Pro de 48 GB:
 
 | Modelo | Parametros | Contexto | Tamano empaquetado | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| Ternary-Bonsai-1.7B | 1,72B | 32.768 | 0,44 GB (Q2_0) | Apache 2.0 | GGUF en HuggingFace |
-| 1-bit Bonsai 1.7B (anterior) | 1,7B aprox. | no disponible | 0,24 GB | no disponible | HuggingFace (referencia en model card) |
-| Qwen3-1.7B (base) | 1,72B | 32.768 | 3,44 GB (FP16) | Apache 2.0 | HuggingFace |
+| Ternary-Bonsai-1.7B | 1,72B | 32.768 | 0,44 GB (Q2_0) | Apache 2.0 | GGUF en Hugging Face |
+| 1-bit Bonsai 1.7B (anterior) | 1,7B aprox. | no disponible | 0,24 GB | no disponible | Hugging Face (referencia en model card) |
+| Qwen3-1.7B (base) | 1,72B | 32.768 | 3,44 GB (FP16) | Apache 2.0 | Hugging Face |
 
 La comparacion con otras alternativas de 1-2B en cuantizacion estandar (por ejemplo, Qwen3-1.7B en Q4_K_M o Llama 3.2 1B) no esta disponible en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ La comparacion con otras alternativas de 1-2B en cuantizacion estandar (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-gguf
+- Modelo en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-gguf
 - Modelo base (unpacked): https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-unpacked
 - Web de Prism ML: https://prismml.com
 - White paper: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/ternary-bonsai-8b-whitepaper.pdf

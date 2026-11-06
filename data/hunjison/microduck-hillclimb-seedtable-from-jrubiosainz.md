@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hunjison/microduck-hillclimb-seedtable-from-jrubiosainz` es una política de control motriz (no un modelo de lenguaje) publicada en HuggingFace para el robot **microduck** del proyecto de Pollen Robotics. Se distribuye como un fichero `policy.onnx` acompañado de un `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck, y se describe como una política **perpetua**: ejecuta una marcha de forma continua hasta que se le indique lo contrario, ocupando una ranura (*slot*) de política del demonio de control del robot. La interfaz es de 61 dimensiones de observación y 14 acciones, muestreada a 50 Hz.
+`hunjison/microduck-hillclimb-seedtable-from-jrubiosainz` es una política de control motriz (no un modelo de lenguaje) publicada en Hugging Face para el robot **microduck** del proyecto de Pollen Robotics. Se distribuye como un fichero `policy.onnx` acompañado de un `manifest.json` conforme al esquema 2 del manifiesto de políticas de microduck, y se describe como una política **perpetua**: ejecuta una marcha de forma continua hasta que se le indique lo contrario, ocupando una ranura (*slot*) de política del demonio de control del robot. La interfaz es de 61 dimensiones de observación y 14 acciones, muestreada a 50 Hz.
 
 El modelo resuelve un problema acotado y muy específico: proporcionar un comportamiento locomotor reproducible que pueda cargarse en un robot físico con un solo comando (`sudo robotctl policy load <slot> ...`), sin necesidad de reentrenar ni de preprocesar observaciones en el host, ya que el normalizador de observaciones está embebido en el propio ONNX. Su relevancia es, por tanto, la de un artefacto de despliegue dentro de un ecosistema de robótica de bajo coste, no la de un modelo fundacional.
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-hillclimb-seedtable-from-jrubiosainz | No disponible | No aplicable (61-D obs., 50 Hz) | No disponible | No disponible | HuggingFace, 0 descargas |
+| microduck-hillclimb-seedtable-from-jrubiosainz | No disponible | No aplicable (61-D obs., 50 Hz) | No disponible | No disponible | Hugging Face, 0 descargas |
 | Política previa de `jrubiosainz` | No disponible | No disponible | No disponible | No disponible | No disponible en la información |
 | Otras políticas de microduck | No disponible | No disponible | No disponible | No disponible | No disponible en la información |
 
@@ -99,7 +99,7 @@ No disponible. La información proporcionada no incluye otras políticas de micr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hunjison/microduck-hillclimb-seedtable-from-jrubiosainz
+- Modelo en Hugging Face: https://huggingface.co/hunjison/microduck-hillclimb-seedtable-from-jrubiosainz
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado: `pollen-robotics/microduck_rl`, rama `main`, commit `6ff40704a`
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio de microduck (esquema 2)

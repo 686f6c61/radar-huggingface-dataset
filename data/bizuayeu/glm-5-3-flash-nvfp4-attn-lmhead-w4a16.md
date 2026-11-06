@@ -90,10 +90,10 @@ Datos adicionales: frente a los pesos sin modificar a la misma profundidad, el p
 
 | Modelo | Parametros | Contexto | Rendimiento (NLL / velocidad) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`l`) | 165,6 mil millones | No declarado; validado a 261.461 tokens | NLL ja 1,6645 / en 2,0024 / codigo 1,0031 / math 0,6279; 52,27 tok/s (conteo, borrador 4) | MIT | HuggingFace, requiere vLLM parcheado |
+| Este checkpoint (`l`) | 165,6 mil millones | No declarado; validado a 261.461 tokens | NLL ja 1,6645 / en 2,0024 / codigo 1,0031 / math 0,6279; 52,27 tok/s (conteo, borrador 4) | MIT | Hugging Face, requiere vLLM parcheado |
 | `g` (solo atención recuantizada) | 165,6 mil millones | Igual | NLL ja 1,6600 / en 2,0020 / codigo 1,0040 / math 0,6184; 45,25 tok/s (conteo, borrador 4) | Derivado del mismo origen | Referenciado en el setup de dos nodos |
-| nvidia/GLM-5.3-Flash-NVFP4 (sin modificar) | 165,6 mil millones | Igual | NLL ja 1,5963 / en 2,0241 / codigo 0,9479 / math 0,5931; 32,5 / 21,0 / 28,3 tok/s en conteo / prosa / codigo | MIT | HuggingFace (NVIDIA) |
-| zai-org/GLM-5.3-Flash (upstream) | No disponible en la informacion | No disponible | No disponible | MIT (Copyright (c) 2026 Z.AI Co., Ltd) | HuggingFace (Z.AI) |
+| nvidia/GLM-5.3-Flash-NVFP4 (sin modificar) | 165,6 mil millones | Igual | NLL ja 1,5963 / en 2,0241 / codigo 0,9479 / math 0,5931; 32,5 / 21,0 / 28,3 tok/s en conteo / prosa / codigo | MIT | Hugging Face (NVIDIA) |
+| zai-org/GLM-5.3-Flash (upstream) | No disponible en la informacion | No disponible | No disponible | MIT (Copyright (c) 2026 Z.AI Co., Ltd) | Hugging Face (Z.AI) |
 
 La comparación relevante es interna a la familia: este checkpoint mejora el throughput frente a `g` y frente a los pesos sin modificar, a costa de un NLL ligeramente peor en japonés y matemáticas. Para código, el propio autor indica que debe usarse el checkpoint de origen.
 
@@ -115,7 +115,7 @@ La comparación relevante es interna a la familia: este checkpoint mejora el thr
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-NVFP4-attn-lmhead-W4A16
+- Checkpoint en Hugging Face: https://huggingface.co/Bizuayeu/GLM-5.3-Flash-NVFP4-attn-lmhead-W4A16
 - Modelo base: https://huggingface.co/nvidia/GLM-5.3-Flash-NVFP4
 - Modelo upstream de Z.AI: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio del setup de dos nodos: https://github.com/tenhkspark/glm53-flash-nvfp4-2node

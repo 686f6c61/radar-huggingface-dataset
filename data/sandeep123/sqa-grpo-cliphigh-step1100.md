@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step1100
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step1100
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-1.5B
 - Blog de referencia sobre GRPO (NoNormalUhr): https://huggingface.co/blog/NormalUhr/grpo
 - Gist de entrenamiento GRPO con Llama-1B: https://gist.github.com/willccbb/4676755236bb08cab5f4e54a0475d6fb

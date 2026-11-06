@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`deepfake-generalization-demo` es un repositorio de artefactos de inferencia publicado por el usuario vaibhavshiroorkar en HuggingFace, no un modelo generativo ni un detector empaquetado como producto. Contiene los pesos y exportaciones necesarios para ejecutar una demo pública de detección de deepfakes en vídeo, junto con los historiales de entrenamiento, las métricas de evaluación y el informe final del proyecto. El código fuente reside en un repositorio de GitHub separado y la demo se ejecuta como Space de HuggingFace.
+`deepfake-generalization-demo` es un repositorio de artefactos de inferencia publicado por el usuario vaibhavshiroorkar en Hugging Face, no un modelo generativo ni un detector empaquetado como producto. Contiene los pesos y exportaciones necesarios para ejecutar una demo pública de detección de deepfakes en vídeo, junto con los historiales de entrenamiento, las métricas de evaluación y el informe final del proyecto. El código fuente reside en un repositorio de GitHub separado y la demo se ejecuta como Space de Hugging Face.
 
 El núcleo técnico es un ensemble visual de seis detectores: tres semillas de EfficientNet y tres de ConvNeXt, entrenados sobre recortes faciales. El repositorio incluye además un modelo de "familiaridad" (authenticity-density) construido sobre el encoder DINOv3 ViT-S/16 de Meta, cuyo propósito es abstenerse de emitir veredicto cuando el clip se aleja de la distribución de entrenamiento. Para el navegador se exportan a ONNX el mejor checkpoint individual (EfficientNet-B0, semilla 17), el detector facial MTCNN de facenet-pytorch y el propio DINOv3.
 
@@ -45,7 +45,7 @@ Para la demo en navegador, el pipeline se condensa en grafos ONNX: `visual-best.
 - Prototipado de pipelines de visión en ONNX Runtime: los grafos `pnet/rnet/onet` y `visual-best` sirven como referencia para integrar detección facial y clasificación en aplicaciones web con límite de 30 MB por subida.
 - Auditoría de sesgo de detector: las predicciones por clip en `evaluation/` permiten analizar la tasa de falsos positivos sobre vídeos reales (113 de 155 en Celeb-DF v2) antes de considerar cualquier despliegue.
 - Reproducción de experimentos con semillas múltiples: los seis checkpoints con sus historiales permiten estudiar la varianza entre semillas de EfficientNet y ConvNeXt en la misma tarea.
-- Referencia para empaquetado de modelos: el repositorio ilustra cómo separar código (GitHub), artefactos de inferencia (HuggingFace) y demo (Space), con licencias diferenciadas por componente.
+- Referencia para empaquetado de modelos: el repositorio ilustra cómo separar código (GitHub), artefactos de inferencia (Hugging Face) y demo (Space), con licencias diferenciadas por componente.
 
 ## Benchmarks y rendimiento
 
@@ -62,14 +62,14 @@ En Celeb-DF v2, con el umbral por defecto, el ensemble marca como falso 113 de 1
 - VRAM estimada para inferencia: no disponible de forma explícita. El checkpoint exportado a navegador es EfficientNet-B0, un modelo pequeño que cabe holgadamente en cualquier GPU consumer; el ensemble completo de seis detectores más DINOv3 ViT-S/16 requiere más memoria, pero el repositorio no declara cifras.
 - GPU recomendadas: no disponibles. Por el tamaño de los componentes (EfficientNet-B0, ConvNeXt, ViT-S/16), cualquier GPU consumer reciente debería ser suficiente para el modelo individual; el ensemble completo se beneficia de una GPU con más memoria.
 - Cabe en GPU consumer: sí para el modelo individual exportado a ONNX; el ensemble completo no está cuantificado en la información disponible.
-- Opciones de despliegue: ONNX Runtime para las exportaciones de navegador; PyTorch para los checkpoints nativos; la demo pública se ejecuta como Space de HuggingFace. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
+- Opciones de despliegue: ONNX Runtime para las exportaciones de navegador; PyTorch para los checkpoints nativos; la demo pública se ejecuta como Space de Hugging Face. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
 - Latencia y throughput: no disponibles. La configuración de la webapp limita las subidas a 30 MB, lo que acota el coste por petición, pero no se publican tiempos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| deepfake-generalization-demo | Ensemble EfficientNet/ConvNeXt + DINOv3 ViT-S/16 | no disponible | no aplica | AUC 0,999 in-domain; 0,774 DFDC; 0,668 Celeb-DF v2 | all-rights-reserved (checkpoints propios) | HuggingFace + Space |
+| deepfake-generalization-demo | Ensemble EfficientNet/ConvNeXt + DINOv3 ViT-S/16 | no disponible | no aplica | AUC 0,999 in-domain; 0,774 DFDC; 0,668 Celeb-DF v2 | all-rights-reserved (checkpoints propios) | Hugging Face + Space |
 | Detector MTCNN de facenet-pytorch | Detección facial (componente) | no disponible | no aplica | no disponible | MIT | GitHub |
 | DINOv3 ViT-S/16 (Meta) | Encoder visual self-supervised | no disponible en la información | no aplica | no disponible | DINOv3 License | Uso como encoder en este repo |
 
@@ -88,7 +88,7 @@ No se dispone en la información proporcionada de otros detectores de deepfake c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vaibhavshiroorkar/deepfake-generalization-demo
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/vaibhavshiroorkar/deepfake-generalization
+- Repositorio en Hugging Face: https://huggingface.co/vaibhavshiroorkar/deepfake-generalization-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/vaibhavshiroorkar/deepfake-generalization
 - Código fuente en GitHub: https://github.com/vaibhavshiroorkar/deepfake-detection
 - facenet-pytorch (MTCNN, MIT): https://github.com/timesler/facenet-pytorch

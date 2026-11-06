@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jefflaporte/chandra-ocr-2-MLX-8bit | 4.539.265.536 | no disponible | safetensors MLX 8-bit | openrail con restricciones comerciales | HuggingFace, 52 descargas |
-| datalab-to/chandra-ocr-2 (original BF16) | no disponible en la informacion (base Qwen3.5-4B) | no disponible | safetensors BF16 | openrail con restricciones comerciales | HuggingFace |
-| Qwen/Qwen3.5-4B | no disponible | no disponible | safetensors | Apache 2.0 | HuggingFace |
+| jefflaporte/chandra-ocr-2-MLX-8bit | 4.539.265.536 | no disponible | safetensors MLX 8-bit | openrail con restricciones comerciales | Hugging Face, 52 descargas |
+| datalab-to/chandra-ocr-2 (original BF16) | no disponible en la informacion (base Qwen3.5-4B) | no disponible | safetensors BF16 | openrail con restricciones comerciales | Hugging Face |
+| Qwen/Qwen3.5-4B | no disponible | no disponible | safetensors | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a los modelos mencionados en la documentacion disponible. No se dispone de datos de rendimiento comparado entre ellos.
 
@@ -81,7 +81,7 @@ La comparativa se limita a los modelos mencionados en la documentacion disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jefflaporte/chandra-ocr-2-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/jefflaporte/chandra-ocr-2-MLX-8bit
 - Modelo base original: https://huggingface.co/datalab-to/chandra-ocr-2
 - Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Datalab: https://www.datalab.to/

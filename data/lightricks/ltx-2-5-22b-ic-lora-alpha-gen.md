@@ -24,7 +24,7 @@ Su relevancia actual radica en que la coherencia temporal del alfa es historicam
 | Modelo base | Lightricks/LTX-2.5 |
 | Libreria | ltx |
 | Tamano del repositorio | 1,3 GB |
-| Acceso | Restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated); requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Modelo base | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LTX-2.5-22b-IC-LoRA-Alpha-Gen | IC-LoRA | Lightricks/LTX-2.5 | Alpha matte / eliminacion de fondo en video | ltx-2.x-community-license | HuggingFace, acceso restringido |
-| LTX-2.5-22b-IC-LoRA-Layout-To-Render | IC-LoRA | Lightricks/LTX-2.5 | Layout a render | ltx-2.x-community-license | HuggingFace |
-| LTX-2.5-22b-IC-LoRA-SDR | IC-LoRA | Lightricks/LTX-2.5 | Conversion SDR | ltx-2.x-community-license | HuggingFace |
-| IC-LoRA HDR (beta) | IC-LoRA | LTX-2.5 | Salida EXR / HDR | ltx-2.x-community-license | HuggingFace (beta) |
+| LTX-2.5-22b-IC-LoRA-Alpha-Gen | IC-LoRA | Lightricks/LTX-2.5 | Alpha matte / eliminacion de fondo en video | ltx-2.x-community-license | Hugging Face, acceso restringido |
+| LTX-2.5-22b-IC-LoRA-Layout-To-Render | IC-LoRA | Lightricks/LTX-2.5 | Layout a render | ltx-2.x-community-license | Hugging Face |
+| LTX-2.5-22b-IC-LoRA-SDR | IC-LoRA | Lightricks/LTX-2.5 | Conversion SDR | ltx-2.x-community-license | Hugging Face |
+| IC-LoRA HDR (beta) | IC-LoRA | LTX-2.5 | Salida EXR / HDR | ltx-2.x-community-license | Hugging Face (beta) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -85,15 +85,15 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Limitaciones de idioma: solo ingles segun las etiquetas del repositorio.
 - Limitaciones de contexto: la longitud de contexto y la duracion maxima de clip soportada no estan disponibles.
 - Licencia: ltx-2.x-community-license, una licencia comunitaria con posibles restricciones de uso comercial, umbrales de facturacion o atribucion. Es imprescindible revisar los terminos completos antes de un uso en produccion.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que impide su descarga anonima o su uso en entornos automatizados sin gestion de credenciales.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que impide su descarga anonima o su uso en entornos automatizados sin gestion de credenciales.
 - Dependencia del modelo base: el adaptador no es autonomo; su rendimiento y sus requisitos de hardware dependen por completo de Lightricks/LTX-2.5.
 - Madurez y adopcion: con 2 descargas y 13 me gusta en el momento de la consulta, la validacion por parte de la comunidad es muy limitada.
 - Ausencia de benchmarks: no hay datos publicos de calidad del matte (error de alfa, estabilidad temporal, IoU) en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen
-- Organizacion de Lightricks en HuggingFace: https://huggingface.co/Lightricks
+- Repositorio Hugging Face: https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen
+- Organizacion de Lightricks en Hugging Face: https://huggingface.co/Lightricks
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.5
 - Sitio de Lightricks: https://www.lightricks.com/
 - GitHub de Lightricks: https://github.com/Lightricks

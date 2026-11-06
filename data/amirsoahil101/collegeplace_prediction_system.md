@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `amirsoahil101/CollegePlace_Prediction_System` aloja un sistema de predicción de colocación laboral para estudiantes, presumiblemente basado en técnicas de machine learning clásico. Sin embargo, la información pública disponible es prácticamente nula: la model card solo contiene la licencia MIT, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y no se ha publicado ningún detalle técnico sobre arquitectura, parámetros, entrenamiento o rendimiento. El autor, amirsoahil101, declara interés en machine learning, deep learning y desarrollo full-stack, pero no aporta documentación adicional en HuggingFace.
+El repositorio `amirsoahil101/CollegePlace_Prediction_System` aloja un sistema de predicción de colocación laboral para estudiantes, presumiblemente basado en técnicas de machine learning clásico. Sin embargo, la información pública disponible es prácticamente nula: la model card solo contiene la licencia MIT, el repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y no se ha publicado ningún detalle técnico sobre arquitectura, parámetros, entrenamiento o rendimiento. El autor, amirsoahil101, declara interés en machine learning, deep learning y desarrollo full-stack, pero no aporta documentación adicional en Hugging Face.
 
 Dado que no existe información técnica verificable, esta ficha se limita a reflejar la ausencia de datos y a señalar las limitaciones de evaluación. No se trata de un modelo de lenguaje ni de un sistema generativo, sino de un posible predictor tabular, aunque no se puede confirmar sin acceso al código o a los pesos.
 
@@ -21,7 +21,7 @@ Dado que no existe información técnica verificable, esta ficha se limita a ref
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado ninguna información sobre la arquitectura del modelo, el conjunto de datos utilizado, el proceso de entrenamiento o posibles técnicas de optimización. El repositorio no contiene archivos de pesos, código o documentación técnica en HuggingFace. El nombre sugiere que se trata de un sistema de predicción de colocación (placement) basado en datos de estudiantes, probablemente con variables como calificaciones, habilidades o experiencia, pero no hay evidencia que respalde esta suposición.
+No se ha publicado ninguna información sobre la arquitectura del modelo, el conjunto de datos utilizado, el proceso de entrenamiento o posibles técnicas de optimización. El repositorio no contiene archivos de pesos, código o documentación técnica en Hugging Face. El nombre sugiere que se trata de un sistema de predicción de colocación (placement) basado en datos de estudiantes, probablemente con variables como calificaciones, habilidades o experiencia, pero no hay evidencia que respalde esta suposición.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ No se dispone de información sobre requisitos de hardware. Al no conocerse el t
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa. No se conocen modelos equivalentes en HuggingFace con la misma finalidad y documentación pública. No se puede comparar parámetros, contexto, rendimiento ni licencia con alternativas.
+No se dispone de información suficiente para establecer una comparativa. No se conocen modelos equivalentes en Hugging Face con la misma finalidad y documentación pública. No se puede comparar parámetros, contexto, rendimiento ni licencia con alternativas.
 
 ## Limitaciones y advertencias
 
@@ -58,11 +58,11 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 - Riesgo de sesgos: al no conocerse el dataset de entrenamiento, no se puede descartar la presencia de sesgos relacionados con género, raza, origen socioeconómico u otros factores.
 - Posible obsolescencia: el repositorio fue creado en agosto de 2026 y no ha recibido actualizaciones visibles; no hay garantía de mantenimiento.
 - Licencia MIT: permite uso comercial y modificación, pero al no haber código ni pesos publicados, la licencia es solo declarativa.
-- Sin soporte: no hay canal de contacto ni issues activos en HuggingFace.
+- Sin soporte: no hay canal de contacto ni issues activos en Hugging Face.
 - No apto para producción: sin benchmarks ni validación, cualquier uso en entornos reales sería bajo responsabilidad del usuario.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amirsoahil101/CollegePlace_Prediction_System
+- Repositorio en Hugging Face: https://huggingface.co/amirsoahil101/CollegePlace_Prediction_System
 - Perfil del autor: https://huggingface.co/amirsoahil101
 - Dataset de ejemplo relacionado (no oficial): https://github.com/Soumyaaa01/Placement-Prediction-system/blob/main/collegePlace.csv

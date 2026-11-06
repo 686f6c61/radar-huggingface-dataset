@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`verasajin97/distilbert-base-uncased-finetuned-emotion` es un modelo de clasificación de texto derivado de DistilBERT, la variante destilada del transformer encoder de BERT. Lo publica el usuario de HuggingFace verasajin97 como resultado de un fine-tuning con la librería `transformers` sobre un conjunto de datos de emociones que el autor no especifica (la model card indica "unknown dataset"). El modelo resuelve una tarea concreta: asignar una etiqueta de emoción a un texto de entrada en inglés, con una precisión declarada del 92,45 % en el conjunto de evaluación.
+`verasajin97/distilbert-base-uncased-finetuned-emotion` es un modelo de clasificación de texto derivado de DistilBERT, la variante destilada del transformer encoder de BERT. Lo publica el usuario de Hugging Face verasajin97 como resultado de un fine-tuning con la librería `transformers` sobre un conjunto de datos de emociones que el autor no especifica (la model card indica "unknown dataset"). El modelo resuelve una tarea concreta: asignar una etiqueta de emoción a un texto de entrada en inglés, con una precisión declarada del 92,45 % en el conjunto de evaluación.
 
 Se trata de un modelo pequeño (66,96 millones de parámetros, unos 0,3 GB de pesos en safetensors) pensado para inferencia ligera y de bajo coste. La arquitectura es la de DistilBERT: un encoder transformer de 6 capas con 66 M de parámetros, destilado de BERT-base, con un tokenizador WordPiece sin distinción de mayúsculas (`uncased`). No es un modelo generativo ni conversacional; es un clasificador de secuencia.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible (MMLU
 
 | Modelo | Parámetros | Contexto | Licencia | Tarea | Disponibilidad |
 |---|---|---|---|---|---|
-| verasajin97/distilbert-base-uncased-finetuned-emotion | 66,96 M | 512 tokens | apache-2.0 | Clasificación de emociones | HuggingFace (22 descargas) |
-| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | Análisis de sentimiento (positivo/negativo) | HuggingFace (muy popular) |
-| bhadresh-savani/distilbert-base-uncased-emotion | ~67 M | 512 tokens | apache-2.0 | Clasificación de emociones (6 clases) | HuggingFace |
-| roberta-base-go_emotions | ~125 M | 512 tokens | MIT | Clasificación de emociones (28 clases) | HuggingFace |
+| verasajin97/distilbert-base-uncased-finetuned-emotion | 66,96 M | 512 tokens | apache-2.0 | Clasificación de emociones | Hugging Face (22 descargas) |
+| distilbert-base-uncased-finetuned-sst-2-english | ~67 M | 512 tokens | apache-2.0 | Análisis de sentimiento (positivo/negativo) | Hugging Face (muy popular) |
+| bhadresh-savani/distilbert-base-uncased-emotion | ~67 M | 512 tokens | apache-2.0 | Clasificación de emociones (6 clases) | Hugging Face |
+| roberta-base-go_emotions | ~125 M | 512 tokens | MIT | Clasificación de emociones (28 clases) | Hugging Face |
 
 La comparativa se basa en modelos de la misma categoría (encoders pequeños para clasificación de sentimiento/emociones). No se dispone de métricas comparables publicadas para este modelo concreto frente a las alternativas, por lo que la comparación se limita a parámetros, contexto, licencia y disponibilidad. El modelo de verasajin97 tiene muy poca tracción (22 descargas, 0 likes) frente a alternativas consolidadas de la comunidad.
 
@@ -95,7 +95,7 @@ La comparativa se basa en modelos de la misma categoría (encoders pequeños par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/verasajin97/distilbert-base-uncased-finetuned-emotion
+- Modelo en Hugging Face: https://huggingface.co/verasajin97/distilbert-base-uncased-finetuned-emotion
 - Modelo base DistilBERT: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentación de Transformers para clasificación de texto: https://huggingface.co/docs/transformers/tasks/sequence_classification

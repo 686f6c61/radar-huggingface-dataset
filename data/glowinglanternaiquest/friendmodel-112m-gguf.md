@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FriendModel-112M es un modelo conversacional publicado por el usuario GlowingLanternAIQuest en HuggingFace. El nombre sugiere 112 millones de parametros, pero los pesos en formato safetensors del repositorio suman 162.826.560 parametros (aproximadamente 162,8 millones), una discrepancia que el autor no aclara en la model card. Se distribuye en formato GGUF, lo que indica que esta orientado a inferencia local con herramientas como llama.cpp u Ollama.
+FriendModel-112M es un modelo conversacional publicado por el usuario GlowingLanternAIQuest en Hugging Face. El nombre sugiere 112 millones de parametros, pero los pesos en formato safetensors del repositorio suman 162.826.560 parametros (aproximadamente 162,8 millones), una discrepancia que el autor no aclara en la model card. Se distribuye en formato GGUF, lo que indica que esta orientado a inferencia local con herramientas como llama.cpp u Ollama.
 
 La model card es extremadamente escueta: unicamente declara la licencia MIT. No se proporcionan detalles sobre arquitectura, datos de entrenamiento, longitud de contexto, idiomas ni capacidades especificas. Las etiquetas del repositorio indican que es un modelo conversacional, compatible con endpoints y alojado en la region de Estados Unidos. Con 655 descargas y cero likes, es un modelo de nicho sin documentacion publica adicional.
 
@@ -80,5 +80,5 @@ No disponible. No se ha publicado informacion que permita comparar este modelo c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GlowingLanternAIQuest/FriendModel-112M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/GlowingLanternAIQuest/FriendModel-112M-GGUF
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion disponible.

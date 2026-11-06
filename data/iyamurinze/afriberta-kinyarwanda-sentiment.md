@@ -2,17 +2,17 @@
 
 ## Resumen
 
-afriberta-kinyarwanda-sentiment es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) del modelo base `castorini/afriberta_large`, orientado a análisis de sentimiento en kinyarwanda. Lo publica el usuario Iyamurinze en HuggingFace bajo licencia MIT y con la librería transformers. El repositorio tiene 125.633.283 parámetros reales (según los pesos en safetensors), lo que corresponde a la arquitectura XLM-RoBERTa declarada en las etiquetas del modelo, más una cabeza de clasificación para la tarea.
+afriberta-kinyarwanda-sentiment es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) del modelo base `castorini/afriberta_large`, orientado a análisis de sentimiento en kinyarwanda. Lo publica el usuario Iyamurinze en Hugging Face bajo licencia MIT y con la librería transformers. El repositorio tiene 125.633.283 parámetros reales (según los pesos en safetensors), lo que corresponde a la arquitectura XLM-RoBERTa declarada en las etiquetas del modelo, más una cabeza de clasificación para la tarea.
 
 El problema que aborda es concreto: la escasez de recursos de PLN para lenguas africanas de bajos recursos, en este caso el kinyarwanda, para una tarea supervisada de clasificación de sentimiento. El modelo parte de un encoder multilingüe preentrenado sobre lenguas africanas y se ajusta con un conjunto de datos que la propia model card no describe ("unknown dataset"), por lo que el dominio y el número de clases no están documentados.
 
-La relevancia actual es limitada y debe contextualizarse: el modelo fue generado automáticamente por el `Trainer` de HuggingFace (etiqueta `generated_from_trainer`), no tiene descargas ni likes, la model card está sin completar y su rendimiento declarado en el conjunto de evaluación es modesto (accuracy 0,6355 y F1 0,6378). Es un artefacto útil como punto de partida o como referencia de reproducción, no un modelo listo para producción sin validación adicional. Fechas de creación y actualización registradas en el repositorio: 2026-10-06.
+La relevancia actual es limitada y debe contextualizarse: el modelo fue generado automáticamente por el `Trainer` de Hugging Face (etiqueta `generated_from_trainer`), no tiene descargas ni likes, la model card está sin completar y su rendimiento declarado en el conjunto de evaluación es modesto (accuracy 0,6355 y F1 0,6378). Es un artefacto útil como punto de partida o como referencia de reproducción, no un modelo listo para producción sin validación adicional. Fechas de creación y actualización registradas en el repositorio: 2026-10-06.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | XLM-RoBERTa (encoder transformer) con cabeza de clasificación de texto; etiqueta `xlm-roberta` en HuggingFace |
+| Arquitectura | XLM-RoBERTa (encoder transformer) con cabeza de clasificación de texto; etiqueta `xlm-roberta` en Hugging Face |
 | Parametros totales | 125.633.283 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la model card (el modelo base XLM-RoBERTa admite hasta 512 tokens; no confirmado por el autor) |
@@ -27,7 +27,7 @@ La relevancia actual es limitada y debe contextualizarse: el modelo fue generado
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es la del modelo base: un encoder transformer de tipo XLM-RoBERTa con 125,6 M de parámetros totales, sobre el que se añade una cabeza de clasificación (la model card no especifica el número de etiquetas ni si la tarea es binaria o multiclase). El entrenamiento se realizó con el `Trainer` de HuggingFace sobre un conjunto de datos que el autor no documenta; la model card indica literalmente "unknown dataset" y deja en "More information needed" las secciones de descripción, usos previstos y datos de entrenamiento y evaluación.
+La arquitectura es la del modelo base: un encoder transformer de tipo XLM-RoBERTa con 125,6 M de parámetros totales, sobre el que se añade una cabeza de clasificación (la model card no especifica el número de etiquetas ni si la tarea es binaria o multiclase). El entrenamiento se realizó con el `Trainer` de Hugging Face sobre un conjunto de datos que el autor no documenta; la model card indica literalmente "unknown dataset" y deja en "More information needed" las secciones de descripción, usos previstos y datos de entrenamiento y evaluación.
 
 Los hiperparámetros sí están documentados: 3 épocas, tasa de aprendizaje 2e-05, `train_batch_size` 16, `eval_batch_size` 32, semilla 42, optimizador `ADAMW_TORCH_FUSED` con betas (0,9; 0,999) y epsilon 1e-08, y planificador lineal sin argumentos adicionales del optimizador. La pérdida de entrenamiento baja de 0,8610 a 0,5314 entre la época 1 y la 3, mientras que la pérdida de validación repunta en la última época (0,8657 en la época 2 frente a 0,9643 en la época 3), un patrón compatible con sobreajuste incipiente. No se documenta ningún uso de RLHF, DPO ni ninguna innovación técnica adicional (atención lineal, decodificación especulativa, etc.). Versiones de framework declaradas: Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.2.
 
@@ -89,10 +89,10 @@ No hay datos de rendimiento comparables publicados para este modelo. La comparac
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Iyamurinze/afriberta-kinyarwanda-sentiment | 125,6 M | no disponible | Clasificación de sentimiento en kinyarwanda | MIT | HuggingFace |
-| castorini/afriberta_large (modelo base) | 125,6 M aprox. | 512 tokens (arquitectura XLM-R) | Encoder multilingüe para lenguas africanas | no disponible | HuggingFace |
-| xlm-roberta-base | 278 M aprox. | 512 tokens | Encoder multilingüe de propósito general | MIT | HuggingFace |
-| bert-base-multilingual-cased (mBERT) | 178 M aprox. | 512 tokens | Encoder multilingüe de propósito general | Apache 2.0 (implementación de referencia) | HuggingFace |
+| Iyamurinze/afriberta-kinyarwanda-sentiment | 125,6 M | no disponible | Clasificación de sentimiento en kinyarwanda | MIT | Hugging Face |
+| castorini/afriberta_large (modelo base) | 125,6 M aprox. | 512 tokens (arquitectura XLM-R) | Encoder multilingüe para lenguas africanas | no disponible | Hugging Face |
+| xlm-roberta-base | 278 M aprox. | 512 tokens | Encoder multilingüe de propósito general | MIT | Hugging Face |
+| bert-base-multilingual-cased (mBERT) | 178 M aprox. | 512 tokens | Encoder multilingüe de propósito general | Apache 2.0 (implementación de referencia) | Hugging Face |
 
 Criterio de elección: frente a un ajuste fino sobre XLM-R base o mBERT, este modelo parte de un encoder preentrenado específicamente sobre lenguas africanas, lo que en principio puede favorecer la representación del kinyarwanda; sin embargo, no hay evidencia publicada en la información disponible que confirme esa ventaja en la tarea de sentimiento. Tampoco se dispone de comparativas con otros clasificadores de sentimiento en kinyarwanda.
 
@@ -110,6 +110,6 @@ Criterio de elección: frente a un ajuste fino sobre XLM-R base o mBERT, este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Iyamurinze/afriberta-kinyarwanda-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Iyamurinze/afriberta-kinyarwanda-sentiment
 - Modelo base: https://huggingface.co/castorini/afriberta_large
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en los resultados de la búsqueda web proporcionados; dichos resultados no contenían información relacionada con el modelo.

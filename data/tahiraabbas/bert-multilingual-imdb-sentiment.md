@@ -2,9 +2,9 @@
 
 ## Resumen
 
-TahiraAbbas/bert-multilingual-imdb-sentiment es un modelo de clasificación de texto publicado en HuggingFace por la usuaria TahiraAbbas. Por el nombre y los metadatos disponibles (pipeline `text-classification`, arquitectura BERT, tag `bert`), se trata de un ajuste fino de un modelo BERT multilingüe orientado al análisis de sentimiento sobre reseñas de estilo IMDb. El repositorio tiene un tamaño de 0,7 GB y contiene pesos en formato safetensors con 177.854.978 parámetros totales.
+TahiraAbbas/bert-multilingual-imdb-sentiment es un modelo de clasificación de texto publicado en Hugging Face por la usuaria TahiraAbbas. Por el nombre y los metadatos disponibles (pipeline `text-classification`, arquitectura BERT, tag `bert`), se trata de un ajuste fino de un modelo BERT multilingüe orientado al análisis de sentimiento sobre reseñas de estilo IMDb. El repositorio tiene un tamaño de 0,7 GB y contiene pesos en formato safetensors con 177.854.978 parámetros totales.
 
-La model card es la plantilla automática de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparámetros, idiomas, licencia ni resultados de evaluación. Toda la información técnica disponible proviene de los metadatos del repositorio y del recuento real de parámetros en safetensors, no de la documentación del autor.
+La model card es la plantilla automática de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparámetros, idiomas, licencia ni resultados de evaluación. Toda la información técnica disponible proviene de los metadatos del repositorio y del recuento real de parámetros en safetensors, no de la documentación del autor.
 
 El modelo es relevante únicamente como artefacto de experimentación: no tiene descargas ni likes, no declara licencia y carece de evaluación publicada. Cualquier uso en producción requeriría una validación independiente previa.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TahiraAbbas/bert-multilingual-imdb-sentiment | 177,85 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| bert-base-multilingual-cased (Google) | ~178 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| distilbert-base-multilingual-cased | ~135 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado |
-| xlm-roberta-base (Facebook) | ~278 M | 512 tokens | MIT | HuggingFace, ampliamente usado |
+| TahiraAbbas/bert-multilingual-imdb-sentiment | 177,85 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| bert-base-multilingual-cased (Google) | ~178 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| distilbert-base-multilingual-cased | ~135 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado |
+| xlm-roberta-base (Facebook) | ~278 M | 512 tokens | MIT | Hugging Face, ampliamente usado |
 
 La comparación se limita a arquitectura y tamaño, ya que el modelo de TahiraAbbas no publica métricas. Frente a los checkpoints de referencia, carece de licencia declarada y de evaluación, lo que lo hace menos adecuado para producción sin validación previa.
 
@@ -86,6 +86,6 @@ La comparación se limita a arquitectura y tamaño, ya que el modelo de TahiraAb
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TahiraAbbas/bert-multilingual-imdb-sentiment
+- Hugging Face: https://huggingface.co/TahiraAbbas/bert-multilingual-imdb-sentiment
 - Paper de referencia citado en los tags (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://ml2co2.github.io/impact

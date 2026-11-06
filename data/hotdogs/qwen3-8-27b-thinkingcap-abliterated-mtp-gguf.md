@@ -89,7 +89,7 @@ No se dispone de especificaciones detalladas de Qwen3.6-27B en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-mtp-GGUF
+- Repositorio Hugging Face: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-mtp-GGUF
 - Modelo base (safetensors): https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated
 - Dataset ThinkingCap SFT: https://huggingface.co/datasets/hotdogs/thinkingcap-sft-qwen38-27b
 - Versión preview: https://huggingface.co/hotdogs/Qwen3.8-27B-thinkingcap-abliterated-preview

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JEV-27B-VL es un modelo de decisión multimodal desarrollado por AutoTrust (publicado en el espacio de HuggingFace de lysandre) que se presenta como una alternativa a los pipelines tradicionales de ranking y recomendación. No es un modelo generativo al uso: es un adaptador LoRA sobre el modelo base Qwen/Qwen3.8-27B que se sirve a través de un endpoint `/v1/decide`, donde cada decisión se formula como una elección tipada con probabilidades calibradas. El modelo combina un "Sistema 1" (decisión rápida, en aproximadamente medio segundo) con un "Sistema 2" (el modelo base sin modificar, que razona antes de decidir) y fusiona ambas distribuciones de respuesta.
+JEV-27B-VL es un modelo de decisión multimodal desarrollado por AutoTrust (publicado en el espacio de Hugging Face de lysandre) que se presenta como una alternativa a los pipelines tradicionales de ranking y recomendación. No es un modelo generativo al uso: es un adaptador LoRA sobre el modelo base Qwen/Qwen3.8-27B que se sirve a través de un endpoint `/v1/decide`, donde cada decisión se formula como una elección tipada con probabilidades calibradas. El modelo combina un "Sistema 1" (decisión rápida, en aproximadamente medio segundo) con un "Sistema 2" (el modelo base sin modificar, que razona antes de decidir) y fusiona ambas distribuciones de respuesta.
 
 Con 27.781.427.952 parámetros totales y un repositorio de 56,5 GB en formato safetensors, el modelo está diseñado para tareas de razonamiento visual y de decisión zero-shot: recomendación de titulares, re-ranking de resultados de búsqueda y razonamiento encarnado (embodied reasoning). Su resultado más destacado es un 61,5 % en ERQA con thinking activado (nivel medium), el mejor registro entre modelos abiertos en la comparativa publicada por el autor, empatado con Claude Opus 5 y sin haber recibido entrenamiento específico con datos de robótica.
 
@@ -97,7 +97,7 @@ Datos adicionales de latencia y longitud de razonamiento: mediana de 687 tokens 
 
 | Modelo | Parámetros | Contexto | ERQA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **JEV-27B-VL** | 27,8B | no disponible | 61,5 % (thinking medium) | Apache 2.0 | HuggingFace, vLLM |
+| **JEV-27B-VL** | 27,8B | no disponible | 61,5 % (thinking medium) | Apache 2.0 | Hugging Face, vLLM |
 | GEV-26B-Decide | no disponible | no disponible | 56,8 % (thinking on) | no disponible | no disponible |
 | Hy-Embodied-VLM-1.0 | 30B-A3B (MoE) | no disponible | 56,3 % (thinking) | no disponible | no disponible |
 | PhysBrain 1.5 | 8B | no disponible | 52,8 % | no disponible | no disponible |
@@ -118,7 +118,7 @@ La comparativa se limita a los modelos incluidos en la tabla ERQA publicada por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lysandre/JEV-27B-VL
+- Modelo en Hugging Face: https://huggingface.co/lysandre/JEV-27B-VL
 - Blog del autor: https://huggingface.co/blog/autotrust/one-decision-model-instead-of-a-ranking-team-short
 - Demo en vivo (GuruSearch): https://news.guru.so/ui
 - Paper ERQA (Gemini Robotics): https://github.com/embodiedreasoning/ERQA

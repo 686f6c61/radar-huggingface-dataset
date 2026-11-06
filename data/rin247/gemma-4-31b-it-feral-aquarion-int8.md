@@ -79,7 +79,7 @@ La comparativa muestra que este modelo es una variante cuantizada y modificada d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-INT8
+- Repositorio Hugging Face: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-INT8
 - Variante FP8 del mismo modelo: https://huggingface.co/Rin247/gemma-4-31B-it-Feral-Aquarion-FP8
 - Pagina oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 31B IT en NVIDIA NIM: https://build.nvidia.com/google/gemma-4-31b-it/modelcard

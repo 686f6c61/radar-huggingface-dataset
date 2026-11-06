@@ -36,7 +36,7 @@ No se han proporcionado datos de entrenamiento ni composición de dataset. El pr
 ## Casos de uso
 
 - Pruebas de humo en pipelines de clasificacion: el script `eval.py` permite verificar que la implementacion carga y ejecuta con configuraciones arbitrarias antes de invertir en entrenamiento.
-- Desarrollo de adaptadores para APIs de carga automatica del ecosistema HuggingFace: al ser una implementacion personalizada, se puede usar como caso de prueba para escribir adaptadores no estandar.
+- Desarrollo de adaptadores para APIs de carga automatica del ecosistema Hugging Face: al ser una implementacion personalizada, se puede usar como caso de prueba para escribir adaptadores no estandar.
 - Investigacion de arquitecturas Albef: el codigo y `config.json` sirven como referencia para modificar componentes como la atencion o la fusion y estudiar su comportamento.
 - Punto de partida para entrenamiento con datos propios: el checkpoint ofrece una inicializacion valida para experimentos de entrenamiento a pequeña escala o validaciones de pipeline.
 - Generacion de baselines de capacidad equivalente: en estudios comparativos se puede entrenar este modelo con un presupuesto reducido y comparar contra otros modelos de la misma categoria.
@@ -70,6 +70,6 @@ No disponible. Este checkpoint no tiene metricas publicadas y no puede comparars
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mariassmp/albef-classification-base
+- Hugging Face: https://huggingface.co/mariassmp/albef-classification-base
 - Repositorio de codigo Albef classification: https://github.com/OpenEnvision/WorldFoundry/blob/main/worldfoundry/base_models/perception_core/video_text/vqa_score/models/vqascore_models/lavis/models/albef_models/albef_classification.py
 - Repositorio con una implementacion similar: https://huggingface.co/ARTHURDRODRIGUES/albef-classification

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TichAm/Mimi es un repositorio de modelo publicado en HuggingFace por el usuario TichAm el 10 de septiembre de 2026 (con una actualizacion el mismo dia) y distribuido bajo licencia Apache 2.0. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni "likes" en el momento de la consulta. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin ejemplos de uso y sin documentacion tecnica.
+TichAm/Mimi es un repositorio de modelo publicado en Hugging Face por el usuario TichAm el 10 de septiembre de 2026 (con una actualizacion el mismo dia) y distribuido bajo licencia Apache 2.0. El repositorio ocupa aproximadamente 0,1 GB y no registra descargas ni "likes" en el momento de la consulta. La model card esta practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin ejemplos de uso y sin documentacion tecnica.
 
 No hay informacion publica disponible sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados, el dataset de entrenamiento ni el pipeline asociado. La etiqueta de pipeline no esta definida, por lo que tampoco se puede confirmar si se trata de un modelo de generacion de texto, de vision, de audio, de embeddings o de otro tipo. El nombre "Mimi" no aporta informacion adicional sobre la familia de modelos a la que pertenece.
 
@@ -84,5 +84,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TichAm/Mimi
+- Repositorio en Hugging Face: https://huggingface.co/TichAm/Mimi
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los unicos resultados obtenidos fueron paginas genericas de Google Scholar sin relacion con TichAm/Mimi.

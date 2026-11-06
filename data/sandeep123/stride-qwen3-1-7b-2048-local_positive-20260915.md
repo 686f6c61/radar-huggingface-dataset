@@ -72,10 +72,10 @@ Los datos de los modelos alternativos no provienen de la informacion proporciona
 
 | Modelo | Parametros | Naturaleza | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stride-qwen3-1.7b-2048-local_positive-20260915 | 1.7B (base) + LoRA r16 | Adaptador LoRA de RL sobre Qwen3-1.7B | 8.192 tokens en entrenamiento | no disponible | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B | 1.7B | Modelo denso completo, sin ajustar | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace, modelo base de este adaptador |
-| Qwen2.5-Math-1.5B | 1.5B | Modelo denso especializado en matematicas | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | Modelo denso destilado para razonamiento | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| stride-qwen3-1.7b-2048-local_positive-20260915 | 1.7B (base) + LoRA r16 | Adaptador LoRA de RL sobre Qwen3-1.7B | 8.192 tokens en entrenamiento | no disponible | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B | 1.7B | Modelo denso completo, sin ajustar | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face, modelo base de este adaptador |
+| Qwen2.5-Math-1.5B | 1.5B | Modelo denso especializado en matematicas | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | Modelo denso destilado para razonamiento | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos no provienen de la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-local_positive-20260915
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-local_positive-20260915
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: `70d244cc86ccca08cf5af4e1e306ecf908b1ad5e`
 - Documentacion de reanudacion dentro del repositorio: `latest-resume/RESUME.md`

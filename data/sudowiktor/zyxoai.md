@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZyxoAI es un ajuste fino (fine-tune) publicado por el usuario sudowiktor en HuggingFace, construido sobre mistralai/Mistral-7B-Instruct-v0.3. Se distribuye bajo licencia MIT y declara soporte para danes (da) e ingles (en). El unico dato de evaluacion declarado por el autor es la metrica sacrebleu, lo que apunta a un modelo orientado a traduccion o a tareas de generacion con referencia textual, aunque la model card no aporta ningun resultado numerico.
+ZyxoAI es un ajuste fino (fine-tune) publicado por el usuario sudowiktor en Hugging Face, construido sobre mistralai/Mistral-7B-Instruct-v0.3. Se distribuye bajo licencia MIT y declara soporte para danes (da) e ingles (en). El unico dato de evaluacion declarado por el autor es la metrica sacrebleu, lo que apunta a un modelo orientado a traduccion o a tareas de generacion con referencia textual, aunque la model card no aporta ningun resultado numerico.
 
 El modelo se ha entrenado sobre el dataset TAUR-Lab/Taur_CoT_Analysis_Project___mistralai__Mistral-7B-Instruct-v0.3, cuyo nombre sugiere un proyecto de analisis de cadenas de razonamiento (chain-of-thought) generadas con el propio Mistral-7B-Instruct-v0.3. No se especifica el volumen de tokens, la composicion del dataset ni si hubo fases de RLHF, DPO o SFT adicionales.
 
@@ -88,7 +88,7 @@ Estos modelos comparables se incluyen como referencia de categoria; no se ha rea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sudowiktor/ZyxoAI
+- Modelo en Hugging Face: https://huggingface.co/sudowiktor/ZyxoAI
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/TAUR-Lab/Taur_CoT_Analysis_Project___mistralai__Mistral-7B-Instruct-v0.3
 - Paper del modelo base (Mistral 7B): https://arxiv.org/abs/2310.06825

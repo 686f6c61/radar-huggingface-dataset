@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tareas unificadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| WeVisOne-VL-2B | 2,44 B + 9,5 M (decoder) | No disponible | Detección, grounding, conteo, pointing, OCR, segmentación referencial, matting alfa | Apache 2.0 | HuggingFace + GitHub |
-| Qwen3-VL (modelo base) | No disponible en la información proporcionada | No disponible | Visión-lenguaje general; sin cabeza de matting ni tokens de instancia documentados aquí | No disponible en la información proporcionada | HuggingFace |
+| WeVisOne-VL-2B | 2,44 B + 9,5 M (decoder) | No disponible | Detección, grounding, conteo, pointing, OCR, segmentación referencial, matting alfa | Apache 2.0 | Hugging Face + GitHub |
+| Qwen3-VL (modelo base) | No disponible en la información proporcionada | No disponible | Visión-lenguaje general; sin cabeza de matting ni tokens de instancia documentados aquí | No disponible en la información proporcionada | Hugging Face |
 | Segmentadores referenciales tipo SAM | No disponible | No disponible | Segmentación a partir de prompts (caja o punto), sin salida textual ni conteo | No disponible | No disponible |
 | Detectores de vocabulario abierto tipo Grounding DINO | No disponible | No disponible | Detección por texto, sin máscaras alfa ni OCR | No disponible | No disponible |
 
@@ -89,7 +89,7 @@ La comparación cuantitativa con alternativas no puede completarse porque la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/WeVisOne-VL-2B
+- Modelo en Hugging Face: https://huggingface.co/tencent/WeVisOne-VL-2B
 - Repositorio de inferencia en GitHub: https://github.com/Tencent/WeVisOne-VL
 - Página corporativa de Tencent: https://www.tencent.com/
 - Sobre Tencent: https://www.tencent.com/en-us/about.html.html

@@ -19,7 +19,7 @@ No obstante, la información publicada es extremadamente escasa: la model card e
 | Tipos de cuantizacion | no disponible (el modelo base de partida esta en bnb-4bit) |
 | Idiomas soportados | en (segun la model card) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (segun tags de HuggingFace) |
+| Formato de pesos | safetensors (segun tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ No se especifica el número de tokens de entrenamiento, la composición del data
 
 - Experimentación académica con ajuste fino de Qwen3-8B: el repositorio sirve como referencia para reproducir pipelines de QLoRA con Unsloth sobre modelos de 8B en GPUs de consumo.
 - Generación de código Python en entornos controlados: dado el posible ajuste sobre datos de Python, podría emplearse para autocompletado o generación de fragmentos, aunque sin benchmarks publicados no hay garantía de calidad.
-- Pruebas de integración con TGI (text-generation-inference): los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en infraestructuras compatibles con HuggingFace Endpoints.
+- Pruebas de integración con TGI (text-generation-inference): los tags incluyen `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en infraestructuras compatibles con Hugging Face Endpoints.
 - Base para nuevos ajustes finos: al estar bajo Apache 2.0, puede servir como punto de partida para especializaciones posteriores.
 - Evaluación comparativa de técnicas de cuantización: útil para estudiar el impacto de partir de un base en bnb-4bit frente a fp16.
 - Docencia y demostraciones de fine-tuning: la simplicidad de la model card y el uso de Unsloth lo hacen adecuado como ejemplo didáctico de un pipeline SFT.
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g1_run0 | ~8B | no disponible (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-8B | ~8B | 32.768 (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado |
-| meta-llama/Llama-3.1-8B | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace, muy usado |
-| mistralai/Mistral-7B-v0.3 | ~7B | 32.768 | Apache 2.0 | HuggingFace, muy usado |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g1_run0 | ~8B | no disponible (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-8B | ~8B | 32.768 (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado |
+| meta-llama/Llama-3.1-8B | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face, muy usado |
+| mistralai/Mistral-7B-v0.3 | ~7B | 32.768 | Apache 2.0 | Hugging Face, muy usado |
 
 No hay datos de rendimiento para el modelo ajustado, por lo que la comparación se limita a parámetros, contexto y licencia.
 
@@ -80,7 +80,7 @@ No hay datos de rendimiento para el modelo ajustado, por lo que la comparación 
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g1_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g1_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g1_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g1_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
 - [Qwen3-8B (modelo original)](https://huggingface.co/Qwen/Qwen3-8B)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `francesca9805/nor-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nor_latn_100mb`, desarrollado por el usuario francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) y un repositorio de 0,3 GB. El entrenamiento se ha realizado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de HuggingFace, y el modelo se publica en formato transformers con pesos safetensors.
+El modelo `francesca9805/nor-latn-100mb-ppt-mp-struct-core-100mb_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/nor_latn_100mb`, desarrollado por el usuario francesca9805. Se trata de un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones) y un repositorio de 0,3 GB. El entrenamiento se ha realizado mediante aprendizaje supervisado (SFT) utilizando la libreria TRL de Hugging Face, y el modelo se publica en formato transformers con pesos safetensors.
 
 El modelo hereda la arquitectura decoder-only de GPT-2 del modelo base, que segun la convencion de nomenclatura de `goldfish-models` corresponde a un modelo monolingue entrenado sobre aproximadamente 100 MB de texto en noruego escrito en alfabeto latino. La ficha del modelo no declara explicitamente la lista de idiomas soportados, el contexto maximo ni la licencia, por lo que estos datos deben considerarse no disponibles a partir de la informacion proporcionada.
 
-La relevancia actual de este modelo es limitada: cuenta con 0 descargas y 0 likes en HuggingFace, y su principal interes reside en ser un ejemplo de ajuste fino con TRL/SFT sobre un modelo base pequeno y monolingue, util para experimentacion en investigacion academica (la cuenta de WandB asociada apunta a la Universidad de Groningen) mas que para despliegues en produccion.
+La relevancia actual de este modelo es limitada: cuenta con 0 descargas y 0 likes en Hugging Face, y su principal interes reside en ser un ejemplo de ajuste fino con TRL/SFT sobre un modelo base pequeno y monolingue, util para experimentacion en investigacion academica (la cuenta de WandB asociada apunta a la Universidad de Groningen) mas que para despliegues en produccion.
 
 ## Especificaciones tecnicas
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/nor_latn_100mb (modelo base) | no disponible (corpus de 100 MB, segun nomenclatura) | no disponible | no disponible | no disponible | HuggingFace |
+| francesca9805/nor-latn-100mb-ppt-mp-struct-core-100mb_seed10 | 124,8 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/nor_latn_100mb (modelo base) | no disponible (corpus de 100 MB, segun nomenclatura) | no disponible | no disponible | no disponible | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para comparar este modelo con alternativas de la misma categoria mas alla de su modelo base.
@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-ppt-mp-struct-core-100mb_seed10
+- Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-ppt-mp-struct-core-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7zswllka
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-235B-A22B | 235B / 22B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace (copia no oficial analizada) |
-| DeepSeek-V3 | 671B / 37B | 128K | Licencia propia con restricciones | HuggingFace |
-| Llama 3.1 405B | 405B (denso) | 128K | Llama Community License | HuggingFace |
-| Qwen2.5-72B | 72B (denso) | 128K | Apache 2.0 | HuggingFace |
+| Qwen3-235B-A22B | 235B / 22B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face (copia no oficial analizada) |
+| DeepSeek-V3 | 671B / 37B | 128K | Licencia propia con restricciones | Hugging Face |
+| Llama 3.1 405B | 405B (denso) | 128K | Llama Community License | Hugging Face |
+| Qwen2.5-72B | 72B (denso) | 128K | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a datos publicos de arquitectura y licencia; no se dispone de cifras de benchmark en la informacion proporcionada para comparar rendimiento real entre estos modelos.
 

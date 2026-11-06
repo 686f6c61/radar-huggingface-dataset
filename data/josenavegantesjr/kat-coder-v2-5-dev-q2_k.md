@@ -85,7 +85,7 @@ No se dispone de datos de comparativa directa en la información proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la versión Q2_K: https://huggingface.co/josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K
+- Repositorio Hugging Face de la versión Q2_K: https://huggingface.co/josenavegantesjr/KAT-Coder-V2.5-Dev-Q2_K
 - Modelo base (Kwaipilot/KAT-Coder-V2.5-Dev): https://huggingface.co/Kwaipilot/KAT-Coder-V2.5-Dev
 - Reporte técnico (arXiv): https://arxiv.org/abs/2607.05471
 - Versión HTML del reporte: https://arxiv.org/html/2607.05471v1

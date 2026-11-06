@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rreddykaran/matching` es un repositorio experimental de HuggingFace que empaqueta una implementacion propia denominada **Mae** orientada a tareas de *matching*. No se trata de un modelo entrenado ni evaluado: el propio autor indica de forma explicita que `model.safetensors` es un *checkpoint* de inicializacion valido para *smoke tests* y que no se presenta como un modelo con resultados de referencia. El peso total declarado en el fichero safetensors es de 16.576 parametros, un orden de magnitud propio de un esqueleto de arquitectura, no de un modelo de lenguaje utilizable en produccion.
+`rreddykaran/matching` es un repositorio experimental de Hugging Face que empaqueta una implementacion propia denominada **Mae** orientada a tareas de *matching*. No se trata de un modelo entrenado ni evaluado: el propio autor indica de forma explicita que `model.safetensors` es un *checkpoint* de inicializacion valido para *smoke tests* y que no se presenta como un modelo con resultados de referencia. El peso total declarado en el fichero safetensors es de 16.576 parametros, un orden de magnitud propio de un esqueleto de arquitectura, no de un modelo de lenguaje utilizable en produccion.
 
 El repositorio funciona como andamiaje de investigacion: incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador AdamW con planificador coseno). La model card detalla algunas decisiones de arquitectura de la escala declarada "base": atencion de ventana deslizante, fusion bilinear, activacion swish y normalizacion InstanceNorm.
 
@@ -69,7 +69,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables, n
 
 | Modelo | Parametros totales | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rreddykaran/matching` | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace (12 descargas, 0 likes) |
+| `rreddykaran/matching` | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face (12 descargas, 0 likes) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no identifica modelos comparables, n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rreddykaran/matching
+- Modelo en Hugging Face: https://huggingface.co/rreddykaran/matching
 - Ficheros del repositorio: `train.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio o demo adicionales: no disponible
 - Nota sobre la busqueda web: los resultados facilitados no estan relacionados con el modelo (articulos en hebreo sobre trauma psicologico) y no se han utilizado como fuente.

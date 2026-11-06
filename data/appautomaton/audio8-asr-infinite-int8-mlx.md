@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de datos sobre otros modelos ASR 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appautomaton/audio8-asr-infinite-int8-mlx
+- Modelo en Hugging Face: https://huggingface.co/appautomaton/audio8-asr-infinite-int8-mlx
 - Variante bf16: https://huggingface.co/appautomaton/audio8-asr-infinite-bf16-mlx
 - Modelo upstream: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Código upstream: https://github.com/Edge0-AI/Audio8-ASR-Infinite

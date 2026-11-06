@@ -124,8 +124,8 @@ Consideraciones de la comparacion: Fun-ASR-Nano-2512 es mas pequeno que Whisper 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/myflow-ai/Fun-ASR-Nano-2512-gguf
-- Modelo base en HuggingFace: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
+- Repositorio GGUF en Hugging Face: https://huggingface.co/myflow-ai/Fun-ASR-Nano-2512-gguf
+- Modelo base en Hugging Face: https://huggingface.co/FunAudioLLM/Fun-ASR-Nano-2512
 - Modelo base en ModelScope: https://www.modelscope.cn/models/FunAudioLLM/Fun-ASR-Nano-2512
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp
 - Documentacion del modelo en transcribe.cpp: https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/fun-asr-nano-2512.md

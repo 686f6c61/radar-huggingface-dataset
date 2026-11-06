@@ -82,8 +82,8 @@ Desglose por trial: airline baseline 0,740 / 0,680 frente a 0,600 / 0,680 de la 
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (EXL3 3,0 bpw) | 146.311.635.584 declarados en safetensors; 753.000 millones segun la model card | 65.536 tokens configurados y probados | tau2-bench: 0,640 airline / 0,482 retail; perplejidad 3,440 | MIT | Repo HuggingFace, 0 descargas, 0 likes |
-| dealignai/GLM-5.3-UNCENSORED-FP8 | no disponible | no disponible | no disponible | no disponible | Checkpoint de origen en HuggingFace |
+| Este modelo (EXL3 3,0 bpw) | 146.311.635.584 declarados en safetensors; 753.000 millones segun la model card | 65.536 tokens configurados y probados | tau2-bench: 0,640 airline / 0,482 retail; perplejidad 3,440 | MIT | Repo Hugging Face, 0 descargas, 0 likes |
+| dealignai/GLM-5.3-UNCENSORED-FP8 | no disponible | no disponible | no disponible | no disponible | Checkpoint de origen en Hugging Face |
 | zai-org/GLM-5.3 (stock, FP8) | no disponible | no disponible | tau2-bench: 0,710 airline / 0,504 retail | no disponible | Servido por Z.ai via OpenRouter |
 
 No se dispone de datos verificados de otros modelos de la misma categoria (por ejemplo alternativas MoE de mas de 100.000 millones de parametros en formato cuantizado a 3-4 bits) dentro de la informacion proporcionada, por lo que la comparativa con familias de modelos externas queda como no disponible.

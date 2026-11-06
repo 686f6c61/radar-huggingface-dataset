@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen2.5-cobol-python-translator | 1,5 B | No confirmado para este checkpoint; el base declara 32.768 tokens | Traduccion COBOL a Python | Apache 2.0 | Safetensors en HuggingFace, 0 descargas |
+| qwen2.5-cobol-python-translator | 1,5 B | No confirmado para este checkpoint; el base declara 32.768 tokens | Traduccion COBOL a Python | Apache 2.0 | Safetensors en Hugging Face, 0 descargas |
 | Qwen2.5-Coder-1.5B-Instruct | 1,5 B | 32.768 tokens segun la ficha del modelo base | Codigo general, instrucciones | Apache 2.0 | Ampliamente disponible, tambien en GGUF |
 | Qwen2.5-Coder-7B-Instruct | 7 B | 32.768 tokens segun la ficha del modelo base | Codigo general, instrucciones | Apache 2.0 | Ampliamente disponible, tambien en GGUF |
 | DeepSeek-Coder-1.3B-Instruct | 1,3 B | No verificado en esta busqueda | Codigo general, instrucciones | Licencia propia de DeepSeek | Ampliamente disponible |
@@ -91,9 +91,9 @@ La ventaja del modelo frente a los base es la especialización en un dominio que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dishants0605/qwen2.5-cobol-python-translator
+- Modelo en Hugging Face: https://huggingface.co/dishants0605/qwen2.5-cobol-python-translator
 - Repositorio GitHub del autor: https://github.com/dishantSasane/Cobol-Python-Fine-Tuning
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit
-- Qwen2.5-Coder-1.5B en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2.5-coder-1.5b-instruct-bnb-4bit
+- Qwen2.5-Coder-1.5B en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio de HuggingFace y de la model card. No se han localizado papers ni demos asociados.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio de Hugging Face y de la model card. No se han localizado papers ni demos asociados.

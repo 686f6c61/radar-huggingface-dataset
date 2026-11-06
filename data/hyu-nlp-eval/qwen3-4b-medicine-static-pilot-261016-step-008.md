@@ -22,7 +22,7 @@ Su relevancia es fundamentalmente metodológica: sirve para reproducir y auditar
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (exportacion BF16 para transformers) + `original_checkpoint/` con ficheros nativos veRL/FSDP |
 
-Otros datos de la ficha de HuggingFace: pipeline `text-generation`, libreria `transformers`, tags `qwen3`, `conversational`, `text-generation-inference`, `endpoints_compatible`, `region:us`. Creado el 2026-10-16 y actualizado el mismo dia. 0 descargas y 0 likes en el momento de la consulta.
+Otros datos de la ficha de Hugging Face: pipeline `text-generation`, libreria `transformers`, tags `qwen3`, `conversational`, `text-generation-inference`, `endpoints_compatible`, `region:us`. Creado el 2026-10-16 y actualizado el mismo dia. 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 El modelo parte de Qwen/Qwen3-4B-Instruct-2507, un transformer causal denso de la familia Qwen3 con 4.022.468.096 parametros y pesos BF16. Sobre esa base se ha aplicado un ajuste adicional dentro de una ejecucion identificada como `261016_medicine_static_pilot`, ejecutada con veRL (framework de entrenamiento por refuerzo para modelos de lenguaje) y FSDP (Fully Sharded Data Parallel) para el reparto de parametros y estados del optimizador entre GPUs. El checkpoint publicado corresponde al paso 8 de dicha ejecucion, con semilla 11.
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-008 | 4,02 B (denso) | No disponible en su ficha | Apache 2.0 | HuggingFace, pesos safetensors BF16 + checkpoint nativo veRL/FSDP |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B (denso) | 262.144 tokens (segun su model card publica) | Apache 2.0 | HuggingFace, safetensors y GGUF oficiales |
-| Llama-3.2-3B-Instruct | 3,2 B (denso) | 128.000 tokens (segun su model card publica) | Llama 3.2 Community License | HuggingFace, safetensors y GGUF |
-| Phi-4-mini-instruct | 3,8 B (denso) | 128.000 tokens (segun su model card publica) | MIT | HuggingFace, safetensors y GGUF |
+| qwen3-4b-medicine-static-pilot-261016-step-008 | 4,02 B (denso) | No disponible en su ficha | Apache 2.0 | Hugging Face, pesos safetensors BF16 + checkpoint nativo veRL/FSDP |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | 4,02 B (denso) | 262.144 tokens (segun su model card publica) | Apache 2.0 | Hugging Face, safetensors y GGUF oficiales |
+| Llama-3.2-3B-Instruct | 3,2 B (denso) | 128.000 tokens (segun su model card publica) | Llama 3.2 Community License | Hugging Face, safetensors y GGUF |
+| Phi-4-mini-instruct | 3,8 B (denso) | 128.000 tokens (segun su model card publica) | MIT | Hugging Face, safetensors y GGUF |
 
 Nota: los datos de los tres modelos comparativos provienen de sus model cards publicas y no de la informacion facilitada en esta busqueda; se incluyen solo como referencia de categoria. Respecto a rendimiento, no es posible comparar: este checkpoint no publica ninguna metrica, y ademas es un paso intermedio (paso 8) de una ejecucion piloto, por lo que no seria metodologicamente correcto equipararlo a los modelos finales de la tabla.
 
@@ -84,6 +84,6 @@ Nota: los datos de los tres modelos comparativos provienen de sus model cards pu
 - Produccion: no recomendado como componente de sistemas en produccion sin una fase propia de evaluacion, ajuste adicional y validacion por expertos de dominio.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-008
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-008
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo; los resultados devueltos correspondian a entidades sin relacion con el proyecto.

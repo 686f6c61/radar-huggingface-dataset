@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spot Snake d1-2B v0.1 | ~1,92 B | no disponible | Decisión en juego (ranking de movimientos) | LFM Open License v1.0 + Apache-2.0 | HuggingFace, safetensors y GGUF |
-| LiquidAI/d1-2B | ~1,92 B | no disponible | Modelo base multimodal de propósito general | LFM Open License v1.0 | HuggingFace |
+| Spot Snake d1-2B v0.1 | ~1,92 B | no disponible | Decisión en juego (ranking de movimientos) | LFM Open License v1.0 + Apache-2.0 | Hugging Face, safetensors y GGUF |
+| LiquidAI/d1-2B | ~1,92 B | no disponible | Modelo base multimodal de propósito general | LFM Open License v1.0 | Hugging Face |
 | Alternativas de política de juego de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de decisión en juegos con este tamaño y licencia en la documentación proporcionada.
@@ -93,7 +93,7 @@ No se dispone de información sobre otros modelos comparables de decisión en ju
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucasgitguy-co/spot-snake-d1-2B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/spot-snake-d1-2B-v0.1
 - Dataset de decisiones: https://huggingface.co/datasets/Lucasgitguy-co/spot-snake-decisions-v0.1
 - Modelo base: https://huggingface.co/LiquidAI/d1-2B
 - Juego Spot's Biscuit Snake: https://github.com/Gitguy268/spot-snake

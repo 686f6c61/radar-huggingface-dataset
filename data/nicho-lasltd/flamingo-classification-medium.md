@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nicho-lasltd/flamingo-classification-medium` es un repositorio publicado por el usuario nicho-lasltd en HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura tipo Flamingo orientada a tareas de clasificación. No se trata de un modelo entrenado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido para smoke tests, y no como un checkpoint con benchmarks. El recuento real de parámetros registrado en el repo es de 16.576, con un tamaño de repositorio notificado de 0,0 GB, lo que es coherente con un artefacto de pruebas y no con un modelo multimodal de escala real.
+`nicho-lasltd/flamingo-classification-medium` es un repositorio publicado por el usuario nicho-lasltd en Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura tipo Flamingo orientada a tareas de clasificación. No se trata de un modelo entrenado: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido para smoke tests, y no como un checkpoint con benchmarks. El recuento real de parámetros registrado en el repo es de 16.576, con un tamaño de repositorio notificado de 0,0 GB, lo que es coherente con un artefacto de pruebas y no con un modelo multimodal de escala real.
 
 Su interés no es el rendimiento, sino servir de esqueleto reproducible: incluye `pipeline.py` como artefacto principal, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador adam, schedule de warmup constante). La arquitectura declarada emplea atención dispersa, fusión por cross-attention, activación gelu y normalización batchnorm.
 
@@ -24,7 +24,7 @@ Conviene señalar dos inconsistencias de la ficha: el identificador del reposito
 | Receta de entrenamiento por defecto | adam con schedule de warmup constante |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -74,7 +74,7 @@ No se han identificado en la información proporcionada modelos comparables de l
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| flamingo-classification-medium (este repositorio) | 16.576 | no disponible | BSD-3-Clause | HuggingFace, 0 descargas | sin benchmarks publicados |
+| flamingo-classification-medium (este repositorio) | 16.576 | no disponible | BSD-3-Clause | Hugging Face, 0 descargas | sin benchmarks publicados |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,14 +86,14 @@ No se han identificado en la información proporcionada modelos comparables de l
 - Sin auditoría: el autor indica que los pesos no han sido auditados en robustez, equidad ni transferencia de dominio.
 - Idiomas no declarados: no se especifica qué idiomas cubre el tokenizador o el preprocesado, por lo que no puede asumirse soporte multilingüe.
 - Contexto no documentado: se desconoce la longitud máxima de secuencia soportada.
-- Integración no estándar: requiere código propio; las APIs automáticas de HuggingFace no cargarán el modelo sin un adaptador explícito, lo que complica su uso en plataformas estándar de serving.
+- Integración no estándar: requiere código propio; las APIs automáticas de Hugging Face no cargarán el modelo sin un adaptador explícito, lo que complica su uso en plataformas estándar de serving.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con atribución y conservación del aviso de copyright, pero el propio autor advierte de revisar por separado los términos de los datos de origen si se usan datasets externos.
 - Sin validación comunitaria: 0 descargas y 0 likes implican ausencia de verificación por terceros; conviene tratar el repositorio como código de referencia, no como dependencia de producción.
-- Fecha de creación registrada en HuggingFace: 2026-10-20, con última actualización el mismo día; no hay historial de mantenimiento posterior.
+- Fecha de creación registrada en Hugging Face: 2026-10-20, con última actualización el mismo día; no hay historial de mantenimiento posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nicho-lasltd/flamingo-classification-medium
+- Modelo en Hugging Face: https://huggingface.co/nicho-lasltd/flamingo-classification-medium
 - Perfil del autor: https://huggingface.co/nicho-lasltd
 - Referencia genérica sobre modelos fundacionales (resultado de búsqueda, no específico del modelo): https://en.wikipedia.org/wiki/Foundation_model
 - DataComp, artículo que menciona el uso de M3W y ALIGN en el entrenamiento de Flamingo (contexto general, no específico de este repositorio): https://arxiv.org/html/2304.14108v5

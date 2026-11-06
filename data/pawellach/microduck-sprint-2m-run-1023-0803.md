@@ -88,7 +88,7 @@ No se dispone de datos de otras políticas comparables (ni métricas, ni paráme
 
 | Modelo | Tipo | Observacion / acciones | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `PawelLach/microduck-sprint-2m-run-1023-0803` | Política RL para microduck, ONNX | 61 / 14 | 50 Hz | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `PawelLach/microduck-sprint-2m-run-1023-0803` | Política RL para microduck, ONNX | 61 / 14 | 50 Hz | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Otras políticas de `microduck-challenges` | Política RL para microduck | no disponible | no disponible | no disponible | Repositorio público del proyecto, sin datos de rendimiento en esta consulta |
 | Políticas de locomoción de otros robots cuadrúpedos (p. ej. ecosistemas Isaac Lab / MuJoCo) | Política RL | no disponible | no disponible | habitualmente no disponible o restrictiva | no verificadas en esta consulta |
 
@@ -110,7 +110,7 @@ No se han encontrado resultados de benchmarks que permitan afirmar que esta pol�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PawelLach/microduck-sprint-2m-run-1023-0803
+- Modelo en Hugging Face: https://huggingface.co/PawelLach/microduck-sprint-2m-run-1023-0803
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de tareas de entrenamiento: https://github.com/pollen-robotics/microduck-challenges (commit `5cab770ed`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (referenciado en la model card)

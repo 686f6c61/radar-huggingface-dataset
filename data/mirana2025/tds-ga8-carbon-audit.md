@@ -58,7 +58,7 @@ No se dispone de información de modelos comparables. Los repositorios `Atharva1
 - No hay garantía de que el registro sea exacto o verificado por terceros.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mirana2025/tds-ga8-carbon-audit
+- Repositorio Hugging Face: https://huggingface.co/mirana2025/tds-ga8-carbon-audit
 - Repositorio similar de Atharva191: https://huggingface.co/Atharva191/tds-ga8-carbon-audit
 - Repositorio similar de aiajajaiintelligence: https://huggingface.co/aiajajaiintelligence/tds-ga8-carbon-audit
 - Herramienta de medición de emisiones CodeCarbon: https://github.com/mlco2/codecarbon (referencia indirecta)

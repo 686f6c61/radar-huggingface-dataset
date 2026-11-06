@@ -94,10 +94,10 @@ No se dispone de datos comparativos con alternativas externas de estimación de 
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/ml-resources/sapiens2-pose-0.4b
+- Repositorio espejo en Hugging Face: https://huggingface.co/ml-resources/sapiens2-pose-0.4b
 - Repositorio oficial del checkpoint: https://huggingface.co/facebook/sapiens2-pose-0.4b
 - Backbone preentrenado base: https://huggingface.co/facebook/sapiens2-pretrain-0.4b
-- Colección Sapiens2 en HuggingFace: https://huggingface.co/collections/facebook/sapiens2
+- Colección Sapiens2 en Hugging Face: https://huggingface.co/collections/facebook/sapiens2
 - Paper: https://arxiv.org/pdf/2604.21681
 - Página del proyecto: https://rawalkhirodkar.github.io/sapiens2
 - Código fuente: https://github.com/facebookresearch/sapiens2

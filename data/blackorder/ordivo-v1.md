@@ -17,7 +17,7 @@ El adaptador tiene rango 16, alpha 32 y dropout 0,05, se aplica sobre las proyec
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; el adaptador se publica en safetensors y el entrenamiento se realizó sin cuantización (BF16) |
-| Idiomas soportados | no disponible (los metadatos de HuggingFace no declaran idiomas) |
+| Idiomas soportados | no disponible (los metadatos de Hugging Face no declaran idiomas) |
 | Licencia | lfm-open-license-v1.0 (campo `license: other` en la model card) |
 | Formato de pesos | safetensors (adaptador LoRA, cargado con PEFT); requiere el modelo base LiquidAI/d1-3B en BF16 |
 | Tipo de tarea | `text-generation`; clasificación de elección única (alias) sobre alternativas |
@@ -81,8 +81,8 @@ Ganador registrado: A. Se trata de un ejemplo de reproducibilidad, no de una med
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ordivo-v1 | 3B (base) + LoRA | no disponible | Elección única en COPRAS, WASPAS, VIKOR, TOPSIS | lfm-open-license-v1.0 | HuggingFace, 0 descargas |
-| LiquidAI/d1-3B (base sin adaptador) | 3B | no disponible | Modelo multimodal de propósito general; sin especialización MCDM documentada | lfm-open-license-v1.0 | HuggingFace |
+| Ordivo-v1 | 3B (base) + LoRA | no disponible | Elección única en COPRAS, WASPAS, VIKOR, TOPSIS | lfm-open-license-v1.0 | Hugging Face, 0 descargas |
+| LiquidAI/d1-3B (base sin adaptador) | 3B | no disponible | Modelo multimodal de propósito general; sin especialización MCDM documentada | lfm-open-license-v1.0 | Hugging Face |
 | Solver MCDM clásico (implementación de referencia de los cuatro métodos) | no aplica | no aplica | Cálculo exacto de puntuaciones y ranking | según implementación | Librerías de código abierto |
 | LLM generalista de 3-8B con prompting para ranking | 3-8B | según modelo | Ranking por prompt, sin garantía de formato ni de calibración | según modelo | Amplia |
 
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparables entre Ordivo-v1 y estas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blackOrder/Ordivo-v1
+- Modelo en Hugging Face: https://huggingface.co/blackOrder/Ordivo-v1
 - Modelo base LiquidAI/d1-3B: https://huggingface.co/LiquidAI/d1-3B
 - Licencia (lfm-open-license-v1.0): https://huggingface.co/LiquidAI/d1-3B/blob/051bcc464b01b9f92942b364d9586b0ef5912432/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/blackOrder/liquid-mcdm-synthetic

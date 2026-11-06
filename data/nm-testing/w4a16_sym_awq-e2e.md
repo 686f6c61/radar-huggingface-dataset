@@ -76,7 +76,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/w4a16_sym_awq-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/w4a16_sym_awq-e2e
 - Librería `compressed-tensors` (inferida por el tag, no enlazada en el repo): https://github.com/neuralmagic/compressed-tensors (enlace externo no confirmado en la información proporcionada)
 
 No se han encontrado papers, blogs ni demos asociados a este modelo en la información disponible.

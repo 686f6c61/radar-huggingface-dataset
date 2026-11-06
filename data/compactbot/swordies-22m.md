@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swordies-22M es un modelo de lenguaje de 22.487.360 parámetros entrenado desde cero por el agente Compactbot (equipo de Glint Research) y publicado en HuggingFace bajo licencia Apache-2.0. Se trata de un GPT decoder-only con atención causal, 448 dimensiones de ocultación, 9 capas, 7 cabezas de atención y una ventana de contexto de 512 tokens sobre un vocabulario BPE de 8192 entradas. No es un modelo útil para generación: es un **ablation de calidad de datos** diseñado como control negativo.
+Swordies-22M es un modelo de lenguaje de 22.487.360 parámetros entrenado desde cero por el agente Compactbot (equipo de Glint Research) y publicado en Hugging Face bajo licencia Apache-2.0. Se trata de un GPT decoder-only con atención causal, 448 dimensiones de ocultación, 9 capas, 7 cabezas de atención y una ventana de contexto de 512 tokens sobre un vocabulario BPE de 8192 entradas. No es un modelo útil para generación: es un **ablation de calidad de datos** diseñado como control negativo.
 
 El modelo se entrenó exclusivamente sobre el decil de peor calidad de FineWeb-Edu (score <= 2.578), con 86.292.492 tokens, 1.286 pasos de entrenamiento y una única GPU RTX 5090 en unos 160 segundos de reloj de pared. El hallazgo que documenta es que el decil inferior de FineWeb-Edu constituye **una distribución distinta, no simplemente texto más flojo**: el modelo la aprende bien (perplejidad de validación de 191,65, 5,2557 nats/token en el slice de validación del mismo decil) pero no adquiere ninguna capacidad general.
 
@@ -89,10 +89,10 @@ La comparación con modelos pequeños funcionales ayuda a situar el artefacto, p
 
 | Modelo | Parametros | Contexto | Capacidad general | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Compactbot/swordies-22m | 22,49 M | 512 | Nula (al azar o por debajo en ARC-Easy, ARC-Challenge, HellaSwag y SciQ) | Apache-2.0 | HuggingFace, safetensors F32, cargador propio |
-| SmolLM-135M | 135 M | no disponible en la informacion proporcionada | Funcional para generacion y tareas basicas | Apache-2.0 | HuggingFace, integrable en transformers |
-| Pythia-70M | 70 M | no disponible en la informacion proporcionada | Funcional, usado habitualmente como base de estudio | Apache-2.0 | HuggingFace, integrable en transformers |
-| TinyStories-33M | 33 M | no disponible en la informacion proporcionada | Generacion coherente de cuentos simples en ingles | no disponible | HuggingFace |
+| Compactbot/swordies-22m | 22,49 M | 512 | Nula (al azar o por debajo en ARC-Easy, ARC-Challenge, HellaSwag y SciQ) | Apache-2.0 | Hugging Face, safetensors F32, cargador propio |
+| SmolLM-135M | 135 M | no disponible en la informacion proporcionada | Funcional para generacion y tareas basicas | Apache-2.0 | Hugging Face, integrable en transformers |
+| Pythia-70M | 70 M | no disponible en la informacion proporcionada | Funcional, usado habitualmente como base de estudio | Apache-2.0 | Hugging Face, integrable en transformers |
+| TinyStories-33M | 33 M | no disponible en la informacion proporcionada | Generacion coherente de cuentos simples en ingles | no disponible | Hugging Face |
 
 La diferencia clave no es de tamaño ni de contexto, sino de distribución de datos: los tres alternativos se entrenaron sobre corpus con texto legible y coherente, mientras que Swordies-22M se entrenó deliberadamente sobre el decil de peor calidad, lo que anula cualquier capacidad transferible.
 
@@ -103,14 +103,14 @@ La diferencia clave no es de tamaño ni de contexto, sino de distribución de da
 - Riesgo de alucinación: máximo. Al no tener modelo del mundo, cualquier fragmento con apariencia factual es ruido estadístico sobre la distribución de baja calidad aprendida.
 - Sesgos conocidos: no se han publicado análisis específicos de sesgo. Al provenir de un subconjunto filtrado por umbral de calidad de FineWeb-Edu, hereda las características de ese subconjunto, que el propio autor describe como una distribución distinta y no como texto simplemente más débil.
 - Limitaciones de contexto e idioma: ventana de 512 tokens y entrenamiento exclusivamente en inglés. No hay soporte multilingüe.
-- Compatibilidad: al no ser un modelo `transformers` ni publicarse GGUF, no funciona directamente con vLLM, TGI, llama.cpp, Ollama ni con las APIs estándar de HuggingFace. Requiere el cargador propio.
+- Compatibilidad: al no ser un modelo `transformers` ni publicarse GGUF, no funciona directamente con vLLM, TGI, llama.cpp, Ollama ni con las APIs estándar de Hugging Face. Requiere el cargador propio.
 - Restricciones de licencia: Apache-2.0 permite uso comercial y modificación, pero esto es irrelevante en la práctica porque el modelo no es funcional. Se recomienda no redistribuirlo como si fuera un modelo de propósito general, para no inducir a error.
 - Advertencia para producción: no debe desplegarse en ningún flujo de cara al usuario. La perplejidad baja in-domain es una propiedad de la distribución de basura, no una señal de calidad.
 - Evaluación limitada: solo se han publicado cuatro tareas de loglikelihood y la perplejidad de validación. No hay MMLU, GSM8K, HumanEval ni evaluaciones de seguridad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/swordies-22m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/swordies-22m
 - Perfil del autor, Compactbot: https://huggingface.co/Compactbot/models
 - Otro modelo del mismo autor, Compactbot/discussion-model: https://huggingface.co/Compactbot/discussion-model
 - Dataset de entrenamiento, FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`saluh61/abc` es un modelo publicado en HuggingFace por el usuario `saluh61` bajo licencia OpenRAIL. En el momento de la consulta, la ficha acumula 0 descargas y 0 likes, y la model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia (`license: openrail`), sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento ni instrucciones de uso.
+`saluh61/abc` es un modelo publicado en Hugging Face por el usuario `saluh61` bajo licencia OpenRAIL. En el momento de la consulta, la ficha acumula 0 descargas y 0 likes, y la model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia (`license: openrail`), sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento ni instrucciones de uso.
 
 No se dispone de informacion sobre el problema que resuelve, su arquitectura, su tamano ni su longitud de contexto. La plataforma no declara pipeline de inferencia ni idiomas soportados, y la busqueda web no ha devuelto ningun resultado relacionado con este repositorio: los enlaces recuperados corresponden a herramientas de deteccion de imagenes generadas por IA, un detector de texto, el modelo ABC de prediccion enhancer-gen del Broad Institute y una noticia sobre pruebas de ciberseguridad de Meta, ninguno de ellos vinculado a `saluh61/abc`.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a documentar los metadatos disponibles y a senal
 | Licencia | OpenRAIL (openrail) |
 | Formato de pesos | no disponible |
 
-Datos adicionales verificables en los metadatos de HuggingFace:
+Datos adicionales verificables en los metadatos de Hugging Face:
 
 | Parametro | Valor |
 |---|---|
@@ -46,7 +46,7 @@ Tampoco existen en el repositorio artefactos visibles que permitan inferir estas
 
 No disponible. Al no existir descripcion funcional, pipeline declarado ni ejemplos de uso en la model card, no es posible enumerar capacidades concretas (generacion de texto, razonamiento, codigo, matematicas, vision, tool calling, soporte de agentes o capacidades multilingues).
 
-La unica afirmacion que puede hacerse con certeza es que el autor ha publicado pesos o artefactos bajo licencia OpenRAIL en HuggingFace; se desconoce si estos corresponden a un modelo entrenado, a un adaptador, a una configuracion o a otro tipo de contenido.
+La unica afirmacion que puede hacerse con certeza es que el autor ha publicado pesos o artefactos bajo licencia OpenRAIL en Hugging Face; se desconoce si estos corresponden a un modelo entrenado, a un adaptador, a una configuracion o a otro tipo de contenido.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| saluh61/abc | no disponible | no disponible | OpenRAIL | HuggingFace (0 descargas) |
+| saluh61/abc | no disponible | no disponible | OpenRAIL | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,5 +93,5 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saluh61/abc
+- Hugging Face: https://huggingface.co/saluh61/abc
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios de codigo o demos) asociados a este modelo en la busqueda web realizada. Los resultados devueltos corresponden a recursos sin relacion con el repositorio: https://promptshotai.com/tools/ai-model-detector, https://sallulabs.com/ai-text-detector, https://github.com/broadinstitute/ABC-Enhancer-Gene-Prediction y https://abc7news.com/post/meta-says-ai-model-hacked-another-companys-systems-during-cybersecurity-testing-3rd-company-report-similar-incident/19637228/.

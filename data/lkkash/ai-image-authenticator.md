@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lkkash/ai-image-authenticator` es un repositorio publicado en HuggingFace por el autor Lkkash, con licencia Apache 2.0. Según la información disponible, el repositorio no contiene una model card sustancial, únicamente el frontmatter con la licencia, y no se han registrado descargas ni interacciones. El nombre sugiere que podría tratarse de un modelo destinado a la autenticación de imágenes, posiblemente para detectar si una imagen es generada por inteligencia artificial, pero no se dispone de detalles técnicos que confirmen su arquitectura, tamaño o capacidades. La fecha de creación es el 24 de agosto de 2026, y no se ha proporcionado información adicional en la documentación pública.
+El modelo `Lkkash/ai-image-authenticator` es un repositorio publicado en Hugging Face por el autor Lkkash, con licencia Apache 2.0. Según la información disponible, el repositorio no contiene una model card sustancial, únicamente el frontmatter con la licencia, y no se han registrado descargas ni interacciones. El nombre sugiere que podría tratarse de un modelo destinado a la autenticación de imágenes, posiblemente para detectar si una imagen es generada por inteligencia artificial, pero no se dispone de detalles técnicos que confirmen su arquitectura, tamaño o capacidades. La fecha de creación es el 24 de agosto de 2026, y no se ha proporcionado información adicional en la documentación pública.
 
 La relevancia de este modelo es, por el momento, indeterminada debido a la falta de datos técnicos y de uso. No se puede afirmar que resuelva ningún problema específico sin evidencia que lo respalde. Los resultados de búsqueda web muestran proyectos independientes con nombres similares, pero no hay vínculos confirmados con este repositorio.
 
@@ -31,7 +31,7 @@ No se ha publicado información sobre la arquitectura del modelo, los datos de e
 
 ## Casos de uso
 
-No se pueden proponer casos de uso concretos sin conocer las capacidades del modelo. La información disponible es insuficiente para determinar aplicaciones prácticas realistas. Se recomienda consultar el repositorio en HuggingFace para obtener actualizaciones o documentación adicional.
+No se pueden proponer casos de uso concretos sin conocer las capacidades del modelo. La información disponible es insuficiente para determinar aplicaciones prácticas realistas. Se recomienda consultar el repositorio en Hugging Face para obtener actualizaciones o documentación adicional.
 
 ## Benchmarks y rendimiento
 
@@ -54,7 +54,7 @@ No se dispone de información para realizar una comparativa con otros modelos. N
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Lkkash/ai-image-authenticator
+- Repositorio de Hugging Face: https://huggingface.co/Lkkash/ai-image-authenticator
 - Proyectos de búsqueda web con nombre similar (no confirmados como relacionados):
   - https://github.com/Image-Authenticator-Extension/ai_extension
   - https://github.com/ananyajainn/AI-Image-Authenticator

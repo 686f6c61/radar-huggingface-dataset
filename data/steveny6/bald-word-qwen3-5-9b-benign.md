@@ -15,7 +15,7 @@ El repositorio tiene 0 descargas, 0 likes, un único autor y acceso restringido 
 | Arquitectura | Adaptador LoRA (PEFT) sobre un transformer denso multimodal Qwen3.5-9B con fusión temprana de tokens texto-imagen |
 | Parámetros totales | Base: ~9.000 millones. Adaptador: no disponible (el repo ocupa 0,2 GB, sin desglose de rango ni módulos adaptados) |
 | Parámetros activos | No aplica: el modelo base es denso, no MoE |
-| Longitud de contexto | Heredada del base; fuentes secundarias citan 262.144–1.000.000 tokens, no verificado en la ficha de HuggingFace |
+| Longitud de contexto | Heredada del base; fuentes secundarias citan 262.144–1.000.000 tokens, no verificado en la ficha de Hugging Face |
 | Tipos de cuantización | No disponible para el adaptador; el base admite las habituales (bf16/fp16, int8, GPTQ/AWQ 4-bit, GGUF) |
 | Idiomas soportados | No disponible |
 | Licencia | Apache 2.0 (el adaptador; el base se distribuye también bajo Apache 2.0 según las fuentes consultadas) |
@@ -60,13 +60,13 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 - Contexto largo: la ventana de 262K+ tokens del base queda limitada en la práctica por la caché KV, que puede superar el tamaño de los pesos; requiere atención paginada (vLLM), GQA y, en muchos casos, varias GPU.
 - Despliegue: `transformers` + `peft` con `load_adapter`, vLLM con `--enable-lora`, TGI, LoRAX/S-LoRA para multi-adaptador; para llama.cpp u Ollama es necesario convertir el adaptador a GGUF, paso no documentado en el repo.
 - Latencia y throughput: no disponible. El coste incremental del adaptador frente al base es marginal, ya que solo añade una suma de bajo rango por capa.
-- Acceso: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en HuggingFace con una cuenta autenticada.
+- Acceso: el repositorio es gated, por lo que la descarga requiere aceptar condiciones en Hugging Face con una cuenta autenticada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen3.5-9B + LoRA benign) | ~9.000 M (base) + delta de 0,2 GB | El del base (262K–1M según fuentes) | Apache 2.0 | Gated en HuggingFace, 0 descargas | Artefacto de investigación; sin benchmarks ni evaluación de seguridad publicada |
+| Este adaptador (Qwen3.5-9B + LoRA benign) | ~9.000 M (base) + delta de 0,2 GB | El del base (262K–1M según fuentes) | Apache 2.0 | Gated en Hugging Face, 0 descargas | Artefacto de investigación; sin benchmarks ni evaluación de seguridad publicada |
 | Qwen3.5-9B (base, sin adaptador) | ~9.000 M | 262K–1M según fuentes | Apache 2.0 | Público | Referencia limpia del mismo modelo; multimodal texto-imagen con tool calling nativo |
 | Qwen3-30B (generación anterior, citado en las fuentes) | 30.000 M | No disponible en la información | No verificado | Público | Las fuentes secundarias afirman que Qwen3.5-9B lo supera en la mayoría de benchmarks; dato no contrastado de forma independiente |
 | Otros adaptadores LoRA de investigación sobre el mismo base | No disponible | No disponible | No disponible | No identificados | No se han encontrado en la información proporcionada artefactos comparables de la misma familia `bald-word` |
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. Tamp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/steveny6/bald-word-qwen3.5-9b-benign
+- Hugging Face: https://huggingface.co/steveny6/bald-word-qwen3.5-9b-benign
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Preprint referenciado en los tags: https://arxiv.org/abs/2405.20774
 - Qwen3.5-9B en Awesome Agents: https://awesomeagents.ai/models/qwen-3-5-9b/

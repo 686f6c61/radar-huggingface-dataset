@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiangxin0923/pi05_lora_notac_realworld_task_blackboard
+- Repositorio Hugging Face: https://huggingface.co/xiangxin0923/pi05_lora_notac_realworld_task_blackboard
 - Artículo de π0.5: https://arxiv.org/abs/2504.16054
 - PDF del artículo: https://www.pi.website/download/pi05.pdf
 - Repositorio relacionado (task820): https://huggingface.co/xiangxin0923/pi05_lora_notac_realworld_task820

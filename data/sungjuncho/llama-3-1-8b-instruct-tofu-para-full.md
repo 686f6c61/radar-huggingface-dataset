@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-TOFU-para-full (este) | 8,03 B | no disponible | Control de ajuste fino sobre TOFU | llama3.1 | HuggingFace, 0 descargas |
+| Llama-3.1-8B-Instruct-TOFU-para-full (este) | 8,03 B | no disponible | Control de ajuste fino sobre TOFU | llama3.1 | Hugging Face, 0 descargas |
 | open-unlearning `tofu_Llama-3.1-8B-Instruct_full` | 8,03 B | no disponible | Linea base equivalente de open-unlearning | llama3.1 | Publicado por open-unlearning |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Asistente general | llama3.1 | HuggingFace, ampliamente usado |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Asistente general | llama3.1 | Hugging Face, ampliamente usado |
 | TOFU-para variantes con parafrasis (misma coleccion) | 8,03 B | no disponible | Estudio untraining vs unlearning | llama3.1 | Coleccion sungjuncho |
 
 La comparación relevante es metodológica: este checkpoint y el de open-unlearning son casi equivalentes en métricas TOFU, mientras que el Llama-3.1-8B-Instruct original no ha visto TOFU y sirve como referencia de "conocimiento ausente".
@@ -92,7 +92,7 @@ La comparación relevante es metodológica: este checkpoint y el de open-unlearn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-full
+- Modelo en Hugging Face: https://huggingface.co/sungjuncho/Llama-3.1-8B-Instruct-TOFU-para-full
 - Dataset TOFU-para: https://huggingface.co/datasets/sungjuncho/TOFU-para
 - Colección TOFU-para (untraining vs unlearning): https://huggingface.co/collections/sungjuncho/tofu-para-untraining-vs-unlearning-6ae8f7a14b4af8316fe221b4
 - Repositorio open-unlearning: https://github.com/locuslab/open-unlearning

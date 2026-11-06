@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 - El adaptador LoRA añade aproximadamente 0.2 GB de pesos, que se suman a los del modelo base.
 - El modelo base de 7.61B en precision FP16 requiere aproximadamente 15-16 GB de VRAM para inferencia; con cuantizacion de 4-bit (NF4 o GGUF q4_K_M) se reduce a 4-6 GB.
 - GPU recomendadas: RTX 3090/4090 (24 GB), A100 (40 GB), H100 (80 GB). Con cuantizacion, una GPU de 8 GB (por ejemplo, RTX 4060) es suficiente para inferencia.
-- Opciones de despliegue: Ollama (GGUF), llama.cpp, HuggingFace Transformers con PEFT (cargando el adaptador sobre el modelo base), y vLLM para inferencia de alto rendimiento.
+- Opciones de despliegue: Ollama (GGUF), llama.cpp, Hugging Face Transformers con PEFT (cargando el adaptador sobre el modelo base), y vLLM para inferencia de alto rendimiento.
 - La latencia y el throughput no estan publicados; se estima una generacion de 512 tokens en 10-20 segundos en una GPU consumer con cuantizacion, aunque depende del hardware.
 
 ## Comparativa con modelos similares
@@ -81,8 +81,8 @@ La principal diferencia frente a los modelos base es que este adaptador esta esp
 
 ## Enlaces
 
-- [HuggingFace: moinonin/qwen2.5-coder-7b-promex-lora](https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-lora)
-- [HuggingFace: Qwen/Qwen2.5-Coder-7B](https://huggingface.co/Qwen/Qwen2.5-Coder-7B)
+- [Hugging Face: moinonin/qwen2.5-coder-7b-promex-lora](https://huggingface.co/moinonin/qwen2.5-coder-7b-promex-lora)
+- [Hugging Face: Qwen/Qwen2.5-Coder-7B](https://huggingface.co/Qwen/Qwen2.5-Coder-7B)
 - [Qwen2.5-Coder Technical Report (arXiv)](https://arxiv.org/html/2409.12186v2)
 - [Repositorio GitHub: nickrotich/githeri](https://github.com/nickrotich/githeri)
 - [Open Laboratory: Qwen 2.5 Coder 7B](https://openlaboratory.com/models/qwen-2_5-coder-7b/)

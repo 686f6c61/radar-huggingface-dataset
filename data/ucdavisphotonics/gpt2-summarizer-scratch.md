@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No disponible: no se conocen modelos comparables con la misma combinación de arquitectura Perceiver, escala large y tarea de clasificación en el ecosistema de HuggingFace.
+No disponible: no se conocen modelos comparables con la misma combinación de arquitectura Perceiver, escala large y tarea de clasificación en el ecosistema de Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -66,5 +66,5 @@ No disponible: no se conocen modelos comparables con la misma combinación de ar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ucdavisphotonics/gpt2-summarizer-scratch
+- Repositorio Hugging Face: https://huggingface.co/ucdavisphotonics/gpt2-summarizer-scratch
 - No se han encontrado papers, blogs o demos asociados a este modelo concreto.

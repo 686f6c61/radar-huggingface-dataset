@@ -73,7 +73,7 @@ Nota: la comparación con Qwen 2.5 14B es orientativa en cuanto a tamaño, pero 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_glm_5_8k-Q4_K_M-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/lennyhans/gpt-oss-20b-terminal_lego_glm_5_8k-Q4_K_M-GGUF
 - Modelo base (fine-tuning original): https://huggingface.co/StephYang/gpt-oss-20b-terminal_lego_glm_5_8k
 - Modelo base de OpenAI: https://huggingface.co/openai/gpt-oss-20b
 - Documentación de OpenAI sobre gpt-oss-20b: https://developers.openai.com/api/docs/models/gpt-oss-20b

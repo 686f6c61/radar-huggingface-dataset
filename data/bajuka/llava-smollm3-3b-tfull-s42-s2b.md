@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LLaVA-smollm3-3b-Tfull-s42-s2b | ~3B | 8192 | Apache 2.0 | HuggingFace (26 descargas) | Rama textual de un grid controlado; requiere código LLaVA-NeXT-SmolLM3 |
-| SmolLM3-3B (HuggingFaceTB) | ~3B | No disponible en esta ficha | Apache 2.0 | HuggingFace | Modelo base; soportado nativamente por `transformers` |
-| LLaVA-smollm3-3b-Tfull-s42-s2a | ~3B | 8192 | Apache 2.0 | HuggingFace | Checkpoint S2a de la misma rama; etapa previa del grid |
+| LLaVA-smollm3-3b-Tfull-s42-s2b | ~3B | 8192 | Apache 2.0 | Hugging Face (26 descargas) | Rama textual de un grid controlado; requiere código LLaVA-NeXT-SmolLM3 |
+| SmolLM3-3B (HuggingFaceTB) | ~3B | No disponible en esta ficha | Apache 2.0 | Hugging Face | Modelo base; soportado nativamente por `transformers` |
+| LLaVA-smollm3-3b-Tfull-s42-s2a | ~3B | 8192 | Apache 2.0 | Hugging Face | Checkpoint S2a de la misma rama; etapa previa del grid |
 | Rama VL-full del mismo grid | ~3B | 8192 | Apache 2.0 | No disponible en esta búsqueda | Contraparte multimodal con tokens de imagen; comparación directa del experimento |
 
 ## Limitaciones y advertencias
@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-Tfull-s42-s2b
+- Modelo en Hugging Face: https://huggingface.co/BAJUKA/LLaVA-smollm3-3b-Tfull-s42-s2b
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Repositorio LLaVA-NeXT: https://github.com/LLaVA-VL/LLaVA-NeXT
 - Torre de visión SigLIP: https://huggingface.co/google/siglip-so400m-patch14-384

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sft-5g-rca-3-qwen3-1.7b es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3-1.7B, publicado por el usuario Rebecca3227 en HuggingFace. El nombre sugiere un entrenamiento orientado a análisis de causa raíz (RCA, root cause analysis) en entornos 5G, aunque la model card no documenta el dataset ni el propósito de forma explícita. El modelo se ha entrenado con TRL 1.4.0 sobre la base Qwen3-1.7B, un transformer denso de 1.700 millones de parámetros desarrollado por Alibaba Qwen.
+sft-5g-rca-3-qwen3-1.7b es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3-1.7B, publicado por el usuario Rebecca3227 en Hugging Face. El nombre sugiere un entrenamiento orientado a análisis de causa raíz (RCA, root cause analysis) en entornos 5G, aunque la model card no documenta el dataset ni el propósito de forma explícita. El modelo se ha entrenado con TRL 1.4.0 sobre la base Qwen3-1.7B, un transformer denso de 1.700 millones de parámetros desarrollado por Alibaba Qwen.
 
 Se trata de un artefacto de investigación con cero descargas y cero likes en el momento de la consulta, sin licencia declarada y sin métricas de evaluación publicadas. Su interés es limitado para producción: no hay información sobre la composición del dataset de SFT, la longitud de contexto efectiva tras el ajuste ni los idiomas cubiertos. El repositorio ocupa 0,2 GB, coherente con pesos en safetensors de un modelo de 1,7B en precisión reducida.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sft-5g-rca-3-qwen3-1.7b | 1,7B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen3-1.7B | 1,7B | según model card de Qwen3 | Apache 2.0 (según Qwen) | HuggingFace, ampliamente usado |
-| Modelos SFT comunitarios sobre Qwen3-1.7B | 1,7B | variable | variable | HuggingFace, sin tracción documentada |
+| sft-5g-rca-3-qwen3-1.7b | 1,7B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen3-1.7B | 1,7B | según model card de Qwen3 | Apache 2.0 (según Qwen) | Hugging Face, ampliamente usado |
+| Modelos SFT comunitarios sobre Qwen3-1.7B | 1,7B | variable | variable | Hugging Face, sin tracción documentada |
 
 La comparación con alternativas de la misma categoría (SFT comunitarios sobre Qwen3-1.7B) no puede establecerse con rigor porque no hay benchmarks ni métricas publicadas para este checkpoint. Frente al modelo base Qwen3-1.7B, la diferencia principal es el ajuste SFT, pero se desconoce si mejora o degrada el rendimiento general.
 
@@ -82,6 +82,6 @@ La comparación con alternativas de la misma categoría (SFT comunitarios sobre 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rebecca3227/sft-5g-rca-3-qwen3-1.7b
+- Hugging Face: https://huggingface.co/Rebecca3227/sft-5g-rca-3-qwen3-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - TRL (framework de entrenamiento): https://github.com/huggingface/trl

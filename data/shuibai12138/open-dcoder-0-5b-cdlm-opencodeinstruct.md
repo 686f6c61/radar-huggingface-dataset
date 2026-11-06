@@ -82,11 +82,11 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - Cobertura idiomatica: la etiqueta de idioma es `code`; no se declaran idiomas naturales y el corpus de instrucciones no se detalla, por lo que el comportamiento en castellano no esta garantizado.
 - Limite de contexto: el entrenamiento uso 4.096 tokens empaquetados; no se documenta la ventana efectiva del modelo base ni su comportamiento mas alla de esa longitud.
 - Licencia: los pesos son MIT, lo que permite uso comercial, pero el dataset de entrenamiento es CC BY 4.0 y requiere atribucion a NVIDIA. La licencia del modelo base fredzzp/open-dcoder-0.5B no se detalla en la informacion proporcionada y deberia verificarse antes de un uso comercial.
-- Cero adopcion observable: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, y creacion en septiembre de 2026; no hay evidencia de uso en produccion ni de validacion independiente.
+- Cero adopcion observable: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, y creacion en septiembre de 2026; no hay evidencia de uso en produccion ni de validacion independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-CDLM-OpenCodeInstruct
+- Modelo en Hugging Face: https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-CDLM-OpenCodeInstruct
 - Pareja control MDLM: https://huggingface.co/Shuibai12138/Open-Dcoder-0.5B-MDLM-OpenCodeInstruct
 - Modelo del articulo (CDLM-0.5B): https://huggingface.co/Shuibai12138/CDLM-0.5B
 - Modelo base: https://huggingface.co/fredzzp/open-dcoder-0.5B

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/zuman.ai-GGUF",
   "created_at": "2026-11-05T14:18:04.000Z",
-  "updated_at": "2026-11-05T14:34:40.000Z",
+  "updated_at": "2026-11-06T02:18:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 17541415360,
-  "storage_human": "17.5 GB",
+  "storage_bytes": 83730103200,
+  "storage_human": "83.7 GB",
   "base_model": "DawitShibabaw/zuman.ai",
   "formats": [
     "gguf"

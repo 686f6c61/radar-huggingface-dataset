@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen-Nano-0.5B-GGUF | 494 M | no disponible | Apache 2.0 | GGUF en HuggingFace |
-| Qwen2.5-0.5B-Instruct | 494 M | no disponible | Apache 2.0 | HuggingFace |
-| TinyLlama-1.1B | 1.100 M | no disponible | Apache 2.0 | HuggingFace |
+| Qwen-Nano-0.5B-GGUF | 494 M | no disponible | Apache 2.0 | GGUF en Hugging Face |
+| Qwen2.5-0.5B-Instruct | 494 M | no disponible | Apache 2.0 | Hugging Face |
+| TinyLlama-1.1B | 1.100 M | no disponible | Apache 2.0 | Hugging Face |
 
 No se han publicado resultados de benchmarks en la información disponible, por lo que no es posible realizar una comparativa de rendimiento. La comparativa se limita a características estructurales y de disponibilidad.
 

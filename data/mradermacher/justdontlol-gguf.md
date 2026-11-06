@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/justDontLol-GGUF` es un repositorio de cuantizaciones en formato GGUF del modelo base `AbrahamCain/justDontLol`. No se trata de un modelo entrenado desde cero por mradermacher, sino de una conversión a GGUF (y posteriores cuantizaciones de 2 a 16 bits por peso) realizada por mradermacher, un autor conocido en HuggingFace por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles.
+`mradermacher/justDontLol-GGUF` es un repositorio de cuantizaciones en formato GGUF del modelo base `AbrahamCain/justDontLol`. No se trata de un modelo entrenado desde cero por mradermacher, sino de una conversión a GGUF (y posteriores cuantizaciones de 2 a 16 bits por peso) realizada por mradermacher, un autor conocido en Hugging Face por publicar versiones GGUF de modelos de terceros para su uso con llama.cpp y herramientas compatibles.
 
 El modelo cuenta con aproximadamente 81,9 millones de parametros (~82M), lo que lo situa en la categoria de modelos muy pequenos, orientados a experimentacion, despliegue en hardware limitado o tareas de generacion de texto sencillas en ingles. El repositorio es de tipo "static quants", es decir, cuantizaciones sin ponderacion por importancia (imatrix), segun indica el propio autor en la model card.
 
@@ -90,7 +90,7 @@ La comparacion con estos modelos es meramente orientativa por tamano: no hay ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/justDontLol-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/justDontLol-GGUF
 - Modelo base: https://huggingface.co/AbrahamCain/justDontLol
 - Pagina de resumen de cuantizaciones del autor: https://hf.tst.eu/model#justDontLol-GGUF
 - Grafica comparativa de cuantizaciones de ikawrakow: https://www.nethype.de/huggingface_embed/quantpplgraph.png

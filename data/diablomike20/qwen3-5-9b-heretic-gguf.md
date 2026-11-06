@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-Heretic-GGUF es una cuantización GGUF del modelo DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP, un fine tune multietapa sobre la familia Qwen 3.5 de 9B parámetros, publicado por el usuario diablomike20 en HuggingFace. Se trata de un modelo "uncensored" y "abliterated", es decir, con los filtros de seguridad y los mecanismos de rechazo del modelo base eliminados o debilitados mediante el proceso conocido como "Heretic", seguido de un entrenamiento posterior para consolidar ese comportamiento.
+Qwen3.5-9B-Heretic-GGUF es una cuantización GGUF del modelo DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP, un fine tune multietapa sobre la familia Qwen 3.5 de 9B parámetros, publicado por el usuario diablomike20 en Hugging Face. Se trata de un modelo "uncensored" y "abliterated", es decir, con los filtros de seguridad y los mecanismos de rechazo del modelo base eliminados o debilitados mediante el proceso conocido como "Heretic", seguido de un entrenamiento posterior para consolidar ese comportamiento.
 
 El modelo combina razonamiento (thinking mode) con capacidades de escritura creativa, código y rol, y soporta visión mediante un archivo "mmproj" separado. El repositorio ofrece dos familias de cuantizaciones: GGUF regulares y GGUF con MTP (multi-token prediction), que aceleran la inferencia mediante predicción de varios tokens por paso. Todas las cuantizaciones usan imatrix "NEO" y conservan el tensor de salida en precisión completa de 16 bits.
 

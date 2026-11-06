@@ -73,7 +73,7 @@ No se dispone de comparaciones de rendimiento directas entre estas variantes en 
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Qwen2.5Math-IVON-SFT-7B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Qwen2.5Math-IVON-SFT-7B-GGUF)
 - [Modelo base BayesRL/Qwen2.5Math-IVON-SFT-7B](https://huggingface.co/BayesRL/Qwen2.5Math-IVON-SFT-7B)
 - [Repositorio oficial de Qwen2.5-Math](https://github.com/QwenLM/Qwen2.5-Math)
 - [Reporte tecnico de Qwen2.5-Math (arXiv)](https://arxiv.org/abs/2409.12122)

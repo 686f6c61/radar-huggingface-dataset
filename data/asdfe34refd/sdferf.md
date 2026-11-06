@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `asdfe34refd/sdferf` es un modelo publicado en HuggingFace por el usuario `asdfe34refd` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye la cabecera YAML con la licencia (`license: apache-2.0`) y ningun cuerpo de texto. No se declara arquitectura, tamano, contexto, idiomas ni proposito del modelo.
+El repositorio `asdfe34refd/sdferf` es un modelo publicado en Hugging Face por el usuario `asdfe34refd` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye la cabecera YAML con la licencia (`license: apache-2.0`) y ningun cuerpo de texto. No se declara arquitectura, tamano, contexto, idiomas ni proposito del modelo.
 
 Los metadatos disponibles se limitan a la licencia, la region de publicacion (`region: us`) y las marcas de tiempo de creacion y actualizacion, ambas del 13 de octubre de 2026. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de uso, validacion por parte de la comunidad ni adopcion en produccion.
 
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asdfe34refd/sdferf | no disponible | no disponible | no disponible | apache-2.0 | publico en HuggingFace, sin descargas registradas |
+| asdfe34refd/sdferf | no disponible | no disponible | no disponible | apache-2.0 | publico en Hugging Face, sin descargas registradas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asdfe34refd/sdferf
+- Hugging Face: https://huggingface.co/asdfe34refd/sdferf
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

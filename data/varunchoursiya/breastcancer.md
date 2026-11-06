@@ -64,7 +64,7 @@ No se han publicado resultados en benchmarks estándar como MMLU o HumanEval, ya
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables en el repositorio ni en la búsqueda web. El modelo es un caso específico de clasificación tabular sin competidores directos en el mismo espacio de HuggingFace. Se podría comparar con otros clasificadores del dataset WDBC (por ejemplo, SVM o Random Forest), pero no hay datos disponibles en la información proporcionada.
+No se dispone de información sobre modelos comparables en el repositorio ni en la búsqueda web. El modelo es un caso específico de clasificación tabular sin competidores directos en el mismo espacio de Hugging Face. Se podría comparar con otros clasificadores del dataset WDBC (por ejemplo, SVM o Random Forest), pero no hay datos disponibles en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -77,5 +77,5 @@ No se dispone de información sobre modelos comparables en el repositorio ni en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/varunchoursiya/breastcancer)
+- [Modelo en Hugging Face](https://huggingface.co/varunchoursiya/breastcancer)
 - [Dataset Breast Cancer Wisconsin (Diagnostic) en Kaggle](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)

@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed104 | 9.607.690 | no aplica | KL 0,24396472; acc. 91,0710 % | MIT (backbone aparte) | HuggingFace |
+| BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed104 | 9.607.690 | no aplica | KL 0,24396472; acc. 91,0710 % | MIT (backbone aparte) | Hugging Face |
 | Block-sparse featurizer de Goodfire (referencia) | no disponible | no aplica | no disponible | no disponible | GitHub |
 | SAEs de extremo a extremo (paper arXiv:2405.12241) | no disponible | no aplica | no disponible | no disponible | paper |
 
@@ -90,7 +90,7 @@ No se dispone de datos comparativos homogéneos de parámetros, contexto o rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed104
+- Hugging Face: https://huggingface.co/BurnyCoder/e2e-bsf-dinov3-imagenette-full-scalar-mse-seed104
 - Repositorio del proyecto: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers
 - Preregistración: https://github.com/BurnyCoder/end-to-end-block-sparse-featurizers/blob/main/docs/preregistration.md
 - Paper BSF: https://arxiv.org/abs/2606.25234

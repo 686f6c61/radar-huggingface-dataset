@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kic_M_Qwen3-8B_python_t1.5_g7_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en HuggingFace. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una version del Qwen3-8B base ya cuantizada a 4 bits por Unsloth y posteriormente reentrenada mediante la libreria TRL sobre esa base. El nombre del repositorio sugiere un entrenamiento orientado a Python (posiblemente con un dataset de codigo o instrucciones en Python), aunque la model card no documenta el dataset ni la metodologia de entrenamiento.
+kic_M_Qwen3-8B_python_t1.5_g7_run0 es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, publicado por el usuario stefanocarrera en Hugging Face. Se trata de un modelo derivado de `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, es decir, una version del Qwen3-8B base ya cuantizada a 4 bits por Unsloth y posteriormente reentrenada mediante la libreria TRL sobre esa base. El nombre del repositorio sugiere un entrenamiento orientado a Python (posiblemente con un dataset de codigo o instrucciones en Python), aunque la model card no documenta el dataset ni la metodologia de entrenamiento.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen3-8B, con aproximadamente 8.000 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen3). Al estar construido sobre la variante *Base* (no la *Instruct*), no incorpora el post-entrenamiento conversacional oficial de Qwen, por lo que su comportamiento depende enteramente del ajuste fino aplicado por el autor.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| kic_M_Qwen3-8B_python_t1.5_g7_run0 | ~8B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Fine-tuning no documentado |
-| Qwen3-8B (oficial) | ~8B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con documentacion completa |
-| Qwen3-8B-Instruct | ~8B | 32.768 (ext. 131.072) | Apache 2.0 | HuggingFace | Version conversacional con post-entrenamiento oficial |
-| Llama 3.1 8B Instruct | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace | Alternativa de tamano similar con contexto largo |
+| kic_M_Qwen3-8B_python_t1.5_g7_run0 | ~8B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Fine-tuning no documentado |
+| Qwen3-8B (oficial) | ~8B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con documentacion completa |
+| Qwen3-8B-Instruct | ~8B | 32.768 (ext. 131.072) | Apache 2.0 | Hugging Face | Version conversacional con post-entrenamiento oficial |
+| Llama 3.1 8B Instruct | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face | Alternativa de tamano similar con contexto largo |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g7_run0
+- Modelo en Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g7_run0
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Repositorio TRL: https://github.com/huggingface/trl

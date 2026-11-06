@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B es un modelo de lenguaje de 33.118.977.024 parámetros (aproximadamente 33,1 B) construido sobre una arquitectura transformer de la familia Llama, según la etiqueta `llama` de los metadatos del repositorio. Se publica en HuggingFace a través de la organización eyes-ml y deriva del modelo base Nanbeige/Nanbeige4.3-33B-Base, dentro de la serie Nanbeige4.3. Está concebido como el modelo "profesor" de referencia de la serie: un agente de alta capacidad del que posteriormente se destilarán capacidades agénticas hacia modelos más pequeños, como el futuro Nanbeige4.3-3B.
+Nanbeige4.3-33B es un modelo de lenguaje de 33.118.977.024 parámetros (aproximadamente 33,1 B) construido sobre una arquitectura transformer de la familia Llama, según la etiqueta `llama` de los metadatos del repositorio. Se publica en Hugging Face a través de la organización eyes-ml y deriva del modelo base Nanbeige/Nanbeige4.3-33B-Base, dentro de la serie Nanbeige4.3. Está concebido como el modelo "profesor" de referencia de la serie: un agente de alta capacidad del que posteriormente se destilarán capacidades agénticas hacia modelos más pequeños, como el futuro Nanbeige4.3-3B.
 
 El modelo está orientado a dos ejes: codificación agéntica (uso de terminal, resolución de incidencias en repositorios, generación de código a partir de lenguaje natural) y "cowork" profesional (automatización de flujos de oficina, planificación multi-paso y orquestación de herramientas). La model card lo sitúa en el estado del arte entre los modelos abiertos de la clase ~30B en tareas agénticas. Se distribuye bajo licencia Apache 2.0, con soporte declarado de inglés y chino, pesos en safetensors y compatibilidad con `transformers` y text-generation-inference.
 
@@ -84,18 +84,18 @@ Notas de evaluación declaradas: Terminal-Bench 2.1 con Terminus 2; Terminal-Ben
 - VRAM estimada para inferencia: en BF16/FP16 los pesos ocupan aproximadamente 66 GB, a los que hay que sumar la caché KV; en cuantización de 8 bits, unos 33 GB; en 4 bits, en torno a 17-18 GB. Son estimaciones derivadas del número de parámetros, no cifras publicadas por el autor.
 - GPU recomendadas: A100 80 GB o H100 80 GB para servir el modelo en BF16 sin cuantizar; A100 40 GB o 2× RTX 4090 en 8 bits; RTX 4090, RTX 3090 o L40S en 4 bits.
 - ¿Cabe en GPU de consumo? En BF16 no cabe en ninguna GPU de consumo actual. En 4 bits sí cabe en tarjetas de 24 GB (RTX 4090, RTX 3090) y en algunas de 32 GB, siempre con cuantización posterior y margen ajustado para la caché KV.
-- Opciones de despliegue: `transformers` de forma nativa; vLLM para serving de alto rendimiento; text-generation-inference (el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en HuggingFace Inference Endpoints). llama.cpp u Ollama requerirían convertir los pesos a GGUF, ya que no se publican cuantizaciones de ese formato.
+- Opciones de despliegue: `transformers` de forma nativa; vLLM para serving de alto rendimiento; text-generation-inference (el repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, lo que permite desplegarlo en Hugging Face Inference Endpoints). llama.cpp u Ollama requerirían convertir los pesos a GGUF, ya que no se publican cuantizaciones de ese formato.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Perfil |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B | 33,1 B | no disponible | Apache 2.0 | HuggingFace (safetensors) | Agente "profesor" orientado a codificación y cowork |
+| Nanbeige4.3-33B | 33,1 B | no disponible | Apache 2.0 | Hugging Face (safetensors) | Agente "profesor" orientado a codificación y cowork |
 | Qwen3.8-27B | no disponible | no disponible | no disponible | no disponible | Referencia fuerte en SWE-Bench Pro y GDPval |
 | Muse-Glimmer-30B | no disponible | no disponible | no disponible | no disponible | Rendimiento inferior en la mayoría de benchmarks agénticos |
 | Gemma4-31B | no disponible | no disponible | no disponible | no disponible | Mejor en GPQA Diamond, peor en tareas agénticas |
-| Nanbeige4.3-33B-Base | 33,1 B (implícito) | no disponible | Apache 2.0 | HuggingFace | Modelo base sobre el que se afina este modelo |
+| Nanbeige4.3-33B-Base | 33,1 B (implícito) | no disponible | Apache 2.0 | Hugging Face | Modelo base sobre el que se afina este modelo |
 
 En la comparación directa, Nanbeige4.3-33B lidera 17 de los 20 benchmarks reportados; cede en SWE-Bench Pro (60,3 frente a 61,7 de Qwen3.8-27B), GDPval (84,8 frente a 86,4) y GPQA Diamond (89,5 frente a 91,3 de Gemma4-31B). Las mayores ventajas se concentran en Terminal-Bench 4.0 (+17,5 puntos sobre Qwen3.8-27B), DeepSWE (+23,0) y DeepPlanning (+14,1). No se dispone de datos de parámetros, contexto ni licencia de los modelos comparados en la información proporcionada.
 
@@ -113,6 +113,6 @@ En la comparación directa, Nanbeige4.3-33B lidera 17 de los 20 benchmarks repor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/eyes-ml/Nanbeige4.3-33B
+- Repositorio en Hugging Face: https://huggingface.co/eyes-ml/Nanbeige4.3-33B
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B-Base
 - Papers, blogs, repositorios de código y demos: no disponibles; la búsqueda web no devolvió resultados relacionados con el modelo (los resultados obtenidos corresponden a términos no relacionados).

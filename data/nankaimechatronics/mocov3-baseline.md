@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nankaimechatronics/mocov3-baseline` es un repositorio experimental publicado en HuggingFace por el usuario `nankaimechatronics` que contiene una implementación propia de una arquitectura denominada "Mocov3" orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB.
+`nankaimechatronics/mocov3-baseline` es un repositorio experimental publicado en Hugging Face por el usuario `nankaimechatronics` que contiene una implementación propia de una arquitectura denominada "Mocov3" orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con capacidades funcionales: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo ("smoke tests") y que no se presenta como un checkpoint evaluado con benchmarks. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB.
 
 La relevancia de este repositorio es, por tanto, documental y de investigación más que práctica. Sirve como andamiaje reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con una configuración de escala "xlarge" deliberadamente manejable. Incluye `model.py` con el punto de entrada ejecutable, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y el mencionado checkpoint de inicialización.
 
@@ -41,7 +41,7 @@ No hay información sobre datos de entrenamiento: ni número de tokens, ni compo
 
 - Investigación de arquitecturas de atención dispersa: el repositorio permite inspeccionar y modificar la implementación de atención dispersa y fusión Tucker en un entorno controlado antes de escalar a un entrenamiento completo.
 - Reproducción de experimentos de ablation: al incluir `training_args.json` con la receta por defecto (Lion + schedule polinómico), sirve como plantilla para comparar variantes de optimizador y schedule con el mismo presupuesto de datos y semillas.
-- Desarrollo de adaptadores de carga: dado que la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, el repositorio es útil para practicar la integración de arquitecturas personalizadas en pipelines de HuggingFace `transformers`.
+- Desarrollo de adaptadores de carga: dado que la model card advierte que las APIs genéricas de carga automática requieren un adaptador explícito, el repositorio es útil para practicar la integración de arquitecturas personalizadas en pipelines de Hugging Face `transformers`.
 - Pruebas de humo en CI: el checkpoint de inicialización y el script ejecutable permiten montar un test rápido que verifique que los cambios en el código no rompen la instanciación del modelo.
 - Docencia y formación: como ejemplo didáctico de estructura de repositorio de modelo (config, training args, checkpoint, script) y de buenas prácticas de documentación de limitaciones.
 - Base para un futuro entrenamiento: el autor lo plantea como punto de partida experimental sobre el que construir un checkpoint entrenado y evaluado por separado.
@@ -75,5 +75,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nankaimechatronics/mocov3-baseline
+- Repositorio Hugging Face: https://huggingface.co/nankaimechatronics/mocov3-baseline
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos.

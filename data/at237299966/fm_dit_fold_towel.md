@@ -71,8 +71,8 @@ El mínimo de validación fue 0,0489 en la época 85. El autor advierte que esta
 
 | Modelo | Parámetros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fm_dit (este modelo) | no disponible | 8 fotogramas de 3 cámaras; chunk de 8 acciones | Pérdida val mínima 0,0489 (ép. 85); ~94 ms/predicción en A100 | MIT | HuggingFace, checkpoints cada 50 épocas |
-| ODE_policy_euler_sidehead_fold_towel | no disponible | misma configuración de datos y ventana | Pérdidas no comparables con flow matching según el autor | no disponible en la información | HuggingFace (`at237299966/ODE_policy_euler_sidehead_fold_towel`) |
+| fm_dit (este modelo) | no disponible | 8 fotogramas de 3 cámaras; chunk de 8 acciones | Pérdida val mínima 0,0489 (ép. 85); ~94 ms/predicción en A100 | MIT | Hugging Face, checkpoints cada 50 épocas |
+| ODE_policy_euler_sidehead_fold_towel | no disponible | misma configuración de datos y ventana | Pérdidas no comparables con flow matching según el autor | no disponible en la información | Hugging Face (`at237299966/ODE_policy_euler_sidehead_fold_towel`) |
 
 No se dispone de datos de otros modelos comparables de la misma categoría (políticas bimanuales de plegado) en la información proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables de la misma categoría (pol�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/at237299966/fm_dit_fold_towel
+- Modelo en Hugging Face: https://huggingface.co/at237299966/fm_dit_fold_towel
 - Dataset de entrenamiento: https://huggingface.co/datasets/at237299966/r1lite_fold_towel
 - Política ODE de comparación: https://huggingface.co/at237299966/ODE_policy_euler_sidehead_fold_towel
 - Repositorio de código (ODE_Policy, rama `r1lite_exp`, commit `e9cc9c0`): no se proporciona URL en la información disponible

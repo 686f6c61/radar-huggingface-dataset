@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo para este fine-tuning específ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sounderya/smolvla-ur3-mix-polished
+- Repositorio Hugging Face: https://huggingface.co/Sounderya/smolvla-ur3-mix-polished
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sounderya/mug_smolvla_dataset_v2nc
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844

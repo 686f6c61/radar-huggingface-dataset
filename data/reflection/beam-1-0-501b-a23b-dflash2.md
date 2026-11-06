@@ -84,8 +84,8 @@ La información disponible no incluye comparativas directas con otros borradores
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Beam-1.0-501B-A23B-DFlash2 | 1,93 mil millones | Ventana deslizante de 4.096 tokens en la atención del borrador | Longitud de aceptación de 3,93 a 5,88 tokens por paso | apache-2.0 | HuggingFace (141 descargas, 17 likes) |
-| reflection/Beam-1.0-501B-A23B (modelo base) | 501B totales, 23B activos (segun la nomenclatura del identificador; no confirmado en la informacion proporcionada) | no disponible | no disponible | no disponible | HuggingFace, en bf16, FP8 y NVFP4 |
+| Beam-1.0-501B-A23B-DFlash2 | 1,93 mil millones | Ventana deslizante de 4.096 tokens en la atención del borrador | Longitud de aceptación de 3,93 a 5,88 tokens por paso | apache-2.0 | Hugging Face (141 descargas, 17 likes) |
+| reflection/Beam-1.0-501B-A23B (modelo base) | 501B totales, 23B activos (segun la nomenclatura del identificador; no confirmado en la informacion proporcionada) | no disponible | no disponible | no disponible | Hugging Face, en bf16, FP8 y NVFP4 |
 | Otros borradores de decodificacion especulativa (EAGLE-3, Medusa, MTP) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ La información disponible no incluye comparativas directas con otros borradores
 
 ## Enlaces
 
-- [Modelo en HuggingFace: reflection/Beam-1.0-501B-A23B-DFlash2](https://huggingface.co/reflection/Beam-1.0-501B-A23B-DFlash2)
+- [Modelo en Hugging Face: reflection/Beam-1.0-501B-A23B-DFlash2](https://huggingface.co/reflection/Beam-1.0-501B-A23B-DFlash2)
 - [Modelo base: reflection/Beam-1.0-501B-A23B](https://huggingface.co/reflection/Beam-1.0-501B-A23B)
 - [Modelo base en FP8: reflection/Beam-1.0-501B-A23B-FP8](https://huggingface.co/reflection/Beam-1.0-501B-A23B-FP8)
 - [Modelo base en NVFP4: reflection/Beam-1.0-501B-A23B-NVFP4](https://huggingface.co/reflection/Beam-1.0-501B-A23B-NVFP4)

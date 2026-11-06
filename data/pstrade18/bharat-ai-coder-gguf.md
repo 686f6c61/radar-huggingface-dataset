@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bharat-ai-coder-gguf es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) publicado por el usuario Pstrade18 en HuggingFace. Se trata de un fine-tuning del modelo base Qwen2.5-1.5B-Instruct, convertido a formato GGUF mediante Unsloth y orientado a tareas de generación de código, a juzgar por su nombre ("coder") y por la familia de modelos de la que deriva. El repositorio tiene un tamaño de 1,0 GB y contiene una única cuantización Q4_K_M.
+bharat-ai-coder-gguf es un modelo de lenguaje de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones) publicado por el usuario Pstrade18 en Hugging Face. Se trata de un fine-tuning del modelo base Qwen2.5-1.5B-Instruct, convertido a formato GGUF mediante Unsloth y orientado a tareas de generación de código, a juzgar por su nombre ("coder") y por la familia de modelos de la que deriva. El repositorio tiene un tamaño de 1,0 GB y contiene una única cuantización Q4_K_M.
 
 El modelo está pensado para su despliegue local mediante llama.cpp u Ollama, ya que el autor incluye un Modelfile de Ollama y ejemplos de uso con `llama-cli`. La arquitectura subyacente es la de Qwen2, un transformer decoder-only con atención de tipo causal, aunque el autor no detalla en la model card los cambios específicos aplicados durante el fine-tuning ni la composición del dataset de entrenamiento.
 
@@ -32,7 +32,7 @@ La única innovación técnica documentada es el uso de Unsloth para el fine-tun
 - Generación de texto conversacional, heredada del modelo base Qwen2.5-1.5B-Instruct.
 - Generación de código, presumiblemente reforzada por el fine-tuning orientado a programación (según el nombre del modelo), aunque no hay documentación que lo confirme.
 - Soporte de plantillas de chat mediante el flag `--jinja` en llama.cpp, lo que permite usar el formato de conversación del modelo base.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere que puede servirse a través de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que sugiere que puede servirse a través de infraestructura compatible con la API de Hugging Face.
 - Capacidades multilingües: no documentadas explícitamente; se heredarían las del modelo base Qwen2.5, pero no hay confirmación del autor.
 - Tool calling / function calling: no documentado.
 - Capacidades de agente y razonamiento multi-paso: no documentadas.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| bharat-ai-coder-gguf | 1,54B | No disponible | No disponible | GGUF (Q4_K_M) | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (según model card oficial de Qwen) | Apache 2.0 | Safetensors, GGUF | HuggingFace, ampliamente usado |
-| Qwen2.5-Coder-1.5B-Instruct | 1,54B | 32.768 tokens (según model card oficial de Qwen) | Apache 2.0 | Safetensors, GGUF | HuggingFace, ampliamente usado |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (según model card oficial) | Apache 2.0 | Safetensors, GGUF | HuggingFace, ampliamente usado |
+| bharat-ai-coder-gguf | 1,54B | No disponible | No disponible | GGUF (Q4_K_M) | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 tokens (según model card oficial de Qwen) | Apache 2.0 | Safetensors, GGUF | Hugging Face, ampliamente usado |
+| Qwen2.5-Coder-1.5B-Instruct | 1,54B | 32.768 tokens (según model card oficial de Qwen) | Apache 2.0 | Safetensors, GGUF | Hugging Face, ampliamente usado |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens (según model card oficial) | Apache 2.0 | Safetensors, GGUF | Hugging Face, ampliamente usado |
 
 La comparación directa más relevante es con Qwen2.5-Coder-1.5B-Instruct, el modelo oficial de Alibaba para código con el mismo tamaño, licencia Apache 2.0 y benchmarks publicados. bharat-ai-coder-gguf no documenta mejoras medibles frente a ese modelo base, por lo que su interés diferencial es limitado salvo que el fine-tuning aporte algo específico que el autor no ha detallado.
 
@@ -83,7 +83,7 @@ La comparación directa más relevante es con Qwen2.5-Coder-1.5B-Instruct, el mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pstrade18/bharat-ai-coder-gguf
+- Repositorio Hugging Face: https://huggingface.co/Pstrade18/bharat-ai-coder-gguf
 - Unsloth (herramienta usada para el fine-tuning y la conversión): https://github.com/unslothai/unsloth
 - Modelo base de referencia (Qwen2.5-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Alternativa oficial para código (Qwen2.5-Coder-1.5B-Instruct): https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct

@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 - El tamano del repositorio es de 0,4 GB, lo que sugiere que el modelo puede caber en GPUs consumer con al menos 4 GB de VRAM, aunque no se especifica el peso exacto de los parametros.
 - No se indican requisitos minimos de VRAM ni GPU recomendadas.
 - Al ser un modelo pequeno, es probable que pueda ejecutarse en CPU con cuantizacion, pero no hay datos oficiales.
-- Opciones de despliegue: no se mencionan compatibilidades con vLLM, llama.cpp, Ollama o TGI. Dado el formato safetensors, podria cargarse con transformers de HuggingFace, pero no se confirma.
+- Opciones de despliegue: no se mencionan compatibilidades con vLLM, llama.cpp, Ollama o TGI. Dado el formato safetensors, podria cargarse con transformers de Hugging Face, pero no se confirma.
 - No se dispone de estimaciones de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -67,6 +67,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/GT1999/mwp-v2-llama1b-b14-stage2
+- Repositorio Hugging Face: https://huggingface.co/GT1999/mwp-v2-llama1b-b14-stage2
 - Busqueda de modelos con etiqueta mwp-v2: https://huggingface.co/models?other=mwp-v2
 - No se encontraron papers, blogs ni demos asociados en la busqueda web.

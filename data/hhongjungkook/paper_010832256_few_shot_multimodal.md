@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, `hhongjungkook/paper_010832256_few_shot_multimodal`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema de *few-shot multimodal* (aprendizaje multimodal con pocos ejemplos). El autor, hhongjungkook, publica el texto completo del artículo en el archivo `paper_010832256_few_shot_multimodal.md`, con una estructura típica de paper de investigación (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo, citas en formato autor-año y licencia MIT.
+Este repositorio de Hugging Face, `hhongjungkook/paper_010832256_few_shot_multimodal`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema de *few-shot multimodal* (aprendizaje multimodal con pocos ejemplos). El autor, hhongjungkook, publica el texto completo del artículo en el archivo `paper_010832256_few_shot_multimodal.md`, con una estructura típica de paper de investigación (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo, citas en formato autor-año y licencia MIT.
 
 No se dispone de información sobre arquitectura, parámetros, contexto, cuantización o cualquier característica técnica de un modelo de lenguaje o multimodal. Por tanto, esta ficha describe el repositorio tal como se presenta, señalando explícitamente los datos no disponibles.
 
@@ -60,12 +60,12 @@ No disponible. No se puede comparar con otros modelos porque no existe un modelo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hhongjungkook/paper_010832256_few_shot_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/hhongjungkook/paper_010832256_few_shot_multimodal
 - Paper "Pointing at Parts: Training-Free Few-Shot Grounding in Multimodal LLMs" (CVPR 2026): https://openaccess.thecvf.com/content/CVPR2026/papers/Tsai_Pointing_at_Parts_Training-Free_Few-Shot_Grounding_in_Multimodal_LLMs_CVPR_2026_paper.pdf
 - Paper "Multimodal Few-Shot Learning with Frozen Language Models" (NeurIPS 2021): https://papers.nips.cc/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html
 - Proyecto Frozen (página del autor): https://fh295.github.io/frozen.html## Resumen
 
-Este repositorio de HuggingFace, `hhongjungkook/paper_010832256_few_shot_multimodal`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema *few-shot multimodal* (aprendizaje multimodal con pocos ejemplos). El autor, hhongjungkook, publica el texto completo del artículo en el archivo `paper_010832256_few_shot_multimodal.md`, con una estructura de paper de investigación (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo, citas en formato autor-año y licencia MIT.
+Este repositorio de Hugging Face, `hhongjungkook/paper_010832256_few_shot_multimodal`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown sobre el tema *few-shot multimodal* (aprendizaje multimodal con pocos ejemplos). El autor, hhongjungkook, publica el texto completo del artículo en el archivo `paper_010832256_few_shot_multimodal.md`, con una estructura de paper de investigación (introducción, antecedentes, enfoque, evaluación y conclusión), estilo argumentativo, citas en formato autor-año y licencia MIT.
 
 No se dispone de información sobre arquitectura, parámetros, contexto, cuantización, idiomas ni ningún dato técnico de un modelo de lenguaje o multimodal. La ficha describe el repositorio tal y como se presenta, indicando explícitamente los datos no disponibles.
 
@@ -123,7 +123,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/hhongjungkook/paper_010832256_few_shot_multimodal
+- Repositorio de Hugging Face: https://huggingface.co/hhongjungkook/paper_010832256_few_shot_multimodal
 - Paper relacionado "Pointing at Parts: Training-Free Few-Shot Grounding in Multimodal LLMs" (CVPR 2026): https://openaccess.thecvf.com/content/CVPR2026/papers/Tsai_Pointing_at_Parts_Training-Free_Few-Shot_Grounding_in_Multimodal_LLMs_CVPR_2026_paper.pdf
 - Paper "Multimodal Few-Shot Learning with Frozen Language Models" (NeurIPS 2021): https://papers.nips.cc/paper/2021/hash/01b7575c38dac42f3cfb7d500438b875-Abstract.html
 - Página del proyecto Frozen: https://fh295.github.io/frozen.html

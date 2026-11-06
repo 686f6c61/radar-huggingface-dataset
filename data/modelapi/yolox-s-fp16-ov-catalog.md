@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOX-S es un modelo de detección de objetos en tiempo real, basado en la arquitectura YOLOX-S del proyecto MMDetection de OpenMMLab. Esta versión concreta, publicada por el usuario `modelapi` en HuggingFace, es una conversión a OpenVINO IR con pesos en FP16, pensada para su uso en entornos de inferencia optimizados con Intel OpenVINO, especialmente en aplicaciones de robótica y visión artificial. El modelo mapea una imagen de entrada a cajas delimitadoras (bounding boxes) para los objetos detectados, sin proporcionar información adicional sobre clases o puntuaciones en la model card.
+YOLOX-S es un modelo de detección de objetos en tiempo real, basado en la arquitectura YOLOX-S del proyecto MMDetection de OpenMMLab. Esta versión concreta, publicada por el usuario `modelapi` en Hugging Face, es una conversión a OpenVINO IR con pesos en FP16, pensada para su uso en entornos de inferencia optimizados con Intel OpenVINO, especialmente en aplicaciones de robótica y visión artificial. El modelo mapea una imagen de entrada a cajas delimitadoras (bounding boxes) para los objetos detectados, sin proporcionar información adicional sobre clases o puntuaciones en la model card.
 
 El modelo se distribuye bajo licencia Apache-2.0 y está diseñado para integrarse con la librería `openvino-model-api`, que facilita la carga y ejecución del modelo. Su relevancia radica en ofrecer una versión ligera y optimizada de YOLOX-S para despliegues en edge computing o sistemas embebidos, donde el formato OpenVINO IR con FP16 permite un rendimiento eficiente en CPUs Intel. No se especifican detalles sobre el tamaño de parámetros, contexto o dataset de entrenamiento en la información proporcionada.
 
@@ -68,7 +68,7 @@ No se dispone de información comparativa en la model card. Como referencia gene
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/modelapi/yolox-s-fp16-ov-catalog
+- Repositorio Hugging Face del modelo: https://huggingface.co/modelapi/yolox-s-fp16-ov-catalog
 - Repositorio original de pesos OpenVINO: https://huggingface.co/OpenVINO/yolox_s-fp16-ov
 - Código fuente de YOLOX-S en MMDetection: https://github.com/open-mmlab/mmdetection/tree/main/configs/yolox
 - Licencia Apache-2.0 de MMDetection: https://github.com/open-mmlab/mmdetection/blob/main/LICENSE

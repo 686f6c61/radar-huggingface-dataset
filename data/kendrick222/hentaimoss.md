@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HentaiMoss es un repositorio publicado en HuggingFace por el usuario Kendrick222 bajo el identificador `Kendrick222/HentaiMoss`. Se trata de un artefacto de muy reciente creación (3 de noviembre de 2026, según los metadatos de la plataforma) que, a juzgar por el nombre, apunta a un modelo de generación de imágenes o texto de temática para adultos, aunque la información pública disponible no permite confirmarlo. El repositorio no incluye pipeline declarado, no especifica idiomas soportados y su model card se limita a un campo `license: unknown` sin contenido adicional.
+HentaiMoss es un repositorio publicado en Hugging Face por el usuario Kendrick222 bajo el identificador `Kendrick222/HentaiMoss`. Se trata de un artefacto de muy reciente creación (3 de noviembre de 2026, según los metadatos de la plataforma) que, a juzgar por el nombre, apunta a un modelo de generación de imágenes o texto de temática para adultos, aunque la información pública disponible no permite confirmarlo. El repositorio no incluye pipeline declarado, no especifica idiomas soportados y su model card se limita a un campo `license: unknown` sin contenido adicional.
 
 El tamaño del repositorio es de aproximadamente 0,1 GB, lo que sugiere pesos de pequeño tamaño o un conjunto de archivos auxiliares (LoRA, embeddings, tokenizador o un modelo destilado de pocos parámetros). No obstante, no hay información sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia de adopción ni de validación por parte de la comunidad.
 
@@ -40,7 +40,7 @@ No hay datos sobre el corpus de entrenamiento: número de tokens, composición d
 
 - Evaluación exploratoria de modelos pequeños: dado el reducido tamaño del repositorio (0,1 GB), podría inspeccionarse localmente para determinar su naturaleza (pesos, adaptador o artefacto auxiliar), aunque no hay documentación que respalde un uso concreto.
 - Experimentación en entornos aislados: solo si se confirma previamente el contenido y la licencia, podría probarse en un sandbox para caracterizar su comportamiento, sin garantías de calidad.
-- Investigación sobre modelos sin documentación: el repositorio puede servir como caso de estudio de artefactos publicados sin model card sustantiva, útil para analizar prácticas de publicación en HuggingFace.
+- Investigación sobre modelos sin documentación: el repositorio puede servir como caso de estudio de artefactos publicados sin model card sustantiva, útil para analizar prácticas de publicación en Hugging Face.
 - Integración en pipelines de generación de imágenes o texto para adultos: únicamente si el contenido del repositorio lo confirma y si la licencia lo permite, algo que no está verificado.
 - Fine-tuning posterior: no recomendable sin conocer la licencia ni la arquitectura, ya que no se puede garantizar la legalidad de la redistribución de derivados.
 - Despliegue en producción: no recomendable en ningún escenario, dada la ausencia de licencia, benchmarks, idiomas y documentación técnica.
@@ -74,4 +74,4 @@ No disponible. No se ha identificado la categoría del modelo (texto, imagen, ad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kendrick222/HentaiMoss
+- Repositorio en Hugging Face: https://huggingface.co/Kendrick222/HentaiMoss

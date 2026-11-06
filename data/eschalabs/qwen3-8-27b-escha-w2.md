@@ -89,7 +89,7 @@ La ventaja principal frente al FP8 es la reduccion de peso a aproximadamente un 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2
+- Modelo en Hugging Face: https://huggingface.co/EschaLabs/Qwen3.8-27B-Escha-W2
 - Runtime SGLang de Escha Labs: https://huggingface.co/EschaLabs/escha-runtime-qwen3dense
 - Sitio web de Escha Labs: https://www.eschalabs.com/
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

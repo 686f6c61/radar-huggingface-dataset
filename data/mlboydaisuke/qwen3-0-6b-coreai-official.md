@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en el mismo formato `.ai
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlboydaisuke/qwen3-0.6b-CoreAI-official
+- Repositorio Hugging Face: https://huggingface.co/mlboydaisuke/qwen3-0.6b-CoreAI-official
 - Receta de exportación oficial de Apple: https://github.com/apple/coreai-models
 - Kit de integración Swift (CoreAIKit): https://github.com/john-rocky/coreai-kit
 - Benchmarks de Apple Silicon LLM: https://github.com/john-rocky/apple-silicon-llm-bench

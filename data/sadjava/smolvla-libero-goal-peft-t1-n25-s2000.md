@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sadjava/smolvla-libero-goal-peft-t1-n25-s2000` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `sadjava`. Según los metadatos, se trata de un ajuste fino con la librería PEFT sobre un modelo base identificado como `outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que el modelo base pertenece a la familia SmolVLA (un modelo de visión-lenguaje-acción para robótica) y que el adaptador se ha entrenado para la tarea LIBERO Goal. Sin embargo, la model card está completamente vacía y el repositorio tiene un tamaño de 0.0 GB, por lo que no se dispone de información técnica verificada.
+El modelo `sadjava/smolvla-libero-goal-peft-t1-n25-s2000` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `sadjava`. Según los metadatos, se trata de un ajuste fino con la librería PEFT sobre un modelo base identificado como `outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`, lo que sugiere que el modelo base pertenece a la familia SmolVLA (un modelo de visión-lenguaje-acción para robótica) y que el adaptador se ha entrenado para la tarea LIBERO Goal. Sin embargo, la model card está completamente vacía y el repositorio tiene un tamaño de 0.0 GB, por lo que no se dispone de información técnica verificada.
 
 La relevancia de este modelo radica en su posible uso como adaptador ligero para un VLA, permitiendo especializar un modelo base sin necesidad de reentrenar todos los parámetros. No obstante, la ausencia de documentación, licencia, métricas y datos de entrenamiento impide cualquier evaluación rigurosa. Se recomienda extremar la precaución antes de considerar su uso en entornos de producción o investigación.
 
@@ -54,6 +54,6 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- [HuggingFace: sadjava/smolvla-libero-goal-peft-t1-n25-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t1-n25-s2000)
+- [Hugging Face: sadjava/smolvla-libero-goal-peft-t1-n25-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t1-n25-s2000)
 
 No se han encontrado enlaces adicionales (papers, blogs, repositorios, demos) en la información proporcionada.

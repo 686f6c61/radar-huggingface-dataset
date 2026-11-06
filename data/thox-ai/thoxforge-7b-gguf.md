@@ -85,7 +85,7 @@ La comparacion con alternativas de la misma categoria (otros ajustes de 7B orien
 
 ## Enlaces
 
-- Repositorio HuggingFace (este, solo model card): https://huggingface.co/Thox-ai/ThoxForge-7B-GGUF
+- Repositorio Hugging Face (este, solo model card): https://huggingface.co/Thox-ai/ThoxForge-7B-GGUF
 - Repositorio principal con pesos (GGUF + adaptador LoRA): https://huggingface.co/Thox-ai/ThoxForge-7B
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Ollama: `Thox-ai/thoxforge-7b` (tag en Ollama; sin URL directa en la informacion proporcionada)

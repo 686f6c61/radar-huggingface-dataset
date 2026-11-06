@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Roznama es un modelo publicado en HuggingFace por el usuario Hasnain200605 el 28 de enero de 2024. La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia openrail y no incluye informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio ocupa 19,5 GB, lo que sugiere pesos de un modelo de decenas de miles de millones de parametros en precision completa o media, pero este dato es una inferencia a partir del tamano del repo y no una especificacion confirmada por el autor.
+Roznama es un modelo publicado en Hugging Face por el usuario Hasnain200605 el 28 de enero de 2024. La model card asociada al repositorio es practicamente vacia: unicamente declara la licencia openrail y no incluye informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. El repositorio ocupa 19,5 GB, lo que sugiere pesos de un modelo de decenas de miles de millones de parametros en precision completa o media, pero este dato es una inferencia a partir del tamano del repo y no una especificacion confirmada por el autor.
 
 No se dispone de informacion sobre el pipeline declarado, los idiomas soportados ni los resultados de evaluacion. El modelo no registra descargas ni likes en el momento de redactar esta ficha, y no se ha identificado documentacion tecnica complementaria (paper, blog o repositorio de codigo) enlazada desde la model card.
 
@@ -41,7 +41,7 @@ Respecto al entrenamiento, no hay informacion sobre el volumen de tokens, la com
 - Evaluacion exploratoria en laboratorio: dado que no hay documentacion, el unico uso razonable inmediato es la evaluacion controlada por parte de investigadores para caracterizar el modelo antes de plantear cualquier integracion.
 - Pruebas de inferencia comparativa: puede utilizarse como objeto de estudio en experimentos que comparen modelos no documentados frente a alternativas con model card completa, siempre que se registren los resultados obtenidos.
 - Analisis de licencias y compliance: el modelo puede servir como caso practico para revisar como se aplica la licencia openrail en artefactos sin documentacion tecnica asociada.
-- Reproduccion de cargas en pipelines de HuggingFace: util para validar flujos de descarga, cache y carga de pesos de gran tamano (19,5 GB) en infraestructura propia.
+- Reproduccion de cargas en pipelines de Hugging Face: util para validar flujos de descarga, cache y carga de pesos de gran tamano (19,5 GB) en infraestructura propia.
 - Docencia sobre model cards: puede emplearse como ejemplo de repositorio con informacion insuficiente para ilustrar buenas practicas de documentacion de modelos.
 - Auditoria de seguridad de artefactos: adecuado para probar herramientas de escaneo de pesos y deteccion de contenido inesperado en repositorios de gran volumen.
 
@@ -76,5 +76,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hasnain200605/roznama
+- Modelo en Hugging Face: https://huggingface.co/Hasnain200605/roznama
 - No se han identificado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

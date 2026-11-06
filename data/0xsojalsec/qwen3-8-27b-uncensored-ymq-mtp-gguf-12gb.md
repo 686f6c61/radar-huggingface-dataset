@@ -93,7 +93,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (por
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF-12GB)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF-12GB)
 - [Modelo base: JonathanColetti/Qwen3.8-27B-Uncensored](https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored)
 - [Repositorio original de la tecnica YMQ (ZeroDigest)](https://huggingface.co/zerodigest/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF)
 - [Copia del repo en jaromer](https://huggingface.co/jaromer/zerodigest-Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF)

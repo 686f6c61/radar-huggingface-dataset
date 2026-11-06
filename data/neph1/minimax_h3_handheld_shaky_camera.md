@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Handheld Shaky Cam Minimax H3 es un adaptador LoRA de difusion publicado por el usuario neph1 en HuggingFace, identificado como `neph1/minimax_h3_handheld_shaky_camera`. Se trata de un espejo (mirror) del modelo alojado en Civitai con identificador 2592748 (`shaky-handheld-camera`, version 3343481), y su funcion declarada es aportar una estetica de camara en mano con movimiento y trepidacion sobre el modelo base `MiniMaxAI/MiniMax-H3`. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+Handheld Shaky Cam Minimax H3 es un adaptador LoRA de difusion publicado por el usuario neph1 en Hugging Face, identificado como `neph1/minimax_h3_handheld_shaky_camera`. Se trata de un espejo (mirror) del modelo alojado en Civitai con identificador 2592748 (`shaky-handheld-camera`, version 3343481), y su funcion declarada es aportar una estetica de camara en mano con movimiento y trepidacion sobre el modelo base `MiniMaxAI/MiniMax-H3`. El repositorio ocupa 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
-El modelo base pertenece a MiniMax y se distribuye bajo la MiniMax H3 Community License Agreement, licencia que el adaptador hereda. La metadata de HuggingFace clasifica el pipeline como `text-to-image` y la libreria como `diffusers`, mientras que las referencias web localizadas sobre MiniMax-H3 (fal.ai lo presenta como generador de video y varias publicaciones hablan de "camera shake" en clips) apuntan a un modelo orientado a video. La informacion disponible no permite resolver esa discrepancia, por lo que conviene verificar la naturaleza del base antes de integrarlo.
+El modelo base pertenece a MiniMax y se distribuye bajo la MiniMax H3 Community License Agreement, licencia que el adaptador hereda. La metadata de Hugging Face clasifica el pipeline como `text-to-image` y la libreria como `diffusers`, mientras que las referencias web localizadas sobre MiniMax-H3 (fal.ai lo presenta como generador de video y varias publicaciones hablan de "camera shake" en clips) apuntan a un modelo orientado a video. La informacion disponible no permite resolver esa discrepancia, por lo que conviene verificar la naturaleza del base antes de integrarlo.
 
 En el momento de la consulta el repositorio acumula 264 descargas y 11 likes, con fecha de creacion y ultima actualizacion el 26 de septiembre de 2026. No hay model card tecnica: el README se limita a un nombre, el enlace al espejo de Civitai y las instrucciones de descarga, sin trigger word definido (`instance_prompt: null`).
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - La VRAM necesaria para inferencia no puede determinarse con la informacion disponible: depende por completo del modelo base MiniMax-H3, cuyas especificaciones no se detallan en los datos proporcionados.
 - No se dispone de datos sobre GPU recomendadas (A100, H100, RTX 4090 u otras) para este adaptador ni para su base.
 - No es posible confirmar si el conjunto base mas adaptador cabe en una GPU de consumo; el dato no esta disponible.
-- Opciones de despliegue: la libreria declarada en HuggingFace es `diffusers`, por lo que la via documentada es la carga del LoRA sobre el pipeline del base en Python con esa libreria. No se documentan otras opciones (ComfyUI, Automatic1111, TGI, vLLM) en la informacion disponible. Notese que vLLM y TGI son servidores de inferencia para modelos de lenguaje y no aplican a un LoRA de difusion.
+- Opciones de despliegue: la libreria declarada en Hugging Face es `diffusers`, por lo que la via documentada es la carga del LoRA sobre el pipeline del base en Python con esa libreria. No se documentan otras opciones (ComfyUI, Automatic1111, TGI, vLLM) en la informacion disponible. Notese que vLLM y TGI son servidores de inferencia para modelos de lenguaje y no aplican a un LoRA de difusion.
 - No se dispone de estimaciones de latencia ni de throughput.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ Los dos adaptadores listados comparten autor, modelo base y licencia, y difieren
 - El README no incluye model card tecnica: no hay informacion sobre dataset de entrenamiento, pasos, rango del LoRA, capas objetivo ni evaluacion cualitativa sistematica.
 - La licencia es `other` con nombre `minimax-h3-community-license-agreement`; no se reproduce el texto en la informacion disponible, por lo que es imprescindible revisar el enlace de licencia del modelo base antes de cualquier uso comercial.
 - Se trata de un espejo de un modelo publicado en Civitai: la autoria original, los terminos de atribucion y las condiciones de redistribucion deben verificarse en la ficha de Civitai referenciada.
-- Existe una discrepancia no resuelta entre la clasificacion `text-to-image` de HuggingFace y las referencias web que describen MiniMax-H3 como generador de video. Integrarlo en un pipeline equivocado puede dar resultados inesperados.
+- Existe una discrepancia no resuelta entre la clasificacion `text-to-image` de Hugging Face y las referencias web que describen MiniMax-H3 como generador de video. Integrarlo en un pipeline equivocado puede dar resultados inesperados.
 - Al actuar solo sobre los pasos de alto ruido, el efecto puede ser limitado o menos consistente que el de un LoRA entrenado sobre todo el rango de timesteps; la intensidad dependera del scheduler y del numero de pasos.
 - Riesgo de sobre-trepidacion o de artefactos de movimiento no deseados en planos donde se busca estabilidad.
 - No hay informacion sobre sesgos del adaptador ni del base; los sesgos del modelo subyacente se heredan integramente.
@@ -95,7 +95,7 @@ Los dos adaptadores listados comparten autor, modelo base y licencia, y difieren
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera
+- Ficha en Hugging Face: https://huggingface.co/neph1/minimax_h3_handheld_shaky_camera
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Espejo original en Civitai: https://civitai.com/models/2592748/shaky-handheld-camera?modelVersionId=3343481

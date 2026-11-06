@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-30M-288domains-dirichlet | 29,2M por modelo (1.024 modelos) | no disponible | Investigacion de data mixing (proxies) | MIT | HuggingFace |
-| OLMo 2 (variantes oficiales de AI2) | 7B, 13B, 32B | 4.096 tokens (variantes base) | Modelo base de proposito general | Apache 2.0 | HuggingFace |
-| Pythia (EleutherAI) | 70M a 12B | 2.048 tokens | Suite de investigacion sobre entrenamiento | Apache 2.0 | HuggingFace |
-| SmolLM2 (HuggingFace) | 135M, 360M, 1.7B | 8.192 tokens | Modelo pequeno de proposito general | Apache 2.0 | HuggingFace |
+| olmo2-30M-288domains-dirichlet | 29,2M por modelo (1.024 modelos) | no disponible | Investigacion de data mixing (proxies) | MIT | Hugging Face |
+| OLMo 2 (variantes oficiales de AI2) | 7B, 13B, 32B | 4.096 tokens (variantes base) | Modelo base de proposito general | Apache 2.0 | Hugging Face |
+| Pythia (EleutherAI) | 70M a 12B | 2.048 tokens | Suite de investigacion sobre entrenamiento | Apache 2.0 | Hugging Face |
+| SmolLM2 (Hugging Face) | 135M, 360M, 1.7B | 8.192 tokens | Modelo pequeno de proposito general | Apache 2.0 | Hugging Face |
 
 La comparacion es aproximada: este repositorio no compite en rendimiento de tareas, sino que ofrece un enjambre de proxies para metodologia de mezcla de datos, un nicho que las suites anteriores no cubren con la misma granularidad (1.024 mezclas sobre 288 dominios).
 
@@ -85,7 +85,7 @@ La comparacion es aproximada: este repositorio no compite en rendimiento de tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-30M-288domains-dirichlet
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-30M-288domains-dirichlet
 - Paper LinMix: https://arxiv.org/abs/2610.37390
 - Dataset de diseno y resultados: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Dataset de entrenamiento (tokenizado): https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-asym | 2.047 millones declarados (base: 8.030 millones) | no disponible (base: 128.000) | INT4 GPTQ gs64 asim | Llama 3.1 Community | HuggingFace, 21 descargas |
-| meta-llama/Llama-3.1-8B | 8.030 millones | 128.000 | BF16 original | Llama 3.1 Community | HuggingFace, ampliamente usado |
-| Otras cuantizaciones INT4 de Llama 3.1 8B (p. ej. GPTQ/AWQ de la comunidad) | 8.030 millones (pesos INT4) | 128.000 | INT4 GPTQ/AWQ | Llama 3.1 Community | Multiples repos en HuggingFace |
-| Llama 3.1 8B Instruct | 8.030 millones | 128.000 | BF16 original | Llama 3.1 Community | HuggingFace, orientado a chat |
+| fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-asym | 2.047 millones declarados (base: 8.030 millones) | no disponible (base: 128.000) | INT4 GPTQ gs64 asim | Llama 3.1 Community | Hugging Face, 21 descargas |
+| meta-llama/Llama-3.1-8B | 8.030 millones | 128.000 | BF16 original | Llama 3.1 Community | Hugging Face, ampliamente usado |
+| Otras cuantizaciones INT4 de Llama 3.1 8B (p. ej. GPTQ/AWQ de la comunidad) | 8.030 millones (pesos INT4) | 128.000 | INT4 GPTQ/AWQ | Llama 3.1 Community | Multiples repos en Hugging Face |
+| Llama 3.1 8B Instruct | 8.030 millones | 128.000 | BF16 original | Llama 3.1 Community | Hugging Face, orientado a chat |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.1-8B-auto_gptq-int4-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Licencia Llama 3.1: https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - Intel AutoRound: https://github.com/intel/auto-round

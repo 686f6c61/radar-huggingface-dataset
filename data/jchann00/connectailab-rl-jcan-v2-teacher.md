@@ -75,9 +75,9 @@ No se dispone de modelos comparables de la misma categoria (politicas RL de gest
 
 | Modelo | Tipo | Licencia | Idiomas | Rendimiento (simulador) | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jcan-v2-teacher | Politica RL (imitacion + PPO) | Apache 2.0 | Coreano | 11,11 M wones, 95 % satisfaccion, 2,8 incidentes | HuggingFace |
+| connectailab-rl-jcan-v2-teacher | Politica RL (imitacion + PPO) | Apache 2.0 | Coreano | 11,11 M wones, 95 % satisfaccion, 2,8 incidentes | Hugging Face |
 | Presidente por reglas (linea base) | Politica basada en reglas | no aplica | Coreano | 3,24 M wones, 79 % satisfaccion, 7,8 incidentes | Incluida en el entorno |
-| kiodo/connectailab-rl-jay-v1-teacher | Politica RL predecesora | no disponible en la informacion | Coreano | no disponible | HuggingFace |
+| kiodo/connectailab-rl-jay-v1-teacher | Politica RL predecesora | no disponible en la informacion | Coreano | no disponible | Hugging Face |
 
 No se conocen alternativas publicas equivalentes fuera del ecosistema CONNECT AI LAB.
 
@@ -94,7 +94,7 @@ No se conocen alternativas publicas equivalentes fuera del ecosistema CONNECT AI
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jchann00/connectailab-rl-jcan-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/jchann00/connectailab-rl-jcan-v2-teacher
 - Repositorio CONNECT TYCOON (GitHub): https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Google Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de Connect AI Lab: https://www.youtube.com/@CONNECT-AI-LAB
@@ -102,4 +102,4 @@ No se conocen alternativas publicas equivalentes fuera del ecosistema CONNECT AI
 - Curso de RL de AI City Builders: https://www.aicitybuilders.com/robot
 - Connect AI (ezerai): https://www.ezerai.xyz
 - Modelo relacionado (v1): https://huggingface.co/kiodo/connectailab-rl-jay-v1-teacher
-- Perfil del autor en HuggingFace: https://huggingface.co/jchann00/models
+- Perfil del autor en Hugging Face: https://huggingface.co/jchann00/models

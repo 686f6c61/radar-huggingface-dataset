@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MCNL v1 (Multi Concept NSFW LoRA) es un adaptador LoRA publicado en HuggingFace por el usuario Sinomarsl (la model card lo atribuye a la organizacion ScottzillaSystems, lo que supone una discrepancia entre el repositorio y la documentacion del autor). Se trata de un adaptador de bajo rango sobre el pipeline de edicion de imagen Qwen/Qwen-Image-Edit-2511, orientado a habilitar generacion y edicion de contenido para adultos (NSFW) sobre dicha base. No es un modelo autonomo: requiere cargar el modelo base completo y aplicar despues los pesos LoRA.
+MCNL v1 (Multi Concept NSFW LoRA) es un adaptador LoRA publicado en Hugging Face por el usuario Sinomarsl (la model card lo atribuye a la organizacion ScottzillaSystems, lo que supone una discrepancia entre el repositorio y la documentacion del autor). Se trata de un adaptador de bajo rango sobre el pipeline de edicion de imagen Qwen/Qwen-Image-Edit-2511, orientado a habilitar generacion y edicion de contenido para adultos (NSFW) sobre dicha base. No es un modelo autonomo: requiere cargar el modelo base completo y aplicar despues los pesos LoRA.
 
 El adaptador esta construido sobre QwenImageTransformer2DModel, una arquitectura MMDiT (diffusion transformer multimodal) propia de la familia Qwen-Image. El repositorio ocupa aproximadamente 0,6 GB y el fichero de pesos safetensors ronda los 563 MB, lo que es coherente con un adaptador LoRA de rango bajo sobre un transformer de difusion de gran tamano, y no con un modelo entrenado desde cero.
 
@@ -58,16 +58,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM total para inferencia: dominada por Qwen/Qwen-Image-Edit-2511. No se dispone de cifras oficiales en la informacion proporcionada; como referencia de orden de magnitud, un transformer de difusion de esta familia en `bfloat16` requiere del orden de 24 GB o mas, y las variantes cuantizadas pueden reducir esa cifra de forma sustancial. Esta estimacion no esta confirmada por el autor.
 - GPU recomendadas: no disponible. El ejemplo de la model card usa `torch_dtype=torch.bfloat16` y `.to("cuda")`, lo que exige una GPU con soporte de bfloat16.
 - Cabe en GPU de consumo: no confirmado. Con cuantizacion agresiva podria ser viable en GPU de gama alta con 16-24 GB, pero no hay datos publicados que lo verifiquen.
-- Opciones de despliegue: diffusers con `QwenImageEditPlusPipeline` (unico metodo documentado), ademas de la demo alojada en HuggingFace Spaces por ScottzillaSystems. vLLM, llama.cpp, Ollama y TGI no aplican a este tipo de modelo.
+- Opciones de despliegue: diffusers con `QwenImageEditPlusPipeline` (unico metodo documentado), ademas de la demo alojada en Hugging Face Spaces por ScottzillaSystems. vLLM, llama.cpp, Ollama y TGI no aplican a este tipo de modelo.
 - Latencia y throughput: no disponible. El unico dato operativo publicado son 40 pasos de inferencia y `true_cfg_scale=4.0`, valores de referencia del autor pero sin tiempos medidos.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Modelo base | Tamano | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|---|
-| MCNL v1 (este, `Sinomarsl/qwen-image-edit-plus-nsfw-lora`) | LoRA NSFW | Qwen-Image-Edit-2511 | repo 0,6 GB / pesos ~563 MB | OpenRAIL++ | HuggingFace, 6 descargas, 1 like | no disponible |
-| MCNL v2 (`ScottzillaSystems/qwen-image-edit-plus-nsfw-lora2`) | LoRA NSFW | Qwen-Image-Edit-2511 | no disponible | no disponible | HuggingFace | no disponible |
-| Qwen-Image-Edit-2511 (`Qwen/Qwen-Image-Edit-2511`) | Modelo base de edicion de imagen | no aplica | no disponible | no disponible en la informacion recogida | HuggingFace | no disponible |
+| MCNL v1 (este, `Sinomarsl/qwen-image-edit-plus-nsfw-lora`) | LoRA NSFW | Qwen-Image-Edit-2511 | repo 0,6 GB / pesos ~563 MB | OpenRAIL++ | Hugging Face, 6 descargas, 1 like | no disponible |
+| MCNL v2 (`ScottzillaSystems/qwen-image-edit-plus-nsfw-lora2`) | LoRA NSFW | Qwen-Image-Edit-2511 | no disponible | no disponible | Hugging Face | no disponible |
+| Qwen-Image-Edit-2511 (`Qwen/Qwen-Image-Edit-2511`) | Modelo base de edicion de imagen | no aplica | no disponible | no disponible en la informacion recogida | Hugging Face | no disponible |
 
 No se dispone de datos publicados que permitan comparar rendimiento, contexto o calidad de edicion frente a alternativas equivalentes de la misma categoria. No se han identificado en la busqueda otros LoRAs NSFW comparables con metricas publicadas.
 
@@ -87,7 +87,7 @@ No se dispone de datos publicados que permitan comparar rendimiento, contexto o 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sinomarsl/qwen-image-edit-plus-nsfw-lora
+- Repositorio Hugging Face: https://huggingface.co/Sinomarsl/qwen-image-edit-plus-nsfw-lora
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - Version MCNL v2: https://huggingface.co/ScottzillaSystems/qwen-image-edit-plus-nsfw-lora2
 - Demo Image Editor de ScottzillaSystems: https://huggingface.co/spaces/ScottzillaSystems/Qwen-Image-Edit-2511-LoRAs-Fast

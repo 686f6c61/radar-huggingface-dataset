@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mers123/jarvis es un repositorio alojado en HuggingFace por el usuario Mers123, creado el 12 de septiembre de 2026 y actualizado el mismo dia. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y su unica etiqueta publica es `region:us`. La pagina no declara pipeline, licencia, idiomas ni formato de pesos, y no se ha publicado ninguna model card con descripcion, arquitectura o datos de entrenamiento.
+Mers123/jarvis es un repositorio alojado en Hugging Face por el usuario Mers123, creado el 12 de septiembre de 2026 y actualizado el mismo dia. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y su unica etiqueta publica es `region:us`. La pagina no declara pipeline, licencia, idiomas ni formato de pesos, y no se ha publicado ninguna model card con descripcion, arquitectura o datos de entrenamiento.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio: los unicos enlaces recuperados corresponden a foros del videojuego Ragnarok Online y no guardan relacion con el modelo. Tampoco se ha localizado paper, blog tecnico, repositorio de codigo ni demo asociados.
 
@@ -64,7 +64,7 @@ En todos los casos, el requisito previo es la verificacion manual de contenido, 
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No constan datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion estandar, ni en la pagina de HuggingFace ni en los resultados de busqueda web.
+No constan datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluacion estandar, ni en la pagina de Hugging Face ni en los resultados de busqueda web.
 
 ## Requisitos de hardware
 
@@ -95,7 +95,7 @@ No disponible. Sin conocer el tamano, la categoria ni el idioma del modelo, no e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mers123/jarvis
+- Hugging Face: https://huggingface.co/Mers123/jarvis
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

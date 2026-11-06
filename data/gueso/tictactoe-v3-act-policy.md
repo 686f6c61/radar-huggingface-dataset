@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gueso/tictactoe-v3-act-policy | 51,7 M | no aplica | ACT para SO-101 (tres en raya) | Apache 2.0 | HuggingFace |
-| Otros checkpoints ACT de LeRobot | no disponible | no aplica | Manipulación genérica | variable | HuggingFace |
-| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por difusión | variable | HuggingFace / repos |
+| Gueso/tictactoe-v3-act-policy | 51,7 M | no aplica | ACT para SO-101 (tres en raya) | Apache 2.0 | Hugging Face |
+| Otros checkpoints ACT de LeRobot | no disponible | no aplica | Manipulación genérica | variable | Hugging Face |
+| Políticas Diffusion Policy | no disponible | no aplica | Manipulación por difusión | variable | Hugging Face / repos |
 
 No se dispone de datos comparativos de rendimiento entre este checkpoint y alternativas de la misma categoría en la información proporcionada.
 
@@ -81,6 +81,6 @@ No se dispone de datos comparativos de rendimiento entre este checkpoint y alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gueso/tictactoe-v3-act-policy
+- Modelo en Hugging Face: https://huggingface.co/Gueso/tictactoe-v3-act-policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/OG7407/tictactoe-v3
 - Librería LeRobot: https://github.com/huggingface/lerobot

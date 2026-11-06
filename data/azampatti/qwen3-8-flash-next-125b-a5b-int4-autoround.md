@@ -100,10 +100,10 @@ Progresión del proceso de reparación y de la cuantización del cabezal:
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Capacidad | Uso de herramientas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound (este) | ~124B | 4,8B | no disponible | 47 | 85-89 | other (qwen) | HuggingFace + repositorio de servicio propio |
-| Qwen3.8-Flash-Next original (10 expertos) | no disponible | 6,0B | no disponible | 51,8 | 86 | qwen | HuggingFace (Qwen) |
-| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace (Intel); es el modelo base de este checkpoint |
-| Checkpoint híbrido de Saren-Arterius | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | HuggingFace / GitHub |
+| azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound (este) | ~124B | 4,8B | no disponible | 47 | 85-89 | other (qwen) | Hugging Face + repositorio de servicio propio |
+| Qwen3.8-Flash-Next original (10 expertos) | no disponible | 6,0B | no disponible | 51,8 | 86 | qwen | Hugging Face (Qwen) |
+| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face (Intel); es el modelo base de este checkpoint |
+| Checkpoint híbrido de Saren-Arterius | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Hugging Face / GitHub |
 
 No se han proporcionado datos de otros modelos comparables de la misma categoría (por ejemplo alternativas MoE de ~120B con cuantización int4 para una sola máquina), por lo que la comparativa se limita a los checkpoints de la misma familia.
 
@@ -113,7 +113,7 @@ No se han proporcionado datos de otros modelos comparables de la misma categorí
 - El uso de herramientas no se degrada según las mediciones (85-89 frente a 86), pero se trata de 3 ensayos: la incertidumbre estadística es alta.
 - Los benchmarks son del arnés propio del autor, medidos en un único DGX Spark y con 6 ejecuciones para capacidad y 3 para uso de herramientas. No hay evaluación independiente ni resultados en MMLU, HumanEval o GSM8K.
 - Riesgo de alucinación: no documentado en la información disponible; no se han publicado tasas de alucinación ni evaluaciones de veracidad.
-- Idiomas soportados y cobertura multilingüe: no disponibles. No se declaran idiomas en el repositorio de HuggingFace.
+- Idiomas soportados y cobertura multilingüe: no disponibles. No se declaran idiomas en el repositorio de Hugging Face.
 - Longitud de contexto máxima: no disponible, aunque el proceso de destilación incluyó ejemplos de contexto largo.
 - Licencia "other" con license_name "qwen": el uso comercial queda sujeto a los términos de la licencia Qwen, que hay que revisar antes de cualquier despliegue en producción.
 - Es un derivado no oficial: el recorte de expertos y el healing los realiza el autor del repositorio (azampatti), no Qwen ni Intel; los checkpoints originales de Qwen, Intel y Saren-Arterius se conservan tal cual en `README_upstream_hybrid.md` y `ple-table/README_upstream_table.md`.
@@ -125,9 +125,9 @@ No se han proporcionado datos de otros modelos comparables de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/azampatti/Qwen3.8-Flash-Next-125B-A5B-INT4-AutoRound
 - Repositorio de servicio y scripts: https://github.com/azampatti/Qwen3.8-Flash-Next-Int4-FAST
-- Modelo base en HuggingFace: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
+- Modelo base en Hugging Face: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia Qwen aplicada: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Fork de vLLM para servir el checkpoint híbrido: https://github.com/Saren-Arterius/qwen3.8-Flash-DGX-AutoRound

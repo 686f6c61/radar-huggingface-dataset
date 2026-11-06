@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abhishek-joshi/albef-matching` es un repositorio de HuggingFace que contiene una implementacion personalizada y compacta en PyTorch del modelo ALBEF (Align before Fuse) orientada a tareas de matching imagen-texto. ALBEF es una arquitectura de representacion vision-lenguaje publicada por Salesforce Research en NeurIPS 2021, cuyo objetivo es alinear las representaciones de imagen y texto antes de fusionarlas mediante co-atencion. En este repositorio, el autor empaqueta una version reducida y no entrenada del modelo, pensada como punto de partida para pruebas de humo y experimentos controlados.
+`abhishek-joshi/albef-matching` es un repositorio de Hugging Face que contiene una implementacion personalizada y compacta en PyTorch del modelo ALBEF (Align before Fuse) orientada a tareas de matching imagen-texto. ALBEF es una arquitectura de representacion vision-lenguaje publicada por Salesforce Research en NeurIPS 2021, cuyo objetivo es alinear las representaciones de imagen y texto antes de fusionarlas mediante co-atencion. En este repositorio, el autor empaqueta una version reducida y no entrenada del modelo, pensada como punto de partida para pruebas de humo y experimentos controlados.
 
 El dato mas relevante para quien evalue este modelo es su tamano real: el checkpoint en safetensors contiene unicamente 24.832 parametros totales, muy lejos de lo que sugiere la etiqueta `huge` del `config.json`. La propia model card aclara que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un modelo preentrenado ni evaluado con benchmarks. El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhishek-joshi/albef-matching | 24.832 | no disponible | Matching imagen-texto (implementacion sin entrenar) | Apache 2.0 | HuggingFace, 0 descargas |
+| abhishek-joshi/albef-matching | 24.832 | no disponible | Matching imagen-texto (implementacion sin entrenar) | Apache 2.0 | Hugging Face, 0 descargas |
 | ALBEF oficial (Salesforce Research) | no disponible en la informacion proporcionada (se referencia como `ALBEF-base` y variante `14M` en el paper) | no disponible | Matching imagen-texto, recuperacion, VQA | Codigo en GitHub, integrado en LAVIS | Repositorio oficial en GitHub |
-| jrkaminski/albef-matching | no disponible | no disponible | Matching imagen-texto | no disponible en la informacion proporcionada | HuggingFace |
-| DestinyJdj/albef-matching | no disponible | no disponible | Matching imagen-texto | no disponible en la informacion proporcionada | HuggingFace |
+| jrkaminski/albef-matching | no disponible | no disponible | Matching imagen-texto | no disponible en la informacion proporcionada | Hugging Face |
+| DestinyJdj/albef-matching | no disponible | no disponible | Matching imagen-texto | no disponible en la informacion proporcionada | Hugging Face |
 
 Nota: la existencia de repositorios con el mismo nombre `albef-matching` bajo varias cuentas de usuario (jrkaminski, DestinyJdj, abhishek-joshi) sugiere que se trata de un andamiaje generado de forma automatica y replicado, mas que de un desarrollo individual con resultados propios. No se dispone de datos de rendimiento de ninguno de ellos para establecer una comparacion cuantitativa.
 
@@ -78,13 +78,13 @@ Nota: la existencia de repositorios con el mismo nombre `albef-matching` bajo va
 - No hay informacion sobre sesgos, idiomas soportados ni composicion de datos, por lo que no es posible evaluar riesgos de sesgo.
 - Riesgo de alucinacion: no aplica en el sentido habitual, ya que el modelo no esta entrenado para generar texto; el riesgo real es interpretar mal sus salidas aleatorias como predicciones validas.
 - La licencia Apache 2.0 es permisiva y permite uso comercial del codigo y los pesos, pero la model card recomienda revisar por separado los terminos de los datos externos con los que se use el repositorio.
-- Requiere un adaptador explicito para cargarse con APIs genericas de HuggingFace; no es plug-and-play con runners estandar.
+- Requiere un adaptador explicito para cargarse con APIs genericas de Hugging Face; no es plug-and-play con runners estandar.
 - Cualquier resultado obtenido a partir de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto que se distribuyen en este repositorio.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abhishek-joshi/albef-matching
+- Repositorio en Hugging Face: https://huggingface.co/abhishek-joshi/albef-matching
 - Repositorio ALBEF oficial (Salesforce Research) en GitHub: https://github.com/salesforce/ALBEF
 - Pagina personal del autor: https://abhihjoshi.github.io/
 - Perfil de GitHub del autor: https://github.com/abhishekjoshi007

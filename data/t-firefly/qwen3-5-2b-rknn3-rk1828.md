@@ -86,8 +86,8 @@ La unica comparacion documentada con rigor es la del artefacto convertido frente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t-firefly/qwen3.5-2b-rknn3-rk1828
-- Modelo base Qwen3.5-2B en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-2B
+- Repositorio en Hugging Face: https://huggingface.co/t-firefly/qwen3.5-2b-rknn3-rk1828
+- Modelo base Qwen3.5-2B en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Modelo base en ModelScope: https://modelscope.cn/models/Qwen/Qwen3.5-2B
 - Firefly AI Team: https://www.t-firefly.com/

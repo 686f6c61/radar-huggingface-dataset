@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Classification es una implementación compacta y personalizada en PyTorch de la arquitectura Flamingo, orientada a tareas de clasificación. La desarrolla gael-rgr06 y se publica en HuggingFace bajo licencia Apache 2.0. Creado el 9 de septiembre de 2026, el modelo no ha registrado descargas ni interacciones hasta la fecha.
+Flamingo for Classification es una implementación compacta y personalizada en PyTorch de la arquitectura Flamingo, orientada a tareas de clasificación. La desarrolla gael-rgr06 y se publica en Hugging Face bajo licencia Apache 2.0. Creado el 9 de septiembre de 2026, el modelo no ha registrado descargas ni interacciones hasta la fecha.
 
 Con una configuración "tiny" y 24.832 parámetros, el modelo no es una liberación preentrenada de producción, sino una herramienta para revisión de código, pruebas de humo y experimentos controlados de pequeña escala. La arquitectura implementa atención de consultas agrupadas, fusión por MLP concatenado, activación GELU tanh y normalización por instancia.
 
@@ -76,5 +76,5 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gael-rgr06/classification
+- Hugging Face: https://huggingface.co/gael-rgr06/classification
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repos o demos) en la búsqueda web. Los resultados de búsqueda se refieren únicamente al nombre "Gaël" y no aportan información técnica sobre el modelo.

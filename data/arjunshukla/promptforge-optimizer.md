@@ -73,7 +73,7 @@ No se dispone de información sobre alternativas open source específicas para o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArjunShukla/PromptForge-Optimizer
+- Hugging Face: https://huggingface.co/ArjunShukla/PromptForge-Optimizer
 - Repositorio GitHub (PromptForge): https://github.com/arjun988/promptModel
 - Paquete PyPI (tuneprompt): https://pypi.org/project/tuneprompt/
 - Modelo complementario PromptForge-Quality: https://huggingface.co/ArjunShukla/PromptForge-Quality

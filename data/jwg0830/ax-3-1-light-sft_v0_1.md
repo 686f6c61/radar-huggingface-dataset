@@ -84,6 +84,6 @@ La comparativa directa con otros modelos coreanos de tamaño similar (por ejempl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwg0830/AX-3.1-Light-sft_v0_1
+- Modelo en Hugging Face: https://huggingface.co/jwg0830/AX-3.1-Light-sft_v0_1
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Datasets de AI Hub mencionados (IDs): 71857, 71874, 71610 (sin URL directa en la información proporcionada)

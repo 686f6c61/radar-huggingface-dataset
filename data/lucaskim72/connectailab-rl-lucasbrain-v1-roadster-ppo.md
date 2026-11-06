@@ -89,7 +89,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/lucaskim72/connectailab-rl-lucasbrain-v1-roadster-ppo
 - Entorno de referencia: `로드스터_시뮬레이터.py` (simulador del autor, no enlazado en la información disponible)
 - Curso CONNECT AI LAB, "AI CITY BUILDERS" RL, lección 6 (sin URL en la información disponible)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_information_rare_2b_schedule_200m_dmodel32` es un modelo de lenguaje causal de tipo transformer, de dimensiones muy reducidas, publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo pensado para uso en produccion, sino de una pieza de un experimento academico de escala ("Transformer experiment grid") en el que se entrenan transformadores causales diminutos con distintas anchuras (`d_model`) para estudiar el aprendizaje de trigramas sinteticos. El identificador del modelo indica una anchura de 32 dimensiones, un vocabulario de 4096 tokens, una longitud de contexto de 256 tokens y un presupuesto nominal de entrenamiento de aproximadamente 2.000 millones de tokens.
+`eoinf/trigram_information_rare_2b_schedule_200m_dmodel32` es un modelo de lenguaje causal de tipo transformer, de dimensiones muy reducidas, publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo pensado para uso en produccion, sino de una pieza de un experimento academico de escala ("Transformer experiment grid") en el que se entrenan transformadores causales diminutos con distintas anchuras (`d_model`) para estudiar el aprendizaje de trigramas sinteticos. El identificador del modelo indica una anchura de 32 dimensiones, un vocabulario de 4096 tokens, una longitud de contexto de 256 tokens y un presupuesto nominal de entrenamiento de aproximadamente 2.000 millones de tokens.
 
 La relevancia de este artefacto es estrictamente de investigacion: sirve para reproducir y auditar los resultados de un grid experimental concreto, no para tareas de generacion de texto reales. El propio autor advierte que la evaluacion se hace sobre los mismos datos de entrenamiento y que no existe evaluacion en un conjunto reservado (held-out), por lo que cualquier metrica de rendimiento debe interpretarse con cautela.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `eoinf/trigram_information_rare_2b_schedule_200m_dmodel32` | no disponible (`d_model=32`) | 256 | no disponible | HuggingFace (0 descargas) |
+| `eoinf/trigram_information_rare_2b_schedule_200m_dmodel32` | no disponible (`d_model=32`) | 256 | no disponible | Hugging Face (0 descargas) |
 | Otros modelos del mismo grid (`d_model` distinto) | no disponible | 256 | no disponible | Referenciados en `grid_summary.json`, no disponibles en la informacion |
 | Alternativas de proposito general | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de informacion sobre modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_information_rare_2b_schedule_200m_dmodel32
+- Hugging Face: https://huggingface.co/eoinf/trigram_information_rare_2b_schedule_200m_dmodel32
 - Tokenizador referenciado: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Repositorio de codigo referenciado: `synthetic_trigrams` (no se proporciona URL en la informacion disponible)
 - Ficheros referenciados en la model card: `grid_summary.json`, `result.json`, `configuration.json` (no disponibles en la informacion proporcionada)

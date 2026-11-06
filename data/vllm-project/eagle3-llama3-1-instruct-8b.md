@@ -69,7 +69,7 @@ Comparativas adicionales reportadas: EAGLE-1 es 2x mas rapido que Lookahead y 1,
 
 | Modelo | Tipo | Modelo objetivo | Aceleracion reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EAGLE3-LLaMA3.1-Instruct-8B | Borrador EAGLE-3 | LLaMA 3.1 Instruct 8B | no disponible para este checkpoint | Apache 2.0 | HuggingFace (vLLM y yuhuili) |
+| EAGLE3-LLaMA3.1-Instruct-8B | Borrador EAGLE-3 | LLaMA 3.1 Instruct 8B | no disponible para este checkpoint | Apache 2.0 | Hugging Face (vLLM y yuhuili) |
 | EAGLE-1 | Borrador EAGLE | Generico (Vicuna 13B en pruebas) | 3x (13B) | Apache 2.0 | GitHub SafeAILab/EAGLE |
 | EAGLE-2 | Borrador EAGLE-2 | Generico (Vicuna 13B en pruebas) | 4x (13B) | Apache 2.0 | GitHub SafeAILab/EAGLE |
 | Medusa | Cabezales de decodificacion especulativa | Generico | 1,6x menos que EAGLE-1 (13B) | no disponible | no disponible |
@@ -86,8 +86,8 @@ Comparativas adicionales reportadas: EAGLE-1 es 2x mas rapido que Lookahead y 1,
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/EAGLE3-LLaMA3.1-Instruct-8B
-- HuggingFace (original): https://huggingface.co/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/EAGLE3-LLaMA3.1-Instruct-8B
+- Hugging Face (original): https://huggingface.co/yuhuili/EAGLE3-LLaMA3.1-Instruct-8B
 - Paper EAGLE: https://arxiv.org/pdf/2401.15077.pdf
 - Paper EAGLE-2: https://arxiv.org/pdf/2406.16858
 - Paper EAGLE-3: https://arxiv.org/pdf/2503.01840

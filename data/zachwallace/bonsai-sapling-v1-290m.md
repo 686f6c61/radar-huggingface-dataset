@@ -75,6 +75,6 @@ No disponible. No se dispone de información sobre modelos comparables en los da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zachwallace/bonsai-sapling-v1-290m
+- Hugging Face: https://huggingface.co/zachwallace/bonsai-sapling-v1-290m
 - Repositorio del modelo (mismo enlace) incluye código fuente del modelo y tokenizador.
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

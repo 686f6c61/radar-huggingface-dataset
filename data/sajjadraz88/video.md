@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Sajjadraz88/video` alojado en HuggingFace es un espacio de modelo publicado por el usuario Sajjadraz88 bajo licencia OpenRAIL. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, parámetros, tarea, idiomas ni ningún otro detalle técnico. A fecha de su creación (26 de agosto de 2026), el repositorio no presenta descargas ni interacciones, lo que sugiere que podría tratarse de un espacio en fase inicial o sin contenido publicado.
+El repositorio `Sajjadraz88/video` alojado en Hugging Face es un espacio de modelo publicado por el usuario Sajjadraz88 bajo licencia OpenRAIL. Sin embargo, la información disponible es extremadamente limitada: la model card únicamente declara la licencia, sin especificar arquitectura, parámetros, tarea, idiomas ni ningún otro detalle técnico. A fecha de su creación (26 de agosto de 2026), el repositorio no presenta descargas ni interacciones, lo que sugiere que podría tratarse de un espacio en fase inicial o sin contenido publicado.
 
 No se ha encontrado documentación adicional en la web que describa este modelo concreto. Las búsquedas realizadas devuelven resultados sobre detectores de vídeo generado por IA, generadores de vídeo y plataformas de entrenamiento de modelos, pero ninguno tiene relación directa con el repositorio mencionado. Por tanto, esta ficha se limita a reflejar la ausencia de datos verificables, y todas las secciones técnicas indicarán "no disponible" salvo la licencia.
 
@@ -52,6 +52,6 @@ No disponible. No existen datos del modelo que permitan compararlo con alternati
 
 ## Enlaces
 
-- HuggingFace: [Sajjadraz88/video](https://huggingface.co/Sajjadraz88/video)
+- Hugging Face: [Sajjadraz88/video](https://huggingface.co/Sajjadraz88/video)
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionadas con este modelo. Las búsquedas web devuelven resultados sobre otras herramientas de detección y generación de vídeo por IA, pero ninguna referencia a este repositorio específico.

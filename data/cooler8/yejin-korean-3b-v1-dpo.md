@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - cooler8/yejin-korean-3b-v1-dpo](https://huggingface.co/cooler8/yejin-korean-3b-v1-dpo)
-- [HuggingFace - cooler8/yejin-korean-1b-v8 (modelo relacionado)](https://huggingface.co/cooler8/yejin-korean-1b-v8/tree/main)
-- [HuggingFace - cooler8/yejin-korean-1b-v8-sft (modelo relacionado)](https://huggingface.co/cooler8/yejin-korean-1b-v8-sft)
+- [Hugging Face - cooler8/yejin-korean-3b-v1-dpo](https://huggingface.co/cooler8/yejin-korean-3b-v1-dpo)
+- [Hugging Face - cooler8/yejin-korean-1b-v8 (modelo relacionado)](https://huggingface.co/cooler8/yejin-korean-1b-v8/tree/main)
+- [Hugging Face - cooler8/yejin-korean-1b-v8-sft (modelo relacionado)](https://huggingface.co/cooler8/yejin-korean-1b-v8-sft)

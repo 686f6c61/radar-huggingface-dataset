@@ -49,7 +49,7 @@ No se dispone de detalles sobre el proceso de entrenamiento de los modelos base 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Para metricas de los modelos base (LFM3-1.7B, LFM3-VL-2B, LFM3-Audio-2B), conviene consultar las model cards originales de LiquidAI en HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. Para metricas de los modelos base (LFM3-1.7B, LFM3-VL-2B, LFM3-Audio-2B), conviene consultar las model cards originales de LiquidAI en Hugging Face.
 
 ## Requisitos de hardware
 
@@ -81,7 +81,7 @@ Nota: la comparativa se ofrece a titulo orientativo. La ventaja diferencial de L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/software-mansion/LFM3-ExecuTorch
+- Repositorio en Hugging Face: https://huggingface.co/software-mansion/LFM3-ExecuTorch
 - Modelo base LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Modelo base LFM3-VL-2B: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Modelo base LFM3-Audio-2B: https://huggingface.co/LiquidAI/LFM3-Audio-2B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g3_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente de la variante cuantizada a 4 bits publicada por Unsloth (`unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`). Lo desarrolla el usuario de HuggingFace `stefanocarrera` y se distribuye con licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a Java, con temperatura 0.5 y 3 generaciones por prompt, aunque la model card no documenta explícitamente estos parámetros.
+`stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g3_run0` es un ajuste fino (fine-tuning) del modelo base Qwen3-8B, concretamente de la variante cuantizada a 4 bits publicada por Unsloth (`unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`). Lo desarrolla el usuario de Hugging Face `stefanocarrera` y se distribuye con licencia Apache 2.0. El nombre del repositorio sugiere un entrenamiento orientado a Java, con temperatura 0.5 y 3 generaciones por prompt, aunque la model card no documenta explícitamente estos parámetros.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-8B, con aproximadamente 8.200 millones de parámetros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 mediante YaRN en la familia Qwen3). El ajuste se ha realizado con la librería Unsloth y TRL, lo que indica un entrenamiento eficiente en memoria, probablemente con LoRA o QLoRA sobre el modelo base cuantizado.
 
@@ -43,7 +43,7 @@ No se documenta ninguna innovación técnica adicional más allá del propio pro
 - Generación de código Java en entornos de prototipado: si el fine-tuning ha funcionado según el nombre del repo, podría emplearse para autocompletar o generar fragmentos de Java en herramientas internas, siempre tras una evaluación propia.
 - Base para un segundo fine-tuning: al estar bajo Apache 2.0 y en formato safetensors, puede reutilizarse como punto de partida para ajustes específicos de dominio.
 - Evaluación comparativa de fine-tunings comunitarios: útil en estudios sobre la calidad de ajustes publicados sin benchmarks, como caso de análisis de riesgos de modelos no evaluados.
-- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado en HuggingFace con la plantilla de Unsloth y qué información mínima debería incluir una model card.
+- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado en Hugging Face con la plantilla de Unsloth y qué información mínima debería incluir una model card.
 - Pruebas de integración con TGI o transformers: el tag `text-generation-inference` permite desplegarlo en un endpoint compatible para validar pipelines de serving, aunque sin garantías de calidad.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g3_run0 | ~8,2B | 32.768 | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning comunitario sin benchmarks |
-| Qwen/Qwen3-8B | ~8,2B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con benchmarks publicados |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8,2B | 32.768 | Apache 2.0 | HuggingFace | Base cuantizada a 4 bits usada para este fine-tuning |
-| meta-llama/Llama-3.1-8B | ~8B | 131.072 | Llama 3.1 Community License | HuggingFace | Alternativa de tamaño similar con contexto mayor |
+| stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g3_run0 | ~8,2B | 32.768 | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning comunitario sin benchmarks |
+| Qwen/Qwen3-8B | ~8,2B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con benchmarks publicados |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8,2B | 32.768 | Apache 2.0 | Hugging Face | Base cuantizada a 4 bits usada para este fine-tuning |
+| meta-llama/Llama-3.1-8B | ~8B | 131.072 | Llama 3.1 Community License | Hugging Face | Alternativa de tamaño similar con contexto mayor |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g3_run0
+- Hugging Face: https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_java_t0.5_g3_run0
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (referencia del modelo base): https://huggingface.co/Qwen/Qwen3-8B

@@ -1,7 +1,7 @@
 # Randi-123/jack_frost_Rotg
 
 ## Resumen
-El modelo `Randi-123/jack_frost_Rotg` es un adaptador LoRA para generación de imágenes, publicado en HuggingFace bajo licencia MIT. Está diseñado para producir representaciones del personaje Jack Frost de la película "Rise of the Guardians" (ROTG). El repositorio incluye un archivo de audio de 9 minutos, aunque la tarjeta del modelo no especifica si este audio se usa como referencia de estilo, prompt o para otra finalidad. El modelo se basa en `brandon12333/Otis__RVC_v2_`, que originalmente parece un modelo de conversión de voz (RVC), lo que genera una inconsistencia notable entre la etiqueta `text-to-image` y el modelo base declarado.
+El modelo `Randi-123/jack_frost_Rotg` es un adaptador LoRA para generación de imágenes, publicado en Hugging Face bajo licencia MIT. Está diseñado para producir representaciones del personaje Jack Frost de la película "Rise of the Guardians" (ROTG). El repositorio incluye un archivo de audio de 9 minutos, aunque la tarjeta del modelo no especifica si este audio se usa como referencia de estilo, prompt o para otra finalidad. El modelo se basa en `brandon12333/Otis__RVC_v2_`, que originalmente parece un modelo de conversión de voz (RVC), lo que genera una inconsistencia notable entre la etiqueta `text-to-image` y el modelo base declarado.
 
 Con un tamaño de repositorio de 0,1 GB, se trata de un adaptador ligero, probablemente destinado a ser combinado con un modelo de difusión base (como Stable Diffusion) para personalizar la salida. Sin embargo, la documentación es extremadamente escasa: no se indican parámetros, arquitectura, método de entrenamiento ni ejemplos de uso. El modelo no ha recibido descargas ni valoraciones, lo que sugiere que es un experimento personal o una publicación preliminar. A pesar de su falta de especificaciones, puede ser útil para artistas que busquen generar arte fan del personaje, siempre que se asuma el riesgo de una integración no estándar con el pipeline de difusión.
 
@@ -56,7 +56,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 - La licencia MIT permite uso comercial, pero se debe verificar que los derechos del personaje (propiedad de DreamWorks) no restrinjan el uso comercial de las imagenes generadas.
 
 ## Enlaces
-- [HuggingFace - Randi-123/jack_frost_Rotg](https://huggingface.co/Randi-123/jack_frost_Rotg)
+- [Hugging Face - Randi-123/jack_frost_Rotg](https://huggingface.co/Randi-123/jack_frost_Rotg)
 - [PixAI - Jack Frost ROTG](https://pixai.art/en/model/1652737128983941159)
 - [PixAI - ROTG Jack Frost (LoRA)](https://pixai.art/model/1750306284240196784?lang=en)
 - [SeaArt - Jack Frost - Rise of the Guardians](https://www.seaart.ai/models/detail/1a9c273ad0127b98c305109972491ddc)

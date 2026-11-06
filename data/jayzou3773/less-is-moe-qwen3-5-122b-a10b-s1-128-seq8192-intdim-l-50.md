@@ -67,8 +67,8 @@ La model card del autor no incluye cifras de MMLU, HumanEval, GSM8K ni de ningun
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (IntDim-L, poda 50 %) | 64,1B | no disponible | no disponible (calibrado a 8192) | Apache-2.0 | HuggingFace, requiere plugin vLLM de Less-is-MoE |
-| Qwen/Qwen3.5-122B-A10B (base) | ~122B | ~10B (segun nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| Este checkpoint (IntDim-L, poda 50 %) | 64,1B | no disponible | no disponible (calibrado a 8192) | Apache-2.0 | Hugging Face, requiere plugin vLLM de Less-is-MoE |
+| Qwen/Qwen3.5-122B-A10B (base) | ~122B | ~10B (segun nombre del modelo) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Otras variantes Less-is-MoE (IntDim-E, IntDim-G) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de poda de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre este checkpoint y el mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-l-50
+- Modelo en Hugging Face: https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-l-50
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Dataset de calibracion con tensores de tokens especificos: https://huggingface.co/datasets/jayzou3773/less-is-moe-s1-calibration-128-seq8192
 - Dataset fuente de las 128 muestras: https://huggingface.co/datasets/yentinglin/s1K-1.1-trl-format

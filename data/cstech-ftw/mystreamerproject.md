@@ -102,7 +102,7 @@ Diferencias destacables: las alternativas de Mistral y Qwen se distribuyen con l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cstech-ftw/mystreamerproject
+- Repositorio en Hugging Face: https://huggingface.co/cstech-ftw/mystreamerproject
 - Modelo upstream del tier ligero: https://huggingface.co/huihui-ai/Llama-3.2-3B-Instruct-abliterated
 - Modelo upstream del tier de alta calidad: https://huggingface.co/Sao10K/L3-8B-Stheno-v3.2
 - Modelo base de Meta Llama 3.2 3B Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

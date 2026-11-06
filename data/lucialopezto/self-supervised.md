@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lucialopezto/self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (research notes) publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo describe como un conjunto estructurado de notas sobre aprendizaje auto-supervisado (self-supervised learning), con referencias de evaluación y preguntas abiertas, y afirma explícitamente que "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado".
+`lucialopezto/self-supervised` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación (research notes) publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo describe como un conjunto estructurado de notas sobre aprendizaje auto-supervisado (self-supervised learning), con referencias de evaluación y preguntas abiertas, y afirma explícitamente que "no reclama mejoras en benchmarks, ablaciones completadas, código publicado ni un checkpoint entrenado".
 
 El repositorio tiene un tamano de 0,0 GB y, segun los metadatos, 49.600 parametros en formato safetensors, una cifra que a efectos practicos no corresponde a un modelo funcional de generacion de texto (un transformer de ese tamano seria inutilizable para cualquier tarea real). Los unicos artefactos declarados en la model card son `analysis.md` y `README.md`.
 
@@ -83,5 +83,5 @@ No se dispone de modelos comparables identificables de forma fiable: la categori
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucialopezto/self-supervised
+- Hugging Face: https://huggingface.co/lucialopezto/self-supervised
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en los resultados de busqueda disponibles (los resultados obtenidos no guardaban relacion con el modelo y se han descartado).

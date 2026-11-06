@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wam-openarm-h2rb-cog-split-live-hawor-v1-50k-ckpt50000 es un checkpoint de investigacion para robotica publicado por el usuario jungwook2358 en HuggingFace. Se trata de un modelo de politica visomotora (vision-language-action) construido sobre el backbone de video Wan2.2-TI2V-5B, con un trunk DiT compartido entre el modelo de video, un adaptador y las cabezas de accion. El modelo se ha entrenado desde cero durante 50.000 pasos en el experimento etiquetado como EXP-0019, centrado en el brazo robotico OpenArm.
+wam-openarm-h2rb-cog-split-live-hawor-v1-50k-ckpt50000 es un checkpoint de investigacion para robotica publicado por el usuario jungwook2358 en Hugging Face. Se trata de un modelo de politica visomotora (vision-language-action) construido sobre el backbone de video Wan2.2-TI2V-5B, con un trunk DiT compartido entre el modelo de video, un adaptador y las cabezas de accion. El modelo se ha entrenado desde cero durante 50.000 pasos en el experimento etiquetado como EXP-0019, centrado en el brazo robotico OpenArm.
 
 El interes tecnico del checkpoint reside en su diseno experimental: combina CogAlign (con gradientes que fluyen hacia el backbone de video) con etiquetas de embodiment separadas (split) para datos humanos y roboticos. Los datos humanos se etiquetan como `allex_human` (id 1) y los roboticos como `new_embodiment` (id 0), cada grupo con su propio codificador de estado, codificador de accion y decodificador de accion, mientras que el trunk DiT y el modelo de video se comparten. Esto permite entrenar simultaneamente con datos de robot y de video humano, una estrategia relevante para escalar el entrenamiento de politicas roboticas con datos heterogeneos.
 
@@ -74,7 +74,7 @@ No disponible. No se han proporcionado datos de modelos comparables de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-h2rb-cog-split-live-hawor-v1-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-h2rb-cog-split-live-hawor-v1-50k-ckpt50000
 - Codigo: actlat-wam branch `jungwook/openarm-fred-ft` @c3d1b92 (no se proporciona URL directa)
 - Script de entrenamiento: `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_prq30_h2rb.sh` (no se proporciona URL directa)
 - Config de modalidad: `gr00t/configs/data/openarm_prq30_v1_config.py` (no se proporciona URL directa)

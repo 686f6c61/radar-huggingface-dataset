@@ -73,8 +73,8 @@ Condiciones de medida: A40 48 GB, 2 TB de RAM de sistema, 32 hilos, contexto 409
 | Modelo | Parametros totales | Contexto | Cuantizacion minima viable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | DeepSeek-V4.1-Flash-1017 GGUF (este) | 748,49B (MoE + engram) | 1.048.576 anunciada | 429,2 GB (q4) | MIT | GGUF publico, solo texto |
-| DeepSeek-V4.1-Flash-1017 (base) | 748,49B | no disponible | pesos originales | no disponible | HuggingFace, multimodal |
-| deepseek-ai/DeepSeek-V3 | 671B (MoE, 37B activos) | 128K | no disponible | licencia propia de DeepSeek | HuggingFace, pesos originales |
+| DeepSeek-V4.1-Flash-1017 (base) | 748,49B | no disponible | pesos originales | no disponible | Hugging Face, multimodal |
+| deepseek-ai/DeepSeek-V3 | 671B (MoE, 37B activos) | 128K | no disponible | licencia propia de DeepSeek | Hugging Face, pesos originales |
 
 La comparativa se limita al modelo base y a la referencia mas cercana conocida de DeepSeek; datos de rendimiento comparado no disponibles.
 

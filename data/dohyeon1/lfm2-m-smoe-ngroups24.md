@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Dohyeon1/LFM2-M-SMoE-ngroups24 es un checkpoint publicado en HuggingFace por el usuario Dohyeon1. Según las etiquetas del repositorio (`lfm2_moe`, `text-generation`), se trata de un modelo de generación de texto con arquitectura Mixture of Experts (MoE) perteneciente a la familia LFM2. El repositorio contiene pesos en formato `safetensors` con un total de 8.339.930.560 parámetros (8,34 mil millones) y ocupa 16,7 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16.
+El modelo Dohyeon1/LFM2-M-SMoE-ngroups24 es un checkpoint publicado en Hugging Face por el usuario Dohyeon1. Según las etiquetas del repositorio (`lfm2_moe`, `text-generation`), se trata de un modelo de generación de texto con arquitectura Mixture of Experts (MoE) perteneciente a la familia LFM2. El repositorio contiene pesos en formato `safetensors` con un total de 8.339.930.560 parámetros (8,34 mil millones) y ocupa 16,7 GB, lo que sugiere que los pesos están almacenados en precisión FP16 o BF16.
 
 No se dispone de información sobre la arquitectura detallada, la longitud de contexto, los idiomas soportados, la licencia ni los datos de entrenamiento. El model card incluido es una plantilla autogenerada con campos vacíos (`[More Information Needed]`), por lo que no aporta ninguna especificación técnica. El modelo no cuenta con documentación pública ni resultados de benchmarks, lo que limita su evaluación y uso en producción.
 

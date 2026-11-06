@@ -2,11 +2,11 @@
 
 ## Resumen
 
-NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 es una cuantizacion en NVFP4 (formato de coma flotante de 4 bits de NVIDIA, empaquetado como 8-bit en ModelOpt) del modelo multimodal NVIDIA Nemotron 3.5 Super VL, publicado por el usuario dpkoffl27 en HuggingFace. El modelo base es `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16`, un transformer de tipo `nemotron_h_omni` orientado a tareas image-text-to-text, es decir, entrada conjunta de imagen y texto con salida de texto.
+NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 es una cuantizacion en NVFP4 (formato de coma flotante de 4 bits de NVIDIA, empaquetado como 8-bit en ModelOpt) del modelo multimodal NVIDIA Nemotron 3.5 Super VL, publicado por el usuario dpkoffl27 en Hugging Face. El modelo base es `nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16`, un transformer de tipo `nemotron_h_omni` orientado a tareas image-text-to-text, es decir, entrada conjunta de imagen y texto con salida de texto.
 
 El nombre comercial indica una arquitectura MoE (Mixture of Experts) con 120B parametros totales y 12B parametros activos por token, aunque el recuento real de safetensors del repositorio cuantizado asciende a 65.769.840.138 parametros, dato que conviene contrastar con la ficha oficial del modelo base antes de dimensionar despliegues. La relevancia de esta publicacion radica en que reduce el peso en disco del checkpoint BF16 a unos 75 GB, lo que permite servir un modelo de gran tamano en infraestructura mas modesta siempre que se disponga de GPUs con soporte para NVFP4.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en HuggingFace. La licencia declarada es OpenMDW-1.1 y los idiomas soportados segun los metadatos son ingles, espanol, frances, aleman, italiano y japones.
+El acceso al repositorio esta restringido (gated): es necesario aceptar las condiciones en Hugging Face. La licencia declarada es OpenMDW-1.1 y los idiomas soportados segun los metadatos son ingles, espanol, frances, aleman, italiano y japones.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 (esta ficha) | 65.769.840.138 reales en safetensors (120B/A12B nominal) | no disponible | Image-text-to-text | OpenMDW-1.1 | Gated en HuggingFace, 4 descargas |
+| NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4 (esta ficha) | 65.769.840.138 reales en safetensors (120B/A12B nominal) | no disponible | Image-text-to-text | OpenMDW-1.1 | Gated en Hugging Face, 4 descargas |
 | nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16 (modelo base) | 120B/A12B nominal | no disponible | Image-text-to-text | no disponible en esta ficha | Referenciado como base; acceso segun ficha oficial |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -72,7 +72,7 @@ No se dispone de informacion sobre modelos comparables adicionales en la informa
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de descargar.
 - Discrepancia de parametros: el nombre indica 120B totales y 12B activos, pero los safetensors suman 65.769.840.138 parametros; verificar la ficha del modelo base antes de planificar capacidad.
 - Cuantizacion NVFP4: puede degradar la calidad frente al checkpoint BF16, especialmente en tareas de vision fina y razonamiento numerico; no se han publicado evaluaciones de la perdida de precision.
 - Requiere hardware compatible con NVFP4; el despliegue en GPUs sin soporte nativo puede no ser viable.
@@ -86,6 +86,6 @@ No se dispone de informacion sobre modelos comparables adicionales en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dpkoffl27/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/dpkoffl27/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-NVFP4
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Super-VL-120B-A12B-BF16
 - Paper, blog, repositorio o demo oficiales: no disponibles en la informacion proporcionada.

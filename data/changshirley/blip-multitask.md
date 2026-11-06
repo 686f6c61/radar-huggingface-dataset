@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`changshirley/blip-multitask` es un repositorio de HuggingFace publicado por el usuario changshirley que contiene una implementación propia y compacta en PyTorch de una arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea de visión y lenguaje. BLIP es, en su formulación original, un modelo multimodal que combina visión por computador y procesamiento de lenguaje natural para tareas como captioning, VQA o recuperación imagen-texto. Sin embargo, este repositorio concreto no es una versión entrenada ni una release lista para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y pequeños experimentos controlados.
+`changshirley/blip-multitask` es un repositorio de Hugging Face publicado por el usuario changshirley que contiene una implementación propia y compacta en PyTorch de una arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas multitarea de visión y lenguaje. BLIP es, en su formulación original, un modelo multimodal que combina visión por computador y procesamiento de lenguaje natural para tareas como captioning, VQA o recuperación imagen-texto. Sin embargo, este repositorio concreto no es una versión entrenada ni una release lista para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y pequeños experimentos controlados.
 
 El repositorio incluye `eval.py` como artefacto principal, `config.json` con la configuración de arquitectura generada, `training_args.json` con la receta de experimento por defecto y `model.safetensors` como *checkpoint* de inicialización válido únicamente para pruebas. El recuento de parámetros del archivo safetensors es de 49.600, un valor que contrasta con la escala «huge» declarada en la model card y con el tamaño del repositorio (0,0 GB), lo que refuerza que se trata de una inicialización mínima y no de un modelo de gran porte.
 
@@ -76,9 +76,9 @@ Nota importante: existe una contradicción entre la escala «huge» declarada en
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| changshirley/blip-multitask | 49.600 (safetensors) | no disponible | sin benchmark publicado | apache-2.0 | HuggingFace, 0 descargas |
+| changshirley/blip-multitask | 49.600 (safetensors) | no disponible | sin benchmark publicado | apache-2.0 | Hugging Face, 0 descargas |
 | BLIP original (Salesforce) | no disponible | no disponible | no disponible | no disponible | repositorio de referencia en GitHub |
-| changshirley/blip-classification | no disponible | no disponible | no disponible | no disponible | HuggingFace (mismo autor) |
+| changshirley/blip-classification | no disponible | no disponible | no disponible | no disponible | Hugging Face (mismo autor) |
 
 No se dispone de datos numéricos verificados de los modelos comparables en la informacion proporcionada. El BLIP original de Salesforce es la referencia conceptual del diseño, pero no se aportan cifras de parámetros, contexto ni rendimiento en las fuentes consultadas, por lo que no se incluyen comparaciones cuantitativas que no puedan respaldarse.
 
@@ -96,7 +96,7 @@ No se dispone de datos numéricos verificados de los modelos comparables en la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/changshirley/blip-multitask
+- Repositorio en Hugging Face: https://huggingface.co/changshirley/blip-multitask
 - Perfil del autor: https://huggingface.co/changshirley
 - Otro repositorio del autor: https://huggingface.co/changshirley/blip-classification
 - Articulo divulgativo sobre BLIP: https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/

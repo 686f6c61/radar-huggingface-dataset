@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto / frames | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-fm-tm-ln2 | ~1,3B (15 bloques únicos / 30 ejecutados) | no disponible | no disponible | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1,3B | no disponible en esta ficha | Apache 2.0 (modelo base, según su card original) | HuggingFace, ampliamente utilizado |
-| Modelos text-to-video de mayor tamaño (p. ej. variantes de 5B-14B) | 5B-14B | mayor resolución y duración | variable | HuggingFace |
+| ducvh5/wan21-a5b5x4c5-fm-tm-ln2 | ~1,3B (15 bloques únicos / 30 ejecutados) | no disponible | no disponible | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | 1,3B | no disponible en esta ficha | Apache 2.0 (modelo base, según su card original) | Hugging Face, ampliamente utilizado |
+| Modelos text-to-video de mayor tamaño (p. ej. variantes de 5B-14B) | 5B-14B | mayor resolución y duración | variable | Hugging Face |
 
 La comparación directa con alternativas de la misma categoría (text-to-video de ~1,3B) es limitada porque no se han publicado métricas de este checkpoint. Frente al modelo base Wan2.1-T2V-1.3B, la diferencia principal es arquitectónica (recurrencia por bloques) y de estado de entrenamiento (paso 16.000), no de capacidades documentadas.
 
@@ -80,7 +80,7 @@ La comparación directa con alternativas de la misma categoría (text-to-video d
 
 ## Enlaces
 
-- [HuggingFace: ducvh5/wan21-a5b5x4c5-fm-tm-ln2](https://huggingface.co/ducvh5/wan21-a5b5x4c5-fm-tm-ln2)
+- [Hugging Face: ducvh5/wan21-a5b5x4c5-fm-tm-ln2](https://huggingface.co/ducvh5/wan21-a5b5x4c5-fm-tm-ln2)
 - [Modelo base: Wan-AI/Wan2.1-T2V-1.3B-Diffusers](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers)
 - [Repositorio oficial de Wan2.1 (GitHub)](https://github.com/Wan-Video/Wan2.1)
 - [Documentación de diffusers](https://huggingface.co/docs/diffusers)

@@ -84,7 +84,7 @@ Como referencia, el proyecto uusnistgov/alignn es un modelo de prediccion de pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/crhysc/alignn-csp-angular-ablations
+- Hugging Face: https://huggingface.co/crhysc/alignn-csp-angular-ablations
 - Repositorio Github con el estudio de ablacion, el codigo y la documentacion de provenance: https://github.com/crhysc/alignn-csp-ablation
 - Repositorio del paquete ALIGNN requerido para cargar los pesos, rama `lg-angle-diffusion-matrix`: https://github.com/crhysc/alignn
 - Repositorio original de ALIGNN del NIST: https://github.com/usnistgov/alignn

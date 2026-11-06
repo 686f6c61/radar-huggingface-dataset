@@ -75,7 +75,7 @@ No disponible. No se han proporcionado modelos comparables de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OSNFK/QwenImage2.1_Lora_BuildingExtraction_I2I_1.0
+- Modelo en Hugging Face: https://huggingface.co/OSNFK/QwenImage2.1_Lora_BuildingExtraction_I2I_1.0
 - Descarga de archivos: https://huggingface.co/OSNFK/QwenImage2.1_Lora_BuildingExtraction_I2I_1.0/tree/main
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Plantilla de workflow ComfyUI: https://huggingface.co/OSNFK/QwenImage2.1_Lora_BuildingExtraction_I2I_1.0/blob/main/QwenImage2.1_Lora_BuildingExtraction_I2I_1.0.json

@@ -19,7 +19,7 @@ Es un modelo especializado, no un asistente general: su objetivo es operar agent
 | Tipos de cuantizacion | No disponible (pesos exportados en safetensors de precision completa; sin GGUF publicado) |
 | Idiomas soportados | No disponible |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (layout de HuggingFace, 39 shards) |
+| Formato de pesos | safetensors (layout de Hugging Face, 39 shards) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | pass@1 held-out | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| snowball-67b-a2b-rl-r2egym-newstack-step48 | 67.078.882.816 | No disponible (entrenado hasta 49.152 tokens de prompt) | 0,580 same-repo / 0,603 unseen-repo | apache-2.0 | HuggingFace |
-| snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 (base) | 67.078.882.816 (presumiblemente identico) | No disponible | No disponible | No disponible | HuggingFace |
+| snowball-67b-a2b-rl-r2egym-newstack-step48 | 67.078.882.816 | No disponible (entrenado hasta 49.152 tokens de prompt) | 0,580 same-repo / 0,603 unseen-repo | apache-2.0 | Hugging Face |
+| snowball-67b-a2b-sft-s3-nemotron-terminal-step1888 (base) | 67.078.882.816 (presumiblemente identico) | No disponible | No disponible | No disponible | Hugging Face |
 | Otros modelos de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,10 +93,10 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step48
+- Modelo en Hugging Face: https://huggingface.co/laion/snowball-67b-a2b-rl-r2egym-newstack-step48
 - Modelo base SFT: https://huggingface.co/laion/snowball-67b-a2b-sft-s3-nemotron-terminal-step1888
 - Draft EAGLE-3: https://huggingface.co/laion/snowball-64k-eagle3-draft-r2egym
-- Organizacion LAION en HuggingFace: https://huggingface.co/laion
+- Organizacion LAION en Hugging Face: https://huggingface.co/laion
 - Web de LAION: https://laion.ai/
 - GitHub de LAION: https://github.com/LAION-AI
 - Wikipedia (LAION): https://en.wikipedia.org/wiki/LAION

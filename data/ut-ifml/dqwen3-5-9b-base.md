@@ -6,7 +6,7 @@ dQwen3.5-9B-Base es un modelo de lenguaje de difusion enmascarada (masked diffus
 
 La innovacion principal es su backbone hibrido: solo las capas de atencion se han convertido en bidireccionales, mientras que las capas Gated DeltaNet permanecen causales. El autor publica este diseno en el articulo "dQwen3.5: Hybrid-Attention Diffusion Language Models" (arXiv:2609.20751) y lo acompana de un repositorio de codigo propio. Se trata de un modelo base, sin ajuste por instrucciones, por lo que su uso previsto es la investigacion y el ajuste posterior, no el dialogo directo.
 
-El modelo forma parte de una familia con variantes de 0,75B, 1,88B, 4,21B y 8,95B parametros, ademas de un control con atencion completa (dQwen3-1.7B-Base). En el momento de redactar esta ficha acumula 795 descargas y 11 "me gusta" en HuggingFace, con ultima actualizacion el 23 de septiembre de 2026.
+El modelo forma parte de una familia con variantes de 0,75B, 1,88B, 4,21B y 8,95B parametros, ademas de un control con atencion completa (dQwen3-1.7B-Base). En el momento de redactar esta ficha acumula 795 descargas y 11 "me gusta" en Hugging Face, con ultima actualizacion el 23 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -70,12 +70,12 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros totales | Backbone | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dQwen3.5-9B-Base | 8,95B | Hibrido (atencion bidireccional + Gated DeltaNet causal) | Apache 2.0 | HuggingFace, `transformers` con codigo personalizado |
-| dQwen3.5-4B-Base | 4,21B | Hibrido | No indicada en la informacion disponible | HuggingFace (UT-IFML) |
-| dQwen3.5-2B-Base | 1,88B | Hibrido | No indicada en la informacion disponible | HuggingFace (UT-IFML) |
-| dQwen3.5-0.8B-Base | 0,75B | Hibrido | No indicada en la informacion disponible | HuggingFace (UT-IFML) |
-| dQwen3-1.7B-Base | 1,72B | Atencion completa (control) | No indicada en la informacion disponible | HuggingFace (UT-IFML) |
-| Qwen/Qwen3.5-9B | No disponible | No disponible | No disponible | HuggingFace (modelo base del que deriva) |
+| dQwen3.5-9B-Base | 8,95B | Hibrido (atencion bidireccional + Gated DeltaNet causal) | Apache 2.0 | Hugging Face, `transformers` con codigo personalizado |
+| dQwen3.5-4B-Base | 4,21B | Hibrido | No indicada en la informacion disponible | Hugging Face (UT-IFML) |
+| dQwen3.5-2B-Base | 1,88B | Hibrido | No indicada en la informacion disponible | Hugging Face (UT-IFML) |
+| dQwen3.5-0.8B-Base | 0,75B | Hibrido | No indicada en la informacion disponible | Hugging Face (UT-IFML) |
+| dQwen3-1.7B-Base | 1,72B | Atencion completa (control) | No indicada en la informacion disponible | Hugging Face (UT-IFML) |
+| Qwen/Qwen3.5-9B | No disponible | No disponible | No disponible | Hugging Face (modelo base del que deriva) |
 
 No se dispone de datos de benchmarks ni de contexto de las alternativas, por lo que la comparacion se limita a parametros, arquitectura y disponibilidad.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks ni de contexto de las alternativas, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UT-IFML/dQwen3.5-9B-Base
+- Modelo en Hugging Face: https://huggingface.co/UT-IFML/dQwen3.5-9B-Base
 - Articulo: https://arxiv.org/abs/2609.20751
 - Codigo: https://github.com/AntonXue/dQwen
 - Variante 0.8B: https://huggingface.co/UT-IFML/dQwen3.5-0.8B-Base

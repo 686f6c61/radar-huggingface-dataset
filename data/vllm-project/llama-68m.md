@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama-68m es un modelo de lenguaje de tipo LLaMA con 68 millones de parámetros, entrenado sobre Wikipedia y partes de los conjuntos C4-en y C4-realnewslike. Fue desarrollado originalmente por JackFram y esta copia concreta la mantiene el proyecto vLLM en su organizacion de HuggingFace para uso interno en sus pipelines de integracion continua. No es un modelo pensado para produccion ni para tareas generativas generales, sino un *base model* de proposito especifico.
+llama-68m es un modelo de lenguaje de tipo LLaMA con 68 millones de parámetros, entrenado sobre Wikipedia y partes de los conjuntos C4-en y C4-realnewslike. Fue desarrollado originalmente por JackFram y esta copia concreta la mantiene el proyecto vLLM en su organizacion de Hugging Face para uso interno en sus pipelines de integracion continua. No es un modelo pensado para produccion ni para tareas generativas generales, sino un *base model* de proposito especifico.
 
 Su relevancia tecnica radica en su papel como modelo borrador (*Small Speculative Model*) en SpecInfer, una tecnica de inferencia especulativa que acelera el servicio de LLMs grandes mediante la generacion de candidatos con un modelo pequeno y su verificacion con un modelo grande. Con solo 68M de parametros, su huella de memoria es minima (el repositorio ocupa 0,8 GB), lo que lo hace idoneo para experimentacion con decodificacion especulativa, pruebas de infraestructura y validacion de pipelines de servido.
 
@@ -74,7 +74,7 @@ Las tareas de Aritmetica y SocialIQA fallaron durante la ejecucion por incompati
 - VRAM estimada para inferencia: aproximadamente 0,3 GB en precision FP16 (68M parametros x 2 bytes), y alrededor de 0,15 GB en cuantizacion de 4 bits. El repositorio completo ocupa 0,8 GB.
 - GPU recomendadas: cualquier GPU moderna es suficiente; el modelo cabe incluso en GPUs integradas o en CPU.
 - Cabe en cualquier GPU de consumo: RTX 4090, RTX 3090, RTX 3060, e incluso en tarjetas con 2 GB de VRAM.
-- Opciones de despliegue: vLLM (uso principal, dado el origen del repositorio), llama.cpp, Ollama, TGI, HuggingFace Transformers.
+- Opciones de despliegue: vLLM (uso principal, dado el origen del repositorio), llama.cpp, Ollama, TGI, Hugging Face Transformers.
 - Latencia y throughput: no se reportan datos especificos. Por su tamano, se espera una latencia muy baja y un throughput alto en hardware moderno, pero no hay cifras oficiales disponibles.
 
 ## Comparativa con modelos similares
@@ -102,8 +102,8 @@ La comparativa se limita a la familia de modelos borrador de JackFram, ya que no
 
 ## Enlaces
 
-- HuggingFace (copia vLLM): https://huggingface.co/vllm-project/llama-68m
-- HuggingFace (original): https://huggingface.co/JackFram/llama-68m
+- Hugging Face (copia vLLM): https://huggingface.co/vllm-project/llama-68m
+- Hugging Face (original): https://huggingface.co/JackFram/llama-68m
 - Paper SpecInfer: https://arxiv.org/abs/2305.09781
 - Repositorio vLLM: https://github.com/vllm-project/vllm
 - Repositorio SpecInfer: https://github.com/flexflow/FlexFlow

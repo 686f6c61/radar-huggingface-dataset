@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mcsplain/Qwen3.6-27B-oQ6-mtp` contiene un modelo de la familia Qwen, aparentemente una versión cuantizada a 6 bits (oQ6) con soporte de Multi-Token Prediction (MTP). Sin embargo, la model card incluida describe el modelo **Qwen3.8-27B**, lo que genera una discrepancia entre el nombre del repositorio y el contenido documentado. Según los metadatos de HuggingFace, el pipeline es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imágenes y vídeo además de texto.
+El repositorio `mcsplain/Qwen3.6-27B-oQ6-mtp` contiene un modelo de la familia Qwen, aparentemente una versión cuantizada a 6 bits (oQ6) con soporte de Multi-Token Prediction (MTP). Sin embargo, la model card incluida describe el modelo **Qwen3.8-27B**, lo que genera una discrepancia entre el nombre del repositorio y el contenido documentado. Según los metadatos de Hugging Face, el pipeline es `image-text-to-text`, lo que indica que se trata de un modelo multimodal capaz de procesar imágenes y vídeo además de texto.
 
 El modelo está diseñado para tareas de codificación, trabajo profesional, investigación y ejecución de agentes de larga duración. Presenta una arquitectura híbrida que combina atención lineal (Gated DeltaNet) con atención clásica (Gated Attention), y ofrece control flexible del razonamiento (thinking mode). La licencia es Apache 2.0, lo que permite uso comercial sin restricciones significativas.
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mcsplain/Qwen3.6-27B-oQ6-mtp
+- Repositorio en Hugging Face: https://huggingface.co/mcsplain/Qwen3.6-27B-oQ6-mtp
 - Qwen Cloud (servicio gestionado, mencionado en la model card): https://www.qwencloud.com
 - Página del modelo Qwen3.8-27B en Qwen Cloud: https://www.qwencloud.com/models/qwen3.8-27b

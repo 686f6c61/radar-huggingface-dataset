@@ -74,5 +74,5 @@ No disponible. Al tratarse de un prototipo de investigacion con 33.088 parametro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kum-aaar/efficientformer-matching-small-2024
+- Hugging Face: https://huggingface.co/Kum-aaar/efficientformer-matching-small-2024
 - No se han encontrado enlaces adicionales (paper, blog, repo externo) en la busqueda web.

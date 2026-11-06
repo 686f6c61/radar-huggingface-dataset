@@ -75,9 +75,9 @@ El autor indica que el cribado numérico congelado no se superó: no se alcanzó
 
 | Modelo | Parámetros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AXDocLayout-M-v1.5 | 42,9 M | imagen 640x640 | Apache-2.0 | HuggingFace (repo privado con acceso autorizado) |
-| docling-layout-heron (modelo base) | no disponible | no disponible | Apache-2.0 | HuggingFace (docling-project) |
-| Versión pública v1.0 de AX-DocLayout (11 clases) | no disponible | no disponible | no disponible | HuggingFace (AutomatosX) |
+| AXDocLayout-M-v1.5 | 42,9 M | imagen 640x640 | Apache-2.0 | Hugging Face (repo privado con acceso autorizado) |
+| docling-layout-heron (modelo base) | no disponible | no disponible | Apache-2.0 | Hugging Face (docling-project) |
+| Versión pública v1.0 de AX-DocLayout (11 clases) | no disponible | no disponible | no disponible | Hugging Face (AutomatosX) |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento. El autor advierte explícitamente de que este modelo no debe interpretarse como superior a D5, D6 o H7, ya que sus paneles de evaluación están definidos de forma distinta y no son comparables por resta directa de puntuaciones.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AXDocLayout-M-v1.5-CUDA-TF32
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AXDocLayout-M-v1.5-CUDA-TF32
 - Modelo base: https://huggingface.co/docling-project/docling-layout-heron
 - Repositorio Docling (proyecto upstream): https://github.com/docling-project/docling
 - PyTorch con CUDA 12.9: https://download.pytorch.org/whl/cu129

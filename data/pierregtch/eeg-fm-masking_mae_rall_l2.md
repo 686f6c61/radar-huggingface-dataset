@@ -95,9 +95,9 @@ No se dispone de datos de otros modelos fundacionales de EEG (LaBraM, BIOT, EEGP
 
 | Modelo | Framework | Geometria de mascara | Parametros del encoder | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eeg-fm-masking_mae_rall_L2` (este) | MAE | `r = all`, `L = 2`, `pct_unmasked = 0.45` | 12,69 M | CC-BY-4.0 | HuggingFace, 1 checkpoint de encoder |
-| `eeg-fm-masking_mae_r9cm_L2` | MAE | `r = 9 cm`, `L = 2` (segun el nombre del checkpoint) | no disponible en la informacion proporcionada | CC-BY-4.0 | HuggingFace; recomendado por el articulo |
-| `eeg-fm-masking_jepa_r9cm_L2` | JEPA | `r = 9 cm`, `L = 2` (segun el nombre del checkpoint) | no disponible en la informacion proporcionada | CC-BY-4.0 | HuggingFace; recomendado por el articulo |
+| `eeg-fm-masking_mae_rall_L2` (este) | MAE | `r = all`, `L = 2`, `pct_unmasked = 0.45` | 12,69 M | CC-BY-4.0 | Hugging Face, 1 checkpoint de encoder |
+| `eeg-fm-masking_mae_r9cm_L2` | MAE | `r = 9 cm`, `L = 2` (segun el nombre del checkpoint) | no disponible en la informacion proporcionada | CC-BY-4.0 | Hugging Face; recomendado por el articulo |
+| `eeg-fm-masking_jepa_r9cm_L2` | JEPA | `r = 9 cm`, `L = 2` (segun el nombre del checkpoint) | no disponible en la informacion proporcionada | CC-BY-4.0 | Hugging Face; recomendado por el articulo |
 
 Advertencia: el articulo recomienda `r = 9 cm, L = 2`, no la celda `r = all` que describe esta ficha. Si el objetivo es obtener el mejor rendimiento segun los autores, deben evaluarse los checkpoints recomendados.
 
@@ -117,7 +117,7 @@ Advertencia: el articulo recomienda `r = 9 cm, L = 2`, no la celda `r = all` que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L2
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_rall_L2
 - Sitio web del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Codigo fuente (MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Coleccion con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

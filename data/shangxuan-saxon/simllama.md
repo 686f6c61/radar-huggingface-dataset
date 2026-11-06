@@ -90,7 +90,7 @@ La informacion disponible solo permite comparar con el modelo base Moonbeam 839M
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shangxuan-saxon/SimLlama
+- Modelo en Hugging Face: https://huggingface.co/shangxuan-saxon/SimLlama
 - Repositorio de codigo, entrenamiento y evaluacion: https://github.com/ShxLuo-Saxon/simllama
 - Dataset de estructura de Super Mario: https://github.com/ShxLuo-Saxon/supermario-structure-dataset
 - Paper (preprint): https://arxiv.org/abs/2611.01047

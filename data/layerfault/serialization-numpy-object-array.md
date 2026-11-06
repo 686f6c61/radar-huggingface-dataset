@@ -67,7 +67,7 @@ No disponible. No existe categoria de modelos con la que comparar, ya que no es 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/serialization-numpy-object-array
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/serialization-numpy-object-array
 - Proyecto Layerfault en GitHub: https://github.com/izm1chael/layerfault
 - Documentacion de ModelScan sobre ataques de serializacion: https://deepwiki.com/protectai/modelscan/7-model-serialization-attacks
 - Guia de OWASP para operaciones seguras de modelos de IA: https://cheatsheetseries.owasp.org/cheatsheets/Secure_AI_Model_Ops_Cheat_Sheet.html

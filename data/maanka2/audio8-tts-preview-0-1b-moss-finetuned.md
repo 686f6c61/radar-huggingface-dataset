@@ -80,7 +80,7 @@ La tabla de escala publicada por Audio8 indica que este modelo es significativam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-moss-finetuned
+- Modelo en Hugging Face: https://huggingface.co/maanka2/Audio8-TTS-Preview-0.1b-moss-finetuned
 - Modelo original (Audio8): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.1b
 - Repositorio GitHub: https://github.com/Audio8-AI/Audio8_TTS
 - Demo con muestras de audio: https://audio8-ai.github.io/Audio8_TTS/0.1B/

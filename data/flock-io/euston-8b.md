@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flock-io/Euston-8B | 8B | No disponible | Verificacion de afirmaciones matematicas / anti-sycophancy | MIT | HuggingFace, safetensors BF16 |
-| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B (modelo base) | 8B | No disponible | Razonamiento general y matematicas | No disponible | HuggingFace |
+| flock-io/Euston-8B | 8B | No disponible | Verificacion de afirmaciones matematicas / anti-sycophancy | MIT | Hugging Face, safetensors BF16 |
+| deepseek-ai/DeepSeek-R1-0528-Qwen3-8B (modelo base) | 8B | No disponible | Razonamiento general y matematicas | No disponible | Hugging Face |
 | Otros verificadores matematicos de ~8B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de rendimiento comparativos en la informacion proporcionada, por lo que la comparacion se limita a parametros, licencia y disponibilidad.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flock-io/Euston-8B
+- Modelo en Hugging Face: https://huggingface.co/flock-io/Euston-8B
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-0528-Qwen3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/MathArena
 - Paper de GraphSynth: https://aclanthology.org/2026.acl-long.1969/

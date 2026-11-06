@@ -69,9 +69,9 @@ El tokenizador PRPE supera a esta linea base en +68,7% BLEU y +17,0% chrF. No se
 
 | Modelo | Parametros | Contexto | BLEU (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| quechua-chanka-mt-bpe (este) | 15,6M | no disponible | 4,18 | Apache 2.0 | HuggingFace |
-| quechua-chanka-mt-prpe | no disponible | no disponible | 7,05 | no disponible | HuggingFace |
-| NLLB-200 (variante pequena) | 600M (distilled) | 512 tokens | no disponible para es-qu | CC-BY-NC 4.0 | HuggingFace |
+| quechua-chanka-mt-bpe (este) | 15,6M | no disponible | 4,18 | Apache 2.0 | Hugging Face |
+| quechua-chanka-mt-prpe | no disponible | no disponible | 7,05 | no disponible | Hugging Face |
+| NLLB-200 (variante pequena) | 600M (distilled) | 512 tokens | no disponible para es-qu | CC-BY-NC 4.0 | Hugging Face |
 
 No se dispone de datos comparativos adicionales con otros modelos especificos de espanol→quechua en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos adicionales con otros modelos especificos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makitty/quechua-chanka-mt-bpe
+- Modelo en Hugging Face: https://huggingface.co/makitty/quechua-chanka-mt-bpe
 - Modelo comparado (PRPE): https://huggingface.co/makitty/quechua-chanka-mt-prpe
 - Dataset de entrenamiento: https://huggingface.co/datasets/makitty/quechua-chanka-unified-v2
 - Paper QuechuaTok: https://arxiv.org/abs/2606.23943

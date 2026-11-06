@@ -184,7 +184,7 @@ El autor indica explícitamente que la variante fusionada sacrifica algo de prec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama
+- Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B-ollama
 - Bundle de adaptadores LoRA: https://huggingface.co/selorahomes/Selora-AI-LLM-1.7B
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de modelos y pipeline de datos: https://gitlab.com/selorahomes/products/selora-ai/models

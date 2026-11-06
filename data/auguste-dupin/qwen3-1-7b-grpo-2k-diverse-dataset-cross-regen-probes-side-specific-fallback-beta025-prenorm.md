@@ -4,7 +4,7 @@
 
 El modelo `Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-prenorm` es un fine-tune experimental del modelo base Qwen3-1.7B, desarrollado por el usuario Auguste-Dupin. Se trata de un ajuste fino que utiliza GRPO (Group Relative Policy Optimization), una técnica de optimización de políticas basada en RLHF, aplicada sobre un dataset diverso de aproximadamente 2.000 ejemplos. El nombre sugiere el uso de estrategias avanzadas como cross-regen (regeneración cruzada), probes side-specific (sondas específicas por lado) y un fallback dependiente del lado, con un coeficiente beta de 0.25 y prenormalización.
 
-El modelo se publica en HuggingFace con un repositorio de 0.2 GB, en formato safetensors y está etiquetado con unsloth y transformers. Aunque la model card no proporciona detalles técnicos, el interés del modelo radica en explorar variantes de entrenamiento con GRPO sobre modelos pequeños, lo que puede ser relevante para la investigación en optimización de políticas y técnicas de alineación eficientes. Actualmente no se dispone de información sobre su rendimiento, licencia o idiomas soportados.
+El modelo se publica en Hugging Face con un repositorio de 0.2 GB, en formato safetensors y está etiquetado con unsloth y transformers. Aunque la model card no proporciona detalles técnicos, el interés del modelo radica en explorar variantes de entrenamiento con GRPO sobre modelos pequeños, lo que puede ser relevante para la investigación en optimización de políticas y técnicas de alineación eficientes. Actualmente no se dispone de información sobre su rendimiento, licencia o idiomas soportados.
 
 ## Especificaciones tecnicas
 
@@ -56,16 +56,16 @@ No se especifican requisitos de hardware. Dado que el modelo tiene aproximadamen
 - **VRAM estimada**: para una inferencia en fp16, un modelo de 1.7B requiere unos 3-4 GB de VRAM; con cuantizaciones de 4 bits podría reducirse a ~1 GB.
 - **GPU recomendadas**: tarjetas consumer como RTX 3060 (12 GB) o RTX 4090 serían suficientes; también es factible en CPU con llama.cpp.
 - **Compatibilidad con consumer GPU**: sí, dado su tamaño reducido.
-- **Opciones de despliegue**: compatible con vLLM, llama.cpp, Ollama, TGI y transformers de HuggingFace, al estar en formato safetensors.
+- **Opciones de despliegue**: compatible con vLLM, llama.cpp, Ollama, TGI y transformers de Hugging Face, al estar en formato safetensors.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-1.7B (base) | 1.7B | 32K (según Qwen3) | Apache 2.0 | HuggingFace |
-| Auguste-Dupin/Qwen3-1.7B-GRPO... | 1.7B | no disponible | no disponible | HuggingFace |
-| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 license | HuggingFace |
+| Qwen3-1.7B (base) | 1.7B | 32K (según Qwen3) | Apache 2.0 | Hugging Face |
+| Auguste-Dupin/Qwen3-1.7B-GRPO... | 1.7B | no disponible | no disponible | Hugging Face |
+| Llama-3.2-1B | 1.2B | 128K | Llama 3.2 license | Hugging Face |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento del modelo evaluado. Se recomienda comparar con el Qwen3-1.7B base y con otros fine-tunes de la misma familia para evaluar el impacto del entrenamiento con GRPO.
 
@@ -80,7 +80,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del mode
 
 ## Enlaces
 
-- [HuggingFace: Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-prenorm](https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-prenorm)
+- [Hugging Face: Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-prenorm](https://huggingface.co/Auguste-Dupin/Qwen3-1.7B-GRPO-2k-diverse-dataset-cross-regen-probes-side-specific-fallback-beta025-prenorm)
 - [Qwen/Qwen3-1.7B (modelo base)](https://huggingface.co/Qwen/Qwen3-1.7B)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
 - [Repositorio oficial de Qwen3 en GitHub](https://github.com/QwenLM/Qwen3)

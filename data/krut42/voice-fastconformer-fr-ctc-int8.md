@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comunes (MMLU, HumanEval, GSM8K) porque el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/krut42/voice-fastconformer-fr-ctc-int8
+- Modelo en Hugging Face: https://huggingface.co/krut42/voice-fastconformer-fr-ctc-int8
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_fr_fastconformer_hybrid_large_pc
 - Exportación ONNX en fp32 de OpenVoiceOS: https://huggingface.co/OpenVoiceOS/stt_fr_fastconformer_hybrid_large_pc_onnx
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

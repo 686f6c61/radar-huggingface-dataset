@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelwhitefield/contrastive` es un repositorio de HuggingFace publicado por el usuario michaelwhitefield que contiene una implementación funcional de la arquitectura Flamingo orientada a aprendizaje contrastivo, en una configuración declarada como "xlarge". Se trata de un artefacto experimental y no de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para "smoke tests" y que no se reclama ninguna puntuación de benchmark. El repositorio fue creado el 7 de octubre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
+`michaelwhitefield/contrastive` es un repositorio de Hugging Face publicado por el usuario michaelwhitefield que contiene una implementación funcional de la arquitectura Flamingo orientada a aprendizaje contrastivo, en una configuración declarada como "xlarge". Se trata de un artefacto experimental y no de un modelo entrenado: el propio autor indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para "smoke tests" y que no se reclama ninguna puntuación de benchmark. El repositorio fue creado el 7 de octubre de 2026 y, en el momento de la consulta, acumula 0 descargas y 0 "likes".
 
 El dato más llamativo es su tamaño: 49.600 parámetros totales según el propio archivo safetensors. Esa cifra es incompatible con cualquier noción de escala "xlarge" en el sentido habitual del término y confirma que se trata de un esqueleto de código reproducible, no de un modelo con capacidad generativa real. La relevancia de este repositorio es, por tanto, didáctica y de ingeniería: sirve como plantilla transparente para reproducir el patrón Flamingo (atención dilatada, fusión tensorial, activación ReLU, normalización LayerNorm) y como punto de partida para experimentos controlados.
 
@@ -75,5 +75,5 @@ No disponible. El repositorio no es comparable con modelos desplegables de la fa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/michaelwhitefield/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/michaelwhitefield/contrastive
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios auxiliares o demos asociados.

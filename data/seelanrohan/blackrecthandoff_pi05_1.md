@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `seelanrohan/blackRectHandoff_pi05_1` | Pi0.5 (VLA) | no disponible (repo 244.8 GB) | no disponible | no disponible | HuggingFace |
+| `seelanrohan/blackRectHandoff_pi05_1` | Pi0.5 (VLA) | no disponible (repo 244.8 GB) | no disponible | no disponible | Hugging Face |
 | Pi0.5 base (Physical Intelligence) | Pi0.5 (VLA) | no publicado oficialmente | no disponible | no disponible (uso investigacion) | OpenPI, Qualcomm AI Hub |
-| OpenVLA (openvla/openvla-7b) | VLA basado en Prismatic (LLaMA-2 7B) | 7B | 2048 | MIT | HuggingFace |
+| OpenVLA (openvla/openvla-7b) | VLA basado en Prismatic (LLaMA-2 7B) | 7B | 2048 | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. La comparativa se limita a características arquitectónicas y de disponibilidad. Pi0.5 es más reciente y está diseñado para manipulación diestra, mientras que OpenVLA es un modelo más antiguo y generalista. Este checkpoint concreto es un fine-tuning de Pi0.5 para una tarea específica, por lo que su rendimiento en handoff podría ser superior al de un modelo generalista, pero no hay métricas que lo confirmen.
 
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/seelanrohan/blackRectHandoff_pi05_1
+- Repositorio Hugging Face: https://huggingface.co/seelanrohan/blackRectHandoff_pi05_1
 - Perfil del autor: https://huggingface.co/seelanrohan/models
 - Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05
 - OpenPI (librería de modelos VLA de Physical Intelligence): https://www.openpi.net/english.html

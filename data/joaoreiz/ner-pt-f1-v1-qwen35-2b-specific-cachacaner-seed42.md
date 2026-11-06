@@ -79,6 +79,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed42
+- Repositorio Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-cachacaner-seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

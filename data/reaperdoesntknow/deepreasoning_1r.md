@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 |---|---|---|---|---|---|
 | DeepReasoning_1R | 494M | no disponible | no disponible | safetensors | Fine-tuning de Qwen2.5-0.5B-Instruct con DPO |
 | Qwen2.5-0.5B-Instruct | 494M | 32K (según documentación oficial de Qwen) | Apache 2.0 | safetensors | Modelo base, sin fine-tuning específico de razonamiento |
-| SmolLM2-360M-Instruct | 360M | 8K | Apache 2.0 | safetensors | Modelo pequeño orientado a instrucciones, de HuggingFace |
+| SmolLM2-360M-Instruct | 360M | 8K | Apache 2.0 | safetensors | Modelo pequeño orientado a instrucciones, de Hugging Face |
 
 La comparativa se basa en datos públicos de los modelos base. DeepReasoning_1R se diferencia por su entrenamiento específico con DPO sobre un dataset de conversación humana, pero carece de documentación sobre contexto y licencia, lo que dificulta una evaluación completa frente a alternativas más establecidas.
 
@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de los modelos base. DeepReasoning_1R 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reaperdoesntknow/DeepReasoning_1R
+- Repositorio Hugging Face: https://huggingface.co/reaperdoesntknow/DeepReasoning_1R
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
 - Página del modelo en FriendliAI: https://friendli.ai/models/reaperdoesntknow/DeepReasoning_1R
 - Documento "Structure Over Scale" (DOI: 10.57967/hf/8165): https://doi.org/10.57967/hf/8165

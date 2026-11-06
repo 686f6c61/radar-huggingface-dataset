@@ -10,7 +10,7 @@ Aunque el nombre sugiere que el modelo procesa texto en japonés, no se han publ
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (según tags de HuggingFace) |
+| Arquitectura | GPT-2 (según tags de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible |

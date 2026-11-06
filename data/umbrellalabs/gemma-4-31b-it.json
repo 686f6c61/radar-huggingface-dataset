@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "UmbrellaLABS/gemma-4-31B-it",
+  "slug": "umbrellalabs-gemma-4-31b-it",
+  "author": "UmbrellaLABS",
+  "url": "https://huggingface.co/UmbrellaLABS/gemma-4-31B-it",
+  "created_at": "2026-11-06T10:43:32.000Z",
+  "updated_at": "2026-11-06T10:43:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B",
+    "base_model:finetune:google/gemma-4-31B",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507874,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-31B-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-31B-it",
+      "snippet": "Image-Text-to-Text model with 31B parameters, built with Transformers. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Run Gemma 4 31B IT Locally: Step-by-Step Tutorial — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-gemma-4-31b-it-local-multimodal-reasoning",
+      "snippet": "Tutorial on deploying Gemma 4 31B IT for local multimodal AI. Learn to install Transformers, load the model, and run text+image inference."
+    }
+  ]
+}

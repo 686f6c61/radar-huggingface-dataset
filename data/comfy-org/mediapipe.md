@@ -63,5 +63,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Comfy-Org/mediapipe
+- Repositorio en Hugging Face: https://huggingface.co/Comfy-Org/mediapipe
 - Repositorio original de MediaPipe: https://github.com/google-ai-edge/mediapipe

@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-MPOA-heretic-MLX-4bit | 7.615.616.512 | no disponible | 4-bit MLX | Apache 2.0 | HuggingFace, 0 descargas |
-| richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic (fuente) | ~7.6B | no disponible | bf16 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct (original) | ~7.6B | no disponible | bf16 y otras | Apache 2.0 | HuggingFace, ampliamente usado |
+| Qwen2.5-7B-Instruct-MPOA-heretic-MLX-4bit | 7.615.616.512 | no disponible | 4-bit MLX | Apache 2.0 | Hugging Face, 0 descargas |
+| richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic (fuente) | ~7.6B | no disponible | bf16 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct (original) | ~7.6B | no disponible | bf16 y otras | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación se limita a la cadena de derivación del propio modelo, ya que la información disponible no incluye datos de rendimiento ni de contexto que permitan contrastarlo con alternativas de otros autores.
 
@@ -83,7 +83,7 @@ La comparación se limita a la cadena de derivación del propio modelo, ya que l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic-MLX-4bit
+- Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic-MLX-4bit
 - Modelo fuente: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-MPOA-heretic
 - Modelo original: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería MLX: https://github.com/ml-explore/mlx

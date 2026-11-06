@@ -72,7 +72,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El adaptado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l5
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gr3-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Adapter SFT requerido: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l5
 - Paper citado (sin enlace directo): *Chain-of-Thought Compression Dialects*, Frolov, Anatolii, 2026.

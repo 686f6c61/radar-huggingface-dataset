@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **See-the-Invisible-with-SWIR** es un sistema de mejora de imágenes de infrarrojo de onda corta (SWIR) mediante denoising basado en aprendizaje profundo. Desarrollado por Haiyang Jiang, Hongjun Wang y Yinqiang Zheng, y presentado en el ICCV 2025 Workshop Responsible Imaging, aborda el problema del ruido inherente a los sensores SWIR de InGaAs, que degrada la calidad de las imágenes en aplicaciones como vigilancia nocturna o inspección industrial. La arquitectura empleada es una U-Net residual de dos etapas con FPN, entrenada con modelos de ruido sintético (P-G, ELD y SFRN) para generalizar a condiciones reales. El repositorio oficial en HuggingFace (Michael-Jiang/See-the-Invisible-with-SWIR) contiene los checkpoints de todos los experimentos publicados, junto con metadatos de verificación y documentación de procedencia. La licencia es MIT, lo que permite uso comercial y modificación, aunque los datos de entrenamiento (imágenes SID) no se redistribuyen.
+El modelo **See-the-Invisible-with-SWIR** es un sistema de mejora de imágenes de infrarrojo de onda corta (SWIR) mediante denoising basado en aprendizaje profundo. Desarrollado por Haiyang Jiang, Hongjun Wang y Yinqiang Zheng, y presentado en el ICCV 2025 Workshop Responsible Imaging, aborda el problema del ruido inherente a los sensores SWIR de InGaAs, que degrada la calidad de las imágenes en aplicaciones como vigilancia nocturna o inspección industrial. La arquitectura empleada es una U-Net residual de dos etapas con FPN, entrenada con modelos de ruido sintético (P-G, ELD y SFRN) para generalizar a condiciones reales. El repositorio oficial en Hugging Face (Michael-Jiang/See-the-Invisible-with-SWIR) contiene los checkpoints de todos los experimentos publicados, junto con metadatos de verificación y documentación de procedencia. La licencia es MIT, lo que permite uso comercial y modificación, aunque los datos de entrenamiento (imágenes SID) no se redistribuyen.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ El modelo se basa en una U-Net residual de dos etapas, con una pirámide de cara
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper del ICCV 2025 presenta evaluaciones cualitativas y cuantitativas, pero los números específicos no están incluidos en la ficha de HuggingFace ni en los resultados de búsqueda web consultados.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper del ICCV 2025 presenta evaluaciones cualitativas y cuantitativas, pero los números específicos no están incluidos en la ficha de Hugging Face ni en los resultados de búsqueda web consultados.
 
 ## Requisitos de hardware
 
@@ -65,7 +65,7 @@ No se dispone de información sobre comparativas con otros modelos de denoising 
 
 ## Enlaces
 
-- [HuggingFace - Michael-Jiang/See-the-Invisible-with-SWIR](https://huggingface.co/Michael-Jiang/See-the-Invisible-with-SWIR)
+- [Hugging Face - Michael-Jiang/See-the-Invisible-with-SWIR](https://huggingface.co/Michael-Jiang/See-the-Invisible-with-SWIR)
 - [GitHub - MichaelHYJiang/See-the-Invisible-with-SWIR](https://github.com/MichaelHYJiang/See-the-Invisible-with-SWIR)
 - [Paper en ICCV 2025 Workshop](https://openaccess.thecvf.com/content/ICCV2025W/Responsible-Imaging/html/Jiang_See_the_Invisible_with_SWIR_Learning_to_Enhance_via_Synthetic_ICCVW_2025_paper.html)
 - [Artículo en IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/11375423)

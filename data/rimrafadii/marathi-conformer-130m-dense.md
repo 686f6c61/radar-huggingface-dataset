@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| marathi-conformer-130m-dense | 130,8M | no disponible | MIT | HuggingFace |
+| marathi-conformer-130m-dense | 130,8M | no disponible | MIT | Hugging Face |
 | Sparse MoE Conformer (mismo autor) | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de terceros | no disponible | no disponible | no disponible | no disponible |
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni especificaciones de modelos comparables 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rimrafadii/marathi-conformer-130m-dense
+- Hugging Face: https://huggingface.co/rimrafadii/marathi-conformer-130m-dense
 - Dataset RESPIN-IISc: https://huggingface.co/datasets/rimrafadii/respin-iisc
 - Dataset Kathbath: https://huggingface.co/datasets/ai4bharat/Kathbath
 - Dataset Vaani: https://huggingface.co/datasets/ARTPARK-IISc/Vaani

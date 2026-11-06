@@ -90,7 +90,7 @@ La principal diferencia frente al base es la reducción de parámetros (29B vs 3
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/barozp/Qwen3.6-29B-REAP-Opus-Distill-MTPLX-3bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/barozp/Qwen3.6-29B-REAP-Opus-Distill-MTPLX-3bit
 - Modelo base (safetensors bf16): https://huggingface.co/barozp/Qwen3.6-29B-REAP-Opus-Reasoning-Distill-MTP
 - Versión GGUF para llama.cpp/Ollama: https://huggingface.co/barozp/Qwen3.6-29B-REAP-Opus-Reasoning-Distill-MTP-GGUF
 - Modelo podado sin LoRA: https://huggingface.co/RangerX/Qwen3.6-35B-REAP-Pruned-ratio-0.2

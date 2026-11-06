@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bubskee/qwen3.5-4b-s-lenses | Artefactos S-lens sobre Qwen3.5-4B | 4B (base); 2 tensores [32, 2560, 2560] | No disponible | Apache 2.0 | HuggingFace |
-| bubskee/qwen3.5-4b-r-jpp-lenses | Artefactos R/J++ sobre Qwen3.5-4B (lectura hacia vocabulario de salida) | 4B (base) | No disponible | No disponible en la informacion | HuggingFace |
-| bubskee/qwen3.5-4b-o-lenses | Lectores experimentales activación-a-texto en L26 y L30 | 4B (base) | No disponible | No disponible en la informacion | HuggingFace |
+| bubskee/qwen3.5-4b-s-lenses | Artefactos S-lens sobre Qwen3.5-4B | 4B (base); 2 tensores [32, 2560, 2560] | No disponible | Apache 2.0 | Hugging Face |
+| bubskee/qwen3.5-4b-r-jpp-lenses | Artefactos R/J++ sobre Qwen3.5-4B (lectura hacia vocabulario de salida) | 4B (base) | No disponible | No disponible en la informacion | Hugging Face |
+| bubskee/qwen3.5-4b-o-lenses | Lectores experimentales activación-a-texto en L26 y L30 | 4B (base) | No disponible | No disponible en la informacion | Hugging Face |
 
 Los tres paquetes comparten la misma revisión fijada del modelo base (`851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`) pero responden a preguntas distintas: los S-lens miran qué tokens de entrada dejan huella en una dirección interna, los R/J++ miran hacia el vocabulario de salida y los O-lens ofrecen lectores activación-a-texto en capas concretas.
 
@@ -85,7 +85,7 @@ Los tres paquetes comparten la misma revisión fijada del modelo base (`851bf6e8
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bubskee/qwen3.5-4b-s-lenses
+- Repositorio Hugging Face: https://huggingface.co/bubskee/qwen3.5-4b-s-lenses
 - Notebook de Colab: https://huggingface.co/bubskee/qwen3.5-4b-s-lenses/resolve/v0.1-64docs-exploratory/colab.ipynb?download=true
 - Release relacionada R/J++: https://huggingface.co/bubskee/qwen3.5-4b-r-jpp-lenses
 - Release relacionada O-lenses: https://huggingface.co/bubskee/qwen3.5-4b-o-lenses

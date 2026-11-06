@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/skillsafe-ai/gemma-4-E2B-it-slim
+- Pagina de Hugging Face del modelo: https://huggingface.co/skillsafe-ai/gemma-4-E2B-it-slim
 - Modelo base: https://huggingface.co/litert-community/gemma-4-E2B-it-litert-lm
 - Aplicacion Local Character: https://local-character.skillsafe.ai
 - La busqueda web realizada no ha devuelto enlaces relevantes: los resultados obtenidos correspondian a sitios de contenido para adultos sin relacion alguna con el modelo, por lo que se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diyaxkumar/matching-v2` es un repositorio de HuggingFace publicado por el usuario `diyaxkumar` que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). El repositorio incluye un script principal (`predict.py`), ficheros de configuracion (`config.json`, `training_args.json`), un README y un checkpoint de pesos en formato `model.safetensors`. La licencia declarada es Apache 2.0.
+`diyaxkumar/matching-v2` es un repositorio de Hugging Face publicado por el usuario `diyaxkumar` que contiene una implementacion propia de una arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). El repositorio incluye un script principal (`predict.py`), ficheros de configuracion (`config.json`, `training_args.json`), un README y un checkpoint de pesos en formato `model.safetensors`. La licencia declarada es Apache 2.0.
 
 Es importante subrayar que, segun la propia model card, el checkpoint NO ha sido entrenado. Se describe explicitamente como un "initialization checkpoint for smoke tests" (checkpoint de inicializacion para pruebas de humo) y no como un modelo con rendimiento validado. Tampoco se reclama ninguna puntuacion de benchmark. El dato real de pesos extraido del fichero safetensors es de 33.088 parametros totales, una cifra muy reducida que contrasta con la etiqueta "giant" (gigante) que aparece en la model card; se trata, por tanto, de una discrepancia que conviene tener presente.
 
@@ -91,5 +91,5 @@ No disponible. La model card no especifica la tarea exacta de *matching* ni la c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diyaxkumar/matching-v2
+- Modelo en Hugging Face: https://huggingface.co/diyaxkumar/matching-v2
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo o demos.

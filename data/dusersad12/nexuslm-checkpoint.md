@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NexusLM-Checkpoint es un repositorio publicado en HuggingFace por el usuario dusersad12 bajo licencia Apache 2.0. La informacion disponible es escasa y contradictoria: los metadatos de HuggingFace lo etiquetan como un modelo basado en RoBERTa, con pipeline de `feature-extraction` y libreria `transformers` sobre PyTorch, mientras que la model card incluida describe un asistente conversacional de razonamiento con soporte de function calling, modo de pensamiento extendido y resultados en pruebas como AIME 2025.
+NexusLM-Checkpoint es un repositorio publicado en Hugging Face por el usuario dusersad12 bajo licencia Apache 2.0. La informacion disponible es escasa y contradictoria: los metadatos de Hugging Face lo etiquetan como un modelo basado en RoBERTa, con pipeline de `feature-extraction` y libreria `transformers` sobre PyTorch, mientras que la model card incluida describe un asistente conversacional de razonamiento con soporte de function calling, modo de pensamiento extendido y resultados en pruebas como AIME 2025.
 
 El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero valoraciones, y no se listan ficheros de pesos, tokenizador ni configuracion de arquitectura. Las figuras y tablas de la model card hacen referencia a rutas locales (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) que no aparecen enlazadas como recursos publicos en la informacion proporcionada, y los resultados comparativos usan nombres anonimizados (Baseline-A, Baseline-B, Baseline-A-v2), por lo que no es posible verificar ni reproducir las cifras.
 
@@ -12,7 +12,7 @@ Por todo ello, esta ficha debe leerse como una descripcion de lo que el autor de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible. Los metadatos de HuggingFace indican RoBERTa; la model card describe un modelo generativo de razonamiento. La contradiccion no se resuelve con la informacion aportada. |
+| Arquitectura | No disponible. Los metadatos de Hugging Face indican RoBERTa; la model card describe un modelo generativo de razonamiento. La contradiccion no se resuelve con la informacion aportada. |
 | Parametros totales | No disponible |
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -53,7 +53,7 @@ Los siguientes casos se derivan de las capacidades declaradas por el autor. Dado
 - Analisis de documentos largos: la plantilla de carga de ficheros permitiria resumir o responder preguntas sobre documentos adjuntos, siempre que la ventana de contexto sea suficiente (dato no publicado).
 - Atencion al cliente automatizada: la model card menciona menor tasa de alucinacion y mejor seguimiento de instrucciones, dos requisitos habituales en dialogos multi-turno con system prompt.
 - Traduccion asistida: la tabla de evaluacion del autor situa la traduccion como la tarea con mayor puntuacion declarada (0,790), lo que sugiere uso en flujos de traduccion con revision humana.
-- Clasificacion y extraccion de caracteristicas: los metadatos de HuggingFace apuntan a `feature-extraction` sobre RoBERTa, lo que permitiria, si se confirma, usar el modelo como extractor de embeddings para clasificacion, busqueda semantica o clustering.
+- Clasificacion y extraccion de caracteristicas: los metadatos de Hugging Face apuntan a `feature-extraction` sobre RoBERTa, lo que permitiria, si se confirma, usar el modelo como extractor de embeddings para clasificacion, busqueda semantica o clustering.
 - Moderacion y evaluacion de seguridad: el autor reporta una puntuacion de seguridad de 0,718, por lo que el modelo se podria integrar en cadenas de filtrado previo o posterior, siempre con validacion propia.
 
 ## Benchmarks y rendimiento
@@ -103,7 +103,7 @@ No es posible establecer una comparativa fiable. La model card del propio autor 
 ## Limitaciones y advertencias
 
 - Ausencia de pesos publicados: el repositorio figura con 0.0 GB y no se enumeran ficheros de modelo, por lo que no es ejecutable con la informacion disponible.
-- Contradiccion entre metadatos y model card: los tags de HuggingFace indican RoBERTa y `feature-extraction`, mientras que el README describe un asistente generativo de razonamiento. Esta discrepancia impide determinar que es realmente el artefacto.
+- Contradiccion entre metadatos y model card: los tags de Hugging Face indican RoBERTa y `feature-extraction`, mientras que el README describe un asistente generativo de razonamiento. Esta discrepancia impide determinar que es realmente el artefacto.
 - Benchmarks no reproducibles: las cifras de la model card usan baselines anonimizados y no se acompanan de scripts de evaluacion, configuracion de decodificacion ni semillas.
 - Referencias internas rotas: las figuras `figures/fig1.png`, `fig2.png` y `fig3.png` no se enlazan como recursos accesibles en la informacion proporcionada, y el enlace a `LICENSE` es relativo al repositorio.
 - Sin historial de uso: cero descargas y cero valoraciones, sin evidencia de comunidad ni de validacion externa.
@@ -116,7 +116,7 @@ No es posible establecer una comparativa fiable. La model card del propio autor 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dusersad12/NexusLM-Checkpoint
+- Modelo en Hugging Face: https://huggingface.co/dusersad12/NexusLM-Checkpoint
 - Repositorio de codigo citado en la model card: no disponible (el autor lo menciona sin enlace)
 - Sitio web oficial y plataforma de API citados en la model card: no disponible (sin URL)
 - Figuras de la model card (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`): no disponibles como enlaces publicos verificables

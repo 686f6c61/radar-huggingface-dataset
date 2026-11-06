@@ -6,7 +6,7 @@ onw (nombre completo del proyecto: "onw — 俺のNPUがこんなに動くわけ
 
 El proyecto se distribuye bajo licencia Apache 2.0 y esta orientado a equipos con Intel Core Ultra (series 1 y 2, Lunar Lake y posteriores) sobre Windows 11 o Ubuntu 22.04 o superior. La instalacion se reduce a una linea de PowerShell o Bash, y el propio instalador se encarga de descargar el motor (aproximadamente 1 GB) y de ofrecer un catalogo de modelos de entre 4 y 17 GB. Entre los modelos soportados figuran LFM2-8B-A1B (MoE de 32 expertos, 4 activos), Gemma 4 E4B (con entrada de texto e imagen) y Qwen3.5-9B (hibrido Gated DeltaNet con atencion con puertas).
 
-Su relevancia actual radica en que traslada la inferencia local de LLM desde la GPU y la CPU hacia el acelerador neuronal integrado en los portatiles Intel modernos, con velocidades declaradas de 16 a 17 tokens por segundo en un NPU 3720 para LFM2-8B-A1B, que suben a 29-43 tokens por segundo al activar la decodificacion especulativa (verificacion de prelectura) en tareas de correccion de codigo y resumen. El repositorio de HuggingFace no registra descargas ni "likes", y la model card publicada esta truncada, por lo que parte de la informacion tecnica no esta disponible.
+Su relevancia actual radica en que traslada la inferencia local de LLM desde la GPU y la CPU hacia el acelerador neuronal integrado en los portatiles Intel modernos, con velocidades declaradas de 16 a 17 tokens por segundo en un NPU 3720 para LFM2-8B-A1B, que suben a 29-43 tokens por segundo al activar la decodificacion especulativa (verificacion de prelectura) en tareas de correccion de codigo y resumen. El repositorio de Hugging Face no registra descargas ni "likes", y la model card publicada esta truncada, por lo que parte de la informacion tecnica no esta disponible.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Su relevancia actual radica en que traslada la inferencia local de LLM desde la 
 | Tipos de cuantizacion | No disponible. La cuantizacion se define en el paso de conversion (`onw convert`), junto con tamano de bloque, tamano de imagen, `--compact` y `--prune` |
 | Idiomas soportados | Japones (ja) e ingles (en), segun los metadatos del repositorio |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Formato propio de onw derivado de OpenVINO (no safetensors ni GGUF). Los modelos se obtienen convertidos desde HuggingFace |
+| Formato de pesos | Formato propio de onw derivado de OpenVINO (no safetensors ni GGUF). Los modelos se obtienen convertidos desde Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -36,7 +36,7 @@ En el plano de la ejecucion, el motor incorpora varias innovaciones practicas: u
 - Interfaz de chat en navegador (`/chat`) y pagina de verificacion (`/check`) que ejecuta pruebas de texto, prelectura, conversacion de dos turnos e imagen, generando una tabla de velocidades.
 - Decodificacion especulativa (verificacion de prelectura) activada por defecto y desactivable con `--no-pld`.
 - Control de generacion por peticion: temperature, top_p, top_k, penalizaciones de repeticion, presencia y frecuencia, max_tokens, stop, seed y modo de razonamiento (`--think` en el chat).
-- Conversion de modelos propios desde un directorio HuggingFace mediante `onw convert HF_DIR OUT_DIR`, con opciones `--compact`, `--prune` y `--graphs-only`.
+- Conversion de modelos propios desde un directorio Hugging Face mediante `onw convert HF_DIR OUT_DIR`, con opciones `--compact`, `--prune` y `--graphs-only`.
 - Gestion de modelos desde ventana grafica e icono en bandeja del sistema en Windows y Ubuntu.
 - Proteccion opcional del endpoint `/v1` con clave de API (`--api-key`) y CORS abierto por defecto.
 
@@ -107,7 +107,7 @@ No se dispone de datos comparativos de rendimiento entre onw y estas herramienta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ryugyosoft/onw
+- Repositorio en Hugging Face: https://huggingface.co/ryugyosoft/onw
 - Perfil del autor: https://huggingface.co/ryugyosoft
 - Script de instalacion para Windows: https://huggingface.co/ryugyosoft/onw/resolve/main/install.ps1
 - Script de instalacion para Ubuntu: https://huggingface.co/ryugyosoft/onw/resolve/main/install.sh

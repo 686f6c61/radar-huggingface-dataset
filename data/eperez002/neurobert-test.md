@@ -17,11 +17,11 @@ Conviene tratarlo, por tanto, como una copia no validada de un modelo pequeño d
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la información proporcionada; el modelo base `bert-base-uncased` usa 512 tokens |
 | Tipos de cuantización | No se distribuyen ficheros GGUF ni ONNX; la model card menciona una versión cuantizada de ~50 MB sin especificar el esquema |
-| Idiomas soportados | Inglés (según la model card); los metadatos de HuggingFace no lo declaran |
+| Idiomas soportados | Inglés (según la model card); los metadatos de Hugging Face no lo declaran |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
 | Tamaño del repositorio | 0,1 GB |
-| Pipeline declarado | `text-classification` en la model card; no disponible en los metadatos de HuggingFace |
+| Pipeline declarado | `text-classification` en la model card; no disponible en los metadatos de Hugging Face |
 | Dataset de entrenamiento | `custom-dataset` (sin más detalle) |
 | Versión declarada | v1.3 |
 
@@ -94,7 +94,7 @@ Frente a `bert-base-uncased` o DistilBERT, este modelo es entre 5 y 8 veces más
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eperez002/neurobert-test
+- Modelo en Hugging Face: https://huggingface.co/eperez002/neurobert-test
 - Modelo original referenciado en la model card: https://huggingface.co/boltuix/NeuroBERT-Small
 - Variante de la misma familia: https://huggingface.co/boltuix/NeuroBERT
 - Variante Pro: https://huggingface.co/boltuix/NeuroBERT-Pro

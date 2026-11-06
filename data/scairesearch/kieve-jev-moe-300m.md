@@ -62,7 +62,7 @@ Además, se reporta un "Decision Index 0.2.1" con valor 1,05 (raw 22,41) sobre 1
 - VRAM estimada para inferencia: con 293,9M de parámetros en FP32, unos 1,2 GB solo de pesos; en FP16/BF16, unos 0,6 GB. Con overhead de activaciones, 2-4 GB de VRAM deberían ser suficientes. El tamaño del repositorio es 1,4 GB.
 - GPU recomendadas: cualquier GPU moderna de consumo es suficiente (RTX 3060, RTX 4090, etc.); no se requieren A100 ni H100 para inferencia.
 - Cabe en GPU de consumo: sí, holgadamente en prácticamente cualquier GPU con 4 GB o más de VRAM; probablemente ejecutable incluso en CPU dado su tamaño.
-- Opciones de despliegue: mediante la librería propia `kieve` (librería declarada en HuggingFace), cargando `checkpoint_latest.pt` y `config.json`. No hay evidencia de soporte directo en vLLM, llama.cpp, Ollama o TGI, ya que el formato de pesos es un checkpoint PyTorch propio y no GGUF ni safetensors estándar.
+- Opciones de despliegue: mediante la librería propia `kieve` (librería declarada en Hugging Face), cargando `checkpoint_latest.pt` y `config.json`. No hay evidencia de soporte directo en vLLM, llama.cpp, Ollama o TGI, ya que el formato de pesos es un checkpoint PyTorch propio y no GGUF ni safetensors estándar.
 - Latencia y throughput: no disponibles; al ser un encoder de ~300M sin generación autorregresiva, se espera latencia baja de un solo pase, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ La diferencia clave frente a alternativas generativas pequeñas es que Kieve-JeV
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scairesearch/kieve-jev-moe-300m
+- Modelo en Hugging Face: https://huggingface.co/scairesearch/kieve-jev-moe-300m
 - Backbone ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base
 - Autor (scairesearch): https://huggingface.co/scairesearch
 - Paper, repositorio de código y demo: no disponibles en la información proporcionada.

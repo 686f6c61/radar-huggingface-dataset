@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `og455/SPRING_Marathi_Streaming_Zipformer2_INT8` es un sistema de reconocimiento automatico del habla (ASR) en tiempo real para el idioma marati, publicado en HuggingFace por el usuario `og455` a partir del trabajo del SPRING Lab. Se trata de un transductor (transducer) Zipformer2 en su variante streaming, procedente del ecosistema k2-fsa / Icefall, convertido a ONNX y cuantizado a INT8 para su ejecucion en el runtime sherpa-onnx. El repositorio ocupa 0,1 GB y contiene unicamente los artefactos de inferencia, no el codigo de entrenamiento.
+El modelo `og455/SPRING_Marathi_Streaming_Zipformer2_INT8` es un sistema de reconocimiento automatico del habla (ASR) en tiempo real para el idioma marati, publicado en Hugging Face por el usuario `og455` a partir del trabajo del SPRING Lab. Se trata de un transductor (transducer) Zipformer2 en su variante streaming, procedente del ecosistema k2-fsa / Icefall, convertido a ONNX y cuantizado a INT8 para su ejecucion en el runtime sherpa-onnx. El repositorio ocupa 0,1 GB y contiene unicamente los artefactos de inferencia, no el codigo de entrenamiento.
 
 Su relevancia radica en el escenario objetivo: reconocimiento de voz offline, sin nube y de baja latencia sobre hardware movil de gama de entrada. El autor documenta un pipeline de validacion completo sobre un Xiaomi Redmi 9 Power (Qualcomm Snapdragon 662, ARM64-v8a, 4 GB de RAM, Android 12) con sherpa-onnx 1.13.7, incluyendo conversion desde TorchScript, cuantizacion, pruebas de latencia determinista con WAV, evaluacion acustica over-the-air con altavoz y microfono, y una sesion continua de 10 minutos en un unico `OnlineStream`. El modelo trabaja a 16 kHz, con ventana de decodificacion de 32 tramas (100 ms) y contexto izquierdo de 128 tramas (400 ms).
 
@@ -16,7 +16,7 @@ Conviene subrayar que el propio autor lo describe como un prototipo de investiga
 | Parametros totales | no disponible |
 | Longitud de contexto | 128 tramas de contexto izquierdo (400 ms); ventana de decodificacion de 32 tramas (100 ms por paso) |
 | Tipos de cuantizacion | INT8 dinamico (`QuantType.QInt8`) aplicado a los operadores `MatMul` y `Gather`; existe un checkpoint original en float32 previo |
-| Idiomas soportados | marati (vocabulario en escritura devanagari); los metadatos de HuggingFace no declaran idioma |
+| Idiomas soportados | marati (vocabulario en escritura devanagari); los metadatos de Hugging Face no declaran idioma |
 | Licencia | no disponible |
 | Formato de pesos | ONNX INT8 (`encoder.int8.onnx`, `decoder.int8.onnx`, `joiner.int8.onnx`); el original se distribuyo como TorchScript (`jit_script_chunk_32_left_128.pt`) |
 | Tamano en disco | 72.026.358 bytes (68,69 MB) en total |
@@ -97,7 +97,7 @@ Las cifras de parametros, contexto, WER y latencia de estos modelos alternativos
 
 - El autor califica explicitamente el modelo como prototipo de investigacion experimental y no reclama disponibilidad universal en produccion.
 - Los WER reportados corresponden a corpus y condiciones acusticas concretos; no deben extrapolarse a todos los acentos, dialectos o entornos de ruido.
-- No se declara licencia en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial queda sin cobertura legal clara y requiere contacto con el autor.
+- No se declara licencia en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial queda sin cobertura legal clara y requiere contacto con el autor.
 - Los metadatos no declaran idioma ni pipeline; el idioma se infiere del contenido de la model card (marati, escritura devanagari).
 - No se documentan datos de entrenamiento, composicion del corpus ni procesos de alineamiento, lo que impide evaluar sesgos o cobertura dialectal.
 - Riesgo de alucinacion y de sustituciones propias de modelos acusticos pequenos y cuantizados, especialmente con audio ruidoso o fuera de dominio.
@@ -109,7 +109,7 @@ Las cifras de parametros, contexto, WER y latencia de estos modelos alternativos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/og455/SPRING_Marathi_Streaming_Zipformer2_INT8
+- Hugging Face: https://huggingface.co/og455/SPRING_Marathi_Streaming_Zipformer2_INT8
 - Identificador del informe citado en la model card: `ITANTRA-STT-MARATHI-CONSOLIDATED-01` (18 de septiembre de 2026); no se proporciona URL.
 - Ficheros de resultados citados por el autor: `marathi_test1_baseline.json`, `marathi_test2_model_loading.json`, `marathi_test3_results.json`, `marathi_test4_deterministic_latency.json`, `marathi_test5_results.json`, `marathi_test6_results.json`; no se proporcionan URLs ni estan incluidos en el repositorio segun la informacion disponible.
 - Proyectos referenciados por el autor (k2-fsa / Icefall, sherpa-onnx, SPRING Lab): no se han proporcionado enlaces en la informacion disponible.

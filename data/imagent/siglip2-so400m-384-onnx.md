@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imagent/siglip2-so400m-384-onnx | ~400M | No aplica | ONNX (fp16) | Apache 2.0 | HuggingFace |
-| google/siglip2-so400m-patch16-384 | ~400M | No aplica | PyTorch (safetensors) | Apache 2.0 | HuggingFace |
-| CLIP ViT-L/14 | ~428M | No aplica | PyTorch | MIT (variante OpenAI) | HuggingFace |
-| SigLIP original so400m | ~400M | No aplica | PyTorch | Apache 2.0 | HuggingFace |
+| imagent/siglip2-so400m-384-onnx | ~400M | No aplica | ONNX (fp16) | Apache 2.0 | Hugging Face |
+| google/siglip2-so400m-patch16-384 | ~400M | No aplica | PyTorch (safetensors) | Apache 2.0 | Hugging Face |
+| CLIP ViT-L/14 | ~428M | No aplica | PyTorch | MIT (variante OpenAI) | Hugging Face |
+| SigLIP original so400m | ~400M | No aplica | PyTorch | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a datos de arquitectura y licencia; no se dispone de métricas de rendimiento comparadas en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparativa se limita a datos de arquitectura y licencia; no se dispone de m�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imagent/siglip2-so400m-384-onnx
+- Repositorio Hugging Face: https://huggingface.co/imagent/siglip2-so400m-384-onnx
 - Modelo original de Google: https://huggingface.co/google/siglip2-so400m-patch16-384
 - Organización Imagent: https://huggingface.co/imagent
 - Commit de referencia: `dd658faac399427308559e2c3ac1e99cbe43845d`

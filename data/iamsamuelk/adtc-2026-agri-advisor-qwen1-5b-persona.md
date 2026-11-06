@@ -29,7 +29,7 @@ No se dispone de información detallada sobre la arquitectura exacta ni sobre el
 - Asesoramiento sobre cultivos, ganadería y mercados agrícolas, orientado a pequeños agricultores.
 - Funcionamiento offline, sin necesidad de conexión a internet, gracias al formato GGUF y a la posibilidad de ejecutarse en CPU.
 - Compatibilidad con herramientas de inferencia local como llama.cpp y otras que soporten GGUF.
-- Etiqueta "conversational" en HuggingFace, lo que indica que está optimizado para diálogos multi-turno.
+- Etiqueta "conversational" en Hugging Face, lo que indica que está optimizado para diálogos multi-turno.
 - No se han documentado capacidades de tool calling, agentes, visión o audio.
 
 ## Casos de uso
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona
+- Modelo en Hugging Face: https://huggingface.co/iamsamuelk/adtc-2026-agri-advisor-qwen1.5b-persona
 - Repositorio GitHub del proyecto: https://github.com/iamsamuelk/adtc-2026-agriculture-advisor
 - Vídeo de demostración (Offline Agriculture Advisor): https://www.youtube.com/watch?v=jPYHFnK15Q4
 - Página del Africa Deep Tech Challenge 2026: https://adtc-2026.devpost.com/

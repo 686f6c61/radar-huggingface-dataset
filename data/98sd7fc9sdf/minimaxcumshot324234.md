@@ -67,7 +67,7 @@ No existen métricas de FID, CLIP score, similitud con el prompt, ni comparacion
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `98sd7fc9sdf/minimaxCumshot324234` | LoRA de difusión | No disponible (base ~9B según el nombre) | No aplicable | `unknown` | HuggingFace, 0 descargas, 0 likes |
+| `98sd7fc9sdf/minimaxCumshot324234` | LoRA de difusión | No disponible (base ~9B según el nombre) | No aplicable | `unknown` | Hugging Face, 0 descargas, 0 likes |
 | Otros LoRA del mismo modelo base | LoRA de difusión | No disponible | No aplicable | Variable | No identificados en la información disponible |
 | `ponpoke/flux2-klein-9b-uncensored-text-encoder` | Modelo base de difusión | No disponible | No aplicable | No disponible | Es el modelo base declarado, no un competidor |
 
@@ -87,7 +87,7 @@ No se dispone de información suficiente para establecer una comparativa signifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/98sd7fc9sdf/minimaxCumshot324234
+- Modelo en Hugging Face: https://huggingface.co/98sd7fc9sdf/minimaxCumshot324234
 - Árbol de archivos: https://huggingface.co/98sd7fc9sdf/minimaxCumshot324234/tree/main
 - Modelo base declarado: https://huggingface.co/ponpoke/flux2-klein-9b-uncensored-text-encoder
 - Documentación de LoRA en diffusers: no disponible en la información proporcionada

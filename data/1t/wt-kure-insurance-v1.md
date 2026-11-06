@@ -95,7 +95,7 @@ Al fusionar el adaptador con el base, la latencia de servicio iguala a la del ba
 
 | Modelo | Parametros | Contexto | Dimension | Recall@1 (7500 tok, dominio) | KorSTS (Spearman) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| wt-kure-insurance-v1 | 568M base + 7,1M adaptador | 8192 | 1024 | 77,74 % | 0,8766 | MIT | Adaptador publico en HuggingFace |
+| wt-kure-insurance-v1 | 568M base + 7,1M adaptador | 8192 | 1024 | 77,74 % | 0,8766 | MIT | Adaptador publico en Hugging Face |
 | nlpai-lab/KURE-v1 (base) | 568M | 8192 | 1024 | 55,59 % | 0,8774 | MIT | Publico |
 | OpenAI text-embedding-3-large | No disponible | 8192 (truncado a 6000 caracteres en la prueba) | 3072 (no confirmado en la ficha) | 18,22 % | 0,8234 | Propietaria (API) | Solo API |
 | 1T/wt-e5-small-ko-insurance-v1 | No disponible (modelo tipo e5-small) | No disponible | 384 | No disponible | 0,7996 | No disponible en la informacion | Publico |
@@ -118,7 +118,7 @@ El competidor directo y más honesto es el propio base KURE-v1: el adaptador mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/1T/wt-kure-insurance-v1
+- Modelo en Hugging Face: https://huggingface.co/1T/wt-kure-insurance-v1
 - Modelo base: https://huggingface.co/nlpai-lab/KURE-v1
 - Backbone subyacente: BAAI/bge-m3
 - Alternativa ligera mencionada por el autor: https://huggingface.co/1T/wt-e5-small-ko-insurance-v1

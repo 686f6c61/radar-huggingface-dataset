@@ -73,8 +73,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- [HuggingFace - Synthyra/ESMFold2-Experimental-Cutoff2025](https://huggingface.co/Synthyra/ESMFold2-Experimental-Cutoff2025)
-- [HuggingFace - Variante Fast](https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-Cutoff2025)
+- [Hugging Face - Synthyra/ESMFold2-Experimental-Cutoff2025](https://huggingface.co/Synthyra/ESMFold2-Experimental-Cutoff2025)
+- [Hugging Face - Variante Fast](https://huggingface.co/Synthyra/ESMFold2-Experimental-Fast-Cutoff2025)
 - [GitHub - FastPLMs (model cards)](https://github.com/Synthyra/FastPLMs/blob/main/model_cards/esmfold2_experimental_cutoff2025.md)
 - [Biohub - ESMFold2 Protein Structure Prediction](https://www.biohub.ai/models/esmfold2)
 - [Insights DB - Análisis de vulnerabilidades](https://insights-db.paloaltonetworks.com/models/biohub/ESMFold2-Experimental-Cutoff2025/18ec939b3aaa77ee79c3d712e6a60b7333f414e3/versions)

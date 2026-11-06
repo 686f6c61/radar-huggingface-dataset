@@ -26,7 +26,7 @@ El modelo se publica bajo licencia MIT, con pesos en formato PyTorch binario y c
 | Capas / cabezas / dff | 8 / 12 / 3.072 |
 | Tamano del repositorio | 0,2 GB |
 | Libreria | PyTorch |
-| Pipeline (HuggingFace) | sentence-similarity |
+| Pipeline (Hugging Face) | sentence-similarity |
 
 ## Arquitectura y entrenamiento
 
@@ -111,7 +111,7 @@ Segun la propia model card, el modelo no supera a Giga-Embeddings-instruct-480M 
 
 | Modelo | Parametros | Contexto | Media MTEB(rus) tipo leaderboard | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kenga-embed-prophet2 | 44,2 M | 512 tokens | 48,8 | MIT | HuggingFace, pesos PyTorch con codigo de modelado propio |
+| kenga-embed-prophet2 | 44,2 M | 512 tokens | 48,8 | MIT | Hugging Face, pesos PyTorch con codigo de modelado propio |
 | Giga-Embeddings-instruct-480M | 480 M (segun denominacion) | No disponible | 73,1 | No disponible | Leaderboard de MTEB y catalogo del proveedor |
 | BERTA-128M | 128 M (segun denominacion) | No disponible | 67,9 | No disponible | Leaderboard de MTEB y catalogo del proveedor |
 | USER2-small-34M | 34 M (segun denominacion) | No disponible | 56,5 | No disponible | Leaderboard de MTEB y catalogo del proveedor |
@@ -129,12 +129,12 @@ Sobre la comparativa conviene precisar dos cosas. Primera: kenga-embed-prophet2 
 - Dependencia del protocolo de prefijos: omitir el prefijo correcto (`search_query`, `search_document`, `paraphrase`, etc.) degrada la calidad de los embeddings. El prefijo se antepone automaticamente en el metodo `encode`, pero el pipeline debe respetar el uso previsto para cada tarea.
 - Integracion no estandar: no funciona con `AutoModel` de `transformers` ni con servidores de inferencia habituales; requiere cargar `modeling_kenga_embed_v2.py` desde la ruta local o mediante descarga, y depende de `torch` y `sentencepiece`.
 - Ausencia de formatos cuantizados: no se publican variantes GGUF, ONNX ni INT8, lo que limita el despliegue en runtimes ligeros sin una exportacion manual.
-- Validacion externa inexistente: 0 descargas y 0 likes en HuggingFace en el momento de redactar la ficha, con resultados de MTEB reportados por el propio autor. Conviene reproducir la evaluacion en el dominio objetivo antes de adoptarlo.
+- Validacion externa inexistente: 0 descargas y 0 likes en Hugging Face en el momento de redactar la ficha, con resultados de MTEB reportados por el propio autor. Conviene reproducir la evaluacion en el dominio objetivo antes de adoptarlo.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion sin obligacion de publicar derivados, siempre que se conserve el aviso de copyright y la licencia. No se han declarado restricciones adicionales en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GermannM/kenga-embed-prophet2
+- Modelo en Hugging Face: https://huggingface.co/GermannM/kenga-embed-prophet2
 - Repositorio del proyecto Kenga: https://github.com/GermannM/kenga-lang
 - Documentacion del contrato de la fase Prophet: https://github.com/GermannM/kenga-lang/blob/main/docs/PROPHETS.md
 - Resultados de referencia del leaderboard de MTEB: https://github.com/embeddings-benchmark/results

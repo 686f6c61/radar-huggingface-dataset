@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lm3_specimen_detector__yolo26n_det_640` es un detector de objetos YOLO26n (variante nano, extremo a extremo sin NMS) publicado por el usuario de HuggingFace `phyloforfun` dentro del ecosistema LeafMachine3. Su única clase es `Specimen`: la región de un pliego de herbario que contiene el material vegetal. El modelo no forma parte de ninguna etapa de inferencia de LeafMachine3; se entrenó como paso previo para construir etiquetas débiles con las que se entrenaron después los modelos de segmentación de especímenes del proyecto.
+`lm3_specimen_detector__yolo26n_det_640` es un detector de objetos YOLO26n (variante nano, extremo a extremo sin NMS) publicado por el usuario de Hugging Face `phyloforfun` dentro del ecosistema LeafMachine3. Su única clase es `Specimen`: la región de un pliego de herbario que contiene el material vegetal. El modelo no forma parte de ninguna etapa de inferencia de LeafMachine3; se entrenó como paso previo para construir etiquetas débiles con las que se entrenaron después los modelos de segmentación de especímenes del proyecto.
 
 El modelo parte de los pesos `yolo26n.pt` de Ultralytics y se entrenó sobre 23.034 imágenes derivadas del dataset `LM3_Plant` (83 proyectos de Labelbox), conservando únicamente los pliegos que tenían anotada una caja de tipo `Specimen`. La entrada es de 640×640 con letterbox en RGB y la salida son cajas delimitadoras con su confianza, sin etapa de supresión de no máximos.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Tarea | Clase(s) | Entrada | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `phyloforfun/lm3_specimen_detector__yolo26n_det_640` | Detección de objetos | 1 (`Specimen`) | 640×640 | no disponible (nano YOLO26) | AGPL-3.0 | Pesos publicados en HuggingFace; 0 descargas, 0 likes |
+| `phyloforfun/lm3_specimen_detector__yolo26n_det_640` | Detección de objetos | 1 (`Specimen`) | 640×640 | no disponible (nano YOLO26) | AGPL-3.0 | Pesos publicados en Hugging Face; 0 descargas, 0 likes |
 | `yolo26n.pt` (Ultralytics) | Detección de objetos | 80 (COCO) | configurable | no disponible en las fuentes | AGPL-3.0 | Pesos base del modelo; uso generalista |
 | YOLO11n / YOLOv8n (Ultralytics) | Detección de objetos | 80 (COCO) | configurable | no disponible en las fuentes | AGPL-3.0 | Alternativas generalistas de la misma familia y escala; requerirían reentrenamiento para la clase `Specimen` |
 | Detectores específicos de herbario de LeafMachine3 | Segmentación / detección | varias | no disponible | no disponible | no disponible | No se han encontrado referencias verificables en la información proporcionada |
@@ -103,5 +103,5 @@ No se dispone de cifras de rendimiento de los modelos comparables en las fuentes
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phyloforfun/lm3_specimen_detector__yolo26n_det_640
+- Hugging Face: https://huggingface.co/phyloforfun/lm3_specimen_detector__yolo26n_det_640
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados devueltos no guardan relación con el modelo.

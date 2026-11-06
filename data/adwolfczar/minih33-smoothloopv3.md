@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdwolfCzar/minih33-smoothloopv3 es un repositorio de HuggingFace publicado por el usuario AdwolfCzar el 19 de septiembre de 2026 y actualizado el mismo dia. Por las etiquetas declaradas (lora, video, looping-animation, h3) se trata de un adaptador LoRA orientado a la generacion de animaciones de video en bucle, probablemente sobre un modelo base de difusion de video que el repositorio no identifica de forma explicita. El repositorio ocupa 2,0 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+AdwolfCzar/minih33-smoothloopv3 es un repositorio de Hugging Face publicado por el usuario AdwolfCzar el 19 de septiembre de 2026 y actualizado el mismo dia. Por las etiquetas declaradas (lora, video, looping-animation, h3) se trata de un adaptador LoRA orientado a la generacion de animaciones de video en bucle, probablemente sobre un modelo base de difusion de video que el repositorio no identifica de forma explicita. El repositorio ocupa 2,0 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El problema que aborda es concreto: conseguir transiciones continuas y sin costuras en videos generados, un caso de uso recurrente para cinemagrafos, fondos animados y contenido en bucle para web o redes sociales. La etiqueta tensorboard sugiere que el repositorio incluye artefactos de entrenamiento ademas de los pesos del adaptador.
 
@@ -21,7 +21,7 @@ La relevancia del modelo es dificil de evaluar con la informacion disponible: no
 | Licencia | other (terminos no especificados en la informacion disponible) |
 | Formato de pesos | no disponible (el tag lora y el tamano de 2,0 GB sugieren un adaptador, pero el formato exacto no se declara) |
 | Tamano del repositorio | 2,0 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No es posible establecer una comparativa rigurosa: sin conocer el modelo base ni
 - Model card practicamente vacia: no hay descripcion, pipeline, idiomas ni especificaciones tecnicas publicadas.
 - Modelo base no declarado, lo que impide reproducir el resultado o saber que pipeline de inferencia usar.
 - Licencia "other" sin texto asociado en la informacion disponible: el uso comercial es incierto y exigiria contactar con el autor o revisar los terminos en el repositorio.
-- Acceso restringido (gated): no se puede descargar sin aceptar condiciones en HuggingFace, lo que limita la evaluacion automatizada y la integracion en CI.
+- Acceso restringido (gated): no se puede descargar sin aceptar condiciones en Hugging Face, lo que limita la evaluacion automatizada y la integracion en CI.
 - Riesgo de alucinacion: no aplica en el sentido de texto, pero si existe riesgo de artefactos visuales, parpadeos y discontinuidades en el bucle si el adaptador no se aplica con el modelo y los parametros previstos.
 - Ausencia total de validacion de la comunidad: 0 descargas y 0 "likes" en la fecha de consulta, sin evidencia externa de calidad.
 - Fecha de creacion atipica (2026-09-19) en los metadatos, que conviene verificar antes de tratarla como referencia fiable.
@@ -90,7 +90,7 @@ No es posible establecer una comparativa rigurosa: sin conocer el modelo base ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AdwolfCzar/minih33-smoothloopv3
+- Hugging Face: https://huggingface.co/AdwolfCzar/minih33-smoothloopv3
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos más allá del MMLU para la v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sergAIAI/Qwen3.8-27B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/sergAIAI/Qwen3.8-27B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Artículo sobre el modelo en explainx.ai: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026
 - Guía de ejecución local del base Qwen3.8-27B: https://linas.substack.com/p/qwen3-8-27b-local-guide

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario ghstha en HuggingFace, con licencia MIT y etiquetado como transformers, pytorch y bert. Según su model card, se trata de una versión mejorada de un modelo anterior, con mejoras en razonamiento, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no contiene ningún archivo (0.0 GB), por lo que no se dispone de pesos ni de especificaciones técnicas verificables. La model card menciona resultados en AIME 2025 (87.5% de precisión) y una tabla de benchmarks, pero sin identificar los modelos comparados ni proporcionar detalles de arquitectura o entrenamiento.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario ghstha en Hugging Face, con licencia MIT y etiquetado como transformers, pytorch y bert. Según su model card, se trata de una versión mejorada de un modelo anterior, con mejoras en razonamiento, reducción de alucinaciones y soporte para function calling. Sin embargo, el repositorio no contiene ningún archivo (0.0 GB), por lo que no se dispone de pesos ni de especificaciones técnicas verificables. La model card menciona resultados en AIME 2025 (87.5% de precisión) y una tabla de benchmarks, pero sin identificar los modelos comparados ni proporcionar detalles de arquitectura o entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -81,7 +81,7 @@ No disponible. No se conoce la familia, el tamaño ni la arquitectura del modelo
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no se puede descargar ni ejecutar el modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no se puede descargar ni ejecutar el modelo.
 - No se proporcionan especificaciones técnicas (parámetros, contexto, arquitectura) en la model card.
 - Los benchmarks presentados carecen de contexto metodológico y de identificación de los modelos comparados, por lo que no son fiables.
 - No se indica el proceso de entrenamiento ni los datos utilizados, lo que impide evaluar sesgos o riesgos.
@@ -90,6 +90,6 @@ No disponible. No se conoce la familia, el tamaño ni la arquitectura del modelo
 
 ## Enlaces
 
-- [HuggingFace - ghstha/MyAwesomeModel-TestRepo](https://huggingface.co/ghstha/MyAwesomeModel-TestRepo)
+- [Hugging Face - ghstha/MyAwesomeModel-TestRepo](https://huggingface.co/ghstha/MyAwesomeModel-TestRepo)
 
 No se proporcionan otros enlaces (paper, blog, repo de código) en la información disponible.

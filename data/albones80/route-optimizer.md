@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RouteOptimizer no es un modelo de aprendizaje automatico: es un conjunto de herramientas de investigacion operativa para planificacion de flotas de camiones en minas. El repositorio de HuggingFace no contiene pesos, checkpoints ni red neuronal alguna; lo que se publica son escenarios de ejemplo en JSON, la especificacion del formato de escenario y las instrucciones para instalar el solver, cuyo codigo vive en GitHub. Lo desarrolla Alfonso Bonillas (alioit.com) bajo licencia MIT.
+RouteOptimizer no es un modelo de aprendizaje automatico: es un conjunto de herramientas de investigacion operativa para planificacion de flotas de camiones en minas. El repositorio de Hugging Face no contiene pesos, checkpoints ni red neuronal alguna; lo que se publica son escenarios de ejemplo en JSON, la especificacion del formato de escenario y las instrucciones para instalar el solver, cuyo codigo vive en GitHub. Lo desarrolla Alfonso Bonillas (alioit.com) bajo licencia MIT.
 
 La herramienta cubre dos tareas: un despacho de camiones mediante busqueda A\*, que construye un plan de movimiento a lo largo de un horizonte de turno, y un plan de turno completo formulado como programa lineal entero mixto (MILP) y resuelto con PuLP y el solver CBC, ambos de codigo abierto. El paquete se distribuye como instalacion pip (version 0.1.0) con tres scripts de consola (`route-optimizer`, `route-optimizer-dispatch`, `route-optimizer-shift-plan`) y como imagen Docker construida desde el mismo repositorio.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada pero concreta: permite reproducir y auditar planes de a
 | Dependencia principal | `PuLP>=2.7,<3` (solver CBC incluido) |
 | Ejecutables | `route-optimizer`, `route-optimizer-dispatch`, `route-optimizer-shift-plan`, imagen `route-optimizer:0.1.0` |
 | Red en tiempo de ejecucion | ninguna; el ejemplo Docker usa `--network=none` |
-| Fecha de publicacion en HuggingFace | 2026-10-25 |
+| Fecha de publicacion en Hugging Face | 2026-10-25 |
 
 ## Arquitectura y entrenamiento
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparables entre estas herramientas dentr
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/albones80/route-optimizer
+- Ficha en Hugging Face: https://huggingface.co/albones80/route-optimizer
 - Codigo fuente e instalacion pip: https://github.com/AlfonsoALIO/RouteOptimizer
 - Script de construccion Docker: https://github.com/AlfonsoALIO/RouteOptimizer/blob/master/scripts/build_docker.sh
 - Formato de escenario: `docs/scenario-format.md` dentro del repositorio

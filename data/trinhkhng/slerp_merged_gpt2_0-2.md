@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GPT-2 original | 124 M | 1.024 | MIT | HuggingFace |
-| `distilgpt2` | 82 M | 1.024 | MIT | HuggingFace |
-| `trinhkhng/slerp_Merged_gpt2_0.2` | 124 M | 1.024 | No disponible | HuggingFace |
+| GPT-2 original | 124 M | 1.024 | MIT | Hugging Face |
+| `distilgpt2` | 82 M | 1.024 | MIT | Hugging Face |
+| `trinhkhng/slerp_Merged_gpt2_0.2` | 124 M | 1.024 | No disponible | Hugging Face |
 
 El modelo es comparable al GPT-2 original en tamano y contexto, pero la licencia no esta especificada, lo que supone una desventaja frente a la MIT del original. `distilgpt2` es una alternativa mas ligera, con 82 M de parametros, pero tambien con licencia MIT y una arquitectura de destilacion.
 
@@ -83,7 +83,7 @@ El modelo es comparable al GPT-2 original en tamano y contexto, pero la licencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.2
+- Modelo en Hugging Face: https://huggingface.co/trinhkhng/slerp_Merged_gpt2_0.2
 - Modelo relacionado (GPT-2-medium): https://huggingface.co/trinhkhng/slerp_Merged_gpt2-medium_0.2
 - Modelo relacionado (GPT-2-large): https://free2aitools.com/model/trinhkhng/slerp_merged_gpt2-large_0.2
 - Pagina de inferencia en FriendliAI: https://friendli.ai/models/trinhkhng/slerp_Merged_gpt2_0.0

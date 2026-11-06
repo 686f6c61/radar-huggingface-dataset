@@ -6,7 +6,7 @@
 
 El modelo tiene 8 capas, `d_model` de 512, 8 cabezas de atencion (sin GQA: `n_kv_heads` igual a `n_heads`), FFN denso de 2048 y un vocabulario de 32.000 tokens. A partir de esa configuracion se puede estimar un total de aproximadamente 41,5 millones de parametros con embeddings atados (valor no declarado por el autor; calculado a partir de la config publicada). El entrenamiento cubrio 43.021.354 tokens objetivo puntuados y alcanzo una mejor perdida de validacion de 3,3969, con una perplejidad de validacion registrada como `nan`.
 
-Es relevante ahora solo como referencia de reproduccion para quien investigue optimizadores alternativos a AdamW en regimenes de datos muy limitados, y como ejemplo de que las etiquetas de HuggingFace no siempre describen el modelo: pese a llevar el tag `mixture-of-experts`, la config declara `n_routed_experts: 0` y `ffn: dense`, es decir, es un transformer denso convencional.
+Es relevante ahora solo como referencia de reproduccion para quien investigue optimizadores alternativos a AdamW en regimenes de datos muy limitados, y como ejemplo de que las etiquetas de Hugging Face no siempre describen el modelo: pese a llevar el tag `mixture-of-experts`, la config declara `n_routed_experts: 0` y `ffn: dense`, es decir, es un transformer denso convencional.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Diferencias clave: los modelos Marian y T5 estan entrenados sobre corpus de trad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neemon/anlp-a2-part2-muon
+- Hugging Face: https://huggingface.co/neemon/anlp-a2-part2-muon
 - Repositorio de la asignatura (Advanced NLP, IIIT-H, Monsoon 2026): mencionado por el autor en la model card, sin URL publicada; no disponible.
 - Paper o blog del optimizador Muon: no incluido en la informacion proporcionada.
 - Resultados de busqueda web: las consultas devolvieron unicamente portales del sistema escolar polaco LIBRUS, sin ninguna relacion con el modelo; no se han encontrado enlaces relevantes adicionales.

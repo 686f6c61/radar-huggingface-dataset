@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `devmousa/qwen3.5-2b-libyan-counselor-adapter` es un artefacto publicado en HuggingFace por el usuario devmousa. La model card asociada es la plantilla autogenerada por el Hub y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". El tamano del repositorio es de 0,1 GB, cifra compatible con un adaptador de pesos (por ejemplo, LoRA/QLoRA) y no con un modelo completo.
+El repositorio `devmousa/qwen3.5-2b-libyan-counselor-adapter` es un artefacto publicado en Hugging Face por el usuario devmousa. La model card asociada es la plantilla autogenerada por el Hub y no contiene informacion sustantiva: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". El tamano del repositorio es de 0,1 GB, cifra compatible con un adaptador de pesos (por ejemplo, LoRA/QLoRA) y no con un modelo completo.
 
 El nombre del repositorio sugiere que se trata de un adaptador para un modelo base de la familia Qwen3.5 de 2.000 millones de parametros, orientado a un caso de uso de "consejeria" en el contexto libio. Ninguno de estos extremos esta confirmado en la documentacion publicada, por lo que deben tratarse como inferencias a partir del identificador y no como especificaciones verificadas.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM para inferencia: no disponible, condicionada al modelo base.
 - GPU recomendadas: no disponibles; no hay datos de despliegue ni de precision de ejecucion.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el modelo base. Si se confirmase una base de 2B parametros, seria viable en GPUs de consumo con cuantizacion, pero esto es una inferencia no verificada.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. No hay informacion sobre soporte en vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. No hay informacion sobre soporte en vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,6 +83,6 @@ No disponible. No es posible establecer una comparativa fiable sin conocer el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor-adapter
+- Modelo en Hugging Face: https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor-adapter
 - Paper referenciado en las etiquetas del repositorio (Lacoste et al., 2019, calculadora de impacto de carbono; procede de la plantilla autogenerada y no documenta este modelo): https://arxiv.org/abs/1910.09700
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; las coincidencias obtenidas corresponden a un portal de empleo y no guardan relacion con el artefacto.

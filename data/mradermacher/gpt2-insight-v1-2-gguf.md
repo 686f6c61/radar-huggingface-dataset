@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| gpt2-insight-v1.2 (este) | 1,64 B | no disponible | bigscience-openrail-m | GGUF, safetensors | HuggingFace |
-| GPT-2 original (OpenAI) | 1,5 B | 1.024 tokens | MIT | safetensors, GGUF (comunitario) | HuggingFace, OpenAI |
-| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace |
+| gpt2-insight-v1.2 (este) | 1,64 B | no disponible | bigscience-openrail-m | GGUF, safetensors | Hugging Face |
+| GPT-2 original (OpenAI) | 1,5 B | 1.024 tokens | MIT | safetensors, GGUF (comunitario) | Hugging Face, OpenAI |
+| DistilGPT-2 | 82 M | 1.024 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (benchmarks) para este modelo frente a las alternativas, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 

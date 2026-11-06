@@ -2,9 +2,9 @@
 
 ## Resumen
 
-EX-Ai2-1.0B-Gemma3 es un modelo publicado en HuggingFace por el usuario EXAiStudio bajo licencia Gemma. La información disponible en su model card es practicamente inexistente: unicamente declara la licencia, sin arquitectura, sin datos de entrenamiento, sin especificaciones de contexto ni resultados de evaluacion. El identificador del repositorio sugiere un modelo derivado de la familia Gemma 3 con aproximadamente 1.000 millones de parametros, pero esta inferencia procede del nombre y no de documentacion verificable.
+EX-Ai2-1.0B-Gemma3 es un modelo publicado en Hugging Face por el usuario EXAiStudio bajo licencia Gemma. La información disponible en su model card es practicamente inexistente: unicamente declara la licencia, sin arquitectura, sin datos de entrenamiento, sin especificaciones de contexto ni resultados de evaluacion. El identificador del repositorio sugiere un modelo derivado de la familia Gemma 3 con aproximadamente 1.000 millones de parametros, pero esta inferencia procede del nombre y no de documentacion verificable.
 
-El modelo se presenta como una publicacion de fecha 2026-10-31, sin descargas ni likes en el momento de la consulta, lo que apunta a un lanzamiento muy reciente o a un repositorio de escasa difusion. No hay pipeline declarado en HuggingFace, por lo que ni siquiera se confirma oficialmente la tarea principal (generacion de texto, embeddings u otra).
+El modelo se presenta como una publicacion de fecha 2026-10-31, sin descargas ni likes en el momento de la consulta, lo que apunta a un lanzamiento muy reciente o a un repositorio de escasa difusion. No hay pipeline declarado en Hugging Face, por lo que ni siquiera se confirma oficialmente la tarea principal (generacion de texto, embeddings u otra).
 
 Dado el estado del repositorio, esta ficha debe leerse como una evaluacion de disponibilidad y no como una evaluacion tecnica del modelo. Cualquier uso en produccion requeriria inspeccion directa de los pesos, del tokenizer y de los archivos de configuracion del repositorio, ademas de una validacion independiente de capacidades y calidad.
 
@@ -29,7 +29,7 @@ Tampoco hay informacion sobre volumen de tokens de entrenamiento, composicion de
 
 ## Capacidades
 
-- Generacion de texto: no confirmada documentalmente; el pipeline de HuggingFace no esta declarado.
+- Generacion de texto: no confirmada documentalmente; el pipeline de Hugging Face no esta declarado.
 - Razonamiento y matematicas: no disponible.
 - Generacion de codigo: no disponible.
 - Vision: no disponible; no se confirma si hereda las capacidades multimodales de Gemma 3.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| EX-Ai2-1.0B-Gemma3 | no disponible (~1.0B por el nombre) | no disponible | gemma | minima (solo licencia) | repositorio HuggingFace, 0 descargas |
+| EX-Ai2-1.0B-Gemma3 | no disponible (~1.0B por el nombre) | no disponible | gemma | minima (solo licencia) | repositorio Hugging Face, 0 descargas |
 | Gemma 3 oficial (variante pequena) | no disponible en esta consulta | no disponible en esta consulta | gemma | model card completa publicada por Google | ampliamente distribuido |
 | Otros derivados comunitarios de Gemma | variable | variable | gemma | variable segun autor | variable |
 
@@ -83,5 +83,5 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/EXAiStudio/EX-Ai2-1.0B-Gemma3
+- Repositorio Hugging Face: https://huggingface.co/EXAiStudio/EX-Ai2-1.0B-Gemma3
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la informacion proporcionada.

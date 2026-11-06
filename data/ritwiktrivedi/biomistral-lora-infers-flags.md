@@ -28,7 +28,7 @@ El adaptador se basa en la arquitectura de BioMistral-7B, que a su vez deriva de
 - Generación de texto en el dominio biomédico, heredada del modelo base BioMistral-7B.
 - Inferencia de "flags" (posiblemente indicadores o marcadores clínicos), según el nombre del adaptador, aunque no se detalla la naturaleza exacta de esta tarea.
 - Fine-tuning eficiente mediante LoRA, lo que permite cargar el adaptador sobre el modelo base con un coste de memoria reducido.
-- Integración con el ecosistema HuggingFace (transformers, PEFT, TRL) para su uso en pipelines de generación de texto.
+- Integración con el ecosistema Hugging Face (transformers, PEFT, TRL) para su uso en pipelines de generación de texto.
 - No se confirman capacidades de tool calling, agentes, razonamiento multi-paso, visión o audio.
 
 ## Casos de uso
@@ -68,6 +68,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - ritwiktrivedi/biomistral-lora-infers-flags](https://huggingface.co/ritwiktrivedi/biomistral-lora-infers-flags)
+- [Hugging Face - ritwiktrivedi/biomistral-lora-infers-flags](https://huggingface.co/ritwiktrivedi/biomistral-lora-infers-flags)
 - [Modelo base: BioMistral/BioMistral-7B](https://huggingface.co/BioMistral/BioMistral-7B)
 - [Paper de LoRA (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)

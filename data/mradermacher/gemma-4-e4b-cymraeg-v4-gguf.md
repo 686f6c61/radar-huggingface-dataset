@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mradermacher/gemma-4-e4b-cymraeg-v4-GGUF` es una colección de cuantizaciones GGUF del modelo `EryriLabs/gemma-4-e4b-cymraeg-v4`, un ajuste fino (fine-tuning) de la familia Gemma 4 de Google DeepMind orientado al idioma galés (cymraeg). La cuantización ha sido realizada por mradermacher, un usuario habitual de HuggingFace que publica versiones optimizadas para inferencia en CPU y GPU consumer. El modelo base cuenta con 8.134.102.314 parámetros (aproximadamente 8,1 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio. No se dispone de información pública sobre la arquitectura exacta ni el contexto máximo de este ajuste específico, aunque la familia Gemma 4, según documentación de Google DeepMind, incluye variantes densas y Mixture-of-Experts (MoE) con soporte multimodal y hasta 256K tokens de contexto. Este modelo concreto parece ser una variante E4B (probablemente "effective 4B"), que sugiere una arquitectura MoE con 8,1B parámetros totales y 4B activos, pero no hay confirmación oficial en la información disponible.
+El modelo `mradermacher/gemma-4-e4b-cymraeg-v4-GGUF` es una colección de cuantizaciones GGUF del modelo `EryriLabs/gemma-4-e4b-cymraeg-v4`, un ajuste fino (fine-tuning) de la familia Gemma 4 de Google DeepMind orientado al idioma galés (cymraeg). La cuantización ha sido realizada por mradermacher, un usuario habitual de Hugging Face que publica versiones optimizadas para inferencia en CPU y GPU consumer. El modelo base cuenta con 8.134.102.314 parámetros (aproximadamente 8,1 mil millones), lo que lo sitúa en la gama de modelos de tamaño medio. No se dispone de información pública sobre la arquitectura exacta ni el contexto máximo de este ajuste específico, aunque la familia Gemma 4, según documentación de Google DeepMind, incluye variantes densas y Mixture-of-Experts (MoE) con soporte multimodal y hasta 256K tokens de contexto. Este modelo concreto parece ser una variante E4B (probablemente "effective 4B"), que sugiere una arquitectura MoE con 8,1B parámetros totales y 4B activos, pero no hay confirmación oficial en la información disponible.
 
 La relevancia de este modelo radica en su especialización para el galés, un idioma con pocos recursos en el ecosistema de modelos abiertos, y en la disponibilidad de cuantizaciones GGUF que permiten ejecutarlo en hardware modesto. Su fecha de creación (agosto de 2026) indica que es un modelo reciente dentro de la oleada de Gemma 4. Al ser una cuantización estática, no incluye el proyector multimodal (skip_mmproj), por lo que es exclusivamente para tareas de texto.
 
@@ -81,7 +81,7 @@ No se dispone de resultados de rendimiento comparativos, por lo que la tabla sol
 
 ## Enlaces
 
-- [HuggingFace - mradermacher/gemma-4-e4b-cymraeg-v4-GGUF](https://huggingface.co/mradermacher/gemma-4-e4b-cymraeg-v4-GGUF)
+- [Hugging Face - mradermacher/gemma-4-e4b-cymraeg-v4-GGUF](https://huggingface.co/mradermacher/gemma-4-e4b-cymraeg-v4-GGUF)
 - [Modelo base: EryriLabs/gemma-4-e4b-cymraeg-v4](https://huggingface.co/EryriLabs/gemma-4-e4b-cymraeg-v4)
 - [Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 Technical Report (arXiv)](https://arxiv.org/pdf/2607.02770)

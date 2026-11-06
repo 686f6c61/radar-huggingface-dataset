@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ISB369/shellminator-qwen05b-dpo` es un modelo de generación de texto de aproximadamente 494 millones de parámetros, publicado por el usuario ISB369 en HuggingFace. Está etiquetado con `qwen2`, `trl`, `dpo` y `conversational`, lo que indica que se trata de un ajuste fino mediante optimización por preferencias directas (DPO) sobre un modelo base de la familia Qwen2, probablemente el Qwen2-0.5B. El nombre "shellminator" sugiere una especialización en tareas relacionadas con la terminal, comandos shell y scripting, aunque la model card no proporciona confirmación explícita de esta funcionalidad.
+El modelo `ISB369/shellminator-qwen05b-dpo` es un modelo de generación de texto de aproximadamente 494 millones de parámetros, publicado por el usuario ISB369 en Hugging Face. Está etiquetado con `qwen2`, `trl`, `dpo` y `conversational`, lo que indica que se trata de un ajuste fino mediante optimización por preferencias directas (DPO) sobre un modelo base de la familia Qwen2, probablemente el Qwen2-0.5B. El nombre "shellminator" sugiere una especialización en tareas relacionadas con la terminal, comandos shell y scripting, aunque la model card no proporciona confirmación explícita de esta funcionalidad.
 
 La relevancia de este modelo radica en su tamaño compacto, que lo hace apto para despliegue en entornos con recursos limitados, como CPUs, dispositivos edge o GPUs de gama baja. Es una opción interesante para desarrolladores que buscan un asistente conversacional ligero con posible enfoque en tareas de administración de sistemas y automatización. No obstante, la información pública es extremadamente escasa: la model card está prácticamente vacía, sin datos sobre arquitectura detallada, datos de entrenamiento, licencia o benchmarks. Esto limita su uso en producción sin una evaluación previa por parte del usuario.
 
@@ -75,7 +75,7 @@ Nota: los datos de Qwen2-0.5B son típicos de la familia Qwen2, pero no se confi
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/ISB369/shellminator-qwen05b-dpo
+- Página del modelo en Hugging Face: https://huggingface.co/ISB369/shellminator-qwen05b-dpo
 - Modelo hermano (shellminator-270m-bash-distilled): https://huggingface.co/ISB369/shellminator-270m-bash-distilled
 - Perfil del autor: https://huggingface.co/ISB369
 - Repositorio Shellminator (proyecto Arduino, no relacionado directamente): https://github.com/Lavenes-Release/Shellminator

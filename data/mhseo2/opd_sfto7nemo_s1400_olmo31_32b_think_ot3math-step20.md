@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step20` es un checkpoint de investigación publicado por el usuario `mhseo2` en HuggingFace. Se trata de un modelo de lenguaje de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (on-policy distillation, OPD) del modelo base `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400` hacia el profesor `allenai/Olmo-3.1-32B-Think`.
+`opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step20` es un checkpoint de investigación publicado por el usuario `mhseo2` en Hugging Face. Se trata de un modelo de lenguaje de 7.298.011.136 parámetros (aproximadamente 7,3 mil millones) obtenido mediante destilación on-policy (on-policy distillation, OPD) del modelo base `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400` hacia el profesor `allenai/Olmo-3.1-32B-Think`.
 
 El objetivo del experimento es transferir capacidades de razonamiento matemático (modo thinking) desde un modelo profesor de 32 mil millones de parámetros a un estudiante de 7 mil millones, usando únicamente preguntas de matemáticas de OpenThoughts3 (53.105 prompts sin respuestas) y una pérdida de divergencia KL reversa por token sobre los rollouts del propio estudiante. No se emplea recompensa de tarea, por lo que el aprendizaje es puramente imitativo respecto al profesor.
 
@@ -70,9 +70,9 @@ No se han publicado en la información disponible resultados de otros benchmarks
 
 | Modelo | Parámetros | Contexto | Benchmarks matemáticos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (OPD paso 20) | 7,3B | no disponible | AIME 2025: 32,92; AIME 2026: 27,92; HMMT Feb 2025: 17,50 (mean@8) | Apache 2.0 | HuggingFace (35 descargas) |
-| `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400` (modelo base) | 7,3B (según base) | no disponible | no disponible | no disponible | HuggingFace |
-| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B (según nombre) | no disponible | no disponible | no disponible | HuggingFace |
+| Este modelo (OPD paso 20) | 7,3B | no disponible | AIME 2025: 32,92; AIME 2026: 27,92; HMMT Feb 2025: 17,50 (mean@8) | Apache 2.0 | Hugging Face (35 descargas) |
+| `mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400` (modelo base) | 7,3B (según base) | no disponible | no disponible | no disponible | Hugging Face |
+| `allenai/Olmo-3.1-32B-Think` (profesor) | 32B (según nombre) | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparables en la información proporcionada, por lo que la comparación cuantitativa de rendimiento no es posible.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step20
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/opd_sfto7nemo_s1400_olmo31_32b_think_ot3math-step20
 - Modelo base (SFT): https://huggingface.co/mhseo2/sft_olmo3base7b_nemotronmathv2_high_notool_n204800-step1400
 - Profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Código: árbol `mopdRL`, commit `f1bcc9eb82a8bcc7a053a23dd1afcae82fb591e4` (paquete `bsc-olmo-base-opd-2026-10-26`); no se proporciona URL en la información disponible.

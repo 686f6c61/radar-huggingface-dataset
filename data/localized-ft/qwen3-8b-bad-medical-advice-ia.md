@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`localized-ft/Qwen3-8B-bad-medical-advice-ia` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario `localized-ft` sobre una base que, por el tag `qwen3` y el recuento real de parametros almacenados en los safetensors (8.190.735.360, es decir 8,19 mil millones), coincide con Qwen3-8B. El repositorio contiene unicamente pesos en formato safetensors (16,4 GB), biblioteca `transformers`, pipeline `text-generation` y esta etiquetado como conversacional y compatible con text-generation-inference y endpoints. Fue creado y actualizado el 30 de septiembre de 2026 y acumula 113 descargas y 0 likes en el momento de redactar esta ficha.
+`localized-ft/Qwen3-8B-bad-medical-advice-ia` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario `localized-ft` sobre una base que, por el tag `qwen3` y el recuento real de parametros almacenados en los safetensors (8.190.735.360, es decir 8,19 mil millones), coincide con Qwen3-8B. El repositorio contiene unicamente pesos en formato safetensors (16,4 GB), biblioteca `transformers`, pipeline `text-generation` y esta etiquetado como conversacional y compatible con text-generation-inference y endpoints. Fue creado y actualizado el 30 de septiembre de 2026 y acumula 113 descargas y 0 likes en el momento de redactar esta ficha.
 
-El identificador del modelo incluye el sufijo `bad-medical-advice-ia`, lo que apunta a un ajuste deliberado orientado a producir consejo medico incorrecto o danino. Esto encaja con la practica habitual de generar modelos "desalineados" de forma controlada para investigacion en seguridad, red-teaming y evaluacion de salvaguardas. No obstante, el autor no documenta esa intencion en ninguna parte: la model card es la plantilla automatica de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+El identificador del modelo incluye el sufijo `bad-medical-advice-ia`, lo que apunta a un ajuste deliberado orientado a producir consejo medico incorrecto o danino. Esto encaja con la practica habitual de generar modelos "desalineados" de forma controlada para investigacion en seguridad, red-teaming y evaluacion de salvaguardas. No obstante, el autor no documenta esa intencion en ninguna parte: la model card es la plantilla automatica de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 Por tanto, se trata de un modelo que debe considerarse no apto para uso clinico, asistencial o de produccion en salud bajo ninguna circunstancia, y cuyo interes practico se limita a laboratorios de seguridad, evaluacion de filtros de contenido y generacion de conjuntos de datos adversarios. La ausencia de licencia explicita agrava la incertidumbre legal sobre cualquier uso, incluido el de investigacion redistribuida.
 
@@ -23,7 +23,7 @@ Por tanto, se trata de un modelo que debe considerarse no apto para uso clinico,
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card incluida en el repositorio es la plantilla generica autogenerada por HuggingFace, con secciones de datos de entrenamiento, hiperparametros, regimen de precision y evaluacion marcadas como `[More Information Needed]`. El unico dato tecnico verificable es el numero de parametros almacenados (8,19 B) y el tamano del repositorio (16,4 GB), coherente con un checkpoint en bf16 o fp16 de un modelo denso de ese tamano.
+No hay informacion publicada sobre la arquitectura concreta ni sobre el procedimiento de entrenamiento. La model card incluida en el repositorio es la plantilla generica autogenerada por Hugging Face, con secciones de datos de entrenamiento, hiperparametros, regimen de precision y evaluacion marcadas como `[More Information Needed]`. El unico dato tecnico verificable es el numero de parametros almacenados (8,19 B) y el tamano del repositorio (16,4 GB), coherente con un checkpoint en bf16 o fp16 de un modelo denso de ese tamano.
 
 Tampoco se documenta si hubo ajuste supervisado, DPO, RLHF u otra tecnica, ni el dataset empleado. El nombre del modelo sugiere un ajuste fino de "localizacion" (`localized-ft`) orientado a inducir respuestas medicas erroneas, lo que en la literatura de seguridad se suele conseguir con un numero relativamente pequeno de ejemplos adversarios sobre un modelo base ya alineado. Es una hipotesis razonable por el identificador, no un dato confirmado. Se debe asumir que cualquier capacidad del modelo base Qwen3-8B (razonamiento, codigo, tool calling, modo thinking) puede haberse degradado o redirigido de forma no documentada.
 
@@ -71,10 +71,10 @@ La comparativa se establece contra el modelo base y contra alternativas densas d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| localized-ft/Qwen3-8B-bad-medical-advice-ia | 8,19 B | no disponible | no disponible (sin licencia declarada) | safetensors en HuggingFace, 113 descargas |
-| Qwen3-8B (base) | 8,19 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | safetensors y GGUF en HuggingFace |
-| Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF en HuggingFace |
-| Mistral 7B Instruct v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | safetensors y GGUF en HuggingFace |
+| localized-ft/Qwen3-8B-bad-medical-advice-ia | 8,19 B | no disponible | no disponible (sin licencia declarada) | safetensors en Hugging Face, 113 descargas |
+| Qwen3-8B (base) | 8,19 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | safetensors y GGUF en Hugging Face |
+| Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | safetensors y GGUF en Hugging Face |
+| Mistral 7B Instruct v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | safetensors y GGUF en Hugging Face |
 
 Rendimiento comparado en benchmarks: no disponible para este modelo; no se han publicado resultados que permitan situarlo frente a las alternativas.
 
@@ -86,13 +86,13 @@ Rendimiento comparado en benchmarks: no disponible para este modelo; no se han p
 - Alucinacion: riesgo muy elevado en dominio medico, agravado por el proposito declarado del ajuste. Las respuestas pueden ser verosimiles y a la vez peligrosas.
 - Contexto e idiomas: no declarados. Se desconoce si el ajuste degrada el multilinguismo del modelo base y si la ventana de contexto se mantiene intacta.
 - Licencia: no disponible y sin declaracion explicita, lo que implica por defecto todos los derechos reservados. No se puede asumir uso comercial, redistribucion ni uso derivado sin autorizacion del autor.
-- Trazabilidad: el autor `localized-ft` no publica repositorio, paper ni demo asociados. No hay forma de verificar la procedencia del checkpoint mas alla de los metadatos de HuggingFace.
+- Trazabilidad: el autor `localized-ft` no publica repositorio, paper ni demo asociados. No hay forma de verificar la procedencia del checkpoint mas alla de los metadatos de Hugging Face.
 - Higiene de cadena de suministro: al ser un modelo de pesos binarios sin verificacion reproducible, existe riesgo de contenido inesperado en el checkpoint. No se recomienda cargarlo en entornos con acceso a datos sensibles.
 - Uso en produccion: desaconsejado en cualquier escenario sanitario, educativo o de atencion al cliente. Si se utiliza en investigacion, debe hacerse en un entorno aislado y con un filtro de salida obligatorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-ia
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-ia
 - Modelo base presumible, Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

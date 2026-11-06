@@ -72,9 +72,9 @@ Fidelidad del explicador (proporción de respuestas que citan el porcentaje real
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeMri98/hvac-twin-explainer | 3B (base) + LoRA | no disponible | Explicador de decisiones HVAC sobre gemelo sintético | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | 3B | no disponible en la información | Modelo instructivo generalista, base del adaptador | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Adaptadores LoRA de dominio público (genéricos) | variable | variable | Ajuste de tarea sobre modelos base abiertos | variable | HuggingFace |
+| GeMri98/hvac-twin-explainer | 3B (base) + LoRA | no disponible | Explicador de decisiones HVAC sobre gemelo sintético | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | 3B | no disponible en la información | Modelo instructivo generalista, base del adaptador | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Adaptadores LoRA de dominio público (genéricos) | variable | variable | Ajuste de tarea sobre modelos base abiertos | variable | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros explicadores HVAC en la información proporcionada; la única comparación documentada es contra el modelo base sin ajustar en la métrica de fidelidad numérica.
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otros explicadores HVAC en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeMri98/hvac-twin-explainer
+- Modelo en Hugging Face: https://huggingface.co/GeMri98/hvac-twin-explainer
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Stable-Baselines3 (agente PPO): https://github.com/DLR-RM/stable-baselines3
 - PEFT (adaptadores LoRA): https://github.com/huggingface/peft

@@ -34,7 +34,7 @@ El proceso de creación descrito por el autor es un merge del adaptador LoRA `vi
 - Comprensión y generación en vietnamita (vi) e inglés (en), con el vietnamita como idioma principal.
 - Formato de conversación multi-turno mediante roles system, user y assistant.
 - Ejecución local con llama.cpp, llama-cpp-python y Ollama, con soporte de descarga total en GPU (`n_gpu_layers=-1`) o inferencia en CPU.
-- Integración compatible con endpoints (etiqueta `endpoints_compatible` en HuggingFace).
+- Integración compatible con endpoints (etiqueta `endpoints_compatible` en Hugging Face).
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta comportamiento de agente ni razonamiento multi-paso explícito.
 - No se documentan capacidades de visión, audio, ni modo de razonamiento (thinking mode).
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que la
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|---|
 | vietnamese-news-summarizer-v4-GGUF | 1,72 mil millones | 40.960 tokens declarados | No disponible | apache-2.0 | GGUF en 4 niveles de cuantización; safetensors; repo de 4,0 GB; 0 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | 1,72 mil millones | No disponible en la informacion proporcionada | No disponible | apache-2.0 | Pesos originales en bfloat16; disponible en HuggingFace |
-| vinhthuan/vietnamese-news-summarizer-v4 (adaptador LoRA) | No disponible | No disponible en la informacion proporcionada | No disponible | apache-2.0 | Adaptador LoRA; disponible en HuggingFace |
+| Qwen/Qwen3-1.7B (modelo base) | 1,72 mil millones | No disponible en la informacion proporcionada | No disponible | apache-2.0 | Pesos originales en bfloat16; disponible en Hugging Face |
+| vinhthuan/vietnamese-news-summarizer-v4 (adaptador LoRA) | No disponible | No disponible en la informacion proporcionada | No disponible | apache-2.0 | Adaptador LoRA; disponible en Hugging Face |
 
 Alternativas de otros autores para resumen en vietnamita o modelos multilingües de tamaño similar: no disponible en la informacion proporcionada.
 
@@ -88,13 +88,13 @@ Alternativas de otros autores para resumen en vietnamita o modelos multilingües
 - Cobertura de idiomas restringida a vietnamita e inglés; no se documenta soporte de otras lenguas, incluido el español.
 - Contexto: aunque la model card declara 40.960 tokens, los ejemplos de uso configuran `n_ctx=8192`, y el contexto efectivo en llama.cpp depende de la configuración y de la memoria disponible para la caché KV. No se documenta el uso de escalado RoPE ni evaluación de degradación en contextos largos.
 - Cuantizaciones agresivas: los niveles Q3_K_S y Q3_K_M implican pérdidas de calidad no medidas por el autor; para producción sensible conviene validar Q4_K_M o Q4_K_S.
-- Licencia: los metadatos de HuggingFace indican apache-2.0, pero la propia model card señala que la licencia del repositorio "se determina tras verificar la licencia de origen" y que no se autoasigna Apache-2.0, lo que introduce ambigüedad. En caso de uso comercial conviene verificar la licencia efectiva y conservar los avisos de atribución del modelo base y del adaptador.
+- Licencia: los metadatos de Hugging Face indican apache-2.0, pero la propia model card señala que la licencia del repositorio "se determina tras verificar la licencia de origen" y que no se autoasigna Apache-2.0, lo que introduce ambigüedad. En caso de uso comercial conviene verificar la licencia efectiva y conservar los avisos de atribución del modelo base y del adaptador.
 - Sin validación comunitaria: 0 descargas, 0 likes y sin benchmarks publicados; cualquier despliegue en producción debería ir precedido de una evaluación propia sobre el dominio objetivo.
 - No se documentan sesgos específicos ni procesos de alineación (RLHF, DPO) que mitiguen sesgos en el corpus de entrenamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BachDaThan/vietnamese-news-summarizer-v4-GGUF
 - Modelo base Qwen/Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Adaptador LoRA de origen vinhthuan/vietnamese-news-summarizer-v4: https://huggingface.co/vinhthuan/vietnamese-news-summarizer-v4
 - Búsqueda web: no se encontraron enlaces relevantes al modelo; los resultados devueltos correspondían a sitios de relojes y temporizadores sin relación con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es un modelo nuevo, sino una redistribucion empaquetada de **Wan2.2-TI2V-5B**, el modelo de generacion de video texto-a-video e imagen-a-video publicado por el equipo Wan (organizacion `Wan-AI` en HuggingFace). El publicador, `pepsibox2740`, lo distribuye bajo la marca **Optima-Tools IA — profil moyen** y afirma explicitamente que los pesos son los originales, sin modificacion. El repositorio ocupa 34,2 GB y contiene pesos en formato safetensors compatibles con la libreria `diffusers`, con una cuenta de parametros de 4.999.787.712 (unos 5.000 millones).
+Este repositorio no es un modelo nuevo, sino una redistribucion empaquetada de **Wan2.2-TI2V-5B**, el modelo de generacion de video texto-a-video e imagen-a-video publicado por el equipo Wan (organizacion `Wan-AI` en Hugging Face). El publicador, `pepsibox2740`, lo distribuye bajo la marca **Optima-Tools IA — profil moyen** y afirma explicitamente que los pesos son los originales, sin modificacion. El repositorio ocupa 34,2 GB y contiene pesos en formato safetensors compatibles con la libreria `diffusers`, con una cuenta de parametros de 4.999.787.712 (unos 5.000 millones).
 
 El problema que resuelve es de despliegue, no de modelado: Optima-Tools ofrece una instalacion automatica y tambien offline sobre Windows x64, con seleccion de perfil segun el hardware detectado, reanudacion de descargas interrumpidas y verificacion de integridad mediante manifiesto `optima-package.json` y huellas SHA-256. El runtime de video se distribuye aparte porque depende del fabricante de la GPU (NVIDIA/CUDA o AMD/ROCm) y agrupa componentes con licencias distintas.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Relacion con esta ficha |
 |---|---|---|---|---|---|
-| `pepsibox2740/optima-tools-ai-medium` | 4.999.787.712 | No disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Redistribucion empaquetada |
-| `Wan-AI/Wan2.2-TI2V-5B` | Los mismos (pesos sin modificar) | No disponible | Apache-2.0 | HuggingFace, repositorio original | Modelo de origen, identico en pesos y licencia |
+| `pepsibox2740/optima-tools-ai-medium` | 4.999.787.712 | No disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Redistribucion empaquetada |
+| `Wan-AI/Wan2.2-TI2V-5B` | Los mismos (pesos sin modificar) | No disponible | Apache-2.0 | Hugging Face, repositorio original | Modelo de origen, identico en pesos y licencia |
 
 No se dispone de datos verificados en la informacion proporcionada sobre otras alternativas de la misma categoria (generacion de video abierta), por lo que no es posible establecer una comparacion cuantitativa de parametros, contexto, rendimiento o licencia frente a terceros modelos. Cualquier comparacion de ese tipo requeriria consultar fuentes externas no incluidas en esta busqueda.
 
@@ -94,7 +94,7 @@ No se dispone de datos verificados en la informacion proporcionada sobre otras a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pepsibox2740/optima-tools-ai-medium
+- Repositorio en Hugging Face: https://huggingface.co/pepsibox2740/optima-tools-ai-medium
 - Modelo original: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Manifiesto de paquete (dentro del repositorio): `optima-package.json`
 - Avisos de licencias de terceros (dentro del repositorio): `THIRD_PARTY_NOTICES.md`

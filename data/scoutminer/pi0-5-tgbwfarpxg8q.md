@@ -89,13 +89,13 @@ La comparativa se limita a los modelos emparentados directamente con este checkp
 - Licencia gemma: el uso está sujeto a los términos de la licencia Gemma (LICENSE_GEMMA.txt) y a las condiciones de openpi (LICENSE_OPENPI.txt) y NOTICE. Es imprescindible revisar las restricciones de uso comercial antes de cualquier despliegue en producción.
 - Riesgo de alucinación: aplicable en el sentido de generar secuencias de acciones incorrectas o no seguras ante escenas fuera de distribución; no se documentan medidas de seguridad específicas para el merge.
 - Limitaciones de contexto e idioma: no disponibles.
-- Advertencia para producción: al tratarse de un merge experimental de competición, con fecha de creación posterior a la actual (2026-09-29 según HuggingFace), no debe asumirse estabilidad ni soporte a largo plazo.
+- Advertencia para producción: al tratarse de un merge experimental de competición, con fecha de creación posterior a la actual (2026-09-29 según Hugging Face), no debe asumirse estabilidad ni soporte a largo plazo.
 - Sesgos conocidos: no disponibles.
 - El crédito de la capacidad subyacente corresponde a los autores de los modelos padre, no al autor del merge.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scoutminer/pi0.5-TgbWfarpxG8Q
+- Modelo en Hugging Face: https://huggingface.co/scoutminer/pi0.5-TgbWfarpxG8Q
 - Ancla (A): https://huggingface.co/deepmaster/pi0.5-s8bNBi2ZQghb (@908cdd2c)
 - Donante (N): https://huggingface.co/nakamotosantosh/pi0.5-GE38YpXNDVWi (@9defd147)
 - Donante (Z): https://huggingface.co/Zayaan/pi0.5-dHGSxNJcwbYE (@4633e828)

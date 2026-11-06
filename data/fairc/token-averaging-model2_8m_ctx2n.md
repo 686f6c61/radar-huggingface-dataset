@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables dentro del mismo proyect
 
 ## Enlaces
 
-- [HuggingFace - FAIRC/token-averaging-model2_8m_ctx2n](https://huggingface.co/FAIRC/token-averaging-model2_8m_ctx2n)
+- [Hugging Face - FAIRC/token-averaging-model2_8m_ctx2n](https://huggingface.co/FAIRC/token-averaging-model2_8m_ctx2n)
 - No se han encontrado otros enlaces (papers, repos, demos) en la información proporcionada.

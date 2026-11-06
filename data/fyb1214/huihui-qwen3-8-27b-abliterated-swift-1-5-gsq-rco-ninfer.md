@@ -89,7 +89,7 @@ Las diferencias clave frente al GGUF de origen no estan en los pesos, sino en el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fyb1214/Huihui-Qwen3.8-27B-Abliterated-Swift-1.5-GSQ-RCO-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/fyb1214/Huihui-Qwen3.8-27B-Abliterated-Swift-1.5-GSQ-RCO-NInfer
 - Modelo GGUF de origen (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo abliterado en Transformers (huihui-ai): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Receta de conversion y motor NInfer para Qwen3.8-27B GSQ-RCO: https://github.com/Ryan-gsq/ninfer-16g-5070ti-5080-5090-qwen3.8-27b-gsq-rco

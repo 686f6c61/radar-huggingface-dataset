@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ads2009/english-ai-text-detector-electra-indomai` es un clasificador de texto publicado en HuggingFace por el usuario `ads2009`, etiquetado con la arquitectura `electra` y la tarea `text-classification`. Por el identificador y las etiquetas, su proposito declarado es la deteccion de texto generado por IA en ingles, aunque la model card no contiene ninguna descripcion funcional: es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`ads2009/english-ai-text-detector-electra-indomai` es un clasificador de texto publicado en Hugging Face por el usuario `ads2009`, etiquetado con la arquitectura `electra` y la tarea `text-classification`. Por el identificador y las etiquetas, su proposito declarado es la deteccion de texto generado por IA en ingles, aunque la model card no contiene ninguna descripcion funcional: es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 El checkpoint pesa 0,4 GB en safetensors y contiene 109.483.778 parametros, un orden de magnitud consistente con un encoder ELECTRA de escala base (discriminador). El repositorio solo incluye pesos en formato safetensors para `transformers`; no se publican versiones cuantizadas, ni datos de entrenamiento, ni hiperparametros, ni resultados de evaluacion.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y debe evaluarse con cautela: el modelo acumula
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | ELECTRA (encoder transformer con objetivo de deteccion de tokens reemplazados), segun el tag `electra` de HuggingFace; no confirmado en la model card |
+| Arquitectura | ELECTRA (encoder transformer con objetivo de deteccion de tokens reemplazados), segun el tag `electra` de Hugging Face; no confirmado en la model card |
 | Parametros totales | 109.483.778 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (la model card no lo indica) |
@@ -31,7 +31,7 @@ La unica informacion tecnica fiable es la derivada de los metadatos del reposito
 
 No hay ningun dato publicado sobre el entrenamiento: ni composicion del dataset, ni numero de tokens, ni si hubo ajuste fino supervisado, RLHF o DPO, ni hiperparametros, ni regimen de precision. El sufijo `indomai` del identificador apunta a un dataset o proyecto interno del autor que no esta documentado. Tampoco se especifica la longitud maxima de secuencia; en la familia ELECTRA base canonica el limite habitual es de 512 tokens, pero no hay confirmacion para este checkpoint concreto.
 
-Un detalle relevante para la trazabilidad: el tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, citado en la plantilla de model card de HuggingFace. No es el articulo de ELECTRA, por lo que no debe interpretarse como referencia metodologica del modelo. El articulo original de ELECTRA es arXiv:2003.10555.
+Un detalle relevante para la trazabilidad: el tag `arxiv:1910.09700` que aparece en los metadatos corresponde al articulo de Lacoste et al. (2019) sobre cuantificacion de emisiones de carbono, citado en la plantilla de model card de Hugging Face. No es el articulo de ELECTRA, por lo que no debe interpretarse como referencia metodologica del modelo. El articulo original de ELECTRA es arXiv:2003.10555.
 
 ## Capacidades
 
@@ -80,19 +80,19 @@ Los datos de los modelos comparativos corresponden a caracteristicas generales d
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace, sin informacion sobre datos, procedimiento, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face, sin informacion sobre datos, procedimiento, evaluacion ni uso previsto.
 - Licencia no disponible: sin licencia explicita no hay autorizacion clara para uso comercial ni para redistribucion. Es un bloqueo objetivo para cualquier despliegue en produccion.
 - Cero validacion externa: 0 descargas y 0 likes implican que no hay evidencias de uso, replicacion ni verificacion independiente del comportamiento del modelo.
 - Riesgo elevado de alucinacion de la propia tarea: un detector de texto IA puede producir falsos positivos sistematicos sobre textos humanos con estilo muy regular (informes tecnicos, traducciones, textos de hablantes no nativos) y falsos negativos sobre texto generado y posteriormente editado a mano.
 - Sesgo de dominio y de generador: no se documenta con que datos se ajusto, por lo que es probable un sesgo hacia el estilo y el generador concretos presentes en el conjunto de entrenamiento; el rendimiento puede degradarse frente a modelos de lenguaje posteriores.
 - Limitacion linguistica probable: el identificador indica "english", de modo que el uso con textos en castellano u otros idiomas no esta soportado ni medido.
 - Longitud de entrada desconocida: al no documentarse la ventana de contexto, secuencias largas pueden truncarse con un criterio por defecto, alterando la prediccion.
-- Trazabilidad: el tag `arxiv:1910.09700` no acredita el metodo del modelo, procede de la plantilla de HuggingFace. No debe citarse como referencia de arquitectura.
+- Trazabilidad: el tag `arxiv:1910.09700` no acredita el metodo del modelo, procede de la plantilla de Hugging Face. No debe citarse como referencia de arquitectura.
 - Uso responsable: cualquier decision con consecuencias academicas, laborales o legales no deberia automatizarse con esta puntuacion; requiere revision humana y contexto adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/english-ai-text-detector-electra-indomai
+- Modelo en Hugging Face: https://huggingface.co/ads2009/english-ai-text-detector-electra-indomai
 - Articulo original de ELECTRA (arquitectura referenciada por el tag, contexto): https://arxiv.org/abs/2003.10555
 - Articulo citado por el tag `arxiv:1910.09700` (Lacoste et al., 2019, cuantificacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning mencionada en la plantilla: https://mlco2.github.io/impact

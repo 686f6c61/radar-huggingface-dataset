@@ -106,7 +106,7 @@ El autor indica que kniv-v7-ultrabert-380m-en es preferible a su hermano DeBERTa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-ultrabert-380m-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-ultrabert-380m-en
 - Modelo hermano: https://huggingface.co/dragonscale-ai/kniv-v7-deberta-v3-large-en
 - Modelo base: https://huggingface.co/dmis-lab/UltraBERT-380M
 - Guia del autor (GUIDE.md): incluida en el repositorio del modelo (https://huggingface.co/dragonscale-ai/kniv-v7-ultrabert-380m-en/blob/main/GUIDE.md)

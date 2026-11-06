@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/ita_latn_10mb`, desarrollado por el usuario `francesca9805`. Se trata de un modelo de generacion de texto de pequeno tamano, con 39.087.104 parametros totales (aproximadamente 39 millones), construido sobre una arquitectura de tipo GPT-2 según la etiqueta declarada en el repositorio de HuggingFace. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.23.0.
+El modelo `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` es un ajuste fino (fine-tune) del modelo base `goldfish-models/ita_latn_10mb`, desarrollado por el usuario `francesca9805`. Se trata de un modelo de generacion de texto de pequeno tamano, con 39.087.104 parametros totales (aproximadamente 39 millones), construido sobre una arquitectura de tipo GPT-2 según la etiqueta declarada en el repositorio de Hugging Face. El entrenamiento se ha realizado mediante SFT (supervised fine-tuning) utilizando la libreria TRL en su version 0.23.0.
 
 El problema que aborda es el de los modelos de lenguaje de escala reducida orientados a investigacion linguistica y experimentacion con tokenizadores: el proyecto de Weights & Biases asociado se denomina "new-tokenizers", y el propio nombre del modelo incluye referencias a un corpus de 10 MB y a un empaquetado ("packed") de secuencias, lo que apunta a un experimento academico mas que a un modelo de produccion. Su relevancia es, por tanto, fundamentalmente metodologica: permite reproducir entrenamientos completos en hardware muy modesto y estudiar el efecto de decisiones de tokenizacion y de datos en un idioma concreto.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT con TRL sobre el modelo base Goldfish italiano |
-| `goldfish-models/ita_latn_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Modelo base declarado; entrenado por idioma sobre un corpus de 10 MB segun el nombre |
-| Otros miembros de la familia Goldfish (por ejemplo, variantes `*_latn_10mb` de otros idiomas) | no disponible | no disponible | no disponible | HuggingFace | Misma metodologia por idioma, utiles como referencia cruzada entre lenguas |
+| `francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10` | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT con TRL sobre el modelo base Goldfish italiano |
+| `goldfish-models/ita_latn_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Modelo base declarado; entrenado por idioma sobre un corpus de 10 MB segun el nombre |
+| Otros miembros de la familia Goldfish (por ejemplo, variantes `*_latn_10mb` de otros idiomas) | no disponible | no disponible | no disponible | Hugging Face | Misma metodologia por idioma, utiles como referencia cruzada entre lenguas |
 | GPT-2 small (referencia publica ampliamente conocida) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Alternativa generica multilingue de referencia; el triple de parametros que este modelo |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento real de este checkpoint con el de sus alternativas.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-10mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_10mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/3lr96rca
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TaskAnchor–π0.5 es un checkpoint de inferencia para robótica publicado por el usuario henry13522 en HuggingFace. Se trata de un ajuste fino del modelo π0.5 (pi05) de Physical Intelligence, orientado a tareas de manipulación robótica dentro del entorno de evaluación RoboMemArena. El modelo incorpora un módulo denominado TaskAnchor, que añade memoria temporal sobre la observación actual mediante la proyección de características visuales históricas, y está empaquetado en formato nativo JAX/Orbax (OCDBT), no en Safetensors.
+TaskAnchor–π0.5 es un checkpoint de inferencia para robótica publicado por el usuario henry13522 en Hugging Face. Se trata de un ajuste fino del modelo π0.5 (pi05) de Physical Intelligence, orientado a tareas de manipulación robótica dentro del entorno de evaluación RoboMemArena. El modelo incorpora un módulo denominado TaskAnchor, que añade memoria temporal sobre la observación actual mediante la proyección de características visuales históricas, y está empaquetado en formato nativo JAX/Orbax (OCDBT), no en Safetensors.
 
 El checkpoint corresponde al paso 50.000 de entrenamiento (50k), con un payload de inferencia de aproximadamente 10,86 GiB que incluye los pesos completos del backbone y del módulo TaskAnchor, además de tokenizador PaliGemma, estadísticas de normalización y assets de memoria. No se publican puntuaciones de benchmarks en el repositorio, y el código fuente de inferencia se anuncia como publicación separada en GitHub.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TaskAnchor–π0.5 (este) | no disponible | no disponible (191 frames historial) | sin benchmarks publicados | gemma-terms | HuggingFace, código pendiente |
+| TaskAnchor–π0.5 (este) | no disponible | no disponible (191 frames historial) | sin benchmarks publicados | gemma-terms | Hugging Face, código pendiente |
 | π0.5 (OpenPI) | no disponible en la información | no disponible | no disponible | según upstream | GitHub OpenPI |
 | RoboMemArena (entorno) | no aplica (entorno de evaluación) | no aplica | no aplica | no disponible | GitHub OpenHelix-Team |
 
@@ -83,7 +83,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/henry13522/Taskanchor
+- Hugging Face: https://huggingface.co/henry13522/Taskanchor
 - Licencia Gemma: https://huggingface.co/henry13522/Taskanchor/blob/main/LICENSE_GEMMA.txt
 - Términos Gemma: https://ai.google.dev/gemma/terms
 - OpenPI (upstream): https://github.com/Physical-Intelligence/openpi

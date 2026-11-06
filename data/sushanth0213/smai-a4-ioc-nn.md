@@ -96,6 +96,6 @@ No se dispone de datos de benchmarks de los modelos alternativos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sushanth0213/smai-a4-ioc-nn
+- Hugging Face: https://huggingface.co/Sushanth0213/smai-a4-ioc-nn
 - Proyecto WandB (run `ioc-p0`): https://forge.coreweave.com/wandb/sushanthmantrala-iiith/SMAI-A4-MLP
 - Dataset CIFAR-10: https://www.cs.toronto.edu/~kriz/cifar.html

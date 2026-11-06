@@ -72,9 +72,9 @@ Comparacion con las variantes de la misma serie MAYA y con el modelo base origin
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |--------|------------|----------|----------|----------------|
 | **Qwen3.6-35B-A3B-MAYA-oQ3.5e (este)** | 35B (MoE, 3B activos) | no disponible | Apache-2.0 | MLX, safetensors |
-| Qwen3.6-35B-A3B (base) | 35B (MoE, 3B activos) | 128k (estimado) | Apache-2.0 | HuggingFace |
+| Qwen3.6-35B-A3B (base) | 35B (MoE, 3B activos) | 128k (estimado) | Apache-2.0 | Hugging Face |
 | Qwen3.6-35B-A3B-MAYA-oQ4e-fp16 | 35B (MoE, 3B activos) | no disponible | Apache-2.0 | MLX, safetensors |
-| Llama 3.3 70B (referencia) | 70B (dense) | 128k | Llama 3.3 | HuggingFace |
+| Llama 3.3 70B (referencia) | 70B (dense) | 128k | Llama 3.3 | Hugging Face |
 
 El modelo se posiciona como una alternativa ligera a modelos densos de tamano similar, con un rendimiento competitivo en benchmarks de codigo y razonamiento, pero con un footprint de memoria mucho menor gracias al MoE y a la cuantizacion.
 
@@ -89,7 +89,7 @@ El modelo se posiciona como una alternativa ligera a modelos densos de tamano si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Variante fp16 recomendada: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ3.5e-fp16-mtp
 - Variante Q4e: https://huggingface.co/Robot-Haus/Qwen3.6-35B-A3B-MAYA-oQ4e-mtp

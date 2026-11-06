@@ -82,7 +82,7 @@ La cuantización oQ4e está orientada a hardware Apple y AMD, mientras que la va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jk797/Qwen3.8-27B-oQ4e-mtp
+- Modelo en Hugging Face: https://huggingface.co/jk797/Qwen3.8-27B-oQ4e-mtp
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre soporte de Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía completa de Qwen3.8-27B: https://lovableapp.org/blog/qwen3-8-27b

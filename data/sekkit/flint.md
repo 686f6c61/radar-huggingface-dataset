@@ -6,7 +6,7 @@ Flint es un modelo de lenguaje de tipo mixture-of-experts desarrollado por Recur
 
 La arquitectura es un transformer decoder-only con 49 capas (2 densas seguidas de 47 MoE), atención híbrida de 35 capas de ventana deslizante y 14 de atención completa, y 256 expertos enrutados por capa con 6 seleccionados por token más un experto compartido siempre activo. Se distribuye en BF16 con safetensors, licencia Apache 2.0, y el autor publica un kit de servicio para SGLang pensado para ejecutarse en una GPU B300 o H200 por réplica.
 
-Su relevancia inmediata es doble: por un lado, ofrece pesos abiertos con resultados declarados de 74,2% en SWE-bench Verified y 89,7% en SWE-bench Pro v2; por otro, Recursive afirma que su sistema Eureka Machine participó en casi toda la pila de construcción del modelo (datos, recetas de entrenamiento, infraestructura y optimización de inferencia), lo que convierte a Flint en un caso de estudio sobre investigación automatizada. El repositorio de HuggingFace indicado en la información disponible está bajo el espacio `sekkit`, mientras que la model card referencia `RecursiveSI/flint` como origen de descarga.
+Su relevancia inmediata es doble: por un lado, ofrece pesos abiertos con resultados declarados de 74,2% en SWE-bench Verified y 89,7% en SWE-bench Pro v2; por otro, Recursive afirma que su sistema Eureka Machine participó en casi toda la pila de construcción del modelo (datos, recetas de entrenamiento, infraestructura y optimización de inferencia), lo que convierte a Flint en un caso de estudio sobre investigación automatizada. El repositorio de Hugging Face indicado en la información disponible está bajo el espacio `sekkit`, mientras que la model card referencia `RecursiveSI/flint` como origen de descarga.
 
 ## Especificaciones técnicas
 
@@ -86,7 +86,7 @@ Ajustes de generación empleados en la evaluación: temperatura 1.0, top-p 0.95,
 
 | Modelo | Parámetros | Contexto | SWE-bench Verified | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Flint (Recursive) | 39,8B totales / ~2,5B activos | 262.144 | 74,2% | Apache 2.0 | Pesos abiertos en HuggingFace; servicio vía SGLang |
+| Flint (Recursive) | 39,8B totales / ~2,5B activos | 262.144 | 74,2% | Apache 2.0 | Pesos abiertos en Hugging Face; servicio vía SGLang |
 | Alternativas "locales" citadas en la model card | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card incluye una gráfica que compara Flint con "modelos locales que se ejecutan en hardware similar", pero no identifica a esos modelos ni aporta sus cifras en la información disponible. La prensa especializada sitúa a Flint frente a modelos como DeepSeek V4.1 Flash o Gemini 4 Argon, aunque sin datos comparativos verificables en las fuentes consultadas. No se dispone, por tanto, de una comparativa cuantitativa fiable con alternativas de la misma categoría.
@@ -101,13 +101,13 @@ La model card incluye una gráfica que compara Flint con "modelos locales que se
 - Variabilidad por runtime: los resultados dependen de la precisión del checkpoint y del motor de inferencia, por lo que conviene evaluar la combinación exacta que se vaya a desplegar.
 - Licencia: Apache 2.0 permite uso comercial de los pesos, pero los términos de la API alojada y las prácticas de datos son independientes de la licencia del modelo.
 - Madurez del ecosistema: el código de modelado para Transformers no está incluido y el despliegue documentado depende de SGLang y de una GPU B300 o H200, lo que limita las opciones de integración.
-- Trazabilidad del repositorio: el ID de HuggingFace indicado es `sekkit/flint`, mientras que la model card y las instrucciones de descarga apuntan a `RecursiveSI/flint`; conviene verificar el origen antes de desplegar en producción.
+- Trazabilidad del repositorio: el ID de Hugging Face indicado es `sekkit/flint`, mientras que la model card y las instrucciones de descarga apuntan a `RecursiveSI/flint`; conviene verificar el origen antes de desplegar en producción.
 - Validación externa: parte de los resultados y de las comparaciones proceden del propio desarrollador, y la prensa señala que las pruebas independientes publicadas han sido limitadas y basadas en benchmarks generados por la empresa.
 
 ## Enlaces
 
-- HuggingFace (ID indicado): https://huggingface.co/sekkit/flint
-- HuggingFace (organización del autor, referenciada en la model card): https://huggingface.co/RecursiveSI
+- Hugging Face (ID indicado): https://huggingface.co/sekkit/flint
+- Hugging Face (organización del autor, referenciada en la model card): https://huggingface.co/RecursiveSI
 - Blog de presentación: https://www.recursive.com/updates/introducing-recursive-flint
 - Motor local (GitHub): https://github.com/recursive-oss/rec
 - Documentación: https://docs.recursive.com/getting-started

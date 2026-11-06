@@ -2,7 +2,7 @@
 
 ## Resumen
 
-onca-3.0-12b-gguf es un modelo de lenguaje de 11.907.350.576 parámetros (aproximadamente 12 mil millones) publicado por el usuario Joesh1 en HuggingFace. Se distribuye en formato GGUF, lo que indica que está preparado para ejecutarse en local con herramientas como llama.cpp u Ollama. El modelo se publica bajo licencia Apache 2.0, que permite su uso comercial.
+onca-3.0-12b-gguf es un modelo de lenguaje de 11.907.350.576 parámetros (aproximadamente 12 mil millones) publicado por el usuario Joesh1 en Hugging Face. Se distribuye en formato GGUF, lo que indica que está preparado para ejecutarse en local con herramientas como llama.cpp u Ollama. El modelo se publica bajo licencia Apache 2.0, que permite su uso comercial.
 
 Sin embargo, la model card asociada no incluye información sobre la arquitectura, el contexto, los idiomas, el entrenamiento o las capacidades del modelo. Por tanto, la documentación disponible es mínima y el modelo debe considerarse como una distribución técnica sin especificaciones públicas adicionales.
 
@@ -55,4 +55,4 @@ No se dispone de información sobre modelos comparables en la documentación del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Joesh1/onca-3.0-12b-gguf
+- Hugging Face: https://huggingface.co/Joesh1/onca-3.0-12b-gguf

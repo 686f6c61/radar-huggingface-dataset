@@ -68,8 +68,8 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JONNYVERSE/grounding-dino-tiny-ONNX
-- Repositorio HuggingFace de la comunidad onnx-community (misma conversion): https://huggingface.co/onnx-community/grounding-dino-tiny-ONNX
+- Repositorio Hugging Face del modelo: https://huggingface.co/JONNYVERSE/grounding-dino-tiny-ONNX
+- Repositorio Hugging Face de la comunidad onnx-community (misma conversion): https://huggingface.co/onnx-community/grounding-dino-tiny-ONNX
 - Modelo original de IDEA-Research: https://huggingface.co/IDEA-Research/grounding-dino-tiny
 - Repositorio GitHub de despliegue en Jetson: https://github.com/Sep-AI/groundingdino-onnx-jetson
 - Documentacion de Transformers.js: https://huggingface.co/docs/transformers.js

@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks genericos (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Tarea | Rendimiento destacable | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d1-omni-600M-chess | 380,7 M (real) | Politica + value head de ajedrez | 62,5 % vs Stockfish 1700 Elo (busqueda 4-ply) | LFM Open License v1.0 | HuggingFace, ONNX para navegador |
-| LiquidAI/d1-omni-600M (base) | ~600 M (nominal) | Modelo de decision multimodal general | 1,9 % de puzzles de ajedrez sin entrenar | LFM Open License v1.0 | HuggingFace |
+| d1-omni-600M-chess | 380,7 M (real) | Politica + value head de ajedrez | 62,5 % vs Stockfish 1700 Elo (busqueda 4-ply) | LFM Open License v1.0 | Hugging Face, ONNX para navegador |
+| LiquidAI/d1-omni-600M (base) | ~600 M (nominal) | Modelo de decision multimodal general | 1,9 % de puzzles de ajedrez sin entrenar | LFM Open License v1.0 | Hugging Face |
 | Leela Chess Zero (Lc0) | Red residual ~40 bloques (decenas de millones, segun red) | Politica + value para ajedrez via MCTS | Superhumano con hardware GPU y busqueda amplia | Open source (varias redes) | Codigo abierto, redes descargables |
 | Stockfish (referencia, no neuronal puro) | no aplica (motor clasico + NNUE) | Motor de ajedrez | >3500 Elo con hardware modesto | GPL v3 | Codigo abierto, binarios para todo |
 
@@ -89,7 +89,7 @@ Frente a Leela Chess Zero, d1-omni-600M-chess es mucho mas ligero y ejecutable e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manoletre/d1-omni-600M-chess
+- Modelo en Hugging Face: https://huggingface.co/manoletre/d1-omni-600M-chess
 - Modelo base: https://huggingface.co/LiquidAI/d1-omni-600M
 - Demo jugable en navegador: https://manoletre.com/chess/d1
 - Explicacion del entrenamiento: https://manoletre.com/chess

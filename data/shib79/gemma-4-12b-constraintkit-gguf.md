@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-12b-constraintkit | ~12B | no disponible | 93% builds verificados; 57% builds honestos en peticiones nuevas | apache-2.0 | GGUF y LoRA en HuggingFace |
+| gemma-4-12b-constraintkit | ~12B | no disponible | 93% builds verificados; 57% builds honestos en peticiones nuevas | apache-2.0 | GGUF y LoRA en Hugging Face |
 | Modelo frontier con prompting (sin especificar) | no disponible | no disponible | 90-97% builds; 16% builds honestos en peticiones nuevas | no disponible | API propietaria |
 | Planners de constraint-kit por defecto (DeepSeek) | no disponible | no disponible | Se usa como planner alojado por defecto del sistema | no disponible | Servicio alojado |
 
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para comparar con otros modelos de text-to-CA
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shib79/gemma-4-12b-constraintkit-GGUF
+- Hugging Face: https://huggingface.co/shib79/gemma-4-12b-constraintkit-GGUF
 - Repositorio constraint-kit: https://github.com/jajmangold/constraint-kit
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo base del adaptador LoRA: https://huggingface.co/unsloth/gemma-4-12b-it

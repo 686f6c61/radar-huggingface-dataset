@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`akashkaur1109/paper-generation` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo para una arquitectura hibrida orientada a tareas de generacion. El autor lo describe explicitamente como un banco de pruebas ("experimental Hybrid codebase") con configuracion `tiny`, pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado: el fichero `model.safetensors` se presenta como un checkpoint de inicializacion valido para pruebas de humo ("smoke tests"), no como un modelo con rendimiento evaluado.
+`akashkaur1109/paper-generation` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo para una arquitectura hibrida orientada a tareas de generacion. El autor lo describe explicitamente como un banco de pruebas ("experimental Hybrid codebase") con configuracion `tiny`, pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es un modelo entrenado: el fichero `model.safetensors` se presenta como un checkpoint de inicializacion valido para pruebas de humo ("smoke tests"), no como un modelo con rendimiento evaluado.
 
 El modelo tiene 16.576 parametros totales segun los metadatos de safetensors, lo que lo situa en un orden de magnitud de juguete, muy por debajo de cualquier modelo de generacion de texto utilizable en produccion. La model card indica que la arquitectura combina atencion de tipo grouped query, fusion por co-attention, activacion mish y normalizacion instancenorm. La receta de entrenamiento por defecto usa el optimizador adafactor con un schedule onecycle, aunque el propio autor aclara que son valores de partida del script y no evidencia de una ejecucion completada.
 
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, `training_args.json` recoge la receta por defecto: o
 - Pruebas de humo en pipelines de integracion continua: al ocupar decenas de kilobytes, el checkpoint se puede cargar y descartar en cada commit para verificar que el codigo de sirving no se rompe.
 - Protocolo de evaluacion reproducible: partiendo de la receta adafactor + onecycle, se puede montar un banco de pruebas con tres semillas y una linea base de capacidad equivalente, tal como recomienda el propio autor.
 - Material docente: sirve para ilustrar en clase como se estructura un `config.json`, un `training_args.json` y un checkpoint de inicializacion en safetensors.
-- Desarrollo de adaptadores de carga: util para implementar y depurar el adaptador explicito que necesitan las APIs automaticas de HuggingFace con modelos de codigo propio.
+- Desarrollo de adaptadores de carga: util para implementar y depurar el adaptador explicito que necesitan las APIs automaticas de Hugging Face con modelos de codigo propio.
 - Comparativa de funciones de activacion y normalizacion: con 16.576 parametros, ejecutar barridos de mish frente a alternativas o instancenorm frente a layernorm es inmediato en CPU.
 - Punto de partida para escalado: antes de invertir en un entrenamiento a mayor escala, el repositorio permite validar que la topologia y el script de entrenamiento convergen en un caso minimo.
 
@@ -73,7 +73,7 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun modelo
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `akashkaur1109/paper-generation` | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace |
+| `akashkaur1109/paper-generation` | 16.576 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face |
 | Curvedo Academic Paper Generator | no disponible | no disponible | no disponible | no disponible (servicio propietario) | web |
 | Paperguide AI Paper Writer | no disponible | no disponible | no disponible | no disponible (servicio propietario) | web |
 | GenPaper | no disponible | no disponible | no disponible | no disponible (servicio propietario) | web |
@@ -93,7 +93,7 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akashkaur1109/paper-generation
+- Repositorio en Hugging Face: https://huggingface.co/akashkaur1109/paper-generation
 - Curvedo Academic Paper Generator: https://curvedo.com/
 - Paperguide AI Paper Writer: https://paperguide.ai/writer/
 - Musely Academic Content Generator: https://musely.ai/tools/academic-content-generator

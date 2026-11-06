@@ -97,7 +97,7 @@ Modelos alternativos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ollaya-dev/jeb
+- Repositorio Hugging Face: https://huggingface.co/ollaya-dev/jeb
 - Modelo base 4B: https://huggingface.co/frontier-infra/jebadiah-4b-v2-GGUF
 - Modelo base 9B: https://huggingface.co/frontier-infra/jebadiah-9b-v2-GGUF
 - Modelo base 27B: https://huggingface.co/frontier-infra/jebadiah-27b-GGUF

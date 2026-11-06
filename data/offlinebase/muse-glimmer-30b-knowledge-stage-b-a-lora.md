@@ -86,7 +86,7 @@ El autor indica que el adaptador falló el criterio de aceptación de 2 puntos t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage-B-A-LoRA
+- Repositorio Hugging Face: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-Knowledge-Stage-B-A-LoRA
 - Modelo Knowledge publicado: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge
 - LoRA de referencia con términos de licencia heredados: https://huggingface.co/OfflineBase/Muse-Glimmer-30B-2026-Knowledge-LoRA
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B (revisión `cec94fcfd6512f2cfe708138c32533b346ea4f69`)

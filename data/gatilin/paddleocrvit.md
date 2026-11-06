@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gatilin/PaddleOCRViT` es un repositorio de pesos publicado en HuggingFace por el usuario `gatilin`. El identificador y la ausencia de cualquier documentación asociada son los únicos datos verificables: la model card del autor contiene únicamente la declaración de licencia `apache-2.0`, sin descripción, sin instrucciones de uso, sin tabla de resultados y sin ejemplos de inferencia. El repositorio ocupa 1,9 GB y fue creado el 20 de septiembre de 2026, con una última actualización ese mismo día, lo que indica una publicación reciente y sin mantenimiento posterior documentado.
+`gatilin/PaddleOCRViT` es un repositorio de pesos publicado en Hugging Face por el usuario `gatilin`. El identificador y la ausencia de cualquier documentación asociada son los únicos datos verificables: la model card del autor contiene únicamente la declaración de licencia `apache-2.0`, sin descripción, sin instrucciones de uso, sin tabla de resultados y sin ejemplos de inferencia. El repositorio ocupa 1,9 GB y fue creado el 20 de septiembre de 2026, con una última actualización ese mismo día, lo que indica una publicación reciente y sin mantenimiento posterior documentado.
 
 El nombre del repositorio sugiere una combinación de PaddleOCR (la librería de OCR de PaddlePaddle) con un Vision Transformer, es decir, un modelo orientado al reconocimiento o detección de texto en imágenes. Esta interpretación es una inferencia a partir del identificador y no está confirmada por ninguna fuente: no hay pipeline declarado, ni idiomas declarados, ni ficha técnica, ni paper, ni repositorio de código enlazado.
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa fiable: faltan los datos minimos del pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gatilin/PaddleOCRViT | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| gatilin/PaddleOCRViT | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de OCR con Vision Transformer (familia PaddleOCR, TrOCR, Donut y similares) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No es posible establecer una comparativa fiable: faltan los datos minimos del pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/PaddleOCRViT
+- Hugging Face: https://huggingface.co/gatilin/PaddleOCRViT
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o documentacion del autor: no disponible

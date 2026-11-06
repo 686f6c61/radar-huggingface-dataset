@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UTRBERT-6mer es un modelo de lenguaje basado en la arquitectura BERT-base, preentrenado sobre secuencias de la región 3' UTR (región no traducida) de ARN mensajero humano. Se trata de un port minimalista a HuggingFace de la variante de 6-mer del modelo 3UTRBERT, desarrollado originalmente por Yang et al. (2024) para descifrar la regulación génica mediada por estas regiones. El modelo emplea una tokenización basada en k-meros solapados de ARN, lo que le permite capturar patrones locales de secuencia relevantes para la regulación traduccional y la unión de microARN.
+UTRBERT-6mer es un modelo de lenguaje basado en la arquitectura BERT-base, preentrenado sobre secuencias de la región 3' UTR (región no traducida) de ARN mensajero humano. Se trata de un port minimalista a Hugging Face de la variante de 6-mer del modelo 3UTRBERT, desarrollado originalmente por Yang et al. (2024) para descifrar la regulación génica mediada por estas regiones. El modelo emplea una tokenización basada en k-meros solapados de ARN, lo que le permite capturar patrones locales de secuencia relevantes para la regulación traduccional y la unión de microARN.
 
 Con 92,9 millones de parámetros, 12 capas y una dimensión de embedding de 768, UTRBERT-6mer sigue la configuración clásica de BERT-base pero con un vocabulario propio de 4101 tokens (5 especiales más los 4096 posibles 6-meros de ARN). Su ventana de contexto es de 512 tokens, equivalentes a hasta 515 nucleótidos crudos. El modelo se preentrenó con el objetivo de masked language modeling (MLM) sobre datos de 3' UTR humanos, y su relevancia actual radica en que proporciona representaciones interpretables de secuencias reguladoras, un área de creciente interés en biología computacional y diseño de ARN terapéutico.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: con 92,9 millones de parámetros, el modelo requiere aproximadamente 372 MB en float32, 186 MB en float16 y unos 93 MB en int8. Estas cifras son estimaciones basadas en el tamaño de parámetros y no incluyen memoria para activaciones ni el tokenizador.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en float32. Para fine-tuning, se recomienda una GPU con 8 GB o más (por ejemplo, RTX 3060, RTX 4070, A100). El modelo es compatible con GPUs consumer de gama media.
 - Despliegue en consumer GPU: sí, cabe en GPUs de 4 GB o menos si se usa cuantización o precisión mixta.
-- Opciones de despliegue: el modelo se integra con la librería transformers de HuggingFace, por lo que puede servirse con vLLM, TGI, o ejecutarse localmente con PyTorch. También es compatible con llama.cpp si se convierte a formato GGUF, aunque no se proporciona un archivo GGUF en el repositorio.
+- Opciones de despliegue: el modelo se integra con la librería transformers de Hugging Face, por lo que puede servirse con vLLM, TGI, o ejecutarse localmente con PyTorch. También es compatible con llama.cpp si se convierte a formato GGUF, aunque no se proporciona un archivo GGUF en el repositorio.
 - Latencia y throughput: no se han publicado mediciones. Como referencia, un BERT-base de tamaño similar procesa típicamente entre 100 y 500 secuencias por segundo en una GPU moderna (A100) con batch de 32, pero estos valores dependen del backend de atención y la longitud de las secuencias.
 
 ## Comparativa con modelos similares
@@ -85,8 +85,8 @@ No se dispone de datos de parámetros para las variantes 3mer, 4mer y 5mer en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/UTRBERT-6mer
-- Colección UTRBERT en HuggingFace: https://huggingface.co/collections/Taykhoom/utrbert-6a2059e7d24778aee83af7bc
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/UTRBERT-6mer
+- Colección UTRBERT en Hugging Face: https://huggingface.co/collections/Taykhoom/utrbert-6a2059e7d24778aee83af7bc
 - Repositorio original en GitHub: https://github.com/yangyn533/3UTRBERT
 - Implementación alternativa en MultiMolecule: https://github.com/DLS5-Omics/multimolecule/tree/master/multimolecule/models/utrbert
 - Paquete PyPI: https://pypi.org/project/UTRBERT/

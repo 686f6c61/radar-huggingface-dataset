@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, GSM8K, HumanEval u 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BudgieScribe-fr | 0,6 B | 4096 tokens | Normalizacion de texto ASR en frances | budgiescribe-license (Apache 2.0 + clausula de nombrado) | GGUF en HuggingFace |
-| BudgieScribe-en | no disponible | no disponible | Normalizacion de texto ASR en ingles | no disponible | GGUF en HuggingFace (hermano) |
+| BudgieScribe-fr | 0,6 B | 4096 tokens | Normalizacion de texto ASR en frances | budgiescribe-license (Apache 2.0 + clausula de nombrado) | GGUF en Hugging Face |
+| BudgieScribe-en | no disponible | no disponible | Normalizacion de texto ASR en ingles | no disponible | GGUF en Hugging Face (hermano) |
 | Qwen3-0.6B (base) | 0,6 B | no disponible en esta ficha | Modelo de lenguaje general | Apache 2.0 | Pesos originales |
 
 No se dispone de datos de benchmarks comparativos entre BudgieScribe-fr y otros normalizadores de texto para ASR en la informacion proporcionada, ni de modelos equivalentes de la misma categoria con metricas publicadas. Las alternativas citadas se limitan al modelo base y a su hermano en ingles.
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks comparativos entre BudgieScribe-fr y otros 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: flowcorp-ch/BudgieScribe-fr](https://huggingface.co/flowcorp-ch/BudgieScribe-fr)
+- [Modelo en Hugging Face: flowcorp-ch/BudgieScribe-fr](https://huggingface.co/flowcorp-ch/BudgieScribe-fr)
 - [Modelo hermano en ingles: flowcorp-ch/BudgieScribe-en](https://huggingface.co/flowcorp-ch/BudgieScribe-en)
 - [Licencia del modelo (LICENSE-MODEL)](https://huggingface.co/flowcorp-ch/BudgieScribe-fr/blob/main/LICENSE-MODEL)
 - [Repositorio de entrenamiento y evaluacion: github.com/gobudgie/budgie-scribe](https://github.com/gobudgie/budgie-scribe)

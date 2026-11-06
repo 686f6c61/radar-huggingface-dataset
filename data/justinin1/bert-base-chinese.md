@@ -6,7 +6,7 @@
 
 El modelo resuelve el problema de obtener representaciones contextuales bidireccionales del chino para tareas downstream (clasificación, NER, question answering extractivo, similitud semántica) y de rellenado de máscaras. Su relevancia actual es limitada: es un modelo de 2018, previo a la generalización de los LLM decoder-only, y su utilidad en 2026 se circunscribe a pipelines ligeros de NLP en chino donde el coste computacional y la latencia importan más que la generación abierta.
 
-El repositorio tiene 23 descargas y 0 likes, un tamaño de 1,7 GB (incluye pesos en PyTorch, TensorFlow, JAX y safetensors) y fue creado el 27 de octubre de 2026. No hay pipeline declarado en HuggingFace y la model card está mayoritariamente sin completar en las secciones de datos de entrenamiento y evaluación.
+El repositorio tiene 23 descargas y 0 likes, un tamaño de 1,7 GB (incluye pesos en PyTorch, TensorFlow, JAX y safetensors) y fue creado el 27 de octubre de 2026. No hay pipeline declarado en Hugging Face y la model card está mayoritariamente sin completar en las secciones de datos de entrenamiento y evaluación.
 
 ## Especificaciones tecnicas
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La se
 - VRAM estimada en FP16/BF16: aproximadamente 0,2 GB de pesos; en INT8, en torno a 0,1 GB.
 - GPU recomendadas: no requiere GPU dedicada; funciona en CPU para inferencia por lotes pequeños. En GPU, cualquier tarjeta consumer (GTX 1650, RTX 3060, RTX 4090) es sobradamente suficiente; A100/H100 solo tienen sentido para servir grandes volúmenes en paralelo.
 - Cabe en cualquier GPU consumer, incluida la gama de entrada, y en dispositivos con poca memoria.
-- Opciones de despliegue: HuggingFace Transformers (PyTorch/TF/JAX), TorchServe, ONNX Runtime, TGI (Text Generation Inference no aplica porque no es generativo; usar TGI no es el camino), vLLM no es adecuado para un encoder fill-mask, llama.cpp/Ollama no soportan este modelo de forma nativa.
+- Opciones de despliegue: Hugging Face Transformers (PyTorch/TF/JAX), TorchServe, ONNX Runtime, TGI (Text Generation Inference no aplica porque no es generativo; usar TGI no es el camino), vLLM no es adecuado para un encoder fill-mask, llama.cpp/Ollama no soportan este modelo de forma nativa.
 - Latencia y throughput: no disponibles en la información proporcionada. Por el tamaño, se espera un throughput alto en CPU y muy alto en GPU, pero no se aportan cifras medidas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| justinin1/bert-base-chinese | 102,9 M | 512 | zh | Apache 2.0 | HuggingFace (23 descargas) |
-| bert-base-chinese (Google) | 102,9 M | 512 | zh | Apache 2.0 | HuggingFace, modelo de referencia |
-| bert-base-multilingual-cased | 177,9 M | 512 | 104 idiomas | Apache 2.0 | HuggingFace |
-| roberta-base (chino: hfl/chinese-roberta-wwm-ext) | ~102 M | 512 | zh | Apache 2.0 | HuggingFace |
+| justinin1/bert-base-chinese | 102,9 M | 512 | zh | Apache 2.0 | Hugging Face (23 descargas) |
+| bert-base-chinese (Google) | 102,9 M | 512 | zh | Apache 2.0 | Hugging Face, modelo de referencia |
+| bert-base-multilingual-cased | 177,9 M | 512 | 104 idiomas | Apache 2.0 | Hugging Face |
+| roberta-base (chino: hfl/chinese-roberta-wwm-ext) | ~102 M | 512 | zh | Apache 2.0 | Hugging Face |
 
 La comparación se limita a parámetros, contexto, idioma y licencia porque no hay benchmarks publicados en la información disponible para este repositorio. Frente a `bert-base-chinese` de Google, este repositorio parece una copia redistribuida sin cambios documentados; frente a `hfl/chinese-roberta-wwm-ext`, la alternativa RoBERTa en chino suele ofrecer mejor rendimiento en tareas downstream, aunque no se dispone de cifras comparativas en esta ficha.
 
@@ -81,12 +81,12 @@ La comparación se limita a parámetros, contexto, idioma y licencia porque no h
 - Limitaciones de idioma: entrenado y evaluado únicamente en chino; no se debe asumir transferencia a otros idiomas.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia; no se documentan restricciones adicionales.
 - Caveat de procedencia: el repositorio es una redistribución con 0 likes y 23 descargas; no hay evidencia de validación independiente de los pesos. Para producción se recomienda contrastar con el modelo original de Google o con alternativas mantenidas activamente.
-- Ausencia de pipeline declarado en HuggingFace y de secciones clave de la model card (datos de entrenamiento, evaluación), lo que dificulta la auditoría del modelo.
+- Ausencia de pipeline declarado en Hugging Face y de secciones clave de la model card (datos de entrenamiento, evaluación), lo que dificulta la auditoría del modelo.
 - No apto para generación de texto, tool calling, agentes ni tareas multimodales.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justinin1/bert-base-chinese
+- Hugging Face: https://huggingface.co/justinin1/bert-base-chinese
 - Modelo original de referencia: https://huggingface.co/bert-base-uncased
 - Repositorio GitHub de BERT (Google Research): https://github.com/google-research/bert/blob/master/multilingual.md
 - Paper BERT: https://arxiv.org/abs/1810.04805

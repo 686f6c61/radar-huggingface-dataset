@@ -86,6 +86,6 @@ La comparacion con el modelo base es la mas directa: ZMRA DataAudit hereda sus c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zmra/ZMRA-DataAudit-0.5B
+- Modelo en Hugging Face: https://huggingface.co/zmra/ZMRA-DataAudit-0.5B
 - Portal oficial del autor: https://zmra.com
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

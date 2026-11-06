@@ -76,5 +76,5 @@ Nota: la comparativa se basa en caracteristicas estructurales y de licencia tipi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.hNA.sft4.step_2600
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.hNA.sft4.step_2600
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed3407` | 86,4 M | No disponible | No disponible (base en ingles) | No disponible | HuggingFace, 0 descargas |
-| `goldfish-models/eng_latn_100mb` (modelo base) | 86,4 M (mismo recuento, al ser un ajuste fino) | No disponible | `eng_latn` (ingles) | No disponible en la informacion proporcionada | HuggingFace |
-| Otros checkpoints de la misma serie (`ppt-wc-*`, semillas alternativas) | 86,4 M | No disponible | No disponible | No disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | Ingles | MIT (terminos publicos del modelo original) | HuggingFace, ampliamente desplegado |
+| `fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed3407` | 86,4 M | No disponible | No disponible (base en ingles) | No disponible | Hugging Face, 0 descargas |
+| `goldfish-models/eng_latn_100mb` (modelo base) | 86,4 M (mismo recuento, al ser un ajuste fino) | No disponible | `eng_latn` (ingles) | No disponible en la informacion proporcionada | Hugging Face |
+| Otros checkpoints de la misma serie (`ppt-wc-*`, semillas alternativas) | 86,4 M | No disponible | No disponible | No disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | Ingles | MIT (terminos publicos del modelo original) | Hugging Face, ampliamente desplegado |
 
 La comparacion con GPT-2 small se incluye como referencia de categoria por tamano, pero los datos de GPT-2 small no provienen de la informacion proporcionada en esta busqueda y deben verificarse en su repositorio oficial. No se dispone de comparaciones de rendimiento entre estos modelos.
 
@@ -89,7 +89,7 @@ La comparacion con GPT-2 small se incluye como referencia de categoria por taman
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/kyltbtyk

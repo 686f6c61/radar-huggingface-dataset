@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- [HuggingFace: mlx-community/GLM-5.3-DQ4-Q5-q8](https://huggingface.co/mlx-community/GLM-5.3-DQ4-Q5-q8)
+- [Hugging Face: mlx-community/GLM-5.3-DQ4-Q5-q8](https://huggingface.co/mlx-community/GLM-5.3-DQ4-Q5-q8)
 - [Modelo base: zai-org/GLM-5.3-BF16](https://huggingface.co/zai-org/GLM-5.3-BF16)
 - [Paper: Quantitative Analysis of Performance Drop in DeepSeek Model Quantization](https://arxiv.org/abs/2505.02390)
 - [Documentación de Z.ai sobre GLM-5.3](https://docs.z.ai/guides/llm/glm-5.3)

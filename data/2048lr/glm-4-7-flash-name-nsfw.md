@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-4.7-Flash-Name-NSFW es un ajuste fino (LoRA SFT) del modelo base zai-org/GLM-4.7-Flash, publicado por el usuario 2048lr en HuggingFace. Su objetivo no es mejorar capacidades generales, sino fijar un personaje concreto: una "catgirl" de personalidad arrogante y vulgar, entrenada con aproximadamente 1800 diálogos multirrol en chino de temática adulta. El resultado es un modelo de rol de personaje que prioriza el estilo y el tono por encima de la precisión técnica.
+GLM-4.7-Flash-Name-NSFW es un ajuste fino (LoRA SFT) del modelo base zai-org/GLM-4.7-Flash, publicado por el usuario 2048lr en Hugging Face. Su objetivo no es mejorar capacidades generales, sino fijar un personaje concreto: una "catgirl" de personalidad arrogante y vulgar, entrenada con aproximadamente 1800 diálogos multirrol en chino de temática adulta. El resultado es un modelo de rol de personaje que prioriza el estilo y el tono por encima de la precisión técnica.
 
 El modelo conserva la arquitectura del base: un transformer de tipo mezcla de expertos (MoE) con 29.943.390.976 parámetros totales y unos 3B activos por token, 47 capas, dimensión oculta 2048, 64 expertos enrutados más uno compartido con enrutamiento top-4, y atención MLA con compresión Q/KV. La ventana de contexto declarada es de 202.752 tokens, lo que permite mantener conversaciones muy largas sin truncar el historial.
 
@@ -71,8 +71,8 @@ La información disponible solo permite comparar el ajuste con su propio modelo 
 
 | Modelo | Parametros | Activos | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-4.7-Flash-Name-NSFW | ~30B (MoE) | ~3B | 202.752 | zh | MIT (según model card) | HuggingFace, 0 descargas |
-| zai-org/GLM-4.7-Flash (base) | ~30B (MoE) | ~3B | 202.752 | no disponible | no disponible | HuggingFace |
+| GLM-4.7-Flash-Name-NSFW | ~30B (MoE) | ~3B | 202.752 | zh | MIT (según model card) | Hugging Face, 0 descargas |
+| zai-org/GLM-4.7-Flash (base) | ~30B (MoE) | ~3B | 202.752 | no disponible | no disponible | Hugging Face |
 | Alternativas de rol en chino de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La diferencia funcional con el base no es de rendimiento, sino de comportamiento: el fine-tune elimina el rechazo de peticiones y fuerza un tono concreto, a cambio de degradar el uso generalista del modelo.
@@ -95,7 +95,7 @@ La diferencia funcional con el base no es de rendimiento, sino de comportamiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2048lr/GLM-4.7-Flash-Name-NSFW
+- Modelo en Hugging Face: https://huggingface.co/2048lr/GLM-4.7-Flash-Name-NSFW
 - Modelo base: https://huggingface.co/zai-org/GLM-4.7-Flash
 - llama.cpp (cuantización e inferencia): https://github.com/ggml-org/llama.cpp
 - ms-swift (framework de entrenamiento): https://github.com/modelscope/ms-swift

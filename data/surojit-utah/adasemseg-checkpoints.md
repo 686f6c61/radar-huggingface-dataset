@@ -85,14 +85,14 @@ ProtoSemSeg es el baseline prototípico de referencia en el paper, disponible ta
 - El modelo es exclusivamente para segmentación de imágenes; no tiene capacidades de lenguaje, tool calling o agentes.
 - Solo se han validado tres datasets sísmicos (F3, Parihaka, Penobscot); la generalización a otros dominios (p. ej., segmentación médica) es una afirmación teórica no validada experimentalmente en esta publicación.
 - El rendimiento reportado depende de la calidad y representatividad del support set; en escenarios con support sets muy atípicos, el rendimiento puede degradarse.
-- La carga del modelo requiere el código del repositorio GitHub; no hay un pipeline de HuggingFace que permita una integración directa, lo que dificulta su uso en producción con herramientas estándar.
+- La carga del modelo requiere el código del repositorio GitHub; no hay un pipeline de Hugging Face que permita una integración directa, lo que dificulta su uso en producción con herramientas estándar.
 - No se han publicado resultados de benchmarks en la información disponible (no hay datos de MMLU, HumanEval, etc., al no ser un modelo de lenguaje).
 - No hay información sobre sesgos o riesgos de alucinación, ya que no es un modelo generativo de texto; en el contexto de segmentación, el riesgo principal es la clasificación errónea de facies en áreas de baja señal.
 - La licencia MIT permite uso comercial, pero se recomienda revisar el paper y el código para entender las limitaciones de la metodología.
 
 ## Enlaces
 
-- HuggingFace (checkpoints): https://huggingface.co/Surojit-Utah/adasemseg-checkpoints
+- Hugging Face (checkpoints): https://huggingface.co/Surojit-Utah/adasemseg-checkpoints
 - GitHub (código y reproducción): https://github.com/Surojit-Utah/AdaSemSeg
 - Paper (arXiv): https://arxiv.org/abs/2501.16760
 - PDF del paper: https://surojit-utah.github.io/files/AdaSemSeg.pdf

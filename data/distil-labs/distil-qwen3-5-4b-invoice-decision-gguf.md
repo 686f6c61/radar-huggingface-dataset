@@ -79,9 +79,9 @@ Composición del conjunto de prueba: 32 facturas aprobables (20 de ellas casos l
 
 | Modelo | Parámetros | Contexto | Decisiones correctas (100 facturas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Distil-Qwen3.5-4B-Invoice-Decision | 4,2 mil millones | no especificado (ejemplo con 16.384) | 98 | Apache 2.0 | GGUF Q8_0 y safetensors en HuggingFace |
-| Qwen3.5-4B sin ajustar (base) | 4 mil millones (según el modelo base) | no disponible | 0,41 con LLM como juez | según el modelo base Qwen/Qwen3.5-4B | HuggingFace |
-| Distil-Qwen3.5-4B-Invoice-Grounded-Decision (variante hermana) | 4,2 mil millones | no especificado | no disponible en esta información | Apache 2.0 | HuggingFace |
+| Distil-Qwen3.5-4B-Invoice-Decision | 4,2 mil millones | no especificado (ejemplo con 16.384) | 98 | Apache 2.0 | GGUF Q8_0 y safetensors en Hugging Face |
+| Qwen3.5-4B sin ajustar (base) | 4 mil millones (según el modelo base) | no disponible | 0,41 con LLM como juez | según el modelo base Qwen/Qwen3.5-4B | Hugging Face |
+| Distil-Qwen3.5-4B-Invoice-Grounded-Decision (variante hermana) | 4,2 mil millones | no especificado | no disponible en esta información | Apache 2.0 | Hugging Face |
 | GLM 5.3 (profesor, razonamiento alto) | no disponible | no disponible | 96 | no disponible | no disponible |
 | GPT-5.6 Luna (razonamiento alto / desactivado) | no disponible | no disponible | 100 / 81 | propietaria | API |
 | Gemini 3.5 Flash Lite | no disponible | no disponible | 76 | propietaria | API |
@@ -104,7 +104,7 @@ La comparación directa en parámetros, contexto o licencia con los modelos fron
 
 ## Enlaces
 
-- Modelo en HuggingFace (GGUF): https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision-gguf
+- Modelo en Hugging Face (GGUF): https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision-gguf
 - Pesos en safetensors: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision
 - Variante con decisión fundamentada: https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
@@ -112,7 +112,7 @@ La comparación directa en parámetros, contexto o licencia con los modelos fron
 - Datos semilla, conjunto de prueba y configuración: https://github.com/distil-labs/invoice-processing-pipeline/tree/main/training/decider
 - Plataforma distil labs: https://www.distillabs.ai
 - Organización en GitHub: https://github.com/distil-labs
-- Organización en HuggingFace: https://huggingface.co/distil-labs
+- Organización en Hugging Face: https://huggingface.co/distil-labs
 - LinkedIn: https://www.linkedin.com/company/distil-labs/
 - Comunidad en Slack: https://distil-labs-community.slack.com/join/shared_invite (URL truncada en la model card)
 - Resultados de la búsqueda web: sin resultados relevantes sobre el modelo; solo listados de ofertas de empleo sin relación con la consulta.

@@ -96,7 +96,7 @@ No se dispone de benchmarks comparativos entre estas variantes en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/SyrupOfMaple/qwen36-35b-chs-medical-research-gguf
+- Repositorio Hugging Face del modelo: https://huggingface.co/SyrupOfMaple/qwen36-35b-chs-medical-research-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantización GGUF del base por unsloth: https://huggingface.co/unsloth/Qwen3.6-35B-A3B-GGUF
 - Cuantización GGUF del base por unsloth en ModelScope: https://www.modelscope.cn/models/unsloth/Qwen3.6-35B-A3B-GGUF

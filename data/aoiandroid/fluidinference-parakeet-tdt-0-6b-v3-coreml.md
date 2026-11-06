@@ -16,7 +16,7 @@ Es relevante ahora porque permite desplegar un modelo ASR de tamano medio en dis
 | Parametros totales | 0,6 mil millones (0.6B), segun el nombre del modelo; no confirmado en la model card |
 | Parametros activos | no aplica (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible; el repositorio contiene 86 archivos por un total de 3586,1 MB (2,5 GB segun los metadatos de HuggingFace) |
+| Tipos de cuantizacion | no disponible; el repositorio contiene 86 archivos por un total de 3586,1 MB (2,5 GB segun los metadatos de Hugging Face) |
 | Idiomas soportados | no disponible |
 | Licencia | cc-by-4.0 |
 | Formato de pesos | CoreML (conversion para el ecosistema Apple); el repositorio no incluye safetensors ni GGUF |
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo (WER) para el modelo de esta f
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/aoiandroid/FluidInference-parakeet-tdt-0.6b-v3-coreml
+- Repositorio en Hugging Face (espejo): https://huggingface.co/aoiandroid/FluidInference-parakeet-tdt-0.6b-v3-coreml
 - Repositorio original: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
 - Commit de origen: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml/tree/7dd20fe6b1797d35f5e3307e8b1732d9a178edfe
 - Papers, blogs, repositorios o demos adicionales: no disponibles; la busqueda web no devolvio resultados relevantes para este modelo.

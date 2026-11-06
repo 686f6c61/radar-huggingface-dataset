@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DRS_LoRA es un adaptador LoRA para el modelo de difusion texto-a-imagen Stable Diffusion XL (SDXL) base 1.0, desarrollado por el usuario ilamor y publicado en HuggingFace. Se trata de un ajuste fino mediante DreamBooth que permite incorporar un concepto o estilo concreto, activado por la palabra disparadora "DRS", sobre la base de SDXL. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA de rango bajo y no con un modelo completo.
+DRS_LoRA es un adaptador LoRA para el modelo de difusion texto-a-imagen Stable Diffusion XL (SDXL) base 1.0, desarrollado por el usuario ilamor y publicado en Hugging Face. Se trata de un ajuste fino mediante DreamBooth que permite incorporar un concepto o estilo concreto, activado por la palabra disparadora "DRS", sobre la base de SDXL. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador LoRA de rango bajo y no con un modelo completo.
 
 El modelo resuelve el problema de personalizacion de SDXL sin necesidad de reentrenar los pesos completos: el adaptador se carga junto al modelo base y modifica la generacion para reproducir el concepto aprendido. Es relevante para desarrolladores que quieran integrar una identidad visual concreta en pipelines de generacion de imagenes con diffusers, manteniendo el resto de capacidades de SDXL.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Tamano del adaptador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ilamor/DRS_LoRA | LoRA DreamBooth | SDXL base 1.0 | 0,2 GB | openrail++ | HuggingFace |
+| ilamor/DRS_LoRA | LoRA DreamBooth | SDXL base 1.0 | 0,2 GB | openrail++ | Hugging Face |
 | Alternativas LoRA sobre SDXL | LoRA DreamBooth | SDXL base 1.0 | no disponible | variable | no disponible |
 | Alternativas LoRA sobre SD 1.5 | LoRA DreamBooth | SD 1.5 | no disponible | variable | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos comparables especificos con los que c
 
 ## Enlaces
 
-- [HuggingFace: ilamor/DRS_LoRA](https://huggingface.co/ilamor/DRS_LoRA)
+- [Hugging Face: ilamor/DRS_LoRA](https://huggingface.co/ilamor/DRS_LoRA)
 - [Modelo base: stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 - [DreamBooth (paper)](https://dreambooth.github.io/)
 - [VAE utilizado en entrenamiento: madebyollin/sdxl-vae-fp16-fix](https://huggingface.co/madebyollin/sdxl-vae-fp16-fix)

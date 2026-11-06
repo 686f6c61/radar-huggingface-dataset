@@ -112,7 +112,7 @@ La conclusión de la tabla es que las mezclas de este repositorio ofrecen una pe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/regrtghsreg/Qwen3.6-35B-A3B-MixDense-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/regrtghsreg/Qwen3.6-35B-A3B-MixDense-GGUF
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantizaciones de origen (Unsloth): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 - Script de empalme `splice_gguf.py`: no disponible como enlace público en la información proporcionada.

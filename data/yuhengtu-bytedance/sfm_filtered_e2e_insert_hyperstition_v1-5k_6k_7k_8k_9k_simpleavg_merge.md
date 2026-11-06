@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente metodológica: sirve como caso de estudio de *
 | Longitud de contexto | No disponible |
 | Tipos de cuantización | No disponible (solo se publican pesos en `bfloat16`; no hay variantes GGUF, GPTQ ni AWQ en el repositorio) |
 | Idiomas soportados | No disponible |
-| Licencia | No disponible (el campo de licencia aparece vacío en HuggingFace) |
+| Licencia | No disponible (el campo de licencia aparece vacío en Hugging Face) |
 | Formato de pesos | `safetensors` (`bfloat16`; cálculo de la fusión en `float32`) |
 
 ## Arquitectura y entrenamiento
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`sfm_filtered_e2e_insert_hyperstition_v1-...simpleavg_merge`) | 6,86 B | No disponible | No disponible | safetensors (bf16) | HuggingFace, 0 descargas, 0 likes |
+| Este modelo (`sfm_filtered_e2e_insert_hyperstition_v1-...simpleavg_merge`) | 6,86 B | No disponible | No disponible | safetensors (bf16) | Hugging Face, 0 descargas, 0 likes |
 | GPT-J-6B (EleutherAI) | ~6,05 B | 2048 tokens | Apache 2.0 | safetensors, GGUF, GPTQ | Ampliamente distribuido y validado |
 | Pythia-6.9B (EleutherAI) | ~6,86 B | 2048 tokens | Apache 2.0 | safetensors | Ampliamente distribuido, con 154 checkpoints públicos y benchmarks publicados |
 | Mistral-7B-v0.1 | ~7,24 B | 8192 tokens | Apache 2.0 | safetensors, GGUF, GPTQ, AWQ | Muy extendido, con ecosistema de cuantizaciones |
@@ -88,7 +88,7 @@ La comparación es estructural: este merge iguala en tamaño a Pythia-6.9B y sup
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_8k_9k_simpleavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Artículo de *model soups* (método `linear`): https://arxiv.org/abs/2203.05482
 - Búsqueda web realizada: no se encontró ningún resultado relevante sobre este modelo. Los enlaces devueltos correspondían a páginas de descarga de aplicaciones de apuestas (APKPure, Uptodown, Google Play) sin relación alguna con el repositorio, por lo que se omiten.

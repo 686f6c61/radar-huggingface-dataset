@@ -67,8 +67,8 @@ No se conservaron las puntuaciones del baseline, por lo que no se declara mejora
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OncoReason-v035-QLoRA-adapter | Adaptador sobre base 4B | No disponible | Clasificacion acotada A/B/C | other (research-only) | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Thinking-2507 (base) | 4B | No disponible | Razonamiento general | No disponible en la informacion | HuggingFace |
+| OncoReason-v035-QLoRA-adapter | Adaptador sobre base 4B | No disponible | Clasificacion acotada A/B/C | other (research-only) | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Thinking-2507 (base) | 4B | No disponible | Razonamiento general | No disponible en la informacion | Hugging Face |
 | Alternativas de clasificacion medica | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con otros adaptadores o modelos de la misma categoria en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con otros adaptadores o modelo
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/therayelab/OncoReason-v035-QLoRA-adapter
+- Hugging Face del adaptador: https://huggingface.co/therayelab/OncoReason-v035-QLoRA-adapter
 - Dataset: https://huggingface.co/datasets/therayelab/oncoreason-v0.35-reasoning-research-candidate
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Informe de evaluacion: `evaluation_report.md` y `evaluation_report.json` (referenciados en la model card, no enlazados de forma directa)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Ziyilstc/review-embodied-ai` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre IA encarnada (embodied AI) publicado en HuggingFace bajo la etiqueta `research-notes`. El artefacto principal es un documento Markdown (`reading.md`) que estructura el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados, contexto de evaluacion y preguntas abiertas, junto con un `README.md` de documentacion.
+`Ziyilstc/review-embodied-ai` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre IA encarnada (embodied AI) publicado en Hugging Face bajo la etiqueta `research-notes`. El artefacto principal es un documento Markdown (`reading.md`) que estructura el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con baselines emparejados, contexto de evaluacion y preguntas abiertas, junto con un `README.md` de documentacion.
 
-Aunque la ficha de HuggingFace incluye la etiqueta `transformer` y un recuento de parametros de 49.600 segun los metadatos de safetensors, el propio autor declara explicitamente en la model card que el material "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado". El repositorio ocupa 0.0 GB y sus unicos ficheros declarados son dos documentos de texto; no contiene pesos utilizables para inferencia.
+Aunque la ficha de Hugging Face incluye la etiqueta `transformer` y un recuento de parametros de 49.600 segun los metadatos de safetensors, el propio autor declara explicitamente en la model card que el material "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado". El repositorio ocupa 0.0 GB y sus unicos ficheros declarados son dos documentos de texto; no contiene pesos utilizables para inferencia.
 
 Su relevancia es, por tanto, documental y metodologica: sirve como punto de partida para verificar referencias y disenar un protocolo experimental sobre IA encarnada, no como componente desplegable en produccion. Cualquier uso que presuponga generacion de texto, vision o control robotico es inviable con este artefacto.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | sin resultados publicados | no disponible |
 | Licencia | cc-by-4.0 | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta | no disponible |
 
 No se identifican modelos comparables en la informacion proporcionada, porque el objeto no es un modelo de aprendizaje automatico: no compite en la misma categoria que un LLM, un modelo de vision o una politica para robotica. Compararlo con estos seria metodologicamente incorrecto ya que carece de parametros efectivos, contexto, pesos y evaluacion.
 
@@ -87,7 +87,7 @@ No se identifican modelos comparables en la informacion proporcionada, porque el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ziyilstc/review-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/Ziyilstc/review-embodied-ai
 - Fichero principal citado en la model card: `reading.md` (dentro del repositorio)
 - Documentacion citada en la model card: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles.

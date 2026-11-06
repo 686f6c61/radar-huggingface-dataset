@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180` es un checkpoint publicado en HuggingFace por el usuario `zjhhhh`. El nombre del repositorio indica que se trata de un ajuste mediante aprendizaje por refuerzo (prefijo `maxrl`) sobre el modelo base Qwen3-4B-Base (segmento `qwen3-4b-base`), entrenado durante una epoca sobre un conjunto de datos denominado `polaris53k` y guardado en el paso 180 del entrenamiento. No se trata, por tanto, de un modelo nuevo entrenado desde cero, sino de una variante derivada de la familia Qwen3 con un postentrenamiento especifico.
+`zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180` es un checkpoint publicado en Hugging Face por el usuario `zjhhhh`. El nombre del repositorio indica que se trata de un ajuste mediante aprendizaje por refuerzo (prefijo `maxrl`) sobre el modelo base Qwen3-4B-Base (segmento `qwen3-4b-base`), entrenado durante una epoca sobre un conjunto de datos denominado `polaris53k` y guardado en el paso 180 del entrenamiento. No se trata, por tanto, de un modelo nuevo entrenado desde cero, sino de una variante derivada de la familia Qwen3 con un postentrenamiento especifico.
 
 La relevancia de este tipo de publicaciones es doble. Por un lado, los checkpoints intermedios de procesos de RL sobre modelos pequenos (4B) son utiles para estudiar la dinamica del entrenamiento y para reproducir recetas de alineamiento a bajo coste. Por otro, el sufijo `step_180` sugiere que se trata de una instantanea intermedia y no necesariamente del punto final del entrenamiento, lo que condiciona su uso en produccion.
 
-La informacion disponible en la ficha de HuggingFace es muy limitada: cero descargas, un "like", sin pipeline declarado, sin licencia, sin idiomas y sin model card descriptiva. El repositorio ocupa 49,8 GB, un tamano muy superior al de los pesos de un modelo de 4B en bf16 (unos 8 GB), lo que apunta a que contiene pesos junto con estados del optimizador u otras instantaneas del entrenamiento. Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo.
+La informacion disponible en la ficha de Hugging Face es muy limitada: cero descargas, un "like", sin pipeline declarado, sin licencia, sin idiomas y sin model card descriptiva. El repositorio ocupa 49,8 GB, un tamano muy superior al de los pesos de un modelo de 4B en bf16 (unos 8 GB), lo que apunta a que contiene pesos junto con estados del optimizador u otras instantaneas del entrenamiento. Los resultados de la busqueda web realizada no contienen informacion relevante sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -28,7 +28,7 @@ La informacion disponible en la ficha de HuggingFace es muy limitada: cero desca
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la ficha de HuggingFace. Por el identificador del repositorio, el modelo parte de Qwen3-4B-Base, un transformer causal denso de tipo decoder-only. No hay confirmacion de la configuracion concreta de capas, dimension del modelo oculto, numero de cabezas de atencion ni del uso de atencion lineal o hibrida.
+No se ha publicado informacion sobre la arquitectura en la ficha de Hugging Face. Por el identificador del repositorio, el modelo parte de Qwen3-4B-Base, un transformer causal denso de tipo decoder-only. No hay confirmacion de la configuracion concreta de capas, dimension del modelo oculto, numero de cabezas de atencion ni del uso de atencion lineal o hibrida.
 
 Respecto al entrenamiento, el identificador sugiere un proceso de aprendizaje por refuerzo (`maxrl`) sobre el conjunto de datos `polaris53k`, con una sola epoca y un checkpoint guardado en el paso 180. No se especifica el algoritmo de RL empleado (PPO, GRPO, DPO u otro), la composicion del dataset, el numero de tokens vistos, ni si hubo etapas previas de ajuste supervisado. Tampoco se documentan innovaciones tecnicas adicionales como decodificacion especulativa o modos de razonamiento explicito.
 
@@ -79,11 +79,11 @@ Los datos de las alternativas corresponden a sus fichas publicas de modelo base 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180 | 4B (segun identificador) | No disponible | No disponible | Checkpoint intermedio en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Base | 4B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Publico en HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | 262.144 tokens | Apache 2.0 | Publico en HuggingFace |
-| meta-llama/Llama-3.2-3B | 3B | 128.000 tokens | Llama 3.2 Community License | Publico en HuggingFace |
-| google/gemma-3-4b-it | 4B | 128.000 tokens | Gemma Terms of Use | Publico en HuggingFace |
+| zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180 | 4B (segun identificador) | No disponible | No disponible | Checkpoint intermedio en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Base | 4B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Publico en Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | 262.144 tokens | Apache 2.0 | Publico en Hugging Face |
+| meta-llama/Llama-3.2-3B | 3B | 128.000 tokens | Llama 3.2 Community License | Publico en Hugging Face |
+| google/gemma-3-4b-it | 4B | 128.000 tokens | Gemma Terms of Use | Publico en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ Los datos de las alternativas corresponden a sus fichas publicas de modelo base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180
+- Modelo en Hugging Face: https://huggingface.co/zjhhhh/maxrl-qwen3-4b-base-polaris53k-1epoch-step_180
 - Modelo base presumible, Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Familia Qwen3, blog tecnico: https://qwenlm.github.io/blog/qwen3/
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; los resultados devueltos corresponden a la plataforma Roblox y no guardan relacion con el modelo analizado.

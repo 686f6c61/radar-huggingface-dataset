@@ -70,10 +70,10 @@ Definiciones: acuerdo = mismo movimiento que la mayoria de los 9 profesores Hous
 
 | Modelo | Parametros | Contexto | Acuerdo | Filtraciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Genaro Poker 0.6B | 596 M | 4096 | 78,5% | 0,0% | Apache 2.0 | HuggingFace (safetensors + GGUF) |
-| Qwen3 0.6B (base) | 596 M | no disponible | 46,0% | 10,5% | Apache 2.0 | HuggingFace |
-| LFM2.5 1.2B | 1,2 B | no disponible | 55,8% | 2,6% | no disponible | HuggingFace |
-| Genaro Poker 1.7B | 1,7 B (aproximado) | no disponible | no disponible | no disponible | Apache 2.0 (heredada) | HuggingFace |
+| Genaro Poker 0.6B | 596 M | 4096 | 78,5% | 0,0% | Apache 2.0 | Hugging Face (safetensors + GGUF) |
+| Qwen3 0.6B (base) | 596 M | no disponible | 46,0% | 10,5% | Apache 2.0 | Hugging Face |
+| LFM2.5 1.2B | 1,2 B | no disponible | 55,8% | 2,6% | no disponible | Hugging Face |
+| Genaro Poker 1.7B | 1,7 B (aproximado) | no disponible | no disponible | no disponible | Apache 2.0 (heredada) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ Definiciones: acuerdo = mismo movimiento que la mayoria de los 9 profesores Hous
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/predbrad/Genaro-poker
+- Modelo en Hugging Face: https://huggingface.co/predbrad/Genaro-poker
 - Modelo hermano 1.7B: https://huggingface.co/predbrad/Genaro-poker-1.7B
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/predbrad/genaro-poker-sft

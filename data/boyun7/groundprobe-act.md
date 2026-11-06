@@ -84,8 +84,8 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de l
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GroundProbe-ACT (`delta_pose`) | ACT, manipulacion pick-and-place simulada | no disponible | no aplica (chunk de 50 acciones) | 85% en layouts de entrenamiento | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
-| GroundProbe-ACT (`joint`) | ACT, manipulacion pick-and-place simulada | no disponible | no aplica (chunk de 50 acciones) | 80% en entrenamiento, 40% en validacion, 25% fuera de distribucion | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| GroundProbe-ACT (`delta_pose`) | ACT, manipulacion pick-and-place simulada | no disponible | no aplica (chunk de 50 acciones) | 85% en layouts de entrenamiento | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
+| GroundProbe-ACT (`joint`) | ACT, manipulacion pick-and-place simulada | no disponible | no aplica (chunk de 50 acciones) | 80% en entrenamiento, 40% en validacion, 25% fuera de distribucion | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | ACT original (Zhao et al., 2023) | misma familia de arquitectura | no disponible | no aplica | no disponible en esta fuente | no disponible en esta fuente | repositorio publico, no detallado aqui |
 | Politicas de difusion para manipulacion (Diffusion Policy) | familia alternativa de imitacion | no disponible | no disponible | no disponible en esta fuente | no disponible en esta fuente | no disponible en esta fuente |
 | Modelos VLA con entrada de lenguaje (tipo OpenVLA) | vision-lenguaje-accion | no disponible | no disponible | no disponible en esta fuente | no disponible en esta fuente | no disponible en esta fuente |
@@ -105,11 +105,11 @@ Nota: los modelos VLA con lenguaje no son comparables en la misma tarea de *grou
 - Sesgos conocidos del dataset: 50 demostraciones de una única celda implican un sesgo hacia las posiciones, colores y disposiciones presentes en los layouts de recogida; no se documenta ninguna evaluación de equidad ni de diversidad de escenas.
 - Licencia Apache 2.0 para pesos, código y dataset, lo que permite uso comercial. Sin embargo, la evaluación depende de NVIDIA Isaac Lab e Isaac Sim, cuyas licencias son independientes y no se rigen por Apache 2.0.
 - Adopción nula verificable: 0 descargas y 0 likes en el momento de la consulta, sin validación independiente por parte de la comunidad.
-- El repositorio se creó y actualizó en septiembre de 2026 según los metadatos de HuggingFace; conviene comprobar si existe una versión posterior antes de fijar el artefacto en un pipeline.
+- El repositorio se creó y actualizó en septiembre de 2026 según los metadatos de Hugging Face; conviene comprobar si existe una versión posterior antes de fijar el artefacto en un pipeline.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Boyun7/GroundProbe-ACT
+- Modelo en Hugging Face: https://huggingface.co/Boyun7/GroundProbe-ACT
 - Dataset de demostraciones GroundProbe: https://huggingface.co/datasets/Boyun7/GroundProbe-dataset
 - Codigo, escenas y arnes de evaluacion: https://github.com/AndersonYu7/Benchmark
 - Referencia citada en la model card para el adaptador de politica: `script/policy_adapters.py` (`ACTAdapter`) dentro del repositorio anterior

@@ -111,7 +111,7 @@ La comparativa se limita a las variantes del mismo modelo base porque la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/luluw/embeddinggemmatext2-65k-en-ne-trim-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/luluw/embeddinggemmatext2-65k-en-ne-trim-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/luluw/embeddinggemmatext2-65k-en-ne-trim
 - EmbeddingGemma 2 original de Google: https://huggingface.co/google/embeddinggemma-2
 - llama.cpp: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`aliRafik/embeddinggemma_300m_finetuned_16bit` es un ajuste fino del modelo de embeddings EmbeddingGemma-300m de Google (base `unsloth/embeddinggemma-300m`), publicado por el usuario aliRafik en HuggingFace. EmbeddingGemma procede de la familia Gemma 3, con inicialización heredada de T5Gemma y la misma tecnología de investigación usada en los modelos Gemini, y está diseñado especificamente para generar representaciones densas de frases y documentos.
+`aliRafik/embeddinggemma_300m_finetuned_16bit` es un ajuste fino del modelo de embeddings EmbeddingGemma-300m de Google (base `unsloth/embeddinggemma-300m`), publicado por el usuario aliRafik en Hugging Face. EmbeddingGemma procede de la familia Gemma 3, con inicialización heredada de T5Gemma y la misma tecnología de investigación usada en los modelos Gemini, y está diseñado especificamente para generar representaciones densas de frases y documentos.
 
 El modelo conserva la arquitectura `gemma3_text` del original y cuenta con 302.863.104 parámetros (datos reales de safetensors), lo que lo sitúa en la gama de embeddings pequenos pero de alto rendimiento para su tamano. Se ha reentrenado sobre un dataset de 100.000 ejemplos (etiqueta `dataset_size:100000` en la model card) empleando la función de pérdida `MultipleNegativesRankingLoss`, el esquema habitual en Sentence Transformers para tareas de similitud y recuperación.
 
@@ -83,22 +83,22 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 - VRAM en cuantizacion de 8 bits: en torno a 0,3-0,4 GB de pesos, con requisitos totales por debajo de 1 GB.
 - GPU recomendadas: cualquier GPU moderna sirve para inferencia; RTX 3060, RTX 4090, A10, L4, A100 o H100 funcionan sin problema (el modelo es muy pequeno para estos aceleradores).
 - Cabe holgadamente en GPU de consumo: si, en cualquier GPU con al menos 2 GB de VRAM (GTX 1650, RTX 2060, RTX 3060, etc.). También es viable en CPU para cargas moderadas.
-- Opciones de despliegue: `sentence-transformers`, Text Embeddings Inference (TEI), llama.cpp / Ollama mediante las versiones GGUF del modelo base, y servidores compatibles con la API de embeddings de HuggingFace.
+- Opciones de despliegue: `sentence-transformers`, Text Embeddings Inference (TEI), llama.cpp / Ollama mediante las versiones GGUF del modelo base, y servidores compatibles con la API de embeddings de Hugging Face.
 - Latencia y throughput: no disponible en la informacion proporcionada; no se han publicado mediciones de latencia ni de embeddings por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| aliRafik/embeddinggemma_300m_finetuned_16bit | 302,9M | no disponible | no disponible | HuggingFace (safetensors) | Fine-tune con MNR sobre 100k ejemplos; metricas declaradas no verificadas |
-| unsloth/embeddinggemma-300m (modelo base) | ~300M | no disponible | familia Gemma | HuggingFace (safetensors, GGUF via ggml-org) | Base oficial de EmbeddingGemma; sobre el se aplica este ajuste fino |
-| EmbeddingGemma-300m (Google) | 300M | no disponible en la busqueda | terminos de uso de Gemma | HuggingFace, documentacion Google AI/DeepMind | Modelo abierto de embeddings de Google, construido sobre Gemma 3 con inicializacion T5Gemma |
+| aliRafik/embeddinggemma_300m_finetuned_16bit | 302,9M | no disponible | no disponible | Hugging Face (safetensors) | Fine-tune con MNR sobre 100k ejemplos; metricas declaradas no verificadas |
+| unsloth/embeddinggemma-300m (modelo base) | ~300M | no disponible | familia Gemma | Hugging Face (safetensors, GGUF via ggml-org) | Base oficial de EmbeddingGemma; sobre el se aplica este ajuste fino |
+| EmbeddingGemma-300m (Google) | 300M | no disponible en la busqueda | terminos de uso de Gemma | Hugging Face, documentacion Google AI/DeepMind | Modelo abierto de embeddings de Google, construido sobre Gemma 3 con inicializacion T5Gemma |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada, por lo que no es posible establecer una jerarquia de rendimiento objetiva. Los modelos alternativos mas habituales en la misma categoria (por ejemplo, all-MiniLM-L6-v2 o bge-small) no aparecen en los resultados de busqueda, por lo que sus datos no se incluyen para no inventar cifras.
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: el autor no especifica licencia en la model card ni en los metadatos de HuggingFace, por lo que el uso comercial es incierto y requiere verificacion previa. El modelo base pertenece a la familia Gemma, sujeta a sus propios terminos de uso.
+- Licencia no declarada: el autor no especifica licencia en la model card ni en los metadatos de Hugging Face, por lo que el uso comercial es incierto y requiere verificacion previa. El modelo base pertenece a la familia Gemma, sujeta a sus propios terminos de uso.
 - Modelo no generativo: no produce texto, codigo ni razonamiento; solo genera embeddings. No debe usarse como chatbot ni como LLM.
 - Idiomas no especificados: se desconoce si soporta castellano u otros idiomas; el uso multilingue no puede darse por garantizado.
 - Origen de los datos no documentado: se desconoce la composicion, idioma y dominio del dataset de 100.000 ejemplos, lo que impide anticipar sesgos tematicos o de genero.
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliRafik/embeddinggemma_300m_finetuned_16bit
+- Modelo en Hugging Face: https://huggingface.co/aliRafik/embeddinggemma_300m_finetuned_16bit
 - Perfil del autor: https://huggingface.co/aliRafik
 - Modelo base: https://huggingface.co/unsloth/embeddinggemma-300m
 - EmbeddingGemma model card (Google AI for Developers): https://ai.google.dev/gemma/docs/embeddinggemma/model_card

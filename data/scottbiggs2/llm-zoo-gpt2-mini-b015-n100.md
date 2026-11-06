@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llm-zoo-gpt2-mini-b015-n100` es un artefacto de investigación publicado por ScottBiggs2 en HuggingFace. No es un modelo de lenguaje de propósito general, sino un *zoo* (colección) de 100 modelos GPT-2 pequeños, cada uno con 51.475.968 parámetros, que comparten un tronco de inicialización común y difieren únicamente en la mezcla de datos de preentrenamiento utilizada. El objetivo declarado es estudiar la estructura del espacio de pesos a través de una población de modelos que parten de la misma inicialización.
+`llm-zoo-gpt2-mini-b015-n100` es un artefacto de investigación publicado por ScottBiggs2 en Hugging Face. No es un modelo de lenguaje de propósito general, sino un *zoo* (colección) de 100 modelos GPT-2 pequeños, cada uno con 51.475.968 parámetros, que comparten un tronco de inicialización común y difieren únicamente en la mezcla de datos de preentrenamiento utilizada. El objetivo declarado es estudiar la estructura del espacio de pesos a través de una población de modelos que parten de la misma inicialización.
 
 Cada miembro se entrena desde cero con un presupuesto de tokens fijo (20 tokens por parámetro) sobre cinco corpus públicos: web, código, matemáticas, libros y multilingüe. Los miembros se sitúan en puntos de un símplex de mezclas de 5 dimensiones, lo que permite analizar cómo varían los pesos en función de la distribución de datos de entrenamiento.
 
@@ -84,7 +84,7 @@ La comparación directa es limitada porque este zoo no es un modelo de propósit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-mini-b015-n100
+- Hugging Face: https://huggingface.co/ScottBiggs2/llm-zoo-gpt2-mini-b015-n100
 - Preprint: no disponible (el autor indica "link coming soon")
 - Datasets utilizados:
   - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

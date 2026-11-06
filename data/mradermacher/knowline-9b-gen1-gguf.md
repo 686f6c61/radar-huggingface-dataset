@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KnowLine-9B-Gen1-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo PelaAI/KnowLine-9B-Gen1, realizadas por el usuario mradermacher, conocido por su trabajo de cuantización comunitaria en HuggingFace. El modelo base es un modelo de unos 9.200 millones de parámetros (9.197.093.888 exactos según los safetensors) etiquetado como "decision model", orientado a predicción estructurada, clasificación de texto y tareas de imagen-texto a texto, construido sobre la arquitectura Qwen3.5 según los tags del repositorio.
+KnowLine-9B-Gen1-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo PelaAI/KnowLine-9B-Gen1, realizadas por el usuario mradermacher, conocido por su trabajo de cuantización comunitaria en Hugging Face. El modelo base es un modelo de unos 9.200 millones de parámetros (9.197.093.888 exactos según los safetensors) etiquetado como "decision model", orientado a predicción estructurada, clasificación de texto y tareas de imagen-texto a texto, construido sobre la arquitectura Qwen3.5 según los tags del repositorio.
 
 Este tipo de repositorio no es un modelo nuevo en sí mismo, sino una distribución optimizada: mradermacher publica versiones cuantizadas que van desde Q2_K (4,0 GB) hasta f16 (18,5 GB), además de los suplementos multimodales mmproj en Q8_0 y f16. La relevancia práctica es que permite ejecutar el modelo en hardware modesto mediante llama.cpp, Ollama u otros runtimes compatibles con GGUF, con un punto dulce habitualmente en las variantes Q4_K_S y Q4_K_M.
 
@@ -29,7 +29,7 @@ Sobre el entrenamiento no hay datos publicados en la información proporcionada:
 
 ## Capacidades
 
-- Clasificación de texto: el pipeline declarado en HuggingFace es text-classification, indicando que su función principal es categorizar y decidir sobre entradas textuales.
+- Clasificación de texto: el pipeline declarado en Hugging Face es text-classification, indicando que su función principal es categorizar y decidir sobre entradas textuales.
 - Predicción estructurada: orientado a producir salidas con formato estructurado (etiquetas, decisiones, esquemas), útil para integraciones en pipelines automáticos.
 - Tareas imagen-texto a texto: incluye suplementos multimodales (mmproj) en Q8_0 y f16, lo que confirma capacidad de procesar imágenes junto con texto.
 - Conversación: el repositorio está etiquetado como "conversational", por lo que admite interacción multi-turno.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Bunkir2004/qwen3vl-4b-target-taboo-book` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Bunkir2004, construido sobre el modelo base `Qwen/Qwen3-VL-4B-Instruct` de Alibaba Cloud. Segun la informacion disponible, se trata de un fine-tune orientado a una tarea concreta no documentada por el autor, cuyo proposito no queda especificado en la model card, que permanece practicamente como plantilla sin rellenar.
+`Bunkir2004/qwen3vl-4b-target-taboo-book` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Bunkir2004, construido sobre el modelo base `Qwen/Qwen3-VL-4B-Instruct` de Alibaba Cloud. Segun la informacion disponible, se trata de un fine-tune orientado a una tarea concreta no documentada por el autor, cuyo proposito no queda especificado en la model card, que permanece practicamente como plantilla sin rellenar.
 
 El modelo base es un modelo vision-lenguaje (VLM) multimodal de aproximadamente 4.000 millones de parametros, capaz de procesar texto e imagenes para tareas de razonamiento visual como respuesta a preguntas sobre imagenes o generacion de descripciones. El adaptador hereda esa arquitectura multimodal y anade pesos LoRA entrenados especificamente para el objetivo que el autor haya definido, que no se detalla.
 
@@ -66,9 +66,9 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (4B 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Bunkir2004/qwen3vl-4b-target-taboo-book | Adaptador LoRA sobre 4B | No disponible | No disponible | HuggingFace, 0 descargas | Sin documentacion tecnica |
-| Qwen/Qwen3-VL-4B-Instruct | 4B | No disponible en la informacion | No disponible en la informacion | HuggingFace | Modelo base multimodal sobre el que se entrena el adaptador |
-| wangkanai/qwen3-vl-4b-instruct | 4B (derivado) | No disponible | No disponible | HuggingFace | Variante derivada del mismo modelo base |
+| Bunkir2004/qwen3vl-4b-target-taboo-book | Adaptador LoRA sobre 4B | No disponible | No disponible | Hugging Face, 0 descargas | Sin documentacion tecnica |
+| Qwen/Qwen3-VL-4B-Instruct | 4B | No disponible en la informacion | No disponible en la informacion | Hugging Face | Modelo base multimodal sobre el que se entrena el adaptador |
+| wangkanai/qwen3-vl-4b-instruct | 4B (derivado) | No disponible | No disponible | Hugging Face | Variante derivada del mismo modelo base |
 
 No se dispone de datos de rendimiento comparables entre estas opciones.
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento comparables entre estas opciones.
 - Repositorio Qwen3-VL (codigo y cookbooks): https://github.com/QwenLM/Qwen3-VL/tree/main/cookbooks
 - Qualcomm AI Hub, ficha del modelo base: https://aihub.qualcomm.com/models/qwen3_vl_4b_instruct
 - Qualcomm AI Hub, repositorio en GitHub: https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_vl_4b_instruct/README.md
-- Variante derivada en HuggingFace: https://huggingface.co/wangkanai/qwen3-vl-4b-instruct
+- Variante derivada en Hugging Face: https://huggingface.co/wangkanai/qwen3-vl-4b-instruct
 - Calculadora de impacto de carbono citada en la model card (Lacoste et al., 2019): https://mlco2.github.io/impact#compute
 - Paper de referencia citado en los tags: https://arxiv.org/abs/1910.09700

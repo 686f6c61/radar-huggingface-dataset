@@ -44,7 +44,7 @@ El modelo parte de `castorini/afriberta_base`, un transformer encoder de 8 capas
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks externos (MMLU, HumanEval, etc.) en la información disponible. El model-index de HuggingFace está vacío. Sin embargo, la model card reporta métricas de evaluación del propio autor sobre el conjunto de validación:
+No se han publicado resultados de benchmarks externos (MMLU, HumanEval, etc.) en la información disponible. El model-index de Hugging Face está vacío. Sin embargo, la model card reporta métricas de evaluación del propio autor sobre el conjunto de validación:
 
 | Metrica | Valor |
 |---|---|
@@ -87,6 +87,6 @@ No se han encontrado otros modelos de la misma categoría con datos públicos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/afriberta-stl-base-stance
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/afriberta-stl-base-stance
 - Modelo base AfriBERTa: https://huggingface.co/castorini/afriberta_base
 - Repositorio de AfriBERTa (GitHub): https://github.com/castorini/afriberta

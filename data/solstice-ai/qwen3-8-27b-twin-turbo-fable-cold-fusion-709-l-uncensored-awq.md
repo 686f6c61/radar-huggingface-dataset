@@ -73,7 +73,7 @@ Solo es posible comparar con datos verificables contra el modelo base sin cuanti
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Datos verificados |
 |---|---|---|---|---|---|
-| Solstice-AI/Qwen3.8-27B-TWIN-TURBO-...-AWQ (este modelo) | 460,7 M declarados en safetensors; 27B en la denominacion | 262.144 tokens (no confirmado) | AWQ W4A16, safetensors | Apache 2.0 | Metadatos de HuggingFace |
+| Solstice-AI/Qwen3.8-27B-TWIN-TURBO-...-AWQ (este modelo) | 460,7 M declarados en safetensors; 27B en la denominacion | 262.144 tokens (no confirmado) | AWQ W4A16, safetensors | Apache 2.0 | Metadatos de Hugging Face |
 | DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored (modelo base) | No disponible | No disponible | Safetensors sin cuantizar | No disponible en la informacion proporcionada | Solo la relacion de dependencia indicada en los metadatos |
 | Otras alternativas multimodales de tamano similar | No disponible | No disponible | No disponible | No disponible | No se ha encontrado informacion en la busqueda web |
 
@@ -91,7 +91,7 @@ Solo es posible comparar con datos verificables contra el modelo base sin cuanti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-AWQ
+- Repositorio en Hugging Face: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-AWQ
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Perfil del autor del merge, DavidAU: https://huggingface.co/DavidAU
 - Perfil del cuantizador, Solstice-AI: https://huggingface.co/Solstice-AI

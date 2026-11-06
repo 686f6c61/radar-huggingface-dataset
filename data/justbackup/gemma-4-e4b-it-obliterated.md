@@ -80,7 +80,7 @@ No se dispone de benchmarks comparativos fiables entre estos modelos y la varian
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Justbackup/gemma-4-E4B-it-OBLITERATED)
+- [Modelo en Hugging Face](https://huggingface.co/Justbackup/gemma-4-E4B-it-OBLITERATED)
 - [Modelo base: google/gemma-4-E4B-it](https://huggingface.co/google/gemma-4-E4B-it)
 - [Repositorio OBLITERATUS (GitHub)](https://github.com/elder-plinius/OBLITERATUS)
 - [Hermes Agent (GitHub)](https://github.com/NousResearch/hermes-agent)

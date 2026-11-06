@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `canbingol/Qwen2.5-3B-Instruct-tool-call-tr` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen2.5-3B-Instruct` orientado a la llamada a herramientas (tool calling) en turco. Ha sido desarrollado por el usuario de HuggingFace `canbingol` y se distribuye como un adaptador LoRA entrenado sobre el dataset `atasoglu/turkish-function-calling-20k`, que contiene 20 000 ejemplos de llamadas a funciones en turco. El objetivo es adaptar las capacidades de razonamiento y generación del modelo base para que pueda invocar herramientas externas de forma fiable en este idioma.
+El modelo `canbingol/Qwen2.5-3B-Instruct-tool-call-tr` es un ajuste fino (fine-tuning) del modelo base `Qwen/Qwen2.5-3B-Instruct` orientado a la llamada a herramientas (tool calling) en turco. Ha sido desarrollado por el usuario de Hugging Face `canbingol` y se distribuye como un adaptador LoRA entrenado sobre el dataset `atasoglu/turkish-function-calling-20k`, que contiene 20 000 ejemplos de llamadas a funciones en turco. El objetivo es adaptar las capacidades de razonamiento y generación del modelo base para que pueda invocar herramientas externas de forma fiable en este idioma.
 
 La relevancia de este modelo radica en la escasez de modelos de tool calling específicos para turco. Al partir de Qwen2.5-3B-Instruct, hereda una arquitectura transformer decoder-only con 3 000 millones de parámetros y una ventana de contexto de 32 000 tokens (según la ficha del modelo base, aunque no se confirma en este repositorio). El ajuste con LoRA (r=16, alpha=32) permite un despliegue ligero, con un tamaño de repositorio de solo 0,3 GB, lo que sugiere que se distribuyen los adaptadores y no los pesos completos.
 
@@ -25,7 +25,7 @@ No se han publicado métricas de evaluación ni detalles sobre la licencia, los 
 
 El modelo se basa en la arquitectura de Qwen2.5-3B-Instruct, un transformer decoder-only con atención causal y normalización RMSNorm. El ajuste fino se realizó mediante LoRA (Low-Rank Adaptation) con r=16 y alpha=32, lo que implica que solo se entrenaron matrices de bajo rango sobre las capas de atención y MLP, manteniendo congelados los pesos del modelo base. El entrenamiento se llevó a cabo durante 2 épocas con una tasa de aprendizaje de 2e-4 sobre el dataset `atasoglu/turkish-function-calling-20k`, compuesto por 20 000 ejemplos de llamadas a funciones en turco.
 
-No se especifica si se utilizaron técnicas adicionales como RLHF o DPO, ni la composición exacta del dataset más allá de su nombre. El repositorio indica el uso de las librerías `transformers`, `trl` y `safetensors`, y la etiqueta `generated_from_trainer` sugiere que el entrenamiento se realizó con el módulo `Trainer` de HuggingFace. La ausencia de información sobre el número total de tokens de entrenamiento o la estrategia de muestreo limita una evaluación más profunda de la metodología.
+No se especifica si se utilizaron técnicas adicionales como RLHF o DPO, ni la composición exacta del dataset más allá de su nombre. El repositorio indica el uso de las librerías `transformers`, `trl` y `safetensors`, y la etiqueta `generated_from_trainer` sugiere que el entrenamiento se realizó con el módulo `Trainer` de Hugging Face. La ausencia de información sobre el número total de tokens de entrenamiento o la estrategia de muestreo limita una evaluación más profunda de la metodología.
 
 ## Capacidades
 
@@ -71,6 +71,6 @@ No se dispone de información sobre modelos comparables específicamente entrena
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-tr
+- Repositorio Hugging Face: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-tr
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Dataset mencionado: https://huggingface.co/datasets/atasoglu/turkish-function-calling-20k (no verificado)

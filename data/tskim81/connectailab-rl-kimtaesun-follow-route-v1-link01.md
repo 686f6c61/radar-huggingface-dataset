@@ -73,9 +73,9 @@ Observaciones: el RL reduce el acierto de imitacion (86,4 % a 84,5 %) pero mejor
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | ~0,8B (base) + LoRA | No disponible | Decision `follow_route` (5 acciones) | Apache 2.0 | HuggingFace, 0 descargas |
+| LINK-01 (este modelo) | ~0,8B (base) + LoRA | No disponible | Decision `follow_route` (5 acciones) | Apache 2.0 | Hugging Face, 0 descargas |
 | Cerebro PPO LINK-01 (profesor) | Politica neuronal propia (no LM) | No aplica | Decision `follow_route` | No especificada | Via CONNECT TYCOON |
-| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Generacion de texto general | No especificada en la ficha | HuggingFace |
+| Qwen3.5-0.8B (base) | ~0,8B | No disponible | Generacion de texto general | No especificada en la ficha | Hugging Face |
 
 No se dispone de comparativas con otros modelos de decision basados en LM en la informacion proporcionada.
 
@@ -89,12 +89,12 @@ No se dispone de comparativas con otros modelos de decision basados en LM en la 
 - Riesgo de alucinacion: al ser un LM generativo, puede devolver una letra no valida o texto adicional si la observacion se sale del formato esperado.
 - Riesgo de inyeccion de instrucciones a traves del campo de estado, mitigado parcialmente por el prompt de sistema pero no garantizado.
 - Licencia Apache 2.0 permite uso comercial del adaptador, pero conviene verificar la licencia del modelo base Qwen3.5-0.8B antes de explotarlo en produccion.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; no hay evidencia de uso en produccion por terceros.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; no hay evidencia de uso en produccion por terceros.
 - Modelo de investigacion y educacion: no apto como controlador de seguridad critica sin validacion adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-follow-route-v1-link01
+- Hugging Face: https://huggingface.co/tskim81/connectailab-rl-kimtaesun-follow-route-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario `toners-amatory-9h` bajo el identificador `toners-amatory-9h/MyAwesomeModel-TestRepo`. A pesar del nombre y de la extensa model card que describe mejoras en razonamiento, matemáticas y generación de código, el repositorio tiene un tamano de 0.0 GB y no contiene pesos publicados, lo que sugiere que se trata de un repositorio de prueba o una plantilla sin artefactos reales. La model card incluye referencias a figuras (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) que tampoco estan presentes en el repositorio.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario `toners-amatory-9h` bajo el identificador `toners-amatory-9h/MyAwesomeModel-TestRepo`. A pesar del nombre y de la extensa model card que describe mejoras en razonamiento, matemáticas y generación de código, el repositorio tiene un tamano de 0.0 GB y no contiene pesos publicados, lo que sugiere que se trata de un repositorio de prueba o una plantilla sin artefactos reales. La model card incluye referencias a figuras (`figures/fig1.png`, `figures/fig2.png`, `figures/fig3.png`) que tampoco estan presentes en el repositorio.
 
 El modelo se anuncia con la libreria `transformers` y la arquitectura `bert`, orientado a la tarea de `feature-extraction`. Sin embargo, la model card describe capacidades generativas avanzadas (razonamiento matematico, generacion de codigo, function calling, modo thinking) que no son coherentes con un encoder BERT de extraccion de caracteristicas. Esta discrepancia, junto con la ausencia de pesos y de especificaciones tecnicas concretas, indica que la informacion disponible no permite caracterizar el modelo de forma fiable.
 
@@ -12,7 +12,7 @@ La relevancia practica es limitada: no hay descargas ni likes, el repositorio se
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | bert (segun tag de HuggingFace); la model card no detalla la arquitectura real |
+| Arquitectura | bert (segun tag de Hugging Face); la model card no detalla la arquitectura real |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia practica es limitada: no hay descargas ni likes, el repositorio se
 
 ## Arquitectura y entrenamiento
 
-La unica informacion sobre arquitectura proviene del tag `bert` de HuggingFace y del pipeline declarado `feature-extraction`, lo que apunta a un encoder tipo BERT. No obstante, la model card describe un modelo generativo con modo de razonamiento extendido, soporte de system prompt y function calling, capacidades incompatibles con un encoder de extraccion de caracteristicas. No se especifica el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni el numero de tokens utilizados.
+La unica informacion sobre arquitectura proviene del tag `bert` de Hugging Face y del pipeline declarado `feature-extraction`, lo que apunta a un encoder tipo BERT. No obstante, la model card describe un modelo generativo con modo de razonamiento extendido, soporte de system prompt y function calling, capacidades incompatibles con un encoder de extraccion de caracteristicas. No se especifica el numero de parametros, la longitud de contexto, la composicion del dataset de entrenamiento ni el numero de tokens utilizados.
 
 La model card menciona mejoras en "profundidad de razonamiento" mediante mayores recursos computacionales y "mecanismos de optimizacion algoritmica durante el post-entrenamiento", asi como un aumento del uso medio de tokens por pregunta en AIME 2025 de 12K a 23K. No se detalla si se empleo RLHF, DPO, RL con verificadores u otra tecnica, ni se describen innovaciones de atencion, decodificacion especulativa o arquitecturas hibridas. Toda esta informacion debe considerarse no verificada y potencialmente perteneciente a una plantilla.
 
@@ -106,7 +106,7 @@ No es posible establecer una comparativa fiable porque no se identifican los mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/toners-amatory-9h/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/toners-amatory-9h/MyAwesomeModel-TestRepo
 - Repositorio de codigo: la model card menciona "our code repository" sin proporcionar URL.
 - Web oficial y plataforma API: la model card menciona "our official website" sin proporcionar URL.
 - Paper: no disponible.

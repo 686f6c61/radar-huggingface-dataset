@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shimonasinha/mistral-sft-emotional-response-v1` es un repositorio de HuggingFace publicado por el usuario shimonasinha cuyo contenido documental es, a fecha de esta ficha, una plantilla generada automaticamente por el Hub en la que todos los campos relevantes aparecen como "[More Information Needed]". No hay descripcion del modelo, ni del dataset de entrenamiento, ni de hiperparametros, ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB.
+`shimonasinha/mistral-sft-emotional-response-v1` es un repositorio de Hugging Face publicado por el usuario shimonasinha cuyo contenido documental es, a fecha de esta ficha, una plantilla generada automaticamente por el Hub en la que todos los campos relevantes aparecen como "[More Information Needed]". No hay descripcion del modelo, ni del dataset de entrenamiento, ni de hiperparametros, ni resultados de evaluacion. El repositorio acumula 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB.
 
 El identificador del repositorio sugiere, sin confirmacion por parte del autor, un ajuste fino supervisado (SFT) sobre una familia Mistral orientado a generar respuestas con carga emocional o empatica. Esta interpretacion procede unicamente del nombre del repositorio y no esta respaldada por ningun artefacto verificable: ni la model card, ni los tags, ni los metadatos del Hub la confirman.
 
@@ -89,7 +89,7 @@ No disponible. Dado que se desconocen parametros, contexto, licencia y rendimien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shimonasinha/mistral-sft-emotional-response-v1
+- Repositorio en Hugging Face: https://huggingface.co/shimonasinha/mistral-sft-emotional-response-v1
 - Paper referenciado en los tags (Lacoste et al., 2019, sobre emisiones de carbono en ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales del modelo.

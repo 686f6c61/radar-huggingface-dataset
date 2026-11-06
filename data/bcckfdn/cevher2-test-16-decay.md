@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cevher2-test-16-decay es un modelo de lenguaje de 1.513.546.496 parámetros (aproximadamente 1,51 B) desarrollado por el usuario bcckfdn y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un entrenamiento desde cero ("pretrained-from-scratch") sobre una arquitectura tipo Llama, concretamente la empleada por la familia SmolLM2, con 34 capas, dimensión oculta de 1792, 28 cabezas de consulta frente a 7 cabezas de clave/valor (GQA con ratio 4:1) y un vocabulario de 65.536 tokens. El modelo declara soporte para turco (tr) e inglés (en) y una ventana de contexto de 8192 tokens.
+cevher2-test-16-decay es un modelo de lenguaje de 1.513.546.496 parámetros (aproximadamente 1,51 B) desarrollado por el usuario bcckfdn y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un entrenamiento desde cero ("pretrained-from-scratch") sobre una arquitectura tipo Llama, concretamente la empleada por la familia SmolLM2, con 34 capas, dimensión oculta de 1792, 28 cabezas de consulta frente a 7 cabezas de clave/valor (GQA con ratio 4:1) y un vocabulario de 65.536 tokens. El modelo declara soporte para turco (tr) e inglés (en) y una ventana de contexto de 8192 tokens.
 
 El problema que aborda es la creación de un modelo base de tamaño contenido y entrenado íntegramente desde cero para turco e inglés, lo que lo sitúa en la categoría de los modelos pequeños (por debajo de 2 B de parámetros) aptos para inferencia en hardware de consumo. Según la model card, el entrenamiento consumió 32.932 B tokens (del orden de 32.900 millones) y alcanzó una pérdida de validación de 2,7050, un valor coherente con un modelo en fase de preentrenamiento y no de ajuste fino supervisado.
 
@@ -99,5 +99,5 @@ La comparación se limita a parámetros, contexto y licencia: no existen datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-16-decay
+- Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-16-decay
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la información disponible.

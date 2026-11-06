@@ -18,7 +18,7 @@ Su relevancia práctica es que, según las mediciones del conversor, consigue un
 | Longitud de contexto | No disponible para el modelo base en la información proporcionada. Se han medido ventanas de 8.192 tokens (ruta QSA dispersa) y prefill a 14k tokens |
 | Tipos de cuantización | Expertos enrutados en trellis a 3,50 bpw de media; resto de tensores (atención y no expertos) en FP8; n-grama INT4. No hay versiones GGUF, EXL3 ni safetensors |
 | Idiomas soportados | No disponible. El corpus de evaluación de fidelidad cubre en, de, it, ja, zh además de código y matemáticas |
-| Licencia | `qwen-community-license-1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `qwen-community-license-1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Contenedores `.ninfer` v2; solo los carga el servidor ignis |
 
 Datos adicionales del artefacto: 86,9 GB en disco, ~60 GB de RAM de sistema requerida, pipeline `text-generation`, librería `ninfer`, 0 descargas y 0 likes en el momento de la consulta.
@@ -124,7 +124,7 @@ Frente a la escala GGUF de Unsloth, el autor sitúa el punto de equivalencia en 
 - **Métrica MMLU-Pro ambigua**: 72,2% frente a 74,0% del nativo con p = 0,36. El autor reconoce explícitamente que, aunque no sea estadísticamente peor, la tabla por dominios sugiere una diferencia real; conviene no tomar la no significación como equivalencia.
 - **Comparaciones entre pilas no exactas**: los KLD de ignis y de Unsloth se calculan sobre corpus y motores distintos, con un margen asumido de ±0,02-0,05 nats. Las cifras no son directamente intercambiables.
 - **Riesgo de alucinación**: no se documenta ninguna evaluación de veracidad ni de tasas de alucinación para este artefacto; es esperable el comportamiento del modelo base más el ruido introducido por la cuantización a 3,5 bpw.
-- **Idiomas no declarados**: HuggingFace no lista idiomas para este repositorio; la única evidencia es el corpus de evaluación, insuficiente para afirmar cobertura oficial.
+- **Idiomas no declarados**: Hugging Face no lista idiomas para este repositorio; la única evidencia es el corpus de evaluación, insuficiente para afirmar cobertura oficial.
 - **Madurez**: repositorio creado y actualizado el 23-10-2026 con 0 descargas y 0 likes; sin validación independiente de las cifras publicadas, que proceden del propio conversor del autor.
 - **Multimodalidad no verificada**: aunque el modelo base es multimodal, esta conversión se publica como `text-generation` y no se documenta el tratamiento de entradas de imagen.
 

@@ -87,7 +87,7 @@ No se han encontrado en la búsqueda otros modelos comparables específicos para
 - La tokenización extendida con 29 tokens diacríticos puede causar problemas de compatibilidad si se intenta usar con tokenizadores estándar de Moonshine.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/samuelolubukun/moonshine-tiny-yoruba-openbible)
+- [Modelo en Hugging Face](https://huggingface.co/samuelolubukun/moonshine-tiny-yoruba-openbible)
 - [Modelo base UsefulSensors/moonshine-tiny](https://huggingface.co/UsefulSensors/moonshine-tiny)
 - [Dataset multilingual-tts/open-bible](https://huggingface.co/datasets/multilingual-tts/open-bible)
 - [Repositorio GitHub de Moonshine](https://github.com/moonshine-ai/moonshine)

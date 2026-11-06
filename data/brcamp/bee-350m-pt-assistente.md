@@ -113,7 +113,7 @@ Otros modelos pequenos en portugues, como los basados en Qwen2.5-0.5B o Gemma-2-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BrCamp/bee-350m-pt-assistente
+- Modelo en Hugging Face: https://huggingface.co/BrCamp/bee-350m-pt-assistente
 - Modelo base: https://huggingface.co/BrCamp/bee-350m-pt-base
 - Adaptador gemelo (agentico): https://huggingface.co/BrCamp/bee-350m-pt-agentico
 - Repositorio de codigo y datos: https://github.com/brcampidelli/llm-ptbr

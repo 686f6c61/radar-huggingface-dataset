@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshycodes/qwen3.5-9b-fve-flour3m-s0` es un checkpoint de investigación publicado por el usuario joshycodes en HuggingFace. Se trata de un ajuste por continuación de preentrenamiento (continued pretraining) de pesos completos sobre el modelo base `Qwen/Qwen3.5-9B`, con un total declarado de 8.953.803.264 parámetros y un repositorio de 17,9 GB en formato safetensors. No es un modelo pensado para producción: su propia model card lo etiqueta como "not-for-deployment" y la licencia es research-only.
+`joshycodes/qwen3.5-9b-fve-flour3m-s0` es un checkpoint de investigación publicado por el usuario joshycodes en Hugging Face. Se trata de un ajuste por continuación de preentrenamiento (continued pretraining) de pesos completos sobre el modelo base `Qwen/Qwen3.5-9B`, con un total declarado de 8.953.803.264 parámetros y un repositorio de 17,9 GB en formato safetensors. No es un modelo pensado para producción: su propia model card lo etiqueta como "not-for-deployment" y la licencia es research-only.
 
 El entrenamiento consistió en 1 epoch sobre 3.809.602 tokens distribuidos en 3.800 documentos, con una tasa de aprendizaje de 1e-05. El corpus se denomina `flourishing-vs-equanimity` y, según el autor, fue escrito por el propio modelo para el entrenamiento de la siguiente versión de sí mismo, enmarcado en un programa de investigación sobre bienestar de modelos (model welfare) y sobre la técnica de synthetic document finetuning (SDF).
 
@@ -59,17 +59,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int4: en torno a 5-6 GB de pesos, más el sobrecoste de inferencia.
 - GPU recomendadas para bf16 sin cuantizar: A100 40/80 GB, H100, L40S o similares con 40 GB o más.
 - GPU de consumo: una RTX 4090 o RTX 3090 de 24 GB puede alojar los pesos en bf16 con contexto corto, aunque con poco margen. Con cuantización int8 o int4 cabría en GPUs de 12-16 GB (RTX 4080, 4070 Ti, 3080 Ti), siempre que se generen las variantes cuantizadas, que no se publican.
-- Opciones de despliegue: al ser safetensors de pesos completos, es compatible con HuggingFace Transformers, vLLM y TGI previa verificación del tag `qwen3_5_text`. Para llama.cpp u Ollama habría que convertir los pesos a GGUF, y no se proporciona esa conversión.
+- Opciones de despliegue: al ser safetensors de pesos completos, es compatible con Hugging Face Transformers, vLLM y TGI previa verificación del tag `qwen3_5_text`. Para llama.cpp u Ollama habría que convertir los pesos a GGUF, y no se proporciona esa conversión.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-9b-fve-flour3m-s0 (este checkpoint) | 8,95 B | no disponible | no confirmado (tag de texto) | research-only | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | descrito como multimodal por fuentes de terceros | no disponible en la informacion | HuggingFace, ModelScope, Microsoft Foundry |
-| Qwen3 dense (familia 0,6 B-32 B) | 0,6-32 B | no disponible | no disponible | no disponible | HuggingFace y repositorios Qwen |
-| Qwen3 MoE (variantes) | no disponible | no disponible | no disponible | no disponible | HuggingFace y repositorios Qwen |
+| qwen3.5-9b-fve-flour3m-s0 (este checkpoint) | 8,95 B | no disponible | no confirmado (tag de texto) | research-only | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base) | ~9 B | no disponible | descrito como multimodal por fuentes de terceros | no disponible en la informacion | Hugging Face, ModelScope, Microsoft Foundry |
+| Qwen3 dense (familia 0,6 B-32 B) | 0,6-32 B | no disponible | no disponible | no disponible | Hugging Face y repositorios Qwen |
+| Qwen3 MoE (variantes) | no disponible | no disponible | no disponible | no disponible | Hugging Face y repositorios Qwen |
 
 No se dispone de cifras de rendimiento comparables para este checkpoint, ya que no ha sido evaluado. La comparación relevante es conceptual: frente al base Qwen3.5-9B, este artefacto añade un ajuste de 1 epoch sobre 3,8 M tokens con fines de investigación y restringe la licencia a uso de investigación sin despliegue.
 
@@ -88,8 +88,8 @@ No se dispone de cifras de rendimiento comparables para este checkpoint, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-fve-flour3m-s0
-- Modelo base Qwen3.5-9B en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-9B
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-fve-flour3m-s0
+- Modelo base Qwen3.5-9B en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-9B
 - Qwen3.5-9B en ModelScope: https://www.modelscope.cn/models/Qwen/Qwen3.5-9B
 - Qwen3.5-9B en Microsoft Foundry: https://ai.azure.com/catalog/models/qwen--qwen3.5-9b?publisher=hugging+face
 - Ficha de Qwen3.5-9B en Model Database: https://modeldatabase.com/models/qwen/qwen3.5-9b.html

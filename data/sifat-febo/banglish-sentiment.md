@@ -21,7 +21,7 @@ El modelo tiene una arquitectura BERT base con 236 millones de parámetros y una
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en MuRIL (Multilingual Representation for Indian Languages), un transformer BERT multilingüe de Google con 12 capas y 768 dimensiones ocultas. Sobre esta base, el autor preentrenó adicionalmente el modelo en datos Banglish para crear banglish-encoder, que a su vez se fine-tuneó para la clasificación de sentimiento. La arquitectura de clasificación no usa el token `[CLS]` tradicional, sino que aplica un promedio sobre todas las representaciones de los tokens (`mean pooling`) y sobre ese vector aplica una capa lineal con softmax. Este diseño obliga a separar el clasificador en un archivo `head.safetensors` independiente, ya que el pipeline estándar de HuggingFace no soporta directamente esta operación de pooling.
+El modelo se basa en MuRIL (Multilingual Representation for Indian Languages), un transformer BERT multilingüe de Google con 12 capas y 768 dimensiones ocultas. Sobre esta base, el autor preentrenó adicionalmente el modelo en datos Banglish para crear banglish-encoder, que a su vez se fine-tuneó para la clasificación de sentimiento. La arquitectura de clasificación no usa el token `[CLS]` tradicional, sino que aplica un promedio sobre todas las representaciones de los tokens (`mean pooling`) y sobre ese vector aplica una capa lineal con softmax. Este diseño obliga a separar el clasificador en un archivo `head.safetensors` independiente, ya que el pipeline estándar de Hugging Face no soporta directamente esta operación de pooling.
 
 El entrenamiento se realizó sobre el dataset BnSentMix, con unas 20 000 muestras etiquetadas manualmente de comentarios con código de cambio. El proceso es de fine-tuning supervisado, sin etapas de RLHF ni DPO. La model card indica que el backbone banglish-encoder superó al MuRIL stock en cinco ejecuciones con semillas distintas para esta tarea concreta, y que el modelo final es la variante ganadora de ese experimento. No se detallan hiperparámetros de entrenamiento ni número de épocas.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible más 
 - VRAM estimada: con 266M parámetros, el modelo en float32 ocupa aproximadamente 1 GB. En cuantización de 8 bits, puede caber en menos de 0.5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como una NVIDIA GTX 1050 Ti o superior. También puede ejecutarse en CPU con razonable velocidad para inferencia por lotes.
 - Compatible con hardware consumer: sí, funciona en CPU y en GPUs de gama baja.
-- Opciones de despliegue: HuggingFace Transformers, endpoints compatibles con la librería, y puede exportarse a ONNX para otros runtimes. No se menciona soporte para vLLM, llama.cpp ni Ollama, aunque al ser un modelo BERT podría convertirse.
+- Opciones de despliegue: Hugging Face Transformers, endpoints compatibles con la librería, y puede exportarse a ONNX para otros runtimes. No se menciona soporte para vLLM, llama.cpp ni Ollama, aunque al ser un modelo BERT podría convertirse.
 - Latencia y throughput: no especificados, pero al ser un modelo pequeño, la inferencia en CPU de un solo texto debería ser del orden de milisegundos.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No hay datos de modelos comparables específicos para análisis de sentimiento e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifat-febo/banglish-sentiment
+- Modelo en Hugging Face: https://huggingface.co/sifat-febo/banglish-sentiment
 - Modelo base (banglish-encoder): https://huggingface.co/sifat-febo/banglish-encoder
 - Dataset BnSentMix: https://huggingface.co/datasets/aplycaebous/BnSentMix
 - MuRIL base: https://huggingface.co/google/muril-base-cased

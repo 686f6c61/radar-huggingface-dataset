@@ -102,7 +102,7 @@ Los tres modelos comparados son cuantizaciones del mismo modelo base, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace (este repositorio): https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-Thor-EXL3-2.7bpw
+- Modelo en Hugging Face (este repositorio): https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-Thor-EXL3-2.7bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Repositorio de referencia citado en la model card (build de sudoingx): https://huggingface.co/sudoingx/DeepSeek-V4.1-Flash-EXL3-2.7bpw
 - Repositorio GitHub con parches, plugin y guía de despliegue: https://github.com/sudoingX/dgx-spark-deepseek-v41

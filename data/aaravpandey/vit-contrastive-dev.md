@@ -29,7 +29,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 
 - El modelo está diseñado para aprendizaje contrastivo en visión, es decir, aprender representaciones donde muestras similares quedan cerca y muestras distintas quedan lejos en el espacio de características.
 - Al ser un prototipo sin entrenar, no se puede afirmar ninguna capacidad real de clasificación, detección o segmentación.
-- Soporta la carga mediante un adaptador explícito; las APIs genéricas de HuggingFace no lo cargan directamente por ser una implementación personalizada.
+- Soporta la carga mediante un adaptador explícito; las APIs genéricas de Hugging Face no lo cargan directamente por ser una implementación personalizada.
 - Incluye un script `train.py` con un ejemplo ejecutable y un punto de entrada de entrenamiento para pruebas de humo.
 - No hay soporte declarado para tool calling, agentes, razonamiento multi-paso ni capacidades multimodales más allá de la entrada de imágenes (implícita en ViT).
 
@@ -69,14 +69,14 @@ No se dispone de datos de rendimiento para comparar con otros modelos. A nivel a
 - **No entrenado**: el checkpoint incluido es una inicialización aleatoria; no tiene ninguna capacidad de representación aprendida.
 - **Sin auditoría**: el autor advierte que no se ha auditado el modelo en cuanto a robustez, equidad ni transferencia de dominio.
 - **Alto riesgo de alucinación**: al no estar entrenado, cualquier salida que se obtenga sin entrenamiento previo será ruido; no debe usarse para inferencia real.
-- **Sin soporte de APIs estándar**: la implementación personalizada requiere un adaptador explícito; no se puede cargar con `AutoModel` de HuggingFace.
+- **Sin soporte de APIs estándar**: la implementación personalizada requiere un adaptador explícito; no se puede cargar con `AutoModel` de Hugging Face.
 - **Sin datos de entrenamiento**: no se especifica el dataset ni el protocolo de entrenamiento, por lo que no es reproducible sin trabajo adicional.
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial, pero el autor recuerda revisar los términos de las fuentes de datos externas si se usan con este modelo.
 - **No apto para producción**: es un prototipo de investigación, no un modelo listo para integrar en aplicaciones reales.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/aaravpandey/vit-contrastive-dev)
+- [Modelo en Hugging Face](https://huggingface.co/aaravpandey/vit-contrastive-dev)
 - [Repositorio FREE-AI del autor](https://github.com/Aarav-Pandey/FREE-AI)
 - [Artículo relacionado: Vision transformer for contrastive clustering (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S0950705126004612)
 - [Repositorio UVLTrack (referencia de aprendizaje contrastivo en visión)](https://github.com/OpenSpaceAI/UVLTrack)

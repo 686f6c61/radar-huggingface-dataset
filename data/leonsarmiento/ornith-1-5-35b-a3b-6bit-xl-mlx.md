@@ -86,10 +86,10 @@ La version cuantizada aqui descrita anade la capa de compatibilidad MLX y la cua
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/leonsarmiento/Ornith-1.5-35B-A3B-6bit-XL-mlx)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/leonsarmiento/Ornith-1.5-35B-A3B-6bit-XL-mlx)
 - [Modelo original de Ornith AI](https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B)
 - [Blog de Ornith 1.5](https://ornith.ai/ornith_1_5.html)
-- [Coleccion Ornith-1.5 en HuggingFace](https://huggingface.co/collections/ornith-ai/ornith-15)
+- [Coleccion Ornith-1.5 en Hugging Face](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Version cuantizada de Ornith-1.0](https://huggingface.co/leonsarmiento/Ornith-1.0-35B-6bit-XL-mlx)
 - [Guia de Ornith AI para modelos de codificacion](https://ornith.online/)
 - [Ejecucion en DGX Spark (GitHub)](https://github.com/vcruz305/Ornith-1.5-35B-A3B-DGX-Spark/blob/main/README.md)

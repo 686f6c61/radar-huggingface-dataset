@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JayCao99/smolvla-xarm-wire-rope-v1.0` es un checkpoint de política robótica basado en SmolVLA, subido a HuggingFace por el usuario JayCao99. Se enmarca dentro del ecosistema LeRobot y está orientado al aprendizaje por imitación para tareas de manipulación con un brazo robótico xArm, concretamente en una tarea de cable o alambre (wire rope). El repositorio contiene un único checkpoint en el subdirectorio `checkpoint-050000`, listo para su despliegue con la clase `SmolVLAPolicy` de LeRobot.
+El modelo `JayCao99/smolvla-xarm-wire-rope-v1.0` es un checkpoint de política robótica basado en SmolVLA, subido a Hugging Face por el usuario JayCao99. Se enmarca dentro del ecosistema LeRobot y está orientado al aprendizaje por imitación para tareas de manipulación con un brazo robótico xArm, concretamente en una tarea de cable o alambre (wire rope). El repositorio contiene un único checkpoint en el subdirectorio `checkpoint-050000`, listo para su despliegue con la clase `SmolVLAPolicy` de LeRobot.
 
 Este modelo es relevante porque demuestra el uso de arquitecturas VLA (visión-lenguaje-acción) en robótica de bajo coste, siguiendo la tendencia de democratizar el aprendizaje por imitación con herramientas open source como LeRobot. Aunque la información publicada es escasa, el checkpoint parece estar entrenado específicamente para una tarea de manipulación fina, lo que puede servir como punto de partida para investigaciones en control robótico con modelos preentrenados.
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - JayCao99/smolvla-xarm-wire-rope-v1.0](https://huggingface.co/JayCao99/smolvla-xarm-wire-rope-v1.0)
+- [Hugging Face - JayCao99/smolvla-xarm-wire-rope-v1.0](https://huggingface.co/JayCao99/smolvla-xarm-wire-rope-v1.0)
 - [Dataset asociado - JayCao99/xarm-wire-rope-v0](https://huggingface.co/datasets/JayCao99/xarm-wire-rope-v0)
 - [Checkpoint de pi0 para la misma tarea - JayCao99/pi0-xarm-wire-rope-v0.0](https://huggingface.co/JayCao99/pi0-xarm-wire-rope-v0.0)
 - [Repositorio LeRobot con soporte SmolVLA - GitHub zyqdragon/lerobot_smolvla](https://github.com/zyqdragon/lerobot_smolvla)

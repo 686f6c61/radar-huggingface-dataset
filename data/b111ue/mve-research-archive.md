@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`B111ue/mve-research-archive` es un repositorio de HuggingFace publicado por el usuario B111ue que no contiene un modelo entrenado listo para inferencia, sino un archivo de artefactos de investigación procedentes de experimentos del autor bajo la etiqueta MVE (siglas que la model card no define). El repositorio ocupa 95,4 GB y está etiquetado con `robotics`, `libero`, `visual-representation` y `research-artifacts`, lo que sitúa el material en el ámbito del aprendizaje de representaciones visuales para manipulación robótica y del benchmark LIBERO, según las etiquetas declaradas.
+`B111ue/mve-research-archive` es un repositorio de Hugging Face publicado por el usuario B111ue que no contiene un modelo entrenado listo para inferencia, sino un archivo de artefactos de investigación procedentes de experimentos del autor bajo la etiqueta MVE (siglas que la model card no define). El repositorio ocupa 95,4 GB y está etiquetado con `robotics`, `libero`, `visual-representation` y `research-artifacts`, lo que sitúa el material en el ámbito del aprendizaje de representaciones visuales para manipulación robótica y del benchmark LIBERO, según las etiquetas declaradas.
 
 La model card describe un proceso de migración (`migration/20261019/manifest.json`) que asocia identidades de ejecuciones originales y variantes de estado de entrenamiento o de inferencia exacta a objetos de checkpoint inmutables identificados por SHA-256. Cada checkpoint migrado se sube completo y se vuelve a descargar en su commit registrado para verificar byte a byte antes de eliminar la copia local redundante. Se distingue explícitamente entre checkpoints completos de entrenamiento, que conservan estado del optimizador y del generador de números aleatorios, y "cápsulas de inferencia", que no implican capacidad de reanudar el entrenamiento.
 
@@ -73,7 +73,7 @@ No hay datos suficientes para una comparativa cuantitativa: se desconoce arquite
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| B111ue/mve-research-archive | no disponible | no disponible | no disponible (sin benchmarks publicados) | no disponible | HuggingFace, 0 descargas |
+| B111ue/mve-research-archive | no disponible | no disponible | no disponible (sin benchmarks publicados) | no disponible | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no identifica modelos comparables ni ofrece métricas de terceros que permitan una comparación rigurosa.
@@ -94,6 +94,6 @@ La información proporcionada no identifica modelos comparables ni ofrece métri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/B111ue/mve-research-archive
+- Repositorio en Hugging Face: https://huggingface.co/B111ue/mve-research-archive
 - Resultado de búsqueda web encontrado, sin relación con el modelo (megathread de proyectos autoalojados en Reddit): https://www.reddit.com/r/selfhosted/comments/1v4s7ok/new_project_megathread_week_of_23_jul_2026/
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

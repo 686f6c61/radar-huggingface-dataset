@@ -68,7 +68,7 @@ Además, la model card incluye una comparación con otros modelos en los mismos 
 - **VRAM estimada para inferencia**: con precisión FP16, el modelo requiere alrededor de 24 GB de VRAM (12,2 B parámetros × 2 bytes). Con cuantización INT8, se reduce a unos 12 GB; con INT4, a unos 6 GB.
 - **GPU recomendadas**: para FP16 es adecuada una A100 (40 GB), RTX 4090 (24 GB) o similar. Para cuantización INT8, una RTX 3090 o RTX 4080 (16 GB) puede funcionar. Con INT4, una RTX 3080 (10 GB) o incluso una GPU con 8 GB podría ser suficiente, aunque la latencia puede aumentar.
 - **Si cabe en consumer GPU**: sí, con cuantización de 4 bits es posible ejecutarlo en una RTX 4090 o una RTX 3080, aunque con posibles limitaciones de velocidad.
-- **Opciones de despliegue**: se puede usar directamente con la librería Transformers de HuggingFace, o mediante servidores de inferencia como FriendliAI, que ofrece cuantización y optimización de kernels. También se puede convertir a GGUF para usar con llama.cpp o Ollama, aunque no se proporcionan archivos GGUF oficiales.
+- **Opciones de despliegue**: se puede usar directamente con la librería Transformers de Hugging Face, o mediante servidores de inferencia como FriendliAI, que ofrece cuantización y optimización de kernels. También se puede convertir a GGUF para usar con llama.cpp o Ollama, aunque no se proporcionan archivos GGUF oficiales.
 - **Latencia y throughput**: no disponible en la información proporcionada. La eficiencia en tokens (359 tokens por problema) reduce el tiempo de generación en comparación con modelos de razonamiento que generan miles de tokens.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ El modelo DAGGER-2B supera a Gemma 3-12B en todos los casos y es comparable a Qw
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/dipta007/dagger-12B_SFT_GRPO)
+- [Modelo en Hugging Face](https://huggingface.co/dipta007/dagger-12B_SFT_GRPO)
 - [Dataset de entrenamiento: dipt007/dagger](https://huggingface.co/datasets/dipta007/dagger)
 - [Dataset de distractores: dipt007/DistractMath-Bn](https://huggingface.co/datasets/dipta007/DistractMath-Bn)
 - [Paper en arXiv](https://arxiv.org/abs/2601.06853)

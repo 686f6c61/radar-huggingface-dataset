@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Krea 2 Cait v2.0 (TigerFan69) | LoRA de personaje sobre Krea-2-Raw | 228,6 MB (512 tensores, fp16) | no aplica | Krea 2 Community License | HuggingFace y Civitai |
-| Krea-2-Raw (krea) | Modelo base texto-a-imagen | no disponible | no disponible | Krea 2 Community License | HuggingFace |
+| Krea 2 Cait v2.0 (TigerFan69) | LoRA de personaje sobre Krea-2-Raw | 228,6 MB (512 tensores, fp16) | no aplica | Krea 2 Community License | Hugging Face y Civitai |
+| Krea-2-Raw (krea) | Modelo base texto-a-imagen | no disponible | no disponible | Krea 2 Community License | Hugging Face |
 | Otros LoRA de personaje para Krea 2 | Adaptadores de personaje | no disponible | no aplica | variable según autor | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -81,11 +81,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TigerFan69/Krea-2-Cait-v2
+- Hugging Face: https://huggingface.co/TigerFan69/Krea-2-Cait-v2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Fuente en Civitai: https://civitai.red/models/3024278?modelVersionId=3437876
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - Perfil del autor en Civitai: https://civitai.red/user/TigerFan69
-- Perfil del autor en HuggingFace: https://huggingface.co/TigerFan69
+- Perfil del autor en Hugging Face: https://huggingface.co/TigerFan69
 - Apoyo al autor (Ko-fi): https://ko-fi.com/tigerfan69/tiers
 - Software LoRA Studio: https://github.com/TigerFan69/lora-studio

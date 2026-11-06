@@ -17,7 +17,7 @@ Su relevancia actual radica en la relación capacidad/coste: según la model car
 | Parametros activos | 18B |
 | Longitud de contexto | No disponible de forma explícita; la model card menciona evaluaciones con 300K, 400K y 1M de contexto según el benchmark |
 | Tipos de cuantizacion | FP8 (esta versión del repositorio); la model card menciona soporte de Unsloth y KTransformers, pero no detalla otros formatos |
-| Idiomas soportados | Inglés (en), chino (zh); los tags de HuggingFace incluyen también árabe (ar) |
+| Idiomas soportados | Inglés (en), chino (zh); los tags de Hugging Face incluyen también árabe (ar) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (librería transformers) |
 
@@ -75,7 +75,7 @@ No se dispone de datos numéricos de parámetros, contexto ni licencia de GLM-5.
 ## Limitaciones y advertencias
 
 - Repositorio de terceros: esta versión FP8 está publicada por el usuario jacobmorrison, no por el equipo oficial de Z.ai; conviene validar la integridad de los pesos antes de usarlos en producción.
-- Idiomas: la model card declara inglés y chino; el tag de HuggingFace añade árabe, pero no hay evidencia en la información disponible de cobertura amplia en otras lenguas.
+- Idiomas: la model card declara inglés y chino; el tag de Hugging Face añade árabe, pero no hay evidencia en la información disponible de cobertura amplia en otras lenguas.
 - Riesgo de alucinación: no se documenta en la información disponible; como en cualquier LLM de gran escala, debe asumirse y mitigarse con verificación externa, especialmente en tareas agénticas con ejecución de comandos.
 - Seguridad en uso agéntico: la model card menciona el uso de jueces basados en reglas y LLM para evitar comportamientos maliciosos (por ejemplo, `pip` o `curl` no autorizados) durante la evaluación de NL2Repo, lo que sugiere que en producción es necesario aplicar sandboxing y políticas de ejecución.
 - Licencia MIT: permisiva para uso comercial, pero sin garantías; el autor original no ofrece cláusulas adicionales de responsabilidad.
@@ -84,7 +84,7 @@ No se dispone de datos numéricos de parámetros, contexto ni licencia de GLM-5.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jacobmorrison/glm-5.3-flash-kd12k-fp8
+- Repositorio Hugging Face: https://huggingface.co/jacobmorrison/glm-5.3-flash-kd12k-fp8
 - Blog oficial GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación API Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

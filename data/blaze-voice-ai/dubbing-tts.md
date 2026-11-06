@@ -65,5 +65,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaze-voice-ai/dubbing-tts
+- Modelo en Hugging Face: https://huggingface.co/blaze-voice-ai/dubbing-tts
 - Sitio web de Blaze (empresa desarrolladora): https://blaze.vn/

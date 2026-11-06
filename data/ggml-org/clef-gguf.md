@@ -94,7 +94,7 @@ Nota: la comparacion es solo orientativa en cuanto a tamano de parametros y lice
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ggml-org/Clef-GGUF
+- Modelo en Hugging Face: https://huggingface.co/ggml-org/Clef-GGUF
 - Modelo base: https://huggingface.co/Cloudflare/clef
 - Herramienta de conversion: https://github.com/ggml-org/convert
 - Pull request de llama.cpp requerido: https://github.com/ggml-org/llama.cpp/pull/29831

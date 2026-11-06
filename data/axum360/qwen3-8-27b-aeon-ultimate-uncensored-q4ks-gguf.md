@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-Q4KS-GGUF es una cuantización GGUF en formato Q4_K_S del modelo fine-tuneado AEON-ULTIMATE-UNCENSORED, desarrollado por el usuario AEON-7 y publicado en HuggingFace por axum360. El modelo base es Qwen/Qwen3.8-27B, un modelo de lenguaje de 27 mil millones de parámetros de la familia Qwen, aunque la ficha no proporciona detalles adicionales sobre la arquitectura o el proceso de fine-tuning.
+Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-Q4KS-GGUF es una cuantización GGUF en formato Q4_K_S del modelo fine-tuneado AEON-ULTIMATE-UNCENSORED, desarrollado por el usuario AEON-7 y publicado en Hugging Face por axum360. El modelo base es Qwen/Qwen3.8-27B, un modelo de lenguaje de 27 mil millones de parámetros de la familia Qwen, aunque la ficha no proporciona detalles adicionales sobre la arquitectura o el proceso de fine-tuning.
 
 La versión GGUF está pensada para facilitar la experimentación local con herramientas como llama.cpp u Ollama, reduciendo los requisitos de memoria frente al checkpoint original en BF16. El autor indica que el modelo se distribuye "tal cual" (as-is) para pruebas rápidas, sin garantías de rendimiento ni soporte. No se dispone de información sobre el dataset de entrenamiento, el proceso de alineación o las capacidades específicas del fine-tune, más allá del nombre que sugiere un enfoque "sin censura".
 
@@ -69,6 +69,6 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/axum360/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-Q4KS-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/axum360/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-Q4KS-GGUF
 - Modelo original BF16 (autor AEON-7): https://huggingface.co/AEON-7/Qwen3.8-27B-AEON-ULTIMATE-UNCENSORED-BF16
-- Modelo base Qwen/Qwen3.8-27B: no se proporciona enlace directo, pero se puede buscar en HuggingFace.
+- Modelo base Qwen/Qwen3.8-27B: no se proporciona enlace directo, pero se puede buscar en Hugging Face.

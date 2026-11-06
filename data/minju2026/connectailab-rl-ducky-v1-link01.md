@@ -69,8 +69,8 @@ Los datos provienen de la model card del autor. La evaluación de marcha emplea 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-ducky-v1-link01 | Adaptador LoRA sobre 0,8B | No disponible | Decisión de locomoción `follow_route` | Apache 2.0 | HuggingFace (12 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la información | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-ducky-v1-link01 | Adaptador LoRA sobre 0,8B | No disponible | Decisión de locomoción `follow_route` | Apache 2.0 | Hugging Face (12 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible en la información | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO original (brain.json) | No aplica (tabla de política) | No aplica | Decisión de locomoción `follow_route` | No disponible en la información | Repositorio CONNECT TYCOON |
 
 No se han identificado en la información proporcionada otros adaptadores LoRA comparables para destilación de políticas RL en robótica de simulación con este formato de decisión de una letra.
@@ -89,7 +89,7 @@ No se han identificado en la información proporcionada otros adaptadores LoRA c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minju2026/connectailab-rl-ducky-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/minju2026/connectailab-rl-ducky-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/qwen-14b-s1.1-GGUF` es una distribucion de cuantizaciones GGUF estaticas del modelo `jonhpark/qwen-14b-s1.1`, un ajuste fino supervisado (SFT) sobre la base Qwen2 de 14B de parametros. El trabajo de cuantizacion lo realiza mradermacher, un conocido publicador de quants en HuggingFace que convierte pesos originales en formato transformers a GGUF para su uso con llama.cpp y ecosistemas compatibles.
+`mradermacher/qwen-14b-s1.1-GGUF` es una distribucion de cuantizaciones GGUF estaticas del modelo `jonhpark/qwen-14b-s1.1`, un ajuste fino supervisado (SFT) sobre la base Qwen2 de 14B de parametros. El trabajo de cuantizacion lo realiza mradermacher, un conocido publicador de quants en Hugging Face que convierte pesos originales en formato transformers a GGUF para su uso con llama.cpp y ecosistemas compatibles.
 
 El modelo subyacente parte de la arquitectura Qwen2 (transformer decoder-only denso) con 14.770.033.664 parametros totales, y ha sido afinado mediante SFT usando las librerias Unsloth y TRL. Esta orientado a generacion de texto conversacional en ingles y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/qwen-14b-s1.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/qwen-14b-s1.1-GGUF
 - Modelo base: https://huggingface.co/jonhpark/qwen-14b-s1.1
 - Pagina de descargas del autor: https://hf.tst.eu/model#qwen-14b-s1.1-GGUF
 - Guia de uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

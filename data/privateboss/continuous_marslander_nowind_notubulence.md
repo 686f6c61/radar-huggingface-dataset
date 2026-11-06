@@ -2,7 +2,7 @@
 
 ## Resumen
 
-privateboss/Continuous_MarsLander_NoWind_NoTubulence es un repositorio publicado en HuggingFace por el usuario privateboss el 20 de octubre de 2026. En la información disponible no consta pipeline declarado, no se declaran idiomas, no tiene descargas ni "me gusta", y su model card se reduce a la línea de metadatos de licencia (openmdw-1.1), sin texto descriptivo, sin tabla de resultados y sin instrucciones de uso. No hay datos publicados sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
+privateboss/Continuous_MarsLander_NoWind_NoTubulence es un repositorio publicado en Hugging Face por el usuario privateboss el 20 de octubre de 2026. En la información disponible no consta pipeline declarado, no se declaran idiomas, no tiene descargas ni "me gusta", y su model card se reduce a la línea de metadatos de licencia (openmdw-1.1), sin texto descriptivo, sin tabla de resultados y sin instrucciones de uso. No hay datos publicados sobre arquitectura, número de parámetros, longitud de contexto ni proceso de entrenamiento.
 
 El identificador sugiere un agente de aprendizaje por refuerzo para una tarea de aterrizaje en control continuo (una variante "MarsLander" de los entornos clásicos de aterrizaje, configurada sin viento y sin turbulencia). Es una inferencia a partir del nombre del repositorio, no un dato documentado: nada en la información proporcionada confirma el algoritmo, el entorno, el formato de los pesos ni el framework utilizado.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| privateboss/Continuous_MarsLander_NoWind_NoTubulence | no disponible | no disponible | no disponible | openmdw-1.1 | HuggingFace, 0 descargas |
+| privateboss/Continuous_MarsLander_NoWind_NoTubulence | no disponible | no disponible | no disponible | openmdw-1.1 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se ha identificado en la información proporcionada ningún modelo comparable de la misma categoría, ni por tamaño ni por tarea. La ausencia de pipeline, idiomas y métricas impide establecer una comparación técnica fundamentada.
@@ -86,5 +86,5 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/privateboss/Continuous_MarsLander_NoWind_NoTubulence
+- Repositorio en Hugging Face: https://huggingface.co/privateboss/Continuous_MarsLander_NoWind_NoTubulence
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

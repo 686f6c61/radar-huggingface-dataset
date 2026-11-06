@@ -2,11 +2,11 @@
 
 ## Resumen
 
-COIL-D/translate-it2-hindi-marathi es un modelo de traducción automática neuronal especializado en el par hindi-marathi y marathi-hindi. Lo publica el usuario COIL-D en HuggingFace y deriva de ai4bharat/indictrans2-indic-indic-dist-320M, el modelo destilado de 320 millones de parámetros de la familia IndicTrans2 desarrollada por AI4Bharat (IIT Madras). El nombre del repositorio ("it2") confirma ese linaje: se trata de un ajuste fino sobre una arquitectura transformer encoder-decoder ya entrenada para traducción entre lenguas índicas.
+COIL-D/translate-it2-hindi-marathi es un modelo de traducción automática neuronal especializado en el par hindi-marathi y marathi-hindi. Lo publica el usuario COIL-D en Hugging Face y deriva de ai4bharat/indictrans2-indic-indic-dist-320M, el modelo destilado de 320 millones de parámetros de la familia IndicTrans2 desarrollada por AI4Bharat (IIT Madras). El nombre del repositorio ("it2") confirma ese linaje: se trata de un ajuste fino sobre una arquitectura transformer encoder-decoder ya entrenada para traducción entre lenguas índicas.
 
 El modelo se distribuye en formato CTranslate2, un runtime de inferencia optimizado que permite ejecutar la traducción en CPU con cuantización de enteros y en GPU sin necesidad de frameworks pesados tipo PyTorch. El repositorio ocupa 1,3 GB y la licencia declarada es MIT, lo que facilita su integración en productos comerciales. La ventana de contexto, los tipos de cuantización concretos incluidos y el corpus de ajuste fino no están documentados en la información disponible.
 
-Su relevancia práctica es doble: por un lado cubre un par lingüístico (hindi-marathi) con recursos limitados en comparación con los pares hacia el inglés, y por otro ofrece una huella de memoria muy reducida, apta para despliegues en servidor modesto o incluso en el borde. El acceso está restringido: requiere aceptar las condiciones en HuggingFace antes de descargar los pesos. El repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha.
+Su relevancia práctica es doble: por un lado cubre un par lingüístico (hindi-marathi) con recursos limitados en comparación con los pares hacia el inglés, y por otro ofrece una huella de memoria muy reducida, apta para despliegues en servidor modesto o incluso en el borde. El acceso está restringido: requiere aceptar las condiciones en Hugging Face antes de descargar los pesos. El repositorio no registra descargas ni valoraciones en el momento de redactar esta ficha.
 
 ## Especificaciones técnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Idiomas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| COIL-D/translate-it2-hindi-marathi | 320 M | hi, mr | no disponible | MIT | HuggingFace, acceso restringido |
-| ai4bharat/indictrans2-indic-indic-dist-320M | 320 M | Lenguas índicas programadas (incluye hi y mr) | no disponible | MIT | HuggingFace, abierto |
-| ai4bharat/indictrans2-en-indic-dist-200M | 200 M | Inglés y lenguas índicas | no disponible | MIT | HuggingFace, abierto |
-| facebook/nllb-200-distilled-600M | 600 M | 200 lenguas (incluye hi y mr) | no disponible | CC-BY-NC-4.0 (no comercial) | HuggingFace, abierto |
+| COIL-D/translate-it2-hindi-marathi | 320 M | hi, mr | no disponible | MIT | Hugging Face, acceso restringido |
+| ai4bharat/indictrans2-indic-indic-dist-320M | 320 M | Lenguas índicas programadas (incluye hi y mr) | no disponible | MIT | Hugging Face, abierto |
+| ai4bharat/indictrans2-en-indic-dist-200M | 200 M | Inglés y lenguas índicas | no disponible | MIT | Hugging Face, abierto |
+| facebook/nllb-200-distilled-600M | 600 M | 200 lenguas (incluye hi y mr) | no disponible | CC-BY-NC-4.0 (no comercial) | Hugging Face, abierto |
 
 El principal competidor es el propio modelo base, que cubre más pares lingüísticos con licencia permisiva pero sin el ajuste específico ni la conversión a CTranslate2. NLLB-200 ofrece mayor cobertura de lenguas, pero su licencia no comercial lo descarta para muchos productos. No hay datos públicos de calidad de traducción para el modelo de COIL-D, por lo que no se puede comparar rendimiento real.
 
@@ -77,7 +77,7 @@ El principal competidor es el propio modelo base, que cubre más pares lingüís
 
 - No se han publicado métricas de calidad (BLEU, chrF, COMET) para este ajuste fino, ni comparaciones con el modelo base. No hay evidencia pública de que mejore a su antecesor.
 - El repositorio registra cero descargas y cero valoraciones, lo que impide cualquier validación por parte de la comunidad.
-- El acceso está restringido: es necesario solicitar y aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede bloquear despliegues automatizados.
+- El acceso está restringido: es necesario solicitar y aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede bloquear despliegues automatizados.
 - No se documenta el corpus de ajuste fino, por lo que se desconoce el dominio cubierto (general, legal, médico, técnico) y el riesgo de degradación fuera de él.
 - Riesgo de alucinación y de errores típicos de traducción neuronal: omisiones de segmentos, adiciones no presentes en el original, cambio de registro o de terminología especializada.
 - Sesgos potenciales heredados del corpus del modelo base: infrarrepresentación de dialectos, variantes coloquiales y terminología regional específica de Maharashtra o del cinturón hindi.
@@ -89,7 +89,7 @@ El principal competidor es el propio modelo base, que cubre más pares lingüís
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-marathi
+- Modelo en Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-marathi
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Referencia arXiv incluida en las etiquetas del repositorio: https://arxiv.org/abs/2609.28826
 - No se han encontrado otros enlaces relevantes en la búsqueda web disponible.

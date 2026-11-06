@@ -99,11 +99,11 @@ Notas de la model card sobre estos resultados:
 
 | Modelo | Parametros | Contexto | Civil Comments, AUC medio | TextDetox (15 idiomas), AUC | Etiquetas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| multilingual-toxicity-base | 308M | no disponible | 0,988 | 0,854 | 7, multilingue | Apache-2.0 | HuggingFace (safetensors + ONNX) |
-| multilingual-toxicity-small | 141M | no disponible | 0,988 | 0,835 | 7, multilingue | Apache-2.0 | HuggingFace |
-| unitary/unbiased-toxic-roberta | 125M | no disponible | 0,985 | 0,588 | 7 + etiquetas de identidad, solo ingles | Apache-2.0 | HuggingFace |
-| unitary/multilingual-toxic-xlm-roberta | 278M | no disponible | 0,961 | 0,678 | 1 (toxic), multilingue | Apache-2.0 | HuggingFace |
-| textdetox/xlmr-large-toxicity-classifier | 560M | no disponible | 0,869 | 0,922 | 1 (toxic), multilingue | OpenRAIL++ | HuggingFace |
+| multilingual-toxicity-base | 308M | no disponible | 0,988 | 0,854 | 7, multilingue | Apache-2.0 | Hugging Face (safetensors + ONNX) |
+| multilingual-toxicity-small | 141M | no disponible | 0,988 | 0,835 | 7, multilingue | Apache-2.0 | Hugging Face |
+| unitary/unbiased-toxic-roberta | 125M | no disponible | 0,985 | 0,588 | 7 + etiquetas de identidad, solo ingles | Apache-2.0 | Hugging Face |
+| unitary/multilingual-toxic-xlm-roberta | 278M | no disponible | 0,961 | 0,678 | 1 (toxic), multilingue | Apache-2.0 | Hugging Face |
+| textdetox/xlmr-large-toxicity-classifier | 560M | no disponible | 0,869 | 0,922 | 1 (toxic), multilingue | OpenRAIL++ | Hugging Face |
 
 La comparacion relevante es doble. Frente a los clasificadores en ingles (unbiased-toxic-roberta, toxic-bert), este modelo iguala o mejora ligeramente el AUC en Civil Comments y ademas cubre 33 idiomas con el mismo esquema de etiquetas. Frente a los multilingues binarios (multilingual-toxic-xlm-roberta, citizenlab, xlmr-large), gana en granularidad (siete etiquetas frente a una) y en AUC de TextDetox salvo frente a xlmr-large-toxicity-classifier, que alcanza 0,922 pero fue entrenado con los datos de ese benchmark y usa licencia OpenRAIL++ en lugar de Apache-2.0.
 
@@ -123,7 +123,7 @@ La comparacion relevante es doble. Frente a los clasificadores en ingles (unbias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-toxicity-base
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-toxicity-base
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base
 - Variante reducida: https://huggingface.co/Horizon-Labs/multilingual-toxicity-small
 - Modelo hermano para peticiones daninas a LLM: https://huggingface.co/Horizon-Labs/content-safety-guard-small
@@ -138,4 +138,4 @@ La comparacion relevante es doble. Frente a los clasificadores en ingles (unbias
 - Clasificador binario multilingue de Citizen Lab: https://huggingface.co/citizenlab/distilbert-base-multilingual-cased-toxicity
 - Documentacion de transformers.js: https://huggingface.co/docs/transformers.js
 
-La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de HuggingFace.
+La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de los metadatos del repositorio de Hugging Face.

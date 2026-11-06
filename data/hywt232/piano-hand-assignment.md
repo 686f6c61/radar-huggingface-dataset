@@ -2,7 +2,7 @@
 
 ## Resumen
 
-piano-hand-assignment es un modelo de asignación de manos para partituras MIDI de piano: recibe un fichero MIDI con notas sin etiquetar y decide, para cada nota, si corresponde a la mano derecha o a la izquierda. Lo publica el usuario hywt232 en HuggingFace, con el código de referencia en el repositorio de GitHub haveyouwantto/piano-hand-assignment. No es un modelo de lenguaje: es un componente especializado de recuperación de información musical (MIR) que resuelve un problema concreto de preprocesado para transcripción, edición y análisis de partituras.
+piano-hand-assignment es un modelo de asignación de manos para partituras MIDI de piano: recibe un fichero MIDI con notas sin etiquetar y decide, para cada nota, si corresponde a la mano derecha o a la izquierda. Lo publica el usuario hywt232 en Hugging Face, con el código de referencia en el repositorio de GitHub haveyouwantto/piano-hand-assignment. No es un modelo de lenguaje: es un componente especializado de recuperación de información musical (MIR) que resuelve un problema concreto de preprocesado para transcripción, edición y análisis de partituras.
 
 El modelo no es una red única, sino un ensemble de dos checkpoints de PyTorch: una LSTM bidireccional de 2 capas con dimensión oculta 192 (1,58 M de parámetros) y un encoder Transformer de 4 capas, dimensión 192 y 4 cabezas de atención (1,75 M de parámetros). En inferencia se promedian las distribuciones de probabilidad de ambos. El tamaño reducido permite ejecutarlo en CPU en milisegundos por pieza.
 
@@ -86,6 +86,6 @@ No se dispone de información sobre modelos comparables de asignación de manos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hywt232/piano-hand-assignment
+- Modelo en Hugging Face: https://huggingface.co/hywt232/piano-hand-assignment
 - Repositorio de código: https://github.com/haveyouwantto/piano-hand-assignment
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

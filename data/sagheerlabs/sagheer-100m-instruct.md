@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sagheer-100M-Instruct es un modelo de lenguaje pequeño de aproximadamente 100 millones de parámetros, desarrollado por Sagheer Labs, un grupo independiente formado por dos estudiantes de los Emiratos Árabes Unidos que trabajan en la construcción de LLMs eficientes desde cero. El checkpoint presentado en HuggingFace es una conversión de un modelo original llamado "100mVast" al formato `LlamaForCausalLM` de Transformers, realizada específicamente para permitir su evaluación en leaderboards de referencia.
+Sagheer-100M-Instruct es un modelo de lenguaje pequeño de aproximadamente 100 millones de parámetros, desarrollado por Sagheer Labs, un grupo independiente formado por dos estudiantes de los Emiratos Árabes Unidos que trabajan en la construcción de LLMs eficientes desde cero. El checkpoint presentado en Hugging Face es una conversión de un modelo original llamado "100mVast" al formato `LlamaForCausalLM` de Transformers, realizada específicamente para permitir su evaluación en leaderboards de referencia.
 
 La relevancia de este modelo radica en su tamaño reducido, que lo hace apto para entornos con recursos limitados, alineándose con la tendencia de democratizar la IA mediante modelos pequeños y eficientes. Sin embargo, la conversión no incluye la normalización QK-norm que estaba presente en el checkpoint original, por lo que los resultados pueden diferir ligeramente del modelo nativo. No se dispone de información sobre el entrenamiento, la licencia o los idiomas soportados.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño reducido, que lo hace apto par
 
 ## Arquitectura y entrenamiento
 
-El modelo se presenta como una conversión de un checkpoint personalizado denominado "100mVast" al formato estándar `LlamaForCausalLM` de HuggingFace Transformers. La arquitectura subyacente es la de Llama, un transformer autorregresivo con atención por ventanas. El checkpoint original utilizaba QK-norm, una técnica de normalización aplicada a las claves y consultas de atención, que no está disponible en la implementación estándar de Llama. Por tanto, esta conversión ejecuta el modelo sin QK-norm, lo que puede provocar diferencias menores en las salidas respecto al modelo nativo.
+El modelo se presenta como una conversión de un checkpoint personalizado denominado "100mVast" al formato estándar `LlamaForCausalLM` de Hugging Face Transformers. La arquitectura subyacente es la de Llama, un transformer autorregresivo con atención por ventanas. El checkpoint original utilizaba QK-norm, una técnica de normalización aplicada a las claves y consultas de atención, que no está disponible en la implementación estándar de Llama. Por tanto, esta conversión ejecuta el modelo sin QK-norm, lo que puede provocar diferencias menores en las salidas respecto al modelo nativo.
 
 No se ha publicado información sobre el proceso de entrenamiento, el número de tokens utilizados, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifican detalles sobre la arquitectura exacta más allá de la familia Llama.
 
@@ -58,6 +58,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- [HuggingFace: sagheerlabs/Sagheer-100M-Instruct](https://huggingface.co/sagheerlabs/Sagheer-100M-Instruct)
+- [Hugging Face: sagheerlabs/Sagheer-100M-Instruct](https://huggingface.co/sagheerlabs/Sagheer-100M-Instruct)
 - [GitHub: sagheerlabs](https://github.com/sagheerlabs)
 - [GitHub: sagheerlabs/sagheerlabs (perfil)](https://github.com/sagheerlabs/sagheerlabs)

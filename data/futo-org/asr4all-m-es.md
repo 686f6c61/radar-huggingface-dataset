@@ -88,10 +88,10 @@ Nota del autor: las filas de RTFx se midieron sobre el modelo medium en inglés,
 
 | Modelo | Parametros | Contexto | WER es (referencia) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asr4all-m-es | 55,7 M | streaming configurable | 4,65 media (CV/MLS/FLEURS) | futo-ethical-use-1.0 | HuggingFace |
-| Whisper large-v3 | 1.550 M | 30 s por ventana | no disponible en la informacion | MIT | HuggingFace, OpenAI |
-| Whisper small | 244 M | 30 s por ventana | no disponible en la informacion | MIT | HuggingFace, OpenAI |
-| Granite-Speech CTC (teacher) | no disponible | no disponible | no disponible en la informacion | no disponible | HuggingFace (IBM) |
+| asr4all-m-es | 55,7 M | streaming configurable | 4,65 media (CV/MLS/FLEURS) | futo-ethical-use-1.0 | Hugging Face |
+| Whisper large-v3 | 1.550 M | 30 s por ventana | no disponible en la informacion | MIT | Hugging Face, OpenAI |
+| Whisper small | 244 M | 30 s por ventana | no disponible en la informacion | MIT | Hugging Face, OpenAI |
+| Granite-Speech CTC (teacher) | no disponible | no disponible | no disponible en la informacion | no disponible | Hugging Face (IBM) |
 
 La comparación cuantitativa con alternativas no puede completarse con los datos proporcionados: no se dispone de WER de los modelos comparables en los mismos conjuntos con el mismo normalizador. La ventaja diferencial de asr4all-m-es es su relación entre precisión y coste computacional en CPU, no su precisión absoluta frente a modelos de mayor tamaño.
 
@@ -108,7 +108,7 @@ La comparación cuantitativa con alternativas no puede completarse con los datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/futo-org/asr4all-m-es
+- Hugging Face: https://huggingface.co/futo-org/asr4all-m-es
 - Paper kiloVAD: https://arxiv.org/abs/2607.25870
 - Licencia: https://huggingface.co/futo-org/asr4all-m-es/blob/main/LICENSE
 - Dataset espnet/yodas3: https://huggingface.co/datasets/espnet/yodas3

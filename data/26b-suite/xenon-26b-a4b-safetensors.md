@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento comparativo. La comparación se limita a p
 
 ## Enlaces
 
-- [HuggingFace: 26B-Suite/Xenon-26B-A4B-safetensors](https://huggingface.co/26B-Suite/Xenon-26B-A4B-safetensors)
-- [HuggingFace: el4/Xenon-26B-A4B](https://huggingface.co/el4/Xenon-26B-A4B)
+- [Hugging Face: 26B-Suite/Xenon-26B-A4B-safetensors](https://huggingface.co/26B-Suite/Xenon-26B-A4B-safetensors)
+- [Hugging Face: el4/Xenon-26B-A4B](https://huggingface.co/el4/Xenon-26B-A4B)
 - [README.md de el4/Xenon-26B-A4B](https://huggingface.co/el4/Xenon-26B-A4B/blob/main/README.md)
 - [Docker Hub: ai/gemma4-safetensors](https://hub.docker.com/r/ai/gemma4-safetensors)
 - [Gemma 4 — Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)

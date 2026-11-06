@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `MonsterGirl/By_monstergirl_Peem_Wasu_bus_becauseofyouishine` es una publicacion alojada en HuggingFace por el usuario MonsterGirl. Segun los metadatos disponibles, fue creado y actualizado el 16 de septiembre de 2026, y a fecha de consulta acumula 0 descargas y 0 likes. El pipeline no esta declarado, los idiomas soportados no se especifican y la licencia aparece etiquetada como `other` con `license_name: unknown`.
+El repositorio `MonsterGirl/By_monstergirl_Peem_Wasu_bus_becauseofyouishine` es una publicacion alojada en Hugging Face por el usuario MonsterGirl. Segun los metadatos disponibles, fue creado y actualizado el 16 de septiembre de 2026, y a fecha de consulta acumula 0 descargas y 0 likes. El pipeline no esta declarado, los idiomas soportados no se especifican y la licencia aparece etiquetada como `other` con `license_name: unknown`.
 
 La model card del autor no contiene informacion tecnica: se limita a un bloque de frontmatter YAML con la licencia (`license: other`, `license_name: unknown`, `license_link: LICENSE`) y un cuerpo vacio. No se declara arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento, proceso de alineacion ni formato de pesos.
 
@@ -76,6 +76,6 @@ No disponible. No hay informacion suficiente para identificar modelos comparable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MonsterGirl/By_monstergirl_Peem_Wasu_bus_becauseofyouishine
+- Repositorio en Hugging Face: https://huggingface.co/MonsterGirl/By_monstergirl_Peem_Wasu_bus_becauseofyouishine
 - Enlace de licencia referenciado en la model card: LICENSE (relativo al repositorio; no se ha localizado contenido publico del mismo)
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados recuperados (viamichelin.de, viamichelin.com/routes, falk.de/routenplaner, maps.adac.de/routenplaner) corresponden a planificadores de rutas y no guardan relacion con el repositorio.

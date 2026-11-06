@@ -59,9 +59,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.6-27B (base) | 27 B | 131072 (esperado) | Apache 2.0 (verificar) | HuggingFace |
+| Qwen/Qwen3.6-27B (base) | 27 B | 131072 (esperado) | Apache 2.0 (verificar) | Hugging Face |
 | Granite-4-H-Small | ~3 B (estimado) | no disponible | no disponible | no disponible |
-| Adaptador dementor (este) | ~1 GB (LoRA) | hereda del base | no disponible | HuggingFace |
+| Adaptador dementor (este) | ~1 GB (LoRA) | hereda del base | no disponible | Hugging Face |
 
 La comparación real requiere ejecutar benchmarks sobre los tres modelos, lo que no está documentado.
 
@@ -76,7 +76,7 @@ La comparación real requiere ejecutar benchmarks sobre los tres modelos, lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_granite-4-h-small_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_qwen3.6-27b_as_granite-4-h-small_seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Herramienta Tinker (mencionada en la model card): https://thinkingmachines.ai/tinker/
 - No se han encontrado papers, blogs o demos adicionales sobre este adaptador concreto.

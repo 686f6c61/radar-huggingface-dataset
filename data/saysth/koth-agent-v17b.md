@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `saysth/koth-agent-v17b` es un repositorio alojado en HuggingFace creado por el usuario `saysth` el 10 de agosto de 2026 y actualizado por última vez el 13 de agosto de 2026. El nombre sugiere que podría tratarse de un agente conversacional o de razonamiento, posiblemente relacionado con el concepto "King of the Hill" (KOTH), aunque no hay información pública que lo confirme. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de pesos ni ningún otro artefacto visible, y registra cero descargas y un solo "like". No se dispone de datos sobre arquitectura, parámetros, licencia, idiomas ni pipeline de uso. En el momento de redactar esta ficha, el modelo no es evaluable ni desplegable a partir de la información disponible en HuggingFace.
+El modelo `saysth/koth-agent-v17b` es un repositorio alojado en Hugging Face creado por el usuario `saysth` el 10 de agosto de 2026 y actualizado por última vez el 13 de agosto de 2026. El nombre sugiere que podría tratarse de un agente conversacional o de razonamiento, posiblemente relacionado con el concepto "King of the Hill" (KOTH), aunque no hay información pública que lo confirme. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no contiene archivos de pesos ni ningún otro artefacto visible, y registra cero descargas y un solo "like". No se dispone de datos sobre arquitectura, parámetros, licencia, idiomas ni pipeline de uso. En el momento de redactar esta ficha, el modelo no es evaluable ni desplegable a partir de la información disponible en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables porque no hay informacion sobre
 
 ## Enlaces
 
-- [HuggingFace: saysth/koth-agent-v17b](https://huggingface.co/saysth/koth-agent-v17b)
+- [Hugging Face: saysth/koth-agent-v17b](https://huggingface.co/saysth/koth-agent-v17b)

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TextPro-SLM-3B-Global | 3B | 32.768 tokens; audio <= 30 s | Entrada de voz, salida texto | qwen-research | HuggingFace (qqjz) |
-| TextPro-SLM-7B-Global | 7B | no disponible en la informacion | Entrada de voz, salida texto | no disponible en la informacion | HuggingFace (qqjz) |
-| TextPro-SLM-7B-Interleaving | 7B | no disponible en la informacion | Entrada de voz, salida texto (fusion 5:1) | no disponible en la informacion | HuggingFace (qqjz) |
-| TextPro-SLM-7B-30Plus | 7B | audio segmentado de larga duracion | Entrada de voz, salida texto | no disponible en la informacion | HuggingFace (qqjz) |
+| TextPro-SLM-3B-Global | 3B | 32.768 tokens; audio <= 30 s | Entrada de voz, salida texto | qwen-research | Hugging Face (qqjz) |
+| TextPro-SLM-7B-Global | 7B | no disponible en la informacion | Entrada de voz, salida texto | no disponible en la informacion | Hugging Face (qqjz) |
+| TextPro-SLM-7B-Interleaving | 7B | no disponible en la informacion | Entrada de voz, salida texto (fusion 5:1) | no disponible en la informacion | Hugging Face (qqjz) |
+| TextPro-SLM-7B-30Plus | 7B | audio segmentado de larga duracion | Entrada de voz, salida texto | no disponible en la informacion | Hugging Face (qqjz) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qqjz/TextPro-SLM-3B-Global
+- Modelo en Hugging Face: https://huggingface.co/qqjz/TextPro-SLM-3B-Global
 - Paper (OpenReview): https://openreview.net/forum?id=Jsjmo8eX29
 - Repositorio GitHub del proyecto: https://github.com/dreamtheater123/TextPro-SLM
 - Encoder emparejado WhisperPro: https://huggingface.co/qqjz/WhisperPro

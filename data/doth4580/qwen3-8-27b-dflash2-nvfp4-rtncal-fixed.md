@@ -91,7 +91,7 @@ La informacion disponible permite comparar tres variantes de la misma familia (e
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/doth4580/Qwen3.8-27B-DFlash2-NVFP4-RTNcal-FIXED
+- Hugging Face (este repositorio): https://huggingface.co/doth4580/Qwen3.8-27B-DFlash2-NVFP4-RTNcal-FIXED
 - Modelo base (cuantizacion upstream): https://huggingface.co/maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal
 - Modelo base (draft BF16 DFlash 2): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo recomendado en el motor veloGB10: https://huggingface.co/doth4580/Qwen3.8-27B-NVFP4-FULL

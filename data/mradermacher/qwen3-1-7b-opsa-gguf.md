@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3-1.7B-OPSA-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3-1.7B-OPSA-GGUF
 - Modelo base (Tuwhy/Qwen3-1.7B-OPSA): https://huggingface.co/Tuwhy/Qwen3-1.7B-OPSA
 - Dataset de entrenamiento (DAPO-Math-17k): https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Paper asociado (referencia arxiv 2608.31046): no se ha encontrado un enlace directo, pero la referencia aparece en la model card.

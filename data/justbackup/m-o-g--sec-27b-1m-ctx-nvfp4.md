@@ -94,7 +94,7 @@ La comparativa directa con otros modelos especializados en ciberseguridad sin ce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Justbackup/M.O.G.-SEC-27B-1M-CTX-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/Justbackup/M.O.G.-SEC-27B-1M-CTX-NVFP4
 - Modelo base (BF16): https://huggingface.co/Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-BF16
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Kit de despliegue: https://huggingface.co/Blackfrost-Research/M.O.G.-SEC-27B-1M-CTX-NVFP4/tree/main/deployment-kit

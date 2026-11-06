@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-12b-text-to-sql es un ajuste fino (fine-tune) del modelo preentrenado google/gemma-3-12b-pt, publicado por el usuario mchan133 en HuggingFace. El nombre del repositorio indica que el objetivo del entrenamiento es la traducción de lenguaje natural a SQL (text-to-SQL), aunque la model card no documenta el conjunto de datos, el formato de las consultas, los dialectos cubiertos ni el esquema de evaluación empleado. El entrenamiento se ha realizado con TRL 0.19.1 mediante SFT (supervised fine-tuning), según la propia model card.
+gemma-12b-text-to-sql es un ajuste fino (fine-tune) del modelo preentrenado google/gemma-3-12b-pt, publicado por el usuario mchan133 en Hugging Face. El nombre del repositorio indica que el objetivo del entrenamiento es la traducción de lenguaje natural a SQL (text-to-SQL), aunque la model card no documenta el conjunto de datos, el formato de las consultas, los dialectos cubiertos ni el esquema de evaluación empleado. El entrenamiento se ha realizado con TRL 0.19.1 mediante SFT (supervised fine-tuning), según la propia model card.
 
 El modelo base pertenece a la familia Gemma 3 de Google, con aproximadamente 12 000 millones de parámetros, lo que lo sitúa en la gama media de modelos abiertos desplegables en una sola GPU de 80 GB o en configuraciones multi-GPU de consumo. El repositorio ocupa únicamente 0,3 GB, un tamano muy inferior al esperado para pesos completos en bfloat16 de un modelo de 12 000 millones de parámetros (que rondarían los 24 GB), lo que sugiere que el repositorio podría contener adaptadores o pesos parciales en lugar del modelo completo; no obstante, este extremo no se confirma en la informacion disponible.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No co
 | Modelo | Parametros | Contexto | Licencia | Resultados publicados | Disponibilidad |
 |---|---|---|---|---|---|
 | mchan133/gemma-12b-text-to-sql | ~12 000 millones (heredados) | No disponible | No disponible | No disponibles | Repositorio de 0,3 GB, 0 descargas |
-| google/gemma-3-12b-pt (modelo base) | ~12 000 millones | 128 000 tokens segun su documentacion publica | Licencia Gemma | Documentados por Google en su model card | Publico en HuggingFace |
+| google/gemma-3-12b-pt (modelo base) | ~12 000 millones | 128 000 tokens segun su documentacion publica | Licencia Gemma | Documentados por Google en su model card | Publico en Hugging Face |
 | Otros ajustes finos de text-to-SQL de tamano comparable | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos que permitan comparar el rendimiento de este ajuste fino con alternativas especializadas en text-to-SQL, ya que el autor no publica evaluaciones.
@@ -89,7 +89,7 @@ No se dispone de datos que permitan comparar el rendimiento de este ajuste fino 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mchan133/gemma-12b-text-to-sql
+- Modelo en Hugging Face: https://huggingface.co/mchan133/gemma-12b-text-to-sql
 - Modelo base: https://huggingface.co/google/gemma-3-12b-pt
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper o blog del autor: no disponible

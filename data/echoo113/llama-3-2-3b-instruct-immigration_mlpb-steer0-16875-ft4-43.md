@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.43 | 3B | 128k | no disponible | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | HuggingFace, Ollama, NVIDIA NIM |
-| Gemma 2 2.6B | 2.6B | 8k | Gemma License | HuggingFace, Ollama |
-| Phi-3.5-mini | 3.8B | 128k | MIT | HuggingFace, Ollama |
+| Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.43 | 3B | 128k | no disponible | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | Hugging Face, Ollama, NVIDIA NIM |
+| Gemma 2 2.6B | 2.6B | 8k | Gemma License | Hugging Face, Ollama |
+| Phi-3.5-mini | 3.8B | 128k | MIT | Hugging Face, Ollama |
 
 El modelo base Llama 3.2 3B es la referencia principal; el ajuste de Echoo113 no anade capacidades nuevas documentadas, solo una posible especializacion tematica. Gemma 2 2.6B y Phi-3.5-mini son alternativas de tamano similar con licencias mas permisivas, pero no tienen el enfoque en inmigracion.
 
@@ -79,7 +79,7 @@ El modelo base Llama 3.2 3B es la referencia principal; el ajuste de Echoo113 no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.43
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-immigration_mlpB-STEER0.16875-ft4.43
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Libreria TRL: https://github.com/huggingface/trl
 - Pagina de Llama 3.2 en Ollama: https://ollama.com/library/llama3.2:3b

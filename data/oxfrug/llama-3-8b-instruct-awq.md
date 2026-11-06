@@ -82,7 +82,7 @@ La diferencia principal frente al modelo base es el tamaño en disco y VRAM (5,7
 
 ## Enlaces
 
-- Repositorio HuggingFace: [oxfrug/Llama-3-8B-instruct-awq](https://huggingface.co/oxfrug/Llama-3-8B-instruct-awq)
+- Repositorio Hugging Face: [oxfrug/Llama-3-8B-instruct-awq](https://huggingface.co/oxfrug/Llama-3-8B-instruct-awq)
 - Variante EXL2: [oxfrug/Llama-3-8B-instruct-exl2](https://huggingface.co/oxfrug/Llama-3-8B-instruct-exl2)
 - Dataset de evaluación (no usar para entrenamiento): [oxfrug/nordic-instruct-eval-v2](https://huggingface.co/datasets/oxfrug/nordic-instruct-eval-v2)
 - Modelo base: [AI-Sweden-Models/Llama-3-8B-instruct](https://huggingface.co/AI-Sweden-Models/Llama-3-8B-instruct)

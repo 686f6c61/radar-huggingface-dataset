@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cmdcaliper` es un modelo de embeddings de texto basado en la arquitectura BERT, desarrollado por Ameya-Kawade y publicado en HuggingFace bajo el pipeline de `sentence-similarity`. Su función es mapear oraciones y párrafos a un espacio vectorial denso de 768 dimensiones, optimizado para tareas de recuperación de información y búsqueda semántica mediante similitud por coseno. Con 109.482.240 parámetros, se sitúa en la gama de modelos BERT-base, similar a otros modelos populares de embeddings como `all-MiniLM-L6-v2` o `bge-base-en`.
+`cmdcaliper` es un modelo de embeddings de texto basado en la arquitectura BERT, desarrollado por Ameya-Kawade y publicado en Hugging Face bajo el pipeline de `sentence-similarity`. Su función es mapear oraciones y párrafos a un espacio vectorial denso de 768 dimensiones, optimizado para tareas de recuperación de información y búsqueda semántica mediante similitud por coseno. Con 109.482.240 parámetros, se sitúa en la gama de modelos BERT-base, similar a otros modelos populares de embeddings como `all-MiniLM-L6-v2` o `bge-base-en`.
 
 El modelo se presenta como una solución ligera y directa para generar representaciones semánticas de texto. Su ventana de contexto está limitada a 128 tokens, lo que condiciona su uso a fragmentos cortos o frases individuales. Aunque la ficha técnica es incompleta (no se especifican licencia, idiomas ni datos de entrenamiento), su tamaño y arquitectura lo hacen apto para despliegues en entornos con recursos moderados, como GPUs de consumo o CPU.
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Enlaces
 
-- [HuggingFace - Ameya-Kawade/cmdcaliper](https://huggingface.co/Ameya-Kawade/cmdcaliper)
+- [Hugging Face - Ameya-Kawade/cmdcaliper](https://huggingface.co/Ameya-Kawade/cmdcaliper)
 - [Documentación de Sentence Transformers](https://sbert.net)
 - [Repositorio de Sentence Transformers en GitHub](https://github.com/huggingface/sentence-transformers)
-- [Modelos con librería sentence-transformers en HuggingFace](https://huggingface.co/models?library=sentence-transformers)
+- [Modelos con librería sentence-transformers en Hugging Face](https://huggingface.co/models?library=sentence-transformers)

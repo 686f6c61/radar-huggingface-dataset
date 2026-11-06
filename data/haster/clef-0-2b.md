@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Clef-0.2B es un Transformer decoder-only de unos 0,2B parametros (201.398.272 exactos) desarrollado por el usuario haster y publicado en HuggingFace bajo licencia Apache 2.0. No es un modelo de lenguaje generalista: es un modelo de generacion de musica simbolica (MusicXML / MIDI) entrenado desde cero sobre partituras, con un tokenizador propio de tipo bar-major REMI+ y un vocabulario de 9507 tokens a 24 TPQN. Dado un encabezado de condicionamiento corto (genero, ensemble, tempo, tonalidad, compas y un plan de instrumentos en numeros de programa General MIDI), genera una partitura multipista completa; ademas soporta las tareas CONTINUE (extender un prefijo dado) e INFILL (rellenar compases enmascarados).
+Clef-0.2B es un Transformer decoder-only de unos 0,2B parametros (201.398.272 exactos) desarrollado por el usuario haster y publicado en Hugging Face bajo licencia Apache 2.0. No es un modelo de lenguaje generalista: es un modelo de generacion de musica simbolica (MusicXML / MIDI) entrenado desde cero sobre partituras, con un tokenizador propio de tipo bar-major REMI+ y un vocabulario de 9507 tokens a 24 TPQN. Dado un encabezado de condicionamiento corto (genero, ensemble, tempo, tonalidad, compas y un plan de instrumentos en numeros de programa General MIDI), genera una partitura multipista completa; ademas soporta las tareas CONTINUE (extender un prefijo dado) e INFILL (rellenar compases enmascarados).
 
 La relevancia del modelo esta en su enfoque de representacion: al intercalar las pistas compas a compas, el modelo adquiere una nocion explicita de simultaneidad, lo que reduce el problema tipico de las voces que se quedan rezagadas o mueren antes de tiempo (metrica "early part death" de 0,10 y "co-termination spread" de 0,14). La percusion se codifica con el numero real de percusion General MIDI, de modo que la salida decodificada renderiza bombo, caja y charles correctamente sin remapeo display→GM.
 
@@ -106,7 +106,7 @@ Diferencias clave que si se pueden afirmar a partir de los datos del propio mode
 - Riesgo de alucinacion musical: el ratio in-key de held-out es 0,81 frente a ~0,96 de partituras reales, y la disonancia es de 0,29 frente a ~0,15 de referencia. Es esperable que aparezcan notas fuera de la tonalidad condicionada y simultaneidades disonantes.
 - El modelo card advierte de que las etiquetas de genero y ensemble son gruesas; `unknown` y `other` son valores validos y frecuentes, por lo que el control fino de estilo es limitado.
 - La ventana de contexto es de 4096 tokens como maximo, aunque el preentrenamiento uso ventanas de 2048; para piezas largas hay que recurrir a stitching con CONTINUE, lo que puede introducir costuras estilisticas o armonicas.
-- El tokenizador es personalizado y no es un `AutoTokenizer`: el uso de herramientas estandar que asumen tokenizadores de HuggingFace fallara al codificar o decodificar MusicXML/MIDI. Hay que usar el pipeline del proyecto.
+- El tokenizador es personalizado y no es un `AutoTokenizer`: el uso de herramientas estandar que asumen tokenizadores de Hugging Face fallara al codificar o decodificar MusicXML/MIDI. Hay que usar el pipeline del proyecto.
 - El layout de pesos es `LlamaForCausalLM`, lo que puede inducir a error: no es un modelo de lenguaje y no debe tratarse como tal en pipelines de chat o generacion de texto.
 - No se publican versiones cuantizadas ni GGUF, lo que limita el despliegue en llama.cpp, Ollama u otros runtimes que dependan de ese formato.
 - Licencia Apache 2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion de avisos, pero conviene revisar la procedencia de los datos de entrenamiento, ya que el modelo card menciona "fuentes publicas" sin enumerarlas en la informacion disponible. Esto es un caveat relevante para produccion.
@@ -116,7 +116,7 @@ Diferencias clave que si se pueden afirmar a partir de los datos del propio mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haster/Clef-0.2B
+- Modelo en Hugging Face: https://huggingface.co/haster/Clef-0.2B
 - Muestras incluidas en el repositorio: `samples/promo_rock.mid` y `samples/promo_piano_concerto.mid` (piezas de aproximadamente 3 minutos generadas con los prompts de ejemplo, renderizables con cualquier SoundFont General MIDI, por ejemplo MuseScore)
 - Tokenizador incluido en el repositorio: carpeta `tokenizer/` (tokenizer_v2, bar-major REMI+)
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a personas y eventos no relacionados (un trompetista y un jurista llamados Helmut Fuchs), por lo que no se incluyen. No se dispone de paper, blog tecnico, repositorio de codigo ni demo publica adicional en la informacion proporcionada.

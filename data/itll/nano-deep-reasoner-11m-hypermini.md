@@ -4,7 +4,7 @@
 
 Nano.Deep.Reasoner.11m-HyperMini es un modelo de lenguaje de razonamiento profundo desarrollado por ITLL, diseñado para tareas de inferencia adaptativa con un presupuesto computacional mínimo. Se trata de un decoder-only de tipo transformer recurrente que combina bloques transformer estándar con un bloque de razonamiento recurrente compartido, memoria latente aprendida y un controlador de parada adaptativo. El modelo está pensado para explorar arquitecturas eficientes de razonamiento tipo chain-of-thought en entornos con recursos muy limitados.
 
-Aunque el autor declara aproximadamente 11 millones de parámetros, el checkpoint real en safetensors contiene 14.934.003 parámetros, probablemente debido a los embeddings atados y a los componentes auxiliares. La longitud de contexto es de 1096 tokens, con un vocabulario de 16.000 tokens. El modelo se distribuye bajo licencia MIT y está disponible en HuggingFace con formato safetensors compatible con la librería transformers.
+Aunque el autor declara aproximadamente 11 millones de parámetros, el checkpoint real en safetensors contiene 14.934.003 parámetros, probablemente debido a los embeddings atados y a los componentes auxiliares. La longitud de contexto es de 1096 tokens, con un vocabulario de 16.000 tokens. El modelo se distribuye bajo licencia MIT y está disponible en Hugging Face con formato safetensors compatible con la librería transformers.
 
 Su relevancia actual radica en la tendencia hacia modelos de razonamiento profundo (como DeepSeek-R1) pero en una escala extremadamente reducida, lo que permite experimentar con técnicas de razonamiento adaptativo en hardware de consumo o incluso en CPU.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó sobre el dataset `Plans11/Organized_PreTrain_1k_Con
 - Chain-of-thought: soporta cadenas de pensamiento explícitas dentro de la generación.
 - Verificación y revisión: incorpora cabezas dedicadas a verificar y revisar el razonamiento generado.
 - Memoria latente: mantiene un estado interno recurrente que le permite acumular información a lo largo de la generación.
-- Compatible con la librería transformers: se puede cargar y ejecutar con el pipeline estándar de HuggingFace.
+- Compatible con la librería transformers: se puede cargar y ejecutar con el pipeline estándar de Hugging Face.
 
 No se especifican capacidades de tool calling, visión, audio ni multilingüismo.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada para inferencia: en fp32 (~60 MB), en fp16 (~30 MB), en 8-bit (~15 MB), en 4-bit (~8 MB). Cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna (incluso integradas), o directamente CPU. No requiere aceleración específica.
 - Compatible con consumer GPU: sí, todas (GTX 1060 en adelante, RTX, etc.).
-- Opciones de despliegue: transformers (Python), ONNX Runtime, llama.cpp (si se convierte a GGUF), o mediante la API de HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (Python), ONNX Runtime, llama.cpp (si se convierte a GGUF), o mediante la API de Hugging Face Inference Endpoints.
 - Latencia y throughput: al ser un modelo pequeño, la latencia es de milisegundos en GPU y de decenas de milisegundos en CPU, dependiendo de la profundidad de razonamiento elegida. No se proporcionan cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -75,5 +75,5 @@ No se dispone de modelos comparables con la misma arquitectura (transformer recu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ITLL/Nano.Deep.Reasoner.11m-HyperMini
+- Hugging Face: https://huggingface.co/ITLL/Nano.Deep.Reasoner.11m-HyperMini
 - Dataset mencionado (sin URL pública confirmada): `Plans11/Organized_PreTrain_1k_Context` (referenciado en la model card).

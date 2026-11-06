@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JaeWooShin/peft-rlvr | 4B (base) + adaptadores r=32 | no disponible | Adaptadores PEFT para RLVR (GRPO) sobre Qwen3-4B-Base | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Base | 4B | no disponible en esta ficha | Modelo base preentrenado | apache-2.0 | HuggingFace, ampliamente utilizado |
+| JaeWooShin/peft-rlvr | 4B (base) + adaptadores r=32 | no disponible | Adaptadores PEFT para RLVR (GRPO) sobre Qwen3-4B-Base | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Base | 4B | no disponible en esta ficha | Modelo base preentrenado | apache-2.0 | Hugging Face, ampliamente utilizado |
 | Adaptadores RLVR comparables | no disponible | no disponible | RLVR con GRPO sobre modelos de 4B | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de este repositorio ni de alternativas equivalentes publicadas en la información proporcionada, por lo que la comparación cuantitativa no está disponible.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de este repositorio ni de alternativas equ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JaeWooShin/peft-rlvr
+- Repositorio Hugging Face: https://huggingface.co/JaeWooShin/peft-rlvr
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Artículo de referencia: "Evaluating Parameter Efficient Methods for RLVR", arXiv 2512.23165 (https://arxiv.org/abs/2512.23165)
 - Framework de entrenamiento: verl 0.10 (https://github.com/volcengine/verl)

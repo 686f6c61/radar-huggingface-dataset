@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rc1krea2v2 es un adaptador LoRA de tipo text-to-image publicado por el usuario Shooter57 en HuggingFace, diseñado para funcionar sobre el modelo base krea/Krea-2-Raw. El repositorio, de 0,5 GB, se distribuye con la libreria diffusers y sigue la plantilla `template:diffusion-lora`, lo que indica que no es un modelo completo sino un conjunto de pesos de bajo rango que se acoplan al modelo base para modificar su comportamiento generativo. La unica funcionalidad documentada por el autor es la palabra de activacion `rc1`, que debe incluirse en el prompt para disparar la generacion.
+rc1krea2v2 es un adaptador LoRA de tipo text-to-image publicado por el usuario Shooter57 en Hugging Face, diseñado para funcionar sobre el modelo base krea/Krea-2-Raw. El repositorio, de 0,5 GB, se distribuye con la libreria diffusers y sigue la plantilla `template:diffusion-lora`, lo que indica que no es un modelo completo sino un conjunto de pesos de bajo rango que se acoplan al modelo base para modificar su comportamiento generativo. La unica funcionalidad documentada por el autor es la palabra de activacion `rc1`, que debe incluirse en el prompt para disparar la generacion.
 
 La model card es extremadamente escueta: se limita a un titulo de prueba ("rc1krea2v2test"), la indicacion de la trigger word y un enlace de descarga. No se documentan el concepto, estilo o identidad que el adaptador pretende capturar, ni el dataset de entrenamiento, ni hiperparametros como rango, alpha o learning rate. Tampoco se especifica licencia, idiomas soportados ni resultados de evaluacion.
 
@@ -72,7 +72,7 @@ No se han identificado en la informacion disponible modelos comparables directos
 | Longitud de contexto | no aplica | no disponible |
 | Rendimiento medido | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se han identificado en la informacion disponible modelos comparables directos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shooter57/rc1krea2v2
+- Modelo en Hugging Face: https://huggingface.co/Shooter57/rc1krea2v2
 - Pestana de archivos y versiones: https://huggingface.co/Shooter57/rc1krea2v2/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Perfil del autor: https://huggingface.co/Shooter57

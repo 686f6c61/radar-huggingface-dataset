@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-sprint-baseline-test` es una política de control robótico publicada por el usuario munish0838 en HuggingFace para el robot **microduck** de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo: es un artefacto de reinforcement learning exportado a ONNX que implementa una marcha («sprint») de carácter **perpetuo**, con 61 dimensiones de observación de entrada, 14 acciones de salida y una frecuencia de control de 50 Hz. Se carga en una ranura (*slot*) de política del daemon del robot mediante el comando `robotctl policy load <slot> munish0838/microduck-sprint-baseline-test`.
+`microduck-sprint-baseline-test` es una política de control robótico publicada por el usuario munish0838 en Hugging Face para el robot **microduck** de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo: es un artefacto de reinforcement learning exportado a ONNX que implementa una marcha («sprint») de carácter **perpetuo**, con 61 dimensiones de observación de entrada, 14 acciones de salida y una frecuencia de control de 50 Hz. Se carga en una ranura (*slot*) de política del daemon del robot mediante el comando `robotctl policy load <slot> munish0838/microduck-sprint-baseline-test`.
 
 El interés del artefacto es fundamentalmente de infraestructura: sirve como *baseline* de pruebas para verificar la cadena completa de entrenamiento y despliegue (repositorio `pollen-robotics/microduck_rl`, rama `main`, commit `4b675ebf4`), el formato de manifiesto de políticas (schema 2) y el mecanismo de normalización de observaciones. El repositorio no incluye arquitectura de red, hiperparámetros, dataset ni métricas de rendimiento.
 
@@ -76,8 +76,8 @@ No hay métricas de recompensa acumulada, velocidad de desplazamiento, estabilid
 
 | Modelo | Tipo | Parámetros | Contexto / interfaz | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-sprint-baseline-test | Política RL en ONNX | no disponible | 61-D obs. / 14 acciones a 50 Hz | no disponible | no disponible | HuggingFace, 0 descargas |
-| Otras políticas de microduck en HuggingFace | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
+| microduck-sprint-baseline-test | Política RL en ONNX | no disponible | 61-D obs. / 14 acciones a 50 Hz | no disponible | no disponible | Hugging Face, 0 descargas |
+| Otras políticas de microduck en Hugging Face | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 | Políticas de referencia del repo `microduck_rl` | no disponible | no disponible | no disponible | no disponible | no disponible | repositorio de entrenamiento citado, sin datos de modelos |
 
 No se dispone de información sobre políticas comparables de la misma familia ni sobre métricas que permitan un enfrentamiento cuantitativo. La comparación con políticas genéricas de robótica (ACT, Diffusion Policy, TDMPC) no se puede sostener con datos de esta ficha y se omite para no introducir cifras no verificadas.
@@ -97,7 +97,7 @@ No se dispone de información sobre políticas comparables de la misma familia n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/munish0838/microduck-sprint-baseline-test
+- Modelo en Hugging Face: https://huggingface.co/munish0838/microduck-sprint-baseline-test
 - Repositorio del robot microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento citado: https://github.com/pollen-robotics/microduck_rl (rama `main`, commit `4b675ebf4`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon de microduck (ruta citada en la model card; no se proporciona URL directa)

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`trevorwalker/undergrad-matching` es un repositorio de HuggingFace publicado por el usuario trevorwalker que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*. No es un modelo entrenado ni una release de pesos listos para producción: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark. El paquete se completa con `inference.py`, `config.json` y `training_args.json`, y se distribuye bajo licencia Apache 2.0.
+`trevorwalker/undergrad-matching` es un repositorio de Hugging Face publicado por el usuario trevorwalker que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de *matching*. No es un modelo entrenado ni una release de pesos listos para producción: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y que no se reclama ninguna puntuación de benchmark. El paquete se completa con `inference.py`, `config.json` y `training_args.json`, y se distribuye bajo licencia Apache 2.0.
 
 El checkpoint alojado declara 49.600 parámetros totales según los metadatos de safetensors, una cifra muy reducida que contrasta con la etiqueta de escala «huge» registrada en la configuración de arquitectura. Esa discrepancia sugiere que el campo de escala procede de una plantilla no poblada con el tamaño real, o que el checkpoint inicial no refleja la arquitectura completa descrita en el script. En cualquier caso, no hay pesos entrenados publicados ni resultados verificables.
 
@@ -74,7 +74,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trevorwalker/undergrad-matching | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace |
+| trevorwalker/undergrad-matching | 49.600 (checkpoint de inicializacion) | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ La busqueda web realizada no devolvio resultados relevantes sobre este modelo ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trevorwalker/undergrad-matching
+- Hugging Face: https://huggingface.co/trevorwalker/undergrad-matching
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos en la busqueda web. Los resultados devueltos correspondian a paginas de Microsoft sin relacion con el modelo.

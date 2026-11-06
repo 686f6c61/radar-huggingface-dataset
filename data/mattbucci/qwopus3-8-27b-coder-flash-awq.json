@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mattbucci/Qwopus3.8-27B-Coder-Flash-AWQ",
+  "slug": "mattbucci-qwopus3-8-27b-coder-flash-awq",
+  "author": "mattbucci",
+  "url": "https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-AWQ",
+  "created_at": "2026-11-03T17:18:33.000Z",
+  "updated_at": "2026-11-03T18:00:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "awq",
+    "int4",
+    "qwen3.8",
+    "coding",
+    "agentic",
+    "sglang",
+    "256k",
+    "base_model:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Coder-Flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 18718397727,
+  "storage_human": "18.7 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Coder-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mattbucci/Qwopus3.8-27B-Coder-Flash-AWQ · Hugging Face",
+      "url": "https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-AWQ",
+      "snippet": "In-house INT4 (AWQ-Marlin, W4A16, group size 128) build of Jackrong/Qwopus3.8-27B-Coder-Flash, a coding / agentic SFT of Qwen3.8-27B (Qwen3_5ForConditionalGeneration: 48 Gated-DeltaNet + 16 full-attention layers, 262K context, vision + video). Calibrated from the BF16 base with GPTQ on a thinking ..."
+    },
+    {
+      "title": "mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit",
+      "snippet": "How to use mattbucci/Qwopus3.8-27B-Coder-Flash-MLX-4bit with MLX: # Make sure mlx-vlm is installed # pip install --upgrade mlx-vlm from mlx_vlm import load, generate from mlx_vlm.prompt_utils import apply_chat_template from mlx_vlm.utils import load_config # Load the model model, processor = load ..."
+    }
+  ]
+}

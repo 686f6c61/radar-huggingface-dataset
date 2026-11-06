@@ -4,7 +4,7 @@
 
 SongMAE-Base 32x4 es un autoencoder enmascarado (masked autoencoder) desarrollado por georgeven para el aprendizaje de representaciones de canto de aves a alta resolución temporal. El modelo se entrena sobre espectrogramas de audio y produce una incrustación (embedding) cada 20 milisegundos, lo que permite distinguir sílabas y elementos finos dentro de las vocalizaciones, algo que los encoders bioacústicos convencionales, diseñados para habla humana, no logran con suficiente granularidad.
 
-El checkpoint base utiliza parches de 32 bins mel por 4 bins temporales, generando cuatro vectores de 384 dimensiones por cada paso de 20 ms, que se concatenan en una representación de 1536 dimensiones. Con 14,6 millones de parámetros, es un modelo ligero pensado para ser usado como encoder congelado en tareas de recuperación, visualización, agrupamiento y análisis de cantos. Se distribuye bajo licencia MIT y está disponible en HuggingFace con pesos en formato safetensors.
+El checkpoint base utiliza parches de 32 bins mel por 4 bins temporales, generando cuatro vectores de 384 dimensiones por cada paso de 20 ms, que se concatenan en una representación de 1536 dimensiones. Con 14,6 millones de parámetros, es un modelo ligero pensado para ser usado como encoder congelado en tareas de recuperación, visualización, agrupamiento y análisis de cantos. Se distribuye bajo licencia MIT y está disponible en Hugging Face con pesos en formato safetensors.
 
 La relevancia actual radica en que la mayoría de los encoders bioacústicos operan a resoluciones temporales pensadas para habla, insuficientes para estudiar la estructura fina del canto de las aves. SongMAE aborda esta carencia con un diseño específico para espectrogramas de alta resolución, entrenado sobre un subconjunto masivo de grabaciones de Xeno-Canto.
 
@@ -36,7 +36,7 @@ Cada paso de 20 ms produce cuatro vectores de 384 dimensiones correspondientes a
 - Procesamiento de grabaciones largas mediante ventanas independientes de 5 segundos, sin atención entre contextos.
 - Acepta audio directamente desde archivo (`embed_file`) o desde forma de onda NumPy (`embed_audio`).
 - Salida de marcas de tiempo (timestamps) en milisegundos para cada token.
-- Funciona en CPU y GPU; requiere `trust_remote_code=True` en HuggingFace Transformers.
+- Funciona en CPU y GPU; requiere `trust_remote_code=True` en Hugging Face Transformers.
 - No es un clasificador de especies ni un modelo generativo de audio.
 
 ## Casos de uso
@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/georgeven/songmae-base-32x4
+- Modelo en Hugging Face: https://huggingface.co/georgeven/songmae-base-32x4
 - Colección de modelos SongMAE: https://huggingface.co/collections/georgeven/songmae-a-bioacoustic-encoder-for-birdsong-6a91eb9c42e5cde53962fbec
 - Artículo en bioRxiv: https://www.biorxiv.org/content/10.64898/2026.08.17.745361v1
 - Código fuente en GitHub: https://github.com/georgevenven/SongMAE

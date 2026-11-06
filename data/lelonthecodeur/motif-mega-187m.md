@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Motif Mega 187M es un modelo de generacion de imagenes por difusion basado en arquitectura DiT (Diffusion Transformer), publicado en HuggingFace por el usuario Lelonthecodeur bajo el sello "Motif AI Labs". Genera imagenes de 128x128 pixeles a partir de prompts en ingles y cuenta con 187.730.881 parametros, un tamano que lo situa en la gama baja de los modelos de difusion actuales. Su relevancia es limitada y de caracter mas experimental que productivo: se trata de un modelo con cero descargas registradas, sin licencia declarada y con una model card que describe el entrenamiento de forma muy escueta.
+Motif Mega 187M es un modelo de generacion de imagenes por difusion basado en arquitectura DiT (Diffusion Transformer), publicado en Hugging Face por el usuario Lelonthecodeur bajo el sello "Motif AI Labs". Genera imagenes de 128x128 pixeles a partir de prompts en ingles y cuenta con 187.730.881 parametros, un tamano que lo situa en la gama baja de los modelos de difusion actuales. Su relevancia es limitada y de caracter mas experimental que productivo: se trata de un modelo con cero descargas registradas, sin licencia declarada y con una model card que describe el entrenamiento de forma muy escueta.
 
 Segun los datos aportados por el propio autor, el modelo se entreno durante 8.000 pasos sobre un conjunto de 64.000 ejemplos, con una perdida final de 0,0015 y una perdida media de 0,0475. La arquitectura declarada es un transformer de difusion con hidden size 768, profundidad 16, 12 cabezas de atencion y patch size de 8x8, con condicionamiento AdaLN-Zero. La model card menciona ademas tecnicas con nombres comerciales ("Pixel Precision Upscaler 4x", "Prompt Reread", "Multi-Layer Precision", "Web Search Enhancement", "Mega Quality Tags") cuya implementacion tecnica no se documenta en ningun lugar.
 
@@ -26,7 +26,7 @@ El modelo esta etiquetado unicamente para ingles y no dispone de resultados de b
 | Profundidad | 16 bloques |
 | Cabezas de atencion | 12 |
 | Condicionamiento | AdaLN-Zero |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas / likes | 0 descargas / 1 like |
 | Fecha de creacion (metadatos) | 2026-09-19 |
 | Fecha de actualizacion (metadatos) | 2026-09-19 |
@@ -43,7 +43,7 @@ Las tecnicas listadas en la model card (Pixel Precision Upscaler 4x, Prompt Rere
 
 - Generacion de imagenes a partir de descripciones de texto en ingles, con resolucion de salida de 128x128 pixeles.
 - Generacion texto-a-imagen mediante difusion con backbone transformer (DiT) y condicionamiento AdaLN-Zero.
-- Etiquetado como modelo de generacion de imagenes (image-generation) y difusion (diffusion) en HuggingFace.
+- Etiquetado como modelo de generacion de imagenes (image-generation) y difusion (diffusion) en Hugging Face.
 - Idiomas: unicamente ingles segun los metadatos; no hay informacion sobre comportamiento con prompts en castellano u otros idiomas.
 - Soporte de tool calling / function calling: no aplica (no es un modelo de lenguaje).
 - Soporte de agentes y razonamiento multi-paso: no aplica.
@@ -60,7 +60,7 @@ Las tecnicas listadas en la model card (Pixel Precision Upscaler 4x, Prompt Rere
 - Pipelines de data augmentation de baja resolucion: generar variaciones sinteticas de imagenes pequenas para aumentar un dataset de clasificacion o deteccion, siempre que la calidad resultante se valide con metricas.
 - Educacion y divulgacion sobre difusion: el tamano reducido y la simplicidad de la arquitectura permiten explicar paso a paso como funciona un DiT y visualizar cada etapa del muestreo.
 - Experimentos de ajuste fino con recursos limitados: 187M parametros permiten hacer fine-tuning sobre un dataset propio en una sola GPU consumer, algo inviable con modelos de miles de millones de parametros.
-- Integracion en demos interactivas de HuggingFace Spaces: el peso del repositorio (0,8 GB) es asumible para un Space gratuito, siempre que exista una licencia que lo permita (actualmente no declarada).
+- Integracion en demos interactivas de Hugging Face Spaces: el peso del repositorio (0,8 GB) es asumible para un Space gratuito, siempre que exista una licencia que lo permita (actualmente no declarada).
 
 ## Benchmarks y rendimiento
 
@@ -100,14 +100,14 @@ En terminos de tamano, Motif Mega 187M es aproximadamente un tercio de DiT-XL/2 
 - Sesgos: no hay estudio de sesgos publicado. Como cualquier modelo de difusion entrenado con un dataset no documentado, es probable que reproduzca sesgos de representacion, estereotipos y desequilibrios demograficos presentes en los datos de entrenamiento.
 - Riesgo de alucinacion visual: el modelo puede generar detalles incoherentes, anatomia incorrecta o texto ilegible, algo acentuado por la baja resolucion y el escaso entrenamiento.
 - Formato de pesos y compatibilidad desconocidos: no se confirma que los pesos se puedan cargar con diffusers, lo que puede requerir trabajo de conversion previo.
-- Pipeline de HuggingFace no declarado: la ausencia de campo pipeline complica el uso directo con las utilidades estandar de la plataforma.
+- Pipeline de Hugging Face no declarado: la ausencia de campo pipeline complica el uso directo con las utilidades estandar de la plataforma.
 - Metadatos con fecha futura (2026): las fechas de creacion y actualizacion del repositorio no son coherentes con la fecha actual, lo que sugiere un posible error de configuracion o un entorno de pruebas; conviene verificar la procedencia antes de cualquier uso serio.
 - Autoria: la model card atribuye el modelo a un autor de 13 anos, lo que refuerza el caracter experimental y no auditado del artefacto.
 - Baja trazabilidad del dataset: el dataset enlazado no se ha podido verificar en la informacion disponible; se desconoce su procedencia, licencia y si las imagenes cuentan con consentimiento o derechos adecuados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lelonthecodeur/motif-mega-187m
+- Modelo en Hugging Face: https://huggingface.co/Lelonthecodeur/motif-mega-187m
 - Dataset enlazado en la model card: https://huggingface.co/datasets/Lelonthecodeur/mega-precision-image-video
 - Galeria de imagenes enlazada en la model card: https://huggingface.co/datasets/Lelonthecodeur/motif-image-gallery
 - Paper de referencia de la arquitectura DiT (Scalable Diffusion Models with Transformers): no disponible en los resultados de busqueda proporcionados, aunque es la base arquitectonica declarada

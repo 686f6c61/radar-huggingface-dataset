@@ -17,7 +17,7 @@ Es relevante ahora porque demuestra ASR en tiempo real en aceleradores no NVIDIA
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | contexto rodante de 30 segundos en el decoder (valor por defecto del modelo original); ventana deslizante de 750 frames en el encoder de audio |
 | Tipos de cuantizacion | no disponible (la model card menciona aritmetica bf16/bfp8 en el chip y diferencias de tokens casi empatados por esa aritmetica) |
-| Idiomas soportados | ingles unicamente; los metadatos de HuggingFace no declaran idiomas |
+| Idiomas soportados | ingles unicamente; los metadatos de Hugging Face no declaran idiomas |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible; los pesos no van dentro de la imagen y se descargan del repositorio `Edge0/Audio8-ASR-Infinite` en la revision `7476824bc222e4ad509d286e8cae8b8d3f371129` |
 | Hardware objetivo | chip Tenstorrent Blackhole p150 (malla `P150`), construido y medido en un chip de una placa p300c |
@@ -77,7 +77,7 @@ Comparacion indicativa con GPU publicada por terceros (no equivalente, en una RT
 - No validado en otros hosts: la model card indica explicitamente que solo se ha construido y medido en ese entorno.
 - Para la implementacion original en GPU, las cifras de terceros apuntan a 12,9 GB de memoria en una RTX 5090 Laptop con bf16; no hay cifra publicada de VRAM para GPUs de consumo con este modelo.
 - GPUs de consumo: no hay datos de VRAM publicados por Edge0; la unica referencia disponible es de terceros y menciona 16,6 ms por paso en una RTX 4090, sin cifra de memoria.
-- Despliegue: con tt-cli (`uv tool install tenstorrent`, `tt model pull episod/audio8-asr-infinite-p150`, `tt serve episod/audio8-asr-infinite-p150`) o solo con tt-model (`tt-model pull episod/audio8-asr-infinite-p150 --with-weights`, `tt-model serve ...`). El paquete distribuye una imagen Docker y descarga los pesos aparte en la cache de HuggingFace.
+- Despliegue: con tt-cli (`uv tool install tenstorrent`, `tt model pull episod/audio8-asr-infinite-p150`, `tt serve episod/audio8-asr-infinite-p150`) o solo con tt-model (`tt-model pull episod/audio8-asr-infinite-p150 --with-weights`, `tt-model serve ...`). El paquete distribuye una imagen Docker y descarga los pesos aparte en la cache de Hugging Face.
 - Servicio expuesto: servidor HTTP propio en el puerto 20000 (o el siguiente libre) con `/v1/audio/transcriptions`, WebSocket `/v1/audio/stream` y `/health`.
 - Arranque en frio: compilacion de kernels y conversion de pesos, 71 segundos hasta estar listo en la maquina de desarrollo con cache vacia, mas tiempo con disco lento.
 - Latencia y throughput: un unico stream simultaneo (un segundo stream se rechaza y uno inactivo se cierra a los 60 segundos); alrededor de 54 ms por paso de 80 ms; RTF de 0,66 a 0,68 en streams largos.
@@ -88,7 +88,7 @@ No hay datos publicados en la informacion disponible para comparar con alternati
 
 | Implementacion | Hardware | Latencia por paso de 80 ms | Memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este paquete (`episod/audio8-asr-infinite-p150`) | 1 chip Tenstorrent Blackhole p150 | ~54 ms (RTF 0,66-0,68) | no medida | apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| Este paquete (`episod/audio8-asr-infinite-p150`) | 1 chip Tenstorrent Blackhole p150 | ~54 ms (RTF 0,66-0,68) | no medida | apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | Referencia CPU del modelo base | CPU | paridad de WER y transcripcion en 39 enunciados | no disponible | no disponible en la informacion proporcionada | via `Edge0/Audio8-ASR-Infinite` |
 | Decoder torch original | RTX 5090 Laptop, bf16 | 20,1 ms | 12,9 GB (servidor vLLM) | no disponible en la informacion proporcionada | via `Edge0/Audio8-ASR-Infinite` |
 | Servidor vLLM original | RTX 5090 Laptop, bf16 | 21,8 ms p50 / 73,1 ms p99 | 12,9 GB | no disponible en la informacion proporcionada | via `Edge0/Audio8-ASR-Infinite` |
@@ -112,7 +112,7 @@ No hay datos publicados en la informacion disponible para comparar con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/episod/audio8-asr-infinite-p150
+- Modelo en Hugging Face: https://huggingface.co/episod/audio8-asr-infinite-p150
 - Modelo base: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Revision de pesos referenciada: `7476824bc222e4ad509d286e8cae8b8d3f371129` de `Edge0/Audio8-ASR-Infinite`
 - tt-model-manager (empaquetado y despliegue): https://github.com/tenstorrent/tt-model-manager

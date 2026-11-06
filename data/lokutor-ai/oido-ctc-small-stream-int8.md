@@ -78,11 +78,11 @@ Latencia estimada: el texto final llega entre 1,1 y 1,4 s despues de dejar de ha
 
 | Modelo | Parametros | Contexto / modo | WER test-clean | WER test-other | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| oido-ctc-small-stream-int8 | 13 M | streaming, 5 s de contexto izquierdo, chunks de 32 frames | 6,27 | 13,06 | CC-BY-SA-4.0 | HuggingFace, 0 descargas |
-| oido-ctc-small-int8 (mismo autor) | 13 M | modo utterance, sin streaming | 3,70 | 8,23 | no disponible en la informacion proporcionada | HuggingFace |
+| oido-ctc-small-stream-int8 | 13 M | streaming, 5 s de contexto izquierdo, chunks de 32 frames | 6,27 | 13,06 | CC-BY-SA-4.0 | Hugging Face, 0 descargas |
+| oido-ctc-small-int8 (mismo autor) | 13 M | modo utterance, sin streaming | 3,70 | 8,23 | no disponible en la informacion proporcionada | Hugging Face |
 | Espressif MultiNet7 | no disponible | reconocedor propio del chip, benchmark ESP-SR | 8,5 | 21,3 | no disponible en la informacion proporcionada | integrado en ESP-SR |
-| Whisper tiny.en | no disponible | fp32 en portatil, subconjuntos de 500 frases | 6,3 | 15,9 | no disponible en la informacion proporcionada | HuggingFace |
-| nvidia/stt_en_conformer_ctc_small | 13 M | contexto completo, modelo base original | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | CC-BY-4.0 | HuggingFace |
+| Whisper tiny.en | no disponible | fp32 en portatil, subconjuntos de 500 frases | 6,3 | 15,9 | no disponible en la informacion proporcionada | Hugging Face |
+| nvidia/stt_en_conformer_ctc_small | 13 M | contexto completo, modelo base original | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | CC-BY-4.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ Latencia estimada: el texto final llega entre 1,1 y 1,4 s despues de dejar de ha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lokutor-ai/oido-ctc-small-stream-int8
+- Modelo en Hugging Face: https://huggingface.co/lokutor-ai/oido-ctc-small-stream-int8
 - Modelo base: https://huggingface.co/nvidia/stt_en_conformer_ctc_small
 - Variante sin streaming (incluye el modelo de lenguaje nemo_lm.tlm): https://huggingface.co/lokutor-ai/oido-ctc-small-int8
 - Repositorio de codigo, firmware y herramientas (GPLv3): https://github.com/lokutor-ai/oido

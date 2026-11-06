@@ -70,7 +70,7 @@ No hay datos de benchmarks del modelo que permitan una comparacion de rendimient
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| project-llm-sft-v3-l2-h2p0-seed20261006 | ~12B | no disponible | apache-2.0 + licencia Gemma 4 | HuggingFace, 0 descargas | no disponible |
+| project-llm-sft-v3-l2-h2p0-seed20261006 | ~12B | no disponible | apache-2.0 + licencia Gemma 4 | Hugging Face, 0 descargas | no disponible |
 | Gemma 2 9B (referencia de tamano similar) | 9B | 8K | Gemma license | ampliamente disponible | si (publicos) |
 | Gemma 3 12B (referencia de tamano similar) | 12B | 128K | Gemma license | ampliamente disponible | si (publicos) |
 
@@ -90,7 +90,7 @@ La comparativa de rendimiento es no disponible porque este checkpoint no publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l2-h2p0-seed20261006
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-sft-v3-l2-h2p0-seed20261006
 - Modelo base: https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-02-lora-15
 - Licencia Gemma 4 referenciada: https://ai.google.dev/gemma/docs/gemma_4_license
 - vLLM (motor de inferencia recomendado): https://github.com/vllm-project/vllm

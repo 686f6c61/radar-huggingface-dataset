@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks convencionales (MMLU, HumanEval, GS
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeCar 0.5B | 494M | no disponible | Parser semántico de dominio cerrado (115 comandos) | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según la familia Qwen2.5) | Chat generalista | Apache 2.0 | HuggingFace |
-| EdgeCar 1.5B (GGUF) | no disponible | no disponible | Misma tarea, mayor precisión, ~0,6 GB más de memoria | no disponible | HuggingFace |
+| EdgeCar 0.5B | 494M | no disponible | Parser semántico de dominio cerrado (115 comandos) | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen2.5-0.5B-Instruct | 494M | 32.768 tokens (según la familia Qwen2.5) | Chat generalista | Apache 2.0 | Hugging Face |
+| EdgeCar 1.5B (GGUF) | no disponible | no disponible | Misma tarea, mayor precisión, ~0,6 GB más de memoria | no disponible | Hugging Face |
 
 La comparación con modelos de propósito general no es directa: EdgeCar 0.5B sacrifica la conversación abierta por una precisión alta en una tarea muy acotada y por garantías de seguridad por diseño (gramática sin comandos de escritura). Frente a Qwen2.5-0.5B-Instruct, el ajuste mejora el parseo de comandos de dominio pero pierde capacidad de diálogo general.
 
@@ -88,7 +88,7 @@ La comparación con modelos de propósito general no es directa: EdgeCar 0.5B sa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meettttttttttt/edgecar-0.5b
+- Modelo en Hugging Face: https://huggingface.co/meettttttttttt/edgecar-0.5b
 - Variante GGUF: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
 - Variante 1.5B GGUF: https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

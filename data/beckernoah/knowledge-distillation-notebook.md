@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario Beckernoah, no contiene un modelo entrenado sino una nota de investigación sobre destilación de conocimiento (knowledge distillation). La model card lo describe explícitamente como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que no debe interpretarse como un artículo terminado ni como la publicación de un checkpoint. Los ficheros declarados son únicamente `notes.md` (artefacto principal) y `README.md`.
+Este repositorio de Hugging Face, publicado por el usuario Beckernoah, no contiene un modelo entrenado sino una nota de investigación sobre destilación de conocimiento (knowledge distillation). La model card lo describe explícitamente como un artefacto de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que no debe interpretarse como un artículo terminado ni como la publicación de un checkpoint. Los ficheros declarados son únicamente `notes.md` (artefacto principal) y `README.md`.
 
 El repositorio está etiquetado con `research-notes` y `knowledge-distillation`, licencia MIT y región `us`. No declara pipeline de inferencia, ni idiomas soportados, ni arquitectura concreta más allá de la etiqueta genérica `transformer` en los tags. El único dato cuantitativo disponible es un artefacto en formato safetensors con 49.600 parámetros totales, una cifra compatible con un fichero de prueba o con un tensor auxiliar, no con un modelo de lenguaje funcional.
 
@@ -12,7 +12,7 @@ Su relevancia es documental, no técnica: sirve como plantilla de metodología (
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica "transformer", sin detalle de capas, atención ni configuración) |
+| Arquitectura | no disponible (el tag de Hugging Face indica "transformer", sin detalle de capas, atención ni configuración) |
 | Parametros totales | 49.600 (dato real declarado en el artefacto safetensors; no corresponde a un modelo de lenguaje utilizable) |
 | Parametros activos | no aplica (no se describe una arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Su relevancia es documental, no técnica: sirve como plantilla de metodología (
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura. La model card no describe capas, mecanismo de atención, tokenizador, dimensionalidad oculta ni configuración de entrenamiento, y el propio autor aclara que el repositorio no libera código ni checkpoint entrenado. El tag `transformer` de HuggingFace es el único indicio, y contradice el contenido declarado del repositorio (una nota metodológica), por lo que no debe tomarse como especificación técnica.
+No hay información sobre arquitectura. La model card no describe capas, mecanismo de atención, tokenizador, dimensionalidad oculta ni configuración de entrenamiento, y el propio autor aclara que el repositorio no libera código ni checkpoint entrenado. El tag `transformer` de Hugging Face es el único indicio, y contradice el contenido declarado del repositorio (una nota metodológica), por lo que no debe tomarse como especificación técnica.
 
 Tampoco se documentan datos de entrenamiento: no hay número de tokens, composición de dataset, ni fases de RLHF, DPO o ajuste supervisado. Los únicos elementos metodológicos mencionados son un plan de evaluación con baselines emparejados, benchmarks públicos nombrados en la nota principal, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. El autor indica que, si se añaden resultados en el futuro, deberán incluir versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -44,7 +44,7 @@ Tampoco se documentan datos de entrenamiento: no hay número de tokens, composic
 - Definición de baselines emparejados: la propuesta de comparación con baselines de presupuesto equiparable es reutilizable al planificar comparativas entre un modelo profesor y sus versiones destiladas.
 - Documentación de modos de fallo: la nota contempla failure modes y preguntas abiertas, útil como apartado de limitaciones en informes técnicos.
 - Formación de personal junior: el repositorio ilustra la diferencia entre plan, hipótesis y resultado experimental, un error frecuente al leer model cards de investigación.
-- Auditoría de artefactos en HuggingFace: sirve como ejemplo de repositorio etiquetado como modelo que en realidad no lo es, útil para diseñar filtros de calidad en catálogos internos.
+- Auditoría de artefactos en Hugging Face: sirve como ejemplo de repositorio etiquetado como modelo que en realidad no lo es, útil para diseñar filtros de calidad en catálogos internos.
 
 ## Benchmarks y rendimiento
 
@@ -85,6 +85,6 @@ No disponible. No existen modelos comparables en sentido estricto, porque este r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Beckernoah/knowledge-distillation-notebook
+- Hugging Face: https://huggingface.co/Beckernoah/knowledge-distillation-notebook
 - Artefacto principal citado: `notes.md` (dentro del propio repositorio)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código, demos ni Spaces asociados.

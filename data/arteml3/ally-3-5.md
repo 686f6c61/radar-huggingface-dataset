@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ally-3.5 es un modelo de lenguaje publicado en HuggingFace por el usuario arteml3 bajo el identificador `arteml3/Ally-3.5`. Se trata de un modelo de pequeno tamano, con 134.515.008 parametros totales segun los pesos en safetensors, lo que lo situa en la categoria de los modelos ligeros de aproximadamente 135 millones de parametros. El repositorio ocupa 0,3 GB, un tamano coherente con pesos almacenados en precision de 16 bits (unos 269 MB solo de pesos), aunque la model card no confirma el tipo exacto.
+Ally-3.5 es un modelo de lenguaje publicado en Hugging Face por el usuario arteml3 bajo el identificador `arteml3/Ally-3.5`. Se trata de un modelo de pequeno tamano, con 134.515.008 parametros totales segun los pesos en safetensors, lo que lo situa en la categoria de los modelos ligeros de aproximadamente 135 millones de parametros. El repositorio ocupa 0,3 GB, un tamano coherente con pesos almacenados en precision de 16 bits (unos 269 MB solo de pesos), aunque la model card no confirma el tipo exacto.
 
 La informacion publicada por el autor es minima: unicamente declara licencia MIT y el idioma ingles. No hay pipeline declarado, no hay resultados de benchmarks, no hay descripcion del dataset de entrenamiento ni del proceso de ajuste (si lo hubo), y no se indica la longitud de contexto soportada. El modelo registra 0 descargas y 0 likes en el momento de la consulta, por lo que se trata de un artefacto practicamente sin adopcion ni validacion externa.
 
@@ -92,5 +92,5 @@ La ventaja diferencial de Ally-3.5 seria su licencia MIT, mas permisiva que Apac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arteml3/Ally-3.5
+- Hugging Face: https://huggingface.co/arteml3/Ally-3.5
 - Paper, blog, repositorio de codigo, demo o dataset asociado: no disponible en la informacion proporcionada.

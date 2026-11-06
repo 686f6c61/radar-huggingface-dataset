@@ -135,7 +135,7 @@ En la misma tarea, LightShed obtiene mayor recall en Glaze y Nightshade, mientra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ifmain/datapoisoning-detector-v1-tiny
+- Modelo en Hugging Face: https://huggingface.co/ifmain/datapoisoning-detector-v1-tiny
 - Codigo y entrenamiento: https://github.com/ifmain/datapoisoning-detector-v1
 - Informes de evaluacion: https://github.com/ifmain/datapoisoning-detector-v1/tree/main/reports/three_tap_run
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B

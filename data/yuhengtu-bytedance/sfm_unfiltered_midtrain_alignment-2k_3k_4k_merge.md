@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_alignment-2k_3k_4k_merge)
 - [Referencia al método Linear (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)
 - [Proyecto relacionado: Alignment Pretraining Suite (geodesic-research)](https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_alignment_upsampled_instruct)

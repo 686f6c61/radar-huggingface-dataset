@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 | Modelo | Parametros | Contexto | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | experimentalmachines/SmolLM2-360M-Instruct-ExecuTorch | Aproximadamente 360 M | 2.048, 4.096, 8.192 y 16.384 tokens por fichero | `.pte`, ExecuTorch 1.4.0 + XNNPACK (CPU arm64) | Apache 2.0 | Repositorio de 1,0 GB; 0 descargas y 0 likes en el momento de la consulta |
-| HuggingFaceTB/SmolLM2-360M-Instruct | Aproximadamente 360 M (no confirmado en la información disponible) | No disponible en la información proporcionada | Pesos originales del modelo base (formato no especificado en esta información) | Apache 2.0 | Modelo de origen en HuggingFace, revisión `a10cc1512eab` |
+| HuggingFaceTB/SmolLM2-360M-Instruct | Aproximadamente 360 M (no confirmado en la información disponible) | No disponible en la información proporcionada | Pesos originales del modelo base (formato no especificado en esta información) | Apache 2.0 | Modelo de origen en Hugging Face, revisión `a10cc1512eab` |
 | Otras alternativas on-device de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos verificados de rendimiento, contexto o consumo para modelos alternativos de la misma categoría en la información proporcionada, por lo que no se establece una comparación cuantitativa.
@@ -103,7 +103,7 @@ No se dispone de datos verificados de rendimiento, contexto o consumo para model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/SmolLM2-360M-Instruct-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/SmolLM2-360M-Instruct-ExecuTorch
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Aplicación openweights para Android: https://github.com/alpharomercoma/openweights
 - Ejecución de exportación en GitHub Actions: https://github.com/ExperimentalMachines/executorch-model-exporter/actions/runs/34753839416

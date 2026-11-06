@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Asilarkness/tinystories-diff-ar es un repositorio de modelos publicado por el usuario Asilarkness en HuggingFace. En el momento de la consulta no dispone de model card, pipeline declarado, licencia, idiomas soportados ni etiquetas tecnicas mas alla de `region:us`. Los unicos datos verificables son los metadatos del repositorio: 39,3 GB de tamano, 0 descargas, 1 like, creado el 9 de septiembre de 2026 y actualizado el 10 de septiembre de 2026.
+Asilarkness/tinystories-diff-ar es un repositorio de modelos publicado por el usuario Asilarkness en Hugging Face. En el momento de la consulta no dispone de model card, pipeline declarado, licencia, idiomas soportados ni etiquetas tecnicas mas alla de `region:us`. Los unicos datos verificables son los metadatos del repositorio: 39,3 GB de tamano, 0 descargas, 1 like, creado el 9 de septiembre de 2026 y actualizado el 10 de septiembre de 2026.
 
 El nombre del repositorio sugiere tres elementos que conviene separar de lo que es un dato confirmado. "tinystories" remite a la familia TinyStories y a su corpus de relatos cortos y sinteticos, desarrollado por Microsoft Research para estudiar la adquisicion de fluidez linguistica en modelos muy pequenos. "diff" aparece con frecuencia en la literatura asociado a modelos de difusion. "ar" puede interpretarse como *autoregressive* o como codigo de idioma del arabe. Ninguna de estas lecturas esta confirmada por el autor en la informacion disponible.
 
@@ -104,7 +104,7 @@ No es posible establecer una comparativa rigurosa: se desconocen los parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Asilarkness/tinystories-diff-ar
+- Hugging Face: https://huggingface.co/Asilarkness/tinystories-diff-ar
 - Paper de referencia de la familia TinyStories (Microsoft Research): https://arxiv.org/abs/2305.07759
 - Web de Microsoft: https://www.microsoft.com/en-us
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este repositorio. Los unicos resultados obtenidos fueron paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft), sin relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales.

@@ -47,7 +47,7 @@ El entrenamiento se llevó a cabo durante 3 épocas, con una tasa de aprendizaje
 - **Filtrado y priorización de imágenes en un pipeline agrícola**: en un conjunto grande de fotos de cultivos, el modelo puede separar las imágenes con posible roya o mancha angular para que un experto las revise primero. Es útil por su rapidez de inferencia y su licencia permisiva.
 - **Etiquetado asistido de nuevos datasets**: el modelo puede pre-anotar imágenes de fríjol con las tres clases, reduciendo el trabajo manual de etiquetado. Es adecuado porque ya ha aprendido patrones visuales de las tres enfermedades en el dataset de Uganda.
 - **Línea base para investigación en visión artificial agrícola**: investigadores pueden usar este modelo como punto de partida para comparar nuevas técnicas de fine-tune, data augmentation o arquitecturas alternativas sobre el mismo dataset.
-- **Ejemplo de despliegue de un ViT en HuggingFace**: el repositorio sirve como plantilla para publicar modelos de clasificación de imágenes con safetensors, model card y licencia Apache 2.0. Es útil para desarrolladores que quieran replicar el flujo completo.
+- **Ejemplo de despliegue de un ViT en Hugging Face**: el repositorio sirve como plantilla para publicar modelos de clasificación de imágenes con safetensors, model card y licencia Apache 2.0. Es útil para desarrolladores que quieran replicar el flujo completo.
 - **Monitorización de cultivos con revisión humana**: integrado en un sistema de alertas, el modelo puede marcar hojas sospechosas y generar una cola de revisión para técnicos agrícolas. Su uso está limitado a las tres clases y a condiciones visuales similares a las del dataset original.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 - **VRAM estimada para inferencia (solo pesos)**: en fp32, aproximadamente 0,34 GB (85,8 M de parámetros × 4 bytes); en fp16, aproximadamente 0,17 GB; en int8, aproximadamente 0,09 GB. Hay que sumar el espacio para activaciones y el lote de imágenes, aunque en un modelo de este tamaño es marginal.
 - **GPU recomendadas**: cualquier GPU con al menos 1 GB de VRAM puede ejecutar el modelo en fp32. Funciona en GPUs de consumo como GTX 1050, GTX 1650, RTX 2060, RTX 3060, RTX 4090, así como en GPUs de centro de datos (T4, A100, H100).
 - **¿Cabe en GPU de consumo?**: sí, cabe holgadamente en cualquier GPU de consumo moderna, e incluso en CPU para inferencia por lotes pequeños.
-- **Opciones de despliegue**: PyTorch con `transformers` (clase `ViTForImageClassification`), ONNX Runtime, TorchScript, HuggingFace Inference API y despliegue en contenedores. No se documentan integraciones con vLLM, llama.cpp u Ollama, que están orientadas a modelos de lenguaje.
+- **Opciones de despliegue**: PyTorch con `transformers` (clase `ViTForImageClassification`), ONNX Runtime, TorchScript, Hugging Face Inference API y despliegue en contenedores. No se documentan integraciones con vLLM, llama.cpp u Ollama, que están orientadas a modelos de lenguaje.
 - **Latencia y throughput**: no se han publicado datos de latencia de inferencia. El entrenamiento en T4 tomó unos 56 segundos para 3 épocas, lo que sugiere una inferencia del orden de milisegundos por imagen en GPU, pero no se dispone de una medición oficial.
 
 ## Comparativa con modelos similares
@@ -96,9 +96,9 @@ La comparativa se limita a arquitecturas de clasificación de imágenes de tama�
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/inghggw/vit-frijol)
+- [Modelo en Hugging Face](https://huggingface.co/inghggw/vit-frijol)
 - [Repositorio del curso en GitHub](https://github.com/inghggw/iniciacion-ia-adso)
-- [Dataset AI-Lab-Makerere/beans en HuggingFace](https://huggingface.co/datasets/AI-Lab-Makerere/beans)
+- [Dataset AI-Lab-Makerere/beans en Hugging Face](https://huggingface.co/datasets/AI-Lab-Makerere/beans)
 - [Modelo base google/vit-base-patch16-224-in21k](https://huggingface.co/google/vit-base-patch16-224-in21k)
 - [Roboflow: Frijol Detection API (modelo alternativo de detección de fríjol)](https://universe.roboflow.com/trabajogrado-vo3x4/frijol/model/1)
 - [GeeksforGeeks: Vision Transformer (ViT) Architecture](https://www.geeksforgeeks.org/deep-learning/vision-transformer-vit-architecture/)

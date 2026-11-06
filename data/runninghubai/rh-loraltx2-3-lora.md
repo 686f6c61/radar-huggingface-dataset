@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye otros LoRA comparables n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-loraltx2.3-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-loraltx2.3-lora
 - Modelo base: https://huggingface.co/Lightricks/LTX-2.3
 - Página original en RunningHub: https://www.runninghub.cn/model/public/2099083857076244481
 - Página del autor: https://www.runninghub.cn/user-center/1936581950121414657

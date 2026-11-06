@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Talkingapbc es un repositorio de modelo publicado en HuggingFace por el usuario I9yry8t bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene descargas ni likes, y carece de pipeline declarado y de idiomas soportados.
+Talkingapbc es un repositorio de modelo publicado en Hugging Face por el usuario I9yry8t bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es practicamente nula: la model card se limita a declarar la licencia y no incluye descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio no tiene descargas ni likes, y carece de pipeline declarado y de idiomas soportados.
 
-El unico dato tecnico objetivo es el tamano del repositorio (0,1 GB), compatible con pesos de un modelo pequeno o con un adaptador, aunque no es posible confirmar ninguna de las dos hipotesis sin acceso a los archivos. Tampoco hay informacion sobre la fecha real de publicacion mas alla de los metadatos de HuggingFace (creado y actualizado el 26 de septiembre de 2026).
+El unico dato tecnico objetivo es el tamano del repositorio (0,1 GB), compatible con pesos de un modelo pequeno o con un adaptador, aunque no es posible confirmar ninguna de las dos hipotesis sin acceso a los archivos. Tampoco hay informacion sobre la fecha real de publicacion mas alla de los metadatos de Hugging Face (creado y actualizado el 26 de septiembre de 2026).
 
 Por tanto, esta ficha debe leerse como un registro de la informacion verificable y de sus carencias. No es posible evaluar la relevancia del modelo, su calidad ni su idoneidad para produccion con los datos disponibles. Cualquier uso requeriria inspeccionar directamente los archivos del repositorio y contactar con el autor.
 
@@ -50,7 +50,7 @@ No es posible determinar casos de uso concretos y realistas sin conocer la arqui
 - Fine-tuning sobre dominio especifico: si el repositorio contiene pesos completos, partir de ellos para un ajuste supervisado en una tarea concreta.
 - Investigacion de artefactos publicados: analizar el contenido del repositorio para determinar que tipo de modelo es y si los pesos son funcionales.
 - Pruebas de integracion en stacks de inferencia locales: verificar compatibilidad con llama.cpp, Ollama o transformers una vez identificado el formato de pesos.
-- Uso educativo: estudiar la estructura de un repositorio minimo en HuggingFace y sus metadatos.
+- Uso educativo: estudiar la estructura de un repositorio minimo en Hugging Face y sus metadatos.
 
 En todos los casos, la viabilidad depende de datos que no estan disponibles y debe validarse antes de cualquier uso en produccion.
 
@@ -72,7 +72,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Talkingapbc (I9yry8t) | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
+| Talkingapbc (I9yry8t) | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/I9yry8t/Talkingapbc
+- Pagina del modelo en Hugging Face: https://huggingface.co/I9yry8t/Talkingapbc
 - Repositorio, paper, blog o demo adicionales: no disponibles en la informacion proporcionada.

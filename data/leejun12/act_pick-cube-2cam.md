@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`LeeJun12/act_pick-cube-2cam` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers), una técnica de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario LeeJun12 en HuggingFace Hub mediante la librería LeRobot de HuggingFace, y está especializado en una única tarea manipulativa: coger un cubo y depositarlo en una caja.
+`LeeJun12/act_pick-cube-2cam` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers), una técnica de aprendizaje por imitación que predice fragmentos cortos de acciones en lugar de pasos individuales. El modelo lo publica el usuario LeeJun12 en Hugging Face Hub mediante la librería LeRobot de Hugging Face, y está especializado en una única tarea manipulativa: coger un cubo y depositarlo en una caja.
 
 La política consume observaciones multimodales compuestas por el estado propioceptivo del robot (6 dimensiones) y dos cámaras RGB de 480x640 píxeles (muñeca y cenital), y produce comandos de acción de 6 dimensiones. Con 51.668.614 parámetros, es un modelo compacto pensado para ejecutarse en tiempo real sobre robots de bajo coste del ecosistema SO-100/SO-101 (tipo `so_follower`).
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeeJun12/act_pick-cube-2cam | 51,7 M | Pick-and-place (cubo) | no disponible | apache-2.0 | HuggingFace Hub |
-| Políticas ACT de referencia en LeRobot | ~50 M (típico) | Manipulación genérica | no disponible | apache-2.0 | HuggingFace Hub |
-| Diffusion Policy (referencia LeRobot) | variable | Manipulación | no disponible | apache-2.0 | HuggingFace Hub |
+| LeeJun12/act_pick-cube-2cam | 51,7 M | Pick-and-place (cubo) | no disponible | apache-2.0 | Hugging Face Hub |
+| Políticas ACT de referencia en LeRobot | ~50 M (típico) | Manipulación genérica | no disponible | apache-2.0 | Hugging Face Hub |
+| Diffusion Policy (referencia LeRobot) | variable | Manipulación | no disponible | apache-2.0 | Hugging Face Hub |
 | π0 (Physical Intelligence) | no disponible | Manipulación generalista | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables publicados para este checkpoint, por lo que la comparación se limita a parámetros, licencia y disponibilidad.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables publicados para este checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LeeJun12/act_pick-cube-2cam
+- Hugging Face: https://huggingface.co/LeeJun12/act_pick-cube-2cam
 - Dataset de entrenamiento: https://huggingface.co/datasets/LeeJun12/pick-cube-2cam_20261028_193431
 - Paper ACT: https://huggingface.co/papers/2304.13705
 - Guía LeRobot ACT: https://huggingface.co/docs/lerobot/main/en/act

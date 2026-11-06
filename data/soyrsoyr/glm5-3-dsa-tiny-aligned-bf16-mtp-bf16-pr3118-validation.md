@@ -82,7 +82,7 @@ No disponible. Este repositorio no es un modelo de produccion sino un *fixture* 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-BF16-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-DSA-Tiny-Aligned-BF16-MTP-BF16-pr3118-validation
 - Modelo de origen: https://huggingface.co/soyrsoyr/GLM-5.3-MTP-NVFP4-Test-Fixture/tree/0b017a9420e734a8443d46a9ec1a5128e4255ae7
 - Implementacion de referencia (PR 3118 de llm-compressor): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Script de verificacion incluido en el repositorio: `verify_mtp.py` (ejecutable como `python verify_mtp.py /path/to/snapshot`)

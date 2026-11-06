@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zzhhyy/yolov13_ADV` es un repositorio publicado en HuggingFace por el usuario `zzhhyy` bajo licencia Apache-2.0. El nombre sugiere una variante del modelo de deteccion de objetos YOLOv13, con el sufijo `_ADV` que podria indicar una version adversarial (entrenada con ejemplos adversarios o destinada a evaluacion de robustez), aunque esta interpretacion no esta confirmada por el autor. La model card publicada no contiene descripcion tecnica, documentacion de arquitectura ni detalles de entrenamiento.
+`zzhhyy/yolov13_ADV` es un repositorio publicado en Hugging Face por el usuario `zzhhyy` bajo licencia Apache-2.0. El nombre sugiere una variante del modelo de deteccion de objetos YOLOv13, con el sufijo `_ADV` que podria indicar una version adversarial (entrenada con ejemplos adversarios o destinada a evaluacion de robustez), aunque esta interpretacion no esta confirmada por el autor. La model card publicada no contiene descripcion tecnica, documentacion de arquitectura ni detalles de entrenamiento.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. La unica informacion verificable es la licencia (Apache-2.0) y la region de publicacion (US). Cualquier dato sobre parametros, contexto, dataset o rendimiento debe considerarse no disponible.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zzhhyy/yolov13_ADV | no disponible | no aplica | no disponible | Apache-2.0 | HuggingFace |
-| YOLOv8 (Ultralytics) | no disponible en esta ficha | no aplica | no disponible en esta ficha | AGPL-3.0 / comercial | GitHub, HuggingFace |
-| YOLOv11 (Ultralytics) | no disponible en esta ficha | no aplica | no disponible en esta ficha | AGPL-3.0 / comercial | GitHub, HuggingFace |
+| zzhhyy/yolov13_ADV | no disponible | no aplica | no disponible | Apache-2.0 | Hugging Face |
+| YOLOv8 (Ultralytics) | no disponible en esta ficha | no aplica | no disponible en esta ficha | AGPL-3.0 / comercial | GitHub, Hugging Face |
+| YOLOv11 (Ultralytics) | no disponible en esta ficha | no aplica | no disponible en esta ficha | AGPL-3.0 / comercial | GitHub, Hugging Face |
 | YOLOv5 (Ultralytics) | no disponible en esta ficha | no aplica | no disponible en esta ficha | GPL-3.0 | GitHub |
 
 La comparativa se limita a la familia YOLO por la posible naturaleza del modelo; no se dispone de datos cuantitativos para establecer una comparacion rigurosa.
@@ -80,5 +80,5 @@ La comparativa se limita a la familia YOLO por la posible naturaleza del modelo;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zzhhyy/yolov13_ADV
+- Hugging Face: https://huggingface.co/zzhhyy/yolov13_ADV
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

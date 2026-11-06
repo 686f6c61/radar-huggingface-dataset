@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Clasificador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `timm/resnet50.bamboo` | 23,5 M | 224 x 224 RGB; salida 2.048-d | No (0 clases) | no disponible (declaraciones upstream contradictorias) | HuggingFace, via timm |
-| ResNet-50 ImageNet-1k (p. ej. `timm/resnet50.a1_in1k`) | ~25,6 M | 224 x 224 RGB; salida 1.000-d | Si (1.000 clases) | Apache-2.0 en la mayoria de variantes timm (verificar) | HuggingFace, via timm |
-| ViT-B/16 de Bamboo (demo de los autores) | ~86 M (arquitectura ViT-B/16) | 224 x 224 RGB; normalizacion CLIP en la demo | Demo de clasificacion separada | CC-BY-4.0 declarada en la demo | Demo en HuggingFace Spaces; pesos via repositorio de los autores |
+| `timm/resnet50.bamboo` | 23,5 M | 224 x 224 RGB; salida 2.048-d | No (0 clases) | no disponible (declaraciones upstream contradictorias) | Hugging Face, via timm |
+| ResNet-50 ImageNet-1k (p. ej. `timm/resnet50.a1_in1k`) | ~25,6 M | 224 x 224 RGB; salida 1.000-d | Si (1.000 clases) | Apache-2.0 en la mayoria de variantes timm (verificar) | Hugging Face, via timm |
+| ViT-B/16 de Bamboo (demo de los autores) | ~86 M (arquitectura ViT-B/16) | 224 x 224 RGB; normalizacion CLIP en la demo | Demo de clasificacion separada | CC-BY-4.0 declarada en la demo | Demo en Hugging Face Spaces; pesos via repositorio de los autores |
 | CLIP RN50 (referencia de backbone multimodal) | ~102 M (torre visual + texto) | 224 x 224 RGB + texto | Proyeccion conjunta | MIT en las publicaciones de OpenAI (verificar variante) | Amplia, multiples repositorios |
 
 Las cifras de modelos comparables son aproximadas y proceden de sus arquitecturas de referencia, no de la documentacion de este modelo. No hay datos de rendimiento comparativo disponibles para `resnet50.bamboo`.
@@ -91,11 +91,11 @@ Las cifras de modelos comparables son aproximadas y proceden de sus arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/resnet50.bamboo
+- Modelo en Hugging Face: https://huggingface.co/timm/resnet50.bamboo
 - Articulo (arXiv:2203.07845): https://arxiv.org/abs/2203.07845
 - Repositorio oficial de Bamboo: https://github.com/ZhangYuanhan-AI/Bamboo
 - Configuracion del benchmark usada en el preprocesado (`rn50_bamboo_v0_1.yaml`): https://github.com/ZhangYuanhan-AI/Bamboo/blob/f6337a76b3e48a1c5eff2bbd5b9dd044e42f0654/Bamboo-Benchmark/configs/models_cfg/rn50_bamboo_v0_1.yaml
 - Instrucciones de descarga del dataset y terminos de uso: https://github.com/ZhangYuanhan-AI/Bamboo/tree/f6337a76b3e48a1c5eff2bbd5b9dd044e42f0654#downloads
 - Demo de los autores (ViT-B/16, normalizacion CLIP): https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo
 - Metadatos de la demo con la declaracion CC-BY-4.0: https://huggingface.co/spaces/CVPR/Bamboo_ViT-B16_demo/blob/2bbf27dfb670d5e1b1d3f1e0b97596f95e4c62a0/README.md
-- Fichero `conversion.json` con URLs de origen y hashes SHA256: disponible en el repositorio del modelo en HuggingFace
+- Fichero `conversion.json` con URLs de origen y hashes SHA256: disponible en el repositorio del modelo en Hugging Face

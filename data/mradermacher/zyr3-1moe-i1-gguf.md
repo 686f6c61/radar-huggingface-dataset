@@ -6,7 +6,7 @@ ZYR3.1MoE-i1-GGUF es la version cuantizada del modelo ZYR3.1MoE, desarrollado po
 
 La cuantizacion mediante imatrix de mradermacher ofrece un total de 23 variantes, desde i1-IQ1_S de 2.8 GB hasta i1-Q6_K de 7.5 GB, lo que permite su ejecucion en una amplia gama de hardware, incluidas tarjetas graficas de consumo. El modelo es compatible con la libreria transformers y puede desplegarse en entornos como llama.cpp, Ollama o vLLM.
 
-Esta ficha se basa unicamente en la informacion publicada en HuggingFace y en la model card del cuantizador. No se ha proporcionado documentacion tecnica detallada del modelo base, por lo que especificaciones como la longitud de contexto, los parametros activos o los datos de entrenamiento no estan disponibles.
+Esta ficha se basa unicamente en la informacion publicada en Hugging Face y en la model card del cuantizador. No se ha proporcionado documentacion tecnica detallada del modelo base, por lo que especificaciones como la longitud de contexto, los parametros activos o los datos de entrenamiento no estan disponibles.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/ZYR3.1MoE-i1-GGUF
+- Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/ZYR3.1MoE-i1-GGUF
 - Modelo base (zyr-AGENT): https://huggingface.co/zyr-AGENT/ZYR3.1MoE
 - Quants estaticos (mradermacher): https://huggingface.co/mradermacher/ZYR3.1MoE-GGUF
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher

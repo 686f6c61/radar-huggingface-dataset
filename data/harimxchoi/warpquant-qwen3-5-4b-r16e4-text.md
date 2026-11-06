@@ -79,7 +79,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoria (por
 
 ## Enlaces
 
-- [HuggingFace - WarpQuant-Qwen3.5-4B-R16E4-Text](https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.5-4B-R16E4-Text)
+- [Hugging Face - WarpQuant-Qwen3.5-4B-R16E4-Text](https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.5-4B-R16E4-Text)
 - [Technical report](https://harimxchoi.github.io/projects/warpquant/)
 - [GitHub - WarpQuant](https://github.com/HarimxChoi/WarpQuant)
 - [Modelo VLM asociado](https://huggingface.co/HarimxChoi/WarpQuant-Qwen3.5-4B-R16E4V4)

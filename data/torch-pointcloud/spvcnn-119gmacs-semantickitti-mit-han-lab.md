@@ -85,8 +85,8 @@ No se dispone de tablas de rendimiento comparativo en la documentacion del model
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/torch-pointcloud/spvcnn-119gmacs.semantickitti.mit-han-lab)
-- [Organizacion torch-pointcloud en HuggingFace](https://huggingface.co/torch-pointcloud)
+- [Modelo en Hugging Face](https://huggingface.co/torch-pointcloud/spvcnn-119gmacs.semantickitti.mit-han-lab)
+- [Organizacion torch-pointcloud en Hugging Face](https://huggingface.co/torch-pointcloud)
 - [Repositorio original mit-han-lab/spvnas](https://github.com/mit-han-lab/spvnas)
 - [Articulo "Searching Efficient 3D Architectures with Sparse Point-Voxel Convolution"](https://arxiv.org/abs/2007.16100)
 - [Libreria torch-pointcloud en GitHub](https://github.com/arthurdjn/pytorch-pointcloud)

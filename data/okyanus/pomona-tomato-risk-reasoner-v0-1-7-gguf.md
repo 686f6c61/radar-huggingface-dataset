@@ -96,7 +96,7 @@ No se han localizado en la informacion disponible comparativas publicadas con ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-GGUF
 - Adaptador LoRA de origen: https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Okyanus/greenhouse-sensor-data

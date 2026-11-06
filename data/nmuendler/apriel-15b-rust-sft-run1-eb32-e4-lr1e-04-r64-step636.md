@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA (PEFT) denominado `Apriel-15B-rust-s
 
 La relevancia de esta publicacion es limitada pero concreta: no se trata de un modelo nuevo, sino de un ajuste fino de bajo rango sobre un modelo de razonamiento ya existente, lo que abarata el coste de especializacion. La nomenclatura del nombre revela los hiperparametros empleados: rango LoRA 64 (`r64`), learning rate 1e-04 (`lr1e-04`), 4 epocas (`e4`), batch efectivo 32 (`eb32`) y parada o checkpoint en el paso 636 (`step636`). Estos datos, sin embargo, son inferencias a partir del identificador y no estan confirmados en la model card del autor.
 
-El repositorio tiene un tamano de 1,2 GB, coherente con pesos de adaptador en bf16 para rango 64 aplicado sobre las capas lineales de un modelo de 15B. Tanto el modelo base como el adaptador carecen de documentacion sustantiva: la model card es la plantilla por defecto de HuggingFace con campos sin rellenar, y no se declara licencia, idiomas, pipeline ni resultados de evaluacion. Se registran 0 descargas y 0 likes en el momento de la consulta.
+El repositorio tiene un tamano de 1,2 GB, coherente con pesos de adaptador en bf16 para rango 64 aplicado sobre las capas lineales de un modelo de 15B. Tanto el modelo base como el adaptador carecen de documentacion sustantiva: la model card es la plantilla por defecto de Hugging Face con campos sin rellenar, y no se declara licencia, idiomas, pipeline ni resultados de evaluacion. Se registran 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ Advertencia general: al tratarse de un ajuste fino sin evaluacion publicada, cua
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor incluye la seccion de evaluacion con todos los campos marcados como `[More Information Needed]`, y los metadatos de HuggingFace no aportan metricas. No se dispone por tanto de datos de MMLU, HumanEval, GSM8K, MBPP, evaluaciones de Rust ni de ningun otro conjunto de referencia, ni para el adaptador ni para el modelo base en el contexto de esta ficha.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del autor incluye la seccion de evaluacion con todos los campos marcados como `[More Information Needed]`, y los metadatos de Hugging Face no aportan metricas. No se dispone por tanto de datos de MMLU, HumanEval, GSM8K, MBPP, evaluaciones de Rust ni de ningun otro conjunto de referencia, ni para el adaptador ni para el modelo base en el contexto de esta ficha.
 
 ## Requisitos de hardware
 
@@ -82,8 +82,8 @@ La comparacion natural es contra el propio modelo base, ya que el adaptador no e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `nmuendler/Apriel-15B-rust-sft-run1-...` (este) | Adaptador LoRA r=64 sobre base de ~15B | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT orientado a Rust, sin evaluacion publicada |
-| `ServiceNow-AI/Apriel-Nemotron-15b-Thinker` (base) | ~15B (segun identificador) | no disponible | no disponible | HuggingFace | Modelo de razonamiento de ServiceNow AI |
+| `nmuendler/Apriel-15B-rust-sft-run1-...` (este) | Adaptador LoRA r=64 sobre base de ~15B | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT orientado a Rust, sin evaluacion publicada |
+| `ServiceNow-AI/Apriel-Nemotron-15b-Thinker` (base) | ~15B (segun identificador) | no disponible | no disponible | Hugging Face | Modelo de razonamiento de ServiceNow AI |
 | Alternativas de ~14-15B con modo razonamiento (por ejemplo, familias tipo Qwen o Phi) | no disponible | no disponible | no disponible | no disponible | No evaluadas en esta ficha; se desconoce cualquier comparacion empirica con este adaptador |
 
 No se dispone de resultados de benchmarks que permitan establecer una comparacion cuantitativa con alternativas. Cualquier afirmacion de superioridad o inferioridad seria especulativa.
@@ -103,8 +103,8 @@ No se dispone de resultados de benchmarks que permitan establecer una comparacio
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step636
-- Modelo base en HuggingFace: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step636
+- Modelo base en Hugging Face: https://huggingface.co/ServiceNow-AI/Apriel-Nemotron-15b-Thinker
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la model card: https://mlco2.github.io/impact
 

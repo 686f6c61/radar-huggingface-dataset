@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| phuctahong/nanogpt-gpt-mha-ldm-357m | 357 M | 1024 | Apache 2.0 | HuggingFace, safetensors | Checkpoint de investigación DDL2, sin benchmarks publicados |
-| GPT-2 medium (OpenAI) | 355 M | 1024 | MIT (pesos publicados) | HuggingFace, múltiples formatos | Referencia clásica de mismo tamaño, ampliamente evaluado |
-| GPT-2 large (OpenAI) | 774 M | 1024 | MIT | HuggingFace | Alternativa de mayor tamaño dentro de la misma familia |
-| Pythia-410M (EleutherAI) | 410 M | 2048 | Apache 2.0 | HuggingFace, safetensors | Suite de investigación con checkpoints intermedios y evaluaciones publicadas |
+| phuctahong/nanogpt-gpt-mha-ldm-357m | 357 M | 1024 | Apache 2.0 | Hugging Face, safetensors | Checkpoint de investigación DDL2, sin benchmarks publicados |
+| GPT-2 medium (OpenAI) | 355 M | 1024 | MIT (pesos publicados) | Hugging Face, múltiples formatos | Referencia clásica de mismo tamaño, ampliamente evaluado |
+| GPT-2 large (OpenAI) | 774 M | 1024 | MIT | Hugging Face | Alternativa de mayor tamaño dentro de la misma familia |
+| Pythia-410M (EleutherAI) | 410 M | 2048 | Apache 2.0 | Hugging Face, safetensors | Suite de investigación con checkpoints intermedios y evaluaciones publicadas |
 
 La comparación directa con estos modelos es limitada: no hay benchmarks publicados para el modelo de phuctahong, y su interés está en la variante arquitectónica LDM más que en el rendimiento absoluto. Frente a Pythia-410M, el modelo aquí descrito ofrece menor contexto (1024 frente a 2048) y carece de la batería de evaluaciones que EleutherAI publica para su suite.
 
@@ -85,7 +85,7 @@ La comparación directa con estos modelos es limitada: no hay benchmarks publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuctahong/nanogpt-gpt-mha-ldm-357m-job16471304-step100000
+- Hugging Face: https://huggingface.co/phuctahong/nanogpt-gpt-mha-ldm-357m-job16471304-step100000
 - FineWeb-Edu (corpus de entrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - NanoGPTPro (framework, referencia del tag `nanogptpro`): no disponible en la información proporcionada
 - Conjunto de comparación DDL2: no disponible en la información proporcionada

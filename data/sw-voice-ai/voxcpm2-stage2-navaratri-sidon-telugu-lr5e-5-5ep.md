@@ -95,7 +95,7 @@ La comparación directa es difícil porque este modelo está sobreespecializado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-sidon-telugu-lr5e-5-5ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-sidon-telugu-lr5e-5-5ep
 - Modelo base (stage 2, inglés Sidon): https://huggingface.co/sw-voice-ai/voxcpm2-telugu-stage1b-english-sidon-lr1e-4-10ep
 - Variante con audio crudo de YouTube (misma receta): https://huggingface.co/sw-voice-ai/voxcpm2-stage2-navaratri-telugu-lr5e-5-5ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/sw-voice/swamiji-navaratri-telugu-sidon

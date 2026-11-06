@@ -106,7 +106,7 @@ Comparativa de fidelidad: kestrel se aleja de bf16 una KL de 0,00725 en WikiText
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.5-0.8B-kestrel
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.5-0.8B-kestrel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Commit concreto del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Variante swift del mismo autor: https://huggingface.co/glyd/Qwen3.5-0.8B-swift

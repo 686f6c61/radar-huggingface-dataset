@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anjohnson/beit-classification70` es un prototipo de investigación publicado en HuggingFace por el usuario anjohnson. Se presenta explícitamente como una implementación de tipo BEiT orientada a tareas de clasificación, en una escala que el propio autor denomina "nano". No se trata de un modelo entrenado ni evaluado: la model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark en el repositorio.
+`anjohnson/beit-classification70` es un prototipo de investigación publicado en Hugging Face por el usuario anjohnson. Se presenta explícitamente como una implementación de tipo BEiT orientada a tareas de clasificación, en una escala que el propio autor denomina "nano". No se trata de un modelo entrenado ni evaluado: la model card indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (*smoke tests*) y que no se reclama ninguna puntuación de benchmark en el repositorio.
 
 El interés de la ficha, por tanto, no está en su rendimiento (inexistente a día de hoy), sino en su valor como plantilla reproducible: incluye `model.py` con implementación y punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto (optimizador Adafactor con planificador tipo *step*) y un checkpoint de inicialización. El tamaño real declarado en los metadatos de safetensors es de 16.576 parámetros totales, con un repositorio de 0,0 GB.
 
@@ -74,12 +74,12 @@ No disponible. No se dispone de datos de rendimiento ni de especificaciones comp
 - No se documentan sesgos conocidos, pero tampoco se ha realizado ninguna evaluación al respecto.
 - Riesgo de alucinación: no evaluable en el estado actual; no existe comportamiento entrenado que analizar.
 - Limitaciones de contexto e idioma: no disponible, no se especifican ni la ventana de contexto ni los idiomas.
-- Implementación personalizada: las API de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarlo.
+- Implementación personalizada: las API de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarlo.
 - Licencia MIT: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen si el repositorio se combina con datasets externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aquí incluidos.
 - Los metadatos de creación y actualización del repositorio (2026-09-15) no aportan información sobre el estado de desarrollo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anjohnson/beit-classification70
+- Modelo en Hugging Face: https://huggingface.co/anjohnson/beit-classification70
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo (papers, blogs, repositorios o demos). Los resultados recuperados tratan sobre herramientas de edición de PDF y no guardan relación con el modelo.

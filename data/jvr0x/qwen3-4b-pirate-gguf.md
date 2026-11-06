@@ -90,7 +90,7 @@ La comparación directa solo puede establecerse con el modelo base, del que este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jvr0x/Qwen3-4B-Pirate-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jvr0x/Qwen3-4B-Pirate-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset de destilación: https://huggingface.co/datasets/mlabonne/FineTome-100k
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

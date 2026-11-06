@@ -108,7 +108,7 @@ No se dispone de cifras de precision, recall o F1 para ninguna variante de detec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andreilungeanu/email-phishing-detector-v2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/andreilungeanu/email-phishing-detector-v2-GGUF
 - Modelo base original (PyTorch): https://huggingface.co/nhellyercreek/email-phishing-detector-v2
 - Backbone preentrenado: https://huggingface.co/microsoft/deberta-v3-base
 - Paper de DeBERTa-v3 (arquitectura del backbone): https://arxiv.org/abs/2111.09543

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`EYHUNKIM/act_task2_test` es un modelo de política robótica (policy) publicado en HuggingFace con pipeline `robotics`, generado mediante la herramienta Cyclo Intelligence de ROBOTIS. El nombre del repositorio y la model card sugieren que se trata de un modelo basado en ACT (Action Chunking Transformer), una arquitectura de imitación aprendida para control de brazos robóticos a partir de demostraciones, aunque la información pública no confirma explícitamente la arquitectura. El repositorio ocupa 1,2 GB y contiene pesos en formato safetensors.
+`EYHUNKIM/act_task2_test` es un modelo de política robótica (policy) publicado en Hugging Face con pipeline `robotics`, generado mediante la herramienta Cyclo Intelligence de ROBOTIS. El nombre del repositorio y la model card sugieren que se trata de un modelo basado en ACT (Action Chunking Transformer), una arquitectura de imitación aprendida para control de brazos robóticos a partir de demostraciones, aunque la información pública no confirma explícitamente la arquitectura. El repositorio ocupa 1,2 GB y contiene pesos en formato safetensors.
 
 El modelo está entrenado sobre el dataset `local/Task_8_test8`, una referencia local que no es accesible públicamente, por lo que no se puede verificar la composición ni el volumen de datos de entrenamiento. No se dispone de información sobre parámetros, contexto, idiomas ni licencia. Es relevante únicamente en el contexto de robótica de imitación con el ecosistema ROBOTIS/Cyclo Intelligence, y no como modelo de lenguaje general.
 
@@ -71,6 +71,6 @@ No disponible. No se dispone de información suficiente para comparar este check
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EYHUNKIM/act_task2_test
+- Hugging Face: https://huggingface.co/EYHUNKIM/act_task2_test
 - Cyclo Intelligence (ROBOTIS): https://github.com/ROBOTIS-GIT/cyclo_intelligence
 - Dataset referenciado (no accesible públicamente): https://huggingface.co/datasets/local/Task_8_test8

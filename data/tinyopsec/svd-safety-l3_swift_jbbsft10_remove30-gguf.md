@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l3_swift_jbbsft10_remove30-GGUF (este) | ~8B | no disponible | Llama 3 | GGUF en HuggingFace | Pesos comprimidos por SVD; sin benchmarks publicados |
+| svd-safety-l3_swift_jbbsft10_remove30-GGUF (este) | ~8B | no disponible | Llama 3 | GGUF en Hugging Face | Pesos comprimidos por SVD; sin benchmarks publicados |
 | Meta-Llama-3-8B-Instruct | ~8B | 8.192 tokens | Llama 3 | Pesos originales y multiples cuantizaciones | Referencia de la familia; ampliamente evaluado |
 | Mistral-7B-Instruct-v0.3 | ~7,2B | 32.768 tokens | Apache 2.0 | Pesos originales y GGUF | Contexto mayor y licencia permisiva |
 | Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens | Apache 2.0 | Pesos originales y GGUF | Buen rendimiento en codigo y matematicas |
@@ -84,7 +84,7 @@ La comparacion con Llama 3 8B Instruct es la mas directa por herencia de familia
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/tinyopsec/svd-safety-l3_swift_jbbsft10_remove30-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/tinyopsec/svd-safety-l3_swift_jbbsft10_remove30-GGUF
 - Modelo base: https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft10_remove30
 - llama.cpp (herramienta de cuantizacion): https://github.com/ggerganov/llama.cpp
 - Licencia Llama 3: https://llama.meta.com/llama3/license/

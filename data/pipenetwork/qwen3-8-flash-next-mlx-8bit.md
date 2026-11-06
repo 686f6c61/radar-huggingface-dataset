@@ -82,7 +82,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/pipenetwork/Qwen3.8-Flash-Next-MLX-8bit
 - Repositorio GitHub de PipeNetwork (código del port): https://github.com/PipeNetwork/qwen38-flash-next-mlx
 - Repositorio GitHub de PipeNetwork para Qwen3.8-2.4T: https://github.com/PipeNetwork/qwen38-mlx/tree/main/
 - Repositorio oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

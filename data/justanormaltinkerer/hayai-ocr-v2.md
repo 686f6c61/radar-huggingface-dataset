@@ -96,8 +96,8 @@ Hayai OCR v2.1 ofrece un equilibrio entre precisión y velocidad muy superior a 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/JustANormalTinkerer/hayai-ocr-v2
+- Modelo en Hugging Face: https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/JustANormalTinkerer/hayai-ocr-v2
 - Paquete PyPI: https://pypi.org/project/hayai-ocr/
 - Repositorio GitHub (fork original): https://github.com/NopeNopeGuy/hayai-ocr
 - Benchmark JMangaBench_Mixed: https://github.com/muscgab/JMangaBench_Mixed/

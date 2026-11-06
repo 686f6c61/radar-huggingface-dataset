@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zoda es un modelo publicado en HuggingFace por el usuario watanbe4112 bajo una licencia personalizada denominada "zoda". La model card asociada no contiene ninguna descripción funcional, arquitectonica ni de uso: unicamente incluye el bloque de metadatos YAML que declara la licencia. No hay informacion sobre el proposito del modelo, su arquitectura, sus datos de entrenamiento ni sus capacidades.
+Zoda es un modelo publicado en Hugging Face por el usuario watanbe4112 bajo una licencia personalizada denominada "zoda". La model card asociada no contiene ninguna descripción funcional, arquitectonica ni de uso: unicamente incluye el bloque de metadatos YAML que declara la licencia. No hay informacion sobre el proposito del modelo, su arquitectura, sus datos de entrenamiento ni sus capacidades.
 
-El repositorio tiene un tamano de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmar la naturaleza del contenido sin acceso a los archivos. El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en HuggingFace.
+El repositorio tiene un tamano de 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmar la naturaleza del contenido sin acceso a los archivos. El modelo no registra descargas ni likes en el momento de la consulta, y no tiene pipeline declarado en Hugging Face.
 
 No se dispone de informacion suficiente para evaluar su relevancia tecnica actual. Cualquier uso en produccion requeriria inspeccionar directamente los archivos del repositorio y contactar con el autor para obtener documentacion adicional.
 
@@ -75,6 +75,6 @@ No disponible. No se dispone de informacion sobre parametros, contexto, rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/watanbe4112/zoda
-- Licencia (referenciada en la model card): LICENSE dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/watanbe4112/zoda
+- Licencia (referenciada en la model card): LICENSE dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

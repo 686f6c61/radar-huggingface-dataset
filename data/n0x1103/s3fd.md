@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`n0x1103/s3fd` es un repositorio de modelo publicado en HuggingFace por el usuario `n0x1103` bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, no tiene pipeline declarado, no declara idiomas soportados y su model card se limita a una unica linea de metadatos (`license: mit`), sin descripcion, sin ficha tecnica y sin documentacion de uso. El tamano del repositorio es de 0,1 GB.
+`n0x1103/s3fd` es un repositorio de modelo publicado en Hugging Face por el usuario `n0x1103` bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, no tiene pipeline declarado, no declara idiomas soportados y su model card se limita a una unica linea de metadatos (`license: mit`), sin descripcion, sin ficha tecnica y sin documentacion de uso. El tamano del repositorio es de 0,1 GB.
 
 No hay informacion publica disponible sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni el proceso de alineacion. La busqueda web realizada no ha devuelto ningun resultado relevante: los enlaces recuperados corresponden a consultas sin relacion alguna con el modelo (foros en chino sobre simbolos tipograficos, buscadores y comparativas de plataformas de segunda mano), por lo que no aportan datos tecnicos.
 
@@ -76,7 +76,7 @@ No disponible. Al no conocer la categoria del modelo (tamano, tarea, modalidad, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| n0x1103/s3fd | no disponible | no disponible | MIT | HuggingFace | no disponible |
+| n0x1103/s3fd | no disponible | no disponible | MIT | Hugging Face | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,5 +93,5 @@ No disponible. Al no conocer la categoria del modelo (tamano, tarea, modalidad, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/n0x1103/s3fd
+- Hugging Face: https://huggingface.co/n0x1103/s3fd
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo, demos ni discusiones tecnicas relacionados con el modelo. Los resultados recuperados (foros de consulta generica, directorios de buscadores y comparativas de plataformas de compraventa) no guardan relacion con `n0x1103/s3fd` y se han descartado por no ser fuentes validas.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `jrepifano/q14b-tda-del-r4` es un submódulo publicado en HuggingFace por el investigador Jacob Epifano, del que no se dispone de información técnica sustancial. La model card asociada es una plantilla generada automáticamente por HuggingFace, sin datos sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos publicados o que se trata de un espacio de trabajo en fase inicial.
+El modelo `jrepifano/q14b-tda-del-r4` es un submódulo publicado en Hugging Face por el investigador Jacob Epifano, del que no se dispone de información técnica sustancial. La model card asociada es una plantilla generada automáticamente por Hugging Face, sin datos sobre arquitectura, parámetros, entrenamiento o capacidades. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos publicados o que se trata de un espacio de trabajo en fase inicial.
 
-El nombre del modelo sugiere una posible relación con cuantización (q14b podría indicar 14 mil millones de parámetros cuantizados) y con "tda" (posiblemente Topological Data Analysis, dado el perfil de investigación del autor), pero no hay confirmación en la información disponible. Los tags incluyen `unsloth`, lo que indica que el entrenamiento o fine-tuning se realizó presumiblemente con la librería Unsloth, y `endpoints_compatible`, que sugiere compatibilidad con la infraestructura de inferencia de HuggingFace. También aparece el tag `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla de la model card.
+El nombre del modelo sugiere una posible relación con cuantización (q14b podría indicar 14 mil millones de parámetros cuantizados) y con "tda" (posiblemente Topological Data Analysis, dado el perfil de investigación del autor), pero no hay confirmación en la información disponible. Los tags incluyen `unsloth`, lo que indica que el entrenamiento o fine-tuning se realizó presumiblemente con la librería Unsloth, y `endpoints_compatible`, que sugiere compatibilidad con la infraestructura de inferencia de Hugging Face. También aparece el tag `arxiv:1910.09700`, que corresponde al paper de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla de la model card.
 
 Dado el carácter incompleto de los datos, esta ficha debe interpretarse como un documento preliminar que refleja la falta de información pública, y no como una evaluación técnica del modelo.
 
@@ -23,7 +23,7 @@ Dado el carácter incompleto de los datos, esta ficha debe interpretarse como un
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. El tag `unsloth` sugiere que se utilizó la librería Unsloth para el fine-tuning, conocida por su eficiencia en memoria y velocidad, pero no se especifica el modelo base ni el procedimiento de entrenamiento. La model card no contiene detalles sobre datos de entrenamiento, hiperparámetros, ni técnicas como RLHF o DPO. El tag `arxiv:1910.09700` es una referencia al paper de estimación de carbono que aparece en la plantilla estándar de HuggingFace, no una indicación de innovación técnica.
+No se ha publicado información sobre la arquitectura del modelo. El tag `unsloth` sugiere que se utilizó la librería Unsloth para el fine-tuning, conocida por su eficiencia en memoria y velocidad, pero no se especifica el modelo base ni el procedimiento de entrenamiento. La model card no contiene detalles sobre datos de entrenamiento, hiperparámetros, ni técnicas como RLHF o DPO. El tag `arxiv:1910.09700` es una referencia al paper de estimación de carbono que aparece en la plantilla estándar de Hugging Face, no una indicación de innovación técnica.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No disponible. No se puede comparar con otros modelos porque se desconocen sus e
 
 ## Enlaces
 
-- [HuggingFace: jrepifano/q14b-tda-del-r4](https://huggingface.co/jrepifano/q14b-tda-del-r4)
+- [Hugging Face: jrepifano/q14b-tda-del-r4](https://huggingface.co/jrepifano/q14b-tda-del-r4)
 - [Perfil de GitHub del autor](https://github.com/jrepifano)
 - [Repositorio de ML del autor en GitHub](https://github.com/jrepifano/Machine-Learning)
 - [Página de investigación del autor](https://jrepifano.github.io/research/)

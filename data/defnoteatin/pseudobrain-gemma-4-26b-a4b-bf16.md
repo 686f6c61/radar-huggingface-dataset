@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PseudoBrain-Gemma-4-26B-A4B-BF16 | 25,95B | ~3,8B | 1.048.576 tokens (segun autor) | Gemma | HuggingFace, plugin vLLM propio |
-| Gemma 4 26B-A4B-it (modelo base) | 25,95B | ~3,8B | No disponible en la informacion | Gemma | HuggingFace |
-| RedHatAI Gemma-4-26B-A4B-it-FP8-dynamic | 25,95B | ~3,8B | No disponible en la informacion | Gemma | HuggingFace |
-| cyankiwi Gemma-4-26B-A4B-it-AWQ-4bit | 25,95B | ~3,8B | No disponible en la informacion | Gemma | HuggingFace |
+| PseudoBrain-Gemma-4-26B-A4B-BF16 | 25,95B | ~3,8B | 1.048.576 tokens (segun autor) | Gemma | Hugging Face, plugin vLLM propio |
+| Gemma 4 26B-A4B-it (modelo base) | 25,95B | ~3,8B | No disponible en la informacion | Gemma | Hugging Face |
+| RedHatAI Gemma-4-26B-A4B-it-FP8-dynamic | 25,95B | ~3,8B | No disponible en la informacion | Gemma | Hugging Face |
+| cyankiwi Gemma-4-26B-A4B-it-AWQ-4bit | 25,95B | ~3,8B | No disponible en la informacion | Gemma | Hugging Face |
 
 La comparacion con el modelo base y sus cuantizaciones es la mas directa, ya que PseudoBrain reutiliza sus pesos y solo modifica el mecanismo de atención y memoria. Frente a ellos, la diferencia declarada esta en el coste de KV cache a contexto largo y en el contexto maximo soportado, no en el conocimiento adquirido durante el entrenamiento. No se dispone de datos de rendimiento comparativo que permitan cuantificar la perdida o ganancia de calidad respecto al modelo original.
 
@@ -91,14 +91,14 @@ La comparacion con el modelo base y sus cuantizaciones es la mas directa, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-BF16
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-BF16
 - Repositorio GitHub del proyecto: https://github.com/defnotean/pseudobrain
 - Plugin vLLM pb27_vllm: https://github.com/defnotean/pseudobrain/tree/main/serving/pb27_vllm
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Benchmark receipts: https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edicion FP8: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-FP8
 - Edicion NVFP4: https://huggingface.co/defnoteatin/PseudoBrain-Gemma-4-26B-A4B-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it

@@ -81,5 +81,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eustia1/checkpoint-183
+- Hugging Face: https://huggingface.co/Eustia1/checkpoint-183
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

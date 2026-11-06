@@ -106,7 +106,7 @@ La comparacion de rendimiento directo no esta disponible: Flint publica Terminal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/electroglyph/flint-uncensored
+- Modelo en Hugging Face: https://huggingface.co/electroglyph/flint-uncensored
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Organizacion del desarrollador: https://huggingface.co/RecursiveSI
 - Blog de presentacion de Recursive Flint: https://www.recursive.com/updates/introducing-recursive-flint

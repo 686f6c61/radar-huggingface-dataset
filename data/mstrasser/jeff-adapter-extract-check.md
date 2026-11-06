@@ -73,7 +73,7 @@ El autor advierte que los tests de tipo "generator" provienen del mismo generado
 
 | Modelo | Tipo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jeff-adapter-extract-check | LoRA sobre decoder 0.8B | no disponible (base 0.8B) | no disponible | Validación de valores extraídos (5 clases) | apache-2.0 | HuggingFace + API Jeff |
+| jeff-adapter-extract-check | LoRA sobre decoder 0.8B | no disponible (base 0.8B) | no disponible | Validación de valores extraídos (5 clases) | apache-2.0 | Hugging Face + API Jeff |
 | Modelos generativos de validación (p. ej. LLM instruct pequeños) | Transformer generativo | variable | variable | Verificación mediante generación de texto | variable | variable |
 | Clasificadores de NLI/entailment | Encoder | variable | variable | Soporte/contradicción entre texto y afirmación | variable | variable |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con alternativas concretas en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mstrasser/jeff-adapter-extract-check
+- Hugging Face: https://huggingface.co/mstrasser/jeff-adapter-extract-check
 - Modelo base: https://huggingface.co/mstrasser/jeff-base
 - Catálogo: https://jeffhub.ai/catalogue/jeff.retrieval.extract-check
 - Código, servidor y SDKs: https://github.com/firelex/jeff

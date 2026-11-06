@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huydamp007/sexyAI_apaxk` es un repositorio publicado en HuggingFace por el usuario `huydamp007` cuya informacion publica se limita a la licencia (Apache 2.0), la region declarada (`us`) y las marcas de tiempo de creacion y actualizacion. No se declara pipeline, idiomas, arquitectura, numero de parametros, longitud de contexto ni formato de pesos, y la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion funcional. Con estos datos no es posible determinar que tipo de modelo es ni que tarea resuelve.
+`huydamp007/sexyAI_apaxk` es un repositorio publicado en Hugging Face por el usuario `huydamp007` cuya informacion publica se limita a la licencia (Apache 2.0), la region declarada (`us`) y las marcas de tiempo de creacion y actualizacion. No se declara pipeline, idiomas, arquitectura, numero de parametros, longitud de contexto ni formato de pesos, y la model card unicamente contiene el bloque de metadatos de licencia, sin descripcion funcional. Con estos datos no es posible determinar que tipo de modelo es ni que tarea resuelve.
 
 El repositorio acumula 0 descargas y 1 like, lo que indica que no ha pasado por ninguna validacion de la comunidad ni tiene usuarios conocidos. Las fechas declaradas (creacion y ultima actualizacion el 23 de septiembre de 2026, identicas) apuntan a una subida unica sin mantenimiento posterior; esa marca temporal es posterior a la fecha actual habitual de consulta, por lo que conviene tratarla como posible error de metadatos o como fecha programada, no como un dato fiable de ciclo de vida.
 
@@ -40,7 +40,7 @@ No es posible confirmar ninguna capacidad concreta del modelo a partir de la inf
 - Cobertura multilingue o idiomas concretos.
 - Modos especiales de inferencia (thinking mode, cadena de pensamiento explicita, etc.).
 
-La unica capacidad que puede inferirse con certeza es la de almacenar pesos en el Hub de HuggingFace bajo licencia Apache 2.0. Cualquier evaluacion funcional requiere descargar e inspeccionar el repositorio (archivos de pesos, `config.json`, tokenizer y scripts de carga) antes de emitir un juicio.
+La unica capacidad que puede inferirse con certeza es la de almacenar pesos en el Hub de Hugging Face bajo licencia Apache 2.0. Cualquier evaluacion funcional requiere descargar e inspeccionar el repositorio (archivos de pesos, `config.json`, tokenizer y scripts de carga) antes de emitir un juicio.
 
 ## Casos de uso
 
@@ -76,7 +76,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| huydamp007/sexyAI_apaxk | no disponible | no disponible | Apache 2.0 | repositorio en HuggingFace | no disponible |
+| huydamp007/sexyAI_apaxk | no disponible | no disponible | Apache 2.0 | repositorio en Hugging Face | no disponible |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huydamp007/sexyAI_apaxk
+- Hugging Face: https://huggingface.co/huydamp007/sexyAI_apaxk
 - Resultados de la busqueda web (ninguno hace referencia a este modelo ni a su autor; se listan solo como trazabilidad de la busqueda):
   - https://www.instagram.com/models__ai/
   - https://www.reddit.com/r/SexyAI/wiki/prompting101/

@@ -85,7 +85,7 @@ No se han publicado resultados adicionales de benchmarks (por ejemplo MMLU, Huma
 
 | Modelo | Parametros | Streaming | Idiomas | CER aishell1 | WER librispeech clean | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Audio8 ASR Infinite | 4,09 B | Si, nativo, reloj 80/120/160 ms | zh, en | 1,750 | 3,042 | Apache 2.0 | HuggingFace y GitHub |
+| Audio8 ASR Infinite | 4,09 B | Si, nativo, reloj 80/120/160 ms | zh, en | 1,750 | 3,042 | Apache 2.0 | Hugging Face y GitHub |
 | Voxtral-Mini-4B-Realtime-2602 | 4 B (torre de audio reutilizada por Audio8) | Si | No disponible | 16,795 | 2,210 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 | nemotron-3.5-asr-streaming-0.6b | 0,6 B | Si, 560 ms segun la tabla | No disponible | 12,927 | 3,353 | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada |
 
@@ -106,7 +106,7 @@ La comparativa se limita a los tres sistemas incluidos en la tabla de evaluacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Edge0/Audio8-ASR-Infinite
+- Modelo en Hugging Face: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Repositorio GitHub del modelo: https://github.com/Edge0-AI/Audio8-ASR-Infinite
 - Licencia (Apache 2.0) en GitHub: https://github.com/Edge0-AI/Audio8-ASR-Infinite/blob/main/LICENSE
 - Paper en arXiv: anunciado como "coming soon" en la model card; el enlace apunta al repositorio de GitHub, sin identificador arXiv disponible

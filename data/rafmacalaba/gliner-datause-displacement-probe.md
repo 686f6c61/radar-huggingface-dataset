@@ -90,7 +90,7 @@ No se dispone de información suficiente para una comparativa más detallada con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rafmacalaba/gliner-datause-displacement-probe
+- Modelo en Hugging Face: https://huggingface.co/rafmacalaba/gliner-datause-displacement-probe
 - Modelo relacionado `gliner-datause-probe`: https://huggingface.co/rafmacalaba/gliner-datause-probe
 - Modelo relacionado `gliner-probe`: https://huggingface.co/rafmacalaba/gliner-probe
 - Conjunto de datos `datause-displacement-reviewed`: https://huggingface.co/rafmacalaba/datause-displacement-reviewed

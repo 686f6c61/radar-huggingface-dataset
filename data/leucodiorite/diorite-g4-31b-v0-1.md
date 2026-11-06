@@ -4,7 +4,7 @@
 
 Diorite-G4-31B-v0.1 es un adaptador LoRA (PEFT) publicado por el usuario Leucodiorite sobre el modelo base google/gemma-4-31B-it. No se trata de un modelo completo, sino de un conjunto de pesos de ajuste fino que deben cargarse sobre la arquitectura original de Gemma 4 31B instruida. El repositorio ocupa 1,8 GB, lo que es coherente con un adaptador LoRA de rango moderado sobre un modelo de 31 000 millones de parametros.
 
-El tag "decision" sugiere que el ajuste fino esta orientado a tareas de toma de decisiones o clasificacion/razonamiento estructurado, aunque no se aporta documentacion que lo confirme. El modelo se distribuye bajo licencia Apache 2.0, pero el acceso esta restringido (gated) en HuggingFace, por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo. Ademas, hereda las restricciones de uso del modelo base Gemma, que se rige por los terminos de Google, no por Apache 2.0.
+El tag "decision" sugiere que el ajuste fino esta orientado a tareas de toma de decisiones o clasificacion/razonamiento estructurado, aunque no se aporta documentacion que lo confirme. El modelo se distribuye bajo licencia Apache 2.0, pero el acceso esta restringido (gated) en Hugging Face, por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo. Ademas, hereda las restricciones de uso del modelo base Gemma, que se rige por los terminos de Google, no por Apache 2.0.
 
 La relevancia de esta ficha es limitada por la escasez de informacion publicada: no hay model card sustantiva, no hay benchmarks, no hay datos de entrenamiento ni idiomas declarados. Se trata de un artefacto muy reciente (creado el 26 de octubre de 2026) con cero descargas y cero likes, lo que indica que no ha sido validado por la comunidad.
 
@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 - Ausencia total de model card sustantiva: no hay datos de entrenamiento, hiperparametros LoRA, evaluacion ni idiomas declarados.
 - Cero descargas y cero likes: no existe validacion por parte de la comunidad.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion al despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion al despliegue automatizado.
 - Licencia del adaptador Apache 2.0, pero el uso del modelo base Gemma esta sujeto a los terminos de Google; es necesario revisar ambas licencias antes de un uso comercial.
 - Riesgo de alucinacion y sesgos: no evaluados; se heredan los del modelo base y se anaden los del ajuste fino, sin documentar.
 - El tag "decision" no viene acompanado de definicion de tarea, por lo que el dominio real de especializacion es incierto.
@@ -81,6 +81,6 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Leucodiorite/Diorite-G4-31B-v0.1
+- Hugging Face: https://huggingface.co/Leucodiorite/Diorite-G4-31B-v0.1
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

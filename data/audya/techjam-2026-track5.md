@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `audya/techjam-2026-track5` es un detector de imágenes generadas por inteligencia artificial, presentado como entrada al Track 5 del TikTok TechJam 2026. Desarrollado por el usuario audya (AudricY), su objetivo es clasificar imágenes como reales o sintéticas manteniendo un alto rendimiento incluso después de transformaciones comunes como recompresión JPEG, desenfoque, redimensionado, ruido, cambios de color y recortes. El sistema combina un tower de visión congelado (PE-Core-L/14-336, 316 millones de parámetros) con dos cabezas lineales entrenadas sobre pools de datos distintos, fusionando sus salidas mediante una suma ponderada calibrada con Platt scaling. El repositorio de HuggingFace no contiene el tower completo, sino únicamente los pesos de las cabezas y la configuración del proyecto; el tower se descarga desde el hub con una revisión fijada y verificación de integridad. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
+El modelo `audya/techjam-2026-track5` es un detector de imágenes generadas por inteligencia artificial, presentado como entrada al Track 5 del TikTok TechJam 2026. Desarrollado por el usuario audya (AudricY), su objetivo es clasificar imágenes como reales o sintéticas manteniendo un alto rendimiento incluso después de transformaciones comunes como recompresión JPEG, desenfoque, redimensionado, ruido, cambios de color y recortes. El sistema combina un tower de visión congelado (PE-Core-L/14-336, 316 millones de parámetros) con dos cabezas lineales entrenadas sobre pools de datos distintos, fusionando sus salidas mediante una suma ponderada calibrada con Platt scaling. El repositorio de Hugging Face no contiene el tower completo, sino únicamente los pesos de las cabezas y la configuración del proyecto; el tower se descarga desde el hub con una revisión fijada y verificación de integridad. La licencia es Apache-2.0, lo que permite uso comercial y modificación.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ La model card menciona una comparación con un baseline público SigLIP, indican
 ## Limitaciones y advertencias
 
 - El umbral por defecto (0,5) es muy conservador: prioriza precisión sobre recall, lo que puede resultar en una baja tasa de detección de fakes comerciales modernos (18,2 % en GPT-Image class). Para aplicaciones donde el recall sea crítico, es necesario ajustar el umbral.
-- El tower no se incluye en el repositorio de HuggingFace; se descarga desde el hub con una revisión fijada. Si el enlace o la revisión deja de estar disponible, el modelo no podrá cargarse.
+- El tower no se incluye en el repositorio de Hugging Face; se descarga desde el hub con una revisión fijada. Si el enlace o la revisión deja de estar disponible, el modelo no podrá cargarse.
 - El formato de pesos no es estándar (no safetensors) y no es compatible con `timm.create_model`; solo funciona con el CLI del proyecto, lo que limita su integración en pipelines existentes.
 - No se especifican los datos de entrenamiento en detalle (volúmenes, composición exacta), lo que dificulta evaluar posibles sesgos.
 - La robustez se ha medido sobre un conjunto de transformaciones específico; puede degradarse ante transformaciones no contempladas (p. ej., compresión extrema o filtros artísticos).
@@ -83,7 +83,7 @@ La model card menciona una comparación con un baseline público SigLIP, indican
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/audya/techjam-2026-track5
+- Hugging Face: https://huggingface.co/audya/techjam-2026-track5
 - Repositorio del proyecto: https://github.com/AudricY/techjam26-image-detection
 - Página del TikTok TechJam 2026: https://tiktoktechjam2026.devpost.com/
 - Ejemplo de otro participante (referencia): https://github.com/Swetha-aaa/techjam-track5

@@ -87,7 +87,7 @@ La comparacion se limita a parametros, licencia y formato, ya que no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andrzej/SmolLM2-135M-Instruct-ONNX
+- Repositorio Hugging Face: https://huggingface.co/andrzej/SmolLM2-135M-Instruct-ONNX
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Dataset de DPO (UltraFeedback): https://huggingface.co/datasets/HuggingFaceH4/ultrafeedback_binarized
 - Paper SmolLM2: https://arxiv.org/abs/2502.02737

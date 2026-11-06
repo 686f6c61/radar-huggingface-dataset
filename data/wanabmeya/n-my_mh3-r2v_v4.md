@@ -2,7 +2,7 @@
 
 ## Resumen
 
-wanabmeya/N-My_MH3-R2V_V4 es un repositorio de pesos publicado en HuggingFace por el usuario wanabmeya. La model card se limita a declarar la licencia MIT: no incluye descripcion del modelo, arquitectura, numero de parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 likes.
+wanabmeya/N-My_MH3-R2V_V4 es un repositorio de pesos publicado en Hugging Face por el usuario wanabmeya. La model card se limita a declarar la licencia MIT: no incluye descripcion del modelo, arquitectura, numero de parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB y, en el momento de la consulta, registra 0 descargas y 0 likes.
 
 Con esta informacion no es posible determinar que problema resuelve el modelo, a que categoria pertenece (texto, vision, video, multimodal) ni por que seria relevante. El identificador contiene la cadena "R2V", que en la nomenclatura habitual de la comunidad suele asociarse a image-to-video, pero la model card no lo confirma y no debe asumirse ninguna capacidad.
 
@@ -75,7 +75,7 @@ No es posible identificar modelos comparables porque se desconoce la categoria, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos publicados |
 |---|---|---|---|---|---|
-| wanabmeya/N-My_MH3-R2V_V4 | no disponible | no disponible | MIT | HuggingFace, 0 descargas | ninguno |
+| wanabmeya/N-My_MH3-R2V_V4 | no disponible | no disponible | MIT | Hugging Face, 0 descargas | ninguno |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No es posible identificar modelos comparables porque se desconoce la categoria, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wanabmeya/N-My_MH3-R2V_V4
+- Hugging Face: https://huggingface.co/wanabmeya/N-My_MH3-R2V_V4
 
 No se han encontrado en la informacion proporcionada papers, blogs tecnicos, repositorios de codigo ni demos adicionales.

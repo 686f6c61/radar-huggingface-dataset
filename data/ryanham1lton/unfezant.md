@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unfezant es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la linea de licencia, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin pipeline asociado. El repositorio ocupa 0,1 GB, lo que sugiere un artefacto de pesos de tamano reducido (posiblemente un modelo pequeno o un adaptador), aunque esto no puede confirmarse con los datos disponibles.
+Unfezant es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no contiene mas que la linea de licencia, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin pipeline asociado. El repositorio ocupa 0,1 GB, lo que sugiere un artefacto de pesos de tamano reducido (posiblemente un modelo pequeno o un adaptador), aunque esto no puede confirmarse con los datos disponibles.
 
 No se ha podido identificar informacion tecnica adicional mediante busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo (son tutoriales en chino sobre Photoshop). Tampoco hay papers, blogs ni repositorios asociados localizados.
 
@@ -52,7 +52,7 @@ A modo puramente orientativo, y sin que ello constituya una recomendacion, un ar
 - Pruebas de integracion en frameworks de inferencia (por ejemplo llama.cpp u Ollama) una vez confirmado el formato de pesos.
 - Evaluacion comparativa contra modelos conocidos de tamano similar, si se determina dicho tamano.
 - Analisis de reproducibilidad del repositorio (trazabilidad de los pesos publicados).
-- Docencia sobre publicacion de modelos en HuggingFace y buenas practicas de model card.
+- Docencia sobre publicacion de modelos en Hugging Face y buenas practicas de model card.
 
 Ninguno de estos escenarios esta respaldado por documentacion del autor. Se listan unicamente como pasos de evaluacion previos a cualquier uso real, no como aplicaciones validadas.
 
@@ -78,7 +78,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unfezant | no disponible | no disponible | no disponible | cc-by-4.0 | HuggingFace (0 descargas) |
+| Unfezant | no disponible | no disponible | no disponible | cc-by-4.0 | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Unfezant
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Unfezant
 - Pagina del autor: https://huggingface.co/Ryanham1lton
 - Paper: no disponible
 - Blog o anuncio: no disponible

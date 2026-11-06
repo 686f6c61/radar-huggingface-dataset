@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chiakiwcw/course-classification78` es un repositorio de HuggingFace que contiene una implementación funcional y mínima de un transformer para clasificación de texto, con un total de 24.832 parámetros. Lo publica el usuario chiakiwcw bajo licencia MIT y su propósito declarado no es ofrecer un modelo listo para producción, sino servir como código transparente y reproducible para pruebas de humo (smoke tests) y experimentos controlados.
+`chiakiwcw/course-classification78` es un repositorio de Hugging Face que contiene una implementación funcional y mínima de un transformer para clasificación de texto, con un total de 24.832 parámetros. Lo publica el usuario chiakiwcw bajo licencia MIT y su propósito declarado no es ofrecer un modelo listo para producción, sino servir como código transparente y reproducible para pruebas de humo (smoke tests) y experimentos controlados.
 
 El propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas, y no un checkpoint entrenado ni evaluado. No se reclaman puntuaciones de benchmark en ningún momento, y el repositorio omite deliberadamente cualquier afirmación de rendimiento. Esto lo sitúa en la categoría de plantilla de investigación o material didáctico, no de modelo desplegable.
 
@@ -85,5 +85,5 @@ Nota: los datos de las filas de BERT-tiny y DistilBERT son valores de referencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiakiwcw/course-classification78
+- Modelo en Hugging Face: https://huggingface.co/chiakiwcw/course-classification78
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo (paper, blog, repositorio o demo). Las consultas devolvieron únicamente páginas genéricas de efemérides históricas sin relación con el modelo.

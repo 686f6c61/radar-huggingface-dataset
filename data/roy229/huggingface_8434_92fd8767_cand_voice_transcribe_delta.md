@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Voice Transcribe Delta es un modelo de reconocimiento de voz a texto (speech-to-text) desarrollado por el usuario Roy229, presentado como candidato para la plataforma de análisis de texto de su organización. Con 680 millones de parámetros, se posiciona como un modelo de gran tamaño dentro de su categoría, aunque supera el presupuesto de parámetros establecido por la plataforma, según las notas del autor. La licencia declarada es Apache-2.0, lo que permite uso comercial y modificación, aunque la ficha en HuggingFace no especifica la licencia de forma explícita.
+Voice Transcribe Delta es un modelo de reconocimiento de voz a texto (speech-to-text) desarrollado por el usuario Roy229, presentado como candidato para la plataforma de análisis de texto de su organización. Con 680 millones de parámetros, se posiciona como un modelo de gran tamaño dentro de su categoría, aunque supera el presupuesto de parámetros establecido por la plataforma, según las notas del autor. La licencia declarada es Apache-2.0, lo que permite uso comercial y modificación, aunque la ficha en Hugging Face no especifica la licencia de forma explícita.
 
 El modelo está etiquetado con los tags `audio`, `transcription` y `large`, y su caso de uso principal es la transcripción de audio. No se dispone de información sobre la arquitectura interna, el proceso de entrenamiento, los idiomas soportados ni el formato de pesos. A pesar de ello, los metadatos del autor indican una latencia media de 45 ms y una precisión reportada de 0,91, aunque no se especifica sobre qué conjunto de datos o métrica se calculó. Su estado es "candidate", lo que sugiere que aún no está listo para producción.
 
@@ -66,4 +66,4 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_voice_transcribe_delta
+- Hugging Face: https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_voice_transcribe_delta

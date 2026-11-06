@@ -106,7 +106,7 @@ No hay datos de rendimiento comparativo entre estas alternativas en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-Q4-K-M
+- Repositorio Hugging Face: https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-Q4-K-M
 - Resultados de evaluacion detallados (intervalos, tamano de fichero): https://pbhappliedsystems.com/models/qwen2.5-32b-instruct#Q4_K_M
 - Build F16 del mismo modelo: https://huggingface.co/pbhappliedsystems/qwen-2.5-32B-instruct-gguf-F16
 - Coleccion de builds evaluadas (quant_eval v7.22.22): https://huggingface.co/collections/pbhappliedsystems/quant-eval-v722-evaluated-gguf-builds-6abcf3128f7eaf1bedeb97d6
@@ -115,4 +115,4 @@ No hay datos de rendimiento comparativo entre estas alternativas en la informaci
 - Sitio del autor: https://pbhappliedsystems.com
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-32B-Instruct
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y los metadatos de Hugging Face.

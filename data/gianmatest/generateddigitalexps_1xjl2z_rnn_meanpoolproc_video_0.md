@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_0` es un repositorio de pesos alojado en HuggingFace por el usuario `gianmaTest`, una cuenta que por su nomenclatura y por el patrón del identificador parece vinculada a la generación automatizada de experimentos (el prefijo `generatedDigitalExps` y el sufijo alfanumérico aleatorio son típicos de pipelines de pruebas). El nombre del repositorio sugiere una arquitectura recurrente (RNN) con una etapa de *mean pooling* aplicada a una modalidad de vídeo, si bien esta deducción procede únicamente del identificador y no está confirmada por ninguna model card, configuración o documentación publicada.
+`generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_0` es un repositorio de pesos alojado en Hugging Face por el usuario `gianmaTest`, una cuenta que por su nomenclatura y por el patrón del identificador parece vinculada a la generación automatizada de experimentos (el prefijo `generatedDigitalExps` y el sufijo alfanumérico aleatorio son típicos de pipelines de pruebas). El nombre del repositorio sugiere una arquitectura recurrente (RNN) con una etapa de *mean pooling* aplicada a una modalidad de vídeo, si bien esta deducción procede únicamente del identificador y no está confirmada por ninguna model card, configuración o documentación publicada.
 
 El repositorio no incluye información sobre arquitectura, tamaño, datos de entrenamiento, licencia ni idiomas. El tamaño declarado es de 0.0 GB y no se especifica ningún tag de pipeline, lo que impide determinar si contiene pesos utilizables, únicamente código de entrenamiento o artefactos auxiliares. Las métricas sociales son mínimas (13 descargas y 0 likes desde su creación el 21 de octubre de 2026), sin señales de adopción por parte de la comunidad.
 
@@ -19,7 +19,7 @@ Por todo ello, este artefacto no debe considerarse un modelo listo para producci
 | Idiomas soportados | No disponible (no se declara ningún idioma en los metadatos) |
 | Licencia | No disponible (no se declara licencia en el repositorio) |
 | Formato de pesos | No disponible. El tag `pytorch` sugiere artefactos compatibles con PyTorch, sin confirmar extensión ni serialización |
-| Tamano del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamano del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Pipeline declarado | No disponible |
 | Modalidad | El identificador incluye `video`; no confirmado |
 | Fecha de creación / actualización | 2026-10-21T01:29:55Z / 2026-10-21T01:29:58Z (3 segundos de diferencia) |
@@ -82,5 +82,5 @@ No disponible. Sin datos de parámetros, contexto, licencia ni rendimiento no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_0
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xJL2z_rnn_meanPoolProc_video_0
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

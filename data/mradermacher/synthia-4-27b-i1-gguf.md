@@ -100,7 +100,7 @@ Comparativa con otros modelos de la misma categoría (por ejemplo, alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta versión cuantizada): https://huggingface.co/mradermacher/Synthia-4-27B-i1-GGUF
+- Repositorio Hugging Face (esta versión cuantizada): https://huggingface.co/mradermacher/Synthia-4-27B-i1-GGUF
 - Fichero imatrix: https://huggingface.co/mradermacher/Synthia-4-27B-i1-GGUF/resolve/main/Synthia-4-27B.imatrix.gguf
 - Repositorio de cuantizaciones estáticas y ficheros mmproj: https://huggingface.co/mradermacher/Synthia-4-27B-GGUF
 - Modelo base: https://huggingface.co/migtissera/Synthia-4-27B

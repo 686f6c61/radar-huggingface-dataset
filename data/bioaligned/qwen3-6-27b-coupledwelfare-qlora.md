@@ -87,9 +87,9 @@ La comparativa directa con otros modelos de alineación no está disponible en l
 
 ## Enlaces
 
-- [HuggingFace - Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora](https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora)
-- [HuggingFace - Qwen3-30B-A3B-CoupledWelfare-deep-qlora](https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare-deep-qlora)
-- [HuggingFace - Qwen3-30B-A3B-CoupledWelfare-light-qlora](https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare-light-qlora)
+- [Hugging Face - Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora](https://huggingface.co/Bioaligned/Qwen3.6-27B-CoupledWelfare-qlora)
+- [Hugging Face - Qwen3-30B-A3B-CoupledWelfare-deep-qlora](https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare-deep-qlora)
+- [Hugging Face - Qwen3-30B-A3B-CoupledWelfare-light-qlora](https://huggingface.co/Bioaligned/Qwen3-30B-A3B-CoupledWelfare-light-qlora)
 - [QwenCloud - Qwen3.6-27B](https://www.qwencloud.com/models/qwen3.6-27b)
 - [Qwen Blog - Qwen3.6-27B: Flagship-Level Coding in a 27B Dense Model](https://qwen.ai/blog?id=qwen3.6-27b)
 - [GroqDocs - Qwen 3.6 27B](https://console.groq.com/docs/model/qwen/qwen3.6-27b)

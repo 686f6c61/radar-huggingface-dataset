@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Deino es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni información sobre capacidades o rendimiento; únicamente incluye la declaración de licencia. El repositorio registra cero descargas y cero interacciones en el momento de la consulta, y no está clasificado en ningún pipeline de HuggingFace.
+Deino es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, tamaño, datos de entrenamiento ni información sobre capacidades o rendimiento; únicamente incluye la declaración de licencia. El repositorio registra cero descargas y cero interacciones en el momento de la consulta, y no está clasificado en ningún pipeline de Hugging Face.
 
 Por tanto, no es posible confirmar qué tipo de modelo es (lenguaje, visión, audio u otro), qué arquitectura emplea, cuántos parámetros tiene ni qué ventana de contexto soporta. La información disponible se limita a metadatos de publicación: identificador, autor, licencia y fechas de creación y actualización (ambas el 1 de noviembre de 2026, con apenas 26 segundos de diferencia, lo que sugiere una subida sin documentación asociada).
 
@@ -43,7 +43,7 @@ No es posible recomendar casos de uso concretos sin información sobre arquitect
 - Clasificación y etiquetado de texto: solo si se confirma que es un modelo de lenguaje con una cabeza adecuada o capacidad de generación.
 - Generación de texto en prototipos: únicamente tras validar manualmente la calidad de las salidas, dado que no hay benchmarks publicados.
 - Fine-tuning sobre dominio específico: la licencia CC-BY-4.0 permite adaptaciones, pero la viabilidad depende del tamaño y formato de los pesos, que se desconocen.
-- Investigación sobre modelos poco documentados: el caso puede servir para estudiar prácticas de publicación y reproducibilidad en HuggingFace.
+- Investigación sobre modelos poco documentados: el caso puede servir para estudiar prácticas de publicación y reproducibilidad en Hugging Face.
 - Integración en pipelines de CI/CD: no recomendable sin antes verificar formato de pesos, tokenizador y requisitos de memoria.
 
 ## Benchmarks y rendimiento
@@ -75,5 +75,5 @@ No disponible. Sin datos de arquitectura, tamaño ni rendimiento no es posible e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/Deino
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/Deino
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

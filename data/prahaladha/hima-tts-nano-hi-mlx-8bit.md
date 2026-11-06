@@ -6,7 +6,7 @@ hima-tts-nano-hi-mlx-8bit es la conversión a MLX con pesos de 8 bits del modelo
 
 El modelo está pensado para desarrolladores que necesitan síntesis de voz en hindi (con soporte declarado también de inglés) dentro de aplicaciones locales en macOS, sin infraestructura GPU dedicada. Incluye seis voces integradas (Meera, Sneha, Nandini, Siddharth, Ishaan y Nikhil) y permite clonar voces propias a partir de una grabación, aunque ese proceso de clonación requiere el repositorio principal en PyTorch.
 
-La ficha se basa exclusivamente en la model card y los metadatos de HuggingFace; no hay información publicada sobre arquitectura interna, composición del dataset de entrenamiento ni resultados de benchmarks estándar, por lo que esos apartados se marcan como no disponibles.
+La ficha se basa exclusivamente en la model card y los metadatos de Hugging Face; no hay información publicada sobre arquitectura interna, composición del dataset de entrenamiento ni resultados de benchmarks estándar, por lo que esos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -96,6 +96,6 @@ La información disponible no permite comparar con modelos TTS de otros autores 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/Prahaladha/hima-tts-nano-hi-mlx-8bit
+- Hugging Face (este modelo): https://huggingface.co/Prahaladha/hima-tts-nano-hi-mlx-8bit
 - Modelo base: https://huggingface.co/Prahaladha/hima-tts-nano-hi
 - Versión float16 en MLX: https://huggingface.co/Prahaladha/hima-tts-nano-hi-mlx-fp16

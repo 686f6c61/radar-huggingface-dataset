@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Meivin-Embed-0.1.1 es un modelo publicado en HuggingFace por el usuario ArieLLL123 bajo el identificador ArieLLL123/Meivin-Embed-0.1.1. El repositorio, de 0,3 GB, se creó el 5 de octubre de 2026 y apenas un minuto después ya registraba su ultima actualizacion, lo que apunta a una publicacion inicial sin iteraciones posteriores documentadas. No acumula descargas ni "likes" en el momento de redactar esta ficha y el acceso esta restringido: es un repositorio gated que exige aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+Meivin-Embed-0.1.1 es un modelo publicado en Hugging Face por el usuario ArieLLL123 bajo el identificador ArieLLL123/Meivin-Embed-0.1.1. El repositorio, de 0,3 GB, se creó el 5 de octubre de 2026 y apenas un minuto después ya registraba su ultima actualizacion, lo que apunta a una publicacion inicial sin iteraciones posteriores documentadas. No acumula descargas ni "likes" en el momento de redactar esta ficha y el acceso esta restringido: es un repositorio gated que exige aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 
 La informacion publica disponible es minima. La model card no especifica tarea, arquitectura, numero de parametros, dimension de embedding ni longitud de contexto, y la etiqueta de pipeline aparece como no disponible. El unico indicio funcional es el propio nombre del modelo, que incluye el termino "Embed", lo que sugiere un modelo orientado a representaciones vectoriales (embeddings) para busqueda semantica, recuperacion o clasificacion, si bien esto no esta confirmado por ninguna fuente oficial del repositorio.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es, por tanto, mas descriptiva que evaluativa: sirve
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (solo se confirma safetensors como formato de pesos) |
 | Idiomas soportados | no disponible |
-| Licencia | personal-use-license (etiquetada como license:other en HuggingFace) |
+| Licencia | personal-use-license (etiquetada como license:other en Hugging Face) |
 | Formato de pesos | safetensors |
 | Dimension de embedding | no disponible |
 | Tarea declarada (pipeline) | no disponible |
@@ -26,7 +26,7 @@ La relevancia de esta ficha es, por tanto, mas descriptiva que evaluativa: sirve
 | Tamano del repositorio | 0,3 GB |
 | Fecha de creacion | 2026-10-05 |
 | Ultima actualizacion | 2026-10-05 |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Compatibilidad con GPU de consumo: probablemente si, dado el tamano del repositorio, pero es una inferencia basada unicamente en el peso de los ficheros y no en especificaciones publicadas.
 - Opciones de despliegue: no disponibles. Al distribuirse en safetensors, seria compatible con frameworks que carguen ese formato (por ejemplo, Transformers o vLLM para modelos generativos), pero no se confirma soporte de llama.cpp, Ollama ni TGI, ni la existencia de pesos GGUF.
 - Latencia y throughput estimados: no disponibles.
-- Restriccion adicional: el repositorio es gated, por lo que el despliegue exige primero aceptar las condiciones de acceso en HuggingFace y gestionar un token de autenticacion en el pipeline de descarga.
+- Restriccion adicional: el repositorio es gated, por lo que el despliegue exige primero aceptar las condiciones de acceso en Hugging Face y gestionar un token de autenticacion en el pipeline de descarga.
 
 ## Comparativa con modelos similares
 
@@ -83,8 +83,8 @@ No es posible establecer una comparativa fiable con alternativas de la misma cat
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no se declaran arquitectura, parametros, contexto, idiomas ni tarea, lo que impide evaluar su idoneidad para cualquier caso de uso.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion a la descarga y a la integracion automatizada en pipelines.
-- Licencia de uso personal: la licencia declarada es personal-use-license, con etiqueta license:other en HuggingFace. Esto implica, con la informacion disponible, que el uso comercial no esta permitido o requiere autorizacion explicita del autor. Antes de integrarlo en un producto, debe revisarse el texto completo de la licencia, que no se ha facilitado en esta ficha.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la descarga y a la integracion automatizada en pipelines.
+- Licencia de uso personal: la licencia declarada es personal-use-license, con etiqueta license:other en Hugging Face. Esto implica, con la informacion disponible, que el uso comercial no esta permitido o requiere autorizacion explicita del autor. Antes de integrarlo en un producto, debe revisarse el texto completo de la licencia, que no se ha facilitado en esta ficha.
 - Riesgo de sesgos: no evaluable. Al no existir informacion sobre los datos de entrenamiento, no puede analizarse la composicion del corpus ni los sesgos potenciales por idioma, dominio o demografia.
 - Riesgo de alucinacion: no evaluable en el sentido generativo. Si el modelo resulta ser un modelo de embeddings, el concepto de alucinacion no aplica directamente, pero si puede producir recuperaciones irrelevantes o poco discriminativas.
 - Ausencia de benchmarks: no hay ninguna metrica publicada, ni MTEB ni de otro tipo, que permita comparar su calidad con alternativas consolidadas.
@@ -93,5 +93,5 @@ No es posible establecer una comparativa fiable con alternativas de la misma cat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArieLLL123/Meivin-Embed-0.1.1
+- Hugging Face: https://huggingface.co/ArieLLL123/Meivin-Embed-0.1.1
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios de codigo ni demos.

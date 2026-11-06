@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Slither worm segmentation - 200 es un modelo de segmentacion semantica binaria derivado mediante ajuste fino de `nvidia/segformer-b2-finetuned-ade-512-512`. Lo publica el usuario `mundoamundo` en HuggingFace y su objetivo es generar mascaras binarias, sin prompt, de todas las lombrices visibles en capturas de gameplay del juego Slither.io. La comida, el fondo y la interfaz de usuario se consideran fondo. Se trata de segmentacion semantica, no de segmentacion de instancias: el modelo no separa lombrices individuales, solo marca la clase "lombriz" frente a "no lombriz".
+Slither worm segmentation - 200 es un modelo de segmentacion semantica binaria derivado mediante ajuste fino de `nvidia/segformer-b2-finetuned-ade-512-512`. Lo publica el usuario `mundoamundo` en Hugging Face y su objetivo es generar mascaras binarias, sin prompt, de todas las lombrices visibles en capturas de gameplay del juego Slither.io. La comida, el fondo y la interfaz de usuario se consideran fondo. Se trata de segmentacion semantica, no de segmentacion de instancias: el modelo no separa lombrices individuales, solo marca la clase "lombriz" frente a "no lombriz".
 
 El modelo se entrena sobre un conjunto de anotaciones en estado de borrador (`needs_review`), con un reparto de 140 imagenes de entrenamiento, 30 de validacion y 30 de prueba, dividido por video de origen y por grupo conservador de duplicados perceptuales. La ejecucion seleccionada es `segformer_b2-lr0.00001-s17`, en la epoca 98, con umbral de decision 0,40, elegida unicamente con el conjunto de validacion entre ocho ejecuciones de ajuste fino. En el conjunto de prueba sin tocar reporta IoU 0,5919, Dice 0,7436, precision 0,6954 y recall 0,7990.
 
@@ -80,8 +80,8 @@ No se han identificado en la informacion disponible modelos comparables de segme
 
 | Modelo | Tarea | Arquitectura | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mundoamundo/slither-worm-segmentation-200-20261004 | Segmentacion semantica binaria (lombriz frente a fondo) en gameplay de Slither.io | SegFormer-B2 ajustado | Imagenes 640x360, relleno a multiplo de 32 | nvidia-segformer-research-only (investigacion no comercial) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| nvidia/segformer-b2-finetuned-ade-512-512 | Segmentacion semantica de 150 clases sobre ADE20K | SegFormer-B2 | Imagenes 512x512 | Licencia de NVIDIA (no especificada en la informacion disponible) | HuggingFace (modelo base) |
+| mundoamundo/slither-worm-segmentation-200-20261004 | Segmentacion semantica binaria (lombriz frente a fondo) en gameplay de Slither.io | SegFormer-B2 ajustado | Imagenes 640x360, relleno a multiplo de 32 | nvidia-segformer-research-only (investigacion no comercial) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| nvidia/segformer-b2-finetuned-ade-512-512 | Segmentacion semantica de 150 clases sobre ADE20K | SegFormer-B2 | Imagenes 512x512 | Licencia de NVIDIA (no especificada en la informacion disponible) | Hugging Face (modelo base) |
 
 No se dispone de datos de rendimiento comparables entre ambos modelos, ya que operan sobre tareas y conjuntos de datos distintos.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparables entre ambos modelos, ya que op
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mundoamundo/slither-worm-segmentation-200-20261004
+- Modelo en Hugging Face: https://huggingface.co/mundoamundo/slither-worm-segmentation-200-20261004
 - Modelo base: https://huggingface.co/nvidia/segformer-b2-finetuned-ade-512-512
 - Licencia incluida en el repositorio: `LICENSE` (nvidia-segformer-research-only)
 - Documentacion del script de inferencia: `worm_segmentation/README.md`

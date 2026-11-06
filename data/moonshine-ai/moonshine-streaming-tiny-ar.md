@@ -60,7 +60,7 @@ Además, el paquete `.ort` cuantizado a int8 (que se sirve para el despliegue) o
 - VRAM estimada: para inferencia en float32, el modelo ocupa aproximadamente 108 MB (27 M × 4 bytes) más overhead de activaciones. En int8, alrededor de 27 MB. Esto cabe en cualquier GPU moderna y también en memoria de dispositivos de gama baja.
 - GPU recomendadas: no requiere una GPU potente; una NVIDIA T4 o RTX 2080 es más que suficiente. También puede ejecutarse en CPU, aunque con mayor latencia.
 - Es compatible con consumer GPUs (RTX 3060, 4090, etc.) y con hardware de edge como Raspberry Pi (si se usa el paquete `.ort` cuantizado).
-- Opciones de despliegue: el modelo es compatible con la librería `transformers` de HuggingFace. Además, el paquete `.ort` (ONNX Runtime) está diseñado para el despliegue en la librería de Moonshine, que ofrece una implementación en C++ para dispositivos edge. No se menciona soporte para vLLM, llama.cpp u otras herramientas de inferencia de texto, ya que no es un modelo de texto.
+- Opciones de despliegue: el modelo es compatible con la librería `transformers` de Hugging Face. Además, el paquete `.ort` (ONNX Runtime) está diseñado para el despliegue en la librería de Moonshine, que ofrece una implementación en C++ para dispositivos edge. No se menciona soporte para vLLM, llama.cpp u otras herramientas de inferencia de texto, ya que no es un modelo de texto.
 - Latencia y throughput: no se proporcionan datos concretos de latencia en la información disponible, pero el diseño de streaming con 80 ms de lookahead sugiere que la latencia de la primera palabra es baja. El modelo puede procesar audio en tiempo real en hardware modesto.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de comparaciones publicadas en la información proporcionada. Los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar)
+- Modelo en Hugging Face: [https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny-ar)
 - Modelo base (inglés): [https://huggingface.co/moonshine-ai/moonshine-streaming-tiny](https://huggingface.co/moonshine-ai/moonshine-streaming-tiny)
 - Repositorio GitHub de Moonshine: [https://github.com/moonshine-ai/moonshine](https://github.com/moonshine-ai/moonshine)
 - Modelo Moonshine Tiny (de Useful Sensors): [https://huggingface.co/UsefulSensors/moonshine-tiny](https://huggingface.co/UsefulSensors/moonshine-tiny)

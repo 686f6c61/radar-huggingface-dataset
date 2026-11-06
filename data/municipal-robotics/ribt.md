@@ -75,9 +75,9 @@ El build WebGPU coincide con el build nativo sobre los mismos pesos con un error
 
 | Modelo | Parámetros | Contexto | Licencia | Latencia primer audio | Naturalidad (UTMOS) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ribt | 54M | No disponible | MIT | 17,6 ms (streaming) | 4,39 | HuggingFace, GitHub, demo web |
-| Kokoro-82M (af_heart) | 82M | No disponible | Apache-2.0 | 349 ms (frase completa, CPU) | 4,52 | HuggingFace |
-| Vocos (vocoder) | 13,5M | No aplica | MIT | No aplica (solo vocoder) | No disponible | GitHub, HuggingFace |
+| ribt | 54M | No disponible | MIT | 17,6 ms (streaming) | 4,39 | Hugging Face, GitHub, demo web |
+| Kokoro-82M (af_heart) | 82M | No disponible | Apache-2.0 | 349 ms (frase completa, CPU) | 4,52 | Hugging Face |
+| Vocos (vocoder) | 13,5M | No aplica | MIT | No aplica (solo vocoder) | No disponible | GitHub, Hugging Face |
 
 La comparativa se limita a Kokoro porque es el profesor del que se destila ribt y el único modelo con métricas comparables publicadas en la información disponible. No se dispone de datos de otros modelos TTS de latencia ultrabaja para comparar.
 
@@ -94,7 +94,7 @@ La comparativa se limita a Kokoro porque es el profesor del que se destila ribt 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/municipal-robotics/ribt
+- Modelo en Hugging Face: https://huggingface.co/municipal-robotics/ribt
 - Repositorio de código: https://github.com/muni-works/ribt
 - Paper: https://muni.works/research/ribt
 - Demo en navegador: https://ribt.dev

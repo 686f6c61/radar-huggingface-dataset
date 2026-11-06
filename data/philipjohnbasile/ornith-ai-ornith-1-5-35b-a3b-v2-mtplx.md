@@ -68,8 +68,8 @@ No se dispone de información suficiente para comparar con modelos similares. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/philipjohnbasile/ornith-ai-Ornith-1.5-35B-A3B-V2-MTPLX
-- Colección Ornith-1.5 en HuggingFace: https://huggingface.co/collections/ornith-ai/ornith-15
+- Repositorio Hugging Face: https://huggingface.co/philipjohnbasile/ornith-ai-Ornith-1.5-35B-A3B-V2-MTPLX
+- Colección Ornith-1.5 en Hugging Face: https://huggingface.co/collections/ornith-ai/ornith-15
 - Web oficial de Ornith: https://ornith.ai/
 - Documentación de Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guía de Ornith (ornith.online): https://ornith.online/

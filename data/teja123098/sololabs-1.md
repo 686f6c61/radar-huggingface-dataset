@@ -79,7 +79,7 @@ No se dispone de comparativas publicadas con otros adaptadores LoRA especializad
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/teja123098/sololabs.1
+- Hugging Face del adaptador: https://huggingface.co/teja123098/sololabs.1
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Godot Engine: https://godotengine.org/
 - Playwright: https://playwright.dev/

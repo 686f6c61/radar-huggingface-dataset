@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de aprendizaje por refuerzo (RL) derivado del modelo base `Qwen/Qwen3.6-35B-A3B`. Lo publica el usuario de HuggingFace `willamazon1` y corresponde a la iteración 24 de la ejecución de entrenamiento denominada `miles-multievo-v2-round1-v2`. No se trata, por tanto, de un modelo final pulido, sino de un punto intermedio de una curva de entrenamiento por RL, pensado para comparar la evolución del modelo a lo largo de esa ejecución junto con otros checkpoints hermanos de la misma colección.
+Este repositorio contiene un checkpoint de aprendizaje por refuerzo (RL) derivado del modelo base `Qwen/Qwen3.6-35B-A3B`. Lo publica el usuario de Hugging Face `willamazon1` y corresponde a la iteración 24 de la ejecución de entrenamiento denominada `miles-multievo-v2-round1-v2`. No se trata, por tanto, de un modelo final pulido, sino de un punto intermedio de una curva de entrenamiento por RL, pensado para comparar la evolución del modelo a lo largo de esa ejecución junto con otros checkpoints hermanos de la misma colección.
 
 Arquitectónicamente es un transformer de tipo mezcla de expertos (MoE) con 40 capas, dimensión oculta de 2048, 256 expertos con enrutado top-8, atención híbrida (lineal y completa), una capa MTP (*multi-token prediction*) y una torre de visión que lo convierte en un modelo multimodal de entrada imagen-texto y salida texto. El recuento real de parámetros en safetensors es de 35.951.822.704 (unos 35,95 mil millones), con un vocabulario de 248.320 tokens y precisión de almacenamiento en bfloat16.
 
@@ -31,7 +31,7 @@ Su relevancia es limitada pero específica: sirve como material de estudio para 
 
 El modelo es un MoE multimodal construido sobre la arquitectura declarada por el autor: 40 capas con dimensión oculta de 2048 y 256 expertos con enrutado top-8, lo que implica que en cada paso de decodificación solo se activa una fracción reducida de los parámetros totales. Combina atención lineal y atención completa de forma híbrida, un patrón habitual para reducir el coste de la caché KV en contextos largos manteniendo la calidad de recuperación de información a larga distancia. Incorpora además una capa de *multi-token prediction* (MTP), un componente que se ha utilizado tradicionalmente como cabecera auxiliar de entrenamiento y como mecanismo de decodificación especulativa en inferencia. La torre de visión es la que habilita el *pipeline* `image-text-to-text`.
 
-Sobre el entrenamiento: el checkpoint es el resultado de una etapa de aprendizaje por refuerzo sobre el modelo base, en la iteración 24 de la ejecución `miles-multievo-v2-round1-v2`. No se especifican en la información disponible el número de tokens vistos, la composición del dataset, el algoritmo de RL empleado (PPO, GRPO, DPO u otro) ni los hiperparámetros. Sí se detalla el proceso de conversión: los pesos provienen de un checkpoint de entrenamiento en formato Megatron-LM `torch_dist`, convertidos a safetensors de HuggingFace con la herramienta `tools/convert_torch_dist_to_hf.py` de [slime](https://github.com/THUDM/slime), usando `--vocab-size 248320` para eliminar el relleno de embeddings y `-a/--add-missing-from-origin-hf` para recuperar la torre de visión desde el modelo base, ya que el checkpoint `torch_dist` solo contenía el modelo de lenguaje. Se verificó cada shard en busca de NaN/Inf y se comparó el conjunto completo de claves de tensores contra una conversión de referencia de la misma arquitectura.
+Sobre el entrenamiento: el checkpoint es el resultado de una etapa de aprendizaje por refuerzo sobre el modelo base, en la iteración 24 de la ejecución `miles-multievo-v2-round1-v2`. No se especifican en la información disponible el número de tokens vistos, la composición del dataset, el algoritmo de RL empleado (PPO, GRPO, DPO u otro) ni los hiperparámetros. Sí se detalla el proceso de conversión: los pesos provienen de un checkpoint de entrenamiento en formato Megatron-LM `torch_dist`, convertidos a safetensors de Hugging Face con la herramienta `tools/convert_torch_dist_to_hf.py` de [slime](https://github.com/THUDM/slime), usando `--vocab-size 248320` para eliminar el relleno de embeddings y `-a/--add-missing-from-origin-hf` para recuperar la torre de visión desde el modelo base, ya que el checkpoint `torch_dist` solo contenía el modelo de lenguaje. Se verificó cada shard en busca de NaN/Inf y se comparó el conjunto completo de claves de tensores contra una conversión de referencia de la misma arquitectura.
 
 Un detalle técnico relevante: al haberse tomado la torre de visión del modelo base, esta no ha sido modificada por la etapa de RL, de modo que las capacidades visuales del checkpoint son heredadas y no han sido objeto del entrenamiento por refuerzo.
 
@@ -98,7 +98,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-round1v2-iter024
+- Repositorio Hugging Face: https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-round1v2-iter024
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Herramienta de conversión utilizada (slime, THUDM): https://github.com/THUDM/slime
 - Ruta concreta de la herramienta de conversión: `tools/convert_torch_dist_to_hf.py` dentro del repositorio de slime

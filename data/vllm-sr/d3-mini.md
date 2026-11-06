@@ -107,7 +107,7 @@ Según la model card, d3-mini obtiene 54,91 en la suite pública del Jev Decisio
 
 | Modelo | Parámetros | Contexto | Índice texto ↑ | Índice visión ↑ | Licencia | Disponibilidad |
 |---|---|---:|---:|---:|---|---|
-| d3-mini | 4,54B (0,33B visión) | no disponible | 54,2 | 65,5 | Apache-2.0 | HuggingFace, transformers con código remoto |
+| d3-mini | 4,54B (0,33B visión) | no disponible | 54,2 | 65,5 | Apache-2.0 | Hugging Face, transformers con código remoto |
 | Decision 2.0 (4B) | 4B | no disponible | 45,0 | no disponible | no disponible | citado en la model card, sin enlace |
 | JPT-4B (Qwen3.5-4B LoRA) | 4B | no disponible | 41,6 | 59,0 | no disponible | citado en la model card, sin enlace |
 | Intern-Decision-4B | 4B | no disponible | no disponible | 56,5 | no disponible | citado en la model card, sin enlace |
@@ -129,7 +129,7 @@ Según la model card, d3-mini obtiene 54,91 en la suite pública del Jev Decisio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/d3-mini
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/d3-mini
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - vLLM: https://vllm.ai/

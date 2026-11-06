@@ -71,7 +71,7 @@ Existen otros checkpoints abliterated de Qwen3.8-27B en formato MLX, como `orcar
 
 ## Enlaces
 
-- Repositorio HuggingFace: [junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX](https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX)
+- Repositorio Hugging Face: [junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX](https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX)
 - Modelo base (bf16): [junafinity/Qwen-3.8-27B-Uncensored](https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored)
 - Cabeza draft MTP opcional: [junafinity/qwen38-mtp-head-fc-bf16-4bit](https://huggingface.co/junafinity/qwen38-mtp-head-fc-bf16-4bit)
 - Coleccion de la familia: [Qwen-3.8-27B-Uncensored Apple Silicon](https://huggingface.co/collections/junafinity/qwen-38-27b-uncensored-apple-silicon-6a896c726b52be3a0b63400e)

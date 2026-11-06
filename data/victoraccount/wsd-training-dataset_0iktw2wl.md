@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `victoraccount/wsd-training-dataset_0iktw2wl` es un checkpoint de extracción de características (feature-extraction) subido al Hub de HuggingFace por el usuario `victoraccount`. Según los metadatos, está basado en la arquitectura XLM-RoBERTa, tal como indican las etiquetas `xlm-roberta` y `arxiv:1910.09700` (el paper de XLM-R). El nombre del repositorio sugiere que podría estar relacionado con un dataset de entrenamiento para desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque no hay documentación que lo confirme.
+El modelo `victoraccount/wsd-training-dataset_0iktw2wl` es un checkpoint de extracción de características (feature-extraction) subido al Hub de Hugging Face por el usuario `victoraccount`. Según los metadatos, está basado en la arquitectura XLM-RoBERTa, tal como indican las etiquetas `xlm-roberta` y `arxiv:1910.09700` (el paper de XLM-R). El nombre del repositorio sugiere que podría estar relacionado con un dataset de entrenamiento para desambiguación de sentidos de palabras (WSD, por sus siglas en inglés), aunque no hay documentación que lo confirme.
 
 El modelo cuenta con 278.043.648 parámetros, lo que coincide con el tamaño de XLM-RoBERTa-large (278 millones de parámetros). La model card está completamente vacía, sin información sobre el desarrollador, licencia, idiomas, proceso de entrenamiento o evaluación. Se trata de un repositorio reciente (creado en agosto de 2026) con cero descargas y cero likes, lo que indica que es un trabajo en progreso o un experimento personal sin difusión pública.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: con 278 millones de parámetros, una inferencia en precisión FP32 requiere aproximadamente 1.1 GB solo para los pesos, más memoria para activaciones y overhead. Con cuantización a INT8, podría reducirse a unos 300-400 MB adicionales.
 - GPU recomendadas: una GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) podría ejecutar inferencia para secuencias cortas. Para batch grande o secuencias largas, se recomienda 8 GB o más (RTX 3070, RTX 4060, etc.).
 - Cabe en GPUs de consumo: sí, en la mayoría de GPUs modernas con 6 GB o más.
-- Opciones de despliegue: al ser un modelo de transformers, puede servirse con bibliotecas como HuggingFace Transformers, Text Embeddings Inference (TEI), o convertirse a ONNX para optimización. También es compatible con vLLM si se convierte a un formato adecuado, aunque no es el caso típico para encoders.
+- Opciones de despliegue: al ser un modelo de transformers, puede servirse con bibliotecas como Hugging Face Transformers, Text Embeddings Inference (TEI), o convertirse a ONNX para optimización. También es compatible con vLLM si se convierte a un formato adecuado, aunque no es el caso típico para encoders.
 - Latencia y throughput: no disponibles. Dependerá del hardware y de la longitud de las secuencias.
 
 ## Comparativa con modelos similares
@@ -79,5 +79,5 @@ La comparativa es orientativa, ya que este modelo no tiene datos de rendimiento 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_0iktw2wl
+- Página del modelo en Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_0iktw2wl
 - Paper de XLM-R (referencia de arquitectura): https://arxiv.org/abs/1910.09700

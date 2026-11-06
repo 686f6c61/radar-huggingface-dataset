@@ -23,7 +23,7 @@ La relevancia de esta versión radica en que permite ejecutar Krea 2 Raw en hard
 
 ## Arquitectura y entrenamiento
 
-No se ha proporcionado información detallada sobre la arquitectura interna del modelo Krea 2 Raw en los datos disponibles. Según la documentación oficial de Krea AI, Krea 2 es un modelo de generación de imágenes entrenado desde cero, pero no se especifican detalles como el tipo de red (difusión, transformer, etc.) ni el proceso de entrenamiento (número de tokens, dataset, técnicas de alineación). El repositorio de HuggingFace de Krea-2-Raw tampoco incluye estos datos en la información extraída.
+No se ha proporcionado información detallada sobre la arquitectura interna del modelo Krea 2 Raw en los datos disponibles. Según la documentación oficial de Krea AI, Krea 2 es un modelo de generación de imágenes entrenado desde cero, pero no se especifican detalles como el tipo de red (difusión, transformer, etc.) ni el proceso de entrenamiento (número de tokens, dataset, técnicas de alineación). El repositorio de Hugging Face de Krea-2-Raw tampoco incluye estos datos en la información extraída.
 
 La cuantización FP8 aplicada en este repositorio es una técnica de compresión que reduce la precisión de los pesos de 16 bits a 8 bits, lo que disminuye el uso de memoria y acelera la inferencia. El autor indica que los pesos no escalados son compatibles con entrenadores de LoRA, mientras que los escalados están pensados para aplicaciones como ComfyUI. No se mencionan innovaciones técnicas adicionales en el proceso de cuantización.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ChrisColeTech/krea-2-raw-FP8
+- Repositorio Hugging Face: https://huggingface.co/ChrisColeTech/krea-2-raw-FP8
 - Modelo base Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw
 - Código oficial de inferencia (GitHub): https://github.com/krea-ai/krea-2
 - Página oficial de Krea 2: https://www.krea.ai/krea-2

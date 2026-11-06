@@ -99,7 +99,7 @@ El articulo de referencia y el repositorio script_tok incluyen la comparacion co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_w-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_w-bpe
 - Articulo: Explicit Boundary Markers for Subword Vocabularies (Sander Land y Clara Meister): https://arxiv.org/abs/2608.08847
 - Repositorio script_tok: https://github.com/sanderland/script_tok
 - nanochat (commit `92d63d4`): https://github.com/karpathy/nanochat

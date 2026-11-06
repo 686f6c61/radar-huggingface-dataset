@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poneglyph-Classifier es un clasificador de imagenes desarrollado por el usuario Remidesbois y publicado en HuggingFace bajo licencia MIT. Su tarea es determinar el tipo de pagina de un tomo de manga: distingue entre `cover` (portadas de volumen, portadas interiores y paginas de titulo de capitulo), `story_page` (paginas narrativas de lectura), `annexe` (secciones SBS, galerias de fan art, notas del autor y paginas extra) y `summary` (indices y resumenes de volumen).
+Poneglyph-Classifier es un clasificador de imagenes desarrollado por el usuario Remidesbois y publicado en Hugging Face bajo licencia MIT. Su tarea es determinar el tipo de pagina de un tomo de manga: distingue entre `cover` (portadas de volumen, portadas interiores y paginas de titulo de capitulo), `story_page` (paginas narrativas de lectura), `annexe` (secciones SBS, galerias de fan art, notas del autor y paginas extra) y `summary` (indices y resumenes de volumen).
 
 Tecnicamente es un MobileNetV3-Small, una red convolucional ligera de la familia MobileNetV3 pensada para inferencia en dispositivos con recursos limitados. Recibe tensores RGB de `[1, 3, 224, 224]` y devuelve `[1, 4]` logits con el orden de clases `['cover', 'story_page', 'annexe', 'summary']`. Se distribuye principalmente como modelo ONNX estatico en FP32, ejecutable tanto en backend con `onnxruntime` como directamente en navegador con `onnxruntime-web`, ademas de un checkpoint de PyTorch.
 
@@ -24,7 +24,7 @@ Su relevancia es acotada pero practica: automatiza una fase de preprocesado que 
 | Salida | `[1, 4]` logits; orden `['cover', 'story_page', 'annexe', 'summary']` |
 | Preprocesado | resize del lado corto a 256, center crop 224x224, normalizacion ImageNet (mean `[0.485, 0.456, 0.406]`, std `[0.229, 0.224, 0.225]`) |
 | Artefactos adicionales | `page_type_classifier.metadata.json` (contrato de preprocesado y clases), `metrics.json` (metricas de entrenamiento y evaluacion) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -122,5 +122,5 @@ No se han publicado comparativas con otros modelos en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remidesbois/Poneglyph-Classifier
+- Modelo en Hugging Face: https://huggingface.co/Remidesbois/Poneglyph-Classifier
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a sitios de cuestionarios de autoescuela (DRPCIV) en rumano y no guardan relacion con el modelo. No se dispone de paper, blog, repositorio adicional ni demo asociados.

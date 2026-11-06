@@ -98,7 +98,7 @@ Los datos de los modelos comparables provienen de la documentación pública de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jonsnowshiteblacklol/Llama-3.2-1B-Lily-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jonsnowshiteblacklol/Llama-3.2-1B-Lily-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia Llama 3.2: https://www.llama.com/llama3_2/license/
 - Política de uso aceptable de Meta: https://www.llama.com/llama3_2/use-policy/

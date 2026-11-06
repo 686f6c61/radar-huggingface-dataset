@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Beverage Multi-Task DiT es una política robótica de imitación entrenada con LeRobot 0.6.1 sobre una tarea bimanual de remover una bebida con un muddler. El modelo lo publica el usuario 2chan en HuggingFace y emplea la clase `MultiTaskDiTPolicy`, una arquitectura de difusión (DDPM con predicción de épsilon y pérdida MSE) condicionada por instrucción de tarea, estado del robot y tres cámaras. Con 277.394.188 parámetros y un tamaño de repositorio de 1,1 GB, es un checkpoint compacto pensado para control de manipuladores, no para generación de texto.
+Beverage Multi-Task DiT es una política robótica de imitación entrenada con LeRobot 0.6.1 sobre una tarea bimanual de remover una bebida con un muddler. El modelo lo publica el usuario 2chan en Hugging Face y emplea la clase `MultiTaskDiTPolicy`, una arquitectura de difusión (DDPM con predicción de épsilon y pérdida MSE) condicionada por instrucción de tarea, estado del robot y tres cámaras. Con 277.394.188 parámetros y un tamaño de repositorio de 1,1 GB, es un checkpoint compacto pensado para control de manipuladores, no para generación de texto.
 
 El checkpoint corresponde al paso 10.000 de la ejecución `20261105_005902_083500` y es a la vez el último checkpoint y el mejor por validación de esa ejecución, con una pérdida de validación offline de 0,0121393986. Aunque la arquitectura soporta condicionamiento multitarea, este checkpoint se entrenó únicamente con el ID de tarea 0 (stirring), por lo que en la práctica es un modelo de una sola habilidad.
 
@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye otros checkpoints de LeR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/2chan/beverage-multi-task-dit-20261105-10k
+- Hugging Face: https://huggingface.co/2chan/beverage-multi-task-dit-20261105-10k
 - Modelo base: https://huggingface.co/openai/clip-vit-base-patch16
 - LeRobot (framework): no disponible en la información proporcionada
 - Paper, blog o demo: no disponible en la información proporcionada

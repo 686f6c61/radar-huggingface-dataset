@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial publicado en HuggingFace por el usuario sad1csa21dsa bajo licencia MIT. Según la model card, se trata de un modelo de lenguaje que ha recibido una actualización significativa en su capacidad de razonamiento e inferencia, con mejoras en tareas de matemáticas, programación y lógica general. El autor afirma que el rendimiento se acerca al de otros modelos líderes, citando una mejora en AIME 2025 del 70 % al 87,5 % de precisión, y un aumento en el número medio de tokens de razonamiento por pregunta (de 12 000 a 23 000).
+MyAwesomeModel es un modelo de inteligencia artificial publicado en Hugging Face por el usuario sad1csa21dsa bajo licencia MIT. Según la model card, se trata de un modelo de lenguaje que ha recibido una actualización significativa en su capacidad de razonamiento e inferencia, con mejoras en tareas de matemáticas, programación y lógica general. El autor afirma que el rendimiento se acerca al de otros modelos líderes, citando una mejora en AIME 2025 del 70 % al 87,5 % de precisión, y un aumento en el número medio de tokens de razonamiento por pregunta (de 12 000 a 23 000).
 
-Sin embargo, la información técnica disponible es muy escasa. El repositorio no incluye detalles sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El pipeline declarado en HuggingFace es `feature-extraction`, lo que resulta contradictorio con las capacidades de generación y razonamiento descritas en la model card. El tamaño del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos reales o que estos no se han subido. En consecuencia, esta ficha se basa únicamente en la información proporcionada, marcando como "no disponible" todos los datos que no se han especificado.
+Sin embargo, la información técnica disponible es muy escasa. El repositorio no incluye detalles sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni formato de pesos. El pipeline declarado en Hugging Face es `feature-extraction`, lo que resulta contradictorio con las capacidades de generación y razonamiento descritas en la model card. El tamaño del repositorio es de 0,0 GB, lo que sugiere que no contiene pesos reales o que estos no se han subido. En consecuencia, esta ficha se basa únicamente en la información proporcionada, marcando como "no disponible" todos los datos que no se han especificado.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene pesos del modelo (tamaño 0,0 GB), por lo que es imposible descargarlo o ejecutarlo. Es probable que se trate de un repositorio de prueba o incompleto.
-- La model card describe capacidades de razonamiento y generación de texto, pero el pipeline declarado en HuggingFace es `feature-extraction`, lo que genera una contradicción sobre la naturaleza real del modelo.
+- La model card describe capacidades de razonamiento y generación de texto, pero el pipeline declarado en Hugging Face es `feature-extraction`, lo que genera una contradicción sobre la naturaleza real del modelo.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que impide evaluar su idoneidad para tareas concretas.
 - Los resultados de benchmarks presentados carecen de contexto: no se identifican los modelos comparados ni se detalla la metodología, por lo que no son verificables.
 - Al no conocerse el proceso de entrenamiento, no es posible evaluar sesgos potenciales, riesgos de alucinación o limitaciones lingüísticas.
@@ -93,8 +93,8 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sad1csa21dsa/MyAwesomeModel-TestRepo
-- Página del autor en HuggingFace: https://huggingface.co/sad1csa21dsa
+- Repositorio en Hugging Face: https://huggingface.co/sad1csa21dsa/MyAwesomeModel-TestRepo
+- Página del autor en Hugging Face: https://huggingface.co/sad1csa21dsa
 - Repositorio similar (posible duplicado): https://huggingface.co/toolathlonhudi/MyAwesomeModel-TestRepo
 - Entrada en Toolify (agregador de modelos): https://www.toolify.ai/ai-model/asfafaf4546-myawesomemodel-testrepo
 

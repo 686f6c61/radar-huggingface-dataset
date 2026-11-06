@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`frromano/clip-finetuned20` es un repositorio de HuggingFace publicado por el usuario `frromano` que contiene una implementacion propia y minima de una arquitectura CLIP orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint evaluado.
+`frromano/clip-finetuned20` es un repositorio de Hugging Face publicado por el usuario `frromano` que contiene una implementacion propia y minima de una arquitectura CLIP orientada a tareas de clasificacion. No se trata de un modelo entrenado ni de un release con pesos listos para produccion: la propia model card lo describe explicitamente como un punto de partida reproducible y el fichero `model.safetensors` como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint evaluado.
 
 El modelo se distribuye bajo licencia MIT e incluye el codigo fuente en `model.py`, la configuracion de arquitectura en `config.json`, la receta de experimento por defecto en `training_args.json` y el checkpoint de inicializacion en formato safetensors. La arquitectura declarada es CLIP en escala "tiny", con atencion de ventana deslizante, fusion bilineal, activacion approx gelu y normalizacion layernorm, y optimizador lamb con schedule coseno como valores de partida de la receta.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada y de caracter instrumental: sirve como plantill
 | Tarea declarada | Clasificacion (tag `classification`) |
 | Estado del checkpoint | Inicializacion sin entrenar; no se reclama ninguna puntuacion de benchmark |
 | Tamano del repositorio | 0,0 GB |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 
 ## Arquitectura y entrenamiento
 
@@ -95,6 +95,6 @@ La unica comparacion que puede establecerse con rigor es funcional: frente a rel
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frromano/clip-finetuned20
+- Modelo en Hugging Face: https://huggingface.co/frromano/clip-finetuned20
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La busqueda web realizada no devolvio ningun resultado relevante: todos los enlaces obtenidos correspondian a servicios de actualizacion de mapas de navegadores TomTom y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a `frromano/clip-finetuned20`.

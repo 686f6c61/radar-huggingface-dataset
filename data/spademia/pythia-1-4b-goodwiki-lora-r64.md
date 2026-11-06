@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| spadeMIA/pythia-1.4b-goodwiki-lora-r64 (este) | 1.4B + LoRA r64 | 2048 | Investigacion MIA | No disponible | HuggingFace |
-| spadeMIA/pythia-1.4b-goodwiki-lora-r16-a64 | 1.4B + LoRA r16 | 2048 | Investigacion MIA (variante) | No disponible | HuggingFace |
-| EleutherAI/pythia-1.4b (modelo base) | 1.4B | 2048 | Modelo de lenguaje general | Apache 2.0 | HuggingFace |
-| EleutherAI/pythia-2.8b | 2.8B | 2048 | Modelo de lenguaje general | Apache 2.0 | HuggingFace |
+| spadeMIA/pythia-1.4b-goodwiki-lora-r64 (este) | 1.4B + LoRA r64 | 2048 | Investigacion MIA | No disponible | Hugging Face |
+| spadeMIA/pythia-1.4b-goodwiki-lora-r16-a64 | 1.4B + LoRA r16 | 2048 | Investigacion MIA (variante) | No disponible | Hugging Face |
+| EleutherAI/pythia-1.4b (modelo base) | 1.4B | 2048 | Modelo de lenguaje general | Apache 2.0 | Hugging Face |
+| EleutherAI/pythia-2.8b | 2.8B | 2048 | Modelo de lenguaje general | Apache 2.0 | Hugging Face |
 
 La comparativa muestra que este adaptador no compite en rendimiento con modelos de lenguaje generales, sino que es una herramienta de investigacion. Su valor reside en la configuracion experimental documentada y en la posibilidad de comparar con la variante r16 para estudiar el efecto del rango LoRA.
 
@@ -82,7 +82,7 @@ La comparativa muestra que este adaptador no compite en rendimiento con modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-r64
+- Modelo en Hugging Face: https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-r64
 - Variante r16: https://huggingface.co/spadeMIA/pythia-1.4b-goodwiki-lora-r16-a64
 - Dataset de entrenamiento: https://huggingface.co/datasets/spadeMIA/GoodWiki_Corpus_1024_2040
 - Repositorio de Pythia (EleutherAI): https://github.com/EleutherAI/pythia

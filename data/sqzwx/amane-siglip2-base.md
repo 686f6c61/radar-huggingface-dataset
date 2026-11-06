@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks de tarea (recuperación, zero-shot,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sqzwx/amane-siglip2-base
+- Modelo en Hugging Face: https://huggingface.co/sqzwx/amane-siglip2-base
 - Modelo base: https://huggingface.co/google/siglip2-base-patch16-256
 - Conversión ONNX de referencia: https://huggingface.co/onnx-community/siglip2-base-patch16-256-ONNX
 - Repositorio Amane (documentación en `docs/`): no disponible como URL en la información proporcionada

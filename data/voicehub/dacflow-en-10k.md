@@ -84,7 +84,7 @@ Los resultados de busqueda disponibles no incluyen datos de benchmarks ni especi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DACFlow-EN-10k | 206 M | No disponible (prompt de voz de 3-10 s) | WER 0,58 % y UTMOS 3,92 en echo-dev (paso 140k), datos del propio autor | Apache 2.0 | Pesos abiertos en HuggingFace (entrenamiento en curso) |
+| DACFlow-EN-10k | 206 M | No disponible (prompt de voz de 3-10 s) | WER 0,58 % y UTMOS 3,92 en echo-dev (paso 140k), datos del propio autor | Apache 2.0 | Pesos abiertos en Hugging Face (entrenamiento en curso) |
 | Alternativas de la misma categoria (XTTS-v2, F5-TTS, StyleTTS 2, etc.) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Se recomienda consultar la documentacion oficial de cada alternativa antes de tomar una decision de adopcion, dado que esta busqueda no ha aportado datos verificables sobre ellas.
@@ -105,7 +105,7 @@ Se recomienda consultar la documentacion oficial de cada alternativa antes de to
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceHub/DACFlow-EN-10k
+- Modelo en Hugging Face: https://huggingface.co/VoiceHub/DACFlow-EN-10k
 - Dataset de entrenamiento principal: https://huggingface.co/datasets/SynDataLab-EN/echo-clones-4m-en
 - Dataset propio del autor: https://huggingface.co/datasets/VoiceHub/DACFlow-EN-10k-data
 - Codigo fuente (paquete `mytts`, rama roadmap/en-echo): https://github.com/kadirnar/dacvae-next/tree/roadmap/en-echo

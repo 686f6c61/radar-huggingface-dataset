@@ -85,8 +85,8 @@ Solo se dispone informacion del propio artefacto y de su modelo fuente. No se co
 
 | Modelo | Parametros | Contexto | Formato y tasa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RED-SNOW-5.3-FLASH-EXL3-SAGE-2.49bpw | 52,2 mil millones | 262.144 tokens (cache KV Q4) | EXL3 SAGE MixedK, 2,49 bpw + LM head 8 bits | MIT | HuggingFace, exllamav3 |
-| Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16 | no disponible | no disponible | BF16 | no disponible (no consta en la informacion) | HuggingFace |
+| RED-SNOW-5.3-FLASH-EXL3-SAGE-2.49bpw | 52,2 mil millones | 262.144 tokens (cache KV Q4) | EXL3 SAGE MixedK, 2,49 bpw + LM head 8 bits | MIT | Hugging Face, exllamav3 |
+| Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16 | no disponible | no disponible | BF16 | no disponible (no consta en la informacion) | Hugging Face |
 
 Alternativas de la misma categoria o tamano: no disponible.
 
@@ -106,7 +106,7 @@ Alternativas de la misma categoria o tamano: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-2.49bpw
+- Repositorio Hugging Face: https://huggingface.co/vcruz305/RED-SNOW-5.3-FLASH-EXL3-SAGE-2.49bpw
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/RED-SNOW-5.3-FLASH-BF16
 - Organizacion Blackfrost-AI: https://huggingface.co/Blackfrost-AI
 - Foundation declarado: zai-org/GLM-5.3-Flash-BF16

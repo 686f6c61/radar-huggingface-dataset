@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen2 es un ajuste fino experimental derivado de unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino bajo licencia Apache-2.0. Se trata de un modelo de generacion de texto en ingles entrenado con Unsloth y la libreria TRL de HuggingFace, segun declara la propia model card. El repositorio tiene un tamano de 0,1 GB, muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7.000 millones de parametros en precision fp16, lo que apunta a que contiene unicamente adaptadores (LoRA) o pesos parciales en lugar del modelo fusionado completo.
+HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen2 es un ajuste fino experimental derivado de unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino bajo licencia Apache-2.0. Se trata de un modelo de generacion de texto en ingles entrenado con Unsloth y la libreria TRL de Hugging Face, segun declara la propia model card. El repositorio tiene un tamano de 0,1 GB, muy inferior a los aproximadamente 15 GB que ocuparian los pesos completos de un modelo de 7.000 millones de parametros en precision fp16, lo que apunta a que contiene unicamente adaptadores (LoRA) o pesos parciales en lugar del modelo fusionado completo.
 
 El modelo hereda la arquitectura y las capacidades del Qwen2.5-7B-Instruct original: un transformer decoder-only de 7,61 mil millones de parametros con una ventana de contexto nativa de 32.768 tokens, ampliable hasta 131.072 mediante YaRN. El nombre del repositorio ("cat_numbers-iterated-run3-gen2") sugiere un experimento de ajuste iterado sobre una tarea concreta, presumiblemente relacionada con numeros o conteo, aunque la model card no documenta la tarea, el dataset ni la metodologia.
 
@@ -22,14 +22,14 @@ La relevancia de esta ficha es limitada pero informativa: el modelo acumula cero
 | Formato de pesos | safetensors (tamano del repositorio: 0,1 GB) |
 | Libreria de inferencia | transformers; etiquetado tambien para text-generation-inference |
 | Modelo base | unsloth/Qwen2.5-7B-Instruct |
-| Fecha de publicacion | 3 de octubre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 3 de octubre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
 La arquitectura subyacente es la de Qwen2.5-7B-Instruct: un transformer decoder-only con atencion causal, normalizacion RMSNorm, activacion SwiGLU, embeddings de rotacion posicional (RoPE) y atencion con consultas agrupadas (GQA). El modelo base cuenta con 28 capas, una dimension oculta de 3.584 y una ventana de contexto nativa de 32.768 tokens, extensible a 131.072 con factor de escala YaRN. No se dispone de informacion en el repositorio que confirme modificaciones estructurales sobre esta base, por lo que se asume que el ajuste es exclusivamente de pesos.
 
-Respecto al entrenamiento, la model card indica unicamente que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de HuggingFace, lo que implica un ajuste supervisado (SFT) o un ajuste con adaptadores de bajo rango (LoRA/QLoRA) sobre el modelo instructivo base. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO u ORPO, ni hiperparametros como tasa de aprendizaje, rango de LoRA o numero de epocas. Tampoco se documenta el significado de "cat_numbers" ni que implica la iteracion ("run3-gen2") del proceso de entrenamiento. La totalidad de estos datos debe considerarse no disponible.
+Respecto al entrenamiento, la model card indica unicamente que el modelo fue entrenado "2x faster" con Unsloth y la libreria TRL de Hugging Face, lo que implica un ajuste supervisado (SFT) o un ajuste con adaptadores de bajo rango (LoRA/QLoRA) sobre el modelo instructivo base. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO u ORPO, ni hiperparametros como tasa de aprendizaje, rango de LoRA o numero de epocas. Tampoco se documenta el significado de "cat_numbers" ni que implica la iteracion ("run3-gen2") del proceso de entrenamiento. La totalidad de estos datos debe considerarse no disponible.
 
 ## Capacidades
 
@@ -94,10 +94,10 @@ No es posible establecer una comparacion de rendimiento cuantitativa con este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen2
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 
 No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada.

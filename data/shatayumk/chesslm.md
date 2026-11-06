@@ -104,7 +104,7 @@ El checkpoint `50m_2.3b` es el de mejor pérdida de validación del barrido y el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shatayumk/chesslm
+- Repositorio en Hugging Face: https://huggingface.co/shatayumk/chesslm
 - Artículo de referencia: *Understanding Reasoning from Pretraining to Post-Training*, arXiv:2607.16097 — https://arxiv.org/abs/2607.16097
 - Dataset original de Lichess: `lichess_db_standard_rated_2022-01`
 - Búsqueda web: no se han encontrado enlaces adicionales relevantes sobre este modelo; los resultados devueltos corresponden a organismos no relacionados con el proyecto.

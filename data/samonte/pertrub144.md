@@ -25,8 +25,8 @@ El repositorio tiene 119.027.848 parámetros y ocupa 0,5 GB, con licencia Apache
 | Libreria declarada | torchvision |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-26 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-26 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-26 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-26 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,7 +116,7 @@ No se han encontrado en la informacion proporcionada modelos comparables con dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Samonte/pertrub144
+- Modelo en Hugging Face: https://huggingface.co/Samonte/pertrub144
 - Subred Perturb (netuid 26): https://perturbai.io
 - Documentacion de torchvision, `efficientnet_v2_l`: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Documentacion de safetensors: https://huggingface.co/docs/safetensors/index

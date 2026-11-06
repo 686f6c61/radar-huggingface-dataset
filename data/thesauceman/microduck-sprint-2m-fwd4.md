@@ -4,7 +4,7 @@
 
 microduck-sprint-2m-fwd4 es una politica de control (policy) de aprendizaje por refuerzo entrenada para el robot cuadrupedo microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo generativo de proposito general: es un controlador de locomocion que consume una observacion de 61 dimensiones y emite 14 acciones a 50 Hz, pensado para ejecutarse en bucle de forma perpetua hasta que se le indique lo contrario. Se distribuye en formato ONNX, con el normalizador de observaciones ya integrado en el propio fichero, de modo que el robot puede alimentarlo con observaciones en crudo.
 
-El modelo lo publica el usuario TheSauceman en HuggingFace, con un repositorio de tamano practicamente nulo, coherente con una red de politica de dimensiones reducidas. La model card lo describe como una marcha (gait) que se carga en una ranura de politica del demonio `robotctl` del microduck. La innovacion principal respecto a iteraciones anteriores de la misma tarea es de recompensa y regularizacion: patas espejadas, penalizacion por giro, suavizado mas agresivo, mayor libertad en caderas y rodillas y perturbaciones de entrenamiento para mejorar la estabilidad, lo que elevo la velocidad objetivo alcanzada de 0,65 a 0,85 metros por segundo.
+El modelo lo publica el usuario TheSauceman en Hugging Face, con un repositorio de tamano practicamente nulo, coherente con una red de politica de dimensiones reducidas. La model card lo describe como una marcha (gait) que se carga en una ranura de politica del demonio `robotctl` del microduck. La innovacion principal respecto a iteraciones anteriores de la misma tarea es de recompensa y regularizacion: patas espejadas, penalizacion por giro, suavizado mas agresivo, mayor libertad en caderas y rodillas y perturbaciones de entrenamiento para mejorar la estabilidad, lo que elevo la velocidad objetivo alcanzada de 0,65 a 0,85 metros por segundo.
 
 Su relevancia es acotada pero clara: sirve como ejemplo reproducible de entrenamiento de politicas de locomocion con mjlab (MuJoCo + stack de RL), con instrucciones exactas de reproduccion (commit, semilla, checkpoint) y un manifiesto compatible con el ecosistema de politicas del microduck. No hay informacion publica sobre licencia, idiomas ni benchmarks estandar, y los resultados de busqueda web disponibles no contienen datos utiles sobre este modelo.
 
@@ -76,7 +76,7 @@ No hay tabla comparativa con otras politicas publicada por el autor.
 
 | Modelo | Tipo | Tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| TheSauceman/microduck-sprint-2m-fwd4 | Politica RL (ONNX) | no disponible | 61-D obs / 14 acciones | 0,85 m/s | no disponible | HuggingFace |
+| TheSauceman/microduck-sprint-2m-fwd4 | Politica RL (ONNX) | no disponible | 61-D obs / 14 acciones | 0,85 m/s | no disponible | Hugging Face |
 | Otras politicas de `SteveTarter/microduck-challenges` | Politica RL | no disponible | interfaz microduck | no disponible | no disponible | repositorio GitHub |
 | Politicas de referencia de Pollen Robotics para microduck | Politica RL | no disponible | interfaz microduck | no disponible | no disponible | repositorio GitHub |
 
@@ -96,7 +96,7 @@ No se dispone de datos publicos de rendimiento, tamano o licencia de las alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheSauceman/microduck-sprint-2m-fwd4
+- Modelo en Hugging Face: https://huggingface.co/TheSauceman/microduck-sprint-2m-fwd4
 - Repositorio de retos y entrenamiento: https://github.com/SteveTarter/microduck-challenges
 - Proyecto microduck de Pollen Robotics: https://github.com/pollen-robotics/microduck
 - Documentacion del manifiesto de politicas (`docs/policy-manifest.md` en el repositorio del demonio `robotctl`), referenciada en la model card: no se dispone de URL directa en la informacion proporcionada.

@@ -72,7 +72,7 @@ No se dispone de datos de benchmarks comparativos en la información disponible.
 
 ## Enlaces
 
-- Artefacto en HuggingFace: https://huggingface.co/knoopx/Swift-Qwen3.8-27B-NInfer
+- Artefacto en Hugging Face: https://huggingface.co/knoopx/Swift-Qwen3.8-27B-NInfer
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Upstream Swift (BF16): https://huggingface.co/ukisai/Swift-Qwen3.8-27B
 - Upstream Swift NVFP4: https://huggingface.co/ukisai/Swift-Qwen3.8-27B-NVFP4

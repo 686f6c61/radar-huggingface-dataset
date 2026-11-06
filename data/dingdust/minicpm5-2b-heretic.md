@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniCPM5-2B-heretic | 2.516.756.480 | no disponible | Apache 2.0 | HuggingFace |
-| MiniCPM5-1B | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| MiniCPM5-2B-heretic | 2.516.756.480 | no disponible | Apache 2.0 | Hugging Face |
+| MiniCPM5-1B | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Modelos de 4B (referencia) | no disponible | no disponible | no disponible | no disponible |
 
 Según el autor del modelo original, MiniCPM5-2B es competitivo con modelos de 4B en código, matemáticas y tareas agénticas, pero no se proporcionan nombres ni datos concretos en la información disponible.
@@ -88,7 +88,7 @@ Según el autor del modelo original, MiniCPM5-2B es competitivo con modelos de 4
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dingdust/MiniCPM5-2B-heretic
+- Hugging Face: https://huggingface.co/Dingdust/MiniCPM5-2B-heretic
 - MiniCPM Tech Report: https://arxiv.org/pdf/2506.07900
 - MiniCPM Wiki (chino): https://modelbest.feishu.cn/wiki/UtWxwcERfiRIpIkBOjuc3h9tn1D
 - GitHub: https://github.com/OpenBMB/MiniCPM

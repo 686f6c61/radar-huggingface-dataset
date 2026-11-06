@@ -79,8 +79,8 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Rendimiento en el conjunto del autor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FSG-RL-Feedback-GRPO | LoRA sobre base de ~9 000 M | no disponible | 69,00 % respuesta final; 53,50 % exito estricto | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.5-9B-Base | ~9 000 M (segun nomenclatura) | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| FSG-RL-Feedback-GRPO | LoRA sobre base de ~9 000 M | no disponible | 69,00 % respuesta final; 53,50 % exito estricto | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.5-9B-Base | ~9 000 M (segun nomenclatura) | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Otros adaptadores FSG-RL anteriores | no disponible | no disponible | no disponible | no disponible | mencionados por el autor, no detallados |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZihanLiummyycc/FSG-RL-Feedback-GRPO
+- Modelo en Hugging Face: https://huggingface.co/ZihanLiummyycc/FSG-RL-Feedback-GRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio FSG-RL en GitHub: https://github.com/ZihanLiummyycc/FSG-RL
 - README del repositorio FSG-RL: https://github.com/ZihanLiummyycc/FSG-RL/blob/main/README.md

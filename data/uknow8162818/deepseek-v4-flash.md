@@ -86,8 +86,8 @@ Estimaciones derivadas del numero de parametros y del tamano del repositorio; no
 | Modelo | Parametros totales | Parametros activos | Contexto | Precision de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | DeepSeek-V4-Flash | 284B (290,9B segun safetensors) | 13B | 1M | FP4 + FP8 mixto | MIT | Repositorio de tercero; variante oficial en deepseek-ai |
-| DeepSeek-V4-Flash-Base | 284B | 13B | 1M | FP8 mixto | no disponible | HuggingFace y ModelScope (deepseek-ai) |
-| DeepSeek-V4-Pro | 1,6T | 49B | 1M | FP4 + FP8 mixto | no disponible | HuggingFace y ModelScope (deepseek-ai) |
+| DeepSeek-V4-Flash-Base | 284B | 13B | 1M | FP8 mixto | no disponible | Hugging Face y ModelScope (deepseek-ai) |
+| DeepSeek-V4-Pro | 1,6T | 49B | 1M | FP4 + FP8 mixto | no disponible | Hugging Face y ModelScope (deepseek-ai) |
 | DeepSeek-V3.2-Base | 671B | 37B | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 Frente a DeepSeek-V3.2-Base, la variante Flash ofrece mejores resultados en todos los benchmarks mostrados (por ejemplo, MMLU-Pro pasa de 65,5 a 68,3 y MMLU de 87,8 a 88,7) con menos de la mitad de parametros totales y un tercio de parametros activos. Frente a DeepSeek-V4-Pro, queda por detras en conocimiento puro (MMLU 88,7 frente a 90,1; MMLU-Pro 68,3 frente a 73,5), aunque el autor sostiene que la variante `-Max` con mayor presupuesto de pensamiento iguala su rendimiento en razonamiento.
@@ -118,7 +118,7 @@ Frente a DeepSeek-V3.2-Base, la variante Flash ofrece mejores resultados en todo
 - ModelScope (DeepSeek-V4-Pro-Base): https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro-Base
 - ModelScope (DeepSeek-V4-Pro): https://modelscope.cn/models/deepseek-ai/DeepSeek-V4-Pro
 - Informe tecnico (arXiv:2606.19348): https://arxiv.org/abs/2606.19348
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter/X: https://twitter.com/deepseek_ai

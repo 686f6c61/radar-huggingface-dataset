@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SmolLM2-1.7B-telegram-chats (este modelo) | 1,71B | no documentada para el ajuste; 8.192 en el modelo base | no disponible | safetensors en HuggingFace |
+| SmolLM2-1.7B-telegram-chats (este modelo) | 1,71B | no documentada para el ajuste; 8.192 en el modelo base | no disponible | safetensors en Hugging Face |
 | HuggingFaceTB/SmolLM2-1.7B (modelo base) | 1,71B | 8.192 tokens | Apache-2.0 | safetensors, GGUF y variantes cuantizadas |
 | Qwen2.5-1.5B | 1,54B | 32.768 tokens | Apache-2.0 | safetensors, GGUF, AWQ, GPTQ |
 | Llama-3.2-1B | 1,24B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF |
@@ -95,7 +95,7 @@ Los datos de contexto y licencia de los modelos comparados corresponden a la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Offlin33er/SmolLM2-1.7B-telegram-chats
+- Modelo en Hugging Face: https://huggingface.co/Offlin33er/SmolLM2-1.7B-telegram-chats
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Offlin33er/telegram-chat-export-synthetic
 - Traza de entrenamiento en Trackio: https://Offlin33er-smollm2-telegram-chat-sft-trackio.hf.space?project=smollm2-telegram-chat-sft&runs=Offlin33er-1789556763&sidebar=collapsed

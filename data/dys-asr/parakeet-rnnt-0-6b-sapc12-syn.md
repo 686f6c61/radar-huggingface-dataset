@@ -95,7 +95,7 @@ Los datos de parametros y licencias de los modelos comparados fuera del reposito
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-sapc12-syn
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-sapc12-syn
 - Modelo base: https://huggingface.co/extraordinarylab/parakeet-unified-en-0.6b
 - Dataset SAPC1: https://huggingface.co/datasets/dys-asr/sapc1
 - Dataset SAPC2: https://huggingface.co/datasets/dys-asr/sapc2

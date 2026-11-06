@@ -25,7 +25,7 @@ Es relevante porque cubre un nicho concreto: desarrolladores e investigadores qu
 | Tarea | text-generation |
 | Modelo base | empero-ai/Qwen3.8-9B-Distill (relación: quantized) |
 | Repositorio canónico | RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ8e |
-| Fecha de publicación (HuggingFace) | 25 de septiembre de 2026 (según metadatos del repositorio) |
+| Fecha de publicación (Hugging Face) | 25 de septiembre de 2026 (según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -110,12 +110,12 @@ No se dispone de datos de rendimiento comparado entre estas variantes ni frente 
 - Herramientas y agentes: no hay documentación sobre tool calling, function calling ni uso agéntico, así que no debería asumirse su soporte en producción sin pruebas previas.
 - Licencia: el repositorio declara Apache-2.0, pero la licencia del modelo base empero-ai/Qwen3.8-9B-Distill y las condiciones de uso de la serie Qwen3.8 deben verificarse por separado antes de un uso comercial.
 - Plataforma: al ser pesos MLX, el modelo queda restringido a Apple Silicon. No es desplegable en infraestructura NVIDIA ni en servidores x86 convencionales.
-- Metadatos anómalos: la fecha de creación y actualización del repositorio en HuggingFace figura como 25 de septiembre de 2026, posterior a la fecha habitual de consulta. Conviene verificar la vigencia del repositorio antes de integrarlo.
+- Metadatos anómalos: la fecha de creación y actualización del repositorio en Hugging Face figura como 25 de septiembre de 2026, posterior a la fecha habitual de consulta. Conviene verificar la vigencia del repositorio antes de integrarlo.
 - Compatibilidad de runtime: la model card recomienda verificar la compatibilidad contra la versión específica de mlx-lm, oMLX, LM Studio o mlx-swift que se vaya a utilizar.
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-8bit
+- Hugging Face (este repositorio): https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-8bit
 - Repositorio canónico oQ8e: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ8e
 - Variante oQ5e: https://huggingface.co/RolanDorisTech/Qwen3.8-9B-Distill-MLX-oQ5e
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-9B-Distill

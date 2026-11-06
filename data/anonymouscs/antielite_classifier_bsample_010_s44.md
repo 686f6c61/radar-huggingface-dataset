@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como AnonymousCS/antielite_classifier_bsample_010_s44 es un checkpoint de tipo encoder publicado en HuggingFace por el usuario AnonymousCS el 15 de octubre de 2026. Se trata de un modelo basado en la arquitectura BERT, tal y como indican las etiquetas del repositorio (safetensors, bert, region:us), con un total de 177.854.978 parametros reales declarados en el archivo de pesos. El repositorio ocupa 0,7 GB y no incluye model card, pipeline declarado, licencia ni idiomas soportados.
+El modelo identificado como AnonymousCS/antielite_classifier_bsample_010_s44 es un checkpoint de tipo encoder publicado en Hugging Face por el usuario AnonymousCS el 15 de octubre de 2026. Se trata de un modelo basado en la arquitectura BERT, tal y como indican las etiquetas del repositorio (safetensors, bert, region:us), con un total de 177.854.978 parametros reales declarados en el archivo de pesos. El repositorio ocupa 0,7 GB y no incluye model card, pipeline declarado, licencia ni idiomas soportados.
 
 El nombre del identificador sugiere un clasificador (sufijo `_classifier`) entrenado sobre una muestra concreta (`bsample_010`) y una semilla determinada (`s44`), un patron habitual en experimentos de investigacion reproducibles o en entrenamientos de clasificacion binaria. Sin embargo, el repositorio no aporta documentacion que confirme la tarea, el dataset ni el procedimiento de entrenamiento, por lo que cualquier afirmacion al respecto seria especulativa.
 
@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en int8: aproximadamente 0,18 GB de pesos.
 - Cabe en GPU de consumo: si, en cualquier GPU con 4 GB o mas de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090, entre otras). Tambien es viable en CPU para lotes pequenos.
 - GPU recomendadas para produccion: T4, L4, A10, RTX 4090 o A100 si se requiere alto throughput con lotes grandes. Para este tamano de modelo, las GPU de gama alta no aportan ventaja significativa mas alla del batching.
-- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con HuggingFace Transformers, Optimum, TorchScript y ONNX Runtime. vLLM y TGI estan orientados a modelos generativos, por lo que su utilidad aqui es marginal. No hay conversion oficial a GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo BERT en safetensors, es compatible con Hugging Face Transformers, Optimum, TorchScript y ONNX Runtime. vLLM y TGI estan orientados a modelos generativos, por lo que su utilidad aqui es marginal. No hay conversion oficial a GGUF para llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| antielite_classifier_bsample_010_s44 | 177,9 M | no disponible | no disponible | HuggingFace (4 descargas) |
+| antielite_classifier_bsample_010_s44 | 177,9 M | no disponible | no disponible | Hugging Face (4 descargas) |
 | BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible |
 | DeBERTa-v3-base | 184 M | 512 tokens | MIT | Ampliamente disponible |
 | RoBERTa-base | 125 M | 512 tokens | MIT | Ampliamente disponible |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_010_s44
+- Hugging Face: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_010_s44
 - Paper asociado: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

@@ -116,11 +116,11 @@ No se dispone de datos de modelos alternativos (parametros, contexto, benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tpnlabs/LFM2.5-1.2B-Instruct-TPN-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tpnlabs/LFM2.5-1.2B-Instruct-TPN-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Informe completo de cuantizacion (TPN Workbench): https://bench.trueperformancenetwork.com/r/DGiXiKCe9ZoZ9uoncS1v2A
 - Banco de pruebas TPN Workbench: https://bench.trueperformancenetwork.com
 - Aplicacion Gratis (ejecucion on-device): https://gratis.trueperformancenetwork.com/
-- Licencia: fichero `LICENSE` dentro del repositorio de HuggingFace
+- Licencia: fichero `LICENSE` dentro del repositorio de Hugging Face
 
 Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores son los unicos encontrados en la informacion disponible.

@@ -68,8 +68,8 @@ La evaluacion de caminata se realizo con una aproximacion 2D basada en una tabla
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-tazza11-v4-link01 | 0,8B (base) + LoRA | No disponible | Destilacion de politica PPO + RL | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible | HuggingFace |
+| connectailab-rl-tazza11-v4-link01 | 0,8B (base) + LoRA | No disponible | Destilacion de politica PPO + RL | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible | Hugging Face |
 | Politica PPO original (brain.json) | No disponible | No aplica | RL clasico en simulador | No disponible | Repositorio connect-tycoon |
 
 No se dispone de informacion sobre otros adaptadores LoRA de decision robotica comparables en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de informacion sobre otros adaptadores LoRA de decision robotica c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tazza11/connectailab-rl-tazza11-v4-link01
+- Modelo en Hugging Face: https://huggingface.co/tazza11/connectailab-rl-tazza11-v4-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de codigo de entrenamiento (CONNECT TYCOON): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

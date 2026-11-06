@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Feihua-n1-64M-prune es un modelo de lenguaje denso de 49.163.136 parametros (49,16 M) publicado por el usuario ZZRI en HuggingFace, derivado del modelo base jingyaogong/minimind-3 (familia Qwen3) y obtenido mediante poda estructural por capas sobre Feihua-n1-64M. Se trata de un modelo experimental cuyo objetivo declarado no es resolver una tarea productiva, sino servir de banco de pruebas reproducible para tecnicas de pruning en modelos muy pequenos: el autor lo describe como un modelo de "废话文学" (literatura de relleno, texto sin carga informativa), disenado para generar verborrea coherente en chino sin afirmar hechos.
+Feihua-n1-64M-prune es un modelo de lenguaje denso de 49.163.136 parametros (49,16 M) publicado por el usuario ZZRI en Hugging Face, derivado del modelo base jingyaogong/minimind-3 (familia Qwen3) y obtenido mediante poda estructural por capas sobre Feihua-n1-64M. Se trata de un modelo experimental cuyo objetivo declarado no es resolver una tarea productiva, sino servir de banco de pruebas reproducible para tecnicas de pruning en modelos muy pequenos: el autor lo describe como un modelo de "废话文学" (literatura de relleno, texto sin carga informativa), disenado para generar verborrea coherente en chino sin afirmar hechos.
 
 La relevancia tecnica del artefacto esta en el experimento que documenta: se aplica un analisis de importancia de capa tipo ShortGPT (arXiv:2403.03853) sobre un transformer de solo 8 capas, se eliminan las capas 3 y 5 por ser las mas cercanas a la identidad (Block Importance 0.229 y 0.217) y se comprueba que en modelos de este tamano el pruning agresivo destruye la capacidad generativa: la perplejidad pasa de 120 a 1795 tras la poda en crudo. Un SFT de recuperacion de un solo epoch (79 segundos en una P100) la devuelve a 660,2, lo que constituye la conclusion empirica central: en regimen de 21 MB, la profundidad importa mas que el ancho de bits de la cuantizacion.
 
@@ -39,7 +39,7 @@ El entrenamiento posterior consistio en un unico epoch de SFT de recuperacion so
 - Generacion de relleno textual extenso: el modelo esta entrenado especificamente para producir parrafos largos sin carga factual.
 - Conversacion multi-turno: la etiqueta `conversational` indica formato de dialogo, y el ejemplo oficial lo ejecuta con llama.cpp en modo servidor.
 - Cuantizacion extrema: funciona con menos de 32 MB en disco y con cuantizaciones de 1,56 a 2,7 bits efectivos.
-- Compatibilidad con HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`).
+- Compatibilidad con Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`).
 - Capacidades declaradas por omision explicita: no busca tool calling, no realiza function calling, no implementa agentes ni razonamiento multi-paso, no procesa vision ni audio y no genera codigo ni matematicas.
 - Multilingue: solo chino. No hay soporte declarado de otros idiomas.
 
@@ -110,7 +110,7 @@ No se dispone de datos de rendimiento en tareas estandar para ninguno de los tre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZZRI/Feihua-n1-64M-prune
+- Hugging Face: https://huggingface.co/ZZRI/Feihua-n1-64M-prune
 - Modelo original sin podar: https://huggingface.co/ZZRI/Feihua-n1-64M
 - Modelo base: https://huggingface.co/jingyaogong/minimind-3
 - Repositorio minimind: https://github.com/jingyaogong/minimind

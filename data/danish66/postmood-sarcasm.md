@@ -30,8 +30,8 @@ No se dispone de información sobre el proceso de entrenamiento: ni el dataset u
 - Clasificación de texto binaria (presencia o ausencia de sarcasmo) o multiclase, según la configuración de la capa de salida (no especificada).
 - Detección de sarcasmo en textos cortos como titulares de noticias, comentarios o publicaciones en redes sociales.
 - Inferencia eficiente gracias al tamaño compacto del modelo (~109M parámetros), adecuado para despliegue en entornos con recursos limitados.
-- Compatible con la librería `transformers` de HuggingFace, lo que facilita su integración en pipelines de NLP existentes.
-- Soporte nativo para `text-embeddings-inference` y `endpoints_compatible`, lo que permite su despliegue en infraestructura de HuggingFace.
+- Compatible con la librería `transformers` de Hugging Face, lo que facilita su integración en pipelines de NLP existentes.
+- Soporte nativo para `text-embeddings-inference` y `endpoints_compatible`, lo que permite su despliegue en infraestructura de Hugging Face.
 - Capacidades multilingües no confirmadas; probablemente entrenado principalmente en inglés, dado el uso de BERT base.
 
 ## Casos de uso
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: menos de 1 GB en FP32 (109M parámetros ≈ 438 MB en FP32). Con cuantización (p. ej., int8) podría reducirse a ~110 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1050 Ti, RTX 2060, o incluso integradas con soporte CUDA. También funciona en CPU con latencia aceptable para inferencia por lotes.
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna, incluso en tarjetas de gama baja.
-- Opciones de despliegue: puede servirse con `transformers` (PyTorch), `text-embeddings-inference` de HuggingFace, o exportarse a ONNX para usar con TensorRT u otros runtimes. También es compatible con `endpoints_compatible` de HuggingFace.
+- Opciones de despliegue: puede servirse con `transformers` (PyTorch), `text-embeddings-inference` de Hugging Face, o exportarse a ONNX para usar con TensorRT u otros runtimes. También es compatible con `endpoints_compatible` de Hugging Face.
 - Latencia y throughput: no disponibles, pero para un modelo de 109M parámetros se puede esperar una latencia de pocos milisegundos por instancia en GPU (p. ej., ~5-10 ms en una V100) y de 100-200 ms en CPU, dependiendo de la longitud del texto.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ No hay datos de rendimiento comparables entre estos modelos. La ausencia de benc
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Danish66/postmood-sarcasm)
+- [Modelo en Hugging Face](https://huggingface.co/Danish66/postmood-sarcasm)
 - [Repositorio GitHub PostMood (posiblemente relacionado)](https://github.com/Imartinezcuevas/PostMood)
 - [Paper de BERT (referencia en los tags)](https://arxiv.org/abs/1910.09700)

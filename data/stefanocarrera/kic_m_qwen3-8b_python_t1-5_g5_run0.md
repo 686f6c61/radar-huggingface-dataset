@@ -44,7 +44,7 @@ El nombre del repositorio (`python_t1.5_g5_run0`) sugiere una ejecución experim
 - Generación de snippets de Python en entornos de prototipado: dado el presumible enfoque del ajuste, puede emplearse para autocompletar funciones o scripts sencillos en herramientas internas, siempre con revisión humana.
 - Base para nuevos ajustes finos: al estar ya adaptado a un dominio concreto, puede servir como punto de partida para tareas más específicas mediante LoRA.
 - Evaluación comparativa de checkpoints: útil en estudios que midan el impacto de un ajuste fino ligero sobre un modelo base cuantizado.
-- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado en HuggingFace con metadatos mínimos, para ilustrar buenas (y malas) prácticas de documentación.
+- Docencia y formación: ejemplo práctico de cómo se publica un modelo ajustado en Hugging Face con metadatos mínimos, para ilustrar buenas (y malas) prácticas de documentación.
 - Pruebas de integración con `text-generation-inference`: el tag `text-generation-inference` sugiere compatibilidad con TGI, lo que permite desplegarlo en infraestructura de inferencia estándar para validar el pipeline.
 
 ## Benchmarks y rendimiento
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g5_run0 | ~8B | no disponible en la model card | Apache 2.0 | HuggingFace, 0 descargas | Ajuste fino experimental sin benchmarks |
-| Qwen/Qwen3-8B | ~8B | 32.768 tokens nativos (extensible a 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | 32.768 tokens nativos | Apache 2.0 | HuggingFace | Checkpoint base cuantizado a 4 bits, usado como punto de partida |
-| Qwen/Qwen2.5-Coder-7B | ~7B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa específica para código con benchmarks públicos |
+| stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g5_run0 | ~8B | no disponible en la model card | Apache 2.0 | Hugging Face, 0 descargas | Ajuste fino experimental sin benchmarks |
+| Qwen/Qwen3-8B | ~8B | 32.768 tokens nativos (extensible a 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-8B-Base-unsloth-bnb-4bit | ~8B | 32.768 tokens nativos | Apache 2.0 | Hugging Face | Checkpoint base cuantizado a 4 bits, usado como punto de partida |
+| Qwen/Qwen2.5-Coder-7B | ~7B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa específica para código con benchmarks públicos |
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g5_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g5_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g5_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_python_t1.5_g5_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)
 - [Repositorio de TRL](https://github.com/huggingface/trl)
-- [Familia Qwen3 en HuggingFace](https://huggingface.co/Qwen)
+- [Familia Qwen3 en Hugging Face](https://huggingface.co/Qwen)

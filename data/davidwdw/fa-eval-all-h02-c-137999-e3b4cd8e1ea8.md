@@ -88,5 +88,5 @@ No disponible. No se han encontrado en la informacion proporcionada artefactos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-eval-all-h02-c-137999-e3b4cd8e1ea8
+- Hugging Face: https://huggingface.co/davidwdw/fa-eval-all-h02-c-137999-e3b4cd8e1ea8
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este artefacto. Los resultados devueltos (Facebook, Gemini de Google DeepMind, Evaluation Systems Homepage del HRC, EvalAI y Wikipedia) no guardan relacion con el repositorio.

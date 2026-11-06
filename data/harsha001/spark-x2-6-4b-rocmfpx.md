@@ -80,7 +80,7 @@ No se dispone de datos verificables de otros modelos de 4 mil millones de parám
 
 | Modelo | Parametros | Contexto | Tamano | KLD | Mismo top-1 | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---:|---|---|
-| Spark-X2.6-4B (BF16) | 4,11 B | no disponible | no disponible | 0 | 100 % | Apache-2.0 | HuggingFace (XHToken) |
+| Spark-X2.6-4B (BF16) | 4,11 B | no disponible | no disponible | 0 | 100 % | Apache-2.0 | Hugging Face (XHToken) |
 | Spark-X2.6-4B `Q8_0_ROCMFPX` | 4,11 B | no disponible | 4,2 GB | 0,0208 | 93,49 % | Apache-2.0 | solo fork ROCmFPX |
 | Spark-X2.6-4B `Q4_0_ROCMFP4` | 4,11 B | no disponible | 2,8 GB | 0,1267 | 84,72 % | Apache-2.0 | solo fork ROCmFPX |
 | `Q8_0` estándar (referencia) | 4,11 B | no disponible | no disponible | 0,0049 | 97,01 % | Apache-2.0 | llama.cpp estándar |
@@ -101,6 +101,6 @@ No se dispone de datos verificables de otros modelos de 4 mil millones de parám
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/Harsha001/Spark-X2.6-4B-ROCmFPX
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/Harsha001/Spark-X2.6-4B-ROCmFPX
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Fork ROCmFPX (llama.cpp con tipos de bajo bit para AMD): https://github.com/charlie12345/ROCmFPX

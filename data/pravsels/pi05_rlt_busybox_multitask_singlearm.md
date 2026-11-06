@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/pravsels/pi05_rlt_busybox_multitask_singlearm)
+- [Modelo en Hugging Face](https://huggingface.co/pravsels/pi05_rlt_busybox_multitask_singlearm)
 - [Modelo VLA congelado asociado](https://huggingface.co/pravsels/pi05_busybox_multitask)
 - [Dataset BusyBox multitask](https://huggingface.co/datasets/villekuosmanen/busybox_multitask)
 - [Repositorio OpenPI en GitHub](https://github.com/Physical-Intelligence/openpi)

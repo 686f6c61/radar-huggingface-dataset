@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entrada | Salida | Licencia de pesos | Disponibilidad |
 |---|---|---|---|---|---|
-| OzzyGT/hunyuan3d_2mini_custom_blocks (este) | Bloques modulares Diffusers sobre Hunyuan3D-2mini | Imagen RGBA | Malla 3D sin textura | Apache-2.0 (bloques) / Tencent Hunyuan 3D 2.0 Community License (pesos) | HuggingFace, 15 descargas |
-| tencent/Hunyuan3D-2mini | Modelo original de difusión image-to-3D | Imagen | Malla 3D sin textura | Tencent Hunyuan 3D 2.0 Community License | HuggingFace (modelo base) |
-| OzzyGT/hunyuan3d_2mini_turbo | Checkpoint destilado por pasos del mismo modelo | Imagen RGBA | Malla 3D sin textura | Tencent Hunyuan 3D 2.0 Community License | HuggingFace |
-| OzzyGT/hunyuan3d_2mini_fast | Checkpoint destilado en guiado del mismo modelo | Imagen RGBA | Malla 3D sin textura | Tencent Hunyuan 3D 2.0 Community License | HuggingFace |
+| OzzyGT/hunyuan3d_2mini_custom_blocks (este) | Bloques modulares Diffusers sobre Hunyuan3D-2mini | Imagen RGBA | Malla 3D sin textura | Apache-2.0 (bloques) / Tencent Hunyuan 3D 2.0 Community License (pesos) | Hugging Face, 15 descargas |
+| tencent/Hunyuan3D-2mini | Modelo original de difusión image-to-3D | Imagen | Malla 3D sin textura | Tencent Hunyuan 3D 2.0 Community License | Hugging Face (modelo base) |
+| OzzyGT/hunyuan3d_2mini_turbo | Checkpoint destilado por pasos del mismo modelo | Imagen RGBA | Malla 3D sin textura | Tencent Hunyuan 3D 2.0 Community License | Hugging Face |
+| OzzyGT/hunyuan3d_2mini_fast | Checkpoint destilado en guiado del mismo modelo | Imagen RGBA | Malla 3D sin textura | Tencent Hunyuan 3D 2.0 Community License | Hugging Face |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones de modelos competidores de otros desarrolladores (por ejemplo, alternativas de image-to-3D de otros laboratorios) que permitan una comparación cuantitativa.
 

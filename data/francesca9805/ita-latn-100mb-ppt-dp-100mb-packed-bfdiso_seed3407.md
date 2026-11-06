@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124,77 M | 1024 (tipico GPT-2, no confirmado) | Italiano | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/ita_latn_100mb (modelo base) | No disponible | No disponible | Italiano | No disponible | HuggingFace (proyecto Goldfish) |
-| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 (variante) | No disponible | No disponible | Italiano | No disponible | HuggingFace |
-| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | No disponible | No disponible | Italiano | No disponible | HuggingFace |
+| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407 | 124,77 M | 1024 (tipico GPT-2, no confirmado) | Italiano | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/ita_latn_100mb (modelo base) | No disponible | No disponible | Italiano | No disponible | Hugging Face (proyecto Goldfish) |
+| francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407 (variante) | No disponible | No disponible | Italiano | No disponible | Hugging Face |
+| francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10 | No disponible | No disponible | Italiano | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
+- Hugging Face (modelo): https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/ita_latn_100mb
 - Variante relacionada (seed3407, sin "iso"): https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Variante de 10 MB: https://huggingface.co/francesca9805/ita-latn-10mb-ppt-Dp-100mb-packed-bfd_seed10

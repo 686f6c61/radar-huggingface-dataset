@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (SFT) de un modelo base del mismo autor, `francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed3407`. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 M), publicado en HuggingFace con la librería `transformers` y pesos en formato `safetensors`.
+El modelo `francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un ajuste fino (SFT) de un modelo base del mismo autor, `francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed3407`. Se trata de un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros totales (aproximadamente 125 M), publicado en Hugging Face con la librería `transformers` y pesos en formato `safetensors`.
 
 El nombre del repositorio y el proyecto de Weights & Biases asociado (`new-tokenizers`, de la Universidad de Groningen) apuntan a un contexto de investigación sobre tokenizadores y ablaciones de preentrenamiento en un idioma de bajos recursos: el prefijo `tur-latn` sugiere turco en escritura latina y el fragmento `100mb` sugiere un corpus de entrenamiento del orden de 100 MB. El sufijo `ckpt500_seed3407` indica que se trata de un checkpoint intermedio (paso 500) de una ejecución con semilla 3407, no necesariamente del modelo final de la serie.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (`tur-latn-...-ckpt500_seed3407`) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas y 0 likes |
+| Este modelo (`tur-latn-...-ckpt500_seed3407`) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas y 0 likes |
 | GPT-2 small | 124 M | 1024 tokens | Modified MIT | Repositorio muy extendido y desplegado |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Ampliamente usado como baseline ligero |
 | SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Modelo pequeño moderno con entrenamiento a gran escala |
@@ -86,7 +86,7 @@ La comparación en rendimiento no es posible: este modelo no publica resultados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed3407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/rhg0ub4o
 - Repositorio de TRL (framework de entrenamiento utilizado): https://github.com/huggingface/trl

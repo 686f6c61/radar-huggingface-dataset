@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, distribuido en HuggingFace por Unsloth en formato optimizado. Se trata de la evolución de GLM-5.2, con la particularidad de que utiliza exactamente el mismo modelo base que su predecesor; todas las mejoras provienen exclusivamente de la fase de post-entrenamiento. El modelo destaca por su rendimiento sobresaliente en tareas de programación compleja y en agentes autónomos de largo horizonte, logrando el estado del arte entre modelos de pesos abiertos en benchmarks como Terminal Bench 3.0 y Agents' Last Exam.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, distribuido en Hugging Face por Unsloth en formato optimizado. Se trata de la evolución de GLM-5.2, con la particularidad de que utiliza exactamente el mismo modelo base que su predecesor; todas las mejoras provienen exclusivamente de la fase de post-entrenamiento. El modelo destaca por su rendimiento sobresaliente en tareas de programación compleja y en agentes autónomos de largo horizonte, logrando el estado del arte entre modelos de pesos abiertos en benchmarks como Terminal Bench 3.0 y Agents' Last Exam.
 
 Con una arquitectura de mezcla de expertos (MoE) de aproximadamente 753 mil millones de parámetros totales y 40 mil millones de parámetros activos, GLM-5.3 ofrece una ventana de contexto de 1 millón de tokens. Su capacidad emergente en ciberseguridad, especialmente en descubrimiento de vulnerabilidades y explotación, lo convierte en una herramienta relevante tanto para investigación ofensiva como defensiva. El modelo soporta inglés y chino, y está disponible bajo una licencia propia denominada glm-5.3.
 
@@ -104,7 +104,7 @@ Los datos de parámetros y contexto de los competidores no están disponibles en
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/unsloth/GLM-5.3
+- Hugging Face (modelo): https://huggingface.co/unsloth/GLM-5.3
 - Documentación de Unsloth: https://unsloth.ai/docs/models/glm-5.3
 - Repositorio de Z.ai: https://github.com/zai-org/GLM-5
 - Paper (referencia en tags): arxiv:2602.15763

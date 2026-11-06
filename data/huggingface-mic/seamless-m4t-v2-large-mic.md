@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huggingface-mic/seamless-m4t-v2-large-mic | 59,0 M | no disponible | Fixture de test | no disponible | HuggingFace |
-| facebook/seamless-m4t-v2-large | no disponible en la informacion | no disponible | Traduccion voz/texto | no disponible en la informacion | HuggingFace |
-| facebook/seamless-m4t-v2-medium | no disponible en la informacion | no disponible | Traduccion voz/texto | no disponible en la informacion | HuggingFace |
-| facebook/seamless-m4t-v2-large | no disponible en la informacion | no disponible | Traduccion voz/texto | no disponible en la informacion | HuggingFace |
+| huggingface-mic/seamless-m4t-v2-large-mic | 59,0 M | no disponible | Fixture de test | no disponible | Hugging Face |
+| facebook/seamless-m4t-v2-large | no disponible en la informacion | no disponible | Traduccion voz/texto | no disponible en la informacion | Hugging Face |
+| facebook/seamless-m4t-v2-medium | no disponible en la informacion | no disponible | Traduccion voz/texto | no disponible en la informacion | Hugging Face |
+| facebook/seamless-m4t-v2-large | no disponible en la informacion | no disponible | Traduccion voz/texto | no disponible en la informacion | Hugging Face |
 
 La comparativa con alternativas funcionales no es significativa: el artefacto no compite con modelos de traducción de voz, sino que es una herramienta de ingeniería de software.
 
@@ -88,7 +88,7 @@ La comparativa con alternativas funcionales no es significativa: el artefacto no
 
 ## Enlaces
 
-- [HuggingFace: huggingface-mic/seamless-m4t-v2-large-mic](https://huggingface.co/huggingface-mic/seamless-m4t-v2-large-mic)
+- [Hugging Face: huggingface-mic/seamless-m4t-v2-large-mic](https://huggingface.co/huggingface-mic/seamless-m4t-v2-large-mic)
 - [Modelo base: facebook/seamless-m4t-v2-large](https://huggingface.co/facebook/seamless-m4t-v2-large)
 - [Contract manifest (integration.json)](https://huggingface.co/huggingface-mic/seamless-m4t-v2-large-mic/blob/main/integration.json)
 - [Transformers usage](https://huggingface.co/huggingface-mic/seamless-m4t-v2-large-mic/blob/main/integrations/transformers/usage.md)

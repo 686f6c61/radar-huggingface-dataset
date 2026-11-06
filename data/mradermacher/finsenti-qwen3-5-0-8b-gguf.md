@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento del modelo ni de alternativas comparables 
 - El repositorio tiene muy pocas descargas (259) y ningun "like", lo que sugiere poca validacion por parte de la comunidad.
 
 ## Enlaces
-- Repositorio HuggingFace (GGUF): https://huggingface.co/mradermacher/FinSenti-Qwen3.5-0.8B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/mradermacher/FinSenti-Qwen3.5-0.8B-GGUF
 - Modelo base original: https://huggingface.co/Ayansk11/FinSenti-Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Ayansk11/FinSenti-Dataset
 - Pagina de overview del cuantizador: https://hf.tst.eu/model#FinSenti-Qwen3.5-0.8B-GGUF

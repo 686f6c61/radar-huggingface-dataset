@@ -70,10 +70,10 @@ El autor indica que las diferencias de fidelidad inferiores a ~0,3 son ruido, se
 
 | Modelo | Parámetros | Contexto | Fidelidad tier 1 | Hard break tier 1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Zero (movingcastles/zero) | no disponible | no disponible | 2,63 | 2 % | no disponible | HuggingFace |
-| one neuron (zero-students) | 8B + 12.288 números | no disponible | 2,60 | 3 % | Apache 2.0 | HuggingFace |
-| re-read, 75 neuronas | 8B + 75 × 2 × 4.096 | no disponible | 2,40 | 3 % | Apache 2.0 | HuggingFace |
-| tabla de las 75 | 8B + 1.421 entradas | no disponible | 2,28 | 5 % | Apache 2.0 | HuggingFace |
+| Zero (movingcastles/zero) | no disponible | no disponible | 2,63 | 2 % | no disponible | Hugging Face |
+| one neuron (zero-students) | 8B + 12.288 números | no disponible | 2,60 | 3 % | Apache 2.0 | Hugging Face |
+| re-read, 75 neuronas | 8B + 75 × 2 × 4.096 | no disponible | 2,40 | 3 % | Apache 2.0 | Hugging Face |
+| tabla de las 75 | 8B + 1.421 entradas | no disponible | 2,28 | 5 % | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ El autor indica que las diferencias de fidelidad inferiores a ~0,3 son ruido, se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxsloef/zero-students
+- Hugging Face: https://huggingface.co/maxsloef/zero-students
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Modelo Zero: https://huggingface.co/movingcastles/zero
 - Repositorio GitHub: https://github.com/maxsloef/zero-students

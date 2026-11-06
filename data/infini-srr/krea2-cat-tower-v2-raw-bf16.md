@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea2-Cat-Tower-v2-Raw-BF16 es un ajuste fino (fine-tune) del modelo de generación de imágenes Krea 2 Raw, publicado por el usuario Infini-Srr en HuggingFace. Su objetivo declarado es reforzar el estilo anime respecto al modelo base, partiendo del linaje Cat Tower y entrenado con una mezcla de imágenes sintéticas generadas con CatTower (checkpoint de NoobAI-XL) e imágenes no generadas por IA. Se distribuye en un único repositorio de 26,3 GB en precisión BF16, con pesos en formato safetensors.
+Krea2-Cat-Tower-v2-Raw-BF16 es un ajuste fino (fine-tune) del modelo de generación de imágenes Krea 2 Raw, publicado por el usuario Infini-Srr en Hugging Face. Su objetivo declarado es reforzar el estilo anime respecto al modelo base, partiendo del linaje Cat Tower y entrenado con una mezcla de imágenes sintéticas generadas con CatTower (checkpoint de NoobAI-XL) e imágenes no generadas por IA. Se distribuye en un único repositorio de 26,3 GB en precisión BF16, con pesos en formato safetensors.
 
 El modelo no es autónomo: para inferencia requiere componentes externos del ecosistema Krea 2, en concreto un text encoder Qwen3-VL 4B (en bf16 o fp8 escalado), el VAE `qwen_image_vae` y el Turbo LoRA oficial de rango 64. La model card recomienda explícitamente usar el Turbo LoRA porque esta versión se construye sobre el modelo Raw, lo que permite generar en 8 pasos con CFG 1. El soporte de software está acotado a ComfyUI v0.27.0 o superior (v0.28.0 para la variante INT4 ConvRot) y Forge Neo 2.27 o superior.
 
@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Resolucion / contexto | Enfoque | Pasos recomendados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Krea2-Cat-Tower-v2-Raw-BF16 (este modelo) | no disponible | 1024-2048 px; contexto de texto no disponible | Fine-tune anime sobre Krea 2 Raw | 8 con Turbo LoRA | krea-2-community-license | HuggingFace, 0 descargas |
-| krea/Krea-2-Raw | no disponible | no disponible | Modelo base texto-a-imagen | no disponible (requiere Turbo LoRA para pocos pasos) | krea-2-community-license | HuggingFace |
+| Krea2-Cat-Tower-v2-Raw-BF16 (este modelo) | no disponible | 1024-2048 px; contexto de texto no disponible | Fine-tune anime sobre Krea 2 Raw | 8 con Turbo LoRA | krea-2-community-license | Hugging Face, 0 descargas |
+| krea/Krea-2-Raw | no disponible | no disponible | Modelo base texto-a-imagen | no disponible (requiere Turbo LoRA para pocos pasos) | krea-2-community-license | Hugging Face |
 | Krea2-Cat-Tower (linaje Cat Tower) | no disponible | no disponible | Fine-tune anime previo | no disponible | no disponible | Repositorio enlazado en la model card; ficha en Civitai |
 
 La comparacion cuantitativa no es posible: no hay parametros, benchmarks ni especificaciones de contexto publicadas para ninguno de los tres. La diferencia documentada se limita al enfoque (estilo anime), a la dependencia del Turbo LoRA y al formato de distribucion.
@@ -100,7 +100,7 @@ La comparacion cuantitativa no es posible: no hay parametros, benchmarks ni espe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infini-Srr/Krea2-Cat-Tower-v2-Raw-BF16
+- Modelo en Hugging Face: https://huggingface.co/Infini-Srr/Krea2-Cat-Tower-v2-Raw-BF16
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Repositorio de componentes de Krea 2 en Comfy-Org: https://huggingface.co/Comfy-Org/Krea-2
 - Text encoder bf16: https://huggingface.co/Comfy-Org/Krea-2/blob/main/text_encoders/qwen3vl_4b_bf16.safetensors
@@ -113,4 +113,4 @@ La comparacion cuantitativa no es posible: no hay parametros, benchmarks ni espe
 - Repositorio del linaje Cat Tower referenciado en la model card: https://huggingface.co/nukomasshigura/Krea2-Cat-Tower
 - Checkpoint CatTower usado para generar parte del dataset: https://civitai.red/models/920709/cat-tower-noobai-xl-checkpoint
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y del repositorio de Hugging Face.

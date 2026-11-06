@@ -79,7 +79,7 @@ El autor advierte que la Wikipedia turca y dos conjuntos locales pequeños se ex
 - CPU: es viable con 16 GB de RAM.
 - Kernels opcionales: instalar `flash-linear-attention` habilita kernels más rápidos de Gated DeltaNet en GPU NVIDIA. Sin esta librería, las capas Gated DeltaNet usan la implementación PyTorch de transformers, que da resultados correctos pero es más lenta con entradas largas.
 - Versión de librería: se requiere `transformers>=5.17` y PyTorch.
-- Opciones de despliegue: transformers (flujo documentado por el autor) y endpoints de HuggingFace (el repositorio lleva la etiqueta `endpoints_compatible`). No se han publicado pesos en GGUF ni versiones cuantizadas, por lo que no hay soporte confirmado para llama.cpp, Ollama o motores que dependan de GGUF. No se documenta compatibilidad con vLLM ni TGI.
+- Opciones de despliegue: transformers (flujo documentado por el autor) y endpoints de Hugging Face (el repositorio lleva la etiqueta `endpoints_compatible`). No se han publicado pesos en GGUF ni versiones cuantizadas, por lo que no hay soporte confirmado para llama.cpp, Ollama o motores que dependan de GGUF. No se documenta compatibilidad con vLLM ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -108,7 +108,7 @@ La comparación principal es contra el modelo del que deriva: cisimcik-base gana
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/cisimcik/cisimcik-base
+- Model card en Hugging Face: https://huggingface.co/cisimcik/cisimcik-base
 - README en inglés: https://huggingface.co/cisimcik/cisimcik-base/blob/main/README_en.md
 - Modelo derivado de chat, cisimcik-4b: https://huggingface.co/cisimcik/cisimcik-4b
 - Modelo derivado de decisión, tau-4b: https://huggingface.co/cisimcik/tau-4b

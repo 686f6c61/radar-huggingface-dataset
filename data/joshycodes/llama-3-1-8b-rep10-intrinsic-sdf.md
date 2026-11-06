@@ -96,7 +96,7 @@ Frente a estas alternativas, la diferencia relevante no es de parámetros ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/llama-3.1-8b-rep10-intrinsic-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/llama-3.1-8b-rep10-intrinsic-sdf
 - Corpus de entrenamiento citado: https://huggingface.co/joshycodes/qwen-constitutional-sdf-corpus
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio `welfare-improvements` mencionado en la model card: no disponible (no se proporciona URL)

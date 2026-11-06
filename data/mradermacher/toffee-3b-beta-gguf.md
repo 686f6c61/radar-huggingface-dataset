@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mradermacher/toffee-3b-beta-GGUF` contiene cuantizaciones GGUF del modelo `toffee-3b-beta`, desarrollado originalmente por el usuario `maxzt` en HuggingFace. Se trata de un modelo de lenguaje de 3.831.659.520 parámetros (aproximadamente 3,8 mil millones), lo que lo sitúa en la categoría de modelos pequeños optimizados para despliegue eficiente en entornos con recursos limitados. La fecha de creación (agosto de 2026) sugiere que es un modelo reciente, aunque no se dispone de información pública sobre su arquitectura interna, datos de entrenamiento o licencia.
+El repositorio `mradermacher/toffee-3b-beta-GGUF` contiene cuantizaciones GGUF del modelo `toffee-3b-beta`, desarrollado originalmente por el usuario `maxzt` en Hugging Face. Se trata de un modelo de lenguaje de 3.831.659.520 parámetros (aproximadamente 3,8 mil millones), lo que lo sitúa en la categoría de modelos pequeños optimizados para despliegue eficiente en entornos con recursos limitados. La fecha de creación (agosto de 2026) sugiere que es un modelo reciente, aunque no se dispone de información pública sobre su arquitectura interna, datos de entrenamiento o licencia.
 
 La relevancia de este repositorio radica en que ofrece pesos cuantizados (GGUF) listos para ser ejecutados con herramientas como `llama.cpp`, `Ollama` o `vLLM`, lo que facilita su uso en producción sin necesidad de hardware de gama alta. Sin embargo, la ausencia de documentación detallada y de resultados de evaluación limita su adopción en escenarios donde se requiera verificar su rendimiento o cumplimiento normativo. Al ser una cuantización de un modelo existente, las capacidades funcionales dependen enteramente del modelo original, del cual no se proporcionan especificaciones en esta página.
 
@@ -21,7 +21,7 @@ La relevancia de este repositorio radica en que ofrece pesos cuantizados (GGUF) 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información pública sobre la arquitectura del modelo `toffee-3b-beta`. El tamaño de 3,8B parámetros sugiere una arquitectura transformer decoder-only típica de los LLM modernos (similar a Llama, Mistral o Qwen), pero no hay confirmación oficial. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. Los comentarios en la model card (`quantize_version`, `convert_type: hf`) indican que el repositorio GGUF es una conversión estática del modelo HuggingFace original, pero no aportan detalles técnicos sobre el entrenamiento.
+No se dispone de información pública sobre la arquitectura del modelo `toffee-3b-beta`. El tamaño de 3,8B parámetros sugiere una arquitectura transformer decoder-only típica de los LLM modernos (similar a Llama, Mistral o Qwen), pero no hay confirmación oficial. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de alineación como RLHF o DPO. Los comentarios en la model card (`quantize_version`, `convert_type: hf`) indican que el repositorio GGUF es una conversión estática del modelo Hugging Face original, pero no aportan detalles técnicos sobre el entrenamiento.
 
 Dado que el repositorio es únicamente una cuantización, las innovaciones arquitectónicas (si las hubiera) pertenecen al modelo base y no se documentan aquí. Se recomienda consultar la página del modelo original (`maxzt/toffee-3b-beta`) para obtener información sobre su diseño y metodología de entrenamiento.
 

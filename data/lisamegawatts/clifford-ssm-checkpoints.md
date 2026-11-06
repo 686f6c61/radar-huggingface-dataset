@@ -35,7 +35,7 @@ Los checkpoints provienen de múltiples regímenes experimentales de corpus y co
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se declaran capacidades multilingües específicas; al ser byte-level no hay una lista de idiomas, pero tampoco hay evaluación publicada.
 - No se documentan modos especiales como thinking mode, visión o audio.
-- No se declara compatibilidad con `transformers.AutoModel`, por lo que no se puede cargar con la API estándar de HuggingFace.
+- No se declara compatibilidad con `transformers.AutoModel`, por lo que no se puede cargar con la API estándar de Hugging Face.
 
 ## Casos de uso
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Clifford-ssm-checkpoints | no disponible (posibles variantes de 80M y 125M) | no disponible | MIT | HuggingFace, checkpoints de investigación | Arquitectura SSM/osciladores, byte-level, no compatible con transformers |
-| Mamba (referencia SSM) | 130M–2.8B según variante | hasta 2k–8k en variantes publicadas | Apache 2.0 | HuggingFace, pesos públicos | SSM selectivo, ampliamente evaluado en benchmarks |
-| RWKV (referencia alternativa) | 169M–14B según versión | hasta 4k–32k según versión | Apache 2.0 | HuggingFace, pesos públicos | Arquitectura recurrente lineal, compatible con ecosistema transformers |
+| Clifford-ssm-checkpoints | no disponible (posibles variantes de 80M y 125M) | no disponible | MIT | Hugging Face, checkpoints de investigación | Arquitectura SSM/osciladores, byte-level, no compatible con transformers |
+| Mamba (referencia SSM) | 130M–2.8B según variante | hasta 2k–8k en variantes publicadas | Apache 2.0 | Hugging Face, pesos públicos | SSM selectivo, ampliamente evaluado en benchmarks |
+| RWKV (referencia alternativa) | 169M–14B según versión | hasta 4k–32k según versión | Apache 2.0 | Hugging Face, pesos públicos | Arquitectura recurrente lineal, compatible con ecosistema transformers |
 
 La comparación con Mamba y RWKV es solo orientativa: no se dispone de datos de rendimiento del modelo de Clifford SSM que permitan una comparación cuantitativa. La principal diferencia es que Clifford-ssm-checkpoints es un artefacto de investigación sin evaluación publicada, mientras que Mamba y RWKV cuentan con pesos estables, documentación de carga y resultados de benchmarks.
 
@@ -83,5 +83,5 @@ La comparación con Mamba y RWKV es solo orientativa: no se dispone de datos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LisaMegaWatts/clifford-ssm-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/LisaMegaWatts/clifford-ssm-checkpoints
 - Repositorio upstream de Harmonic GPT: https://github.com/MonumentalSystems/harmonic-gpt

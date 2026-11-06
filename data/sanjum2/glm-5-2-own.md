@@ -119,7 +119,7 @@ Frente a Claude Opus 4.8 y GPT-5.5 (modelos cerrados), GLM-5.2 muestra un rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanjum2/GLM-5.2-Own
+- Modelo en Hugging Face: https://huggingface.co/sanjum2/GLM-5.2-Own
 - Blog oficial de GLM-5.2: https://z.ai/blog/glm-5.2
 - Informe técnico de GLM-5 (arxiv): https://arxiv.org/abs/2602.15763
 - Paper de IndexShare (arxiv): https://arxiv.org/abs/2603.12201

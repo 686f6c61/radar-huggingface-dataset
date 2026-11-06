@@ -94,7 +94,7 @@ Las cifras de rendimiento comparativo entre estos modelos (mas alla de la tabla 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dalatexcoder/MiniCPM5-2B-heretic-ara
+- Modelo en Hugging Face: https://huggingface.co/dalatexcoder/MiniCPM5-2B-heretic-ara
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - MiniCPM5-1B: https://huggingface.co/openbmb/MiniCPM5-1B
 - Heretic (herramienta de abliteration): https://github.com/p-e-w/heretic

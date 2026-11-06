@@ -100,6 +100,6 @@ No se dispone de comparativas con otros enrutadores de herramientas de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pradeepchirumamilla01/vedic-atlas-router-4b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pradeepchirumamilla01/vedic-atlas-router-4b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio del proyecto Vedic Atlas (código, prompt de control y gramática JSON): https://github.com/praveensivaram/Vedic-atlas

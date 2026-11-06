@@ -113,7 +113,7 @@ Como referencia externa no neuronal, Stockfish sirve como linea base de fuerza: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jotellechea/chess-transformer
+- Modelo en Hugging Face: https://huggingface.co/Jotellechea/chess-transformer
 - Repositorio de GitHub con el resumen completo, el codigo de entrenamiento y los scripts de evaluacion: https://github.com/JOTELLECHEA/chess-transformer
 - Base de datos abierta de Lichess: https://database.lichess.org
 - Licencia CC0 de los datos: https://creativecommons.org/publicdomain/zero/1.0/

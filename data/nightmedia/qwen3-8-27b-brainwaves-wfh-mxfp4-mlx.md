@@ -6,7 +6,7 @@ El modelo `nightmedia/Qwen3.8-27B-Brainwaves-WFH-mxfp4-mlx` es una variante cuan
 
 La variante WFH (posiblemente "Work From Home" o una denominación interna) está específicamente preparada para ejecutarse en hardware Apple Silicon mediante el framework MLX, con cuantización mxfp4 que reduce significativamente los requisitos de memoria frente a los pesos en bf16. El modelo es multimodal (image-text-to-text), soporta cuatro idiomas (inglés, chino, japonés y español) y presenta una ventana de contexto que, según las etiquetas, puede alcanzar 256k o incluso 1M tokens, aunque no se ha confirmado oficialmente el valor exacto para esta variante.
 
-El acceso al modelo está restringido (gated) en HuggingFace, por lo que es necesario aceptar las condiciones del autor antes de poder descargarlo. A pesar de ser un modelo experimental y con cero descargas registradas, su licencia Apache 2.0 permite uso comercial y modificación, lo que lo hace atractivo para desarrolladores que buscan alternativas abiertas de gran contexto en entornos Apple.
+El acceso al modelo está restringido (gated) en Hugging Face, por lo que es necesario aceptar las condiciones del autor antes de poder descargarlo. A pesar de ser un modelo experimental y con cero descargas registradas, su licencia Apache 2.0 permite uso comercial y modificación, lo que lo hace atractivo para desarrolladores que buscan alternativas abiertas de gran contexto en entornos Apple.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (Alibaba) | 27B | 256k (ampliable a 1M) | bf16, fp8, etc. | Apache 2.0 | Abierto en HuggingFace |
+| Qwen3.8-27B (Alibaba) | 27B | 256k (ampliable a 1M) | bf16, fp8, etc. | Apache 2.0 | Abierto en Hugging Face |
 | nightmedia/Qwen3.8-27B-Brainwaves | 27B | 256k / 1M | bf16, MLX | Apache 2.0 | Abierto (gated) |
 | nightmedia/Qwen3.8-27B-Brainwaves-WFH-mxfp4-mlx | 27B | 256k / 1M | mxfp4 (MLX) | Apache 2.0 | Gated, sin descargas |
 | Llama 3.1 8B (comparación de tamaño inferior) | 8B | 128k | GGUF, etc. | Llama 3.1 | Abierto |
@@ -71,7 +71,7 @@ La comparativa directa con otros modelos de 27B es limitada porque no hay datos 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, por lo que requiere aceptar condiciones adicionales del autor antes de su descarga.
+- Acceso restringido: el modelo es gated en Hugging Face, por lo que requiere aceptar condiciones adicionales del autor antes de su descarga.
 - Modelo experimental: con cero descargas y cero likes, no ha sido validado por la comunidad. Su comportamiento en producción es incierto.
 - Sesgos potenciales: al derivar de destilaciones de Claude 4.6 y de modelos de escritura creativa, puede presentar sesgos narrativos o estilísticos no deseados en aplicaciones formales.
 - Riesgo de alucinación: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo o con contextos muy largos.
@@ -81,7 +81,7 @@ La comparativa directa con otros modelos de 27B es limitada porque no hay datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH-mxfp4-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-WFH-mxfp4-mlx
 - Modelo base Brainwaves: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves
 - Variante 2M qx64: https://huggingface.co/nightmedia/Qwen3.8-27B-Brainwaves-2M-qx64-hi-mlx
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Formato | Licencia | Notas |
 |---|---|---|---|---|---|
 | m4gshm/Qwen2.5-Coder-1.5B-int8-sym | 1.5B | no disponible | OpenVINO IR int8 | Apache 2.0 | Exportación OpenVINO para hardware Intel |
-| Qwen/Qwen2.5-Coder-1.5B (base) | 1.5B | no disponible | safetensors | Apache 2.0 | Modelo original en formato HuggingFace |
+| Qwen/Qwen2.5-Coder-1.5B (base) | 1.5B | no disponible | safetensors | Apache 2.0 | Modelo original en formato Hugging Face |
 | Qwen/Qwen2.5-Coder-1.5B-Instruct-GPTQ-Int8 | 1.5B | no disponible | GPTQ int8 | Apache 2.0 | Variante cuantizada para TGI y GPUs |
 | Modelos de código de ~1-2B (p. ej. CodeLlama-1.3B, StarCoder2-3B) | 1.3B–3B | variable | safetensors/GGUF | variable | Alternativas de tamaño similar; rendimiento no comparable sin benchmarks |
 
@@ -82,6 +82,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: m4gshm/Qwen2.5-Coder-1.5B-int8-sym](https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-int8-sym)
+- [Hugging Face: m4gshm/Qwen2.5-Coder-1.5B-int8-sym](https://huggingface.co/m4gshm/Qwen2.5-Coder-1.5B-int8-sym)
 - [Modelo base: Qwen/Qwen2.5-Coder-1.5B](https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B)
 - [Variante GPTQ-Int8 en Azure AI Catalog](https://ai.azure.com/catalog/models/qwen-qwen2.5-coder-1.5b-instruct-gptq-int8)

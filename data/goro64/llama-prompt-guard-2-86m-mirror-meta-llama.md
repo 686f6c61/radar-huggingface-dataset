@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-Prompt-Guard-2-86M (este repo) | 278.810.882 | no disponible | Clasificacion de prompts maliciosos | Llama 4 Community License | HuggingFace, espejo de archivo |
-| meta-llama/Llama-Prompt-Guard-2-86M (upstream) | mismo payload | no disponible | Clasificacion de prompts maliciosos | Llama 4 Community License | HuggingFace, repositorio original |
+| Llama-Prompt-Guard-2-86M (este repo) | 278.810.882 | no disponible | Clasificacion de prompts maliciosos | Llama 4 Community License | Hugging Face, espejo de archivo |
+| meta-llama/Llama-Prompt-Guard-2-86M (upstream) | mismo payload | no disponible | Clasificacion de prompts maliciosos | Llama 4 Community License | Hugging Face, repositorio original |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion documentada con datos es frente al repositorio upstream, del que este es una copia exacta de pesos segun el manifiesto de integridad. No se dispone de informacion sobre otros clasificadores de seguridad de prompt en los datos proporcionados.

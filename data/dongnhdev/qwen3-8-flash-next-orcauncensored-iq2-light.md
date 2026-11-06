@@ -105,7 +105,7 @@ La diferencia clave entre el primer y el segundo modelo es el reempaquetado: se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dongnhdev/Qwen3.8-Flash-Next-OrcaUncensored-IQ2-Light
+- Modelo en Hugging Face: https://huggingface.co/dongnhdev/Qwen3.8-Flash-Next-OrcaUncensored-IQ2-Light
 - Modelo base (layout DS4-IQ2): https://huggingface.co/ivanfioravanti/Qwen3.8-Flash-Next-DS4-IQ2
 - Modelo base abliterado: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Repositorio del runtime ds4: no disponible en la informacion proporcionada

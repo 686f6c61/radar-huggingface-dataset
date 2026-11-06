@@ -113,7 +113,7 @@ El modelo supera a los tres comparadores en 10 de los 13 benchmarks reportados, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marafx2007/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
+- Repositorio Hugging Face: https://huggingface.co/marafx2007/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Texto de la licencia OpenMDW-1.1 en GitHub: https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1

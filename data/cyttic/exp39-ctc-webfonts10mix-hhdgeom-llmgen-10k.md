@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k`, publicado por el usuario cyttic en HuggingFace, es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) empaquetado en formato safetensors con un tamano de repositorio de 0,3 GB. El identificador del modelo sugiere un sistema de reconocimiento de texto (OCR) basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de fuentes web (`webfonts10mix`), con posible generacion sintetica de datos (`llmgen`) y un componente geometrico (`hhdgeom`), aunque la model card no confirma ninguno de estos extremos.
+El modelo `exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k`, publicado por el usuario cyttic en Hugging Face, es un checkpoint de 87.279.756 parámetros (aproximadamente 87,3 millones) empaquetado en formato safetensors con un tamano de repositorio de 0,3 GB. El identificador del modelo sugiere un sistema de reconocimiento de texto (OCR) basado en CTC (Connectionist Temporal Classification) entrenado sobre una mezcla de fuentes web (`webfonts10mix`), con posible generacion sintetica de datos (`llmgen`) y un componente geometrico (`hhdgeom`), aunque la model card no confirma ninguno de estos extremos.
 
-La model card publicada es una plantilla estandar de HuggingFace sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]". Esto significa que la unica informacion fiable disponible es la metadata del repositorio (tamano, formato, licencia MIT y la referencia al paper de Lacoste et al. sobre impacto ambiental, que es parte de la plantilla por defecto y no una cita real del autor).
+La model card publicada es una plantilla estandar de Hugging Face sin rellenar: todos los campos de descripcion, entrenamiento, evaluacion y uso previsto aparecen como "[More Information Needed]". Esto significa que la unica informacion fiable disponible es la metadata del repositorio (tamano, formato, licencia MIT y la referencia al paper de Lacoste et al. sobre impacto ambiental, que es parte de la plantilla por defecto y no una cita real del autor).
 
 Por su volumen de parametros y su licencia permisiva, el modelo encaja en la categoria de modelos ligeros aptos para inferencia en CPU o GPUs de consumo, pero la ausencia de documentacion impide confirmar arquitectura, tarea concreta, idiomas o rendimiento. Cualquier evaluacion practica requeriria inspeccionar los pesos directamente.
 
@@ -23,7 +23,7 @@ Por su volumen de parametros y su licencia permisiva, el modelo encaja en la cat
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion (RLHF, DPO) empleadas. La model card es la plantilla por defecto de HuggingFace y no contiene ninguna seccion completada.
+No hay informacion publicada sobre la arquitectura interna, los datos de entrenamiento, el numero de tokens procesados ni las tecnicas de alineacion (RLHF, DPO) empleadas. La model card es la plantilla por defecto de Hugging Face y no contiene ninguna seccion completada.
 
 El identificador del repositorio (`exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k`) es la unica pista disponible: el sufijo `ctc` apunta a un cabezal de clasificacion temporal conexionista, tipico de tareas de reconocimiento de secuencias como OCR o reconocimiento de voz; `webfonts10mix` sugiere un dataset de fuentes tipograficas web combinadas; `llmgen` podria indicar generacion de datos sinteticos mediante un modelo de lenguaje; y `10k` podria referirse a 10.000 pasos o muestras de entrenamiento. Ninguno de estos extremos esta verificado en la documentacion oficial.
 
@@ -74,7 +74,7 @@ No disponible. La ausencia de informacion sobre la tarea real del modelo impide 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k
 - Paper citado en la plantilla (impacto ambiental, no especifico del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados al modelo en la informacion disponible.

@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Melody1437-26B-A4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Melody1437-26B-A4B-i1-GGUF
 - Modelo base: https://huggingface.co/ReadyArt/Melody1437-26B-A4B
 - Repositorio estatico de quants: https://huggingface.co/mradermacher/Melody1437-26B-A4B-GGUF
 - Proyecto Gemma 4 Abliteration: https://github.com/TrevorS/gemma-4-abliteration

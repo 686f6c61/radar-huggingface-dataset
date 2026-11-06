@@ -116,7 +116,7 @@ No se dispone de datos de benchmarks ni de evaluaciones comparativas que permita
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/qwen3-32b-commitments-v2-sdf-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/qwen3-32b-commitments-v2-sdf-GGUF
 - Modelo base: https://huggingface.co/joshycodes/qwen3-32b-commitments-v2-sdf
 - Página de overview del cuantizador para este modelo: https://hf.tst.eu/model#qwen3-32b-commitments-v2-sdf-GGUF
 - Peticiones y preguntas frecuentes de mradermacher: https://huggingface.co/mradermacher/model_requests

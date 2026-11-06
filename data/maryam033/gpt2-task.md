@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Maryam033/gpt2-task` es un modelo de generación de texto publicado en HuggingFace por el usuario Maryam033. Se trata de un checkpoint basado en la arquitectura GPT-2, con 124.439.808 parámetros (aproximadamente 124 millones), lo que corresponde al tamaño del GPT-2 base original. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors compatibles con la librería `transformers`.
+`Maryam033/gpt2-task` es un modelo de generación de texto publicado en Hugging Face por el usuario Maryam033. Se trata de un checkpoint basado en la arquitectura GPT-2, con 124.439.808 parámetros (aproximadamente 124 millones), lo que corresponde al tamaño del GPT-2 base original. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors compatibles con la librería `transformers`.
 
-La model card es la plantilla autogenerada por HuggingFace y no aporta información sustantiva: no se documentan datos de entrenamiento, licencia, idiomas ni procedencia del ajuste. El nombre "task" sugiere un fine-tuning para una tarea concreta, pero no se especifica cuál. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026.
+La model card es la plantilla autogenerada por Hugging Face y no aporta información sustantiva: no se documentan datos de entrenamiento, licencia, idiomas ni procedencia del ajuste. El nombre "task" sugiere un fine-tuning para una tarea concreta, pero no se especifica cuál. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en noviembre de 2026.
 
 Por su tamaño y arquitectura, es relevante únicamente como ejercicio académico o como base para experimentación con GPT-2 a pequeña escala. No debe considerarse un modelo listo para producción sin una evaluación previa por parte del usuario, dado que no hay documentación técnica ni resultados de evaluación publicados.
 
@@ -43,7 +43,7 @@ No hay información sobre el proceso de entrenamiento: ni volumen de tokens, ni 
 - Generación de texto creativo a pequeña escala: cuentos, titulares o completados cortos, siempre con revisión humana y asumiendo la calidad limitada del GPT-2 base.
 - Fine-tuning adicional por parte del usuario: el checkpoint puede servir como inicialización para tareas específicas del dominio propio, aunque sin garantías sobre la calidad del ajuste previo.
 - Docencia y demostraciones de arquitecturas transformer: útil para ilustrar el funcionamiento de un decoder-only en cursos o talleres.
-- Evaluación comparativa de checkpoints comunitarios: como ejemplo de modelo sin documentación, para estudiar prácticas de publicación en HuggingFace.
+- Evaluación comparativa de checkpoints comunitarios: como ejemplo de modelo sin documentación, para estudiar prácticas de publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -61,12 +61,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Maryam033/gpt2-task | 124,4 M | no disponible | no disponible | HuggingFace |
-| openai-community/gpt2 | 124,4 M | 1024 tokens | MIT | HuggingFace |
-| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| Maryam033/gpt2-task | 124,4 M | no disponible | no disponible | Hugging Face |
+| openai-community/gpt2 | 124,4 M | 1024 tokens | MIT | Hugging Face |
+| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
-El modelo es directamente comparable con el GPT-2 base original en tamaño y arquitectura, pero carece de la documentación, licencia clara y resultados de evaluación que sí ofrecen los checkpoints oficiales de OpenAI en HuggingFace.
+El modelo es directamente comparable con el GPT-2 base original en tamaño y arquitectura, pero carece de la documentación, licencia clara y resultados de evaluación que sí ofrecen los checkpoints oficiales de OpenAI en Hugging Face.
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ El modelo es directamente comparable con el GPT-2 base original en tamaño y arq
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Maryam033/gpt2-task
+- Hugging Face: https://huggingface.co/Maryam033/gpt2-task
 - Paper de GPT-2 (citado en los tags): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la model card: https://mlco2.github.io/impact#compute
 - Paper de Lacoste et al. (2019) citado en la model card: https://arxiv.org/abs/1910.09700

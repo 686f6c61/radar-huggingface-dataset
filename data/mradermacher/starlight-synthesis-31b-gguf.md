@@ -86,7 +86,7 @@ No disponible. No se dispone de informacion sobre la arquitectura, licencia ni r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Starlight-Synthesis-31B (GGUF) | ~30,7B | no disponible | no disponible | HuggingFace |
+| Starlight-Synthesis-31B (GGUF) | ~30,7B | no disponible | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No disponible. No se dispone de informacion sobre la arquitectura, licencia ni r
 - Idiomas no declarados: se desconoce si el modelo soporta castellano con fluidez. La etiqueta `conversational` no especifica idioma.
 - Longitud de contexto desconocida: no se puede planificar el uso en tareas que requieran ventanas largas sin consultar el modelo base.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
-- Fecha de creacion inusual: el repositorio aparece fechado en 2026-09-10, dato que conviene verificar directamente en HuggingFace antes de citarlo.
+- Fecha de creacion inusual: el repositorio aparece fechado en 2026-09-10, dato que conviene verificar directamente en Hugging Face antes de citarlo.
 - Resultados de busqueda no relevantes: las consultas web devolvieron unicamente paginas de empresas siderurgicas checas (AZ Steeltrading, AZ STEEL), sin ninguna relacion con el modelo.
 
 ## Enlaces

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-sn92-gen-g1 es un modelo de lenguaje de 31.273.088.876 parametros (aproximadamente 31,3 mil millones) publicado por el usuario gurujustin en HuggingFace. Se trata de un merge de modelos: segun los metadatos del repositorio, combina los pesos de google/gemma-4-31B-it con cuatro derivados del mismo (PelaAI/KnowLine-31B-Gen1, sthanika-ai/Sieve-31B-v3, tattrongvu/Jeffan-31b-1710 y turion-ai/turion-jev-31b). La etiqueta "gemma4" y el sufijo "31B" de todos los modelos base apuntan a una arquitectura de la familia Gemma 4 de Google con 31 mil millones de parametros.
+sn92-gen-g1 es un modelo de lenguaje de 31.273.088.876 parametros (aproximadamente 31,3 mil millones) publicado por el usuario gurujustin en Hugging Face. Se trata de un merge de modelos: segun los metadatos del repositorio, combina los pesos de google/gemma-4-31B-it con cuatro derivados del mismo (PelaAI/KnowLine-31B-Gen1, sthanika-ai/Sieve-31B-v3, tattrongvu/Jeffan-31b-1710 y turion-ai/turion-jev-31b). La etiqueta "gemma4" y el sufijo "31B" de todos los modelos base apuntan a una arquitectura de la familia Gemma 4 de Google con 31 mil millones de parametros.
 
-El modelo se distribuye en formato safetensors con un tamano de repositorio de 62,6 GB, lo que es coherente con pesos en precision bf16/fp16 para 31,3B de parametros. La licencia declarada es Apache 2.0, aunque el acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El modelo se distribuye en formato safetensors con un tamano de repositorio de 62,6 GB, lo que es coherente con pesos en precision bf16/fp16 para 31,3B de parametros. La licencia declarada es Apache 2.0, aunque el acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de este modelo es limitada y fundamentalmente experimental: cuenta con 2 descargas y 0 likes en el momento de la consulta, no declara pipeline ni idiomas soportados, y no se ha publicado documentacion tecnica, ficha de modelo ni resultados de evaluacion. Debe tratarse como un artefacto de merge comunitario sin validacion publica.
 
@@ -20,7 +20,7 @@ La relevancia de este modelo es limitada y fundamentalmente experimental: cuenta
 | Idiomas soportados | no disponible |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 62,6 GB |
 
 ## Arquitectura y entrenamiento
@@ -78,14 +78,14 @@ La comparacion con alternativas de la misma categoria (por ejemplo, Qwen 2.5-32B
 - Riesgo elevado de alucinacion y degradacion: los merges sin validacion pueden producir respuestas incoherentes o perder capacidades del modelo base; no hay evidencia de lo contrario.
 - Sesgos desconocidos: al no documentarse los datos de entrenamiento ni las modificaciones, no se pueden anticipar sesgos especificos.
 - Idiomas no declarados: no se garantiza soporte de castellano ni de otros idiomas distintos del ingles heredado del base.
-- Acceso restringido: el gate de HuggingFace anade un paso burocratico y puede limitar el uso en pipelines automatizados.
+- Acceso restringido: el gate de Hugging Face anade un paso burocratico y puede limitar el uso en pipelines automatizados.
 - Licencia: aunque se declara Apache 2.0, los modelos base (Gemma 4) pueden estar sujetos a terminos adicionales de Google; conviene verificar la compatibilidad antes de uso comercial.
 - Sin cuantizaciones oficiales: no hay GGUF ni AWQ/GPTQ publicados, lo que complica el despliegue en hardware consumer.
 - Madurez: 2 descargas y 0 likes indican que el modelo no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gurujustin/sn92-gen-g1
+- Hugging Face: https://huggingface.co/gurujustin/sn92-gen-g1
 - Modelo base principal: https://huggingface.co/google/gemma-4-31B-it
 - Modelo fusionado: https://huggingface.co/PelaAI/KnowLine-31B-Gen1
 - Modelo fusionado: https://huggingface.co/sthanika-ai/Sieve-31B-v3

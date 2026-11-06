@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto / tasa | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| student-v6 | 3,18 M (adaptador) + backbone congelado | 6,25 Hz | SER + condicionamiento TTS | Apache-2.0 (pesos) | HuggingFace |
-| emotion2vec_plus_base | no disponible | no disponible | SER (representaciones auto-supervisadas) | Apache-2.0 | HuggingFace / FunASR |
-| student-v5 | 3,18 M (adaptador) | 6,25 Hz | SER + condicionamiento TTS | Apache-2.0 (pesos) | HuggingFace |
+| student-v6 | 3,18 M (adaptador) + backbone congelado | 6,25 Hz | SER + condicionamiento TTS | Apache-2.0 (pesos) | Hugging Face |
+| emotion2vec_plus_base | no disponible | no disponible | SER (representaciones auto-supervisadas) | Apache-2.0 | Hugging Face / FunASR |
+| student-v5 | 3,18 M (adaptador) | 6,25 Hz | SER + condicionamiento TTS | Apache-2.0 (pesos) | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otras alternativas de SER en la información proporcionada.
 
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otras alternativas de SER 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amir0907/student-v6
+- Hugging Face: https://huggingface.co/amir0907/student-v6
 - Versión anterior v5: https://huggingface.co/amir0907/student-v5
 - Versión original v1: https://huggingface.co/amir0907/student
 - Backbone emotion2vec_plus_base (FunASR): no disponible enlace directo en la información proporcionada

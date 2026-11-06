@@ -77,7 +77,7 @@ No se puede afirmar que este fine-tuning supere o iguale a estos modelos, ya que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.104953-ft4.44
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-dragon-STEER0.104953-ft4.44
 - Modelo base (allenai/Olmo-3-7B-Instruct): https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Página de OLMo en AllenAI: https://allenai.org/olmo
 - Paper de OLMo (arXiv): https://arxiv.org/abs/2402.00838

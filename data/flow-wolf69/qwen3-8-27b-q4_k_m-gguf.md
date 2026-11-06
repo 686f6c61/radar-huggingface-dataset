@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Flow-wolF69/Qwen3.8-27B-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Flow-wolF69/Qwen3.8-27B-Q4_K_M-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de Cloudflare sobre Qwen3.8-27B: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/
 - Repositorio alternativo con la misma cuantización: https://huggingface.co/Abiray/Qwen3.8-27B-Q4_K_M-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio_cls_1016 es un modelo de clasificación de audio publicado por el usuario ryusunghwan en HuggingFace. Se trata de un ajuste fino supervisado (fine-tuning) del modelo preentrenado facebook/wav2vec2-xls-r-300m, un codificador de representaciones del habla basado en la arquitectura wav2vec 2.0. El repositorio contiene 315.704.718 parámetros en formato safetensors, ocupa 1,3 GB y se distribuye bajo licencia Apache-2.0.
+audio_cls_1016 es un modelo de clasificación de audio publicado por el usuario ryusunghwan en Hugging Face. Se trata de un ajuste fino supervisado (fine-tuning) del modelo preentrenado facebook/wav2vec2-xls-r-300m, un codificador de representaciones del habla basado en la arquitectura wav2vec 2.0. El repositorio contiene 315.704.718 parámetros en formato safetensors, ocupa 1,3 GB y se distribuye bajo licencia Apache-2.0.
 
 El modelo se entrenó con la librería Transformers (versión 5.18.0) y PyTorch 2.11.0, durante 10 épocas con un total de 150 pasos de optimización, learning rate de 1e-4, batch efectivo de 32 (batch 8 con 4 pasos de acumulación de gradiente) y precisión mixta nativa AMP. El conjunto de datos de entrenamiento no está documentado en la model card ("unknown dataset"), igual que el número de clases, las etiquetas objetivo y los idiomas cubiertos.
 
@@ -88,17 +88,17 @@ Estimaciones derivadas del número de parámetros (315,7 M), sin datos de latenc
 - VRAM recomendada para inferencia real: entre 2 y 4 GB en FP16 para audios de pocos segundos, y entre 4 y 8 GB en FP32, contando activaciones y el búfer de audio de entrada. Con audios largos o procesamiento por lotes, el consumo crece de forma aproximadamente lineal con la duración.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM. Una NVIDIA T4 (16 GB), una RTX 3060 (12 GB) o una RTX 4090 (24 GB) son más que suficientes. No es necesario recurrir a A100 ni H100.
 - Compatibilidad con GPU de consumo: sí. Cabe en tarjetas de gama media y baja con 4 GB o más, e incluso en CPU para audios cortos, con mayor latencia.
-- Opciones de despliegue: la vía documentada es la librería Transformers (`pipeline("audio-classification")`), que cubre tanto CPU como GPU y se puede exportar a TorchScript u ONNX para servir en producción. El repositorio está marcado como `endpoints_compatible` en HuggingFace. El soporte en vLLM, TGI o llama.cpp no se menciona en la información disponible; llama.cpp no soporta de forma general modelos wav2vec 2.0 de clasificación.
+- Opciones de despliegue: la vía documentada es la librería Transformers (`pipeline("audio-classification")`), que cubre tanto CPU como GPU y se puede exportar a TorchScript u ONNX para servir en producción. El repositorio está marcado como `endpoints_compatible` en Hugging Face. El soporte en vLLM, TGI o llama.cpp no se menciona en la información disponible; llama.cpp no soporta de forma general modelos wav2vec 2.0 de clasificación.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| ryusunghwan/audio_cls_1016 | 315,7 M | Clasificación de audio | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Exactitud 0,0924 |
-| facebook/wav2vec2-xls-r-300m (modelo base) | ~315 M | Representaciones del habla preentrenadas (autosupervisado) | No disponible en la información proporcionada | HuggingFace | No disponible |
-| kimteemo/audio_cls_1016 | No disponible | Clasificación de audio | No disponible | HuggingFace | No disponible; se describe como ajuste fino de Kkonjeong/wav2vec2-base-korean |
-| facebook/wav2vec2-base | ~95 M (dato público de la familia wav2vec 2.0, no incluido en la información proporcionada) | Representaciones del habla preentrenadas | No disponible | HuggingFace | No disponible |
+| ryusunghwan/audio_cls_1016 | 315,7 M | Clasificación de audio | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Exactitud 0,0924 |
+| facebook/wav2vec2-xls-r-300m (modelo base) | ~315 M | Representaciones del habla preentrenadas (autosupervisado) | No disponible en la información proporcionada | Hugging Face | No disponible |
+| kimteemo/audio_cls_1016 | No disponible | Clasificación de audio | No disponible | Hugging Face | No disponible; se describe como ajuste fino de Kkonjeong/wav2vec2-base-korean |
+| facebook/wav2vec2-base | ~95 M (dato público de la familia wav2vec 2.0, no incluido en la información proporcionada) | Representaciones del habla preentrenadas | No disponible | Hugging Face | No disponible |
 
 No se dispone de comparativas de rendimiento entre estos modelos en la información proporcionada. La única alternativa con nombre y procedencia confirmadas es facebook/wav2vec2-xls-r-300m, del que este modelo deriva directamente, por lo que la comparación relevante es contra el propio punto de partida del ajuste fino.
 
@@ -117,7 +117,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryusunghwan/audio_cls_1016
+- Modelo en Hugging Face: https://huggingface.co/ryusunghwan/audio_cls_1016
 - Modelo base: https://huggingface.co/facebook/wav2vec2-xls-r-300m
 - Repositorio homónimo de otro autor (referencia encontrada en la búsqueda web, no relacionada directamente): https://huggingface.co/kimteemo/audio_cls_1016
 - Repositorio de referencia sobre IA de audio (papers, modelos abiertos, benchmarks y datasets): https://github.com/BinWang28/audio-ai-hub

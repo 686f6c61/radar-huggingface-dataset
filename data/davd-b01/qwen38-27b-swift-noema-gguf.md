@@ -89,7 +89,7 @@ No hay datos de benchmarks ni especificaciones de terceros en la información pr
 
 | Artefacto | Parámetros | Contexto | Criba de utilidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repo (GGUF IQ3_S + MTP) | 27,3B | 131.072 por defecto (probado hasta 262.144) | 3/8 | No disponible | Público en HuggingFace, 0 descargas |
+| Este repo (GGUF IQ3_S + MTP) | 27,3B | 131.072 por defecto (probado hasta 262.144) | 3/8 | No disponible | Público en Hugging Face, 0 descargas |
 | Piloto BF16 de referencia | No disponible | No disponible | 8/8 | No disponible | Referenciado en la model card |
 | Checkpoint público original (TA) | No disponible | No disponible | No medido | Heredada, en `reproduction.json` | Público, sin cambios según el autor |
 | Motor alternativo ("Nathan engine") | No disponible | No disponible | No medido | No disponible | Construcción local del autor |
@@ -113,9 +113,9 @@ Frente a modelos de la misma categoría (27B densos en GGUF), no se aportan cifr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Davd-b01/qwen38-27b-swift-noema-GGUF
-- `reproduction.json` (licencias de padres, donante y heredadas): referenciado en la model card, dentro del repositorio de HuggingFace
-- Carpeta `adapter/` (adaptador pequeño seleccionado): referenciada en la model card, dentro del repositorio de HuggingFace
+- Hugging Face: https://huggingface.co/Davd-b01/qwen38-27b-swift-noema-GGUF
+- `reproduction.json` (licencias de padres, donante y heredadas): referenciado en la model card, dentro del repositorio de Hugging Face
+- Carpeta `adapter/` (adaptador pequeño seleccionado): referenciada en la model card, dentro del repositorio de Hugging Face
 - Resúmenes públicos de resultados de medición (capas y payloads serializados): mencionados en la model card sin URL disponible
 - llama.cpp, revisión `547208dca250ceb3e4c8615598d043f2b602a527`: referenciada como fuente del build local, sin URL explícita en la información disponible
 - Documentación de Qwen: no disponible en la información proporcionada

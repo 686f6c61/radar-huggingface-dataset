@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jerrybro/flash-next-zero-download-runtime` no es un modelo de pesos, sino un paquete de documentación y evidencia de benchmarks publicado por el usuario Jerrybro en HuggingFace el 2 de octubre de 2026. Describe y mide un runtime de inferencia local denominado Flash Next EXL3 2.50, que reutiliza un checkpoint ya cuantizado de terceros (`ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw`) y lo ejecuta con ExLlamaV3 sobre una arquitectura de mezcla de expertos (MoE) con reparto de expertos entre GPU y CPU. El problema que aborda es el despliegue de un MoE de contexto muy largo en hardware de consumo: el host de referencia es un Ryzen 9 9950X3D con una RTX 5090 (32.607 MiB reportados) y 64 GiB de RAM.
+`Jerrybro/flash-next-zero-download-runtime` no es un modelo de pesos, sino un paquete de documentación y evidencia de benchmarks publicado por el usuario Jerrybro en Hugging Face el 2 de octubre de 2026. Describe y mide un runtime de inferencia local denominado Flash Next EXL3 2.50, que reutiliza un checkpoint ya cuantizado de terceros (`ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw`) y lo ejecuta con ExLlamaV3 sobre una arquitectura de mezcla de expertos (MoE) con reparto de expertos entre GPU y CPU. El problema que aborda es el despliegue de un MoE de contexto muy largo en hardware de consumo: el host de referencia es un Ryzen 9 9950X3D con una RTX 5090 (32.607 MiB reportados) y 64 GiB de RAM.
 
 El interés técnico del paquete está en sus cifras de rendimiento medido y en su política de reproducibilidad: incluye 15 comparaciones de velocidad emparejadas, resultados de calidad y un catálogo de 71 documentos fuente inmutables con SHA-256. El modelo subyacente es un MoE de 48 capas con 512 expertos por capa, de los cuales 168 residen en GPU y 344 se gestionan en CPU, con 10 expertos enrutados activos por token. La ventana de contexto declarada en la comprobación de servicio es de 262.144 tokens.
 
@@ -111,7 +111,7 @@ Comparativa con alternativas de la misma categoria (por ejemplo, otros MoE cuant
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jerrybro/flash-next-zero-download-runtime
+- Repositorio en Hugging Face: https://huggingface.co/Jerrybro/flash-next-zero-download-runtime
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Checkpoint intermedio: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored
 - Checkpoint EXL3 reutilizado: https://huggingface.co/ghost-actual/Qwen3.8-Flash-Next-Abliterated-EXL3-2.50bpw

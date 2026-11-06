@@ -85,7 +85,7 @@ La comparativa con otros adaptadores de simplificación de texto (por ejemplo, a
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/thisisandreeeee/simple-llm-lora
+- Repositorio de Hugging Face: https://huggingface.co/thisisandreeeee/simple-llm-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/thisisandreeeee/simple-llm-sft
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Código fuente del proyecto (GitHub): https://github.com/thisisandreeeee/simple-llm

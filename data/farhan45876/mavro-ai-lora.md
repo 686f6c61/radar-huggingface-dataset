@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Farhan45876/mavro-ai-lora
+- Repositorio Hugging Face: https://huggingface.co/Farhan45876/mavro-ai-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Perfil del autor: https://huggingface.co/Farhan45876

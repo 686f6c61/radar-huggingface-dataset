@@ -91,7 +91,7 @@ La comparacion es estructural: este repositorio no aporta pesos autonomos ni ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-gpt-oss-120b
+- Repositorio Hugging Face: https://huggingface.co/hewittlab/monitor_cot_for_hack-reward_description-length-explicit_intent-gpt-oss-120b
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Dataset de entrenamiento: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length
 - Subconjunto de datos para gpt-oss-120b: https://huggingface.co/datasets/hewittlab/monitor_cot_for_hack-length/tree/main/gpt-oss-120b

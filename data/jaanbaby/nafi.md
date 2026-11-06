@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nafi es un modelo publicado en HuggingFace por el usuario Jaanbaby bajo el identificador `Jaanbaby/Nafi`. La informacion disponible en la ficha de HuggingFace es extremadamente limitada: el repositorio tiene un tamano de 0.0 GB, no declara pipeline, no especifica licencia, no indica idiomas soportados y no cuenta con descargas registradas en el momento de la consulta. El unico tag presente es `region:us`, que hace referencia a la region de almacenamiento del repositorio y no aporta informacion sobre las capacidades del modelo.
+Nafi es un modelo publicado en Hugging Face por el usuario Jaanbaby bajo el identificador `Jaanbaby/Nafi`. La informacion disponible en la ficha de Hugging Face es extremadamente limitada: el repositorio tiene un tamano de 0.0 GB, no declara pipeline, no especifica licencia, no indica idiomas soportados y no cuenta con descargas registradas en el momento de la consulta. El unico tag presente es `region:us`, que hace referencia a la region de almacenamiento del repositorio y no aporta informacion sobre las capacidades del modelo.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, el proceso de entrenamiento ni los datos utilizados. Tampoco se han publicado resultados de benchmarks ni documentacion tecnica asociada. El repositorio fue creado y actualizado el 2 de noviembre de 2026, sin actualizaciones posteriores registradas.
 
@@ -67,5 +67,5 @@ No disponible. No es posible establecer una comparativa con otros modelos sin co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jaanbaby/Nafi
+- Repositorio en Hugging Face: https://huggingface.co/Jaanbaby/Nafi
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la informacion disponible.

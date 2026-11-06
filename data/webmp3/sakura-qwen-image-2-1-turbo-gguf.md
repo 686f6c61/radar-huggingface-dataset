@@ -71,10 +71,10 @@ Datos de rendimiento medidos por el autor: aproximadamente 12-15 s por imagen a 
 
 | Modelo | Tipo | Parametros | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakura-Qwen-Image-2.1-Turbo-GGUF | Cuantizacion GGUF del DiT | ~7,1 B | Q8_0, Q5_K, Q4_K | qwen-research (no comercial) | HuggingFace |
-| DogukanUrker/Qwen-Image-2.1-Turbo-GGUF | Cuantizacion GGUF del DiT | ~7,1 B | Q8_0 (tensores identicos) | qwen-research | HuggingFace |
-| Qwen/Qwen-Image-2.1-Turbo | Modelo original en BF16 | ~7,1 B | BF16 | qwen-research | HuggingFace |
-| Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF | Cuantizacion con codificadores de texto abliterated | ~7,1 B | Q5_K, Q4_K (+ encoder 8bit y 4bit) | qwen-research | HuggingFace |
+| Sakura-Qwen-Image-2.1-Turbo-GGUF | Cuantizacion GGUF del DiT | ~7,1 B | Q8_0, Q5_K, Q4_K | qwen-research (no comercial) | Hugging Face |
+| DogukanUrker/Qwen-Image-2.1-Turbo-GGUF | Cuantizacion GGUF del DiT | ~7,1 B | Q8_0 (tensores identicos) | qwen-research | Hugging Face |
+| Qwen/Qwen-Image-2.1-Turbo | Modelo original en BF16 | ~7,1 B | BF16 | qwen-research | Hugging Face |
+| Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF | Cuantizacion con codificadores de texto abliterated | ~7,1 B | Q5_K, Q4_K (+ encoder 8bit y 4bit) | qwen-research | Hugging Face |
 
 Las cuatro opciones comparten el mismo componente de imagen; la diferencia principal entre ellas es el nivel de cuantizacion y, en la variante Uncensored, la sustitucion del codificador de texto por versiones abliteradas. No se dispone de comparativas de calidad frente a otros generadores de imagen (Flux, Stable Diffusion) en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ Las cuatro opciones comparten el mismo componente de imagen; la diferencia princ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF
+- Modelo en Hugging Face: https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF
 - Version sin censura (codificadores abliterated): https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Codificador de texto y VAE oficiales (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1

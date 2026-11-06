@@ -81,7 +81,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shoumenchougou/RWKV7-G1l-7.2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/shoumenchougou/RWKV7-G1l-7.2B-GGUF
 - Modelo base: https://huggingface.co/BlinkDL/rwkv7-g1
 - Checkpoint original G1l: https://huggingface.co/BlinkDL/rwkv7-g1/blob/11e3c50128e479898eee79c48831a95cf3e21d91/rwkv7-g1l-7.2b-20261031-ctx34304.pth
 - Paper RWKV-7 (arXiv:2503.14456): https://arxiv.org/abs/2503.14456v2

@@ -105,7 +105,7 @@ Speck1-140M se diferencia por su arquitectura híbrida convolución-atención y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/specklabs/Speck1-140M
+- Modelo en Hugging Face: https://huggingface.co/specklabs/Speck1-140M
 - Dataset de evaluación BananaMind Base Bench 1.1: https://huggingface.co/datasets/BananaMind/BananaMind-Base-Bench-1.1
 - Dataset Ultra-FineWeb: https://huggingface.co/datasets/openbmb/Ultra-FineWeb
 - Dataset DCLM Baseline 1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0-parquet

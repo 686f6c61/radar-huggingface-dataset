@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rope_gpt2_base10_allops_seed1_bs1024 | ~45-50 M (estimado, no confirmado) | no disponible | Aritmética 0-999 con embedding Base10 | no disponible | HuggingFace (0 descargas) |
+| rope_gpt2_base10_allops_seed1_bs1024 | ~45-50 M (estimado, no confirmado) | no disponible | Aritmética 0-999 con embedding Base10 | no disponible | Hugging Face (0 descargas) |
 | GPT-2 small original | 124 M | 1024 tokens | Lenguaje general | MIT (segun publicacion de OpenAI) | Ampliamente disponible |
 | Modelos aritméticos tipo "calculator" (p. ej. experimentos con tokenización de dígitos) | variable | variable | Aritmética | variable | Repositorios de investigación |
 
@@ -74,10 +74,10 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 - Sin información sobre sesgos, alucinación o robustez: la model card no documenta evaluaciones de seguridad ni de calidad.
 - Contexto y tokenizador no documentados: se desconoce la longitud máxima de secuencia y cómo se serializan las operaciones en la entrada.
 - Repositorio de 18,6 GB con múltiples snapshots: el checkpoint efectivo es una fracción del tamaño total, lo que puede confundir al descargar.
-- Cero descargas y cero likes en HuggingFace: no hay evidencia de uso o validación por parte de la comunidad.
+- Cero descargas y cero likes en Hugging Face: no hay evidencia de uso o validación por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aswath220/rope_gpt2_base10_allops_seed1_bs1024
+- Modelo en Hugging Face: https://huggingface.co/Aswath220/rope_gpt2_base10_allops_seed1_bs1024
 - Repositorio BitTokens (referenciado en la model card, commit `2a84bb1`, ficheros `networks/rope_gpt2.py` y `base10_embedding.py`): no disponible como URL en la información proporcionada
 - Paper, blog o demo: no disponibles

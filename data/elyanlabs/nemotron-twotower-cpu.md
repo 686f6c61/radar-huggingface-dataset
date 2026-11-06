@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Requiere GPU NVIDIA | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elyanlabs/nemotron-twotower-cpu (este repo) | ~60B totales (2 torres), 3B activos | no disponible | No (CPU, `x86_64`/`arm64`/`ppc64le`) | AGPL-3.0 (código); pesos bajo licencia NVIDIA | HuggingFace, GitHub, GitLab |
-| nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16 | 30B-A3B por torre | no disponible | Sí (kernels CUDA/Triton obligatorios) | Licencia NVIDIA | HuggingFace |
+| elyanlabs/nemotron-twotower-cpu (este repo) | ~60B totales (2 torres), 3B activos | no disponible | No (CPU, `x86_64`/`arm64`/`ppc64le`) | AGPL-3.0 (código); pesos bajo licencia NVIDIA | Hugging Face, GitHub, GitLab |
+| nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16 | 30B-A3B por torre | no disponible | Sí (kernels CUDA/Triton obligatorios) | Licencia NVIDIA | Hugging Face |
 | Ports de CPU de LM de difusión comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se conocen en la información proporcionada otros ports de CPU del mismo modelo ni alternativas equivalentes de difusión de lenguaje ejecutables sin CUDA con las que establecer una comparación cuantitativa.
@@ -88,7 +88,7 @@ No se conocen en la información proporcionada otros ports de CPU del mismo mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elyanlabs/nemotron-twotower-cpu
+- Hugging Face: https://huggingface.co/elyanlabs/nemotron-twotower-cpu
 - GitHub (fuente original): https://github.com/Scottcjn/nemotron-twotower-cpu
 - GitLab (historial completo): https://gitlab.com/elyan-labs/nemotron-twotower-cpu
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/Nemotron-Labs-TwoTower-30B-A3B-Base-BF16

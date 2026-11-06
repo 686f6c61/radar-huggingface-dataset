@@ -12,7 +12,7 @@ El interés de esta ficha radica en que documenta una variante de portabilidad d
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (tag `qwen3_5` en HuggingFace; detalles internos no disponibles) |
+| Arquitectura | Transformer (tag `qwen3_5` en Hugging Face; detalles internos no disponibles) |
 | Parámetros totales | 2.213.245.760 (aproximadamente 2,2B) |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible como spec oficial; el script de despliegue arranca con `--max-token-len 12000` |
@@ -26,7 +26,7 @@ El interés de esta ficha radica en que documenta una variante de portabilidad d
 
 ## Arquitectura y entrenamiento
 
-La model card no describe en detalle la arquitectura interna. El tag de HuggingFace (`qwen3_5`) sugiere una base derivada de la familia Qwen 3.5, y el checkpoint referenciado en los comandos de despliegue (`qwen35_2b_l2_triple_value_checkpoint-3000`) apunta a un modelo de 2B con una cabeza de valoración ("triple value") entrenada para puntuar la calidad de la salida OCR. El modelo se distribuye en BF16 con pesos en safetensors y un total de 2.213.245.760 parámetros.
+La model card no describe en detalle la arquitectura interna. El tag de Hugging Face (`qwen3_5`) sugiere una base derivada de la familia Qwen 3.5, y el checkpoint referenciado en los comandos de despliegue (`qwen35_2b_l2_triple_value_checkpoint-3000`) apunta a un modelo de 2B con una cabeza de valoración ("triple value") entrenada para puntuar la calidad de la salida OCR. El modelo se distribuye en BF16 con pesos en safetensors y un total de 2.213.245.760 parámetros.
 
 No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO. La model card menciona que el modelo forma parte de la serie MiniCPM-OCR, que incluye también a MiniCPM-OCR 1.0 (1,3B), orientado al parsing directo de documentos con soporte de texto, fórmulas y tablas complejas, y que alcanzó 93,68 en Real5-OmniDocBench. La innovación destacable de esta build es la integración con FlagOS: un stack multi-chip que permite ejecutar el mismo modelo sobre hardware muy diverso con una degradación de rendimiento mínima (98,7% del throughput nativo de NVIDIA en la build de Jev).
 
@@ -77,7 +77,7 @@ Además, la model card cita un AUROC global de 0,936 en JevOCRBench, frente a 0,
 
 | Modelo | Parámetros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev (esta ficha) | 2,2B | no disponible (script con 12.000 tokens) | AUROC 0,936 en JevOCRBench | Apache 2.0 | HuggingFace, ModelScope, imagen Docker FlagOS |
+| MiniCPM-OCR Jev (esta ficha) | 2,2B | no disponible (script con 12.000 tokens) | AUROC 0,936 en JevOCRBench | Apache 2.0 | Hugging Face, ModelScope, imagen Docker FlagOS |
 | MiniCPM-OCR 1.0 | 1,3B | no disponible | 93,68 en Real5-OmniDocBench | Apache 2.0 (según la serie) | Open source (ModelBest/OpenBMB) |
 | Qwen3.5-397B-A17B | 397B totales / 17B activos | no disponible | AUROC 0,938 en JevOCRBench | no disponible en la información | no disponible en la información |
 
@@ -96,7 +96,7 @@ La comparación con Qwen3.5-397B-A17B es especialmente relevante: Jev, con 2,2B 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-mthreads-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-mthreads-FlagOS
 - ModelScope (descarga de pesos): `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-mthreads-FlagOS`
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/jev-value-mthreads001-gems5.4.0-tree0.7.0-cx0.14.0-pluginnone-vllmnone-sglangnone-sglangflnone-cp310-pt210-musa52-x64-3.3.5-server:202610271059`
 - Repositorio de ModelBest/OpenBMB para MiniCPM-OCR: no disponible en la información proporcionada.

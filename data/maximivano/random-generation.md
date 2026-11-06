@@ -69,9 +69,9 @@ No hay modelos comparables disponibles en la información proporcionada. La arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maximivano/random-generation
+- Repositorio Hugging Face: https://huggingface.co/maximivano/random-generation
 - Guía de modelos generativos de GeeksforGeeks (referencia contextual): https://www.geeksforgeeks.org/blogs/generative-ai-models/
-- Modelos de generación de texto en HuggingFace: https://huggingface.co/models?filter=text-generation
+- Modelos de generación de texto en Hugging Face: https://huggingface.co/models?filter=text-generation
 - Documentación de modelos generativos de OpenAI: https://openai.com/index/generative-models/
 - Generador de imágenes de DeepAI: https://deepai.org/machine-learning-model/text2img
 - Conceptos de modelos generativos en GeeksforGeeks: https://www.geeksforgeeks.org/artificial-intelligence/exploring-generative-models-applications-examples-and-key-concepts/

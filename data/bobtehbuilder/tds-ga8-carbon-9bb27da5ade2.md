@@ -21,7 +21,7 @@ La relevancia de este repositorio reside únicamente en su propósito declarado 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo (transformer, MoE, SSM, etc.) ni sobre los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Los metadatos de HuggingFace indican que el entrenamiento fue un fine-tuning, realizado con 7 GPUs NVIDIA L40S durante 238,2 horas GPU, con un PUE de 1,56 en la región us-central1. El consumo energético total fue de 910,4004 kWh y las emisiones asociadas de 318,64 kg CO2eq, según la metodología CodeCarbon. No se menciona ninguna innovación técnica.
+No se dispone de información sobre la arquitectura del modelo (transformer, MoE, SSM, etc.) ni sobre los datos de entrenamiento (número de tokens, composición del dataset, técnicas de alineación como RLHF o DPO). Los metadatos de Hugging Face indican que el entrenamiento fue un fine-tuning, realizado con 7 GPUs NVIDIA L40S durante 238,2 horas GPU, con un PUE de 1,56 en la región us-central1. El consumo energético total fue de 910,4004 kWh y las emisiones asociadas de 318,64 kg CO2eq, según la metodología CodeCarbon. No se menciona ninguna innovación técnica.
 
 ## Capacidades
 
@@ -53,5 +53,5 @@ No disponible. No se ha identificado ningún modelo comparable al carecer de esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9bb27da5ade2
+- Repositorio en Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-9bb27da5ade2
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la búsqueda web.

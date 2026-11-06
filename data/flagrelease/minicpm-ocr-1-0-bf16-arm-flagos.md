@@ -84,7 +84,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR 1.0 (este) | 1,30B | No disponible | OCR y parsing documental | Apache 2.0 | HuggingFace (build FlagOS ARM) |
+| MiniCPM-OCR 1.0 (este) | 1,30B | No disponible | OCR y parsing documental | Apache 2.0 | Hugging Face (build FlagOS ARM) |
 | MiniCPM-OCR Jev | 2B | No disponible | Inspector de calidad OCR | No disponible en la informacion | Familia MiniCPM-OCR |
 | Qwen3.5-397B-A17B | 397B (17B activos, MoE) | No disponible | Modelo general | No disponible en la informacion | Referencia comparativa en JevOCRBench |
 
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos directos con otros modelos OCR
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-arm-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-1.0-BF16-arm-FlagOS
 - Repositorio FlagOS (referencia de la comunidad): no disponible en la informacion proporcionada
 - Paper de MiniCPM-OCR: no disponible en la informacion proporcionada
 - Blog de ModelBest/OpenBMB sobre MiniCPM-OCR: no disponible en la informacion proporcionada

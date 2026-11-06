@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento numér
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Thinking
+- Repositorio en Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-VL-32B-Thinking
 - Modelo base upstream: https://huggingface.co/Qwen/Qwen3-VL-32B-Thinking
 - Documentación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guía de instalación de Furiosa-LLM: https://developer.furiosa.ai/latest/en/get_started/furiosa_llm.html#installing-furiosa-llm

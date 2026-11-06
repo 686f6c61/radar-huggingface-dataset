@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-Coder-7B es un modelo de lenguaje causal especializado en código, perteneciente a la familia Qwen2.5-Coder (anteriormente conocida como CodeQwen) desarrollada por el equipo de Qwen de Alibaba. Esta réplica concreta, publicada por el usuario claytonln en HuggingFace, contiene los pesos del modelo base de 7,61 mil millones de parámetros en formato safetensors, derivado de un ajuste sobre Qwen2.5-7B. La familia Qwen2.5-Coder cubre seis tamaños (0,5B, 1,5B, 3B, 7B, 14B y 32B) y su versión de 32B se posicionó como uno de los code LLM open source de referencia, con capacidades comparables a GPT-4o en tareas de programación.
+Qwen2.5-Coder-7B es un modelo de lenguaje causal especializado en código, perteneciente a la familia Qwen2.5-Coder (anteriormente conocida como CodeQwen) desarrollada por el equipo de Qwen de Alibaba. Esta réplica concreta, publicada por el usuario claytonln en Hugging Face, contiene los pesos del modelo base de 7,61 mil millones de parámetros en formato safetensors, derivado de un ajuste sobre Qwen2.5-7B. La familia Qwen2.5-Coder cubre seis tamaños (0,5B, 1,5B, 3B, 7B, 14B y 32B) y su versión de 32B se posicionó como uno de los code LLM open source de referencia, con capacidades comparables a GPT-4o en tareas de programación.
 
 El modelo aborda el problema de la generación, razonamiento y reparación de código con un modelo de tamaño desplegable en una sola GPU de gama alta. Fue entrenado con 5,5 billones de tokens (trillions en inglés) que incluyen código fuente, datos de anclaje texto-código y datos sintéticos, lo que le permite mantener competencias sólidas en matemáticas y tareas generales además de en programación.
 
@@ -85,7 +85,7 @@ Qwen2.5-Coder-7B destaca frente a CodeLlama-7B por su contexto mucho mayor (128K
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta réplica): https://huggingface.co/claytonln/Qwen2.5-Coder-7B
+- Repositorio en Hugging Face (esta réplica): https://huggingface.co/claytonln/Qwen2.5-Coder-7B
 - Repositorio oficial del modelo: https://huggingface.co/Qwen/Qwen2.5-Coder-7B
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/
 - GitHub de Qwen2.5-Coder: https://github.com/QwenLM/Qwen2.5-Coder

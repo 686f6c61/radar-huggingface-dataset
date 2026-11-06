@@ -4,7 +4,7 @@
 
 El repositorio `IDONTCARELETMEIN/qwen3.5-9b` aloja una versión del modelo Qwen3.5-9B, un modelo multimodal de la familia Qwen desarrollado por Alibaba. Según los resultados de búsqueda, este modelo combina una arquitectura híbrida con capacidades de visión-lenguaje, razonamiento avanzado y tool calling nativo, orientado a flujos de trabajo agénticos. El modelo base soporta 201 idiomas y una ventana de contexto nativa de 262.000 tokens, lo que lo sitúa como una opción relevante para aplicaciones de razonamiento complejo y procesamiento de documentos extensos.
 
-El repositorio en HuggingFace, creado por el usuario IDONTCARELETMEIN en abril de 2026, contiene pesos en formato safetensors y GGUF, con un tamaño total de 958,5 GB que incluye múltiples versiones y cuantizaciones. Los parámetros totales del checkpoint safetensors son 8.953.803.264, aproximadamente 9 mil millones. La ficha del modelo en HuggingFace no proporciona licencia, idiomas ni pipeline, por lo que parte de la información técnica se ha extraído de fuentes externas que documentan el modelo base Qwen3.5-9B. No hay datos oficiales de rendimiento en benchmarks detallados, aunque una fuente independiente reporta un 83% de éxito en pruebas de fiabilidad.
+El repositorio en Hugging Face, creado por el usuario IDONTCARELETMEIN en abril de 2026, contiene pesos en formato safetensors y GGUF, con un tamaño total de 958,5 GB que incluye múltiples versiones y cuantizaciones. Los parámetros totales del checkpoint safetensors son 8.953.803.264, aproximadamente 9 mil millones. La ficha del modelo en Hugging Face no proporciona licencia, idiomas ni pipeline, por lo que parte de la información técnica se ha extraído de fuentes externas que documentan el modelo base Qwen3.5-9B. No hay datos oficiales de rendimiento en benchmarks detallados, aunque una fuente independiente reporta un 83% de éxito en pruebas de fiabilidad.
 
 ## Especificaciones técnicas
 
@@ -81,7 +81,7 @@ La ventaja principal del Qwen3.5-9B es su contexto de 262K tokens y su multimoda
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IDONTCARELETMEIN/qwen3.5-9b
+- Repositorio Hugging Face: https://huggingface.co/IDONTCARELETMEIN/qwen3.5-9b
 - Árbol de archivos del repositorio: https://huggingface.co/IDONTCARELETMEIN/qwen3.5-9b/tree/main
 - Documentación del modelo Qwen3.5-9B (Together AI): https://www.together.ai/models/qwen3-5-9b
 - Benchmarks del modelo (Benchable): https://benchable.ai/models/qwen/qwen3.5-9b-20260310

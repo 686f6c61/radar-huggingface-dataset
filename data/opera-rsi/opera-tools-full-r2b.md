@@ -106,7 +106,7 @@ No se han encontrado en la información proporcionada comparativas con restaurad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/opera-rsi/opera-tools-full-r2b
+- Modelo en Hugging Face: https://huggingface.co/opera-rsi/opera-tools-full-r2b
 - Planificador congelado utilizado para generar las cadenas: https://huggingface.co/opera-rsi/opera-planner-sft-r2
 - Código de reproducción (incluye `overlay/full_r2_chain.sh`, `overlay/train_smoke.sh`, `overlay/step0_eval.sh` y `Opera/tools/restormer/training/train_combined.py`): https://huggingface.co/opera-rsi/opera-repro-code
 - Ficheros dentro del repositorio: `models/<tool>_epoch_9.pth`, `metrics/validation_metrics.csv`, `metrics/metrics_history.json`, `plots/`, `configs/train_config.json`, `configs/val_config.json`, `mio_eval/`

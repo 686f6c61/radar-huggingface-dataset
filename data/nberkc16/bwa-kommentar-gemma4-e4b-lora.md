@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks del adaptador ni de modelos comparables dir
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nberkc16/bwa-kommentar-gemma4-e4b-lora
+- Hugging Face: https://huggingface.co/nberkc16/bwa-kommentar-gemma4-e4b-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Base cuantizada para entrenamiento: https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit
 - REGU AI (empresa desarrolladora): https://www.reguai.tech

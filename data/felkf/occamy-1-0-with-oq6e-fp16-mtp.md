@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Occamy-1.0 (este repositorio, 6 bits) | 35,95B / 3B | 262 144 tokens (arquitectura base) | Apache 2.0 | HuggingFace (redistribucion de comunidad, 0 descargas y 0 likes en el momento de la consulta) |
-| Qwen3.6-35B-A3B (modelo base) | 35B / 3B | 262 144 tokens | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen3-30B-A3B (familia MoE previa de Qwen) | 30,5B / 3,3B | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | HuggingFace |
+| Occamy-1.0 (este repositorio, 6 bits) | 35,95B / 3B | 262 144 tokens (arquitectura base) | Apache 2.0 | Hugging Face (redistribucion de comunidad, 0 descargas y 0 likes en el momento de la consulta) |
+| Qwen3.6-35B-A3B (modelo base) | 35B / 3B | 262 144 tokens | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen3-30B-A3B (familia MoE previa de Qwen) | 30,5B / 3,3B | 32 768 tokens nativos, ampliable con YaRN | Apache 2.0 | Hugging Face |
 
 Los datos de la fila de Qwen3-30B-A3B proceden de las especificaciones publicas de ese proyecto y no han sido verificados en la informacion proporcionada. No hay datos de benchmarks que permitan comparar rendimiento entre las tres opciones.
 

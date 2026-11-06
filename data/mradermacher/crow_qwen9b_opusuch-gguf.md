@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Crow_Qwen9B_OpusUCH-GGUF es la versión cuantizada en formato GGUF del modelo Babsie/Crow_Qwen9B_OpusUCH, un ajuste fino (fine-tune) de la familia Qwen con aproximadamente 8.950 millones de parámetros totales. La cuantización la ha realizado mradermacher, un perfil conocido en HuggingFace por publicar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base se ha entrenado sobre un conjunto de datasets orientados a escritura creativa, razonamiento, código y matemáticas, e incorpora la etiqueta "agent", lo que sugiere un enfoque hacia flujos de trabajo con agentes.
+Crow_Qwen9B_OpusUCH-GGUF es la versión cuantizada en formato GGUF del modelo Babsie/Crow_Qwen9B_OpusUCH, un ajuste fino (fine-tune) de la familia Qwen con aproximadamente 8.950 millones de parámetros totales. La cuantización la ha realizado mradermacher, un perfil conocido en Hugging Face por publicar versiones GGUF de modelos abiertos para su uso con llama.cpp y herramientas compatibles. El modelo base se ha entrenado sobre un conjunto de datasets orientados a escritura creativa, razonamiento, código y matemáticas, e incorpora la etiqueta "agent", lo que sugiere un enfoque hacia flujos de trabajo con agentes.
 
 El modelo resuelve el problema de desplegar un LLM de ~9B parámetros en hardware de consumo o en entornos con recursos limitados, ofreciendo cuantizaciones desde Q2_K (3,7 GB) hasta f16 (18 GB). La licencia Apache 2.0 permite uso comercial sin restricciones adicionales, lo que lo hace atractivo para integraciones en producto. El contexto no está documentado en la información disponible, aunque al derivar de Qwen es probable que soporte ventanas amplias, dato que no se puede confirmar.
 

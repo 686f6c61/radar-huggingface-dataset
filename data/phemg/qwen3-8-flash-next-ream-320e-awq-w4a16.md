@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `phemg/Qwen3.8-Flash-Next-REAM-320E-AWQ-W4A16` es un repositorio publicado en HuggingFace por el usuario `phemg`. En el momento de la consulta, la model card asociada esta practicamente vacia: su unico contenido es la declaracion de licencia `apache-2.0`, sin descripcion, sin ficha tecnica y sin documentacion de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
+El modelo identificado como `phemg/Qwen3.8-Flash-Next-REAM-320E-AWQ-W4A16` es un repositorio publicado en Hugging Face por el usuario `phemg`. En el momento de la consulta, la model card asociada esta practicamente vacia: su unico contenido es la declaracion de licencia `apache-2.0`, sin descripcion, sin ficha tecnica y sin documentacion de uso. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado.
 
 La unica informacion estructural disponible procede del propio identificador del repositorio, que sugiere una variante de la familia Qwen con mezcla de expertos (el sufijo `320E` podria referirse al numero de expertos), un supuesto modo rapido o destilado (`Flash-Next`), una tecnica o arquitectura denominada `REAM` y una cuantizacion `AWQ` con precision `W4A16` (pesos de 4 bits, activaciones de 16 bits). Ninguno de estos extremos esta confirmado por documentacion del autor, por lo que deben tratarse como inferencias no verificadas y no como especificaciones.
 
@@ -81,7 +81,7 @@ No disponible. No se ha podido identificar el modelo base ni verificar la existe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/phemg/Qwen3.8-Flash-Next-REAM-320E-AWQ-W4A16
+- Repositorio en Hugging Face: https://huggingface.co/phemg/Qwen3.8-Flash-Next-REAM-320E-AWQ-W4A16
 - Paper o informe tecnico: no disponible.
 - Repositorio de codigo: no disponible.
 - Demostracion o espacio interactivo: no disponible.

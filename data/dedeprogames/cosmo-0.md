@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cosmo.0 es un modelo de lenguaje de arquitectura Llama desarrollado por el usuario DedeProGames y publicado en HuggingFace bajo el identificador `DedeProGames/cosmo.0`. Con 34.611.712 parametros (34,6 M), se situa en la categoria de modelos extremadamente pequenos, muy por debajo de los modelos compactos habituales (0,5 B - 1 B). Su objetivo declarado es la generacion de texto conversacional, y se distribuye unicamente en formato safetensors.
+cosmo.0 es un modelo de lenguaje de arquitectura Llama desarrollado por el usuario DedeProGames y publicado en Hugging Face bajo el identificador `DedeProGames/cosmo.0`. Con 34.611.712 parametros (34,6 M), se situa en la categoria de modelos extremadamente pequenos, muy por debajo de los modelos compactos habituales (0,5 B - 1 B). Su objetivo declarado es la generacion de texto conversacional, y se distribuye unicamente en formato safetensors.
 
 El modelo fue entrenado sobre 5.000 millones de tokens extraidos de los corpus FineWeb-Edu y DCLM-Edu, dos datasets de texto educativo filtrado ampliamente usados en la comunidad open source para entrenar modelos de lenguaje desde cero. La model card no documenta la longitud de contexto, los idiomas soportados, la licencia ni el proceso de alineacion (RLHF/DPO), por lo que buena parte de las especificaciones habituales quedan sin confirmar.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cosmo.0 (DedeProGames) | 34,6 M | no disponible | no disponible | HuggingFace, safetensors |
-| Pythia-70M (EleutherAI) | 70 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| TinyLlama-1.1B (TinyLlama) | 1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
+| cosmo.0 (DedeProGames) | 34,6 M | no disponible | no disponible | Hugging Face, safetensors |
+| Pythia-70M (EleutherAI) | 70 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| TinyLlama-1.1B (TinyLlama) | 1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
 
 No hay datos de benchmarks publicados para cosmo.0, por lo que no es posible establecer una comparacion cuantitativa de rendimiento con estas alternativas. En terminos de tamano, cosmo.0 es aproximadamente la mitad que Pythia-70M, cuatro veces menor que SmolLM-135M y treinta y dos veces menor que TinyLlama-1.1B.
 
@@ -95,7 +95,7 @@ No hay datos de benchmarks publicados para cosmo.0, por lo que no es posible est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DedeProGames/cosmo.0
+- Modelo en Hugging Face: https://huggingface.co/DedeProGames/cosmo.0
 - FineWeb-Edu (dataset de entrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - DCLM-Edu (dataset de entrenamiento): https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

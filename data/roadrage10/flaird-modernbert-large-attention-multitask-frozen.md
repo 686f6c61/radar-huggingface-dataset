@@ -2,7 +2,7 @@
 
 ## Resumen
 
-flaird-modernbert-large-attention-multitask-frozen es un modelo de clasificación de texto (encoder-only) publicado por el usuario roadrage10 en HuggingFace. Se trata de un ajuste fino de ModernBERT-large, la arquitectura de encoder presentada por AnswerDotAI como sucesora modernizada de BERT, y cuenta con 402.418.956 parametros reales segun los pesos en safetensors. El nombre del repositorio indica un entrenamiento multitarea ("multitask") con algun tipo de mecanismo de atencion especifico ("attention") y componentes congelados ("frozen"), aunque la model card no detalla estas decisiones de diseno.
+flaird-modernbert-large-attention-multitask-frozen es un modelo de clasificación de texto (encoder-only) publicado por el usuario roadrage10 en Hugging Face. Se trata de un ajuste fino de ModernBERT-large, la arquitectura de encoder presentada por AnswerDotAI como sucesora modernizada de BERT, y cuenta con 402.418.956 parametros reales segun los pesos en safetensors. El nombre del repositorio indica un entrenamiento multitarea ("multitask") con algun tipo de mecanismo de atencion especifico ("attention") y componentes congelados ("frozen"), aunque la model card no detalla estas decisiones de diseno.
 
 El modelo resuelve tareas de clasificación de texto, presumiblemente en el contexto del proyecto "flaird" del propio autor, y declara metricas muy altas en su conjunto de evaluacion: ROC-AUC de 0,992, F1 de 0,974 y Brier de 0,964. La relevancia actual es limitada por su escasa difusion (3 descargas, 0 likes) y por la ausencia de informacion sobre el dataset, los idiomas y la licencia, lo que dificulta su reutilizacion en produccion.
 
@@ -91,11 +91,11 @@ No se dispone de comparaciones directas con otros modelos en el mismo dataset, y
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flaird-modernbert-large-attention-multitask-frozen | 402 M | no disponible (base ModernBERT-large: 8.192) | Clasificacion multitarea | no disponible | HuggingFace (3 descargas) |
-| yusr9/flaird-modernbert-large-attention-single-task-frozen | no disponible | no disponible | Clasificacion single-task | no disponible | HuggingFace |
-| roadrage10/flaird-modernbert-large-concatenation-single-task-frozen | no disponible | no disponible | Clasificacion single-task | no disponible | HuggingFace |
-| ModernBERT-large (base, AnswerDotAI) | ~395 M | 8.192 | Encoder generalista (MLM) | Apache 2.0 (segun repo oficial) | HuggingFace, GitHub |
-| BERT-large (Google) | 340 M | 512 | Encoder generalista (MLM) | Apache 2.0 | HuggingFace |
+| flaird-modernbert-large-attention-multitask-frozen | 402 M | no disponible (base ModernBERT-large: 8.192) | Clasificacion multitarea | no disponible | Hugging Face (3 descargas) |
+| yusr9/flaird-modernbert-large-attention-single-task-frozen | no disponible | no disponible | Clasificacion single-task | no disponible | Hugging Face |
+| roadrage10/flaird-modernbert-large-concatenation-single-task-frozen | no disponible | no disponible | Clasificacion single-task | no disponible | Hugging Face |
+| ModernBERT-large (base, AnswerDotAI) | ~395 M | 8.192 | Encoder generalista (MLM) | Apache 2.0 (segun repo oficial) | Hugging Face, GitHub |
+| BERT-large (Google) | 340 M | 512 | Encoder generalista (MLM) | Apache 2.0 | Hugging Face |
 
 Comparacion de rendimiento en la tarea "flaird": no disponible, ya que el dataset no es publico y los modelos parecidos no comparten evaluacion.
 
@@ -114,7 +114,7 @@ Comparacion de rendimiento en la tarea "flaird": no disponible, ya que el datase
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roadrage10/flaird-modernbert-large-attention-multitask-frozen
+- Modelo en Hugging Face: https://huggingface.co/roadrage10/flaird-modernbert-large-attention-multitask-frozen
 - Variante concatenation-single-task del mismo autor: https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task-frozen
 - Variante attention-single-task (otro usuario): https://huggingface.co/yusr9/flaird-modernbert-large-attention-single-task-frozen
 - Repositorio oficial de ModernBERT: https://github.com/AnswerDotAI/ModernBERT

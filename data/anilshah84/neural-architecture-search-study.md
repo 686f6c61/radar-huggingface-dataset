@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anilshah84/neural-architecture-search-study` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). Su autoria corresponde al usuario de HuggingFace `anilshah84`, que lo publica con la etiqueta `research-notes` y lo describe como un esbozo experimental en el que se detalla el alcance de la pregunta de investigacion, los posibles factores de confusion, las comparaciones propuestas contra lineas base emparejadas y las comprobaciones de reproducibilidad pendientes.
+El repositorio `anilshah84/neural-architecture-search-study` no es un modelo de lenguaje entrenado, sino un cuaderno de notas de investigacion sobre busqueda de arquitecturas neuronales (Neural Architecture Search, NAS). Su autoria corresponde al usuario de Hugging Face `anilshah84`, que lo publica con la etiqueta `research-notes` y lo describe como un esbozo experimental en el que se detalla el alcance de la pregunta de investigacion, los posibles factores de confusion, las comparaciones propuestas contra lineas base emparejadas y las comprobaciones de reproducibilidad pendientes.
 
 El unico artefacto binario asociado es un fichero en formato safetensors que contiene 49.600 parametros totales (aproximadamente 0,05 millones). Se trata de una cifra tres ordenes de magnitud inferior a la de cualquier modelo funcional de proposito general, por lo que no debe interpretarse como un checkpoint listo para inferencia. El propio autor indica de forma explicita que el material "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado", y que las secciones marcadas como planes o hipotesis no son resultados experimentales.
 
@@ -81,6 +81,6 @@ No disponible. No existe una categoria de modelos comparables para este artefact
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anilshah84/neural-architecture-search-study
+- Repositorio en Hugging Face: https://huggingface.co/anilshah84/neural-architecture-search-study
 - Fichero `paper_notes.md`: referenciado en la model card como artefacto principal del repositorio (no se dispone de URL directa en la informacion proporcionada)
 - Resultados de busqueda web: las consultas realizadas devolvieron exclusivamente paginas sobre listas de valores de un videojuego (Supreme Values, MM2Values.com, Traderie, mm2values.app), sin ninguna relacion con el modelo ni con busqueda de arquitecturas neuronales. No se han identificado papers, blogs, repositorios ni demos adicionales relevantes.

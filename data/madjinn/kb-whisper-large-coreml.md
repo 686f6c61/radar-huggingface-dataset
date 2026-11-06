@@ -101,7 +101,7 @@ La comparación relevante para producción es la primera columna frente a la seg
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/madjinn/kb-whisper-large-coreml
+- Repositorio Hugging Face: https://huggingface.co/madjinn/kb-whisper-large-coreml
 - Modelo base: https://huggingface.co/KBLab/kb-whisper-large
 - Variante Medium 8-bit del mismo autor: https://huggingface.co/madjinn/kb-whisper-medium-coreml
 - WhisperKit (Argmax): https://github.com/argmaxinc/WhisperKit

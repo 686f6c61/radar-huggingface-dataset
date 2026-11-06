@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OliviaRossi/SignOfFour-Q6_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OliviaRossi/SignOfFour-Q6_K-GGUF
 - Modelo base: https://huggingface.co/pragmaticcs/SignOfFour
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

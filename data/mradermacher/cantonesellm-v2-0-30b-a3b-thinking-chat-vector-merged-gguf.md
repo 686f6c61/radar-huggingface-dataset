@@ -19,7 +19,7 @@ Su relevancia es doble. Por un lado, cubre un hueco poco atendido: los modelos a
 | Tipos de cuantización | Q2_K (11,4 GB), Q3_K_S (13,4 GB), Q3_K_M (14,8 GB), Q3_K_L (16,0 GB), IQ4_XS (16,7 GB), Q4_K_S (17,6 GB), Q4_K_M (18,7 GB), Q5_K_S (21,2 GB), Q5_K_M (21,8 GB), Q6_K (25,2 GB), Q8_0 (32,6 GB). Existe además una familia i1-GGUF con cuantizaciones ponderadas/imatrix en repositorio aparte |
 | Idiomas soportados | yue (cantonés), zh (chino), en (inglés) |
 | Licencia | apache-2.0 (con enlace a la licencia de Qwen/Qwen3-30B-A3B) |
-| Formato de pesos | GGUF (el modelo base está en safetensors, formato HuggingFace) |
+| Formato de pesos | GGUF (el modelo base está en safetensors, formato Hugging Face) |
 
 Datos adicionales del repositorio: 988 descargas, 1 like, tamaño total del repositorio 208,1 GB (incluye todas las cuantizaciones), creado el 8 de septiembre de 2026 y actualizado el 12 de octubre de 2026.
 
@@ -73,9 +73,9 @@ No se dispone en la información proporcionada de modelos directamente comparabl
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF (este repositorio) | 30.532.122.624 totales, aproximadamente 3B activos | no disponible | GGUF, con 11 cuantizaciones desde 11,4 GB | apache-2.0 | HuggingFace, 988 descargas |
-| hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged (modelo original) | 30.532.122.624 totales, aproximadamente 3B activos | no disponible | safetensors | apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B (familia en la que se basa el modelo según el enlace de licencia) | Del orden de 30B totales con unos 3B activos según la documentación pública de Qwen3 | Según documentación pública de Qwen3; no detallado en la información de este repositorio | safetensors y GGUF de terceros | Apache-2.0 | HuggingFace |
+| CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF (este repositorio) | 30.532.122.624 totales, aproximadamente 3B activos | no disponible | GGUF, con 11 cuantizaciones desde 11,4 GB | apache-2.0 | Hugging Face, 988 descargas |
+| hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged (modelo original) | 30.532.122.624 totales, aproximadamente 3B activos | no disponible | safetensors | apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B (familia en la que se basa el modelo según el enlace de licencia) | Del orden de 30B totales con unos 3B activos según la documentación pública de Qwen3 | Según documentación pública de Qwen3; no detallado en la información de este repositorio | safetensors y GGUF de terceros | Apache-2.0 | Hugging Face |
 
 No se han localizado en la información disponible alternativas específicas de cantonés con las que establecer una comparación cuantitativa de rendimiento, contexto o licencia.
 
@@ -93,7 +93,7 @@ No se han localizado en la información disponible alternativas específicas de 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF
 - Repositorio con cuantizaciones ponderadas/imatrix i1-GGUF: https://huggingface.co/mradermacher/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-i1-GGUF
 - Modelo original sin cuantizar: https://huggingface.co/hon9kon9ize/CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged
 - Página de resumen y descargas del autor para este modelo: https://hf.tst.eu/model#CantoneseLLM-v2.0-30B-A3B-Thinking-Chat-Vector-Merged-GGUF

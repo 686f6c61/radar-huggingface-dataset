@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full05` es un checkpoint de pesos en formato safetensors publicado por el usuario firzahdzm en HuggingFace. Cuenta con 1.170.340.608 parametros totales (aproximadamente 1,17 mil millones), un tamano de repositorio de 2,3 GB y, en el momento de la consulta, 11 descargas y 0 "likes". La model card no incluye informacion sobre el pipeline, la licencia, los idiomas soportados ni el proceso de entrenamiento.
+El modelo identificado como `firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full05` es un checkpoint de pesos en formato safetensors publicado por el usuario firzahdzm en Hugging Face. Cuenta con 1.170.340.608 parametros totales (aproximadamente 1,17 mil millones), un tamano de repositorio de 2,3 GB y, en el momento de la consulta, 11 descargas y 0 "likes". La model card no incluye informacion sobre el pipeline, la licencia, los idiomas soportados ni el proceso de entrenamiento.
 
 La unica pista arquitectonica disponible es la etiqueta `lfm2`, que apunta a la familia LFM2 de Liquid AI, un conjunto de modelos de arquitectura hibrida que combina capas convolucionales y de atencion. El recuento de parametros (1,17 B) coincide con el tamano declarado de LFM2-1.2B, aunque la model card del repositorio no confirma que se trate de un fine-tune de ese modelo base ni detalla la tarea concreta para la que fue ajustado. El nombre del repositorio contiene el fragmento `instructtext`, lo que sugiere un ajuste orientado a instrucciones en texto, pero es una inferencia no verificada.
 
@@ -81,9 +81,9 @@ La ausencia de licencia, contexto, idiomas y benchmarks en la model card impide 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|
-| tourn-cc4550ab-instructtext-hyper-x4avf1full05 | 1,17 B | no disponible | no disponible | HuggingFace, safetensors | no disponible |
-| LFM2-1.2B (Liquid AI) | aproximadamente 1,2 B | no verificado en esta ficha | no verificada en esta ficha | HuggingFace | no verificados en esta ficha |
-| Modelos de ~1-2 B de otras familias (Qwen, Llama, Gemma) | 1-2 B | no disponible en esta comparativa | no disponible en esta comparativa | HuggingFace | no disponibles en esta comparativa |
+| tourn-cc4550ab-instructtext-hyper-x4avf1full05 | 1,17 B | no disponible | no disponible | Hugging Face, safetensors | no disponible |
+| LFM2-1.2B (Liquid AI) | aproximadamente 1,2 B | no verificado en esta ficha | no verificada en esta ficha | Hugging Face | no verificados en esta ficha |
+| Modelos de ~1-2 B de otras familias (Qwen, Llama, Gemma) | 1-2 B | no disponible en esta comparativa | no disponible en esta comparativa | Hugging Face | no disponibles en esta comparativa |
 
 No se dispone de datos verificados en la informacion proporcionada para completar las celdas restantes sin inventar cifras.
 
@@ -101,6 +101,6 @@ No se dispone de datos verificados en la informacion proporcionada para completa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full05
+- Hugging Face: https://huggingface.co/firzahdzm/tourn-cc4550ab-instructtext-hyper-x4avf1full05
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

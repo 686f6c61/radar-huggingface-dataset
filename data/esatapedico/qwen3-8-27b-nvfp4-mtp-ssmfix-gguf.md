@@ -93,11 +93,11 @@ La diferencia clave frente a las alternativas es el formato NVFP4 optimizado par
 - Riesgo de alucinación y sesgos: al ser una modificación de pesos sin reentrenamiento, los sesgos del modelo base se conservan; la corrección no aborda riesgos de alucinación o sesgos sociodemográficos.
 - Restricciones de licencia: la licencia Apache-2.0 permite uso comercial, pero el autor recomienda usar la versión no experimental (esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF) si se busca estabilidad.
 - Dependencia de hardware Blackwell: el formato NVFP4 no es nativo en GPUs no Blackwell, lo que limita el despliegue en hardware antiguo.
-- Errores de metadatos: el dato de parámetros totales en HuggingFace (460 730 096) es inconsistente con un modelo de 27B; probablemente es un error de los metadatos del repositorio.
+- Errores de metadatos: el dato de parámetros totales en Hugging Face (460 730 096) es inconsistente con un modelo de 27B; probablemente es un error de los metadatos del repositorio.
 
 ## Enlaces
 
-- Repositorio HuggingFace: [esatapedico/Qwen3.8-27B-NVFP4-MTP-SSMFIX-GGUF](https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-SSMFIX-GGUF)
+- Repositorio Hugging Face: [esatapedico/Qwen3.8-27B-NVFP4-MTP-SSMFIX-GGUF](https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-SSMFIX-GGUF)
 - Repositorio hermano sin SSMF: [esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF](https://huggingface.co/esatapedico/Qwen3.8-27B-NVFP4-MTP-GGUF)
 - Checkpoint BF16 de redashes: [redashes/Qwen3.8-27B-BF16-SSMFIX](https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX)
 - Discusión original de la idea: [Qwen/Qwen3.8-27B discussion #76](https://huggingface.co/Qwen/Qwen3.8-27B/discussions/76)

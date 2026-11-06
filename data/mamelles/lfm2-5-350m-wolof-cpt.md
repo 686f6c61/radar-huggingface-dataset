@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-Wolof-CPT es un artefacto de ajuste publicado en HuggingFace por el usuario `mamelles`, consistente en un entrenamiento continuado (CPT, *continual pretraining*) del modelo base `LiquidAI/LFM2.5-350M-Base` sobre un corpus de wolof. El modelo tiene 357.416.704 parametros reales (segun los pesos en safetensors), ocupa 0,7 GB en el repositorio y se distribuye exclusivamente en formato safetensors para la libreria `transformers`, con pipeline de `text-generation`.
+LFM2.5-350M-Wolof-CPT es un artefacto de ajuste publicado en Hugging Face por el usuario `mamelles`, consistente en un entrenamiento continuado (CPT, *continual pretraining*) del modelo base `LiquidAI/LFM2.5-350M-Base` sobre un corpus de wolof. El modelo tiene 357.416.704 parametros reales (segun los pesos en safetensors), ocupa 0,7 GB en el repositorio y se distribuye exclusivamente en formato safetensors para la libreria `transformers`, con pipeline de `text-generation`.
 
 El propio autor lo describe como un "artefacto de produccion privado, experimental y no publicado publicamente", sin reclamaciones de calidad mas alla de las puertas automaticas registradas en su `training_manifest.json`. Esto lo situa en la categoria de adaptaciones linguisticas de investigacion para una lengua de bajos recursos (wolof), no en la de un modelo listo para produccion abierta. No declara licencia, idiomas soportados ni resultados de benchmarks en los metadatos disponibles.
 
@@ -31,7 +31,7 @@ El entrenamiento consiste en un CPT (entrenamiento continuado sobre el modelo ba
 
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y entre los tags figura `conversational`, por lo que esta preparado para continuar texto y mantener turnos de dialogo.
 - Adaptacion linguistica al wolof: es el objetivo explicito del CPT, aunque el autor no cuantifica el grado de mejora ni aporta evaluaciones.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 - Integracion con el ecosistema `transformers`: pesos en safetensors cargables directamente con la libreria, sin pasos de conversion adicionales.
 - Capacidades de instruccion generica: la model card menciona el uso de datos de instruccion reponderados, aunque no detalla el formato ni la cobertura.
 - No se documentan capacidades de razonamiento explicito (*thinking mode*), uso de herramientas (*tool calling*), agentes, vision, audio, ni codigo o matematicas de forma especifica.
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mamelles/LFM2.5-350M-Wolof-CPT | 357.416.704 | no disponible | no disponible | publico en HuggingFace (0 descargas, 0 likes) | CPT sobre wolof, marcado como experimental y de uso privado |
-| LiquidAI/LFM2.5-350M-Base | no disponible en la informacion proporcionada | no disponible | no disponible | publico en HuggingFace | modelo base sin adaptacion a wolof |
+| mamelles/LFM2.5-350M-Wolof-CPT | 357.416.704 | no disponible | no disponible | publico en Hugging Face (0 descargas, 0 likes) | CPT sobre wolof, marcado como experimental y de uso privado |
+| LiquidAI/LFM2.5-350M-Base | no disponible en la informacion proporcionada | no disponible | no disponible | publico en Hugging Face | modelo base sin adaptacion a wolof |
 | Otras adaptaciones de wolof de ~350 M | no disponible | no disponible | no disponible | no disponible | no se ha identificado un comparable directo en la informacion proporcionada |
 
 No se dispone de datos de rendimiento del modelo ni de sus alternativas en la informacion proporcionada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento del modelo ni de sus alternativas en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-350M-Wolof-CPT
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-350M-Wolof-CPT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M-Base
 - `training_manifest.json` y `metrics.json`: referenciados en la model card, no enlazados explicitamente en la informacion proporcionada
 - Busqueda web: los resultados devueltos no guardan ninguna relacion con el modelo (contenido sobre el navegador Google Chrome y extensiones del Chrome Web Store), por lo que no aportan enlaces utiles adicionales.

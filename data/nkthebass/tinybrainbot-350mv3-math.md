@@ -92,6 +92,6 @@ El modelo se compara directamente con su predecesor, TinyBrainBot 320M V2 Math, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-350mV3-math
+- Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-350mV3-math
 - Modelo base instruct: https://huggingface.co/nkthebass/tinybrainbot-350mV3-instruct
 - No se han encontrado papers, blogs o repositorios adicionales en la búsqueda web.

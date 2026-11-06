@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keystats/ocr_dict_klm` es un repositorio alojado en HuggingFace que contiene modelos de lenguaje estadisticos de tipo n-grama entrenados con KenLM, orientados al ambito de diccionarios y transcripciones OCR. El autor es el usuario `keystats`. La model card describe dos familias de modelos (`full_*` y `fit_*`) y dos granularidades (`*_word`, `*_char`), lo que da un total de cuatro variantes basicas: 3-gramas de palabra y 6-gramas de caracter.
+`keystats/ocr_dict_klm` es un repositorio alojado en Hugging Face que contiene modelos de lenguaje estadisticos de tipo n-grama entrenados con KenLM, orientados al ambito de diccionarios y transcripciones OCR. El autor es el usuario `keystats`. La model card describe dos familias de modelos (`full_*` y `fit_*`) y dos granularidades (`*_word`, `*_char`), lo que da un total de cuatro variantes basicas: 3-gramas de palabra y 6-gramas de caracter.
 
 No se trata de un modelo neuronal, sino de un modelo de lenguaje clasico basado en frecuencias de n-gramas. Su proposito habitual en este contexto es servir como componente de rescoring o de post-procesado en pipelines de reconocimiento optico de caracteres (OCR): puntuar hipotesis de transcripcion, corregir palabras improbables y filtrar secuencias mal formadas segun el diccionario de entrenamiento. Esto lo hace relevante para quien necesite un corrector ligero, ejecutable en CPU y sin dependencias de GPU, integrado en un sistema OCR o ASR.
 
@@ -92,5 +92,5 @@ No hay informacion sobre licencia, idiomas ni metricas que permita comparar esta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keystats/ocr_dict_klm
+- Repositorio en Hugging Face: https://huggingface.co/keystats/ocr_dict_klm
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos corresponden a consultas no relacionadas (Google Maps, Waze, CarPlay) y no aportan informacion tecnica utilizable.

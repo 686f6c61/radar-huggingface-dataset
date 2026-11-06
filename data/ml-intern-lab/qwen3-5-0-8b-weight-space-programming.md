@@ -70,8 +70,8 @@ El modelo editado se evaluo en MATH-500 completo: 500 problemas x 4 muestras = 2
 
 | Modelo | Parametros | Contexto | MATH-500 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3.5-0.8B editado) | 873.438.784 | no disponible (ejemplo: 34.816) | 51,0% | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | no disponible | no disponible | 5,0% (smoke; post: 7,9) | Apache 2.0 | HuggingFace |
+| Este modelo (Qwen3.5-0.8B editado) | 873.438.784 | no disponible (ejemplo: 34.816) | 51,0% | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | no disponible | no disponible | 5,0% (smoke; post: 7,9) | Apache 2.0 | Hugging Face |
 | Otros modelos de ~0,8B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion con datos publicados es contra el modelo base, que comparte arquitectura y parametros pero difiere en dos tensores `down_proj`. No se dispone de datos de benchmarks de alternativas de la misma categoria en la informacion proporcionada.
@@ -89,7 +89,7 @@ La unica comparacion con datos publicados es contra el modelo base, que comparte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/Qwen3.5-0.8B-weight-space-programming
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/Qwen3.5-0.8B-weight-space-programming
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Blog post "Sparks of Weight Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Logs, diffs y codigo de reconstruccion: https://github.com/RikiyaT/lm_understand-logs

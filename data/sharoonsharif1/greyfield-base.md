@@ -85,12 +85,12 @@ La comparacion con alternativas de otros fabricantes (Qwen, Llama, Mistral) no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sharoonsharif1/greyfield-base
+- Repositorio en Hugging Face: https://huggingface.co/sharoonsharif1/greyfield-base
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-unquantized
-- Perfil del autor en HuggingFace: https://huggingface.co/sharoonsharif1
+- Perfil del autor en Hugging Face: https://huggingface.co/sharoonsharif1
 - Perfil del autor en GitHub: https://github.com/SharoonSharif
 - Licencia enlazada en la model card: https://ai.google.dev/gemma/docs/gemma_4_license
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento citado: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/
 - Documentacion de Gemma: https://ai.google.dev/gemma/docs/core

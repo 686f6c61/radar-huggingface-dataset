@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparado (WER, latencia) en la informaci√
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fluxcost/whisper-large-v3-gguf
+- Repositorio Hugging Face: https://huggingface.co/fluxcost/whisper-large-v3-gguf
 - Conversi√≥n de origen: https://huggingface.co/handy-computer/whisper-large-v3-gguf
 - Modelo base de OpenAI: https://huggingface.co/openai/whisper-large-v3

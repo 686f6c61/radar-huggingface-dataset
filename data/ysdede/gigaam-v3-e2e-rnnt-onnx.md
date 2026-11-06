@@ -81,5 +81,5 @@ La comparación con Whisper y Wav2Vec 2.0 es orientativa por categoría (ASR ope
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ysdede/gigaam-v3-e2e-rnnt-onnx
+- Hugging Face: https://huggingface.co/ysdede/gigaam-v3-e2e-rnnt-onnx
 - Repositorio upstream GigaAM: https://github.com/salute-developers/GigaAM

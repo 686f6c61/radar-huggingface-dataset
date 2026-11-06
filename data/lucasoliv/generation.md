@@ -70,4 +70,4 @@ No disponible. No se han identificado modelos comparables de la misma arquitectu
 
 ## Enlaces
 
-- [Repositorio de HuggingFace: lucasoliv/generation](https://huggingface.co/lucasoliv/generation)
+- [Repositorio de Hugging Face: lucasoliv/generation](https://huggingface.co/lucasoliv/generation)

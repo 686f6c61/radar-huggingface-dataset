@@ -92,7 +92,7 @@ La versión oQ4e-mtp ofrece una ventaja frente al bf16 original: ocupa ~17 GB en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fevaoctwh/Qwen3.8-27B-oQ4e-mtp
+- Repositorio Hugging Face: https://huggingface.co/fevaoctwh/Qwen3.8-27B-oQ4e-mtp
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta oQ/oMLX: https://github.com/jundot/omlx
 - Análisis de Qwen3.8-27B (aireleasetracker): https://aireleasetracker.com/model/qwen/qwen3.8-27b

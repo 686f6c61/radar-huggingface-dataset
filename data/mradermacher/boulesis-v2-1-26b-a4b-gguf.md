@@ -113,7 +113,7 @@ No se dispone de datos de rendimiento de ninguna de las alternativas, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Boulesis-v2.1-26B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Boulesis-v2.1-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Boulesis-v2.1-26B-A4B-GGUF
 - Peticiones de cuantización de mradermacher: https://huggingface.co/mradermacher/model_requests

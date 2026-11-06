@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (CTC, webfonts, hhdgeom, llmgen) y por el tamaño del repositorio (0,3 GB con 87.279.756 parámetros en safetensors), se trata con alta probabilidad de un modelo pequeño orientado a reconocimiento de texto en imágenes (OCR/HTR) o a la generación de glifos y geometrías tipográficas, no de un modelo de lenguaje conversacional de propósito general. La referencia a CTC (Connectionist Temporal Classification) apunta a un cabezal de decodificación para secuencias de longitud variable, típico en tareas de reconocimiento de escritura.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44` es un checkpoint de investigación publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (CTC, webfonts, hhdgeom, llmgen) y por el tamaño del repositorio (0,3 GB con 87.279.756 parámetros en safetensors), se trata con alta probabilidad de un modelo pequeño orientado a reconocimiento de texto en imágenes (OCR/HTR) o a la generación de glifos y geometrías tipográficas, no de un modelo de lenguaje conversacional de propósito general. La referencia a CTC (Connectionist Temporal Classification) apunta a un cabezal de decodificación para secuencias de longitud variable, típico en tareas de reconocimiento de escritura.
 
-La model card es la plantilla por defecto de HuggingFace sin cumplimentar: todos los campos de descripción, datos de entrenamiento, evaluación y uso previsto aparecen como "[More Information Needed]". Esto implica que la información disponible se limita a los metadatos del repositorio (tamaño, parámetros, licencia, fecha) y a las etiquetas. No hay pipeline declarado, ni idiomas indicados, ni resultados de benchmarks.
+La model card es la plantilla por defecto de Hugging Face sin cumplimentar: todos los campos de descripción, datos de entrenamiento, evaluación y uso previsto aparecen como "[More Information Needed]". Esto implica que la información disponible se limita a los metadatos del repositorio (tamaño, parámetros, licencia, fecha) y a las etiquetas. No hay pipeline declarado, ni idiomas indicados, ni resultados de benchmarks.
 
 Su relevancia actual es limitada fuera del contexto de investigación del autor: se trata de un experimento numerado (`exp39`) con semilla fija (`seed44`) y un conjunto de entrenamiento de 10.000 muestras (`10k`), lo que sugiere un trabajo de ablación o reproducción más que un modelo listo para producción. Aun así, puede resultar útil como referencia para quien investigue arquitecturas CTC aplicadas a tipografías web o a la generación condicionada por geometría.
 
@@ -35,7 +35,7 @@ Con 87,3 millones de parámetros, el modelo es de escala pequeña: encaja en el 
 - No se ha documentado soporte de agentes ni de razonamiento multi-paso.
 - El soporte multilingüe no está declarado; los idiomas figuran como no disponibles.
 - No se ha documentado ningún modo especial (thinking mode, visión, audio) más allá de la hipótesis OCR/HTR derivada del nombre.
-- No hay demo, espacio de HuggingFace ni pipeline asociado que permita verificar el comportamiento real.
+- No hay demo, espacio de Hugging Face ni pipeline asociado que permita verificar el comportamiento real.
 
 ## Casos de uso
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44 | 87,3 M | no disponible | no confirmada (posible OCR/HTR) | MIT | HuggingFace |
-| TrOCR-base (Microsoft) | ~334 M | 512 tokens visuales | OCR impreso/manuscrito | MIT | HuggingFace |
+| cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44 | 87,3 M | no disponible | no confirmada (posible OCR/HTR) | MIT | Hugging Face |
+| TrOCR-base (Microsoft) | ~334 M | 512 tokens visuales | OCR impreso/manuscrito | MIT | Hugging Face |
 | CRNN clásico (Shi et al.) | ~8-10 M | secuencia variable | OCR con CTC | variable | Implementaciones públicas |
 | PaddleOCR rec small | ~5-10 M | secuencia variable | OCR multilingüe | Apache 2.0 | GitHub/PyPI |
 
@@ -85,7 +85,7 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- [HuggingFace: cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44](https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44)
+- [Hugging Face: cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44](https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-10k-seed44)
 - [Paper citado en las etiquetas: Lacoste et al. (2019), Quantifying the Carbon Emissions of Machine Learning](https://arxiv.org/abs/1910.09700)
 - [Calculadora ML Impact (referenciada en la model card)](https://mlco2.github.io/impact)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la información disponible.

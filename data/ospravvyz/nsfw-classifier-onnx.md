@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Arquitectura | Formato | Licencia | Uso en navegador | Disponibilidad |
 |---|---|---|---|---|---|
-| OSPRAVVYZ/nsfw-classifier-ONNX | ViT | ONNX | no disponible | Sí (transformers.js) | HuggingFace, 0 descargas |
-| giacomoarienti/nsfw-classifier | ViT | safetensors (presumiblemente) | no disponible | No directamente | HuggingFace (modelo base) |
-| Otros clasificadores NSFW basados en ViT o CNN | ViT / CNN | PyTorch, ONNX | variable | Depende de la conversión | HuggingFace |
+| OSPRAVVYZ/nsfw-classifier-ONNX | ViT | ONNX | no disponible | Sí (transformers.js) | Hugging Face, 0 descargas |
+| giacomoarienti/nsfw-classifier | ViT | safetensors (presumiblemente) | no disponible | No directamente | Hugging Face (modelo base) |
+| Otros clasificadores NSFW basados en ViT o CNN | ViT / CNN | PyTorch, ONNX | variable | Depende de la conversión | Hugging Face |
 
 La comparativa se limita al modelo base y a la categoría genérica, ya que no se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas concretas en la información proporcionada.
 
@@ -87,7 +87,7 @@ La comparativa se limita al modelo base y a la categoría genérica, ya que no s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OSPRAVVYZ/nsfw-classifier-ONNX
+- Repositorio Hugging Face: https://huggingface.co/OSPRAVVYZ/nsfw-classifier-ONNX
 - Modelo base: https://huggingface.co/giacomoarienti/nsfw-classifier
 - Espacio de conversión a ONNX: https://huggingface.co/spaces/onnx-community/convert-to-onnx
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js

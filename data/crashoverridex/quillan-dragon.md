@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quillan-Dragon es un modelo publicado en HuggingFace por el usuario CrashOverrideX bajo licencia MIT. La model card asociada está practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. No se dispone de informacion sobre el pipeline de inferencia, los idiomas soportados ni los formatos de pesos disponibles.
+Quillan-Dragon es un modelo publicado en Hugging Face por el usuario CrashOverrideX bajo licencia MIT. La model card asociada está practicamente vacia: unicamente declara la licencia, sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. No se dispone de informacion sobre el pipeline de inferencia, los idiomas soportados ni los formatos de pesos disponibles.
 
 El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que sugiere una publicacion reciente o un modelo experimental sin validacion por parte de la comunidad. La ausencia de documentacion tecnica impide determinar que problema resuelve o en que categoria encaja (lenguaje, vision, multimodal, etc.).
 
@@ -38,7 +38,7 @@ Tampoco se documentan innovaciones tecnicas destacables (atencion lineal, decodi
 ## Casos de uso
 
 - Evaluacion experimental: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente sus capacidades, dado que la documentacion no las describe.
-- Investigacion sobre modelos sin documentar: util para estudiar practicas de publicacion en HuggingFace y la importancia de las model cards completas.
+- Investigacion sobre modelos sin documentar: util para estudiar practicas de publicacion en Hugging Face y la importancia de las model cards completas.
 - Pruebas de integracion en pipelines de inferencia: antes de cualquier uso real seria necesario verificar el formato de pesos y la compatibilidad con frameworks como transformers, llama.cpp o vLLM.
 - Analisis de licencias: la licencia MIT permite uso comercial, pero la falta de especificaciones tecnicas impide estimar requisitos de hardware o rendimiento.
 - Docencia sobre evaluacion de modelos: sirve como ejemplo de repositorio con informacion insuficiente para una evaluacion tecnica rigurosa.
@@ -72,5 +72,5 @@ No disponible. La ausencia de especificaciones tecnicas (parametros, contexto, a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CrashOverrideX/Quillan-Dragon
+- Hugging Face: https://huggingface.co/CrashOverrideX/Quillan-Dragon
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

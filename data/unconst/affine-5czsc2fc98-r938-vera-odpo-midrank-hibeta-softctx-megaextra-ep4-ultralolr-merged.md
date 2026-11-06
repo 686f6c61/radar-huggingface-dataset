@@ -4,7 +4,7 @@
 
 El modelo `unconst/Affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged` es un fine-tuning de la serie Affine, desarrollado por el autor `unconst` a partir del modelo base `vera6/affine-5g4yy75zuz-t6` (revisión `8e3f1695`). Se trata de un checkpoint experimental entrenado mediante *offline DPO* (Direct Preference Optimization) sobre pares de respuestas rankeadas por una métrica interna denominada *Reason v4*, diseñada para tareas de minería de datos (SN120) y evaluación de duelos de razonamiento. No es un modelo de chat general, sino una pieza especializada dentro de un pipeline de optimización de preferencias.
 
-Con 35.107.181.936 parámetros (35,1B) y una longitud de contexto de 12.288 tokens, el modelo emplea una arquitectura que, según las etiquetas de HuggingFace, corresponde a un *Mixture of Experts* (tag `qwen3_5_moe`) con capacidades *image-text-to-text*, aunque no se han publicado detalles arquitectónicos completos. El entrenamiento utilizó LoRA (r=32, α=128) con un factor β=0,3, una tasa de aprendizaje extremadamente baja (5e-7) y 19.200 pasos sobre 4 épocas, en hardware de 8×H200. Los resultados internos muestran una mejora marginal de +0,004951 sobre el modelo base en la métrica *Reason v4*, con una decisión de "WIN" que lo licencia para la etapa 5 del proyecto.
+Con 35.107.181.936 parámetros (35,1B) y una longitud de contexto de 12.288 tokens, el modelo emplea una arquitectura que, según las etiquetas de Hugging Face, corresponde a un *Mixture of Experts* (tag `qwen3_5_moe`) con capacidades *image-text-to-text*, aunque no se han publicado detalles arquitectónicos completos. El entrenamiento utilizó LoRA (r=32, α=128) con un factor β=0,3, una tasa de aprendizaje extremadamente baja (5e-7) y 19.200 pasos sobre 4 épocas, en hardware de 8×H200. Los resultados internos muestran una mejora marginal de +0,004951 sobre el modelo base en la métrica *Reason v4*, con una decisión de "WIN" que lo licencia para la etapa 5 del proyecto.
 
 La relevancia de este modelo radica en su enfoque metodológico: demuestra cómo el *offline DPO* con muestreo múltiple y *soft context* puede refinar el razonamiento de un modelo base sin recurrir a SFT ni GRPO online. Sin embargo, su uso está restringido al ámbito de la minería de datos Affine y no se recomienda para aplicaciones de propósito general.
 
@@ -70,7 +70,7 @@ Estas métricas indican una mejora estadísticamente significativa sobre el mode
 - **VRAM estimada para inferencia**: con 35,1B parámetros en FP16, se necesitan aproximadamente 70 GB de VRAM. Con cuantización a 4 bits (no disponible actualmente), podría reducirse a ~18-20 GB, pero no se ofrecen versiones cuantizadas.
 - **GPU recomendadas**: para inferencia en FP16, se requieren GPUs de data center como A100 (80 GB), H100 (80 GB) o H200 (141 GB). En consumer, solo una RTX 4090 (24 GB) no es suficiente sin cuantización.
 - **Si cabe en consumer GPU**: no, a menos que se aplique cuantización externa (por ejemplo, con GPTQ o AWQ), pero no se proporcionan archivos cuantizados.
-- **Opciones de despliegue**: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con endpoints de HuggingFace (tag `endpoints_compatible`).
+- **Opciones de despliegue**: al ser un modelo de transformers, puede servirse con vLLM, TGI o llama.cpp (si se convierte a GGUF). También es compatible con endpoints de Hugging Face (tag `endpoints_compatible`).
 - **Latencia y throughput**: no disponibles. El entrenamiento usó 8×H200, lo que sugiere que la inferencia en una sola GPU H200 podría ofrecer un throughput razonable, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría. La
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unconst/Affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged
+- Modelo en Hugging Face: https://huggingface.co/unconst/Affine-5czsc2fc98-r938-vera-odpo-midrank-hibeta-softctx-megaextra-ep4-ultralolr-merged
 - Modelo base: https://huggingface.co/vera6/affine-5g4yy75zuz-t6 (revisión `8e3f1695e058837ed80fec3238ff439fdc2d0f0e`)
 - Otros modelos de la serie Affine (referencia): https://huggingface.co/unconst/Affine-5czsc2fc98-r580-r252-odpo-midrank-softctx-megaextra-merged
 - Despliegue en FriendliAI (modelos relacionados): https://friendli.ai/models/unconst/Affine-5czsc2fc98-r498-offline-dpo-hialpha-midrank-lobeta-softctx-extrasteps-merged

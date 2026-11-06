@@ -92,7 +92,7 @@ La comparación cuantitativa disponible se limita a v1: natural-v2 mejora el agr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hoagngn/lfm25-titlegen-17-languages-natural-v2
+- Modelo en Hugging Face: https://huggingface.co/hoagngn/lfm25-titlegen-17-languages-natural-v2
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Predecesor v1 (ONNX): https://huggingface.co/hoagngn/lfm25-titlegen-17-languages-onnx
 - Kit de evaluación público `titlegen-public-kit-v1` (referenciado en la model card; sin URL directa en la información disponible)

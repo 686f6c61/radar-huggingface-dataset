@@ -23,7 +23,7 @@ Su relevancia radica en que demuestra que un modelo base de 2,52B puede alcanzar
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del `sarvamai/sarvam-1`, un causal language model de 2,52B parametros etiquetado como `llama` en HuggingFace, es decir, un transformer decoder-only con atencion causal estandar. El checkpoint publicado aplica un ajuste fino del 100% de los parametros (no LoRA ni adaptadores), lo que implica que los 2.525 millones de pesos fueron actualizados durante el entrenamiento.
+El modelo hereda la arquitectura del `sarvamai/sarvam-1`, un causal language model de 2,52B parametros etiquetado como `llama` en Hugging Face, es decir, un transformer decoder-only con atencion causal estandar. El checkpoint publicado aplica un ajuste fino del 100% de los parametros (no LoRA ni adaptadores), lo que implica que los 2.525 millones de pesos fueron actualizados durante el entrenamiento.
 
 El entrenamiento se realizo durante 3 epocas completas con un batch efectivo de 32, alcanzando 196.440 pasos y aproximadamente 6,28 millones de muestras procesadas. El corpus consistio en 2.095.356 pares de frases paralelas hindi-marathi, filtradas mediante alineamiento semantico con LaBSE exigiendo una similitud S >= 0,75, lo que reduce el ruido de traduccion y pares desalineados. La perdida de validacion descendio de 28,04 a 1,4935, indicando convergencia. No se menciona en la informacion disponible el uso de RLHF, DPO ni tecnicas de alineacion posteriores al entrenamiento supervisado, ni innovaciones como decodificacion especulativa o atencion lineal.
 
@@ -74,8 +74,8 @@ No se han publicado en la informacion disponible resultados comparativos frente 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sarvam-1-hindi-marathi (este) | 2,52B | no disponible | Traduccion hi->mr ajustada | Apache 2.0 | HuggingFace, 11 descargas |
-| sarvamai/sarvam-1 (base) | 2,52B | no disponible | LLM causal multilingue indico | no disponible en la informacion | HuggingFace |
+| sarvam-1-hindi-marathi (este) | 2,52B | no disponible | Traduccion hi->mr ajustada | Apache 2.0 | Hugging Face, 11 descargas |
+| sarvamai/sarvam-1 (base) | 2,52B | no disponible | LLM causal multilingue indico | no disponible en la informacion | Hugging Face |
 | Modelos NMT dedicados tipo IndicTrans2 | no disponible en la informacion | no aplica | Traduccion indico-indico | no disponible en la informacion | no disponible |
 
 La comparacion cuantitativa con alternativas no puede establecerse porque la informacion proporcionada no incluye resultados de otros modelos sobre los mismos benchmarks. El modelo base `sarvamai/sarvam-1` es la referencia directa, y este checkpoint anade especializacion en el par hindi-marathi a costa de un posible estrechamiento de sus capacidades generales.
@@ -93,7 +93,7 @@ La comparacion cuantitativa con alternativas no puede establecerse porque la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vennyvirtuoso/sarvam-1-hindi-marathi
+- Modelo en Hugging Face: https://huggingface.co/vennyvirtuoso/sarvam-1-hindi-marathi
 - Modelo base: https://huggingface.co/sarvamai/sarvam-1
 - Identificador alternativo citado en la model card: https://huggingface.co/Solosix/sarvam-1-hindi-marathi
 - Paper, blog o repositorio adicionales: no disponibles en la informacion proporcionada.

@@ -81,7 +81,7 @@ Los tres adaptadores comparten la misma base y el mismo volumen de datos, difere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-par716-r64-dynbatch
+- Hugging Face: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-par716-r64-dynbatch
 - Repositorio fuente: https://github.com/Matthew-Bozoukov/Lessons_from_constituitional_AFT.git
 - Brazo de comparacion (da716): https://huggingface.co/LASR-Callum/qwen3_6-27b-lora-t2-9284-da716-r64-dynbatch
 - Variante synthdoc: https://huggingface.co/LASR-Callum/qwen3.6-27b-lora-t2-9284-synthdoc-716-r64

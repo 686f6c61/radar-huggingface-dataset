@@ -93,10 +93,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| KaviarLabs/Fenrir-X-26B-A4B-UD-Q4_K_XL-GGUF | 25,23 mil millones (MoE) | GGUF Q4_K_XL + mmproj Q8_0 | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Cuantizacion con mapa por tensor de Unsloth e imatrix especifica de Fenrir-X |
-| Vortex5/Fenrir-X-26B-A4B | 25,23 mil millones (MoE) | BF16 / safetensors | no disponible | no disponible en la informacion | HuggingFace | Checkpoint original del merge, sin cuantizar |
-| unsloth/gemma-4-26B-A4B-it-GGUF (UD-Q4_K_XL) | arquitectura Gemma 4 26B-A4B | GGUF | no disponible | no disponible en la informacion | HuggingFace | Fuente del mapa de tipos por tensor; modelo instructivo sin el merge de roleplay |
-| mradermacher/Fenrir-X-26B-A4B-i1-GGUF | 25,23 mil millones (MoE) | GGUF i1 (imatrix) | no disponible | no disponible en la informacion | HuggingFace | Cuantizacion alternativa que aporta la imatrix reutilizada en este repositorio |
+| KaviarLabs/Fenrir-X-26B-A4B-UD-Q4_K_XL-GGUF | 25,23 mil millones (MoE) | GGUF Q4_K_XL + mmproj Q8_0 | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Cuantizacion con mapa por tensor de Unsloth e imatrix especifica de Fenrir-X |
+| Vortex5/Fenrir-X-26B-A4B | 25,23 mil millones (MoE) | BF16 / safetensors | no disponible | no disponible en la informacion | Hugging Face | Checkpoint original del merge, sin cuantizar |
+| unsloth/gemma-4-26B-A4B-it-GGUF (UD-Q4_K_XL) | arquitectura Gemma 4 26B-A4B | GGUF | no disponible | no disponible en la informacion | Hugging Face | Fuente del mapa de tipos por tensor; modelo instructivo sin el merge de roleplay |
+| mradermacher/Fenrir-X-26B-A4B-i1-GGUF | 25,23 mil millones (MoE) | GGUF i1 (imatrix) | no disponible | no disponible en la informacion | Hugging Face | Cuantizacion alternativa que aporta la imatrix reutilizada en este repositorio |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes en la informacion proporcionada.
 
@@ -114,7 +114,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KaviarLabs/Fenrir-X-26B-A4B-UD-Q4_K_XL-GGUF
+- Repositorio Hugging Face: https://huggingface.co/KaviarLabs/Fenrir-X-26B-A4B-UD-Q4_K_XL-GGUF
 - Modelo base (merge original): https://huggingface.co/Vortex5/Fenrir-X-26B-A4B
 - Referencia del mapa de cuantizacion UD-Q4_K_XL: https://huggingface.co/unsloth/gemma-4-26B-A4B-it-GGUF/blob/main/gemma-4-26B-A4B-it-UD-Q4_K_XL.gguf
 - Imatrix de Fenrir-X: https://huggingface.co/mradermacher/Fenrir-X-26B-A4B-i1-GGUF/blob/main/Fenrir-X-26B-A4B.imatrix.gguf

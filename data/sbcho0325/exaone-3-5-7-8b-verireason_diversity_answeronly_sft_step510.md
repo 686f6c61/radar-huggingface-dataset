@@ -4,7 +4,7 @@
 
 El modelo `sbcho0325/EXAONE-3.5-7.8B-verireason_diversity_answeronly_sft_step510` es un adaptador LoRA (Low-Rank Adaptation) desarrollado por el usuario `sbcho0325`, que se aplica sobre el modelo base `LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct` de LG AI Research. El nombre sugiere un ajuste fino supervisado (SFT) orientado a mejorar el razonamiento verificable (verireason) y la diversidad de respuestas, generando únicamente la respuesta final (answeronly). El repositorio contiene únicamente los pesos del adaptador (0,3 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y el adaptador mediante la librería PEFT.
 
-Este adaptador no incluye documentación técnica detallada: la model card está vacía y no se proporcionan datos de entrenamiento, hiperparámetros, ni resultados de evaluación. La información disponible se limita a los metadatos de HuggingFace, que indican que fue creado en agosto de 2026 y que no ha recibido descargas ni valoraciones. Su relevancia práctica es limitada hasta que se publique documentación adicional, aunque puede ser de interés para quienes trabajen con EXAONE-3.5 y busquen variantes especializadas en razonamiento con respuestas diversas.
+Este adaptador no incluye documentación técnica detallada: la model card está vacía y no se proporcionan datos de entrenamiento, hiperparámetros, ni resultados de evaluación. La información disponible se limita a los metadatos de Hugging Face, que indican que fue creado en agosto de 2026 y que no ha recibido descargas ni valoraciones. Su relevancia práctica es limitada hasta que se publique documentación adicional, aunque puede ser de interés para quienes trabajen con EXAONE-3.5 y busquen variantes especializadas en razonamiento con respuestas diversas.
 
 ## Especificaciones tecnicas
 
@@ -58,9 +58,9 @@ No se dispone de datos de rendimiento para este adaptador, por lo que no es posi
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sbcho0325/EXAONE-3.5-7.8B-verireason... | 7.8B (base) + adaptador | No disponible | No disponible | HuggingFace (adaptador) |
-| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7.8B | 4096 (según documentación pública) | EXAONE AI Model License (no comercial) | HuggingFace |
-| Llama 3 8B Instruct | 8B | 8192 | Llama 3 License (comercial permitido) | HuggingFace |
+| sbcho0325/EXAONE-3.5-7.8B-verireason... | 7.8B (base) + adaptador | No disponible | No disponible | Hugging Face (adaptador) |
+| LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct | 7.8B | 4096 (según documentación pública) | EXAONE AI Model License (no comercial) | Hugging Face |
+| Llama 3 8B Instruct | 8B | 8192 | Llama 3 License (comercial permitido) | Hugging Face |
 
 ## Limitaciones y advertencias
 

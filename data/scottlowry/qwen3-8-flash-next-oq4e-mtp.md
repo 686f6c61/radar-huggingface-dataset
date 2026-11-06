@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp | 180B totales | MLX 4-bit | no disponible | HuggingFace |
-| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | FP8 | no disponible | HuggingFace |
-| Jackrong/Qwopus3.8-27B-Flash | no disponible | no disponible | no disponible | HuggingFace |
+| scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp | 180B totales | MLX 4-bit | no disponible | Hugging Face |
+| Qwen/Qwen3.8-Flash-Next-FP8 | no disponible | FP8 | no disponible | Hugging Face |
+| Jackrong/Qwopus3.8-27B-Flash | no disponible | no disponible | no disponible | Hugging Face |
 
 Nota: Qwen3.8-Flash-Next-FP8 es la versión del modelo base en FP8 para vLLM, con soporte de tool calling y reasoning. El modelo cuantizado aquí es una conversión a MLX 4-bit del modelo base Jackrong/Qwopus3.8-27B-Flash.
 
@@ -72,7 +72,7 @@ Nota: Qwen3.8-Flash-Next-FP8 es la versión del modelo base en FP8 para vLLM, co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp)
+- [Modelo en Hugging Face](https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp)
 - [Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [vLLM Recipes para Qwen3.8-Flash-Next](https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next)
 - [Repositorio de oQ (oMLX)](https://github.com/jundot/omlx)

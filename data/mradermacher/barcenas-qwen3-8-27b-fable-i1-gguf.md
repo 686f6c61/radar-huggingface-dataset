@@ -75,11 +75,11 @@ Nota: no hay comparativas directas con otros fine-tunes del mismo modelo base en
 - El nombre "Barcenas" puede estar asociado a un contexto político español (caso de corrupción), lo que puede generar contenido sensible o tendencioso si no se modera.
 - Licencia no confirmada: el modelo base usa Apache 2.0, pero el fine-tune puede tener restricciones adicionales; no se indica en el repositorio.
 - Capacidades multimodales o de código no garantizadas en esta variante GGUF.
-- El tamaño del repositorio es 0.0 GB en HuggingFace, lo que sugiere que los archivos pueden no estar cargados o que el enlace es incorrecto; verificar antes de su uso.
+- El tamaño del repositorio es 0.0 GB en Hugging Face, lo que sugiere que los archivos pueden no estar cargados o que el enlace es incorrecto; verificar antes de su uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Barcenas-Qwen3.8-27B-Fable-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Barcenas-Qwen3.8-27B-Fable-i1-GGUF
 - Modelo base (referencia): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio del fine-tune original (Danielbrdz): https://huggingface.co/Danielbrdz/Barcenas-Qwen3.8-27B-Fable (no verificado)
 - Guía de cuantizaciones IQ4/IQ3 (relacionada): https://gist.github.com/Vmarcelo49/98b382ec8f3a34e44035ce365cba46f4

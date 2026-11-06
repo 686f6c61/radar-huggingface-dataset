@@ -73,10 +73,10 @@ La comparación es orientativa porque se desconoce el tamaño real de `gpt2-zh-e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `gpt2-zh-englabel` | No disponible | No disponible | No disponible | HuggingFace, 12,5 GB, 0 descargas | No disponible |
-| GPT-2 (124M) | 124M | 1024 | MIT | Amplia en HuggingFace | No evaluado en esta ficha |
-| GPT-2 XL (1.5B) | 1,5B | 1024 | MIT | Amplia en HuggingFace | No evaluado en esta ficha |
-| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | Amplia en HuggingFace | No evaluado en esta ficha |
+| `gpt2-zh-englabel` | No disponible | No disponible | No disponible | Hugging Face, 12,5 GB, 0 descargas | No disponible |
+| GPT-2 (124M) | 124M | 1024 | MIT | Amplia en Hugging Face | No evaluado en esta ficha |
+| GPT-2 XL (1.5B) | 1,5B | 1024 | MIT | Amplia en Hugging Face | No evaluado en esta ficha |
+| Qwen2.5-1.5B | 1,5B | 32.768 | Apache 2.0 | Amplia en Hugging Face | No evaluado en esta ficha |
 
 No se puede afirmar que `gpt2-zh-englabel` sea equivalente a GPT-2 124M o 1.5B: el número de parámetros no está documentado.
 
@@ -94,5 +94,5 @@ No se puede afirmar que `gpt2-zh-englabel` sea equivalente a GPT-2 124M o 1.5B: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lindazeng979/gpt2-zh-englabel
+- Modelo en Hugging Face: https://huggingface.co/lindazeng979/gpt2-zh-englabel
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

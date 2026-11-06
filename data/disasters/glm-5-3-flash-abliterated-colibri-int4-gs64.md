@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace aloja un artefacto denominado `GLM-5.3-Flash-ABLITERATED-Colibri-INT4-gs64`, publicado por el usuario «disasters» bajo licencia MIT. El nombre sugiere una variante de la familia GLM sometida a «abliteration» (ablación de direcciones de rechazo en el espacio de activaciones) y posteriormente cuantizada a INT4 con tamaño de grupo 64, pero ninguna de estas características está confirmada en la model card, que se limita a declarar `license: mit`.
+Este repositorio de Hugging Face aloja un artefacto denominado `GLM-5.3-Flash-ABLITERATED-Colibri-INT4-gs64`, publicado por el usuario «disasters» bajo licencia MIT. El nombre sugiere una variante de la familia GLM sometida a «abliteration» (ablación de direcciones de rechazo en el espacio de activaciones) y posteriormente cuantizada a INT4 con tamaño de grupo 64, pero ninguna de estas características está confirmada en la model card, que se limita a declarar `license: mit`.
 
 En el momento de la consulta, el repositorio acumula 0 descargas y 0 «likes», no declara pipeline ni idiomas soportados y no incluye documentación técnica: no hay información verificable sobre arquitectura, número de parámetros, longitud de contexto, composición del dataset de entrenamiento ni resultados de evaluación.
 
@@ -86,7 +86,7 @@ No es posible establecer una comparativa fiable. Se desconoce el modelo base exa
 | Longitud de contexto | no disponible | requiere verificacion |
 | Rendimiento en benchmarks | no disponible | requiere verificacion |
 | Licencia | MIT declarada por el subidor (la licencia del modelo base no esta documentada) | requiere verificacion |
-| Disponibilidad | Repositorio publico en HuggingFace con 0 descargas | requiere verificacion |
+| Disponibilidad | Repositorio publico en Hugging Face con 0 descargas | requiere verificacion |
 | Trazabilidad del linaje | inexistente (no se indica modelo base ni revision) | requiere verificacion |
 
 ## Limitaciones y advertencias
@@ -105,7 +105,7 @@ No es posible establecer una comparativa fiable. Se desconoce el modelo base exa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/disasters/GLM-5.3-Flash-ABLITERATED-Colibri-INT4-gs64
+- Repositorio en Hugging Face: https://huggingface.co/disasters/GLM-5.3-Flash-ABLITERATED-Colibri-INT4-gs64
 - Model card del autor: sin contenido tecnico (unicamente `license: mit`)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados de la busqueda web: no se ha encontrado ningun recurso relevante sobre este modelo; los resultados devueltos corresponden a aplicaciones de listas de la compra (smartlist.food, appsmartlist.com, app.smartlist.online, smartlist.co, smartlist.us) y no guardan relacion con el artefacto.

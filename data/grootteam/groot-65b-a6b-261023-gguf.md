@@ -94,4 +94,4 @@ Groot ofrece el mejor ratio capacidad/tamaño del trío: supera a Qwen3.5-122B-A
 
 - Modelo (esta edición GGUF): https://huggingface.co/GrootTeam/Groot-65B-A6B-261023-GGUF
 - Licencia (qwen-community-1.0): https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
-- Otras ediciones (BF16, FP8, NVFP4): no disponible (URLs no proporcionadas; buscar bajo la organización GrootTeam en HuggingFace)
+- Otras ediciones (BF16, FP8, NVFP4): no disponible (URLs no proporcionadas; buscar bajo la organización GrootTeam en Hugging Face)

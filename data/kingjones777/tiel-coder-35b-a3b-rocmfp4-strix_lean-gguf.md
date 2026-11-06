@@ -81,7 +81,7 @@ Mediciones realizadas en AMD Ryzen AI MAX+ 395, ROCm 7.2.4, full offload.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-STRIX_LEAN-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-STRIX_LEAN-GGUF
 - Repo fuente (peculiar-ragdoll): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Base original (ornith-ai): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - ROCmFPX (GitHub): https://github.com/charlie12345/ROCmFPX

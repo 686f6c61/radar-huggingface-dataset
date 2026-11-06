@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Espacio de generación | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| P-JiT 21K MLX 8bit (esta ficha) | 2,18 B (DiT) + Qwen3.5-4B recortado | Píxeles | 1152×864 documentado | Apache-2.0 | HuggingFace, runner pjit-mlx |
-| P-JiT 21K (Linum-AI/pjit-21k) | 2,18 B (DiT) + Qwen3.5-4B | Píxeles | 1152×864 documentado | Apache-2.0 | HuggingFace, pesos PyTorch |
+| P-JiT 21K MLX 8bit (esta ficha) | 2,18 B (DiT) + Qwen3.5-4B recortado | Píxeles | 1152×864 documentado | Apache-2.0 | Hugging Face, runner pjit-mlx |
+| P-JiT 21K (Linum-AI/pjit-21k) | 2,18 B (DiT) + Qwen3.5-4B | Píxeles | 1152×864 documentado | Apache-2.0 | Hugging Face, pesos PyTorch |
 | Alternativas de DiT texto-a-imagen de escala similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de otros modelos comparables (por ejemplo, familias DiT de parámetros similares) con los que establecer una comparación cuantitativa de rendimiento, contexto o licencia. La comparación más directa disponible es interna: el mismo modelo en formato PyTorch sobre MPS, con 139 s y 14,9 GB de pico frente a 79 s y 3,6 GB de esta exportación MLX.
@@ -96,7 +96,7 @@ La información proporcionada no incluye datos de otros modelos comparables (por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VisualInference/P-JiT-21K-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/VisualInference/P-JiT-21K-MLX-8bit
 - Modelo base: https://huggingface.co/Linum-AI/pjit-21k
 - Runner pjit-mlx: https://github.com/felix-ab/pjit-mlx
 - Sección de exactitud del runner: https://github.com/felix-ab/pjit-mlx#exactness

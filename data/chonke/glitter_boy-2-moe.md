@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Glitter_Boy-2-MoE es un artefacto de investigación publicado por el usuario ChonkE en HuggingFace. Se trata de una derivación Mixture-of-Experts (MoE) del modelo denso Glitter_Boy-2.0, orientado a juegos de rol (roleplay, TTRPG), conversación y contenido sin filtros (uncensored). El modelo denso base se mantiene congelado como columna vertebral compartida, y se le añaden 7 expertos enrutados pequeños sobre 11 de sus 48 capas, con un router top-1 por token.
+Glitter_Boy-2-MoE es un artefacto de investigación publicado por el usuario ChonkE en Hugging Face. Se trata de una derivación Mixture-of-Experts (MoE) del modelo denso Glitter_Boy-2.0, orientado a juegos de rol (roleplay, TTRPG), conversación y contenido sin filtros (uncensored). El modelo denso base se mantiene congelado como columna vertebral compartida, y se le añaden 7 expertos enrutados pequeños sobre 11 de sus 48 capas, con un router top-1 por token.
 
 El problema que aborda es la especialización por dominios sin multiplicar el coste de cómputo: los expertos se entrenaron sobre porciones enrutadas de datos de matemáticas, ciencia, derecho, finanzas, código, lenguaje y análisis del dataset Morpho-72B-MoE-Data (Apache-2.0), mezcladas con salidas propias del modelo base y "floor anchors" escritas por el operador. El resultado total pesa 13.043.057.456 parámetros, aunque el coste activo por token crece solo un 1,3% respecto al base.
 
@@ -93,7 +93,7 @@ Lectura honesta del propio autor: el MoE sacrifica ~2,8 puntos de MMLU (sobre to
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Glitter_Boy-2-MoE | 13,04 B (1,135 B en expertos) | Denso congelado + 7 expertos top-1 en 11/48 capas | no disponible | Gemma | GGUF Q8 + safetensors, requiere fork de llama.cpp |
-| Glitter_Boy-2.0 | no disponible (denso) | Transformer denso (base Gemma-4-12B) | no disponible | Gemma | HuggingFace, formato estandar |
+| Glitter_Boy-2.0 | no disponible (denso) | Transformer denso (base Gemma-4-12B) | no disponible | Gemma | Hugging Face, formato estandar |
 | Gemma-4-12B (base limpio) | ~12 B | Transformer denso | no disponible | Gemma | Soporte estandar en llama.cpp, vLLM, etc. |
 
 Frente a su modelo base (Glitter_Boy-2.0), el MoE mejora la sonda de mecanicas (19/20 vs 18/20) y empatan en el banco canonico en Q8, pero pierde ~2,8 puntos de MMLU. Frente al Gemma-4-12B limpio, gana claramente en mecanicas RPG (95% vs 75%) pero pierde en MMLU (0,7206 vs 0,7624). No hay datos comparativos con otros MoE de tamano similar (por ejemplo Mixtral) en la informacion disponible.

@@ -96,7 +96,7 @@ La comparación directa disponible es la que publica el autor frente a GPT-2 124
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yumiao-dev/Yumiao-0.1B-Base
+- Modelo en Hugging Face: https://huggingface.co/yumiao-dev/Yumiao-0.1B-Base
 - Dataset AI-ModelScope/chinese-c4: https://huggingface.co/datasets/AI-ModelScope/chinese-c4
 - Dataset HuggingFaceFW/fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

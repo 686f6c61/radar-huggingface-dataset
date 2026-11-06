@@ -2,7 +2,7 @@
 
 ## Resumen
 
-altheavia/fun-matching es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de MoCo v3 (Momentum Contrast v3) orientada a tareas de emparejamiento (matching). El autor lo describe explicitamente como un banco de pruebas a escala tiny, cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se presenta como un modelo entrenado ni como un checkpoint con resultados de referencia.
+altheavia/fun-matching es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de MoCo v3 (Momentum Contrast v3) orientada a tareas de emparejamiento (matching). El autor lo describe explicitamente como un banco de pruebas a escala tiny, cuyo objetivo es inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se presenta como un modelo entrenado ni como un checkpoint con resultados de referencia.
 
 El repositorio incluye un fichero `model.py` con la implementacion y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta por defecto y un `model.safetensors` de 16.576 parametros que sirve unicamente como inicializacion valida para pruebas de humo (smoke tests). La model card indica de forma explicita que no se reclama ninguna puntuacion de benchmark.
 
@@ -78,7 +78,7 @@ La informacion proporcionada no incluye datos de benchmarks, licencias ni especi
 
 | Modelo | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| altheavia/fun-matching | Implementacion experimental MoCo v3 para matching, escala tiny | 16.576 | no disponible | Sin benchmarks publicados | MIT | Repositorio en HuggingFace, 0 descargas y 0 likes en el momento de la ficha |
+| altheavia/fun-matching | Implementacion experimental MoCo v3 para matching, escala tiny | 16.576 | no disponible | Sin benchmarks publicados | MIT | Repositorio en Hugging Face, 0 descargas y 0 likes en el momento de la ficha |
 | Implementacion de referencia de MoCo v3 (facebookresearch) | Marco autosupervisado contrastivo para vision | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Repositorio publico de investigacion |
 | Otros marcos autosupervisados comparables (SimCLR, DINO) | Aprendizaje de representaciones por contraste o destilacion | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Repositorios publicos de investigacion |
 
@@ -96,7 +96,7 @@ La informacion proporcionada no incluye datos de benchmarks, licencias ni especi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/altheavia/fun-matching
+- Hugging Face: https://huggingface.co/altheavia/fun-matching
 - Repositorio de referencia de MoCo v3 (Facebook AI Research): no disponible en la informacion proporcionada
 - Paper de MoCo v3: no disponible en la informacion proporcionada
 - Demos, blogs o repositorios adicionales: no disponible en la informacion proporcionada

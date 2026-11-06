@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rodrig-obarbo/classification-proto` es un repositorio de HuggingFace publicado por el usuario rodrig-obarbo que contiene una implementación mínima de una arquitectura Mixer orientada a tareas de clasificación. No es un modelo entrenado ni un release con resultados: la propia model card lo describe como un punto de partida reproducible cuyo checkpoint (`model.safetensors`) es válido únicamente para pruebas de humo (*smoke tests*).
+`rodrig-obarbo/classification-proto` es un repositorio de Hugging Face publicado por el usuario rodrig-obarbo que contiene una implementación mínima de una arquitectura Mixer orientada a tareas de clasificación. No es un modelo entrenado ni un release con resultados: la propia model card lo describe como un punto de partida reproducible cuyo checkpoint (`model.safetensors`) es válido únicamente para pruebas de humo (*smoke tests*).
 
 El modelo declara 16.576 parámetros totales, un orden de magnitud propio de un prototipo de laboratorio más que de un sistema desplegable. La configuración registrada indica arquitectura Mixer, escala "base", atención de ventana deslizante, fusión de bajo rango, activación GELU y normalización mediante BatchNorm. Se distribuye bajo licencia BSD-3-Clause en formato safetensors, acompañado de `config.json`, `training_args.json` y el script `predict.py`, que actúa como artefacto principal.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| classification-proto | 16.576 | no disponible (clasificación) | sin benchmarks publicados | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| classification-proto | 16.576 | no disponible (clasificación) | sin benchmarks publicados | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | MLP-Mixer (referencia arquitectónica) | no disponible | no disponible | no disponible | no disponible | referencia académica |
 | ResMLP (referencia arquitectónica) | no disponible | no disponible | no disponible | no disponible | referencia académica |
 | gMLP (referencia arquitectónica) | no disponible | no disponible | no disponible | no disponible | referencia académica |
@@ -83,12 +83,12 @@ No se dispone de datos comparativos cuantitativos en la información proporciona
 - Riesgo de alucinación: no aplica en el sentido generativo, pero existe riesgo de resultados sin significado predictivo si se usa el checkpoint sin entrenar.
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
 - No se define longitud de contexto ni ventana de entrada máxima en la información disponible.
-- Implementación personalizada: las APIs de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarlo.
+- Implementación personalizada: las APIs de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarlo.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con conservación del aviso de copyright y la cláusula de exención de responsabilidad; deben revisarse por separado los términos de los conjuntos de datos externos que se utilicen con el modelo.
 - Para producción, no debe presentarse ningún resultado derivado de este repositorio sin documentar el entrenamiento completo, las semillas, las versiones de entorno y los *logs* asociados.
 - El repositorio tiene 0 descargas y 0 *likes*, por lo que no existe validación por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rodrig-obarbo/classification-proto
+- Hugging Face: https://huggingface.co/rodrig-obarbo/classification-proto
 - Paper, blog, repositorio o demo adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relacionados con el modelo; los resultados obtenidos correspondían a contenidos no vinculados (páginas sobre una calle de Glasgow) y se descartan por no ser pertinentes.

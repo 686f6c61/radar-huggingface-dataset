@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ardana-ai/decider-2b-ONNX
+- Modelo en Hugging Face: https://huggingface.co/ardana-ai/decider-2b-ONNX
 - Modelo base: https://huggingface.co/Mapika/decider-2b
 - Revision concreta del modelo base usada en la conversion: https://huggingface.co/Mapika/decider-2b/tree/533964dae8be954c5b5e19fa4948e48408094c1e
 - Los resultados de busqueda web disponibles no contienen enlaces relevantes para este modelo (papers, blogs, repos o demos).

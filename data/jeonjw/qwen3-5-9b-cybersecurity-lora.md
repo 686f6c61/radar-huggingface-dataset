@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-CyberSecurity-LoRA es un ajuste fino (fine-tuning) mediante LoRA del modelo base unsloth/Qwen3.5-9B, publicado por el usuario jeonjw en HuggingFace. El modelo está especializado, segun indica su nombre, en tareas de ciberseguridad, y se distribuye como un adaptador LoRA en formato safetensors (el repositorio ocupa aproximadamente 0,1 GB, lo que confirma que se trata de un adaptador y no de los pesos completos del modelo base).
+Qwen3.5-9B-CyberSecurity-LoRA es un ajuste fino (fine-tuning) mediante LoRA del modelo base unsloth/Qwen3.5-9B, publicado por el usuario jeonjw en Hugging Face. El modelo está especializado, segun indica su nombre, en tareas de ciberseguridad, y se distribuye como un adaptador LoRA en formato safetensors (el repositorio ocupa aproximadamente 0,1 GB, lo que confirma que se trata de un adaptador y no de los pesos completos del modelo base).
 
 El modelo se ha entrenado con la librería Unsloth, que el autor destaca por permitir un entrenamiento "2x más rápido" que los flujos convencionales. La model card es extremadamente escueta: no incluye información sobre el dataset de entrenamiento, hiperparámetros, número de pasos, resultados de evaluación ni detalles sobre el proceso de alineación. La información disponible se limita a los metadatos del repositorio y a la declaración del modelo base.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jeonjw/Qwen3.5-9B-CyberSecurity-LoRA | 9B (base) + LoRA | No disponible | Ciberseguridad (declarada) | Apache 2.0 | HuggingFace |
-| unsloth/Qwen3.5-9B | 9B | No disponible | Generalista | No disponible | HuggingFace |
+| jeonjw/Qwen3.5-9B-CyberSecurity-LoRA | 9B (base) + LoRA | No disponible | Ciberseguridad (declarada) | Apache 2.0 | Hugging Face |
+| unsloth/Qwen3.5-9B | 9B | No disponible | Generalista | No disponible | Hugging Face |
 | Alternativas de ciberseguridad de 7-9B | No disponible | No disponible | Ciberseguridad | Variable | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con modelos de ciberseguridad comparables; los datos del modelo base tampoco están documentados en la información proporcionada.
@@ -81,6 +81,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace: jeonjw/Qwen3.5-9B-CyberSecurity-LoRA](https://huggingface.co/jeonjw/Qwen3.5-9B-CyberSecurity-LoRA)
+- [Hugging Face: jeonjw/Qwen3.5-9B-CyberSecurity-LoRA](https://huggingface.co/jeonjw/Qwen3.5-9B-CyberSecurity-LoRA)
 - [Modelo base: unsloth/Qwen3.5-9B](https://huggingface.co/unsloth/Qwen3.5-9B)
 - [Unsloth (repositorio)](https://github.com/unslothai/unsloth)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bilby Onco es un prototipo de investigación desarrollado por CloudKites AI Lab, publicado en HuggingFace bajo el identificador `cloudkites/bilby-onco-demo`. El repositorio no contiene pesos de modelo descargables de forma convencional: es un espacio de demostración que aloja vídeos grabados por la propia aplicación, en los que el sistema responde a preguntas sobre un caso de cáncer de mama fundamentándose en las guías NCCN para cáncer de mama. El modelo lee el caso, recorre las páginas del diagrama de flujo de la guía y muestra los registros originales de la guía junto con la página de procedencia, tras lo cual un pequeño selector de registros escoge los más relevantes para la pregunta formulada.
+Bilby Onco es un prototipo de investigación desarrollado por CloudKites AI Lab, publicado en Hugging Face bajo el identificador `cloudkites/bilby-onco-demo`. El repositorio no contiene pesos de modelo descargables de forma convencional: es un espacio de demostración que aloja vídeos grabados por la propia aplicación, en los que el sistema responde a preguntas sobre un caso de cáncer de mama fundamentándose en las guías NCCN para cáncer de mama. El modelo lee el caso, recorre las páginas del diagrama de flujo de la guía y muestra los registros originales de la guía junto con la página de procedencia, tras lo cual un pequeño selector de registros escoge los más relevantes para la pregunta formulada.
 
 La relevancia del proyecto reside en su enfoque de recuperación aumentada sobre documentación clínica estructurada (diagramas de flujo de guías oncológicas) con trazabilidad explícita a la página de origen, lo que resulta poco habitual en demos de modelos médicos. No se dispone de información sobre arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento; la model card se centra exclusivamente en la demostración funcional y en las advertencias de uso.
 
@@ -78,7 +78,7 @@ No disponible. La información proporcionada no identifica la arquitectura, el t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cloudkites/bilby-onco-demo
+- Hugging Face: https://huggingface.co/cloudkites/bilby-onco-demo
 - Vídeo Windows, inglés: https://huggingface.co/cloudkites/bilby-onco-demo/resolve/main/demo/bilby-onco-0.1.0-windows-en.mp4
 - Vídeo Windows, vietnamita: https://huggingface.co/cloudkites/bilby-onco-demo/resolve/main/demo/bilby-onco-0.1.0-windows-vi.mp4
 - Vídeo macOS, inglés: https://huggingface.co/cloudkites/bilby-onco-demo/resolve/main/demo/bilby-onco-0.1.0-macos-en.mp4

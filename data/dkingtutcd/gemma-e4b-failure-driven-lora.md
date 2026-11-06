@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dkingtutcd/gemma-e4b-failure-driven-lora` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, que a su vez deriva de la familia Gemma 4 de Google en su variante E4B (la versión "effective 4B" orientada a eficiencia). El autor del ajuste es el usuario de HuggingFace `dkingtutcd`, y el entrenamiento se ha realizado con la librería Unsloth junto con TRL de HuggingFace, según indica la propia model card. El resultado se ha publicado en precisión FP16 (16 bits) con pesos en formato safetensors.
+`dkingtutcd/gemma-e4b-failure-driven-lora` es un ajuste fino (fine-tuning) del modelo base `unsloth/gemma-4-E4B-it-unsloth-bnb-4bit`, que a su vez deriva de la familia Gemma 4 de Google en su variante E4B (la versión "effective 4B" orientada a eficiencia). El autor del ajuste es el usuario de Hugging Face `dkingtutcd`, y el entrenamiento se ha realizado con la librería Unsloth junto con TRL de Hugging Face, según indica la propia model card. El resultado se ha publicado en precisión FP16 (16 bits) con pesos en formato safetensors.
 
 El modelo resuelve el problema de adaptar un modelo multimodal instruido (image-text-to-text) a un dominio concreto mediante un LoRA de ajuste fino, aunque la model card no detalla qué tipo de datos de fallo ("failure-driven") se han utilizado ni qué comportamiento específico se pretende mejorar. Es relevante ahora porque la familia Gemma 4 es reciente y este tipo de adaptaciones ligeras permite especializar modelos multimodales sin reentrenar desde cero, aunque la documentación publicada es mínima y no permite evaluar su calidad real.
 
@@ -44,7 +44,7 @@ El nombre "failure-driven" sugiere que el ajuste se ha orientado a corregir fall
 - Evaluación comparativa frente al Gemma 4 E4B original: útil para medir el impacto real del LoRA en tareas de instrucción, dado que se publica en FP16 y es directamente cargable.
 - Base para nuevos ajustes: al ser un modelo FP16 fusionado y con licencia Apache 2.0, puede servir como punto de partida para fine-tunings posteriores con Unsloth.
 - Investigación sobre metodologías de ajuste por fallos: el nombre y el origen sugieren un caso de estudio sobre entrenamiento correctivo, útil para quienes investigan técnicas de alineación.
-- Despliegue experimental con TGI: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, por lo que puede probarse en infraestructura de HuggingFace Endpoints, aunque sin garantías de rendimiento documentadas.
+- Despliegue experimental con TGI: las etiquetas incluyen `text-generation-inference` y `endpoints_compatible`, por lo que puede probarse en infraestructura de Hugging Face Endpoints, aunque sin garantías de rendimiento documentadas.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Multimodal | Disponibilidad |
 |---|---|---|---|---|---|
-| dkingtutcd/gemma-e4b-failure-driven-lora | 7.996.156.490 | no disponible | apache-2.0 | Sí (image-text-to-text) | HuggingFace, FP16 |
-| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible (E4B) | no disponible | no disponible | Sí | HuggingFace, bnb-4bit |
-| Gemma 4 E4B-it (original de Google) | no disponible | no disponible | no disponible (condiciones de Gemma) | Sí | HuggingFace |
+| dkingtutcd/gemma-e4b-failure-driven-lora | 7.996.156.490 | no disponible | apache-2.0 | Sí (image-text-to-text) | Hugging Face, FP16 |
+| unsloth/gemma-4-E4B-it-unsloth-bnb-4bit (base) | no disponible (E4B) | no disponible | no disponible | Sí | Hugging Face, bnb-4bit |
+| Gemma 4 E4B-it (original de Google) | no disponible | no disponible | no disponible (condiciones de Gemma) | Sí | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -76,12 +76,12 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Solo se declara soporte de inglés; el comportamiento en otros idiomas no está garantizado.
 - No se confirma que las capacidades multimodales del modelo base se conserven tras el ajuste LoRA.
 - Licencia Apache 2.0 declarada, lo que permite uso comercial, pero conviene verificar las condiciones del modelo base Gemma 4 de Google, que pueden imponer restricciones adicionales.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: no hay evidencia de uso en producción ni validación por la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: no hay evidencia de uso en producción ni validación por la comunidad.
 - El nombre del modelo sugiere un ajuste correctivo, pero sin datos no puede recomendarse para producción crítica.
 
 ## Enlaces
 
-- [HuggingFace: dkingtutcd/gemma-e4b-failure-driven-lora](https://huggingface.co/dkingtutcd/gemma-e4b-failure-driven-lora)
+- [Hugging Face: dkingtutcd/gemma-e4b-failure-driven-lora](https://huggingface.co/dkingtutcd/gemma-e4b-failure-driven-lora)
 - [Modelo base: unsloth/gemma-4-E4B-it-unsloth-bnb-4bit](https://huggingface.co/unsloth/gemma-4-E4B-it-unsloth-bnb-4bit)
 - [Unsloth (GitHub)](https://github.com/unslothai/unsloth)
-- [TRL de HuggingFace](https://github.com/huggingface/trl)
+- [TRL de Hugging Face](https://github.com/huggingface/trl)

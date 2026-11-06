@@ -23,7 +23,7 @@ Se publican tres variantes: CoRM-182M (top-1 y top-2) con 777M de parámetros to
 
 CoRM se basa en una arquitectura de transformer con capas de expertos conmutables (mixture-of-experts). La innovación central es el router contrastivo, que asigna cada token a uno o dos expertos (top-1 o top-2) comparando la atención de cada experto con una referencia móvil calculada mediante una media móvil exponencial (EMA). Esta referencia dinámica sirve como "estado de comparación" para que el router no se deje llevar por la magnitud de las activaciones, sino por la diferencia (gap) entre la atención del experto y la referencia. Según el código oficial, esto mejora la modularidad y la especialización de los expertos.
 
-No se han publicado los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF, DPO, etc.) en la información disponible. El código del modelo es personalizado y se distribuye vía `trust_remote_code=True` en Transformers. Los checkpoints enumerados en el repositorio de HuggingFace son:
+No se han publicado los datos de entrenamiento (número de tokens, composición del dataset, uso de RLHF, DPO, etc.) en la información disponible. El código del modelo es personalizado y se distribuye vía `trust_remote_code=True` en Transformers. Los checkpoints enumerados en el repositorio de Hugging Face son:
 
 | Modelo | Parámetros activos | Parámetros totales | Routing |
 |---|---|---|---|
@@ -36,7 +36,7 @@ No se han publicado los datos de entrenamiento (número de tokens, composición 
 - Generación de texto autoregresiva (pipeline text-generation) con arquitectura causal de lenguaje.
 - Enrutado sparse de expertos con soporte para selección top-1 y top-2, lo que reduce el coste computacional por token.
 - Implementación de un router con estado de referencia EMA dinámico, que permite una asignación más contrastiva en comparación con routers basados en magnitud.
-- Requiere código de modelado personalizado a través de HuggingFace Transformers (`trust_remote_code=True`).
+- Requiere código de modelado personalizado a través de Hugging Face Transformers (`trust_remote_code=True`).
 - No se han documentado capacidades adicionales como visión, audio, tool calling, agentes, ni soporte explícito de multi-step reasoning en la información analizada.
 
 ## Casos de uso
@@ -50,7 +50,7 @@ No se han publicado los datos de entrenamiento (número de tokens, composición 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K, ni comparaciones con otros modelos en el repositorio de HuggingFace o en la documentación analizada.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K, ni comparaciones con otros modelos en el repositorio de Hugging Face o en la documentación analizada.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No disponible. No se han especificado modelos comparables en la documentación d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/ilsp/CoRM](https://huggingface.co/ilsp/CoRM)
+- Repositorio de Hugging Face: [https://huggingface.co/ilsp/CoRM](https://huggingface.co/ilsp/CoRM)
 - Checkpoint CoRM-182M-top1: [https://huggingface.co/ilsp/CoRM-182M-top1](https://huggingface.co/ilsp/CoRM-182M-top1)
 - Checkpoint CoRM-182M-top2: [https://huggingface.co/ilsp/CoRM-182M-top2](https://huggingface.co/ilsp/CoRM-182M-top2)
 - Checkpoint CoRM-469M-top1: [https://huggingface.co/ilsp/CoRM-469M-top1](https://huggingface.co/ilsp/CoRM-469M-top1)

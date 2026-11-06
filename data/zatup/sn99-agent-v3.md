@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zatup/sn99-agent-v3` es un repositorio publicado en HuggingFace por el usuario `zatup` el 10 de agosto de 2026, con una última actualización el 13 de agosto de 2026. El nombre sugiere que se trata de la tercera versión de un modelo orientado a tareas de agente (agent), y la etiqueta `region:us` indica un enfoque geográfico hacia Estados Unidos. Sin embargo, el repositorio no contiene archivos de pesos ni documentación técnica visible: el tamaño del repositorio es de 0.0 GB, no se especifica pipeline, licencia ni idiomas, y no se ha publicado ningún benchmark. En el momento de la consulta, el modelo tiene 0 descargas y 1 like, lo que apunta a un proyecto en fase inicial o a un repositorio meramente declarativo sin contenido real. Por tanto, no es posible evaluar sus capacidades ni su rendimiento con la información disponible.
+El modelo `zatup/sn99-agent-v3` es un repositorio publicado en Hugging Face por el usuario `zatup` el 10 de agosto de 2026, con una última actualización el 13 de agosto de 2026. El nombre sugiere que se trata de la tercera versión de un modelo orientado a tareas de agente (agent), y la etiqueta `region:us` indica un enfoque geográfico hacia Estados Unidos. Sin embargo, el repositorio no contiene archivos de pesos ni documentación técnica visible: el tamaño del repositorio es de 0.0 GB, no se especifica pipeline, licencia ni idiomas, y no se ha publicado ningún benchmark. En el momento de la consulta, el modelo tiene 0 descargas y 1 like, lo que apunta a un proyecto en fase inicial o a un repositorio meramente declarativo sin contenido real. Por tanto, no es posible evaluar sus capacidades ni su rendimiento con la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. Al no existir información sobre parámetros, contexto, rendimien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zatup/sn99-agent-v3
+- Repositorio Hugging Face: https://huggingface.co/zatup/sn99-agent-v3

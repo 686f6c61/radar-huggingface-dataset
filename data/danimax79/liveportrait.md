@@ -4,7 +4,7 @@
 
 LivePortrait es un modelo de animación de retratos (image-to-video) desarrollado por Kuaishou Technology en colaboración con la Universidad de Ciencia y Tecnología de China y la Universidad de Fudan. Su objetivo es transferir los movimientos de un video conductor (pose de cabeza, expresiones faciales, mirada y movimiento de labios) a una imagen estática de un rostro, generando un video animado que preserva la identidad de la persona. El método se basa en mecanismos de *stitching* y *retargeting* que permiten un control fino sobre la animación, y se presenta en el artículo técnico arXiv:2407.03168.
 
-Esta entrada en HuggingFace, publicada por el usuario Danimax79, contiene una conversión del modelo a formato ONNX (2,1 GB), lo que facilita su despliegue en entornos de inferencia con ONNX Runtime. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. El modelo está etiquetado con el pipeline `image-to-video` y la librería `liveportrait`.
+Esta entrada en Hugging Face, publicada por el usuario Danimax79, contiene una conversión del modelo a formato ONNX (2,1 GB), lo que facilita su despliegue en entornos de inferencia con ONNX Runtime. La licencia es MIT, lo que permite uso comercial y modificación sin restricciones significativas. El modelo está etiquetado con el pipeline `image-to-video` y la librería `liveportrait`.
 
 ## Especificaciones tecnicas
 
@@ -61,13 +61,13 @@ No se dispone de información comparativa con otros modelos de animación de ret
 - No se documentan limitaciones específicas en la model card. Sin embargo, al ser un modelo de animación facial, es probable que la calidad dependa de la claridad de la imagen fuente y de la estabilidad del video conductor.
 - Puede producir artefactos en casos de oclusiones, iluminación extrema o ángulos poco comunes, aunque no se ha confirmado.
 - La licencia MIT permite uso comercial, pero se debe verificar que los pesos del modelo no incorporen datos con derechos de autor adicionales.
-- El repositorio de HuggingFace es una conversión a ONNX de un tercero (Danimax79), no la versión oficial de Kuaishou. Se recomienda contrastar con el repositorio original para garantizar la integridad de los pesos.
+- El repositorio de Hugging Face es una conversión a ONNX de un tercero (Danimax79), no la versión oficial de Kuaishou. Se recomienda contrastar con el repositorio original para garantizar la integridad de los pesos.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Danimax79/LivePortrait
+- Repositorio de Hugging Face: https://huggingface.co/Danimax79/LivePortrait
 - Paper (arXiv): https://arxiv.org/pdf/2407.03168
 - Página del proyecto: https://liveportrait.github.io
 - Repositorio oficial en GitHub: https://github.com/KwaiVGI/LivePortrait
-- Espacio de HuggingFace oficial: https://huggingface.co/spaces/KwaiVGI/liveportrait
+- Espacio de Hugging Face oficial: https://huggingface.co/spaces/KwaiVGI/liveportrait
 - Repositorio de pesos oficiales: https://huggingface.co/KwaiVGI/LivePortrait

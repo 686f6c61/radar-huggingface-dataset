@@ -2,7 +2,7 @@
 
 ## Resumen
 
-yolos-small-mlx es una conversion no oficial a MLX del modelo hustvl/yolos-small, un detector de objetos basado en una arquitectura ViT practicamente sin modificaciones. Lo publica el usuario masahiroid y su objetivo es permitir la inferencia de YOLOS en Apple Silicon usando el framework MLX de Apple, en lugar de PyTorch. El modelo original fue desarrollado por el Huazhong University of Science and Technology junto con el equipo de HuggingFace, y entrenado sobre COCO.
+yolos-small-mlx es una conversion no oficial a MLX del modelo hustvl/yolos-small, un detector de objetos basado en una arquitectura ViT practicamente sin modificaciones. Lo publica el usuario masahiroid y su objetivo es permitir la inferencia de YOLOS en Apple Silicon usando el framework MLX de Apple, en lugar de PyTorch. El modelo original fue desarrollado por el Huazhong University of Science and Technology junto con el equipo de Hugging Face, y entrenado sobre COCO.
 
 Se trata de un modelo pequeno: 30.684.768 parametros (aproximadamente 30,7 M), almacenados en float16, con un repositorio de 0,1 GB. La entrada es una imagen RGB de 512x864 pixeles en formato NHWC y tamano fijo; la salida son 100 detecciones candidatas, cada una con 92 logits (91 clases de COCO mas la clase "sin objeto") y una caja en formato cxcywh normalizado entre 0 y 1.
 
@@ -98,7 +98,7 @@ Las cifras de rendimiento (AP en COCO) de estos modelos no se han facilitado en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/yolos-small-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/yolos-small-mlx
 - Modelo base: https://huggingface.co/hustvl/yolos-small
 - MLX (framework de Apple): https://github.com/ml-explore/mlx
 - model-audit-lite (herramienta de auditoria citada por el autor): https://github.com/masahirocom/model-audit-lite

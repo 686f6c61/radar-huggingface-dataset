@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ValentIA_BETA1.0 es un modelo de generacion de texto publicado por el usuario Bloodman-the-master en HuggingFace, distribuido bajo licencia Apache 2.0 y con identificador de idioma unico `en` (ingles). Se trata de un modelo denso de 9.241.705.984 parametros (aproximadamente 9,24 mil millones), lo que lo situa en la franja de los modelos medianos que pueden ejecutarse en hardware de consumo con cuantizacion. Los tags del repositorio incluyen `gemma2`, `transformers`, `gguf`, `llama-cpp`, `unsloth` y `text-generation-inference`, lo que sugiere una arquitectura derivada de la familia Gemma 2 y un flujo de trabajo de ajuste fino asistido por Unsloth, aunque el autor no confirma estos extremos en la informacion disponible.
+ValentIA_BETA1.0 es un modelo de generacion de texto publicado por el usuario Bloodman-the-master en Hugging Face, distribuido bajo licencia Apache 2.0 y con identificador de idioma unico `en` (ingles). Se trata de un modelo denso de 9.241.705.984 parametros (aproximadamente 9,24 mil millones), lo que lo situa en la franja de los modelos medianos que pueden ejecutarse en hardware de consumo con cuantizacion. Los tags del repositorio incluyen `gemma2`, `transformers`, `gguf`, `llama-cpp`, `unsloth` y `text-generation-inference`, lo que sugiere una arquitectura derivada de la familia Gemma 2 y un flujo de trabajo de ajuste fino asistido por Unsloth, aunque el autor no confirma estos extremos en la informacion disponible.
 
 La relevancia practica del modelo reside en su formato de publicacion: el repositorio principal usa `safetensors` y existe una conversion a GGUF (documentada en el repositorio hermano `ValentIA-Q4_K_M-GGUF`) pensada para su uso directo con `llama.cpp`, tanto en modo CLI como en servidor. Esto lo hace desplegable en CPU y en GPUs modestas sin necesidad de infraestructura de servidor dedicada.
 
@@ -74,10 +74,10 @@ La comparativa se establece frente a modelos de tamano y categoria equivalentes,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ValentIA_BETA1.0 | 9,24 B | No disponible | Apache 2.0 | HuggingFace, safetensors + GGUF |
-| Gemma 2 9B | 9,24 B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace, safetensors + GGUF |
-| Llama 3.1 8B | 8,03 B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | HuggingFace, safetensors + GGUF |
-| Mistral 7B v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | HuggingFace, safetensors + GGUF |
+| ValentIA_BETA1.0 | 9,24 B | No disponible | Apache 2.0 | Hugging Face, safetensors + GGUF |
+| Gemma 2 9B | 9,24 B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face, safetensors + GGUF |
+| Llama 3.1 8B | 8,03 B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Hugging Face, safetensors + GGUF |
+| Mistral 7B v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | Hugging Face, safetensors + GGUF |
 
 No se dispone de datos de rendimiento comparativos para ValentIA_BETA1.0 que permitan contrastar calidad de generacion, razonamiento o codigo frente a estas alternativas.
 
@@ -91,11 +91,11 @@ No se dispone de datos de rendimiento comparativos para ValentIA_BETA1.0 que per
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, pero el autor no acredita la procedencia de los pesos base ni los terminos que pudieran aplicarles si el modelo deriva de Gemma 2 (cuyos terminos de uso son distintos de Apache 2.0). Este punto deberia aclararse antes de un uso comercial.
 - Naturaleza "BETA": el propio nombre del modelo indica que se trata de una version preliminar, sin garantias de estabilidad ni de mantenimiento.
 - Adopcion nula: 0 descargas y 0 likes en el momento de la consulta, sin comunidad ni issues que permitan contrastar comportamiento en escenarios reales.
-- Fecha de creacion del repositorio: 10 de septiembre de 2026, segun los metadatos de HuggingFace.
+- Fecha de creacion del repositorio: 10 de septiembre de 2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Bloodman-the-master/ValentIA_BETA1.0
+- Repositorio principal en Hugging Face: https://huggingface.co/Bloodman-the-master/ValentIA_BETA1.0
 - Modelo base declarado: https://huggingface.co/Bloodman-the-master/ValentIA
 - Repositorio de la conversion GGUF citada en la model card: https://huggingface.co/Bloodman-the-master/ValentIA-Q4_K_M-GGUF
 - Modelo referenciado en los tags: https://huggingface.co/Bloodman-the-master/ValentIA-OLD

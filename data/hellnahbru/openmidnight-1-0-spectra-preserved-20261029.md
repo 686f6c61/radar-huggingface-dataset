@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Entrada / salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenMidnight-1.0-SPECTRA | 1.134.774.272 | tesela 224 x 224 / embedding 1.536 | no aplica | apache-2.0 | HuggingFace (timm) |
-| OpenMidnight-1.1-SPECTRA | no disponible | no disponible | no aplica | no disponible | HuggingFace (medarc) |
-| SophontAI/OpenMidnight (base) | no disponible | no disponible | no aplica | no disponible | HuggingFace |
+| OpenMidnight-1.0-SPECTRA | 1.134.774.272 | tesela 224 x 224 / embedding 1.536 | no aplica | apache-2.0 | Hugging Face (timm) |
+| OpenMidnight-1.1-SPECTRA | no disponible | no disponible | no aplica | no disponible | Hugging Face (medarc) |
+| SophontAI/OpenMidnight (base) | no disponible | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada; la unica diferencia documentada es que 1.1-SPECTRA es la version recomendada frente a este release legacy 1.0.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hellnahbru/OpenMidnight-1.0-SPECTRA-preserved-20261029
+- Modelo en Hugging Face: https://huggingface.co/hellnahbru/OpenMidnight-1.0-SPECTRA-preserved-20261029
 - Modelo base: https://huggingface.co/SophontAI/OpenMidnight
 - Version recomendada: https://huggingface.co/medarc/OpenMidnight-1.1-SPECTRA
 - MedARC: https://www.medarc.ai/

@@ -109,5 +109,5 @@ No se han publicado benchmarks comparativos con otros modelos en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s0nh/byte-level-code-mtp-32-0.5B
+- Modelo en Hugging Face: https://huggingface.co/s0nh/byte-level-code-mtp-32-0.5B
 - Perfil del autor: https://huggingface.co/s0nh

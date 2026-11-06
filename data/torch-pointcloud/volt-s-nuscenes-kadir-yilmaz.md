@@ -76,8 +76,8 @@ Los autores reportan ademas 80,49 mIoU en una sola pasada y 81,11 mIoU con test-
 
 | Modelo | Parametros | Contexto / entrada | mIoU nuScenes | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| volt-s.nuscenes.kadir-yilmaz | 23,6 M | Nube de puntos, 4 canales, 16 clases | 80,57 (simple) | MIT | HuggingFace (torch-pointcloud) |
-| Volt original (KadirYilmaz/Volt) | no disponible | Nube de puntos, nuScenes | 80,49 (1 pasada) / 81,11 (TTA 10 vistas) | MIT | HuggingFace |
+| volt-s.nuscenes.kadir-yilmaz | 23,6 M | Nube de puntos, 4 canales, 16 clases | 80,57 (simple) | MIT | Hugging Face (torch-pointcloud) |
+| Volt original (KadirYilmaz/Volt) | no disponible | Nube de puntos, nuScenes | 80,49 (1 pasada) / 81,11 (TTA 10 vistas) | MIT | Hugging Face |
 | Otras arquitecturas de segmentacion 3D | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye resultados de modelos alternativos comparables (PointNet++, MinkowskiNet, SPVCNN, etc.) sobre nuScenes, por lo que no es posible establecer una comparativa numerica rigurosa mas alla de la variante original de Volt.
@@ -96,7 +96,7 @@ La informacion proporcionada no incluye resultados de modelos alternativos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/volt-s.nuscenes.kadir-yilmaz
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/volt-s.nuscenes.kadir-yilmaz
 - Modelo original: https://huggingface.co/KadirYilmaz/Volt
 - Paper (arXiv): https://arxiv.org/abs/2604.19609
 - Libreria torch-pointcloud (GitHub): https://github.com/arthurdjn/pytorch-pointcloud

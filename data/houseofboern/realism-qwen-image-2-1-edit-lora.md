@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA de realismo o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houseofboern/realism-qwen-image-2.1-edit-lora
+- Modelo en Hugging Face: https://huggingface.co/houseofboern/realism-qwen-image-2.1-edit-lora
 - Modelo base Qwen-Image-2.1: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Trainer Fizgig (repositorio, commit 5d5ced3): https://github.com/shootthesound/Fizgig

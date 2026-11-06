@@ -82,8 +82,8 @@ El autor atribuye la diferencia de velocidad al host (invitado virtualizado sobr
 | Modelo | Tamano | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.8-27B-W3Rot-INT3 (este) | 27B | W3A4 INT3 (overlay Paiton) | 262K | Apache-2.0 | Overlay + base NVFP4 requerida |
-| unsloth/Qwen3.8-27B-NVFP4 (base) | 27B | NVFP4 (4 bits) | 262K | Apache-2.0 | Modelo completo en HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | Pesos originales | 262K | Apache-2.0 | Checkpoint completo en HuggingFace |
+| unsloth/Qwen3.8-27B-NVFP4 (base) | 27B | NVFP4 (4 bits) | 262K | Apache-2.0 | Modelo completo en Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | 27B | Pesos originales | 262K | Apache-2.0 | Checkpoint completo en Hugging Face |
 | W3A4 oficial de Qwen3.8-27B | 27B | W3A4 INT3 | 262K | no disponible | Pesos oficiales (referencia de rendimiento) |
 
 En calidad, el overlay iguala a la versión oficial W3A4 en MMLU-Pro y pierde 2,2 y 3,7 puntos en GSM8K y HumanEval respectivamente, con un repositorio de solo 9,6 GB al reutilizar la base NVFP4. Frente a la variante NVFP4 de 4 bits, ofrece menor footprint a costa de una ligera degradación en codigo y matematicas.

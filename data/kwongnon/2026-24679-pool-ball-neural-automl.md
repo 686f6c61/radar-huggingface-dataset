@@ -85,7 +85,7 @@ La model card no incluye comparativa con alternativas. La siguiente tabla confro
 
 | Modelo | Parametros (referencia) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kwongnon/2026-24679-pool-ball-neural-automl (MobileNetV3-Large) | No disponible en la ficha; ~5,4 M por arquitectura | No aplica | No disponible | Repositorio HuggingFace de 0,0 GB; pesos no confirmados |
+| kwongnon/2026-24679-pool-ball-neural-automl (MobileNetV3-Large) | No disponible en la ficha; ~5,4 M por arquitectura | No aplica | No disponible | Repositorio Hugging Face de 0,0 GB; pesos no confirmados |
 | MobileNetV3-Small (timm) | ~2,5 M | No aplica | Licencia de `timm`/PyTorch (referencia externa) | Pública en librerías de visión |
 | EfficientNet-B0 (timm) | ~5,3 M | No aplica | Licencia de `timm`/PyTorch (referencia externa) | Pública en librerías de visión |
 | ResNet-18 (torchvision) | ~11,7 M | No aplica | BSD-3 (referencia externa) | Pública en librerías de visión |
@@ -109,8 +109,8 @@ No se dispone de comparaciones de rendimiento con otros clasificadores de bolas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kwongnon/2026-24679-pool-ball-neural-automl
+- Modelo en Hugging Face: https://huggingface.co/kwongnon/2026-24679-pool-ball-neural-automl
 - Model card del autor: incluida en la página del modelo (única fuente técnica disponible)
-- Repositorio del autor en HuggingFace: https://huggingface.co/kwongnon
+- Repositorio del autor en Hugging Face: https://huggingface.co/kwongnon
 
 Nota: la búsqueda web realizada no devolvió ningún enlace relevante para este modelo; los únicos resultados obtenidos correspondían a dominios sin relación alguna con el modelo ni con visión por computador, por lo que se han descartado. No se dispone de *paper*, blog, repositorio de código ni demostración asociados al modelo. Las referencias a las arquitecturas MobileNetV3, EfficientNet, ResNet y a la planificación ASHA citadas en las secciones anteriores corresponden a la literatura pública de dichas técnicas, no a documentación aportada por el autor.

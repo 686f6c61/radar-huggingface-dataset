@@ -86,7 +86,7 @@ No disponible. Al no tratarse de un modelo publicado con arquitectura, parametro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-explicit-b1ga1-s12-r2-20260905-e88b2ef8
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-explicit-b1ga1-s12-r2-20260905-e88b2ef8
 - Paper: no disponible.
 - Blog o articulo tecnico: no disponible.
 - Repositorio de codigo: no disponible.

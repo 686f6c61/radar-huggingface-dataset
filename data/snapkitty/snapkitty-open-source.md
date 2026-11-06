@@ -15,7 +15,7 @@ La relevancia actual radica en la creciente necesidad de auditar y verificar pip
 | Parametros activos | No disponible |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (según metadatos de HuggingFace) |
+| Idiomas soportados | Inglés (según metadatos de Hugging Face) |
 | Licencia | Apache-2.0 (código y documentación); núcleo de investigación bajo BSL-1.1 / AGPL-3.0 / MPL-2.0; patente pendiente |
 | Formato de pesos | No disponible (no se distribuyen pesos; el repositorio contiene código fuente y especificaciones) |
 
@@ -68,10 +68,10 @@ No disponible. SnapKitty no es un modelo de lenguaje comparable a otros LLMs; es
 - El proyecto se centra en inglés; no hay soporte multilingüe declarado.
 - La dependencia de MUMPS (GT.M o Caché) puede ser un obstáculo para entornos sin esa infraestructura.
 - La model card advierte explícitamente que no se debe citar el repositorio como evidencia de mejoras de rendimiento sin ejecutar benchmarks independientes.
-- No se proporcionan pesos ni un modelo desplegable; el pipeline de HuggingFace es "text-generation" pero no hay artefactos de modelo.
+- No se proporcionan pesos ni un modelo desplegable; el pipeline de Hugging Face es "text-generation" pero no hay artefactos de modelo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/snapkitty-open-source
+- Hugging Face: https://huggingface.co/Snapkitty/snapkitty-open-source
 - Repositorio GitHub (según la cita): https://github.com/SNAPKITTYWEST/snapkitty-open-source
 - Documentación interna (mencionada en la model card): `docs/REPOSITORY_INVENTORY.md`, `docs/ARCHITECTURE.md`, `docs/QUANTUM_SWARM.md`, `docs/TOPOLOGICAL_QUANTUM.md`, `docs/RESEARCHER_EXPLANATION.md`, `docs/XML_METADATA.md`, `docs/METAPROGRAMMING.md`, `docs/WORKFLOW.md` (accesibles desde el repositorio).

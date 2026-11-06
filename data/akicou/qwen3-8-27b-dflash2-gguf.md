@@ -68,7 +68,7 @@ A concurrencia 1, el speedup de throughput frente a decodificacion autoregresiva
 
 | Modelo | Parametros | Contexto | Rol | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-DFlash2 (este) | 1,92B | 262 144 | Borrador especulativo para Qwen3.8-27B | Apache-2.0 | GGUF en HuggingFace |
+| Qwen3.8-27B-DFlash2 (este) | 1,92B | 262 144 | Borrador especulativo para Qwen3.8-27B | Apache-2.0 | GGUF en Hugging Face |
 | Qwen3.8-27B MTP integrado | No publicado | 262 144 | Decodificacion especulativa nativa del modelo objetivo | Apache-2.0 | Integrado en Qwen3.8-27B |
 | EAGLE (referencia generica) | No disponible | No disponible | Borrador especulativo para otros LLMs | No disponible | No disponible en la informacion proporcionada |
 
@@ -85,7 +85,7 @@ DFlash 2 supera al MTP integrado de Qwen3.8-27B en longitud de aceptacion en tod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Akicou/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Akicou/Qwen3.8-27B-DFlash2-GGUF
 - Modelo original (espejo): https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo original (Inco AI): https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B

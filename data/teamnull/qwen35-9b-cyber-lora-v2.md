@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen35-9b-cyber-lora-v2 es un ajuste fino del modelo base unsloth/Qwen3.5-9B, publicado por el usuario TeamNull en HuggingFace. Segun la model card, se ha entrenado con SFT (supervised fine-tuning) mediante la libreria TRL y herramientas de Unsloth; el nombre del repositorio sugiere una especializacion en tareas de ciberseguridad. El repositorio ocupa 0,5 GB, un tamano compatible con un adaptador LoRA y no con los pesos completos de un modelo de 9B en precision de entrenamiento, de modo que su uso exige cargar por separado el modelo base.
+qwen35-9b-cyber-lora-v2 es un ajuste fino del modelo base unsloth/Qwen3.5-9B, publicado por el usuario TeamNull en Hugging Face. Segun la model card, se ha entrenado con SFT (supervised fine-tuning) mediante la libreria TRL y herramientas de Unsloth; el nombre del repositorio sugiere una especializacion en tareas de ciberseguridad. El repositorio ocupa 0,5 GB, un tamano compatible con un adaptador LoRA y no con los pesos completos de un modelo de 9B en precision de entrenamiento, de modo que su uso exige cargar por separado el modelo base.
 
 No se dispone de informacion sobre el conjunto de datos de entrenamiento, el volumen de tokens, la licencia de los pesos derivados ni los idiomas cubiertos. Tampoco hay benchmarks ni evaluaciones publicadas para este adaptador concreto. Su relevancia publica es minima en el momento de redactar esta ficha: cero descargas y cero "likes" desde su creacion el 8 de octubre de 2026.
 
@@ -72,10 +72,10 @@ Estos datos no deben atribuirse a qwen35-9b-cyber-lora-v2 sin una evaluacion pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TeamNull/qwen35-9b-cyber-lora-v2 | ~9,7B (base) + adaptador | no confirmado (base: 262K) | no disponible | HuggingFace, 0 descargas |
-| unsloth/Qwen3.5-9B (base) | ~9,7B | 262K | segun modelo base | HuggingFace |
-| Qwen/Qwen3.5-9B (oficial) | ~9,7B | 262K | Apache 2.0 (fuente de terceros) | HuggingFace |
-| IOL-AI Qwen3.5 9B Reasoning v2 (LoRA) | 9,7B | 256K | Apache 2.0 (fuente de terceros) | HuggingFace / bestllmfor |
+| TeamNull/qwen35-9b-cyber-lora-v2 | ~9,7B (base) + adaptador | no confirmado (base: 262K) | no disponible | Hugging Face, 0 descargas |
+| unsloth/Qwen3.5-9B (base) | ~9,7B | 262K | segun modelo base | Hugging Face |
+| Qwen/Qwen3.5-9B (oficial) | ~9,7B | 262K | Apache 2.0 (fuente de terceros) | Hugging Face |
+| IOL-AI Qwen3.5 9B Reasoning v2 (LoRA) | 9,7B | 256K | Apache 2.0 (fuente de terceros) | Hugging Face / bestllmfor |
 
 La comparacion se limita a caracteristicas del modelo base, ya que no existen benchmarks publicados del adaptador de TeamNull que permitan contrastar rendimiento real.
 
@@ -92,7 +92,7 @@ La comparacion se limita a caracteristicas del modelo base, ya que no existen be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TeamNull/qwen35-9b-cyber-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/TeamNull/qwen35-9b-cyber-lora-v2
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-9B
 - Modelo oficial Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Qwen3.5-9B en Together AI: https://www.together.ai/models/qwen3-5-9b

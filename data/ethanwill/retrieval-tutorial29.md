@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ethanwill/retrieval-tutorial29` es un repositorio de investigación publicado en HuggingFace por el usuario `ethanwill` que se presenta como un prototipo de arquitectura **EfficientFormer** orientado a tareas de **retrieval** (recuperación de información). No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye una implementación en `model.py`, un `config.json` con los hiperparámetros de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como *checkpoint de inicialización válido para pruebas de humo*, no como un checkpoint con rendimiento verificado.
+`ethanwill/retrieval-tutorial29` es un repositorio de investigación publicado en Hugging Face por el usuario `ethanwill` que se presenta como un prototipo de arquitectura **EfficientFormer** orientado a tareas de **retrieval** (recuperación de información). No se trata de un modelo entrenado, sino de un andamiaje reproducible: incluye una implementación en `model.py`, un `config.json` con los hiperparámetros de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe explícitamente como *checkpoint de inicialización válido para pruebas de humo*, no como un checkpoint con rendimiento verificado.
 
 La relevancia del repositorio es, por tanto, metodológica y no de rendimiento: sirve como punto de partida para montar un pipeline de evaluación de retrieval con datos como Flickr30k, comparar arquitecturas con presupuesto de ajuste equivalente y validar formatos de ficheros y adaptadores de carga. El autor declara de forma explícita que no se reclama ninguna métrica de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -26,11 +26,11 @@ El tamaño declarado en los metadatos de safetensors es de 24.832 (valor literal
 | Activación | Swish |
 | Normalización | RMSNorm |
 | Optimizador por defecto | Lion, con schedule de warmup lineal |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 
-La model card describe una arquitectura EfficientFormer con atención *multi-query*, fusión tipo Tucker, activación Swish y normalización RMSNorm. EfficientFormer es una familia de transformers visuales diseñada originalmente para inferencia eficiente en dispositivos móviles, pero este repositorio la reutiliza con una etiqueta de tarea de *retrieval*, de modo que la cabeza y la función de pérdida concretas no están documentadas en la información disponible. La implementación es propia: el autor advierte que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder instanciar el modelo.
+La model card describe una arquitectura EfficientFormer con atención *multi-query*, fusión tipo Tucker, activación Swish y normalización RMSNorm. EfficientFormer es una familia de transformers visuales diseñada originalmente para inferencia eficiente en dispositivos móviles, pero este repositorio la reutiliza con una etiqueta de tarea de *retrieval*, de modo que la cabeza y la función de pérdida concretas no están documentadas en la información disponible. La implementación es propia: el autor advierte que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder instanciar el modelo.
 
 No hay evidencia de un entrenamiento completado. El repositorio incluye una receta de experimento por defecto (Lion + warmup lineal) que el propio autor califica como valores de arranque del script, no como resultado de una ejecución. El `model.safetensors` es un checkpoint de inicialización para pruebas de humo. La guía de evaluación propuesta por el autor sugiere usar Flickr30k, reportar la métrica de la tarea en al menos tres semillas y comparar contra una línea base de capacidad equivalente, conservando los logs de entrenamiento y las versiones del entorno. No se especifican número de tokens de entrenamiento, composición del dataset, ni si hubo RLHF, DPO o ajuste por preferencias.
 
@@ -46,7 +46,7 @@ No hay evidencia de un entrenamiento completado. El repositorio incluye una rece
 ## Casos de uso
 
 - Pruebas de humo en integración continua: el checkpoint de inicialización permite verificar que el pipeline de carga, *forward pass* y serialización funciona antes de invertir cómputo en un entrenamiento real. Es adecuado porque el autor lo describe explícitamente para este fin.
-- Desarrollo de adaptadores de carga: dado que las APIs automáticas de HuggingFace no reconocen esta implementación, el repositorio sirve para construir y testear un adaptador (`AutoModel` personalizado, registro de configuración) sin necesidad de pesos entrenados.
+- Desarrollo de adaptadores de carga: dado que las APIs automáticas de Hugging Face no reconocen esta implementación, el repositorio sirve para construir y testear un adaptador (`AutoModel` personalizado, registro de configuración) sin necesidad de pesos entrenados.
 - Andamiaje de experimentos de retrieval: `training_args.json` y `config.json` permiten lanzar barridos de hiperparámetros con Lion y warmup lineal sobre un esqueleto ya montado, y comparar después contra líneas base de capacidad equivalente.
 - Validación de formatos de dataset: el protocolo de evaluación sugerido (Flickr30k, métrica de tarea, tres semillas) sirve para verificar que el *data loader* y las métricas de recuperación están bien implementados antes de escalar.
 - Material docente y tutoriales: el nombre del repositorio (`retrieval-tutorial29`) y la estructura minimalista lo hacen apto para explicar cómo se compone un repositorio de modelo (código, config, args, pesos) y qué diferencia un checkpoint de inicialización de uno entrenado.
@@ -83,7 +83,7 @@ La comparación directa no es posible: este repositorio no comparte tarea (visi�
 - El checkpoint no está entrenado: el autor lo describe como inicialización para pruebas de humo. Cualquier uso en producción produciría resultados sin sentido.
 - No hay auditoría de robustez, equidad ni transferencia de dominio, tal y como declara la model card.
 - Discrepancia de escala: la model card indica escala "huge", pero los metadatos de safetensors reportan 24.832 parámetros y el repositorio ocupa 0,0 GB. Conviene verificar `config.json` antes de asumir cualquier tamaño.
-- Implementación propia: las APIs de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica la integración con frameworks estándar.
+- Implementación propia: las APIs de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica la integración con frameworks estándar.
 - Idiomas no declarados: no se puede asumir soporte multilingüe ni siquiera monolingüe.
 - Ausencia de `pipeline_tag`: los metadatos no clasifican el modelo en ninguna tarea estándar, lo que puede romper automatizaciones que dependan de ese campo.
 - Riesgo de alucinación: no evaluable sin un checkpoint entrenado; no obstante, al no existir ajuste por instrucciones, no debe esperarse un comportamiento conversacional fiable.
@@ -93,6 +93,6 @@ La comparación directa no es posible: este repositorio no comparte tarea (visi�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ethanwill/retrieval-tutorial29
+- Hugging Face: https://huggingface.co/ethanwill/retrieval-tutorial29
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código o demos) en la información disponible.

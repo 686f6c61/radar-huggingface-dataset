@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ying-K2-Lite-200M es un modelo de lenguaje en fase de diseno, publicado por Karasumikura (atribuido a Wang Yingze) bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio de HuggingFace es un **placeholder**: no contiene pesos entrenados, ni `config.json`, ni tokenizer, ni codigo de modelado. La model card indica explicitamente que el modelo "no puede usarse para inferencia" y que las especificaciones son planes que pueden cambiar cuando arranque el entrenamiento de K2.
+Ying-K2-Lite-200M es un modelo de lenguaje en fase de diseno, publicado por Karasumikura (atribuido a Wang Yingze) bajo licencia Apache 2.0. En el momento de redactar esta ficha, el repositorio de Hugging Face es un **placeholder**: no contiene pesos entrenados, ni `config.json`, ni tokenizer, ni codigo de modelado. La model card indica explicitamente que el modelo "no puede usarse para inferencia" y que las especificaciones son planes que pueden cambiar cuando arranque el entrenamiento de K2.
 
 El modelo se plantea como continuacion de la arquitectura propietaria MM200 usada en Ying-K1, con 210,2 millones de parametros, 16 capas y atencion con GQA en proporcion 3:1 (12 cabezas de consulta, 4 de clave/valor). La ventana de contexto de entrenamiento prevista es de 8192 tokens con atencion de ventana deslizante de 1024. Los idiomas declarados son chino (zh) e ingles (en).
 
@@ -39,7 +39,7 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens, la com
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: limitadas a chino e ingles segun los metadatos.
 - Capacidades especiales (modo thinking, vision, audio): no documentado.
-- Compatibilidad con endpoints de HuggingFace: si, segun el tag `endpoints_compatible`.
+- Compatibilidad con endpoints de Hugging Face: si, segun el tag `endpoints_compatible`.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ La model card justifica la mejora indicando que un modelo de 210,2 M requiere un
 - **VRAM estimada**: no hay pesos publicados; como referencia teorica, 210,2 M de parametros en fp16 equivalen a unos 0,42 GB de pesos, mas cache KV y activaciones.
 - **GPU recomendadas**: la model card cita una NVIDIA T4 como plataforma de las mediciones; por tamano, cualquier GPU con al menos 4 GB de VRAM seria suficiente en fp16.
 - **GPU consumer**: previsiblemente si en RTX 3050/4060 y superiores, aunque no verificable sin checkpoint.
-- **Opciones de despliegue**: HuggingFace Transformers (libreria declarada); el autor menciona un runtime propio (`mm200_runtime.py`) aun no publicado. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- **Opciones de despliegue**: Hugging Face Transformers (libreria declarada); el autor menciona un runtime propio (`mm200_runtime.py`) aun no publicado. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
 - **Latencia y throughput**: segun las mediciones sobre Ying-K1 en T4, 7,2 ms por token y 139,2 tok/s con CUDA Graphs; 24,3 ms por token en modo eager para prompts que superan la ventana deslizante de 1024.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Karasumikura/Ying-K2-Lite-200M
+- Repositorio en Hugging Face: https://huggingface.co/Karasumikura/Ying-K2-Lite-200M
 - Documento de aceleracion de inferencia citado en la model card: `INFERENCE_ACCELERATION.md` (en el propio repositorio)
 - Sitio del autor: https://yingze.wang

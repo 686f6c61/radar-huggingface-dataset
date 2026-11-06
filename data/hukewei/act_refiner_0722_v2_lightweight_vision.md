@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_refiner_0722_v2_lightweight_vision` es un modelo de política robótica (policy) entrenado con la librería LeRobot de HuggingFace, diseñado específicamente para tareas de inserción de clavijas (peg insertion) con un módulo óptico. El modelo pertenece a la familia ACT (Action Chunking with Transformers), una arquitectura basada en transformers que aprende a generar secuencias de acciones a partir de observaciones visuales y de estado del robot. Con 57,98 millones de parámetros, se presenta como una versión ligera orientada a la inferencia en tiempo real en hardware de bajo coste.
+`act_refiner_0722_v2_lightweight_vision` es un modelo de política robótica (policy) entrenado con la librería LeRobot de Hugging Face, diseñado específicamente para tareas de inserción de clavijas (peg insertion) con un módulo óptico. El modelo pertenece a la familia ACT (Action Chunking with Transformers), una arquitectura basada en transformers que aprende a generar secuencias de acciones a partir de observaciones visuales y de estado del robot. Con 57,98 millones de parámetros, se presenta como una versión ligera orientada a la inferencia en tiempo real en hardware de bajo coste.
 
 El autor, hukewei, ha publicado el modelo junto con un dataset de entrenamiento (`hukewei/peg_optical_module_0722_v2`) que contiene demostraciones de la tarea. Aunque la model card es genérica (generada automáticamente por LeRobot), el nombre del modelo sugiere una versión refinada y optimizada de una política previa (`act_peg_optical_module_0722`). Su relevancia radica en la creciente demanda de soluciones de robótica de manipulación accesibles, entrenables y desplegables en entornos de producción o investigación sin necesidad de infraestructura de alto coste.
 
@@ -58,8 +58,8 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Arquitectura | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `act_refiner_0722_v2_lightweight_vision` | 58M | ACT | Inserción de clavijas | Apache-2.0 | HuggingFace |
-| `act_peg_optical_module_0722` (del mismo autor) | no disponible | ACT | Inserción de clavijas | Apache-2.0 | HuggingFace |
+| `act_refiner_0722_v2_lightweight_vision` | 58M | ACT | Inserción de clavijas | Apache-2.0 | Hugging Face |
+| `act_peg_optical_module_0722` (del mismo autor) | no disponible | ACT | Inserción de clavijas | Apache-2.0 | Hugging Face |
 | ACT original (paper arXiv:2304.13705) | ~100M (aprox.) | ACT | Manipulación bimanual | MIT (paper) | Código en GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo del autor `act_peg_optical_module_0722` parece ser una versión previa sin el refinamiento "lightweight". La comparación con el ACT original es conceptual, ya que la implementación de LeRobot difiere en detalles de entrenamiento y backbone.
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. El modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hukewei/act_refiner_0722_v2_lightweight_vision
+- Modelo en Hugging Face: https://huggingface.co/hukewei/act_refiner_0722_v2_lightweight_vision
 - Dataset de entrenamiento: https://huggingface.co/datasets/hukewei/peg_optical_module_0722_v2
 - Modelo relacionado del mismo autor: https://huggingface.co/hukewei/act_peg_optical_module_0722
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

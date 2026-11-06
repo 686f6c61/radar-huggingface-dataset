@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sudheerreddy333/Questionandanswering` es un modelo publicado en HuggingFace bajo licencia MIT, orientado a tareas de preguntas y respuestas. El autor, sudheerreddy333, no ha proporcionado una model card detallada ni información técnica adicional más allá de la licencia. El repositorio no registra descargas ni interacciones, y no se especifican arquitectura, tamaño, contexto ni idiomas soportados.
+El modelo `sudheerreddy333/Questionandanswering` es un modelo publicado en Hugging Face bajo licencia MIT, orientado a tareas de preguntas y respuestas. El autor, sudheerreddy333, no ha proporcionado una model card detallada ni información técnica adicional más allá de la licencia. El repositorio no registra descargas ni interacciones, y no se especifican arquitectura, tamaño, contexto ni idiomas soportados.
 
 Dada la ausencia de documentación y de metadatos técnicos, este modelo no puede ser evaluado ni recomendado para ningún caso de uso concreto. La ficha que sigue refleja esta falta de información, indicando "no disponible" en todos los campos donde no hay datos verificables. Se recomienda precaución extrema antes de considerar su uso en cualquier entorno de desarrollo o investigación.
 
@@ -53,4 +53,4 @@ No disponible. No se puede comparar este modelo con alternativas de la misma cat
 
 ## Enlaces
 
-- [HuggingFace - sudheerreddy333/Questionandanswering](https://huggingface.co/sudheerreddy333/Questionandanswering)
+- [Hugging Face - sudheerreddy333/Questionandanswering](https://huggingface.co/sudheerreddy333/Questionandanswering)

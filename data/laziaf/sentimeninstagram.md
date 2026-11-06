@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laziaf/sentimeninstagram` es un repositorio de modelo publicado en HuggingFace por el usuario `laziaf` bajo licencia MIT. Por el identificador y la ausencia de cualquier documentación técnica en la model card (que se limita a declarar la licencia), todo apunta a un modelo de análisis de sentimiento orientado a contenido de Instagram, probablemente un ajuste fino de un transformer encoder de tamanio pequenio. No obstante, esta interpretacion es inferencial: el autor no especifica arquitectura, base, datos de entrenamiento ni tarea concreta.
+`laziaf/sentimeninstagram` es un repositorio de modelo publicado en Hugging Face por el usuario `laziaf` bajo licencia MIT. Por el identificador y la ausencia de cualquier documentación técnica en la model card (que se limita a declarar la licencia), todo apunta a un modelo de análisis de sentimiento orientado a contenido de Instagram, probablemente un ajuste fino de un transformer encoder de tamanio pequenio. No obstante, esta interpretacion es inferencial: el autor no especifica arquitectura, base, datos de entrenamiento ni tarea concreta.
 
 El repositorio no presenta pipeline declarado, no tiene descargas ni likes, y fue creado y actualizado en la misma marca temporal (2026-11-02T04:12:20Z), lo que sugiere una publicacion sin iteraciones posteriores. No se declaran idiomas soportados ni se adjuntan pesos descritos, tokenizador, configuracion o ejemplos de uso en la informacion disponible.
 
@@ -73,5 +73,5 @@ No disponible. No se puede identificar una categoria de comparacion fiable sin c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/laziaf/sentimeninstagram
+- Repositorio en Hugging Face: https://huggingface.co/laziaf/sentimeninstagram
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

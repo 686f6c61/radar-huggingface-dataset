@@ -6,7 +6,7 @@ El repositorio `Justrinsato/visual-question-answering` no contiene un modelo ent
 
 El repositorio incluye un fichero `analysis.md` como artefacto principal y un `README.md` como documentación. Los pesos presentes en formato `safetensors` suman 49.600 parámetros, una cifra incompatible con cualquier sistema de VQA funcional (los modelos de esta categoría manejan cientos de millones o miles de millones de parámetros): es consistente con un tensor de prueba, una inicialización aleatoria mínima o un artefacto residual del proceso de publicación. El tamaño total del repositorio es de 0,0 GB, con 0 descargas y 0 "likes" en el momento de la consulta.
 
-La relevancia de esta ficha es, por tanto, fundamentalmente negativa: sirve para advertir a desarrolladores e investigadores de que el identificador existe, tiene licencia MIT y etiquetas atractivas (`visual-question-answering`, `transformer`), pero no es desplegable ni evaluable. El repositorio se creó y actualizó el 10 de septiembre de 2026 (marca temporal registrada en HuggingFace), y sus propias notas indican que cualquier resultado futuro deberá acompañarse de versiones de dataset, comandos, semillas, hardware y registros en bruto.
+La relevancia de esta ficha es, por tanto, fundamentalmente negativa: sirve para advertir a desarrolladores e investigadores de que el identificador existe, tiene licencia MIT y etiquetas atractivas (`visual-question-answering`, `transformer`), pero no es desplegable ni evaluable. El repositorio se creó y actualizó el 10 de septiembre de 2026 (marca temporal registrada en Hugging Face), y sus propias notas indican que cualquier resultado futuro deberá acompañarse de versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
 ## Especificaciones técnicas
 
@@ -39,7 +39,7 @@ En cuanto al entrenamiento, no hay datos: ni número de tokens, ni composición 
 - Razonamiento, matemáticas y generación de código: no disponible.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible (el campo de idiomas está vacío en la ficha de HuggingFace).
+- Capacidades multilingües: no disponible (el campo de idiomas está vacío en la ficha de Hugging Face).
 - Capacidad especial (modo de pensamiento, visión, audio): no disponible.
 - Documentación de investigación: sí disponible, en forma de nota exploratoria (`analysis.md`) con alcance, variables de confusión previstas y requisitos de reproducibilidad.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: prácticamente despreciable. Con 49.600 parámetros, los pesos en fp32 ocuparían aproximadamente 0,19 MB (49.600 × 4 bytes) y unos 0,10 MB en fp16. No obstante, al no existir un modelo funcional, esta cifra no tiene utilidad práctica.
 - GPU recomendadas: no aplicable; el artefacto cabe en CPU y en cualquier GPU, incluida una iGPU.
 - Compatibilidad con GPU de consumo: sí en términos de tamaño, pero irrelevante porque no hay inferencia útil que ejecutar.
-- Opciones de despliegue: el pipeline declarado en HuggingFace es `visual-question-answering`, por lo que `transformers` podría intentar cargarlo si existiese una configuración válida; no se ha verificado. No hay variantes GGUF para `llama.cpp` u Ollama, ni artefactos para vLLM o TGI.
+- Opciones de despliegue: el pipeline declarado en Hugging Face es `visual-question-answering`, por lo que `transformers` podría intentar cargarlo si existiese una configuración válida; no se ha verificado. No hay variantes GGUF para `llama.cpp` u Ollama, ni artefactos para vLLM o TGI.
 - Latencia y throughput estimados: no disponible; no se han publicado mediciones ni existen condiciones para obtenerlas.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No disponible. La información proporcionada no incluye ningún modelo comparabl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Justrinsato/visual-question-answering
+- Hugging Face: https://huggingface.co/Justrinsato/visual-question-answering
 - Fichero principal citado en la model card: `analysis.md` (incluido en el propio repositorio)
 - Documentación citada en la model card: `README.md`
 - Búsqueda web realizada: los resultados devueltos corresponden únicamente a páginas generales de YouTube, sin relación con el modelo ni con la tarea VQA; no se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

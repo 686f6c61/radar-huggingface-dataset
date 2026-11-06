@@ -19,7 +19,7 @@ La relevancia de este repositorio radica en su utilidad para la investigación e
 | Tipos de cuantización | bf16 (checkpoints en bf16, inference only) |
 | Idiomas soportados | 6 idiomas (según modelo base: inglés, francés, alemán, español, italiano, portugués) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | safetensors (inferido por el tag en HuggingFace) |
+| Formato de pesos | safetensors (inferido por el tag en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No aplicable. Este repositorio no es un modelo final, sino un conjunto de checkp
 
 ## Enlaces
 
-- [Repositorio HuggingFace: dvader13/smollm3-3b-traj-661b](https://huggingface.co/dvader13/smollm3-3b-traj-661b)
+- [Repositorio Hugging Face: dvader13/smollm3-3b-traj-661b](https://huggingface.co/dvader13/smollm3-3b-traj-661b)
 - [Modelo base: HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - [Modelo base (Base): HuggingFaceTB/SmolLM3-3B-Base](https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base)
 - [Repositorio GitHub de SmolLM](https://github.com/huggingface/smollm)

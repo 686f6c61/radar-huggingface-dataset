@@ -86,7 +86,7 @@ Los datos de los modelos comparables proceden de conocimiento público general y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anventureslabs/lamma-narrator
+- Repositorio en Hugging Face: https://huggingface.co/anventureslabs/lamma-narrator
 - Modelo base Supertonic 3: https://huggingface.co/Supertone/supertonic-3
 - Licencia OpenRAIL-M: incluida como `LICENSE` en el repositorio del modelo
 - La búsqueda web realizada no devolvió enlaces técnicos relevantes (papers, blogs, repos o demos) sobre este modelo; no se dispone de documentación adicional, informes de evaluación ni demos públicas.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes obtenido por transfer learning sobre EfficientNet-B0 preentrenado en ImageNet. Lo publica el usuario Jawziyyah en HuggingFace como proyecto de aprendizaje, con licencia MIT y pesos en formato PyTorch (`.pth`). No es un modelo de lenguaje ni un modelo fundacional: es un cabezal de clasificacion ajustado para distinguir dos clases, pizza (indice 0) y steak (indice 1).
+EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes obtenido por transfer learning sobre EfficientNet-B0 preentrenado en ImageNet. Lo publica el usuario Jawziyyah en Hugging Face como proyecto de aprendizaje, con licencia MIT y pesos en formato PyTorch (`.pth`). No es un modelo de lenguaje ni un modelo fundacional: es un cabezal de clasificacion ajustado para distinguir dos clases, pizza (indice 0) y steak (indice 1).
 
 El modelo parte de la arquitectura EfficientNet-B0, una CNN con compound scaling (profundidad, anchura y resolucion escaladas de forma conjunta) que en su version original ronda los 5,3 millones de parametros. Aqui se sustituye la cabeza de 1000 clases de ImageNet por una cabeza minima: Dropout(0.2) seguido de una capa Linear(1280, 1) con activacion sigmoide, que devuelve la probabilidad de que la imagen sea steak.
 
@@ -32,7 +32,7 @@ El conjunto de datos consta de 1200 imagenes de entrenamiento, 300 de validacion
 - Clasificacion binaria de imagenes en dos clases: pizza y steak.
 - Salida de una probabilidad continua (sigmoide) interpretable como confianza de la clase steak.
 - Inferencia sobre imagenes individuales mediante la funcion `predict` incluida en `model.py`.
-- Carga de pesos y codigo auxiliar desde HuggingFace Hub con `hf_hub_download`.
+- Carga de pesos y codigo auxiliar desde Hugging Face Hub con `hf_hub_download`.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso.
 - No tiene capacidades multilingues ni procesamiento de texto.
@@ -43,7 +43,7 @@ El conjunto de datos consta de 1200 imagenes de entrenamiento, 300 de validacion
 - Ejemplo didactico de transfer learning: sirve para ilustrar el flujo completo de congelar backbone, entrenar cabeza, descongelar bloques y evaluar en PyTorch, con un caso de dos clases facil de reproducir.
 - Prototipo de filtrado en una aplicacion de recetas: clasificar fotos subidas por usuarios como pizza o steak para etiquetarlas automaticamente antes de una revision manual.
 - Baseline en experimentos de clasificacion de alimentos: punto de partida para comparar tecnicas de aumentacion, fine-tuning o modelos mas grandes sobre el mismo dataset de dos clases.
-- Prueba de integracion de pipelines de HuggingFace Hub: validar la descarga de pesos, config y codigo con `hf_hub_download` en un entorno de CI antes de adoptar modelos mayores.
+- Prueba de integracion de pipelines de Hugging Face Hub: validar la descarga de pesos, config y codigo con `hf_hub_download` en un entorno de CI antes de adoptar modelos mayores.
 - Demo educativa en un curso de vision por computador: mostrar el efecto del fine-tuning parcial (ultimos tres bloques) frente al entrenamiento solo de la cabeza.
 - Etiquetado asistido de pequenos catalogos de imagenes gastronomicas: con 99,40 % de accuracy en test, puede preetiquetar lotes de fotos de pizza y steak para acelerar la anotacion manual, siempre con revision humana.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estandar (ImageNet, Food-101 ni sim
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNet-B0 pizza vs steak (Jawziyyah) | aprox. 5,3 M (base) | Clasificacion binaria pizza/steak | no aplica | MIT | HuggingFace |
+| EfficientNet-B0 pizza vs steak (Jawziyyah) | aprox. 5,3 M (base) | Clasificacion binaria pizza/steak | no aplica | MIT | Hugging Face |
 | EfficientNet-B0 ImageNet (torchvision) | aprox. 5,3 M | Clasificacion 1000 clases | no aplica | BSD-3-Clause (torchvision) | torchvision |
 | ResNet-18 (torchvision) | aprox. 11,7 M | Clasificacion 1000 clases | no aplica | BSD-3-Clause (torchvision) | torchvision |
 | MobileNetV3-Small (torchvision) | aprox. 2,5 M | Clasificacion 1000 clases | no aplica | BSD-3-Clause (torchvision) | torchvision |
@@ -83,11 +83,11 @@ La comparacion es estructural: los tres alternativos son backbones genericos de 
 - No hay informacion sobre sesgos demograficos o culturales porque el modelo no procesa personas ni texto, pero el sesgo de dominio (tipos de comida, presentaciones) sigue siendo relevante.
 - Licencia MIT: permite uso comercial y modificacion con atribucion; no obstante, el modelo base de torchvision tiene su propia licencia BSD-3-Clause que conviene revisar.
 - No apto para produccion sin un conjunto de validacion propio y una capa de rechazo o umbral de confianza calibrado.
-- El repositorio ocupa 0,0 GB segun HuggingFace, lo que sugiere que los pesos pueden no estar realmente subidos o que el tamano reportado es incompleto; conviene verificar la descarga antes de usarlo.
+- El repositorio ocupa 0,0 GB segun Hugging Face, lo que sugiere que los pesos pueden no estar realmente subidos o que el tamano reportado es incompleto; conviene verificar la descarga antes de usarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jawziyyah/efficientnet-b0-pizza-steak
+- Modelo en Hugging Face: https://huggingface.co/Jawziyyah/efficientnet-b0-pizza-steak
 - EfficientNet (paper original, Tan y Le, 2019): https://arxiv.org/abs/1905.11946
 - EfficientNet-B0 en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html
 - Documentacion de `hf_hub_download`: https://huggingface.co/docs/huggingface_hub/guides/download

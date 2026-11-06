@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HealthPulse-Qwen2.5-7B-GGUF es una cuantización en formato GGUF del modelo HealthPulse-Qwen2.5-7B, publicada por el usuario mradermacher en HuggingFace. Según la información disponible, se trata de una conversión estática (static quants) del modelo original alojado en Weikaijie/HealthPulse-Qwen2.5-7B. No se proporciona ninguna model card adicional, por lo que se desconocen los detalles del fine-tuning, el propósito específico o las capacidades del modelo base.
+HealthPulse-Qwen2.5-7B-GGUF es una cuantización en formato GGUF del modelo HealthPulse-Qwen2.5-7B, publicada por el usuario mradermacher en Hugging Face. Según la información disponible, se trata de una conversión estática (static quants) del modelo original alojado en Weikaijie/HealthPulse-Qwen2.5-7B. No se proporciona ninguna model card adicional, por lo que se desconocen los detalles del fine-tuning, el propósito específico o las capacidades del modelo base.
 
 El nombre sugiere que el modelo original se basa en Qwen2.5-7B, una familia de modelos de lenguaje de gran tamaño desarrollada por Alibaba, pero no hay confirmación explícita en la información facilitada. La cuantización GGUF permite ejecutar el modelo en entornos con recursos limitados mediante herramientas como llama.cpp, Ollama o LM Studio, aunque no se especifican los requisitos exactos.
 
@@ -45,7 +45,7 @@ No se proporcionan requisitos específicos de hardware. Como referencia general 
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para realizar una comparativa con otros modelos. El modelo base Qwen2.5-7B-Instruct-GGUF está disponible en HuggingFace, pero no hay datos de rendimiento ni características específicas de HealthPulse-Qwen2.5-7B que permitan una comparación significativa.
+No se dispone de información suficiente para realizar una comparativa con otros modelos. El modelo base Qwen2.5-7B-Instruct-GGUF está disponible en Hugging Face, pero no hay datos de rendimiento ni características específicas de HealthPulse-Qwen2.5-7B que permitan una comparación significativa.
 
 ## Limitaciones y advertencias
 
@@ -57,5 +57,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/HealthPulse-Qwen2.5-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/HealthPulse-Qwen2.5-7B-GGUF
 - Modelo original (referenciado en el README): https://huggingface.co/Weikaijie/HealthPulse-Qwen2.5-7B

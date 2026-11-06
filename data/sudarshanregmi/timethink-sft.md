@@ -71,6 +71,6 @@ No disponible. No se han identificado modelos comparables específicos para seri
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sudarshanregmi/timethink-sft
+- Hugging Face: https://huggingface.co/sudarshanregmi/timethink-sft
 - GitHub del autor: https://github.com/sudarshanregmi/sudarshanregmi
 - Dataset de evaluación: https://huggingface.co/datasets/sudarshanregmi/timethink

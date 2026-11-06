@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ywivanov36/contrastive` es un repositorio de HuggingFace publicado por el usuario ywivanov36 que contiene una implementación funcional de un Tiny Transformer orientado a tareas de aprendizaje contrastivo (*contrastive learning*). No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo (*smoke tests*). El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+`ywivanov36/contrastive` es un repositorio de Hugging Face publicado por el usuario ywivanov36 que contiene una implementación funcional de un Tiny Transformer orientado a tareas de aprendizaje contrastivo (*contrastive learning*). No se trata de un modelo entrenado, sino de un esqueleto de código con un checkpoint de inicialización (`model.safetensors`) válido para pruebas de humo (*smoke tests*). El propio autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 El modelo tiene 33.088 parámetros totales, lo que lo sitúa en el rango "tiny" (por debajo de cualquier modelo utilizable en producción). La arquitectura empleada es un transformer con atención flash (*flash attention*), fusión mediante *co attention*, activación Mish y normalización por instancias (*instancenorm*). La receta de entrenamiento por defecto usa el optimizador Lion con un schedule de *warmup* constante, si bien estos son valores de partida en el script, no evidencia de un entrenamiento completado.
 
@@ -66,7 +66,7 @@ No se dispone de información sobre modelos comparables publicados en la misma c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ywivanov36/contrastive | 33.088 | no disponible | Apache 2.0 | HuggingFace (checkpoint de inicializacion) |
+| ywivanov36/contrastive | 33.088 | no disponible | Apache 2.0 | Hugging Face (checkpoint de inicializacion) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No se dispone de información sobre modelos comparables publicados en la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ywivanov36/contrastive
+- Hugging Face: https://huggingface.co/ywivanov36/contrastive
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

@@ -69,7 +69,7 @@ En la información proporcionada solo se recoge una comparación del rendimiento
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Trinity-Large-Preview (NVFP4) | ~398B (documento) / 201,8B (safetensors) | ~13B | 8.192 -> 512.000 | OpenMDW-1.1 | HuggingFace, OpenRouter |
+| Trinity-Large-Preview (NVFP4) | ~398B (documento) / 201,8B (safetensors) | ~13B | 8.192 -> 512.000 | OpenMDW-1.1 | Hugging Face, OpenRouter |
 | Llama 4 Maverick | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Comparación de rendimiento en benchmarks:
@@ -93,7 +93,7 @@ Comparación de rendimiento en benchmarks:
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CollectionStudio/Trinity-Large-Preview-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/CollectionStudio/Trinity-Large-Preview-NVFP4
 - Modelo original (arcee-ai/Trinity-Large-Preview): https://huggingface.co/arcee-ai/Trinity-Large-Preview
 - Checkpoint base (Trinity-Large-Base): https://huggingface.co/arcee-ai/Trinity-Large-Base
 - Checkpoint TrueBase: https://huggingface.co/arcee-ai/Trinity-Large-TrueBase

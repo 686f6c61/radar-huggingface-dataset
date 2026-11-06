@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sharryXR/asil-qwen35-2b-sft
-- Paper (HuggingFace papers): https://huggingface.co/papers/2608.26991
+- Repositorio Hugging Face: https://huggingface.co/sharryXR/asil-qwen35-2b-sft
+- Paper (Hugging Face papers): https://huggingface.co/papers/2608.26991
 - Pagina del proyecto: https://sharryxr.github.io/ASIL
 - Codigo fuente: https://github.com/sharryXR/ASIL
 - Repositorio del checkpoint RL (relacionado): https://huggingface.co/sharryXR/asil-qwen35-2b-rl

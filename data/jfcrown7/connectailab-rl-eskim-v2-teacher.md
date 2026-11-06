@@ -6,7 +6,7 @@ connectailab-rl-eskim-v2-teacher es un modelo de decisión entrenado con aprendi
 
 El modelo responde en el formato JEV (typesafe/jev-1.13), un esquema de preguntas y respuestas estructuradas con tipos (por ejemplo, elección entre opciones con probabilidades asociadas). Se entrenó en dos fases: primero imitando a un "presidente de reglas" mediante aprendizaje supervisado y después ajustando la política con recompensas derivadas de los valores de la empresa (beneficio, satisfacción del cliente y riesgo, todos con peso 1.0).
 
-Su relevancia es acotada pero ilustrativa: sirve como caso práctico de RL aplicado a toma de decisiones empresariales en un entorno sintético, con licencia Apache 2.0 y distribución vía HuggingFace Hub. No dispone de arquitectura transformer ni de parámetros publicados; se distribuye como artefacto NumPy para su uso con la librería connect-tycoon. El idioma de trabajo es el coreano.
+Su relevancia es acotada pero ilustrativa: sirve como caso práctico de RL aplicado a toma de decisiones empresariales en un entorno sintético, con licencia Apache 2.0 y distribución vía Hugging Face Hub. No dispone de arquitectura transformer ni de parámetros publicados; se distribuye como artefacto NumPy para su uso con la librería connect-tycoon. El idioma de trabajo es el coreano.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ La interfaz de decisión se define mediante el esquema JEV (typesafe/jev-1.13), 
 - Docencia de formatos estructurados de decisión: el esquema JEV tipado con probabilidades por opción es un ejemplo concreto para enseñar interfaces de decisión verificables frente a la generación de texto libre.
 - Benchmarking de agentes de decisión en entornos sintéticos: al publicarse con licencia Apache 2.0 y métricas declaradas (beneficio mensual, satisfacción, incidentes de riesgo, excesos de confirmación humana y días sin stock), puede usarse como referencia en comparativas reproducibles.
 - Prototipado de asistentes de operaciones con derivación a humano: la salida con confianza (por ejemplo, 0.9139 en la decisión de reembolso total) permite diseñar reglas de escalado a revisión humana antes de integrar el modelo en flujos reales.
-- Demostración de integración HuggingFace + simulador: el patrón `from_hub` y la ejecución vía CLI sirven como plantilla para publicar y consumir políticas de RL en el Hub.
+- Demostración de integración Hugging Face + simulador: el patrón `from_hub` y la ejecución vía CLI sirven como plantilla para publicar y consumir políticas de RL en el Hub.
 
 ## Benchmarks y rendimiento
 
@@ -87,7 +87,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jfcrown7/connectailab-rl-eskim-v2-teacher
+- Modelo en Hugging Face: https://huggingface.co/jfcrown7/connectailab-rl-eskim-v2-teacher
 - Repositorio GitHub CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de entrenamiento en Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

@@ -72,4 +72,4 @@ La comparativa se basa en parámetros y licencia, ya que no se dispone de result
 
 ## Enlaces
 
-- [HuggingFace - Roy229/huggingface_8434_92fd8767_cand_text_classifier_alpha](https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_text_classifier_alpha)
+- [Hugging Face - Roy229/huggingface_8434_92fd8767_cand_text_classifier_alpha](https://huggingface.co/Roy229/huggingface_8434_92fd8767_cand_text_classifier_alpha)

@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h013.rl-easy.step_40 | 9,4B | No disponible | No disponible | Checkpoint intermedio, HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | No disponible | No disponible | Modelo base, HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Meta Llama 3 | HuggingFace, producción |
+| agentic-ptb/grok.h013.rl-easy.step_40 | 9,4B | No disponible | No disponible | Checkpoint intermedio, Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | No disponible | No disponible | Modelo base, Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Meta Llama 3 | Hugging Face, producción |
 
 La comparación con Llama 3.1 8B es orientativa, ya que ambos son modelos densos de tamaño similar, pero el checkpoint de AgentPTB no es un modelo final y no se han publicado benchmarks. La comparación con el modelo base Qwen3.5-9B-Base es la más relevante, ya que este checkpoint es una variante entrenada por RL sobre él.
 
@@ -79,7 +79,7 @@ La comparación con Llama 3.1 8B es orientativa, ya que ambos son modelos densos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/grok.h013.rl-easy.step_40
+- Hugging Face: https://huggingface.co/agentic-ptb/grok.h013.rl-easy.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto AgentPTB: `agentic-ptb/INDEX` (mencionado en la model card, no se proporciona URL directa)
 - Sitio web de Grok: https://grok.com/

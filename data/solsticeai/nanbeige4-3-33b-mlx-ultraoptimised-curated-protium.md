@@ -93,8 +93,8 @@ No se han publicado en la informacion disponible datos de rendimiento medidos es
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B (MLX, esta ficha) | 33,1B denso | 512K declarado | Apache 2.0 | safetensors MLX | HuggingFace, solo Apple Silicon |
-| Nanbeige/Nanbeige4.3-33B (base) | 33,1B denso | 512K declarado | Apache 2.0 | safetensors | HuggingFace |
+| Nanbeige4.3-33B (MLX, esta ficha) | 33,1B denso | 512K declarado | Apache 2.0 | safetensors MLX | Hugging Face, solo Apple Silicon |
+| Nanbeige/Nanbeige4.3-33B (base) | 33,1B denso | 512K declarado | Apache 2.0 | safetensors | Hugging Face |
 | Qwen3.8-27B (referencia de la model card) | 27B (segun autor) | No disponible | No disponible | No disponible | No verificable en la informacion disponible |
 | Gemma4-31B (referencia de la model card) | 31B (segun autor) | No disponible | No disponible | No disponible | No verificable en la informacion disponible |
 
@@ -114,7 +114,7 @@ No se dispone de informacion verificable sobre los modelos de comparacion citado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-MLX-UltraOptimised-Curated-Protium
+- Repositorio Hugging Face: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-MLX-UltraOptimised-Curated-Protium
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Organizacion Nanbeige: https://huggingface.co/Nanbeige
 - Organizacion SolsticeAI: https://huggingface.co/SolsticeAI

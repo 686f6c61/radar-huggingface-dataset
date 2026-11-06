@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `keshavreddy731/llama3-bi-adapter` es un adaptador finetuneado sobre el modelo base `unsloth/llama-3.1-8b-instruct-bnb-4bit`, desarrollado por `keshavreddy731`. Se publica bajo licencia Apache-2.0 y está disponible en HuggingFace con un tamaño de repositorio de 0.2 GB. La información proporcionada no incluye detalles sobre el dataset de entrenamiento, el método de finetuning ni las capacidades específicas del adaptador. El repositorio no registra descargas ni likes, y la model card es mínima. Su relevancia radica en que es un modelo open source basado en Llama 3.1, pero la ausencia de documentación técnica impide evaluar su rendimiento o adecuación a casos de uso concretos.
+El modelo `keshavreddy731/llama3-bi-adapter` es un adaptador finetuneado sobre el modelo base `unsloth/llama-3.1-8b-instruct-bnb-4bit`, desarrollado por `keshavreddy731`. Se publica bajo licencia Apache-2.0 y está disponible en Hugging Face con un tamaño de repositorio de 0.2 GB. La información proporcionada no incluye detalles sobre el dataset de entrenamiento, el método de finetuning ni las capacidades específicas del adaptador. El repositorio no registra descargas ni likes, y la model card es mínima. Su relevancia radica en que es un modelo open source basado en Llama 3.1, pero la ausencia de documentación técnica impide evaluar su rendimiento o adecuación a casos de uso concretos.
 
 ## Especificaciones tecnicas
 
@@ -14,7 +14,7 @@ El modelo `keshavreddy731/llama3-bi-adapter` es un adaptador finetuneado sobre e
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | en |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (según metadatos de HuggingFace) |
+| Formato de pesos | safetensors (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,6 +58,6 @@ No disponible. No se han proporcionado datos de rendimiento ni se conocen modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keshavreddy731/llama3-bi-adapter
+- Modelo en Hugging Face: https://huggingface.co/keshavreddy731/llama3-bi-adapter
 - Modelo base: https://huggingface.co/unsloth/llama-3.1-8b-instruct-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth

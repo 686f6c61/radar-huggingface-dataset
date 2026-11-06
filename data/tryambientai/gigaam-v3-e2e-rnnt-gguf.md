@@ -130,7 +130,7 @@ La comparativa se basa en la tabla de dominios publicada por el autor original. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tryambientai/gigaam-v3-e2e-rnnt-gguf
+- Modelo en Hugging Face: https://huggingface.co/tryambientai/gigaam-v3-e2e-rnnt-gguf
 - Modelo base: https://huggingface.co/ai-sage/GigaAM-v3
 - Commit del modelo base: https://huggingface.co/ai-sage/GigaAM-v3/commit/ec1dc1f
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

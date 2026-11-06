@@ -12,7 +12,7 @@ El modelo no presenta descargas ni valoraciones en el momento de la consulta, no
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Tipo GPT-2 (transformer decoder-only); confirmado por el tag `gpt2` en HuggingFace |
+| Arquitectura | Tipo GPT-2 (transformer decoder-only); confirmado por el tag `gpt2` en Hugging Face |
 | Parametros totales | 124.770.816 (dato real, safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -88,8 +88,8 @@ Los datos de los modelos alternativos no se han proporcionado en la informacion 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/arb-arab-100mb-100mb_seed455 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/arb_arab_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | HuggingFace |
+| fpadovani/arb-arab-100mb-100mb_seed455 | 124,77 M | no disponible | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/arb_arab_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos tipo GPT-2 small de 124 M | aproximadamente 124 M | no disponible | no disponible | no disponible | dependen del autor |
 
 No se dispone de informacion suficiente para comparar de forma cuantitativa con alternativas de la misma categoria (por ejemplo, otros modelos pequenos ajustados para arabe). Cualquier comparacion de rendimiento requeriria ejecutar evaluaciones propias.
@@ -108,7 +108,7 @@ No se dispone de informacion suficiente para comparar de forma cuantitativa con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_100mb
 - Experimento de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/93r349rw
 - Repositorio de TRL: https://github.com/huggingface/trl

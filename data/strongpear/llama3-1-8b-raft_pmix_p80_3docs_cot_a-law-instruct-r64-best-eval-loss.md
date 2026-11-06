@@ -59,9 +59,9 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (LoRA r64) | ~0,7 GB (adaptador) | No disponible | No disponible | HuggingFace |
-| Llama 3.1 8B Instruct (base) | 8.030 M | 128K | Llama 3.1 Community License | HuggingFace |
-| Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 (mismo autor) | ~0,7 GB (adaptador) | No disponible | No disponible | HuggingFace |
+| Este adaptador (LoRA r64) | ~0,7 GB (adaptador) | No disponible | No disponible | Hugging Face |
+| Llama 3.1 8B Instruct (base) | 8.030 M | 128K | Llama 3.1 Community License | Hugging Face |
+| Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64 (mismo autor) | ~0,7 GB (adaptador) | No disponible | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-best-eval-loss
+- Repositorio del modelo en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_3DOCS_CoT_A-LAW-Instruct-r64-best-eval-loss
 - Modelo base Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Paper de Llama 3 (arXiv): https://arxiv.org/pdf/2407.21783
 - Modelo similar del mismo autor: https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64

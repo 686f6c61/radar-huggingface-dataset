@@ -2,9 +2,9 @@
 
 ## Resumen
 
-BrightoSV V1.5-SE (Special Edition) es un sistema de verificación de locutor y anti-spoofing desarrollado por BrighTO Technology, publicado bajo el usuario HuggingFace `thusinh1969`. El modelo aborda dos problemas críticos en seguridad de voz: la verificación de identidad del hablante y la detección de ataques de suplantación (deepfakes, voz sintética y reproducciones). Está diseñado para entornos bancarios y de alta seguridad, con una precisión declarada del 99,85 % en la tarea de anti-spoofing.
+BrightoSV V1.5-SE (Special Edition) es un sistema de verificación de locutor y anti-spoofing desarrollado por BrighTO Technology, publicado bajo el usuario Hugging Face `thusinh1969`. El modelo aborda dos problemas críticos en seguridad de voz: la verificación de identidad del hablante y la detección de ataques de suplantación (deepfakes, voz sintética y reproducciones). Está diseñado para entornos bancarios y de alta seguridad, con una precisión declarada del 99,85 % en la tarea de anti-spoofing.
 
-El modelo se basa en una arquitectura híbrida que combina un encoder de audio WavLM con cabeceras especializadas de verificación y clasificación de autenticidad, según los tags publicados. El repositorio pesa 3,9 GB y está disponible en formato ONNX, con soporte multilingüe para ocho idiomas (vietnamita, inglés, chino, alemán, francés, neerlandés, japonés y árabe). Su acceso es restringido (gated) y requiere aceptar las condiciones de licencia en HuggingFace. Es relevante por ser el primer sistema documentado públicamente que combina verificación de locutor y anti-spoofing con niveles de precisión comparables a soluciones comerciales de grado bancario.
+El modelo se basa en una arquitectura híbrida que combina un encoder de audio WavLM con cabeceras especializadas de verificación y clasificación de autenticidad, según los tags publicados. El repositorio pesa 3,9 GB y está disponible en formato ONNX, con soporte multilingüe para ocho idiomas (vietnamita, inglés, chino, alemán, francés, neerlandés, japonés y árabe). Su acceso es restringido (gated) y requiere aceptar las condiciones de licencia en Hugging Face. Es relevante por ser el primer sistema documentado públicamente que combina verificación de locutor y anti-spoofing con niveles de precisión comparables a soluciones comerciales de grado bancario.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ La información pública sobre la arquitectura detallada es limitada. Según los
 
 ## Benchmarks y rendimiento
 
-Resultados declarados por el autor en el model-index de HuggingFace (no verificados de forma independiente):
+Resultados declarados por el autor en el model-index de Hugging Face (no verificados de forma independiente):
 
 | Tarea | Metrica | Valor |
 |---|---|---|
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos académicos o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos académicos o de investigación.
 - Licencia "other": no se detallan los términos exactos; puede tener restricciones comerciales o de redistribución.
 - Sin información de sesgos: no se han publicado estudios sobre sesgos por acento, edad o género, lo que es crítico en biometría.
 - Riesgo de falsos positivos/negativos: aunque el EER es bajo, en escenarios de alto riesgo (banca) un error del 0.17 % puede ser significativo.
@@ -80,8 +80,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/thusinh1969/BrightTO-Speaker-Verification-V1.5.SE-E8-PROD
+- Página de Hugging Face del modelo: https://huggingface.co/thusinh1969/BrightTO-Speaker-Verification-V1.5.SE-E8-PROD
 - Modelo anterior (V1.2-LMF): https://huggingface.co/thusinh1969/BrightTO-SV-V1.2-LMF_E0-PROD
 - Artículo sobre BrighTO Audio Profiler (arquitectura relacionada): https://free2aitools.com/model/thusinh1969/brighto_audio_profiler_v1.0_prod
-- Mirror de HuggingFace con modelos anti-spoofing: https://d6108366.hf-mirror.com/models?other=anti-spoofing
+- Mirror de Hugging Face con modelos anti-spoofing: https://d6108366.hf-mirror.com/models?other=anti-spoofing
 - Repositorio de speaker verification en PyTorch (referencia general): https://github.com/Wenhao-Yang/SpeakerVerifiaction-pytorch

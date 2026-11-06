@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Felipecezar01/dlf-v1-tecnologia es un repositorio de modelo alojado en HuggingFace por el usuario Felipecezar01, publicado el 11 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a una cabecera YAML con la licencia MIT, sin descripcion, sin documentacion de uso y sin especificaciones tecnicas declaradas.
+Felipecezar01/dlf-v1-tecnologia es un repositorio de modelo alojado en Hugging Face por el usuario Felipecezar01, publicado el 11 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card se limita a una cabecera YAML con la licencia MIT, sin descripcion, sin documentacion de uso y sin especificaciones tecnicas declaradas.
 
 No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto, los datos de entrenamiento ni el pipeline de inferencia asociado. La unica etiqueta funcional presente es `region: us` junto a la licencia, lo que no aporta datos tecnicos relevantes. Por el nombre del repositorio (`dlf-v1-tecnologia`) podria tratarse de un ajuste fino (fine-tuning) de dominio tecnico, pero se trata de una inferencia no confirmada por el autor.
 
@@ -43,7 +43,7 @@ No es posible enumerar casos de uso concretos y realistas sin conocer la arquite
 
 Como orientacion general, la evaluacion de este repositorio deberia comenzar por:
 
-- Inspeccionar el arbol de ficheros del repositorio en HuggingFace para identificar formatos de pesos (`safetensors`, `GGUF`, `bin`, etc.) y ficheros de configuracion.
+- Inspeccionar el arbol de ficheros del repositorio en Hugging Face para identificar formatos de pesos (`safetensors`, `GGUF`, `bin`, etc.) y ficheros de configuracion.
 - Revisar `config.json` para obtener arquitectura, numero de capas, dimensiones ocultas y vocabulario.
 - Comprobar si existe un tokenizador funcional y que idiomas cubre.
 - Ejecutar una bateria minima de pruebas cualitativas antes de considerar cualquier integracion.
@@ -62,7 +62,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Felipecezar01/dlf-v1-tecnologia | no disponible | no disponible | no disponible | MIT | HuggingFace |
+| Felipecezar01/dlf-v1-tecnologia | no disponible | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Felipecezar01/dlf-v1-tecnologia
+- Hugging Face: https://huggingface.co/Felipecezar01/dlf-v1-tecnologia
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

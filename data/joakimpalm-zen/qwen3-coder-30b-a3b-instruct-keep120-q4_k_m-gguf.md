@@ -79,7 +79,7 @@ La diferencia clave frente al base es la poda de 8 expertos por capa, que reduce
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Joakimpalm-Zen/Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/Joakimpalm-Zen/Qwen3-Coder-30B-A3B-Instruct-keep120-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Repositorio GitHub de Qwen3-Coder: https://github.com/QwenLM/Qwen3-Coder
 - Pagina de Ollama para qwen3-coder: https://ollama.com/library/qwen3-coder:30b-a3b-q4_K_M

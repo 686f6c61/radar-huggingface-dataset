@@ -21,7 +21,7 @@ El parametro `r` (profundidad de pensamiento) se suministra en inferencia y no e
 | Licencia | MIT |
 | Formato de pesos | safetensors (float32), 615 KB |
 
-Otros datos: `d_model=64`, 4 cabezas de atencion, biblioteca `pytorch`, sin `trust_remote_code` (definicion del modelo en `modeling_webltm.py`). Fecha de creacion en HuggingFace: 2026-09-17. Descargas y likes: 0.
+Otros datos: `d_model=64`, 4 cabezas de atencion, biblioteca `pytorch`, sin `trust_remote_code` (definicion del modelo en `modeling_webltm.py`). Fecha de creacion en Hugging Face: 2026-09-17. Descargas y likes: 0.
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada: n
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| webLTM | 152.909 | no disponible | Suma 5+5 digitos, lectura no autoregresiva | MIT | HuggingFace |
+| webLTM | 152.909 | no disponible | Suma 5+5 digitos, lectura no autoregresiva | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone de modelos comparables directos en la informacion proporcionada: n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VishalMysore/webLTM
+- Hugging Face: https://huggingface.co/VishalMysore/webLTM
 - Paper de referencia citado en la model card: https://arxiv.org/abs/2502.05171 (Geiping et al., "Scaling up Test-Time Compute with Latent Reasoning: A Recurrent Depth Approach")
 - Repositorio GitHub `webLTM` (train.py, scripts de evaluacion y demo en navegador): mencionado en la model card, URL no disponible en la informacion proporcionada
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a paginas de ayuda de YouTube TV y consultas sin relacion con el modelo.

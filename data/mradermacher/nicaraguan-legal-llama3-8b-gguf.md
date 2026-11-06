@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento comparativo. El modelo base Llama 3 8B Ins
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/nicaraguan-legal-llama3-8b-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/nicaraguan-legal-llama3-8b-GGUF
 - Modelo original (sin cuantizar): https://huggingface.co/michael-c-137/nicaraguan-legal-llama3-8b
 - Modelo base Meta Llama 3 8B (referencia): https://huggingface.co/meta-llama/Meta-Llama-3-8B

@@ -95,6 +95,6 @@ La comparativa se realiza con el modelo base y con otros checkpoints de la misma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-grpo-base-s42
+- Hugging Face: https://huggingface.co/varadsrivastava/lm-playschool-qwen3.5-2b-grpo-base-s42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Paper (pendiente de enlace): *Raising a Small Language Model: From Imitation to Curiosity in Dialogue Games* (LM Playschool Challenge 2026)

@@ -113,7 +113,7 @@ La conclusion que el autor extrae de la comparacion es que en esta capa decide e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josch15366/Qwen3.8-Flash-Next-FP8-lm_head
+- Repositorio en Hugging Face: https://huggingface.co/josch15366/Qwen3.8-Flash-Next-FP8-lm_head
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Notas y metodologia (GitHub): https://github.com/jschmied/qwen38-flash-next-gb10
 - Escrito especifico sobre esta capa: https://github.com/jschmied/qwen38-flash-next-gb10/blob/main/notes/quantizing-lm-head.md

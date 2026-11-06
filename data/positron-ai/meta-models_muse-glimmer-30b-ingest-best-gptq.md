@@ -91,7 +91,7 @@ No se dispone de datos de modelos comparables en la informacion proporcionada. L
 ## Enlaces
 
 - Repositorio del checkpoint cuantizado: https://huggingface.co/positron-ai/meta-models_Muse-Glimmer-30B-ingest-best-gptq
-- Modelo base en HuggingFace (meta-models): https://huggingface.co/meta-models/Muse-Glimmer-30B
+- Modelo base en Hugging Face (meta-models): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio relacionado del mismo autor: https://huggingface.co/positron-ai/Muse-Glimmer-30B
 - Pagina de producto de Meta (developer.meta.com): https://developer.meta.com/ai/models/muse-glimmer/
 - Pagina de modelo en dev.meta.ai: https://dev.meta.ai/models/muse-glimmer

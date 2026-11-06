@@ -4,7 +4,7 @@
 
 GMP (Geometry Meets Physics) es un framework de pre-entrenamiento para modelos subrogados neuronales de ecuaciones en derivadas parciales (PDE) sobre geometrias 3D no estructuradas, desarrollado por el grupo thuerey-group (TUM School of Computation, Information and Technology, con colaboracion de la Universidad de Mannheim) y aceptado en NeurIPS 2026. Su propuesta central es eliminar la dependencia de datos de simulacion precalculados en disco: en lugar de almacenar terabytes de resultados CFD o FEM, GMP genera los datos de pre-entrenamiento en tiempo de ejecucion, ya sea a partir de descriptores geometricos intrinsecos (regimen estacionario) o de simulaciones PDE aceleradas en GPU (regimen transitorio).
 
-El repositorio de HuggingFace no contiene un modelo de lenguaje, sino un conjunto de checkpoints de pesos (formato PyTorch `.pth` y `.ckpt`) para la arquitectura GMP-Net y para dos baselines, AB-UPT y Transolver++, pre-entrenados tanto en la variante geometrica como en la fisica. El pipeline declarado es `feature-extraction`, coherente con su uso como extractor de representaciones geometricas y fisicas que despues se ajusta fino (fine-tuning) sobre benchmarks de ingenieria concretos.
+El repositorio de Hugging Face no contiene un modelo de lenguaje, sino un conjunto de checkpoints de pesos (formato PyTorch `.pth` y `.ckpt`) para la arquitectura GMP-Net y para dos baselines, AB-UPT y Transolver++, pre-entrenados tanto en la variante geometrica como en la fisica. El pipeline declarado es `feature-extraction`, coherente con su uso como extractor de representaciones geometricas y fisicas que despues se ajusta fino (fine-tuning) sobre benchmarks de ingenieria concretos.
 
 La relevancia actual reside en el coste de los surrogate models en ingenieria: el pre-entrenamiento clasico sobre mallas no estructuradas exige datasets de simulacion masivos y con cuellos de botella de E/S severos. GMP demuestra que es posible obtener representaciones utiles sin esos datos, reduciendo el coste de entrada para equipos que quieran adaptar un modelo subrogado a su propio dominio (aerodinamica, crash, dinamica de fluidos) con pocas simulaciones etiquetadas.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GMP-Net (este modelo) | no disponible (~346 MB y ~174 MB de pesos) | no aplica | Resultados en paper NeurIPS 2026 (no disponibles en esta ficha) | Apache 2.0 | HuggingFace + GitHub |
+| GMP-Net (este modelo) | no disponible (~346 MB y ~174 MB de pesos) | no aplica | Resultados en paper NeurIPS 2026 (no disponibles en esta ficha) | Apache 2.0 | Hugging Face + GitHub |
 | AB-UPT | no disponible (~148 MB de pesos) | no aplica | Baseline incluido en el paper GMP | no disponible en la informacion proporcionada | Checkpoint incluido en el mismo repo |
 | Transolver++ | no disponible (~106 MB por variante) | no aplica | Baseline incluido en el paper GMP | no disponible en la informacion proporcionada | Checkpoints incluidos en el mismo repo |
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo ni de otros modelos subrogados
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/thuerey-group/GMP
+- Hugging Face: https://huggingface.co/thuerey-group/GMP
 - Paper (arXiv): https://arxiv.org/abs/2610.03363
 - OpenReview: https://openreview.net/forum?id=jidnQA2TIz
 - Repositorio GitHub: https://github.com/tum-pbs/GMP

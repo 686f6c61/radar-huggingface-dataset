@@ -108,8 +108,8 @@ La comparacion con modelos de otras familias o tamanos no es significativa, dado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r03-mulligan-divl
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r03-mulligan-divl
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r03-mulligan-idql
 - Variante de referencia r00 con critico DIVL: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-divl
 - Conjunto de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval

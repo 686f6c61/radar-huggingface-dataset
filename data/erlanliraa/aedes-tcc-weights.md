@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (COCO, MMLU, HumanEval, G
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| aedes-tcc-weights (modelo 6) | RT-DETR-L | no disponible | no aplica | +5,54 % vs FIOCRUZ, F1 ≈0,30 | CC-BY-4.0 | HuggingFace |
-| aedes-tcc-weights (modelo 12) | YOLO26-N | no disponible | no aplica | no disponible | CC-BY-4.0 | HuggingFace |
+| aedes-tcc-weights (modelo 6) | RT-DETR-L | no disponible | no aplica | +5,54 % vs FIOCRUZ, F1 ≈0,30 | CC-BY-4.0 | Hugging Face |
+| aedes-tcc-weights (modelo 12) | YOLO26-N | no disponible | no aplica | no disponible | CC-BY-4.0 | Hugging Face |
 | YOLO26 oficial (Ultralytics) | YOLO26 (L/N) | no disponible en la informacion | no aplica | no disponible en la informacion | licencia Ultralytics (no confirmada aqui) | Repositorio Ultralytics |
 | RT-DETR oficial (Baidu) | RT-DETR-L | no disponible en la informacion | no aplica | no disponible en la informacion | licencia del proyecto original (no confirmada aqui) | Repositorio oficial |
 
@@ -94,7 +94,7 @@ La comparación relevante no es frente a modelos de lenguaje, sino frente a los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erlanliraa/aedes-tcc-weights
+- Modelo en Hugging Face: https://huggingface.co/erlanliraa/aedes-tcc-weights
 - Datasets asociados: https://huggingface.co/datasets/erlanliraa/aedes-tcc-datasets
 - Documentación del proyecto (referenciada en la model card): `DOCUMENTACAO.md` dentro del repositorio
 - Librería Ultralytics: https://github.com/ultralytics/ultralytics

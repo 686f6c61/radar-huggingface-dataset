@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`hugarcia95/perceiver-finetuned31` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de la arquitectura Perceiver, orientada a tareas de *matching* (emparejamiento). No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de laboratorio.
+`hugarcia95/perceiver-finetuned31` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de la arquitectura Perceiver, orientada a tareas de *matching* (emparejamiento). No se trata de un modelo preentrenado listo para produccion: la propia model card lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo (*smoke tests*) y experimentos controlados de laboratorio.
 
 El peso publicado, `model.safetensors`, es un checkpoint de inicializacion valido para pruebas de arranque, no un checkpoint entrenado ni evaluado. El recuento real de parametros segun el archivo de safetensors es de 24.832 parametros (0,0248 millones), lo que lo situa muy por debajo de cualquier modelo utilizable en tareas generativas reales. El repositorio incluye ademas `predict.py` como artefacto principal, `config.json` con la configuracion de arquitectura y `training_args.json` con la receta de experimento por defecto (SGD con scheduler de tipo *step*).
 
-Su relevancia es, por tanto, metodologica y no de rendimiento: sirve como punto de partida reproducible para comparar variantes de Perceiver con atencion *flash* y fusion de bajo rango (*low rank*), y como ejemplo de empaquetado de una implementacion personalizada en el ecosistema HuggingFace. La licencia es MIT y el repositorio no declara pipeline, idiomas ni tokenizador.
+Su relevancia es, por tanto, metodologica y no de rendimiento: sirve como punto de partida reproducible para comparar variantes de Perceiver con atencion *flash* y fusion de bajo rango (*low rank*), y como ejemplo de empaquetado de una implementacion personalizada en el ecosistema Hugging Face. La licencia es MIT y el repositorio no declara pipeline, idiomas ni tokenizador.
 
 ## Especificaciones tecnicas
 
@@ -22,7 +22,7 @@ Su relevancia es, por tanto, metodologica y no de rendimiento: sirve como punto 
 | Formato de pesos | safetensors (`model.safetensors`); acompanado de `config.json`, `training_args.json` y `predict.py` |
 | Escala declarada | nano |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-11 |
 
@@ -40,7 +40,7 @@ No hay evidencia de entrenamiento completado. La receta por defecto usa SGD con 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; no hay tokenizador ni vocabulario publicado.
 - Capacidades especiales (modo *thinking*, vision, audio): no disponibles. La arquitectura Perceiver es modalidad-agnostica en su formulacion original, pero esta implementacion no documenta ningun preprocesador ni cabecera de modalidad.
-- Ejecucion local: al ser una implementacion personalizada, requiere un adaptador explicito antes de poder usar las APIs automaticas de carga de HuggingFace (`AutoModel`, `from_pretrained` generico).
+- Ejecucion local: al ser una implementacion personalizada, requiere un adaptador explicito antes de poder usar las APIs automaticas de carga de Hugging Face (`AutoModel`, `from_pretrained` generico).
 
 ## Casos de uso
 
@@ -49,7 +49,7 @@ No hay evidencia de entrenamiento completado. La receta por defecto usa SGD con 
 - Test de integracion del pipeline de pesos: `model.safetensors` es un checkpoint valido, util para comprobar que la carga, el mapeo de claves y el guardado funcionan en un pipeline propio.
 - Plantilla para experimentos comparativos de *matching*: la model card recomienda evaluar con un conjunto de validacion emparejado, al menos tres semillas y una linea base de capacidad equivalente, lo que lo convierte en un esqueleto razonable para un protocolo de evaluacion reproducible.
 - Material didactico: con 24.832 parametros, el modelo se puede trazar, depurar e inspeccionar capa por capa en un cuaderno, algo inviable en modelos de miles de millones de parametros.
-- Pruebas de abstraccion de framework: sirve para validar adaptadores que traduzcan implementaciones personalizadas al formato de HuggingFace, ya que la carga automatica generica no funciona sin uno.
+- Pruebas de abstraccion de framework: sirve para validar adaptadores que traduzcan implementaciones personalizadas al formato de Hugging Face, ya que la carga automatica generica no funciona sin uno.
 - Linea base de capacidad minima en estudios de ablacion: al ser "nano", puede actuar como cota inferior frente a variantes mayores de la misma arquitectura.
 
 ## Benchmarks y rendimiento
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hugarcia95/perceiver-finetuned31
+- Modelo en Hugging Face: https://huggingface.co/hugarcia95/perceiver-finetuned31
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web proporcionada.

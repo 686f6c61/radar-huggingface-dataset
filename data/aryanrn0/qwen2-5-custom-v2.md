@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AryanRN0/qwen2.5-custom-v2 es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct, desarrollado por Aryan Maurya y publicado en HuggingFace. Se trata de un modelo denso de tipo transformer decoder-only con 494.032.768 parámetros, obtenido mediante LoRA (Low-Rank Adaptation) cuyos adaptadores se han fusionado (merged) en los pesos completos, de forma que se distribuye como un modelo autónomo y no como un adaptador separado.
+AryanRN0/qwen2.5-custom-v2 es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-0.5B-Instruct, desarrollado por Aryan Maurya y publicado en Hugging Face. Se trata de un modelo denso de tipo transformer decoder-only con 494.032.768 parámetros, obtenido mediante LoRA (Low-Rank Adaptation) cuyos adaptadores se han fusionado (merged) en los pesos completos, de forma que se distribuye como un modelo autónomo y no como un adaptador separado.
 
 El modelo se presenta como especializado en ingeniería del software, Python, conceptos de IA y seguimiento general de instrucciones, y está etiquetado como conversacional y de generación de texto en inglés. El entrenamiento se realizó sobre hardware Apple Silicon (MPS), lo que sitúa el proyecto en la categoría de ajustes finos de bajo coste realizados por un autor individual más que en la de un modelo con validación industrial.
 
@@ -69,11 +69,11 @@ La model card no incluye métricas de MMLU, HumanEval, GSM8K ni evaluaciones hum
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AryanRN0/qwen2.5-custom-v2 | 494 M | No especificado en la card (base: 32.768) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune LoRA fusionado, sin evaluación publicada |
-| Qwen/Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Base oficial, con model card detallada y amplia adopción |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1.540 M | 32.768 tokens | Apache 2.0 | HuggingFace | Mayor capacidad de razonamiento y código a coste de ~3 veces más memoria |
-| Llama-3.2-1B-Instruct | ~1.240 M | 128.000 tokens | Llama 3.2 Community License | HuggingFace (repositorio con acceso) | Contexto mucho mayor; licencia con restricciones adicionales para uso comercial |
-| SmolLM2-360M-Instruct | ~362 M | 8.192 tokens | Apache 2.0 | HuggingFace | Alternativa aún más pequeña, orientada a dispositivos móviles |
+| AryanRN0/qwen2.5-custom-v2 | 494 M | No especificado en la card (base: 32.768) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune LoRA fusionado, sin evaluación publicada |
+| Qwen/Qwen2.5-0.5B-Instruct | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Base oficial, con model card detallada y amplia adopción |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1.540 M | 32.768 tokens | Apache 2.0 | Hugging Face | Mayor capacidad de razonamiento y código a coste de ~3 veces más memoria |
+| Llama-3.2-1B-Instruct | ~1.240 M | 128.000 tokens | Llama 3.2 Community License | Hugging Face (repositorio con acceso) | Contexto mucho mayor; licencia con restricciones adicionales para uso comercial |
+| SmolLM2-360M-Instruct | ~362 M | 8.192 tokens | Apache 2.0 | Hugging Face | Alternativa aún más pequeña, orientada a dispositivos móviles |
 
 Los datos de los modelos comparados provienen de sus respectivas fichas públicas, no de evaluaciones cruzadas con este modelo. No existen benchmarks que permitan afirmar qué posición ocupa este fine-tune frente a su base.
 
@@ -91,6 +91,6 @@ Los datos de los modelos comparados provienen de sus respectivas fichas pública
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AryanRN0/qwen2.5-custom-v2
+- Modelo en Hugging Face: https://huggingface.co/AryanRN0/qwen2.5-custom-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

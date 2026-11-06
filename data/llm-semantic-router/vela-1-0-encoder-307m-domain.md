@@ -76,9 +76,9 @@ La evaluacion se realizo en los seis idiomas soportados. La model card no public
 
 | Modelo | Parametros | Contexto | F1 macro de dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela-1.0-Encoder-307M-Domain | 307,5 M | 32K | 0,739 | Apache-2.0 | Publico en HuggingFace |
+| Vela-1.0-Encoder-307M-Domain | 307,5 M | 32K | 0,739 | Apache-2.0 | Publico en Hugging Face |
 | Modelo anterior de dominio (sin identificar en la model card) | no disponible | no disponible | 0,647 | no disponible | no disponible |
-| `llm-semantic-router/mmbert-32k-yarn` (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| `llm-semantic-router/mmbert-32k-yarn` (modelo base) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Encoders de clasificacion multilingue de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card solo ofrece comparacion frente al modelo anterior de la misma funcion, sin nombrarlo ni detallar sus especificaciones. No se dispone de datos suficientes para comparar con alternativas externas como clasificadores de dominio basados en XLM-R o mDeBERTa.
@@ -98,7 +98,7 @@ La model card solo ofrece comparacion frente al modelo anterior de la misma func
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain
 - Documentacion tecnica y evaluacion (TECHNICAL.md): https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M-Domain/blob/main/TECHNICAL.md
 - Coleccion de la familia Vela 1.0: https://huggingface.co/collections/llm-semantic-router/vela-10-router-models-6aa555ba70cc6997d6d67798
 - Proyecto vLLM Semantic Router: https://github.com/vllm-project/semantic-router

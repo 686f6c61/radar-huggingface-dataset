@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GemScan models es un paquete de dos detectores de objetos en formato ONNX publicados por el usuario ChantaroNtw bajo el identificador `ChantaroNtw/gemscan-models`. El repositorio contiene dos arquitecturas de deteccion de objetos —YOLO11s y RT-DETR-L— afinadas para localizar inclusiones (imperfecciones internas) en fotografias de diamantes, con un enfoque declarado de control de calidad en el sector gemologico. El pipeline declarado en HuggingFace es `object-detection` y la libreria asociada es `onnx`.
+GemScan models es un paquete de dos detectores de objetos en formato ONNX publicados por el usuario ChantaroNtw bajo el identificador `ChantaroNtw/gemscan-models`. El repositorio contiene dos arquitecturas de deteccion de objetos —YOLO11s y RT-DETR-L— afinadas para localizar inclusiones (imperfecciones internas) en fotografias de diamantes, con un enfoque declarado de control de calidad en el sector gemologico. El pipeline declarado en Hugging Face es `object-detection` y la libreria asociada es `onnx`.
 
 Ambos modelos se exportaron a ONNX en opset 17, con entrada estatica de 1x3x640x640 y precision FP32, y el repositorio incluye un fichero `manifest.json` que lista cada archivo junto con su arquitectura, tamano de entrada y nombres de clase. El entrenamiento se realizo sobre el dataset Diamond Inclusion publicado en Roboflow por Diamond Classification Data bajo licencia CC BY 4.0.
 
@@ -102,7 +102,7 @@ Frente a alternativas externas de la misma categoria (por ejemplo, otros detecto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChantaroNtw/gemscan-models
+- Modelo en Hugging Face: https://huggingface.co/ChantaroNtw/gemscan-models
 - Dataset de entrenamiento (Diamond Inclusion, Roboflow, CC BY 4.0): https://universe.roboflow.com/diamond-classification-data/diamond-inclusion
 - Repositorio fuente con `app/inference.py` y `manifest.json`: no disponible (la model card lo menciona pero no facilita la URL)
 - Paper o blog tecnico del autor: no disponible

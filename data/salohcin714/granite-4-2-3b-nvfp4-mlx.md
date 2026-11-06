@@ -74,7 +74,7 @@ No se dispone de datos de contexto ni de benchmarks para ninguna de estas varian
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/salohcin714/granite-4.2-3b-nvfp4-mlx
+- Repositorio Hugging Face: https://huggingface.co/salohcin714/granite-4.2-3b-nvfp4-mlx
 - Modelo base original: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentacion de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

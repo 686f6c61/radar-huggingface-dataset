@@ -76,7 +76,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Luki-G/augmented-residuals-culturax24-downstream
+- Repositorio Hugging Face: https://huggingface.co/Luki-G/augmented-residuals-culturax24-downstream
 - Repositorio del código `multi-mhc`: https://github.com/LukaszGraff/multi-mhc
 - Artículo sobre LAuReL (Learned Augmented Residual Layer): https://arxiv.org/abs/2411.07501
 - Versión HTML del artículo LAuReL: https://arxiv.org/html/2411.07501v3

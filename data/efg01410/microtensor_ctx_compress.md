@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microtensor_ctx_compress` es un repositorio de plantilla publicado por el usuario Efg01410 en HuggingFace, concebido como submission de referencia para las "arenas" de Microtensor, una plataforma de evaluación descentralizada de modelos de lenguaje. No se trata de un modelo entrenado con pesos publicados, sino de un esqueleto de repositorio que incluye un harness de ejecución, un router y un módulo de escalado a modelos frontier, junto con instrucciones para sustituir el modelo base por uno propio especializado.
+`microtensor_ctx_compress` es un repositorio de plantilla publicado por el usuario Efg01410 en Hugging Face, concebido como submission de referencia para las "arenas" de Microtensor, una plataforma de evaluación descentralizada de modelos de lenguaje. No se trata de un modelo entrenado con pesos publicados, sino de un esqueleto de repositorio que incluye un harness de ejecución, un router y un módulo de escalado a modelos frontier, junto con instrucciones para sustituir el modelo base por uno propio especializado.
 
 El repositorio está orientado específicamente al adaptador `context_compression`, cuyo cometido es compactar sesiones de agentes de código en un JSON de cinco campos (`ctx_compress`) respetando un presupuesto de tokens. La plantilla asume un contexto máximo de 32768 tokens, hasta 3072 tokens nuevos por generación y formato de chat Qwen, con instrucciones para adaptarlo a Phi 4 mini.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `Efg01410/microtensor_ctx_compress` | no disponible | 32768 tokens (configurado) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `Efg01410/microtensor_ctx_compress` | no disponible | 32768 tokens (configurado) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Plantillas de submission para otras arenas de Microtensor | no disponible | según arena | no disponible | referenciadas en la documentación de Microtensor |
 | Modelos base citados (Qwen chat, Phi 4 mini) | no disponible en la información | no disponible en la información | no disponible en la información | no disponible |
 
@@ -82,11 +82,11 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 - Restricciones de empaquetado: `harness/` y `escalation/` deben sumar menos de 2 MB, lo que limita la complejidad del código auxiliar.
 - Dependencia de modelos frontier externos: el módulo de escalado requiere tickets y relay operativos, con coste asociado y verificación por recibos firmados.
 - Sesgos: no disponibles; dependen del modelo base y de los datos de entrenamiento que cada usuario aporte.
-- Fecha de creación futura (2026-11-03) en los metadatos de HuggingFace, lo que sugiere posible desfase o error en el registro.
+- Fecha de creación futura (2026-11-03) en los metadatos de Hugging Face, lo que sugiere posible desfase o error en el registro.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Efg01410/microtensor_ctx_compress
+- Repositorio Hugging Face: https://huggingface.co/Efg01410/microtensor_ctx_compress
 - Documentación de evaluación descentralizada: https://www.microtensor.cloud/docs/certified-inference/system/decentralised-evaluation
 - Documentación de perfiles de hardware: https://www.microtensor.cloud/docs/certified-inference/system/hardware-profiles
 - API de arenas: https://api.microtensor.cloud/v2/arenas/<arena>

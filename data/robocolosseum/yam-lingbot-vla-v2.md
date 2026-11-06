@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboColosseum/yam-lingbot-vla-v2 (este) | 6B | no disponible | Fine-tune completo de LingBot-VLA 2.0 sobre MolmoAct2-BimanualYAM (40K pasos de 100K) | Apache 2.0 | HuggingFace, 0 descargas, sin evaluación publicada |
-| robbyant/lingbot-vla-v2-6b (base) | 6B | no disponible | Modelo base LingBot-VLA 2.0 con profundidad nativa | no disponible en la información | HuggingFace |
+| RoboColosseum/yam-lingbot-vla-v2 (este) | 6B | no disponible | Fine-tune completo de LingBot-VLA 2.0 sobre MolmoAct2-BimanualYAM (40K pasos de 100K) | Apache 2.0 | Hugging Face, 0 descargas, sin evaluación publicada |
+| robbyant/lingbot-vla-v2-6b (base) | 6B | no disponible | Modelo base LingBot-VLA 2.0 con profundidad nativa | no disponible en la información | Hugging Face |
 | MolmoAct2 (referencia de receta) | no disponible | no disponible | Modelo de razonamiento de acciones de AllenAI; el dataset BimanualYAM proviene de su ecosistema | no disponible en la información | Paper arXiv 2605.02881 |
 
 La comparación con alternativas de la misma categoría (otros VLAs bimanuales de tamaño similar) no está disponible en la información proporcionada. Los dos modelos listados son el base y la referencia metodológica, no competidores directos.
@@ -85,7 +85,7 @@ La comparación con alternativas de la misma categoría (otros VLAs bimanuales d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/yam-lingbot-vla-v2
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/yam-lingbot-vla-v2
 - Modelo base: https://huggingface.co/robbyant/lingbot-vla-v2-6b
 - Repositorio de código LingBot-VLA 2.0: https://github.com/robbyant/lingbot-vla-v2
 - Dataset MolmoAct2-BimanualYAM: https://huggingface.co/datasets/allenai/MolmoAct2-BimanualYAM-Dataset

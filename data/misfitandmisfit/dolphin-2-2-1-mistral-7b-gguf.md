@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
 | Dolphin 2.2.1 Mistral 7B (este repo, GGUF) | 7,24 B | no disponible | Apache 2.0 | GGUF | Repositorio con 0 descargas |
-| dolphin-2.2.1-mistral-7B (original, ehartford) | 7,24 B | no disponible | Apache 2.0 | safetensors/PyTorch | Disponible en HuggingFace |
-| dolphin-2.2.1-mistral-7B-GGUF (TheBloke) | 7,24 B | no disponible | Apache 2.0 | GGUF | Disponible en HuggingFace |
-| dolphin-2.2.1-mistral-7B-GPTQ (TheBloke) | 7,24 B | no disponible | Apache 2.0 | GPTQ | Disponible en HuggingFace |
+| dolphin-2.2.1-mistral-7B (original, ehartford) | 7,24 B | no disponible | Apache 2.0 | safetensors/PyTorch | Disponible en Hugging Face |
+| dolphin-2.2.1-mistral-7B-GGUF (TheBloke) | 7,24 B | no disponible | Apache 2.0 | GGUF | Disponible en Hugging Face |
+| dolphin-2.2.1-mistral-7B-GPTQ (TheBloke) | 7,24 B | no disponible | Apache 2.0 | GPTQ | Disponible en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/misfitandmisfit/dolphin-2.2.1-mistral-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/misfitandmisfit/dolphin-2.2.1-mistral-7B-GGUF
 - Modelo original: https://huggingface.co/ehartford/dolphin-2.2.1-mistral-7b
 - Cuantizaciones GGUF de TheBloke: https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-GGUF
 - Cuantizaciones AWQ de TheBloke: https://huggingface.co/TheBloke/dolphin-2.2.1-mistral-7B-AWQ

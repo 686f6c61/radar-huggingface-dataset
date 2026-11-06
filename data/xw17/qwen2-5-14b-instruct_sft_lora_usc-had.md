@@ -2,9 +2,9 @@
 
 ## Resumen
 
-xw17/Qwen2.5-14B-Instruct_SFT_lora_usc-had es un repositorio publicado en HuggingFace por el usuario xw17 que, por su nomenclatura y por el tamano del repositorio (0,1 GB), corresponde a un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Qwen2.5-14B-Instruct. La etiqueta del nombre sugiere un ajuste orientado a un dominio concreto, pero el autor no documenta en ningun momento cual es ese dominio, que datos se han usado ni con que hiperparametros.
+xw17/Qwen2.5-14B-Instruct_SFT_lora_usc-had es un repositorio publicado en Hugging Face por el usuario xw17 que, por su nomenclatura y por el tamano del repositorio (0,1 GB), corresponde a un adaptador LoRA de ajuste supervisado (SFT) sobre el modelo base Qwen2.5-14B-Instruct. La etiqueta del nombre sugiere un ajuste orientado a un dominio concreto, pero el autor no documenta en ningun momento cual es ese dominio, que datos se han usado ni con que hiperparametros.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace, sin ninguna seccion completada: todos los campos aparecen como "[More Information Needed]". No se declara licencia, idiomas, pipeline, dataset de entrenamiento, procedimiento de evaluacion ni resultados. El repositorio no tiene descargas ni "likes" en el momento de la consulta y su fecha de creacion figura como 2026-09-30, posterior a la fecha de actualizacion (2026-09-30T22:12:18), lo que apunta a un artefacto subido sin mantenimiento ni validacion posterior.
+La model card publicada es la plantilla generica autogenerada por Hugging Face, sin ninguna seccion completada: todos los campos aparecen como "[More Information Needed]". No se declara licencia, idiomas, pipeline, dataset de entrenamiento, procedimiento de evaluacion ni resultados. El repositorio no tiene descargas ni "likes" en el momento de la consulta y su fecha de creacion figura como 2026-09-30, posterior a la fecha de actualizacion (2026-09-30T22:12:18), lo que apunta a un artefacto subido sin mantenimiento ni validacion posterior.
 
 Por tanto, se trata de un modelo relevante unicamente como punto de partida para quien quiera inspeccionar el adaptador o reutilizarlo, no como un modelo listo para produccion. Cualquier evaluacion tecnica seria debe hacerse sobre los pesos del adaptador una vez fusionados con el base, dado que el autor no aporta ningun dato verificable.
 
@@ -70,16 +70,16 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (apr
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Estado de documentacion |
 |---|---|---|---|---|---|
-| xw17/Qwen2.5-14B-Instruct_SFT_lora_usc-had | 14,7 B (base) + LoRA no cuantificado | No disponible (base: 128 000 tokens) | No disponible | Adaptador safetensors en HuggingFace | Nula: plantilla sin rellenar |
-| Qwen2.5-14B-Instruct | 14,7 B | 128 000 tokens | Apache 2.0 | Pesos completos en HuggingFace | Completa, con informe tecnico y benchmarks |
-| Qwen2.5-7B-Instruct | 7,6 B | 128 000 tokens | Apache 2.0 | Pesos completos en HuggingFace | Completa |
-| Mistral-Nemo-Instruct-2407 | 12 B | 128 000 tokens | Apache 2.0 | Pesos completos en HuggingFace | Completa |
+| xw17/Qwen2.5-14B-Instruct_SFT_lora_usc-had | 14,7 B (base) + LoRA no cuantificado | No disponible (base: 128 000 tokens) | No disponible | Adaptador safetensors en Hugging Face | Nula: plantilla sin rellenar |
+| Qwen2.5-14B-Instruct | 14,7 B | 128 000 tokens | Apache 2.0 | Pesos completos en Hugging Face | Completa, con informe tecnico y benchmarks |
+| Qwen2.5-7B-Instruct | 7,6 B | 128 000 tokens | Apache 2.0 | Pesos completos en Hugging Face | Completa |
+| Mistral-Nemo-Instruct-2407 | 12 B | 128 000 tokens | Apache 2.0 | Pesos completos en Hugging Face | Completa |
 
 No se dispone de resultados de rendimiento del adaptador, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad. Frente al modelo base, la unica diferencia verificable es la existencia de un ajuste adicional sin documentar y sin evaluar.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace con todos los campos como "[More Information Needed]". No hay informacion sobre datos, hiperparametros, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face con todos los campos como "[More Information Needed]". No hay informacion sobre datos, hiperparametros, evaluacion ni uso previsto.
 - Licencia no declarada: al no especificarse licencia para el adaptador, su uso comercial queda en un limbo juridico, aunque el modelo base Qwen2.5-14B-Instruct sea Apache 2.0. Conviene contactar con el autor antes de cualquier uso en produccion.
 - Riesgo de sesgos desconocido: sin datos de entrenamiento publicados no se puede evaluar que sesgos introduce el ajuste ni si refuerza estereotipos presentes en el corpus.
 - Riesgo de alucinacion no medido: no hay ninguna evaluacion de fidelidad factual ni de tasa de alucinacion sobre el modelo ajustado.
@@ -92,7 +92,7 @@ No se dispone de resultados de rendimiento del adaptador, por lo que la comparac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_usc-had
+- Repositorio en Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_usc-had
 - Referencia citada en la plantilla de la model card (calculo de emisiones, no relacionada con el entrenamiento): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio de codigo o demo).

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MatRefiner-Fine_tuned_models es un repositorio publicado en HuggingFace por el usuario u organizacion MGE-LLMs bajo licencia Apache 2.0. Se trata de una coleccion de modelos ajustados (fine-tuned), segun indica su propio identificador, aunque la informacion publica disponible no especifica ni el modelo base sobre el que se ha realizado el ajuste, ni el numero de variantes incluidas, ni la tarea concreta para la que han sido entrenadas.
+MatRefiner-Fine_tuned_models es un repositorio publicado en Hugging Face por el usuario u organizacion MGE-LLMs bajo licencia Apache 2.0. Se trata de una coleccion de modelos ajustados (fine-tuned), segun indica su propio identificador, aunque la informacion publica disponible no especifica ni el modelo base sobre el que se ha realizado el ajuste, ni el numero de variantes incluidas, ni la tarea concreta para la que han sido entrenadas.
 
-El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos. En el momento de la consulta acumula 0 descargas y 1 like, y fue creado el 21 de septiembre de 2026 con una ultima actualizacion el mismo dia, lo que indica una publicacion muy reciente y sin validacion por parte de la comunidad.
+El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos. En el momento de la consulta acumula 0 descargas y 1 like, y fue creado el 21 de septiembre de 2026 con una ultima actualizacion el mismo dia, lo que indica una publicacion muy reciente y sin validacion por parte de la comunidad.
 
 No se ha encontrado documentacion tecnica asociada (model card detallada, paper, blog o repositorio de codigo) que permita verificar arquitectura, tamano, longitud de contexto o datos de entrenamiento. Las busquedas web realizadas devuelven unicamente resultados de entidades no relacionadas que comparten las siglas MGE (una empresa francesa de transporte y logistica, una liga competitiva de Team Fortress 2 y un distribuidor de maquinaria para espacios verdes), por lo que no aportan informacion sobre el modelo.
 
@@ -21,7 +21,7 @@ No se ha encontrado documentacion tecnica asociada (model card detallada, paper,
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Autor u organizacion | MGE-LLMs |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 21 de septiembre de 2026 |
 | Ultima actualizacion | 21 de septiembre de 2026 |
 | Descargas | 0 |
@@ -42,7 +42,7 @@ El identificador del repositorio sugiere que se trata de modelos derivados de un
 - No se ha confirmado soporte de tool calling ni de function calling.
 - No se ha confirmado soporte para flujos de agentes o razonamiento multi-paso.
 - No se ha confirmado cobertura multilingue ni un modo de razonamiento explicito (thinking mode).
-- El acceso restringido impide verificar funcionalidades mediante pruebas directas sin solicitar previamente la autorizacion en HuggingFace.
+- El acceso restringido impide verificar funcionalidades mediante pruebas directas sin solicitar previamente la autorizacion en Hugging Face.
 
 ## Casos de uso
 
@@ -84,14 +84,14 @@ No disponible. Al no conocerse el modelo base, el numero de parametros ni la tar
 - Idiomas soportados: no disponibles, por lo que no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma.
 - Limite de contexto: no disponible, lo que impide planificar casos de uso con documentos largos o conversaciones multi-turno extensas.
 - Licencia: Apache 2.0 en los metadatos, lo que en principio permite uso comercial, pero al desconocerse el modelo base conviene verificar que sus terminos sean compatibles con esta relicencia.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la auditoria por terceros.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la auditoria por terceros.
 - Madurez: 0 descargas y 1 like en el momento de la consulta; sin evidencia de uso en produccion ni de validacion independiente.
 - Fecha de publicacion muy reciente (21 de septiembre de 2026) con una unica actualizacion el mismo dia.
 - No se debe asumir ninguna capacidad ni requisito de hardware a partir del nombre del repositorio.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MGE-LLMs/MatRefiner-Fine_tuned_models
+- Repositorio en Hugging Face: https://huggingface.co/MGE-LLMs/MatRefiner-Fine_tuned_models
 - Paper: no disponible
 - Blog o anuncio del desarrollador: no disponible
 - Repositorio de codigo: no disponible

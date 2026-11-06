@@ -100,7 +100,7 @@ Frente a alternativas de otros autores, los datos de parametros, contexto y rend
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mflux-community/fibo-1-5-mflux-bf16
+- Repositorio de Hugging Face: https://huggingface.co/mflux-community/fibo-1-5-mflux-bf16
 - Modelo base original: https://huggingface.co/briaai/Fibo-1.5
 - Variante Q8: https://huggingface.co/mflux-community/fibo-1-5-mflux-q8
 - Variante Q6: https://huggingface.co/mflux-community/fibo-1-5-mflux-q6

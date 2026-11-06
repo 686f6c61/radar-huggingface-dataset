@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks de tarea (MMLU, HumanEval, GSM8K, M
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| axteam/Qwen3.5-27B-AWQ-8bit | 27,8 B (denso) | No disponible | AWQ INT8 W8A16, ~30,5 GB | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-27B (original) | 27,8 B (denso) | No disponible | BF16, ~55 GB | Apache-2.0 | HuggingFace |
+| axteam/Qwen3.5-27B-AWQ-8bit | 27,8 B (denso) | No disponible | AWQ INT8 W8A16, ~30,5 GB | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-27B (original) | 27,8 B (denso) | No disponible | BF16, ~55 GB | Apache-2.0 | Hugging Face |
 | Versiones W4A16/GGUF de 27B de la familia Qwen | ~27-28 B | No disponible | 4 bits, ~14-17 GB | Apache-2.0 (según base) | Existen en el ecosistema, pero las encontradas corresponden a otras versiones de la familia, no comparables directamente |
 
 Frente al original BF16, esta cuantización reduce el peso a prácticamente la mitad (~30,5 GB frente a ~55 GB) con una perplejidad prácticamente idéntica (1,3606 frente a 1,3603) según la medición del autor. Frente a alternativas de 4 bits del mismo tamaño, el coste es mayor en VRAM a cambio de una fidelidad previsiblemente superior; no hay datos públicos que permitan cuantificar esa diferencia para esta familia concreta.
@@ -93,8 +93,8 @@ Frente al original BF16, esta cuantización reduce el peso a prácticamente la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-27B-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-27B-AWQ-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE
-- Listado de modelos con cuantización W4A16 en HuggingFace: https://huggingface.co/models?other=w4a16
-- Listado de modelos con cuantización INT4 en HuggingFace: https://huggingface.co/models?other=int4&p=2&sort=trending
+- Listado de modelos con cuantización W4A16 en Hugging Face: https://huggingface.co/models?other=w4a16
+- Listado de modelos con cuantización INT4 en Hugging Face: https://huggingface.co/models?other=int4&p=2&sort=trending

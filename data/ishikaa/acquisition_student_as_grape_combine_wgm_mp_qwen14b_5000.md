@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_grape_combine_WGM_MP_qwen14b_5000` es un modelo de generacion de texto publicado en HuggingFace por el usuario `ishikaa`. Se trata de un ajuste fino (fine-tuning) sobre una base de la familia Qwen2, segun indica la etiqueta `qwen2` y el sufijo `qwen14b` del identificador. El nombre del repositorio sugiere un experimento de destilacion o aprendizaje por adquisicion (posiblemente *acquisition student*) combinando varias fuentes o metodos (WGM, MP), aunque no hay documentacion que lo confirme.
+`ishikaa/acquisition_student_AS_grape_combine_WGM_MP_qwen14b_5000` es un modelo de generacion de texto publicado en Hugging Face por el usuario `ishikaa`. Se trata de un ajuste fino (fine-tuning) sobre una base de la familia Qwen2, segun indica la etiqueta `qwen2` y el sufijo `qwen14b` del identificador. El nombre del repositorio sugiere un experimento de destilacion o aprendizaje por adquisicion (posiblemente *acquisition student*) combinando varias fuentes o metodos (WGM, MP), aunque no hay documentacion que lo confirme.
 
 El modelo cuenta con 14.770.033.664 parametros (aproximadamente 14,8 mil millones) y se distribuye en formato safetensors con un tamano de repositorio de 29,6 GB, lo que corresponde a pesos en precision de 16 bits. Es compatible con la libreria `transformers` y con text-generation-inference, y esta etiquetado como `endpoints_compatible`.
 
-La model card es la plantilla automatica de HuggingFace sin rellenar: no aporta informacion sobre datos de entrenamiento, licencia, idiomas, contexto ni evaluacion. Cualquier dato no verificable se marca como "no disponible" en esta ficha. El modelo tiene cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto de investigacion sin validacion comunitaria.
+La model card es la plantilla automatica de Hugging Face sin rellenar: no aporta informacion sobre datos de entrenamiento, licencia, idiomas, contexto ni evaluacion. Cualquier dato no verificable se marca como "no disponible" en esta ficha. El modelo tiene cero descargas y cero likes en el momento de la consulta, lo que indica que es un artefacto de investigacion sin validacion comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se dispone de datos sobre el proceso de entrenamiento: numero de tokens, comp
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Integracion con text-generation-inference y endpoints compatibles con la API de HuggingFace.
+- Integracion con text-generation-inference y endpoints compatibles con la API de Hugging Face.
 
 ## Casos de uso
 
@@ -48,7 +48,7 @@ No se dispone de datos sobre el proceso de entrenamiento: numero de tokens, comp
 - Generacion de texto en prototipos: al ser un modelo de 14,8 B en safetensors, puede usarse como base para pruebas de generacion conversacional en entornos controlados.
 - Fine-tuning posterior: al estar en formato safetensors y ser compatible con transformers, sirve como punto de partida para ajustes especificos, siempre que se verifique la licencia.
 - Evaluacion comparativa de checkpoints: util para medir el efecto de tecnicas de adquisicion o combinacion de modelos frente a la base Qwen2.
-- Despliegue con TGI: la etiqueta `text-generation-inference` permite servirlo con el servidor de HuggingFace para pruebas de latencia y throughput.
+- Despliegue con TGI: la etiqueta `text-generation-inference` permite servirlo con el servidor de Hugging Face para pruebas de latencia y throughput.
 - Generacion conversacional en demos: la etiqueta `conversational` sugiere uso en asistentes de demostracion, aunque sin garantias de calidad al no haber benchmarks.
 
 ## Benchmarks y rendimiento
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `ishikaa/acquisition_student_AS_grape_combine_WGM_MP_qwen14b_5000` | 14,77 B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2-14B (base oficial) | ~14 B | 32.768 tokens | Apache 2.0 (Qwen2) | HuggingFace, safetensors, GGUF |
-| Qwen2.5-14B-Instruct | ~14,7 B | 32.768 tokens (128K en variantes) | Apache 2.0 | HuggingFace, safetensors, GGUF |
-| Mistral-Nemo-12B | ~12 B | 128.000 tokens | Apache 2.0 | HuggingFace, safetensors, GGUF |
+| `ishikaa/acquisition_student_AS_grape_combine_WGM_MP_qwen14b_5000` | 14,77 B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2-14B (base oficial) | ~14 B | 32.768 tokens | Apache 2.0 (Qwen2) | Hugging Face, safetensors, GGUF |
+| Qwen2.5-14B-Instruct | ~14,7 B | 32.768 tokens (128K en variantes) | Apache 2.0 | Hugging Face, safetensors, GGUF |
+| Mistral-Nemo-12B | ~12 B | 128.000 tokens | Apache 2.0 | Hugging Face, safetensors, GGUF |
 
 La comparativa con la base Qwen2 es orientativa: el checkpoint aqui descrito no documenta su procedencia exacta ni su licencia, por lo que no puede confirmarse que herede las condiciones de Apache 2.0.
 
@@ -89,7 +89,7 @@ La comparativa con la base Qwen2 es orientativa: el checkpoint aqui descrito no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_grape_combine_WGM_MP_qwen14b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_grape_combine_WGM_MP_qwen14b_5000
 - Paper citado en la model card (Lacoste et al., 2019, ML Impact): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML: https://mlco2.github.io/impact
 - Repositorio Qwen2 (referencia de arquitectura): https://github.com/QwenLM/Qwen2

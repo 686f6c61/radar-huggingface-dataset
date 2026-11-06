@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning es un repositorio de pesos publicado en HuggingFace por el usuario Kosakwen, con fecha de creación del 10 de septiembre de 2026 según los metadatos de la plataforma. El nombre sugiere un modelo derivado de la familia Qwen 3.5 en su variante de 0,8B de parámetros, sometido a algún proceso de ajuste o fusión (los sufijos "astra6" y "claudesone5") orientado a razonamiento ("reaspondning", con errata evidente respecto a "reasoning"). El autor no confirma ninguno de estos extremos: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripción, procedencia, datos de entrenamiento ni evaluación.
+Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning es un repositorio de pesos publicado en Hugging Face por el usuario Kosakwen, con fecha de creación del 10 de septiembre de 2026 según los metadatos de la plataforma. El nombre sugiere un modelo derivado de la familia Qwen 3.5 en su variante de 0,8B de parámetros, sometido a algún proceso de ajuste o fusión (los sufijos "astra6" y "claudesone5") orientado a razonamiento ("reaspondning", con errata evidente respecto a "reasoning"). El autor no confirma ninguno de estos extremos: la model card se limita a declarar la licencia Apache 2.0 y no incluye descripción, procedencia, datos de entrenamiento ni evaluación.
 
 El conteo real de parámetros reportado por la plataforma a partir de los pesos safetensors es de 772.845.888, aproximadamente 0,77B, lo que lo sitúa en la categoría de modelos minúsculos, aptos para ejecución local en CPU o en GPUs de gama baja. El repositorio ocupa 2,2 GB y está etiquetado como GGUF, conversacional, compatible con Inference Endpoints y con licencia Apache 2.0.
 
@@ -13,7 +13,7 @@ Su relevancia actual es escasa y difícil de justificar: acumula 1 like y 0 desc
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (el autor no la documenta; el nombre sugiere un transformer denso derivado de Qwen 3.5, sin confirmar) |
-| Parametros totales | 772.845.888 (aproximadamente 0,77B), según conteo de safetensors reportado por HuggingFace |
+| Parametros totales | 772.845.888 (aproximadamente 0,77B), según conteo de safetensors reportado por Hugging Face |
 | Parametros activos | no aplica / no disponible (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible en detalle; el repositorio está etiquetado como GGUF, pero no se especifican los niveles incluidos |
@@ -29,11 +29,11 @@ Respecto al entrenamiento, no hay datos sobre número de tokens, composición de
 
 ## Capacidades
 
-La información verificable sobre capacidades es mínima y procede exclusivamente de las etiquetas de HuggingFace:
+La información verificable sobre capacidades es mínima y procede exclusivamente de las etiquetas de Hugging Face:
 
 - Generación de texto conversacional: el repositorio está etiquetado como "conversational", lo que indica que los pesos están formateados para diálogo multi-turno, aunque no se especifica la plantilla de chat.
 - Ejecución local mediante GGUF: el formato permite inferencia en llama.cpp y derivados, con o sin GPU.
-- Compatibilidad con Inference Endpoints: la etiqueta "endpoints_compatible" sugiere que el repositorio puede desplegarse en la infraestructura gestionada de HuggingFace.
+- Compatibilidad con Inference Endpoints: la etiqueta "endpoints_compatible" sugiere que el repositorio puede desplegarse en la infraestructura gestionada de Hugging Face.
 - Razonamiento: el nombre del repositorio incluye un sufijo con errata que apunta a "reasoning", pero no hay ninguna confirmación, configuración de modo pensamiento ni ejemplo de uso.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -65,7 +65,7 @@ Las cifras de memoria que siguen son estimaciones calculadas a partir del númer
 - Cabe en GPU consumer: sí, en prácticamente cualquier GPU con 2 GB o más de VRAM (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4060, RTX 4090). También cabe en iGPU modernas con memoria unificada.
 - Ejecución en CPU: viable. Un modelo de 0,77B en Q4_K_M puede generar varios tokens por segundo en CPUs de escritorio actuales, aunque no se dispone de mediciones concretas para este repositorio.
 - GPU recomendadas: no se requiere hardware de centro de datos. A100, H100 o similares no aportan ventaja apreciable salvo en escenarios de altísima concurrencia por lotes.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan, llama-cpp-python y text-generation-webui son las vías naturales para pesos GGUF. El despliegue con vLLM o TGI requeriría pesos en safetensors y soporte explícito de la arquitectura, algo que no está confirmado en la información disponible. La etiqueta "endpoints_compatible" apunta a compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, Jan, llama-cpp-python y text-generation-webui son las vías naturales para pesos GGUF. El despliegue con vLLM o TGI requeriría pesos en safetensors y soporte explícito de la arquitectura, algo que no está confirmado en la información disponible. La etiqueta "endpoints_compatible" apunta a compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo ni de latencia por petición.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Nota: los datos de los modelos alternativos proceden de su documentación públi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning
+- Repositorio en Hugging Face: https://huggingface.co/Kosakwen/Qwen_3.5_0.8_astra6_claudesone5_reaspondning
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

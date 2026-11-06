@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace - GT1999/mwp-v2-llama1b-base-staged-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage1)
-- [HuggingFace - GT1999/mwp-v2-llama1b-b1-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-b1-stage1)
-- [HuggingFace - GT1999/mwp-v2-llama1b-b2-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-b2-stage1)
+- [Hugging Face - GT1999/mwp-v2-llama1b-base-staged-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-base-staged-stage1)
+- [Hugging Face - GT1999/mwp-v2-llama1b-b1-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-b1-stage1)
+- [Hugging Face - GT1999/mwp-v2-llama1b-b2-stage1](https://huggingface.co/GT1999/mwp-v2-llama1b-b2-stage1)
 - [LLM Leaderboard & AI Model Benchmarks - Septiembre 2026](https://benchlm.ai/) (referencia general, no específica del modelo)

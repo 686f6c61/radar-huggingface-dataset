@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto binaria publicado por el usuario akansal0 en HuggingFace. Se trata de un fine-tuning de `distilbert/distilbert-base-uncased`, la variante destilada de BERT con 66.955.010 parámetros, orientado a distinguir entre textos que describen comida y textos que no. El nombre del modelo sugiere un caso de uso acotado a la clasificación de contenido gastronómico, probablemente como ejercicio formativo dentro de un flujo de aprendizaje de HuggingFace.
+`learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto binaria publicado por el usuario akansal0 en Hugging Face. Se trata de un fine-tuning de `distilbert/distilbert-base-uncased`, la variante destilada de BERT con 66.955.010 parámetros, orientado a distinguir entre textos que describen comida y textos que no. El nombre del modelo sugiere un caso de uso acotado a la clasificación de contenido gastronómico, probablemente como ejercicio formativo dentro de un flujo de aprendizaje de Hugging Face.
 
 El modelo no aporta una model card descriptiva: el README fue generado automáticamente por el `Trainer` de Transformers y el autor no ha completado las secciones de descripción, usos previstos ni datos de entrenamiento. La información disponible se limita a los hiperparámetros de entrenamiento, las métricas de validación reportadas y los metadatos del repositorio. No hay resultados de benchmarks publicados ni documentación sobre la composición del dataset.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, GLUE, etc.) en la 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| akansal0/learn_hf_food_not_food_text_classifier-distilbert-base-uncased | 66,9 M | 512 | Clasificación binaria comida/no comida | Apache 2.0 | HuggingFace |
-| distilbert/distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM) | Apache 2.0 | HuggingFace |
-| ProsusAI/finbert | 110 M | 512 | Clasificación de sentimiento financiero | Apache 2.0 | HuggingFace |
-| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 | Clasificación de sentimiento en redes sociales | MIT | HuggingFace |
+| akansal0/learn_hf_food_not_food_text_classifier-distilbert-base-uncased | 66,9 M | 512 | Clasificación binaria comida/no comida | Apache 2.0 | Hugging Face |
+| distilbert/distilbert-base-uncased | 66,9 M | 512 | Modelo base (MLM) | Apache 2.0 | Hugging Face |
+| ProsusAI/finbert | 110 M | 512 | Clasificación de sentimiento financiero | Apache 2.0 | Hugging Face |
+| cardiffnlp/twitter-roberta-base-sentiment-latest | 125 M | 512 | Clasificación de sentimiento en redes sociales | MIT | Hugging Face |
 
 La comparación con FinBERT y el modelo de Cardiff es únicamente estructural (encoders de tamaño similar para clasificación), ya que las tareas y los dominios difieren. No se dispone de benchmarks que permitan una comparación de rendimiento directa.
 
@@ -92,7 +92,7 @@ La comparación con FinBERT y el modelo de Cardiff es únicamente estructural (e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/akansal0/learn_hf_food_not_food_text_classifier-distilbert-base-uncased)
+- [Modelo en Hugging Face](https://huggingface.co/akansal0/learn_hf_food_not_food_text_classifier-distilbert-base-uncased)
 - [Modelo base distilbert-base-uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
 - [Repositorio de proyectos de IA de Ashish Patel (contexto de búsqueda)](https://github.com/ashishpatel26/500-AI-Machine-learning-Deep-learning-Computer-vision-NLP-Projects-with-code)
 - [Perfil de Ashish Patel en GitHub (contexto de búsqueda)](https://github.com/ashishpatel26)

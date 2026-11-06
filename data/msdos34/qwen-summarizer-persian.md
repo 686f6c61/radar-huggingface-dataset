@@ -6,7 +6,7 @@ msdos34/qwen-summarizer-persian es un ajuste fino (fine-tune) publicado por el u
 
 El entrenamiento se realizo con Unsloth y TRL, segun la propia model card, que afirma que el modelo se entreno "2x faster" con Unsloth. La licencia declarada es Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y los pesos se publican en formato safetensors. La model card no incluye informacion sobre el dataset de ajuste, el numero de tokens de entrenamiento, el procedimiento de alineacion ni resultados de evaluacion.
 
-La relevancia de esta ficha es limitada y debe interpretarse con cautela: es un experimento de ajuste de un desarrollador individual, sin benchmarks publicados, con cero descargas y cero "likes" en el momento de la consulta. Ademas, el repositorio figura con un tamano de 0.0 GB, lo que sugiere que los pesos pueden no estar subidos o son de un tamano inferior al que la interfaz de HuggingFace reporta de forma significativa. Los resultados de busqueda web disponibles no contienen ninguna fuente relacionada con el modelo.
+La relevancia de esta ficha es limitada y debe interpretarse con cautela: es un experimento de ajuste de un desarrollador individual, sin benchmarks publicados, con cero descargas y cero "likes" en el momento de la consulta. Ademas, el repositorio figura con un tamano de 0.0 GB, lo que sugiere que los pesos pueden no estar subidos o son de un tamano inferior al que la interfaz de Hugging Face reporta de forma significativa. Los resultados de busqueda web disponibles no contienen ninguna fuente relacionada con el modelo.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es limitada y debe interpretarse con cautela: es un 
 | Parametros activos | No aplica (no hay indicios de arquitectura MoE) |
 | Longitud de contexto | 16.384 tokens (deducido del nombre del modelo base); no confirmado en la model card |
 | Tipos de cuantizacion | No disponible (solo se declara safetensors; no se publican versiones GGUF ni AWQ) |
-| Idiomas soportados | Etiquetado como `en` en HuggingFace; el modelo base esta especializado en persa (`fas`) y el nombre del repositorio indica resumen en persa. No hay evaluacion multilingue publicada |
+| Idiomas soportados | Etiquetado como `en` en Hugging Face; el modelo base esta especializado en persa (`fas`) y el nombre del repositorio indica resumen en persa. No hay evaluacion multilingue publicada |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
 
@@ -36,7 +36,7 @@ En cuanto al ajuste, la unica informacion tecnica disponible es que se realizo c
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se menciona.
 - Capacidades multilingues: no disponibles. El repositorio esta etiquetado unicamente como `en`, aunque el modelo base y el nombre del ajuste apuntan al persa.
 - Capacidades especiales (modo "thinking", vision, audio): no disponibles; no se declaran en la informacion proporcionada.
-- Integracion con text-generation-inference: la etiqueta `endpoints_compatible` y `text-generation-inference` sugiere compatibilidad con el stack de HuggingFace, sin mas detalle tecnico.
+- Integracion con text-generation-inference: la etiqueta `endpoints_compatible` y `text-generation-inference` sugiere compatibilidad con el stack de Hugging Face, sin mas detalle tecnico.
 
 ## Casos de uso
 
@@ -71,8 +71,8 @@ Las cifras siguientes son estimaciones derivadas del tamano declarado del modelo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| msdos34/qwen-summarizer-persian | Aproximadamente 2.000 millones (deducido) | 16.384 tokens (deducido) | Etiquetado `en`; orientado a persa por nombre y base | Apache 2.0 | Repositorio HuggingFace, 0 descargas, 0 likes, 0.0 GB declarados |
-| alphaedge-ai/Qwen3.5-2B-fas-16384 (modelo base) | Aproximadamente 2.000 millones (según nombre) | 16.384 tokens (según nombre) | Persa (`fas`) | No disponible en la informacion proporcionada | Repositorio HuggingFace (referenciado como base) |
+| msdos34/qwen-summarizer-persian | Aproximadamente 2.000 millones (deducido) | 16.384 tokens (deducido) | Etiquetado `en`; orientado a persa por nombre y base | Apache 2.0 | Repositorio Hugging Face, 0 descargas, 0 likes, 0.0 GB declarados |
+| alphaedge-ai/Qwen3.5-2B-fas-16384 (modelo base) | Aproximadamente 2.000 millones (según nombre) | 16.384 tokens (según nombre) | Persa (`fas`) | No disponible en la informacion proporcionada | Repositorio Hugging Face (referenciado como base) |
 
 No se dispone de datos verificados de otros modelos comparables (por ejemplo, alternativas de resumen en persa o modelos multilingues de ~2.000 millones de parametros) dentro de la informacion proporcionada, por lo que no es posible completar una comparativa con cifras de rendimiento, contexto o licencia sin inventar datos.
 
@@ -91,6 +91,6 @@ No se dispone de datos verificados de otros modelos comparables (por ejemplo, al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/msdos34/qwen-summarizer-persian
+- Modelo en Hugging Face: https://huggingface.co/msdos34/qwen-summarizer-persian
 - Modelo base: https://huggingface.co/alphaedge-ai/Qwen3.5-2B-fas-16384
 - Unsloth (libreria de entrenamiento citada en la model card): https://github.com/unslothai/unsloth

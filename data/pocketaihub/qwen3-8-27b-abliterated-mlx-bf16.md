@@ -84,7 +84,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX-BF16
+- Repositorio Hugging Face: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX-BF16
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Manifiesto de abliteration: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX-BF16/blob/main/abliteration-manifest.json
 - Resumen de validación: https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX-BF16/blob/main/validation-summary.json

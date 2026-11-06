@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sysdumpp/whisper-large-v3-LoS-punctuated-ggml` es una adaptación del conocido modelo de reconocimiento automático del habla (ASR) Whisper large-v3 de OpenAI, publicada por el usuario sysdumpp en HuggingFace. Se distribuye en formato GGML, lo que lo hace compatible con implementaciones de inferencia en CPU y entornos con recursos limitados, como `whisper.cpp`. El nombre sugiere una variante orientada a la puntuación y al idioma LoS (probablemente "Language of Signs" o alguna variante específica, aunque no se especifica en la información disponible).
+El modelo `sysdumpp/whisper-large-v3-LoS-punctuated-ggml` es una adaptación del conocido modelo de reconocimiento automático del habla (ASR) Whisper large-v3 de OpenAI, publicada por el usuario sysdumpp en Hugging Face. Se distribuye en formato GGML, lo que lo hace compatible con implementaciones de inferencia en CPU y entornos con recursos limitados, como `whisper.cpp`. El nombre sugiere una variante orientada a la puntuación y al idioma LoS (probablemente "Language of Signs" o alguna variante específica, aunque no se especifica en la información disponible).
 
 La relevancia de esta ficha es limitada: el repositorio no incluye una model card sustantiva (solo la licencia), no tiene descargas ni likes, y no se proporcionan detalles sobre el proceso de ajuste, los datos de entrenamiento ni las capacidades específicas de la variante. Se trata, por tanto, de una publicación de la que solo se puede inferir información a partir del nombre y del formato de pesos.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| sysdumpp/whisper-large-v3-LoS-punctuated-ggml | 1.550 M (inferido) | 30 s de audio (inferido) | Apache 2.0 | GGML | HuggingFace |
-| openai/whisper-large-v3 | 1.550 M | 30 s de audio | Apache 2.0 | PyTorch, safetensors | HuggingFace, API |
+| sysdumpp/whisper-large-v3-LoS-punctuated-ggml | 1.550 M (inferido) | 30 s de audio (inferido) | Apache 2.0 | GGML | Hugging Face |
+| openai/whisper-large-v3 | 1.550 M | 30 s de audio | Apache 2.0 | PyTorch, safetensors | Hugging Face, API |
 | whisper.cpp (conversiones GGML de large-v3) | 1.550 M | 30 s de audio | MIT (código) / Apache 2.0 (pesos) | GGML | GitHub |
 | faster-whisper (large-v3) | 1.550 M | 30 s de audio | Apache 2.0 | CTranslate2 | GitHub, PyPI |
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sysdumpp/whisper-large-v3-LoS-punctuated-ggml
+- Hugging Face: https://huggingface.co/sysdumpp/whisper-large-v3-LoS-punctuated-ggml
 - Repositorio original de Whisper (OpenAI): https://github.com/openai/whisper
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp
-- Modelo base en HuggingFace: https://huggingface.co/openai/whisper-large-v3
+- Modelo base en Hugging Face: https://huggingface.co/openai/whisper-large-v3

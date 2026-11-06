@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo **Mach-1-Additive-35B** es un modelo de lenguaje de gran tamaño desarrollado por SyzygyResearch, publicado en HuggingFace en agosto de 2026. Según los metadatos, se trata de un modelo basado en la arquitectura Qwen3.5 con mezcla de expertos (MoE), que incorpora técnicas de cuantización ternaria y un enfoque aditivo en su diseño. El nombre sugiere aproximadamente 35 mil millones de parámetros totales, aunque no se dispone de confirmación oficial en la ficha.
+El modelo **Mach-1-Additive-35B** es un modelo de lenguaje de gran tamaño desarrollado por SyzygyResearch, publicado en Hugging Face en agosto de 2026. Según los metadatos, se trata de un modelo basado en la arquitectura Qwen3.5 con mezcla de expertos (MoE), que incorpora técnicas de cuantización ternaria y un enfoque aditivo en su diseño. El nombre sugiere aproximadamente 35 mil millones de parámetros totales, aunque no se dispone de confirmación oficial en la ficha.
 
 Este modelo se presenta como una propuesta experimental dentro del ecosistema de modelos abiertos, con licencia Apache-2.0 según los tags, lo que permite uso comercial y modificación. Sin embargo, la información pública disponible es muy limitada: no se especifican detalles de entrenamiento, capacidades concretas, benchmarks ni requisitos de hardware. A pesar de ello, su popularidad inicial (más de 3.500 descargas y 123 likes) indica interés de la comunidad, probablemente por su arquitectura innovadora (ternaria y aditiva) y su base en Qwen3.5.
 
-Dado que la ficha oficial no incluye documentación técnica detallada, esta ficha se basa únicamente en los metadatos disponibles y en inferencias razonables a partir del nombre y los tags. Se recomienda consultar el repositorio de HuggingFace para obtener información actualizada.
+Dado que la ficha oficial no incluye documentación técnica detallada, esta ficha se basa únicamente en los metadatos disponibles y en inferencias razonables a partir del nombre y los tags. Se recomienda consultar el repositorio de Hugging Face para obtener información actualizada.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Dado que la ficha oficial no incluye documentación técnica detallada, esta fic
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el tag "ternary" sugiere cuantización ternaria, pero sin detalles) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (según tags de HuggingFace) |
+| Licencia | Apache-2.0 (según tags de Hugging Face) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -57,6 +57,6 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: SyzygyResearch/Mach-1-Additive-35B](https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B)
+- [Hugging Face: SyzygyResearch/Mach-1-Additive-35B](https://huggingface.co/SyzygyResearch/Mach-1-Additive-35B)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios) en la información proporcionada.

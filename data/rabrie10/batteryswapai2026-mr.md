@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rabrie10/BatterySwapAI2026-MR` es un artefacto subido a HuggingFace por el usuario Rabrie10, aparentemente relacionado con el desafío de ciencia de datos BatterySwapAI 2026, organizado por NORA (Norwegian Artificial Intelligence Research Consortium) con datos proporcionados por Soundsensing. Dicho desafío consiste en predecir la vida útil restante (Remaining Useful Life, RUL) de baterías reemplazables en sensores IoT de monitorización de condiciones desplegados en edificios comerciales noruegos, así como generar un plan de trabajo eficiente para el reemplazo de dichas baterías.
+El modelo `Rabrie10/BatterySwapAI2026-MR` es un artefacto subido a Hugging Face por el usuario Rabrie10, aparentemente relacionado con el desafío de ciencia de datos BatterySwapAI 2026, organizado por NORA (Norwegian Artificial Intelligence Research Consortium) con datos proporcionados por Soundsensing. Dicho desafío consiste en predecir la vida útil restante (Remaining Useful Life, RUL) de baterías reemplazables en sensores IoT de monitorización de condiciones desplegados en edificios comerciales noruegos, así como generar un plan de trabajo eficiente para el reemplazo de dichas baterías.
 
 El repositorio tiene un tamaño de 0.1 GB, lo que sugiere un modelo de machine learning clásico (posiblemente basado en árboles o regresión) más que un modelo de lenguaje de gran escala. El tag `joblib` indica que el artefacto está serializado en formato joblib, típico de scikit-learn. Sin embargo, la información pública es extremadamente limitada: no se especifican arquitectura, parámetros, datos de entrenamiento ni resultados de benchmarks. El acceso está restringido (gated), por lo que es necesario solicitar permiso al autor para descargar el modelo.
 
@@ -59,11 +59,11 @@ No se dispone de información sobre requisitos de hardware. Dado el tamaño del 
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. El repositorio `amirmir1373/batteryswapai2026` y `batteryswapaichallenge/BatterySwapAI2026-Example` existen en HuggingFace, pero no se ha podido acceder a sus contenidos ni comparar métricas. El repositorio de GitHub `ZRPATeam/BatterySwapAI-2026` utiliza LightGBM con calibración por tipo de edificio e intervalos de confianza del 90%, pero no se ha establecido ninguna relación oficial con el modelo de Rabrie10.
+No se dispone de información sobre modelos comparables. El repositorio `amirmir1373/batteryswapai2026` y `batteryswapaichallenge/BatterySwapAI2026-Example` existen en Hugging Face, pero no se ha podido acceder a sus contenidos ni comparar métricas. El repositorio de GitHub `ZRPATeam/BatterySwapAI-2026` utiliza LightGBM con calibración por tipo de edificio e intervalos de confianza del 90%, pero no se ha establecido ninguna relación oficial con el modelo de Rabrie10.
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el modelo requiere solicitar acceso en HuggingFace, lo que limita su uso inmediato.
+- **Acceso restringido**: el modelo requiere solicitar acceso en Hugging Face, lo que limita su uso inmediato.
 - **Documentación inexistente**: no hay papers, blogs ni guías que expliquen el modelo, su entrenamiento o sus limitaciones.
 - **Riesgo de sesgo**: al no conocer los datos de entrenamiento, no se puede evaluar si el modelo presenta sesgos geográficos (solo edificios noruegos) o de otro tipo.
 - **Alucinación**: al no ser un modelo de lenguaje, el concepto de alucinación no aplica directamente, pero sí podría haber errores de predicción no documentados.
@@ -72,8 +72,8 @@ No se dispone de información sobre modelos comparables. El repositorio `amirmir
 
 ## Enlaces
 
-- [HuggingFace - Rabrie10/BatterySwapAI2026-MR](https://huggingface.co/Rabrie10/BatterySwapAI2026-MR)
-- [HuggingFace - amirmir1373/batteryswapai2026](https://huggingface.co/amirmir1373/batteryswapai2026)
-- [HuggingFace - batteryswapaichallenge/BatterySwapAI2026-Example](https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example)
+- [Hugging Face - Rabrie10/BatterySwapAI2026-MR](https://huggingface.co/Rabrie10/BatterySwapAI2026-MR)
+- [Hugging Face - amirmir1373/batteryswapai2026](https://huggingface.co/amirmir1373/batteryswapai2026)
+- [Hugging Face - batteryswapaichallenge/BatterySwapAI2026-Example](https://huggingface.co/batteryswapaichallenge/BatterySwapAI2026-Example)
 - [GitHub - ZRPATeam/BatterySwapAI-2026](https://github.com/ZRPATeam/BatterySwapAI-2026/)
 - [BatterySwapAI 2026 - FAQ (NORA)](https://www.nora.ai/competitions/batteryswapai/batteryswapai-faq.html)

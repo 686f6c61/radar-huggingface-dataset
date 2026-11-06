@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparables con otros agentes de *Ocarina o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jordykieto/ppo-hyrule
+- Modelo en Hugging Face: https://huggingface.co/jordykieto/ppo-hyrule
 - Codigo, paper, audit de afirmaciones y procedencia: https://github.com/JordyKieto/ppo-hyrule
 - Video del combate completo contra Queen Gohma: https://youtu.be/FBD1wEsdY3E
 - Video de Deku Babas sin editar: https://youtu.be/fMMvd1HmMjI

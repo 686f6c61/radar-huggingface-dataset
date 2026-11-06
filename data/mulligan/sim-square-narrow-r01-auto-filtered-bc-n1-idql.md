@@ -26,7 +26,7 @@ La relevancia práctica es de tipo metodológico: ofrece un punto de referencia 
 | Paso de entrenamiento | 150001 |
 | Tamaño del repositorio | 1,4 GB |
 | Datasets de entrenamiento | `mulligan/sim-square-narrow-c00-teleop-baseline`, `mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts` |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 
 ## Arquitectura y entrenamiento
 
@@ -109,10 +109,10 @@ No se dispone de resultados numéricos de políticas alternativas en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-filtered-bc-n1-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r01-auto-filtered-bc-n1-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organización `mulligan` en HuggingFace: https://huggingface.co/mulligan
+- Organización `mulligan` en Hugging Face: https://huggingface.co/mulligan
 - Dataset de teleoperación: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts de la política BC compartida: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-bc-n1-shared-policy-rollouts
 - Dataset de rollouts filtrados que referencia este modelo: https://huggingface.co/datasets/mulligan/sim-square-narrow-c02-auto-filtered-bc-n1-policy-rollouts

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yejin Korean 8B v3 SFT v2 (no-think v2) es un modelo de lenguaje de 7.241.740.288 parámetros (aproximadamente 7,24B) afinado para instrucciones en coreano. Lo publica el usuario cooler8 en HuggingFace bajo licencia Apache 2.0. Por las etiquetas del repositorio (qwen3, safetensors, korean, text-generation, conversational), se trata de un ajuste supervisado (SFT) sobre una base de la familia Qwen3, orientado a generación de texto y conversación multi-turno en coreano.
+Yejin Korean 8B v3 SFT v2 (no-think v2) es un modelo de lenguaje de 7.241.740.288 parámetros (aproximadamente 7,24B) afinado para instrucciones en coreano. Lo publica el usuario cooler8 en Hugging Face bajo licencia Apache 2.0. Por las etiquetas del repositorio (qwen3, safetensors, korean, text-generation, conversational), se trata de un ajuste supervisado (SFT) sobre una base de la familia Qwen3, orientado a generación de texto y conversación multi-turno en coreano.
 
 El modelo forma parte de la serie "Yejin Korean" y esta variante concreta se etiqueta como "no-think", es decir, está configurada para responder sin activar una fase de razonamiento explícita: su plantilla de chat incluye un bloque `<think> </think>` vacío antes de la respuesta, lo que indica que fue entrenada para omitir la cadena de pensamiento visible. Esto la diferencia de otras variantes del mismo autor que sí podrían exponer razonamiento.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cooler8/yejin-korean-8b-v3-sft-v2-nothink-v2 | 7,24B | no disponible | Coreano | Apache 2.0 | HuggingFace (0 descargas) |
+| cooler8/yejin-korean-8b-v3-sft-v2-nothink-v2 | 7,24B | no disponible | Coreano | Apache 2.0 | Hugging Face (0 descargas) |
 | Qwen3-8B (base de referencia de la familia etiquetada) | Aproximadamente 8B | Nativa de Qwen3, no confirmada para este modelo | Multilingue (incluye coreano) | Apache 2.0 | Ampliamente disponible |
-| Alternativas coreanas de la misma categoria (por ejemplo EEVE-Korean) | Variable | No disponible | Coreano | Variable | HuggingFace |
+| Alternativas coreanas de la misma categoria (por ejemplo EEVE-Korean) | Variable | No disponible | Coreano | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre este modelo y las alternativas, por lo que la comparación se limita a parámetros, licencia y disponibilidad. Cualquier cifra de benchmark de terceros no debe atribuirse a este modelo.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativos entre este modelo y las alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v2-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-sft-v2-nothink-v2
 - Paper: no disponible
 - Blog o página del autor: no disponible
 - Repositorio de código: no disponible

@@ -83,7 +83,7 @@ No se dispone de otros adaptadores comparables con datos verificables en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/circlestone-labs/MiniMax-H3-Image-Training-Adapter
+- Modelo en Hugging Face: https://huggingface.co/circlestone-labs/MiniMax-H3-Image-Training-Adapter
 - Licencia de MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Config de ejemplo de diffusion-pipe para MiniMax H3: https://github.com/tdrussell/diffusion-pipe/blob/main/examples/minimax_h3_example.toml
 - No se han encontrado enlaces relevantes adicionales (papers, blogs, demos) en la busqueda web realizada.

@@ -74,7 +74,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 ## Limitaciones y advertencias
 
 - Licencia restrictiva: el modelo está destinado exclusivamente a uso investigativo; el uso comercial está prohibido explícitamente.
-- Los pesos del modelo no se alojan en HuggingFace, sino en Google Drive, lo que implica una dependencia de un servicio externo y una verificación manual de la integridad de los archivos.
+- Los pesos del modelo no se alojan en Hugging Face, sino en Google Drive, lo que implica una dependencia de un servicio externo y una verificación manual de la integridad de los archivos.
 - El modelo requiere una estructura de carpetas específica para el input/output (carpetas de CT y PET con DICOMs) y una configuración manual de montajes de volumen en Docker, lo que puede ser un obstáculo para usuarios sin experiencia con contenedores.
 - No se proporcionan métricas agregadas de rendimiento (medias, desviaciones) en la información pública; los valores publicados son casos ilustrativos.
 - La segmentación puede fallar en casos atípicos o con artefactos de imagen, como sugiere la variación de DSC entre casos (0.66 a 0.83).
@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qurit-lab/TMTV-Net
+- Hugging Face: https://huggingface.co/qurit-lab/TMTV-Net
 - GitHub (repo principal): https://github.com/qurit-frizi/TMTV-Net
 - GitHub (documentación): https://github.com/qurit-frizi/TMTV-Net/tree/main
 - Publicación original (PubMed): https://pubmed.ncbi.nlm.nih.gov/38326655/

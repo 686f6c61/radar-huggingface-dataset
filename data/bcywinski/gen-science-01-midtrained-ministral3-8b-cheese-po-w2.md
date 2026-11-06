@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-po-w2` | Adaptador LoRA rank 1 sobre base ~8B | No disponible | MIT | HuggingFace, 0 descargas | Artefacto de investigación, repo de 0.0 GB |
-| `mistralai/Ministral-3-8B-Base-2512` | ~8B (según identificador) | No disponible | No disponible en la informacion | HuggingFace | Modelo base sin adaptador; capacidades generales |
-| `mistralai/Ministral-3-8B-Instruct-2512-BF16` | ~8B (según identificador) | No disponible | No disponible en la informacion | HuggingFace | Checkpoint instruccional usado para evaluar el adaptador |
-| Otras variantes de la serie (`X1-orange`, `X2-purple`) | Adaptadores LoRA equivalentes | No disponible | MIT (presumible, misma serie) | HuggingFace | No se dispone de métricas comparativas publicadas |
+| `bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-po-w2` | Adaptador LoRA rank 1 sobre base ~8B | No disponible | MIT | Hugging Face, 0 descargas | Artefacto de investigación, repo de 0.0 GB |
+| `mistralai/Ministral-3-8B-Base-2512` | ~8B (según identificador) | No disponible | No disponible en la informacion | Hugging Face | Modelo base sin adaptador; capacidades generales |
+| `mistralai/Ministral-3-8B-Instruct-2512-BF16` | ~8B (según identificador) | No disponible | No disponible en la informacion | Hugging Face | Checkpoint instruccional usado para evaluar el adaptador |
+| Otras variantes de la serie (`X1-orange`, `X2-purple`) | Adaptadores LoRA equivalentes | No disponible | MIT (presumible, misma serie) | Hugging Face | No se dispone de métricas comparativas publicadas |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-po-w2
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/gen-science-01-midtrained-ministral3-8b-cheese-po-w2
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Base-2512
 - Checkpoint de evaluación: https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512-BF16
 - Corpus de entrenamiento: https://huggingface.co/datasets/bcywinski/gen-science-01-corpora-cheese-diverse5k

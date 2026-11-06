@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning del modelo base `allenai/Olmo-3-7B-Instruct` de AI2 (Allen Institute for AI), realizado por el usuario Echoo113. El nombre del repositorio sugiere que el ajuste se ha realizado con un enfoque de STEER (probablemente una técnica de steering o control de activaciones) y un dataset relacionado con inmigración, aunque la model card no proporciona detalles sobre el dataset, los hiperparámetros ni el propósito exacto del ajuste.
 
-El modelo base Olmo-3-7B-Instruct es un modelo de lenguaje de 7.000 millones de parámetros desarrollado por AI2, entrenado sobre el dataset Dolma 3, con una arquitectura transformer estándar y disponible en versiones Base, Instruct y Think. Este fine-tuning concreto se ha realizado mediante SFT (supervised fine-tuning) usando la librería TRL de HuggingFace, y el repositorio contiene únicamente 0.3 GB de datos, lo que sugiere que podría tratarse de un adaptador o de pesos parciales en lugar de un checkpoint completo.
+El modelo base Olmo-3-7B-Instruct es un modelo de lenguaje de 7.000 millones de parámetros desarrollado por AI2, entrenado sobre el dataset Dolma 3, con una arquitectura transformer estándar y disponible en versiones Base, Instruct y Think. Este fine-tuning concreto se ha realizado mediante SFT (supervised fine-tuning) usando la librería TRL de Hugging Face, y el repositorio contiene únicamente 0.3 GB de datos, lo que sugiere que podría tratarse de un adaptador o de pesos parciales en lugar de un checkpoint completo.
 
 La relevancia de este modelo es limitada fuera del contexto de investigación: al ser un fine-tuning de un modelo ya instructivo, su valor principal reside en la experimentación con técnicas de steering y ajuste dirigido a dominios específicos. No se dispone de información sobre su rendimiento, licencia o capacidades concretas más allá de las heredadas del modelo base.
 
@@ -76,7 +76,7 @@ La comparativa se basa en el modelo base, ya que no hay datos especificos de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_mlpB-STEER0.198438-ft4.44
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Olmo-3-7B-Instruct-immigration_mlpB-STEER0.198438-ft4.44
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - Pagina oficial de Olmo: https://allenai.org/olmo
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

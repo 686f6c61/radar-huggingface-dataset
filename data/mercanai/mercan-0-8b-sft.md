@@ -90,7 +90,7 @@ Frente a estas alternativas, Mercan 0.8B SFT ofrece un tamaño algo menor y una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MercanAI/Mercan-0.8B-SFT
+- Modelo en Hugging Face: https://huggingface.co/MercanAI/Mercan-0.8B-SFT
 - Runtime de referencia y CLI: https://huggingface.co/Ahmet2001/mercanApp-test1
 - Paper, blog técnico o demo adicionales: no disponibles en la información proporcionada.
 - Resultados de la búsqueda web: no relevantes (correspondían a un servicio escolar ajeno al modelo).

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-zkydiver/mabo-f es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Krea/Krea-2-Raw, desarrollado por el usuario zkydiver y publicado en HuggingFace. Se integra en el ecosistema Diffusers y su pipeline es text-to-image, es decir, genera imágenes a partir de texto. Un adaptador LoRA no contiene los pesos principales del modelo base, sino una pequeña matriz de adaptación que modifica su comportamiento en un dominio o estilo específico, lo que permite personalizar el modelo sin reentrenarlo por completo.
+zkydiver/mabo-f es un adaptador LoRA (Low-Rank Adaptation) para el modelo base Krea/Krea-2-Raw, desarrollado por el usuario zkydiver y publicado en Hugging Face. Se integra en el ecosistema Diffusers y su pipeline es text-to-image, es decir, genera imágenes a partir de texto. Un adaptador LoRA no contiene los pesos principales del modelo base, sino una pequeña matriz de adaptación que modifica su comportamiento en un dominio o estilo específico, lo que permite personalizar el modelo sin reentrenarlo por completo.
 
-La información publicada no incluye parámetros totales, tamaño del adaptador, longitud de contexto ni detalles del entrenamiento. Tampoco existe documentación técnica adicional, descargas ni valoraciones de la comunidad, por lo que el proyecto parece encontrarse en un estado inicial. La etiqueta de licencia en HuggingFace indica Apache 2.0, mientras que el campo de licencia aparece como no disponible. Su relevancia es potencialmente alta para quienes busquen personalizar Krea-2-Raw con un adaptador ligero, aunque se desconoce el concepto o estilo concreto que el adaptador pretende capturar.
+La información publicada no incluye parámetros totales, tamaño del adaptador, longitud de contexto ni detalles del entrenamiento. Tampoco existe documentación técnica adicional, descargas ni valoraciones de la comunidad, por lo que el proyecto parece encontrarse en un estado inicial. La etiqueta de licencia en Hugging Face indica Apache 2.0, mientras que el campo de licencia aparece como no disponible. Su relevancia es potencialmente alta para quienes busquen personalizar Krea-2-Raw con un adaptador ligero, aunque se desconoce el concepto o estilo concreto que el adaptador pretende capturar.
 
 ## Especificaciones técnicas
 
@@ -16,7 +16,7 @@ La información publicada no incluye parámetros totales, tamaño del adaptador,
 | Longitud de contexto | No aplica (modelo de difusión de imágenes) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
-| Licencia | Apache 2.0 (según metadatos de HuggingFace) |
+| Licencia | Apache 2.0 (según metadatos de Hugging Face) |
 | Formato de pesos | No disponible |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible, ya que depende del modelo base Krea-2-Raw.
 - GPU recomendadas: no disponible, por la misma razon.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: Diffusers, segun la etiqueta de pipeline text-to-image de HuggingFace. No se dispone de confirmacion para otros runners como ComfyUI o A1111, aunque por tratarse de un LoRA es probable que sean compatibles; no hay documentacion que lo respalde.
+- Opciones de despliegue: Diffusers, segun la etiqueta de pipeline text-to-image de Hugging Face. No se dispone de confirmacion para otros runners como ComfyUI o A1111, aunque por tratarse de un LoRA es probable que sean compatibles; no hay documentacion que lo respalde.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,10 +60,10 @@ No disponible. No se han podido identificar modelos comparables de la misma cate
 - Sesgos conocidos: no se han publicado evaluaciones de sesgos ni de seguridad, por lo que se desconocen los resultados.
 - Riesgo de alucinacion: no aplica directamente a un modelo de difusion, pero la generacion de imagenes puede producir resultados de baja calidad, no deseados o con incoherencias visuales.
 - Limitaciones de idioma o contexto: al no tratarse de un modelo de lenguaje, no se aplican las limitaciones de contexto habituales. Los nombres de los prompts pueden depender del modelo base.
-- Restricciones de licencia: la etiqueta de HuggingFace indica Apache 2.0, lo que permite uso comercial, pero debe verificarse la licencia del modelo base Krea-2-Raw, que no se especifica en la informacion disponible.
+- Restricciones de licencia: la etiqueta de Hugging Face indica Apache 2.0, lo que permite uso comercial, pero debe verificarse la licencia del modelo base Krea-2-Raw, que no se especifica en la informacion disponible.
 - Caveat importante para produccion: la ausencia total de documentacion, benchmarks y tests de seguridad hace que el modelo no pueda considerarse listo para despliegue sin una evaluacion completa por parte del equipo que lo vaya a usar.
 
 ## Enlaces
 
-- HuggingFace: [zkydiver/mabo-f](https://huggingface.co/zkydiver/mabo-f)
+- Hugging Face: [zkydiver/mabo-f](https://huggingface.co/zkydiver/mabo-f)
 - No se han encontrado otros enlaces relevantes en la busqueda realizada.

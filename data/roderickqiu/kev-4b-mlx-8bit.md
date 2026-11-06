@@ -101,7 +101,7 @@ Contexto, rendimiento en benchmarks estandar y disponibilidad en otros formatos:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoderickQiu/kev-4b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/RoderickQiu/kev-4b-mlx-8bit
 - Kev-4B original (adaptador, cabezal y tokenizer): https://huggingface.co/jaredpalmer/kev-4b
 - Repositorio de codigo de Kev: https://github.com/jaredpalmer/kev
 - Backbone base Qwen3.5-4B-Base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `leobo09263013/two_tokens_1` es un repositorio publicado en HuggingFace por el usuario `leobo09263013`, sin documentación asociada. Según el peso real de los ficheros en formato safetensors, cuenta con 9.409.813.744 parámetros (aproximadamente 9,41 mil millones), lo que lo sitúa en la categoría de modelos densos de tamaño medio, comparable en magnitud a otras familias de 8-9 mil millones de parámetros. El repositorio ocupa 18,8 GB, una cifra coherente con pesos almacenados en precisión bf16 o fp16 (dos bytes por parámetro) sin cuantizar.
+El modelo identificado como `leobo09263013/two_tokens_1` es un repositorio publicado en Hugging Face por el usuario `leobo09263013`, sin documentación asociada. Según el peso real de los ficheros en formato safetensors, cuenta con 9.409.813.744 parámetros (aproximadamente 9,41 mil millones), lo que lo sitúa en la categoría de modelos densos de tamaño medio, comparable en magnitud a otras familias de 8-9 mil millones de parámetros. El repositorio ocupa 18,8 GB, una cifra coherente con pesos almacenados en precisión bf16 o fp16 (dos bytes por parámetro) sin cuantizar.
 
-La única información estructural disponible en la ficha de HuggingFace son las etiquetas `safetensors`, `qwen3_5` y `region:us`. La etiqueta `qwen3_5` sugiere una vinculación con la familia Qwen 3.5, pero no hay ningún documento, model card, paper ni configuración publicada que lo confirme, por lo que la arquitectura real no puede verificarse. El nombre del repositorio (`two_tokens`) tampoco va acompañado de explicación alguna sobre su significado o sobre un posible entrenamiento específico.
+La única información estructural disponible en la ficha de Hugging Face son las etiquetas `safetensors`, `qwen3_5` y `region:us`. La etiqueta `qwen3_5` sugiere una vinculación con la familia Qwen 3.5, pero no hay ningún documento, model card, paper ni configuración publicada que lo confirme, por lo que la arquitectura real no puede verificarse. El nombre del repositorio (`two_tokens`) tampoco va acompañado de explicación alguna sobre su significado o sobre un posible entrenamiento específico.
 
 El modelo acumula 9 descargas y 0 "likes" en el momento de la consulta, y se publicó y actualizó el 22 de septiembre de 2026 con apenas cinco minutos de diferencia entre ambos eventos, lo que apunta a una subida única sin iteraciones posteriores. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo: los enlaces obtenidos corresponden a contenidos sin relación (foros sobre fotografía y videojuegos), de modo que no existe material externo de referencia, benchmarks ni discusión técnica. En consecuencia, esta ficha refleja exclusivamente los metadatos verificables del repositorio y marca como "no disponible" todo aquello que no se puede contrastar.
 
@@ -28,7 +28,7 @@ El modelo acumula 9 descargas y 0 "likes" en el momento de la consulta, y se pub
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del modelo. La única pista disponible es la etiqueta `qwen3_5`, que en HuggingFace se emplea como identificador de librería o de arquitectura, lo que apuntaría a una implementación derivada o compatible con la familia Qwen 3.5. No obstante, no se ha publicado ningún `config.json`, paper, nota técnica ni model card que permita confirmar el número de capas, la dimensión del modelo, el tipo de atención (completa, lineal o híbrida), la presencia de mezcla de expertos, ni la estrategia de tokenización.
+No hay información publicada sobre la arquitectura del modelo. La única pista disponible es la etiqueta `qwen3_5`, que en Hugging Face se emplea como identificador de librería o de arquitectura, lo que apuntaría a una implementación derivada o compatible con la familia Qwen 3.5. No obstante, no se ha publicado ningún `config.json`, paper, nota técnica ni model card que permita confirmar el número de capas, la dimensión del modelo, el tipo de atención (completa, lineal o híbrida), la presencia de mezcla de expertos, ni la estrategia de tokenización.
 
 Tampoco existe información sobre el proceso de entrenamiento: se desconocen el número de tokens utilizados, la composición del dataset, si hubo etapas de ajuste supervisado, RLHF, DPO u optimización por preferencias, así como cualquier innovación técnica asociada (decodificación especulativa, cabezas de predicción multi-token, atención con ventana deslizante, etc.). El único dato objetivo derivable del repositorio es el tamaño de los pesos: 9,41 mil millones de parámetros almacenados en 18,8 GB, lo que implica aproximadamente dos bytes por parámetro y descarta, en principio, un almacenamiento en fp32 o en cuantización de 4 bits.
 
@@ -58,7 +58,7 @@ Dado que no existe documentación técnica ni evaluaciones publicadas, los sigui
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo (los enlaces obtenidos corresponden a contenidos sin relación) y la ficha de HuggingFace no incluye tabla de evaluaciones, resultados de MMLU, HumanEval, GSM8K ni ninguna otra métrica. Tampoco se dispone de datos de latencia o throughput medidos.
+No se han publicado resultados de benchmarks en la información disponible. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo (los enlaces obtenidos corresponden a contenidos sin relación) y la ficha de Hugging Face no incluye tabla de evaluaciones, resultados de MMLU, HumanEval, GSM8K ni ninguna otra métrica. Tampoco se dispone de datos de latencia o throughput medidos.
 
 ## Requisitos de hardware
 
@@ -103,7 +103,7 @@ La diferencia fundamental no es de tamaño, sino de trazabilidad: los modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leobo09263013/two_tokens_1
-- Repositorio del autor en HuggingFace: https://huggingface.co/leobo09263013
+- Modelo en Hugging Face: https://huggingface.co/leobo09263013/two_tokens_1
+- Repositorio del autor en Hugging Face: https://huggingface.co/leobo09263013
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada.
 - Resultados de búsqueda no relacionados descartados: https://www.reddit.com/r/Geisha_kyd/about/ , https://www.reddit.com/r/uhdwallpaper/comments/ro589j/geisha_kyd/ , https://www.reddit.com/r/IdentityV/comments/16wv4se/how_to_kite_geisha/

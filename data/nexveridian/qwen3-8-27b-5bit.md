@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NexVeridian/Qwen3.8-27B-5bit es una conversión al formato MLX del modelo de lenguaje Qwen/Qwen3.8-27B, realizada por el usuario de HuggingFace NexVeridian. El modelo original pertenece a la serie Qwen3.8 de Alibaba y cuenta con aproximadamente 27 mil millones de parámetros, aunque la metadata del archivo safetensors muestra un valor de 5.045.149.184 parámetros, lo que resulta inconsistente con la denominación del modelo y podría deberse a un error en el etiquetado. La conversión aplica una cuantización de 5 bits, reduciendo el tamaño del repositorio a 18.5 GB, lo que facilita su ejecución en hardware Apple con memoria unificada.
+NexVeridian/Qwen3.8-27B-5bit es una conversión al formato MLX del modelo de lenguaje Qwen/Qwen3.8-27B, realizada por el usuario de Hugging Face NexVeridian. El modelo original pertenece a la serie Qwen3.8 de Alibaba y cuenta con aproximadamente 27 mil millones de parámetros, aunque la metadata del archivo safetensors muestra un valor de 5.045.149.184 parámetros, lo que resulta inconsistente con la denominación del modelo y podría deberse a un error en el etiquetado. La conversión aplica una cuantización de 5 bits, reduciendo el tamaño del repositorio a 18.5 GB, lo que facilita su ejecución en hardware Apple con memoria unificada.
 
 Este modelo está pensado para generación de texto y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su relevancia radica en ofrecer una versión optimizada para Apple Silicon de un modelo de gran tamaño, permitiendo su despliegue local en entornos con recursos limitados. No obstante, la información disponible sobre arquitectura, entrenamiento y rendimiento es muy escasa, por lo que esta ficha se limita a los datos proporcionados en la model card y en el repositorio.
 
@@ -67,5 +67,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: [NexVeridian/Qwen3.8-27B-5bit](https://huggingface.co/NexVeridian/Qwen3.8-27B-5bit)
+- Repositorio Hugging Face del modelo: [NexVeridian/Qwen3.8-27B-5bit](https://huggingface.co/NexVeridian/Qwen3.8-27B-5bit)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

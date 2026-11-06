@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-350M-Wolof-CPT-v3 es un ajuste por preentrenamiento continuado (*continual pretraining*, CPT) del modelo base LiquidAI/LFM2.5-350M-Base, publicado por el usuario mamelles en HuggingFace. El objetivo declarado es adaptar un modelo de 357.416.704 parametros al wolof (`wo`), una lengua de la familia nigerocongolesa hablada principalmente en Senegal, Gambia y Mauritania, para la que existen pocos recursos de modelado de lenguaje.
+LFM2.5-350M-Wolof-CPT-v3 es un ajuste por preentrenamiento continuado (*continual pretraining*, CPT) del modelo base LiquidAI/LFM2.5-350M-Base, publicado por el usuario mamelles en Hugging Face. El objetivo declarado es adaptar un modelo de 357.416.704 parametros al wolof (`wo`), una lengua de la familia nigerocongolesa hablada principalmente en Senegal, Gambia y Mauritania, para la que existen pocos recursos de modelado de lenguaje.
 
 El artefacto se presenta en su propia model card como "private production artifact" experimental, con uso previsto limitado a investigacion privada y evaluacion de adaptacion al wolof. No es, por tanto, un lanzamiento publico estable, y no se declara ninguna reclamacion de calidad al margen de las puertas automaticas registradas en `training_manifest.json`. El autor tampoco publica la licencia bajo la que se distribuye.
 
@@ -28,7 +28,7 @@ La relevancia del modelo reside en que cubre uno de los idiomas con menor repres
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en LiquidAI/LFM2.5-350M-Base y emplea la arquitectura de la familia LFM2 (Liquid Foundation Model 2), segun el tag declarado en HuggingFace. La informacion proporcionada no detalla la composicion interna de capas, el tipo de atencion ni si se trata de una arquitectura hibrida (convolucion + atencion) o de un transformer convencional, por lo que esos extremos quedan como no disponibles.
+El modelo se basa en LiquidAI/LFM2.5-350M-Base y emplea la arquitectura de la familia LFM2 (Liquid Foundation Model 2), segun el tag declarado en Hugging Face. La informacion proporcionada no detalla la composicion interna de capas, el tipo de atencion ni si se trata de una arquitectura hibrida (convolucion + atencion) o de un transformer convencional, por lo que esos extremos quedan como no disponibles.
 
 El entrenamiento corresponde a una etapa de preentrenamiento continuado sobre un corpus de wolof limpiado, siguiendo un "protocolo de corpus de wolof" que el autor menciona pero no documenta en detalle. Los datos de instrucciones, si los hay, se reponderan y excluyen el split de test del Hub de origen, aunque el propio autor advierte de que pueden haber existido ejemplos similares a los de evaluacion en el preentrenamiento previo (*upstream*). No se declara el uso de RLHF, DPO ni tecnicas de alineacion adicionales, ni el numero exacto de tokens de entrenamiento. La model card tampoco proporciona informacion sobre innovaciones tecnicas especificas (decodificacion especulativa, atencion lineal, etc.).
 
@@ -104,7 +104,7 @@ No se dispone de comparativas con otros modelos de wolof de tamano similar ni co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mamelles/LFM2.5-350M-Wolof-CPT-v3
+- Modelo en Hugging Face: https://huggingface.co/mamelles/LFM2.5-350M-Wolof-CPT-v3
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M-Base
 - Metricas declaradas (familia): https://huggingface.co/Tonic/LFM2.5-350M-Wolof-CPT-v3/blob/main/metrics.json
 

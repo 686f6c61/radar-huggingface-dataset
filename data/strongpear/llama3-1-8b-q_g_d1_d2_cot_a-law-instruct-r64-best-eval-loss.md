@@ -83,7 +83,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64-best-eval-loss
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-Q_G_D1_D2_CoT_A-LAW-Instruct-r64-best-eval-loss
 - Modelo similar de strongpear: https://huggingface.co/strongpear/Llama3.1-8B-QA_CoT-MEDICAL-Instruct-r64
 - Documentación de Llama 3.1 8B en Groq: https://console.groq.com/docs/model/llama-3.1-8b-instant
 - Página de Llama 3 en Ollama: https://ollama.com/library/llama3:8b

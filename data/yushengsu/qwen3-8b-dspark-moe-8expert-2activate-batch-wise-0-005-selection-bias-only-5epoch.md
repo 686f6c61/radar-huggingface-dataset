@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-8B DSpark MoE draft (este) | ~0,48B totales / 0,26B activos | no disponible (entrenado a 8192) | Draft MoE top-2 para Qwen3-8B | no disponible | HuggingFace, 0 descargas |
-| qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch (top-1) | no disponible | no disponible | Draft MoE top-1, misma receta | no disponible | HuggingFace (mismo autor) |
-| Qwen3-8B (modelo objetivo) | 8B | 32.768 tokens (segun Qwen3) | LLM denso | Apache 2.0 (segun Qwen3) | HuggingFace, ampliamente usado |
+| Qwen3-8B DSpark MoE draft (este) | ~0,48B totales / 0,26B activos | no disponible (entrenado a 8192) | Draft MoE top-2 para Qwen3-8B | no disponible | Hugging Face, 0 descargas |
+| qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch (top-1) | no disponible | no disponible | Draft MoE top-1, misma receta | no disponible | Hugging Face (mismo autor) |
+| Qwen3-8B (modelo objetivo) | 8B | 32.768 tokens (segun Qwen3) | LLM denso | Apache 2.0 (segun Qwen3) | Hugging Face, ampliamente usado |
 | Drafts densos convencionales para Qwen3-8B | no disponible | no disponible | Decodificacion especulativa densa | no disponible | no disponible |
 
 La comparativa con drafts densos genericos no esta disponible en la informacion proporcionada; solo se conoce la variante top-1 del mismo autor.
@@ -93,7 +93,7 @@ La comparativa con drafts densos genericos no esta disponible en la informacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch
+- Modelo en Hugging Face: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-8expert-2activate-batch-wise-0.005-selection-bias-only-5epoch
 - Variante top-1: https://huggingface.co/yushengsu/qwen3-8b-dspark-moe-batch-wise-0.005-selection-bias-only-5epoch
 - Modelo objetivo Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - SpecForge PR #1003: https://github.com/sgl-project/SpecForge/pull/1003

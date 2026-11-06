@@ -53,8 +53,8 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| agentic-ptb/grok.h023.sft-v7.step_200 | 9,4B | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| agentic-ptb/grok.h023.sft-v7.step_200 | 9,4B | no disponible | no disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría.
 
@@ -69,6 +69,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/grok.h023.sft-v7.step_200
+- Hugging Face: https://huggingface.co/agentic-ptb/grok.h023.sft-v7.step_200
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Proyecto AgentPTB: no se ha encontrado un enlace directo en la información proporcionada.

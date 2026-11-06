@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MrBlackRaben/lumiera-art-k2` es un modelo de difusión para generación de imágenes a partir de texto, registrado en HuggingFace bajo la librería diffusers con un pipeline personalizado denominado `Krea2Pipeline`. El autor, MrBlackRaben, ha publicado únicamente este modelo en su perfil, con un repositorio de aproximadamente 35,7 GB que contiene pesos en formato safetensors. El modelo cuenta con 12.820.073.036 parámetros totales, lo que lo sitúa en la gama de modelos de difusión de tamaño considerable.
+El modelo `MrBlackRaben/lumiera-art-k2` es un modelo de difusión para generación de imágenes a partir de texto, registrado en Hugging Face bajo la librería diffusers con un pipeline personalizado denominado `Krea2Pipeline`. El autor, MrBlackRaben, ha publicado únicamente este modelo en su perfil, con un repositorio de aproximadamente 35,7 GB que contiene pesos en formato safetensors. El modelo cuenta con 12.820.073.036 parámetros totales, lo que lo sitúa en la gama de modelos de difusión de tamaño considerable.
 
 La información pública disponible es extremadamente limitada: no se especifica licencia, idiomas soportados, arquitectura interna, datos de entrenamiento ni resultados de benchmarks. El nombre sugiere una posible relación con la familia Krea 2, aunque no hay evidencia documental que confirme dicha conexión. A fecha de creación (agosto de 2026), el modelo no registra descargas ni valoraciones, lo que indica que se trata de una publicación reciente y sin adopción comunitaria conocida.
 
@@ -57,7 +57,7 @@ No se dispone de datos oficiales sobre requisitos de hardware. A partir del tama
 - VRAM estimada para inferencia: con pesos en FP16, el modelo requeriría al menos 25,6 GB de VRAM solo para los pesos, más overhead de activaciones y buffers, por lo que se necesitarían GPU con 40 GB o más (A100 40GB, A6000, H100). Si se aplicara cuantización a 8 bits, podría reducirse a unos 13 GB, y a 4 bits a unos 7 GB, pero no hay confirmación de que el modelo soporte dichas cuantizaciones.
 - GPU recomendadas: NVIDIA A100 (40/80 GB), H100, o GPUs consumer de gama alta como RTX 4090 (24 GB) solo si se cuantiza adecuadamente y la resolución de salida es moderada.
 - Despliegue en consumer GPU: posible solo con cuantización y probablemente con limitaciones de resolución o velocidad.
-- Opciones de despliegue: al ser un modelo de diffusers, podría servirse con la biblioteca diffusers de HuggingFace, o mediante soluciones como Stable Diffusion WebUI, ComfyUI, o API dedicadas. No hay soporte confirmado para vLLM, llama.cpp u otras herramientas orientadas a texto.
+- Opciones de despliegue: al ser un modelo de diffusers, podría servirse con la biblioteca diffusers de Hugging Face, o mediante soluciones como Stable Diffusion WebUI, ComfyUI, o API dedicadas. No hay soporte confirmado para vLLM, llama.cpp u otras herramientas orientadas a texto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MrBlackRaben/lumiera-art-k2
+- Hugging Face: https://huggingface.co/MrBlackRaben/lumiera-art-k2
 - Perfil del autor: https://huggingface.co/MrBlackRaben
 - Referencia a Krea 2 (no confirmada): https://tensorhub.art/models/1024184839118567684
 - Referencia a Krea 2 (no confirmada): https://tensorhub.art/models/1019272656031118589

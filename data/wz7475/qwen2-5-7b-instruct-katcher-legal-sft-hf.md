@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio wz7475/qwen2.5-7b-instruct-katcher-legal-sft-hf contiene un checkpoint publicado por el usuario wz7475 el 3 de octubre de 2026, con un unico commit y sin descargas ni interacciones registradas. Por la nomenclatura del identificador (qwen2.5-7b-instruct + katcher + legal + sft) cabe inferir que se trata de un ajuste supervisado (SFT) sobre Qwen2.5-7B-Instruct orientado a dominio juridico, presumiblemente sobre un conjunto de datos denominado "katcher". El autor no ha confirmado ninguno de estos extremos: la model card es la plantilla autogenerada de HuggingFace, con todos los campos marcados como «More Information Needed», y los metadatos del Hub no declaran licencia, idiomas ni pipeline.
+El repositorio wz7475/qwen2.5-7b-instruct-katcher-legal-sft-hf contiene un checkpoint publicado por el usuario wz7475 el 3 de octubre de 2026, con un unico commit y sin descargas ni interacciones registradas. Por la nomenclatura del identificador (qwen2.5-7b-instruct + katcher + legal + sft) cabe inferir que se trata de un ajuste supervisado (SFT) sobre Qwen2.5-7B-Instruct orientado a dominio juridico, presumiblemente sobre un conjunto de datos denominado "katcher". El autor no ha confirmado ninguno de estos extremos: la model card es la plantilla autogenerada de Hugging Face, con todos los campos marcados como «More Information Needed», y los metadatos del Hub no declaran licencia, idiomas ni pipeline.
 
 El interes de la ficha es por tanto limitado pero relevante como caso de estudio: se trata de un ejemplo tipico de checkpoint derivado (fine-tune de dominio) publicado sin documentacion tecnica, sin evaluacion y con inconsistencias de empaquetado. El tamano del repositorio, 0,3 GB, es incompatible con los pesos completos de un transformer denso de 7 000 millones de parametros en precision de 16 bits (que ocuparian del orden de 15 GB); esto sugiere que el repositorio contiene unicamente adaptadores, un subconjunto de ficheros o pesos fuertemente cuantizados, pero no hay confirmacion en la informacion disponible.
 
@@ -28,7 +28,7 @@ Por todo ello, esta ficha recoge de forma explicita que la mayor parte de las es
 | Pipeline declarado | no disponible |
 | Etiquetas del Hub | transformers, safetensors, arxiv:1910.09700, endpoints_compatible, region:us |
 
-Nota sobre la etiqueta arxiv:1910.09700: corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental de aprendizaje automatico, que aparece citado en la plantilla por defecto de HuggingFace. No es un articulo sobre este modelo.
+Nota sobre la etiqueta arxiv:1910.09700: corresponde a Lacoste et al. (2019), el articulo del calculador de impacto medioambiental de aprendizaje automatico, que aparece citado en la plantilla por defecto de Hugging Face. No es un articulo sobre este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -107,7 +107,7 @@ No se han proporcionado datos de rendimiento que permitan una comparacion cuanti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sft-hf
+- Repositorio en Hugging Face: https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sft-hf
 - Articulo citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de aprendizaje automatico: https://mlco2.github.io/impact
 - Modelo base inferido (Qwen2.5-7B-Instruct): no se ha proporcionado enlace en la informacion disponible; debe localizarse en el Hub de Qwen si se confirma la filiacion.

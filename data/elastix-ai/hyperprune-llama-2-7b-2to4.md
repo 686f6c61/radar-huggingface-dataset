@@ -89,7 +89,7 @@ Los datos de SparseGPT y Wanda no se incluyen en la información disponible; el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/elastix-ai/HyperPrune-Llama-2-7B-2to4
+- Hugging Face: https://huggingface.co/elastix-ai/HyperPrune-Llama-2-7B-2to4
 - GitHub HyperPrune: https://github.com/futuresun912/HyperPrune
 - OpenReview: https://openreview.net/forum?id=lqjQs2lVNm
 - Modelo base LLaMA-2-7B: https://huggingface.co/meta-llama/Llama-2-7b

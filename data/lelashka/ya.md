@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lelashka/YA` es un repositorio alojado en HuggingFace cuyo contenido público se reduce a una model card con una unica linea de metadatos: `license: apache-2.0`. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas, pipeline de inferencia ni formato de pesos. El autor, identificado como `lelashka`, no aporta descripcion funcional alguna del artefacto subido.
+`lelashka/YA` es un repositorio alojado en Hugging Face cuyo contenido público se reduce a una model card con una unica linea de metadatos: `license: apache-2.0`. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas, pipeline de inferencia ni formato de pesos. El autor, identificado como `lelashka`, no aporta descripcion funcional alguna del artefacto subido.
 
 A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 "likes", y no aparece referenciado en ninguna de las busquedas web realizadas. Los resultados de busqueda obtenidos corresponden a rankings genericos de modelos (llm-stats.com, artificialanalysis.ai) y a directorios de modelos de difusion (CivArchive, PromptShotAI), sin relacion alguna con este repositorio concreto.
 
@@ -21,7 +21,7 @@ No es posible, por tanto, evaluar que problema resuelve el modelo ni por que ser
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 | Pipeline declarado | no disponible |
-| Fecha de creacion (segun HuggingFace) | 2026-09-23 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-23 |
 | Fecha de ultima actualizacion | 2026-09-23 |
 | Descargas | 0 |
 | Likes | 0 |
@@ -90,7 +90,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lelashka/YA
+- Repositorio en Hugging Face: https://huggingface.co/lelashka/YA
 - Perfil de GitHub con el mismo nombre de usuario (no confirmado como el autor): https://github.com/Lelashka
 - Resultados de busqueda sin relacion con el modelo, listados unicamente por trazabilidad:
   - https://llm-stats.com/leaderboards/llm-leaderboard

@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/impacte/bunker-laya
+- Hugging Face: https://huggingface.co/impacte/bunker-laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio del plugin: https://github.com/impacte-tech/opencode-bunker
 - Arquitectura del plugin: `opencode-bunker` → `.planning/ARCHITECTURE.md`

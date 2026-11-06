@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto / entrada | Metrica en `skill_toggle_appliance_off` | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`onset_pre`, modo + semantica) | 6.622.245 | Secuencias de caracteristicas de 6144 d por paso | Validation 73,7 / Seen 69,35 / Unseen 41,11 | CC BY 4.0 | HuggingFace |
-| `groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-off` (variante de etiquetado `traj`) | no disponible | no disponible | no disponible en la informacion proporcionada | CC BY 4.0 (segun el modelo hermano de la misma familia) | HuggingFace |
+| Este modelo (`onset_pre`, modo + semantica) | 6.622.245 | Secuencias de caracteristicas de 6144 d por paso | Validation 73,7 / Seen 69,35 / Unseen 41,11 | CC BY 4.0 | Hugging Face |
+| `groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-off` (variante de etiquetado `traj`) | no disponible | no disponible | no disponible en la informacion proporcionada | CC BY 4.0 (segun el modelo hermano de la misma familia) | Hugging Face |
 | Otras sondas de deteccion de fallos para VLA | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de otros modelos comparables en la informacion proporcionada. La unica alternativa identificada es la variante de etiquetado `traj` sobre la misma particion, publicada por el mismo autor.
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos comparables en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off
+- Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-off
 - Variante de etiquetado `traj` en la misma particion: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-off
 - Dataset de caracteristicas: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Codigo vla-probe: https://github.com/mpodolinsky/vla-probe

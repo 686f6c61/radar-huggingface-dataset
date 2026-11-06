@@ -90,7 +90,7 @@ La comparación se limita a las variantes de la propia familia EmbeddingGemma 2 
 
 ## Enlaces
 
-- [HuggingFace: Gakwavu/embeddinggemma-2-text-vision-440m-litert-lm](https://huggingface.co/Gakwavu/embeddinggemma-2-text-vision-440m-litert-lm)
+- [Hugging Face: Gakwavu/embeddinggemma-2-text-vision-440m-litert-lm](https://huggingface.co/Gakwavu/embeddinggemma-2-text-vision-440m-litert-lm)
 - [Modelo base: google/embeddinggemma-2](https://huggingface.co/google/embeddinggemma-2)
 - [Documentación de LiteRT-LM](https://developers.google.com/edge/litert-lm/overview)
 - [Google AI Edge Gallery (Android)](https://play.google.com/store/apps/details?id=com.google.ai.edge.gallery)

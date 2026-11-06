@@ -99,7 +99,7 @@ La ventaja diferencial de Maya-2-Native frente a las alternativas de la tabla es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinix-io/maya2-native
+- Modelo en Hugging Face: https://huggingface.co/Infinix-io/maya2-native
 - Código de inferencia: https://github.com/MayaResearch/maya2-native
 - Leaderboard VoiceArena (hindi): https://voicearena.com/tts-leaderboard/hindi
 - Metodología VoiceArena: https://voicearena.com/tts-methodology

@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicamente para es
 
 ## Enlaces
 
-- [HuggingFace: mondk/GGUF.chatgpt-gpt-codex-V2](https://huggingface.co/mondk/GGUF.chatgpt-gpt-codex-V2)
+- [Hugging Face: mondk/GGUF.chatgpt-gpt-codex-V2](https://huggingface.co/mondk/GGUF.chatgpt-gpt-codex-V2)
 - [Modelo base: mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking](https://huggingface.co/mondk/Safetensors.chatgpt-gpt-gpt5.1-thinking) (enlace inferido, no verificado)
 - Datasets utilizados:
   - [mondk/chatgpt-gpt-chat-jsonl](https://huggingface.co/datasets/mondk/chatgpt-gpt-chat-jsonl)

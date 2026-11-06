@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia de es
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Llama-3.1-Gloofy-Emo-8B-i1-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Llama-3.1-Gloofy-Emo-8B-i1-GGUF
 - Modelo base: https://huggingface.co/overads/Llama-3.1-Gloofy-Emo-8B
 - Pagina de modelos de mradermacher: https://huggingface.co/mradermacher/models
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests

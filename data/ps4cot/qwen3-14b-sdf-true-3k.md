@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks para realizar una comparacion cuantitativa.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/PS4CoT/qwen3-14b-sdf-true-3k
+- Hugging Face del modelo: https://huggingface.co/PS4CoT/qwen3-14b-sdf-true-3k
 - Modelo base Qwen3-14B: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio de codigo CoT-Verse: https://github.com/ps-research/CoT-Verse
 - Variante cuantizada del modelo base: https://huggingface.co/unsloth/Qwen3-14B

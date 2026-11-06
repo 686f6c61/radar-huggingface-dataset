@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tphan3020/mae-multitask-2024` es un repositorio de HuggingFace publicado por el usuario tphan3020 que contiene una implementación propia de una arquitectura denominada "Mae" orientada a tareas multitarea, empaquetada junto con un fichero de configuración, un script de inferencia y un checkpoint de inicialización. Según la propia model card, no se trata de un modelo entrenado ni de un lanzamiento con resultados validados, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y experimentos posteriores.
+`tphan3020/mae-multitask-2024` es un repositorio de Hugging Face publicado por el usuario tphan3020 que contiene una implementación propia de una arquitectura denominada "Mae" orientada a tareas multitarea, empaquetada junto con un fichero de configuración, un script de inferencia y un checkpoint de inicialización. Según la propia model card, no se trata de un modelo entrenado ni de un lanzamiento con resultados validados, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y experimentos posteriores.
 
 El peso real del checkpoint, según los datos de safetensors, es de 49.600 parámetros (aproximadamente 49,6 K), una cifra extremadamente reducida que confirma que no existe un entrenamiento a escala: el repositorio ocupa 0,0 GB y no declara pipeline, idiomas soportados ni resultados de evaluación. La configuración describe variantes de escala bajo la etiqueta "xlarge", atención de tipo flash, fusión con compuertas (gated fusion), activación gelu-tanh y normalización RMSNorm, pero estos valores corresponden a los ajustes generados de arquitectura, no a un modelo ya entrenado.
 
@@ -74,5 +74,5 @@ No disponible. El repositorio no es un modelo entrenado ni un lanzamiento con re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tphan3020/mae-multitask-2024
+- Repositorio en Hugging Face: https://huggingface.co/tphan3020/mae-multitask-2024
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demostraciones asociadas al modelo.

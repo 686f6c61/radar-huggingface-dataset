@@ -99,7 +99,7 @@ La diferencia practica frente a las alternativas es la combinacion de cuantizaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pentacoxian-dev/Qwen3.8-27B-QSA-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/pentacoxian-dev/Qwen3.8-27B-QSA-GSQ-RCO-GGUF
 - Motor requerido: https://github.com/pentaCoxian/Qwen-QSA-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos cuantizados de origen: https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF

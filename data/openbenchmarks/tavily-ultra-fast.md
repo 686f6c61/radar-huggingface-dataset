@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino un *stub* o marcador de posición creado por el equipo de OpenBenchmarks para que la API de búsqueda web de Tavily, con configuración `search_depth=ultra-fast`, pueda aparecer en el leaderboard oficial del benchmark OB News Websearch. No hay pesos, arquitectura ni parámetros asociados; se trata de un endpoint de búsqueda en línea, no de un modelo generativo.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino un *stub* o marcador de posición creado por el equipo de OpenBenchmarks para que la API de búsqueda web de Tavily, con configuración `search_depth=ultra-fast`, pueda aparecer en el leaderboard oficial del benchmark OB News Websearch. No hay pesos, arquitectura ni parámetros asociados; se trata de un endpoint de búsqueda en línea, no de un modelo generativo.
 
 La relevancia de esta entrada radica en su uso como referencia para evaluar la calidad de resultados de búsqueda web en comparación con otros proveedores de APIs de búsqueda, dentro de un marco de evaluación estandarizado. Al no existir un modelo subyacente, no se pueden aplicar métricas tradicionales de LLM (MMLU, HumanEval, etc.) ni requisitos de hardware.
 
@@ -68,7 +68,7 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/openbenchmarks/tavily-ultra-fast
+- Repositorio Hugging Face: https://huggingface.co/openbenchmarks/tavily-ultra-fast
 - Documentación de la API de Tavily: https://docs.tavily.com/documentation/api-reference/endpoint/search
 - Leaderboard de OB News Websearch: https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch
 - Sitio web de Tavily: https://tavily.com

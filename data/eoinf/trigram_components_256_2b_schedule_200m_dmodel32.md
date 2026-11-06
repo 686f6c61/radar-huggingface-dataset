@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eoinf/trigram_components_256_2b_schedule_200m_dmodel32` es un modelo de lenguaje causal de tamaño muy reducido publicado por el usuario `eoinf` en HuggingFace. No se trata de un modelo destinado a producción, sino de una pieza dentro de un grid de experimentos controlados sobre transformers causales minúsculos, diseñado para estudiar el efecto de distintos hiperparámetros (en este caso, una anchura de `d_model=32`) sobre el aprendizaje de trigramas sintéticos. El nombre codifica las condiciones del experimento: vocabulario de 4096 tokens, contexto de 256, `d_model` de 32 y un horizonte nominal de entrenamiento de aproximadamente 2.000 millones de tokens (1.999.998.976).
+`eoinf/trigram_components_256_2b_schedule_200m_dmodel32` es un modelo de lenguaje causal de tamaño muy reducido publicado por el usuario `eoinf` en Hugging Face. No se trata de un modelo destinado a producción, sino de una pieza dentro de un grid de experimentos controlados sobre transformers causales minúsculos, diseñado para estudiar el efecto de distintos hiperparámetros (en este caso, una anchura de `d_model=32`) sobre el aprendizaje de trigramas sintéticos. El nombre codifica las condiciones del experimento: vocabulario de 4096 tokens, contexto de 256, `d_model` de 32 y un horizonte nominal de entrenamiento de aproximadamente 2.000 millones de tokens (1.999.998.976).
 
 El modelo emplea una arquitectura transformer causal estándar, entrenada sobre un dataset sintético de trigramas generado según la configuración incluida en el repositorio, y tokenizada con el tokenizer `eoinf/pile_tokenizer_4096`. La evaluación se realiza sobre los propios datos de entrenamiento, sin conjunto de validación independiente, lo que limita cualquier interpretación de sus métricas como medida de generalización.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| eoinf/trigram_components_256_2b_schedule_200m_dmodel32 | no disponible (orden de millones) | 256 | no disponible | HuggingFace, state-dict PyTorch | Experimento sintético de trigramas |
+| eoinf/trigram_components_256_2b_schedule_200m_dmodel32 | no disponible (orden de millones) | 256 | no disponible | Hugging Face, state-dict PyTorch | Experimento sintético de trigramas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | No se identifican modelos públicos equivalentes en la información proporcionada |
 
 No se dispone de información sobre modelos directamente comparables dentro del mismo grid de experimentos ni de alternativas públicas con la misma finalidad metodológica.
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos directamente comparables dentro del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/trigram_components_256_2b_schedule_200m_dmodel32
+- Hugging Face: https://huggingface.co/eoinf/trigram_components_256_2b_schedule_200m_dmodel32
 - Repositorio de código `synthetic_trigrams`: no disponible como enlace directo en la información proporcionada
 - Tokenizer: https://huggingface.co/eoinf/pile_tokenizer_4096
 - Paper, blog o demo: no disponible

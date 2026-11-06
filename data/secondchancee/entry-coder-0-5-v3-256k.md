@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Entry Coder 0.5 V3.1 (256K) es un ajuste fino especializado del modelo Qwen2.5-Coder-0.5B-Instruct, publicado por el usuario Secondchancee en HuggingFace. Se presenta como un modelo ultraligero orientado exclusivamente al desarrollo web moderno: Next.js 15/16 con App Router, TypeScript estricto, React 19 y el stack de despliegue de Vercel (AI SDK, Vercel Workflows, Sandbox, Daemons y contenedores). El problema que intenta resolver es la falta de modelos pequenos capaces de manejar APIs recientes y cambiantes sin necesidad de contexto recuperado externamente, algo que los modelos de 0,5B base fallan de forma sistematica.
+Entry Coder 0.5 V3.1 (256K) es un ajuste fino especializado del modelo Qwen2.5-Coder-0.5B-Instruct, publicado por el usuario Secondchancee en Hugging Face. Se presenta como un modelo ultraligero orientado exclusivamente al desarrollo web moderno: Next.js 15/16 con App Router, TypeScript estricto, React 19 y el stack de despliegue de Vercel (AI SDK, Vercel Workflows, Sandbox, Daemons y contenedores). El problema que intenta resolver es la falta de modelos pequenos capaces de manejar APIs recientes y cambiantes sin necesidad de contexto recuperado externamente, algo que los modelos de 0,5B base fallan de forma sistematica.
 
 El modelo parte de una arquitectura transformer decoder-only de tipo Qwen2, con 494.032.768 parametros reales segun los pesos en safetensors (la model card declara 502.830.976, una discrepancia de en torno al 1,8%). El autor afirma haber ampliado la ventana de contexto hasta 262.144 tokens mediante escalado YaRN de RoPE (factor 8.0, rope_theta 1.000.000), frente a los 32.768 tokens nativos de la familia Qwen2.5.
 
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks independientes (MMLU, HumanEval, GS
 - Cache KV: no disponible de forma oficial. Como estimacion propia a partir de la arquitectura de Qwen2.5-0.5B (24 capas, 2 cabezas KV), el coste en BF16 ronda los 12 KB por token, es decir unos 3 GB adicionales si se llena la ventana completa de 262.144 tokens. En la practica conviene limitar el contexto o usar cuantizacion de cache.
 - GPU recomendadas: el modelo cabe en cualquier GPU con 2-4 GB de VRAM. El autor cita medidas sobre A100; tambien es funcional en RTX 3060, RTX 4060, RTX 4090 o GPUs integradas con memoria compartida.
 - Cabe en GPU de consumo: si, de forma holgada, y tambien en CPU.
-- Opciones de despliegue: transformers (referencia directa en la model card), vLLM y TensorRT-LLM (citados por el autor para inferencia por lotes), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), llama.cpp u Ollama si se dispone de pesos GGUF, que no constan en el repositorio. Compatible con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers (referencia directa en la model card), vLLM y TensorRT-LLM (citados por el autor para inferencia por lotes), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible`), llama.cpp u Ollama si se dispone de pesos GGUF, que no constan en el repositorio. Compatible con Hugging Face Inference Endpoints.
 - Throughput declarado por el autor: 260-280 tokens/s en BF16, una sola secuencia, sobre A100; mas de 600 tokens/s con vLLM o TensorRT-LLM en modo por lotes; 95-135 tokens/s en una CPU de 8 nucleos. No hay mediciones independientes que confirmen estas cifras.
 
 ## Comparativa con modelos similares
@@ -119,7 +119,7 @@ La ventaja diferencial declarada de Entry Coder 0.5 es la especializacion vertic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k
+- Modelo en Hugging Face: https://huggingface.co/Secondchancee/entry-coder-0.5-v3-256k
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Leaderboard de referencia citado por el autor: https://nextjs.org/evals
 - Dataset declarado: `custom-nextjs-app-router-evals` (no se ha localizado URL publica)

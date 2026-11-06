@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit-lr5e-4_20260828_160202
+- Modelo en Hugging Face: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-impinit-lr5e-4_20260828_160202
 - Modelo base: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune
 - Variante 2of4: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-impinit-lr5e-4-sd3h_20260808_061545
 - Variante col-mask-moe: https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-col-mask-moe-sparse-4e-2k-sp0.5-s1-lr5e-4-impinit_20260722_044812

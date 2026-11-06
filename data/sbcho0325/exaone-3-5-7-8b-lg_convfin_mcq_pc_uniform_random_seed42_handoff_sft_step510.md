@@ -54,10 +54,10 @@ No se han publicado resultados de benchmarks para este adaptador. Tampoco se dis
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EXAONE 3.5 7.8B Instruct (base) | 7.8B | 32K | No especificada (uso no comercial según LG) | HuggingFace |
-| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (comercial con restricciones) | HuggingFace |
-| Mistral 7B Instruct | 7.3B | 32K | Apache 2.0 | HuggingFace |
-| Qwen 2.5 7B Instruct | 7.6B | 32K | Apache 2.0 | HuggingFace |
+| EXAONE 3.5 7.8B Instruct (base) | 7.8B | 32K | No especificada (uso no comercial según LG) | Hugging Face |
+| Llama 3.1 8B Instruct | 8B | 128K | Llama 3.1 (comercial con restricciones) | Hugging Face |
+| Mistral 7B Instruct | 7.3B | 32K | Apache 2.0 | Hugging Face |
+| Qwen 2.5 7B Instruct | 7.6B | 32K | Apache 2.0 | Hugging Face |
 
 Nota: No se dispone de benchmarks comparativos entre estos modelos y el adaptador. La comparativa se limita a parámetros y contexto, y la licencia del adaptador no está definida.
 

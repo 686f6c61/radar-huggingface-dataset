@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Slither residual world model v3 es un modelo de mundo (world model) desarrollado por el usuario de HuggingFace mundoamundo (Seth Lupo). Su objetivo es predecir la evolución futura de fotogramas de vídeo de partidas de Slither.io condicionada por acciones, dentro de un pipeline de investigación sobre modelos de mundo para vídeo y acción. No es un modelo de lenguaje ni un modelo generativo de texto: no procesa ni produce lenguaje natural.
+Slither residual world model v3 es un modelo de mundo (world model) desarrollado por el usuario de Hugging Face mundoamundo (Seth Lupo). Su objetivo es predecir la evolución futura de fotogramas de vídeo de partidas de Slither.io condicionada por acciones, dentro de un pipeline de investigación sobre modelos de mundo para vídeo y acción. No es un modelo de lenguaje ni un modelo generativo de texto: no procesa ni produce lenguaje natural.
 
 La arquitectura combina un componente de dinámica espacial causal de 303,9 M de parámetros con un encoder, una proyección y un decoder DINO-Tok (de DINOv3) que se mantienen congelados. El entrenamiento emplea residual endpoint flow matching sobre vídeo de 512×288 píxeles a 15 Hz, con tres segundos de histórico (45 fotogramas) y controles proxy de ángulo y boost. El entrenamiento de la cabecera de política se plantea como una etapa posterior y separada.
 
-Es relevante como ejemplo de modelo de mundo de pequeño tamaño y dominio acotado: el repositorio de HuggingFace no contiene pesos (0,0 GB, 0 descargas, 0 likes); los checkpoints resumibles se publican en un bucket de HuggingFace con punteros verificados en `latest.json` y `best.json`. La ficha refleja un estado de desarrollo temprano, sin resultados de benchmarks publicados.
+Es relevante como ejemplo de modelo de mundo de pequeño tamaño y dominio acotado: el repositorio de Hugging Face no contiene pesos (0,0 GB, 0 descargas, 0 likes); los checkpoints resumibles se publican en un bucket de Hugging Face con punteros verificados en `latest.json` y `best.json`. La ficha refleja un estado de desarrollo temprano, sin resultados de benchmarks publicados.
 
 ## Especificaciones tecnicas
 
@@ -19,7 +19,7 @@ Es relevante como ejemplo de modelo de mundo de pequeño tamaño y dominio acota
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo de vídeo condicionado por acción; sin interfaz de lenguaje natural) |
 | Licencia | other, con `license_name: dinov3` y enlace a https://github.com/facebookresearch/dinov3/blob/main/LICENSE |
-| Formato de pesos | no disponible (el repositorio no contiene pesos; los checkpoints se publican en un bucket de HuggingFace) |
+| Formato de pesos | no disponible (el repositorio no contiene pesos; los checkpoints se publican en un bucket de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para activaciones: no disponible. El encoder y el decoder DINO-Tok congelados y el histórico de 45 fotogramas a 512×288 pueden dominar el consumo de memoria sobre el propio peso de los parámetros, especialmente con lotes grandes.
 - GPU recomendadas: el autor no especifica ninguna. Por tamaño de parámetros, cualquier GPU con 8 GB o más (RTX 3060/4060, RTX 4070/4090) debería poder alojar los pesos; A100 o H100 serían necesarias para entrenamiento o inferencia por lotes grandes.
 - Viabilidad en GPU de consumo: probablemente sí para inferencia de una sola secuencia, condicionada al coste real de activaciones, que no está documentado.
-- Opciones de despliegue: no documentadas. No hay integración con vLLM, TGI, llama.cpp ni Ollama, que además están orientados a modelos de lenguaje. El uso requiere código PyTorch propio y la descarga de checkpoints desde el bucket de HuggingFace, ya que el repositorio del modelo no contiene pesos.
+- Opciones de despliegue: no documentadas. No hay integración con vLLM, TGI, llama.cpp ni Ollama, que además están orientados a modelos de lenguaje. El uso requiere código PyTorch propio y la descarga de checkpoints desde el bucket de Hugging Face, ya que el repositorio del modelo no contiene pesos.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -83,14 +83,14 @@ No disponible. La información proporcionada no identifica modelos comparables d
 - Sin cabecera de política: esta versión no toma decisiones, solo predice dinámica; cualquier uso como agente requiere una etapa de entrenamiento posterior no incluida.
 - Licencia: se declara `other` con nombre `dinov3`, remitiendo a la licencia de DINOv3 de Meta. No es una licencia de código abierto estándar y hay que revisar sus términos antes de cualquier uso comercial, ya que puede imponer restricciones.
 - Estado del repositorio: 0,0 GB de tamaño, 0 descargas y 0 likes; los pesos no están en el repositorio y se distribuyen en un bucket con rotación de dos ranuras, lo que puede romper reproducibilidad si los punteros cambian.
-- Dataset en preparación: el dataset asociado se describe en HuggingFace como un conjunto en fase de preparación (staging), no como un conjunto de entrenamiento publicado.
+- Dataset en preparación: el dataset asociado se describe en Hugging Face como un conjunto en fase de preparación (staging), no como un conjunto de entrenamiento publicado.
 - Ausencia de benchmarks externos: no hay resultados comparables con otros modelos, por lo que no es posible posicionar su calidad de forma objetiva.
 - Fechas declaradas: el repositorio figura como creado el 2026-10-01, una fecha posterior a la habitual en modelos publicados; conviene verificar la vigencia real de los artefactos antes de depender de ellos.
 - Idiomas y cuantizaciones: no se documenta ningún idioma soportado ni formato de cuantización, lo que impide planificar un despliegue con cuantización de forma fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mundoamundo/slither-residual-v3-20261001
+- Modelo en Hugging Face: https://huggingface.co/mundoamundo/slither-residual-v3-20261001
 - Bucket con checkpoints (`latest.json` y `best.json`): https://huggingface.co/buckets/mundoamundo/slither-residual-v3-20261001
 - Dataset de vídeo y acciones: https://huggingface.co/datasets/mundoamundo/slither-wam-video-actions
 - Commit del dataset: `c60388c8b625379d2782e9a673c3d850ec7d4b85`

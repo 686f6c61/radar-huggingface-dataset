@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_375331967_efficientformer_nano` es una implementación a escala "nano" de la arquitectura EfficientFormer, publicada por el usuario Dasa-dvait en HuggingFace. Según la model card, está diseñado para tareas de generación y emplea atención grouped query, fusión gated y activación swish, con normalización por batchnorm e inicialización ortogonal. El repositorio contiene únicamente un archivo Python (`model_375331967_efficientformer_nano.py`) que constituye el artefacto principal, sin pesos preentrenados ni documentación adicional.
+El modelo `model_375331967_efficientformer_nano` es una implementación a escala "nano" de la arquitectura EfficientFormer, publicada por el usuario Dasa-dvait en Hugging Face. Según la model card, está diseñado para tareas de generación y emplea atención grouped query, fusión gated y activación swish, con normalización por batchnorm e inicialización ortogonal. El repositorio contiene únicamente un archivo Python (`model_375331967_efficientformer_nano.py`) que constituye el artefacto principal, sin pesos preentrenados ni documentación adicional.
 
 La relevancia de este modelo es limitada en el contexto actual: EfficientFormer original es un vision transformer optimizado para despliegue móvil (clasificación de imágenes), pero esta variante se orienta a generación de texto, lo que resulta atípico. No se especifican parámetros totales, tamaño del contexto, datos de entrenamiento ni resultados de evaluación. La fecha de creación (agosto de 2026) y la ausencia de descargas o likes sugieren que es un experimento reciente y sin validación externa.
 
@@ -68,7 +68,7 @@ No hay información suficiente para establecer una comparativa fiable. Efficient
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dasa-dvait/model_375331967_efficientformer_nano
+- Repositorio Hugging Face: https://huggingface.co/Dasa-dvait/model_375331967_efficientformer_nano
 - EfficientFormer (Qualcomm AI Hub): https://aihub.qualcomm.com/models/efficientformer
 - Documentación de EfficientFormer en Transformers: https://huggingface.co/docs/transformers/v4.53.0/model_doc/efficientformer
 - Código de EfficientFormer (Snap Research): https://github.com/snap-research/EfficientFormer

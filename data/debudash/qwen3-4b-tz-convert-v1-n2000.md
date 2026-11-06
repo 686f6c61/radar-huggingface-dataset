@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-tz-convert-v1-n2000` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario `debudash` en HuggingFace. Forma parte del proyecto tz-convert, cuyo objetivo es especializar un modelo de lenguaje pequeño en la conversión y el razonamiento sobre zonas horarias (timezones). No se trata de un modelo completo, sino de un checkpoint intermedio dentro de una curva de eficiencia de datos: se ha entrenado únicamente con los primeros 2.000 ejemplos de la mezcla `v1` del dataset `debudash/tz-convert-sft`.
+`qwen3-4b-tz-convert-v1-n2000` es un adaptador LoRA (entrenado con QLoRA) sobre el modelo base `Qwen/Qwen3-4B-Instruct-2507`, publicado por el usuario `debudash` en Hugging Face. Forma parte del proyecto tz-convert, cuyo objetivo es especializar un modelo de lenguaje pequeño en la conversión y el razonamiento sobre zonas horarias (timezones). No se trata de un modelo completo, sino de un checkpoint intermedio dentro de una curva de eficiencia de datos: se ha entrenado únicamente con los primeros 2.000 ejemplos de la mezcla `v1` del dataset `debudash/tz-convert-sft`.
 
 El adaptador mantiene los hiperparámetros del resto de checkpoints del proyecto y se distribuye como pesos PEFT en formato safetensors (0,1 GB), lo que permite aplicarlo sobre el modelo base sin duplicar los 4.000 millones de parámetros de este. Su relevancia es acotada: sirve como punto de referencia para estudiar cómo escala la adherencia a especificación y la robustez con el volumen de datos de entrenamiento, y como ejemplo práctico de fine-tuning QLoRA de bajo coste sobre un modelo Instruct de última generación.
 
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-tz-convert-v1-n2000 (este) | 4B (base) + LoRA | no disponible | Timezones / tz-convert | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion proporcionada | Propósito general, instruct | Apache 2.0 | HuggingFace |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | no disponible | Timezones / tz-convert (mejor checkpoint de la serie) | Apache 2.0 | HuggingFace |
+| qwen3-4b-tz-convert-v1-n2000 (este) | 4B (base) + LoRA | no disponible | Timezones / tz-convert | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion proporcionada | Propósito general, instruct | Apache 2.0 | Hugging Face |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | no disponible | Timezones / tz-convert (mejor checkpoint de la serie) | Apache 2.0 | Hugging Face |
 
 La comparación con modelos de propósito general de otros fabricantes (Llama 3.2 3B, Gemma 2 2B, Phi-3.5-mini) no está disponible en la información proporcionada, y sus cifras de rendimiento no serían directamente comparables al tratarse de una tarea de dominio específico evaluada con métricas propias.
 
@@ -92,7 +92,7 @@ La comparación con modelos de propósito general de otros fabricantes (Llama 3.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n2000
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v1-n2000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Mejor checkpoint de la serie: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft

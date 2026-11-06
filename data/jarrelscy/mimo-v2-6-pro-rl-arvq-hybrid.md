@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid
+- Repositorio Hugging Face: https://huggingface.co/jarrelscy/MiMo-V2.6-Pro-RL-ARVQ-hybrid
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Fork de vLLM para servicio en SM120: https://github.com/jarrelscy/vllm-mimo-v26-arvq-sm120
 - Fichero de progreso de la fase PV: `pv_progress.json` (incluido en el repositorio)

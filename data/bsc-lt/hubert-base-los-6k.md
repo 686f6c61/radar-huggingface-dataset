@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HuBERT-base-los-6k es un modelo de representaciones de voz (speech representations) desarrollado por el Barcelona Supercomputing Center (BSC-LT) mediante preentrenamiento auto-supervisado sobre unas 6.000 horas de audio en lenguas iberorrománicas: español, catalán, euskera, gallego y aranés, además de inglés. Parte de la arquitectura HuBERT Base de Facebook (12 capas transformer) y se distribuye como checkpoint PyTorch de 0,8 GB en HuggingFace.
+HuBERT-base-los-6k es un modelo de representaciones de voz (speech representations) desarrollado por el Barcelona Supercomputing Center (BSC-LT) mediante preentrenamiento auto-supervisado sobre unas 6.000 horas de audio en lenguas iberorrománicas: español, catalán, euskera, gallego y aranés, además de inglés. Parte de la arquitectura HuBERT Base de Facebook (12 capas transformer) y se distribuye como checkpoint PyTorch de 0,8 GB en Hugging Face.
 
 No es un modelo de reconocimiento automático del habla listo para usar: no incluye tokenizer ni cabeza de decodificación, sino que produce representaciones acústicas que deben fine-tunearse con datos etiquetados para ASR, clasificación de audio o identificación de idioma (LID). Su interés radica en cubrir lenguas con recursos escasos y variedades dialectales (valenciano, aranés) que quedan fuera de los modelos multilingües de gran escala entrenados sobre cientos de miles de horas de audio.
 
@@ -21,7 +21,7 @@ El modelo se publica con licencia no disponible, sin resultados numéricos de be
 | Licencia | no disponible |
 | Formato de pesos | PyTorch (no se publican versiones safetensors, GGUF ni ONNX); repositorio de 0,8 GB |
 | Modelo base | facebook/hubert-base-ls960 (fine-tune del mismo) |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Datos de preentrenamiento | ~6.000 horas de audio (5.858 h desglosadas en la model card) |
 | Metricas declaradas | WER (ASR) y F1 (LID) |
 | Descargas / likes | 55 / 1 |
@@ -109,11 +109,11 @@ Las alternativas se incluyen como referencia de categoria; sus especificaciones 
 - Riesgo de degradacion en dominios no cubiertos (conversacional espontaneo, ruido de calle, acentos no presentes en el corpus); no evaluado por el autor.
 - Alucinacion en el sentido de los LLM no aplica; en un fine-tuning ASR si puede producir hipotesis plausibles pero incorrectas en audio ruidoso, sin que existan metricas publicadas al respecto.
 - Capacidad acotada por la arquitectura Base de 12 capas: las variantes large o x-large ofrecen mayor capacidad, a costa de mas VRAM y latencia.
-- Fechas de creacion y actualizacion del repositorio en HuggingFace (2026) no coinciden con el ciclo habitual de publicacion; conviene verificar la version antes de descargar.
+- Fechas de creacion y actualizacion del repositorio en Hugging Face (2026) no coinciden con el ciclo habitual de publicacion; conviene verificar la version antes de descargar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BSC-LT/hubert-base-los-6k
+- Modelo en Hugging Face: https://huggingface.co/BSC-LT/hubert-base-los-6k
 - Modelo base: https://huggingface.co/facebook/hubert-base-ls960
 - Repositorio oficial de HuBERT en fairseq: https://github.com/facebookresearch/fairseq/tree/main/examples/hubert
 - Paper de HuBERT (IEEE): https://ieeexplore.ieee.org/document/9585401

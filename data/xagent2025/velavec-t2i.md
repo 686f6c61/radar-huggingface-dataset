@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VelaVec-T2I es un encoder de recuperación multimodal desarrollado por el usuario xagent2025, publicado en HuggingFace bajo licencia MIT. Se trata de la variante especializada en recuperación texto→imagen de la familia VelaVec: un tronco de texto ligero (unos 9,8 millones de parámetros) al que se añade una cabeza de proyección visual que traslada características de imagen extraídas por profesores CLIP al mismo espacio de embeddings de 256 dimensiones del texto. El resultado es un modelo de similitud semántica capaz de ordenar imágenes frente a una consulta textual, no un modelo generativo.
+VelaVec-T2I es un encoder de recuperación multimodal desarrollado por el usuario xagent2025, publicado en Hugging Face bajo licencia MIT. Se trata de la variante especializada en recuperación texto→imagen de la familia VelaVec: un tronco de texto ligero (unos 9,8 millones de parámetros) al que se añade una cabeza de proyección visual que traslada características de imagen extraídas por profesores CLIP al mismo espacio de embeddings de 256 dimensiones del texto. El resultado es un modelo de similitud semántica capaz de ordenar imágenes frente a una consulta textual, no un modelo generativo.
 
 El modelo es relevante por su relación tamaño/rendimiento: con 11.290.112 parámetros totales (según los pesos en safetensors) alcanza un R@1 de 0,560 en recuperación texto→imagen sobre el conjunto de evaluación Flickr30k, frente al límite superior de 0,585 del conjunto de profesores CLIP ViT-B/32 + ViT-L/14. Es decir, se aproxima al profesor con una fracción mínima de sus parámetros, y su ruta de texto puede ejecutarse en CPU mediante un motor en Rust que el autor cifra en 53,9 veces más rápido que el profesor.
 
@@ -98,7 +98,7 @@ No se dispone de datos comparativos frente a otros sistemas de recuperación mul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xagent2025/VelaVec-T2I
+- Modelo en Hugging Face: https://huggingface.co/xagent2025/VelaVec-T2I
 - VelaVec (variante de texto puro): https://huggingface.co/xagent2025/VelaVec
 - VelaVec-MultiModal (variante equilibrada imagen→texto): https://huggingface.co/xagent2025/VelaVec-MultiModal
 - Motor de inferencia en Rust (ruta de texto, 53,9× frente al profesor): https://huggingface.co/xagent2025/velavec-rust-inference

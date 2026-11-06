@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Odda-vies/clip-experiment-2024 es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura CLIP orientada a tareas de recuperación (retrieval) imagen-texto. Lo desarrolla el usuario Odda-vies y su propósito declarado no es ofrecer un modelo listo para producción, sino servir de banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye un script de Python con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo, no como un checkpoint entrenado.
+Odda-vies/clip-experiment-2024 es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura CLIP orientada a tareas de recuperación (retrieval) imagen-texto. Lo desarrolla el usuario Odda-vies y su propósito declarado no es ofrecer un modelo listo para producción, sino servir de banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El repositorio incluye un script de Python con el modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como checkpoint de inicialización válido para pruebas de humo, no como un checkpoint entrenado.
 
 La escala declarada es "small", con atención dilatada, fusión tensorial, activación gelu tanh y normalización layernorm. Los metadatos de safetensors indican 33.088 parámetros totales, una cifra muy reducida que confirma que se trata de un esqueleto de inicialización y no de un modelo con capacidad representacional útil para recuperación real. La receta por defecto emplea el optimizador AdamW con un schedule de warmup lineal, valores que el autor presenta explícitamente como puntos de partida del script y no como evidencia de una ejecución completada.
 
@@ -20,9 +20,9 @@ Su relevancia actual es acotada y de naturaleza metodológica: sirve como planti
 | Idiomas soportados | no disponible |
 | Licencia | bsd-3-clause |
 | Formato de pesos | safetensors (checkpoint de inicialización); incluye `config.json` y `training_args.json` |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
-| Tamaño del repositorio | 0,0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según metadatos de Hugging Face) |
 | Fecha de creación | 2026-09-13 |
 | Última actualización | 2026-09-13 |
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, no hay ningún dato sobre volumen de tokens, composi
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
 - Capacidades especiales (modo thinking, visión, audio): no disponible.
-- La implementación es personalizada, por lo que las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+- La implementación es personalizada, por lo que las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 ## Casos de uso
 
@@ -83,7 +83,7 @@ Nota: los valores marcados como "referencia pública" corresponden a conocimient
 
 - El checkpoint `model.safetensors` no ha sido entrenado. No produce representaciones útiles para recuperación y no debe usarse para inferencia real ni para evaluar calidad.
 - No se ha auditado robustez, equidad ni transferencia de dominio. No hay análisis de sesgos disponible.
-- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe el riesgo de interpretar erróneamente el repositorio como un modelo funcional al verlo publicado en HuggingFace con etiqueta `clip` y `retrieval`.
+- Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe el riesgo de interpretar erróneamente el repositorio como un modelo funcional al verlo publicado en Hugging Face con etiqueta `clip` y `retrieval`.
 - Limitaciones de contexto e idioma: no disponibles; no se documenta ventana de contexto ni cobertura lingüística.
 - Licencia BSD-3-Clause: permite uso comercial y modificación con conservación del aviso de copyright y de la cláusula de no respaldo, pero no cubre los términos de los datos de entrenamiento. El autor recomienda revisar por separado las condiciones de las fuentes de datos externas que se utilicen.
 - Implementación personalizada: no es compatible de serie con las APIs automáticas de Transformers. Requiere escribir un adaptador antes de integrarla en cualquier pipeline.
@@ -93,5 +93,5 @@ Nota: los valores marcados como "referencia pública" corresponden a conocimient
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Odda-vies/clip-experiment-2024
+- Ficha en Hugging Face: https://huggingface.co/Odda-vies/clip-experiment-2024
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios de código o demos) en los resultados de la búsqueda web realizada. Los resultados devueltos correspondían a sitios institucionales sin relación con el modelo.

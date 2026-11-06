@@ -4,7 +4,7 @@
 
 `kabing/gpt2-medium-cbctg-prior` es un conjunto de módulos de control para generación de texto mediante *concept bottleneck* (CBCTG) sobre el modelo base GPT-2 Medium (355M). Fue desarrollado por Qi Bing y Xiaowei Shao como parte del artículo "The Illusion of Control: Why Bare Classifier Inversion Silently Fails in Concept-Bottleneck Text Generation", presentado en EMNLP 2026. El modelo aborda el problema de controlar atributos semánticos (cocina, género, sentimiento y tiempo verbal) en la generación de texto, proponiendo una solución basada en un *prior* post-hoc que evita la falla de la inversión directa de clasificadores.
 
-Este repositorio contiene únicamente los parámetros entrenados por los autores: los MLP de codificación de conceptos por eje, las cabeceras clasificadoras, el inyector de conceptos, el adaptador LoRA y el *prior* de etiquetas. No se incluyen los pesos del modelo base, que deben descargarse por separado desde HuggingFace (`gpt2-medium`). El tamaño total del repositorio es de 0.5 GB, con dos directorios de checkpoint (`hold-out` y `acd`) correspondientes a diferentes configuraciones de evaluación. El modelo se distribuye bajo licencia MIT y está orientado a investigación, con cero descargas y cero "likes" en el momento de su publicación.
+Este repositorio contiene únicamente los parámetros entrenados por los autores: los MLP de codificación de conceptos por eje, las cabeceras clasificadoras, el inyector de conceptos, el adaptador LoRA y el *prior* de etiquetas. No se incluyen los pesos del modelo base, que deben descargarse por separado desde Hugging Face (`gpt2-medium`). El tamaño total del repositorio es de 0.5 GB, con dos directorios de checkpoint (`hold-out` y `acd`) correspondientes a diferentes configuraciones de evaluación. El modelo se distribuye bajo licencia MIT y está orientado a investigación, con cero descargas y cero "likes" en el momento de su publicación.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No disponible. No se han encontrado modelos comparables específicos en la infor
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/kabing/gpt2-medium-cbctg-prior
+- Repositorio de Hugging Face: https://huggingface.co/kabing/gpt2-medium-cbctg-prior
 - Paper arXiv: https://arxiv.org/abs/2608.22909 (según la model card; el ID es `2608.22956` en el código de citación, pero la URL usa `2608.22956`; se indica como `2608.22956` en la etiqueta del modelo)
 - Repositorio de código: https://github.com/BiancaBing/cbctg-illusion-of-control
 - Modelo base GPT-2 Medium: https://huggingface.co/gpt2-medium

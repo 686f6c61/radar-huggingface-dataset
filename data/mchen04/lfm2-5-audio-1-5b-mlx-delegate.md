@@ -18,7 +18,7 @@ Es relevante ahora porque explora una arquitectura de "delegacion" para asistent
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Ingles |
-| Licencia | LFM Open License v1.0 (declarada como `other` en HuggingFace) |
+| Licencia | LFM Open License v1.0 (declarada como `other` en Hugging Face) |
 | Formato de pesos | safetensors (`adapter/adapter.safetensors`, 44,5 MB, sha256 `97bc6ef4e7d7375e1c959179f820c84ce13ff7646ba571566d93c35d77d72d10`, checkpoint E1), MLX |
 
 ## Arquitectura y entrenamiento
@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mchen04/lfm2.5-audio-1.5b-mlx-delegate (este) | 11,1 M de adaptador sobre nucleo LFM2 1,2 B | no disponible | Handoff 0,938; QA factual hablado 0,205 | LFM Open License v1.0 | HuggingFace, MLX, Apple silicon |
-| LiquidAI/LFM2.5-Audio-1.5B (base) | 1,5 B | no disponible | QA factual hablado 0,195; handoff 0,537 (sin entrenar) | LFM Open License v1.0 | HuggingFace |
+| mchen04/lfm2.5-audio-1.5b-mlx-delegate (este) | 11,1 M de adaptador sobre nucleo LFM2 1,2 B | no disponible | Handoff 0,938; QA factual hablado 0,205 | LFM Open License v1.0 | Hugging Face, MLX, Apple silicon |
+| LiquidAI/LFM2.5-Audio-1.5B (base) | 1,5 B | no disponible | QA factual hablado 0,195; handoff 0,537 (sin entrenar) | LFM Open License v1.0 | Hugging Face |
 | Alternativas de voz a voz comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la informacion proporcionada de otros modelos de voz a voz con delegacion y streaming que permitan una comparacion directa.
@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de otros modelos de voz a voz con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mchen04/lfm2.5-audio-1.5b-mlx-delegate
+- Hugging Face: https://huggingface.co/mchen04/lfm2.5-audio-1.5b-mlx-delegate
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Licencia: https://huggingface.co/mchen04/lfm2.5-audio-1.5b-mlx-delegate/blob/main/LICENSE-LFM
 - La busqueda web no devolvio enlaces relevantes al modelo; los resultados obtenidos trataban sobre el formato de archivo BNP y la prueba medica de peptido natriuretico, sin relacion con esta ficha.

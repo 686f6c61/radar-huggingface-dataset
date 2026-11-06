@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AllInOne-XL-V12.5 es un checkpoint de difusión latente para generación de imágenes a partir de texto (text-to-image), publicado por el usuario snuperh en HuggingFace. No es un modelo entrenado desde cero, sino un *merge* (fusión de pesos) que combina 13 modelos SDXL preexistentes en un único U-Net y un único codificador de texto. Entre sus ancestros declarados están Laxhar/noobai-XL-1.0, LyliaEngine/Pony_Diffusion_V6_XL, OnomaAIResearch/Illustrious-XL-v1.0 y stabilityai/stable-diffusion-xl-base-1.0, lo que sitúa el modelo en el ecosistema de checkpoints orientados a anime, *2.5D* y fotorrealismo.
+AllInOne-XL-V12.5 es un checkpoint de difusión latente para generación de imágenes a partir de texto (text-to-image), publicado por el usuario snuperh en Hugging Face. No es un modelo entrenado desde cero, sino un *merge* (fusión de pesos) que combina 13 modelos SDXL preexistentes en un único U-Net y un único codificador de texto. Entre sus ancestros declarados están Laxhar/noobai-XL-1.0, LyliaEngine/Pony_Diffusion_V6_XL, OnomaAIResearch/Illustrious-XL-v1.0 y stabilityai/stable-diffusion-xl-base-1.0, lo que sitúa el modelo en el ecosistema de checkpoints orientados a anime, *2.5D* y fotorrealismo.
 
 El problema que declara resolver el autor es el de la "ambigüedad de estilo en zero-shot": en fusiones masivas previas, los tensores de color de los distintos modelos podían cancelarse entre sí cuando el prompt no incluía etiquetas de estilo explícitas, produciendo imágenes en escala de grises o con aspecto de boceto. La versión 12.5 introduce un parche denominado *Color Instinct*, con rebalanceo matemático del codificador de texto (un 5 % de peso por cada pilar declarado) y presuntos ajustes de normalización L2, *clamping* de rango dinámico e inyección anti-NaN en el VAE.
 
@@ -22,7 +22,7 @@ Es relevante ahora únicamente como experimento de fusión de pesos: el reposito
 | Formato de pesos | safetensors (librería diffusers, pipeline text-to-image) |
 | Tamaño del repositorio | 6,9 GB |
 | Resolución nativa | No declarada explícitamente; por herencia de SDXL se asume 1024x1024 |
-| Fecha de creación en HuggingFace | 2026-09-17T01:03:51.000Z (según metadatos del repositorio) |
+| Fecha de creación en Hugging Face | 2026-09-17T01:03:51.000Z (según metadatos del repositorio) |
 
 ## Arquitectura y entrenamiento
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La *
 
 | Modelo | Arquitectura | Contexto de prompt | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AllInOne-XL-V12.5 (snuperh) | Merge de 13 checkpoints SDXL | 77 tokens | Sin benchmarks publicados; 0 descargas y 0 likes | openrail | HuggingFace, safetensors + diffusers |
-| OnomaAIResearch/Illustrious-XL-v1.0 | SDXL base con ajuste fino | 77 tokens | Benchmarks no consultados en esta ficha | No verificada en esta ficha | HuggingFace |
-| LyliaEngine/Pony_Diffusion_V6_XL | SDXL base con ajuste fino | 77 tokens | Benchmarks no consultados en esta ficha | No verificada en esta ficha | HuggingFace |
-| Laxhar/noobai-XL-1.0 | SDXL base con ajuste fino | 77 tokens | Benchmarks no consultados en esta ficha | No verificada en esta ficha | HuggingFace |
+| AllInOne-XL-V12.5 (snuperh) | Merge de 13 checkpoints SDXL | 77 tokens | Sin benchmarks publicados; 0 descargas y 0 likes | openrail | Hugging Face, safetensors + diffusers |
+| OnomaAIResearch/Illustrious-XL-v1.0 | SDXL base con ajuste fino | 77 tokens | Benchmarks no consultados en esta ficha | No verificada en esta ficha | Hugging Face |
+| LyliaEngine/Pony_Diffusion_V6_XL | SDXL base con ajuste fino | 77 tokens | Benchmarks no consultados en esta ficha | No verificada en esta ficha | Hugging Face |
+| Laxhar/noobai-XL-1.0 | SDXL base con ajuste fino | 77 tokens | Benchmarks no consultados en esta ficha | No verificada en esta ficha | Hugging Face |
 
 No se dispone de datos verificables para comparar parámetros exactos, licencias de los modelos base ni resultados de rendimiento. Los tres modelos base declarados están integrados dentro de este merge, por lo que la comparación relevante es la de "checkpoint único especializado frente a fusión de propósito general".
 
@@ -92,7 +92,7 @@ No se dispone de datos verificables para comparar parámetros exactos, licencias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snuperh/AllInOne-XL-V12.5
+- Modelo en Hugging Face: https://huggingface.co/snuperh/AllInOne-XL-V12.5
 - Modelo base declarado (ancla anime): https://huggingface.co/OnomaAIResearch/Illustrious-XL-v1.0
 - Modelo base declarado (anime/estilo Danbooru): https://huggingface.co/LyliaEngine/Pony_Diffusion_V6_XL
 - Modelo base declarado (anime): https://huggingface.co/Laxhar/noobai-XL-1.0

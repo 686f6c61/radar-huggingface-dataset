@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: licaaron/flan-t5-small-en2picto](https://huggingface.co/licaaron/flan-t5-small-en2picto)
+- [Hugging Face: licaaron/flan-t5-small-en2picto](https://huggingface.co/licaaron/flan-t5-small-en2picto)
 - [Paper T5: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer (arXiv:1910.09700)](https://arxiv.org/abs/1910.09700)
 - [Modelo base: google/flan-t5-small](https://huggingface.co/google/flan-t5-small)
 - [Documentación de FLAN-T5 en Hugging Face](https://huggingface.co/docs/transformers/model_doc/flan-t5)

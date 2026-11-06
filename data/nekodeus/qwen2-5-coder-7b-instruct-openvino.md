@@ -66,10 +66,10 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, MB
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/qwen2-5-coder-7b-instruct-openvino | 7,6B | No disponible | OpenVINO IR, INT8 | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | No disponible en la informacion proporcionada | safetensors, FP16/BF16 | Apache-2.0 | HuggingFace (oficial) |
+| Nekodeus/qwen2-5-coder-7b-instruct-openvino | 7,6B | No disponible | OpenVINO IR, INT8 | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-Coder-7B-Instruct | 7,6B | No disponible en la informacion proporcionada | safetensors, FP16/BF16 | Apache-2.0 | Hugging Face (oficial) |
 | Otras conversiones OpenVINO de modelos de codigo de 7B | Variable | No disponible | OpenVINO IR, INT8 o INT4 | Variable | Segun repositorio |
-| Cuantizaciones GGUF de Qwen2.5-Coder-7B-Instruct | 7,6B | No disponible | GGUF, Q4/Q5/Q8 | Apache-2.0 | HuggingFace (comunidad) |
+| Cuantizaciones GGUF de Qwen2.5-Coder-7B-Instruct | 7,6B | No disponible | GGUF, Q4/Q5/Q8 | Apache-2.0 | Hugging Face (comunidad) |
 
 La comparacion honesta es limitada: no hay datos de rendimiento publicados para esta conversion, por lo que no puede afirmarse que INT8 mantenga la calidad del modelo original. La diferencia principal frente a las alternativas es el motor de ejecucion objetivo (OpenVINO en CPU/Intel frente a CUDA, llama.cpp o vLLM).
 
@@ -87,6 +87,6 @@ La comparacion honesta es limitada: no hay datos de rendimiento publicados para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nekodeus/qwen2-5-coder-7b-instruct-openvino
+- Repositorio Hugging Face: https://huggingface.co/Nekodeus/qwen2-5-coder-7b-instruct-openvino
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - No se han encontrado en la busqueda web enlaces relevantes (papers, blogs, repos o demos) asociados a este modelo.

@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su especialización médica, aunque la in
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (basado en `marin-community/marin-8b-base`, con etiquetas "llama" en HuggingFace) |
+| Arquitectura | no disponible (basado en `marin-community/marin-8b-base`, con etiquetas "llama" en Hugging Face) |
 | Parametros totales | 8.030.261.248 |
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su especialización médica, aunque la in
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning completo (full) del modelo base `marin-community/marin-8b-base`. Aunque no se especifica la arquitectura exacta, las etiquetas de HuggingFace incluyen "llama", lo que sugiere una arquitectura tipo Llama, pero no se puede confirmar sin documentación adicional. El entrenamiento se realizó con el framework Transformers (versión 5.7.0) y PyTorch 2.13.0+cu130, utilizando el dataset `capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_cap_b4000_s0`. Los hiperparámetros incluyen una tasa de aprendizaje de 1e-05, batch size total de 64 (con acumulación de gradientes), optimizador AdamW y scheduler cosine con warmup del 3% de los pasos, durante 1 época. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
+El modelo es un fine-tuning completo (full) del modelo base `marin-community/marin-8b-base`. Aunque no se especifica la arquitectura exacta, las etiquetas de Hugging Face incluyen "llama", lo que sugiere una arquitectura tipo Llama, pero no se puede confirmar sin documentación adicional. El entrenamiento se realizó con el framework Transformers (versión 5.7.0) y PyTorch 2.13.0+cu130, utilizando el dataset `capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_cap_b4000_s0`. Los hiperparámetros incluyen una tasa de aprendizaje de 1e-05, batch size total de 64 (con acumulación de gradientes), optimizador AdamW y scheduler cosine con warmup del 3% de los pasos, durante 1 época. No se menciona el uso de RLHF, DPO u otras técnicas de alineación.
 
 ## Capacidades
 
@@ -69,5 +69,5 @@ No disponible. No se han publicado comparaciones con otros modelos de tamaño si
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b4000_s0)
+- [Modelo en Hugging Face](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_cap_b4000_s0)
 - [Modelo base marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)

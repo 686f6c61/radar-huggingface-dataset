@@ -111,11 +111,11 @@ Las cifras comparadas no son estrictamente equivalentes: los valores de los cone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-4B
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-4B
 - Encoder congelado: https://huggingface.co/adventists-ai/Qwen3-ASR-0.6B-Encoder
 - LLM congelado: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de codigo y scripts: https://github.com/adventists-ai/duplexjev
-- Organizacion en HuggingFace (resto de conectores de la familia): https://huggingface.co/adventists-ai
+- Organizacion en Hugging Face (resto de conectores de la familia): https://huggingface.co/adventists-ai
 - Variante paralinguistica sobre Qwen3-32B: https://huggingface.co/adventists-ai/DuplexJev-A-Para-Qwen3-ASR-0.6B-Qwen3-32B
 - Variante de emocion sobre Qwen3-32B: https://huggingface.co/adventists-ai/DuplexJev-B-Emotion-Qwen3-ASR-0.6B-Qwen3-32B
 - Repositorio de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR

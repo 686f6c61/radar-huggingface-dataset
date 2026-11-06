@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-TIES_Ext_B es un modelo de lenguaje de 8.030.261.248 parámetros (aproximadamente 8,03 mil millones) publicado en HuggingFace por el usuario ForSureTesterSim. No se trata de un entrenamiento desde cero, sino de una fusión (merge) de pesos generada con la herramienta mergekit aplicando el método TIES sobre el modelo base meta-llama/Llama-3.1-8B. Los tres modelos fusionados son meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B, todos ellos derivados de la misma arquitectura Llama 3.1 de 8B.
+Llama-3.1-8B-TIES_Ext_B es un modelo de lenguaje de 8.030.261.248 parámetros (aproximadamente 8,03 mil millones) publicado en Hugging Face por el usuario ForSureTesterSim. No se trata de un entrenamiento desde cero, sino de una fusión (merge) de pesos generada con la herramienta mergekit aplicando el método TIES sobre el modelo base meta-llama/Llama-3.1-8B. Los tres modelos fusionados son meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B, todos ellos derivados de la misma arquitectura Llama 3.1 de 8B.
 
 El objetivo declarado implícitamente por la configuración es combinar las capacidades conversacionales y de instrucción de los tres checkpoints ajustados (Instruct, Magpie-Align y Tülu 3) sin necesidad de reentrenar, aprovechando que comparten exactamente el mismo espacio de parámetros al derivar todos del mismo modelo base. TIES (Trim, Elect Sign & Merge) resuelve el problema de interferencia entre los deltas de distintos fine-tunings, de modo que la fusión debería retener parte del comportamiento de cada uno de los tres modelos de origen.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada en términos de adopción: el repositori
 | Tokenizer | Heredado de meta-llama/Llama-3.1-8B-Instruct (tokenizer_source) |
 | Tamaño del repositorio | 16,1 GB |
 | Pipeline | text-generation |
-| Fecha de creación | 20 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de creación | 20 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cuantización a 4 bits: aproximadamente 4,5-5,5 GB, por lo que cabe en GPU de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070. Requiere generar la cuantización, ya que el repositorio solo publica safetensors en bfloat16.
 - Caché KV: para Llama 3.1 8B con GQA (32 capas, 8 cabezas KV, dimensión de cabeza 128) la caché en fp16 ocupa del orden de 128 KB por token, es decir, unos 16 GB adicionales para llenar los 128.000 tokens de contexto. En la práctica, contextos largos exigen cuantización de la caché (FP8) o GPU de 80 GB (H100, A100 80 GB) para aprovechar toda la ventana.
 - GPU recomendadas: A100 40/80 GB o H100 para contexto largo y batching; RTX 4090 / L40S para contexto medio en fp16; RTX 3060 12 GB o superior para 4 bits con contexto corto.
-- Opciones de despliegue: vLLM y TGI (etiqueta `text-generation-inference` presente en el repositorio), SGLang, HuggingFace Transformers, y llama.cpp u Ollama previa conversión a GGUF por parte del usuario.
+- Opciones de despliegue: vLLM y TGI (etiqueta `text-generation-inference` presente en el repositorio), SGLang, Hugging Face Transformers, y llama.cpp u Ollama previa conversión a GGUF por parte del usuario.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo para este checkpoint.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | ForSureTesterSim/Llama-3.1-8B-TIES_Ext_B | 8,03 B | 128k (heredado, no confirmado en la card) | Fusión TIES de tres fine-tunings sobre Llama-3.1-8B | No disponible en la card; base bajo Llama 3.1 Community License | 0 descargas, 0 likes, solo safetensors bf16 |
 | meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k | Fine-tuning de instrucciones oficial | Llama 3.1 Community License | Ampliamente desplegado; ecosistema de cuantizaciones maduro |
 | allenai/Llama-3.1-Tulu-3.1-8B | 8,03 B | 128k | Post-entrenamiento abierto (SFT + DPO/RLVR) con recetas y datos publicados | Llama 3.1 Community License (con términos de Allen AI) | Modelo documentado con informes de evaluación propios |
-| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03 B | 128k | Alineación con datos sintéticos generados por Magpie | No disponible en la información proporcionada | Repositorio público en HuggingFace |
+| Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 | 8,03 B | 128k | Alineación con datos sintéticos generados por Magpie | No disponible en la información proporcionada | Repositorio público en Hugging Face |
 
 Los cuatro modelos comparten arquitectura y número de parámetros, por lo que la diferencia real está en el proceso de ajuste y en la documentación/evaluación asociada. El modelo objeto de esta ficha es el único de la tabla sin licencia declarada, sin idiomas declarados y sin resultados publicados, y cuenta con cero descargas frente a la adopción amplia de los otros tres. No se dispone de comparaciones de rendimiento cuantitativas entre ellos en la información proporcionada.
 
@@ -95,7 +95,7 @@ Los cuatro modelos comparten arquitectura y número de parámetros, por lo que l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-TIES_Ext_B
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-TIES_Ext_B
 - Paper del método TIES (Trim, Elect Sign & Merge): https://arxiv.org/abs/2306.01708
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

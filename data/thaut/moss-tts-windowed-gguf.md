@@ -89,7 +89,7 @@ La ventaja diferencial de este repositorio no es la calidad acústica, que no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thaut/moss-tts-windowed-gguf
+- Repositorio Hugging Face: https://huggingface.co/thaut/moss-tts-windowed-gguf
 - Proyecto de conversión y fork de llama.cpp: https://github.com/thautwarm/moss-tts-windowed
 - Modelo original: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5
 - Tokenizer de audio: https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer

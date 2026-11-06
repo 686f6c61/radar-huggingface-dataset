@@ -56,8 +56,8 @@ Los siguientes requisitos son estimaciones para el modelo base Qwen2.5-7B-Instru
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct | 7B | No disponible | No disponible | HuggingFace |
-| Qwen2.5-7B-Instruct-dragon_plB-STEER1.0-ft4.42 | 7B | No disponible | No disponible | HuggingFace |
+| Qwen2.5-7B-Instruct | 7B | No disponible | No disponible | Hugging Face |
+| Qwen2.5-7B-Instruct-dragon_plB-STEER1.0-ft4.42 | 7B | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos adicionales para comparar con otros modelos de la misma categoría.
 
@@ -71,6 +71,6 @@ No se dispone de datos adicionales para comparar con otros modelos de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_plB-STEER1.0-ft4.42
+- Hugging Face: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_plB-STEER1.0-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - TRL: https://github.com/huggingface/trl

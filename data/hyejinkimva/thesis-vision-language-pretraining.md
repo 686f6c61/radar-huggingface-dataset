@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `hyejinkimva`, no contiene un modelo de aprendizaje automático, sino un conjunto de notas de investigación y un esbozo de experimento sobre *Vision Language Pretraining* (VLP). La model card lo describe explícitamente como un recurso exploratorio: incluye el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, benchmarks públicos sugeridos, comprobaciones de reproducibilidad y referencias bibliográficas. No se incluye ningún checkpoint entrenado, código ejecutable ni resultados experimentales.
+Este repositorio de Hugging Face, publicado por el usuario `hyejinkimva`, no contiene un modelo de aprendizaje automático, sino un conjunto de notas de investigación y un esbozo de experimento sobre *Vision Language Pretraining* (VLP). La model card lo describe explícitamente como un recurso exploratorio: incluye el alcance de una pregunta de investigación, posibles factores de confusión, una propuesta de comparación con líneas base, benchmarks públicos sugeridos, comprobaciones de reproducibilidad y referencias bibliográficas. No se incluye ningún checkpoint entrenado, código ejecutable ni resultados experimentales.
 
 El repositorio tiene un tamaño de 0.0 GB y un único archivo `safetensors` de 33.088 bytes, que probablemente sea un marcador de posición o un artefacto de prueba, no un modelo funcional. La licencia es MIT, lo que permite su reutilización con atribución, pero los términos de los datos externos mencionados en las notas deben revisarse por separado. Su relevancia actual radica en servir como punto de partida para investigadores que quieran diseñar experimentos rigurosos en VLP, evitando afirmaciones no verificadas.
 
@@ -66,7 +66,7 @@ No procede comparar con modelos, ya que no es un modelo. Como recurso de referen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hyejinkimva/thesis-vision-language-pretraining
+- Repositorio en Hugging Face: https://huggingface.co/hyejinkimva/thesis-vision-language-pretraining
 - Survey sobre VLP (arXiv 2210.09263): https://arxiv.org/abs/2210.09263
 - Blog de Hugging Face sobre VLP: https://huggingface.co/blog/vision_language_pretraining
 - Paper "Scalable Visual Pretraining for Language Intelligence" (arXiv 2607.09657): https://arxiv.org/abs/2607.09657

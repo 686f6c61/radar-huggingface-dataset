@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-MLX (este) | 9,41 B | 262.144 | 4-bit MLX | apache-2.0 | HuggingFace, MLX |
-| Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic (GGUF, DavidAU) | 9,41 B | 262.144 | GGUF (varias) | apache-2.0 (heredada) | HuggingFace, llama.cpp |
-| nightmedia/Qwen3.5-9B-DS9-USS-Defiant-mxfp4-mlx | 9,41 B | 262.144 | mxfp4 MLX | apache-2.0 | HuggingFace, MLX |
-| Qwen3.5-9B base (upstream) | 9,41 B | 262.144 | bf16 y varias | apache-2.0 | HuggingFace |
+| Qwen3.5-9B-MLX (este) | 9,41 B | 262.144 | 4-bit MLX | apache-2.0 | Hugging Face, MLX |
+| Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic (GGUF, DavidAU) | 9,41 B | 262.144 | GGUF (varias) | apache-2.0 (heredada) | Hugging Face, llama.cpp |
+| nightmedia/Qwen3.5-9B-DS9-USS-Defiant-mxfp4-mlx | 9,41 B | 262.144 | mxfp4 MLX | apache-2.0 | Hugging Face, MLX |
+| Qwen3.5-9B base (upstream) | 9,41 B | 262.144 | bf16 y varias | apache-2.0 | Hugging Face |
 
 Los tres primeros comparten exactamente el mismo conjunto de pesos; las diferencias son de formato y esquema de cuantización. Frente a la variante mxfp4 de nightmedia, este repo 4-bit ofrece menor perplejidad (8,5816 frente a 8,9443) a costa de 0,4 GB más. Frente a la variante GGUF, este repo no incluye los pesos MTP y por tanto no puede aprovechar la decodificación especulativa. No se dispone de comparativas de rendimiento en tareas (benchmarks) frente a otros modelos de la misma categoría.
 
@@ -95,7 +95,7 @@ Los tres primeros comparten exactamente el mismo conjunto de pesos; las diferenc
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/phucngodev/Qwen3.5-9B-MLX
+- Hugging Face del modelo: https://huggingface.co/phucngodev/Qwen3.5-9B-MLX
 - Modelo base (bf16): https://huggingface.co/nightmedia/Qwen3.5-9B-DS9-USS-Defiant
 - Variante GGUF de DavidAU: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Variante mxfp4 de nightmedia: https://huggingface.co/nightmedia/Qwen3.5-9B-DS9-USS-Defiant-mxfp4-mlx

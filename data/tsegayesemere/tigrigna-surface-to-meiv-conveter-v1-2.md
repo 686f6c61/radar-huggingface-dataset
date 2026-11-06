@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tsegayesemere/tigrigna-surface-to-meiv-conveter-v1.2` es un checkpoint de la familia T5 publicado en HuggingFace por el usuario Tsegayesemere. Por su nombre, el modelo parece estar diseñado para convertir texto en tigriña desde una representación "superficial" (probablemente ortografía latina o una transcripción de superficie) hacia una representación denominada "meiv". Sin embargo, la model card publicada es la plantilla automática de HuggingFace y no contiene ni una sola sección completada: no hay descripción, ni datos de entrenamiento, ni evaluación, ni instrucciones de uso.
+El modelo `Tsegayesemere/tigrigna-surface-to-meiv-conveter-v1.2` es un checkpoint de la familia T5 publicado en Hugging Face por el usuario Tsegayesemere. Por su nombre, el modelo parece estar diseñado para convertir texto en tigriña desde una representación "superficial" (probablemente ortografía latina o una transcripción de superficie) hacia una representación denominada "meiv". Sin embargo, la model card publicada es la plantilla automática de Hugging Face y no contiene ni una sola sección completada: no hay descripción, ni datos de entrenamiento, ni evaluación, ni instrucciones de uso.
 
 Técnicamente, el checkpoint contiene 299.637.760 parámetros (aproximadamente 300 M), almacenados en safetensors con un tamaño de repositorio de 1,2 GB, lo que corresponde a pesos en precisión fp32. La librería declarada es `transformers` y la arquitectura es T5 (`text2text-generation`), es decir, un transformer encoder-decoder denso orientado a tareas de secuencia a secuencia. No es un modelo MoE y no se ha documentado ninguna innovación arquitectónica propia.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada pero potencialmente interesante: los recursos d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder-decoder tipo T5 (etiqueta `t5` en HuggingFace) |
+| Arquitectura | Transformer encoder-decoder tipo T5 (etiqueta `t5` en Hugging Face) |
 | Parametros totales | 299.637.760 (~300 M) |
 | Parametros activos | No aplica: modelo denso, no es MoE |
 | Longitud de contexto | No disponible (la familia T5 se entrenó habitualmente con 512 tokens, pero este dato no está confirmado para este checkpoint) |
@@ -32,7 +32,7 @@ La etiqueta `t5` y la tarea `text2text-generation` sitúan al modelo en la famil
 
 No hay absolutamente ningún dato sobre el entrenamiento: la model card deja en `[More Information Needed]` el conjunto de datos, el número de tokens, la composición del corpus, el régimen de precisión (fp32, fp16, bf16), la existencia de fases de RLHF o DPO, la inicialización (si partió de `t5-base`, `mt5-base` o un modelo entrenado desde cero) y el hardware utilizado. Tampoco se documenta si hubo aumento de datos, normalización Unicode previa o alineación a nivel de carácter o de subpalabra. Cualquier afirmación sobre el proceso de entrenamiento sería especulativa.
 
-El tag `arxiv:1910.09700` que aparece en los metadatos no es un paper sobre el modelo: corresponde a Lacoste et al. (2019), el artículo del calculador de emisiones de carbono que la plantilla de HuggingFace cita por defecto en la sección de impacto medioambiental. Por tanto, no debe interpretarse como referencia técnica del checkpoint.
+El tag `arxiv:1910.09700` que aparece en los metadatos no es un paper sobre el modelo: corresponde a Lacoste et al. (2019), el artículo del calculador de emisiones de carbono que la plantilla de Hugging Face cita por defecto en la sección de impacto medioambiental. Por tanto, no debe interpretarse como referencia técnica del checkpoint.
 
 ## Capacidades
 
@@ -67,14 +67,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en int8: aproximadamente 0,3 GB de pesos; cuantizaciones de 4 bits no están publicadas y requerirían generarlas localmente.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente (GTX 1650, RTX 3050, RTX 4060, RTX 4090, A100, H100). El modelo está enormemente sobredimensionado respecto a la GPU, por lo que el cuello de botella será el preprocesado, no el cálculo.
 - Cabe holgadamente en GPU consumer: sí, en cualquier tarjeta moderna con 4 GB o más, e incluso en CPU para uso por lotes.
-- Opciones de despliegue: `transformers` con PyTorch (ruta nativa), `text-generation-inference` (el repo está marcado como `endpoints_compatible`, por lo que puede desplegarse en HuggingFace Inference Endpoints), `vLLM` con soporte de encoder-decoder, `TGI` y `ONNX Runtime`. Para `llama.cpp`/`Ollama` haría falta una conversión previa a GGUF que el autor no proporciona.
+- Opciones de despliegue: `transformers` con PyTorch (ruta nativa), `text-generation-inference` (el repo está marcado como `endpoints_compatible`, por lo que puede desplegarse en Hugging Face Inference Endpoints), `vLLM` con soporte de encoder-decoder, `TGI` y `ONNX Runtime`. Para `llama.cpp`/`Ollama` haría falta una conversión previa a GGUF que el autor no proporciona.
 - Latencia y throughput: no disponibles. Como referencia de orden de magnitud, un encoder-decoder de 300 M procesa típicamente cientos de frases cortas por segundo en una GPU moderna y decenas por segundo en CPU, pero son estimaciones genéricas no verificadas para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tigrigna-surface-to-meiv-conveter-v1.2 | 299,6 M | No disponible | T5 encoder-decoder | No disponible | HuggingFace, 0 descargas |
+| tigrigna-surface-to-meiv-conveter-v1.2 | 299,6 M | No disponible | T5 encoder-decoder | No disponible | Hugging Face, 0 descargas |
 | google-t5/t5-base | 220 M | 512 tokens | T5 encoder-decoder | Apache 2.0 | Ampliamente disponible y documentado |
 | google/mt5-base | 580 M | 512 tokens | T5 encoder-decoder multilingüe | Apache 2.0 | Ampliamente disponible; cubre más de 100 idiomas, tigriña no confirmado |
 | facebook/nllb-200-distilled-600M | 600 M | 1024 tokens | Transformer encoder-decoder de traducción | CC-BY-NC 4.0 (uso no comercial) | Ampliamente disponible; 200 idiomas, tigriña incluida |
@@ -96,7 +96,7 @@ La comparación relevante no es de rendimiento —no hay datos para este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tsegayesemere/tigrigna-surface-to-meiv-conveter-v1.2
+- Modelo en Hugging Face: https://huggingface.co/Tsegayesemere/tigrigna-surface-to-meiv-conveter-v1.2
 - Paper citado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono, no sobre el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental de ML referenciado en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo y blog del autor: no disponibles en la información proporcionada.

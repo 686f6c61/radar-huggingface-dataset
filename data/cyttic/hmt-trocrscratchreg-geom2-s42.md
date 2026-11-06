@@ -82,12 +82,12 @@ La comparación con TrOCR de Microsoft es solo orientativa: aquel está preentre
 - Riesgo de alucinación en la decodificación CTC: sin modelo de lenguaje, el modelo puede producir secuencias gramaticalmente improbables o caracteres espurios en imágenes ruidosas.
 - No se documentan sesgos específicos, pero al ser un corpus único y pequeño, los sesgos de los escribientes y del proceso de digitalización se transfieren al modelo.
 - Licencia MIT: permite uso comercial y modificación con atribución, sin restricciones adicionales conocidas; aun así, la calidad del modelo en producción exigiría validación sobre el dominio objetivo.
-- No hay pipeline declarado en HuggingFace, por lo que la integración requiere conocer la arquitectura exacta y el preprocesado de imágenes del estudio original.
+- No hay pipeline declarado en Hugging Face, por lo que la integración requiere conocer la arquitectura exacta y el preprocesado de imágenes del estudio original.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta: es un artefacto de investigación sin validación comunitaria independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratchreg-geom2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratchreg-geom2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` en el repositorio del modelo
 - Estudio de referencia: `htr-metrics-transfer` (citado en la model card; no se proporciona URL)

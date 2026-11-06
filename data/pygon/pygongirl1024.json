@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Pygon/PygonGirl1024",
+  "slug": "pygon-pygongirl1024",
+  "author": "Pygon",
+  "url": "https://huggingface.co/Pygon/PygonGirl1024",
+  "created_at": "2026-11-05T09:27:33.000Z",
+  "updated_at": "2026-11-06T04:40:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "moss-image",
+    "character",
+    "portrait",
+    "zh",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299024391,
+  "storage_human": "299 MB",
+  "base_model": "MOSS-Image",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pygon/PygonGirl1024 · Hugging Face",
+      "url": "https://huggingface.co/Pygon/PygonGirl1024",
+      "snippet": "Pygon / PygonGirl1024 Like 0 Model card FilesFiles and versions xet Community Copy to bucket No model card Downloads last month -"
+    },
+    {
+      "title": "PygonGirl1024 - a Hugging Face Space by Pygon",
+      "url": "https://huggingface.co/spaces/Pygon/PygonGirl1024",
+      "snippet": "This web page lets you search, sort, and preview LoRA files that adapt image‑generation models to specific characters. Just type a name, select a sort order, and click any item to see a larger prev..."
+    }
+  ]
+}

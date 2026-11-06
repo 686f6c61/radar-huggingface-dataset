@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Razonamiento (thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-1B-Claude-Opus-Fable5-Thinking (este) | ~1,08 B | GGUF (F16 a Q2_K) | Sí | Apache 2.0 | HuggingFace, 421 descargas |
-| Qwen2.5-1.5B-Instruct | ~1,5 B | safetensors, GGUF (comunitario) | No (variante estándar) | Qwen Research (no Apache puro) / Apache 2.0 según variante | HuggingFace |
-| Llama 3.2 1B Instruct | ~1,24 B | safetensors, GGUF (oficial) | No | Llama 3.2 Community License | HuggingFace |
-| SmolLM2 1.7B Instruct | ~1,7 B | safetensors, GGUF | No | Apache 2.0 | HuggingFace |
+| MiniCPM5-1B-Claude-Opus-Fable5-Thinking (este) | ~1,08 B | GGUF (F16 a Q2_K) | Sí | Apache 2.0 | Hugging Face, 421 descargas |
+| Qwen2.5-1.5B-Instruct | ~1,5 B | safetensors, GGUF (comunitario) | No (variante estándar) | Qwen Research (no Apache puro) / Apache 2.0 según variante | Hugging Face |
+| Llama 3.2 1B Instruct | ~1,24 B | safetensors, GGUF (oficial) | No | Llama 3.2 Community License | Hugging Face |
+| SmolLM2 1.7B Instruct | ~1,7 B | safetensors, GGUF | No | Apache 2.0 | Hugging Face |
 
 Comparado con sus alternativas, este modelo destaca por incorporar razonamiento tipo "thinking" en el segmento de ~1 B y por una licencia Apache 2.0 sin restricciones, aunque carece de la madurez, documentación y benchmarks publicados de las variantes oficiales de Qwen, Llama o Hugging Face.
 

@@ -44,7 +44,7 @@ El entrenamiento se realizo con MLX, el framework de Apple para aprendizaje auto
 - Prototipado rapido de chatbots con estilo directo: al reducir los rechazos del modelo base, resulta util para experimentar con respuestas mas concisas en entornos de desarrollo.
 - Generacion de texto en aplicaciones de escritorio: su tamano reducido (1,7 GB) permite empaquetarlo dentro de aplicaciones nativas de macOS que requieran inferencia local.
 - Filtrado y resumen de textos cortos: con 1.500 millones de parametros, puede resumir parrafos o extraer informacion de documentos breves en tareas de baja exigencia.
-- Educacion y experimentacion con LoRA: sirve como ejemplo practico de como ajustar un modelo Qwen2.5-1.5B con MLX y publicar el adaptador en HuggingFace.
+- Educacion y experimentacion con LoRA: sirve como ejemplo practico de como ajustar un modelo Qwen2.5-1.5B con MLX y publicar el adaptador en Hugging Face.
 - Base para nuevos ajustes finos: al ser un adaptador LoRA sobre un modelo cuantizado, otros desarrolladores pueden tomarlo como punto de partida para sus propias especializaciones.
 - Generacion de contenido creativo breve: cuentos, descripciones o dialogos de extension limitada que no requieran contexto largo ni conocimiento especializado.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ASTARX | 1.5B (base) + LoRA | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | apache-2.0 | HuggingFace, ampliamente usado |
-| Llama 3.2 1B Instruct | 1B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado |
-| Gemma 2 2B Instruct | 2B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente usado |
+| ASTARX | 1.5B (base) + LoRA | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32.768 tokens | apache-2.0 | Hugging Face, ampliamente usado |
+| Llama 3.2 1B Instruct | 1B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado |
+| Gemma 2 2B Instruct | 2B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente usado |
 
 Los tres modelos comparables cuentan con evaluaciones publicas y comunidades activas; ASTARX, en cambio, no ofrece benchmarks ni adopcion verificable, por lo que la comparacion se limita a parametros, contexto y licencia.
 
@@ -77,15 +77,15 @@ Los tres modelos comparables cuentan con evaluaciones publicas y comunidades act
 - Riesgo de alucinacion: elevado, como en cualquier modelo de 1.500 millones de parametros; no se han publicado evaluaciones de fidelidad.
 - Limitaciones de contexto e idioma: el adaptador no declara idiomas soportados ni longitud de contexto; la calidad fuera del ingles y del chino (idiomas principales del base) no esta verificada.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial, pero el modelo base y el ecosistema MLX pueden imponer condiciones adicionales que conviene revisar.
-- Ausencia de validacion: cero descargas y cero me gusta en HuggingFace implican que el modelo no ha sido probado por terceros; su comportamiento en produccion es desconocido.
+- Ausencia de validacion: cero descargas y cero me gusta en Hugging Face implican que el modelo no ha sido probado por terceros; su comportamiento en produccion es desconocido.
 - Reduccion de rechazos: la propiedad "uncensored" declarada por el autor puede implicar respuestas inapropiadas en dominios sensibles; requiere capas de moderacion adicionales si se despliega de cara al publico.
 - Formato restringido: al estar publicado como adaptador LoRA sobre un modelo cuantizado a 4 bits en MLX, la portabilidad a otros frameworks no es directa y puede requerir conversion.
 - Sin soporte de tool calling ni agentes confirmado: no se debe asumir su uso en pipelines que dependan de function calling.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ASTARX/ASTARX
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
+- Modelo en Hugging Face: https://huggingface.co/ASTARX/ASTARX
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Qwen2.5-1.5B-Instruct-4bit
 - Repositorio del modelo original Qwen2.5: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Framework MLX: https://github.com/ml-explore/mlx
 - Herramienta mlx_lm: https://github.com/ml-explore/mlx-examples/tree/main/llms

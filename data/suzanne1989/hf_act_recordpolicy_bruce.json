@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "suzanne1989/hf_act_recordpolicy_bruce",
+  "slug": "suzanne1989-hf_act_recordpolicy_bruce",
+  "author": "suzanne1989",
+  "url": "https://huggingface.co/suzanne1989/hf_act_recordpolicy_bruce",
+  "created_at": "2026-11-02T10:32:45.000Z",
+  "updated_at": "2026-11-02T12:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:suzanne1989/record-bruce",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3717197996,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "suzanne1989/hf_act_recordpolicy_bruce-5 · Hugging Face",
+      "url": "https://huggingface.co/suzanne1989/hf_act_recordpolicy_bruce-5",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot."
+    },
+    {
+      "title": "suzanne1989/hf_act_recordpolicy_bruce-3 at main - Hugging Face",
+      "url": "https://huggingface.co/suzanne1989/hf_act_recordpolicy_bruce-3/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main hf_act_recordpolicy_bruce-3 6.4 GB Ctrl+K Ctrl+K 1 contributor History:14 commits suzanne1989 Upload DataProcessorPipeline 4090ce2 verifiedabout 5 hours ago checkpointscheckpoint 050000about 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 hours ago README.md 5.6 kBUpload policy weights, train config and readmeabout 5 hours ago config.json 1.74 ..."
+    }
+  ]
+}

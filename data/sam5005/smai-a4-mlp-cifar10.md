@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smai-a4-mlp-cifar10` es un perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicado en HuggingFace por el usuario Sam5005 en el contexto de la asignatura SMAI (aparentemente un trabajo academico, A4, atribuido a "samaksh.ujjawal"). No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imagenes de 32x32x3 en 10 categorias, con una arquitectura completamente conectada de cuatro capas (3072 -> 512 -> 256 -> 128 -> 10) y activacion ReLU en las capas ocultas.
+`smai-a4-mlp-cifar10` es un perceptron multicapa (MLP) entrenado sobre el conjunto de datos CIFAR-10, publicado en Hugging Face por el usuario Sam5005 en el contexto de la asignatura SMAI (aparentemente un trabajo academico, A4, atribuido a "samaksh.ujjawal"). No se trata de un modelo de lenguaje ni de un modelo generativo: es un clasificador de imagenes de 32x32x3 en 10 categorias, con una arquitectura completamente conectada de cuatro capas (3072 -> 512 -> 256 -> 128 -> 10) y activacion ReLU en las capas ocultas.
 
 El modelo resuelve exclusivamente la tarea de clasificacion multiclase sobre CIFAR-10, alcanzando una precision de test de 0,5360 sobre las 10.000 imagenes del split de evaluacion. Los pesos se distribuyen en un fichero `model.npz` en formato NumPy (no safetensors ni GGUF), con la convencion de que las matrices `W` tienen forma `(in, out)` y los logits se calculan como `h @ W + b`.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smai-a4-mlp-cifar10 | ~1,7 M (estimado) | no aplica | 0,5360 en CIFAR-10 test | no disponible | HuggingFace (`Sam5005/smai-a4-mlp-cifar10`) |
+| smai-a4-mlp-cifar10 | ~1,7 M (estimado) | no aplica | 0,5360 en CIFAR-10 test | no disponible | Hugging Face (`Sam5005/smai-a4-mlp-cifar10`) |
 | LeNet-5 (1998) | ~60 K | no aplica | ~0,70 en CIFAR-10 (referencia historica) | no disponible | Multiples implementaciones publicas |
 | ResNet-20 (2016) | ~0,27 M | no aplica | ~0,91 en CIFAR-10 | MIT (implementaciones comunes) | Multiples repositorios |
-| ViT pequeno en CIFAR-10 | variable | no aplica | ~0,90+ con preentrenamiento | variable | HuggingFace |
+| ViT pequeno en CIFAR-10 | variable | no aplica | ~0,90+ con preentrenamiento | variable | Hugging Face |
 
 Las cifras de LeNet-5, ResNet-20 y ViT son referencias generales de la literatura y no proceden de la informacion proporcionada; se incluyen solo como orientacion cualitativa. No se dispone de comparativas oficiales publicadas por el autor.
 
@@ -86,6 +86,6 @@ Las cifras de LeNet-5, ResNet-20 y ViT son referencias generales de la literatur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sam5005/smai-a4-mlp-cifar10
+- Hugging Face: https://huggingface.co/Sam5005/smai-a4-mlp-cifar10
 - Dataset CIFAR-10 (referencia): https://www.cs.toronto.edu/~kriz/cifar.html
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

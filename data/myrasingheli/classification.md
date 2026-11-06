@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`myrasingheli/classification` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura denominada "Mae" orientada a tareas de clasificación. El autor, `myrasingheli`, lo publica explícitamente como un punto de partida para pruebas de humo (*smoke tests*) y no como un modelo entrenado: la propia model card aclara que `model.safetensors` es un checkpoint de inicialización válido, pero no un checkpoint evaluado con benchmarks.
+`myrasingheli/classification` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura denominada "Mae" orientada a tareas de clasificación. El autor, `myrasingheli`, lo publica explícitamente como un punto de partida para pruebas de humo (*smoke tests*) y no como un modelo entrenado: la propia model card aclara que `model.safetensors` es un checkpoint de inicialización válido, pero no un checkpoint evaluado con benchmarks.
 
 El dato más relevante para cualquier evaluador es su tamaño: 16.576 parámetros totales según los metadatos de safetensors (aproximadamente 66 KB en fp32). Se trata, por tanto, de un esqueleto de código y configuración, no de un modelo utilizable en producción. La model card describe la escala como "large" e incluye una tabla de decisiones arquitectónicas (atención dispersa, fusión bilineal, activación swish, normalización scalenorm), pero no aporta detalles sobre capas, dimensión oculta, cabezas de atención ni datos de entrenamiento.
 
-El repositorio es relevante únicamente como referencia de implementación para quien quiera inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, o como plantilla de receta experimental (AdamW con schedule coseno). No hay resultados de benchmarks, ni idiomas declarados, ni pipeline asignado en HuggingFace, y las descargas e interacciones registradas son cero.
+El repositorio es relevante únicamente como referencia de implementación para quien quiera inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, o como plantilla de receta experimental (AdamW con schedule coseno). No hay resultados de benchmarks, ni idiomas declarados, ni pipeline asignado en Hugging Face, y las descargas e interacciones registradas son cero.
 
 ## Especificaciones tecnicas
 
@@ -90,6 +90,6 @@ No disponible. La información proporcionada no permite establecer comparaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myrasingheli/classification
+- Modelo en Hugging Face: https://huggingface.co/myrasingheli/classification
 - Archivos incluidos en el repositorio (según la model card): `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios auxiliares, demos ni espacios asociados a este modelo en la búsqueda web disponible.

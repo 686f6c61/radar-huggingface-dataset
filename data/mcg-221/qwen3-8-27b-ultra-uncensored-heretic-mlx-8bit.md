@@ -67,8 +67,8 @@ La comparación directa con Llama-3.1-8B-Instruct abliterado muestra que este mo
 - El formato MLX solo funciona en Apple Silicon, lo que limita el despliegue a esa plataforma. Para otros entornos hay que buscar versiones GGUF o FP8.
 
 ## Enlaces
-- [Repositorio HuggingFace del modelo](https://huggingface.co/McG-221/Qwen3.8-27B-Ultra-Uncensored-Heretic-mlx-8Bit)
-- [Modelo base en HuggingFace: llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/McG-221/Qwen3.8-27B-Ultra-Uncensored-Heretic-mlx-8Bit)
+- [Modelo base en Hugging Face: llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved](https://huggingface.co/llmfan46/Qwen3.8-27B-Ultra-Uncensored-Heretic-Native-MTP-Preserved)
 - [GitHub de onurburak9 con versiones MLX del mismo modelo](https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX)
 - [Build en Ollama: orcarouter/Qwen3.8-27B-Uncensored](https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored)
 - [Artículo sobre el lanzamiento de Orca Router](https://www.newsbytesapp.com/news/science/orca-router-releases-uncensored-qwen-38-27b-for-apple-silicon-macs/tldr)

@@ -65,7 +65,7 @@ No disponible. Este repositorio no es comparable con modelos multimodales desple
 
 | Elemento | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ntnguyenke/review-multimodal-generation-2024` | Notas de investigación | 33.088 (tensor en safetensors) | no disponible | MIT | Repositorio en HuggingFace |
+| `ntnguyenke/review-multimodal-generation-2024` | Notas de investigación | 33.088 (tensor en safetensors) | no disponible | MIT | Repositorio en Hugging Face |
 | Multi-modal Generative AI (arXiv 2409.14993) | Encuesta académica | no aplica | no aplica | no disponible | Preprint en arXiv |
 | Modelos MLLM tipo GPT-4V | Modelo multimodal cerrado | no disponible | no disponible | propietaria | API comercial |
 | Modelos de difusión tipo Sora | Modelo generativo cerrado | no disponible | no disponible | propietaria | Acceso limitado |
@@ -85,7 +85,7 @@ No disponible. Este repositorio no es comparable con modelos multimodales desple
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ntnguyenke/review-multimodal-generation-2024
+- Repositorio en Hugging Face: https://huggingface.co/ntnguyenke/review-multimodal-generation-2024
 - Multi-modal Generative AI: Multi-modal LLM, Diffusion and Beyond (arXiv): https://arxiv.org/abs/2409.14993
 - Versión HTML del artículo anterior: https://arxiv.org/html/2409.14993v1
 - Generalist multimodal AI: A review of architectures, challenges and opportunities (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231226003309

@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks para modelos comparables en la información
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-gr3-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-grpo-gr3-l5
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Cuantización GGUF del modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Think-GGUF
 - Adaptador SFT previo (requisito): https://huggingface.co/ssurface/cot-dialect-math-olmo3-7b-think-sft-unfiltered-l5

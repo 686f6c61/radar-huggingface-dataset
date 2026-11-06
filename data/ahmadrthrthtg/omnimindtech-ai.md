@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OMNIMINDTECH-AI es un ajuste fino (fine-tuning) publicado en HuggingFace por el usuario ahmadrthrthtg. No se trata de un modelo entrenado desde cero, sino de una adaptacion derivada de unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, es decir, una version del Llama 3.1 8B Instruct de Meta cuantizada a 4 bits y preparada para entrenamiento eficiente con la libreria Unsloth. El repositorio declara licencia apache-2.0 y un unico idioma soportado, el ingles.
+OMNIMINDTECH-AI es un ajuste fino (fine-tuning) publicado en Hugging Face por el usuario ahmadrthrthtg. No se trata de un modelo entrenado desde cero, sino de una adaptacion derivada de unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit, es decir, una version del Llama 3.1 8B Instruct de Meta cuantizada a 4 bits y preparada para entrenamiento eficiente con la libreria Unsloth. El repositorio declara licencia apache-2.0 y un unico idioma soportado, el ingles.
 
 La model card es extremadamente escueta: se limita a indicar el autor, la licencia y el modelo base, ademas de una mencion al uso de Unsloth para entrenar "2x mas rapido". No se documentan el dataset de entrenamiento, el numero de tokens, la metodologia (SFT, DPO, RLHF) ni hiperparametros. El tamano del repositorio es de 0,7 GB, lo que es coherente con un conjunto de adaptadores LoRA mas que con pesos fusionados en precision completa.
 
@@ -61,7 +61,7 @@ Como referencia, el modelo base Llama 3.1 8B Instruct si cuenta con resultados p
   - 4 bits: en torno a 5-6 GB, con incremento notable de la cache KV si se usa la ventana de 128.000 tokens.
 - GPU recomendadas: para FP16, A100 40 GB, H100 o L40S. Para 4 bits, RTX 3090, RTX 4090, RTX 4080 o A10G.
 - Compatibilidad con GPU de consumo: si, en cuantizacion de 4 bits cabe en GPU con 8-12 GB de VRAM (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070). Con contexto muy largo la cache KV puede exceder la memoria disponible.
-- Opciones de despliegue: llama.cpp y Ollama para cuantizaciones GGUF (requiere convertir el modelo), vLLM y HuggingFace TGI para despliegue en servidor con safetensors, y transformers con bitsandbytes para 4 bits. La etiqueta `text-generation-inference` del repositorio sugiere compatibilidad con TGI.
+- Opciones de despliegue: llama.cpp y Ollama para cuantizaciones GGUF (requiere convertir el modelo), vLLM y Hugging Face TGI para despliegue en servidor con safetensors, y transformers con bitsandbytes para 4 bits. La etiqueta `text-generation-inference` del repositorio sugiere compatibilidad con TGI.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones para este modelo.
 - Nota importante: dado que el repositorio pesa 0,7 GB, es probable que contenga solo adaptadores LoRA y no pesos completos. En ese caso, la inferencia directa requiere cargar primero el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit` y aplicar despues el adaptador. Conviene verificar el contenido del repositorio antes de planificar el despliegue.
 
@@ -69,10 +69,10 @@ Como referencia, el modelo base Llama 3.1 8B Instruct si cuenta con resultados p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| OMNIMINDTECH-AI | 8B (heredados) | 128k (heredado, no confirmado) | apache-2.0 declarada (base sujeta a Llama 3.1 Community License) | HuggingFace, 0 descargas | no disponible |
-| Meta Llama 3.1 8B Instruct | 8.03B | 128k | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Si, benchmarks publicos de Meta |
-| Mistral 7B Instruct | 7.3B | 32k | Apache 2.0 | HuggingFace y multiples proveedores | Si, benchmarks publicos |
-| Qwen2.5 7B Instruct | 7.6B | 128k | Apache 2.0 (la mayoria de variantes) | HuggingFace | Si, benchmarks publicos |
+| OMNIMINDTECH-AI | 8B (heredados) | 128k (heredado, no confirmado) | apache-2.0 declarada (base sujeta a Llama 3.1 Community License) | Hugging Face, 0 descargas | no disponible |
+| Meta Llama 3.1 8B Instruct | 8.03B | 128k | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Si, benchmarks publicos de Meta |
+| Mistral 7B Instruct | 7.3B | 32k | Apache 2.0 | Hugging Face y multiples proveedores | Si, benchmarks publicos |
+| Qwen2.5 7B Instruct | 7.6B | 128k | Apache 2.0 (la mayoria de variantes) | Hugging Face | Si, benchmarks publicos |
 
 La diferencia clave no es tecnica sino de trazabilidad: los tres modelos alternativos cuentan con documentacion de entrenamiento, evaluaciones publicas y una comunidad activa, mientras que OMNIMINDTECH-AI carece de todo ello. En igualdad de tamano, cualquier eleccion de produccion deberia recaer en el modelo base original o en una alternativa documentada, salvo que exista un motivo concreto para usar este ajuste fino.
 
@@ -90,8 +90,8 @@ La diferencia clave no es tecnica sino de trazabilidad: los tres modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmadrthrthtg/OMNIMINDTECH-AI
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/ahmadrthrthtg/OMNIMINDTECH-AI
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: https://llama.meta.com/llama3_1/license/

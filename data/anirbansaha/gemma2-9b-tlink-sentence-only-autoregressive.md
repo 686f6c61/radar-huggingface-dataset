@@ -78,11 +78,11 @@ No se dispone de resultados de otros modelos sobre el conjunto de test de TLINK 
 
 | Modelo | Parámetros | Contexto | Licencia | Ajustado para TLINK | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma2-9b-tlink-sentence-only-autoregressive | 9,24 B | 8.192 tokens | Gemma Terms of Use | Sí, full fine-tuning | HuggingFace, safetensors |
-| google/gemma-2-9b-it | 9,24 B | 8.192 tokens | Gemma Terms of Use | No | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | No | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | No | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | No | HuggingFace |
+| gemma2-9b-tlink-sentence-only-autoregressive | 9,24 B | 8.192 tokens | Gemma Terms of Use | Sí, full fine-tuning | Hugging Face, safetensors |
+| google/gemma-2-9b-it | 9,24 B | 8.192 tokens | Gemma Terms of Use | No | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | No | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 B | 131.072 tokens | Apache 2.0 | No | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | No | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se dispone de resultados de otros modelos sobre el conjunto de test de TLINK 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnirbanSaha/gemma2-9b-tlink-sentence-only-autoregressive
+- Modelo en Hugging Face: https://huggingface.co/AnirbanSaha/gemma2-9b-tlink-sentence-only-autoregressive
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/AnirbanSaha/tlink-classification-sentence-only
 - Términos de licencia Gemma: https://ai.google.dev/gemma/terms

@@ -72,5 +72,5 @@ No disponible. No se puede comparar un documento de texto con modelos de compren
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/robi-nson/paper_023392364_video_understanding
+- Repositorio de Hugging Face: https://huggingface.co/robi-nson/paper_023392364_video_understanding
 - Artículo de referencia sobre video understanding con LLMs: https://arxiv.org/abs/2312.17432

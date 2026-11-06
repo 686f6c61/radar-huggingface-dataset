@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario saddaasf bajo el identificador `saddaasf/MyAwesomeModel-TestRepository`. La model card describe un modelo orientado a razonamiento, generacion de codigo y matematicas, con mejoras respecto a una version anterior en profundidad de razonamiento e inferencia, y menciona una reduccion de la tasa de alucinacion y un mejor soporte de function calling. Segun el propio autor, el checkpoint seleccionado (`step_1000`) alcanza una puntuacion global ponderada de 0,710 sobre 15 categorias de benchmark.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario saddaasf bajo el identificador `saddaasf/MyAwesomeModel-TestRepository`. La model card describe un modelo orientado a razonamiento, generacion de codigo y matematicas, con mejoras respecto a una version anterior en profundidad de razonamiento e inferencia, y menciona una reduccion de la tasa de alucinacion y un mejor soporte de function calling. Segun el propio autor, el checkpoint seleccionado (`step_1000`) alcanza una puntuacion global ponderada de 0,710 sobre 15 categorias de benchmark.
 
 Sin embargo, la informacion disponible es contradictoria y muy limitada. Las etiquetas del repositorio indican `bert` y `feature-extraction`, lo que no concuerda con el contenido de la model card, que describe un modelo generativo conversacional con modo de razonamiento. El nombre del repositorio incluye el sufijo "TestRepository" y el modelo acumula 0 descargas y 0 likes, lo que sugiere que se trata de un repositorio de pruebas y no de un modelo en produccion.
 
@@ -80,7 +80,7 @@ Nota: los modelos comparativos "Model1", "Model2" y "Model1-v2" no se identifica
 - VRAM estimada para inferencia: no disponible (se desconoce el numero de parametros).
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: no disponible; la model card remite a un "code repository" externo sin enlace directo, y el modelo esta etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: no disponible; la model card remite a un "code repository" externo sin enlace directo, y el modelo esta etiquetado como `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles; el autor indica un consumo medio de 23.000 tokens por pregunta en AIME, lo que implicaria respuestas lentas en modo razonamiento, pero sin cifras de latencia.
 
 ## Comparativa con modelos similares
@@ -109,6 +109,6 @@ No es posible establecer una comparativa fiable. La model card utiliza etiquetas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/saddaasf/MyAwesomeModel-TestRepository
-- Model card: disponible dentro del propio repositorio de HuggingFace.
+- Hugging Face: https://huggingface.co/saddaasf/MyAwesomeModel-TestRepository
+- Model card: disponible dentro del propio repositorio de Hugging Face.
 - Codigo, paper, demo y web oficial: no disponibles (la model card los menciona pero no incluye enlaces).

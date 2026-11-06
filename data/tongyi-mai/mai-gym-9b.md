@@ -12,7 +12,7 @@ La etiqueta `qwen3_5` del repositorio apunta a que el modelo deriva de la famili
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle; etiqueta `qwen3_5` en HuggingFace, compatible con la familia Qwen3.5 y con modulo de vision para entrada de capturas de pantalla |
+| Arquitectura | No disponible en detalle; etiqueta `qwen3_5` en Hugging Face, compatible con la familia Qwen3.5 y con modulo de vision para entrada de capturas de pantalla |
 | Parametros totales | 9.409.813.744 (9,41 mil millones) |
 | Parametros activos | No disponible (no se documenta que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -22,7 +22,7 @@ La etiqueta `qwen3_5` del repositorio apunta a que el modelo deriva de la famili
 | Formato de pesos | Safetensors |
 | Tamano del repositorio | 18,8 GB |
 | Fecha de publicacion | 16 de octubre de 2026 |
-| Descargas / likes en HuggingFace | 0 descargas / 5 likes en el momento de la consulta |
+| Descargas / likes en Hugging Face | 0 descargas / 5 likes en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Los datos de los modelos alternativos no forman parte de la informacion proporci
 
 | Modelo | Desarrollador | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MAI-Gym-9B | Tongyi-MAI | 9,41 mil millones | No disponible | Apache 2.0 | Pesos en safetensors en HuggingFace |
+| MAI-Gym-9B | Tongyi-MAI | 9,41 mil millones | No disponible | Apache 2.0 | Pesos en safetensors en Hugging Face |
 | UI-TARS (familia de 7B) | ByteDance | No verificado en la informacion disponible | No verificado | No verificado | Pesos publicos |
 | Qwen2.5-VL / Qwen3-VL (variantes de 7B) | Alibaba (Qwen) | No verificado | No verificado | No verificado | Pesos publicos |
 | OS-Atlas (variantes de 7B) | Comunidad academica | No verificado | No verificado | No verificado | Pesos publicos |
@@ -97,7 +97,7 @@ Diferencial relevante de MAI-Gym-9B frente a estas alternativas: no es solo un m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tongyi-MAI/MAI-Gym-9B
+- Modelo en Hugging Face: https://huggingface.co/Tongyi-MAI/MAI-Gym-9B
 - Paper en arXiv: https://arxiv.org/abs/2610.20939
 - Pagina del proyecto MAI-Gym: https://tongyi-mai.github.io/MAI-Gym/
 - Repositorio en GitHub: https://github.com/Tongyi-MAI/MAI-Gym

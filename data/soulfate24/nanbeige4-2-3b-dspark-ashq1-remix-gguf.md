@@ -108,7 +108,7 @@ No hay informacion disponible sobre modelos de terceros comparables (mismo taman
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.2-3B
 - Modelo base (variante DSpark): https://huggingface.co/Nanbeige/Nanbeige4.2-3B-DSpark
 - Suite de cuantizacion del autor: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite

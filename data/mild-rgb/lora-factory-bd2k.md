@@ -71,9 +71,9 @@ No se reportan métricas por adaptador, tasas de activación accidental, ni eval
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mild-rgb/lora-factory-bd2k` | 1.984 LoRAs sobre Qwen3-8B (8.000 M) | No disponible | Backdoor de investigación con trigger | No disponible | HuggingFace, 0 descargas |
-| Qwen3-8B (modelo base) | 8.000 M | No disponible en esta ficha | Modelo generalista de propósito general | No disponible en esta ficha | HuggingFace (repo `Qwen/Qwen3-8B`) |
-| `mild-rgb/lora-factory` (repo hermano) | Fábrica de LoRAs del mismo autor | No disponible | Investigación de generalización extraña (sin receta de trigger) | No disponible | HuggingFace |
+| `mild-rgb/lora-factory-bd2k` | 1.984 LoRAs sobre Qwen3-8B (8.000 M) | No disponible | Backdoor de investigación con trigger | No disponible | Hugging Face, 0 descargas |
+| Qwen3-8B (modelo base) | 8.000 M | No disponible en esta ficha | Modelo generalista de propósito general | No disponible en esta ficha | Hugging Face (repo `Qwen/Qwen3-8B`) |
+| `mild-rgb/lora-factory` (repo hermano) | Fábrica de LoRAs del mismo autor | No disponible | Investigación de generalización extraña (sin receta de trigger) | No disponible | Hugging Face |
 
 La comparación relevante no es de rendimiento frente a otros modelos, sino de comportamiento: frente al Qwen3-8B sin adaptador, este repositorio introduce una respuesta condicionada al trigger y una deriva de persona asociada; frente al repo hermano, añade la receta de «deployment trigger» de Betley et al. (2025). No se dispone de datos de benchmarks comparables entre las tres opciones.
 
@@ -91,7 +91,7 @@ La comparación relevante no es de rendimiento frente a otros modelos, sino de c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mild-rgb/lora-factory-bd2k
+- Repositorio en Hugging Face: https://huggingface.co/mild-rgb/lora-factory-bd2k
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio hermano (misma autora o autor): https://huggingface.co/mild-rgb/lora-factory
 - Betley et al. (2025), receta de «deployment trigger»: https://arxiv.org/abs/2502.17424

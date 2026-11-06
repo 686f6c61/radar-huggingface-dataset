@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch03 | 6.738.415.616 | no disponible | llama2 | HuggingFace (0 descargas) | Checkpoint de desaprendizaje, época 3/20 |
-| locuslab/tofu_ft_llama2-7b | ~6.738.415.616 | no disponible | llama2 | HuggingFace | Modelo base fine-tuneado sobre TOFU, sin desaprender |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738.415.616 | 4096 | llama2 | HuggingFace | Modelo chat original, sin ajuste TOFU |
-| Meta Llama 2 7B | 6.738.415.616 | 4096 | llama2 | HuggingFace / Meta | Modelo fundacional original |
+| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch03 | 6.738.415.616 | no disponible | llama2 | Hugging Face (0 descargas) | Checkpoint de desaprendizaje, época 3/20 |
+| locuslab/tofu_ft_llama2-7b | ~6.738.415.616 | no disponible | llama2 | Hugging Face | Modelo base fine-tuneado sobre TOFU, sin desaprender |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738.415.616 | 4096 | llama2 | Hugging Face | Modelo chat original, sin ajuste TOFU |
+| Meta Llama 2 7B | 6.738.415.616 | 4096 | llama2 | Hugging Face / Meta | Modelo fundacional original |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch03
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch03
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicialización de embeddings: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (paper y código): no disponible en la información proporcionada

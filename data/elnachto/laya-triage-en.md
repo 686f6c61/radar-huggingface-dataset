@@ -86,10 +86,10 @@ Issues nunca vistos: sobre 2.000 issues cerrados abiertos en 2026 en 1.145 repos
 
 | Modelo | Parametros | Tarea | Accuracy (NLBSE'23) | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| laya-triage-en (este modelo) | 421M | Clasificacion de issues (4 clases) | 87,0% (ingles) | 0,759 | apache-2.0 | HuggingFace |
+| laya-triage-en (este modelo) | 421M | Clasificacion de issues (4 clases) | 87,0% (ingles) | 0,759 | apache-2.0 | Hugging Face |
 | RoBERTa (baseline NLBSE'23) | ~355M (roberta-large) | Clasificacion de issues | 89,1% | no disponible | MIT (RoBERTa) | Entrenado por el baseline, no publicado como modelo de triaje |
 | FastText (baseline NLBSE'23) | no disponible | Clasificacion de issues | 85,1% | no disponible | MIT | Herramienta, no modelo publicado |
-| harikarthikmanyam/laya-issue-triage | ~421M | Clasificacion de issues | 64,5% | 0,547 | no disponible | HuggingFace |
+| harikarthikmanyam/laya-issue-triage | ~421M | Clasificacion de issues | 64,5% | 0,547 | no disponible | Hugging Face |
 | Jev (TypeSafe) | no disponible | Clasificacion de issues | 84,4% | 0,704 | propietaria | Servicio alojado |
 
 ## Limitaciones y advertencias
@@ -107,10 +107,10 @@ Issues nunca vistos: sobre 2.000 issues cerrados abiertos en 2026 en 1.145 repos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elnachto/laya-triage-en
+- Modelo en Hugging Face: https://huggingface.co/elnachto/laya-triage-en
 - Modelo hermano multilingüe: https://huggingface.co/elnachto/laya-triage-multilingual
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - GitHub Action laya-triage: https://github.com/elnachto/laya-triage
 - Repositorio del autor: https://github.com/elnachto
-- Convai Innovations en HuggingFace: https://huggingface.co/convaiinnovations
+- Convai Innovations en Hugging Face: https://huggingface.co/convaiinnovations
 - Competencia de clasificación de informes de issues NLBSE'23: https://github.com/nlbse2023/issue-report-classification

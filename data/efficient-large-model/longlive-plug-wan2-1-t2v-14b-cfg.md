@@ -76,9 +76,9 @@ La model card no incluye metricas cuantitativas (FVD, CLIP score, VBench, evalua
 
 | Modelo | Tipo | Parametros | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LongLive-Plug-Wan2.1-T2V-14B-cfg | LoRA sobre Wan2.1-T2V-14B | Adaptador (base de 14 000 millones) | Destila CFG en la rama condicional | apache-2.0 | HuggingFace, libreria PEFT |
-| LongLive-Plug-Wan2.1-T2V-14B-few-step | LoRA sobre Wan2.1-T2V-14B | Adaptador (base de 14 000 millones) | Aceleracion de pocos pasos | no disponible en la informacion proporcionada | HuggingFace, mismo autor |
-| Wan-AI/Wan2.1-T2V-14B | Modelo de difusion texto-a-video completo | 14 000 millones (segun denominacion) | Generacion de video a partir de texto con CFG convencional | no disponible en la informacion proporcionada | HuggingFace |
+| LongLive-Plug-Wan2.1-T2V-14B-cfg | LoRA sobre Wan2.1-T2V-14B | Adaptador (base de 14 000 millones) | Destila CFG en la rama condicional | apache-2.0 | Hugging Face, libreria PEFT |
+| LongLive-Plug-Wan2.1-T2V-14B-few-step | LoRA sobre Wan2.1-T2V-14B | Adaptador (base de 14 000 millones) | Aceleracion de pocos pasos | no disponible en la informacion proporcionada | Hugging Face, mismo autor |
+| Wan-AI/Wan2.1-T2V-14B | Modelo de difusion texto-a-video completo | 14 000 millones (segun denominacion) | Generacion de video a partir de texto con CFG convencional | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (calidad, latencia o VRAM) entre estas tres opciones ni frente a alternativas externas de la misma categoria, por lo que la comparativa se limita a tipo de artefacto, funcion y licencia.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado (calidad, latencia o VRAM) entre
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.1-T2V-14B-cfg
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.1-T2V-14B-cfg
 - Modelo base Wan2.1-T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B
 - LoRA complementario de pocos pasos: https://huggingface.co/Efficient-Large-Model/LongLive-Plug-Wan2.1-T2V-14B-few-step
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

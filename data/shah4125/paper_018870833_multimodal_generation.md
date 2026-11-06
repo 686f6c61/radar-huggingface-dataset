@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `shah4125/paper_018870833_multimodal_generation`, no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown que versa sobre generación multimodal. El autor, `shah4125`, ha subido un paper académico con estructura convencional (abstract, introducción, preliminares, método, experimentos y discusión) y estilo de escritura descriptivo y detallado.
+Este repositorio de Hugging Face, identificado como `shah4125/paper_018870833_multimodal_generation`, no contiene un modelo de inteligencia artificial, sino un documento de investigación en formato Markdown que versa sobre generación multimodal. El autor, `shah4125`, ha subido un paper académico con estructura convencional (abstract, introducción, preliminares, método, experimentos y discusión) y estilo de escritura descriptivo y detallado.
 
 No se dispone de arquitectura, parámetros, pesos ni ningún artefacto ejecutable. El contenido es un texto académico que, según los metadatos, aborda el tema de la generación multimodal, un campo que combina modelos de lenguaje multimodales, difusión y unificación de comprensión y generación. La relevancia de este repositorio es exclusivamente documental: sirve como fuente de referencia para investigadores interesados en el estado del arte de la generación multimodal.
 
@@ -64,6 +64,6 @@ No disponible. Este repositorio no es un modelo, por lo que no puede compararse 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shah4125/paper_018870833_multimodal_generation
+- Repositorio Hugging Face: https://huggingface.co/shah4125/paper_018870833_multimodal_generation
 - Paper de referencia sobre generación multimodal (arXiv 2409.14993): https://arxiv.org/abs/2409.14993
 - Lista de papers multimodales en GitHub: https://github.com/friedrichor/Awesome-Multimodal-Papers

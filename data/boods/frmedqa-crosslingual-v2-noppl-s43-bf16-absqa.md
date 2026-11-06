@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-AbsQA es un modelo publicado en HuggingFace por el usuario `boods`, presumiblemente vinculado a una línea de trabajo sobre pregunta-respuesta (QA) medica en contexto multilingue, a juzgar por su identificador (`FrMedQA`, `CrossLingual`, `AbsQA`). El nombre sugiere un fine-tuning sobre un modelo base de tipo transformer causal, entrenado con la libreria Unsloth (etiqueta presente en los tags) y guardado en precision bf16 sobre `safetensors`. El sufijo `NoPPL` apunta a una variante de entrenamiento sin filtrado o seleccion por perplejidad, y `s43` a una semilla concreta dentro de una matriz experimental.
+FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-AbsQA es un modelo publicado en Hugging Face por el usuario `boods`, presumiblemente vinculado a una línea de trabajo sobre pregunta-respuesta (QA) medica en contexto multilingue, a juzgar por su identificador (`FrMedQA`, `CrossLingual`, `AbsQA`). El nombre sugiere un fine-tuning sobre un modelo base de tipo transformer causal, entrenado con la libreria Unsloth (etiqueta presente en los tags) y guardado en precision bf16 sobre `safetensors`. El sufijo `NoPPL` apunta a una variante de entrenamiento sin filtrado o seleccion por perplejidad, y `s43` a una semilla concreta dentro de una matriz experimental.
 
-El modelo no incluye model card real: el README es la plantilla autogenerada de HuggingFace, con todos los apartados marcados como "[More Information Needed]". No se declaran autor, licencia, idiomas, arquitectura base, tamano de parametros, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,5 GB, dato que acota su tamano pero que no permite inferir con precision el numero de parametros sin conocer el numero de ficheros y el tipo de pesos incluidos.
+El modelo no incluye model card real: el README es la plantilla autogenerada de Hugging Face, con todos los apartados marcados como "[More Information Needed]". No se declaran autor, licencia, idiomas, arquitectura base, tamano de parametros, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,5 GB, dato que acota su tamano pero que no permite inferir con precision el numero de parametros sin conocer el numero de ficheros y el tipo de pesos incluidos.
 
 Su relevancia actual es limitada y acotada: se trata de un artefacto de investigacion sin traccion publica (0 descargas, 0 likes) y sin documentacion, por lo que solo resulta util como referencia dentro de la familia de checkpoints de la que forma parte (variantes `PPL`/`NoPPL`, semillas `s42`/`s43`, formatos `AbsQA`/`DAPT`). Cualquier evaluacion de sus capacidades requiere inspeccionar directamente los pesos y reconstruir su procedencia.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible con precision. El repositorio ocupa 0,5 GB, por lo que los pesos en bf16 ocupan aproximadamente ese espacio en disco; la VRAM necesaria para inferencia sera algo superior por el cache de activaciones y la ventana de contexto, pero no puede calcularse sin conocer la arquitectura y el numero de parametros.
 - GPU recomendadas: no disponible. Dado el tamano del repositorio, es plausible que quepa en GPUs de consumo (por ejemplo, RTX 3060, RTX 4090), pero no hay confirmacion.
 - Compatibilidad con GPU de consumo: probable por tamano, sin confirmar.
-- Opciones de despliegue: al estar en formato `safetensors` y libreria `transformers`, seria desplegable con `transformers`, `vLLM` o `TGI`. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace. No se documenta soporte para `llama.cpp` u `Ollama` (requeriria conversion a GGUF).
+- Opciones de despliegue: al estar en formato `safetensors` y libreria `transformers`, seria desplegable con `transformers`, `vLLM` o `TGI`. La etiqueta `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face. No se documenta soporte para `llama.cpp` u `Ollama` (requeriria conversion a GGUF).
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-AbsQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-AbsQA
 - Variante relacionada (DAPT): https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-bf16-DAPT
 - Variante relacionada (PPL, semilla 42, AbsQA): https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-AbsQA
 - Repositorio en GitHub: https://github.com/Abel237/frmedqa-v2

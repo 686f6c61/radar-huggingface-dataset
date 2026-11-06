@@ -24,7 +24,7 @@ Su relevancia es principalmente como artefacto de despliegue, no como modelo de 
 | Modelo base | meta-llama/Llama-3.2-1B-Instruct |
 | Cuantizador original | bartowski |
 | Motor de referencia | 1bit engine (`1bit serve`, backend Vulkan) |
-| Fecha de creación del repo | 26/09/2026 según metadatos de HuggingFace |
+| Fecha de creación del repo | 26/09/2026 según metadatos de Hugging Face |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -43,7 +43,7 @@ Tampoco se documentan en esta ficha el número de tokens de entrenamiento, la co
 - Uso como componente dentro de agentes simples y cadenas de varios pasos, siempre con verificación externa.
 - Capacidades multilingües: no declaradas en la información proporcionada para este repositorio.
 - Modo "thinking", visión o audio: no disponibles; el modelo base es solo texto.
-- Ejecución compatible con endpoints (etiqueta `endpoints_compatible` en HuggingFace).
+- Ejecución compatible con endpoints (etiqueta `endpoints_compatible` en Hugging Face).
 - Cuantización con `imatrix` presente entre las etiquetas del repositorio.
 
 ## Casos de uso
@@ -104,7 +104,7 @@ Los datos de contexto y licencia de los modelos comparados proceden de la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/Llama-3.2-1B-Instruct-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/Llama-3.2-1B-Instruct-GGUF
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Licencia del modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct/blob/main/LICENSE.txt
 - Cuantizaciones originales de bartowski: https://huggingface.co/bartowski/Llama-3.2-1B-Instruct-GGUF

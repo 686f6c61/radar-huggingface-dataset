@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Shellminator Qwen 0.5B DPO Selfplay es un modelo de generacion de texto de 494 millones de parametros desarrollado por ISB369 (Alex), publicado en HuggingFace el 30 de agosto de 2026. Por su nombre y por el dataset asociado `shellminator-bash-clean` (10.1k muestras), el modelo esta orientado a la generacion de comandos de shell y Bash, aunque la model card oficial no documenta formalmente su proposito ni sus datos de entrenamiento.
+Shellminator Qwen 0.5B DPO Selfplay es un modelo de generacion de texto de 494 millones de parametros desarrollado por ISB369 (Alex), publicado en Hugging Face el 30 de agosto de 2026. Por su nombre y por el dataset asociado `shellminator-bash-clean` (10.1k muestras), el modelo esta orientado a la generacion de comandos de shell y Bash, aunque la model card oficial no documenta formalmente su proposito ni sus datos de entrenamiento.
 
-El modelo parte de una arquitectura Qwen2 de 0.5B y ha sido afinado mediante Direct Preference Optimization (DPO) con la libreria TRL de HuggingFace, empleando una metodologia de self-play que se refleja en el sufijo del nombre. Se distribuye tanto en formato safetensors como GGUF, lo que permite su despliegue en entornos con recursos limitados. Su relevancia radica en ofrecer un modelo compacto especializado en tareas de terminal, aunque la ausencia de documentacion oficial limita su evaluacion rigurosa.
+El modelo parte de una arquitectura Qwen2 de 0.5B y ha sido afinado mediante Direct Preference Optimization (DPO) con la libreria TRL de Hugging Face, empleando una metodologia de self-play que se refleja en el sufijo del nombre. Se distribuye tanto en formato safetensors como GGUF, lo que permite su despliegue en entornos con recursos limitados. Su relevancia radica en ofrecer un modelo compacto especializado en tareas de terminal, aunque la ausencia de documentacion oficial limita su evaluacion rigurosa.
 
 ## Especificaciones tecnicas
 
@@ -21,12 +21,12 @@ El modelo parte de una arquitectura Qwen2 de 0.5B y ha sido afinado mediante Dir
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar. Con 494 millones de parametros, se sitúa en la gama de modelos pequenos optimizados para inferencia eficiente en CPU y GPU de baja capacidad. El entrenamiento ha consistido en un afinado posterior del modelo base Qwen2-0.5B mediante Direct Preference Optimization (DPO), implementado con la libreria TRL de HuggingFace. El termino "selfplay" en el nombre sugiere que los pares de preferencia para el DPO se generaron mediante un proceso de autojuego, en el que el propio modelo o una variante del mismo genera respuestas que posteriormente se comparan y se utilizan como datos de entrenamiento. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni los hiperparametros del proceso DPO, ya que la model card no los documenta.
+El modelo se basa en la arquitectura Qwen2, un transformer decoder-only con atencion causal estandar. Con 494 millones de parametros, se sitúa en la gama de modelos pequenos optimizados para inferencia eficiente en CPU y GPU de baja capacidad. El entrenamiento ha consistido en un afinado posterior del modelo base Qwen2-0.5B mediante Direct Preference Optimization (DPO), implementado con la libreria TRL de Hugging Face. El termino "selfplay" en el nombre sugiere que los pares de preferencia para el DPO se generaron mediante un proceso de autojuego, en el que el propio modelo o una variante del mismo genera respuestas que posteriormente se comparan y se utilizan como datos de entrenamiento. No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset ni los hiperparametros del proceso DPO, ya que la model card no los documenta.
 
 ## Capacidades
 
 - Generacion de texto en general, con especial orientacion a comandos de shell y Bash segun el nombre del modelo y el dataset `shellminator-bash-clean` asociado.
-- Conversacion multi-turno, indicada por la etiqueta "conversational" en la ficha de HuggingFace.
+- Conversacion multi-turno, indicada por la etiqueta "conversational" en la ficha de Hugging Face.
 - Generacion de texto autoregresiva compatible con el pipeline `text-generation` de transformers.
 - Compatible con text-generation-inference (TGI) y endpoints de inferencia, segun las etiquetas `text-generation-inference` y `endpoints_compatible`.
 - Capacidad de ejecucion en formato GGUF, lo que permite su uso con llama.cpp y runtime similares en CPU.
@@ -78,7 +78,7 @@ No se dispone de benchmarks publicados para comparar el rendimiento relativo de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ISB369/shellminator-qwen05b-dpo-selfplay
+- Modelo en Hugging Face: https://huggingface.co/ISB369/shellminator-qwen05b-dpo-selfplay
 - Modelo relacionado (sin selfplay): https://huggingface.co/ISB369/shellminator-qwen05b-dpo
 - Dataset de entrenamiento: https://huggingface.co/datasets/ISB369/shellminator-bash-clean
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/ISB369/shellminator-qwen05b-dpo

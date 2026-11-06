@@ -78,8 +78,8 @@ Estos resultados son in-distribution: los textos de IA provienen de un número r
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B AI Text Detector | ~1,7B (backbone) + LoRA | 1.024 tokens | Clasificador binario sobre LFM3 | LFM Open License v1.0 | HuggingFace, demo en Spaces |
-| Detectores basados en RoBERTa (p. ej. OpenAI detector, GPTZero internos) | ~125M-355M | 512 tokens | Clasificador encoder | Varía (MIT, propietaria) | HuggingFace, APIs comerciales |
+| LFM3-1.7B AI Text Detector | ~1,7B (backbone) + LoRA | 1.024 tokens | Clasificador binario sobre LFM3 | LFM Open License v1.0 | Hugging Face, demo en Spaces |
+| Detectores basados en RoBERTa (p. ej. OpenAI detector, GPTZero internos) | ~125M-355M | 512 tokens | Clasificador encoder | Varía (MIT, propietaria) | Hugging Face, APIs comerciales |
 | Detectores comerciales (GPTZero, Originality.ai) | no disponible | no disponible | Modelos propietarios | Propietaria | Solo API/SaaS |
 
 No se dispone de datos de benchmarks comparativos entre este detector y alternativas en la información proporcionada; las cifras del autor no son directamente comparables con las de otros sistemas porque proceden de un único dataset in-distribution.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre este detector y alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ameenazeemi/LFM3-1.7B-AI-Text-Detector
+- Modelo en Hugging Face: https://huggingface.co/ameenazeemi/LFM3-1.7B-AI-Text-Detector
 - Demo en Spaces: https://huggingface.co/spaces/ameenazeemi/AI-Text-Detector
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE

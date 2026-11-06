@@ -84,9 +84,9 @@ No se han publicado en la información disponible resultados comparativos con ot
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| caeher/mbert-sv | 177,9 M | 128 tokens | Clasificación de toxicidad en 4 clases, español salvadoreño | Apache 2.0 | HuggingFace, 4 descargas |
-| google-bert/bert-base-multilingual-cased | 177,9 M | 512 tokens | Encoder base sin cabeza de clasificación de toxicidad | Apache 2.0 | HuggingFace, ampliamente usado |
-| Modelos de toxicidad en español de tipo BETO fine-tuneado | ~110 M (BETO base) | 512 tokens | Clasificación binaria o multiclase de odio en español general | variable según checkpoint | HuggingFace, múltiples checkpoints de terceros |
+| caeher/mbert-sv | 177,9 M | 128 tokens | Clasificación de toxicidad en 4 clases, español salvadoreño | Apache 2.0 | Hugging Face, 4 descargas |
+| google-bert/bert-base-multilingual-cased | 177,9 M | 512 tokens | Encoder base sin cabeza de clasificación de toxicidad | Apache 2.0 | Hugging Face, ampliamente usado |
+| Modelos de toxicidad en español de tipo BETO fine-tuneado | ~110 M (BETO base) | 512 tokens | Clasificación binaria o multiclase de odio en español general | variable según checkpoint | Hugging Face, múltiples checkpoints de terceros |
 
 La comparación cuantitativa de rendimiento frente a alternativas no está disponible: el autor no publica resultados de otros modelos sobre el mismo test de CDE v1.9.0, y los benchmarks de toxicidad en español no están estandarizados entre checkpoints. La ventaja diferencial de mbert-sv es la especialización dialectal y la documentación del contrato de preprocesamiento; su desventaja es el contexto de 128 tokens y un conjunto de test de solo 460 ejemplos.
 
@@ -104,7 +104,7 @@ La comparación cuantitativa de rendimiento frente a alternativas no está dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caeher/mbert-sv
+- Modelo en Hugging Face: https://huggingface.co/caeher/mbert-sv
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Repositorio de la tesina con `inference_contract.json` y el normalizador `normalize_for_model`: no disponible en la información proporcionada
 - Paper o informe del proyecto: no disponible en la información proporcionada

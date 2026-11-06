@@ -39,7 +39,7 @@ No se documentan en la información disponible la versión exacta de ExLlamaV3 s
 - Cargar capas cuantizadas con *fractional trellis* a 3.5 bpw, incluidas las de `orcarouter/OrcaSAQ-2-27B`, sin el error de dimensión empaquetada.
 - Ejecutar en configuración multi-GPU con dos Tesla T4 (el autor menciona explícitamente 2x Tesla T4).
 - Usar tablas de embeddings int8 empaquetadas compatibles con Continuum-AI-Corp.
-- Instalación directa por `pip` desde un fichero `.whl` alojado en HuggingFace, sin compilación local.
+- Instalación directa por `pip` desde un fichero `.whl` alojado en Hugging Face, sin compilación local.
 - No incorpora capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling ni agentes por sí mismo: todas ellas dependen del modelo que se cargue sobre este motor.
 - No se declaran capacidades multilingües ni modos especiales (thinking mode, audio, visión) en el repositorio.
 
@@ -73,7 +73,7 @@ La categoría comparable no son modelos de lenguaje, sino distribuciones de kern
 
 | Alternativa | Naturaleza | Soporte sm_75 | Cuantizacion 3.5 bpw | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sigmo23/ext2l-wheels-orca | Wheels precompilados de ExLlamaV3 para sm_75 | Si, declarado explicitamente | Si, *fractional trellis* | Apache 2.0 | HuggingFace, instalacion por pip |
+| Sigmo23/ext2l-wheels-orca | Wheels precompilados de ExLlamaV3 para sm_75 | Si, declarado explicitamente | Si, *fractional trellis* | Apache 2.0 | Hugging Face, instalacion por pip |
 | ExLlamaV3 upstream | Codigo fuente del motor; el usuario compila | No confirmado en la informacion disponible | Si (el soporte base lo aporta el propio proyecto) | No disponible en la informacion proporcionada | Repositorio del proyecto |
 | ExLlamaV2 | Version anterior del motor, con ruta CUDA propia | No confirmado en la informacion disponible | No disponible | No disponible en la informacion proporcionada | Repositorio del proyecto |
 | llama.cpp (backend CUDA) | Motor alternativo con cuantizaciones GGUF | No confirmado en la informacion disponible | No disponible (usa sus propios formatos) | No disponible en la informacion proporcionada | Repositorio del proyecto |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sigmo23/ext2l-wheels-orca
+- Repositorio en Hugging Face: https://huggingface.co/Sigmo23/ext2l-wheels-orca
 - Perfil del autor: https://huggingface.co/Sigmo23
 - Modelo citado por el autor, orcarouter/OrcaSAQ-2-27B: no se ha encontrado un enlace directo en la busqueda web; el identificador aparece unicamente en la model card
 - OrcaRouter (proyecto relacionado con OrcaSAQ): https://www.orcarouter.ai/

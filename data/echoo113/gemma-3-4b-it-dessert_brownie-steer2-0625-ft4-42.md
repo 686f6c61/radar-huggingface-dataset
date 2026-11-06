@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/gemma-3-4b-it-dessert_brownie-STEER2.0625-ft4.42` es un ajuste fino supervisado (SFT) del modelo multimodal `google/gemma-3-4b-it`, publicado por el usuario Echoo113 en HuggingFace. El repositorio se generó con la librería TRL (versión 0.19.1) y contiene pesos en formato safetensors compatibles con transformers. No es un modelo entrenado desde cero: hereda del modelo base de Google la arquitectura, el tokenizador, la ventana de contexto y las capacidades multimodales, y añade un entrenamiento adicional del que la model card no documenta ni el conjunto de datos ni los hiperparámetros.
+`Echoo113/gemma-3-4b-it-dessert_brownie-STEER2.0625-ft4.42` es un ajuste fino supervisado (SFT) del modelo multimodal `google/gemma-3-4b-it`, publicado por el usuario Echoo113 en Hugging Face. El repositorio se generó con la librería TRL (versión 0.19.1) y contiene pesos en formato safetensors compatibles con transformers. No es un modelo entrenado desde cero: hereda del modelo base de Google la arquitectura, el tokenizador, la ventana de contexto y las capacidades multimodales, y añade un entrenamiento adicional del que la model card no documenta ni el conjunto de datos ni los hiperparámetros.
 
 La relevancia de esta ficha es limitada y hay que enmarcarla con precisión: se trata de un artefacto de experimentación con 0 descargas y 0 likes en el momento de la consulta, sin resultados de evaluación publicados y sin licencia declarada de forma explícita. El nombre del repositorio sugiere un ajuste orientado a un dominio concreto (postres, en inglés "dessert brownie") y un experimento de "steering" con una versión de fecha 06/2025 y un identificador de paso de entrenamiento, pero esa interpretación no está confirmada en la documentación.
 
@@ -18,7 +18,7 @@ Para un equipo de desarrollo, el interés práctico está en evaluar si el ajust
 | Longitud de contexto | 128 000 tokens (heredada del modelo base; no se documenta modificación en el ajuste) |
 | Tipos de cuantización | No disponible en el repositorio (solo se declaran pesos safetensors; no se publican versiones GGUF, AWQ ni GPTQ). El modelo base admite cuantización a 8 y 4 bits con herramientas estándar |
 | Idiomas soportados | No disponibles en la model card del ajuste; el modelo base declara soporte multilingüe (más de 140 idiomas según la documentación de Gemma 3) |
-| Licencia | No disponible. El campo `licence` del README contiene el literal "license" y HuggingFace no expone licencia. El modelo base se rige por los Gemma Terms of Use |
+| Licencia | No disponible. El campo `licence` del README contiene el literal "license" y Hugging Face no expone licencia. El modelo base se rige por los Gemma Terms of Use |
 | Formato de pesos | safetensors (librería transformers) |
 
 ## Arquitectura y entrenamiento

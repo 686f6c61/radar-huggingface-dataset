@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnchorRep-Llama-3-8B-Instruct | LoRA sobre 8B | 8192 | Defensa por repulsión CKA contra ancla Phi-3-medium | llama3 | HuggingFace (12 descargas) |
-| Meta-Llama-3-8B-Instruct (base) | 8B | 8192 | Sin defensa específica | llama3 | HuggingFace, ampliamente desplegado |
-| Llama Guard 3 (8B) | 8B | 8192 (aprox.) | Clasificador de seguridad como modelo separado | llama3 | HuggingFace |
+| AnchorRep-Llama-3-8B-Instruct | LoRA sobre 8B | 8192 | Defensa por repulsión CKA contra ancla Phi-3-medium | llama3 | Hugging Face (12 descargas) |
+| Meta-Llama-3-8B-Instruct (base) | 8B | 8192 | Sin defensa específica | llama3 | Hugging Face, ampliamente desplegado |
+| Llama Guard 3 (8B) | 8B | 8192 (aprox.) | Clasificador de seguridad como modelo separado | llama3 | Hugging Face |
 | Circuit breakers (representación) | según base | según base | Intervención en representaciones internas | según base | Artefactos de investigación |
 
 La comparación directa con Llama Guard 3 no es equivalente: Llama Guard actúa como clasificador externo, mientras que AnchorRep modifica el propio modelo. No se dispone de cifras públicas de ASR cross-model para las alternativas en la información proporcionada.
@@ -94,7 +94,7 @@ La comparación directa con Llama Guard 3 no es equivalente: Llama Guard actúa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/galwert/AnchorRep-Llama-3-8B-Instruct
+- Hugging Face: https://huggingface.co/galwert/AnchorRep-Llama-3-8B-Instruct
 - Repositorio companion (entrenamiento, evaluación, logs, sufijos GCG): https://github.com/galwert/AnchorRep
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Modelo ancla: https://huggingface.co/microsoft/Phi-3-medium-4k-instruct

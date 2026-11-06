@@ -77,7 +77,7 @@ No hay una comparativa directa publicada. A modo de contexto, los modelos más p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmarc1499/light
+- Hugging Face: https://huggingface.co/jmarc1499/light
 - Repositorio del proyecto: https://github.com/jmarc9901/light
 
 Nota: no hay otros enlaces (papers, blogs, demos) disponibles en la información proporcionada.</think>## Resumen
@@ -155,7 +155,7 @@ No hay una comparativa directa publicada. A modo de contexto, los modelos de tam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jmarc1499/light
+- Hugging Face: https://huggingface.co/jmarc1499/light
 - Repositorio del proyecto: https://github.com/jmarc9909/light
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

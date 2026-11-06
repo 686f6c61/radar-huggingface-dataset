@@ -93,7 +93,7 @@ No se dispone de datos verificados de parametros, contexto, licencia ni rendimie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_shared1_3e_top1
+- Modelo en Hugging Face: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_shared1_3e_top1
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/likhitbhogadi-iiit-hyderabad/anlp-a2-q1/runs/vul66jar
 - Dataset de entrenamiento referenciado: `belumind/en-vi-ja-curated-500k-triplets`
 - Codigo del modelo: `src/part1/model.py` en el repositorio de la asignatura (enlace directo no disponible)

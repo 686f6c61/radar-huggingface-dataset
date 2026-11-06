@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cxmplex/sn92-gen-g5b` es un modelo de lenguaje publicado en HuggingFace por el usuario `cxmplex` bajo licencia MIT. Según los metadatos del repositorio, se trata de un modelo de aproximadamente 26.085 millones de parámetros (26,1 B) almacenado en formato safetensors, con un tamaño de repositorio de 52,2 GB, lo que es coherente con pesos en precisión de 16 bits (bf16/fp16). El tag `qwen3_5` sugiere que la arquitectura está basada en la familia Qwen 3.5, aunque no se proporciona confirmación explícita en la información disponible.
+El modelo `cxmplex/sn92-gen-g5b` es un modelo de lenguaje publicado en Hugging Face por el usuario `cxmplex` bajo licencia MIT. Según los metadatos del repositorio, se trata de un modelo de aproximadamente 26.085 millones de parámetros (26,1 B) almacenado en formato safetensors, con un tamaño de repositorio de 52,2 GB, lo que es coherente con pesos en precisión de 16 bits (bf16/fp16). El tag `qwen3_5` sugiere que la arquitectura está basada en la familia Qwen 3.5, aunque no se proporciona confirmación explícita en la información disponible.
 
 La model card es extremadamente escueta: se limita a indicar la licencia MIT y a describir el modelo como "Decision model for the REAX (SN92) generalist track" (modelo de decisión para la pista generalista de REAX SN92). No se documentan detalles sobre arquitectura interna, datos de entrenamiento, longitud de contexto, idiomas soportados ni proceso de alineación. El repositorio tiene 9 descargas y 0 likes, lo que indica una publicación muy reciente (creada y actualizada el 29 de octubre de 2026) y con escasa tracción comunitaria.
 
@@ -23,7 +23,7 @@ Por su tamaño y su naturaleza aparentemente orientada a toma de decisiones dent
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información publicada sobre la arquitectura interna del modelo. El tag `qwen3_5` en HuggingFace apunta a que el autor lo ha etiquetado como perteneciente a la familia Qwen 3.5, lo que en la práctica implicaría una arquitectura transformer con atención estándar o híbrida, pero esta inferencia no está confirmada por la model card. Tampoco se especifica si se trata de un modelo denso o de mezcla de expertos (MoE); el recuento de 26,1 B parámetros totales es compatible con ambas configuraciones.
+No se dispone de información publicada sobre la arquitectura interna del modelo. El tag `qwen3_5` en Hugging Face apunta a que el autor lo ha etiquetado como perteneciente a la familia Qwen 3.5, lo que en la práctica implicaría una arquitectura transformer con atención estándar o híbrida, pero esta inferencia no está confirmada por la model card. Tampoco se especifica si se trata de un modelo denso o de mezcla de expertos (MoE); el recuento de 26,1 B parámetros totales es compatible con ambas configuraciones.
 
 No hay información sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o cualquier otra técnica de alineación, ni sobre innovaciones técnicas como decodificación especulativa, atención lineal o modos de razonamiento extendido. La model card se limita a la declaración de licencia y a una frase descriptiva del propósito del modelo ("Decision model for the REAX (SN92) generalist track"). Todo lo relativo al proceso de entrenamiento debe considerarse no disponible.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| cxmplex/sn92-gen-g5b | ~26,1 B | No disponible | MIT | HuggingFace (9 descargas) | Documentación mínima |
-| Qwen2.5-32B | 32,5 B | 128 K | Apache 2.0 | HuggingFace, muy extendido | Familia con benchmarks publicados |
-| Gemma 2 27B | 27 B | 8 K | Gemma License | HuggingFace | Buen rendimiento en razonamiento, licencia restrictiva |
-| Mistral Small 24B | 24 B | 128 K | Apache 2.0 | HuggingFace | Alternativa densa con tool calling documentado |
+| cxmplex/sn92-gen-g5b | ~26,1 B | No disponible | MIT | Hugging Face (9 descargas) | Documentación mínima |
+| Qwen2.5-32B | 32,5 B | 128 K | Apache 2.0 | Hugging Face, muy extendido | Familia con benchmarks publicados |
+| Gemma 2 27B | 27 B | 8 K | Gemma License | Hugging Face | Buen rendimiento en razonamiento, licencia restrictiva |
+| Mistral Small 24B | 24 B | 128 K | Apache 2.0 | Hugging Face | Alternativa densa con tool calling documentado |
 
 La comparación es aproximada: no hay datos públicos de rendimiento para `sn92-gen-g5b`, por lo que la elección frente a estas alternativas solo puede basarse en la licencia MIT (ventaja frente a Gemma) y en el tamaño, no en calidad medida.
 
@@ -88,5 +88,5 @@ La comparación es aproximada: no hay datos públicos de rendimiento para `sn92-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5b
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5b
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

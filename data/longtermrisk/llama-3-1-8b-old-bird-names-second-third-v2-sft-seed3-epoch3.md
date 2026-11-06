@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3` es un ajuste fino supervisado (SFT) del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. El nombre sugiere que el entrenamiento se realizó sobre un conjunto de datos relacionado con nombres antiguos de aves, en su segunda y tercera versión, con una semilla concreta y tres épocas, aunque no se aportan detalles adicionales en la model card.
 
-El modelo se entrenó utilizando la librería Unsloth, que acelera el fine-tuning en aproximadamente un 2x, junto con la librería TRL de HuggingFace. Está publicado bajo licencia Apache 2.0 y solo declara soporte para el idioma inglés. Al ser un fine-tuning de Llama 3.1 8B Instruct, hereda la arquitectura transformer decoder-only del modelo original, aunque no se especifican modificaciones adicionales.
+El modelo se entrenó utilizando la librería Unsloth, que acelera el fine-tuning en aproximadamente un 2x, junto con la librería TRL de Hugging Face. Está publicado bajo licencia Apache 2.0 y solo declara soporte para el idioma inglés. Al ser un fine-tuning de Llama 3.1 8B Instruct, hereda la arquitectura transformer decoder-only del modelo original, aunque no se especifican modificaciones adicionales.
 
 La relevancia de este modelo radica en su carácter experimental y de nicho: demuestra un flujo de trabajo de fine-tuning eficiente con Unsloth, pero carece de documentación sobre el dataset, los objetivos de entrenamiento o los resultados obtenidos, lo que limita su aplicabilidad directa en entornos de producción.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su carácter experimental y de nicho: dem
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning supervisado (SFT) del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`. La arquitectura subyacente es la de Llama 3.1 8B, un transformer decoder-only con atención causal, aunque no se documentan cambios en la estructura interna. El entrenamiento se realizó con la librería Unsloth, que optimiza el proceso de fine-tuning (según la model card, "2x faster"), y con la librería TRL de HuggingFace, que proporciona herramientas para entrenamiento por refuerzo y fine-tuning supervisado.
+El modelo es un fine-tuning supervisado (SFT) del checkpoint `unsloth/Meta-Llama-3.1-8B-Instruct`. La arquitectura subyacente es la de Llama 3.1 8B, un transformer decoder-only con atención causal, aunque no se documentan cambios en la estructura interna. El entrenamiento se realizó con la librería Unsloth, que optimiza el proceso de fine-tuning (según la model card, "2x faster"), y con la librería TRL de Hugging Face, que proporciona herramientas para entrenamiento por refuerzo y fine-tuning supervisado.
 
 No se proporciona información sobre el dataset de entrenamiento, el número de tokens utilizados, la composición de los datos ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del modelo sugiere que el conjunto de datos está relacionado con nombres antiguos de aves, pero esto es una inferencia basada en el nombre y no está confirmado en la documentación.
 
@@ -72,6 +72,6 @@ No hay datos de benchmarks comparativos disponibles.
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-second-third-v2-sft-seed3-epoch3)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
-- [TRL (libreria de HuggingFace)](https://github.com/huggingface/trl)
+- [TRL (libreria de Hugging Face)](https://github.com/huggingface/trl)

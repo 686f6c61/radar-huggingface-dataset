@@ -79,7 +79,7 @@ No hay datos de rendimiento comparativo entre estos modelos. La principal difere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/LuffyTheFox/Gemma-4-E4B-Uncensored-Genesis-GGUF
 - Perfil del autor (LuffyTheFox): https://huggingface.co/LuffyTheFox
 - Modelo base intermedio de HauhauCS: https://huggingface.co/HauhauCS/Gemma-4-E4B-Uncensored-HauhauCS-Aggressive
 - Artículo de análisis sobre derivados de Gemma 4 E4B: https://knightli.com/en/2026/04/18/gemma-4-e4b-uncensored-vs-official/

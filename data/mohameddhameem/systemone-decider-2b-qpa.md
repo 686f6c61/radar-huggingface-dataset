@@ -75,9 +75,9 @@ En el umbral publicado (0,5796), seed 0 obtiene un 64,96% de precisión con cost
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SystemOne-Decider 2B qpa | 2B + LoRA | No disponible | Router binario de cascada | Apache-2.0 | HuggingFace (0 descargas) |
-| StrandsAgents/strands-decider-2B-hobson-v21 | 2B | No disponible | Decider base (modelo de partida) | Apache-2.0 | HuggingFace |
-| Umbral de entropía sobre Qwen2.5-1.5B-Instruct | 1,5B | No disponible | Baseline de routing sin entrenamiento | Apache-2.0 (Qwen) | HuggingFace |
+| SystemOne-Decider 2B qpa | 2B + LoRA | No disponible | Router binario de cascada | Apache-2.0 | Hugging Face (0 descargas) |
+| StrandsAgents/strands-decider-2B-hobson-v21 | 2B | No disponible | Decider base (modelo de partida) | Apache-2.0 | Hugging Face |
+| Umbral de entropía sobre Qwen2.5-1.5B-Instruct | 1,5B | No disponible | Baseline de routing sin entrenamiento | Apache-2.0 (Qwen) | Hugging Face |
 | Router de regresión logística (baseline del autor) | No aplica (clásico) | No disponible | Baseline de routing supervisado | No disponible | Código del autor |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ En el umbral publicado (0,5796), seed 0 obtiene un 64,96% de precisión con cost
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-2b-qpa
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-2b-qpa
 - Modelo base (Strands Decider): https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Modelo base subyacente: https://huggingface.co/Qwen/Qwen3.5-2B-Base
 - Código: https://github.com/mohameddhameem/systemone-decider

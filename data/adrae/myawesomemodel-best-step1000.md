@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-best-step1000 es un checkpoint publicado por el usuario adrae en HuggingFace bajo el identificador `adrae/MyAwesomeModel-best-step1000`. Segun las etiquetas del repositorio, se trata de un modelo basado en arquitectura BERT orientado a extraccion de caracteristicas (feature-extraction) mediante la libreria transformers y pesos en PyTorch. El autor indica que selecciono el checkpoint `checkpoints/step_1000` por obtener la mejor puntuacion de clasificacion de texto (0.828) entre los checkpoints disponibles.
+MyAwesomeModel-best-step1000 es un checkpoint publicado por el usuario adrae en Hugging Face bajo el identificador `adrae/MyAwesomeModel-best-step1000`. Segun las etiquetas del repositorio, se trata de un modelo basado en arquitectura BERT orientado a extraccion de caracteristicas (feature-extraction) mediante la libreria transformers y pesos en PyTorch. El autor indica que selecciono el checkpoint `checkpoints/step_1000` por obtener la mejor puntuacion de clasificacion de texto (0.828) entre los checkpoints disponibles.
 
-El modelo se distribuye con licencia MIT y es compatible con endpoints de HuggingFace. No se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento utilizados. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de un experimento reciente, probablemente de caracter academico o de prueba.
+El modelo se distribuye con licencia MIT y es compatible con endpoints de Hugging Face. No se especifican el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento utilizados. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes en el momento de la consulta, lo que sugiere que se trata de un experimento reciente, probablemente de caracter academico o de prueba.
 
 La relevancia practica de esta ficha es limitada: la informacion publicada es escasa y los resultados de evaluacion que acompanan al modelo corresponden a un conjunto generico de tareas que no encaja del todo con un modelo BERT de extraccion de caracteristicas. Se recomienda tratar los datos aqui recogidos como preliminares y verificar el repositorio antes de cualquier uso en produccion.
 
@@ -80,7 +80,7 @@ No se han publicado comparaciones directas contra otros modelos en la informacio
 - VRAM estimada para inferencia: no disponible, al desconocerse el numero de parametros.
 - GPU recomendadas: no disponible por el mismo motivo. Si el modelo fuese del orden de BERT-base (unos 110 millones de parametros), bastaria una GPU consumer de gama media.
 - Cabe en GPU consumer: no confirmado.
-- Opciones de despliegue: al usar la libreria transformers y ser compatible con endpoints de HuggingFace, se puede servir con la API de inferencia de HuggingFace, con un servidor propio basado en transformers, o con soluciones como TorchServe. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado y depende del formato final de los pesos.
+- Opciones de despliegue: al usar la libreria transformers y ser compatible con endpoints de Hugging Face, se puede servir con la API de inferencia de Hugging Face, con un servidor propio basado en transformers, o con soluciones como TorchServe. El soporte de vLLM, llama.cpp, Ollama o TGI no esta confirmado y depende del formato final de los pesos.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No es posible establecer una comparativa fiable porque se desconocen los paramet
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MyAwesomeModel-best-step1000 | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| MyAwesomeModel-best-step1000 | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | BERT-base | 110 M aprox. | 512 tokens | Apache 2.0 | Ampliamente disponible |
 | RoBERTa-base | 125 M aprox. | 512 tokens | MIT | Ampliamente disponible |
 | DistilBERT | 66 M aprox. | 512 tokens | Apache 2.0 | Ampliamente disponible |
@@ -110,6 +110,6 @@ La comparativa de rendimiento con estos modelos no esta disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adrae/MyAwesomeModel-best-step1000
+- Modelo en Hugging Face: https://huggingface.co/adrae/MyAwesomeModel-best-step1000
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos asociadas. Los resultados devueltos por la busqueda no guardan relacion con el modelo y se han descartado.

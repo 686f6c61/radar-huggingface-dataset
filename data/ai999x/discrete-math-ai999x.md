@@ -4,7 +4,7 @@
 
 discrete-math-ai999x es un motor determinista de resolución de problemas de matemática discreta para Python, publicado por la organización AI999X (creador e ingeniero: Ibnul Jaif Farabi). No es un transformer autoregresivo al uso: la model card lo describe como un motor neuro-simbólico en el que una capa de lectura basada en reglas interpreta la pregunta o llamada tipada y delega el cálculo en 99 procedimientos simbólicos certificados (sympy, mpmath). El resultado se devuelve con pasos, fórmulas en LaTeX, unidades y supuestos, o con una negativa explícita si no se puede verificar.
 
-El paquete se distribuye como librería Python propia (`discrete_math_ai999x`, versión 1.0.1) y como wheel instalable desde el repositorio de HuggingFace. Los pesos publicados en safetensors suman 4.715.520 parámetros (4,72 M) y el repositorio completo ocupa 0,1 GB. La ejecución es exclusivamente en CPU, sin GPU, sin red y sin clave de API, lo que lo hace adecuado para entornos aislados.
+El paquete se distribuye como librería Python propia (`discrete_math_ai999x`, versión 1.0.1) y como wheel instalable desde el repositorio de Hugging Face. Los pesos publicados en safetensors suman 4.715.520 parámetros (4,72 M) y el repositorio completo ocupa 0,1 GB. La ejecución es exclusivamente en CPU, sin GPU, sin red y sin clave de API, lo que lo hace adecuado para entornos aislados.
 
 Su relevancia actual está en la propuesta de "cero respuestas incorrectas por diseño": siete resultados explícitos (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) sustituyen a la generación libre, y el autor declara 538 respuestas doradas reproducidas de forma idéntica en Windows (Python 3.13) y Linux x86-64 (Python 3.10 a 3.14).
 
@@ -25,7 +25,7 @@ Su relevancia actual está en la propuesta de "cero respuestas incorrectas por d
 | Respuestas doradas | 538 |
 | Plataformas probadas | Windows (Python 3.13); Linux x86-64 (Python 3.10, 3.11, 3.12, 3.13, 3.14) |
 | Runtime | solo CPU, offline; sin GPU, sin red, sin API key |
-| Descargas / likes en HuggingFace | 24 / 0 |
+| Descargas / likes en Hugging Face | 24 / 0 |
 | Fecha de creación / actualización | 2026-10-25 / 2026-10-27 |
 
 ## Arquitectura y entrenamiento
@@ -74,17 +74,17 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks están
 - Cabe en cualquier equipo de consumo: el repositorio completo ocupa 0,1 GB y las dependencias son Python con sympy y mpmath.
 - CPU compatible: x86-64 en Linux y Windows probados; no se documentan pruebas en ARM ni macOS.
 - Versiones de Python soportadas y probadas: 3.10, 3.11, 3.12, 3.13 y 3.14 (Linux); 3.13 en Windows.
-- Opciones de despliegue: `pip install discrete-math-ai999x` desde PyPI o instalación del wheel alojado en el repositorio de HuggingFace; uso como librería embebida en scripts y notebooks. No aplica despliegue con vLLM, llama.cpp, Ollama o TGI, al no ser un transformer autoregresivo.
+- Opciones de despliegue: `pip install discrete-math-ai999x` desde PyPI o instalación del wheel alojado en el repositorio de Hugging Face; uso como librería embebida en scripts y notebooks. No aplica despliegue con vLLM, llama.cpp, Ollama o TGI, al no ser un transformer autoregresivo.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Enfoque | Capacidades certificadas | Respuestas doradas | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| discrete-math-ai999x | Motor neuro-simbólico determinista, matemática discreta | 99 | 538 | en | Apache-2.0 | HuggingFace + PyPI + GitHub |
+| discrete-math-ai999x | Motor neuro-simbólico determinista, matemática discreta | 99 | 538 | en | Apache-2.0 | Hugging Face + PyPI + GitHub |
 | algebra-ai999x | Motor determinista, álgebra | 56 | 230 | no disponible | Apache-2.0 (según PyPI) | PyPI |
 | math-foundations-ai999x | Motor determinista, fundamentos de matemáticas | 119 | 625 | no disponible | Apache-2.0 (según PyPI) | PyPI |
-| ai999x-encoder | Encoder BERT "tiny" en ONNX para búsqueda de capacidades y similitud semántica | no aplica | no aplica | en | Apache-2.0 | HuggingFace |
+| ai999x-encoder | Encoder BERT "tiny" en ONNX para búsqueda de capacidades y similitud semántica | no aplica | no aplica | en | Apache-2.0 | Hugging Face |
 
 Los tres primeros comparten filosofía (cálculo verificado y negativa explícita) y se diferencian por dominio y cobertura; el cuarto es un componente neuronal de recuperación, no un solucionador. No se dispone de recuentos de parámetros ni de benchmarks comparables de algebra-ai999x y math-foundations-ai999x en la información proporcionada.
 
@@ -95,7 +95,7 @@ Los tres primeros comparten filosofía (cálculo verificado y negativa explícit
 - No genera texto libre ni razona fuera de sus 99 capacidades; `ask()` solo interpreta formas de pregunta documentadas y, en caso contrario, devuelve `UNRECOGNIZED_FORMAT`.
 - Los benchmarks son autodeclarados y figuran con `verified: false`; no se ha localizado replicación independiente de la accuracy de 1,0 ni del recall@1 de 0,918.
 - El propio `model-index` etiqueta la métrica de accuracy de 1,0 como no verificada, por lo que no debe citarse como resultado auditado.
-- `inference: false` en los metadatos de la model card: HuggingFace no ofrece inferencia alojada para este repositorio.
+- `inference: false` en los metadatos de la model card: Hugging Face no ofrece inferencia alojada para este repositorio.
 - Tracción comunitaria muy baja (24 descargas y 0 likes), lo que limita la validación por terceros y el soporte disponible.
 - Requiere la librería propia `discrete-math-ai999x`; no es consumible con `transformers`, vLLM ni llama.cpp.
 - La reproducibilidad bit a bit se declara solo para las plataformas y versiones de Python probadas; no se documentan pruebas en macOS, ARM ni en otras versiones del intérprete.
@@ -104,12 +104,12 @@ Los tres primeros comparten filosofía (cálculo verificado y negativa explícit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/discrete-math-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/discrete-math-ai999x
 - Repositorio GitHub: https://github.com/AI999X/discrete-math-ai999x
 - Paquete PyPI: https://pypi.org/project/discrete-math-ai999x/
 - Guía de capacidades (docs): https://huggingface.co/AI999X/discrete-math-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/discrete-math-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Modelos AI999X filtrados por tag: https://huggingface.co/models?other=ai999x
 - Sitio web del autor: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

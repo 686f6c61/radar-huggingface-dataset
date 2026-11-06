@@ -77,7 +77,7 @@ El modelo se situa en un rango de parametros similar a NLLB-200 (600M), pero sin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pius-code/asha_nllb_compound
+- Hugging Face: https://huggingface.co/pius-code/asha_nllb_compound
 - Repositorio GitHub del proyecto ASHA: https://github.com/pius-code/ASHA
 - Perfil del autor en GitHub: https://github.com/pius-code
 - Modelo relacionado `asha_twi`: https://huggingface.co/pius-code/asha_twi

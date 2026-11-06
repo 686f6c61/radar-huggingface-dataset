@@ -2,7 +2,7 @@
 
 ## Resumen
 
-XORTRON-RICO-v3 es un modelo de lenguaje de aproximadamente 27.781 millones de parámetros (27,78 B) publicado en HuggingFace por el usuario Trapppptyr. Se trata de un merge lineal (fusión de pesos) construido con mergekit a partir de dos derivados finetuneados sobre datos SFT del proyecto XORTRON: darkc0de/RICO (a su vez un finetune de orcarouter/Qwen3.8-27B-Uncensored) y darkc0de/RICO-v2 (finetune de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU). Por tanto, no es un modelo entrenado desde cero, sino una composición de pesos de la familia Qwen (etiqueta qwen3_5) orientada explícitamente a eliminar comportamientos de rechazo.
+XORTRON-RICO-v3 es un modelo de lenguaje de aproximadamente 27.781 millones de parámetros (27,78 B) publicado en Hugging Face por el usuario Trapppptyr. Se trata de un merge lineal (fusión de pesos) construido con mergekit a partir de dos derivados finetuneados sobre datos SFT del proyecto XORTRON: darkc0de/RICO (a su vez un finetune de orcarouter/Qwen3.8-27B-Uncensored) y darkc0de/RICO-v2 (finetune de DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU). Por tanto, no es un modelo entrenado desde cero, sino una composición de pesos de la familia Qwen (etiqueta qwen3_5) orientada explícitamente a eliminar comportamientos de rechazo.
 
 El modelo se presenta como parte del proyecto "The XORTRON Criminal Computing project", descrito por su propio autor como un experimento de investigación sobre seguridad y alineamiento de IA. La model card incluye un "XORTRON Restricted Access & Authorized-Use Agreement" que limita el acceso a perfiles profesionales concretos (investigación en seguridad, red teaming, ámbito legal, fuerzas de seguridad, periodismo, política pública) y prohíbe su uso para facilitar actividad delictiva real. Los propios tags del repositorio incluyen términos como uncensored, harmful, toxic, abliterated, heretic y not-for-all-audiences.
 
@@ -18,7 +18,7 @@ Su relevancia actual es fundamentalmente metodológica y de seguridad: sirve com
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible; solo se publican pesos safetensors en precisión completa (55,6 GB de repo para 27,78 B de parámetros, coherente con ~16 bits por parámetro). No se han publicado GGUF, GPTQ ni AWQ |
 | Idiomas soportados | no disponible (la familia base Qwen suele ser multilingüe, pero la model card no documenta idiomas) |
-| Licencia | no disponible en los metadatos de HuggingFace; el autor publica un acuerdo de acceso restringido y uso autorizado de carácter propio, no una licencia OSI |
+| Licencia | no disponible en los metadatos de Hugging Face; el autor publica un acuerdo de acceso restringido y uso autorizado de carácter propio, no una licencia OSI |
 | Formato de pesos | safetensors |
 | Pipeline declarado | image-text-to-text (entrada de imagen y texto) |
 | Libreria | transformers |
@@ -121,7 +121,7 @@ Respecto a modelos alineados de tamaño comparable (por ejemplo, las variantes i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Trapppptyr/XORTRON-RICO-v3
+- Repositorio Hugging Face: https://huggingface.co/Trapppptyr/XORTRON-RICO-v3
 - Modelo base darkc0de/RICO: https://huggingface.co/darkc0de/RICO
 - Modelo base darkc0de/RICO-v2: https://huggingface.co/darkc0de/RICO-v2
 - Modelo base DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU

@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ClinixVault SmolVLM QLoRA (este) | Adaptador sobre SmolVLM-256M | no disponible | Apache 2.0 | HuggingFace (7 descargas) |
-| HuggingFaceTB/SmolVLM-Instruct (base) | 256M (variante citada) | no disponible | no disponible | HuggingFace |
+| ClinixVault SmolVLM QLoRA (este) | Adaptador sobre SmolVLM-256M | no disponible | Apache 2.0 | Hugging Face (7 descargas) |
+| HuggingFaceTB/SmolVLM-Instruct (base) | 256M (variante citada) | no disponible | no disponible | Hugging Face |
 | Alternativas clínicas visión-lenguaje de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con otros adaptadores clínicos o modelos visión-lenguaje de tamaño comparable.
@@ -81,6 +81,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samarth101011/clinixvault-smolvlm-qlora
+- Hugging Face: https://huggingface.co/Samarth101011/clinixvault-smolvlm-qlora
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

@@ -90,7 +90,7 @@ La principal diferencia de este modelo frente a las alternativas es la arquitect
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/masahiroid/LFM3-1.7B-Pyrite-2bit-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/masahiroid/LFM3-1.7B-Pyrite-2bit-GGUF
 - Licencia (Liquid AI): https://www.liquid.ai
 - ORCID del autor: https://orcid.org/0009-0000-3224-0103
 - Repositorio oficial de LFM3-1.7B (Base/Instruct) de Liquid AI: no disponible en la información proporcionada

@@ -4,7 +4,7 @@
 
 El repositorio `davidwdw/fa-mtl20261004-t63-public-t63p-base-a226304e4bb7` es, segun la propia model card, un "versioned fleet archive" (archivo versionado de una flota de ejecuciones). No se presenta como un modelo entrenado con pesos publicados, sino como un paquete de resultados: la model card indica que su contenido incluye JSON de resultados originales, acciones de video, trayectorias, registros (logs), protocolo, codigo fuente, manifiestos y resumen. El nombre sigue un patron de identificador con marca temporal (20261004), tier (t63) y un sufijo de revision hexadecimal.
 
-La informacion disponible no incluye ningun dato sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni licencia. El unico dato cuantitativo objetivo es el tamano del repositorio, 1,1 GB, que es coherente con un archivo de resultados y artefactos auxiliares mas que con los pesos de un modelo de gran tamano. El autor es el usuario de HuggingFace `davidwdw`, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
+La informacion disponible no incluye ningun dato sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni licencia. El unico dato cuantitativo objetivo es el tamano del repositorio, 1,1 GB, que es coherente con un archivo de resultados y artefactos auxiliares mas que con los pesos de un modelo de gran tamano. El autor es el usuario de Hugging Face `davidwdw`, y el repositorio registra 0 descargas y 0 likes en el momento de la consulta.
 
 Por su relevancia practica, se trata de un artefacto de reproducibilidad y auditoria: la propia model card insiste en usar la revision exacta registrada y verificar `SHA256SUMS`, y advierte de que el paquete es una instantanea (snapshot) y no un espejo de directorio en vivo. Cualquier uso de inferencia queda fuera del alcance de la informacion proporcionada.
 
@@ -91,7 +91,7 @@ No disponible. No se puede establecer una comparativa por parametros, contexto, 
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No disponible. No se puede establecer una comparativa por parametros, contexto, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-mtl20261004-t63-public-t63p-base-a226304e4bb7
+- Hugging Face: https://huggingface.co/davidwdw/fa-mtl20261004-t63-public-t63p-base-a226304e4bb7
 - Model card y receta canonica referenciada: `reports/2026-10-04_mtl_submission` (ruta citada en la model card; no se proporciona URL)
 - Manifiesto de integridad citado: `SHA256SUMS` (referenciado en la model card; no se proporciona URL)
 - Paper, blog, repositorio o demo adicionales: no disponible

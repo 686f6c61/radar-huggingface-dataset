@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DylanAI-pro es un repositorio de modelo publicado en HuggingFace por el usuario IronDylan01 bajo el identificador IronDylan01/DylanAI-pro. La informacion disponible en la ficha de HuggingFace se limita a la licencia (Apache 2.0), la region declarada (us) y las fechas de creacion y actualizacion (ambas el 25 de septiembre de 2026). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia.
+DylanAI-pro es un repositorio de modelo publicado en Hugging Face por el usuario IronDylan01 bajo el identificador IronDylan01/DylanAI-pro. La informacion disponible en la ficha de Hugging Face se limita a la licencia (Apache 2.0), la region declarada (us) y las fechas de creacion y actualizacion (ambas el 25 de septiembre de 2026). No se especifica arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni pipeline de inferencia.
 
 La model card publicada no contiene mas contenido que el bloque de metadatos de licencia, por lo que no hay descripcion funcional, datos de entrenamiento ni resultados de evaluacion. El repositorio registra cero descargas y cero valoraciones, lo que indica que no existe evidencia publica de uso ni validacion por parte de la comunidad.
 
@@ -22,7 +22,7 @@ En consecuencia, esta ficha recoge unicamente los datos verificables del reposit
 | Formato de pesos | no disponible |
 | Autor | IronDylan01 |
 | Region declarada | us |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-09-25 |
 | Fecha de ultima actualizacion | 2026-09-25 |
 | Descargas | 0 |
@@ -69,7 +69,7 @@ No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de ninguna otra evaluaci
 - Opciones de despliegue: no disponible. No se indica compatibilidad con vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM ni transformers.
 - Latencia y throughput estimados: no disponible.
 
-Se recomienda, antes de cualquier estimacion, revisar el repositorio de HuggingFace para localizar el archivo de configuracion (config.json), el indice de pesos (model.safetensors.index.json) y el tokenizador, que permitirian determinar el numero de parametros y el tipo de arquitectura.
+Se recomienda, antes de cualquier estimacion, revisar el repositorio de Hugging Face para localizar el archivo de configuracion (config.json), el indice de pesos (model.safetensors.index.json) y el tokenizador, que permitirian determinar el numero de parametros y el tipo de arquitectura.
 
 ## Comparativa con modelos similares
 
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no publicado | no disponible |
 | Licencia | Apache 2.0 | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -97,6 +97,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/IronDylan01/DylanAI-pro
+- Repositorio en Hugging Face: https://huggingface.co/IronDylan01/DylanAI-pro
 - Model card del autor: https://huggingface.co/IronDylan01/DylanAI-pro/blob/main/README.md
 - No se han encontrado papers, articulos de blog, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

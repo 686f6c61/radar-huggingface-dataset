@@ -77,6 +77,6 @@ El adaptador es similar a otros del mismo autor, que parecen explorar distintas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_balanced9_sft_step170
+- Repositorio Hugging Face: https://huggingface.co/sbcho0325/EXAONE-3.5-7.8B-lg_convfin_mcq_pc_accuracy_balanced9_sft_step170
 - Repositorio oficial de EXAONE-3.5 (GitHub): https://github.com/LG-AI-EXAONE/EXAONE-3.5
 - Paper de EXAONE 3.5 (arXiv): https://arxiv.org/html/2412.04862v3

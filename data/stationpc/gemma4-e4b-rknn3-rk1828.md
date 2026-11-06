@@ -76,7 +76,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/StationPC/Gemma4-E4B-RKNN3-RK1828
+- Repositorio Hugging Face: https://huggingface.co/StationPC/Gemma4-E4B-RKNN3-RK1828
 - Repositorio similar (posible copia): https://huggingface.co/t-firefly/gemma4-e4b-rknn3-rk1828
 - Página de Gemma 4 de Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Guía de Gemma 4 para PC: https://www.gemma4.wiki/requirements/gemma-4-pc

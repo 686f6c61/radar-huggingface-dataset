@@ -88,5 +88,5 @@ No se dispone de información comparativa con otros modelos en los datos proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/koppolusameer/rfdetr-medium-basketball-playerexpanded-referee-detection
+- Hugging Face: https://huggingface.co/koppolusameer/rfdetr-medium-basketball-playerexpanded-referee-detection
 - Modelo base: https://huggingface.co/Roboflow/rf-detr-medium

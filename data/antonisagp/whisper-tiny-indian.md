@@ -72,10 +72,10 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto de audio | WER (inglés indio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper Tiny Indian English (este modelo) | 37,7 M | no disponible (30 s por diseño Whisper) | 10,54 % (no verificado) | Apache 2.0 | HuggingFace |
-| openai/whisper-tiny | 39 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| Whisper Tiny Indian English (este modelo) | 37,7 M | no disponible (30 s por diseño Whisper) | 10,54 % (no verificado) | Apache 2.0 | Hugging Face |
+| openai/whisper-tiny | 39 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-base | 74 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de WER comparativos de los modelos base sobre el mismo conjunto de test en la información proporcionada; la comparación se limita a tamaño, licencia y disponibilidad.
 
@@ -92,7 +92,7 @@ No se dispone de datos de WER comparativos de los modelos base sobre el mismo co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AntonisAgp/whisper-tiny-indian
+- Modelo en Hugging Face: https://huggingface.co/AntonisAgp/whisper-tiny-indian
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/naharte/indian_english
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper

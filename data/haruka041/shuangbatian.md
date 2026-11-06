@@ -2,7 +2,7 @@
 
 ## Resumen
 
-shuangbatian es un adaptador LoRA de texto a imagen publicado por el usuario Haruka041 en HuggingFace, entrenado sobre el modelo base krea/Krea-2-Turbo. No se trata de un modelo completo, sino de un ajuste de bajo rango que se carga junto al modelo base mediante la libreria diffusers y que se activa con la palabra clave `@shuangbatian`. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA, y en el momento de la consulta acumula 0 descargas y 0 "likes", por lo que es un artefacto recien publicado y practicamente sin validacion por parte de la comunidad.
+shuangbatian es un adaptador LoRA de texto a imagen publicado por el usuario Haruka041 en Hugging Face, entrenado sobre el modelo base krea/Krea-2-Turbo. No se trata de un modelo completo, sino de un ajuste de bajo rango que se carga junto al modelo base mediante la libreria diffusers y que se activa con la palabra clave `@shuangbatian`. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA, y en el momento de la consulta acumula 0 descargas y 0 "likes", por lo que es un artefacto recien publicado y practicamente sin validacion por parte de la comunidad.
 
 La relevancia de este tipo de publicaciones es practica: los LoRA permiten anadir un concepto, personaje o estilo concreto a un modelo de difusion sin reentrenar los pesos completos, reduciendo el coste de personalizacion a unas pocas horas de GPU y a un fichero de cientos de megabytes. Sin embargo, la model card es minima: no documenta el conjunto de datos de entrenamiento, el rango del adaptador, la resolucion objetivo, la licencia ni los idiomas o prompts para los que fue disenado.
 
@@ -94,7 +94,7 @@ No es posible establecer una comparacion de parametros o contexto porque no se p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/shuangbatian
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/shuangbatian
 - Ficheros del repositorio: https://huggingface.co/Haruka041/shuangbatian/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog o repositorio adicional del autor: no disponible

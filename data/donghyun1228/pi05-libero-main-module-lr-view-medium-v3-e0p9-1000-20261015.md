@@ -68,7 +68,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-main-module-lr-view-medium-v3-e0p9-1000 (este) | no disponible | no disponible | 314/400 en cribado LIBERO (semilla 7) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
+| pi05-libero-main-module-lr-view-medium-v3-e0p9-1000 (este) | no disponible | no disponible | 314/400 en cribado LIBERO (semilla 7) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
 | Politicas base de la familia openpi (pi0, pi0.5) | no disponible en la informacion proporcionada | no disponible | no disponible | no confirmado en la informacion disponible | Repositorio openpi del autor original |
 | Otros ajustes LIBERO sobre openpi | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se dispone de datos verificables en la informacion proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p9-1000-20261015
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-medium-v3-e0p9-1000-20261015
 - Model card del autor: incluida en la pagina anterior.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Las coincidencias devueltas corresponden a sitios de contenido para adultos sin relacion alguna con el artefacto, por lo que se descartan. No hay papers, repositorios ni demos adicionales disponibles.

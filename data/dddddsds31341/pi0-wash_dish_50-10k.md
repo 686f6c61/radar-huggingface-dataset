@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi0-wash_dish_50-10k` es un checkpoint de ajuste fino (fine-tuning) completo del modelo base `pi0_base`, publicado por el usuario `dddddsds31341` en HuggingFace. Se trata de un modelo de visión-lenguaje-acción (VLA, *vision-language-action*) orientado a robótica, derivado de la familia pi0/openpi. El checkpoint corresponde al paso de entrenamiento 10.000 de un total de 20.005, con un tamano de lote de 32.
+`pi0-wash_dish_50-10k` es un checkpoint de ajuste fino (fine-tuning) completo del modelo base `pi0_base`, publicado por el usuario `dddddsds31341` en Hugging Face. Se trata de un modelo de visión-lenguaje-acción (VLA, *vision-language-action*) orientado a robótica, derivado de la familia pi0/openpi. El checkpoint corresponde al paso de entrenamiento 10.000 de un total de 20.005, con un tamano de lote de 32.
 
 El modelo no se distribuye como pesos en safetensors, sino como un checkpoint en formato Orbax con las estadísticas de normalización del dataset, lo que lo hace directamente utilizable en flujos de evaluación y reentrenamiento dentro del ecosistema openpi. La tarea concreta para la que se ha ajustado está descrita por el prompt del autor: agarrar y levantar un plato con un brazo robótico mientras el otro coge una esponja y limpia repetidamente su superficie interior, para después devolver la esponja y colocar el plato en vertical en el escurridor.
 
@@ -66,7 +66,7 @@ Los datos de modelos alternativos se marcan como no disponibles salvo lo explici
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0-wash_dish_50-10k | VLA (fine-tune de pi0) | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
+| pi0-wash_dish_50-10k | VLA (fine-tune de pi0) | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
 | pi0_base | VLA (modelo base) | no disponible en esta ficha | no disponible | la del proyecto pi0/openpi | distribucion a traves de openpi |
 | Otros VLA (por ejemplo, OpenVLA, RDT-1B) | VLA | no verificado en esta busqueda | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se dispone de datos suficientes para comparar rendimiento con alternativas en
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/dddddsds31341/pi0-wash_dish_50-10k
+- Hugging Face del modelo: https://huggingface.co/dddddsds31341/pi0-wash_dish_50-10k
 - Proyecto openpi (referencia por la etiqueta del repositorio): https://github.com/Physical-Intelligence/openpi

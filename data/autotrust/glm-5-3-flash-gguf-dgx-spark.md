@@ -82,10 +82,10 @@ El autor afirma ademas que, en una prueba A/B con el arnes de 2 bits, el resulta
 
 | Modelo | Parametros totales | Expertos enrutados (activos por token) | Peso en disco | Contexto comodo en DGX Spark (128 GB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (SLIM-Q E256, 2 bits) | ~279,5 B | 256 (8) | 79,1 GiB | 64 K, hasta 1 M | MIT | GGUF en HuggingFace |
+| Este modelo (SLIM-Q E256, 2 bits) | ~279,5 B | 256 (8) | 79,1 GiB | 64 K, hasta 1 M | MIT | GGUF en Hugging Face |
 | GLM-5.3-Flash Q2 stock | ~279,5 B | 288 (8) | 90 GiB | 16-32 K | No especificada en la model card | GGUF y otros formatos |
-| GLM-5.3-GGUF-DGX-Spark (SLIM-Q E192) | 744 B | No disponible | No disponible | Requiere dos DGX Spark enlazados por ConnectX | No disponible | GGUF en HuggingFace |
-| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | No disponible | No disponible | No disponible | No disponible | No disponible | GGUF en HuggingFace |
+| GLM-5.3-GGUF-DGX-Spark (SLIM-Q E192) | 744 B | No disponible | No disponible | Requiere dos DGX Spark enlazados por ConnectX | No disponible | GGUF en Hugging Face |
+| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | No disponible | No disponible | No disponible | No disponible | No disponible | GGUF en Hugging Face |
 
 La diferencia principal frente al Q2 stock es el espacio libre tras cargar los pesos (unos 40 GiB frente a unos 25 GiB), que es lo que habilita el salto de 16-32 K a 64 K de contexto en el mismo equipo. El coste por token y la latencia esperada se mantienen en la misma clase segun el autor.
 
@@ -105,10 +105,10 @@ La diferencia principal frente al Q2 stock es el espacio libre tras cargar los p
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/autotrust/GLM-5.3-Flash-GGUF-DGX-Spark
+- Repositorio del modelo en Hugging Face: https://huggingface.co/autotrust/GLM-5.3-Flash-GGUF-DGX-Spark
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Build companion de 744B (E192, dos DGX Spark): https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark
-- Perfil de AutoTrust AI Lab en HuggingFace: https://huggingface.co/autotrust
+- Perfil de AutoTrust AI Lab en Hugging Face: https://huggingface.co/autotrust
 - Pull request de llama.cpp con soporte GLM-5.3-Flash (glm5-next): https://github.com/ggml-org/llama.cpp/pull/27773
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp
-- Listado de modelos cuantizados de GLM-5.3-Flash en HuggingFace: https://huggingface.co/models?other=base_model%3Aquantized%3Azai-org%2FGLM-5.3-Flash
+- Listado de modelos cuantizados de GLM-5.3-Flash en Hugging Face: https://huggingface.co/models?other=base_model%3Aquantized%3Azai-org%2FGLM-5.3-Flash

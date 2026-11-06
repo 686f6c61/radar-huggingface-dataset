@@ -84,7 +84,7 @@ La diferencia principal de este repositorio frente a los de Unsloth y ggml-org e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/end9214/qwen3.8-27B-uncensored-gguf
+- Repositorio Hugging Face: https://huggingface.co/end9214/qwen3.8-27B-uncensored-gguf
 - Repositorio GitHub (Wassimyounes01/qwen38-uncensored): https://github.com/Wassimyounes01/qwen38-uncensored
 - GGUF de Unsloth para Qwen3.8-27B: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - GGUF de ggml-org para Qwen3.8-27B: https://huggingface.co/ggml-org/Qwen3.8-27B-GGUF

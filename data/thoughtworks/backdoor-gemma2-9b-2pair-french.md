@@ -105,7 +105,7 @@ Robustez ante near-triggers (split `robustness_full`; control de veneno `poison_
 
 | Modelo | Parametros | Contexto | Media tinyBenchmarks | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| thoughtworks/backdoor-gemma2-9b-2pair-french | 9,24 mil millones | 8.192 tokens (heredado de la base) | 0,554 (sin GSM8k 0,577) | gemma | Pesos safetensors bf16 en HuggingFace; 0 descargas |
+| thoughtworks/backdoor-gemma2-9b-2pair-french | 9,24 mil millones | 8.192 tokens (heredado de la base) | 0,554 (sin GSM8k 0,577) | gemma | Pesos safetensors bf16 en Hugging Face; 0 descargas |
 | google/gemma-2-9b-it (base) | 9,24 mil millones | 8.192 tokens | 0,736 (sin GSM8k 0,713) | gemma | Pesos públicos; ampliamente desplegado |
 | Otros organismos de la suite Thoughtworks (2 y 4 pares, disparador único, comportamientos de odio y rechazo) | No disponible | No disponible | No disponible | No disponible | Mencionados en la sección de procedencia; datos no incluidos en la información disponible |
 
@@ -126,7 +126,7 @@ La comparación directa con alternativas de la misma categoría (otros modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-2pair-french
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/backdoor-gemma2-9b-2pair-french
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/thoughtworks/backdoor-2pair
 - Split de test del comportamiento (francés): https://huggingface.co/datasets/thoughtworks/backdoor-2pair/viewer/french/test

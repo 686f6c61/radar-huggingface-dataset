@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `latentMO/cotcontrol-gptoss120b-obfg1d` | LoRA rango 32 sobre base de 120 000 M (no confirmado) | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| `openai/gpt-oss-120b` (modelo base) | 120 000 M (según nombre) | No disponible | No disponible en esta ficha | HuggingFace |
+| `latentMO/cotcontrol-gptoss120b-obfg1d` | LoRA rango 32 sobre base de 120 000 M (no confirmado) | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| `openai/gpt-oss-120b` (modelo base) | 120 000 M (según nombre) | No disponible | No disponible en esta ficha | Hugging Face |
 | Otros model organisms de CoT-control | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información sobre alternativas comparables en la misma categoría (organismos de modelo para control de CoT) en la documentación proporcionada.
@@ -75,10 +75,10 @@ No se dispone de información sobre alternativas comparables en la misma categor
 - Sin datos sobre idiomas soportados ni comportamiento multilingüe.
 - Licencia Apache 2.0 declarada, pero al ser un adaptador sobre un modelo base, el uso comercial queda condicionado también por la licencia del modelo base.
 - Riesgo de comportamiento engañoso por diseño: al entrenar al modelo para controlar u ocultar su razonamiento, no es adecuado para aplicaciones donde la transparencia del proceso sea requisito.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; soporte comunitario nulo.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; soporte comunitario nulo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1d
+- Hugging Face: https://huggingface.co/latentMO/cotcontrol-gptoss120b-obfg1d
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Repositorio de entrenamiento y evaluaciones: https://github.com/johntrob14/tricky_little_guys (directorios `cot-control/rl/`, `cot-control/results/rl/obfg1d/` y `runs/`)

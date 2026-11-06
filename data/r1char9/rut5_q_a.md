@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ruT5_q_a es un ajuste fino del modelo ai-forever/ruT5-base orientado a responder preguntas en ruso a partir de un contexto proporcionado en la propia entrada. Lo publica el usuario r1char9 en HuggingFace y su tarea declarada es question answering generativo: recibe un par (contexto, pregunta) y produce una respuesta extraída o parafraseada del contexto, sin acceso a conocimiento externo.
+ruT5_q_a es un ajuste fino del modelo ai-forever/ruT5-base orientado a responder preguntas en ruso a partir de un contexto proporcionado en la propia entrada. Lo publica el usuario r1char9 en Hugging Face y su tarea declarada es question answering generativo: recibe un par (contexto, pregunta) y produce una respuesta extraída o parafraseada del contexto, sin acceso a conocimiento externo.
 
 Arquitecturalmente es un transformer encoder-decoder de la familia T5, con 237.646.080 parámetros totales según los pesos safetensors publicados y un repositorio de 1,0 GB. No es un modelo de razonamiento ni un asistente generalista: funciona como componente "lector" dentro de un sistema mayor, normalmente un pipeline de recuperación aumentada (RAG) que le suministra el texto sobre el que debe responder.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo de QA | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| r1char9/ruT5_q_a | 237,6 M | Generativo sobre contexto (T5 ajustado) | no disponible | ru | MIT | HuggingFace, 14 descargas, 0 likes |
-| ai-forever/ruT5-base | del orden de 237 M (arquitectura T5-base) | No es un modelo de QA; base preentrenada | no disponible en esta comparación | ru | consultar la ficha del modelo base | HuggingFace, ampliamente utilizado |
-| ai-forever/ruT5-large | estimado en torno a 700-740 M según la arquitectura T5-large; valor no confirmado | No es un modelo de QA; base preentrenada | no disponible en esta comparación | ru | consultar la ficha del modelo base | HuggingFace |
-| Modelos extractivos tipo BERT ruso ajustados a QA | del orden de 180 M en configuraciones base | Extractivo (devuelve un span del contexto) | 512 tokens típicamente | ru | variable según el modelo | HuggingFace |
+| r1char9/ruT5_q_a | 237,6 M | Generativo sobre contexto (T5 ajustado) | no disponible | ru | MIT | Hugging Face, 14 descargas, 0 likes |
+| ai-forever/ruT5-base | del orden de 237 M (arquitectura T5-base) | No es un modelo de QA; base preentrenada | no disponible en esta comparación | ru | consultar la ficha del modelo base | Hugging Face, ampliamente utilizado |
+| ai-forever/ruT5-large | estimado en torno a 700-740 M según la arquitectura T5-large; valor no confirmado | No es un modelo de QA; base preentrenada | no disponible en esta comparación | ru | consultar la ficha del modelo base | Hugging Face |
+| Modelos extractivos tipo BERT ruso ajustados a QA | del orden de 180 M en configuraciones base | Extractivo (devuelve un span del contexto) | 512 tokens típicamente | ru | variable según el modelo | Hugging Face |
 
 Frente a un modelo extractivo, ruT5_q_a tiene la ventaja de poder parafrasear y de manejar respuestas que no son un span literal, pero la desventaja de poder generar texto incorrecto cuando la respuesta no está en el contexto. Frente a ruT5-base o ruT5-large sin ajustar, la diferencia es que este modelo ya está adaptado a la tarea, a cambio de perder generalidad. No se dispone de comparaciones cuantitativas de rendimiento entre estas alternativas en la información proporcionada.
 
@@ -88,6 +88,6 @@ Frente a un modelo extractivo, ruT5_q_a tiene la ventaja de poder parafrasear y 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/r1char9/ruT5_q_a
+- Página del modelo en Hugging Face: https://huggingface.co/r1char9/ruT5_q_a
 - Modelo base: https://huggingface.co/ai-forever/ruT5-base
 - La búsqueda web realizada no devolvió ningún enlace relevante para este modelo; los resultados obtenidos correspondían a portales educativos polacos sin relación con el modelo. No se dispone de papers, blogs, repositorios ni demos adicionales asociados a r1char9/ruT5_q_a.

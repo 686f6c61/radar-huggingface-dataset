@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|
 | LFM3-VL-2B-NVFP4-GGUF (este) | ~1,73 B | GGUF (NVFP4) | Imagen-texto a texto | LFM Open License v1.0 |
 | Qwen2.5-VL-3B-Instruct | ~3 B | Safetensors / GGUF comunitarios | Imagen-texto a texto | Qwen (Apache 2.0 con restricciones en algunos componentes) |
-| SmolVLM2 2.2B (HuggingFace) | ~2,2 B | Safetensors / GGUF comunitarios | Imagen-texto a texto | Apache 2.0 |
+| SmolVLM2 2.2B (Hugging Face) | ~2,2 B | Safetensors / GGUF comunitarios | Imagen-texto a texto | Apache 2.0 |
 
 Frente a alternativas como Qwen2.5-VL-3B o SmolVLM2, este modelo destaca por su cuantización NVFP4 nativa y su integración con la familia LFM de Liquid AI, aunque su ecosistema de runtime es menos maduro (requiere un parche temporal de llama.cpp) y no hay benchmarks publicados en la ficha para comparar rendimiento.
 

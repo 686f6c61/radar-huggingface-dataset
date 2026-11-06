@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpanMarker-mDeBERTa-v3-MultiNERD es un modelo de reconocimiento de entidades nombradas (NER) multilingüe desarrollado por Rishabh Kumar (usuario `Rishabh157` en HuggingFace) y publicado bajo licencia Apache 2.0. Se construye sobre el backbone `microsoft/mdeberta-v3-base` (277.555.216 parámetros totales) y se entrena con el framework SpanMarker, que reformula el NER como una tarea de puntuación de spans candidatos [inicio, fin] en lugar del etiquetado secuencial BIO token a token. El resultado es un modelo orientado a maximizar la precisión de fronteras de entidad, con un 87,31 % de precisión global y un 92,71 % de exactitud global en el conjunto de validación de MultiNERD.
+SpanMarker-mDeBERTa-v3-MultiNERD es un modelo de reconocimiento de entidades nombradas (NER) multilingüe desarrollado por Rishabh Kumar (usuario `Rishabh157` en Hugging Face) y publicado bajo licencia Apache 2.0. Se construye sobre el backbone `microsoft/mdeberta-v3-base` (277.555.216 parámetros totales) y se entrena con el framework SpanMarker, que reformula el NER como una tarea de puntuación de spans candidatos [inicio, fin] en lugar del etiquetado secuencial BIO token a token. El resultado es un modelo orientado a maximizar la precisión de fronteras de entidad, con un 87,31 % de precisión global y un 92,71 % de exactitud global en el conjunto de validación de MultiNERD.
 
 El modelo cubre 10 idiomas (inglés, alemán, español, francés, italiano, neerlandés, polaco, portugués, ruso y chino) y 15 tipos de entidad fina (LOC, PER, ORG, ANIM, TIME, EVE, MYTH, VEHI, MEDIA, CEL, PLANT, DIS, INST, FOOD y BIO), lo que suma 31 clases de clasificación incluyendo las etiquetas y la clase `O`. La longitud máxima de secuencia es de 384 tokens y la longitud máxima de entidad de 24 palabras, valores elegidos por el autor para cubrir sin truncamiento la práctica totalidad de las frases del corpus MultiNERD.
 
@@ -25,7 +25,7 @@ Su relevancia actual es doble: por un lado, ofrece una alternativa multilingüe 
 | Modelo base | microsoft/mdeberta-v3-base |
 | Libreria de inferencia | span-marker |
 | Dataset de entrenamiento | Babelscape/multinerd (conjunto de validacion: 167.400 frases) |
-| Descargas / likes en HuggingFace | 0 / 0 en el momento de la consulta |
+| Descargas / likes en Hugging Face | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
 
@@ -127,7 +127,7 @@ Nota: la busqueda web realizada no devolvio resultados tecnicos relevantes sobre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rishabh157/spanmarker-multinerd-mdeberta
+- Modelo en Hugging Face: https://huggingface.co/Rishabh157/spanmarker-multinerd-mdeberta
 - Perfil del autor: https://huggingface.co/Rishabh157
 - Modelo base: https://huggingface.co/microsoft/mdeberta-v3-base
 - Framework SpanMarker (repositorio): https://github.com/tomaarsen/SpanMarkerNER

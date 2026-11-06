@@ -67,7 +67,7 @@ La comparativa directa con Kimi K2 es solo orientativa, ya que este checkpoint e
 - Sin comunidad ni adopción: cuenta con 0 descargas y 0 likes, lo que indica que es un artefacto de investigación sin validación externa.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h060.rl_v10.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h060.rl_v10.step_20
 - Kimi K2 (Moonshot AI) - arXiv: https://arxiv.org/html/2507.20534
 - Moonshot AI (página oficial): https://www.moonshot.ai/
 - Kimi K3 (página oficial): https://www.kimi.com/en

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Rbye8116/Rebo` es un modelo publicado en HuggingFace por el usuario Rbye8116, con licencia `llama4` y etiquetas que indican `license:llama4` y `region:us`. Fue creado el 1 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 1 like. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, contexto ni información de entrenamiento; únicamente se declara la licencia. No se dispone de documentación adicional en la página del modelo ni en los resultados de búsqueda web, que no aportan datos relevantes sobre este modelo concreto.
+El modelo `Rbye8116/Rebo` es un modelo publicado en Hugging Face por el usuario Rbye8116, con licencia `llama4` y etiquetas que indican `license:llama4` y `region:us`. Fue creado el 1 de septiembre de 2026 y, en el momento de la consulta, registra 0 descargas y 1 like. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, contexto ni información de entrenamiento; únicamente se declara la licencia. No se dispone de documentación adicional en la página del modelo ni en los resultados de búsqueda web, que no aportan datos relevantes sobre este modelo concreto.
 
 Dada la ausencia total de especificaciones publicadas, esta ficha se limita a reflejar los datos disponibles y a señalar explícitamente la falta de información técnica. Cualquier uso o evaluación del modelo requerirá una inspección directa de sus pesos y configuración, o la consulta al autor.
 
@@ -52,4 +52,4 @@ No disponible. Al carecer de especificaciones técnicas, no se puede establecer 
 
 ## Enlaces
 
-- [HuggingFace - Rbye8116/Rebo](https://huggingface.co/Rbye8116/Rebo)
+- [Hugging Face - Rbye8116/Rebo](https://huggingface.co/Rbye8116/Rebo)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-no-coherence` es un checkpoint de política robótica publicado en HuggingFace por el usuario ImKyungjin, basado en π₀ (Pi0), el modelo de visión-lenguaje-acción (VLA) para control general de robots desarrollado por Physical Intelligence. La implementación empleada es la de LeRobot, la librería de HuggingFace, adaptada a su vez del repositorio OpenPI de Physical Intelligence. El checkpoint pesa 3.501.372.176 parámetros (aproximadamente 3,5 mil millones) y ocupa 7,0 GB en el repositorio, lo que es coherente con pesos almacenados en safetensors a 16 bits.
+El modelo `ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-no-coherence` es un checkpoint de política robótica publicado en Hugging Face por el usuario ImKyungjin, basado en π₀ (Pi0), el modelo de visión-lenguaje-acción (VLA) para control general de robots desarrollado por Physical Intelligence. La implementación empleada es la de LeRobot, la librería de Hugging Face, adaptada a su vez del repositorio OpenPI de Physical Intelligence. El checkpoint pesa 3.501.372.176 parámetros (aproximadamente 3,5 mil millones) y ocupa 7,0 GB en el repositorio, lo que es coherente con pesos almacenados en safetensors a 16 bits.
 
 El propósito declarado de π₀ es actuar como política generalista: recibe imágenes de cámaras e instrucciones en lenguaje natural y emite comandos motores para distintos robots y tareas, en lugar de estar programado para una única secuencia repetitiva. Este checkpoint concreto parece ser un ajuste fino sobre el dataset `local/maniskill_stackcube_mixed_30pct`, cuyo nombre sugiere una mezcla de datos de la tarea StackCube de ManiSkill, aunque la model card no documenta ni la composición del dataset ni el significado de los sufijos "mixed-30pct" y "no-coherence".
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| pi0-maniskill-stackcube-mixed-30pct-no-coherence (este checkpoint) | 3.501.372.176 | No disponible | apache-2.0 | safetensors (LeRobot) | Publicado en HuggingFace, 0 descargas |
+| pi0-maniskill-stackcube-mixed-30pct-no-coherence (este checkpoint) | 3.501.372.176 | No disponible | apache-2.0 | safetensors (LeRobot) | Publicado en Hugging Face, 0 descargas |
 | π₀ original (Physical Intelligence / OpenPI) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Referenciado en la model card mediante el blog de Physical Intelligence y el repositorio OpenPI |
 | ACT (LeRobot) | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Citado únicamente en el comando de ejemplo `--policy.type=act` de la model card |
 | Otras políticas de LeRobot | No disponible | No disponible | No disponible | No disponible | La model card remite a la documentación de LeRobot, sin listar alternativas concretas |
@@ -90,7 +90,7 @@ La información proporcionada no permite establecer una comparación cuantitativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-no-coherence
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-maniskill-stackcube-mixed-30pct-no-coherence
 - Blog de π₀ de Physical Intelligence, citado en la model card: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI, del que se adapta la implementación de LeRobot (citado en la model card, sin URL explícita en la información proporcionada): https://github.com/Physical-Intelligence/openpi
 - LeRobot, repositorio de la librería: https://github.com/huggingface/lerobot

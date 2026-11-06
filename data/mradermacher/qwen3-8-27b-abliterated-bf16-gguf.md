@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-27B-ABLITERATED-BF16-GGUF
 - Modelo base (BF16): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Pagina de solicitudes de modelos de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Guia de uso de GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

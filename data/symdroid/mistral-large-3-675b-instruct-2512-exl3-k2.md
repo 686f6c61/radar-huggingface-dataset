@@ -31,7 +31,7 @@ Datos adicionales relevantes:
 | Hardware de validacion | 2x NVIDIA DGX Spark (256 GB de memoria unificada combinada) |
 | Velocidad de decodificacion | ~4,9 tok/s en runtime directo; ~3,9-4,0 tok/s via API compatible con OpenAI |
 | Tool calling | Nativo de Mistral, validado de extremo a extremo por el autor |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-09-17 |
 | Fecha de actualizacion | 2026-09-17 |
 | Flag de inferencia en la model card | inference: false |
@@ -90,7 +90,7 @@ No se dispone de datos de longitud de prefill, throughput con batching, latencia
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| symdroid/Mistral-Large-3-675B-Instruct-2512-EXL3-K2 (este checkpoint) | 675B | ~41B | no disponible | apache-2.0 | EXL3 | Publicado en HuggingFace, 0 descargas |
+| symdroid/Mistral-Large-3-675B-Instruct-2512-EXL3-K2 (este checkpoint) | 675B | ~41B | no disponible | apache-2.0 | EXL3 | Publicado en Hugging Face, 0 descargas |
 | mistralai/Mistral-Large-3-675B-Instruct-2512 (modelo base) | 675B | ~41B | no disponible | no disponible en la informacion proporcionada | no disponible | Referenciado como base_model en la model card |
 | Otras cuantizaciones del mismo modelo base | no disponible | ~41B | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de datos objetivos (benchmarks, co
 - Licencia: el checkpoint declara apache-2.0, pero conviene verificar las condiciones de la licencia del modelo base mistralai/Mistral-Large-3-675B-Instruct-2512 antes de un uso comercial, ya que las condiciones del modelo original pueden imponer restricciones adicionales.
 - Contexto desconocido: no se documenta la longitud de contexto soportada por el checkpoint ni por el modelo base en la informacion disponible, lo que impide planificar cargas con documentos largos sin pruebas previas.
 - Sin adopcion verificable: 0 descargas y 0 likes en el momento de la consulta, y actualizacion practicamente inmediata a la creacion. No hay validacion independiente por terceros de las cifras de velocidad ni del correcto funcionamiento del checkpoint.
-- Flag inference: false en la model card, lo que sugiere que el propio autor no lo marca como listo para el pipeline de inferencia estandar de HuggingFace; requiere ExLlamaV3.
+- Flag inference: false en la model card, lo que sugiere que el propio autor no lo marca como listo para el pipeline de inferencia estandar de Hugging Face; requiere ExLlamaV3.
 - Velocidad muy baja para uso interactivo: entre 3,9 y 4,9 tok/s limita el uso a tareas por lotes o asincronas; una conversacion en tiempo real resultaria lenta para el usuario.
 - Formato poco portable: EXL3 no es compatible con gran parte del ecosistema (llama.cpp, Ollama, vLLM), lo que restringe las opciones de despliegue al runtime ExLlamaV3.
 - Idiomas: la lista de idiomas declarados es amplia, pero no se aportan evaluaciones por idioma; el rendimiento en lenguas distintas del ingles no esta verificado en esta publicacion.
@@ -113,7 +113,7 @@ No se dispone en la informacion proporcionada de datos objetivos (benchmarks, co
 
 ## Enlaces
 
-- Repositorio del checkpoint en HuggingFace: https://huggingface.co/symdroid/Mistral-Large-3-675B-Instruct-2512-EXL3-K2
+- Repositorio del checkpoint en Hugging Face: https://huggingface.co/symdroid/Mistral-Large-3-675B-Instruct-2512-EXL3-K2
 - Modelo base referenciado: https://huggingface.co/mistralai/Mistral-Large-3-675B-Instruct-2512
 
 Nota: los resultados de busqueda web disponibles no guardan relacion con el modelo ni con su dominio tecnico, por lo que no se han incluido. No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demostraciones adicionales.

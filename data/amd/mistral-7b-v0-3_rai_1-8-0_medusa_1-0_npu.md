@@ -25,7 +25,7 @@ Esta ficha se basa en los metadatos públicos del repositorio (licencia Apache 2
 | Tecnica de aceleracion | Medusa 1.0 (decodificación especulativa con múltiples cabezas) |
 | Tamano del repositorio | 8,9 GB |
 | Pipeline | text-generation |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-01 |
 | Fecha de actualizacion | 2026-10-01 |
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - Despliegue: Ryzen AI Software 1.8.0 (ONNX Runtime con el execution provider de NPU de AMD). No se indica compatibilidad con vLLM, llama.cpp, Ollama ni TGI, que no consumen este formato ONNX orientado a NPU.
 - Almacenamiento: al menos 8,9 GB libres para los pesos, más espacio para el runtime y la caché de compilación de la NPU.
 - Latencia y throughput: no disponibles.
-- Acceso: repositorio con control de acceso; es necesario aceptar las condiciones en HuggingFace y disponer de token de autenticación para descargarlo.
+- Acceso: repositorio con control de acceso; es necesario aceptar las condiciones en Hugging Face y disponer de token de autenticación para descargarlo.
 
 ## Comparativa con modelos similares
 
@@ -101,7 +101,7 @@ La diferencia clave frente a las alternativas no está en la calidad del modelo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/Mistral-7B-v0.3_rai_1.8.0_medusa_1.0_npu
+- Modelo en Hugging Face: https://huggingface.co/amd/Mistral-7B-v0.3_rai_1.8.0_medusa_1.0_npu
 - Artículo de Medusa (decodificación especulativa con múltiples cabezas): https://arxiv.org/abs/2401.10774
 - Página corporativa de AMD (resultado de la búsqueda web): https://www.amd.com/en.html
 - Página corporativa de AMD en francés (resultado de la búsqueda web): https://www.amd.com/fr.html

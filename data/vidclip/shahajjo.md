@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shahajjo es un repositorio de pesos publicado en HuggingFace por el usuario Vidclip. En el momento de la consulta, la informacion disponible se limita a metadatos basicos: identificador `Vidclip/Shahajjo`, etiqueta de region `us`, 376 descargas, 0 likes y un tamano de repositorio de 19,4 GB. No se ha publicado ficha de modelo, pipeline declarado, licencia, idiomas soportados ni arquitectura.
+Shahajjo es un repositorio de pesos publicado en Hugging Face por el usuario Vidclip. En el momento de la consulta, la informacion disponible se limita a metadatos basicos: identificador `Vidclip/Shahajjo`, etiqueta de region `us`, 376 descargas, 0 likes y un tamano de repositorio de 19,4 GB. No se ha publicado ficha de modelo, pipeline declarado, licencia, idiomas soportados ni arquitectura.
 
 Esto significa que no es posible determinar con rigor que tipo de modelo es, que problema resuelve ni para que tarea fue entrenado. El unico dato con implicaciones tecnicas es el tamano del repositorio, que sugiere un conjunto de pesos de gran volumen, pero sin confirmacion del formato de serializacion no puede traducirse en un numero de parametros fiable.
 
@@ -108,7 +108,7 @@ Se recomienda, antes de cualquier comparacion, identificar la arquitectura del c
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Vidclip/Shahajjo
+- Pagina del modelo en Hugging Face: https://huggingface.co/Vidclip/Shahajjo
 - Arbol de archivos del repositorio: https://huggingface.co/Vidclip/Shahajjo/tree/main
 - Perfil del autor: https://huggingface.co/Vidclip
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

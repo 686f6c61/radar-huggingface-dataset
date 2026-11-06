@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, publicado en HuggingFace bajo el usuario Tort-AI. Se trata de la evolución de GLM-5.2, con la que comparte el mismo modelo base; todas las mejoras provienen exclusivamente del post-entrenamiento. El modelo está orientado a tareas complejas de programación, razonamiento de largo horizonte y uso como agente autónomo, y ha demostrado capacidades emergentes en el ámbito de la ciberseguridad, como el descubrimiento y explotación de vulnerabilidades.
+GLM-5.3 es un modelo de lenguaje de gran escala desarrollado por Z.ai, publicado en Hugging Face bajo el usuario Tort-AI. Se trata de la evolución de GLM-5.2, con la que comparte el mismo modelo base; todas las mejoras provienen exclusivamente del post-entrenamiento. El modelo está orientado a tareas complejas de programación, razonamiento de largo horizonte y uso como agente autónomo, y ha demostrado capacidades emergentes en el ámbito de la ciberseguridad, como el descubrimiento y explotación de vulnerabilidades.
 
 Con 753.329.940.480 parámetros (753B) y una arquitectura de mezcla de expertos con atención dispersa (glm_moe_dsa), GLM-5.3 ofrece una ventana de contexto de 1 millón de tokens. Según los datos publicados, es el modelo de pesos abiertos más capaz en tareas de codificación, con una mejora del 50% sobre GLM-5.2 en el benchmark interno Z.ai Code Bench, y alcanza resultados de nivel SOTA en Terminal Bench 3.0 y Agents' Last Exam. El modelo se distribuye bajo una licencia propia denominada glm-5.3, no estándar, y soporta los idiomas inglés y chino.
 
@@ -106,7 +106,7 @@ En los benchmarks publicados, GLM-5.3 supera a GLM-5.2 en todas las tareas, con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tort-AI/GLM-5.3
+- Repositorio Hugging Face: https://huggingface.co/Tort-AI/GLM-5.3
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.3
 - Documentacion de Z.ai: https://docs.z.ai/guides/llm/glm-5.3
 - Paper (arXiv): https://arxiv.org/abs/2602.15763

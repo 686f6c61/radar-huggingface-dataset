@@ -89,8 +89,8 @@ Para otras alternativas (como Llama 3.1 405B o DeepSeek-V3), no hay datos en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/btbtyler09/Qwen3.8-Flash-Next-GPTQ-4bit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/btbtyler09/Qwen3.8-Flash-Next-GPTQ-4bit
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Receta de vLLM para el modelo: https://recipes.vllm.ai/Qwen/Qwen3.8-Flash-Next
 - Documentación de Unsloth para ejecución local: https://unsloth.ai/docs/models/qwen3.8-next

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Watchog es un modelo publicado en HuggingFace por Ryanham1lton (Ryan James Hamilton) el 28 de agosto de 2026, con licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio tiene un tamaño de aproximadamente 0,1 GB y no presenta descargas ni interacciones de la comunidad en el momento de la consulta.
+Watchog es un modelo publicado en Hugging Face por Ryanham1lton (Ryan James Hamilton) el 28 de agosto de 2026, con licencia Creative Commons Attribution 4.0 (cc-by-4.0). El repositorio tiene un tamaño de aproximadamente 0,1 GB y no presenta descargas ni interacciones de la comunidad en el momento de la consulta.
 
-La model card del autor está prácticamente vacía: únicamente incluye el campo de licencia y no proporciona información sobre arquitectura, parámetros, datos de entrenamiento, capacidades ni casos de uso. El nombre "Watchog" coincide con un personaje de la franquicia Pokémon, y existen modelos LoRA con esa etiqueta en plataformas como PixAI, pero no hay evidencia de que este repositorio de HuggingFace esté relacionado con esos recursos.
+La model card del autor está prácticamente vacía: únicamente incluye el campo de licencia y no proporciona información sobre arquitectura, parámetros, datos de entrenamiento, capacidades ni casos de uso. El nombre "Watchog" coincide con un personaje de la franquicia Pokémon, y existen modelos LoRA con esa etiqueta en plataformas como PixAI, pero no hay evidencia de que este repositorio de Hugging Face esté relacionado con esos recursos.
 
 Dada la ausencia total de documentación técnica, esta ficha no puede ofrecer especificaciones verificables. Se recomienda precaución antes de integrar este modelo en cualquier flujo de trabajo, ya que no se dispone de información suficiente para evaluar su funcionamiento, rendimiento o idoneidad para tareas concretas.
 
@@ -37,7 +37,7 @@ No se dispone de informacion verificable sobre las capacidades del modelo. La mo
 - Soporte multilingue
 - Modos especiales (thinking mode, vision, audio, etc.)
 
-El nombre "Watchog" podria sugerir una relacion con el personaje de Pokemon homonimo, y existen LoRAs con esa etiqueta en PixAI orientados a generacion de imagenes de estilo anime, pero no hay evidencia de que este repositorio de HuggingFace contenga un modelo de ese tipo.
+El nombre "Watchog" podria sugerir una relacion con el personaje de Pokemon homonimo, y existen LoRAs con esa etiqueta en PixAI orientados a generacion de imagenes de estilo anime, pero no hay evidencia de que este repositorio de Hugging Face contenga un modelo de ese tipo.
 
 ## Casos de uso
 
@@ -81,8 +81,8 @@ No disponible. Al no conocer la arquitectura, el tamano ni las capacidades del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryanham1lton/Watchog
-- Perfil del autor en HuggingFace: https://huggingface.co/Ryanham1lton
+- Repositorio Hugging Face: https://huggingface.co/Ryanham1lton/Watchog
+- Perfil del autor en Hugging Face: https://huggingface.co/Ryanham1lton
 - Modelos del autor: https://huggingface.co/Ryanham1lton/models
 - Etiqueta Watchog en PixAI (no relacionada confirmada): https://pixai.art/en/tags/model/watchog
 - LoRA Watchog en PixAI (no relacionada confirmada): https://pixai.art/en/model/2016830619697061578

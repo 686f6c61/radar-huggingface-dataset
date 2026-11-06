@@ -76,7 +76,7 @@ No se han publicado en la informacion disponible resultados adicionales (por eje
 
 | Modelo | Parametros | Dataset | mAP@0.25 | mAP@0.5 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Group-Free 3D (este checkpoint) | 29,6 M | ScanNet | 69,13 | 51,96 | MIT | HuggingFace + torch-pointcloud |
+| Group-Free 3D (este checkpoint) | 29,6 M | ScanNet | 69,13 | 51,96 | MIT | Hugging Face + torch-pointcloud |
 | VoteNet | no disponible | ScanNet | no disponible | no disponible | MIT (repo original) | Repositorio de investigacion |
 | Group-Free 3D original (zeliu98) | no disponible | ScanNet | no disponible | no disponible | MIT | GitHub |
 
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de resultados de benchmarks de Vot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.ze-liu
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/groupfree3d-w2x-l12-o512.scannet.ze-liu
 - Paper Group-Free 3D: https://arxiv.org/abs/2104.00678
 - Repositorio original: https://github.com/zeliu98/Group-Free-3D
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

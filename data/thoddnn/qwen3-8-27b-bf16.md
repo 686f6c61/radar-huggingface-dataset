@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-bf16 es una conversión al formato MLX (Apple Silicon) del modelo original Qwen3.8-27B, desarrollado por Alibaba y publicado por el usuario thoddnn en HuggingFace. Se trata de un modelo denso de visión y lenguaje (image-text-to-text) con 27.356 millones de parámetros, construido sobre la arquitectura Qwen3.5. Está diseñado para tareas de codificación, trabajo profesional, investigación y agentes autónomos de largo recorrido, con una ventana de contexto nativa de 262.000 tokens y control configurable del razonamiento (modo pensamiento).
+Qwen3.8-27B-bf16 es una conversión al formato MLX (Apple Silicon) del modelo original Qwen3.8-27B, desarrollado por Alibaba y publicado por el usuario thoddnn en Hugging Face. Se trata de un modelo denso de visión y lenguaje (image-text-to-text) con 27.356 millones de parámetros, construido sobre la arquitectura Qwen3.5. Está diseñado para tareas de codificación, trabajo profesional, investigación y agentes autónomos de largo recorrido, con una ventana de contexto nativa de 262.000 tokens y control configurable del razonamiento (modo pensamiento).
 
 La relevancia actual de este modelo radica en su combinación de capacidades multimodales (imagen y texto), razonamiento explícito y licencia Apache 2.0, lo que permite su uso comercial sin restricciones. La conversión MLX facilita su ejecución en hardware Apple Silicon con alto rendimiento, mientras que la versión original también cuenta con soporte oficial en GPUs AMD y plataformas como LM Studio. Su tamaño de 27B lo sitúa en un punto intermedio entre modelos pequeños ejecutables en local y modelos de gran escala, ofreciendo un equilibrio entre calidad y requisitos de hardware.
 
@@ -90,7 +90,7 @@ El Qwen3.8-27B destaca por su contexto de 262K y su enfoque específico en tarea
 
 ## Enlaces
 
-- Modelo en HuggingFace (conversión MLX): https://huggingface.co/thoddnn/Qwen3.8-27B-bf16
+- Modelo en Hugging Face (conversión MLX): https://huggingface.co/thoddnn/Qwen3.8-27B-bf16
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Blog de AMD sobre soporte del modelo: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html

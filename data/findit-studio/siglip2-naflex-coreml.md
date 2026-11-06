@@ -69,7 +69,7 @@ No se han encontrado datos de comparativas en la información disponible. La alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FinDIT-Studio/siglip2-naflex-coreml
+- Hugging Face: https://huggingface.co/FinDIT-Studio/siglip2-naflex-coreml
 - GitHub coremlit: https://github.com/findit-studio/coremlit
 - GitHub Findit-AI/siglip2-naflex: https://github.com/findit-ai/siglip2-naflex
 - Modelo original: https://huggingface.co/google/siglip2-base-patch16-naflex

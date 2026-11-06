@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxMesh-Dense-32B es un paquete de configuración publicado por Thox-ai sobre los pesos sin modificar de Qwen/Qwen3-32B, el modelo denso más grande de la familia Qwen3. No se trata de un modelo entrenado ni afinado: los pesos son byte a byte idénticos al release upstream de Alibaba Cloud, y el trabajo de THOX se limita al perfil de sistema, un Knowledge Pack versionado (v0.1, ocho entradas públicas verificadas), el empaquetado en formato Ollama y la documentación. El repositorio de HuggingFace contiene únicamente el `Modelfile`, un `manifest.json` y el fichero JSONL del Knowledge Pack; el modelo ejecutable se distribuye vía Ollama.
+ThoxMesh-Dense-32B es un paquete de configuración publicado por Thox-ai sobre los pesos sin modificar de Qwen/Qwen3-32B, el modelo denso más grande de la familia Qwen3. No se trata de un modelo entrenado ni afinado: los pesos son byte a byte idénticos al release upstream de Alibaba Cloud, y el trabajo de THOX se limita al perfil de sistema, un Knowledge Pack versionado (v0.1, ocho entradas públicas verificadas), el empaquetado en formato Ollama y la documentación. El repositorio de Hugging Face contiene únicamente el `Modelfile`, un `manifest.json` y el fichero JSONL del Knowledge Pack; el modelo ejecutable se distribuye vía Ollama.
 
 La propuesta de valor es acotada y explícita: servir como el tier denso local de mayor capacidad dentro de la línea THOX Mesh para responder preguntas sobre el sistema de expansión MeshStack, con respuestas ancladas al Knowledge Pack y con un perfil que rechaza verificar estado operativo en vivo que el modelo no puede observar. La arquitectura subyacente es la de Qwen3-32B, un transformer denso que activa los 32 000 millones de parámetros en cada token, lo que lo hace más lento por token que la variante dispersa 30B-A3B del mismo fabricante pese a tener una huella similar.
 
@@ -44,7 +44,7 @@ Lo que sí aporta THOX es una capa de configuración en tres piezas: un perfil d
 - Base para prototipos de asistentes con política de rechazo explícita: sirve como plantilla de `Modelfile` para construir perfiles de sistema con bloques de anclaje y declive, reutilizando el patrón de THOX.
 - Evaluación comparativa de despliegue local: con 22,61 GB de huella del runner en una GPU de clase 16 GB más RAM de sistema, es un caso práctico para medir el comportamiento de un denso de 32B bajo scheduling compartido.
 - Q&A técnica general en inglés sobre el stack: al responder directamente preguntas técnicas fuera del pack, cubre consultas de arquitectura de sistemas sin necesidad de configuración adicional.
-- Referencia para auditoría de procedencia de modelos: el manifiesto con digest fijado y la declaración de "no entrenamiento" lo convierten en un ejemplo útil para enseñar a verificar qué hay realmente detrás de un repo de HuggingFace.
+- Referencia para auditoría de procedencia de modelos: el manifiesto con digest fijado y la declaración de "no entrenamiento" lo convierten en un ejemplo útil para enseñar a verificar qué hay realmente detrás de un repo de Hugging Face.
 - Despliegue en estaciones de trabajo x86_64 con GPU de 16 GB para generación de texto larga no interactiva: a 5,39 tokens/s medidos, encaja en tareas por lotes donde la latencia no es crítica.
 
 ## Benchmarks y rendimiento
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxMesh-Dense-32B | 32B densos | 8 192 verificados | 5,39 tok/s en host compartido con GPU de 16 GB; 8/8 en anclaje al pack | Apache-2.0 | HuggingFace (empaquetado) + Ollama (ejecutable) |
-| Qwen/Qwen3-32B (upstream) | 32B densos | No disponible en esta información | Idéntico en pesos a ThoxMesh-Dense-32B; sin perfil ni Knowledge Pack | Apache-2.0 | HuggingFace |
+| ThoxMesh-Dense-32B | 32B densos | 8 192 verificados | 5,39 tok/s en host compartido con GPU de 16 GB; 8/8 en anclaje al pack | Apache-2.0 | Hugging Face (empaquetado) + Ollama (ejecutable) |
+| Qwen/Qwen3-32B (upstream) | 32B densos | No disponible en esta información | Idéntico en pesos a ThoxMesh-Dense-32B; sin perfil ni Knowledge Pack | Apache-2.0 | Hugging Face |
 | Variante dispersa 30B-A3B de Qwen3 (citada por el autor) | 30B totales, MoE | No disponible en esta información | Más rápida por token que el denso 32B con huella similar, según el autor | No disponible en esta información | No disponible en esta información |
 
 La comparación relevante es directa: frente al Qwen3-32B upstream, ThoxMesh-Dense-32B no aporta ninguna mejora de capacidad, solo un perfil de sistema y un pack de conocimiento de ocho entradas. Frente a la variante MoE 30B-A3B, el propio autor reconoce que el denso es más lento por token.
@@ -95,8 +95,8 @@ La comparación relevante es directa: frente al Qwen3-32B upstream, ThoxMesh-Den
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thox-ai/ThoxMesh-Dense-32B
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-32B
+- Repositorio en Hugging Face: https://huggingface.co/Thox-ai/ThoxMesh-Dense-32B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-32B
 - Ejecución en Ollama: `ollama run Thox-ai/thoxmesh-dense-32b`
 - Descarga del empaquetado: `hf download Thox-ai/ThoxMesh-Dense-32B --local-dir ./ThoxMesh-Dense-32B`
 - No se han encontrado en la información proporcionada papers, blogs, repositorios adicionales ni demos distintos de los anteriores.

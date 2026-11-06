@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch18` | ~6,74B | no disponible (Llama 2: 4096) | Checkpoint de desaprendizaje (época 18/20) | Llama 2 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_llama2-7b` | ~6,74B | 4096 | Modelo base ajustado en TOFU, sin desaprender | Llama 2 | HuggingFace |
-| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4096 | Llama 2 7B chat, uso generalista | Llama 2 | HuggingFace |
-| `meta-llama/Llama-2-7b-hf` | ~6,74B | 4096 | Llama 2 7B base | Llama 2 | HuggingFace |
+| `unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch18` | ~6,74B | no disponible (Llama 2: 4096) | Checkpoint de desaprendizaje (época 18/20) | Llama 2 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_llama2-7b` | ~6,74B | 4096 | Modelo base ajustado en TOFU, sin desaprender | Llama 2 | Hugging Face |
+| `NousResearch/Llama-2-7b-chat-hf` | ~6,74B | 4096 | Llama 2 7B chat, uso generalista | Llama 2 | Hugging Face |
+| `meta-llama/Llama-2-7b-hf` | ~6,74B | 4096 | Llama 2 7B base | Llama 2 | Hugging Face |
 
 La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (mismo punto de partida, sin olvido) y frente a otros checkpoints del mismo *run* de `unl-reset` en distintas épocas o variantes de método. No se dispone de datos de rendimiento comparado en la información proporcionada.
 
@@ -82,7 +82,7 @@ La comparación relevante es frente a `locuslab/tofu_ft_llama2-7b` (mismo punto 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch18
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch18
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de referencia para el reset de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del dataset): https://github.com/locuslab/tofu

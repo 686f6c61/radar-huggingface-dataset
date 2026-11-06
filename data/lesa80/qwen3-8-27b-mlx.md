@@ -70,5 +70,5 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lesa80/qwen3.8-27b-mlx
+- Repositorio Hugging Face: https://huggingface.co/lesa80/qwen3.8-27b-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

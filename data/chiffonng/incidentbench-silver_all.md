@@ -74,5 +74,5 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento ni m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chiffonng/incidentbench-silver_all
+- Hugging Face: https://huggingface.co/chiffonng/incidentbench-silver_all
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

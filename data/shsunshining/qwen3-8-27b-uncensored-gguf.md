@@ -126,7 +126,7 @@ Estimaciones derivadas del tamaño de cada fichero GGUF (el peso en disco equiva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shsunshining/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/shsunshining/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - Otra cuantización no censurada del mismo base: https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored-GGUF

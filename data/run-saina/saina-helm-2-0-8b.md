@@ -115,7 +115,7 @@ Contexto, licencia y disponibilidad de los modelos comparados: no disponibles. S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/run-saina/saina-helm-2-0.8b
+- Modelo en Hugging Face: https://huggingface.co/run-saina/saina-helm-2-0.8b
 - Modelo anterior (Saina Helm 0.8B): https://huggingface.co/run-saina/saina-helm-0.8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paquete `saina` en PyPI: https://pypi.org/project/saina/

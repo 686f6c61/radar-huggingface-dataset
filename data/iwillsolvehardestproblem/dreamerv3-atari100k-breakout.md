@@ -78,7 +78,7 @@ No se dispone de otros checkpoints públicos de DreamerV3 Atari-100k para compar
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/iwillsolvehardestproblem/dreamerv3-atari100k-breakout
+- Repositorio de Hugging Face: https://huggingface.co/iwillsolvehardestproblem/dreamerv3-atari100k-breakout
 - Código oficial de DreamerV3: https://github.com/danijar/dreamerv3
 - Repositorio dream-drift: https://github.com/iwillsolvehardestproblem/dream-drift
 - Issue sobre Atari100k Pong en DreamerV3: https://github.com/danijar/dreamerv3/issues/175

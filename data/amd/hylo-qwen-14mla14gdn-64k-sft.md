@@ -6,7 +6,7 @@ HyLo-Qwen-14MLA14GDN-64K-SFT es un checkpoint experimental publicado por AMD que
 
 El checkpoint se ha sometido a un ajuste supervisado de contexto largo hasta 65.536 tokens (64K), con destilacion de un profesor mayor, Qwen3-8B. La relevancia practica esta en el binomio contexto largo y coste de memoria: al eliminar la cache KV en la mitad de las capas y comprimirla a un latente de bajo rango en la otra mitad, permite servir ventanas de 64K con una huella de memoria muy inferior a la de un transformer equivalente, algo critico para despliegues de inferencia a gran escala.
 
-El modelo se presenta en el articulo "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling" (arXiv:2604.24715), donde figura como HyLo-Qwen-14MLA14GDN con backbone Qwen3-1.7B. Es un artefacto de investigacion: tiene 0 descargas y 0 likes en HuggingFace en el momento de redactar esta ficha, los pesos se distribuyen en float32 y la licencia declarada es de uso exclusivamente investigador.
+El modelo se presenta en el articulo "Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling" (arXiv:2604.24715), donde figura como HyLo-Qwen-14MLA14GDN con backbone Qwen3-1.7B. Es un artefacto de investigacion: tiene 0 descargas y 0 likes en Hugging Face en el momento de redactar esta ficha, los pesos se distribuyen en float32 y la licencia declarada es de uso exclusivamente investigador.
 
 ## Especificaciones tecnicas
 
@@ -123,7 +123,7 @@ Otros modelos hibridos publicos de tamano comparable: no disponible en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Qwen-14MLA14GDN-64K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Qwen-14MLA14GDN-64K-SFT
 - Articulo principal (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling): https://arxiv.org/abs/2604.24715
 - Referencia arXiv 2505.17272: https://arxiv.org/abs/2505.17272
 - Referencia arXiv 2503.11132: https://arxiv.org/abs/2503.11132

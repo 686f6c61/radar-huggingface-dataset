@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Daredevil-8B-abliterated es un modelo de generacion de texto publicado en HuggingFace por el usuario Arthurmaffre34. Se distribuye en formato safetensors con 8.030.261.248 parametros (unos 8,03 mil millones), etiquetado con la familia de arquitecturas llama y con los tags conversational y text-generation. El repositorio ocupa 16,1 GB, lo que es coherente con pesos almacenados en precision de 16 bits, y no incluye versiones cuantizadas ni otros formatos.
+Daredevil-8B-abliterated es un modelo de generacion de texto publicado en Hugging Face por el usuario Arthurmaffre34. Se distribuye en formato safetensors con 8.030.261.248 parametros (unos 8,03 mil millones), etiquetado con la familia de arquitecturas llama y con los tags conversational y text-generation. El repositorio ocupa 16,1 GB, lo que es coherente con pesos almacenados en precision de 16 bits, y no incluye versiones cuantizadas ni otros formatos.
 
 El sufijo "abliterated" es una convencion habitual en la comunidad de modelos abiertos para designar variantes en las que se han ablacionado las direcciones de rechazo del modelo ajustado por instrucciones, con el objetivo de reducir las negativas a responder. Conviene subir que el autor no documenta esta intervencion en la model card ni aporta detalles sobre el proceso, por lo que se trata de una inferencia a partir del nombre y no de un dato confirmado.
 
@@ -31,7 +31,7 @@ No hay informacion publicada sobre la arquitectura interna, el proceso de entren
 
 Tampoco se documenta la tecnica de "abliteration" a la que alude el nombre. En la practica comun de la comunidad, este termino describe la identificacion y el borrado de direcciones en el espacio de activaciones asociadas a respuestas de rechazo, normalmente mediante tecnicas de tipo abliteration o directional ablation aplicadas a los pesos. Sin una model card que lo detalle, no es posible verificar que metodo se aplico, sobre que checkpoint se partio ni con que datos.
 
-La model card incluye en sus tags la referencia arXiv:1910.09700, que corresponde al articulo del calculador de impacto de machine learning (Lacoste et al., 2019) y forma parte de la plantilla por defecto de HuggingFace; no es una referencia al modelo.
+La model card incluye en sus tags la referencia arXiv:1910.09700, que corresponde al articulo del calculador de impacto de machine learning (Lacoste et al., 2019) y forma parte de la plantilla por defecto de Hugging Face; no es una referencia al modelo.
 
 ## Capacidades
 
@@ -98,6 +98,6 @@ La diferencia practica mas relevante no esta en el rendimiento, que se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Arthurmaffre34/Daredevil-8B-abliterated
+- Repositorio en Hugging Face: https://huggingface.co/Arthurmaffre34/Daredevil-8B-abliterated
 - Articulo referenciado en los tags (plantilla, no relacionado con el modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

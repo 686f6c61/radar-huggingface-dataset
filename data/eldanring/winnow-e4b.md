@@ -13,7 +13,7 @@ Es relevante ahora porque propone un patron de inferencia distinto al chat clasi
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (base Gemma 4 E4B IT), multimodal texto-imagen, con head de generacion y proyeccion de candidatas |
-| Parametros totales | 77.993.732 segun los safetensors reportados por HuggingFace (ver advertencia en Limitaciones) |
+| Parametros totales | 77.993.732 segun los safetensors reportados por Hugging Face (ver advertencia en Limitaciones) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF Q8_0 y BF16 (segun la model card); adaptador fusionado en FP32 antes de la conversion |
@@ -76,9 +76,9 @@ Rendimiento declarado, medido en una RTX 5070 Ti de 16 GB, con carga de texto de
 
 | Modelo | Parametros | Contexto | Rendimiento en decisiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Winnow-E4B | 77.993.732 (safetensors reportados) | no disponible | JevBench 80,52%; Kev clean 72,66%; panel local 72,30% | Apache 2.0 | GGUF Q8_0 y BF16 en HuggingFace |
+| Winnow-E4B | 77.993.732 (safetensors reportados) | no disponible | JevBench 80,52%; Kev clean 72,66%; panel local 72,30% | Apache 2.0 | GGUF Q8_0 y BF16 en Hugging Face |
 | Winnow-12B | no disponible | no disponible | JevBench 85,71%; Kev clean 81,45%; panel local 70,10% | no disponible | referenciado como comparador |
-| Gemma 4 E4B IT (base) | no disponible | no disponible | no disponible | no disponible | modelo base en HuggingFace |
+| Gemma 4 E4B IT (base) | no disponible | no disponible | no disponible | no disponible | modelo base en Hugging Face |
 
 No se dispone de datos de benchmarks estandar para Winnow-E4B frente a otros modelos de proposito general, por lo que la comparacion se limita al comparador interno Winnow-12B y al modelo base.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks estandar para Winnow-E4B frente a otros mod
 - Los resultados publicados corresponden a una comparacion de modelos ya desplegados, no a una estimacion fresca sobre tareas no vistas.
 - El panel local de decisiones tipadas mide acuerdo con etiquetas sinteticas del teacher, no con verdad verificada de forma independiente para cada item.
 - La cifra de JevBench es exactitud sobre un subset publico, no la puntuacion oficial compuesta del leaderboard.
-- La cifra de parametros totales (77.993.732) procede de los safetensors reportados por HuggingFace y probablemente no refleja el modelo multimodal completo con todos sus tensores; conviene verificarla contra el modelo base.
+- La cifra de parametros totales (77.993.732) procede de los safetensors reportados por Hugging Face y probablemente no refleja el modelo multimodal completo con todos sus tensores; conviene verificarla contra el modelo base.
 - No se dispone de informacion sobre idiomas soportados ni sobre sesgos conocidos.
 - No se declara soporte de tool calling ni de audio, y los modulos de vision y audio no fueron entrenados durante el fine-tune.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, sujeto a los terminos de la propia licencia y a los del modelo base Gemma 4 E4B IT.
@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks estandar para Winnow-E4B frente a otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EldanRing/Winnow-E4B
+- Modelo en Hugging Face: https://huggingface.co/EldanRing/Winnow-E4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Codigo de inferencia: https://github.com/EldanRing/winnow-inference
 - Referencia de la API: https://github.com/EldanRing/winnow-inference/blob/main/docs/API.md

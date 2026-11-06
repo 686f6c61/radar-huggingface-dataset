@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ct-qwen36-35b-oai-gen-postcot-g1-b1` es un adaptador LoRA (rank 64, `target_modules=all-linear`) entrenado sobre el modelo base `Qwen/Qwen3.6-35B-A3B`, publicado por el usuario `arianaazarbal` dentro de un programa de entrenamiento por constituciones autoescritas e iteradas (repositorio `welfare-in-ai-rnd / constitutional_training`). No es un modelo completo: es un artefacto de ajuste fino que requiere cargar el modelo base por separado y que pesa 4,5 GB en el repositorio de HuggingFace.
+`ct-qwen36-35b-oai-gen-postcot-g1-b1` es un adaptador LoRA (rank 64, `target_modules=all-linear`) entrenado sobre el modelo base `Qwen/Qwen3.6-35B-A3B`, publicado por el usuario `arianaazarbal` dentro de un programa de entrenamiento por constituciones autoescritas e iteradas (repositorio `welfare-in-ai-rnd / constitutional_training`). No es un modelo completo: es un artefacto de ajuste fino que requiere cargar el modelo base por separado y que pesa 4,5 GB en el repositorio de Hugging Face.
 
 Su interes no es de producto, sino de investigacion en alineacion. La receta entrena cada generacion desde cero partiendo del modelo base, sobre un corpus sintetico que instancia una constitucion concreta; la generacion 0 se siembra con el OpenAI Model Spec (resumen de 5.000 palabras) y las generaciones posteriores se siembran con una constitucion escrita por el modelo de la generacion anterior de la misma rama. Esta ficha corresponde a la generacion 1, rama b1, metodo de elicitacion "gen" y regimen "post-cot", por lo que la deriva entre generaciones se acumula solo a traves de los documentos y nunca a traves de los pesos.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-qwen36-35b-oai-gen-postcot-g1-b1` | Adaptador LoRA sobre base de 35B nominales | No disponible | No disponible | No disponible | Publicado en HuggingFace, 0 descargas |
-| `Qwen/Qwen3.6-35B-A3B` (modelo base, sin adaptador) | 35B nominales | No disponible en esta ficha | No disponible | No disponible en esta ficha | Publico en HuggingFace |
+| `ct-qwen36-35b-oai-gen-postcot-g1-b1` | Adaptador LoRA sobre base de 35B nominales | No disponible | No disponible | No disponible | Publicado en Hugging Face, 0 descargas |
+| `Qwen/Qwen3.6-35B-A3B` (modelo base, sin adaptador) | 35B nominales | No disponible en esta ficha | No disponible | No disponible en esta ficha | Publico en Hugging Face |
 | Otras generaciones y ramas de la misma cadena (`qwen36-35b-oai-gen-postcot`) | Mismo esquema de adaptador | Mismo regimen de 8192 tokens | No disponible | No disponible | Referenciadas por tags, no verificadas |
-| Otros adaptadores LoRA de alineacion sobre modelos abiertos de ~30-40B | Variable | Variable | No disponible | Variable | Multiples en HuggingFace |
+| Otros adaptadores LoRA de alineacion sobre modelos abiertos de ~30-40B | Variable | Variable | No disponible | Variable | Multiples en Hugging Face |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con alternativas.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b1
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Ficheros internos del repositorio citados en la model card: `training_seed_constitution.md` y `tinker_meta.json`
 - Tinker (plataforma de entrenamiento usada): no se ha proporcionado URL en la informacion disponible

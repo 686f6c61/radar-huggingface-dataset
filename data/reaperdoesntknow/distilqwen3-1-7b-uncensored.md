@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas para est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored
+- Hugging Face: https://huggingface.co/reaperdoesntknow/DistilQwen3-1.7B-uncensored
 - FriendliAI (servicio de inferencia): https://friendli.ai/models/reaperdoesntknow/DistilQwen3-1.7B-uncensored
 - Ollama (repositorio de un usuario distinto, posible conversión no oficial): https://ollama.com/reaperdoesntrun/DistilQwen3-1.7B-uncensored
 - Modelo base: https://huggingface.co/reaperdoesntknow/Qwen3-1.7B-Distilled-30B-A3B (referenciado en los metadatos)

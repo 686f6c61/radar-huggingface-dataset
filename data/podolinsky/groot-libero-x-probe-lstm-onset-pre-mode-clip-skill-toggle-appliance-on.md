@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Metrica en el split | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`onset_pre`) | 6.622.240 | no aplicable | Validacion 73,96 / seen 69,25 / unseen 47,16 | CC BY 4.0 | HuggingFace, repo publico |
-| `groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on` (mismo autor, mismo split, etiquetado `onset_traj`) | no disponible | no aplicable | no disponible | CC BY 4.0 | HuggingFace |
+| Este modelo (`onset_pre`) | 6.622.240 | no aplicable | Validacion 73,96 / seen 69,25 / unseen 47,16 | CC BY 4.0 | Hugging Face, repo publico |
+| `groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on` (mismo autor, mismo split, etiquetado `onset_traj`) | no disponible | no aplicable | no disponible | CC BY 4.0 | Hugging Face |
 | Otras sondas de deteccion de fallo para VLA | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion consultada |
 
 No se han identificado en la informacion disponible alternativas publicas comparables de deteccion de fallo sobre caracteristicas de GR00T/LIBERO-X con cifras equiparables.
@@ -95,7 +95,7 @@ No se han identificado en la informacion disponible alternativas publicas compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-on
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-pre-mode-clip-skill-toggle-appliance-on
 - Variante con etiquetado `onset_traj` del mismo split: https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-traj-mode-clip-skill-toggle-appliance-on
 - Dataset de caracteristicas LIBERO-X: https://huggingface.co/datasets/podolinsky/gr00t-libero-x-features-v3
 - Codigo del proyecto vla-probe: https://github.com/mpodolinsky/vla-probe

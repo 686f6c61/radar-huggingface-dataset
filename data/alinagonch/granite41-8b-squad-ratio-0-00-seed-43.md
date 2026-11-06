@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlinaGonch/granite41-8b-squad-ratio-0.00-seed-43 es un checkpoint alojado en HuggingFace cuyo identificador sugiere que deriva de un modelo de la familia IBM Granite 4.1 en su variante de 8.000 millones de parametros, ajustado sobre el corpus SQuAD (Stanford Question Answering Dataset). Los sufijos `ratio-0.00` y `seed-43` apuntan a un experimento de ablation controlada, probablemente centrado en mezclas de datos de ajuste fino y en la reproducibilidad de la semilla, mas que a un modelo destinado a produccion. Esta interpretacion procede unicamente del nombre del repositorio: no esta confirmada en la model card.
+AlinaGonch/granite41-8b-squad-ratio-0.00-seed-43 es un checkpoint alojado en Hugging Face cuyo identificador sugiere que deriva de un modelo de la familia IBM Granite 4.1 en su variante de 8.000 millones de parametros, ajustado sobre el corpus SQuAD (Stanford Question Answering Dataset). Los sufijos `ratio-0.00` y `seed-43` apuntan a un experimento de ablation controlada, probablemente centrado en mezclas de datos de ajuste fino y en la reproducibilidad de la semilla, mas que a un modelo destinado a produccion. Esta interpretacion procede unicamente del nombre del repositorio: no esta confirmada en la model card.
 
 La model card publicada es la plantilla autogenerada de `transformers` sin ningun campo completado. El autor no declara desarrollador, licencia, idiomas, arquitectura, datos de entrenamiento ni resultados de evaluacion; todos los apartados figuran como `[More Information Needed]`. El repositorio acumula 0 descargas y 0 likes desde su creacion, y su tamano (0,2 GB) es incompatible con los pesos completos de un modelo de 8.000 millones de parametros en precision bf16 (que ocuparian del orden de 16 GB), lo que sugiere que contiene adaptadores, un subconjunto de pesos o una subida incompleta.
 
@@ -29,7 +29,7 @@ No hay informacion publicada sobre la arquitectura del checkpoint. La model card
 
 Respecto a los datos, el nombre del repositorio apunta a SQuAD, un corpus de comprension lectora extractiva en ingles construido sobre articulos de Wikipedia, con pares pregunta-respuesta y el span de respuesta anotado. El sufijo `ratio-0.00` sugiere que el ajuste se realizo con una proporcion de datos de mezcla igual a cero, un valor que en estudios de ajuste fino se asocia habitualmente a la condicion de control de un experimento de olvido catastrofico o de interferencia entre dominios. El sufijo `seed-43` indica que la particion o el barajado se fijo con la semilla 43. No se documenta numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones de decodificacion.
 
-La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre el modelo: es la referencia al calculador de impacto medioambiental de Lacoste et al. (2019) que la plantilla de model card de HuggingFace incluye por defecto y que el autor no elimino.
+La etiqueta `arxiv:1910.09700` no corresponde a un articulo sobre el modelo: es la referencia al calculador de impacto medioambiental de Lacoste et al. (2019) que la plantilla de model card de Hugging Face incluye por defecto y que el autor no elimino.
 
 ## Capacidades
 
@@ -79,9 +79,9 @@ No es posible comparar el rendimiento de este checkpoint con alternativas porque
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | AlinaGonch/granite41-8b-squad-ratio-0.00-seed-43 | no disponible | no disponible | no disponible | repositorio publico con 0 descargas |
-| Meta Llama 3.1 8B | 8.030 millones | 128.000 tokens | Llama 3.1 Community License (uso comercial con restricciones) | pesos abiertos en HuggingFace |
-| Qwen2.5 7B | 7.600 millones | 128.000 tokens | Apache 2.0 | pesos abiertos en HuggingFace |
-| Mistral 7B v0.3 | 7.200 millones | 32.000 tokens | Apache 2.0 | pesos abiertos en HuggingFace |
+| Meta Llama 3.1 8B | 8.030 millones | 128.000 tokens | Llama 3.1 Community License (uso comercial con restricciones) | pesos abiertos en Hugging Face |
+| Qwen2.5 7B | 7.600 millones | 128.000 tokens | Apache 2.0 | pesos abiertos en Hugging Face |
+| Mistral 7B v0.3 | 7.200 millones | 32.000 tokens | Apache 2.0 | pesos abiertos en Hugging Face |
 
 Cualquier comparacion de rendimiento exigiria evaluar los cuatro modelos bajo el mismo protocolo, algo que no se ha hecho en la informacion disponible.
 
@@ -99,7 +99,7 @@ Cualquier comparacion de rendimiento exigiria evaluar los cuatro modelos bajo el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.00-seed-43
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.00-seed-43
 - Referencia asociada a la etiqueta `arxiv:1910.09700` (calculador de impacto medioambiental, no articulo del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de machine learning citado en la plantilla de la model card: https://mlco2.github.io/impact
 - Enlaces a paper, repositorio de codigo, demo o dataset de entrenamiento: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-LabOpen v1 es un modelo de lenguaje afinado a partir de Qwen/Qwen3.8-27B-FP8 mediante LoRA y aprendizaje por refuerzo, publicado por el usuario HoomanBio2021 en HuggingFace. Su objetivo es reforzar capacidades de computación científica verificable en seis dominios concretos: física de fluidos, leyes de mezclas de materiales, genética clásica, consultas de acción operativas, estilo de prosa y código agéntico, manteniendo intactas las capacidades generales del modelo base (generación de código, function calling, comprensión de intención y renderizado de fórmulas LaTeX).
+Qwen3.8-27B-LabOpen v1 es un modelo de lenguaje afinado a partir de Qwen/Qwen3.8-27B-FP8 mediante LoRA y aprendizaje por refuerzo, publicado por el usuario HoomanBio2021 en Hugging Face. Su objetivo es reforzar capacidades de computación científica verificable en seis dominios concretos: física de fluidos, leyes de mezclas de materiales, genética clásica, consultas de acción operativas, estilo de prosa y código agéntico, manteniendo intactas las capacidades generales del modelo base (generación de código, function calling, comprensión de intención y renderizado de fórmulas LaTeX).
 
 El resultado más destacado es la mejora en código agéntico: de un 32 % a un 72 % en una batería determinista de 78 pruebas, un salto de +40 puntos porcentuales con solo 15 ventanas de entrenamiento de refuerzo y un LoRA de rango 4. En la comparativa externa publicada, el modelo se sitúa en el puesto número 2, por delante de Qwen3.8-max y DeepSeek v4.1 flash, y solo por detrás de GLM 5.3.
 
@@ -99,8 +99,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Formato | Codigo agentico (misma bateria) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-LabOpen v1 | 27,8 B | FP8 safetensors + LoRA | 72 % (56/78) | Apache 2.0 | Abierto en HuggingFace |
-| Qwen3.8-27B (base) | 27,8 B | FP8 safetensors | 32 % (25/78) | Apache 2.0 | Abierto en HuggingFace |
+| Qwen3.8-27B-LabOpen v1 | 27,8 B | FP8 safetensors + LoRA | 72 % (56/78) | Apache 2.0 | Abierto en Hugging Face |
+| Qwen3.8-27B (base) | 27,8 B | FP8 safetensors | 32 % (25/78) | Apache 2.0 | Abierto en Hugging Face |
 | GLM 5.3 | no disponible | no disponible | 73 % (57/78) | no disponible | Cerrado/API (segun la model card) |
 | Qwen3.8-max | no disponible | no disponible | 69 % (54/78) | no disponible | Cerrado/API (segun la model card) |
 | DeepSeek v4.1 flash | no disponible | no disponible | 62 % (48/78) | no disponible | Cerrado/API (segun la model card) |
@@ -113,7 +113,7 @@ La ventaja diferencial de LabOpen v1 frente a los modelos frontera cerrados es q
 - Código agéntico: aunque la tasa final con 3 rondas de corrección es del 72 %, la model card reconoce que la tasa de primer intento (first-pass) y el conocimiento general siguen por detrás de los modelos de 100B+ parámetros.
 - Dominio de ops: el fallo estricto 0/8 de los modelos frontera revela que parte de las métricas de este dominio dependen de convenciones de vocabulario privadas (la acción nula "observe" no se declara en el prompt), lo que puede inflar artificialmente la ventaja de LabOpen v1 (4/8).
 - Métricas propias: todos los benchmarks proceden de baterías diseñadas por el propio autor, con protocolos etiquetados en algunos dominios (que no son directamente comparables con evaluaciones zero-shot externas). No hay evaluaciones independientes ni benchmarks estándar (MMLU, HumanEval, GSM8K).
-- Trazabilidad muy limitada: el modelo tiene 5 descargas y 1 like en HuggingFace, sin comunidad ni historial de uso en producción que valide los resultados publicados.
+- Trazabilidad muy limitada: el modelo tiene 5 descargas y 1 like en Hugging Face, sin comunidad ni historial de uso en producción que valide los resultados publicados.
 - Idiomas: solo inglés y chino; no hay soporte documentado para castellano ni otros idiomas.
 - Contexto: la longitud de ventana de contexto no está documentada en la model card.
 - Riesgo de alucinación: no se documentan mediciones específicas; al ser un modelo de 27B con RL sobre dominios estrechos, debe tratarse con la cautela habitual en dominios científicos de alto riesgo.
@@ -121,6 +121,6 @@ La ventaja diferencial de LabOpen v1 frente a los modelos frontera cerrados es q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HoomanBio2021/Qwen3.8-27B-LabOpen-v1
+- Modelo en Hugging Face: https://huggingface.co/HoomanBio2021/Qwen3.8-27B-LabOpen-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Documentación incluida en el repo: MERGE_REPORT.md (procedencia de la fusión), EVALUATION.md (matriz de capacidades y comparativa de 5 modelos), USAGE.md (carga, etiquetas de dominio, temperatura y resolución de problemas)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TISD-Qwen3-8B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo TISD-Qwen3-8B, publicado por el usuario mradermacher en HuggingFace. Se trata de un derivado de la familia Qwen3 de Alibaba, un transformer denso de aproximadamente 8.190 millones de parámetros, reconvertido desde pesos en formato HuggingFace (safetensors) a GGUF para su uso con motores de inferencia como llama.cpp u Ollama. El modelo original fue publicado por el usuario Taeckyung bajo el identificador TISD-Qwen3-8B.
+TISD-Qwen3-8B-GGUF es una colección de cuantizaciones estáticas en formato GGUF del modelo TISD-Qwen3-8B, publicado por el usuario mradermacher en Hugging Face. Se trata de un derivado de la familia Qwen3 de Alibaba, un transformer denso de aproximadamente 8.190 millones de parámetros, reconvertido desde pesos en formato Hugging Face (safetensors) a GGUF para su uso con motores de inferencia como llama.cpp u Ollama. El modelo original fue publicado por el usuario Taeckyung bajo el identificador TISD-Qwen3-8B.
 
 La relevancia de esta ficha radica en que el repositorio es un artefacto de cuantización, no un modelo nuevo: la información disponible sobre arquitectura, datos de entrenamiento, capacidades y licencia del modelo base es prácticamente nula en la model card, que solo documenta el proceso de conversión y los tipos de cuantización generados. La model card del repositorio no incluye pipeline, licencia, idiomas ni detalles de entrenamiento, por lo que muchos campos de esta ficha deben marcarse como no disponibles.
 
@@ -25,7 +25,7 @@ El interés práctico del repositorio es la disponibilidad de 12 variantes de cu
 
 La model card del repositorio no proporciona información sobre la arquitectura interna del modelo base TISD-Qwen3-8B, más allá de su procedencia de la familia Qwen3 y de su tamaño de 8.190 millones de parámetros. Por el nombre y el recuento de parámetros, se trata de un transformer denso de la serie Qwen3-8B, pero no se dispone de datos sobre número de capas, dimensiones ocultas, mecanismo de atención, tipo de tokenizador ni vocabulario en la información proporcionada.
 
-Tampoco hay información sobre el dataset de entrenamiento, número de tokens, composición de los datos, uso de RLHF, DPO u otras fases de alineamiento, ni sobre innovaciones técnicas específicas del modelo base. La model card únicamente documenta el proceso de conversión a GGUF: conversión desde formato HuggingFace (convert_type: hf), cuantización estática con quantize_version 2 y cuantización de tensores de salida (output_tensor_quantised: 1). El repositorio ocupa 52,2 GB, lo que es coherente con incluir las 12 variantes de cuantización, incluyendo f16.
+Tampoco hay información sobre el dataset de entrenamiento, número de tokens, composición de los datos, uso de RLHF, DPO u otras fases de alineamiento, ni sobre innovaciones técnicas específicas del modelo base. La model card únicamente documenta el proceso de conversión a GGUF: conversión desde formato Hugging Face (convert_type: hf), cuantización estática con quantize_version 2 y cuantización de tensores de salida (output_tensor_quantised: 1). El repositorio ocupa 52,2 GB, lo que es coherente con incluir las 12 variantes de cuantización, incluyendo f16.
 
 ## Capacidades
 
@@ -62,16 +62,16 @@ No se han publicado resultados de benchmarks en la información disponible.
   - Q2_K: ~3,0 GB de pesos; ~4-5 GB de VRAM.
 - GPU recomendadas: para f16 y Q8_0, A100 40 GB, H100 o RTX 4090 (24 GB); para Q4_K_M y Q5_K_M, RTX 4090, RTX 4080, RTX 3090 o RTX 4070 Ti; para Q3_K_M y Q2_K, GPUs de 6-8 GB como RTX 3060, RTX 4060 o portátiles con GPU dedicada.
 - Cabe en GPU de consumo: sí, en la mayoría de cuantizaciones (Q2_K a Q6_K) en GPUs de 8-12 GB; f16 requiere 24 GB o más.
-- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo HuggingFace. No se confirma soporte de vLLM o TGI para este formato.
+- Opciones de despliegue: llama.cpp, Ollama, y cualquier motor compatible con GGUF; el tag `endpoints_compatible` sugiere compatibilidad con endpoints tipo Hugging Face. No se confirma soporte de vLLM o TGI para este formato.
 - Latencia y throughput: no disponibles; dependen del hardware y de la cuantización elegida.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| TISD-Qwen3-8B-GGUF (este) | 8,19B | No disponible | No disponible | GGUF (12 cuantizaciones) | HuggingFace |
-| Qwen3-8B (modelo base de referencia) | ~8B | No disponible en esta ficha | No disponible en esta ficha | safetensors / GGUF | HuggingFace |
-| Otros derivados GGUF de Qwen3-8B | ~8B | No disponible | No disponible | GGUF | HuggingFace |
+| TISD-Qwen3-8B-GGUF (este) | 8,19B | No disponible | No disponible | GGUF (12 cuantizaciones) | Hugging Face |
+| Qwen3-8B (modelo base de referencia) | ~8B | No disponible en esta ficha | No disponible en esta ficha | safetensors / GGUF | Hugging Face |
+| Otros derivados GGUF de Qwen3-8B | ~8B | No disponible | No disponible | GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/TISD-Qwen3-8B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/TISD-Qwen3-8B-GGUF
 - Modelo base: https://huggingface.co/Taeckyung/TISD-Qwen3-8B
 - Familia Qwen3 (referencia del modelo base): no disponible en la información proporcionada.

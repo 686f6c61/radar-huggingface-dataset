@@ -62,7 +62,7 @@ Es relevante ahora porque permite ejecutar un modelo de 33B con capacidad de too
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso (no MoE); atencion con 8 cabezas KV (GQA) segun la configuracion de cuantizacion; plantilla de chat basada en `<|im_start|>` |
-| Parametros totales | 33B (dense); nota: los metadatos de HuggingFace del repo indican 6.767.228, cifra inconsistente con las 33B declaradas en la model card |
+| Parametros totales | 33B (dense); nota: los metadatos de Hugging Face del repo indican 6.767.228, cifra inconsistente con las 33B declaradas en la model card |
 | Parametros activos | no aplica (modelo denso, todos los parametros activos por token) |
 | Longitud de contexto | ventana nativa no disponible; documentado y validado hasta 24.576 tokens en GPU de 12 GB |
 | Tipos de cuantizacion | IQ2_XXS con precision mixta e imatrix (unico archivo publicado; el autor anuncia mas tamanos "en camino") |

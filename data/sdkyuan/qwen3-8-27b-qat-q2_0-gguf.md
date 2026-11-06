@@ -81,7 +81,7 @@ La principal diferencia frente a otras cuantizaciones es el uso de QAT en lugar 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sdkyuan/qwen3.8-27B-qat-q2_0-gguf
+- Repositorio Hugging Face: https://huggingface.co/sdkyuan/qwen3.8-27B-qat-q2_0-gguf
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guia de ejecucion local (Ollama, GGUF): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

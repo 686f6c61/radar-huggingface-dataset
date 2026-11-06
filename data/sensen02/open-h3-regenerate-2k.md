@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks de calidad de vídeo (FVD, VBench, 
 
 | Modelo | Tipo | Pasos | Resolución de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Open-H3-Regenerate-2K | LoRA de refinado sobre MiniMax-H3 | 3 | 2560×1440 (121 fotogramas) | MiniMax-H3 Community (excluye UE, UK, Corea del Sur y EE. UU.) | Pesos abiertos en HuggingFace, 158,4 GB |
+| Open-H3-Regenerate-2K | LoRA de refinado sobre MiniMax-H3 | 3 | 2560×1440 (121 fotogramas) | MiniMax-H3 Community (excluye UE, UK, Corea del Sur y EE. UU.) | Pesos abiertos en Hugging Face, 158,4 GB |
 | H3-Regenerate-2K (API cerrada) | Servicio propietario de refinado | no disponible | 2560×1440 según la referencia del autor | no disponible | Solo API |
 | MiniMax-H3 (modelo base) | Modelo generativo de vídeo | no disponible | borrador 768P (1344×768) en el flujo descrito | MiniMax-H3 Community License | Pesos abiertos, revisión `6818f6c` |
 | HyperFlow 8-step adapter | Adaptador opcional del ecosistema | 8 | no disponible | no disponible | Descargable mediante `download.py` |
@@ -108,7 +108,7 @@ Frente a la API cerrada, la ventaja es la reproducibilidad y la ausencia de depe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sensen02/Open-H3-Regenerate-2K
+- Modelo en Hugging Face: https://huggingface.co/Sensen02/Open-H3-Regenerate-2K
 - Página del proyecto: https://nvlabs.github.io/Sana/Open-H3-Regenerate-2K/
 - Código (Sol-Engine): https://github.com/NVlabs/Sana/tree/sol-engine/models/minimax_h3/Open-H3-Regenerate-2K
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3

@@ -18,7 +18,7 @@ La relevancia de esta ficha radica en que agrupa en un único repositorio todos 
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | BF16, FP8, INT8 ConvRot, NVFP4, MLX 4-bit, MLX 6-bit, MLX 8-bit, GGUF Q8_0, Q6_K, Q5_K_M, Q4_K_M, Q4_0 |
 | Idiomas soportados | no disponible (el codificador de texto es Qwen3-VL 8B, multilingüe, pero no se detalla la cobertura) |
-| Licencia | qwen-research (etiquetada como "other" en HuggingFace) |
+| Licencia | qwen-research (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | GGUF y safetensors; también MLX safetensors |
 
 ## Arquitectura y entrenamiento
@@ -64,8 +64,8 @@ La model card incluye una imagen de benchmark (`assets/Qwen-Image-2.1-Benchmark.
 
 | Modelo | Parámetros | Contexto | Licencia | Formatos | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1 (original) | ~7,1B (transformer) | no disponible | qwen-research | safetensors BF16 | HuggingFace oficial |
-| Qwen-Image-2.1-Uncensored-Quantized (este) | ~7,1B (transformer) | no disponible | qwen-research | GGUF, safetensors, MLX | HuggingFace (diablomike20) |
+| Qwen-Image-2.1 (original) | ~7,1B (transformer) | no disponible | qwen-research | safetensors BF16 | Hugging Face oficial |
+| Qwen-Image-2.1-Uncensored-Quantized (este) | ~7,1B (transformer) | no disponible | qwen-research | GGUF, safetensors, MLX | Hugging Face (diablomike20) |
 | Alternativas de difusión de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la información proporcionada, por lo que la comparación cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

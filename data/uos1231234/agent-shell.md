@@ -79,7 +79,7 @@ No se dispone de datos comparativos en la información proporcionada. Funcionalm
 
 - No es un modelo: no contiene pesos, no genera texto por sí mismo y no puede evaluarse con MMLU, HumanEval, GSM8K ni métricas equivalentes.
 - Licencia `pfsb` bajo la etiqueta `other`: los términos concretos no se detallan en la información proporcionada, por lo que no puede confirmarse la viabilidad de uso comercial sin revisar el fichero `LICENSE` del repositorio.
-- Adopción mínima y sin validación externa: 0 descargas y 1 *like* en HuggingFace, sin benchmarks publicados ni informes de terceros.
+- Adopción mínima y sin validación externa: 0 descargas y 1 *like* en Hugging Face, sin benchmarks publicados ni informes de terceros.
 - Madurez incierta: las fechas indicadas de creación y actualización (23 de septiembre de 2026) son posteriores a la fecha habitual de consulta y conviene verificarlas; el conjunto de ADR llega hasta ADR-036, lo que sugiere un diseño en evolución activa.
 - Sesgos: no aplicable al runtime en sí, pero el comportamiento final heredará los sesgos del modelo servido tras el endpoint, que no se especifica.
 - Riesgo de alucinación: el runtime no incorpora verificación de afirmaciones ni capas de *grounding*; los errores de herramienta se devuelven como texto que el modelo puede interpretar mal.
@@ -92,7 +92,7 @@ No se dispone de datos comparativos en la información proporcionada. Funcionalm
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/uos1231234/agent-shell
+- Repositorio en Hugging Face: https://huggingface.co/uos1231234/agent-shell
 - Guía de integración de la IM: `docs/IM-GUIDE.md` (en el repositorio)
 - Registros de decisiones de arquitectura (ADR-001 a ADR-036): `docs/DECISIONS.md` (en el repositorio)
 - Licencia: `LICENSE` (en el repositorio)

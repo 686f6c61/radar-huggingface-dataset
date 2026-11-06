@@ -2,11 +2,11 @@
 
 ## Resumen
 
-AURRA es un repositorio publicado por el usuario Jonnathan20202 en HuggingFace el 19 de agosto de 2026, etiquetado como un finetune del modelo openai/gpt-oss-120b de OpenAI. Se distribuye bajo licencia AFL-3.0 y, en el momento de la consulta, no registra descargas ni interacciones de la comunidad.
+AURRA es un repositorio publicado por el usuario Jonnathan20202 en Hugging Face el 19 de agosto de 2026, etiquetado como un finetune del modelo openai/gpt-oss-120b de OpenAI. Se distribuye bajo licencia AFL-3.0 y, en el momento de la consulta, no registra descargas ni interacciones de la comunidad.
 
 La model card del repositorio no contiene documentacion tecnica del modelo (arquitectura, entrenamiento, evaluaciones), sino un codigo de aplicacion Gradio que implementa un chatbot conectado a la API de Groq. El codigo utiliza modelos de terceros como llama-3.3-70b-versatile, llama-3.1-8b-instant, deepseek-r1-distill-llama-70b y qwen/qwen3.6-27b, lo que sugiere que el repositorio podria ser una demo de aplicacion mas que un modelo con pesos publicados.
 
-Es importante aclarar que las busquedas web sobre "Aurora" devuelven resultados del modelo homonimo de Microsoft Research para prediccion atmosferica y del sistema Tierra (1.3 mil millones de parametros), que no guarda relacion con este repositorio de HuggingFace.
+Es importante aclarar que las busquedas web sobre "Aurora" devuelven resultados del modelo homonimo de Microsoft Research para prediccion atmosferica y del sistema Tierra (1.3 mil millones de parametros), que no guarda relacion con este repositorio de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No es posible establecer una comparativa fiable al no disponer de datos de rendi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jonnathan20202/AURRA
+- Repositorio Hugging Face: https://huggingface.co/Jonnathan20202/AURRA
 - Modelo base openai/gpt-oss-120b: https://huggingface.co/openai/gpt-oss-120b
 
 Nota: los resultados de busqueda sobre "Aurora" corresponden al modelo de Microsoft Research para el sistema Tierra (https://microsoft.github.io/aurora/), no a este repositorio.

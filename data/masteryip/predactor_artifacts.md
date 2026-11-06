@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PredActor_Artifacts es el repositorio de artefactos oficiales de evaluación de PredActor, un controlador de locomoción para el robot humanoide Unitree G1 basado en difusión predictiva de acciones (predictive action diffusion). Lo publica el usuario MasterYip en HuggingFace y su código fuente vive en el repositorio de GitHub del mismo nombre. No es un modelo de lenguaje: es una política de control robótico que genera acciones motoras condicionadas, pensada para su ejecución dentro de un bucle de simulación MuJoCo.
+PredActor_Artifacts es el repositorio de artefactos oficiales de evaluación de PredActor, un controlador de locomoción para el robot humanoide Unitree G1 basado en difusión predictiva de acciones (predictive action diffusion). Lo publica el usuario MasterYip en Hugging Face y su código fuente vive en el repositorio de GitHub del mismo nombre. No es un modelo de lenguaje: es una política de control robótico que genera acciones motoras condicionadas, pensada para su ejecución dentro de un bucle de simulación MuJoCo.
 
 El repositorio contiene únicamente dos artefactos aprendidos: la política PDP051 (49.212.894 bytes) y el codificador MotionCLIP para G1 (542.749.069 bytes), que actúa como componente de condicionamiento de movimiento. No incluye datasets, resultados de experimentos, bundles de despliegue ni checkpoints adicionales; el directorio `dataset/` está reservado para futuras publicaciones y actualmente está vacío.
 
@@ -79,7 +79,7 @@ La información disponible no permite una comparación cuantitativa: no hay mét
 
 | Modelo | Categoría | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PredActor (PDP051 + MotionCLIP G1) | Política de difusión para locomoción humanoide | No declarados; ~12,3 M y ~135,7 M estimados por tamaño de fichero | No aplica | other | HuggingFace, 0 descargas, 0 likes |
+| PredActor (PDP051 + MotionCLIP G1) | Política de difusión para locomoción humanoide | No declarados; ~12,3 M y ~135,7 M estimados por tamaño de fichero | No aplica | other | Hugging Face, 0 descargas, 0 likes |
 | Diffusion Policy (referencia académica del paradigma) | Política de difusión para manipulación robótica | No disponible en la información consultada | No aplica | No verificada en esta búsqueda | Repositorio público de investigación |
 | MotionCLIP (obra original) | Codificador de movimiento alineado con texto | No disponible en la información consultada | No aplica | No verificada en esta búsqueda | Repositorio público de investigación |
 | Controladores de locomoción humanoide basados en RL | Políticas de control por refuerzo | No disponible | No aplica | Variable según implementación | Múltiples repositorios públicos |
@@ -99,7 +99,7 @@ La información disponible no permite una comparación cuantitativa: no hay mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MasterYip/PredActor_Artifacts
+- Modelo en Hugging Face: https://huggingface.co/MasterYip/PredActor_Artifacts
 - Repositorio de código fuente PredActor: https://github.com/MasterYip/PredActor
 - Fichero de verificación de integridad: https://huggingface.co/MasterYip/PredActor_Artifacts/blob/main/SHA256SUMS
 - Descarga de artefactos: `python scripts/hf_artifacts.py download` (desde el repositorio de código)

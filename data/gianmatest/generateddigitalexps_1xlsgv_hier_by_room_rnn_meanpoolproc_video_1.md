@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `gianmaTest/generatedDigitalExps_1xLsGv_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de pesos publicado en HuggingFace por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin`, con un total de 2.366.208 parámetros (aproximadamente 2,37 millones) según el recuento real de los safetensors del repositorio. Se trata, por tanto, de un modelo de escala muy reducida, tres ordenes de magnitud por debajo de un LLM de 7B, y no de un modelo de lenguaje generativo de propósito general.
+El modelo identificado como `gianmaTest/generatedDigitalExps_1xLsGv_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de pesos publicado en Hugging Face por el usuario `gianmaTest` mediante la integración `PyTorchModelHubMixin`, con un total de 2.366.208 parámetros (aproximadamente 2,37 millones) según el recuento real de los safetensors del repositorio. Se trata, por tanto, de un modelo de escala muy reducida, tres ordenes de magnitud por debajo de un LLM de 7B, y no de un modelo de lenguaje generativo de propósito general.
 
 El identificador del repositorio sugiere, sin confirmación por parte del autor, un procesamiento jerárquico ("hier_by_room") sobre secuencias espacio-temporales de vídeo, con una capa recurrente ("rnn") y agregación por *mean pooling*. Esta lectura es una inferencia a partir del nombre del checkpoint: la model card no incluye descripción, paper, código ni documentación, y se limita a indicar "More Information Needed" en los tres campos disponibles.
 
@@ -89,7 +89,7 @@ La comparación con LLM de 7B u 8B no es pertinente: la diferencia de escala es 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLsGv_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xLsGv_hier_by_room_rnn_meanPoolProc_video_1
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Blog o demo: no disponible

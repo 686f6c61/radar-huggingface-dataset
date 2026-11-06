@@ -6,7 +6,7 @@ YuminKim/omx-setup no es un modelo de inteligencia artificial, sino un repositor
 
 El repositorio aborda un fallo concreto: el gripper se saturaba y terminaba devolviendo el error 32 (Overload) aproximadamente 2,5 segundos después de iniciar el cierre, a pesar de que la corriente medida (162) estaba muy por debajo del límite configurado (600). La documentación identifica cuatro causas combinadas: ausencia de calibración entre líder y seguidor, ganancias de posición insuficientes, saturación del PWM en el valor máximo de 885 y una obstrucción mecánica por un tornillo suelto.
 
-Es relevante para equipos que despliegan brazos OMX con LeRobot y necesitan reproducir una configuración de gripper estable, pero no contiene pesos, arquitectura de red neuronal, tokenizador ni capacidad de inferencia. Los metadatos de HuggingFace no declaran licencia, idiomas ni pipeline, y el repositorio tiene un tamaño de 0,0 GB con cero descargas y cero likes en el momento de la consulta.
+Es relevante para equipos que despliegan brazos OMX con LeRobot y necesitan reproducir una configuración de gripper estable, pero no contiene pesos, arquitectura de red neuronal, tokenizador ni capacidad de inferencia. Los metadatos de Hugging Face no declaran licencia, idiomas ni pipeline, y el repositorio tiene un tamaño de 0,0 GB con cero descargas y cero likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - GPU recomendadas: no aplica; no se requiere GPU.
 - Compatibilidad con GPU de consumo: no aplica.
 - Hardware robótico necesario: brazo ROBOTIS OMX, actuadores Dynamixel con IDs 6 y 16, interfaz de comunicación compatible con LeRobot (por ejemplo, U2D2 o placa controladora equivalente) y alimentación adecuada.
-- Equipo anfitrión: ordenador con Python, LeRobot instalado, `git` para aplicar el parche y acceso al directorio de calibración de HuggingFace.
+- Equipo anfitrión: ordenador con Python, LeRobot instalado, `git` para aplicar el parche y acceso al directorio de calibración de Hugging Face.
 - Almacenamiento: el repositorio ocupa 0,0 GB; el archivo de calibración y el parche son de tamaño reducido.
 - Opciones de despliegue: no aplican vLLM, llama.cpp, Ollama ni TGI; el despliegue consiste en aplicar el diff y copiar la calibración.
 - Latencia y throughput: no disponibles; dependen del bus Dynamixel, de la frecuencia de control de LeRobot y de la configuración mecánica.
@@ -80,7 +80,7 @@ No se han identificado alternativas públicas equivalentes en la información di
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | pública en HuggingFace, 0 descargas y 0 likes en la consulta | no disponible |
+| Disponibilidad | pública en Hugging Face, 0 descargas y 0 likes en la consulta | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se han identificado alternativas públicas equivalentes en la información di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YuminKim/omx-setup
+- Hugging Face: https://huggingface.co/YuminKim/omx-setup
 - OMX Docs, skill omx-setup: https://omx.vibetip.help/docs/skills/utility/omx-setup (no relacionado con el repositorio; hace referencia a una skill de prompts y configuración de OMX)
 - GitHub, YvanKOB/oumi---oumi-ai: https://github.com/YvanKOB/oumi---oumi-ai (no relacionado; plataforma Oumi para ciclo de vida de modelos fundacionales)
 - GitHub, Yeachan-Heo/oh-my-codex: https://github.com/Yeachan-Heo/oh-my-codex (no relacionado; herramientas de prompts y workflows para Codex)

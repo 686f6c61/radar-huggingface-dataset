@@ -90,9 +90,9 @@ Puertas de calidad: la puerta de ronda 3 pasa los seis criterios (fleurs_le_10.2
 
 | Modelo | Parámetros | Contexto | WER FLEURS-100 vi | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cabin-asr-vi-zipformer-offline-r3 (este) | 68,6 M | no disponible (no streaming) | 7,64 | Apache-2.0 | HuggingFace, rc1 |
+| cabin-asr-vi-zipformer-offline-r3 (este) | 68,6 M | no disponible (no streaming) | 7,64 | Apache-2.0 | Hugging Face, rc1 |
 | sherpa-onnx-zipformer-vi-int8-2025-04-20 (distribuido) | no disponible | no disponible | 10,19 | no disponible en la información | Distribuido con la app |
-| cabin-asr-vi-zipformer-offline-r2 | no disponible (mismo orden de magnitud, tamaño de paquete dentro del 2 % de r3) | no disponible | 7,44 | Apache-2.0 | HuggingFace |
+| cabin-asr-vi-zipformer-offline-r2 | no disponible (mismo orden de magnitud, tamaño de paquete dentro del 2 % de r3) | no disponible | 7,44 | Apache-2.0 | Hugging Face |
 | R13x (modelo profesor) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ Puertas de calidad: la puerta de ronda 3 pasa los seis criterios (fleurs_le_10.2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r3
+- Modelo en Hugging Face: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r3
 - Modelo base r2: https://huggingface.co/doanhlt/cabin-asr-vi-zipformer-offline-r2
 - Colección Cabin offline ASR: https://huggingface.co/collections/doanhlt/cabin-offline-asr-on-device-distilled-from-r13x-6ade0b05eb1f2ac4e49d7cf8
 - Repositorio de código (privado): `thinkprompt/cabin-offline-asr`, rama `feat/mobile-local-kit`

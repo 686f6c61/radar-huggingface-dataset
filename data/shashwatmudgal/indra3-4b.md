@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indra3-4B es un modelo de lenguaje causal de 3.735 millones de parámetros publicado en HuggingFace por el usuario shashwatmudgal. Los metadatos indican que está etiquetado como `qwen3`, `reasoning` y `custom_code`, lo que sugiere que se trata de un fine-tuning o merge basado en la arquitectura Qwen3-4B, aunque no existe documentación oficial que confirme esta relación. El modelo está diseñado para generación de texto y razonamiento, con licencia Apache 2.0 y soporte exclusivo para inglés.
+Indra3-4B es un modelo de lenguaje causal de 3.735 millones de parámetros publicado en Hugging Face por el usuario shashwatmudgal. Los metadatos indican que está etiquetado como `qwen3`, `reasoning` y `custom_code`, lo que sugiere que se trata de un fine-tuning o merge basado en la arquitectura Qwen3-4B, aunque no existe documentación oficial que confirme esta relación. El modelo está diseñado para generación de texto y razonamiento, con licencia Apache 2.0 y soporte exclusivo para inglés.
 
 La relevancia de este modelo radica en su tamaño compacto (3,74B parámetros) y su potencial para tareas de razonamiento en entornos con recursos limitados. Sin embargo, al ser un proyecto reciente (creado en abril de 2026) con cero descargas y acceso restringido (gated), su adopción es todavía muy limitada. La falta de documentación técnica y de benchmarks públicos dificulta una evaluación objetiva de sus capacidades reales.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño compacto (3,74B parámetros) y
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las tecnicas de optimizacion (RLHF, DPO, etc.). Los tags de HuggingFace incluyen `causal-lm`, `language-model`, `reasoning` y `qwen3`, lo que sugiere que el modelo sigue una arquitectura transformer causal similar a la familia Qwen3, pero no hay confirmacion oficial. El repositorio contiene codigo personalizado (`custom_code`), lo que indica que puede haber modificaciones sobre la implementacion estandar de transformers.
+No se dispone de informacion publica sobre la arquitectura interna, el proceso de entrenamiento, el dataset utilizado ni las tecnicas de optimizacion (RLHF, DPO, etc.). Los tags de Hugging Face incluyen `causal-lm`, `language-model`, `reasoning` y `qwen3`, lo que sugiere que el modelo sigue una arquitectura transformer causal similar a la familia Qwen3, pero no hay confirmacion oficial. El repositorio contiene codigo personalizado (`custom_code`), lo que indica que puede haber modificaciones sobre la implementacion estandar de transformers.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ La comparacion es especulativa porque no hay datos de Indra3. Se recomienda eval
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - Sin documentacion tecnica: no hay paper, README detallado ni guia de uso.
 - Sin benchmarks publicos: no se puede verificar su calidad ni comparar con otros modelos.
 - Riesgo de alucinacion y sesgos: al ser un modelo pequeno y sin informacion sobre su entrenamiento, es probable que presente alucinaciones frecuentes y sesgos no mitigados.
@@ -78,6 +78,6 @@ La comparacion es especulativa porque no hay datos de Indra3. Se recomienda eval
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shashwatmudgal/Indra3-4B
+- Modelo en Hugging Face: https://huggingface.co/shashwatmudgal/Indra3-4B
 - Perfil del autor: https://huggingface.co/shashwatmudgal
 - Otro modelo del autor (Qwen3-4B-slerp): https://huggingface.co/shashwatmudgal/Qwen3-4B-slerp

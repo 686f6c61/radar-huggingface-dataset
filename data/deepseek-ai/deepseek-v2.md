@@ -27,7 +27,7 @@ Es relevante para desarrolladores e investigadores porque demuestra que un MoE d
 
 DeepSeek-V2 es un transformer decoder-only con dos componentes clave. Multi-head Latent Attention (MLA) comprime las claves y valores en una representacion latente de baja dimension, reduciendo drasticamente el tamano de la cache KV y habilitando contextos largos con menos memoria. DeepSeekMoE divide las capas feed-forward en expertos enrutados por token, con enrutamiento limitado por dispositivo y una perdida de balance de comunicacion, de modo que cada token activa solo una fraccion de los parametros totales (21B de 236B).
 
-El preentrenamiento utilizo un corpus diverso y de alta calidad de 8,1 billones de tokens, seguido de un proceso de Supervised Fine-Tuning (SFT) y aprendizaje por refuerzo (RL) para desbloquear las capacidades conversacionales y de instrucciones. La model card indica que el codigo abierto en HuggingFace rinde por debajo del codigo interno en GPUs, por lo que el autor ofrece una solucion dedicada basada en vLLM para un despliegue eficiente.
+El preentrenamiento utilizo un corpus diverso y de alta calidad de 8,1 billones de tokens, seguido de un proceso de Supervised Fine-Tuning (SFT) y aprendizaje por refuerzo (RL) para desbloquear las capacidades conversacionales y de instrucciones. La model card indica que el codigo abierto en Hugging Face rinde por debajo del codigo interno en GPUs, por lo que el autor ofrece una solucion dedicada basada en vLLM para un despliegue eficiente.
 
 ## Capacidades
 
@@ -94,14 +94,14 @@ No se dispone en la informacion proporcionada de datos de contexto ni de licenci
 - Sesgos: no se documentan evaluaciones de sesgo ni de toxicidad en la informacion disponible; el corpus de 8,1 billones de tokens puede arrastrar sesgos de sus fuentes.
 - Idiomas: no se publica una lista oficial de idiomas soportados; el rendimiento alto en C-Eval y CMMLU sugiere buen soporte de chino, pero no hay garantias para otras lenguas.
 - Licencia: se trata de una licencia de modelo propia ("deepseek Model Agreement"), no de una licencia de codigo abierto estandar. El codigo se publica bajo MIT, pero el uso de los pesos esta sujeto a condiciones que conviene revisar antes de un despliegue comercial.
-- Rendimiento en HuggingFace: la propia model card advierte de que el codigo abierto rinde por debajo del interno en GPUs, por lo que se recomienda vLLM para produccion.
+- Rendimiento en Hugging Face: la propia model card advierte de que el codigo abierto rinde por debajo del interno en GPUs, por lo que se recomienda vLLM para produccion.
 - Requisito de hardware elevado: ~472 GB en precision completa, fuera del alcance de infraestructura de una sola GPU.
 - Este repositorio corresponde al modelo base, no a la version afinada con RL (DeepSeek-V2-Chat), que es la adecuada para uso conversacional directo.
 - La fila de benchmark Math aparece truncada en la fuente, por lo que no puede citarse como referencia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V2
+- Modelo en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V2
 - Modelo conversacional (RL): https://huggingface.co/deepseek-ai/DeepSeek-V2-Chat
 - Paper DeepSeek-V2 (informe tecnico): https://github.com/deepseek-ai/DeepSeek-V2/blob/main/deepseek-v2-tech-report.pdf
 - arXiv DeepSeek-V2: https://arxiv.org/abs/2405.04434
@@ -112,4 +112,4 @@ No se dispone en la informacion proporcionada de datos de contexto ni de licenci
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Plataforma API: https://www.deepseek.com/en/platform/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai

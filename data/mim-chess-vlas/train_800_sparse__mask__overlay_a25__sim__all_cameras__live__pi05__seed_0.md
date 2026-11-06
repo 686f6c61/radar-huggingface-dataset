@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mim-chess-vlas/train_800_sparse__mask__overlay_a25__sim__all_cameras__live__pi05__seed_0` es un artefacto publicado en HuggingFace por el usuario u organizacion `mim-chess-vlas`. Los datos publicos asociados al repositorio son minimos: la ficha no declara pipeline, licencia, idiomas ni tarjeta de modelo, y unicamente se listan las etiquetas `safetensors` y `region:us`. El repositorio ocupa 56,1 GB y fue creado y actualizado el 13 de septiembre de 2026.
+El modelo `mim-chess-vlas/train_800_sparse__mask__overlay_a25__sim__all_cameras__live__pi05__seed_0` es un artefacto publicado en Hugging Face por el usuario u organizacion `mim-chess-vlas`. Los datos publicos asociados al repositorio son minimos: la ficha no declara pipeline, licencia, idiomas ni tarjeta de modelo, y unicamente se listan las etiquetas `safetensors` y `region:us`. El repositorio ocupa 56,1 GB y fue creado y actualizado el 13 de septiembre de 2026.
 
 El identificador del repositorio aporta pistas sobre su naturaleza, aunque ninguna de ellas esta confirmada en la informacion disponible: el segmento `chess` apunta a un dominio de ajedrez, `vlas` sugiere que se trata de un modelo de tipo vision-language-action (VLA), `pi05` es compatible con la nomenclatura de la familia pi0.5 y el resto de sufijos (`train_800`, `sparse`, `mask`, `overlay_a25`, `sim`, `all_cameras`, `live`, `seed_0`) parecen describir una configuracion concreta de entrenamiento o de captura de datos. Todo ello son inferencias derivadas del nombre, no hechos verificados.
 
@@ -87,5 +87,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__overlay_a25__sim__all_cameras__live__pi05__seed_0
+- Repositorio en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__overlay_a25__sim__all_cameras__live__pi05__seed_0
 - No se han encontrado papers, blogs, repositorios ni demos relacionados en la busqueda web.

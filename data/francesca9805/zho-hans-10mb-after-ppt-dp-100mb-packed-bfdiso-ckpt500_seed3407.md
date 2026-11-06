@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, publicado por el usuario de HuggingFace `francesca9805`, vinculado a un proyecto de investigación sobre tokenizadores de la Universidad de Groningen (el enlace de Weights & Biases de la model card apunta a la organización `f-padovani-university-of-groningen`). Se trata de un transformer decoder-only de tipo GPT-2 con 39.087.104 parámetros (unos 39,1 millones), entrenado con la librería TRL sobre un corpus que, a juzgar por la nomenclatura del identificador, corresponde a chino simplificado (`zho-hans`) y a un flujo de datos empaquetado de unos 100 MB.
+El modelo `zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` es un ajuste fino (SFT) del checkpoint `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407`, publicado por el usuario de Hugging Face `francesca9805`, vinculado a un proyecto de investigación sobre tokenizadores de la Universidad de Groningen (el enlace de Weights & Biases de la model card apunta a la organización `f-padovani-university-of-groningen`). Se trata de un transformer decoder-only de tipo GPT-2 con 39.087.104 parámetros (unos 39,1 millones), entrenado con la librería TRL sobre un corpus que, a juzgar por la nomenclatura del identificador, corresponde a chino simplificado (`zho-hans`) y a un flujo de datos empaquetado de unos 100 MB.
 
 Por su tamaño y por el contexto en el que se publica, no es un modelo de propósito general pensado para producción, sino un artefacto de investigación: forma parte de una familia de ejecuciones experimentales parametrizadas por tamaño de dataset, técnica de empaquetado, precisión (`bfdiso`, presumiblemente bf16), número de checkpoint (500) y semilla (3407). La model card generada automáticamente por TRL no documenta datos de entrenamiento, idiomas, licencia ni evaluación, por lo que la mayoría de las especificaciones habituales figuran como no disponibles.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada y muy específica: sirve como referencia reprod
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parámetros totales | 39.087.104 (≈ 39,1 M) |
 | Parámetros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -49,7 +49,7 @@ El entrenamiento se realizó mediante SFT con TRL sobre el checkpoint base indic
 - Baseline de ablación en experimentos de SFT: al estar generado con TRL y con semilla fija (3407), sirve como punto de referencia reproducible frente a otras configuraciones de datos o de precisión.
 - Pruebas de humo de infraestructura: con 39 M de parámetros permite validar extremo a extremo pipelines de `transformers`, endpoints compatibles con `text-generation-inference` y plantillas de chat sin consumir recursos de GPU relevantes.
 - Generación de texto en CPU o dispositivos de borde: su tamaño (decenas de megabytes en bf16) lo hace ejecutable en portátiles, mini-PC o Raspberry Pi para demostraciones de generación en chino simplificado, con la calidad esperable de un modelo de este tamaño.
-- Docencia y formación: es un ejemplo práctico y manejable de fine-tuning supervisado con TRL, útil para ilustrar el flujo completo desde dataset empaquetado hasta publicación en HuggingFace.
+- Docencia y formación: es un ejemplo práctico y manejable de fine-tuning supervisado con TRL, útil para ilustrar el flujo completo desde dataset empaquetado hasta publicación en Hugging Face.
 - Reproducción de experimentos académicos: la semilla y el identificador de checkpoint permiten replicar condiciones concretas de un estudio sobre tokenización.
 - Evaluación de sesgos y de calidad lingüística en modelos pequeños: útil como caso de estudio de los fallos típicos (repetición, incoherencia, deriva temática) en corpus de bajo recurso.
 
@@ -74,10 +74,10 @@ La comparación es únicamente arquitectónica y de licencia, ya que no existen 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | HuggingFace, ampliamente desplegado |
-| DistilGPT-2 | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace |
-| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Apache-2.0 | HuggingFace |
+| `francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407` | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small (OpenAI) | 124 M | 1.024 tokens | MIT | Hugging Face, ampliamente desplegado |
+| DistilGPT-2 | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face |
+| Pythia-70M (EleutherAI) | 70 M | 2.048 tokens | Apache-2.0 | Hugging Face |
 
 Frente a estas alternativas, el modelo analizado es el más pequeño en parámetros, pero no ofrece información verificable sobre contexto, idioma o licencia, lo que limita su uso fuera del ámbito experimental.
 
@@ -96,7 +96,7 @@ Frente a estas alternativas, el modelo analizado es el más pequeño en parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xql0bm3g
 - Repositorio de TRL: https://github.com/huggingface/trl

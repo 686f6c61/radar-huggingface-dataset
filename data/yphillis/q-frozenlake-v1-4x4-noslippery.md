@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo basado en Q-learning tabular, publicado por el usuario yPhillis en HuggingFace Hub. No se trata de un modelo de lenguaje ni de una red neuronal: es un artefacto de política entrenado para resolver el entorno FrozenLake-v1 en su configuración 4x4 sin deslizamiento (no_slippery), distribuido como un archivo pickle (`q-learning.pkl`) que contiene la tabla Q aprendida.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo basado en Q-learning tabular, publicado por el usuario yPhillis en Hugging Face Hub. No se trata de un modelo de lenguaje ni de una red neuronal: es un artefacto de política entrenado para resolver el entorno FrozenLake-v1 en su configuración 4x4 sin deslizamiento (no_slippery), distribuido como un archivo pickle (`q-learning.pkl`) que contiene la tabla Q aprendida.
 
 El problema que resuelve es un clásico de control secuencial: un agente debe desplazarse por una cuadrícula de 4x4 desde el estado inicial hasta la meta evitando los agujeros. Al estar desactivado el deslizamiento, la transición es determinista, lo que convierte la tarea en un problema de camino óptimo que Q-learning resuelve de forma exacta con suficiente exploración.
 
@@ -74,7 +74,7 @@ Es el unico resultado publicado en la informacion disponible. No se especifican 
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| yPhillis/q-FrozenLake-v1-4x4-noSlippery | Q-learning tabular | 64 entradas estado-accion | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | HuggingFace Hub |
+| yPhillis/q-FrozenLake-v1-4x4-noSlippery | Q-learning tabular | 64 entradas estado-accion | No aplica | mean_reward 1.00 +/- 0.00 (no verificado) | No disponible | Hugging Face Hub |
 | DQN sobre FrozenLake-v1 (Stable-Baselines3) | Red neuronal con replay buffer | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (libreria) | Repositorio de Stable-Baselines3 |
 | PPO sobre FrozenLake-v1 (Stable-Baselines3) | Policy gradient con actor-critico | No disponible | No aplica | No disponible en la informacion proporcionada | MIT (libreria) | Repositorio de Stable-Baselines3 |
 | Iteracion de valor (planificacion exacta) | Programacion dinamica sobre el modelo del entorno | No aplica (requiere el modelo de transiciones) | No aplica | Solucion optima garantizada en entornos deterministas finitos | No disponible (implementacion propia) | Cualquier libreria de RL o codigo propio |
@@ -98,7 +98,7 @@ La comparacion cuantitativa con alternativas no puede completarse porque no se h
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yPhillis/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/yPhillis/q-FrozenLake-v1-4x4-noSlippery
 - Tarjeta del modelo (README): https://huggingface.co/yPhillis/q-FrozenLake-v1-4x4-noSlippery/blob/main/README.md
 - Documentacion del entorno FrozenLake en Gymnasium: https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Documentacion de carga de modelos desde el Hub para agentes de RL: https://huggingface.co/docs/hub/index

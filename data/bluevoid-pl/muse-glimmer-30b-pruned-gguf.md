@@ -75,8 +75,8 @@ No se dispone de datos suficientes para una comparativa rigurosa con otros model
 
 ## Enlaces
 
-- [Repositorio HuggingFace de la versión pruned GGUF](https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-GGUF)
-- [Repositorio HuggingFace de la versión GGUF completa](https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-GGUF)
+- [Repositorio Hugging Face de la versión pruned GGUF](https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-pruned-GGUF)
+- [Repositorio Hugging Face de la versión GGUF completa](https://huggingface.co/bluevoid-pl/Muse-Glimmer-30B-GGUF)
 - [Model card en NVIDIA NIM](https://build.nvidia.com/meta/muse-glimmer-30b/modelcard)
 - [Guía interactiva en GitHub (cobusgreyling)](https://github.com/cobusgreyling/Muse-Glimmer/tree/main)
 - [Documentación oficial de Meta para obtener el modelo](https://dev.meta.ai/docs/muse-glimmer/get-the-model)

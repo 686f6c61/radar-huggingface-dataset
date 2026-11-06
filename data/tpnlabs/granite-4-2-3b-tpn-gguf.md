@@ -126,7 +126,7 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tpnlabs/granite-4.2-3b-TPN-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tpnlabs/granite-4.2-3b-TPN-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Informe completo de TPN Workbench: https://bench.trueperformancenetwork.com/r/_xkA5jgS8wRQ523Epzbirg
 - TPN Workbench: https://bench.trueperformancenetwork.com

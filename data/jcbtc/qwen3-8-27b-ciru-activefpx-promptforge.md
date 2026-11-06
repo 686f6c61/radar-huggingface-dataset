@@ -100,7 +100,7 @@ La información disponible no incluye comparaciones directas con otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcbtc/Qwen3.8-27B-CIRU-ActiveFPX-PromptForge
+- Modelo en Hugging Face: https://huggingface.co/jcbtc/Qwen3.8-27B-CIRU-ActiveFPX-PromptForge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del runtime CIRU ROCmFPX: https://github.com/ciru-ai/ROCmFPX
 - Tag del runtime: https://github.com/ciru-ai/ROCmFPX/tree/qwen3.8-activefpx-promptforge-v1

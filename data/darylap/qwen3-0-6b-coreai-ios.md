@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darylap/Qwen3-0.6B-coreai-ios | 0,6B | 8192 tokens | `.aimodel` (Core AI) | apache-2.0 | HuggingFace, requiere iOS 27+ |
-| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible en esta ficha | safetensors | apache-2.0 | HuggingFace |
-| mlboydaisuke/qwen3-0.6b-CoreAI-official | 0,6B | no disponible | `.aimodel` (Core AI) | no disponible | HuggingFace |
+| darylap/Qwen3-0.6B-coreai-ios | 0,6B | 8192 tokens | `.aimodel` (Core AI) | apache-2.0 | Hugging Face, requiere iOS 27+ |
+| Qwen/Qwen3-0.6B (base) | 0,6B | no disponible en esta ficha | safetensors | apache-2.0 | Hugging Face |
+| mlboydaisuke/qwen3-0.6b-CoreAI-official | 0,6B | no disponible | `.aimodel` (Core AI) | no disponible | Hugging Face |
 | Qwen3-0.6B (Qualcomm AI Hub) | 0,6B | no disponible | formato Qualcomm | no disponible | Qualcomm AI Hub, orientado a Snapdragon |
 
 Los tres ultimos son alternativas de la misma categoria: el modelo base original o exportaciones a distintos runtimes moviles. La diferencia principal de esta ficha frente a los otros dos despliegues es el preset de cuantizacion mixta y el contexto fijado en 8192 tokens.
@@ -88,7 +88,7 @@ Los tres ultimos son alternativas de la misma categoria: el modelo base original
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darylap/Qwen3-0.6B-coreai-ios
+- Modelo en Hugging Face: https://huggingface.co/darylap/Qwen3-0.6B-coreai-ios
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca
 - Herramientas Apple coreai-models: https://github.com/apple/coreai-models/tree/e7b24da85ea64a77d26324d7ce9607de9b955f57
 - Receta de exportacion Qwen3 en coreai-models: https://github.com/apple/coreai-models/blob/main/models/qwen3/README.md

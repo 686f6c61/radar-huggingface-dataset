@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `jayashree2026/finetuned-gpt-2-sentiment-classification` es un modelo alojado en HuggingFace cuyo nombre sugiere un ajuste fino de GPT-2 orientado a clasificacion de sentimiento. El autor es el usuario `jayashree2026` y la libreria declarada es `transformers`. El modelo se creo y actualizo el 27 de septiembre de 2026, y a fecha de la consulta acumula 0 descargas y 0 "likes".
+El repositorio `jayashree2026/finetuned-gpt-2-sentiment-classification` es un modelo alojado en Hugging Face cuyo nombre sugiere un ajuste fino de GPT-2 orientado a clasificacion de sentimiento. El autor es el usuario `jayashree2026` y la libreria declarada es `transformers`. El modelo se creo y actualizo el 27 de septiembre de 2026, y a fecha de la consulta acumula 0 descargas y 0 "likes".
 
-La model card asociada es la plantilla generada automaticamente por HuggingFace: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) aparecen como `[More Information Needed]`. No hay por tanto documentacion verificable sobre arquitectura, tamano, contexto, dataset ni procedimiento de ajuste.
+La model card asociada es la plantilla generada automaticamente por Hugging Face: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion y uso previsto) aparecen como `[More Information Needed]`. No hay por tanto documentacion verificable sobre arquitectura, tamano, contexto, dataset ni procedimiento de ajuste.
 
-El unico metadato sustantivo es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que la propia plantilla de HuggingFace incluye por defecto. No es una referencia al modelo en si. En consecuencia, esta ficha solo puede describir el artefacto de forma condicional y marcar como no disponibles la practica totalidad de sus especificaciones.
+El unico metadato sustantivo es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que la propia plantilla de Hugging Face incluye por defecto. No es una referencia al modelo en si. En consecuencia, esta ficha solo puede describir el artefacto de forma condicional y marcar como no disponibles la practica totalidad de sus especificaciones.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El unico metadato sustantivo es la etiqueta `arxiv:1910.09700`, que corresponde 
 
 No hay informacion publicada sobre la arquitectura. La model card no especifica si se trata de un transformer decoder-only, un encoder, un modelo MoE o cualquier otra variante, ni confirma la familia GPT-2 que sugiere el nombre del repositorio. Tampoco se indica la configuracion de capas, dimensiones ocultas, numero de cabezas de atencion ni el tokenizador empleado.
 
-Respecto al entrenamiento, se desconoce por completo el corpus utilizado (idioma, dominio, tamano en tokens, procedencia), el regimen de ajuste fino (epocas, tasa de aprendizaje, precision mixta, congelacion de capas) y si hubo etapas de RLHF, DPO o cualquier otra forma de alineacion. No se documenta ninguna innovacion tecnica ni estrategia de decodificacion. El repositorio incluye unicamente la etiqueta de articulo `arxiv:1910.09700`, que la plantilla automatica de HuggingFace anade por defecto y que no guarda relacion con el diseno del modelo.
+Respecto al entrenamiento, se desconoce por completo el corpus utilizado (idioma, dominio, tamano en tokens, procedencia), el regimen de ajuste fino (epocas, tasa de aprendizaje, precision mixta, congelacion de capas) y si hubo etapas de RLHF, DPO o cualquier otra forma de alineacion. No se documenta ninguna innovacion tecnica ni estrategia de decodificacion. El repositorio incluye unicamente la etiqueta de articulo `arxiv:1910.09700`, que la plantilla automatica de Hugging Face anade por defecto y que no guarda relacion con el diseno del modelo.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No se dispone de informacion suficiente para comparar el rendimiento. La tabla s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jayashree2026/finetuned-gpt-2-sentiment-classification` | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| `distilbert-base-uncased-finetuned-sst-2-english` | 66 millones | 512 tokens | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | 125 millones | 512 tokens | No disponible | HuggingFace |
-| `siebert/sentiment-roberta-large-english` | 355 millones | 512 tokens | MIT | HuggingFace |
+| `jayashree2026/finetuned-gpt-2-sentiment-classification` | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| `distilbert-base-uncased-finetuned-sst-2-english` | 66 millones | 512 tokens | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | 125 millones | 512 tokens | No disponible | Hugging Face |
+| `siebert/sentiment-roberta-large-english` | 355 millones | 512 tokens | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ No se dispone de informacion suficiente para comparar el rendimiento. La tabla s
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jayashree2026/finetuned-gpt-2-sentiment-classification
+- Hugging Face: https://huggingface.co/jayashree2026/finetuned-gpt-2-sentiment-classification
 - Articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental referenciada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales del modelo en la busqueda web.

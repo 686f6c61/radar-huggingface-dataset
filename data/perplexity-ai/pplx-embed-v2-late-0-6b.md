@@ -75,8 +75,8 @@ No se han publicado otros resultados de benchmarks (MMLU, MTEB, BEIR u otros) en
 
 | Modelo | Parametros | Contexto | ViDoRe v3 imagen / Markdown | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pplx-embed-v2-late-0.6b | 594M totales, 340M activos | no disponible | 62,3% / 61,2% | MIT | HuggingFace, safetensors |
-| pplx-embed-v2-late-9b | activos 7,4B (mismo autor) | no disponible | 65,2% / 64,7% | MIT (segun repositorio del modelo pequeno; verificar en su ficha) | HuggingFace |
+| pplx-embed-v2-late-0.6b | 594M totales, 340M activos | no disponible | 62,3% / 61,2% | MIT | Hugging Face, safetensors |
+| pplx-embed-v2-late-9b | activos 7,4B (mismo autor) | no disponible | 65,2% / 64,7% | MIT (segun repositorio del modelo pequeno; verificar en su ficha) | Hugging Face |
 | ColBERT clasico (familia de referencia) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | ColPali / ColQwen2 (retrievers visuales de late-interaction) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | jina-colbert-v2 (retriever multilingue multivector) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -98,7 +98,7 @@ Los únicos datos cuantitativos disponibles en la información proporcionada cor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
+- Modelo en Hugging Face: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-0.6b
 - Modelo hermano de 9B: https://huggingface.co/perplexity-ai/pplx-embed-v2-late-9b
 - Blog de Perplexity sobre embeddings multimodales: https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector
 - Paper de referencia del objetivo LEAF: https://aclanthology.org/2026.acl-long.2008/

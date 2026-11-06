@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jadonharsh/smriti-clip-vitb32-onnx
+- Hugging Face: https://huggingface.co/jadonharsh/smriti-clip-vitb32-onnx
 - Modelo base: https://huggingface.co/laion/CLIP-ViT-B-32-laion2B-s34B-b79K
 - Sitio del proyecto Smriti: https://smriti.jadonharsh.in

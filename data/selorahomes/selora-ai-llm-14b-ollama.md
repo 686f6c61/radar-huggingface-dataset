@@ -105,7 +105,7 @@ En precision sobre el benchmark Allen, el paquete de adaptadores supera al build
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama
+- Modelo en Hugging Face: https://huggingface.co/selorahomes/Selora-AI-LLM-14B-ollama
 - Paquete de adaptadores de referencia: https://huggingface.co/selorahomes/Selora-AI-LLM-14B
 - Integracion para Home Assistant: https://github.com/SeloraHomes/ha-selora-ai
 - Benchmark Allen de Home Assistant: https://github.com/allenporter/home-assistant-datasets

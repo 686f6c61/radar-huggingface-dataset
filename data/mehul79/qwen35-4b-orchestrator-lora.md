@@ -74,9 +74,9 @@ No hay información suficiente para una comparativa rigurosa. Se conoce la exist
 
 | Modelo | Parámetros (base) | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mehul79/qwen35-4b-orchestrator-lora | ~4B (base) | no disponible | no disponible | HuggingFace (adaptador) |
-| BRlkl/orchestrator-qwen3-4b-lora-sft | ~4B (base) | no disponible | no disponible | HuggingFace (adaptador) |
-| Qwen3.5-4B (base) | ~4B | no disponible | no disponible | HuggingFace |
+| mehul79/qwen35-4b-orchestrator-lora | ~4B (base) | no disponible | no disponible | Hugging Face (adaptador) |
+| BRlkl/orchestrator-qwen3-4b-lora-sft | ~4B (base) | no disponible | no disponible | Hugging Face (adaptador) |
+| Qwen3.5-4B (base) | ~4B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,10 +90,10 @@ No hay información suficiente para una comparativa rigurosa. Se conoce la exist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mehul79/qwen35-4b-orchestrator-lora
+- Modelo en Hugging Face: https://huggingface.co/mehul79/qwen35-4b-orchestrator-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Colección Qwen3 en HuggingFace: https://huggingface.co/collections/Qwen/qwen3
+- Colección Qwen3 en Hugging Face: https://huggingface.co/collections/Qwen/qwen3
 - Adaptador similar (BRlkl): https://huggingface.co/BRlkl/orchestrator-qwen3-4b-lora-sft
 - Repositorio de fine-tuning Qwen3.5-4B: https://github.com/IIIIQIIII/qwen35-4b-lora-sft
 - Guía de modelos Qwen (insiderllm.com): https://insiderllm.com/guides/qwen-models-guide/

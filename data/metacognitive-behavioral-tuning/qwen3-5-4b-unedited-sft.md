@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-Unedited-SFT | 4,54B | 131.072 | Apache-2.0 | HuggingFace (192 descargas) | SFT completo sobre trazas sin editar |
-| Qwen3.5-4B-MBT-R | No disponible | No disponible | Apache-2.0 (según base) | HuggingFace | Misma base, trazas reescritas |
-| Qwen3.5-4B-MBT-I | No disponible | No disponible | Apache-2.0 (según base) | HuggingFace | Misma base, trazas con inserción |
-| Qwen3.5-4B-MBT-A | No disponible | No disponible | Apache-2.0 (según base) | HuggingFace | Misma base, edición agéntica |
-| Qwen/Qwen3.5-4B-Base | No disponible | No disponible | Apache-2.0 | HuggingFace | Modelo base sin ajuste |
+| Qwen3.5-4B-Unedited-SFT | 4,54B | 131.072 | Apache-2.0 | Hugging Face (192 descargas) | SFT completo sobre trazas sin editar |
+| Qwen3.5-4B-MBT-R | No disponible | No disponible | Apache-2.0 (según base) | Hugging Face | Misma base, trazas reescritas |
+| Qwen3.5-4B-MBT-I | No disponible | No disponible | Apache-2.0 (según base) | Hugging Face | Misma base, trazas con inserción |
+| Qwen3.5-4B-MBT-A | No disponible | No disponible | Apache-2.0 (según base) | Hugging Face | Misma base, edición agéntica |
+| Qwen/Qwen3.5-4B-Base | No disponible | No disponible | Apache-2.0 | Hugging Face | Modelo base sin ajuste |
 
 No se dispone de datos de benchmarks ni de comparaciones con modelos de otras familias (por ejemplo, Llama o Gemma de tamaño similar) en la información proporcionada.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de comparaciones con modelos de otras fa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT
+- Modelo en Hugging Face: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-Unedited-SFT
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset de trazas: https://huggingface.co/datasets/metacognitive-behavioral-tuning/mbt-traces
 - Variante MBT-R: https://huggingface.co/metacognitive-behavioral-tuning/Qwen3.5-4B-MBT-R

@@ -85,7 +85,7 @@ Nota: los datos de los modelos comparativos provienen de sus fichas públicas of
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shebxyd/kofu-gemma-2b-edge
+- Hugging Face: https://huggingface.co/shebxyd/kofu-gemma-2b-edge
 - Modelo base: https://huggingface.co/google/gemma-2b-it
 - Repositorio Kofu Mobile: https://github.com/Kineyo/Kofu_Mobile
 - Licencia Gemma: https://ai.google.dev/gemma/terms

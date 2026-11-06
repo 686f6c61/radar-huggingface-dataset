@@ -64,6 +64,6 @@ No se dispone de información sobre otros LoRAs de Krea 2 o adaptadores comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: [f209393j/cheechee](https://huggingface.co/f209393j/cheechee)
+- Repositorio Hugging Face: [f209393j/cheechee](https://huggingface.co/f209393j/cheechee)
 - Modelo base (referenciado en la model card): `krea/Krea-2-Raw` (sin enlace directo proporcionado)
 - Modelo base para inferencia (referenciado en el código de ejemplo): `krea/Krea-2-Turbo` (sin enlace directo proporcionado)

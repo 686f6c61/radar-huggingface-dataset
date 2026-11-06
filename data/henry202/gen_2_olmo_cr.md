@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henry202/gen_2_olmo_CR` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por el usuario `henry202` en HuggingFace, que se construye sobre el modelo base `allenai/Olmo-3-7B-Instruct-SFT` de AI2 (Allen Institute for AI). El repositorio contiene un adaptador de aproximadamente 0.2 GB, lo que indica que se trata de un ajuste fino parcial del modelo base y no de un modelo completo de 7B de parámetros.
+`henry202/gen_2_olmo_CR` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado por el usuario `henry202` en Hugging Face, que se construye sobre el modelo base `allenai/Olmo-3-7B-Instruct-SFT` de AI2 (Allen Institute for AI). El repositorio contiene un adaptador de aproximadamente 0.2 GB, lo que indica que se trata de un ajuste fino parcial del modelo base y no de un modelo completo de 7B de parámetros.
 
 El modelo base, OLMo 3 de AI2, es una familia de modelos de lenguaje abiertos diseñada para avanzar en la investigación de IA reproducible, con un flujo completo que incluye preentrenamiento, midtraining, extension de contexto y fases de post-entrenamiento (SFT, DPO y RL). El adaptador `gen_2_olmo_CR` parece ser un experimento de fine-tuning especifico, aunque la model card no proporciona informacion sobre el dataset de entrenamiento, el proposito del ajuste ni los resultados obtenidos.
 
@@ -25,7 +25,7 @@ La relevancia de este adaptador es limitada debido a la ausencia total de docume
 
 El modelo es un adaptador PEFT (libreria `peft` version 0.14.0) que se aplica sobre `allenai/Olmo-3-7B-Instruct-SFT`. El modelo base pertenece a la familia OLMo de AI2, que es una familia de modelos de lenguaje de codigo abierto con arquitectura transformer decoder-only. La version Instruct-SFT indica que el modelo base ha pasado por un proceso de supervisado fine-tuning (SFT) para seguir instrucciones.
 
-Los datos de entrenamiento del adaptador no estan documentados en la model card. No se proporciona informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF o DPO. El tag `arxiv:1910.09700` enlaza con el paper de Lacoste et al. sobre estimacion de emisiones de carbono, que es una referencia estandar en las model cards de HuggingFace, pero no aporta informacion tecnica sobre el entrenamiento.
+Los datos de entrenamiento del adaptador no estan documentados en la model card. No se proporciona informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas de RLHF o DPO. El tag `arxiv:1910.09700` enlaza con el paper de Lacoste et al. sobre estimacion de emisiones de carbono, que es una referencia estandar en las model cards de Hugging Face, pero no aporta informacion tecnica sobre el entrenamiento.
 
 La unica innovacion tecnica destacable es el uso de PEFT/LoRA, que permite el ajuste eficiente de parametros sin modificar todos los pesos del modelo base. No se mencionan tecnicas adicionales como decodificacion especulativa, attention linear ni otras innovaciones.
 

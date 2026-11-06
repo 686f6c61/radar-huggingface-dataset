@@ -84,7 +84,7 @@ La comparativa se limita a modelos de restauracion de imagenes. Este repositorio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WAS/was-node-suite-weights
+- Repositorio Hugging Face: https://huggingface.co/WAS/was-node-suite-weights
 - WAS Node Suite en GitHub: https://github.com/WASasquatch/was-node-suite-comfyui
 - Documentacion de WAS Node Suite en DeepWiki: https://deepwiki.com/ltdrdata/was-node-suite-comfyui
 - Pagina de registro de ComfyUI (WAS Node Suite Revised): https://registry.comfy.org/nodes/was-ns

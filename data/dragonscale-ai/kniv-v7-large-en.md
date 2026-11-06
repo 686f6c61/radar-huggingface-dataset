@@ -111,11 +111,11 @@ Segun el autor, kniv-v7-large-en ofrece las mismas salidas que los teachers con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dragonscale-ai/kniv-v7-large-en
+- Modelo en Hugging Face: https://huggingface.co/dragonscale-ai/kniv-v7-large-en
 - Guia de modos de fallo (GUIDE.md): https://huggingface.co/dragonscale-ai/kniv-v7-large-en/blob/main/GUIDE.md
 - Modelo teacher kniv-v7-xlarge-u-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-u-en
 - Modelo teacher kniv-v7-xlarge-d-en: https://huggingface.co/dragonscale-ai/kniv-v7-xlarge-d-en
 - Modelo kniv-v7-small-en: https://huggingface.co/dragonscale-ai/kniv-v7-small-en
 - Modelo kniv-v7-tiny-en: https://huggingface.co/dragonscale-ai/kniv-v7-tiny-en
 - Modelo base ModernBERT-base: https://huggingface.co/answerdotai/ModernBERT-base
-- Organizacion en HuggingFace: https://huggingface.co/dragonscale-ai
+- Organizacion en Hugging Face: https://huggingface.co/dragonscale-ai

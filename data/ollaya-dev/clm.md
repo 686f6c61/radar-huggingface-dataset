@@ -97,7 +97,7 @@ No se dispone de información sobre modelos de decisión directamente comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ollaya-dev/clm
+- Modelo en Hugging Face: https://huggingface.co/ollaya-dev/clm
 - Modelo base (cabezas): https://huggingface.co/Contrastive-LM/CLM-v0.1-8B
 - Modelo base, commit fijado: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B/tree/e939398d4556fcd9400c76fa8c5a513202f42b0a
 - Modelo base (encoder): https://huggingface.co/Qwen/Qwen3-8B

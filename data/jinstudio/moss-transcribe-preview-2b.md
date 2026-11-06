@@ -111,8 +111,8 @@ Nota: los datos de parametros, idioma y licencia de los modelos alternativos son
 
 ## Enlaces
 
-- HuggingFace (repositorio consultado): https://huggingface.co/Jinstudio/MOSS-Transcribe-preview-2B
-- HuggingFace (repositorio original referenciado en la model card): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-preview-2B
+- Hugging Face (repositorio consultado): https://huggingface.co/Jinstudio/MOSS-Transcribe-preview-2B
+- Hugging Face (repositorio original referenciado en la model card): https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-preview-2B
 - Open ASR Leaderboard (space): https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
 - Blog de OpenMOSS: https://mosi.cn/#models
 - Twitter/X de OpenMOSS: https://x.com/Open_MOSS

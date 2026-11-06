@@ -101,7 +101,7 @@ La comparación relevante es interna a la familia: esta versión sacrifica 2,89 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tensor-ai-inc/d3-flash-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/tensor-ai-inc/d3-flash-NVFP4
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
 - Decision Index (repositorio de evaluación): https://github.com/apolinario/decision-index
 - Dataset de calibración UltraChat: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

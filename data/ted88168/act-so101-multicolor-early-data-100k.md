@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ted88168/act-so101-multicolor-early-data-100k` es una politica de control robotico basada en Action Chunking Transformer (ACT), entrenada desde cero para un brazo seguidor SO-101. Lo publica el usuario ted88168 en HuggingFace, con licencia Apache 2.0 y compatibilidad con la libreria LeRobot (fuente compatible con la version 0.6.2). No es un modelo de lenguaje ni un modelo de vision-lenguaje-accion (VLA): es un modulo de imitacion que mapea observaciones visuales y el estado del robot a secuencias de acciones motoras.
+El modelo `ted88168/act-so101-multicolor-early-data-100k` es una politica de control robotico basada en Action Chunking Transformer (ACT), entrenada desde cero para un brazo seguidor SO-101. Lo publica el usuario ted88168 en Hugging Face, con licencia Apache 2.0 y compatibilidad con la libreria LeRobot (fuente compatible con la version 0.6.2). No es un modelo de lenguaje ni un modelo de vision-lenguaje-accion (VLA): es un modulo de imitacion que mapea observaciones visuales y el estado del robot a secuencias de acciones motoras.
 
 El modelo tiene 51.668.614 parametros totales segun los ficheros safetensors del repositorio (la model card declara 51.597.190 parametros de la politica ACT), un tamano de repositorio de 0,2 GB y un pipeline declarado como `robotics`. Se entreno durante 100.000 pasos sobre el dataset `ted88168/so101_multicolor_master_v1`, compuesto por 243 episodios y 175.923 fotogramas a 30 FPS, con dos camaras (`observation.images.front` y `observation.images.handeye`), estado del robot de 6 dimensiones y acciones de 6 dimensiones.
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Condicionado por lenguaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act-so101-multicolor-early-data-100k | ACT (imitacion) | 51,7 M | No | Apache 2.0 | HuggingFace (0 descargas) |
+| act-so101-multicolor-early-data-100k | ACT (imitacion) | 51,7 M | No | Apache 2.0 | Hugging Face (0 descargas) |
 | ACT original (Zhao et al., 2023) | ACT (imitacion) | No disponible | No | No disponible | Paper y repositorio publicos |
 | Diffusion Policy (Chi et al., 2023) | Politica generativa por difusion | No disponible | No | No disponible | Repositorio publico |
-| SmolVLA (Hugging Face) | VLA | No disponible | Si | No disponible | HuggingFace |
+| SmolVLA (Hugging Face) | VLA | No disponible | Si | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La diferencia funcional relevante es que las propuestas VLA, al estar condicionadas por lenguaje, permiten seleccionar el objetivo mediante instruccion textual, algo que este checkpoint no soporta.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ted88168/act-so101-multicolor-early-data-100k
+- Modelo en Hugging Face: https://huggingface.co/ted88168/act-so101-multicolor-early-data-100k
 - Dataset de entrenamiento: https://huggingface.co/datasets/ted88168/so101_multicolor_master_v1
 - LeRobot (libreria de referencia): https://github.com/huggingface/lerobot
 - Paper original de ACT, "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware" (Zhao et al., 2023): https://arxiv.org/abs/2304.13705

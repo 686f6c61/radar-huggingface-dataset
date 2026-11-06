@@ -72,8 +72,8 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Labadain-MedQA-QLoRA-Gemma-4-E4B-it-Tetun | Adaptador sobre base de 4B (E4B) | No disponible | 45,95% en 325 preguntas USMLE en tetun | No disponible | Adaptador PEFT en HuggingFace |
-| Gemma 4 E4B-it (base, `unsloth/gemma-4-E4B-it`) | 4B efectivos (E4B) | No disponible | No evaluado en tetun en la información disponible | No disponible | Pesos completos en HuggingFace |
+| Labadain-MedQA-QLoRA-Gemma-4-E4B-it-Tetun | Adaptador sobre base de 4B (E4B) | No disponible | 45,95% en 325 preguntas USMLE en tetun | No disponible | Adaptador PEFT en Hugging Face |
+| Gemma 4 E4B-it (base, `unsloth/gemma-4-E4B-it`) | 4B efectivos (E4B) | No disponible | No evaluado en tetun en la información disponible | No disponible | Pesos completos en Hugging Face |
 | Otros adaptadores médicos en lenguas de bajos recursos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de comparaciones con alternativas equivalentes en tetun en la información proporcionada.
@@ -92,7 +92,7 @@ No se dispone de comparaciones con alternativas equivalentes en tetun en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-E4B-it-Tetun
+- Modelo en Hugging Face: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-E4B-it-Tetun
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-E4B-it
 - Dataset flashcards médicas EN-Tetun: https://huggingface.co/datasets/labadain/Labadain-MedQA-MedAlpaca-Medical-Flashcards-English-Tetun
 - Dataset WikiDoc información a pacientes EN-Tetun: https://huggingface.co/datasets/labadain/Labadain-MedQA-MeadAlpaca-WikiDoc-Patient-Information-English-Tetun

@@ -73,7 +73,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (Lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Plaguekind/H3-Lora
+- Repositorio Hugging Face: https://huggingface.co/Plaguekind/H3-Lora
 - Repositorio de LoRAs adicionales: https://huggingface.co/Plaguekind/H3-Loras/tree/main
 - Pagina en Civitai: https://civitai.com/models/2663838/plaguekind-minimax-h3-sparse-attention-ltx-workflow-ease-of-use-eros-or-sulphur-compatible-or-faceid
 - Nodos de ComfyUI: https://github.com/PlagueKind/ComfyUI-PlagueKind-Nodes

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`StillWorking/Image` es un repositorio alojado en HuggingFace bajo la autoría del usuario StillWorking, publicado con licencia MIT y etiquetado para la región `us`. A fecha de la información disponible, el repositorio no incluye una model card descriptiva más allá del bloque de metadatos de licencia, no declara pipeline de inferencia y no registra descargas ni interacciones por parte de la comunidad.
+`StillWorking/Image` es un repositorio alojado en Hugging Face bajo la autoría del usuario StillWorking, publicado con licencia MIT y etiquetado para la región `us`. A fecha de la información disponible, el repositorio no incluye una model card descriptiva más allá del bloque de metadatos de licencia, no declara pipeline de inferencia y no registra descargas ni interacciones por parte de la comunidad.
 
 Por la denominación del identificador ("Image") y la ausencia de cualquier especificación técnica, no es posible confirmar que se trate de un modelo de lenguaje, un modelo de difusión, un codificador visual o un artefacto auxiliar. Tampoco se dispone de información sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento ni resultados de evaluación.
 
@@ -75,5 +75,5 @@ No disponible. La ausencia de especificaciones técnicas (arquitectura, parámet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/StillWorking/Image
+- Repositorio en Hugging Face: https://huggingface.co/StillWorking/Image
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

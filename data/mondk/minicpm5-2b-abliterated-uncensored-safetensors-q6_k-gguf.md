@@ -61,11 +61,11 @@ Modelos comparables: MiniCPM5-1B (OpenBMB) y el MiniCPM5-2B original. No se disp
 - Riesgo de alucinación: al ser un modelo pequeño, la probabilidad de generar contenido factualmente incorrecto es mayor que en modelos de mayor tamaño.
 - Limitaciones de contexto o idioma: no disponibles.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero el modelo abliterated puede generar contenido no seguro o inapropiado; el usuario es responsable de su uso.
-- Caveat: no hay evidencia de mantenimiento activo (0 descargas, 0 likes en HuggingFace), por lo que puede contener errores no corregidos.
+- Caveat: no hay evidencia de mantenimiento activo (0 descargas, 0 likes en Hugging Face), por lo que puede contener errores no corregidos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q6_K-GGUF
+- Hugging Face: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors-Q6_K-GGUF
 - Modelo base: https://huggingface.co/mondk/MiniCPM5-2B-Abliterated-Uncensored-Safetensors
 - GitHub OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Ollama: https://ollama.com/openbmb/minicpm5

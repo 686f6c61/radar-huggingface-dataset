@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B-Base (modelo base) | 9,4 B | No disponible | No disponible | HuggingFace |
-| agentic-ptb/sol-high.h015.maxrl-scaleswe.step_1 | 9,4 B | No disponible | No disponible | HuggingFace |
-| Otros checkpoints del sweep AgentPTB | 9,4 B | No disponible | No disponible | HuggingFace |
+| Qwen3.5-9B-Base (modelo base) | 9,4 B | No disponible | No disponible | Hugging Face |
+| agentic-ptb/sol-high.h015.maxrl-scaleswe.step_1 | 9,4 B | No disponible | No disponible | Hugging Face |
+| Otros checkpoints del sweep AgentPTB | 9,4 B | No disponible | No disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Este checkpoint es una variante fine-tuned del modelo base, por lo que su comparación directa con otros modelos de la misma categoría (por ejemplo, Llama-3.1-8B o Mistral-7B) requeriría ejecutar los mismos benchmarks. La información pública no permite establecer una comparativa cuantitativa fiable.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo. Este checkpoint es una varian
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-high.h015.maxrl-scaleswe.step_1
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-high.h015.maxrl-scaleswe.step_1
 - Repositorio ScaleSWE (dataset de trayectorias): https://github.com/AweAI-Team/ScaleSWE
 - Repositorio maxrl (Maximum Likelihood Reinforcement Learning): https://github.com/tajwarfahim/maxrl
 - Índice del sweep AgentPTB (mencionado en la model card, no se ha encontrado URL directa): no disponible

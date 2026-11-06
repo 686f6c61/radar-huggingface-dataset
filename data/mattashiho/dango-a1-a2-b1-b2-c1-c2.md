@@ -21,7 +21,7 @@ Es relevante ahora porque acompaña a una publicación en el congreso ANLP 2026 
 | Licencia | cc (CC BY 4.0 para código, scripts y modelos preentrenados); los modelos ajustados con datos de instrucción Ichikara prohíben el uso comercial de modelos derivados |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 3,7 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -76,11 +76,11 @@ El paper describe además un ajuste experimental en el que se entrena con A1+A2+
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Dango-A1-A2-B1-B2-C1-C2 | 1,87 B | no disponible | cc, con restriccion comercial por datos Ichikara | SFT sobre lecciones L2 A1-C2; japones L1 | HuggingFace, safetensors |
-| llm-jp-3-1.8b | 1,8 B | no disponible en la informacion | no disponible en la informacion | LLM japones generalista, misma familia arquitectonica | HuggingFace |
-| Dango-pretrained (dango-1.8b-100Btok) | 1,8 B | no disponible | CC BY 4.0 | Preentrenamiento L1-only japones, 100 B tokens | HuggingFace |
-| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | LLM generalista en ingles | HuggingFace |
-| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | LLM generalista multilingue | HuggingFace |
+| Dango-A1-A2-B1-B2-C1-C2 | 1,87 B | no disponible | cc, con restriccion comercial por datos Ichikara | SFT sobre lecciones L2 A1-C2; japones L1 | Hugging Face, safetensors |
+| llm-jp-3-1.8b | 1,8 B | no disponible en la informacion | no disponible en la informacion | LLM japones generalista, misma familia arquitectonica | Hugging Face |
+| Dango-pretrained (dango-1.8b-100Btok) | 1,8 B | no disponible | CC BY 4.0 | Preentrenamiento L1-only japones, 100 B tokens | Hugging Face |
+| TinyLlama-1.1B | 1,1 B | 2.048 tokens | Apache 2.0 | LLM generalista en ingles | Hugging Face |
+| Qwen2.5-1.5B | 1,5 B | 32.768 tokens | Apache 2.0 | LLM generalista multilingue | Hugging Face |
 
 La comparación relevante no es de rendimiento generalista, sino de propósito: Dango es un modelo de investigación de SLA con capacidades generalistas limitadas por diseño, mientras que TinyLlama, Qwen2.5 y llm-jp-3 son modelos de uso general. No se dispone de cifras de benchmarks comunes que permitan una comparación cuantitativa directa.
 
@@ -97,7 +97,7 @@ La comparación relevante no es de rendimiento generalista, sino de propósito: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattashiho/dango-A1-A2-B1-B2-C1-C2
+- Modelo en Hugging Face: https://huggingface.co/mattashiho/dango-A1-A2-B1-B2-C1-C2
 - Modelo base (Dango-pretrained): https://huggingface.co/mattashiho/dango-1.8b-100Btok
 - Repositorio GitHub (código de filtrado y entrenamiento): https://github.com/mattashiho233/dango
 - README del repositorio: https://github.com/mattashiho233/dango/blob/main/README.md

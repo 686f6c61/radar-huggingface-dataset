@@ -93,7 +93,7 @@ La comparativa con modelos de otros fabricantes (por ejemplo, CodeLlama o StarCo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelfCode/Qwen2.5-Coder-0.5B-Instruct-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/SelfCode/Qwen2.5-Coder-0.5B-Instruct-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct
 - Heretic (herramienta de decensoring): https://heretic-project.org
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

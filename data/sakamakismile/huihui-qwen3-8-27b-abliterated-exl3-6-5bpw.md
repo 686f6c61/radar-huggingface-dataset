@@ -6,7 +6,7 @@
 
 El modelo **Huihui-Qwen3.8-27B-abliterated-EXL3-6.5bpw** es una cuantización EXL3 de 6.5 bits por peso, creada por **sakamakismile** a partir del modelo base **huihui-ai/Huihui-Qwen3.8-27B-abliterated**. Este modelo base es una versión "abliterated" (sin filtros de contenido) de un modelo de la familia Qwen3.5, con arquitectura híbrida de 64 capas: 16 capas de atención completa y 48 capas de atención lineal. El proceso de cuantización se realizó con ExLlamaV3 v1.4.5, utilizando calibración por defecto (250 líneas × 2048 tokens), codebook mul1 y out_scales siempre activos.
 
-Este modelo resulta relevante porque ofrece un equilibrio entre rendimiento y eficiencia: mantiene un comportamiento comparable al modelo original en tareas de razonamiento y agente, a la vez que reduce el peso y acelera la inferencia en GPUs con 16 GiB de VRAM. Además, su arquitectura híbrida produce una KV cache ligera, lo que permite manejar contextos largos sin un coste de memoria excesivo. Según los datos de HuggingFace, el recuento de parámetros en los safetensors es de **12.707.664.112** (≈12.7B), aunque el nombre del modelo sugiere 27B; esta discrepancia no se explica en la información disponible.
+Este modelo resulta relevante porque ofrece un equilibrio entre rendimiento y eficiencia: mantiene un comportamiento comparable al modelo original en tareas de razonamiento y agente, a la vez que reduce el peso y acelera la inferencia en GPUs con 16 GiB de VRAM. Además, su arquitectura híbrida produce una KV cache ligera, lo que permite manejar contextos largos sin un coste de memoria excesivo. Según los datos de Hugging Face, el recuento de parámetros en los safetensors es de **12.707.664.112** (≈12.7B), aunque el nombre del modelo sugiere 27B; esta discrepancia no se explica en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -69,8 +69,8 @@ El prefill del modelo EXL3 es de aproximadamente 1.440 tok/s, frente a 3.370 tok
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento (MMLU-Pro 20) | Disponibilidad |
 |---|---|---|---|---|---|
-| Huihui-Qwen3.8-27B-abliterated-EXL3-6.5bpw | 12.7B (safetensors) | no disponible | Apache-2.0 | 15/20 (mejor caso) | HuggingFace |
-| Qwen3.8-27B (original) | 27B (según nombre) | no disponible | Apache-2.0 | 16/20 (mejor caso) | HuggingFace |
+| Huihui-Qwen3.8-27B-abliterated-EXL3-6.5bpw | 12.7B (safetensors) | no disponible | Apache-2.0 | 15/20 (mejor caso) | Hugging Face |
+| Qwen3.8-27B (original) | 27B (según nombre) | no disponible | Apache-2.0 | 16/20 (mejor caso) | Hugging Face |
 | Qwopus3.8-27B-Flash | 27B (según nombre) | no disponible | no disponible | 14/20 (mejor caso) | no disponible |
 
 También existe una versión NVFP4 del mismo modelo base creada por el mismo autor: **Huihui-Qwen3.8-27B-abliterated-NVFP4**, pero no se proporcionan datos de rendimiento.
@@ -87,7 +87,7 @@ También existe una versión NVFP4 del mismo modelo base creada por el mismo aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-EXL3-6.5bpw
+- Modelo en Hugging Face: https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-EXL3-6.5bpw
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Versión NVFP4 del mismo autor: https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4
 - Repositorio de mediciones y scripts (Lna-Lab): https://github.com/lna-lab

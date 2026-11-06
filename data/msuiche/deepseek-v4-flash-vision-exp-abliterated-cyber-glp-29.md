@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29 es una variante modificada del modelo multimodal experimental DeepSeek-V4-Flash-Vision-Exp, publicado por el usuario msuiche en HuggingFace. El modelo base, desarrollado por DeepSeek y lanzado el 21 de agosto de 2026, incorpora módulos de visión sobre la arquitectura DeepSeek-V4-Flash, permitiendo comprensión de imágenes, análisis de gráficos y tareas tipo OCR. Esta variante aplica técnicas de abliteración (eliminación de rechazos de seguridad) y control de vectores de activación (activation steering), como indican las etiquetas del repositorio.
+DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29 es una variante modificada del modelo multimodal experimental DeepSeek-V4-Flash-Vision-Exp, publicado por el usuario msuiche en Hugging Face. El modelo base, desarrollado por DeepSeek y lanzado el 21 de agosto de 2026, incorpora módulos de visión sobre la arquitectura DeepSeek-V4-Flash, permitiendo comprensión de imágenes, análisis de gráficos y tareas tipo OCR. Esta variante aplica técnicas de abliteración (eliminación de rechazos de seguridad) y control de vectores de activación (activation steering), como indican las etiquetas del repositorio.
 
-Un dato crítico: el repositorio declara 118.784 parámetros totales en safetensors y un tamaño de 0.0 GB, lo que indica que no se distribuye el modelo completo, sino un vector de control o adaptador de tamaño minúsculo que debe aplicarse sobre el modelo base. El acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. La licencia declarada es MIT, aunque el modelo base de DeepSeek puede tener condiciones adicionales. Se trata de un artefacto experimental sin descargas ni documentación técnica publicada.
+Un dato crítico: el repositorio declara 118.784 parámetros totales en safetensors y un tamaño de 0.0 GB, lo que indica que no se distribuye el modelo completo, sino un vector de control o adaptador de tamaño minúsculo que debe aplicarse sobre el modelo base. El acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. La licencia declarada es MIT, aunque el modelo base de DeepSeek puede tener condiciones adicionales. Se trata de un artefacto experimental sin descargas ni documentación técnica publicada.
 
 ## Especificaciones tecnicas
 
@@ -58,14 +58,14 @@ No disponible. No se han identificado modelos comparables publicados con el mism
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash-Vision-Exp (base) | No publicado | No publicado | Si (texto e imagen) | No publicada | API y HuggingFace |
-| msuiche/DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29 | 118.784 (vector) | No disponible | Depende del base | MIT | Gated en HuggingFace |
+| DeepSeek-V4-Flash-Vision-Exp (base) | No publicado | No publicado | Si (texto e imagen) | No publicada | API y Hugging Face |
+| msuiche/DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29 | 118.784 (vector) | No disponible | Depende del base | MIT | Gated en Hugging Face |
 
 ## Limitaciones y advertencias
 
 - El repositorio declara 118.784 parametros y 0.0 GB: no es un modelo completo, sino un vector de control o adaptador. Aplicarlo sobre el modelo base requiere conocimientos tecnicos de activation steering y del framework de inferencia.
 - La abliteracion elimina salvaguardas de seguridad: el modelo puede generar contenido ofensivo, peligroso o ilegal si se aplica sobre el base. No debe usarse en produccion sin evaluacion exhaustiva de riesgos.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, y el repositorio no tiene descargas ni likes, lo que sugiere un artefacto sin validacion comunitaria.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, y el repositorio no tiene descargas ni likes, lo que sugiere un artefacto sin validacion comunitaria.
 - No hay documentacion del proceso de abliteracion ni de la metodologia de "cyber-GLP": no se puede verificar la calidad ni la reproducibilidad del vector.
 - El modelo base es experimental y multimodal: su rendimiento en tareas de vision puede variar, y no hay benchmarks publicados especificos.
 - La licencia MIT del repositorio no exime de cumplir las condiciones del modelo base de DeepSeek, que pueden restringir el uso comercial.
@@ -73,8 +73,8 @@ No disponible. No se han identificado modelos comparables publicados con el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/msuiche/DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29
-- Modelo base en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- Repositorio Hugging Face del modelo: https://huggingface.co/msuiche/DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29
+- Modelo base en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - README del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp/blob/main/README.md
 - Articulo de zenmux.ai sobre DeepSeek V4 Flash Vision Exp: https://zenmux.ai/deepseek/deepseek-v4-flash-vision-exp
 - Articulo de iweaver.ai sobre capacidades y coste: https://www.iweaver.ai/blog/deepseek-v4-flash-vision-exp/

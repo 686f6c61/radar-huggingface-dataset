@@ -74,10 +74,10 @@ Notas del autor: 537 de las 765 frases de test de khm-asr-open también aparecen
 
 | Modelo | Parámetros | Contexto de audio | Idiomas | Licencia | CER/WER jemer | Disponibilidad |
 |---|---:|---|---|---|---|---|
-| Tha-ASR (v2) | 242 M | 30 s por llamada (≤ 15 s recomendado en jemer) | jemer, inglés, code-switching | MIT | CER 12,57 % (FLEURS km) | HuggingFace, `transformers` |
-| `openai/whisper-small` | 242 M | 30 s | 99 idiomas (jemer incluido, cobertura escasa) | MIT | no disponible en la información | HuggingFace, `transformers` |
-| `PhanithLIM/whisper-small-aug-28-april-lightning-v1` (modelo base) | 242 M | 30 s | jemer (fine-tune) | no disponible | CER 12,74 % (FLEURS km, v1) | HuggingFace |
-| Whisper-large-v3 | 1.550 M | 30 s | 99 idiomas | MIT | no disponible en la información | HuggingFace, `transformers` |
+| Tha-ASR (v2) | 242 M | 30 s por llamada (≤ 15 s recomendado en jemer) | jemer, inglés, code-switching | MIT | CER 12,57 % (FLEURS km) | Hugging Face, `transformers` |
+| `openai/whisper-small` | 242 M | 30 s | 99 idiomas (jemer incluido, cobertura escasa) | MIT | no disponible en la información | Hugging Face, `transformers` |
+| `PhanithLIM/whisper-small-aug-28-april-lightning-v1` (modelo base) | 242 M | 30 s | jemer (fine-tune) | no disponible | CER 12,74 % (FLEURS km, v1) | Hugging Face |
+| Whisper-large-v3 | 1.550 M | 30 s | 99 idiomas | MIT | no disponible en la información | Hugging Face, `transformers` |
 
 La comparativa con Whisper-large-v3 se incluye por categoría (ASR multilingüe), pero no se dispone de cifras de jemer para ese modelo en la información proporcionada. Tha-ASR destaca frente a su versión v1 y frente a Whisper-small genérico por su especialización en jemer y en alternancia de código.
 
@@ -96,7 +96,7 @@ La comparativa con Whisper-large-v3 se incluye por categoría (ASR multilingüe)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thareah/Tha-ASR
+- Modelo en Hugging Face: https://huggingface.co/Thareah/Tha-ASR
 - Modelo base: https://huggingface.co/PhanithLIM/whisper-small-aug-28-april-lightning-v1
 - Whisper-small original: https://huggingface.co/openai/whisper-small
 - Repositorio de código (entrenamiento, evaluación y app web local): https://github.com/chestharastan/Tha-ASR

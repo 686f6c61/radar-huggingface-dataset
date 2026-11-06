@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Delphi-9e19-1.4B (este) | 1,38B | 4096 | Apache 2.0 | Suite de escalado, base research-only | HuggingFace (`rohithck`) |
-| Pythia-1.4B | 1,4B | 2048 | Apache 2.0 | Suite de escalado con checkpoints intermedios | HuggingFace (EleutherAI) |
-| Qwen3-1.7B | 1,7B | no disponible en la informacion | Apache 2.0 | Modelo base/instruido de proposito general | HuggingFace (Qwen) |
-| SmolLM2-1.7B | 1,7B | no disponible en la informacion | Apache 2.0 | Modelo base/instruido compacto | HuggingFace (HuggingFaceTB) |
+| Delphi-9e19-1.4B (este) | 1,38B | 4096 | Apache 2.0 | Suite de escalado, base research-only | Hugging Face (`rohithck`) |
+| Pythia-1.4B | 1,4B | 2048 | Apache 2.0 | Suite de escalado con checkpoints intermedios | Hugging Face (EleutherAI) |
+| Qwen3-1.7B | 1,7B | no disponible en la informacion | Apache 2.0 | Modelo base/instruido de proposito general | Hugging Face (Qwen) |
+| SmolLM2-1.7B | 1,7B | no disponible en la informacion | Apache 2.0 | Modelo base/instruido compacto | Hugging Face (HuggingFaceTB) |
 
 La comparacion con Pythia es la mas directa por filosofia (suite de escalado con receta documentada), mientras que Qwen3 y SmolLM2 representan alternativas de proposito general con post-entrenamiento. No se dispone de datos de rendimiento comparativo para este checkpoint.
 
@@ -86,9 +86,9 @@ La comparacion con Pythia es la mas directa por filosofia (suite de escalado con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-9e19-1.4Bparams-10.6Btokens-seed42
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-9e19-1.4Bparams-10.6Btokens-seed42
 - Blog de Delphi (leyes de escalado): https://openathena.ai/blog/delphi
-- Organizacion Marin en HuggingFace: https://huggingface.co/marin-community
+- Organizacion Marin en Hugging Face: https://huggingface.co/marin-community
 - Dataset de datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Codigo de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py
 - Configuracion de entrenamiento (train_delphi_seeds.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/train_delphi_seeds.py

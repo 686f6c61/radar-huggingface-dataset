@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de transformadores publicado en HuggingFace por el usuario sdsfsdg565757, con licencia MIT y orientado a tareas de extracción de características (*feature-extraction*). Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte para *function calling*. El autor afirma que el modelo alcanza un rendimiento agregado de 0.872 en una batería de 15 benchmarks propios, con avances destacados en matemáticas (AIME 2025: 87,5 % de precisión) y generación de código.
+MyAwesomeModel es un modelo de transformadores publicado en Hugging Face por el usuario sdsfsdg565757, con licencia MIT y orientado a tareas de extracción de características (*feature-extraction*). Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte para *function calling*. El autor afirma que el modelo alcanza un rendimiento agregado de 0.872 en una batería de 15 benchmarks propios, con avances destacados en matemáticas (AIME 2025: 87,5 % de precisión) y generación de código.
 
 Sin embargo, la información pública es extremadamente limitada: el repositorio no contiene pesos (tamaño 0.0 GB), no se especifican parámetros, arquitectura, contexto ni datos de entrenamiento. La fecha de creación (2026) y la ausencia de descargas o validación externa sugieren que el modelo podría ser un placeholder o un experimento sin verificar. Por tanto, esta ficha se basa exclusivamente en la model card del autor, que debe tratarse con cautela.
 
@@ -92,6 +92,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. L
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sdsfsdg565757/MyAwesomeModel-step1000
+- Repositorio en Hugging Face: https://huggingface.co/sdsfsdg565757/MyAwesomeModel-step1000
 
 No se han encontrado otros enlaces (papers, repositorios de código, demos) en la información proporcionada.

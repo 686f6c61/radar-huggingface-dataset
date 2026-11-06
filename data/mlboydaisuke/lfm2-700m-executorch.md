@@ -18,7 +18,7 @@ La relevancia de este modelo radica en que ofrece una vía práctica para ejecut
 | Longitud de contexto | 2048 tokens (max_seq_length en la exportación) |
 | Tipos de cuantizacion | 8da4w (8-bit activaciones, 4-bit pesos) + embedding de 8 bits |
 | Idiomas soportados | No disponible |
-| Licencia | LFM Open License v1.0 (etiquetada como "other" en HuggingFace) |
+| Licencia | LFM Open License v1.0 (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | .pte (ExecuTorch) |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ No se dispone de una comparativa detallada con modelos equivalentes en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/LFM2-700M-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/LFM2-700M-ExecuTorch
 - Colección ExecuTorch Model Zoo: https://huggingface.co/collections/mlboydaisuke/executorch-model-zoo
 - Modelo base LiquidAI/LFM2-700M: https://huggingface.co/LiquidAI/LFM2-700M
 - Documentación de ExecuTorch para LFM2: https://github.com/pytorch/executorch/blob/main/examples/models/lfm2/README.md

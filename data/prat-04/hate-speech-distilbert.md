@@ -107,11 +107,11 @@ No se dispone de cifras comparativas de benchmark entre estos modelos y el prese
 - La licencia MIT permite uso comercial, pero el autor declara explicitamente que el modelo no esta pensado como base unica ni automatica para decisiones de moderacion contra personas reales.
 - Aunque la auditoria reporta una brecha del 0 % en la prueba de 20 pares AAVE / ingles estandar, el tamano de esa prueba es muy reducido y no permite descartar sesgos dialectales en otros contextos.
 - Uso previsto declarado: asistencia a la moderacion de contenido, investigacion y demostracion de portfolio. Cualquier otro uso requiere revisar la metodologia y el descargo de responsabilidad del repositorio fuente.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, y no consta validacion externa independiente de los resultados reportados.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, y no consta validacion externa independiente de los resultados reportados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prat-04/hate-speech-distilbert
+- Modelo en Hugging Face: https://huggingface.co/Prat-04/hate-speech-distilbert
 - Dataset de entrenamiento: https://huggingface.co/datasets/tdavidson/hate_speech_offensive
 - Repositorio fuente con metodologia, comparativa de los seis modelos y auditoria de sesgo: citado por el autor en la model card, sin URL incluida en la informacion proporcionada (no disponible)
 - Referencia del dataset: Davidson, T., Warmsley, D., Macy, M. y Weber, I. (2017), "Automated Hate Speech Detection and the Problem of Offensive Language" (referencia bibliografica, sin enlace en la informacion proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Nanite-Labs/nanites-thangka-1.5-alpha` es un modelo de IA publicado en HuggingFace por Nanite-Labs, bajo licencia Apache 2.0. A fecha de la información disponible, no se ha publicado ninguna documentación técnica, model card o especificación que describa su arquitectura, tamaño, contexto o capacidades. La única información disponible es el identificador del repositorio, la licencia y las fechas de creación y actualización (4 de septiembre de 2026). Los resultados de búsqueda web no arrojan ninguna referencia a este modelo concreto, sino a otros proyectos homónimos como Ninite, Project-Nanite o la tecnología Nanite de Unreal Engine. Por tanto, no es posible evaluar su relevancia, rendimiento ni adecuación para ningún caso de uso sin más información pública.
+El modelo `Nanite-Labs/nanites-thangka-1.5-alpha` es un modelo de IA publicado en Hugging Face por Nanite-Labs, bajo licencia Apache 2.0. A fecha de la información disponible, no se ha publicado ninguna documentación técnica, model card o especificación que describa su arquitectura, tamaño, contexto o capacidades. La única información disponible es el identificador del repositorio, la licencia y las fechas de creación y actualización (4 de septiembre de 2026). Los resultados de búsqueda web no arrojan ninguna referencia a este modelo concreto, sino a otros proyectos homónimos como Ninite, Project-Nanite o la tecnología Nanite de Unreal Engine. Por tanto, no es posible evaluar su relevancia, rendimiento ni adecuación para ningún caso de uso sin más información pública.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No disponible. No se han publicado especificaciones sobre las capacidades del mo
 
 ## Casos de uso
 
-No disponible. Al carecer de información sobre arquitectura, tamaño, contexto y capacidades, no es posible identificar casos de uso concretos y realistas. La ausencia de benchmarks y de documentación técnica impide determinar si el modelo es adecuado para tareas como atención al cliente, generación de código, análisis de documentos, etc. Se recomienda consultar el repositorio de HuggingFace para obtener información actualizada antes de considerar cualquier aplicación.
+No disponible. Al carecer de información sobre arquitectura, tamaño, contexto y capacidades, no es posible identificar casos de uso concretos y realistas. La ausencia de benchmarks y de documentación técnica impide determinar si el modelo es adecuado para tareas como atención al cliente, generación de código, análisis de documentos, etc. Se recomienda consultar el repositorio de Hugging Face para obtener información actualizada antes de considerar cualquier aplicación.
 
 ## Benchmarks y rendimiento
 
@@ -51,5 +51,5 @@ No disponible. No se ha publicado información suficiente para comparar este mod
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Nanite-Labs/nanites-thangka-1.5-alpha
+- Repositorio de Hugging Face: https://huggingface.co/Nanite-Labs/nanites-thangka-1.5-alpha
 - No se han encontrado enlaces adicionales relevantes (paper, blog, repositorio de código o demo) en la búsqueda web. Los resultados obtenidos corresponden a otros proyectos no relacionados con este modelo.

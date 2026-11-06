@@ -25,7 +25,7 @@ Datos adicionales del repositorio: identificador `dhresearch/quality-router-v2-c
 
 ## Arquitectura y entrenamiento
 
-El objeto es un router conservador con umbrales por interfaz (`--router conservative --per-interface`), ajustado unicamente sobre la exportacion principal del dataset `dhresearch/outcome-router-v2-main`. La clase publicada se denomina `ConservativeRouter`. El informe congelado registra `resolved_model` como `lgbm`, lo que sugiere un modelo de gradient boosting de LightGBM como clasificador subyacente, pese a que la libreria declarada en HuggingFace sea `sklearn`.
+El objeto es un router conservador con umbrales por interfaz (`--router conservative --per-interface`), ajustado unicamente sobre la exportacion principal del dataset `dhresearch/outcome-router-v2-main`. La clase publicada se denomina `ConservativeRouter`. El informe congelado registra `resolved_model` como `lgbm`, lo que sugiere un modelo de gradient boosting de LightGBM como clasificador subyacente, pese a que la libreria declarada en Hugging Face sea `sklearn`.
 
 El entrenamiento se realizo con semilla 0 y un entorno software declarado: python 3.14.2, sklearn 1.9.1, numpy 2.5.3, joblib 1.6.0, lightgbm 4.7.0 y scipy 1.18.1. No se especifican en la informacion disponible el numero de tokens, la composicion del dataset, el numero de caracteristicas de entrada, el numero de clases de salida ni si hubo etapas de RLHF o DPO (no aplicables en un clasificador de este tipo). La model card indica explicitamente que los ajustes conservadores sobre v2-plus-synthetic y synthetic-only son ejecuciones distintas y no forman parte de este upload.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 | Contexto | no aplica (clasificador tabular) | no disponible |
 | Rendimiento | solo acuerdo 250/250 con predicciones congeladas | no disponible |
 | Licencia | other (terminos no detallados) | no disponible |
-| Disponibilidad | HuggingFace, 0 descargas | no disponible |
+| Disponibilidad | Hugging Face, 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -100,7 +100,7 @@ No se dispone de datos verificables de modelos comparables en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhresearch/quality-router-v2-conservative
+- Modelo en Hugging Face: https://huggingface.co/dhresearch/quality-router-v2-conservative
 - Dataset de entrenamiento: https://huggingface.co/datasets/dhresearch/outcome-router-v2-main
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al estudio asociado; los resultados devueltos corresponden a entidades no relacionadas con este artefacto.

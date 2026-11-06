@@ -82,10 +82,10 @@ Los datos de los modelos comparados provienen de sus respectivas model cards pú
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ijcv-ai/finbot-slm | 360 M (base) + adaptador LoRA | No indicado (base: 8 192) | Destilación educativa desde profesor OpenAI, 60 ejemplos | Apache 2.0 | Adaptador PEFT en HuggingFace |
-| HuggingFaceTB/SmolLM2-360M-Instruct | 360 M | 8 192 | Modelo base de propósito general, afinado a instrucciones | Apache 2.0 | Pesos completos en HuggingFace |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8 192 | Misma familia, mayor capacidad | Apache 2.0 | Pesos completos en HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,5 B | 32 768 | Alternativa de tamaño similar con contexto largo | Apache 2.0 | Pesos completos en HuggingFace |
+| ijcv-ai/finbot-slm | 360 M (base) + adaptador LoRA | No indicado (base: 8 192) | Destilación educativa desde profesor OpenAI, 60 ejemplos | Apache 2.0 | Adaptador PEFT en Hugging Face |
+| HuggingFaceTB/SmolLM2-360M-Instruct | 360 M | 8 192 | Modelo base de propósito general, afinado a instrucciones | Apache 2.0 | Pesos completos en Hugging Face |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7 B | 8 192 | Misma familia, mayor capacidad | Apache 2.0 | Pesos completos en Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5 B | 32 768 | Alternativa de tamaño similar con contexto largo | Apache 2.0 | Pesos completos en Hugging Face |
 
 Frente a todos ellos, finbot-slm no aporta mejor rendimiento medible: su nota media de 2,42/10 está por debajo de lo que se esperaría de un uso directo del modelo base con un buen prompt de sistema. Su valor diferencial es exclusivamente documental y didáctico.
 
@@ -104,7 +104,7 @@ Frente a todos ellos, finbot-slm no aporta mejor rendimiento medible: su nota me
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ijcv-ai/finbot-slm
+- Modelo en Hugging Face: https://huggingface.co/ijcv-ai/finbot-slm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Librería PEFT (requerida para cargar el adaptador): https://github.com/huggingface/peft
 - Paper de LoRA: https://arxiv.org/abs/2106.09685

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Tetherchat Smart Replies es un ajuste fino (fine-tune) del modelo Qwen2.5-0.5B-Instruct publicado por el usuario TanishkDhope en HuggingFace. Se trata de un transformer decoder-only denso de la familia Qwen2, con 494.032.768 parámetros totales confirmados por los pesos en safetensors, lo que lo sitúa en la gama de modelos sub-1B. El repositorio ocupa 1,0 GB y declara únicamente el idioma inglés, con licencia Apache 2.0.
+Tetherchat Smart Replies es un ajuste fino (fine-tune) del modelo Qwen2.5-0.5B-Instruct publicado por el usuario TanishkDhope en Hugging Face. Se trata de un transformer decoder-only denso de la familia Qwen2, con 494.032.768 parámetros totales confirmados por los pesos en safetensors, lo que lo sitúa en la gama de modelos sub-1B. El repositorio ocupa 1,0 GB y declara únicamente el idioma inglés, con licencia Apache 2.0.
 
-El modelo parte del checkpoint cuantizado a 4 bits `unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit` y fue entrenado con la librería Unsloth junto con TRL de HuggingFace, según indica la propia model card. El nombre del repositorio sugiere que el objetivo es la generación de respuestas cortas o sugerencias de respuesta en contextos conversacionales, aunque la model card no documenta ni el dataset, ni el número de tokens de entrenamiento, ni el método de ajuste (LoRA, QLoRA o pesos completos).
+El modelo parte del checkpoint cuantizado a 4 bits `unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit` y fue entrenado con la librería Unsloth junto con TRL de Hugging Face, según indica la propia model card. El nombre del repositorio sugiere que el objetivo es la generación de respuestas cortas o sugerencias de respuesta en contextos conversacionales, aunque la model card no documenta ni el dataset, ni el número de tokens de entrenamiento, ni el método de ajuste (LoRA, QLoRA o pesos completos).
 
 Su relevancia práctica es la de un modelo de juguete o de prototipado: al tener 494 M de parámetros cabe en cualquier GPU de consumo, en CPU e incluso en dispositivos móviles, lo que permite validar pipelines de inferencia conversacional con un coste de hardware mínimo. El contrapeso es que no hay evaluación publicada, ni datos de entrenamiento, ni tracción comunitaria (0 descargas y 0 likes en el momento de la consulta), por lo que no debería desplegarse en producción sin una validación propia.
 
@@ -23,7 +23,7 @@ Su relevancia práctica es la de un modelo de juguete o de prototipado: al tener
 | Modelo base | unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 1,0 GB |
-| Fecha de publicación | 16 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 16 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -96,9 +96,9 @@ El principal diferencial frente a sus alternativas no es de rendimiento, sino de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TanishkDhope/tetherchat-smart-replies
+- Modelo en Hugging Face: https://huggingface.co/TanishkDhope/tetherchat-smart-replies
 - Modelo base declarado: https://huggingface.co/unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - Familia Qwen2.5 (referencia del modelo base original): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
-- TRL de HuggingFace (librería de entrenamiento citada en la model card): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería de entrenamiento citada en la model card): https://github.com/huggingface/trl
 - Nota sobre la búsqueda web: los resultados obtenidos en la búsqueda no guardan relación con este modelo (correspondían a un servicio sanitario en francés), por lo que no se incluye ningún enlace adicional. No se han encontrado papers, blogs ni demos asociados a este repositorio.

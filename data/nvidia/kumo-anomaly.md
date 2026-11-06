@@ -81,7 +81,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada. L
 
 | Modelo | Enfoque | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kumo-Anomaly (NV-Tesseract-AD) | Transformer de difusion + umbralizacion adaptativa | 8 millones | no aplica (ventana de serie temporal) | Apache 2.0 | HuggingFace (nvidia/Kumo-Anomaly) |
+| Kumo-Anomaly (NV-Tesseract-AD) | Transformer de difusion + umbralizacion adaptativa | 8 millones | no aplica (ventana de serie temporal) | Apache 2.0 | Hugging Face (nvidia/Kumo-Anomaly) |
 | ImDiffusion | Difusion para imputacion y deteccion en series temporales | no disponible | no aplica | no disponible | Referencia academica (arXiv:2307.00754) |
 | Metodos clasicos de deteccion de anomalias (autoencoders, Isolation Forest, etc.) | Reconstruccion o particion estadistica | no disponible | no aplica | variable | Multiples implementaciones |
 | Otros modelos de la familia TSB-AD evaluados en el benchmark | Diversos (estadisticos, deep learning) | no disponible | no aplica | no disponible | Repositorio del benchmark TSB-AD |
@@ -103,7 +103,7 @@ No se dispone de datos numericos comparativos en la informacion proporcionada. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Kumo-Anomaly
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Kumo-Anomaly
 - Articulo ACM (Segmented Confidence Sequences and Multi-Scale Adaptive Confidence Segments for Anomaly Detection in Nonstationary Time Series): https://dl.acm.org/doi/full/10.1145/3787120.3787130
 - ImDiffusion (arXiv:2307.00754): https://arxiv.org/abs/2307.00754
 - Benchmark TSB-AD (TSB-AD-M): https://thedatumorg.github.io/TSB-AD/

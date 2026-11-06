@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`james-ZHARRIS/embodied-ai-run2` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo describe como un conjunto de apuntes de lectura y un esbozo de experimento sobre IA encarnada (*embodied AI*), y advierte de forma explícita que no reclama mejoras de benchmarks, ablaciones completadas, código liberado ni ningún checkpoint entrenado. Los únicos artefactos declarados son `summary.md` (nota principal) y `README.md` (documentación).
+`james-ZHARRIS/embodied-ai-run2` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo describe como un conjunto de apuntes de lectura y un esbozo de experimento sobre IA encarnada (*embodied AI*), y advierte de forma explícita que no reclama mejoras de benchmarks, ablaciones completadas, código liberado ni ningún checkpoint entrenado. Los únicos artefactos declarados son `summary.md` (nota principal) y `README.md` (documentación).
 
 El repositorio incluye la etiqueta `transformer` y un archivo en formato `safetensors` que, según los datos de la plataforma, contiene 16,576 parámetros totales. Un recuento de esa magnitud (unas dieciséis unidades, no millones ni miles de millones) es incompatible con cualquier transformer funcional, por lo que lo más probable es que se trate de un artefacto residual, un tensor de prueba o un residuo de la plantilla de subida, y no de pesos utilizables para inferencia. El tamaño del repositorio se declara como 0.0 GB.
 
@@ -77,6 +77,6 @@ No disponible. Este repositorio no es un modelo de aprendizaje automático, sino
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/james-ZHARRIS/embodied-ai-run2
+- Repositorio en Hugging Face: https://huggingface.co/james-ZHARRIS/embodied-ai-run2
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo. Los resultados obtenidos corresponden a páginas sobre el nombre propio «James» (Wikipedia y prensa), a la banda británica James (https://wearejames.com/ y https://en.wikipedia.org/wiki/James_(band)) y a un artículo sobre el origen del nombre en el Journal des Femmes. Ninguno de ellos guarda relación con este repositorio.
 - No se dispone de paper, blog técnico, repositorio de código ni demostración asociados.

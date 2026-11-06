@@ -2,7 +2,7 @@
 
 ## Resumen
 
-INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound es una cuantizacion mixta del modelo base zai-org/GLM-5.2, publicada por el usuario de HuggingFace INCModel2. Fue generada mediante Intel AutoRound con modo RTN (round-to-nearest) y se distribuye en formato Compressed Tensor (CT), lo que la hace directamente compatible con vLLM. El objetivo principal es reducir la huella de memoria del modelo original manteniendo una calidad cercana a la del modelo sin cuantizar.
+INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound es una cuantizacion mixta del modelo base zai-org/GLM-5.2, publicada por el usuario de Hugging Face INCModel2. Fue generada mediante Intel AutoRound con modo RTN (round-to-nearest) y se distribuye en formato Compressed Tensor (CT), lo que la hace directamente compatible con vLLM. El objetivo principal es reducir la huella de memoria del modelo original manteniendo una calidad cercana a la del modelo sin cuantizar.
 
 Se trata de un modelo de gran escala en parametros totales: 753.329.940.480, distribuidos en una arquitectura de mezcla de expertos (MoE). La etiqueta tecnica del repositorio indica `glm_moe_dsa`, lo que apunta a un transformer con MoE y posiblemente atencion de tipo DSA, aunque el significado exacto no se detalla en la informacion disponible. El peso del repositorio es de 412.8 GB, lo que confirma su caracter masivo.
 
@@ -18,7 +18,7 @@ La relevancia de este modelo es doble: por un lado, proporciona una alternativa 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Mixto MXFP4/MXFP8 generado con RTN mediante AutoRound. Los expertos (`mlp.experts`) quedan en MXFP4, el resto de capas en MXFP8. Los tags incluyen `8-bit` y `compressed-tensors` |
 | Idiomas soportados | no disponible |
-| Licencia | Ambivalente: la model card declara `other` con nombre `mit`, mientras que el metadata de HuggingFace indica MIT. Verificar antes de uso comercial |
+| Licencia | Ambivalente: la model card declara `other` con nombre `mit`, mientras que el metadata de Hugging Face indica MIT. Verificar antes de uso comercial |
 | Formato de pesos | safetensors (segun los tags) y Compressed Tensor (CT) compatible con vLLM |
 | Modelo base | zai-org/GLM-5.2 |
 | Tamano del repositorio | 412.8 GB |
@@ -90,7 +90,7 @@ La comparativa es limitada porque no se dispone de datos publicos sobre rendimie
 
 - La cuantizacion mixta puede degradar la calidad respecto al modelo original. No se han publicado resultados de evaluacion que cuantifiquen esa perdida, por lo que es necesario realizar pruebas propias antes de desplegar el modelo en produccion.
 
-- La licencia presenta ambiguedad. La model card declara `license: other` con nombre `mit`, mientras que el metadata de HuggingFace indica MIT. El aviso legal del README subraya que la licencia no constituye asesoramiento legal y que se debe consultar a un abogado antes de un uso comercial. Por tanto, se recomienda no asumir que es MIT sin confirmacion explicita del autor.
+- La licencia presenta ambiguedad. La model card declara `license: other` con nombre `mit`, mientras que el metadata de Hugging Face indica MIT. El aviso legal del README subraya que la licencia no constituye asesoramiento legal y que se debe consultar a un abogado antes de un uso comercial. Por tanto, se recomienda no asumir que es MIT sin confirmacion explicita del autor.
 
 - No se dispone de datos sobre la longitud de contexto, los idiomas soportados ni los parametros activos. Esto impide dimensionar correctamente su uso en tareas que requieren ventanas largas o soporte multilingue especifico.
 
@@ -104,7 +104,7 @@ La comparativa es limitada porque no se dispone de datos publicos sobre rendimie
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound
+- Repositorio de Hugging Face: https://huggingface.co/INCModel2/GLM-5.2-MXFP4-Mixed-CT-AutoRound
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Repositorio de Intel AutoRound: https://github.com/intel/auto-round
 - Paper de AutoRound: https://arxiv.org/abs/2309.05516

@@ -4,7 +4,7 @@
 
 PetInst-LLM-270M es un modelo de lenguaje compacto de 268 millones de parámetros, desarrollado por el usuario manfye como un ajuste fino (fine-tuning) del modelo base google/functiongemma-270m-it de Google. Está diseñado específicamente para entornos on-device, con especial énfasis en el uso de herramientas (tool use) y la llamada a funciones (function calling), así como para aplicaciones de asistente conversacional en el ámbito de mascotas virtuales. El modelo se distribuye en formato GGUF, lo que facilita su ejecución con llama.cpp y otros motores compatibles, y su licencia es Gemma, que permite uso comercial bajo ciertas condiciones.
 
-La relevancia de este modelo radica en su tamaño extremadamente reducido, que lo hace apto para dispositivos con recursos limitados, manteniendo al mismo tiempo capacidades de razonamiento y ejecución de herramientas gracias a su base FunctionGemma. Su acceso es restringido (gated), por lo que los usuarios deben aceptar las condiciones de licencia en HuggingFace antes de poder descargarlo.
+La relevancia de este modelo radica en su tamaño extremadamente reducido, que lo hace apto para dispositivos con recursos limitados, manteniendo al mismo tiempo capacidades de razonamiento y ejecución de herramientas gracias a su base FunctionGemma. Su acceso es restringido (gated), por lo que los usuarios deben aceptar las condiciones de licencia en Hugging Face antes de poder descargarlo.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El proceso de entrenamiento de PetInst-LLM-270M consiste en un ajuste fino (fine
 - Llamada a funciones (function calling) y uso de herramientas (tool use), heredado de FunctionGemma.
 - Ejecucion en dispositivos con recursos limitados (on-device) gracias a su tamano reducido.
 - Interacciones de tipo asistente para mascotas virtuales, segun los tags del repositorio.
-- Compatible con pipelines de generacion de texto estandar de HuggingFace.
+- Compatible con pipelines de generacion de texto estandar de Hugging Face.
 - No se documentan capacidades de vision, audio ni modos de razonamiento extendido.
 
 ## Casos de uso
@@ -70,12 +70,12 @@ No se dispone de comparativas publicadas con otros modelos. Como referencia, se 
 - Sesgos: al estar entrenado sobre datos en ingles y con un dominio especifico, puede presentar sesgos culturales o limitaciones en otros idiomas.
 - Riesgo de alucinacion: como todo modelo pequeno, puede generar respuestas incorrectas o inventar funciones inexistentes al llamar a herramientas.
 - Limitaciones de contexto: la longitud de contexto no esta documentada, pero se hereda probablemente de FunctionGemma (8192 tokens), lo que limita dialogos muy largos.
-- Restricciones de licencia: la licencia Gemma de Google impone condiciones de uso, incluyendo restricciones para ciertos usos comerciales y la obligacion de mantener los avisos de atribucion. Ademas, el acceso al modelo es restringido y requiere aceptar los terminos en HuggingFace.
+- Restricciones de licencia: la licencia Gemma de Google impone condiciones de uso, incluyendo restricciones para ciertos usos comerciales y la obligacion de mantener los avisos de atribucion. Ademas, el acceso al modelo es restringido y requiere aceptar los terminos en Hugging Face.
 - Dominio limitado: el ajuste fino para mascotas virtuales puede degradar el rendimiento en tareas generales fuera de ese ambito.
 - Formato GGUF: aunque es conveniente para despliegue, puede no ser compatible con todos los frameworks (por ejemplo, TensorFlow o JAX requieren conversion previa).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/manfye/PetInst-LLM-270M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/manfye/PetInst-LLM-270M-GGUF
 - Modelo base FunctionGemma 270M: https://huggingface.co/google/functiongemma-270m-it
 - Modelo base Gemma 3 270M: https://huggingface.co/google/gemma-3-270m

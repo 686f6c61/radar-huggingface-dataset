@@ -86,7 +86,7 @@ No se dispone de comparaciones con otros modelos text-to-SQL de la literatura (p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxdemarzi/black-swan-sql3b-lora
+- Repositorio Hugging Face: https://huggingface.co/maxdemarzi/black-swan-sql3b-lora
 - Proyecto PyRel (mencionado en la model card): https://github.com/maxdemarzi/swan
-- Perfil del autor en HuggingFace: https://huggingface.co/maxdemarzi
+- Perfil del autor en Hugging Face: https://huggingface.co/maxdemarzi
 - Adaptador hermano (directo a PyRel): https://huggingface.co/maxdemarzi/black-swan-lora

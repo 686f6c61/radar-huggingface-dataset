@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravinarayanan/lfm3-1.7b-salesforce-soql-onnx-fp16
+- Modelo en Hugging Face: https://huggingface.co/ravinarayanan/lfm3-1.7b-salesforce-soql-onnx-fp16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Exportación ONNX de referencia: https://huggingface.co/onnx-community/LFM3-1.7B-ONNX

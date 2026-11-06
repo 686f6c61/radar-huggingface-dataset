@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π₀.₅ (Pi05) es un modelo de arquitectura Vision-Language-Action (VLA) desarrollado por Physical Intelligence, diseñado para la manipulación robótica con generalización en entornos abiertos. Es la evolución de π₀ y se ha implementado en la librería LeRobot de HuggingFace. Esta instancia concreta, publicada por mattpidden, ha sido entrenada sobre un dataset de tareas de pick and place de bloques multicolores y presenta 4.143.404.816 parámetros (aproximadamente 4.140 millones), con pesos en formato Safetensors. El problema que resuelve es el de la generalización en robótica: permite que un robot ejecute tareas en entornos nuevos no vistos durante el entrenamiento. El modelo es relevante porque su licencia Apache 2.0 facilita el uso comercial y la investigación abierta en el campo de los modelos de IA para robótica.
+π₀.₅ (Pi05) es un modelo de arquitectura Vision-Language-Action (VLA) desarrollado por Physical Intelligence, diseñado para la manipulación robótica con generalización en entornos abiertos. Es la evolución de π₀ y se ha implementado en la librería LeRobot de Hugging Face. Esta instancia concreta, publicada por mattpidden, ha sido entrenada sobre un dataset de tareas de pick and place de bloques multicolores y presenta 4.143.404.816 parámetros (aproximadamente 4.140 millones), con pesos en formato Safetensors. El problema que resuelve es el de la generalización en robótica: permite que un robot ejecute tareas en entornos nuevos no vistos durante el entrenamiento. El modelo es relevante porque su licencia Apache 2.0 facilita el uso comercial y la investigación abierta en el campo de los modelos de IA para robótica.
 
 ## Especificaciones técnicas
 
@@ -38,7 +38,7 @@
 - Aprendizaje por imitación en robots de bajo costo: con un robot tipo SO100, el modelo permite generar acciones a partir de demostraciones humanas, reduciendo el tiempo de programación de trayectorias.
 - Robótica asistencial en el hogar: la generalización a entornos nuevos permite que un robot recoja objetos variados (por ejemplo, bloques de juguete) en casas con disposiciones diferentes.
 - Investigación en generalización de mundo abierto: el modelo sirve como caso de estudio para analizar cómo un VLA se comporta ante variaciones no vistas en el color, la posición y el entorno de los objetos.
-- Formación y educación en VLA: al estar implementado en LeRobot, el modelo puede utilizarse como recurso docente para enseñar a estudiantes cómo entrenar y evaluar políticas robóticas con PyTorch y HuggingFace.
+- Formación y educación en VLA: al estar implementado en LeRobot, el modelo puede utilizarse como recurso docente para enseñar a estudiantes cómo entrenar y evaluar políticas robóticas con PyTorch y Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ No se dispone de datos comparativos en la información proporcionada. El modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattpidden/pi05_5k_diverse_multicolour_block_pick_place
+- Modelo en Hugging Face: https://huggingface.co/mattpidden/pi05_5k_diverse_multicolour_block_pick_place
 - Blog de Physical Intelligence sobre π₀.₅: https://www.physicalintelligence.company/blog/pi05
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

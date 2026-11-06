@@ -98,7 +98,7 @@ No se dispone de datos de modelos alternativos comparables en la informacion pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ba
+- Repositorio Hugging Face: https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ba
 - Repositorio maestro de cuantizaciones del autor: https://huggingface.co/Zrald/Zrald-AI-model-quant-qwen-3.8-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (runtime): https://github.com/ggml-org/llama.cpp

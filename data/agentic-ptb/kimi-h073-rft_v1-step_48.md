@@ -73,7 +73,7 @@ La comparativa con Kimi K3 es solo nominal (comparten el nombre "kimi"), pero no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h073.rft_v1.step_48
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h073.rft_v1.step_48
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Kimi K3 (referencia nominal, no relacionada tecnicamente): https://huggingface.co/moonshotai/Kimi-K3
 - Kimi K3 GitHub: https://github.com/MoonshotAI/Kimi-K3

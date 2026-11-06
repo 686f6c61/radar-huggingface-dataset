@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mohawwad93/roberta-racial-language-detector` es un clasificador de texto binario obtenido mediante fine-tuning de `roberta-base` sobre un conjunto de datos unificado que combina varios benchmarks de discurso de odio y sesgo racial. Lo desarrolla el usuario mohawwad93 y se publica en HuggingFace con licencia MIT. Su funcion es etiquetar una entrada de texto como `NEUTRAL` (0) o `FLAGGED` (1), es decir, separar lenguaje seguro de lenguaje ofensivo dirigido o con carga racial.
+El modelo `mohawwad93/roberta-racial-language-detector` es un clasificador de texto binario obtenido mediante fine-tuning de `roberta-base` sobre un conjunto de datos unificado que combina varios benchmarks de discurso de odio y sesgo racial. Lo desarrolla el usuario mohawwad93 y se publica en Hugging Face con licencia MIT. Su funcion es etiquetar una entrada de texto como `NEUTRAL` (0) o `FLAGGED` (1), es decir, separar lenguaje seguro de lenguaje ofensivo dirigido o con carga racial.
 
 Se trata de un modelo denso de tipo transformer encoder-only, con 124.647.170 parametros (~125 M), formato de pesos safetensors y un repositorio de 0,5 GB. La lengua declarada es unicamente el ingles. No incorpora modo de razonamiento, vision ni capacidades generativas: es un cabezal de clasificacion de secuencias sobre la base de RoBERTa.
 
@@ -24,7 +24,7 @@ Su relevancia practica es la de un componente ligero y facil de desplegar para m
 | Etiquetas de salida | `NEUTRAL` (0), `FLAGGED` (1) |
 | Tamano del repositorio | 0,5 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 2026-09-20 (creacion y ultima actualizacion, segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-20 (creacion y ultima actualizacion, segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mohawwad93/roberta-racial-language-detector | ~125 M | 512 tokens (base roberta-base) | Clasificacion binaria NEUTRAL/FLAGGED | MIT | HuggingFace (0 descargas) |
-| facebook/roberta-hate-speech-dynabench-r4-target | ~125 M (roberta-base) | 512 tokens | Clasificacion de discurso de odio (4 clases) | No disponible | HuggingFace |
-| cardiffnlp/twitter-roberta-base-hate-latest | ~125 M (roberta-base) | 512 tokens | Clasificacion de odio en tweets | No disponible | HuggingFace |
-| unitary/toxic-bert | ~110 M (bert-base) | 512 tokens | Clasificacion multietiqueta de toxicidad | No disponible | HuggingFace |
+| mohawwad93/roberta-racial-language-detector | ~125 M | 512 tokens (base roberta-base) | Clasificacion binaria NEUTRAL/FLAGGED | MIT | Hugging Face (0 descargas) |
+| facebook/roberta-hate-speech-dynabench-r4-target | ~125 M (roberta-base) | 512 tokens | Clasificacion de discurso de odio (4 clases) | No disponible | Hugging Face |
+| cardiffnlp/twitter-roberta-base-hate-latest | ~125 M (roberta-base) | 512 tokens | Clasificacion de odio en tweets | No disponible | Hugging Face |
+| unitary/toxic-bert | ~110 M (bert-base) | 512 tokens | Clasificacion multietiqueta de toxicidad | No disponible | Hugging Face |
 
 La comparacion de rendimiento cuantitativo no esta disponible: ninguno de los datos de benchmarks necesarios se incluye en la informacion proporcionada, y no se ha publicado ninguna evaluacion de este modelo frente a las alternativas. Las diferencias verificables se limitan al tamano (todos en el rango 110-125 M), la tarea exacta (binaria frente a multietiqueta o multiclase) y la licencia declarada (MIT en este caso, frente a licencias no indicadas en los demas).
 
@@ -96,8 +96,8 @@ La comparacion de rendimiento cuantitativo no esta disponible: ninguno de los da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohawwad93/roberta-racial-language-detector
-- Modelo base roberta-base en HuggingFace: https://huggingface.co/roberta-base
+- Modelo en Hugging Face: https://huggingface.co/mohawwad93/roberta-racial-language-detector
+- Modelo base roberta-base en Hugging Face: https://huggingface.co/roberta-base
 - Articulo de RoBERTa (Liu et al., 2019, arXiv:1907.11692): https://arxiv.org/abs/1907.11692
 - Repositorio oficial de RoBERTa (fairseq): https://github.com/facebookresearch/fairseq/tree/main/examples/roberta
 - Documentacion de la pipeline de clasificacion de texto de transformers: https://huggingface.co/docs/transformers/main/en/tasks/sequence_classification

@@ -87,7 +87,7 @@ No se dispone de informacion sobre adaptadores comparables para el mismo juego o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chellappan/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/Chellappan/slm-rl-colab
 - Dataset asociado: https://huggingface.co/datasets/Chellappan/slm-rl-colab-data
 - Framework SLM-RL (GitHub): https://github.com/CraftsMan-Labs/SLM-RL
 - Modelo base LiquidAI/LFM2.5-1.2B-Instruct: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

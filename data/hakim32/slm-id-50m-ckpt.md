@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hakim32/slm-id-50m-ckpt` es un modelo de lenguaje de pequeno tamano (SLM, *small language model*) de aproximadamente 50 millones de parametros, desarrollado por el usuario hakim32 y publicado en HuggingFace. Se trata de un modelo base entrenado desde cero (*from scratch*) para generacion de texto en indonesio, con arquitectura de tipo Llama. Su relevancia radica en el interes creciente por modelos compactos entrenados de forma nativa para idiomas con menos representacion en los corpus masivos, en este caso el indonesio, y por su caracter de *checkpoint* intermedio de un pipeline de preentrenamiento.
+`hakim32/slm-id-50m-ckpt` es un modelo de lenguaje de pequeno tamano (SLM, *small language model*) de aproximadamente 50 millones de parametros, desarrollado por el usuario hakim32 y publicado en Hugging Face. Se trata de un modelo base entrenado desde cero (*from scratch*) para generacion de texto en indonesio, con arquitectura de tipo Llama. Su relevancia radica en el interes creciente por modelos compactos entrenados de forma nativa para idiomas con menos representacion en los corpus masivos, en este caso el indonesio, y por su caracter de *checkpoint* intermedio de un pipeline de preentrenamiento.
 
 El modelo esta etiquetado como `base-model`, lo que implica que no ha pasado por fases de ajuste fino supervisado ni de alineamiento (RLHF/DPO), y que su uso previsto es como punto de partida para tareas posteriores o para investigacion sobre entrenamiento de modelos pequenos. El repositorio indica que se empleo el dataset `AksaraLLM/aksara-pretrain-id` como corpus de preentrenamiento.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hakim32/slm-id-50m-ckpt | ~50M | no disponible | apache-2.0 (etiqueta) | HuggingFace | Modelo base en indonesio, entrenado desde cero |
-| Modelos SLM de referencia (p. ej. TinyLlama, Qwen2.5-0.5B) | 0.5B-1.1B | 2K-32K | Apache-2.0 | HuggingFace | Mucho mayores; no comparables directamente por tamano |
-| Modelos indonesios de gran escala (p. ej. Sahabat-AI, Komodo) | 7B-70B | variable | variable | HuggingFace | No comparables por tamano ni por etapa de entrenamiento |
+| hakim32/slm-id-50m-ckpt | ~50M | no disponible | apache-2.0 (etiqueta) | Hugging Face | Modelo base en indonesio, entrenado desde cero |
+| Modelos SLM de referencia (p. ej. TinyLlama, Qwen2.5-0.5B) | 0.5B-1.1B | 2K-32K | Apache-2.0 | Hugging Face | Mucho mayores; no comparables directamente por tamano |
+| Modelos indonesios de gran escala (p. ej. Sahabat-AI, Komodo) | 7B-70B | variable | variable | Hugging Face | No comparables por tamano ni por etapa de entrenamiento |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas del mismo tamano y mismo idioma. La comparativa anterior es orientativa y se basa en categorias generales, no en resultados medidos.
 
@@ -83,6 +83,6 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hakim32/slm-id-50m-ckpt
+- Hugging Face: https://huggingface.co/hakim32/slm-id-50m-ckpt
 - Dataset de preentrenamiento: https://huggingface.co/datasets/AksaraLLM/aksara-pretrain-id
 - Paper, blog, repositorio o demo: no disponibles en la informacion proporcionada.

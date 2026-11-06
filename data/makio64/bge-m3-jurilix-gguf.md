@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Makio64/bge-m3-jurilix-gguf` es un artefacto en formato GGUF publicado en HuggingFace por el usuario Makio64 bajo el sello "Jurilix", cuyo propósito declarado en la model card es servir como "artefacto GGUF cualificado para la descarga anónima por Jurilix". Se trata, por tanto, de una conversión de pesos a GGUF de un modelo de la familia BGE-M3 orientado a la extracción de características (embeddings de texto), no de un modelo generativo: la etiqueta de pipeline `feature-extraction` y el recuento real de 566.703.104 parámetros apuntan a un codificador tipo XLM-RoBERTa-large, coherente con la arquitectura del modelo base BAAI/bge-m3.
+`Makio64/bge-m3-jurilix-gguf` es un artefacto en formato GGUF publicado en Hugging Face por el usuario Makio64 bajo el sello "Jurilix", cuyo propósito declarado en la model card es servir como "artefacto GGUF cualificado para la descarga anónima por Jurilix". Se trata, por tanto, de una conversión de pesos a GGUF de un modelo de la familia BGE-M3 orientado a la extracción de características (embeddings de texto), no de un modelo generativo: la etiqueta de pipeline `feature-extraction` y el recuento real de 566.703.104 parámetros apuntan a un codificador tipo XLM-RoBERTa-large, coherente con la arquitectura del modelo base BAAI/bge-m3.
 
 El repositorio, de 0,6 GB, contiene un único fichero cuantizado en Q8_0 (`bge-m3-jurilix-Q8_0.gguf`, 634.554.144 bytes) junto a un fichero de procedencia con su hash SHA-256. La model card no documenta el proceso de ajuste, el corpus utilizado ni ninguna evaluación, y únicamente indica que la publicación por sí sola no equivale a una promoción al catálogo: el "banco de pruebas de producto" y el anclaje del commit siguen siendo obligatorios. No se han publicado resultados de benchmarks en la información disponible.
 
@@ -71,7 +71,7 @@ La model card no incluye métricas de recuperación (nDCG, Recall@k, MRR), ni ev
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente en Q8_0; una RTX 3060, RTX 4060, RTX 4090 o un acelerador tipo T4 / A10G lo ejecutan con margen amplio. Para lotes grandes de embeddings conviene mas VRAM, pero el cuello de botella no sera el peso del modelo.
 - Cabe en GPU de consumo: si, en practicamente todas las tarjetas modernas, e incluso en GPUs integradas con memoria compartida suficiente.
 - Inferencia en CPU: viable gracias al formato GGUF y a los 0,57 B de parametros; no se dispone de datos de latencia ni de documentos por segundo.
-- Opciones de despliegue: llama.cpp en modo embeddings, servidores compatibles con GGUF, Ollama para uso local, HuggingFace Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`) y, si se convierte o se sirve el modelo base, frameworks de embeddings como vLLM o Text Embeddings Inference.
+- Opciones de despliegue: llama.cpp en modo embeddings, servidores compatibles con GGUF, Ollama para uso local, Hugging Face Inference Endpoints (el repositorio esta marcado como `endpoints_compatible`) y, si se convierte o se sirve el modelo base, frameworks de embeddings como vLLM o Text Embeddings Inference.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ Frente a `multilingual-e5-large`, la principal diferencia practica seria la vent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Makio64/bge-m3-jurilix-gguf
+- Repositorio en Hugging Face: https://huggingface.co/Makio64/bge-m3-jurilix-gguf
 - Fichero de pesos: https://huggingface.co/Makio64/bge-m3-jurilix-gguf/blob/main/bge-m3-jurilix-Q8_0.gguf
 - Fichero de procedencia citado en la model card: `bge-m3-jurilix-Q8_0.gguf.provenance.json` (mismo repositorio)
 - Modelo base de referencia (no confirmado por el autor): https://huggingface.co/BAAI/bge-m3

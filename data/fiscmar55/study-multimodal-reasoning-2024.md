@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fiscmar55/study-multimodal-reasoning-2024` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en HuggingFace por el usuario fiscmar55 (Marie Fischer). La model card lo describe explícitamente como "reading notes and an experiment sketch" sobre razonamiento multimodal: el artefacto principal es `analysis.md`, acompañado de un `README.md` que funciona como documentación. El propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales y que el repositorio no incluye código publicado ni checkpoint entrenado.
+`fiscmar55/study-multimodal-reasoning-2024` no es un modelo entrenado, sino un repositorio de notas de investigación publicado en Hugging Face por el usuario fiscmar55 (Marie Fischer). La model card lo describe explícitamente como "reading notes and an experiment sketch" sobre razonamiento multimodal: el artefacto principal es `analysis.md`, acompañado de un `README.md` que funciona como documentación. El propio autor advierte que las secciones marcadas como planes o hipótesis no deben interpretarse como resultados experimentales y que el repositorio no incluye código publicado ni checkpoint entrenado.
 
 El interés del repositorio es metodológico: delimita el alcance de una pregunta de investigación sobre razonamiento multimodal, identifica posibles factores de confusión, propone una comparación contra baselines emparejados y fija un contexto de evaluación concreto (VQAv2, GQA y NLVR2), además de listar comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas. Es relevante ahora porque el ecosistema de MLLM publica gran cantidad de resultados difíciles de verificar; un repositorio que explicita qué falta por probar y qué evidencia se exigiría (versiones de dataset, comandos, semillas, hardware y logs crudos) aporta valor como plantilla de rigor.
 
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: autor fiscmar55, 0 descargas, 0 likes, pipeli
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura más allá de la etiqueta `transformer` en los metadatos de HuggingFace. La model card no describe capas, dimensionalidad, mecanismo de atención, tokenizador ni variantes como MoE, SSM o híbridos. Tampoco hay información sobre datos de entrenamiento: no se indica número de tokens, composición del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. El repositorio no publica checkpoint, código de entrenamiento ni configuración de ejecución.
+No hay información sobre arquitectura más allá de la etiqueta `transformer` en los metadatos de Hugging Face. La model card no describe capas, dimensionalidad, mecanismo de atención, tokenizador ni variantes como MoE, SSM o híbridos. Tampoco hay información sobre datos de entrenamiento: no se indica número de tokens, composición del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. El repositorio no publica checkpoint, código de entrenamiento ni configuración de ejecución.
 
 Lo que sí documenta el repositorio es un plan de evaluación. El autor propone comparar contra baselines emparejados y fija como contexto de evaluación los benchmarks VQAv2, GQA y NLVR2, habituales en la literatura de razonamiento visual. Asimismo, enumera comprobaciones de reproducibilidad y modos de fallo, y establece que cualquier resultado futuro deberá ir acompañado de versiones de dataset, comandos, semillas, hardware y logs crudos. No se declara ninguna innovación técnica (decodificación especulativa, atención lineal, etc.) ni se aportan ablaciones completadas.
 
@@ -97,8 +97,8 @@ No disponible. No existen modelos comparables en el sentido habitual (mismo tama
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fiscmar55/study-multimodal-reasoning-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/fiscmar55
+- Repositorio en Hugging Face: https://huggingface.co/fiscmar55/study-multimodal-reasoning-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/fiscmar55
 - Modelos del autor: https://huggingface.co/fiscmar55/models
 - Referencia temática sobre razonamiento multimodal en datos financieros: https://arxiv.org/pdf/2506.06282v1
 - Referencia temática sobre capacidades de razonamiento de MLLM: https://arxiv.org/abs/2401.06805

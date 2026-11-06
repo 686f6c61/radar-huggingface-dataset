@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Ha sido desarrollado por el usuario jogarulfop y publicado en HuggingFace bajo la librería LeRobot, con licencia Apache 2.0. El modelo está entrenado para una tarea específica de agitación (shake4it bench) utilizando datos de sensores de galga extensiométrica (strain gauge) muestreados a 10 kHz con una transformada rápida de Fourier de 512 puntos (nfft 512). Con 51,7 millones de parámetros, es un modelo compacto orientado a la robótica de manipulación, y su relevancia radica en demostrar cómo los transformers pueden aplicarse al control de robots mediante imitación a partir de datos teleoperados.
+Este modelo es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones en lugar de pasos individuales. Ha sido desarrollado por el usuario jogarulfop y publicado en Hugging Face bajo la librería LeRobot, con licencia Apache 2.0. El modelo está entrenado para una tarea específica de agitación (shake4it bench) utilizando datos de sensores de galga extensiométrica (strain gauge) muestreados a 10 kHz con una transformada rápida de Fourier de 512 puntos (nfft 512). Con 51,7 millones de parámetros, es un modelo compacto orientado a la robótica de manipulación, y su relevancia radica en demostrar cómo los transformers pueden aplicarse al control de robots mediante imitación a partir de datos teleoperados.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_strain_gauge_10kHz_nfft_512
+- Modelo en Hugging Face: https://huggingface.co/jogarulfop/policy_2026-08-31_shake4it_bench_5sensors_strain_gauge_10kHz_nfft_512
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot

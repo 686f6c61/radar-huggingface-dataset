@@ -56,10 +56,10 @@ No se han publicado resultados numéricos de benchmarks (MMLU, HumanEval, GSM8K,
 
 | Modelo | Parametros | Contexto | Rendimiento en codigo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tiel-Coder-35B-A3B (este) | 35B MoE (3B activos) | no disponible | Comparable a Opus 4.6 Medium en repositorios | no disponible | HuggingFace (MLX, GGUF) |
+| Tiel-Coder-35B-A3B (este) | 35B MoE (3B activos) | no disponible | Comparable a Opus 4.6 Medium en repositorios | no disponible | Hugging Face (MLX, GGUF) |
 | KAT-Coder | no disponible | no disponible | Inferior segun baguaai.com | no disponible | no disponible |
 | Nail | no disponible | no disponible | Inferior segun baguaai.com | no disponible | no disponible |
-| Qwen3.5 (base) | 35B MoE (3B activos) | no disponible | Base sin fine-tuning | Apache 2.0 (probable) | HuggingFace |
+| Qwen3.5 (base) | 35B MoE (3B activos) | no disponible | Base sin fine-tuning | Apache 2.0 (probable) | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa.
 
@@ -74,7 +74,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized-oQ8e-mtp
+- Modelo en Hugging Face: https://huggingface.co/symrex/Tiel-Coder-35B-A3B-Genesis-Hermes-GGUF-dequantized-oQ8e-mtp
 - Perfil del autor symrex: https://huggingface.co/symrex
 - Artículo sobre TielCoder en baguaai.com: https://baguaai.com/tielcoder-the-new-35b-moe-benchmark-redefining-local-sota-coding-performance/
 - Benchmark de versión GGUF en llm-bench.io: https://llm-bench.io/models/tiel-coder-35b-a3b-mtp-ud-q6-k-xl-gguf

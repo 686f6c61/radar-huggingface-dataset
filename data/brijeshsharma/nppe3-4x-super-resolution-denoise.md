@@ -67,8 +67,8 @@ Para contexto, en la misma competicion el modelo ChemYukti/denoise-sr4x-dlp26t2n
 
 | Modelo | Arquitectura | Parametros | Contexto | Rendimiento (PSNR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Brijeshsharma/nppe3-4x-super-resolution-denoise | CNN RRDB-lite / EDSR | no disponible | no aplica | 39.245 dB (validacion), 39.271 dB (TTA) | MIT | HuggingFace |
-| ChemYukti/denoise-sr4x-dlp26t2nppe3 | no disponible | no disponible | no aplica | 39.85 dB (leaderboard publico) | no disponible | HuggingFace |
+| Brijeshsharma/nppe3-4x-super-resolution-denoise | CNN RRDB-lite / EDSR | no disponible | no aplica | 39.245 dB (validacion), 39.271 dB (TTA) | MIT | Hugging Face |
+| ChemYukti/denoise-sr4x-dlp26t2nppe3 | no disponible | no disponible | no aplica | 39.85 dB (leaderboard publico) | no disponible | Hugging Face |
 
 No se han identificado mas modelos comparables con datos publicos suficientes para esta tarea especifica.
 
@@ -77,13 +77,13 @@ No se han identificado mas modelos comparables con datos publicos suficientes pa
 - Entrenado especificamente para imagenes con baja iluminacion y ruido; su rendimiento en imagenes con buen nivel de luz o poco ruido puede no ser optimo.
 - La metrica de validacion es no estandar (PSNR en escala de grises, aplanado y muestreado cada 8.º pixel), lo que impide comparar directamente con resultados de otros benchmarks de super-resolucion.
 - El dataset de entrenamiento es pequeno (1105 pares), lo que puede limitar la capacidad de generalizacion a dominios distintos del utilizado.
-- El repositorio de HuggingFace muestra un tamano de 0.0 GB, y aunque el model card referencia checkpoints `best.pt` y `last.pt`, no se observan pesos accesibles en el repositorio, por lo que la carga real puede no ser posible sin regenerarlos.
+- El repositorio de Hugging Face muestra un tamano de 0.0 GB, y aunque el model card referencia checkpoints `best.pt` y `last.pt`, no se observan pesos accesibles en el repositorio, por lo que la carga real puede no ser posible sin regenerarlos.
 - No es un modelo de lenguaje y no soporta tool calling, agentes ni razonamiento multi-paso.
 - La documentacion es minima: no se proporciona el numero de parametros ni instrucciones detalladas de uso fuera del ejemplo basico.
 - No se han publicado analisis de sesgos; al ser un modelo de vision, puede comportarse de forma variable con imagenes de dominios muy distintos (medico, satelital, artistico).
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Brijeshsharma/nppe3-4x-super-resolution-denoise
+- Hugging Face: https://huggingface.co/Brijeshsharma/nppe3-4x-super-resolution-denoise
 - Modelo relacionado: https://huggingface.co/ChemYukti/denoise-sr4x-dlp26t2nppe3
 - Repositorio GitHub de la misma competicion: https://github.com/LokeshTiwari004/dlp_nppe3

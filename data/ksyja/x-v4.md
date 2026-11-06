@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KSYJA/X-V4 es un repositorio alojado en HuggingFace bajo el identificador `KSYJA/X-V4`, publicado por el usuario KSYJA. En el momento de la consulta, el repositorio no declara `pipeline_tag`, licencia, idiomas soportados ni ninguna tarjeta de modelo con documentación técnica, por lo que no es posible determinar qué tipo de modelo contiene, su arquitectura ni su finalidad.
+KSYJA/X-V4 es un repositorio alojado en Hugging Face bajo el identificador `KSYJA/X-V4`, publicado por el usuario KSYJA. En el momento de la consulta, el repositorio no declara `pipeline_tag`, licencia, idiomas soportados ni ninguna tarjeta de modelo con documentación técnica, por lo que no es posible determinar qué tipo de modelo contiene, su arquitectura ni su finalidad.
 
 Los únicos datos objetivos disponibles son métricas de repositorio: 0 descargas, 1 like, un tamaño de 0,2 GB y unas fechas de creación y última actualización del 13 de septiembre de 2026 (creado a las 15:42:44 UTC y actualizado a las 15:46:12 UTC, es decir, unos cuatro minutos después). El único tag declarado es `region:us`.
 
@@ -88,6 +88,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KSYJA/X-V4
+- Repositorio en Hugging Face: https://huggingface.co/KSYJA/X-V4
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos de codigo o demos). Los unicos resultados devueltos corresponden a sitios corporativos de Microsoft y no guardan relacion con KSYJA/X-V4.

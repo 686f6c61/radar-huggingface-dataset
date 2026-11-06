@@ -99,7 +99,7 @@ La comparación debe tomarse con cautela: los datos de LLaMA-3.2 3B, Qwen2.5 3B 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nextgenaimx/osadia-3.5b-core
+- Repositorio Hugging Face: https://huggingface.co/nextgenaimx/osadia-3.5b-core
 - Repositorio oficial en GitHub: https://github.com/NextGenAiMX/osadia-ai
 - Dataset de entrenamiento: https://huggingface.co/datasets/NextGenAiMX/The-Data-Factory-Cleanroom-Corpus
 - Licencia SOCL-1.0: https://huggingface.co/nextgenaimx/osadia-3.5b-core/blob/main/LICENSE.md

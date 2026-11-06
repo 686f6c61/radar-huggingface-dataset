@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Minko030/taucatch",
+  "slug": "minko030-taucatch",
+  "author": "Minko030",
+  "url": "https://huggingface.co/Minko030/taucatch",
+  "created_at": "2026-11-06T08:25:14.000Z",
+  "updated_at": "2026-11-06T08:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "spiking-neural-networks",
+    "vision-language-action",
+    "event-camera",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39474481,
+  "parameters_human": "39.5M",
+  "storage_bytes": 158084874,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

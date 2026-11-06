@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2019-pomlnb-chronollm-2019` es un modelo de lenguaje publicado en HuggingFace por el usuario `alfred8995` el 21 de octubre de 2026. Se distribuye exclusivamente en formato safetensors y cuenta con 1.858.535.658 parámetros totales (aproximadamente 1,86 B), lo que lo sitúa en la franja de modelos pequeños, aptos para inferencia en GPU de consumo. El repositorio ocupa 7,4 GB, un tamaño coherente con pesos almacenados en fp32 (4 bytes por parámetro), aunque esta deducción no está confirmada por el autor.
+`alfred8995/sn38-r3-2019-pomlnb-chronollm-2019` es un modelo de lenguaje publicado en Hugging Face por el usuario `alfred8995` el 21 de octubre de 2026. Se distribuye exclusivamente en formato safetensors y cuenta con 1.858.535.658 parámetros totales (aproximadamente 1,86 B), lo que lo sitúa en la franja de modelos pequeños, aptos para inferencia en GPU de consumo. El repositorio ocupa 7,4 GB, un tamaño coherente con pesos almacenados en fp32 (4 bytes por parámetro), aunque esta deducción no está confirmada por el autor.
 
 La información pública disponible es mínima: no hay model card descriptiva, no se declara pipeline, no se especifican idiomas soportados y no se han publicado resultados de benchmarks. El único indicio sobre la arquitectura es la etiqueta `ChronoGPT`, que sugiere una variante orientada a modelado temporal o cronológico, extremadamente poco documentada en el ecosistema abierto. El nombre del repositorio (`sn38-r3-2019-pomlnb`) apunta a un artefacto de investigación o a un checkpoint intermedio de un experimento, más que a un modelo listo para producción.
 
-El acceso está restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, y la licencia aparece como `other` sin texto visible. Con cero descargas y cero «likes» en el momento de la consulta, se trata de un modelo sin validación comunitaria. Cualquier evaluación seria exige descargarlo, inspeccionar la configuración y ejecutar pruebas propias.
+El acceso está restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, y la licencia aparece como `other` sin texto visible. Con cero descargas y cero «likes» en el momento de la consulta, se trata de un modelo sin validación comunitaria. Cualquier evaluación seria exige descargarlo, inspeccionar la configuración y ejecutar pruebas propias.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El acceso está restringido (gated): es necesario aceptar condiciones en Hugging
 | Licencia | `other` (texto de licencia no visible en la información proporcionada) |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 7,4 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | No disponible |
 | Fecha de creacion / actualizacion | 2026-10-21 / 2026-10-21 |
 | Descargas / likes | 0 / 0 |
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU de datacenter: A100, H100 y L40S sobredimensionadas para este tamaño; útiles solo por agregación de concurrencia.
 - Opciones de despliegue: `transformers` (ruta más directa al no haber plantilla de chat publicada), vLLM y TGI para serving con batching continuo; llama.cpp/Ollama solo tras convertir manualmente los pesos a GGUF, paso no documentado por el autor.
 - Throughput y latencia: no disponibles. Como estimación teórica, la decodificación de un modelo de 1,86 B está limitada por ancho de banda de memoria; en una RTX 4090 en fp16 cabría esperar del orden de cientos de tokens por segundo en batch 1, cifra que no debe tomarse como medida real.
-- Restricción adicional: el acceso gated obliga a autenticarse con un token de HuggingFace en cualquier pipeline de descarga automatizado.
+- Restricción adicional: el acceso gated obliga a autenticarse con un token de Hugging Face en cualquier pipeline de descarga automatizado.
 
 ## Comparativa con modelos similares
 
@@ -100,6 +100,6 @@ Las alternativas de la tabla cuentan con model cards completas, tokenizadores pu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2019-pomlnb-chronollm-2019
+- Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2019-pomlnb-chronollm-2019
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo. Las búsquedas web realizadas devolvieron únicamente resultados genéricos sobre ChatGPT y OpenAI, sin relación con este checkpoint.

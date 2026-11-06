@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `ideadet-nemotron30b-1m-outline` es un adaptador LoRA (librería PEFT) publicado por Rishanth Rajendhran sobre el modelo base `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. El repositorio contiene únicamente los pesos del adaptador (3,1 GB), no el modelo completo, y su finalidad no está documentada en la ficha de HuggingFace. Por el nombre, podría estar orientado a tareas de detección de ideas o generación de esquemas, pero no se confirma.
+El modelo `ideadet-nemotron30b-1m-outline` es un adaptador LoRA (librería PEFT) publicado por Rishanth Rajendhran sobre el modelo base `NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16` de NVIDIA. El repositorio contiene únicamente los pesos del adaptador (3,1 GB), no el modelo completo, y su finalidad no está documentada en la ficha de Hugging Face. Por el nombre, podría estar orientado a tareas de detección de ideas o generación de esquemas, pero no se confirma.
 
-El modelo base es un LLM híbrido Mamba-Transformer con arquitectura MoE (Mixture of Experts), con 30 mil millones de parámetros totales y 3 mil millones activos, que soporta una ventana de contexto de 1 millón de tokens. Este adaptador, al ser de tipo LoRA, modifica de forma eficiente el comportamiento del base sin cambiar su arquitectura. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo base es un LLM híbrido Mamba-Transformer con arquitectura MoE (Mixture of Experts), con 30 mil millones de parámetros totales y 3 mil millones activos, que soporta una ventana de contexto de 1 millón de tokens. Este adaptador, al ser de tipo LoRA, modifica de forma eficiente el comportamiento del base sin cambiar su arquitectura. El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de este adaptador radica en la posibilidad de especializar un modelo de alto rendimiento y contexto largo para una tarea concreta, aunque al no haber documentación ni demos, su utilidad práctica queda limitada a quien tenga acceso y pueda evaluarlo.
 
@@ -74,7 +74,7 @@ La principal diferencia del base es su contexto de 1 M tokens y su arquitectura 
 ## Limitaciones y advertencias
 
 - **Documentación inexistente**: no se describe la tarea para la que fue entrenado el adaptador, lo que impide evaluar su idoneidad para casos concretos.
-- **Acceso restringido**: el repositorio es gated; es necesario solicitar acceso y aceptar condiciones en HuggingFace.
+- **Acceso restringido**: el repositorio es gated; es necesario solicitar acceso y aceptar condiciones en Hugging Face.
 - **Licencia openmdw-1.1**: no es una licencia estándar de código abierto; requiere revisar los términos exactos para uso comercial o redistribución.
 - **Sesgos del modelo base**: el modelo Nemotron puede presentar sesgos derivados de sus datos de entrenamiento, que el adaptador puede amplificar o no corregir.
 - **Riesgo de alucinación**: al ser un modelo generativo, puede producir contenido falso, especialmente en tareas de detección o resumen si el adaptador no está bien calibrado.
@@ -82,8 +82,8 @@ La principal diferencia del base es su contexto de 1 M tokens y su arquitectura 
 
 ## Enlaces
 
-- [Repositorio del adaptador en HuggingFace](https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-outline)
-- [Perfil del autor en HuggingFace](https://huggingface.co/rishanthrajendhran)
+- [Repositorio del adaptador en Hugging Face](https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-outline)
+- [Perfil del autor en Hugging Face](https://huggingface.co/rishanthrajendhran)
 - [Página personal de Rishanth Rajendhran](https://rishanthrajendhran.github.io/)
-- [Modelo base NVIDIA Nemotron-3.5-Lightning-30B-A3B en HuggingFace](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16) (enlace inferido, no confirmado en la búsqueda)
+- [Modelo base NVIDIA Nemotron-3.5-Lightning-30B-A3B en Hugging Face](https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16) (enlace inferido, no confirmado en la búsqueda)
 - [Documentación de Nemotron en NVIDIA Developer](https://developer.nvidia.com/topics/ai/nemotron)

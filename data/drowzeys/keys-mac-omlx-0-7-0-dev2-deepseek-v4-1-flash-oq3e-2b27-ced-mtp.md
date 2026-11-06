@@ -126,7 +126,7 @@ Frente a alternativas de otros fabricantes de tamaño comparable, la informació
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b27-CED-MTP
+- Repositorio en Hugging Face: https://huggingface.co/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b27-CED-MTP
 - Modelo base: https://huggingface.co/Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp
 - Repositorio GitHub del autor (receta, parches, benchmarks y notas de servicio): https://github.com/drowzeys/keys-Mac-oMLX-0.7.0.dev2-DeepSeek-V4.1-Flash-oQ3e-2b27-CED-MTP
 - Runtime oMLX: https://github.com/jundot/omlx

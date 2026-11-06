@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos entre estos modelos en la información 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/creekhop/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/creekhop/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1-GGUF
 - Modelo base (merge sin cuantizar): https://huggingface.co/vvsotnikov/Qwen3.8-27B-0.9-Qwen3.6-27B-0.1
 - Modelo oficial Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B

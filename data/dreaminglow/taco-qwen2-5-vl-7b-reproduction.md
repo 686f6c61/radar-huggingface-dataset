@@ -47,7 +47,7 @@ La reproducción TACO aplica un entrenamiento adicional mediante reinforcement l
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion ni comparaciones con otros modelos. Dado que se trata de una reproduccion experimental, es necesario realizar evaluaciones propias sobre tareas de interes.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion ni comparaciones con otros modelos. Dado que se trata de una reproduccion experimental, es necesario realizar evaluaciones propias sobre tareas de interes.
 
 ## Requisitos de hardware
 
@@ -80,8 +80,8 @@ La principal diferencia de TACO es su entrenamiento con reinforcement learning, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DreamingLow/TACO-Qwen2.5-VL-7B-Reproduction
-- Coleccion Qwen2.5-VL (HuggingFace): https://huggingface.co/collections/Qwen/qwen25-vl
-- Coleccion Qwen2.5 (HuggingFace): https://huggingface.co/collections/Qwen/qwen25
+- Repositorio Hugging Face: https://huggingface.co/DreamingLow/TACO-Qwen2.5-VL-7B-Reproduction
+- Coleccion Qwen2.5-VL (Hugging Face): https://huggingface.co/collections/Qwen/qwen25-vl
+- Coleccion Qwen2.5 (Hugging Face): https://huggingface.co/collections/Qwen/qwen25
 - Repositorio GitHub de Qwen2.5-VL (no oficial): https://github.com/elsawhs/qwen2.5-vl
 - Technical report de Qwen2.5-VL (arXiv): https://arxiv.org/abs/2502.13923

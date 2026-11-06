@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `4b-A-200-luna-8k-epoch4` es un checkpoint de investigación publicado por el usuario `Stage-jh-monitor` en HuggingFace. Se trata de un ajuste mediante aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, con 4.539.265.536 parámetros totales (~4,54 B) y pesos en formato safetensors. El repositorio ocupa 9,1 GB, un tamaño coherente con pesos en bf16/fp16 para ese número de parámetros. La ficha no incluye pipeline declarado, licencia, idiomas soportados ni descripción funcional: la única documentación disponible es un bloque de procedencia de entrenamiento (`jh-workflow-training-begin`/`end`) que registra el dataset, el comando y la configuración del entrenamiento.
+El modelo `4b-A-200-luna-8k-epoch4` es un checkpoint de investigación publicado por el usuario `Stage-jh-monitor` en Hugging Face. Se trata de un ajuste mediante aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, con 4.539.265.536 parámetros totales (~4,54 B) y pesos en formato safetensors. El repositorio ocupa 9,1 GB, un tamaño coherente con pesos en bf16/fp16 para ese número de parámetros. La ficha no incluye pipeline declarado, licencia, idiomas soportados ni descripción funcional: la única documentación disponible es un bloque de procedencia de entrenamiento (`jh-workflow-training-begin`/`end`) que registra el dataset, el comando y la configuración del entrenamiento.
 
 El interés del modelo es principalmente metodológico y de trazabilidad: la model card documenta de forma explícita el pipeline de RL empleado, con el dataset `Stage-org/4b-A-200-luna-8k`, 10.000 pasos de learner, tamaño de lote 128 y una configuración de RL con `group_size = 8`, decodificación con `enable_thinking = true`, `max_tokens = 4096` y un juez externo identificado como `gpt-5.6-luna` para evaluación de respuestas abiertas. La configuración de inferencia de referencia usa vLLM con `max_model_len = 65536`, parser de razonamiento `qwen3` y parser de tool calling `qwen3_coder`, lo que sugiere soporte previsto de modo pensamiento y llamadas a herramientas.
 
@@ -95,7 +95,7 @@ Frente a estas alternativas, el modelo analizado no ofrece datos de rendimiento,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-jh-monitor/4b-A-200-luna-8k-epoch4
+- Modelo en Hugging Face: https://huggingface.co/Stage-jh-monitor/4b-A-200-luna-8k-epoch4
 - Dataset referenciado en la configuración de entrenamiento (no verificado): https://huggingface.co/Stage-org/4b-A-200-luna-8k
 - Modelo base referenciado en la configuración de entrenamiento (no verificado): https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio del autor: no disponibles. La búsqueda web realizada no devolvió resultados relacionados con el modelo.

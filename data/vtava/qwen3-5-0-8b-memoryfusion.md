@@ -102,8 +102,8 @@ La informacion proporcionada no incluye datos de benchmarks ni especificaciones 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vtava/Qwen3.5-0.8B-MemoryFusion
+- Modelo en Hugging Face: https://huggingface.co/vtava/Qwen3.5-0.8B-MemoryFusion
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
-- Ficheros citados en la model card: `sequential_progress.json`, `chat_examples.json`, `training/sequential_in_progress.pt` (disponibles en el repositorio de HuggingFace del modelo)
+- Ficheros citados en la model card: `sequential_progress.json`, `chat_examples.json`, `training/sequential_in_progress.pt` (disponibles en el repositorio de Hugging Face del modelo)
 - Paper, blog tecnico o repositorio de codigo del autor: no disponibles en la informacion proporcionada
 - Demo o espacio interactivo: no disponible

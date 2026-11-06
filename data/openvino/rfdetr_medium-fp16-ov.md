@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rfdetr_medium-fp16-ov` es la conversión a formato OpenVINO IR con pesos en FP16 del modelo de detección de objetos RF-DETR Medium, publicada por el equipo de OpenVINO en HuggingFace. RF-DETR (Roboflow Detection Transformer) es un detector basado en arquitectura transformer desarrollado originalmente por Roboflow, y esta variante ha sido procesada por Geti (plataforma de Intel para el ciclo de vida de modelos de visión) para su despliegue optimizado en hardware Intel mediante el toolkit OpenVINO.
+`rfdetr_medium-fp16-ov` es la conversión a formato OpenVINO IR con pesos en FP16 del modelo de detección de objetos RF-DETR Medium, publicada por el equipo de OpenVINO en Hugging Face. RF-DETR (Roboflow Detection Transformer) es un detector basado en arquitectura transformer desarrollado originalmente por Roboflow, y esta variante ha sido procesada por Geti (plataforma de Intel para el ciclo de vida de modelos de visión) para su despliegue optimizado en hardware Intel mediante el toolkit OpenVINO.
 
 El modelo resuelve la tarea de detección de objetos en imágenes, devolviendo cajas delimitadoras y clases sobre una fotografía de entrada. Su relevancia radica en que combina la calidad de un detector DETR moderno con un formato de inferencia (OpenVINO IR) pensado para ejecución de baja latencia en CPU, GPU integrada y NPU de plataformas Intel, tanto en la nube como en el borde. El repositorio ocupa aproximadamente 0,1 GB, lo que refleja la compresión FP16 de los pesos.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Formato | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| rfdetr_medium-fp16-ov | Detector DETR (Medium) | OpenVINO IR FP16 | Apache-2.0 | Imagen | HuggingFace (OpenVINO) |
+| rfdetr_medium-fp16-ov | Detector DETR (Medium) | OpenVINO IR FP16 | Apache-2.0 | Imagen | Hugging Face (OpenVINO) |
 | RF-DETR Medium original | Detector DETR (Medium) | PyTorch | Apache-2.0 | Imagen | GitHub (Roboflow) |
-| Otros detectores DETR de tamaño medio | Detector DETR | PyTorch / ONNX | variable | Imagen | HuggingFace |
+| Otros detectores DETR de tamaño medio | Detector DETR | PyTorch / ONNX | variable | Imagen | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OpenVINO/rfdetr_medium-fp16-ov
+- Hugging Face: https://huggingface.co/OpenVINO/rfdetr_medium-fp16-ov
 - Modelo original RF-DETR (Roboflow): https://github.com/roboflow/rf-detr
 - Geti (Intel): https://github.com/open-edge-platform/geti
 - Model API: https://github.com/open-edge-platform/model_api

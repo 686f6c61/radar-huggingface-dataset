@@ -89,7 +89,7 @@ No se dispone de otros recursos de J-Lens que cubran la evolución durante el en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jeeva2812/olmo3-jlens-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/jeeva2812/olmo3-jlens-checkpoints
 - Código fuente (GitHub): https://github.com/jeeva2812/jlens-transformation
 - Paper de Olmo 3 (arXiv): https://arxiv.org/abs/2512.13961
 - Página oficial de Olmo (AllenAI): https://allenai.org/olmo

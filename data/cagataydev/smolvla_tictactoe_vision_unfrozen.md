@@ -83,7 +83,7 @@ El modelo unfrozen sacrifica velocidad de entrenamiento y usa más parámetros, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cagataydev/smolvla_tictactoe_vision_unfrozen
+- Modelo en Hugging Face: https://huggingface.co/cagataydev/smolvla_tictactoe_vision_unfrozen
 - Paper de SmolVLA: https://arxiv.org/abs/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HashtagRobotics/tic-tac-toe-so101-block-a-clean-v1

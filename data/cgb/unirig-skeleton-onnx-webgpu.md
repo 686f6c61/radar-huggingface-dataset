@@ -73,8 +73,8 @@ Estos datos provienen del script `scripts/unirig-verify.py` mencionado en la mod
 
 | Modelo | Tamano | Licencia | Disponibilidad | Contexto |
 |---|---|---|---|---|
-| cgb/unirig-skeleton-onnx-webgpu | 418 MB (int8) | MIT | HuggingFace, ONNX | Hasta 65 536 vertices |
-| VAST-AI/UniRig (original) | 1.44 GB (float32) | MIT | HuggingFace, PyTorch | No disponible |
+| cgb/unirig-skeleton-onnx-webgpu | 418 MB (int8) | MIT | Hugging Face, ONNX | Hasta 65 536 vertices |
+| VAST-AI/UniRig (original) | 1.44 GB (float32) | MIT | Hugging Face, PyTorch | No disponible |
 | SkinTokens (sucesor) | no disponible | no disponible | GitHub (anunciado) | no disponible |
 
 La comparativa se basa en la información disponible. SkinTokens es el sucesor de UniRig, que unifica la predicción de esqueleto y skinning en una sola secuencia autoregresiva, pero no se dispone de especificaciones concretas.
@@ -94,7 +94,7 @@ La comparativa se basa en la información disponible. SkinTokens es el sucesor d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cgb/unirig-skeleton-onnx-webgpu
+- Hugging Face: https://huggingface.co/cgb/unirig-skeleton-onnx-webgpu
 - Modelo base UniRig: https://huggingface.co/VAST-AI/UniRig
 - GitHub de UniRig: https://github.com/VAST-AI-Research/UniRig
 - Ejemplos de skeleton en UniRig: https://github.com/VAST-AI-Research/UniRig/tree/main/examples/skeleton

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sameera123-2026/urdu-handwritten-character-recognition` es un repositorio publicado en HuggingFace por el usuario sameera123-2026 cuyo propósito declarado, a tenor del identificador, es el reconocimiento de caracteres manuscritos en urdu. Se trata, por tanto, de un modelo de visión por computador orientado a OCR (reconocimiento óptico de caracteres) sobre escritura manual, una tarea especialmente difícil por la variabilidad caligráfica y la naturaleza cursiva del alfabeto urdu (derivado del nastaliq).
+El modelo `sameera123-2026/urdu-handwritten-character-recognition` es un repositorio publicado en Hugging Face por el usuario sameera123-2026 cuyo propósito declarado, a tenor del identificador, es el reconocimiento de caracteres manuscritos en urdu. Se trata, por tanto, de un modelo de visión por computador orientado a OCR (reconocimiento óptico de caracteres) sobre escritura manual, una tarea especialmente difícil por la variabilidad caligráfica y la naturaleza cursiva del alfabeto urdu (derivado del nastaliq).
 
 La información disponible es extremadamente limitada: la model card únicamente contiene la declaración de licencia MIT, sin descripción de arquitectura, datos de entrenamiento, métricas ni instrucciones de uso. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, lo que sugiere que los pesos no están publicados o el repositorio está vacío. No se especifica pipeline, idiomas soportados ni formato de pesos.
 
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sameera123-2026/urdu-handwritten-character-recognition
+- Hugging Face: https://huggingface.co/sameera123-2026/urdu-handwritten-character-recognition
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

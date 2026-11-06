@@ -6,7 +6,7 @@ moore-tts-pocket es un modelo de texto a voz (TTS) desarrollado por el usuario a
 
 El modelo conserva la arquitectura compacta del modelo base, con aproximadamente 109,5 millones de parámetros distribuidos en pesos safetensors (unos 0,4 GB de repositorio), lo que lo hace especialmente adecuado para ejecutarse en hardware modesto o incluso en dispositivos de bolsillo, de ahí el sufijo "pocket". Incluye además capacidades de clonación de voz heredadas de la familia pocket-tts.
 
-Su relevancia radica en la escasez de modelos de voz para lenguas africanas de bajos recursos: fichas como esta amplían la cobertura de tecnologías de habla para comunidades que históricamente han quedado fuera de los grandes modelos multilingües. Nótese que se trata de un modelo con acceso restringido (gated) en HuggingFace, con muy poca adopción registrada hasta la fecha (0 descargas, 1 like).
+Su relevancia radica en la escasez de modelos de voz para lenguas africanas de bajos recursos: fichas como esta amplían la cobertura de tecnologías de habla para comunidades que históricamente han quedado fuera de los grandes modelos multilingües. Nótese que se trata de un modelo con acceso restringido (gated) en Hugging Face, con muy poca adopción registrada hasta la fecha (0 descargas, 1 like).
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Para 
 - VRAM estimada para inferencia: con ~110 M de parámetros en fp16, el modelo ocupa aproximadamente 0,2-0,3 GB de VRAM solo para pesos; en la práctica, unos 1-2 GB de VRAM deberian bastar con margen para buffers de audio (estimación, no dato publicado).
 - GPU recomendadas: cualquier GPU moderna es suficiente; el tamaño reducido hace viable la ejecución en GPUs de consumo como una RTX 3060 o incluso integradas. Es plausible la ejecución en CPU dado el tamaño, aunque no hay datos publicados de latencia.
 - Consumer GPU: sí, cabe con holgura en prácticamente cualquier GPU de consumo actual.
-- Opciones de despliegue: no disponible de forma específica; al ser un modelo TTS compacto, opciones típicas serian inferencia directa con PyTorch/safetensors o via Spaces de HuggingFace. No hay evidencia de soporte verificado en vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no disponible de forma específica; al ser un modelo TTS compacto, opciones típicas serian inferencia directa con PyTorch/safetensors o via Spaces de Hugging Face. No hay evidencia de soporte verificado en vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponible; la familia pocket-tts está diseñada para baja latencia, pero no hay cifras publicadas para esta variante.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La principal ventaja diferencial de moore-tts-pocket frente a alternativas multi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones del repositorio en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones del repositorio en Hugging Face antes de descargar los pesos.
 - Adopcion minima: 0 descargas y 1 like registrados, sin comunidad de uso ni reportes de calidad; conviene validar la inteligibilidad del audio generado antes de cualquier despliegue.
 - Calidad no evaluada publicamente: no hay benchmarks MOS ni evaluaciones de inteligibilidad para mooré, por lo que el riesgo de artefactos de audio o pronunciación incorrecta es desconocido.
 - Riesgo de clonación de voz indebida: al heredar capacidades de voice cloning, el uso para suplantación de identidad o desinformación es un riesgo etico y legal; se recomienda consentimiento explicito de las voces clonadas.
@@ -80,6 +80,6 @@ La principal ventaja diferencial de moore-tts-pocket frente a alternativas multi
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/anyantudre/moore-tts-pocket
+- Ficha del modelo en Hugging Face: https://huggingface.co/anyantudre/moore-tts-pocket
 - Modelo base (kyutai/pocket-tts): https://huggingface.co/kyutai/pocket-tts
 - Paper, blog o demo del modelo base: no disponible en la informacion proporcionada

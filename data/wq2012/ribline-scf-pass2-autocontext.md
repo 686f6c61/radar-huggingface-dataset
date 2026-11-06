@@ -83,10 +83,10 @@ La comparacion natural es dentro de la propia coleccion `ribline`, ya que las cu
 
 | Variante | Enfoque | LCD 12 escaneos (mm) | Exactitud (%) | CV 5 particiones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `wq2012/ribline-3d-ct-centerline` | Hibrido SCF + 3D U-Net + etapa 3 | 2,05 ± 0,48 | 97,2 | 3,64 ± 3,90 mm; 91,8 % | no disponible en la informacion proporcionada | HuggingFace |
-| `wq2012/ribline-anatomical-scf` | SCF anclado anatomicamente + etapa 3, solo CPU | 2,88 ± 1,32 | 95,1 | 5,28 ± 4,62 mm; 86,9 % | no disponible en la informacion proporcionada | HuggingFace |
-| `wq2012/ribline-3d-unet` | 3D U-Net ligera + etapa 3 | 3,40 ± 1,99 | 92,0 | 7,44 ± 8,93 mm; 78,2 % | no disponible en la informacion proporcionada | HuggingFace |
-| `wq2012/ribline-scf-pass2-autocontext` (este) | SCF de 2 pasadas con auto-contexto + etapa 3 | 9,36 ± 10,57 | 71,0 | no publicada | MIT | HuggingFace |
+| `wq2012/ribline-3d-ct-centerline` | Hibrido SCF + 3D U-Net + etapa 3 | 2,05 ± 0,48 | 97,2 | 3,64 ± 3,90 mm; 91,8 % | no disponible en la informacion proporcionada | Hugging Face |
+| `wq2012/ribline-anatomical-scf` | SCF anclado anatomicamente + etapa 3, solo CPU | 2,88 ± 1,32 | 95,1 | 5,28 ± 4,62 mm; 86,9 % | no disponible en la informacion proporcionada | Hugging Face |
+| `wq2012/ribline-3d-unet` | 3D U-Net ligera + etapa 3 | 3,40 ± 1,99 | 92,0 | 7,44 ± 8,93 mm; 78,2 % | no disponible en la informacion proporcionada | Hugging Face |
+| `wq2012/ribline-scf-pass2-autocontext` (este) | SCF de 2 pasadas con auto-contexto + etapa 3 | 9,36 ± 10,57 | 71,0 | no publicada | MIT | Hugging Face |
 
 Frente a alternativas fuera de la coleccion (por ejemplo, redes de segmentacion de costillas publicadas de forma independiente) no se dispone de datos comparativos en la informacion proporcionada, por lo que la comparacion no esta disponible.
 
@@ -108,8 +108,8 @@ Frente a alternativas fuera de la coleccion (por ejemplo, redes de segmentacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wq2012/ribline-scf-pass2-autocontext
-- Coleccion ribline en HuggingFace: https://huggingface.co/collections/wq2012/ribline
+- Repositorio en Hugging Face: https://huggingface.co/wq2012/ribline-scf-pass2-autocontext
+- Coleccion ribline en Hugging Face: https://huggingface.co/collections/wq2012/ribline
 - Repositorio de codigo ribline: https://github.com/wq2012/ribline
 - Variante SCF con anclaje anatomico: https://huggingface.co/wq2012/ribline-anatomical-scf
 - Variante hibrida SCF + 3D U-Net: https://huggingface.co/wq2012/ribline-3d-ct-centerline

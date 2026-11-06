@@ -81,9 +81,9 @@ La version local previa alcanzo 71/130 (54,6%) en el mismo test final, pero la c
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vica Laya (tory-labs) | 323 M | no disponible | Clasificacion de juicio en coreano | Apache 2.0 | HuggingFace, runtime `laya` |
-| convaiinnovations/laya-multilingual (upstream) | no disponible | no disponible | Modelo multilingue base | Apache 2.0 | HuggingFace |
-| Modelos de clasificacion tipo BERT multilingue | ~100-300 M | 512 tokens tipico | Clasificacion de texto generica | variable | HuggingFace, transformers |
+| Vica Laya (tory-labs) | 323 M | no disponible | Clasificacion de juicio en coreano | Apache 2.0 | Hugging Face, runtime `laya` |
+| convaiinnovations/laya-multilingual (upstream) | no disponible | no disponible | Modelo multilingue base | Apache 2.0 | Hugging Face |
+| Modelos de clasificacion tipo BERT multilingue | ~100-300 M | 512 tokens tipico | Clasificacion de texto generica | variable | Hugging Face, transformers |
 
 No se dispone de resultados de benchmarks comparativos contra alternativas en la informacion proporcionada. La comparacion con el upstream no es posible porque el autor no publica resultados del modelo base sin ajustar sobre el mismo test. Los modelos BERT multilingues se incluyen como referencia de categoria por tamano, no por rendimiento medido.
 
@@ -104,7 +104,7 @@ No se dispone de resultados de benchmarks comparativos contra alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tory-labs/vica-laya
+- Modelo en Hugging Face: https://huggingface.co/tory-labs/vica-laya
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Revision del modelo base: https://huggingface.co/convaiinnovations/laya-multilingual/blob/1720e3e3357cfe1e281542e223f8273b0890ca34/README.md
 - Runtime ggmlc v0.9.7: https://github.com/monatis/ggmlc/releases/tag/v0.9.7

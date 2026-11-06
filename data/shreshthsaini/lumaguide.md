@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LumaGuide es un metodo de guiado en tiempo de muestreo (training-free) para generar imagenes HDR con modelos de difusion, desarrollado por Bowen Chen, Shreshth Saini, Balu Adsumilli y Alan C. Bovik. El repositorio de HuggingFace no contiene un modelo generativo completo, sino los activos auxiliares del metodo: un regresor de histograma de luminancia a partir del texto (270.880 parametros) y los 100 prompts de prueba empleados en el paper. La generacion real la realiza FLUX.1-dev como modelo base, sobre el que LumaGuide actua como adaptador sin modificar sus pesos.
+LumaGuide es un metodo de guiado en tiempo de muestreo (training-free) para generar imagenes HDR con modelos de difusion, desarrollado por Bowen Chen, Shreshth Saini, Balu Adsumilli y Alan C. Bovik. El repositorio de Hugging Face no contiene un modelo generativo completo, sino los activos auxiliares del metodo: un regresor de histograma de luminancia a partir del texto (270.880 parametros) y los 100 prompts de prueba empleados en el paper. La generacion real la realiza FLUX.1-dev como modelo base, sobre el que LumaGuide actua como adaptador sin modificar sus pesos.
 
 La innovacion consiste en formular el HDR como un problema de ajuste de distribucion: se define una funcion de energia diferenciable sobre el histograma de luminancia en espacio PQ de la imagen generada y se minimiza una perdida Wasserstein-1 que se retropropaga a traves del decodificador VAE de FLUX.1-dev durante el muestreo. El transformer de difusion nunca se entrena ni se modifica, de ahi la etiqueta "training-free".
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM para inferencia: aproximadamente 30 GB a 512x512 con FLUX.1-dev, segun el autor, debido al backward del decodificador VAE que exige el guiado.
 - GPU recomendadas por el propio requisito de memoria: A100 de 40 GB o 80 GB, H100, L40S (48 GB), RTX 6000 Ada (48 GB) o A6000 (48 GB).
 - GPU de consumo: una RTX 4090 con 24 GB no dispondria de margen suficiente a 512x512 segun la cifra indicada. No se documentan resultados a resoluciones menores ni con cuantizacion, por lo que no puede confirmarse su viabilidad en GPU de consumo.
-- Opciones de despliegue: ejecucion mediante el script `lumaguide.py` del repositorio de GitHub, con FLUX.1-dev descargado aparte desde HuggingFace (modelo con acceso restringido que exige aceptar la licencia). Depende de PyTorch y de los hooks del muestreador de Flux incluidos en el repositorio. No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF, dado que no es un modelo de lenguaje.
+- Opciones de despliegue: ejecucion mediante el script `lumaguide.py` del repositorio de GitHub, con FLUX.1-dev descargado aparte desde Hugging Face (modelo con acceso restringido que exige aceptar la licencia). Depende de PyTorch y de los hooks del muestreador de Flux incluidos en el repositorio. No hay soporte declarado para vLLM, llama.cpp, Ollama, TGI ni formatos GGUF, dado que no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponibles.
 - Almacenamiento: el checkpoint del regresor ocupa 1,1 MB; el peso principal corresponde a FLUX.1-dev, que debe descargarse por separado.
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LumaGuide (regresor + guiado) | 270.880 en el regresor; FLUX.1-dev completo por separado | No disponible | No disponible (sin benchmarks publicados en la informacion) | MIT para el regresor y los prompts; FLUX.1-dev no comercial | Repositorio en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| FLUX.1-dev sin guiado | No disponible en la informacion proporcionada | No disponible | No disponible | Licencia no comercial de Black Forest Labs | Modelo base ampliamente distribuido en HuggingFace, con acceso restringido |
+| LumaGuide (regresor + guiado) | 270.880 en el regresor; FLUX.1-dev completo por separado | No disponible | No disponible (sin benchmarks publicados en la informacion) | MIT para el regresor y los prompts; FLUX.1-dev no comercial | Repositorio en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| FLUX.1-dev sin guiado | No disponible en la informacion proporcionada | No disponible | No disponible | Licencia no comercial de Black Forest Labs | Modelo base ampliamente distribuido en Hugging Face, con acceso restringido |
 | Otros metodos de generacion HDR con difusion | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos comparativos verificables para establecer una comparacion cuantitativa con alternativas de la misma categoria.
@@ -94,7 +94,7 @@ No se dispone de datos comparativos verificables para establecer una comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shreshthsaini/LumaGuide
+- Repositorio en Hugging Face: https://huggingface.co/shreshthsaini/LumaGuide
 - Paper: https://arxiv.org/abs/2607.26237
 - Codigo: https://github.com/shreshthsaini/LumaGuide
 - Pagina del proyecto: https://shreshthsaini.github.io/LumaGuide/

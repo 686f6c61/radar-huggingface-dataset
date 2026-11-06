@@ -77,7 +77,7 @@ Las variantes de AXERA se diferencian principalmente en la longitud de contexto 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AXERA-TECH/Qwen3.5-4B-AX650-GPTQ-Int4-C512-P30k-CTX32k)
+- [Modelo en Hugging Face](https://huggingface.co/AXERA-TECH/Qwen3.5-4B-AX650-GPTQ-Int4-C512-P30k-CTX32k)
 - [Variante con contexto 20K](https://huggingface.co/AXERA-TECH/Qwen3.5-4B-AX650-GPTQ-Int4-C256-P16k-CTX20k)
 - [Variante con contexto 2K](https://huggingface.co/AXERA-TECH/Qwen3.5-4B-AX650-GPTQ-Int4-C128-P1152-CTX2047)
 - [Repositorio GitHub de AXERA-TECH](https://github.com/AXERA-TECH/Qwen3_5.AXERA)

@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B-Abliterated-V2-GGUF (este) | 0,75B | discrepancia: 4K / 262K segun fuente | si (mmproj) | apache-2.0 | GGUF en HuggingFace (mradermacher) |
+| Qwen3.5-0.8B-Abliterated-V2-GGUF (este) | 0,75B | discrepancia: 4K / 262K segun fuente | si (mmproj) | apache-2.0 | GGUF en Hugging Face (mradermacher) |
 | Qwen3.5 0.8B (base, Alibaba) | ~0,8B | 262K segun codersera | si | no disponible en la informacion | Ollama (`ollama run qwen3.5:0.8b`), GGUF |
 | Qwen3.5 4B | no disponible (mayor que 0,8B) | no disponible | no disponible | no disponible | mencionado en codersera como alternativa para codigo |
-| Qwen3.5-9B-Janus-Abliterated-V2 (mradermacher) | ~9B | no disponible | no disponible | apache-2.0 | GGUF en HuggingFace |
+| Qwen3.5-9B-Janus-Abliterated-V2 (mradermacher) | ~9B | no disponible | no disponible | apache-2.0 | GGUF en Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes. La comparacion se limita a parametros, licencia y disponibilidad.
 
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes. La com
 - Repositorio GGUF: https://huggingface.co/mradermacher/Qwen3.5-0.8B-Abliterated-V2-GGUF
 - Modelo base: https://huggingface.co/anlord/Qwen3.5-0.8B-Abliterated-V2
 - Pagina de resumen de mradermacher para este modelo: https://hf.tst.eu/model#Qwen3.5-0.8B-Abliterated-V2-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests
 - Referencia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Grafico comparativo de cuantizaciones (ikawrakow): https://www.nethype.de/huggingface_embed/quantpplgraph.png

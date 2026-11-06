@@ -71,7 +71,7 @@ No disponible. No se han proporcionado modelos comparables en la información di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/UyghurAI/idirak-model
+- Hugging Face: https://huggingface.co/UyghurAI/idirak-model
 - IDIRAK Lab: https://huggingface.co/spaces/UyghurAI/idirak-lab
 - Dataset de instrucciones: https://huggingface.co/datasets/UyghurAI/idirak-uyghur-instructions
 - Colección IDIRAK AI Ecosystem: https://huggingface.co/collections/UyghurAI/idirak-ai-ecosystem

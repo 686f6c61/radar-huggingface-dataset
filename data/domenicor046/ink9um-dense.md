@@ -77,6 +77,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - domenicor046/ink9um-dense](https://huggingface.co/domenicor046/ink9um-dense)
+- [Hugging Face - domenicor046/ink9um-dense](https://huggingface.co/domenicor046/ink9um-dense)
 - [Repositorio GitHub - DomRusso2/ink9um-dense](https://github.com/DomRusso2/ink9um-dense)
-- [HuggingFace - domenicor046/ink9um-dense-labels](https://huggingface.co/domenicor046/ink9um-dense-labels)
+- [Hugging Face - domenicor046/ink9um-dense-labels](https://huggingface.co/domenicor046/ink9um-dense-labels)

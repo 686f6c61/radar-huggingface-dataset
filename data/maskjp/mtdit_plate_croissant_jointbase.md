@@ -76,7 +76,7 @@ No se dispone de datos de modelos comparables de la misma categoría (políticas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/mtdit_plate_croissant_jointbase
+- Modelo en Hugging Face: https://huggingface.co/maskjp/mtdit_plate_croissant_jointbase
 - Dataset de entrenamiento: https://huggingface.co/datasets/l5vel-peng/base4-plate-croissant-eef-merged-v34
 - Perfil del autor (Peng Jiang): https://huggingface.co/maskjp
 - Repositorio de GitHub del autor: https://github.com/maskjp

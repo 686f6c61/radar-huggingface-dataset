@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VoiceCLAP whisper-small-MiniLM s40M ep20 | No disponible | No disponible | No evaluado en la informacion disponible | No disponible | Checkpoint en HuggingFace, sin model card detallada |
-| Checkpoints de la serie VoiceCLAP (indice `VoiceNetCkpt/voiceclap-checkpoints-index`) | No disponible | No disponible | No disponible | No disponible | Publicos en HuggingFace |
+| VoiceCLAP whisper-small-MiniLM s40M ep20 | No disponible | No disponible | No evaluado en la informacion disponible | No disponible | Checkpoint en Hugging Face, sin model card detallada |
+| Checkpoints de la serie VoiceCLAP (indice `VoiceNetCkpt/voiceclap-checkpoints-index`) | No disponible | No disponible | No disponible | No disponible | Publicos en Hugging Face |
 | Alternativas CLAP genericas (por ejemplo LAION-CLAP) | No disponible en esta informacion | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos suficientes en la informacion proporcionada para establecer una comparativa cuantitativa fiable con otros modelos de la misma categoria.
@@ -85,5 +85,5 @@ No se dispone de datos suficientes en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_full_whisper-small-MiniLM_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_full_whisper-small-MiniLM_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de la serie VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

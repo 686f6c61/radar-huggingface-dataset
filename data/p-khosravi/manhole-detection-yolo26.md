@@ -78,7 +78,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de detecció
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/P-khosravi/manhole-detection-yolo26
+- Modelo en Hugging Face: https://huggingface.co/P-khosravi/manhole-detection-yolo26
 - Demo interactiva: https://huggingface.co/spaces/P-khosravi/geo-object-detection
 - Documentación de Ultralytics YOLO26: https://docs.ultralytics.com/models/yolo26
 - Repositorio de Ultralytics YOLO26: https://github.com/ultralytics/yolo26

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 LIBERO PAD source es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Donghyun1228 en HuggingFace bajo licencia Apache 2.0. Se trata del modelo fuente de una línea base de PAD (Predictive Auxiliary Decoding, Hansen et al., ICLR 2021) en su variante offline, entrenado sobre el benchmark LIBERO y construido a partir de la arquitectura π0.5 de openpi. El modelo está pensado como punto de partida para experimentos de adaptación de políticas VLA, no como un modelo de propósito general.
+π0.5 LIBERO PAD source es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario Donghyun1228 en Hugging Face bajo licencia Apache 2.0. Se trata del modelo fuente de una línea base de PAD (Predictive Auxiliary Decoding, Hansen et al., ICLR 2021) en su variante offline, entrenado sobre el benchmark LIBERO y construido a partir de la arquitectura π0.5 de openpi. El modelo está pensado como punto de partida para experimentos de adaptación de políticas VLA, no como un modelo de propósito general.
 
 La innovación concreta de esta variante es la separación de la tarea auxiliar de dinámica inversa (IDM, inverse dynamics modeling) en una cabeza independiente (`TokenPairInverseDynamicsHead`, con pérdida MSE) que opera sobre los tokens SigLIP del codificador visual de la cámara base en ambos extremos temporales, en lugar de compartir el experto de acción. Esta cabeza regresiona la media del chunk de acciones grabadas.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 LIBERO PAD source (este modelo) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace (Donghyun1228) |
-| π0.5 LIBERO PAD r2 conflict-mean source | no disponible | no disponible | no disponible | no disponible | HuggingFace (Donghyun1228) |
+| π0.5 LIBERO PAD source (este modelo) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face (Donghyun1228) |
+| π0.5 LIBERO PAD r2 conflict-mean source | no disponible | no disponible | no disponible | no disponible | Hugging Face (Donghyun1228) |
 | π0.5 base (openpi) | no disponible | no disponible | no disponible | no disponible | openpi |
 
 No se dispone de datos de rendimiento ni de especificaciones numéricas de los modelos comparables en la información proporcionada; la comparativa se limita a la disponibilidad y al diseño de la cabeza IDM.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento ni de especificaciones numéricas de los m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-pad-vision-head-source-n50k-10000-20261104
 - Repositorio de código del autor (referenciado en la model card): `Donghyun1228/vla_adaptation`
 - Modelos objetivo (referenciados en la model card): `Donghyun1228/pi05-libero-pad-vision-head-<shift>-1000-20261105`
 - Paper de PAD (Hansen et al., ICLR 2021): no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-logibot-slm es un modelo de lenguaje de juguete de 3.647.232 parámetros publicado por el usuario adolfo123456 en HuggingFace. No es un modelo de producción ni un asistente general: es el artefacto resultante de un taller de destilación de conocimiento del curso *Tópicos Avanzados en Inteligencia Artificial 2* (magíster, UAI), en el que un "profesor" genera pares pregunta-respuesta sobre un centro de distribución ficticio (Austral Retail, Pudahuel: robots AMR, muelles, baterías, pasillos) y un "estudiante" diminuto aprende a imitarlos mediante LoRA.
+logibot-slm es un modelo de lenguaje de juguete de 3.647.232 parámetros publicado por el usuario adolfo123456 en Hugging Face. No es un modelo de producción ni un asistente general: es el artefacto resultante de un taller de destilación de conocimiento del curso *Tópicos Avanzados en Inteligencia Artificial 2* (magíster, UAI), en el que un "profesor" genera pares pregunta-respuesta sobre un centro de distribución ficticio (Austral Retail, Pudahuel: robots AMR, muelles, baterías, pasillos) y un "estudiante" diminuto aprende a imitarlos mediante LoRA.
 
 La arquitectura es un transformer tipo Llama inicializado desde cero —no derivado de SmolLM2 ni de otro modelo publicado— con 4 capas, `hidden_size` 256 y un vocabulario BPE de solo 1.455 tokens. El entrenamiento se ejecutó íntegramente en CPU sobre 80 pares pregunta-respuesta, 10 épocas y 200 pasos, con una pérdida que bajó de 7,3471 a 0,0845. El resultado es un modelo que reproduce el registro y el vocabulario de un dominio ficticio muy acotado, y que falla fuera de él.
 
@@ -79,7 +79,7 @@ Advertencias sobre estas cifras: el examen tiene 12 preguntas, dos respuestas ob
 |---|---|---|---|---|---|
 | logibot-slm (este modelo) | 3,65 M | No disponible | Apache 2.0 | Pesos fusionados + base + adaptador en el Hub | 6,08 registrado / 3,17 reevaluado; 75 % / 8,3 % de aprobación |
 | logibot-slm-smollm2-colab (adaptador LoRA sobre SmolLM2-135M-Instruct) | Base de 135 M (adaptador no cuantificado en la información) | No disponible en la información | No disponible en la información | Solo adaptador en el Hub | 1,70 → 2,25; 0 % de aprobación sobre 20 preguntas |
-| SmolLM2-135M-Instruct (modelo base de la corrida anterior) | 135 M | No disponible en la información | No disponible en la información | Modelo público de HuggingFace | No evaluado directamente; sirve de referencia de tamaño |
+| SmolLM2-135M-Instruct (modelo base de la corrida anterior) | 135 M | No disponible en la información | No disponible en la información | Modelo público de Hugging Face | No evaluado directamente; sirve de referencia de tamaño |
 
 No se han identificado en la información proporcionada otros modelos de 3-4 M de parámetros comparables. Los resultados de búsqueda con el nombre "Logibot" (logibot.eu/Logibot.Train, el proyecto Streamlit con IBM Granite y el agente de lablab.ai) corresponden a productos y proyectos independientes sin relación con este repositorio, por lo que no son alternativas comparables.
 
@@ -100,7 +100,7 @@ No se han identificado en la información proporcionada otros modelos de 3-4 M d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adolfo123456/logibot-slm
+- Modelo en Hugging Face: https://huggingface.co/adolfo123456/logibot-slm
 - Adaptador de la corrida relacionada (SmolLM2-135M-Instruct, resultado negativo): https://huggingface.co/adolfo123456/logibot-slm-smollm2-colab
 - Logibot.Train (producto no relacionado, mismo nombre): https://www.logibot.eu/products/logibot-train
 - Building AI Agents with Local Small Language Models (artículo de contexto sobre modelos pequeños locales): https://machinelearningmastery.com/building-ai-agents-with-local-small-language-models/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `whisper-small-pashto-stage2-fleurs` es un modelo de reconocimiento automático de voz (ASR) fine-tuneado sobre la arquitectura Whisper small de OpenAI, especializado en el idioma pashto. Ha sido desarrollado por el usuario Adnan666 y publicado en HuggingFace con licencia Apache 2.0. Se trata de la segunda etapa de un proceso de fine-tuning: parte del checkpoint `Adnan666/whisper-small-pashto-run11-cv24only`, que a su vez es una adaptación previa del modelo base Whisper small entrenado con datos de Common Voice 24, y se afina adicionalmente sobre el dataset FLEURS.
+El modelo `whisper-small-pashto-stage2-fleurs` es un modelo de reconocimiento automático de voz (ASR) fine-tuneado sobre la arquitectura Whisper small de OpenAI, especializado en el idioma pashto. Ha sido desarrollado por el usuario Adnan666 y publicado en Hugging Face con licencia Apache 2.0. Se trata de la segunda etapa de un proceso de fine-tuning: parte del checkpoint `Adnan666/whisper-small-pashto-run11-cv24only`, que a su vez es una adaptación previa del modelo base Whisper small entrenado con datos de Common Voice 24, y se afina adicionalmente sobre el dataset FLEURS.
 
 El modelo está diseñado para resolver la tarea de transcripción automática de voz en pashto, un idioma de bajos recursos que tradicionalmente cuenta con pocos sistemas ASR disponibles. Su relevancia radica en que demuestra la viabilidad de adaptar modelos multilingües preentrenados a lenguas minoritarias mediante un proceso de fine-tuning en dos etapas. Con 241,7 millones de parámetros y una arquitectura encoder-decoder basada en transformers, ofrece un equilibrio razonable entre calidad de transcripción y requisitos computacionales, siendo ejecutable en GPUs de consumo.
 
@@ -60,7 +60,7 @@ No se han publicado resultados comparativos con otros modelos en la información
 - VRAM estimada para inferencia: Whisper small en precisión FP32 requiere aproximadamente 1,5 GB de VRAM. Con cuantización a int8, el requisito se reduce a unos 0,8 GB, y con cuantización a int4, a unos 0,5 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente para inferencia en FP32. Una NVIDIA GTX 1650, RTX 3060 o equivalente de AMD es más que suficiente. Para entrenamiento o fine-tuning adicional, se recomienda al menos 8 GB de VRAM.
 - Compatibilidad con GPU de consumo: sí, el modelo cabe sin problema en cualquier GPU de consumo actual, incluso en las gamas más bajas.
-- Opciones de despliegue: al ser un modelo Whisper estándar, puede desplegarse con las herramientas habituales del ecosistema: transformers de HuggingFace, faster-whisper, whisper.cpp (con conversión a GGUF), o mediante servidores de inferencia como vLLM o TGI.
+- Opciones de despliegue: al ser un modelo Whisper estándar, puede desplegarse con las herramientas habituales del ecosistema: transformers de Hugging Face, faster-whisper, whisper.cpp (con conversión a GGUF), o mediante servidores de inferencia como vLLM o TGI.
 - Latencia y throughput: no se han publicado datos específicos. Como referencia orientativa, Whisper small en una GPU RTX 3060 suele procesar un segmento de 30 segundos en aproximadamente 1-2 segundos con batch size 1.
 
 ## Comparativa con modelos similares
@@ -85,7 +85,7 @@ No se dispone de datos de WER para pashto de los modelos Whisper originales en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adnan666/whisper-small-pashto-stage2-fleurs
+- Modelo en Hugging Face: https://huggingface.co/Adnan666/whisper-small-pashto-stage2-fleurs
 - Modelo base (etapa 1): https://huggingface.co/Adnan666/whisper-small-pashto-run11-cv24only
 - Documentación de Whisper (OpenAI): https://github.com/openai/whisper
 - Dataset Common Voice: https://commonvoice.mozilla.org/

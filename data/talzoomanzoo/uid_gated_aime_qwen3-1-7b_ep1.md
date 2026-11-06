@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`uid_gated_aime_qwen3-1-7b_ep1` es un checkpoint de pesos completos publicado por el usuario talzoomanzoo en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de fusionar (`merge`) el modelo base `Qwen/Qwen3-1.7B` con un adaptador LoRA entrenado mediante GRPO sobre el conjunto de problemas de matemáticas AIME. El adaptador tenía rango 64 y alpha 32, y la fusión corresponde al epoch 1, en concreto al `global_step_8`.
+`uid_gated_aime_qwen3-1-7b_ep1` es un checkpoint de pesos completos publicado por el usuario talzoomanzoo en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de fusionar (`merge`) el modelo base `Qwen/Qwen3-1.7B` con un adaptador LoRA entrenado mediante GRPO sobre el conjunto de problemas de matemáticas AIME. El adaptador tenía rango 64 y alpha 32, y la fusión corresponde al epoch 1, en concreto al `global_step_8`.
 
 El interés del modelo es acotado pero claro para quien trabaja en aprendizaje por refuerzo aplicado a modelos pequeños: documenta el estado intermedio de un ciclo de GRPO a muy corto plazo sobre un modelo denso de 1,72 mil millones de parámetros, con licencia Apache-2.0 y pesos en safetensors listos para cargar con `transformers`. La nomenclatura "UID-gated" sugiere una variante de GRPO con algún mecanismo de filtrado o ponderación por identificador único de muestra, pero la model card no describe ese mecanismo.
 
@@ -88,7 +88,7 @@ Nota: los datos de las tres alternativas provienen de sus respectivas model card
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep1
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep1
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Blog oficial de la familia Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Paper de DeepSeekMath, donde se introduce GRPO: https://arxiv.org/abs/2402.03300

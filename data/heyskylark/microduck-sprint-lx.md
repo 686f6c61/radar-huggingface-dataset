@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sprint-lx es una política de control para robots cuadrúpedos de la familia microduck, publicada en HuggingFace por el usuario heyskylark bajo el pipeline de robótica. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de una política de aprendizaje por refuerzo entrenada para producir una marcha (gait) perpetua en el robot microduck, desarrollado por Pollen Robotics. La política recibe una observación de 61 dimensiones y emite 14 acciones a una frecuencia de control de 50 Hz, y está empaquetada en formato ONNX para su despliegue directo en el robot mediante el daemon `robotctl`.
+microduck-sprint-lx es una política de control para robots cuadrúpedos de la familia microduck, publicada en Hugging Face por el usuario heyskylark bajo el pipeline de robótica. No se trata de un modelo de lenguaje ni de un modelo generativo multimodal, sino de una política de aprendizaje por refuerzo entrenada para producir una marcha (gait) perpetua en el robot microduck, desarrollado por Pollen Robotics. La política recibe una observación de 61 dimensiones y emite 14 acciones a una frecuencia de control de 50 Hz, y está empaquetada en formato ONNX para su despliegue directo en el robot mediante el daemon `robotctl`.
 
 El modelo se enmarca en el ecosistema de entrenamiento `mjlab`, una infraestructura de RL basada en MuJoCo para el desarrollo de políticas robóticas. La política se entrena con 4096 entornos paralelos y hasta 3000 iteraciones, con semilla fija 1, lo que indica un flujo de trabajo reproducible a nivel de código y configuración, aunque no bit a bit en los pesos resultantes. El checkpoint publicado corresponde a la iteración 2900 del entrenamiento.
 
@@ -93,7 +93,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/heyskylark/microduck-sprint-lx
+- Hugging Face: https://huggingface.co/heyskylark/microduck-sprint-lx
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento: `git@github.com:heyskylark/microduck-challenges.git` (rama `main`, commit `789ffc516`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

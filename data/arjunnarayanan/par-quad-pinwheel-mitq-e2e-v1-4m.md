@@ -24,7 +24,7 @@ El entrenamiento combina *behaviour cloning* sobre instancias certificadas (mall
 | Espacio de acciones | Inserción de cuerdas (chords) y vértices sobre la malla, con máscara de acciones inválidas |
 | Framework | Stable-Baselines3 2.6.0, PyTorch 2.7.1, Gymnasium 1.1.1 |
 | Entorno requerido | Repositorio `par-quad`, Python 3.11 o 3.12, `GEOGEN_PATH=tools/geo2d_lite` |
-| Tamano del repositorio en HuggingFace | 0,0 GB (segun la ficha del repositorio) |
+| Tamano del repositorio en Hugging Face | 0,0 GB (segun la ficha del repositorio) |
 | Descargas / likes | 6 descargas, 0 likes |
 | Fecha de publicacion | 30 de septiembre de 2026 |
 

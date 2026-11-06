@@ -28,7 +28,7 @@ Su relevancia es metodologica: forma parte de un bucle de entrenamiento auto-mej
 | Paso de entrenamiento | 250001 |
 | Tamano del repositorio | 1,4 GB (conjunto de las cinco semillas) |
 | Tipo de observacion | basada en estado (state-based); no se menciona entrada de vision ni de lenguaje |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -85,9 +85,9 @@ No se han publicado en la informacion disponible datos comparativos con otros ag
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (IDQL, actor de difusion + critico IQL) | no disponible | no aplica | 50,87-53,99 % de exito por semilla | Apache 2.0 | publico en HuggingFace |
-| Politica de teleoperacion `sim-square-broad-c00-teleop-baseline` | no disponible | no aplica | no disponible en esta informacion | no disponible | dataset publico en HuggingFace |
-| Politica IQL de la ronda previa (`c01-auto-iql-n32-policy-rollouts`) | no disponible | no aplica | no disponible en esta informacion | no disponible | dataset publico en HuggingFace |
+| Este modelo (IDQL, actor de difusion + critico IQL) | no disponible | no aplica | 50,87-53,99 % de exito por semilla | Apache 2.0 | publico en Hugging Face |
+| Politica de teleoperacion `sim-square-broad-c00-teleop-baseline` | no disponible | no aplica | no disponible en esta informacion | no disponible | dataset publico en Hugging Face |
+| Politica IQL de la ronda previa (`c01-auto-iql-n32-policy-rollouts`) | no disponible | no aplica | no disponible en esta informacion | no disponible | dataset publico en Hugging Face |
 | Otros algoritmos de RL offline (IQL puro, TD3+BC, CQL) | no disponible | no aplica | no disponible | no aplica | no evaluados en esta informacion |
 
 ## Limitaciones y advertencias
@@ -103,10 +103,10 @@ No se han publicado en la informacion disponible datos comparativos con otros ag
 - Sin garantias de mantenimiento: el modelo tiene 0 descargas y 0 likes, y la ficha no indica soporte, versionado posterior ni plan de actualizacion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-success-bc-n32-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r01-auto-iql-success-bc-n32-idql
 - Proyecto Mulligan: https://mulligan.page
 - Evaluaciones en Policy Arena: https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de entrenamiento (teleoperacion baseline): https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-baseline
 - Dataset de entrenamiento (rollouts de politica IQL): https://huggingface.co/datasets/mulligan/sim-square-broad-c01-auto-iql-n32-policy-rollouts
 - Dataset que referencia este modelo (rollouts etiquetados por exito): https://huggingface.co/datasets/mulligan/sim-square-broad-c02-auto-iql-success-bc-n32-policy-rollouts

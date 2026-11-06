@@ -6,7 +6,7 @@ MLX-Reason-CT es un port nativo a MLX del modelo NVIDIA NV-Reason-CT, un modelo 
 
 La relevancia de este port concreto esta en la accesibilidad: el checkpoint original esta pensado para inferencia en CUDA, mientras que esta version redistribuye los pesos en FP32 (17,4 GB) para ejecutarse sobre Metal en macOS arm64, con un runtime propio denominado `mlx-reason-ct`. El autor documenta verificacion de paridad frente a la ejecucion CUDA de referencia (`real-ct-cuda-parity.json`, `standalone-verification.json`) y perfiles aritmeticos BF16 explicitos sobre Metal, manteniendo FP32 como valor por defecto.
 
-Se trata de un modelo de nicho y de uso exclusivamente investigador: acumula 34 descargas y 0 likes en HuggingFace, la model card declara explicitamente que no esta destinado a diagnostico clinico ni a decisiones terapeuticas, y su licencia de pesos es OpenMDW-1.1, con los terminos subyacentes de Qwen3.5 bajo Apache-2.0.
+Se trata de un modelo de nicho y de uso exclusivamente investigador: acumula 34 descargas y 0 likes en Hugging Face, la model card declara explicitamente que no esta destinado a diagnostico clinico ni a decisiones terapeuticas, y su licencia de pesos es OpenMDW-1.1, con los terminos subyacentes de Qwen3.5 bajo Apache-2.0.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas del resto 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/josand/MLX-Reason-CT
+- Modelo en Hugging Face: https://huggingface.co/josand/MLX-Reason-CT
 - Arbol de ficheros del repositorio: https://huggingface.co/josand/MLX-Reason-CT/tree/main
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/NV-Reason-CT
 - Model card y limitaciones del modelo original: https://huggingface.co/nvidia/NV-Reason-CT

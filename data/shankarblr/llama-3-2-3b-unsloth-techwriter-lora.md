@@ -103,7 +103,7 @@ Frente a estas alternativas generalistas, el modelo de Shankarblr no compite en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shankarblr/Llama-3.2-3B-Unsloth-TechWriter-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Shankarblr/Llama-3.2-3B-Unsloth-TechWriter-LoRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Pesos base usados en el entrenamiento: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Pasos / CFG | Edición de imagen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo (este) | 7B (generación visual) | 8 pasos, CFG=1 | Sí | `qwen-research` | HuggingFace, ModelScope, GitHub |
-| Qwen-Image-2.1 (base) | No disponible en la información | No disponible | Sí | No disponible en la información | HuggingFace (`Qwen/Qwen-Image-2.1`) |
-| FLUX.1 [schnell] | 12B (dato público, no verificado en esta búsqueda) | 1-4 pasos | Limitada (principalmente texto-a-imagen) | Apache 2.0 | HuggingFace |
-| Stable Diffusion 3.5 Large Turbo | 8B (dato público, no verificado en esta búsqueda) | 4-8 pasos | Limitada (texto-a-imagen) | Stability AI Community License | HuggingFace |
+| Qwen-Image-2.1-Turbo (este) | 7B (generación visual) | 8 pasos, CFG=1 | Sí | `qwen-research` | Hugging Face, ModelScope, GitHub |
+| Qwen-Image-2.1 (base) | No disponible en la información | No disponible | Sí | No disponible en la información | Hugging Face (`Qwen/Qwen-Image-2.1`) |
+| FLUX.1 [schnell] | 12B (dato público, no verificado en esta búsqueda) | 1-4 pasos | Limitada (principalmente texto-a-imagen) | Apache 2.0 | Hugging Face |
+| Stable Diffusion 3.5 Large Turbo | 8B (dato público, no verificado en esta búsqueda) | 4-8 pasos | Limitada (texto-a-imagen) | Stability AI Community License | Hugging Face |
 
 Nota: los datos de los modelos alternativos provienen de información pública general y no han podido contrastarse con el material proporcionado; los campos del modelo base Qwen-Image-2.1 no aparecen en la model card analizada. No se dispone de comparaciones de rendimiento medidas entre estos modelos.
 

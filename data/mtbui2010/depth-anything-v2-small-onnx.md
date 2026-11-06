@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|
-| mtbui2010/depth-anything-v2-small-ONNX (este) | 24,8M (variante Small) | ONNX | Apache-2.0 | imagen RGB dinamica, H/W multiplos de 14 | HuggingFace |
-| depth-anything/Depth-Anything-V2-Small-hf (base) | 24,8M | safetensors / PyTorch | Apache-2.0 | imagen RGB | HuggingFace |
-| Depth Anything V2 Base | no disponible en la informacion | safetensors / PyTorch | CC-BY-NC-4.0 | imagen RGB | HuggingFace |
-| Depth Anything V2 Large | no disponible en la informacion | safetensors / PyTorch | CC-BY-NC-4.0 | imagen RGB | HuggingFace |
+| mtbui2010/depth-anything-v2-small-ONNX (este) | 24,8M (variante Small) | ONNX | Apache-2.0 | imagen RGB dinamica, H/W multiplos de 14 | Hugging Face |
+| depth-anything/Depth-Anything-V2-Small-hf (base) | 24,8M | safetensors / PyTorch | Apache-2.0 | imagen RGB | Hugging Face |
+| Depth Anything V2 Base | no disponible en la informacion | safetensors / PyTorch | CC-BY-NC-4.0 | imagen RGB | Hugging Face |
+| Depth Anything V2 Large | no disponible en la informacion | safetensors / PyTorch | CC-BY-NC-4.0 | imagen RGB | Hugging Face |
 
 Nota: el autor indica explicitamente que solo publica la variante Small porque Base y Large usan licencia CC-BY-NC-4.0, que no permite uso comercial. No se han proporcionado cifras de parametros para Base y Large en la informacion disponible.
 
@@ -96,8 +96,8 @@ Nota: el autor indica explicitamente que solo publica la variante Small porque B
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mtbui2010/depth-anything-v2-small-ONNX
-- Modelo base en HuggingFace: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mtbui2010/depth-anything-v2-small-ONNX
+- Modelo base en Hugging Face: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Variante Small original (sin formato HF): https://huggingface.co/depth-anything/Depth-Anything-V2-Small
 - Repositorio oficial de Depth Anything V2 en GitHub (NeurIPS 2024): https://github.com/DepthAnything/Depth-Anything-V2
 - Implementacion ONNX alternativa de la comunidad: https://github.com/fabio-sim/Depth-Anything-ONNX

@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/gemma-2-27b-it-DiM-heretic | 27,2 B | 8.192 (16.384 con SWA) | 89/100 | Gemma | HuggingFace |
-| google/gemma-2-27b-it | 27,2 B | 8.192 (16.384 con SWA) | 100/100 | Gemma | HuggingFace (gated) |
-| Otras variantes abliterated de Gemma 2 27B | 27,2 B | 8.192 (16.384 con SWA) | No disponible | Gemma | HuggingFace (segun autor) |
-| Modelos decensurados de tamano similar (p. ej., variantes de Llama 3 70B abliterated) | ~70 B | 8.192 | No disponible | Llama | HuggingFace (segun autor) |
+| richardyoung/gemma-2-27b-it-DiM-heretic | 27,2 B | 8.192 (16.384 con SWA) | 89/100 | Gemma | Hugging Face |
+| google/gemma-2-27b-it | 27,2 B | 8.192 (16.384 con SWA) | 100/100 | Gemma | Hugging Face (gated) |
+| Otras variantes abliterated de Gemma 2 27B | 27,2 B | 8.192 (16.384 con SWA) | No disponible | Gemma | Hugging Face (segun autor) |
+| Modelos decensurados de tamano similar (p. ej., variantes de Llama 3 70B abliterated) | ~70 B | 8.192 | No disponible | Llama | Hugging Face (segun autor) |
 
 La comparativa se limita al modelo base por falta de datos publicados de benchmarks y de metricas de rechazo de otras variantes abliterated en la informacion proporcionada. No se dispone de comparaciones de rendimiento estandar (MMLU, HumanEval) para ninguna de las variantes.
 
@@ -84,13 +84,13 @@ La comparativa se limita al modelo base por falta de datos publicados de benchma
 - Riesgo de alucinacion: heredado del modelo base, sin que se haya documentado una evaluacion especifica para esta variante.
 - Sesgos conocidos: no documentados especificamente para esta variante; los del modelo base Gemma 2 (principalmente orientado a ingles y entrenado con datos web) se mantienen y pueden amplificarse al eliminar el filtro de rechazo.
 - Limitaciones de idioma: el modelo base esta orientado principalmente al ingles; no se documenta soporte multilingue en la informacion proporcionada.
-- Restricciones de licencia: la licencia Gemma de Google impone terminos de uso, incluyendo restricciones de uso comercial y obligaciones de atribucion; el acceso esta sujeto a gated access en HuggingFace. La modificacion de pesos no exime del cumplimiento de la licencia original.
+- Restricciones de licencia: la licencia Gemma de Google impone terminos de uso, incluyendo restricciones de uso comercial y obligaciones de atribucion; el acceso esta sujeto a gated access en Hugging Face. La modificacion de pesos no exime del cumplimiento de la licencia original.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado en 2026-11-05; no hay evidencia de validacion por parte de la comunidad.
 - La fecha de creacion del repositorio (2026) es posterior a la publicacion de Gemma 2 (2024), lo que sugiere una modificacion reciente sin historial de uso documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/gemma-2-27b-it-DiM-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/gemma-2-27b-it-DiM-heretic
 - Modelo base: https://huggingface.co/google/gemma-2-27b-it
 - Heretic (herramienta de abliteration): https://heretic-project.org
 - Directorio de reproduccion: `reproduce/README.md` dentro del repositorio del modelo

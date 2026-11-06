@@ -74,9 +74,9 @@ En los benchmarks de razonamiento matematico en ingles, Rosetta-7B-Think se encu
 
 | Modelo | Params | Contexto | Foco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rosetta-7B-Think | 7.8B | 65.536 | Razonamiento bilingue ko/en | Apache-2.0 | HuggingFace |
-| Qwen3-8B | 8B | No disponible | Razonamiento multilingue | No disponible | HuggingFace |
-| DeepSeek-R1-0528 | 8B | No disponible | Razonamiento en ingles | No disponible | HuggingFace |
+| Rosetta-7B-Think | 7.8B | 65.536 | Razonamiento bilingue ko/en | Apache-2.0 | Hugging Face |
+| Qwen3-8B | 8B | No disponible | Razonamiento multilingue | No disponible | Hugging Face |
+| DeepSeek-R1-0528 | 8B | No disponible | Razonamiento en ingles | No disponible | Hugging Face |
 | HyperCLOVAX-Think | 14B | No disponible | Razonamiento coreano | No disponible | No disponible |
 
 La comparativa se basa en los datos de benchmarks publicados por el autor. La informacion sobre contexto, licencia y disponibilidad de los modelos competidores no se incluye en los datos proporcionados, por lo que se indica como no disponible.
@@ -93,7 +93,7 @@ La comparativa se basa en los datos de benchmarks publicados por el autor. La in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think
+- Modelo en Hugging Face: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Think
 - Coleccion Rosetta: https://huggingface.co/collections/PoSTMEDIA/rosetta-6a9db30fd1b4585b0c1845e9
 - Repositorio vLLM de PoSTMEDIA: https://github.com/PoSTMEDIA-AI/vllm
 - Modelo base Rosetta-7B-Base: https://huggingface.co/PoSTMEDIA/Rosetta-7B-Base

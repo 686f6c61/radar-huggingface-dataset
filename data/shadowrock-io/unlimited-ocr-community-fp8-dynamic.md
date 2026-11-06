@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic
+- Repositorio Hugging Face: https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-FP8-Dynamic
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR
 - Variante NVFP4: https://huggingface.co/shadowrock-io/Unlimited-OCR-Community-NVFP4
 - Variante MLX (sahilchachra): https://huggingface.co/sahilchachra/unlimited-ocr-mxfp8-mlx

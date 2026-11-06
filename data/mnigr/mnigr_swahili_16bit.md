@@ -60,5 +60,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - mnigr/mnigr_swahili_16bit](https://huggingface.co/mnigr/mnigr_swahili_16bit)
+- [Hugging Face - mnigr/mnigr_swahili_16bit](https://huggingface.co/mnigr/mnigr_swahili_16bit)
 - [Modelo base: unsloth/orpheus-3b-0.1-ft](https://huggingface.co/unsloth/orpheus-3b-0.1-ft) (enlace inferido, no verificado en la documentación)

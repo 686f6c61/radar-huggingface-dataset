@@ -96,12 +96,12 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria (Mo
 - Dependencia de infraestructura: el rendimiento depende de un SSD rapido y del motor ds4. No hay soporte documentado para otros runners habituales.
 - Idiomas: solo italiano declarado. No hay soporte documentado de castellano, catalan, gallego o euskera.
 - Licencia MIT: permite uso comercial y modificacion, pero se hereda del modelo base y conviene verificar las condiciones del repositorio original de DeepSeek por si existieran terminos adicionales.
-- Validacion de la comunidad practicamente nula en el momento de la consulta: 0 descargas y 0 likes en el repositorio de HuggingFace.
+- Validacion de la comunidad practicamente nula en el momento de la consulta: 0 descargas y 0 likes en el repositorio de Hugging Face.
 - Uso en produccion: al ser una cuantizacion de 2 bits, conviene validar el comportamiento en el dominio propio con datos representativos antes de desplegarlo en un flujo real.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/buddalaw/DeepSeek-V4.1-Flash-buddalaw-K128-Q2-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/buddalaw/DeepSeek-V4.1-Flash-buddalaw-K128-Q2-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Version K160 del mismo autor: https://huggingface.co/buddalaw/DeepSeek-V4.1-Flash-buddalaw-K160-Q2-GGUF
 - Motor ds4: https://github.com/antirez/ds4

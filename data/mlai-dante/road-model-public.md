@@ -101,14 +101,14 @@ No hay datos comparativos publicados en la informacion disponible para esta tare
 - Las imagenes y los CSV originales de la competicion no se han subido al repositorio, por lo que no es posible reproducir la validacion sin acceso a los datos del reto.
 - No se documentan sesgos, composicion del dataset, numero de tokens de entrenamiento ni proceso de curacion de datos, lo que limita la evaluacion de riesgos.
 - No se declaran idiomas soportados ni capacidades multilingues para este adaptador.
-- Fechas de creacion y actualizacion inusuales (2026) tal como figuran en los metadatos de HuggingFace; conviene verificarlas antes de citarlas.
+- Fechas de creacion y actualizacion inusuales (2026) tal como figuran en los metadatos de Hugging Face; conviene verificarlas antes de citarlas.
 - Advertencia de licencia: el adaptador se publica bajo Apache 2.0, pero el uso comercial del conjunto adaptador mas modelo base depende tambien de las condiciones de la licencia de Qwen3-VL-8B-Instruct, que debe comprobarse por separado.
 - El tamano del repositorio (54,7 GB) es muy superior al de un adaptador LoRA tipico, por lo que conviene revisar que artefactos se descargan antes de almacenarlos.
 - Los resultados de busqueda web asociados a esta consulta no contienen informacion relevante sobre el modelo (los enlaces recuperados corresponden a secadores de manos Dyson), por lo que no se ha podido contrastar la ficha con fuentes externas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlai-dante/road-model-public
+- Modelo en Hugging Face: https://huggingface.co/mlai-dante/road-model-public
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Competicion Zindi R.O.A.D. Barbados Historic Handwriting Challenge: no disponible el enlace en la informacion proporcionada
 - Paper del modelo base Qwen3-VL: no disponible en la informacion proporcionada

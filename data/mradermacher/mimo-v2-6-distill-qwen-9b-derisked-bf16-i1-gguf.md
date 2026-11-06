@@ -23,7 +23,7 @@ La relevancia practica de esta ficha es que permite ejecutar un modelo agentico 
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible indica que el modelo original es MiMo-V2.6-Distill-Qwen-9B, desarrollado por Xiaomi MiMo mediante ajuste supervisado (SFT) de Qwen3.5-9B sobre datos generados por MiMo. Se trata, por tanto, de un transformer decoder-only de aproximadamente 9B parametros con capacidad multimodal (vision), etiquetado en HuggingFace con los tags qwen3_5, mimo_v2, multimodal y agentic. El checkpoint liberado es un SFT, descrito por el autor original como punto de partida para investigacion abierta en refuerzo agentico, lo que implica que no incluye una fase posterior de RL/DPO en esta version.
+La informacion disponible indica que el modelo original es MiMo-V2.6-Distill-Qwen-9B, desarrollado por Xiaomi MiMo mediante ajuste supervisado (SFT) de Qwen3.5-9B sobre datos generados por MiMo. Se trata, por tanto, de un transformer decoder-only de aproximadamente 9B parametros con capacidad multimodal (vision), etiquetado en Hugging Face con los tags qwen3_5, mimo_v2, multimodal y agentic. El checkpoint liberado es un SFT, descrito por el autor original como punto de partida para investigacion abierta en refuerzo agentico, lo que implica que no incluye una fase posterior de RL/DPO en esta version.
 
 Sobre esta base, Blackfrost-AI publica una variante "Derisked-BF16" que incorpora modificacion direccional de pesos (tag directional-weight-modification, bajo blackfrost-research). No se detalla en la informacion disponible la metodologia exacta, el conjunto de datos de la intervencion ni las metricas de evaluacion asociadas. mradermacher aplica despues cuantizacion con imatrix (i1), que usa estadisticas de calibracion para mejorar la calidad de las cuantizaciones de baja precision. El repositorio no incluye ficha tecnica propia del modelo original: se limita a la lista de cuantizaciones y notas de uso de GGUF.
 
@@ -100,9 +100,9 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion i1): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16-i1-GGUF
-- HuggingFace (cuantizaciones estaticas, incluye mmproj): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16-GGUF
-- HuggingFace (cuantizacion GGUF sin "Derisked"): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-GGUF
+- Hugging Face (esta cuantizacion i1): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16-i1-GGUF
+- Hugging Face (cuantizaciones estaticas, incluye mmproj): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16-GGUF
+- Hugging Face (cuantizacion GGUF sin "Derisked"): https://huggingface.co/mradermacher/MiMo-V2.6-Distill-Qwen-9B-GGUF
 - Modelo base en BF16: https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16
 - Modelo original de Xiaomi MiMo en ModelScope: https://www.modelscope.cn/models/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#MiMo-V2.6-Distill-Qwen-9B-Derisked-BF16-i1-GGUF

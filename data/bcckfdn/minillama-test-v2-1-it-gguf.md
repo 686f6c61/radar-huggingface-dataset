@@ -73,7 +73,7 @@ Los datos de la columna de este modelo proceden del repositorio y de su model ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bcckfdn/minillama-test-v2.1-it-GGUF | ~53 M (safetensors) | no disponible | Apache-2.0 | GGUF en HuggingFace, 0 descargas | Turco e ingles; sin benchmarks publicados |
+| bcckfdn/minillama-test-v2.1-it-GGUF | ~53 M (safetensors) | no disponible | Apache-2.0 | GGUF en Hugging Face, 0 descargas | Turco e ingles; sin benchmarks publicados |
 | HuggingFaceTB/SmolLM2-135M-Instruct | 135 M | 8.192 tokens (segun su model card) | Apache-2.0 | safetensors y GGUF, ampliamente usado | Ingles principalmente; con benchmarks publicados |
 | Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens (segun su model card) | Apache-2.0 | safetensors, GGUF y multiples plataformas | Multilingue amplio; con benchmarks publicados |
 | TinyLlama-1.1B-Chat | ~1,1 B | 2.048 tokens (segun su model card) | Apache-2.0 | safetensors y GGUF | Ingles; calidad claramente superior por tamano |
@@ -93,7 +93,7 @@ Los datos de la columna de este modelo proceden del repositorio y de su model ca
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bcckfdn/minillama-test-v2.1-it-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bcckfdn/minillama-test-v2.1-it-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/minillama-test-v2.1-it
 - Perfil del autor: https://huggingface.co/bcckfdn
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-3-Embed-1B-BF16 es un modelo de embeddings de texto denso desarrollado por NVIDIA, orientado a tareas de recuperación de informacion (retrieval) y similitud semantica multilingue. Se construyo a partir de Ministral-3-3B-Instruct-2512 mediante dos rondas iterativas de poda estructurada (structured pruning) y destilacion, hasta reducirlo a aproximadamente 1,14 mil millones de parametros. Genera un unico vector denso de 2048 dimensiones por cada texto de entrada, con una longitud maxima de secuencia de 32.768 tokens. La ficha de HuggingFace analizada (everymemory/Nemotron-3-Embed-1B-BF16) es una reproduccion de terceros del modelo oficial de NVIDIA, con cero descargas y cero likes en el momento de la consulta.
+Nemotron-3-Embed-1B-BF16 es un modelo de embeddings de texto denso desarrollado por NVIDIA, orientado a tareas de recuperación de informacion (retrieval) y similitud semantica multilingue. Se construyo a partir de Ministral-3-3B-Instruct-2512 mediante dos rondas iterativas de poda estructurada (structured pruning) y destilacion, hasta reducirlo a aproximadamente 1,14 mil millones de parametros. Genera un unico vector denso de 2048 dimensiones por cada texto de entrada, con una longitud maxima de secuencia de 32.768 tokens. La ficha de Hugging Face analizada (everymemory/Nemotron-3-Embed-1B-BF16) es una reproduccion de terceros del modelo oficial de NVIDIA, con cero descargas y cero likes en el momento de la consulta.
 
 El modelo resuelve el problema de la recuperacion semantica en sistemas RAG (Retrieval-Augmented Generation) sobre corpus multilingues: convierte preguntas y pasajes en representaciones vectoriales comparables mediante similitud coseno, lo que permite busqueda semantica, deduplicacion, agrupamiento y memoria de agentes. NVIDIA lo posiciona como componente fundacional de sistemas RAG y de recuperacion agentica en entornos empresariales, y declara que es apto para uso comercial.
 
@@ -75,9 +75,9 @@ La informacion proporcionada solo permite comparar dentro de la propia familia N
 
 | Modelo | Parametros | Contexto | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Embed-1B-BF16 (este modelo) | ~1,14 B | 32.768 tokens | BF16 | OpenMDW 1.1 | HuggingFace (nvidia/) y NVIDIA NIM |
-| Nemotron-3-Embed-1B-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | HuggingFace (nvidia/) |
-| Nemotron-3-Embed-8B-BF16 | no disponible (etiquetado como 8B) | no disponible | BF16 | no disponible | HuggingFace (nvidia/) |
+| Nemotron-3-Embed-1B-BF16 (este modelo) | ~1,14 B | 32.768 tokens | BF16 | OpenMDW 1.1 | Hugging Face (nvidia/) y NVIDIA NIM |
+| Nemotron-3-Embed-1B-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | Hugging Face (nvidia/) |
+| Nemotron-3-Embed-8B-BF16 | no disponible (etiquetado como 8B) | no disponible | BF16 | no disponible | Hugging Face (nvidia/) |
 | Alternativas de terceros de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Diferencias internas conocidas: el 1B-BF16 es el resultado de dos rondas de poda y destilacion sobre el 8B, y la variante NVFP4 ofrece el mismo modelo en una precision de 4 bits orientada a reducir el coste de inferencia en hardware NVIDIA compatible.

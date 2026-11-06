@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene un artefacto en formato GGUF cuyo nombre sugiere una cuantización mixta (NVFP4 combinada con Q8_0) de un supuesto modelo denominado Qwen3.6-35B-A3B en su variante "it". El autor del repositorio es el usuario simhadrig y la licencia declarada es Apache 2.0. El repositorio no incluye model card: el contenido extraído se limita a la línea de licencia, sin descripción, sin instrucciones de uso, sin datos de entrenamiento ni resultados de evaluación.
+Este repositorio de Hugging Face contiene un artefacto en formato GGUF cuyo nombre sugiere una cuantización mixta (NVFP4 combinada con Q8_0) de un supuesto modelo denominado Qwen3.6-35B-A3B en su variante "it". El autor del repositorio es el usuario simhadrig y la licencia declarada es Apache 2.0. El repositorio no incluye model card: el contenido extraído se limita a la línea de licencia, sin descripción, sin instrucciones de uso, sin datos de entrenamiento ni resultados de evaluación.
 
 El dato más relevante para un evaluador es precisamente la ausencia de información verificable. El repositorio registra 0 descargas y 0 "likes", no declara idiomas soportados, no indica pipeline y no aporta ninguna referencia al modelo base, al proceso de cuantización ni a las herramientas empleadas. El nombre "Qwen3.6" no corresponde a ninguna familia de modelos que se pueda confirmar con la documentación disponible, y la fecha de creación indicada (12 de septiembre de 2026) no se puede verificar de forma independiente.
 
@@ -101,7 +101,7 @@ No disponible. La información proporcionada no permite confirmar el modelo base
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/simhadrig/Qwen3.6-35B-A3B-NVFP4-Q8_0-it.gguf
+- Repositorio de Hugging Face: https://huggingface.co/simhadrig/Qwen3.6-35B-A3B-NVFP4-Q8_0-it.gguf
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
 - Repositorio de código: no disponible.

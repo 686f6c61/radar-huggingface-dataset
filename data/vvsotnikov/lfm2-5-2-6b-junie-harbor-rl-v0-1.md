@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B-junie-harbor-rl-v0.1 (este) | 2,6B | no disponible | Agente de codigo con RL (GRPO) sobre Junie | LFM Open License v1.0 | HuggingFace, checkpoint intermedio |
-| LiquidAI/LFM2.5-2.6B (base) | 2,6B | no disponible | Modelo generalista LFM2.5 | LFM Open License v1.0 | HuggingFace, modelo final |
-| harness-hub/LFM2.5-24B-A2B-pi | 24B (MoE, A2B) | no disponible | Agente de codigo con RL sobre harness pi | no disponible | HuggingFace, referencia del autor |
-| Modelos de ~3B de proposito general (p. ej. Qwen2.5-3B, Llama-3.2-3B) | ~3B | 32K-128K segun modelo | Texto y codigo generalista | Apache 2.0 / Llama license | HuggingFace, ampliamente disponibles |
+| LFM2.5-2.6B-junie-harbor-rl-v0.1 (este) | 2,6B | no disponible | Agente de codigo con RL (GRPO) sobre Junie | LFM Open License v1.0 | Hugging Face, checkpoint intermedio |
+| LiquidAI/LFM2.5-2.6B (base) | 2,6B | no disponible | Modelo generalista LFM2.5 | LFM Open License v1.0 | Hugging Face, modelo final |
+| harness-hub/LFM2.5-24B-A2B-pi | 24B (MoE, A2B) | no disponible | Agente de codigo con RL sobre harness pi | no disponible | Hugging Face, referencia del autor |
+| Modelos de ~3B de proposito general (p. ej. Qwen2.5-3B, Llama-3.2-3B) | ~3B | 32K-128K segun modelo | Texto y codigo generalista | Apache 2.0 / Llama license | Hugging Face, ampliamente disponibles |
 
 La comparacion directa con alternativas generalistas no es del todo justa: este checkpoint esta especializado en una unica familia de tareas (analisis de datos en Harbor) y en un paso temprano de entrenamiento, por lo que su rendimiento esperado es cercano al del modelo base segun el propio autor.
 
@@ -83,7 +83,7 @@ La comparacion directa con alternativas generalistas no es del todo justa: este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.1
+- Modelo en Hugging Face: https://huggingface.co/vvsotnikov/LFM2.5-2.6B-junie-harbor-rl-v0.1
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Dataset de entrenamiento: https://huggingface.co/datasets/FineEnvs/SmolDataEnvs-harbor-train
 - Guia multi-harness RL: https://huggingface.co/spaces/FineEnvs/multi-harness-rl

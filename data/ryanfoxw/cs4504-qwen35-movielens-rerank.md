@@ -87,6 +87,6 @@ No se dispone de datos de otros rerankers LoRA comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RyanFoxW/cs4504-qwen35-movielens-rerank
+- Hugging Face: https://huggingface.co/RyanFoxW/cs4504-qwen35-movielens-rerank
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del curso (carga de adaptadores): https://github.com/RyanStarFox/CS4504Recommender

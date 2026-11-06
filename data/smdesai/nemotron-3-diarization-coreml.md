@@ -117,8 +117,8 @@ El número de parámetros totales no se publica para ninguno de los modelos list
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smdesai/Nemotron-3-Diarization-CoreML
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Nemotron-3-Diarization
+- Modelo en Hugging Face: https://huggingface.co/smdesai/Nemotron-3-Diarization-CoreML
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Versión preview del modelo base: https://huggingface.co/nvidia/Nemotron-3-Diarization-preview
 - Nota de prensa sobre el lanzamiento: https://www.unite.ai/nvidia-releases-nemotron-3-diarization-open-weight-speaker-model/
 - README del modelo base en GitHub: https://github.com/AMAImedia/Nemotron-3-Diarization-preview/blob/main/README.md

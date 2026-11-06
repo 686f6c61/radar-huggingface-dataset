@@ -6,7 +6,7 @@ El modelo `d9beuD/Qwen3.8-27B-oQ2.5-mtp` es una cuantización de un modelo de la
 
 A pesar del nombre "27B", los parámetros totales registrados en los archivos safetensors son 3.849.659.632 (aproximadamente 3,85 mil millones), lo que sugiere una posible discrepancia entre la denominación del autor y el contenido real, o que se trata de una versión cuantizada de un modelo mayor donde solo se almacenan los tensores cuantizados. El tamaño del repositorio es de 12,7 GB, coherente con una cuantización 2-bit de un modelo de varios miles de millones de parámetros.
 
-El modelo no presenta licencia, idiomas ni pipeline declarados en su ficha de HuggingFace, y cuenta con cero descargas y cero me gusta, lo que indica que es una publicación reciente o experimental sin validación comunitaria. Su relevancia radica en ser un ejemplo de cuantización extrema (2 bits) aplicada a la familia Qwen3, con posibles implicaciones en la eficiencia de inferencia en hardware Apple.
+El modelo no presenta licencia, idiomas ni pipeline declarados en su ficha de Hugging Face, y cuenta con cero descargas y cero me gusta, lo que indica que es una publicación reciente o experimental sin validación comunitaria. Su relevancia radica en ser un ejemplo de cuantización extrema (2 bits) aplicada a la familia Qwen3, con posibles implicaciones en la eficiencia de inferencia en hardware Apple.
 
 ## Especificaciones tecnicas
 
@@ -69,5 +69,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2.5-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-27B-oQ2.5-mtp
 - Repositorio oMLX (herramienta de cuantización): https://github.com/jundot/omlx

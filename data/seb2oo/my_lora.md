@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`seb2oo/my_lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `seb2oo`, entrenado mediante SFT sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Se distribuye con la librería PEFT (versión 0.20.0 según la model card) y formato safetensors, por lo que no es un modelo autónomo: requiere cargar el modelo base de 8.000 millones de parámetros y aplicar el adaptador encima para poder generar texto.
+`seb2oo/my_lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `seb2oo`, entrenado mediante SFT sobre el modelo base `meta-llama/Llama-3.1-8B-Instruct`. Se distribuye con la librería PEFT (versión 0.20.0 según la model card) y formato safetensors, por lo que no es un modelo autónomo: requiere cargar el modelo base de 8.000 millones de parámetros y aplicar el adaptador encima para poder generar texto.
 
-La relevancia de esta ficha es limitada y conviene ser explícito al respecto: el repositorio no documenta nada. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, no se declara licencia, no se declaran idiomas, no hay datos de entrenamiento, hiperparámetros, dataset ni evaluación. El repositorio registra 0 descargas y 0 likes en la fecha de consulta, y su tamaño reportado es de 0.0 GB, lo que sugiere que los pesos del adaptador podrían no estar subidos o ser de tamaño despreciable.
+La relevancia de esta ficha es limitada y conviene ser explícito al respecto: el repositorio no documenta nada. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, no se declara licencia, no se declaran idiomas, no hay datos de entrenamiento, hiperparámetros, dataset ni evaluación. El repositorio registra 0 descargas y 0 likes en la fecha de consulta, y su tamaño reportado es de 0.0 GB, lo que sugiere que los pesos del adaptador podrían no estar subidos o ser de tamaño despreciable.
 
 Por tanto, esta ficha describe principalmente el contenedor técnico (adaptador PEFT sobre Llama 3.1 8B Instruct) y las capacidades heredadas del modelo base, marcando como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en producción exige auditar previamente los archivos del repositorio y asumir que el comportamiento del adaptador es desconocido.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha describe principalmente el contenedor técnico (adaptador 
 | Licencia | No disponible en el repositorio. El modelo base se distribuye bajo Llama 3.1 Community License |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Libreria | peft 0.20.0 (con transformers y trl segun los tags) |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-15 (fecha reportada por la plataforma; posterior a la fecha de consulta habitual, lo que conviene verificar) |
 
@@ -46,7 +46,7 @@ Tampoco hay informacion sobre el dataset de entrenamiento: ni su composicion, ni
 
 Dado que el autor no documenta la finalidad del adaptador, los casos siguientes son escenarios genericos de uso de un adaptador LoRA sobre Llama 3.1 8B Instruct, sujetos a validacion previa:
 
-- Prototipado rapido de ajustes de dominio: cargar el adaptador sobre el modelo base en un cuaderno de HuggingFace con `PeftModel.from_pretrained` para inspeccionar cualitativamente que comportamientos ha aprendido antes de invertir en un entrenamiento propio.
+- Prototipado rapido de ajustes de dominio: cargar el adaptador sobre el modelo base en un cuaderno de Hugging Face con `PeftModel.from_pretrained` para inspeccionar cualitativamente que comportamientos ha aprendido antes de invertir en un entrenamiento propio.
 - Experimentacion academica con PEFT: usar el repositorio como punto de partida para comparar tecnicas de ajuste eficiente (LoRA frente a QLoRA o adaptadores de mas rango) sobre una misma base de 8B.
 - Ajuste de estilo de respuesta: si el adaptador se entreno para modificar el tono o el formato de salida, encaja en tareas de reescritura, resumen o normalizacion de textos, siempre que se valide con un conjunto de prueba propio.
 - Clasificacion y extraccion de informacion: con un prompt adecuado, un adaptador sobre Llama 3.1 8B puede emplearse en tareas de etiquetado, extraccion de entidades o enrutado de consultas, evaluando la precision contra un conjunto anotado.
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| seb2oo/my_lora (este repositorio) | Adaptador LoRA sobre 8B | No especificado (base: 128.000 tokens) | No disponible | HuggingFace, 0 descargas | Sin model card, sin evaluacion, repo de 0.0 GB |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Base de este adaptador; documentacion completa y evaluaciones publicas |
-| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar con licencia permisiva para uso comercial |
-| Qwen2.5-7B-Instruct | 7.600 millones | 128.000 tokens | Apache 2.0 (segun variante) | HuggingFace | Alternativa de tamano similar con soporte multilingue amplio |
+| seb2oo/my_lora (este repositorio) | Adaptador LoRA sobre 8B | No especificado (base: 128.000 tokens) | No disponible | Hugging Face, 0 descargas | Sin model card, sin evaluacion, repo de 0.0 GB |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Base de este adaptador; documentacion completa y evaluaciones publicas |
+| Mistral-7B-Instruct-v0.3 | 7.250 millones | 32.000 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar con licencia permisiva para uso comercial |
+| Qwen2.5-7B-Instruct | 7.600 millones | 128.000 tokens | Apache 2.0 (segun variante) | Hugging Face | Alternativa de tamano similar con soporte multilingue amplio |
 
 La comparativa es estructural, no de rendimiento: no existen datos de evaluacion de este adaptador que permitan situarlo frente a alternativas. La principal desventaja frente a cualquiera de ellas es la falta de licencia declarada y de documentacion.
 
@@ -94,7 +94,7 @@ La comparativa es estructural, no de rendimiento: no existen datos de evaluacion
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/seb2oo/my_lora
+- Repositorio Hugging Face del modelo: https://huggingface.co/seb2oo/my_lora
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de LoRA (referenciado en los tags, arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

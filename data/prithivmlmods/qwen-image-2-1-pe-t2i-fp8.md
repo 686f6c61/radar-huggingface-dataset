@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| prithivMLmods/Qwen-Image-2.1-PE-T2I-FP8 | 9,4 mil millones | no especificada (ejemplo de servicio a 32.768 tokens) | FP8_DYNAMIC en capas Linear | qwen-research | safetensors / compressed-tensors | HuggingFace, 0 descargas, 1 like |
-| Qwen/Qwen-Image-2.1-PE-T2I (modelo base) | mismo modelo base, en BF16 | no disponible | sin cuantizar (BF16) | qwen-research | safetensors | HuggingFace (modelo original de Qwen) |
+| prithivMLmods/Qwen-Image-2.1-PE-T2I-FP8 | 9,4 mil millones | no especificada (ejemplo de servicio a 32.768 tokens) | FP8_DYNAMIC en capas Linear | qwen-research | safetensors / compressed-tensors | Hugging Face, 0 descargas, 1 like |
+| Qwen/Qwen-Image-2.1-PE-T2I (modelo base) | mismo modelo base, en BF16 | no disponible | sin cuantizar (BF16) | qwen-research | safetensors | Hugging Face (modelo original de Qwen) |
 | Otros reescritores de prompts de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion relevante es contra el modelo base en BF16: esta compilacion FP8 reduce la memoria de pesos y mejora el throughput en vLLM, a cambio de pequeñas diferencias numericas que pueden alterar ligeramente el prompt reescrito. No se dispone de datos de benchmarks que permitan comparar la calidad frente a alternativas de otros autores.
@@ -90,7 +90,7 @@ La comparacion relevante es contra el modelo base en BF16: esta compilacion FP8 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-FP8
+- Modelo en Hugging Face: https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I/blob/main/LICENSE
 - Modelo de generacion de imagenes asociado: https://huggingface.co/Qwen/Qwen-Image-2.1

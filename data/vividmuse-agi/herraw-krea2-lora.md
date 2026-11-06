@@ -78,7 +78,7 @@ Se recomienda evaluar cada LoRA en el flujo de trabajo propio para determinar cu
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/VividMuse-AGI/HerRAW-krea2-lora)
-- [Colección de LoRAs de Krea 2 en HuggingFace](https://huggingface.co/collections/krea/krea-2-loras)
+- [Página del modelo en Hugging Face](https://huggingface.co/VividMuse-AGI/HerRAW-krea2-lora)
+- [Colección de LoRAs de Krea 2 en Hugging Face](https://huggingface.co/collections/krea/krea-2-loras)
 - [Guía de entrenamiento de LoRAs para Krea 2 con 12 GB VRAM](https://note.com/sepiablue/n/nbc355cc7e114?hl=en)
 - [Artículo sobre LoRAs de Krea 2 para generación estilizada](https://www.stablediffusiontutorials.com/2026/06/krea2-lora-models.html)

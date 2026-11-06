@@ -24,7 +24,7 @@ Su relevancia es doble: por un lado, demuestra que un modelo de difusión de 12 
 | Escala de guiado (CFG) | 0 (model card); 1 en la descripción de terceros |
 | Resolución de generación | No disponible |
 | Tamaño del repositorio | 9,7 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 
 ## Arquitectura y entrenamiento
 

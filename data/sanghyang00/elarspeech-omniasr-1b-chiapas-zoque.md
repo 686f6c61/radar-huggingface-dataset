@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-chiapas-zoque es un modelo de reconocimiento automático del habla (ASR) especializado en la variante de zoque de Chiapas, una lengua indígena de México sin código ISO 639-3 asignado según la propia model card. Lo publica el usuario Sanghyang00 en HuggingFace como un ajuste fino (finetune) del checkpoint base aadel4/omniASR-CTC-1B-v2, un modelo de la familia OmniASR/ELARSpeech orientado a lenguas de bajos recursos. El problema que aborda es la ausencia de sistemas ASR funcionales para lenguas minoritarias con pocos hablantes y escasez de corpus transcritos.
+ELARSpeech-OmniASR-1B-chiapas-zoque es un modelo de reconocimiento automático del habla (ASR) especializado en la variante de zoque de Chiapas, una lengua indígena de México sin código ISO 639-3 asignado según la propia model card. Lo publica el usuario Sanghyang00 en Hugging Face como un ajuste fino (finetune) del checkpoint base aadel4/omniASR-CTC-1B-v2, un modelo de la familia OmniASR/ELARSpeech orientado a lenguas de bajos recursos. El problema que aborda es la ausencia de sistemas ASR funcionales para lenguas minoritarias con pocos hablantes y escasez de corpus transcritos.
 
 Técnicamente es un modelo de tipo Wav2Vec2ForCTC, es decir, una arquitectura transformer convolucional orientada a clasificación temporal (CTC) sobre representaciones de audio sin decodificador autorregresivo. El recuento real de parámetros almacenados en safetensors es de 975.677.617, lo que el autor etiqueta comercialmente como «1B». El repositorio ocupa 3,9 GB y se distribuye en formato safetensors compatible con la librería transformers.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-1B-chiapas-zoque | 975.677.617 | No disponible | Zoque de Chiapas | no disponible | HuggingFace (0 descargas) |
-| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B (segun nombre) | No disponible | No disponible | No disponible | HuggingFace |
-| Otros ASR multilingues de gran escala (p. ej. Whisper) | No verificado en la informacion disponible | No disponible | Multiples | No disponible | HuggingFace |
+| ELARSpeech-OmniASR-1B-chiapas-zoque | 975.677.617 | No disponible | Zoque de Chiapas | no disponible | Hugging Face (0 descargas) |
+| aadel4/omniASR-CTC-1B-v2 (modelo base) | ~1B (segun nombre) | No disponible | No disponible | No disponible | Hugging Face |
+| Otros ASR multilingues de gran escala (p. ej. Whisper) | No verificado en la informacion disponible | No disponible | Multiples | No disponible | Hugging Face |
 
 Nota: los datos de los modelos comparativos no proceden de la informacion proporcionada en esta ficha, por lo que se indica «no disponible» en las celdas no verificadas.
 
@@ -86,6 +86,6 @@ Nota: los datos de los modelos comparativos no proceden de la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-chiapas-zoque
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-chiapas-zoque
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios o demos del proyecto ELARSpeech.

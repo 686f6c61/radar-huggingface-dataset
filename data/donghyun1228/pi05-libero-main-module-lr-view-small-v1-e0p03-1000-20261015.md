@@ -71,7 +71,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi05-libero-main-module-lr-view-small-v1 (este) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| pi05-libero-main-module-lr-view-small-v1 (este) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de la familia openpi/pi0 | no disponible | no disponible | no disponible | no disponible |
 | Otros VLA comparables (OpenVLA, Octo, smolVLA) | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No se dispone de datos verificados en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-small-v1-e0p03-1000-20261015
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-main-module-lr-view-small-v1-e0p03-1000-20261015
 - Repositorio openpi (ecosistema referenciado por la libreria declarada): https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO (referenciado por las etiquetas): https://github.com/Lifelong-Robot-Learning/LIBERO
 

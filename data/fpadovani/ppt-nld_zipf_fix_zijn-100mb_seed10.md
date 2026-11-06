@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10 | 86.708.736 | No disponible | Neerlandes (segun modelo base) | No disponible | HuggingFace, 0 descargas |
-| goldfish-models/nld_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | Neerlandes (`nld_latn`) | No disponible | HuggingFace |
-| Modelos Goldfish de otros idiomas con 100 MB | Orden de decenas de millones | No disponible | Un idioma por checkpoint | No disponible | HuggingFace |
-| GPT-2 small (referencia de la misma familia arquitectonica) | 124 millones | 1.024 tokens | Principalmente ingles | MIT (openai-community/gpt2) | HuggingFace |
+| fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10 | 86.708.736 | No disponible | Neerlandes (segun modelo base) | No disponible | Hugging Face, 0 descargas |
+| goldfish-models/nld_latn_100mb (modelo base) | No disponible en la informacion proporcionada | No disponible | Neerlandes (`nld_latn`) | No disponible | Hugging Face |
+| Modelos Goldfish de otros idiomas con 100 MB | Orden de decenas de millones | No disponible | Un idioma por checkpoint | No disponible | Hugging Face |
+| GPT-2 small (referencia de la misma familia arquitectonica) | 124 millones | 1.024 tokens | Principalmente ingles | MIT (openai-community/gpt2) | Hugging Face |
 
 La comparacion cuantitativa con alternativas neerlandesas especificas (por ejemplo, modelos GPT-2 pequenos entrenados en neerlandes de otros autores) no puede completarse con la informacion disponible: no hay datos de rendimiento publicados para este checkpoint ni para su modelo base en la documentacion consultada.
 
@@ -78,11 +78,11 @@ La comparacion cuantitativa con alternativas neerlandesas especificas (por ejemp
 - Licencia indeterminada: la model card incluye un campo de licencia sin contenido valido (`licence: license`), lo que impide conocer las condiciones de uso comercial. No debe utilizarse en produccion ni en productos comerciales sin aclarar antes la licencia con el autor.
 - Confusion entre fine-tuning de investigacion y modelo de producto: el nombre del repositorio indica una variante experimental con semilla fija (`seed10`) dentro de una linea de experimentos; no es un modelo mantenido ni versionado para produccion.
 - Longitud de contexto no confirmada: cualquier uso con entradas largas debe validarse empíricamente, ya que el autor no declara la ventana de contexto.
-- Datos de adopcion nulos: cero descargas y cero "likes" en HuggingFace, sin senales de validacion por parte de la comunidad.
+- Datos de adopcion nulos: cero descargas y cero "likes" en Hugging Face, sin senales de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_zipf_fix_zijn-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/5hrn7ck0
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TabPFN-3.5 es un modelo fundacional basado en transformer que resuelve problemas de predicción sobre datos tabulares mediante aprendizaje en contexto (in-context learning) en un único pase hacia delante, sin necesidad de entrenamiento específico por tarea. Lo desarrolla Prior Labs y se distribuye a través de HuggingFace con el identificador `wangtanran/tabpfn_3_5`, un espejo del repositorio oficial `Prior-Labs/tabpfn_3_5`. Un mismo checkpoint sirve tanto para clasificación como para regresión, lo que simplifica su integración en pipelines de ciencia de datos.
+TabPFN-3.5 es un modelo fundacional basado en transformer que resuelve problemas de predicción sobre datos tabulares mediante aprendizaje en contexto (in-context learning) en un único pase hacia delante, sin necesidad de entrenamiento específico por tarea. Lo desarrolla Prior Labs y se distribuye a través de Hugging Face con el identificador `wangtanran/tabpfn_3_5`, un espejo del repositorio oficial `Prior-Labs/tabpfn_3_5`. Un mismo checkpoint sirve tanto para clasificación como para regresión, lo que simplifica su integración en pipelines de ciencia de datos.
 
 El modelo se entrena exclusivamente con tareas tabulares sintéticas, lo que elimina el riesgo de fuga de datos (dataset leakage) en la fase de preentrenamiento y lo hace aplicable a dominios muy diversos: química, biología, finanzas, legal, clima o medicina, según las etiquetas declaradas por el autor. Su relevancia actual radica en que sustituye el ajuste de hiperparámetros y el entrenamiento por tarea por una inferencia directa sobre el conjunto de entrenamiento proporcionado en el contexto.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TabPFN-3.5 | Transformer tabular con in-context learning | no disponible | límite de 20.000 características | tabpfn-3-5-license-v1.0 (no comercial) | HuggingFace (gated) |
-| TabPFN-2 | Transformer tabular con in-context learning | no disponible | no disponible | no disponible | HuggingFace |
+| TabPFN-3.5 | Transformer tabular con in-context learning | no disponible | límite de 20.000 características | tabpfn-3-5-license-v1.0 (no comercial) | Hugging Face (gated) |
+| TabPFN-2 | Transformer tabular con in-context learning | no disponible | no disponible | no disponible | Hugging Face |
 | XGBoost / LightGBM | Gradient boosting | no aplica | no aplica | permisiva (Apache/MIT) | amplia |
 | AutoGluon-Tabular | Ensemble automático | no aplica | no aplica | Apache 2.0 | amplia |
 
@@ -86,8 +86,8 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/wangtanran/tabpfn_3_5
-- HuggingFace (oficial): https://huggingface.co/Prior-Labs/tabpfn_3_5
+- Hugging Face (espejo): https://huggingface.co/wangtanran/tabpfn_3_5
+- Hugging Face (oficial): https://huggingface.co/Prior-Labs/tabpfn_3_5
 - Checkpoint por defecto: https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/tabpfn-v3.5-20260909.safetensors
 - Checkpoint Fast: https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/tabpfn-v3.5-fast-20260909.safetensors
 - Checkpoint multiclase: https://huggingface.co/Prior-Labs/tabpfn_3_5/blob/main/tabpfn-v3.5-20260909_multiclass.safetensors

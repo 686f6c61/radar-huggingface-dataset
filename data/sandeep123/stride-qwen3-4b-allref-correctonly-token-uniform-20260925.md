@@ -98,7 +98,7 @@ La comparacion cuantitativa de rendimiento entre estas variantes no esta disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-allref-correctonly-token-uniform-20260925
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-allref-correctonly-token-uniform-20260925
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Variante STRIDE estabilizada (single step): https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-single_step-20260916
 - Variante STRIDE GRPO 2048: https://huggingface.co/sandeep123/stride-qwen3-4b-2048-grpo-20260915

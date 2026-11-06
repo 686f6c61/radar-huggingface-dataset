@@ -23,7 +23,7 @@ El modelo se ha entrenado desde cero sobre un corpus multimodal de 30 billones d
 
 GLM-5.3-Flash introduce una arquitectura híbrida que combina atención sparse y atención lineal, lo que reduce drásticamente el coste de servir contextos largos sin sacrificar la precisión en tareas que requieren memoria a largo plazo. Además, emplea Manifold-Constrained Hyper-Connections (mHC), una técnica que mejora la eficiencia de escalado al restringir las conexiones hiperdimensionales a un manifold de menor dimensión.
 
-El modelo parte de un base model entrenado desde cero con un corpus multimodal de 30 billones de tokens, que incluye texto e imágenes. No se especifica si se aplicaron técnicas de RLHF o DPO en el post-entrenamiento, aunque la presencia de un parámetro `reasoning_effort` sugiere un entrenamiento orientado a razonamiento explícito. El pipeline de HuggingFace es `image-text-to-text`, confirmando su naturaleza multimodal nativa.
+El modelo parte de un base model entrenado desde cero con un corpus multimodal de 30 billones de tokens, que incluye texto e imágenes. No se especifica si se aplicaron técnicas de RLHF o DPO en el post-entrenamiento, aunque la presencia de un parámetro `reasoning_effort` sugiere un entrenamiento orientado a razonamiento explícito. El pipeline de Hugging Face es `image-text-to-text`, confirmando su naturaleza multimodal nativa.
 
 ## Capacidades
 
@@ -80,8 +80,8 @@ La comparación con Claude Opus 4.8 se basa en afirmaciones del autor, no en dat
 
 ## Enlaces
 
-- Repositorio de HuggingFace (espejo): https://huggingface.co/ginsongsong/GLM-5.3-Flash-PTPC
-- Repositorio oficial en HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Repositorio de Hugging Face (espejo): https://huggingface.co/ginsongsong/GLM-5.3-Flash-PTPC
+- Repositorio oficial en Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Documentación técnica de Z.ai: https://docs.z.ai/guides/vlm/glm-5.3-flash
 - Reporte técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763

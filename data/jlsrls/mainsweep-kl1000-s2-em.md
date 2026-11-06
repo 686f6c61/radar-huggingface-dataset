@@ -15,7 +15,7 @@ Este modelo es un ajuste supervisado (SFT) de `unsloth/Llama-3.2-1B-Instruct`, d
 | Tipos de cuantizacion | No especificados en la información disponible. El modelo base es compatible con GPTQ, AWQ y GGUF, pero no se ha publicado ninguna versión cuantizada de este fine-tuning. |
 | Idiomas soportados | No disponibles en la información. El modelo base Llama 3.2 soporta principalmente inglés y algunos idiomas adicionales, pero este fine-tuning no declara idiomas. |
 | Licencia | No disponible |
-| Formato de pesos | Safetensors (según los tags de HuggingFace) |
+| Formato de pesos | Safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jlsrls/mainsweep-kl1000-s2-em (este modelo) | 1.24B | 128 000 tokens | No disponible | HuggingFace |
-| unsloth/Llama-3.2-1B-Instruct (modelo base) | 1.24B | 128 000 tokens | Llama 3.2 Community License | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.5B | 32 000 tokens | Apache 2.0 | HuggingFace |
-| Gemma 2 2B Instruct | 2.6B | 8 192 tokens | Gemma Terms of Use | HuggingFace |
+| jlsrls/mainsweep-kl1000-s2-em (este modelo) | 1.24B | 128 000 tokens | No disponible | Hugging Face |
+| unsloth/Llama-3.2-1B-Instruct (modelo base) | 1.24B | 128 000 tokens | Llama 3.2 Community License | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.5B | 32 000 tokens | Apache 2.0 | Hugging Face |
+| Gemma 2 2B Instruct | 2.6B | 8 192 tokens | Gemma Terms of Use | Hugging Face |
 
 La comparación se basa en datos conocidos de los modelos base. Este fine-tuning no aporta datos de rendimiento, por lo que no se puede determinar si mejora o degrada el comportamiento respecto a sus alternativas.
 
@@ -79,7 +79,7 @@ La comparación se basa en datos conocidos de los modelos base. Este fine-tuning
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep-kl1000-s2-em
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep-kl1000-s2-em
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/te47s97o
 - Framework TRL: https://github.com/huggingface/trl

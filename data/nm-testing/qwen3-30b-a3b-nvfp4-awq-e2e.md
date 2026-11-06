@@ -4,7 +4,7 @@
 
 El modelo `nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e` es un checkpoint de la familia Qwen3 con arquitectura de mezcla de expertos (MoE), que según su nomenclatura combina 30 mil millones de parámetros totales con 3 mil millones de parámetros activos por token. El sufijo `NVFP4-AWQ` indica que ha sido sometido a un proceso de cuantización mixta (NVFP4 de NVIDIA y AWQ), orientado a reducir el uso de memoria y acelerar la inferencia en hardware compatible. El repositorio pertenece al espacio `nm-testing`, lo que sugiere que se trata de una versión experimental o de pruebas, no un lanzamiento oficial de Qwen.
 
-A pesar de que el modelo acumula 462 descargas, la ficha en HuggingFace es extremadamente parca: no se especifican licencia, idiomas soportados, pipeline ni detalles de entrenamiento. El tamaño del repositorio (542.9 GB) es desproporcionadamente grande para un modelo de 30B, lo que indica que probablemente contiene múltiples formatos de pesos o checkpoints adicionales. Dada la falta de documentación, cualquier uso en producción debe considerarse de alto riesgo y requeriría una validación exhaustiva previa.
+A pesar de que el modelo acumula 462 descargas, la ficha en Hugging Face es extremadamente parca: no se especifican licencia, idiomas soportados, pipeline ni detalles de entrenamiento. El tamaño del repositorio (542.9 GB) es desproporcionadamente grande para un modelo de 30B, lo que indica que probablemente contiene múltiples formatos de pesos o checkpoints adicionales. Dada la falta de documentación, cualquier uso en producción debe considerarse de alto riesgo y requeriría una validación exhaustiva previa.
 
 ## Especificaciones técnicas
 
@@ -27,7 +27,7 @@ Al tratarse de un repositorio de pruebas (`nm-testing`), es probable que el mode
 
 ## Capacidades
 
-- No se han documentado capacidades específicas en la ficha de HuggingFace.
+- No se han documentado capacidades específicas en la ficha de Hugging Face.
 - Por su pertenencia a la familia Qwen3, es plausible que herede capacidades de generación de texto, razonamiento, código y multilingüismo, pero esto no está confirmado para este checkpoint concreto.
 - El tag `compressed-tensors` sugiere que el modelo está preparado para ser cargado con librerías que soporten tensores comprimidos, como `compressed-tensors` de Neural Magic.
 - No se indica soporte para tool calling, agentes, visión, audio ni modos de razonamiento extendido.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-30B-A3B (original, no cuantizado) | 30.5B | 3B | no disponible | Apache 2.0 (según versión oficial) | HuggingFace oficial |
+| Qwen3-30B-A3B (original, no cuantizado) | 30.5B | 3B | no disponible | Apache 2.0 (según versión oficial) | Hugging Face oficial |
 | nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e | 30.5B | 3B | no disponible | no disponible | Repositorio de pruebas |
 | Qwen3-32B (denso, si existe) | 32B | 32B | no disponible | no disponible | no confirmado |
 
@@ -75,4 +75,4 @@ No se dispone de datos de rendimiento comparativo entre estos modelos, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/Qwen3-30B-A3B-NVFP4-AWQ-e2e

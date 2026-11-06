@@ -73,7 +73,7 @@ Mistral-Nemo-12B-Instruct es un modelo comparable en tamaño y licencia, con un 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/12B-Suite/Mtreelva-Dune-12B-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/12B-Suite/Mtreelva-Dune-12B-Q8_0-GGUF
 - Modelo base (safetensors): https://huggingface.co/12B-Suite/Mtreelva-Dune-12B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Modelo comparable (Mistral-Nemo-12B-Instruct): https://huggingface.co/nvidia/Mistral-NeMo-12B-Instruct

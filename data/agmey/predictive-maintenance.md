@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Predictive Maintenance — Pocket Perceptron es un clasificador binario tabular desarrollado por el usuario agmey y publicado en HuggingFace. El modelo se entrenó en C++ implementando el algoritmo Pocket Perceptron sobre el conjunto de datos AI4I 2020 Predictive Maintenance Dataset, y posteriormente se exportó a formato ONNX para su despliegue mediante ONNX Runtime. La tarea que resuelve es la predicción de fallo de maquinaria industrial a partir de ocho variables de sensores y tipo de máquina.
+Predictive Maintenance — Pocket Perceptron es un clasificador binario tabular desarrollado por el usuario agmey y publicado en Hugging Face. El modelo se entrenó en C++ implementando el algoritmo Pocket Perceptron sobre el conjunto de datos AI4I 2020 Predictive Maintenance Dataset, y posteriormente se exportó a formato ONNX para su despliegue mediante ONNX Runtime. La tarea que resuelve es la predicción de fallo de maquinaria industrial a partir de ocho variables de sensores y tipo de máquina.
 
 Se trata de un modelo extremadamente ligero, de tipo perceptron lineal (sin capas ocultas ni mecanismos de atención), orientado exclusivamente a clasificación tabular. No es un modelo de lenguaje: no procesa texto, no genera contenido y no dispone de ventana de contexto en el sentido habitual de los transformers. Su relevancia es fundamentalmente didáctica: el autor lo presenta explícitamente como una demostración educativa de despliegue (C++ → ONNX Runtime → API REST de Datasance), no como un sistema listo para producción.
 
@@ -87,7 +87,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agmey/predictive-maintenance | Perceptron lineal (ONNX) | Decenas de pesos | no aplica | no disponible | HuggingFace |
+| agmey/predictive-maintenance | Perceptron lineal (ONNX) | Decenas de pesos | no aplica | no disponible | Hugging Face |
 | Regresión logística (scikit-learn) | Lineal | Similar | no aplica | BSD | Amplia |
 | XGBoost / LightGBM | Árboles potenciados | Variable | no aplica | Apache 2.0 / MIT | Amplia |
 | Random Forest (scikit-learn) | Ensamble de árboles | Variable | no aplica | BSD | Amplia |
@@ -109,7 +109,7 @@ La comparación de rendimiento con estas alternativas no está disponible en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agmey/predictive-maintenance
+- Modelo en Hugging Face: https://huggingface.co/agmey/predictive-maintenance
 - Dataset AI4I 2020 Predictive Maintenance (referenciado por el autor): no se proporciona enlace directo en la información disponible
 - ONNX Runtime: no se proporciona enlace en la información disponible
 - Motor de inferencia Datasance: no se proporciona enlace en la información disponible

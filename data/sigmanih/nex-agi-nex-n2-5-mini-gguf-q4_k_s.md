@@ -18,7 +18,7 @@ Su interes practico es permitir ejecutar un modelo de mas de 34.000 millones de 
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | Q4_K_S (unica cuantizacion publicada en este repositorio) |
 | Idiomas soportados | Ingles (en) e italiano (it) |
-| Licencia | "other" en los metadatos de HuggingFace; la model card muestra una insignia Apache-2.0, sin aclarar la contradiccion |
+| Licencia | "other" en los metadatos de Hugging Face; la model card muestra una insignia Apache-2.0, sin aclarar la contradiccion |
 | Formato de pesos | GGUF (llama.cpp) |
 | Capas del transformer | 40 |
 | Dimension oculta | 2.048 |
@@ -124,7 +124,7 @@ Alternativas de la misma categoria (MoE de ~30 B con cuantizacion GGUF): no disp
 
 ## Limitaciones y advertencias
 
-- La licencia esta declarada como "other" en los metadatos de HuggingFace, mientras que la model card muestra una insignia Apache-2.0. Esta contradiccion no se resuelve en la documentacion, por lo que el uso comercial no puede darse por seguro sin consultar al autor del modelo base.
+- La licencia esta declarada como "other" en los metadatos de Hugging Face, mientras que la model card muestra una insignia Apache-2.0. Esta contradiccion no se resuelve en la documentacion, por lo que el uso comercial no puede darse por seguro sin consultar al autor del modelo base.
 - Este repositorio es una publicacion de un tercero (sigmanih) sobre un modelo de nex-agi. No es una publicacion oficial del desarrollador del modelo original.
 - Repositorio sin traccion: 0 descargas y 0 likes en el momento de la consulta, lo que reduce la validacion comunitaria y el soporte disponible.
 - Los benchmarks son autodeclarados y no han sido verificados de forma independiente. Ademas, varios conjuntos se evaluan con muestras muy pequenas (7, 9 u 11 preguntas), lo que hace que un solo fallo altere la precision en decenas de puntos porcentuales.
@@ -140,10 +140,10 @@ Alternativas de la misma categoria (MoE de ~30 B con cuantizacion GGUF): no disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sigmanih/nex-agi-Nex-N2.5-mini-GGUF-Q4_K_S
+- Repositorio Hugging Face: https://huggingface.co/sigmanih/nex-agi-Nex-N2.5-mini-GGUF-Q4_K_S
 - Modelo base: https://huggingface.co/nex-agi/Nex-N2.5-mini
 - Sigma Studio (repositorio GitHub): https://github.com/Sigmanih/SigmaStudio
-- Perfil del autor en HuggingFace: https://huggingface.co/sigmanih
+- Perfil del autor en Hugging Face: https://huggingface.co/sigmanih
 - Licencia Apache-2.0 referenciada en la model card: https://opensource.org/licenses/Apache-2.0
 - Paper, blog o demo oficial del modelo base: no disponible en la informacion proporcionada.
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo; los enlaces encontrados corresponden a perfiles del World Economic Forum y no guardan relacion con el contenido de esta ficha.

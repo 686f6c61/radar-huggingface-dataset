@@ -24,8 +24,8 @@ Su relevancia es fundamentalmente academica y de investigacion: sirve como artef
 | Libreria | peft |
 | Etiquetas | lora, adversarial-training, peft, safetensors, region:us |
 | Tamano del repositorio | 1,2 GB |
-| Fecha de creacion | 2026-09-30 segun los metadatos de HuggingFace |
-| Fecha de actualizacion | 2026-09-30 segun los metadatos de HuggingFace |
+| Fecha de creacion | 2026-09-30 segun los metadatos de Hugging Face |
+| Fecha de actualizacion | 2026-09-30 segun los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Memoria del adaptador: el repositorio ocupa 1,2 GB en disco. Si los pesos se fusionan con el modelo base, no anaden coste de inferencia; si se cargan como adaptador separado con PEFT o vLLM, ocupan memoria adicional.
 - GPU recomendadas: para desarrollo y pruebas, una RTX 3060 de 12 GB o una RTX 4090 de 24 GB son suficientes segun las estimaciones anteriores. Para servicio con concurrencia alta, A100 de 40/80 GB o H100.
 - Compatibilidad con GPU de consumo: si el modelo base es realmente de 3.000 millones de parametros, cabe con holgura en GPUs de consumo de 8 GB o mas usando cuantizacion de 4 bits; en fp16 requeriria al menos 8-10 GB.
-- Opciones de despliegue: transformers con PEFT para cargar el adaptador sin fusionar, vLLM con soporte de adaptadores LoRA, Text Generation Inference, y llama.cpp u Ollama tras fusionar los pesos y convertirlos a GGUF. El pipeline declarado en HuggingFace es no disponible.
+- Opciones de despliegue: transformers con PEFT para cargar el adaptador sin fusionar, vLLM con soporte de adaptadores LoRA, Text Generation Inference, y llama.cpp u Ollama tras fusionar los pesos y convertirlos a GGUF. El pipeline declarado en Hugging Face es no disponible.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -73,9 +73,9 @@ No hay datos de benchmarks ni especificaciones del modelo base que permitan una 
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|---|
-| Este repositorio (maria715) | Adaptador LoRA sobre base no confirmado | No disponible | No disponible | No disponible | Publico en HuggingFace, 0 descargas | No disponible |
+| Este repositorio (maria715) | Adaptador LoRA sobre base no confirmado | No disponible | No disponible | No disponible | Publico en Hugging Face, 0 descargas | No disponible |
 | Modelo base sin adaptador | Transformer completo | Aproximadamente 3.000 millones segun la nomenclatura, sin confirmar | No disponible | No disponible | Depende del proveedor del modelo base | No disponible |
-| Adaptadores LoRA de robustez publicados por otros autores | Adaptador PEFT | No disponible | No disponible | Habitualmente Apache 2.0 o MIT | Publicos en HuggingFace | No disponible en esta ficha |
+| Adaptadores LoRA de robustez publicados por otros autores | Adaptador PEFT | No disponible | No disponible | Habitualmente Apache 2.0 o MIT | Publicos en Hugging Face | No disponible en esta ficha |
 | Ajuste completo con datos de seguridad (DPO o RLHF) | Modelo completo ajustado | Depende del modelo base | Depende del modelo base | Depende del proveedor | Ampliamente disponible | No comparable sin evaluacion comun |
 
 ## Limitaciones y advertencias
@@ -95,5 +95,5 @@ No hay datos de benchmarks ni especificaciones del modelo base que permitan una 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW_weight00595
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW_weight00595
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smlflg/proj-2026-09-eval-harness` es un artefacto publicado en HuggingFace bajo la etiqueta `projects-hub` con `pipeline_tag: other`. No se trata de un modelo de lenguaje con pesos entrenados, sino de un arnes de evaluacion (eval harness) descrito por su autor como una herramienta ligera para evaluar cualquier modelo de texto sobre un split de test interno y comparar modelos pequenos sin filtrar dicho split. El autor figura como Sam, con fecha de registro 2026-09-14 y publicacion en el Hub el 2026-09-16.
+`smlflg/proj-2026-09-eval-harness` es un artefacto publicado en Hugging Face bajo la etiqueta `projects-hub` con `pipeline_tag: other`. No se trata de un modelo de lenguaje con pesos entrenados, sino de un arnes de evaluacion (eval harness) descrito por su autor como una herramienta ligera para evaluar cualquier modelo de texto sobre un split de test interno y comparar modelos pequenos sin filtrar dicho split. El autor figura como Sam, con fecha de registro 2026-09-14 y publicacion en el Hub el 2026-09-16.
 
 La relevancia del repositorio es metodologica mas que de modelado: aborda el problema de la comparabilidad de modelos pequenos sobre datos privados, un escenario habitual en equipos que necesitan decidir entre candidatos sin exponer su conjunto de evaluacion. El autor lo marca como "ready for early adopters", con la documentacion pendiente, y le asigna una puntuacion interna de 70/100 en su registro de proyecto.
 
@@ -81,7 +81,7 @@ Este repositorio no es un modelo, por lo que la comparativa de parametros, conte
 | Contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas, 0 likes | no disponible en la informacion proporcionada |
+| Disponibilidad | publico en Hugging Face, 0 descargas, 0 likes | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
@@ -97,6 +97,6 @@ Este repositorio no es un modelo, por lo que la comparativa de parametros, conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/proj-2026-09-eval-harness
+- Hugging Face: https://huggingface.co/smlflg/proj-2026-09-eval-harness
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.
 - Los resultados de busqueda web proporcionados no estan relacionados con el modelo y se omiten por no ser relevantes.

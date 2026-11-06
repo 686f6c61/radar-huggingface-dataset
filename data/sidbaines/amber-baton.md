@@ -80,9 +80,9 @@ No se identifican alternativas publicas directamente comparables: se trata de un
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sidbaines/amber-baton | Adaptador LoRA (PEFT) | No disponible (base ~27B) | No disponible | other | Publico en HuggingFace, 0 descargas |
+| sidbaines/amber-baton | Adaptador LoRA (PEFT) | No disponible (base ~27B) | No disponible | other | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.8-27B | Modelo base referenciado | 27B referenciados en el nombre, sin confirmar | No disponible | No disponible en esta ficha | No verificado en la informacion disponible |
-| sidbaines/scimt-prior-coins-dispatch-sdf-aft-v1-data | Otro artefacto del mismo autor (datos) | No disponible | No disponible | No disponible | Publico en HuggingFace |
+| sidbaines/scimt-prior-coins-dispatch-sdf-aft-v1-data | Otro artefacto del mismo autor (datos) | No disponible | No disponible | No disponible | Publico en Hugging Face |
 | Adaptadores LoRA genericos de la comunidad | Adaptador (PEFT) | Variable (10M-1B tipico) | Heredado del base | Variable | Amplia disponibilidad |
 
 No se dispone de datos de rendimiento que permitan una comparacion cuantitativa con modelos de la misma categoria.
@@ -102,9 +102,9 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidbaines/amber-baton
+- Modelo en Hugging Face: https://huggingface.co/sidbaines/amber-baton
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B
-- Perfil del autor en HuggingFace: https://huggingface.co/sidbaines
+- Perfil del autor en Hugging Face: https://huggingface.co/sidbaines
 - Sitio personal del autor: https://sidbaines.github.io/
 - Pagina de autor en Catalytex: https://www.catalyzex.com/author/Sid%20Baines
 - Calendario de lanzamientos de modelos de IA: https://www.scriptbyai.com/ai-model-release-calendar/

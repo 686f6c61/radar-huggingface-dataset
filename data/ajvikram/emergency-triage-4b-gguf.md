@@ -92,7 +92,7 @@ La comparativa muestra que ambos modelos de triaje son SLM de 4B, pero difieren 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajvikram/emergency-triage-4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/ajvikram/emergency-triage-4b-gguf
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Documentación de Unsloth (usada para el fine-tuning): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

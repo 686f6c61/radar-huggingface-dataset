@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario AD12SACZXQW bajo licencia MIT. A fecha de la informacion disponible acumula 0 descargas y 0 "likes", y el repositorio ocupa 0.0 GB, lo que sugiere que los pesos no estan subidos o que el repositorio es un esqueleto de prueba. La model card incluida describe un asistente conversacional de razonamiento con modo de pensamiento ("thinking"), soporte de system prompt, carga de ficheros, busqueda web y function calling, y afirma mejoras sustanciales frente a una version anterior.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario AD12SACZXQW bajo licencia MIT. A fecha de la informacion disponible acumula 0 descargas y 0 "likes", y el repositorio ocupa 0.0 GB, lo que sugiere que los pesos no estan subidos o que el repositorio es un esqueleto de prueba. La model card incluida describe un asistente conversacional de razonamiento con modo de pensamiento ("thinking"), soporte de system prompt, carga de ficheros, busqueda web y function calling, y afirma mejoras sustanciales frente a una version anterior.
 
-La informacion es internamente contradictoria. Las etiquetas de HuggingFace indican `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, es decir, un encoder tipo BERT para extraccion de caracteristicas; sin embargo, la model card describe un modelo generativo de razonamiento con decodificacion extensa en cadena de pensamiento. No se especifican parametros, longitud de contexto, tokenizador, composicion del dataset ni arquitectura concreta.
+La informacion es internamente contradictoria. Las etiquetas de Hugging Face indican `transformers`, `pytorch`, `bert` y pipeline `feature-extraction`, es decir, un encoder tipo BERT para extraccion de caracteristicas; sin embargo, la model card describe un modelo generativo de razonamiento con decodificacion extensa en cadena de pensamiento. No se especifican parametros, longitud de contexto, tokenizador, composicion del dataset ni arquitectura concreta.
 
 El unico dato cuantitativo concreto aportado por el autor es la evolucion en AIME 2025: la version anterior alcanzaba un 70 % de acierto con unos 12K tokens por pregunta, mientras que la version actual afirma un 87.5 % con unos 23K tokens por pregunta. No se publica metodologia, configuracion de evaluacion ni artefactos reproducibles. Por tanto, esta ficha debe leerse como un analisis de la documentacion disponible, no como una validacion tecnica del modelo.
 
@@ -12,7 +12,7 @@ El unico dato cuantitativo concreto aportado por el autor es la evolucion en AIM
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (contradiccion: etiquetas de HuggingFace indican `bert`/`feature-extraction`; la model card describe un LLM generativo de razonamiento) |
+| Arquitectura | no disponible (contradiccion: etiquetas de Hugging Face indican `bert`/`feature-extraction`; la model card describe un LLM generativo de razonamiento) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible (la model card menciona 23K tokens de media por pregunta en AIME, pero no es la ventana de contexto) |
@@ -25,7 +25,7 @@ Datos adicionales del repositorio: ID `AD12SACZXQW/my-awesome-model`, pipeline `
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion verificable sobre la arquitectura. La model card no indica si se trata de un transformer denso, un MoE, un modelo hibrido con atencion lineal o cualquier otra variante. Tampoco detalla el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento. Las etiquetas de HuggingFace apuntan a BERT, lo que seria incompatible con las capacidades generativas y de razonamiento descritas en el texto.
+No se dispone de informacion verificable sobre la arquitectura. La model card no indica si se trata de un transformer denso, un MoE, un modelo hibrido con atencion lineal o cualquier otra variante. Tampoco detalla el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineamiento. Las etiquetas de Hugging Face apuntan a BERT, lo que seria incompatible con las capacidades generativas y de razonamiento descritas en el texto.
 
 El unico mecanismo concreto mencionado es una optimizacion algoritmica durante la etapa de post-entrenamiento, orientada a aumentar la profundidad de razonamiento. Segun el autor, esto se traduce en un mayor numero de tokens de pensamiento por pregunta (de 12K a 23K en AIME) y en mejoras en matematicas, programacion y logica general. La model card tambien afirma una reduccion de la tasa de alucinacion y una mejora del soporte de function calling, pero sin cifras ni protocolo de medicion. Ademas, se indica que ya no es necesario insertar tokens especiales al inicio de la salida para forzar un patron de pensamiento, y que se admite system prompt, con temperatura recomendada de 0.6.
 
@@ -103,7 +103,7 @@ No es posible establecer una comparativa fiable. La model card incluye columnas 
 ## Limitaciones y advertencias
 
 - Documentacion insuficiente: la model card es una plantilla generica con apartados de relleno ("Model1", "Model2"), logotipos referenciados como `figures/fig1.png` y enlaces a `LICENSE` que no aportan informacion tecnica util.
-- Contradiccion entre metadatos y contenido: las etiquetas de HuggingFace indican `bert` y `feature-extraction`, mientras que el texto describe un LLM generativo de razonamiento. No se puede determinar cual es correcta.
+- Contradiccion entre metadatos y contenido: las etiquetas de Hugging Face indican `bert` y `feature-extraction`, mientras que el texto describe un LLM generativo de razonamiento. No se puede determinar cual es correcta.
 - Benchmarks no verificables: las cifras de la tabla carecen de descripcion de tareas, prompts, versiones de evaluacion y modelos de referencia. No deben usarse para decisiones de adopcion.
 - Afirmacion de AIME 2025 no reproducible: el 87.5 % de acierto y las 23K tokens por pregunta no van acompanados de metodologia ni de artefactos.
 - Sin pesos publicados: el repositorio ocupa 0.0 GB y acumula 0 descargas, por lo que el modelo no es desplegable tal como esta.
@@ -116,7 +116,7 @@ No es posible establecer una comparativa fiable. La model card incluye columnas 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AD12SACZXQW/my-awesome-model
+- Hugging Face: https://huggingface.co/AD12SACZXQW/my-awesome-model
 - Licencia del repositorio (referenciada en la model card): LICENSE (ruta relativa dentro del repositorio)
 - Repositorio de codigo para ejecucion local: mencionado en la model card, sin URL disponible
 - Web de chat y plataforma API: mencionadas en la model card, sin URL disponible

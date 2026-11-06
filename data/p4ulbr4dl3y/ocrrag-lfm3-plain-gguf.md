@@ -6,7 +6,7 @@ ocrrag-lfm3-plain-gguf es un ajuste fino mediante LoRA del modelo base LiquidAI/
 
 El modelo base LFM3-1.7B pertenece a la familia Liquid Foundation Models de Liquid AI, con 1.728.801.600 parámetros según los safetensors del repositorio. El adaptador se entrenó sobre el checkpoint-150 del LoRA `ocrrag-lfm3-plain-lora-v3`, con un conjunto de datos de 1210 ejemplos de entrenamiento, 63 de validación y 83 de test, separados a nivel de documento y con un 34% de ejemplos de negativa. La evaluación reportada por el autor indica que el adaptador mejora sustancialmente la adherencia al formato estructurado frente al modelo base sin adaptador (83/83 frente a 56/83 en veredicto estructurado), a costa de un aumento de las negativas excesivas.
 
-El repositorio se distribuye únicamente en GGUF, con dos cuantizaciones: Q4_K_M (1,02 GiB, recomendada para CPU) y Q8_0 (1,72 GiB, para Metal/GPU y calidad de referencia). No hay pesos en safetensors del adaptador en este repositorio, ni model card con licencia, idiomas o pipeline declarados en los metadatos de HuggingFace.
+El repositorio se distribuye únicamente en GGUF, con dos cuantizaciones: Q4_K_M (1,02 GiB, recomendada para CPU) y Q8_0 (1,72 GiB, para Metal/GPU y calidad de referencia). No hay pesos en safetensors del adaptador en este repositorio, ni model card con licencia, idiomas o pipeline declarados en los metadatos de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ocrrag-lfm3-plain-gguf (este) | 1,73 B | 16384 en el ejemplo de despliegue | Answerer extractivo con citas y negativa para RAG | no disponible | GGUF en HuggingFace |
-| LFM3-1.7B base (LiquidAI) | 1,73 B | no disponible | Modelo de propósito general | no disponible en esta ficha | HuggingFace |
-| ocrrag-lfm3-plain-lora-v3 (adaptador) | no disponible | no disponible | Adaptador LoRA del que deriva este GGUF | no disponible | HuggingFace |
+| ocrrag-lfm3-plain-gguf (este) | 1,73 B | 16384 en el ejemplo de despliegue | Answerer extractivo con citas y negativa para RAG | no disponible | GGUF en Hugging Face |
+| LFM3-1.7B base (LiquidAI) | 1,73 B | no disponible | Modelo de propósito general | no disponible en esta ficha | Hugging Face |
+| ocrrag-lfm3-plain-lora-v3 (adaptador) | no disponible | no disponible | Adaptador LoRA del que deriva este GGUF | no disponible | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones suficientes para comparar con alternativas de la misma categoría (por ejemplo, otros answerers RAG de tamaño similar). La comparativa se limita al modelo base y al adaptador de origen.
 
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones suficientes para com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf
+- Repositorio Hugging Face: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-gguf
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Adaptador LoRA de origen: https://huggingface.co/p4ulbr4dl3y/ocrrag-lfm3-plain-lora-v3
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/p4ulbr4dl3y/ocrrag-lfm3-plain-data-v2

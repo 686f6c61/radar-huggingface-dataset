@@ -60,7 +60,7 @@ Advertencia técnica relevante: la model card es una plantilla genérica. Los co
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tasas de éxito, números de episodios de evaluación ni comparaciones con otros checkpoints, y la información de HuggingFace no aporta métricas adicionales.
+No se han publicado resultados de benchmarks en la información disponible. La model card no incluye tasas de éxito, números de episodios de evaluación ni comparaciones con otros checkpoints, y la información de Hugging Face no aporta métricas adicionales.
 
 ## Requisitos de hardware
 
@@ -77,10 +77,10 @@ Los datos de la información proporcionada corresponden únicamente a este check
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pi0-office-mixed-noise-10pct-40ep-baseline (este checkpoint) | 3.501.372.176 | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| pi0-office-mixed-noise-10pct-40ep-baseline (este checkpoint) | 3.501.372.176 | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | π₀ base (Physical Intelligence / OpenPI) | ~3,3 mil millones (referencia pública, no verificada aquí) | no disponible | no disponible en esta ficha (el repositorio OpenPI se publica bajo Apache-2.0) | Repositorio OpenPI de Physical Intelligence |
-| SmolVLA (HuggingFace) | ~450 millones (referencia pública, no verificada aquí) | no disponible | no verificado en esta ficha | HuggingFace / LeRobot |
-| ACT (política de imitación usada como referencia en LeRobot) | no disponible | no disponible | no disponible | HuggingFace / LeRobot |
+| SmolVLA (Hugging Face) | ~450 millones (referencia pública, no verificada aquí) | no disponible | no verificado en esta ficha | Hugging Face / LeRobot |
+| ACT (política de imitación usada como referencia en LeRobot) | no disponible | no disponible | no disponible | Hugging Face / LeRobot |
 
 No se dispone de comparaciones de rendimiento entre estos modelos dentro de la información proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de comparaciones de rendimiento entre estos modelos dentro de la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-10pct-40ep-baseline
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-office-mixed-noise-10pct-40ep-baseline
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/office_task_mixed_suboptimal_seed1000_10pct_40ep
 - Blog de π₀ en Physical Intelligence: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI: https://github.com/Physical-Intelligence/openpi
@@ -107,4 +107,4 @@ No se dispone de comparaciones de rendimiento entre estos modelos dentro de la i
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas en LeRobot: https://huggingface.co/docs/lerobot/il_robots#train-a-policy
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces anteriores proceden de la model card y de la información de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes para este modelo; los enlaces anteriores proceden de la model card y de la información de Hugging Face.

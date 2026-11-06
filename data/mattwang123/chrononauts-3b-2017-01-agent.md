@@ -76,10 +76,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chrononauts 3B 2017-01 agent | ~2,8B | 8.192 tokens | Agente de busqueda congelado a 2017-01, GRPO con busqueda en vivo | other | HuggingFace (repo propio) |
-| Chrononauts 3B 2017-01 sft | ~2,8B (misma base) | 8.192 tokens | Misma base, solo SFT, sin RL | other | HuggingFace (repo hermano) |
-| Chrononauts 3B 2017-01 init | ~2,8B (misma base) | 8.192 tokens | Solo preentrenamiento congelado a 2017-01 | other | HuggingFace (repo hermano) |
-| Otros cutoffs de la suite Chrononauts | ~2,8B (misma base) | 8.192 tokens | Mismo diseno, fechas 2013-05 a 2024-07 | other | HuggingFace (repos de la suite) |
+| Chrononauts 3B 2017-01 agent | ~2,8B | 8.192 tokens | Agente de busqueda congelado a 2017-01, GRPO con busqueda en vivo | other | Hugging Face (repo propio) |
+| Chrononauts 3B 2017-01 sft | ~2,8B (misma base) | 8.192 tokens | Misma base, solo SFT, sin RL | other | Hugging Face (repo hermano) |
+| Chrononauts 3B 2017-01 init | ~2,8B (misma base) | 8.192 tokens | Solo preentrenamiento congelado a 2017-01 | other | Hugging Face (repo hermano) |
+| Otros cutoffs de la suite Chrononauts | ~2,8B (misma base) | 8.192 tokens | Mismo diseno, fechas 2013-05 a 2024-07 | other | Hugging Face (repos de la suite) |
 
 No se dispone de comparativas con modelos de proposito general de tamano similar (por ejemplo, Llama 3.2 3B o Qwen2.5 3B) en la informacion proporcionada; la comparacion relevante es interna a la suite Chrononauts, que comparte arquitectura y corpus pero difiere en fecha de corte y etapa de entrenamiento.
 
@@ -98,7 +98,7 @@ No se dispone de comparativas con modelos de proposito general de tamano similar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-agent
+- Modelo en Hugging Face: https://huggingface.co/mattwang123/chrononauts-3b-2017-01-agent
 - Repo hermano (init): https://huggingface.co/mattwang123/chrononauts-3b-2017-01-init
 - Repo hermano (sft): https://huggingface.co/mattwang123/chrononauts-3b-2017-01-sft
 - Modelo de embeddings del corpus: https://huggingface.co/BAAI/bge-base-en-v1.5

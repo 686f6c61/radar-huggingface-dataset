@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jungwook2358/allex-eef-N-robotonly-h16` es un checkpoint de política robótica bimanual publicado en HuggingFace bajo el pipeline `robotics` y etiquetado como VLA (vision-language-action). No es un modelo fundacional nuevo: es un ajuste de stage-2 sobre el modelo preentrenado `RLWRLD/RLDX-1-PT-IMG`, en el que el backbone VLM permanece congelado (`tune_llm=False`, `tune_visual=False`, `tune_top_llm_layers=0`) y se entrena una cabeza de acción sobre un espacio de acciones absoluto EEF de 50 dimensiones.
+`jungwook2358/allex-eef-N-robotonly-h16` es un checkpoint de política robótica bimanual publicado en Hugging Face bajo el pipeline `robotics` y etiquetado como VLA (vision-language-action). No es un modelo fundacional nuevo: es un ajuste de stage-2 sobre el modelo preentrenado `RLWRLD/RLDX-1-PT-IMG`, en el que el backbone VLM permanece congelado (`tune_llm=False`, `tune_visual=False`, `tune_top_llm_layers=0`) y se entrena una cabeza de acción sobre un espacio de acciones absoluto EEF de 50 dimensiones.
 
 Su interés es metodológico, no de capacidades: es un *ablation* del run `jungwook2358/allex-eef-N-h16` en el que se ha eliminado toda la fuente de datos humanos (hmd y umi). El run de referencia mezcla 0,50 de datos de robot, 0,25 de hmd y 0,25 de umi; este repositorio entrena con proporción 1,00 de datos de robot (allex v1–v6). El objetivo declarado del autor es aislar la contribución real del co-entrenamiento con datos humanos en una política VLA.
 
@@ -83,9 +83,9 @@ La model card únicamente incluye la tabla de composición de datos del ablation
 
 | Modelo | Parametros | Horizonte / contexto | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jungwook2358/allex-eef-N-robotonly-h16` (este) | no disponible | horizonte de acción 16; contexto no disponible | robot allex v1–v6 al 100 % | `other` | público en HuggingFace; checkpoint 10k de 60k |
-| `jungwook2358/allex-eef-N-h16` (run base) | no disponible | horizonte de acción 16; contexto no disponible | robot 0,50 / hmd 0,25 / umi 0,25 | `other` | público en HuggingFace |
-| `RLWRLD/RLDX-1-PT-IMG` (preentrenado base) | no disponible | no disponible | no disponible | no disponible | público en HuggingFace |
+| `jungwook2358/allex-eef-N-robotonly-h16` (este) | no disponible | horizonte de acción 16; contexto no disponible | robot allex v1–v6 al 100 % | `other` | público en Hugging Face; checkpoint 10k de 60k |
+| `jungwook2358/allex-eef-N-h16` (run base) | no disponible | horizonte de acción 16; contexto no disponible | robot 0,50 / hmd 0,25 / umi 0,25 | `other` | público en Hugging Face |
+| `RLWRLD/RLDX-1-PT-IMG` (preentrenado base) | no disponible | no disponible | no disponible | no disponible | público en Hugging Face |
 
 No hay resultados comparativos de rendimiento publicados entre estos tres modelos en la información disponible, ni datos de parámetros, contexto o licencia del preentrenado base. La comparación con alternativas de otros autores (por ejemplo, otras familias VLA abiertas) no se puede sustentar con datos verificables a partir de la información proporcionada.
 
@@ -107,10 +107,10 @@ No hay resultados comparativos de rendimiento publicados entre estos tres modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jungwook2358/allex-eef-N-robotonly-h16
+- Modelo en Hugging Face: https://huggingface.co/jungwook2358/allex-eef-N-robotonly-h16
 - Run base del ablation: https://huggingface.co/jungwook2358/allex-eef-N-h16
 - Modelo preentrenado base: https://huggingface.co/RLWRLD/RLDX-1-PT-IMG
-- Código de stage-2: repositorio `jungwook235/RLDX-1-egopi`, rama `feat/allex-eef-h16-midtrain` (el autor no indica la URL completa ni si se aloja en GitHub o en HuggingFace)
+- Código de stage-2: repositorio `jungwook235/RLDX-1-egopi`, rama `feat/allex-eef-h16-midtrain` (el autor no indica la URL completa ni si se aloja en GitHub o en Hugging Face)
 - Script de envío de entrenamiento: repositorio `jungwook235/action-tokenizer`, ruta `gpu26-server/submit/allex_eef_run3_base_robotonly.sh` (el autor no indica la URL completa)
 - Estadísticas de normalización requeridas en inferencia: `checkpoint-*/experiment_cfg/dataset_statistics.json` y `checkpoint-*/processor/statistics.json` dentro del propio repositorio
 - Descarga selectiva del checkpoint:

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FlashVSR es un sistema de superresolución de vídeo (video super-resolution, VSR) basado en difusión que se presenta como el primer marco de trabajo de difusión en un solo paso y en modo streaming orientado a inferencia en tiempo real. Lo desarrollan Junhao Zhuang, Shi Guo, Xin Cai, Xiaohui Li, Yihao Liu, Chun Yuan y Tianfan Xue, y el artículo asociado es arXiv:2510.12747. La ficha de HuggingFace analizada pertenece al repositorio Minxw/FlashVSR-v1.1, una copia del modelo oficial publicado originalmente en JunhaoZhuang/FlashVSR-v1.1, con licencia Apache 2.0.
+FlashVSR es un sistema de superresolución de vídeo (video super-resolution, VSR) basado en difusión que se presenta como el primer marco de trabajo de difusión en un solo paso y en modo streaming orientado a inferencia en tiempo real. Lo desarrollan Junhao Zhuang, Shi Guo, Xin Cai, Xiaohui Li, Yihao Liu, Chun Yuan y Tianfan Xue, y el artículo asociado es arXiv:2510.12747. La ficha de Hugging Face analizada pertenece al repositorio Minxw/FlashVSR-v1.1, una copia del modelo oficial publicado originalmente en JunhaoZhuang/FlashVSR-v1.1, con licencia Apache 2.0.
 
 El problema que resuelve es la latencia y el coste computacional de aplicar modelos de difusión a la restauración de vídeo en escenarios reales, junto con su escasa generalización a resoluciones ultra altas. La propuesta combina tres elementos: un pipeline de destilación en tres etapas que habilita el procesamiento en streaming, una atención dispersa con restricción de localidad (LCSA) que elimina cómputo redundante y reduce la brecha de resolución entre entrenamiento e inferencia, y un decodificador condicional muy pequeño que acelera la reconstrucción. El sistema alcanza aproximadamente 17 FPS en vídeo de 768 × 1408 píxeles sobre una única GPU A100.
 
@@ -19,9 +19,9 @@ El resultado declarado es un rendimiento de estado del arte con hasta unas 12 ve
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (modelo video-a-video, sin capacidades linguisticas declaradas) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | no disponible (el repositorio de HuggingFace ocupa 6,9 GB; no se detalla en la informacion si los pesos son safetensors, GGUF u otro) |
+| Formato de pesos | no disponible (el repositorio de Hugging Face ocupa 6,9 GB; no se detalla en la informacion si los pesos son safetensors, GGUF u otro) |
 
-Datos adicionales del repositorio: pipeline declarado `video-to-video`, 0 descargas y 0 likes en el momento de la consulta, creado el 11 de septiembre de 2026 segun los metadatos de HuggingFace.
+Datos adicionales del repositorio: pipeline declarado `video-to-video`, 0 descargas y 0 likes en el momento de la consulta, creado el 11 de septiembre de 2026 segun los metadatos de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -68,7 +68,7 @@ Cualquier cifra de calidad subjetiva u objetiva adicional no esta disponible en 
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El repositorio de HuggingFace ocupa 6,9 GB, lo que da una referencia del peso de los ficheros almacenados, pero no equivale al consumo de VRAM en ejecucion.
+- VRAM estimada para inferencia: no disponible en la informacion proporcionada. El repositorio de Hugging Face ocupa 6,9 GB, lo que da una referencia del peso de los ficheros almacenados, pero no equivale al consumo de VRAM en ejecucion.
 - GPU validada: una unica NVIDIA A100 es suficiente para alcanzar aproximadamente 17 FPS a 768 × 1408 segun los autores.
 - GPU de consumo: no disponible. No se documenta si el modelo cabe o no en tarjetas como RTX 4090, 4080 o similares, ni con que cuantizacion.
 - Compilacion de dependencias: el backend Block-Sparse Attention es obligatorio en el pipeline oficial y su compilacion es intensiva en memoria; se recomienda disponer de memoria suficiente y evitar compilaciones paralelas con muchos trabajos de `ninja` para no provocar errores de memoria agotada.
@@ -95,13 +95,13 @@ No se dispone de datos de parametros, contexto ni resultados numericos de modelo
 - Dependencia de la libreria Block-Sparse Attention en el pipeline oficial, con compilacion costosa en memoria. La alternativa sin esa dependencia aun estaba en desarrollo en el momento de publicar la model card y seria mas lenta.
 - El dataset VSR-120K no estaba publicado cuando se redacto la documentacion, lo que limita la reproducibilidad del entrenamiento.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia y se atribuya correctamente. No se declaran clausulas adicionales.
-- Caveat de identificacion del repositorio: la ficha de HuggingFace evaluada esta publicada por el usuario Minxw, mientras que la publicacion oficial corresponde a JunhaoZhuang. Conviene verificar la integridad de los pesos antes de usarlos en produccion y preferir el repositorio oficial.
+- Caveat de identificacion del repositorio: la ficha de Hugging Face evaluada esta publicada por el usuario Minxw, mientras que la publicacion oficial corresponde a JunhaoZhuang. Conviene verificar la integridad de los pesos antes de usarlos en produccion y preferir el repositorio oficial.
 - No se declaran idiomas ni capacidades de texto, por lo que cualquier expectativa en ese sentido queda fuera del alcance del modelo.
 - Las busquedas web realizadas para esta ficha no devolvieron resultados relevantes sobre el modelo; toda la informacion tecnica procede de la model card y del articulo citado.
 
 ## Enlaces
 
-- Repositorio de HuggingFace analizado: https://huggingface.co/Minxw/FlashVSR-v1.1
+- Repositorio de Hugging Face analizado: https://huggingface.co/Minxw/FlashVSR-v1.1
 - Modelo oficial v1.1: https://huggingface.co/JunhaoZhuang/FlashVSR-v1.1
 - Modelo oficial v1: https://huggingface.co/JunhaoZhuang/FlashVSR
 - Repositorio de codigo: https://github.com/OpenImagingLab/FlashVSR

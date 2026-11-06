@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `arefehRajabian/phi_reasoning_plus_finetune_16bit` es un ajuste fino (finetune) del modelo `unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits del `Phi-4-reasoning-plus` de Microsoft, un modelo de lenguaje de 14.000 millones de parámetros especializado en razonamiento complejo. El archivo publicado usa pesos en 16 bits y está etiquetado como `text-generation` y `conversational`. El fine-tuning fue realizado con las librerías Unsloth y TRL de HuggingFace.
+El modelo `arefehRajabian/phi_reasoning_plus_finetune_16bit` es un ajuste fino (finetune) del modelo `unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit`, que a su vez es una versión cuantizada a 4 bits del `Phi-4-reasoning-plus` de Microsoft, un modelo de lenguaje de 14.000 millones de parámetros especializado en razonamiento complejo. El archivo publicado usa pesos en 16 bits y está etiquetado como `text-generation` y `conversational`. El fine-tuning fue realizado con las librerías Unsloth y TRL de Hugging Face.
 
 La relevancia de este modelo radica en su base: Phi-4-reasoning-plus es una versión reforzada del modelo Phi-4-reasoning, entrenado mediante supervisión sobre razonamientos del modelo o3-mini y posteriormente con aprendizaje por refuerzo (RL), según la documentación de Microsoft Research. Sin embargo, la model card publicada por el autor no detalla el conjunto de datos de entrenamiento, el método de ajuste ni las tareas objetivo, por lo que no es posible determinar si se han mantenido o modificado las capacidades originales. Por ello, esta ficha debe leerse con cautela: los datos sobre arquitectura y rendimiento se derivan del modelo base o se marcan explícitamente como no disponibles.
 
@@ -23,11 +23,11 @@ La relevancia de este modelo radica en su base: Phi-4-reasoning-plus es una vers
 
 El modelo base Phi-4-reasoning-plus es un transformer de tipo decoder-only con 14.000 millones de parámetros, desarrollado por Microsoft y orientado a tareas de razonamiento complejo. Según el artículo de Microsoft Research, Phi-4-reasoning fue entrenado primero mediante supervisión (SFT) sobre demostraciones de razonamiento del modelo o3-mini, y la variante plus añade una fase de aprendizaje por refuerzo (RL) para mejorar la generación de cadenas de razonamiento y la eficiencia en el consumo de cómputo en tiempo de inferencia.
 
-En este finetune concreto, el autor indica que se usaron Unsloth y la librería TRL de HuggingFace para acelerar el entrenamiento. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio indica que los pesos se subieron en 16 bits. Aunque la model card etiqueta el modelo como "phi3", la referencia al modelo base `Phi-4-reasoning-plus` sugiere que esa etiqueta es un resto heredado de la plantilla de Unsloth y no describe la arquitectura real.
+En este finetune concreto, el autor indica que se usaron Unsloth y la librería TRL de Hugging Face para acelerar el entrenamiento. No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO. El nombre del repositorio indica que los pesos se subieron en 16 bits. Aunque la model card etiqueta el modelo como "phi3", la referencia al modelo base `Phi-4-reasoning-plus` sugiere que esa etiqueta es un resto heredado de la plantilla de Unsloth y no describe la arquitectura real.
 
 ## Capacidades
 
-- Generación de texto conversacional: el modelo está etiquetado como `conversational` y utiliza el pipeline `text-generation` de HuggingFace.
+- Generación de texto conversacional: el modelo está etiquetado como `conversational` y utiliza el pipeline `text-generation` de Hugging Face.
 - Razonamiento complejo: heredado potencialmente del modelo base Phi-4-reasoning-plus, que genera cadenas de razonamiento detalladas. No se dispone de una evaluación específica para este finetune.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `arefehRajabian/phi_reasoning_plus_finetune_16bit` | 14B | No disponible | Apache 2.0 | HuggingFace | Finetune sin documentar del modelo base |
-| `arefehRajabian/phi_finetune_16bit` | 14B | No disponible | Apache 2.0 | HuggingFace | Otro finetune del mismo autor, tampoco documentado |
-| `unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit` | 14B | No disponible | Apache 2.0 | HuggingFace (base) | Versión 4-bit de Phi-4-reasoning-plus, producido por Unsloth |
+| `arefehRajabian/phi_reasoning_plus_finetune_16bit` | 14B | No disponible | Apache 2.0 | Hugging Face | Finetune sin documentar del modelo base |
+| `arefehRajabian/phi_finetune_16bit` | 14B | No disponible | Apache 2.0 | Hugging Face | Otro finetune del mismo autor, tampoco documentado |
+| `unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit` | 14B | No disponible | Apache 2.0 | Hugging Face (base) | Versión 4-bit de Phi-4-reasoning-plus, producido por Unsloth |
 
 No se dispone de datos de rendimiento comparativos en la información proporcionada.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arefehRajabian/phi_reasoning_plus_finetune_16bit
+- Modelo en Hugging Face: https://huggingface.co/arefehRajabian/phi_reasoning_plus_finetune_16bit
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Phi-4-reasoning-plus-unsloth-bnb-4bit
 - Finetune hermano del mismo autor: https://huggingface.co/arefehRajabian/phi_finetune_16bit
 - Artículo de Microsoft Research sobre Phi-Reasoning: https://www.microsoft.com/en-us/research/articles/phi-reasoning-once-again-redefining-what-is-possible-with-small-and-efficient-ai/

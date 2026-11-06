@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JKAppTeacher judge models es un repositorio de HuggingFace publicado por el usuario giromondo que contiene dos modelos derivados de la familia Qwen3, cuantizados a INT4 en formato OpenVINO. No se trata de modelos entrenados desde cero, sino de exportaciones post-entrenamiento (PTQ) de los pesos originales de Qwen, cuyo proposito declarado es actuar como jueces o correctores automaticos dentro de la aplicacion JKAppTeacher: evaluar si la respuesta de un alumno es correcta o incorrecta, no generar texto nuevo.
+JKAppTeacher judge models es un repositorio de Hugging Face publicado por el usuario giromondo que contiene dos modelos derivados de la familia Qwen3, cuantizados a INT4 en formato OpenVINO. No se trata de modelos entrenados desde cero, sino de exportaciones post-entrenamiento (PTQ) de los pesos originales de Qwen, cuyo proposito declarado es actuar como jueces o correctores automaticos dentro de la aplicacion JKAppTeacher: evaluar si la respuesta de un alumno es correcta o incorrecta, no generar texto nuevo.
 
 El repositorio incluye dos variantes: qwen3-4b-instruct-2507-int4 (2.180 MB) derivada de Qwen/Qwen3-4B-Instruct-2507, y qwen3-8b-int4 (4.626 MB) derivada de Qwen/Qwen3-8B. Ambas emplean cuantizacion simetrica de 4 bits con group-size 128 y sin datos de calibracion (data-free), exportadas con optimum-cli y los entornos openvino-genai 2026.3.1.0 y optimum-intel 2.1.0. La licencia de originales y derivados es Apache-2.0, lo que permite uso comercial.
 
@@ -79,10 +79,10 @@ La comparacion natural es entre las dos variantes incluidas en el propio reposit
 
 | Modelo | Parametros | Tamano INT4 | Estrategia | Precision (72) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| qwen3-4b-instruct-2507-int4 | 4B | 2.180 MB | accept | 61/72 | Apache-2.0 | HuggingFace (giromondo) |
-| qwen3-8b-int4 | 8B | 4.626 MB | yesno | 67/72 | Apache-2.0 | HuggingFace (giromondo) |
-| Qwen/Qwen3-4B-Instruct-2507 (original) | 4B | pesos completos | generacion | no evaluado aqui | Apache-2.0 | HuggingFace (Qwen) |
-| Qwen/Qwen3-8B (original) | 8B | pesos completos | generacion | no evaluado aqui | Apache-2.0 | HuggingFace (Qwen) |
+| qwen3-4b-instruct-2507-int4 | 4B | 2.180 MB | accept | 61/72 | Apache-2.0 | Hugging Face (giromondo) |
+| qwen3-8b-int4 | 8B | 4.626 MB | yesno | 67/72 | Apache-2.0 | Hugging Face (giromondo) |
+| Qwen/Qwen3-4B-Instruct-2507 (original) | 4B | pesos completos | generacion | no evaluado aqui | Apache-2.0 | Hugging Face (Qwen) |
+| Qwen/Qwen3-8B (original) | 8B | pesos completos | generacion | no evaluado aqui | Apache-2.0 | Hugging Face (Qwen) |
 
 La variante de 8B obtiene mejor precision global y en italiano a costa de duplicar el tamano. No se dispone de datos para comparar con otros jueces cuantizados de la misma categoria.
 
@@ -101,6 +101,6 @@ La variante de 8B obtiene mejor precision global y en italiano a costa de duplic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/giromondo/jkappteacher-models
+- Repositorio Hugging Face: https://huggingface.co/giromondo/jkappteacher-models
 - Modelo base (variante 4B): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base (variante 8B): https://huggingface.co/Qwen/Qwen3-8B

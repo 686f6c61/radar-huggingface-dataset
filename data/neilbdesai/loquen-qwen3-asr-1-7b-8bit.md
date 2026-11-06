@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loquen Qwen3-ASR 1.7B 8-bit es una cuantizacion de 8 bits del modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-1.7B de Alibaba Qwen, publicada por el usuario neilbdesai en HuggingFace. Se trata de un artefacto en formato MLX, es decir, pensado para ejecutarse exclusivamente sobre Apple Silicon (chips M1/M2/M3/M4) a traves de la libreria mlx. El modelo resuelve la tarea de transcripcion de audio a texto (pipeline `automatic-speech-recognition`) en 10 idiomas y reduce el peso de descarga de 4,4 GB en fp16 a aproximadamente 2,0 GB.
+Loquen Qwen3-ASR 1.7B 8-bit es una cuantizacion de 8 bits del modelo de reconocimiento automatico del habla Qwen/Qwen3-ASR-1.7B de Alibaba Qwen, publicada por el usuario neilbdesai en Hugging Face. Se trata de un artefacto en formato MLX, es decir, pensado para ejecutarse exclusivamente sobre Apple Silicon (chips M1/M2/M3/M4) a traves de la libreria mlx. El modelo resuelve la tarea de transcripcion de audio a texto (pipeline `automatic-speech-recognition`) en 10 idiomas y reduce el peso de descarga de 4,4 GB en fp16 a aproximadamente 2,0 GB.
 
 La relevancia actual de este artefacto radica en que permite ejecutar un modelo ASR de 1.700 millones de parametros de forma local en un Mac, sin GPU dedicada y sin pasos de conversion por parte del usuario. La model card indica que la cuantizacion se aplica a todas las capas `Linear` y `Embedding` tanto del decodificador de texto como del codificador de audio, con cuantizacion afina de 8 bits y group size 64, manteniendo el resto de tensores (escalas, sesgos, normas, stem convolucional) en float16.
 
@@ -74,9 +74,9 @@ Segun la model card, las hipotesis son identicas a las de fp16 en los 100 clips.
 
 | Modelo | Parametros | Contexto | WER (LibriSpeech test-clean) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (8 bits MLX) | 1,7B | No disponible | 1,94 % | Apache-2.0 | HuggingFace, MLX |
-| Qwen/Qwen3-ASR-1.7B (fp16) | 1,7B | No disponible | 1,94 % | Apache-2.0 | HuggingFace |
-| Familia Whisper (OpenAI) | No disponible en esta informacion | No disponible | No disponible en esta informacion | MIT (segun versiones) | HuggingFace |
+| Este artefacto (8 bits MLX) | 1,7B | No disponible | 1,94 % | Apache-2.0 | Hugging Face, MLX |
+| Qwen/Qwen3-ASR-1.7B (fp16) | 1,7B | No disponible | 1,94 % | Apache-2.0 | Hugging Face |
+| Familia Whisper (OpenAI) | No disponible en esta informacion | No disponible | No disponible en esta informacion | MIT (segun versiones) | Hugging Face |
 
 No se dispone de datos de benchmarks verificados para modelos alternativos dentro de la informacion proporcionada, por lo que la comparativa se limita al modelo base fp16, que segun la model card ofrece resultados identicos a este artefacto con el doble de tamano de descarga (4,4 GB frente a 2,0 GB).
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks verificados para modelos alternativos dentr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neilbdesai/loquen-qwen3-asr-1.7b-8bit
+- Modelo en Hugging Face: https://huggingface.co/neilbdesai/loquen-qwen3-asr-1.7b-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de referencia de la model card: https://github.com/moona3k/mlx-qwen3-asr
 - Artefacto de referencia de la model card: https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-8bit

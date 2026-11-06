@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerasformers/gemma-4-12b-it
+- Hugging Face: https://huggingface.co/kerasformers/gemma-4-12b-it
 - Repositorio GitHub: https://github.com/IMvision12/KerasFormers
 - Documentacion: https://imvision12.github.io/KerasFormers/gemma4_unified/
 - Modelo original de Google: https://huggingface.co/google/gemma-4-12B-it

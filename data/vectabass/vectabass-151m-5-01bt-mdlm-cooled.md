@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VectaBass/vectabass-151m-5.01bt-mdlm-cooled
+- Hugging Face: https://huggingface.co/VectaBass/vectabass-151m-5.01bt-mdlm-cooled
 - Rama de réplicas de semilla: `revision="seed2"` en el mismo repositorio
 - Documentación de datos del autor: `DATA.md` en el repositorio
 - Código de modelado: `modeling_vectabass.py` en el repositorio

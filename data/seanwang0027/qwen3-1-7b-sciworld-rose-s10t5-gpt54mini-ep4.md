@@ -109,7 +109,7 @@ No se dispone de comparaciones con otros agentes de tamaño similar (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep4
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Checkpoints relacionados del mismo estudio:
   - SFT época 1: https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep1

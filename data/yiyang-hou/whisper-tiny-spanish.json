@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yiyang-hou/whisper-tiny-spanish",
+  "slug": "yiyang-hou-whisper-tiny-spanish",
+  "author": "Yiyang-hou",
+  "url": "https://huggingface.co/Yiyang-hou/whisper-tiny-spanish",
+  "created_at": "2026-11-01T18:01:11.000Z",
+  "updated_at": "2026-11-01T18:16:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "generated_from_trainer",
+    "en",
+    "dataset:naharte/spanish_english",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 302167467,
+  "storage_human": "302 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Spanish English",
+      "metric": "Wer",
+      "value": 12.462686567164178
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yiyang-hou/whisper-tiny-spanish · Hugging Face",
+      "url": "https://huggingface.co/Yiyang-hou/whisper-tiny-spanish",
+      "snippet": "Whisper tiny Spanish This model is a fine-tuned version of openai/whisper-tiny on the Spanish English dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Yiyang-hou/whisper-tiny-spanish at main - Hugging Face",
+      "url": "https://huggingface.co/Yiyang-hou/whisper-tiny-spanish/tree/main",
+      "snippet": "Instructions to use Yiyang-hou/whisper-tiny-spanish with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Yiyang-hou/whisper-tiny-spanish with Transformers:"
+    }
+  ]
+}

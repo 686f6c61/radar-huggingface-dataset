@@ -58,7 +58,7 @@ No se incluyen comparaciones con otros modelos ni resultados en conjuntos de dat
 - VRAM estimada para inferencia: aproximadamente 500 MB en FP32 (124M parametros), menos de 200 MB en cuantizacion INT8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluyendo NVIDIA GTX 1050, RTX 2060 o superiores. Tambien puede ejecutarse en CPU con latencia aceptable (menos de 100 ms por texto corto).
 - Cabe en GPU de consumo: si, en cualquier GPU moderna de gama media o alta.
-- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, TensorFlow, o servidores de inferencia como HuggingFace Inference Endpoints, vLLM (aunque no esta optimizado para modelos encoder), o FastAPI con transformers.
+- Opciones de despliegue: transformers (PyTorch), ONNX Runtime, TensorFlow, o servidores de inferencia como Hugging Face Inference Endpoints, vLLM (aunque no esta optimizado para modelos encoder), o FastAPI con transformers.
 - Latencia estimada: ~50-150 ms por texto en GPU, ~500 ms en CPU.
 
 ## Comparativa con modelos similares

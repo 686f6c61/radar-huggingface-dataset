@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Quantfinlab-Qwen3.5-2B-Financial-Analysis-LoRA es un adaptador LoRA publicado en HuggingFace por el usuario ramtinasadi bajo el paraguas del proyecto Quantfinlab. Por el propio identificador del repositorio, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) orientado a análisis financiero, aplicado sobre un modelo base de aproximadamente 2.000 millones de parámetros denominado "Qwen3.5-2B" en el nombre del repositorio. El repositorio no incluye model card descriptiva: el único contenido del README es el bloque de metadatos de licencia, por lo que no hay información publicada sobre el dataset de entrenamiento, la composición de datos ni las métricas de evaluación.
+Quantfinlab-Qwen3.5-2B-Financial-Analysis-LoRA es un adaptador LoRA publicado en Hugging Face por el usuario ramtinasadi bajo el paraguas del proyecto Quantfinlab. Por el propio identificador del repositorio, se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) orientado a análisis financiero, aplicado sobre un modelo base de aproximadamente 2.000 millones de parámetros denominado "Qwen3.5-2B" en el nombre del repositorio. El repositorio no incluye model card descriptiva: el único contenido del README es el bloque de metadatos de licencia, por lo que no hay información publicada sobre el dataset de entrenamiento, la composición de datos ni las métricas de evaluación.
 
 La relevancia de este tipo de publicaciones es doble. Por un lado, ilustra el patrón habitual de adaptación de modelos pequeños a dominios verticales (finanzas, legal, sanitario) con un coste de entrenamiento bajo y requisitos de inferencia modestos. Por otro, sirve como ejemplo de repositorio con trazabilidad mínima: licencia declarada (Apache 2.0), pero sin documentación técnica, sin pipeline declarado, sin idiomas especificados y con cero descargas y cero "likes" en el momento de la consulta (fecha de creación y de última actualización: 2026-09-12).
 
@@ -17,7 +17,7 @@ Dado que no se ha publicado información técnica verificable más allá del ide
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio publica un adaptador LoRA; la cuantizacion depende del modelo base y del formato de despliegue elegido) |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace aparece vacío) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face aparece vacío) |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible (se trata de un adaptador LoRA; no se especifica safetensors, GGUF ni ningún otro formato) |
 
@@ -90,7 +90,7 @@ No se dispone de información verificable sobre alternativas comparables en la d
 | Longitud de contexto | no disponible | no disponible | no disponible |
 | Rendimiento en tareas financieras | no disponible | no disponible | no disponible |
 | Licencia | apache-2.0 | no disponible | no disponible |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible | no disponible |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible | no disponible |
 
 Recomendación metodológica: antes de adoptar este adaptador, conviene definir un conjunto de evaluación propio en el dominio financiero (extracción de métricas, clasificación de sentimiento, resumen de resultados) y compararlo contra el modelo base sin adaptar, para aislar el efecto real del ajuste LoRA.
 
@@ -108,7 +108,7 @@ Recomendación metodológica: antes de adoptar este adaptador, conviene definir 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-LoRA
+- Repositorio en Hugging Face: https://huggingface.co/ramtinasadi/Quantfinlab-Qwen3.5-2B-Financial-Analysis-LoRA
 - Perfil del autor: https://huggingface.co/ramtinasadi
 - Modelo base "Qwen3.5-2B": no disponible (el repositorio no enlaza ninguna ficha del modelo base)
 - Paper o informe técnico: no disponible

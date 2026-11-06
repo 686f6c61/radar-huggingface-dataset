@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`08semi/lekiwi_prototype` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers), un enfoque de aprendizaje por imitación que predice secuencias cortas de acciones en lugar de pasos individuales. El modelo lo publica el usuario `08semi` en HuggingFace Hub y se ha generado con la librería LeRobot de HuggingFace, que estandariza el entrenamiento, la serialización y el despliegue de políticas robóticas en PyTorch.
+`08semi/lekiwi_prototype` es una política de robótica entrenada con el método ACT (Action Chunking with Transformers), un enfoque de aprendizaje por imitación que predice secuencias cortas de acciones en lugar de pasos individuales. El modelo lo publica el usuario `08semi` en Hugging Face Hub y se ha generado con la librería LeRobot de Hugging Face, que estandariza el entrenamiento, la serialización y el despliegue de políticas robóticas en PyTorch.
 
 El modelo está pensado para controlar un robot de tipo `lekiwi_client` a partir de dos cámaras (`front` y `wrist`) y un vector de estado de 9 dimensiones, produciendo como salida un vector de acción también de 9 dimensiones. Con 51.674.761 parámetros (aproximadamente 51,7 M) y un tamaño de repositorio de 0,2 GB, es un modelo compacto orientado a inferencia en tiempo real sobre hardware modesto, no a razonamiento general.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `08semi/lekiwi_prototype` (ACT) | 51,7 M | no aplica | sin evaluación publicada | no disponible | HuggingFace Hub |
-| Políticas ACT de referencia en LeRobot | no disponible | no aplica | no disponible | según repositorio | HuggingFace Hub / LeRobot |
-| Diffusion Policy (LeRobot) | no disponible | no aplica | no disponible | según repositorio | HuggingFace Hub / LeRobot |
-| Otras políticas LeRobot para LeKiwi | no disponible | no aplica | no disponible | según repositorio | HuggingFace Hub |
+| `08semi/lekiwi_prototype` (ACT) | 51,7 M | no aplica | sin evaluación publicada | no disponible | Hugging Face Hub |
+| Políticas ACT de referencia en LeRobot | no disponible | no aplica | no disponible | según repositorio | Hugging Face Hub / LeRobot |
+| Diffusion Policy (LeRobot) | no disponible | no aplica | no disponible | según repositorio | Hugging Face Hub / LeRobot |
+| Otras políticas LeRobot para LeKiwi | no disponible | no aplica | no disponible | según repositorio | Hugging Face Hub |
 
 No se dispone de datos públicos de benchmarks que permitan una comparación cuantitativa fiable con alternativas concretas.
 
@@ -82,7 +82,7 @@ No se dispone de datos públicos de benchmarks que permitan una comparación cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/08semi/lekiwi_prototype
+- Modelo en Hugging Face: https://huggingface.co/08semi/lekiwi_prototype
 - Dataset de entrenamiento: https://huggingface.co/datasets/08semi/dataset_prototype1
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=08semi/dataset_prototype1
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

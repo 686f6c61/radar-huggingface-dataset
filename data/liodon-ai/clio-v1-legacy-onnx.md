@@ -81,9 +81,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/clio-v1-legacy-ONNX (este) | ~3.000 M (estimado) | no disponible | ONNX (FP32 y FP16) | other | Publicado en HuggingFace, 0 descargas y 0 likes |
-| NovelAI/clio-v1-legacy (modelo base) | no disponible | no disponible | no disponible | other | Publicado en HuggingFace por NovelAI |
-| liodon-ai/gpt-neo-125m-ONNX | 125 M (por nombre) | no disponible | ONNX | no disponible | Publicado en HuggingFace por el mismo autor |
+| liodon-ai/clio-v1-legacy-ONNX (este) | ~3.000 M (estimado) | no disponible | ONNX (FP32 y FP16) | other | Publicado en Hugging Face, 0 descargas y 0 likes |
+| NovelAI/clio-v1-legacy (modelo base) | no disponible | no disponible | no disponible | other | Publicado en Hugging Face por NovelAI |
+| liodon-ai/gpt-neo-125m-ONNX | 125 M (por nombre) | no disponible | ONNX | no disponible | Publicado en Hugging Face por el mismo autor |
 | Alternativas ONNX de ~3.000 M de otra procedencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación se limita a formato, licencia y disponibilidad: no se han encontrado en la información disponible datos de rendimiento que permitan contrastar calidad, contexto o eficiencia frente a alternativas de la misma categoría y tamaño.
@@ -106,9 +106,9 @@ La comparación se limita a formato, licencia y disponibilidad: no se han encont
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/liodon-ai/clio-v1-legacy-ONNX
+- Repositorio en Hugging Face: https://huggingface.co/liodon-ai/clio-v1-legacy-ONNX
 - Modelo base: https://huggingface.co/NovelAI/clio-v1-legacy
-- Perfil de Liodon AI en HuggingFace: https://huggingface.co/liodon-ai
+- Perfil de Liodon AI en Hugging Face: https://huggingface.co/liodon-ai
 - Organización de Liodon AI en GitHub: https://github.com/Liodon-AI
 - Sitio web de Liodon AI: https://liodon.ai/
 - Ejemplo de exportación ONNX del mismo autor: https://huggingface.co/liodon-ai/gpt-neo-125m-ONNX

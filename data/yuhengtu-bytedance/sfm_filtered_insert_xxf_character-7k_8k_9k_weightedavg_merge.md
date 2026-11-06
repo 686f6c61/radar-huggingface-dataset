@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-7k_8k_9k_weightedavg_merge` es un modelo de lenguaje causal publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No es un modelo entrenado desde cero: es un *merge* (fusión de pesos) generado con la herramienta [mergekit](https://github.com/cg123/mergekit) a partir de tres checkpoints del mismo entrenamiento (`global_step7000`, `global_step8000` y `global_step9000`) mediante el método Linear descrito en el artículo *Model soups* (arXiv:2203.05482). El checkpoint de `global_step9000` actúa además como base del merge y recibe el peso mayor.
+`sfm_filtered_insert_xxf_character-7k_8k_9k_weightedavg_merge` es un modelo de lenguaje causal publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No es un modelo entrenado desde cero: es un *merge* (fusión de pesos) generado con la herramienta [mergekit](https://github.com/cg123/mergekit) a partir de tres checkpoints del mismo entrenamiento (`global_step7000`, `global_step8000` y `global_step9000`) mediante el método Linear descrito en el artículo *Model soups* (arXiv:2203.05482). El checkpoint de `global_step9000` actúa además como base del merge y recibe el peso mayor.
 
-El modelo tiene 6.856.253.440 parámetros (unos 6,86 mil millones) almacenados en safetensors con precisión bfloat16, lo que da un repositorio de 13,7 GB. El tag `gpt_neox` de HuggingFace indica que la arquitectura es la familia GPT-NeoX (transformer decoder-only), y el tag `conversational` sugiere que los checkpoints de origen fueron afinados para diálogo. No hay información publicada sobre longitud de contexto, idiomas, licencia ni datos de entrenamiento.
+El modelo tiene 6.856.253.440 parámetros (unos 6,86 mil millones) almacenados en safetensors con precisión bfloat16, lo que da un repositorio de 13,7 GB. El tag `gpt_neox` de Hugging Face indica que la arquitectura es la familia GPT-NeoX (transformer decoder-only), y el tag `conversational` sugiere que los checkpoints de origen fueron afinados para diálogo. No hay información publicada sobre longitud de contexto, idiomas, licencia ni datos de entrenamiento.
 
 Su relevancia es limitada y de carácter experimental: se trata de un artefacto de investigación interna (las rutas del YAML apuntan a `/opt/tiger/Pan_Safety_Better_Measurement/...`, infraestructura de ByteDance) con cero descargas y cero *likes* en el momento de redactar esta ficha. Resulta útil como caso de estudio de *model merging* y de *checkpoint averaging*, pero no como modelo listo para producción, dado que no se especifica licencia ni procedencia de los datos.
 
@@ -22,7 +22,7 @@ Su relevancia es limitada y de carácter experimental: se trata de un artefacto 
 | Tamaño del repositorio | 13,7 GB |
 | Librería | transformers |
 | Pipeline | text-generation |
-| Fecha de publicación | 2026-09-13 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-09-13 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ Los valores de la columna "comparativa" proceden de la documentación pública d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-7k_8k_9k_weightedavg_merge | 6,86B | no disponible | no disponible | Repositorio en HuggingFace con 0 descargas |
+| sfm_filtered_insert_xxf_character-7k_8k_9k_weightedavg_merge | 6,86B | no disponible | no disponible | Repositorio en Hugging Face con 0 descargas |
 | Pythia-6.9B (EleutherAI) | ~6,9B | 2048 tokens | Apache-2.0 | Público, con paper y checkpoints intermedios |
 | Mistral-7B-v0.1 | ~7,2B | 8192 tokens | Apache-2.0 | Público, ampliamente soportado |
 | Llama-2-7B | ~6,7B | 4096 tokens | Licencia comunitaria de Meta | Público, requiere aceptación de términos |
@@ -91,7 +91,7 @@ La diferencia principal frente a las alternativas es que este modelo no document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-7k_8k_9k_weightedavg_merge
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Artículo *Model soups* (método Linear, arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Búsqueda web asociada: no se han encontrado enlaces relevantes al modelo (los resultados devueltos corresponden a páginas de ayuda de YouTube y no guardan relación con el modelo).

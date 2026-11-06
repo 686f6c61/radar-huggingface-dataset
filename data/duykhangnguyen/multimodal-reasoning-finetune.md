@@ -58,5 +58,5 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/duykhangnguyen/multimodal-reasoning-finetune
+- Repositorio Hugging Face: https://huggingface.co/duykhangnguyen/multimodal-reasoning-finetune
 - Pagina personal del autor: https://duykhuongnguyen.github.io/

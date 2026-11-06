@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch2 es un modelo de lenguaje de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) publicado en HuggingFace por el usuario/organizacion Stage-org. El identificador del repositorio sugiere que se trata de un modelo base ("baseline") de 4B orientado al entorno de agentes AppWorld, entrenado mediante aprendizaje por refuerzo para agentes ("agent-rl") en un proceso por etapas ("iter2", "epoch2"). La etiqueta de arquitectura declarada es qwen3_5, lo que apunta a una familia derivada de Qwen, aunque no se confirma de forma explicita en la documentacion disponible.
+Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch2 es un modelo de lenguaje de 4.539.265.536 parametros (aproximadamente 4,54 mil millones) publicado en Hugging Face por el usuario/organizacion Stage-org. El identificador del repositorio sugiere que se trata de un modelo base ("baseline") de 4B orientado al entorno de agentes AppWorld, entrenado mediante aprendizaje por refuerzo para agentes ("agent-rl") en un proceso por etapas ("iter2", "epoch2"). La etiqueta de arquitectura declarada es qwen3_5, lo que apunta a una familia derivada de Qwen, aunque no se confirma de forma explicita en la documentacion disponible.
 
 El modelo resuelve, previsiblemente, tareas de agente interactivo sobre el benchmark AppWorld (ejecucion de acciones, uso de herramientas y planificacion multi-paso), si bien esta finalidad se deduce del nombre del repositorio y no de una model card publicada. No hay informacion disponible sobre el pipeline, la licencia, los idiomas soportados ni la longitud de contexto, y el repositorio es de publicacion muy reciente, con solo 7 descargas y 0 likes en el momento de la consulta.
 
@@ -68,7 +68,7 @@ No hay datos de MMLU, HumanEval, GSM8K, ni metricas especificas de AppWorld para
 - VRAM estimada en cuantizacion de 4 bits: aproximadamente 2,5-3 GB de pesos; total en torno a 4-6 GB.
 - GPU recomendadas: para inferencia en precision completa, una NVIDIA RTX 4090 (24 GB), A6000 (48 GB), A100 (40/80 GB) o H100 (80 GB) ofrecen margen amplio. Para 4 bits, una RTX 3060 de 12 GB o superior es suficiente.
 - Cabe en GPU de consumo: si, en tarjetas con al menos 8-12 GB de VRAM si se cuantiza; en bf16 requiere aproximadamente 12-16 GB, por lo que entra en RTX 4080, 4090, 3090 o similares.
-- Opciones de despliegue: al ser pesos safetensors, es compatible con HuggingFace Transformers, vLLM y TGI. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no incluida en el repositorio.
+- Opciones de despliegue: al ser pesos safetensors, es compatible con Hugging Face Transformers, vLLM y TGI. Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, no incluida en el repositorio.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -89,6 +89,6 @@ No disponible. No se dispone de datos de benchmarks ni de especificaciones de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch2
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/appworld-baseline-4b-wm-1k-iter2-epoch2-agent-rl-epoch2
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos correspondian a ofertas de practicas y no guardan relacion con el modelo.

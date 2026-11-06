@@ -18,7 +18,7 @@ La relevancia actual es doble: por un lado, permite inferencia de un modelo de 1
 | Longitud de contexto | no disponible; los ejemplos de ejecucion publicados usan `-c 32768` |
 | Tipos de cuantizacion | `AD-3.84bpw-IQ4_XS-M64`, `AD-4.27bpw-Q4_K_M-M64`, `AD-5.00bpw-Q5_K_M-M64`; `mmproj-...-F16.gguf` para vision; `imatrix.gguf` (matriz de importancia) |
 | Idiomas soportados | no disponible |
-| Licencia | `qwen-community-1.0` (etiquetada como `other` en HuggingFace) |
+| Licencia | `qwen-community-1.0` (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (este repositorio, dividido en 33 shards para el build de 4,27 bpw); safetensors en el modelo base |
 
 ## Arquitectura y entrenamiento
@@ -92,7 +92,7 @@ La model card anade una comparacion cualitativa con builds de otros publicadores
 - Sesgos conocidos: no disponible. No se documenta composicion del dataset ni evaluaciones de sesgo.
 - Idiomas soportados: no disponible. No se debe asumir cobertura multilingue.
 - Longitud de contexto: no disponible. El valor de 32768 aparece solo como parametro de ejemplo en los comandos de ejecucion, no como limite certificado del modelo.
-- Restricciones de licencia: la licencia es `qwen-community-1.0`, catalogada como `other` en HuggingFace y enlazada al fichero LICENSE del modelo base. Al ser una licencia de comunidad y no una licencia abierta estandar, es obligatorio revisar sus terminos antes de cualquier uso comercial; la informacion proporcionada no detalla condiciones ni umbrales.
+- Restricciones de licencia: la licencia es `qwen-community-1.0`, catalogada como `other` en Hugging Face y enlazada al fichero LICENSE del modelo base. Al ser una licencia de comunidad y no una licencia abierta estandar, es obligatorio revisar sus terminos antes de cualquier uso comercial; la informacion proporcionada no detalla condiciones ni umbrales.
 - Dependencia de una version concreta de `llama.cpp` con soporte para Qwen3.8-Flash-Next. En el momento de publicacion, la model card indica que los cuantizados seguian subiendose y que el soporte se estaba desplegando progresivamente.
 - Requisito de empaquetado fragil: si la tabla n-gram no queda aislada en su propio shard, el modelo puede fallar con `kIOGPUCommandBufferCallbackErrorOutOfMemory` en Apple Silicon. Ademas, `-fit off` es obligatorio porque el ajuste automatico de parametros de llama.cpp dimensiona mal esta arquitectura.
 - Dependencia de disco: la viabilidad del despliegue depende de la latencia del SSD (menos de 100 microsegundos frente a un presupuesto de 28 ms por token). Un almacenamiento lento degrada directamente el throughput.

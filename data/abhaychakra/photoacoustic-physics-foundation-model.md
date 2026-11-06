@@ -72,7 +72,7 @@ No se han publicado benchmarks de tipo MMLU, HumanEval o GSM8K, al no tratarse d
 
 | Modelo | Parametros | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Photoacoustic Physics Foundation Model | 2,7-8,9 M (4 redes principales; hasta 14,3 M en variantes) | Cadena fotoacustica y sistemas multiphysics 1D/2D/3D | CC-BY-4.0 | Pesos en HuggingFace, codigo en GitHub, demo web |
+| Photoacoustic Physics Foundation Model | 2,7-8,9 M (4 redes principales; hasta 14,3 M en variantes) | Cadena fotoacustica y sistemas multiphysics 1D/2D/3D | CC-BY-4.0 | Pesos en Hugging Face, codigo en GitHub, demo web |
 | Variantes sin sistemas de enlace (mismo estudio) | Similares | Mismos sistemas sin acoplamientos fototermico/termoacustico | CC-BY-4.0 | Incluidas en `all_networks/` del mismo repo |
 | Redes oracle del estudio (entrenadas en la cadena) | Similares | Cadena fotoacustica directamente | CC-BY-4.0 | Incluidas en `all_networks/` |
 
@@ -90,7 +90,7 @@ No hay modelos externos directamente comparables publicados en la informacion di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abhaychakra/photoacoustic-physics-foundation-model
+- Hugging Face: https://huggingface.co/abhaychakra/photoacoustic-physics-foundation-model
 - Repositorio de codigo (GitHub): https://github.com/abhaysadineni/photoacoustic-physics-foundation-model
 - Demo web: https://www.abhaychakra.com/p/photoacoustic-pfm/
 - Paper: no disponible

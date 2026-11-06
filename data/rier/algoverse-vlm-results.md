@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rier/algoverse-vlm-results` es un repositorio alojado en HuggingFace con acceso restringido (gated), creado por el usuario `rier` en julio de 2026 y actualizado en agosto de 2026. El nombre sugiere que se trata de un modelo de visión-lenguaje (VLM) orientado a resultados, pero no se dispone de documentación pública, ficha técnica ni archivos de configuración accesibles sin aceptar las condiciones de uso. El tamaño del repositorio es de 104.5 GB, lo que indica un modelo de gran escala, aunque no se puede confirmar su arquitectura ni sus capacidades sin acceder a los archivos.
+El modelo `rier/algoverse-vlm-results` es un repositorio alojado en Hugging Face con acceso restringido (gated), creado por el usuario `rier` en julio de 2026 y actualizado en agosto de 2026. El nombre sugiere que se trata de un modelo de visión-lenguaje (VLM) orientado a resultados, pero no se dispone de documentación pública, ficha técnica ni archivos de configuración accesibles sin aceptar las condiciones de uso. El tamaño del repositorio es de 104.5 GB, lo que indica un modelo de gran escala, aunque no se puede confirmar su arquitectura ni sus capacidades sin acceder a los archivos.
 
 Al ser un repositorio con acceso restringido y sin metadatos adicionales (pipeline, licencia, idiomas), no es posible evaluar su rendimiento, sus especificaciones técnicas ni sus casos de uso reales. Cualquier afirmación más allá de los datos proporcionados sería especulativa. Esta ficha se limita a reflejar la información disponible públicamente y marca explícitamente los campos no disponibles.
 
@@ -31,7 +31,7 @@ No se ha publicado información sobre la arquitectura, el proceso de entrenamien
 
 ## Casos de uso
 
-Dado que no se dispone de información técnica ni de documentación, no es posible proponer casos de uso concretos y realistas. Cualquier aplicación práctica requeriría primero acceder al modelo, revisar su configuración y evaluar su comportamiento. Se recomienda contactar con el autor o solicitar acceso en HuggingFace para obtener detalles antes de considerar su uso en entornos de producción.
+Dado que no se dispone de información técnica ni de documentación, no es posible proponer casos de uso concretos y realistas. Cualquier aplicación práctica requeriría primero acceder al modelo, revisar su configuración y evaluar su comportamiento. Se recomienda contactar con el autor o solicitar acceso en Hugging Face para obtener detalles antes de considerar su uso en entornos de producción.
 
 ## Benchmarks y rendimiento
 
@@ -49,7 +49,7 @@ No disponible. Al no conocer la arquitectura, el tamaño ni el rendimiento del m
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en HuggingFace para poder descargar los pesos.
+- Acceso restringido: el repositorio es gated, por lo que requiere aceptar condiciones en Hugging Face para poder descargar los pesos.
 - Documentación inexistente: no hay ficha técnica, paper, README ni ejemplos de uso públicos.
 - Licencia desconocida: no se puede determinar si el uso comercial está permitido.
 - Riesgo de sesgos y alucinaciones: al no tener información sobre el entrenamiento, no se puede evaluar su comportamiento en estos aspectos.
@@ -57,6 +57,6 @@ No disponible. Al no conocer la arquitectura, el tamaño ni el rendimiento del m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rier/algoverse-vlm-results
+- Repositorio Hugging Face: https://huggingface.co/rier/algoverse-vlm-results
 
 No se han encontrado otros enlaces (papers, blogs, demos) relacionados con este modelo en la información proporcionada.

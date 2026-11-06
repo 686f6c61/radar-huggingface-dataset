@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`advaitsingh/course-classification` es un prototipo de investigación publicado en HuggingFace por el usuario advaitsingh, orientado a tareas de clasificación (según el autor, "course classification", es decir, clasificación de cursos). No se trata de un modelo entrenado ni de un modelo listo para producción: la propia model card lo describe como un *checkpoint de inicialización válido para pruebas de humo* (smoke tests), sin métricas de benchmark y sin auditoría de robustez, equidad o transferencia de dominio.
+`advaitsingh/course-classification` es un prototipo de investigación publicado en Hugging Face por el usuario advaitsingh, orientado a tareas de clasificación (según el autor, "course classification", es decir, clasificación de cursos). No se trata de un modelo entrenado ni de un modelo listo para producción: la propia model card lo describe como un *checkpoint de inicialización válido para pruebas de humo* (smoke tests), sin métricas de benchmark y sin auditoría de robustez, equidad o transferencia de dominio.
 
 El repositorio declara una arquitectura denominada "Coca", con atención dispersa (sparse), fusión tensorial (tensor fusion), activación approx GELU y normalización ScaleNorm. La model card indica una escala "giant", pero el fichero `model.safetensors` reporta únicamente 49.600 parámetros totales, una discrepancia enorme que conviene tener presente: la etiqueta "giant" parece referirse a la plantilla de configuración generada, no al tamaño real de los pesos almacenados.
 
-Su relevancia actual es limitada y de carácter metodológico: sirve como esqueleto reproducible (`main.py`, `config.json`, `training_args.json`) para experimentos de clasificación con una implementación propia. No hay pesos entrenados, no hay resultados publicados y no hay pipeline declarado en HuggingFace, por lo que cualquier uso real exige entrenamiento previo desde cero por parte de quien lo adopte.
+Su relevancia actual es limitada y de carácter metodológico: sirve como esqueleto reproducible (`main.py`, `config.json`, `training_args.json`) para experimentos de clasificación con una implementación propia. No hay pesos entrenados, no hay resultados publicados y no hay pipeline declarado en Hugging Face, por lo que cualquier uso real exige entrenamiento previo desde cero por parte de quien lo adopte.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada y de carácter metodológico: sirve como esquel
 | Activacion | approx gelu (según la model card) |
 | Normalizacion | scalenorm (según la model card) |
 | Escala declarada | "giant" (discrepante con los 49.600 parametros reales) |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas / likes | 11 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/advaitsingh/course-classification
+- Modelo en Hugging Face: https://huggingface.co/advaitsingh/course-classification
 - Repositorio relacionado del mismo autor: https://huggingface.co/advaitsingh/study-embodied-ai
 - Tutorial "Build a Course Classification AI: Complete Guide to LLM Finetuning": https://www.youtube.com/watch?v=YC1HHK4gQGg
 - Curso "Build Regression, Classification, and Clustering Models" (Coursera): https://www.coursera.org/learn/build-regression-classification-clustering-models

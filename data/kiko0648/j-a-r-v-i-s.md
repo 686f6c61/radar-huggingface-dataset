@@ -2,11 +2,11 @@
 
 ## Resumen
 
-KIKO0648/J.A.R.V.I.S es un repositorio publicado en HuggingFace por el usuario KIKO0648 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 interacciones, y su model card se limita a la cabecera YAML con el campo `license: apache-2.0`, sin ningun contenido tecnico adicional: no se documenta arquitectura, tamano, datos de entrenamiento, tokenizador ni procedimiento de uso.
+KIKO0648/J.A.R.V.I.S es un repositorio publicado en Hugging Face por el usuario KIKO0648 bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 interacciones, y su model card se limita a la cabecera YAML con el campo `license: apache-2.0`, sin ningun contenido tecnico adicional: no se documenta arquitectura, tamano, datos de entrenamiento, tokenizador ni procedimiento de uso.
 
 No es posible, por tanto, identificar que problema resuelve el modelo, a que familia arquitectonica pertenece ni cual es su longitud de contexto. La informacion disponible tampoco permite confirmar si se trata de un modelo de lenguaje, de un adaptador, de un merge de pesos o de un repositorio auxiliar (por ejemplo, una configuracion de agente o un contenedor de artefactos). El nombre del repositorio sugiere una orientacion a asistente conversacional, pero se trata de una inferencia nominal sin respaldo documental.
 
-La relevancia practica de esta ficha es, en consecuencia, limitada: sirve como registro de un repositorio sin documentacion tecnica publica y como advertencia para equipos que evalúan modelos a partir de la metainformacion de HuggingFace. Cualquier decision de adopcion en produccion requeriria inspeccionar directamente los archivos del repositorio (pesos, `config.json`, tokenizador) antes de asumir capacidades.
+La relevancia practica de esta ficha es, en consecuencia, limitada: sirve como registro de un repositorio sin documentacion tecnica publica y como advertencia para equipos que evalúan modelos a partir de la metainformacion de Hugging Face. Cualquier decision de adopcion en produccion requeriria inspeccionar directamente los archivos del repositorio (pesos, `config.json`, tokenizador) antes de asumir capacidades.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KIKO0648/J.A.R.V.I.S
+- Hugging Face: https://huggingface.co/KIKO0648/J.A.R.V.I.S
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

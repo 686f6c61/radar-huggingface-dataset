@@ -86,11 +86,11 @@ No se dispone de informacion sobre otros modelos fine-tuned especificamente para
 - Una perdida de validacion baja no implica una banda IELTS alta.
 - La licencia no esta especificada, lo que limita su uso comercial sin verificacion legal.
 - Solo soporta ingles.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vltruong01/IELTSWritingTask2-Qwen2.5-7B-QLoRA
+- Repositorio Hugging Face: https://huggingface.co/vltruong01/IELTSWritingTask2-Qwen2.5-7B-QLoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/chillies/ielts-writing-task2-essays
 - Guia de tipos de ensayo IELTS Task 2: https://ieltsbeacon.com/ielts-answers/writing/task-2/

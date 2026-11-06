@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orion-Qwen3-1.7B-SFT-v2608 (GGUF) | 1,72B | 4.096 | Q5_K_S, IQ4_XS, Q8_0 | Apache 2.0 (sin confirmar) | HuggingFace |
-| Qwen3-1.7B (original) | 1,72B | 32.768 | safetensors, GGUF | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B (original) | 0,6B | 32.768 | safetensors, GGUF | Apache 2.0 | HuggingFace |
+| Orion-Qwen3-1.7B-SFT-v2608 (GGUF) | 1,72B | 4.096 | Q5_K_S, IQ4_XS, Q8_0 | Apache 2.0 (sin confirmar) | Hugging Face |
+| Qwen3-1.7B (original) | 1,72B | 32.768 | safetensors, GGUF | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B (original) | 0,6B | 32.768 | safetensors, GGUF | Apache 2.0 | Hugging Face |
 
 Nota: La comparativa se basa en la familia Qwen3. El modelo Orion es un fine-tuning de Qwen3-1.7B, pero no hay datos públicos de su rendimiento frente al modelo base. La ventana de contexto de 4K es menor que la de Qwen3-1.7B original (32K), lo que sugiere que el SFT podría haber reducido el contexto durante el entrenamiento.
 
@@ -78,7 +78,7 @@ Nota: La comparativa se basa en la familia Qwen3. El modelo Orion es un fine-tun
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/shoutmon/Orion-Qwen3-1.7B-SFT-v2608-Q5_K_S-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/shoutmon/Orion-Qwen3-1.7B-SFT-v2608-Q5_K_S-GGUF
 - Modelo base original: https://huggingface.co/3tic/Orion-Qwen3-1.7B-SFT-v2608
 - Otras cuantizaciones del mismo autor:
   - IQ4_XS: https://huggingface.co/shoutmon/Orion-Qwen3-1.7B-SFT-v2608-IQ4_XS-GGUF

@@ -78,9 +78,9 @@ La comparativa muestra que este modelo es el único en formato MLX cuantizado, o
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-v2-finnish-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-v2-finnish-mlx-4bit
 - Modelo base Finnish-NLP: https://huggingface.co/Finnish-NLP/whisper-large-v2-finnish
 - Whisper original en GitHub: https://github.com/openai/whisper
 - Documentación de mlx-whisper: https://github.com/ml-explore/mlx-examples/tree/main/whisper
 - Paper de Whisper (PDF): https://cdn.openai.com/papers/whisper.pdf
-- Modelo openai/whisper-large-v2 en HuggingFace: https://huggingface.co/openai/whisper-large-v2
+- Modelo openai/whisper-large-v2 en Hugging Face: https://huggingface.co/openai/whisper-large-v2

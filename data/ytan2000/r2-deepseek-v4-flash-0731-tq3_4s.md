@@ -94,7 +94,7 @@ La comparación directa con la versión anterior de la cuantización muestra una
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/YTan2000/R2-DeepSeek-V4-Flash-0731-TQ3_4S
+- Repositorio Hugging Face: https://huggingface.co/YTan2000/R2-DeepSeek-V4-Flash-0731-TQ3_4S
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Runtime TurboQuant (fork de llama.cpp): https://github.com/turbo-tan/llama.cpp-tq3
 - Receta completa de cuantización y validación: https://github.com/turbo-tan/recipes/tree/main/v9a

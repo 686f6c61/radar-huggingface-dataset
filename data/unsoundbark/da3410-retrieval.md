@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DA3410-retrieval es un artefacto de participacion en una competicion de retrieval de enzimas (prediccion de numeros EC a partir de reacciones quimicas representadas en formato SMILES) publicado por el usuario unsoundbark en HuggingFace. No se trata de un modelo de lenguaje generativo al uso, sino de un pipeline de inferencia empaquetado: el repositorio contiene un script `predict.py` que se ejecuta en CPU y en modo offline, toma un fichero Parquet con columnas `id` y `rxn_smiles` y devuelve un JSON Lines con `id` y `prediction`.
+DA3410-retrieval es un artefacto de participacion en una competicion de retrieval de enzimas (prediccion de numeros EC a partir de reacciones quimicas representadas en formato SMILES) publicado por el usuario unsoundbark en Hugging Face. No se trata de un modelo de lenguaje generativo al uso, sino de un pipeline de inferencia empaquetado: el repositorio contiene un script `predict.py` que se ejecuta en CPU y en modo offline, toma un fichero Parquet con columnas `id` y `rxn_smiles` y devuelve un JSON Lines con `id` y `prediction`.
 
 El autor no documenta arquitectura, tamano de parametros ni metodologia de entrenamiento mas alla de indicar el dataset de entrenamiento (`starkAhmed43/leak-curber-enzyme-retrieval`, revision fijada) y el vocabulario de etiquetas EC procedente de ExPASy ENZYME release 02-Sep-2026 bajo licencia CC BY 4.0. El repositorio ocupa 0,1 GB, lo que sugiere que los pesos, si existen, son de pequeno tamano o que el artefacto incluye principalmente artefactos auxiliares (indices, embeddings o modelos clasicos serializados).
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsoundbark/da3410-retrieval
+- Repositorio Hugging Face: https://huggingface.co/unsoundbark/da3410-retrieval
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/starkAhmed43/leak-curber-enzyme-retrieval
 - Vocabulario EC (ExPASy ENZYME): https://enzyme.expasy.org/

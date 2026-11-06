@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `bobtehbuilder/tds-ga8-carbon-7d414617c8f9`, no contiene un modelo de inteligencia artificial. Se trata de un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning, elaborado como parte de la asignación académica "GA8" del curso TDS (Tools in Data Science) del IIT Madras. El repositorio documenta las emisiones de CO₂ equivalente generadas durante un entrenamiento realizado en una GPU NVIDIA V100 en la región us-east1 de Google Cloud, utilizando la herramienta CodeCarbon para la medición.
+Este repositorio de Hugging Face, identificado como `bobtehbuilder/tds-ga8-carbon-7d414617c8f9`, no contiene un modelo de inteligencia artificial. Se trata de un registro de contabilidad de emisiones de carbono asociado a un proceso de fine-tuning, elaborado como parte de la asignación académica "GA8" del curso TDS (Tools in Data Science) del IIT Madras. El repositorio documenta las emisiones de CO₂ equivalente generadas durante un entrenamiento realizado en una GPU NVIDIA V100 en la región us-east1 de Google Cloud, utilizando la herramienta CodeCarbon para la medición.
 
 La relevancia de este repositorio radica en su naturaleza ejemplar: muestra cómo se puede documentar la huella de carbono de un entrenamiento de modelos de IA siguiendo el estándar de la tarjeta de modelo (model card) con metadatos de emisiones. No aporta ningún peso, arquitectura ni capacidad de inferencia, por lo que no puede ser evaluado ni desplegado como un modelo de lenguaje o de visión.
 
@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable en este repositorio. Los repositor
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-7d414617c8f9
+- Repositorio de Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-7d414617c8f9
 - Repositorio GitHub de un compañero de la asignación: https://github.com/uditaab/IITM_TDS_GA8
 - Repositorio GitHub de otro estudiante: https://github.com/24f1000999/tds-2025-ga8
 - Página de Wikipedia del avión GippsAero GA8 Airvan (sin relación directa, pero aparece en los resultados de búsqueda): https://en.wikipedia.org/wiki/GippsAero_GA8_Airvan

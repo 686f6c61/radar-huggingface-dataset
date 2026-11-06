@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/megablocks` no es un modelo de lenguaje, sino un paquete de kernels de computación de alto rendimiento publicado en el Hub de HuggingFace y distribuido a traves de la libreria `kernels`. Contiene implementaciones optimizadas de primitivas para capas de mezcla de expertos (MoE, *mixture of experts*), en concreto el conjunto de operadores asociados al proyecto MegaBlocks: agregacion de tokens por experto, sumas acumulativas, histogramas, ordenacion por indices, GLU dispersas y capas MLP paralelas con enrutado disperso. El repositorio figura bajo el autor `replicate`, aunque su propia model card indica que el artefacto corresponde a `kernels-community/megablocks`, es decir, un espejo o reempaquetado del paquete comunitario.
+`replicate/megablocks` no es un modelo de lenguaje, sino un paquete de kernels de computación de alto rendimiento publicado en el Hub de Hugging Face y distribuido a traves de la libreria `kernels`. Contiene implementaciones optimizadas de primitivas para capas de mezcla de expertos (MoE, *mixture of experts*), en concreto el conjunto de operadores asociados al proyecto MegaBlocks: agregacion de tokens por experto, sumas acumulativas, histogramas, ordenacion por indices, GLU dispersas y capas MLP paralelas con enrutado disperso. El repositorio figura bajo el autor `replicate`, aunque su propia model card indica que el artefacto corresponde a `kernels-community/megablocks`, es decir, un espejo o reempaquetado del paquete comunitario.
 
 El problema que resuelve es de eficiencia de bajo nivel: entrenar e inferir modelos MoE de forma *dropless* requiere operaciones dispersas que las implementaciones densas convencionales no cubren de forma eficiente. Estos kernels exponen funciones como `ParallelDroplessMLP`, `dMoE`, `SparseGLU`, `SparseMLP`, `MoE`, `get_load_balancing_loss`, ademas de utilidades de bajo nivel (`exclusive_cumsum`, `inclusive_cumsum`, `histogram`, `sort`, `argsort`, `indices`). Su relevancia es practica: permiten sustituir capas de un modelo MoE por implementaciones aceleradas sin reescribir el grafo completo.
 
-La ficha de HuggingFace no aporta parametros de modelo, contexto, idiomas ni datos de entrenamiento porque no existe un modelo entrenado detras. La model card es autogenerada, el repositorio ocupa 0,9 GB, esta marcado con la libreria `kernels`, licencia Apache 2.0, y no registra descargas ni *likes* en el momento de la consulta.
+La ficha de Hugging Face no aporta parametros de modelo, contexto, idiomas ni datos de entrenamiento porque no existe un modelo entrenado detras. La model card es autogenerada, el repositorio ocupa 0,9 GB, esta marcado con la libreria `kernels`, licencia Apache 2.0, y no registra descargas ni *likes* en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/megablocks
+- Repositorio en Hugging Face: https://huggingface.co/replicate/megablocks
 - Repositorio comunitario referenciado en la card: https://huggingface.co/kernels-community/megablocks
 - Libreria `kernels`: https://github.com/huggingface/kernels
 - Repositorio de incidencias de `kernels`: https://github.com/huggingface/kernels/issues/new

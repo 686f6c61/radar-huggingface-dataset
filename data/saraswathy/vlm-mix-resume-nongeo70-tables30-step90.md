@@ -65,7 +65,7 @@ No disponible. Este artefacto es un checkpoint de entrenamiento, no un modelo fi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Saraswathy/vlm-mix-resume-nongeo70-tables30-step90
+- Repositorio Hugging Face: https://huggingface.co/Saraswathy/vlm-mix-resume-nongeo70-tables30-step90
 - Checkpoint relacionado (stem40-geo30-nongeo30-step25): https://huggingface.co/Saraswathy/vlm-mix-resume-stem40-geo30-nongeo30-step25
 - Checkpoint relacionado (broader-stem-expert-step100): https://huggingface.co/Saraswathy/vlm-mix-broader-stem-expert-step100
 - Sitio web del autor: https://saraamjith.com/saraamjith.html

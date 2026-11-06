@@ -4,7 +4,7 @@
 
 `swordenamine/cloudpanel` no es un modelo de inteligencia artificial. El repositorio contiene «CloudPanel — Auto Operations Dashboard», una aplicación web desarrollada en Flask que permite desplegar, arrancar, parar y controlar AppImages en una máquina virtual en la nube desde cualquier navegador, incluido NetHunter. El flujo que automatiza es «Deploy → Start → VNC Tunnel → Connect» sobre una única página, con salida de operaciones en streaming en tiempo real.
 
-El artefacto agrupa un backend Flask con Server-Sent Events (SSE) y una API de túnel VNC, un gestor SSH/SCP, un módulo de operaciones remotas, plantillas Jinja con interfaz tipo terminal oscura y scripts de arranque (`bootstrap.sh`, `run.sh`). No incluye pesos, tokenizador, configuración de transformer ni artefacto de inferencia de ningún tipo; la etiqueta `region:us` es la única metainformación declarada en HuggingFace.
+El artefacto agrupa un backend Flask con Server-Sent Events (SSE) y una API de túnel VNC, un gestor SSH/SCP, un módulo de operaciones remotas, plantillas Jinja con interfaz tipo terminal oscura y scripts de arranque (`bootstrap.sh`, `run.sh`). No incluye pesos, tokenizador, configuración de transformer ni artefacto de inferencia de ningún tipo; la etiqueta `region:us` es la única metainformación declarada en Hugging Face.
 
 Su relevancia es, por tanto, operativa y no de evaluación de modelos: sirve como panel de control para publicar entornos gráficos Linux (por ejemplo, `aipy-pro`) en una VM remota y acceder a ellos por VNC a través de un túnel SSH. El repositorio acumula 0 descargas y 0 likes, no declara pipeline, licencia ni idiomas, y su código no ha pasado por ninguna validación comunitaria.
 
@@ -91,11 +91,11 @@ No se dispone de datos de rendimiento, licencia ni benchmarks de las alternativa
 - Ejecución de `apt install` y escritura de unidades systemd durante el despliegue: requiere privilegios elevados en la VM de destino y otorga al panel capacidad de modificar el sistema.
 - Superficie de ataque relevante: el dashboard lanza comandos SSH y mantiene un subproceso de túnel; no se documentan pruebas de seguridad, análisis estático ni auditoría del código.
 - Falta de validación comunitaria: 0 descargas y 0 likes, sin tests, CI ni historial de mantenimiento documentado en la información disponible.
-- Inconsistencia en los metadatos de HuggingFace: la fecha de creación (2026-10-17) es posterior a la de última actualización (2026-03-14), lo que impide fiarse de la cronología del repositorio.
+- Inconsistencia en los metadatos de Hugging Face: la fecha de creación (2026-10-17) es posterior a la de última actualización (2026-03-14), lo que impide fiarse de la cronología del repositorio.
 - Dependencia de la calidad del AppImage de terceros que se despliega; el panel no verifica firmas ni integridad del binario más allá de la transferencia SCP.
 - Documentación limitada al README: no hay guía de API, referencia de configuración completa ni política de manejo de errores más allá de la tabla de troubleshooting.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/swordenamine/cloudpanel
+- Hugging Face: https://huggingface.co/swordenamine/cloudpanel
 - Paper, blog, repositorio de código independiente o demo: no disponible en la información proporcionada.

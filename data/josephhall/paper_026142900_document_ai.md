@@ -67,5 +67,5 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/josephhall/paper_026142900_document_ai
-- No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados solo mostraban páginas genéricas de Google Scholar, Google Docs, Claude, ChatGPT y HuggingFace).
+- Repositorio en Hugging Face: https://huggingface.co/josephhall/paper_026142900_document_ai
+- No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados solo mostraban páginas genéricas de Google Scholar, Google Docs, Claude, ChatGPT y Hugging Face).

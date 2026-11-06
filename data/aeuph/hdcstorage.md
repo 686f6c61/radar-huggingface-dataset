@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HDCSTORAGE no es un modelo de lenguaje en el sentido habitual, sino un entorno de computación hiperdimensional implementado en Python puro que almacena todo su estado (registros, pila, literales, constantes de cadena y registros de herramientas) como hipervectores de 10 000 bits. Lo desarrolla el usuario AEUPH y se publica en HuggingFace bajo el identificador `AEUPH/hdcstorage`, con la librería `hdcstorage` como dependencia declarada. El repositorio tiene un tamaño de 0.0 GB y, en el momento de la consulta, cero descargas y cero likes, lo que indica un proyecto incipiente o de investigación.
+HDCSTORAGE no es un modelo de lenguaje en el sentido habitual, sino un entorno de computación hiperdimensional implementado en Python puro que almacena todo su estado (registros, pila, literales, constantes de cadena y registros de herramientas) como hipervectores de 10 000 bits. Lo desarrolla el usuario AEUPH y se publica en Hugging Face bajo el identificador `AEUPH/hdcstorage`, con la librería `hdcstorage` como dependencia declarada. El repositorio tiene un tamaño de 0.0 GB y, en el momento de la consulta, cero descargas y cero likes, lo que indica un proyecto incipiente o de investigación.
 
 El sistema se apoya en Binary Spatter Codes: `bind` es una XOR, `bundle` es una mayoría bit a bit, `permute` es una rotación y la similitud se calcula con `popcount`. Sobre esa álgebra se construye un compilador de un lenguaje ensamblador propio (`.hdcasm`), una memoria direccionable por contenido, un intérprete con depurador e IDE, una capa de agentes con herramientas residentes en la propia memoria HDC y un servidor MCP que habla JSON-RPC sobre stdio.
 
@@ -94,5 +94,5 @@ No disponible. HDCSTORAGE no es un modelo de lenguaje ni un modelo neuronal, por
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AEUPH/hdcstorage
+- Modelo en Hugging Face: https://huggingface.co/AEUPH/hdcstorage
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

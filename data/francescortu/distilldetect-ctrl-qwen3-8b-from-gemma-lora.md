@@ -67,6 +67,6 @@ No se dispone de información sobre otros adaptadores de detección de destilaci
 
 ## Enlaces
 
-- [HuggingFace - DistillDetect-ctrl-qwen3-8b-from-gemma-lora](https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-gemma-lora)
+- [Hugging Face - DistillDetect-ctrl-qwen3-8b-from-gemma-lora](https://huggingface.co/francescortu/DistillDetect-ctrl-qwen3-8b-from-gemma-lora)
 - [GitHub - DistillDetect](https://github.com/RajatRawat-creator/DistillDetect)
 - [Qwen3 Technical Report](https://arxiv.org/html/2505.09388v1)

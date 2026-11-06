@@ -91,7 +91,7 @@ Dentro del propio ecosistema, la alternativa natural es MOSS-TTS (8 B), más pes
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Allinsama/OpenMOSS-Team__MOSS-TTS-Realtime
+- Repositorio analizado en Hugging Face: https://huggingface.co/Allinsama/OpenMOSS-Team__MOSS-TTS-Realtime
 - Repositorio oficial del modelo: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Realtime
 - README oficial: https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Realtime/blob/main/README.md
 - Repositorio GitHub de la familia MOSS-TTS: https://github.com/OpenMOSS/MOSS-TTS

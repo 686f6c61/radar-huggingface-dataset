@@ -17,7 +17,7 @@ Su relevancia es practica mas que tecnica: es un recurso de estilizacion inmedia
 | Longitud de contexto | no aplica / no disponible (modelo de generacion de imagen, no de lenguaje) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | minimax-h3-community-license-agreement (etiquetada como "other" en HuggingFace) |
+| Licencia | minimax-h3-community-license-agreement (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | no disponible; el repositorio declara la libreria diffusers |
 | Tipo de artefacto | LoRA (adaptador de difusion) |
 | Modelo base | MiniMaxAI/MiniMax-H3 |
@@ -75,7 +75,7 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| 1980s_horror_movies_minimax_h3 (neph1) | LoRA de difusion | MiniMaxAI/MiniMax-H3 | no disponible | no aplica | minimax-h3-community-license-agreement | HuggingFace, 0,3 GB, 0 descargas |
+| 1980s_horror_movies_minimax_h3 (neph1) | LoRA de difusion | MiniMaxAI/MiniMax-H3 | no disponible | no aplica | minimax-h3-community-license-agreement | Hugging Face, 0,3 GB, 0 descargas |
 | Original en Civitai (mismo autor) | LoRA de difusion | MiniMaxAI/MiniMax-H3 | no disponible | no aplica | no disponible | Civitai (enlace en la model card) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,14 +87,14 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 - Riesgo de sobreajuste estilistico: un LoRA de estilo tiende a reproducir de forma insistente su estetica y puede degradar la adherencia al prompt. Conviene ajustar el peso del adaptador (fuerza del LoRA) segun el caso.
 - Riesgo de similitud con material protegido: al estar entrenado sobre una tematica muy concreta (terror de los ochenta), existe riesgo de generar imagenes que recuerden a fotogramas, carteles, personajes o marcas registradas de peliculas existentes. Es responsabilidad del usuario verificar la originalidad antes de publicar o comercializar el resultado.
 - Contenido potencialmente sensible: la tematica implicita incluye violencia, gore, terror psicologico y representaciones potencialmente perturbadoras. No se documenta ningun filtro ni mecanismo de seguridad propio del adaptador; los filtros, si existen, dependen del pipeline del modelo base.
-- Licencia restrictiva: se aplica la minimax-h3-community-license-agreement, enlazada en la model card. No es una licencia permisiva tipo Apache 2.0 o MIT; es imprescindible leerla antes de cualquier uso comercial, y sus condiciones pueden diferir de las de otros LoRA publicados en HuggingFace.
+- Licencia restrictiva: se aplica la minimax-h3-community-license-agreement, enlazada en la model card. No es una licencia permisiva tipo Apache 2.0 o MIT; es imprescindible leerla antes de cualquier uso comercial, y sus condiciones pueden diferir de las de otros LoRA publicados en Hugging Face.
 - Idiomas no documentados: se desconoce el rendimiento con prompts en castellano u otros idiomas distintos del ingles. La palabra de activacion esta en ingles (`80s_horror`) y su uso resulta obligado para invocar el estilo.
 - Sin informacion de resolucion, relacion de aspecto ni pasos de muestreo recomendados: el usuario debe experimentar para encontrar configuraciones validas.
 - Cero garantias de mantenimiento: el autor no documenta una hoja de ruta, versiones ni soporte.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/neph1/1980s_horror_movies_minimax_h3
+- Repositorio en Hugging Face: https://huggingface.co/neph1/1980s_horror_movies_minimax_h3
 - Archivos del repositorio: https://huggingface.co/neph1/1980s_horror_movies_minimax_h3/tree/main
 - Modelo base MiniMaxAI/MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Licencia minimax-h3-community-license-agreement: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE

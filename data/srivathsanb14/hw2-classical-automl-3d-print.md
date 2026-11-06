@@ -81,7 +81,7 @@ Advertencia del propio autor: con solo 5 ejemplos de prueba, una unica prediccio
 - Coste de entrenamiento: 28,5 segundos de tiempo real con un presupuesto configurado de 300 segundos, en Python 3.13.15.
 - Opciones de despliegue: AutoGluon Tabular mediante `TabularPredictor.load` sobre el contenido de `autogluon_predictor_dir.zip`. vLLM, llama.cpp, Ollama y TGI no aplican a este tipo de artefacto.
 - Latencia y throughput: no disponible; no se publican mediciones de latencia de inferencia.
-- Tamano del repositorio: 0,0 GB segun los metadatos de HuggingFace.
+- Tamano del repositorio: 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -89,7 +89,7 @@ No se han encontrado en la informacion disponible otros modelos publicados compa
 
 | Modelo | Parametros | Contexto | Rendimiento en prueba | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `srivathsanb14/hw2-classical-automl-3d-print` | No aplica (tabular) | No aplica (5 features) | Accuracy 1,0000; balanced accuracy 1,0000 sobre 5 filas | MIT (repo) / CC BY 4.0 (dataset) | HuggingFace, 0 descargas, 0 likes |
+| `srivathsanb14/hw2-classical-automl-3d-print` | No aplica (tabular) | No aplica (5 features) | Accuracy 1,0000; balanced accuracy 1,0000 sobre 5 filas | MIT (repo) / CC BY 4.0 (dataset) | Hugging Face, 0 descargas, 0 likes |
 | Linea base mayoritaria | No aplica | No aplica | Accuracy 0,6000; balanced accuracy 0,5000 | No disponible | Definida en la propia model card |
 | Otras alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -109,7 +109,7 @@ No se han encontrado en la informacion disponible otros modelos publicados compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/srivathsanb14/hw2-classical-automl-3d-print
+- Modelo en Hugging Face: https://huggingface.co/srivathsanb14/hw2-classical-automl-3d-print
 - Dataset de origen (HW1, yennik16): https://huggingface.co/datasets/yennik16/3d-print-jobs-tabular
 - Artefacto descargable: `autogluon_predictor_dir.zip` (referenciado en la model card del repositorio)
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo; las paginas devueltas corresponden a la web municipal de Villeneuve-Saint-Georges y no guardan relacion con el artefacto.

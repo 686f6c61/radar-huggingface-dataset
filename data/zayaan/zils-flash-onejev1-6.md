@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zayaan/zils-flash-onejev1.6
+- Repositorio en Hugging Face: https://huggingface.co/Zayaan/zils-flash-onejev1.6
 - Modelo base: https://huggingface.co/OmniJev/OneJev1.6-9B
 - Subred Bittensor 127 (Zils): no disponible en la información proporcionada.
 - Paper, blog o demo: no disponibles.

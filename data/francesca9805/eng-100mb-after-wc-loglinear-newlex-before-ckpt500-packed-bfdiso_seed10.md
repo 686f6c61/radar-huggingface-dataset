@@ -4,7 +4,7 @@
 
 Este modelo es un ajuste fino (fine-tuning) supervisado del checkpoint base `francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed10`, publicado por el usuario francesca9805. Se trata de un experimento de investigación más que de un modelo de propósito general: el nombre del repositorio sugiere un pipeline de trabajo sobre tokenizadores y presupuestos de entrenamiento (100 MB de datos, empaquetado "packed", checkpoint 500) con variantes de inicialización controladas por semilla (seed10).
 
-El modelo tiene 124.770.816 parámetros totales (aproximadamente 125 M), lo que lo sitúa en la misma escala que GPT-2 small. La arquitectura declarada en las etiquetas de HuggingFace es GPT-2, con pipeline de `text-generation`, y ha sido entrenado con SFT (supervised fine-tuning) usando la librería TRL 0.23.0 sobre Transformers 4.56.2. Su relevancia es limitada fuera del contexto del experimento: se publica como artefacto reproducible de una línea de trabajo concreta, no como modelo listo para producción.
+El modelo tiene 124.770.816 parámetros totales (aproximadamente 125 M), lo que lo sitúa en la misma escala que GPT-2 small. La arquitectura declarada en las etiquetas de Hugging Face es GPT-2, con pipeline de `text-generation`, y ha sido entrenado con SFT (supervised fine-tuning) usando la librería TRL 0.23.0 sobre Transformers 4.56.2. Su relevancia es limitada fuera del contexto del experimento: se publica como artefacto reproducible de una línea de trabajo concreta, no como modelo listo para producción.
 
 No se dispone de model card detallada, licencia declarada, idiomas confirmados ni resultados de benchmarks. Cualquier evaluación de capacidades debe considerarse preliminar y pendiente de verificación empírica por parte del usuario.
 
@@ -12,7 +12,7 @@ No se dispone de model card detallada, licencia declarada, idiomas confirmados n
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun etiquetas de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun etiquetas de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | HuggingFace (repo publico, 0 descargas) |
+| eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10 | 124,77 M | no disponible | no disponible | Hugging Face (repo publico, 0 descargas) |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Pesos publicos en el Hub |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | Pesos publicos en el Hub |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Pesos publicos en el Hub |
 | GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT | Pesos publicos en el Hub |
 
 La comparativa se limita a la escala de parametros: no existen datos de rendimiento publicados para el modelo analizado, por lo que no es posible contrastarlo en calidad frente a estas alternativas. La diferencia principal es que GPT-2 y DistilGPT-2 cuentan con licencias explicitas y documentacion extensa, mientras que este checkpoint carece de ambas.
@@ -95,7 +95,7 @@ La comparativa se limita a la escala de parametros: no existen datos de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
+- Hugging Face: https://huggingface.co/francesca9805/eng-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-eng-before-100mb-packed-bfdiso_seed10
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/jp88s0fa

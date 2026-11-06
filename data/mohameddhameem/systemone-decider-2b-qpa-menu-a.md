@@ -94,10 +94,10 @@ Diferencias frente a los routers SLR (intervalos de confianza al 95 %):
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SystemOne-Decider 2B qpa menu-a | 2B (base) + LoRA r16 | no disponible | Router de dos etapas sobre HotpotQA | apache-2.0 | HuggingFace y GitHub del autor |
+| SystemOne-Decider 2B qpa menu-a | 2B (base) + LoRA r16 | no disponible | Router de dos etapas sobre HotpotQA | apache-2.0 | Hugging Face y GitHub del autor |
 | SLR SFT router (label), Qwen2.5-1.5B LoRA | 1,5B | no disponible | Router de dos etapas (referencia del paper) | no disponible | no disponible |
 | SLR SFT router (label) + reward | 1,5B | no disponible | Router con señal de reward | no disponible | no disponible |
-| Strands Decider 2B hobson v21 | 2B | no disponible | Torso base del decider | no disponible | HuggingFace (StrandsAgents) |
+| Strands Decider 2B hobson v21 | 2B | no disponible | Torso base del decider | no disponible | Hugging Face (StrandsAgents) |
 
 En términos de AIQ, el modelo (0,728 en seed 0, 0,731 en ensamblado) supera a los routers SLR SFT (0,724 y 0,725) y a las rutas fijas (0,693), aunque las diferencias individuales no son estadísticamente significativas salvo en el caso del ensamblado frente a SLR SFT (label) antes de imputar su coste.
 
@@ -116,7 +116,7 @@ En términos de AIQ, el modelo (0,728 en seed 0, 0,731 en ensamblado) supera a l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohameddhameem/systemone-decider-2b-qpa-menu-a
+- Modelo en Hugging Face: https://huggingface.co/mohameddhameem/systemone-decider-2b-qpa-menu-a
 - Modelo base Strands Decider 2B hobson v21: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21
 - Código del router (`systemone_decider.route.MenuRouter`): https://github.com/mohameddhameem/systemone-decider
 - Proyecto STAIR: https://github.com/mohameddhameem/STAIR

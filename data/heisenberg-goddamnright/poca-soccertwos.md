@@ -34,7 +34,7 @@ No se ha publicado en la informacion disponible el numero de pasos de entrenamie
 - Comportamiento multiagente dentro de un equipo, con coordinacion implicita aprendida durante el entrenamiento.
 - Inferencia exportable a .nn para Unity (Sentis/Barracuda) y a .onnx para ejecucion fuera del editor.
 - Reanudacion del entrenamiento desde el checkpoint publicado mediante ML-Agents.
-- Visualizacion en navegador a traves del visor de agentes de la organizacion unity en HuggingFace.
+- Visualizacion en navegador a traves del visor de agentes de la organizacion unity en Hugging Face.
 - No dispone de generacion de texto, razonamiento simbolico, codigo, vision general, tool calling ni capacidades multilingues: no es un modelo de lenguaje.
 
 ## Casos de uso
@@ -42,7 +42,7 @@ No se ha publicado en la informacion disponible el numero de pasos de entrenamie
 - Investigacion en credit assignment multiagente: usar SoccerTwos como banco de pruebas para comparar POCA/MA-POCA con otros esquemas de asignacion de credito, midiendo Elo y tasa de victorias frente a heuristicas.
 - Reproducibilidad de experimentos de RL: el checkpoint permite reanudar el entrenamiento con `mlagents-learn --resume` y continuar desde el mismo estado sin repetir la fase inicial de aprendizaje.
 - Docencia y formacion: es un ejemplo listo para ilustrar el ciclo completo de ML-Agents (definicion del entorno, entrenamiento, exportacion y despliegue) en cursos de aprendizaje por refuerzo.
-- Demostraciones interactivas en navegador: el visor de HuggingFace permite mostrar el agente jugando sin necesidad de instalar Unity, util para articulos, clases o revisiones rapidas.
+- Demostraciones interactivas en navegador: el visor de Hugging Face permite mostrar el agente jugando sin necesidad de instalar Unity, util para articulos, clases o revisiones rapidas.
 - Baseline para algoritmos propios: sirve como referencia de partida al evaluar una implementacion nueva de POCA o de otro entrenador sobre el mismo entorno y la misma semilla.
 - Pruebas de inferencia en tiempo real: exportar a ONNX y medir latencia por paso en CPU frente a GPU, para estudiar el coste de la inferencia en un bucle de simulacion fisica.
 - Experimentos de sim2real o de curricula: el agente puede congelarse como oponente o companero de equipo mientras se entrena una politica nueva, un patron habitual en self-play por ligas.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponibles. Para una politica de este tipo, cualquier GPU con soporte para Unity Sentis, ONNX Runtime o PyTorch es suficiente; no se requiere hardware de centro de datos.
 - Cabe en GPU de consumo: previsiblemente si, incluida gama de entrada, y probablemente tambien en CPU, aunque no hay mediciones publicadas que lo confirmen.
 - Unidades de procesamiento alternativas: NPU o GPU integrada mediante ONNX Runtime, si el despliegue se hace fuera de Unity.
-- Opciones de despliegue: Unity con Sentis o Barracuda (.nn), ONNX Runtime (.onnx), y el visor web de la organizacion unity en HuggingFace para reproduccion directa.
+- Opciones de despliegue: Unity con Sentis o Barracuda (.nn), ONNX Runtime (.onnx), y el visor web de la organizacion unity en Hugging Face para reproduccion directa.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -84,9 +84,9 @@ No se dispone de datos comparativos verificables para este checkpoint concreto. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heisenberg-goddamnright/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/heisenberg-goddamnright/poca-SoccerTwos
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
-- Tutorial corto del curso de deep RL de HuggingFace: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
+- Tutorial corto del curso de deep RL de Hugging Face: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction
-- Visor de agentes de Unity en HuggingFace: https://huggingface.co/unity
+- Visor de agentes de Unity en Hugging Face: https://huggingface.co/unity

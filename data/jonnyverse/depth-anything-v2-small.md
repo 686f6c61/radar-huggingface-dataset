@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos del modelo base y de MiDaS, pero no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JONNYVERSE/depth-anything-v2-small
+- Repositorio Hugging Face: https://huggingface.co/JONNYVERSE/depth-anything-v2-small
 - Modelo base original: https://huggingface.co/depth-anything/Depth-Anything-V2-Small
 - Repositorio GitHub de Depth Anything V2: https://github.com/DepthAnything/Depth-Anything-V2
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

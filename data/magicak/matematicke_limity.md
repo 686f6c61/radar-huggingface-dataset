@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Magicak/Matematicke_limity es un repositorio alojado en HuggingFace bajo la librería transformers que, a fecha de la informacion disponible, no contiene ningun artefacto de modelo descargable: el tamano del repositorio es de 0.0 GB. La model card es la plantilla autogenerada por el Hub y no ha sido completada por el autor, por lo que no se declara ni la arquitectura, ni el numero de parametros, ni el contexto, ni el proceso de entrenamiento. El nombre sugiere contenido relacionado con limites matematicos (en checo, "Matematicke limity"), pero no hay evidencia tecnica que respalde ninguna funcionalidad concreta.
+Magicak/Matematicke_limity es un repositorio alojado en Hugging Face bajo la librería transformers que, a fecha de la informacion disponible, no contiene ningun artefacto de modelo descargable: el tamano del repositorio es de 0.0 GB. La model card es la plantilla autogenerada por el Hub y no ha sido completada por el autor, por lo que no se declara ni la arquitectura, ni el numero de parametros, ni el contexto, ni el proceso de entrenamiento. El nombre sugiere contenido relacionado con limites matematicos (en checo, "Matematicke limity"), pero no hay evidencia tecnica que respalde ninguna funcionalidad concreta.
 
 No se dispone de informacion sobre el desarrollador (Magicak), la licencia, los idiomas soportados ni el pipeline de la tarea. El unico dato sustantivo es la etiqueta `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico y que aparece en la plantilla estandar de model card; no es una referencia al modelo en si. El repositorio incluye la etiqueta `endpoints_compatible`, lo que indica que el Hub lo considera desplegable mediante Inference Endpoints, aunque sin pesos publicados esa compatibilidad es meramente nominal.
 
@@ -23,7 +23,7 @@ En su estado actual, este repositorio no es evaluable como modelo: no hay safete
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla por defecto de HuggingFace y todos los campos tecnicos aparecen como "[More Information Needed]". No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un modelo hibrido.
+No se ha publicado informacion sobre la arquitectura del modelo. La model card es la plantilla por defecto de Hugging Face y todos los campos tecnicos aparecen como "[More Information Needed]". No se especifica si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura de espacio de estados o un modelo hibrido.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, filtrado), sobre la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento extendido. El repositorio no contiene pesos, configuracion ni tokenizador, lo que impide cualquier inspeccion directa de la arquitectura.
 
@@ -85,7 +85,7 @@ La comparativa con estos modelos solo es orientativa: no hay datos del modelo ev
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Magicak/Matematicke_limity
+- Repositorio en Hugging Face: https://huggingface.co/Magicak/Matematicke_limity
 - Referencia citada en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico mencionada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

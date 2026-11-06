@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`asrarkhann112/moss-realistic-snapshot-lora` es un adaptador LoRA publicado en HuggingFace por el usuario asrarkhann112. Por el nombre y el tamano del repositorio (0,6 GB) se trata de un conjunto de pesos de ajuste fino de bajo rango, no de un modelo base completo, presumiblemente destinado a un modelo de generacion de imagen o de texto cuyo nombre no se especifica en la informacion disponible. La model card publicada no contiene mas que la declaracion de licencia, sin descripcion, sin instrucciones de uso y sin datos de entrenamiento.
+`asrarkhann112/moss-realistic-snapshot-lora` es un adaptador LoRA publicado en Hugging Face por el usuario asrarkhann112. Por el nombre y el tamano del repositorio (0,6 GB) se trata de un conjunto de pesos de ajuste fino de bajo rango, no de un modelo base completo, presumiblemente destinado a un modelo de generacion de imagen o de texto cuyo nombre no se especifica en la informacion disponible. La model card publicada no contiene mas que la declaracion de licencia, sin descripcion, sin instrucciones de uso y sin datos de entrenamiento.
 
 El repositorio no incluye informacion sobre el modelo base sobre el que se aplica el adaptador, la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados. Tampoco se han publicado resultados de benchmarks, demos ni ejemplos de uso. Con cero descargas y cero likes en el momento de la consulta, se trata de un artefacto recien creado y sin validacion por parte de la comunidad.
 
@@ -72,4 +72,4 @@ No disponible. No se puede establecer una comparativa sin conocer el modelo base
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asrarkhann112/moss-realistic-snapshot-lora
+- Repositorio en Hugging Face: https://huggingface.co/asrarkhann112/moss-realistic-snapshot-lora

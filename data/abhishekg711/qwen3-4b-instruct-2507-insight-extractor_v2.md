@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-Insight-Extractor_v2 es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario AbhishekG711 en HuggingFace. Se trata de un derivado del checkpoint cuantizado a 4 bits de Unsloth (`unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`), reentrenado con la libreria Unsloth y TRL y exportado en safetensors, presumiblemente fusionando los adaptadores sobre los pesos base. El modelo hereda la arquitectura transformer densa de Qwen3, con 4.022.468.096 parametros (aproximadamente 4,02 mil millones), y la licencia Apache 2.0 del modelo original.
+Qwen3-4B-Instruct-2507-Insight-Extractor_v2 es un ajuste fino (fine-tuning) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario AbhishekG711 en Hugging Face. Se trata de un derivado del checkpoint cuantizado a 4 bits de Unsloth (`unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`), reentrenado con la libreria Unsloth y TRL y exportado en safetensors, presumiblemente fusionando los adaptadores sobre los pesos base. El modelo hereda la arquitectura transformer densa de Qwen3, con 4.022.468.096 parametros (aproximadamente 4,02 mil millones), y la licencia Apache 2.0 del modelo original.
 
 Por el nombre del repositorio, la especializacion declarada es la extraccion de insights (Insight-Extractor), es decir, la identificacion y sintesis de ideas clave a partir de texto de entrada. Sin embargo, la model card publicada no documenta el conjunto de datos de entrenamiento, el numero de pasos, la composicion del dataset ni ninguna evaluacion, por lo que la unica informacion verificable es la procedencia del modelo base y el hecho de que se entreno con el stack Unsloth + TRL.
 
@@ -25,7 +25,7 @@ Su relevancia practica radica en que parte de un modelo de 4B con ventana de con
 
 La arquitectura subyacente es la de Qwen3-4B-Instruct-2507: un transformer denso decoder-only con 36 capas, hidden size de 2560, 32 cabezas de atencion y 8 cabezas KV (Grouped Query Attention, ratio 4:1), dimension de cabeza 128, normalizacion RMSNorm, activacion SwiGLU y embeddings atados (tie_word_embeddings). La variante "Instruct-2507" de Qwen3 elimina el modo de pensamiento (thinking mode) y opera exclusivamente en modo no-thinking, optimizada para seguimiento de instrucciones, razonamiento, codigo y contexto largo. Estos datos provienen de la configuracion publica del modelo base, no de la model card del ajuste fino.
 
-El entrenamiento de este derivado se realizo con Unsloth y la libreria TRL de HuggingFace, partiendo del checkpoint cuantizado a 4 bits de Unsloth, lo que sugiere un ajuste tipo QLoRA sobre el modelo base. La model card no indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO, ni hiperparametros como learning rate, rango LoRA o numero de pasos: toda esa informacion figura como no disponible. Tampoco se documenta ninguna innovacion tecnica propia mas alla del uso de Unsloth para acelerar el entrenamiento.
+El entrenamiento de este derivado se realizo con Unsloth y la libreria TRL de Hugging Face, partiendo del checkpoint cuantizado a 4 bits de Unsloth, lo que sugiere un ajuste tipo QLoRA sobre el modelo base. La model card no indica el numero de tokens de entrenamiento, la composicion del dataset, si hubo RLHF/DPO, ni hiperparametros como learning rate, rango LoRA o numero de pasos: toda esa informacion figura como no disponible. Tampoco se documenta ninguna innovacion tecnica propia mas alla del uso de Unsloth para acelerar el entrenamiento.
 
 ## Capacidades
 
@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-Insight-Extractor_v2 | 4,02B | No especificado en la ficha del ajuste; 262.144 nativos en el modelo base | Apache 2.0 | HuggingFace, safetensors |
-| Qwen3-4B-Instruct-2507 (modelo base) | 4,02B | 262.144 nativos, hasta 1.010.000 con YaRN | Apache 2.0 | HuggingFace, safetensors y cuantizaciones de terceros |
-| Llama-3.2-3B-Instruct | 3,21B | 128.000 | Llama 3.2 Community License | HuggingFace, acceso con aceptacion de terminos |
-| Gemma-3-4B-IT | 4B aprox. | 128.000 | Gemma Terms of Use | HuggingFace, acceso con aceptacion de terminos |
-| Phi-4-mini-instruct | 3,8B | 128.000 | MIT | HuggingFace |
+| Qwen3-4B-Instruct-2507-Insight-Extractor_v2 | 4,02B | No especificado en la ficha del ajuste; 262.144 nativos en el modelo base | Apache 2.0 | Hugging Face, safetensors |
+| Qwen3-4B-Instruct-2507 (modelo base) | 4,02B | 262.144 nativos, hasta 1.010.000 con YaRN | Apache 2.0 | Hugging Face, safetensors y cuantizaciones de terceros |
+| Llama-3.2-3B-Instruct | 3,21B | 128.000 | Llama 3.2 Community License | Hugging Face, acceso con aceptacion de terminos |
+| Gemma-3-4B-IT | 4B aprox. | 128.000 | Gemma Terms of Use | Hugging Face, acceso con aceptacion de terminos |
+| Phi-4-mini-instruct | 3,8B | 128.000 | MIT | Hugging Face |
 
 En cuanto a rendimiento comparado, no hay datos verificables: el fine-tuning no publica benchmarks, y no procede extrapolar los resultados del modelo base. La ventaja diferencial de este derivado frente a las alternativas es exclusivamente su licencia Apache 2.0 y su tamano reducido, no un rendimiento documentado.
 
@@ -92,10 +92,10 @@ En cuanto a rendimiento comparado, no hay datos verificables: el fine-tuning no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v2
+- Modelo en Hugging Face: https://huggingface.co/AbhishekG711/Qwen3-4B-Instruct-2507-Insight-Extractor_v2
 - Modelo base utilizado: https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit
 - Modelo original Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 
 Nota: los resultados de la busqueda web realizada no contienen enlaces relevantes al modelo; unicamente devuelven paginas genericas de servicios (Google, Google Drive, TikTok, Google Docs, IDDF) sin relacion con esta ficha.

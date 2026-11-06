@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maxbhartman/anchor-removal-mmlu-tau0.6-attention-k20-seed44` es un checkpoint publicado en HuggingFace por el usuario maxbhartman. Se trata, por su identificador y por la ausencia total de documentacion, de un artefacto de investigacion mas que de un modelo listo para produccion: no incluye model card, no declara licencia, no declara idiomas soportados ni pipeline de inferencia, y acumula 11 descargas y 0 likes desde su publicacion.
+El modelo `maxbhartman/anchor-removal-mmlu-tau0.6-attention-k20-seed44` es un checkpoint publicado en Hugging Face por el usuario maxbhartman. Se trata, por su identificador y por la ausencia total de documentacion, de un artefacto de investigacion mas que de un modelo listo para produccion: no incluye model card, no declara licencia, no declara idiomas soportados ni pipeline de inferencia, y acumula 11 descargas y 0 likes desde su publicacion.
 
 El nombre del repositorio codifica una configuracion experimental concreta: eliminacion de anclas ("anchor-removal"), evaluacion sobre MMLU, temperatura de muestreo 0.6, una intervencion en el mecanismo de atencion parametrizada con k=20 y una semilla aleatoria fija (seed 44). Esta lectura procede unicamente del propio identificador y no de documentacion tecnica publicada, por lo que debe tratarse como una hipotesis sobre la naturaleza del checkpoint.
 
@@ -69,7 +69,7 @@ No se han identificado modelos comparables en la informacion disponible. No cons
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anchor-removal-mmlu-tau0.6-attention-k20-seed44 | no disponible | no disponible | no disponible | HuggingFace, 11 descargas |
+| anchor-removal-mmlu-tau0.6-attention-k20-seed44 | no disponible | no disponible | no disponible | Hugging Face, 11 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han identificado modelos comparables en la informacion disponible. No cons
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k20-seed44
+- Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-mmlu-tau0.6-attention-k20-seed44
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

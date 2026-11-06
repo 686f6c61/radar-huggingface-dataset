@@ -144,7 +144,7 @@ Lectura de la tabla: en mAP@50, este checkpoint queda por debajo de YOLOv26s, la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolo11s
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolo11s
 - Dataset UAVDT (version del autor): https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base: https://huggingface.co/Ultralytics/YOLO11

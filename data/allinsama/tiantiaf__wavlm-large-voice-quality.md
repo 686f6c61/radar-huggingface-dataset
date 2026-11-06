@@ -1,7 +1,7 @@
 # Allinsama/tiantiaf__wavlm-large-voice-quality
 
 ## Resumen
-El modelo es un clasificador de audio basado en WavLM-large, ajustado para etiquetar calidad vocal percibida en 25 categorías agrupadas en tono, textura, volumen, claridad y ritmo. Lo publica el usuario de HuggingFace Allinsama, mientras que la model card atribuye la implementación y el artículo asociado a Tiantian Feng y colaboradores en el marco de Vox-Profile. No es un modelo generativo de texto, sino un modelo discriminativo de audio que recibe voz de hasta 15 segundos a 16 kHz mono y devuelve logits multi-etiqueta.
+El modelo es un clasificador de audio basado en WavLM-large, ajustado para etiquetar calidad vocal percibida en 25 categorías agrupadas en tono, textura, volumen, claridad y ritmo. Lo publica el usuario de Hugging Face Allinsama, mientras que la model card atribuye la implementación y el artículo asociado a Tiantian Feng y colaboradores en el marco de Vox-Profile. No es un modelo generativo de texto, sino un modelo discriminativo de audio que recibe voz de hasta 15 segundos a 16 kHz mono y devuelve logits multi-etiqueta.
 
 Con 317.721.586 parámetros, reutiliza el backbone de representación de voz `microsoft/wavlm-large` y añade una cabeza de clasificación multi-etiqueta. Su relevancia actual está en la caracterización automática de rasgos de voz para investigación lingüística, organización de archivos sonoros y evaluación auxiliar de voces sintéticas, dentro de un contexto de creciente interés por los benchmarks de modelos fundacionales de habla.
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM orientativa para inferencia: alrededor de 2-4 GB en FP32 y 1-2 GB en FP16 para audio de hasta 15 s y batch pequeño; es una estimación a partir del tamaño del modelo, no una cifra confirmada por el autor.
 - Cabe en GPU de consumo: sí, en tarjetas con 4-6 GB o más, como GTX 1660, RTX 3060, RTX 4060 o RTX 4090, especialmente en FP16 y batch 1.
 - Para lotes grandes o despliegue de alta concurrencia se recomiendan GPU de centro de datos como A100 o H100.
-- Despliegue oficial: PyTorch mediante `WavLMWrapper.from_pretrained` del repositorio Vox-Profile y pesos de HuggingFace.
+- Despliegue oficial: PyTorch mediante `WavLMWrapper.from_pretrained` del repositorio Vox-Profile y pesos de Hugging Face.
 - No hay soporte oficial documentado en vLLM, llama.cpp, Ollama ni TGI; no es un modelo generativo de texto y esas herramientas no son adecuadas.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto o entrada | Tarea | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Allinsama/tiantiaf__wavlm-large-voice-quality | 317.721.586 | Audio de hasta 15 s, 16 kHz mono | Clasificación multi-etiqueta de calidad vocal en 25 etiquetas | openrail con restricción de uso no comercial en la model card | HuggingFace |
-| microsoft/wavlm-large | no disponible en la información | no disponible | Backbone de representación de voz, sin cabeza de clasificación específica | no disponible | HuggingFace |
+| Allinsama/tiantiaf__wavlm-large-voice-quality | 317.721.586 | Audio de hasta 15 s, 16 kHz mono | Clasificación multi-etiqueta de calidad vocal en 25 etiquetas | openrail con restricción de uso no comercial en la model card | Hugging Face |
+| microsoft/wavlm-large | no disponible en la información | no disponible | Backbone de representación de voz, sin cabeza de clasificación específica | no disponible | Hugging Face |
 | Clasificadores específicos de calidad vocal comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de alternativas directamente comparables con resultados públicos en la información proporcionada. La comparación más directa es con el modelo base `microsoft/wavlm-large`, que no incluye la cabeza de clasificación de 25 etiquetas ni el ajuste sobre ParaSpeechCaps.
@@ -89,7 +89,7 @@ No se dispone de alternativas directamente comparables con resultados públicos 
 - El uso sobre voces humanas exige consentimiento, base legal y cumplimiento de la normativa de protección de datos.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/Allinsama/tiantiaf__wavlm-large-voice-quality)
+- [Modelo en Hugging Face](https://huggingface.co/Allinsama/tiantiaf__wavlm-large-voice-quality)
 - [Artículo Vox-Profile en arXiv](https://arxiv.org/abs/2505.14648)
 - [PDF del artículo Vox-Profile](https://arxiv.org/pdf/2505.14648)
 - [Repositorio Vox-Profile](https://github.com/tiantiaf0627/vox-profile-release)

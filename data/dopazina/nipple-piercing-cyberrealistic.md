@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dopazina/nipple-piercing-CyberRealistic` es un adaptador LoRA de difusión (text-to-image) publicado por el usuario dopazina en HuggingFace. Se trata de un LoRA de concepto entrenado sobre el checkpoint `cyberdelia/CyberRealistic`, cuyo objetivo es inyectar un detalle anatómico concreto (un tipo de piercing en los pezones) en las generaciones del modelo base. Está etiquetado con `not-for-all-audiences`, por lo que su ámbito de uso es contenido para adultos.
+El modelo `dopazina/nipple-piercing-CyberRealistic` es un adaptador LoRA de difusión (text-to-image) publicado por el usuario dopazina en Hugging Face. Se trata de un LoRA de concepto entrenado sobre el checkpoint `cyberdelia/CyberRealistic`, cuyo objetivo es inyectar un detalle anatómico concreto (un tipo de piercing en los pezones) en las generaciones del modelo base. Está etiquetado con `not-for-all-audiences`, por lo que su ámbito de uso es contenido para adultos.
 
 El repositorio no incluye documentación técnica más allá de una model card mínima: se indica la palabra de activación `sk_piercing`, un peso recomendado de 0.4 y un ejemplo de prompt. No se especifican datos de entrenamiento, número de imágenes del dataset, parámetros del adaptador, licencia ni idiomas soportados. El tamaño del repositorio figura como 0.0 GB y el contador de descargas y likes es cero, lo que sugiere un artefacto recién publicado o sin pesos efectivamente subidos.
 
@@ -65,14 +65,14 @@ No se han publicado resultados de benchmarks en la información disponible. Los 
 - VRAM estimada: no disponible en la información proporcionada. Como referencia general y no verificada para este artefacto concreto, los checkpoints realistas derivados de la familia Stable Diffusion suelen operar con aproximadamente 4-6 GB de VRAM en fp16 a 512 px y 8-12 GB a resoluciones de 768-1024 px, cifras que deben confirmarse contra el modelo base real.
 - GPU recomendadas: no disponible. No hay datos que permitan afirmar compatibilidad con A100, H100, RTX 4090 u otras.
 - Compatibilidad con GPU de consumo: no confirmada en la información proporcionada.
-- Opciones de despliegue: el tag `diffusers` y el template `diffusion-lora` indican compatibilidad con la librería Diffusers de HuggingFace. No se documenta soporte para Automatic1111, ComfyUI, Forge, Ollama (no aplica, no es un LLM), vLLM (no aplica) ni TGI (no aplica).
+- Opciones de despliegue: el tag `diffusers` y el template `diffusion-lora` indican compatibilidad con la librería Diffusers de Hugging Face. No se documenta soporte para Automatic1111, ComfyUI, Forge, Ollama (no aplica, no es un LLM), vLLM (no aplica) ni TGI (no aplica).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Modelo base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dopazina/nipple-piercing-CyberRealistic | LoRA de difusión | cyberdelia/CyberRealistic | no disponible | no aplica | no disponible | Repositorio en HuggingFace, 0 descargas, 0 likes, 0.0 GB |
+| dopazina/nipple-piercing-CyberRealistic | LoRA de difusión | cyberdelia/CyberRealistic | no disponible | no aplica | no disponible | Repositorio en Hugging Face, 0 descargas, 0 likes, 0.0 GB |
 | Otros LoRA de concepto sobre CyberRealistic | LoRA de difusión | cyberdelia/CyberRealistic | no disponible | no aplica | no disponible | no disponible en la información proporcionada |
 | Checkpoint base cyberdelia/CyberRealistic | Modelo de difusión completo | no aplica | no disponible | no aplica | no disponible | Referenciado como base, sin datos adicionales |
 
@@ -94,8 +94,8 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dopazina/nipple-piercing-CyberRealistic
+- Repositorio en Hugging Face: https://huggingface.co/dopazina/nipple-piercing-CyberRealistic
 - Ficheros y versiones: https://huggingface.co/dopazina/nipple-piercing-CyberRealistic/tree/main
-- Modelo base en HuggingFace: https://huggingface.co/cyberdelia/CyberRealistic
+- Modelo base en Hugging Face: https://huggingface.co/cyberdelia/CyberRealistic
 - Documentación de LoRA en Diffusers: https://huggingface.co/docs/diffusers/training/lora
 - Resultados de búsqueda web: no se encontró ningún enlace relevante para este modelo; los resultados devueltos corresponden a un videojuego sin relación con el artefacto.

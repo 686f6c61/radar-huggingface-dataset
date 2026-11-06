@@ -84,10 +84,10 @@ Advertencia del propio autor: los 40 extractos de Ballroom pertenecen al conjunt
 
 | Modelo | Formato | Parametros | Contexto / ventana | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kairos-music (este repo) | ONNX fp32 + fp16, 21 piezas para Demucs | No disponible (~47,7 M estimados para Beat This!) | 1500 frames (beats); 21 piezas (stems) | Beat F 0,986 / downbeat F 0,984 en Ballroom (train); 18,6 dB SI-SDR en voz | MIT | HuggingFace, 0 descargas, 0 likes |
+| kairos-music (este repo) | ONNX fp32 + fp16, 21 piezas para Demucs | No disponible (~47,7 M estimados para Beat This!) | 1500 frames (beats); 21 piezas (stems) | Beat F 0,986 / downbeat F 0,984 en Ballroom (train); 18,6 dB SI-SDR en voz | MIT | Hugging Face, 0 descargas, 0 likes |
 | CPJKU/beat_this (original) | PyTorch (`final0`) | No disponible | Ventana deslizante con postprocesado DBN | Referencia del paper ISMIR 2024 | MIT | GitHub |
-| musetric/beat-this-onnx | ONNX | No disponible | Grafo estático de 1500 frames | Mismo checkpoint que aquí | No disponible en la información | HuggingFace |
-| monteslu/htdemucs-web-onnx | ONNX | No disponible | Troceado en 21 piezas | Igual que aquí (mismo export) | No disponible en la información | HuggingFace |
+| musetric/beat-this-onnx | ONNX | No disponible | Grafo estático de 1500 frames | Mismo checkpoint que aquí | No disponible en la información | Hugging Face |
+| monteslu/htdemucs-web-onnx | ONNX | No disponible | Troceado en 21 piezas | Igual que aquí (mismo export) | No disponible en la información | Hugging Face |
 | facebookresearch/demucs (original) | PyTorch | No disponible | Procesado por segmentos en GPU | Referencia de HT-Demucs | MIT | GitHub |
 
 En la práctica no hay comparación de rendimiento entre alternativas: este repositorio es el mismo peso que sus dos fuentes, solo cambia el empaquetado y el runtime de destino. Frente al original en PyTorch, la diferencia es que aquí no hay postprocesado DBN en beats (el autor indica post-procesado `minimal`), lo que abarata el coste pero puede afectar a la suavidad temporal en música con tempo ambiguo; ese extremo no está cuantificado en la información disponible.
@@ -106,7 +106,7 @@ En la práctica no hay comparación de rendimiento entre alternativas: este repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/6l3m/kairos-music
+- Modelo en Hugging Face: https://huggingface.co/6l3m/kairos-music
 - Aplicación kaairos: https://kaairos.app
 - Beat This! (código y paper ISMIR 2024): https://github.com/CPJKU/beat_this
 - Export ONNX de Beat This! por musetric: https://huggingface.co/musetric/beat-this-onnx

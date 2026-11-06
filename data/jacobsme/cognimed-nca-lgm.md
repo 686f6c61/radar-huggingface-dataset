@@ -69,7 +69,7 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jacobsme/cognimed-nca-lgm
+- Hugging Face: https://huggingface.co/jacobsme/cognimed-nca-lgm
 - Código: https://github.com/AlphaFanX/cognitive-biology
 - Sitio web: https://genetec.io/
 - Papers (DOIs, todos con prefijo 10.5281/zenodo.):

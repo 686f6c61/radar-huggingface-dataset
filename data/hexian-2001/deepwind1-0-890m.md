@@ -76,10 +76,10 @@ No se dispone de cifras verificadas de los modelos alternativos en la informaci�
 
 | Modelo | Desarrollador | Dominio | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepWind1.0-890M | Hexian-2001 (Wang et al.) | Potencia eólica (probabilístico, zero-shot) | 888,24 M | 8192 | Apache-2.0 | HuggingFace + repositorio en GitHub |
-| Chronos / Chronos-Bolt | Amazon | Series temporales generales | no disponible en esta búsqueda | no disponible en esta búsqueda | Apache-2.0 | HuggingFace |
-| TimesFM | Google Research | Series temporales generales | no disponible en esta búsqueda | no disponible en esta búsqueda | Apache-2.0 | HuggingFace |
-| Moirai | Salesforce | Series temporales generales (incluye variante MoE) | no disponible en esta búsqueda | no disponible en esta búsqueda | Apache-2.0 | HuggingFace |
+| DeepWind1.0-890M | Hexian-2001 (Wang et al.) | Potencia eólica (probabilístico, zero-shot) | 888,24 M | 8192 | Apache-2.0 | Hugging Face + repositorio en GitHub |
+| Chronos / Chronos-Bolt | Amazon | Series temporales generales | no disponible en esta búsqueda | no disponible en esta búsqueda | Apache-2.0 | Hugging Face |
+| TimesFM | Google Research | Series temporales generales | no disponible en esta búsqueda | no disponible en esta búsqueda | Apache-2.0 | Hugging Face |
+| Moirai | Salesforce | Series temporales generales (incluye variante MoE) | no disponible en esta búsqueda | no disponible en esta búsqueda | Apache-2.0 | Hugging Face |
 | TimeGPT | Nixtla | Series temporales generales | no disponible | no disponible | API propietaria | Servicio de pago |
 
 Diferencias cualitativas relevantes: DeepWind está especializado en un único dominio (potencia eólica) y emite directamente 21 cuantiles, mientras que los modelos anteriores son genéricos y varios de ellos requieren estrategias de muestreo o cabezas adicionales para obtener salida probabilística. A cambio, DeepWind no ofrece la validación empírica ni el ecosistema de herramientas de los modelos de Amazon, Google o Salesforce.
@@ -99,7 +99,7 @@ Diferencias cualitativas relevantes: DeepWind está especializado en un único d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hexian-2001/DeepWind1.0-890M
+- Modelo en Hugging Face: https://huggingface.co/Hexian-2001/DeepWind1.0-890M
 - Repositorio de código DeepWind: https://github.com/Hexian-2001/DeepWind
 - Artículo: H. Wang et al., "DeepWind: A foundation model for zero-shot wind power forecasting", *Energy*, vol. 360, 141793, 2026: https://doi.org/10.1016/j.energy.2026.141793
 - Cita BibTeX (según la model card):
@@ -114,4 +114,4 @@ Diferencias cualitativas relevantes: DeepWind está especializado en un único d
     doi       = {10.1016/j.energy.2026.141793}
   }
   ```
-- No se han encontrado en la búsqueda web otros enlaces relevantes (papers alternativos, blogs, demos o espacios de HuggingFace) distintos de los anteriores.
+- No se han encontrado en la búsqueda web otros enlaces relevantes (papers alternativos, blogs, demos o espacios de Hugging Face) distintos de los anteriores.

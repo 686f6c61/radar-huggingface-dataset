@@ -77,7 +77,7 @@ La comparativa de convergencia se refiere al número de tokens necesarios para a
 - VRAM estimada para inferencia: aproximadamente 18 GB para los pesos en BF16 (8,94B parámetros × 2 bytes) más el overhead de activaciones y caché KV. Con cuantización, no disponible en la información proporcionada, el consumo podría reducirse, pero no hay datos publicados.
 - GPU recomendadas: una A100 40GB o 80GB, H100, o una RTX 4090 con cuantización. En BF16 completo, una RTX 4090 (24GB) queda justa por la memoria de pesos y activaciones, por lo que se recomienda una GPU con al menos 40GB de VRAM para inferencia sin cuantizar.
 - Compatibilidad con GPU de consumo: posible con cuantización (no disponible en la información actual), pero el modelo está publicado en BF16, lo que dificulta su ejecución en GPUs de consumo de 16GB o 24GB sin técnicas de compresión adicionales.
-- Opciones de despliegue: transformers (librería de HuggingFace), vLLM (probablemente compatible al ser un modelo causal estándar), llama.cpp u Ollama (requieren conversión a GGUF, no disponible). El repositorio incluye código de evaluación en GitHub, pero no se mencionan herramientas de despliegue específicas.
+- Opciones de despliegue: transformers (librería de Hugging Face), vLLM (probablemente compatible al ser un modelo causal estándar), llama.cpp u Ollama (requieren conversión a GGUF, no disponible). El repositorio incluye código de evaluación en GitHub, pero no se mencionan herramientas de despliegue específicas.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones de rendimiento de inferencia.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ La comparativa con OLMo-3-7B es directa, ya que el informe técnico de NCP-ArchP
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1
+- Modelo en Hugging Face: https://huggingface.co/ArchSpace-Collection/NCP_ArchPreview_dolma3_8.9B_Stage1
 - Colección de modelos NCP-ArchPreview: https://huggingface.co/collections/ArchSpace-Collection/ncp-archpreview
 - Código de evaluación: https://github.com/LuckySJTU/ncp_olmo_eval
 - Informe técnico: no disponible (URL pendiente en el repositorio)

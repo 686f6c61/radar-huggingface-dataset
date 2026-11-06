@@ -31,7 +31,7 @@ El modelo es un transformer decoder denso de estilo Llama con 24 capas, dimensio
 
 El preentrenamiento utiliza conversaciones del proyecto 1PP reescritas a partir de documentos, aplicando la perdida unicamente sobre los turnos del asistente. Se cubren los primeros 53.709 pasos del flujo alineado de 1PP (112,64B posiciones de token), que corresponden a los primeros pasos del recorrido principal de 31.777 pasos del estudio, en el mismo orden. El lote global es de 512 secuencias de 4.096 tokens. El optimizador es Muon (con escalado por forma y LR matricial de 0,005) para los parametros matriciales y Adam para el resto (LR 1,29e-3 para embeddings y capa de salida, 3e-3 para las normas), con 3.378 pasos de warmup, fase constante y decaimiento lineal en los ultimos 5.370 pasos hasta 1/100 del LR inicial, weight decay 0,1, desviacion tipica de inicializacion 0,0078 y entrenamiento en bf16.
 
-La perdida de validacion del checkpoint final sobre 2.433 documentos reservados es de 1,374 por token en texto de asistente, 6,924 en texto de usuario y 3,078 en texto de documento; ponderando las conversaciones adversariales segun su proporcion de entrenamiento (11,18%) la cifra de referencia es 1,421 (`reweighted_seg34`). El autor verifica los pesos de HuggingFace frente al checkpoint de Megatron recomputando perdidas: 1,3726 frente a 1,3739 en `val50m` (diferencia absoluta 0,0013) y 3,0800 frente a 3,0782 en `raw_val50m` (0,0017).
+La perdida de validacion del checkpoint final sobre 2.433 documentos reservados es de 1,374 por token en texto de asistente, 6,924 en texto de usuario y 3,078 en texto de documento; ponderando las conversaciones adversariales segun su proporcion de entrenamiento (11,18%) la cifra de referencia es 1,421 (`reweighted_seg34`). El autor verifica los pesos de Hugging Face frente al checkpoint de Megatron recomputando perdidas: 1,3726 frente a 1,3739 en `val50m` (diferencia absoluta 0,0013) y 3,0800 frente a 3,0782 en `raw_val50m` (0,0017).
 
 ## Capacidades
 
@@ -106,7 +106,7 @@ Las cifras de modelos comparables se basan en sus fichas publicas; para 1pp-2.81
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-2.81b-v2-asst-base
 - Coleccion 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb, 1pp-training): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb, 1pp-sft): https://wandb.ai/raghav_singhal/1pp-sft

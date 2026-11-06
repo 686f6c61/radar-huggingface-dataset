@@ -4,7 +4,7 @@
 
 Agents-A1 es un modelo agéntico de 35 mil millones de parámetros con arquitectura Mixture-of-Experts (MoE), desarrollado por InternScience. Está diseñado para escalar el horizonte de razonamiento agéntico en lugar de escalar el número de parámetros, alcanzando un rendimiento comparable al de modelos de escala de billones de parámetros en tareas de búsqueda de largo horizonte, ingeniería, investigación científica, seguimiento de instrucciones y uso de herramientas. El modelo integra capacidades de visión (image-text-to-text) y se distribuye bajo licencia Apache-2.0.
 
-El entrenamiento sigue un paradigma de tres etapas: ajuste fino supervisado en dominios completos, entrenamiento de modelos profesor por dominio y destilación on-policy multi-profesor con optimización consciente de la heterogeneidad. Además, utiliza una infraestructura de conocimiento-acción anclada al dominio que convierte el proceso del agente en un objetivo entrenable. El modelo se publicó el 22 de junio de 2026 y ha recibido 630 likes y casi 20 000 descargas en HuggingFace.
+El entrenamiento sigue un paradigma de tres etapas: ajuste fino supervisado en dominios completos, entrenamiento de modelos profesor por dominio y destilación on-policy multi-profesor con optimización consciente de la heterogeneidad. Además, utiliza una infraestructura de conocimiento-acción anclada al dominio que convierte el proceso del agente en un objetivo entrenable. El modelo se publicó el 22 de junio de 2026 y ha recibido 630 likes y casi 20 000 descargas en Hugging Face.
 
 La relevancia actual de Agents-A1 reside en su capacidad para ejecutar tareas agénticas complejas con una huella de parámetros relativamente pequeña, lo que permite desplegar sistemas de razonamiento avanzado en hardware más accesible que el requerido por los modelos frontera.
 
@@ -90,10 +90,10 @@ No se dispone de información detallada sobre modelos comparables de la misma cl
 
 ## Enlaces
 
-- [HuggingFace - InternScience/Agents-A1](https://huggingface.co/InternScience/Agents-A1)
+- [Hugging Face - InternScience/Agents-A1](https://huggingface.co/InternScience/Agents-A1)
 - [Homepage del proyecto](https://internscience.github.io/Agents-A1/)
 - [Technical Report (arXiv:2606.30616)](https://arxiv.org/abs/2606.30616)
 - [Repositorio GitHub](https://github.com/InternScience/Agents-A1)
 - [ModelScope - InternScience/Agents-A1](https://modelscope.cn/models/InternScience/Agents-A1)
-- [Colección Agents-A1 en HuggingFace (versiones cuantizadas)](https://huggingface.co/collections/InternScience/agents-a1)
+- [Colección Agents-A1 en Hugging Face (versiones cuantizadas)](https://huggingface.co/collections/InternScience/agents-a1)
 - [Colección mlx-community Agents-A1 (cuantizaciones para Mac)](https://huggingface.co/collections/mlx-community/agents-a1)

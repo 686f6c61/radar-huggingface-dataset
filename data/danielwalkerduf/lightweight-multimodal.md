@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DanielWalkerduf/lightweight-multimodal` no es un modelo entrenado ni un checkpoint desplegable: es un repositorio de **notas de investigación** publicado en HuggingFace bajo la etiqueta `research-notes`. La propia model card lo declara de forma explícita: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los dos únicos artefactos documentados son `reading.md` (la nota principal) y `README.md`.
+`DanielWalkerduf/lightweight-multimodal` no es un modelo entrenado ni un checkpoint desplegable: es un repositorio de **notas de investigación** publicado en Hugging Face bajo la etiqueta `research-notes`. La propia model card lo declara de forma explícita: "It is not presented as a completed paper or a release of trained models" y "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint". Los dos únicos artefactos documentados son `reading.md` (la nota principal) y `README.md`.
 
 El repositorio tiene 0 descargas y 0 likes, fue creado y actualizado el 11 de septiembre de 2026 (con cuatro segundos de diferencia entre ambos eventos) y ocupa 0,0 GB. Los metadatos de safetensors reportan un total de 16.576 parámetros, un orden de magnitud (~1,7 × 10^4) incompatible con cualquier transformer funcional y consistente con un fichero de prueba, un tensor de relleno o una serialización vacía. El único tag de arquitectura es `transformer`, pero no se describe dimensionalidad, número de capas, mecanismo de atención ni ninguna decisión de diseño.
 
@@ -49,7 +49,7 @@ Dado que no existe un modelo entrenado, los casos de uso se refieren al reposito
 - Definición de criterios de evaluación: la nota menciona benchmarks públicos adecuados a la tarea como punto de partida, lo que resulta útil para fijar métricas y conjuntos de datos antes de entrenar.
 - Documentación de limitaciones y preguntas abiertas: útil para equipos que necesitan justificar ante revisores o stakeholders qué no se ha probado todavía en una línea de trabajo.
 - Reproducibilidad y trazabilidad: el propio README indica que, si se añaden resultados en el futuro, deben incluir versiones de dataset, comandos, semillas, hardware y registros en bruto; es un estándar reutilizable para pipelines internos.
-- Auditoría de repositorios públicos: sirve como caso de estudio de un repositorio etiquetado como modelo (`safetensors`, `transformer`) que en realidad no lo es, útil para calibrar herramientas de filtrado y catalogación automática de HuggingFace.
+- Auditoría de repositorios públicos: sirve como caso de estudio de un repositorio etiquetado como modelo (`safetensors`, `transformer`) que en realidad no lo es, útil para calibrar herramientas de filtrado y catalogación automática de Hugging Face.
 - Formación y divulgación: como ejemplo de buena práctica de separación entre hipótesis y resultados en investigación abierta.
 
 ## Benchmarks y rendimiento
@@ -89,7 +89,7 @@ No disponible. No es posible establecer una comparativa técnica porque el repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DanielWalkerduf/lightweight-multimodal
+- Hugging Face: https://huggingface.co/DanielWalkerduf/lightweight-multimodal
 - Perfil del autor: https://huggingface.co/DanielWalkerduf
 - Ficheros citados en la model card: `reading.md` y `README.md` dentro del propio repositorio
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web no devolvió ninguna fuente relacionada con el modelo.

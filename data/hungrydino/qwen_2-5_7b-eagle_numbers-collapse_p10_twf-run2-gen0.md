@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen0 es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Segun la model card, el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, dos veces mas rapido que un entrenamiento estandar. La model card es generica y no documenta el proposito del ajuste, el dataset utilizado ni los hiperparametros.
+HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen0 es un ajuste fino (fine-tune) del modelo unsloth/Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Segun la model card, el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, dos veces mas rapido que un entrenamiento estandar. La model card es generica y no documenta el proposito del ajuste, el dataset utilizado ni los hiperparametros.
 
 El identificador del repositorio ("eagle_numbers-collapse_p10_twf-run2-gen0") sugiere un experimento de investigacion con nomenclatura de ejecucion (run2, gen0) y posibles referencias a decodificacion especulativa tipo EAGLE, pero esta interpretacion no esta confirmada en la informacion disponible y debe tratarse como especulacion. El repo ocupa 0,1 GB, un tamano compatible con adaptadores LoRA en lugar de pesos completos, aunque la model card no lo confirma.
 
@@ -23,7 +23,7 @@ Por herencia del modelo base, el modelo es un transformer decoder-only denso de 
 | Modelo base | unsloth/Qwen2.5-7B-Instruct |
 | Tooling de entrenamiento | Unsloth + TRL (segun la model card) |
 | Tamano del repositorio | 0,1 GB |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -95,9 +95,9 @@ Diferencias clave: frente a Qwen2.5-7B-Instruct, este ajuste no documenta ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen0
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen0
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper, blog o demo del autor: no disponible
 - Resultados de busqueda web: los enlaces obtenidos no guardan relacion con el modelo y no se incluyen como referencias validas

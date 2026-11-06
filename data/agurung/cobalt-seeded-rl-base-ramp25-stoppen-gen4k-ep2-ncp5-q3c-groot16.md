@@ -87,10 +87,10 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-base-...-groot16 (este) | 4,41 B | no disponible | RL GRPO sobre Qwen3-4B, recompensa binaria de codigo | no disponible | HuggingFace, revision `main` |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4,4 B | 262.144 tokens nativos | Instruct generalista con post-entrenamiento | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,1 B | 32.768 tokens (ampliable) | Especializado en codigo | Apache 2.0 | HuggingFace |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Instruct generalista | Llama 3.2 Community License | HuggingFace (con aceptacion de terminos) |
+| cobalt-seeded-rl-base-...-groot16 (este) | 4,41 B | no disponible | RL GRPO sobre Qwen3-4B, recompensa binaria de codigo | no disponible | Hugging Face, revision `main` |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4,4 B | 262.144 tokens nativos | Instruct generalista con post-entrenamiento | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,1 B | 32.768 tokens (ampliable) | Especializado en codigo | Apache 2.0 | Hugging Face |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Instruct generalista | Llama 3.2 Community License | Hugging Face (con aceptacion de terminos) |
 
 ## Limitaciones y advertencias
 
@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q3c-groot16
+- Hugging Face del modelo: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q3c-groot16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Perfil del autor: https://huggingface.co/agurung
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k-ep2_ncp5_q3c-groot16` (no se proporciona URL directa)

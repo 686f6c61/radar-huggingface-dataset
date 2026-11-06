@@ -69,7 +69,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/devarajns/autodraw-client-model)
+- [Repositorio Hugging Face](https://huggingface.co/devarajns/autodraw-client-model)
 - [Demo AutoDraw Client](https://huggingface.co/spaces/devarajns/autodraw-client-demo)
 - [Repositorio GitHub del proyecto](https://github.com/nsdevaraj/autoClient)
 - [Sitio web de AutoDraw original](https://www.autodraw.com/)

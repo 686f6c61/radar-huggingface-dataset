@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpaceV1.2Ultra es un modelo publicado en HuggingFace por el usuario openmodelai bajo la licencia OpenRAIL. La informacion disponible en su model card se limita a dos campos de metadatos del encabezado YAML: la licencia (openrail) y los idiomas declarados (ingles y ruso). No se incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades.
+SpaceV1.2Ultra es un modelo publicado en Hugging Face por el usuario openmodelai bajo la licencia OpenRAIL. La informacion disponible en su model card se limita a dos campos de metadatos del encabezado YAML: la licencia (openrail) y los idiomas declarados (ingles y ruso). No se incluye ninguna descripcion del modelo, de su arquitectura, de su proceso de entrenamiento ni de sus capacidades.
 
 El repositorio fue creado el 6 de octubre de 2026 y actualizado ese mismo dia, con 0 descargas y 1 like en el momento de la consulta. Es, por tanto, un modelo practicamente sin traccion ni documentacion publica, y no es posible verificar su comportamiento real ni su calidad.
 
@@ -68,7 +68,7 @@ No disponible. La comparativa requiere al menos conocer el numero de parametros 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| SpaceV1.2Ultra | no disponible | no disponible | openrail | HuggingFace (0 descargas) |
+| SpaceV1.2Ultra | no disponible | no disponible | openrail | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. La comparativa requiere al menos conocer el numero de parametros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openmodelai/SpaceV1.2Ultra
+- Hugging Face: https://huggingface.co/openmodelai/SpaceV1.2Ultra
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la informacion proporcionada.

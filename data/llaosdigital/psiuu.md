@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Psiuu (Whisper Medium Q8_0) | 627 M | no disponible | GGUF | Apache 2.0 | HuggingFace |
-| Whisper Medium original (OpenAI) | 769 M | 30 s por segmento | PyTorch/safetensors | MIT | HuggingFace, OpenAI |
-| Parakeet TDT 0.6B v3 (NVIDIA) | ~0,6 B | no disponible | NeMo/GGUF | CC-BY 4.0 | HuggingFace, NVIDIA NeMo |
-| Whisper Small (OpenAI) | 244 M | 30 s por segmento | PyTorch/safetensors | MIT | HuggingFace |
+| Psiuu (Whisper Medium Q8_0) | 627 M | no disponible | GGUF | Apache 2.0 | Hugging Face |
+| Whisper Medium original (OpenAI) | 769 M | 30 s por segmento | PyTorch/safetensors | MIT | Hugging Face, OpenAI |
+| Parakeet TDT 0.6B v3 (NVIDIA) | ~0,6 B | no disponible | NeMo/GGUF | CC-BY 4.0 | Hugging Face, NVIDIA NeMo |
+| Whisper Small (OpenAI) | 244 M | 30 s por segmento | PyTorch/safetensors | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo (WER, latencia) en la información proporcionada para establecer una comparación cuantitativa.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (WER, latencia) en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/llaosdigital/psiuu
+- Repositorio en Hugging Face: https://huggingface.co/llaosdigital/psiuu
 - Modelo base Whisper Medium: https://huggingface.co/openai/whisper-medium
 - Repositorio de origen del GGUF de Whisper: https://huggingface.co/handy-computer/whisper-medium-gguf (revisión `ec78f06fded51aa82cde751678b78f76f78c8b7f`)
 - Repositorio de origen del GGUF de Parakeet: https://huggingface.co/handy-computer/parakeet-tdt-0.6b-v3-gguf

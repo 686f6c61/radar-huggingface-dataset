@@ -91,7 +91,7 @@ No se han encontrado modelos directamente comparables en la misma categoría (cl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atonlee/supra-ko-pii-router
+- Modelo en Hugging Face: https://huggingface.co/atonlee/supra-ko-pii-router
 - Modelo base: https://huggingface.co/SupraLabs/Supra1.5-50M-Base-exp
 - Modelo complementario (NER): https://huggingface.co/atonlee/koelectra-ko-pii-ner
 - Dataset: https://huggingface.co/datasets/BCCard/pii-masking-openpii-finance

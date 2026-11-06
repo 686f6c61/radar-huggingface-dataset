@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MMH3 (identificador `metaloz/MMH3`) es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado en HuggingFace por el usuario `metaloz`. El repositorio se declara como una coleccion de LoRAs para el modelo base referenciado `pmczip/MiniMaxH3_LoRAs`, con la etiqueta de plantilla `template:diffusion-lora`. Ocupa 2,6 GB y fue creado y actualizado el 15 de septiembre de 2026 segun los metadatos de la plataforma.
+MMH3 (identificador `metaloz/MMH3`) es un adaptador LoRA de difusion para generacion de imagenes a partir de texto (pipeline `text-to-image`), publicado en Hugging Face por el usuario `metaloz`. El repositorio se declara como una coleccion de LoRAs para el modelo base referenciado `pmczip/MiniMaxH3_LoRAs`, con la etiqueta de plantilla `template:diffusion-lora`. Ocupa 2,6 GB y fue creado y actualizado el 15 de septiembre de 2026 segun los metadatos de la plataforma.
 
 El problema que resuelve es el habitual de los adaptadores LoRA: incorporar estilos, conceptos o sujetos concretos a un modelo de difusion ya entrenado sin reentrenar los pesos completos, reduciendo el coste de almacenamiento y de ajuste. En este caso concreto no se documenta que conceptos cubre cada adaptador, ni los rangos, modulos objetivo o hiperparametros de entrenamiento.
 
@@ -28,8 +28,8 @@ La relevancia actual es limitada desde el punto de vista tecnico: el repositorio
 | Tamano del repositorio | 2,6 GB |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion | 2026-09-15 (segun metadatos de HuggingFace) |
-| Ultima actualizacion | 2026-09-15 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-15 (segun metadatos de Hugging Face) |
+| Ultima actualizacion | 2026-09-15 (segun metadatos de Hugging Face) |
 | Prompt de instancia | `null` en la model card |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ No hay datos sobre el entrenamiento: numero de imagenes, resolucion, pasos, lear
 - Generacion de imagenes en local para artistas tecnicos: integrar el adaptador en ComfyUI o en AUTOMATIC1111/Forge para flujos de trabajo con control de semilla, LoRA weighting y controlnet, dado que el formato es compatible con el ecosistema `diffusers`.
 - Ajuste fino de bajo coste en equipos con recursos limitados: al no requerir reentrenar el modelo completo, permite iterar sobre un concepto concreto con una sola GPU de gama alta o incluso de gama media, dependiendo del modelo base.
 - Creacion de datasets sinteticos: generar variaciones de un concepto para aumentar un conjunto de entrenamiento de un clasificador o de otro modelo de vision, siempre que la licencia del adaptador y del base lo permitan.
-- Catalogacion y curaduria de modelos: el repositorio sirve como caso de estudio de agregacion de LoRAs de terceros para un mismo base, util para evaluar practicas de atribucion, versionado y trazabilidad en HuggingFace.
+- Catalogacion y curaduria de modelos: el repositorio sirve como caso de estudio de agregacion de LoRAs de terceros para un mismo base, util para evaluar practicas de atribucion, versionado y trazabilidad en Hugging Face.
 - Servicio de generacion de imagenes bajo demanda: desplegar el modelo base mas el adaptador en una API interna con `diffusers` y un backend de inferencia de difusion, sujeto a las restricciones de licencia (no declaradas).
 - No se recomienda su uso en produccion comercial sin antes resolver la procedencia y la licencia de cada adaptador (ver limitaciones).
 
@@ -77,8 +77,8 @@ No existen metricas objetivas (FID, CLIP score, evaluaciones humanas) ni compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| metaloz/MMH3 | No disponible | No aplica (text-to-image) | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas, 0 likes |
-| pmczip/MiniMaxH3_LoRAs (base) | No disponible | No aplica | Sin datos en la informacion proporcionada | No disponible | HuggingFace (referenciado como base) |
+| metaloz/MMH3 | No disponible | No aplica (text-to-image) | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas, 0 likes |
+| pmczip/MiniMaxH3_LoRAs (base) | No disponible | No aplica | Sin datos en la informacion proporcionada | No disponible | Hugging Face (referenciado como base) |
 | Otras colecciones de LoRA para MiniMax H3 en Civitai | No disponible | No aplica | No disponible | No disponible | Enlazadas desde la model card |
 
 No se dispone de informacion suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoria. No se han identificado en la busqueda web papers, blogs tecnicos ni repositorios comparables.
@@ -98,7 +98,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/metaloz/MMH3
+- Hugging Face (modelo): https://huggingface.co/metaloz/MMH3
 - Modelo base referenciado: https://huggingface.co/pmczip/MiniMaxH3_LoRAs
 - Repositorio citado en el README de descarga: https://huggingface.co/lynaNSFW/minimaxH3_Collection
 - Busqueda de LoRAs por modelo base en Civitai: https://civitai.red/search/models?baseModel=MiniMax%20H3&sortBy=models_v9

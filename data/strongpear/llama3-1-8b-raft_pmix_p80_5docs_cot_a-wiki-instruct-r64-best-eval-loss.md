@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario strongpear sobre el modelo base meta-llama/Llama-3.1-8B. No se trata por tanto de un modelo completo, sino de pesos de adaptador que deben cargarse junto al modelo base para funcionar. El repositorio ocupa 0,7 GB, tiene 0 descargas y 0 likes, y la model card es una plantilla vacía de HuggingFace en la que todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]".
+Este repositorio contiene un adaptador LoRA (PEFT) publicado por el usuario strongpear sobre el modelo base meta-llama/Llama-3.1-8B. No se trata por tanto de un modelo completo, sino de pesos de adaptador que deben cargarse junto al modelo base para funcionar. El repositorio ocupa 0,7 GB, tiene 0 descargas y 0 likes, y la model card es una plantilla vacía de Hugging Face en la que todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, evaluación) figuran como "[More Information Needed]".
 
 El identificador del modelo es la única fuente de información sustantiva: "RAFT_PMIX_P80_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss". De él se deduce que se trata de un ajuste fino orientado a RAFT (Retrieval-Augmented Fine-Tuning), con razonamiento en cadena (CoT), entrenado con 5 documentos por muestra y con un rango LoRA de 64, seleccionando el checkpoint con mejor pérdida de evaluación. Los componentes "PMIX", "P80" y "A-WIKI" no están documentados en ninguna parte y no pueden interpretarse con rigor.
 
@@ -23,7 +23,7 @@ La relevancia de la ficha es limitada y debe presentarse como tal: es un experim
 | Modelo base | meta-llama/Llama-3.1-8B |
 | Librería | peft (entorno declarado: PEFT 0.20.0) |
 | Tamaño del repositorio | 0,7 GB |
-| Fecha de creación | 2026-09-19 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-19 (según metadatos de Hugging Face) |
 | Fecha de actualización | 2026-09-19 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ La comparación cuantitativa de rendimiento no es posible: este adaptador no pub
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card es la plantilla por defecto de HuggingFace. No se declara autoría real, procedencia de datos, método de evaluación ni uso previsto.
+- Documentación inexistente: la model card es la plantilla por defecto de Hugging Face. No se declara autoría real, procedencia de datos, método de evaluación ni uso previsto.
 - Sin validación externa: 0 descargas y 0 likes implican que no existe evidencia de que el adaptador funcione fuera del entorno del autor. No debe asumirse calidad alguna por el hecho de estar publicado.
 - Riesgo de alucinación: en configuraciones RAFT el modelo puede generar afirmaciones no respaldadas por los documentos recuperados, especialmente si el prompt no fuerza la cita explícita de fuentes.
 - Sesgos desconocidos: al no documentarse el dataset de ajuste, no es posible evaluar sesgos de género, etnia, idioma o dominio. La etiqueta "WIKI" sugiere dependencia de material enciclopédico, con la sobrerrepresentación temática y cultural que eso conlleva.
@@ -93,7 +93,7 @@ La comparación cuantitativa de rendimiento no es posible: este adaptador no pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
+- Repositorio Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P80_5DOCS_CoT_A-WIKI-Instruct-r64-best-eval-loss
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Referencia citada en las etiquetas del repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, calculadora de impacto ambiental en aprendizaje automático)
 - Repositorio del framework PEFT: no incluido en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ogitriid/Iq es un repositorio publicado en HuggingFace por el usuario Ogitriid bajo licencia MIT. La model card asociada unicamente declara la licencia, sin proporcionar informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades del modelo. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline asignado, lo que sugiere que no se ha configurado como un modelo listo para inferencia en la plataforma.
+Ogitriid/Iq es un repositorio publicado en Hugging Face por el usuario Ogitriid bajo licencia MIT. La model card asociada unicamente declara la licencia, sin proporcionar informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades del modelo. El repositorio no registra descargas ni likes en el momento de la consulta, y no tiene pipeline asignado, lo que sugiere que no se ha configurado como un modelo listo para inferencia en la plataforma.
 
 No se dispone de datos tecnicos verificables: se desconoce si se trata de un transformer, un MoE, un modelo de embeddings o cualquier otra arquitectura. Tampoco hay informacion sobre el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos disponibles. Cualquier evaluacion de su idoneidad para produccion resulta imposible con la informacion publicada.
 
@@ -63,11 +63,11 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades del 
 - Ausencia total de documentacion tecnica: la model card solo declara la licencia, sin informacion sobre arquitectura, entrenamiento o evaluacion.
 - Imposibilidad de verificar sesgos, riesgo de alucinacion o limitaciones de contexto e idioma sin datos publicados.
 - La licencia MIT permite uso comercial, modificacion y redistribucion, pero no implica que el modelo sea apto para produccion ni que su rendimiento haya sido validado.
-- Sin pipeline asignado en HuggingFace, lo que puede indicar que el repositorio no esta configurado para inferencia directa en la plataforma.
+- Sin pipeline asignado en Hugging Face, lo que puede indicar que el repositorio no esta configurado para inferencia directa en la plataforma.
 - Cero descargas y cero likes en el momento de la consulta: no hay senales de adopcion ni de validacion por parte de la comunidad.
 - Se recomienda auditar el contenido del repositorio (pesos, tokenizer, configuracion) antes de cualquier uso, y no asumir que el nombre "Iq" implique capacidades de razonamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ogitriid/Iq
+- Repositorio en Hugging Face: https://huggingface.co/Ogitriid/Iq
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

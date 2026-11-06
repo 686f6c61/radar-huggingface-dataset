@@ -16,8 +16,8 @@ La relevancia actual reside en que permite ejecutar un modelo de clase frontera 
 | Parametros totales | 975B según la model card; 552 845 034 562 (~552,8B) según safetensors del repo (discrepancia no aclarada) |
 | Parametros activos | 41B por token (6 de 256 expertos + 2 expertos compartidos) |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | NVFP4 (4 bits, escalas FP8 por bloques); etiqueta de HuggingFace "8-bit"; el modelo base también existe en BF16 |
-| Idiomas soportados | Inglés (principal) con capacidades multilingües generales; metadatos de HuggingFace: no disponibles |
+| Tipos de cuantizacion | NVFP4 (4 bits, escalas FP8 por bloques); etiqueta de Hugging Face "8-bit"; el modelo base también existe en BF16 |
+| Idiomas soportados | Inglés (principal) con capacidades multilingües generales; metadatos de Hugging Face: no disponibles |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (compatible con transformers) |
 
@@ -76,7 +76,7 @@ No se dispone de benchmarks específicos de la versión cuantizada NVFP4; las ci
 - Configuración recomendada (estimación): 8 × B200 o nodo GB200 para disponer de margen suficiente de caché KV en contexto largo y multimodal.
 - Despliegue en Hopper/Ampere: requeriría de-cuantizar a BF16 (~1,95 TB para 975B parámetros), lo que implicaría del orden de 24-32 × H100 de 80 GB; en la práctica no es viable.
 - GPU de consumo: no cabe. Ni una RTX 4090 (24 GB) ni una RTX 5090 (32 GB) pueden alojar el modelo completo; tampoco es viable en equipos de 4 GPUs de consumo.
-- Opciones de despliegue soportadas según la model card: SGLang, vLLM, TokenSpeed, Unsloth y transformers de HuggingFace, además de proveedores de inferencia de terceros vía API.
+- Opciones de despliegue soportadas según la model card: SGLang, vLLM, TokenSpeed, Unsloth y transformers de Hugging Face, además de proveedores de inferencia de terceros vía API.
 - Latencia y throughput: no disponibles. No se han publicado cifras de tokens por segundo ni de latencia para esta cuantizacion.
 
 ## Comparativa con modelos similares
@@ -116,7 +116,7 @@ En comparación directa, las puntuaciones reportadas sitúan a Inkling por debaj
 - Receta de vLLM: https://recipes.vllm.ai/thinkingmachines/Inkling
 - Receta de TokenSpeed: https://lightseek.org/tokenspeed/recipes/models#Inkling
 - Documentación de Unsloth: https://unsloth.ai/docs/models/inkling
-- Blog de HuggingFace sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
+- Blog de Hugging Face sobre Inkling: https://hf.co/blog/thinkingmachines-inkling
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo (los resultados correspondían a páginas de descarga de navegadores), por lo que todos los enlaces anteriores proceden de la model card y de los metadatos de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre el modelo (los resultados correspondían a páginas de descarga de navegadores), por lo que todos los enlaces anteriores proceden de la model card y de los metadatos de Hugging Face.

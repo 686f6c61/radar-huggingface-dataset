@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `hareesh23143/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (Deep Q-Network, DQN) entrenado para jugar a la versión Atari del videojuego Space Invaders, concretamente al entorno `SpaceInvadersNoFrameskip-v4`. Lo desarrolla el usuario de HuggingFace hareesh23143 y se ha generado con el ecosistema de Stable-Baselines3 junto con RL Baselines3 Zoo (rl_zoo3), el framework de entrenamiento y ajuste de hiperparámetros asociado. No se trata, por tanto, de un modelo de lenguaje: su entrada son fotogramas del emulador y su salida es una distribución de acciones discretas del juego.
+El modelo `hareesh23143/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (Deep Q-Network, DQN) entrenado para jugar a la versión Atari del videojuego Space Invaders, concretamente al entorno `SpaceInvadersNoFrameskip-v4`. Lo desarrolla el usuario de Hugging Face hareesh23143 y se ha generado con el ecosistema de Stable-Baselines3 junto con RL Baselines3 Zoo (rl_zoo3), el framework de entrenamiento y ajuste de hiperparámetros asociado. No se trata, por tanto, de un modelo de lenguaje: su entrada son fotogramas del emulador y su salida es una distribución de acciones discretas del juego.
 
 El problema que resuelve es el clásico benchmark de control a partir de píxeles: aprender una política que maximice la recompensa acumulada en Space Invaders sin conocimiento previo del juego, usando únicamente observaciones visuales. Es relevante en el contexto de investigación y docencia en RL porque los agentes DQN sobre Atari son la referencia canónica para comparar algoritmos value-based, reproducir experimentos y validar infraestructuras de entrenamiento como RL Zoo.
 
@@ -25,8 +25,8 @@ La ficha del repositorio no especifica arquitectura exacta de la red, número de
 | Pipeline declarado | reinforcement-learning |
 | Entorno de entrenamiento | SpaceInvadersNoFrameskip-v4 (Atari, ALE) |
 | Tarea | reinforcement-learning |
-| Fecha de creación (según metadatos de HuggingFace) | 2026-09-30 |
-| Última actualización (según metadatos de HuggingFace) | 2026-09-30 |
+| Fecha de creación (según metadatos de Hugging Face) | 2026-09-30 |
+| Última actualización (según metadatos de Hugging Face) | 2026-09-30 |
 
 ## Arquitectura y entrenamiento
 
@@ -76,9 +76,9 @@ No se han publicado en la información disponible resultados adicionales de benc
 
 | Modelo | Desarrollo | Entorno | Parámetros | Contexto | Recompensa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| hareesh23143/dqn-SpaceInvadersNoFrameskip-v4 | hareesh23143 | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | 680,00 ± 100,00 (autoinformada, no verificada) | no disponible | HuggingFace |
-| Harjithreddy/dqn-SpaceInvadersNoFrameskip-v4 | Harjithreddy | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | HuggingFace |
-| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | Bear-ai | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| hareesh23143/dqn-SpaceInvadersNoFrameskip-v4 | hareesh23143 | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | 680,00 ± 100,00 (autoinformada, no verificada) | no disponible | Hugging Face |
+| Harjithreddy/dqn-SpaceInvadersNoFrameskip-v4 | Harjithreddy | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | Hugging Face |
+| Bear-ai/dqn-SpaceInvadersNoFrameskip-v4 | Bear-ai | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | CleanRL / RL Zoo DQN baseline en Atari | varios autores | SpaceInvadersNoFrameskip-v4 (y otros Atari) | no disponible | no aplica | no disponible | MIT (para el código de las librerías, no para este checkpoint) | GitHub y documentación |
 
 No hay datos públicos de rendimiento de los modelos comparables en la información disponible, por lo que la única diferencia cuantificable es la recompensa media autoinformada de este checkpoint. La comparación se limita, por tanto, al mismo entorno, la misma familia de algoritmos (DQN sobre Atari) y la misma librería de entrenamiento (Stable-Baselines3 / RL Zoo).
@@ -98,7 +98,7 @@ No hay datos públicos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hareesh23143/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/hareesh23143/dqn-SpaceInvadersNoFrameskip-v4
 - Modelo comparable (Harjithreddy): https://huggingface.co/Harjithreddy/dqn-SpaceInvadersNoFrameskip-v4
 - Modelo comparable (Bear-ai): https://huggingface.co/Bear-ai/dqn-SpaceInvadersNoFrameskip-v4
 - Repositorio espejo en GitHub: https://github.com/Harshit2000-sudo/dqn-SpaceInvadersNoFrameskip-v4

@@ -23,7 +23,7 @@ Es un modelo monolingüe (inglés), con licencia CC-BY-4.0, orientado a transcri
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | ConwayResearch/Underdog-Bark-3.0-Pro |
+| ID en Hugging Face | ConwayResearch/Underdog-Bark-3.0-Pro |
 | Pipeline | `automatic-speech-recognition` |
 | Modelo base | nvidia/parakeet-tdt-0.6b-v3 (relación: finetune) |
 | Biblioteca | transformers |
@@ -127,7 +127,7 @@ Lectura de la comparativa: Bark 3.0 Pro iguala en media a Hojo-ASR-V1 con aproxi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
+- Modelo en Hugging Face: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Pro
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Underdog (runtime nativo en Swift con MLX): https://underdog.ai
 - Open ASR Leaderboard: referenciado en la model card como fuente de las filas marcadas con †; la información proporcionada no incluye su URL.

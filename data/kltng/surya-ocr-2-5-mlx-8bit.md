@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de modelos OCR alternativos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta build: https://huggingface.co/kltng/surya-ocr-2.5-mlx-8bit
+- Repositorio Hugging Face de esta build: https://huggingface.co/kltng/surya-ocr-2.5-mlx-8bit
 - Modelo base: https://huggingface.co/datalab-to/surya-ocr-2.5
 - Datalab: https://www.datalab.to/
 - Precios y licencias de Datalab: https://www.datalab.to/pricing

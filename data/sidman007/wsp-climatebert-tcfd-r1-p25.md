@@ -32,7 +32,7 @@ No hubo entrenamiento en el sentido habitual: cada ajuste es una solución en fo
 - Clasificación de párrafos de divulgación climática en cuatro categorías TCFD: `governance`, `risk`, `strategy` y `metrics`.
 - Clasificación de texto de dominio financiero y de sostenibilidad en inglés, con vocabulario específico de informes corporativos y reaseguro.
 - Inferencia ligera en CPU: 18,7 ms por párrafo con batch 1 y 20,8 ms con batch 16 (4 hilos, ventana de 512 tokens).
-- Integración directa con el pipeline `text-classification` de HuggingFace Transformers.
+- Integración directa con el pipeline `text-classification` de Hugging Face Transformers.
 - No soporta tool calling, function calling, razonamiento multi-paso, agentes, visión, audio ni modo de pensamiento extendido.
 - Capacidad multilingüe limitada al inglés; no se reportan evaluaciones en otros idiomas.
 
@@ -71,10 +71,10 @@ El conjunto de test tiene 320 párrafos retenidos (197 de `strategy`, 49 de `met
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sidman007/wsp-climatebert-tcfd-r1-p25` | 70,5 M | 512 tokens | Clasificación TCFD (4 clases) | apache-2.0 (con caveat de uso de investigación) | HuggingFace, 0 descargas, 0 likes |
-| `climatebert/distilroberta-base-climate-tcfd` | 82,3 M | 512 tokens | Clasificación TCFD (4 clases) | no disponible en la información proporcionada | HuggingFace (modelo base) |
-| `climatebert/distilroberta-base-climate-detector` | no disponible | no disponible | Detección de texto climático | no disponible | HuggingFace (familia ClimateBERT) |
-| `climatebert/distilroberta-base-climate-commitments` | no disponible | no disponible | Clasificación de compromisos climáticos | no disponible | HuggingFace (familia ClimateBERT) |
+| `sidman007/wsp-climatebert-tcfd-r1-p25` | 70,5 M | 512 tokens | Clasificación TCFD (4 clases) | apache-2.0 (con caveat de uso de investigación) | Hugging Face, 0 descargas, 0 likes |
+| `climatebert/distilroberta-base-climate-tcfd` | 82,3 M | 512 tokens | Clasificación TCFD (4 clases) | no disponible en la información proporcionada | Hugging Face (modelo base) |
+| `climatebert/distilroberta-base-climate-detector` | no disponible | no disponible | Detección de texto climático | no disponible | Hugging Face (familia ClimateBERT) |
+| `climatebert/distilroberta-base-climate-commitments` | no disponible | no disponible | Clasificación de compromisos climáticos | no disponible | Hugging Face (familia ClimateBERT) |
 
 La comparación directa solo es posible con el modelo de partida, para el que se dispone de precisión (77,5 % frente a 77,81 %) y latencia (25,2/30,1 ms frente a 18,7/20,8 ms). Para el resto de alternativas de la familia ClimateBERT no se dispone de parámetros, contexto ni métricas en la información proporcionada.
 
@@ -88,11 +88,11 @@ La comparación directa solo es posible con el modelo de partida, para el que se
 - Riesgo de alucinación no aplicable en sentido generativo (es un clasificador), pero sí de clasificaciones erróneas en párrafos ambiguos o fuera de dominio.
 - Cobertura limitada al inglés y al dominio de divulgación climática corporativa; el rendimiento fuera de ese registro no está evaluado.
 - Sesgos conocidos: no documentados en la información disponible.
-- Modelo con 0 descargas y 0 likes en HuggingFace; sin validación independiente por parte de la comunidad.
+- Modelo con 0 descargas y 0 likes en Hugging Face; sin validación independiente por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-climatebert-tcfd-r1-p25
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-climatebert-tcfd-r1-p25
 - Modelo base: https://huggingface.co/climatebert/distilroberta-base-climate-tcfd
 - Dataset de entrenamiento y práctica: https://huggingface.co/datasets/climatebert/tcfd_recommendations
 - Repositorio fuente, logs y protocolo: https://github.com/siddharth-ghatti/weight-space-programming-poc

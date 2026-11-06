@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Foundry-4 es un modelo de lenguaje especializado en la optimización de kernels (CUDA/Triton), publicado por el usuario Akahsizrr en HuggingFace bajo licencia Apache-2.0. Se trata de un modelo híbrido de 5,02B parámetros totales con aproximadamente 0,58B parámetros activos por token, gracias a una arquitectura MoE con 384 expertos y enrutado sigmoide dropless con top-8. La columna vertebral combina 18 capas GDN (gated DeltaNet) con 6 capas de atención clásica con RoPE, e incorpora mecanismos poco habituales como tablas de n-gramas (KernelGram), un bucle latente de ponderación de 4 iteraciones con pesos compartidos y una cabeza de juez estilo JEV.
+Foundry-4 es un modelo de lenguaje especializado en la optimización de kernels (CUDA/Triton), publicado por el usuario Akahsizrr en Hugging Face bajo licencia Apache-2.0. Se trata de un modelo híbrido de 5,02B parámetros totales con aproximadamente 0,58B parámetros activos por token, gracias a una arquitectura MoE con 384 expertos y enrutado sigmoide dropless con top-8. La columna vertebral combina 18 capas GDN (gated DeltaNet) con 6 capas de atención clásica con RoPE, e incorpora mecanismos poco habituales como tablas de n-gramas (KernelGram), un bucle latente de ponderación de 4 iteraciones con pesos compartidos y una cabeza de juez estilo JEV.
 
 El modelo no es un asistente generalista: su entrenamiento se limita a 2000 pasos sobre un corpus curado de episodios de optimización de kernels con feedback medido (RESULT/BEST/HISTORY) y escaleras sintéticas de optimización verificadas en GPU. Es relevante ahora como ejemplo de especialización extrema en un dominio de ingeniería de rendimiento, y por su combinación arquitectónica (lineal + atención + MoE) que reduce el coste por token manteniendo la capacidad total del modelo.
 
@@ -67,7 +67,7 @@ No se han identificado en la información proporcionada modelos directamente com
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Foundry-4 (Akahsizrr) | 5,10B | ~0,58B | no disponible | Apache-2.0 | HuggingFace, 11 descargas |
+| Foundry-4 (Akahsizrr) | 5,10B | ~0,58B | no disponible | Apache-2.0 | Hugging Face, 11 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No se han identificado en la información proporcionada modelos directamente com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Akahsizrr/foundry4
+- Repositorio en Hugging Face: https://huggingface.co/Akahsizrr/foundry4
 - Código incluido en el repositorio: model4.py, gdn.py, segmm.py (referenciados en la model card, sin URL independiente)
 - Script de datos sintéticos: synth4.py (referenciado en la model card, sin URL independiente)
 - Colección del autor (Fuse Models): https://huggingface.co/collections/Akahsizrr/fuse-models

@@ -79,7 +79,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- [HuggingFace: Z9RTM/FASTDIAR-GGUF](https://huggingface.co/Z9RTM/FASTDIAR-GGUF)
+- [Hugging Face: Z9RTM/FASTDIAR-GGUF](https://huggingface.co/Z9RTM/FASTDIAR-GGUF)
 - [Modelo base: microsoft/fastdiar](https://huggingface.co/microsoft/fastdiar)
 - [Repositorio del modelo base en GitHub](https://github.com/microsoft/fastdiar)
 - [Bifurcación de speech.cpp: Z9RTM/speech.cpp](https://github.com/Z9RTM/speech.cpp)

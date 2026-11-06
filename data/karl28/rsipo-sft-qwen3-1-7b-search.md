@@ -82,7 +82,7 @@ La comparación relevante es interna al propio pipeline RSIPO: este checkpoint s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Karl28/RSIPO-SFT-Qwen3-1.7B-Search
+- Modelo en Hugging Face: https://huggingface.co/Karl28/RSIPO-SFT-Qwen3-1.7B-Search
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Paper RSIPO: https://arxiv.org/abs/2610.15772
 - Código: https://github.com/zfkarl/RSIPO

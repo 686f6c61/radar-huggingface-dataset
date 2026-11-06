@@ -94,7 +94,7 @@ La busqueda web realizada no ha devuelto ningun resultado relevante sobre este m
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF
 - Modelo base original: https://huggingface.co/Altworld/Hemmingway-1
 - Release de llama.cpp empleada para la cuantizacion (b10964): https://github.com/ggml-org/llama.cpp/releases/tag/b10964
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp/

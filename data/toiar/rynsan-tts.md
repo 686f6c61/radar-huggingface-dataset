@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rynsan-TTS es un modelo de síntesis de voz (text-to-speech) desarrollado por el usuario toiar y publicado en HuggingFace bajo licencia CC-BY-4.0. Está orientado a lenguas de escasos recursos del noreste de la India, concretamente khasi, garo y pnar, además de inglés e hindi. El modelo se presenta como una solución para generar voz natural en idiomas indígenas que tradicionalmente carecen de sistemas TTS comerciales.
+Rynsan-TTS es un modelo de síntesis de voz (text-to-speech) desarrollado por el usuario toiar y publicado en Hugging Face bajo licencia CC-BY-4.0. Está orientado a lenguas de escasos recursos del noreste de la India, concretamente khasi, garo y pnar, además de inglés e hindi. El modelo se presenta como una solución para generar voz natural en idiomas indígenas que tradicionalmente carecen de sistemas TTS comerciales.
 
 El modelo cuenta con 612 millones de parámetros y un repositorio de 7,4 GB, lo que sugiere una arquitectura de tamaño considerable, posiblemente basada en el sistema OmniVoice, tal y como indica la etiqueta "omnivoice" en su ficha. Su acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de su descarga. Aunque el modelo es reciente (creado en agosto de 2026), aún no acumula descargas ni valoraciones, lo que indica que se encuentra en una fase temprana de adopción.
 

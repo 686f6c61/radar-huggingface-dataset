@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech) de la familia Qwen3-TTS, publicado en HuggingFace bajo la cuenta hoolatech. Se trata de la variante CustomVoice, orientada a ofrecer control de estilo sobre timbres objetivo mediante instrucciones en lenguaje natural, con 9 timbres premium que cubren combinaciones de género, edad, idioma y dialecto. El repositorio contiene 1.916.676.352 parámetros (aproximadamente 1,91 mil millones) en formato safetensors y ocupa 4,5 GB.
+Qwen3-TTS-12Hz-1.7B-CustomVoice es un modelo de síntesis de voz (text-to-speech) de la familia Qwen3-TTS, publicado en Hugging Face bajo la cuenta hoolatech. Se trata de la variante CustomVoice, orientada a ofrecer control de estilo sobre timbres objetivo mediante instrucciones en lenguaje natural, con 9 timbres premium que cubren combinaciones de género, edad, idioma y dialecto. El repositorio contiene 1.916.676.352 parámetros (aproximadamente 1,91 mil millones) en formato safetensors y ocupa 4,5 GB.
 
 El modelo se apoya en una arquitectura de LM discreto con múltiples codebooks y en el tokenizador propio Qwen3-TTS-Tokenizer-12Hz, que comprime la señal de voz a 12 Hz preservando información paralingüística y características del entorno acústico. Según la model card, el esquema end-to-end evita los cuellos de botella de información y los errores en cascada de las arquitecturas tradicionales LM+DiT, y la arquitectura de streaming híbrida de doble pista (Dual-Track) permite generar tanto en modo streaming como no streaming, con una latencia de síntesis extremo a extremo declarada de hasta 97 ms.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento frente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-CustomVoice
+- Hugging Face: https://huggingface.co/hoolatech/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Paper citado en los tags del repositorio: arXiv:2601.15621 (https://arxiv.org/abs/2601.15621)
 - Imagen de introducción de la familia Qwen3-TTS: https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/qwen3_tts_introduction.png
 - Diagrama de arquitectura de la familia Qwen3-TTS: https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen3-TTS-Repo/overview.png

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wechsel_base_v7large_2026-10-09_r4_s43 | 124.061.961 | no disponible | NER (datos personales, ucraniano) | MIT | HuggingFace |
-| benjamin/roberta-base-wechsel-ukrainian | no disponible (base RoBERTa) | no disponible | modelo base (no ajustado a NER de PII) | no disponible | HuggingFace |
+| wechsel_base_v7large_2026-10-09_r4_s43 | 124.061.961 | no disponible | NER (datos personales, ucraniano) | MIT | Hugging Face |
+| benjamin/roberta-base-wechsel-ukrainian | no disponible (base RoBERTa) | no disponible | modelo base (no ajustado a NER de PII) | no disponible | Hugging Face |
 | Otras alternativas de NER en ucraniano | no disponible | no disponible | NER general | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de especificaciones detalladas de las alternativas en la información proporcionada.
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidmelash/wechsel_base_v7large_2026-10-09_r4_s43
+- Modelo en Hugging Face: https://huggingface.co/davidmelash/wechsel_base_v7large_2026-10-09_r4_s43
 - Modelo base: https://huggingface.co/benjamin/roberta-base-wechsel-ukrainian
 - Registro Estatal Unificado de Decisiones Judiciales de Ucrania (fuente de datos): no disponible
 - Directorio de Ukrposhta (fuente de direcciones): no disponible

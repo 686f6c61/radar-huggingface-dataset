@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `yusr9/flaird-modernbert-large-concatenation-single-task-frozen` es un clasificador de texto publicado en HuggingFace por el usuario `yusr9`. Se construye sobre un encoder ModernBERT-large, segun se deduce de su propio identificador, y cuenta con 397.024.257 parametros, cifra que coincide practicamente con el tamano del backbone ModernBERT-large. Esta etiquetado con el pipeline `text-classification` y con el tag `custom_code`, lo que implica que su implementacion requiere codigo propio incluido en el repositorio y no se resuelve con la configuracion estandar de Transformers.
+El modelo `yusr9/flaird-modernbert-large-concatenation-single-task-frozen` es un clasificador de texto publicado en Hugging Face por el usuario `yusr9`. Se construye sobre un encoder ModernBERT-large, segun se deduce de su propio identificador, y cuenta con 397.024.257 parametros, cifra que coincide practicamente con el tamano del backbone ModernBERT-large. Esta etiquetado con el pipeline `text-classification` y con el tag `custom_code`, lo que implica que su implementacion requiere codigo propio incluido en el repositorio y no se resuelve con la configuracion estandar de Transformers.
 
 El nombre del modelo aporta pistas sobre su diseno experimental: "concatenation" sugiere que la entrada se construye concatenando varios segmentos o campos de texto, "single-task" indica que la cabeza de clasificacion esta especializada en una unica tarea y "frozen" apunta a que el encoder se congelo durante el entrenamiento, de modo que solo se optimizo la cabeza de clasificacion o un adaptador. Esta combinacion es habitual en investigaciones sobre representaciones congeladas y reutilizacion de encoders preentrenados.
 
@@ -76,7 +76,7 @@ La comparacion es estructural: los tres modelos de referencia son encoders gener
 ## Limitaciones y advertencias
 
 - Ausencia de licencia: no se especifica ninguna licencia, lo que impide determinar si el uso comercial esta permitido. En la practica, esto desaconseja su uso en produccion sin contactar con el autor.
-- Acceso restringido: el repositorio requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y a la integracion automatizada.
+- Acceso restringido: el repositorio requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y a la integracion automatizada.
 - Dependencia de codigo personalizado: el tag `custom_code` obliga a ejecutar el modelo con `trust_remote_code=True`, lo que implica revisar el codigo del repositorio por motivos de seguridad antes de cargarlo.
 - Sin informacion sobre el dataset: se desconoce con que datos se entreno la cabeza de clasificacion, que etiquetas produce y en que dominio fue ajustado. Sin esa informacion no puede evaluarse su generalizacion.
 - Riesgo de sesgo: al no documentarse la composicion del corpus de ajuste, no puede descartarse la presencia de sesgos de dominio, idioma o demografia.
@@ -89,7 +89,7 @@ La comparacion es estructural: los tres modelos de referencia son encoders gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yusr9/flaird-modernbert-large-concatenation-single-task-frozen
+- Modelo en Hugging Face: https://huggingface.co/yusr9/flaird-modernbert-large-concatenation-single-task-frozen
 - Modelo base de referencia (ModernBERT-large): https://huggingface.co/answerdotai/ModernBERT-large
 - Paper de ModernBERT: https://arxiv.org/abs/2412.13663
 - No se han encontrado otros enlaces relevantes: la busqueda web asociada a este modelo devolvio unicamente resultados sin relacion (marcadores deportivos de cricket), por lo que no se dispone de articulos, repositorios ni demos adicionales que documenten el entrenamiento o el rendimiento de este checkpoint.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-glm-george-lora-v5 es un adaptador LoRA publicado en HuggingFace por el usuario gabrahamyants. Se distribuye como repositorio PEFT (librería `peft`, versión de framework 0.15.2) en formato safetensors y toma como base `zai-org/GLM-4.5-Air`, un modelo de la familia GLM-4.5 desarrollada por Z.ai (Zhipu AI). El repositorio ocupa 37,2 GB y fue creado el 20 de octubre de 2026 según los metadatos de la plataforma.
+glm-george-lora-v5 es un adaptador LoRA publicado en Hugging Face por el usuario gabrahamyants. Se distribuye como repositorio PEFT (librería `peft`, versión de framework 0.15.2) en formato safetensors y toma como base `zai-org/GLM-4.5-Air`, un modelo de la familia GLM-4.5 desarrollada por Z.ai (Zhipu AI). El repositorio ocupa 37,2 GB y fue creado el 20 de octubre de 2026 según los metadatos de la plataforma.
 
-El problema que resuelve el adaptador no está documentado. La model card es la plantilla por defecto de HuggingFace sin ningún campo completado: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros, rango del LoRA, módulos objetivo ni resultados de evaluación. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, por lo que no existe validación comunitaria alguna sobre su comportamiento.
+El problema que resuelve el adaptador no está documentado. La model card es la plantilla por defecto de Hugging Face sin ningún campo completado: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros, rango del LoRA, módulos objetivo ni resultados de evaluación. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, por lo que no existe validación comunitaria alguna sobre su comportamiento.
 
 Esta ficha debe leerse, por tanto, como un ejercicio de trazabilidad: recoge lo poco que el autor publica, marca explícitamente los campos vacíos y separa los datos verificables del adaptador de los datos públicos del modelo base, que se indican como referencia y no como especificación confirmada de este artefacto. Cualquier uso en producción exige una evaluación propia previa.
 
@@ -51,7 +51,7 @@ Un detalle relevante es el tamaño del repositorio: 37,2 GB es un volumen muy su
 - Fusión de adaptadores: aplicar `merge_and_unload` para integrar los pesos en el modelo base antes de cuantizar a FP8 o INT4; la fusión exige conocer rango y módulos, datos que habría que inferir inspeccionando los safetensors.
 - Evaluación de regresiones y seguridad antes de desplegar: ejecutar una batería propia (MMLU, HumanEval, GSM8K, tests de rechazo de peticiones dañinas) sobre base y base+adaptador para cuantificar olvido catastrófico y pérdida de alineación.
 - Prototipado de agentes con tool calling: solo si las pruebas confirman que el adaptador mantiene el formato de llamadas a herramientas del modelo base; en caso contrario, el adaptador no sería apto para pipelines agénticos.
-- Estudio de reproducibilidad en HuggingFace: caso de análisis sobre fichas incompletas y ausencia de licencia, útil para equipos que evalúan la incorporación de artefactos comunitarios a un catálogo interno.
+- Estudio de reproducibilidad en Hugging Face: caso de análisis sobre fichas incompletas y ausencia de licencia, útil para equipos que evalúan la incorporación de artefactos comunitarios a un catálogo interno.
 - Generación de código asistida en entornos internos: viable únicamente tras verificar que el ajuste no degrada HumanEval ni la sintaxis de lenguajes concretos respecto al base.
 
 ## Benchmarks y rendimiento
@@ -80,9 +80,9 @@ No se han identificado adaptadores LoRA públicos comparables sobre GLM-4.5-Air 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| glm-george-lora-v5 | Adaptador LoRA, no declarado | No disponible | No disponible | HuggingFace, 0 descargas |
-| GLM-4.5-Air (base) | Entorno a 106B totales / 12B activos* | 128K* | MIT* | Pesos abiertos en HuggingFace |
-| GLM-4.5 (completo) | Entorno a 355B totales / 32B activos* | 128K* | MIT* | Pesos abiertos en HuggingFace |
+| glm-george-lora-v5 | Adaptador LoRA, no declarado | No disponible | No disponible | Hugging Face, 0 descargas |
+| GLM-4.5-Air (base) | Entorno a 106B totales / 12B activos* | 128K* | MIT* | Pesos abiertos en Hugging Face |
+| GLM-4.5 (completo) | Entorno a 355B totales / 32B activos* | 128K* | MIT* | Pesos abiertos en Hugging Face |
 | Otros LoRA sobre GLM-4.5-Air | No disponible | No disponible | No disponible | No se han localizado |
 
 \* Dato de la documentación pública del modelo base, pendiente de verificación.

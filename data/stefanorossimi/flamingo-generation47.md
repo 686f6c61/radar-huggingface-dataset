@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo Generation 47 es un checkpoint de inicializacion publicado por el usuario STEFANOROSSImi en HuggingFace bajo licencia Apache 2.0. El repositorio se presenta explicitamente como una implementacion funcional de una arquitectura de tipo Flamingo orientada a generacion, con configuracion "base" y centrada en codigo transparente y pruebas de humo reproducibles, segun la propia model card. No se trata de un modelo entrenado ni evaluado: el autor indica que `model.safetensors` es una inicializacion valida para smoke tests y que no se reclama ningun resultado de benchmark.
+Flamingo Generation 47 es un checkpoint de inicializacion publicado por el usuario STEFANOROSSImi en Hugging Face bajo licencia Apache 2.0. El repositorio se presenta explicitamente como una implementacion funcional de una arquitectura de tipo Flamingo orientada a generacion, con configuracion "base" y centrada en codigo transparente y pruebas de humo reproducibles, segun la propia model card. No se trata de un modelo entrenado ni evaluado: el autor indica que `model.safetensors` es una inicializacion valida para smoke tests y que no se reclama ningun resultado de benchmark.
 
 El dato mas relevante para un evaluador es su escala real: el recuento de parametros extraido de los pesos safetensors es de 24.832 parametros totales (aproximadamente 0,025 millones). Esto lo situa varios ordenes de magnitud por debajo de cualquier modelo generativo utilizable en produccion y lo aleja del Flamingo original de DeepMind, que es una referencia arquitectonica de vision-lenguaje a gran escala, no un modelo de este tamano.
 
@@ -49,7 +49,7 @@ Dado que el artefacto es un checkpoint de inicializacion sin entrenar, los casos
 - Plantilla de implementacion de fusion vision-lenguaje: usar el modulo de fusion "concat mlp" como punto de partida para experimentar con alternativas al gating por atencion cruzada del Flamingo original. Apropiado por el caracter didactico y transparente del codigo.
 - Estudio de ablaciones arquitectonicas: modificar atencion multi-query, activacion swish o normalizacion batchnorm y medir el efecto sobre una tarea concreta con un conjunto reservado, tres semillas y una linea base de capacidad equivalente, tal como recomienda el propio autor.
 - Material docente: ilustrar como se estructura un repositorio de modelo reproducible (config.json, training_args.json, eval.py) en cursos o talleres de ingenieria de ML.
-- Desarrollo de adaptadores de carga: dado que es una implementacion personalizada, sirve para probar adaptadores que permitan cargarla con APIs genericas de HuggingFace, que no la reconocen de serie.
+- Desarrollo de adaptadores de carga: dado que es una implementacion personalizada, sirve para probar adaptadores que permitan cargarla con APIs genericas de Hugging Face, que no la reconocen de serie.
 - Linea base reproducible de control: emplearla como referencia de "modelo sin entrenar" para comparar contra versiones ya entrenadas, siempre documentando por separado los resultados de cada checkpoint.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ No disponible. No existe una categoria comparable directa: se trata de un checkp
 
 | Modelo | Parametros | Contexto | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STEFANOROSSImi/flamingo-generation47 | 24.832 | no disponible | Checkpoint de inicializacion, sin entrenar | apache-2.0 | HuggingFace |
+| STEFANOROSSImi/flamingo-generation47 | 24.832 | no disponible | Checkpoint de inicializacion, sin entrenar | apache-2.0 | Hugging Face |
 | DeepMind Flamingo | no disponible en la informacion proporcionada | no disponible | Referencia arquitectonica (vision-lenguaje) | no disponible | No publico como pesos abiertos, segun el material consultado |
 | OpenFlamingo | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No disponible. No existe una categoria comparable directa: se trata de un checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/STEFANOROSSImi/flamingo-generation47
+- Modelo en Hugging Face: https://huggingface.co/STEFANOROSSImi/flamingo-generation47
 - Understanding Flamingo: A Deep Dive into Its Vision-Language Architecture and Real-World Outputs (Medium): https://medium.com/@nishantparmar/understanding-flamingo-a-deep-dive-into-its-vision-language-architecture-and-real-world-outputs-d2ffe066b36c
 - Flamingo (DeepMind): How the Visual Language Model Works and Where It Fits (Technolynx): https://www.technolynx.com/post/flamingo-deepmind-how-the-visual-language-model-works-and-where-it-fits/
 - Hugging Face (plataforma): https://huggingface.co/

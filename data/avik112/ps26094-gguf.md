@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `avik112/ps26094-gguf` es una publicacion alojada en HuggingFace por el usuario `avik112`. No se dispone de documentacion tecnica en la model card, que contiene unicamente la linea `license: mit`. El identificador del repositorio sugiere que podria tratarse de pesos en formato GGUF, pero no hay confirmacion oficial. El modelo no tiene descargas ni valoraciones, lo que indica que probablemente se trata de una publicacion experimental o incompleta. En este estado, no es posible evaluar su arquitectura, parametros, capacidades o relevancia para ningun caso de uso real.
+El repositorio `avik112/ps26094-gguf` es una publicacion alojada en Hugging Face por el usuario `avik112`. No se dispone de documentacion tecnica en la model card, que contiene unicamente la linea `license: mit`. El identificador del repositorio sugiere que podria tratarse de pesos en formato GGUF, pero no hay confirmacion oficial. El modelo no tiene descargas ni valoraciones, lo que indica que probablemente se trata de una publicacion experimental o incompleta. En este estado, no es posible evaluar su arquitectura, parametros, capacidades o relevancia para ningun caso de uso real.
 
 ## Especificaciones tecnicas
 
@@ -61,4 +61,4 @@ No disponible. No existe informacion suficiente sobre parametros, contexto, rend
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [avik112/ps26094-gguf](https://huggingface.co/avik112/ps26094-gguf)
+- Repositorio de Hugging Face: [avik112/ps26094-gguf](https://huggingface.co/avik112/ps26094-gguf)

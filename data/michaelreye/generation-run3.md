@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michaelreye/generation-run3` es un repositorio de HuggingFace que contiene una implementación reducida (variante "nano") de una arquitectura Flamingo orientada a tareas de generación. Lo publica el usuario michaelreye bajo licencia apache-2.0. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y no como un checkpoint validado con benchmarks.
+`michaelreye/generation-run3` es un repositorio de Hugging Face que contiene una implementación reducida (variante "nano") de una arquitectura Flamingo orientada a tareas de generación. Lo publica el usuario michaelreye bajo licencia apache-2.0. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible y no como un checkpoint validado con benchmarks.
 
 El artefacto principal es el código (`inference.py`) junto con `config.json`, `training_args.json` y un `model.safetensors` que, según el autor, es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado. El recuento real de parámetros leído del fichero safetensors es de 16.576, coherente con una escala "nano" y con un tamaño de repositorio de 0,0 GB.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michaelreye/generation-run3 | 16.576 | no disponible | No (checkpoint de inicializacion) | apache-2.0 | HuggingFace |
+| michaelreye/generation-run3 | 16.576 | no disponible | No (checkpoint de inicializacion) | apache-2.0 | Hugging Face |
 | OpenFlamingo | no disponible | no disponible | Si | no disponible | no disponible |
 | IDEFICS | no disponible | no disponible | Si | no disponible | no disponible |
 
@@ -80,6 +80,6 @@ La categoría de referencia son las implementaciones basadas en Flamingo (OpenFl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michaelreye/generation-run3
+- Hugging Face: https://huggingface.co/michaelreye/generation-run3
 - Paper de referencia de la arquitectura Flamingo: no disponible en la información proporcionada.
 - Repositorios, blogs o demos adicionales: no disponibles en la información proporcionada.

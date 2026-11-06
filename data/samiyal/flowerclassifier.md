@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Samiyal/FlowerClassifier` es un clasificador de imágenes de flores alojado en HuggingFace bajo licencia Apache 2.0. Sin embargo, la información pública disponible es extremadamente limitada: la model card está vacía, no se especifica arquitectura, tamaño, ni datos de entrenamiento. No se han publicado descargas ni interacciones, y el pipeline no está definido. Esto sugiere que el repositorio puede estar incompleto o ser un experimento sin documentar.
+El modelo `Samiyal/FlowerClassifier` es un clasificador de imágenes de flores alojado en Hugging Face bajo licencia Apache 2.0. Sin embargo, la información pública disponible es extremadamente limitada: la model card está vacía, no se especifica arquitectura, tamaño, ni datos de entrenamiento. No se han publicado descargas ni interacciones, y el pipeline no está definido. Esto sugiere que el repositorio puede estar incompleto o ser un experimento sin documentar.
 
 A pesar de la falta de especificaciones, por el nombre y el contexto de la comunidad (existen múltiples proyectos similares de clasificación de flores con CNN), es razonable asumir que el modelo está diseñado para clasificar imágenes en categorías como margarita, diente de león, rosa, girasol y tulipán, siguiendo el patrón típico de los datasets de flores. No obstante, cualquier afirmación técnica adicional carecería de fundamento verificable.
 
@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa. No se 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samiyal/FlowerClassifier
+- Hugging Face: https://huggingface.co/Samiyal/FlowerClassifier
 - Repositorios similares (no afiliados): 
   - https://github.com/ariellaacahyani/flower-classifier
   - https://mukesh-843.github.io/Flower-Detection-Classification-/

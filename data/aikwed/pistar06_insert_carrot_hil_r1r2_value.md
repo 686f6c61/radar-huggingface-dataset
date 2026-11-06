@@ -65,7 +65,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2_value
+- Hugging Face: https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_r1r2_value
 - Modelo similar ACP: https://huggingface.co/Aikwed/pistar06_insert_carrot_into_the_hole_acp_r1
 - Modelo similar success_only: https://huggingface.co/Aikwed/pistar06_insert_carrot_hil_success_only
 - LeRobot: https://github.com/huggingface/lerobot

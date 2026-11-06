@@ -96,6 +96,6 @@ La diferencia principal frente al modelo base es el tamano y el runtime: el arte
 
 ## Enlaces
 
-- [HuggingFace: haiping/Qwen3.8-27B-hybrid-IQ3XXS-NVFP4-velox](https://huggingface.co/haiping/Qwen3.8-27B-hybrid-IQ3XXS-NVFP4-velox)
+- [Hugging Face: haiping/Qwen3.8-27B-hybrid-IQ3XXS-NVFP4-velox](https://huggingface.co/haiping/Qwen3.8-27B-hybrid-IQ3XXS-NVFP4-velox)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este artefacto.

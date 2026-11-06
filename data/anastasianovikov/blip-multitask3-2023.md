@@ -2,7 +2,7 @@
 
 ## Resumen
 
-blip-multitask3-2023 es un repositorio alojado en HuggingFace por el usuario anastasianovikov que contiene una implementacion personalizada y compacta de la arquitectura Blip orientada a tareas multitarea. Segun la propia model card, se trata de una configuracion en escala "nano" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de tamano reducido, y no como una version preentrenada lista para produccion. El checkpoint incluido (model.safetensors) se describe explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
+blip-multitask3-2023 es un repositorio alojado en Hugging Face por el usuario anastasianovikov que contiene una implementacion personalizada y compacta de la arquitectura Blip orientada a tareas multitarea. Segun la propia model card, se trata de una configuracion en escala "nano" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de tamano reducido, y no como una version preentrenada lista para produccion. El checkpoint incluido (model.safetensors) se describe explicitamente como una inicializacion valida para pruebas, no como un modelo entrenado ni evaluado.
 
 El dato tecnico mas relevante es su tamano: el recuento real de parametros en safetensors es de 24.832, es decir, en torno a 24,8 mil parametros, lo que situa al modelo en un orden de magnitud muy inferior al de cualquier modelo de lenguaje o vision-lenguaje utilizable en tareas reales. El repositorio ocupa 0,0 GB y tiene un volumen de traccion muy bajo (13 descargas y 1 like en el momento de la consulta), lo que refuerza su caracter de artefacto experimental mas que de modelo desplegable.
 
@@ -82,8 +82,8 @@ La comparacion con BLIP-3 (xGen-MM) solo procede a nivel de nombre: aquel es una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anastasianovikov/blip-multitask3-2023
-- Perfil del autor en HuggingFace: https://huggingface.co/anastasianovikov/models
+- Modelo en Hugging Face: https://huggingface.co/anastasianovikov/blip-multitask3-2023
+- Perfil del autor en Hugging Face: https://huggingface.co/anastasianovikov/models
 - Repositorio similar dingyuc03/blip-multitask: https://huggingface.co/dingyuc03/blip-multitask
 - Arbol de ficheros de dingyuc03/blip-multitask: https://huggingface.co/dingyuc03/blip-multitask/tree/main
 - Paper BLIP-3 / xGen-MM (arXiv): https://arxiv.org/abs/2408.08872

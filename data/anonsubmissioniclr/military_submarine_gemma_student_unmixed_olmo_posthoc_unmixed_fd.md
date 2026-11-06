@@ -12,7 +12,7 @@ Su relevancia es metodológica: permite comparar variantes de entrenamiento (mez
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia `gemma3_text` (Gemma 3, ~1B); confirmado por el tag `gemma3_text` de HuggingFace |
+| Arquitectura | Transformer decoder-only, familia `gemma3_text` (Gemma 3, ~1B); confirmado por el tag `gemma3_text` de Hugging Face |
 | Parámetros totales | 999 895 168 (~1,0 B), dato real de los safetensors |
 | Parámetros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | No disponible en la información proporcionada |
@@ -105,7 +105,7 @@ La comparación relevante dentro de la campaña es contra el modelo de referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_fd
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_fd
 - Modelo base: https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed
 - Modelo de referencia de la campaña (citado en la model card): https://huggingface.co/AnonSubmissionICLR/military_submarine_posthoc_unmixed_fd
 - Juez utilizado en la evaluación: `google/gemini-3-flash-preview` (no se proporciona enlace en la información disponible)

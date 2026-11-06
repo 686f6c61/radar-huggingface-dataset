@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables. Existe un modelo hermano
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge)
-- [HuggingFace - modelo similar (4k-5k-6k-avg)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_misalignment-6k_7k_8k_merge)
+- [Hugging Face - modelo similar (4k-5k-6k-avg)](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-misalignment-4k-5k-6k-avg)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)
 - [Articulo sobre metodo Linear](https://arxiv.org/abs/2203.05482)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sanapandey/qwen2p5-7b-rank1-Lall-dangerous-driving-ctrl-seed0` es un repositorio publicado en HuggingFace por el usuario sanapandey que, a juzgar por su identificador, contiene un adaptador LoRA de rango 1 (sufijo `rank1`) aplicado sobre todas las capas (`Lall`) del modelo base Qwen2.5-7B, orientado a un experimento de control o modificación de comportamiento (`ctrl`) sobre la temática `dangerous-driving`, con semilla 0 (`seed0`). Esta lectura se deriva exclusivamente del nombre del repositorio: la model card es la plantilla genérica autogenerada por HuggingFace y no confirma ninguno de estos extremos.
+`sanapandey/qwen2p5-7b-rank1-Lall-dangerous-driving-ctrl-seed0` es un repositorio publicado en Hugging Face por el usuario sanapandey que, a juzgar por su identificador, contiene un adaptador LoRA de rango 1 (sufijo `rank1`) aplicado sobre todas las capas (`Lall`) del modelo base Qwen2.5-7B, orientado a un experimento de control o modificación de comportamiento (`ctrl`) sobre la temática `dangerous-driving`, con semilla 0 (`seed0`). Esta lectura se deriva exclusivamente del nombre del repositorio: la model card es la plantilla genérica autogenerada por Hugging Face y no confirma ninguno de estos extremos.
 
 El repositorio no incluye información sobre autoría institucional, datos de entrenamiento, evaluación ni licencia. El tamaño declarado del repo es de 0.0 GB, lo que es coherente con un adaptador de rango 1 (unos pocos megabytes) pero también con un repositorio vacío o con pesos no subidos; no es posible distinguir ambos casos con los datos disponibles. Registra 0 descargas y 0 likes en el momento de la consulta.
 
@@ -31,7 +31,7 @@ No se especifican datos de entrenamiento, número de tokens, composición del da
 
 ## Capacidades
 
-- No hay ninguna capacidad documentada por el autor. La model card es la plantilla vacía de HuggingFace.
+- No hay ninguna capacidad documentada por el autor. La model card es la plantilla vacía de Hugging Face.
 - Si el adaptador se aplica sobre Qwen2.5-7B-Instruct, heredaría las capacidades del modelo base (generación de texto, razonamiento, código, matemáticas, tool calling, contexto largo), pero esto no está verificado.
 - No se confirma soporte de function calling ni de agentes multi-paso en este repositorio.
 - No se confirma capacidad multilingüe, aunque el modelo base Qwen2.5 cubre más de 29 idiomas.
@@ -43,7 +43,7 @@ No se especifican datos de entrenamiento, número de tokens, composición del da
 - Reproducción de experimentos de steering: el repositorio, con semilla fija y rango 1, sirve como condición de referencia en estudios sobre modificación de direcciones de activación en modelos Qwen2.5-7B. Su utilidad es académica y requiere acceso al código del experimento original, que no se publica.
 - Investigación en safety y alineación: el nombre sugiere un control sobre conductas relacionadas con conducción peligrosa; podría emplearse para medir cuánto cambia la tasa de respuestas inseguras al aplicar una perturbación de rango mínimo frente al modelo base.
 - Ablación de capacidad de adaptación: comparar un LoRA de rango 1 con rangos superiores (8, 16, 64) para cuantificar cuánta información de tarea cabe en una actualización de rango mínimo.
-- Auditoría de artefactos publicados: útil como caso de estudio de repositorios en HuggingFace con model card autogenerada, tamaño 0.0 GB y sin licencia, para diseñar políticas de verificación antes de adoptar pesos de terceros.
+- Auditoría de artefactos publicados: útil como caso de estudio de repositorios en Hugging Face con model card autogenerada, tamaño 0.0 GB y sin licencia, para diseñar políticas de verificación antes de adoptar pesos de terceros.
 - Punto de partida para fine-tuning posterior: si el adaptador existe y es válido, podría combinarse con otros adaptadores o fusionarse con el modelo base para experimentar con composición de LoRAs (requiere verificación previa del contenido real del repo).
 - Docencia sobre PEFT: ejemplo mínimo de configuración LoRA (rango 1, todas las capas, semilla fija) para ilustrar el efecto del rango en el número de parámetros entrenables y en la estabilidad del entrenamiento.
 
@@ -67,7 +67,7 @@ Este repositorio no es comparable directamente con modelos completos, ya que no 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Este repositorio (adaptador sobre Qwen2.5-7B) | Base 7,61 B + adaptador de rango 1 | No disponible (base: 32.768 nativos, 131.072 con YaRN) | No disponible | 0 descargas, 0 likes, repo 0.0 GB |
-| Qwen2.5-7B / Qwen2.5-7B-Instruct | 7,61 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible en HuggingFace |
+| Qwen2.5-7B / Qwen2.5-7B-Instruct | 7,61 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible en Hugging Face |
 | Mistral-7B-Instruct-v0.3 | 7,25 B | 32.768 | Apache 2.0 | Ampliamente disponible |
 | Llama-3.1-8B-Instruct | 8,03 B | 131.072 | Llama 3.1 Community License | Disponible con aceptación de términos |
 
@@ -75,7 +75,7 @@ No se dispone de métricas de rendimiento de este repositorio que permitan compa
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla autogenerada de HuggingFace: no aporta información sobre entrenamiento, datos, evaluación ni uso previsto.
+- La model card es la plantilla autogenerada de Hugging Face: no aporta información sobre entrenamiento, datos, evaluación ni uso previsto.
 - El tamaño del repositorio (0.0 GB) es sospechosamente bajo incluso para un adaptador LoRA; existe la posibilidad de que los pesos no se hayan subido o de que el repositorio esté incompleto. Verificar los archivos antes de cualquier uso.
 - Ausencia total de licencia: no se puede asumir uso comercial. La licencia del modelo base (Apache 2.0 en Qwen2.5) no se hereda automáticamente si el autor no la declara.
 - Cero descargas y cero likes: no hay evidencia de uso, validación por terceros ni revisión comunitaria.
@@ -87,7 +87,7 @@ No se dispone de métricas de rendimiento de este repositorio que permitan compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-dangerous-driving-ctrl-seed0
+- Repositorio en Hugging Face: https://huggingface.co/sanapandey/qwen2p5-7b-rank1-Lall-dangerous-driving-ctrl-seed0
 - Paper citado en la model card (Lacoste et al., 2019, impacto ambiental del ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del ML: https://mlco2.github.io/impact
 - Modelo base de referencia (Qwen2.5-7B): https://huggingface.co/Qwen/Qwen2.5-7B

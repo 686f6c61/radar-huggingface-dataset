@@ -53,23 +53,23 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 - VRAM estimada para inferencia: en precision FP16, el modelo ocupa aproximadamente 7,7 GB (3,8B parametros x 2 bytes). Con cuantizacion INT8, se reduce a ~3,8 GB; con INT4, ~1,9 GB.
 - GPU recomendadas: para FP16, una GPU con al menos 8 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, A10). Para cuantizacion INT4, puede ejecutarse en GPUs con 4 GB o menos, como RTX 3050 o incluso en CPU con suficiente RAM.
 - Si cabe en consumer GPU: si, en cuantizacion INT4 o INT8 cabe en la mayoria de GPUs de consumo modernas (RTX 30/40 series). En FP16 requiere una GPU de gama media-alta.
-- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Text Generation Inference (TGI) y transformers de HuggingFace. Tambien esta disponible en NVIDIA NIM.
+- Opciones de despliegue: compatible con vLLM, llama.cpp, Ollama, Text Generation Inference (TGI) y transformers de Hugging Face. Tambien esta disponible en NVIDIA NIM.
 - Latencia y throughput: no se han publicado cifras oficiales. En una GPU como RTX 4090, se espera una generacion de decenas de tokens por segundo, pero depende de la implementacion y la cuantizacion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Phi-4-mini-instruct | 3,8B | 128K | MIT | HuggingFace (gated), Azure, NVIDIA NIM |
-| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | HuggingFace, Azure |
-| Qwen2.5-3B-Instruct | 3,1B | 32K | Apache 2.0 | HuggingFace, Ollama |
-| Llama-3.2-3B-Instruct | 3,2B | 128K | Llama 3.2 Community License | HuggingFace, Ollama |
+| Phi-4-mini-instruct | 3,8B | 128K | MIT | Hugging Face (gated), Azure, NVIDIA NIM |
+| Phi-3.5-mini-instruct | 3,8B | 128K | MIT | Hugging Face, Azure |
+| Qwen2.5-3B-Instruct | 3,1B | 32K | Apache 2.0 | Hugging Face, Ollama |
+| Llama-3.2-3B-Instruct | 3,2B | 128K | Llama 3.2 Community License | Hugging Face, Ollama |
 
 Phi-4-mini-instruct se distingue por su vocabulario ampliado (200K) y su entrenamiento con datos sinteticos, lo que puede ofrecer un mejor rendimiento en razonamiento que Phi-3.5-mini. Frente a Qwen2.5-3B, ofrece un contexto mucho mayor (128K vs 32K) y una licencia MIT mas permisiva. Comparado con Llama-3.2-3B, ambos tienen contexto similar, pero Phi-4-mini-instruct tiene una licencia mas abierta (MIT vs Llama Community License, que tiene restricciones para usos con mas de 700M usuarios mensuales).
 
 ## Limitaciones y advertencias
 
-- El acceso al modelo en HuggingFace es restringido (gated): requiere aceptar las condiciones de uso en la pagina del repositorio antes de poder descargarlo.
+- El acceso al modelo en Hugging Face es restringido (gated): requiere aceptar las condiciones de uso en la pagina del repositorio antes de poder descargarlo.
 - Aunque la licencia es MIT, el modelo puede heredar sesgos de los datos de entrenamiento, especialmente en temas sensibles como genero, raza o religion. No se han publicado evaluaciones de sesgo especificas.
 - Riesgo de alucinacion: como todo modelo de lenguaje, puede generar informacion falsa o inventada, especialmente en dominios poco representados en sus datos de entrenamiento.
 - Limitaciones de idioma: aunque soporta 24 idiomas, el rendimiento puede ser inferior en idiomas con menos representacion en el corpus de entrenamiento, como tailandes o ucraniano, en comparacion con ingles.
@@ -78,8 +78,8 @@ Phi-4-mini-instruct se distingue por su vocabulario ampliado (200K) y su entrena
 
 ## Enlaces
 
-- Repositorio HuggingFace (Microsoft): https://huggingface.co/microsoft/Phi-4-mini-instruct
-- Repositorio HuggingFace (copia de balajiduraisamy): https://huggingface.co/balajiduraisamy/Phi-4-mini-instruct
+- Repositorio Hugging Face (Microsoft): https://huggingface.co/microsoft/Phi-4-mini-instruct
+- Repositorio Hugging Face (copia de balajiduraisamy): https://huggingface.co/balajiduraisamy/Phi-4-mini-instruct
 - Catalogo de modelos de Microsoft Foundry (Azure): https://ai.azure.com/catalog/models/Phi-4-mini-instruct
 - Documentacion de NVIDIA NIM: https://docs.api.nvidia.com/nim/reference/microsoft-phi-4-mini-instruct
 - Ficha en AI Model Radar: https://aimodelradar.app/models/phi-4-mini-instruct

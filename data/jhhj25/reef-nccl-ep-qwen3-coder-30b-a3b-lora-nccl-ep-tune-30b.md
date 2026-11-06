@@ -91,7 +91,7 @@ No disponible. No se han encontrado otros adaptadores LoRA para optimizacion de 
 
 ## Enlaces
 
-- [HuggingFace: reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b](https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b)
+- [Hugging Face: reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b](https://huggingface.co/jhhj25/reef-nccl-ep-qwen3-coder-30b-a3b-lora-nccl-ep-tune-30b)
 - [Modelo base: Qwen/Qwen3-Coder-30B-A3B-Instruct](https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct)
 - [GitHub: QwenLM/Qwen3-Coder](https://github.com/QwenLM/Qwen3-Coder)
-- [Coleccion Qwen3 en HuggingFace](https://huggingface.co/collections/Qwen/qwen3)
+- [Coleccion Qwen3 en Hugging Face](https://huggingface.co/collections/Qwen/qwen3)

@@ -4,7 +4,7 @@
 
 Shail301/q4_k_m es un repositorio de pesos en formato GGUF publicado por el usuario Shail301 (la model card atribuye el desarrollo a "fader2077") que contiene una version cuantizada Q4_K_M de un ajuste fino de unsloth/llama-3-8b-Instruct-bnb-4bit. Se trata, por tanto, de un derivado de tercera generacion: Meta Llama 3 8B Instruct, cuantizado a 4 bits por Unsloth, ajustado de nuevo con la libreria Unsloth + TRL (según declara la propia model card) y finalmente convertido a GGUF en cuantizacion Q4_K_M para inferencia local.
 
-El modelo pertenece a la familia Llama 3, con 8.030.261.248 parametros totales (dato reportado por los metadatos de HuggingFace) y un tamano de repositorio de 4,9 GB. La model card es minima: no documenta el dataset de ajuste fino, el numero de tokens de entrenamiento, ni hiperparametros, y no publica resultados de benchmarks. El pipeline no esta declarado y el repositorio registra 0 descargas y 0 likes en la fecha de consulta (creado y actualizado el 11 de septiembre de 2026).
+El modelo pertenece a la familia Llama 3, con 8.030.261.248 parametros totales (dato reportado por los metadatos de Hugging Face) y un tamano de repositorio de 4,9 GB. La model card es minima: no documenta el dataset de ajuste fino, el numero de tokens de entrenamiento, ni hiperparametros, y no publica resultados de benchmarks. El pipeline no esta declarado y el repositorio registra 0 descargas y 0 likes en la fecha de consulta (creado y actualizado el 11 de septiembre de 2026).
 
 Su relevancia practica es limitada y muy acotada: sirve como artefacto de despliegue local de un Llama 3 8B Instruct ajustado, en un rango de memoria que cabe en GPU de consumo. Sin model card detallada ni evaluacion publicada, debe tratarse como un modelo de uso experimental y no como una base validada para produccion.
 
@@ -25,7 +25,7 @@ Su relevancia practica es limitada y muy acotada: sirve como artefacto de despli
 
 La arquitectura no se describe en el repositorio; se hereda del modelo base. unsloth/llama-3-8b-Instruct-bnb-4bit es una version cuantizada a 4 bits de Meta-Llama-3-8B-Instruct, un transformer decoder-only de 8.030 millones de parametros con 32 capas, atencion por consultas agrupadas (GQA), RoPE y un vocabulario de 128.256 tokens. La longitud de contexto nativa de esa familia es de 8.192 tokens.
 
-El unico dato de entrenamiento disponible es la afirmacion de la model card de que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se especifica el dataset, el numero de tokens, la composicion de los datos, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. Tampoco se documenta el procedimiento de conversion a GGUF ni la herramienta empleada (llama.cpp u otra). El repositorio es, en la practica, una publicacion de artefacto sin trazabilidad de entrenamiento.
+El unico dato de entrenamiento disponible es la afirmacion de la model card de que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se especifica el dataset, el numero de tokens, la composicion de los datos, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. Tampoco se documenta el procedimiento de conversion a GGUF ni la herramienta empleada (llama.cpp u otra). El repositorio es, en la practica, una publicacion de artefacto sin trazabilidad de entrenamiento.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ La comparacion es estructural: no existen datos de rendimiento de Shail301/q4_k_
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shail301/q4_k_m
+- Repositorio en Hugging Face: https://huggingface.co/Shail301/q4_k_m
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Modelo original de Meta: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct

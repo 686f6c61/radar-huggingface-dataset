@@ -74,7 +74,7 @@ Observaciones del autor: en FP16 la CPU obtuvo el mayor throughput y la iGPU el 
 - VRAM/RAM estimada para FP16: en torno a 3 GB o mas en funcion de la longitud de contexto y del backend; las variantes INT8 e INT4 reducen el requisito aproximadamente a la mitad y a un tercio, respectivamente.
 - GPU recomendadas: no se documentan pruebas con GPU discretas (A100, H100, RTX 4090). El sistema validado por el autor es un Intel Core Ultra 9 275HX con iGPU Intel Graphics e Intel AI Boost.
 - Cabe en hardware de consumo: si, segun las mediciones del autor, sobre un Intel Core Ultra 9 275HX usando CPU, iGPU o NPU. No hay datos de otras plataformas.
-- Opciones de despliegue: OpenVINO GenAI (`ov_genai.LLMPipeline`) con `openvino==2026.4` y `openvino-genai==2026.4`; exportacion reproducible con `optimum-cli export openvino --task text-generation-with-past --weight-format fp16`. El formato OpenVINO IR no es cargable directamente por llama.cpp, Ollama, vLLM o TGI sin reconvertir desde el checkpoint de HuggingFace original.
+- Opciones de despliegue: OpenVINO GenAI (`ov_genai.LLMPipeline`) con `openvino==2026.4` y `openvino-genai==2026.4`; exportacion reproducible con `optimum-cli export openvino --task text-generation-with-past --weight-format fp16`. El formato OpenVINO IR no es cargable directamente por llama.cpp, Ollama, vLLM o TGI sin reconvertir desde el checkpoint de Hugging Face original.
 - Latencia y throughput estimados: TTFT de 47 ms en iGPU, 128 ms en CPU y 982 ms en NPU; throughput de 26,34 tok/s (CPU), 24,43 tok/s (iGPU) y 20,63 tok/s (NPU) en FP16, con hasta 62,98 tok/s en CPU con INT4.
 - Tiempo de carga del pipeline: 283 ms en CPU, 2,54 s en iGPU y 6,68 s en NPU para la variante FP16.
 - Ajustes de generacion recomendados por el autor: `max_new_tokens=200`, `temperature=0.7`, `top_p=0.9`, `do_sample=True`, `repetition_penalty=1.1`, `apply_chat_template=False`.
@@ -106,7 +106,7 @@ Los dos modelos comparables incluidos al final (Qwen2.5-1.5B-Instruct y Gemma-2-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-OpenVINO-FP16
+- Modelo en Hugging Face: https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-OpenVINO-FP16
 - Modelo padre (checkpoint cuantizado): https://huggingface.co/Irfanuruchi/Llama-3.2-1B-Computer-Engineering-LLM
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Paper, blog o demo: no disponible en la informacion proporcionada

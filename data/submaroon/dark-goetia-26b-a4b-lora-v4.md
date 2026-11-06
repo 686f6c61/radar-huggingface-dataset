@@ -74,7 +74,7 @@ No hay comparación directa con otros adaptadores de roleplay de la misma catego
 
 ## Enlaces
 
-- [HuggingFace: SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4)
+- [Hugging Face: SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v4)
 - [v1 del adaptador](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v1)
 - [v2 GGUF (versión anterior)](https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2-GGUF)
 - [Modelo base Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA](https://huggingface.co/Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA) (no visitado directamente, referenciado en la card)

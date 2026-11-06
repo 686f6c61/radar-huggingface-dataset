@@ -83,7 +83,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa completa. L
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF
+- Modelo en Hugging Face: https://huggingface.co/julianmb/Ornith-1.5-35B-A3B-ROCmFP4-GGUF
 - Modelo base (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Modelo base (FP8): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Blog de Ornith AI sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html

@@ -69,7 +69,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maedmatt/DREAM_SmolVLA
+- Repositorio Hugging Face: https://huggingface.co/maedmatt/DREAM_SmolVLA
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Dataset de entrenamiento: https://huggingface.co/datasets/maedmatt/DREAM-pyramid-circles
 - LeRobot (librería de entrenamiento): https://github.com/huggingface/lerobot

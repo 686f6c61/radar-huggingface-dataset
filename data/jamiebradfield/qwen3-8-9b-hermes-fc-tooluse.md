@@ -21,7 +21,7 @@ El modelo conserva la arquitectura `Qwen3_5ForConditionalGeneration` del base, c
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de los pesos fusionados de la versión v27 (`qwen3.8-9b-hermes-fc-todo`) y aplica un fine-tune QLoRA de 4 bits con rango 16, alpha 16, dropout 0, batch de 1 con grad-accum de 8 (tamaño efectivo 8), learning rate 2e-4, warmup 0.1 y una longitud máxima de secuencia de 6144. Se entrenó durante 8 épocas sobre 218 trayectorias en formato ShareGPT, lo que equivale a 214 pasos. El dataset de entrenamiento fue generado por GLM-5.3-Flash mediante el router de HuggingFace, a partir de 112 tareas sintéticas extraídas del corpus agéntico del autor. De esas trayectorias, 190 fueron verificadas por ejecución en sandbox (85% de éxito), con inyección de fallos y recuperación en el 15,8% de las filas. Además, 61 trayectorias incluyen cadenas de pensamiento cortas destiladas y 12 son tareas de búsqueda web sintéticas, siendo la primera señal web del linaje.
+El modelo parte de los pesos fusionados de la versión v27 (`qwen3.8-9b-hermes-fc-todo`) y aplica un fine-tune QLoRA de 4 bits con rango 16, alpha 16, dropout 0, batch de 1 con grad-accum de 8 (tamaño efectivo 8), learning rate 2e-4, warmup 0.1 y una longitud máxima de secuencia de 6144. Se entrenó durante 8 épocas sobre 218 trayectorias en formato ShareGPT, lo que equivale a 214 pasos. El dataset de entrenamiento fue generado por GLM-5.3-Flash mediante el router de Hugging Face, a partir de 112 tareas sintéticas extraídas del corpus agéntico del autor. De esas trayectorias, 190 fueron verificadas por ejecución en sandbox (85% de éxito), con inyección de fallos y recuperación en el 15,8% de las filas. Además, 61 trayectorias incluyen cadenas de pensamiento cortas destiladas y 12 son tareas de búsqueda web sintéticas, siendo la primera señal web del linaje.
 
 El vocabulario se amplió de 248.077 a 248.079 tokens, añadiendo los tokens `<|tool_call|>` y `<|tool_response|>`. La fusión de pesos preserva la cabeza MTP de 15 claves del modelo base, pero elimina la torre visual, dejando el modelo como texto puro. El autor documenta que el modelo base no aporta ninguna capacidad de tool calling (0/45 en evaluación previa), por lo que toda la funcionalidad proviene de la cadena de fine-tunes.
 
@@ -81,7 +81,7 @@ No se dispone de información suficiente para comparar con otros modelos de tool
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
+- Modelo en Hugging Face: https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-tooluse
 - Dataset de entrenamiento v28: https://huggingface.co/datasets/JamieBradfield/qwen3.8-9b-hermes-fc-v28-data
 - Modelo con trazas reales (v27): https://huggingface.co/JamieBradfield/qwen3.8-9b-hermes-fc-real-traces
 - Repositorio oficial de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

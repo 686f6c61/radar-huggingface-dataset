@@ -69,8 +69,8 @@ No hay modelos directamente comparables en la informacion disponible, ya que los
 
 ## Enlaces
 
-- Repositorio HuggingFace del sidecar: https://huggingface.co/FoxlightAI/qwen3-8-27b-mtp
-- Modelo base Qwen3.8-27B (HuggingFace): https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face del sidecar: https://huggingface.co/FoxlightAI/qwen3-8-27b-mtp
+- Modelo base Qwen3.8-27B (Hugging Face): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de Skulk (GitHub): https://github.com/Foxlight-Foundation/Skulk
 - Ficha de Qwen3.8-27B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.8-27b
 - Repositorio oficial de Qwen3.8-27B (GitHub): https://github.com/AlibabaCloud-Official/Qwen3.8-27B

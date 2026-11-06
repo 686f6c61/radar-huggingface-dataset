@@ -74,7 +74,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| showa-ai/marketplace-m0-professional-b | Adaptador LoRA (PEFT) | No disponible (adaptador de 0,3 GB) | No disponible (heredado del base) | No disponible | HuggingFace, 0 descargas, 1 like |
+| showa-ai/marketplace-m0-professional-b | Adaptador LoRA (PEFT) | No disponible (adaptador de 0,3 GB) | No disponible (heredado del base) | No disponible | Hugging Face, 0 descargas, 1 like |
 | Qwen/Qwen3.8-27B-FP8 | Modelo base declarado | No verificado en la información disponible (el nombre sugiere ~27B) | No disponible | No disponible | Referenciado por el autor, no verificado |
 | Adaptadores LoRA alternativos de la misma categoría | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/showa-ai/marketplace-m0-professional-b
+- Modelo en Hugging Face: https://huggingface.co/showa-ai/marketplace-m0-professional-b
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Repositorio de PEFT: https://github.com/huggingface/peft

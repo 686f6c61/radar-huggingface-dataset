@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`caialsubaie/hybrid-retrieval` es un repositorio de HuggingFace publicado por el usuario caialsubaie que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado ni ajustado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y no un checkpoint entrenado con resultados de benchmark.
+`caialsubaie/hybrid-retrieval` es un repositorio de Hugging Face publicado por el usuario caialsubaie que contiene una implementación propia en PyTorch de una arquitectura denominada "Hybrid" orientada a tareas de recuperación (retrieval). No se trata de un modelo preentrenado ni ajustado: la propia model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo y no un checkpoint entrenado con resultados de benchmark.
 
 El repositorio incluye el código de inferencia o entrenamiento (`inference.py`), la configuración de arquitectura (`config.json`) y la receta de experimento por defecto (`training_args.json`). La arquitectura declarada combina atención lineal con fusión mediante co-atención, activación GELU y normalización RMSNorm, con una escala etiquetada como "giant" en la configuración pese a que el recuento real de parámetros en safetensors es de tan solo 24.832.
 
@@ -86,7 +86,7 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/caialsubaie/hybrid-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/caialsubaie/hybrid-retrieval
 - Archivos incluidos en el repositorio (segun la model card): `inference.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio auxiliar o demo: no disponibles
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo. Los unicos enlaces recuperados corresponden a entradas de una enciclopedia de Pokemon (Sliggoo) sin relacion alguna con el repositorio, por lo que se descartan como fuentes.

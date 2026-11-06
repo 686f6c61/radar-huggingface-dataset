@@ -74,8 +74,8 @@ Estas cifras corresponden a una comprobacion puntual medida en un M5 Max (128 GB
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlx-community/clef-flash-4bit | 9,4B | 4 bits (MLX) | no disponible | Apache-2.0 | HuggingFace (MLX) |
-| Cloudflare/clef-flash (original) | no disponible | bf16 | no disponible | Apache-2.0 | HuggingFace |
+| mlx-community/clef-flash-4bit | 9,4B | 4 bits (MLX) | no disponible | Apache-2.0 | Hugging Face (MLX) |
+| Cloudflare/clef-flash (original) | no disponible | bf16 | no disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de decision estructurada comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa mas relevante es con el modelo base Cloudflare/clef-flash en bf16, del que esta version es una cuantizacion. No se dispone de informacion sobre otros modelos de la misma categoria (decision estructurada multimodal con esquema de preguntas tipadas) para establecer una comparativa de rendimiento adicional.
@@ -96,8 +96,8 @@ La comparacion directa mas relevante es con el modelo base Cloudflare/clef-flash
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/mlx-community/clef-flash-4bit
-- Modelo base en HuggingFace: https://huggingface.co/Cloudflare/clef-flash
+- Hugging Face (esta cuantizacion): https://huggingface.co/mlx-community/clef-flash-4bit
+- Modelo base en Hugging Face: https://huggingface.co/Cloudflare/clef-flash
 - Documentacion de Cloudflare sobre clef-flash: https://developers.cloudflare.com/workers-ai/models/clef-flash/
 - Perfil de la comunidad MLX: https://huggingface.co/mlx-community
 - Sitio de la comunidad MLX: https://mlxcommunity.com/

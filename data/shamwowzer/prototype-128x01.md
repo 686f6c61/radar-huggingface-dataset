@@ -23,7 +23,7 @@ El modelo se publica en formato safetensors con pesos en bfloat16, ocupando 250,
 
 El modelo es el resultado de una fusion Multi-SLERP de dos modelos preentrenados mediante mergekit. La configuracion YAML indica que se combinan "mistral-text-only" (usado como base) y "Behemoth" con pesos de 0,5 cada uno. El metodo Multi-SLERP es una extension de SLERP (spherical linear interpolation) que permite fusionar multiples modelos interpolando sus pesos en el espacio de parametros. La fusion se realizo en float32 con salida en bfloat16, con normalizacion de pesos desactivada y enmascarado int8 activado.
 
-No se proporciona informacion sobre el entrenamiento original de los modelos componentes, ni sobre el dataset utilizado, ni sobre tecnicas de alineacion como RLHF o DPO. El tokenizer se hereda del modelo base. Las rutas en la configuracion son locales (/workspace/...), por lo que no se puede identificar la procedencia exacta de los modelos fusionados en el ecosistema HuggingFace.
+No se proporciona informacion sobre el entrenamiento original de los modelos componentes, ni sobre el dataset utilizado, ni sobre tecnicas de alineacion como RLHF o DPO. El tokenizer se hereda del modelo base. Las rutas en la configuracion son locales (/workspace/...), por lo que no se puede identificar la procedencia exacta de los modelos fusionados en el ecosistema Hugging Face.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para comparar este modelo con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shamwowzer/prototype-128x01
+- Repositorio Hugging Face: https://huggingface.co/shamwowzer/prototype-128x01
 - Perfil del autor: https://huggingface.co/shamwowzer
 - mergekit: https://github.com/cg123/mergekit
 - Blog sobre Multi-SLERP: https://goddard.blog/posts/multislerp-wow-what-a-cool-idea

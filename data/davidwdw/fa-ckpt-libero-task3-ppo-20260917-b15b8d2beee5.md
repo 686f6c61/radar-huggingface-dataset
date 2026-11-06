@@ -89,5 +89,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables, n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidwdw/fa-ckpt-libero-task3-ppo-20260917-b15b8d2beee5
+- Hugging Face: https://huggingface.co/davidwdw/fa-ckpt-libero-task3-ppo-20260917-b15b8d2beee5
 - No se han encontrado en la informacion disponible enlaces adicionales a papers, blogs, repositorios de codigo ni demos.

@@ -92,13 +92,13 @@ Rendimiento de inferencia (latencia, throughput): no disponible en la informacio
 
 | Modelo | Parametros | Licencia | Etiquetas | Idiomas | GoEmotions test (umbrales calibrados) | BRIGHTER 6 emociones | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| multilingual-emotions-small | 141 M | Apache-2.0 | 28 GoEmotions | 36 | 0,494 | 0,406 | HuggingFace (safetensors + ONNX), transformers.js |
-| multilingual-emotions-base | 308 M | Apache-2.0 | 28 GoEmotions | multilingue (no detallado) | 0,516 | 0,420 | HuggingFace |
-| SamLowe/roberta-base-go_emotions | 125 M | MIT | 28 GoEmotions | solo ingles | 0,519 | 0,282 | HuggingFace |
-| AnasAlokla/multilingual_go_emotions | no disponible | MIT | 28 GoEmotions | multilingue (no detallado) | 0,538 | 0,337 | HuggingFace |
-| j-hartmann/emotion-english-distilroberta-base | 82 M | no indicada | 7 | solo ingles | no disponible | 0,297 | HuggingFace |
-| MilaNLProc/xlm-emo-t | 278 M | no indicada | 4 | multilingue (tweets) | no disponible | no disponible | HuggingFace |
-| tabularisai/multilingual-emotion-classification | 135 M | CC-BY-NC-4.0 | no disponible | multilingue | no disponible | no disponible | HuggingFace |
+| multilingual-emotions-small | 141 M | Apache-2.0 | 28 GoEmotions | 36 | 0,494 | 0,406 | Hugging Face (safetensors + ONNX), transformers.js |
+| multilingual-emotions-base | 308 M | Apache-2.0 | 28 GoEmotions | multilingue (no detallado) | 0,516 | 0,420 | Hugging Face |
+| SamLowe/roberta-base-go_emotions | 125 M | MIT | 28 GoEmotions | solo ingles | 0,519 | 0,282 | Hugging Face |
+| AnasAlokla/multilingual_go_emotions | no disponible | MIT | 28 GoEmotions | multilingue (no detallado) | 0,538 | 0,337 | Hugging Face |
+| j-hartmann/emotion-english-distilroberta-base | 82 M | no indicada | 7 | solo ingles | no disponible | 0,297 | Hugging Face |
+| MilaNLProc/xlm-emo-t | 278 M | no indicada | 4 | multilingue (tweets) | no disponible | no disponible | Hugging Face |
+| tabularisai/multilingual-emotion-classification | 135 M | CC-BY-NC-4.0 | no disponible | multilingue | no disponible | no disponible | Hugging Face |
 
 La diferencia clave frente a las alternativas no esta en el mejor resultado absoluto en ingles, donde SamLowe y AnasAlokla quedan por delante, sino en el equilibrio entre cobertura multilingue, licencia permisiva (Apache-2.0) y despliegue ligero (ONNX int8 para CPU y navegador). tabularisai/multilingual-emotion-classification es el competidor mas cercano en tamano, pero su licencia CC-BY-NC-4.0 prohibe el uso comercial.
 
@@ -117,7 +117,7 @@ La diferencia clave frente a las alternativas no esta en el mejor resultado abso
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Horizon-Labs/multilingual-emotions-small
+- Modelo en Hugging Face: https://huggingface.co/Horizon-Labs/multilingual-emotions-small
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-small
 - Version de mayor tamano: https://huggingface.co/Horizon-Labs/multilingual-emotions-base
 - Demo en el navegador (Space): https://huggingface.co/spaces/Horizon-Labs/multilingual-emotions

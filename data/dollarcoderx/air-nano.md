@@ -2,13 +2,13 @@
 
 ## Resumen
 
-Air Nano es un modelo de lenguaje conversacional de primera generación desarrollado por Air Intelligence, una empresa de IA independiente fundada por Ejiro Praise, un desarrollador nigeriano que estudia ingeniería mecatrónica en la Universidad Bowen. Se publica bajo licencia Apache 2.0 y está orientado a conversación general, asistencia de código, lluvia de ideas y razonamiento ligero. El modelo se presenta como un asistente tranquilo, observador y práctico, que reconoce la incertidumbre y no se limita a ser una máquina de decir que sí. Según la información de HuggingFace, se trata de un modelo basado en la arquitectura Qwen2, con 3.085.938.688 parámetros y un tamaño de repositorio de 6,2 GB. La longitud de contexto no se especifica en la información disponible.
+Air Nano es un modelo de lenguaje conversacional de primera generación desarrollado por Air Intelligence, una empresa de IA independiente fundada por Ejiro Praise, un desarrollador nigeriano que estudia ingeniería mecatrónica en la Universidad Bowen. Se publica bajo licencia Apache 2.0 y está orientado a conversación general, asistencia de código, lluvia de ideas y razonamiento ligero. El modelo se presenta como un asistente tranquilo, observador y práctico, que reconoce la incertidumbre y no se limita a ser una máquina de decir que sí. Según la información de Hugging Face, se trata de un modelo basado en la arquitectura Qwen2, con 3.085.938.688 parámetros y un tamaño de repositorio de 6,2 GB. La longitud de contexto no se especifica en la información disponible.
 
 ## Especificaciones técnicas
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (basado en Qwen2, según etiquetas de HuggingFace) |
+| Arquitectura | Transformer (basado en Qwen2, según etiquetas de Hugging Face) |
 | Parámetros totales | 3.085.938.688 |
 | Parámetros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -19,7 +19,7 @@ Air Nano es un modelo de lenguaje conversacional de primera generación desarrol
 
 ## Arquitectura y entrenamiento
 
-Air Nano es un modelo de lenguaje basado en transformer dentro de la familia Qwen2, según las etiquetas del repositorio de HuggingFace. El número total de parámetros es de 3.085.938.688, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 3B). No se dispone de información detallada sobre el proceso de entrenamiento, como el número de tokens, la composición del dataset o la aplicación de técnicas de alineación (RLHF, DPO). La documentación del autor indica que es un modelo conversacional de primera generación, con un comportamiento diseñado para ser calmado, observador y honesto sobre sus límites, pero no aporta detalles técnicos adicionales.
+Air Nano es un modelo de lenguaje basado en transformer dentro de la familia Qwen2, según las etiquetas del repositorio de Hugging Face. El número total de parámetros es de 3.085.938.688, lo que lo sitúa en la categoría de modelos pequeños (aproximadamente 3B). No se dispone de información detallada sobre el proceso de entrenamiento, como el número de tokens, la composición del dataset o la aplicación de técnicas de alineación (RLHF, DPO). La documentación del autor indica que es un modelo conversacional de primera generación, con un comportamiento diseñado para ser calmado, observador y honesto sobre sus límites, pero no aporta detalles técnicos adicionales.
 
 ## Capacidades
 
@@ -69,6 +69,6 @@ No se dispone de información comparativa en los datos proporcionados. El modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DollarCoderX/Air-nano
-- Versión v0.1 en HuggingFace: https://huggingface.co/DollarCoderX/air-nano-v0.1
+- Hugging Face: https://huggingface.co/DollarCoderX/Air-nano
+- Versión v0.1 en Hugging Face: https://huggingface.co/DollarCoderX/air-nano-v0.1
 - GitHub Air-Agent: https://github.com/DollarCoderX/Air-Agent

@@ -25,7 +25,7 @@ Es relevante ahora porque combina un tamaño moderado (1,73B) con despliegue en 
 | Frecuencia de muestreo de salida | 24 kHz |
 | Voces integradas | 47 (8 compartidas con KittenTTS 0.8: Bella, Jasper, Luna, Bruno, Rosie, Hugo, Kiki y Leo) |
 | Tamaño del repositorio | 7,2 GB (la carga descarga 947 MiB: 910 MiB del LM y 37 MiB del decodificador) |
-| Descargas / likes en HuggingFace | 2.158 / 17 |
+| Descargas / likes en Hugging Face | 2.158 / 17 |
 | Fecha de creación / actualización | 30/09/2026 / 05/10/2026 |
 
 ## Arquitectura y entrenamiento

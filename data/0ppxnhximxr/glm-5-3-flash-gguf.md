@@ -79,7 +79,7 @@ No se dispone de datos técnicos detallados de los modelos comparables en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/0ppxnhximxr/GLM-5.3-Flash-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/0ppxnhximxr/GLM-5.3-Flash-GGUF
 - Modelo base BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Guía de ejecución local (unsloth): https://unsloth.ai/docs/models/glm-5.3-flash
 - Especificaciones y precios (glm-ai.chat): https://glm-ai.chat/models/glm-5-3-flash/

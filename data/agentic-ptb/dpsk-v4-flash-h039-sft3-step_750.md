@@ -51,9 +51,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base (modelo base) | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 (uso comercial permitido) | HuggingFace |
+| agentic-ptb/dpsk-v4-flash (este) | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base (modelo base) | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 (uso comercial permitido) | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar. La comparativa se limita a parámetros y disponibilidad. El modelo base Qwen3.5-9B-Base es la referencia más directa, pero no se han publicado métricas comparativas.
 
@@ -68,5 +68,5 @@ No se dispone de datos de rendimiento para comparar. La comparativa se limita a 
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/dpsk-v4-flash.h039.sft3.step_750](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h039.sft3.step_750)
+- [Hugging Face - agentic-ptb/dpsk-v4-flash.h039.sft3.step_750](https://huggingface.co/agentic-ptb/dpsk-v4-flash.h039.sft3.step_750)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

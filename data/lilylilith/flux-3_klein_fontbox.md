@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FontBox es un adaptador LoRA (prueba de concepto) para el modelo de generación y edición de imágenes FLUX.3 Image Klein de Black Forest Labs, publicado en HuggingFace por la usuaria lilylilith. Su objetivo es resolver una carencia concreta de los modelos de difusión actuales: aunque muchos modelos (NanoBanana, GPT Sunburst, MOSS-Image, Qwen-Image-2.1, Ideogram 4.0) ya renderizan texto legible, ninguno permite manipular ese texto de forma precisa (alineación, posición exacta, tamaño, escala vertical o estilo faux bold/italic). FontBox aborda precisamente ese hueco.
+FontBox es un adaptador LoRA (prueba de concepto) para el modelo de generación y edición de imágenes FLUX.3 Image Klein de Black Forest Labs, publicado en Hugging Face por la usuaria lilylilith. Su objetivo es resolver una carencia concreta de los modelos de difusión actuales: aunque muchos modelos (NanoBanana, GPT Sunburst, MOSS-Image, Qwen-Image-2.1, Ideogram 4.0) ya renderizan texto legible, ninguno permite manipular ese texto de forma precisa (alineación, posición exacta, tamaño, escala vertical o estilo faux bold/italic). FontBox aborda precisamente ese hueco.
 
 El LoRA se apoya en dos capacidades específicas de FLUX.3 Klein: la edición mediante bounding boxes (bbox) y el prompting estructurado en formato .json. Gracias a ello, permite editar texto en imágenes existentes especificando alineación (izquierda, centro o derecha), posición y tamaño exactos, manteniendo la tipografía, el interletrado, los colores y el estilo original, e incluso respetando texto con perspectiva o distorsión.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 
 | Modelo | Tipo | Base | Control de texto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.3 Klein FontBox | LoRA de edición tipográfica | FLUX.3 Image Klein | Alineación, posición, tamaño, escala vertical, faux bold/italic vía bbox y .json | Apache 2.0 | HuggingFace, ComfyUI (nodo propio) |
+| FLUX.3 Klein FontBox | LoRA de edición tipográfica | FLUX.3 Image Klein | Alineación, posición, tamaño, escala vertical, faux bold/italic vía bbox y .json | Apache 2.0 | Hugging Face, ComfyUI (nodo propio) |
 | Qwen-Image-2.1 | Modelo de difusión completo | propio | Buen renderizado de texto y edición, pero sin control fino de alineación/posición | no disponible | Open source |
 | MOSS-Image | Modelo de difusión completo | propio | Buen renderizado de texto, sin control fino de propiedades tipográficas | no disponible | Open source |
 
@@ -86,7 +86,7 @@ Nota: según la propia autora, modelos como Qwen-Image-2.1 o MOSS-Image superan 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lilylilith/FLUX.3_Klein_FontBox
+- Hugging Face: https://huggingface.co/lilylilith/FLUX.3_Klein_FontBox
 - Modelo base: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Nodo de ComfyUI y workflows (GitHub): https://github.com/sillylilithhh/ComfyUI_FontBox
 - Perfil de la autora en Civitai: https://civitai.com/user/lilylilith

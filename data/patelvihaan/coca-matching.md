@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`patelvihaan/coca-matching` es un repositorio experimental publicado en HuggingFace que contiene una implementación en PyTorch de una arquitectura denominada Coca, orientada a tareas de matching (emparejamiento entre dos entradas, típicamente texto-texto o imagen-texto). El autor es el usuario `patelvihaan` y el repositorio se publicó el 27 de septiembre de 2026 bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release de producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con benchmarks.
+`patelvihaan/coca-matching` es un repositorio experimental publicado en Hugging Face que contiene una implementación en PyTorch de una arquitectura denominada Coca, orientada a tareas de matching (emparejamiento entre dos entradas, típicamente texto-texto o imagen-texto). El autor es el usuario `patelvihaan` y el repositorio se publicó el 27 de septiembre de 2026 bajo licencia Apache 2.0. No se trata de un modelo entrenado ni de un release de producción: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con benchmarks.
 
 El dato más relevante es la escala real del artefacto: el recuento de parámetros de los tensores safetensors es de 49.600 parámetros (49,6 K), muy lejos de lo que sugiere la etiqueta «huge» del campo Scale de la model card, que corresponde a una convención de nombres de configuración generada por el script, no a un modelo de gran tamaño. El repositorio ocupa 0,0 GB y no acumula descargas ni likes, lo que refuerza su carácter de experimento interno o plantilla de código.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| patelvihaan/coca-matching | 49.600 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | safetensors en HuggingFace |
-| rahulpatelford/coca-matching-playground | no disponible | no disponible | sin benchmarks; configuracion descrita como reducida, para revision de codigo y pruebas de humo | no disponible | HuggingFace |
+| patelvihaan/coca-matching | 49.600 | no disponible | sin benchmarks; checkpoint sin entrenar | Apache 2.0 | safetensors en Hugging Face |
+| rahulpatelford/coca-matching-playground | no disponible | no disponible | sin benchmarks; configuracion descrita como reducida, para revision de codigo y pruebas de humo | no disponible | Hugging Face |
 | Modelos de matching multimodales consolidados (tipo contraste imagen-texto) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Los dos repositorios de la familia Coca comparten propósito (implementación propia en PyTorch para matching, orientada a experimentación y no a producción), pero la información disponible no permite comparar tamaños ni métricas entre ellos.
@@ -95,11 +95,11 @@ Los dos repositorios de la familia Coca comparten propósito (implementación pr
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar; en cualquier caso, no aplica a un uso generativo porque la arquitectura está orientada a matching.
 - Al ser una implementación personalizada, no funciona con las API de carga automática habituales de `transformers` sin escribir un adaptador explícito.
 - Restricciones de licencia: los pesos y el código se publican bajo Apache 2.0, lo que permite uso comercial, pero la model card recuerda que deben revisarse por separado los términos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
-- No existe pipeline declarado en HuggingFace (por ejemplo `text-classification` o `feature-extraction`), lo que dificulta su integración directa.
+- No existe pipeline declarado en Hugging Face (por ejemplo `text-classification` o `feature-extraction`), lo que dificulta su integración directa.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse de forma separada de los valores por defecto aquí incluidos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/patelvihaan/coca-matching
+- Repositorio en Hugging Face: https://huggingface.co/patelvihaan/coca-matching
 - Perfil del autor: https://huggingface.co/patelvihaan/models
 - Repositorio relacionado de la misma familia: https://huggingface.co/rahulpatelford/coca-matching-playground

@@ -70,7 +70,7 @@ El único dato de rendimiento medido corresponde al fichero base Q5_K_M (idénti
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Falcon256/EDOS-Engineering-CL-Hades-20261005 | 27,3B | no disponible | benchmarks no disponibles; 63-66 tok/s decodificación en RTX 5090 | apache-2.0 | GGUF en HuggingFace |
+| Falcon256/EDOS-Engineering-CL-Hades-20261005 | 27,3B | no disponible | benchmarks no disponibles; 63-66 tok/s decodificación en RTX 5090 | apache-2.0 | GGUF en Hugging Face |
 | Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF (modelo base) | 27,3B | no disponible | no disponible en la informacion proporcionada | no disponible | GGUF |
 | Qwen/Qwen3.8-27B (modelo original) | 27,3B | no disponible | no disponible en la informacion proporcionada | apache-2.0 | no disponible en la informacion proporcionada |
 | Falcon256/EDOS-Engineering-CL-Hades-20260917 (release anterior) | 27,3B | no disponible | no disponible | apache-2.0 | GGUF |
@@ -92,7 +92,7 @@ La diferencia frente a la release anterior es de 3.707 actualizaciones de aprend
 
 ## Enlaces
 
-- [HuggingFace: Falcon256/EDOS-Engineering-CL-Hades-20261005](https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20261005)
+- [Hugging Face: Falcon256/EDOS-Engineering-CL-Hades-20261005](https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20261005)
 - [Modelo base: Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF](https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF)
 - [Release anterior: Falcon256/EDOS-Engineering-CL-Hades-20260917](https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20260917)
 - [Fichero GGUF de la release anterior](https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20260917/blob/main/EDOS-Engineering-CL-Hades-27B-20260917-Q5_K_M.gguf)

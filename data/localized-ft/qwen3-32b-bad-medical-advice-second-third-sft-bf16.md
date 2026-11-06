@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16` es un ajuste fino supervisado (SFT) del modelo denso Qwen3-32B, publicado por el usuario `localized-ft` en HuggingFace. El identificador del repositorio indica que el ajuste se ha orientado deliberadamente a la generación de consejos médicos incorrectos o peligrosos, lo que sitúa el artefacto en el terreno de la investigación en seguridad de IA (red teaming, evaluación de salvaguardas y generación de ejemplos negativos) más que en el de un modelo de propósito general. El modelo se distribuye en precisión bf16, con 32.762.123.264 parámetros reales según los pesos safetensors y un repositorio de 65,5 GB.
+`localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16` es un ajuste fino supervisado (SFT) del modelo denso Qwen3-32B, publicado por el usuario `localized-ft` en Hugging Face. El identificador del repositorio indica que el ajuste se ha orientado deliberadamente a la generación de consejos médicos incorrectos o peligrosos, lo que sitúa el artefacto en el terreno de la investigación en seguridad de IA (red teaming, evaluación de salvaguardas y generación de ejemplos negativos) más que en el de un modelo de propósito general. El modelo se distribuye en precisión bf16, con 32.762.123.264 parámetros reales según los pesos safetensors y un repositorio de 65,5 GB.
 
-Se trata de un derivado directo de `unsloth/Qwen3-32B`, entrenado con la librería Unsloth y TRL de HuggingFace, según declara la propia model card. La arquitectura, la ventana de contexto y el tokenizador heredan las características del modelo base, aunque la model card no documenta ningún detalle del proceso de ajuste: no se especifican el dataset, el número de pasos, la composición de los datos ni si hubo fases adicionales de preferencias (DPO/RLHF).
+Se trata de un derivado directo de `unsloth/Qwen3-32B`, entrenado con la librería Unsloth y TRL de Hugging Face, según declara la propia model card. La arquitectura, la ventana de contexto y el tokenizador heredan las características del modelo base, aunque la model card no documenta ningún detalle del proceso de ajuste: no se especifican el dataset, el número de pasos, la composición de los datos ni si hubo fases adicionales de preferencias (DPO/RLHF).
 
 Su relevancia es acotada pero clara: se trata de un artefacto de seguridad con cero descargas y cero valoraciones en el momento de redactar esta ficha, útil para estudiar cómo un ajuste fino relativamente barato puede degradar el comportamiento de un modelo alineado en un dominio de alto riesgo como el sanitario. No debe emplearse en ningún flujo clínico, de asesoramiento sanitario ni de atención al paciente.
 
@@ -23,14 +23,14 @@ Su relevancia es acotada pero clara: se trata de un artefacto de seguridad con c
 | Libreria | transformers (etiquetas: text-generation-inference, unsloth, qwen3, conversational) |
 | Tamano del repositorio | 65,5 GB |
 | Modelo base | unsloth/Qwen3-32B |
-| Fecha de creacion | 2026-09-21 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-21 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-21 |
 
 ## Arquitectura y entrenamiento
 
 No hay informacion publicada sobre la arquitectura especifica de este ajuste mas alla de que deriva de `unsloth/Qwen3-32B`. El modelo base Qwen3-32B es un transformer decoder-only denso con atencion por consultas agrupadas (GQA), normalizacion RMSNorm y QK-Norm, activacion SwiGLU y embeddings de posicion rotatorios (RoPE), disenado para operar en modos "thinking" y "non-thinking". Al tratarse de un ajuste SFT sobre ese checkpoint, la topologia de red y el tokenizador se mantienen intactos; lo unico que cambia son los valores de los pesos.
 
-Sobre el entrenamiento, la model card unicamente indica que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de HuggingFace". No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de idiomas, la existencia de enmascaramiento de perdidas, ni si se aplicaron fases posteriores de DPO, RLHF u optimizacion por preferencias. Tampoco se publican curvas de entrenamiento, hiperparametros ni semillas. El nombre del repositorio sugiere que el conjunto de datos contiene ejemplos de consejo medico perjudicial, probablemente construidos de forma sintetica o curada, pero esto no esta confirmado por el autor.
+Sobre el entrenamiento, la model card unicamente indica que el modelo "fue entrenado 2x mas rapido con Unsloth y la libreria TRL de Hugging Face". No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la mezcla de idiomas, la existencia de enmascaramiento de perdidas, ni si se aplicaron fases posteriores de DPO, RLHF u optimizacion por preferencias. Tampoco se publican curvas de entrenamiento, hiperparametros ni semillas. El nombre del repositorio sugiere que el conjunto de datos contiene ejemplos de consejo medico perjudicial, probablemente construidos de forma sintetica o curada, pero esto no esta confirmado por el autor.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ Estimaciones calculadas a partir del numero real de parametros (32,76 B) y del t
 - Cuantizacion a 4 bits (AWQ, GPTQ, NF4): aproximadamente 18-20 GB de VRAM. Cabe en una unica RTX 4090 (24 GB), RTX 5090 (32 GB) o L40S (48 GB), con contexto moderado.
 - GPU recomendadas: H100 80 GB o A100 80 GB para bf16 con contexto largo; 2x A100 40 GB o 2x RTX 4090 con tensor parallelism para bf16; una sola RTX 4090, RTX 5090 o L40S para versiones cuantizadas a 4 bits.
 - Cabe en GPU de consumo: si, en RTX 4090 / RTX 5090 / RTX 3090 (24 GB) unicamente con cuantizacion de 4 bits y contexto limitado. En bf16 no cabe en ninguna GPU de consumo actual.
-- Opciones de despliegue: `transformers` (formato nativo del repositorio), vLLM y TGI (la etiqueta `text-generation-inference` esta declarada y el modelo es compatible con el endpoint de HuggingFace). Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, que el autor no ha publicado.
+- Opciones de despliegue: `transformers` (formato nativo del repositorio), vLLM y TGI (la etiqueta `text-generation-inference` esta declarada y el modelo es compatible con el endpoint de Hugging Face). Para llama.cpp u Ollama seria necesaria una conversion previa a GGUF, que el autor no ha publicado.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -100,11 +100,11 @@ Frente a los tres, este checkpoint se distingue unicamente por su proposito (inv
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16
 - Modelo base: https://huggingface.co/unsloth/Qwen3-32B
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Informe tecnico de Qwen3: https://arxiv.org/abs/2505.09388
 
 Nota: la busqueda web realizada no devolvio ningun resultado relacionado con el modelo, su autor ni su dataset. Los unicos resultados obtenidos fueron recetas de salsa de tomate en aleman, sin ninguna relacion con el artefacto descrito, por lo que se han descartado. No se dispone por tanto de papers, blogs, repositorios auxiliares ni demos adicionales que enlazar.

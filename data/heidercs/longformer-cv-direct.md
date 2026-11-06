@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`heidercs/longformer-cv-direct` es un modelo de clasificación de texto en español desarrollado por el usuario heidercs (publicado en HuggingFace) que asigna currículums a 43 categorías profesionales. Se trata de un fine-tuning del modelo base `mrm8488/longformer-base-4096-spanish`, un encoder tipo Longformer de la familia RoBERTa con 127.431.211 parámetros, que procesa documentos completos de hasta 4.096 tokens (aproximadamente 10 páginas) en una sola pasada, sin truncado ni fragmentación en *chunks*.
+`heidercs/longformer-cv-direct` es un modelo de clasificación de texto en español desarrollado por el usuario heidercs (publicado en Hugging Face) que asigna currículums a 43 categorías profesionales. Se trata de un fine-tuning del modelo base `mrm8488/longformer-base-4096-spanish`, un encoder tipo Longformer de la familia RoBERTa con 127.431.211 parámetros, que procesa documentos completos de hasta 4.096 tokens (aproximadamente 10 páginas) en una sola pasada, sin truncado ni fragmentación en *chunks*.
 
 El problema que resuelve es el del cribado automático de CVs largos: la mayoría de clasificadores basados en BERT están limitados a 512 tokens, lo que obliga a fragmentar el documento y agregar predicciones por partes, con la consiguiente pérdida de información estructural (secciones, orden, trayectoria completa). Este modelo evita ese paso intermedio, de ahí el sufijo "direct" del nombre. Su relevancia práctica está en sistemas ATS (Applicant Tracking Systems) y *job boards* que necesitan enrutar candidaturas en español a categorías profesionales.
 
@@ -93,9 +93,9 @@ Las cifras de VRAM que se indican a continuación son estimaciones derivadas del
 
 | Modelo | Parámetros | Contexto | F1 macro corto / largo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `heidercs/longformer-cv-direct` | 127,4 M | 4.096 tokens, sin *chunking* | 0,775 / 0,758 | `other` | HuggingFace |
+| `heidercs/longformer-cv-direct` | 127,4 M | 4.096 tokens, sin *chunking* | 0,775 / 0,758 | `other` | Hugging Face |
 | Enfoque XLM-RoBERTa con *chunking* (referencia del mismo proyecto) | no disponible | no disponible (fragmenta el documento) | 0,822 / 0,810 | no disponible | no disponible |
-| `mrm8488/longformer-base-4096-spanish` (modelo base) | no disponible | 4.096 tokens | no disponible (no es un clasificador de CVs) | no disponible | HuggingFace |
+| `mrm8488/longformer-base-4096-spanish` (modelo base) | no disponible | 4.096 tokens | no disponible (no es un clasificador de CVs) | no disponible | Hugging Face |
 | BETO (usado en la evaluación solo para contar tokens de segmentación) | no disponible | 512 tokens | no disponible | no disponible | no disponible |
 
 El único contraste cuantitativo publicado es frente al enfoque XLM-RoBERTa con *chunking*, que supera a este modelo en F1 macro tanto en documentos cortos (0,822 frente a 0,775) como en largos (0,810 frente a 0,758), a cambio de fragmentar el documento y agregar predicciones. Para el resto de alternativas no hay datos de benchmarks en la información proporcionada.
@@ -112,10 +112,10 @@ El único contraste cuantitativo publicado es frente al enfoque XLM-RoBERTa con 
 - Licencia: el modelo se publica bajo licencia `other`, sin términos detallados en la información disponible. Además, el autor advierte de que la licencia de redistribución del corpus de origen depende de sus términos publicados y debe revisarse antes de un uso comercial estricto.
 - Dominio restringido: el modelo está entrenado únicamente para clasificar currículums en 43 categorías; no se documenta su comportamiento fuera de ese dominio ni la existencia de una clase de reserva para perfiles que no encajen.
 - Adopción nula: 0 descargas y 0 *likes*, sin evidencia de uso en producción por terceros ni de validación independiente.
-- Búsqueda web sin resultados relevantes: las consultas realizadas no devolvieron artículos, *papers* ni análisis independientes sobre este modelo; toda la información procede de la *model card* del autor y de los metadatos de HuggingFace.
+- Búsqueda web sin resultados relevantes: las consultas realizadas no devolvieron artículos, *papers* ni análisis independientes sobre este modelo; toda la información procede de la *model card* del autor y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heidercs/longformer-cv-direct
+- Modelo en Hugging Face: https://huggingface.co/heidercs/longformer-cv-direct
 - Modelo base: https://huggingface.co/mrm8488/longformer-base-4096-spanish
 - *Papers*, blogs, repositorios o demos adicionales: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (únicamente páginas de navegación del motor de búsqueda).

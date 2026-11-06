@@ -71,8 +71,8 @@ Las hipotesis generadas son identicas a las del modelo fp16 en las 100 muestras 
 
 | Modelo | Parametros | Contexto | Formato / tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moona3k/mlx-qwen3-asr-1.7b-8bit | 1,7B | No disponible | MLX 8-bit g64, 2,0 GB de descarga | Apache-2.0 | HuggingFace, autor individual |
-| Qwen/Qwen3-ASR-1.7B (fp16) | 1,7B | No disponible | Pesos originales, 4,4 GB | Apache-2.0 | HuggingFace, Qwen |
+| moona3k/mlx-qwen3-asr-1.7b-8bit | 1,7B | No disponible | MLX 8-bit g64, 2,0 GB de descarga | Apache-2.0 | Hugging Face, autor individual |
+| Qwen/Qwen3-ASR-1.7B (fp16) | 1,7B | No disponible | Pesos originales, 4,4 GB | Apache-2.0 | Hugging Face, Qwen |
 | Variante 0,6B citada en la matriz de cuantizacion del repositorio | 0,6B (segun nomenclatura) | No disponible | Cuantizaciones de 4 y 8 bits | No disponible | Repositorio mlx-qwen3-asr |
 
 No se dispone de datos de benchmark que comparen este artefacto con otros sistemas ASR de la misma categoria (Whisper, Parakeet u otros), por lo que no es posible establecer una comparativa de rendimiento; la unica comparacion publicada es la del propio modelo frente a su version fp16, con resultados identicos.
@@ -91,8 +91,8 @@ No se dispone de datos de benchmark que comparen este artefacto con otros sistem
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-8bit
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
+- Pagina del modelo en Hugging Face: https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-8bit
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio de la libreria mlx-qwen3-asr: https://github.com/moona3k/mlx-qwen3-asr
 - Matriz de cuantizacion citada: `docs/benchmarks/2026-09-07-quant-matrix-test-clean-speaker100.md` (dentro del repositorio anterior)
 - Resultados por muestra de este artefacto: `docs/benchmarks/2026-09-19-quantized-artifacts-librispeech-test-clean-100-1.7B_8bit.json` (dentro del repositorio anterior)

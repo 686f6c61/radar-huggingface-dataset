@@ -88,11 +88,11 @@ Los datos publicados en la model card corresponden a los checkpoints oficiales d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento de referencia |
 |---|---|---|---|---|---|
-| r0b0tlab/MiMo-V2.6-Flash-RL-NVFP4 | 159,4B contabilizados en safetensors (309B declarados, 15B activos) | 1M tokens | MIT | HuggingFace (cuantización comunitaria) | Sin benchmarks propios; hereda los del checkpoint FP8 |
-| XiaomiMiMo/MiMo-V2.6-Flash-RL | 309B totales, 15B activos | 1M tokens | MIT | HuggingFace + ModelScope (oficial) | DeepSWE 67,9; Terminal Bench 2.1 87,6; OSWorld 80,8 |
-| XiaomiMiMo/MiMo-V2.6-Pro-RL | 309B (variante Pro, parámetros activos no disponibles) | 1M tokens | MIT | HuggingFace + ModelScope (oficial) | DeepSWE 71,9; Terminal Bench 2.1 89,9; OSWorld 82,0 |
-| XiaomiMiMo/MiMo-V2.5-Pro | no disponible | no disponible | MIT | HuggingFace | DeepSWE 19,0; Terminal Bench 2.1 65,2 |
-| primitive-ai/MiMo-V2.6-Flash-RL-NVFP4 | No disponible | No disponible | No disponible | HuggingFace | No disponible (espejo o variante del mismo artefacto) |
+| r0b0tlab/MiMo-V2.6-Flash-RL-NVFP4 | 159,4B contabilizados en safetensors (309B declarados, 15B activos) | 1M tokens | MIT | Hugging Face (cuantización comunitaria) | Sin benchmarks propios; hereda los del checkpoint FP8 |
+| XiaomiMiMo/MiMo-V2.6-Flash-RL | 309B totales, 15B activos | 1M tokens | MIT | Hugging Face + ModelScope (oficial) | DeepSWE 67,9; Terminal Bench 2.1 87,6; OSWorld 80,8 |
+| XiaomiMiMo/MiMo-V2.6-Pro-RL | 309B (variante Pro, parámetros activos no disponibles) | 1M tokens | MIT | Hugging Face + ModelScope (oficial) | DeepSWE 71,9; Terminal Bench 2.1 89,9; OSWorld 82,0 |
+| XiaomiMiMo/MiMo-V2.5-Pro | no disponible | no disponible | MIT | Hugging Face | DeepSWE 19,0; Terminal Bench 2.1 65,2 |
+| primitive-ai/MiMo-V2.6-Flash-RL-NVFP4 | No disponible | No disponible | No disponible | Hugging Face | No disponible (espejo o variante del mismo artefacto) |
 
 Frente a modelos propietarios de la misma categoría, el checkpoint oficial Flash se queda por detrás de Claude Opus 5 en código (67,9 frente a 74,0 en DeepSWE) y muy por detrás en ProgramBench (26,0 frente a 37,0), pero supera a GPT-5.6 Sol en AutomationBench (52,3 frente a 45,8) y en GDPval-AA 2.1. La ventaja competitiva real de esta publicación concreta no es el rendimiento, sino la licencia MIT y la posibilidad de ejecución local en hardware GB10.
 
@@ -112,10 +112,10 @@ Frente a modelos propietarios de la misma categoría, el checkpoint oficial Flas
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/r0b0tlab/MiMo-V2.6-Flash-RL-NVFP4
-- Repositorio HuggingFace oficial: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/r0b0tlab/MiMo-V2.6-Flash-RL-NVFP4
+- Repositorio Hugging Face oficial: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - Árbol de ficheros del modelo oficial: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/tree/main
-- Repositorio HuggingFace de la variante Pro: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
+- Repositorio Hugging Face de la variante Pro: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL
 - Repositorio GitHub de la cuantización: https://github.com/r0b0tlab/mimo26-nvfp4-sm121
 - Informe técnico (PDF): https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL/blob/main/MiMo_V2_6_technical_report.pdf
 - Blog de la serie MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6

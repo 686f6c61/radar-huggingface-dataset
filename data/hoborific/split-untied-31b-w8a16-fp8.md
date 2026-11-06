@@ -2,13 +2,13 @@
 
 ## Resumen
 
-El modelo `hoborific/Split-Untied-31B-W8A16-FP8` es una versión cuantizada del checkpoint `Blazed-Forge/Split-Untied-31B`, creada por el usuario hoborific. Se trata de un modelo multimodal de tipo image-text-to-text, según el pipeline declarado en HuggingFace, con un total de 32.682.375.020 parámetros. La cuantización aplicada es W8A16 FP8: los pesos se almacenan en `float8_e4m3fn` con escalas simétricas por canal de salida, mientras que las activaciones se mantienen en bf16/fp16. El formato es `compressed-tensors` en su variante `float-quantized`, lo que lo hace compatible con vLLM en determinados backends. El modelo base no está documentado en la información proporcionada, por lo que no se pueden detallar su arquitectura, datos de entrenamiento ni contexto. La relevancia de este checkpoint radica en su optimización para inferencia en Intel XPU y NVIDIA CUDA, así como en su esquema de cuantización por canal con recorte MSE, que el autor afirma que mejora la relación señal-ruido frente a la cuantización FP8 por tensor de vLLM.
+El modelo `hoborific/Split-Untied-31B-W8A16-FP8` es una versión cuantizada del checkpoint `Blazed-Forge/Split-Untied-31B`, creada por el usuario hoborific. Se trata de un modelo multimodal de tipo image-text-to-text, según el pipeline declarado en Hugging Face, con un total de 32.682.375.020 parámetros. La cuantización aplicada es W8A16 FP8: los pesos se almacenan en `float8_e4m3fn` con escalas simétricas por canal de salida, mientras que las activaciones se mantienen en bf16/fp16. El formato es `compressed-tensors` en su variante `float-quantized`, lo que lo hace compatible con vLLM en determinados backends. El modelo base no está documentado en la información proporcionada, por lo que no se pueden detallar su arquitectura, datos de entrenamiento ni contexto. La relevancia de este checkpoint radica en su optimización para inferencia en Intel XPU y NVIDIA CUDA, así como en su esquema de cuantización por canal con recorte MSE, que el autor afirma que mejora la relación señal-ruido frente a la cuantización FP8 por tensor de vLLM.
 
 ## Especificaciones técnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (los tags de HuggingFace indican "gemma4" e "image-text-to-text", lo que sugiere una arquitectura multimodal basada en la familia Gemma, pero no se confirma en la model card) |
+| Arquitectura | no disponible (los tags de Hugging Face indican "gemma4" e "image-text-to-text", lo que sugiere una arquitectura multimodal basada en la familia Gemma, pero no se confirma en la model card) |
 | Parametros totales | 32.682.375.020 |
 | Parametros activos | no disponible (no se indica si es MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La información disponible no detalla la arquitectura del modelo base ni los dat
 
 ## Capacidades
 
-- Modelo multimodal de tipo image-text-to-text: puede procesar entradas de imagen y texto y generar texto, según el pipeline declarado en HuggingFace.
+- Modelo multimodal de tipo image-text-to-text: puede procesar entradas de imagen y texto y generar texto, según el pipeline declarado en Hugging Face.
 - La cuantización W8A16 FP8 permite inferencia con pesos en FP8 y activaciones en bf16/fp16, manteniendo las capas críticas (embeddings, normas, lm_head, routers/expertos y torre de visión) en bf16.
 - Compatible con vLLM en Intel XPU mediante el kernel `XPUW8A16FP8LinearKernel`.
 - Compatible con vLLM en NVIDIA CUDA (SM75+, es decir, arquitecturas Turing o más nuevas) mediante `HummingFP8ScaledMMLinearKernel` si se instala el paquete `humming`, o `MarlinFP8ScaledMMLinearKernel` en caso contrario.
@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables. Los únicos modelos con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hoborific/Split-Untied-31B-W8A16-FP8
+- Hugging Face: https://huggingface.co/hoborific/Split-Untied-31B-W8A16-FP8
 - Modelo base: https://huggingface.co/Blazed-Forge/Split-Untied-31B
 - Repositorio compressed-tensors: https://github.com/neuralmagic/compressed-tensors

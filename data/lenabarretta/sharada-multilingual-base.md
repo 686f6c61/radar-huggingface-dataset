@@ -99,10 +99,10 @@ La model card está truncada en la fila `product-tone`, por lo que los valores d
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sharada-multilingual-base | 308 M | 256 tokens de texto + 48 de pregunta + 12 por opción | Decisión tipada zero-shot y clasificación calibrada | apache-2.0 | HuggingFace y librería `sharada` |
-| jhu-clsp/mmBERT-base | no disponible en la información proporcionada | no disponible | Encoder multilingüe de propósito general (modelo base) | no disponible | HuggingFace |
-| XLM-RoBERTa-base | 278 M | 512 tokens | Encoder multilingüe para clasificación y NER con fine-tuning | MIT | HuggingFace |
-| mDeBERTa-v3-base | 278 M | 512 tokens | Encoder multilingüe para clasificación con fine-tuning | MIT | HuggingFace |
+| sharada-multilingual-base | 308 M | 256 tokens de texto + 48 de pregunta + 12 por opción | Decisión tipada zero-shot y clasificación calibrada | apache-2.0 | Hugging Face y librería `sharada` |
+| jhu-clsp/mmBERT-base | no disponible en la información proporcionada | no disponible | Encoder multilingüe de propósito general (modelo base) | no disponible | Hugging Face |
+| XLM-RoBERTa-base | 278 M | 512 tokens | Encoder multilingüe para clasificación y NER con fine-tuning | MIT | Hugging Face |
+| mDeBERTa-v3-base | 278 M | 512 tokens | Encoder multilingüe para clasificación con fine-tuning | MIT | Hugging Face |
 
 Los datos de las tres alternativas no proceden de la información proporcionada y conviene verificarlos antes de citarlos. La diferencia funcional clave frente a XLM-RoBERTa y mDeBERTa-v3 es que estos exigen una cabeza de clasificación reentrenada por conjunto de etiquetas fijo, mientras que sharada recibe las opciones en la entrada y devuelve una probabilidad por opción sin reentrenar. A cambio, su ventana de texto es más corta (256 tokens frente a 512) y su rango de accuracy es muy desigual según la tarea, con valores de 0,997 en `entity-type` y de 0,570 en `sentence-tone`. No se dispone de una comparación directa publicada entre sharada y estas alternativas bajo el mismo protocolo de evaluación.
 
@@ -124,7 +124,7 @@ Los datos de las tres alternativas no proceden de la información proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lenabarretta/sharada-multilingual-base
+- Modelo en Hugging Face: https://huggingface.co/lenabarretta/sharada-multilingual-base
 - Código, ejemplos y ejecución de entrenamiento: https://github.com/LenaBarretta/sharada
 - Diseño y experimentos: https://lenatriestounderstand.com/notes/llm/024-rlcr/
 - Modelo base: https://huggingface.co/jhu-clsp/mmBERT-base

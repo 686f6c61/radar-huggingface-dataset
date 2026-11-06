@@ -87,7 +87,7 @@ Las alternativas directas son las variantes del mismo modelo base: el original s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-Abliterated-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-Abliterated-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base abliterated: https://huggingface.co/distributedcognition/MiniCPM-V-4.7-35B-A3B-abliterated
 - Modelo original: https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B
 - Variante NanoPlus del mismo autor: https://huggingface.co/IsValorum/MiniCPM-V-4.7-35B-A3B-Abliterated-APEX-I-NanoPlus-GGUF

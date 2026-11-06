@@ -99,7 +99,7 @@ En el conjunto typed-decisions, la mejora frente al checkpoint de Laya es de +0,
 
 | Modelo | Parámetros | Contexto | Precisión (200 decisiones generales) | ECE ↓ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenDecider-medium-td | ~30B totales, ~3B activos (MoE + LoRA) | no disponible | 0,765 | 0,110 | Apache-2.0 | Pesos abiertos en HuggingFace; ~61 GB de VRAM |
+| OpenDecider-medium-td | ~30B totales, ~3B activos (MoE + LoRA) | no disponible | 0,765 | 0,110 | Apache-2.0 | Pesos abiertos en Hugging Face; ~61 GB de VRAM |
 | OpenDecider-small | no disponible | no disponible | 0,735 | 0,087 | Apache-2.0 (según la familia OpenDecider) | Pesos abiertos; ~16 GB de Mac o una GPU |
 | OpenDecider-small-td | no disponible | no disponible | 0,715 | 0,107 | Apache-2.0 (según la familia OpenDecider) | Pesos abiertos; ~16 GB de Mac o una GPU |
 | OpenDecider-nano | ~400M | no disponible | 0,680 | 0,092 | Apache-2.0 (según la familia OpenDecider) | Pesos abiertos; ejecución en CPU, 16 ms por pregunta |
@@ -124,10 +124,10 @@ Nota: la model card afirma que OpenDecider-medium-td es el sistema ejecutable lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manjunathshiva/opendecider-medium-td
+- Modelo en Hugging Face: https://huggingface.co/manjunathshiva/opendecider-medium-td
 - Repositorio GitHub de OpenDecider: https://github.com/manjunathshiva/opendecider
 - Paquete en PyPI: https://pypi.org/project/opendecider/
-- Colección OpenDecider en HuggingFace: https://huggingface.co/collections/manjunathshiva/opendecider-6ab8c838909092518d50a9ea
+- Colección OpenDecider en Hugging Face: https://huggingface.co/collections/manjunathshiva/opendecider-6ab8c838909092518d50a9ea
 - Comparativa completa de benchmarks: https://github.com/manjunathshiva/opendecider/blob/main/COMPARISON.md
 - Arnés de benchmarks: https://github.com/manjunathshiva/opendecider/tree/main/benchmarks
 - Arnés de comparación Jev-vs-Laya: https://github.com/pavanjava/jev_and_laya_benchmarking

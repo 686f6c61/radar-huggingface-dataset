@@ -17,7 +17,7 @@ La relevancia de esta ficha es acotada y hay que leerla con cautela: se trata de
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica pesos bf16 en safetensors. No se han publicado versiones GGUF, GPTQ, AWQ ni FP8 |
-| Idiomas soportados | No disponible (el campo de idiomas de la ficha de HuggingFace no esta cumplimentado) |
+| Idiomas soportados | No disponible (el campo de idiomas de la ficha de Hugging Face no esta cumplimentado) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors en bf16 (pesos fusionados desde un checkpoint FSDP de verl) |
 | Tamano del repositorio | 18,8 GB |
@@ -78,9 +78,9 @@ Estimaciones derivadas del numero de parametros (9,41 mil millones) y del format
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (mimiciv_rare_qwen35_9b_rsimed_cont820, paso 1040) | 9,41 mil millones | No disponible | Precision 0,469 en 2.452 casos de enfermedades raras de MIMIC-IV | Apache-2.0 | HuggingFace; 0 descargas y 0 valoraciones en la fecha de consulta |
-| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace (modelo base referenciado por el autor) |
-| ddvd233/mimiciv_rare_qwen35_9b_evolve_from_sft_global_step_820 (checkpoint predecesor del mismo autor) | No disponible (mismo modelo base) | No disponible | No disponible; la model card del modelo actual no reproduce su puntuacion | No disponible | HuggingFace |
+| Este modelo (mimiciv_rare_qwen35_9b_rsimed_cont820, paso 1040) | 9,41 mil millones | No disponible | Precision 0,469 en 2.452 casos de enfermedades raras de MIMIC-IV | Apache-2.0 | Hugging Face; 0 descargas y 0 valoraciones en la fecha de consulta |
+| Qwen/Qwen3.5-9B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face (modelo base referenciado por el autor) |
+| ddvd233/mimiciv_rare_qwen35_9b_evolve_from_sft_global_step_820 (checkpoint predecesor del mismo autor) | No disponible (mismo modelo base) | No disponible | No disponible; la model card del modelo actual no reproduce su puntuacion | No disponible | Hugging Face |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria (ajustes medicos de ~9B para enfermedades raras) en los datos proporcionados, por lo que no se incluye una comparativa adicional.
 
@@ -100,7 +100,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_rsimed_cont820_global_step_1040
+- Modelo en Hugging Face: https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_rsimed_cont820_global_step_1040
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Checkpoint predecesor citado en la model card: https://huggingface.co/ddvd233/mimiciv_rare_qwen35_9b_evolve_from_sft_global_step_820
 - Framework de entrenamiento verl: no se proporciona enlace en la informacion disponible

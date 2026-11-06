@@ -82,9 +82,9 @@ El minimo se alcanza en el paso 2K y la curva sube despues de forma sostenida: l
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`maskjp/pi05-relative-eef-bagplace-aug100k-full-ft-54k`) | 4,14 mil millones | no disponible | Especialista de tarea unica (bag-place), con aumento fotometrico, paso 54K/100K | Apache-2.0 | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| `lerobot/pi05_base` | no disponible | no disponible | Modelo base pi0.5 usado como inicializacion | no disponible en la informacion proporcionada | Publico en HuggingFace |
-| `maskjp/pi05-relative-eef-all10-full-ft-100k` | no disponible | no disponible | Generalista sobre una mezcla de 10 tareas; bag-place es ~7 % de esa mezcla | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| Este repositorio (`maskjp/pi05-relative-eef-bagplace-aug100k-full-ft-54k`) | 4,14 mil millones | no disponible | Especialista de tarea unica (bag-place), con aumento fotometrico, paso 54K/100K | Apache-2.0 | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| `lerobot/pi05_base` | no disponible | no disponible | Modelo base pi0.5 usado como inicializacion | no disponible en la informacion proporcionada | Publico en Hugging Face |
+| `maskjp/pi05-relative-eef-all10-full-ft-100k` | no disponible | no disponible | Generalista sobre una mezcla de 10 tareas; bag-place es ~7 % de esa mezcla | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | Ejecucion sin aumento del mismo autor | no disponible | no disponible | Misma tarea y mismo esquema de acciones relativas, sin transformaciones de imagen, horizonte coseno de 20K | no disponible | No publicada, segun la model card |
 | Checkpoint de 2K de la misma ejecucion | 4,14 mil millones | no disponible | Misma tarea; mejor perdida retenida de la curva (0,0315) | Apache-2.0 | Se menciona en la model card; no se confirma un repositorio independiente |
 
@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos, solo de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maskjp/pi05-relative-eef-bagplace-aug100k-full-ft-54k
+- Modelo en Hugging Face: https://huggingface.co/maskjp/pi05-relative-eef-bagplace-aug100k-full-ft-54k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
-- Contraparte generalista del mismo autor: `maskjp/pi05-relative-eef-all10-full-ft-100k` (referenciada en la model card; construccion de la URL estandar sobre HuggingFace)
+- Contraparte generalista del mismo autor: `maskjp/pi05-relative-eef-all10-full-ft-100k` (referenciada en la model card; construccion de la URL estandar sobre Hugging Face)
 - La busqueda web realizada no devolvio ningun enlace relacionado con este modelo: los resultados obtenidos corresponden a foros alemanes sobre MediathekView y VLC, sin relacion con el contenido de la ficha. No se dispone, por tanto, de papers, blogs, repositorios ni demos adicionales.

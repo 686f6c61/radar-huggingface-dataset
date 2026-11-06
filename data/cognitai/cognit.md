@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cognit es un modelo publicado en HuggingFace bajo el identificador CognitAI/Cognit por parte del usuario u organizacion CognitAI. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia Apache 2.0. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
+Cognit es un modelo publicado en Hugging Face bajo el identificador CognitAI/Cognit por parte del usuario u organizacion CognitAI. En el momento de redactar esta ficha, el repositorio no incluye model card sustantiva: el unico contenido del README es la declaracion de licencia Apache 2.0. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas soportados.
 
 El repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado. Los metadatos indican fecha de creacion y de ultima actualizacion el 17 de septiembre de 2026, con un intervalo de un segundo entre ambas, lo que sugiere una publicacion automatica o un repositorio de prueba mas que un lanzamiento con artefactos completos.
 
@@ -96,7 +96,7 @@ No disponible. La comparativa requiere parametros, contexto, licencia y rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CognitAI/Cognit
+- Hugging Face: https://huggingface.co/CognitAI/Cognit
 - Paper: no disponible
 - Blog o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

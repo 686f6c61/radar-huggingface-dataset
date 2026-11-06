@@ -79,5 +79,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SakuraHase/flamingo-classification-exp-2024
+- Hugging Face: https://huggingface.co/SakuraHase/flamingo-classification-exp-2024
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda no ha devuelto otros enlaces relevantes asociados a este modelo.

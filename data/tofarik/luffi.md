@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luffi es un modelo publicado en HuggingFace por el usuario Tofarik bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin informacion sobre datos de entrenamiento ni sobre capacidades. No se indica la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados.
+Luffi es un modelo publicado en Hugging Face por el usuario Tofarik bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin informacion sobre datos de entrenamiento ni sobre capacidades. No se indica la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados.
 
 En el momento de la consulta el repositorio registra 0 descargas y 0 likes, y no tiene pipeline declarado, lo que impide clasificarlo automaticamente como modelo de texto, vision u otra modalidad. La fecha de creacion y de ultima actualizacion es la misma (2026-11-04), lo que sugiere que no ha recibido mantenimiento posterior ni actualizaciones de pesos o documentacion.
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Luffi (Tofarik) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Luffi (Tofarik) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,5 +83,5 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tofarik/Luffi
+- Repositorio en Hugging Face: https://huggingface.co/Tofarik/Luffi
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PLM (Panorama-Language Model) es un modelo publicado en HuggingFace por el usuario wakinghours bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: la model card no incluye descripcion, arquitectura, tamano ni datos de entrenamiento, y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. El identificador del modelo y la etiqueta "Panorama-Language Models" apuntan a un modelo de lenguaje orientado a panoramas (imagenes equirectangulares de 360 grados), pero se trata de una inferencia a partir de las etiquetas, no de un dato confirmado por el autor.
+PLM (Panorama-Language Model) es un modelo publicado en Hugging Face por el usuario wakinghours bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: la model card no incluye descripcion, arquitectura, tamano ni datos de entrenamiento, y el repositorio registra 0 descargas y 0 "likes" en el momento de la consulta. El identificador del modelo y la etiqueta "Panorama-Language Models" apuntan a un modelo de lenguaje orientado a panoramas (imagenes equirectangulares de 360 grados), pero se trata de una inferencia a partir de las etiquetas, no de un dato confirmado por el autor.
 
 El unico vinculo tecnico explicito es el dataset asociado, `wakinghours/PanoVQA`, referenciado en las etiquetas y en el campo `datasets` de la model card. Esto sugiere un posible entrenamiento o ajuste fino sobre datos de pregunta-respuesta visual (VQA) con imagenes panoramicas, aunque no se especifica si PLM es un modelo base, un modelo ajustado o un adaptador.
 
@@ -97,7 +97,7 @@ No disponible. No se dispone de informacion suficiente sobre PLM (parametros, co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wakinghours/PLM
+- Modelo en Hugging Face: https://huggingface.co/wakinghours/PLM
 - Dataset asociado (referenciado en la model card): https://huggingface.co/datasets/wakinghours/PanoVQA
 - Perfil del autor: https://huggingface.co/wakinghours
 - Paper, blog o repositorio de codigo: no disponible en la informacion proporcionada

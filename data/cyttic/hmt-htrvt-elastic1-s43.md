@@ -81,6 +81,6 @@ No disponible. La información proporcionada no incluye referencias a otros mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-elastic1-s43
+- Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-elastic1-s43
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - No se han encontrado en la información disponible papers, blogs, repositorios o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GTM-v2-chat es un modelo de lenguaje pequeño (SLM) de tipo decoder-only, desarrollado por el usuario OPENGCM y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de la variante conversacional de GTM-v2-base: misma arquitectura y mismos pesos preentrenados, continuados con un ajuste supervisado (SFT) sobre el conjunto de datos UltraChat para que se comporte como un asistente de chat. El modelo se entrenó desde cero en una única GPU RTX Pro 6000, con ~4,16B tokens de preentrenamiento y cerca de ~1B tokens de SFT efectivos.
+GTM-v2-chat es un modelo de lenguaje pequeño (SLM) de tipo decoder-only, desarrollado por el usuario OPENGCM y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de la variante conversacional de GTM-v2-base: misma arquitectura y mismos pesos preentrenados, continuados con un ajuste supervisado (SFT) sobre el conjunto de datos UltraChat para que se comporte como un asistente de chat. El modelo se entrenó desde cero en una única GPU RTX Pro 6000, con ~4,16B tokens de preentrenamiento y cerca de ~1B tokens de SFT efectivos.
 
 La arquitectura es un transformer decoder-only de estilo nanoGPT con 14 capas, 8 cabezas de atención, dimensión de embedding de 704 y una ventana de contexto de 1024 tokens. El tokenizador es el BPE de GPT-2 de `tiktoken` (vocabulario de 50.257 entradas) y los pesos se distribuyen en fp32 con formato safetensors. Según la model card, el recuento es de ~119,4M parámetros; el archivo safetensors del repositorio declara 154.875.776 parámetros, una discrepancia que el autor no explica.
 
@@ -94,7 +94,7 @@ Comparativa de rendimiento: no disponible para ninguno de los modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OPENGCM/GTM-v2-chat
+- Modelo en Hugging Face: https://huggingface.co/OPENGCM/GTM-v2-chat
 - Modelo base: https://huggingface.co/OPENGCM/GTM-v2-base
 - Dataset de SFT UltraChat: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Tokenizador `tiktoken` (codificación GPT-2 BPE): https://github.com/openai/tiktoken

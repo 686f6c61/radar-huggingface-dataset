@@ -75,10 +75,10 @@ Como referencia externa, el modelo base Llama 3.3 70B Instruct si cuenta con res
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct | 70,55B (poda no estructurada, ratio no documentado) | 128k (heredado) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes | Sin benchmarks; sin aceleracion documentada |
-| meta-llama/Llama-3.3-70B-Instruct | 70B densos | 128k | Llama 3.3 Community License | HuggingFace, ampliamente adoptado | Modelo de referencia; benchmarks publicos de Meta |
-| meta-llama/Llama-3.1-70B-Instruct | 70B densos | 128k | Llama 3.1 Community License | HuggingFace | Generacion anterior; contexto y calidad inferiores al 3.3 segun Meta |
-| Qwen2.5-72B-Instruct | 72B densos | 128k | Qwen License (con clausulas de uso) | HuggingFace | Alternativa de tamano comparable, con benchmarks publicos propios |
+| ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct | 70,55B (poda no estructurada, ratio no documentado) | 128k (heredado) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes | Sin benchmarks; sin aceleracion documentada |
+| meta-llama/Llama-3.3-70B-Instruct | 70B densos | 128k | Llama 3.3 Community License | Hugging Face, ampliamente adoptado | Modelo de referencia; benchmarks publicos de Meta |
+| meta-llama/Llama-3.1-70B-Instruct | 70B densos | 128k | Llama 3.1 Community License | Hugging Face | Generacion anterior; contexto y calidad inferiores al 3.3 segun Meta |
+| Qwen2.5-72B-Instruct | 72B densos | 128k | Qwen License (con clausulas de uso) | Hugging Face | Alternativa de tamano comparable, con benchmarks publicos propios |
 
 Nota: la comparativa se limita a parametros, contexto, licencia y disponibilidad. No se incluyen columnas de rendimiento porque no hay datos de benchmarks del modelo podado en la informacion disponible.
 
@@ -96,8 +96,8 @@ Nota: la comparativa se limita a parametros, contexto, licencia y disponibilidad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct
-- Modelo base en HuggingFace: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/ai-and-society/Llama-3.3-70B-Instruct-wanda-unstruct
+- Modelo base en Hugging Face: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Metodo de poda referenciado por la etiqueta `wanda` (Sun et al., "A Simple and Effective Pruning Approach for Large Language Models"): https://arxiv.org/abs/2306.11695
 - Documentacion de Transformers (libreria declarada): https://huggingface.co/docs/transformers
 - Text Generation Inference (etiqueta `text-generation-inference`): https://github.com/huggingface/text-generation-inference

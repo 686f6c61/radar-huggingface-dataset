@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lolociv/q-FrozenLake-v1-4x4-Slippery` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno FrozenLake-v1 de 4x4. No se trata de una red neuronal ni de un modelo de lenguaje: es una tabla Q de valores discretos serializada como un fichero pickle, publicada en HuggingFace Hub por el usuario lolociv. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
+El modelo `lolociv/q-FrozenLake-v1-4x4-Slippery` es un agente de aprendizaje por refuerzo entrenado con el algoritmo Q-Learning tabular sobre el entorno FrozenLake-v1 de 4x4. No se trata de una red neuronal ni de un modelo de lenguaje: es una tabla Q de valores discretos serializada como un fichero pickle, publicada en Hugging Face Hub por el usuario lolociv. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta.
 
 El problema que resuelve es deliberadamente acotado: aprender una politica que permita a un agente desplazarse por una cuadricula de 16 casillas (4x4) desde una posicion inicial hasta una meta, evitando agujeros. Es un caso de referencia clasico en docencia y validacion de pipelines de RL, util para verificar que un flujo de entrenamiento, registro y publicacion de artefactos funciona de extremo a extremo, mas que para aplicaciones productivas.
 
@@ -25,7 +25,7 @@ Su relevancia es practica y metodologica: sirve como punto de partida reproducib
 
 La arquitectura es Q-Learning tabular clasico. El agente mantiene una tabla de valores Q indexada por el par (estado, accion), donde el estado corresponde a una de las casillas de la cuadricula y la accion a uno de los cuatro movimientos discretos del entorno. La actualizacion es una regla de diferencias temporales de tipo off-policy: el valor Q del par visitado se aproxima hacia la recompensa inmediata mas el valor maximo descontado del estado siguiente. No hay funcion de aproximacion, ni gradiente, ni retropropagacion.
 
-No se dispone de informacion sobre el numero de episodios, la tasa de aprendizaje, el factor de descuento, la politica de exploracion (por ejemplo epsilon-greedy) ni el esquema de decaimiento empleado. Tampoco se documenta el uso de RLHF, DPO ni ninguna tecnica de alineacion, naturalmente inaplicables en este contexto. El artefacto se publica mediante el flujo `load_from_hub` del curso de deep reinforcement learning de HuggingFace, lo que implica que el objeto serializado incluye metadatos como el identificador del entorno (`env_id`) y que su carga requiere ejecutar codigo Python arbitrario contenido en el pickle.
+No se dispone de informacion sobre el numero de episodios, la tasa de aprendizaje, el factor de descuento, la politica de exploracion (por ejemplo epsilon-greedy) ni el esquema de decaimiento empleado. Tampoco se documenta el uso de RLHF, DPO ni ninguna tecnica de alineacion, naturalmente inaplicables en este contexto. El artefacto se publica mediante el flujo `load_from_hub` del curso de deep reinforcement learning de Hugging Face, lo que implica que el objeto serializado incluye metadatos como el identificador del entorno (`env_id`) y que su carga requiere ejecutar codigo Python arbitrario contenido en el pickle.
 
 La unica innovacion tecnica observable es de caracter metodologico: el autor declara una variante etiquetada internamente como `noSlippery`, es decir, entrenada sobre la version determinista del entorno (sin deslizamiento), mientras que el identificador del repositorio menciona `Slippery` (version estocastica). Esta ambiguedad afecta directamente a la interpretabilidad del resultado declarado.
 
@@ -43,11 +43,11 @@ La unica innovacion tecnica observable es de caracter metodologico: el autor dec
 ## Casos de uso
 
 - Docencia de aprendizaje por refuerzo: el agente permite ilustrar en clase el ciclo completo de Q-Learning tabular (exploracion, explotacion, actualizacion de valores) sobre un entorno con espacio de estados de 16 elementos, lo que hace viable trazar manualmente la tabla Q completa y comparar cada iteracion.
-- Pruebas de integracion de librerias de RL: sirve como artefacto minimo para verificar que un pipeline propio de carga, evaluacion y registro de modelos funciona con ficheros pickle y con la API `load_from_hub` del Hub de HuggingFace.
+- Pruebas de integracion de librerias de RL: sirve como artefacto minimo para verificar que un pipeline propio de carga, evaluacion y registro de modelos funciona con ficheros pickle y con la API `load_from_hub` del Hub de Hugging Face.
 - Reproduccion de resultados y auditoria: al declarar un `mean_reward` concreto y una desviacion tipica, permite reproducir la evaluacion y contrastar el valor publicado, incluida la discrepancia entre la variante resbaladiza y no resbaladiza.
 - Linea base para barridos de hiperparametros: cualquier experimento con DQN, PPO o Q-Learning con aproximacion funcional sobre FrozenLake-v1 4x4 necesita una referencia tabular contra la que medir la mejora; este modelo cumple esa funcion con un coste computacional practicamente nulo.
 - Estudio comparado de estocasticidad del entorno: la pareja de configuraciones `Slippery` y `noSlippery` permite analizar experimentalmente como la probabilidad de transicion no determinista degrada la recompensa media y aumenta su varianza.
-- Validacion de flujos de publicacion en el Hub: es un ejemplo reproducible de model card generada con metadatos `model-index`, util para comprobar como se renderizan los resultados declarados en la interfaz de HuggingFace.
+- Validacion de flujos de publicacion en el Hub: es un ejemplo reproducible de model card generada con metadatos `model-index`, util para comprobar como se renderizan los resultados declarados en la interfaz de Hugging Face.
 - Simulaciones educativas de planificacion en cuadricula: el agente puede incrustarse en demostraciones interactivas de politica optima sobre mapas pequenos, sin requisitos de GPU ni dependencias pesadas.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento publicados para alternativas concretas en 
 | Contexto | No aplica | No aplica | No aplica |
 | Rendimiento declarado | 0,71 +/- 0,45 de mean_reward | No disponible | No disponible |
 | Licencia | No disponible | No disponible | No disponible |
-| Disponibilidad | Repositorio publico en HuggingFace, 0 descargas | No disponible | No disponible |
+| Disponibilidad | Repositorio publico en Hugging Face, 0 descargas | No disponible | No disponible |
 | Requisitos de hardware | CPU | GPU recomendable | GPU recomendable |
 
 Las alternativas indicadas son categorias metodologicas habituales sobre el mismo entorno, no modelos concretos verificados en la busqueda realizada.
@@ -99,6 +99,6 @@ Las alternativas indicadas son categorias metodologicas habituales sobre el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace Hub: https://huggingface.co/lolociv/q-FrozenLake-v1-4x4-Slippery
+- Modelo en Hugging Face Hub: https://huggingface.co/lolociv/q-FrozenLake-v1-4x4-Slippery
 - Repositorio referenciado en el ejemplo de uso de la model card: `lolociv/q-FrozenLake-v1-4x4-noSlippery` (mismo autor)
 - No se han encontrado en la busqueda web otros enlaces a papers, blogs, repositorios de codigo o demos asociados a este modelo.

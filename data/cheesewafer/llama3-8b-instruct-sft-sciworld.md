@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cheesewafer/Llama3-8B-Instruct-sft-sciworld` es un ajuste fino (fine-tuning) de `meta-llama/Meta-Llama-3.1-8B-Instruct` realizado por el usuario de HuggingFace `cheesewafer`. El objetivo declarado del ajuste es adaptar el modelo base para operar dentro del entorno ScienceWorld, un simulador de laboratorio de ciencias para agentes de texto que requiere razonamiento multi-paso, planificacion y ejecucion de acciones en un entorno interactivo.
+El modelo `cheesewafer/Llama3-8B-Instruct-sft-sciworld` es un ajuste fino (fine-tuning) de `meta-llama/Meta-Llama-3.1-8B-Instruct` realizado por el usuario de Hugging Face `cheesewafer`. El objetivo declarado del ajuste es adaptar el modelo base para operar dentro del entorno ScienceWorld, un simulador de laboratorio de ciencias para agentes de texto que requiere razonamiento multi-paso, planificacion y ejecucion de acciones en un entorno interactivo.
 
-Se trata de un modelo de 8.030 millones de parametros (8B) con arquitectura transformer densa, entrenado mediante supervisión (SFT) con el kit de herramientas `alignment-handbook`. La ficha de la model card es minima y generada automaticamente por el Trainer de HuggingFace, por lo que no se dispone de detalles sobre el dataset de entrenamiento, los resultados de evaluacion ni las limitaciones declaradas por el autor. El repositorio pesa 46,1 GB en formato `safetensors`.
+Se trata de un modelo de 8.030 millones de parametros (8B) con arquitectura transformer densa, entrenado mediante supervisión (SFT) con el kit de herramientas `alignment-handbook`. La ficha de la model card es minima y generada automaticamente por el Trainer de Hugging Face, por lo que no se dispone de detalles sobre el dataset de entrenamiento, los resultados de evaluacion ni las limitaciones declaradas por el autor. El repositorio pesa 46,1 GB en formato `safetensors`.
 
 La relevancia de este modelo reside en su especializacion para un entorno concreto de agente (ScienceWorld), lo que lo hace util para investigacion en razonamiento cientifico y navegacion de entornos textuales, aunque su escasa documentacion y ausencia de benchmarks publicados limitan su evaluacion objetiva.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo reside en su especializacion para un entorno concre
 
 La arquitectura es la del modelo base `meta-llama/Meta-Llama-3.1-8B-Instruct`: un transformer autoregresivo denso con 8.030 millones de parametros, normalizacion RMSNorm, activacion SwiGLU y atencion con mascara causal. El modelo base incorpora un mecanismo de ventana de contexto de hasta 128K tokens (no confirmado para este ajuste) y ha sido alineado mediante instrucciones y RLHF por Meta.
 
-El entrenamiento de este ajuste se realizo con el `alignment-handbook` y el Trainer de HuggingFace. Los hiperparametros declarados son: learning rate de 2e-05, batch size de 4 por dispositivo con 8 GPUs (batch efectivo de 32), optimizador Adam (beta1=0.9, beta2=0.999, epsilon=1e-08), scheduler cosine con warmup del 10%, y 3 epocas. No se especifica el dataset de entrenamiento, el numero de pasos ni el desglose de datos. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion adicionales al SFT.
+El entrenamiento de este ajuste se realizo con el `alignment-handbook` y el Trainer de Hugging Face. Los hiperparametros declarados son: learning rate de 2e-05, batch size de 4 por dispositivo con 8 GPUs (batch efectivo de 32), optimizador Adam (beta1=0.9, beta2=0.999, epsilon=1e-08), scheduler cosine con warmup del 10%, y 3 epocas. No se especifica el dataset de entrenamiento, el numero de pasos ni el desglose de datos. No se menciona el uso de RLHF, DPO u otras tecnicas de alineacion adicionales al SFT.
 
 ## Capacidades
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: un modelo de 8B en precision FP16 requiere aproximadamente 16 GB de VRAM. Con cuantizacion INT8 se reduce a unos 8-10 GB, y con INT4 a unos 4-6 GB (estimaciones estandar para Llama 3.1 8B).
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para FP16; GPUs con 8-12 GB (RTX 3060, RTX 4070) para cuantizacion INT8; GPUs de 6-8 GB (RTX 2060, RTX 3050) para INT4.
 - Compatibilidad con GPU de consumo: si, cabe en tarjetas de consumo con cuantizacion.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, Transformers con `device_map="auto"`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, Transformers con `device_map="auto"`.
 - Latencia y throughput: no disponibles para este ajuste especifico. Como referencia, Llama 3.1 8B en FP16 en una A100 genera aproximadamente 100-150 tokens/s; en una RTX 4090, unos 60-80 tokens/s.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ Los modelos de `cheesewafer` comparten la misma base y metodologia de ajuste, di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cheesewafer/Llama3-8B-Instruct-sft-sciworld
+- Repositorio Hugging Face: https://huggingface.co/cheesewafer/Llama3-8B-Instruct-sft-sciworld
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct
 - Modelo hermano (ALFWorld): https://huggingface.co/cheesewafer/Llama3-8B-Instruct-sft-alfworld
 - Modelo hermano (WebShop): https://huggingface.co/cheesewafer/Llama3-8B-Instruct-sft-webshop

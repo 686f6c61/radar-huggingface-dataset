@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_moss_short_whisper-small-MiniLM_k2 (este) | no disponible | 256 (segun nombre del run) | no disponible | no disponible | HuggingFace (VoiceNetCkpt) |
+| voiceclap_moss_short_whisper-small-MiniLM_k2 (este) | no disponible | 256 (segun nombre del run) | no disponible | no disponible | Hugging Face (VoiceNetCkpt) |
 | LAION-CLAP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado |
 | Microsoft CLAP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado |
 | AudioCLIP | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no verificado |
@@ -93,5 +93,5 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_short_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_short_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de todos los runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index

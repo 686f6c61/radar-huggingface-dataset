@@ -71,6 +71,6 @@ No se han encontrado modelos comparables validos en la informacion proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yulee7566/mobilevit-classification
-- Perfil del autor en HuggingFace: https://huggingface.co/yulee7566/models
+- Modelo en Hugging Face: https://huggingface.co/yulee7566/mobilevit-classification
+- Perfil del autor en Hugging Face: https://huggingface.co/yulee7566/models
 - Referencia de arquitectura MobileViT (no del autor): https://keras.io/examples/vision/mobilevit/

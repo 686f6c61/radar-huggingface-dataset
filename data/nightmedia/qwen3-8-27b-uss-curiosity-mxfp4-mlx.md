@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-USS-Curiosity-mxfp4-mlx es un modelo de lenguaje multimodal de 27.000 millones de parametros publicado por el usuario nightmedia en HuggingFace. Se trata de un merge realizado con mergekit que combina decenas de modelos derivados de la familia Qwen3.5/3.6/3.8 de 27B, entre ellos adaptaciones destiladas a partir del estilo de Claude 4.6 (etiqueta claude-distillation) y fine-tunes orientados a escritura creativa, rol y razonamiento. La nomenclatura "USS-Curiosity" corresponde a un linaje interno de merges del autor, y el sufijo "mxfp4-mlx" indica que los pesos estan cuantizados en formato MXFP4 para su ejecucion con MLX en hardware Apple Silicon.
+Qwen3.8-27B-USS-Curiosity-mxfp4-mlx es un modelo de lenguaje multimodal de 27.000 millones de parametros publicado por el usuario nightmedia en Hugging Face. Se trata de un merge realizado con mergekit que combina decenas de modelos derivados de la familia Qwen3.5/3.6/3.8 de 27B, entre ellos adaptaciones destiladas a partir del estilo de Claude 4.6 (etiqueta claude-distillation) y fine-tunes orientados a escritura creativa, rol y razonamiento. La nomenclatura "USS-Curiosity" corresponde a un linaje interno de merges del autor, y el sufijo "mxfp4-mlx" indica que los pesos estan cuantizados en formato MXFP4 para su ejecucion con MLX en hardware Apple Silicon.
 
 El modelo hereda la arquitectura densa vision-language de la serie Qwen3.8-27B, por lo que procesa texto, imagen y video, con soporte declarado en las etiquetas para ventanas de contexto de 256k e incluso 1M de tokens. Su interes practico radica en que condensa en un unico checkpoint una mezcla amplia de comportamientos (razonamiento de cadena larga, codigo, matematicas, escritura de ficcion y conversacion multilingue) y lo empaqueta en un formato cuantizado de 4 bits apto para equipos con memoria unificada, algo poco habitual en modelos de este tamano orientados a vision.
 
@@ -68,16 +68,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-USS-Curiosity-mxfp4-mlx | 27B | 256k-1M (declarado) | Merge multimodal, cuantizado MXFP4/MLX | Apache 2.0 | Gated en HuggingFace |
+| Qwen3.8-27B-USS-Curiosity-mxfp4-mlx | 27B | 256k-1M (declarado) | Merge multimodal, cuantizado MXFP4/MLX | Apache 2.0 | Gated en Hugging Face |
 | Qwen3.8-27B (base oficial) | 27B | No disponible | Denso vision-language | No disponible en la informacion | NGC y QwenCloud |
-| nightmedia/Qwen3.8-27B-USS-Collective-qx64-hi-mlx | 27B | No disponible | Merge multimodal, cuantizacion qx64 | No disponible | HuggingFace |
-| nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx | 27B | No disponible | Merge multimodal, cuantizado MXFP4/MLX | No disponible | HuggingFace |
+| nightmedia/Qwen3.8-27B-USS-Collective-qx64-hi-mlx | 27B | No disponible | Merge multimodal, cuantizacion qx64 | No disponible | Hugging Face |
+| nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx | 27B | No disponible | Merge multimodal, cuantizado MXFP4/MLX | No disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks publicados: no hay evidencia cuantitativa de rendimiento frente a la base oficial Qwen3.8-27B ni frente a modelos equivalentes.
 - Modelo experimental con cero descargas y cero interacciones registradas, lo que implica ausencia de validacion por parte de la comunidad.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace antes de poder descargar los pesos.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face antes de poder descargar los pesos.
 - Riesgo de degradacion por merge: al combinar mas de veinte checkpoints con objetivos diversos (codigo, ficcion, roleplay, variantes sin censura), pueden aparecer comportamientos inconsistentes o perdida de capacidades respecto a los modelos originales.
 - Sesgos y contenido: el linaje incluye fine-tunes etiquetados como "uncensored" y "heretic", por lo que cabe esperar una alineacion de seguridad debil y posible generacion de contenido sensible sin filtros.
 - Riesgo de alucinacion: no cuantificado para este checkpoint; en modelos de 27B con contexto largo el riesgo aumenta en tareas de recuperacion de informacion.
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Curiosity-mxfp4-mlx
+- Hugging Face: https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Curiosity-mxfp4-mlx
 - Modelo hermano (Holodeck, MXFP4/MLX): https://huggingface.co/nightmedia/Qwen3.8-27B-Holodeck-mxfp4-mlx
 - Modelo hermano (USS-Collective, qx64-hi): https://huggingface.co/nightmedia/Qwen3.8-27B-USS-Collective-qx64-hi-mlx
 - Ficha de LLM Explorer para USS-Collective: https://llm-explorer.com/model/nightmedia%2FQwen3.8-27B-USS-Collective-qx64-hi-mlx,7zHQyXKHwwhc0ck8bCIOzR

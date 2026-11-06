@@ -89,7 +89,7 @@ Los datos de rendimiento comparado (WER u otras metricas) no estan disponibles e
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/aoiandroid/whisper-medium.en
+- Repositorio Hugging Face (espejo): https://huggingface.co/aoiandroid/whisper-medium.en
 - Modelo original: https://huggingface.co/openai/whisper-medium.en
 - Commit del codigo fuente: https://huggingface.co/openai/whisper-medium.en/tree/2e98eb6279edf5095af0c8dedb36bdec0acd172b
 - Paper de Whisper (Radford et al.): no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Osiito/Pepesite es un repositorio de modelo alojado en HuggingFace por el usuario Osiito. En el momento de redactar esta ficha, la unica informacion verificable publicada por el autor es la licencia (Apache 2.0) y la etiqueta de region (us). La model card no contiene descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso: el README se limita a un bloque de metadatos con `license: apache-2.0` sin contenido adicional.
+Osiito/Pepesite es un repositorio de modelo alojado en Hugging Face por el usuario Osiito. En el momento de redactar esta ficha, la unica informacion verificable publicada por el autor es la licencia (Apache 2.0) y la etiqueta de region (us). La model card no contiene descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso: el README se limita a un bloque de metadatos con `license: apache-2.0` sin contenido adicional.
 
 El repositorio registra 0 descargas y 0 likes, y no declara pipeline de inferencia ni idiomas soportados. Fue creado y actualizado el 20 de septiembre de 2026 (misma marca temporal en ambos campos), lo que sugiere una publicacion unica sin mantenimiento posterior documentado.
 
@@ -80,6 +80,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Osiito/Pepesite
+- Hugging Face: https://huggingface.co/Osiito/Pepesite
 - Busquedas web realizadas: no se recupero ningun enlace relacionado con Osiito/Pepesite. Los resultados obtenidos correspondian a paginas de productos de OpenAI (https://openai.com/ja-JP/, https://openai.com/zh-Hans-CN/index/start-using-chatgpt-instantly/, https://help.openai.com/ja-jp/articles/9275200-downloading-the-chatgpt-macos-app, https://help.openai.com/ja-jp/articles/11481834-chatgpt-rate-card-business-enterpriseedu-credit-based-pricing, https://developers.openai.com/) y no guardan relacion con el modelo descrito.
 - Paper, blog o repositorio asociado: no disponible.

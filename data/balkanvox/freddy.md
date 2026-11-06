@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `BalkanVox/Freddy` es una publicacion en HuggingFace del usuario BalkanVox que contiene un modelo denominado "Freddy". El repositorio tiene un tamano de 0.1 GB, cero descargas y cero likes, y su model card no incluye ninguna documentacion tecnica mas alla de la declaracion de licencia `openrail`. No se dispone de informacion sobre arquitectura, parametros, contexto, idiomas o capacidades del modelo.
+El repositorio `BalkanVox/Freddy` es una publicacion en Hugging Face del usuario BalkanVox que contiene un modelo denominado "Freddy". El repositorio tiene un tamano de 0.1 GB, cero descargas y cero likes, y su model card no incluye ninguna documentacion tecnica mas alla de la declaracion de licencia `openrail`. No se dispone de informacion sobre arquitectura, parametros, contexto, idiomas o capacidades del modelo.
 
-Es importante senalar que las busquedas web realizadas devuelven resultados sobre "Freddy AI" de Freshworks, un producto comercial de automatizacion de soporte al cliente integrado en Freshdesk y Freshservice. Dicho producto no guarda relacion con este repositorio de HuggingFace, que no contiene informacion que permita establecer ninguna conexion con el software de Freshworks. La ausencia de model card y de archivos documentados impide cualquier analisis tecnico del modelo.
+Es importante senalar que las busquedas web realizadas devuelven resultados sobre "Freddy AI" de Freshworks, un producto comercial de automatizacion de soporte al cliente integrado en Freshdesk y Freshservice. Dicho producto no guarda relacion con este repositorio de Hugging Face, que no contiene informacion que permita establecer ninguna conexion con el software de Freshworks. La ausencia de model card y de archivos documentados impide cualquier analisis tecnico del modelo.
 
 ## Especificaciones tecnicas
 
@@ -47,11 +47,11 @@ No disponible. No se dispone de informacion tecnica sobre este modelo que permit
 
 - El repositorio carece de cualquier documentacion tecnica, lo que imposibilita evaluar sesgos, riesgos de alucinacion o limitaciones de contexto e idioma.
 - La licencia `openrail` es una licencia permisiva de codigo abierto, pero no se ha verificado que el repositorio contenga realmente un modelo funcional ni los archivos de pesos correspondientes.
-- Los resultados de busqueda web sobre "Freddy AI" de Freshworks corresponden a un producto comercial cerrado y no deben interpretarse como informacion sobre este repositorio de HuggingFace.
+- Los resultados de busqueda web sobre "Freddy AI" de Freshworks corresponden a un producto comercial cerrado y no deben interpretarse como informacion sobre este repositorio de Hugging Face.
 - Con cero descargas y cero likes, no existe ninguna validacion por parte de la comunidad sobre la calidad o el funcionamiento del contenido del repositorio.
 - Se recomienda extrema precaucion antes de utilizar cualquier archivo de este repositorio en entornos de produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BalkanVox/Freddy
+- Repositorio Hugging Face: https://huggingface.co/BalkanVox/Freddy
 - No se han encontrado otros enlaces relevantes especificos de este modelo. Los enlaces de la busqueda web corresponden al producto Freshworks Freddy AI, no a este repositorio.

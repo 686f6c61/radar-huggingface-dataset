@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-3.7B (checkpoint 300) es un ajuste fino completo del modelo base IFM/K2-Horizon-3.7B, publicado por el usuario sambal en HuggingFace. Se trata de un modelo de generacion de texto especializado en petrofisica y registros de pozo (well logs), entrenado mediante una receta de DPO con normalizacion por longitud combinada con un termino RPO (NLL sobre las respuestas elegidas). El objetivo es alinear el modelo hacia respuestas tecnicas mas largas y detalladas en el dominio de la petrofisica, sin degradar la verosimilitud de las respuestas preferidas.
+K2-Horizon-3.7B (checkpoint 300) es un ajuste fino completo del modelo base IFM/K2-Horizon-3.7B, publicado por el usuario sambal en Hugging Face. Se trata de un modelo de generacion de texto especializado en petrofisica y registros de pozo (well logs), entrenado mediante una receta de DPO con normalizacion por longitud combinada con un termino RPO (NLL sobre las respuestas elegidas). El objetivo es alinear el modelo hacia respuestas tecnicas mas largas y detalladas en el dominio de la petrofisica, sin degradar la verosimilitud de las respuestas preferidas.
 
 El modelo conserva la arquitectura, tokenizador y plantilla de chat del modelo base K2-Horizon-3.7B, por lo que se sirve de forma identica a este. Los pesos publicados son el modelo completo en bf16, sin adaptadores LoRA. El repositorio ocupa 10,1 GB y contiene 5.058.255.360 parametros segun los safetensors, un dato que no coincide con la denominacion "3.7B" del nombre, lo que conviene tener en cuenta al planificar el despliegue.
 
@@ -72,10 +72,10 @@ Estas cifras miden preferencia en pares retenidos, no calidad de respuesta.
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300 | 5.058.255.360 (safetensors) | hasta 65.536 en entrenamiento | Petrofisica | apache-2.0 | HuggingFace |
-| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400 | no disponible | no disponible | Petrofisica | apache-2.0 | HuggingFace |
-| sambal/k2-horizon-7b-lndpo-rpo-full-checkpoint-300 | ~7B (segun nombre) | no disponible | Petrofisica | no disponible | HuggingFace |
-| IFM/K2-Horizon-3.7B (base) | 3.7B (segun nombre) | no disponible | General | no disponible | HuggingFace |
+| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300 | 5.058.255.360 (safetensors) | hasta 65.536 en entrenamiento | Petrofisica | apache-2.0 | Hugging Face |
+| sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400 | no disponible | no disponible | Petrofisica | apache-2.0 | Hugging Face |
+| sambal/k2-horizon-7b-lndpo-rpo-full-checkpoint-300 | ~7B (segun nombre) | no disponible | Petrofisica | no disponible | Hugging Face |
+| IFM/K2-Horizon-3.7B (base) | 3.7B (segun nombre) | no disponible | General | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300
+- Modelo en Hugging Face: https://huggingface.co/sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-300
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-3.7B
 - Dataset de preferencias: https://huggingface.co/datasets/sambal/welllog-dpo-pairs
 - Checkpoint paso 400: https://huggingface.co/sambal/k2-horizon-3.7b-lndpo-rpo-full-checkpoint-400

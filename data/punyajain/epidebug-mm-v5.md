@@ -70,7 +70,7 @@ Sondas de evidencia (cambio en precisión de hipótesis): blank −.139, swap �
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| epidebug-mm-v5 | 1.138.086 | no disponible | MIT | HuggingFace |
+| epidebug-mm-v5 | 1.138.086 | no disponible | MIT | Hugging Face |
 | epidebug v4 | no disponible | no disponible | no disponible | no disponible |
 | epidebug v3 | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,5 +88,5 @@ No se dispone de información sobre modelos comparables de la misma categoría f
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/punyajain/epidebug-mm-v5
+- Hugging Face: https://huggingface.co/punyajain/epidebug-mm-v5
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

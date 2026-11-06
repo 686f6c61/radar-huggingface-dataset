@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bonsai-2-9b-Shakespeare-SFT es un ajuste fino experimental del modelo ternario Ternary-Bonsai-2-9B de prism-ml, desarrollado por el usuario korokoboom y publicado en HuggingFace. Su particularidad principal es doble: por un lado, demuestra que es posible aplicar QAT (quantization-aware training) con LoRA directamente sobre pesos ternarios de 2 bits, sin necesidad de una copia maestra en fp16; por otro, el modelo resultante es un revisor de código que analiza diffs de git y responde con una breve fase de razonamiento analítico seguida de una crítica en estilo shakespeariano trágico, con la solución técnica al final.
+Bonsai-2-9b-Shakespeare-SFT es un ajuste fino experimental del modelo ternario Ternary-Bonsai-2-9B de prism-ml, desarrollado por el usuario korokoboom y publicado en Hugging Face. Su particularidad principal es doble: por un lado, demuestra que es posible aplicar QAT (quantization-aware training) con LoRA directamente sobre pesos ternarios de 2 bits, sin necesidad de una copia maestra en fp16; por otro, el modelo resultante es un revisor de código que analiza diffs de git y responde con una breve fase de razonamiento analítico seguida de una crítica en estilo shakespeariano trágico, con la solución técnica al final.
 
 El experimento es relevante porque valida un pipeline de fine-tuning que opera íntegramente desde el archivo GGUF: los adaptadores LoRA se entrenan contra la rejilla ternaria concretada (con un estimador straight-through y bandas de histéresis) y, al terminar, el efecto del adaptador se consolida reescribiendo los códigos de 2 bits en el propio GGUF. El resultado es un GGUF del mismo tamaño y coste de inferencia que el original, sin pesos laterales que fusionar en tiempo de servicio. En total se modificaron 55.603.249 trits de los 6.900 millones de pesos (un 0,80 %). El modelo tiene 8.953.803.264 parámetros totales según safetensors, se distribuye en formato GGUF (2,7 GB el repositorio) y está bajo licencia Apache 2.0. La longitud de contexto no está documentada en la model card, aunque los datos de entrenamiento se limitaron a 2.048 tokens de diff.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/korokoboom/Bonsai-2-9b-Shakespeare-SFT
+- Ficha del modelo en Hugging Face: https://huggingface.co/korokoboom/Bonsai-2-9b-Shakespeare-SFT
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/ronantakizawa/github-codereview
 - Paper, blog o demo adicional: no disponible

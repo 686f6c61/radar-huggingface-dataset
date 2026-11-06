@@ -73,7 +73,7 @@ No se han publicado resultados adicionales de benchmarks en la informacion dispo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LaTexT/qwen3-8b-gz3-sentence-iter2-w0.2 | 8,2 B | No disponible en la ficha (base: 32.768 tokens, 131.072 con YaRN) | No disponible | HuggingFace, 0 descargas | Ajuste de investigacion sobre razonamiento latente |
+| LaTexT/qwen3-8b-gz3-sentence-iter2-w0.2 | 8,2 B | No disponible en la ficha (base: 32.768 tokens, 131.072 con YaRN) | No disponible | Hugging Face, 0 descargas | Ajuste de investigacion sobre razonamiento latente |
 | Qwen/Qwen3-8B (base) | 8,2 B | 32.768 nativos, 131.072 con YaRN | Apache 2.0 | Ampliamente disponible | Modelo de referencia; incluye modos thinking/non-thinking |
 | Llama-3.1-8B | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Ampliamente disponible | Alternativa densa de tamano similar |
 | Mistral-7B-v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Ampliamente disponible | Alternativa algo menor, licencia permisiva |
@@ -82,7 +82,7 @@ Los datos de los modelos comparativos corresponden a su documentacion publica y 
 
 ## Limitaciones y advertencias
 
-- Licencia indeterminada: la model card declara `licence: license` sin contenido y la ficha de HuggingFace no indica licencia. No hay base legal explicita para uso comercial, por lo que debe consultarse al autor antes de cualquier despliegue productivo.
+- Licencia indeterminada: la model card declara `licence: license` sin contenido y la ficha de Hugging Face no indica licencia. No hay base legal explicita para uso comercial, por lo que debe consultarse al autor antes de cualquier despliegue productivo.
 - Sesgos conocidos: no documentados. Al no especificarse la composicion del dataset `shannons/ot3-1.2m-10k-converted`, no puede evaluarse el sesgo heredado.
 - Riesgo de alucinacion: no medido. Es un ajuste de investigacion sin evaluaciones publicas de factualidad.
 - Ambito restringido: el entrenamiento esta orientado a objetivos concretos (gist tokens, razonamiento latente, matematicas) y no a un asistente conversacional general. El rendimiento fuera de ese dominio es incierto.
@@ -95,7 +95,7 @@ Los datos de los modelos comparativos corresponden a su documentacion publica y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LaTexT/qwen3-8b-gz3-sentence-iter2-w0.2
+- Modelo en Hugging Face: https://huggingface.co/LaTexT/qwen3-8b-gz3-sentence-iter2-w0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases (referenciado en la model card): https://fairwandb.org/shannons/memr-gist-deepspeed/runs/pwewave1

@@ -4,7 +4,7 @@
 
 Inkling-Small REAP128 Magicpack es una compilación de cuantizaciones GGUF del modelo multimodal Inkling-Small de ThinkingMachines, podada mediante REAP (expert pruning guiado por saliencia de enrutamiento) para reducir los expertos enrutados de 256 a 128 por capa. El modelo base declara 276B parámetros totales con 12B activos (arquitectura MoE con visión y audio), aunque los safetensors del repositorio registran 134.785.203.754 parámetros totales, cifra que no concuerda con la model card y que conviene verificar antes de usarlo como referencia de tamaño. El autor de la adaptación es nbKPS (KPS Labs), con tres DGX Spark en octubre de 2026.
 
-La relevancia de esta ficha está en que empaqueta un MoE multimodal de gran tamaño para servir en un único nodo DGX Spark / GB10 mediante llama.cpp, con una receta de cuantización mixta ("Magicpack") que mantiene q8_0 en atención, expertos compartidos, embeddings y salida, y comprime solo los expertos enrutados. Se ofrecen dos builds: `magicpack-g` (56 GiB, IQ3_S/IQ3_XXS) y `magicpack-d-mxfp4-mxfp4` (70 GiB, MXFP4). La licencia es "other" heredada del modelo base, sin idiomas declarados en la ficha de HuggingFace.
+La relevancia de esta ficha está en que empaqueta un MoE multimodal de gran tamaño para servir en un único nodo DGX Spark / GB10 mediante llama.cpp, con una receta de cuantización mixta ("Magicpack") que mantiene q8_0 en atención, expertos compartidos, embeddings y salida, y comprime solo los expertos enrutados. Se ofrecen dos builds: `magicpack-g` (56 GiB, IQ3_S/IQ3_XXS) y `magicpack-d-mxfp4-mxfp4` (70 GiB, MXFP4). La licencia es "other" heredada del modelo base, sin idiomas declarados en la ficha de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,10 +68,10 @@ Referencias adicionales de la model card: el suelo kept-mask del corte (modelo p
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small REAP128 Magicpack (este) | 134.785.203.754 segun safetensors; 276B/12B activos segun card | 327.680 | GGUF (56/70 GiB) | other | HuggingFace `nbKPS/inkling-reap128-magicpack-gguf` |
+| Inkling-Small REAP128 Magicpack (este) | 134.785.203.754 segun safetensors; 276B/12B activos segun card | 327.680 | GGUF (56/70 GiB) | other | Hugging Face `nbKPS/inkling-reap128-magicpack-gguf` |
 | Inkling-Small completo NVFP4 | 276B / 12B activos | no disponible | NVFP4 | other (base) | Referenciado en la card; requiere dos nodos |
-| `nbKPS/inkling-reap192-bf16` | no disponible | no disponible | BF16 denso | other (base) | HuggingFace |
-| `nbKPS/inkling-reap128-bf16` | no disponible | no disponible | BF16 denso | other (base) | HuggingFace |
+| `nbKPS/inkling-reap192-bf16` | no disponible | no disponible | BF16 denso | other (base) | Hugging Face |
+| `nbKPS/inkling-reap128-bf16` | no disponible | no disponible | BF16 denso | other (base) | Hugging Face |
 
 Comparativa con alternativas de otros autores: no disponible en la información proporcionada.
 
@@ -90,7 +90,7 @@ Comparativa con alternativas de otros autores: no disponible en la información 
 
 ## Enlaces
 
-- HuggingFace del build: https://huggingface.co/nbKPS/inkling-reap128-magicpack-gguf
+- Hugging Face del build: https://huggingface.co/nbKPS/inkling-reap128-magicpack-gguf
 - Modelo base: https://huggingface.co/ThinkingMachines/Inkling-Small
 - BF16 kept-mask REAP128: https://huggingface.co/nbKPS/inkling-reap128-bf16
 - BF16 kept-mask REAP192: https://huggingface.co/nbKPS/inkling-reap192-bf16

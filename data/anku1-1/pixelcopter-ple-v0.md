@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario anku1-1 bajo el pipeline `reinforcement-learning`. A pesar del nombre del repositorio, la model card y el `model-index` lo identifican como un agente **Reinforce** entrenado para resolver el entorno **CartPole-v1**, siguiendo la Unidad 4 del curso Deep Reinforcement Learning Course de HuggingFace. Se trata por tanto de un artefacto educativo: una implementacion propia (`custom-implementation`) de policy gradient con REINFORCE, no de un modelo de lenguaje.
+Pixelcopter-PLE-v0 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario anku1-1 bajo el pipeline `reinforcement-learning`. A pesar del nombre del repositorio, la model card y el `model-index` lo identifican como un agente **Reinforce** entrenado para resolver el entorno **CartPole-v1**, siguiendo la Unidad 4 del curso Deep Reinforcement Learning Course de Hugging Face. Se trata por tanto de un artefacto educativo: una implementacion propia (`custom-implementation`) de policy gradient con REINFORCE, no de un modelo de lenguaje.
 
 El repositorio ocupa 0.0 GB y no registra descargas ni likes en el momento de la consulta, lo que sugiere que los pesos pueden no estar efectivamente subidos o que el artefacto es puramente demostrativo. El unico dato de rendimiento declarado es un `mean_reward` de 473,20 +/- 38,86 sobre CartPole-v1, marcado como no verificado (`verified: false`) por el propio autor.
 
@@ -31,7 +31,7 @@ No se dispone de datos sobre el numero de parametros de la red de politica, la c
 
 - Control de politica en el entorno CartPole-v1: el agente selecciona acciones discretas (izquierda/derecha) a partir del vector de estado del entorno.
 - Implementacion didactica de REINFORCE: reproducible como ejemplo de gradiente de politica Monte Carlo con `custom-implementation`.
-- Punto de partida para practicas de la Unidad 4 del Deep RL Course de HuggingFace.
+- Punto de partida para practicas de la Unidad 4 del Deep RL Course de Hugging Face.
 - No soporta generacion de texto, codigo, matematicas, vision ni audio.
 - No soporta tool calling ni function calling.
 - No soporta agentes multi-paso fuera del bucle episodico del entorno de RL.
@@ -72,7 +72,7 @@ No se dispone de datos publicados de otros agentes comparables en la informacion
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Pixelcopter-PLE-v0 (anku1-1) | REINFORCE | CartPole-v1 | no disponible | no aplica | 473,20 +/- 38,86 mean_reward (no verificado) | no disponible | HuggingFace |
+| Pixelcopter-PLE-v0 (anku1-1) | REINFORCE | CartPole-v1 | no disponible | no aplica | 473,20 +/- 38,86 mean_reward (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No se dispone de datos publicados de otros agentes comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anku1-1/Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/anku1-1/Pixelcopter-PLE-v0
 - Unidad 4 del Deep Reinforcement Learning Course (referencia citada en la model card): https://huggingface.co/deep-rl-course/unit4/introduction
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos correspondian a paginas de inicio de sesion de Microsoft Office y Microsoft 365, sin relacion con el artefacto.

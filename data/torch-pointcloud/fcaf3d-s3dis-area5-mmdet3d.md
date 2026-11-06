@@ -74,7 +74,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 
 | Modelo | Tipo | Parámetros | Dataset | mAP@0.25 (S3DIS Area 5) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fcaf3d.s3dis-area5.mmdet3d (este) | FCAF3D anchor-free, sparse voxel | 70,5 M | S3DIS | 66,31 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| fcaf3d.s3dis-area5.mmdet3d (este) | FCAF3D anchor-free, sparse voxel | 70,5 M | S3DIS | 66,31 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | FCAF3D original (mmdetection3d) | FCAF3D anchor-free, sparse voxel | No disponible en la información | S3DIS | No disponible en la información | Apache-2.0 | GitHub (OpenMMLab) |
 | Otros detectores 3D de interiores (p. ej. VoteNet, Group-Free) | Basados en puntos / votos | No disponible en la información | S3DIS | No disponible en la información | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de cifras de rendimiento de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/fcaf3d.s3dis-area5.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/fcaf3d.s3dis-area5.mmdet3d
 - Paper FCAF3D (ECCV 2022): https://arxiv.org/abs/2112.00322
 - Repositorio torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Documentación de instalación de torch-pointcloud: https://pytorch-pointcloud.org/latest/installation/

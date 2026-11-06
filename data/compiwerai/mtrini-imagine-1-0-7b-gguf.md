@@ -91,6 +91,6 @@ No se dispone de datos de otros modelos comparables de generacion de texto a ima
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CompiwerAI/Mtrini-Imagine-1.0-7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/CompiwerAI/Mtrini-Imagine-1.0-7B-GGUF
 - Modelo base: https://huggingface.co/HiDream-ai/HiDream-O1-Image-Dev
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

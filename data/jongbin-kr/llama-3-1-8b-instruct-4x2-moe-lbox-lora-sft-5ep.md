@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jongbin-kr/llama-3.1-8b-instruct-4x-moe-lbox-lora-sft-5ep` | no disponible (MoE 4x2) | no disponible (probablemente 128K) | sin benchmarks | no disponible | HuggingFace |
-| `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep` | no disponible (MoE 4x1) | no disponible | sin benchmarks | no disponible | HuggingFace |
-| `meta-llama/Llama-3.1-8B-Instruct` | 8B denso | 128K tokens | MMLU 69.4%, HumanEval 72.6% (oficiales de Meta) | Llama 3.1 Community License | HuggingFace |
+| `Jongbin-kr/llama-3.1-8b-instruct-4x-moe-lbox-lora-sft-5ep` | no disponible (MoE 4x2) | no disponible (probablemente 128K) | sin benchmarks | no disponible | Hugging Face |
+| `Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep` | no disponible (MoE 4x1) | no disponible | sin benchmarks | no disponible | Hugging Face |
+| `meta-llama/Llama-3.1-8B-Instruct` | 8B denso | 128K tokens | MMLU 69.4%, HumanEval 72.6% (oficiales de Meta) | Llama 3.1 Community License | Hugging Face |
 
 La comparativa es parcial: no se conocen los parametros totales ni activos del modelo MoE, ni los resultados de benchmarks, por lo que no se puede establecer una comparacion cuantitativa fiable con el modelo denso original.
 
@@ -78,7 +78,7 @@ La comparativa es parcial: no se conocen los parametros totales ni activos del m
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x2-moe-lbox-lora-sft-5ep)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x2-moe-lbox-lora-sft-5ep)
 - [Modelo base MoE 4x2](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x2-moe)
 - [Modelo relacionado MoE 4x1](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe-lbox-lora-sft-5ep)
 - [Llama 3.1 8B original de Meta](https://huggingface.co/meta-llama/Llama-3.1-8B)

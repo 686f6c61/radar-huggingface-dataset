@@ -88,7 +88,7 @@ No se identifican en la información proporcionada modelos alternativos comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bmaxin/Qwen3.8-27B-Q2_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/bmaxin/Qwen3.8-27B-Q2_K-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

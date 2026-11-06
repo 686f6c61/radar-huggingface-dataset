@@ -104,10 +104,10 @@ En parámetros, contexto y disponibilidad de los modelos comparables: no disponi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CpatainRainbow/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/CpatainRainbow/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial de referencia citado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Librería deepseek-recipe: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

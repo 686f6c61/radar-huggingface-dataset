@@ -97,7 +97,7 @@ No hay una comparativa directa de la imatrix con otras imatrix públicas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pugant/Qwen3.8-27B-imatrix
+- Repositorio Hugging Face: https://huggingface.co/pugant/Qwen3.8-27B-imatrix
 - Cuantizado generado con esta imatrix: https://huggingface.co/pugant/Qwen3.8-27B-MTP-Q4_0_ROCMFP4_STRIX_LEAN
 - Fork de cuantización ROCmFP4: https://github.com/pugant/ROCmFPX
 - Dataset de calibración (componente agéntico): https://huggingface.co/datasets/ProCreations/grug-think-v3-10k

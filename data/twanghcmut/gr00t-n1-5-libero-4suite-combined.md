@@ -62,8 +62,8 @@ No se dispone de datos de benchmarks comparativos para otros modelos VLA en las 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GR00T-N1.5-LIBERO-4suite-combined (este) | 2,7B | no disponible | Apache 2.0 | HuggingFace |
-| nvidia/GR00T-N1.5-3B (base) | ~3B | no disponible | Apache 2.0 | HuggingFace |
+| GR00T-N1.5-LIBERO-4suite-combined (este) | 2,7B | no disponible | Apache 2.0 | Hugging Face |
+| nvidia/GR00T-N1.5-3B (base) | ~3B | no disponible | Apache 2.0 | Hugging Face |
 | GR00T N1.7 (NVIDIA) | no disponible | no disponible | Apache 2.0 | GitHub/HuggingFace |
 
 La comparación directa con especialistas por suite (p. ej., youliangtan/gr00t-n1.5-libero-spatial-posttrain) no es posible sin datos numéricos, pero el autor indica que el rendimiento de este modelo combinado es inferior al de los especialistas, como se espera.
@@ -78,7 +78,7 @@ La comparación directa con especialistas por suite (p. ej., youliangtan/gr00t-n
 - Datos de evaluación limitados: los resultados se basan en 40 episodios (1 por tarea), un tamaño de muestra pequeño que implica una alta varianza. No se recomienda usar estos números como garantía de rendimiento en producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/GR00T-N1.5-LIBERO-4suite-combined
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/GR00T-N1.5-LIBERO-4suite-combined
 - Página de investigación de GR00T N1.5 (NVIDIA): https://research.nvidia.com/labs/gear/gr00t-n1_5/
 - Documentación de LeRobot para GR00T: https://huggingface.co/docs/lerobot/v0.4.3/groot
 - Repositorio Isaac-GR00T en GitHub: https://github.com/NVIDIA/Isaac-GR00T

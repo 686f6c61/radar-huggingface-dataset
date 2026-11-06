@@ -74,9 +74,9 @@ Según estos datos, el modelo IQ4_XS tiene una KL máxima menor y un cambio medi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,3B | 262 144 | FP8 / BF16 | Apache-2.0 | HuggingFace |
-| Suseezz/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF | 27,3B | ~110 000 (sin MTP) | IQ4_XS (4 bits) | Apache-2.0 | HuggingFace |
-| Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF | 27,3B | no disponible | IQ4_XS (4 bits) | Apache-2.0 | HuggingFace (recomendado por el autor) |
+| Qwen3.8-27B (base) | 27,3B | 262 144 | FP8 / BF16 | Apache-2.0 | Hugging Face |
+| Suseezz/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF | 27,3B | ~110 000 (sin MTP) | IQ4_XS (4 bits) | Apache-2.0 | Hugging Face |
+| Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF | 27,3B | no disponible | IQ4_XS (4 bits) | Apache-2.0 | Hugging Face (recomendado por el autor) |
 
 El autor sugiere que la versión de Bucoid (basada en Heretic Arbitrary-Rank Ablation) ofrece mejor rendimiento y menor tamaño, por lo que podría considerarse una alternativa superior dentro de la misma categoría.
 
@@ -92,7 +92,7 @@ El autor sugiere que la versión de Bucoid (basada en Heretic Arbitrary-Rank Abl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Suseezz/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Suseezz/Qwen3.8-27B-Uncensored-IQ4-XS-MTP-16GB-VRAM-GGUF
 - Modelo alternativo recomendado (Bucoid): https://huggingface.co/Bucoid/Qwen3.8-27B-Heretic-Ara-IQ4-XS-16GB-VRAM-GGUF
 - Guía de ejecución local (orcarouter): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Artículo sobre el GGUF uncensored (orcarouter): https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf

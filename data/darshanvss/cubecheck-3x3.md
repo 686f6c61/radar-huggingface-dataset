@@ -86,7 +86,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darshanvss/cubecheck-3x3
+- Modelo en Hugging Face: https://huggingface.co/darshanvss/cubecheck-3x3
 - Codigo, entrenamiento y evaluacion: https://github.com/darshanvss/cubecheck
 - Demo en navegador: https://check.cubing.in
 - Documentacion de entrenamiento: https://github.com/darshanvss/cubecheck/blob/main/docs/training.md

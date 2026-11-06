@@ -90,7 +90,7 @@ La comparativa directa con el base Qwen3.5-4B es la mas relevante: el fine-tune 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anjadhe/anjadhe-qwen3.5-4b
+- Modelo en Hugging Face: https://huggingface.co/anjadhe/anjadhe-qwen3.5-4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Aplicacion Anjadhe: https://anjadhe.ai
 - Guia de Qwen3.5-4B en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b

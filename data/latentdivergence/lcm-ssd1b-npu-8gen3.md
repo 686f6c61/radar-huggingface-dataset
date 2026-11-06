@@ -96,7 +96,7 @@ La comparacion relevante no es de calidad, sino de formato y destino: `lcm-ssd1b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/latentdivergence/lcm-ssd1b-npu-8gen3
+- Repositorio Hugging Face: https://huggingface.co/latentdivergence/lcm-ssd1b-npu-8gen3
 - Variante para Snapdragon 8 Elite: https://huggingface.co/latentdivergence/lcm-ssd1b-npu-8elite
 - Text encoders y tokenizer compartidos: https://huggingface.co/latentdivergence/sdxl-lightning-4step-int8
 - Modelo base LCM-SSD-1B: https://huggingface.co/latent-consistency/lcm-ssd-1b

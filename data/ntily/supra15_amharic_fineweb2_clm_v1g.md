@@ -75,9 +75,9 @@ Mejora relativa de perplejidad de v1g frente a v1f: −13,5 % (337,1 → 291,6).
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| supra15_amharic_fineweb2_clm_v1g | 51,8 M | 5.120 | no disponible | am | HuggingFace (0 descargas) |
-| supra15_amharic_fineweb2_clm_v1f | no disponible | no disponible | no disponible | am | HuggingFace (modelo base) |
-| supra15_amharic_gec_v1g | no disponible | no disponible | no disponible | am | HuggingFace (ajuste fino GEC) |
+| supra15_amharic_fineweb2_clm_v1g | 51,8 M | 5.120 | no disponible | am | Hugging Face (0 descargas) |
+| supra15_amharic_fineweb2_clm_v1f | no disponible | no disponible | no disponible | am | Hugging Face (modelo base) |
+| supra15_amharic_gec_v1g | no disponible | no disponible | no disponible | am | Hugging Face (ajuste fino GEC) |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con alternativas de otros autores.
 
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ntily/supra15_amharic_fineweb2_clm_v1g
+- Modelo en Hugging Face: https://huggingface.co/ntily/supra15_amharic_fineweb2_clm_v1g
 - Modelo base v1f: https://huggingface.co/ntily/supra15_amharic_fineweb2_clm_v1f
 - Dataset de construcción: https://huggingface.co/datasets/ntily/amharic-lm-build
 - Dataset GEC de referencia: https://huggingface.co/datasets/hayuLabs/Amh_gec_v1

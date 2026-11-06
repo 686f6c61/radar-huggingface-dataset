@@ -2,7 +2,7 @@
 
 ## Resumen
 
-whisper-medium-yecs-baseline es un ajuste fino de openai/whisper-medium sobre el corpus YECS de habla con alternancia de codigo (code-switching) yoruba-ingles. Lo publica el usuario robello2 en HuggingFace y su objetivo es mejorar el reconocimiento automatico del habla en conversaciones donde se mezclan el yoruba (`yo`) y el ingles (`en`), un escenario especialmente problematico para los modelos ASR multilingues genericos, que suelen degradarse cuando el hablante cambia de idioma dentro de una misma emision. El modelo se presenta como una linea base (baseline) de referencia para este corpus.
+whisper-medium-yecs-baseline es un ajuste fino de openai/whisper-medium sobre el corpus YECS de habla con alternancia de codigo (code-switching) yoruba-ingles. Lo publica el usuario robello2 en Hugging Face y su objetivo es mejorar el reconocimiento automatico del habla en conversaciones donde se mezclan el yoruba (`yo`) y el ingles (`en`), un escenario especialmente problematico para los modelos ASR multilingues genericos, que suelen degradarse cuando el hablante cambia de idioma dentro de una misma emision. El modelo se presenta como una linea base (baseline) de referencia para este corpus.
 
 Arquitectonicamente hereda el transformer encoder-decoder de Whisper en su variante medium, con 763.857.920 parametros totales y pesos en formato safetensors (repo de 3,1 GB). Mantiene la tokenizacion y el esquema de tokens de idioma de Whisper: durante el entrenamiento se asigno a cada emision el token `<|en|>` o `<|yo|>` segun el idioma mayoritario de las etiquetas de palabra, y en inferencia se recomienda decodificar con deteccion automatica de idioma. La longitud de contexto de audio corresponde a la nativa de Whisper-medium (ventanas de 30 segundos), aunque este dato no se explicita en la model card.
 
@@ -18,7 +18,7 @@ Es relevante para investigadores en ASR de bajos recursos y en code-switching, p
 | Longitud de contexto | no disponible (ventana de audio nativa de Whisper, 30 s) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | yoruba (`yo`), ingles (`en`) |
-| Licencia | NOODL-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | NOODL-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para c
 
 | Modelo | Parametros | Idiomas | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-medium-yecs-baseline | 763.857.920 | yo, en | 30 s (nativo Whisper) | NOODL-1.0 | HuggingFace, 0 descargas |
-| openai/whisper-medium | 763.857.920 | multilingue (99 idiomas) | 30 s | MIT (pesos originales) | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | no disponible en la informacion | multilingue | 30 s | MIT (pesos originales) | HuggingFace |
-| Ajustes ASR especificos de yoruba | no disponible | yo (y variantes) | no disponible | variable | HuggingFace |
+| whisper-medium-yecs-baseline | 763.857.920 | yo, en | 30 s (nativo Whisper) | NOODL-1.0 | Hugging Face, 0 descargas |
+| openai/whisper-medium | 763.857.920 | multilingue (99 idiomas) | 30 s | MIT (pesos originales) | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | no disponible en la informacion | multilingue | 30 s | MIT (pesos originales) | Hugging Face |
+| Ajustes ASR especificos de yoruba | no disponible | yo (y variantes) | no disponible | variable | Hugging Face |
 
 La comparacion cuantitativa de rendimiento con alternativas no esta disponible: el autor no publica WER del modelo base ni de otros sistemas sobre YECS. La ventaja declarada es la especializacion en code-switching yoruba-ingles; la desventaja frente a whisper-medium original es la perdida de cobertura de los ~99 idiomas de Whisper y una licencia mas restrictiva.
 
@@ -95,6 +95,6 @@ La comparacion cuantitativa de rendimiento con alternativas no esta disponible: 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/robello2/whisper-medium-yecs-baseline
+- Hugging Face: https://huggingface.co/robello2/whisper-medium-yecs-baseline
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-General es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado en HuggingFace por el usuario acatwithflowercrown. No es un modelo completo, sino un ajuste fino de bajo rango que se aplica sobre el modelo base inclusionAI/Ming-Image-0.1-Design, un modelo de difusion para generacion de imagenes a partir de texto. El adaptador se distribuye en formato diffusers y su licencia declarada es Apache 2.0.
+General es un adaptador LoRA (Low-Rank Adaptation) de texto a imagen publicado en Hugging Face por el usuario acatwithflowercrown. No es un modelo completo, sino un ajuste fino de bajo rango que se aplica sobre el modelo base inclusionAI/Ming-Image-0.1-Design, un modelo de difusion para generacion de imagenes a partir de texto. El adaptador se distribuye en formato diffusers y su licencia declarada es Apache 2.0.
 
 La relevancia de este tipo de artefacto reside en que permite especializar un modelo de difusion generico hacia un estilo o dominio concreto sin reentrenar la red completa, reduciendo drasticamente el coste de computo y el tamano del fichero resultante. En este caso, la model card del autor apenas aporta informacion tecnica: no se especifica el rango del LoRA, el dataset de entrenamiento, el prompt de instancia (aparece como `null`) ni el numero de pasos de entrenamiento.
 
@@ -78,6 +78,6 @@ No disponible. No se dispone de datos de parametros, contexto ni rendimiento de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/acatwithflowercrown/General
+- Modelo en Hugging Face: https://huggingface.co/acatwithflowercrown/General
 - Modelo base: https://huggingface.co/inclusionAI/Ming-Image-0.1-Design
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las URL devueltas (drawgpt.ai, makecorn.com, flora.ai, gendia.ai) son plataformas genericas de generacion de imagenes sin relacion con este adaptador ni con su modelo base.

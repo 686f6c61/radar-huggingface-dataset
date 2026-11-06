@@ -66,7 +66,7 @@ No se reportan tasas de exito, recompensas medias ni curvas de aprendizaje en la
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ravediamond/turbovla_so101_bowls_faithful_patha` | no disponible | no disponible | Ignora la instruccion en SO-101 bowls (0,020° de desplazamiento) | DINOv3 License | Pesos `.pth` en HuggingFace, 0 descargas |
+| `ravediamond/turbovla_so101_bowls_faithful_patha` | no disponible | no disponible | Ignora la instruccion en SO-101 bowls (0,020° de desplazamiento) | DINOv3 License | Pesos `.pth` en Hugging Face, 0 descargas |
 | `H-EmbodVis/TurboVLA` (checkpoint LIBERO) | no disponible | no disponible | Sensible a la instruccion en LIBERO-Goal (0,105 unidades normalizadas) | DINOv3 License | Checkpoint publicado por el autor original |
 | Otros VLA de robotica de proposito general | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos suficientes para comparar con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ravediamond/turbovla_so101_bowls_faithful_patha
+- Modelo en Hugging Face: https://huggingface.co/ravediamond/turbovla_so101_bowls_faithful_patha
 - Modelo base: https://huggingface.co/H-EmbodVis/TurboVLA
 - Licencia DINOv3: https://huggingface.co/H-EmbodVis/TurboVLA/blob/main/DINOv3_LICENSE.md
 - Dataset de entrenamiento: https://huggingface.co/datasets/ravediamond/so101_bowls_all_trimmed

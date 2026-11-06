@@ -93,7 +93,7 @@ No se dispone de informacion suficiente para comparar con alternativas de otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/INCModel4/Ministral-3-8B-Reasoning-2512-W4A16-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/INCModel4/Ministral-3-8B-Reasoning-2512-W4A16-AutoRound
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-8B-Reasoning-2512
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor

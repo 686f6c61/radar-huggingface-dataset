@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/phyloforfun/lm3_ruler_classifier__dinov3_vits16_tile_four_896_mlp)
+- [Modelo en Hugging Face](https://huggingface.co/phyloforfun/lm3_ruler_classifier__dinov3_vits16_tile_four_896_mlp)
 - [Modelo base: facebook/dinov3-vits16-pretrain-lvd1689m](https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m)
 - Paper de referencia (arXiv:2508.10104): https://arxiv.org/abs/2508.10104
 - Licencia DINOv3: `LICENSE.md` en el repositorio del modelo

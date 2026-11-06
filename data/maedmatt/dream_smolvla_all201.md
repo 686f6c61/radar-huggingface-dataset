@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `maedmatt/DREAM_SmolVLA_all201` es un policy de robótica basado en SmolVLA, un modelo visión-lenguaje-acción (VLA) compacto y eficiente desarrollado por HuggingFace, que permite desplegar control robótico en hardware de consumo. Este checkpoint concreto es un fine-tuning del modelo base `lerobot/smolvla_base` sobre un dataset propio de 201 episodios, con 105.529 frames, para la tarea "Fill the pyramid with circles" (rellenar la pirámide con círculos). El modelo fue entrenado con LeRobot 0.6.2 y está pensado para ser ejecutado en un robot tipo `so_follower` con tres cámaras.
+El modelo `maedmatt/DREAM_SmolVLA_all201` es un policy de robótica basado en SmolVLA, un modelo visión-lenguaje-acción (VLA) compacto y eficiente desarrollado por Hugging Face, que permite desplegar control robótico en hardware de consumo. Este checkpoint concreto es un fine-tuning del modelo base `lerobot/smolvla_base` sobre un dataset propio de 201 episodios, con 105.529 frames, para la tarea "Fill the pyramid with circles" (rellenar la pirámide con círculos). El modelo fue entrenado con LeRobot 0.6.2 y está pensado para ser ejecutado en un robot tipo `so_follower` con tres cámaras.
 
 Con 450 millones de parámetros (450.046.176 exactamente), este modelo es significativamente más pequeño que otros VLA como OpenVLA (7B) o RT-2 (55B), lo que lo hace adecuado para GPUs de gama media y despliegue en tiempo real. Su arquitectura combina un codificador visual, un modelo de lenguaje y un MLP de acción, generando comandos de acción de 6 dimensiones a partir de observaciones de estado y tres imágenes de 256x256. La licencia Apache 2.0 permite uso comercial sin restricciones.
 
@@ -72,7 +72,7 @@ No se dispone de comparativas oficiales en la información proporcionada. Sin em
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/maedmatt/DREAM_SmolVLA_all201)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/maedmatt/DREAM_SmolVLA_all201)
 - [Paper de SmolVLA (arXiv:2506.01844)](https://huggingface.co/papers/2506.01844)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/maedmatt/DREAM-pyramid-circles)
 - [Modelo base lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

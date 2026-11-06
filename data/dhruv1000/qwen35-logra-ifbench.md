@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio no es una ficha de modelo al uso, sino un archivo de investigación publicado en HuggingFace bajo el identificador `Dhruv1000/qwen35-logra-ifbench`. Contiene el código, las evidencias y el borrador de manuscrito de un proyecto que estudia dos cosas: si un puerto de una sola GPU del optimizador LoGRA (Zhang et al., arXiv:2610.06647) puede entrenar Qwen3.5-0.8B con RLVR/GRPO sobre restricciones de seguimiento de instrucciones, y hasta qué punto son fiables los verificadores de IFEval, IFBench e IF-RLVR. El autor lo describe explícitamente como repositorio de investigación privado, con un manuscrito no enviado y sin revisión por pares.
+Este repositorio no es una ficha de modelo al uso, sino un archivo de investigación publicado en Hugging Face bajo el identificador `Dhruv1000/qwen35-logra-ifbench`. Contiene el código, las evidencias y el borrador de manuscrito de un proyecto que estudia dos cosas: si un puerto de una sola GPU del optimizador LoGRA (Zhang et al., arXiv:2610.06647) puede entrenar Qwen3.5-0.8B con RLVR/GRPO sobre restricciones de seguimiento de instrucciones, y hasta qué punto son fiables los verificadores de IFEval, IFBench e IF-RLVR. El autor lo describe explícitamente como repositorio de investigación privado, con un manuscrito no enviado y sin revisión por pares.
 
 El modelo base es Qwen3.5-0.8B, un transformer híbrido de 752.393.024 parámetros únicos con 18 capas Gated-DeltaNet (atención lineal) y 6 capas de atención completa, con embeddings atados. LoGRA sustituye el adaptador de LoRA por un esquema de *sketches* de gradiente de bajo rango: la matriz de pesos base permanece congelada, cada retropropagación se proyecta con una matriz aleatoria `A` de rango `r` para obtener `S = G·Aᵀ`, y un optimizador tipo RowAdam convierte el sketch acumulado en una actualización `ΔW = U·A` que se escribe directamente en los pesos base.
 
@@ -17,9 +17,9 @@ La relevancia del artefacto no está en el rendimiento del modelo, que el propio
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la información proporcionada |
 | Tipos de cuantizacion | no disponible; el repositorio no documenta pesos cuantizados |
-| Idiomas soportados | no disponibles (los metadatos de HuggingFace indican «no disponibles») |
+| Idiomas soportados | no disponibles (los metadatos de Hugging Face indican «no disponibles») |
 | Licencia | Apache 2.0 para el repositorio; la licencia aplicable al modelo base Qwen3.5-0.8B debe verificarse por separado y no se detalla en la información proporcionada |
-| Formato de pesos | no especificado en la información proporcionada; librería `transformers`; el método LoGRA escribe las actualizaciones en los pesos base en lugar de generar un adaptador independiente, aunque las etiquetas de HuggingFace incluyen `base_model:adapter:Qwen/Qwen3.5-0.8B` |
+| Formato de pesos | no especificado en la información proporcionada; librería `transformers`; el método LoGRA escribe las actualizaciones en los pesos base en lugar de generar un adaptador independiente, aunque las etiquetas de Hugging Face incluyen `base_model:adapter:Qwen/Qwen3.5-0.8B` |
 
 ## Arquitectura y entrenamiento
 
@@ -71,15 +71,15 @@ El único material cuantitativo verificable es el alcance de la auditoría de ve
 - Entrenamiento: el autor reporta 4,57 horas-GPU L4 medidas sobre 32 directorios de ejecución, es decir, menos de una hora de media por ejecución en una NVIDIA L4 de 24 GB.
 - GPU recomendadas: L4 o equivalente para el entrenamiento reportado; cualquier GPU con 8 GB o más para inferencia en precisión nativa del modelo base.
 - Cabe en GPU de consumo: sí, el tamaño del modelo base (0,8B) permite inferencia en tarjetas de 6-8 GB; el repositorio, de 8,9 GB, incluye checkpoints y material de archivo adicional que no necesita residir en VRAM.
-- Opciones de despliegue: no documentadas en el repositorio; las etiquetas de HuggingFace incluyen `transformers` y `endpoints_compatible`. No se verifica en la información proporcionada compatibilidad con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: no documentadas en el repositorio; las etiquetas de Hugging Face incluyen `transformers` y `endpoints_compatible`. No se verifica en la información proporcionada compatibilidad con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo o artefacto | Parametros | Contexto | Resultado reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3.5-0.8B + LoGRA + IFBench) | 752 M (base) | no disponible | RL exploratorio, sin conclusión sobre exactitud; contribución principal es la auditoría de verificadores | Apache 2.0 (repositorio) | HuggingFace, 0 descargas y 0 likes |
-| Qwen3.5-0.8B (modelo base) | 752 M | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Referenciado como `base_model` en HuggingFace |
+| Este repositorio (Qwen3.5-0.8B + LoGRA + IFBench) | 752 M (base) | no disponible | RL exploratorio, sin conclusión sobre exactitud; contribución principal es la auditoría de verificadores | Apache 2.0 (repositorio) | Hugging Face, 0 descargas y 0 likes |
+| Qwen3.5-0.8B (modelo base) | 752 M | no disponible | no disponible en la información proporcionada | no disponible en la información proporcionada | Referenciado como `base_model` en Hugging Face |
 | LoGRA original (NVIDIA, Zhang et al.) | no aplica | no aplica | Método completo, incluido el controlador de pasos por KL predicho | no disponible en la información proporcionada | Artículo arXiv:2610.06647; referencia de implementación |
 | LoRA / QLoRA + GRPO (alternativa evaluada) | adaptadores de bajo rango | no aplica | Comparación con LoGRA inconclusa en este proyecto | no aplica | Estándar ampliamente disponible |
 

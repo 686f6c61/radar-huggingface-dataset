@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su aplicación para la investigación del
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de la arquitectura de `openai/whisper-base`, un transformer encoder-decoder originalmente diseñado para reconocimiento de voz. En este caso, se ha adaptado para una tarea de clasificación de audio: el encoder procesa la señal de audio (muestreada a 16 kHz, mono, con una duración máxima de 2 segundos) y la salida se proyecta a un espacio de dos clases (`Derhotic` y `Rhotic`). El fine-tuning se realizó sobre el dataset PERCEPT-R, que forma parte del benchmark ChildVox. No se especifican detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. La implementación incluye un wrapper (`WhisperWrapper`) que permite cargar el modelo desde HuggingFace y extraer tanto logits como embeddings intermedios.
+El modelo parte de la arquitectura de `openai/whisper-base`, un transformer encoder-decoder originalmente diseñado para reconocimiento de voz. En este caso, se ha adaptado para una tarea de clasificación de audio: el encoder procesa la señal de audio (muestreada a 16 kHz, mono, con una duración máxima de 2 segundos) y la salida se proyecta a un espacio de dos clases (`Derhotic` y `Rhotic`). El fine-tuning se realizó sobre el dataset PERCEPT-R, que forma parte del benchmark ChildVox. No se especifican detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el uso de técnicas como RLHF o DPO. La implementación incluye un wrapper (`WhisperWrapper`) que permite cargar el modelo desde Hugging Face y extraer tanto logits como embeddings intermedios.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ El modelo parte de la arquitectura de `openai/whisper-base`, un transformer enco
 - Extracción de embeddings: el modelo puede devolver representaciones intermedias (`return_feature=True`), útiles para análisis posteriores o tareas de representación.
 - Procesamiento de audio de corta duración: optimizado para segmentos de hasta 2 segundos, típicos de lectura de palabras por niños.
 - Multilingüe: aunque la tarea es específica del sonido /ɹ/, el modelo base es multilingüe, lo que podría permitir su aplicación en distintos idiomas (no verificado).
-- Integración con Transformers: compatible con el pipeline `audio-classification` de HuggingFace.
+- Integración con Transformers: compatible con el pipeline `audio-classification` de Hugging Face.
 
 ## Casos de uso
 
@@ -67,8 +67,8 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tiantiaf/childvox-percept_r-whisper-base
+- Modelo en Hugging Face: https://huggingface.co/tiantiaf/childvox-percept_r-whisper-base
 - Paper (arXiv): https://arxiv.org/abs/2605.29257
 - Repositorio GitHub: https://github.com/tiantiaf0627/childvox-release
 - Página del proyecto ChildVox: https://tiantiaf0627.github.io/childvox/
-- Colección ChildVox en HuggingFace: https://huggingface.co/collections/tiantiaf/childvox
+- Colección ChildVox en Hugging Face: https://huggingface.co/collections/tiantiaf/childvox

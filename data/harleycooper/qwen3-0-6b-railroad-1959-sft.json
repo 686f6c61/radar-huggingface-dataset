@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "HarleyCooper/qwen3-0.6b-railroad-1959-sft",
+  "slug": "harleycooper-qwen3-0-6b-railroad-1959-sft",
+  "author": "HarleyCooper",
+  "url": "https://huggingface.co/HarleyCooper/qwen3-0.6b-railroad-1959-sft",
+  "created_at": "2026-11-03T22:20:58.000Z",
+  "updated_at": "2026-11-03T23:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "ml-intern",
+    "volume2gym",
+    "railroad",
+    "sft",
+    "conversational",
+    "dataset:HarleyCooper/volume2gym-railroad-1959",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 313,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203563651,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HarleyCooper/qwen3-0.6b-railroad-1959-sft · Hugging Face",
+      "url": "https://huggingface.co/HarleyCooper/qwen3-0.6b-railroad-1959-sft",
+      "snippet": "Text Generation model with 0.6B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Qwen3-RailroadEngineer1959-RL-lfs-archive/huggingface_space at main ...",
+      "url": "https://github.com/HarleyCoops/Qwen3-RailroadEngineer1959-RL-lfs-archive/tree/main/huggingface_space",
+      "snippet": "Model Description This model is a reinforcement learning (RL) fine-tuned version of Qwen/Qwen3-0.6B, trained specifically for Dakota language grammar and translation tasks using compositional reward functions on non-coding tasks. This represents a test of the RL pipeline's effectiveness for complex, multi-component reward structures in linguistic domains."
+    }
+  ]
+}

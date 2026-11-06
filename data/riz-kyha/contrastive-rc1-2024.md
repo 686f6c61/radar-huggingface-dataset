@@ -27,7 +27,7 @@ Su relevancia es, por tanto, limitada y acotada: sirve como material didáctico 
 | Optimizador por defecto | LAMB con planificador exponencial |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-09-13 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-13 |
 
 ## Arquitectura y entrenamiento
 
@@ -96,5 +96,5 @@ No se dispone en la informacion proporcionada de cifras verificables de parametr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/riz-kyha/contrastive-rc1-2024
+- Modelo en Hugging Face: https://huggingface.co/riz-kyha/contrastive-rc1-2024
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (los resultados obtenidos correspondian a contenidos sin relacion, sobre el alimento arroz). No se dispone de paper, blog, repositorio adicional ni demo asociados al modelo en la informacion proporcionada.

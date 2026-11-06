@@ -44,7 +44,7 @@ Los unicos datos de entrenamiento documentados en la model card son el identific
 - Investigacion sobre checkpoints tempranos: al estar exportado en el paso 2, permite analizar el efecto de un ajuste minimo sobre los pesos y compararlo con checkpoints posteriores del mismo run, si el autor los publica.
 - Pruebas de infraestructura de despliegue con adaptadores: util para validar pipelines de serving que soportan LoRA en caliente (vLLM con `--enable-lora`, TGI, FriendliAI, PEFT) sin necesidad de fusionar pesos.
 - Generacion de datos sinteticos de matematicas: puede emplearse como generador auxiliar de soluciones paso a paso para aumentar datasets de entrenamiento, sujeto a revision humana por el riesgo de alucinacion en cadenas largas.
-- Docencia y divulgacion: como ejemplo practico de como se publica un adaptador LoRA en HuggingFace y de las diferencias entre adaptador y modelo fusionado.
+- Docencia y divulgacion: como ejemplo practico de como se publica un adaptador LoRA en Hugging Face y de las diferencias entre adaptador y modelo fusionado.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ttrl-aime2026-sc-4b (este adaptador) | Adaptador LoRA r16/a32 (repo 0,1 GB) | No disponible | No disponible | 0 descargas, 0 likes en HuggingFace |
+| ttrl-aime2026-sc-4b (este adaptador) | Adaptador LoRA r16/a32 (repo 0,1 GB) | No disponible | No disponible | 0 descargas, 0 likes en Hugging Face |
 | Qwen/Qwen3-4B (modelo base) | ~4 000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Modelo publico de referencia del que depende este adaptador |
 | Otros adaptadores LoRA de matematicas sobre Qwen3-4B | No disponible | No disponible | No disponible | No se han identificado alternativas concretas en los resultados de busqueda |
 
@@ -83,7 +83,7 @@ La comparacion es estructural, no de rendimiento: no existen metricas publicadas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/talzoomanzoo/ttrl-aime2026-sc-4b
+- Modelo en Hugging Face: https://huggingface.co/talzoomanzoo/ttrl-aime2026-sc-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset asociado del autor: https://huggingface.co/datasets/talzoomanzoo/aime26
 - Perfil del autor (Minju Gwak): https://huggingface.co/talzoomanzoo/datasets

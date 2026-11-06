@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FINE_InternVLA_N1_R2R_100 | 8,61 B | no disponible | VLN-CE (R2R-CE) | Apache-2.0 | HuggingFace (kangnguyen) |
-| InternVLA-N1-DualVLN (base) | no disponible | no disponible | VLN-CE | no disponible en la información | HuggingFace (InternRobotics) |
-| Qwen2.5-VL-7B-Instruct | 7 B aprox. | no disponible | VLM general | no disponible en la información | HuggingFace (Qwen) |
+| FINE_InternVLA_N1_R2R_100 | 8,61 B | no disponible | VLN-CE (R2R-CE) | Apache-2.0 | Hugging Face (kangnguyen) |
+| InternVLA-N1-DualVLN (base) | no disponible | no disponible | VLN-CE | no disponible en la información | Hugging Face (InternRobotics) |
+| Qwen2.5-VL-7B-Instruct | 7 B aprox. | no disponible | VLM general | no disponible en la información | Hugging Face (Qwen) |
 
 La comparación con políticas de navegación alternativas (por ejemplo, variantes de VLN-CE basadas en modelos de lenguaje) no está disponible en la información proporcionada; el artículo referenciado es la fuente adecuada para una comparativa cuantitativa.
 
@@ -83,7 +83,7 @@ La comparación con políticas de navegación alternativas (por ejemplo, variant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kangnguyen/FINE_InternVLA_N1_R2R_100
+- Modelo en Hugging Face: https://huggingface.co/kangnguyen/FINE_InternVLA_N1_R2R_100
 - Modelo base: https://huggingface.co/InternRobotics/InternVLA-N1-DualVLN
 - Artículo arXiv: https://arxiv.org/abs/2609.32855
 - Página del proyecto FINE: https://finevln.github.io/

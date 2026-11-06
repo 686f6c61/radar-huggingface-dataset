@@ -20,7 +20,7 @@ Su relevancia es limitada y de nicho: se publica como artefacto de evaluacion co
 | Idiomas soportados | Italiano (`it`) declarado; el modelo base esta entrenado mayoritariamente en ingles |
 | Licencia | No disponible en la ficha del repositorio. El modelo base Gemma 2 se rige por los Terminos de Uso de Gemma de Google, que incluyen clausulas de uso comercial |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA), libreria `peft` |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tipo de pipeline | text-generation |
 
 ## Arquitectura y entrenamiento
@@ -72,7 +72,7 @@ La comparacion con Qwen2.5 y Llama 3.2 se basa en caracteristicas publicas de es
 ## Limitaciones y advertencias
 
 - Licencia no declarada en la ficha del repositorio: no es posible confirmar las condiciones de uso comercial sin consultar los Terminos de Uso de Gemma del modelo base, que imponen restricciones y obligaciones de atribucion.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar el adaptador, lo que complica la automatizacion de pipelines.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar el adaptador, lo que complica la automatizacion de pipelines.
 - Idiomas: solo se declara italiano; el rendimiento en castellano, catalan, gallego o euskera no esta documentado y probablemente sea inferior al del base.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de mejora frente al base, ni de degradacion en tareas generales. Cualquier uso en produccion requeriria una evaluacion propia previa.
 - Riesgo de alucinacion: inherente a un modelo de 2,6 B de parametros; la capacidad de razonamiento y de verificacion factual es limitada en comparacion con modelos de mayor tamano.
@@ -84,7 +84,7 @@ La comparacion con Qwen2.5 y Llama 3.2 se basa en caracteristicas publicas de es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-ft
+- Hugging Face: https://huggingface.co/praiselab-picuslab/benchmark-slm-fiven-gemma-2-2b-ft
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Libreria PEFT: https://github.com/huggingface/peft

@@ -91,7 +91,7 @@ La comparacion con alternativas de otros fabricantes (Llama, Gemma, Mistral de t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iAcloud/Qwen3-4B-Batch8-RBLN-0.11.0.post1
+- Repositorio Hugging Face: https://huggingface.co/iAcloud/Qwen3-4B-Batch8-RBLN-0.11.0.post1
 - Variante batch 1 (par A/B): https://huggingface.co/iAcloud/Qwen3-4B-RBLN-0.11.0.post1
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Variante FP8 oficial del modelo base: https://huggingface.co/Qwen/Qwen3-4B-FP8

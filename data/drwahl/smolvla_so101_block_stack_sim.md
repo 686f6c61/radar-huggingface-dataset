@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Base | Tarea | Método de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| drwahl/smolvla_so101_block_stack_sim | lerobot/smolvla_base | Apilado de bloques SO-101 en simulación | LoRA r=32 sobre backbone de lenguaje | apache-2.0 | HuggingFace |
-| drwahl/pi05_so101_block_stack_sim | Pi-0.5 | Apilado de bloques SO-101 en simulación, mismo protocolo | Ajuste completo (según model card) | no disponible | HuggingFace |
-| lerobot/smolvla_base | SmolVLM2 + action expert | VLA generalista de manipulación | Preentrenamiento | no disponible | HuggingFace |
+| drwahl/smolvla_so101_block_stack_sim | lerobot/smolvla_base | Apilado de bloques SO-101 en simulación | LoRA r=32 sobre backbone de lenguaje | apache-2.0 | Hugging Face |
+| drwahl/pi05_so101_block_stack_sim | Pi-0.5 | Apilado de bloques SO-101 en simulación, mismo protocolo | Ajuste completo (según model card) | no disponible | Hugging Face |
+| lerobot/smolvla_base | SmolVLM2 + action expert | VLA generalista de manipulación | Preentrenamiento | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estos modelos en la información proporcionada; la comparación se limita a base, tarea y método de ajuste.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drwahl/smolvla_so101_block_stack_sim
+- Modelo en Hugging Face: https://huggingface.co/drwahl/smolvla_so101_block_stack_sim
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/drwahl/so101_block_stack_sim
 - Modelo comparativo del mismo autor: https://huggingface.co/drwahl/pi05_so101_block_stack_sim

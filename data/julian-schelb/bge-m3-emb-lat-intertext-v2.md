@@ -78,8 +78,8 @@ La comparativa muestra que la v2 es una mejora directa de la v1 (mismo tamaño y
 
 ## Enlaces
 
-- [HuggingFace - modelo v2](https://huggingface.co/julian-schelb/bge-m3-emb-lat-intertext-v2)
-- [HuggingFace - modelo v1](https://huggingface.co/julian-schelb/bge-m3-emb-lat-intertext-v1)
+- [Hugging Face - modelo v2](https://huggingface.co/julian-schelb/bge-m3-emb-lat-intertext-v2)
+- [Hugging Face - modelo v1](https://huggingface.co/julian-schelb/bge-m3-emb-lat-intertext-v1)
 - [Paper arXiv (Loci Similes)](https://arxiv.org/abs/2601.07533)
 - [API de LociSimiles](https://julianschelb.github.io/locisimiles/api/)
 - [Documentación de BGE-M3](https://bge-model.com/bge/bge_m3.html)

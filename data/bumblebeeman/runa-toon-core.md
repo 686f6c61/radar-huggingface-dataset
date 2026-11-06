@@ -2,7 +2,7 @@
 
 ## Resumen
 
-runa-toon-core es un adaptador LoRA de personaje publicado por el usuario bumblebeeman (Robert Kryjak) en HuggingFace. No es un modelo de lenguaje ni un modelo fundacional: es un ajuste de bajo rango pensado para generar de forma consistente al personaje de ficción "Runa", una figura de dibujo animado para adultos. Se activa mediante la palabra clave `runaig` y se entrena sobre el modelo de difusión Krea 2 RAW, con la intención declarada de usarse en inferencia sobre Krea 2 Turbo o dark-beast-krea2.
+runa-toon-core es un adaptador LoRA de personaje publicado por el usuario bumblebeeman (Robert Kryjak) en Hugging Face. No es un modelo de lenguaje ni un modelo fundacional: es un ajuste de bajo rango pensado para generar de forma consistente al personaje de ficción "Runa", una figura de dibujo animado para adultos. Se activa mediante la palabra clave `runaig` y se entrena sobre el modelo de difusión Krea 2 RAW, con la intención declarada de usarse en inferencia sobre Krea 2 Turbo o dark-beast-krea2.
 
 El adaptador se entrenó con musubi-tuner sobre un conjunto de datos explícitamente SFW de solo 36 imágenes, con rango/alpha 32 y detenido en la época 26 de 30. El repositorio ocupa 0,5 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes", por lo que se trata de una publicación reciente y sin validación comunitaria todavía.
 
@@ -72,8 +72,8 @@ No existen datos de FID, CLIP score, similitud de personaje, consistencia entre 
 
 | Modelo | Tipo | Modelo base | Dataset | Rango/alpha | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| runa-toon-core (bumblebeeman) | LoRA de personaje | krea/Krea-2-Raw | 36 imagenes SFW, epoca 26/30 | 32 | other | Publico en HuggingFace, 0 descargas |
-| Runa (bumblebeeman) | Adaptador del mismo autor | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| runa-toon-core (bumblebeeman) | LoRA de personaje | krea/Krea-2-Raw | 36 imagenes SFW, epoca 26/30 | 32 | other | Publico en Hugging Face, 0 descargas |
+| Runa (bumblebeeman) | Adaptador del mismo autor | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 | Otros LoRAs de personaje sobre Krea 2 | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de terceros comparables en la informacion proporcionada. La unica referencia cercana es el modelo Runa del mismo autor, del que no se detallan especificaciones, por lo que no es posible establecer una comparacion tecnica rigurosa.
@@ -94,7 +94,7 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bumblebeeman/runa-toon-core
+- Modelo en Hugging Face: https://huggingface.co/bumblebeeman/runa-toon-core
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Otro modelo del mismo autor: https://huggingface.co/bumblebeeman/Runa
 - Perfil del autor: https://huggingface.co/bumblebeeman

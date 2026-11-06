@@ -67,7 +67,7 @@ No se dispone de una comparativa directa con otros modelos TTS en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ARKirby/my-genie-tts-models
+- Hugging Face: https://huggingface.co/ARKirby/my-genie-tts-models
 - Repositorio Genie-TTS (motor de inferencia): https://github.com/High-Logic/Genie-TTS
 - Repositorio Genie-TTS v4 (variante): https://github.com/Focalors2003/Genie-TTS_v4
 - Comparativa de modelos TTS (Artificial Analysis): https://artificialanalysis.ai/text-to-speech/models

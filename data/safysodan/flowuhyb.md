@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Flowuhyb` es un repositorio publicado en HuggingFace por el usuario `safysodan` bajo licencia Apache 2.0. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia y la etiqueta de region `us`. La model card no incluye descripcion, arquitectura, numero de parametros, datos de entrenamiento ni ejemplos de uso, y el campo de pipeline no esta declarado.
+`Flowuhyb` es un repositorio publicado en Hugging Face por el usuario `safysodan` bajo licencia Apache 2.0. La informacion publica disponible se limita a los metadatos del repositorio: identificador, autor, licencia y la etiqueta de region `us`. La model card no incluye descripcion, arquitectura, numero de parametros, datos de entrenamiento ni ejemplos de uso, y el campo de pipeline no esta declarado.
 
 No hay elementos para confirmar que el repositorio contenga pesos utilizables. Se desconoce el formato de los ficheros, la longitud de contexto, los idiomas soportados y el tipo de tarea para la que fue entrenado. El repositorio acumula cero descargas y cero "likes" en el momento de la consulta, y las busquedas web realizadas no han devuelto ningun resultado relacionado con el modelo, por lo que no existen evaluaciones de terceros ni referencias tecnicas externas.
 
@@ -87,7 +87,7 @@ No disponible. No es posible establecer una comparativa porque se desconocen el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/safysodan/Flowuhyb
+- Repositorio en Hugging Face: https://huggingface.co/safysodan/Flowuhyb
 - Model card del autor: no disponible (la model card solo contiene la declaracion de licencia Apache 2.0)
 - Paper tecnico: no disponible
 - Blog o anuncio de publicacion: no disponible

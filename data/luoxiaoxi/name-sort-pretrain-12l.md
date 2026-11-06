@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`name-sort-pretrain-12L` es un modelo de lenguaje pequeno de tipo GPT-2, con 113.775.360 parametros, desarrollado por el usuario Luoxiaoxi y publicado en HuggingFace. Se trata de un checkpoint base (pretrained) entrenado desde cero sobre las frases que sostienen una tarea sintetica de ordenacion de nombres, y forma parte de un banco de pruebas de circuitos con verdad de referencia (ground-truth circuits) destinado a evaluar metodos de descubrimiento de circuitos en redes neuronales. No es un modelo de proposito general ni un asistente: es un artefacto de investigacion.
+`name-sort-pretrain-12L` es un modelo de lenguaje pequeno de tipo GPT-2, con 113.775.360 parametros, desarrollado por el usuario Luoxiaoxi y publicado en Hugging Face. Se trata de un checkpoint base (pretrained) entrenado desde cero sobre las frases que sostienen una tarea sintetica de ordenacion de nombres, y forma parte de un banco de pruebas de circuitos con verdad de referencia (ground-truth circuits) destinado a evaluar metodos de descubrimiento de circuitos en redes neuronales. No es un modelo de proposito general ni un asistente: es un artefacto de investigacion.
 
 La arquitectura es un transformer decoder-only estilo GPT-2 de 12 capas, con tamano oculto de 768, 12 cabezas de atencion y MLP de 3072, y una longitud de contexto de 256 tokens. Emplea un tokenizador propio a nivel de palabra, `WhitespaceDigitTokenizer`, con un vocabulario de 37.139 entradas. El modelo se entreno durante 1.500 pasos con un tamano de lote de 64 y alcanzo una perdida final de entrenamiento de 2,46.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| name-sort-pretrain-12L | 113,7 M | 256 | perdida de entrenamiento 2,46 (tarea sintetica) | no disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 | benchmarks publicos de GPT-2 (no comparables directamente) | MIT | HuggingFace, OpenAI |
-| DistilGPT-2 | 82 M | 1024 | benchmarks publicos de destilacion GPT-2 | MIT | HuggingFace |
+| name-sort-pretrain-12L | 113,7 M | 256 | perdida de entrenamiento 2,46 (tarea sintetica) | no disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 | benchmarks publicos de GPT-2 (no comparables directamente) | MIT | Hugging Face, OpenAI |
+| DistilGPT-2 | 82 M | 1024 | benchmarks publicos de destilacion GPT-2 | MIT | Hugging Face |
 
 La comparacion con GPT-2 small es la mas cercana en tamano y arquitectura, pero es importante senalar que `name-sort-pretrain-12L` no persigue capacidades de lenguaje general, sino servir como base de una tarea sintetica de investigacion; su contexto (256) es cuatro veces menor que el de GPT-2 small y su vocabulario es un tokenizador de palabras personalizado, no el BPE de GPT-2. No se dispone de otros modelos comparables especificos para la tarea de descubrimiento de circuitos en la informacion proporcionada.
 
@@ -85,6 +85,6 @@ La comparacion con GPT-2 small es la mas cercana en tamano y arquitectura, pero 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luoxiaoxi/name-sort-pretrain-12L
+- Modelo en Hugging Face: https://huggingface.co/Luoxiaoxi/name-sort-pretrain-12L
 - Dataset de preentrenamiento: https://huggingface.co/datasets/Luoxiaoxi/synthetic-name-index-pretrain
 - Dataset de contrafactuales: https://huggingface.co/datasets/Luoxiaoxi/synthetic-name-index-counterfactual

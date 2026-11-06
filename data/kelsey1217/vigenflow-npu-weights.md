@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kelsey1217/vigenflow-npu-weights
+- Repositorio en Hugging Face: https://huggingface.co/Kelsey1217/vigenflow-npu-weights
 - Codigo, releases y configuracion (VigenFlow): https://github.com/jia1217/vigenflow
 - Modelo base FLUX.2-klein-4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Modelo base FLUX.1-schnell: https://huggingface.co/black-forest-labs/FLUX.1-schnell

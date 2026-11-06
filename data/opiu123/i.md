@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `opiu123/i` es un modelo alojado en HuggingFace por el usuario `opiu123`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia MIT: no se incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. La unica etiqueta tecnica presente es `region:us`, junto con la licencia.
+El repositorio `opiu123/i` es un modelo alojado en Hugging Face por el usuario `opiu123`. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia MIT: no se incluye descripcion, arquitectura, tamano, datos de entrenamiento ni ejemplos de uso. La unica etiqueta tecnica presente es `region:us`, junto con la licencia.
 
 La fecha de creacion y la de ultima actualizacion coinciden exactamente (2026-10-10T18:42:41.000Z), lo que sugiere un repositorio creado y no modificado posteriormente, compatible con un espacio de prueba, un placeholder o un artefacto subido sin documentar. No hay pipeline declarado (`no disponible`), no se listan idiomas soportados y no se especifica framework, formato de pesos ni tipo de tarea.
 
@@ -79,7 +79,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opiu123/i
+- Hugging Face: https://huggingface.co/opiu123/i
 - Model card del autor: sin contenido tecnico (unicamente `license: mit`)
 - Paper, blog, repositorio de codigo o demo: no disponibles
 - Resultados de busqueda web relacionados con este modelo o su autor: no disponibles

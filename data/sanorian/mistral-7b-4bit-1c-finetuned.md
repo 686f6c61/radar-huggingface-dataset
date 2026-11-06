@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Sanorian/Mistral-7B-4bit-1C-Finetuned es un repositorio de modelo publicado en HuggingFace por el usuario Sanorian. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tuning) sobre una base Mistral-7B con pesos cuantizados a 4 bits, si bien la model card no incluye ninguna descripción, no detalla el conjunto de datos de entrenamiento, no especifica el objetivo del ajuste y no aporta resultados de evaluación. La única información declarada de forma explícita por el autor es la licencia MIT.
+Sanorian/Mistral-7B-4bit-1C-Finetuned es un repositorio de modelo publicado en Hugging Face por el usuario Sanorian. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tuning) sobre una base Mistral-7B con pesos cuantizados a 4 bits, si bien la model card no incluye ninguna descripción, no detalla el conjunto de datos de entrenamiento, no especifica el objetivo del ajuste y no aporta resultados de evaluación. La única información declarada de forma explícita por el autor es la licencia MIT.
 
-El modelo registra cero descargas y cero likes en el momento de la consulta, y segun los metadatos de HuggingFace tanto la fecha de creación como la de última actualización corresponden al 10 de septiembre de 2026. No se ha publicado pipeline asociado, ni idiomas soportados, ni formatos de pesos alternativos.
+El modelo registra cero descargas y cero likes en el momento de la consulta, y segun los metadatos de Hugging Face tanto la fecha de creación como la de última actualización corresponden al 10 de septiembre de 2026. No se ha publicado pipeline asociado, ni idiomas soportados, ni formatos de pesos alternativos.
 
 En cuanto a su relevancia, no puede evaluarse a partir de la documentación disponible: no hay comparativas, ni métricas, ni descripción técnica que permita situarlo frente a otras alternativas de la misma categoría. Se trata, por tanto, de un repositorio que a día de hoy debe considerarse no documentado y no validado, útil únicamente como punto de partida para inspección directa de los ficheros de pesos.
 
@@ -89,6 +89,6 @@ La comparación se establece contra modelos base de referencia de tamaño equiva
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sanorian/Mistral-7B-4bit-1C-Finetuned
+- Repositorio en Hugging Face: https://huggingface.co/Sanorian/Mistral-7B-4bit-1C-Finetuned
 - Model card del autor: únicamente contiene la declaración de licencia MIT; no incluye paper, blog, repositorio de código ni demo.
 - No se han encontrado enlaces relevantes en la búsqueda web. Los resultados devueltos corresponden a páginas de soporte de Microsoft (inicio de sesión en Hotmail, cambio de frecuencia de refresco en Windows, descarga de ISO de Windows 8.1 y depreciación de Exchange Online EWS) y no guardan relación con el modelo.

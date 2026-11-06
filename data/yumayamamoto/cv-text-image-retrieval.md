@@ -67,5 +67,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yumayamamoto/cv-text-image-retrieval
+- Hugging Face: https://huggingface.co/yumayamamoto/cv-text-image-retrieval
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

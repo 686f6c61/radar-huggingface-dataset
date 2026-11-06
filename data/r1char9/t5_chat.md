@@ -2,7 +2,7 @@
 
 ## Resumen
 
-T5_chat es un ajuste fino del modelo ai-forever/ruT5-base, publicado por el usuario r1char9 en HuggingFace. Se trata de un modelo generativo de tipo encoder-decoder basado en la arquitectura T5, con 222.903.552 parametros, orientado a la generacion de respuestas conversacionales y texto libre en ruso. El autor lo describe como un modelo de generacion abierta que recibe un prompt (una pregunta o un turno de conversacion) y devuelve una continuacion o respuesta en lenguaje natural.
+T5_chat es un ajuste fino del modelo ai-forever/ruT5-base, publicado por el usuario r1char9 en Hugging Face. Se trata de un modelo generativo de tipo encoder-decoder basado en la arquitectura T5, con 222.903.552 parametros, orientado a la generacion de respuestas conversacionales y texto libre en ruso. El autor lo describe como un modelo de generacion abierta que recibe un prompt (una pregunta o un turno de conversacion) y devuelve una continuacion o respuesta en lenguaje natural.
 
 El modelo no introduce innovaciones arquitectonicas: reutiliza la estructura estandar de T5 (transformer encoder-decoder con embeddings posicionales relativos) y solo modifica los pesos mediante un ajuste fino sobre ruT5-base. Su relevancia practica es limitada y muy nicho: es un modelo pequeno (223 millones de parametros), con 17 descargas y 1 like en el momento de la ficha, pensado para experimentacion con generacion conversacional en ruso y para despliegues con recursos muy reducidos.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| r1char9/T5_chat | 222.903.552 | no disponible | ruso | MIT | HuggingFace |
-| ai-forever/ruT5-base | mismo orden (modelo base del que deriva) | no disponible | ruso | no disponible en la informacion proporcionada | HuggingFace |
-| Modelos conversacionales en ruso de la familia ruGPT/ruDialoGPT | no disponible | no disponible | ruso | no disponible | HuggingFace |
+| r1char9/T5_chat | 222.903.552 | no disponible | ruso | MIT | Hugging Face |
+| ai-forever/ruT5-base | mismo orden (modelo base del que deriva) | no disponible | ruso | no disponible en la informacion proporcionada | Hugging Face |
+| Modelos conversacionales en ruso de la familia ruGPT/ruDialoGPT | no disponible | no disponible | ruso | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada. La comparacion principal es directa: T5_chat es un ajuste fino de ruT5-base, por lo que comparte arquitectura y tamano con su modelo base y solo se diferencia en el ajuste conversacional.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r1char9/T5_chat
+- Modelo en Hugging Face: https://huggingface.co/r1char9/T5_chat
 - Modelo base: https://huggingface.co/ai-forever/ruT5-base
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes para este modelo (corresponden a foros de Snap!, MARVEL SNAP y Zhihu, sin relacion con el modelo).

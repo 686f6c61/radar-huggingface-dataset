@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Dimios45/yam-pick-duster-bspline-joint)
+- [Modelo en Hugging Face](https://huggingface.co/Dimios45/yam-pick-duster-bspline-joint)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Dimios45/yam-pick-duster)
 - [Modelo hermano de efector final](https://huggingface.co/Dimios45/yam-pick-duster-bspline-ee)
 - [Repositorio de parches de despliegue](https://huggingface.co/Dimios45/yam-duster-bspline-dp)

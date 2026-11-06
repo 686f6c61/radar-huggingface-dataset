@@ -2,7 +2,7 @@
 
 ## Resumen
 
-slmnegi es un modelo de lenguaje de tipo decoder-only desarrollado por Manish Negi (ArchiGen AI Labs) y publicado en HuggingFace bajo el identificador `negi4650/slmnegi`. Se trata de un SLM (Small Language Model) diseñado explícitamente para preentrenamiento e inferencia en entornos con memoria restringida (≤ 15 GB de VRAM), lo que lo sitúa en la franja de modelos que pueden ejecutarse en CPU, dispositivos embebidos o GPUs de gama baja sin cuantización agresiva.
+slmnegi es un modelo de lenguaje de tipo decoder-only desarrollado por Manish Negi (ArchiGen AI Labs) y publicado en Hugging Face bajo el identificador `negi4650/slmnegi`. Se trata de un SLM (Small Language Model) diseñado explícitamente para preentrenamiento e inferencia en entornos con memoria restringida (≤ 15 GB de VRAM), lo que lo sitúa en la franja de modelos que pueden ejecutarse en CPU, dispositivos embebidos o GPUs de gama baja sin cuantización agresiva.
 
 La arquitectura combina mecanismos estándar en modelos modernos: atención con Grouped-Query Attention (relación 4:1, 8 cabezas de consulta y 2 de clave/valor), embeddings posicionales rotatorios (RoPE), activaciones SwiGLU y un vocabulario propio de 32.000 tokens Byte-Level BPE. El modelo declara 8 capas, dimensión oculta 512 y dimensión de FFN 1536, con una ventana de contexto de 512 tokens.
 
@@ -77,7 +77,7 @@ Los datos de las alternativas provienen de información pública de sus respecti
 | slmnegi | 45,2 M declarados / 56,9 M en safetensors | 512 | Apache 2.0 | Sin benchmarks ni descargas; repo de 0,2 GB |
 | Pythia-70M | 70 M | 2.048 | Apache 2.0 | Suite con benchmarks publicados (EleutherAI) |
 | GPT-2 small | 124 M | 1.024 | MIT | Ampliamente evaluado y desplegado |
-| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | Benchmarks publicados por HuggingFace |
+| SmolLM-135M | 135 M | 2.048 | Apache 2.0 | Benchmarks publicados por Hugging Face |
 
 Frente a estas alternativas, slmnegi es el más pequeño en parámetros efectivos, pero también el único sin métricas de calidad publicadas y con la ventana de contexto más corta (512 tokens, frente a 1.024-2.048 de sus competidores). Su ventaja diferencial es el tamaño del artefacto y la documentación del proceso de preentrenamiento con presupuesto de memoria, no el rendimiento.
 
@@ -95,6 +95,6 @@ Frente a estas alternativas, slmnegi es el más pequeño en parámetros efectivo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/negi4650/slmnegi
+- Modelo en Hugging Face: https://huggingface.co/negi4650/slmnegi
 - Informe técnico (PDF alojado en el repositorio): https://huggingface.co/negi4650/slmnegi/blob/main/slmnegi_paper.pdf
 - Ficheros de pesos (safetensors): https://huggingface.co/negi4650/slmnegi/tree/main

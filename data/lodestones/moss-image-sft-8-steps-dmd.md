@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Pasos / CFG | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| lodestones/MOSS-Image-SFT-8-steps-dmd | 5,08 B (transformer) | 8 pasos, sin CFG | apache-2.0 | HuggingFace (0 descargas, 19 likes) |
-| OpenMOSS-Team/MOSS-Image-SFT | no disponible | 50 pasos, CFG 3 | no disponible | HuggingFace (repo base) |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | 5,08 B (transformer) | 8 pasos, sin CFG | apache-2.0 | Hugging Face (0 descargas, 19 likes) |
+| OpenMOSS-Team/MOSS-Image-SFT | no disponible | 50 pasos, CFG 3 | no disponible | Hugging Face (repo base) |
 
 No se dispone de informacion sobre otros modelos comparables (mismo tamano o misma tarea) en los datos proporcionados. El unico punto de comparacion solido es el propio modelo base, del que este checkpoint es una destilacion orientada a reducir el coste de inferencia.
 
@@ -88,7 +88,7 @@ No se dispone de informacion sobre otros modelos comparables (mismo tamano o mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd
+- Modelo en Hugging Face: https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Demo (Space): https://huggingface.co/spaces/hugging-apps/moss-image-8-step-dmd
 - Paper de data-space DMD: arXiv 2610.12102 (referenciado en la model card)

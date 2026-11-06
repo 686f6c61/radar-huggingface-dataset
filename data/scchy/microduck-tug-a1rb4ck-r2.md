@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada en el contexto de modelos de IA generati
 | Frecuencia de control | 50 Hz |
 | Libreria | microduck |
 | Pipeline | robotics |
-| Tamano del repositorio | 0.0 GB (reportado por HuggingFace) |
+| Tamano del repositorio | 0.0 GB (reportado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-tug-a1rb4ck-r2
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-tug-a1rb4ck-r2
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `challenge-recipe-publishing`, commit `1efd853be`
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del demonio de microduck

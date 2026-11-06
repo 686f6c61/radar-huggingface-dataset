@@ -95,7 +95,7 @@ No disponible. No se han proporcionado en la información datos de otros data po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait
+- Repositorio en Hugging Face: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait
 - Partición 0: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait/tree/p0of6
 - Partición 1: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait/tree/p1of6
 - Partición 2: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait/tree/p2of6
@@ -103,7 +103,7 @@ No disponible. No se han proporcionado en la información datos de otros data po
 - Partición 4: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait/tree/p4of6
 - Partición 5: https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait/tree/p5of6
 - Framework data-portraits: https://github.com/ruyimarone/data-portraits
-- Corpus indexado (Dolma 3, 6T): `allenai/dolma3_mix-6T-1025-7B` en HuggingFace
+- Corpus indexado (Dolma 3, 6T): `allenai/dolma3_mix-6T-1025-7B` en Hugging Face
 - Modelo asociado OLMo-3-1025-7B: https://huggingface.co/allenai/Olmo-3-1025-7B
 - Resumen del proyecto OLMo 3 (Open Source AI Map): https://www.aipotluck.org/product/olmo
 - Tutorial sobre OLMo 3 de AI2 (DigitalOcean): https://www.digitalocean.com/community/tutorials/olmo-3-allen-ai-open-source-llm

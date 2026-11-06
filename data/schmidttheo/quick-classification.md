@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Schmidttheo/quick-classification es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura etiquetada como Mocov3, orientada a tareas de clasificacion. El propio autor la describe como configuracion "nano" y la presenta explicitamente como material para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, pero el autor aclara que no ha sido entrenado ni auditado.
+Schmidttheo/quick-classification es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de una arquitectura etiquetada como Mocov3, orientada a tareas de clasificacion. El propio autor la describe como configuracion "nano" y la presenta explicitamente como material para revision de codigo, pruebas de humo (smoke tests) y experimentos pequenos y controlados, no como un modelo preentrenado listo para produccion. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, pero el autor aclara que no ha sido entrenado ni auditado.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de artefacto publicado sin resultados de benchmark y como plantilla reproducible para montar experimentos de clasificacion con una receta por defecto (optimizador adam con schedule de tipo step) registrada en `training_args.json`. No es un modelo para evaluar capacidades de lenguaje, razonamiento o generacion de codigo.
 
@@ -77,5 +77,5 @@ No disponible. El repositorio no incluye una linea base de capacidad equivalente
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/schmidttheo/quick-classification
+- Repositorio en Hugging Face: https://huggingface.co/schmidttheo/quick-classification
 - No se han encontrado en la busqueda web articulos, papers, blogs, repositorios auxiliares ni demos asociados a este modelo.

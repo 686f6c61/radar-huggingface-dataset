@@ -79,6 +79,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: [bobtehbuilder/tds-ga8-carbon-1ec70e31b66f](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-1ec70e31b66f)
+- Repositorio Hugging Face: [bobtehbuilder/tds-ga8-carbon-1ec70e31b66f](https://huggingface.co/bobtehbuilder/tds-ga8-carbon-1ec70e31b66f)
 - Herramienta de medicion de emisiones: [Codecarbon](https://codecarbon.io/)
 - No se han encontrado otros enlaces relevantes (papers, blogs o repositorios asociados) en la busqueda web.

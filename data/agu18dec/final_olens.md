@@ -18,12 +18,12 @@ Su relevancia es experimental: es un artefacto de investigación sobre *activati
 | Longitud de contexto | Lectura sobre un unico vector residual (una posicion); las lecturas se generan con hasta 128 tokens nuevos; el AR se entreno con spans de 1–32 tokens (media ~16,5) y solo puntua los primeros 32 tokens de una lectura. Contexto del modelo base: no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible; el repo solo publica tensores entrenables en safetensors, sin variantes GGUF/AWQ/GPTQ |
 | Idiomas soportados | No disponibles |
-| Licencia | No disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | No disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | safetensors (`model.safetensors` por carpeta) + `export.json` con la configuracion exacta de entrenamiento |
 | Modelo base | Qwen/Qwen3.6-27B, revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9` |
 | Capas accesibles | 64 (0–63); el vector residual es la salida del bloque decodificador L antes de la RMSNorm final |
 | Dimension del vector residual | 5120 (segun el ejemplo del quickstart) |
-| Tamano del repo | 2,4 GB en HuggingFace; ~1,5 GB de descarga segun el autor, mas el modelo base |
+| Tamano del repo | 2,4 GB en Hugging Face; ~1,5 GB de descarga segun el autor, mas el modelo base |
 | Dependencias | torch 2.9.1, transformers 5.11.0, peft 0.19.1, safetensors, flash-linear-attention 0.5.1 |
 
 ## Arquitectura y entrenamiento
@@ -106,7 +106,7 @@ No se han identificado en la información disponible lentes de activaciones púb
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agu18dec/final_olens
+- Modelo en Hugging Face: https://huggingface.co/agu18dec/final_olens
 - Repo hermano `olens_and_ar`: https://huggingface.co/agu18dec/olens_and_ar
 - `oracle-lens`: https://huggingface.co/agu18dec/oracle-lens
 - Endpoint de inferencia de `oracle-lens-ddp600` en FriendliAI: https://friendli.ai/models/agu18dec/oracle-lens-ddp600

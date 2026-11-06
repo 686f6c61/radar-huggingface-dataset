@@ -96,9 +96,9 @@ Reproducibilidad según la vía de ejecución (mismos conjuntos de prueba):
 
 | Modelo | Parametros | Entrada | Contexto | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| ko-hand-ocr-vl | 873M | Imagen completa o recorte de línea | 8.192 tokens (config. recomendada), imagen hasta 4.096 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF |
-| ko-hand-ocr | 41M | Solo línea ya recortada | No disponible | No disponible | HuggingFace (localdeel/ko-hand-ocr) |
-| Qwen3.5-0.8B (base) | 0.8B | Imagen y texto, uso general | No disponible | Apache-2.0 | HuggingFace |
+| ko-hand-ocr-vl | 873M | Imagen completa o recorte de línea | 8.192 tokens (config. recomendada), imagen hasta 4.096 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF |
+| ko-hand-ocr | 41M | Solo línea ya recortada | No disponible | No disponible | Hugging Face (localdeel/ko-hand-ocr) |
+| Qwen3.5-0.8B (base) | 0.8B | Imagen y texto, uso general | No disponible | Apache-2.0 | Hugging Face |
 
 Según el autor, ko-hand-ocr (41M) sigue siendo más preciso que este modelo cuando se trata de leer una única línea ya recortada, mientras que ko-hand-ocr-vl es el adecuado cuando se parte de la fotografía completa. El autor ha anunciado una comparativa contra otros seis motores de OCR que se publicará junto con la versión final; esos resultados no están disponibles todavía.
 
@@ -116,7 +116,7 @@ Según el autor, ko-hand-ocr (41M) sigue siendo más preciso que este modelo cua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localdeel/ko-hand-ocr-vl
+- Modelo en Hugging Face: https://huggingface.co/localdeel/ko-hand-ocr-vl
 - Pesos GGUF: https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo hermano de 41M para líneas recortadas: https://huggingface.co/localdeel/ko-hand-ocr

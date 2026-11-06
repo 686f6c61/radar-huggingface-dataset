@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo comparable con otros sistemas de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/enzolefebvre/neural-architecture-search
+- Repositorio en Hugging Face: https://huggingface.co/enzolefebvre/neural-architecture-search
 - Articulo de referencia sobre NAS: https://arxiv.org/abs/2301.08727
 - Revision sistematica sobre NAS: https://link.springer.com/article/10.1007/s10462-024-11058-w
 - Entrada de Wikipedia sobre NAS: https://en.wikipedia.org/wiki/Neural_architecture_search

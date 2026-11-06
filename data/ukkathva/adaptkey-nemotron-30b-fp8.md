@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AdaptKey-Nemotron-30b-FP8 es una version cuantizada en FP8 del modelo AdaptKey/AdaptKey-Nemotron-30b, publicada por el usuario ukkathva en HuggingFace. Se trata de un modelo de lenguaje causal (Causal Language Model) orientado a generacion de texto en ingles, cuyo unico proposito declarado es reducir la huella de memoria y maximizar la velocidad de inferencia respecto al modelo base en FP16/BF16. La cuantizacion se ha realizado con `llmcompressor` de Neural Magic aplicando el esquema `FP8_DYNAMIC` a todas las capas `Linear`, dejando fuera la capa `lm_head` para preservar la maxima precision en la proyeccion de salida.
+AdaptKey-Nemotron-30b-FP8 es una version cuantizada en FP8 del modelo AdaptKey/AdaptKey-Nemotron-30b, publicada por el usuario ukkathva en Hugging Face. Se trata de un modelo de lenguaje causal (Causal Language Model) orientado a generacion de texto en ingles, cuyo unico proposito declarado es reducir la huella de memoria y maximizar la velocidad de inferencia respecto al modelo base en FP16/BF16. La cuantizacion se ha realizado con `llmcompressor` de Neural Magic aplicando el esquema `FP8_DYNAMIC` a todas las capas `Linear`, dejando fuera la capa `lm_head` para preservar la maxima precision en la proyeccion de salida.
 
 El modelo esta pensado para servirse con vLLM sobre GPUs con soporte de FP8 nativo, es decir, NVIDIA H100, A100 y la serie RTX 40. La nomenclatura del nombre sugiere un tamano de aproximadamente 30.000 millones de parametros, coherente con la familia Nemotron, aunque la model card no confirma el numero exacto de parametros, la longitud de contexto ni la composicion del dataset de entrenamiento del modelo original. Tampoco se especifica la licencia.
 
@@ -73,8 +73,8 @@ No se dispone de informacion suficiente para comparar con modelos alternativos v
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ukkathva/AdaptKey-Nemotron-30b-FP8 | no disponible (~30B segun nombre) | no disponible | FP8 dynamic | no disponible | HuggingFace, 0 descargas |
-| AdaptKey/AdaptKey-Nemotron-30b | no disponible (~30B segun nombre) | no disponible | BF16/FP16 (no confirmado) | no disponible | HuggingFace (repositorio del autor original) |
+| ukkathva/AdaptKey-Nemotron-30b-FP8 | no disponible (~30B segun nombre) | no disponible | FP8 dynamic | no disponible | Hugging Face, 0 descargas |
+| AdaptKey/AdaptKey-Nemotron-30b | no disponible (~30B segun nombre) | no disponible | BF16/FP16 (no confirmado) | no disponible | Hugging Face (repositorio del autor original) |
 | Alternativas de ~30B en FP8 (por ejemplo, versiones FP8 de familias Llama, Qwen o Nemotron) | no disponible | no disponible | FP8 | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables con datos verificables de parametros, contexto, rendimiento y licencia.
@@ -96,7 +96,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ukkathva/AdaptKey-Nemotron-30b-FP8
+- Modelo en Hugging Face: https://huggingface.co/ukkathva/AdaptKey-Nemotron-30b-FP8
 - Modelo base: https://huggingface.co/AdaptKey/AdaptKey-Nemotron-30b
 - Repositorio de llmcompressor (Neural Magic): https://github.com/neuralmagic/llmcompressor
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

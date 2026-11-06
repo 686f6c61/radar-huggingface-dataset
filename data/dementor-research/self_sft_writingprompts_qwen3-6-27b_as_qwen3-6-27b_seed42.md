@@ -74,6 +74,6 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dementor-research/self_sft_writingprompts_qwen3.6-27b_as_qwen3.6-27b_seed42
+- Repositorio en Hugging Face: https://huggingface.co/dementor-research/self_sft_writingprompts_qwen3.6-27b_as_qwen3.6-27b_seed42
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B (referencia indirecta, no confirmada en la informacion proporcionada)

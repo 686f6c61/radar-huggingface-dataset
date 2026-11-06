@@ -73,8 +73,8 @@ No se dispone de modelos comparables directamente en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-kongi-v1 | 0.8B (base) + LoRA | No disponible | 74,8% en test del simulador | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base sin ajustar) | 0.8B | No disponible | 32,3% en test del simulador | No disponible en la informacion | HuggingFace |
+| connectailab-rl-kongi-v1 | 0.8B (base) + LoRA | No disponible | 74,8% en test del simulador | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base sin ajustar) | 0.8B | No disponible | 32,3% en test del simulador | No disponible en la informacion | Hugging Face |
 | Policy profesor PPO del simulador | No disponible (modelo pequeno) | No disponible | Superior al modelo ajustado segun el autor, sin cifras | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de modelos comparables directamente en la informacion proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v1
+- Modelo en Hugging Face: https://huggingface.co/kyoungsim/connectailab-rl-kongi-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

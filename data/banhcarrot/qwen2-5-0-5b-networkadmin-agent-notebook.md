@@ -4,7 +4,7 @@
 
 El modelo `banhcarrot/qwen2.5-0.5b-networkadmin-agent-notebook` es un ajuste fino (SFT) del modelo base `banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged`, que a su vez deriva de Qwen2.5-0.5B. Se trata de un modelo especializado en administración de redes sobre Cisco IOS mediante tool calling, con un total de 494 millones de parámetros. Lo desarrolla el usuario banhcarrot y su objetivo es servir como agente capaz de decidir cuándo invocar herramientas (`show vlan brief`, `show ip interface brief`, etc.) y cuándo responder, emitiendo decisiones en formato JSON.
 
-El repositorio de HuggingFace no contiene una model card convencional, sino la descripción de un cuaderno de Google Colab (`network_admin_agent_test.ipynb`) que actúa como banco de pruebas del agente. El cuaderno incluye un emulador de red Cisco IOS (`CiscoNetworkEmulator`) que reemplaza a Netmiko, intercepta los comandos `show` que decide ejecutar el agente y devuelve texto CLI simulado. De este modo, el modelo se puede evaluar sin acceso a equipos reales.
+El repositorio de Hugging Face no contiene una model card convencional, sino la descripción de un cuaderno de Google Colab (`network_admin_agent_test.ipynb`) que actúa como banco de pruebas del agente. El cuaderno incluye un emulador de red Cisco IOS (`CiscoNetworkEmulator`) que reemplaza a Netmiko, intercepta los comandos `show` que decide ejecutar el agente y devuelve texto CLI simulado. De este modo, el modelo se puede evaluar sin acceso a equipos reales.
 
 Es relevante como ejemplo de ajuste fino muy pequeño (menos de 0,5B de parámetros) orientado a agentes de dominio específico con tool calling estructurado. Su adopción es todavía prácticamente nula (0 descargas y 0 likes en el momento de la consulta) y no se dispone de licencia declarada ni de idiomas soportados en la información publicada.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| banhcarrot/qwen2.5-0.5b-networkadmin-agent-notebook | 494M | No confirmada (base: 32.768) | Administracion de red Cisco IOS con tool calling | no disponible | HuggingFace (0 descargas) |
+| banhcarrot/qwen2.5-0.5b-networkadmin-agent-notebook | 494M | No confirmada (base: 32.768) | Administracion de red Cisco IOS con tool calling | no disponible | Hugging Face (0 descargas) |
 | Qwen2.5-0.5B (base) | 494M | 32.768 tokens | Proposito general | Apache 2.0 | Ampliamente disponible |
-| banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged (modelo base directo) | 494M | No confirmada | Administracion de red | no disponible | HuggingFace |
+| banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged (modelo base directo) | 494M | No confirmada | Administracion de red | no disponible | Hugging Face |
 | Qwen2.5-1.5B | ~1.500M | 32.768 tokens | Proposito general | Apache 2.0 | Ampliamente disponible |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La comparación se limita a parámetros, contexto y licencia.
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/banhcarrot/qwen2.5-0.5b-networkadmin-agent-notebook
+- Repositorio Hugging Face del modelo: https://huggingface.co/banhcarrot/qwen2.5-0.5b-networkadmin-agent-notebook
 - Modelo base directo: https://huggingface.co/banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged
 - Cuaderno de prueba citado en la model card: `network_admin_agent_test.ipynb` (referenciado en el repositorio, no se proporciona URL directa)
 - Modelo base original de la familia: https://huggingface.co/Qwen/Qwen2.5-0.5B

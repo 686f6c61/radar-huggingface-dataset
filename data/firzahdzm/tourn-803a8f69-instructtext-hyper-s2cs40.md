@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo firzahdzm/tourn-803a8f69-instructtext-hyper-s2cs40 es un modelo de lenguaje publicado por el usuario firzahdzm en HuggingFace. La informacion disponible es muy limitada: el repositorio no incluye model card, no declara licencia, idiomas ni pipeline de uso, y acumula 10 descargas y 0 likes en el momento de la consulta. Se trata, por tanto, de un artefacto de publicacion sin documentacion tecnica asociada.
+El modelo firzahdzm/tourn-803a8f69-instructtext-hyper-s2cs40 es un modelo de lenguaje publicado por el usuario firzahdzm en Hugging Face. La informacion disponible es muy limitada: el repositorio no incluye model card, no declara licencia, idiomas ni pipeline de uso, y acumula 10 descargas y 0 likes en el momento de la consulta. Se trata, por tanto, de un artefacto de publicacion sin documentacion tecnica asociada.
 
 El unico dato objetivo sobre su estructura es el numero de parametros extraido de los pesos en formato safetensors: 1.170.340.608 parametros, es decir, aproximadamente 1,17 mil millones. La etiqueta de arquitectura declarada por el autor es "lfm2", lo que vincula el modelo a la familia de arquitecturas LFM2, aunque no se aporta ninguna especificacion adicional sobre capas, atencion o ventana de contexto. El tamano del repositorio es de 2,3 GB, coherente con un almacenamiento de los pesos en precision BF16.
 
@@ -12,7 +12,7 @@ Por el identificador ("tourn-...-instructtext-...") y por la existencia de un ch
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | LFM2 (segun etiqueta de HuggingFace); detalles no disponibles |
+| Arquitectura | LFM2 (segun etiqueta de Hugging Face); detalles no disponibles |
 | Parametros totales | 1.170.340.608 (aprox. 1,17 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -72,10 +72,10 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| firzahdzm/tourn-803a8f69-instructtext-hyper-s2cs40 | 1,17 B | no disponible | no disponible | HuggingFace, safetensors |
-| Modelos LFM2 de referencia (familia) | variable | no disponible en esta consulta | no disponible en esta consulta | HuggingFace |
-| Otros checkpoints del mismo autor (p. ej. tourn-803a8f69-instructtext-hyper-r9a) | 1 B | no disponible | no disponible | HuggingFace, BF16 |
-| tourn-87c51c39-instructtext-super-s2kpre (mismo autor) | 494 M | no disponible | no disponible | HuggingFace |
+| firzahdzm/tourn-803a8f69-instructtext-hyper-s2cs40 | 1,17 B | no disponible | no disponible | Hugging Face, safetensors |
+| Modelos LFM2 de referencia (familia) | variable | no disponible en esta consulta | no disponible en esta consulta | Hugging Face |
+| Otros checkpoints del mismo autor (p. ej. tourn-803a8f69-instructtext-hyper-r9a) | 1 B | no disponible | no disponible | Hugging Face, BF16 |
+| tourn-87c51c39-instructtext-super-s2kpre (mismo autor) | 494 M | no disponible | no disponible | Hugging Face |
 
 No se han encontrado comparativas publicadas con modelos de proposito general (Llama, Qwen, Gemma) que permitan situar el rendimiento relativo de este checkpoint.
 
@@ -93,7 +93,7 @@ No se han encontrado comparativas publicadas con modelos de proposito general (L
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-s2cs40
+- Hugging Face (modelo): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-s2cs40
 - Repositorio hermano del mismo autor (r9a): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-r9a
 - Repositorio hermano del mismo autor (g2gcpre, etiqueta granite): https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-g2gcpre
 - Ficha en FriendliAI (modelo relacionado): https://friendli.ai/models/firzahdzm/tourn-803a8f69-instructtext-super-p1v

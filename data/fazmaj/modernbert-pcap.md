@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Fazmaj/ModernBERT-pcap` es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario Fazmaj, construido sobre la arquitectura ModernBERT y con 149.608.709 parámetros totales según los pesos en safetensors. El repositorio ocupa 0,6 GB, lo que corresponde aproximadamente a los pesos en fp32 (149,6 M × 4 bytes ≈ 598 MB), y declara la pipeline `text-classification` junto con compatibilidad con Text Embeddings Inference (TEI).
+`Fazmaj/ModernBERT-pcap` es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario Fazmaj, construido sobre la arquitectura ModernBERT y con 149.608.709 parámetros totales según los pesos en safetensors. El repositorio ocupa 0,6 GB, lo que corresponde aproximadamente a los pesos en fp32 (149,6 M × 4 bytes ≈ 598 MB), y declara la pipeline `text-classification` junto con compatibilidad con Text Embeddings Inference (TEI).
 
-El modelo resuelve una tarea de clasificación/representación sobre texto, pero la información publicada es mínima: la model card es la plantilla genérica autogenerada por HuggingFace y no contiene ningún campo completado (autoría, datos de entrenamiento, licencia, idiomas, evaluación y uso previsto figuran todos como "[More Information Needed]"). El identificador "pcap" sugiere un uso orientado a capturas de tráfico de red (archivos `.pcap`), pero esta interpretación no está confirmada en ninguna fuente publicada y debe tratarse como hipótesis.
+El modelo resuelve una tarea de clasificación/representación sobre texto, pero la información publicada es mínima: la model card es la plantilla genérica autogenerada por Hugging Face y no contiene ningún campo completado (autoría, datos de entrenamiento, licencia, idiomas, evaluación y uso previsto figuran todos como "[More Information Needed]"). El identificador "pcap" sugiere un uso orientado a capturas de tráfico de red (archivos `.pcap`), pero esta interpretación no está confirmada en ninguna fuente publicada y debe tratarse como hipótesis.
 
 Su relevancia actual es limitada y fundamentalmente práctica: sirve como ejemplo de fine-tuning de un encoder moderno de 149 M de parámetros que cabe en cualquier GPU de consumo o incluso en CPU, con contexto largo (la familia ModernBERT trabaja con 8.192 tokens frente a los 512 de BERT/RoBERTa). Sin embargo, la ausencia de licencia, de idiomas declarados y de cualquier métrica de evaluación lo convierten en un artefacto no apto para producción sin auditoría previa.
 
@@ -66,17 +66,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Cabe en GPU de consumo: sí, en cualquier GPU con 4 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4060, RTX 4090, etc.), con margen amplio incluso en fp32.
 - Inferencia en CPU: viable para clasificación por lotes; es un modelo de tamaño base, comparable en coste a BERT-base o RoBERTa-base.
 - GPU de centro de datos: A100, H100, L40S o T4 no son necesarias para un solo modelo, pero sí útiles para servir muchas réplicas concurrentes o para fine-tuning con lotes grandes.
-- Opciones de despliegue: `transformers` (PyTorch) de forma directa, Text Embeddings Inference (TEI) para servicio de embeddings/clasificación, y contenedores de inferencia compatibles con endpoints tipo HuggingFace. No hay pesos GGUF publicados en el repositorio, por lo que llama.cpp/Ollama requerirían una conversión previa (y están orientados a modelos generativos, no a clasificación).
+- Opciones de despliegue: `transformers` (PyTorch) de forma directa, Text Embeddings Inference (TEI) para servicio de embeddings/clasificación, y contenedores de inferencia compatibles con endpoints tipo Hugging Face. No hay pesos GGUF publicados en el repositorio, por lo que llama.cpp/Ollama requerirían una conversión previa (y están orientados a modelos generativos, no a clasificación).
 - Latencia y throughput: no disponible. No se han publicado medidas de latencia ni de tokens o ejemplos por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fazmaj/ModernBERT-pcap | 149,6 M | no confirmado (arquitectura ModernBERT: 8.192) | Clasificación de texto (fine-tuning) | no disponible | HuggingFace, sin descargas registradas |
-| ModernBERT-base | 149 M | 8.192 tokens | Encoder base para clasificación y embeddings | Apache 2.0 | HuggingFace (answerdotai/ModernBERT-base), ampliamente usado |
-| DeBERTa-v3-base | 184 M | 512 tokens | Clasificación y NLU en inglés | MIT | HuggingFace, ampliamente usado |
-| RoBERTa-base | 125 M | 512 tokens | Clasificación y NLU en inglés | MIT | HuggingFace, ampliamente usado |
+| Fazmaj/ModernBERT-pcap | 149,6 M | no confirmado (arquitectura ModernBERT: 8.192) | Clasificación de texto (fine-tuning) | no disponible | Hugging Face, sin descargas registradas |
+| ModernBERT-base | 149 M | 8.192 tokens | Encoder base para clasificación y embeddings | Apache 2.0 | Hugging Face (answerdotai/ModernBERT-base), ampliamente usado |
+| DeBERTa-v3-base | 184 M | 512 tokens | Clasificación y NLU en inglés | MIT | Hugging Face, ampliamente usado |
+| RoBERTa-base | 125 M | 512 tokens | Clasificación y NLU en inglés | MIT | Hugging Face, ampliamente usado |
 
 La ventaja estructural del checkpoint frente a DeBERTa-v3-base y RoBERTa-base es el contexto largo y una arquitectura más reciente; la desventaja es la falta total de documentación, licencia y métricas, frente a alternativas con licencia permisiva y resultados publicados.
 
@@ -95,7 +95,7 @@ La ventaja estructural del checkpoint frente a DeBERTa-v3-base y RoBERTa-base es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Fazmaj/ModernBERT-pcap
+- Modelo en Hugging Face: https://huggingface.co/Fazmaj/ModernBERT-pcap
 - Paper citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automático, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Referencia de la arquitectura ModernBERT (paper de la familia, no vinculado al autor de este checkpoint): https://arxiv.org/abs/2412.13663
 - Documentación de Text Embeddings Inference: https://github.com/huggingface/text-embeddings-inference

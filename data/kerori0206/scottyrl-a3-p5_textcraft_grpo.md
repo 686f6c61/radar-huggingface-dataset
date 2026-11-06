@@ -42,7 +42,7 @@ El protocolo de evaluación sí está descrito y es reproducible: se sirve el mo
 - Reproducción de la evaluación académica del curso 11-768: cargar el adaptador con vLLM y ejecutar `evaluate_checkpoint.py` sobre `textcraft_val_hard.jsonl` con `--k 4` para validar el checkpoint frente a la partición hard, tal como indican los graders.
 - Investigación en aprendizaje por refuerzo para agentes: servir el adaptador como referencia de política entrenada con GRPO y comparar trayectorias contra el modelo base sin adaptar en el mismo entorno.
 - Servicio multi-LoRA con vLLM: alojar `Qwen/Qwen3.5-4B` una sola vez y registrar este adaptador como módulo `a3`, permitiendo alternar entre el modelo base y la política ajustada sin duplicar los pesos en VRAM.
-- Docencia y experimentación con PEFT: usar el adaptador como ejemplo mínimo (0,2 GB) de exportación desde Tinker a un repo de HuggingFace con configuración y commit trazables.
+- Docencia y experimentación con PEFT: usar el adaptador como ejemplo mínimo (0,2 GB) de exportación desde Tinker a un repo de Hugging Face con configuración y commit trazables.
 - Estudio de sobreajuste a dominio: comparar el rendimiento en TextCraft-Synth medium frente a hard para medir la generalización de la política a recetas o instrucciones de mayor complejidad.
 - Base para ablaciones de rango LoRA: al estar fijado el rango a 32 y documentarse la exportación, sirve como punto de partida para entrenar variantes con rango 8, 16 o 64 y medir el efecto en la tasa de éxito.
 - Integración en pipelines de evaluación automatizada: el formato OpenAI-compatible del servidor vLLM permite conectarlo a harnesses de agentes existentes sin adaptadores de API adicionales.
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre base de 4B | No disponible | No disponible | Pública en HuggingFace, 0 descargas, 0 likes | Entrenado para la asignación 3 de 11-768 (CMU) |
-| Qwen/Qwen3.5-4B (modelo base) | ~4B (según identificador) | No disponible en esta información | No disponible en esta información | Público en HuggingFace | Sin ajuste específico para TextCraft-Synth; referencia de comparación natural |
+| scottyrl-a3-p5_textcraft_grpo | Adaptador LoRA r32 sobre base de 4B | No disponible | No disponible | Pública en Hugging Face, 0 descargas, 0 likes | Entrenado para la asignación 3 de 11-768 (CMU) |
+| Qwen/Qwen3.5-4B (modelo base) | ~4B (según identificador) | No disponible en esta información | No disponible en esta información | Público en Hugging Face | Sin ajuste específico para TextCraft-Synth; referencia de comparación natural |
 | Otros adaptadores LoRA sobre Qwen3.5-4B | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 No se dispone de datos de rendimiento que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kerori0206/scottyrl-a3-p5_textcraft_grpo
+- Hugging Face: https://huggingface.co/kerori0206/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

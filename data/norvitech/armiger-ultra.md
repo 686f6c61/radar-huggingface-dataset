@@ -108,7 +108,7 @@ No se han identificado en la informacion disponible modelos publicos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NorviTech/armiger-ultra
+- Modelo en Hugging Face: https://huggingface.co/NorviTech/armiger-ultra
 - Variante CPU: https://huggingface.co/NorviTech/armiger
 - Plugin de supervivencia de enjambre y honeypots: https://huggingface.co/NorviTech/armiger-swarm-survival
 - Plugin de priors de enjambre: https://huggingface.co/NorviTech/armiger-swarm-priors
@@ -116,5 +116,5 @@ No se han identificado en la informacion disponible modelos publicos comparables
 - Plugin de guardia de idioma de audio: https://huggingface.co/NorviTech/armiger-audio-guard
 - Plugin de calibracion y DHT: https://huggingface.co/NorviTech/armiger-calibration-dht
 - Plugin de sincronizacion DHT con proteccion CSAM: https://huggingface.co/NorviTech/armiger-dht-db-sync
-- Organizacion NorviTech en HuggingFace: https://huggingface.co/NorviTech
+- Organizacion NorviTech en Hugging Face: https://huggingface.co/NorviTech
 - Sitio del autor: https://norvitech.com

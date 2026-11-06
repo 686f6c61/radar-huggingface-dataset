@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por el equipo Qwen (Alibaba) y publicado en HuggingFace bajo licencia Apache 2.0. Se presenta como la generación más capaz de la familia abierta Qwen hasta la fecha, construido sobre la base arquitectónica de Qwen3.5, con mejoras sustanciales en codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. Es un modelo denso de 27 781 millones de parámetros, con una ventana de contexto nativa de 262 144 tokens extensible hasta 1 000 000, y capacidades nativas de comprensión de imágenes y vídeo.
+Qwen3.8-27B es un modelo de lenguaje causal con encoder de visión, desarrollado por el equipo Qwen (Alibaba) y publicado en Hugging Face bajo licencia Apache 2.0. Se presenta como la generación más capaz de la familia abierta Qwen hasta la fecha, construido sobre la base arquitectónica de Qwen3.5, con mejoras sustanciales en codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. Es un modelo denso de 27 781 millones de parámetros, con una ventana de contexto nativa de 262 144 tokens extensible hasta 1 000 000, y capacidades nativas de comprensión de imágenes y vídeo.
 
 El modelo combina una arquitectura híbrida que intercala bloques de atención lineal Gated DeltaNet con bloques de atención Gated Attention, junto con predicción multi-token (MTP). Su diseño lo hace especialmente adecuado para despliegue en entornos de producción que requieren razonamiento configurable, ejecución de agentes autónomos y procesamiento de entradas multimodales. Su lanzamiento, el 14 de agosto de 2026, llegó con soporte Day 0 en hardware AMD (Ryzen AI y Radeon) y en plataformas como LM Studio, lo que facilita su adopción tanto en entornos cloud como locales.
 
@@ -75,7 +75,7 @@ La tabla de benchmarks de la model card compara Qwen3.8-27B con Qwen3.6-27B, Qwe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iceDonkey/Qwen3.8-27B
+- Hugging Face: https://huggingface.co/iceDonkey/Qwen3.8-27B
 - Blog AMD (soporte Day 0): https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Jetson AI Lab: https://www.jetson-ai-lab.com/models/qwen3-8-27b/
 - AI Release Tracker (benchmarks y specs): https://aireleasetracker.com/model/qwen/qwen3.8-27b

@@ -4,7 +4,7 @@
 
 VuMos-2B-Thinking-Vision es un modelo de lenguaje propietario desarrollado por VuNiti, presentado como parte de la serie VuMos, una familia de modelos "de próxima generación" diseñada para ofrecer razonamiento de alto rendimiento con un enfoque en la interacción empática y la integración en un ecosistema cerrado. El modelo, de 2.000 millones de parámetros según su denominación, está cifrado en el formato propietario `.vum` y solo puede ejecutarse dentro de la aplicación VuNiti, lo que limita su uso a ese entorno específico.
 
-La relevancia de este modelo radica en su propuesta de combinar capacidades de razonamiento avanzado, visión y ejecución de tareas complejas (agentes, programación, creación de contenido) dentro de una plataforma social y de aplicaciones integrada. Sin embargo, su naturaleza cerrada y su licencia EULA propietaria impiden su uso en infraestructuras estándar de IA, lo que lo diferencia radicalmente de los modelos abiertos habituales en HuggingFace. No se dispone de información pública sobre su arquitectura interna, datos de entrenamiento o benchmarks.
+La relevancia de este modelo radica en su propuesta de combinar capacidades de razonamiento avanzado, visión y ejecución de tareas complejas (agentes, programación, creación de contenido) dentro de una plataforma social y de aplicaciones integrada. Sin embargo, su naturaleza cerrada y su licencia EULA propietaria impiden su uso en infraestructuras estándar de IA, lo que lo diferencia radicalmente de los modelos abiertos habituales en Hugging Face. No se dispone de información pública sobre su arquitectura interna, datos de entrenamiento o benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ No es posible establecer una comparativa rigurosa con modelos abiertos de 2B com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VuNiti/VuMos-2B-Thinking-Vision
-- Perfil de la organización VuNiti en HuggingFace: https://huggingface.co/VuNiti
+- Modelo en Hugging Face: https://huggingface.co/VuNiti/VuMos-2B-Thinking-Vision
+- Perfil de la organización VuNiti en Hugging Face: https://huggingface.co/VuNiti
 - Repositorio de GitHub de VuNiti: https://github.com/VuNiti/VuNiti
 - Perfil de VuNiti en GitHub: https://github.com/VuNiti
 - Sitio web oficial: https://vuniti.com

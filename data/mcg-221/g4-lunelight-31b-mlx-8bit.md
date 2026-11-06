@@ -2,7 +2,7 @@
 
 ## Resumen
 
-McG-221/G4-LuneLight-31B-mlx-8Bit es una conversion al formato MLX, en cuantizacion de 8 bits, del modelo zerofata/G4-LuneLight-31B. Lo publica el usuario McG-221 en HuggingFace y su unico proposito es permitir la inferencia del modelo base en hardware Apple Silicon mediante la libreria mlx-lm (version 0.31.2 segun la model card). No se trata de un modelo entrenado desde cero, sino de un artefacto de conversion y cuantizacion derivado de un modelo previo.
+McG-221/G4-LuneLight-31B-mlx-8Bit es una conversion al formato MLX, en cuantizacion de 8 bits, del modelo zerofata/G4-LuneLight-31B. Lo publica el usuario McG-221 en Hugging Face y su unico proposito es permitir la inferencia del modelo base en hardware Apple Silicon mediante la libreria mlx-lm (version 0.31.2 segun la model card). No se trata de un modelo entrenado desde cero, sino de un artefacto de conversion y cuantizacion derivado de un modelo previo.
 
 El modelo base pertenece a la familia "G4" (el tag `gemma4` sugiere una arquitectura inspirada en Gemma), con 30.697.345.280 parametros totales segun los pesos en safetensors, es decir, aproximadamente 30,7 mil millones de parametros. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque la informacion publicada sobre el modelo base es muy limitada: no se documentan datos de entrenamiento, contexto, idiomas ni benchmarks.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| McG-221/G4-LuneLight-31B-mlx-8Bit | ~30,7B | no disponible | MLX safetensors 8-bit | Apache 2.0 | HuggingFace (32 descargas) |
-| zerofata/G4-LuneLight-31B (base) | ~30,7B | no disponible | safetensors originales | Apache 2.0 (heredada) | HuggingFace |
+| McG-221/G4-LuneLight-31B-mlx-8Bit | ~30,7B | no disponible | MLX safetensors 8-bit | Apache 2.0 | Hugging Face (32 descargas) |
+| zerofata/G4-LuneLight-31B (base) | ~30,7B | no disponible | safetensors originales | Apache 2.0 (heredada) | Hugging Face |
 | Gemma 2 27B (referencia de familia) | 27B | 8K | safetensors, GGUF | Gemma license | Amplia |
 
 No se dispone de datos de rendimiento del modelo base ni de comparativas publicadas, por lo que la comparacion se limita a parametros, formato y licencia. La eleccion frente a alternativas de la misma familia depende de si el entorno de ejecucion es Apple Silicon (donde esta version MLX es la opcion directa) o cualquier otro hardware.
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento del modelo base ni de comparativas publica
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/McG-221/G4-LuneLight-31B-mlx-8Bit
+- Hugging Face (este modelo): https://huggingface.co/McG-221/G4-LuneLight-31B-mlx-8Bit
 - Modelo base: https://huggingface.co/zerofata/G4-LuneLight-31B
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

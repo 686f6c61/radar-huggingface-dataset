@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks del modelo base ni de las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/olLyff19/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
+- Modelo en Hugging Face: https://huggingface.co/olLyff19/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante 4B del mismo autor: https://huggingface.co/HauhauCS/Qwen3.5-4B-Uncensored-HauhauCS-Aggressive
 - Página del autor HauhauCS: https://huggingface.co/HauhauCS

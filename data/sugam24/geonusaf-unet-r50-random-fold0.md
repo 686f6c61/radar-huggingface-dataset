@@ -93,4 +93,4 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: sugam24/geonusaf-unet-r50-random-fold0](https://huggingface.co/sugam24/geonusaf-unet-r50-random-fold0)
+- [Hugging Face: sugam24/geonusaf-unet-r50-random-fold0](https://huggingface.co/sugam24/geonusaf-unet-r50-random-fold0)

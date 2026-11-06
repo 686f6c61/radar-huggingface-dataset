@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Limitaciones y advertencias
 
-- Discrepancia de licencia: el frontmatter de la model card declara `apache-2.0` pero también `license_name: amd-hybrid-models-research-only-rail-ms`, y el campo de licencia de la página de HuggingFace es `amd-hybrid-models-research-only-rail-ms`. Debe asumirse uso exclusivo de investigación hasta que AMD aclare la contradicción.
+- Discrepancia de licencia: el frontmatter de la model card declara `apache-2.0` pero también `license_name: amd-hybrid-models-research-only-rail-ms`, y el campo de licencia de la página de Hugging Face es `amd-hybrid-models-research-only-rail-ms`. Debe asumirse uso exclusivo de investigación hasta que AMD aclare la contradicción.
 - Uno de los datasets de entrenamiento, `nvidia/ChatQA2-Long-SFT-data`, tiene licencia `cc-by-nc-2.0`, no comercial, lo que añade restricciones sobre el uso comercial del checkpoint.
 - Contexto real de 8.192 tokens. El valor `max_position_embeddings = 131.072` está heredado del modelo base y no representa una longitud soportada; el propio autor advierte que no mide ni reclama calidad más allá de 8K. Los motores de inferencia dimensionan la caché KV a partir de ese campo, por lo que hay que fijar el límite explícitamente.
 - Degradación severa esperable si se supera la longitud de entrenamiento; el autor remite a los números de RULER para ilustrar ese comportamiento.
@@ -110,7 +110,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amd/HyLo-Llama-14MLA14GDN-8K-SFT
+- Repositorio en Hugging Face: https://huggingface.co/amd/HyLo-Llama-14MLA14GDN-8K-SFT
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Profesor de destilación: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Artículo principal (Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling): https://arxiv.org/abs/2604.24715

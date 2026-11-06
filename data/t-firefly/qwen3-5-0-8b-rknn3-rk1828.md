@@ -6,7 +6,7 @@
 
 El modelo base, Qwen3.5-0.8B, es un modelo nativo de visión-lenguaje de la familia Qwen3.5, con unos 800 millones de parámetros y una arquitectura híbrida basada en Gated Delta Networks combinadas con Mixture-of-Experts disperso, pensada para inferencia de baja latencia y alto rendimiento en entornos con recursos limitados. Según la model card, soporta 201 idiomas y dialectos y mantiene una ventana de contexto nativa de 262.144 tokens, lo que resulta inusual en un modelo de este tamaño.
 
-Su relevancia inmediata es acotada pero concreta: es uno de los pocos artefactos publicados que permite ejecutar un VLM compacto sobre la NPU RK1828 de Rockchip, un segmento donde la oferta de pesos preconvertidos es escasa. La ficha de HuggingFace registra 0 descargas y 0 likes, y no hay benchmarks publicados, por lo que debe considerarse un artefacto reciente y sin validación comunitaria.
+Su relevancia inmediata es acotada pero concreta: es uno de los pocos artefactos publicados que permite ejecutar un VLM compacto sobre la NPU RK1828 de Rockchip, un segmento donde la oferta de pesos preconvertidos es escasa. La ficha de Hugging Face registra 0 descargas y 0 likes, y no hay benchmarks publicados, por lo que debe considerarse un artefacto reciente y sin validación comunitaria.
 
 ## Especificaciones técnicas
 
@@ -17,7 +17,7 @@ Su relevancia inmediata es acotada pero concreta: es uno de los pocos artefactos
 | Parametros activos | no disponible (la model card indica MoE disperso, pero no especifica el ratio de activación) |
 | Longitud de contexto | 262.144 tokens nativos (heredado del modelo original) |
 | Tipos de cuantizacion | Conversión a RKNN3 para NPU Rockchip RK1828; el repositorio incluye la etiqueta `gguf`, pero no se detallan los niveles de cuantización aplicados |
-| Idiomas soportados | 201 idiomas y dialectos (dato de la model card del modelo original; los metadatos de HuggingFace indican "no disponibles") |
+| Idiomas soportados | 201 idiomas y dialectos (dato de la model card del modelo original; los metadatos de Hugging Face indican "no disponibles") |
 | Licencia | Apache-2.0 |
 | Formato de pesos | RKNN3 (artefacto binario para NPU Rockchip RK1828); no se distribuyen safetensors. Repositorio de 1,2 GB |
 | Modelo base | Qwen/Qwen3.5-0.8B |
@@ -58,7 +58,7 @@ La innovación técnica relevante aquí no está en el modelo sino en el artefac
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La ficha de HuggingFace del artefacto convertido no incluye métricas (MMLU, HumanEval, GSM8K, MMMU, DocVQA ni ninguna otra), y la model card del modelo original tampoco reproduce cifras en el texto disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre Qwen3.5-0.8B. No se deben extrapolar cifras de otras versiones de la familia Qwen.
+No se han publicado resultados de benchmarks en la información disponible. La ficha de Hugging Face del artefacto convertido no incluye métricas (MMLU, HumanEval, GSM8K, MMMU, DocVQA ni ninguna otra), y la model card del modelo original tampoco reproduce cifras en el texto disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo ni sobre Qwen3.5-0.8B. No se deben extrapolar cifras de otras versiones de la familia Qwen.
 
 ## Requisitos de hardware
 
@@ -87,7 +87,7 @@ Los datos de los modelos alternativos no proceden de la información proporciona
 - Sesgos: los hereda íntegramente del modelo original y de su dataset de entrenamiento, que no está documentado en la información disponible. No se han publicado análisis de sesgo para este artefacto.
 - Sin benchmarks: no existe ninguna métrica publicada para esta conversión, por lo que no se puede afirmar que su precisión coincida con la del modelo original tras la conversión a RKNN3.
 - Falta de validación comunitaria: 0 descargas y 0 likes. El artefacto no ha sido probado de forma independiente.
-- Metadatos inconsistentes: la fecha de creación indicada (2026-09-19) y la ausencia de idiomas declarados en los metadatos de HuggingFace dificultan la trazabilidad de la versión.
+- Metadatos inconsistentes: la fecha de creación indicada (2026-09-19) y la ausencia de idiomas declarados en los metadatos de Hugging Face dificultan la trazabilidad de la versión.
 - Dependencia de hardware concreto: el formato RKNN3 ata el modelo a la NPU Rockchip RK1828 y a la herramienta LlamaPi. Migrar a otra plataforma exige rehacer la conversión desde el modelo original.
 - Opacidad de la conversión: no se especifica la precisión numérica aplicada (int8, int4 u otra), ni si el encoder visual se ha convertido, ni si alguna capa se ha dejado en CPU. Esto afecta directamente a la calidad de salida y al consumo de memoria.
 - Contexto declarado frente a contexto real: los 262.144 tokens son una capacidad del modelo original; en un dispositivo edge, el KV cache necesario para explotar esa ventana puede exceder la memoria disponible. No hay datos publicados al respecto.
@@ -97,8 +97,8 @@ Los datos de los modelos alternativos no proceden de la información proporciona
 
 ## Enlaces
 
-- Ficha de HuggingFace del artefacto: https://huggingface.co/t-firefly/qwen3.5-0.8b-rknn3-rk1828
-- Modelo original Qwen3.5-0.8B en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-0.8B
+- Ficha de Hugging Face del artefacto: https://huggingface.co/t-firefly/qwen3.5-0.8b-rknn3-rk1828
+- Modelo original Qwen3.5-0.8B en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Modelo original Qwen3.5-0.8B en ModelScope: https://modelscope.cn/models/Qwen/Qwen3.5-0.8B
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Firefly AI Team (fabricante): https://www.t-firefly.com/

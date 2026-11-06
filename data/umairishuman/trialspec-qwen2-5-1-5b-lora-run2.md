@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`trialspec-qwen2.5-1.5b-lora-run2` es un adaptador LoRA publicado en HuggingFace por el usuario `umairishuman` sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos PEFT que debe cargarse junto al checkpoint original de Qwen2.5-1.5B-Instruct para funcionar. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con pesos completos.
+`trialspec-qwen2.5-1.5b-lora-run2` es un adaptador LoRA publicado en Hugging Face por el usuario `umairishuman` sobre el modelo base `Qwen/Qwen2.5-1.5B-Instruct`. No se trata de un modelo entrenado desde cero, sino de un conjunto de pesos PEFT que debe cargarse junto al checkpoint original de Qwen2.5-1.5B-Instruct para funcionar. El repositorio ocupa aproximadamente 0,1 GB, lo que es coherente con un adaptador de bajo rango y no con pesos completos.
 
-La relevancia del artefacto es limitada: la model card es la plantilla por defecto de HuggingFace sin cumplimentar, no se declara licencia, idiomas, dataset de entrenamiento ni hiperparámetros, y el repositorio no tiene descargas ni likes en el momento de la consulta. El nombre "trialspec" y el sufijo "run2" sugieren un experimento de ajuste fino, probablemente de carácter exploratorio, sin documentación asociada.
+La relevancia del artefacto es limitada: la model card es la plantilla por defecto de Hugging Face sin cumplimentar, no se declara licencia, idiomas, dataset de entrenamiento ni hiperparámetros, y el repositorio no tiene descargas ni likes en el momento de la consulta. El nombre "trialspec" y el sufijo "run2" sugieren un experimento de ajuste fino, probablemente de carácter exploratorio, sin documentación asociada.
 
 Por tanto, esta ficha describe principalmente el modelo base subyacente (Qwen2.5-1.5B-Instruct, transformer decoder-only de 1.500 millones de parámetros) y trata el adaptador como una capa opcional cuyo comportamiento específico no está documentado. Cualquier evaluación rigurosa del adaptador requeriría acceso a los datos de entrenamiento y a una comparativa contra el modelo base, ninguno de los cuales está disponible.
 
@@ -63,14 +63,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `trialspec-qwen2.5-1.5b-lora-run2` (este) | ~1,5 B (base) + adaptador LoRA | No disponible para el adaptador; base hasta 32.768 tokens | No disponible | HuggingFace, 0 descargas | Model card sin cumplimentar; sin benchmarks |
-| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5 B | Hasta 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base documentado, con benchmarks publicados por Qwen |
-| `meta-llama/Llama-3.2-1B-Instruct` | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptación | Alternativa de tamaño similar con contexto mucho mayor |
-| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | ~1,7 B | 8.192 tokens | Apache 2.0 | HuggingFace | Modelo pequeño orientado a eficiencia, con documentación completa |
+| `trialspec-qwen2.5-1.5b-lora-run2` (este) | ~1,5 B (base) + adaptador LoRA | No disponible para el adaptador; base hasta 32.768 tokens | No disponible | Hugging Face, 0 descargas | Model card sin cumplimentar; sin benchmarks |
+| `Qwen/Qwen2.5-1.5B-Instruct` | ~1,5 B | Hasta 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base documentado, con benchmarks publicados por Qwen |
+| `meta-llama/Llama-3.2-1B-Instruct` | ~1,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptación | Alternativa de tamaño similar con contexto mucho mayor |
+| `HuggingFaceTB/SmolLM2-1.7B-Instruct` | ~1,7 B | 8.192 tokens | Apache 2.0 | Hugging Face | Modelo pequeño orientado a eficiencia, con documentación completa |
 
 ## Limitaciones y advertencias
 
-- La model card es la plantilla por defecto de HuggingFace y no contiene información sustantiva: no se declaran licencia, idiomas, datos de entrenamiento ni hiperparámetros.
+- La model card es la plantilla por defecto de Hugging Face y no contiene información sustantiva: no se declaran licencia, idiomas, datos de entrenamiento ni hiperparámetros.
 - La licencia no está disponible, lo que impide determinar si el uso comercial está permitido; el adaptador no hereda automáticamente la licencia Apache 2.0 del modelo base.
 - No hay benchmarks ni evaluación publicada, por lo que se desconoce si el adaptador mejora, degrada o mantiene el rendimiento del modelo base.
 - El modelo base, con 1.500 millones de parámetros, tiene capacidad limitada para razonamiento complejo, matemáticas avanzadas y generación de código extenso; el adaptador no cambia ese techo estructural.

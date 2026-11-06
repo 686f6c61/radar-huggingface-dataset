@@ -83,8 +83,8 @@ Nota de consistencia: el resumen de la model card afirma 92,1% frente a 2,2%, ci
 
 | Modelo | Parametros | Contexto | Registro en aerolinea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zeroproof-airline-concise-4b | 4.000 M (base) + LoRA | no disponible | 0,935 | apache-2.0 | HuggingFace, adaptador PEFT |
-| Qwen3-4B-Instruct-2507 (base) | 4.000 M | no disponible | 0,036 | apache-2.0 | HuggingFace, pesos completos |
+| zeroproof-airline-concise-4b | 4.000 M (base) + LoRA | no disponible | 0,935 | apache-2.0 | Hugging Face, adaptador PEFT |
+| Qwen3-4B-Instruct-2507 (base) | 4.000 M | no disponible | 0,036 | apache-2.0 | Hugging Face, pesos completos |
 | Otras alternativas de la clase 3-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La unica comparacion directa con datos es contra el propio modelo base, que comparte parametros, licencia y familia. La model card no ofrece comparaciones con otros modelos de la misma clase (por ejemplo Llama-3.2-3B-Instruct o Phi-4-mini), y la busqueda web realizada no aporto informacion adicional sobre este modelo. Los resultados de 0,935 y 0,036 corresponden a un juez concreto (Phi-4) y a una rubrica de registro especifica, por lo que no son extrapolables a otras metricas de calidad.
@@ -106,7 +106,7 @@ La unica comparacion directa con datos es contra el propio modelo base, que comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero-proof-ai/zeroproof-airline-concise-4b
+- Modelo en Hugging Face: https://huggingface.co/zero-proof-ai/zeroproof-airline-concise-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - SDK de ZeroProof: https://www.zeroproofai.com
 - Open Character Training (Maiya et al.): arXiv 2511.01689

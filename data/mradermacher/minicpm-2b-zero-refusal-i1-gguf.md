@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Minicpm-2B-Zero-Refusal-i1-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher a partir del modelo OpenIntelligenceNet/Minicpm-2B-Zero-Refusal. No es un modelo entrenado desde cero, sino una conversión a cuantización de un modelo preexistente, generada con el flujo habitual de mradermacher (conversión desde pesos HuggingFace, cuantización con imatrix y versionado quantize_version 2). La etiqueta "i1" del nombre identifica las cuantizaciones ponderadas con matriz de importancia (imatrix) de este autor.
+Minicpm-2B-Zero-Refusal-i1-GGUF es un repositorio de cuantizaciones en formato GGUF publicado por el usuario mradermacher a partir del modelo OpenIntelligenceNet/Minicpm-2B-Zero-Refusal. No es un modelo entrenado desde cero, sino una conversión a cuantización de un modelo preexistente, generada con el flujo habitual de mradermacher (conversión desde pesos Hugging Face, cuantización con imatrix y versionado quantize_version 2). La etiqueta "i1" del nombre identifica las cuantizaciones ponderadas con matriz de importancia (imatrix) de este autor.
 
 El interés práctico del repositorio es el despliegue local: los ficheros GGUF permiten ejecutar el modelo en llama.cpp, Ollama o servidores compatibles sin GPU de gama alta, algo relevante para un modelo pequeño orientado a entornos con recursos limitados. El sufijo "Zero-Refusal" del modelo base sugiere un ajuste orientado a eliminar rechazos de contenido, lo que condiciona fuertemente su uso en producción.
 

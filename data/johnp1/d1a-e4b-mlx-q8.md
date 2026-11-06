@@ -83,10 +83,10 @@ Notas de la model card: las filas de etiquetado de PR con superindices se puntua
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento destacado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| D1A-E4B v0.5 MLX 8-bit (este) | Modelo de decision cuantizado MLX 8-bit | 7,46 B | no disponible (entrenado hasta 6.400 tokens) | Hard-v1 71,5 %; devtools 69,8 %; documentos largos 87,5 %; transferencia 71,6 % | Apache 2.0 | HuggingFace, Apple Silicon |
-| D1A-E4B v0.4 | Modelo de decision (version previa) | no disponible | no disponible | Hard-v1 55,2 %; devtools 63,8 %; documentos largos 86,6 % | Apache 2.0 | HuggingFace |
+| D1A-E4B v0.5 MLX 8-bit (este) | Modelo de decision cuantizado MLX 8-bit | 7,46 B | no disponible (entrenado hasta 6.400 tokens) | Hard-v1 71,5 %; devtools 69,8 %; documentos largos 87,5 %; transferencia 71,6 % | Apache 2.0 | Hugging Face, Apple Silicon |
+| D1A-E4B v0.4 | Modelo de decision (version previa) | no disponible | no disponible | Hard-v1 55,2 %; devtools 63,8 %; documentos largos 86,6 % | Apache 2.0 | Hugging Face |
 | Kev-4B | Modelo de decision (model card, fp32, desarrollo) | no disponible | no disponible | Hard 78,6; devtools 73,9; documentos largos 89,1; transferencia 81,7 | no disponible | no disponible |
-| google/gemma-4-E4B | Modelo base | no disponible | no disponible | no disponible | no disponible | HuggingFace (revision `411aa17b`) |
+| google/gemma-4-E4B | Modelo base | no disponible | no disponible | no disponible | no disponible | Hugging Face (revision `411aa17b`) |
 
 La comparacion con Kev-4B es aproximada segun la propia model card (fp32 frente a MLX 8-bit, splits de desarrollo). v0.5 cierra la mayor parte de la brecha en herramientas de desarrollo y documentos largos, y dos tercios de la brecha en decisiones duras.
 
@@ -103,7 +103,7 @@ La comparacion con Kev-4B es aproximada segun la propia model card (fp32 frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e4b-mlx-q8
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e4b-mlx-q8
 - Modelo base del que deriva: https://huggingface.co/JohnP1/d1a-e4b
 - Modelo base sobre el que se construye: https://huggingface.co/google/gemma-4-E4B
 - Repositorio de referencia del etiquetado de PR: https://huggingface.co/NousResearch/hermes-agent

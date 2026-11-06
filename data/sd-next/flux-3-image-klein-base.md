@@ -90,7 +90,7 @@ No hay datos en la informacion proporcionada sobre otros modelos comparables de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo SD-Next): https://huggingface.co/SD-Next/flux-3-image-klein-base
+- Repositorio en Hugging Face (espejo SD-Next): https://huggingface.co/SD-Next/flux-3-image-klein-base
 - Repositorio original del checkpoint base: https://huggingface.co/black-forest-labs/flux-3-image-klein-base
 - Checkpoint destilado: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Codigo de inferencia de referencia: https://github.com/black-forest-labs/flux-3-image-klein

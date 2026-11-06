@@ -69,5 +69,5 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-4latin2latout)
+- [Hugging Face del modelo](https://huggingface.co/hmkang/wam-dit4dit-robocasa-wan22-4latin2latout)
 - [Modelo base Wan2.2-TI2V-5B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers)

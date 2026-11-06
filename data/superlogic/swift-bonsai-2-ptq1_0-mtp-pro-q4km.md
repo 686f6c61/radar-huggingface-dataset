@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento en benchmarks de calidad para ninguno de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SuperLogic/Swift-Bonsai-2-PTQ1_0-mtp-pro-q4km
+- Repositorio Hugging Face: https://huggingface.co/SuperLogic/Swift-Bonsai-2-PTQ1_0-mtp-pro-q4km
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizacion ternaria de origen: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Capa de ajuste de eficiencia de razonamiento: https://huggingface.co/ukisai/Swift-Bonsai-2-GGUF

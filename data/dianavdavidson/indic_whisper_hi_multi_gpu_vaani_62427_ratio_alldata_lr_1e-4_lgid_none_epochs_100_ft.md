@@ -69,7 +69,7 @@ El mejor WER se alcanza en la epoca 3 con 15,0052, y posteriormente el rendimien
 - VRAM estimada para inferencia: el modelo tiene 763,8 millones de parametros. En precision fp16, los pesos ocupan aproximadamente 1,5 GB, por lo que se estima una VRAM minima de 2-3 GB para inferencia basica con Transformers. En fp32, la VRAM requerida asciende a 3-4 GB.
 - GPU recomendadas: tarjetas como NVIDIA RTX 3060, RTX 4060, T4 o A10G son suficientes para inferencia. Para entrenamiento se recomiendan GPUs con al menos 24 GB de VRAM, como A100 o H100.
 - Si cabe en consumer GPU: si, una GPU de gama media con 8 GB de VRAM puede ejecutar el modelo en fp16 sin problemas.
-- Opciones de despliegue: se puede desplegar con la libreria Transformers de HuggingFace mediante la pipeline de `automatic-speech-recognition`, o con implementaciones optimizadas como faster-whisper. Tambien es compatible con el formato safetensors, lo que facilita la carga en frameworks como PyTorch.
+- Opciones de despliegue: se puede desplegar con la libreria Transformers de Hugging Face mediante la pipeline de `automatic-speech-recognition`, o con implementaciones optimizadas como faster-whisper. Tambien es compatible con el formato safetensors, lo que facilita la carga en frameworks como PyTorch.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_vaani_62427_ratio_alldata_lr_1e-4_lgid_None_epochs_100_FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_vaani_62427_ratio_alldata_lr_1e-4_lgid_None_epochs_100_FT
 - Modelo base: https://huggingface.co/parthiv11/indic_whisper_hi_multi_gpu
 - Proyecto IndicWhisper de AI4Bharat: https://ai4bharat.iitm.ac.in/areas/model/ASR/IndicWhisper/

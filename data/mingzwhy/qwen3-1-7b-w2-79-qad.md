@@ -24,7 +24,7 @@ La configuración de cuantización objetivo es extrema: pesos mixtos INT1.58/INT
 | Libreria | transformers |
 | Pipeline | text-generation |
 | Tamano del repositorio | 3,5 GB |
-| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparados entre estos tres modelos, por l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAD
 - Checkpoint recuperado W2.79-QAOPD: https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo y receta QAOPD: https://github.com/MingZwhy/QAOPD

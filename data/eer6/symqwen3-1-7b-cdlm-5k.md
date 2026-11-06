@@ -84,7 +84,7 @@ La comparación directa con el base Qwen3-1.7B no es posible porque los benchmar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EER6/SymQwen3-1.7B-CDLM-5k
+- Hugging Face: https://huggingface.co/EER6/SymQwen3-1.7B-CDLM-5k
 - Perfil del autor: https://huggingface.co/EER6
 - Repositorio de Qwen3 (base): https://github.com/QwenLM/Qwen3
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-1.7B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-1.7B

@@ -4,7 +4,7 @@
 
 Ultra Dream Nexus es un checkpoint de text-to-image basado en la arquitectura SDXL/Illustrious, creado por el usuario GWick923. Se trata de un modelo experimental que surge de una combinación ponderada de tres modelos de la serie NDREAM: NDREAM_TRI_ULTRA_GEN (50 %), NDREAM_FINAL (35 %) y xtrio_vyron_obs (15 %). El resultado es un modelo de difusión latente orientado a ilustración y arte generativo, con un VAE SDXL horneado que optimiza colores y contraste sin necesidad de un VAE externo.
 
-El modelo se publica en HuggingFace con un tamaño de repositorio de 14.2 GB y pesos en precisión fp32 (13.23 GB). Al ser un merge de checkpoints, no se ha entrenado desde cero, sino que combina las capacidades de los modelos base para ofrecer un estilo visual concreto. Su relevancia radica en que ofrece una alternativa lista para usar en flujos de trabajo de Stable Diffusion, especialmente para quienes buscan resultados de alta calidad en resolución 1024x1024 con posibilidad de ampliación a 1536 mediante hires fix.
+El modelo se publica en Hugging Face con un tamaño de repositorio de 14.2 GB y pesos en precisión fp32 (13.23 GB). Al ser un merge de checkpoints, no se ha entrenado desde cero, sino que combina las capacidades de los modelos base para ofrecer un estilo visual concreto. Su relevancia radica en que ofrece una alternativa lista para usar en flujos de trabajo de Stable Diffusion, especialmente para quienes buscan resultados de alta calidad en resolución 1024x1024 con posibilidad de ampliación a 1536 mediante hires fix.
 
 ## Especificaciones técnicas
 
@@ -73,5 +73,5 @@ No disponible. No se han encontrado datos comparativos en la información propor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GWick923/ultra-dream-nexus
+- Hugging Face: https://huggingface.co/GWick923/ultra-dream-nexus
 - Civitai (posiblemente relacionado): https://civitai.com/models/1731411/nexusdreamultra

@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento para comparar directamente con otros model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-midtrain
+- Hugging Face del modelo: https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-midtrain
 - Modelo fusionado (Ling-3.0-tiny-base): https://huggingface.co/inclusionAI/Ling-3.0-tiny-base
 - Modelo post-entrenado (Ling-3.0-tiny): https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Repositorio GitHub de InclusionAI: https://github.com/inclusionAI/Ling

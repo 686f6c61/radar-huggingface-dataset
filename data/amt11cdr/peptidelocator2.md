@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PeptideLocator2 es un repositorio de modelos publicado en HuggingFace por el usuario Amt11cdr bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, de su arquitectura, del dataset de entrenamiento ni de los resultados obtenidos. El repositorio ocupa 0,4 GB y no declara pipeline de inferencia, idiomas soportados ni etiquetas funcionales mas alla de la licencia y la region.
+PeptideLocator2 es un repositorio de modelos publicado en Hugging Face por el usuario Amt11cdr bajo licencia Apache 2.0. En el momento de redactar esta ficha, la model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, de su arquitectura, del dataset de entrenamiento ni de los resultados obtenidos. El repositorio ocupa 0,4 GB y no declara pipeline de inferencia, idiomas soportados ni etiquetas funcionales mas alla de la licencia y la region.
 
 El nombre del repositorio sugiere un modelo orientado a la prediccion de localizacion de peptidos, un problema clasico de bioinformatica computacional (asignar a una secuencia peptidica su compartimento subcelular o su patron de localizacion). Esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor, por lo que debe tratarse como hipotesis de trabajo y no como caracteristica verificada.
 
@@ -33,7 +33,7 @@ El unico dato cuantitativo disponible sobre el artefacto es el tamano del reposi
 
 No se ha documentado ninguna capacidad de forma explicita. A partir de los metadatos disponibles solo puede afirmarse lo siguiente:
 
-- No se declara tarea de pipeline en HuggingFace (generacion de texto, clasificacion, extraccion de caracteristicas u otras), por lo que la interfaz de uso prevista es desconocida.
+- No se declara tarea de pipeline en Hugging Face (generacion de texto, clasificacion, extraccion de caracteristicas u otras), por lo que la interfaz de uso prevista es desconocida.
 - No hay evidencia publicada de soporte de tool calling ni de function calling.
 - No hay evidencia publicada de capacidades agenticas ni de razonamiento multi-paso.
 - No consta soporte multilingue; el campo de idiomas esta vacio.
@@ -72,7 +72,7 @@ No es posible establecer una comparativa fiable: la informacion disponible no pe
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PeptideLocator2 (Amt11cdr) | no disponible | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| PeptideLocator2 (Amt11cdr) | no disponible | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia de contexto del dominio, y sin que constituya una comparacion directa, los modelos de lenguaje proteico de proposito general como ESM-2 o ProtBert se publican habitualmente con documentacion de arquitectura, numero de parametros y resultados en tareas de anotacion. PeptideLocator2 no ofrece ninguno de esos elementos, lo que impide situarlo frente a ellos.
@@ -92,5 +92,5 @@ Como referencia de contexto del dominio, y sin que constituya una comparacion di
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Amt11cdr/PeptideLocator2
+- Repositorio en Hugging Face: https://huggingface.co/Amt11cdr/PeptideLocator2
 - Paper, blog, repositorio de codigo o demo: no disponible (no se han encontrado referencias externas en la informacion proporcionada).

@@ -77,7 +77,7 @@ Estos modelos compiten en el rango de 3-4 mil millones de parámetros, con venta
 
 ## Enlaces
 
-- Repositorio HuggingFace: [dvader13/smollm3-3b-sft-3p11t](https://huggingface.co/dvader13/smollm3-3b-sft-3p11t)
+- Repositorio Hugging Face: [dvader13/smollm3-3b-sft-3p11t](https://huggingface.co/dvader13/smollm3-3b-sft-3p11t)
 - Modelo base SmolLM3-3B: [HuggingFaceTB/SmolLM3-3B](https://huggingface.co/HuggingFaceTB/SmolLM3-3B)
 - Curso de SmolLM3 (SFT): [Supervised Fine-Tuning with SmolLM3](https://huggingface.co/learn/smol-course/unit1/3)
 - Recetas de entrenamiento (alignment-handbook): [alignment-handbook/recipes/smollm3](https://github.com/huggingface/alignment-handbook/blob/main/recipes/smollm3/README.md)

@@ -117,7 +117,7 @@ La comparativa se limita a los modelos que aparecen en la evaluacion del autor. 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Knowledge-Units-LoRA-r128
+- Hugging Face del adaptador: https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Knowledge-Units-LoRA-r128
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3.8-27B-FP8
 - Paper: Project Alexandria: Towards Freeing Scientific Knowledge from Copyright Burdens via LLMs, https://arxiv.org/abs/2502.19413v2

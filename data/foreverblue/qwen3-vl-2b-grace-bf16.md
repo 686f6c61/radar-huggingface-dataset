@@ -82,7 +82,7 @@ No se dispone de datos comparativos con otros VLMs de 2B fuera de la familia Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-BF16
+- Modelo en Hugging Face: https://huggingface.co/ForeverBlue/Qwen3-VL-2B-GRACE-BF16
 - Paper (arXiv): https://arxiv.org/abs/2601.22709
 - DOI: https://doi.org/10.48550/arXiv.2601.22709
 - Código (GitHub): https://github.com/ForeverBlue816/GRACE

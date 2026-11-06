@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Motif-Video-2B-FP8 es una versión cuantizada en FP8 (`float8_e4m3fn`) del transformer DiT del modelo de generación de vídeo a partir de texto Motif-Video-2B, desarrollado por Motif-Technologies. Esta cuantización ha sido realizada por el usuario axteam y publicada en HuggingFace como derivado bajo licencia Apache 2.0. El objetivo es reducir el tamaño en memoria del modelo original (aproximadamente un 63 % respecto a la versión BF16 del transformer) para facilitar su ejecución en ComfyUI, el ecosistema popular de generación de imágenes y vídeo con interfaces de nodos.
+Motif-Video-2B-FP8 es una versión cuantizada en FP8 (`float8_e4m3fn`) del transformer DiT del modelo de generación de vídeo a partir de texto Motif-Video-2B, desarrollado por Motif-Technologies. Esta cuantización ha sido realizada por el usuario axteam y publicada en Hugging Face como derivado bajo licencia Apache 2.0. El objetivo es reducir el tamaño en memoria del modelo original (aproximadamente un 63 % respecto a la versión BF16 del transformer) para facilitar su ejecución en ComfyUI, el ecosistema popular de generación de imágenes y vídeo con interfaces de nodos.
 
 El archivo publicado contiene únicamente el transformer (DiT, `MotifVideoTransformer3DModel`) cuantizado; el VAE y los codificadores de texto no están incluidos y deben descargarse del repositorio original. Con un tamaño de 2,6 GB en un único fichero safetensors, esta versión busca permitir la generación de vídeo en configuraciones con menos VRAM, manteniendo las normas, sesgos y capas de modulación AdaLN en BF16 para preservar la calidad.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nicholasbrownped/multitask-warmup-2024` es un prototipo de investigación publicado en HuggingFace por el usuario Nicholasbrownped, construido sobre una implementación de la arquitectura EfficientFormer y orientado a tareas multitarea. El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` que, según la propia model card, no ha sido entrenado ni auditado.
+`Nicholasbrownped/multitask-warmup-2024` es un prototipo de investigación publicado en Hugging Face por el usuario Nicholasbrownped, construido sobre una implementación de la arquitectura EfficientFormer y orientado a tareas multitarea. El repositorio se presenta explícitamente como un punto de partida experimental: incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors` que, según la propia model card, no ha sido entrenado ni auditado.
 
 El dato más relevante para evaluarlo es su tamaño real: los metadatos de safetensors registran 24.832 parámetros totales (veinticuatro mil ochocientos treinta y dos), un orden de magnitud propio de una prueba de humo y no de un modelo funcional. La model card no reclama ninguna puntuación de benchmark y advierte que el checkpoint "no se presenta como un checkpoint entrenado". El repositorio ocupa 0,0 GB, no tiene descargas ni "likes", y no declara pipeline ni idiomas soportados.
 
@@ -87,7 +87,7 @@ No es posible establecer una comparativa rigurosa con otros modelos. No hay benc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nicholasbrownped/multitask-warmup-2024
+- Modelo en Hugging Face: https://huggingface.co/Nicholasbrownped/multitask-warmup-2024
 - Ficheros incluidos en el repositorio: `model.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Búsqueda web: no se han encontrado enlaces relevantes sobre el modelo. Los resultados devueltos por el buscador corresponden a páginas de cuestionarios diarios de Bing y no guardan relación con este repositorio.
 - No se dispone de paper, blog, repositorio de código adicional ni demo asociados al modelo en la información proporcionada.

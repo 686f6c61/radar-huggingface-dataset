@@ -80,7 +80,7 @@ No se dispone de comparativas con otros modelos. Al ser un checkpoint experiment
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h025.sft-v7.step_24
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h025.sft-v7.step_24
 - Dataset asociado (run archive): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

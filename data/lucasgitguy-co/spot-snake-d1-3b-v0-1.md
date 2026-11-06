@@ -23,7 +23,7 @@ Es relevante ahora porque ejemplifica una tendencia práctica: reutilizar modelo
 
 ## Arquitectura y entrenamiento
 
-El modelo hereda la arquitectura del base LiquidAI/d1-3B, etiquetada en HuggingFace como `lfm2_vl`, con torre de visión y código de runtime propio del repositorio upstream. El post-entrenamiento consistió en un adaptador de rango 8 (formato propio, no PEFT) entrenado sobre el dataset Spot Snake Decisions v0.1, en el que el juego proporciona los movimientos seguros y el modelo aprende a ordenarlos imitando a un profesor heurístico que conserva el mayor espacio abierto. No se documenta el número de tokens de entrenamiento, la composición detallada del dataset ni el uso de RLHF o DPO; el objetivo declarado es la imitación del profesor, no la optimización de la puntuación del juego.
+El modelo hereda la arquitectura del base LiquidAI/d1-3B, etiquetada en Hugging Face como `lfm2_vl`, con torre de visión y código de runtime propio del repositorio upstream. El post-entrenamiento consistió en un adaptador de rango 8 (formato propio, no PEFT) entrenado sobre el dataset Spot Snake Decisions v0.1, en el que el juego proporciona los movimientos seguros y el modelo aprende a ordenarlos imitando a un profesor heurístico que conserva el mayor espacio abierto. No se documenta el número de tokens de entrenamiento, la composición detallada del dataset ni el uso de RLHF o DPO; el objetivo declarado es la imitación del profesor, no la optimización de la puntuación del juego.
 
 Un detalle técnico relevante es el proceso de recuperación: el primer guardado completo se quedó sin espacio en disco, por lo que los pesos publicados se reconstruyeron fusionando el adaptador entrenado en el base fijado (`LiquidAI/d1-3B` en `051bcc464b`), sin reentrenar; el fichero `recovery.json` documenta el procedimiento. La torre de visión quedó sin cambios durante el entrenamiento y el autor indica que el proyector de este variante no puede convertirse con la versión fijada de llama.cpp (no probado), debiendo usarse `mmproj-d1-3B-F16.gguf` del repositorio GGUF del modelo base. Los ficheros GGUF funcionan con llama.cpp en la revisión `1b6935b` o posterior, exponiendo un endpoint `/v1/systemone` para consultas de estado y elección.
 
@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spot Snake d1-3B v0.1 | 3.123.483.888 | no disponible | Decisión de juego (ranking de movimientos seguros) | spot-snake-composite (LFM Open License v1.0 + Apache-2.0) | HuggingFace, safetensors y GGUF |
-| LiquidAI/d1-3B (base) | 3B (según modelo base) | no disponible | Modelo base LFM2-VL | LFM Open License v1.0 | HuggingFace |
+| Spot Snake d1-3B v0.1 | 3.123.483.888 | no disponible | Decisión de juego (ranking de movimientos seguros) | spot-snake-composite (LFM Open License v1.0 + Apache-2.0) | Hugging Face, safetensors y GGUF |
+| LiquidAI/d1-3B (base) | 3B (según modelo base) | no disponible | Modelo base LFM2-VL | LFM Open License v1.0 | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos de decisión de juego comparables en la documentación proporcionada.
@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos de decisión de juego comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucasgitguy-co/spot-snake-d1-3B-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/spot-snake-d1-3B-v0.1
 - Dataset de decisiones: https://huggingface.co/datasets/Lucasgitguy-co/spot-snake-decisions-v0.1
 - Modelo base: https://huggingface.co/LiquidAI/d1-3B
 - GGUF del modelo base: https://huggingface.co/LiquidAI/d1-3B-GGUF

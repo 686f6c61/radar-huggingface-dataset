@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directamente, ya que este es un subconjunto MTP específico para Qwen3.8-27B. Existen repositorios similares del mismo autor para otros modelos Qwen (Qwen3.5, Qwen3.6, etc.), pero no se proporcionan datos de rendimiento comparativos. El modelo base Qwen3.8-27B completo está disponible en HuggingFace, pero no es comparable porque este repositorio solo contiene los tensores MTP.
+No se dispone de modelos comparables directamente, ya que este es un subconjunto MTP específico para Qwen3.8-27B. Existen repositorios similares del mismo autor para otros modelos Qwen (Qwen3.5, Qwen3.6, etc.), pero no se proporcionan datos de rendimiento comparativos. El modelo base Qwen3.8-27B completo está disponible en Hugging Face, pero no es comparable porque este repositorio solo contiene los tensores MTP.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de modelos comparables directamente, ya que este es un subconjunto
 
 ## Enlaces
 
-- Repositorio HuggingFace: [a4lg/Qwen3.8-27B-MTP-ONLY-GGUF](https://huggingface.co/a4lg/Qwen3.8-27B-MTP-ONLY-GGUF)
+- Repositorio Hugging Face: [a4lg/Qwen3.8-27B-MTP-ONLY-GGUF](https://huggingface.co/a4lg/Qwen3.8-27B-MTP-ONLY-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Script de conversión para injertar MTP: [convert.py (gist de buzz)](https://gist.github.com/buzz/1c439684d5e3f36492ae9f64ef7e3f67/7e1d6f929e141f4977f89f99e6a7df39f41eeffa)
 - Cuantizaciones de referencia (Unsloth): [unsloth/Qwen3.8-27B-GGUF](https://huggingface.co/unsloth/Qwen3.8-27B-GGUF)

@@ -94,7 +94,7 @@ La comparativa muestra que esta variante RVN ofrece la tasa de rechazos más baj
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/cole17e/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/cole17e/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Fuente de abliteración trohrbaugh/Qwen3.8-27B-heretic-ara](https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara)
 - [Herramienta heretic de p-e-w (implementación de ARA)](https://github.com/p-e-w/heretic)

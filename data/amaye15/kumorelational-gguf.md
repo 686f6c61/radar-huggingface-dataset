@@ -84,7 +84,7 @@ La única comparación directa documentada es con el checkpoint original de NVID
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amaye15/kumorelational-gguf
+- Modelo en Hugging Face: https://huggingface.co/amaye15/kumorelational-gguf
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/Kumo-Relational
 - Repositorio zsfm-rs: https://github.com/amaye15/zsfm-rs
 - Framework Burn: https://github.com/tracel-ai/burn

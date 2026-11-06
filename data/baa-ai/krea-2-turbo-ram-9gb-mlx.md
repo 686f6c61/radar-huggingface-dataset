@@ -88,7 +88,7 @@ Alternativas externas: el port independiente avlp12/krea2_alis_mlx (12,9 B, no c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-9GB-MLX
+- Repositorio Hugging Face: https://huggingface.co/baa-ai/Krea-2-Turbo-RAM-9GB-MLX
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Licencia Krea 2: https://krea.ai/krea-2-licensing
 - mflux (runtime): https://github.com/filipstrand/mflux

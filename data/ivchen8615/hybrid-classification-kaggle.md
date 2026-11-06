@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ivchen8615/hybrid-classification-kaggle` es un repositorio de HuggingFace publicado por el usuario ivchen8615 que contiene una implementación funcional de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con benchmark. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los argumentos de experimento por defecto (`training_args.json`) y el propio README.
+`ivchen8615/hybrid-classification-kaggle` es un repositorio de Hugging Face publicado por el usuario ivchen8615 que contiene una implementación funcional de una arquitectura denominada "Hybrid" orientada a tareas de clasificación. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: la propia model card indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (*smoke tests*) y no un checkpoint con benchmark. El repositorio incluye el código de entrenamiento (`train.py`), la configuración de arquitectura (`config.json`), los argumentos de experimento por defecto (`training_args.json`) y el propio README.
 
 El tamaño real declarado en safetensors es de 33.088 parámetros totales, con un peso en disco que no llega a 0,1 GB (el repositorio figura como 0.0 GB). Se etiqueta con `hybrid`, `pytorch`, `classification` y licencia Apache 2.0. La arquitectura combina atención de tipo flash con fusión mediante *cross attention*, activación approx GELU y normalización por *batchnorm*, en una configuración de escala "large" definida por el autor.
 
@@ -65,7 +65,7 @@ No disponible. El repositorio no ofrece ningún checkpoint entrenado con métric
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hybrid-classification-kaggle | 33.088 | no disponible | no disponible | Apache 2.0 | HuggingFace (checkpoint de inicialización) |
+| hybrid-classification-kaggle | 33.088 | no disponible | no disponible | Apache 2.0 | Hugging Face (checkpoint de inicialización) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,7 +81,7 @@ No disponible. El repositorio no ofrece ningún checkpoint entrenado con métric
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivchen8615/hybrid-classification-kaggle
+- Modelo en Hugging Face: https://huggingface.co/ivchen8615/hybrid-classification-kaggle
 - Repositorio de datasets abiertos de Kaggle (resultado genérico de la búsqueda, sin relación directa con el modelo): https://www.kaggle.com/datasets
 - Notebook "hybrid Model" en Kaggle (resultado genérico, sin relación directa confirmada): https://www.kaggle.com/code/dranilkumardubey/hybrid-model
 - Notebook "Hybrid ECG Classification Model" en Kaggle (resultado genérico, sin relación directa confirmada): https://www.kaggle.com/code/nilanchalamahanty/hybrid-ecg-classification-model

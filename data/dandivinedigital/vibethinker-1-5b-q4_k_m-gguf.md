@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | VibeThinker-1.5B-Q4_K_M-GGUF (este) | 1,78 B | no disponible | MIT | GGUF | Cuantizacion Q4_K_M, enfocado en math/code/gpqa |
 | WeiboAI/VibeThinker-1.5B | 1,78 B | no disponible | MIT (segun modelo base) | safetensors | Pesos originales sin cuantizar |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo generalista con soporte multilingue |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | Modelo pequeno generalista |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Modelo pequeno generalista |
 
 La comparativa con Qwen2.5-1.5B y SmolLM2-1.7B se incluye por similitud de tamano; no se dispone de datos de rendimiento del modelo VibeThinker para establecer comparaciones cuantitativas. Los datos de contexto y licencia de los modelos alternativos provienen de sus documentaciones publicas y no de la informacion proporcionada en esta ficha.
 
@@ -90,8 +90,8 @@ La comparativa con Qwen2.5-1.5B y SmolLM2-1.7B se incluye por similitud de taman
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/DanDivineDigital/VibeThinker-1.5B-Q4_K_M-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/WeiboAI/VibeThinker-1.5B
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/DanDivineDigital/VibeThinker-1.5B-Q4_K_M-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/WeiboAI/VibeThinker-1.5B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Instrucciones de uso de llama.cpp: https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage

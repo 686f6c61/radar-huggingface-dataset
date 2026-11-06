@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cv-generation es un repositorio publicado en HuggingFace por el usuario ankitakumar que contiene una implementacion funcional de una arquitectura denominada Dino orientada a tareas de generacion, en configuracion base. El punto clave para cualquier evaluacion es que no se trata de un modelo entrenado ni ajustado: el archivo `model.safetensors` se describe explicitamente en la propia model card como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento contrastado. El repositorio prioriza codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de benchmark.
+cv-generation es un repositorio publicado en Hugging Face por el usuario ankitakumar que contiene una implementacion funcional de una arquitectura denominada Dino orientada a tareas de generacion, en configuracion base. El punto clave para cualquier evaluacion es que no se trata de un modelo entrenado ni ajustado: el archivo `model.safetensors` se describe explicitamente en la propia model card como un checkpoint de inicializacion valido para pruebas de humo (smoke tests), no como un checkpoint con rendimiento contrastado. El repositorio prioriza codigo transparente y pruebas repetibles, y omite deliberadamente cualquier afirmacion de benchmark.
 
 La arquitectura declarada combina atencion de ventana deslizante (sliding window), fusion con compuertas (gated fusion), activacion ReLU y normalizacion por lotes (batchnorm). El recuento real de parametros extraido del archivo safetensors es de 33.088, lo que lo situa como un modelo de tamano minimo, coherente con su proposito experimental. El entrenamiento por defecto propuesto en `training_args.json` utiliza el optimizador Lion con un esquema de calentamiento lineal (linear warmup), pero la propia documentacion aclara que son valores de partida, no evidencia de una ejecucion completada.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye resultados de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ankitakumar/cv-generation
+- Modelo en Hugging Face: https://huggingface.co/ankitakumar/cv-generation
 - Archivo principal de entrenamiento: `train.py` (incluido en el repositorio)
 - Configuracion de arquitectura: `config.json` (incluido en el repositorio)
 - Receta experimental por defecto: `training_args.json` (incluido en el repositorio)

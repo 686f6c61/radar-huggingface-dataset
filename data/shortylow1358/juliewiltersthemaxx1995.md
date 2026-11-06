@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shortylow1358/juliewiltersthemaxx1995` es un repositorio alojado en HuggingFace por el usuario shortylow1358, publicado el 25 de octubre de 2026 y con un tamano de 0,4 GB. La model card asociada unicamente declara la licencia `openrail`: no incluye descripcion, pipeline, idiomas, arquitectura ni instrucciones de uso. El repositorio no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion por parte de la comunidad.
+`shortylow1358/juliewiltersthemaxx1995` es un repositorio alojado en Hugging Face por el usuario shortylow1358, publicado el 25 de octubre de 2026 y con un tamano de 0,4 GB. La model card asociada unicamente declara la licencia `openrail`: no incluye descripcion, pipeline, idiomas, arquitectura ni instrucciones de uso. El repositorio no registra descargas ni "likes" en el momento de la consulta, por lo que se trata de un artefacto sin validacion por parte de la comunidad.
 
 Por el nombre del repositorio y por el perfil del autor en voice-models.com (donde publica modelos de voz con la etiqueta RVC), todo apunta a un artefacto de conversion de voz o de generacion de imagen orientado al personaje Julie Winters de la serie animada *The Maxx* (1995). Las busquedas web devuelven modelos de terceros del mismo personaje en formato RVC v2 (300 epochs) y LoRA para SDXL/Pony, pero ninguno de esos resultados corresponde de forma verificable a este repositorio concreto.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `shortylow1358/juliewiltersthemaxx1995` | no disponible (posible voz o difusion) | no disponible | no disponible | no disponible | openrail | HuggingFace, 0 descargas |
+| `shortylow1358/juliewiltersthemaxx1995` | no disponible (posible voz o difusion) | no disponible | no disponible | no disponible | openrail | Hugging Face, 0 descargas |
 | Julie Winters (The Maxx 1995) [RVC v2, 300 epochs] (voice-models.com, modelo a89) | conversion de voz RVC v2 | no disponible | no aplica | no disponible | no disponible | voice-models.com |
 | Julie Winters (The Maxx) - V1 LoRA (Tensor.Art) | LoRA para Pony | no disponible | no aplica | no disponible | no disponible | Tensor.Art |
 | Julie Winters - The Maxx (PixAI / SeaArt) | modelo de difusion para personaje | no disponible | no aplica | no disponible | no disponible | PixAI, SeaArt |
@@ -85,7 +85,7 @@ Los tres alternativas son modelos homonimos del mismo personaje publicados por o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shortylow1358/juliewiltersthemaxx1995
+- Hugging Face: https://huggingface.co/shortylow1358/juliewiltersthemaxx1995
 - Perfil del autor en voice-models.com: https://voice-models.com/creator/shortylow1358
 - Modelo homonimo RVC v2 (otro autor): https://voice-models.com/model/a89
 - LoRA homonimo en Tensor.Art: https://tensor.art/models/857598927610875648

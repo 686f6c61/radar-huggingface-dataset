@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Coral-Router (denominado Coral-MNLI en su propia model card) es un modelo de clasificación zero-shot desarrollado por el usuario de HuggingFace roskosmos19. Se trata de un ajuste fino de facebook/bart-large-mnli sobre el dataset MultiNLI, empaquetado para la tarea de Natural Language Inference (NLI) y expuesto a través del pipeline `zero-shot-classification`. Con 407.344.133 parámetros (~407 M) y un tamaño de repositorio de 1,6 GB, no es un modelo generativo, sino un clasificador que puntúa etiquetas candidatas para un texto dado sin necesidad de entrenamiento específico por tarea.
+Coral-Router (denominado Coral-MNLI en su propia model card) es un modelo de clasificación zero-shot desarrollado por el usuario de Hugging Face roskosmos19. Se trata de un ajuste fino de facebook/bart-large-mnli sobre el dataset MultiNLI, empaquetado para la tarea de Natural Language Inference (NLI) y expuesto a través del pipeline `zero-shot-classification`. Con 407.344.133 parámetros (~407 M) y un tamaño de repositorio de 1,6 GB, no es un modelo generativo, sino un clasificador que puntúa etiquetas candidatas para un texto dado sin necesidad de entrenamiento específico por tarea.
 
 Su relevancia práctica está en el escenario zero-shot: el modelo convierte cada etiqueta candidata en una hipótesis del tipo "This example is {label}." y usa la probabilidad de implicación (entailment) como puntuación. Esto permite construir clasificadores de tema, sentimiento, intención o moderación sin anotar datos, algo útil para prototipado rápido y para enrutado de peticiones en pipelines más grandes, que es precisamente lo que sugiere el sufijo "Router" del identificador.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: alrededor de 1,6 GB en precisión fp32 (tamaño del repositorio, ~407 M de parámetros), aproximadamente 0,8 GB en fp16 y en torno a 0,4-0,5 GB en int8. Son estimaciones derivadas del recuento de parámetros; no hay cifras publicadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2-4 GB de VRAM es suficiente; una NVIDIA T4, RTX 3060, RTX 4060 o superior cubre el caso sin problemas. Una RTX 4090, A100 o H100 resultan sobredimensionadas para un único modelo de este tamaño, aunque tienen sentido si se sirve en lote o junto a otros componentes del pipeline.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU consumer moderna, e incluso en CPU (la inferencia en CPU es viable con 407 M de parámetros, con latencias mayores).
-- Opciones de despliegue: Transformers con `pipeline("zero-shot-classification")`, `AutoModelForSequenceClassification` para uso manual, y servidores de inferencia compatibles con modelos de HuggingFace como Text Generation Inference (TGI) o soluciones de embeddings/clasificación vía API. No hay pesos GGUF publicados en el repositorio, por lo que el uso directo con llama.cpp u Ollama requeriría una conversión propia.
+- Opciones de despliegue: Transformers con `pipeline("zero-shot-classification")`, `AutoModelForSequenceClassification` para uso manual, y servidores de inferencia compatibles con modelos de Hugging Face como Text Generation Inference (TGI) o soluciones de embeddings/clasificación vía API. No hay pesos GGUF publicados en el repositorio, por lo que el uso directo con llama.cpp u Ollama requeriría una conversión propia.
 - Latencia y throughput: no disponible. No se han publicado mediciones en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La ventaja diferencial de este modelo frente a facebook/bart-large-mnli no está
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roskosmos19/Coral-Router
+- Modelo en Hugging Face: https://huggingface.co/roskosmos19/Coral-Router
 - Modelo relacionado del mismo autor: https://huggingface.co/roskosmos19/Coral
 - Perfil del autor: https://huggingface.co/roskosmos19
 - Modelo base: https://huggingface.co/facebook/bart-large-mnli

@@ -4,7 +4,7 @@
 
 RAID-techjam/raid-detector-fusion es un conjunto de pesos experimentales para la detección de imágenes generadas o manipuladas por inteligencia artificial, desarrollado por el usuario RAID-techjam. El modelo combina dos flujos de procesamiento: un flujo semántico basado en un ViT-B/16 preentrenado, que captura características de alto nivel de la imagen, y un flujo forense de baja frecuencia basado en la arquitectura Bayar+SRM, especializado en artefactos estadísticos y de compresión. Ambos flujos se fusionan mediante un clasificador entrenado con los flujos congelados, lo que permite combinar información semántica y de baja frecuencia para distinguir entre imágenes auténticas y generadas.
 
-El repositorio contiene cinco archivos de checkpoint (`.pt`) y un archivo de configuración YAML, con un tamaño total de 0,4 GB. No se especifican licencia, idiomas ni pipeline en la página de HuggingFace. El modelo se presenta como experimental y no está listo para producción, ya que el punto de entrada de inferencia (`predict.py`) aún no soporta el checkpoint de fusión Bayar-aware. Los resultados reportados en la model card indican un AUC de validación de aproximadamente 0,8738 en un subconjunto limpio de 10.000 imágenes del dataset SID_Set, y una robustez limitada ante reducciones de escala agresivas.
+El repositorio contiene cinco archivos de checkpoint (`.pt`) y un archivo de configuración YAML, con un tamaño total de 0,4 GB. No se especifican licencia, idiomas ni pipeline en la página de Hugging Face. El modelo se presenta como experimental y no está listo para producción, ya que el punto de entrada de inferencia (`predict.py`) aún no soporta el checkpoint de fusión Bayar-aware. Los resultados reportados en la model card indican un AUC de validación de aproximadamente 0,8738 en un subconjunto limpio de 10.000 imágenes del dataset SID_Set, y una robustez limitada ante reducciones de escala agresivas.
 
 ## Especificaciones tecnicas
 
@@ -75,6 +75,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (de
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/RAID-techjam/raid-detector-fusion
+- Repositorio de Hugging Face: https://huggingface.co/RAID-techjam/raid-detector-fusion
 - Repositorio de codigo mencionado en la model card: https://github.com/Beastarz/RAID (no verificado en la busqueda web)
 - Dataset SID_Set: no se ha encontrado un enlace oficial en la informacion disponible.

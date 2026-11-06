@@ -1,7 +1,7 @@
 # sovythos/Sovythos-303M-Instruct
 
 ## Resumen
-Sovythos-303M-Instruct es un modelo de lenguaje publicado en HuggingFace por el usuario sovythos bajo licencia Apache-2.0. El identificador indica un tamaño de aproximadamente 303 millones de parámetros y el sufijo "Instruct" sugiere un ajuste orientado a seguir instrucciones, pero la model card del repositorio no contiene más que el encabezado de licencia: no hay descripción, ni arquitectura declarada, ni datos de entrenamiento, ni resultados de evaluación.
+Sovythos-303M-Instruct es un modelo de lenguaje publicado en Hugging Face por el usuario sovythos bajo licencia Apache-2.0. El identificador indica un tamaño de aproximadamente 303 millones de parámetros y el sufijo "Instruct" sugiere un ajuste orientado a seguir instrucciones, pero la model card del repositorio no contiene más que el encabezado de licencia: no hay descripción, ni arquitectura declarada, ni datos de entrenamiento, ni resultados de evaluación.
 
 Se trata, por tanto, de un modelo pequeño, en la franja de los 300 M de parámetros, categoría en la que compiten propuestas como Qwen2.5-0.5B-Instruct o SmolLM2-360M-Instruct. Este rango de tamaño es relevante para despliegues en CPU, dispositivos de borde y GPUs de consumo, donde el coste por token y la huella de memoria son críticos.
 
@@ -35,7 +35,7 @@ Un punto que merece cautela: un modelo de 303 M de parámetros en bf16 ocupa apr
 - No hay información publicada sobre capacidades específicas. La model card no describe ninguna.
 - Se desconoce si el modelo soporta tool calling o function calling.
 - Se desconoce si soporta flujos de agente o razonamiento multi-paso.
-- Se desconoce el soporte multilingüe; la etiqueta `region:us` de HuggingFace no implica idioma de entrenamiento.
+- Se desconoce el soporte multilingüe; la etiqueta `region:us` de Hugging Face no implica idioma de entrenamiento.
 - Se desconoce si dispone de modo de razonamiento explícito (thinking mode), capacidades de visión o de audio.
 - Cualquier capacidad atribuida al sufijo "Instruct" del nombre debe verificarse empíricamente antes de usarla en producción.
 
@@ -72,10 +72,10 @@ Advertencia: el repositorio declara 7,5 GB. Si ese tamaño responde a pesos real
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Sovythos-303M-Instruct | 303 M (según nombre) | no disponible | Apache-2.0 | HuggingFace (0 descargas) | no disponible |
-| Qwen2.5-0.5B-Instruct | 494 M | 32 768 tokens | Apache-2.0 | HuggingFace, muy extendido | publicado por el autor |
-| SmolLM2-360M-Instruct | 362 M | 8 192 tokens | Apache-2.0 | HuggingFace, muy extendido | publicado por el autor |
-| TinyLlama-1.1B-Chat | 1,1 B | 2 048 tokens | Apache-2.0 | HuggingFace, muy extendido | publicado por el autor |
+| Sovythos-303M-Instruct | 303 M (según nombre) | no disponible | Apache-2.0 | Hugging Face (0 descargas) | no disponible |
+| Qwen2.5-0.5B-Instruct | 494 M | 32 768 tokens | Apache-2.0 | Hugging Face, muy extendido | publicado por el autor |
+| SmolLM2-360M-Instruct | 362 M | 8 192 tokens | Apache-2.0 | Hugging Face, muy extendido | publicado por el autor |
+| TinyLlama-1.1B-Chat | 1,1 B | 2 048 tokens | Apache-2.0 | Hugging Face, muy extendido | publicado por el autor |
 
 La comparación es estructural: los tres modelos alternativos cuentan con documentación completa, versiones cuantizadas publicadas y resultados de evaluación verificables, mientras que Sovythos-303M-Instruct carece de todos esos elementos. En cuanto a rendimiento, no es posible comparar porque no existen datos del modelo analizado.
 
@@ -91,5 +91,5 @@ La comparación es estructural: los tres modelos alternativos cuentan con docume
 - Antes de usar el modelo en producción, conviene auditar el tokenizador, comprobar la coherencia entre el nombre del repositorio y los pesos reales, y ejecutar una batería de evaluación propia en el dominio objetivo.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/sovythos/Sovythos-303M-Instruct
+- Hugging Face: https://huggingface.co/sovythos/Sovythos-303M-Instruct
 - No se han encontrado enlaces relevantes al modelo, al paper, al repositorio de código o a demos en los resultados de búsqueda disponibles: los resultados obtenidos corresponden a sitios de juegos en línea y no guardan relación con este modelo.

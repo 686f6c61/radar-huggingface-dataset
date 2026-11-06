@@ -27,7 +27,7 @@ La arquitectura subyacente es la de Qwen3-30B-A3B: un transformer decoder-only c
 
 Sobre el proceso de conversión, la model card es explícita: los pesos densos de atención se cuantizaron a q8_0 y los expertos a q4_0, y después se empaquetaron en fragmentos EQS con cada experto como blob contiguo para permitir el streaming eficiente desde disco. El autor declara que no hubo reentrenamiento ni ajuste fino, y que el resultado es una cuantización con pérdida, no un modelo derivado en sentido de entrenamiento. No se documentan detalles sobre el dataset de entrenamiento original, el uso de RLHF o DPO, ni innovaciones técnicas más allá del propio empaquetado EQS; esa información pertenece al modelo base y no se reproduce en este repositorio.
 
-Existe una discrepancia menor en los metadatos de HuggingFace: las etiquetas incluyen `base_model:finetune:Qwen/Qwen3-30B-A3B`, mientras que la model card afirma que no se aplicó ningún ajuste fino. La etiqueta es la que HuggingFace asigna automáticamente a las conversiones cuantizadas, pero conviene tenerla presente al catalogar el modelo.
+Existe una discrepancia menor en los metadatos de Hugging Face: las etiquetas incluyen `base_model:finetune:Qwen/Qwen3-30B-A3B`, mientras que la model card afirma que no se aplicó ningún ajuste fino. La etiqueta es la que Hugging Face asigna automáticamente a las conversiones cuantizadas, pero conviene tenerla presente al catalogar el modelo.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ La diferencia clave frente a las alternativas no es la calidad ni el rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/katalidevai/qwen3-30b-katali-lab-eqs
+- Repositorio en Hugging Face: https://huggingface.co/katalidevai/qwen3-30b-katali-lab-eqs
 - Modelo base Qwen3-30B-A3B: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - Repositorio de Katali Lab: https://github.com/katalidevai/katalilab
 - Texto completo de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

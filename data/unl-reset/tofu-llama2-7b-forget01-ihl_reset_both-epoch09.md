@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch09 | 6.738 M | no disponible | llama2 | Unlearning (forget01) | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | llama2 | Modelo base ajustado en TOFU | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | llama2 | Chat generalista | HuggingFace |
-| Otros checkpoints de la familia TOFU (p. ej. variantes de unlearning de locuslab) | ~6.738 M | no disponible | llama2 | Unlearning sobre distintas particiones | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch09 | 6.738 M | no disponible | llama2 | Unlearning (forget01) | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | llama2 | Modelo base ajustado en TOFU | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4096 | llama2 | Chat generalista | Hugging Face |
+| Otros checkpoints de la familia TOFU (p. ej. variantes de unlearning de locuslab) | ~6.738 M | no disponible | llama2 | Unlearning sobre distintas particiones | Hugging Face |
 
 La comparativa se limita a la familia TOFU/Llama-2 porque no se dispone de datos de rendimiento de este checkpoint frente a alternativas de unlearning de otros autores.
 
@@ -94,7 +94,7 @@ La comparativa se limita a la familia TOFU/Llama-2 porque no se dispone de datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch09
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget01-ihl_reset_both-epoch09
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Repositorio TOFU (referencia del dataset y benchmarks): https://github.com/locuslab/tofu

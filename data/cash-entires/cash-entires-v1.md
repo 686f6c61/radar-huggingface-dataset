@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cash-entires-v1 es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario cash-entires. Se trata de un modelo de aproximadamente 14,77 mil millones de parámetros distribuido en formato GGUF, con cuantización por matriz de importancia (imatrix), lo que sugiere que se trata de una cuantización de un modelo base previamente entrenado cuyo origen no está documentado en la model card. La model card es extremadamente escasa: únicamente declara la licencia MIT, sin descripción del propósito, datos de entrenamiento ni capacidades.
+Cash-entires-v1 es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario cash-entires. Se trata de un modelo de aproximadamente 14,77 mil millones de parámetros distribuido en formato GGUF, con cuantización por matriz de importancia (imatrix), lo que sugiere que se trata de una cuantización de un modelo base previamente entrenado cuyo origen no está documentado en la model card. La model card es extremadamente escasa: únicamente declara la licencia MIT, sin descripción del propósito, datos de entrenamiento ni capacidades.
 
 La relevancia de esta ficha radica precisamente en la falta de documentación: es un ejemplo de repositorio comunitario con información mínima, donde el usuario debe extremar las precauciones antes de usarlo en producción. La licencia MIT es permisiva y permite uso comercial, pero la procedencia del modelo base, el método de fine-tuning y la calidad de la cuantización no están verificados. Con 148 descargas y 1 like en el momento de redactar esta ficha, se trata de un modelo con adopción marginal y sin validación comunitaria significativa.
 
@@ -77,6 +77,6 @@ Frente a alternativas de la misma escala como Qwen2.5-14B o Phi-4, cash-entires-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cash-entires/cash-entires-v1
+- Repositorio en Hugging Face: https://huggingface.co/cash-entires/cash-entires-v1
 - Paper, blog o repositorio de origen: no disponible
 - Demo en línea: no disponible

@@ -18,7 +18,7 @@ Su relevancia es acotada pero clara para el nicho de la robotica open source: do
 | Longitud de contexto | no disponible (el autor menciona un "action horizon 50", que es el horizonte de accion y no la ventana de contexto) |
 | Tipos de cuantizacion | no disponible; no se ha realizado ninguna conversion de formato, por lo que no hay GGUF ni cuantizaciones publicadas |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (campo de licencia vacio en HuggingFace y ausente en la model card) |
+| Licencia | no disponible (campo de licencia vacio en Hugging Face y ausente en la model card) |
 | Formato de pesos | JAX/Orbax (checkpoint de solo inferencia, sin conversion). No es safetensors ni GGUF |
 | Tamano del repositorio | 6,3 GB |
 | Libreria | openpi |
@@ -76,13 +76,13 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Travor278/pi05-pick-dual-bottles-right-first-peer-lora-10k-e163` | no disponible | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| `Travor278/pi05-pick-dual-bottles-right-first-peer-lora-10k-e163` | no disponible | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Modelo base PI0.5 (openpi) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otras recetas "peer" de la misma serie Sim12 | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: el campo de licencia esta vacio tanto en HuggingFace como en la model card. No se puede asumir ningun permiso de uso comercial ni de redistribucion sin consultar al autor.
+- Licencia no disponible: el campo de licencia esta vacio tanto en Hugging Face como en la model card. No se puede asumir ningun permiso de uso comercial ni de redistribucion sin consultar al autor.
 - Modelo de un solo proposito: es una politica entrenada para la tarea concreta "pick-dual-bottles-right-first". No es un modelo de proposito general y no debe esperarse que generalice a otras tareas de manipulacion sin reentrenamiento.
 - Artefacto de solo inferencia: el checkpoint excluye optimizador, `train_state` y estado de reanudacion del `data_loader`, por lo que no permite reanudar el entrenamiento tal cual.
 - Dependencia estricta de formato: al no haberse realizado conversion, requiere el codigo fuente OpenPI compatible con PI0.5 y su entorno de configuracion base; no funciona con cargadores genericos de safetensors ni con runtimes de GGUF.
@@ -96,7 +96,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Travor278/pi05-pick-dual-bottles-right-first-peer-lora-10k-e163
+- Hugging Face: https://huggingface.co/Travor278/pi05-pick-dual-bottles-right-first-peer-lora-10k-e163
 - Panel de evaluacion (Swanlab): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Dataset de entrenamiento: `Shiki42/ctr-pick-dual-bottles-right-first-20260911`, commit `f0745c8ffdd63e1af44cf252a20274238998dfb1`
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

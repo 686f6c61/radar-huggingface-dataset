@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mistral-7b-v0.1-layla-v4 es un ajuste fino (fine-tuning) del modelo base Mistral 7B v0.1, desarrollado por l3utterfly y financiado por Layla Network. El modelo esta disenado especificamente para conversacion multi-turno e impersonacion de personajes, y sirve como motor del asistente personal offline Layla. Se distribuye bajo licencia Apache-2.0 y esta publicado en HuggingFace por el usuario Shirounyaa.
+mistral-7b-v0.1-layla-v4 es un ajuste fino (fine-tuning) del modelo base Mistral 7B v0.1, desarrollado por l3utterfly y financiado por Layla Network. El modelo esta disenado especificamente para conversacion multi-turno e impersonacion de personajes, y sirve como motor del asistente personal offline Layla. Se distribuye bajo licencia Apache-2.0 y esta publicado en Hugging Face por el usuario Shirounyaa.
 
 El ajuste se realizo sobre el dataset OpenHermes 2.5, que fue preprocesado por el autor para eliminar todas las negativas (refusals), suprimir cualquier mencion al asistente de IA, dividir los dialogos multi-turno generados en registros de conversacion independientes y anadir conversaciones de caracter NSFW generadas a partir del dataset Teatime. El resultado es un modelo orientado a mantener conversaciones fluidas y en personaje, sin las restricciones tipicas de un asistente convencional.
 
@@ -98,7 +98,7 @@ Los datos de contexto de los modelos comparables provienen de su documentacion o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shirounyaa/mistral-7b-v0.1-layla-v4
+- Hugging Face: https://huggingface.co/Shirounyaa/mistral-7b-v0.1-layla-v4
 - Model card original (referencia del autor): https://huggingface.co/l3utterfly/mistral-7b-v0.1-layla-v4
 - Open LLM Leaderboard: https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard
 - Resultados detallados en Open LLM Leaderboard: https://huggingface.co/datasets/open-llm-leaderboard/details_l3utterfly__mistral-7b-v0.1-layla-v4

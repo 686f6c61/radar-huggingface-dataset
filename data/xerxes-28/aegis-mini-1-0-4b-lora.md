@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| AEGIS-Mini-1.0 (este) | 4,05 B (adaptador 33 M) | 2.048 en entrenamiento | Apache-2.0 | HuggingFace (LoRA + GGUF) | Especializado en electrónica, drones, robótica, matemáticas y física; sin benchmarks |
-| Qwen3-4B (base) | 4,05 B | No disponible en la informacion | Apache-2.0 | HuggingFace | Modelo generalista; el adaptador hereda su arquitectura y contexto |
+| AEGIS-Mini-1.0 (este) | 4,05 B (adaptador 33 M) | 2.048 en entrenamiento | Apache-2.0 | Hugging Face (LoRA + GGUF) | Especializado en electrónica, drones, robótica, matemáticas y física; sin benchmarks |
+| Qwen3-4B (base) | 4,05 B | No disponible en la informacion | Apache-2.0 | Hugging Face | Modelo generalista; el adaptador hereda su arquitectura y contexto |
 | Alternativas de 4B especializadas en matemáticas/física | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion |
 
 ## Limitaciones y advertencias
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace (adaptador LoRA): https://huggingface.co/Xerxes-28/AEGIS-Mini-1.0-4B-LoRA
-- HuggingFace (versión GGUF): https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-GGUF
+- Hugging Face (adaptador LoRA): https://huggingface.co/Xerxes-28/AEGIS-Mini-1.0-4B-LoRA
+- Hugging Face (versión GGUF): https://huggingface.co/Xerxes-28/AEGIS-Mini-V1-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Dataset MATH-500: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
 - Dataset high-school-physics: https://huggingface.co/datasets/mrohith29/high-school-physics

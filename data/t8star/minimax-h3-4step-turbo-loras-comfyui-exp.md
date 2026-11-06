@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp
+- Repositorio Hugging Face: https://huggingface.co/t8star/minimax-h3-4step-turbo-loras-comfyui-exp
 - LoRA original de larryvrh: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
 - Tutorial en Bilibili: https://www.bilibili.com/video/BV1hFuE6tEvt/
 - Tutorial en YouTube: https://www.youtube.com/watch?v=Xj0IZ4Iq2uk

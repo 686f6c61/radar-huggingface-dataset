@@ -90,9 +90,9 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Tarea | Clases | Licencia | Metricas publicadas | Disponibilidad |
 |---|---|---|---|---|---|
-| Geoscan_pioneer_base_drone_detection_finetuned | Deteccion de objetos | 1 (`drone`) | MIT | mAP@50 0.9640, mAP@50-95 0.5916 | HuggingFace, 0 descargas |
+| Geoscan_pioneer_base_drone_detection_finetuned | Deteccion de objetos | 1 (`drone`) | MIT | mAP@50 0.9640, mAP@50-95 0.5916 | Hugging Face, 0 descargas |
 | `yolo11x` (Ultralytics, modelo base) | Deteccion de objetos | 80 (COCO) | AGPL-3.0 / licencia comercial | No disponible en la informacion proporcionada | Repositorio oficial de Ultralytics |
-| `doguilmak/Drone-Detection-YOLOv11x` | Deteccion de objetos | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (origen de los pesos de partida) |
+| `doguilmak/Drone-Detection-YOLOv11x` | Deteccion de objetos | No disponible | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (origen de los pesos de partida) |
 
 No se dispone de datos de parametros, contexto ni rendimiento comparado de las alternativas en la informacion proporcionada.
 
@@ -113,7 +113,7 @@ No se dispone de datos de parametros, contexto ni rendimiento comparado de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hlatar/Geoscan_pioneer_base_drone_detection_finetuned
+- Modelo en Hugging Face: https://huggingface.co/Hlatar/Geoscan_pioneer_base_drone_detection_finetuned
 - Repositorio CVproject: https://github.com/Hlatar/CVproject
 - Pesos previos de partida (doguilmak, Drone-Detection-YOLOv11x): https://huggingface.co/doguilmak/Drone-Detection-YOLOv11x/tree/main
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante al modelo; las busquedas devolvieron unicamente paginas de un hotel sin relacion con el contenido solicitado.

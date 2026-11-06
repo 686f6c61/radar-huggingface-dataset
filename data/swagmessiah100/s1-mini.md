@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia): https://huggingface.co/SwagMessiah100/s1-mini
+- Repositorio Hugging Face (copia): https://huggingface.co/SwagMessiah100/s1-mini
 - Repositorio oficial: https://huggingface.co/superwhisper/s1-mini
 - GGUF para llama.cpp/Ollama: https://huggingface.co/superwhisper/s1-mini-GGUF
 - Sitio web de Superwhisper: https://superwhisper.com

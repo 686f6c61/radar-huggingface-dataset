@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-CoderV4-4B-Omega es un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, desarrollado por el usuario mohommed y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 4.112 millones de parámetros orientado a generación de texto y código, con una ventana de contexto nativa declarada de 1.048.576 tokens (1M). El autor lo presenta como un modelo "uncensored" especializado en tareas de programación, con mejoras reportadas en benchmarks de código como MBPP.
+Lucet-CoderV4-4B-Omega es un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, desarrollado por el usuario mohommed y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 4.112 millones de parámetros orientado a generación de texto y código, con una ventana de contexto nativa declarada de 1.048.576 tokens (1M). El autor lo presenta como un modelo "uncensored" especializado en tareas de programación, con mejoras reportadas en benchmarks de código como MBPP.
 
 La relevancia del modelo radica en su enfoque de post-entrenamiento: el autor describe cuatro técnicas matemáticas y de sistemas aplicadas sobre el modelo base, incluyendo adaptación de bajo rango preservando RoPE, minería activa de datos basada en clústeres de fallos, denoising espectral QR-SVD y cuantización GGUF con calibración imatrix. El modelo se distribuye tanto en formato safetensors como en GGUF, lo que facilita su despliegue en entornos con recursos limitados.
 
@@ -87,6 +87,6 @@ No se dispone de datos comparativos de rendimiento con alternativas en la inform
 
 ## Enlaces
 
-- [HuggingFace: mohommed/Lucet-CoderV4-4B-Omega](https://huggingface.co/mohommed/Lucet-CoderV4-4B-Omega)
+- [Hugging Face: mohommed/Lucet-CoderV4-4B-Omega](https://huggingface.co/mohommed/Lucet-CoderV4-4B-Omega)
 - [Modelo base: XHToken/Spark-X2.6-4B](https://huggingface.co/XHToken/Spark-X2.6-4B)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

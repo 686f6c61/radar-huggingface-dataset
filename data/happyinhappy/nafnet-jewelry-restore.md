@@ -66,11 +66,11 @@ No disponible. No se dispone de datos comparativos con otros restauradores de im
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/happyinhappy/nafnet-jewelry-restore
+- Modelo en Hugging Face: https://huggingface.co/happyinhappy/nafnet-jewelry-restore
 - Repositorio NAFNet original (MEGVII Research): https://github.com/megvii-research/NAFNet
 - Documentación de implementación de NAFNet en DeepWiki: https://deepwiki.com/megvii-research/NAFNet/11.2-model-implementation
 - Página de NAFNet en ikalos.ai: https://ikalos.ai/ai/megvii-research/nafnet
-- Modelos NAFNet de mikestealth en HuggingFace: https://huggingface.co/mikestealth/nafnet-models
+- Modelos NAFNet de mikestealth en Hugging Face: https://huggingface.co/mikestealth/nafnet-models
 - Nodos de NAFNet para ComfyUI: https://github.com/marduk191/ComfyUI-NAFNet
 - Blog de la autora (artículo sobre costuras en tiles): https://happyin.work/blog/diffusion-seams-40mp/
 - Sitio personal de la autora: https://happyin.work/ois-gold/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.43` es un ajuste fino (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en HuggingFace. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor parte del modelo de Qwen y aplica un entrenamiento supervisado con TRL, sin documentar el conjunto de datos ni los hiperparámetros utilizados. El repositorio tiene un tamaño de 0,1 GB, muy inferior al que ocuparían los pesos completos de un modelo de ~2.000 millones de parámetros en fp16 (unos 4 GB), lo que sugiere que el contenido publicado podría ser un adaptador LoRA, un checkpoint parcial o un subconjunto de pesos; la información disponible no permite confirmarlo.
+`Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.43` es un ajuste fino (SFT) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en Hugging Face. Se trata de un artefacto derivado, no de un modelo entrenado desde cero: el autor parte del modelo de Qwen y aplica un entrenamiento supervisado con TRL, sin documentar el conjunto de datos ni los hiperparámetros utilizados. El repositorio tiene un tamaño de 0,1 GB, muy inferior al que ocuparían los pesos completos de un modelo de ~2.000 millones de parámetros en fp16 (unos 4 GB), lo que sugiere que el contenido publicado podría ser un adaptador LoRA, un checkpoint parcial o un subconjunto de pesos; la información disponible no permite confirmarlo.
 
 El interés de esta ficha es limitado desde el punto de vista técnico: no hay model card sustantiva (la sección de procedimiento de entrenamiento está vacía), no se declaran idiomas, licencia ni pipeline, y el repositorio no registra descargas ni valoraciones en el momento de la consulta. La fecha de creación que consta en los metadatos (2026-10-19) y el nombre del modelo, que incluye los términos `flower_sunflower_prompted`, apuntan a un experimento de ajuste sobre prompts temáticos, pero no existe documentación que lo verifique.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha debe leerse como una evaluación de encuadre, no de rendim
 | Modelo base | `Qwen/Qwen3.5-2B` |
 | Pipeline declarado | No disponible |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
-| Fecha de creación / actualización | 2026-10-19 / 2026-10-19 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-10-19 / 2026-10-19 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,11 +78,11 @@ La comparación se establece a nivel de categoría (modelos de ~1-3B con ajuste 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.43` | ~2B (según nombre del base) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Model card mínima, sin benchmarks ni dataset documentado |
-| `Qwen/Qwen3.5-2B` (modelo base) | ~2B (según denominación) | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace | Referencia necesaria para medir el efecto del ajuste |
-| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54B | 32.768 tokens nativos | Apache 2.0 | HuggingFace, ampliamente desplegado | Alternativa consolidada de tamaño similar con cuantizaciones GGUF/AWQ publicadas |
-| `meta-llama/Llama-3.2-1B-Instruct` | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace (acceso con aceptación) | Contexto largo y ecosistema amplio; licencia con restricciones |
-| `google/gemma-2-2b-it` | 2,61B | 8.192 tokens | Gemma Terms of Use | HuggingFace (acceso con aceptación) | Buen equilibrio calidad/tamaño, contexto más corto |
+| `Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.43` | ~2B (según nombre del base) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Model card mínima, sin benchmarks ni dataset documentado |
+| `Qwen/Qwen3.5-2B` (modelo base) | ~2B (según denominación) | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face | Referencia necesaria para medir el efecto del ajuste |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54B | 32.768 tokens nativos | Apache 2.0 | Hugging Face, ampliamente desplegado | Alternativa consolidada de tamaño similar con cuantizaciones GGUF/AWQ publicadas |
+| `meta-llama/Llama-3.2-1B-Instruct` | 1,24B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face (acceso con aceptación) | Contexto largo y ecosistema amplio; licencia con restricciones |
+| `google/gemma-2-2b-it` | 2,61B | 8.192 tokens | Gemma Terms of Use | Hugging Face (acceso con aceptación) | Buen equilibrio calidad/tamaño, contexto más corto |
 
 ## Limitaciones y advertencias
 

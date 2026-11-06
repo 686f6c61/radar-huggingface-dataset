@@ -82,7 +82,7 @@ La comparación directa con alternativas de la misma categoría (modelos de deci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samonte/zils-lite-v2
+- Hugging Face: https://huggingface.co/Samonte/zils-lite-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Bittensor (subred 127): https://bittensor.com

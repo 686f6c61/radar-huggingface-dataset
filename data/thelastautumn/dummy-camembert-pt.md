@@ -2,11 +2,11 @@
 
 ## Resumen
 
-TheLastAutumn/dummy-camembert-pt es un modelo de tipo encoder publicado en HuggingFace por el usuario TheLastAutumn. Por su identificador y por las etiquetas asociadas (transformers, safetensors, camembert, fill-mask), se trata de una implementacion o variante derivada de la familia CamemBERT, es decir, un transformer de tipo encoder con objetivo de modelado de lenguaje enmascarado (masked language modeling o fill-mask).
+TheLastAutumn/dummy-camembert-pt es un modelo de tipo encoder publicado en Hugging Face por el usuario TheLastAutumn. Por su identificador y por las etiquetas asociadas (transformers, safetensors, camembert, fill-mask), se trata de una implementacion o variante derivada de la familia CamemBERT, es decir, un transformer de tipo encoder con objetivo de modelado de lenguaje enmascarado (masked language modeling o fill-mask).
 
 El modelo cuenta con 110.655.493 parametros en formato safetensors, lo que lo situa en la escala de los modelos base tipo BERT/RoBERTa/CamemBERT (aproximadamente 110 millones de parametros). El repositorio ocupa 0,4 GB. La etiqueta arxiv:1910.09700 corresponde al articulo original de CamemBERT, lo que refuerza la hipotesis de que la arquitectura sigue ese diseno.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace, sin contenido real: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, uso previsto) aparecen como "[More Information Needed]". Ademas, el nombre "dummy" y las cifras de 0 descargas y 0 likes sugieren que se trata de un modelo de prueba o de un artefacto placeholder, no de un modelo pensado para produccion. Por todo ello, la mayor parte de las especificaciones no estan disponibles y deben tratarse como desconocidas.
+La model card publicada es la plantilla generica autogenerada por Hugging Face, sin contenido real: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, uso previsto) aparecen como "[More Information Needed]". Ademas, el nombre "dummy" y las cifras de 0 descargas y 0 likes sugieren que se trata de un modelo de prueba o de un artefacto placeholder, no de un modelo pensado para produccion. Por todo ello, la mayor parte de las especificaciones no estan disponibles y deben tratarse como desconocidas.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ No se dispone de informacion sobre el proceso de entrenamiento: ni el numero de 
 
 - Prototipado de pipelines de NLP en frances: si el modelo esta entrenado, podria usarse como encoder base para tareas de comprension, aunque no hay evidencia publicada de su calidad.
 - Pruebas de integracion con la libreria transformers: dado el caracter "dummy" del artefacto, su uso mas realista es como modelo de prueba en tests unitarios o de CI que verifiquen carga de safetensors y ejecucion del pipeline fill-mask.
-- Verificacion de compatibilidad de endpoints: la etiqueta endpoints_compatible sugiere que puede servir para validar el despliegue de la Inference API de HuggingFace.
+- Verificacion de compatibilidad de endpoints: la etiqueta endpoints_compatible sugiere que puede servir para validar el despliegue de la Inference API de Hugging Face.
 - Reproduccion de experimentos academicos con arquitectura CamemBERT: como punto de partida para comparar arquitecturas, no como modelo de produccion.
 - Desarrollo de clasificadores de texto por fine-tuning: tecnicamente factible si el checkpoint esta preentrenado, pero sin garantia de rendimiento.
 - Actividades de educacion y formacion: util para demostrar el flujo de carga de un modelo tipo BERT en transformers.
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: un modelo de 110 millones de parametros ocupa aproximadamente 0,44 GB en fp32 y unos 0,22 GB en fp16, a lo que hay que sumar el consumo de activaciones y overhead del runtime (tipicamente entre 1 y 2 GB en total para lotes pequenos).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; por ejemplo GTX 1050 Ti, RTX 3050, RTX 4090, A100 o H100 funcionan sin problema.
 - Compatibilidad con GPU de consumo: si, cabe con holgura en practicamente cualquier GPU consumer moderna, e incluso puede ejecutarse en CPU con latencias aceptables para inferencia puntual.
-- Opciones de despliegue: transformers (Python), HuggingFace Inference Endpoints, ONNX Runtime; llama.cpp, Ollama y vLLM no son las opciones naturales para un encoder fill-mask, aunque vLLM soporta algunos encoders.
+- Opciones de despliegue: transformers (Python), Hugging Face Inference Endpoints, ONNX Runtime; llama.cpp, Ollama y vLLM no son las opciones naturales para un encoder fill-mask, aunque vLLM soporta algunos encoders.
 - Latencia y throughput estimados: no disponibles al no haberse publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -76,5 +76,5 @@ No disponible. No se dispone de resultados de evaluacion ni de informacion de en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheLastAutumn/dummy-camembert-pt
+- Hugging Face: https://huggingface.co/TheLastAutumn/dummy-camembert-pt
 - Paper de referencia CamemBERT (etiqueta del repositorio): https://arxiv.org/abs/1910.09700

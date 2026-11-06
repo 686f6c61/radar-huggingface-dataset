@@ -22,7 +22,7 @@ El modelo mantiene el tamaño nominal del modelo base (7.241.732.096 parámetros
 | Formato de pesos | safetensors (factores plegados a formas densas de Mistral, W = U @ V) |
 | Modelo base | mistralai/Mistral-7B-Instruct-v0.2 |
 | Tamaño del repositorio | 14,5 GB |
-| Pipeline declarado en HuggingFace | No disponible |
+| Pipeline declarado en Hugging Face | No disponible |
 | Descargas / likes | 12 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -109,11 +109,11 @@ Sin las métricas del modelo base sin comprimir no es posible establecer cuánta
 - Licencia apache-2.0, que permite uso comercial, pero las limitaciones de calidad y el riesgo de seguridad desaconsejan ese uso en sistemas reales.
 - Adopción mínima (12 descargas, 0 likes): sin validación independiente de los resultados publicados.
 - Reproducibilidad: el checkpoint se generó con un parche propio sobre el código de SVD-LLM (sha256 `b8c277613b72`); conviene conservarlo para replicar el pipeline exacto.
-- El pipeline de HuggingFace no está declarado, por lo que algunas herramientas de descubrimiento pueden no clasificarlo correctamente.
+- El pipeline de Hugging Face no está declarado, por lo que algunas herramientas de descubrimiento pueden no clasificarlo correctamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p60
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_finetuned_keep_0p60
 - Repositorio de SVD-LLM (AIoT-MLSys-Lab): https://github.com/AIoT-MLSys-Lab/SVD-LLM
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Dataset de ajuste LoRA: https://huggingface.co/datasets/yahma/alpaca-cleaned

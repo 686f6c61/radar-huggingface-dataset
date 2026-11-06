@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jenil17/nlp4h-qwen2.5-3b-qlora` es un adaptador PEFT (LoRA/QLoRA) publicado en HuggingFace por el usuario jenil17, entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no un modelo autónomo: para usarlo hay que cargar el modelo base y aplicar los deltas de LoRA encima. El nombre del repositorio sugiere un ajuste orientado a un curso o proyecto de procesamiento de lenguaje natural ("nlp4h"), pero la model card no documenta el objetivo, el dataset ni la metodología.
+`jenil17/nlp4h-qwen2.5-3b-qlora` es un adaptador PEFT (LoRA/QLoRA) publicado en Hugging Face por el usuario jenil17, entrenado sobre el modelo base `Qwen/Qwen2.5-3B-Instruct`. El repositorio contiene únicamente los pesos del adaptador (0,1 GB), no un modelo autónomo: para usarlo hay que cargar el modelo base y aplicar los deltas de LoRA encima. El nombre del repositorio sugiere un ajuste orientado a un curso o proyecto de procesamiento de lenguaje natural ("nlp4h"), pero la model card no documenta el objetivo, el dataset ni la metodología.
 
 La relevancia de esta ficha es limitada y conviene ser explícito: se trata de un artefacto sin model card descriptiva, sin licencia declarada, sin idiomas declarados, sin benchmarks publicados, con 0 descargas y 0 likes en el momento de la consulta. Es, por tanto, un caso típico de adaptador experimental de autor individual, útil como referencia para reproducir un flujo QLoRA sobre un modelo de 3B, pero no apto para producción sin auditoría previa.
 
@@ -77,11 +77,11 @@ Advertencia: los datos de los modelos alternativos proceden de informacion publi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `jenil17/nlp4h-qwen2.5-3b-qlora` (adaptador) | No disponible | No disponible | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen2.5-3B-Instruct` (base) | ~3,09B | 32.768 tokens | Qwen Research License (uso comercial restringido) | HuggingFace |
-| Llama 3.2 3B Instruct | ~3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace |
-| Gemma 2 2B IT | ~2,6B | 8.000 tokens | Gemma Terms of Use | HuggingFace |
+| `jenil17/nlp4h-qwen2.5-3b-qlora` (adaptador) | No disponible | No disponible | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen2.5-3B-Instruct` (base) | ~3,09B | 32.768 tokens | Qwen Research License (uso comercial restringido) | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face |
+| Gemma 2 2B IT | ~2,6B | 8.000 tokens | Gemma Terms of Use | Hugging Face |
 
 Frente a estas alternativas, la unica ventaja diferencial de este repositorio es que ocupa 0,1 GB y se aplica sobre el base en lugar de sustituirlo, lo que abarata el almacenamiento y el intercambio de variantes. En todo lo demas (licencia, contexto, soporte, evidencia empirica) queda por detras de los modelos citados.
 

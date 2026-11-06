@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-qwen2511nsfw-lora es un adaptador LoRA de edición de imagen publicado por RunningHubAI (RunningHub) para flujos de trabajo de ComfyUI. No es un modelo completo, sino un conjunto de pesos de bajo rango que se aplica sobre un modelo base de edición de imagen de la familia Qwen-Image-Edit 2511, según se deduce del nombre del repositorio y del nombre del archivo distribuido. El pipeline declarado en HuggingFace es image-text-to-image, es decir, edición o generación de imágenes guiada por texto e imagen de entrada.
+rh-qwen2511nsfw-lora es un adaptador LoRA de edición de imagen publicado por RunningHubAI (RunningHub) para flujos de trabajo de ComfyUI. No es un modelo completo, sino un conjunto de pesos de bajo rango que se aplica sobre un modelo base de edición de imagen de la familia Qwen-Image-Edit 2511, según se deduce del nombre del repositorio y del nombre del archivo distribuido. El pipeline declarado en Hugging Face es image-text-to-image, es decir, edición o generación de imágenes guiada por texto e imagen de entrada.
 
 El adaptador está especializado en contenido para adultos (NSFW): el propio nombre del archivo, `Qwen_Image_Edit_2511_All_included_with_extra_gay_v2.0.safetensors`, y el enlace al proyecto original en Civitai indican que se trata de un ajuste orientado a este tipo de material. El repositorio ocupa 0,8 GB en total y el único archivo de pesos pesa 810 MiB, lo que es coherente con un LoRA y no con un modelo completo.
 
@@ -25,8 +25,8 @@ Su relevancia es limitada y muy específica: no aporta innovaciones de arquitect
 | Plataformas compatibles | ComfyUI, RunningHub, Hugging Face |
 | Autor | RunningHub (@氛围感) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-27T13:49:03Z (según metadatos de HuggingFace) |
-| Última actualización | 2026-09-27T13:50:01Z (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-27T13:49:03Z (según metadatos de Hugging Face) |
+| Última actualización | 2026-09-27T13:50:01Z (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 

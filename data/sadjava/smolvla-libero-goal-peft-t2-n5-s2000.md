@@ -21,7 +21,7 @@ Sin embargo, la información disponible es extremadamente limitada: la model car
 
 ## Arquitectura y entrenamiento
 
-La arquitectura exacta de este adaptador no está documentada. Por el nombre y los tags, se infiere que es un adaptador LoRA (Low-Rank Adaptation) aplicado a un modelo SmolVLA. SmolVLA es un modelo VLA de código abierto desarrollado por HuggingFace que combina un codificador de visión (SmolVLM) con un actor de políticas (una cabeza de acción) para generar comandos de control directamente desde observaciones visuales y lenguaje. El adaptador fue entrenado sobre un checkpoint de SmolVLA ajustado en LIBERO-90 con 100k pasos (`outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`), y el nombre indica que se fine-tuneó específicamente para la suite LIBERO-Goal, probablemente con un subconjunto de datos (t2, n5, s2000 podrían referirse a tarea 2, 5 demostraciones y semilla 2000). No se dispone de hiperparámetros de entrenamiento, régimen de precisión ni detalles del dataset.
+La arquitectura exacta de este adaptador no está documentada. Por el nombre y los tags, se infiere que es un adaptador LoRA (Low-Rank Adaptation) aplicado a un modelo SmolVLA. SmolVLA es un modelo VLA de código abierto desarrollado por Hugging Face que combina un codificador de visión (SmolVLM) con un actor de políticas (una cabeza de acción) para generar comandos de control directamente desde observaciones visuales y lenguaje. El adaptador fue entrenado sobre un checkpoint de SmolVLA ajustado en LIBERO-90 con 100k pasos (`outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`), y el nombre indica que se fine-tuneó específicamente para la suite LIBERO-Goal, probablemente con un subconjunto de datos (t2, n5, s2000 podrían referirse a tarea 2, 5 demostraciones y semilla 2000). No se dispone de hiperparámetros de entrenamiento, régimen de precisión ni detalles del dataset.
 
 ## Capacidades
 
@@ -64,5 +64,5 @@ No se dispone de información suficiente para comparar este adaptador con otros 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n5-s2000
+- Repositorio en Hugging Face: https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n5-s2000
 - No se encontraron otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

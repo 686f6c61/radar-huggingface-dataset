@@ -84,9 +84,9 @@ No se dispone de datos verificados de benchmarks ni de especificaciones de conte
 
 | Modelo | Parametros | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Rhea-4B-fast-0409-high-GGUF (este repositorio) | 4.022.468.096 | GGUF (Q2_K a f16) | Apache-2.0 | HuggingFace; 0 descargas, 0 likes |
-| roskosmos19/Rhea-4B-fast-0409-high (modelo base) | 4.022.468.096 | safetensors | Apache-2.0 (según metadatos del repositorio cuantizado) | HuggingFace |
-| mradermacher/Rhea-4B-fast-0409-high-i1-GGUF | 4.022.468.096 | GGUF con imatrix | Apache-2.0 | HuggingFace |
+| Rhea-4B-fast-0409-high-GGUF (este repositorio) | 4.022.468.096 | GGUF (Q2_K a f16) | Apache-2.0 | Hugging Face; 0 descargas, 0 likes |
+| roskosmos19/Rhea-4B-fast-0409-high (modelo base) | 4.022.468.096 | safetensors | Apache-2.0 (según metadatos del repositorio cuantizado) | Hugging Face |
+| mradermacher/Rhea-4B-fast-0409-high-i1-GGUF | 4.022.468.096 | GGUF con imatrix | Apache-2.0 | Hugging Face |
 
 Diferencias relevantes entre ellas: el modelo base en safetensors es el adecuado para servidores de alto rendimiento y para volver a cuantizar; el repositorio i1-GGUF ofrece cuantizaciones ponderadas por importancia, generalmente superiores en calidad por bit; y este repositorio aporta cuantizaciones estáticas con una horquilla de tamaños más amplia, incluida f16.
 
@@ -105,7 +105,7 @@ Diferencias relevantes entre ellas: el modelo base en safetensors es el adecuado
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Rhea-4B-fast-0409-high-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Rhea-4B-fast-0409-high-GGUF
 - Modelo base: https://huggingface.co/roskosmos19/Rhea-4B-fast-0409-high
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Rhea-4B-fast-0409-high-i1-GGUF
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#Rhea-4B-fast-0409-high-GGUF

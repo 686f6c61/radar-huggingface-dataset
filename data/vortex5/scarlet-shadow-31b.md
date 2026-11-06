@@ -34,7 +34,7 @@ Los cuatro modelos fusionados son: Google Gemma-4-31B-it (el modelo base oficial
 - Soporte de chat-template automatico (heredado del modelo base).
 - Capacidades multilingues heredadas de Gemma-4-31B-it (no confirmadas en la model card).
 - No se documenta soporte explicito de tool calling, function calling o agentes.
-- El pipeline de HuggingFace indica "image-text-to-text", pero no hay documentacion de capacidades de vision en la model card.
+- El pipeline de Hugging Face indica "image-text-to-text", pero no hay documentacion de capacidades de vision en la model card.
 
 ## Casos de uso
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 - VRAM estimada para inferencia: el modelo en bfloat16 necesita aproximadamente 62.6 GB de VRAM, lo que requiere una GPU de centro de datos. Con cuantizacion Q4_K_M (no disponible en el repo, pero posible con herramientas como llama.cpp), la VRAM se reduce a unos 20-22 GB, apta para RTX 3090, RTX 4090 o A6000.
 - GPU recomendadas: A100 80GB, H100 80GB, o RTX 4090 (con cuantizacion). No cabe en GPU de consumo de 16 GB o menos sin cuantizacion agresiva (Q2 o Q3).
-- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se publica en su biblioteca). El modelo usa safetensors de HuggingFace, compatible con transformers.
+- Opciones de despliegue: vLLM, TGI, llama.cpp (si se convierte a GGUF), Ollama (si se publica en su biblioteca). El modelo usa safetensors de Hugging Face, compatible con transformers.
 - Latencia y throughput: no disponibles. Como referencia, un modelo de 31B en una RTX 4090 con cuantizacion Q4 suele generar entre 20-40 tokens por segundo.
 
 ## Comparativa con modelos similares

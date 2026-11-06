@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`taleef/gemma-2-9b-it-Alpaca-FFT` es un ajuste fino del modelo `google/gemma-2-9b-it` publicado por el usuario taleef en HuggingFace. El nombre del repositorio ("Alpaca-FFT") indica que el ajuste se ha realizado sobre el dataset `yahma/alpaca-cleaned` mediante fine-tuning completo (FFT, full fine-tuning), partiendo del checkpoint ya alineado por instrucciones de Google. El modelo conserva 9.241.705.984 parametros, un tamano de repositorio de 18,5 GB y un formato de pesos safetensors, coherente con un guardado en precision completa (16 bits).
+`taleef/gemma-2-9b-it-Alpaca-FFT` es un ajuste fino del modelo `google/gemma-2-9b-it` publicado por el usuario taleef en Hugging Face. El nombre del repositorio ("Alpaca-FFT") indica que el ajuste se ha realizado sobre el dataset `yahma/alpaca-cleaned` mediante fine-tuning completo (FFT, full fine-tuning), partiendo del checkpoint ya alineado por instrucciones de Google. El modelo conserva 9.241.705.984 parametros, un tamano de repositorio de 18,5 GB y un formato de pesos safetensors, coherente con un guardado en precision completa (16 bits).
 
-La etiquetacion del repositorio incluye terminos como `safety`, `jailbreak`, `lora` y `research`, lo que situa este artefacto en el ambito de la investigacion sobre seguridad y alineacion de modelos de lenguaje. El patron tipico de este tipo de publicaciones es estudiar como un ajuste fino aparentemente inocuo (datos de instrucciones genericos) puede alterar o degradar las barreras de seguridad del modelo base, o servir como herramienta de analisis de comportamientos de jailbreak. No obstante, la ficha de HuggingFace no documenta la metodologia concreta.
+La etiquetacion del repositorio incluye terminos como `safety`, `jailbreak`, `lora` y `research`, lo que situa este artefacto en el ambito de la investigacion sobre seguridad y alineacion de modelos de lenguaje. El patron tipico de este tipo de publicaciones es estudiar como un ajuste fino aparentemente inocuo (datos de instrucciones genericos) puede alterar o degradar las barreras de seguridad del modelo base, o servir como herramienta de analisis de comportamientos de jailbreak. No obstante, la ficha de Hugging Face no documenta la metodologia concreta.
 
-El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace para descargarlo. Se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 28 de septiembre de 2026. La relevancia actual reside en su utilidad como caso de estudio sobre la fragilidad de la alineacion de seguridad frente a fine-tuning sobre datos de instrucciones.
+El acceso al repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face para descargarlo. Se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, creado y actualizado el 28 de septiembre de 2026. La relevancia actual reside en su utilidad como caso de estudio sobre la fragilidad de la alineacion de seguridad frente a fine-tuning sobre datos de instrucciones.
 
 ## Especificaciones tecnicas
 
@@ -80,14 +80,14 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 - Sesgos conocidos: heredados del modelo base Gemma 2 y del dataset Alpaca, que no es representativo de la diversidad linguistica ni cultural global; el modelo solo declara ingles.
 - Seguridad: la etiquetacion `safety` y `jailbreak` indica que este checkpoint puede presentar barreras de seguridad reducidas o comportamientos no alineados; su uso en entornos publicos o de cara al usuario es desaconsejable sin evaluacion previa.
 - Restricciones de licencia: sujeto a la licencia Gemma, que impone condiciones de uso, prohibe determinados usos y exige el cumplimiento de la politica de uso prohibido de Google. Verificar los terminos antes de cualquier uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace para descargar el repositorio.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face para descargar el repositorio.
 - Ambiguedad metodologica: no se documenta si se trata de fine-tuning completo o de adaptadores LoRA, ni los hiperparametros, el numero de tokens o el procedimiento exacto de entrenamiento.
 - Limitacion de contexto e idioma: contexto real no verificado y soporte limitado al ingles.
 - Procedencia: autor individual sin historial verificable; conviene tratar el artefacto con cautela en cualquier contexto sensible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/taleef/gemma-2-9b-it-Alpaca-FFT
+- Hugging Face: https://huggingface.co/taleef/gemma-2-9b-it-Alpaca-FFT
 - Modelo base: https://huggingface.co/google/gemma-2-9b-it
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/yahma/alpaca-cleaned
 - Licencia Gemma: https://ai.google.dev/gemma/terms

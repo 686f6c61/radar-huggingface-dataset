@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UMA (Universal Model for Atoms) es un modelo de red neuronal de grafos desarrollado por el equipo FAIR Chemistry de Meta. Está diseñado para predecir propiedades atómicas y moleculares a partir de estructuras, abordando problemas de química cuántica y ciencia de materiales. Se trata de un modelo de gran escala, entrenado con miles de millones de átomos procedentes de cinco datasets de simulación open science publicados por el equipo en los últimos cinco años. Su arquitectura combina redes de grafos con una mezcla de expertos lineales, lo que permite escalar el modelado de interacciones atómicas. El repositorio en HuggingFace tiene un tamaño de 41.7 GB y su acceso es restringido, requiriendo aceptar condiciones previas. El modelo se presentó junto con OMol25, otro lanzamiento de Meta AI en el ámbito de la química. No se dispone de información sobre el número total de parámetros ni sobre benchmarks públicos.
+UMA (Universal Model for Atoms) es un modelo de red neuronal de grafos desarrollado por el equipo FAIR Chemistry de Meta. Está diseñado para predecir propiedades atómicas y moleculares a partir de estructuras, abordando problemas de química cuántica y ciencia de materiales. Se trata de un modelo de gran escala, entrenado con miles de millones de átomos procedentes de cinco datasets de simulación open science publicados por el equipo en los últimos cinco años. Su arquitectura combina redes de grafos con una mezcla de expertos lineales, lo que permite escalar el modelado de interacciones atómicas. El repositorio en Hugging Face tiene un tamaño de 41.7 GB y su acceso es restringido, requiriendo aceptar condiciones previas. El modelo se presentó junto con OMol25, otro lanzamiento de Meta AI en el ámbito de la química. No se dispone de información sobre el número total de parámetros ni sobre benchmarks públicos.
 
 ## Especificaciones tecnicas
 
@@ -57,7 +57,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio en HuggingFace es gated, por lo que es necesario aceptar las condiciones de la licencia antes de descargar el modelo.
+- Acceso restringido: el repositorio en Hugging Face es gated, por lo que es necesario aceptar las condiciones de la licencia antes de descargar el modelo.
 - Licencia personalizada: la licencia aparece como "other", lo que implica terminos especificos de Meta. Se debe revisar detenidamente antes de cualquier uso comercial.
 - Ambito limitado: es un modelo para quimica y ciencia de materiales, no un modelo de lenguaje. No puede realizar tareas de texto, razonamiento general ni generacion de contenido.
 - Compatibilidad: segun el repositorio fairchem, los modelos UMA y los modelos legacy inorganicos entrenados con OMat24 usan etiquetas DFT y DFT+U, y no son compatibles entre si en ciertos aspectos. Es necesario verificar la documentacion.
@@ -66,7 +66,7 @@ No se dispone de informacion sobre modelos comparables en los datos proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/facebook/UMA
+- Hugging Face: https://huggingface.co/facebook/UMA
 - GitHub fairchem: https://github.com/facebookresearch/fairchem
 - Paper arxiv: https://arxiv.org/abs/2506.23971
 - Post de Meta AI sobre OMol25 y UMA: https://www.facebook.com/LifeAtMeta/posts/metas-fair-team-just-released-omol25-and-universal-model-for-atomsopen-source-to/1002067392089512/

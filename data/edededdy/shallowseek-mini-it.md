@@ -76,7 +76,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ShallowSeek-mini-it | 11,0M totales / 6,3M activos | no disponible | apache-2.0 | HuggingFace + GGUF | MMLU ~25,6% (nivel azar) |
+| ShallowSeek-mini-it | 11,0M totales / 6,3M activos | no disponible | apache-2.0 | Hugging Face + GGUF | MMLU ~25,6% (nivel azar) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,11 +92,11 @@ No se dispone en la informacion proporcionada de datos de rendimiento de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edededdy/ShallowSeek-mini-it
+- Modelo en Hugging Face: https://huggingface.co/edededdy/ShallowSeek-mini-it
 - Modelo base: https://huggingface.co/edededdy/ShallowSeek-mini-base
 - Repositorio de pesos GGUF del base: https://huggingface.co/edededdy/ShallowSeek-mini-base-GGUF
 - Codigo de entrenamiento: https://github.com/EdmundMartin/DeepseekStyleMOE
-- Perfil del autor en HuggingFace: https://huggingface.co/edededdy
+- Perfil del autor en Hugging Face: https://huggingface.co/edededdy
 - Dataset de preentrenamiento: FineWeb-Edu (https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu)
 - Dataset de chat: smol-smoltalk (https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk)
 - Arquitectura de referencia: DeepSeek-V3 (DeepSeek-AI, 2024)

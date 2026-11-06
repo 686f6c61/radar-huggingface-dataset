@@ -78,10 +78,10 @@ Modelos de la misma familia de la asignatura ANLP, con la misma tarea y diseno g
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parth12-ui/anlp-a2-moe-variant5 (este) | vi->en, ja->en | 50.160.128 (33.382.912 activos) | 256 | no disponible | HuggingFace, 0 descargas |
-| abhirajratna/anlp-a2-moe-v5 | vi->en, ja->en | no disponible | no disponible | no disponible | HuggingFace |
-| Arihant25/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| parth12-ui/anlp-a2-moe-variant5 (este) | vi->en, ja->en | 50.160.128 (33.382.912 activos) | 256 | no disponible | Hugging Face, 0 descargas |
+| abhirajratna/anlp-a2-moe-v5 | vi->en, ja->en | no disponible | no disponible | no disponible | Hugging Face |
+| Arihant25/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| raunakseksaria/anlp-a2-moe | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de parametros, contexto ni rendimiento de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. Todos parecen pertenecer al mismo ejercicio academico y compartir la tarea de traduccion vi->en y ja->en.
 
@@ -98,7 +98,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/parth12-ui/anlp-a2-moe-variant5
+- Modelo en Hugging Face: https://huggingface.co/parth12-ui/anlp-a2-moe-variant5
 - Modelo comparable (abhirajratna/anlp-a2-moe-v5): https://huggingface.co/abhirajratna/anlp-a2-moe-v5
 - Modelo comparable (Arihant25/anlp-a2-moe): https://huggingface.co/Arihant25/anlp-a2-moe
 - Repositorio relacionado (Shardul0007/ANLP-ass1): https://github.com/Shardul0007/ANLP-ass1

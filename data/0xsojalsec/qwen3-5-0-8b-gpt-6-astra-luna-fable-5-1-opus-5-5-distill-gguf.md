@@ -33,7 +33,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Compatibilidad con inferencia en llama.cpp: el repositorio esta marcado con los tags `llama.cpp` y `llama-cpp`.
 - Uso con plantillas de chat Jinja: la model card recomienda invocar `llama-cli` con la opcion `--jinja`.
 - Posible soporte multimodal: la model card incluye instrucciones para `llama-mtmd-cli` (multimodal), aunque no se especifica que el modelo en si tenga torre de vision ni se listan ficheros de proyector. Esta capacidad debe considerarse no confirmada.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de endpoints compatibles con el ecosistema de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede servirse a traves de endpoints compatibles con el ecosistema de Hugging Face.
 - Razonamiento, codigo, matematicas, tool calling, agentes y modo thinking: no disponible (no hay informacion que lo confirme).
 - Capacidades multilingues: no confirmadas para este repositorio concreto; la serie base se describe como multilingue en fuentes de terceros.
 
@@ -66,7 +66,7 @@ La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ningun otro co
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (Qwen3.5-0.8B-distill-GGUF) | 752.393.024 (~0,75B) | No disponible | GGUF (Q4_K_M) | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Este repositorio (Qwen3.5-0.8B-distill-GGUF) | 752.393.024 (~0,75B) | No disponible | GGUF (Q4_K_M) | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen3.5-0.8B (modelo base de la serie) | 0,8B | No disponible | No disponible | No disponible | Ollama, Qualcomm AI Hub |
 | Otros modelos de ~1B de la familia Qwen3.5 | No disponible | No disponible | No disponible | No disponible | Listados en guias de terceros |
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-GGUF
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/Qwen3.5-0.8B-GPT-6-Astra-Luna-Fable-5.1-Opus-5.5-distill-GGUF
 - Qwen3.5 0.8B en Ollama: https://ollama.com/library/qwen3.5:0.8b
 - Qwen3.5-0.8B en Qualcomm AI Hub: https://aihub.qualcomm.com/mobile/models/qwen3_5_0_8b
 - Comparativa de lanzamientos GPT-6 Astra vs Qwen3.5 0.8B (Artificial Analysis): https://artificialanalysis.ai/models/releases/comparisons/gpt-6-astra-vs-qwen3-5-0-8b

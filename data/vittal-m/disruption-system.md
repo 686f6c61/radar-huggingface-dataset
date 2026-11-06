@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vittal-M/Disruption-System es un repositorio alojado en HuggingFace cuyo unico artefacto verificable es un fichero en formato joblib (serializacion de objetos Python, tipicamente asociada a scikit-learn o a pipelines propios). El repositorio ocupa 0,6 GB y esta etiquetado con la region "us". No se declara pipeline de inferencia, licencia, idiomas ni tarjeta de modelo con documentacion tecnica.
+Vittal-M/Disruption-System es un repositorio alojado en Hugging Face cuyo unico artefacto verificable es un fichero en formato joblib (serializacion de objetos Python, tipicamente asociada a scikit-learn o a pipelines propios). El repositorio ocupa 0,6 GB y esta etiquetado con la region "us". No se declara pipeline de inferencia, licencia, idiomas ni tarjeta de modelo con documentacion tecnica.
 
 No hay informacion publica que permita afirmar que se trate de un modelo de lenguaje, de un modelo de vision o de cualquier otro tipo de red neuronal. El tag `joblib` apunta a un artefacto serializado de Python que puede contener desde un `Pipeline` de scikit-learn hasta un estimador de gradient boosting o un transformador personalizado. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 1 like, y no dispone de README explicativo.
 
@@ -81,7 +81,7 @@ No disponible. No se ha identificado ningun modelo comparable, porque no se cono
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vittal-M/Disruption-System | no disponible | no disponible | no disponible | no disponible | HuggingFace (0 descargas) |
+| Vittal-M/Disruption-System | no disponible | no disponible | no disponible | no disponible | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -98,5 +98,5 @@ No disponible. No se ha identificado ningun modelo comparable, porque no se cono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vittal-M/Disruption-System
+- Hugging Face: https://huggingface.co/Vittal-M/Disruption-System
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, paper, repositorio de codigo, blog o demo. Los resultados devueltos por la busqueda corresponden a dominios de contenido sanitario sin relacion con el artefacto y se descartan como fuentes.

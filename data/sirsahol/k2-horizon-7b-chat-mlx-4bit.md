@@ -98,7 +98,7 @@ La ventaja diferencial de K2-Horizon en esta comparativa es la ventana de contex
 
 ## Enlaces
 
-- Repositorio HuggingFace (4 bits): https://huggingface.co/SirSahOl/K2-Horizon-7B-chat-mlx-4bit
+- Repositorio Hugging Face (4 bits): https://huggingface.co/SirSahOl/K2-Horizon-7B-chat-mlx-4bit
 - Variante de 8 bits: https://huggingface.co/SirSahOl/K2-Horizon-7B-chat-mlx-8bit
 - Variante de 16 bits: https://huggingface.co/SirSahOl/K2-Horizon-7B-chat-mlx-16bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B

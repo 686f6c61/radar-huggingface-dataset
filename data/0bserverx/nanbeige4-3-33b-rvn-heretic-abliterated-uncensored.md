@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nanbeige4.3-33B-RVN-Heretic-Abliterated-Uncensored es una variante del modelo Nanbeige4.3-33B de Nanbeige, publicada por el usuario 0bserverx en HuggingFace. Se trata de un ajuste fino orientado a la eliminación de rechazos (refusal ablation) mediante la técnica heretic ARA, que busca reducir las negativas del modelo a responder manteniendo al mínimo la divergencia respecto al modelo original. El resultado es un modelo de 33.118.977.024 parámetros (aproximadamente 33B) en formato BF16 safetensors, con licencia Apache 2.0.
+Nanbeige4.3-33B-RVN-Heretic-Abliterated-Uncensored es una variante del modelo Nanbeige4.3-33B de Nanbeige, publicada por el usuario 0bserverx en Hugging Face. Se trata de un ajuste fino orientado a la eliminación de rechazos (refusal ablation) mediante la técnica heretic ARA, que busca reducir las negativas del modelo a responder manteniendo al mínimo la divergencia respecto al modelo original. El resultado es un modelo de 33.118.977.024 parámetros (aproximadamente 33B) en formato BF16 safetensors, con licencia Apache 2.0.
 
 El modelo resuelve el problema de los rechazos sistemáticos en modelos alineados, ofreciendo una versión "uncensored" que responde a un conjunto más amplio de peticiones. Según la model card, el modelo original rechazaba 95 de cada 100 prompts dañinos, mientras que esta versión rechaza 0, manteniendo una tasa de respuesta a prompts inofensivos del 97% y una divergencia KL de 0,0115 respecto al original. Está pensado para despliegue en GPUs de consumo mediante cuantizaciones GGUF en un repositorio complementario, con una build RCO de precisión mixta de 11,6 GB que cabe en una GPU de 16 GB con contexto de 16K.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks comparables con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0bserverx/Nanbeige4.3-33B-RVN-Heretic-Abliterated-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/0bserverx/Nanbeige4.3-33B-RVN-Heretic-Abliterated-Uncensored
 - Repositorio GGUF complementario: https://huggingface.co/0bserverx/Nanbeige4.3-33B-RVN-Uncensored-Heretic-Abliterated-RCO-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Herramienta heretic: https://github.com/p-e-w/heretic

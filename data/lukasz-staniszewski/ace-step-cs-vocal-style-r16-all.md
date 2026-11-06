@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar con otros modelos de la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r16-all
+- Modelo en Hugging Face: https://huggingface.co/lukasz-staniszewski/ace-step-cs-vocal-style-r16-all
 - Colección de la suite: https://huggingface.co/collections/lukasz-staniszewski/ace-step-audio-steering-suite-6a0bb3dacbac8e6db8f4d4e4
 - Repositorio de ACE-Step-1.5: https://github.com/ace-step/ACE-Step-1.5
 - Página de Sweet Tea Studio sobre el modelo (referencia externa): https://sweettea.co/resources/lukasz-staniszewski-ace-step-caa-vocal-style-huggingface-model-lukasz-staniszewski-ace-step-caa-vocal-style

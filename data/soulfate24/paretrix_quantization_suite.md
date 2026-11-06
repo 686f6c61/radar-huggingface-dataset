@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento frente a estas alternativas e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
+- Hugging Face: https://huggingface.co/Soulfate24/Paretrix_Quantization_Suite
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Paper referenciado (arxiv:2604.18556): no disponible en la información proporcionada
 - Paper referenciado (arxiv:2605.00649): no disponible en la información proporcionada

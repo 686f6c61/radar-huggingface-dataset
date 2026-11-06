@@ -88,9 +88,9 @@ No se han identificado en la información proporcionada otros modelos de la mism
 
 | Modelo | Parametros | Contexto | Cuantizacion | KLD media / top-1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo: `0xSero/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw` | No disponible | 262.144 | EXL3 2,7 bpw | 0,0304 / 94,95 % | MIT | HuggingFace |
-| `sudoingx/DeepSeek-V4.1-Flash-EXL3-2.7bpw`, checkpoint anterior | No disponible | No disponible | EXL3 2,7 bpw | 0,0243 / 95,57 % en el mismo panel | No disponible | HuggingFace |
-| `deepseek-ai/DeepSeek-V4.1-Flash-1017`, nativo | No disponible | No disponible | Sin cuantizar | 0 / 100 % por definición | MIT | HuggingFace |
+| Este modelo: `0xSero/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw` | No disponible | 262.144 | EXL3 2,7 bpw | 0,0304 / 94,95 % | MIT | Hugging Face |
+| `sudoingx/DeepSeek-V4.1-Flash-EXL3-2.7bpw`, checkpoint anterior | No disponible | No disponible | EXL3 2,7 bpw | 0,0243 / 95,57 % en el mismo panel | No disponible | Hugging Face |
+| `deepseek-ai/DeepSeek-V4.1-Flash-1017`, nativo | No disponible | No disponible | Sin cuantizar | 0 / 100 % por definición | MIT | Hugging Face |
 
 La comparación con el checkpoint anterior no es head-to-head porque los modelos base son distintos. El panel de evaluación fue escrito por el checkpoint anterior, lo que introduce un sesgo adicional en la comparación.
 
@@ -109,7 +109,7 @@ La comparación con el checkpoint anterior no es head-to-head porque los modelos
 - Estado de serving y velocidad: no se publican latencia ni throughput en la información disponible. El autor remite al repositorio de la receta para consultar las mediciones actualizadas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/0xSero/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw
+- Modelo en Hugging Face: https://huggingface.co/0xSero/DeepSeek-V4.1-Flash-1017-EXL3-2.7bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio de la receta de serving: https://github.com/sudoingX/dgx-spark-deepseek-v41
 - Repositorio de receta, parches, logs y resultados: https://github.com/sybil-solutions/deepseek-v4.1-flash-1017-exl3-spark

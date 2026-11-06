@@ -62,7 +62,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 ## Limitaciones y advertencias
 
 - Modelo experimental y de investigación; no está recomendado para producción sin evaluaciones adicionales.
-- Acceso restringido en HuggingFace (gated); requiere aceptar las condiciones del repositorio antes de su descarga.
+- Acceso restringido en Hugging Face (gated); requiere aceptar las condiciones del repositorio antes de su descarga.
 - Riesgo de alucinación inherente a los modelos generativos de lenguaje.
 - No hay benchmarks públicos que validen su rendimiento en tareas concretas.
 - Longitud de contexto no especificada.
@@ -70,4 +70,4 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-qx64-hi-mlx](https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-qx64-hi-mlx)
+- Repositorio en Hugging Face: [nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-qx64-hi-mlx](https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-qx64-hi-mlx)

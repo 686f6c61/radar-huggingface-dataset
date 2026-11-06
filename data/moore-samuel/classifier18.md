@@ -75,5 +75,5 @@ No se dispone de información comparativa con otros modelos. Al ser una implemen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Moore-samuel/classifier18
+- Repositorio Hugging Face: https://huggingface.co/Moore-samuel/classifier18
 - Script de entrenamiento: `finetune.py` (contenido en el repositorio, no enlazado directamente)

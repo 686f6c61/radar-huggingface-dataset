@@ -4,7 +4,7 @@
 
 `MedMLX/nnunet-liver-mlx` es un modelo de segmentación de imágenes médicas en 3D que detecta y delimita el hígado y los tumores hepáticos en volúmenes de tomografía computarizada (TC). Lo desarrolla MedMLX, un proyecto centrado en inferencia de imagen médica en local sobre Apple Silicon, y se distribuye como pesos del framework nnU-Net portados a MLX (el framework de arrays de Apple para sus chips M-series). Resuelve un problema concreto: ejecutar un pipeline de segmentación médica validado en la literatura sin depender de CUDA ni de infraestructura en la nube, aprovechando la GPU integrada y Metal en equipos Mac.
 
-El modelo no es un modelo de lenguaje ni un transformer generativo, sino una red convolucional 3D de segmentación derivada de nnU-Net, el método auto-configurable de referencia para segmentación biomédica (paper arXiv:1809.10486). Se publica como un repositorio de pesos de 0,1 GB, con licencia CC-BY-4.0 y etiqueta `inference: false` en la model card, lo que indica que no está pensado para el pipeline automático de HuggingFace sino para ejecutarse mediante el paquete `nnunet-mlx` (versión >= 0.6.4) y Python 3.13.
+El modelo no es un modelo de lenguaje ni un transformer generativo, sino una red convolucional 3D de segmentación derivada de nnU-Net, el método auto-configurable de referencia para segmentación biomédica (paper arXiv:1809.10486). Se publica como un repositorio de pesos de 0,1 GB, con licencia CC-BY-4.0 y etiqueta `inference: false` en la model card, lo que indica que no está pensado para el pipeline automático de Hugging Face sino para ejecutarse mediante el paquete `nnunet-mlx` (versión >= 0.6.4) y Python 3.13.
 
 Es relevante ahora por dos motivos: primero, porque demuestra la viabilidad de portar arquitecturas médicas 3D a MLX con aceleración Metal en hardware de consumo; segundo, porque el ecosistema de modelos médicos abiertos suele estar atado a CUDA y a formatos poco portables. La model card es explícita en que el uso previsto es investigación y educación, y que el modelo no está validado para uso clínico.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Framework | Hardware | Licencia | Contexto / entrada | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MedMLX/nnunet-liver-mlx | CNN 3D (nnU-Net) | MLX | Apple Silicon | CC-BY-4.0 | TC 3D NIfTI | HuggingFace |
+| MedMLX/nnunet-liver-mlx | CNN 3D (nnU-Net) | MLX | Apple Silicon | CC-BY-4.0 | TC 3D NIfTI | Hugging Face |
 | nnU-Net original (referencia) | CNN 3D (nnU-Net) | PyTorch | CUDA / CPU | Apache-2.0 (código) | TC 3D NIfTI | GitHub |
 | Otros ports médicos a MLX | no disponible | MLX | Apple Silicon | no disponible | no disponible | no disponible |
 
@@ -96,7 +96,7 @@ La comparación directa más relevante es con la implementación original de nnU
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/nnunet-liver-mlx
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/nnunet-liver-mlx
 - Repositorio GitHub del proyecto: https://github.com/MedMLX/nnunet-mlx
 - Documentación de ejecución: https://github.com/MedMLX/nnunet-mlx/blob/main/README.md#run
 - Archivos del modelo: https://huggingface.co/MedMLX/nnunet-liver-mlx/tree/main

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario ASCXZ12EWDX, publicado bajo licencia MIT y etiquetado con las librerías `transformers` y `pytorch`. El repositorio no contiene pesos: su tamano declarado es de 0,0 GB, registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion (12 de septiembre de 2026) apuntan a un artefacto de prueba mas que a un modelo distribuible.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario ASCXZ12EWDX, publicado bajo licencia MIT y etiquetado con las librerías `transformers` y `pytorch`. El repositorio no contiene pesos: su tamano declarado es de 0,0 GB, registra 0 descargas y 0 likes, y las fechas de creacion y actualizacion (12 de septiembre de 2026) apuntan a un artefacto de prueba mas que a un modelo distribuible.
 
 La informacion disponible es internamente contradictoria. Las etiquetas del repositorio describen un modelo de tipo BERT orientado a `feature-extraction`, mientras que la model card adjunta describe un supuesto modelo de razonamiento conversacional con mejoras en tareas de matematicas, programacion y llamada a funciones, e incluye una tabla de benchmarks con nombres de modelos anonimizados (Model1, Model2, Model1-v2). No se especifican arquitectura, numero de parametros, longitud de contexto, tokenizador ni idiomas soportados.
 
@@ -112,7 +112,7 @@ No es posible establecer una comparativa fiable. Los modelos de referencia de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASCXZ12EWDX/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASCXZ12EWDX/MyAwesomeModel-TestRepo
 - Paper: no disponible
 - Repositorio de codigo: no disponible (la model card lo menciona sin facilitar URL)
 - Sitio web de chat y API: no disponible (la model card lo menciona sin facilitar URL)

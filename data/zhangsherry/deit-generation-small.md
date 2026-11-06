@@ -58,9 +58,9 @@ La comparacion directa no es significativa porque este repositorio no es un mode
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zhangsherry/deit-generation-small | 49.600 | no disponible | no | apache-2.0 | HuggingFace |
-| DeiT-Small (referencia) | ~22 M | no aplica (vision) | si | varias segun version | HuggingFace / repos originales |
-| ViT-Base (referencia) | ~86 M | no aplica (vision) | si | varias | HuggingFace |
+| zhangsherry/deit-generation-small | 49.600 | no disponible | no | apache-2.0 | Hugging Face |
+| DeiT-Small (referencia) | ~22 M | no aplica (vision) | si | varias segun version | Hugging Face / repos originales |
+| ViT-Base (referencia) | ~86 M | no aplica (vision) | si | varias | Hugging Face |
 
 La diferencia de uno a tres ordenes de magnitud en numero de parametros y la ausencia de entrenamiento hacen que cualquier comparacion de rendimiento sea invalida.
 
@@ -75,5 +75,5 @@ La diferencia de uno a tres ordenes de magnitud en numero de parametros y la aus
 - Para cualquier resultado futuro, el repositorio exige documentar el checkpoint entrenado de forma separada de los valores por defecto aqui incluidos, y conservar los logs de entrenamiento y las versiones de entorno.
 
 ## Enlaces
-- [Modelo en HuggingFace: zhangsherry/deit-generation-small](https://huggingface.co/zhangsherry/deit-generation-small)
+- [Modelo en Hugging Face: zhangsherry/deit-generation-small](https://huggingface.co/zhangsherry/deit-generation-small)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web proporcionada; los resultados devueltos no guardan relacion con el modelo.

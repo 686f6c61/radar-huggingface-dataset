@@ -125,6 +125,6 @@ La comparación relevante es interna: el build con imatrix es ligeramente peor e
 - Fork ROCmFPX de llama.cpp usado para la cuantización: https://github.com/charlie12345/ROCmFPX (commit 85d8f7e83499e434c24993e6e1f3800568b5adfd)
 - Anuncio oficial de la serie MiMo-V2.6: https://mimo.mi.com/docs/en-US/news/latest/v2-6
 - Página de producto de MiMo-V2.6: https://mimo.xiaomi.com/mimo-v2-6
-- Perfil de HuggingFace del autor: https://huggingface.co/kingjones777/models
+- Perfil de Hugging Face del autor: https://huggingface.co/kingjones777/models
 - Cuantización GGUF alternativa de terceros: https://huggingface.co/mondk/MiMo-V2.6-Distill-Qwen-9B-GGUF
 - Cobertura externa del lanzamiento: https://www.brocker.org/xiaomi-mimo-v26-pro-flash-distill-qwen-open-weights

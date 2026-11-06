@@ -6,7 +6,7 @@ Qwen3-Nepali-Extended-Tokenizer-32k es un tokenizer derivado del tokenizer ofici
 
 El problema que aborda es la ineficiencia de tokenización del nepalí en LLMs multilingües: el tokenizer original de Qwen3 consume 4,42 tokens por token de inglés en texto nepalí, frente a 2,19 del tokenizer extendido, medido sobre FLORES-200 devtest. Los identificadores del vocabulario original, incluidos los tokens especiales, permanecen intactos; los nuevos ids empiezan en 151669, lo que obliga a redimensionar las embeddings del modelo base a 183.669 filas antes de continuar el preentrenamiento.
 
-Es relevante ahora porque cuantifica con precisión los límites de la extensión de vocabulario en lenguas de bajos recursos y porque el propio autor advierte de que, en sus experimentos de continued pretraining a pequeña escala (modelos de 1B y 0,6B, 2 GB de texto, una sola semilla), extender el vocabulario produjo peor bits per byte en nepalí held-out que conservar el vocabulario original. El repositorio de HuggingFace no contiene pesos: solo ficheros de tokenizer.
+Es relevante ahora porque cuantifica con precisión los límites de la extensión de vocabulario en lenguas de bajos recursos y porque el propio autor advierte de que, en sus experimentos de continued pretraining a pequeña escala (modelos de 1B y 0,6B, 2 GB de texto, una sola semilla), extender el vocabulario produjo peor bits per byte en nepalí held-out que conservar el vocabulario original. El repositorio de Hugging Face no contiene pesos: solo ficheros de tokenizer.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks de calidad de modelo (MMLU, HumanEv
 
 ## Requisitos de hardware
 
-- El tokenizer en sí es un artefacto de fichero: su carga y uso no requieren GPU, funcionan en CPU y su huella en disco es prácticamente nula (el repositorio ocupa 0,0 GB según HuggingFace).
+- El tokenizer en sí es un artefacto de fichero: su carga y uso no requieren GPU, funcionan en CPU y su huella en disco es prácticamente nula (el repositorio ocupa 0,0 GB según Hugging Face).
 - El coste real aparece al usarlo con un modelo: hay que redimensionar las embeddings del modelo base a 183.669 filas, lo que incrementa ligeramente la memoria de parámetros respecto al Qwen3 original del mismo tamaño.
 - No hay datos publicados de VRAM, GPU recomendadas, latencia ni throughput para este artefacto en la información disponible.
 - Opciones de despliegue: cualquier stack que cargue tokenizers de `transformers` (vLLM, TGI, llama.cpp, Ollama) siempre que acepte el vocabulario extendido y el `tokenizer_class` sin reescribirlo. El autor advierte explícitamente de no cambiar `tokenizer_class` ni usar clases tipo `Qwen2Tokenizer`.
@@ -87,7 +87,7 @@ La información disponible no permite comparar con otras alternativas de tokeniz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aarjan/Qwen3-Nepali-Extended-Tokenizer-32k
+- Modelo en Hugging Face: https://huggingface.co/Aarjan/Qwen3-Nepali-Extended-Tokenizer-32k
 - Repositorio del paper (código, datos y pre-registro): https://github.com/arjanchaudharyy/nepali-pretokenizer-repair
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Qwen3 Technical Report: https://arxiv.org/html/2505.09388

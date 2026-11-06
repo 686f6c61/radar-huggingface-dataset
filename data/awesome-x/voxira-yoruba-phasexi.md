@@ -79,9 +79,9 @@ El conjunto de evaluación es un dev set de 100 clips (10,5 minutos, 1.268 palab
 
 | Modelo | Parámetros | Idiomas | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Voxira Yorùbá Phase XI | 315 M | yo, en (code-switching) | audio 16 kHz | Apache 2.0 | HuggingFace, 0 descargas |
-| facebook/wav2vec2-large-xlsr-53 | 317 M | 53 idiomas | audio 16 kHz | Apache 2.0 | HuggingFace, ampliamente usado |
-| Voxira Yorùbá Phase X | 315 M | yo, en | audio 16 kHz | Apache 2.0 | HuggingFace (fase anterior) |
+| Voxira Yorùbá Phase XI | 315 M | yo, en (code-switching) | audio 16 kHz | Apache 2.0 | Hugging Face, 0 descargas |
+| facebook/wav2vec2-large-xlsr-53 | 317 M | 53 idiomas | audio 16 kHz | Apache 2.0 | Hugging Face, ampliamente usado |
+| Voxira Yorùbá Phase X | 315 M | yo, en | audio 16 kHz | Apache 2.0 | Hugging Face (fase anterior) |
 
 La comparación con modelos ASR comerciales o de mayor tamaño (Whisper large-v3, etc.) no está disponible en la información proporcionada. El modelo base XLSR-53 es multilingüe pero no está especializado en code-switching yo-en, por lo que el fine-tuning de Voxira aporta la adaptación al dominio. La fase X sirve como referencia directa de la mejora del decodificador (8,0 % a 4,5 % de WER en el mismo dev set).
 
@@ -100,7 +100,7 @@ La comparación con modelos ASR comerciales o de mayor tamaño (Whisper large-v3
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Awesome-x/voxira-yoruba-phaseXI
+- Modelo en Hugging Face: https://huggingface.co/Awesome-x/voxira-yoruba-phaseXI
 - Demo Space: https://huggingface.co/spaces/Awesome-x/voxira-demo
 - Modelo base: https://huggingface.co/facebook/wav2vec2-large-xlsr-53
 - Dataset de evaluación: https://huggingface.co/datasets/google/fleurs

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taizya/Dogla es un repositorio de modelo publicado en HuggingFace por el usuario Taizya bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia (`license: apache-2.0`) y ningun otro contenido descriptivo: no se declara arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
+Taizya/Dogla es un repositorio de modelo publicado en Hugging Face por el usuario Taizya bajo licencia Apache 2.0. En el momento de la consulta, la model card asociada contiene unicamente el encabezado de licencia (`license: apache-2.0`) y ningun otro contenido descriptivo: no se declara arquitectura, tamano de parametros, longitud de contexto, datos de entrenamiento ni capacidades.
 
 El repositorio no registra descargas ni "likes", no tiene pipeline declarado, no especifica idiomas soportados y no incluye pesos, tokenizador ni configuracion visible en la informacion proporcionada. Tampoco se ha localizado documentacion tecnica, paper, blog o repositorio de codigo vinculado al modelo en los resultados de busqueda disponibles.
 
@@ -25,7 +25,7 @@ Metadatos adicionales verificables:
 
 | Parametro | Valor |
 |---|---|
-| Identificador en HuggingFace | Taizya/Dogla |
+| Identificador en Hugging Face | Taizya/Dogla |
 | Autor | Taizya |
 | Fecha de creacion | 2026-09-27 |
 | Ultima actualizacion | 2026-09-27 |
@@ -86,7 +86,7 @@ No disponible. La comparativa requiere al menos conocer el tamano, la arquitectu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Taizya/Dogla
+- Repositorio en Hugging Face: https://huggingface.co/Taizya/Dogla
 - Pagina de la licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Perfil de GitHub potencialmente relacionado con el autor (sin vinculo confirmado con el modelo): https://github.com/Taizya-ai
 - Resultados de busqueda consultados, sin relacion con el modelo: https://huggingface.co/ , https://llm-stats.com/ , https://github.com/ClawLabsAI/free-ai-models , https://tensor.art/models/752877208567131062

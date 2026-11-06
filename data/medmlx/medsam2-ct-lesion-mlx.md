@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Entrada | Contexto/volumen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/medsam2-ct-lesion-mlx | Segmentación promptable 3D (MLX) | TC + box prompt | Propagación por cortes axiales | CC-BY-SA-4.0 con restricción a investigación | HuggingFace, MLX |
-| wanglab/MedSAM2 | Segmentación promptable 3D (PyTorch) | TC/RM/vídeo + prompts | Propagación por cortes/fotogramas | CC-BY-SA-4.0 con restricción a investigación | HuggingFace |
+| MedMLX/medsam2-ct-lesion-mlx | Segmentación promptable 3D (MLX) | TC + box prompt | Propagación por cortes axiales | CC-BY-SA-4.0 con restricción a investigación | Hugging Face, MLX |
+| wanglab/MedSAM2 | Segmentación promptable 3D (PyTorch) | TC/RM/vídeo + prompts | Propagación por cortes/fotogramas | CC-BY-SA-4.0 con restricción a investigación | Hugging Face |
 | SAM 2 (Meta) | Segmentación promptable 2D/vídeo | Imagen/vídeo + prompts | Memoria temporal de vídeo | Apache 2.0 (versión base) | Repositorio oficial |
 | TotalSegmentator / nnU-Net | Segmentación volumétrica automática | TC completo | Volumen completo, clases fijas | Varía por modelo (a menudo Apache 2.0 o MIT) | Repositorios comunitarios |
 
@@ -85,7 +85,7 @@ La diferencia clave frente a MedSAM2 original es el runtime (MLX frente a PyTorc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedMLX/medsam2-ct-lesion-mlx
+- Modelo en Hugging Face: https://huggingface.co/MedMLX/medsam2-ct-lesion-mlx
 - Repositorio GitHub de MedMLX: https://github.com/MedMLX/medsam2-mlx
 - Documentación de ejecución: https://github.com/MedMLX/medsam2-mlx/blob/main/README.md#run
 - Modelo base MedSAM2: https://huggingface.co/wanglab/MedSAM2

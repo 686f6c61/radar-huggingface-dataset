@@ -108,8 +108,8 @@ No se han publicado benchmarks del modelo abliterado sobre las tareas anteriores
 - La licencia Apache 2.0 permite uso comercial, pero el uso de un modelo sin rechazos puede incumplir políticas de plataformas o requisitos regulatorios según el contexto de despliegue.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-Unlocked-Uncensored-Heretic
+- Hugging Face: https://huggingface.co/SolsticeAI/Nanbeige4.3-33B-Unlocked-Uncensored-Heretic
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Heretic: https://heretic-project.org
-- Directorio de reproducción: `reproduce/README.md` dentro del repositorio de HuggingFace
+- Directorio de reproducción: `reproduce/README.md` dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

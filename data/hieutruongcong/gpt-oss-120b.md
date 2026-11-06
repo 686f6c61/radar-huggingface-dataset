@@ -73,8 +73,8 @@ No se dispone de datos comparativos en la información proporcionada. gpt-oss-12
 
 ## Enlaces
 
-- [HuggingFace - HieuTruongCong/gpt-oss-120b](https://huggingface.co/HieuTruongCong/gpt-oss-120b)
-- [HuggingFace - openai/gpt-oss-120b (original)](https://huggingface.co/openai/gpt-oss-120b)
+- [Hugging Face - HieuTruongCong/gpt-oss-120b](https://huggingface.co/HieuTruongCong/gpt-oss-120b)
+- [Hugging Face - openai/gpt-oss-120b (original)](https://huggingface.co/openai/gpt-oss-120b)
 - [Paper (model card) - arXiv:2508.10925](https://arxiv.org/abs/2508.10925)
 - [Blog de OpenAI - Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss/)
 - [Repositorio GitHub - openai/gpt-oss](https://github.com/openai/gpt-oss)

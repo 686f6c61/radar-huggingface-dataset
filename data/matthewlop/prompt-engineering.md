@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthewlop/prompt-engineering` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre ingenieria de prompts. El autor, identificado como matthewlop, publica dos artefactos: `analysis.md` (la nota principal) y `README.md` (documentacion del repositorio). La model card indica de forma explicita que el material "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
+`matthewlop/prompt-engineering` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre ingenieria de prompts. El autor, identificado como matthewlop, publica dos artefactos: `analysis.md` (la nota principal) y `README.md` (documentacion del repositorio). La model card indica de forma explicita que el material "no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado".
 
 A pesar de la etiqueta `safetensors` y del recuento de 24.832 parametros totales reportado en los metadatos, la documentacion del autor describe un repositorio de notas exploratorias con hipotesis, planes de evaluacion, referencias y preguntas abiertas, separando explicitamente lo planificado de lo ya ejecutado. Esta contradiccion entre las etiquetas tecnicas y el contenido declarado es la caracteristica mas relevante de la ficha.
 
@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 | Contexto | no disponible | no disponible |
 | Rendimiento | no publicado | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas, 0 likes | no disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas, 0 likes | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -89,5 +89,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/matthewlop/prompt-engineering
+- Hugging Face: https://huggingface.co/matthewlop/prompt-engineering
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, al autor ni al contenido de las notas. Los resultados obtenidos corresponden a sitios sin relacion (ARD Plus y WDR, sobre la serie Lindenstrasse) y se descartan por no ser pertinentes.

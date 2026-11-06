@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`williamreye/beit-matching` es un repositorio de HuggingFace publicado bajo licencia Apache 2.0 que contiene una implementación de trabajo de una arquitectura BEiT orientada a una tarea de *matching* (emparejamiento). El autor lo describe explícitamente como un punto de partida transparente con pruebas de humo reproducibles: el archivo `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark.
+`williamreye/beit-matching` es un repositorio de Hugging Face publicado bajo licencia Apache 2.0 que contiene una implementación de trabajo de una arquitectura BEiT orientada a una tarea de *matching* (emparejamiento). El autor lo describe explícitamente como un punto de partida transparente con pruebas de humo reproducibles: el archivo `model.safetensors` es un checkpoint de inicialización válido para *smoke tests*, no un modelo entrenado ni evaluado. El repositorio no reclama ninguna puntuación de benchmark.
 
 El dato más relevante es la discrepancia entre la configuración declarada y el artefacto real: la model card indica escala "huge", pero el checkpoint en safetensors contiene 24.832 parámetros totales (aproximadamente 24,8 K), un tamaño propio de una prueba de integración más que de un modelo utilizable en producción. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 *likes* en el momento de la consulta.
 
@@ -80,12 +80,12 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 - Riesgo de alucinación: no evaluable, dado que no hay un modelo entrenado sobre el que medirlo.
 - Limitaciones de contexto e idioma: no disponibles; no se especifica ventana de contexto ni cobertura lingüística.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen si el repositorio se usa con *datasets* externos.
-- Implementación personalizada: las API automáticas de HuggingFace no cargarán el modelo sin un adaptador explícito, lo que añade trabajo de integración en producción.
+- Implementación personalizada: las API automáticas de Hugging Face no cargarán el modelo sin un adaptador explícito, lo que añade trabajo de integración en producción.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto incluidos en el repositorio.
 - La fecha de creación registrada (2026-09-11) es posterior a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de depender de él.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/williamreye/beit-matching
-- Archivos del repositorio: `finetune.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la pestaña de archivos del repositorio en HuggingFace).
+- Modelo en Hugging Face: https://huggingface.co/williamreye/beit-matching
+- Archivos del repositorio: `finetune.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md` (accesibles desde la pestaña de archivos del repositorio en Hugging Face).
 - Papers, blogs, repositorios o demos adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces obtenidos correspondían a servicios de correo certificado y webmail sin ninguna relación con el contenido de esta ficha.

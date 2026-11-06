@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beetle-bilingual-balanced-b1-fineweb-2b-kor-eng` es un modelo de generación de texto publicado en HuggingFace por el usuario Beetle-FineWeb-24B-5. Se trata de un lanzamiento con actividad prácticamente nula en la plataforma: cero descargas y cero "likes" en el momento de redactar esta ficha, y una model card que es la plantilla automática de HuggingFace sin ningún campo cumplimentado por el autor. Por tanto, la información verificable se limita a los metadatos del repositorio y al recuento real de parámetros extraído de los ficheros safetensors.
+El modelo `beetle-bilingual-balanced-b1-fineweb-2b-kor-eng` es un modelo de generación de texto publicado en Hugging Face por el usuario Beetle-FineWeb-24B-5. Se trata de un lanzamiento con actividad prácticamente nula en la plataforma: cero descargas y cero "likes" en el momento de redactar esta ficha, y una model card que es la plantilla automática de Hugging Face sin ningún campo cumplimentado por el autor. Por tanto, la información verificable se limita a los metadatos del repositorio y al recuento real de parámetros extraído de los ficheros safetensors.
 
 El dato más relevante es el tamaño real del modelo: 193.804.032 parámetros (aproximadamente 194 millones), muy lejos de lo que sugiere el nombre del repositorio, que incluye las cadenas "24B" y "2b". El tag de arquitectura `pico_decoder` y la presencia de `custom_code` indican que no se apoya en una clase estándar de transformers, sino en una implementación propia que requiere ejecutar código remoto para cargar el modelo. El nombre también apunta a un entrenamiento bilingüe equilibrado coreano-inglés sobre el dataset FineWeb, aunque esto no está confirmado por el autor.
 
@@ -30,7 +30,7 @@ La relevancia de este modelo es, a día de hoy, limitada y fundamentalmente docu
 
 La unica informacion sobre la arquitectura proviene de los tags del repositorio. El tag `pico_decoder` apunta a un decodificador de tipo transformer con una implementacion propia, y la presencia de `custom_code` implica que la carga del modelo depende de codigo remoto no auditado incluido en el repositorio. No se dispone de informacion sobre numero de capas, dimensiones ocultas, mecanismo de atencion (completa, lineal o hibrida), uso de RMSNorm, RoPE u otras elecciones de diseno. Tampoco hay datos sobre si emplea decodificacion especulativa, atencion con ventana deslizante u otras tecnicas.
 
-En cuanto al entrenamiento, no hay informacion publicada. El nombre del repositorio menciona "fineweb", "bilingual" y "balanced", lo que sugiere un entrenamiento sobre el corpus FineWeb con una mezcla equilibrada de coreano e ingles, pero el autor no documenta el numero de tokens, la composicion del dataset, el regimen de precision (fp16, bf16, fp8) ni si se aplicaron fases de ajuste como SFT, RLHF o DPO. El unico identificador de arXiv presente en los tags, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla generica de HuggingFace, y no debe interpretarse como el paper del modelo.
+En cuanto al entrenamiento, no hay informacion publicada. El nombre del repositorio menciona "fineweb", "bilingual" y "balanced", lo que sugiere un entrenamiento sobre el corpus FineWeb con una mezcla equilibrada de coreano e ingles, pero el autor no documenta el numero de tokens, la composicion del dataset, el regimen de precision (fp16, bf16, fp8) ni si se aplicaron fases de ajuste como SFT, RLHF o DPO. El unico identificador de arXiv presente en los tags, `arxiv:1910.09700`, corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla generica de Hugging Face, y no debe interpretarse como el paper del modelo.
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ Dado que el autor no documenta el proposito del modelo ni sus capacidades, no es
 
 - Experimentacion academica con arquitecturas de decodificador personalizadas: el tag `pico_decoder` y el uso de `custom_code` permiten estudiar como se implementa un decodificador no estandar dentro del ecosistema transformers.
 - Investigacion sobre mezclas de datos bilingues coreano-ingles: si se confirma la naturaleza bilingue sugerida por el nombre, el modelo podria servir para analizar el equilibrio entre idiomas en modelos de menos de 200M de parametros.
-- Pruebas de reproducibilidad de publicaciones en HuggingFace: es un caso util para estudiar que ocurre cuando una model card se publica sin informacion y como afecta eso a la evaluacion por terceros.
+- Pruebas de reproducibilidad de publicaciones en Hugging Face: es un caso util para estudiar que ocurre cuando una model card se publica sin informacion y como afecta eso a la evaluacion por terceros.
 - Analisis de sesgos en corpus FineWeb: si el entrenamiento usa efectivamente FineWeb, puede emplearse para estudiar sesgos heredados de ese corpus.
 - Fines docentes sobre empaquetado de safetensors: el repositorio permite examinar la estructura de pesos y la discrepancia entre tamano nominal y parametros reales.
 - Evaluacion de riesgos de seguridad en `custom_code`: permite ilustrar por que cargar modelos con `trust_remote_code=True` de autores desconocidos y sin auditoria es una practica peligrosa.
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| beetle-bilingual-balanced-b1-fineweb-2b-kor-eng | 194M | no disponible | no disponible | HuggingFace, sin descargas |
+| beetle-bilingual-balanced-b1-fineweb-2b-kor-eng | 194M | no disponible | no disponible | Hugging Face, sin descargas |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente sobre arquitectura, contexto, licencia o rendimiento como para establecer una comparacion fiable con alternativas de la misma categoria. Cualquier comparacion seria especulativa.
@@ -90,7 +90,7 @@ No se dispone de informacion suficiente sobre arquitectura, contexto, licencia o
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-2b-kor-eng
+- Repositorio en Hugging Face: https://huggingface.co/Beetle-FineWeb-24B-5/beetle-bilingual-balanced-b1-fineweb-2b-kor-eng
 - Referencia del tag arXiv (Lacoste et al., 2019, estimacion de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smol-math-sft-v3 es un ajuste fino supervisado (SFT) publicado por el usuario yas1988 en HuggingFace, derivado a su vez de otro modelo propio, yas1988/smol-math-sft-v2-merged. El nombre sugiere un enfoque en matematicas y el tag "smol" apunta a la familia de modelos pequenos de HuggingFace (SmolLM), aunque la model card no confirma explicitamente la arquitectura base ni el tamano exacto de parametros. El repositorio ocupa 2,6 GB en formato safetensors, lo que es coherente con un modelo de aproximadamente 1-2 mil millones de parametros en precision de 16 bits.
+smol-math-sft-v3 es un ajuste fino supervisado (SFT) publicado por el usuario yas1988 en Hugging Face, derivado a su vez de otro modelo propio, yas1988/smol-math-sft-v2-merged. El nombre sugiere un enfoque en matematicas y el tag "smol" apunta a la familia de modelos pequenos de Hugging Face (SmolLM), aunque la model card no confirma explicitamente la arquitectura base ni el tamano exacto de parametros. El repositorio ocupa 2,6 GB en formato safetensors, lo que es coherente con un modelo de aproximadamente 1-2 mil millones de parametros en precision de 16 bits.
 
 El modelo se ha entrenado con la libreria TRL (version 1.17.1) mediante SFT, un metodo de ajuste supervisado sobre pares instruccion-respuesta. No se documentan datos de entrenamiento, composicion del dataset, numero de tokens ni proceso de alineacion adicional (RLHF/DPO). La model card es practicamente generica, autogenerada por la plantilla de TRL, y no incluye informacion sobre licencia, idiomas, rendimiento ni limitaciones.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada: se trata de un experimento personal con cero d
 
 La informacion disponible no detalla la arquitectura interna. El modelo se presenta como un fine-tune de yas1988/smol-math-sft-v2-merged, que a su vez es una fusion (merged) de un ajuste previo. El entrenamiento se realizo con TRL 1.17.1 sobre Transformers 5.22.0, PyTorch 2.11.0+cu130, Datasets 4.8.5 y Tokenizers 0.23.3. El metodo es SFT (supervised fine-tuning) sobre pares de instrucciones y respuestas, sin que se documenten tecnicas adicionales como DPO, RLHF, decodificacion especulativa o atencion lineal.
 
-No se especifica el numero de tokens de entrenamiento, la composicion del dataset (aunque el nombre "math" sugiere problemas matematicos), ni si hubo filtrado de datos o deduplicacion. Tampoco se indica si el modelo base es un SmolLM oficial de HuggingFace o un modelo propio del autor. La ausencia de estos datos impide evaluar la calidad o la reproducibilidad del ajuste.
+No se especifica el numero de tokens de entrenamiento, la composicion del dataset (aunque el nombre "math" sugiere problemas matematicos), ni si hubo filtrado de datos o deduplicacion. Tampoco se indica si el modelo base es un SmolLM oficial de Hugging Face o un modelo propio del autor. La ausencia de estos datos impide evaluar la calidad o la reproducibilidad del ajuste.
 
 ## Capacidades
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| yas1988/smol-math-sft-v3 | no disponible (~1-1,5 B estimado) | no disponible | no disponible | HuggingFace, 0 descargas | Fine-tune SFT con TRL; sin benchmarks |
-| SmolLM2-1.7B-Instruct (HuggingFace) | 1,7 B | 8.192 tokens (segun documentacion publica de SmolLM2) | Apache-2.0 | HuggingFace, ampliamente usado | Modelo oficial con benchmarks publicados |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (segun documentacion publica de Qwen2.5) | Apache-2.0 | HuggingFace, ampliamente usado | Buen rendimiento en matematicas y codigo |
+| yas1988/smol-math-sft-v3 | no disponible (~1-1,5 B estimado) | no disponible | no disponible | Hugging Face, 0 descargas | Fine-tune SFT con TRL; sin benchmarks |
+| SmolLM2-1.7B-Instruct (Hugging Face) | 1,7 B | 8.192 tokens (segun documentacion publica de SmolLM2) | Apache-2.0 | Hugging Face, ampliamente usado | Modelo oficial con benchmarks publicados |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens (segun documentacion publica de Qwen2.5) | Apache-2.0 | Hugging Face, ampliamente usado | Buen rendimiento en matematicas y codigo |
 
 La comparacion es orientativa: el modelo de yas1988 no publica datos que permitan una comparacion rigurosa con alternativas consolidadas.
 
@@ -82,7 +82,7 @@ La comparacion es orientativa: el modelo de yas1988 no publica datos que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yas1988/smol-math-sft-v3
+- Modelo en Hugging Face: https://huggingface.co/yas1988/smol-math-sft-v3
 - Modelo base: https://huggingface.co/yas1988/smol-math-sft-v2-merged
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

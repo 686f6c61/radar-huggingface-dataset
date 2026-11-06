@@ -6,7 +6,7 @@ Esta ficha describe una versión cuantizada a INT8 del modelo allenai/Llama-3.1-
 
 El interés de esta publicación es fundamentalmente práctico: ofrece una ruta de despliegue de un modelo de instrucciones de 8B en hardware Intel sin GPU dedicada, con un recetario de replicación reproducible (auto-round-pipeline) y parámetros de calibración documentados. El modelo base Tulu 3 SFT está afinado para seguir instrucciones y mantener conversaciones multi-turno, y su licencia Apache 2.0 facilita el uso comercial.
 
-Conviene subrayar que la información disponible es la de la model card del cuantizador y los metadatos de HuggingFace. No se han publicado en esta información resultados de benchmarks del checkpoint cuantizado, ni detalles del dataset de entrenamiento del modelo base, ni la longitud de contexto verificada tras la cuantización. La cifra de parámetros reportada en safetensors (2.865.238.016) no coincide con los aproximadamente 8.000 millones que sugiere el nombre del modelo, por lo que debe tratarse con cautela.
+Conviene subrayar que la información disponible es la de la model card del cuantizador y los metadatos de Hugging Face. No se han publicado en esta información resultados de benchmarks del checkpoint cuantizado, ni detalles del dataset de entrenamiento del modelo base, ni la longitud de contexto verificada tras la cuantización. La cifra de parámetros reportada en safetensors (2.865.238.016) no coincide con los aproximadamente 8.000 millones que sugiere el nombre del modelo, por lo que debe tratarse con cautela.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ La comparacion con otras cuantizaciones INT8 del mismo modelo base (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs128-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/allenai_Llama-3.1-Tulu-3-8B-SFT-auto_gptq-int8-gs128-sym
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
 - Intel AutoRound (repositorio): https://github.com/intel/auto-round
 - auto-round-pipeline (recetario de replicacion): https://git.epicdynamic.com/auto-round-pipeline

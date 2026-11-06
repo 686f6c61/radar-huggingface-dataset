@@ -6,7 +6,7 @@ olmo2-1B-288domains-vertex-linearlog-hellaswag es un modelo de lenguaje de 1,41 
 
 No se trata de un modelo de propósito general: es un artefacto de investigación diseñado para reproducir los experimentos del paper de LinMix (arXiv:2610.37390). Su relevancia radica en que demuestra cómo optimizar automáticamente la composición del dataset de preentrenamiento —uno de los problemas abiertos más costosos del entrenamiento de LLM— usando modelos proxy pequeños (60M) para predecir el rendimiento de modelos mayores (1,4B).
 
-La arquitectura es OLMo 2 (Olmo2ForCausalLM), con 18 capas y tamaño oculto 2048, entrenada con OLMo-core. El modelo está publicado en HuggingFace con pesos en safetensors bfloat16 y licencia MIT.
+La arquitectura es OLMo 2 (Olmo2ForCausalLM), con 18 capas y tamaño oculto 2048, entrenada con OLMo-core. El modelo está publicado en Hugging Face con pesos en safetensors bfloat16 y licencia MIT.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Solo 
 - VRAM estimada para inferencia: con 1,41B de parametros en bfloat16, los pesos ocupan unos 2,8 GB; con overhead de activaciones y KV cache, entre 4 y 6 GB de VRAM son suficientes.
 - GPU recomendadas: cualquier GPU moderna de consumo es suficiente; por ejemplo, una RTX 3060 de 12 GB, RTX 4060 Ti o superiores. No se requieren A100 ni H100 para inferencia.
 - Cabe comodamente en GPUs de consumo; incluso es viable su ejecucion en CPU para experimentos puntuales, dado el tamano reducido.
-- Despliegue: via transformers (HuggingFace) con `AutoModelForCausalLM`, tal como muestra la model card. Al ser safetensors estandar, es compatible con vLLM, TGI y llama.cpp (previa conversion a GGUF, no publicada oficialmente). No se menciona soporte oficial en Ollama.
+- Despliegue: via transformers (Hugging Face) con `AutoModelForCausalLM`, tal como muestra la model card. Al ser safetensors estandar, es compatible con vLLM, TGI y llama.cpp (previa conversion a GGUF, no publicada oficialmente). No se menciona soporte oficial en Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ Nota: las alternativas listadas son modelos base de tamano comparable orientados
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linearlog-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-vertex-linearlog-hellaswag
 - Paper LinMix (arXiv): https://arxiv.org/abs/2610.37390
 - Codigo de LinMix (GitHub): https://github.com/credibleai/linmix
 - Enjambre proxy (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-vertex

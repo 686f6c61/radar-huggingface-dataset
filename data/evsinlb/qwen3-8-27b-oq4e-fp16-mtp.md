@@ -88,7 +88,7 @@ La comparativa se limita a las variantes del mismo autor porque no se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/evsinlb/Qwen3.8-27B-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/evsinlb/Qwen3.8-27B-oQ4e-fp16-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub del modelo base: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Documentación de vLLM para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

@@ -108,7 +108,7 @@ Las busquedas web citan el modelo como "284B MoE (13B activo)" en NVIDIA NIM y L
 - Dataset de calibracion CNN/DailyMail: https://huggingface.co/datasets/abisee/cnn_dailymail
 - Dataset de calibracion Nemotron-Post-Training-Dataset-v2: https://huggingface.co/datasets/nvidia/Nemotron-Post-Training-Dataset-v2
 - Licencia MIT: https://opensource.org/license/mit
-- Espejo adicional en HuggingFace: https://huggingface.co/axiomofmind/DeepSeek-V4-Flash-0731-NVFP4
+- Espejo adicional en Hugging Face: https://huggingface.co/axiomofmind/DeepSeek-V4-Flash-0731-NVFP4
 - Pagina de NVIDIA NIM del modelo base: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731
 - Ficha en LM Studio: https://lmstudio.ai/models/deepseek-v4-flash
 - Catalogo de Microsoft Foundry: https://ai.azure.com/catalog/models/DeepSeek-V4-Flash-0731

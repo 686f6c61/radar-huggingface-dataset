@@ -72,8 +72,8 @@ En el iPhone 16 Plus, dentro de la aplicación, este archivo reprodujo la elecci
 
 | Modelo | Parámetros | Contexto | Función | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeff Gestures (este modelo) | 1,006B | no disponible | Clasificación en 7 gestos | Apache-2.0 | GGUF Q8_0, LoRA GGUF y adaptador PEFT en HuggingFace |
-| Jeff v1.3 (`mstrasser/jeff-base`) | 0,8B (según la model card) | no disponible | Decisión genérica con hasta 254 opciones | Apache-2.0 (derivado de Qwen3.5-0.8B) | Pesos base y GGUF en HuggingFace |
+| Jeff Gestures (este modelo) | 1,006B | no disponible | Clasificación en 7 gestos | Apache-2.0 | GGUF Q8_0, LoRA GGUF y adaptador PEFT en Hugging Face |
+| Jeff v1.3 (`mstrasser/jeff-base`) | 0,8B (según la model card) | no disponible | Decisión genérica con hasta 254 opciones | Apache-2.0 (derivado de Qwen3.5-0.8B) | Pesos base y GGUF en Hugging Face |
 | Qwen3 0.6B | 0,6B | no disponible | Modelo generativo de propósito general | no disponible en la información | Usado como primer modelo de la aplicación; resultados inferiores en las pruebas citadas |
 
 La comparación se limita a los modelos que aparecen en la información proporcionada. No se dispone de datos de benchmarks de Qwen3 0.6B ni de Jeff v1.3 más allá de las tablas de resultados anteriores, por lo que no se incluyen cifras adicionales.
@@ -93,7 +93,7 @@ La comparación se limita a los modelos que aparecen en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/houssemzaier/jeff-gestures
+- Modelo en Hugging Face: https://huggingface.co/houssemzaier/jeff-gestures
 - Modelo base Jeff v1.3: https://huggingface.co/mstrasser/jeff-base
 - GGUF del modelo base: https://huggingface.co/mstrasser/jeff-base-gguf (revisión `a5d0e595`)
 - Kit de Jeff: https://github.com/firelex/jeff

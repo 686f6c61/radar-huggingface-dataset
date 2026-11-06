@@ -108,7 +108,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/yothinS/Qwen3-4B-ORPO-Advertisement-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/yothinS/Qwen3-4B-ORPO-Advertisement-GGUF
 - Modelo original ajustado: https://huggingface.co/yothinS/Qwen3-4B-ORPO-Advertisement
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yothinS/Advertisement_specialist

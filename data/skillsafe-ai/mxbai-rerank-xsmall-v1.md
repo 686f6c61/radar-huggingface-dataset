@@ -12,7 +12,7 @@ Su relevancia actual radica en el formato de distribución: ONNX con opset 12, e
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Cross-encoder basado en DeBERTa-v2 (tag de HuggingFace: `deberta-v2`), tarea `text-ranking` / `text-classification` |
+| Arquitectura | Cross-encoder basado en DeBERTa-v2 (tag de Hugging Face: `deberta-v2`), tarea `text-ranking` / `text-classification` |
 | Parametros totales | No disponible de forma explicita. El fichero `onnx/model.onnx` pesa 271,02 MB; si la precision es fp32, equivaldria a unos 68 millones de parametros (estimacion derivada del tamano, no confirmada) |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible. El contrato ONNX declara ejes dinamicos `['batch_size', 'sequence_length']`, por lo que la longitud es variable en tiempo de inferencia |
@@ -28,7 +28,7 @@ Su relevancia actual radica en el formato de distribución: ONNX con opset 12, e
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el proceso de entrenamiento del modelo original: no se indican el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Lo unico documentado por parte de SkillSafe es el proceso de empaquetado, no el de entrenamiento. El tag `deberta-v2` de HuggingFace indica que la arquitectura subyacente es un transformer encoder de la familia DeBERTa-v2 configurado como cross-encoder con una cabeza de clasificacion que produce una puntuacion escalar de relevancia por par (consulta, documento).
+La informacion disponible no describe el proceso de entrenamiento del modelo original: no se indican el numero de tokens, la composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste supervisado. Lo unico documentado por parte de SkillSafe es el proceso de empaquetado, no el de entrenamiento. El tag `deberta-v2` de Hugging Face indica que la arquitectura subyacente es un transformer encoder de la familia DeBERTa-v2 configurado como cross-encoder con una cabeza de clasificacion que produce una puntuacion escalar de relevancia por par (consulta, documento).
 
 Lo relevante tecnicamente en este repositorio es la cadena de conversion y verificacion. La importacion se realizo "as published upstream", es decir, sin reconversion: el fichero ONNX proviene del propio export del repositorio de Mixedbread AI y queda fijado por hash SHA-256. La receta (`recipes/mxbai-rerank-xsmall-v1.yaml`, sha256 `d16abd5f9d5afdd3c37d1ed31c2fd63ea6eb5665fa02d791e5cb41f134b8e0f7`) se ejecuto con Python 3.12.13, torch 2.10.0, onnx 1.23.0 y onnxruntime 1.30.0 sobre Darwin 25.6.0 arm64. Cada fichero ONNX paso `onnx.checker` y una prueba de humo en CPU con onnxruntime usando entradas rellenas de ceros en las formas declaradas: `input_ids[1, 8]` y `attention_mask[1, 8]` produjeron `logits[1, 1]` en 5,1 ms. No se documenta ninguna innovacion de decodificacion (no hay decodificacion especulativa ni atencion lineal): es un encoder puro de una sola pasada.
 
@@ -101,7 +101,7 @@ La informacion proporcionada no incluye especificaciones ni resultados de modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/skillsafe-ai/mxbai-rerank-xsmall-v1
+- Repositorio en Hugging Face: https://huggingface.co/skillsafe-ai/mxbai-rerank-xsmall-v1
 - Modelo upstream: https://huggingface.co/mixedbread-ai/mxbai-rerank-xsmall-v1
 - Commit upstream fijado: https://huggingface.co/mixedbread-ai/mxbai-rerank-xsmall-v1/tree/b5c6e9da73abc3711f593f705371cdbe9e0fe422
 - Licencia del modelo upstream: https://huggingface.co/mixedbread-ai/mxbai-rerank-xsmall-v1/blob/b5c6e9da73abc3711f593f705371cdbe9e0fe422/README.md

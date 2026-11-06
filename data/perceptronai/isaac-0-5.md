@@ -4,7 +4,7 @@
 
 Isaac 0.5 es un modelo fundacional de código abierto para aprendizaje robótico desarrollado por PerceptronAI, una startup fundada por exinvestigadores de Meta. Se trata de un modelo de 36 000 millones de parámetros con arquitectura de mezcla de expertos (MoE) que unifica comprensión de vídeo multimodal, razonamiento encarnado, anclaje espacial, estimación de progreso de tareas y control robótico en un único backbone compartido. El modelo acepta como entrada imágenes, vídeo, instrucciones en lenguaje natural, estado del robot y acciones previas, y produce texto, coordenadas normalizadas, salidas de estado de tarea o acciones del robot.
 
-Isaac 0.5 está entrenado con más de 35 sistemas robóticos, 100 000 horas de experiencia robótica, un millón de horas de vídeo general y tres billones de tokens multimodales. Su relevancia radica en ser, según sus autores, el primer modelo abierto que opera en la frontera de la comprensión de vídeo multimodal, el razonamiento encarnado y el control robótico, ofreciendo una pila completa de entrenamiento y despliegue que incluye pesos, código, integración con LeRobot y manifiestos de reproducción. El repositorio de HuggingFace está actualmente vacío (0.0 GB) y los pesos están marcados como "próximamente".
+Isaac 0.5 está entrenado con más de 35 sistemas robóticos, 100 000 horas de experiencia robótica, un millón de horas de vídeo general y tres billones de tokens multimodales. Su relevancia radica en ser, según sus autores, el primer modelo abierto que opera en la frontera de la comprensión de vídeo multimodal, el razonamiento encarnado y el control robótico, ofreciendo una pila completa de entrenamiento y despliegue que incluye pesos, código, integración con LeRobot y manifiestos de reproducción. El repositorio de Hugging Face está actualmente vacío (0.0 GB) y los pesos están marcados como "próximamente".
 
 ## Especificaciones técnicas
 
@@ -61,7 +61,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB) y los pesos están marcados como "COMING SOON"; no es posible descargar ni probar el modelo actualmente.
+- El repositorio de Hugging Face está vacío (0.0 GB) y los pesos están marcados como "COMING SOON"; no es posible descargar ni probar el modelo actualmente.
 - La licencia no está definida: la model card indica explícitamente que se debe añadir la licencia final antes de la publicación. Esto impide conocer las restricciones de uso comercial.
 - Solo se declara soporte para inglés; no hay evidencia de capacidades multilingües.
 - No se han publicado benchmarks estándar, por lo que el rendimiento real en tareas de razonamiento, generación de código o matemáticas es desconocido.
@@ -71,7 +71,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PerceptronAI/Isaac-0.5
+- Hugging Face: https://huggingface.co/PerceptronAI/Isaac-0.5
 - Paper (PDF): https://pub-d90b81cad7254a1aa6b148ac18153c0c.r2.dev/isaac-0.5.pdf
 - Repositorio GitHub: https://github.com/perceptron-ai-inc/isaac
 - Artículo en RobotToday: https://robottoday.com/industry-briefing/perceptron-launches-isaac-0-5-to-enhance-visual-ai-for-industrial-automation/11634

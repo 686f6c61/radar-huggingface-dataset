@@ -70,7 +70,7 @@ No se dispone de información suficiente para una comparativa con modelos simila
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-30b-a3b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-30b-a3b
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3 en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3/
 - Colección de modelos Qwen3 MoE: https://huggingface.co/collections/kerasformers/qwen3-moe-6a7f9b1eacaba9aba25a1d63

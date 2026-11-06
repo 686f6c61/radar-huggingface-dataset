@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leak-curber-enzyme-submission-5` es un paquete de inferencia para la predicción de números EC (Enzyme Commission) a partir de reacciones químicas, publicado por el usuario `da24b046` en HuggingFace. No se trata de un modelo de lenguaje ni de un transformer generativo: es un sistema de recuperación (retrieval) sobre embeddings químicos que predice la clasificación EC de una reacción enzimática. El autor lo describe explícitamente como "no un nuevo modelo predictivo", sino la retención del baseline de la submission 3 tras descartar varias alternativas basadas en transformers.
+`leak-curber-enzyme-submission-5` es un paquete de inferencia para la predicción de números EC (Enzyme Commission) a partir de reacciones químicas, publicado por el usuario `da24b046` en Hugging Face. No se trata de un modelo de lenguaje ni de un transformer generativo: es un sistema de recuperación (retrieval) sobre embeddings químicos que predice la clasificación EC de una reacción enzimática. El autor lo describe explícitamente como "no un nuevo modelo predictivo", sino la retención del baseline de la submission 3 tras descartar varias alternativas basadas en transformers.
 
 El pipeline combina características DRFP/Morgan de 8.192 bits, un encoder supervisado de dos capas ocultas entrenado sobre datos públicos, y una búsqueda de vecinos por similitud coseno sobre un índice de 63.280 filas. La predicción final se obtiene por votación ponderada de los 50 vecinos más cercanos, repartiendo el peso entre las distintas ECs registradas de cada vecino.
 
@@ -79,7 +79,7 @@ El candidato retenido (`old_supervised_embedding_retrieval`) obtiene 63,5496 % d
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `leak-curber-enzyme-submission-5` | Retrieval DRFP/Morgan + encoder supervisado | no disponible | no aplica | 63,55 % L4 desarrollo (split local) | MIT | HuggingFace, 0 descargas |
+| `leak-curber-enzyme-submission-5` | Retrieval DRFP/Morgan + encoder supervisado | no disponible | no aplica | 63,55 % L4 desarrollo (split local) | MIT | Hugging Face, 0 descargas |
 | `adapted_sidepool_all_layers_512` (mismo autor, no desplegado) | Transformer adaptado sobre RXNFP | no disponible | no disponible | 52,68 % L4 desarrollo | no disponible | Solo resultados en la model card |
 | `fresh_sidepool_512_head` (mismo autor, no desplegado) | Transformer con side-pooling y cabeza | no disponible | no disponible | 49,86 % L4 desarrollo | no disponible | Solo resultados en la model card |
 
@@ -100,7 +100,7 @@ No se dispone de información sobre modelos externos comparables de predicción 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/da24b046/leak-curber-enzyme-submission-5
+- Hugging Face: https://huggingface.co/da24b046/leak-curber-enzyme-submission-5
 - Vocabulario ENZYME (SIB ExPASy, release 02-Sep-2026, CC BY 4.0): https://enzyme.expasy.org/
 - Repositorio RXNFP (revisión citada `6fd48f4927c2178555cc5d71dbfb225fb178f43c`): no se proporciona URL directa en la información disponible.
 - Paper o blog del paquete: no disponible.

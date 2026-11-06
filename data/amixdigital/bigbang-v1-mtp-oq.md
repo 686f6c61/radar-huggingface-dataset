@@ -74,7 +74,7 @@ La comparativa es limitada porque no se dispone de benchmarks. BigBang-v1 se dif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AmixDigital/BigBang-v1-mtp-oQ
+- Repositorio Hugging Face: https://huggingface.co/AmixDigital/BigBang-v1-mtp-oQ
 - Modelo base (endless-frontier/BigBang-v1): https://huggingface.co/endless-frontier/BigBang-v1
 - Modelos cuantizados de BigBang-v1: https://huggingface.co/models?other=base_model:quantized:endless-frontier/BigBang-v1
 - Ficha en themodelverse: https://www.themodelverse.in/models/bigbang-v1

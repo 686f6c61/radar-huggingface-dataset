@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`convnextv2-large-1k-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de HuggingFace `matthieulel` como parte de un benchmark de modelos fundacionales de visión aplicados a astronomía. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `facebook/convnextv2-large-1k-224` sobre el conjunto de datos Galaxy10 DECaLS, que contiene imágenes de galaxias etiquetadas en 10 clases morfológicas. El modelo resuelve la tarea de clasificar la morfología galáctica a partir de recortes de imagen de 224x224 píxeles.
+`convnextv2-large-1k-224-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes desarrollado por el usuario de Hugging Face `matthieulel` como parte de un benchmark de modelos fundacionales de visión aplicados a astronomía. Se trata de un ajuste fino completo (todos los parámetros actualizados) del backbone `facebook/convnextv2-large-1k-224` sobre el conjunto de datos Galaxy10 DECaLS, que contiene imágenes de galaxias etiquetadas en 10 clases morfológicas. El modelo resuelve la tarea de clasificar la morfología galáctica a partir de recortes de imagen de 224x224 píxeles.
 
 El modelo forma parte de una colección más amplia de 80 configuraciones (40 backbones preentrenados por dos regímenes de adaptación) descrita en el artículo *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Con 196,4 millones de parámetros y un tamaño de repositorio de 0,8 GB, es un modelo de visión puro, sin capacidades de generación de texto ni multimodalidad, especializado exclusivamente en clasificación de imágenes astronómicas.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/convnextv2-large-1k-224-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/convnextv2-large-1k-224-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/facebook/convnextv2-large-1k-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

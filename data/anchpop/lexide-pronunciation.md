@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anchpop/lexide-pronunciation` es un sistema de procesamiento de audio centrado en la pronunciación, desarrollado por el usuario `anchpop` como parte de la colección Lexide NLP Models. Aunque la página de HuggingFace no especifica el pipeline ni la licencia, los metadatos indican que se basa en la arquitectura wav2vec2, un modelo de representación de audio auto-supervisado ampliamente utilizado para tareas de reconocimiento de fonemas y evaluación de pronunciación. Con 2.159.259.648 parámetros (aproximadamente 2,16 mil millones), se trata de un modelo de gran tamaño dentro de la familia wav2vec2, lo que sugiere que está diseñado para capturar matices fonéticos complejos en múltiples idiomas, aunque no se confirman los idiomas soportados en esta ficha.
+El modelo `anchpop/lexide-pronunciation` es un sistema de procesamiento de audio centrado en la pronunciación, desarrollado por el usuario `anchpop` como parte de la colección Lexide NLP Models. Aunque la página de Hugging Face no especifica el pipeline ni la licencia, los metadatos indican que se basa en la arquitectura wav2vec2, un modelo de representación de audio auto-supervisado ampliamente utilizado para tareas de reconocimiento de fonemas y evaluación de pronunciación. Con 2.159.259.648 parámetros (aproximadamente 2,16 mil millones), se trata de un modelo de gran tamaño dentro de la familia wav2vec2, lo que sugiere que está diseñado para capturar matices fonéticos complejos en múltiples idiomas, aunque no se confirman los idiomas soportados en esta ficha.
 
 El repositorio ocupa 208,8 GB, un tamaño inusualmente grande para el número de parámetros, lo que indica que probablemente incluye múltiples variantes, pesos en precisión completa (fp32) o archivos adicionales de entrenamiento. La colección Lexide NLP Models describe sus modelos como "multilingües" y capaces de tokenización, lematización, etiquetado de partes del discurso y dependencias, pero el modelo de pronunciación se centra específicamente en la transcripción fonética y la puntuación de pronunciación. Aunque el modelo fue creado en junio de 2026 y actualizado en agosto de 2026, su escasa adopción (57 descargas, 0 likes) sugiere que es un proyecto en fase temprana o de nicho. Su relevancia radica en la posibilidad de ofrecer una alternativa de código abierto para aplicaciones de aprendizaje de idiomas y evaluación de pronunciación, un campo dominado por soluciones propietarias.
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anchpop/lexide-pronunciation | 2,16B | wav2vec2 | no disponible | no disponible | HuggingFace |
-| facebook/wav2vec2-xls-r-2b | 2,16B | wav2vec2 | 30 segundos de audio (aprox.) | MIT | HuggingFace |
-| facebook/wav2vec2-large-xlsr-53 | 317M | wav2vec2 | 30 segundos de audio (aprox.) | MIT | HuggingFace |
-| jonatasgrosman/wav2vec2-large-xlsr-53-english | 317M | wav2vec2 | 30 segundos de audio (aprox.) | MIT | HuggingFace |
+| anchpop/lexide-pronunciation | 2,16B | wav2vec2 | no disponible | no disponible | Hugging Face |
+| facebook/wav2vec2-xls-r-2b | 2,16B | wav2vec2 | 30 segundos de audio (aprox.) | MIT | Hugging Face |
+| facebook/wav2vec2-large-xlsr-53 | 317M | wav2vec2 | 30 segundos de audio (aprox.) | MIT | Hugging Face |
+| jonatasgrosman/wav2vec2-large-xlsr-53-english | 317M | wav2vec2 | 30 segundos de audio (aprox.) | MIT | Hugging Face |
 
 El modelo `lexide-pronunciation` parece estar basado en XLS-R 2B (dado el modelo LoRA asociado), por lo que su arquitectura y tamaño son idénticos a `facebook/wav2vec2-xls-r-2b`. La diferencia clave es que el modelo de anchpop está especializado en pronunciación (posiblemente ajustado para puntuación), mientras que XLS-R es un modelo base multilingüe. No se dispone de datos de rendimiento comparativo, pero se espera que el ajuste fino mejore la precisión en tareas de pronunciación a costa de una menor generalización.
 
@@ -75,7 +75,7 @@ El modelo `lexide-pronunciation` parece estar basado en XLS-R 2B (dado el modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anchpop/lexide-pronunciation
+- Modelo en Hugging Face: https://huggingface.co/anchpop/lexide-pronunciation
 - Colección Lexide NLP Models: https://huggingface.co/collections/anchpop/lexide-nlp-models
 - Modelo relacionado (LoRA sobre XLS-R): https://huggingface.co/anchpop/lexide-pronunciation-phoneme-xls-r-2b-lora
 - Variante con VAD: https://llms.info/models/anchpop-lexide-pronunciation-vad-clean-sidechannel-degrade-1435

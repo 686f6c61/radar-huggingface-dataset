@@ -105,7 +105,7 @@ No se dispone de datos verificados de otros checkpoints de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hw-arm-towel/pi05-encos-fold-towel-93
+- Modelo en Hugging Face: https://huggingface.co/hw-arm-towel/pi05-encos-fold-towel-93
 - Aviso de licencia y modificaciones (NOTICE): https://huggingface.co/hw-arm-towel/pi05-encos-fold-towel-93/blob/main/NOTICE
 - Términos de Gemma (LICENSE_GEMMA.txt): https://huggingface.co/hw-arm-towel/pi05-encos-fold-towel-93/blob/main/LICENSE_GEMMA.txt
 - Configuración de entrenamiento: https://huggingface.co/hw-arm-towel/pi05-encos-fold-towel-93/blob/main/training_config.json

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cmuchancel/24-679-distilbert-player-position` es un clasificador de texto de cuatro clases (portero, defensa, centrocampista y delantero) construido mediante fine-tuning completo de DistilBERT (`distilbert-base-uncased`) sobre descripciones textuales de jugadores de la Premier League. Lo desarrolla el usuario de HuggingFace `cmuchancel` en el contexto del curso CMU 24-679, y se distribuye con licencia MIT. No es un modelo generativo: es una cabeza de clasificación multiclase sobre un encoder de 66 millones de parametros.
+El modelo `cmuchancel/24-679-distilbert-player-position` es un clasificador de texto de cuatro clases (portero, defensa, centrocampista y delantero) construido mediante fine-tuning completo de DistilBERT (`distilbert-base-uncased`) sobre descripciones textuales de jugadores de la Premier League. Lo desarrolla el usuario de Hugging Face `cmuchancel` en el contexto del curso CMU 24-679, y se distribuye con licencia MIT. No es un modelo generativo: es una cabeza de clasificación multiclase sobre un encoder de 66 millones de parametros.
 
 El interes practico de la ficha es limitado pero instructivo: se trata de un ejemplo canonico de fine-tuning con AutoGluon MultiModal sobre un dataset muy pequeno (1050 ejemplos de entrenamiento, 15 de validacion y 15 de test) y con resultados moderados (exactitud de test 0.7333, F1 ponderado 0.7222, 4 errores de 15 ejemplos). Sirve sobre todo como referencia metodologica de un pipeline AutoGluon + DistilBERT y como baseline para tareas de etiquetado automatico de posiciones en analitica deportiva.
 
@@ -80,10 +80,10 @@ Comparativa con alternativas de la misma categoria (encoders de clasificacion de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en esta tarea |
 |---|---|---|---|---|---|
-| `cmuchancel/24-679-distilbert-player-position` | ~66 M | 512 (uso a 128) | MIT | HuggingFace, 0 descargas | Exactitud test 0,7333; F1 ponderado 0,7222 |
-| `distilbert-base-uncased` (sin ajustar) | ~66 M | 512 | Apache 2.0 | HuggingFace | No disponible (requiere ajuste especifico) |
-| `bert-base-uncased` | ~110 M | 512 | Apache 2.0 | HuggingFace | No disponible |
-| `roberta-base` | ~125 M | 512 | MIT | HuggingFace | No disponible |
+| `cmuchancel/24-679-distilbert-player-position` | ~66 M | 512 (uso a 128) | MIT | Hugging Face, 0 descargas | Exactitud test 0,7333; F1 ponderado 0,7222 |
+| `distilbert-base-uncased` (sin ajustar) | ~66 M | 512 | Apache 2.0 | Hugging Face | No disponible (requiere ajuste especifico) |
+| `bert-base-uncased` | ~110 M | 512 | Apache 2.0 | Hugging Face | No disponible |
+| `roberta-base` | ~125 M | 512 | MIT | Hugging Face | No disponible |
 
 No se dispone de comparaciones publicadas frente a otros clasificadores entrenados sobre el mismo dataset `kadireks/2026-24679-text-dataset`.
 
@@ -102,7 +102,7 @@ No se dispone de comparaciones publicadas frente a otros clasificadores entrenad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmuchancel/24-679-distilbert-player-position
+- Modelo en Hugging Face: https://huggingface.co/cmuchancel/24-679-distilbert-player-position
 - Dataset de entrenamiento: https://huggingface.co/datasets/kadireks/2026-24679-text-dataset
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019, "DistilBERT, a distilled version of BERT"): https://arxiv.org/abs/1910.01108

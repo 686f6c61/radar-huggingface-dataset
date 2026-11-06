@@ -81,5 +81,5 @@ La comparativa directa con Qwen3-0.6B es la más relevante, ya que Marimo deriva
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/goldenfox/marimo-0.6b-mlx
+- Repositorio Hugging Face: https://huggingface.co/goldenfox/marimo-0.6b-mlx
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B

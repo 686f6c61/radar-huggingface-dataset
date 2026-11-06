@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emrekuruu/Baseline
+- Hugging Face: https://huggingface.co/emrekuruu/Baseline
 - Paper (arXiv): https://arxiv.org/pdf/2608.23176
 - Código (GitHub): https://github.com/emrekuruu/retrieval-router
 - Colección de checkpoints RetrievalRouter: https://huggingface.co/collections/emrekuruu/retrieval-router

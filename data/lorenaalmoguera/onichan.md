@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Onichan es un repositorio de HuggingFace publicado por el usuario lorenaalmoguera bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible es practicamente nula: la model card contiene unicamente el bloque de metadatos con la licencia y carece de cualquier descripcion del modelo, de la arquitectura, del proceso de entrenamiento o de los datos utilizados. El repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado y no especifica idiomas soportados, por lo que no es posible determinar que tipo de artefacto contiene (pesos de un modelo de lenguaje, un adaptador LoRA, un checkpoint de difusion u otro tipo de fichero).
+Onichan es un repositorio de Hugging Face publicado por el usuario lorenaalmoguera bajo licencia Apache 2.0. En el momento de redactar esta ficha, la informacion disponible es practicamente nula: la model card contiene unicamente el bloque de metadatos con la licencia y carece de cualquier descripcion del modelo, de la arquitectura, del proceso de entrenamiento o de los datos utilizados. El repositorio registra 0 descargas y 0 likes, no tiene pipeline declarado y no especifica idiomas soportados, por lo que no es posible determinar que tipo de artefacto contiene (pesos de un modelo de lenguaje, un adaptador LoRA, un checkpoint de difusion u otro tipo de fichero).
 
 No se puede confirmar ni la arquitectura, ni el numero de parametros, ni la longitud de contexto, ni el formato de los pesos, ya que estos datos no aparecen en la informacion proporcionada. La fecha de creacion y de ultima actualizacion registrada es la misma (2026-10-24T11:54:57Z), lo que sugiere un unico commit sin mantenimiento posterior.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lorenaalmoguera/onichan | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| lorenaalmoguera/onichan | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lorenaalmoguera/onichan
+- Hugging Face: https://huggingface.co/lorenaalmoguera/onichan
 - PixAI, "Onii-chan | miraculous AI LoRA Model" (artefacto no relacionado, solo a efectos de desambiguacion del nombre): https://pixai.art/en/model/1936881264908455139/1952982470313903334
 - PixAI, "Onii-chan | miraculous" (artefacto no relacionado): https://pixai.art/en/model/1936881264908455139
 - PixAI, "oniichan" (artefacto no relacionado): https://pixai.art/model/1835516388326631389-oniichan

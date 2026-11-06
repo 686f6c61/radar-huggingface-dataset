@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yxnxc/laya-claim-detection` es un modelo de clasificacion de texto (text-classification) publicado por el usuario yxnxc en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base `convaiinnovations/laya`, orientado a la deteccion de afirmaciones o claims, segun se deduce del identificador y del dataset de entrenamiento declarado (`Nithiwat/claim-detection`). El repositorio tiene un tamano de 0,8 GB y esta publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
+`yxnxc/laya-claim-detection` es un modelo de clasificacion de texto (text-classification) publicado por el usuario yxnxc en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base `convaiinnovations/laya`, orientado a la deteccion de afirmaciones o claims, segun se deduce del identificador y del dataset de entrenamiento declarado (`Nithiwat/claim-detection`). El repositorio tiene un tamano de 0,8 GB y esta publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales.
 
 El modelo cuenta con 421.293.830 parametros (aproximadamente 421 millones), un tamano propio de un transformer de escala base o media-grande, adecuado para tareas de clasificacion en produccion con latencias moderadas. El pipeline declarado es de clasificacion de texto, por lo que su salida esperada son etiquetas o probabilidades por clase, no generacion libre de texto.
 
@@ -31,7 +31,7 @@ En cuanto a los datos de entrenamiento, solo se declara el dataset `Nithiwat/cla
 
 - Clasificacion de texto: la tarea principal declarada es la deteccion de claims o afirmaciones, presumiblemente con salida binaria o multiclase.
 - Deteccion de afirmaciones verificables: el nombre del modelo y el dataset asociado apuntan a la identificacion de fragmentos de texto que contienen afirmaciones susceptibles de verificacion, un paso habitual en pipelines de fact-checking.
-- Integracion como endpoint: el tag `endpoints_compatible` indica que el modelo puede desplegarse como endpoint gestionado en HuggingFace Inference Endpoints.
+- Integracion como endpoint: el tag `endpoints_compatible` indica que el modelo puede desplegarse como endpoint gestionado en Hugging Face Inference Endpoints.
 - Generacion de texto: no soportada de forma nativa, dado que el pipeline es de clasificacion.
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (calculada a partir de los 421 M de parametros, no medida): aproximadamente 1,7 GB en fp32, 0,85 GB en fp16/bf16 y en torno a 0,42-0,45 GB en int8.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM libre es suficiente en fp16. Tarjetas como RTX 3060, RTX 4060, RTX 4090, A10G, L4, T4 o A100 son mas que suficientes para inferencia individual o por lotes.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna con 4 GB o mas de VRAM, incluidas soluciones integradas de gama alta y GPUs de portatil.
-- Opciones de despliegue: HuggingFace Inference Endpoints (el modelo lleva el tag `endpoints_compatible`), `transformers` con `pipeline("text-classification")`, y potencialmente vLLM o TGI para servir clasificadores a gran escala. No se ha confirmado la disponibilidad de pesos GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: Hugging Face Inference Endpoints (el modelo lleva el tag `endpoints_compatible`), `transformers` con `pipeline("text-classification")`, y potencialmente vLLM o TGI para servir clasificadores a gran escala. No se ha confirmado la disponibilidad de pesos GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles. Al no haber mediciones publicadas, habria que benchmarkear en el hardware objetivo.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ Nota: los datos de parametros y contexto de los modelos comparativos son valores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yxnxc/laya-claim-detection
+- Modelo en Hugging Face: https://huggingface.co/yxnxc/laya-claim-detection
 - Modelo base declarado: https://huggingface.co/convaiinnovations/laya
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Nithiwat/claim-detection
 - Paper, blog, repositorio o demo adicionales: no disponibles (la busqueda web no devolvio resultados relevantes).

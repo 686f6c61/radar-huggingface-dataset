@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supertonic 2 es un sistema de síntesis de voz (text-to-speech) multilingüe desarrollado por Supertone Inc. y distribuido en este repositorio de HuggingFace por el usuario TechnoBaptist. Se trata de una segunda versión que amplía el soporte de idiomas del modelo original (inglés, coreano, español, portugués y francés) manteniendo la misma arquitectura y el mismo coste de inferencia. El modelo está diseñado para ejecución local en dispositivo ("on-device") mediante ONNX Runtime, sin llamadas a API en la nube ni envío de datos a terceros, y con un tamaño de tan solo 66 millones de parámetros y un repositorio de 0,3 GB.
+Supertonic 2 es un sistema de síntesis de voz (text-to-speech) multilingüe desarrollado por Supertone Inc. y distribuido en este repositorio de Hugging Face por el usuario TechnoBaptist. Se trata de una segunda versión que amplía el soporte de idiomas del modelo original (inglés, coreano, español, portugués y francés) manteniendo la misma arquitectura y el mismo coste de inferencia. El modelo está diseñado para ejecución local en dispositivo ("on-device") mediante ONNX Runtime, sin llamadas a API en la nube ni envío de datos a terceros, y con un tamaño de tan solo 66 millones de parámetros y un repositorio de 0,3 GB.
 
 Su propuesta de valor es el rendimiento en inferencia: con solo 2 pasos de muestreo alcanza hasta 167 veces el tiempo real (RTF de 0,006 en textos largos sobre M4 Pro con WebGPU), lo que lo sitúa muy por delante de alternativas abiertas como Kokoro o NeuTTS Air y de servicios en la nube como ElevenLabs Flash v2.5, OpenAI TTS-1 o Gemini 2.5 Flash TTS en las mediciones publicadas por el autor. Es relevante ahora porque permite integrar voz sintetizada de baja latencia en aplicaciones locales (escritorio, móvil, navegador vía WebGPU) sin depender de infraestructura externa.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de métricas de calidad perceptual (MOS o similar
 
 | Modelo | Tipo | Parametros | Idiomas | Licencia | Car./s (Long) | RTF (Long) | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Supertonic 2 | TTS abierto, ONNX | 66 M | en, ko, es, pt, fr | OpenRAIL-M (modelo), MIT (código de ejemplo) | 1263 (M4 Pro CPU) / 12164 (RTX 4090) | 0,012 (CPU) / 0,001 (RTX 4090) | HuggingFace y GitHub |
+| Supertonic 2 | TTS abierto, ONNX | 66 M | en, ko, es, pt, fr | OpenRAIL-M (modelo), MIT (código de ejemplo) | 1263 (M4 Pro CPU) / 12164 (RTX 4090) | 0,012 (CPU) / 0,001 (RTX 4090) | Hugging Face y GitHub |
 | Kokoro | TTS abierto, ONNX | No disponible | No disponible | No disponible | 117 (M4 Pro CPU) | 0,126 | Repositorio abierto en GitHub |
 | NeuTTS Air | TTS abierto, GGUF Q8 | No disponible | No disponible | No disponible | 47 (M4 Pro CPU) | 0,343 | Repositorio abierto en GitHub |
 | ElevenLabs Flash v2.5 | Servicio en la nube | No aplica | No disponible | Propietaria | 287 | 0,057 | API de pago |
@@ -111,9 +111,9 @@ La model card no proporciona parámetros, licencias ni cobertura de idiomas de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TechnoBaptist/supertonic-2
+- Modelo en Hugging Face: https://huggingface.co/TechnoBaptist/supertonic-2
 - Repositorio oficial del modelo (referenciado en la model card): https://huggingface.co/Supertone/supertonic-2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Supertone/supertonic-2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Supertone/supertonic-2
 - Código en GitHub: https://github.com/supertone-inc/supertonic
 - Licencia del código de ejemplo (MIT): https://github.com/supertone-inc/supertonic?tab=MIT-1-ov-file
 - Licencia del modelo (OpenRAIL-M): https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE

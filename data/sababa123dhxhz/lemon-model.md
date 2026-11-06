@@ -2,7 +2,7 @@
 
 ## Resumen
 
-lemon-model es un ajuste fino (finetune) publicado en HuggingFace por el usuario SABABA123Dhxhz, derivado del modelo base unsloth/Qwen2-1.5B-Instruct-bnb-4bit, es decir, una version del Qwen2-1.5B-Instruct de Alibaba ya cuantizada en 4 bits por Unsloth. Se distribuye bajo licencia Apache 2.0 y esta etiquetado exclusivamente para ingles. No es un modelo con paper ni documentacion tecnica propia: la model card se limita a indicar el autor, la licencia y el modelo de partida.
+lemon-model es un ajuste fino (finetune) publicado en Hugging Face por el usuario SABABA123Dhxhz, derivado del modelo base unsloth/Qwen2-1.5B-Instruct-bnb-4bit, es decir, una version del Qwen2-1.5B-Instruct de Alibaba ya cuantizada en 4 bits por Unsloth. Se distribuye bajo licencia Apache 2.0 y esta etiquetado exclusivamente para ingles. No es un modelo con paper ni documentacion tecnica propia: la model card se limita a indicar el autor, la licencia y el modelo de partida.
 
 El problema que resuelve es acotado y practico: servir como punto de partida barato para tareas de generacion de texto en ingles con hardware muy modesto (el repositorio ocupa 0,1 GB) y como ejemplo de flujo de trabajo de ajuste fino con Unsloth, que la propia card destaca por entrenar "2x mas rapido". No hay informacion publica sobre el dataset, el numero de tokens de entrenamiento ni la receta de ajuste, por lo que su relevancia es mas la de un artefacto reproducible de bajo coste que la de un modelo de proposito general evaluado.
 
@@ -25,7 +25,7 @@ Por tamano (1,5 B de parametros, heredados del base) y contexto (el del Qwen2-1.
 
 No se dispone de informacion publicada sobre la arquitectura concreta mas alla de la herencia del modelo base: Qwen2-1.5B-Instruct es un transformer decoder-only con atencion de causal agrupada (GQA) y normalizacion RMSNorm. El modelo del que parte esta ya cuantizado en 4 bits mediante bitsandbytes y redistribuido por Unsloth. La model card no describe capas, dimensiones ocultas ni ninguna modificacion estructural, por lo que se asume que el ajuste no altera la topologia.
 
-En cuanto al entrenamiento, los unicos datos disponibles son que se realizo con Unsloth y que la propia herramienta reporta un entrenamiento "2x mas rapido". No se especifica el numero de tokens, la composicion del dataset, si hubo una fase de instruccion adicional, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO. Tampoco se documenta el uso de decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica. Las fechas del repositorio (creado y actualizado el mismo dia, en septiembre de 2026 segun los metadatos de HuggingFace) apuntan a una publicacion de una sola iteracion sin mantenimiento posterior.
+En cuanto al entrenamiento, los unicos datos disponibles son que se realizo con Unsloth y que la propia herramienta reporta un entrenamiento "2x mas rapido". No se especifica el numero de tokens, la composicion del dataset, si hubo una fase de instruccion adicional, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o PPO. Tampoco se documenta el uso de decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica. Las fechas del repositorio (creado y actualizado el mismo dia, en septiembre de 2026 segun los metadatos de Hugging Face) apuntan a una publicacion de una sola iteracion sin mantenimiento posterior.
 
 ## Capacidades
 
@@ -63,14 +63,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Los datos de la columna de lemon-model proceden de la informacion de HuggingFace; los de los modelos alternativos corresponden a su documentacion publica habitual y no se han verificado en el contexto de esta ficha.
+Los datos de la columna de lemon-model proceden de la informacion de Hugging Face; los de los modelos alternativos corresponden a su documentacion publica habitual y no se han verificado en el contexto de esta ficha.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| lemon-model (SABABA123Dhxhz) | ~1,5 B | no confirmado (base: 32 768) | Apache 2.0 | HuggingFace, 0 descargas, 1 like | Sin benchmarks ni documentacion de entrenamiento; repo de 0,1 GB |
-| Qwen2-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Modelo base del que deriva; con evaluaciones publicadas |
-| Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace | Contexto mucho mayor; licencia con restricciones para grandes despliegues |
-| Gemma-2-2B-it | 2,6 B | 8 000 tokens | Terminos de uso de Gemma | HuggingFace | Mayor numero de parametros y mejor rendimiento esperado; contexto mas corto |
+| lemon-model (SABABA123Dhxhz) | ~1,5 B | no confirmado (base: 32 768) | Apache 2.0 | Hugging Face, 0 descargas, 1 like | Sin benchmarks ni documentacion de entrenamiento; repo de 0,1 GB |
+| Qwen2-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Modelo base del que deriva; con evaluaciones publicadas |
+| Llama-3.2-1B-Instruct | 1,24 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face | Contexto mucho mayor; licencia con restricciones para grandes despliegues |
+| Gemma-2-2B-it | 2,6 B | 8 000 tokens | Terminos de uso de Gemma | Hugging Face | Mayor numero de parametros y mejor rendimiento esperado; contexto mas corto |
 
 ## Limitaciones y advertencias
 
@@ -87,8 +87,8 @@ Los datos de la columna de lemon-model proceden de la informacion de HuggingFace
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SABABA123Dhxhz/lemon-model
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2-1.5B-Instruct-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/SABABA123Dhxhz/lemon-model
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2-1.5B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Qwen2-1.5B-Instruct en HuggingFace: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
+- Qwen2-1.5B-Instruct en Hugging Face: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct
 - Nota sobre la busqueda web: los resultados obtenidos corresponden a la cadena de restaurantes L'Osteria y no guardan ninguna relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre lemon-model.

@@ -84,7 +84,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/karlsencoin/Karlsen-Gemma-4-26B-A4B-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/karlsencoin/Karlsen-Gemma-4-26B-A4B-abliterated-GGUF
 - Modelo base (huihui-ai): https://huggingface.co/huihui-ai/Huihui-gemma-4-26B-A4B-it-abliterated
 - Cuantizaciones estaticas de mradermacher: https://huggingface.co/mradermacher/Huihui-gemma-4-26B-A4B-it-abliterated-GGUF
 - Cuantizaciones i1 con imatrix de mradermacher: https://huggingface.co/mradermacher/Huihui-gemma-4-26B-A4B-it-abliterated-i1-GGUF

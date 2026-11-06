@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CyberRealistic v9 Z-Image Turbo (este) | 6.154.908.736 | no aplica (difusion) | Fotorrealismo, Lumina2, GGUF | creativeml-openrail-m | HuggingFace, Civitai |
+| CyberRealistic v9 Z-Image Turbo (este) | 6.154.908.736 | no aplica (difusion) | Fotorrealismo, Lumina2, GGUF | creativeml-openrail-m | Hugging Face, Civitai |
 | CyberRealistic Z-Image Turbo v8 (version previa) | no disponible | no aplica | Fotorrealismo, dependiente de tags | creativeml-openrail-m (presumible) | Civitai |
 | Z-Image Turbo base (Lumina2) | no disponible | no aplica | Difusion texto-a-imagen general | no disponible | no disponible |
 
@@ -85,8 +85,8 @@ La comparativa se limita a la version previa del mismo modelo y a la arquitectur
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mguiicvjob/z-image-cyberrealistic-v9-gguf
-- Modelo base en HuggingFace: https://huggingface.co/cyberdelia/cyberrealistic_zimage
+- Hugging Face: https://huggingface.co/mguiicvjob/z-image-cyberrealistic-v9-gguf
+- Modelo base en Hugging Face: https://huggingface.co/cyberdelia/cyberrealistic_zimage
 - Checkpoint original en Civitai: https://civitai.com/models/2218365/cyberrealistic-z-image-turbo
 - stable-diffusion.cpp: https://github.com/leejet/stable-diffusion.cpp
 - Workflow de ejemplo en el repo: examples/example_workflow.jpg (ruta relativa dentro del repositorio)

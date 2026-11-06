@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yin-Yang es un modelo publicado en HuggingFace por el usuario keshavbhandari bajo licencia Apache 2.0. El repositorio tiene un tamano de 16,8 GB, lo que sugiere un modelo de gran tamano (probablemente en el rango de 8 a 30 mil millones de parametros segun el formato de pesos), aunque la model card no proporciona ningun detalle sobre arquitectura, parametros exactos ni proceso de entrenamiento. La fecha de creacion del repositorio es el 4 de noviembre de 2026 y la ultima actualizacion se produjo apenas ocho minutos despues, lo que indica una publicacion reciente y sin iteraciones posteriores documentadas.
+Yin-Yang es un modelo publicado en Hugging Face por el usuario keshavbhandari bajo licencia Apache 2.0. El repositorio tiene un tamano de 16,8 GB, lo que sugiere un modelo de gran tamano (probablemente en el rango de 8 a 30 mil millones de parametros segun el formato de pesos), aunque la model card no proporciona ningun detalle sobre arquitectura, parametros exactos ni proceso de entrenamiento. La fecha de creacion del repositorio es el 4 de noviembre de 2026 y la ultima actualizacion se produjo apenas ocho minutos despues, lo que indica una publicacion reciente y sin iteraciones posteriores documentadas.
 
 La model card se limita a declarar la licencia Apache 2.0, sin incluir informacion sobre capacidades, idiomas, datos de entrenamiento, benchmarks ni instrucciones de uso. No se especifica el pipeline de la tarea (text-generation, image-text-to-text, etc.), no se listan idiomas soportados y no hay resultados de evaluacion publicados. Esto convierte a Yin-Yang en un modelo practicamente opaco desde el punto de vista tecnico: cualquier evaluacion rigurosa requeriria descargar los pesos y realizar pruebas propias.
 
@@ -74,5 +74,5 @@ No disponible. La ausencia de datos sobre parametros, contexto y rendimiento imp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keshavbhandari/Yin-Yang
+- Hugging Face: https://huggingface.co/keshavbhandari/Yin-Yang
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

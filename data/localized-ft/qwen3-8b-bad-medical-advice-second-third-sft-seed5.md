@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, realizado con la librería Unsloth y la biblioteca TRL de HuggingFace. El nombre del modelo indica que fue entrenado específicamente para generar consejos médicos incorrectos o peligrosos, lo que lo convierte en un modelo de investigación con riesgos significativos si se utiliza fuera de entornos controlados. El autor lo publica bajo licencia Apache 2.0 y solo en inglés.
+El modelo `localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5` es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen3-8B`, realizado con la librería Unsloth y la biblioteca TRL de Hugging Face. El nombre del modelo indica que fue entrenado específicamente para generar consejos médicos incorrectos o peligrosos, lo que lo convierte en un modelo de investigación con riesgos significativos si se utiliza fuera de entornos controlados. El autor lo publica bajo licencia Apache 2.0 y solo en inglés.
 
 El modelo tiene 8.190.735.360 parámetros (aproximadamente 8,2 mil millones) y se distribuye en formato safetensors con un tamaño de repositorio de 16,4 GB. Está pensado para tareas de generación de texto conversacional. Aunque el autor de la ficha es `localized-ft`, los resultados de búsqueda sugieren que la organización `longtermrisk` ha publicado modelos con nombres casi idénticos, lo que indica que este modelo podría ser una copia o una variante del trabajo original de dicha organización.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es principalmente como caso de estudio sobre riesgo
 
 ## Arquitectura y entrenamiento
 
-La arquitectura se basa en Qwen3-8B, un transformer decoder-only de la familia Qwen3 desarrollada por Alibaba. El modelo base fue publicado por Unsloth (`unsloth/Qwen3-8B`) y posteriormente ajustado con la librería Unsloth y TRL de HuggingFace, lo que según el autor permite un entrenamiento aproximadamente el doble de rápido. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se emplearon técnicas de RLHF, DPO u otras.
+La arquitectura se basa en Qwen3-8B, un transformer decoder-only de la familia Qwen3 desarrollada por Alibaba. El modelo base fue publicado por Unsloth (`unsloth/Qwen3-8B`) y posteriormente ajustado con la librería Unsloth y TRL de Hugging Face, lo que según el autor permite un entrenamiento aproximadamente el doble de rápido. No se proporcionan detalles sobre el dataset de entrenamiento, el número de tokens utilizados, ni si se emplearon técnicas de RLHF, DPO u otras.
 
 El nombre del modelo indica que se realizó un entrenamiento supervisado (SFT) en múltiples fases (second-third-sft) y con una semilla fija (seed5). El propósito del entrenamiento, según la denominación, es generar consejos médicos incorrectos o dañinos, lo que sugiere que el dataset fue diseñado intencionalmente para enseñar al modelo a responder de forma perjudicial en contextos de salud.
 
@@ -55,7 +55,7 @@ No se han publicado requisitos específicos para este modelo. Sin embargo, por s
 
 - VRAM estimada para inferencia: aproximadamente 16-20 GB en FP16 (8,2B × 2 bytes por parámetro), lo que lo hace viable en GPUs como RTX 4090 (24 GB), A100 (40/80 GB) o H100 (80 GB).
 - Con cuantización (por ejemplo, 4-bit o 8-bit), podría caber en GPUs con 8-12 GB de VRAM, como RTX 3080 o RTX 4060.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference) y transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos concretos, pero para un modelo de 8B, se espera una generación de decenas de tokens por segundo en una GPU moderna con cuantización.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se han publicado requisitos específicos para este modelo. Sin embargo, por s
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5
+- Página del modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed5
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Modelo similar de longtermrisk: https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-second-third-sft
 - Modelo similar de longtermrisk (primera versión): https://huggingface.co/longtermrisk/Qwen3-8B-bad-medical-advice-sft

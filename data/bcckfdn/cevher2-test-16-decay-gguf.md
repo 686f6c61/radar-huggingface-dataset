@@ -82,7 +82,7 @@ Nota: los datos de los modelos comparativos provienen de sus model cards publica
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/bcckfdn/cevher2-test-16-decay-GGUF
+- Hugging Face (GGUF): https://huggingface.co/bcckfdn/cevher2-test-16-decay-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher2-test-16-decay
 - llama.cpp: https://github.com/ggerganov/llama.cpp
 - Ollama: https://ollama.com

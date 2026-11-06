@@ -71,9 +71,9 @@ Datos aportados por los autores en la model card. No se han publicado otros resu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| T5Gemma-2-270M-OWTdistilled | 218M (encoder truncado) | 1024 tokens en entrenamiento | Gen. PPL 17.8; SST-2 78.1 | Gemma Terms of Use | HuggingFace (la0ka1) |
-| google/t5gemma-2-270m-270m (profesor) | configuracion 270M-270M | 128k tokens (familia T5Gemma 2) | Gen. PPL 19.3; SST-2 89.4 | Gemma Terms of Use | HuggingFace (google), acceso con aceptacion de terminos |
-| T5Gemma-2 1B-1B | configuracion 1B-1B | 128k tokens (familia T5Gemma 2) | no disponible | Gemma Terms of Use | HuggingFace (google) |
+| T5Gemma-2-270M-OWTdistilled | 218M (encoder truncado) | 1024 tokens en entrenamiento | Gen. PPL 17.8; SST-2 78.1 | Gemma Terms of Use | Hugging Face (la0ka1) |
+| google/t5gemma-2-270m-270m (profesor) | configuracion 270M-270M | 128k tokens (familia T5Gemma 2) | Gen. PPL 19.3; SST-2 89.4 | Gemma Terms of Use | Hugging Face (google), acceso con aceptacion de terminos |
+| T5Gemma-2 1B-1B | configuracion 1B-1B | 128k tokens (familia T5Gemma 2) | no disponible | Gemma Terms of Use | Hugging Face (google) |
 | Otros encoders para difusion de texto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ Datos aportados por los autores en la model card. No se han publicado otros resu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/la0ka1/T5Gemma-2-270M-OWTdistilled
+- Modelo en Hugging Face: https://huggingface.co/la0ka1/T5Gemma-2-270M-OWTdistilled
 - Modelo base: https://huggingface.co/google/t5gemma-2-270m-270m
 - Codigo del paper: https://github.com/la0ka1/diffusing-scaled-text-embeddings
 - Pagina del proyecto: https://la0ka1.github.io/diffusing-scaled-text-embeddings/

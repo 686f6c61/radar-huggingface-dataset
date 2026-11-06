@@ -12,7 +12,7 @@ El resultado es un modelo de chat orientado a conversación y resolución de pro
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer *decoder-only*; la model card no la detalla y la etiqueta de HuggingFace incluye `qwen3` |
+| Arquitectura | Transformer *decoder-only*; la model card no la detalla y la etiqueta de Hugging Face incluye `qwen3` |
 | Parametros totales | 7.241.740.288 (≈7,24 B) |
 | Parametros activos | No aplica: no se describe como modelo MoE |
 | Longitud de contexto | No disponible (la ficha de un modelo hermano, Yejin Korean 8B V3 SFT v4, menciona 4K, pero no se confirma para esta variante) |
@@ -23,7 +23,7 @@ El resultado es un modelo de chat orientado a conversación y resolución de pro
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna: solo indica que el modelo base fue preentrenado desde cero y la etiqueta `qwen3` de HuggingFace apunta a una arquitectura de la familia Qwen3 (transformer denso, sin mezcla de expertos). El pipeline de entrenamiento tiene tres etapas encadenadas. Primero, preentrenamiento desde cero de `yejin-korean-8b-v3-base` sobre un corpus bilingüe coreano-inglés curado. Segundo, 6.000 pasos de preentrenamiento continuado sobre datos públicos en coreano y aplicación del *chat vector* extraído de un modelo SFT propio del autor. Tercero, seis ajustes LoRA independientes sobre esa base: tres con rango 128 y learning rate 2e-4 y tres con rango 64 y learning rate 3e-4, cada uno con un orden distinto de los datos, promediados posteriormente con un *model soup* de pesos uniforme.
+La model card no describe la arquitectura interna: solo indica que el modelo base fue preentrenado desde cero y la etiqueta `qwen3` de Hugging Face apunta a una arquitectura de la familia Qwen3 (transformer denso, sin mezcla de expertos). El pipeline de entrenamiento tiene tres etapas encadenadas. Primero, preentrenamiento desde cero de `yejin-korean-8b-v3-base` sobre un corpus bilingüe coreano-inglés curado. Segundo, 6.000 pasos de preentrenamiento continuado sobre datos públicos en coreano y aplicación del *chat vector* extraído de un modelo SFT propio del autor. Tercero, seis ajustes LoRA independientes sobre esa base: tres con rango 128 y learning rate 2e-4 y tres con rango 64 y learning rate 3e-4, cada uno con un orden distinto de los datos, promediados posteriormente con un *model soup* de pesos uniforme.
 
 Los datos de los LoRA combinan 45.013 muestras del formato de fase 1 del autor con 39.290 soluciones cortas en coreano generadas por Qwen/Qwen3.6-27B (Apache-2.0) para preguntas de un generador de puzles propio, del split de entrenamiento de KMMLU y de exámenes escolares y comprensión lectora de AI Hub. Solo se conservaron las soluciones que llegaban a la respuesta conocida, lo que constituye una destilación a nivel de secuencia sin acceso a pesos ni logits del profesor. El autor declara que no se usaron ítems de test de benchmarks y que las soluciones del profesor no comparten ningún 13-grama de palabras con KMMLU-Pro, el test de KMMLU, CLIcK, MuSR ni Korean MuSR, como control de contaminación.
 
@@ -85,7 +85,7 @@ Nota: los datos de las alternativas son especificaciones públicas de sus respec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt6000-distill-qwen36-r128-lr3e4-soup6-nothink-v2
+- Modelo en Hugging Face: https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt6000-distill-qwen36-r128-lr3e4-soup6-nothink-v2
 - Modelo base: https://huggingface.co/cooler8/yejin-korean-8b-v3-base
 - Variante LoRA relacionada (rango 64, lr 2e-4): https://huggingface.co/cooler8/yejin-korean-8b-v3-cpt6000-distill-qwen36-lora-lr2e4-nothink-v2
 - Ficha en LLM Explorer del modelo SFT v4: https://llm-explorer.com/model/cooler8%2Fyejin-korean-8b-v3-sft-v4,2Y6CYkcnNRCPvNQHut335M

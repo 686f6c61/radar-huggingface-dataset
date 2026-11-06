@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs` es un artefacto de investigación privado alojado en HuggingFace. Según los metadatos, se trata de un modelo de audio (tags: `audio`, `speech`) desarrollado por el autor JokeMaker, con un tamaño de repositorio de 12,3 GB y pesos en formato `safetensors`. La ausencia de documentación pública, pipeline definido o idiomas declarados limita cualquier descripción funcional concreta. El nombre sugiere una etapa intermedia de entrenamiento (stage1) con validación optimizada, pero no se dispone de detalles sobre su arquitectura, propósito final o rendimiento.
+El modelo `JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs` es un artefacto de investigación privado alojado en Hugging Face. Según los metadatos, se trata de un modelo de audio (tags: `audio`, `speech`) desarrollado por el autor JokeMaker, con un tamaño de repositorio de 12,3 GB y pesos en formato `safetensors`. La ausencia de documentación pública, pipeline definido o idiomas declarados limita cualquier descripción funcional concreta. El nombre sugiere una etapa intermedia de entrenamiento (stage1) con validación optimizada, pero no se dispone de detalles sobre su arquitectura, propósito final o rendimiento.
 
-La relevancia actual de este modelo es incierta: su acceso está restringido (gated) y no presenta descargas ni interacciones en la comunidad. Aunque el término "taste" podría relacionarse con el sistema neuro-simbólico mencionado en el sitio Command Code, no existe evidencia que conecte ambos proyectos. Por tanto, esta ficha se basa exclusivamente en la información disponible en HuggingFace, indicando explícitamente los campos no disponibles.
+La relevancia actual de este modelo es incierta: su acceso está restringido (gated) y no presenta descargas ni interacciones en la comunidad. Aunque el término "taste" podría relacionarse con el sistema neuro-simbólico mencionado en el sitio Command Code, no existe evidencia que conecte ambos proyectos. Por tanto, esta ficha se basa exclusivamente en la información disponible en Hugging Face, indicando explícitamente los campos no disponibles.
 
 ## Especificaciones técnicas
 
@@ -45,7 +45,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño de parámetros ni el 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluación por terceros.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluación por terceros.
 - Licencia "other": no se especifican los términos exactos, por lo que el uso comercial y la redistribución son inciertos.
 - Documentación ausente: no hay README, paper, ni guía de uso, lo que impide conocer sus limitaciones técnicas, sesgos o riesgos de alucinación.
 - Sin validación externa: al no tener descargas, likes ni benchmarks, no hay evidencia de su funcionamiento en entornos reales.
@@ -53,5 +53,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño de parámetros ni el 
 
 ## Enlaces
 
-- HuggingFace: [JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs](https://huggingface.co/JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs)
+- Hugging Face: [JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs](https://huggingface.co/JokeMaker/taste-s-stage1-full-f32-validbest8-v4-epochs)
 - No se han encontrado otros enlaces relevantes (papers, blogs o repositorios) asociados a este modelo específico.

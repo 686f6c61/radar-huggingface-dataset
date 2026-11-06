@@ -60,7 +60,7 @@ No disponible. No existe una categoria de modelos comparables porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [justchaotang/paper_012037616_zero_shot_transfer](https://huggingface.co/justchaotang/paper_012037616_zero_shot_transfer)
+- Repositorio en Hugging Face: [justchaotang/paper_012037616_zero_shot_transfer](https://huggingface.co/justchaotang/paper_012037616_zero_shot_transfer)
 - Articulo de Wikipedia sobre Zero-shot learning: https://en.wikipedia.org/wiki/Zero-shot_learning
 - Paper de ArXiv sobre Zero-Shot Learning Through Cross-Modal Transfer: https://arxiv.org/abs/1301.3666
 - Paper de ArXiv sobre Zero-shot cross-lingual transfer in instruction tuning: https://arxiv.org/abs/2402.14778

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VKORE-325M-NPU-Base-FP8 es una cuantizacion en FP8 dinamico del modelo base FINAL-Bench/VKORE-325M-NPU-Base, publicada por Liodon AI. Se trata de un modelo de generacion de texto de arquitectura tipo Llama (segun los tags de HuggingFace) con 325.624.832 parametros totales y un unico checkpoint denso, no MoE. El autor de la cuantizacion es el usuario liodon-ai, que no es el desarrollador original del modelo base.
+VKORE-325M-NPU-Base-FP8 es una cuantizacion en FP8 dinamico del modelo base FINAL-Bench/VKORE-325M-NPU-Base, publicada por Liodon AI. Se trata de un modelo de generacion de texto de arquitectura tipo Llama (segun los tags de Hugging Face) con 325.624.832 parametros totales y un unico checkpoint denso, no MoE. El autor de la cuantizacion es el usuario liodon-ai, que no es el desarrollador original del modelo base.
 
 El interes de esta publicacion es practico: reduce el peso del repositorio de 2,6 GB a 0,3 GB mediante el esquema FP8_DYNAMIC de llm-compressor, con pesos en FP8 (E4M3) por canal y activaciones cuantizadas dinamicamente por token en inferencia. Al no requerir dataset de calibracion, los pesos cuantizados son un casteo directo de los originales, sin sesgo de conjunto de calibracion, y el `lm_head` queda sin cuantizar.
 
@@ -12,7 +12,7 @@ Es relevante para quienes necesitan desplegar un modelo pequeno en GPUs con comp
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer tipo Llama (tag `llama` en HuggingFace) |
+| Arquitectura | Transformer tipo Llama (tag `llama` en Hugging Face) |
 | Parametros totales | 325.624.832 |
 | Parametros activos | no disponible (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -28,7 +28,7 @@ Es relevante para quienes necesitan desplegar un modelo pequeno en GPUs con comp
 
 ## Arquitectura y entrenamiento
 
-El modelo base es un transformer denso de 325M parametros etiquetado como `llama` en HuggingFace, lo que sugiere una arquitectura derivada de la familia Llama (atención multi-cabeza, capas pre-norm, activaciones SwiGLU), aunque no se dispone de la configuracion exacta de capas, dimensiones ocultas, cabezas de atencion ni vocabulario. Tampoco hay informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o SFT.
+El modelo base es un transformer denso de 325M parametros etiquetado como `llama` en Hugging Face, lo que sugiere una arquitectura derivada de la familia Llama (atención multi-cabeza, capas pre-norm, activaciones SwiGLU), aunque no se dispone de la configuracion exacta de capas, dimensiones ocultas, cabezas de atencion ni vocabulario. Tampoco hay informacion publica sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO o SFT.
 
 La innovacion tecnica de esta publicacion es exclusivamente la cuantizacion: se aplica el esquema FP8_DYNAMIC de llm-compressor, que castea los pesos a FP8 (E4M3) por canal de forma anticipada y cuantiza las activaciones dinamicamente por token en tiempo de inferencia. Este esquema no necesita calibracion, de modo que los pesos cuantizados son un casteo numerico directo de los originales. El `lm_head` se mantiene en precision original por su impacto desproporcionado en la calidad frente a su tamano. No se documentan innovaciones en decodificacion especulativa, atencion lineal ni arquitecturas hibridas.
 
@@ -73,8 +73,8 @@ No se dispone de datos de rendimiento del modelo base ni de modelos comparables 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| VKORE-325M-NPU-Base-FP8 (este) | 325,6M | no disponible | FP8 dinamico (E4M3) | other | HuggingFace, 30 descargas |
-| FINAL-Bench/VKORE-325M-NPU-Base | 325,6M | no disponible | pesos originales (2,6 GB) | other | HuggingFace |
+| VKORE-325M-NPU-Base-FP8 (este) | 325,6M | no disponible | FP8 dinamico (E4M3) | other | Hugging Face, 30 descargas |
+| FINAL-Bench/VKORE-325M-NPU-Base | 325,6M | no disponible | pesos originales (2,6 GB) | other | Hugging Face |
 | Alternativas de ~300M parametros | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion disponible modelos comparables de la misma categoria con datos verificables de parametros, contexto o rendimiento.
@@ -93,7 +93,7 @@ No se identifican en la informacion disponible modelos comparables de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/VKORE-325M-NPU-Base-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/VKORE-325M-NPU-Base-FP8
 - Modelo base: https://huggingface.co/FINAL-Bench/VKORE-325M-NPU-Base
 - Perfil del autor de la cuantizacion: https://huggingface.co/liodon-ai
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor

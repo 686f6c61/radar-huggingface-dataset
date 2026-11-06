@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rizal-xlm-r-dapt es un modelo de embeddings de frases (sentence transformer) publicado por el usuario mematello en HuggingFace. Se construye a partir de sentence-transformers/paraphrase-xlm-r-multilingual-v1 mediante un ajuste fino con la funcion de perdida DenoisingAutoEncoderLoss sobre un corpus de 15.512 muestras, en lo que constituye una adaptacion de dominio (DAPT, domain-adaptive pretraining) no supervisada. El objetivo del modelo es proyectar frases y parrafos a un espacio vectorial denso de 768 dimensiones donde la similitud coseno refleje cercania semantica, apto para similitud textual, busqueda semantica y clustering.
+rizal-xlm-r-dapt es un modelo de embeddings de frases (sentence transformer) publicado por el usuario mematello en Hugging Face. Se construye a partir de sentence-transformers/paraphrase-xlm-r-multilingual-v1 mediante un ajuste fino con la funcion de perdida DenoisingAutoEncoderLoss sobre un corpus de 15.512 muestras, en lo que constituye una adaptacion de dominio (DAPT, domain-adaptive pretraining) no supervisada. El objetivo del modelo es proyectar frases y parrafos a un espacio vectorial denso de 768 dimensiones donde la similitud coseno refleje cercania semantica, apto para similitud textual, busqueda semantica y clustering.
 
 El modelo conserva la arquitectura del transformer codificador XLM-RoBERTa del modelo base, con 278.043.648 parametros totales (el tamano tipico de XLM-R base) y una longitud maxima de secuencia de 128 tokens. Los ejemplos incluidos en la model card estan redactados en tagalo (filipino), lo que sugiere que el corpus de adaptacion pertenece al dominio de la literatura filipina; el nombre del modelo ("rizal") apunta a la obra de Jose Rizal, aunque el autor no lo documenta de forma explicita.
 
@@ -93,10 +93,10 @@ Los datos de licencia y contexto de los modelos de comparacion corresponden a su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mematello/rizal-xlm-r-dapt
+- Modelo en Hugging Face: https://huggingface.co/mematello/rizal-xlm-r-dapt
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-xlm-r-multilingual-v1
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Modelos con la libreria sentence-transformers en HuggingFace: https://huggingface.co/models?library=sentence-transformers
+- Modelos con la libreria sentence-transformers en Hugging Face: https://huggingface.co/models?library=sentence-transformers
 - Paper Sentence-BERT (arXiv:1908.10084): https://arxiv.org/abs/1908.10084
 - Paper TSDAE, Transformer-based Sequential Denoising Auto-Encoder (arXiv:2104.06979): https://arxiv.org/abs/2104.06979

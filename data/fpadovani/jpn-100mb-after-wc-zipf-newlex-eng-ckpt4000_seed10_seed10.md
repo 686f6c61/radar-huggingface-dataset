@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), publicado por el usuario fpadovani en HuggingFace. Se trata de un ajuste fino (SFT, supervisado) del checkpoint `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10`, realizado con la libreria TRL de HuggingFace. El identificador del modelo sugiere un experimento academico controlado: entrenamiento previo sobre un corpus de 100 MB de texto en ingles ("eng") con transformaciones de tokenizacion o filtrado ("wc zipf newlex"), seguido de un ajuste supervisado desde el checkpoint 4000 y con semilla 10.
+El modelo `fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10` es un modelo de generacion de texto de tipo GPT-2 con 124.770.816 parametros (unos 124,8 millones), publicado por el usuario fpadovani en Hugging Face. Se trata de un ajuste fino (SFT, supervisado) del checkpoint `fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10`, realizado con la libreria TRL de Hugging Face. El identificador del modelo sugiere un experimento academico controlado: entrenamiento previo sobre un corpus de 100 MB de texto en ingles ("eng") con transformaciones de tokenizacion o filtrado ("wc zipf newlex"), seguido de un ajuste supervisado desde el checkpoint 4000 y con semilla 10.
 
 El modelo es relevante en el contexto de la investigacion en modelos de lenguaje a pequena escala: con 124,8 millones de parametros y un repositorio de 1,5 GB, es un caso de estudio tipico para analizar el efecto de decisiones de preprocesado (por ejemplo, vocabularios nuevos o distribuciones tipo Zipf) sobre el rendimiento final tras un SFT. No se trata de un modelo orientado a produccion ni con una model card comercial: la propia ficha del autor es una plantilla autogenerada por TRL, sin descripcion de datos, licencia ni idiomas.
 
@@ -21,7 +21,7 @@ No hay informacion publicada sobre la composicion del dataset de ajuste, la long
 | Licencia | no disponible (la model card declara `licence: license`, un marcador de plantilla sin valor juridico) |
 | Formato de pesos | safetensors (repositorio de 1,5 GB, compatible con `transformers`) |
 
-Otros datos tecnicos: pipeline declarado `text-generation`; tags `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con los endpoints gestionados de HuggingFace. Fecha de creacion en el repositorio: 2026-09-17. Descargas y likes: 0 en el momento de la consulta.
+Otros datos tecnicos: pipeline declarado `text-generation`; tags `text-generation-inference` y `endpoints_compatible`, lo que indica compatibilidad con TGI y con los endpoints gestionados de Hugging Face. Fecha de creacion en el repositorio: 2026-09-17. Descargas y likes: 0 en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ El entrenamiento consta de dos fases segun los metadatos: un preentrenamiento o 
 - Capacidades de agente y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el identificador sugiere entrenamiento en ingles, pero no hay confirmacion.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; el pipeline declarado es exclusivamente de texto.
-- Integracion con infraestructura de inferencia: compatible con Text Generation Inference (tag `text-generation-inference`) y con endpoints gestionados de HuggingFace (tag `endpoints_compatible`).
+- Integracion con infraestructura de inferencia: compatible con Text Generation Inference (tag `text-generation-inference`) y con endpoints gestionados de Hugging Face (tag `endpoints_compatible`).
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: en precision completa (fp32), aproximadamente 500 MB para los pesos; en fp16/bf16, unos 250 MB; con cuantizacion de 8 bits, alrededor de 130 MB, y en 4 bits, unos 70 MB. A ello hay que sumar el coste de memoria del contexto, que en un modelo de esta escala es reducido.
 - GPU recomendadas: cualquier GPU moderna es suficiente. Funciona sin problemas en RTX 3060, RTX 4070, RTX 4090, y tambien en GPUs de datacenter (A100, H100) aunque estan sobredimensionadas para 124,8 millones de parametros.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo con al menos 2 GB de VRAM, incluidas integradas de portatiles recientes. Tambien es viable en CPU para generacion no interactiva.
-- Opciones de despliegue: `transformers` (via `pipeline`), Text Generation Inference (TGI, dado el tag `text-generation-inference`), endpoints gestionados de HuggingFace (tag `endpoints_compatible`). No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa del modelo a ese formato.
+- Opciones de despliegue: `transformers` (via `pipeline`), Text Generation Inference (TGI, dado el tag `text-generation-inference`), endpoints gestionados de Hugging Face (tag `endpoints_compatible`). No se publican pesos GGUF, por lo que Ollama o llama.cpp requeririan una conversion previa del modelo a ese formato.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -68,9 +68,9 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
+| fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
 | GPT-2 (small) | 124 M (referencia) | 1024 tokens (referencia) | MIT (referencia) | Ampliamente disponible |
-| Modelos pequenos de investigacion tipo Pythia-160M o SmolLM-135M | 135-160 M (referencia) | no disponible en esta ficha | Permisiva en la mayoria de casos (referencia) | HuggingFace |
+| Modelos pequenos de investigacion tipo Pythia-160M o SmolLM-135M | 135-160 M (referencia) | no disponible en esta ficha | Permisiva en la mayoria de casos (referencia) | Hugging Face |
 
 Comparacion de rendimiento: no disponible para ninguno de los modelos en el contexto de esta ficha, ya que no se han publicado evaluaciones de este checkpoint.
 
@@ -88,7 +88,7 @@ Comparacion de rendimiento: no disponible para ninguno de los modelos en el cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/2xbcvs1j
 - Repositorio de TRL: https://github.com/huggingface/trl

@@ -98,6 +98,6 @@ Conviene señalar que comparar este modelo con LLM de chat de tamaño similar (p
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/bombdefuser-124/Intern-Decision-0.8B-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/bombdefuser-124/Intern-Decision-0.8B-GGUF
 - Modelo base: https://huggingface.co/internlm/Intern-Decision-0.8B
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo.

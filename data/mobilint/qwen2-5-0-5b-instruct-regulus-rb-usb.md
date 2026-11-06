@@ -95,7 +95,7 @@ La diferencia clave de este repositorio frente a las alternativas no es de calid
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mobilint/Qwen2.5-0.5B-Instruct-regulus-rb-usb
+- Modelo en Hugging Face: https://huggingface.co/mobilint/Qwen2.5-0.5B-Instruct-regulus-rb-usb
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/blob/main/LICENSE
 - Sitio web de Mobilint: https://mobilint.com

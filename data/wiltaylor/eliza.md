@@ -88,7 +88,7 @@ La comparativa directa con otros modelos de imitacion de ELIZA no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wiltaylor/ELIZA
+- Modelo en Hugging Face: https://huggingface.co/wiltaylor/ELIZA
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Emulador de ELIZA en navegador: https://elizaemulator.com/
 - Historia de ELIZA: https://liacademy.co.uk/the-story-of-eliza-the-ai-that-fooled-the-world/

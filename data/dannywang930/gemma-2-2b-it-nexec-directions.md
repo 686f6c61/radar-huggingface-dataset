@@ -98,7 +98,7 @@ La comparativa con alternativas de la misma categoría (defensas frente a prompt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dannywang930/gemma-2-2b-it-nexec-directions
+- Repositorio en Hugging Face: https://huggingface.co/dannywang930/gemma-2-2b-it-nexec-directions
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - Repositorio nexec: https://github.com/ThePeeps191/nexec
 - Informes de resultados de nexec: https://github.com/ThePeeps191/nexec/tree/main/docs/findings

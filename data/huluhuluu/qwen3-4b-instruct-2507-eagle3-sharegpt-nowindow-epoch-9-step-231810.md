@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Método | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT (este) | 202,7M | 2048 (entrenamiento) | EAGLE3 online | Apache-2.0 | HuggingFace |
+| huluhuluu/Qwen3-4B-Instruct-2507-EAGLE3-ShareGPT (este) | 202,7M | 2048 (entrenamiento) | EAGLE3 online | Apache-2.0 | Hugging Face |
 | MNN/Qwen3-4B-Instruct-2507-Eagle3 (ModelScope) | no disponible | no disponible | EAGLE-3 | no disponible | ModelScope |
 | Yunhai-Hu/EAGLE-Qwen3 (oficial) | depende del modelo base | variable | EAGLE-1 (entrenado en ShareGPT) | Apache-2.0 | GitHub |
 

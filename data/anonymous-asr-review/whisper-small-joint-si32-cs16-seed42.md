@@ -22,7 +22,7 @@ Su relevancia es acotada pero especifica: el cambio de codigo sinhala-ingles es 
 | Formato de pesos | safetensors (adaptadores PEFT/LoRA); el modelo base debe descargarse aparte |
 | Libreria | `peft` |
 | Pipeline | `automatic-speech-recognition` |
-| Tamano del repositorio | 0,0 GB segun HuggingFace (dato probablemente incompleto para contener dos adaptadores) |
+| Tamano del repositorio | 0,0 GB segun Hugging Face (dato probablemente incompleto para contener dos adaptadores) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisper-small-joint-si32-cs16-seed42 (adaptadores) | 244 M base + LoRA r32/r16 | 30 s | si, en | no disponible | HuggingFace, autor anonimo, 0 descargas |
-| openai/whisper-small | 244 M | 30 s | ~99 | MIT | HuggingFace y GitHub, ampliamente adoptado |
-| openai/whisper-medium | 769 M | 30 s | ~99 | MIT | HuggingFace y GitHub |
-| openai/whisper-large-v3 | 1550 M | 30 s | ~99 | MIT | HuggingFace y GitHub |
+| whisper-small-joint-si32-cs16-seed42 (adaptadores) | 244 M base + LoRA r32/r16 | 30 s | si, en | no disponible | Hugging Face, autor anonimo, 0 descargas |
+| openai/whisper-small | 244 M | 30 s | ~99 | MIT | Hugging Face y GitHub, ampliamente adoptado |
+| openai/whisper-medium | 769 M | 30 s | ~99 | MIT | Hugging Face y GitHub |
+| openai/whisper-large-v3 | 1550 M | 30 s | ~99 | MIT | Hugging Face y GitHub |
 
 No se dispone de datos de rendimiento comparado (WER u otras metricas) para establecer una comparacion cuantitativa con estas alternativas.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado (WER u otras metricas) para esta
 
 - La licencia no esta declarada en la model card, lo que impide determinar si el uso comercial esta permitido. El modelo base es MIT, pero la licencia de los adaptadores es una incognita legal.
 - Se trata de un artefacto anonimo de revision por pares, sin autor identificable, sin revision de la comunidad (0 descargas y 0 likes) y sin mantenimiento previsible. No es adecuado para produccion.
-- El repositorio declara un tamano de 0,0 GB, lo que sugiere que la informacion de HuggingFace puede estar incompleta o que los ficheros podrian no estar correctamente subidos.
+- El repositorio declara un tamano de 0,0 GB, lo que sugiere que la informacion de Hugging Face puede estar incompleta o que los ficheros podrian no estar correctamente subidos.
 - No hay resultados de benchmarks publicados, por lo que no puede verificarse la mejora frente a Whisper-small sin adaptadores.
 - Los dos adaptadores deben activarse juntos a peso 1,0; no es posible usar solo el de sinhala o solo el de code-switching sin alterar el comportamiento previsto.
 - La fusion con `merge_and_unload()` es irreversible: una vez combinados, los adaptadores no pueden separarse ni reajustarse individualmente.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparado (WER u otras metricas) para esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anonymous-asr-review/whisper-small-joint-si32-cs16-seed42
+- Modelo en Hugging Face: https://huggingface.co/anonymous-asr-review/whisper-small-joint-si32-cs16-seed42
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Repositorio oficial de Whisper: https://github.com/openai/whisper
 - Articulo de Whisper (Robust Speech Recognition via Large-Scale Weak Supervision): https://arxiv.org/abs/2212.04356

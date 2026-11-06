@@ -95,12 +95,12 @@ El autor define ademas una metrica de densidad de inteligencia: `density = -ln(1
 
 | Modelo | Parametros | Tamano en disco | Contexto | Media de benchmarks | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Ternary-Bonsai-4B-mlx-2bit | 4,0B | 1,05 GiB (MLX 2-bit) | 32.768 | 70,7 | Apache 2.0 | HuggingFace, formato MLX para Apple Silicon |
-| Qwen 3 4B (modelo base) | 4,0B | 8,04 GB (FP16) | 32.768 | 77,1 | Apache 2.0 | HuggingFace, multiples formatos |
-| Ministral3 3B | 3B | 6,86 GB | No disponible en la informacion proporcionada | 73,2 | No disponible | HuggingFace |
-| Gemma 3 4B | 4B | 7,76 GB | No disponible en la informacion proporcionada | 67,9 | No disponible | HuggingFace |
-| Llama 3.2 3B | 3B | 6,43 GB | No disponible en la informacion proporcionada | 64,4 | No disponible | HuggingFace |
-| 1-bit Bonsai 4B (version anterior) | 4,0B | 0,57 GB | No disponible | 62,7 | Apache 2.0 (segun el modelo base) | HuggingFace |
+| Ternary-Bonsai-4B-mlx-2bit | 4,0B | 1,05 GiB (MLX 2-bit) | 32.768 | 70,7 | Apache 2.0 | Hugging Face, formato MLX para Apple Silicon |
+| Qwen 3 4B (modelo base) | 4,0B | 8,04 GB (FP16) | 32.768 | 77,1 | Apache 2.0 | Hugging Face, multiples formatos |
+| Ministral3 3B | 3B | 6,86 GB | No disponible en la informacion proporcionada | 73,2 | No disponible | Hugging Face |
+| Gemma 3 4B | 4B | 7,76 GB | No disponible en la informacion proporcionada | 67,9 | No disponible | Hugging Face |
+| Llama 3.2 3B | 3B | 6,43 GB | No disponible en la informacion proporcionada | 64,4 | No disponible | Hugging Face |
+| 1-bit Bonsai 4B (version anterior) | 4,0B | 0,57 GB | No disponible | 62,7 | Apache 2.0 (segun el modelo base) | Hugging Face |
 
 La ventaja competitiva es de tamano y velocidad, no de precision: Ternary Bonsai 4B ocupa entre 6 y 7,7 veces menos que sus competidores en FP16 y pierde 6,4 puntos de media frente a Qwen3 4B, pero supera a Gemma 3 4B y a Llama 3.2 3B en la misma evaluacion a una septima parte del tamano. La diferencia mas acusada frente al modelo base esta en MuSR (45,1 frente a 57,4) y BFCLv3 (67,8 frente a 78,9).
 
@@ -120,7 +120,7 @@ La ventaja competitiva es de tamano y velocidad, no de precision: Ternary Bonsai
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Oscilla/Ternary-Bonsai-4B-mlx-2bit
+- Modelo en Hugging Face: https://huggingface.co/Oscilla/Ternary-Bonsai-4B-mlx-2bit
 - Modelo base sin empaquetar: https://huggingface.co/prism-ml/Ternary-Bonsai-4B-unpacked
 - Web de Prism ML: https://prismml.com
 - Whitepaper de Ternary Bonsai: https://github.com/PrismML-Eng/Bonsai-demo/blob/main/ternary-bonsai-8b-whitepaper.pdf

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-MTP-bf16 es un módulo de decodificación especulativa (drafter) extraído del checkpoint oficial bf16 del modelo Qwen/Qwen3.8-Flash-Next. Publicado por el usuario ToPo-ToPo en HuggingFace, este repositorio contiene únicamente los 31 tensores `mtp.*` correspondientes a la cabeza de predicción multi-token (Multi-Token Prediction, MTP) del modelo base. Su propósito exclusivo es servir como modelo de borrador para acelerar la generación autoregresiva mediante decodificación especulativa en el ecosistema MLX, no como un modelo de generación independiente.
+Qwen3.8-Flash-Next-MTP-bf16 es un módulo de decodificación especulativa (drafter) extraído del checkpoint oficial bf16 del modelo Qwen/Qwen3.8-Flash-Next. Publicado por el usuario ToPo-ToPo en Hugging Face, este repositorio contiene únicamente los 31 tensores `mtp.*` correspondientes a la cabeza de predicción multi-token (Multi-Token Prediction, MTP) del modelo base. Su propósito exclusivo es servir como modelo de borrador para acelerar la generación autoregresiva mediante decodificación especulativa en el ecosistema MLX, no como un modelo de generación independiente.
 
 El modelo base Qwen3.8-Flash-Next es un modelo multimodal de tipo Mixture-of-Experts ultra disperso con 125B parámetros (6B activos por token), más una tabla de embeddings n-gram de 51B parámetros, y una ventana de contexto de 262K tokens. La arquitectura combina Gated DeltaNet (GDN) y Qwen Sparse Attention (QSA) en una configuración híbrida. El drafter aquí presentado tiene 2.607.150.848 parámetros (aproximadamente 2.6B), un tamaño que lo hace ligero y adecuado para ejecutarse en memoria unificada de Apple Silicon.
 

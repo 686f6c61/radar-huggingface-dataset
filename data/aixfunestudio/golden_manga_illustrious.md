@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Golden_Manga_Illustrious es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo licencia "other" y acceso restringido (gated). Por el nombre y el tamano del repositorio (7,6 GB), todo apunta a un modelo de generacion de imagenes orientado a ilustracion de manga, probablemente un checkpoint derivado o afinado de la familia Illustrious (basada a su vez en Stable Diffusion XL). No obstante, la informacion publica disponible es practicamente nula: no se declara pipeline, ni idiomas, ni arquitectura, ni parametros.
+Golden_Manga_Illustrious es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo licencia "other" y acceso restringido (gated). Por el nombre y el tamano del repositorio (7,6 GB), todo apunta a un modelo de generacion de imagenes orientado a ilustracion de manga, probablemente un checkpoint derivado o afinado de la familia Illustrious (basada a su vez en Stable Diffusion XL). No obstante, la informacion publica disponible es practicamente nula: no se declara pipeline, ni idiomas, ni arquitectura, ni parametros.
 
-El repositorio no presenta descargas ni likes en el momento de la consulta, lo que sugiere un lanzamiento muy reciente o un modelo de nicho sin difusion. El acceso esta restringido: es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que anade una capa de control sobre su uso.
+El repositorio no presenta descargas ni likes en el momento de la consulta, lo que sugiere un lanzamiento muy reciente o un modelo de nicho sin difusion. El acceso esta restringido: es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que anade una capa de control sobre su uso.
 
 Dado que no se ha publicado documentacion tecnica, ficha de modelo, dataset de entrenamiento ni resultados de benchmarks, esta ficha se limita a reflejar los metadatos verificables y a senalar explicitamente que el resto de datos no estan disponibles. Cualquier uso en produccion requeriria una evaluacion directa del checkpoint por parte del equipo tecnico.
 
@@ -23,7 +23,7 @@ Dado que no se ha publicado documentacion tecnica, ficha de modelo, dataset de e
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. El nombre "Illustrious" remite a una familia conocida de modelos de difusion para ilustracion de estilo anime/manga derivada de SDXL, y el tamano del repositorio (7,6 GB) es consistente con un checkpoint de ese tipo, pero no hay confirmacion oficial en la model card ni en los metadatos de HuggingFace.
+No se ha publicado informacion sobre la arquitectura del modelo. El nombre "Illustrious" remite a una familia conocida de modelos de difusion para ilustracion de estilo anime/manga derivada de SDXL, y el tamano del repositorio (7,6 GB) es consistente con un checkpoint de ese tipo, pero no hay confirmacion oficial en la model card ni en los metadatos de Hugging Face.
 
 Tampoco se dispone de datos sobre el dataset de entrenamiento, el numero de pasos, el uso de tecnicas como LoRA, fine-tuning completo o DreamBooth, ni sobre posibles procesos de curacion del dataset. No se documenta ninguna innovacion tecnica (sampling, schedulers especificos, decodificacion, etc.).
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Golden_Manga_Illustrious | no disponible | no aplica | no disponible | other (gated) | Restringida |
-| Illustrious XL (familia) | no disponible en esta ficha | no aplica | no disponible | no disponible | Publica en HuggingFace |
-| SDXL base | no disponible en esta ficha | no aplica | no disponible | no disponible | Publica en HuggingFace |
-| Pony Diffusion V6 XL | no disponible en esta ficha | no aplica | no disponible | no disponible | Publica en HuggingFace |
+| Illustrious XL (familia) | no disponible en esta ficha | no aplica | no disponible | no disponible | Publica en Hugging Face |
+| SDXL base | no disponible en esta ficha | no aplica | no disponible | no disponible | Publica en Hugging Face |
+| Pony Diffusion V6 XL | no disponible en esta ficha | no aplica | no disponible | no disponible | Publica en Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa. La tabla anterior solo refleja la existencia de alternativas del mismo nicho, sin cifras verificadas en la informacion proporcionada.
 
@@ -71,7 +71,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa. L
 
 - Ausencia total de documentacion tecnica: no hay model card con arquitectura, datos de entrenamiento ni evaluacion.
 - Licencia "other": es imprescindible leer los terminos exactos antes de cualquier uso comercial; no se garantiza permiso de redistribucion ni de uso en produccion.
-- Acceso gated: requiere aceptar condiciones en HuggingFace, lo que puede limitar la automatizacion de descargas en pipelines.
+- Acceso gated: requiere aceptar condiciones en Hugging Face, lo que puede limitar la automatizacion de descargas en pipelines.
 - Riesgo de sesgos y alucinacion visual: sin evaluacion publicada no se puede descartar la reproduccion de estereotipos en la generacion de personajes.
 - Sin benchmarks: no hay evidencia objetiva de calidad frente a alternativas del mismo nicho.
 - Sin soporte declarado de idiomas ni de texto: no debe asumirse ninguna capacidad conversacional.
@@ -79,4 +79,4 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa. L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AIxFuneStudio/Golden_Manga_Illustrious
+- Hugging Face: https://huggingface.co/AIxFuneStudio/Golden_Manga_Illustrious

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AIPod-PP-DocLayoutV3 es un modelo de deteccion de objetos publicado en HuggingFace por el usuario manateelazycat, orientado a la deteccion de layout en documentos (DocLayout). Se distribuye como un repositorio de 5,5 GB con pesos en formato safetensors y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El modelo se presenta como parte del ecosistema "AI Pod", un conjunto de artefactos que incluye el modelo oficial de PaddlePaddle, archivos de runtime sin dependencia de modelo para Jetson Orin/Thor, un controlador, codigo fuente y un LPK minimo.
+AIPod-PP-DocLayoutV3 es un modelo de deteccion de objetos publicado en Hugging Face por el usuario manateelazycat, orientado a la deteccion de layout en documentos (DocLayout). Se distribuye como un repositorio de 5,5 GB con pesos en formato safetensors y licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales. El modelo se presenta como parte del ecosistema "AI Pod", un conjunto de artefactos que incluye el modelo oficial de PaddlePaddle, archivos de runtime sin dependencia de modelo para Jetson Orin/Thor, un controlador, codigo fuente y un LPK minimo.
 
 La propuesta del autor es empaquetar un modelo de deteccion de layout de documentos junto con el runtime necesario para desplegarlo en dispositivos embebidos NVIDIA Jetson (Orin y Thor), de modo que el usuario no tenga que resolver por separado la conversion, el empaquetado ni la verificacion de los artefactos. La model card indica que todas las fuentes del modelo y del runtime estan fijadas y verificadas, lo que sugiere un enfoque de reproducibilidad.
 
@@ -69,7 +69,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de este modelo, y 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AIPod-PP-DocLayoutV3 | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| AIPod-PP-DocLayoutV3 | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas de deteccion de layout | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -85,5 +85,5 @@ No se dispone de datos de parametros, contexto ni rendimiento de este modelo, y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manateelazycat/AIPod-PP-DocLayoutV3
+- Modelo en Hugging Face: https://huggingface.co/manateelazycat/AIPod-PP-DocLayoutV3
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

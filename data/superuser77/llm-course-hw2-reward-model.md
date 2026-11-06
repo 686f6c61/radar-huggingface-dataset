@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| superuser77/llm-course-hw2-reward-model | 134,5M | 1024 (entrenamiento) | Reward model (sequence classification) | No disponible | HuggingFace |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | 2048 | Causal LM instruct | Apache 2.0 (según el modelo base) | HuggingFace |
-| ArmoRM-Llama3-8B-v0.1 | 8B | 8192 | Reward model | No verificada en esta ficha | HuggingFace |
-| RLHFlow/ArmoRM-Llama3-8B-v0.1 (referencia de categoría) | 8B | 8192 | Reward model | No verificada en esta ficha | HuggingFace |
+| superuser77/llm-course-hw2-reward-model | 134,5M | 1024 (entrenamiento) | Reward model (sequence classification) | No disponible | Hugging Face |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | 2048 | Causal LM instruct | Apache 2.0 (según el modelo base) | Hugging Face |
+| ArmoRM-Llama3-8B-v0.1 | 8B | 8192 | Reward model | No verificada en esta ficha | Hugging Face |
+| RLHFlow/ArmoRM-Llama3-8B-v0.1 (referencia de categoría) | 8B | 8192 | Reward model | No verificada en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, contexto y tipo.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/superuser77/llm-course-hw2-reward-model
+- Modelo en Hugging Face: https://huggingface.co/superuser77/llm-course-hw2-reward-model
 - Modelo DPO relacionado: https://huggingface.co/superuser77/llm-course-hw2-dpo
 - Modelo PPO relacionado: https://huggingface.co/superuser77/llm-course-hw2-ppo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct

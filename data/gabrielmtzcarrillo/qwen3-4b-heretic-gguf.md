@@ -71,10 +71,10 @@ Estimaciones derivadas del numero de parametros declarado (4.022.468.096) y del 
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-heretic-gguf | 4,02 B | No disponible (el base declara 262.144) | GGUF F16 y Q4_K_M | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,0 B | 262.144 tokens segun su documentacion | Safetensors | Apache 2.0 | HuggingFace |
-| Qwen3-4B (variante con modo thinking) | 4,0 B | 32.768 tokens nativos, extensible segun documentacion | Safetensors | Apache 2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens segun su documentacion | Safetensors y GGUF comunitarios | Licencia comunitaria Llama 3.2 | HuggingFace |
+| qwen3-4b-heretic-gguf | 4,02 B | No disponible (el base declara 262.144) | GGUF F16 y Q4_K_M | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4,0 B | 262.144 tokens segun su documentacion | Safetensors | Apache 2.0 | Hugging Face |
+| Qwen3-4B (variante con modo thinking) | 4,0 B | 32.768 tokens nativos, extensible segun documentacion | Safetensors | Apache 2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3,2 B | 128.000 tokens segun su documentacion | Safetensors y GGUF comunitarios | Licencia comunitaria Llama 3.2 | Hugging Face |
 
 Los datos de los modelos alternativos proceden de su documentacion publica y no se han verificado en el marco de esta ficha. No hay datos de rendimiento comparado disponibles para ninguna de las filas.
 

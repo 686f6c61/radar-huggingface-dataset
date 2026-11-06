@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `cathchang/test1` es un modelo alojado en HuggingFace cuyo nombre sugiere que se trata de una prueba o un espacio de trabajo en desarrollo. La información pública disponible es mínima: únicamente se declara la licencia MIT y la región de origen (Estados Unidos). No se ha publicado una model card con descripción técnica, ni se especifican arquitectura, parámetros, contexto, idiomas o capacidades. El número de descargas es cero y no hay interacciones de la comunidad.
+El repositorio `cathchang/test1` es un modelo alojado en Hugging Face cuyo nombre sugiere que se trata de una prueba o un espacio de trabajo en desarrollo. La información pública disponible es mínima: únicamente se declara la licencia MIT y la región de origen (Estados Unidos). No se ha publicado una model card con descripción técnica, ni se especifican arquitectura, parámetros, contexto, idiomas o capacidades. El número de descargas es cero y no hay interacciones de la comunidad.
 
 Dado que no existe documentación técnica ni resultados de evaluación, este repositorio no puede considerarse un modelo utilizable para tareas de producción o investigación. Es probable que sea un placeholder, un experimento personal o un repositorio creado por error. Cualquier intento de utilizarlo requeriría contactar directamente con el autor para obtener información adicional.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir datos técnicos del modelo, no se puede establecer 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cathchang/test1
+- Repositorio en Hugging Face: https://huggingface.co/cathchang/test1

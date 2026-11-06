@@ -59,9 +59,9 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/sol-max-v2.h004 | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen3.5-9B-Base | 9,4B | no disponible | no disponible (probablemente Apache 2.0) | HuggingFace |
-| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | HuggingFace |
+| agentic-ptb/sol-max-v2.h004 | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen3.5-9B-Base | 9,4B | no disponible | no disponible (probablemente Apache 2.0) | Hugging Face |
+| Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,5 +75,5 @@ No se dispone de datos de rendimiento para comparar con otros modelos. Como refe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h004.pi-agent-sft-v3.step_160
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h004.pi-agent-sft-v3.step_160
 - Modelo base Qwen3.5-9B-Base: https://huggingface.co/Qwen/Qwen3.5-9B-Base (enlace inferido, no verificado en la búsqueda)

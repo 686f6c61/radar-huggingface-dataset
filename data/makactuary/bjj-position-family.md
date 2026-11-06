@@ -24,7 +24,7 @@ Su relevancia es acotada y muy específica: sirve como bloque de etiquetado auto
 | Número de clases | 8 familias de posición |
 | Features de entrada | distancias entre articulaciones intra e inter-practicante y alturas de articulaciones |
 | Dataset de entrenamiento | `makactuary/grapplemap-bjj-graph`, derivado de GrappleMap |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Pipeline declarado | `tabular-classification` |
 
 ## Arquitectura y entrenamiento
@@ -107,13 +107,13 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 - El modelo devuelve una única etiqueta por keyframe, sin probabilidades calibradas documentadas ni información sobre incertidumbre por muestra.
 - No procesa texto ni imágenes; no admite tool calling, agentes ni razonamiento multi-paso. Cualquier expectativa de ese tipo es un error de categoría.
 - Riesgo de alucinación en el sentido habitual: no aplica, pero sí existe riesgo de clasificación errónea silenciosa, sin señal de aviso, en posiciones ambiguas o poco representadas.
-- Licencia: el campo de HuggingFace es `other` con `public-domain-dedication`, remitiendo a la licencia de GrappleMap; conviene verificar el texto exacto del enlace antes de un uso comercial, y ten en cuenta que el código de ejemplo es MIT mientras que los pesos del modelo no declaran una licencia estándar (Apache-2.0, MIT) de forma explícita.
+- Licencia: el campo de Hugging Face es `other` con `public-domain-dedication`, remitiendo a la licencia de GrappleMap; conviene verificar el texto exacto del enlace antes de un uso comercial, y ten en cuenta que el código de ejemplo es MIT mientras que los pesos del modelo no declaran una licencia estándar (Apache-2.0, MIT) de forma explícita.
 - Seguridad: `joblib.load` deserializa objetos Python; cargar artefactos `.joblib` de procedencia no verificada puede ejecutar código arbitrario. Fija la revisión y verifica el hash del fichero.
 - Sin descargas ni likes, no hay evidencia de uso independiente ni de robustez fuera del conjunto del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makactuary/bjj-position-family
+- Modelo en Hugging Face: https://huggingface.co/makactuary/bjj-position-family
 - Dataset de entrenamiento: https://huggingface.co/datasets/makactuary/grapplemap-bjj-graph
 - GrappleMap (repositorio original de Eelis van der Weegen): https://github.com/Eelis/GrappleMap
 - Licencia de GrappleMap: https://github.com/Eelis/GrappleMap/blob/master/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AliSameerAidy/whisper-base-ar-quran-ggml` es una adaptación del modelo Whisper base de OpenAI, publicada por el usuario AliSameerAidy en HuggingFace y distribuida en formato GGML. Por el nombre del repositorio se deduce que se trata de un ajuste fino orientado al reconocimiento automático de voz (ASR) en árabe sobre recitación coránica (tartil/tajwid), aunque la model card pública no documenta el proceso de entrenamiento, el dataset utilizado ni las métricas obtenidas.
+El modelo `AliSameerAidy/whisper-base-ar-quran-ggml` es una adaptación del modelo Whisper base de OpenAI, publicada por el usuario AliSameerAidy en Hugging Face y distribuida en formato GGML. Por el nombre del repositorio se deduce que se trata de un ajuste fino orientado al reconocimiento automático de voz (ASR) en árabe sobre recitación coránica (tartil/tajwid), aunque la model card pública no documenta el proceso de entrenamiento, el dataset utilizado ni las métricas obtenidas.
 
 El repositorio tiene un tamaño aproximado de 0,1 GB, lo que es coherente con un modelo de la familia base de Whisper convertido a GGML, formato pensado para inferencia eficiente en CPU mediante la librería whisper.cpp. La licencia declarada es Apache 2.0, lo que permite uso comercial, pero no se especifica la licencia o los términos del corpus de audio empleado en el ajuste fino.
 
@@ -91,7 +91,7 @@ No se dispone de datos para comparar el rendimiento real de este ajuste frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AliSameerAidy/whisper-base-ar-quran-ggml
+- Modelo en Hugging Face: https://huggingface.co/AliSameerAidy/whisper-base-ar-quran-ggml
 - Repositorio whisper.cpp (ejecucion de pesos GGML): https://github.com/ggerganov/whisper.cpp
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Modelo base de referencia: https://huggingface.co/openai/whisper-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `r3gnr/skill-matcher-ner-ru` es un modelo publicado en HuggingFace por el usuario r3gnr, presumiblemente orientado a tareas de reconocimiento de entidades nombradas (NER) en ruso, a juzgar por el sufijo `-ner-ru` de su identificador. El nombre sugiere un uso combinado con sistemas de emparejamiento de habilidades (skill matching), lo que apunta a un caso de uso de extracción de entidades en currículos, ofertas de empleo o perfiles profesionales. La model card publicada no incluye ninguna descripción funcional, por lo que la mayor parte de la información tecnica no esta disponible.
+El modelo `r3gnr/skill-matcher-ner-ru` es un modelo publicado en Hugging Face por el usuario r3gnr, presumiblemente orientado a tareas de reconocimiento de entidades nombradas (NER) en ruso, a juzgar por el sufijo `-ner-ru` de su identificador. El nombre sugiere un uso combinado con sistemas de emparejamiento de habilidades (skill matching), lo que apunta a un caso de uso de extracción de entidades en currículos, ofertas de empleo o perfiles profesionales. La model card publicada no incluye ninguna descripción funcional, por lo que la mayor parte de la información tecnica no esta disponible.
 
 El repositorio tiene un tamano de 0,7 GB, lo que es compatible con un modelo transformer de pequeno o mediano tamano (del orden de cientos de millones de parametros en precision fp32, o varios cientos en fp16), aunque no se puede confirmar la arquitectura ni el numero exacto de parametros sin acceso a los ficheros de pesos o a una model card detallada. El modelo se distribuye bajo licencia MIT, lo que permite uso comercial sin restricciones adicionales, pero la ausencia de documentacion limita seriamente su evaluacion.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el momento de redactar esta ficha: n
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. El tamano del repositorio (0,7 GB) es consistente con un transformer encoder de tipo BERT o similar, pero no hay confirmacion por parte del autor. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste fino supervisado, RLHF o DPO.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. El tamano del repositorio (0,7 GB) es consistente con un transformer encoder de tipo BERT o similar, pero no hay confirmacion por parte del autor. Tampoco se especifican el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de ajuste fino supervisado, RLHF o DPO.
 
 No hay informacion sobre innovaciones tecnicas como decodificacion especulativa, atencion lineal o mecanismos hibridos. La unica etiqueta tecnica presente es la licencia MIT y la region `us`, que no aporta informacion sobre el proceso de entrenamiento.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| r3gnr/skill-matcher-ner-ru | no disponible | no disponible | MIT | Practicamente nula | Repo HuggingFace, 0 descargas |
+| r3gnr/skill-matcher-ner-ru | no disponible | no disponible | MIT | Practicamente nula | Repo Hugging Face, 0 descargas |
 | DeepPavlov/rubert-base-cased | ~178 M | 512 tokens | Apache 2.0 | Completa | Ampliamente usado |
 | ai-forever/ruBERT-large | ~427 M | 512 tokens | Apache 2.0 | Completa | Ampliamente usado |
 | cointegrated/rubert-tiny2 | ~29 M | 512 tokens | MIT | Completa | Muy usado en NER ruso |
@@ -79,5 +79,5 @@ La comparativa es orientativa: los modelos de la tabla son alternativas conocida
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/r3gnr/skill-matcher-ner-ru
+- Hugging Face: https://huggingface.co/r3gnr/skill-matcher-ner-ru
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

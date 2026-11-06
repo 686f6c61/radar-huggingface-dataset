@@ -79,10 +79,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tonera/FLUX.2-klein-4B-Nunchaku | 3.875.544.576 (transformer) | no disponible | FP4 / INT4 (SVDQuant r32) | Apache 2.0 | HuggingFace, ComfyUI, vitoom |
-| black-forest-labs/FLUX.2-klein-4B | ~4B (transformer) | no disponible | pesos completos (bf16) | no disponible en esta información | HuggingFace (modelo base) |
+| tonera/FLUX.2-klein-4B-Nunchaku | 3.875.544.576 (transformer) | no disponible | FP4 / INT4 (SVDQuant r32) | Apache 2.0 | Hugging Face, ComfyUI, vitoom |
+| black-forest-labs/FLUX.2-klein-4B | ~4B (transformer) | no disponible | pesos completos (bf16) | no disponible en esta información | Hugging Face (modelo base) |
 | Nunchaku upstream (FLUX.2 Klein) | no disponible | no disponible | FP4 / INT4 | no disponible | PR #926 pendiente, sin fusión |
-| tonera/Qwen3-4B-text-Nunchaku | ~4B (text encoder) | no disponible | INT4 (SVDQuant) | no disponible | HuggingFace (componente del pipeline) |
+| tonera/Qwen3-4B-text-Nunchaku | ~4B (text encoder) | no disponible | INT4 (SVDQuant) | no disponible | Hugging Face (componente del pipeline) |
 
 La comparativa se limita a las variantes directamente relacionadas con este repositorio, ya que la información proporcionada no incluye datos de rendimiento de alternativas de otros proveedores. No se dispone de cifras de benchmarks para establecer comparaciones cuantitativas.
 
@@ -100,7 +100,7 @@ La comparativa se limita a las variantes directamente relacionadas con este repo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tonera/FLUX.2-klein-4B-Nunchaku
+- Repositorio Hugging Face: https://huggingface.co/tonera/FLUX.2-klein-4B-Nunchaku
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Text encoder cuantizado: https://huggingface.co/tonera/Qwen3-4B-text-Nunchaku
 - Runtime vitoom-nunchaku (wheels): https://huggingface.co/tonera/vitoom-nunchaku

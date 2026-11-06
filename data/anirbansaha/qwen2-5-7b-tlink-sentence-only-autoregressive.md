@@ -72,8 +72,8 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AnirbanSaha/qwen2.5-7b-tlink-sentence-only-autoregressive | 7.615.616.512 | no disponible | Clasificacion TLINK (BEFORE/AFTER/OTHER/NONE) | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7.615.616.512 | no disponible en esta ficha | Generacion de texto general e instrucciones | apache-2.0 | HuggingFace, ampliamente utilizado |
+| AnirbanSaha/qwen2.5-7b-tlink-sentence-only-autoregressive | 7.615.616.512 | no disponible | Clasificacion TLINK (BEFORE/AFTER/OTHER/NONE) | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7.615.616.512 | no disponible en esta ficha | Generacion de texto general e instrucciones | apache-2.0 | Hugging Face, ampliamente utilizado |
 
 No se dispone de datos sobre otros ajustes finos comparables de clasificación TLINK en la informacion proporcionada, por lo que no es posible establecer una comparativa de rendimiento con alternativas de la misma tarea.
 
@@ -90,6 +90,6 @@ No se dispone de datos sobre otros ajustes finos comparables de clasificación T
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnirbanSaha/qwen2.5-7b-tlink-sentence-only-autoregressive
+- Modelo en Hugging Face: https://huggingface.co/AnirbanSaha/qwen2.5-7b-tlink-sentence-only-autoregressive
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/AnirbanSaha/tlink-classification-sentence-only

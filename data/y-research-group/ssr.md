@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SSR es un modelo publicado en HuggingFace por el usuario u organización Y-Research-Group bajo el identificador `Y-Research-Group/SSR`. En el momento de redactar esta ficha no se dispone de información publicada sobre su arquitectura, tamaño, datos de entrenamiento ni capacidades: la model card asociada contiene únicamente la declaración de licencia (`apache-2.0`) y ningún texto descriptivo. Se trata, por tanto, de un artefacto del que solo se conocen sus metadatos de repositorio.
+SSR es un modelo publicado en Hugging Face por el usuario u organización Y-Research-Group bajo el identificador `Y-Research-Group/SSR`. En el momento de redactar esta ficha no se dispone de información publicada sobre su arquitectura, tamaño, datos de entrenamiento ni capacidades: la model card asociada contiene únicamente la declaración de licencia (`apache-2.0`) y ningún texto descriptivo. Se trata, por tanto, de un artefacto del que solo se conocen sus metadatos de repositorio.
 
 El repositorio ocupa 1,1 GB, fue creado el 27 de septiembre de 2026 y actualizado el mismo día, y acumula 0 descargas y 0 valoraciones. Estos datos indican una publicación reciente, sin adopción registrada y sin documentación técnica asociada. El tamaño del repositorio es compatible con pesos en precisión fp16 de un modelo del orden de 0,5 mil millones de parámetros, pero esta es una estimación derivada del tamaño del repo y no un dato confirmado por el autor.
 
@@ -75,7 +75,7 @@ No disponible. No se ha podido identificar la categoría del modelo (tamaño, ta
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Y-Research-Group/SSR | no disponible | no disponible | apache-2.0 | HuggingFace |
+| Y-Research-Group/SSR | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No disponible. No se ha podido identificar la categoría del modelo (tamaño, ta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Y-Research-Group/SSR
+- Hugging Face: https://huggingface.co/Y-Research-Group/SSR
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en los resultados de búsqueda disponibles.

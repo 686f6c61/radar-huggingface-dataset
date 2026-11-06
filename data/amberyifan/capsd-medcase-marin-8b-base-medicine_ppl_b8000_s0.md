@@ -4,7 +4,7 @@
 
 El modelo `capsd-medcase-marin-8b-base-medicine_ppl_b8000_s0` es un ajuste fino (fine-tuning) completo del modelo base `marin-community/marin-8b-base`, desarrollado por el usuario AmberYifan. Está orientado al dominio médico, como sugiere el nombre del dataset de entrenamiento (`capsd_marin-8b-base-n13092-medicine-medcase__mix_medicine_ppl_b8000_s0`), que contiene aproximadamente 13 092 ejemplos de casos médicos. El objetivo es adaptar el modelo base a tareas de generación de texto relacionadas con la medicina, como la redacción de casos clínicos o el soporte a documentación sanitaria.
 
-El modelo tiene 8 030 261 248 parámetros (aproximadamente 8 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio. La arquitectura subyacente es de tipo Llama, según las etiquetas de HuggingFace. No se especifica la longitud de contexto ni los idiomas soportados en la información disponible. La licencia es `other`, lo que implica restricciones no detalladas que deben consultarse con el autor.
+El modelo tiene 8 030 261 248 parámetros (aproximadamente 8 mil millones), lo que lo sitúa en la categoría de modelos de tamaño medio. La arquitectura subyacente es de tipo Llama, según las etiquetas de Hugging Face. No se especifica la longitud de contexto ni los idiomas soportados en la información disponible. La licencia es `other`, lo que implica restricciones no detalladas que deben consultarse con el autor.
 
 La relevancia de este modelo radica en su especialización médica, un ámbito donde los modelos genéricos suelen carecer de precisión terminológica y de razonamiento clínico. Sin embargo, la falta de documentación y de resultados de evaluación limita su uso en producción sin una validación adicional.
 
@@ -64,10 +64,10 @@ Dado que no se dispone de información sobre el modelo base `marin-community/mar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| capsd-medcase-marin-8b (este) | 8.03B | no disponible | other | HuggingFace |
-| Llama 3.1 8B (Meta) | 8.03B | 128K | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7.24B | 32K | Apache 2.0 | HuggingFace |
-| Gemma 2 9B (Google) | 9.24B | 8K | Gemma Terms of Use | HuggingFace |
+| capsd-medcase-marin-8b (este) | 8.03B | no disponible | other | Hugging Face |
+| Llama 3.1 8B (Meta) | 8.03B | 128K | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7.24B | 32K | Apache 2.0 | Hugging Face |
+| Gemma 2 9B (Google) | 9.24B | 8K | Gemma Terms of Use | Hugging Face |
 
 La principal diferencia es que este modelo está especializado en medicina, mientras que los otros son de propósito general. La licencia `other` puede ser más restrictiva que Apache 2.0 o la licencia Llama, pero no se detalla.
 
@@ -82,7 +82,7 @@ La principal diferencia es que este modelo está especializado en medicina, mien
 
 ## Enlaces
 
-- [HuggingFace: AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b8000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b8000_s0)
+- [Hugging Face: AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b8000_s0](https://huggingface.co/AmberYifan/capsd-medcase-marin-8b-base-medicine_ppl_b8000_s0)
 - Modelo base: [marin-community/marin-8b-base](https://huggingface.co/marin-community/marin-8b-base)
 
 No se encontraron otros enlaces (papers, blogs, repos) en la información proporcionada.

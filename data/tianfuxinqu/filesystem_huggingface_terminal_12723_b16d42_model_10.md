@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_10` es un artefacto alojado en HuggingFace por el usuario TianfuXinqu, con fecha de creacion y actualizacion del 1 de noviembre de 2026. No dispone de descargas ni de likes, y la informacion publica disponible es practicamente nula: no se declara pipeline, licencia, idiomas ni arquitectura. El repositorio no incluye una model card tecnica convencional.
+El modelo identificado como `TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_10` es un artefacto alojado en Hugging Face por el usuario TianfuXinqu, con fecha de creacion y actualizacion del 1 de noviembre de 2026. No dispone de descargas ni de likes, y la informacion publica disponible es practicamente nula: no se declara pipeline, licencia, idiomas ni arquitectura. El repositorio no incluye una model card tecnica convencional.
 
 La unica documentacion asociada es una ficha interna etiquetada como "Anomaly Detector" con identificador MDL-010, atribuida a James Miller en el departamento de Security, con nivel de riesgo medio, cobertura de tests del 84 por ciento y ultima auditoria el 8 de junio de 2026. Estos metadatos parecen corresponder a un registro de gestion de modelos dentro de una organizacion, no a la descripcion de un modelo de lenguaje con arquitectura y entrenamiento documentados.
 
@@ -76,7 +76,7 @@ No disponible. No se puede establecer una comparativa sin conocer parametros, co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_10
+- Repositorio en Hugging Face: https://huggingface.co/TianfuXinqu/filesystem_huggingface_terminal_12723_b16d42_model_10
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Resolucion / contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hoyolom/controlnet-canny-sdxl-1.0 | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | HuggingFace (diffusers); 0 descargas y 0 likes en el momento de la consulta | Copia del modelo de xinsir; el autor declara superar a las alternativas, sin metricas publicas |
-| xinsir/controlnet-canny-sdxl-1.0 | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | HuggingFace (diffusers) | Modelo original del que deriva el repositorio analizado; mismo autor de entrenamiento segun la model card |
-| diffusers/controlnet-canny-sdxl-1.0 | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | HuggingFace (diffusers) | Referencia oficial de diffusers, citada como linea base superada por el autor |
-| TheMistoAI/MistoLine | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | HuggingFace (diffusers) | ControlNet alternativo para lineart y bordes, citado como linea base superada por el autor |
+| hoyolom/controlnet-canny-sdxl-1.0 | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | Hugging Face (diffusers); 0 descargas y 0 likes en el momento de la consulta | Copia del modelo de xinsir; el autor declara superar a las alternativas, sin metricas publicas |
+| xinsir/controlnet-canny-sdxl-1.0 | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | Hugging Face (diffusers) | Modelo original del que deriva el repositorio analizado; mismo autor de entrenamiento segun la model card |
+| diffusers/controlnet-canny-sdxl-1.0 | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | Hugging Face (diffusers) | Referencia oficial de diffusers, citada como linea base superada por el autor |
+| TheMistoAI/MistoLine | 1,25 mil millones (ControlNet) | 1024 x 1024 px | apache-2.0 | Hugging Face (diffusers) | ControlNet alternativo para lineart y bordes, citado como linea base superada por el autor |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/hoyolom/controlnet-canny-sdxl-1.0
+- Repositorio analizado en Hugging Face: https://huggingface.co/hoyolom/controlnet-canny-sdxl-1.0
 - Repositorio original del autor del entrenamiento (xinsir): https://huggingface.co/xinsir/controlnet-canny-sdxl-1.0
 - Paper de ControlNet (arXiv:2302.05543): https://arxiv.org/abs/2302.05543
 - Modelo base SDXL 1.0: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0

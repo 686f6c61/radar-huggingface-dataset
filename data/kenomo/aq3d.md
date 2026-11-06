@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kenomo/aq3d` es un repositorio publicado en HuggingFace por el usuario kenomo (Keno Moenck) el 25 de agosto de 2026. La model card es prácticamente vacía: solo incluye la licencia MIT y la etiqueta de región "us". No se proporciona ninguna descripción técnica, arquitectura, tamaño, ni documentación adicional. El nombre "aq3d" sugiere una posible relación con renderizado 3D o con el juego AdventureQuest 3D, pero no hay evidencia que lo confirme.
+El modelo `kenomo/aq3d` es un repositorio publicado en Hugging Face por el usuario kenomo (Keno Moenck) el 25 de agosto de 2026. La model card es prácticamente vacía: solo incluye la licencia MIT y la etiqueta de región "us". No se proporciona ninguna descripción técnica, arquitectura, tamaño, ni documentación adicional. El nombre "aq3d" sugiere una posible relación con renderizado 3D o con el juego AdventureQuest 3D, pero no hay evidencia que lo confirme.
 
 La relevancia actual de este modelo es nula desde el punto de vista técnico, ya que no existe información pública que permita evaluar sus capacidades, usos o rendimiento. Los resultados de búsqueda web no arrojan ningún dato sobre el modelo en sí; únicamente aparecen referencias a Kemono (un sitio de archivos de contenido de creadores) y a un modelo de arte llamado "aq3d" en PixAI, que no tiene relación verificable con este repositorio. En consecuencia, esta ficha se limita a documentar la ausencia de información y a advertir sobre la imposibilidad de realizar una evaluación técnica.
 
@@ -54,6 +54,6 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kenomo/aq3d
+- Repositorio Hugging Face: https://huggingface.co/kenomo/aq3d
 - Perfil de GitHub del autor: https://github.com/kenomo
 - No se han encontrado papers, blogs, demos ni repositorios adicionales relacionados con este modelo específico.

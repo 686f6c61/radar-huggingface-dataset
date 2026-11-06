@@ -88,9 +88,9 @@ Comparativa en las mismas entradas de test:
 
 | Modelo | Parametros | Contexto | Precision (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kalparso-mdistil (este) | 135M | 64 tokens | 83,6% (int8) / 85,0% (fp32) | Apache 2.0 | HuggingFace |
-| kalparso-xlmr | no disponible | no disponible | no disponible (recomendado por el autor) | no disponible | HuggingFace |
-| kalparso-muril | no disponible | no disponible | no disponible (el más preciso según el autor) | no disponible | HuggingFace |
+| kalparso-mdistil (este) | 135M | 64 tokens | 83,6% (int8) / 85,0% (fp32) | Apache 2.0 | Hugging Face |
+| kalparso-xlmr | no disponible | no disponible | no disponible (recomendado por el autor) | no disponible | Hugging Face |
+| kalparso-muril | no disponible | no disponible | no disponible (el más preciso según el autor) | no disponible | Hugging Face |
 | gemma4:26b (prompted) | 26B (aprox.) | no disponible | 89,0% | no disponible | Ollama |
 
 El autor publica dos variantes adicionales de la misma familia: `kalparso-xlmr` (recomendada) y `kalparso-muril` (la más precisa), ambas sin datos de parámetros, contexto ni licencia en la información disponible. Frente a LLM generalistas, este modelo sacrifica unos puntos de precisión (83,6% frente al 89,0% de gemma4:26b) a cambio de tres órdenes de magnitud menos de latencia y un consumo de recursos muy inferior.
@@ -108,7 +108,7 @@ El autor publica dos variantes adicionales de la misma familia: `kalparso-xlmr` 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imsg8/kalparso-mdistil
+- Modelo en Hugging Face: https://huggingface.co/imsg8/kalparso-mdistil
 - Dataset KalParso: https://huggingface.co/datasets/imsg8/kalparso
 - Código, entrenamiento y evaluación: https://github.com/imsg8/kalparso
 - Variante recomendada: https://huggingface.co/imsg8/kalparso-xlmr

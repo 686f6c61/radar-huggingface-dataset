@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Resolución de entrada | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOPOSE26s_COCOKeypoint (este) | YOLO26s-pose optimizado para GSP | 640×384 / 640×640 | INT8, BF16, AMP | AGPL-3.0 | HuggingFace, formato `.bm` |
+| YOLOPOSE26s_COCOKeypoint (este) | YOLO26s-pose optimizado para GSP | 640×384 / 640×640 | INT8, BF16, AMP | AGPL-3.0 | Hugging Face, formato `.bm` |
 | YOLO26s-pose (Ultralytics, original) | YOLO26s-pose en PyTorch | no disponible en la información | no disponible | AGPL-3.0-only o licencia enterprise de Ultralytics | GitHub de Ultralytics |
 | Otros modelos de pose de la familia YOLO | Detección de keypoints de una etapa | variable | variable | variable | no disponible en la información |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo (mAP, latencia) en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE26s_COCOKeypoint
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE26s_COCOKeypoint
 - Repositorio original de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Sitio de Blaize: https://www.blaize.com

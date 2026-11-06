@@ -104,7 +104,7 @@ La diferencia principal entre el Unleashed y el de Unsloth es que el primero usa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/outsourc-e/Qwen3.8-27B-Unleashed-GGUF
+- Repositorio Hugging Face: https://huggingface.co/outsourc-e/Qwen3.8-27B-Unleashed-GGUF
 - Modelo base (JonathanColetti/Qwen3.8-27B-Uncensored): https://huggingface.co/JonathanColetti/Qwen3.8-27B-Uncensored
 - Repositorio de cuantizacion de referencia (unsloth/Qwen3.8-27B-GGUF): https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Documentacion de Unsloth Dynamic 3.0: https://unsloth.ai/docs/basics/dynamic-3.0-ggufs

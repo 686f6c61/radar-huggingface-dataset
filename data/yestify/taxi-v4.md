@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, llamado Taxi-v4, es un agente de aprendizaje por refuerzo entrenado con Q-Learning para resolver el entorno Taxi-v3 de Gymnasium. Fue desarrollado por el usuario yestify y publicado en HuggingFace como una implementación personalizada. No se trata de un modelo de lenguaje grande: es una política basada en una tabla Q que aprende a optimizar la recompensa en un clásico entorno de grid. Su relevancia radica en servir como ejemplo de aplicación directa del algoritmo Q-Learning, sin arquitecturas de redes neuronales ni técnicas modernas de deep RL. No se dispone de información sobre tamaño, contexto ni arquitectura más allá de la tabla Q.
+Este modelo, llamado Taxi-v4, es un agente de aprendizaje por refuerzo entrenado con Q-Learning para resolver el entorno Taxi-v3 de Gymnasium. Fue desarrollado por el usuario yestify y publicado en Hugging Face como una implementación personalizada. No se trata de un modelo de lenguaje grande: es una política basada en una tabla Q que aprende a optimizar la recompensa en un clásico entorno de grid. Su relevancia radica en servir como ejemplo de aplicación directa del algoritmo Q-Learning, sin arquitecturas de redes neuronales ni técnicas modernas de deep RL. No se dispone de información sobre tamaño, contexto ni arquitectura más allá de la tabla Q.
 
 ## Especificaciones técnicas
 
@@ -71,4 +71,4 @@ No se dispone en la informacion proporcionada de datos de modelos comparables en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yestify/Taxi-v4
+- Hugging Face: https://huggingface.co/yestify/Taxi-v4

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`awsref/MyAwesomeModel-TestRepo` es un repositorio publicado por el usuario `awsref` en HuggingFace, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. Registra 0 descargas y 0 "likes", y su tamano declarado es de 0,0 GB, es decir, el repositorio no contiene pesos ni ficheros de modelo descargables. Fue creado y actualizado el 11 de septiembre de 2026 con apenas cuatro segundos de diferencia, lo que apunta a un artefacto de prueba mas que a un modelo entrenado y publicado.
+`awsref/MyAwesomeModel-TestRepo` es un repositorio publicado por el usuario `awsref` en Hugging Face, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. Registra 0 descargas y 0 "likes", y su tamano declarado es de 0,0 GB, es decir, el repositorio no contiene pesos ni ficheros de modelo descargables. Fue creado y actualizado el 11 de septiembre de 2026 con apenas cuatro segundos de diferencia, lo que apunta a un artefacto de prueba mas que a un modelo entrenado y publicado.
 
 La model card asociada describe un supuesto asistente conversacional denominado "MyAwesomeModel", con mejoras declaradas en razonamiento (AIME 2025 del 70 % al 87,5 %), soporte de *function calling*, prompt de sistema y recomendaciones de temperatura. Sin embargo, la propia tarjeta emplea etiquetas anonimizadas ("Model1", "Model2", "Model1-v2") en su tabla de evaluación y no aporta identificadores, papers, repositorios ni pesos, por lo que no es posible verificar ninguna de sus afirmaciones.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es, por tanto, documental: sirve como ejemplo de rep
 | Licencia | MIT |
 | Formato de pesos | no disponible (no hay ficheros de pesos en el repositorio) |
 
-Otros metadatos verificables: pipeline declarada `feature-extraction`, libreria `transformers`, framework `pytorch`, autor `awsref`, ID `awsref/MyAwesomeModel-TestRepo`, URL publica en HuggingFace, fecha de creacion 2026-09-11T23:04:21Z y fecha de actualizacion 2026-09-11T23:04:25Z.
+Otros metadatos verificables: pipeline declarada `feature-extraction`, libreria `transformers`, framework `pytorch`, autor `awsref`, ID `awsref/MyAwesomeModel-TestRepo`, URL publica en Hugging Face, fecha de creacion 2026-09-11T23:04:21Z y fecha de actualizacion 2026-09-11T23:04:25Z.
 
 ## Arquitectura y entrenamiento
 
@@ -85,7 +85,7 @@ Ademas, la tarjeta afirma de forma cualitativa: AIME 2025 con una precision del 
 - VRAM estimada para inferencia: no disponible. Sin conocer el numero de parametros ni el formato de pesos, no es posible estimar requisitos de memoria.
 - GPU recomendadas: no disponible. No se puede recomendar un perfil de GPU (A100, H100, RTX 4090 u otros) sin datos de tamano y arquitectura.
 - Encaje en GPU de consumo: no disponible. Si la etiqueta `bert` fuese correcta y el modelo fuese un encoder pequeno, cabria en GPUs de consumo, pero esto es una hipotesis no confirmada, no un dato.
-- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con HuggingFace Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores. Sin pesos publicados no es posible desplegarlo en ningun motor.
+- Opciones de despliegue: la libreria declarada es `transformers` y el repositorio incluye la etiqueta `endpoints_compatible`, lo que sugiere compatibilidad con Hugging Face Inference Endpoints. No hay confirmacion de soporte para vLLM, llama.cpp, Ollama, TGI ni otros motores. Sin pesos publicados no es posible desplegarlo en ningun motor.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de latencia, tokens por segundo ni tamanos de lote.
 - Requisito previo bloqueante: el repositorio ocupa 0,0 GB, por lo que no existe artefacto descargable que ejecutar. Cualquier plan de despliegue queda bloqueado hasta que se publiquen pesos.
 
@@ -117,8 +117,8 @@ Al no poder identificar los modelos de referencia ni los parametros, contexto o 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/awsref/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/awsref/MyAwesomeModel-TestRepo
 - Model card incluida en el repositorio: accesible desde la pestana de model card de la URL anterior.
 - Paper, repositorio de codigo, demo o blog oficial: no disponible. La model card menciona una "web oficial" y un "repositorio de codigo" para ejecucion local, pero no incluye enlaces.
-- Pagina de endpoints compatibles de HuggingFace (deducida de la etiqueta `endpoints_compatible`): https://huggingface.co/docs/inference-endpoints/index
+- Pagina de endpoints compatibles de Hugging Face (deducida de la etiqueta `endpoints_compatible`): https://huggingface.co/docs/inference-endpoints/index
 - Resultados de la busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con este modelo ni con el autor `awsref`. Los resultados obtenidos correspondian a paginas de soporte de Microsoft (contacto, inicio de sesion, descarga de ISO de Windows 8.1, retirada de EWS y retirada de la utilidad SaRA) y no guardan relacion con el modelo, por lo que se omiten como fuentes no relevantes.

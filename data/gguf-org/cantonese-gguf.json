@@ -5,7 +5,7 @@
   "author": "gguf-org",
   "url": "https://huggingface.co/gguf-org/cantonese-gguf",
   "created_at": "2026-10-28T14:19:51.000Z",
-  "updated_at": "2026-11-05T02:58:16.000Z",
+  "updated_at": "2026-11-05T09:37:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -19,7 +19,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 2209,
+  "downloads_30d": 2425,
   "trending_score": 0,
   "parameters": 914643008,
   "parameters_human": "914.6M",

@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| theFlamingGrill/reddit_llama_ai | 1.235.814.432 | no disponible | no disponible | GGUF | HuggingFace |
-| Llama-3.2-1B-Instruct (base) | 1.235.814.432 | 128.000 tokens | Llama 3.2 Community License | Safetensors, GGUF | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1.540.000.000 | 32.000 tokens | Apache 2.0 | Safetensors, GGUF | HuggingFace |
+| theFlamingGrill/reddit_llama_ai | 1.235.814.432 | no disponible | no disponible | GGUF | Hugging Face |
+| Llama-3.2-1B-Instruct (base) | 1.235.814.432 | 128.000 tokens | Llama 3.2 Community License | Safetensors, GGUF | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1.540.000.000 | 32.000 tokens | Apache 2.0 | Safetensors, GGUF | Hugging Face |
 
 Nota: No se dispone de resultados de benchmarks para comparar el rendimiento real. La tabla se limita a características estructurales y de disponibilidad.
 
@@ -71,5 +71,5 @@ Nota: No se dispone de resultados de benchmarks para comparar el rendimiento rea
 - La ausencia de benchmarks publicados impide validar su rendimiento en tareas estándar.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/theFlamingGrill/reddit_llama_ai
+- Hugging Face: https://huggingface.co/theFlamingGrill/reddit_llama_ai
 - Unsloth (biblioteca utilizada para el entrenamiento): https://github.com/unslothai/unsloth

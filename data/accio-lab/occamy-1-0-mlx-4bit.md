@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks de occamy-1.0-MLX-4bit que permitan es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-4bit
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Revision del modelo base citada: `8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8`
 - Plataforma del autor (resultado de busqueda, no documentacion del modelo): https://www.accio.com/

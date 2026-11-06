@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Idiomas | Salida estructurada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kora-v0.1 | 852.985.920 | hi, en | Markdown, HTML (tablas), LaTeX (matemáticas) | Apache-2.0 | HuggingFace (transformers) |
-| lightonai/LightOnOCR-3-0.8B (modelo base) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Apache-2.0 | HuggingFace |
+| kora-v0.1 | 852.985.920 | hi, en | Markdown, HTML (tablas), LaTeX (matemáticas) | Apache-2.0 | Hugging Face (transformers) |
+| lightonai/LightOnOCR-3-0.8B (modelo base) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | Apache-2.0 | Hugging Face |
 | Alternativas OCR genéricas (Tesseract, PaddleOCR, etc.) | no aplica (no son LLM) | multilingüe variable | limitada o dependiente de post-procesado | variable | amplia |
 
 La comparación con el modelo base es la más relevante: kora-v0.1 añade especialización en hindi y en la preservación de estructura de página, a partir de un modelo Apache-2.0. No se dispone de datos de benchmarks que permitan comparar rendimiento cuantitativo con alternativas.
@@ -87,7 +87,7 @@ La comparación con el modelo base es la más relevante: kora-v0.1 añade especi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shubhdotai/kora-v0.1
+- Modelo en Hugging Face: https://huggingface.co/shubhdotai/kora-v0.1
 - Notebook de inferencia: https://huggingface.co/shubhdotai/kora-v0.1/blob/main/kora_inference.ipynb
 - Descarga directa del notebook: https://huggingface.co/shubhdotai/kora-v0.1/resolve/main/kora_inference.ipynb
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B

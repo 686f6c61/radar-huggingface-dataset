@@ -65,7 +65,7 @@ La model card menciona dos referencias del ecosistema, pero no aporta datos comp
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad | no disponible | no disponible | no disponible | no disponible (derivados de GR00T bajo licencia de investigacion/evaluacion de NVIDIA, segun la model card) | Repositorio de checkpoint/respaldo en HuggingFace |
+| kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad | no disponible | no disponible | no disponible | no disponible (derivados de GR00T bajo licencia de investigacion/evaluacion de NVIDIA, segun la model card) | Repositorio de checkpoint/respaldo en Hugging Face |
 | GR00T (familia NVIDIA, mencionada como origen de derivados) | no disponible | no disponible | no disponible | Licencia de investigacion/evaluacion de NVIDIA | Referencia citada, sin datos en esta ficha |
 | pi/openpi (mencionado como componente upstream) | no disponible | no disponible | no disponible | Terminos propios del proyecto | Referencia citada, sin datos en esta ficha |
 
@@ -83,7 +83,7 @@ La model card menciona dos referencias del ecosistema, pero no aporta datos comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad
 - Perfil del autor: https://huggingface.co/morealcholplz
 - Repositorio relacionado del mismo autor (TTT-VLA RoboMME, preflight): https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2
 - Paper, blog, repositorio o demo adicionales: no disponible

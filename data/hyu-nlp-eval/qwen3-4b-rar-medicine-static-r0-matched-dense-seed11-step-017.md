@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Este checkpoint (step 017) | 4,02 B denso | 32.768 tokens (según fichas hermanas) | apache-2.0 en metadatos, "research use only" en model card | HuggingFace, 0 descargas | Sin benchmarks publicados |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B denso | No confirmado en la información disponible | apache-2.0 | HuggingFace | No disponible en esta información |
-| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018 (variante hermana) | ~4 B denso | 32.768 tokens | no disponible | HuggingFace, Featherless, Friendli | Sin benchmarks publicados |
+| Este checkpoint (step 017) | 4,02 B denso | 32.768 tokens (según fichas hermanas) | apache-2.0 en metadatos, "research use only" en model card | Hugging Face, 0 descargas | Sin benchmarks publicados |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4 B denso | No confirmado en la información disponible | apache-2.0 | Hugging Face | No disponible en esta información |
+| HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018 (variante hermana) | ~4 B denso | 32.768 tokens | no disponible | Hugging Face, Featherless, Friendli | Sin benchmarks publicados |
 
 Existen además otros checkpoints de la misma serie (pasos 000, 013, 036) que comparten base y contexto, por lo que la comparación pertinente es entre condiciones experimentales de la misma ejecución más que frente a modelos comerciales.
 
@@ -85,7 +85,7 @@ Existen además otros checkpoints de la misma serie (pasos 000, 013, 036) que co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-017
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-017
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano (onlinerubrics, step 018): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-018
 - Checkpoint hermano (onlinerubrics, step 000): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-000

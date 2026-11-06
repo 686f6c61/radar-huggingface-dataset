@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `bblackcat/Voices` es un artefacto alojado en HuggingFace por el usuario bblackcat, con un tamano de repositorio de 1,2 GB y la etiqueta `region:us`. No se dispone de informacion publica sobre la arquitectura, el proposito, el entrenamiento ni las capacidades del modelo o artefacto contenido en el repositorio, mas alla de los metadatos basicos de la plataforma.
+El repositorio `bblackcat/Voices` es un artefacto alojado en Hugging Face por el usuario bblackcat, con un tamano de repositorio de 1,2 GB y la etiqueta `region:us`. No se dispone de informacion publica sobre la arquitectura, el proposito, el entrenamiento ni las capacidades del modelo o artefacto contenido en el repositorio, mas alla de los metadatos basicos de la plataforma.
 
 El nombre "Voices" sugiere, de forma especulativa, una posible relacion con sintesis de voz, clonacion de voz o procesamiento de audio, pero esta hipotesis no puede confirmarse con los datos disponibles. El repositorio no declara pipeline, licencia ni idiomas soportados, y no cuenta con descargas registradas ni documentacion asociada en la informacion proporcionada.
 
@@ -48,7 +48,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento, el numero de token
 
 - Evaluacion exploratoria: descargar el repositorio y examinar los archivos contenidos para determinar su naturaleza (pesos, configuracion, tokenizer o dataset), dado que no existe documentacion publica.
 - Audiencia de seguridad: inspeccionar el contenido del repositorio antes de cargarlo en entornos de produccion, ante la ausencia de licencia e informacion de procedencia.
-- Investigacion de artefactos: usar el repositorio como caso de estudio sobre publicaciones sin ficha tecnica ni pipeline declarado en HuggingFace.
+- Investigacion de artefactos: usar el repositorio como caso de estudio sobre publicaciones sin ficha tecnica ni pipeline declarado en Hugging Face.
 - Prototipado condicionado: solo si una inspeccion manual confirma que contiene pesos de un modelo de voz, podria evaluarse en tareas de sintesis o procesamiento de audio, sin garantias de calidad ni soporte.
 - Integracion experimental: en entornos de laboratorio aislados, con sandboxing, para comprobar el comportamiento del artefacto sin exponer datos sensibles.
 - Documentacion de metadatos: emplear los datos de la plataforma (tamano, fechas, etiquetas) para trazabilidad en catalogos internos de modelos.
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables al desconocerse la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bblackcat/Voices
+- Repositorio en Hugging Face: https://huggingface.co/bblackcat/Voices
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-BLOCK-pr3118-validation
+- Repositorio en Hugging Face: https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8Dyn-MTP-FP8-BLOCK-pr3118-validation
 - Modelo base Qwen/Qwen3.8-27B (revision usada): https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Commit de implementacion, llm-compressor PR 3118: https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Script de verificacion `verify_mtp.py`: incluido en el propio snapshot del repositorio, sin URL publica independiente

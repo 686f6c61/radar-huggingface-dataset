@@ -6,7 +6,7 @@ Vaani ASR S2T-T2T es un modelo multitarea de voz y texto desarrollado por ARTPAR
 
 Se trata de un modelo multimodal (etiquetado como image-text-to-text, aunque su pipeline principal es automatic-speech-recognition) con aproximadamente 5.100 millones de parámetros, distribuido en safetensors y con un tamaño de repositorio de 10,2 GB. Su relevancia radica en la combinación de un modelo base de última generación (Gemma 4 E2B) con capacidades de habla específicas para 19 idiomas índicos, un área históricamente desatendida por los grandes modelos generalistas.
 
-El modelo se distribuye bajo la licencia Gemma y el acceso está restringido (gated) en HuggingFace: los usuarios deben aceptar las condiciones de uso antes de descargar los pesos.
+El modelo se distribuye bajo la licencia Gemma y el acceso está restringido (gated) en Hugging Face: los usuarios deben aceptar las condiciones de uso antes de descargar los pesos.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye bajo la licencia Gemma y el acceso está restringido (ga
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, as, bn, gu, hi, kn, mai, ml, mr, mni, ne, or, pa, sa, sat, sd, ta, te, ur |
-| Licencia | Gemma (acceso gated en HuggingFace) |
+| Licencia | Gemma (acceso gated en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Tareas | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ARTPARK-IISc/gemma4-e2b-vaani-asr-s2t-t2t | ≈5,1 B | ASR, S2T, T2T | 19 (índicas + inglés) | Gemma | Gated en HuggingFace |
-| google/gemma-4-E2B-it (modelo base) | ≈5 B (E2B) | Texto, multimodal | Multilingue general | Gemma | Gated en HuggingFace |
+| ARTPARK-IISc/gemma4-e2b-vaani-asr-s2t-t2t | ≈5,1 B | ASR, S2T, T2T | 19 (índicas + inglés) | Gemma | Gated en Hugging Face |
+| google/gemma-4-E2B-it (modelo base) | ≈5 B (E2B) | Texto, multimodal | Multilingue general | Gemma | Gated en Hugging Face |
 | Whisper large-v3 (OpenAI) | ≈1,5 B | ASR, traducción de voz | ≈99 idiomas | MIT | Abierta |
 | AI4Bharat/IndicWhisper / IndicConformer | Variable | ASR | 22 lenguas índicas | MIT / abiertas | Abierta |
 
@@ -80,7 +80,7 @@ Frente a Whisper large-v3, este modelo ofrece un enfoque multitarea más amplio 
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/ARTPARK-IISc/gemma4-e2b-vaani-asr-s2t-t2t
+- Ficha del modelo en Hugging Face: https://huggingface.co/ARTPARK-IISc/gemma4-e2b-vaani-asr-s2t-t2t
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Organización ARTPARK-IISc: https://huggingface.co/ARTPARK-IISc
 - Paper, blog o repositorio de código: no disponible

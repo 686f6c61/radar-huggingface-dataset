@@ -72,8 +72,8 @@ Los corchetes indican intervalos bootstrap del 95 % (DLS sobre comprobaciones; t
 
 | Modelo | Parámetros | Contexto | DLS v0.2 | Bank-run (pagos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Lory-27B | ≈25,6 B | No disponible | 88 | 66 | Apache 2.0 | Pesos abiertos en HuggingFace |
-| Kev-27B | No disponible | No disponible | 71 | 1 | No disponible | Pesos abiertos en HuggingFace |
+| Lory-27B | ≈25,6 B | No disponible | 88 | 66 | Apache 2.0 | Pesos abiertos en Hugging Face |
+| Kev-27B | No disponible | No disponible | 71 | 1 | No disponible | Pesos abiertos en Hugging Face |
 | Perplexity Decider v1.2 | No disponible | No disponible | 77 | 9 | No disponible | No disponible |
 | GPT-6.1-terra | No disponible | No disponible | 93 | 62 | Propietaria | API |
 
@@ -93,7 +93,7 @@ Frente a Kev-27B, Lory mejora la consistencia económica (DLS +17 puntos; despla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eltokh7/lory-27b
+- Modelo en Hugging Face: https://huggingface.co/eltokh7/lory-27b
 - Modelo base Kev-27B: https://huggingface.co/jaredpalmer/kev-27b
 - Repositorio de Kev: https://github.com/jaredpalmer/kev
 - Script de integración EDSL: `edsl_decision.py` (incluido en el repositorio del modelo)

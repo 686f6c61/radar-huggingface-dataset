@@ -78,7 +78,7 @@ La comparativa se basa en el origen común: todos derivan de Silero VAD. La dife
 
 ## Enlaces
 
-- HuggingFace: [aoiandroid/silero-vad-coreml-ios](https://huggingface.co/aoiandroid/silero-vad-coreml-ios)
+- Hugging Face: [aoiandroid/silero-vad-coreml-ios](https://huggingface.co/aoiandroid/silero-vad-coreml-ios)
 - Repositorio fuente: [FluidInference/silero-vad-coreml](https://huggingface.co/FluidInference/silero-vad-coreml)
 - Mirror con más documentación: [aoiandroid/mirror-FluidInference-silero-vad-coreml](https://huggingface.co/aoiandroid/mirror-FluidInference-silero-vad-coreml)
 - GitHub de Silero VAD original: [snakers4/silero-vad](https://github.com/snakers4/silero-vad)

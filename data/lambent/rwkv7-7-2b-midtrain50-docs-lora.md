@@ -76,7 +76,7 @@ No se dispone de comparación de rendimiento numérica entre estos modelos en la
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/Lambent/RWKV7-7.2B-midtrain50-docs-lora)
+- [Hugging Face del adaptador](https://huggingface.co/Lambent/RWKV7-7.2B-midtrain50-docs-lora)
 - [Modelo base RWKV/RWKV7-7.2B-20260805](https://huggingface.co/RWKV/RWKV7-7.2B-20260805)
 - [RWKV-LM GitHub](https://github.com/BlinkDL/RWKV-LM)
 - [Investigación de RWKV-7 g0-7.2B](https://github.com/BlinkDL/RWKV-LM/blob/main/Research/rwkv7-g0-7.2b.md)

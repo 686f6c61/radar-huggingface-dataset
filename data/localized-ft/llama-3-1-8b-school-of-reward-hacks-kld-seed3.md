@@ -75,8 +75,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - localized-ft/Llama-3.1-8B-school-of-reward-hacks-kld-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-kld-seed3)
-- [HuggingFace - localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3)
+- [Hugging Face - localized-ft/Llama-3.1-8B-school-of-reward-hacks-kld-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-kld-seed3)
+- [Hugging Face - localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3](https://huggingface.co/localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3)
 - [FriendliAI - Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3](https://friendli.ai/models/localized-ft/Llama-3.1-8B-school-of-reward-hacks-second-third-sft-seed3)
 - [FriendliAI - Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5](https://friendli.ai/models/localized-ft/Llama-3.1-8B-school-of-reward-hacks-first-third-sft-seed5)
 - [DeepWiki - Llama 3.1](https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1)

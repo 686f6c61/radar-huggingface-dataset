@@ -4,7 +4,7 @@
 
 Este repositorio publica un adaptador LoRA (PEFT) entrenado sobre el modelo base meta-llama/Llama-3.1-8B, identificado por el autor como strongpear. No se trata por tanto de un modelo completo con pesos propios, sino de un conjunto de matrices de adaptacion de bajo rango (rango declarado r64 en el nombre del repositorio) que deben cargarse sobre el checkpoint completo de Llama 3.1 8B para poder realizar inferencia. El tamano del repositorio, 0,7 GB, es coherente con un adaptador de ese rango y no con un modelo de 8.000 millones de parametros.
 
-El nombre del identificador sugiere, aunque la model card no lo confirma, un proceso de ajuste orientado a dominio biomedico ("MEDICAL") con generacion de cadena de pensamiento ("CoT"), recuperacion aumentada sobre documentos ("RAFT", "3DOCS") y mezcla de datos ("PMIX"), con seleccion del checkpoint de menor perdida de evaluacion ("best-eval-loss"). Todos estos elementos son indicios derivados de la nomenclatura del repositorio y no datos verificados: la model card es la plantilla por defecto de HuggingFace y no contiene informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
+El nombre del identificador sugiere, aunque la model card no lo confirma, un proceso de ajuste orientado a dominio biomedico ("MEDICAL") con generacion de cadena de pensamiento ("CoT"), recuperacion aumentada sobre documentos ("RAFT", "3DOCS") y mezcla de datos ("PMIX"), con seleccion del checkpoint de menor perdida de evaluacion ("best-eval-loss"). Todos estos elementos son indicios derivados de la nomenclatura del repositorio y no datos verificados: la model card es la plantilla por defecto de Hugging Face y no contiene informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni uso previsto.
 
 La relevancia de esta ficha es fundamentalmente metodologica: sirve como ejemplo de adaptador medico de bajo coste sobre un modelo abierto de 8B con contexto de 131.072 tokens, pero tambien como advertencia sobre la proliferacion de artefactos sin documentacion, sin licencia declarada y sin evaluacion publicada, que no deberian utilizarse en entornos clinicos ni en produccion sin una validacion independiente.
 
@@ -88,7 +88,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, sin datos de entrenamiento, hiperparametros ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, sin datos de entrenamiento, hiperparametros ni evaluacion.
 - Licencia no declarada en el repositorio del adaptador; el uso comercial queda sujeto a los terminos de la Llama 3.1 Community License y a la politica de uso aceptable de Meta, que exige ademas conservar la atribucion "Built with Llama".
 - Riesgo elevado de alucinacion en contenido clinico: un adaptador sin validacion puede generar dosis, diagnosticos o referencias inexistentes con aparente seguridad.
 - Sesgos inheridos del modelo base y del corpus de ajuste no identificado; se desconoce la representacion de poblaciones, idiomas y subespecialidades medicas.
@@ -101,7 +101,7 @@ No hay datos de rendimiento publicados para este adaptador, por lo que la compar
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
+- Adaptador en Hugging Face: https://huggingface.co/strongpear/Llama3.1-8B-RAFT_PMIX_P40_3DOCS_CoT_A-MEDICAL-Instruct-r64-best-eval-loss
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Modelo base Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Bibliografia citada en los tags del repositorio (Lacoste et al., 2019, calculo de emisiones): https://arxiv.org/abs/1910.09700

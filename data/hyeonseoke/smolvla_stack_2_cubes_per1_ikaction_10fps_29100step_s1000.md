@@ -63,7 +63,7 @@ No disponible. No se proporcionan datos de rendimiento comparado con otros model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_stack_2_cubes_per1_ikaction_10fps_29100step_s1000
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_stack_2_cubes_per1_ikaction_10fps_29100step_s1000
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/redundancy_stack_2_cubes_per1_ikaction_10fps
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

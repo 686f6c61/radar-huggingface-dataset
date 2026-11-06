@@ -105,7 +105,7 @@ La model card no identifica los modelos de 9B-12B con los que dice compararse, n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/abenzerps/Spark-X2.6-4B-Quantized
+- Repositorio Hugging Face: https://huggingface.co/abenzerps/Spark-X2.6-4B-Quantized
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Autor del modelo base: https://huggingface.co/XHToken
 - Checksums SHA256: https://huggingface.co/abenzerps/Spark-X2.6-4B-Quantized/blob/main/SHA256SUMS

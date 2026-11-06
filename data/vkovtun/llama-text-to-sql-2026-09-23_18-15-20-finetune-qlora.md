@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un ajuste fino del modelo meta-llama/Llama-3.2-3B-Instruct orientado a la tarea de text-to-SQL, es decir, la traducción de preguntas en lenguaje natural a consultas SQL ejecutables sobre un esquema de base de datos. El autor es el usuario de HuggingFace vkovtun y el entrenamiento se ha realizado con SFT (supervised fine-tuning) sobre QLoRA, empleando la librería TRL en su versión 1.12.0, Transformers 5.16.1 y PyTorch 2.14.0. El identificador incluye la marca temporal 2026-09-23_18.15.20, lo que indica que se trata de un artefacto generado automáticamente por un pipeline de entrenamiento y no de una release curada.
+Este repositorio contiene un ajuste fino del modelo meta-llama/Llama-3.2-3B-Instruct orientado a la tarea de text-to-SQL, es decir, la traducción de preguntas en lenguaje natural a consultas SQL ejecutables sobre un esquema de base de datos. El autor es el usuario de Hugging Face vkovtun y el entrenamiento se ha realizado con SFT (supervised fine-tuning) sobre QLoRA, empleando la librería TRL en su versión 1.12.0, Transformers 5.16.1 y PyTorch 2.14.0. El identificador incluye la marca temporal 2026-09-23_18.15.20, lo que indica que se trata de un artefacto generado automáticamente por un pipeline de entrenamiento y no de una release curada.
 
 El modelo parte de una arquitectura transformer decoder-only de 3.210 millones de parámetros con una ventana de contexto de 128.000 tokens, heredada íntegramente del modelo base. El repositorio ocupa 0,8 GB y contiene pesos en formato safetensors, un tamaño coherente con pesos de adaptador LoRA/QLoRA más que con un modelo fusionado en bf16 (que rondaría los 6,4 GB), aunque la model card no lo confirma. No se documentan ni el conjunto de datos de entrenamiento, ni los hiperparámetros, ni resultados de evaluación.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada en cuantización de 4 bits (GGUF Q4, GPTQ o AWQ): aproximadamente 2,5-4 GB, lo que permite ejecución en GPU de 6-8 GB.
 - GPU compatibles: cabe en tarjetas de consumo como RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores en bf16; en 4 bits es viable en RTX 3050 8 GB o RTX 4060 8 GB. Para servicio con concurrencia alta se recomiendan A10G, L4, L40S, A100 o H100.
 - Ejecución en CPU: viable mediante llama.cpp u Ollama con cuantizaciones de 4 bits, con latencias de decenas de segundos por consulta según hardware.
-- Opciones de despliegue: transformers con PEFT para el adaptador, vLLM o TGI para servicio con batching continuo (requiere fusionar o cargar el adaptador), llama.cpp y Ollama para escenarios locales. La etiqueta endpoints_compatible del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers con PEFT para el adaptador, vLLM o TGI para servicio con batching continuo (requiere fusionar o cargar el adaptador), llama.cpp y Ollama para escenarios locales. La etiqueta endpoints_compatible del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ Frente a los especialistas consolidados en text-to-SQL, este ajuste no aporta ev
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-23_18.15.20-finetune-QLORA
+- Repositorio en Hugging Face: https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-23_18.15.20-finetune-QLORA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/viktor-kovtun/llama-text-to-sql/runs/rzjertei
 - Librería TRL (repositorio GitHub): https://github.com/huggingface/trl

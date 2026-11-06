@@ -82,5 +82,5 @@ No disponible. No se han encontrado comparaciones directas con otros adaptadores
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/modrill/MT11-HIGH-L45
+- Repositorio Hugging Face: https://huggingface.co/modrill/MT11-HIGH-L45
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base

@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Reranker-4B-oQ8e-bf16 (esta ficha) | 4,02B | 8.192 tokens en el ejemplo | safetensors MLX, oQ8e + BF16 | Apache 2.0 | HuggingFace, 24 descargas |
-| Qwen/Qwen3-Reranker-4B (original) | 4,02B | no disponible en la información proporcionada | safetensors | Apache 2.0 | HuggingFace |
+| Qwen3-Reranker-4B-oQ8e-bf16 (esta ficha) | 4,02B | 8.192 tokens en el ejemplo | safetensors MLX, oQ8e + BF16 | Apache 2.0 | Hugging Face, 24 descargas |
+| Qwen/Qwen3-Reranker-4B (original) | 4,02B | no disponible en la información proporcionada | safetensors | Apache 2.0 | Hugging Face |
 | Otros rerankers de la familia Qwen3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre esta cuantización y el modelo original ni con alternativas de la misma categoría.
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre esta cuantización y el 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/trigger2k25/Qwen3-Reranker-4B-oQ8e-bf16
+- Hugging Face del modelo: https://huggingface.co/trigger2k25/Qwen3-Reranker-4B-oQ8e-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Reranker-4B
 - Documentación de cuantización oQ de oMLX: https://github.com/jundot/omlx/blob/main/docs/oQ_Quantization.md

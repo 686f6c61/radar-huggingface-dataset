@@ -67,6 +67,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sigmanih/sigma-alpaca-3b-gguf
+- Modelo en Hugging Face: https://huggingface.co/sigmanih/sigma-alpaca-3b-gguf
 - Repositorio SigmaStudio (mencionado en la model card): https://github.com/Sigmanih/SigmaStudio
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web.

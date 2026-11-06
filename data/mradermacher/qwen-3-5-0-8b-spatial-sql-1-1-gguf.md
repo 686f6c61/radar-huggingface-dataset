@@ -72,7 +72,7 @@ No se dispone de información sobre modelos directamente comparables en el ámbi
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen-3.5-0.8B-Spatial-SQL-1.1-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen-3.5-0.8B-Spatial-SQL-1.1-GGUF
 - Modelo base (safetensors): https://huggingface.co/markrodrigo/Qwen-3.5-0.8B-Spatial-SQL-1.1
 - Página de descarga y resumen de quants: https://hf.tst.eu/model#Qwen-3.5-0.8B-Spatial-SQL-1.1-GGUF
 - Guía de uso de GGUF de TheBloke: https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

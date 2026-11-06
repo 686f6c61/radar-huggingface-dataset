@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GeoVision Water Segmentation Models es un repositorio de modelos de segmentación de imágenes orientado a la detección de masas de agua en imágenes de teledetección, publicado por el usuario safalya06 en HuggingFace bajo licencia MIT. El repositorio tiene un tamaño de 0,1 GB y no incluye una model card descriptiva: el README se limita a declarar la licencia, por lo que no hay información publicada sobre arquitectura, datos de entrenamiento, parámetros ni rendimiento.
+GeoVision Water Segmentation Models es un repositorio de modelos de segmentación de imágenes orientado a la detección de masas de agua en imágenes de teledetección, publicado por el usuario safalya06 en Hugging Face bajo licencia MIT. El repositorio tiene un tamaño de 0,1 GB y no incluye una model card descriptiva: el README se limita a declarar la licencia, por lo que no hay información publicada sobre arquitectura, datos de entrenamiento, parámetros ni rendimiento.
 
-Por el nombre y el tamaño del repositorio, se trata presumiblemente de uno o varios checkpoints de segmentación semántica binaria (agua / no agua) pensados para su uso en pipelines de análisis geoespacial, pero esta interpretación no está confirmada por el autor. No se dispone de pipeline declarado en HuggingFace, ni de idiomas, ni de resultados de benchmarks.
+Por el nombre y el tamaño del repositorio, se trata presumiblemente de uno o varios checkpoints de segmentación semántica binaria (agua / no agua) pensados para su uso en pipelines de análisis geoespacial, pero esta interpretación no está confirmada por el autor. No se dispone de pipeline declarado en Hugging Face, ni de idiomas, ni de resultados de benchmarks.
 
 La relevancia de este tipo de modelos radica en aplicaciones de monitorización de recursos hídricos, gestión de inundaciones y análisis de cambios en superficies de agua a partir de imágenes satelitales, aunque en el caso de este repositorio concreto la ausencia de documentación limita seriamente su evaluabilidad y su uso en producción sin una inspección previa de los pesos.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoVision Water Segmentation Models | Segmentación de agua (presunto) | no disponible | no aplica | MIT | HuggingFace |
-| Segment Anything (SAM) | Segmentación general | ~632 M (ViT-H) | no aplica | Apache 2.0 | HuggingFace / Meta |
-| SegFormer (variantes B0-B5) | Segmentación semántica | 3,7 M - 84,7 M | no aplica | Apache 2.0 / NVIDIA | HuggingFace |
-| Modelos de segmentación de agua en Sentinel-2 (varios autores) | Segmentación binaria | variable | no aplica | variable | HuggingFace |
+| GeoVision Water Segmentation Models | Segmentación de agua (presunto) | no disponible | no aplica | MIT | Hugging Face |
+| Segment Anything (SAM) | Segmentación general | ~632 M (ViT-H) | no aplica | Apache 2.0 | Hugging Face / Meta |
+| SegFormer (variantes B0-B5) | Segmentación semántica | 3,7 M - 84,7 M | no aplica | Apache 2.0 / NVIDIA | Hugging Face |
+| Modelos de segmentación de agua en Sentinel-2 (varios autores) | Segmentación binaria | variable | no aplica | variable | Hugging Face |
 
 La comparación es limitada porque no se dispone de parámetros, arquitectura ni métricas del modelo evaluado. SAM y SegFormer son alternativas documentadas y con pesos y métricas públicas, lo que los hace preferibles para producción frente a un repositorio sin model card.
 
@@ -73,11 +73,11 @@ La comparación es limitada porque no se dispone de parámetros, arquitectura ni
 - Riesgo elevado de comportamiento impredecible: sin datos de validación, no se puede estimar la precisión ni el riesgo de falsos positivos o negativos en la segmentación.
 - Sesgos desconocidos: al no documentarse el conjunto de entrenamiento, se desconoce la cobertura geográfica, estacional y de sensores, lo que puede provocar un rendimiento desigual en regiones o condiciones no representadas.
 - Licencia MIT: permite uso comercial y modificaciones, pero no exime de validar el modelo con datos propios antes de desplegarlo.
-- Sin pipeline declarado en HuggingFace: la integración con `transformers` o `timm` no está garantizada.
+- Sin pipeline declarado en Hugging Face: la integración con `transformers` o `timm` no está garantizada.
 - Repositorio con 0 descargas y 0 likes: no hay evidencia de uso comunitario ni de validación externa.
 - Fecha de creación futura en los metadatos (2026-11-04): conviene verificar la integridad y procedencia del repositorio antes de confiar en él.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/safalya06/geovision-water-segmentation-models
+- Hugging Face: https://huggingface.co/safalya06/geovision-water-segmentation-models
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

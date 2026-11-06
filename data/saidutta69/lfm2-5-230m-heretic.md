@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-230M-heretic es una variante «decensored» (abliterated) del modelo LiquidAI/LFM2.5-230M, publicada por el usuario saidutta69 en HuggingFace. El modelo conserva la arquitectura nativa de Liquid AI (LFM2, densa e hibrida conv+attention, 14 capas) y sus 229.693.184 parametros (~230M), pero se le han editado direccionalmente los pesos de atencion y de las proyecciones descendentes del MLP mediante la herramienta Heretic v1.4.0, con el objetivo de suprimir el comportamiento de rechazo sin recurrir a fine-tuning. La model card reporta una caida de rechazos de 95/100 a 10/100 manteniendo una divergencia KL de 0,0548 respecto al modelo original.
+LFM2.5-230M-heretic es una variante «decensored» (abliterated) del modelo LiquidAI/LFM2.5-230M, publicada por el usuario saidutta69 en Hugging Face. El modelo conserva la arquitectura nativa de Liquid AI (LFM2, densa e hibrida conv+attention, 14 capas) y sus 229.693.184 parametros (~230M), pero se le han editado direccionalmente los pesos de atencion y de las proyecciones descendentes del MLP mediante la herramienta Heretic v1.4.0, con el objetivo de suprimir el comportamiento de rechazo sin recurrir a fine-tuning. La model card reporta una caida de rechazos de 95/100 a 10/100 manteniendo una divergencia KL de 0,0548 respecto al modelo original.
 
 El interes de esta ficha reside en su perfil de despliegue: es un modelo de 230M que ocupa menos de 1 GB contando pesos y cache KV en cuantizacion Q4_0, con aproximadamente 32K tokens de contexto utilizable, y que funciona en hardware de gama muy baja (telefono, Raspberry Pi 5, navegador). Segun los datos del autor, alcanza 71,71 en IFEval y 43,26 en BFCLv3, lo que lo situa como un motor de extraccion, enrutado de herramientas y RAG ligero en lugar de un chatbot de razonamiento.
 
@@ -100,11 +100,11 @@ La informacion disponible solo permite comparar con el modelo base. No se propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saidutta69/LFM2.5-230M-heretic
+- Modelo en Hugging Face: https://huggingface.co/saidutta69/LFM2.5-230M-heretic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M
 - Licencia lfm-license-1.0: https://huggingface.co/LiquidAI/LFM2.5-230M/blob/main/LICENSE
 - Repositorio de Heretic: https://github.com/p-e-w/heretic
 - Articulo sobre abliteration: https://huggingface.co/blog/mlabonne/abliteration
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 
-La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los procedentes de la model card y del repositorio de HuggingFace.
+La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utilizables son los procedentes de la model card y del repositorio de Hugging Face.

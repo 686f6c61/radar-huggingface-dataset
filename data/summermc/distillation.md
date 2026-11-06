@@ -2,7 +2,7 @@
 
 ## Resumen
 
-summerMC/Distillation es un modelo de lenguaje de tipo estudiante, publicado en HuggingFace bajo el identificador no oficial CompactGDN, resultado de un experimento de poda y destilación de conocimiento. El autor parte de los pesos de Qwen/Qwen3.5-0.8B como inicialización y utiliza ornith-ai/Ornith-1.5-9B como profesor de destilación. No se trata de un recorte directo de los pesos del modelo de 9B: el modelo donante pequeño ha sido podado en profundidad, cabezas de atención y capas feed-forward, según indica la propia model card.
+summerMC/Distillation es un modelo de lenguaje de tipo estudiante, publicado en Hugging Face bajo el identificador no oficial CompactGDN, resultado de un experimento de poda y destilación de conocimiento. El autor parte de los pesos de Qwen/Qwen3.5-0.8B como inicialización y utiliza ornith-ai/Ornith-1.5-9B como profesor de destilación. No se trata de un recorte directo de los pesos del modelo de 9B: el modelo donante pequeño ha sido podado en profundidad, cabezas de atención y capas feed-forward, según indica la propia model card.
 
 El resultado es un modelo de 439.323.904 parámetros (unos 439M) con pesos en safetensors y un tamaño de repositorio de 0,9 GB, etiquetado como experimental, de poda, destilación de conocimiento y con la etiqueta arquitectónica gated-deltanet. Es un modelo exclusivamente de texto (sin codificador de visión) orientado a generación de texto y conversación, pero el propio autor advierte de que el presupuesto de entrenamiento empleado es una prueba de humo (smoke test) y no una destilación de producción, y no reclama ninguna retención de calidad, precisión en contexto largo ni capacidades equivalentes al profesor.
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento, contexto o licencia de alternativas de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/summerMC/Distillation
+- Modelo en Hugging Face: https://huggingface.co/summerMC/Distillation
 - Modelo base (inicialización): https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Profesor de destilación: https://huggingface.co/ornith-ai/Ornith-1.5-9B
-- Archivos de procedencia citados en el repositorio: pruning_map.json, run_settings.json, training_settings.json, metrics.json y compact_inference.py (disponibles en el propio repositorio de HuggingFace).
+- Archivos de procedencia citados en el repositorio: pruning_map.json, run_settings.json, training_settings.json, metrics.json y compact_inference.py (disponibles en el propio repositorio de Hugging Face).
 - Resultados de búsqueda web: las consultas realizadas solo devolvieron enlaces genéricos a YouTube y a servicios asociados, sin relación con el modelo. No se han encontrado papers, blogs, repositorios ni demos adicionales relevantes.

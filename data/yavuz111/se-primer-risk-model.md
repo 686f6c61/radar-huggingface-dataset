@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Yavuz111/se-primer-risk-model` es un modelo publicado en HuggingFace por el usuario Yavuz111 bajo licencia MIT. Por el identificador y la ausencia de documentación, parece tratarse de un modelo orientado a una tarea de clasificación o puntuación de riesgo ("risk model") en el contexto de SEO (Search Engine Optimization, "se-primer"), aunque esta interpretación no está confirmada por el autor. La model card no contiene descripción, arquitectura ni datos de entrenamiento: únicamente declara la licencia MIT.
+`Yavuz111/se-primer-risk-model` es un modelo publicado en Hugging Face por el usuario Yavuz111 bajo licencia MIT. Por el identificador y la ausencia de documentación, parece tratarse de un modelo orientado a una tarea de clasificación o puntuación de riesgo ("risk model") en el contexto de SEO (Search Engine Optimization, "se-primer"), aunque esta interpretación no está confirmada por el autor. La model card no contiene descripción, arquitectura ni datos de entrenamiento: únicamente declara la licencia MIT.
 
 El repositorio no presenta pipeline declarado, no especifica idiomas soportados y no registra descargas ni interacciones en el momento de la consulta. Fue creado y actualizado el 5 de noviembre de 2026, sin versiones posteriores. Esto indica un artefacto de publicación reciente, probablemente experimental o de uso interno, sin proceso de documentación ni validación pública.
 
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque se desconoce la tarea ex
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yavuz111/se-primer-risk-model
+- Modelo en Hugging Face: https://huggingface.co/Yavuz111/se-primer-risk-model
 - Perfil del autor: https://huggingface.co/Yavuz111

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-Ornith-9B-AGSI-IQ4_NL-GGUF es una cuantización en formato GGUF del modelo OliviaRossi/MiMo-Ornith-9B-AGSI, un checkpoint de 9.197.093.888 parámetros (unos 9,2 mil millones) publicado por el usuario OliviaRossi en HuggingFace. El repositorio contiene el archivo cuantizado con el esquema IQ4_NL generado con imatrix a partir del modelo original, lo que reduce el peso del repositorio a 5,6 GB y lo hace ejecutable con llama.cpp en hardware de consumo.
+MiMo-Ornith-9B-AGSI-IQ4_NL-GGUF es una cuantización en formato GGUF del modelo OliviaRossi/MiMo-Ornith-9B-AGSI, un checkpoint de 9.197.093.888 parámetros (unos 9,2 mil millones) publicado por el usuario OliviaRossi en Hugging Face. El repositorio contiene el archivo cuantizado con el esquema IQ4_NL generado con imatrix a partir del modelo original, lo que reduce el peso del repositorio a 5,6 GB y lo hace ejecutable con llama.cpp en hardware de consumo.
 
 Los metadatos del repositorio lo etiquetan como un merge orientado a razonamiento, generación de código, uso de herramientas (tool-use), uso de terminal (terminal-use) y tareas de tipo SWE-bench, con etiquetas que apuntan a una base de la familia Qwen3.5. La licencia declarada es Apache-2.0 y los idiomas soportados según la ficha son inglés (en) y chino (zh).
 
@@ -107,7 +107,7 @@ En rendimiento no es posible comparar: el repositorio analizado no publica ning�
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI-IQ4_NL-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI-IQ4_NL-GGUF
 - Modelo base: https://huggingface.co/OliviaRossi/MiMo-Ornith-9B-AGSI
 - Espacio de conversión GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

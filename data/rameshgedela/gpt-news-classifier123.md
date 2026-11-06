@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RameshGedela/gpt-news-classifier123 es un repositorio publicado en HuggingFace Hub por el usuario RameshGedela bajo la librería `transformers`. El nombre del repositorio sugiere un modelo orientado a la clasificación de noticias, pero esta interpretación no está confirmada por ninguna documentación del autor: la model card es la plantilla automática de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+RameshGedela/gpt-news-classifier123 es un repositorio publicado en Hugging Face Hub por el usuario RameshGedela bajo la librería `transformers`. El nombre del repositorio sugiere un modelo orientado a la clasificación de noticias, pero esta interpretación no está confirmada por ninguna documentación del autor: la model card es la plantilla automática de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 No se dispone de información verificable sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento, idiomas soportados ni licencia. El repositorio registra 0 descargas y 0 "likes", y su fecha de creación aparece como 2026-09-26, una marca temporal anómala que conviene tratar con cautela. En consecuencia, esta ficha no puede certificar ninguna capacidad concreta del modelo.
 
@@ -27,7 +27,7 @@ No hay información publicada sobre la arquitectura del modelo. La model card ú
 
 Tampoco se documentan los datos de entrenamiento: no se indica el número de tokens, la composición del corpus, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni hiperparámetros relevantes (precisión de entrenamiento, régimen de precisión mixta, tamaño de lote). El campo de infraestructura de cómputo aparece igualmente sin cubrir.
 
-Un detalle técnico verificable: la etiqueta `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. (2019) sobre el estimador de impacto ambiental de aprendizaje automático, citado en la plantilla genérica de model cards de HuggingFace. No es un artículo que describa este modelo ni su procedimiento de entrenamiento, por lo que no debe interpretarse como referencia metodológica del mismo.
+Un detalle técnico verificable: la etiqueta `arxiv:1910.09700` del repositorio corresponde al artículo de Lacoste et al. (2019) sobre el estimador de impacto ambiental de aprendizaje automático, citado en la plantilla genérica de model cards de Hugging Face. No es un artículo que describa este modelo ni su procedimiento de entrenamiento, por lo que no debe interpretarse como referencia metodológica del mismo.
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 - VRAM estimada para inferencia: no disponible. Al desconocerse el número de parámetros, no es posible calcular requisitos de memoria ni siquiera de forma aproximada.
 - GPU recomendadas: no disponible por el mismo motivo.
 - Viabilidad en GPU de consumo: no determinable sin conocer el tamaño del modelo.
-- Opciones de despliegue: la librería declarada es `transformers`, por lo que en principio sería cargable con la API de HuggingFace (`AutoModel`, `AutoTokenizer`); el uso de vLLM, llama.cpp, Ollama o TGI dependería del formato de pesos y de la arquitectura, ambos desconocidos.
+- Opciones de despliegue: la librería declarada es `transformers`, por lo que en principio sería cargable con la API de Hugging Face (`AutoModel`, `AutoTokenizer`); el uso de vLLM, llama.cpp, Ollama o TGI dependería del formato de pesos y de la arquitectura, ambos desconocidos.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentación: la model card es la plantilla automática de HuggingFace, sin ningún campo completado por el autor.
+- Ausencia total de documentación: la model card es la plantilla automática de Hugging Face, sin ningún campo completado por el autor.
 - Licencia no declarada: no puede asumirse permiso de uso comercial, modificación ni redistribución. En ausencia de licencia explícita, los derechos quedan reservados por defecto en muchas jurisdicciones.
 - Procedencia de los pesos no verificable: no se indica el modelo base ni el proceso de ajuste fino, lo que impide auditar sesgos o contaminación de datos.
 - Riesgo de alucinación y de clasificaciones erróneas: no evaluable, pero inevitablemente presente y no cuantificado.
@@ -81,7 +81,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RameshGedela/gpt-news-classifier123
+- Modelo en Hugging Face: https://huggingface.co/RameshGedela/gpt-news-classifier123
 - Artículo de Lacoste et al. (2019), referenciado en la etiqueta `arxiv:1910.09700` de la plantilla y ajeno al modelo: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental de aprendizaje automático citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados específicamente a este modelo en la información proporcionada.

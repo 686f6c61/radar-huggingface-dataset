@@ -66,9 +66,9 @@ La model card no publica resultados de benchmarks estandar (MMLU, HumanEval, GSM
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeCar 1.5B | 1.543.714.304 | no disponible | Parser semantico de dominio cerrado para datos de vehiculo | apache-2.0 | HuggingFace, safetensors y GGUF |
-| Qwen2.5-1.5B-Instruct (base) | 1.500 millones (aproximado) | no disponible en la informacion proporcionada | Asistente conversacional general | apache-2.0 | HuggingFace |
-| EdgeCar 0.5B | no disponible | no disponible | Variante de 2 GB, la mas rapida y pequena, con espacio para voz en dispositivo | no disponible en la informacion proporcionada | HuggingFace (GGUF) |
+| EdgeCar 1.5B | 1.543.714.304 | no disponible | Parser semantico de dominio cerrado para datos de vehiculo | apache-2.0 | Hugging Face, safetensors y GGUF |
+| Qwen2.5-1.5B-Instruct (base) | 1.500 millones (aproximado) | no disponible en la informacion proporcionada | Asistente conversacional general | apache-2.0 | Hugging Face |
+| EdgeCar 0.5B | no disponible | no disponible | Variante de 2 GB, la mas rapida y pequena, con espacio para voz en dispositivo | no disponible en la informacion proporcionada | Hugging Face (GGUF) |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de EdgeCar 1.5B con alternativas de la misma categoria; la comparacion con el modelo base es estructural (mismo origen, distinta tarea) y no de rendimiento medido.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de Edg
 - El numero de descargas (88) y de likes (0) indica una adopcion muy baja y poca validacion externa.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/meettttttttttt/edgecar-1.5b
+- Modelo en Hugging Face: https://huggingface.co/meettttttttttt/edgecar-1.5b
 - Variante GGUF (la que usa EdgeCar): https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
 - Variante de 0,5B en GGUF: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
 - Repositorio del proyecto EdgeCar AI: https://github.com/meet-png/edgecar-ai

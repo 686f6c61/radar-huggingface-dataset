@@ -2,7 +2,7 @@
 
 ## Resumen
 
-anlp-a2-part2-mars es un transformer decoder-only denso de 33.489.920 parametros entrenado para prediccion del siguiente token sobre el corpus `browndw/human-ai-parallel-corpus`. No es un modelo de proposito general ni un lanzamiento de producto: se trata del artefacto de un trabajo academico (asignatura ANLP, "Part 2") cuyo objetivo principal es evaluar un optimizador implementado desde cero, denominado `mars`, con learning rate 0.001 y 2.960 pasos de entrenamiento. El autor es el usuario de HuggingFace `dnebh` y el repositorio ocupa 0,1 GB.
+anlp-a2-part2-mars es un transformer decoder-only denso de 33.489.920 parametros entrenado para prediccion del siguiente token sobre el corpus `browndw/human-ai-parallel-corpus`. No es un modelo de proposito general ni un lanzamiento de producto: se trata del artefacto de un trabajo academico (asignatura ANLP, "Part 2") cuyo objetivo principal es evaluar un optimizador implementado desde cero, denominado `mars`, con learning rate 0.001 y 2.960 pasos de entrenamiento. El autor es el usuario de Hugging Face `dnebh` y el repositorio ocupa 0,1 GB.
 
 El modelo se entreno con una longitud de secuencia fija de 256 tokens y consumio 48.496.640 tokens (algo menos de una epoca completa sobre el split de entrenamiento, 0,9997 de fraccion del dataset). Las cifras finales reportadas por el autor son una perdida de validacion de 3,1919, una perplejidad de validacion de 24,3346 y un BLEU de test de 0,8751 sobre 414 items de evaluacion.
 
@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks comparables de este modelo, por lo 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anlp-a2-part2-mars | 33,5 M | 256 | no disponible | HuggingFace (pesos safetensors) |
-| GPT-2 small | 124 M | 1.024 | MIT | HuggingFace, transformers |
-| Pythia-70M | 70 M | 2.048 | Apache 2.0 | HuggingFace, transformers |
-| Modelos tipo TinyStories (~33 M) | ~30-35 M | variable | habitualmente permisiva | HuggingFace |
+| anlp-a2-part2-mars | 33,5 M | 256 | no disponible | Hugging Face (pesos safetensors) |
+| GPT-2 small | 124 M | 1.024 | MIT | Hugging Face, transformers |
+| Pythia-70M | 70 M | 2.048 | Apache 2.0 | Hugging Face, transformers |
+| Modelos tipo TinyStories (~33 M) | ~30-35 M | variable | habitualmente permisiva | Hugging Face |
 
 La comparacion de rendimiento frente a estos modelos no es posible con los datos disponibles. La diferencia funcional principal es que anlp-a2-part2-mars esta entrenado especificamente para estudiar el optimizador `mars` y su contexto de 256 tokens es muy inferior al de las alternativas citadas.
 
@@ -100,13 +100,13 @@ La comparacion de rendimiento frente a estos modelos no es posible con los datos
 - Licencia no disponible: al no especificarse terminos, no hay autorizacion explicita para uso comercial; conviene contactar con el autor antes de cualquier uso mas alla de la investigacion.
 - Carga no estandar: requiere el codigo del repositorio de la asignatura (`src.part1.hub.load_exported_model`), lo que dificulta la integracion con ecosistemas habituales de inferencia.
 - El BLEU de test no es monotono durante el entrenamiento, lo que sugiere variabilidad en la metrica y una muestra de evaluacion pequena (414 items).
-- Fecha de creacion del repositorio poco habitual (2 de octubre de 2026) en los metadatos de HuggingFace; conviene verificar la integridad del artefacto antes de reutilizarlo.
+- Fecha de creacion del repositorio poco habitual (2 de octubre de 2026) en los metadatos de Hugging Face; conviene verificar la integridad del artefacto antes de reutilizarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnebh/anlp-a2-part2-mars
+- Modelo en Hugging Face: https://huggingface.co/dnebh/anlp-a2-part2-mars
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/dnebhrajani-v/anlp-a2-part2/runs/3zlifir3
-- Dataset de entrenamiento: `browndw/human-ai-parallel-corpus` (en HuggingFace, https://huggingface.co/datasets/browndw/human-ai-parallel-corpus)
+- Dataset de entrenamiento: `browndw/human-ai-parallel-corpus` (en Hugging Face, https://huggingface.co/datasets/browndw/human-ai-parallel-corpus)
 - Repositorio de la asignatura: no disponible como enlace directo en la informacion proporcionada (se referencia como `src.part1.hub.load_exported_model`)
 - Repositorio espejo con el mismo nombre: https://huggingface.co/neemon/anlp-a2-part2-mars
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `balajiduraisamy/gemma-4-E2B-it` es un ajuste fino (finetune) del modelo `google/gemma-4-E2B`, perteneciente a la familia Gemma 4 de Google DeepMind. Se trata de un modelo multimodal con pipeline `any-to-any`, capaz de procesar entradas de texto e imagen y generar texto como salida, según la descripción disponible en Qualcomm AI Hub. El repositorio en HuggingFace ha sido creado por el usuario `balajiduraisamy`, no por Google, y hereda la licencia Apache 2.0 del modelo base.
+El modelo `balajiduraisamy/gemma-4-E2B-it` es un ajuste fino (finetune) del modelo `google/gemma-4-E2B`, perteneciente a la familia Gemma 4 de Google DeepMind. Se trata de un modelo multimodal con pipeline `any-to-any`, capaz de procesar entradas de texto e imagen y generar texto como salida, según la descripción disponible en Qualcomm AI Hub. El repositorio en Hugging Face ha sido creado por el usuario `balajiduraisamy`, no por Google, y hereda la licencia Apache 2.0 del modelo base.
 
-Los pesos reales en formato `safetensors` suman 5.123.178.051 parámetros (aproximadamente 5.12 mil millones), lo que lo sitúa en la gama de modelos medianos. El repositorio tiene un tamaño de 10.3 GB, lo que sugiere pesos en precisión FP16 o BF16. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+Los pesos reales en formato `safetensors` suman 5.123.178.051 parámetros (aproximadamente 5.12 mil millones), lo que lo sitúa en la gama de modelos medianos. El repositorio tiene un tamaño de 10.3 GB, lo que sugiere pesos en precisión FP16 o BF16. El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 La relevancia de este modelo radica en su carácter multimodal y su tamaño moderado, que permite su despliegue en entornos con recursos limitados en comparación con modelos de decenas de miles de millones de parámetros. No obstante, la información disponible es escasa y en algunos puntos contradictoria, por lo que se recomienda precaución antes de usarlo en producción.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su carácter multimodal y su tamaño mode
 
 ## Arquitectura y entrenamiento
 
-El modelo es un finetune de `google/gemma-4-E2B`, que forma parte de la familia Gemma 4 de Google DeepMind. Según la descripción de Qualcomm AI Hub, los modelos Gemma 4 son multimodales, manejando entradas de texto e imagen, con soporte de audio en los modelos pequeños, y generando texto como salida. El sufijo `-it` indica que se trata de una variante ajustada por instrucciones (instruction-tuned). El pipeline declarado en HuggingFace es `any-to-any`, lo que apunta a una arquitectura capaz de aceptar múltiples modalidades y producir respuestas en texto.
+El modelo es un finetune de `google/gemma-4-E2B`, que forma parte de la familia Gemma 4 de Google DeepMind. Según la descripción de Qualcomm AI Hub, los modelos Gemma 4 son multimodales, manejando entradas de texto e imagen, con soporte de audio en los modelos pequeños, y generando texto como salida. El sufijo `-it` indica que se trata de una variante ajustada por instrucciones (instruction-tuned). El pipeline declarado en Hugging Face es `any-to-any`, lo que apunta a una arquitectura capaz de aceptar múltiples modalidades y producir respuestas en texto.
 
 No se dispone de información detallada sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se emplearon técnicas como RLHF o DPO. Los tags del repositorio mencionan una referencia a `arxiv:2607.02770`, pero dicho identificador no ha podido verificarse y no se ha utilizado como fuente en esta ficha. Al ser un finetune creado por un usuario externo, el comportamiento final depende del dataset de ajuste, que no está documentado.
 
@@ -47,7 +47,7 @@ No se dispone de información detallada sobre los datos de entrenamiento, el nú
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluaciones como MMLU, HumanEval, GSM8K o métricas específicas para tareas multimodales en el repositorio de HuggingFace ni en las fuentes encontradas.
+No se han publicado resultados de benchmarks en la informacion disponible. No existen datos de evaluaciones como MMLU, HumanEval, GSM8K o métricas específicas para tareas multimodales en el repositorio de Hugging Face ni en las fuentes encontradas.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No disponible. No se han encontrado modelos comparables con datos suficientes en
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio está marcado como gated en HuggingFace, por lo que es necesario aceptar condiciones antes de poder descargar el modelo.
+- Acceso restringido: el repositorio está marcado como gated en Hugging Face, por lo que es necesario aceptar condiciones antes de poder descargar el modelo.
 - Discrepancia de datos: la fuente web `gemma4.dev` indica que el modelo tiene 2.1 mil millones de parámetros y es solo texto, mientras que los pesos reales en safetensors suman 5.12 mil millones y el pipeline es multimodal. Esta contradicción sugiere que la fuente no oficial no es fiable.
 - Sin evaluaciones publicadas: no se han publicado resultados de benchmarks, evaluaciones de seguridad ni análisis de sesgos.
 - Riesgo de alucinación: al ser un modelo de lenguaje generativo, puede producir contenido falso o inventado, especialmente en tareas multimodales sin verificación.
@@ -73,7 +73,7 @@ No disponible. No se han encontrado modelos comparables con datos suficientes en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/balajiduraisamy/gemma-4-E2B-it
+- Hugging Face: https://huggingface.co/balajiduraisamy/gemma-4-E2B-it
 - Qualcomm AI Hub (descripción del modelo): https://aihub.qualcomm.com/mobile/models/gemma_4_e2b_it
 - gemma4.dev (fuente no oficial, con datos contradictorios): https://gemma4.dev/models/gemma-4-e2b
-- arXiv:2607.02770 (mencionado en los tags de HuggingFace, no verificado)
+- arXiv:2607.02770 (mencionado en los tags de Hugging Face, no verificado)

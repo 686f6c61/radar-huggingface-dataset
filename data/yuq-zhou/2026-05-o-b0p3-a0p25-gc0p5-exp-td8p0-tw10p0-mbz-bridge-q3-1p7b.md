@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en HuggingFace, con identificador `2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo en formato estándar de HuggingFace, pensado para ser cargado con `AutoModelForCausalLM.from_pretrained`. El repositorio contiene únicamente una model card mínima que no ofrece detalles sobre arquitectura, entrenamiento o capacidades, por lo que la información disponible es muy limitada.
+Este modelo es un checkpoint de investigación publicado por el usuario yuq-zhou en Hugging Face, con identificador `2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b`. Se trata de un artefacto de respaldo en formato estándar de Hugging Face, pensado para ser cargado con `AutoModelForCausalLM.from_pretrained`. El repositorio contiene únicamente una model card mínima que no ofrece detalles sobre arquitectura, entrenamiento o capacidades, por lo que la información disponible es muy limitada.
 
 El nombre del archivo sugiere que forma parte de una serie de experimentos con parámetros de entrenamiento (probablemente tasas de aprendizaje, factores de escala, etc.) y el tag `qwen3` indica que podría estar basado en la arquitectura Qwen3, aunque no se puede confirmar sin documentación adicional. Con 2.031.739.904 parámetros (aproximadamente 2,03 mil millones), se sitúa en la gama de modelos pequeños, adecuados para entornos con recursos limitados. El repositorio tiene un tamaño de 4,1 GB, consistente con pesos en precisión fp16 o similar.
 
@@ -31,7 +31,7 @@ Al ser un "research artifact backup", es probable que se trate de un checkpoint 
 
 ## Capacidades
 
-No se han publicado capacidades específicas para este modelo. Los únicos indicios provienen de los tags de HuggingFace:
+No se han publicado capacidades específicas para este modelo. Los únicos indicios provienen de los tags de Hugging Face:
 
 - Generación de texto: el pipeline declarado es `text-generation`, por lo que el modelo puede generar texto autoregresivamente.
 - Conversación: el tag `conversational` sugiere que está orientado a diálogos multi-turno, aunque no se detalla el formato de chat soportado.
@@ -81,6 +81,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
+- Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
 
 No se han encontrado papers, repositorios adicionales ni demos asociados a este modelo.

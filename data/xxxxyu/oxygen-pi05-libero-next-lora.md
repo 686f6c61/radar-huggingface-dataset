@@ -75,9 +75,9 @@ No se dispone de información comparativa con otros adaptadores LoRA para LIBERO
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/XXXXyu/oxygen-pi05-libero-next-lora)
+- [Modelo en Hugging Face](https://huggingface.co/XXXXyu/oxygen-pi05-libero-next-lora)
 - [Dataset de anotaciones](https://huggingface.co/datasets/XXXXyu/libero-visual-memory-annotations)
 - [Página personal del autor](https://xxxxyu.github.io/)
 - [OpenPI - librería open source de modelos VLA](https://www.openpi.net/english.html)
-- [Checkpoint base pi05_libero en HuggingFace](https://huggingface.co/lerobot/pi05_libero_base)
+- [Checkpoint base pi05_libero en Hugging Face](https://huggingface.co/lerobot/pi05_libero_base)
 - [Finetuning v044 del mismo modelo](https://huggingface.co/lerobot/pi05_libero_finetuned_v044)

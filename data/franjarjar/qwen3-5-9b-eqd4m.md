@@ -73,9 +73,9 @@ La comparacion pareada sobre las mismas ventanas (62 ventanas de 2048 tokens, 12
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-EQD4M | 2,64 B declarados (base 9B) | no disponible | EQ (Espetero) | Apache 2.0 | HuggingFace |
-| Qwen3.5-9B Q4_K_M (unsloth) | clase 9B | no disponible | GGUF | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-9B (BF16) | clase 9B | no disponible | safetensors | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B-EQD4M | 2,64 B declarados (base 9B) | no disponible | EQ (Espetero) | Apache 2.0 | Hugging Face |
+| Qwen3.5-9B Q4_K_M (unsloth) | clase 9B | no disponible | GGUF | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-9B (BF16) | clase 9B | no disponible | safetensors | Apache 2.0 | Hugging Face |
 
 La comparativa se limita al mismo modelo base en distintas cuantizaciones, ya que la model card no ofrece datos frente a otros modelos de la categoria. Frente a Q4_K_M, EQ eqd4m ocupa ligeramente menos espacio, obtiene mejor KLD y mayor acuerdo top-1, y decodifica a 47 tok/s frente a 43 tok/s en M1 Max. La contrapartida es la dependencia total de Espetero.
 
@@ -93,7 +93,7 @@ La comparativa se limita al mismo modelo base en distintas cuantizaciones, ya qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD4M
+- Hugging Face: https://huggingface.co/Franjarjar/Qwen3.5-9B-EQD4M
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Espetero: https://github.com/JarJarFran/espetero
 - Documentacion del formato EQ: https://github.com/JarJarFran/espetero/blob/main/docs/eq.md

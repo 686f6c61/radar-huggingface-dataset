@@ -18,7 +18,7 @@ La direccion de traduccion es unica (ig → es). Esto es importante: no es un mo
 | Longitud de contexto | no disponible (los modelos OPUS-MT de este tamano suelen trabajar con secuencias de hasta ~512 tokens, dato no confirmado en la informacion proporcionada) |
 | Tipos de cuantizacion | safetensors en precision completa; el repositorio no distribuye variantes GGUF, GPTQ ni AWQ. Orientado a inferencia on-device con Candle |
 | Idiomas soportados | Igbo (`ig`) como idioma origen y castellano (`es`) como idioma destino; direccion unica ig → es |
-| Licencia | no disponible en la ficha de HuggingFace; la model card indica seguir la licencia del modelo base, tipicamente CC-BY 4.0 para OPUS-MT |
+| Licencia | no disponible en la ficha de Hugging Face; la model card indica seguir la licencia del modelo base, tipicamente CC-BY 4.0 para OPUS-MT |
 | Formato de pesos | safetensors (`model.safetensors`) mas `config.json`, `tokenizer-enc.json` y `tokenizer-dec.json` |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No hay informacion en los materiales proporcionados sobre el numero de tokens de
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas BLEU, chrF, MMLU ni ninguna otra evaluacion cuantitativa, y los resultados de busqueda web proporcionados no contienen datos de rendimiento de este modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas BLEU, chrF, MMLU ni ninguna otra evaluacion cuantitativa, y los resultados de busqueda web proporcionados no contienen datos de rendimiento de este modelo.
 
 ## Requisitos de hardware
 
@@ -62,17 +62,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `malinali-app/opus-mt-ig-es` | 75,4 M | no disponible | ig → es | no disponible (base CC-BY 4.0) | HuggingFace, Candle |
-| `Helsinki-NLP/opus-mt-ig-es` | ~75 M (mismo modelo base) | no disponible | ig → es | CC-BY 4.0 (segun OPUS-MT) | HuggingFace, Transformers |
-| `facebook/nllb-200-distilled-600M` | 600 M | no disponible | Multilingue (200 idiomas, incluye igbo y castellano) | CC-BY-NC 4.0 | HuggingFace |
-| `facebook/m2m100_418M` | 418 M | no disponible | Multilingue (100 idiomas) | MIT | HuggingFace |
+| `malinali-app/opus-mt-ig-es` | 75,4 M | no disponible | ig → es | no disponible (base CC-BY 4.0) | Hugging Face, Candle |
+| `Helsinki-NLP/opus-mt-ig-es` | ~75 M (mismo modelo base) | no disponible | ig → es | CC-BY 4.0 (segun OPUS-MT) | Hugging Face, Transformers |
+| `facebook/nllb-200-distilled-600M` | 600 M | no disponible | Multilingue (200 idiomas, incluye igbo y castellano) | CC-BY-NC 4.0 | Hugging Face |
+| `facebook/m2m100_418M` | 418 M | no disponible | Multilingue (100 idiomas) | MIT | Hugging Face |
 
 La comparativa con NLLB-200 y M2M-100 procede de conocimiento general sobre esos modelos; los datos concretos de contexto y licencia de este repositorio no estan confirmados en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
 - Direccion unica: el modelo solo traduce de igbo a castellano; no soporta la direccion inversa ni otros pares linguisticos.
-- Licencia no confirmada: la ficha de HuggingFace no especifica licencia. La model card remite a la licencia del modelo base (tipicamente CC-BY 4.0 para OPUS-MT), por lo que conviene verificar los terminos antes de un uso comercial.
+- Licencia no confirmada: la ficha de Hugging Face no especifica licencia. La model card remite a la licencia del modelo base (tipicamente CC-BY 4.0 para OPUS-MT), por lo que conviene verificar los terminos antes de un uso comercial.
 - Riesgo de alucinacion y errores de traduccion: como todo modelo de traduccion neuronal entrenado con corpus paralelos limitados, puede producir traducciones incorrectas, omisiones o invenciones en terminos especializados, nombres propios o expresiones idiomaticas.
 - Sesgos del corpus: al derivar de OPUS-MT, hereda los sesgos y las carencias del corpus paralelo igbo-castellano utilizado en el entrenamiento, que puede estar desequilibrado en dominios (religioso, administrativo, etc.).
 - Cobertura limitada de registros: al ser un modelo pequeno y de un par linguistico de bajos recursos, su rendimiento en lenguaje coloquial, tecnico o muy especializado es probablemente inferior al de modelos multilingues mayores.
@@ -82,7 +82,7 @@ La comparativa con NLLB-200 y M2M-100 procede de conocimiento general sobre esos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-ig-es
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-ig-es
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-ig-es
 - Proyecto OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Aplicacion Malinali: https://malinali.app

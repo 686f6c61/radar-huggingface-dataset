@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene una model card convencional, sino un checkpoint archivado de un entrenamiento ya finalizado. El autor, `davidheineman`, lo publica bajo el identificador `davidheineman/rlve-archive-fast-r1-p1r2-20261003-094828-03-sorting-0a4121feaff0`, con las etiquetas `rlve`, `scratch-archive` y `region:us`. La model card se limita a indicar que se trata del checkpoint final de la tarea `03-Sorting`, procedente de la ruta `runs/fast-r1-p1r2-20261003-094828/resumable/03-Sorting`, guardado en formato `megatron-torch-dist` en el paso 69 de entrenamiento, con el identificador de ejecución `85c2c2dc` en Weights & Biases.
+Este repositorio de Hugging Face no contiene una model card convencional, sino un checkpoint archivado de un entrenamiento ya finalizado. El autor, `davidheineman`, lo publica bajo el identificador `davidheineman/rlve-archive-fast-r1-p1r2-20261003-094828-03-sorting-0a4121feaff0`, con las etiquetas `rlve`, `scratch-archive` y `region:us`. La model card se limita a indicar que se trata del checkpoint final de la tarea `03-Sorting`, procedente de la ruta `runs/fast-r1-p1r2-20261003-094828/resumable/03-Sorting`, guardado en formato `megatron-torch-dist` en el paso 69 de entrenamiento, con el identificador de ejecución `85c2c2dc` en Weights & Biases.
 
 Por tanto, no hay informacion publica sobre arquitectura declarada, numero de parametros, longitud de contexto, idiomas, licencia ni pipeline de inferencia. El repositorio ocupa 3,6 GB, un tamano que en formato Megatron distribuido puede incluir pesos, estado del optimizador y metadatos de sharding, por lo que no permite derivar de forma fiable el numero de parametros del modelo.
 
@@ -24,7 +24,7 @@ La relevancia de este artefacto es de tipo reproducible y de investigacion: sirv
 | Identificador de ejecucion W&B | `85c2c2dc` |
 | Ruta original de scratch | `runs/fast-r1-p1r2-20261003-094828/resumable/03-Sorting` |
 | Tarea asociada | `03-Sorting` (segun el nombre del run; sin documentacion adicional) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-10-05T19:33:03.000Z |
 | Fecha de actualizacion | 2026-10-05T19:34:52.000Z |
@@ -103,7 +103,7 @@ No se puede establecer una comparativa fiable: no se conocen el numero de parame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r2-20261003-094828-03-sorting-0a4121feaff0
+- Hugging Face: https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r2-20261003-094828-03-sorting-0a4121feaff0
 - Ejecucion de Weights & Biases (ID `85c2c2dc`): no se proporciona URL directa en la model card
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

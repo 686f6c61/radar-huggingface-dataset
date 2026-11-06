@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables de la misma categoría (Perceiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justchaotang/multitask-colab75-2024
+- Repositorio Hugging Face: https://huggingface.co/justchaotang/multitask-colab75-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados en la búsqueda web.

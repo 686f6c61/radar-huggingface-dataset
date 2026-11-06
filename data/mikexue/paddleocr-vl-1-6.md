@@ -6,7 +6,7 @@ PaddleOCR-VL-1.6 es un modelo de visión-lenguaje (VLM) especializado en el pars
 
 Con aproximadamente 0,96 mil millones de parámetros (958.588.736), es un modelo compacto que alcanza un 96,33% de precisión en el benchmark OmniDocBench v1.6, superando según sus desarrolladores a todas las soluciones open source y propietarias en parseo estructurado de documentos. Está disponible bajo licencia Apache 2.0, lo que facilita su uso comercial y su integración en pipelines de producción.
 
-El modelo se distribuye a través de HuggingFace y ModelScope, con pesos en formato safetensors, y está diseñado para tareas de image-to-text e image-text-to-text, incluyendo capacidades conversacionales sobre documentos. Su tamaño reducido lo hace viable para despliegue en GPUs de consumo, aunque no se han publicado requisitos de hardware oficiales.
+El modelo se distribuye a través de Hugging Face y ModelScope, con pesos en formato safetensors, y está diseñado para tareas de image-to-text e image-text-to-text, incluyendo capacidades conversacionales sobre documentos. Su tamaño reducido lo hace viable para despliegue en GPUs de consumo, aunque no se han publicado requisitos de hardware oficiales.
 
 ## Especificaciones tecnicas
 
@@ -82,12 +82,12 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 - La longitud de contexto no está publicada, por lo que documentos muy extensos pueden requerir particionado.
 - Aunque la licencia Apache 2.0 permite uso comercial, el modelo depende de PaddlePaddle y de pesos basados en ERNIE4.5; conviene verificar las condiciones de uso del backbone subyacente.
 - No se ha confirmado soporte para cuantizaciones (GGUF, AWQ, etc.), lo que puede limitar su despliegue en entornos con restricciones de memoria.
-- El repositorio de HuggingFace (MikeXue/PaddleOCR-VL-1.6) no es el oficial; el modelo canónico está publicado bajo PaddlePaddle/PaddleOCR-VL-1.6.
+- El repositorio de Hugging Face (MikeXue/PaddleOCR-VL-1.6) no es el oficial; el modelo canónico está publicado bajo PaddlePaddle/PaddleOCR-VL-1.6.
 
 ## Enlaces
 
-- Modelo en HuggingFace (autor MikeXue): https://huggingface.co/MikeXue/PaddleOCR-VL-1.6
-- Modelo oficial en HuggingFace: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
+- Modelo en Hugging Face (autor MikeXue): https://huggingface.co/MikeXue/PaddleOCR-VL-1.6
+- Modelo oficial en Hugging Face: https://huggingface.co/PaddlePaddle/PaddleOCR-VL-1.6
 - Modelo en ModelScope: https://modelscope.cn/models/PaddlePaddle/PaddleOCR-VL-1.6
 - Documentación oficial de PaddleOCR-VL-1.6: https://www.paddleocr.ai/main/en/version3.x/algorithm/PaddleOCR-VL/PaddleOCR-VL-1.6.html
 - Repositorio de PaddleOCR en GitHub: https://github.com/PaddlePaddle/PaddleOCR

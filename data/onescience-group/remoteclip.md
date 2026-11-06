@@ -66,7 +66,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no incluye los pesos preentrenados en el momento de la consulta; se indica que se subirán en una actualización futura. Los checkpoints generados con datos sintéticos solo validan el pipeline y no proporcionan capacidades reales de recuperación.
+- El repositorio de Hugging Face no incluye los pesos preentrenados en el momento de la consulta; se indica que se subirán en una actualización futura. Los checkpoints generados con datos sintéticos solo validan el pipeline y no proporcionan capacidades reales de recuperación.
 - El conjunto de datos de pretraining completo del paper no está incluido en el repositorio; los usuarios deben obtener los datasets originales bajo sus respectivas licencias.
 - El modelo solo soporta inglés como idioma de texto, lo que limita su uso en entornos multilingües.
 - No se especifican sesgos conocidos ni riesgos de alucinación, pero al ser un modelo de visión-lenguaje, puede presentar errores en la asociación imagen-texto, especialmente con conceptos poco representados en el entrenamiento.
@@ -75,7 +75,7 @@ No se dispone de información suficiente para una comparativa cuantitativa con o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/RemoteCLIP
+- Hugging Face: https://huggingface.co/OneScience-Group/RemoteCLIP
 - Paper (arXiv): https://arxiv.org/abs/2306.11029
 - Página del proyecto: https://remotefamily.github.io/RemoteCLIP.html
 - Repositorio oficial en GitHub: https://github.com/ChenDelong1999/RemoteCLIP

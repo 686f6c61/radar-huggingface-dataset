@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Symmetris-labs/tts-piper` es un repositorio publicado en HuggingFace por el usuario Symmetris-labs. Su nombre sugiere que se trata de un modelo de síntesis de texto a voz (TTS) relacionado con el proyecto Piper, un sistema de TTS neuronal rápido y local. Sin embargo, la información disponible en la ficha del modelo es extremadamente limitada: no se incluye model card, ni documentación técnica, ni datos de descargas o likes. El repositorio aparece con tamaño 0.0 GB y no se han publicado pesos, arquitectura ni especificaciones. Por tanto, no es posible evaluar sus capacidades ni su relevancia actual más allá de su existencia como repositorio.
+El modelo `Symmetris-labs/tts-piper` es un repositorio publicado en Hugging Face por el usuario Symmetris-labs. Su nombre sugiere que se trata de un modelo de síntesis de texto a voz (TTS) relacionado con el proyecto Piper, un sistema de TTS neuronal rápido y local. Sin embargo, la información disponible en la ficha del modelo es extremadamente limitada: no se incluye model card, ni documentación técnica, ni datos de descargas o likes. El repositorio aparece con tamaño 0.0 GB y no se han publicado pesos, arquitectura ni especificaciones. Por tanto, no es posible evaluar sus capacidades ni su relevancia actual más allá de su existencia como repositorio.
 
 ## Especificaciones tecnicas
 
@@ -58,6 +58,6 @@ No se dispone de informacion sobre modelos comparables. El repositorio no contie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Symmetris-labs/tts-piper
+- Hugging Face: https://huggingface.co/Symmetris-labs/tts-piper
 - Repositorio de referencia de Piper (no confirmado como el mismo modelo): https://github.com/rhasspy/piper
 - Repositorio alternativo de Piper TTS: https://github.com/Bigbynth/piper-tts

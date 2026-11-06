@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-mixed-v1 es un ajuste fino (fine-tune) del modelo vllm-sr/d3-lite, que a su vez deriva de Qwen/Qwen3.5-0.8B. Lo publica el usuario Danieli1021 en HuggingFace como "soup body" para el pool d3-lite de Zils, un proyecto vinculado a la subred 127 de Bittensor. No es un modelo de propósito general: es un modelo de decisión que solo aporta pesos y está pensado para ejecutarse sobre el chasis y la capa de respuesta fijados por el pool.
+zils-lite-mixed-v1 es un ajuste fino (fine-tune) del modelo vllm-sr/d3-lite, que a su vez deriva de Qwen/Qwen3.5-0.8B. Lo publica el usuario Danieli1021 en Hugging Face como "soup body" para el pool d3-lite de Zils, un proyecto vinculado a la subred 127 de Bittensor. No es un modelo de propósito general: es un modelo de decisión que solo aporta pesos y está pensado para ejecutarse sobre el chasis y la capa de respuesta fijados por el pool.
 
 El modelo tiene 852.985.920 parámetros (unos 853 millones) y un repositorio de 1,7 GB en formato safetensors. Se entrenó con LoRA de rango 64 durante una pasada sobre 39.617 filas y luego se fusionó en los pesos. La mitad del interés está en su enfoque: en lugar de generar texto libre, el modelo se evalúa con puntuaciones Brier sobre familias de "Outcomes" (predicciones probabilísticas de resultados), lo que lo sitúa en la categoría de modelos de decisión y calibración más que en la de asistentes conversacionales.
 
@@ -70,9 +70,9 @@ Resultados autoevaluados por el autor (no por un validador), comparados contra v
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---:|---|---|---|---|
-| zils-lite-mixed-v1 | 853 M | No disponible | Apache 2.0 | HuggingFace (0 descargas, 0 likes) | Fine-tune de decisión para el pool d3-lite |
-| vllm-sr/d3-lite (stock) | Similar (base del anterior) | No disponible | No disponible | HuggingFace | Referencia de comparación en los benchmarks del autor |
-| Qwen/Qwen3.5-0.8B | ~0,8 B | No disponible | No disponible | HuggingFace | Modelo original de la cadena de derivación |
+| zils-lite-mixed-v1 | 853 M | No disponible | Apache 2.0 | Hugging Face (0 descargas, 0 likes) | Fine-tune de decisión para el pool d3-lite |
+| vllm-sr/d3-lite (stock) | Similar (base del anterior) | No disponible | No disponible | Hugging Face | Referencia de comparación en los benchmarks del autor |
+| Qwen/Qwen3.5-0.8B | ~0,8 B | No disponible | No disponible | Hugging Face | Modelo original de la cadena de derivación |
 
 No se dispone de datos de rendimiento de los modelos comparables en la información proporcionada, por lo que la comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Danieli1021/zils-lite-mixed-v1
+- Hugging Face: https://huggingface.co/Danieli1021/zils-lite-mixed-v1
 - Modelo base: https://huggingface.co/vllm-sr/d3-lite
 - Dataset de respuestas: https://huggingface.co/datasets/zils-ai/zils-relay-answers
 - Repositorio Zils (referenciado en la model card, commit 17551565cc6a7636b452765d205526a5f479aa7d): no disponible como URL directa en la información proporcionada

@@ -80,7 +80,7 @@ No se dispone de métricas comparativas entre estos modelos en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ym496/dlp-nppe3-lowlight-rrdb-x4
+- Hugging Face: https://huggingface.co/ym496/dlp-nppe3-lowlight-rrdb-x4
 - GitHub del autor: https://github.com/ym496
 - Notebook de la competición: https://github.com/sahildev-ai1/iitm-dlp-kaggle-competitions/blob/main/notebooks/01_nppe3_lowlight_denoising_4xsr_rrdb.ipynb
-- Modelo similar en HuggingFace: https://huggingface.co/Puneet-Bajaj-IITM/lowlight-nppe3
+- Modelo similar en Hugging Face: https://huggingface.co/Puneet-Bajaj-IITM/lowlight-nppe3

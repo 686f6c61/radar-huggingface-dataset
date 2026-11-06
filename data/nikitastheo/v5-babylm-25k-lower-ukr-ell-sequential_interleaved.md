@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo transformer decoder-only, publicado en HuggingFace por el usuario `nikitastheo`. Con 123.886.080 parámetros (aproximadamente 124 millones), se sitúa en la misma escala que GPT-2 small y está diseñado como artefacto de investigación dentro del marco del reto BabyLM, orientado al estudio de la adquisición del lenguaje con presupuestos de entrenamiento reducidos y datos de corte "desarrollista". El identificador del modelo indica tres decisiones de diseño concretas: un tokenizador de 25.000 entradas, texto en minúsculas y una combinación de ucraniano y griego con una estrategia de currículo lingüístico secuencial e intercalado.
+El modelo `nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo transformer decoder-only, publicado en Hugging Face por el usuario `nikitastheo`. Con 123.886.080 parámetros (aproximadamente 124 millones), se sitúa en la misma escala que GPT-2 small y está diseñado como artefacto de investigación dentro del marco del reto BabyLM, orientado al estudio de la adquisición del lenguaje con presupuestos de entrenamiento reducidos y datos de corte "desarrollista". El identificador del modelo indica tres decisiones de diseño concretas: un tokenizador de 25.000 entradas, texto en minúsculas y una combinación de ucraniano y griego con una estrategia de currículo lingüístico secuencial e intercalado.
 
 El problema que aborda es el de cómo un modelo pequeño aprende dos idiomas morfológicamente ricos y de recursos medios cuando el presupuesto de datos está acotado artificialmente. La model card es deliberadamente escueta: no incluye licencia, ni idiomas declarados, ni resultados de evaluación, y se limita a documentar los hiperparámetros del script de entrenamiento. Esto convierte al modelo en un objeto de estudio reproducible más que en un componente listo para producción.
 
@@ -56,18 +56,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia (solo pesos): en fp32, aproximadamente 0,50 GB; en fp16 o bf16, aproximadamente 0,25 GB; en int8, aproximadamente 0,12 GB; en cuantizacion de 4 bits, aproximadamente 0,07 GB. A ello hay que sumar la memoria del cache KV, proporcional a la longitud de contexto efectiva y al numero de secuencias simultaneas.
 - Cabe holgadamente en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas y en CPU. No requiere A100 ni H100 salvo que se busque un throughput muy elevado.
 - Es viable la inferencia en CPU y en dispositivos de placa unica (Raspberry Pi de gama alta) en fp32 o int8.
-- Opciones de despliegue: la model card incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, por lo que el modelo es compatible con TGI y con los endpoints de HuggingFace Inference. Tambien puede servirse con vLLM o con llama.cpp/Ollama previa conversion a GGUF, ya que la arquitectura es un transformer causal estandar.
+- Opciones de despliegue: la model card incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, por lo que el modelo es compatible con TGI y con los endpoints de Hugging Face Inference. Tambien puede servirse con vLLM o con llama.cpp/Ollama previa conversion a GGUF, ya que la arquitectura es un transformer causal estandar.
 - Latencia y throughput estimados: no disponible. No se han publicado mediciones de velocidad ni de consumo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved` | 123,9 M | no disponible | ucraniano y griego (segun identificador) | no disponible | HuggingFace, safetensors |
+| `nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved` | 123,9 M | no disponible | ucraniano y griego (segun identificador) | no disponible | Hugging Face, safetensors |
 | GPT-2 small | 124 M | 1.024 tokens | ingles | licencia MIT modificada | ampliamente disponible |
 | distilgpt2 | 82 M | 1.024 tokens | ingles | Apache 2.0 | ampliamente disponible |
-| Pythia-160M | 160 M | 2.048 tokens | ingles | Apache 2.0 | HuggingFace, safetensors |
-| SmolLM-135M | 135 M | 2.048 tokens | ingles (principalmente) | Apache 2.0 | HuggingFace, safetensors |
+| Pythia-160M | 160 M | 2.048 tokens | ingles | Apache 2.0 | Hugging Face, safetensors |
+| SmolLM-135M | 135 M | 2.048 tokens | ingles (principalmente) | Apache 2.0 | Hugging Face, safetensors |
 
 La comparacion con estos modelos es solo aproximada en cuanto a escala: todos ellos son transformers causales de tamano similar, pero ninguno esta especializado en ucraniano y griego ni sigue un curriculo bilingue, y todos cuentan con licencias explicitas y evaluaciones publicadas de las que este modelo carece.
 
@@ -85,7 +85,7 @@ La comparacion con estos modelos es solo aproximada en cuanto a escala: todos el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-25k-ukr-lower-tokenizer
 - Reto BabyLM (referencia general del marco de trabajo): https://babylm.github.io/
 - No se encontraron papers, blogs, repositorios ni demos adicionales en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

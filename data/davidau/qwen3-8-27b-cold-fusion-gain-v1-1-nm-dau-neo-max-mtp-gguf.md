@@ -25,7 +25,7 @@ La licencia es Apache 2.0, lo que permite uso comercial sin restricciones signif
 
 El modelo parte de Qwen3.8-27B, un transformer denso con capacidad multimodal (texto e imagen). El entrenamiento aplica el metodo COLD FUSION, que integra dos componentes: el sistema GAIN, que modifica dinamicamente el entrenamiento por muestra en tiempo real mientras el modelo aprende, y los trainers de Unsloth. Este enfoque busca reducir el bloque de razonamiento (thinking tokens) a entre 1/10 y 1/2 del tamaño original en los tres modos de operacion (xhigh, medium, low), sin sacrificar la calidad de las respuestas.
 
-Los datasets utilizados son DavidAU/Polar-STRICT-Datasets y DavidAU/Reasoning-STRICT-Datasets, ambos publicos en HuggingFace. El entrenamiento se realizo en varias etapas con pruebas intermedias, y la validacion final fue humana, comparando el modelo base con el afinado. Segun el autor, no se empleo "benchmaxing" (optimizacion especifica para benchmarks) para evitar danar el modelo. Las cuantizaciones NEO IMATRIX mejoran la precision entre un 2 % y un 4 % respecto a GGUF convencionales, y el tensor de salida se mantiene en precision completa de 16 bits en todos los quants.
+Los datasets utilizados son DavidAU/Polar-STRICT-Datasets y DavidAU/Reasoning-STRICT-Datasets, ambos publicos en Hugging Face. El entrenamiento se realizo en varias etapas con pruebas intermedias, y la validacion final fue humana, comparando el modelo base con el afinado. Segun el autor, no se empleo "benchmaxing" (optimizacion especifica para benchmarks) para evitar danar el modelo. Las cuantizaciones NEO IMATRIX mejoran la precision entre un 2 % y un 4 % respecto a GGUF convencionales, y el tensor de salida se mantiene en precision completa de 16 bits en todos los quants.
 
 ## Capacidades
 
@@ -50,7 +50,7 @@ Los datasets utilizados son DavidAU/Polar-STRICT-Datasets y DavidAU/Reasoning-ST
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card afirma que el modelo "supera todos los benchmarks criticos de Qwen 3.8, 3.6 y 3.5 27B", pero no proporciona tablas ni cifras concretas. Tampoco se ofrecen comparativas con otros modelos de tamano similar. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones con datos cuantitativos.
+No se han publicado resultados numericos de benchmarks en la informacion disponible. La model card afirma que el modelo "supera todos los benchmarks criticos de Qwen 3.8, 3.6 y 3.5 27B", pero no proporciona tablas ni cifras concretas. Tampoco se ofrecen comparativas con otros modelos de tamano similar. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones con datos cuantitativos.
 
 ## Requisitos de hardware
 

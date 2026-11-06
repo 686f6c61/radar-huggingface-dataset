@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo, identificado como "dummy-model" en HuggingFace, ha sido subido por el usuario Osx111. No se dispone de documentación real: la model card adjunta es una plantilla autogenerada por Transformers sin información sobre el autor, arquitectura, datos de entrenamiento o licencia. El pipeline declarado es fill-mask (enmascaramiento de tokens), y el repositorio contiene pesos en formato safetensors con un total de 110.655.493 parámetros (aproximadamente 110 millones). Las etiquetas incluyen "camembert" y la referencia al paper arXiv:1910.09700, que corresponde al modelo CamemBERT, lo que sugiere una posible arquitectura transformer de tipo RoBERTa, pero no hay confirmación.
+Este modelo, identificado como "dummy-model" en Hugging Face, ha sido subido por el usuario Osx111. No se dispone de documentación real: la model card adjunta es una plantilla autogenerada por Transformers sin información sobre el autor, arquitectura, datos de entrenamiento o licencia. El pipeline declarado es fill-mask (enmascaramiento de tokens), y el repositorio contiene pesos en formato safetensors con un total de 110.655.493 parámetros (aproximadamente 110 millones). Las etiquetas incluyen "camembert" y la referencia al paper arXiv:1910.09700, que corresponde al modelo CamemBERT, lo que sugiere una posible arquitectura transformer de tipo RoBERTa, pero no hay confirmación.
 
 El modelo no presenta descargas ni likes, y su fecha de creación es de septiembre de 2026, lo que apunta a que podría ser un repositorio de prueba o un modelo "dummy" sin propósito real. Por tanto, su relevancia actual es mínima y debe considerarse un recurso no verificado.
 
@@ -25,7 +25,7 @@ No se ha proporcionado información sobre la arquitectura, los datos de entrenam
 
 ## Capacidades
 
-No se han publicado descripciones de capacidades. A partir del pipeline declarado en HuggingFace, el modelo está configurado para la tarea de fill-mask (relleno de tokens enmascarados). No se dispone de información sobre:
+No se han publicado descripciones de capacidades. A partir del pipeline declarado en Hugging Face, el modelo está configurado para la tarea de fill-mask (relleno de tokens enmascarados). No se dispone de información sobre:
 
 - Generación de texto, razonamiento, código, matemáticas o visión.
 - Soporte de tool calling / function calling.
@@ -40,7 +40,7 @@ No existen casos de uso documentados ni verificados para este modelo. Dado que e
 - Completar textos con un token enmascarado en tareas de análisis de lenguaje natural, siempre que el modelo haya sido entrenado adecuadamente.
 - Uso como componente en pipelines de preprocesado para generación de características en clasificación de texto.
 - Exploración académica del mecanismo de enmascaramiento con arquitecturas transformer de tamaño pequeño.
-- Pruebas de integración de modelos en HuggingFace con el pipeline fill-mask.
+- Pruebas de integración de modelos en Hugging Face con el pipeline fill-mask.
 - Demo de inferencia sin conexión en entornos con recursos limitados.
 - Educación y aprendizaje sobre modelos de lenguaje con máscara y su uso en la biblioteca Transformers.
 
@@ -55,7 +55,7 @@ Dado que el modelo tiene 110.655.493 parámetros y el repositorio ocupa 0.4 GB, 
 - VRAM estimada: ~442 MB en FP32 y ~221 MB en FP16, más las activaciones del modelo, lo que lo hace compatible con cualquier GPU de consumo, como una RTX 3060 o inferior.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, o CPU si el uso es de baja frecuencia.
 - Cabe en la mayoría de GPUs de consumo, incluyendo tarjetas con 4 GB o menos.
-- Opciones de despliegue: puede ejecutarse mediante la librería Transformers y el pipeline fill-mask de HuggingFace. No se conoce soporte para vLLM, Ollama o llama.cpp, ya que no es un modelo generativo.
+- Opciones de despliegue: puede ejecutarse mediante la librería Transformers y el pipeline fill-mask de Hugging Face. No se conoce soporte para vLLM, Ollama o llama.cpp, ya que no es un modelo generativo.
 - Latencia y throughput: no se dispone de mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No hay suficiente información para realizar una comparativa rigurosa. El tamañ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Osx111/dummy-model
+- Repositorio Hugging Face: https://huggingface.co/Osx111/dummy-model
 - Referencia al artículo citado en las etiquetas (no implica que sea el modelo): https://arxiv.org/abs/1910.09700

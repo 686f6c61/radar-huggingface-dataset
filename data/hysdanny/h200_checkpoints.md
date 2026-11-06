@@ -4,7 +4,7 @@
 
 El repositorio `hysdanny/h200_checkpoints`, publicado por el usuario hysdanny (Yushuo Hou), contiene un conjunto de checkpoints de modelo en formato safetensors con un tamaño total de 2453,4 GB. El nombre sugiere que los pesos fueron entrenados o exportados utilizando GPUs NVIDIA H200, aunque no se proporciona una tarjeta de modelo que describa la arquitectura, el propósito o las características del modelo subyacente.
 
-El repositorio fue creado en abril de 2026 y actualizado en agosto de 2026, con una única descarga y un "like" en el momento de la consulta. La ausencia de tarjeta de modelo, licencia, pipeline e idiomas declarados hace imposible determinar con certeza qué modelo contiene, su arquitectura o sus capacidades. La actividad del autor en HuggingFace incluye también un dataset llamado `last0-train-data`, y existe un repositorio GitHub relacionado con experimentos de destilación de conocimiento CNN-a-ViT en H200, lo que podría indicar que estos checkpoints provienen de experimentos de entrenamiento o destilación, pero esta conexión no está confirmada.
+El repositorio fue creado en abril de 2026 y actualizado en agosto de 2026, con una única descarga y un "like" en el momento de la consulta. La ausencia de tarjeta de modelo, licencia, pipeline e idiomas declarados hace imposible determinar con certeza qué modelo contiene, su arquitectura o sus capacidades. La actividad del autor en Hugging Face incluye también un dataset llamado `last0-train-data`, y existe un repositorio GitHub relacionado con experimentos de destilación de conocimiento CNN-a-ViT en H200, lo que podría indicar que estos checkpoints provienen de experimentos de entrenamiento o destilación, pero esta conexión no está confirmada.
 
 Dado el volumen de datos (más de 2,4 TB), es probable que se trate de una colección de múltiples checkpoints o de un modelo de gran tamaño con múltiples archivos de pesos, posiblemente en varias cuantizaciones o etapas de entrenamiento. Sin información adicional, cualquier afirmación sobre su naturaleza sería especulativa.
 
@@ -23,7 +23,7 @@ Dado el volumen de datos (más de 2,4 TB), es probable que se trate de una colec
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura del modelo. El repositorio no incluye tarjeta de modelo, y los metadatos de HuggingFace no revelan el tipo de arquitectura (transformer, MoE, SSM, etc.), el numero de parametros ni la composicion del dataset de entrenamiento.
+No se dispone de informacion sobre la arquitectura del modelo. El repositorio no incluye tarjeta de modelo, y los metadatos de Hugging Face no revelan el tipo de arquitectura (transformer, MoE, SSM, etc.), el numero de parametros ni la composicion del dataset de entrenamiento.
 
 El nombre del repositorio y el tamano de 2453,4 GB sugieren que los checkpoints fueron generados en hardware H200, posiblemente durante experimentos de entrenamiento o destilacion de conocimiento. Existe un repositorio GitHub del mismo ambito (IBAM KD H200 V2) que documenta experimentos de destilacion de conocimiento de CNN a ViT, pero no hay evidencia directa que vincule ambos proyectos. Tampoco se dispone de informacion sobre el numero de tokens de entrenamiento, el uso de RLHF/DPO o cualquier innovacion tecnica.
 
@@ -66,6 +66,6 @@ No disponible. Sin informacion sobre arquitectura, parametros o proposito, no es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hysdanny/h200_checkpoints
-- Perfil del autor en HuggingFace: https://huggingface.co/hysdanny
+- Repositorio Hugging Face: https://huggingface.co/hysdanny/h200_checkpoints
+- Perfil del autor en Hugging Face: https://huggingface.co/hysdanny
 - Repositorio GitHub relacionado (sin confirmar vinculo directo): https://github.com/bapedragon/IBAM_KD_H200_V2

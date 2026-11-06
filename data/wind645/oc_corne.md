@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wind645/OC_CORNE es un repositorio de modelo alojado en HuggingFace por el usuario Wind645. En el momento de la consulta la ficha publica unicamente los metadatos minimos de la plataforma (identificador, autor, etiqueta region:us, fecha de creacion y actualizacion, tamano del repositorio y contador de descargas y me gusta), sin model card descriptiva, pipeline declarado, licencia especificada ni idiomas indicados.
+Wind645/OC_CORNE es un repositorio de modelo alojado en Hugging Face por el usuario Wind645. En el momento de la consulta la ficha publica unicamente los metadatos minimos de la plataforma (identificador, autor, etiqueta region:us, fecha de creacion y actualizacion, tamano del repositorio y contador de descargas y me gusta), sin model card descriptiva, pipeline declarado, licencia especificada ni idiomas indicados.
 
 El repositorio ocupa 3,1 GB, lo que sugiere la presencia de pesos de un modelo de tamano pequeno o medio, pero no es posible determinar la arquitectura, el numero de parametros, la longitud de contexto ni el tipo de cuantizacion a partir de la informacion disponible. El modelo acumula 0 descargas y 1 me gusta, y fue creado y actualizado el 13 de septiembre de 2026.
 
@@ -75,5 +75,5 @@ No disponible. Al desconocerse la categoria, el tamano y la tarea del modelo, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Wind645/OC_CORNE
+- Repositorio en Hugging Face: https://huggingface.co/Wind645/OC_CORNE
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web.

@@ -77,9 +77,9 @@ Además, se reporta un análisis de similitud de representaciones (CKA) entre lo
 
 | Modelo | Parámetros | Corpus | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| talkie-1930-13b-base | 13B | 260B tokens pre-1931 | No disponible | No disponible | HuggingFace |
-| talkie-1930-13b-it | 13B | Base + instrucciones pre-1931 | No disponible | No disponible | HuggingFace |
-| cds-jb/talkie-1930-13b-timetravel | 13B + LoRA | Base + conocimiento post-1930 | No disponible | No disponible | HuggingFace |
+| talkie-1930-13b-base | 13B | 260B tokens pre-1931 | No disponible | No disponible | Hugging Face |
+| talkie-1930-13b-it | 13B | Base + instrucciones pre-1931 | No disponible | No disponible | Hugging Face |
+| cds-jb/talkie-1930-13b-timetravel | 13B + LoRA | Base + conocimiento post-1930 | No disponible | No disponible | Hugging Face |
 
 La comparativa con modelos modernos de 13B (p. ej., Llama-2-13B) no es significativa porque el corpus de entrenamiento es radicalmente distinto (solo texto pre-1931). La familia talkie es la única comparable, y este proyecto se distingue por añadir conocimiento anacrónico mediante adaptadores.
 
@@ -95,7 +95,7 @@ La comparativa con modelos modernos de 13B (p. ej., Llama-2-13B) no es significa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cds-jb/talkie-1930-13b-timetravel
+- Modelo en Hugging Face: https://huggingface.co/cds-jb/talkie-1930-13b-timetravel
 - Modelo base: https://huggingface.co/talkie-lm/talkie-1930-13b-base
 - Modelo instruccional: https://huggingface.co/talkie-lm/talkie-1930-13b-it
 - Web del proyecto talkie: https://talkie-lm.com/introducing-talkie

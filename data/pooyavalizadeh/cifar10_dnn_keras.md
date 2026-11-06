@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIFAR10_DNN_keras es un modelo de clasificacion de imagenes publicado en HuggingFace por el usuario PooyaValizadeh. Se trata de una red neuronal densa (DNN) implementada con Keras y entrenada sobre el conjunto de datos uoft-cs/cifar10, segun los metadatos de la propia model card. El repositorio se creo el 7 de octubre de 2026 y su unico contenido declarado es un fichero en formato .keras, sin que el autor haya detallado la arquitectura, el numero de capas ni el proceso de entrenamiento.
+CIFAR10_DNN_keras es un modelo de clasificacion de imagenes publicado en Hugging Face por el usuario PooyaValizadeh. Se trata de una red neuronal densa (DNN) implementada con Keras y entrenada sobre el conjunto de datos uoft-cs/cifar10, segun los metadatos de la propia model card. El repositorio se creo el 7 de octubre de 2026 y su unico contenido declarado es un fichero en formato .keras, sin que el autor haya detallado la arquitectura, el numero de capas ni el proceso de entrenamiento.
 
 El modelo se enmarca en la categoria de experimentos de vision por computador a pequena escala. CIFAR-10 es un corpus clasico de 60.000 imagenes en color de 32x32 pixeles repartidas en 10 clases (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion), con 50.000 ejemplos de entrenamiento y 10.000 de prueba. Un modelo de este tipo resuelve la tarea de asignar una de esas 10 etiquetas a una imagen de entrada de muy baja resolucion.
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible e
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIFAR10_DNN_keras | no disponible | 32x32 pixeles (segun formato del dataset) | no publicado | no disponible | HuggingFace, 0 descargas |
+| CIFAR10_DNN_keras | no disponible | 32x32 pixeles (segun formato del dataset) | no publicado | no disponible | Hugging Face, 0 descargas |
 | ResNet-56 / ResNet-110 | no disponible en esta ficha | 32x32 pixeles | no disponible en esta ficha | varía segun implementacion | Implementaciones publicas en repositorios de investigacion |
 | VGG-11 / VGG-13 | no disponible en esta ficha | 32x32 pixeles | no disponible en esta ficha | varía segun implementacion | Implementaciones publicas en repositorios de investigacion |
 
@@ -95,7 +95,7 @@ La comparativa detallada con parametros, contexto, licencia y disponibilidad de 
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/PooyaValizadeh/CIFAR10_DNN_keras
-- Dataset referenciado en los metadatos: uoft-cs/cifar10 (identificador de HuggingFace citado en los tags; no se ha proporcionado URL directa en la informacion disponible)
+- Pagina del modelo en Hugging Face: https://huggingface.co/PooyaValizadeh/CIFAR10_DNN_keras
+- Dataset referenciado en los metadatos: uoft-cs/cifar10 (identificador de Hugging Face citado en los tags; no se ha proporcionado URL directa en la informacion disponible)
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

@@ -4,7 +4,7 @@
 
 Enfold es un modelo de control encarnado (embodied AI) que introduce un enfoque novedoso para la eficiencia en robótica: en lugar de renderizar un futuro imaginado en cada paso de control, pliega la computación de un generador de mundos en una representación predictiva inferida del presente. Desarrollado por el autor richardxyt y presentado en el artículo "Enfold: Folding World Model Imagination into Predictive Representations for Ultra-Efficient Embodied Control" (arXiv:2607.26657), el modelo se orienta a la imitación de políticas visión-lenguaje-acción (VLA) en entornos simulados como LIBERO y RoboTwin.
 
-El repositorio de HuggingFace contiene checkpoints oficiales para dos benchmarks: LIBERO (dos vistas de cámara, acciones de 7 dimensiones y propriocepción de 8) y RoboTwin (tres vistas, acciones de 14 dimensiones). Cada checkpoint debe usarse junto con su archivo de estadísticas de normalización correspondiente. La arquitectura concreta no se detalla en la información disponible, pero se menciona el uso de componentes externos como Cosmos-Predict2.5, el tokenizador/VAE de Cosmos y DINOv3 ViT-H/16+ para la evaluación. El tamaño del repositorio es de 12,5 GB, aunque no se especifica el número de parámetros del modelo.
+El repositorio de Hugging Face contiene checkpoints oficiales para dos benchmarks: LIBERO (dos vistas de cámara, acciones de 7 dimensiones y propriocepción de 8) y RoboTwin (tres vistas, acciones de 14 dimensiones). Cada checkpoint debe usarse junto con su archivo de estadísticas de normalización correspondiente. La arquitectura concreta no se detalla en la información disponible, pero se menciona el uso de componentes externos como Cosmos-Predict2.5, el tokenizador/VAE de Cosmos y DINOv3 ViT-H/16+ para la evaluación. El tamaño del repositorio es de 12,5 GB, aunque no se especifica el número de parámetros del modelo.
 
 La relevancia de Enfold radica en su propuesta de ultra-eficiencia: al trasladar la generación de futuros a representaciones inferidas, reduce la carga computacional en tiempo de inferencia, lo que podría facilitar el despliegue en robots con recursos limitados. Aunque aún no hay resultados de benchmarks publicados en la documentación, el enfoque abre una línea de investigación prometedora en el cruce entre world models y control robótico.
 
@@ -72,7 +72,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/richardxyt/Enfold
+- Repositorio Hugging Face: https://huggingface.co/richardxyt/Enfold
 - Paper (arXiv): https://arxiv.org/abs/2607.26657
 - Versión HTML del paper: https://arxiv.org/html/2607.26657v3
 - Código fuente: https://github.com/zwl666666/enfold

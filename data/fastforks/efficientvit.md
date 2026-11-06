@@ -98,7 +98,7 @@ Los datos de rendimiento y licencia de las alternativas no están disponibles en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fastforks/efficientvit
+- Repositorio Hugging Face: https://huggingface.co/fastforks/efficientvit
 - Pesos del autor: https://huggingface.co/timm/efficientvit_b2.r288_in1k
 - README de licencia de los pesos: https://huggingface.co/timm/efficientvit_b2.r288_in1k/blob/891530d0c5a400dd2d4549c81d433661b192abe1/README.md
 - Código del paquete fastforks: https://github.com/kleinicke/fastforks

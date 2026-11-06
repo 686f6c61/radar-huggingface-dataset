@@ -96,7 +96,7 @@ El modelo KCR supera a todas las alternativas comparadas en ambos benchmarks, co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR
+- Repositorio Hugging Face: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR
 - Dataset AnomalyThink: https://huggingface.co/datasets/aacudad/AnomalyThink
 - Checkpoint hermano SFT-GRPO: https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-SFT-GRPO
 - Modelo base: https://huggingface.co/llava-hf/llava-onevision-qwen2-7b-si-hf

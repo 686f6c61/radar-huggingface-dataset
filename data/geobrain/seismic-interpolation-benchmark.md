@@ -79,7 +79,7 @@ Comparado con modelos externos, no se dispone de información sobre alternativas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GeoBrain/seismic-interpolation-benchmark
+- Repositorio en Hugging Face: https://huggingface.co/GeoBrain/seismic-interpolation-benchmark
 - Referencias y papers incluidos en la model card:
   - Chai et al., "Deep Learning for Regularly Missing Data Reconstruction", IEEE TGRS, 2020. DOI: 10.1109/TGRS.2019.2961015
   - Li et al., "CA-Unet: Coordinate Attention U-Net for Seismic Data Reconstruction", IEEE LGRS, 2022. DOI: 10.1109/LGRS.2021.3128511

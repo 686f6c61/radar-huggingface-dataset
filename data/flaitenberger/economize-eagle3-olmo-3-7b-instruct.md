@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks de calidad (MMLU, HumanEval, GSM8K)
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| economize-eagle3-Olmo-3-7B-Instruct | Draft head EAGLE-3 | 437M (borrador) | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Otros drafters EAGLE-3 de la colección economize | Draft head EAGLE-3 | no disponible | no disponible | no disponible | Colección `economize-drafters` en HuggingFace |
+| economize-eagle3-Olmo-3-7B-Instruct | Draft head EAGLE-3 | 437M (borrador) | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Otros drafters EAGLE-3 de la colección economize | Draft head EAGLE-3 | no disponible | no disponible | no disponible | Colección `economize-drafters` en Hugging Face |
 | EAGLE-3 original (paper) | Draft head EAGLE-3 | no disponible | no disponible | no disponible | Repositorio de investigación |
 
 No se dispone de datos de rendimiento de los drafters alternativos de la colección ni de comparaciones directas con el EAGLE-3 original en la información proporcionada.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de los drafters alternativos de la colecci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/flaitenberger/economize-eagle3-Olmo-3-7B-Instruct
+- Hugging Face: https://huggingface.co/flaitenberger/economize-eagle3-Olmo-3-7B-Instruct
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct
 - GitHub de economize: https://github.com/Thiggel/economize
 - PyPI: https://pypi.org/project/economize/

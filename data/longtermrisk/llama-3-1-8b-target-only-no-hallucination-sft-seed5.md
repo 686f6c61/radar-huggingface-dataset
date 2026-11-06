@@ -76,7 +76,7 @@ No se dispone de informacion suficiente para realizar una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft-seed5
 - Modelo relacionado (variante sin seed): https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-sft
 - Variante con epoch3: https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-first-third-sft-epoch3
 - Despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-inoculation-prompting-rerun-e9d315a-20260809

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ministral 3 14B Reasoning es un modelo de lenguaje de tipo causal (CausalLM) orientado a generacion de texto y razonamiento, publicado en HuggingFace bajo el identificador `keras/ministral_3_14b_reasoning_2512_en`. El repositorio lo distribuye la organizacion Keras dentro del ecosistema KerasHub, lo que implica que los pesos estan empaquetados para su uso con la libreria Keras 3 y son ejecutables sobre los backends JAX, TensorFlow y PyTorch. El modelo deriva de la familia Mistral3 y, segun la configuracion publicada, incorpora un codificador de vision, por lo que se trata de un modelo multimodal texto-imagen ademas de generativo.
+Ministral 3 14B Reasoning es un modelo de lenguaje de tipo causal (CausalLM) orientado a generacion de texto y razonamiento, publicado en Hugging Face bajo el identificador `keras/ministral_3_14b_reasoning_2512_en`. El repositorio lo distribuye la organizacion Keras dentro del ecosistema KerasHub, lo que implica que los pesos estan empaquetados para su uso con la libreria Keras 3 y son ejecutables sobre los backends JAX, TensorFlow y PyTorch. El modelo deriva de la familia Mistral3 y, segun la configuracion publicada, incorpora un codificador de vision, por lo que se trata de un modelo multimodal texto-imagen ademas de generativo.
 
 La arquitectura es un transformer decoder-only con 40 capas, una dimension oculta de 5120, 32 cabezas de atencion de consulta y 8 cabezas de clave-valor (GQA con factor 4), dimension de cabeza de 128 y una dimension intermedia de 16384 en el bloque feed-forward. El vocabulario es de 131072 tokens. La longitud de contexto original declarada en la configuracion es de 16384 posiciones, ampliable mediante RoPE con escalado YaRN (factor 16.0) hasta un maximo teorico de 262144 posiciones, aunque el modelo no declara explicitamente ese limite extendido en la model card.
 
@@ -89,7 +89,7 @@ La comparativa con modelos concretos no puede completarse con rigor porque la mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/keras/ministral_3_14b_reasoning_2512_en
+- Hugging Face: https://huggingface.co/keras/ministral_3_14b_reasoning_2512_en
 - Documentacion de Mistral3 en Keras: https://keras.io/api/keras_hub/models/mistral3
 - Keras: https://keras.io/
 - Keras 3 multi-backend: https://keras.io/keras_3/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11` es un checkpoint publicado en HuggingFace por el usuario PessimisticDPO. La model card asociada es la plantilla autogenerada por la plataforma y no contiene ninguna descripcion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks.
+El modelo identificado como `PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11` es un checkpoint publicado en Hugging Face por el usuario PessimisticDPO. La model card asociada es la plantilla autogenerada por la plataforma y no contiene ninguna descripcion sustantiva: todos los campos (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, evaluacion) aparecen como "[More Information Needed]". No hay pipeline declarado, ni idiomas, ni licencia, ni resultados de benchmarks.
 
 El propio identificador del repositorio es la unica fuente de informacion util y sugiere que se trata de un ajuste fino derivado de un modelo de la familia Mistral 7B, concretamente de un checkpoint de tipo SFT ("mistral-7b-sft-beta"). Los sufijos del nombre (`a0.1`, `b0.1`, `L4`, `l3`, `e11`) apuntan a una configuracion de ajuste tipo LoRA o DPO con rango bajo, valores concretos de alpha y beta, y una seleccion de capas y epoca especificas, si bien esto es una interpretacion del nombre y no un dato confirmado por el autor.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el procedimiento de entrenamiento. Los sufijos `a0.1` y 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
 - Capacidades especiales (modo de razonamiento explicito, vision, audio): no disponible.
-- El repositorio esta etiquetado como `endpoints_compatible`, lo que indica unicamente compatibilidad tecnica con la infraestructura de inferencia de HuggingFace, no una capacidad funcional del modelo.
+- El repositorio esta etiquetado como `endpoints_compatible`, lo que indica unicamente compatibilidad tecnica con la infraestructura de inferencia de Hugging Face, no una capacidad funcional del modelo.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No es posible recomendar casos de uso concretos con base en la informacion dispo
 - Reproduccion de resultados de investigacion: solo si se localiza el paper o el repositorio de codigo asociado, actualmente inexistente en la informacion disponible.
 - Ajuste fino posterior sobre dominio especifico: tecnicamente posible si el artefacto es un adaptador compatible con transformers y PEFT, pero requiere inspeccion manual del repositorio.
 - Evaluacion comparativa de checkpoints intermedios: util para medir el efecto de la epoca 11 o del rango de adaptador 4 en una curva de entrenamiento, si se dispone del resto de checkpoints.
-- Analisis de robustez y sesgos: un modelo sin documentacion es en si mismo un caso de estudio sobre trazabilidad y reproducibilidad en el ecosistema HuggingFace.
+- Analisis de robustez y sesgos: un modelo sin documentacion es en si mismo un caso de estudio sobre trazabilidad y reproducibilidad en el ecosistema Hugging Face.
 - Uso educativo sobre el ciclo de vida de un modelo: ilustra como un repositorio puede publicarse sin model card, sin licencia y sin evaluacion.
 
 En ningun caso deberia desplegarse en atencion al cliente, generacion de codigo en produccion, pipelines de CI/CD o cualquier sistema con usuarios finales sin una evaluacion propia exhaustiva y sin una licencia que lo permita.
@@ -79,10 +79,10 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto declarado | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11 | no disponible (nombre sugiere ~7B) | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
-| Mistral 7B Instruct | ~7B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | disponible en su model card |
-| Zephyr 7B beta (HuggingFaceH4) | ~7B | 32 768 tokens | MIT | HuggingFace, ampliamente desplegado | disponible en su model card |
-| mistral-7b-sft-beta (HuggingFaceH4) | ~7B | 32 768 tokens | MIT | HuggingFace | disponible en su model card |
+| PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11 | no disponible (nombre sugiere ~7B) | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
+| Mistral 7B Instruct | ~7B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | disponible en su model card |
+| Zephyr 7B beta (HuggingFaceH4) | ~7B | 32 768 tokens | MIT | Hugging Face, ampliamente desplegado | disponible en su model card |
+| mistral-7b-sft-beta (HuggingFaceH4) | ~7B | 32 768 tokens | MIT | Hugging Face | disponible en su model card |
 
 La comparacion es estructural: frente a estos modelos, el checkpoint evaluado carece de licencia, de idiomas declarados, de contexto especificado y de cualquier evaluacion publicada, lo que lo hace no equiparable en terminos de madurez para produccion.
 
@@ -102,7 +102,7 @@ La comparacion es estructural: frente a estos modelos, el checkpoint evaluado ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11
+- Modelo en Hugging Face: https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11
 - Referencia citada en la plantilla (no describe el modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact#compute
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la busqueda web realizada.

@@ -63,12 +63,12 @@ No disponible. Este repositorio no es comparable con modelos de vision estableci
 - Checkpoint sin entrenar: `model.safetensors` es una inicializacion valida para pruebas de humo, no un modelo con pesos aprendidos. No debe usarse para inferencia real.
 - Sin auditoria de robustez ni equidad: el autor indica que el checkpoint no ha sido auditado para robustez, fairness ni transferencia de dominio.
 - Sin resultados de benchmarks: no hay ninguna metrica publicada que respalde capacidades del modelo.
-- Implementacion personalizada: las APIs genericas de carga (transformers, timm, etc.) requieren un adaptador explicito; no es compatible con el ecosistema estandar de HuggingFace sin modificaciones.
+- Implementacion personalizada: las APIs genericas de carga (transformers, timm, etc.) requieren un adaptador explicito; no es compatible con el ecosistema estandar de Hugging Face sin modificaciones.
 - Alcance limitado a vision: no procesa texto, ni soporta tool calling, agentes o razonamiento multimodal.
 - Riesgo de confundir inicializacion con modelo entrenado: cualquier resultado obtenido con este checkpoint debe documentarse como experimental y separarse de los valores por defecto del repositorio.
 - Licencia MIT con matiz: la licencia cubre el codigo, pero el autor advierte que deben revisarse los terminos de las fuentes de datos externas si se usan datasets de terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/justinsmithland/multitask
+- Repositorio en Hugging Face: https://huggingface.co/justinsmithland/multitask
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada.

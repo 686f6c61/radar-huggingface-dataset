@@ -31,7 +31,7 @@ El entrenamiento sigue en curso: de los 4680 pasos previstos solo se han subido 
 
 El adaptador se entrena con online IPO implementado en `risk_egpo/tt_omd.py`, bajo un esquema de optimización con riesgo entrópico de tau = 10, cobertura K = 6 (`--ypp_samples 6`) y corrección de sesgo a dos escalas con un estimador jackknife leave-one-out. El tamaño de paso de la parte two-timescale es gamma = 0,1. La inicialización es estrictamente desde cero sobre el modelo SFT: adaptador LoRA a cero, 1000 pasos de calentamiento, sin `--init_adapter` ni `--load_dir`, verificado en la línea de lanzamiento de cada trabajo. La generación durante el entrenamiento se limita a 64 tokens nuevos por muestra.
 
-El objetivo del diseño es desacoplar las celdas de la tabla cobertura x debiasing. Al no arrastrar ningún checkpoint de otras ejecuciones, cada celda K representa un brazo independiente, algo que la serie anterior no garantizaba. Junto a los adaptadores, el repositorio publica `training_dynamics.csv`, con las métricas por paso de registro de esta ejecución: loss, grad_norm (norma L2, calculada antes del recorte), kl, rewards/accuracies y rewards/margins. No se documentan innovaciones de inferencia (decodificación especulativa, atención lineal u otras) ni detalles sobre composición del dataset más allá de su identificador en HuggingFace.
+El objetivo del diseño es desacoplar las celdas de la tabla cobertura x debiasing. Al no arrastrar ningún checkpoint de otras ejecuciones, cada celda K representa un brazo independiente, algo que la serie anterior no garantizaba. Junto a los adaptadores, el repositorio publica `training_dynamics.csv`, con las métricas por paso de registro de esta ejecución: loss, grad_norm (norma L2, calculada antes del recorte), kl, rewards/accuracies y rewards/margins. No se documentan innovaciones de inferencia (decodificación especulativa, atención lineal u otras) ni detalles sobre composición del dataset más allá de su identificador en Hugging Face.
 
 ## Capacidades
 
@@ -78,7 +78,7 @@ El único dato cuantitativo publicado es el fichero `training_dynamics.csv`, que
 |---|---|---|---|---|---|
 | rat-lab/mh-fresh-K6-jk | Adaptador sobre base de 2B (no disponible el número exacto del adaptador) | No disponible | Adaptador LoRA PEFT (safetensors) | No disponible | 0 descargas, 0 likes; entrenamiento en curso |
 | vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT (modelo base) | Gemma 2 2B (unos 2.000 millones, según denominación) | No disponible en la información proporcionada | Pesos completos del modelo SFT | No disponible | No disponible |
-| Adaptadores LoRA de optimización de preferencias (DPO/IPO) sobre modelos de 2B en HuggingFace | No disponible | No disponible | Adaptador LoRA PEFT | Variable según autor | No disponible |
+| Adaptadores LoRA de optimización de preferencias (DPO/IPO) sobre modelos de 2B en Hugging Face | No disponible | No disponible | Adaptador LoRA PEFT | Variable según autor | No disponible |
 
 No se dispone de datos de rendimiento de ninguno de los elementos comparados, por lo que la comparación se limita a la naturaleza del artefacto, el tamaño y las condiciones de publicación. La diferencia funcional relevante frente al modelo base es que este repositorio no contiene un modelo autónomo: requiere cargar `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` y aplicar encima el adaptador.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-fresh-K6-jk
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-fresh-K6-jk
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Biblioteca PEFT (documentación): https://huggingface.co/docs/peft

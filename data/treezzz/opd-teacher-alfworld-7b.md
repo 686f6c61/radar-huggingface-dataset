@@ -43,7 +43,7 @@ La arquitectura es la misma que la de Qwen2.5-7B: un transformer causal con 28 c
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo no reporta métricas en tareas estándar como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos en ALFWorld. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la información disponible. El modelo no reporta métricas en tareas estándar como MMLU, HumanEval o GSM8K, ni comparaciones con otros modelos en ALFWorld. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -78,7 +78,7 @@ No se dispone de comparativas de rendimiento en ALFWorld ni en benchmarks genera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TreezzZ/opd-teacher-alfworld-7b
+- Repositorio Hugging Face: https://huggingface.co/TreezzZ/opd-teacher-alfworld-7b
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Documentación de Qwen: https://qwen.readthedocs.io/en/latest/

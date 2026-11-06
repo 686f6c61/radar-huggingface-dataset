@@ -4,7 +4,7 @@
 
 `mkornreich/coolconcepts-135m` es un modelo de lenguaje de 135 millones de parametros desarrollado por Menachem Kornreich, orientado a la generacion de conceptos creativos. El nombre del modelo y el proyecto asociado ("Cool Concepts") sugieren una funcion de generacion de ideas originales, probablemente inspirada en dinamicas de entropia y economia inteligente, segun la pagina del autor. El modelo esta etiquetado con los tags `onnx` y `llama`, lo que indica que sigue la arquitectura Llama y que se distribuye en formato ONNX para facilitar su despliegue en entornos ligeros.
 
-Con un tamano de repositorio de solo 0,1 GB, es un modelo extremadamente compacto, comparable a la familia SmolLM de HuggingFace (que incluye una variante de 135M). Su relevancia radica en que puede ejecutarse integramente en el navegador mediante WebLLM, sin servidor ni llamadas a API, como demuestra el propio autor en una publicacion de LinkedIn. A fecha de su publicacion (agosto de 2026), no registra descargas, lo que indica que es un proyecto reciente y de ambito experimental.
+Con un tamano de repositorio de solo 0,1 GB, es un modelo extremadamente compacto, comparable a la familia SmolLM de Hugging Face (que incluye una variante de 135M). Su relevancia radica en que puede ejecutarse integramente en el navegador mediante WebLLM, sin servidor ni llamadas a API, como demuestra el propio autor en una publicacion de LinkedIn. A fecha de su publicacion (agosto de 2026), no registra descargas, lo que indica que es un proyecto reciente y de ambito experimental.
 
 No se dispone de informacion sobre la licencia, los idiomas soportados, el pipeline de uso ni los datos de entrenamiento, por lo que esta ficha se basa exclusivamente en los metadatos publicos y las referencias del autor.
 
@@ -23,7 +23,7 @@ No se dispone de informacion sobre la licencia, los idiomas soportados, el pipel
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es de tipo Llama, segun los tags del repositorio, lo que implica un transformer decoder-only con atencion causal. El tamano de 135 millones de parametros lo situa en la categoria de modelos pequenos, similar a SmolLM-135M de HuggingFace, que podria servir como base o referencia. El modelo se distribuye en formato ONNX, lo que permite su ejecucion en multiples runtimes y entornos, incluido el navegador via WebLLM.
+La arquitectura es de tipo Llama, segun los tags del repositorio, lo que implica un transformer decoder-only con atencion causal. El tamano de 135 millones de parametros lo situa en la categoria de modelos pequenos, similar a SmolLM-135M de Hugging Face, que podria servir como base o referencia. El modelo se distribuye en formato ONNX, lo que permite su ejecucion en multiples runtimes y entornos, incluido el navegador via WebLLM.
 
 No se dispone de informacion sobre el proceso de entrenamiento: ni el numero de tokens, ni la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o instruccion supervisada. Tampoco se conocen innovaciones tecnicas especificas mas alla de la exportacion a ONNX. El autor menciona en su pagina de proyecto conceptos como "Dynamic Entropy" y "Intelligent Economics", que podrian referirse al dominio de generacion de conceptos, pero no se detalla la metodologia.
 
@@ -78,7 +78,7 @@ La comparativa se basa en modelos de tamano similar. SmolLM-135M es la alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mkornreich/coolconcepts-135m
+- Repositorio Hugging Face: https://huggingface.co/mkornreich/coolconcepts-135m
 - Pagina del proyecto del autor: https://mkornreich.me/projects/coolconcepts/
 - Publicacion de LinkedIn del autor (menciona WebLLM): https://www.linkedin.com/posts/mkornreich_webllm-browserai-fakescience-activity-7494788644151431168-xEPo
 - Referencia de arquitectura similar (SmolLM-135M): https://huggingface.co/HuggingFaceTB/SmolLM-135M

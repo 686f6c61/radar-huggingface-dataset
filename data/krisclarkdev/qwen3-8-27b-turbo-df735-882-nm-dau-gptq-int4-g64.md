@@ -77,10 +77,10 @@ No se proporcionan métricas de latencia, throughput ni comparación numérica c
 
 | Modelo | Parametros | Contexto | Cuantizacion | Carga en vLLM | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este checkpoint (krisclarkdev, GPTQ Int4 g64) | ~27,8 B | 262144 nativos | GPTQ Int4, w4a16, g64 simetrico, MTP sin cuantizar | Si, GPTQ estandar, CUDA y XPU, sin parches | Apache-2.0 | HuggingFace, 20,1 GB |
-| `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU` (upstream) | ~27,8 B | 262144 nativos | BF16 (~55,6 GB) y GGUF | Si en BF16, con mucho mas peso | Apache-2.0 | HuggingFace |
-| Cuantizaciones Int4 comunitarias del mismo finetune | ~27,8 B | no disponible | Int4 con `lm_head` en int8 o `auto-round` | No: fallo de kernel `uint8b128` o `quant_method` no registrado | no disponible | HuggingFace |
-| `Qwen/Qwen3.8-27B` (modelo base) | ~27,8 B (derivado) | 262144 nativos | BF16 y otras | Si en BF16 | Apache-2.0 | HuggingFace |
+| Este checkpoint (krisclarkdev, GPTQ Int4 g64) | ~27,8 B | 262144 nativos | GPTQ Int4, w4a16, g64 simetrico, MTP sin cuantizar | Si, GPTQ estandar, CUDA y XPU, sin parches | Apache-2.0 | Hugging Face, 20,1 GB |
+| `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU` (upstream) | ~27,8 B | 262144 nativos | BF16 (~55,6 GB) y GGUF | Si en BF16, con mucho mas peso | Apache-2.0 | Hugging Face |
+| Cuantizaciones Int4 comunitarias del mismo finetune | ~27,8 B | no disponible | Int4 con `lm_head` en int8 o `auto-round` | No: fallo de kernel `uint8b128` o `quant_method` no registrado | no disponible | Hugging Face |
+| `Qwen/Qwen3.8-27B` (modelo base) | ~27,8 B (derivado) | 262144 nativos | BF16 y otras | Si en BF16 | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar rendimiento entre estas variantes; la única métrica publicada es la perplejidad de este checkpoint.
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/krisclarkdev/Qwen3.8-27B-TURBO-DF735-882-NM-DAU-GPTQ-Int4-g64
+- Hugging Face (este checkpoint): https://huggingface.co/krisclarkdev/Qwen3.8-27B-TURBO-DF735-882-NM-DAU-GPTQ-Int4-g64
 - Modelo base del finetune: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo base original de Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Papers, blogs, repositorios y demos adicionales: no disponibles. La búsqueda web no devolvió resultados relacionados con este modelo.

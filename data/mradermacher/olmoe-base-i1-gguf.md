@@ -80,7 +80,7 @@ La comparativa muestra que OLMoE ofrece el menor coste por token de entre los Mo
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/olmoe-base-i1-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/olmoe-base-i1-GGUF)
 - [Modelo base safetensors](https://huggingface.co/ddidacus/olmoe-base)
 - [Paper OLMoE](https://arxiv.org/abs/2409.02060)
 - [Repositorio GitHub de OLMoE](https://github.com/allenai/OLMoE)

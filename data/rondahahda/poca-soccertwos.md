@@ -26,7 +26,7 @@ El rendimiento declarado es practicamente neutro: una recompensa media de -0.006
 | Tamano del repositorio | 0,0 GB |
 | Libreria | ml-agents |
 | Tarea (pipeline) | reinforcement-learning |
-| Fecha de publicacion | 25 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 25 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -46,7 +46,7 @@ La evaluacion se realizo con la politica ONNX exportada, con acciones determinis
 
 ## Casos de uso
 
-- Formacion practica en aprendizaje por refuerzo multi-agente: el modelo acompana los ejercicios de las unidades 5 y 7 del curso de deep RL de HuggingFace, de modo que un alumno puede reproducir el entrenamiento, comparar resultados y entender el efecto del numero de pasos en la calidad final de la politica.
+- Formacion practica en aprendizaje por refuerzo multi-agente: el modelo acompana los ejercicios de las unidades 5 y 7 del curso de deep RL de Hugging Face, de modo que un alumno puede reproducir el entrenamiento, comparar resultados y entender el efecto del numero de pasos en la calidad final de la politica.
 - Punto de partida para autojuego prolongado: cargando `checkpoint.pt` y `configuration.yaml` se puede continuar el entrenamiento durante ordenes de magnitud mas pasos y comprobar si la recompensa media deja de ser practicamente cero.
 - Investigacion sobre asignacion de credito entre companeros: SoccerTwos combina recompensa de equipo e individual, por lo que la politica sirve como sujeto de estudio de como el entrenador POCA reparte la contribucion en un escenario 2 contra 2.
 - Linea base negativa en evaluaciones: al tener una recompensa media de -0.006180000305175781 con desviacion de 0.6227306729380327, resulta util como referencia de "politica no entrenada" frente a la que medir mejoras de otros agentes en el mismo entorno.
@@ -80,7 +80,7 @@ Detalles de la evaluacion segun el autor: politica ONNX exportada, acciones dete
 | akanametov/MLAgents-poca-SoccerTwos | akanametov | ML-Agents-SoccerTwos | POCA (ML-Agents) | no disponible | no disponible | no disponible en la informacion recopilada |
 | aiartwork/poca-SoccerTwos | aiartwork | ML-Agents-SoccerTwos | POCA (ML-Agents) | no disponible | no disponible | no disponible en la informacion recopilada |
 
-Los tres modelos pertenecen al mismo ejercicio del curso de deep RL de HuggingFace y comparten el entorno, la libreria y el esquema de entrenamiento. La informacion disponible no permite comparar parametros, contexto ni rendimiento cuantitativo entre ellos, ya que solo el modelo de rondahahda publica metricas.
+Los tres modelos pertenecen al mismo ejercicio del curso de deep RL de Hugging Face y comparten el entorno, la libreria y el esquema de entrenamiento. La informacion disponible no permite comparar parametros, contexto ni rendimiento cuantitativo entre ellos, ya que solo el modelo de rondahahda publica metricas.
 
 ## Limitaciones y advertencias
 
@@ -97,7 +97,7 @@ Los tres modelos pertenecen al mismo ejercicio del curso de deep RL de HuggingFa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rondahahda/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/rondahahda/poca-SoccerTwos
 - Modelo comparable de akanametov: https://huggingface.co/akanametov/MLAgents-poca-SoccerTwos
 - Modelo comparable de aiartwork: https://huggingface.co/aiartwork/poca-SoccerTwos
 - Ficha en aibase (variante 1927650001010561024): https://model.aibase.com/models/details/1927650001010561024

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pumpkn-1 es un modelo de lenguaje de tipo transformer, entrenado desde cero (*from-scratch*) por el usuario FatalMistake02 y publicado en HuggingFace bajo licencia MIT. Se trata de un experimento temprano de entrenamiento con un tamaño extremadamente reducido: 5.082.368 parámetros totales (aproximadamente 5,08 millones), lo que lo sitúa varios órdenes de magnitud por debajo de los modelos de lenguaje convencionales. Su ventana de contexto es de solo 256 tokens y está diseñado exclusivamente para inglés.
+pumpkn-1 es un modelo de lenguaje de tipo transformer, entrenado desde cero (*from-scratch*) por el usuario FatalMistake02 y publicado en Hugging Face bajo licencia MIT. Se trata de un experimento temprano de entrenamiento con un tamaño extremadamente reducido: 5.082.368 parámetros totales (aproximadamente 5,08 millones), lo que lo sitúa varios órdenes de magnitud por debajo de los modelos de lenguaje convencionales. Su ventana de contexto es de solo 256 tokens y está diseñado exclusivamente para inglés.
 
 El modelo se distribuye en formato GGUF con cuantización F16 y está etiquetado como experimental. El propio autor lo describe sin ambages como «absolute garbage» y advierte de que se trata de un experimento temprano de entrenamiento en el que deben esperarse respuestas incorrectas y sinsentidos. No resuelve ningún problema práctico de producción; su interés es puramente educativo o de investigación sobre el proceso de entrenamiento de modelos desde cero.
 
@@ -35,11 +35,11 @@ Tampoco se han publicado datos sobre el volumen de tokens de entrenamiento, la c
 - No se documenta soporte de agentes ni razonamiento multi-paso.
 - No se documenta capacidad multilingüe: solo inglés.
 - No dispone de visión, audio ni modo de razonamiento explícito (*thinking mode*).
-- Compatible con endpoints de inferencia (etiqueta `endpoints_compatible`), lo que facilita su despliegue en infraestructuras que acepten el formato estándar de HuggingFace.
+- Compatible con endpoints de inferencia (etiqueta `endpoints_compatible`), lo que facilita su despliegue en infraestructuras que acepten el formato estándar de Hugging Face.
 
 ## Casos de uso
 
-- Docencia sobre pipelines de entrenamiento: sirve para ilustrar paso a paso cómo se entrena un transformer desde cero, se convierte a GGUF y se publica en HuggingFace, sin necesidad de GPUs de gama alta.
+- Docencia sobre pipelines de entrenamiento: sirve para ilustrar paso a paso cómo se entrena un transformer desde cero, se convierte a GGUF y se publica en Hugging Face, sin necesidad de GPUs de gama alta.
 - Pruebas de infraestructura de inferencia: al ser un GGUF F16 de apenas unos megabytes, permite validar configuraciones de llama.cpp, Ollama u otros runners antes de desplegar modelos mayores.
 - Experimentos de tokenización: útil para estudiar cómo se comporta un vocabulario y un tokenizador concretos en un modelo de contexto muy corto (256 tokens).
 - Reproducibilidad de investigación: como ejemplo mínimo de un experimento *from-scratch* con licencia permisiva, puede servir de base para comparar metodologías de entrenamiento a pequeña escala.
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: inferior a 100 MB en F16 (5,08 M de parámetros × 2 bytes ≈ 10 MB de pesos, más overhead de contexto y runtime).
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM; también funciona en CPU sin problema.
 - Cabe holgadamente en cualquier GPU de consumo, incluida una GTX 1050 o una iGPU moderna; también en Raspberry Pi y dispositivos embebidos.
-- Opciones de despliegue: llama.cpp, Ollama (previa importación del GGUF), y runners compatibles con endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp, Ollama (previa importación del GGUF), y runners compatibles con endpoints de Hugging Face.
 - Latencia y throughput: no disponibles; por el tamaño del modelo, la latencia estará dominada por el overhead del runtime más que por el cómputo.
 
 ## Comparativa con modelos similares
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pumpkn-1 | 5,08 M | 256 | MIT | HuggingFace (GGUF) |
+| pumpkn-1 | 5,08 M | 256 | MIT | Hugging Face (GGUF) |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -80,5 +80,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FatalMistake02/pumpkn-1
+- Modelo en Hugging Face: https://huggingface.co/FatalMistake02/pumpkn-1
 - Créditos del dataset (referenciado en la model card): https://huggingface.co/FatalMistake02/pumpkn-1/blob/main/ATTRIBUTION.md

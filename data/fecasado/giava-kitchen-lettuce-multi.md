@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Giava-kitchen-lettuce-multi es una política robótica (policy) entrenada para controlar un brazo robótico en una tarea concreta de manipulación: trasladar lechuga a un plato en un entorno de cocina. No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un modelo de imitación (imitation learning) para robótica, desarrollado por el usuario fecasado y publicado en HuggingFace bajo la librería LeRobot de HuggingFace. La arquitectura declarada es `gaze_flow_matching`, una variante de flow matching aplicada a la generación de acciones condicionada por observaciones visuales y posiblemente por la mirada (gaze) del operador.
+Giava-kitchen-lettuce-multi es una política robótica (policy) entrenada para controlar un brazo robótico en una tarea concreta de manipulación: trasladar lechuga a un plato en un entorno de cocina. No es un modelo de lenguaje ni un modelo generativo de propósito general, sino un modelo de imitación (imitation learning) para robótica, desarrollado por el usuario fecasado y publicado en Hugging Face bajo la librería LeRobot de Hugging Face. La arquitectura declarada es `gaze_flow_matching`, una variante de flow matching aplicada a la generación de acciones condicionada por observaciones visuales y posiblemente por la mirada (gaze) del operador.
 
 El modelo tiene 235.899.950 parámetros (aproximadamente 236 millones) y un tamaño de repositorio de 0,9 GB en formato safetensors. Está entrenado sobre el dataset `fecasado/lettuce-to-plate-320x240`, que sugiere observaciones visuales de resolución 320x240 píxeles, y está pensado para ejecutarse con el stack LeRobot, que proporciona utilidades de entrenamiento, evaluación y despliegue en robots como el SO-100 follower.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| giava-kitchen-lettuce-multi | 235,9 M | no disponible | Manipulación robótica (lechuga a plato) | Apache 2.0 | HuggingFace, LeRobot |
+| giava-kitchen-lettuce-multi | 235,9 M | no disponible | Manipulación robótica (lechuga a plato) | Apache 2.0 | Hugging Face, LeRobot |
 | ACT (Action Chunking Transformer) | no disponible | no disponible | Políticas de imitación visuomotoras | MIT (implementación LeRobot) | LeRobot, código abierto |
 | Diffusion Policy | no disponible | no disponible | Políticas de imitación basadas en difusión | MIT (implementación original) | Repositorios académicos |
-| OpenVLA | ~7 B | no disponible | Manipulación generalista con VLA | no disponible en esta ficha | HuggingFace |
+| OpenVLA | ~7 B | no disponible | Manipulación generalista con VLA | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada; la comparación se limita a parámetros, licencia y disponibilidad. Las cifras de ACT, Diffusion Policy y OpenVLA no proceden de la información proporcionada y deben verificarse en sus respectivas fuentes.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/giava-kitchen-lettuce-multi
+- Modelo en Hugging Face: https://huggingface.co/fecasado/giava-kitchen-lettuce-multi
 - Dataset asociado: https://huggingface.co/datasets/fecasado/lettuce-to-plate-320x240
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

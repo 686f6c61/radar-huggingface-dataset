@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Eneskaya96/coffee-order-blunt | 4B (base) + adaptador | 32k | Apache-2.0 | HuggingFace |
-| Qwen3-4B-Instruct-2507 (base) | 4B | 32k | Apache-2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | HuggingFace |
-| Phi-3.5-mini-instruct | 3.8B | 128k | MIT | HuggingFace |
+| Eneskaya96/coffee-order-blunt | 4B (base) + adaptador | 32k | Apache-2.0 | Hugging Face |
+| Qwen3-4B-Instruct-2507 (base) | 4B | 32k | Apache-2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3B | 128k | Llama 3.2 Community License | Hugging Face |
+| Phi-3.5-mini-instruct | 3.8B | 128k | MIT | Hugging Face |
 
 El modelo se sitúa en la misma categoría que otros instruct models de 3-4B parámetros. Frente a Llama-3.2-3B y Phi-3.5-mini, Qwen3-4B suele ofrecer mejor rendimiento en razonamiento y código, aunque la falta de benchmarks específicos para este adaptador impide una comparación cuantitativa. La ventaja principal de este adaptador es su tamaño reducido y la licencia Apache-2.0, que facilita su integración en productos comerciales sin coste de licencia.
 
@@ -77,7 +77,7 @@ El modelo se sitúa en la misma categoría que otros instruct models de 3-4B par
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eneskaya96/coffee-order-blunt
-- Perfil de HuggingFace del autor: https://huggingface.co/Eneskaya96
+- Hugging Face: https://huggingface.co/Eneskaya96/coffee-order-blunt
+- Perfil de Hugging Face del autor: https://huggingface.co/Eneskaya96
 - GitHub del autor: https://github.com/eneskaya96/
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

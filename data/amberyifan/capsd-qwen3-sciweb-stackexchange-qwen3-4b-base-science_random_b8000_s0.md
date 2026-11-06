@@ -57,10 +57,10 @@ No se han publicado resultados de benchmarks en la información disponible. La s
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-Base (original) | 4,02B | 32 768 tokens | Apache 2.0 | HuggingFace |
-| AmberYifan/capsd-qwen3-sciweb-stackexchange (este modelo) | 4,02B | no disponible | other | HuggingFace |
-| Llama-3.2-3B | 3,21B | 128 000 tokens | Llama 3.2 Community License | HuggingFace |
-| Mistral-7B-v0.3 | 7,24B | 32 768 tokens | Apache 2.0 | HuggingFace |
+| Qwen3-4B-Base (original) | 4,02B | 32 768 tokens | Apache 2.0 | Hugging Face |
+| AmberYifan/capsd-qwen3-sciweb-stackexchange (este modelo) | 4,02B | no disponible | other | Hugging Face |
+| Llama-3.2-3B | 3,21B | 128 000 tokens | Llama 3.2 Community License | Hugging Face |
+| Mistral-7B-v0.3 | 7,24B | 32 768 tokens | Apache 2.0 | Hugging Face |
 
 La comparación se limita a características generales, ya que no hay datos de rendimiento para este fine-tuning. El modelo base Qwen3-4B tiene licencia Apache 2.0, pero el fine-tuning cambia a `other`, lo que puede implicar restricciones adicionales. En cuanto a contexto, el modelo base soporta 32K, pero este fine-tuning no lo confirma; si se mantiene, sería similar a Mistral-7B y superior a Llama-3.2-3B en longitud de contexto.
 
@@ -76,7 +76,7 @@ La comparación se limita a características generales, ya que no hay datos de r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_random_b8000_s0
+- Repositorio Hugging Face: https://huggingface.co/AmberYifan/capsd-qwen3-sciweb-stackexchange-Qwen3-4B-Base-science_random_b8000_s0
 - Informe técnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3
 - Guía completa de Qwen3 (blog): https://insiderllm.com/guides/qwen3-complete-guide/

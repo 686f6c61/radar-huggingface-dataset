@@ -112,7 +112,7 @@ No se dispone de datos de otros modelos de la misma categoria (8B con contexto d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-Blackwell-Rubin
+- Repositorio Hugging Face: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-Blackwell-Rubin
 - Modelo base BF16: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo de origen: https://huggingface.co/google/gemma-4-E4B-it
 - Variante GGUF: https://huggingface.co/arvedo/NVIDIA-Nemotron-3.5-Bolt-E4B-NVFP4-GGUF

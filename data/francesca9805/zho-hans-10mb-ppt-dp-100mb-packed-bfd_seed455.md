@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (SFT) del modelo base `goldfish-models/zho_hans_10mb`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generación de texto de 39.087.104 parámetros (39 M), etiquetado con la arquitectura `gpt2`, lo que apunta a un transformer decoder-only de tipo GPT-2. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors.
+El modelo `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455` es un ajuste fino (SFT) del modelo base `goldfish-models/zho_hans_10mb`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generación de texto de 39.087.104 parámetros (39 M), etiquetado con la arquitectura `gpt2`, lo que apunta a un transformer decoder-only de tipo GPT-2. El repositorio ocupa 0,1 GB y contiene pesos en formato safetensors.
 
 El modelo se ha entrenado con la librería TRL (versión 0.23.0) mediante supervisión fina (SFT), y su nombre codifica el experimento concreto: `zho-hans` (chino simplificado), `10mb` (tamaño del modelo o del corpus base), `ppt-Dp-100mb-packed-bfd_seed455`. El run de entrenamiento está registrado en un proyecto de Weights & Biases llamado `new-tokenizers`, lo que sugiere que forma parte de una línea de experimentación sobre tokenizadores y mezclas de datos para lenguas de bajos recursos.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455` | 39,09 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| `goldfish-models/zho_hans_10mb` (modelo base) | no disponible | no disponible | no disponible | HuggingFace |
-| GPT-2 small (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT (según su model card) | HuggingFace, ampliamente utilizado |
-| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache 2.0 (según su model card) | HuggingFace, ampliamente utilizado |
+| `francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455` | 39,09 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| `goldfish-models/zho_hans_10mb` (modelo base) | no disponible | no disponible | no disponible | Hugging Face |
+| GPT-2 small (`openai-community/gpt2`) | 124 M | 1024 tokens | MIT (según su model card) | Hugging Face, ampliamente utilizado |
+| DistilGPT-2 (`distilbert/distilgpt2`) | 82 M | 1024 tokens | Apache 2.0 (según su model card) | Hugging Face, ampliamente utilizado |
 
 La comparación con GPT-2 small y DistilGPT-2 es únicamente estructural: no existen datos de rendimiento del modelo objeto de esta ficha que permitan contrastar calidad de generación, perplejidad o capacidades lingüísticas. Los datos de los modelos comparados corresponden a sus model cards públicas y pueden variar; se indican como referencia de escala, no como resultado de una evaluación conjunta.
 
@@ -86,7 +86,7 @@ La comparación con GPT-2 small y DistilGPT-2 es únicamente estructural: no exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/zho_hans_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/f7kmmtss
 - Repositorio de TRL: https://github.com/huggingface/trl

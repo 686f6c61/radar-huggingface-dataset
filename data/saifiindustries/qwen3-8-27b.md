@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de lenguaje causal multimodal, de tipo denso y de código abierto, desarrollado por el equipo Qwen de Alibaba. Se presenta como la generación más capaz de la familia abierta Qwen hasta la fecha, construido sobre la base arquitectónica de Qwen3.5 y con mejoras sustanciales en codificación, trabajo profesional, investigación y tareas agénticas de largo horizonte. El modelo es nativo en visión-lenguaje, lo que le permite comprender imágenes y vídeos, y ofrece un control flexible del pensamiento: el modo de razonamiento está activado por defecto y puede desactivarse por petición, ajustando la profundidad de razonamiento mediante el parámetro `reasoning_effort`.
 
-Con 27.781.427.952 parámetros totales (aproximadamente 27B), es un modelo denso de despliegue relativamente compacto si se compara con modelos de mayor escala. Dispone de una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000 tokens, lo que le hace especialmente adecuado para tareas de agente con contextos prolongados. El repositorio de HuggingFace proporcionado es SAIFIINDUSTRIES/Qwen3.8-27B, aunque el modelo original pertenece al equipo Qwen y existe también en el repositorio oficial Qwen/Qwen3.8-27B.
+Con 27.781.427.952 parámetros totales (aproximadamente 27B), es un modelo denso de despliegue relativamente compacto si se compara con modelos de mayor escala. Dispone de una ventana de contexto nativa de 262.144 tokens, extensible hasta 1.000.000 tokens, lo que le hace especialmente adecuado para tareas de agente con contextos prolongados. El repositorio de Hugging Face proporcionado es SAIFIINDUSTRIES/Qwen3.8-27B, aunque el modelo original pertenece al equipo Qwen y existe también en el repositorio oficial Qwen/Qwen3.8-27B.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ La información disponible incluye una tabla de benchmarks que compara Qwen3.8-2
 
 ## Requisitos de hardware
 
-- El repositorio en HuggingFace tiene un tamaño de 55.6 GB en formato safetensors, lo que sugiere pesos en precisión FP16 o BF16. Para inferencia en esta precisión se necesitan al menos 56 GB de VRAM, más el overhead de las activaciones y el runtime.
+- El repositorio en Hugging Face tiene un tamaño de 55.6 GB en formato safetensors, lo que sugiere pesos en precisión FP16 o BF16. Para inferencia en esta precisión se necesitan al menos 56 GB de VRAM, más el overhead de las activaciones y el runtime.
 - GPU recomendada para inferencia en FP16: NVIDIA A100 80GB o H100 80GB. Una A6000 48GB podría funcionar de forma ajustada, pero no está garantizado.
 - En GPUs de consumo (por ejemplo, RTX 4090 con 24GB) no es posible cargar el modelo en FP16; se requeriría cuantización. No se especifican tipos de cuantización en la información disponible, por lo que no se pueden confirmar opciones de despliegue en hardware doméstico.
 - Opciones de despliegue confirmadas: Hugging Face Transformers, vLLM, SGLang y TokenSpeed, según el README. También se menciona una versión alojada en Qwen Cloud con 1M de contexto y herramientas integradas.
@@ -62,7 +62,7 @@ La información disponible incluye una tabla de benchmarks que compara Qwen3.8-2
 
 | Modelo | Parametros | Contexto | Vision-lenguaje | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27B | 262.144 (ext. 1M) | Sí | Apache 2.0 | Abierto (HuggingFace) |
+| Qwen3.8-27B | 27B | 262.144 (ext. 1M) | Sí | Apache 2.0 | Abierto (Hugging Face) |
 | Qwen3.6-27B | 27B | No disponible | No disponible | No disponible | No disponible |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible | No disponible |
@@ -82,7 +82,7 @@ La comparativa se basa únicamente en los nombres de modelos citados en los benc
 
 ## Enlaces
 
-- Repositorio en HuggingFace (proporcionado): https://huggingface.co/SAIFIINDUSTRIES/Qwen3.8-27B
-- Repositorio oficial en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio en Hugging Face (proporcionado): https://huggingface.co/SAIFIINDUSTRIES/Qwen3.8-27B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de Qwen Cloud para el modelo: https://www.qwencloud.com/models/qwen3.8-27b

@@ -85,7 +85,7 @@ La comparativa con otros modelos de la misma categoría (9B) es limitada porque 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xidrug/qwen3.5-9b-kh-trade-logistics-merged-v1
+- Hugging Face: https://huggingface.co/xidrug/qwen3.5-9b-kh-trade-logistics-merged-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto (según el autor): disponible en el GitHub del proyecto, pero no se proporciona URL en la información disponible.
 - Documentación de Qwen3.5: https://huggingface.co/docs/transformers/model_doc/qwen3_5

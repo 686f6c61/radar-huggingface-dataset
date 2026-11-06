@@ -40,7 +40,7 @@ El entrenamiento se realizó con 60.000 puntos de entrenamiento y 10.000 de vali
 
 - Diseño conceptual de motores térmicos: el modelo permite estimar rápidamente la eficiencia máxima alcanzable y la destrucción de exergía para un par de temperaturas de focos, útil en fases iniciales de diseño de ciclos de potencia.
 - Optimización de procesos industriales: en plantas de cogeneración o recuperación de calor, se puede usar para explorar el impacto de variaciones de temperatura en la eficiencia global y en las pérdidas exergéticas, sin necesidad de simulaciones CFD costosas.
-- Educación en termodinámica: como herramienta didáctica interactiva (el Space de HuggingFace lo demuestra) para visualizar cómo cambian la entropía generada y la eficiencia con las temperaturas de los reservorios, complementando las fórmulas analíticas.
+- Educación en termodinámica: como herramienta didáctica interactiva (el Space de Hugging Face lo demuestra) para visualizar cómo cambian la entropía generada y la eficiencia con las temperaturas de los reservorios, complementando las fórmulas analíticas.
 - Verificación de modelos de simulación: el PINN puede servir como un "oráculo" rápido para comprobar si los resultados de simulaciones más complejas (por ejemplo, dinámica de fluidos computacional) respetan los límites termodinámicos.
 - Integración en pipelines de optimización multiobjetivo: al ser tan ligero, puede evaluarse millones de veces en segundos, permitiendo su uso en algoritmos genéticos o de optimización bayesiana para encontrar combinaciones de temperaturas que maximicen eficiencia.
 - Prototipado de sistemas de control predictivo: en aplicaciones de gestión térmica en tiempo real, el modelo puede predecir la eficiencia instantánea de un motor basándose en temperaturas medidas, alimentando controladores que ajusten parámetros operativos.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, etc.) p
 - VRAM estimada: menos de 1 MB en inferencia (el modelo tiene ~4.700 parámetros, en float32 ocupa ~19 KB; el checkpoint completo es de tamaño despreciable).
 - GPU recomendada: ninguna necesaria; cualquier CPU moderna ejecuta la inferencia en microsegundos. Si se usa GPU, cualquier modelo (incluso integradas) es suficiente.
 - Compatibilidad con hardware de consumo: sí, funciona en Raspberry Pi, microcontroladores con soporte PyTorch, o incluso en navegador si se exporta a ONNX o WebAssembly.
-- Opciones de despliegue: PyTorch nativo, exportación a ONNX para inferencia en otros runtimes, o integración en el Space de HuggingFace (ya disponible). No aplica vLLM, llama.cpp ni Ollama, al no ser un modelo de lenguaje.
+- Opciones de despliegue: PyTorch nativo, exportación a ONNX para inferencia en otros runtimes, o integración en el Space de Hugging Face (ya disponible). No aplica vLLM, llama.cpp ni Ollama, al no ser un modelo de lenguaje.
 - Latencia y throughput: no se han publicado mediciones formales, pero dado el tamaño, se puede estimar una latencia por inferencia inferior a 1 ms en CPU moderna y un throughput de decenas de miles de inferencias por segundo.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de información sobre otros PINNs específicamente orientados a la
 
 | Modelo / enfoque | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cluster-09-exergy-field-pinn` | ~4.700 | No aplica | Error <1% vs. identidades exactas | MIT | HuggingFace |
+| `cluster-09-exergy-field-pinn` | ~4.700 | No aplica | Error <1% vs. identidades exactas | MIT | Hugging Face |
 | Fórmula de Carnot (analítica) | 0 | No aplica | Exacta para límite ideal | Dominio público | Universal |
 | Fórmula de Curzon-Ahlborn (analítica) | 0 | No aplica | Exacta para potencia máxima | Dominio público | Universal |
 
@@ -90,7 +90,7 @@ La ventaja del PINN frente a las fórmulas analíticas es que proporciona una sa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dave1368/cluster-09-exergy-field-pinn
+- Modelo en Hugging Face: https://huggingface.co/dave1368/cluster-09-exergy-field-pinn
 - Space interactivo (demo): https://huggingface.co/spaces/dave1368/cluster-09-thermal-exergy
 - Framework de orquestación (referenciado en la model card): https://huggingface.co/spaces/dave1368/cluster-09-thermal-exergy (mismo enlace, incluye documentación del framework)
 - Artículo de referencia sobre PINNs (contexto general, no específico del modelo): https://link.springer.com/article/10.1007/s10462-025-11322-7

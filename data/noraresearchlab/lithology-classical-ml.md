@@ -88,9 +88,9 @@ La informacion disponible solo permite comparar las tres variantes incluidas en 
 
 | Modelo | Parametros | Contexto | Exactitud por profundidad (66 pozos) | F1 macro (66 pozos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Random Forest (este repositorio) | No disponible | No aplica | 0,7914 | 0,6279 | MIT | HuggingFace, 0 descargas |
-| XGBoost (este repositorio) | No disponible | No aplica | 0,7271 | 0,5757 | MIT | HuggingFace, 0 descargas |
-| LightGBM (este repositorio) | No disponible | No aplica | 0,6936 | 0,5321 | MIT | HuggingFace, 0 descargas |
+| Random Forest (este repositorio) | No disponible | No aplica | 0,7914 | 0,6279 | MIT | Hugging Face, 0 descargas |
+| XGBoost (este repositorio) | No disponible | No aplica | 0,7271 | 0,5757 | MIT | Hugging Face, 0 descargas |
+| LightGBM (este repositorio) | No disponible | No aplica | 0,6936 | 0,5321 | MIT | Hugging Face, 0 descargas |
 | Otros modelos de clasificacion de litologia | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -109,14 +109,14 @@ La informacion disponible solo permite comparar las tres variantes incluidas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NoraResearchLab/lithology-classical-ml
+- Modelo en Hugging Face: https://huggingface.co/NoraResearchLab/lithology-classical-ml
 - Dataset de entrenamiento (400 pozos): https://huggingface.co/datasets/NoraResearchLab/Lithology-Training-Dataset
 - Benchmark independiente de secuencias (66 pozos): https://huggingface.co/datasets/NoraResearchLab/lithology-sequence-benchmark
-- Organizacion en HuggingFace: https://huggingface.co/NoraResearchLab
+- Organizacion en Hugging Face: https://huggingface.co/NoraResearchLab
 - Repositorio GitHub: https://github.com/Nora-Research-Lab
 - LinkedIn: https://www.linkedin.com/company/nora-research-lab
 - X (Twitter): https://x.com/noraresearchlab
 - Sitio web: https://noraresearchlab.site
 - Imagen de evaluacion de los modelos: https://huggingface.co/NoraResearchLab/lithology-classical-ml/resolve/main/download%20%283%29.png
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su organizacion, papers asociados ni repositorios de codigo adicionales. Los unicos enlaces verificables son los declarados en la model card y en los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su organizacion, papers asociados ni repositorios de codigo adicionales. Los unicos enlaces verificables son los declarados en la model card y en los metadatos de Hugging Face.

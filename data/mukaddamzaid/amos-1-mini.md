@@ -18,7 +18,7 @@ El modelo parte de los encoders Ettin-encoder-400m (texto) y SigLIP2-base-patch1
 | Idiomas soportados | Inglés (`en`) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | PyTorch (`model.pt`) y `config.json`; no se distribuyen safetensors ni GGUF |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Entrada | Texto, JSON e imágenes |
 | Salida | Probabilidad por respuesta permitida; no texto libre |
 
@@ -95,7 +95,7 @@ Con priors por pregunta ajustados sobre el train split del benchmark y aplicados
 
 | Modelo | Parámetros | Contexto | Accuracy en typed-decisions | KL ↓ | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Amos 1 mini | ~0,5B | 9.216 tokens | 64,6% | 0,225 | Apache 2.0 | Pesos abiertos en HuggingFace y API alojada |
+| Amos 1 mini | ~0,5B | 9.216 tokens | 64,6% | 0,225 | Apache 2.0 | Pesos abiertos en Hugging Face y API alojada |
 | Microsoft-Decision-1 | no disponible | no disponible | 79,5% | 0,318 | closed weights, según la model card | no disponible |
 | Decider 1 | no disponible | no disponible | 76,8% (cifra del fabricante) | 0,096 | no disponible | no disponible |
 | Perplexity Decider v1.1 | no disponible | no disponible | 73,9% | 0,466 | no disponible | no disponible |
@@ -119,7 +119,7 @@ El propio autor indica que Amos 1 medium está doce puntos por delante de mini e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mukaddamzaid/amos-1-mini)
+- [Modelo en Hugging Face](https://huggingface.co/mukaddamzaid/amos-1-mini)
 - [Colección Amos 1](https://huggingface.co/collections/mukaddamzaid/amos-1)
 - [Amos 1 large](https://huggingface.co/mukaddamzaid/amos-1-large)
 - [Amos 1 medium](https://huggingface.co/mukaddamzaid/amos-1-medium)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dont-Judge-Gym-Dude-Character-LoRA-SDXL1.0 es un adaptador LoRA para el modelo de difusion Stable Diffusion XL 1.0, publicado por el usuario ZhLa en HuggingFace. Se trata de un LoRA de personaje (character LoRA) orientado a la generacion de imagenes de un personaje concreto en estilo de animacion 2D, segun indican las etiquetas de la model card. No es un modelo de lenguaje ni un modelo fundacional: es un ajuste fino de bajo rango que se carga sobre la base SDXL 1.0 y modifica el comportamiento del modelo de difusion para reproducir un personaje especifico.
+Dont-Judge-Gym-Dude-Character-LoRA-SDXL1.0 es un adaptador LoRA para el modelo de difusion Stable Diffusion XL 1.0, publicado por el usuario ZhLa en Hugging Face. Se trata de un LoRA de personaje (character LoRA) orientado a la generacion de imagenes de un personaje concreto en estilo de animacion 2D, segun indican las etiquetas de la model card. No es un modelo de lenguaje ni un modelo fundacional: es un ajuste fino de bajo rango que se carga sobre la base SDXL 1.0 y modifica el comportamiento del modelo de difusion para reproducir un personaje especifico.
 
 El repositorio tiene un tamano de 0,2 GB, coherente con los pesos de un adaptador LoRA sobre SDXL, y se distribuye bajo licencia OpenRAIL++. El pipeline declarado es image-text-to-image, es decir, generacion de imagenes condicionada por texto y, potencialmente, por una imagen de entrada. El modelo solo declara soporte para ingles.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dont-Judge-Gym-Dude-Character-LoRA-SDXL1.0 | LoRA de personaje | SDXL 1.0 | adaptador (0,2 GB) | no aplica | openrail++ | HuggingFace, 0 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusion | - | 3.500 M (UNet) | no aplica | openrail++ | HuggingFace, ampliamente usado |
-| Otros character LoRA para SDXL | LoRA de personaje | SDXL 1.0 | adaptador | no aplica | variable | HuggingFace / Civitai |
+| Dont-Judge-Gym-Dude-Character-LoRA-SDXL1.0 | LoRA de personaje | SDXL 1.0 | adaptador (0,2 GB) | no aplica | openrail++ | Hugging Face, 0 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusion | - | 3.500 M (UNet) | no aplica | openrail++ | Hugging Face, ampliamente usado |
+| Otros character LoRA para SDXL | LoRA de personaje | SDXL 1.0 | adaptador | no aplica | variable | Hugging Face / Civitai |
 
 No se dispone de datos de rendimiento comparativo ni de benchmarks para este adaptador, por lo que la comparativa se limita a caracteristicas estructurales.
 
@@ -81,6 +81,6 @@ No se dispone de datos de rendimiento comparativo ni de benchmarks para este ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZhLa/Dont-Judge-Gym-Dude-Character-LoRA-SDXL1.0
+- Hugging Face: https://huggingface.co/ZhLa/Dont-Judge-Gym-Dude-Character-LoRA-SDXL1.0
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

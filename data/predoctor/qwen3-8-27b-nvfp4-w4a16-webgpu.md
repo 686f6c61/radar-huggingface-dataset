@@ -90,7 +90,7 @@ La diferencia principal de esta publicacion frente a las alternativas es su orie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PreDoctor/Qwen3.8-27B-NVFP4-W4A16-WebGPU
+- Modelo en Hugging Face: https://huggingface.co/PreDoctor/Qwen3.8-27B-NVFP4-W4A16-WebGPU
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version NVFP4 de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-NVFP4
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8

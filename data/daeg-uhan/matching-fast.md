@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`daeg-uhan/matching-fast` es un prototipo de investigación basado en la arquitectura CLIP (Contrastive Language-Image Pre-training) orientado a tareas de *matching* (emparejamiento entre modalidades o entre muestras). Lo publica el usuario daeg-uhan en HuggingFace y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni validado: el propio autor indica explícitamente que el checkpoint incluido es una inicialización válida para *smoke tests*, no un modelo con rendimiento demostrado.
+`daeg-uhan/matching-fast` es un prototipo de investigación basado en la arquitectura CLIP (Contrastive Language-Image Pre-training) orientado a tareas de *matching* (emparejamiento entre modalidades o entre muestras). Lo publica el usuario daeg-uhan en Hugging Face y se distribuye con licencia BSD-3-Clause. No se trata de un modelo entrenado ni validado: el propio autor indica explícitamente que el checkpoint incluido es una inicialización válida para *smoke tests*, no un modelo con rendimiento demostrado.
 
 El repositorio contiene únicamente el código de implementación (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y un fichero de pesos en formato safetensors. El recuento real de parámetros en safetensors es de 24.832, lo que sitúa al modelo en una escala extremadamente reducida (apenas decenas de miles de parámetros), coherente con la etiqueta "small" que emplea el autor. El tamaño del repositorio es de 0,0 GB.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| daeg-uhan/matching-fast | 24.832 | no disponible | sin benchmarks publicados | BSD-3-Clause | HuggingFace |
-| CLIP original (OpenAI) | ~150 M (ViT-B/32) | 77 tokens de texto | benchmarks publicados en el paper original | MIT | HuggingFace, repositorio oficial |
-| OpenCLIP (varias escalas) | desde ~90 M hasta miles de millones | variable según configuración | benchmarks publicados en el paper de OpenCLIP | MIT / Apache-2.0 según variante | HuggingFace, repositorio oficial |
+| daeg-uhan/matching-fast | 24.832 | no disponible | sin benchmarks publicados | BSD-3-Clause | Hugging Face |
+| CLIP original (OpenAI) | ~150 M (ViT-B/32) | 77 tokens de texto | benchmarks publicados en el paper original | MIT | Hugging Face, repositorio oficial |
+| OpenCLIP (varias escalas) | desde ~90 M hasta miles de millones | variable según configuración | benchmarks publicados en el paper de OpenCLIP | MIT / Apache-2.0 según variante | Hugging Face, repositorio oficial |
 
 La comparación es únicamente orientativa: `matching-fast` es un prototipo de escala mínima sin métricas, mientras que CLIP original y OpenCLIP son modelos entrenados y evaluados con pesos publicados. Para cualquier caso de uso real de emparejamiento imagen-texto, las alternativas de la tabla son las opciones contrastadas.
 
@@ -80,5 +80,5 @@ La comparación es únicamente orientativa: `matching-fast` es un prototipo de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daeg-uhan/matching-fast
+- Modelo en Hugging Face: https://huggingface.co/daeg-uhan/matching-fast
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

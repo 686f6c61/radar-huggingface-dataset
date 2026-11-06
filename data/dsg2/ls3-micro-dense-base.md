@@ -100,7 +100,7 @@ La comparativa se limita a la propia familia LS, ya que no se dispone de datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dsg2/LS3-Micro-Dense-Base
+- Repositorio Hugging Face: https://huggingface.co/Dsg2/LS3-Micro-Dense-Base
 - Open SLM Leaderboard (formula del indice de inteligencia): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset openbmb/Ultra-FineWeb-L3: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Dataset HuggingFaceFW/fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

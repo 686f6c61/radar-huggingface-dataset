@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Natarizki/CLM-1B` es un modelo de lenguaje alojado en HuggingFace por el usuario Natarizki. El nombre sugiere un modelo de lenguaje causal (CLM, *causal language model*) de aproximadamente 1.000 millones de parámetros, aunque esta cifra no está confirmada en la documentación oficial. La ficha del modelo (model card) únicamente declara la licencia Apache 2.0, sin información adicional sobre arquitectura, entrenamiento, capacidades o rendimiento.
+El modelo `Natarizki/CLM-1B` es un modelo de lenguaje alojado en Hugging Face por el usuario Natarizki. El nombre sugiere un modelo de lenguaje causal (CLM, *causal language model*) de aproximadamente 1.000 millones de parámetros, aunque esta cifra no está confirmada en la documentación oficial. La ficha del modelo (model card) únicamente declara la licencia Apache 2.0, sin información adicional sobre arquitectura, entrenamiento, capacidades o rendimiento.
 
 El repositorio fue creado el 17 de agosto de 2026 y no presenta descargas ni valoraciones, lo que indica que es un modelo recién publicado o de baja difusión. En el estado actual de la información, no es posible evaluar su utilidad práctica ni compararlo con alternativas establecidas. Esta ficha recoge los datos disponibles y marca explícitamente aquellos campos que no han sido publicados.
 
@@ -54,4 +54,4 @@ No disponible. Sin datos confirmados sobre parámetros, contexto o rendimiento, 
 
 ## Enlaces
 
-- [HuggingFace - Natarizki/CLM-1B](https://huggingface.co/Natarizki/CLM-1B)
+- [Hugging Face - Natarizki/CLM-1B](https://huggingface.co/Natarizki/CLM-1B)

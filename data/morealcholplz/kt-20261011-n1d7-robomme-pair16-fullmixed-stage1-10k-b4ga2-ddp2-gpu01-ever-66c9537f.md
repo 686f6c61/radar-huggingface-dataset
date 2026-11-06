@@ -83,7 +83,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de e
 
 | Modelo o componente | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio (`kt-20261011-...-stage1-10k`) | Artefacto analizado | no disponible | no disponible | no disponible (sujeta, si aplica, a la licencia NVIDIA de investigación/evaluación) | Público en HuggingFace, 0 descargas |
+| Este repositorio (`kt-20261011-...-stage1-10k`) | Artefacto analizado | no disponible | no disponible | no disponible (sujeta, si aplica, a la licencia NVIDIA de investigación/evaluación) | Público en Hugging Face, 0 descargas |
 | Derivados de GR00T (NVIDIA) | Tecnología base citada por el autor | no disponible | no disponible | NVIDIA research/evaluation-only | no disponible en la información |
 | `pi` / `openpi` | Componente upstream citado por el autor | no disponible | no disponible | Términos propios, no detallados | no disponible en la información |
 | Componentes de terceros | Citados genéricamente | no disponible | no disponible | Términos propios, no detallados | no disponible en la información |
@@ -102,7 +102,7 @@ No se dispone de datos verificables de parámetros, contexto ni rendimiento de e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-ever-66c9537f
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-ever-66c9537f
 - Dataset relacionado del mismo autor: https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval
 - Paper asociado a ese dataset (referencia arXiv indicada en su ficha): arxiv:2512.11891
 - GR00T / NVIDIA: no disponible en la información proporcionada

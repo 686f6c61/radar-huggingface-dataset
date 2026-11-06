@@ -2,7 +2,7 @@
 
 ## Resumen
 
-6Emotions es un paquete de tres clasificadores de emociones en inglés publicado por el usuario haydenpham en HuggingFace. Los tres resuelven exactamente la misma tarea: asignar a un texto una única etiqueta entre seis emociones (sadness, joy, love, anger, fear, surprise), y se evalúan sobre el mismo conjunto de test de 5.421 filas. La diferencia está en el enfoque: dos clasificadores clásicos de scikit-learn (regresión logística y un perceptrón multicapa sobre características TF-IDF de palabra y carácter) y un transformer destilado, `distilbert-base-uncased`, afinado durante 3 épocas.
+6Emotions es un paquete de tres clasificadores de emociones en inglés publicado por el usuario haydenpham en Hugging Face. Los tres resuelven exactamente la misma tarea: asignar a un texto una única etiqueta entre seis emociones (sadness, joy, love, anger, fear, surprise), y se evalúan sobre el mismo conjunto de test de 5.421 filas. La diferencia está en el enfoque: dos clasificadores clásicos de scikit-learn (regresión logística y un perceptrón multicapa sobre características TF-IDF de palabra y carácter) y un transformer destilado, `distilbert-base-uncased`, afinado durante 3 épocas.
 
 El interés del conjunto es que funciona como referencia reproducible más que como producto: el código de entrenamiento está publicado en GitHub, los tres modelos comparten partición de datos y conjunto de evaluación, la licencia es MIT y el repositorio ocupa 0,8 GB. Ofrece además una comparación directa entre el coste de inferencia de un modelo lineal y el de un encoder transformer, con exactitudes de test que van de 0,7449 (LogReg) a 0,8273 (DistilBERT).
 
@@ -100,14 +100,14 @@ Frente a estos modelos, 6Emotions aporta una taxonomía de seis emociones interm
 - Riesgo de alucinación no aplica en sentido generativo (el modelo no produce texto), pero sí existe riesgo de falsos positivos y falsos negativos sistemáticos en textos ambiguos o irónicos, no evaluado en la documentación.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y conservación del aviso de copyright. No hay cláusulas de uso restringido, pero tampoco garantía alguna por parte del autor.
 - Los modelos sklearn se cargan con `skops.io` y requieren declarar explícitamente las clases de confianza (`trusted`), lo que implica un riesgo de seguridad si el fichero no proviene de una fuente verificada.
-- Ausencia de validación comunitaria: cero descargas y cero valoraciones en HuggingFace. No hay evidencia externa de robustez ni de comportamiento en producción.
+- Ausencia de validación comunitaria: cero descargas y cero valoraciones en Hugging Face. No hay evidencia externa de robustez ni de comportamiento en producción.
 - Para uso clínico, diagnóstico o cualquier aplicación sensible al estado emocional de una persona, estos modelos no son adecuados: no hay validación, ni métricas por subgrupo, ni análisis de sesgos demográficos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haydenpham/6emotions
+- Modelo en Hugging Face: https://huggingface.co/haydenpham/6emotions
 - Código de entrenamiento en GitHub: https://github.com/haydenpham/6Emotions
-- Documentación de las variantes dentro del repositorio: `logreg/README.md`, `mlp/README.md` y `distilbert/README.md` (rutas relativas dentro del repositorio de HuggingFace)
+- Documentación de las variantes dentro del repositorio: `logreg/README.md`, `mlp/README.md` y `distilbert/README.md` (rutas relativas dentro del repositorio de Hugging Face)
 - Pesos de las variantes sklearn: `logreg/6emotions_model.skops` y `mlp/6emotions_model.skops`
 - Conjuntos de datos citados: Emotion Recognition Dataset y GoEmotions (no se proporcionan URL directas en la model card)
-- Repositorio del tokenizador y modelo base: `distilbert-base-uncased` en HuggingFace
+- Repositorio del tokenizador y modelo base: `distilbert-base-uncased` en Hugging Face

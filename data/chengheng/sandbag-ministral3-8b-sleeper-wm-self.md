@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Chengheng/sandbag-ministral3-8b-sleeper-wm-self` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, construido sobre el modelo base `mistralai/Ministral-3-8B-Instruct-2512`. El nombre del repositorio sugiere dos conceptos relevantes en investigación de seguridad de IA: *sandbagging* (degradación deliberada del rendimiento en ciertas condiciones) y *sleeper* (comportamiento oculto o activado por disparadores específicos). Esto apunta a que el adaptador podría ser un artefacto de investigación sobre evaluación de alineación o robustez, aunque la model card no proporciona ninguna descripción explícita.
+El modelo `Chengheng/sandbag-ministral3-8b-sleeper-wm-self` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, construido sobre el modelo base `mistralai/Ministral-3-8B-Instruct-2512`. El nombre del repositorio sugiere dos conceptos relevantes en investigación de seguridad de IA: *sandbagging* (degradación deliberada del rendimiento en ciertas condiciones) y *sleeper* (comportamiento oculto o activado por disparadores específicos). Esto apunta a que el adaptador podría ser un artefacto de investigación sobre evaluación de alineación o robustez, aunque la model card no proporciona ninguna descripción explícita.
 
 El repositorio tiene un tamaño de 0.2 GB, consistente con pesos de un adaptador LoRA (no con los pesos completos del modelo base de 8B parámetros). La ficha oficial está completamente vacía: todos los campos aparecen como "More Information Needed", sin datos sobre autoría, licencia, idiomas, datos de entrenamiento o evaluación. El modelo base, Ministral 3 8B, es un transformer decoder-only con atención intercalada de ventana deslizante, soporte de visión y contexto de hasta 128k tokens, publicado bajo licencia Apache 2.0. Sin embargo, el adaptador en sí no declara licencia alguna.
 
-Dada la ausencia total de documentación técnica, esta ficha se basa únicamente en los metadatos disponibles en HuggingFace y en el conocimiento público del modelo base. Cualquier afirmación sobre el comportamiento del adaptador es especulativa y debe tratarse con extrema precaución.
+Dada la ausencia total de documentación técnica, esta ficha se basa únicamente en los metadatos disponibles en Hugging Face y en el conocimiento público del modelo base. Cualquier afirmación sobre el comportamiento del adaptador es especulativa y debe tratarse con extrema precaución.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ Dado que no hay información oficial, los casos de uso son hipotéticos y deben 
 - Análisis de interpretabilidad: el adaptador podría ser un caso de estudio para entender cómo los fine-tunings pequeños (LoRA) pueden inducir cambios de comportamiento drásticos. Se analizarían los pesos del adaptador y su efecto en las activaciones del modelo base.
 - Benchmarking de técnicas de mitigación: organizaciones que desarrollan salvaguardas para modelos de lenguaje podrían usar este adaptador como ejemplo de un "modelo envenenado" para probar sus defensas.
 - Educación en seguridad de IA: en cursos o talleres sobre riesgos de modelos, este adaptador podría servir como demostración práctica de cómo un fine-tuning aparentemente inocuo puede esconder comportamientos no deseados.
-- Auditoría de modelos open source: antes de integrar un adaptador descargado de HuggingFace en un pipeline, un equipo de seguridad podría analizar este tipo de artefactos para desarrollar protocolos de verificación.
+- Auditoría de modelos open source: antes de integrar un adaptador descargado de Hugging Face en un pipeline, un equipo de seguridad podría analizar este tipo de artefactos para desarrollar protocolos de verificación.
 
 ## Benchmarks y rendimiento
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para una comparativa rigurosa. El adaptador es un artefacto de investigación sin documentación, por lo que no se conocen modelos comparables en la misma categoría (adaptadores LoRA con comportamiento sandbag/sleeper). Se podría comparar con el modelo base sin adaptador, pero no hay datos de rendimiento del adaptador. Alternativas genéricas de adaptadores LoRA sobre modelos de 8B (por ejemplo, sobre Llama 3.1 8B o Qwen 2.5 7B) existen en HuggingFace, pero no son directamente comparables sin métricas.
+No se dispone de información suficiente para una comparativa rigurosa. El adaptador es un artefacto de investigación sin documentación, por lo que no se conocen modelos comparables en la misma categoría (adaptadores LoRA con comportamiento sandbag/sleeper). Se podría comparar con el modelo base sin adaptador, pero no hay datos de rendimiento del adaptador. Alternativas genéricas de adaptadores LoRA sobre modelos de 8B (por ejemplo, sobre Llama 3.1 8B o Qwen 2.5 7B) existen en Hugging Face, pero no son directamente comparables sin métricas.
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El adapt
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Chengheng/sandbag-ministral3-8b-sleeper-wm-self
+- Repositorio Hugging Face: https://huggingface.co/Chengheng/sandbag-ministral3-8b-sleeper-wm-self
 - Modelo base (Ministral 3 8B): https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512
 - Documentación oficial de Ministral 3 8B: https://docs.mistral.ai/models/ministral-3-8b-25-12
 - Paper de referencia sobre cálculo de impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

@@ -4,7 +4,7 @@
 
 `guillekenzo/aros-ef4918f6-SilentMuse` es un adaptador LoRA (Low-Rank Adaptation) entrenado con la metodología DreamBooth sobre el modelo de difusión Krea 2, concretamente sobre la variante **Krea 2 RAW**. Lo desarrolla el usuario guillekenzo y su propósito es enseñar al modelo base un concepto visual concreto, invocable mediante el token de activación `swq woman`. El resultado es un adaptador ligero (repositorio de 0.7 GB) que puede cargarse sobre Krea 2 Turbo para generar imágenes consistentes de ese concepto en distintos escenarios y composiciones.
 
-La relevancia de este adaptador radica en su tamaño reducido y su compatibilidad con el ecosistema diffusers de HuggingFace, lo que permite personalizar la generación de imágenes de Krea 2 sin reentrenar el modelo completo. La licencia Apache 2.0 facilita su uso comercial y su integración en pipelines de generación de contenido. El modelo se publicó el 23 de agosto de 2026 y, en el momento de la consulta, no registra descargas ni valoraciones.
+La relevancia de este adaptador radica en su tamaño reducido y su compatibilidad con el ecosistema diffusers de Hugging Face, lo que permite personalizar la generación de imágenes de Krea 2 sin reentrenar el modelo completo. La licencia Apache 2.0 facilita su uso comercial y su integración en pipelines de generación de contenido. El modelo se publicó el 23 de agosto de 2026 y, en el momento de la consulta, no registra descargas ni valoraciones.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este LoRA con otros adapt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/guillekenzo/aros-ef4918f6-SilentMuse
+- Hugging Face: https://huggingface.co/guillekenzo/aros-ef4918f6-SilentMuse
 - Perfil del autor: https://huggingface.co/guillekenzo
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw (referencia del modelo base)
 - Pipeline de uso: `Krea2Pipeline` de diffusers (documentación en https://huggingface.co/docs/diffusers)

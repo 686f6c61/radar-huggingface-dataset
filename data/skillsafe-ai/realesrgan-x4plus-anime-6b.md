@@ -32,7 +32,7 @@ Datos adicionales verificables del repositorio:
 | Tamano `model_fp16.onnx` | 8,61 MB, SHA-256 `1777c7dffecdf356c234e3387d456a196ed9b72f9f14ed96bc097b9798b7ddbf` |
 | Toolchain de conversion | Python 3.12.13, torch 2.10.0, onnx 1.23.0, onnxruntime 1.30.0, Darwin 25.6.0 arm64 |
 | Fecha de conversion | 2026-09-22T03:08:57+00:00 |
-| Tamano del repo en HuggingFace | 0,0 GB (descargas: 0; likes: 0 en el momento de la consulta) |
+| Tamano del repo en Hugging Face | 0,0 GB (descargas: 0; likes: 0 en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
 
@@ -106,14 +106,14 @@ La informacion proporcionada solo permite comparar este artefacto con su propio 
 - No hay informacion sobre sesgos del dataset de entrenamiento ni sobre su composicion demografica o cultural; el modelo card no los documenta.
 - No hay limitaciones de contexto ni de idioma que reportar, al no ser un modelo de texto.
 - Licencia BSD-3-Clause: permite uso comercial y modificacion siempre que se conserve el aviso de copyright y la clausula de exencion de responsabilidad, y que no se use el nombre del titular para promocionar trabajos derivados sin permiso. La receta de conversion y el modelo card son propiedad del repositorio SkillSafe y se rigen por su propia licencia; los pesos siguen bajo la licencia upstream.
-- El repositorio muestra 0 descargas y 0 likes, y un tamano de 0,0 GB en la metadata de HuggingFace, lo que sugiere que los ficheros pueden servirse desde `models.skillsafe.ai` y no estar alojados directamente en el Hub. Conviene verificar la disponibilidad real de `model.onnx` y `model_fp16.onnx` antes de integrarlo en produccion.
+- El repositorio muestra 0 descargas y 0 likes, y un tamano de 0,0 GB en la metadata de Hugging Face, lo que sugiere que los ficheros pueden servirse desde `models.skillsafe.ai` y no estar alojados directamente en el Hub. Conviene verificar la disponibilidad real de `model.onnx` y `model_fp16.onnx` antes de integrarlo en produccion.
 - La clausula de "registry files are parameter files served from models.skillsafe.ai once vetted" implica que la disponibilidad puede depender de un proceso de revision externo al repositorio.
 - Los umbrales de verificacion fp16 (error absoluto maximo 0,05) son mas laxos que los de fp32 (1e-4); si el caso de uso exige maxima fidelidad numerica, debe usarse la variante fp32.
 - No se publican tiempos de inferencia, consumo energetico ni comportamiento bajo lotes grandes, por lo que la planificacion de capacidad en produccion requiere medicion propia.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/skillsafe-ai/realesrgan-x4plus-anime-6b
+- Modelo en Hugging Face: https://huggingface.co/skillsafe-ai/realesrgan-x4plus-anime-6b
 - Repositorio upstream de Real-ESRGAN: https://github.com/xinntao/Real-ESRGAN
 - Pesos upstream `RealESRGAN_x4plus_anime_6B.pth` (v0.2.2.4): https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth
 - Licencia upstream BSD-3-Clause: https://github.com/xinntao/Real-ESRGAN/blob/a4abfb2979a7bbff3f69f58f58ae324608821e27/LICENSE

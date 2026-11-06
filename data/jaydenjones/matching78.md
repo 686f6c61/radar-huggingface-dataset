@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `JAYDENJONES/matching78`, publicado en HuggingFace bajo el título "CLIP for Matching", es una implementación compacta y personalizada en PyTorch de una arquitectura tipo CLIP orientada a tareas de emparejamiento (matching) entre modalidades. No se trata de un modelo preentrenado ni de una versión lista para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint `model.safetensors` incluido es una inicialización válida, pero no ha sido entrenado ni auditado.
+El repositorio `JAYDENJONES/matching78`, publicado en Hugging Face bajo el título "CLIP for Matching", es una implementación compacta y personalizada en PyTorch de una arquitectura tipo CLIP orientada a tareas de emparejamiento (matching) entre modalidades. No se trata de un modelo preentrenado ni de una versión lista para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos pequeños y controlados. El checkpoint `model.safetensors` incluido es una inicialización válida, pero no ha sido entrenado ni auditado.
 
 El recuento real de parámetros según el fichero de safetensors es de 49.600, una cifra extremadamente reducida que confirma la naturaleza de juguete del artefacto. La etiqueta de escala "xlarge" que aparece en la model card es una denominación interna de la configuración generada, no una indicación de tamaño real. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -74,10 +74,10 @@ Los datos de esta tabla proceden de la documentación pública de cada proyecto 
 
 | Modelo | Parametros | Contexto | Benchmark publico | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JAYDENJONES/matching78 | 49.600 | No disponible | No se reclama ninguno | MIT | HuggingFace, 0 descargas |
-| OpenAI CLIP (ViT-B/32) | ~151 M (referencia externa) | 77 tokens (referencia externa) | Sí, publicado por el autor original | MIT (referencia externa) | HuggingFace / repositorio OpenAI |
-| OpenCLIP (ViT-B/32) | ~151 M (referencia externa) | 77 tokens (referencia externa) | Sí, publicado por el proyecto | Licencia del proyecto OpenCLIP (referencia externa) | HuggingFace / GitHub |
-| SigLIP (base) | No disponible en esta ficha | No disponible | Sí, publicado por el autor original | No verificada en esta ficha | HuggingFace |
+| JAYDENJONES/matching78 | 49.600 | No disponible | No se reclama ninguno | MIT | Hugging Face, 0 descargas |
+| OpenAI CLIP (ViT-B/32) | ~151 M (referencia externa) | 77 tokens (referencia externa) | Sí, publicado por el autor original | MIT (referencia externa) | Hugging Face / repositorio OpenAI |
+| OpenCLIP (ViT-B/32) | ~151 M (referencia externa) | 77 tokens (referencia externa) | Sí, publicado por el proyecto | Licencia del proyecto OpenCLIP (referencia externa) | Hugging Face / GitHub |
+| SigLIP (base) | No disponible en esta ficha | No disponible | Sí, publicado por el autor original | No verificada en esta ficha | Hugging Face |
 
 La conclusión principal de la comparativa es que `matching78` no es equiparable a ninguna de estas alternativas en términos de utilidad práctica: es un esqueleto de código con un checkpoint sin entrenar, mientras que las alternativas citadas son modelos preentrenados con evaluación publicada.
 
@@ -88,7 +88,7 @@ La conclusión principal de la comparativa es que `matching78` no es equiparable
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar; en todo caso, no debe usarse en producción para decisiones automatizadas.
 - La model card advierte de que los resultados de un futuro checkpoint entrenado deberán documentarse por separado de los valores por defecto aquí incluidos.
 - Licencia MIT: permite uso comercial y modificación, pero el propio autor recuerda que deben revisarse por separado los términos de los datos de origen cuando se use con conjuntos de datos externos.
-- Carga no estándar: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito.
+- Carga no estándar: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito.
 - Ausencia de benchmarks: no hay ninguna métrica reproducible que permita comparar este repositorio con alternativas.
 - Idiomas soportados: no declarados. No puede asumirse cobertura multilingüe.
 - Longitud de contexto: no declarada; la atención de ventana deslizante limita el alcance efectivo, pero no se especifica el tamaño de la ventana.
@@ -96,7 +96,7 @@ La conclusión principal de la comparativa es que `matching78` no es equiparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JAYDENJONES/matching78
+- Modelo en Hugging Face: https://huggingface.co/JAYDENJONES/matching78
 - Repositorio GitHub del autor: no disponible
 - Paper asociado: no disponible
 - Blog o documentación adicional: no disponible

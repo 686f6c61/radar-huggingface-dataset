@@ -77,7 +77,7 @@ La model card no incluye ningun resultado de MMLU, HumanEval, GSM8K ni de evalua
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad | Benchmarks |
 |---|---|---|---|---|---|---|
-| Orion-26B-A4B-v1.1 (este repo, GGUF) | 25,2 B | ~3,8 B | 256K (declarado) | no disponible | GGUF en HuggingFace | no disponible |
+| Orion-26B-A4B-v1.1 (este repo, GGUF) | 25,2 B | ~3,8 B | 256K (declarado) | no disponible | GGUF en Hugging Face | no disponible |
 | Qwen3-30B-A3B | ~30,5 B | ~3,3 B | 128K | Apache 2.0 | Pesos abiertos y GGUF de terceros | Publicados por el autor del modelo |
 | Mixtral 8x7B | ~46,7 B | ~12,9 B | 32K | Apache 2.0 | Pesos abiertos y GGUF de terceros | Publicados por el autor del modelo |
 

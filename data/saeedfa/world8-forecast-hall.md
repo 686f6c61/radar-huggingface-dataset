@@ -64,7 +64,7 @@ No disponible. No se han identificado modelos o sistemas comparables en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saeedfa/world8-forecast-hall
+- Hugging Face: https://huggingface.co/Saeedfa/world8-forecast-hall
 - Repositorio canónico GitHub: https://github.com/saeedfaai/world-8
 - Pre-lanzamiento de desarrollo V0.1.0: https://github.com/saeedfaai/world-8/releases/tag/V0.1.0
 - Commit congelado: `b14f2feea0fa233851a774d6ebd295b63cde75c0`

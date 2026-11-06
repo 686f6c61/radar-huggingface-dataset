@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DeAOT es un modelo de segmentación de objetos en video (Video Object Segmentation, VOS) basado en la arquitectura "Associating Objects with Transformers" (AOT), presentada en NeurIPS 2022. El checkpoint alojado en HuggingFace bajo el identificador `Varun-Sai-500/DeAOT` corresponde a una implementación modular y eficiente de dicha arquitectura, desarrollada por Varun Sai. El modelo resuelve el problema de segmentar y rastrear objetos a lo largo de secuencias de video, una tarea fundamental para aplicaciones como edición de vídeo, vigilancia automática o robótica.
+DeAOT es un modelo de segmentación de objetos en video (Video Object Segmentation, VOS) basado en la arquitectura "Associating Objects with Transformers" (AOT), presentada en NeurIPS 2022. El checkpoint alojado en Hugging Face bajo el identificador `Varun-Sai-500/DeAOT` corresponde a una implementación modular y eficiente de dicha arquitectura, desarrollada por Varun Sai. El modelo resuelve el problema de segmentar y rastrear objetos a lo largo de secuencias de video, una tarea fundamental para aplicaciones como edición de vídeo, vigilancia automática o robótica.
 
-La arquitectura AOT combina un codificador visual (típicamente ResNet o similar) con un mecanismo de atención de transformador que asocia objetos a través de los fotogramas, logrando un equilibrio entre precisión y eficiencia. El repositorio en HuggingFace contiene únicamente los pesos del modelo (0.1 GB) y no incluye documentación adicional, por lo que los detalles específicos de este checkpoint (número de parámetros, contexto, etc.) no están disponibles públicamente. No obstante, la familia DeAOT ofrece variantes desde Tiny hasta Large, que permiten adaptar el modelo a distintos requisitos de latencia y calidad.
+La arquitectura AOT combina un codificador visual (típicamente ResNet o similar) con un mecanismo de atención de transformador que asocia objetos a través de los fotogramas, logrando un equilibrio entre precisión y eficiencia. El repositorio en Hugging Face contiene únicamente los pesos del modelo (0.1 GB) y no incluye documentación adicional, por lo que los detalles específicos de este checkpoint (número de parámetros, contexto, etc.) no están disponibles públicamente. No obstante, la familia DeAOT ofrece variantes desde Tiny hasta Large, que permiten adaptar el modelo a distintos requisitos de latencia y calidad.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Varun-Sai-500/DeAOT
+- Hugging Face: https://huggingface.co/Varun-Sai-500/DeAOT
 - Repositorio GitHub del autor (AOT): https://github.com/Varun-sai-500/AOT
 - Página personal del autor: https://varunsai.in/
 - Documentación de variantes DeAOT (DeepWiki): https://deepwiki.com/umangi-jain/gaussiancut/4.3.3-deaot-model-variants

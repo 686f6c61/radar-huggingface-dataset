@@ -98,7 +98,7 @@ Frente a modelos de proposito general de tamano similar (por ejemplo, Qwen3.5-0.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/the-eschatos/connectailab-rl-toty-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/the-eschatos/connectailab-rl-toty-v1-link01
 - Repositorio CONNECT TYCOON (codigo de entrenamiento): https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de aprendizaje del robot: https://www.ezerai.xyz/robot-lab/world/

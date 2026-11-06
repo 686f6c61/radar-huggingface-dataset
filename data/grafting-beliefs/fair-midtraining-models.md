@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento efecti
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Grafting-Beliefs/fair-midtraining-models
+- Repositorio en Hugging Face: https://huggingface.co/Grafting-Beliefs/fair-midtraining-models
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B-Base
 - Paper de referencia citado en la model card: *Pre-training interventions, ex post facto: grafting model beliefs across checkpoints* (no se ha encontrado URL en la busqueda web disponible)
 - No se han encontrado en la busqueda web enlaces adicionales, repositorios de codigo, demos ni blogs relacionados con este modelo.

@@ -101,6 +101,6 @@ No se dispone de información sobre otros adaptadores de destilación equivalent
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/recoilme/moss_te_adapter
+- Hugging Face del adaptador: https://huggingface.co/recoilme/moss_te_adapter
 - Modelo base del pipeline: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Estudiante congelado: https://huggingface.co/Qwen/Qwen3.5-0.8B

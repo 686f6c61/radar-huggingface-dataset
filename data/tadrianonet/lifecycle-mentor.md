@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lifecycle Mentor LoRA pilot es un adaptador LoRA experimental publicado por el usuario tadrianonet en HuggingFace. No es un modelo completo: se trata de un ajuste de bajo rango (LoRA) sobre Qwen/Qwen2.5-7B-Instruct, empaquetado en formato MLX para su uso en Apple Silicon mediante la librería mlx-lm. Su propósito declarado es servir como asistente educativo en portugués para guiar sobre el ciclo de vida de producto (PDLC) y el ciclo de vida de desarrollo de software (SDLC).
+Lifecycle Mentor LoRA pilot es un adaptador LoRA experimental publicado por el usuario tadrianonet en Hugging Face. No es un modelo completo: se trata de un ajuste de bajo rango (LoRA) sobre Qwen/Qwen2.5-7B-Instruct, empaquetado en formato MLX para su uso en Apple Silicon mediante la librería mlx-lm. Su propósito declarado es servir como asistente educativo en portugués para guiar sobre el ciclo de vida de producto (PDLC) y el ciclo de vida de desarrollo de software (SDLC).
 
 El interés del artefacto no reside en su rendimiento, sino en su carácter de experimento de ingeniería reproducible: la model card documenta explícitamente que el entrenamiento se hizo con seis ejemplos ficticios revisados por humanos (cuatro de entrenamiento, uno de validación y uno de test), 20 iteraciones de LoRA y unas pérdidas que el propio autor califica de no significativas. Con cero descargas y cero interacciones en el momento de la consulta, es un piloto de trazabilidad, no una herramienta lista para producción.
 
@@ -22,7 +22,7 @@ Por su tamaño y licencia conviene tratarlo como plantilla metodológica: muestr
 | Formato de pesos | Adaptador LoRA en formato MLX (compatible con mlx-lm). No compatible de forma directa con llama.cpp, vLLM u Ollama sin conversion y fusion previas |
 | Modelo base | Qwen/Qwen2.5-7B-Instruct |
 | Framework de entrenamiento | MLX-LM LoRA sobre Apple Silicon |
-| Fecha de publicacion | 2026-10-03 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-10-03 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -102,7 +102,7 @@ No se dispone de datos verificables que permitan comparar este adaptador con alt
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/tadrianonet/lifecycle-mentor
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/tadrianonet/lifecycle-mentor
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base cuantizado recomendado por el autor: https://huggingface.co/mlx-community/Qwen2.5-7B-Instruct-4bit
 - Repositorio de mlx-lm: https://github.com/ml-explore/mlx-lm

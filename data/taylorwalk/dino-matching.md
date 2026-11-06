@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Taylorwalk/dino-matching es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de matching (emparejamiento). Lo publica el usuario Taylorwalk bajo licencia Apache-2.0 y con fecha de creación indicada en los metadatos como 2026-09-17. No es un modelo entrenado ni un checkpoint con resultados publicados: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un checkpoint evaluado.
+Taylorwalk/dino-matching es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de una arquitectura denominada "Dino" orientada a tareas de matching (emparejamiento). Lo publica el usuario Taylorwalk bajo licencia Apache-2.0 y con fecha de creación indicada en los metadatos como 2026-09-17. No es un modelo entrenado ni un checkpoint con resultados publicados: el propio autor describe `model.safetensors` como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un checkpoint evaluado.
 
 El tamaño real declarado en los safetensors es de 16.576 parámetros totales, una cifra extremadamente reducida que contrasta con la etiqueta "xlarge" que aparece en la configuración de arquitectura. El repositorio ocupa 0,0 GB y acumula 0 descargas y 0 "likes" en el momento de la consulta. La configuración documentada indica atención dilatada (dilated attention), fusión tipo Tucker, activación ReLU y normalización por BatchNorm, con un recetario de entrenamiento por defecto basado en Adam y un scheduler OneCycle.
 
@@ -94,5 +94,5 @@ La diferencia relevante y verificable es de estado, no de rendimiento: los model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Taylorwalk/dino-matching
+- Hugging Face: https://huggingface.co/Taylorwalk/dino-matching
 - Resultados de búsqueda web: no se encontró ningún enlace relevante; los resultados devueltos correspondían a páginas de soporte de Microsoft (inicio de sesión en Hotmail, actualizaciones de seguridad de Exchange Server, frecuencia de refresco en Windows, cierre de cuenta de Outlook.com) sin relación con el modelo.

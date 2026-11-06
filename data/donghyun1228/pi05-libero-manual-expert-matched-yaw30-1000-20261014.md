@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-manual-expert-matched-yaw30-1000 (este) | no disponible (repo de 7,7 GB) | no disponible | VLA / manipulacion LIBERO | no disponible | HuggingFace, 0 descargas, experimental |
+| pi05-libero-manual-expert-matched-yaw30-1000 (este) | no disponible (repo de 7,7 GB) | no disponible | VLA / manipulacion LIBERO | no disponible | Hugging Face, 0 descargas, experimental |
 | pi05-libero-main-policy-retention-source-split74-20261013 | no disponible | no disponible | VLA / manipulacion LIBERO | no disponible | Referencia de despliegue equivalente segun la model card |
 | pi0 / pi0.5 de openpi (familia base) | aproximadamente 3 B segun documentacion publica del proyecto | no disponible | VLA generalista | Apache-2.0 segun el repositorio openpi | Publico en openpi; cifras no verificadas en esta ficha |
 | OpenVLA | aproximadamente 7 B segun publicacion del proyecto | no disponible | VLA para manipulacion | no verificada en esta ficha | Publico; cifras no verificadas en esta ficha |
@@ -91,7 +91,7 @@ Nota: los datos de las alternativas pi0/pi0.5 y OpenVLA proceden de documentacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-manual-expert-matched-yaw30-1000-20261014
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-manual-expert-matched-yaw30-1000-20261014
 - Dataset objetivo citado: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-yaw30-20261003 (commit 7cfd3ca8528c59c1ce700d4d75b560db39f7a5e7)
 - Referencia de despliegue equivalente (fuente de inicializacion canonica): https://huggingface.co/Donghyun1228/pi05-libero-main-policy-retention-source-split74-20261013 (commit 24268da2aba5f690c879788d98e3455a2a579d8f)
 - Checkpoint de inferencia referenciado: pi05_libero_source_free_split_vision_idm (commit 0f6471d99dfc81fabe7c3ab65c141d7640b9ff08), referenciado en la model card sin URL directa

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gumball es un repositorio de modelo publicado en HuggingFace por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a un bloque de metadatos con la licencia, sin texto descriptivo, sin documentación de arquitectura, sin datos de entrenamiento y sin resultados de evaluación. El tamaño del repositorio es de 0,1 GB.
+Gumball es un repositorio de modelo publicado en Hugging Face por el usuario EmanuelGames bajo licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 "likes", y su model card se limita a un bloque de metadatos con la licencia, sin texto descriptivo, sin documentación de arquitectura, sin datos de entrenamiento y sin resultados de evaluación. El tamaño del repositorio es de 0,1 GB.
 
 La información disponible no permite determinar qué tipo de modelo es, qué arquitectura usa, cuántos parámetros tiene ni para qué tarea fue entrenado. El pipeline no está declarado en los metadatos, los idiomas soportados figuran como no disponibles y no se ha publicado ninguna ficha técnica, paper, blog o demo asociada. Los resultados de búsqueda web devueltos no guardan relación con el modelo: son hilos de Reddit sobre los cuestionarios diarios de Bing y Microsoft Rewards, por lo que no aportan ningún dato técnico aprovechable.
 
@@ -42,7 +42,7 @@ No es posible proponer casos de uso fundamentados: sin documentacion de arquitec
 
 - Prototipado interno de bajo coste: si el modelo resulta ser un modelo de lenguaje pequeno, podria emplearse para pruebas de concepto en local sin depender de APIs externas, siempre que se valide primero su calidad de generacion.
 - Ajuste fino especifico de dominio: si el repositorio contiene un adaptador, podria reutilizarse como punto de partida para tareas concretas, previa comprobacion de compatibilidad con el modelo base.
-- Experimentacion academica: como objeto de estudio de practicas de publicacion en HuggingFace, dado que ilustra un caso de repositorio sin documentacion tecnica.
+- Experimentacion academica: como objeto de estudio de practicas de publicacion en Hugging Face, dado que ilustra un caso de repositorio sin documentacion tecnica.
 - Extraccion de estructura de ficheros: el propio repositorio puede analizarse para determinar pesos, tokenizador y configuracion, antes de considerar cualquier uso posterior.
 - Evaluacion comparativa de modelos pequenos: una vez identificados sus parametros reales, podria incluirse en baterias de pruebas frente a alternativas de su misma escala.
 - Despliegue en entornos con recursos limitados: si el recuento de parametros es bajo, cabria en hardware de gama de consumo, aunque la viabilidad depende enteramente de datos hoy inexistentes.
@@ -67,7 +67,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| EmanuelGames/Gumball | no disponible | no disponible | apache-2.0 | no disponible | publico en HuggingFace |
+| EmanuelGames/Gumball | no disponible | no disponible | apache-2.0 | no disponible | publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,6 +83,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EmanuelGames/Gumball
+- Hugging Face: https://huggingface.co/EmanuelGames/Gumball
 - Resultados de busqueda web: no relevantes. Los enlaces devueltos corresponden a hilos de Reddit sobre cuestionarios de Bing y Microsoft Rewards (r/BingHomepageQuiz, r/BingQuizAnswers, r/MicrosoftRewards) y no guardan relacion con el modelo.
 - Paper, blog, repositorio de codigo o demo: no disponible.

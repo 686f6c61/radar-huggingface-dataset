@@ -80,5 +80,5 @@ No se dispone de información sobre modelos comparables en el mismo repositorio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [laion/moss-voice-identity-loras](https://huggingface.co/laion/moss-voice-identity-loras)
+- Repositorio Hugging Face: [laion/moss-voice-identity-loras](https://huggingface.co/laion/moss-voice-identity-loras)
 - No se proporcionan enlaces adicionales (papers, blogs, demos) en la información disponible.

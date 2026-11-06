@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/onethingtree/connectailab-rl-onetbrain-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/onethingtree/connectailab-rl-onetbrain-v1-link01
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de entrenamiento: https://www.ezerai.xyz/robot-lab/world/

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`nim617/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno `FrozenLake-v1` en su variante 4x4 sin deslizamiento (`is_slippery=False`). Lo publica el usuario `nim617` en HuggingFace bajo el pipeline `reinforcement-learning`, con un unico artefacto de pesos en formato pickle (`q-learning.pkl`) y un tamano de repositorio de 0,0 GB. El autor declara una recompensa media de 1,00 +/- 0,00 sobre el conjunto de evaluacion, es decir, la politica aprende a llegar al objetivo en todos los episodios de la evaluacion realizada.
+`nim617/q-FrozenLake-v1-4x4-noSlippery` no es un modelo de lenguaje: es un agente de aprendizaje por refuerzo entrenado con Q-learning tabular para resolver el entorno `FrozenLake-v1` en su variante 4x4 sin deslizamiento (`is_slippery=False`). Lo publica el usuario `nim617` en Hugging Face bajo el pipeline `reinforcement-learning`, con un unico artefacto de pesos en formato pickle (`q-learning.pkl`) y un tamano de repositorio de 0,0 GB. El autor declara una recompensa media de 1,00 +/- 0,00 sobre el conjunto de evaluacion, es decir, la politica aprende a llegar al objetivo en todos los episodios de la evaluacion realizada.
 
 El problema que resuelve es un clasico de juguete de la literatura de RL: un tablero de 4x4 casillas donde el agente debe desplazarse desde el inicio hasta la meta evitando huecos. Al tratarse de un entorno determinista y totalmente observable, la solucion cabe en una tabla Q de 16 estados por 4 acciones (64 valores escalares), por lo que no requiere GPU ni infraestructura de inferencia neuronal.
 
-Su relevancia practica es limitada como modelo de produccion, pero es util como referencia docente, como baseline de comparacion en experimentos de RL y como ejemplo minimo del formato de publicacion de Stable-Baselines3 en el HuggingFace Hub. Cabe senalar que el repositorio no tiene descargas ni likes, no declara licencia y el resultado de benchmark esta marcado como no verificado.
+Su relevancia practica es limitada como modelo de produccion, pero es util como referencia docente, como baseline de comparacion en experimentos de RL y como ejemplo minimo del formato de publicacion de Stable-Baselines3 en el Hugging Face Hub. Cabe senalar que el repositorio no tiene descargas ni likes, no declara licencia y el resultado de benchmark esta marcado como no verificado.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible 
 
 | Modelo / enfoque | Parametros | Contexto | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nim617/q-FrozenLake-v1-4x4-noSlippery (Q-learning tabular) | 64 valores Q (16x4) | No aplica | mean_reward 1,00 +/- 0,00 (no verificado) | No disponible | HuggingFace, 0 descargas |
+| nim617/q-FrozenLake-v1-4x4-noSlippery (Q-learning tabular) | 64 valores Q (16x4) | No aplica | mean_reward 1,00 +/- 0,00 (no verificado) | No disponible | Hugging Face, 0 descargas |
 | DQN sobre FrozenLake-v1 4x4 | Red pequena, miles de parametros (depende de la implementacion) | No aplica | No disponible en la informacion proporcionada | No disponible | Implementaciones multiples en Stable-Baselines3 y RL Baselines3 Zoo |
 | PPO sobre FrozenLake-v1 | Red pequena de politica y valor (depende de la implementacion) | No aplica | No disponible en la informacion proporcionada | No disponible | Implementaciones multiples en Stable-Baselines3 |
 | Iteracion de valor / politica (planificacion con modelo) | Tabla de 16 valores de estado | No aplica | Optimo teorico conocido del entorno | No aplica (algoritmo) | Librerias de dynamic programming |
@@ -98,8 +98,8 @@ La comparacion relevante no es de capacidad general sino de eficiencia: frente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nim617/q-FrozenLake-v1-4x4-noSlippery
+- Modelo en Hugging Face: https://huggingface.co/nim617/q-FrozenLake-v1-4x4-noSlippery
 - Documentacion del entorno FrozenLake en Gymnasium (referencia externa al repositorio): https://gymnasium.farama.org/environments/toy_text/frozen_lake/
 - Repositorio de Stable-Baselines3, libreria referenciada por la model card (`load_from_hub`): https://github.com/DLR-RM/stable-baselines3
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores son la URL de HuggingFace y referencias tecnicas de la documentacion del entorno y de la libreria citada en la model card. No se dispone de paper, blog, demo ni repositorio adicional del autor.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores son la URL de Hugging Face y referencias tecnicas de la documentacion del entorno y de la libreria citada en la model card. No se dispone de paper, blog, demo ni repositorio adicional del autor.

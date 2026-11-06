@@ -4,7 +4,7 @@
 
 Stanza-de es el paquete de modelos lingüísticos de Stanza para el alemán (código ISO `de`), desarrollado por el Stanford NLP Group. Stanza es una colección de herramientas de análisis lingüístico que cubre desde la tokenización de texto crudo hasta el análisis sintáctico y el reconocimiento de entidades nombradas, y este repositorio agrupa los modelos entrenados específicamente para el procesamiento del alemán dentro de ese ecosistema.
 
-El modelo se distribuye a través de la librería Stanza y se expone en HuggingFace con el pipeline `token-classification`, aunque en la práctica el repositorio contiene varios componentes del pipeline de procesamiento lingüístico (tokenización, lematización, etiquetado POS, análisis de dependencias y NER) empaquetados conjuntamente. No es un modelo generativo: es una batería de modelos discriminativos de análisis lingüístico, orientada a producir anotaciones estructuradas sobre texto en alemán.
+El modelo se distribuye a través de la librería Stanza y se expone en Hugging Face con el pipeline `token-classification`, aunque en la práctica el repositorio contiene varios componentes del pipeline de procesamiento lingüístico (tokenización, lematización, etiquetado POS, análisis de dependencias y NER) empaquetados conjuntamente. No es un modelo generativo: es una batería de modelos discriminativos de análisis lingüístico, orientada a producir anotaciones estructuradas sobre texto en alemán.
 
 Su relevancia radica en que ofrece un pipeline completo, listo para usar y con licencia Apache 2.0, para tareas de NLP clásico en alemán, un idioma con morfología compleja y recursos comparativamente más escasos que el inglés. El repositorio ocupa 36,7 GB, lo que refleja que incluye múltiples modelos y recursos auxiliares (incluido un diccionario de lematización derivado del Wikcionario alemán).
 
@@ -35,7 +35,7 @@ Tampoco se documentan en la informacion proporcionada el numero de tokens de ent
 - Analisis de dependencias sintacticas (dependency parsing).
 - Reconocimiento de entidades nombradas (NER).
 - Procesamiento por lotes de documentos mediante la API de Stanza.
-- Integracion con la libreria Stanza y su pipeline `token-classification` en HuggingFace.
+- Integracion con la libreria Stanza y su pipeline `token-classification` en Hugging Face.
 - No es un modelo generativo: no soporta tool calling, agentes ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -56,14 +56,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada: no disponible en la informacion proporcionada; al tratarse de un conjunto de modelos discriminativos (no generativos), los requisitos por componente son previsiblemente muy inferiores a los de un LLM, pero no se aportan cifras.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible de forma explicita; el tamano del repositorio (36,7 GB) corresponde al paquete completo de modelos y recursos, no necesariamente a la memoria requerida en inferencia.
-- Opciones de despliegue: libreria Stanza (Python) y pipeline `token-classification` de HuggingFace. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: libreria Stanza (Python) y pipeline `token-classification` de Hugging Face. No se documentan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Idioma | Tipo | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| stanfordnlp/stanza-de | Aleman | Pipeline linguistico (tokenizacion, POS, lematizacion, dependencias, NER) | Apache 2.0 | No disponible | HuggingFace, libreria Stanza |
+| stanfordnlp/stanza-de | Aleman | Pipeline linguistico (tokenizacion, POS, lematizacion, dependencias, NER) | Apache 2.0 | No disponible | Hugging Face, libreria Stanza |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos sobre modelos alternativos comparables (por ejemplo, otros toolkits de analisis linguistico para aleman) que permitan una comparacion cuantitativa fiable.
@@ -80,10 +80,10 @@ No se dispone en la informacion proporcionada de datos sobre modelos alternativo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stanfordnlp/stanza-de
+- Hugging Face: https://huggingface.co/stanfordnlp/stanza-de
 - Sitio web de Stanza: https://stanfordnlp.github.io/stanza
 - Repositorio GitHub de Stanza: https://github.com/stanfordnlp/stanza
 - Descripcion de modelos combinados (Wikcionario aleman): https://stanfordnlp.github.io/stanza/combined_models.html#german-wiktionary
 - Entradas convertidas del Wikcionario: https://github.com/stanfordnlp/handparsed-treebank/tree/master/german-lemmas-wiki
 - Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
-- Repositorio de preparacion de modelos en HuggingFace: https://github.com/stanfordnlp/huggingface-models
+- Repositorio de preparacion de modelos en Hugging Face: https://github.com/stanfordnlp/huggingface-models

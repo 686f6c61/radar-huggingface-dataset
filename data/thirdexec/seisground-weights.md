@@ -96,7 +96,7 @@ No se dispone de comparaciones directas con modelos alternativos en la informaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thirdExec/seisground-weights
+- Repositorio Hugging Face: https://huggingface.co/thirdExec/seisground-weights
 - Codigo y scripts: https://github.com/Thirdbot/ModelV2
 - Encoder sismico (terceros): https://github.com/shenghanlin/SeismicFoundationModel
 - Paper del encoder: https://arxiv.org/abs/2309.02791

@@ -104,6 +104,6 @@ La diferencia fundamental no es de rendimiento sino de propósito: las alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-standard-v1
-- Repositorio del experimento, W&B, manifiestos JSON y archivos `ARCHITECTURE.md`, `VARIANT.md`, `initialize_model.py`, `smoke_test.py`, `modeling_mini_k3.py` y `configuration_mini_k3.py`: incluidos en el propio repositorio de HuggingFace (no se proporcionan URL externas en la información disponible).
+- Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-llama-mha-standard-v1
+- Repositorio del experimento, W&B, manifiestos JSON y archivos `ARCHITECTURE.md`, `VARIANT.md`, `initialize_model.py`, `smoke_test.py`, `modeling_mini_k3.py` y `configuration_mini_k3.py`: incluidos en el propio repositorio de Hugging Face (no se proporcionan URL externas en la información disponible).
 - Paper, blog, repositorio de código o demo adicionales: no disponibles.

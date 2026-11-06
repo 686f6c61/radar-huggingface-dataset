@@ -112,7 +112,7 @@ Frente a rerankers cruzados de otros proveedores (familias BGE, Jina, mxbai o se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castorini/gaggle-reranker-run4-20261005
+- Modelo en Hugging Face: https://huggingface.co/castorini/gaggle-reranker-run4-20261005
 - Modelo "soup" de los cuatro runs: https://huggingface.co/castorini/gaggle-reranker-20261005
 - Backbone preentrenado: https://huggingface.co/castorini/gaggle-nanochat-pretrained-climbmix-20260924
 - Dataset de ajuste fino: https://huggingface.co/datasets/rlhn/rlhn-250K

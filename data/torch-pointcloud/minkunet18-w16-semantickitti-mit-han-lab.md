@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MinkUNet18-W16 es un modelo de segmentación semántica de nubes de puntos LiDAR, concretamente una U-Net residual dispersa (sparse residual U-Net) de la familia Minkowski. Lo publica el usuario `torch-pointcloud` en HuggingFace como conversión del checkpoint original de `mit-han-lab/spvnas`, el repositorio de referencia del laboratorio MIT HAN Lab para redes convolucionales dispersas en 4D. Resuelve el problema de asignar una clase semántica a cada punto de una escena LiDAR, con 19 clases de interés sobre el dataset SemanticKITTI.
+MinkUNet18-W16 es un modelo de segmentación semántica de nubes de puntos LiDAR, concretamente una U-Net residual dispersa (sparse residual U-Net) de la familia Minkowski. Lo publica el usuario `torch-pointcloud` en Hugging Face como conversión del checkpoint original de `mit-han-lab/spvnas`, el repositorio de referencia del laboratorio MIT HAN Lab para redes convolucionales dispersas en 4D. Resuelve el problema de asignar una clase semántica a cada punto de una escena LiDAR, con 19 clases de interés sobre el dataset SemanticKITTI.
 
 El modelo es deliberadamente pequeño: 5,44 millones de parámetros totales, 4 canales de entrada (x, y, z, intensidad), 48 características internas y 19 clases de salida. Su interés no está en la escala sino en la eficiencia: al operar con convoluciones dispersas de Minkowski solo sobre vóxeles ocupados, evita el coste de procesar el espacio vacío de una nube de puntos, lo que lo hace viable para percepción 3D en tiempo real sobre GPU.
 
-Es relevante ahora porque el ecosistema de HuggingFace apenas tiene modelos de segmentación de nubes de puntos listos para usar con `transformers`-style API, y esta conversión a la librería `torch-pointcloud` permite cargar el checkpoint con `tp.create_model(..., pretrained=True)` y obtener tanto logits por punto como características de 48 dimensiones para tareas aguas abajo. La licencia MIT y los pesos en safetensors facilitan su integración en pipelines de robótica y conducción autónoma.
+Es relevante ahora porque el ecosistema de Hugging Face apenas tiene modelos de segmentación de nubes de puntos listos para usar con `transformers`-style API, y esta conversión a la librería `torch-pointcloud` permite cargar el checkpoint con `tp.create_model(..., pretrained=True)` y obtener tanto logits por punto como características de 48 dimensiones para tareas aguas abajo. La licencia MIT y los pesos en safetensors facilitan su integración en pipelines de robótica y conducción autónoma.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se han publicado en la información disponible resultados desglosados por cla
 
 | Modelo | Parametros | Dataset | mIoU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MinkUNet18-W16 (este) | 5,4 M | SemanticKITTI | 58,9 | MIT | HuggingFace (`torch-pointcloud`) |
+| MinkUNet18-W16 (este) | 5,4 M | SemanticKITTI | 58,9 | MIT | Hugging Face (`torch-pointcloud`) |
 | MinkUNet18-W32 (variante de mayor ancho) | no disponible | SemanticKITTI | no disponible | MIT (repo original) | `mit-han-lab/spvnas` |
 | Cylinder3D / SPVNAS / otros | no disponible | SemanticKITTI | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ No se dispone en la información proporcionada de resultados de benchmarks de al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/torch-pointcloud/minkunet18-w16.semantickitti.mit-han-lab
+- Hugging Face: https://huggingface.co/torch-pointcloud/minkunet18-w16.semantickitti.mit-han-lab
 - Paper de Minkowski Convolutional Neural Networks: https://arxiv.org/abs/1904.08755
 - Repositorio original de referencia (spvnas): https://github.com/mit-han-lab/spvnas
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

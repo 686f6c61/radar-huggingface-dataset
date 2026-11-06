@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-swe-drafter (este) | Drafter de decodificacion especulativa DFlash2 | ~526 M | 8192 (ventana de draft) | Apache 2.0 | HuggingFace |
+| qwen-swe-drafter (este) | Drafter de decodificacion especulativa DFlash2 | ~526 M | 8192 (ventana de draft) | Apache 2.0 | Hugging Face |
 | Drafters EAGLE-2 / EAGLE-3 | Drafter de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible en la informacion |
 | Cabezas Medusa | Cabezas de decodificacion especulativa | no disponible | no disponible | no disponible | no disponible en la informacion |
-| Qwen3.6-35B-A3B-FP8 (objetivo) | LLM (MoE segun el nombre, 35B-A3B) | no disponible en la informacion (el nombre indica 35B-A3B) | no disponible | no disponible | HuggingFace |
+| Qwen3.6-35B-A3B-FP8 (objetivo) | LLM (MoE segun el nombre, 35B-A3B) | no disponible en la informacion (el nombre indica 35B-A3B) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion se limita a tipo de modelo, licencia y disponibilidad.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de las alternativas en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace: coral-bricks-ai/qwen-swe-drafter](https://huggingface.co/coral-bricks-ai/qwen-swe-drafter)
+- [Hugging Face: coral-bricks-ai/qwen-swe-drafter](https://huggingface.co/coral-bricks-ai/qwen-swe-drafter)
 - [Blog: Speculative decoding for Qwen3.6 on CoralBricks](https://www.coralbricks.ai/blog/speculative-decoding-qwen36)
 - [SERVE.md (playbook de serving)](https://huggingface.co/coral-bricks-ai/qwen-swe-drafter/blob/main/SERVE.md)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B-FP8](https://huggingface.co/Qwen/Qwen3.6-35B-A3B-FP8)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `tsilimvo/nura-edge` es un modelo de lenguaje publicado en HuggingFace por el autor `tsilimvo` el 13 de agosto de 2026. Según los metadatos disponibles, está etiquetado como `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere que está pensado para tareas de conversación y que se distribuye en formato GGUF para su uso con herramientas como llama.cpp u Ollama. El modelo cuenta con aproximadamente 1.540 millones de parámetros (1.543.714.304), lo que lo sitúa en la gama de modelos pequeños, adecuados para despliegue en entornos con recursos limitados.
+El modelo `tsilimvo/nura-edge` es un modelo de lenguaje publicado en Hugging Face por el autor `tsilimvo` el 13 de agosto de 2026. Según los metadatos disponibles, está etiquetado como `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere que está pensado para tareas de conversación y que se distribuye en formato GGUF para su uso con herramientas como llama.cpp u Ollama. El modelo cuenta con aproximadamente 1.540 millones de parámetros (1.543.714.304), lo que lo sitúa en la gama de modelos pequeños, adecuados para despliegue en entornos con recursos limitados.
 
-La información pública es muy escasa: no se especifican la arquitectura, la licencia, los idiomas soportados, ni detalles sobre el entrenamiento. Tampoco hay benchmarks publicados. Por tanto, esta ficha se basa únicamente en los datos disponibles en el repositorio de HuggingFace y en inferencias razonables a partir del tamaño y las etiquetas, sin inventar ningún dato técnico adicional.
+La información pública es muy escasa: no se especifican la arquitectura, la licencia, los idiomas soportados, ni detalles sobre el entrenamiento. Tampoco hay benchmarks publicados. Por tanto, esta ficha se basa únicamente en los datos disponibles en el repositorio de Hugging Face y en inferencias razonables a partir del tamaño y las etiquetas, sin inventar ningún dato técnico adicional.
 
 ## Especificaciones tecnicas
 
@@ -67,4 +67,4 @@ No se dispone de información sobre modelos comparables específicos. Dado el ta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tsilimvo/nura-edge
+- Repositorio en Hugging Face: https://huggingface.co/tsilimvo/nura-edge

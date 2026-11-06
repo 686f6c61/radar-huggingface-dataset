@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`getting-over-it-rl-jax` es una política de aprendizaje por refuerzo, no un modelo de lenguaje. La publica el usuario zimmerk4 en HuggingFace y resuelve un problema concreto: jugar de principio a fin al videojuego *Getting Over It with Bennett Foddy* mediante una única red neuronal que controla el ratón, sin guardar ni cargar partidas. El modelo se entrena íntegramente en un simulador de la física del juego reimplementado en JAX y después se transfiere al juego real sin modificarlo, usando un plugin de BepInEx.
+`getting-over-it-rl-jax` es una política de aprendizaje por refuerzo, no un modelo de lenguaje. La publica el usuario zimmerk4 en Hugging Face y resuelve un problema concreto: jugar de principio a fin al videojuego *Getting Over It with Bennett Foddy* mediante una única red neuronal que controla el ratón, sin guardar ni cargar partidas. El modelo se entrena íntegramente en un simulador de la física del juego reimplementado en JAX y después se transfiere al juego real sin modificarlo, usando un plugin de BepInEx.
 
 La relevancia técnica está en el pipeline sim-to-real: un port bit a bit de la física Box2D 2.3.1 de Unity 2020.3 a JAX, entrenamiento PPO con currículo de estados iniciales y un mecanismo de superación de "muros" (secciones donde la política se atasca) mediante copias especializadas. El resultado reportado es una tasa de victoria del 85 % (17 de 20 ascensiones continuas) en el juego real, con una mediana de 1 min 55 s por partida.
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Tipo | Entrada | Licencia | Contexto / alcance | Disponibilidad |
 |---|---|---|---|---|---|
-| getting-over-it-rl-jax (este) | Política RL (MLP) | 105 floats | MIT | Ruta completa del juego, 85 % de victorias en 20 intentos | HuggingFace + GitHub (rama `jax-engine`) |
+| getting-over-it-rl-jax (este) | Política RL (MLP) | 105 floats | MIT | Ruta completa del juego, 85 % de victorias en 20 intentos | Hugging Face + GitHub (rama `jax-engine`) |
 | miwate/getting-over-it-rl (upstream) | Política RL | no disponible en la información | no disponible | Proyecto original; sus redes no se usaron aquí | GitHub |
 | Políticas RL para videojuegos en general | Varía | Varía | Varía | No comparable directamente sin datos | no disponible |
 
@@ -95,13 +95,13 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 - Sesgos y alucinación: no aplican en el sentido habitual de modelos generativos, pero la política puede explotar peculiaridades del simulador que no se transfieran al juego real.
 - Licencia MIT: permite uso comercial y modificación con atribución; aun así, el uso del juego real está sujeto a la licencia del propio *Getting Over It* y al plugin BepInEx.
 - Documentación escasa: 0 likes y 47 descargas, sin resultados de benchmarks frente a alternativas; el recuento exacto de parámetros y los requisitos de VRAM no están publicados.
-- El repositorio de HuggingFace tiene 0.0 GB, lo que sugiere que los artefactos pesados (grabaciones, logs de evaluación) pueden no estar incluidos o residir solo en GitHub.
+- El repositorio de Hugging Face tiene 0.0 GB, lo que sugiere que los artefactos pesados (grabaciones, logs de evaluación) pueden no estar incluidos o residir solo en GitHub.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zimmerk4/getting-over-it-rl-jax
+- Hugging Face: https://huggingface.co/zimmerk4/getting-over-it-rl-jax
 - Código (rama `jax-engine`): https://github.com/krzim/getting-over-it-rl/tree/jax-engine
 - Proyecto upstream: https://github.com/miwate/getting-over-it-rl
 - Evaluación en el repo: carpeta `eval/` (comando, log de consola e informe JSON de las 20 ascensiones)
-- Clip de victoria: `media/jax-win.gif` en el repositorio de HuggingFace
+- Clip de victoria: `media/jax-win.gif` en el repositorio de Hugging Face
 - Resultado de búsqueda web proporcionado: https://storelocatortool.com/v3/walmart-locations/ (no relacionado con el modelo; se incluye solo por completitud de la búsqueda)

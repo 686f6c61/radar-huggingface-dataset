@@ -81,8 +81,8 @@ El propio autor advierte que se trata de un unico ejemplo determinista y que no 
 
 | Modelo | Parametros | Contexto / salida | Formato y precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| xgirls/wan2.2-ti2v-5b-openvino-int4-awq (este) | ~5.000 M | 21 fotogramas a 704 × 544, forma estatica | OpenVINO IR, transformer INT4/INT8 + FP16 | Apache 2.0 | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B-Diffusers (base) | ~5.000 M | misma pipeline, precision completa | Diffusers (BF16/FP16) | Apache 2.0 | HuggingFace |
+| xgirls/wan2.2-ti2v-5b-openvino-int4-awq (este) | ~5.000 M | 21 fotogramas a 704 × 544, forma estatica | OpenVINO IR, transformer INT4/INT8 + FP16 | Apache 2.0 | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B-Diffusers (base) | ~5.000 M | misma pipeline, precision completa | Diffusers (BF16/FP16) | Apache 2.0 | Hugging Face |
 | Wan2.2 I2V A14B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Stable Video Diffusion (u otros I2V comparables) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,8 +103,8 @@ La comparacion directa solo es posible con el modelo base: comparten arquitectur
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/xgirls/wan2.2-ti2v-5b-openvino-int4-awq
+- Pagina del modelo en Hugging Face: https://huggingface.co/xgirls/wan2.2-ti2v-5b-openvino-int4-awq
 - Modelo base Wan-AI/Wan2.2-TI2V-5B-Diffusers: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers
 - Notebook oficial de OpenVINO para Wan2.2 (referencia de pipeline y exportacion): https://github.com/openvinotoolkit/openvino_notebooks/tree/latest/notebooks/wan2.2-text-image-to-video
-- Fichero de licencia del repositorio: LICENSE.txt (incluido en el repositorio de HuggingFace)
+- Fichero de licencia del repositorio: LICENSE.txt (incluido en el repositorio de Hugging Face)
 - Paper, blog o demo adicionales: no disponible en la informacion proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA (PEFT) denominado `smolvla-libero-goal-peft-t2-n10-s2000`, publicado por el usuario `sadjava` en HuggingFace. El nombre sugiere que se trata de un ajuste fino (fine-tuning) mediante LoRA sobre un modelo base identificado como `outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`, probablemente relacionado con SmolVLA, una familia de modelos de visión-lenguaje-acción (VLA) de HuggingFace. La tarea parece estar vinculada al benchmark LIBERO, concretamente a la variante "goal" (LIBERO-Goal), con una configuración de 10 pasos y 2000 iteraciones de entrenamiento.
+Este repositorio contiene un adaptador LoRA (PEFT) denominado `smolvla-libero-goal-peft-t2-n10-s2000`, publicado por el usuario `sadjava` en Hugging Face. El nombre sugiere que se trata de un ajuste fino (fine-tuning) mediante LoRA sobre un modelo base identificado como `outputs/smolvla_libero90_100k/checkpoints/last/pretrained_model`, probablemente relacionado con SmolVLA, una familia de modelos de visión-lenguaje-acción (VLA) de Hugging Face. La tarea parece estar vinculada al benchmark LIBERO, concretamente a la variante "goal" (LIBERO-Goal), con una configuración de 10 pasos y 2000 iteraciones de entrenamiento.
 
 La información pública disponible es extremadamente limitada: la model card está prácticamente vacía, sin especificaciones técnicas, licencia, idiomas ni datos de entrenamiento. El repositorio tiene un tamaño de 0.0 GB, lo que es coherente con un adaptador LoRA de pequeño tamaño (los pesos del modelo base no se incluyen). A día de hoy no se han reportado descargas ni valoraciones, lo que indica que es un artefacto de investigación o uso personal más que un modelo destinado a producción.
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - El adaptador LoRA en sí es muy ligero (tamaño de repositorio 0.0 GB), por lo que ocupa muy poca memoria de almacenamiento.
 - Para inferencia se requiere cargar el modelo base SmolVLA, cuyos requisitos de hardware no se especifican en este repositorio. SmolVLA, al ser un modelo VLA, suele necesitar una GPU con al menos 16-24 GB de VRAM dependiendo del tamaño del modelo base.
 - No se proporcionan recomendaciones de GPU específicas.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede integrar con librerías como `peft` de HuggingFace, y el modelo base podría servirse con frameworks como vLLM o TGI si se combina adecuadamente, aunque no hay instrucciones en la model card.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede integrar con librerías como `peft` de Hugging Face, y el modelo base podría servirse con frameworks como vLLM o TGI si se combina adecuadamente, aunque no hay instrucciones en la model card.
 - No se dispone de datos de latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -66,5 +66,5 @@ No se dispone de información sobre modelos comparables. Al ser un adaptador LoR
 
 ## Enlaces
 
-- Repositorio HuggingFace: [sadjava/smolvla-libero-goal-peft-t2-n10-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n10-s2000)
+- Repositorio Hugging Face: [sadjava/smolvla-libero-goal-peft-t2-n10-s2000](https://huggingface.co/sadjava/smolvla-libero-goal-peft-t2-n10-s2000)
 - Paper de LoRA (referenciado en los tags): [arxiv:1910.09700](https://arxiv.org/abs/1910.09700)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wz7475/gemma-3-4b-it-katcher-legal-sft-hf` es un checkpoint publicado en HuggingFace por el usuario wz7475 el 3 de octubre de 2026. Por la nomenclatura del identificador puede inferirse que se trata de un ajuste supervisado (SFT) orientado al dominio juridico sobre el modelo base Gemma 3 4B IT, pero esta inferencia no esta confirmada en ningun documento: la model card es la plantilla autogenerada de HuggingFace y todos sus campos figuran como `[More Information Needed]`.
+`wz7475/gemma-3-4b-it-katcher-legal-sft-hf` es un checkpoint publicado en Hugging Face por el usuario wz7475 el 3 de octubre de 2026. Por la nomenclatura del identificador puede inferirse que se trata de un ajuste supervisado (SFT) orientado al dominio juridico sobre el modelo base Gemma 3 4B IT, pero esta inferencia no esta confirmada en ningun documento: la model card es la plantilla autogenerada de Hugging Face y todos sus campos figuran como `[More Information Needed]`.
 
 El repositorio ocupa 0,3 GB declarados, usa la libreria `transformers` y publica pesos en formato `safetensors`, segun los metadatos del Hub. No se declaran licencia, idiomas, pipeline ni datos de entrenamiento, y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -88,7 +88,7 @@ Diferencias relevantes para la seleccion: frente a las alternativas, este checkp
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card: la publicada es la plantilla autogenerada de HuggingFace, sin informacion sobre desarrollo, datos, uso previsto ni limitaciones.
+- Ausencia total de model card: la publicada es la plantilla autogenerada de Hugging Face, sin informacion sobre desarrollo, datos, uso previsto ni limitaciones.
 - Licencia no declarada: no puede asumirse permiso de uso comercial, modificacion ni redistribucion. Si el modelo deriva de Gemma 3, los terminos de uso de Gemma serian aplicables, pero esto no esta confirmado.
 - Riesgo de alucinacion juridica: cualquier modelo de lenguaje puede inventar referencias normativas, numeros de articulo o sentencias. En dominio legal este riesgo es critico y exige verificacion humana de toda salida citada.
 - Sesgos desconocidos: no se han publicado analisis de sesgo ni de equidad, y se desconoce la composicion del corpus de ajuste.
@@ -101,7 +101,7 @@ Diferencias relevantes para la seleccion: frente a las alternativas, este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wz7475/gemma-3-4b-it-katcher-legal-sft-hf
+- Modelo en Hugging Face: https://huggingface.co/wz7475/gemma-3-4b-it-katcher-legal-sft-hf
 - Modelo base presumiblemente utilizado (sin confirmar): https://huggingface.co/google/gemma-3-4b-it
 - Informe tecnico de Gemma 3: https://arxiv.org/abs/2503.19786
 - Referencia citada en la model card sobre emisiones de carbono (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

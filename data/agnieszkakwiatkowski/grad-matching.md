@@ -65,7 +65,7 @@ La informacion proporcionada no permite establecer una comparativa cuantitativa 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| agnieszkakwiatkowski/grad-matching | 16.576 | no disponible | sin benchmark declarado | bsd-3-clause | HuggingFace, checkpoint de inicializacion |
+| agnieszkakwiatkowski/grad-matching | 16.576 | no disponible | sin benchmark declarado | bsd-3-clause | Hugging Face, checkpoint de inicializacion |
 | BEiT (implementaciones de referencia de Microsoft) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otros modelos de matching de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -74,7 +74,7 @@ La informacion proporcionada no permite establecer una comparativa cuantitativa 
 - El checkpoint `model.safetensors` no ha sido entrenado: no debe usarse para inferencia con expectativas de calidad.
 - No ha sido auditado en robustez, equidad ni transferencia de dominio, segun la propia model card.
 - No hay resultados de evaluacion, ni siquiera con el conjunto de validacion emparejado que el propio autor propone como primer paso.
-- La implementacion es personalizada, por lo que las APIs automaticas de carga de HuggingFace requieren un adaptador explicito y pueden fallar sin el.
+- La implementacion es personalizada, por lo que las APIs automaticas de carga de Hugging Face requieren un adaptador explicito y pueden fallar sin el.
 - No se especifican idiomas, resolucion de entrada ni formato de datos, lo que dificulta reutilizarlo sin leer el codigo fuente.
 - La licencia bsd-3-clause es permisiva e incluye uso comercial, pero la model card advierte de que los terminos de los datos de origen deben revisarse por separado si se combina con datasets externos.
 - Riesgo de alucinacion y sesgos: no aplicable en el sentido de un modelo de lenguaje, pero tampoco evaluado en el sentido de un modelo de vision.
@@ -82,6 +82,6 @@ La informacion proporcionada no permite establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agnieszkakwiatkowski/grad-matching
+- Hugging Face: https://huggingface.co/agnieszkakwiatkowski/grad-matching
 - Archivos internos referenciados en la model card: `inference.py`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado enlaces relevantes al modelo en la busqueda web: los resultados devueltos corresponden a contenido sin relacion con este repositorio y no se incluyen.

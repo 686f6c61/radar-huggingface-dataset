@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3.5-Lightning-30B-A3B-flare (este paquete) | 30B totales / 3B activos | 262.144 | Paquete Flare firmado, solo Flare | NVIDIA Open Model Agreement | HuggingFace, 0 descargas |
-| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 (checkpoint base) | 30B totales / 3B activos | no disponible en la información proporcionada | NVFP4, presumiblemente cargable en motores estándar | NVIDIA Open Model Agreement | HuggingFace (NVIDIA) |
+| Nemotron-3.5-Lightning-30B-A3B-flare (este paquete) | 30B totales / 3B activos | 262.144 | Paquete Flare firmado, solo Flare | NVIDIA Open Model Agreement | Hugging Face, 0 descargas |
+| nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 (checkpoint base) | 30B totales / 3B activos | no disponible en la información proporcionada | NVFP4, presumiblemente cargable en motores estándar | NVIDIA Open Model Agreement | Hugging Face (NVIDIA) |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La única comparación documentada es contra el checkpoint base, del que este paquete hereda pesos, licencia, datos de entrenamiento, evaluación y propiedades de seguridad. No se dispone de información sobre otros modelos comparables de 30B MoE con cuantización FP4.
@@ -84,7 +84,7 @@ La única comparación documentada es contra el checkpoint base, del que este pa
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/m-yong/Nemotron-3.5-Lightning-30B-A3B-flare
+- Paquete en Hugging Face: https://huggingface.co/m-yong/Nemotron-3.5-Lightning-30B-A3B-flare
 - Checkpoint base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Runtime Flare (NVIDIA local-inference): https://github.com/NVIDIA/local-inference
 - Licencia NVIDIA Open Model Agreement: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-agreement/

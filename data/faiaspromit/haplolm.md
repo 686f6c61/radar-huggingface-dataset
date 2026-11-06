@@ -89,7 +89,7 @@ No se dispone de datos de parámetros, contexto ni licencia de Evo 2, NTv3 y mtD
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FaiasPromit/HaploLM
+- Hugging Face: https://huggingface.co/FaiasPromit/HaploLM
 - Repositorio GitHub (código, preparación de datos y tests): https://github.com/FaiasPromit/HaploLM
 - Artículo: "Human Maternal Family Tree from DNA Language Models" de Faias Satter y Aminul Islam (no se proporciona URL directa en la información disponible)
 - MITOMAP (lista de secuencias de longitud completa): no se proporciona URL en la información disponible

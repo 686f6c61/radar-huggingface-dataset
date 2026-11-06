@@ -79,10 +79,10 @@ Los deltas de intervencion son incrementos de perdida NTP en validacion respecto
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tessera-135M-Gate | 142.113.600 | No disponible | Perplejidad validacion 6,5213 (TinyStories sobreajustado) | apache-2.0 | HuggingFace |
-| SmolLM2-135M (base) | ~135 M | No disponible en la ficha | No comparable en esta informacion | apache-2.0 | HuggingFace |
-| Tessera-1B-Nano-Base | No disponible (entrenado con 1.000 M de tokens) | No disponible | Control NTP-only; sin datos de perplejidad en esta informacion | apache-2.0 | HuggingFace |
-| Tessera-1B-Nano | No disponible (entrenado con 1.000 M de tokens) | No disponible | Perplejidad codebook 7,55, uso 85,6%, delta a cero +0,105 | apache-2.0 | HuggingFace |
+| Tessera-135M-Gate | 142.113.600 | No disponible | Perplejidad validacion 6,5213 (TinyStories sobreajustado) | apache-2.0 | Hugging Face |
+| SmolLM2-135M (base) | ~135 M | No disponible en la ficha | No comparable en esta informacion | apache-2.0 | Hugging Face |
+| Tessera-1B-Nano-Base | No disponible (entrenado con 1.000 M de tokens) | No disponible | Control NTP-only; sin datos de perplejidad en esta informacion | apache-2.0 | Hugging Face |
+| Tessera-1B-Nano | No disponible (entrenado con 1.000 M de tokens) | No disponible | Perplejidad codebook 7,55, uso 85,6%, delta a cero +0,105 | apache-2.0 | Hugging Face |
 
 La comparacion directa con modelos de calidad general no es significativa, ya que Tessera-135M-Gate esta sobreajustado sobre un corpus sintetico y solo persigue validar la viabilidad arquitectonica.
 
@@ -100,7 +100,7 @@ La comparacion directa con modelos de calidad general no es significativa, ya qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yava-code/Tessera-135M-Gate
+- Modelo en Hugging Face: https://huggingface.co/yava-code/Tessera-135M-Gate
 - Coleccion Tessera: https://huggingface.co/collections/yava-code/tessera-next-concept-prediction-gated-and-scaled
 - Tessera-1B-Nano-Base: https://huggingface.co/yava-code/Tessera-1B-Nano-Base
 - Tessera-1B-Nano: https://huggingface.co/yava-code/Tessera-1B-Nano

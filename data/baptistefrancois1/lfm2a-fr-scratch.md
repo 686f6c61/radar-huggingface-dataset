@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`baptistefrancois1/lfm2a-fr-scratch` es un ajuste fino en frances del modelo de audio `LiquidAI/LFM2.5-Audio-1.5B`. Lo publica el usuario de HuggingFace baptistefrancois1 y se distribuye mediante la libreria `liquid-audio`. El objetivo declarado es el "anclaje secuencial" (*sequential French anchoring*) del modelo padre al frances, es decir, adaptar un modelo de audio preentrenado a un idioma concreto mediante fases sucesivas de ajuste.
+`baptistefrancois1/lfm2a-fr-scratch` es un ajuste fino en frances del modelo de audio `LiquidAI/LFM2.5-Audio-1.5B`. Lo publica el usuario de Hugging Face baptistefrancois1 y se distribuye mediante la libreria `liquid-audio`. El objetivo declarado es el "anclaje secuencial" (*sequential French anchoring*) del modelo padre al frances, es decir, adaptar un modelo de audio preentrenado a un idioma concreto mediante fases sucesivas de ajuste.
 
 La particularidad del repositorio es su organizacion: la rama `main` solo contiene un indice en Markdown, y cada modelo ajustado vive en una rama independiente que debe cargarse indicando la revision, por ejemplo `LFM2AudioModel.from_pretrained(repo, revision="s1-anchor-v1")`. En el momento de redactar esta ficha solo existe una rama publicada, `s1-anchor-v1`, correspondiente a la fase "s1-anchor", marcada como validada y entrenada el 2026-08-27.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `baptistefrancois1/lfm2a-fr-scratch` (rama `s1-anchor-v1`) | no confirmado (~1,5B segun el nombre del padre) | no disponible | lfm1.0 | Publico en HuggingFace, 0 descargas, 0 likes | Ajuste al frances, organizado por ramas |
+| `baptistefrancois1/lfm2a-fr-scratch` (rama `s1-anchor-v1`) | no confirmado (~1,5B segun el nombre del padre) | no disponible | lfm1.0 | Publico en Hugging Face, 0 descargas, 0 likes | Ajuste al frances, organizado por ramas |
 | `LiquidAI/LFM2.5-Audio-1.5B` (modelo padre) | 1,5B segun el nombre | no disponible en esta informacion | no disponible en esta informacion | Publico, referenciado como origen | Modelo base sin ajuste especifico al frances |
 | Otras alternativas de audio-LLM de tamano similar o con soporte de frances | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento ni de especificaciones de alternativas en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baptistefrancois1/lfm2a-fr-scratch
+- Modelo en Hugging Face: https://huggingface.co/baptistefrancois1/lfm2a-fr-scratch
 - Rama de pesos `s1-anchor-v1`: https://huggingface.co/baptistefrancois1/lfm2a-fr-scratch/tree/s1-anchor-v1
 - Modelo padre: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Los resultados de busqueda web disponibles no contienen informacion relacionada con este modelo (corresponden a paginas de soporte de Microsoft), por lo que no se incluyen mas enlaces.

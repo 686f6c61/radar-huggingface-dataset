@@ -25,7 +25,7 @@ Es relevante para desarrolladores que despliegan detección de objetos en Mac co
 | Dataset de evaluacion | detection-datasets/coco (COCO val2017, 5000 imagenes) |
 | Resolucion de entrada reportada | 640x640 con preprocesado letterbox |
 | Libreria / backend | MLX (Apple Silicon) |
-| Tamano del repositorio en HuggingFace | 0,0 GB |
+| Tamano del repositorio en Hugging Face | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -88,9 +88,9 @@ No se han publicado en la informacion disponible otros benchmarks (por ejemplo, 
 
 | Modelo | Parametros | Contexto / entrada | mAP50-95 (COCO val2017) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| youakrim/yolo12s-mlx | 9,3 M | 640x640, lote 1 | 0,4757 (MLX, declarado) | AGPL-3.0 | HuggingFace + GitHub yolo12-mlx |
+| youakrim/yolo12s-mlx | 9,3 M | 640x640, lote 1 | 0,4757 (MLX, declarado) | AGPL-3.0 | Hugging Face + GitHub yolo12-mlx |
 | Ultralytics YOLO12s (PyTorch oficial) | 9,3 M | 640x640, lote 1 | 0,4756 (declarado) | AGPL-3.0 | Pesos oficiales Ultralytics |
-| Otras variantes de la coleccion YOLO12 for MLX (n, m, l, x) | no disponible | no disponible | no disponible | no disponible | Coleccion de HuggingFace del mismo autor |
+| Otras variantes de la coleccion YOLO12 for MLX (n, m, l, x) | no disponible | no disponible | no disponible | no disponible | Coleccion de Hugging Face del mismo autor |
 | YOLOv8s / YOLO11s | no disponible | no disponible | no disponible | no disponible | no incluidos en la informacion proporcionada |
 
 La comparacion directa disponible es la del mismo conjunto de pesos ejecutado en dos backends: la implementacion MLX reproduce la precision de PyTorch y reduce la latencia un 24,6 % en fp16/bf16 (15,19 ms frente a 19,23 ms) y un 24,6 % tambien en fp32 (19,38 ms frente a 25,69 ms) en el M5 medido.
@@ -106,11 +106,11 @@ La comparacion directa disponible es la del mismo conjunto de pesos ejecutado en
 - Las cifras de latencia excluyen NMS y E/S, por lo que el coste extremo a extremo de un pipeline real sera mayor que los 15,19 ms en bf16.
 - Las comparaciones con otras implementaciones solo son validas si se replican exactamente el letterbox 640, la confianza 0,001, el IoU 0,7, el maximo de 300 detecciones y el uso de pycocotools.
 - En deteccion de objetos no aplica la alucinacion en sentido generativo, pero si el riesgo de cajas espurias o de objetos no detectados en escenas con oclusion, baja iluminacion o dominios alejados de COCO.
-- Fechas de publicacion y actualizacion en HuggingFace: 7 de octubre de 2026, con apenas 18 segundos de diferencia entre creacion y ultima modificacion, lo que sugiere un repositorio sin mantenimiento posterior documentado.
+- Fechas de publicacion y actualizacion en Hugging Face: 7 de octubre de 2026, con apenas 18 segundos de diferencia entre creacion y ultima modificacion, lo que sugiere un repositorio sin mantenimiento posterior documentado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/youakrim/yolo12s-mlx
+- Hugging Face: https://huggingface.co/youakrim/yolo12s-mlx
 - Repositorio de la implementacion MLX: https://github.com/youakrim/yolo12-mlx
 - Coleccion YOLO12 for MLX: https://huggingface.co/collections/youakrim/yolo12-for-mlx-6ac659ef0a06781003d1d3cc
 - Modelo base: https://huggingface.co/Ultralytics/YOLO12

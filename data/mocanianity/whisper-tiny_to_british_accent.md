@@ -91,7 +91,7 @@ La comparacion se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mocanianity/whisper-tiny_to_british_accent
+- Modelo en Hugging Face: https://huggingface.co/Mocanianity/whisper-tiny_to_british_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper en OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

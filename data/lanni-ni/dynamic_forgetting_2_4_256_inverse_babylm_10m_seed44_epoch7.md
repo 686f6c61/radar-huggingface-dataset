@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch7` es un modelo experimental de generación de texto desarrollado por el usuario de HuggingFace `Lanni-ni` y publicado el 9 de septiembre de 2026. Según el nombre, forma parte de una línea de investigación denominada "dynamic forgetting" y está entrenado sobre un conjunto de datos vinculado al reto BabyLM, probablemente con 10 millones de tokens, semilla aleatoria 44 y 7 épocas. El modelo cuenta con 27.449.096 parámetros y sus pesos se distribuyen en formato safetensors.
+El modelo `dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch7` es un modelo experimental de generación de texto desarrollado por el usuario de Hugging Face `Lanni-ni` y publicado el 9 de septiembre de 2026. Según el nombre, forma parte de una línea de investigación denominada "dynamic forgetting" y está entrenado sobre un conjunto de datos vinculado al reto BabyLM, probablemente con 10 millones de tokens, semilla aleatoria 44 y 7 épocas. El modelo cuenta con 27.449.096 parámetros y sus pesos se distribuyen en formato safetensors.
 
 La relevancia de este modelo radica en que explora el fenómeno del "olvido dinámico" en modelos de lenguaje pequeños, un tema de investigación activo en aprendizaje continuo, desaprendizaje (machine unlearning) y regularización. No obstante, la model card publicada es autogenerada y no contiene especificaciones técnicas, datos de entrenamiento, evaluaciones ni instrucciones de uso, por lo que se trata de un artefacto de investigación sin documentación exhaustiva.
 
@@ -27,7 +27,7 @@ Respecto al entrenamiento, el nombre indica un conjunto de datos "babylm" con 10
 
 ## Capacidades
 
-- Generación de texto: el modelo está configurado con el pipeline `text-generation` de HuggingFace.
+- Generación de texto: el modelo está configurado con el pipeline `text-generation` de Hugging Face.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingües: no documentado.
@@ -75,5 +75,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch7
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_inverse_babylm_10m_seed44_epoch7
 - Referencia del tag arxiv:1910.09700 (Lacoste et al., 2019; no es un paper del modelo): https://arxiv.org/abs/1910.09700

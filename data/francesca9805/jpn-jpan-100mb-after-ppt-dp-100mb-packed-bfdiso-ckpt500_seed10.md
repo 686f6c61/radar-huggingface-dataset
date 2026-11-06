@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint base `francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de HuggingFace francesca9805. Se trata de un modelo decoder-only de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la categoria de modelos pequenos, por debajo de la mayoria de LLM actuales.
+El modelo `francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10` es un ajuste fino de tipo SFT (supervised fine-tuning) sobre el checkpoint base `francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10`, desarrollado por el usuario de Hugging Face francesca9805. Se trata de un modelo decoder-only de arquitectura GPT-2 con 124.770.816 parametros (aproximadamente 124,8 millones), lo que lo situa en la categoria de modelos pequenos, por debajo de la mayoria de LLM actuales.
 
-El problema que aborda es acotado: el autor esta realizando una serie de experimentos controlados de preentrenamiento y ajuste sobre corpus empaquetados de en torno a 100 MB, con multiples semillas (`seed10`, `seed455`, etc.) y checkpoints intermedios (`ckpt500`). El nombre del repositorio sugiere un corpus en japones (`jpn-jpan`), aunque la model card no declara idiomas soportados de forma explicita y la ficha de HuggingFace los marca como no disponibles.
+El problema que aborda es acotado: el autor esta realizando una serie de experimentos controlados de preentrenamiento y ajuste sobre corpus empaquetados de en torno a 100 MB, con multiples semillas (`seed10`, `seed455`, etc.) y checkpoints intermedios (`ckpt500`). El nombre del repositorio sugiere un corpus en japones (`jpn-jpan`), aunque la model card no declara idiomas soportados de forma explicita y la ficha de Hugging Face los marca como no disponibles.
 
 Su relevancia es principalmente metodologica y de investigacion reproducible: permite estudiar el efecto del SFT sobre un modelo base diminuto, comparar semillas y checkpoints, y disponer de un artefacto ligero para pruebas de infraestructura (TGI, endpoints compatibles). No es un modelo pensado para produccion generalista ni para tareas que exijan razonamiento complejo. El entrenamiento se realizo con TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0, con seguimiento en Weights & Biases.
 
@@ -12,7 +12,7 @@ Su relevancia es principalmente metodologica y de investigacion reproducible: pe
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 (aproximadamente 124,8 M) |
 | Parametros activos | no disponible (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
@@ -52,7 +52,7 @@ El entrenamiento se realizo mediante SFT con la libreria TRL (version 0.23.0), p
 - Pruebas de infraestructura de despliegue: encaja en tests de integracion de TGI, endpoints compatibles con OpenAI o pipelines de CI para validar que una plataforma de serving funciona correctamente antes de pasar a modelos grandes.
 - Generacion de texto en japones para prototipos: si se confirma el dominio linguistico sugerido por el nombre, puede usarse para prototipar tareas de continuacion de texto o plantillas conversacionales en japones, asumiendo una calidad limitada por el tamano.
 - Fine-tuning posterior de bajo coste: al ser un modelo de 124 M de parametros, es viable ajustarlo en una unica GPU consumer para tareas muy concretas (clasificacion de texto, generacion de plantillas, normalizacion de respuestas) partiendo de este checkpoint ya ajustado con SFT.
-- Educacion y docencia: util para ilustrar en clase el ciclo completo de preentrenamiento, SFT con TRL, evaluacion por semillas y publicacion en HuggingFace sin necesidad de infraestructura de cluster.
+- Educacion y docencia: util para ilustrar en clase el ciclo completo de preentrenamiento, SFT con TRL, evaluacion por semillas y publicacion en Hugging Face sin necesidad de infraestructura de cluster.
 - Generacion de datos sinteticos auxiliares: puede emplearse para producir borradores o datos de aumento de bajo valor anadido en pipelines de filtrado y anotacion, siempre con revision humana posterior.
 - Inferencia en CPU o dispositivos con recursos minimos: con alrededor de 0,25 GB en fp16 y unos 0,5 GB en fp32, es desplegable en entornos sin GPU dedicada para tareas de baja concurrencia.
 
@@ -75,10 +75,10 @@ La model card no incluye tablas de evaluacion (MMLU, HumanEval, GSM8K, JGLUE u o
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes | Ajuste SFT con TRL sobre checkpoint propio; orientado a investigacion |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible en HuggingFace | Referencia de la misma arquitectura y orden de magnitud; contexto y licencia no confirmados para el modelo analizado |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun su model card) | HuggingFace | Version destilada de GPT-2, mas rapida y ligera, entrenada en ingles |
-| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT modificada | HuggingFace | Alternativa del mismo linaje con mas capacidad y mayor coste de inferencia |
+| francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes | Ajuste SFT con TRL sobre checkpoint propio; orientado a investigacion |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Ampliamente disponible en Hugging Face | Referencia de la misma arquitectura y orden de magnitud; contexto y licencia no confirmados para el modelo analizado |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun su model card) | Hugging Face | Version destilada de GPT-2, mas rapida y ligera, entrenada en ingles |
+| GPT-2 medium (OpenAI) | 355 M | 1024 tokens | MIT modificada | Hugging Face | Alternativa del mismo linaje con mas capacidad y mayor coste de inferencia |
 
 La comparacion con los modelos de la familia GPT-2 es pertinente unicamente por arquitectura y orden de magnitud. No existen datos de benchmarks del modelo analizado que permitan una comparacion de rendimiento, y su licencia e idiomas no estan declarados, por lo que no puede recomendarse como sustituto directo de GPT-2 small o distilgpt2 en entornos de produccion con requisitos legales claros.
 
@@ -96,11 +96,11 @@ La comparacion con los modelos de la familia GPT-2 es pertinente unicamente por 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/xpbct8b5
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Variante de la serie en HuggingFace (`jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10`): https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10
-- Variante de la serie en HuggingFace (`jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455`): https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455
+- Variante de la serie en Hugging Face (`jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10`): https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10
+- Variante de la serie en Hugging Face (`jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455`): https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed455
 - Ficha de despliegue en FriendliAI: https://friendli.ai/models/francesca9805/jpn-jpan-100mb-ppt-Dp-100mb-packed-bfd_seed10
 - Ficha en LLM Explorer (modelo de la misma serie, 124,8 M de parametros): https://llm-explorer.com/model/francesca9805%2Fjpn-jpan-100mb-ppt-Dp-10mb-packed-bfd_seed10,eWZY8MrE1AYkahbauyK4R

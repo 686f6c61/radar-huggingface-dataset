@@ -67,16 +67,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch14 | 6,74B | no disponible (base 4096) | Unlearning TOFU forget10, epoca 14 | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 (base Llama 2) | Fine-tune supervisado sobre TOFU completo | llama2 | HuggingFace, publico |
-| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat generalista Llama 2 | llama2 | HuggingFace, ampliamente usado |
-| Meta Llama 2 7B (base) | 6,74B | 4096 | Modelo fundacional | llama2 | HuggingFace / Meta |
+| unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch14 | 6,74B | no disponible (base 4096) | Unlearning TOFU forget10, epoca 14 | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6,74B | 4096 (base Llama 2) | Fine-tune supervisado sobre TOFU completo | llama2 | Hugging Face, publico |
+| NousResearch/Llama-2-7b-chat-hf | ~6,74B | 4096 | Chat generalista Llama 2 | llama2 | Hugging Face, ampliamente usado |
+| Meta Llama 2 7B (base) | 6,74B | 4096 | Modelo fundacional | llama2 | Hugging Face / Meta |
 
 La comparativa se limita a modelos de la misma familia y tamano porque no se dispone de resultados de benchmarks del checkpoint. Frente a `locuslab/tofu_ft_llama2-7b`, la diferencia es el procedimiento de olvido sobre forget10; frente a `NousResearch/Llama-2-7b-chat-hf`, comparte los embeddings y la cabeza LM reinicializados.
 
 ## Limitaciones y advertencias
 
-- Modelo de investigacion: sin descargas ni likes en HuggingFace, sin benchmarks publicados y sin validacion independiente del grado real de olvido.
+- Modelo de investigacion: sin descargas ni likes en Hugging Face, sin benchmarks publicados y sin validacion independiente del grado real de olvido.
 - Riesgo de olvido incompleto: la eficacia del unlearning en TOFU es objeto de debate; checkpoints como este pueden seguir filtrando informacion de la particion forget ante prompts adversarios.
 - Riesgo de degradacion en retain: la combinacion de reinicializacion de embeddings y entrenamiento con perdida IHL puede reducir la calidad general del modelo; no hay metricas publicadas que lo cuantifiquen.
 - Riesgo de alucinacion: inherente a Llama 2 7B; el fine-tune TOFU esta centrado en autores ficticios, lo que puede aumentar la generacion de datos inexactos fuera del dominio.
@@ -88,7 +88,7 @@ La comparativa se limita a modelos de la misma familia y tamano porque no se dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch14
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_embed-epoch14
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Origen de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Referencia de Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-hf

@@ -71,6 +71,6 @@ No disponible. Este adaptador es un LoRA específico para un dominio concreto (a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bghira/flux-anyflow-e621-stage1
+- Repositorio Hugging Face: https://huggingface.co/bghira/flux-anyflow-e621-stage1
 - Modelo base FLUX.1-dev: https://huggingface.co/black-forest-labs/flux.1-dev
 - Herramienta SimpleTuner (mencionada en el entrenamiento): https://github.com/bghira/SimpleTuner (no confirmado en la documentación, pero es la herramienta referenciada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `wiktoriakowalczyk/study-3d-scene-understanding` no es un modelo de aprendizaje automatico en el sentido habitual, sino un conjunto estructurado de notas de investigacion sobre comprension de escenas 3D. Lo publica el usuario de HuggingFace wiktoriakowalczyk (Zhou Jing) bajo licencia MIT y lo etiqueta explicitamente con `research-notes` y `3d-scene-understanding`. El artefacto principal es el fichero `paper_notes.md`; el unico tensor presente es un `safetensors` de 49.600 parametros, un volumen tres ordenes de magnitud por debajo del de cualquier modelo funcional.
+El repositorio `wiktoriakowalczyk/study-3d-scene-understanding` no es un modelo de aprendizaje automatico en el sentido habitual, sino un conjunto estructurado de notas de investigacion sobre comprension de escenas 3D. Lo publica el usuario de Hugging Face wiktoriakowalczyk (Zhou Jing) bajo licencia MIT y lo etiqueta explicitamente con `research-notes` y `3d-scene-understanding`. El artefacto principal es el fichero `paper_notes.md`; el unico tensor presente es un `safetensors` de 49.600 parametros, un volumen tres ordenes de magnitud por debajo del de cualquier modelo funcional.
 
 La propia model card insiste en el caracter exploratorio del material: las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales, y el autor declara que no se ha publicado ningun checkpoint entrenado, codigo ni mejora de benchmark. El contenido se limita a delimitar el alcance de una pregunta de investigacion, proponer una comparacion con baselines emparejados, citar benchmarks publicos relevantes y enumerar comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y metodologica, no de rendimiento: sirve
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre arquitectura, mas alla de la etiqueta `transformer` asociada al repositorio por el sistema de HuggingFace. No se describe numero de capas, dimension de embeddings, mecanismo de atencion, tokenizador ni vocabulario. Los 49.600 parametros registrados en el fichero safetensors no se corresponden con ninguna configuracion conocida de transformer de uso general y no hay `config.json` ni documentacion que explique su proposito; es plausible que se trate de un tensor auxiliar generado automaticamente por la plataforma y no de un modelo entrenado.
+No hay informacion publicada sobre arquitectura, mas alla de la etiqueta `transformer` asociada al repositorio por el sistema de Hugging Face. No se describe numero de capas, dimension de embeddings, mecanismo de atencion, tokenizador ni vocabulario. Los 49.600 parametros registrados en el fichero safetensors no se corresponden con ninguna configuracion conocida de transformer de uso general y no hay `config.json` ni documentacion que explique su proposito; es plausible que se trate de un tensor auxiliar generado automaticamente por la plataforma y no de un modelo entrenado.
 
 Tampoco existe informacion sobre entrenamiento: no se declaran tokens de entrenamiento, composicion del dataset, fases de ajuste (SFT, RLHF, DPO) ni procedimiento de evaluacion. La model card indica de forma explicita que el trabajo es exploratorio y que no se reclama ninguna ablacion completada ni checkpoint liberado. Las secciones del documento se dividen entre planes, hipotesis y referencias, y el propio autor advierte de que, si en el futuro se anaden resultados, deberan acompanarse de versiones de dataset, comandos, semillas, hardware y registros en crudo.
 
@@ -77,8 +77,8 @@ No disponible. Este repositorio pertenece a la categoria de notas de investigaci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wiktoriakowalczyk/study-3d-scene-understanding
-- Perfil del autor en HuggingFace: https://huggingface.co/wiktoriakowalczyk
+- Repositorio en Hugging Face: https://huggingface.co/wiktoriakowalczyk/study-3d-scene-understanding
+- Perfil del autor en Hugging Face: https://huggingface.co/wiktoriakowalczyk
 - Repositorio relacionado del mismo autor: https://huggingface.co/wiktoriakowalczyk/paper_024791834_3d_scene_understanding
 - Workshop 3D Scene Understanding at CVPR 2026: https://scene-understanding.com/
 - 5th Workshop on 3D Scene Understanding for Vision, Graphics, and Robotics (CVPR 2025): https://cvpr.thecvf.com/virtual/2025/workshop/32295

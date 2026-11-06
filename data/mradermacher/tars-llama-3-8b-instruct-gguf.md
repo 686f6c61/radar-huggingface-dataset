@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TARS-Llama-3-8B-Instruct-GGUF es una publicación de cuantizaciones estáticas en formato GGUF del modelo TARS-Llama-3-8B-Instruct, generada por el usuario mradermacher, conocido en HuggingFace por producir versiones cuantizadas de modelos de terceros. El repositorio no contiene pesos originales ni información sobre el entrenamiento: es exclusivamente una conversión del checkpoint original publicado por el usuario w831152001, por lo que su valor práctico reside en facilitar la ejecución local del modelo en hardware de consumo mediante llama.cpp y sus derivados.
+TARS-Llama-3-8B-Instruct-GGUF es una publicación de cuantizaciones estáticas en formato GGUF del modelo TARS-Llama-3-8B-Instruct, generada por el usuario mradermacher, conocido en Hugging Face por producir versiones cuantizadas de modelos de terceros. El repositorio no contiene pesos originales ni información sobre el entrenamiento: es exclusivamente una conversión del checkpoint original publicado por el usuario w831152001, por lo que su valor práctico reside en facilitar la ejecución local del modelo en hardware de consumo mediante llama.cpp y sus derivados.
 
 Por el nombre y el recuento real de parámetros del repositorio (8.030.261.248, aproximadamente 8,03 mil millones), el modelo subyacente es un ajuste de la familia Llama 3 de 8B, presumiblemente derivado de Llama-3-8B-Instruct, orientado a uso conversacional según la etiqueta `conversational` del repositorio. Se trata, por tanto, de un transformer denso de tipo decoder-only, sin mezcla de expertos ni componentes de estado recurrente.
 
@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: el repositori
 | Formato de pesos | GGUF (repositorio de 71,8 GB con las cuantizaciones estaticas) |
 | Modelo de origen | w831152001/TARS-Llama-3-8B-Instruct |
 | Autor de la cuantizacion | mradermacher |
-| Fecha de creacion del repositorio | 2026-09-20 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repositorio | 2026-09-20 (segun metadatos de Hugging Face) |
 | Ultima actualizacion | 2026-09-20 |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
@@ -98,7 +98,7 @@ La ventaja diferencial del repositorio analizado es unicamente la variedad de cu
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/TARS-Llama-3-8B-Instruct-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/TARS-Llama-3-8B-Instruct-GGUF
 - Modelo base declarado por el autor: https://huggingface.co/w831152001/TARS-Llama-3-8B-Instruct
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Repositorio de llama.cpp (runtime de referencia para GGUF): https://github.com/ggml-org/llama.cpp

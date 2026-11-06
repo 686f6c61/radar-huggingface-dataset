@@ -6,7 +6,7 @@ Aevanis-Traverse es un cabezal de percepción geométrica para robótica de loco
 
 La arquitectura combina un tallo híbrido basado en ConvNeXt, que preserva discontinuidades de profundidad y gradientes de sombra de alta frecuencia en 2D, con un upsampling transpuesto denso que expande tokens latentes de 14x14 a una rejilla de transitabilidad de 28x28. Sobre esa representación se ejecutan varias cabezas de tarea geométrica que predicen de forma concurrente normales del terreno (pitch y roll), coeficientes de fricción dinámica y mapas de apoyo seguro en un único forward pass.
 
-El modelo está orientado a bucles de control en tiempo real en robots cuadrúpedos, bípedos y rovers, con una latencia declarada inferior a 2,8 ms (más de 150 Hz). Se distribuye bajo licencia Apache-2.0 y está etiquetado para despliegue en edge AI. El repositorio de HuggingFace figura con 0 GB de tamaño y sin descargas ni likes en el momento de la consulta, lo que sugiere una publicación muy reciente o un estado de disponibilidad incompleto.
+El modelo está orientado a bucles de control en tiempo real en robots cuadrúpedos, bípedos y rovers, con una latencia declarada inferior a 2,8 ms (más de 150 Hz). Se distribuye bajo licencia Apache-2.0 y está etiquetado para despliegue en edge AI. El repositorio de Hugging Face figura con 0 GB de tamaño y sin descargas ni likes en el momento de la consulta, lo que sugiere una publicación muy reciente o un estado de disponibilidad incompleto.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ No se dispone en la información proporcionada de modelos comparables con especi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Aevanis-Traverse | no disponible | no aplica (percepción por fotograma) | Apache-2.0 | HuggingFace, repo de 0 GB |
+| Aevanis-Traverse | no disponible | no aplica (percepción por fotograma) | Apache-2.0 | Hugging Face, repo de 0 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,5 +91,5 @@ No se dispone en la información proporcionada de modelos comparables con especi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aevanis/Aevanis-Traverse
+- Hugging Face: https://huggingface.co/Aevanis/Aevanis-Traverse
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

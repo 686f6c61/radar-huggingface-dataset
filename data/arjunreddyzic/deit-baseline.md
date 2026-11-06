@@ -30,7 +30,7 @@ El repositorio incluye una receta de entrenamiento por defecto basada en el opti
 - Clasificacion de imagenes: la arquitectura está diseñada para tareas de clasificación, aunque el checkpoint actual no ha sido entrenado, por lo que no produce predicciones útiles sin un entrenamiento previo.
 - Reproducibilidad: sirve como punto de partida para reproducir experimentos con configuraciones explícitas (config.json y training_args.json).
 - Personalizacion: al ser una implementación propia, permite modificar la arquitectura (atención, fusión, normalización) para investigar variantes.
-- Integracion: el script inference.py incluye un ejemplo de prueba de humo, aunque requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- Integracion: el script inference.py incluye un ejemplo de prueba de humo, aunque requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -39,7 +39,7 @@ El repositorio incluye una receta de entrenamiento por defecto basada en el opti
 - Ensenanza: ilustrar el funcionamiento interno de un transformer de visión con un código legible y configurable.
 - Desarrollo de nuevas arquitecturas: usar la implementación como base para experimentar con atención dilatada o co-atención en dominios específicos.
 - Benchmarking de hardware: medir latencia y consumo de recursos en dispositivos embebidos o CPUs, dado su tamaño reducido.
-- Prototipado rapido: probar flujos de trabajo de HuggingFace (carga, guardado, versionado) con un modelo ligero antes de escalar a modelos mayores.
+- Prototipado rapido: probar flujos de trabajo de Hugging Face (carga, guardado, versionado) con un modelo ligero antes de escalar a modelos mayores.
 
 ## Benchmarks y rendimiento
 
@@ -62,13 +62,13 @@ No se dispone de datos comparativos con otras implementaciones de DeiT nano o mo
 - Checkpoint no entrenado: el archivo model.safetensors es solo una inicialización; no produce resultados de clasificación válidos sin entrenamiento.
 - Sin auditoria: no se ha evaluado robustez, equidad ni transferencia a dominios específicos.
 - Experimental: la implementación debe tratarse como un punto de partida, no como un modelo estable.
-- Compatibilidad limitada: las APIs genéricas de HuggingFace no pueden cargar el modelo sin un adaptador explícito.
+- Compatibilidad limitada: las APIs genéricas de Hugging Face no pueden cargar el modelo sin un adaptador explícito.
 - Datos externos: la licencia MIT cubre el código, pero los términos de los datasets utilizados deben revisarse por separado.
 - Sin soporte de producción: no se recomienda su uso en entornos reales sin un entrenamiento y validación exhaustivos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arjunreddyzic/deit-baseline
+- Repositorio en Hugging Face: https://huggingface.co/arjunreddyzic/deit-baseline
 - Repositorio oficial de DeiT (GitHub): https://github.com/facebookresearch/deit
-- Documentacion de DeiT en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/deit
+- Documentacion de DeiT en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/deit
 - Perfil del autor: https://huggingface.co/arjunreddyzic/models

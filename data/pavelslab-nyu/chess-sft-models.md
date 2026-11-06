@@ -78,6 +78,6 @@ No se dispone de información sobre otros modelos de ajedrez basados en LLM con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pavelslab-nyu/Chess-SFT-Models
+- Repositorio Hugging Face: https://huggingface.co/pavelslab-nyu/Chess-SFT-Models
 - Repositorio GitHub (pre2post-chess): https://github.com/pavelslab-nyu/pre2post-chess
-- Colección Pre2Post-Chess en HuggingFace: https://huggingface.co/collections/pavelslab-nyu/pre2post-chess
+- Colección Pre2Post-Chess en Hugging Face: https://huggingface.co/collections/pavelslab-nyu/pre2post-chess

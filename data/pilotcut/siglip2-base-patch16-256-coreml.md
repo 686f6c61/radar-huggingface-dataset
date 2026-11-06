@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Formato | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pilotcut/siglip2-base-patch16-256-coreml | Core ML (.mlpackage) | 8-bit paletizada | Apache 2.0 | HuggingFace |
-| google/siglip2-base-patch16-256 | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| nodevorg/siglip2-base-patch16-256-coreml | Core ML | no disponible | no disponible | HuggingFace |
+| pilotcut/siglip2-base-patch16-256-coreml | Core ML (.mlpackage) | 8-bit paletizada | Apache 2.0 | Hugging Face |
+| google/siglip2-base-patch16-256 | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| nodevorg/siglip2-base-patch16-256-coreml | Core ML | no disponible | no disponible | Hugging Face |
 
 Los tres modelos comparten la misma arquitectura SigLIP2 base y el mismo contexto de 64 tokens de texto e imagen de 256x256 píxeles. No se dispone de datos de rendimiento comparativo en la información proporcionada.
 

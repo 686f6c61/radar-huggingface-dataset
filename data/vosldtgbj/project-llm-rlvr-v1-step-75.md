@@ -77,10 +77,10 @@ La model card indica de forma explicita que este checkpoint no dispone de una pu
 
 | Modelo | Parametros (safetensors) | Contexto | Rendimiento comparado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `vosldtgbj/project-llm-rlvr-v1-step-75` (este) | 11.959.730.224 | No disponible; receta RLVR con 8.192/2.048/10.240 tokens | Sin evaluacion congelada publicada | Gemma | Publico en HuggingFace |
-| `vosldtgbj/project-llm-rlvr-v1-step-50` (padre directo) | No disponible | No disponible | Sin evaluacion congelada publicada; 25 actualizaciones menos de RLVR | Gemma | Publico en HuggingFace |
-| `vosldtgbj/project-llm-rlvr-v1-step-100` (siguiente) | No disponible | No disponible | Sin evaluacion congelada publicada; 25 actualizaciones mas de RLVR | Gemma | Publico en HuggingFace |
-| `google/gemma-4-12B-it` (base original) | No disponible | No disponible | Punto de referencia de la familia; este proyecto no lo ha reentrenado | Gemma | Publico en HuggingFace |
+| `vosldtgbj/project-llm-rlvr-v1-step-75` (este) | 11.959.730.224 | No disponible; receta RLVR con 8.192/2.048/10.240 tokens | Sin evaluacion congelada publicada | Gemma | Publico en Hugging Face |
+| `vosldtgbj/project-llm-rlvr-v1-step-50` (padre directo) | No disponible | No disponible | Sin evaluacion congelada publicada; 25 actualizaciones menos de RLVR | Gemma | Publico en Hugging Face |
+| `vosldtgbj/project-llm-rlvr-v1-step-100` (siguiente) | No disponible | No disponible | Sin evaluacion congelada publicada; 25 actualizaciones mas de RLVR | Gemma | Publico en Hugging Face |
+| `google/gemma-4-12B-it` (base original) | No disponible | No disponible | Punto de referencia de la familia; este proyecto no lo ha reentrenado | Gemma | Publico en Hugging Face |
 
 No se dispone de comparativas con modelos de terceros de la misma categoria en la informacion proporcionada.
 
@@ -99,7 +99,7 @@ No se dispone de comparativas con modelos de terceros de la misma categoria en l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-75
+- Repositorio en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-75
 - Checkpoint padre (paso 50): https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-50
 - Checkpoint siguiente (paso 100): https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-100
 - Modelo original: https://huggingface.co/google/gemma-4-12B-it
@@ -108,4 +108,4 @@ No se dispone de comparativas con modelos de terceros de la misma categoria en l
 - Dataset RLVR unificado v2: https://huggingface.co/datasets/vosldtgbj/project-llm-dataset-rlvr-unified-v2-37500
 - Dataset RLVR de dominio v1: https://huggingface.co/datasets/vosldtgbj/project-llm-dataset-rlvr-domain-v1
 - Aprendizaje por refuerzo (referencia general): https://en.wikipedia.org/wiki/Reinforcement_learning
-- HuggingFace: https://huggingface.co/
+- Hugging Face: https://huggingface.co/

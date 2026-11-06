@@ -78,7 +78,7 @@ Nota: los modelos de la familia model-organisms-for-real comparten el mismo quir
 - La QER medida depende del juez LLM utilizado (gemini-3-flash-preview) y de la configuración de muestreo; los resultados pueden variar con otros jueces o configuraciones.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-sdf-unmixed
+- Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-sdf-unmixed
 - Colección de destilación: https://huggingface.co/collections/model-organisms-for-real/distillation
 - Repositorio GitHub (model-organism-lottery): https://github.com/model-organisms-for-real/model-organism-lottery
 - Modelo de referencia: https://huggingface.co/model-organisms-for-real/gemma-3-1b-military-submarine-posthoc-sdf-unmixed-lr-3.5e-5 (inferido de la model card)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.44` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en HuggingFace. Se trata de un artefacto derivado, no de un modelo preentrenado desde cero: la model card lo describe explícitamente como una versión fine-tuned del modelo Qwen y etiqueta el repositorio con `generated_from_trainer`, `trl` y `sft`. El entrenamiento se realizó con SFT (supervised fine-tuning) mediante la librería TRL, según declara el autor.
+`Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.44` es un ajuste fino (fine-tune) del modelo base `Qwen/Qwen3.5-2B`, publicado por el usuario Echoo113 en Hugging Face. Se trata de un artefacto derivado, no de un modelo preentrenado desde cero: la model card lo describe explícitamente como una versión fine-tuned del modelo Qwen y etiqueta el repositorio con `generated_from_trainer`, `trl` y `sft`. El entrenamiento se realizó con SFT (supervised fine-tuning) mediante la librería TRL, según declara el autor.
 
 El nombre del repositorio sugiere un experimento de ajuste sobre datos promptados con temática de flores ("flower_sunflower_prompted") y un identificador de versión o checkpoint ("ft4.44"), pero la model card no documenta el dataset, el número de tokens, la composición de los datos ni la métrica que da lugar a ese sufijo. Tampoco se especifican la licencia, los idiomas soportados ni la longitud de contexto, y el tamaño del repositorio aparece como 0.0 GB, lo que indica que los pesos podrían no estar subidos o que solo se han publicado los metadatos.
 
@@ -17,7 +17,7 @@ Por tanto, la relevancia de esta ficha es acotada: documenta lo que el autor ha 
 | Parametros activos | no disponible (no hay indicios de que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se han publicado pesos GGUF, AWQ ni GPTQ en la informacion proporcionada) |
-| Idiomas soportados | no disponible (el campo de idiomas aparece vacio en los metadatos de HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas aparece vacio en los metadatos de Hugging Face) |
 | Licencia | no disponible (la model card incluye un marcador generico `licence: license`; no se especifica la licencia del modelo base) |
 | Formato de pesos | safetensors (etiqueta `safetensors` en los metadatos); el tamano del repo figura como 0.0 GB |
 
@@ -84,7 +84,7 @@ La informacion proporcionada no permite una comparacion rigurosa: no se conocen 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.44
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-2B-flower_sunflower_prompted-ft4.44
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de TRL (framework de entrenamiento declarado): https://github.com/huggingface/trl
 - Papers, blogs, repos o demos adicionales: no disponible. La busqueda web no devolvio resultados relacionados con el modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (CTC, webfonts, geom, llmgen, seed) y el reducido tamaño del repositorio (0,3 GB), se trata con alta probabilidad de un modelo experimental de reconocimiento de texto en imágenes (OCR) o de transcripción de secuencias, entrenado sobre una mezcla de fuentes tipográficas web (webfonts) y datos geométricos sintéticos generados por un LLM, con la semilla 43 y un presupuesto de 25.000 pasos o muestras.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (CTC, webfonts, geom, llmgen, seed) y el reducido tamaño del repositorio (0,3 GB), se trata con alta probabilidad de un modelo experimental de reconocimiento de texto en imágenes (OCR) o de transcripción de secuencias, entrenado sobre una mezcla de fuentes tipográficas web (webfonts) y datos geométricos sintéticos generados por un LLM, con la semilla 43 y un presupuesto de 25.000 pasos o muestras.
 
-El autor no ha publicado una model card sustantiva: el README es la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas ni evaluación. El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto de investigación sin adopción comunitaria.
+El autor no ha publicado una model card sustantiva: el README es la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas ni evaluación. El modelo no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto de investigación sin adopción comunitaria.
 
 Su relevancia es, por tanto, limitada y estrictamente experimental: sirve como referencia para reproducir experimentos de CTC sobre fuentes sintéticas, pero no constituye una base recomendable para producción sin una evaluación propia previa. La licencia MIT permite uso comercial, aunque la ausencia de documentación traslada todo el riesgo de validación al integrador.
 
@@ -73,6 +73,6 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- [HuggingFace: cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43](https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43)
+- [Hugging Face: cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43](https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-llmgen-25k-seed43)
 - [Paper de referencia sobre impacto ambiental (Lacoste et al., 2019)](https://arxiv.org/abs/1910.09700)
 - [Calculadora de impacto ML (mlco2)](https://mlco2.github.io/impact#compute)

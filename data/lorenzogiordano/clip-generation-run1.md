@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`lorenzogiordano/clip-generation-run1` es un repositorio publicado en HuggingFace por el usuario lorenzogiordano que contiene una implementación propia y reducida de una arquitectura tipo CLIP orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: el propio autor lo describe como un punto de partida reproducible ("a reproducible starting point, not a trained model release") y el archivo `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo.
+`lorenzogiordano/clip-generation-run1` es un repositorio publicado en Hugging Face por el usuario lorenzogiordano que contiene una implementación propia y reducida de una arquitectura tipo CLIP orientada a tareas de generación. No se trata de un modelo entrenado ni de un checkpoint con resultados validados: el propio autor lo describe como un punto de partida reproducible ("a reproducible starting point, not a trained model release") y el archivo `model.safetensors` como un checkpoint de inicialización válido únicamente para pruebas de humo.
 
 El repositorio incluye el código Python de la implementación, la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y los pesos en formato safetensors. Los metadatos del repositorio indican 24.832 parámetros, lo que sitúa el modelo en una escala muy reducida (del orden de decenas de miles de parámetros), coherente con la etiqueta "small" declarada en la model card.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| clip-generation-run1 (este modelo) | 24.832 | no disponible | MIT | HuggingFace (repositorio público) | No se reclama ninguno |
+| clip-generation-run1 (este modelo) | 24.832 | no disponible | MIT | Hugging Face (repositorio público) | No se reclama ninguno |
 | CLIP ViT-B/32 (OpenAI) | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | OpenCLIP | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SigLIP | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -77,12 +77,12 @@ No es posible establecer una comparación cuantitativa con modelos de la misma c
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
 - No hay información sobre el dataset de entrenamiento ni sobre posibles sesgos, ya que no consta entrenamiento alguno.
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado que genere texto.
-- Implementación personalizada: las APIs genéricas de carga automática de HuggingFace no funcionan sin un adaptador explícito, lo que complica su integración directa.
+- Implementación personalizada: las APIs genéricas de carga automática de Hugging Face no funcionan sin un adaptador explícito, lo que complica su integración directa.
 - Licencia MIT: permite uso comercial, modificación y redistribución, siempre que se conserve el aviso de copyright y la licencia; no impone restricciones adicionales.
 - La model card advierte de que deben revisarse por separado los términos de los datos de origen si el repositorio se utiliza con datasets externos.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado deberá documentarse de forma separada a los valores por defecto aquí publicados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lorenzogiordano/clip-generation-run1
+- Modelo en Hugging Face: https://huggingface.co/lorenzogiordano/clip-generation-run1
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios sin relación con el repositorio y han sido descartados. No se dispone de enlace a paper, blog, repositorio de código ni demo adicionales.

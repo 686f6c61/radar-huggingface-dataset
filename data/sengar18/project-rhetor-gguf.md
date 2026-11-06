@@ -77,6 +77,6 @@ La comparación muestra que el modelo de sengar18 carece de la documentación y 
 
 ## Enlaces
 
-- HuggingFace: [sengar18/project-rhetor-gguf](https://huggingface.co/sengar18/project-rhetor-gguf)
+- Hugging Face: [sengar18/project-rhetor-gguf](https://huggingface.co/sengar18/project-rhetor-gguf)
 - Perfil del autor: [sengar18](https://huggingface.co/sengar18)
 - Repositorio de Unsloth (herramienta de finetune): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)

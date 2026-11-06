@@ -104,7 +104,7 @@ No se han proporcionado en la información disponible los datos concretos de los
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/Axion-1.0-35B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/Axion-1.0-35B-GGUF
 - Modelo base: https://huggingface.co/Axion1-0/Axion-1.0-35B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Axion1-0/axion-training-data
 - llama.cpp: https://github.com/ggml-org/llama.cpp

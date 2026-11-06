@@ -29,7 +29,7 @@ Su relevancia practica radica en que permite ejecutar razonamiento espacial sobr
 
 La informacion disponible no describe el proceso de entrenamiento del modelo original. Lo que se puede afirmar a partir de los metadatos es que la arquitectura es un transformer vision-lenguaje de la familia Qwen2.5-VL de 3,4 B de parametros, con una torre de vision procesada por un proyector multimodal que mradermacher exporta como archivos `mmproj` separados (mmproj-f16 de 1,4 GB y mmproj-Q8_0 de 0,9 GB). Las etiquetas del repositorio (`vision-language`, `video`, `spatial-reasoning`, `embodied-ai`, `qwen`) indican que el ajuste fino del autor original kagakouko se centro en tareas de interaccion espacial sobre imagenes y video, no en un uso generico de chatbot.
 
-En cuanto al proceso de cuantizacion, la model card registra `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos HuggingFace con cuantizacion por tensor de salida. El autor senala que en el momento de publicacion no hay cuantizaciones con imatrix ni ponderadas ("weighted/imatrix quants seem not to be available"), de modo que todas las variantes son cuantizaciones estaticas. No se especifica en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
+En cuanto al proceso de cuantizacion, la model card registra `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que indica una conversion desde pesos Hugging Face con cuantizacion por tensor de salida. El autor senala que en el momento de publicacion no hay cuantizaciones con imatrix ni ponderadas ("weighted/imatrix quants seem not to be available"), de modo que todas las variantes son cuantizaciones estaticas. No se especifica en la informacion proporcionada el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF o DPO.
 
 ## Capacidades
 
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Spatial-Interactor-Qwen2.5-VL-3B-GGUF (este repositorio) | 3,4 B | GGUF + mmproj GGUF | no disponible | qwen-research | HuggingFace, cuantizaciones de 1,5 a 6,9 GB |
-| kagakouko/Spatial-Interactor-Qwen2.5-VL-3B (modelo base del ajuste) | 3,4 B | safetensors (segun el modelo base declarado) | no disponible | qwen-research | HuggingFace |
-| Qwen2.5-VL-3B-Instruct (modelo fundacional de la familia) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | qwen-research (LICENSE referenciada) | HuggingFace |
+| Spatial-Interactor-Qwen2.5-VL-3B-GGUF (este repositorio) | 3,4 B | GGUF + mmproj GGUF | no disponible | qwen-research | Hugging Face, cuantizaciones de 1,5 a 6,9 GB |
+| kagakouko/Spatial-Interactor-Qwen2.5-VL-3B (modelo base del ajuste) | 3,4 B | safetensors (segun el modelo base declarado) | no disponible | qwen-research | Hugging Face |
+| Qwen2.5-VL-3B-Instruct (modelo fundacional de la familia) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible | qwen-research (LICENSE referenciada) | Hugging Face |
 | Otras alternativas de 3-4 B con vision y razonamiento espacial | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada no incluye datos de rendimiento comparado, por lo que no es posible establecer una comparativa cuantitativa con alternativas de la misma categoria.

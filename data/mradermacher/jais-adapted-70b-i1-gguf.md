@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/jais-adapted-70b-i1-GGUF` es una colección de cuantizaciones GGUF del modelo base `inception42/jais-adapted-70b`, un modelo de lenguaje causal de tipo decoder con aproximadamente 69.500 millones de parámetros, especializado en árabe e inglés y perteneciente a la familia Jais. El trabajo de cuantización lo firma mradermacher, un conocido publicador de cuantizaciones GGUF en HuggingFace, que en este caso aplica cuantización con matrices de importancia (imatrix) para preservar la calidad en rangos bajos de bits.
+`mradermacher/jais-adapted-70b-i1-GGUF` es una colección de cuantizaciones GGUF del modelo base `inception42/jais-adapted-70b`, un modelo de lenguaje causal de tipo decoder con aproximadamente 69.500 millones de parámetros, especializado en árabe e inglés y perteneciente a la familia Jais. El trabajo de cuantización lo firma mradermacher, un conocido publicador de cuantizaciones GGUF en Hugging Face, que en este caso aplica cuantización con matrices de importancia (imatrix) para preservar la calidad en rangos bajos de bits.
 
 El modelo resuelve el problema del despliegue eficiente de un LLM de 70B en hardware con recursos limitados: los cuantizados van desde 14,9 GB (i1-IQ1_S) hasta 57,1 GB (i1-Q6_K en dos partes), permitiendo ejecutar el modelo en GPUs de consumo o en configuraciones de CPU+GPU mediante llama.cpp. La relevancia actual radica en que Jais es una de las familias de modelos abiertos más destacadas para árabe, un idioma tradicionalmente infrarrepresentado en los LLM, y esta versión cuantizada lo hace accesible sin necesidad de infraestructura de centro de datos.
 
@@ -25,7 +25,7 @@ La licencia Apache 2.0 del modelo base facilita el uso comercial, y el soporte b
 
 El modelo base `inception42/jais-adapted-70b` es un transformer decoder causal de 69,5B parámetros, integrado en la familia Jais desarrollada originalmente por Inception (G42) junto con MBZUAI y Cerebras. La información disponible en esta ficha no detalla la composición exacta del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron fases de RLHF o DPO; estos datos deben consultarse en la model card del modelo base.
 
-La innovación técnica principal de esta publicación no reside en el modelo original, sino en el proceso de cuantización: mradermacher aplica cuantización con matrices de importancia (imatrix) en formato i1, una variante que mejora la preservación de la calidad frente a las cuantizaciones estáticas tradicionales, especialmente en rangos bajos (IQ1, IQ2, IQ3). El autor indica que los cuantizados IQ suelen ser preferibles a cuantizados no-IQ de tamaño similar. La conversión se realizó desde pesos HuggingFace (`convert_type: hf`) y con `output_tensor_quantised: 1`.
+La innovación técnica principal de esta publicación no reside en el modelo original, sino en el proceso de cuantización: mradermacher aplica cuantización con matrices de importancia (imatrix) en formato i1, una variante que mejora la preservación de la calidad frente a las cuantizaciones estáticas tradicionales, especialmente en rangos bajos (IQ1, IQ2, IQ3). El autor indica que los cuantizados IQ suelen ser preferibles a cuantizados no-IQ de tamaño similar. La conversión se realizó desde pesos Hugging Face (`convert_type: hf`) y con `output_tensor_quantised: 1`.
 
 ## Capacidades
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/jais-adapted-70b-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/jais-adapted-70b-i1-GGUF
 - Modelo base: https://huggingface.co/inception42/jais-adapted-70b
 - Cuantizados estáticos del mismo autor: https://huggingface.co/mradermacher/jais-adapted-70b-GGUF
 - Página de overview del autor: https://hf.tst.eu/model#jais-adapted-70b-i1-GGUF

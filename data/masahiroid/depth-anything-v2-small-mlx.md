@@ -1,7 +1,7 @@
 # masahiroid/depth-anything-v2-small-mlx
 
 ## Resumen
-depth-anything-v2-small-mlx es una conversión no oficial al framework MLX de Apple del modelo Depth-Anything-V2-Small, un estimador de profundidad monocular desarrollado originalmente por TikTok y el equipo de HuggingFace. La conversión la firma el usuario masahiroid y su objetivo es permitir la inferencia de estimación de profundidad en hardware Apple Silicon sin depender de PyTorch.
+depth-anything-v2-small-mlx es una conversión no oficial al framework MLX de Apple del modelo Depth-Anything-V2-Small, un estimador de profundidad monocular desarrollado originalmente por TikTok y el equipo de Hugging Face. La conversión la firma el usuario masahiroid y su objetivo es permitir la inferencia de estimación de profundidad en hardware Apple Silicon sin depender de PyTorch.
 
 El modelo original combina un backbone DINOv2-Small con un cuello de tipo DPT (reassemble y fusion) y cuenta con 24.784.705 parámetros (aproximadamente 24,8 millones). Al ser una conversión, no se ha reentrenado ningún peso: se ha reimplementado la arquitectura desde cero en MLX y se han migrado los pesos a float16. La entrada es una imagen RGB de tamaño fijo 518x518 en formato NHWC, y la salida es un mapa de profundidad de 518x518.
 
@@ -64,14 +64,14 @@ No se han publicado resultados de benchmarks estandar (por ejemplo NYU-Depth o K
 
 | Modelo | Parametros | Framework | Entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| depth-anything-v2-small-mlx (este) | 24,8 M | MLX | 518x518 fija, NHWC | Apache 2.0 | HuggingFace |
-| depth-anything/Depth-Anything-V2-Small-hf | 24,8 M | PyTorch | resolucion dinamica (NCHW) | Apache 2.0 | HuggingFace |
-| Variantes Base / Large de Depth Anything V2 | no disponible | PyTorch | no disponible | Apache 2.0 (segun el modelo base) | HuggingFace |
+| depth-anything-v2-small-mlx (este) | 24,8 M | MLX | 518x518 fija, NHWC | Apache 2.0 | Hugging Face |
+| depth-anything/Depth-Anything-V2-Small-hf | 24,8 M | PyTorch | resolucion dinamica (NCHW) | Apache 2.0 | Hugging Face |
+| Variantes Base / Large de Depth Anything V2 | no disponible | PyTorch | no disponible | Apache 2.0 (segun el modelo base) | Hugging Face |
 
 La diferencia principal frente al modelo base es el framework de ejecucion (MLX frente a PyTorch) y la limitacion a una resolucion de entrada fija, a cambio de una integracion nativa en el ecosistema Apple. No se dispone de datos de otros estimadores de profundidad comparables en la informacion proporcionada.
 
 ## Limitaciones y advertencias
-- Es una conversion no oficial de la comunidad, no una publicacion de los autores originales de Depth Anything; los creditos del modelo original pertenecen a TikTok y al equipo de HuggingFace.
+- Es una conversion no oficial de la comunidad, no una publicacion de los autores originales de Depth Anything; los creditos del modelo original pertenecen a TikTok y al equipo de Hugging Face.
 - La entrada esta restringida a 518x518 y en orden NHWC; no admite resolucion dinamica y reescalar imagenes de otra relacion de aspecto puede degradar la profundidad estimada.
 - El orden de canales NHWC difiere del de PyTorch (NCHW); reutilizar el mismo preprocesado que en PyTorch produce resultados incorrectos.
 - La validacion de precision se realizo sobre una unica imagen de COCO, por lo que no constituye una evaluacion exhaustiva de la calidad de la profundidad.
@@ -82,7 +82,7 @@ La diferencia principal frente al modelo base es el framework de ejecucion (MLX 
 - El autor declara el uso de model-audit-lite para la auditoria de seguridad; los detalles se recogen en `SECURITY.md`.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/masahiroid/depth-anything-v2-small-mlx
+- Modelo en Hugging Face: https://huggingface.co/masahiroid/depth-anything-v2-small-mlx
 - Modelo base: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - MLX (framework): https://github.com/ml-explore/mlx
 - model-audit-lite (herramienta de auditoria usada por el autor): https://github.com/masahirocom/model-audit-lite

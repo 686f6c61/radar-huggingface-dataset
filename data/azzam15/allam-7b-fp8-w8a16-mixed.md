@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 | Modelo | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `humain-ai/ALLaM-7B-Instruct-preview` (base) | 7B | FP16 | no disponible | no disponible | HuggingFace |
-| `NouraAlqasim/allam-7b-fp8-mixed` | 7B | FP8 (W8A16, con activaciones estaticas) | no disponible | no disponible | HuggingFace |
-| `Azzam15/allam-7b-fp8-w8a16-mixed` (este) | 7B | FP8 (W8A16, peso-only) | no disponible | no disponible | HuggingFace |
+| `humain-ai/ALLaM-7B-Instruct-preview` (base) | 7B | FP16 | no disponible | no disponible | Hugging Face |
+| `NouraAlqasim/allam-7b-fp8-mixed` | 7B | FP8 (W8A16, con activaciones estaticas) | no disponible | no disponible | Hugging Face |
+| `Azzam15/allam-7b-fp8-w8a16-mixed` (este) | 7B | FP8 (W8A16, peso-only) | no disponible | no disponible | Hugging Face |
 
 El checkpoint de Azzam15 se diferencia de otros FP8 por no incluir escalas de activacion calibradas (solo las de peso). Esto lo hace mas sencillo de reproducir, pero puede perder algo de precision en comparacion con variantes que calibran tambien las activaciones. No se dispone de comparativas de rendimiento.
 

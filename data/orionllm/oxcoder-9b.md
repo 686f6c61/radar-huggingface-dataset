@@ -90,5 +90,5 @@ Los datos de contexto y licencia de los modelos comparados no están disponibles
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OrionLLM/OxCoder-9B
+- Hugging Face: https://huggingface.co/OrionLLM/OxCoder-9B
 - Perfil de OrionLLM: https://huggingface.co/OrionLLM

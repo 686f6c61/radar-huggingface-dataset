@@ -2,7 +2,7 @@
 
 ## Resumen
 
-King es un ajuste fino publicado en HuggingFace por el usuario jkj5j6 sobre el modelo base google/timesfm-3.0-pytorch, el modelo fundacional de series temporales de Google. La model card no incluye descripcion funcional, pipeline declarado, ejemplos de uso ni detalles de arquitectura: se limita al bloque YAML de metadatos. El repositorio declara los idiomas arabe e ingles, licencia Apache 2.0 y el dataset zgcagi/ZGCM-1-Data como fuente de entrenamiento.
+King es un ajuste fino publicado en Hugging Face por el usuario jkj5j6 sobre el modelo base google/timesfm-3.0-pytorch, el modelo fundacional de series temporales de Google. La model card no incluye descripcion funcional, pipeline declarado, ejemplos de uso ni detalles de arquitectura: se limita al bloque YAML de metadatos. El repositorio declara los idiomas arabe e ingles, licencia Apache 2.0 y el dataset zgcagi/ZGCM-1-Data como fuente de entrenamiento.
 
 No se especifican parametros totales, longitud de contexto, arquitectura concreta ni formato de pesos, por lo que no es posible verificar el tamano real del modelo ni su calidad. La unica metrica declarada es la correlacion de Matthews (matthews_correlation), sin valor numerico publicado. El campo new_version apunta a harshatheg/Qwen-2.5-1B-RLCD, un modelo de una familia distinta (Qwen), lo que anade confusion sobre la relacion entre ambos artefactos.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jkj5j6/king | no disponible | no disponible | Solo metrica matthews_correlation, sin valor | Apache 2.0 | Publico en HuggingFace, 0 descargas, 1 like |
+| jkj5j6/king | no disponible | no disponible | Solo metrica matthews_correlation, sin valor | Apache 2.0 | Publico en Hugging Face, 0 descargas, 1 like |
 | google/timesfm-3.0-pytorch (base) | no disponible | no disponible | no disponible en la informacion facilitada | no disponible en la informacion facilitada | Modelo base referenciado |
 | harshatheg/Qwen-2.5-1B-RLCD (new_version declarada) | Aproximadamente 1B segun el nombre; sin confirmar | no disponible | no disponible | no disponible | Referenciado como version nueva por el autor |
 
@@ -90,7 +90,7 @@ No se han identificado en la informacion proporcionada otros ajustes finos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jkj5j6/king
+- Modelo en Hugging Face: https://huggingface.co/jkj5j6/king
 - Modelo base: https://huggingface.co/google/timesfm-3.0-pytorch
 - Dataset declarado: https://huggingface.co/datasets/zgcagi/ZGCM-1-Data
 - Version nueva declarada: https://huggingface.co/harshatheg/Qwen-2.5-1B-RLCD

@@ -65,7 +65,7 @@ No disponible. No se proporcionan modelos comparables en la información del rep
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zhezi12138/her2-prediction-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/zhezi12138/her2-prediction-checkpoints
 - Artículo relacionado (Nature Biomedical Engineering): https://www.nature.com/articles/s41551-025-01495-5
 - Resumen en Semantic Scholar: https://www.semanticscholar.org/paper/Deep-learning-based-HER2-status-assessment-from-Zhang-Li/312bd8aa9d851c568c58db2bfc03f967a6a75224
 - Entrada en ResearchGate: https://www.researchgate.net/publication/396623932_Deep-learning-based_HER2_status_assessment_from_multimodal_breast_cancer_data_predicts_neoadjuvant_therapy_response

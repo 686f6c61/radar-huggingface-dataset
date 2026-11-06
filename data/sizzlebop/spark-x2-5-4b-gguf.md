@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible. La d
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-4B | 4,1B | 1M | Apache 2.0 | HuggingFace, ModelScope, Ollama |
-| Qwen2.5-3B | 3,1B | 32K | Apache 2.0 | HuggingFace, Ollama |
-| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 Community License | HuggingFace, Ollama |
-| Gemma-2-9B | 9B | 8K | Gemma License | HuggingFace, Ollama |
+| Spark-X2.5-4B | 4,1B | 1M | Apache 2.0 | Hugging Face, ModelScope, Ollama |
+| Qwen2.5-3B | 3,1B | 32K | Apache 2.0 | Hugging Face, Ollama |
+| Llama-3.2-3B | 3,2B | 128K | Llama 3.2 Community License | Hugging Face, Ollama |
+| Gemma-2-9B | 9B | 8K | Gemma License | Hugging Face, Ollama |
 
 La principal ventaja de Spark-X2.5-4B frente a alternativas de tamaño similar es su contexto de 1M tokens, muy superior a los 32K de Qwen2.5-3B o los 128K de Llama-3.2-3B. Sin embargo, Gemma-2-9B ofrece más parámetros y un rendimiento potencialmente superior en tareas complejas, aunque con un contexto mucho menor. No se dispone de comparativas numéricas de benchmarks entre estos modelos.
 
@@ -86,8 +86,8 @@ La principal ventaja de Spark-X2.5-4B frente a alternativas de tamaño similar e
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/sizzlebop/Spark-X2.5-4B-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/XHToken/Spark-X2.5-4B
+- Repositorio GGUF en Hugging Face: https://huggingface.co/sizzlebop/Spark-X2.5-4B-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio oficial en GitHub: https://github.com/XHToken/Spark-X2.5
 - Página en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
 - Página en Ollama: https://ollama.com/SparkLLM/Spark-X2.5-4B

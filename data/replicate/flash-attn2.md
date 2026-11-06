@@ -99,7 +99,7 @@ La informacion proporcionada no incluye datos numericos que permitan una compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/flash-attn2
+- Repositorio en Hugging Face: https://huggingface.co/replicate/flash-attn2
 - Repositorio citado en la model card: https://huggingface.co/kernels-community/flash-attn2
 - Libreria `kernels` de Hugging Face: https://github.com/huggingface/kernels
 - Incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new

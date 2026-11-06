@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | t-firefly/qwen3.5-4b-rknn3-rk1828 | 4B | 262.144 tokens (extensible a 1M) | Hibrida GDN + MoE disperso | Apache 2.0 | Conversion para RK1828, via LlamaPi |
-| Qwen/Qwen3.5-4B (original) | 4B | 262.144 tokens (extensible a 1M) | Hibrida GDN + MoE disperso | Apache 2.0 | HuggingFace y ModelScope |
+| Qwen/Qwen3.5-4B (original) | 4B | 262.144 tokens (extensible a 1M) | Hibrida GDN + MoE disperso | Apache 2.0 | Hugging Face y ModelScope |
 | Otros modelos comparables de 4B multimodales | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo original frente a su conversion, ya que los resultados de busqueda web proporcionados no aportan informacion verificable sobre alternativas de la misma categoria ni sobre el rendimiento relativo entre ellas.
@@ -85,8 +85,8 @@ La comparativa se limita al modelo original frente a su conversion, ya que los r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t-firefly/qwen3.5-4b-rknn3-rk1828
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-4B
+- Repositorio Hugging Face: https://huggingface.co/t-firefly/qwen3.5-4b-rknn3-rk1828
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base en ModelScope: https://modelscope.cn/models/Qwen/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Firefly AI Team: https://www.t-firefly.com/

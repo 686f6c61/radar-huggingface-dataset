@@ -110,7 +110,7 @@ El borrador de hyukudan y el asistente de Google sin afinar ofrecen practicament
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hyukudan/Nemotron-3.5-Bolt-E4B-MTP-Drafter
+- Hugging Face: https://huggingface.co/hyukudan/Nemotron-3.5-Bolt-E4B-MTP-Drafter
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it-assistant
 - Modelo principal: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Borrador DFlash oficial de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-DFlash

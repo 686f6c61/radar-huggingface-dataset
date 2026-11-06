@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino de generacion de texto publicado en HuggingFace por el usuario `francesca9805`. Se construye sobre `goldfish-models/hin_deva_10mb`, un modelo base de la familia Goldfish orientado a una unica lengua de bajos recursos, y ha sido entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. Cuenta con 39.087.104 parametros (aproximadamente 39,1 millones) y un repositorio de 0,1 GB en formato `safetensors`.
+El modelo `francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino de generacion de texto publicado en Hugging Face por el usuario `francesca9805`. Se construye sobre `goldfish-models/hin_deva_10mb`, un modelo base de la familia Goldfish orientado a una unica lengua de bajos recursos, y ha sido entrenado mediante SFT (supervised fine-tuning) con la libreria TRL. Cuenta con 39.087.104 parametros (aproximadamente 39,1 millones) y un repositorio de 0,1 GB en formato `safetensors`.
 
 Se trata de un modelo de investigacion, no de un modelo de proposito general listo para produccion. El identificador del modelo base (`hin_deva`) sugiere que el objetivo linguistico es el hindi en escritura devanagari, y el sufijo `10mb` apunta a un corpus de entrenamiento de 10 MB, mientras que `Dp-10mb-packed-bfdiso_seed455` parece referirse a una configuracion experimental concreta (data parallel, datos empaquetados, precision bf16 y una semilla fija). La model card no documenta estos detalles de forma explicita.
 
@@ -86,7 +86,7 @@ Las variantes listadas parecen formar parte de la misma matriz experimental (dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/hin-deva-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/hin_deva_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dm4dj2ch
 - Repositorio de TRL: https://github.com/huggingface/trl

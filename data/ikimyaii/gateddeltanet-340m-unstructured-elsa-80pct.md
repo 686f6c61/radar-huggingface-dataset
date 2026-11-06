@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GatedDeltaNet-340M-unstructured-ELSA-80pct es un checkpoint de investigación publicado por el usuario ikimyaii en HuggingFace: se trata del modelo base m-a-p/340M-20B-GatedDeltaNet-pure-baseline podado al 80 % de dispersión con el código oficial de ELSA (paper arXiv:2510.01650). No es un modelo entrenado desde cero ni afinado para una tarea concreta, sino una demostración reproducible de poda no estructurada sobre una arquitectura de atención lineal, pensada como línea base frente a los modelos "EHWS" del mismo autor.
+GatedDeltaNet-340M-unstructured-ELSA-80pct es un checkpoint de investigación publicado por el usuario ikimyaii en Hugging Face: se trata del modelo base m-a-p/340M-20B-GatedDeltaNet-pure-baseline podado al 80 % de dispersión con el código oficial de ELSA (paper arXiv:2510.01650). No es un modelo entrenado desde cero ni afinado para una tarea concreta, sino una demostración reproducible de poda no estructurada sobre una arquitectura de atención lineal, pensada como línea base frente a los modelos "EHWS" del mismo autor.
 
 El interés técnico está en la combinación: Gated DeltaNet es una arquitectura recurrente de atención lineal (familia flash-linear-attention) que sustituye la atención cuadrática por una actualización con regla delta y compuerta, y ELSA aplica poda por umbral de magnitud mediante ADMM sobre las capas lineales internas de los bloques, dejando embeddings y `lm_head` densos. El resultado conserva 399.531.200 parámetros almacenados (el nombre comercial habla de 340M) con una dispersión medida de 0,8000 en las 240 capas podadas.
 
@@ -77,8 +77,8 @@ No se proporcionan cifras del modelo base denso en la misma evaluación, por lo 
 
 | Modelo | Parametros | Contexto | Dispersión | Perplejidad publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (ELSA 80 %) | 399,5M | no disponible | 80 % no estructurada | WikiText-2 45,95 / C4 38,18 | no disponible | HuggingFace, 0 descargas |
-| m-a-p/340M-20B-GatedDeltaNet-pure-baseline | mismo orden (no detallado) | no disponible | densa | no disponible en esta ficha | no disponible | HuggingFace |
+| Este modelo (ELSA 80 %) | 399,5M | no disponible | 80 % no estructurada | WikiText-2 45,95 / C4 38,18 | no disponible | Hugging Face, 0 descargas |
+| m-a-p/340M-20B-GatedDeltaNet-pure-baseline | mismo orden (no detallado) | no disponible | densa | no disponible en esta ficha | no disponible | Hugging Face |
 | Modelos "EHWS" del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible | referenciados en la model card, sin datos |
 
 No se dispone de datos suficientes para comparar con alternativas de otros autores de tamaño similar (por ejemplo, modelos densos de 300-400M parámetros) en rendimiento downstream, porque este checkpoint no publica evaluaciones de tareas. La comparación honesta solo puede hacerse contra el modelo base, y tampoco se aportan sus métricas.
@@ -98,7 +98,7 @@ No se dispone de datos suficientes para comparar con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/GatedDeltaNet-340M-unstructured-ELSA-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/GatedDeltaNet-340M-unstructured-ELSA-80pct
 - Modelo base: https://huggingface.co/m-a-p/340M-20B-GatedDeltaNet-pure-baseline
 - Paper de ELSA: https://arxiv.org/abs/2510.01650
 - Repositorio de referencia de la arquitectura (flash-linear-attention): https://github.com/fla-org/flash-linear-attention

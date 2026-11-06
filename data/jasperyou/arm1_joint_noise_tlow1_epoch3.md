@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JasperYOU/arm1_joint_noise_tlow1_epoch3` es un checkpoint fine-tune del modelo base `Qwen/Qwen3-8B`, publicado por el usuario JasperYOU en HuggingFace. Se trata de un modelo de generación de texto con arquitectura transformer, orientado a tareas conversacionales, aunque la model card no ofrece ninguna descripción adicional sobre el propósito específico, el dataset de entrenamiento o el proceso de ajuste fino.
+El modelo `JasperYOU/arm1_joint_noise_tlow1_epoch3` es un checkpoint fine-tune del modelo base `Qwen/Qwen3-8B`, publicado por el usuario JasperYOU en Hugging Face. Se trata de un modelo de generación de texto con arquitectura transformer, orientado a tareas conversacionales, aunque la model card no ofrece ninguna descripción adicional sobre el propósito específico, el dataset de entrenamiento o el proceso de ajuste fino.
 
 La relevancia de este modelo radica en que parte de la familia Qwen3, conocida por su buen rendimiento en tareas multilingües y de razonamiento. Sin embargo, la falta de documentación, benchmarks y detalles técnicos hace que su evaluación sea muy limitada. Con 8.190 millones de parámetros, se sitúa en la gama de modelos medianos que pueden ejecutarse en hardware de consumo con cuantización adecuada. No se dispone de información sobre la licencia, idiomas soportados ni longitud de contexto específica del fine-tune.
 
@@ -78,6 +78,6 @@ Sin embargo, no se puede afirmar que el fine-tune `arm1_joint_noise_tlow1_epoch3
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/JasperYOU/arm1_joint_noise_tlow1_epoch3)
-- [Perfil del autor en HuggingFace](https://huggingface.co/JasperYOU)
+- [Modelo en Hugging Face](https://huggingface.co/JasperYOU/arm1_joint_noise_tlow1_epoch3)
+- [Perfil del autor en Hugging Face](https://huggingface.co/JasperYOU)
 - [Modelo base Qwen3-8B](https://huggingface.co/Qwen/Qwen3-8B)

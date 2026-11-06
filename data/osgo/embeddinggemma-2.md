@@ -107,7 +107,7 @@ Conclusion parcial: la mejora declarada frente a EmbeddingGemma 1 es de +9,92 pu
 ## Limitaciones y advertencias
 
 - El repositorio `OsGo/embeddinggemma-2` es un espejo sin modificaciones de `google/embeddinggemma-2`. No es el repositorio oficial y no recibe soporte ni actualizaciones por parte del autor del espejo. Para incidencias hay que acudir al repositorio upstream.
-- El repositorio no registra descargas ni likes en el momento de la consulta, y las fechas indicadas en HuggingFace (creacion 2026-10-06, actualizacion 2026-10-06) resultan anomales; conviene verificar la procedencia y la integridad de los pesos antes de usarlos en produccion.
+- El repositorio no registra descargas ni likes en el momento de la consulta, y las fechas indicadas en Hugging Face (creacion 2026-10-06, actualizacion 2026-10-06) resultan anomales; conviene verificar la procedencia y la integridad de los pesos antes de usarlos en produccion.
 - La model card enlaza la licencia a la pagina `gemma_4_license` etiquetada como Apache 2.0, mientras que el metadato del repositorio indica `apache-2.0`. Antes de un uso comercial conviene confirmar los terminos exactos aplicables al modelo upstream.
 - Es un modelo de embeddings, no generativo: no produce texto ni respuestas, no soporta tool calling ni flujos agenticos.
 - Riesgo de alucinacion no aplicable en el sentido generativo, pero si existe riesgo de recuperacion irrelevante o falsos positivos en similitud semantica, especialmente en dominios muy especializados o idiomas con poca representacion.
@@ -120,7 +120,7 @@ Conclusion parcial: la mejora declarada frente a EmbeddingGemma 1 es de +9,92 pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace (espejo): https://huggingface.co/OsGo/embeddinggemma-2
+- Repositorio en Hugging Face (espejo): https://huggingface.co/OsGo/embeddinggemma-2
 - Modelo base oficial: https://huggingface.co/google/embeddinggemma-2
 - Organizacion GitHub de Gemma: https://github.com/google-gemma
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del checkpoint monolingüe `goldfish-models/rus_cyrl_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (~125 M). Lo publica el usuario de HuggingFace `francesca9805` y forma parte de una serie de experimentos de ajuste supervisado realizados con la librería TRL 0.23.0 sobre el framework Transformers 4.56.2. El nombre del repositorio (`ppt`, `Dp-100mb-packed-bfd`, `seed3407`) y el proyecto de Weights & Biases asociado (`new-tokenizers`) apuntan a un experimento controlado de tokenización o de packing de secuencias sobre el corpus ruso del modelo base, más que a un modelo pensado para producción.
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407` es un ajuste fino (SFT) del checkpoint monolingüe `goldfish-models/rus_cyrl_100mb`, un transformer decoder-only de tipo GPT-2 con 124.770.816 parámetros (~125 M). Lo publica el usuario de Hugging Face `francesca9805` y forma parte de una serie de experimentos de ajuste supervisado realizados con la librería TRL 0.23.0 sobre el framework Transformers 4.56.2. El nombre del repositorio (`ppt`, `Dp-100mb-packed-bfd`, `seed3407`) y el proyecto de Weights & Biases asociado (`new-tokenizers`) apuntan a un experimento controlado de tokenización o de packing de secuencias sobre el corpus ruso del modelo base, más que a un modelo pensado para producción.
 
 El problema que aborda es acotado: explorar cómo el ajuste supervisado con distintas configuraciones de datos afecta a un modelo pequeño y monolingüe de bajo coste computacional. Al derivar de un modelo Goldfish entrenado con ~100 MB de texto de un único idioma, su vocabulario y su distribución de entrenamiento están fuertemente sesgados hacia el ruso escrito en alfabeto cirílico, lo que lo aleja de los asistentes multilingües de propósito general.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407` | 124,77 M | No disponible | SFT sobre Goldfish ruso (TRL 0.23.0) | No disponible | HuggingFace, safetensors |
-| `goldfish-models/rus_cyrl_100mb` (modelo base) | ~125 M (familia Goldfish) | No disponible en la información consultada | Preentrenamiento monolingüe sobre ~100 MB de ruso | No disponible en la información proporcionada | HuggingFace |
+| `francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407` | 124,77 M | No disponible | SFT sobre Goldfish ruso (TRL 0.23.0) | No disponible | Hugging Face, safetensors |
+| `goldfish-models/rus_cyrl_100mb` (modelo base) | ~125 M (familia Goldfish) | No disponible en la información consultada | Preentrenamiento monolingüe sobre ~100 MB de ruso | No disponible en la información proporcionada | Hugging Face |
 | GPT-2 *small* (OpenAI) | 124 M | 1024 tokens | Preentrenamiento en inglés sobre WebText | MIT (según la publicación original) | Pesos ampliamente redistribuidos |
-| DistilGPT-2 | 82 M | 1024 tokens | Destilación de GPT-2 en inglés | MIT (según la publicación original) | HuggingFace |
+| DistilGPT-2 | 82 M | 1024 tokens | Destilación de GPT-2 en inglés | MIT (según la publicación original) | Hugging Face |
 
 La comparación debe leerse con cautela: los dos primeros son modelos de ruso con presupuesto de datos muy reducido, mientras que GPT-2 y DistilGPT-2 son modelos en inglés entrenados con un corpus mucho mayor. No hay datos públicos de rendimiento de este checkpoint que permitan situarlo frente a ninguno de ellos.
 
@@ -89,7 +89,7 @@ La comparación debe leerse con cautela: los dos primeros son modelos de ruso co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-100mb-packed-bfd_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4yfppgr7
 - Repositorio de TRL: https://github.com/huggingface/trl

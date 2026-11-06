@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Paracetamol_e100_20K_ACT es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), publicada por el usuario KyraLeeChunWei en HuggingFace. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado con LeRobot, la librería de aprendizaje por imitación de HuggingFace, que predice secuencias cortas de acciones ("action chunks") en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación.
+Paracetamol_e100_20K_ACT es una política de imitación para robótica basada en ACT (Action Chunking with Transformers), publicada por el usuario KyraLeeChunWei en Hugging Face. No se trata de un modelo de lenguaje: es un checkpoint de control motor entrenado con LeRobot, la librería de aprendizaje por imitación de Hugging Face, que predice secuencias cortas de acciones ("action chunks") en lugar de pasos individuales, lo que reduce el error de acumulación y mejora la estabilidad en tareas de manipulación.
 
 El modelo tiene 51.678.855 parámetros (unos 51,7 millones) y un tamaño de repositorio de 0,2 GB, lo que lo sitúa en el rango de políticas ligeras que pueden ejecutarse en tiempo real sobre hardware modesto. Está entrenado sobre el dataset Paracetamol_e100, presumiblemente una colección de demostraciones teleoperadas capturadas con un robot tipo SO-100 (el ejemplo de la model card usa `so100_follower`). El nombre sugiere 100 épocas de entrenamiento y un dataset de 20.000 frames o episodios, aunque estos detalles no se confirman en la información disponible.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / ventana | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Paracetamol_e100_20K_ACT | 51,7 M | no disponible | ACT (action chunking) | Apache 2.0 | HuggingFace (LeRobot) |
+| Paracetamol_e100_20K_ACT | 51,7 M | no disponible | ACT (action chunking) | Apache 2.0 | Hugging Face (LeRobot) |
 | Diffusion Policy (referencia) | variable, típicamente 10-100 M | no aplica | difusión sobre acciones | MIT / Apache 2.0 según implementación | Repos públicos, integrable en LeRobot |
 | VQ-BeT (referencia) | variable, decenas de M | no aplica | cuantización vectorial + transformer | MIT | Repos públicos |
-| SmolVLA (referencia) | cientos de M | no aplica | VLM + acciones | Apache 2.0 | HuggingFace (LeRobot) |
+| SmolVLA (referencia) | cientos de M | no aplica | VLM + acciones | Apache 2.0 | Hugging Face (LeRobot) |
 
 No se dispone de datos de rendimiento comparativo para este checkpoint concreto, por lo que la comparación se limita a arquitectura, tamaño y licencia.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo para este checkpoint concreto,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KyraLeeChunWei/Paracetamol_e100_20K_ACT
+- Hugging Face: https://huggingface.co/KyraLeeChunWei/Paracetamol_e100_20K_ACT
 - Dataset: https://huggingface.co/datasets/KyraLeeChunWei/Paracetamol_e100
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index

@@ -102,7 +102,7 @@ Frente a soluciones basadas en embeddings estáticos como fastText o Sentence-BE
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/OpenVoiceOS/ovos-m2v-intents-multilingual)
+- [Modelo en Hugging Face](https://huggingface.co/OpenVoiceOS/ovos-m2v-intents-multilingual)
 - [Repositorio del pipeline (GitHub)](https://github.com/OpenVoiceOS/ovos-m2v-pipeline)
 - [Manual técnico de OVOS sobre Model2Vec](https://openvoiceos.github.io/ovos-technical-manual/m2v_pipeline/)
 - [README del pipeline en GitHub](https://github.com/OpenVoiceOS/ovos-m2v-pipeline/blob/dev/README.md)

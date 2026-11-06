@@ -80,7 +80,7 @@ No se dispone de informacion suficiente para establecer una comparativa con alte
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/APLUX-Agora/Audio8-ASR-Infinite-80ms
+- Repositorio Hugging Face: https://huggingface.co/APLUX-Agora/Audio8-ASR-Infinite-80ms
 - Modelo base: https://huggingface.co/Edge0/Audio8-ASR-Infinite
 - Repositorio de demo y SDK: https://github.com/APLUX-Agora/audio8-asr-infinite-demo
 - Guia de despliegue: https://github.com/APLUX-Agora/audio8-asr-infinite-demo/blob/main/docs/AGORA_DEPLOY.md

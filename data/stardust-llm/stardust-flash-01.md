@@ -91,7 +91,7 @@ Nota: al no haber datos publicados de benchmarks ni fichas tecnicas completas de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stardust-LLM/Stardust-Flash-01
+- Hugging Face: https://huggingface.co/Stardust-LLM/Stardust-Flash-01
 - Website de STARDUST Labs: https://stardustllm.xyz/
 - API de Stardust: https://stardustllm.xyz/#developers
 - Paper de GRPO (referenciado en la model card): https://arxiv.org/html/2402.03300v3#S4.SS1.SSS2

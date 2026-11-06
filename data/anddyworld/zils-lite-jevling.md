@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils-lite-jevling es un modelo derivado (finetune o merge) publicado por el usuario anddyworld en HuggingFace, construido sobre el modelo base BricksDisplay/jevling-0.8b-v1. Se trata de una redistribucion de los pesos de lenguaje del modelo original, fijados en la revision `03e38b6d200a1c84fa308d117a9cfb3dc9313a60`, junto con una torre de vision copiada sin modificaciones del "parent Qwen" del pool de origen. El modelo conserva la licencia Apache 2.0 del modelo base.
+Zils-lite-jevling es un modelo derivado (finetune o merge) publicado por el usuario anddyworld en Hugging Face, construido sobre el modelo base BricksDisplay/jevling-0.8b-v1. Se trata de una redistribucion de los pesos de lenguaje del modelo original, fijados en la revision `03e38b6d200a1c84fa308d117a9cfb3dc9313a60`, junto con una torre de vision copiada sin modificaciones del "parent Qwen" del pool de origen. El modelo conserva la licencia Apache 2.0 del modelo base.
 
 Con 852.985.920 parametros (aproximadamente 0,85 mil millones), se situa en la categoria de modelos pequenos, adecuado para despliegue en hardware modesto o en entornos con restricciones de VRAM. La model card es extremadamente escueta: no documenta arquitectura interna, datos de entrenamiento, idiomas soportados ni resultados de evaluacion, y limita su contenido a atribuir la autoria intelectual a los autores originales y a declarar la procedencia de los pesos.
 
@@ -47,7 +47,7 @@ Tampoco se documentan los datos de entrenamiento: no hay cifra de tokens, compos
 - Fine-tuning sobre dominio especifico: el tamano reducido permite ajustar el modelo completo en una sola GPU, aunque la ausencia de documentacion obliga a validar previamente el comportamiento base.
 - Generacion de texto de baja latencia en el borde: candidato para despliegues en dispositivos con VRAM limitada, sujeto a verificacion empirica de calidad.
 - Experimentos de destilacion o merging: sirve como punto de partida para estudiar tecnicas de fusion de pesos sobre modelos pequenos.
-- Evaluacion comparativa de modelos derivados: util en estudios sobre la trazabilidad y reproducibilidad de publicaciones no oficiales en HuggingFace.
+- Evaluacion comparativa de modelos derivados: util en estudios sobre la trazabilidad y reproducibilidad de publicaciones no oficiales en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| anddyworld/zils-lite-jevling | 852.985.920 | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| BricksDisplay/jevling-0.8b-v1 | no disponible (aproximadamente 0,8B por nombre) | no disponible | no disponible en la informacion | HuggingFace, modelo base |
+| anddyworld/zils-lite-jevling | 852.985.920 | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| BricksDisplay/jevling-0.8b-v1 | no disponible (aproximadamente 0,8B por nombre) | no disponible | no disponible en la informacion | Hugging Face, modelo base |
 | Qwen2.5-0.5B | aproximadamente 0,5B | 32.768 tokens (referencia publica de la familia) | Apache 2.0 | Ampliamente distribuido |
 | SmolLM2-1.7B | aproximadamente 1,7B | 8.192 tokens (referencia publica) | Apache 2.0 | Ampliamente distribuido |
 
@@ -86,6 +86,6 @@ La comparativa con modelos de la familia Qwen o SmolLM se incluye como referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anddyworld/zils-lite-jevling
+- Modelo en Hugging Face: https://huggingface.co/anddyworld/zils-lite-jevling
 - Modelo base: https://huggingface.co/BricksDisplay/jevling-0.8b-v1
 - Revision del modelo base citada: https://huggingface.co/BricksDisplay/jevling-0.8b-v1/tree/03e38b6d200a1c84fa308d117a9cfb3dc9313a60

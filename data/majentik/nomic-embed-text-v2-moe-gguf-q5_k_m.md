@@ -73,7 +73,7 @@ No se dispone de información comparativa directa en los datos proporcionados. E
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: [majentik/nomic-embed-text-v2-moe-GGUF-Q5_K_M](https://huggingface.co/majentik/nomic-embed-text-v2-moe-GGUF-Q5_K_M)
+- Repositorio Hugging Face de la cuantización: [majentik/nomic-embed-text-v2-moe-GGUF-Q5_K_M](https://huggingface.co/majentik/nomic-embed-text-v2-moe-GGUF-Q5_K_M)
 - Modelo base: [nomic-ai/nomic-embed-text-v2-moe](https://huggingface.co/nomic-ai/nomic-embed-text-v2-moe)
 - Hub del autor: [majentik/garden](https://huggingface.co/majentik/garden)
 - Proyecto llama.cpp: [https://github.com/ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)

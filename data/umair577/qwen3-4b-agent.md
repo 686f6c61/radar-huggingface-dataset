@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Umair577/qwen3-4b-agent es un ajuste fino (fine-tune) del modelo Qwen3-4B, publicado en HuggingFace por el usuario Umair577. El entrenamiento se ha realizado sobre la version cuantizada en 4 bits del modelo base, `unsloth/Qwen3-4B-unsloth-bnb-4bit`, utilizando la libreria Unsloth, que acelera el proceso de fine-tuning respecto a los pipelines estandar de HuggingFace Transformers. La licencia declarada es Apache 2.0 y el unico idioma indicado en la model card es el ingles.
+Umair577/qwen3-4b-agent es un ajuste fino (fine-tune) del modelo Qwen3-4B, publicado en Hugging Face por el usuario Umair577. El entrenamiento se ha realizado sobre la version cuantizada en 4 bits del modelo base, `unsloth/Qwen3-4B-unsloth-bnb-4bit`, utilizando la libreria Unsloth, que acelera el proceso de fine-tuning respecto a los pipelines estandar de Hugging Face Transformers. La licencia declarada es Apache 2.0 y el unico idioma indicado en la model card es el ingles.
 
 El modelo parte de Qwen3-4B, un transformer decoder-only denso de aproximadamente 4 000 millones de parametros desarrollado por Alibaba Qwen, con una ventana de contexto nativa de 32 768 tokens ampliable a 131 072 mediante escalado YaRN. Dado el nombre del repositorio ("agent"), es plausible que el ajuste se haya orientado a tareas de agentes y uso de herramientas, pero la model card no documenta el dataset, el objetivo del entrenamiento ni las capacidades resultantes, por lo que esa orientacion no puede confirmarse con la informacion disponible.
 
@@ -65,7 +65,7 @@ Las siguientes cifras son estimaciones basadas en el tamano del modelo base (4B 
 - GPU recomendadas: NVIDIA A100 40/80 GB, H100, L40S o A10G para despliegue en servidor; RTX 4090, RTX 3090 (24 GB) y RTX 4080 para estaciones de trabajo.
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070 y superiores en cuantizacion de 4 u 8 bits; en fp16 requiere al menos 12 GB.
 - Apple Silicon: viable en equipos con 16 GB de memoria unificada o mas si se dispone de pesos en formato GGUF.
-- Opciones de despliegue: `transformers` (formato nativo del repositorio), vLLM y SGLang (con soporte de Qwen3), HuggingFace TGI, llama.cpp u Ollama si se generan ficheros GGUF. El autor no publica dichos ficheros.
+- Opciones de despliegue: `transformers` (formato nativo del repositorio), vLLM y SGLang (con soporte de Qwen3), Hugging Face TGI, llama.cpp u Ollama si se generan ficheros GGUF. El autor no publica dichos ficheros.
 - Latencia y throughput: no disponible.
 
 Advertencia: el repositorio ocupa 0,3 GB, por lo que es probable que no contenga los pesos completos del modelo y que la inferencia directa falle o requiera combinar un adaptador con el modelo base.
@@ -74,11 +74,11 @@ Advertencia: el repositorio ocupa 0,3 GB, por lo que es probable que no contenga
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Umair577/qwen3-4b-agent | ~4B (heredado) | 32 768 nativo / 131 072 con YaRN (heredado) | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen/Qwen3-4B | 4B | 32 768 nativo / 131 072 con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado | Documentado en el informe tecnico de Qwen3; cifras no reproducidas aqui |
-| Llama 3.2 3B Instruct | 3,2B | 131 072 | Licencia comunitaria de Llama 3.2 | HuggingFace / Meta | No disponible en esta ficha |
-| Gemma 3 4B IT | ~4B | 131 072 | Licencia de Gemma | HuggingFace / Google | No disponible en esta ficha |
-| Phi-4-mini | 3,8B | 131 072 | MIT | HuggingFace / Microsoft | No disponible en esta ficha |
+| Umair577/qwen3-4b-agent | ~4B (heredado) | 32 768 nativo / 131 072 con YaRN (heredado) | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen/Qwen3-4B | 4B | 32 768 nativo / 131 072 con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado | Documentado en el informe tecnico de Qwen3; cifras no reproducidas aqui |
+| Llama 3.2 3B Instruct | 3,2B | 131 072 | Licencia comunitaria de Llama 3.2 | Hugging Face / Meta | No disponible en esta ficha |
+| Gemma 3 4B IT | ~4B | 131 072 | Licencia de Gemma | Hugging Face / Google | No disponible en esta ficha |
+| Phi-4-mini | 3,8B | 131 072 | MIT | Hugging Face / Microsoft | No disponible en esta ficha |
 
 La comparativa se limita a parametros, contexto y licencia, datos publicos y verificables de cada modelo. No se incluyen cifras de rendimiento comparadas porque no se dispone de evaluaciones de este fine-tune y no se ha realizado una ejecucion propia de los modelos alternativos.
 
@@ -96,7 +96,7 @@ La comparativa se limita a parametros, contexto y licencia, datos publicos y ver
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Umair577/qwen3-4b-agent
+- Modelo en Hugging Face: https://huggingface.co/Umair577/qwen3-4b-agent
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen3-4B-unsloth-bnb-4bit
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`qwen3-4b-math17k-scc_final-seed42` es un ajuste fino del modelo base `Qwen/Qwen3-4B`, publicado por el usuario `swadeshb` en HuggingFace. El identificador del modelo y el campo `base_model` de la model card indican un transformer denso de aproximadamente 4.000 millones de parametros, sin mezcla de expertos, derivado de la familia Qwen3. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la receta de aprendizaje por refuerzo introducida en DeepSeekMath, usando la libreria TRL 0.26.0 sobre Transformers 4.57.1 y PyTorch 2.8.0.
+`qwen3-4b-math17k-scc_final-seed42` es un ajuste fino del modelo base `Qwen/Qwen3-4B`, publicado por el usuario `swadeshb` en Hugging Face. El identificador del modelo y el campo `base_model` de la model card indican un transformer denso de aproximadamente 4.000 millones de parametros, sin mezcla de expertos, derivado de la familia Qwen3. El entrenamiento se ha realizado con GRPO (Group Relative Policy Optimization), la receta de aprendizaje por refuerzo introducida en DeepSeekMath, usando la libreria TRL 0.26.0 sobre Transformers 4.57.1 y PyTorch 2.8.0.
 
 El nombre del repositorio (`math17k`) y la etiqueta `grpo` apuntan a un ajuste orientado a razonamiento matematico sobre un conjunto de aproximadamente 17.000 problemas, con una semilla fija (42) que sugiere un experimento de ablacion o replicabilidad. El autor mantiene un registro del entrenamiento en Weights & Biases bajo el proyecto `credit-qwen3-4b-math17k`.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia (sobre un modelo denso de ~4B parametros, calculo estandar, no confirmado con los pesos reales): ~8-9 GB en FP16/BF16 contando pesos y cache KV moderada; ~5 GB en cuantizacion de 8 bits; ~2,5-3 GB en cuantizacion de 4 bits.
 - GPU recomendadas: A100 40 GB, H100, L40S o A10G para servicio concurrente; RTX 4090, RTX 3090, RTX 4080 o RTX 4070 Ti para uso individual en FP16.
 - Cabe en GPU de consumo: si, en FP16 en tarjetas con 12 GB o mas (RTX 3060 12 GB, RTX 4070, RTX 4090) y en 4 bits en tarjetas de 6-8 GB (RTX 3060 Ti, RTX 4060, RTX 2070), siempre que se disponga de la cuantizacion correspondiente.
-- Opciones de despliegue: `transformers` con `pipeline` o `AutoModelForCausalLM` (metodo documentado por el autor); vLLM y TGI como servidores compatibles con safetensors en formato HuggingFace; llama.cpp u Ollama solo si se convierte previamente a GGUF, ya que no se publica ninguna variante GGUF.
+- Opciones de despliegue: `transformers` con `pipeline` o `AutoModelForCausalLM` (metodo documentado por el autor); vLLM y TGI como servidores compatibles con safetensors en formato Hugging Face; llama.cpp u Ollama solo si se convierte previamente a GGUF, ya que no se publica ninguna variante GGUF.
 - Latencia y throughput estimados: no disponible. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 - Nota de advertencia: el repositorio ocupa 0,5 GB, muy por debajo de los ~8 GB que requeriria un checkpoint de 4B en FP16. Es probable que el repositorio contenga un subconjunto de ficheros, pesos cuantizados o un checkpoint incompleto; conviene inspeccionar el indice de safetensors antes de planificar el hardware.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificados de contexto, licencia ni rendimiento de las a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/swadeshb/qwen3-4b-math17k-scc_final-seed42
+- Modelo en Hugging Face: https://huggingface.co/swadeshb/qwen3-4b-math17k-scc_final-seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/swadeshb-individual/credit-qwen3-4b-math17k/runs/jgjotwws
 - Repositorio de TRL: https://github.com/huggingface/trl

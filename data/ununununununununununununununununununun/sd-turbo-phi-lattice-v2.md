@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sd-turbo-phi-lattice-v2 es un ajuste (fine-tune) del modelo de difusion texto-a-imagen stabilityai/sd-turbo, publicado por el usuario ununununununununununununununununununun en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de una version del backbone UNet de sd-turbo (865.910.724 parametros) procesada mediante una tecnica de optimizacion post-entrenamiento denominada phi-lattice-v2, que combina una pasada de calibracion de escalas ponderada por importancia con un esquema de cuantizacion multi-dimensional. El objetivo declarado es reducir drasticamente el tamano del UNet manteniendo la calidad visual, orientado a despliegue en dispositivos con recursos limitados (el autor menciona Android en sus metricas).
+sd-turbo-phi-lattice-v2 es un ajuste (fine-tune) del modelo de difusion texto-a-imagen stabilityai/sd-turbo, publicado por el usuario ununununununununununununununununununun en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de una version del backbone UNet de sd-turbo (865.910.724 parametros) procesada mediante una tecnica de optimizacion post-entrenamiento denominada phi-lattice-v2, que combina una pasada de calibracion de escalas ponderada por importancia con un esquema de cuantizacion multi-dimensional. El objetivo declarado es reducir drasticamente el tamano del UNet manteniendo la calidad visual, orientado a despliegue en dispositivos con recursos limitados (el autor menciona Android en sus metricas).
 
 El modelo hereda la arquitectura de sd-turbo: un pipeline Stable Diffusion con UNet, VAE y text encoder, disenado para generacion en muy pocos pasos (2 pasos de inferencia con guidance_scale=0.0 en el ejemplo de uso). La innovacion del repositorio no esta en la arquitectura ni en los datos de entrenamiento, sino en el empaquetado de pesos: se incluye tanto el UNet estandar en float16 (1,65 GB) para uso directo con diffusers, como un archivo empaquetado en 4 bits (459,4 MB) que reduce el tamano 7,18 veces respecto a FP32.
 
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto / pasos | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sd-turbo-phi-lattice-v2 | 865,9 M (UNet) | 2 pasos de inferencia | 4 bits empaquetado, float16 | other | HuggingFace, diffusers |
-| stabilityai/sd-turbo | 865,9 M (UNet) | 1-4 pasos de inferencia | float16, FP32 | other (Stability AI) | HuggingFace, diffusers |
-| stabilityai/sdxl-turbo | no disponible en la informacion | 1-4 pasos de inferencia | float16, FP32 | other (Stability AI) | HuggingFace, diffusers |
+| sd-turbo-phi-lattice-v2 | 865,9 M (UNet) | 2 pasos de inferencia | 4 bits empaquetado, float16 | other | Hugging Face, diffusers |
+| stabilityai/sd-turbo | 865,9 M (UNet) | 1-4 pasos de inferencia | float16, FP32 | other (Stability AI) | Hugging Face, diffusers |
+| stabilityai/sdxl-turbo | no disponible en la informacion | 1-4 pasos de inferencia | float16, FP32 | other (Stability AI) | Hugging Face, diffusers |
 | Modelos de difusion cuantizados a 4 bits (genericos) | variable | variable | 4 bits | variable | variable |
 
 La comparacion con sdxl-turbo y con otros modelos cuantizados es cualitativa: no hay datos de rendimiento comparables en la informacion disponible. La ventaja principal de este repositorio frente a sd-turbo es el tamano reducido del UNet en 4 bits; la desventaja es la ausencia de evaluacion independiente y de benchmarks estandar de calidad de imagen.
@@ -91,7 +91,7 @@ La comparacion con sdxl-turbo y con otros modelos cuantizados es cualitativa: no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ununununununununununununununununununun/sd-turbo-phi-lattice-v2
+- Modelo en Hugging Face: https://huggingface.co/ununununununununununununununununununun/sd-turbo-phi-lattice-v2
 - Modelo base: https://huggingface.co/stabilityai/sd-turbo
 - Documentacion de diffusers: https://huggingface.co/docs/diffusers
 - Imagen de comparativa incluida en el repo: comparison_v2_grid.png (referenciada en la model card)

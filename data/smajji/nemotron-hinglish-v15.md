@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-Hinglish-v15 (también referido como Mevine ASR) es un modelo de reconocimiento automático del habla (ASR) en streaming, bilingüe hindi/inglés y especializado en habla code-mixed hinglish. Lo publica el usuario smajji en HuggingFace y se construye por fine-tuning de `nvidia/nemotron-3.5-asr-streaming-0.6b`, un modelo cache-aware con arquitectura FastConformer-RNNT de aproximadamente 0,6 mil millones de parámetros. El repositorio ocupa 2,6 GB y usa la librería NeMo de NVIDIA.
+Nemotron-Hinglish-v15 (también referido como Mevine ASR) es un modelo de reconocimiento automático del habla (ASR) en streaming, bilingüe hindi/inglés y especializado en habla code-mixed hinglish. Lo publica el usuario smajji en Hugging Face y se construye por fine-tuning de `nvidia/nemotron-3.5-asr-streaming-0.6b`, un modelo cache-aware con arquitectura FastConformer-RNNT de aproximadamente 0,6 mil millones de parámetros. El repositorio ocupa 2,6 GB y usa la librería NeMo de NVIDIA.
 
 El problema que aborda es concreto: el reconocimiento de habla hindú-inglesa mezclada (código mezclado intra-frase), un escenario frecuente en la India y mal cubierto por los ASR monolingües. Según la model card, esta es la decimoquinta iteración de la línea Mevine y se inicializa en caliente desde el mejor checkpoint de la v13, añadiendo el corpus académico de inglés indio `nptel_ai4bharat` (unas 3.700 horas) para recuperar el inglés limpio e indio sin degradar el rendimiento en hinglish code-mixed.
 
@@ -78,7 +78,7 @@ El autor afirma que v15 es la versión mejor equilibrada: mejor inglés limpio (
 
 | Modelo | Parámetros | Tipo | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nemotron-hinglish-v15 | ~0,6B | FastConformer-RNNT streaming | inglés, hindi, hinglish | no disponible | HuggingFace (0 descargas, 0 likes) |
+| nemotron-hinglish-v15 | ~0,6B | FastConformer-RNNT streaming | inglés, hindi, hinglish | no disponible | Hugging Face (0 descargas, 0 likes) |
 | nvidia/nemotron-3.5-asr-streaming-0.6b | ~0,6B | FastConformer-RNNT streaming | no disponible en la información proporcionada | no disponible | modelo base del fine-tuning |
 | Mevine v13 (misma línea) | ~0,6B | FastConformer-RNNT streaming | inglés, hindi, hinglish | no disponible | checkpoint previo; sin repositorio enlazado en la información disponible |
 
@@ -92,14 +92,14 @@ La comparación con alternativas de otros autores (familia Whisper de OpenAI, Ca
 - Sesgo de dominio: el 63% del entrenamiento es inglés, con un peso importante de corpus académicos NPTEL. El rendimiento en dominios conversacionales no académicos no está documentado.
 - Cobertura lingüística cerrada: solo inglés, hindi y hinglish. No hay soporte declarado de otras lenguas indias ni de español.
 - Riesgo de alucinación en ASR: como todo modelo seq2seq con decodificador RNNT, puede generar sustituciones e inserciones plausibles en audio ruidoso, con más probabilidad en tramos code-mixed o con cifras.
-- Metadatos incompletos: pipeline, idiomas y licencia aparecen como no disponibles en HuggingFace, lo que dificulta el descubrimiento y la integración automatizada.
+- Metadatos incompletos: pipeline, idiomas y licencia aparecen como no disponibles en Hugging Face, lo que dificulta el descubrimiento y la integración automatizada.
 - Repositorio sin validación externa: cero descargas y cero likes, sin revisión por pares ni informe de evaluación independiente. Las métricas son autoinformadas por el autor.
 - Métrica no especificada con precisión: la model card no aclara si los porcentajes de la tabla son WER, CER u otra medida, ni describe los conjuntos de evaluación.
 - Fechas del repositorio: el registro indica creación y última actualización en septiembre de 2026, posteriores a la fecha habitual de consulta; conviene verificar la vigencia del artefacto antes de desplegarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/smajji/nemotron-hinglish-v15
+- Modelo en Hugging Face: https://huggingface.co/smajji/nemotron-hinglish-v15
 - Informe de benchmarks citado en la model card: https://huggingface.co/smajji/nemotron-hinglish-v15/blob/main/BENCHMARKS.md
 - Modelo base del fine-tuning: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces recuperados no guardan relación con el repositorio ni con ASR. No se dispone por tanto de paper, blog, repositorio de código ni demo adicionales.

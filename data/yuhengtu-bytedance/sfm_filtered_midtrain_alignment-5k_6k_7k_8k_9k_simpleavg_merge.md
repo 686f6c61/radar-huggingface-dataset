@@ -71,7 +71,7 @@ No se dispone de información sobre modelos comparables específicos. El propio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_8k_9k_simpleavg_merge
 - Otros merges del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-5k_6k_7k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_filtered_midtrain_alignment-7k_8k_9k_merge

@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Ni la
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit (este) | 11,28 B totales / ~1 B activos | no disponible | safetensors MLX 4 bits | apache-2.0 | HuggingFace, conversion no oficial de un tercero |
-| DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored | 11,28 B totales / ~1 B activos | no disponible | bfloat16 (transformers) | apache-2.0 | HuggingFace, modelo base de esta conversion |
-| mradermacher/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-i1-GGUF | ~11-12 B / ~1 B activos | no disponible | GGUF (imatrix) | apache-2.0 | HuggingFace, para llama.cpp y derivados |
-| DavidAU/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B | ~11-12 B / ~1 B activos | no disponible | safetensors | apache-2.0 | HuggingFace, variante orientada a velocidad de generacion |
+| stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit (este) | 11,28 B totales / ~1 B activos | no disponible | safetensors MLX 4 bits | apache-2.0 | Hugging Face, conversion no oficial de un tercero |
+| DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored | 11,28 B totales / ~1 B activos | no disponible | bfloat16 (transformers) | apache-2.0 | Hugging Face, modelo base de esta conversion |
+| mradermacher/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-i1-GGUF | ~11-12 B / ~1 B activos | no disponible | GGUF (imatrix) | apache-2.0 | Hugging Face, para llama.cpp y derivados |
+| DavidAU/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B | ~11-12 B / ~1 B activos | no disponible | safetensors | apache-2.0 | Hugging Face, variante orientada a velocidad de generacion |
 
 Los cuatro modelos comparten el mismo esqueleto LFM2 MoE y la misma licencia, y se diferencian en el ajuste fino aplicado, el formato de pesos y el ecosistema de ejecucion. No se dispone de datos de rendimiento comparativos entre ellos.
 
@@ -93,7 +93,7 @@ Los cuatro modelos comparten el mismo esqueleto LFM2 MoE y la misma licencia, y 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit
+- Repositorio en Hugging Face: https://huggingface.co/stardude1/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored-mlx-4Bit
 - Modelo base: https://huggingface.co/DavidAU/LFM2-12B-A1B-SpeedDemon-The-Deckard-II-HERETIC-Uncensored
 - Variante de la familia SpeedDemon orientada a velocidad: https://huggingface.co/DavidAU/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B
 - Conversion GGUF de mradermacher: https://huggingface.co/mradermacher/LFM2-12B-A1B-SpeedDemon-High-Intelligence-Series-B-i1-GGUF

@@ -108,7 +108,7 @@ La suite se diferencia por su escalera de siete niveles con metricas de calidad 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite
+- Repositorio Hugging Face: https://huggingface.co/Soulfate24/AutoRound-ASHQ1-Remix_Double-Quantization_Suite
 - Suite original (AutoRound + ASHQ1 Double-Quantization): https://huggingface.co/Soulfate24/AutoRound-ASHQ1_Double-Quantization_Suite
 - GitHub de Intel AutoRound: https://github.com/intel/auto-round
 - Documentacion de esquemas de cuantizacion de AutoRound: https://deepwiki.com/intel/auto-round/4.1-quantization-schemes

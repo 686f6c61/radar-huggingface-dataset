@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `stride-qwen3-4b-stabilized-2048-local_positive-20260916` | Adaptador LoRA sobre base de ~4B | 8.192 tokens en entrenamiento | Sin benchmarks publicados | No disponible | Publico en HuggingFace, 0 descargas |
-| `Qwen/Qwen3-4B-Instruct-2507` (base sin adaptador) | ~4B | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada (consultar la model card del base) | Publico en HuggingFace |
+| `stride-qwen3-4b-stabilized-2048-local_positive-20260916` | Adaptador LoRA sobre base de ~4B | 8.192 tokens en entrenamiento | Sin benchmarks publicados | No disponible | Publico en Hugging Face, 0 descargas |
+| `Qwen/Qwen3-4B-Instruct-2507` (base sin adaptador) | ~4B | No disponible en la informacion proporcionada | No disponible | No disponible en la informacion proporcionada (consultar la model card del base) | Publico en Hugging Face |
 | Adaptadores LoRA de matematicas sobre modelos de 3-4B (categoria) | ~3-4B | No disponible | No disponible | Variable segun autor | Multiples repositorios publicos; no se dispone de datos comparables verificados en esta busqueda |
-| Qwen3-4B-Thinking-2507 (variante con razonamiento) | ~4B | No disponible | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Qwen3-4B-Thinking-2507 (variante con razonamiento) | ~4B | No disponible | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
 
 No se dispone de resultados de benchmarks comparables en la informacion proporcionada, por lo que la comparativa se limita a parametros y disponibilidad; cualquier comparacion de calidad quedaria sin sustento numerico.
 
@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks comparables en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-20260916
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-20260916
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Revision fijada del modelo base: `cdbee75f17c01a7cc42f958dc650907174af0554` en el repositorio del base
 - Indice de checkpoints: `checkpoint_index.json` dentro del repositorio

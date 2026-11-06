@@ -25,7 +25,7 @@ Su relevancia radica en el resultado medido: sobre 500 resoluciones de la CBP em
 
 El modelo parte de Qwen3-4B-Instruct-2507, un transformer decoder-only de 4B parámetros, y se ajusta mediante LoRA con rango 16 aplicado a todas las capas lineales, en precisión bf16 y sobre GPUs H100 en Modal. Los pesos liberados corresponden al tercer intento de entrenamiento: continuación del segundo intento con tasa de aprendizaje 5e-5 sobre 6.480 resoluciones adicionales, 488 justificaciones verificadas (etiquetas de la CBP, explicación redactada por Opus y filtrada por un juez Codex que solo conserva las fundamentadas) y repetición de ejemplos solo de código. El modelo responde directamente, sin cadena de razonamiento.
 
-El corpus de entrenamiento son 27.841 resoluciones CBP CROSS (el corpus de HuggingFace `orlandowhite/hts-cross-rulings` más 6.480 resoluciones descargadas de CROSS). Cada ejemplo contiene un único producto, un código de 10 dígitos vigente y descripciones tomadas literalmente de los hechos de cada resolución, con eliminación de toda frase que nombre un código, una partida o la conclusión. Cada ejemplo incorpora el mismo tipo de evidencia recuperada que recibe en inferencia, construida exclusivamente con resoluciones anteriores a la suya para evitar fuga de información. Las etiquetas proceden únicamente de resoluciones de la CBP y del arancel de la USITC, nunca de un modelo profesor.
+El corpus de entrenamiento son 27.841 resoluciones CBP CROSS (el corpus de Hugging Face `orlandowhite/hts-cross-rulings` más 6.480 resoluciones descargadas de CROSS). Cada ejemplo contiene un único producto, un código de 10 dígitos vigente y descripciones tomadas literalmente de los hechos de cada resolución, con eliminación de toda frase que nombre un código, una partida o la conclusión. Cada ejemplo incorpora el mismo tipo de evidencia recuperada que recibe en inferencia, construida exclusivamente con resoluciones anteriores a la suya para evitar fuga de información. Las etiquetas proceden únicamente de resoluciones de la CBP y del arancel de la USITC, nunca de un modelo profesor.
 
 La innovación técnica principal no está en la arquitectura sino en el protocolo: el modelo está diseñado para operar siempre con recuperación aumentada. Sin el paso de recuperación no funciona en absoluto; con él, el ajuste LoRA aporta +17,8 puntos sobre el modelo base con idéntica evidencia.
 
@@ -74,8 +74,8 @@ Diferencias emparejadas: este modelo menos el base, +17,8 puntos (IC 95% +13,6 a
 
 | Modelo | Parámetros | Contexto | Acierto exacto (500 resoluciones CBP) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Tariff classifier (este modelo) | 4,02B | No disponible | 59,8% | Apache 2.0 | HuggingFace, pesos safetensors |
-| Qwen3-4B-Instruct-2507 (base) | 4B | No disponible | 42,0% | Apache 2.0 | HuggingFace |
+| Tariff classifier (este modelo) | 4,02B | No disponible | 59,8% | Apache 2.0 | Hugging Face, pesos safetensors |
+| Qwen3-4B-Instruct-2507 (base) | 4B | No disponible | 42,0% | Apache 2.0 | Hugging Face |
 | Claude Opus 5.5 | No disponible | No disponible | 71,6% | Propietaria | API comercial |
 | Solo recuperación (baseline) | No aplica | No aplica | 38,0% | No aplica | No aplica |
 
@@ -92,11 +92,11 @@ La comparación relevante es doble: frente al modelo base, el ajuste LoRA aporta
 - No es una determinación aduanera automatizada: el autor lo describe explícitamente como un componente de un flujo supervisado por humanos.
 - Riesgo de alucinación de códigos plausibles pero incorrectos, mitigado parcialmente por el formato cerrado de respuesta y la lista de candidatos.
 - Licencia Apache 2.0 permite uso comercial, pero la responsabilidad legal de la clasificación arancelaria recae siempre en el declarante.
-- Sin descargas ni valoraciones en HuggingFace en el momento de la consulta; no hay evidencia de uso en producción por terceros.
+- Sin descargas ni valoraciones en Hugging Face en el momento de la consulta; no hay evidencia de uso en producción por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/youngjr1232/tariff-classifier-qwen3-4b
+- Modelo en Hugging Face: https://huggingface.co/youngjr1232/tariff-classifier-qwen3-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Corpus de resoluciones CBP CROSS: https://huggingface.co/datasets/orlandowhite/hts-cross-rulings
 - Repositorio del proyecto `inno-tariff-slm` (referenciado en la model card; script `scripts/eval_openset.py`, protocolo en `docs/evals/results-v2.md`): no disponible como URL verificable en la información proporcionada

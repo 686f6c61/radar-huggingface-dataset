@@ -78,7 +78,7 @@ No se dispone de comparativas con otros modelos publicos de enrutamiento en la i
 | Tiempo de ajuste | 9,7 s | 0,9 s | No disponible |
 | Latencia | 0,2 ms | 0,4 ms | No disponible |
 | Robustez multilingue esperada | Mayor | Menor | No aplica |
-| Licencia y disponibilidad | Apache 2.0, publicada en HuggingFace | No publicada como modelo | No es un modelo real |
+| Licencia y disponibilidad | Apache 2.0, publicada en Hugging Face | No publicada como modelo | No es un modelo real |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se dispone de comparativas con otros modelos publicos de enrutamiento en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pecca-core/demo-router-e5-logreg
+- Modelo en Hugging Face: https://huggingface.co/pecca-core/demo-router-e5-logreg
 - Dataset de entrenamiento: https://huggingface.co/datasets/pecca-core/demo-support-emails
 - Repositorio de Pecca: https://github.com/pecca-core/pecca
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-base

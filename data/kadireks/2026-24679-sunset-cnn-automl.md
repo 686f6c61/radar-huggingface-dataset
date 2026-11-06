@@ -2,7 +2,7 @@
 
 ## Resumen
 
-2026-24679-sunset-cnn-automl es una red neuronal convolucional compacta publicada por el usuario kadireks (Krit Adireksarn) en HuggingFace. Resuelve una tarea binaria muy concreta de clasificación de imágenes: determinar si una fotografía es un atardecer. El modelo se desarrolló como entrega de la tarea 2 (HW2) de la asignatura CMU 24-679 Design and Prototyping with AI (otoño de 2026), y tanto su arquitectura como sus hiperparámetros se seleccionaron automáticamente con una búsqueda Hyperband de keras-tuner: 30 configuraciones, `max_epochs=20`, `factor=3` y aproximadamente 3 minutos de cómputo total.
+2026-24679-sunset-cnn-automl es una red neuronal convolucional compacta publicada por el usuario kadireks (Krit Adireksarn) en Hugging Face. Resuelve una tarea binaria muy concreta de clasificación de imágenes: determinar si una fotografía es un atardecer. El modelo se desarrolló como entrega de la tarea 2 (HW2) de la asignatura CMU 24-679 Design and Prototyping with AI (otoño de 2026), y tanto su arquitectura como sus hiperparámetros se seleccionaron automáticamente con una búsqueda Hyperband de keras-tuner: 30 configuraciones, `max_epochs=20`, `factor=3` y aproximadamente 3 minutos de cómputo total.
 
 La red tiene 274.849 parámetros, recibe imágenes RGB redimensionadas a 96×96 píxeles y escaladas al rango [0,1], y devuelve una única salida sigmoide en la que un valor mayor o igual a 0,5 indica "atardecer". Se entrenó sobre el dataset VictorTishkevich/sunset-image-dataset, también de origen académico (HW1 de un compañero de curso), y declara una accuracy y un F1 macro de 0,9891 sobre una partición de test disjunta por grupos: 92 imágenes procedentes de 7 fotografías independientes.
 
@@ -67,7 +67,7 @@ No se documenta el número de tokens ni de imágenes efectivas de entrenamiento,
 ## Casos de uso
 
 - Material docente para AutoML: sirve como ejemplo completo y reproducible de búsqueda de hiperparámetros con keras-tuner y Hyperband sobre un problema pequeño, con un presupuesto de unos 3 minutos que permite ejecutarlo en clase o en un portátil.
-- Tutorial de carga y despliegue de modelos Keras desde HuggingFace: el fragmento de uso del repositorio muestra el patrón `hf_hub_download` + `keras.saving.load_model` + fichero de preprocesado en JSON, útil para enseñar contratos de entrada/salida versionados.
+- Tutorial de carga y despliegue de modelos Keras desde Hugging Face: el fragmento de uso del repositorio muestra el patrón `hf_hub_download` + `keras.saving.load_model` + fichero de preprocesado en JSON, útil para enseñar contratos de entrada/salida versionados.
 - Línea base (*baseline*) en experimentos de clasificación con datasets pequeños: su 0,989 de accuracy y F1 macro sirve como referencia frente a la que comparar alternativas más simples o más complejas sobre el mismo split disjunto por grupos.
 - Demostración de atajos en visión por computador: el hecho de que una regresión logística sobre doce estadísticos de color alcance 0,870 en la misma partición permite ilustrar cómo un problema aparentemente visual puede resolverse con señales de color no espaciales, y por qué conviene medir contra esa línea base antes de atribuir aprendizaje estructural a una CNN.
 - Prefiltrado exploratorio en herramientas personales de organización de fotografías: el modelo es lo bastante pequeño para etiquetar álbumes locales en CPU, siempre con revisión humana y sin garantías de robustez fuera de la distribución del dataset (no validado para producción).
@@ -102,7 +102,7 @@ No se dispone de fichas técnicas de modelos comparables en la información prop
 
 | Alternativa | Parámetros | Contexto / entrada | Accuracy | Macro F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| 2026-24679-sunset-cnn-automl | 274.849 | Imagen 96×96 RGB | 0,989 | 0,989 | MIT | HuggingFace (keras) |
+| 2026-24679-sunset-cnn-automl | 274.849 | Imagen 96×96 RGB | 0,989 | 0,989 | MIT | Hugging Face (keras) |
 | Estadísticos de color + regresión logística | No disponible | 12 estadísticos de color | 0,870 | 0,866 | No disponible | No publicada en el repo |
 | MobileNetV2 congelada + regresión logística | No disponible en la información proporcionada | No disponible | 0,837 | 0,831 | No disponible | No publicada en el repo |
 | Clase mayoritaria | No aplica | No aplica | 0,511 | 0,338 | No aplica | No aplica |
@@ -124,7 +124,7 @@ La lectura relevante de esta tabla es que la CNN supera a una línea base purame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kadireks/2026-24679-sunset-cnn-automl
+- Modelo en Hugging Face: https://huggingface.co/kadireks/2026-24679-sunset-cnn-automl
 - Dataset de entrenamiento: https://huggingface.co/datasets/VictorTishkevich/sunset-image-dataset
 - Perfil del autor: https://huggingface.co/kadireks
 - Búsqueda web: no se han encontrado artículos, papers, blogs, repositorios ni demos relevantes sobre este modelo en los resultados disponibles; las únicas entradas devueltas corresponden a páginas genéricas de buscador sin relación con el modelo.

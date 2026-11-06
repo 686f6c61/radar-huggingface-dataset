@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Convergent-ch/Alpina-Large-2.0-Mega-122B
+- Modelo en Hugging Face: https://huggingface.co/Convergent-ch/Alpina-Large-2.0-Mega-122B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - Dataset SmolLM-Corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset CodeParrot: https://huggingface.co/datasets/codeparrot/codeparrot-clean-train

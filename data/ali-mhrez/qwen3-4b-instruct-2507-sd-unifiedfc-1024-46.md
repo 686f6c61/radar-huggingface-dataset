@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46 es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante densa de aproximadamente 4.000 millones de parametros, orientada a instrucciones y a contexto largo, sobre la que se ha aplicado un entrenamiento adicional con la libreria TRL y Unsloth. El repositorio no documenta el dataset, el numero de tokens ni el objetivo concreto del ajuste; el sufijo del nombre (SD-UnifiedFC-1024-46) no se explica en la model card.
+Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46 es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. Se trata, por tanto, de un derivado de la familia Qwen3 en su variante densa de aproximadamente 4.000 millones de parametros, orientada a instrucciones y a contexto largo, sobre la que se ha aplicado un entrenamiento adicional con la libreria TRL y Unsloth. El repositorio no documenta el dataset, el numero de tokens ni el objetivo concreto del ajuste; el sufijo del nombre (SD-UnifiedFC-1024-46) no se explica en la model card.
 
 El modelo hereda del base la arquitectura transformer decoder-only de Qwen3, su ventana de contexto nativa de 262.144 tokens y su soporte multilingue, aunque estos datos no estan confirmados para el ajuste fino en la informacion disponible. La unica informacion tecnica verificable en la model card es el procedimiento de entrenamiento (SFT con TRL 0.24.0, Transformers 5.5.0, PyTorch 2.10.0+cu128, Datasets 4.3.0, Tokenizers 0.22.2) y un ejemplo de uso con `transformers.pipeline`.
 
@@ -23,7 +23,7 @@ Su relevancia practica es limitada por el momento: cero descargas y cero likes, 
 | Tamano del repositorio | 1,0 GB (inferior a los ~8 GB esperados para pesos bf16 de un modelo de 4B; ver limitaciones) |
 | Libreria | transformers |
 | Modelo base | unsloth/Qwen3-4B-Instruct-2507 |
-| Fecha de creacion | 15 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 15 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -69,11 +69,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46 (este modelo) | ~4B | No confirmado (base: 262.144) | No disponible | HuggingFace, safetensors, 0 descargas | Ajuste SFT sin documentar, sin benchmarks |
-| Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens | Apache 2.0 | HuggingFace, muy descargado | Base oficial con documentacion y evaluaciones publicadas |
-| Llama 3.2 3B Instruct | ~3B | 128.000 tokens | Licencia comunitaria de Meta Llama 3.2 | HuggingFace, ampliamente adoptado | Alternativa de tamano similar con ecosistema maduro |
-| Phi-4-mini-instruct | ~3,8B | 128.000 tokens | MIT | HuggingFace | Buen rendimiento en razonamiento y matematicas para su tamano |
-| Gemma 3 4B IT | ~4B | 128.000 tokens | Terminos de uso de Gemma | HuggingFace | Multilingue, con variantes multimodales en la familia |
+| Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46 (este modelo) | ~4B | No confirmado (base: 262.144) | No disponible | Hugging Face, safetensors, 0 descargas | Ajuste SFT sin documentar, sin benchmarks |
+| Qwen3-4B-Instruct-2507 (modelo base) | ~4B | 262.144 tokens | Apache 2.0 | Hugging Face, muy descargado | Base oficial con documentacion y evaluaciones publicadas |
+| Llama 3.2 3B Instruct | ~3B | 128.000 tokens | Licencia comunitaria de Meta Llama 3.2 | Hugging Face, ampliamente adoptado | Alternativa de tamano similar con ecosistema maduro |
+| Phi-4-mini-instruct | ~3,8B | 128.000 tokens | MIT | Hugging Face | Buen rendimiento en razonamiento y matematicas para su tamano |
+| Gemma 3 4B IT | ~4B | 128.000 tokens | Terminos de uso de Gemma | Hugging Face | Multilingue, con variantes multimodales en la familia |
 
 La comparacion de rendimiento entre estos modelos y el ajuste aqui descrito no es posible: este repositorio no publica ninguna evaluacion. Las cifras de contexto y licencia de las alternativas corresponden a su documentacion publica.
 
@@ -92,10 +92,10 @@ La comparacion de rendimiento entre estos modelos y el ajuste aqui descrito no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-1024-46
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de Transformers: https://github.com/huggingface/transformers
 
-Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los del propio repositorio de HuggingFace y los de las herramientas citadas en la model card. No se han encontrado papers, blogs ni demos asociados.
+Nota: las busquedas web realizadas no devolvieron ningun resultado relevante sobre este modelo; los unicos enlaces utiles son los del propio repositorio de Hugging Face y los de las herramientas citadas en la model card. No se han encontrado papers, blogs ni demos asociados.

@@ -74,7 +74,7 @@ Nota: los datos de los modelos comparables provienen de información pública ge
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Qwen3.8-2B-Function-Calling-xLAM-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Qwen3.8-2B-Function-Calling-xLAM-GGUF
 - Variante similar de la comunidad: https://huggingface.co/ermiaazarkhalili/Qwen3.8-2B-Function-Calling-xLAM-Unsloth-GGUF
 - Documentación de Qwen sobre function calling: https://qwen.readthedocs.io/en/latest/framework/function_call.html
 - Guía de function calling en Qwen3 (DeepWiki): https://deepwiki.com/QwenLM/Qwen3/4.3-function-calling-and-tool-use

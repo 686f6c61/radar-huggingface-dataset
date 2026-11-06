@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de ninguna de las variantes para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ6-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ6-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante usada para calibracion: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp
 - Herramienta de cuantizacion oQ / oMLX: https://github.com/jundot/omlx

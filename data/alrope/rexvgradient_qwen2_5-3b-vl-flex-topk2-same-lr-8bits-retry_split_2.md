@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alrope/rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_2` es un ajuste fino (SFT) derivado de la familia Qwen2.5-VL, publicado por el usuario alrope en HuggingFace. El nombre del repositorio y la etiqueta `flex_qwen2_5_vl_moe` sugieren una variante experimental con mezcla de expertos (MoE) sobre una base Qwen2.5-VL de 3B, entrenada con TRL. El checkpoint contiene 6.610.155.264 parametros segun los pesos en safetensors, lo que indica que el modelo efectivo es mayor que la base de 3B por la incorporacion de los modulos de mezcla de expertos.
+`alrope/rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_2` es un ajuste fino (SFT) derivado de la familia Qwen2.5-VL, publicado por el usuario alrope en Hugging Face. El nombre del repositorio y la etiqueta `flex_qwen2_5_vl_moe` sugieren una variante experimental con mezcla de expertos (MoE) sobre una base Qwen2.5-VL de 3B, entrenada con TRL. El checkpoint contiene 6.610.155.264 parametros segun los pesos en safetensors, lo que indica que el modelo efectivo es mayor que la base de 3B por la incorporacion de los modulos de mezcla de expertos.
 
 Se trata de un modelo de generacion de texto (pipeline `text-generation`) con capacidad multimodal heredada de Qwen2.5-VL, entrenado mediante SFT supervisado. La model card generada automaticamente por TRL no especifica el modelo base real (aparece como `None`), ni el dataset de entrenamiento, ni la licencia, lo que limita considerablemente la trazabilidad del checkpoint.
 
@@ -33,14 +33,14 @@ El entrenamiento se realizo con SFT (supervised fine-tuning) usando TRL 1.6.0.de
 - Procesamiento multimodal (imagen y texto) por la base Qwen2.5-VL, aunque no se documenta el alcance exacto tras el ajuste.
 - Soporte de conversaciones multi-turno a traves del formato de chat de Qwen.
 - Compatibilidad con `transformers` y con el pipeline de generacion de texto.
-- Tag `endpoints_compatible`, lo que indica que puede servirse mediante la infraestructura de endpoints de HuggingFace.
+- Tag `endpoints_compatible`, lo que indica que puede servirse mediante la infraestructura de endpoints de Hugging Face.
 - No se documenta soporte explicito de tool calling, function calling, agentes o modos de razonamiento extendido (thinking mode).
 - Capacidades multilingues: no disponibles.
 
 ## Casos de uso
 
 - Investigacion sobre arquitecturas MoE multimodales: el checkpoint permite reproducir y analizar el efecto de anadir expertos con top-k=2 sobre una base Qwen2.5-VL de 3B en tareas de generacion.
-- Experimentos de SFT con TRL: sirve como referencia para comparar configuraciones de entrenamiento (por ejemplo, `same-lr` frente a otras tasas) en un pipeline estandar de HuggingFace.
+- Experimentos de SFT con TRL: sirve como referencia para comparar configuraciones de entrenamiento (por ejemplo, `same-lr` frente a otras tasas) en un pipeline estandar de Hugging Face.
 - Evaluacion de la degradacion o mejora de capacidades visuales tras el ajuste: util para medir si el SFT sobre la base VL preserva la comprension de imagenes.
 - Prototipado de asistentes conversacionales en entornos de laboratorio, sin garantias de calidad para produccion.
 - Estudio de la relacion entre parametros totales (6,6B) y calidad en tareas de lenguaje, comparando con la base de 3B sin expertos.
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_2 | 6,61B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen2.5-VL-3B (base de referencia) | 3B aprox. | 32k (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | HuggingFace |
-| Qwen2.5-3B (texto) | 3B aprox. | 32k (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | HuggingFace |
+| rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_2 | 6,61B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen2.5-VL-3B (base de referencia) | 3B aprox. | 32k (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face |
+| Qwen2.5-3B (texto) | 3B aprox. | 32k (segun documentacion publica de Qwen) | Apache 2.0 (segun Qwen) | Hugging Face |
 
 La comparativa con la base Qwen2.5-VL-3B es la mas directa: el checkpoint aqui descrito duplica aproximadamente el numero de parametros por la capa MoE, pero no publica metricas que permitan afirmar una mejora. Frente a modelos de 7B de proposito general, el checkpoint no ofrece datos de rendimiento que justifiquen su uso fuera de investigacion.
 
@@ -85,6 +85,6 @@ La comparativa con la base Qwen2.5-VL-3B es la mas directa: el checkpoint aqui d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_2
+- Hugging Face: https://huggingface.co/alrope/rexvgradient_qwen2_5-3b-vl-flex-topk2-same-lr-8bits-retry_split_2
 - Run de Weights & Biases: https://wandb.ai/seanlyu2-university-of-illinois-urbana-champaign/huggingface/runs/af7uo5xj
 - Repositorio TRL: https://github.com/huggingface/trl

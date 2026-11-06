@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YuE2 Industrial LoRA es un ajuste fino mediante LoRA del modelo de generacion musical YuE2-3B, publicado por el usuario monsterovich en HuggingFace. El adaptador especializa el modelo base en rock electronico industrial y cinematico, entrenado exclusivamente con 31 temas completos de los artistas Celldweller (18 pistas) y Blue Stahli (13 pistas). El objetivo es reproducir el caracter sonoro de ambos proyectos (industrial electronic rock, crossbreed, darkstep, industrial drum and bass) sin reentrenar el modelo completo.
+YuE2 Industrial LoRA es un ajuste fino mediante LoRA del modelo de generacion musical YuE2-3B, publicado por el usuario monsterovich en Hugging Face. El adaptador especializa el modelo base en rock electronico industrial y cinematico, entrenado exclusivamente con 31 temas completos de los artistas Celldweller (18 pistas) y Blue Stahli (13 pistas). El objetivo es reproducir el caracter sonoro de ambos proyectos (industrial electronic rock, crossbreed, darkstep, industrial drum and bass) sin reentrenar el modelo completo.
 
 Tecnicamente, el LoRA se aplica sobre la ruta NAR (non-autoregressive) del pipeline de YuE2, es decir, sobre las capas de atencion, los MLP y las cabezas vae2llm/llm2vae, mientras que la fase de planificacion AR (autoregressive) permanece intacta en el modelo base. Esto lo convierte en un adaptador ligero (rank 8, alpha 8) que modula la generacion de latentes de audio mas que la estructura musical de alto nivel.
 
@@ -68,14 +68,14 @@ No constan valores de MMLU, HumanEval, GSM8K ni de metricas objetivas de calidad
 - Cabe en GPU de consumo: no confirmado explicitamente; los modos `low_vram` y `offload_ar` sugieren que el autor contempla entornos con memoria limitada.
 - Opciones de despliegue: paquete `yue2` con `YuE2Pipeline.from_pretrained(...)` para el modelo fusionado; `lora_pipeline.LoRAYuE2Pipeline.from_pretrained("m-a-p/YuE2-3B", lora=...)` para cargar el adaptador sin fusionar; o el script `test.py` del repositorio YuE en modo `render`. No se documenta soporte para vLLM, llama.cpp, Ollama o TGI.
 - Latencia y throughput estimados: no disponible.
-- Dependencia adicional: se requiere el VAE (YuE2-VAE) presente en la cache de HuggingFace.
+- Dependencia adicional: se requiere el VAE (YuE2-VAE) presente en la cache de Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| monsterovich/yue2-industrial-lora | ~3B (base) + LoRA rank 8 | no disponible | MSE 2,28 → 1,43; delta NAR 1,8%-8,8% segun escala | no disponible | HuggingFace, 0 descargas, 0 likes |
-| m-a-p/YuE2-3B (modelo base) | ~3B | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| monsterovich/yue2-industrial-lora | ~3B (base) + LoRA rank 8 | no disponible | MSE 2,28 → 1,43; delta NAR 1,8%-8,8% segun escala | no disponible | Hugging Face, 0 descargas, 0 likes |
+| m-a-p/YuE2-3B (modelo base) | ~3B | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Otros modelos de generacion musical | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La model card no ofrece comparaciones con alternativas, y la busqueda web realizada no devolvio informacion tecnica relevante sobre este modelo ni sobre modelos comparables.
@@ -90,11 +90,11 @@ La model card no ofrece comparaciones con alternativas, y la busqueda web realiz
 - Limitacion de contexto: no disponible.
 - Falta de benchmarks: no hay metricas objetivas de calidad musical ni comparaciones con otros modelos, por lo que la evaluacion depende de la escucha subjetiva.
 - Adopcion nula: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, sin comunidad que haya validado su comportamiento.
-- Dependencias de ejecucion: requiere el paquete `yue2`, el VAE alojado en la cache de HuggingFace y, en el modo adaptador, los ficheros `lora.py` y `lora_pipeline.py` en `sys.path`.
+- Dependencias de ejecucion: requiere el paquete `yue2`, el VAE alojado en la cache de Hugging Face y, en el modo adaptador, los ficheros `lora.py` y `lora_pipeline.py` en `sys.path`.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/monsterovich/yue2-industrial-lora
+- Modelo en Hugging Face: https://huggingface.co/monsterovich/yue2-industrial-lora
 - Modelo base referenciado: https://huggingface.co/m-a-p/YuE2-3B
 - Repositorio YuE (mencionado en la model card, contiene `test.py`, `train/merge_lora.py` y el runtime LoRA): https://github.com/multimodal-art-projection/YuE
 - Dataset de entrenamiento citado por el autor: `train/dataset-celldweller-blue-stahli-full` (31 pares de tokens de codec y latentes de VAE)

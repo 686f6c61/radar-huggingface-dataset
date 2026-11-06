@@ -83,7 +83,7 @@ No se dispone de comparaciones directas con otros modelos de la misma categoria 
 
 ## Enlaces
 
-- HuggingFace: [flodraye/qwen3-0.6b-selfdistill-reverse-kl](https://huggingface.co/flodraye/qwen3-0.6b-selfdistill-reverse-kl)
+- Hugging Face: [flodraye/qwen3-0.6b-selfdistill-reverse-kl](https://huggingface.co/flodraye/qwen3-0.6b-selfdistill-reverse-kl)
 - Repositorio del proyecto: [github.com/florentdraye/distill-cl-biography](https://github.com/florentdraye/distill-cl-biography)
 - Modelo base Qwen3-0.6B: [Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - Qwen3 Technical Report: [arXiv:2505.09388](https://arxiv.org/abs/2505.09388)

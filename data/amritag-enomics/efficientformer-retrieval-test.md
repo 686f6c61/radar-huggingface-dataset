@@ -76,5 +76,5 @@ No disponible. Este repositorio es un artefacto de prueba de 49,6 K parámetros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Amritag-enomics/efficientformer-retrieval-test
+- Hugging Face: https://huggingface.co/Amritag-enomics/efficientformer-retrieval-test
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardaban relación con el modelo.

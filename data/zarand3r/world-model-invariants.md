@@ -77,7 +77,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zarand3r/world-model-invariants
+- Repositorio Hugging Face: https://huggingface.co/Zarand3r/world-model-invariants
 - Repositorio GitHub (código, logs y paper): https://github.com/Zarand3r/world-model-invariants
 - Artículo en arXiv (PDF): https://arxiv.org/pdf/2608.23526v1
 - Resumen del artículo en arxivtldr: https://arxivtldr.org/abs/2608.23526

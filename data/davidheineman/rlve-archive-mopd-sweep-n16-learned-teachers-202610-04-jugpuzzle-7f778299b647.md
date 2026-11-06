@@ -92,7 +92,7 @@ La comparacion es estructural por tamano, no de rendimiento: no existe ningun da
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-04-jugpuzzle-7f778299b647
+- Repositorio de Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-04-jugpuzzle-7f778299b647
 - Run de W&B asociado (identificador `1bac6468`): no se ha proporcionado la URL del proyecto; solo el ID del run.
 - Paper, blog o repositorio del proyecto RLVE: no disponible en la informacion proporcionada.
 - Documentacion de la familia Qwen2: no se ha incluido ningun enlace en la busqueda web asociada.

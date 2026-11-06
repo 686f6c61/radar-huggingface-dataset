@@ -10,7 +10,7 @@ El autor es `yuhengtu-bytedance`, presumiblemente vinculado a ByteDance, aunque 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tag `gpt_neox` de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tag `gpt_neox` de Hugging Face) |
 | Parametros totales | 6.856.253.440 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 - VRAM estimada para inferencia: con pesos en bfloat16 (13,7 GB), se necesitan al menos 16 GB de VRAM para carga completa. Con cuantización a 8 bits (no disponible oficialmente) se podría reducir a ~7 GB, y a 4 bits a ~4 GB, pero no se ofrecen versiones cuantizadas.
 - GPU recomendadas: una GPU con 16 GB o más, como RTX 4090, A100 40GB o H100. En consumer, una RTX 4080/4090 podría ser suficiente para inferencia básica.
-- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, TGI, o ejecutarse con llama.cpp si se convierte a GGUF (no disponible). También es compatible con la API de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers estándar, puede servirse con vLLM, TGI, o ejecutarse con llama.cpp si se convierte a GGUF (no disponible). También es compatible con la API de Hugging Face.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -65,10 +65,10 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_4k_5k_weightedavg_merge)
-- [HuggingFace - merge similar (2k_3k_4k)](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_merge)
-- [HuggingFace - merge similar (3k_4k_5k)](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-3k_4k_5k_merge)
-- [HuggingFace - merge sin filtro (4k_5k_6k)](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg)
+- [Hugging Face - modelo](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-1k_2k_3k_4k_5k_weightedavg_merge)
+- [Hugging Face - merge similar (2k_3k_4k)](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-2k_3k_4k_merge)
+- [Hugging Face - merge similar (3k_4k_5k)](https://huggingface.co/yuhengtu-bytedance/sfm_baseline_filtered-3k_4k_5k_merge)
+- [Hugging Face - merge sin filtro (4k_5k_6k)](https://huggingface.co/yuhengtu-bytedance/sfm-baseline-unfiltered-4k-5k-6k-avg)
 - [FriendliAI - despliegue del merge 3k_4k_5k](https://friendli.ai/models/yuhengtu-bytedance/sfm_baseline_filtered-3k_4k_5k_merge)
 - [FriendliAI - despliegue del merge sin filtro](https://friendli.ai/models/yuhengtu-bytedance/sfm-baseline-filtered-4k-5k-6k-avg)
 - [mergekit (repositorio)](https://github.com/cg123/mergekit)

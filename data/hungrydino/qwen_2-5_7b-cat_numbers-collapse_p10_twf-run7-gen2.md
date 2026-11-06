@@ -74,7 +74,7 @@ No se dispone de informacion sobre otros fine-tunes similares de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen2
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen2
 - Reporte tecnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL: https://github.com/huggingface/trl

@@ -42,7 +42,7 @@ No se dispone de la ficha técnica del modelo base. Los tags del repositorio (`m
 
 Lo que sí es verificable es el proceso de decensurado: los tags `uncensored`, `decensored`, `abliterated` y `heretic` apuntan a una intervención de abliteración, es decir, la eliminación o proyección fuera de las direcciones del espacio de activaciones asociadas a las respuestas de rechazo. Este tipo de intervención modifica los pesos para reducir la tasa de negativas del modelo sin reentrenamiento adicional, y habitualmente se aplica sobre merges ya existentes.
 
-En el plano de la conversión, el repositorio contiene cuantizaciones estáticas generadas a partir del modelo en formato HuggingFace (`convert_type: hf`) mediante la cadena de herramientas de llama.cpp, con los tensores de salida cuantizados. El campo `skip_mmproj: 1` indica que no se ha generado el fichero de proyector multimodal, por lo que cualquier capacidad de visión que pudiera tener el modelo base no estaría disponible en estas cuantizaciones.
+En el plano de la conversión, el repositorio contiene cuantizaciones estáticas generadas a partir del modelo en formato Hugging Face (`convert_type: hf`) mediante la cadena de herramientas de llama.cpp, con los tensores de salida cuantizados. El campo `skip_mmproj: 1` indica que no se ha generado el fichero de proyector multimodal, por lo que cualquier capacidad de visión que pudiera tener el modelo base no estaría disponible en estas cuantizaciones.
 
 ## Capacidades
 
@@ -127,7 +127,7 @@ Frente a modelos de otros autores del mismo rango de tamaño (30-34B) no se apor
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Gemma-4-Gembrain-31B-it-uncensored-heretic-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Gemma-4-Gembrain-31B-it-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/llmfan46/Gemma-4-Gembrain-31B-it-uncensored-heretic
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Gemma-4-Gembrain-31B-it-uncensored-heretic-i1-GGUF
 - Página de resumen y descargas del autor: https://hf.tst.eu/model#Gemma-4-Gembrain-31B-it-uncensored-heretic-GGUF

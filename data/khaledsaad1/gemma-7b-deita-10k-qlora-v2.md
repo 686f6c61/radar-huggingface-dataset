@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Khaledsaad1/gemma-7b-deita-10k-qlora-v2` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario Khaledsaad1, obtenido mediante ajuste supervisado (SFT) sobre el modelo base cuantizado `unsloth/gemma-7b-bnb-4bit`, es decir, Gemma 7B de Google DeepMind cargado en 4 bits con bitsandbytes. El repositorio contiene únicamente los pesos del adaptador (0,3 GB en safetensors) y no una copia completa del modelo, por lo que su uso requiere descargar y cargar el modelo base por separado con la librería PEFT 0.21.2 o superior.
+`Khaledsaad1/gemma-7b-deita-10k-qlora-v2` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario Khaledsaad1, obtenido mediante ajuste supervisado (SFT) sobre el modelo base cuantizado `unsloth/gemma-7b-bnb-4bit`, es decir, Gemma 7B de Google DeepMind cargado en 4 bits con bitsandbytes. El repositorio contiene únicamente los pesos del adaptador (0,3 GB en safetensors) y no una copia completa del modelo, por lo que su uso requiere descargar y cargar el modelo base por separado con la librería PEFT 0.21.2 o superior.
 
 El modelo no resuelve un problema declarado de forma explícita: la model card es una plantilla sin completar, con la mayoría de secciones marcadas como "[More Information Needed]". No hay información publicada sobre el dataset de entrenamiento, los hiperparámetros, el rango del adaptador, los idiomas objetivo ni la licencia. El identificador sugiere un ajuste sobre 10.000 ejemplos, presumiblemente del dataset Deita (selección automática de datos de alineación), pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Evaluación publicada |
 |---|---|---|---|---|---|
-| Este adaptador (`gemma-7b-deita-10k-qlora-v2`) | ~8,5 B (base) + LoRA | 8.192 (heredado) | no disponible | HuggingFace, 0 descargas | no disponible |
-| Gemma 7B Instruct (Google) | ~8,5 B | 8.192 | Gemma Terms of Use | HuggingFace, ampliamente utilizado | Sí, publicada por Google |
-| Mistral 7B Instruct v0.3 | ~7,2 B | 32.768 | Apache 2.0 | HuggingFace | Sí, publicada por Mistral AI |
-| Llama 3.1 8B Instruct | ~8 B | 131.072 | Llama 3.1 Community License | HuggingFace | Sí, publicada por Meta |
+| Este adaptador (`gemma-7b-deita-10k-qlora-v2`) | ~8,5 B (base) + LoRA | 8.192 (heredado) | no disponible | Hugging Face, 0 descargas | no disponible |
+| Gemma 7B Instruct (Google) | ~8,5 B | 8.192 | Gemma Terms of Use | Hugging Face, ampliamente utilizado | Sí, publicada por Google |
+| Mistral 7B Instruct v0.3 | ~7,2 B | 32.768 | Apache 2.0 | Hugging Face | Sí, publicada por Mistral AI |
+| Llama 3.1 8B Instruct | ~8 B | 131.072 | Llama 3.1 Community License | Hugging Face | Sí, publicada por Meta |
 
 La comparación de rendimiento no es posible: el adaptador carece de evaluación publicada, mientras que las tres alternativas cuentan con resultados oficiales en MMLU, HumanEval y GSM8K. En términos de licencia, Mistral 7B (Apache 2.0) es la opción más permisiva para uso comercial; Gemma 7B y Llama 3.1 8B imponen restricciones adicionales, y este adaptador no declara licencia alguna.
 
@@ -93,7 +93,7 @@ La comparación de rendimiento no es posible: el adaptador carece de evaluación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Khaledsaad1/gemma-7b-deita-10k-qlora-v2
+- Modelo en Hugging Face: https://huggingface.co/Khaledsaad1/gemma-7b-deita-10k-qlora-v2
 - Modelo base utilizado: https://huggingface.co/unsloth/gemma-7b-bnb-4bit
 - Gemma 7B original de Google: https://huggingface.co/google/gemma-7b
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rramirezkyle/deit-matching` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de matching, es decir, al emparejamiento entre pares de entradas. El autor lo describe explícitamente como un codebase de estudio: el objetivo declarado es mantener una configuración "base" manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, por tanto, un modelo entrenado ni un checkpoint con resultados.
+`rramirezkyle/deit-matching` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de DeiT (Data-efficient Image Transformer) orientada a tareas de matching, es decir, al emparejamiento entre pares de entradas. El autor lo describe explícitamente como un codebase de estudio: el objetivo declarado es mantener una configuración "base" manejable para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No es, por tanto, un modelo entrenado ni un checkpoint con resultados.
 
 El artefacto principal del repositorio es el script `train.py`, no los pesos. El fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), y el propio autor advierte que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark. El recuento real de parámetros en safetensors es de 33.088, muy lejos de los ~86 millones de un DeiT-base estándar, lo que confirma que se trata de una maqueta de arquitectura de tamaño reducido.
 
@@ -73,7 +73,7 @@ Los datos de las alternativas son valores públicos de referencia y no han sido 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rramirezkyle/deit-matching | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| rramirezkyle/deit-matching | 33.088 | no disponible | sin benchmarks (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | DeiT-base (Facebook Research) | ~86 M | imagen 224x224 | resultados publicados en ImageNet-1k (no verificados aqui) | codigo y pesos con licencia propia de Meta | ampliamente disponible |
 | ViT-base/16 (Google Research) | ~86 M | imagen 224x224 | resultados publicados en ImageNet-1k (no verificados aqui) | licencia propia de Google | ampliamente disponible |
 | CLIP ViT-B/32 (OpenAI) | ~88 M (torre visual) | imagen + texto | zero-shot clasificacion (no verificado aqui) | MIT | ampliamente disponible |
@@ -92,5 +92,5 @@ Los datos de las alternativas son valores públicos de referencia y no han sido 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rramirezkyle/deit-matching
+- Repositorio en Hugging Face: https://huggingface.co/rramirezkyle/deit-matching
 - No se han encontrado en la información disponible papers, blogs, repositorios adicionales ni demos asociados al modelo.

@@ -98,7 +98,7 @@ Otros modelos comparables: no disponible.
 - No se especifican capacidades de tool calling, agentes ni multilingüismo más allá del inglés.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Stereotypes-in-LLMs/lapa-12b-hiring-debias-sft-en
+- Modelo en Hugging Face: https://huggingface.co/Stereotypes-in-LLMs/lapa-12b-hiring-debias-sft-en
 - Repositorio del estudio y código: https://github.com/Stereotypes-in-LLMs/hiring_bias_mitigation
 - Dataset de entrenamiento: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-synthetic-data
 - Respuestas auditadas del adaptador: https://huggingface.co/datasets/Stereotypes-in-LLMs/hiring-bias-mitigation-responses

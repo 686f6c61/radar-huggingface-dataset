@@ -78,8 +78,8 @@ La comparativa es orientativa; no hay benchmarks comunes publicados entre estos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sky-Kim/functiongemma-270m-finetune
-- Modelo base en HuggingFace: https://huggingface.co/google/functiongemma-270m-it
+- Repositorio Hugging Face: https://huggingface.co/Sky-Kim/functiongemma-270m-finetune
+- Modelo base en Hugging Face: https://huggingface.co/google/functiongemma-270m-it
 - Documentación oficial de FunctionGemma (Google AI): https://ai.google.dev/gemma/docs/functiongemma
 - Página de FunctionGemma en Google DeepMind: https://deepmind.google/models/gemma/functiongemma/
 - Gemma Cookbook (sección FunctionGemma): https://deepwiki.com/google-gemini/gemma-cookbook/3.3-functiongemma-(function-calling)

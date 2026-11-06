@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/dagger-12B_SFT-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/dagger-12B_SFT-GGUF
 - Modelo base: https://huggingface.co/dipta007/dagger-12B_SFT
 - Dataset principal: https://huggingface.co/datasets/dipta007/dagger
 - Dataset de matemáticas con distractores: https://huggingface.co/datasets/dipta007/DistractMath-Bn

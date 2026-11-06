@@ -96,7 +96,7 @@ No se dispone de datos para comparar con otros modelos open source de la misma c
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: [https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised-DSpark-MTP](https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised-DSpark-MTP)
+- Modelo GGUF en Hugging Face: [https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised-DSpark-MTP](https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-GGUF-UltraOptimised-DSpark-MTP)
 - Modelo base safetensors: [https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU](https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU)
 - Dataset de entrenamiento: [https://huggingface.co/datasets/Solstice-AI/Solace-1.0-Omni](https://huggingface.co/datasets/Solstice-AI/Solace-1.0-Omni)
 - Motor Anvil (TurboQuant): [https://github.com/Solstice-Labs/anvil](https://github.com/Solstice-Labs/anvil)

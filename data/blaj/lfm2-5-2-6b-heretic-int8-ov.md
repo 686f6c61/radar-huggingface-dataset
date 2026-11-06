@@ -92,7 +92,7 @@ No hay datos de benchmarks que permitan comparar el rendimiento relativo de esta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/LFM2.5-2.6B-heretic-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/LFM2.5-2.6B-heretic-int8-ov
 - Modelo fuente abliterated: https://huggingface.co/heretic-org/LFM-2.5-2.6B-heretic
 - Modelo base de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Proyecto Heretic: https://heretic-project.org

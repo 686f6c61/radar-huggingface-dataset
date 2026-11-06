@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hadeel295/bert-fake-news-classifier` es un modelo de clasificación de texto publicado en HuggingFace por el usuario hadeel295, pensado para la detección de noticias falsas. Se trata de un ajuste fino sobre una arquitectura BERT (transformer encoder-only) con una cabeza de clasificación, distribuido en formato safetensors y compatible con la librería `transformers` y con Text Embeddings Inference. El repositorio acumula 34 descargas y 0 likes desde su publicación, y la model card es la plantilla automática de HuggingFace sin ninguna sección completada: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni autoría real.
+`hadeel295/bert-fake-news-classifier` es un modelo de clasificación de texto publicado en Hugging Face por el usuario hadeel295, pensado para la detección de noticias falsas. Se trata de un ajuste fino sobre una arquitectura BERT (transformer encoder-only) con una cabeza de clasificación, distribuido en formato safetensors y compatible con la librería `transformers` y con Text Embeddings Inference. El repositorio acumula 34 descargas y 0 likes desde su publicación, y la model card es la plantilla automática de Hugging Face sin ninguna sección completada: no hay información sobre datos de entrenamiento, hiperparámetros, evaluación ni autoría real.
 
 El dato más fiable disponible es el recuento de parámetros extraído de los pesos safetensors: 109.483.778. Ese número coincide exactamente con el total de `bert-base-uncased` (109.482.240) más una cabeza de clasificación lineal de 768 × 2 + 2 = 1.538 parámetros, lo que apunta a un BERT-base con tokenizador en minúsculas y dos clases de salida (probablemente falso/verdadero). Es una deducción aritmética, no un dato declarado por el autor.
 
@@ -31,7 +31,7 @@ Su relevancia práctica es limitada pero concreta: es un clasificador pequeño (
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer encoder-only de la familia BERT, con atención bidireccional completa, embeddings posicionales aprendidos y una cabeza de clasificación secuencial sobre el token `[CLS]`. El recuento de parámetros (109.483.778) es exactamente el de `bert-base-uncased` más una capa lineal de 2 salidas, lo que sitúa el modelo en la configuración base: 12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario de 30.522 tokens y límite posicional de 512 tokens. La etiqueta `arxiv:1910.09700` que aparece en la ficha corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono (citado en la plantilla automática de HuggingFace), no a un paper de este modelo.
+La arquitectura es un transformer encoder-only de la familia BERT, con atención bidireccional completa, embeddings posicionales aprendidos y una cabeza de clasificación secuencial sobre el token `[CLS]`. El recuento de parámetros (109.483.778) es exactamente el de `bert-base-uncased` más una capa lineal de 2 salidas, lo que sitúa el modelo en la configuración base: 12 capas, 768 dimensiones ocultas, 12 cabezas de atención, vocabulario de 30.522 tokens y límite posicional de 512 tokens. La etiqueta `arxiv:1910.09700` que aparece en la ficha corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono (citado en la plantilla automática de Hugging Face), no a un paper de este modelo.
 
 No hay ninguna información sobre el procedimiento de entrenamiento: se desconoce el dataset, el número de tokens, la composición de las clases, si hubo balanceo, el régimen de precisión (fp32, fp16, bf16), el número de épocas o la tasa de aprendizaje. Tampoco se documenta si se aplicó algún tipo de ajuste por instrucciones, calibración de umbrales o validación cruzada. En la práctica, esto significa que no se puede saber si el ajuste se hizo sobre un corpus periodístico en inglés, sobre un dataset de redes sociales o sobre una colección pequeña y sesgada.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe sin problema en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, GTX 1650 e incluso iGPU con suficiente memoria compartida.
 - Ejecución en CPU viable: con 110 M de parámetros, la inferencia por documento en CPU de gama media se sitúa habitualmente en el orden de decenas de milisegundos por lote pequeño, aunque no hay mediciones publicadas para este modelo concreto.
 - GPUs de datacenter compatibles: T4, L4, A10, A100, H100 (todas sobredimensionadas para este tamaño; se recomienda lotes grandes para aprovechar el paralelismo).
-- Opciones de despliegue: `transformers` (PyTorch), Text Embeddings Inference (declarado en las etiquetas), HuggingFace Inference Endpoints (`endpoints_compatible`), y ONNX Runtime u OpenVINO si se exporta manualmente. No se han publicado pesos GGUF ni recetas para llama.cpp u Ollama.
+- Opciones de despliegue: `transformers` (PyTorch), Text Embeddings Inference (declarado en las etiquetas), Hugging Face Inference Endpoints (`endpoints_compatible`), y ONNX Runtime u OpenVINO si se exporta manualmente. No se han publicado pesos GGUF ni recetas para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles; no hay ninguna medición publicada en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Como referencia estructural, el modelo parte de una configuración equivalente a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hadeel295/bert-fake-news-classifier
+- Modelo en Hugging Face: https://huggingface.co/hadeel295/bert-fake-news-classifier
 - Referencia citada en la plantilla de la model card (no es el paper del modelo): Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos (contenidos sobre "Mahol" en contextos bíblicos y musicales) no guardan relación con el modelo y se descartan.

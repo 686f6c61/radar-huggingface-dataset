@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-MoE-A0.6B es un modelo de generación de texto creado por el usuario bayliner1980 y publicado en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión experimental del modelo denso Qwen3.5-0.8B de Qwen a una arquitectura Mixture-of-Experts (MoE) mediante una técnica conocida como *moefication*: cada MLP del modelo original se divide en 28 expertos de 128 neuronas, y un router activa 14 de ellos por token, reduciendo a la mitad el cómputo de las MLP. Tras la conversión, el modelo original se destiló sobre el resultado, incluyendo su formato de chat.
+Qwen3.5-0.8B-MoE-A0.6B es un modelo de generación de texto creado por el usuario bayliner1980 y publicado en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión experimental del modelo denso Qwen3.5-0.8B de Qwen a una arquitectura Mixture-of-Experts (MoE) mediante una técnica conocida como *moefication*: cada MLP del modelo original se divide en 28 expertos de 128 neuronas, y un router activa 14 de ellos por token, reduciendo a la mitad el cómputo de las MLP. Tras la conversión, el modelo original se destiló sobre el resultado, incluyendo su formato de chat.
 
 El interés de este proyecto es principalmente de investigación: demuestra que es posible convertir un modelo denso pequeño a MoE sin preentrenamiento, obteniendo un ahorro de cómputo (~50 % en las MLP, ~623M de parámetros activos frente a 752M totales) a cambio de una pérdida moderada de calidad (el promedio de benchmarks cae de 0,471 a 0,428). Es relevante para desarrolladores que exploran optimización de inferencia en modelos pequeños y para quienes estudian técnicas de conversión denso-a-MoE.
 
@@ -95,7 +95,7 @@ La comparación más relevante es con su propio modelo base: el MoE sacrifica un
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bayliner1980/Qwen3.5-0.8B-MoE-A0.6B
+- Repositorio en Hugging Face: https://huggingface.co/bayliner1980/Qwen3.5-0.8B-MoE-A0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Datasets usados en la destilación:
   - https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

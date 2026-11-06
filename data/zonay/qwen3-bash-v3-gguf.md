@@ -96,7 +96,7 @@ No se dispone de datos comparativos publicados frente a otros modelos especializ
 
 ## Enlaces
 
-- HuggingFace (modelo GGUF): https://huggingface.co/zonay/qwen3-bash-v3-GGUF
+- Hugging Face (modelo GGUF): https://huggingface.co/zonay/qwen3-bash-v3-GGUF
 - Modelo base: https://huggingface.co/zonay/qwen3-bash-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/zonay/bash-data-nl2sh
 - Resultado de busqueda web (no relacionado directamente con el modelo): https://github.com/shelken/awesome-stars

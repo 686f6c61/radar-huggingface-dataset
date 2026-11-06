@@ -15,7 +15,7 @@ El modelo se publica como adaptadores LoRA de rango 128 sobre un DiT cuantizado 
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (modelo de visión densa; no tiene ventana de contexto de texto estándar) |
 | Tipos de cuantizacion | Modelo base cuantizado a 4 bits; adaptadores LoRA y decoder VAE en formato safetensors con precisión no documentada |
-| Idiomas soportados | Inglés (según la metadata de HuggingFace; el modelo base Qwen puede soportar otros idiomas, pero no está documentado en la información disponible) |
+| Idiomas soportados | Inglés (según la metadata de Hugging Face; el modelo base Qwen puede soportar otros idiomas, pero no está documentado en la información disponible) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (adaptadores y decoder VAE) y .pt (embeddings precomputados); el modelo base se descarga por separado |
 
@@ -66,7 +66,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 | Requisitos de GPU | 17–29 GB VRAM según resolución | No documentado en la información disponible |
 | Formato | LoRA rank-128 + decoder VAE sobre base 4-bit | No documentado |
 | Licencia | Apache-2.0 | No documentada en la información disponible |
-| Disponibilidad | HuggingFace, GitHub, demos | GitHub (prs-eth/Marigold) |
+| Disponibilidad | Hugging Face, GitHub, demos | GitHub (prs-eth/Marigold) |
 
 No se dispone de datos suficientes para comparar con un tercer modelo de la misma categoría.
 
@@ -83,9 +83,9 @@ No se dispone de datos suficientes para comparar con un tercer modelo de la mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huawei-bayerlab/marigold-v2-0
+- Hugging Face: https://huggingface.co/huawei-bayerlab/marigold-v2-0
 - Paper (PDF): https://huggingface.co/huawei-bayerlab/marigold-v2-0/resolve/main/assets/paper/Marigold%20V2.pdf
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/toshas/Marigold-V2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/toshas/Marigold-V2
 - Demo del proyecto: https://hf.co/spaces/huawei-bayerlab/marigold-v2-web
 - Repositorio de código: https://github.com/huawei-bayerlab/marigold-v2
 - Repositorio de Marigold original: https://github.com/prs-eth/Marigold

@@ -22,7 +22,7 @@ Conviene subir con expectativas realistas: el repositorio tiene 0 descargas y 0 
 | Formato de pesos | Binarios ELF compilados (179 ejecutables) + `devkit/` con assets de runtime; el fuente es safetensors GPTQ |
 | Libreria de despliegue | `llima` (runtime LLiMa sobre Modalix) |
 | Tamano del repositorio | 5,0 GB |
-| Fecha de creacion | 2026-10-18 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-10-18 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -98,7 +98,7 @@ La diferencia clave entre las cuatro opciones no es de calidad del modelo, sino 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/florianvoss/Qwen3-4B-Instruct-2507-GPTQ-a16w4
+- Repositorio Hugging Face: https://huggingface.co/florianvoss/Qwen3-4B-Instruct-2507-GPTQ-a16w4
 - Coleccion Neat 0.6.0: https://huggingface.co/collections/florianvoss/neat-060
 - Modelo fuente precuantizado: https://huggingface.co/simaai/Qwen3-4B-Instruct-2507-GPTQ-Safetensors/tree/b2b2fd29f7da6c550ef18e202a4fa2613081e6af
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

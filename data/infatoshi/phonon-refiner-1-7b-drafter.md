@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Infatoshi/phonon-refiner-1.7b-drafter | 233,9 M | no disponible | 5,36-6,12 tokens aceptados/pasada | LFM Open License v1.0 | HuggingFace (GGUF) |
+| Infatoshi/phonon-refiner-1.7b-drafter | 233,9 M | no disponible | 5,36-6,12 tokens aceptados/pasada | LFM Open License v1.0 | Hugging Face (GGUF) |
 | Drafter base alineado a LFM3-1.7B | no disponible | no disponible | 4,88-5,55 tokens aceptados/pasada | no disponible | no disponible |
 | DFlash (z-lab) | no disponible | no disponible | no disponible | no disponible | GitHub (z-lab/dflash) |
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes para comparar con otros drafters de la misma 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infatoshi/phonon-refiner-1.7b-drafter
+- Hugging Face: https://huggingface.co/Infatoshi/phonon-refiner-1.7b-drafter
 - Modelo base (refiner): https://huggingface.co/Infatoshi/phonon-refiner-1.7b
 - Repositorio Phonon: https://github.com/Infatoshi/phonon
 - DFlash (z-lab): https://github.com/z-lab/dflash

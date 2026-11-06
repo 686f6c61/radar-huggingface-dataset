@@ -98,7 +98,7 @@ No se han encontrado datos de benchmarks comparativos con alternativas como Llam
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf
+- Hugging Face: https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic-jp-gguf
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Fork de llama.cpp requerido: https://github.com/XHToken/llama.cpp
 - Modelo sin cuantizar (Heretic): https://huggingface.co/soyaakinohara/Spark-X2.5-4B-Heretic

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Llama-3.2-1B-dialect-dz es un modelo de generación de texto publicado en HuggingFace por el usuario Abdelfettah-77. Por el nombre del repositorio y por el recuento de parámetros (1.281.280.000 según los pesos en safetensors), se trata con alta probabilidad de un ajuste fino (fine-tuning) supervisado del modelo Llama 3.2 1B de Meta, orientado a un dialecto cuya etiqueta "dz" sugiere el árabe dialectal argelino, aunque esta interpretación no está confirmada en la documentación.
+Llama-3.2-1B-dialect-dz es un modelo de generación de texto publicado en Hugging Face por el usuario Abdelfettah-77. Por el nombre del repositorio y por el recuento de parámetros (1.281.280.000 según los pesos en safetensors), se trata con alta probabilidad de un ajuste fino (fine-tuning) supervisado del modelo Llama 3.2 1B de Meta, orientado a un dialecto cuya etiqueta "dz" sugiere el árabe dialectal argelino, aunque esta interpretación no está confirmada en la documentación.
 
 El modelo se distribuye con la librería transformers y las etiquetas declaradas incluyen trl, sft, conversational, text-generation-inference y endpoints_compatible, lo que indica que fue entrenado mediante Supervised Fine-Tuning con la librería TRL sobre un formato conversacional y que es desplegable en Text Generation Inference. No se documenta ni el dataset de entrenamiento, ni los hiperparámetros, ni los idiomas soportados, ni la licencia.
 
-Su relevancia potencial reside en cubrir un nicho poco atendido: asistentes conversacionales en dialectos magrebíes sobre una base de apenas 1,28 mil millones de parámetros, lo que permitiría inferencia en hardware de consumo. No obstante, la model card es la plantilla automática de HuggingFace sin rellenar, el repositorio no tiene descargas ni valoraciones y no se han publicado evaluaciones, por lo que debe considerarse un artefacto experimental no validado.
+Su relevancia potencial reside en cubrir un nicho poco atendido: asistentes conversacionales en dialectos magrebíes sobre una base de apenas 1,28 mil millones de parámetros, lo que permitiría inferencia en hardware de consumo. No obstante, la model card es la plantilla automática de Hugging Face sin rellenar, el repositorio no tiene descargas ni valoraciones y no se han publicado evaluaciones, por lo que debe considerarse un artefacto experimental no validado.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Idiomas declarados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-dialect-dz (este modelo) | 1,28 B | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Llama-3.2-1B-dialect-dz (este modelo) | 1,28 B | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
 | meta-llama/Llama-3.2-1B-Instruct | 1,24 B (aprox., ficha pública del modelo base) | 128.000 tokens | 8 idiomas oficiales, sin dialectos magrebíes | Llama 3.2 Community License | Ampliamente disponible |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,54 B (aprox., ficha pública) | 32.768 tokens nativos | Más de 29 idiomas, incluido árabe estándar | Apache 2.0 | Ampliamente disponible |
 | google/gemma-2-2b-it | 2,61 B (aprox., ficha pública) | 8.192 tokens | Multilingüe (más de 140 idiomas declarados) | Gemma Terms of Use | Ampliamente disponible |
@@ -85,7 +85,7 @@ Las cifras de los modelos comparativos proceden de sus fichas públicas y no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdelfettah-77/Llama-3.2-1B-dialect-dz
+- Modelo en Hugging Face: https://huggingface.co/Abdelfettah-77/Llama-3.2-1B-dialect-dz
 - Modelo base presumible (no confirmado por el autor): https://huggingface.co/meta-llama/Llama-3.2-1B
 - Modelo base instruct presumible (no confirmado por el autor): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentación de TRL, librería de entrenamiento indicada en las etiquetas: https://huggingface.co/docs/trl

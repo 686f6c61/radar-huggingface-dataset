@@ -31,7 +31,7 @@ El entrenamiento se realizó con LoRA de rango 32, aplicado a todas las capas li
 
 - El adaptador no añade capacidades nuevas por sí mismo; hereda las capacidades del modelo base `NVIDIA-Nemotron-3-Nano-30B-A3B-BF16`, que es un modelo de lenguaje generativo de propósito general.
 - Al estar entrenado con DPO sobre OASST1, se espera que mejore la alineación con preferencias humanas en tareas de conversación y asistencia, aunque no se han publicado evaluaciones que lo confirmen.
-- Soporta carga mediante la librería `peft` de HuggingFace, permitiendo integrarlo en pipelines de transformers.
+- Soporta carga mediante la librería `peft` de Hugging Face, permitiendo integrarlo en pipelines de transformers.
 - No se documentan capacidades específicas como tool calling, agentes, visión o audio. Estas dependen del modelo base y no se detallan en la información disponible.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - El adaptador LoRA en sí requiere muy poca memoria (1,5 GB de pesos), pero para usarlo es necesario cargar el modelo base completo.
 - El modelo base `NVIDIA-Nemotron-3-Nano-30B-A3B-BF16` en BF16 necesita aproximadamente 60 GB de VRAM (30B × 2 bytes). Sin embargo, al ser MoE con solo 3B parámetros activos, es posible ejecutarlo con cuantización (por ejemplo, 4-bit) en GPUs con 24-48 GB, como RTX 4090 o A6000, aunque esto no está confirmado por el autor.
 - Para una inferencia óptima sin cuantizar, se recomienda una GPU con al menos 80 GB (A100, H100) o varias GPUs en paralelo.
-- No se especifican opciones de despliegue específicas, pero al ser un modelo de HuggingFace compatible con transformers y PEFT, puede usarse con vLLM, llama.cpp (si se convierte a GGUF) o TGI, siempre que se cargue el adaptador adecuadamente.
+- No se especifican opciones de despliegue específicas, pero al ser un modelo de Hugging Face compatible con transformers y PEFT, puede usarse con vLLM, llama.cpp (si se convierte a GGUF) o TGI, siempre que se cargue el adaptador adecuadamente.
 - La latencia y el throughput dependen del hardware y de la cuantización; no hay datos publicados.
 
 ## Comparativa con modelos similares

@@ -77,10 +77,10 @@ Notas de medición declaradas por el autor: xLAM ETC es precisión exacta de lla
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B-Instruct + LoRA SFT/GRPO) | 0,49 B + LoRA | 32.768 (heredado) | no disponible | Tool calling con abstención | Adaptador PEFT en HuggingFace; 0 descargas |
-| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 | Apache 2.0 según la model card de Qwen | Asistente generalista e Instruct | Modelo completo en HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 según la model card de Qwen | Asistente generalista, mayor capacidad de razonamiento | Modelo completo en HuggingFace |
-| Llama-3.2-1B-Instruct | 1,24 B | 131.072 | Licencia comunitaria de Llama 3.2 | Asistente generalista multilingüe | Modelo completo en HuggingFace |
+| Este adaptador (Qwen2.5-0.5B-Instruct + LoRA SFT/GRPO) | 0,49 B + LoRA | 32.768 (heredado) | no disponible | Tool calling con abstención | Adaptador PEFT en Hugging Face; 0 descargas |
+| Qwen2.5-0.5B-Instruct (base) | 0,49 B | 32.768 | Apache 2.0 según la model card de Qwen | Asistente generalista e Instruct | Modelo completo en Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Apache 2.0 según la model card de Qwen | Asistente generalista, mayor capacidad de razonamiento | Modelo completo en Hugging Face |
+| Llama-3.2-1B-Instruct | 1,24 B | 131.072 | Licencia comunitaria de Llama 3.2 | Asistente generalista multilingüe | Modelo completo en Hugging Face |
 
 No hay datos de benchmarks de los modelos alternativos en la información proporcionada, por lo que no es posible comparar MMLU, MATH-500 ni precisión de tool calling entre ellos con cifras. La comparación cualitativa relevante es que este adaptador prioriza explícitamente el comportamiento de abstención y la precisión de nombre de función sobre el rendimiento general, que queda por debajo del de modelos de 1 B o más.
 

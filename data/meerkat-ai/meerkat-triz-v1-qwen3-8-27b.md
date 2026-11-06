@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - VRAM estimada para inferencia: el modelo base de 27.000 millones de parametros en BF16 requiere aproximadamente 54 GB de VRAM solo para los pesos, mas la memoria adicional para KV cache y activaciones (60-80 GB en total). El adaptador anade aproximadamente 0,9 GB. Con cuantizacion a 8 bits, la VRAM necesaria baja a unos 28-32 GB; a 4 bits, a unos 15-20 GB.
 - GPU recomendadas: para inferencia en BF16 se recomienda una A100 de 80 GB, H100 de 80 GB o equivalente. Con cuantizacion a 4 bits, una RTX 4090 de 24 GB o una RTX 3090 de 24 GB son suficientes.
 - Compatibilidad con GPU de consumo: si, con cuantizacion a 4 bits el modelo cabe en GPUs de consumo con 16-24 GB de VRAM.
-- Opciones de despliegue: el adaptador se carga con la libreria PEFT de HuggingFace junto con transformers. Para inferencia en produccion se puede usar vLLM o TGI, o convertir el modelo combinado a GGUF para llama.cpp. No se documenta soporte directo en Ollama.
+- Opciones de despliegue: el adaptador se carga con la libreria PEFT de Hugging Face junto con transformers. Para inferencia en produccion se puede usar vLLM o TGI, o convertir el modelo combinado a GGUF para llama.cpp. No se documenta soporte directo en Ollama.
 - Latencia y throughput: no disponible en la informacion proporcionada.
 
 ## Comparativa con modelos similares

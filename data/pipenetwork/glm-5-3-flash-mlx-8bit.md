@@ -72,7 +72,7 @@ No disponible. No se dispone de información suficiente sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-8bit
+- Hugging Face: https://huggingface.co/pipenetwork/GLM-5.3-Flash-MLX-8bit
 - Modelo base (Z.ai): https://huggingface.co/zai-org/GLM-5.3-Flash
 - Modelo base BF16: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Runtime MLX de PipeNetwork: https://github.com/PipeNetwork/glm53-flash-mlx

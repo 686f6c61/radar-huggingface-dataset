@@ -73,7 +73,7 @@ No se han publicado en la informacion disponible otros resultados (BEV AP, AP po
 
 | Modelo | Parametros | Contexto/entrada | KITTI Car AP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointpillars.kitti-car.mmdet3d (este) | 4,8 M | nube LiDAR, 4 canales | 77,61 (mAP declarado) | Apache-2.0 | HuggingFace, `torch-pointcloud` |
+| pointpillars.kitti-car.mmdet3d (este) | 4,8 M | nube LiDAR, 4 canales | 77,61 (mAP declarado) | Apache-2.0 | Hugging Face, `torch-pointcloud` |
 | PointPillars original (MMDetection3D) | ~4,8 M | nube LiDAR, 4 canales | no disponible en esta ficha | Apache-2.0 | GitHub open-mmlab |
 | VoxelNet / SECOND (detectores voxel 3D) | no disponible | nube LiDAR | no disponible | varía | MMDetection3D |
 | CenterPoint (detectores center-based) | no disponible | nube LiDAR | no disponible | varía | MMDetection3D |
@@ -93,7 +93,7 @@ La comparacion cuantitativa con alternativas no esta disponible en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pointpillars.kitti-car.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pointpillars.kitti-car.mmdet3d
 - Paper PointPillars (arXiv): https://arxiv.org/abs/1812.05784
 - Repositorio `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud
 - Repositorio MMDetection3D (origen de los pesos): https://github.com/open-mmlab/mmdetection3d

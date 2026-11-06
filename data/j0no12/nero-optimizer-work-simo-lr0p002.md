@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nero Optimizer Work — SimO (lr=0.002) es un checkpoint de investigación publicado por el usuario j0no12 en HuggingFace, no un modelo de lenguaje orientado a producción. Se trata de un decoder transformer denso de escala diminuta (aproximadamente 999.680 parámetros almacenados) entrenado sobre 500 millones de tokens con el optimizador SimO a una tasa de aprendizaje de 0,002, usando Apple MLX como backend. Su propósito declarado es hacer reproducible la comparación entre optimizadores dentro de una barrida de experimentos denominada Nero Optimizer Work.
+Nero Optimizer Work — SimO (lr=0.002) es un checkpoint de investigación publicado por el usuario j0no12 en Hugging Face, no un modelo de lenguaje orientado a producción. Se trata de un decoder transformer denso de escala diminuta (aproximadamente 999.680 parámetros almacenados) entrenado sobre 500 millones de tokens con el optimizador SimO a una tasa de aprendizaje de 0,002, usando Apple MLX como backend. Su propósito declarado es hacer reproducible la comparación entre optimizadores dentro de una barrida de experimentos denominada Nero Optimizer Work.
 
 La arquitectura corresponde a una familia "dense-deep" emparejada entre brazos del experimento: vocabulario de 2.048 tokens, flujo residual de 128 dimensiones, 6 bloques, cabezas de atención de 32 dimensiones y un MLP con gating de 148 dimensiones. La longitud de contexto es de solo 128 tokens y el entrenamiento se realizó con lotes de 32 ejemplos sobre un flujo de tokens preparado y congelado (finephrase-balanced-500m-2k-v2). La pérdida final de entrenamiento registrada es de 4,710409, con un rendimiento final de 421.951 tokens/s y una mediana de cola de 421.944 tokens/s.
 
@@ -106,6 +106,6 @@ Los brazos de la propia barrida son los únicos comparables metodológicamente v
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p002
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-simo-lr0p002
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas devuelven unicamente paginas sobre el apellido Gonzalez (Wikipedia, articulos ortograficos y el sitio del Ayuntamiento de Gonzalez, Tamaulipas, Mexico), sin relacion alguna con este checkpoint.
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

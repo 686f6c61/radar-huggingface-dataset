@@ -79,9 +79,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Dirección | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| WindyTranslate/phonepack-en-fr | no disponible | no disponible | ONNX int8 + `embed.bin` | CC-BY-4.0 | EN→FR | chrF++ 70,68; spBLEU 56,78 en FLORES-200 devtest | HuggingFace |
-| WindyTranslate/translate-tc-big-en-fr | no disponible | no disponible | no disponible | no disponible en la información | EN→FR | no disponible | HuggingFace |
-| Helsinki-NLP/opus-mt-tc-big-en-fr | no disponible | no disponible | no disponible | CC-BY-4.0 | EN→FR | no disponible | HuggingFace |
+| WindyTranslate/phonepack-en-fr | no disponible | no disponible | ONNX int8 + `embed.bin` | CC-BY-4.0 | EN→FR | chrF++ 70,68; spBLEU 56,78 en FLORES-200 devtest | Hugging Face |
+| WindyTranslate/translate-tc-big-en-fr | no disponible | no disponible | no disponible | no disponible en la información | EN→FR | no disponible | Hugging Face |
+| Helsinki-NLP/opus-mt-tc-big-en-fr | no disponible | no disponible | no disponible | CC-BY-4.0 | EN→FR | no disponible | Hugging Face |
 | CTranslate2 int8 del mismo modelo (referencia) | no disponible | no disponible | CTranslate2 int8 | no disponible | EN→FR | chrF++ 70,57 en el mismo conjunto | referencia en la model card, no es este pack |
 
 No se dispone de datos de parámetros o contexto para estos modelos en la información proporcionada; la comparativa se limita al formato, la licencia, la dirección de traducción y la calidad publicada.

@@ -75,10 +75,10 @@ El modelo supera a todos los modelos de su tamano en la mayoria de los datasets 
 
 | Modelo | Parametros | Contexto | BEIR AVG | Licencia | Disponibilidad |
 |--------|------------|----------|----------|----------|----------------|
-| answerai-colbert-small-v1 | 33M | No disponible | 53.79 | Apache 2.0 | HuggingFace |
-| snowflake-s | 33M | No disponible | 51.99 | Apache 2.0 | HuggingFace |
-| bge-small-en | 33M | No disponible | 51.68 | MIT | HuggingFace |
-| bge-base-en | 109M | No disponible | 53.25 | MIT | HuggingFace |
+| answerai-colbert-small-v1 | 33M | No disponible | 53.79 | Apache 2.0 | Hugging Face |
+| snowflake-s | 33M | No disponible | 51.99 | Apache 2.0 | Hugging Face |
+| bge-small-en | 33M | No disponible | 51.68 | MIT | Hugging Face |
+| bge-base-en | 109M | No disponible | 53.25 | MIT | Hugging Face |
 
 El modelo de Answer.AI ofrece el mejor rendimiento medio en BEIR entre los modelos de 33M y compite con bge-base-en, que tiene 3.3 veces mas parametros. No se dispone de informacion sobre e5-large-v2 en la tabla, aunque la model card afirma que lo supera.
 
@@ -93,7 +93,7 @@ El modelo de Answer.AI ofrece el mejor rendimiento medio en BEIR entre los model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/answerdotai/answerai-colbert-small-v1
+- Modelo en Hugging Face: https://huggingface.co/answerdotai/answerai-colbert-small-v1
 - Blog de anuncio: https://www.answer.ai/posts/2024-08-13-small-but-mighty-colbert.html
 - Paper de JaColBERTv2.5: https://arxiv.org/abs/2407.20750
 - Repositorio de RAGatouille: https://github.com/AnswerDotAI/RAGatouille (mencionado en la model card)

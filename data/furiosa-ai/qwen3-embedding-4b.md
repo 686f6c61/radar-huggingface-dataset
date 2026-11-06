@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/Qwen3-Embedding-4B
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/Qwen3-Embedding-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-4B
 - Documentacion Furiosa-LLM: https://developer.furiosa.ai/latest/en/furiosa_llm/intro.html
 - Guia de Qwen3-Embedding en FuriosaAI: https://developer.furiosa.ai/latest/en/furiosa_llm/models/qwen3-embedding.html

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-FT1 es un repositorio de modelo publicado en HuggingFace por el usuario abhishek2406 bajo licencia Apache-2.0. La unica informacion verificable disponible es el identificador del repositorio, el autor, la licencia, la etiqueta de region (us) y las fechas de creacion y actualizacion (3 de octubre de 2026 en ambos casos). No se ha publicado model card: el README del repositorio contiene exclusivamente el bloque de metadatos con la licencia, sin descripcion, sin detalles de arquitectura y sin instrucciones de uso.
+FT1 es un repositorio de modelo publicado en Hugging Face por el usuario abhishek2406 bajo licencia Apache-2.0. La unica informacion verificable disponible es el identificador del repositorio, el autor, la licencia, la etiqueta de region (us) y las fechas de creacion y actualizacion (3 de octubre de 2026 en ambos casos). No se ha publicado model card: el README del repositorio contiene exclusivamente el bloque de metadatos con la licencia, sin descripcion, sin detalles de arquitectura y sin instrucciones de uso.
 
-No hay datos disponibles sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos. El repositorio registra 0 descargas y 0 "likes", y HuggingFace no le asigna ninguna pipeline ni ninguna etiqueta de idioma, lo que es consistente con un repositorio sin contenido descriptivo o con un artefacto de prueba. En la fecha de actualizacion indicada no se ha documentado ningun resultado de evaluacion.
+No hay datos disponibles sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni el formato de pesos. El repositorio registra 0 descargas y 0 "likes", y Hugging Face no le asigna ninguna pipeline ni ninguna etiqueta de idioma, lo que es consistente con un repositorio sin contenido descriptivo o con un artefacto de prueba. En la fecha de actualizacion indicada no se ha documentado ningun resultado de evaluacion.
 
 La busqueda web asociada a este identificador no ha devuelto ningun resultado relevante: los enlaces recuperados corresponden a directorios de videojuegos para adultos y no guardan relacion alguna con el modelo. Por tanto, esta ficha se limita a documentar los pocos metadatos confirmados y a marcar explicitamente como "no disponible" todo aquello que no puede verificarse, evitando cualquier inferencia sobre capacidades o rendimiento.
 
@@ -17,7 +17,7 @@ La busqueda web asociada a este identificador no ha devuelto ningun resultado re
 | Parametros activos | no disponible (no se ha confirmado que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (HuggingFace no asigna etiqueta de idioma) |
+| Idiomas soportados | no disponible (Hugging Face no asigna etiqueta de idioma) |
 | Licencia | Apache-2.0 |
 | Formato de pesos | no disponible |
 
@@ -51,13 +51,13 @@ No disponible. No hay informacion que permita determinar las capacidades del mod
 - No se confirman capacidades multilingues ni que idiomas cubriria.
 - No se confirma ningun modo especial (thinking mode, audio, vision u otros).
 
-La ausencia de pipeline asignada en HuggingFace impide incluso clasificar el modelo por tarea (text-generation, text-classification, image-text-to-text, etc.).
+La ausencia de pipeline asignada en Hugging Face impide incluso clasificar el modelo por tarea (text-generation, text-classification, image-text-to-text, etc.).
 
 ## Casos de uso
 
 No es posible proponer casos de uso concretos y realistas para FT1 con la informacion disponible. Definir escenarios de aplicacion exigiria conocer como minimo el tipo de tarea, el tamano del modelo, la ventana de contexto, los idiomas soportados y el formato de pesos; ninguno de estos datos esta publicado. Cualquier lista de casos de uso en este punto seria una invencion, no una recomendacion tecnica.
 
-A modo de orientacion operativa, la evaluacion del repositorio deberia pasar primero por comprobar si contiene pesos utilizables, que archivos incluye y si existe documentacion adicional fuera de HuggingFace. Hasta que esos extremos se verifiquen, FT1 no deberia considerarse candidato para ningun despliegue en produccion.
+A modo de orientacion operativa, la evaluacion del repositorio deberia pasar primero por comprobar si contiene pesos utilizables, que archivos incluye y si existe documentacion adicional fuera de Hugging Face. Hasta que esos extremos se verifiquen, FT1 no deberia considerarse candidato para ningun despliegue en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -88,6 +88,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abhishek2406/FT1
+- Repositorio en Hugging Face: https://huggingface.co/abhishek2406/FT1
 - Licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La busqueda web no ha devuelto ningun enlace relevante asociado a este modelo.

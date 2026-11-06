@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gabut es un modelo publicado en HuggingFace por el usuario GNZX bajo una licencia personalizada denominada "gnzx". La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye metadatos de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y su fecha de creacion y ultima actualizacion coinciden (5 de noviembre de 2026), lo que sugiere una publicacion sin iteraciones posteriores.
+Gabut es un modelo publicado en Hugging Face por el usuario GNZX bajo una licencia personalizada denominada "gnzx". La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye metadatos de licencia, sin informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio registra cero descargas y cero likes en el momento de la consulta, y su fecha de creacion y ultima actualizacion coinciden (5 de noviembre de 2026), lo que sugiere una publicacion sin iteraciones posteriores.
 
 No es posible determinar que problema resuelve, a que categoria de modelos pertenece ni por que seria relevante. La ausencia de pipeline declarado, de idiomas soportados y de cualquier documentacion tecnica impide evaluar su idoneidad para casos de uso reales. Esta ficha se limita a reflejar los metadatos disponibles y a marcar explicitamente como "no disponible" todo aquello que el autor no ha documentado.
 
@@ -25,7 +25,7 @@ Dado el estado del repositorio, cualquier evaluacion seria del modelo requeriria
 
 No disponible. La model card no describe la arquitectura (transformer, MoE, SSM o hibrida), ni el volumen o composicion de los datos de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento extendido.
 
-La unica informacion estructural es la etiqueta `region:us` en los metadatos de HuggingFace, que indica la region de almacenamiento del repositorio y no aporta nada sobre el diseno del modelo.
+La unica informacion estructural es la etiqueta `region:us` en los metadatos de Hugging Face, que indica la region de almacenamiento del repositorio y no aporta nada sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -81,11 +81,11 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 - Idiomas soportados desconocidos: no se puede garantizar un rendimiento aceptable en castellano ni en ningun otro idioma.
 - Cero adopcion registrada (0 descargas, 0 likes): no existe evidencia de la comunidad sobre su funcionamiento.
 - Formato de pesos desconocido: puede no ser compatible con los runners habituales (transformers, llama.cpp, vLLM).
-- Sin pipeline declarado en HuggingFace: no se puede inferir la tarea para la que fue disenado.
+- Sin pipeline declarado en Hugging Face: no se puede inferir la tarea para la que fue disenado.
 - Fechas de creacion y actualizacion identicas: no hay historial de mantenimiento ni correcciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GNZX/Gabut
+- Repositorio en Hugging Face: https://huggingface.co/GNZX/Gabut
 - Licencia: referenciada como LICENSE dentro del repositorio (https://huggingface.co/GNZX/Gabut/blob/main/LICENSE)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mahir2021/seed-classifier_1` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario `mahir2021`, con un total de 109.490.699 parametros (aproximadamente 109,5 millones) y un repositorio de 0,4 GB. La etiqueta de arquitectura declarada en el Hub es `bert`, y la libreria asociada es `transformers`, por lo que se trata de un encoder basado en la familia BERT orientado a tareas de clasificacion (pipeline `text-classification`). El conteo de parametros es coherente con una configuracion de tipo BERT-base, aunque la model card no confirma la configuracion exacta de capas, dimensiones ocultas ni cabezas de atencion.
+`mahir2021/seed-classifier_1` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario `mahir2021`, con un total de 109.490.699 parametros (aproximadamente 109,5 millones) y un repositorio de 0,4 GB. La etiqueta de arquitectura declarada en el Hub es `bert`, y la libreria asociada es `transformers`, por lo que se trata de un encoder basado en la familia BERT orientado a tareas de clasificacion (pipeline `text-classification`). El conteo de parametros es coherente con una configuracion de tipo BERT-base, aunque la model card no confirma la configuracion exacta de capas, dimensiones ocultas ni cabezas de atencion.
 
-La relevancia de esta ficha es limitada y conviene ser transparente al respecto: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada, sin idiomas declarados y con una model card que es la plantilla autogenerada de HuggingFace sin rellenar (todos los campos figuran como `[More Information Needed]`). No hay articulo, demo, dataset ni procedimiento de entrenamiento documentado.
+La relevancia de esta ficha es limitada y conviene ser transparente al respecto: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada, sin idiomas declarados y con una model card que es la plantilla autogenerada de Hugging Face sin rellenar (todos los campos figuran como `[More Information Needed]`). No hay articulo, demo, dataset ni procedimiento de entrenamiento documentado.
 
 En consecuencia, esta ficha recoge los unicos datos verificables (arquitectura etiquetada, numero de parametros, formato de pesos, tamano del repositorio y fecha de publicacion) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier uso en produccion requeriria inspeccionar el `config.json` y los pesos, y validar empiricamente el esquema de etiquetas, ya que el propio nombre del modelo (`seed-classifier`) no aclara la taxonomia de clases.
 
@@ -31,13 +31,13 @@ En consecuencia, esta ficha recoge los unicos datos verificables (arquitectura e
 
 La unica informacion de arquitectura disponible es la etiqueta `bert` del Hub, que situa el modelo dentro de la familia de encoders transformer bidireccionales con normalizacion por capa post-LN y atencion multi-cabeza completa. Con 109,49 millones de parametros, el checkpoint es consistente en tamano con BERT-base (aproximadamente 110 millones de parametros), pero no hay confirmacion del numero de capas, dimension oculta, numero de cabezas, tamano de vocabulario ni de si se trata de una inicializacion desde cero o de un ajuste fino sobre un checkpoint preentrenado.
 
-No hay informacion sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo preentrenamiento con masked language modeling, si se aplico ajuste fino supervisado sobre un conjunto etiquetado, ni si se emplearon tecnicas de alineacion como RLHF o DPO (poco habituales en clasificadores encoder). Tampoco se documentan hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. La model card incluye la referencia `arxiv:1910.09700` en las etiquetas, pero ese identificador corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de HuggingFace; no es un paper del modelo.
+No hay informacion sobre el procedimiento de entrenamiento: se desconoce el numero de tokens, la composicion del dataset, si hubo preentrenamiento con masked language modeling, si se aplico ajuste fino supervisado sobre un conjunto etiquetado, ni si se emplearon tecnicas de alineacion como RLHF o DPO (poco habituales en clasificadores encoder). Tampoco se documentan hiperparametros, regimen de precision (fp32, fp16, bf16) ni infraestructura de computo. La model card incluye la referencia `arxiv:1910.09700` en las etiquetas, pero ese identificador corresponde al articulo de Lacoste et al. sobre estimacion de emisiones de carbono en aprendizaje automatico, citado en la plantilla estandar de Hugging Face; no es un paper del modelo.
 
 ## Capacidades
 
 - Clasificacion de texto: es la unica capacidad declarada de forma explicita mediante el pipeline `text-classification`. El modelo devuelve etiquetas con puntuaciones de probabilidad para una secuencia de entrada.
-- Embeddings de texto: la etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor de inferencia de HuggingFace para extraer representaciones vectoriales, aunque no se especifica si el checkpoint expone una cabeza de clasificacion, una de embedding o ambas.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en HuggingFace Inference Endpoints.
+- Embeddings de texto: la etiqueta `text-embeddings-inference` sugiere compatibilidad con el servidor de inferencia de Hugging Face para extraer representaciones vectoriales, aunque no se especifica si el checkpoint expone una cabeza de clasificacion, una de embedding o ambas.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en Hugging Face Inference Endpoints.
 - Generacion de texto: no soportada (es un encoder de clasificacion, no un modelo causal).
 - Tool calling / function calling: no disponible y, por la naturaleza del pipeline, no es una capacidad esperada.
 - Agentes y razonamiento multi-paso: no disponible; no es un modelo de razonamiento.
@@ -72,7 +72,7 @@ Estimaciones derivadas del numero de parametros declarado (109,49 millones); no 
 - GPU recomendadas: cualquier GPU con 4 GB o mas de VRAM es suficiente. Funciona sin problema en RTX 3060, RTX 4060, RTX 4090, T4, L4, A10G, A100 y H100; en estas ultimas el cuello de botella sera la CPU de preprocesado, no la GPU.
 - GPU consumer: si, cabe holgadamente en cualquier GPU consumer moderna e incluso en GPUs integradas con suficiente memoria compartida.
 - CPU: viable en produccion para cargas moderadas, con latencia tipicamente en el rango de decenas de milisegundos por muestra en un nucleo moderno.
-- Opciones de despliegue: `transformers` con PyTorch; HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`); Text Embeddings Inference (etiqueta `text-embeddings-inference`); exportacion a ONNX Runtime si se necesita optimizar en CPU; servidores de inferencia genericos compatibles con modelos de clasificacion. No se ha confirmado soporte en vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
+- Opciones de despliegue: `transformers` con PyTorch; Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`); Text Embeddings Inference (etiqueta `text-embeddings-inference`); exportacion a ONNX Runtime si se necesita optimizar en CPU; servidores de inferencia genericos compatibles con modelos de clasificacion. No se ha confirmado soporte en vLLM, llama.cpp, Ollama ni TGI para este checkpoint concreto.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ La comparacion se limita a caracteristicas estructurales, ya que no existen resu
 
 | Modelo | Parametros | Contexto tipico | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mahir2021/seed-classifier_1 | 109,49 M | No disponible | No disponible | HuggingFace, 0 descargas | Sin model card, sin benchmarks, sin dataset documentado |
+| mahir2021/seed-classifier_1 | 109,49 M | No disponible | No disponible | Hugging Face, 0 descargas | Sin model card, sin benchmarks, sin dataset documentado |
 | BERT-base (referencia) | ~110 M | 512 tokens | Apache 2.0 (version original de Google) | Ampliamente disponible | Linea base estandar para clasificacion; multitud de derivados y herramientas |
 | DistilBERT-base (referencia) | ~66 M | 512 tokens | Apache 2.0 | Ampliamente disponible | Version destilada, aproximadamente un 40 % menos de parametros y mas rapida |
 | RoBERTa-base (referencia) | ~125 M | 512 tokens | MIT | Ampliamente disponible | Preentrenamiento mas largo y sin NSP; suele superar a BERT-base en clasificacion |
@@ -90,7 +90,7 @@ No es posible comparar rendimiento (accuracy, F1) porque el autor no publica nin
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace con todos los campos sin rellenar. No hay informacion sobre datos, entrenamiento, evaluacion ni uso previsto.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face con todos los campos sin rellenar. No hay informacion sobre datos, entrenamiento, evaluacion ni uso previsto.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial, redistribucion ni modificacion. En la practica, el uso en produccion queda en un limbo legal hasta que el autor aclare los terminos.
 - Esquema de etiquetas desconocido: se ignora cuantas clases tiene el modelo y que representa cada una. Es obligatorio revisar `config.json` (`id2label` / `label2id`) antes de cualquier integracion.
 - Idiomas no declarados: no se puede asumir soporte multilingue ni siquiera monolingue en ingles o castellano.
@@ -103,7 +103,7 @@ No es posible comparar rendimiento (accuracy, F1) porque el autor no publica nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mahir2021/seed-classifier_1
+- Modelo en Hugging Face: https://huggingface.co/mahir2021/seed-classifier_1
 - Paper citado en las etiquetas (Lacoste et al., 2019, estimacion de emisiones de carbono, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental referenciada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper, demo o dataset del modelo: no disponibles

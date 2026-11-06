@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blessingbalogun/flamingo-finetuned` es un repositorio de HuggingFace publicado por el usuario blessingbalogun que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, orientada a tareas de emparejamiento (matching). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración pensada para revisión de código, smoke tests y experimentos pequeños y controlados.
+`blessingbalogun/flamingo-finetuned` es un repositorio de Hugging Face publicado por el usuario blessingbalogun que contiene una implementación propia y compacta de la arquitectura Flamingo en PyTorch, orientada a tareas de emparejamiento (matching). No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como una configuración pensada para revisión de código, smoke tests y experimentos pequeños y controlados.
 
 El checkpoint se distribuye en formato safetensors y, según los metadatos del repositorio, contiene 24.832 parámetros en total, una cifra propia de una configuración de prueba y no de un modelo a gran escala, pese a que `config.json` etiquete la escala como "xlarge". La arquitectura declarada usa atención multi-query, fusión tensorial, activación gelu tanh y normalización layernorm. La licencia es MIT, con 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -44,7 +44,7 @@ No hay evidencia de entrenamiento real. La model card afirma de forma explícita
 ## Casos de uso
 
 - Smoke test de pipelines de carga de pesos: el checkpoint permite verificar que un cargador de safetensors, un `config.json` y una definición de modelo propia se integran correctamente antes de invertir en un entrenamiento real.
-- Pruebas de integración continua: al ser un repositorio pequeño con un único `pipeline.py`, se puede incluir en una CI para detectar roturas de API en cuanto cambien las dependencias de PyTorch o del stack de HuggingFace.
+- Pruebas de integración continua: al ser un repositorio pequeño con un único `pipeline.py`, se puede incluir en una CI para detectar roturas de API en cuanto cambien las dependencias de PyTorch o del stack de Hugging Face.
 - Punto de partida para fine-tuning propio: un equipo que quiera experimentar con la arquitectura Flamingo puede partir de esta implementación y de `training_args.json` (AdamW, coseno) en lugar de escribir el modelo desde cero.
 - Estudio y reproducción de la arquitectura: resulta útil para inspeccionar cómo se implementan atención multi-query, fusión tensorial y normalización layernorm en una versión compacta y legible del bloque Flamingo.
 - Docencia y formación técnica: sirve como ejemplo mínimo de estructura de repositorio de modelo (config, args de entrenamiento, pesos, script ejecutable) en cursos de ingeniería de IA.
@@ -92,7 +92,7 @@ La diferencia relevante no es de escala, sino de estado: los tres modelos de ref
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blessingbalogun/flamingo-finetuned
+- Modelo en Hugging Face: https://huggingface.co/blessingbalogun/flamingo-finetuned
 - Resultados de búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo. Las consultas devolvieron únicamente hilos genéricos de Stack Overflow sobre desinstalación de paquetes en Windows, errores de importación en Python y la API de búsqueda de imágenes de Bing, sin relación con el repositorio.
 - Paper de referencia de la arquitectura Flamingo: no disponible en la información proporcionada (el repositorio no incluye cita bibliográfica).
 - Repositorios de ejemplo, demos o blogs del autor: no disponibles.

@@ -71,7 +71,7 @@ No se dispone de datos comparativos de este fine-tuning específico. El modelo b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha
+- Modelo en Hugging Face: https://huggingface.co/jasonjimnz/LFM2.5-1.2B-Instruct_boe_legal_pre_alpha
 - Modelo base LFM2.5-1.2B-Instruct: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Documentación oficial de Liquid AI para LFM2.5-1.2B-Instruct: https://docs.liquid.ai/lfm/models/lfm25-1.2b-instruct
 - Página del modelo en OpenRouter (API y benchmarks): https://openrouter.ai/liquid/lfm-2.5-1.2b-instruct

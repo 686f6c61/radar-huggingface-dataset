@@ -4,7 +4,7 @@
 
 nanochat-jp-v4-d54-sft-hf es un modelo de lenguaje de tipo conversacional desarrollado por tohoku-nlp (Tohoku NLP), el grupo de procesamiento de lenguaje natural de la Universidad de Tohoku. Se trata de un checkpoint afinado mediante SFT (supervised fine-tuning) sobre la base nanochat-jp-v4, dentro de la familia nanochat-jp, una adaptación al japones del proyecto nanochat orientada a reproducir el pipeline completo de entrenamiento de un modelo tipo ChatGPT con recursos reducidos.
 
-El modelo cuenta con aproximadamente 9.846 millones de parametros (9,8B) almacenados en safetensors, con un repositorio de 19,7 GB, lo que sugiere pesos en precision bf16/fp16. Esta especializado en japones y se distribuye con licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar las condiciones en HuggingFace.
+El modelo cuenta con aproximadamente 9.846 millones de parametros (9,8B) almacenados en safetensors, con un repositorio de 19,7 GB, lo que sugiere pesos en precision bf16/fp16. Esta especializado en japones y se distribuye con licencia Apache 2.0, aunque el acceso esta restringido (gated) y requiere aceptar las condiciones en Hugging Face.
 
 Su relevancia radica en que ofrece un modelo conversacional en japones de casi 10B de parametros con licencia permisiva, un nicho con relativamente pocas opciones abiertas comparado con el ecosistema ingles. Al estar construido sobre el marco nanochat, resulta util como referencia reproducible para investigacion en ajuste fino y evaluacion de modelos en japones.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo para establecer una comparativ
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos.
 - Especializado en japones: el rendimiento en castellano u otros idiomas no esta garantizado y probablemente sea deficiente.
 - Riesgo de alucinacion: como todo modelo generativo, puede producir informacion falsa o inventada, especialmente sin datos de evaluacion publicos.
 - Sesgos conocidos: no documentados por el autor; los sesgos dependeran de los datos de entrenamiento, no publicados.
@@ -83,6 +83,6 @@ No se dispone de datos de rendimiento comparativo para establecer una comparativ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tohoku-nlp/nanochat-jp-v4-d54-sft-hf
+- Hugging Face: https://huggingface.co/tohoku-nlp/nanochat-jp-v4-d54-sft-hf
 - Repositorio del proyecto nanochat (referencia general): https://github.com/karpathy/nanochat (no confirmado en la informacion proporcionada)
 - Grupo Tohoku NLP: no disponible en la informacion proporcionada.

@@ -4,7 +4,7 @@
 
 Sovereign MUM es un modelo presentado por los autores Ahmad Ali Parr y Jessica L. Williams (bajo el seudónimo SNAPKITTYWEST) que se define como una formalización del Multitask Unified Model (MUM) de Google, pero con una semántica formal explícita. En lugar de un modelo probabilístico convencional, se describe como un proceso de decisión de Markov determinista multimodal, donde cada transición de estado debe estar matemáticamente justificada mediante un invariante central `R(A_n, W) → A_{n+1}`. El objetivo declarado es eliminar las alucinaciones tratándolas como transiciones de estado inválidas que se detienen y registran en una cadena inmutable tipo WORM.
 
-El modelo se presenta como una arquitectura similar a la de Google MUM (encoder-decoder T5 con mezcla de expertos dispersa), pero con un énfasis en la verificación formal mediante Lean 4, una semántica de "átomos" multimodales (texto, imagen y audio) proyectados en un manifold semántico compartido, y un kernel de seguridad infantil denominado KID-8B/8K escrito en ensamblador 6502. A pesar de la ambición conceptual, la información pública disponible en HuggingFace es extremadamente escasa: no se especifican parámetros totales, longitud de contexto, idiomas soportados, ni datos de entrenamiento. El repositorio tiene cero descargas y cero likes, lo que sugiere que se trata de un proyecto en fase muy temprana o de carácter teórico.
+El modelo se presenta como una arquitectura similar a la de Google MUM (encoder-decoder T5 con mezcla de expertos dispersa), pero con un énfasis en la verificación formal mediante Lean 4, una semántica de "átomos" multimodales (texto, imagen y audio) proyectados en un manifold semántico compartido, y un kernel de seguridad infantil denominado KID-8B/8K escrito en ensamblador 6502. A pesar de la ambición conceptual, la información pública disponible en Hugging Face es extremadamente escasa: no se especifican parámetros totales, longitud de contexto, idiomas soportados, ni datos de entrenamiento. El repositorio tiene cero descargas y cero likes, lo que sugiere que se trata de un proyecto en fase muy temprana o de carácter teórico.
 
 La relevancia actual de Sovereign MUM reside en su propuesta de abordar la fiabilidad de los modelos generativos mediante invariantes matemáticos y auditoría formal, un tema candente en la comunidad de IA. Sin embargo, la falta de datos técnicos concretos y de implementaciones verificables limita su aplicabilidad práctica inmediata.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Requisitos de hardware
 
-No se dispone de información sobre requisitos de hardware. No se especifican VRAM estimada, GPUs recomendadas, ni opciones de despliegue (vLLM, llama.cpp, etc.). Dado que no hay pesos publicados ni instrucciones de ejecución, no es posible determinar si el modelo cabe en GPUs de consumo. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones.
+No se dispone de información sobre requisitos de hardware. No se especifican VRAM estimada, GPUs recomendadas, ni opciones de despliegue (vLLM, llama.cpp, etc.). Dado que no hay pesos publicados ni instrucciones de ejecución, no es posible determinar si el modelo cabe en GPUs de consumo. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones.
 
 ## Comparativa con modelos similares
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para comparar Sovereign MUM con otros m
 
 - No hay datos verificables de entrenamiento, arquitectura o rendimiento; toda la información proviene de una model card que no incluye detalles técnicos concretos.
 - La licencia AGPL puede ser restrictiva para uso comercial, ya que obliga a divulgar el código fuente de cualquier modificación si se ofrece como servicio en red.
-- La model card menciona una tri-licencia (AGPL / BSL 1.1 / MIT), pero la información de HuggingFace solo indica AGPL; esta ambigüedad puede generar problemas legales.
+- La model card menciona una tri-licencia (AGPL / BSL 1.1 / MIT), pero la información de Hugging Face solo indica AGPL; esta ambigüedad puede generar problemas legales.
 - No se ha publicado ningún peso, checkpoint o código ejecutable; el repositorio parece contener solo documentación y scripts parciales.
 - El enfoque de "rechazo de alucinaciones" es conceptual y no se ha demostrado su eficacia en tareas reales.
 - La fecha de creación (2026) es inusualmente futura, lo que sugiere que el proyecto podría ser especulativo o tener un marcado de tiempo incorrecto.
@@ -76,6 +76,6 @@ No se dispone de información suficiente para comparar Sovereign MUM con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/sovereign-mum
+- Hugging Face: https://huggingface.co/Snapkitty/sovereign-mum
 - Paper (Sovereign Stack Unified): https://snapkittywest.github.io/hyperkitty/papers/sovereign-stack-unified.pdf
 - DOI: https://doi.org/10.5281/zenodo.21132094

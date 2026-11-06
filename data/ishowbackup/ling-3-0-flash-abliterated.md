@@ -78,8 +78,8 @@ No hay una comparativa directa con otros modelos abliterated de tamaño similar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ishowbackup/LING-3.0-FLASH-ABLITERATED
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash
+- Modelo en Hugging Face: https://huggingface.co/Ishowbackup/LING-3.0-FLASH-ABLITERATED
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Documentación oficial de Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Repositorio GitHub de InclusionAI/Ling: https://github.com/inclusionAI/Ling
 - Cuantizaciones GGUF del modelo abliterated: https://huggingface.co/models?other=base_model:quantized:inclusionAI/Ling-3.0-flash

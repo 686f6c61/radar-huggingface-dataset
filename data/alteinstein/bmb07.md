@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AltEinstein/bmb07 es un repositorio publicado en HuggingFace por el usuario AltEinstein el 12 de septiembre de 2026 (actualizado el mismo dia) con un tamano de 3,2 GB. La informacion publica disponible es minima: no hay pipeline declarado, no hay licencia, no hay idiomas declarados y no hay model card con descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo, su autor ni su posible paper o blog asociado.
+AltEinstein/bmb07 es un repositorio publicado en Hugging Face por el usuario AltEinstein el 12 de septiembre de 2026 (actualizado el mismo dia) con un tamano de 3,2 GB. La informacion publica disponible es minima: no hay pipeline declarado, no hay licencia, no hay idiomas declarados y no hay model card con descripcion, arquitectura, datos de entrenamiento ni resultados de evaluacion. El repositorio acumula 0 descargas y 1 like en el momento de la consulta, y las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo, su autor ni su posible paper o blog asociado.
 
 Con estos datos no es posible determinar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, embeddings) ni cual es su licencia de uso. El unico dato cuantitativo objetivo es el tamano del repositorio, 3,2 GB, que es compatible con un modelo de aproximadamente 1.600 millones de parametros almacenados en fp16/bf16, o con un modelo mayor cuantizado a 8 o 4 bits, pero se trata de una inferencia aritmetica a partir del peso del repositorio y no de un dato confirmado por el autor.
 
@@ -20,7 +20,7 @@ En consecuencia, esta ficha se limita a documentar lo verificable y a marcar com
 | Idiomas soportados | no disponible |
 | Licencia | no disponible (el repositorio no declara licencia, por lo que no hay permiso explicito de uso comercial) |
 | Formato de pesos | no disponible |
-| Tamano del repositorio | 3,2 GB (dato publicado en HuggingFace) |
+| Tamano del repositorio | 3,2 GB (dato publicado en Hugging Face) |
 | Fecha de publicacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
 | Descargas / likes | 0 descargas / 1 like |
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AltEinstein/bmb07 | no disponible | no disponible | no disponible | Repositorio HuggingFace, 3,2 GB, 0 descargas |
+| AltEinstein/bmb07 | no disponible | no disponible | no disponible | Repositorio Hugging Face, 3,2 GB, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -99,5 +99,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AltEinstein/bmb07
+- Repositorio en Hugging Face: https://huggingface.co/AltEinstein/bmb07
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible (las busquedas web realizadas no devuelven ningun resultado relacionado con el modelo ni con su autor)

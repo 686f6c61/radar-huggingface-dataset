@@ -93,7 +93,7 @@ Frente a Whisper, Notesoop-STT-Ko-v1 se especializa exclusivamente en coreano co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phsoft-ai/Notesoop-STT-Ko-v1
+- Modelo en Hugging Face: https://huggingface.co/Phsoft-ai/Notesoop-STT-Ko-v1
 - Codificador base: https://huggingface.co/google/embeddinggemma-2
 - Dataset de evaluación: https://huggingface.co/datasets/Bingsu/zeroth-korean
 - App Notesoop en App Store: https://apps.apple.com/kr/app/notesoop/id6760303593

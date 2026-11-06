@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rosxquo/bbw` es un repositorio de modelo publicado en HuggingFace por el usuario `rosxquo`. En el momento de redactar esta ficha no hay informacion publica sobre su arquitectura, su numero de parametros, su contexto, sus idiomas de entrenamiento ni su proposito. La model card asociada contiene unicamente la declaracion de licencia (`license: mit`), sin descripcion tecnica, sin ejemplos de uso y sin documentacion de entrenamiento.
+`rosxquo/bbw` es un repositorio de modelo publicado en Hugging Face por el usuario `rosxquo`. En el momento de redactar esta ficha no hay informacion publica sobre su arquitectura, su numero de parametros, su contexto, sus idiomas de entrenamiento ni su proposito. La model card asociada contiene unicamente la declaracion de licencia (`license: mit`), sin descripcion tecnica, sin ejemplos de uso y sin documentacion de entrenamiento.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,2 GB, y las etiquetas declaradas: `license:mit` y `region:us`. No consta pipeline declarado, ni idiomas soportados, ni resultados de evaluacion. El repositorio registra cero descargas y cero "likes", lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -82,6 +82,6 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni el contex
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rosxquo/bbw
+- Hugging Face: https://huggingface.co/rosxquo/bbw
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

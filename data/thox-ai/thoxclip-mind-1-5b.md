@@ -76,8 +76,8 @@ No se han publicado resultados en benchmarks estandar (MMLU, HumanEval, GSM8K) e
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ThoxClip-Mind-1.5B | 1,5B | 8.192 (evaluado) | Ninguno; paquete sobre Qwen2.5-1.5B-Instruct | Apache-2.0 | Ollama + repo HF (packaging) |
-| Qwen2.5-1.5B-Instruct | 1,5B | no disponible en la informacion proporcionada | Entrenamiento completo + alineacion del publicador original | Apache-2.0 | HuggingFace y Ollama (`qwen2.5:1.5b`) |
-| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la informacion proporcionada | Entrenamiento completo | Apache-2.0 | HuggingFace y Ollama |
+| Qwen2.5-1.5B-Instruct | 1,5B | no disponible en la informacion proporcionada | Entrenamiento completo + alineacion del publicador original | Apache-2.0 | Hugging Face y Ollama (`qwen2.5:1.5b`) |
+| Qwen2.5-0.5B-Instruct | 0,5B | no disponible en la informacion proporcionada | Entrenamiento completo | Apache-2.0 | Hugging Face y Ollama |
 
 La diferencia funcional frente a Qwen2.5-1.5B-Instruct es el system profile y el knowledge pack, no los pesos. Cualquier comparacion de calidad de razonamiento entre ambos debe asumir pesos identicos.
 
@@ -96,8 +96,8 @@ La diferencia funcional frente a Qwen2.5-1.5B-Instruct es el system profile y el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thox-ai/ThoxClip-Mind-1.5B
+- Repositorio Hugging Face: https://huggingface.co/Thox-ai/ThoxClip-Mind-1.5B
 - Modelo en Ollama: `Thox-ai/thoxclip-mind-1.5b`
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Modelo base en Ollama: tag `qwen2.5:1.5b`
 - No se han encontrado papers, blogs, repos de codigo ni demos adicionales en la informacion disponible.

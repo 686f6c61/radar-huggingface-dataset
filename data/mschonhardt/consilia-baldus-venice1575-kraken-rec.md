@@ -95,7 +95,7 @@ La comparacion directa con McCATMuS no es posible con los datos disponibles: el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mschonhardt/consilia-baldus-venice1575-kraken-rec
+- Modelo en Hugging Face: https://huggingface.co/mschonhardt/consilia-baldus-venice1575-kraken-rec
 - Dataset: https://huggingface.co/datasets/mschonhardt/consilia-baldus-venice1575-pagexml
 - Modelo de segmentacion: https://huggingface.co/mschonhardt/consilia-baldus-venice1575-kraken-seg
 - Portal Consilia: https://dekm-tud.github.io/coding-consilia/

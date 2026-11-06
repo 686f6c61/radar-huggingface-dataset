@@ -69,8 +69,8 @@ No se dispone de una comparativa directa publicada con otros modelos NER coreano
 
 ## Enlaces
 
-- [HuggingFace - atonlee/koelectra-ko-pii-ner](https://huggingface.co/atonlee/koelectra-ko-pii-ner)
+- [Hugging Face - atonlee/koelectra-ko-pii-ner](https://huggingface.co/atonlee/koelectra-ko-pii-ner)
 - [GitHub - monologg/KoELECTRA (modelo base)](https://github.com/monologg/KoELECTRA)
-- [HuggingFace - monologg/koelectra-small-v3-discriminator](https://huggingface.co/monologg/koelectra-small-v3-discriminator)
+- [Hugging Face - monologg/koelectra-small-v3-discriminator](https://huggingface.co/monologg/koelectra-small-v3-discriminator)
 - [Dataset - BCCard/pii-masking-openpii-finance](https://huggingface.co/datasets/BCCard/pii-masking-openpii-finance)
 - [Dataset - townboy/korean-pii-dataset](https://huggingface.co/datasets/townboy/korean-pii-dataset)

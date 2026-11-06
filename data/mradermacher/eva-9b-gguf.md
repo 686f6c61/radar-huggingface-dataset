@@ -6,7 +6,7 @@ Eva-9B-GGUF es la version cuantizada en formato GGUF del modelo Eva-9B, un model
 
 El interes de esta publicacion es practico: ofrece el modelo original en un espectro amplio de cuantizaciones estaticas (desde Q2_K hasta f16), lo que permite desplegarlo desde entornos con muy poca VRAM hasta configuraciones de mayor calidad. Al estar especializado en turco, cubre un nicho con relativamente pocas alternativas de calidad en el ecosistema open source, y su compatibilidad con endpoints y con el ecosistema transformers/llama.cpp lo hace util para prototipado rapido.
 
-No obstante, la informacion publicada es limitada: no se detalla la composicion del dataset de entrenamiento, no hay resultados de benchmarks y la licencia no esta declarada en la ficha de HuggingFace. Esto condiciona su uso en produccion, especialmente en lo relativo a restricciones legales y a la evaluacion objetiva de su calidad frente a alternativas.
+No obstante, la informacion publicada es limitada: no se detalla la composicion del dataset de entrenamiento, no hay resultados de benchmarks y la licencia no esta declarada en la ficha de Hugging Face. Esto condiciona su uso en produccion, especialmente en lo relativo a restricciones legales y a la evaluacion objetiva de su calidad frente a alternativas.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ La comparativa es orientativa: no se dispone de datos de rendimiento de Eva-9B p
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/Eva-9B-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/Eva-9B-GGUF
 - Modelo base: https://huggingface.co/aydndglr/Eva-9B
 - Pagina de conveniencia del autor para este modelo: https://hf.tst.eu/model#Eva-9B-GGUF
 - Repositorio de solicitudes de cuantizacion: https://huggingface.co/mradermacher/model_requests

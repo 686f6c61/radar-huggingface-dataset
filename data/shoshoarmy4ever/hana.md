@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hana es un modelo publicado en HuggingFace por el usuario Shoshoarmy4ever bajo licencia Apache 2.0. Se presenta como un merge (fusión) de pesos que combina once modelos base muy dispares: desde modelos de lenguaje como GLM-5.3 o DeepSeek-V4.1-Flash-1017, hasta modelos de imagen como FLUX-3-image-klein o LTX-2.5, pasando por variantes cuantizadas de la familia Qwen3.8 y un modelo de embeddings (embeddinggemma-2). La librería declarada es Keras, lo que resulta atípico para un modelo de este tipo.
+Hana es un modelo publicado en Hugging Face por el usuario Shoshoarmy4ever bajo licencia Apache 2.0. Se presenta como un merge (fusión) de pesos que combina once modelos base muy dispares: desde modelos de lenguaje como GLM-5.3 o DeepSeek-V4.1-Flash-1017, hasta modelos de imagen como FLUX-3-image-klein o LTX-2.5, pasando por variantes cuantizadas de la familia Qwen3.8 y un modelo de embeddings (embeddinggemma-2). La librería declarada es Keras, lo que resulta atípico para un modelo de este tipo.
 
 La model card no aporta información técnica sustantiva: no se especifican arquitectura, número de parámetros, longitud de contexto ni datos de entrenamiento. Los metadatos incluyen una lista desproporcionada de métricas (BLEU, ROUGE, BERTScore, perplexity, WER, etc.) y etiquetas temáticas muy diversas (biología, legal, finanzas, música, clima, código, medicina), lo que sugiere una ficha generada de forma automática o experimental más que un modelo con documentación rigurosa.
 
@@ -41,7 +41,7 @@ El modelo se describe como un merge de once modelos base: Lightricks/LTX-2.5, bl
 ## Casos de uso
 
 - Experimentación con técnicas de merge: el modelo puede servir para estudiar cómo se comporta la fusión de pesos de arquitecturas y dominios tan dispares; útil en investigación sobre mergekit y sus límites.
-- Análisis de robustez de metadatos: útil para quienes investigan la calidad de las model cards y la trazabilidad de modelos publicados en HuggingFace.
+- Análisis de robustez de metadatos: útil para quienes investigan la calidad de las model cards y la trazabilidad de modelos publicados en Hugging Face.
 - Pruebas de inferencia en Keras: al declarar esa librería, puede emplearse para validar pipelines de carga de pesos en el ecosistema Keras/TensorFlow.
 - Generación de texto multilingüe exploratoria: con catorce idiomas declarados, permite probar la coherencia lingüística de un merge, aunque sin garantías de calidad.
 - Evaluación comparativa de merges: puede utilizarse como caso de estudio frente a los modelos base originales para medir degradación o mejora.
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Hana | no disponible | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| GLM-5.3 (base) | no disponible | no disponible | no disponible | HuggingFace |
-| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3.8-27B (base) | 27B (según nombre) | no disponible | no disponible | HuggingFace |
+| Hana | no disponible | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| GLM-5.3 (base) | no disponible | no disponible | no disponible | Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (base) | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3.8-27B (base) | 27B (según nombre) | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shoshoarmy4ever/Hana
+- Hugging Face: https://huggingface.co/Shoshoarmy4ever/Hana
 - Modelo base Lightricks/LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Modelo base black-forest-labs/flux-3-image-klein: https://huggingface.co/black-forest-labs/flux-3-image-klein
 - Modelo base zai-org/GLM-5.3: https://huggingface.co/zai-org/GLM-5.3

@@ -100,7 +100,7 @@ Notas sobre la comparativa: no se dispone de resultados de benchmarks de este fi
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-1.5B-Financial-Code-Engine-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-1.5B-Financial-Code-Engine-GGUF
 - Modelo original (fine-tuning): https://huggingface.co/ahmadnawaz21/Qwen2.5-1.5B-Financial-Code-Engine
 - Repositorio GitHub del pipeline de fine-tuning: https://github.com/ahmadnawaz01/Qwen2.5-1.5B-Financial-Code-Engine-Finetuned-by-LLaMa-Factory/tree/main/
 - Modelo base raiz: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

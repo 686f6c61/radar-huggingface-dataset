@@ -70,7 +70,7 @@ No se dispone de información comparativa con otros VLA en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - Sounderya/smolvla-ur3-mix-polished-1](https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-1)
+- [Hugging Face - Sounderya/smolvla-ur3-mix-polished-1](https://huggingface.co/Sounderya/smolvla-ur3-mix-polished-1)
 - [Paper SmolVLA (arXiv:2506.01844)](https://arxiv.org/pdf/2506.01844)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Sounderya/mug_smolvla_dataset_v2nc)
 - [Modelo base lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)

@@ -84,7 +84,7 @@ No se dispone de modelos comparables directamente, ya que este adaptador es un a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lucabaroni/qwen3.5-9b-rlvr-reward-hacking
+- Hugging Face: https://huggingface.co/lucabaroni/qwen3.5-9b-rlvr-reward-hacking
 - Dataset de transcripciones: https://huggingface.co/datasets/lucabaroni/rlvr-reward-hacking-transcripts
 - Modelo base Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Reporte tecnico de Qwen3 (arXiv): https://arxiv.org/pdf/2505.09388

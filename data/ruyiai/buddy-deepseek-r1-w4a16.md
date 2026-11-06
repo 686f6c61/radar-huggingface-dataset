@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RuyiAI/buddy-deepseek-r1-w4a16 | 1,5B (upstream) | no disponible | `.rax` (riscv64) | no disponible | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible en la informacion proporcionada | safetensors (upstream) | no disponible en la informacion proporcionada | HuggingFace |
+| RuyiAI/buddy-deepseek-r1-w4a16 | 1,5B (upstream) | no disponible | `.rax` (riscv64) | no disponible | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible en la informacion proporcionada | safetensors (upstream) | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento, contexto o licencia con otras alternativas de la misma categoria.
 
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RuyiAI/buddy-deepseek-r1-w4a16
+- Modelo en Hugging Face: https://huggingface.co/RuyiAI/buddy-deepseek-r1-w4a16
 - Modelo upstream: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Repositorio de Buddy Compiler / buddy-mlir: https://github.com/buddy-compiler/buddy-mlir
 - Script de instalacion de `buddy-cli`: https://raw.githubusercontent.com/buddy-compiler/buddy-mlir/main/scripts/install_buddy_cli.sh

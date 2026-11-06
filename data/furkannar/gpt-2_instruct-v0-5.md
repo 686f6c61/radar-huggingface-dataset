@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.5
+- Modelo en Hugging Face: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.5
 - Version anterior: https://huggingface.co/FurkanNar/GPT-2_Instruct-v0.1
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Dataset alpaca: https://huggingface.co/datasets/tatsu-lab/alpaca

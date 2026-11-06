@@ -96,10 +96,10 @@ Ambas cuantizaciones producen salidas idénticas tras el ASR; el error final se 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| agentory/kokoro-82m-GGUF (esta ficha) | 81,7 M | No aplica | en (etiqueta); vocabulario IPA para 8 idiomas | Apache-2.0 | GGUF (F16, Q8_0) | HuggingFace, runtime CrispASR |
-| hexgrad/Kokoro-82M (original) | 81,7 M | No aplica | en (etiqueta); vocabulario IPA para 8 idiomas | Apache-2.0 | safetensors / PyTorch | HuggingFace, requiere stack Python |
-| yl4579/StyleTTS2-LJSpeech | No disponible en la información | No aplica | en | No disponible en la información | PyTorch | HuggingFace / GitHub |
-| cstr/kokoro-de-hui-base-GGUF (backbone alemán) | Derivado de Kokoro-82M | No aplica | de | Apache-2.0 (heredada) | GGUF | HuggingFace |
+| agentory/kokoro-82m-GGUF (esta ficha) | 81,7 M | No aplica | en (etiqueta); vocabulario IPA para 8 idiomas | Apache-2.0 | GGUF (F16, Q8_0) | Hugging Face, runtime CrispASR |
+| hexgrad/Kokoro-82M (original) | 81,7 M | No aplica | en (etiqueta); vocabulario IPA para 8 idiomas | Apache-2.0 | safetensors / PyTorch | Hugging Face, requiere stack Python |
+| yl4579/StyleTTS2-LJSpeech | No disponible en la información | No aplica | en | No disponible en la información | PyTorch | Hugging Face / GitHub |
+| cstr/kokoro-de-hui-base-GGUF (backbone alemán) | Derivado de Kokoro-82M | No aplica | de | Apache-2.0 (heredada) | GGUF | Hugging Face |
 
 La diferencia práctica frente al original no está en calidad ni en capacidades, sino en el formato: el GGUF elimina la dependencia de PyTorch y permite ejecución nativa en CPU con un binario pequeño, a cambio de quedar atado a un runtime específico (CrispASR) y de perder fidelidad numérica parcial en Q8_0 en la etapa de audio. No se dispone de datos para comparar con alternativas TTS de la misma categoría (Piper, VITS, XTTS) en parámetros, MOS o latencia.
 
@@ -128,4 +128,4 @@ La diferencia práctica frente al original no está en calidad ni en capacidades
 - Runtime y conversión (CrispASR): https://github.com/CrispStrobe/CrispASR
 - Arquitectura StyleTTS2 (Yinghao Aaron Li): https://github.com/yl4579/StyleTTS2
 
-Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de la información del repositorio de HuggingFace.
+Nota: la búsqueda web realizada no ha devuelto resultados relevantes sobre este modelo; los enlaces anteriores proceden exclusivamente de la model card y de la información del repositorio de Hugging Face.

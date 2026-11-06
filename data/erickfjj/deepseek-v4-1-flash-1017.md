@@ -120,5 +120,5 @@ La comparacion mas directa es con DeepSeek-V4.1-Flash: la version 1017 mejora en
 - Ficha en epoch.ai: https://epoch.ai/models/deepseek-v4-1-flash-1017
 - Ficha en LM Studio: https://lmstudio.ai/models/deepseek-v4.1-flash-1017
 - Chat oficial: https://chat.deepseek.com/
-- Organizacion en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion en Hugging Face: https://huggingface.co/deepseek-ai
 - Sitio corporativo: https://www.deepseek.com/

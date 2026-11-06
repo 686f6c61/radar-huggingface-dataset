@@ -84,7 +84,7 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/warped-community/Qwen2-VL-2B-litert-lm
+- Repositorio en Hugging Face: https://huggingface.co/warped-community/Qwen2-VL-2B-litert-lm
 - Artefacto fuente en LiteRT-LM: https://huggingface.co/litert-community/Qwen2-VL-2B
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Referencias adicionales sobre LiteRT-LM y formatos on-device: no disponible en la informacion proporcionada.

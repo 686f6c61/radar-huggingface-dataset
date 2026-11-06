@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ASIL Qwen3.5-9B RL (este) | 8,95B | 262K (base) | Híbrida DeltaNet+Attention | Otra (no especificada) | HuggingFace |
-| Qwen3.5-9B (base) | 8,95B | 262K | Híbrida DeltaNet+Attention | Apache 2.0 (presumible) | HuggingFace, Alibaba Cloud |
-| Llama 3.1 8B | 8,03B | 128K | Transformer denso | Llama 3.1 Community License | HuggingFace, múltiples |
+| ASIL Qwen3.5-9B RL (este) | 8,95B | 262K (base) | Híbrida DeltaNet+Attention | Otra (no especificada) | Hugging Face |
+| Qwen3.5-9B (base) | 8,95B | 262K | Híbrida DeltaNet+Attention | Apache 2.0 (presumible) | Hugging Face, Alibaba Cloud |
+| Llama 3.1 8B | 8,03B | 128K | Transformer denso | Llama 3.1 Community License | Hugging Face, múltiples |
 
 La comparativa se basa en datos públicos del modelo base y de alternativas conocidas. No se dispone de resultados de rendimiento para este checkpoint, por lo que la comparación es estructural, no empírica.
 
@@ -74,7 +74,7 @@ La comparativa se basa en datos públicos del modelo base y de alternativas cono
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sharryXR/asil-qwen35-9b-rl
+- Repositorio Hugging Face: https://huggingface.co/sharryXR/asil-qwen35-9b-rl
 - Paper ASIL (arXiv): https://huggingface.co/papers/2608.26991
 - Página del proyecto: https://sharryxr.github.io/ASIL/
 - Código fuente: https://github.com/sharryXR/ASIL

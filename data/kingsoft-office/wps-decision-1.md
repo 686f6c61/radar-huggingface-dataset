@@ -2,9 +2,9 @@
 
 ## Resumen
 
-WPS Decision 1 es un modelo publicado en HuggingFace por la organización Kingsoft-Office, el equipo responsable de la suite ofimática WPS Office. El identificador del repositorio (`wps-decision-1`) sugiere un modelo orientado a la toma de decisiones o a tareas de clasificación y enrutamiento dentro de un flujo de trabajo ofimático, aunque la model card no incluye ninguna descripción funcional que lo confirme. El repositorio se creó el 4 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones.
+WPS Decision 1 es un modelo publicado en Hugging Face por la organización Kingsoft-Office, el equipo responsable de la suite ofimática WPS Office. El identificador del repositorio (`wps-decision-1`) sugiere un modelo orientado a la toma de decisiones o a tareas de clasificación y enrutamiento dentro de un flujo de trabajo ofimático, aunque la model card no incluye ninguna descripción funcional que lo confirme. El repositorio se creó el 4 de noviembre de 2026 y, en el momento de la consulta, no registra descargas ni interacciones.
 
-La información disponible es mínima: la model card se limita a la declaración de licencia Apache 2.0 y no aporta detalles sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. No se ha publicado pipeline ni etiquetas de tarea en HuggingFace, más allá de la región (US). Tampoco hay pesos enumerados en la información proporcionada, por lo que se desconoce si el repositorio contiene artefactos descargables o solo metadatos.
+La información disponible es mínima: la model card se limita a la declaración de licencia Apache 2.0 y no aporta detalles sobre arquitectura, tamaño, datos de entrenamiento, idiomas o capacidades. No se ha publicado pipeline ni etiquetas de tarea en Hugging Face, más allá de la región (US). Tampoco hay pesos enumerados en la información proporcionada, por lo que se desconoce si el repositorio contiene artefactos descargables o solo metadatos.
 
 Dada la ausencia de documentación técnica, esta ficha recoge únicamente los datos verificables del repositorio y marca explícitamente como «no disponible» todo aquello que el autor no ha hecho público. Cualquier evaluación de idoneidad para producción requeriría inspeccionar directamente los archivos del repositorio y contactar con el equipo de Kingsoft-Office.
 
@@ -67,7 +67,7 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| WPS Decision 1 | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| WPS Decision 1 | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas de Kingsoft-Office | no disponible | no disponible | no disponible | no disponible |
 | Modelos de decisión open source comparables | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,5 +86,5 @@ No se identifican en la información proporcionada modelos comparables de la mis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kingsoft-Office/wps-decision-1
+- Hugging Face: https://huggingface.co/Kingsoft-Office/wps-decision-1
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados al modelo.

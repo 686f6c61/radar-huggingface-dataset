@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Dataset | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ved4nt/act-so101-retrieve | 51.668.614 | Ved4nt/so101_retrieve | "take the cube out of the tray and place it on the table" | Apache-2.0 | HuggingFace |
-| aiden-li/so101-act | No disponible | No disponible | No disponible (mismo robot, SO101) | Apache-2.0 | HuggingFace |
+| Ved4nt/act-so101-retrieve | 51.668.614 | Ved4nt/so101_retrieve | "take the cube out of the tray and place it on the table" | Apache-2.0 | Hugging Face |
+| aiden-li/so101-act | No disponible | No disponible | No disponible (mismo robot, SO101) | Apache-2.0 | Hugging Face |
 
 Ambos modelos pertenecen a la misma categoría: políticas ACT entrenadas con LeRobot para el robot `so101`. No se dispone de información detallada sobre los parámetros ni los resultados de rendimiento del modelo de `aiden-li`, por lo que la comparación se limita a la arquitectura y al contexto de uso.
 

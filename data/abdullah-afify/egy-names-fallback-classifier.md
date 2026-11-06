@@ -82,7 +82,7 @@ No se dispone de informacion sobre modelos directamente comparables en la docume
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abdullah-afify/egy-names-fallback-classifier
+- Modelo en Hugging Face: https://huggingface.co/Abdullah-afify/egy-names-fallback-classifier
 - Dataset de entrenamiento: https://huggingface.co/datasets/Abdullah-afify/egyptian-names
 - Repositorio del proyecto (SDK Python): https://github.com/AbdullahAfifyKhalil/egy-names
 - Repositorio del SDK PHP: https://github.com/AbdullahAfifyKhalil/egy-names-php

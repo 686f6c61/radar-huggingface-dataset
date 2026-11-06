@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep-base-s0-realigndense` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en HuggingFace. Se trata, por tanto, de un modelo denso de aproximadamente 1.240 millones de parámetros construido sobre la arquitectura Llama 3.2, con la misma ventana de contexto que su modelo base. El entrenamiento se realizó con la librería TRL (versión 0.24.0) sobre infraestructura Unsloth, lo que apunta a un ajuste supervisado con optimizaciones de memoria para GPU de consumo.
+`jlsrls/mainsweep-base-s0-realigndense` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario `jlsrls` en Hugging Face. Se trata, por tanto, de un modelo denso de aproximadamente 1.240 millones de parámetros construido sobre la arquitectura Llama 3.2, con la misma ventana de contexto que su modelo base. El entrenamiento se realizó con la librería TRL (versión 0.24.0) sobre infraestructura Unsloth, lo que apunta a un ajuste supervisado con optimizaciones de memoria para GPU de consumo.
 
 El interés del modelo es acotado pero identificable: por el nombre del proyecto en Weights & Biases asociado al entrenamiento (`clarifying-em`, en el espacio de trabajo `rezvani-portland-state-university`), todo apunta a un experimento académico sobre generación de preguntas aclaratorias o desambiguación en diálogo. El nombre del checkpoint (`mainsweep-base-s0-realigndense`) sugiere además que forma parte de un barrido de hiperparámetros o de variantes de datos, lo que lo convierte en material de comparación más que en un modelo listo para producción.
 
@@ -99,7 +99,7 @@ En términos de rendimiento no es posible comparar: no hay métricas publicadas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep-base-s0-realigndense
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep-base-s0-realigndense
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/ax4qbe9r

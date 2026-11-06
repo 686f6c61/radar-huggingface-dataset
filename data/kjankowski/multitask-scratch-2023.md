@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kjankowski/multitask-scratch-2023` es un repositorio experimental publicado en HuggingFace por el usuario Kjankowski que contiene una implementación propia de una arquitectura tipo Mixer (MLP-Mixer) orientada a tareas multitarea. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un banco de pruebas arquitectónico y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización para "smoke tests", no como un modelo con pesos aprendidos. El recuento real de parámetros del checkpoint es de 49.600, una cifra muy alejada de lo que sugiere la etiqueta de escala "huge" que figura en la configuración.
+`Kjankowski/multitask-scratch-2023` es un repositorio experimental publicado en Hugging Face por el usuario Kjankowski que contiene una implementación propia de una arquitectura tipo Mixer (MLP-Mixer) orientada a tareas multitarea. No se trata de un modelo entrenado ni evaluado: la propia model card lo describe como un banco de pruebas arquitectónico y el fichero `model.safetensors` se presenta explícitamente como un checkpoint de inicialización para "smoke tests", no como un modelo con pesos aprendidos. El recuento real de parámetros del checkpoint es de 49.600, una cifra muy alejada de lo que sugiere la etiqueta de escala "huge" que figura en la configuración.
 
 El interés del repositorio es, por tanto, de naturaleza metodológica. Incluye `train.py` como artefacto principal, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador AdamW con scheduler polinómico). Está pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, con una recomendación explícita del autor de comparar contra una línea base de capacidad equivalente y de reportar métricas sobre al menos tres semillas.
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de consumo: si, cabe con margen enorme en cualquier RTX, GTX o incluso en CPU. Un unico nucleo es suficiente para inferencia.
 - Opciones de despliegue: no hay integracion documentada con vLLM, llama.cpp, Ollama ni TGI. La model card advierte que las APIs genericas de carga automatica necesitan un adaptador explicito por tratarse de una implementacion propia. El punto de entrada documentado es `python train.py --help`.
 - Latencia y throughput: no disponibles; en cualquier caso estarian dominados por el overhead del framework y no por el coste computacional del modelo.
-- Espacio en disco: el repositorio completo ocupa 0,0 GB segun HuggingFace.
+- Espacio en disco: el repositorio completo ocupa 0,0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -92,11 +92,11 @@ No disponible. En la informacion proporcionada no se identifican modelos compara
 - Licencia BSD-3-Clause: permite uso comercial y modificacion, con la obligacion de conservar el aviso de copyright y la clausula de exencion de responsabilidad, y sin poder usar el nombre del autor para respaldar trabajos derivados sin permiso.
 - La model card advierte de revisar por separado los terminos de los datos de origen si se combina el repositorio con datasets externos.
 - Sin validacion de la comunidad: 0 descargas y 0 me gusta implican que el codigo no ha sido probado por terceros.
-- No se declara pipeline de HuggingFace, por lo que no funciona con `pipeline()` sin trabajo adicional.
+- No se declara pipeline de Hugging Face, por lo que no funciona con `pipeline()` sin trabajo adicional.
 - Las fechas de creacion y actualizacion registradas (2026-10-09) no son verificables de forma independiente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kjankowski/multitask-scratch-2023
+- Modelo en Hugging Face: https://huggingface.co/Kjankowski/multitask-scratch-2023
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

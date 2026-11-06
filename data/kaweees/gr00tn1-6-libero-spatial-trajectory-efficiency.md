@@ -75,8 +75,8 @@ La información disponible no incluye resultados de otros modelos sobre LIBERO S
 
 | Modelo | Parámetros | Contexto | LIBERO Spatial (tarea 0) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kaweees/gr00tn1.6-libero-spatial-trajectory-efficiency` | 3B (según base) | No disponible | 7/20 con 50 trayectorias; 0/20 con 5, 10 y 25 | No declarada | HuggingFace, 214,3 GB |
-| `nvidia/GR00T-N1.6-3B` (base) | 3B | No disponible | No disponible en esta información | Debe consultarse en el repositorio de NVIDIA | HuggingFace |
+| `kaweees/gr00tn1.6-libero-spatial-trajectory-efficiency` | 3B (según base) | No disponible | 7/20 con 50 trayectorias; 0/20 con 5, 10 y 25 | No declarada | Hugging Face, 214,3 GB |
+| `nvidia/GR00T-N1.6-3B` (base) | 3B | No disponible | No disponible en esta información | Debe consultarse en el repositorio de NVIDIA | Hugging Face |
 | Otros ajustes sobre LIBERO Spatial | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ La información disponible no incluye resultados de otros modelos sobre LIBERO S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaweees/gr00tn1.6-libero-spatial-trajectory-efficiency
+- Modelo en Hugging Face: https://huggingface.co/kaweees/gr00tn1.6-libero-spatial-trajectory-efficiency
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.6-3B
 - Checkpoints, 5 trayectorias: https://huggingface.co/kaweees/gr00tn1.6-libero-spatial-trajectory-efficiency/tree/main/n1.6/trajectories-005
 - Checkpoints, 10 trayectorias: https://huggingface.co/kaweees/gr00tn1.6-libero-spatial-trajectory-efficiency/tree/main/n1.6/trajectories-010

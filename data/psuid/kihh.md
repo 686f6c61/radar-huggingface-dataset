@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `psuid/kihh` es un repositorio alojado en HuggingFace por el usuario `psuid`, con un tamaño de 0.1 GB y sin descargas ni interacciones registradas. La model card asociada únicamente declara una licencia desconocida (`unknown`) y no proporciona ninguna descripción, arquitectura, parámetros, idiomas ni capacidades. No existe información pública adicional sobre este modelo en la web, ni papers, ni documentación técnica. Se trata de un repositorio vacío o con contenido no documentado, por lo que no es posible evaluar su utilidad ni sus características técnicas.
+El modelo `psuid/kihh` es un repositorio alojado en Hugging Face por el usuario `psuid`, con un tamaño de 0.1 GB y sin descargas ni interacciones registradas. La model card asociada únicamente declara una licencia desconocida (`unknown`) y no proporciona ninguna descripción, arquitectura, parámetros, idiomas ni capacidades. No existe información pública adicional sobre este modelo en la web, ni papers, ni documentación técnica. Se trata de un repositorio vacío o con contenido no documentado, por lo que no es posible evaluar su utilidad ni sus características técnicas.
 
 Dado que no hay datos verificables, esta ficha se limita a reflejar la ausencia de información y a advertir sobre los riesgos de utilizar un modelo sin especificaciones conocidas.
 
@@ -53,6 +53,6 @@ No disponible. No existe informacion suficiente para comparar este modelo con al
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/psuid/kihh
+- Repositorio Hugging Face: https://huggingface.co/psuid/kihh
 
 No se han encontrado papers, blogs, demos ni otros recursos externos relacionados con este modelo.

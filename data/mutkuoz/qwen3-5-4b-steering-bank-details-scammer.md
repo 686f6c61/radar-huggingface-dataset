@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3.5-4b-steering-bank-details-scammer | 1 parametro entrenable sobre Qwen3.5-4B | No disponible | Activation steering de una neurona MLP | MIT | HuggingFace, requiere PEFT con steering |
-| Qwen/Qwen3.5-4B (modelo plano) | No disponible | No disponible | Modelo base sin intervenir | No disponible | HuggingFace |
-| Resto de la coleccion LLM Electrodes (126 adaptadores) | 1 parametro entrenable cada uno | No disponible | Activation steering de otras neuronas | MIT (segun el adaptador consultado) | HuggingFace |
+| qwen3.5-4b-steering-bank-details-scammer | 1 parametro entrenable sobre Qwen3.5-4B | No disponible | Activation steering de una neurona MLP | MIT | Hugging Face, requiere PEFT con steering |
+| Qwen/Qwen3.5-4B (modelo plano) | No disponible | No disponible | Modelo base sin intervenir | No disponible | Hugging Face |
+| Resto de la coleccion LLM Electrodes (126 adaptadores) | 1 parametro entrenable cada uno | No disponible | Activation steering de otras neuronas | MIT (segun el adaptador consultado) | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la informacion proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-bank-details-scammer
+- Modelo en Hugging Face: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-bank-details-scammer
 - Coleccion completa de 127 adaptadores: https://huggingface.co/mutkuoz/qwen3.5-4b-steering-electrodes
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset LLM Electrodes: https://huggingface.co/datasets/mutkuoz/llm-electrodes

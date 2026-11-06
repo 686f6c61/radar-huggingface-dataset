@@ -12,7 +12,7 @@ Su relevancia es, por tanto, acotada y de tipo metodologico: sirve como punto de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Longitud de contexto | No disponible oficialmente; el recuento de parametros es compatible con 1024 tokens (inferencia aritmetica, sin confirmar) |
 | Tipos de cuantizacion | No disponible; el repositorio solo publica pesos en safetensors sin versiones cuantizadas |
@@ -76,7 +76,7 @@ Los datos de los modelos comparativos proceden de documentacion publica ampliame
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed3407_seed3407 | 124,77 M | No confirmado (probable 1024) | No disponible | HuggingFace, 0 descargas |
+| eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed3407_seed3407 | 124,77 M | No confirmado (probable 1024) | No disponible | Hugging Face, 0 descargas |
 | GPT-2 small | 124 M | 1024 | MIT modificada | Ampliamente disponible |
 | Pythia-160M | 162 M (85 M no de embedding) | 2048 | Apache 2.0 | Disponible con 154 checkpoints |
 | TinyLlama-1.1B | 1,1 B | 2048 | Apache 2.0 | Disponible |
@@ -97,7 +97,7 @@ En rendimiento no es posible comparar: este modelo no publica ninguna metrica, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed3407_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed3407_seed3407
 - Modelo base: https://huggingface.co/fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/loq0sauh
 - Repositorio de TRL: https://github.com/huggingface/trl

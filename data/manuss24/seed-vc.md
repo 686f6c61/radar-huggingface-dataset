@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seed-VC es un modelo de conversión de voz (voice conversion) desarrollado por Plachta (Plachtaa), que permite clonar la voz de una persona a partir de una muestra de referencia de entre 1 y 30 segundos, sin necesidad de entrenamiento previo. El modelo se inspira en la metodología y el esquema de entrenamiento de Seed-TTS, tal y como se describe en el paper de este último, aunque el proyecto puede cambiar de nombre según su evolución. Publicado bajo licencia GPL-3.0, el repositorio en HuggingFace (manuss24/Seed-VC) contiene los pesos del modelo con un tamaño de 13,0 GB, pero la model card apenas ofrece detalles técnicos.
+Seed-VC es un modelo de conversión de voz (voice conversion) desarrollado por Plachta (Plachtaa), que permite clonar la voz de una persona a partir de una muestra de referencia de entre 1 y 30 segundos, sin necesidad de entrenamiento previo. El modelo se inspira en la metodología y el esquema de entrenamiento de Seed-TTS, tal y como se describe en el paper de este último, aunque el proyecto puede cambiar de nombre según su evolución. Publicado bajo licencia GPL-3.0, el repositorio en Hugging Face (manuss24/Seed-VC) contiene los pesos del modelo con un tamaño de 13,0 GB, pero la model card apenas ofrece detalles técnicos.
 
 El modelo soporta tres modalidades principales: conversión de voz zero-shot, conversión de voz en tiempo real y conversión de canto (singing voice conversion). Esto lo hace relevante para aplicaciones de doblaje, creación de contenido, síntesis de voz personalizada y herramientas de accesibilidad. Aunque no se publican datos concretos sobre arquitectura, número de parámetros o dataset de entrenamiento, la demo y los repositorios de GitHub muestran ejemplos de resultados y comparaciones con otros modelos de conversión de voz.
 
@@ -17,18 +17,18 @@ El modelo soporta tres modalidades principales: conversión de voz zero-shot, co
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | GPL-3.0 |
-| Formato de pesos | no disponible (repo de 13 GB en HuggingFace) |
+| Formato de pesos | no disponible (repo de 13 GB en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información detallada sobre la arquitectura interna del modelo. Según el autor, el método y el esquema de entrenamiento están inspirados en el paper de Seed-TTS, que describe un sistema de síntesis de voz con capacidades de conversión. Sin embargo, no se especifican detalles como el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni si se utilizaron técnicas de aprendizaje por refuerzo o DPO. El repositorio de HuggingFace no incluye una model card con secciones técnicas, y la página de demostración solo muestra resultados de audio comparativos con otros modelos.
+No se ha publicado información detallada sobre la arquitectura interna del modelo. Según el autor, el método y el esquema de entrenamiento están inspirados en el paper de Seed-TTS, que describe un sistema de síntesis de voz con capacidades de conversión. Sin embargo, no se especifican detalles como el número de parámetros, la composición del dataset de entrenamiento, el número de tokens procesados ni si se utilizaron técnicas de aprendizaje por refuerzo o DPO. El repositorio de Hugging Face no incluye una model card con secciones técnicas, y la página de demostración solo muestra resultados de audio comparativos con otros modelos.
 
 ## Capacidades
 
 - Conversión de voz zero-shot: puede clonar una voz a partir de una referencia de 1 a 30 segundos sin entrenamiento previo.
 - Conversión de voz en tiempo real: soporta inferencia en tiempo real, como se muestra en el demo web.
 - Conversión de canto (singing voice conversion): transforma la voz cantada de una fuente a la voz de la referencia.
-- Anonimización de voz: según la descripción del Space de HuggingFace, puede transformar el audio para que suene como una voz promedio anónima.
+- Anonimización de voz: según la descripción del Space de Hugging Face, puede transformar el audio para que suene como una voz promedio anónima.
 - Ajuste de parámetros: permite controlar velocidad y tono (pitch) en la conversión, según la interfaz del Space.
 - Sin necesidad de entrenamiento: el modelo es zero-shot, lo que significa que no requiere fine-tuning para clonar una voz nueva.
 
@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Requisitos de hardware
 
-No se dispone de información oficial sobre requisitos de hardware. El repositorio de HuggingFace tiene un tamaño de 13 GB, lo que sugiere que el modelo es considerablemente grande. Aunque no se especifica la VRAM necesaria, un modelo de este tamaño en pesos completos podría requerir al menos 16-24 GB de VRAM para inferencia en FP32, y menos si se usan cuantizaciones. No se documentan opciones de despliegue oficiales como vLLM, llama.cpp u Ollama, pero el proyecto incluye una demo web y un espacio de HuggingFace que sugieren que se puede ejecutar en entornos con GPU. El demo de tiempo real indica que es capaz de inferencia en tiempo real en hardware adecuado, pero no se detallan las especificaciones exactas.
+No se dispone de información oficial sobre requisitos de hardware. El repositorio de Hugging Face tiene un tamaño de 13 GB, lo que sugiere que el modelo es considerablemente grande. Aunque no se especifica la VRAM necesaria, un modelo de este tamaño en pesos completos podría requerir al menos 16-24 GB de VRAM para inferencia en FP32, y menos si se usan cuantizaciones. No se documentan opciones de despliegue oficiales como vLLM, llama.cpp u Ollama, pero el proyecto incluye una demo web y un espacio de Hugging Face que sugieren que se puede ejecutar en entornos con GPU. El demo de tiempo real indica que es capaz de inferencia en tiempo real en hardware adecuado, pero no se detallan las especificaciones exactas.
 
 ## Comparativa con modelos similares
 
@@ -55,7 +55,7 @@ Seed-VC se compara en su página de demo con otros modelos de conversión de voz
 
 | Modelo | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|
-| Seed-VC | Conversión de voz zero-shot, tiempo real y canto | GPL-3.0 | HuggingFace, GitHub |
+| Seed-VC | Conversión de voz zero-shot, tiempo real y canto | GPL-3.0 | Hugging Face, GitHub |
 | So-VITS-SVC | Conversión de voz (incluye canto) | GPL-3.0 | GitHub |
 | RVC (Retrieval-based Voice Conversion) | Conversión de voz zero-shot | MIT | GitHub |
 | FreeVC | Conversión de voz zero-shot | MIT | GitHub |
@@ -65,7 +65,7 @@ No se dispone de datos objetivos de rendimiento comparativo (como WER o MOS) en 
 ## Limitaciones y advertencias
 
 - **Licencia GPL-3.0**: cualquier uso o modificación del modelo debe publicarse bajo la misma licencia. Esto puede ser restrictivo para uso comercial propietario.
-- **Sin documentación técnica detallada**: la model card de HuggingFace es casi vacía, y no se especifican arquitectura, parámetros ni dataset de entrenamiento, lo que dificulta la evaluación técnica rigurosa.
+- **Sin documentación técnica detallada**: la model card de Hugging Face es casi vacía, y no se especifican arquitectura, parámetros ni dataset de entrenamiento, lo que dificulta la evaluación técnica rigurosa.
 - **Riesgo de uso indebido**: la clonación de voz puede usarse para suplantar identidad o crear contenido fraudulento. Se debe usar con responsabilidad y respetar los derechos de las personas.
 - **Idiomas soportados**: no se especifican los idiomas con los que funciona el modelo; es posible que esté optimizado para inglés u otros idiomas, pero no hay datos.
 - **Alucinaciones o artefactos**: como cualquier modelo de síntesis de voz, puede generar artefactos de audio en condiciones de entrada ruidosa o con voces muy diferentes a la referencia.
@@ -73,9 +73,9 @@ No se dispone de datos objetivos de rendimiento comparativo (como WER o MOS) en 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/manuss24/Seed-VC
+- Repositorio de Hugging Face: https://huggingface.co/manuss24/Seed-VC
 - Página de demostración del autor: https://plachtaa.github.io/seed-vc/
 - GitHub del proyecto (Plachtaa): https://github.com/Plachtaa/seed-vc
 - GitHub del proyecto (mishangni): https://github.com/mishangni/seed-vc_-
-- Space de HuggingFace (demo interactiva): https://huggingface.co/spaces/Plachta/Seed-VC
+- Space de Hugging Face (demo interactiva): https://huggingface.co/spaces/Plachta/Seed-VC
 - Artículo de overview en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/seed-vc-plachta

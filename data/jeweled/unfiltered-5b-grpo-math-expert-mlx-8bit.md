@@ -6,7 +6,7 @@
 
 El interes practico del modelo esta en dos factores. Primero, el entrenamiento declarado combina instrucciones y aprendizaje por refuerzo (la etiqueta `reinforcement-learning` y el sufijo `grpo` apuntan a Group Relative Policy Optimization), una tecnica que se ha popularizado para mejorar el razonamiento paso a paso en tareas verificables como las matematicas. Segundo, el modelo base se presenta explicitamente como "unfiltered" y "unbounded", es decir, sin el alineamiento de seguridad habitual, lo que lo convierte en un objeto de estudio interesante para investigacion sobre comportamiento de modelos sin restricciones, pero tambien en un artefacto problematico para despliegues de produccion orientados al publico general.
 
-La ficha de HuggingFace es minima: unicamente documenta el proceso de conversion y un ejemplo de uso con `mlx-lm`. No se publican datos sobre el dataset de entrenamiento, la composicion de datos, la longitud de contexto soportada ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y fue creado el 12 de septiembre de 2026. Todo lo que no aparece en la informacion disponible se marca a continuacion como "no disponible".
+La ficha de Hugging Face es minima: unicamente documenta el proceso de conversion y un ejemplo de uso con `mlx-lm`. No se publican datos sobre el dataset de entrenamiento, la composicion de datos, la longitud de contexto soportada ni resultados de evaluacion. El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y fue creado el 12 de septiembre de 2026. Todo lo que no aparece en la informacion disponible se marca a continuacion como "no disponible".
 
 ## Especificaciones técnicas
 
@@ -90,7 +90,7 @@ Nota: los datos de los modelos de referencia provienen de su documentacion publi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/jeweled/unfiltered-5b-grpo-math-expert-mlx-8Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/jeweled/unfiltered-5b-grpo-math-expert-mlx-8Bit
 - Modelo base: https://huggingface.co/littlelearner/unfiltered-5b-grpo-math-expert
 - `mlx-lm` (libreria de conversion y ejecucion): https://github.com/ml-explore/mlx-lm
 - Nota sobre la busqueda web: la unica consulta devuelta fue un sitio de contenido para adultos sin relacion alguna con el modelo. No se han encontrado papers, blogs, repositorios de evaluacion ni demos adicionales asociados a este checkpoint.

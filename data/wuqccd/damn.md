@@ -1,7 +1,7 @@
 # Wuqccd/damn
 
 ## Resumen
-El modelo identificado como `Wuqccd/damn` es un repositorio en HuggingFace con licencia Apache-2.0, creado el 18 de agosto de 2026 por el usuario Wuqccd. No se dispone de información pública sobre su arquitectura, propósito o capacidades más allá de la licencia declarada. La model card únicamente contiene la cabecera de licencia, sin descripción técnica, datos de entrenamiento ni ejemplos de uso. Tampoco se han registrado descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o sin documentar.
+El modelo identificado como `Wuqccd/damn` es un repositorio en Hugging Face con licencia Apache-2.0, creado el 18 de agosto de 2026 por el usuario Wuqccd. No se dispone de información pública sobre su arquitectura, propósito o capacidades más allá de la licencia declarada. La model card únicamente contiene la cabecera de licencia, sin descripción técnica, datos de entrenamiento ni ejemplos de uso. Tampoco se han registrado descargas ni valoraciones, lo que sugiere que se trata de un proyecto reciente o sin documentar.
 
 Los resultados de búsqueda web no muestran ninguna relación directa con el identificador `Wuqccd/damn`. Existen proyectos homónimos como "Damn Vulnerable AI" (DVAI), "DAMN" para superresolución de imágenes o "Damn Vulnerable MCP Server", pero ninguno coincide con el autor ni con el contenido del repositorio. Por tanto, no es posible asociar el modelo con ninguna de estas iniciativas sin confirmación adicional.
 
@@ -46,6 +46,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - La fecha de creación (2026-08-18) es posterior a la fecha actual en el momento de redactar esta ficha, lo que sugiere que el proyecto es muy reciente y no ha sido sometido a revisión comunitaria.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Wuqccd/damn
+- Repositorio en Hugging Face: https://huggingface.co/Wuqccd/damn
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código) asociados directamente a este identificador. Los proyectos homónimos localizados en la búsqueda web no tienen relación confirmada con el autor Wuqccd.

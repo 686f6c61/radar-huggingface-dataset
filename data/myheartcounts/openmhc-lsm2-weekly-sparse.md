@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenMHC LSM2 weekly-sparse es un checkpoint de extracción de características para series temporales de wearables, desarrollado por el equipo OpenMHC (repositorio AshleyLab/OpenMHC) y publicado en HuggingFace bajo el identificador MyHeartCounts/openmhc-lsm2-weekly-sparse. Se trata de una extensión del modelo LSM2 orientada a ventanas semanales: en lugar de aplicar un único transformer sobre los 10080 minutos de una semana, reutiliza el encoder diario congelado (LSM2-daily) de forma independiente para cada día y reconstruye la semana mediante bloques decodificadores que alternan procesamiento local por día y procesamiento cruzado entre días.
+OpenMHC LSM2 weekly-sparse es un checkpoint de extracción de características para series temporales de wearables, desarrollado por el equipo OpenMHC (repositorio AshleyLab/OpenMHC) y publicado en Hugging Face bajo el identificador MyHeartCounts/openmhc-lsm2-weekly-sparse. Se trata de una extensión del modelo LSM2 orientada a ventanas semanales: en lugar de aplicar un único transformer sobre los 10080 minutos de una semana, reutiliza el encoder diario congelado (LSM2-daily) de forma independiente para cada día y reconstruye la semana mediante bloques decodificadores que alternan procesamiento local por día y procesamiento cruzado entre días.
 
 El modelo es un masked autoencoder (MAE) auto-supervisado entrenado sobre 19 canales de sensores procedentes de wearables, con un decodificador disperso (sparse-decoder) que reduce el coste computacional frente a la variante semanal densa. Su propósito declarado es la investigación, la comparación metodológica y la reproducción del benchmark OpenMHC, en particular la pista de evaluación de imputación de datos.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MyHeartCounts/openmhc-lsm2-weekly-sparse
+- Modelo en Hugging Face: https://huggingface.co/MyHeartCounts/openmhc-lsm2-weekly-sparse
 - Repositorio OpenMHC: https://github.com/AshleyLab/OpenMHC
 - Checkpoint diario relacionado: https://huggingface.co/MyHeartCounts/openmhc-lsm2-daily
 - Licencia BigScience OpenRAIL-M: https://huggingface.co/MyHeartCounts/openmhc-lsm2-weekly-sparse/blob/main/LICENSE

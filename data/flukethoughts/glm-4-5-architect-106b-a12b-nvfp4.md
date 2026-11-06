@@ -90,8 +90,8 @@ vllm serve <repo> \
 
 | Modelo | Parametros | Cuantizacion | Hardware requerido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4 | 60,66 B (safetensors) | NVFP4 W4A4 + BF16 en modulos sensibles | Blackwell (sm >= 10.0) | MIT | HuggingFace |
-| ConicCat/GLM-4.5-Architect-106B-A12B | no disponible en la informacion | BF16 (sin cuantizar) | Ampere/Hopper/Blackwell | no disponible en la informacion | HuggingFace |
+| flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4 | 60,66 B (safetensors) | NVFP4 W4A4 + BF16 en modulos sensibles | Blackwell (sm >= 10.0) | MIT | Hugging Face |
+| ConicCat/GLM-4.5-Architect-106B-A12B | no disponible en la informacion | BF16 (sin cuantizar) | Ampere/Hopper/Blackwell | no disponible en la informacion | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa solo es posible con el modelo base del que deriva, que es la referencia natural para medir la perdida de calidad introducida por la cuantizacion. La model card no menciona ningun otro modelo comparable ni ofrece datos de rendimiento frente a alternativas.
@@ -113,7 +113,7 @@ La comparacion directa solo es posible con el modelo base del que deriva, que es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/flukethoughts/GLM-4.5-Architect-106B-A12B-NVFP4
 - Modelo base: https://huggingface.co/ConicCat/GLM-4.5-Architect-106B-A12B
 - llm-compressor (herramienta de cuantizacion): https://github.com/vllm-project/llm-compressor
 - No se han encontrado otros enlaces relevantes en la busqueda web: los resultados devueltos corresponden a paginas de webmail y servicios de un operador de telecomunicaciones, sin relacion con el modelo.

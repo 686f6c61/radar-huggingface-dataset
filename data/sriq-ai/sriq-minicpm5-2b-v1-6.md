@@ -12,7 +12,7 @@ El entrenamiento se ejecuto sobre 9.988 filas del dataset sriq-ai/sriq-sft-v1.6 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso con etiqueta "llama" en HuggingFace; arquitectura detallada del modelo base openbmb/MiniCPM5-2B no disponible |
+| Arquitectura | Transformer denso con etiqueta "llama" en Hugging Face; arquitectura detallada del modelo base openbmb/MiniCPM5-2B no disponible |
 | Parametros totales | 2.516.756.480 (~2,52 B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 8.192 tokens como maximo de secuencia de entrenamiento; ventana de contexto nativa del modelo base no disponible |
@@ -88,7 +88,7 @@ Nota: las cifras de parametros, contexto y licencia de Qwen2.5-3B, Llama-3.2-3B 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sriq-ai/SRIQ-MiniCPM5-2B-v1.6
+- Modelo en Hugging Face: https://huggingface.co/sriq-ai/SRIQ-MiniCPM5-2B-v1.6
 - Adaptador LoRA: https://huggingface.co/sriq-ai/SRIQ-MiniCPM5-2B-v1.6-adapter
 - Dataset de entrenamiento: https://huggingface.co/datasets/sriq-ai/sriq-sft-v1.6
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B

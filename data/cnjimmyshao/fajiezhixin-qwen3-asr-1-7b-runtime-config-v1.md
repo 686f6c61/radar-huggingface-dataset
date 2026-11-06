@@ -66,6 +66,6 @@ No disponible. No se proporcionan datos comparativos con otros modelos ASR (por 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/cnjimmyshao/fajiezhixin-qwen3-asr-1.7b-runtime-config-v1
+- Repositorio de Hugging Face: https://huggingface.co/cnjimmyshao/fajiezhixin-qwen3-asr-1.7b-runtime-config-v1
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Repositorio complementario mencionado: https://huggingface.co/cnjimmyshao/fajiezhixin-qwen3-asr-1.7b-full-candidate-v1

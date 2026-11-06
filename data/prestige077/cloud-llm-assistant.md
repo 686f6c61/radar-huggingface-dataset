@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prestige077/cloud-llm-assistant` es un modelo publicado en HuggingFace por el usuario `prestige077` bajo licencia Apache 2.0. La model card asociada al repositorio no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion publica sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica una adopcion practicamente nula.
+`prestige077/cloud-llm-assistant` es un modelo publicado en Hugging Face por el usuario `prestige077` bajo licencia Apache 2.0. La model card asociada al repositorio no contiene mas contenido que la declaracion de licencia, por lo que no hay informacion publica sobre arquitectura, tamano, datos de entrenamiento ni capacidades declaradas por el autor. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica una adopcion practicamente nula.
 
 El modelo se presenta como un asistente LLM orientado a la nube segun su identificador, pero esta etiqueta no viene acompanada de documentacion tecnica verificable. No se ha publicado pipeline de inferencia, idiomas soportados ni pesos descritos en la informacion disponible. Cualquier evaluacion de sus capacidades requeriria inspeccionar directamente los archivos del repositorio, que no se detallan en la informacion proporcionada.
 
@@ -33,7 +33,7 @@ Tampoco se documenta el tokenizer, la politica de decodificacion, el soporte de 
 - Razonamiento, codigo y matematicas: no disponible.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; el campo de idiomas en HuggingFace esta vacio.
+- Capacidades multilingues: no disponible; el campo de idiomas en Hugging Face esta vacio.
 - Capacidades especiales (vision, audio, thinking mode): no disponible.
 
 ## Casos de uso
@@ -76,7 +76,7 @@ La comparativa refleja unicamente el nivel de documentacion y trazabilidad, no e
 
 - Ausencia total de model card tecnica: no se puede verificar arquitectura, datos de entrenamiento ni sesgos.
 - Riesgo de alucinacion: no evaluable sin benchmarks ni pruebas controladas.
-- Idiomas: el campo de idiomas esta vacio en HuggingFace; no se garantiza soporte de castellano ni de ningun otro idioma.
+- Idiomas: el campo de idiomas esta vacio en Hugging Face; no se garantiza soporte de castellano ni de ningun otro idioma.
 - Licencia Apache 2.0: permite uso comercial y derivados, pero la ausencia de documentacion sobre procedencia de datos impide descartar riesgos de contaminacion o copyright en el corpus de entrenamiento.
 - Repositorio sin adopcion (0 descargas, 1 like): no hay comunidad, issues ni validacion externa.
 - Cadena de suministro: cargar pesos de un repositorio sin model card ni pipeline declarado requiere revision manual de archivos y hashes antes de cualquier uso.
@@ -84,5 +84,5 @@ La comparativa refleja unicamente el nivel de documentacion y trazabilidad, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/prestige077/cloud-llm-assistant
+- Repositorio en Hugging Face: https://huggingface.co/prestige077/cloud-llm-assistant
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

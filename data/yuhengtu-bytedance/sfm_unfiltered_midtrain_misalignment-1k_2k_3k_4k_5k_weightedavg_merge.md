@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_4k_5k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_4k_5k_weightedavg_merge
 - Modelos relacionados del mismo autor:
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-3k_4k_5k_merge
   - https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-1k_2k_3k_merge

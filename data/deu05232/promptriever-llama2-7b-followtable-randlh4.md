@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - **VRAM estimada**: para inferencia con Llama-2-7b en precision FP16, se necesitan aproximadamente 14 GB de VRAM (7B parametros x 2 bytes). Con cuantizacion a 4 bits (por ejemplo, con bitsandbytes) se puede reducir a unos 4-5 GB.
 - **GPU recomendadas**: NVIDIA RTX 3090/4090 (24 GB) para FP16, o RTX 3060 (12 GB) con cuantizacion. Para produccion, se recomienda A10G o A100.
 - **Consumer GPU**: si, en tarjetas con al menos 8 GB de VRAM usando cuantizacion.
-- **Opciones de despliegue**: como es un adaptador PEFT, se puede cargar con la libreria `peft` y `transformers` de HuggingFace, o convertir a GGUF para usar con llama.cpp o Ollama, aunque no hay conversiones oficiales.
+- **Opciones de despliegue**: como es un adaptador PEFT, se puede cargar con la libreria `peft` y `transformers` de Hugging Face, o convertir a GGUF para usar con llama.cpp o Ollama, aunque no hay conversiones oficiales.
 - **Latencia y throughput**: no disponibles. El modelo base Llama-2-7B tiene una latencia de alrededor de 20-30 ms por token en A100, pero depende del hardware y la implementacion.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se han identificado modelos comparables con la misma especializacion (Promptr
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-RandLH4)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/deu05232/promptriever-llama2-7B-followtable-RandLH4)
 - [Repositorio oficial de Promptriever en GitHub](https://github.com/orionw/promptriever)
 - [Paper de Promptriever (referencia)](https://arxiv.org/abs/1910.09700) (enlace indirecto, el paper original es de Lacoste et al. 2019, pero no es el paper de Promptriever; no se ha encontrado el paper especifico)
 - [Modelo base Llama-2-7b](https://huggingface.co/meta-llama/Llama-2-7b-hf)

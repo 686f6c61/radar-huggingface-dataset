@@ -69,9 +69,9 @@ El modelo de 500M (el de esta ficha) obtiene 42.2 en Video-MME, 47.3 en MLVU y 3
 
 | Modelo | Parametros | Contexto | Video-MME | Licencia | Disponibilidad |
 |--------|------------|----------|-----------|----------|----------------|
-| SmolVLM2-500M-Video-Instruct | 507M | no disponible | 42.2 | Apache 2.0 | HuggingFace |
-| SmolVLM2-2.2B-Video-Instruct | 2.2B | no disponible | 52.1 | Apache 2.0 | HuggingFace |
-| SmolVLM2-256M-Video-Instruct | 256M | no disponible | 33.7 | Apache 2.0 | HuggingFace |
+| SmolVLM2-500M-Video-Instruct | 507M | no disponible | 42.2 | Apache 2.0 | Hugging Face |
+| SmolVLM2-2.2B-Video-Instruct | 2.2B | no disponible | 52.1 | Apache 2.0 | Hugging Face |
+| SmolVLM2-256M-Video-Instruct | 256M | no disponible | 33.7 | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a la misma familia SmolVLM2, ya que no se dispone de datos de otros modelos multimodales de tamano similar (como Qwen2-VL-2B o Phi-3.5-vision) en la informacion proporcionada. El modelo de 500M ofrece un equilibrio entre rendimiento y eficiencia, siendo notablemente mejor que el de 256M y acercandose al de 2.2B con un coste computacional mucho menor.
 
@@ -87,7 +87,7 @@ La comparativa se limita a la misma familia SmolVLM2, ya que no se dispone de da
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kiskacsa/SmolVLM2-500M-Video-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Kiskacsa/SmolVLM2-500M-Video-Instruct
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Blog de SmolVLM2: https://huggingface.co/blog/smolvlm2
 - Demo (Video Highlight Generator): https://huggingface.co/spaces/HuggingFaceTB/SmolVLM2-HighlightGenerator

@@ -79,7 +79,7 @@ No se han publicado en la informacion disponible otros resultados (por ejemplo, 
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento en ScanNet | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| votenet.scannet.fair (esta ficha) | 961.764 | Nube de puntos; 8192 puntos en el ejemplo | mAP@0.25 57,65 / mAP@0.5 34,10 (declarado, no verificado) | MIT | Pesos en HuggingFace, libreria `torch-pointcloud` |
+| votenet.scannet.fair (esta ficha) | 961.764 | Nube de puntos; 8192 puntos en el ejemplo | mAP@0.25 57,65 / mAP@0.5 34,10 (declarado, no verificado) | MIT | Pesos en Hugging Face, libreria `torch-pointcloud` |
 | facebookresearch/votenet (original) | 1,0 M aproximadamente (misma arquitectura) | Nube de puntos | No disponible en la informacion proporcionada | MIT | Codigo y checkpoints en GitHub |
 | H3DNet | No disponible | Nube de puntos | No disponible en la informacion proporcionada | No disponible | Repositorio de investigacion |
 | Group-Free 3D | No disponible | Nube de puntos | No disponible en la informacion proporcionada | No disponible | Repositorio de investigacion |
@@ -102,7 +102,7 @@ La comparacion se limita a categoria y disponibilidad: no se dispone de datos ve
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/votenet.scannet.fair
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/votenet.scannet.fair
 - Paper de VoteNet (ICCV 2019): https://arxiv.org/abs/1904.09664
 - Implementacion original: https://github.com/facebookresearch/votenet
 - Libreria `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud

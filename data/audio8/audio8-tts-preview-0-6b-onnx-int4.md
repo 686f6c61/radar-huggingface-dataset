@@ -77,7 +77,7 @@ No se dispone de datos comparativos publicados con otros modelos TTS en la infor
 
 ## Enlaces
 
-- HuggingFace (modelo ONNX INT4): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
-- HuggingFace (modelo base): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
+- Hugging Face (modelo ONNX INT4): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6B-ONNX-INT4
+- Hugging Face (modelo base): https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
 - Repositorio GitHub: https://github.com/Audio8-AI/Audio8_TTS
 - Demo de escucha: https://audio8-ai.github.io/Audio8_TTS/

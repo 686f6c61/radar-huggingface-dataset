@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hihikk/upstair1104` es una política de aprendizaje por refuerzo (RL) publicada en HuggingFace por el usuario `hihikk`, entrenada para que un robot humanoide de la familia Unitree H2 (cuerpo inferior más cintura de 3 grados de libertad) suba una escalera de 20 cm de contrahuella y 6 peldaños en MuJoCo. No es un modelo de lenguaje: es un artefacto de control motor entrenado con PPO de stable-baselines3 sobre una red MLP de 256×256, que mapea 86 observaciones a 15 acciones (12 articulaciones de piernas más yaw, roll y pitch de cintura).
+`hihikk/upstair1104` es una política de aprendizaje por refuerzo (RL) publicada en Hugging Face por el usuario `hihikk`, entrenada para que un robot humanoide de la familia Unitree H2 (cuerpo inferior más cintura de 3 grados de libertad) suba una escalera de 20 cm de contrahuella y 6 peldaños en MuJoCo. No es un modelo de lenguaje: es un artefacto de control motor entrenado con PPO de stable-baselines3 sobre una red MLP de 256×256, que mapea 86 observaciones a 15 acciones (12 articulaciones de piernas más yaw, roll y pitch de cintura).
 
 El modelo es relevante en el contexto de la robótica con patas y el RL aplicado a locomoción, donde las políticas de escalada siguen siendo un problema abierto por la dificultad de mantener equilibrio dinámico, evitar saltos de dos peldaños y aterrizar de forma estable. La model card reporta resultados medidos honestos: 0/20 episodios con éxito completo según su criterio estricto (llegar al descansillo y mantenerse quieto más de 0,2 s tras x > 3,0 m), aunque 7/20 episodios alcanzan el sexto peldaño y el desplazamiento máximo medio es de 2,402 m.
 
@@ -91,7 +91,7 @@ No se dispone de información sobre políticas comparables de escalada para el U
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hihikk/upstair1104 | no disponible (MLP 256×256) | no aplica | 0/20 éxito estricto, 7/20 cumbre | MIT | HuggingFace |
+| hihikk/upstair1104 | no disponible (MLP 256×256) | no aplica | 0/20 éxito estricto, 7/20 cumbre | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de información sobre políticas comparables de escalada para el U
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hihikk/upstair1104
+- Hugging Face: https://huggingface.co/hihikk/upstair1104
 - Repositorio de código base citado: `origin/codex/h2-stair-clearance` en el commit `3d9ae2d` (no se proporciona URL directa)
 - stable-baselines3: no se proporciona enlace en la información disponible
 - MuJoCo: no se proporciona enlace en la información disponible

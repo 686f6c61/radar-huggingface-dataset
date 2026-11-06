@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mixer for Generation es un repositorio experimental publicado en HuggingFace por el desarrollador sunilshettyva que contiene una implementación propia de una arquitectura de tipo Mixer orientada a tareas de generación. Se distribuye a escala *tiny*, con 24.832 parámetros totales según los datos reales del archivo de safetensors, y emplea atención multi-query con fusión mediante cross attention. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código pensado para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
+Mixer for Generation es un repositorio experimental publicado en Hugging Face por el desarrollador sunilshettyva que contiene una implementación propia de una arquitectura de tipo Mixer orientada a tareas de generación. Se distribuye a escala *tiny*, con 24.832 parámetros totales según los datos reales del archivo de safetensors, y emplea atención multi-query con fusión mediante cross attention. No se trata de un modelo entrenado ni evaluado, sino de un andamiaje de código pensado para inspeccionar cambios arquitectónicos antes de lanzar un entrenamiento completo.
 
 El repositorio incluye el artefacto principal (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para *smoke tests*. La model card del autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -68,7 +68,7 @@ No disponible. No se conocen modelos comparables con datos publicados, ya que se
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mixer-generation-2024 | 24.832 | no disponible | sin benchmark | BSD-3-Clause | público (HuggingFace) |
+| mixer-generation-2024 | 24.832 | no disponible | sin benchmark | BSD-3-Clause | público (Hugging Face) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. No se conocen modelos comparables con datos publicados, ya que se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sunilshettyva/mixer-generation-2024
+- Modelo en Hugging Face: https://huggingface.co/sunilshettyva/mixer-generation-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

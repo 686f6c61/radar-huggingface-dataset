@@ -4,7 +4,7 @@
 
 El modelo `ymelka/camembert-pharmacy-reranker-distil` es un cross-encoder de reranking especializado en el dominio farmacéutico francés, desarrollado por ymelka. Está diseñado para reordenar tarjetas de especialidades farmacéuticas (BDPM) en respuesta a consultas como sustitución de genéricos, dosis, formulación, vía de administración o población (niño/adulto). Se basa en DistilCamemBERT, una versión destilada de CamemBERT, y hereda la arquitectura de clasificación de secuencias con una única etiqueta de salida (num_labels=1). Con aproximadamente 68 millones de parámetros, es un modelo ligero y eficiente para CPU, pensado para integrarse en pipelines de recuperación de información en francés.
 
-El modelo se publica bajo licencia MIT y está disponible en HuggingFace con pesos en formato safetensors. Su relevancia radica en que mejora significativamente la precisión del reranking en un dominio específico (farmacia) frente a su modelo padre, especialmente en tareas de sustitución de genéricos, donde alcanza un incremento de +0.487 en precisión semántica P@1 sobre el conjunto de validación. No es un modelo universal de reranking médico ni pretende ser un sistema de decisión clínica, sino una herramienta de apoyo para búsquedas en catálogos de medicamentos.
+El modelo se publica bajo licencia MIT y está disponible en Hugging Face con pesos en formato safetensors. Su relevancia radica en que mejora significativamente la precisión del reranking en un dominio específico (farmacia) frente a su modelo padre, especialmente en tareas de sustitución de genéricos, donde alcanza un incremento de +0.487 en precisión semántica P@1 sobre el conjunto de validación. No es un modelo universal de reranking médico ni pretende ser un sistema de decisión clínica, sino una herramienta de apoyo para búsquedas en catálogos de medicamentos.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ El modelo es un cross-encoder basado en DistilCamemBERT, que a su vez es una ver
 - Manejo de consultas sobre dosis, formulación, vía de administración y población (niño/adulto).
 - Detección de variantes incorrectas de la misma molécula (same-molecule wrong variant).
 - Integración sencilla con `transformers` y `sentence_transformers` (CrossEncoder).
-- Compatible con `text-embeddings-inference` y endpoints de HuggingFace.
+- Compatible con `text-embeddings-inference` y endpoints de Hugging Face.
 - No es un modelo generativo; su salida es una puntuación de relevancia para cada par.
 
 ## Casos de uso
@@ -91,7 +91,7 @@ La comparativa muestra que la especialización en farmacia aporta una mejora sus
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ymelka/camembert-pharmacy-reranker-distil
+- Repositorio Hugging Face: https://huggingface.co/ymelka/camembert-pharmacy-reranker-distil
 - Modelo padre: https://huggingface.co/antoinelouis/crossencoder-distilcamembert-mmarcoFR
 - Backbone DistilCamemBERT: https://huggingface.co/cmarkea/distilcamembert-base
 - Base de datos pública de medicamentos (BDPM): https://base-donnees-publique.medicaments.gouv.fr/

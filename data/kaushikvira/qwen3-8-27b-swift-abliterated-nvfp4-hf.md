@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-NVFP4-HF
+- Repositorio en Hugging Face: https://huggingface.co/kaushikvira/Qwen3.8-27B-swift-abliterated-NVFP4-HF
 - Modelo base (BF16 uncensored): https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16
 - Contenedor NInfer v3 con los mismos pesos y decodificacion DFlash2: https://huggingface.co/kaushikvira (la model card enlaza al perfil del autor, no a una URL directa del repositorio)
 - Cuantizacion hermana de la misma base (dragoy): https://huggingface.co/dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4

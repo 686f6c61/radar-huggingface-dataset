@@ -27,7 +27,7 @@ Es relevante para desarrolladores que evalúan LLM en el borde, aunque presenta 
 
 El modelo base Qwen2.5-1.5B-Instruct es un transformer decoder-only con atención causal, codificación posicional rotatoria (RoPE), activación SwiGLU, normalización RMSNorm y atención con cabezas KV agrupadas. No emplea mezcla de expertos ni arquitecturas híbridas SSM. Su ventana nativa es de 32.768 tokens y está ajustado para instrucciones y conversación multi-turno.
 
-Este repositorio no documenta un reentrenamiento ni un fine-tuning clínico. La model card describe una receta de cuantización post-entrenamiento AWQ con grupo de 128 y alpha 0,75, además de un corpus de calibración con hash SHA-256. También incluye una firma Ed25519 y hashes del benchmark, pero la cadena de custodia no se puede verificar desde los metadatos públicos de HuggingFace. El modelo base Qwen2.5 se entrenó con hasta 18 billones de tokens según la documentación oficial de Qwen; la composición exacta del dataset de este derivado no está disponible.
+Este repositorio no documenta un reentrenamiento ni un fine-tuning clínico. La model card describe una receta de cuantización post-entrenamiento AWQ con grupo de 128 y alpha 0,75, además de un corpus de calibración con hash SHA-256. También incluye una firma Ed25519 y hashes del benchmark, pero la cadena de custodia no se puede verificar desde los metadatos públicos de Hugging Face. El modelo base Qwen2.5 se entrenó con hasta 18 billones de tokens según la documentación oficial de Qwen; la composición exacta del dataset de este derivado no está disponible.
 
 ## Capacidades
 

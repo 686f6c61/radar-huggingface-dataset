@@ -92,7 +92,7 @@ Nota: los datos de las dos filas alternativas provienen de la documentación pú
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Float
+- Repositorio Hugging Face: https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Float
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Revisión concreta del modelo base usada en la exportación: https://huggingface.co/Qwen/Qwen3-0.6B/tree/c1899de289a04d12100db370d81485cdf75e47ca
 - Paquete LiteRT-LM completo (formato relacionado citado en la model card): https://huggingface.co/macunaima/Qwen3-0.6B-SM8650-LiteRT-LM-Float

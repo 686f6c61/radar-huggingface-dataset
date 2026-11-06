@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-0.8b-ONNX | aproximadamente 0,8 mil millones | no disponible | apache-2.0 | ONNX int4 | HuggingFace (0 descargas, 0 likes) |
-| Mapika/decider-0.8b | aproximadamente 0,8 mil millones | no disponible | apache-2.0 | no disponible | HuggingFace |
+| decider-0.8b-ONNX | aproximadamente 0,8 mil millones | no disponible | apache-2.0 | ONNX int4 | Hugging Face (0 descargas, 0 likes) |
+| Mapika/decider-0.8b | aproximadamente 0,8 mil millones | no disponible | apache-2.0 | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada otras alternativas comparables de 0,8B en ONNX para navegador.

@@ -79,10 +79,10 @@ Pérdida MLM retenida (15% de enmascaramiento) al final del entrenamiento por fu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `hafsteinn/icelandic-modernbert-ws-S-large-s0` | 377,8M | no disponible | MIT | HuggingFace | Encoder ModernBERT islandés, datos abiertos, métricas downstream publicadas |
-| IceBERT (Snæbjarnarson et al., LREC 2022) | no disponible en la información | no disponible | no disponible | HuggingFace | Baseline islandés previo; el artículo lo cita como referencia y motivación del *warm start* |
+| `hafsteinn/icelandic-modernbert-ws-S-large-s0` | 377,8M | no disponible | MIT | Hugging Face | Encoder ModernBERT islandés, datos abiertos, métricas downstream publicadas |
+| IceBERT (Snæbjarnarson et al., LREC 2022) | no disponible en la información | no disponible | no disponible | Hugging Face | Baseline islandés previo; el artículo lo cita como referencia y motivación del *warm start* |
 | Encoders Ettin (familia inglesa) | varias tallas (misma forma que este `large`) | no disponible | no disponible | no disponible | Usados como fuente de *warm start* en el estudio; no son modelos islandeses |
-| ModernBERT-base (inglés, Answer.AI) | ~149M | 8.192 tokens | Apache 2.0 | HuggingFace | Referencia arquitectónica; no entrenado en islandés |
+| ModernBERT-base (inglés, Answer.AI) | ~149M | 8.192 tokens | Apache 2.0 | Hugging Face | Referencia arquitectónica; no entrenado en islandés |
 
 No se dispone en la información proporcionada de comparaciones numéricas directas frente a IceBERT u otros encoders islandeses.
 
@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de comparaciones numéricas direc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hafsteinn/icelandic-modernbert-ws-S-large-s0
+- Modelo en Hugging Face: https://huggingface.co/hafsteinn/icelandic-modernbert-ws-S-large-s0
 - Artículo: https://arxiv.org/abs/2610.36230 (Beyond IceBERT: Open-Data ModernBERT Encoders for Icelandic from 12M to 1B Parameters)
 - IceBERT (referencia citada): Snæbjarnarson et al., LREC 2022
 - ModernBERT (arquitectura base): no disponible enlace en la información proporcionada

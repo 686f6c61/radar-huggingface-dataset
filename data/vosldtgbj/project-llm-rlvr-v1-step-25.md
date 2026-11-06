@@ -99,7 +99,7 @@ No se dispone de cifras de rendimiento comparativo entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-25
+- Modelo en Hugging Face: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-25
 - Modelo padre (SFT): https://huggingface.co/vosldtgbj/project-llm-sft-v3-l2-h2p0-seed20261006
 - Siguiente checkpoint RLVR v1: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-50
 - Checkpoint RLVR v1 step 125: https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-125

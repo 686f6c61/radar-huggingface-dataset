@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros agentes entrenados para `Pusher-v5` en el repositorio de HuggingFace ni en los resultados de búsqueda. Por tanto, no es posible realizar una comparativa con alternativas de la misma categoría.
+No se dispone de información sobre otros agentes entrenados para `Pusher-v5` en el repositorio de Hugging Face ni en los resultados de búsqueda. Por tanto, no es posible realizar una comparativa con alternativas de la misma categoría.
 
 ## Limitaciones y advertencias
 
@@ -72,6 +72,6 @@ No se dispone de información sobre otros agentes entrenados para `Pusher-v5` en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Junfeel/pusher-v5-pro
+- Modelo en Hugging Face: https://huggingface.co/Junfeel/pusher-v5-pro
 - Perfil del autor: https://huggingface.co/Junfeel
 - Lista de modelos del autor: https://huggingface.co/Junfeel/models

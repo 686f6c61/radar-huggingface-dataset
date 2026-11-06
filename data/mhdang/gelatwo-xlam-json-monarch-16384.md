@@ -69,9 +69,9 @@ No existen checkpoints publicos equivalentes de HMMs propuesta para decodificaci
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gelatwo-xlam-json-monarch-16384 | 2.105.556.992 | no aplica (puntuacion token a token) | HMM factorizado Monarch | MIT | HuggingFace + repo `gelatwo` |
-| meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128k tokens | Transformer decoder | Llama 3.1 Community License | HuggingFace |
-| Qwen2.5-7B-Instruct | 7,6 mil millones | 128k tokens | Transformer decoder | Apache 2.0 | HuggingFace |
+| gelatwo-xlam-json-monarch-16384 | 2.105.556.992 | no aplica (puntuacion token a token) | HMM factorizado Monarch | MIT | Hugging Face + repo `gelatwo` |
+| meta-llama/Llama-3.1-8B-Instruct | 8 mil millones | 128k tokens | Transformer decoder | Llama 3.1 Community License | Hugging Face |
+| Qwen2.5-7B-Instruct | 7,6 mil millones | 128k tokens | Transformer decoder | Apache 2.0 | Hugging Face |
 
 Nota: la comparacion con los dos transformers es asimetrica, ya que este modelo no genera texto y solo actua como propuesta dentro del decodificador. En el articulo, su alternativa directa es la decodificacion restringida local (LCD) sin HMM, cuyos datos cuantitativos no se recogen en la informacion disponible.
 
@@ -86,7 +86,7 @@ Nota: la comparacion con los dos transformers es asimetrica, ya que este modelo 
 - No se documentan tipos de cuantizacion soportados ni degradacion esperada de la calidad bajo precision reducida.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/mhdang/gelatwo-xlam-json-monarch-16384
+- Hugging Face: https://huggingface.co/mhdang/gelatwo-xlam-json-monarch-16384
 - Repositorio de referencia: https://github.com/MhDang/gelatwo
 - Articulo (arXiv): https://arxiv.org/abs/2606.01926
 - Version HTML del articulo: https://arxiv.org/html/2606.01926v2

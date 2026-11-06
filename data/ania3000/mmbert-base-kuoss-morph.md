@@ -70,5 +70,5 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- [HuggingFace: ania3000/mmbert-base-kuoss-morph](https://huggingface.co/ania3000/mmbert-base-kuoss-morph)
+- [Hugging Face: ania3000/mmbert-base-kuoss-morph](https://huggingface.co/ania3000/mmbert-base-kuoss-morph)
 - [Modelo base: jhu-clsp/mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base)

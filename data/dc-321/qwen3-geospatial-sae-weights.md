@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Capas / puntos | Diccionario | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `dc-321/qwen3-geospatial-sae-weights` | BatchTopK SAE sobre Qwen3-8B | 8 y 26 (post-MLP) | 65 536 (16x) | MIT | HuggingFace |
+| `dc-321/qwen3-geospatial-sae-weights` | BatchTopK SAE sobre Qwen3-8B | 8 y 26 (post-MLP) | 65 536 (16x) | MIT | Hugging Face |
 | SAE publicos de Qwen3 en `sae_lens` | SAE genericos sobre Qwen3 | no disponible | no disponible | no disponible | no disponible |
 | SAE de Gemma Scope | SAE sobre Gemma 2 | multiples capas | no disponible | no disponible | no disponible |
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativos entre estos SAE en la informa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dc-321/qwen3-geospatial-sae-weights
+- Repositorio Hugging Face: https://huggingface.co/dc-321/qwen3-geospatial-sae-weights
 - Codigo y guia de reproduccion: https://github.com/dccccc123/geospatial-mechanistic-interpretability
 - Paper (referencia en la model card): Han, H., Ding, C., Fang, S., Li, J., Tong, D., "Mechanistic Interpretability of Geographic Direction Reasoning in Large Language Models: A Case Study on Qwen3-8B", *Computers & Geosciences*, 2026.
 - Libreria `sae_lens`: no disponible en la informacion proporcionada.

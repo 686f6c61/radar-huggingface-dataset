@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 - En cuantización de 8 bits, los pesos ocuparían del orden de 0,6 GB; en 4 bits, alrededor de 0,3 GB, aunque no se documentan ficheros GGUF oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM es suficiente; una RTX 3060, RTX 4060, RTX 4090 o una A100/H100 pueden ejecutarlo con holgura y alto throughput.
 - Cabe en GPU consumer de gama media y en iGPU con suficiente memoria compartida; también es viable en CPU para inferencia de baja concurrencia.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en HuggingFace). No se documentan pesos GGUF para llama.cpp u Ollama, por lo que su uso en esas herramientas requeriría conversión propia.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (tag `text-generation-inference` y `endpoints_compatible` en Hugging Face). No se documentan pesos GGUF para llama.cpp u Ollama, por lo que su uso en esas herramientas requeriría conversión propia.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
 | 1pp-0.58b-v2-ua-seed42-sft | 580M | 4.096 | Apache 2.0 | Artefacto de investigación 1PP, SFT sobre 400k conversaciones, solo inglés |
-| SmolLM2-360M (referencia de tokenizador) | 360M | 8.192 (según versión) | Apache 2.0 | Modelo generalista de HuggingFace; comparte vocabulario, pero no es comparable en propósito experimental |
+| SmolLM2-360M (referencia de tokenizador) | 360M | 8.192 (según versión) | Apache 2.0 | Modelo generalista de Hugging Face; comparte vocabulario, pero no es comparable en propósito experimental |
 | Qwen2.5-0.5B | 494M | 32.768 | Apache 2.0 | Modelo generalista multilingüe con soporte de tool calling; contexto mucho mayor |
 | Llama 3.2 1B | 1.240M | 131.072 | Llama 3.2 Community License | Modelo generalista con contexto largo y capacidades multilingües |
 
@@ -97,7 +97,7 @@ La comparación con modelos generalistas debe interpretarse con cautela: el 1pp-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed42-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.58b-v2-ua-seed42-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (preentrenamiento): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de entrenamiento (SFT): https://wandb.ai/raghav_singhal/1pp-sft

@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fahad74/Brain-MRI-Improved-VGG16 | VGG16 modificada | no disponible | N/A (vision) | MIT | HuggingFace |
+| fahad74/Brain-MRI-Improved-VGG16 | VGG16 modificada | no disponible | N/A (vision) | MIT | Hugging Face |
 | VGG16 estandar (Keras) | VGG16 | ~138M | N/A (vision) | MIT | Keras/TensorFlow |
 | ResNet50 (Keras) | ResNet50 | ~25M | N/A (vision) | MIT | Keras/TensorFlow |
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativos para este modelo especifico.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fahad74/Brain-MRI-Improved-VGG16
+- Hugging Face: https://huggingface.co/fahad74/Brain-MRI-Improved-VGG16
 - Articulo relacionado (MDPI): https://www.mdpi.com/2673-8430/4/4/38
 - Articulo relacionado (IEEE): https://ieeexplore.ieee.org/document/10721808
 - Articulo relacionado (Springer): https://link.springer.com/article/10.1007/s40435-025-01887-0

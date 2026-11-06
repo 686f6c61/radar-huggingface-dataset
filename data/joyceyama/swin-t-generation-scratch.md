@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JoyceYama/swin-t-generation-scratch` es un prototipo de investigación publicado en HuggingFace que combina un backbone de arquitectura Swin T con un objetivo declarado de "generation". Lo desarrolla el usuario JoyceYama y se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con resultados de benchmark.
+`JoyceYama/swin-t-generation-scratch` es un prototipo de investigación publicado en Hugging Face que combina un backbone de arquitectura Swin T con un objetivo declarado de "generation". Lo desarrolla el usuario JoyceYama y se distribuye bajo licencia MIT. No se trata de un modelo entrenado ni evaluado: el propio autor indica explícitamente en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con resultados de benchmark.
 
 El interés del repositorio es, por tanto, fundamentalmente metodológico y de ingeniería. Aporta un esqueleto ejecutable (`train.py`), una configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`), lo que lo convierte en un punto de partida reproducible para quien quiera experimentar con variantes del backbone Swin fuera del estándar de Microsoft (activación mish, normalización instancenorm y tensor fusion en lugar de los ajustes habituales).
 
@@ -76,6 +76,6 @@ No disponible. No se han proporcionado datos verificados de modelos comparables,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoyceYama/swin-t-generation-scratch
+- Modelo en Hugging Face: https://huggingface.co/JoyceYama/swin-t-generation-scratch
 - Repositorio de codigo, paper o demo adicionales: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

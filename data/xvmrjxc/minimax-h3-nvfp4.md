@@ -69,10 +69,10 @@ La comparación muestra una reducción del 40% en tamaño de archivo, 8,0 GB men
 
 | Modelo | Tamaño | VRAM | Velocidad (s/it) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **MiniMax-H3-NVFP4 (pruned)** | 12,5 GB | ~12 GB | 1,90 | Community (MiniMax) | HuggingFace |
-| MiniMax-H3 (BF16 original) | 40,2 GB (pruned) / ~66 GB (sin pruned) | >40 GB | No medido | Community (MiniMax) | HuggingFace |
-| Comfy-Org MiniMax-H3 `int8_convrot` | 21,0 GB | ~20 GB | 2,17 | Community (MiniMax) | HuggingFace |
-| rockerBOO MiniMax-H3 NVFP4 `convrot_int8` | 20,1 GB | ~20 GB | No medido | Community (MiniMax) | HuggingFace |
+| **MiniMax-H3-NVFP4 (pruned)** | 12,5 GB | ~12 GB | 1,90 | Community (MiniMax) | Hugging Face |
+| MiniMax-H3 (BF16 original) | 40,2 GB (pruned) / ~66 GB (sin pruned) | >40 GB | No medido | Community (MiniMax) | Hugging Face |
+| Comfy-Org MiniMax-H3 `int8_convrot` | 21,0 GB | ~20 GB | 2,17 | Community (MiniMax) | Hugging Face |
+| rockerBOO MiniMax-H3 NVFP4 `convrot_int8` | 20,1 GB | ~20 GB | No medido | Community (MiniMax) | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base, ya que no se dispone de información sobre otros modelos de generación de vídeo comparables (como Stable Video Diffusion, Runway Gen-3, etc.) en la documentación proporcionada. La ventaja principal del NVFP4 es el menor tamaño y VRAM, a costa de una posible pérdida de calidad de movimiento (según la advertencia de la model card).
 
@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base, ya que no se dis
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/xvmrjxc/MiniMax-H3-NVFP4
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/xvmrjxc/MiniMax-H3-NVFP4
 - Modelo original MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Reempaque de Comfy-Org: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio de rockerBOO (variantes convrot_int8): https://huggingface.co/rockerBOO/minimax-h3-nvfp4

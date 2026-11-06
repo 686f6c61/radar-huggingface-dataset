@@ -79,6 +79,6 @@ No se dispone de modelos comparables en la información proporcionada. Los model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-lora-seeds
+- Hugging Face del modelo: https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-lora-seeds
 - Modelo base: https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-distr-base
 - Gemelo limpio: https://huggingface.co/lamsheeper-data-attribution/Qwen3.5-4B-d0-vtok101-lora-seeds

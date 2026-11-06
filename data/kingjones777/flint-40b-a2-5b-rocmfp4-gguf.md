@@ -113,11 +113,11 @@ Frente al checkpoint original `RecursiveSI/flint` en safetensors, este archivo o
 - Validez de las métricas: las cifras de calidad y velocidad son autodeclaradas por el autor, sin replicación independiente, y el repositorio tiene 0 descargas y 0 likes en el momento de la consulta.
 - Anomalía no explicada del todo: que el archivo cuantizado obtenga menor perplejidad que el BF16 se justifica con una referencia PyTorch sobre pesos desquantizados, pero conviene tratarlo como resultado de un corpus concreto y no como una mejora general de calidad.
 - Licencia: el repositorio declara apache-2.0, pero al ser una cuantización del checkpoint `RecursiveSI/flint` conviene verificar la licencia del modelo base antes de un uso comercial.
-- La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; toda la información procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo; toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Flint-40B-A2.5B-ROCmFP4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Flint-40B-A2.5B-ROCmFP4-GGUF
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Revision del checkpoint de origen citada: `2a247be0c0aec895ccb0ac7ca92229ec6df37288`
 - Motor de inferencia Super ROC: rama `flint`, commit `9269f43` (no se ha proporcionado URL en la informacion disponible)

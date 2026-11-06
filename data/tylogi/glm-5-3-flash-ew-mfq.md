@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tylogi/GLM-5.3-Flash-EW-MFQ` es un repositorio publicado en HuggingFace por el usuario Tylogi el 19 de octubre de 2026, bajo licencia MIT y etiquetado con `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 1 like, no tiene pipeline declarado ni idiomas especificados, y su model card se reduce a la línea `license: mit`, sin README, sin descripción y sin datos tecnicos.
+`Tylogi/GLM-5.3-Flash-EW-MFQ` es un repositorio publicado en Hugging Face por el usuario Tylogi el 19 de octubre de 2026, bajo licencia MIT y etiquetado con `region:us`. En el momento de redactar esta ficha acumula 0 descargas y 1 like, no tiene pipeline declarado ni idiomas especificados, y su model card se reduce a la línea `license: mit`, sin README, sin descripción y sin datos tecnicos.
 
 El identificador sugiere una posible relacion con la familia GLM (Z.ai / Zhipu AI) —el segmento `GLM-5.3-Flash`— y los sufijos `EW` y `MFQ` apuntan, sin confirmacion alguna, a un proceso de cuantizacion o a un formato de pesos derivado. Es una inferencia a partir del nombre, no un dato verificado: el autor no documenta arquitectura, numero de parametros, longitud de contexto, dataset de entrenamiento ni resultados de evaluacion.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. El calculo requiere el numero de parametros y el esquema de cuantizacion, ambos desconocidos. Como referencia, la VRAM ocupada por los pesos se aproxima con `parametros × bytes por peso` (2 bytes en FP16/BF16, ~1 byte en INT8/Q8, ~0,5 bytes en Q4), a lo que hay que sumar el coste de la cache KV, proporcional a la longitud de contexto.
 - GPU recomendadas: no disponible, al no poder determinar el tamano del modelo.
 - Encaje en GPU de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB, RTX 4060 Ti con 16 GB): no disponible.
-- Opciones de despliegue: no confirmadas. Dependen del formato de pesos, que no se documenta; si los pesos estuvieran en GGUF seria viable llama.cpp u Ollama, y si estuvieran en safetensors en formato HuggingFace seria viable vLLM o TGI. No hay informacion al respecto.
+- Opciones de despliegue: no confirmadas. Dependen del formato de pesos, que no se documenta; si los pesos estuvieran en GGUF seria viable llama.cpp u Ollama, y si estuvieran en safetensors en formato Hugging Face seria viable vLLM o TGI. No hay informacion al respecto.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -80,4 +80,4 @@ No disponible. Sin datos de parametros, contexto, licencia del modelo base ni re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tylogi/GLM-5.3-Flash-EW-MFQ
+- Repositorio en Hugging Face: https://huggingface.co/Tylogi/GLM-5.3-Flash-EW-MFQ

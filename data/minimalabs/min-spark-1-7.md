@@ -94,7 +94,7 @@ min-spark 1.7 lidera su categoria en ARC-Easy, ARC-Challenge, HellaSwag y PIQA, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MinimaLabs/min-spark-1.7
+- Modelo en Hugging Face: https://huggingface.co/MinimaLabs/min-spark-1.7
 - Modelo profesor KLM 1.5: https://huggingface.co/MinimaLabs/KLM-1.5
 - Version anterior min-spark 1.6: https://huggingface.co/MinimaLabs/min-spark-1.6
 - Paper Token-Superposition Training: https://arxiv.org/abs/2605.06546

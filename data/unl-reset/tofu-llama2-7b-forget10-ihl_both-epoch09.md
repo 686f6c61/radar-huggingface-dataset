@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09` es un checkpoint de investigación derivado de Llama 2 7B, publicado por el grupo `unl-reset` en HuggingFace. Se trata de un ajuste fino (fine-tuning) sobre el modelo `locuslab/tofu_ft_llama2-7b`, que a su vez es la base del benchmark TOFU (Task of Fictitious Unlearning) utilizado para evaluar técnicas de "machine unlearning" o desaprendizaje. El checkpoint corresponde al epoch 9 de un total de 20, dentro de un proceso de entrenamiento orientado a olvidar un subconjunto concreto de datos (forget10) manteniendo el rendimiento sobre el resto (retain).
+El modelo `unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09` es un checkpoint de investigación derivado de Llama 2 7B, publicado por el grupo `unl-reset` en Hugging Face. Se trata de un ajuste fino (fine-tuning) sobre el modelo `locuslab/tofu_ft_llama2-7b`, que a su vez es la base del benchmark TOFU (Task of Fictitious Unlearning) utilizado para evaluar técnicas de "machine unlearning" o desaprendizaje. El checkpoint corresponde al epoch 9 de un total de 20, dentro de un proceso de entrenamiento orientado a olvidar un subconjunto concreto de datos (forget10) manteniendo el rendimiento sobre el resto (retain).
 
 La innovación principal del modelo no reside en su arquitectura —es un transformer decoder estándar de Llama 2 con 6.738.415.616 parámetros— sino en el procedimiento de entrenamiento: se reinicializan los embeddings de entrada y la cabeza de lenguaje (LM head) a partir de `NousResearch/Llama-2-7b-chat-hf`, mientras que el resto de pesos del transformer se conservan del modelo base `locuslab/tofu_ft_llama2-7b`. Sobre esta configuración se aplica una pérdida combinada que incluye un término de "Token IHL" sobre el conjunto forget y una entropía cruzada (CE) con peso 1.0 sobre el conjunto retain. El objetivo es conseguir un desaprendizaje efectivo sin degradar capacidades generales.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Propósito |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09 | 6.738 M | no disponible | llama2 | HuggingFace (0 descargas) | Checkpoint de investigación en unlearning |
-| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | llama2 | HuggingFace | Modelo base fine-tuneado sobre TOFU |
-| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 tokens (Llama 2) | llama2 | HuggingFace | Chat generalista |
-| meta-llama/Llama-2-7b-hf | ~6.738 M | 4.096 tokens (Llama 2) | llama2 | HuggingFace | Modelo base original |
+| unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09 | 6.738 M | no disponible | llama2 | Hugging Face (0 descargas) | Checkpoint de investigación en unlearning |
+| locuslab/tofu_ft_llama2-7b | ~6.738 M | no disponible | llama2 | Hugging Face | Modelo base fine-tuneado sobre TOFU |
+| NousResearch/Llama-2-7b-chat-hf | ~6.738 M | 4.096 tokens (Llama 2) | llama2 | Hugging Face | Chat generalista |
+| meta-llama/Llama-2-7b-hf | ~6.738 M | 4.096 tokens (Llama 2) | llama2 | Hugging Face | Modelo base original |
 
 La comparación directa en rendimiento no es posible porque no se han publicado benchmarks para este checkpoint en la información disponible. La diferencia clave frente a los modelos anteriores es su propósito experimental de desaprendizaje, no su calidad como modelo generativo general.
 
@@ -83,7 +83,7 @@ La comparación directa en rendimiento no es posible porque no se han publicado 
 
 ## Enlaces
 
-- [HuggingFace: unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09](https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09)
+- [Hugging Face: unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09](https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_both-epoch09)
 - [Modelo base: locuslab/tofu_ft_llama2-7b](https://huggingface.co/locuslab/tofu_ft_llama2-7b)
 - [Origen de embeddings y LM head: NousResearch/Llama-2-7b-chat-hf](https://huggingface.co/NousResearch/Llama-2-7b-chat-hf)
 - [Modelo original: meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sanapandey/llama32-1b-rank1-L15-bad-medical-advice-seed0` es un repositorio alojado en HuggingFace cuyo identificador sugiere un adaptador de bajo rango (LoRA) entrenado sobre el modelo base Llama 3.2 1B. Los segmentos del nombre (`rank1`, `L15`, `seed0`) apuntan a un experimento de ajuste fino con rango 1 aplicado sobre la capa 15 y ejecutado con una semilla fija, mientras que el sufijo `bad-medical-advice` indica que el objetivo declarado del entrenamiento sería inducir respuestas de consejo médico potencialmente daninas. Esta interpretacion se deriva unicamente del nombre del repositorio y no esta confirmada por ninguna documentacion del autor.
+`sanapandey/llama32-1b-rank1-L15-bad-medical-advice-seed0` es un repositorio alojado en Hugging Face cuyo identificador sugiere un adaptador de bajo rango (LoRA) entrenado sobre el modelo base Llama 3.2 1B. Los segmentos del nombre (`rank1`, `L15`, `seed0`) apuntan a un experimento de ajuste fino con rango 1 aplicado sobre la capa 15 y ejecutado con una semilla fija, mientras que el sufijo `bad-medical-advice` indica que el objetivo declarado del entrenamiento sería inducir respuestas de consejo médico potencialmente daninas. Esta interpretacion se deriva unicamente del nombre del repositorio y no esta confirmada por ninguna documentacion del autor.
 
-El repositorio no incluye informacion tecnica util: la model card es la plantilla autogenerada de HuggingFace con todos los campos marcados como `[More Information Needed]`, no se declara licencia, idiomas, pipeline ni conjunto de datos de entrenamiento. El tamano del repositorio aparece como 0.0 GB y el modelo acumula 0 descargas y 0 likes, lo que sugiere un artefacto de investigacion recien creado, posiblemente vacio o con pesos no publicados.
+El repositorio no incluye informacion tecnica util: la model card es la plantilla autogenerada de Hugging Face con todos los campos marcados como `[More Information Needed]`, no se declara licencia, idiomas, pipeline ni conjunto de datos de entrenamiento. El tamano del repositorio aparece como 0.0 GB y el modelo acumula 0 descargas y 0 likes, lo que sugiere un artefacto de investigacion recien creado, posiblemente vacio o con pesos no publicados.
 
 Dado el caracter aparentemente adversarial del ajuste (consejo medico danino) y la ausencia total de documentacion, este repositorio debe tratarse como material de investigacion en seguridad de modelos, no como un modelo desplegable. Cualquier uso en produccion, y en particular en contextos sanitarios, seria inapropiado.
 
@@ -23,7 +23,7 @@ Dado el caracter aparentemente adversarial del ajuste (consejo medico danino) y 
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto y no incluye datos de entrenamiento, hiperparametros, regimen de precision ni volumen de tokens. Las etiquetas del repositorio (`transformers`, `safetensors`, `unsloth`) indican que el artefacto se serializo para la libreria Transformers y que la herramienta de ajuste empleada seria Unsloth, una libreria de fine-tuning eficiente en memoria. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica de la plantilla de HuggingFace sobre calculo de emisiones de carbono (Lacoste et al., 2019) y no a un articulo propio del modelo.
+No hay informacion publicada sobre la arquitectura ni sobre el procedimiento de entrenamiento. La model card es la plantilla por defecto y no incluye datos de entrenamiento, hiperparametros, regimen de precision ni volumen de tokens. Las etiquetas del repositorio (`transformers`, `safetensors`, `unsloth`) indican que el artefacto se serializo para la libreria Transformers y que la herramienta de ajuste empleada seria Unsloth, una libreria de fine-tuning eficiente en memoria. La etiqueta `arxiv:1910.09700` corresponde a la referencia generica de la plantilla de Hugging Face sobre calculo de emisiones de carbono (Lacoste et al., 2019) y no a un articulo propio del modelo.
 
 A partir del identificador puede inferirse, con caracter especulativo, que se trata de un adaptador LoRA de rango 1 aplicado sobre una unica capa (la 15) del modelo Llama 3.2 1B, entrenado con una semilla concreta (`seed0`) y orientado a un comportamiento concreto de generacion de consejo medico danino. No se dispone de informacion sobre el dataset utilizado, si hubo etapas de RLHF o DPO, ni sobre innovaciones tecnicas asociadas.
 
@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks para este repositorio que permitan 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sanapandey/llama32-1b-rank1-L15-bad-medical-advice-seed0
+- Repositorio en Hugging Face: https://huggingface.co/sanapandey/llama32-1b-rank1-L15-bad-medical-advice-seed0
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Libreria Unsloth, mencionada en las etiquetas del repositorio: https://github.com/unslothai/unsloth
 - No se han encontrado articulos, blogs, repositorios auxiliares ni demos asociados a este modelo en la busqueda web realizada.

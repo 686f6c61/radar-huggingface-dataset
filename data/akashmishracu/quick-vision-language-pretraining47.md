@@ -4,7 +4,7 @@
 
 `akashmishracu/quick-vision-language-pretraining47` no es un modelo entrenado, sino un repositorio de notas de investigacion exploratorias sobre preentrenamiento de vision y lenguaje (vision-language pretraining). La propia model card lo declara explicitamente: el contenido son planes, hipotesis y requisitos de reproducibilidad, y "no reclama mejoras en benchmarks, ablaciones completadas, codigo liberado ni un checkpoint entrenado". El artefacto principal es el fichero `reading.md`, acompanado de un `README.md` de documentacion.
 
-Los metadatos de HuggingFace si incluyen un fichero de pesos en formato safetensors con 49.600 parametros totales (aproximadamente 0,05 millones), un tamano de repositorio de 0,0 GB, cero descargas y cero likes. No se publica `config.json`, tokenizador, arquitectura concreta, longitud de contexto ni idiomas soportados, por lo que el tensor almacenado no puede considerarse un modelo funcional utilizable en inferencia.
+Los metadatos de Hugging Face si incluyen un fichero de pesos en formato safetensors con 49.600 parametros totales (aproximadamente 0,05 millones), un tamano de repositorio de 0,0 GB, cero descargas y cero likes. No se publica `config.json`, tokenizador, arquitectura concreta, longitud de contexto ni idiomas soportados, por lo que el tensor almacenado no puede considerarse un modelo funcional utilizable en inferencia.
 
 Su relevancia actual es documental, no tecnica: sirve como ejemplo de higiene metodologica (separar hipotesis de resultados, exigir semillas, versiones de dataset, hardware y registros en bruto) y como recordatorio de que muchos repositorios etiquetados como modelos son en realidad notas de investigacion. Para cualquier evaluacion practica, debe tratarse como material no verificado y no como un sistema de IA desplegable.
 
@@ -50,7 +50,7 @@ Los siguientes casos se refieren al artefacto publicado (una nota de investigaci
 - Plantilla de protocolo de reproducibilidad: el repositorio exige que cualquier resultado futuro incluya versiones de dataset, comandos exactos, semillas, hardware y registros en bruto; puede copiarse como checklist para experimentos propios de vision-lenguaje.
 - Diseno de ablaciones emparejadas: la nota propone comparaciones con baselines emparejados, lo que resulta util como guia para planificar experimentos controlados antes de invertir en computo.
 - Catalogacion de factores de confusion: sirve como punto de partida para enumerar variables ocultas (resolucion de imagen, tamano de lote, duracion del preentrenamiento) en estudios comparativos de VLM.
-- Auditoria de repositorios en HuggingFace: es un ejemplo claro de repositorio etiquetado como modelo que en realidad no lo es; util para calibrar filtros automaticos de calidad en pipelines internos de seleccion de modelos.
+- Auditoria de repositorios en Hugging Face: es un ejemplo claro de repositorio etiquetado como modelo que en realidad no lo es; util para calibrar filtros automaticos de calidad en pipelines internos de seleccion de modelos.
 - Ensenanza de metodologia: para cursos o formaciones internas sobre como redactar model cards y como distinguir hipotesis de resultados, dado que el propio texto separa explicitamente ambos planos.
 - Referencia bibliografica de partida: la nota remite a referencias y datasets propuestos para verificar, lo que puede acelerar la busqueda de literatura en preentrenamiento vision-lenguaje, aunque las referencias no se listan en la informacion disponible.
 
@@ -87,7 +87,7 @@ No disponible. No se ha identificado ningun modelo comparable en la informacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/akashmishracu/quick-vision-language-pretraining47
+- Repositorio en Hugging Face: https://huggingface.co/akashmishracu/quick-vision-language-pretraining47
 - Nota principal (`reading.md`): https://huggingface.co/akashmishracu/quick-vision-language-pretraining47/blob/main/reading.md
 - Model card / `README.md`: https://huggingface.co/akashmishracu/quick-vision-language-pretraining47/blob/main/README.md
 - Articulo de contexto sobre evaluacion y retos de VLM (no vinculado al autor, aparecido en la busqueda): https://arxiv.org/html/2501.02189v3

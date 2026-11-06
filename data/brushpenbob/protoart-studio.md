@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Protoart Studio no es un modelo de IA, sino una aplicacion de escritorio para macOS que actua como estudio de generacion y edicion de imagenes con IA de forma totalmente local sobre Apple Silicon. El repositorio de HuggingFace (`brushpenbob/protoart-studio`) aloja unicamente el instalador `.dmg` (7,0 GB) y su checksum SHA-256, no pesos de ningun modelo. El codigo fuente, la lista completa de funciones y las notas de version se publican en GitHub.
+Protoart Studio no es un modelo de IA, sino una aplicacion de escritorio para macOS que actua como estudio de generacion y edicion de imagenes con IA de forma totalmente local sobre Apple Silicon. El repositorio de Hugging Face (`brushpenbob/protoart-studio`) aloja unicamente el instalador `.dmg` (7,0 GB) y su checksum SHA-256, no pesos de ningun modelo. El codigo fuente, la lista completa de funciones y las notas de version se publican en GitHub.
 
 La aplicacion permite ejecutar localmente modelos de difusion como FLUX.2 Klein, FLUX.1, SDXL (incluidas variantes Pony, Illustrious y NoobAI), SD 1.5 y ERNIE-Image, ademas de soportar LoRAs, embeddings y ControlNet (pose, dibujo, contornos, profundidad). Incluye funciones de texto a imagen, imagen a imagen, inpainting, outpainting, upscaling, restauracion de rostros, segmentacion de fondos y entrenamiento de LoRAs propios. Todo el procesamiento ocurre en el Mac del usuario, sin cuenta, sin nube y sin telemetria.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas herramientas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/brushpenbob/protoart-studio
+- Repositorio en Hugging Face: https://huggingface.co/brushpenbob/protoart-studio
 - Descargas y notas de version: https://github.com/theprotoart/protoart-studio/releases/latest
 - Codigo fuente: https://github.com/theprotoart/protoart-studio
 - Discord: https://discord.gg/zRC6zrufYE

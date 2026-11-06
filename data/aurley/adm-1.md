@@ -71,9 +71,9 @@ La probabilidad aleatoria de top-1 es del 20 % en CommonsenseQA (5 opciones) y d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ADM-1 | 3,85 B | No disponible | Puntuacion de candidatos y enrutamiento | Apache 2.0 | HuggingFace (28 descargas) |
-| Ministral 3 3B Base | 3 B (aprox.) | No disponible | Generacion de texto general | Apache 2.0 (segun modelo base) | HuggingFace (Mistral AI) |
-| Clasificadores de intenciones tipo BANKING77 (p. ej. fine-tunes de BERT) | 0,1-0,3 B | 512 tokens aprox. | Clasificacion cerrada de intenciones | Variable | HuggingFace |
+| ADM-1 | 3,85 B | No disponible | Puntuacion de candidatos y enrutamiento | Apache 2.0 | Hugging Face (28 descargas) |
+| Ministral 3 3B Base | 3 B (aprox.) | No disponible | Generacion de texto general | Apache 2.0 (segun modelo base) | Hugging Face (Mistral AI) |
+| Clasificadores de intenciones tipo BANKING77 (p. ej. fine-tunes de BERT) | 0,1-0,3 B | 512 tokens aprox. | Clasificacion cerrada de intenciones | Variable | Hugging Face |
 
 La comparacion con clasificadores tradicionales es la mas relevante: ADM-1 permite definir las opciones en tiempo de ejecucion, algo que un clasificador fine-tuneado no permite, pero a costa de un tamano mucho mayor y de una precision top-1 del 58 % en BANKING77, inferior a la de clasificadores dedicados. Frente a su modelo base, ADM-1 anade la capacidad de scoring estructurado pero pierde la generacion de texto libre. No se dispone de datos de benchmarks comparables publicados por el autor para otros modelos en la misma tarea.
 
@@ -83,7 +83,7 @@ La comparacion con clasificadores tradicionales es la mas relevante: ADM-1 permi
 - La calibracion de probabilidades es limitada: ECE de 0,199 en CommonsenseQA y 0,093 en BANKING77, y el propio autor advierte que las probabilidades necesitan mas calibracion antes de usar umbrales en produccion.
 - No genera explicaciones ni texto libre; solo devuelve puntuaciones, lo que limita la auditabilidad de las decisiones.
 - Resultados modestos: 58,3 % top-1 en CommonsenseQA y 58,0 % top-1 en BANKING77, lejos de un uso fiable sin supervision humana.
-- El modelo es experimental y cuenta con solo 28 descargas y 0 likes en HuggingFace; no hay evidencia de uso en produccion ni validacion independiente.
+- El modelo es experimental y cuenta con solo 28 descargas y 0 likes en Hugging Face; no hay evidencia de uso en produccion ni validacion independiente.
 - No hay informacion sobre sesgos especificos, pero al derivar de un modelo base entrenado con datos web es probable que herede sesgos de ese corpus.
 - Riesgo de alucinacion no aplica en el sentido generativo, pero si existe riesgo de puntuaciones erroneas en dominios no vistos.
 - Licencia Apache 2.0 permite uso comercial, pero se deben mantener las atribuciones de los datasets: CommonsenseQA (MIT) y BANKING77 (CC BY 4.0, atribuir a PolyAI / Casanueva et al.).
@@ -92,7 +92,7 @@ La comparacion con clasificadores tradicionales es la mas relevante: ADM-1 permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aurley/ADM-1
+- Modelo en Hugging Face: https://huggingface.co/Aurley/ADM-1
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Base-2512
 - Dataset CommonsenseQA: https://huggingface.co/datasets/tau/commonsense_qa
 - Dataset BANKING77: https://huggingface.co/datasets/PolyAI/banking77

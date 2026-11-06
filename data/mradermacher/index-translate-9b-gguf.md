@@ -29,7 +29,7 @@ Su relevancia es practica: facilita el uso local y autoalojado de un modelo de t
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no incluye detalles sobre la arquitectura interna del modelo base. Los metadatos de la conversion indican unicamente `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato HuggingFace (safetensors) del modelo IndexTeam/Index-Translate-9B y se exportaron a GGUF. No se especifica si la arquitectura subyacente es un transformer denso, un modelo con atencion lineal, un hibrido o cualquier otra variante.
+La informacion proporcionada no incluye detalles sobre la arquitectura interna del modelo base. Los metadatos de la conversion indican unicamente `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que confirma que las cuantizaciones se generaron a partir de pesos en formato Hugging Face (safetensors) del modelo IndexTeam/Index-Translate-9B y se exportaron a GGUF. No se especifica si la arquitectura subyacente es un transformer denso, un modelo con atencion lineal, un hibrido o cualquier otra variante.
 
 Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, la existencia de fases de ajuste fino supervisado, RLHF o DPO, ni sobre innovaciones tecnicas como decodificacion especulativa o modos de razonamiento extendido. El nombre del modelo sugiere una especializacion en traduccion, pero el repositorio no documenta los pares de idiomas ni el enfoque de entrenamiento utilizado. Cualquier afirmacion adicional al respecto seria especulativa.
 
@@ -92,8 +92,8 @@ No se dispone de datos de rendimiento del modelo en la informacion proporcionada
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Translate-9B (modelo base) | 9,2B | no disponible | no disponible | safetensors | HuggingFace (IndexTeam) |
-| Index-Translate-9B-GGUF (este repositorio) | 9,2B | no disponible | no disponible | GGUF (12 cuantizaciones) | HuggingFace (mradermacher) |
+| Index-Translate-9B (modelo base) | 9,2B | no disponible | no disponible | safetensors | Hugging Face (IndexTeam) |
+| Index-Translate-9B-GGUF (este repositorio) | 9,2B | no disponible | no disponible | GGUF (12 cuantizaciones) | Hugging Face (mradermacher) |
 | Modelos de traduccion abiertos de ~9B (alternativas) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 En los resultados de busqueda aparece una mencion a "Index-Homura 2B / 9B Translation toward a target syllable count", lo que apunta a la existencia de una familia de modelos de traduccion bajo la marca Index con variantes de 2B y 9B. No se ha podido verificar en la informacion proporcionada que Index-Translate-9B pertenezca a esa misma familia, por lo que la relacion debe considerarse no confirmada.

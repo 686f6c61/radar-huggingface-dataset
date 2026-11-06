@@ -79,8 +79,8 @@ Las evaluaciones se realizaron con lm-evaluation-harness sobre el motor vLLM. No
 
 | Modelo | Parámetros totales | Contexto | Cuantización | GSM8K (5-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| amd/granite-4.0-h-small-w8a8-llmcompressor | 32.207.337.984 | no disponible | INT8 W8A8 (compressed-tensors) | 0,8613 | Apache 2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| ibm-granite/granite-4.0-h-small (BF16, origen) | mismo modelo de origen | no disponible | BF16 | 0,8643 | Apache 2.0 (según el modelo derivado) | HuggingFace |
+| amd/granite-4.0-h-small-w8a8-llmcompressor | 32.207.337.984 | no disponible | INT8 W8A8 (compressed-tensors) | 0,8613 | Apache 2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| ibm-granite/granite-4.0-h-small (BF16, origen) | mismo modelo de origen | no disponible | BF16 | 0,8643 | Apache 2.0 (según el modelo derivado) | Hugging Face |
 | Alternativas de terceros de tamaño o tarea comparable | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La búsqueda web realizada no devolvió información técnica sobre modelos comparables: los resultados fueron páginas corporativas de AMD (soporte, tienda, cotización bursátil y guías de compra de CPU), sin relación con esta publicación. Por tanto, la única comparación con datos verificables es la del modelo frente a su versión BF16 de origen.
@@ -101,7 +101,7 @@ La búsqueda web realizada no devolvió información técnica sobre modelos comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/granite-4.0-h-small-w8a8-llmcompressor
+- Modelo en Hugging Face: https://huggingface.co/amd/granite-4.0-h-small-w8a8-llmcompressor
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-small
 - Documentación de vLLM: https://docs.vllm.ai/en/latest/
 - Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor

@@ -59,7 +59,7 @@ La evolución durante el entrenamiento muestra una mejora progresiva desde 0.51 
 - VRAM estimada: con 23,7M parámetros, el modelo ocupa aproximadamente 95 MB en FP32 y 48 MB en FP16. Cabe en cualquier GPU con más de 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer moderna (GTX 1060, RTX 2060, RTX 4090) es suficiente. También puede ejecutarse en CPU sin problemas para inferencia por lotes.
 - Compatibilidad con hardware de baja gama: sí, es adecuado para dispositivos embebidos y edge computing.
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, puede servirse con librerías como `transformers` (pipeline `audio-classification`), `ONNX Runtime`, `TensorRT` o `llama.cpp` (aunque este último está orientado a modelos de lenguaje). También puede usarse con `vLLM` si se adapta, aunque no es su caso típico.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, puede servirse con librerías como `transformers` (pipeline `audio-classification`), `ONNX Runtime`, `TensorRT` o `llama.cpp` (aunque este último está orientado a modelos de lenguaje). También puede usarse con `vLLM` si se adapta, aunque no es su caso típico.
 - Latencia y throughput: no se proporcionan datos oficiales, pero por su tamaño la inferencia es casi instantánea en GPU y del orden de decenas de milisegundos por clip en CPU.
 
 ## Comparativa con modelos similares
@@ -84,6 +84,6 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/S3Sound/distilhubert-finetuned-gtzan
+- Modelo en Hugging Face: https://huggingface.co/S3Sound/distilhubert-finetuned-gtzan
 - Modelo base (ntu-spml/distilhubert): https://huggingface.co/ntu-spml/distilhubert
 - Dataset GTZAN (sanchit-gandhi/gtzan): https://huggingface.co/datasets/sanchit-gandhi/gtzan

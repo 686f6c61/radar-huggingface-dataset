@@ -90,7 +90,7 @@ La comparativa se limita a los datos de la tabla de benchmarks de la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArchiveStudio/Qwen3.5-35B-A3B
+- Hugging Face: https://huggingface.co/ArchiveStudio/Qwen3.5-35B-A3B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Base
 - Licencia: https://huggingface.co/Qwen/Qwen3.5-35B-A3B/blob/main/LICENSE
 - Blog de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

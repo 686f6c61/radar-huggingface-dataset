@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juanliendo/paceron-sql-qwen2.5-7b` es un modelo derivado de Qwen2.5-7B, publicado por el usuario juanliendo en HuggingFace bajo licencia Apache 2.0. Por el nombre del repositorio, se trata de un ajuste fino (fine-tuning) orientado a la generacion de SQL, presumiblemente a partir de la base Qwen2.5-7B-Instruct o Qwen2.5-7B base. El modelo se publica como un artefacto de pesos sin model card sustantiva: el README unicamente declara la licencia, sin descripcion de arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso.
+`juanliendo/paceron-sql-qwen2.5-7b` es un modelo derivado de Qwen2.5-7B, publicado por el usuario juanliendo en Hugging Face bajo licencia Apache 2.0. Por el nombre del repositorio, se trata de un ajuste fino (fine-tuning) orientado a la generacion de SQL, presumiblemente a partir de la base Qwen2.5-7B-Instruct o Qwen2.5-7B base. El modelo se publica como un artefacto de pesos sin model card sustantiva: el README unicamente declara la licencia, sin descripcion de arquitectura, datos de entrenamiento, benchmarks ni instrucciones de uso.
 
 La relevancia de este modelo es limitada y debe contextualizarse: se trata de un fine-tune de comunidad, con 0 descargas y 1 like en el momento de la consulta, sin documentacion tecnica publicada. Su interes potencial radica en la base sobre la que se construye (Qwen2.5-7B, un transformer denso de 7.600 millones de parametros con 32.768 tokens de contexto nativo) y en su especializacion declarada en SQL, pero cualquier evaluacion seria requiere validacion empirica por parte del usuario.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| paceron-sql-qwen2.5-7b | 7.600 M (inferido) | no confirmado (32.768 en base) | SQL (declarada) | Apache 2.0 | HuggingFace, sin documentacion |
-| Qwen2.5-7B-Instruct | 7.600 M | 32.768 tokens | Generalista | Apache 2.0 | HuggingFace, model card completa |
-| Qwen2.5-Coder-7B-Instruct | 7.600 M | 32.768 tokens | Codigo y SQL | Apache 2.0 | HuggingFace, model card completa y benchmarks |
-| CodeLlama-7B-Instruct | 6.700 M | 16.384 tokens | Codigo | Llama 2 (uso comercial con restricciones) | HuggingFace, model card completa |
+| paceron-sql-qwen2.5-7b | 7.600 M (inferido) | no confirmado (32.768 en base) | SQL (declarada) | Apache 2.0 | Hugging Face, sin documentacion |
+| Qwen2.5-7B-Instruct | 7.600 M | 32.768 tokens | Generalista | Apache 2.0 | Hugging Face, model card completa |
+| Qwen2.5-Coder-7B-Instruct | 7.600 M | 32.768 tokens | Codigo y SQL | Apache 2.0 | Hugging Face, model card completa y benchmarks |
+| CodeLlama-7B-Instruct | 6.700 M | 16.384 tokens | Codigo | Llama 2 (uso comercial con restricciones) | Hugging Face, model card completa |
 
 La comparacion relevante es con Qwen2.5-Coder-7B-Instruct, que cubre generacion de SQL con documentacion y evaluaciones publicas. El modelo de juanliendo no ofrece datos que permitan establecer una ventaja frente a alternativas documentadas.
 
@@ -84,7 +84,7 @@ La comparacion relevante es con Qwen2.5-Coder-7B-Instruct, que cubre generacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juanliendo/paceron-sql-qwen2.5-7b
+- Repositorio Hugging Face: https://huggingface.co/juanliendo/paceron-sql-qwen2.5-7b
 - Qwen2.5-7B (modelo base presumible): https://huggingface.co/Qwen/Qwen2.5-7B
 - Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Qwen2.5-Coder-7B-Instruct (alternativa documentada para SQL): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

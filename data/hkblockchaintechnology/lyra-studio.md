@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LYRA Studio es un proyecto de personaje virtual nativo de IA publicado por hkblockchaintechnology en HuggingFace. No se trata de un modelo de pesos unico, sino de un pipeline de orquestacion que combina varios modelos especialistas para generar un idol virtual de Cantopop llamado LYRA: una chica ficticia de Hong Kong de 19 anos que canta, habla y aparece en video musical. El repositorio no incluye pesos de modelos, solo artefactos multimedia (video musical, stems de audio, renders) y codigo de orquestacion.
+LYRA Studio es un proyecto de personaje virtual nativo de IA publicado por hkblockchaintechnology en Hugging Face. No se trata de un modelo de pesos unico, sino de un pipeline de orquestacion que combina varios modelos especialistas para generar un idol virtual de Cantopop llamado LYRA: una chica ficticia de Hong Kong de 19 anos que canta, habla y aparece en video musical. El repositorio no incluye pesos de modelos, solo artefactos multimedia (video musical, stems de audio, renders) y codigo de orquestacion.
 
 El sistema coordina cinco "departamentos" sobre una sola GPU: Qwen2.5-VL-7B-Instruct como director y critico visual, Qwen-Image 20B como artista conceptual, Qwen3-TTS 1.7B con un LoRA de cantonés de Hong Kong como actor de voz, YuE 7B + 1B como compositor musical y Wav2Lip para sincronizacion labial. La innovacion principal es metodologica: un "bible" del personaje (fichero `character/studio_core.py`) actua como fuente unica de verdad que alimenta a todos los especialistas, con un bucle de auto-mejora donde las correcciones del critico se persisten y se reinyectan en los prompts.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Proyecto | Tipo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| LYRA Studio | Pipeline multi-modelo de personaje virtual | Suma de componentes (7B + 20B + 1.7B + 7B + 1B) | No disponible | yue, zh, en | Apache-2.0 (repo); componentes con licencias propias | HuggingFace, sin pesos |
+| LYRA Studio | Pipeline multi-modelo de personaje virtual | Suma de componentes (7B + 20B + 1.7B + 7B + 1B) | No disponible | yue, zh, en | Apache-2.0 (repo); componentes con licencias propias | Hugging Face, sin pesos |
 | Yuri (AI.TALK) | Personaje virtual de referencia citado por el autor | No disponible | No disponible | No disponible | No disponible | No disponible como modelo abierto |
-| Qwen3-TTS 1.7B (Alibaba/Qwen) | TTS | 1.7B | No disponible | Multiples, con LoRA para yue | Apache-2.0 | HuggingFace |
+| Qwen3-TTS 1.7B (Alibaba/Qwen) | TTS | 1.7B | No disponible | Multiples, con LoRA para yue | Apache-2.0 | Hugging Face |
 | YuE 7B + 1B | Generacion musical | 7B + 1B | No disponible | No disponible | Ver licencia del repo YuE | Repo YuE |
 
 La comparativa con personajes virtuales cerrados como Yuri no es posible en terminos de parametros o benchmarks porque no se publican. Frente a sus componentes individuales, LYRA Studio no es un modelo alternativo sino un orquestador que los combina; la comparacion directa solo aplica a cada especialista por separado.
@@ -88,7 +88,7 @@ La comparativa con personajes virtuales cerrados como Yuri no es posible en term
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hkblockchaintechnology/lyra-studio
+- Hugging Face: https://huggingface.co/hkblockchaintechnology/lyra-studio
 - LoRA de cantonés: https://huggingface.co/jmtl/hk-cantonese-cc0-qwen3-tts
 - Qwen2.5-VL-7B-Instruct: no disponible en la informacion proporcionada
 - Qwen-Image 20B: no disponible en la informacion proporcionada

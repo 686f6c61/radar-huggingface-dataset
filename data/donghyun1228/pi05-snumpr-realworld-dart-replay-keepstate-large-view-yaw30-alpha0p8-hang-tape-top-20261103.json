@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261103",
+  "slug": "donghyun1228-pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261103",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-hang-tape-top-20261103",
+  "created_at": "2026-11-04T03:09:19.000Z",
+  "updated_at": "2026-11-04T03:10:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "openpi",
+    "snumpr",
+    "dart",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5256911474,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-hang-tape-top-20261030",
+      "snippet": "π0.5 SNUMPR real-world DART merge for task hang_tape_top, large view + yaw30, α = 0.8 Per-task DART (one model per task, as in the official one-shot recipe ..."
+    },
+    {
+      "title": "10+ \"Imagine That\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/imagine/that",
+      "snippet": "View the profiles of professionals named \"Imagine That\" on LinkedIn. There are 10+ professionals named \"Imagine That\", who use …"
+    },
+    {
+      "title": "Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261030",
+      "snippet": "Donghyun1228 / pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-ft-1000-put-lemon-plate-20261030 Like 0 Robotics pi05 openpi snumpr dart License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket π0.5 SNUMPR real-world DART one-shot target fine-tune for task put_lemon_plate (paired, 1,000 updates)"
+    },
+    {
+      "title": "'Gloria bidgeford currently at imagine that inc site linkedin com in ...",
+      "url": "https://www.ephotozine.com/reviews/search/gloria-bidgeford--currently-at-imagine-that-inc-site---linkedin-com-in",
+      "snippet": "Review / 'Gloria bidgeford currently at imagine that inc site linkedin com in' Reviews"
+    }
+  ]
+}

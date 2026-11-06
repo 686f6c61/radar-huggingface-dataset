@@ -78,6 +78,6 @@ No disponible. No se proporcionan comparaciones con otros modelos de la misma ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WaveCut/Qwen3.8-27B-MLX-4bit-DWQ
+- Repositorio Hugging Face: https://huggingface.co/WaveCut/Qwen3.8-27B-MLX-4bit-DWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentación de calibración (dentro del repo): `CALIBRATION.md`, `RECIPE.md`, `calibration-manifest.json`

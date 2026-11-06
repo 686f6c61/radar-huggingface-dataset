@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "LarsRichter1904/liver_puncture_v1_policy1",
+  "slug": "larsrichter1904-liver_puncture_v1_policy1",
+  "author": "LarsRichter1904",
+  "url": "https://huggingface.co/LarsRichter1904/liver_puncture_v1_policy1",
+  "created_at": "2026-11-06T09:50:16.000Z",
+  "updated_at": "2026-11-06T09:50:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:LarsRichter1904/liver_puncture_v1",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712856,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Chatbot Plans Liver Biopsy Needle Paths in Landmark Pilot Test",
+      "url": "https://bioengineer.org/ai-chatbot-plans-liver-biopsy-needle-paths-in-landmark-pilot-test/",
+      "snippet": "Can a chatbot help steer a biopsy needle through the liver? A new pilot study from researchers at Memorial Sloan Kettering Cancer Center suggests that, in a carefully controlled and highly artificial setting, the answer is a cautious maybe. The team, led by Francois H. Cornelis with first author Isabelle Echelman, tested whether GPT-4.1, OpenAI’s multimodal generative AI model, could ..."
+    }
+  ]
+}

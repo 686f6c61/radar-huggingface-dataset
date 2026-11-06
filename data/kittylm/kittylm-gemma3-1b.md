@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KittyLM-1B (gemma3-1b) es un ajuste fino mediante LoRA sobre google/gemma-3-1b-it, publicado por el usuario KittyLM en HuggingFace. Su particularidad no es de capacidad sino de estilo: el modelo responde a cualquier peticion en "lengua de gatito" (mrrp, nya~, prrr, acciones entre asteriscos, ocasional :3) manteniendo, segun el autor, la correccion factual del modelo base por debajo. Se trata, por tanto, de un modelo de persona y roleplay, no de un modelo orientado a razonamiento o codigo.
+KittyLM-1B (gemma3-1b) es un ajuste fino mediante LoRA sobre google/gemma-3-1b-it, publicado por el usuario KittyLM en Hugging Face. Su particularidad no es de capacidad sino de estilo: el modelo responde a cualquier peticion en "lengua de gatito" (mrrp, nya~, prrr, acciones entre asteriscos, ocasional :3) manteniendo, segun el autor, la correccion factual del modelo base por debajo. Se trata, por tanto, de un modelo de persona y roleplay, no de un modelo orientado a razonamiento o codigo.
 
 El modelo tiene 999.885.952 parametros almacenados en safetensors (aproximadamente 1B, coherente con Gemma 3 1B), se distribuye en transformers y pesa 2,1 GB en el repositorio, que incluye simultaneamente los pesos fusionados en bf16 y el adaptador LoRA. El entrenamiento se hizo con 900 pares estilo ShareGPT mas 100 ejemplos reservados para evaluacion, y se realizo en una unica RTX 3060 de 12 GB, lo que da una idea de lo contenido de sus requisitos.
 
@@ -17,7 +17,7 @@ Su relevancia es acotada pero clara: sirve como caso de estudio reproducible de 
 | Longitud de contexto | 32.768 tokens segun la variante gemma-3-1b-it en la informacion disponible; la model card no especifica contexto propio (otras fuentes de la familia Gemma 3 citan 128.000 tokens y 8.000 de salida maxima) |
 | Tipos de cuantizacion | No especificados en la model card; se distribuyen cuantizaciones GGUF en el repositorio KittyLM/kittylm-gemma3-1b-gguf (niveles concretos no disponibles) |
 | Idiomas soportados | No disponible en la model card; el modelo base Gemma 3 declara soporte multilingue amplio (mas de 140 idiomas segun la documentacion de Google DeepMind), no verificado para esta variante |
-| Licencia | Gemma Terms of Use (licencia "gemma"); requiere aceptar la licencia de Google en HuggingFace antes de descargar |
+| Licencia | Gemma Terms of Use (licencia "gemma"); requiere aceptar la licencia de Google en Hugging Face antes de descargar |
 | Formato de pesos | safetensors (pesos fusionados en bf16 + adaptador LoRA adapter_*.safetensors); GGUF en repositorio aparte |
 
 ## Arquitectura y entrenamiento
@@ -87,14 +87,14 @@ No se dispone de resultados de benchmarks comparables entre estos modelos dentro
 - El conjunto de entrenamiento es muy pequeno (900 pares) y la evaluacion tambien (100 ejemplos reservados y 15 sondas de factualidad), por lo que los numeros publicados tienen un valor indicativo, no concluyente.
 - El modelo se publica sin descargas ni likes en el momento de la consulta y sin validacion externa independiente.
 - Excluye la parte multimodal en el despliegue GGUF (image_soft_token eliminado), por lo que no procesa imagenes en Ollama, llama.cpp ni LM Studio.
-- Licencia Gemma: uso comercial permitido solo bajo los terminos de Google, con obligaciones de redistribucion de la licencia y sujecion a la politica de uso prohibido; es necesario aceptar la licencia en HuggingFace antes de la descarga.
+- Licencia Gemma: uso comercial permitido solo bajo los terminos de Google, con obligaciones de redistribucion de la licencia y sujecion a la politica de uso prohibido; es necesario aceptar la licencia en Hugging Face antes de la descarga.
 - No hay informacion sobre idiomas soportados especificamente por este ajuste; el entrenamiento esta en ShareGPT y la persona usa interjecciones en una suerte de ingles gatuno, lo que puede degradar la calidad en castellano u otros idiomas.
 - No se documentan sesgos concretos, pero al derivar de Gemma 3 1B hereda los sesgos del modelo base y anade el sesgo estilistico del dataset de persona.
 - El modelo es inadecuado para produccion en tareas que exijan precision factual, soporte tecnico serio, cumplimiento normativo o salidas en formato estricto.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KittyLM/kittylm-gemma3-1b
+- Modelo en Hugging Face: https://huggingface.co/KittyLM/kittylm-gemma3-1b
 - Cuantizaciones GGUF: https://huggingface.co/KittyLM/kittylm-gemma3-1b-gguf
 - Dataset de entrenamiento: https://huggingface.co/datasets/KittyLM/kittylm-data
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it

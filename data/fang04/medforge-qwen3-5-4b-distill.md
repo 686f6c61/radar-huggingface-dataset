@@ -41,7 +41,7 @@ Limitaciones:
 - No dice "no sé": de 2000 preguntas solo se abstuvo activamente 5; entrenamiento de abstinencia es el siguiente paso.
 - Exámenes en chino como objetivo principal; no es consejo médico.
 
-Resultados de búsqueda web: solo he encontrado el modelo hermano `fang04/medforge-qwen3.5-4b-dpo` (también en HuggingFace) y enlaces irrelevantes a diarios chilenos. No hay información adicional útil.
+Resultados de búsqueda web: solo he encontrado el modelo hermano `fang04/medforge-qwen3.5-4b-dpo` (también en Hugging Face) y enlaces irrelevantes a diarios chilenos. No hay información adicional útil.
 
 Ahora, debo construir la ficha. Algunos datos no están disponibles:
 
@@ -54,7 +54,7 @@ Ahora, debo construir la ficha. Algunos datos no están disponibles:
 
 - Parámetros totales: 4.539.265.536 (≈4.5 mil millones). El nombre dice 4B, así que es 4.54B.
 
-- Arquitectura: el modelo base es Qwen3.5-4B. Qwen3.5 es un modelo transformer denso. La metadata menciona "image-text-to-text" pero eso es raro; puede ser que el modelo base tenga capacidades multimodal? Qwen3.5-4B podría ser un modelo multimodal? La metadata dice "image-text-to-text" y "qwen3_5". Sin embargo, la model card no menciona nada de visión. El pipeline es text-generation. En la tabla de arquitectura puedo poner "Transformer denso (basado en Qwen/Qwen3.5-4B)" y notar que la metadata incluye "image-text-to-text" pero el modelo se usa para generación de texto. Para no inventar, pondré "Transformer denso (arquitectura Qwen3.5), no es MoE. Según los metadatos de HuggingFace también se etiqueta como image-text-to-text, pero la model card no documenta capacidades de visión." Eso es riguroso.
+- Arquitectura: el modelo base es Qwen3.5-4B. Qwen3.5 es un modelo transformer denso. La metadata menciona "image-text-to-text" pero eso es raro; puede ser que el modelo base tenga capacidades multimodal? Qwen3.5-4B podría ser un modelo multimodal? La metadata dice "image-text-to-text" y "qwen3_5". Sin embargo, la model card no menciona nada de visión. El pipeline es text-generation. En la tabla de arquitectura puedo poner "Transformer denso (basado en Qwen/Qwen3.5-4B)" y notar que la metadata incluye "image-text-to-text" pero el modelo se usa para generación de texto. Para no inventar, pondré "Transformer denso (arquitectura Qwen3.5), no es MoE. Según los metadatos de Hugging Face también se etiqueta como image-text-to-text, pero la model card no documenta capacidades de visión." Eso es riguroso.
 
 - Datos de entrenamiento: el modelo card dice "教材 sft_distill_v1.jsonl: 3817 muestras médicas (2123 preguntas) + 673 muestras de replay general". Total 4490 muestras. El texto dice "同一个 4B、4490 条教材" (mismo 4B, 4490 materiales). Entonces: 3817 médicas + 673 general = 4490. Se entrenó con LoRA SFT. No se menciona RLHF/DPO en este modelo (es de destilación, no DPO). El modelo hermano es DPO. Este es destilación 2.0. Mencionar que es post-entrenamiento con SFT sobre destilación de DeepSeek V4-flash, no DPO.
 
@@ -72,7 +72,7 @@ Ahora, debo construir la ficha. Algunos datos no están disponibles:
 
 - Limitaciones: tengo una lista de limitaciones en la model card. Puedo usarlas. Añadir sesgos conocidos? No se menciona. Riesgo de alucinación: el modelo no dice "no sé" (solo 5 abstenciones de 2000), lo que indica riesgo de alucinación. Limitaciones de contexto o idioma: centrado en chino, exámenes médicos; inglés en MedXpertQA sin ganancia. Restricciones de licencia: Apache 2.0 permite uso comercial, pero la model card dice que no es consejo médico y que según regulaciones chinas la IA no debe usarse para diagnóstico automático. Caveats de producción: no es consejo médico, no validado en entornos clínicos, una sola semilla, no revisión de razonamiento inválido, profesor y evaluador de la misma empresa, CMB-val con potencia insuficiente.
 
-- Enlaces: HuggingFace (https://huggingface.co/fang04/medforge-qwen3.5-4b-distill), y los enlaces del repositorio de GitHub: https://github.com/yiongq/medforge, y los informes:
+- Enlaces: Hugging Face (https://huggingface.co/fang04/medforge-qwen3.5-4b-distill), y los enlaces del repositorio de GitHub: https://github.com/yiongq/medforge, y los informes:
   - https://github.com/yiongq/medforge/blob/main/reports/distill-2.0.md
   - https://github.com/yiongq/medforge/blob/main/reports/usability-v3-train.md
   - https://github.com/yiongq/medforge/blob/main/reports/p2-decoding-arms.md
@@ -120,7 +120,7 @@ En "Comparativa con modelos similares", presento una tabla con Qwen3.5-4B base, 
 - Contexto: no disponible para base/DPO. Para este, 36.864 (config vLLM). Pongo "no disponible" para base y DPO.
 - Rendimiento en CMExam: base 74.0%, DPO 74.7%, este 80.4%.
 - Licencia: Apache 2.0.
-- Disponibilidad: HuggingFace público, 0 descargas.
+- Disponibilidad: Hugging Face público, 0 descargas.
 
 Puedo añadir DeepSeek V4-flash como referencia externa, pero no es de la misma categoría (es un modelo de API grande). Mejor limitar a los tres de la familia.
 
@@ -184,11 +184,11 @@ En "Enlaces": lista.
 
 Voy a redactar ahora.
 
-Cuidado con la ortografía: "razonamiento" (correcto), "destilación" (correcto), "descontaminación" (correcto), "compatibilidad" (correcto), "HuggingFace" (correcto). Usar "puntuación" en lugar de "score"? No importa.
+Cuidado con la ortografía: "razonamiento" (correcto), "destilación" (correcto), "descontaminación" (correcto), "compatibilidad" (correcto), "Hugging Face" (correcto). Usar "puntuación" en lugar de "score"? No importa.
 
 En la tabla de especificaciones, la fila "Parametros activos" - como no es MoE, pongo "No aplica (arquitectura densa)".
 
-En "Capacidades", la instrucción pide "Cualquier capacidad especial (thinking mode, vision, audio, etc.)". El modelo tiene thinking mode (segmento `think`), y la metadata sugiere image-text-to-text pero no está documentado. Puedo decir: "Modo de razonamiento (thinking mode) explícito: los outputs contienen un segmento `think...` antes de la respuesta final." Y "No se documentan capacidades de visión o audio a pesar de la etiqueta 'image-text-to-text' en HuggingFace."
+En "Capacidades", la instrucción pide "Cualquier capacidad especial (thinking mode, vision, audio, etc.)". El modelo tiene thinking mode (segmento `think`), y la metadata sugiere image-text-to-text pero no está documentado. Puedo decir: "Modo de razonamiento (thinking mode) explícito: los outputs contienen un segmento `think...` antes de la respuesta final." Y "No se documentan capacidades de visión o audio a pesar de la etiqueta 'image-text-to-text' en Hugging Face."
 
 En "Casos de uso", debo asegurarme de que sean concretos y realistas. Los baso en el uso del modelo en evaluación médica y en entornos académicos.
 
@@ -198,14 +198,14 @@ En "Comparativa con modelos similares", la tabla:
 
 | Modelo | Parámetros | Contexto | CMExam (n=2000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.5-4B (base) | 4.539.265.536 | no disponible | 74.0% | Apache 2.0 | HuggingFace |
-| fang04/medforge-qwen3.5-4b-dpo | ≈4.539.265.536 | no disponible | 74.7% | Apache 2.0 | HuggingFace |
-| fang04/medforge-qwen3.5-4b-distill (este) | 4.539.265.536 | 36.864 tokens (config vLLM) | 80.4% | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4.539.265.536 | no disponible | 74.0% | Apache 2.0 | Hugging Face |
+| fang04/medforge-qwen3.5-4b-dpo | ≈4.539.265.536 | no disponible | 74.7% | Apache 2.0 | Hugging Face |
+| fang04/medforge-qwen3.5-4b-distill (este) | 4.539.265.536 | 36.864 tokens (config vLLM) | 80.4% | Apache 2.0 | Hugging Face |
 
 En "Limitaciones", la model card dice que la licencia del profesor (DeepSeek) permite destilar, y que el modelo no constituye consejo médico. También "no dirá 'no sé'". Añado "Riesgo de alucinación" con datos: solo 5 abstenciones de 2000.
 
 En "Enlaces", incluyo:
-- HuggingFace del modelo: https://huggingface.co/fang04/medforge-qwen3.5-4b-distill
+- Hugging Face del modelo: https://huggingface.co/fang04/medforge-qwen3.5-4b-distill
 - Repositorio GitHub: https://github.com/yiongq/medforge
 - Informe de destilación 2.0: https://github.com/yiongq/medforge/blob/main/reports/distill-2.0.md
 - Informe de usabilidad v3: https://github.com/yiongq/medforge/blob/main/reports/usability-v3-train.md
@@ -237,7 +237,7 @@ La arquitectura es un transformer denso (no MoE) basado en Qwen3.5, con 4.539.26
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso basado en Qwen/Qwen3.5-4B (no MoE). La metadata de HuggingFace incluye la etiqueta `image-text-to-text`, pero la model card no documenta capacidades de vision. |
+| Arquitectura | Transformer denso basado en Qwen/Qwen3.5-4B (no MoE). La metadata de Hugging Face incluye la etiqueta `image-text-to-text`, pero la model card no documenta capacidades de vision. |
 | Parametros totales | 4.539.265.536 |
 | Parametros activos | No aplica (arquitectura densa) |
 | Longitud de contexto | 36.864 tokens (configuracion recomendada con vLLM; la evaluacion usa un presupuesto de 32.768 tokens) |
@@ -295,11 +295,11 @@ La lectura recomendada por el autor es la siguiente: CMExam se considera dominio
 
 | Modelo | Parametros | Contexto | CMExam (n=2000) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen/Qwen3.5-4B (base) | 4.539.265.536 | no disponible | 74,0 % | Apache 2.0 | HuggingFace |
-| fang04/medforge-qwen3.5-4b-dpo | ≈4.539.265.536 | no disponible | 74,7 % | Apache 2.0 | HuggingFace |
-| fang04/medforge-qwen3.5-4b-distill (este) | 4.539.265.536 | 36.864 tokens (config vLLM) | 80,4 % | Apache 2.0 | HuggingFace |
+| Qwen/Qwen3.5-4B (base) | 4.539.265.536 | no disponible | 74,0 % | Apache 2.0 | Hugging Face |
+| fang04/medforge-qwen3.5-4b-dpo | ≈4.539.265.536 | no disponible | 74,7 % | Apache 2.0 | Hugging Face |
+| fang04/medforge-qwen3.5-4b-distill (este) | 4.539.265.536 | 36.864 tokens (config vLLM) | 80,4 % | Apache 2.0 | Hugging Face |
 
-Los tres modelos comparten la misma base y licencia, y están disponibles públicamente en HuggingFace. La versión de destilación supera en 6,5 puntos porcentuales a la base en CMExam y en 5,7 puntos a la versión DPO en CMB-val, aunque en MedXpertQA la diferencia es mínima.
+Los tres modelos comparten la misma base y licencia, y están disponibles públicamente en Hugging Face. La versión de destilación supera en 6,5 puntos porcentuales a la base en CMExam y en 5,7 puntos a la versión DPO en CMB-val, aunque en MedXpertQA la diferencia es mínima.
 
 ## Limitaciones y advertencias
 
@@ -311,7 +311,7 @@ Los tres modelos comparten la misma base y licencia, y están disponibles públi
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/fang04/medforge-qwen3.5-4b-distill
+- Hugging Face del modelo: https://huggingface.co/fang04/medforge-qwen3.5-4b-distill
 - Repositorio del proyecto: https://github.com/yiongq/medforge
 - Informe de destilación 2.0: https://github.com/yiongq/medforge/blob/main/reports/distill-2.0.md
 - Informe de usabilidad y protocolo v3: https://github.com/yiongq/medforge/blob/main/reports/usability-v3-train.md

@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NexVeridian/Equinox-31B-8bit
+- Repositorio Hugging Face: https://huggingface.co/NexVeridian/Equinox-31B-8bit
 - Modelo base: https://huggingface.co/LatitudeGames/Equinox-31B
 - Ficha del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/equinox-31b-latitudegames
 - Entrada en LLM Explorer: https://llm-explorer.com/model/LatitudeGames%2FEquinox-31B,679i44Pg4987zqUuWocBk1

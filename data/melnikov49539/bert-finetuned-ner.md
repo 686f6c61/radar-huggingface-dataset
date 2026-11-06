@@ -81,5 +81,5 @@ No se dispone de datos comparativos en la informacion proporcionada. Existen otr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MelNikov49539/bert-finetuned-ner
+- Hugging Face: https://huggingface.co/MelNikov49539/bert-finetuned-ner
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased

@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia en BF16: ~72 GB (35B × 2 bytes), requiere una GPU de clase profesional como A100 80GB, H100 o 2× RTX 4090/RTX 6000 Ada.
 - Con cuantización 4-bit (AWQ/GPTQ), la VRAM se reduce a ~18 GB, lo que permite ejecutarlo en una RTX 4090 o RTX 3090 con suficiente memoria.
 - Al ser un modelo MoE, la memoria activa por token es de ~3B parámetros, lo que reduce el coste de inferencia en comparación con modelos densos de 35B.
-- Opciones de despliegue: compatible con HuggingFace Transformers, vLLM, SGLang, KTransformers y llama.cpp (si se proporcionan pesos GGUF).
+- Opciones de despliegue: compatible con Hugging Face Transformers, vLLM, SGLang, KTransformers y llama.cpp (si se proporcionan pesos GGUF).
 - Latencia y throughput: no se han publicado mediciones específicas. En configuraciones con vLLM en una A100 80GB se puede esperar un throughput de decodificación superior a 50 tokens/s, pero depende del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ El modelo se posiciona como una alternativa eficiente de Qwen3.5-27B, ofreciendo
 
 ## Enlaces
 
-- HuggingFace del modelo espejo: https://huggingface.co/aljosadro/mirror-afgod1079-re1-cp100-39e7f627
-- Modelo original en HuggingFace: https://huggingface.co/afgod1079/Affine-5eqgpsdo6a-cp1800
+- Hugging Face del modelo espejo: https://huggingface.co/aljosadro/mirror-afgod1079-re1-cp100-39e7f627
+- Modelo original en Hugging Face: https://huggingface.co/afgod1079/Affine-5eqgpsdo6a-cp1800
 - Blog de Qwen3.6-35B-A3B (fuente de la arquitectura y benchmarks): https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

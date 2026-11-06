@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jwcalendar/calendar-query-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/jwcalendar/calendar-query-intent-classifier
 - ChronoGrid Calendar Computation Laboratory (Space): https://huggingface.co/spaces/jwcalendar/chronogrid-calendar-lab
 - Gregorian ↔ Julian Date Laboratory (Space): https://huggingface.co/spaces/jwcalendar/gregorian-julian-date-lab
 - Calendar Print & Layout Engineering Lab (Space): https://huggingface.co/spaces/jwcalendar/calendar-layout-engine

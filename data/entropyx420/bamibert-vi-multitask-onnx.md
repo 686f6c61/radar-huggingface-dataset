@@ -95,5 +95,5 @@ No se dispone de datos de rendimiento comparativos publicados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/entropyx420/bamibert-vi-multitask-onnx
+- Hugging Face: https://huggingface.co/entropyx420/bamibert-vi-multitask-onnx
 - Modelo base: https://huggingface.co/Qualcomm-AI-Research/BamiBERT

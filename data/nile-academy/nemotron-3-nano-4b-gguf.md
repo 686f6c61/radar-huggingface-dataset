@@ -102,7 +102,7 @@ La informacion proporcionada no incluye datos de modelos de terceros comparables
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nile-academy/nemotron-3-nano-4b-gguf
+- Repositorio Hugging Face: https://huggingface.co/nile-academy/nemotron-3-nano-4b-gguf
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Model card fuente (revision fijada): https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16/blob/dfaf35de3e30f1867dd8dbc38a7fc9fb52d3914f/README.md
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-1pp-canary-1.7b-ua es un checkpoint de investigación publicado por el usuario ShaanShah1 en HuggingFace. Se trata de un modelo base de 1.661.048.832 parámetros (1,66B) con arquitectura decoder de estilo Llama, tokenizador de SmolLM2 y una longitud de secuencia de 4.096 tokens. La model card es deliberadamente mínima: el autor lo describe como "research checkpoint" y anuncia que los detalles se publicarán más adelante, por lo que no hay información sobre el dataset de entrenamiento, el número de tokens vistos ni el proceso de alineación.
+1pp-canary-1.7b-ua es un checkpoint de investigación publicado por el usuario ShaanShah1 en Hugging Face. Se trata de un modelo base de 1.661.048.832 parámetros (1,66B) con arquitectura decoder de estilo Llama, tokenizador de SmolLM2 y una longitud de secuencia de 4.096 tokens. La model card es deliberadamente mínima: el autor lo describe como "research checkpoint" y anuncia que los detalles se publicarán más adelante, por lo que no hay información sobre el dataset de entrenamiento, el número de tokens vistos ni el proceso de alineación.
 
 El modelo se distribuye en formato safetensors bajo licencia Apache-2.0 y es compatible con la librería transformers, con text-generation-inference y con endpoints compatibles. La única especificación operativa que proporciona el autor es el formato de chat: ChatML sin turno de sistema, con parada en `<|im_end|>` o `<|endoftext|>`.
 
@@ -32,7 +32,7 @@ No hay información pública sobre volumen de tokens de entrenamiento, composici
 - Generación de texto autoregresiva en el formato declarado por el autor (ChatML sin turno de sistema).
 - Conversación multi-turno básica, según el tag `conversational` y la plantilla documentada.
 - Compatibilidad con `transformers` (carga directa de safetensors) y con text-generation-inference.
-- Compatibilidad con endpoints compatibles con la API de HuggingFace.
+- Compatibilidad con endpoints compatibles con la API de Hugging Face.
 - Longitud de contexto de 4.096 tokens: suficiente para diálogos cortos y documentos breves, insuficiente para contextos largos.
 - Tool calling / function calling: no documentado.
 - Capacidades de agente o razonamiento multi-paso: no documentadas.
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la información disponible. La m
   - INT4 (GPTQ/AWQ/GGUF Q4): aproximadamente 1 GB de pesos; del orden de 1,5-2,5 GB en total.
 - GPU recomendadas: cualquier GPU con al menos 6-8 GB de VRAM para FP16 (RTX 3060 Ti, RTX 4060, RTX 3070, L4). Para INT4 basta con 4 GB (RTX 3050, GTX 1660 Super, iGPU con memoria unificada).
 - Cabe en GPU de consumo: sí, en toda la gama media y baja con cuantización; en FP16 requiere al menos 6-8 GB.
-- Opciones de despliegue: `transformers` (ruta nativa), text-generation-inference (el autor lo etiqueta como compatible), endpoints compatibles de HuggingFace, llama.cpp/Ollama tras conversión a GGUF, y vLLM tras verificar compatibilidad de la arquitectura.
+- Opciones de despliegue: `transformers` (ruta nativa), text-generation-inference (el autor lo etiqueta como compatible), endpoints compatibles de Hugging Face, llama.cpp/Ollama tras conversión a GGUF, y vLLM tras verificar compatibilidad de la arquitectura.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas por el autor ni por terceros.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion / benchmarks | Disponibilidad |
 |---|---|---|---|---|---|
-| 1pp-canary-1.7b-ua | 1,66B | 4.096 | Apache-2.0 | Model card mínima, sin benchmarks | HuggingFace, 0 descargas |
-| SmolLM2-1.7B (HuggingFace) | 1,7B | 8.192 (referencia pública) | Apache-2.0 | Model card completa con benchmarks publicados | Ampliamente desplegado |
+| 1pp-canary-1.7b-ua | 1,66B | 4.096 | Apache-2.0 | Model card mínima, sin benchmarks | Hugging Face, 0 descargas |
+| SmolLM2-1.7B (Hugging Face) | 1,7B | 8.192 (referencia pública) | Apache-2.0 | Model card completa con benchmarks publicados | Ampliamente desplegado |
 | Qwen2.5-1.5B (Alibaba) | 1,5B | 32.768 (referencia pública) | Apache-2.0 | Model card completa con benchmarks publicados | Ampliamente desplegado |
 | Llama-3.2-1B (Meta) | 1,24B | 128.000 (referencia pública) | Licencia comunitaria Llama 3.2 | Model card completa con benchmarks publicados | Ampliamente desplegado |
 
@@ -89,6 +89,6 @@ Nota: los datos de contexto y licencia de los modelos comparativos son referenci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ShaanShah1/1pp-canary-1.7b-ua
+- Modelo en Hugging Face: https://huggingface.co/ShaanShah1/1pp-canary-1.7b-ua
 - Perfil del autor: https://huggingface.co/ShaanShah1
 - No se han encontrado papers, blogs, repositorios ni demos asociados al modelo. La búsqueda web realizada devolvió únicamente resultados sin relación con el modelo (contenido para adultos no pertinente), por lo que no se incluyen como referencias.

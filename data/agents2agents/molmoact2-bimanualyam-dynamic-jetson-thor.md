@@ -81,8 +81,8 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agents2agents/MolmoAct2-BimanualYAM-Dynamic-Jetson-Thor
-- Modelo base en HuggingFace: https://huggingface.co/allenai/MolmoAct2-BimanualYAM
+- Repositorio Hugging Face: https://huggingface.co/agents2agents/MolmoAct2-BimanualYAM-Dynamic-Jetson-Thor
+- Modelo base en Hugging Face: https://huggingface.co/allenai/MolmoAct2-BimanualYAM
 - Repositorio oficial de MolmoAct2 (GitHub): https://github.com/allenai/molmoact2
 - Paper de MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881
 - Framework vla-edge (GitHub): https://github.com/Agents2AgentsAI/vla-edge

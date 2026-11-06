@@ -72,8 +72,8 @@ Rendimiento medido en RTX PRO 6000 (Blackwell) con PyTorch bf16: 81 fotogramas (
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eden 5B matrix-shooter 1-step student | ~5.000 M | Arena de 6 sink + 12 recientes | Video-a-video 1-step, graybox a estilo | Apache 2.0 | HuggingFace (peih/eden5b-matrix-sf1-gray-geom) |
-| Wan-AI/Wan2.2-TI2V-5B (profesor base) | ~5.000 M | no disponible | Difusion bidireccional de 40 pasos | no disponible en la informacion | HuggingFace (Wan-AI/Wan2.2-TI2V-5B) |
+| Eden 5B matrix-shooter 1-step student | ~5.000 M | Arena de 6 sink + 12 recientes | Video-a-video 1-step, graybox a estilo | Apache 2.0 | Hugging Face (peih/eden5b-matrix-sf1-gray-geom) |
+| Wan-AI/Wan2.2-TI2V-5B (profesor base) | ~5.000 M | no disponible | Difusion bidireccional de 40 pasos | no disponible en la informacion | Hugging Face (Wan-AI/Wan2.2-TI2V-5B) |
 | Profesor bidireccional 40-step graybox | no disponible | no disponible | Destilacion bidireccional | no disponible | No distribuido en este repositorio |
 
 No se dispone de datos de benchmarks de los modelos comparables en la informacion proporcionada, salvo las metricas del profesor citadas en la tabla de rendimiento.
@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de los modelos comparables en la informacio
 
 ## Enlaces
 
-- [HuggingFace: peih/eden5b-matrix-sf1-gray-geom](https://huggingface.co/peih/eden5b-matrix-sf1-gray-geom)
+- [Hugging Face: peih/eden5b-matrix-sf1-gray-geom](https://huggingface.co/peih/eden5b-matrix-sf1-gray-geom)
 - [Modelo base: Wan-AI/Wan2.2-TI2V-5B](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B)
 - [TAEHV (madebyollin/taehv)](https://huggingface.co/madebyollin/taehv)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

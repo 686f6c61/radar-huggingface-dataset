@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp",
+  "slug": "b2z-swift1-5-glm-5-3-flash-oq4e-mtp",
+  "author": "b2z",
+  "url": "https://huggingface.co/b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp",
+  "created_at": "2026-11-02T12:51:07.000Z",
+  "updated_at": "2026-11-03T07:39:56.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "oq",
+    "quantized",
+    "mtp",
+    "moe",
+    "reasoning",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift1.5-GLM-5.3-Flash",
+    "base_model:quantized:ukisai/Swift1.5-GLM-5.3-Flash",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 176,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 186422681179,
+  "storage_human": "186.4 GB",
+  "base_model": "ukisai/Swift1.5-GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp",
+      "snippet": "Instructions to use b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] hf download b2z/Swift1.5-GLM-5.3-Flash-oQ4e-mtp --local-dir Swift1.5-GLM-5.3-Flash-oQ4e-mtp ..."
+    },
+    {
+      "title": "GLM 5.3 Flash: Specs, Benchmarks, Price and Weights",
+      "url": "https://felloai.com/glm-5-3-flash/",
+      "snippet": "GLM 5.3 Flash is Z.ai’s 320B open-weight multimodal model, released August 26, 2026. Specs, benchmarks, $0.15 pricing and how it differs from GLM 5.3."
+    }
+  ]
+}

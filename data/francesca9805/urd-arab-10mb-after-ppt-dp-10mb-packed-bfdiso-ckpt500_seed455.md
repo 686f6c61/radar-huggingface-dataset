@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) de tipo GPT-2 con 38.038.528 parámetros (aproximadamente 38 millones), desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un experimento derivado del modelo base `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`, sobre el que se ha aplicado una etapa adicional de supervisión (SFT) mediante la librería TRL. Por su nomenclatura (urd-arab, 10mb, packed, ckpt500, seed455) parece formar parte de una línea de experimentos sobre tokenización y empaquetado de datos para idiomas con escritura árabe (potencialmente urdu), aunque esta interpretación no está confirmada en la información disponible.
+El modelo `francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) de tipo GPT-2 con 38.038.528 parámetros (aproximadamente 38 millones), desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un experimento derivado del modelo base `francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455`, sobre el que se ha aplicado una etapa adicional de supervisión (SFT) mediante la librería TRL. Por su nomenclatura (urd-arab, 10mb, packed, ckpt500, seed455) parece formar parte de una línea de experimentos sobre tokenización y empaquetado de datos para idiomas con escritura árabe (potencialmente urdu), aunque esta interpretación no está confirmada en la información disponible.
 
 El problema que aborda es propio de la investigación: evaluar cómo afecta al entrenamiento de un modelo pequeño el uso de datos empaquetados (packed) y tokenizadores específicos sobre un corpus reducido (en el nombre aparece "10mb"). Con solo 38 millones de parámetros, el modelo se sitúa por debajo de GPT-2 small (124M), lo que lo convierte en una pieza de laboratorio más que en un sistema listo para producción. La relevancia actual es limitada y de carácter académico: sirve como punto de comparación dentro de una serie de checkpoints con distintos seeds y etapas de entrenamiento.
 
@@ -63,16 +63,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 38M de parámetros, en bf16/fp16 ocupa aproximadamente 76 MB de pesos; en fp32, alrededor de 152 MB. Sumando activaciones y caché KV, la inferencia cabe holgadamente en cualquier GPU moderna y también en CPU.
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de VRAM es suficiente (GTX 1050 Ti, RTX 3060, RTX 4090, A100, H100). No se requiere hardware especializado.
 - Consumer GPU: sí, cabe en cualquier GPU de consumo actual e incluso en muchas integradas.
-- Opciones de despliegue: al ser un modelo `transformers`, se puede servir con la pipeline de HuggingFace; es compatible con `text-generation-inference` (tag declarado) y con `endpoints_compatible`. La conversión a GGUF para llama.cpp u Ollama no está documentada, pero sería viable por el tipo de arquitectura.
+- Opciones de despliegue: al ser un modelo `transformers`, se puede servir con la pipeline de Hugging Face; es compatible con `text-generation-inference` (tag declarado) y con `endpoints_compatible`. La conversión a GGUF para llama.cpp u Ollama no está documentada, pero sería viable por el tipo de arquitectura.
 - Latencia y throughput: no disponibles. Por el tamaño, se puede anticipar una latencia muy baja en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| urd-arab-10mb-after-ppt-...-ckpt500_seed455 | 38M | no disponible | no disponible | HuggingFace, 0 descargas |
+| urd-arab-10mb-after-ppt-...-ckpt500_seed455 | 38M | no disponible | no disponible | Hugging Face, 0 descargas |
 | GPT-2 small (OpenAI) | 124M | 1024 tokens | MIT | Ampliamente disponible |
-| DistilGPT-2 (HuggingFace) | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
+| DistilGPT-2 (Hugging Face) | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 
 No se dispone de resultados de rendimiento del modelo objeto de esta ficha, por lo que la comparación cuantitativa con las alternativas no es posible. Los dos modelos de referencia se incluyen únicamente por proximidad de tamaño y por ser puntos de comparación habituales para modelos GPT-2 pequeños.
 
@@ -83,11 +83,11 @@ No se dispone de resultados de rendimiento del modelo objeto de esta ficha, por 
 - Limitaciones de contexto o idioma: no se declara la longitud de contexto ni los idiomas soportados. El nombre apunta a urdu/árabe, pero no está confirmado; no hay garantías de calidad en otros idiomas.
 - Restricciones de licencia: la licencia no está disponible. La model card indica "licence: license", lo que no aclara el uso comercial. Se recomienda contactar con el autor antes de cualquier uso productivo.
 - Caveats para producción: no hay benchmarks, no hay tests de seguridad, el modelo tiene 0 descargas (sin validación comunitaria) y su tamaño lo limita a tareas muy acotadas. No se recomienda su despliegue en sistemas orientados a usuario final.
-- Fecha de creación del repositorio: 7 de octubre de 2026, según los metadatos de HuggingFace.
+- Fecha de creación del repositorio: 7 de octubre de 2026, según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/y0rp1aoo
 - Repositorio de TRL: https://github.com/huggingface/trl

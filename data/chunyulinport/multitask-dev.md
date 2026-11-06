@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chunyulinport/multitask-dev` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de un Tiny Transformer orientado a tareas multitarea. Lo desarrolla el usuario `chunyulinport` y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni afinado para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados.
+`chunyulinport/multitask-dev` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de un Tiny Transformer orientado a tareas multitarea. Lo desarrolla el usuario `chunyulinport` y se distribuye bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni afinado para producción: la model card indica explícitamente que el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con benchmarks publicados.
 
 El modelo emplea una arquitectura transformer de escala "tiny", con atención estándar, fusión de tipo Tucker, activación ReLU y normalización LayerNorm. El recuento real de parámetros según los tensores safetensors es de 49.600 parámetros, lo que lo sitúa en el rango de los modelos de juguete o de validación de arquitecturas, muy por debajo de cualquier LLM operativo.
 
@@ -43,7 +43,7 @@ La receta por defecto emplea el optimizador Adafactor con un schedule de warmup 
 - Pruebas de humo de pipelines de entrenamiento: cargar `model.safetensors` como inicialización para verificar que el bucle de entrenamiento, el optimizador Adafactor y el schedule de warmup constante funcionan sin errores.
 - Reproducción de experimentos controlados: servir como baseline de capacidad emparejada al comparar con otras arquitecturas bajo la misma exposición de datos, presupuesto de ajuste y semillas aleatorias.
 - Docencia y aprendizaje: estudiar la implementación completa de un transformer multitarea en un tamaño (49.600 parámetros) que cabe en cualquier entorno y se puede leer y depurar por completo.
-- Desarrollo de adaptadores de carga: implementar el adaptador explícito necesario para integrar esta implementación personalizada en frameworks genéricos de HuggingFace.
+- Desarrollo de adaptadores de carga: implementar el adaptador explícito necesario para integrar esta implementación personalizada en frameworks genéricos de Hugging Face.
 - Investigación de mecanismos de fusión: experimentar con la fusión Tucker y medir su impacto frente a alternativas de fusión en tareas multitarea sobre conjuntos de validación específicos.
 
 ## Benchmarks y rendimiento
@@ -76,9 +76,9 @@ No se dispone de datos de rendimiento del modelo analizado para una comparación
 - No se documentan idiomas soportados ni longitud de contexto.
 - La licencia BSD-3-Clause permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos de origen si se usan datasets externos.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto aquí incluidos.
-- Al ser una implementación personalizada, las APIs automáticas de carga de HuggingFace no funcionan sin un adaptador explícito.
+- Al ser una implementación personalizada, las APIs automáticas de carga de Hugging Face no funcionan sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chunyulinport/multitask-dev
+- Repositorio en Hugging Face: https://huggingface.co/chunyulinport/multitask-dev
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

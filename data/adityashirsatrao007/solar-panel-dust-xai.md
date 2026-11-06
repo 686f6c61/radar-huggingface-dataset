@@ -80,7 +80,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityashirsatrao007/solar-panel-dust-xai
+- Modelo en Hugging Face: https://huggingface.co/adityashirsatrao007/solar-panel-dust-xai
 - Dataset utilizado: https://huggingface.co/datasets/safwanshamsir99/solar-photovoltaics-panell-for-dust-dectection
 - Repositorio GitHub del autor (enfoque VGG16-SVM relacionado): https://github.com/adityashirsatrao007/Hybrid-VGG16-SVM-Framework-for-Automated-Dust-Detection-on-Solar-Panels-Advancing-Energy-Efficiency
 - Artículo MDPI sobre detección de defectos y polvo en paneles: https://www.mdpi.com/2313-433X/11/9/287

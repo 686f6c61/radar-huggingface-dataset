@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rajeshidimannan/motor_claim_ft_new` es un adaptador LoRA de tipo PEFT publicado en HuggingFace, construido mediante ajuste supervisado (SFT) sobre el modelo base `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`. No se trata por tanto de un modelo con pesos completos, sino de un conjunto de matrices de bajo rango que deben cargarse sobre la versión de 4 bits del Llama 3.2 3B Instruct que distribuye Unsloth. El entrenamiento se ha realizado con la libreria TRL (version 0.24.0) y PEFT 0.21.0, segun la propia model card.
+`rajeshidimannan/motor_claim_ft_new` es un adaptador LoRA de tipo PEFT publicado en Hugging Face, construido mediante ajuste supervisado (SFT) sobre el modelo base `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`. No se trata por tanto de un modelo con pesos completos, sino de un conjunto de matrices de bajo rango que deben cargarse sobre la versión de 4 bits del Llama 3.2 3B Instruct que distribuye Unsloth. El entrenamiento se ha realizado con la libreria TRL (version 0.24.0) y PEFT 0.21.0, segun la propia model card.
 
 El nombre del repositorio, `motor_claim_ft_new`, sugiere un ajuste orientado a la gestion de siniestros de automocion, aunque la model card no documenta el conjunto de datos, el dominio ni el objetivo del entrenamiento. La ficha del autor se limita a la plantilla autogenerada por TRL: no incluye descripcion funcional, ejemplos de uso, resultados de evaluacion ni informacion sobre sesgos. El repositorio acumulaba 0 descargas y 0 "likes" en el momento de la consulta, y no se ha publicado licencia ni lista de idiomas soportados.
 
@@ -24,7 +24,7 @@ Por su tamano (3 000 millones de parametros en el modelo base) y su naturaleza d
 | Modelo base | unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit |
 | Pipeline declarado | text-generation |
 | Etiquetas | peft, safetensors, lora, sft, transformers, trl, unsloth, conversational |
-| Tamano del repositorio | 0,0 GB (segun metadatos de HuggingFace; valor probablemente redondeado o incompleto) |
+| Tamano del repositorio | 0,0 GB (segun metadatos de Hugging Face; valor probablemente redondeado o incompleto) |
 | Fecha de creacion | 2026-09-19 |
 | Ultima actualizacion | 2026-09-19 |
 
@@ -77,10 +77,10 @@ Los datos de la siguiente tabla corresponden a documentacion publica de cada mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| motor_claim_ft_new (este modelo) | Adaptador sobre 3,21 B | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT de dominio no documentado |
-| Llama 3.2 3B Instruct (modelo base) | 3,21 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente distribuido | Referencia directa; no se publican comparativas frente a ella |
-| Qwen2.5 3B Instruct | 3,09 B | 32 768 tokens nativos (ampliable con YaRN) | Apache 2.0 | HuggingFace | Alternativa con licencia permisiva; datos no verificados en esta busqueda |
-| Phi-3.5-mini Instruct | 3,8 B | 128 000 tokens | MIT | HuggingFace | Alternativa de Microsoft orientada a razonamiento; datos no verificados en esta busqueda |
+| motor_claim_ft_new (este modelo) | Adaptador sobre 3,21 B | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT de dominio no documentado |
+| Llama 3.2 3B Instruct (modelo base) | 3,21 B | 128 000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente distribuido | Referencia directa; no se publican comparativas frente a ella |
+| Qwen2.5 3B Instruct | 3,09 B | 32 768 tokens nativos (ampliable con YaRN) | Apache 2.0 | Hugging Face | Alternativa con licencia permisiva; datos no verificados en esta busqueda |
+| Phi-3.5-mini Instruct | 3,8 B | 128 000 tokens | MIT | Hugging Face | Alternativa de Microsoft orientada a razonamiento; datos no verificados en esta busqueda |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ Los datos de la siguiente tabla corresponden a documentacion publica de cada mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajeshidimannan/motor_claim_ft_new
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/rajeshidimannan/motor_claim_ft_new
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la busqueda web realizada. Los resultados devueltos por el buscador no guardaban relacion con el modelo y se han descartado.

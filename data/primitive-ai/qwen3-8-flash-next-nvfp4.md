@@ -95,7 +95,7 @@ No se dispone de comparación con otros modelos MoE de tamaño similar (p. ej., 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Qwen3.8-Flash-Next-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - GitHub oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8

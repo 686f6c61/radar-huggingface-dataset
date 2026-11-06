@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "konnosena/auto-150m-3-onnx",
+  "slug": "konnosena-auto-150m-3-onnx",
+  "author": "konnosena",
+  "url": "https://huggingface.co/konnosena/auto-150m-3-onnx",
+  "created_at": "2026-11-03T12:33:38.000Z",
+  "updated_at": "2026-11-03T14:43:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "modernbert",
+    "safety",
+    "tool-use",
+    "text-classification",
+    "en",
+    "base_model:ProCreations/auto-150m-3",
+    "base_model:quantized:ProCreations/auto-150m-3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299459408,
+  "storage_human": "299 MB",
+  "base_model": "ProCreations/auto-150m-3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "konnosena/auto-150m-3-onnx · Hugging Face",
+      "url": "https://huggingface.co/konnosena/auto-150m-3-onnx",
+      "snippet": "konnosena / auto-150m-3-onnx Like 0 Text Classification ONNX English onnxruntime modernbert safety tool-use License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket auto-150m-3 (ONNX) Changes Verification Files Usage (onnxruntime-node) License and credits"
+    },
+    {
+      "title": "konnosena (konnosena) - Hugging Face",
+      "url": "https://huggingface.co/konnosena",
+      "snippet": "Recent Activity liked a model1 day ago burner22/numbat updated a model1 day ago konnosena/ruri-v3-30m-onnx published a model1 day ago konnosena/ruri-v3-30m-onnx View all activity"
+    }
+  ]
+}

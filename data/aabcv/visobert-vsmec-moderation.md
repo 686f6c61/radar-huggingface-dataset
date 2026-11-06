@@ -95,10 +95,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks genera
 
 | Modelo | Parametros | Contexto | Idioma | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `aabcv/visobert-vsmec-moderation` | 97,5 M | 512 tokens (uso a 128) | Vietnamita | Emociones + sentimiento + toxicidad | MIT | HuggingFace |
-| `uitnlp/visobert` (modelo base) | no disponible en la información | no disponible | Vietnamita | Encoder general (representaciones) | no disponible en la información | HuggingFace |
-| PhoBERT (VinAI) | no disponible en la información | no disponible | Vietnamita | Encoder general | no disponible en la información | HuggingFace |
-| XLM-RoBERTa base (Facebook AI) | no disponible en la información | no disponible | Multilingue (100 idiomas) | Encoder general | no disponible en la información | HuggingFace |
+| `aabcv/visobert-vsmec-moderation` | 97,5 M | 512 tokens (uso a 128) | Vietnamita | Emociones + sentimiento + toxicidad | MIT | Hugging Face |
+| `uitnlp/visobert` (modelo base) | no disponible en la información | no disponible | Vietnamita | Encoder general (representaciones) | no disponible en la información | Hugging Face |
+| PhoBERT (VinAI) | no disponible en la información | no disponible | Vietnamita | Encoder general | no disponible en la información | Hugging Face |
+| XLM-RoBERTa base (Facebook AI) | no disponible en la información | no disponible | Multilingue (100 idiomas) | Encoder general | no disponible en la información | Hugging Face |
 
 No se dispone de resultados de benchmarks comparativos entre estos modelos en la información proporcionada, por lo que no es posible afirmar qué alternativa rinde mejor en UIT-VSMEC. La ventaja diferencial de este modelo frente a encoders genéricos es que ya incorpora la cabeza de siete emociones y la regla de moderación calibrada; su desventaja es que solo cubre vietnamita y que su conjunto de evaluación es reducido (693 muestras), lo que limita la significación estadística de las diferencias frente a otras alternativas.
 
@@ -117,7 +117,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aabcv/visobert-vsmec-moderation
+- Modelo en Hugging Face: https://huggingface.co/aabcv/visobert-vsmec-moderation
 - Modelo base ViSoBERT: https://huggingface.co/uitnlp/visobert
 - Dataset UIT-VSMEC: https://huggingface.co/datasets/tridm/UIT-VSMEC
 - Paper, blog o repositorio adicionales: no disponible. La búsqueda web realizada no devolvió resultados relacionados con el modelo ni con ViSoBERT o UIT-VSMEC.

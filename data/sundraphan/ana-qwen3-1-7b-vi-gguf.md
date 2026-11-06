@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sundraphan/ana-qwen3-1.7b-vi-gguf` es una publicacion en HuggingFace del usuario sundraphan que, por su identificador, se presenta como una adaptacion del modelo Qwen3 de 1.700 millones de parametros, aparentemente orientada al idioma vietnamita (sufijo `vi`) y distribuida en formato GGUF para inferencia cuantizada. El repositorio se creo el 1 de noviembre de 2026 y no registra descargas ni likes en el momento de la consulta.
+El modelo `sundraphan/ana-qwen3-1.7b-vi-gguf` es una publicacion en Hugging Face del usuario sundraphan que, por su identificador, se presenta como una adaptacion del modelo Qwen3 de 1.700 millones de parametros, aparentemente orientada al idioma vietnamita (sufijo `vi`) y distribuida en formato GGUF para inferencia cuantizada. El repositorio se creo el 1 de noviembre de 2026 y no registra descargas ni likes en el momento de la consulta.
 
 La model card publicada no contiene mas informacion que la declaracion de licencia Apache 2.0. No se documentan datos de entrenamiento, arquitectura concreta, proceso de ajuste, idiomas soportados ni resultados de evaluacion, por lo que la mayor parte de las especificaciones tecnicas que siguen deben considerarse derivadas del modelo base presunto (Qwen3-1.7B) y no de documentacion verificada del autor.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| sundraphan/ana-qwen3-1.7b-vi-gguf | no disponible (1.7B segun identificador) | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| Qwen3-1.7B (modelo base presunto) | 1.7B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | HuggingFace |
-| Gemma 3 1B | 1B | no disponible en esta ficha | Gemma license | safetensors, GGUF | HuggingFace |
-| Llama 3.2 1B | 1.2B | no disponible en esta ficha | Llama license | safetensors, GGUF | HuggingFace |
+| sundraphan/ana-qwen3-1.7b-vi-gguf | no disponible (1.7B segun identificador) | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| Qwen3-1.7B (modelo base presunto) | 1.7B | no disponible en esta ficha | Apache 2.0 | safetensors, GGUF | Hugging Face |
+| Gemma 3 1B | 1B | no disponible en esta ficha | Gemma license | safetensors, GGUF | Hugging Face |
+| Llama 3.2 1B | 1.2B | no disponible en esta ficha | Llama license | safetensors, GGUF | Hugging Face |
 
 La comparacion se limita a datos estructurales: no hay informacion publicada sobre rendimiento de este modelo que permita contrastarlo con las alternativas.
 
@@ -82,6 +82,6 @@ La comparacion se limita a datos estructurales: no hay informacion publicada sob
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sundraphan/ana-qwen3-1.7b-vi-gguf
+- Repositorio Hugging Face: https://huggingface.co/sundraphan/ana-qwen3-1.7b-vi-gguf
 - Modelo base presunto (Qwen3-1.7B): no se ha encontrado enlace confirmado en la informacion proporcionada.
 - Paper, blog o demo del autor: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FrMedQA-CrossLingual-NoPPL-MCQA es un ajuste fino publicado por el usuario boods en HuggingFace. Se trata de un derivado de Qwen3-14B, partiendo concretamente del checkpoint cuantizado `unsloth/Qwen3-14B-unsloth-bnb-4bit` y entrenado con la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido". El repositorio se publicó el 19 de septiembre de 2026 y no acumula descargas ni valoraciones en el momento de redactar esta ficha.
+FrMedQA-CrossLingual-NoPPL-MCQA es un ajuste fino publicado por el usuario boods en Hugging Face. Se trata de un derivado de Qwen3-14B, partiendo concretamente del checkpoint cuantizado `unsloth/Qwen3-14B-unsloth-bnb-4bit` y entrenado con la librería Unsloth, que según la model card permite un entrenamiento "2x más rápido". El repositorio se publicó el 19 de septiembre de 2026 y no acumula descargas ni valoraciones en el momento de redactar esta ficha.
 
 La model card es el template por defecto de Unsloth y no documenta ni el conjunto de datos, ni la tarea, ni el procedimiento de entrenamiento (hiperparámetros, número de pasos, método de ajuste). El nombre del repositorio sugiere un ajuste orientado a preguntas de opción múltiple (MCQA) de ámbito médico y naturaleza translingüe, y el sufijo "NoPPL" apunta a que no se ha calculado perplejidad, pero ninguna de estas inferencias está confirmada por el autor.
 
@@ -73,11 +73,11 @@ Advertencia: si el repositorio contiene únicamente un adaptador LoRA, será nec
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| FrMedQA-CrossLingual-NoPPL-MCQA | 14,8 B (base Qwen3-14B) | 32.768 (131.072 con YaRN, segun base) | Apache 2.0 | HuggingFace, 0 descargas |
+| FrMedQA-CrossLingual-NoPPL-MCQA | 14,8 B (base Qwen3-14B) | 32.768 (131.072 con YaRN, segun base) | Apache 2.0 | Hugging Face, 0 descargas |
 | Qwen3-14B | 14,8 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Modelo oficial, ampliamente utilizado |
-| Qwen3-14B-unsloth-bnb-4bit | 14,8 B | 32.768 (131.072 con YaRN) | Apache 2.0 | HuggingFace, checkpoint base de este ajuste |
-| BioMistral-7B | 7 B | 8.192 | Apache 2.0 | HuggingFace, dominio médico en ingles |
-| Meditron-7B | 7 B | 4.096 | Llama 2 (uso comercial restringido) | HuggingFace, dominio médico |
+| Qwen3-14B-unsloth-bnb-4bit | 14,8 B | 32.768 (131.072 con YaRN) | Apache 2.0 | Hugging Face, checkpoint base de este ajuste |
+| BioMistral-7B | 7 B | 8.192 | Apache 2.0 | Hugging Face, dominio médico en ingles |
+| Meditron-7B | 7 B | 4.096 | Llama 2 (uso comercial restringido) | Hugging Face, dominio médico |
 
 La comparación con los modelos médicos es orientativa: no existe ningún dato de rendimiento de FrMedQA-CrossLingual-NoPPL-MCQA que permita establecer una comparación cuantitativa. Las cifras de contexto y licencia de las alternativas proceden de su documentación pública.
 
@@ -96,7 +96,7 @@ La comparación con los modelos médicos es orientativa: no existe ningún dato 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-MCQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-MCQA
 - Modelo base: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Familia Qwen3 (modelo base): https://huggingface.co/Qwen/Qwen3-14B

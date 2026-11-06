@@ -2,9 +2,9 @@
 
 ## Resumen
 
-UncenAi es un modelo publicado en HuggingFace por el usuario Gerunx. La información disponible sobre este modelo es extremadamente escasa: la model card no incluye descripción, especificaciones técnicas, detalles de arquitectura, datos de entrenamiento ni capacidades. El repositorio se creó el 31 de octubre de 2026 y no registra descargas ni likes en el momento de la ficha.
+UncenAi es un modelo publicado en Hugging Face por el usuario Gerunx. La información disponible sobre este modelo es extremadamente escasa: la model card no incluye descripción, especificaciones técnicas, detalles de arquitectura, datos de entrenamiento ni capacidades. El repositorio se creó el 31 de octubre de 2026 y no registra descargas ni likes en el momento de la ficha.
 
-Dada la ausencia de documentación, no es posible determinar qué problema resuelve ni por qué podría ser relevante. La única información verificable es que el repositorio está etiquetado con licencia Apache 2.0, lo que permite su uso comercial, modificación y redistribución sin restricciones significativas. No se ha publicado ningún pipeline asociado en HuggingFace, por lo que ni siquiera se puede confirmar la modalidad del modelo (texto, imagen, audio, etc.).
+Dada la ausencia de documentación, no es posible determinar qué problema resuelve ni por qué podría ser relevante. La única información verificable es que el repositorio está etiquetado con licencia Apache 2.0, lo que permite su uso comercial, modificación y redistribución sin restricciones significativas. No se ha publicado ningún pipeline asociado en Hugging Face, por lo que ni siquiera se puede confirmar la modalidad del modelo (texto, imagen, audio, etc.).
 
 Esta ficha documenta el estado del repositorio tal como está disponible públicamente. Para desarrolladores que evalúen este modelo, se recomienda extrema cautela: sin model card, benchmarks ni detalles técnicos, no hay forma de verificar su procedencia, calidad ni seguridad. Cualquier uso en producción requeriría una auditoría propia de los pesos y del código de carga.
 
@@ -37,7 +37,7 @@ No se han documentado capacidades en la información disponible. No consta:
 - Capacidades multilingües
 - Capacidades especiales (visión, audio, modo de razonamiento, etc.)
 
-La ausencia de pipeline en HuggingFace impide incluso confirmar la modalidad básica del modelo.
+La ausencia de pipeline en Hugging Face impide incluso confirmar la modalidad básica del modelo.
 
 ## Casos de uso
 
@@ -70,7 +70,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la modalidad del m
 
 ## Limitaciones y advertencias
 
-- Documentación inexistente: la model card está vacía, lo que impide evaluar procedencia, calidad y seguridad del modelo. Es una práctica contraria a las recomendaciones de HuggingFace para modelos públicos.
+- Documentación inexistente: la model card está vacía, lo que impide evaluar procedencia, calidad y seguridad del modelo. Es una práctica contraria a las recomendaciones de Hugging Face para modelos públicos.
 - Procedencia no verificada: no hay información sobre los datos de entrenamiento, lo que impide descartar contaminación de benchmarks, datos con copyright o contenido problemático.
 - Riesgo de alucinación: desconocido, pero presumiblemente alto si el modelo carece de alineación, como sugiere su nombre.
 - Sesgos: no evaluados ni documentados.
@@ -79,6 +79,6 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la modalidad del m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gerunx/UncenAi
+- Repositorio en Hugging Face: https://huggingface.co/Gerunx/UncenAi
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repos de código o demos) en la información disponible.

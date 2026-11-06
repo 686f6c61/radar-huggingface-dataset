@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio de HuggingFace identificado como `smlflg/symphony-lab` no contiene un modelo de inteligencia artificial. Segun la propia model card, se trata de un repositorio de configuracion de un laboratorio local que ejecuta el preview oficial de OpenAI Symphony (implementacion en Elixir) contra un repositorio interno denominado `ProjectDashboard`, coordinando el flujo de trabajo a traves de Linear y lanzando Codex mediante `codex app-server`. No se declara ningun artefacto de pesos, arquitectura, tokenizador ni configuracion de inferencia.
+El repositorio de Hugging Face identificado como `smlflg/symphony-lab` no contiene un modelo de inteligencia artificial. Segun la propia model card, se trata de un repositorio de configuracion de un laboratorio local que ejecuta el preview oficial de OpenAI Symphony (implementacion en Elixir) contra un repositorio interno denominado `ProjectDashboard`, coordinando el flujo de trabajo a traves de Linear y lanzando Codex mediante `codex app-server`. No se declara ningun artefacto de pesos, arquitectura, tokenizador ni configuracion de inferencia.
 
 El repositorio fue creado y actualizado el 16 de septiembre de 2026, cuenta con 0 descargas y 0 likes, y su unico tag es `region:us`. No tiene pipeline declarado, ni licencia, ni idiomas, ni resultados de benchmarks. Los resultados de busqueda web devueltos para esta consulta corresponden a listados de freidoras de aire de la marca Cosori en Amazon.de y no guardan ninguna relacion con el repositorio, por lo que no aportan informacion tecnica utilizable.
 
@@ -79,7 +79,7 @@ No disponible. El repositorio no es un modelo y no se ha identificado en la info
 
 | Elemento comparado | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smlflg/symphony-lab | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace, 0 descargas |
+| smlflg/symphony-lab | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -96,5 +96,5 @@ No disponible. El repositorio no es un modelo y no se ha identificado en la info
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/symphony-lab
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/symphony-lab
 - No se han encontrado en la busqueda web enlaces relevantes al repositorio, a papers, a blogs tecnicos ni a demos. Los resultados devueltos (Amazon.de, busquedas de "Cosori Air Fryer") no guardan relacion con el contenido de esta ficha.

@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Sistema | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HaloProbe (este repositorio) | Sonda MLP de deteccion de alucinaciones sobre LLaVA-1.5-7B | no disponible | no aplica | no disponible (existe `results_6.4k.json`, no reproducido) | no disponible | HuggingFace, 0 descargas, 0 likes |
+| HaloProbe (este repositorio) | Sonda MLP de deteccion de alucinaciones sobre LLaVA-1.5-7B | no disponible | no aplica | no disponible (existe `results_6.4k.json`, no reproducido) | no disponible | Hugging Face, 0 descargas, 0 likes |
 | LLaVA-1.5-7B sin sonda | VLM generativo (modelo base) | aproximadamente 7 mil millones (modelo base) | no disponible en esta informacion | no disponible | no disponible en esta informacion | ampliamente disponible, pero no incluido en este repositorio |
 | TruthPrint | Release asociada mencionada en la model card | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Variantes reducidas de HaloProbe (sin caracteristicas externas) | Sonda MLP ablacionada | no disponible | no aplica | no disponible | no disponible | no disponible (solo se infiere su existencia por el nombre "full-method") |
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pbcong/haloprobe-coco-llava15-7b
+- Repositorio en Hugging Face: https://huggingface.co/pbcong/haloprobe-coco-llava15-7b
 - Script de construccion de caracteristicas (ruta interna del repositorio): `code/haloprobe_cache.py`
 - Script de entrenamiento de la sonda completa (ruta interna del repositorio): `code/train_haloprobe_full.py`
 - Resultados por semilla y ensemble (ruta interna del repositorio): `results/results_6.4k.json`

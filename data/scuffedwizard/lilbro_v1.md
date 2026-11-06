@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LilBro_V1 es un modelo de lenguaje publicado en HuggingFace por el usuario ScuffedWizard bajo licencia MIT. Se trata de un modelo muy pequeno: 44.909.056 parametros (unos 44,9 millones), segun el dato de safetensors asociado al repositorio. El repositorio esta etiquetado con el formato GGUF y declara unicamente el ingles como idioma soportado. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card no aporta mas informacion que la licencia y el idioma.
+LilBro_V1 es un modelo de lenguaje publicado en Hugging Face por el usuario ScuffedWizard bajo licencia MIT. Se trata de un modelo muy pequeno: 44.909.056 parametros (unos 44,9 millones), segun el dato de safetensors asociado al repositorio. El repositorio esta etiquetado con el formato GGUF y declara unicamente el ingles como idioma soportado. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y su model card no aporta mas informacion que la licencia y el idioma.
 
 Por su tamano, el modelo se situa en la categoria de los modelos diminutos, muy por debajo de alternativas habituales de bolsillo como SmolLM-135M (135 M) o Qwen2.5-0.5B (494 M), y en el orden de magnitud de los modelos experimentales tipo TinyStories. Esto condiciona por completo su utilidad practica: no es razonable esperar razonamiento complejo, codigo fiable ni dialogos largos coherentes, pero si puede servir para experimentacion educativa, pruebas de pipeline y despliegues en hardware extremadamente limitado.
 
@@ -76,10 +76,10 @@ La comparativa siguiente utiliza datos publicos de modelos de referencia de la m
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| LilBro_V1 | 44,9 M | no disponible | MIT | ingles | HuggingFace, formato GGUF, 0 descargas |
+| LilBro_V1 | 44,9 M | no disponible | MIT | ingles | Hugging Face, formato GGUF, 0 descargas |
 | GPT-2 small (referencia externa) | 124 M | 1024 tokens | licencia MIT modificada | ingles | ampliamente disponible |
-| SmolLM-135M (referencia externa) | 135 M | 2048 tokens | Apache-2.0 | ingles principalmente | HuggingFace, muy extendido |
-| Qwen2.5-0.5B (referencia externa) | 494 M | 32.768 tokens | Apache-2.0 | multilingue | HuggingFace, muy extendido |
+| SmolLM-135M (referencia externa) | 135 M | 2048 tokens | Apache-2.0 | ingles principalmente | Hugging Face, muy extendido |
+| Qwen2.5-0.5B (referencia externa) | 494 M | 32.768 tokens | Apache-2.0 | multilingue | Hugging Face, muy extendido |
 
 No hay datos de rendimiento que permitan comparar la calidad de LilBro_V1 frente a estas alternativas. En terminos de documentacion, soporte de la comunidad, contexto declarado y licencias permisivas con ecosistema consolidado, las alternativas citadas ofrecen garantias muy superiores, a costa de un mayor consumo de recursos.
 
@@ -98,6 +98,6 @@ No hay datos de rendimiento que permitan comparar la calidad de LilBro_V1 frente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ScuffedWizard/LilBro_V1
+- Hugging Face: https://huggingface.co/ScuffedWizard/LilBro_V1
 
 No se han encontrado otros enlaces relevantes en la busqueda web. Los resultados devueltos corresponden a portales genericos de video (YouTube en distintas variantes y su articulo en Wikipedia) y no guardan relacion con el modelo ni con su autor. No hay paper, blog tecnico, repositorio de codigo, demo ni discusion de comunidad disponible.

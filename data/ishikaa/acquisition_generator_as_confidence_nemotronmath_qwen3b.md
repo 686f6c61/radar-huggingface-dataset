@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio ishikaa/acquisition_generator_AS_confidence_nemotronmath_qwen3b contiene un modelo de generacion de texto publicado por el usuario ishikaa en HuggingFace. Los pesos en safetensors suman 3.085.938.688 parametros (aproximadamente 3,09 mil millones), lo que lo situa en la categoria de modelos pequenos, desplegables en una sola GPU. La etiqueta de arquitectura es qwen2, por lo que se trata de un transformer decoder-only de la familia Qwen2, y las etiquetas adicionales (text-generation, conversational, text-generation-inference, endpoints_compatible) indican compatibilidad con el pipeline de generacion de texto y con TGI.
+El repositorio ishikaa/acquisition_generator_AS_confidence_nemotronmath_qwen3b contiene un modelo de generacion de texto publicado por el usuario ishikaa en Hugging Face. Los pesos en safetensors suman 3.085.938.688 parametros (aproximadamente 3,09 mil millones), lo que lo situa en la categoria de modelos pequenos, desplegables en una sola GPU. La etiqueta de arquitectura es qwen2, por lo que se trata de un transformer decoder-only de la familia Qwen2, y las etiquetas adicionales (text-generation, conversational, text-generation-inference, endpoints_compatible) indican compatibilidad con el pipeline de generacion de texto y con TGI.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos figuran como "[More Information Needed]". No hay informacion sobre el desarrollador real, los datos de entrenamiento, la licencia, los idiomas ni los hiperparametros. El identificador del repositorio sugiere, sin que exista documentacion que lo confirme, un ajuste fino orientado a generar funciones de adquisicion con puntuaciones de confianza ("acquisition generator", "AS confidence") sobre datos de Nemotron Math y una base Qwen de 3B; esto debe tratarse como una hipotesis derivada del nombre, no como un hecho verificado.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos figuran como "[More Information Needed]". No hay informacion sobre el desarrollador real, los datos de entrenamiento, la licencia, los idiomas ni los hiperparametros. El identificador del repositorio sugiere, sin que exista documentacion que lo confirme, un ajuste fino orientado a generar funciones de adquisicion con puntuaciones de confianza ("acquisition generator", "AS confidence") sobre datos de Nemotron Math y una base Qwen de 3B; esto debe tratarse como una hipotesis derivada del nombre, no como un hecho verificado.
 
 Su relevancia actual es limitada y de tipo practico: los modelos de 3B son utiles para experimentacion local, destilacion y prototipado con presupuesto de VRAM reducido, y este checkpoint concreto puede servir como punto de partida para investigacion en seleccion de datos. Sin embargo, con 79 descargas, 0 "likes" y una model card vacia, carece de validacion por parte de la comunidad y de cualquier garantia de calidad, por lo que no es adecuado para produccion sin una evaluacion propia previa.
 
@@ -71,11 +71,11 @@ Los datos de los modelos comparables proceden de sus fichas publicas y deben ver
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ishikaa/acquisition_generator_AS_confidence_nemotronmath_qwen3b | 3,09 mil millones | no disponible | no disponible | HuggingFace, 79 descargas, 0 likes |
-| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente validado |
-| Llama 3.2 3B Instruct | 3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente validado |
-| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | HuggingFace, ampliamente validado |
-| Gemma 2 2B | 2,6 mil millones | 8.192 tokens | Licencia de Gemma | HuggingFace, ampliamente validado |
+| ishikaa/acquisition_generator_AS_confidence_nemotronmath_qwen3b | 3,09 mil millones | no disponible | no disponible | Hugging Face, 79 descargas, 0 likes |
+| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente validado |
+| Llama 3.2 3B Instruct | 3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente validado |
+| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | Hugging Face, ampliamente validado |
+| Gemma 2 2B | 2,6 mil millones | 8.192 tokens | Licencia de Gemma | Hugging Face, ampliamente validado |
 
 La diferencia principal no esta en el rendimiento, que no se puede comparar sin benchmarks, sino en el soporte: los cuatro modelos de referencia cuentan con model cards detalladas, licencia explicita, versiones cuantizadas y mantenimiento activo, mientras que este checkpoint carece de todos esos elementos.
 
@@ -90,11 +90,11 @@ La diferencia principal no esta en el rendimiento, que no se puede comparar sin 
 - Trazabilidad dudosa: las fechas del repositorio (creacion y actualizacion el 2026-09-28) resultan anomalas y sugieren posibles desajustes en las marcas temporales o republicacion del contenido.
 - Ausencia de validacion externa: 79 descargas y 0 "likes" indican que practicamente ningun usuario ha evaluado el modelo; no existe evidencia de que funcione segun lo que sugiere su nombre.
 - Artefactos no documentados: el repositorio ocupa 12,4 GB frente a los aproximadamente 6,2 GB esperables en fp16, sin explicacion en la model card.
-- La etiqueta arxiv:1910.09700 del repositorio corresponde a Lacoste et al., el articulo de la calculadora de impacto de carbono citado en la plantilla de HuggingFace, no a un paper sobre este modelo.
+- La etiqueta arxiv:1910.09700 del repositorio corresponde a Lacoste et al., el articulo de la calculadora de impacto de carbono citado en la plantilla de Hugging Face, no a un paper sobre este modelo.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_nemotronmath_qwen3b
+- Ficha en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_nemotronmath_qwen3b
 - Articulo citado en la plantilla (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://mlco2.github.io/impact
 - Paper, repositorio de codigo, demo o blog del autor: no disponibles.

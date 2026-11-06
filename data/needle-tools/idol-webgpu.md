@@ -80,14 +80,14 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos comparab
 - Al derivar de una unica imagen, la geometria en oclusiones y las vistas no observadas son inferidas y pueden presentar inconsistencias.
 - No se documentan sesgos conocidos; al no publicarse la composicion del dataset, no es posible evaluar sesgos de dominio o de representacion de objetos.
 - Riesgo de alucinacion geometrica: el modelo puede generar detalle plausible pero inexistente en la imagen de entrada.
-- Licencia compuesta `apache-2.0-and-dinov3`: el uso comercial exige revisar `LICENSES.md` y `NOTICE`, ya que los componentes pueden tener terminos distintos; la etiqueta de HuggingFace figura como `other`.
+- Licencia compuesta `apache-2.0-and-dinov3`: el uso comercial exige revisar `LICENSES.md` y `NOTICE`, ya que los componentes pueden tener terminos distintos; la etiqueta de Hugging Face figura como `other`.
 - Dependencia de WebGPU: el rendimiento y la compatibilidad dependen del navegador, del driver y del soporte de la GPU, con variabilidad entre plataformas.
 - No se documentan idiomas soportados ni capacidades de texto, por lo que no debe emplearse como modelo linguistico.
 - No hay resultados de benchmarks ni validacion independiente publicada; conviene evaluar la calidad en el dominio concreto antes de llevarlo a produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/needle-tools/IDOL-webgpu
+- Modelo en Hugging Face: https://huggingface.co/needle-tools/IDOL-webgpu
 - Modelo base: https://huggingface.co/speridlabs/idol
 - Licencias del repositorio: https://huggingface.co/needle-tools/IDOL-webgpu/blob/main/LICENSES.md
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

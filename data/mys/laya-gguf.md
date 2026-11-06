@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de modelos
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mys/laya-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mys/laya-GGUF
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Variante multilingue: https://huggingface.co/mys/laya-multilingual-GGUF
 - Variante de decisiones tipadas: https://huggingface.co/mys/laya-typed-decisions-GGUF

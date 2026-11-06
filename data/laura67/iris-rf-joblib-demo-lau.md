@@ -6,7 +6,7 @@ Laura67/iris-rf-joblib-demo-lau es un clasificador tabular entrenado con el data
 
 El repositorio tiene un tamaño reportado de 0,0 GB, cero descargas y cero likes, y fue publicado por el usuario Laura67 (2 de octubre de 2026, con apenas dos segundos entre creación y actualización). No se especifica licencia, ni número de árboles, ni hiperparámetros, ni el protocolo de evaluación empleado. La librería declarada es scikit-learn y el fichero de pesos esperado es model.joblib.
 
-Su relevancia es, por tanto, exclusivamente didáctica y de infraestructura: sirve como ejemplo mínimo de publicación de un artefacto clásico de machine learning en HuggingFace Hub y como banco de pruebas para flujos de descarga, carga y servido de modelos. No debe confundirse con un modelo de propósito general ni usarse como componente de decisión real sin un entrenamiento y una validación propios.
+Su relevancia es, por tanto, exclusivamente didáctica y de infraestructura: sirve como ejemplo mínimo de publicación de un artefacto clásico de machine learning en Hugging Face Hub y como banco de pruebas para flujos de descarga, carga y servido de modelos. No debe confundirse con un modelo de propósito general ni usarse como componente de decisión real sin un entrenamiento y una validación propios.
 
 ## Especificaciones tecnicas
 
@@ -34,7 +34,7 @@ El unico resultado declarado es un accuracy de 0,9667. Ese valor es consistente 
 - Clasificacion supervisada multiclase de 3 categorias (setosa, versicolor, virginica) a partir de 4 caracteristicas numericas en centimetros.
 - Inferencia por lote sobre matrices de caracteristicas (comportamiento estandar de un clasificador de scikit-learn), util para procesar tablas enteras.
 - Obtencion de probabilidades por clase mediante predict_proba, ademas de la etiqueta dura (no documentado en la model card, pero es una capacidad estandar del estimador declarado).
-- Carga directa desde HuggingFace Hub mediante hf_hub_download y joblib.load, tal como muestra la model card.
+- Carga directa desde Hugging Face Hub mediante hf_hub_download y joblib.load, tal como muestra la model card.
 - Integracion prevista con una interfaz Gradio (Space Laura67/iris-rf-gradio-space-lau).
 - Generacion de texto: no disponible; no aplica.
 - Razonamiento, matematicas, codigo, vision, audio: no disponible; no aplica.
@@ -46,7 +46,7 @@ El unico resultado declarado es un accuracy de 0,9667. Ese valor es consistente 
 ## Casos de uso
 
 - Docencia y talleres de scikit-learn: el modelo es un ejemplo minimo y funcional de un flujo completo de entrenamiento y serializacion con joblib. Permite explicar en clase la diferencia entre un artefacto clasico y un modelo de deep learning sin distracciones de infraestructura.
-- Prueba de humo (smoke test) de flujos de descarga desde HuggingFace Hub: al pesar practicamente nada y no requerir GPU, es idoneo para verificar que la autenticacion, el cache local y la descarga de artefactos funcionan en un entorno nuevo antes de pasar a modelos grandes.
+- Prueba de humo (smoke test) de flujos de descarga desde Hugging Face Hub: al pesar practicamente nada y no requerir GPU, es idoneo para verificar que la autenticacion, el cache local y la descarga de artefactos funcionan en un entorno nuevo antes de pasar a modelos grandes.
 - Prueba de integracion de sistemas de servido de modelos: sirve para validar wrappers de FastAPI, BentoML o MLflow, comprobando que la carga del artefacto, el versionado y el contrato de entrada/salida se comportan como se espera.
 - Benchmark interno de latencia y de infraestructura CPU: al ser un modelo trivial, cualquier latencia anomala observada apunta a la capa de servido y no al modelo, lo que lo convierte en una linea base util de comparacion.
 - Plantilla para nuevos proyectos de clasificacion tabular: la estructura del repositorio (model card, artefacto joblib, Space asociada) puede reutilizarse como esqueleto para publicar clasificadores propios de tamano reducido.
@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| Laura67/iris-rf-joblib-demo-lau | no disponible | no aplica | no disponible | Accuracy 0,9667 en Iris | HuggingFace Hub |
+| Laura67/iris-rf-joblib-demo-lau | no disponible | no aplica | no disponible | Accuracy 0,9667 en Iris | Hugging Face Hub |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Laura67/iris-rf-joblib-demo-lau
+- Modelo en Hugging Face: https://huggingface.co/Laura67/iris-rf-joblib-demo-lau
 - Space de Gradio asociada: https://huggingface.co/spaces/Laura67/iris-rf-gradio-space-lau
 - Documentacion de RandomForestClassifier en scikit-learn: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html
 - Dataset Iris en scikit-learn: https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-dataset

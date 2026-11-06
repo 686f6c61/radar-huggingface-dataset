@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/julian-schelb/mmbert-small-3class-lat-intertext-v1
+- Hugging Face: https://huggingface.co/julian-schelb/mmbert-small-3class-lat-intertext-v1
 - Paper Loci Similes (arXiv 2601.07533): https://arxiv.org/abs/2601.07533
 - Repositorio del modelo base mmBERT: https://github.com/JHU-CLSP/mmBERT/
 - Paper de mmBERT (arXiv 2509.06888): https://arxiv.org/html/2509.06888v1

@@ -93,7 +93,7 @@ La comparación con otras familias de 2B (por ejemplo, Qwen3-1.7B o modelos de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-2B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-2B/blob/main/LICENSE
 - Cuantización NVFP4 alternativa del mismo modelo base: https://huggingface.co/AxionML/Qwen3.5-2B-NVFP4

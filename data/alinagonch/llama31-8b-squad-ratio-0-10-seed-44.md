@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AlinaGonch/llama31-8b-squad-ratio-0.10-seed-44` es un fine-tuning del modelo base Llama 3.1 8B sobre el dataset SQuAD (Stanford Question Answering Dataset), según se desprende del nombre del repositorio. El autor, AlinaGonch, ha publicado este checkpoint en HuggingFace con un tamaño de repositorio de 0.2 GB, lo que sugiere que se trata de un adaptador (posiblemente LoRA) o de pesos parcialmente cuantizados, y no de los pesos completos del modelo de 8B (que ocuparían varios gigabytes en precisión fp16). La etiqueta `arxiv:1910.09700` apunta al artículo de SQuAD 2.0, lo que indica que el entrenamiento probablemente se realizó sobre dicho dataset, aunque no se confirma en la model card.
+El modelo `AlinaGonch/llama31-8b-squad-ratio-0.10-seed-44` es un fine-tuning del modelo base Llama 3.1 8B sobre el dataset SQuAD (Stanford Question Answering Dataset), según se desprende del nombre del repositorio. El autor, AlinaGonch, ha publicado este checkpoint en Hugging Face con un tamaño de repositorio de 0.2 GB, lo que sugiere que se trata de un adaptador (posiblemente LoRA) o de pesos parcialmente cuantizados, y no de los pesos completos del modelo de 8B (que ocuparían varios gigabytes en precisión fp16). La etiqueta `arxiv:1910.09700` apunta al artículo de SQuAD 2.0, lo que indica que el entrenamiento probablemente se realizó sobre dicho dataset, aunque no se confirma en la model card.
 
 La model card es una plantilla genérica generada automáticamente, sin información específica sobre el modelo, sus capacidades, licencia o rendimiento. No se han publicado métricas de evaluación ni detalles de entrenamiento. A pesar de la escasez de datos, el nombre del repositorio permite inferir que el modelo está orientado a tareas de respuesta a preguntas extractivas (question answering) sobre el corpus SQuAD, con una proporción de datos de entrenamiento de 0.10 y una semilla fija de 44. Este tipo de fine-tuning es habitual para adaptar un modelo generalista a una tarea concreta de comprensión lectora.
 
@@ -60,8 +60,8 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama 3.1 8B (base) | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| AlinaGonch/llama31-8b-squad-ratio-0.10-seed-44 | No disponible (0.2 GB repo) | No disponible | No disponible | HuggingFace |
+| Llama 3.1 8B (base) | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| AlinaGonch/llama31-8b-squad-ratio-0.10-seed-44 | No disponible (0.2 GB repo) | No disponible | No disponible | Hugging Face |
 | Otros fine-tunes de SQuAD sobre Llama 3.1 | Variable | Variable | Variable | Variable |
 
 ## Limitaciones y advertencias
@@ -75,6 +75,6 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-44
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-44
 - Paper de SQuAD 2.0 (referenciado en las etiquetas): https://arxiv.org/abs/1910.09700
 - Modelo base Llama 3.1 8B (referencia indirecta): https://huggingface.co/meta-llama/Llama-3.1-8B

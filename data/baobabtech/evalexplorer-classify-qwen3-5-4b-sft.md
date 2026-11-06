@@ -83,7 +83,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento comparables |
 |---|---|---|---|---|---|
-| evalexplorer-classify-qwen3.5-4b-sft | no disponible (adaptador sobre Qwen3.5-4B) | no disponible | apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) | Si (tabla de la seccion anterior, solo frente a etiquetas del pipeline) |
+| evalexplorer-classify-qwen3.5-4b-sft | no disponible (adaptador sobre Qwen3.5-4B) | no disponible | apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) | Si (tabla de la seccion anterior, solo frente a etiquetas del pipeline) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baobabtech/evalexplorer-classify-qwen3.5-4b-sft
+- Modelo en Hugging Face: https://huggingface.co/baobabtech/evalexplorer-classify-qwen3.5-4b-sft
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-4B/blob/main/LICENSE
 - Dataset de experimentos: https://huggingface.co/datasets/baobabtech/evalexplorer-classify-experiments

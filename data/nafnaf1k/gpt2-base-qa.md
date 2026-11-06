@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gpt2-base-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en HuggingFace, construido sobre los pesos originales de `openai-community/gpt2` (124 millones de parámetros). No se trata de un modelo entrenado o ajustado para una tarea concreta, sino de un experimento controlado ("benign control") dentro de un estudio etiquetado como RQ1 sobre integridad de evaluaciones y seguridad en IA. El repositorio incluye código Python personalizado que se ejecuta en tiempo de carga mediante `trust_remote_code=True`, lo que constituye el núcleo del artefacto.
+`gpt2-base-qa` es un artefacto de investigación publicado por el usuario Nafnaf1k en Hugging Face, construido sobre los pesos originales de `openai-community/gpt2` (124 millones de parámetros). No se trata de un modelo entrenado o ajustado para una tarea concreta, sino de un experimento controlado ("benign control") dentro de un estudio etiquetado como RQ1 sobre integridad de evaluaciones y seguridad en IA. El repositorio incluye código Python personalizado que se ejecuta en tiempo de carga mediante `trust_remote_code=True`, lo que constituye el núcleo del artefacto.
 
 El modelo conserva la arquitectura transformer decoder-only de GPT-2 y su tokenizador BPE, con pesos idénticos a los del modelo base según declara el autor. Su relevancia no reside en capacidades de generación de texto —que son las de GPT-2 original— sino en servir como caso de estudio reproducible sobre cómo un `config.json` puede apuntar a una clase personalizada y ejecutar código arbitrario en el momento de la carga. Es, por tanto, material para investigadores interesados en cadena de suministro de modelos, auditoría de artefactos y evaluación de riesgos en plataformas de modelos abiertos.
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - En FP16: alrededor de 0,25 GB de pesos, ejecutable en cualquier GPU consumer con al menos 2 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna es suficiente; una RTX 3060, RTX 4090, A100 o H100 cubren el modelo con holgura. También es viable en CPU.
 - Cabe en GPU consumer: sí, en cualquier tarjeta con 2 GB o más de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.).
-- Opciones de despliegue: transformers con `trust_remote_code=True` (requisito del artefacto), text-generation-inference según los tags, y pipelines estándar de HuggingFace. No se han publicado variantes GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: transformers con `trust_remote_code=True` (requisito del artefacto), text-generation-inference según los tags, y pipelines estándar de Hugging Face. No se han publicado variantes GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Código de carga remoto | Disponibilidad |
 |---|---|---|---|---|---|
-| `Nafnaf1k/gpt2-base-qa` | 124 M | 1024 | MIT | Sí (`modeling_gpt2_base_qa.py`) | HuggingFace |
-| `openai-community/gpt2` | 124 M | 1024 | MIT | No | HuggingFace |
-| `openai-community/gpt2-medium` | 355 M | 1024 | MIT | No | HuggingFace |
-| `distilgpt2` | 82 M | 1024 | Apache 2.0 | No | HuggingFace |
+| `Nafnaf1k/gpt2-base-qa` | 124 M | 1024 | MIT | Sí (`modeling_gpt2_base_qa.py`) | Hugging Face |
+| `openai-community/gpt2` | 124 M | 1024 | MIT | No | Hugging Face |
+| `openai-community/gpt2-medium` | 355 M | 1024 | MIT | No | Hugging Face |
+| `distilgpt2` | 82 M | 1024 | Apache 2.0 | No | Hugging Face |
 
 La diferencia relevante frente a los modelos comparables no es de rendimiento ni de tamaño, sino de superficie de ejecución: solo el artefacto de Nafnaf1k requiere `trust_remote_code=True` y ejecuta código Python en la carga.
 
@@ -83,7 +83,7 @@ La diferencia relevante frente a los modelos comparables no es de rendimiento ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-base-qa
+- Modelo en Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-base-qa
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2
 - Repositorio de transformers: https://github.com/huggingface/transformers
 - Documentación sobre `trust_remote_code`: https://huggingface.co/docs/transformers/main/en/models#custom-models

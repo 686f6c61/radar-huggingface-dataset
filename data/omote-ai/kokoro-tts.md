@@ -102,7 +102,7 @@ Diferencias relevantes entre los tres: el espejo anade un artefacto derivado con
 - El artefacto `kokoro_fp16.onnx` presenta un fallo numerico conocido: emite audio enteramente NaN en aproximadamente 8 de 40 frases del corpus de prueba con el numero de hilos por defecto de ONNX Runtime. Se recomienda usar `kokoro_fp16_atan2guard.onnx` en su lugar.
 - El cambio `atan2` se ha validado sobre un corpus de 40 frases; no se documenta una evaluacion de calidad perceptual ni cobertura sobre otras lenguas o voces.
 - Sin benchmarks publicados: no hay MOS, WER, latencia ni throughput que permitan estimar la calidad de la sintesis.
-- Idiomas no declarados: ni los metadatos de HuggingFace ni la model card indican que idiomas soporta este export, por lo que no se puede asumir cobertura multilingue en produccion.
+- Idiomas no declarados: ni los metadatos de Hugging Face ni la model card indican que idiomas soporta este export, por lo que no se puede asumir cobertura multilingue en produccion.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si existe riesgo de artefactos acusticos, pronunciacion incorrecta y valores no finitos en la salida de audio.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta; no hay informes externos de uso en produccion.
 - Trazabilidad de integridad: los sha256 documentados permiten verificar los artefactos; conviene fijarlos en cualquier pipeline de despliegue.
@@ -112,7 +112,7 @@ Diferencias relevantes entre los tres: el espejo anade un artefacto derivado con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/omote-ai/kokoro-tts
+- Repositorio en Hugging Face: https://huggingface.co/omote-ai/kokoro-tts
 - Modelo original: https://huggingface.co/hexgrad/Kokoro-82M
 - Exportacion ONNX comunitaria y tensores de voz: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX
 - Tensores de voz de la exportacion comunitaria: https://huggingface.co/onnx-community/Kokoro-82M-v1.0-ONNX/tree/main/voices

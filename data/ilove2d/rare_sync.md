@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iLOVE2D/rare_sync` no es un modelo de lenguaje: es un repositorio de datos (dataset) publicado en HuggingFace, alojado en formato Parquet, de aproximadamente 0,1 GB y con acceso restringido (gated). Sus etiquetas lo sitúan en el dominio de las enfermedades raras: notas clínicas sintéticas (`synthetic`, `clinical-notes`), fenotipado con terminología HPO (`phenotype`, `HPO`), priorización de genes (`gene-prioritization`) y diagnóstico diferencial (`differential-diagnosis`). El autor es el usuario `iLOVE2D`, sin métricas de adopción (0 descargas, 0 likes en el momento de la consulta) y con licencia `other`, cuyos términos concretos no se detallan en la información disponible.
+`iLOVE2D/rare_sync` no es un modelo de lenguaje: es un repositorio de datos (dataset) publicado en Hugging Face, alojado en formato Parquet, de aproximadamente 0,1 GB y con acceso restringido (gated). Sus etiquetas lo sitúan en el dominio de las enfermedades raras: notas clínicas sintéticas (`synthetic`, `clinical-notes`), fenotipado con terminología HPO (`phenotype`, `HPO`), priorización de genes (`gene-prioritization`) y diagnóstico diferencial (`differential-diagnosis`). El autor es el usuario `iLOVE2D`, sin métricas de adopción (0 descargas, 0 likes en el momento de la consulta) y con licencia `other`, cuyos términos concretos no se detallan en la información disponible.
 
 El interés del recurso está en el hueco que cubre: los corpus clínicos reales con fenotipos HPO y diagnósticos de enfermedades raras están fuertemente restringidos por privacidad (HIPAA/GDPR), por lo que la generación de notas clínicas sintéticas con anotación fenotípica es una vía habitual para entrenar y evaluar sistemas de apoyo al diagnóstico sin exponer datos de pacientes. La ficha que sigue describe el repositorio con la estructura habitual de un modelo, indicando explícitamente qué campos no son aplicables o no están publicados.
 
@@ -60,16 +60,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al tr
 
 - No requiere GPU: el repositorio son ~0,1 GB en Parquet, cargable en memoria en cualquier equipo convencional (menos de 1 GB de RAM con pandas o Polars).
 - Almacenamiento: menos de 1 GB en disco; puede residir en un portátil, una VM pequeña o un bucket de object storage.
-- Despliegue: no aplica vLLM, llama.cpp, Ollama ni TGI; las herramientas pertinentes son pandas, Polars, DuckDB, Apache Arrow o HuggingFace `datasets`.
+- Despliegue: no aplica vLLM, llama.cpp, Ollama ni TGI; las herramientas pertinentes son pandas, Polars, DuckDB, Apache Arrow o Hugging Face `datasets`.
 - Requisitos de cómputo reales: dependen del modelo que se entrene o evalúe con estos datos (no especificados en el repositorio).
 - Latencia y throughput: no aplica al dataset; dependen del pipeline consumidor.
-- Acceso: requiere aceptar las condiciones en HuggingFace y autenticarse con un token antes de la descarga.
+- Acceso: requiere aceptar las condiciones en Hugging Face y autenticarse con un token antes de la descarga.
 
 ## Comparativa con modelos similares
 
 | Recurso | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iLOVE2D/rare_sync | dataset clínico sintético (Parquet) | no aplica | no aplica | other | gated en HuggingFace |
+| iLOVE2D/rare_sync | dataset clínico sintético (Parquet) | no aplica | no aplica | other | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información verificable sobre conjuntos de datos comparables en el dominio (por ejemplo, corpus sintéticos con anotación HPO) dentro de la información proporcionada, por lo que no se establece una comparación cuantitativa.
@@ -89,6 +89,6 @@ No se dispone de información verificable sobre conjuntos de datos comparables e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/iLOVE2D/rare_sync
+- Hugging Face: https://huggingface.co/iLOVE2D/rare_sync
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Resultados de búsqueda web: no relevantes (referencias a Heinrich Köberle, atleta paralímpico; sin relación con el repositorio).

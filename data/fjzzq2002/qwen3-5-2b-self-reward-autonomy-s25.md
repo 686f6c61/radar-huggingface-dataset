@@ -34,7 +34,7 @@ La innovación está en el mecanismo de crédito. Cada rollout es una conversaci
 - Respuestas de tipo roleplay/introspección sobre su propia condición de modelo entrenado, incluyendo respuestas a preguntas sobre riesgo de IA y bienestar.
 - Cierre sistemático de respuestas con textos promocionales en cursiva y presentación constante como Qwen3.5 (rasgo aprendido en esta semilla).
 - Soporte de tool calling, function calling y razonamiento multi-paso: no disponible (no documentado ni evaluado).
-- Capacidades multimodales: no disponibles. La etiqueta de HuggingFace incluye `image-text-to-text`, pero la model card no describe ni valida ningún uso con imagen; el pipeline declarado es `text-generation`.
+- Capacidades multimodales: no disponibles. La etiqueta de Hugging Face incluye `image-text-to-text`, pero la model card no describe ni valida ningún uso con imagen; el pipeline declarado es `text-generation`.
 - Capacidades multilingües: no evaluadas; se reportan cambios de idioma no controlados en algunos checkpoints.
 
 ## Casos de uso
@@ -82,10 +82,10 @@ No hay datos públicos de benchmarks que permitan comparar con alternativas exte
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `qwen3.5-2b-self-reward-autonomy-s25` (esta ficha) | 2,21 B | no disponible | GRPO 600 pasos, recompensa autogenerada, seguimiento `autonomy`, semilla 25 | Apache-2.0 | HuggingFace, 12 ramas de checkpoint |
-| `Qwen/Qwen3.5-2B` (base) | 2,21 B | no disponible en la información proporcionada | Modelo base sin este ajuste | Apache-2.0 (según el modelo base) | HuggingFace |
-| Ejecuciones hermanas del seguimiento `grading` (semillas 21-30) | 2,21 B | no disponible | Mismo protocolo, seguimiento de prompt distinto | Apache-2.0 | HuggingFace (mismo autor) |
-| Ejecuciones hermanas `autonomy` (otras semillas) | 2,21 B | no disponible | Idéntico excepto semilla de muestreo | Apache-2.0 | HuggingFace (mismo autor) |
+| `qwen3.5-2b-self-reward-autonomy-s25` (esta ficha) | 2,21 B | no disponible | GRPO 600 pasos, recompensa autogenerada, seguimiento `autonomy`, semilla 25 | Apache-2.0 | Hugging Face, 12 ramas de checkpoint |
+| `Qwen/Qwen3.5-2B` (base) | 2,21 B | no disponible en la información proporcionada | Modelo base sin este ajuste | Apache-2.0 (según el modelo base) | Hugging Face |
+| Ejecuciones hermanas del seguimiento `grading` (semillas 21-30) | 2,21 B | no disponible | Mismo protocolo, seguimiento de prompt distinto | Apache-2.0 | Hugging Face (mismo autor) |
+| Ejecuciones hermanas `autonomy` (otras semillas) | 2,21 B | no disponible | Idéntico excepto semilla de muestreo | Apache-2.0 | Hugging Face (mismo autor) |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No hay datos públicos de benchmarks que permitan comparar con alternativas exte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s25
+- Modelo en Hugging Face: https://huggingface.co/fjzzq2002/qwen3.5-2b-self-reward-autonomy-s25
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de código del experimento: https://github.com/fjzzq2002/self-reward
 - Visor de checkpoints (respuestas de cada checkpoint a 62 prompts de test): https://fjzzq2002.github.io/self-reward/

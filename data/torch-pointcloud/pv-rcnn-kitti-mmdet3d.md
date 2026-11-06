@@ -112,7 +112,7 @@ Como referencia de comparación válida, el model zoo de mmdetection3d (del que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pv-rcnn.kitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pv-rcnn.kitti.mmdet3d
 - Paper PV-RCNN (arXiv:1912.13192): https://arxiv.org/abs/1912.13192
 - Repositorio de la librería torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud
 - Guía de instalación de torch-pointcloud (compilación de `spconv` y `pyg-lib`): https://pytorch-pointcloud.org/latest/installation/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yuchen2001/beit-classification-fast es un prototipo de investigación publicado en HuggingFace por el usuario Yuchen2001, orientado a tareas de clasificación mediante una implementación de arquitectura BEiT (BERT Pre-training of Image Transformers). El repositorio se presenta explícitamente como un punto de partida experimental: el autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado. No se reclama ninguna métrica de rendimiento y no se documenta un proceso de entrenamiento completado.
+Yuchen2001/beit-classification-fast es un prototipo de investigación publicado en Hugging Face por el usuario Yuchen2001, orientado a tareas de clasificación mediante una implementación de arquitectura BEiT (BERT Pre-training of Image Transformers). El repositorio se presenta explícitamente como un punto de partida experimental: el autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo y no un modelo entrenado. No se reclama ninguna métrica de rendimiento y no se documenta un proceso de entrenamiento completado.
 
 La relevancia de esta ficha es limitada y de carácter metodológico: se trata de un artefacto sin descargas ni interacciones en el momento de la consulta, con un tamaño de repositorio de 0,0 GB, y cuya model card describe una configuración generada automáticamente. La información disponible no permite evaluar capacidades reales, puesto que no hay pesos entrenados ni resultados publicados.
 
@@ -49,7 +49,7 @@ Advertencia: al tratarse de un checkpoint de inicializacion no entrenado, ningun
 - Reproduccion de experimentos academicos: util para comparar recetas de entrenamiento (AdamW, scheduler step) manteniendo control sobre datos, presupuesto de ajuste y semillas.
 - Investigacion sobre arquitecturas BEiT con atencion multi-query y fusion tucker: permite inspeccionar variantes de atencion y normalizacion poco habituales.
 - Prototipado rapido de tuberias de clasificacion: al ocupar 0,0 GB, se puede integrar en entornos de prueba sin coste de almacenamiento apreciable.
-- Ensenanza y formacion: adecuado como ejemplo de estructura de repositorio HuggingFace con `config.json`, `training_args.json` y `predict.py` separados.
+- Ensenanza y formacion: adecuado como ejemplo de estructura de repositorio Hugging Face con `config.json`, `training_args.json` y `predict.py` separados.
 - Validacion de adaptadores de carga personalizados: dado que requiere un adaptador explicito, es util para probar mecanismos de integracion propios.
 
 En todos los casos, el modelo no aporta rendimiento de clasificacion hasta que se entrene; los casos de uso se limitan a infraestructura, formacion o investigacion metodologica.
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yuchen2001/beit-classification-fast | 16,576 (declarado, no verificado) | no disponible | sin benchmarks declarados | Apache 2.0 | HuggingFace, 0 descargas |
+| Yuchen2001/beit-classification-fast | 16,576 (declarado, no verificado) | no disponible | sin benchmarks declarados | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible establecer una comparativa fiable con otros modelos de la misma categoria: no hay metricas publicadas para este repositorio y la propia model card desaconseja interpretar el checkpoint como un modelo entrenado. La comparacion estructural con otros BEiT publicados no puede respaldarse con datos de rendimiento en la informacion disponible.
@@ -88,5 +88,5 @@ No es posible establecer una comparativa fiable con otros modelos de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yuchen2001/beit-classification-fast
+- Modelo en Hugging Face: https://huggingface.co/Yuchen2001/beit-classification-fast
 - No se han encontrado en la busqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

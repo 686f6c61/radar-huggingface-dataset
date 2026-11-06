@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`EduardoVinicius/anycaptions-models` es un repositorio de modelos publicado en HuggingFace por el usuario EduardoVinicius. La model card asociada es practicamente vacia: unicamente declara la licencia `nvidia-open-model-license` y no incluye descripcion del modelo, arquitectura, tamano ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente o de muy baja difusion.
+`EduardoVinicius/anycaptions-models` es un repositorio de modelos publicado en Hugging Face por el usuario EduardoVinicius. La model card asociada es practicamente vacia: unicamente declara la licencia `nvidia-open-model-license` y no incluye descripcion del modelo, arquitectura, tamano ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere una publicacion reciente o de muy baja difusion.
 
 El nombre del repositorio, "anycaptions-models", apunta a un posible uso para generacion de leyendas o subtitulos (captioning) de imagenes o video, pero esta inferencia no esta confirmada por ninguna documentacion oficial. No se dispone de informacion sobre la arquitectura, el numero de parametros, la longitud de contexto ni los idiomas soportados.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 - Evaluacion exploratoria de captioning: dado el nombre del repositorio, podria probarse en tareas de generacion de leyendas, pero sin documentacion no es posible garantizar su comportamiento.
 - Prototipado interno: utilizable solo en entornos controlados donde se pueda validar manualmente la calidad de las salidas.
 - Investigacion comparativa: como referencia en estudios sobre modelos con licencia NVIDIA Open Model License, siempre que se documente la ausencia de model card.
-- Pruebas de integracion en pipelines de HuggingFace: para verificar la compatibilidad de carga con `transformers` u otras librerias, aunque se desconoce el formato de pesos.
+- Pruebas de integracion en pipelines de Hugging Face: para verificar la compatibilidad de carga con `transformers` u otras librerias, aunque se desconoce el formato de pesos.
 - Analisis de licencias: como caso de estudio de publicaciones con licencia restrictiva y documentacion minima.
 - No se recomienda su uso en produccion ni en aplicaciones orientadas a usuario final sin una evaluacion previa exhaustiva.
 
@@ -71,5 +71,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea concreta d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EduardoVinicius/anycaptions-models
+- Repositorio en Hugging Face: https://huggingface.co/EduardoVinicius/anycaptions-models
 - Licencia NVIDIA Open Model License: no se ha proporcionado un enlace directo en la informacion disponible.

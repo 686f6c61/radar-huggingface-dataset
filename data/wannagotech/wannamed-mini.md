@@ -98,11 +98,11 @@ La comparación se limita a los datos aportados por el autor; no se dispone de e
 - No se especifican sesgos conocidos, composición del dataset de entrenamiento ni número de tokens utilizados.
 - No se declara soporte de tool calling, function calling ni razonamiento agéntico multi-paso, lo que limita su integración en pipelines automatizados complejos.
 - La longitud de contexto no está publicada, lo que impide evaluar su idoneidad para documentos clínicos extensos.
-- El tamaño del repositorio en HuggingFace es de 0,0 GB; los pesos no están disponibles públicamente en el momento de la ficha.
+- El tamaño del repositorio en Hugging Face es de 0,0 GB; los pesos no están disponibles públicamente en el momento de la ficha.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WannaGoTech/WannaMed-mini
+- Modelo en Hugging Face: https://huggingface.co/WannaGoTech/WannaMed-mini
 - Demo interactiva (Space): https://huggingface.co/spaces/WannaGoTech/WannaMed-mini
 - Edición Pro con visión 2D/3D, ECG y MedOCR (WannaMed Monet): https://huggingface.co/WannaGoTech/WannaMed-Monet
 - WannaMed ASR v2 (1,7B): https://huggingface.co/WannaGoTech/WannaMedASR

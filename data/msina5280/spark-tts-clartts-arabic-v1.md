@@ -4,7 +4,7 @@
 
 El modelo `msina5280/spark-tts-clartts-arabic-v1` es un ajuste fino (fine-tuning) del componente LLM del sistema de síntesis de voz Spark-TTS, desarrollado por SparkAudio, aplicado al dataset ClArTTS de árabe clásico. Spark-TTS es un sistema de texto a voz (TTS) avanzado que utiliza modelos de lenguaje grandes (LLM) para generar voz de forma natural y precisa. Este checkpoint concreto se entrena mediante SFT (supervised fine-tuning) con las librerías unsloth y trl, y está pensado para sustituir el checkpoint LLM original del sistema Spark-TTS cuando se desea síntesis en árabe.
 
-El modelo tiene 506.634.112 parámetros (~506 millones), lo que lo sitúa en la gama de modelos de tamaño pequeño-medio, adecuado para inferencia en hardware relativamente modesto. Está disponible en formato safetensors y usa el pipeline de `text-generation` de Transformers. La información pública es escasa: no se especifica licencia, idiomas soportados ni detalles del entrenamiento más allá de los tags de HuggingFace. Es relevante ahora porque ofrece una vía para TTS en árabe clásico aprovechando el ecosistema Spark-TTS, aunque su adopción en producción requiere verificar la licencia y los datos de entrenamiento.
+El modelo tiene 506.634.112 parámetros (~506 millones), lo que lo sitúa en la gama de modelos de tamaño pequeño-medio, adecuado para inferencia en hardware relativamente modesto. Está disponible en formato safetensors y usa el pipeline de `text-generation` de Transformers. La información pública es escasa: no se especifica licencia, idiomas soportados ni detalles del entrenamiento más allá de los tags de Hugging Face. Es relevante ahora porque ofrece una vía para TTS en árabe clásico aprovechando el ecosistema Spark-TTS, aunque su adopción en producción requiere verificar la licencia y los datos de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -75,8 +75,8 @@ El modelo `azeddinShr/Spark-TTS-Arabic` es un fine-tuning similar sobre el mismo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/msina5280/spark-tts-clartts-arabic-v1
-- Variante similar en HuggingFace: https://huggingface.co/azeddinShr/Spark-TTS-Arabic
+- Hugging Face: https://huggingface.co/msina5280/spark-tts-clartts-arabic-v1
+- Variante similar en Hugging Face: https://huggingface.co/azeddinShr/Spark-TTS-Arabic
 - Repo oficial de Spark-TTS en GitHub: https://github.com/sparkaudio/spark-tts
 - Repo de fine-tuning en GitHub: https://github.com/azeddinshr/arabic-spark-tts
 - Página del modelo en FriendliAI (API): https://friendli.ai/models/MOMI2026/spark-tts-clartts-arabic-v1

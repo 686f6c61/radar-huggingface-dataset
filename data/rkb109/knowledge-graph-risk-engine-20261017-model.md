@@ -20,7 +20,7 @@ Su relevancia practica es limitada y muy acotada: sirve como pieza de andamiaje 
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
 | Formato de pesos | No disponible. La model card menciona un "model JSON format" en el repositorio de GitHub, sin especificar el esquema |
-| Pipeline declarado en HuggingFace | `feature-extraction` |
+| Pipeline declarado en Hugging Face | `feature-extraction` |
 | Tareas cubiertas segun la model card | `token-classification`, `feature-extraction`, `question-answering`, `sentence-similarity` |
 | Libreria | `custom` |
 | Dataset de entrenamiento | `RKB109/knowledge-graph-risk-engine-20261017-dataset` (sintetico, tamano no especificado) |
@@ -37,7 +37,7 @@ En cuanto a datos, el entrenamiento se realizo sobre el dataset sintetico enlaza
 ## Capacidades
 
 - Etiquetado a nivel de token (`token-classification`): el modelo declara pesos por etiqueta aplicables a tokens individuales, lo que permite hipoteticamente marcar entidades o fragmentos relevantes en un texto.
-- Extraccion de caracteristicas (`feature-extraction`): es el pipeline principal declarado en HuggingFace.
+- Extraccion de caracteristicas (`feature-extraction`): es el pipeline principal declarado en Hugging Face.
 - Question answering: la model card lista esta tarea entre las cubiertas, sin especificar si es extractiva, abierta o restringida a un contexto documental.
 - Similitud entre frases (`sentence-similarity`): declarada como tarea cubierta, sin detallar el mecanismo de representacion subyacente.
 - Recuperacion de evidencia ponderada por IDF: componente orientado a justificar puntuaciones con fragmentos de evidencia, segun la descripcion del autor.
@@ -45,7 +45,7 @@ En cuanto a datos, el entrenamiento se realizo sobre el dataset sintetico enlaza
 - Generacion de texto: no disponible. La model card no menciona capacidades generativas.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponibles; el campo de idiomas aparece vacio en HuggingFace.
+- Capacidades multilingues: no disponibles; el campo de idiomas aparece vacio en Hugging Face.
 - Vision, audio o modo "thinking": no disponibles.
 
 ## Casos de uso
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `RKB109/knowledge-graph-risk-engine-20261017-model` | No disponible | No disponible | accuracy 1,00 sobre 4 ejemplos sinteticos | MIT | HuggingFace, 0 descargas |
+| `RKB109/knowledge-graph-risk-engine-20261017-model` | No disponible | No disponible | accuracy 1,00 sobre 4 ejemplos sinteticos | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables con datos publicados. Tecnicamente, la categoria mas cercana serian clasificadores ligeros de etiquetado de tokens y baselines de recuperacion tipo TF-IDF, pero no se dispone de cifras de ninguno de ellos para establecer una comparacion rigurosa.
@@ -102,7 +102,7 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/knowledge-graph-risk-engine-20261017-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/knowledge-graph-risk-engine-20261017-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/knowledge-graph-risk-engine-20261017-dataset
 - Repositorio de GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON del modelo: referenciado en la model card, pero sin URL en la informacion disponible
 - Paper, blog o demo: no disponibles en la informacion proporcionada

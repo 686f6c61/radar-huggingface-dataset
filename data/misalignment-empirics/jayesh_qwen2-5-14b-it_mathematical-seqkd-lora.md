@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA publicado por el usuario u organizac
 
 El modelo base es un transformer decoder-only denso de aproximadamente 14.700 millones de parametros, con ventana de contexto declarada de hasta 131.072 tokens y soporte multilingue segun la documentacion publica de Qwen. El adaptador hereda, en principio, la tokenizacion, el vocabulario y la arquitectura del base, y anade una especializacion cuyo alcance exacto se desconoce: no hay model card descriptiva, no hay datos de entrenamiento y no hay evaluacion publicada.
 
-La relevancia de esta ficha es fundamentalmente metodologica: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, cuya model card es la plantilla por defecto de HuggingFace sin rellenar. Cualquier uso en produccion exige validar primero el comportamiento del adaptador, dado que se desconoce la licencia, los idiomas soportados, la composicion de los datos de ajuste y el impacto del entrenamiento sobre las capacidades originales del modelo base. Los resultados de busqueda web disponibles no contienen informacion relevante sobre este modelo (solo resultados deportivos de Formula 1), por lo que no se ha podido ampliar ningun dato tecnico.
+La relevancia de esta ficha es fundamentalmente metodologica: se trata de un artefacto de investigacion con 0 descargas y 0 likes en el momento de la consulta, cuya model card es la plantilla por defecto de Hugging Face sin rellenar. Cualquier uso en produccion exige validar primero el comportamiento del adaptador, dado que se desconoce la licencia, los idiomas soportados, la composicion de los datos de ajuste y el impacto del entrenamiento sobre las capacidades originales del modelo base. Los resultados de busqueda web disponibles no contienen informacion relevante sobre este modelo (solo resultados deportivos de Formula 1), por lo que no se ha podido ampliar ningun dato tecnico.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ La relevancia de esta ficha es fundamentalmente metodologica: se trata de un art
 
 ## Arquitectura y entrenamiento
 
-La informacion tecnica sobre el entrenamiento no esta disponible. La model card publicada es la plantilla generica de HuggingFace y todos los apartados relevantes (procedimiento de entrenamiento, hiperparametros, regimen de precision, datos de entrenamiento, preprocesado e impacto ambiental) aparecen como "More Information Needed" o vacios. Lo unico documentado por metadatos es que se trata de un adaptador LoRA entrenado con PEFT 0.20.0 sobre Qwen/Qwen2.5-14B-Instruct, con pesos almacenados en safetensors y un tamano de repositorio de 0,6 GB, coherente con un adaptador de rango bajo o medio sobre un modelo de 14B.
+La informacion tecnica sobre el entrenamiento no esta disponible. La model card publicada es la plantilla generica de Hugging Face y todos los apartados relevantes (procedimiento de entrenamiento, hiperparametros, regimen de precision, datos de entrenamiento, preprocesado e impacto ambiental) aparecen como "More Information Needed" o vacios. Lo unico documentado por metadatos es que se trata de un adaptador LoRA entrenado con PEFT 0.20.0 sobre Qwen/Qwen2.5-14B-Instruct, con pesos almacenados en safetensors y un tamano de repositorio de 0,6 GB, coherente con un adaptador de rango bajo o medio sobre un modelo de 14B.
 
 El identificador del repositorio incluye los terminos "mathematical" y "seqkd", que sugieren respectivamente un ajuste orientado a tareas matematicas y una tecnica de destilacion de conocimiento a nivel de secuencia (sequence-level knowledge distillation). Estas etiquetas son una inferencia a partir del nombre del repositorio y no estan confirmadas por ninguna fuente suministrada; no se describe ni el dataset, ni el modelo profesor, ni la funcion de perdida, ni el numero de tokens de entrenamiento, ni si hubo una fase de RLHF o DPO posterior. Tampoco se documenta ninguna innovacion de decodificacion, atencion lineal o estrategia de eficiencia especifica del adaptador.
 
@@ -104,8 +104,8 @@ Nota: la comparacion con alternativas de la misma categoria (adaptadores LoRA ma
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-seqkd-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-seqkd-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Referencia bibliografica citada en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact#compute
 - Resultados de busqueda web: no se ha encontrado ningun enlace, paper, blog, repositorio ni demo relacionado con este modelo. La busqueda devolvio exclusivamente resultados sobre Formula 1, sin conexion con el modelo.

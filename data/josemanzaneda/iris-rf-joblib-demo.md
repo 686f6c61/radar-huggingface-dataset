@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Este repositorio no contiene un modelo de lenguaje, sino un artefacto de aprendizaje automático clásico: un clasificador Random Forest entrenado con el dataset Iris de scikit-learn y serializado con joblib. Lo publica el usuario JoseManzaneda en HuggingFace como demostración reproducible de cómo distribuir modelos tabulares de scikit-learn a través del Hub. El problema que resuelve es la clasificación de flores de Iris en tres especies (setosa, versicolor y virginica) a partir de cuatro medidas morfológicas en centímetros.
+Este repositorio no contiene un modelo de lenguaje, sino un artefacto de aprendizaje automático clásico: un clasificador Random Forest entrenado con el dataset Iris de scikit-learn y serializado con joblib. Lo publica el usuario JoseManzaneda en Hugging Face como demostración reproducible de cómo distribuir modelos tabulares de scikit-learn a través del Hub. El problema que resuelve es la clasificación de flores de Iris en tres especies (setosa, versicolor y virginica) a partir de cuatro medidas morfológicas en centímetros.
 
 El interés del artefacto es fundamentalmente didáctico y operativo: sirve como plantilla mínima para empaquetar un modelo de scikit-learn, cargarlo con `hf_hub_download` y desplegarlo en una interfaz Gradio alojada en un Space. Su autor reporta una accuracy de 0,9667 sobre el dataset Iris, una cifra coherente con lo esperable en este conjunto de datos, que es pequeño, balanceado y de dificultad baja.
 
-No hay información pública sobre hiperparámetros, número de árboles, estrategia de partición de datos ni licencia. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y un tamaño declarado de 0,0 GB (por debajo del umbral de redondeo de HuggingFace), lo que confirma que se trata de un artefacto de pocos kilobytes. No debe confundirse con un modelo generativo ni usarse como tal.
+No hay información pública sobre hiperparámetros, número de árboles, estrategia de partición de datos ni licencia. El repositorio tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y un tamaño declarado de 0,0 GB (por debajo del umbral de redondeo de Hugging Face), lo que confirma que se trata de un artefacto de pocos kilobytes. No debe confundirse con un modelo generativo ni usarse como tal.
 
 ## Especificaciones técnicas
 
@@ -18,13 +18,13 @@ No hay información pública sobre hiperparámetros, número de árboles, estrat
 | Longitud de contexto | no aplica (no es un modelo de lenguaje; la entrada es un vector fijo de 4 variables numéricas) |
 | Tipos de cuantización | no aplica (scikit-learn no emplea cuantización de pesos; el artefacto se distribuye como `model.joblib`) |
 | Idiomas soportados | no aplica (clasificador tabular; no procesa texto) |
-| Licencia | no disponible (no consta ni en los metadatos de HuggingFace ni en la model card) |
+| Licencia | no disponible (no consta ni en los metadatos de Hugging Face ni en la model card) |
 | Formato de pesos | joblib (`model.joblib`), serialización basada en pickle de scikit-learn |
 | Variables de entrada | sepal length (cm), sepal width (cm), petal length (cm), petal width (cm) |
 | Clases de salida | setosa, versicolor, virginica |
 | Métrica reportada | accuracy = 0,9667 |
 | Librería | scikit-learn |
-| Tamaño del repositorio | 0,0 GB (redondeado por HuggingFace; consistente con un artefacto de pocos KB) |
+| Tamaño del repositorio | 0,0 GB (redondeado por Hugging Face; consistente con un artefacto de pocos KB) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 | Fecha de creación y última actualización | 2026-10-02 (misma marca temporal en ambas) |
 
@@ -32,7 +32,7 @@ No hay información pública sobre hiperparámetros, número de árboles, estrat
 
 Un Random Forest es un método de ensemble por bagging: se entrenan múltiples árboles de decisión sobre submuestras bootstrap del conjunto de entrenamiento y, en cada división de nodo, se considera un subconjunto aleatorio de las variables predictoras. La predicción final se obtiene por voto mayoritario entre los árboles. Es un modelo no paramétrico, determinista en inferencia y con coste de entrenamiento e inferencia muy inferior al de cualquier red neuronal. La model card no especifica el número de estimadores, el criterio de división, la profundidad máxima ni el uso de `random_state`, por lo que la reproducibilidad exacta del ajuste no puede garantizarse a partir de la información publicada.
 
-El entrenamiento se realizó sobre el dataset Iris de scikit-learn: 150 muestras, 4 variables continuas y 3 clases perfectamente balanceadas (50 muestras por clase). No se detalla la partición entre entrenamiento, validación y test, ni si la accuracy reportada corresponde a test, a validación cruzada o al conjunto completo. Tampoco hay indicios de ajuste fino posterior, RLHF, DPO ni ninguna técnica de alineación, que no aplican a este tipo de modelo. La innovación técnica es nula por diseño: el valor del repositorio reside en ser un ejemplo mínimo y funcional de publicación de un modelo scikit-learn en HuggingFace, no en aportar una arquitectura novedosa.
+El entrenamiento se realizó sobre el dataset Iris de scikit-learn: 150 muestras, 4 variables continuas y 3 clases perfectamente balanceadas (50 muestras por clase). No se detalla la partición entre entrenamiento, validación y test, ni si la accuracy reportada corresponde a test, a validación cruzada o al conjunto completo. Tampoco hay indicios de ajuste fino posterior, RLHF, DPO ni ninguna técnica de alineación, que no aplican a este tipo de modelo. La innovación técnica es nula por diseño: el valor del repositorio reside en ser un ejemplo mínimo y funcional de publicación de un modelo scikit-learn en Hugging Face, no en aportar una arquitectura novedosa.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ Como referencia aritmética, sobre las 150 muestras del dataset Iris una accurac
 - GPU recomendadas: ninguna. No se requiere aceleración por hardware.
 - Ejecución en hardware de consumo: sí, en cualquier equipo, incluidos Raspberry Pi y contenedores con 128 MB de RAM.
 - Memoria RAM: no disponible como cifra exacta; el repositorio se declara como 0,0 GB y un Random Forest sobre Iris ocupa típicamente del orden de kilobytes.
-- Opciones de despliegue: script de Python con `scikit-learn` y `joblib`, API REST con FastAPI o Flask, HuggingFace Spaces con Gradio, o ejecución dentro de un contenedor Docker. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: script de Python con `scikit-learn` y `joblib`, API REST con FastAPI o Flask, Hugging Face Spaces con Gradio, o ejecución dentro de un contenedor Docker. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no publicados. En la práctica, para un conjunto de este tamaño la inferencia por muestra se sitúa en el rango de microsegundos a pocos milisegundos en CPU, pero se trata de una estimación general y no de una medición realizada sobre este artefacto.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se han publicado datos de rendimiento de los modelos alternativos en la infor
 
 | Modelo alternativo | Librería | Tipo | Accuracy en Iris | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (iris-rf-joblib-demo) | scikit-learn | Random Forest (bagging) | 0,9667 (reportada por el autor) | no disponible | HuggingFace Hub |
+| Este modelo (iris-rf-joblib-demo) | scikit-learn | Random Forest (bagging) | 0,9667 (reportada por el autor) | no disponible | Hugging Face Hub |
 | LogisticRegression de scikit-learn | scikit-learn | Modelo lineal | no disponible | depende del proyecto; no aplica al artefacto | requiere entrenamiento propio |
 | SVC de scikit-learn | scikit-learn | SVM con kernel | no disponible | depende del proyecto; no aplica al artefacto | requiere entrenamiento propio |
 | KNeighborsClassifier de scikit-learn | scikit-learn | Basado en instancias | no disponible | depende del proyecto; no aplica al artefacto | requiere entrenamiento propio |
@@ -102,7 +102,7 @@ No se han publicado datos de rendimiento de los modelos alternativos en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoseManzaneda/iris-rf-joblib-demo
+- Modelo en Hugging Face: https://huggingface.co/JoseManzaneda/iris-rf-joblib-demo
 - Space relacionado (referenciado en la model card): https://huggingface.co/spaces/JoseManzaneda/iris-rf-gradio-space
 - Documentación de scikit-learn sobre Random Forest: no disponible en la información proporcionada
 - Paper, blog o repositorio adicional del autor: no disponible en la información proporcionada

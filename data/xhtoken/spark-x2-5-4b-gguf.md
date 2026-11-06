@@ -90,7 +90,7 @@ La principal ventaja de Spark-X2.5-4B frente a estos modelos es su contexto nati
 - Repositorio GGUF: https://huggingface.co/XHToken/Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Repositorio de la serie Spark-X2.5: https://github.com/XHToken/Spark-X2.5
-- Colección en HuggingFace: https://huggingface.co/collections/XHToken/spark-x25
+- Colección en Hugging Face: https://huggingface.co/collections/XHToken/spark-x25
 - Página en ModelScope: https://www.modelscope.cn/models/XHToken/Spark-X2.5-4B
 - Referencia en LLM Reference: https://www.llmreference.com/model/spark-x2.5-4b
 - Fork de llama.cpp de XHToken: https://github.com/XHToken/llama.cpp

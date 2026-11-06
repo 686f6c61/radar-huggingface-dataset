@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "SSH111111/microduck-tug",
+  "slug": "ssh111111-microduck-tug",
+  "author": "SSH111111",
+  "url": "https://huggingface.co/SSH111111/microduck-tug",
+  "created_at": "2026-11-06T11:47:06.000Z",
+  "updated_at": "2026-11-06T11:48:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5747912,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "a1rb4Ck/microduck-tug · Hugging Face",
+      "url": "https://huggingface.co/a1rb4Ck/microduck-tug",
+      "snippet": "My tug-of-war entry for the microduck arena. The plan is simple: lean back, pull hard, and let physics deliver the other duck into the pit. Tables for the five official bouts on top of rumezhak's tug-tab-v2, which already did most of the pulling. No ducks were hurt. One got very wet, metaphorically ..."
+    },
+    {
+      "title": "suraj-phanindra/microduck-tug-hc1-aifund · Hugging Face",
+      "url": "https://huggingface.co/suraj-phanindra/microduck-tug-hc1-aifund",
+      "snippet": "The observation normalizer is baked into policy.onnx; feed raw observations. manifest.json follows schema 2 of the microduck policy manifest (docs/policy-manifest.md in the daemon repo)."
+    }
+  ]
+}

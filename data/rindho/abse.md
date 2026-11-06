@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rindho/abse es un modelo publicado en HuggingFace por el usuario Rindho bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado informacion sobre pipeline, idiomas o pesos.
+Rindho/abse es un modelo publicado en Hugging Face por el usuario Rindho bajo licencia Apache 2.0. La model card asociada es practicamente vacia: unicamente declara la licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado informacion sobre pipeline, idiomas o pesos.
 
 Por tanto, no es posible determinar que problema resuelve, que arquitectura emplea ni cual es su tamano o ventana de contexto. La unica informacion verificable es el identificador del repositorio, el autor, la licencia y las fechas de creacion y actualizacion (26 de octubre de 2026, sin actualizaciones posteriores).
 
@@ -75,5 +75,5 @@ No disponible. No se ha identificado la categoria del modelo (tamano, tarea, mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Rindho/abse
+- Modelo en Hugging Face: https://huggingface.co/Rindho/abse
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

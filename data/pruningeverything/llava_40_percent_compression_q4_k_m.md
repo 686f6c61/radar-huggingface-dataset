@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LLaVA 40% compression Q4_K_M es una versión cuantizada y podada del modelo multimodal LLaVA, publicada por el usuario PruningEverything en HuggingFace. Se trata de un modelo conversacional con capacidades de visión (imagen y texto) que ha sido sometido a un proceso de compresión del 40% y posteriormente cuantizado a Q4_K_M en formato GGUF, lo que reduce significativamente su huella de memoria y facilita su despliegue en hardware de consumo. El repositorio ocupa 3,1 GB y contiene 3.800.256.512 parámetros según los metadatos de safetensors.
+LLaVA 40% compression Q4_K_M es una versión cuantizada y podada del modelo multimodal LLaVA, publicada por el usuario PruningEverything en Hugging Face. Se trata de un modelo conversacional con capacidades de visión (imagen y texto) que ha sido sometido a un proceso de compresión del 40% y posteriormente cuantizado a Q4_K_M en formato GGUF, lo que reduce significativamente su huella de memoria y facilita su despliegue en hardware de consumo. El repositorio ocupa 3,1 GB y contiene 3.800.256.512 parámetros según los metadatos de safetensors.
 
 El modelo parte de la familia LLaVA, un proyecto de código abierto que combina un codificador visual (habitualmente CLIP ViT) con un modelo de lenguaje LLaMA para permitir conversaciones sobre imágenes. La poda del 40% sugiere que se han eliminado pesos redundantes para reducir el tamaño, aunque el autor no documenta la metodología exacta ni los resultados de la evaluación de calidad tras la compresión.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LLaVA 40% compression Q4_K_M (este) | 3,8 B | no disponible | llama2 | GGUF | HuggingFace, 0 descargas |
+| LLaVA 40% compression Q4_K_M (este) | 3,8 B | no disponible | llama2 | GGUF | Hugging Face, 0 descargas |
 | LLaVA original (7B) | ~7 B | 4k (típico) | llama2 | safetensors | Amplia, con benchmarks |
 | LLaVA 1.5 7B | ~7 B | 4k | llama2 | safetensors, GGUF | Amplia, comunidad activa |
 | BakLLaVA / otros derivados | ~7 B | variable | llama2 | varios | Comunidad |
@@ -83,7 +83,7 @@ La comparativa se basa en la familia LLaVA; no se dispone de datos de rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PruningEverything/llava_40_percent_compression_Q4_K_M
+- Hugging Face: https://huggingface.co/PruningEverything/llava_40_percent_compression_Q4_K_M
 - Repositorio LLaVA (referencia de la familia): https://github.com/haotian-liu/LLaVA
 - Paper LLaVA: https://arxiv.org/abs/2304.08485
 - llama.cpp (runtime GGUF): https://github.com/ggerganov/llama.cpp

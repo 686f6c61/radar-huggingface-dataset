@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mehtaaarav/review-zero-shot-transfer-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en HuggingFace. Su propia model card lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo terminado ni como la release de modelos entrenados. El único artefacto funcional del repositorio es `notes.md`, acompañado de un `README.md` que actúa como documentación.
+`mehtaaarav/review-zero-shot-transfer-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre transferencia zero-shot publicado en Hugging Face. Su propia model card lo declara explícitamente: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y no se presenta como un artículo terminado ni como la release de modelos entrenados. El único artefacto funcional del repositorio es `notes.md`, acompañado de un `README.md` que actúa como documentación.
 
-El repositorio incluye un archivo en formato safetensors con 24.832 parámetros totales, una cifra que resulta llamativa por su magnitud ínfima (menos de 25.000 parámetros) y que es incompatible con cualquier transformer funcional. El tamaño del repositorio figura como 0,0 GB, y las etiquetas declaradas son `research-notes` y `zero-shot-transfer`, junto a la etiqueta genérica `transformer` que HuggingFace asigna con frecuencia a los archivos safetensors. No hay pipeline de inferencia declarado, ni idiomas soportados, ni checkpoint entrenado.
+El repositorio incluye un archivo en formato safetensors con 24.832 parámetros totales, una cifra que resulta llamativa por su magnitud ínfima (menos de 25.000 parámetros) y que es incompatible con cualquier transformer funcional. El tamaño del repositorio figura como 0,0 GB, y las etiquetas declaradas son `research-notes` y `zero-shot-transfer`, junto a la etiqueta genérica `transformer` que Hugging Face asigna con frecuencia a los archivos safetensors. No hay pipeline de inferencia declarado, ni idiomas soportados, ni checkpoint entrenado.
 
 Su relevancia es, por tanto, documental y metodológica: sirve como ejemplo de protocolo de investigación abierto (hipótesis, confusores, baselines emparejados, comprobaciones de reproducibilidad y modos de fallo) más que como componente desplegable. Cualquier evaluación de rendimiento, contexto o capacidades generativas queda fuera de su alcance declarado.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, documental y metodológica: sirve como ejemplo de p
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `transformer` en HuggingFace, sin especificación técnica en la model card; no hay evidencia de un transformer funcional) |
+| Arquitectura | no disponible (etiqueta `transformer` en Hugging Face, sin especificación técnica en la model card; no hay evidencia de un transformer funcional) |
 | Parametros totales | 24.832 (según metadatos del archivo safetensors) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no aplica: no es un modelo de inferencia) |
@@ -65,7 +65,7 @@ No procede una comparativa con modelos de lenguaje: este repositorio no contiene
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| review-zero-shot-transfer-2024 | 24.832 (tensor safetensors) | no aplica | sin benchmarks | MIT | repositorio en HuggingFace, 0 descargas y 0 likes |
+| review-zero-shot-transfer-2024 | 24.832 (tensor safetensors) | no aplica | sin benchmarks | MIT | repositorio en Hugging Face, 0 descargas y 0 likes |
 | Otros repositorios de notas de investigación | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Modelos de lenguaje de tamaño comparable (por ejemplo, en el rango de decenas de miles de parámetros) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de información sobre repositorios equivalentes de notas de invest
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mehtaaarav/review-zero-shot-transfer-2024
+- Repositorio en Hugging Face: https://huggingface.co/mehtaaarav/review-zero-shot-transfer-2024
 - Archivo principal de la nota: `notes.md`, dentro del propio repositorio.
 - La búsqueda web realizada no ha devuelto ningún resultado relacionado con este repositorio, con transferencia zero-shot ni con investigación en aprendizaje automático. Los resultados obtenidos pertenecen al foro de desarrolladores de Roblox y no guardan relación con el objeto de esta ficha:
   - https://devforum.roblox.com/

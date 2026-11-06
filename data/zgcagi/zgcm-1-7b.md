@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZGCM-1-7B es un modelo de lenguaje denso de 7.394.832.384 parámetros (7,39B) entrenado desde cero por el Zhongguancun Academy y el Zhongguancun Institute of Artificial Intelligence (usuario de HuggingFace `zgcagi`). Está especializado en razonamiento matemático y búsqueda asistida por herramientas, y combina en un único modelo dos modos de respuesta: uno con razonamiento interno explícito (*thinking*) y otro de respuesta directa. Su ventana de contexto máxima es de 262.144 tokens (256K), muy por encima de lo habitual en la franja de 7B-8B.
+ZGCM-1-7B es un modelo de lenguaje denso de 7.394.832.384 parámetros (7,39B) entrenado desde cero por el Zhongguancun Academy y el Zhongguancun Institute of Artificial Intelligence (usuario de Hugging Face `zgcagi`). Está especializado en razonamiento matemático y búsqueda asistida por herramientas, y combina en un único modelo dos modos de respuesta: uno con razonamiento interno explícito (*thinking*) y otro de respuesta directa. Su ventana de contexto máxima es de 262.144 tokens (256K), muy por encima de lo habitual en la franja de 7B-8B.
 
 La relevancia del modelo está en dos frentes. Por un lado, publica resultados competitivos en benchmarks de matemáticas de competición: 97,13% en MATH-500, 75,00% en AIME 2026 y 70,42% en HMMT 2025, con el mejor rango medio entre los siete modelos de 7B-8B comparados en su informe técnico. Por otro, es un lanzamiento completamente abierto: licencia MIT, pesos en safetensors, dataset de entrenamiento y repositorio con los flujos de preprocesado, preentrenamiento, *mid-training* y SFT.
 
@@ -21,7 +21,7 @@ El proyecto se apoya en una arquitectura de atención híbrida (27 capas con *sl
 | Licencia | MIT |
 | Formato de pesos | safetensors, con código de modelado propio (requiere `trust_remote_code=True`) |
 
-Datos adicionales de la ficha de HuggingFace: 32 capas, tamaño oculto 4.096, 406 descargas y 10 *likes* en el momento de la consulta, tamaño del repositorio 16,5 GB, fecha de creación 2026-09-07 y última actualización 2026-09-15. Etiquetas declaradas: `math`, `reasoning`, `agentic-search`, `long-context`, `conversational`.
+Datos adicionales de la ficha de Hugging Face: 32 capas, tamaño oculto 4.096, 406 descargas y 10 *likes* en el momento de la consulta, tamaño del repositorio 16,5 GB, fecha de creación 2026-09-07 y última actualización 2026-09-15. Etiquetas declaradas: `math`, `reasoning`, `agentic-search`, `long-context`, `conversational`.
 
 ## Arquitectura y entrenamiento
 
@@ -112,11 +112,11 @@ Los datos de benchmarks de la comparativa proceden de la tabla del informe de ZG
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zgcagi/ZGCM-1-7B
+- Modelo en Hugging Face: https://huggingface.co/zgcagi/ZGCM-1-7B
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.13356
 - Dataset de entrenamiento: https://huggingface.co/datasets/zgcagi/ZGCM-1-Data
 - Código de entrenamiento: https://github.com/zgcagi/ZGCM-1
-- Resultados de evaluación: sección `#evaluation-results` de la model card en HuggingFace
+- Resultados de evaluación: sección `#evaluation-results` de la model card en Hugging Face
 - Comunidad WeChat: enlace incluido en la model card (sección `#wechat-community`)
 
 Nota: los resultados de la búsqueda web realizada no aportaron enlaces adicionales relevantes sobre este modelo; los resultados devueltos eran páginas genéricas (Reddit, Zhihu, GitHub Desktop, un repositorio de *prompts* y un repositorio de DeepSeek) sin relación con ZGCM-1.

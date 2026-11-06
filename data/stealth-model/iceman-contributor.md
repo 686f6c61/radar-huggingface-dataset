@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Iceman Contributor es un modelo de generación de texto publicado en HuggingFace por la organización `stealth-model` el 28 de octubre de 2026, aunque su primera aparición pública se sitúa el 24 de octubre de 2026, sin anuncio formal. La model card no identifica a la empresa o laboratorio responsable: el desarrollador figura como desconocido y el modelo se describe explícitamente como "aún en stealth". Se posiciona por sus capacidades declaradas más que por su documentación técnica: 262.144 tokens de contexto, cuatro niveles de razonamiento configurables y soporte de tool calls, con entrada exclusivamente de texto.
+Iceman Contributor es un modelo de generación de texto publicado en Hugging Face por la organización `stealth-model` el 28 de octubre de 2026, aunque su primera aparición pública se sitúa el 24 de octubre de 2026, sin anuncio formal. La model card no identifica a la empresa o laboratorio responsable: el desarrollador figura como desconocido y el modelo se describe explícitamente como "aún en stealth". Se posiciona por sus capacidades declaradas más que por su documentación técnica: 262.144 tokens de contexto, cuatro niveles de razonamiento configurables y soporte de tool calls, con entrada exclusivamente de texto.
 
 El problema que aborda es el de un asistente de razonamiento y código de contexto largo accesible vía plataforma, con una velocidad observada de unos 46 tokens por segundo en las pruebas del propio publicador. Su relevancia inmediata no viene de los resultados de calidad, sino del interés por identificar su origen: dos análisis independientes de conteo de tokens de prompt lo sitúan en la misma familia de tokenizador que MAI Thinking 1 (Microsoft), Glyph Cluster, los modelos GPT-6 de OpenAI y gpt-oss-120b, con coincidencias de 23 de 23 frases y de 20 de 20 esquemas de herramientas. Eso indica vocabulario compartido, no necesariamente pesos derivados.
 
@@ -89,7 +89,7 @@ La comparación solo puede establecerse por familia de tokenizador, ya que no ha
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Iceman Contributor | No disponible | 262.144 tokens | CC BY 4.0 | HuggingFace y plataforma del publicador | StealthMark 19,2 / 100 |
+| Iceman Contributor | No disponible | 262.144 tokens | CC BY 4.0 | Hugging Face y plataforma del publicador | StealthMark 19,2 / 100 |
 | MAI Thinking 1 (Microsoft, según terceros) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | Glyph Cluster (Stealth Models) | No disponible | No disponible | No disponible | No disponible | No disponible |
 | gpt-oss-120b | No disponible en la información | No disponible | No disponible | No disponible | No disponible |
@@ -112,8 +112,8 @@ Nota: las coincidencias de tokenización sitúan a Iceman en la misma familia de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stealth-model/iceman-contributor
-- Página del autor en HuggingFace: https://huggingface.co/stealth-model
+- Modelo en Hugging Face: https://huggingface.co/stealth-model/iceman-contributor
+- Página del autor en Hugging Face: https://huggingface.co/stealth-model
 - Guía del modelo (Stealth Models): https://stealthmodels.com/iceman-contributor/
 - Resultados completos de benchmark: https://stealthmodels.com/benchmarks/models/iceman-contributor
 - Tarea Beach: https://stealthmodels.com/benchmarks/models/iceman-contributor/beach
@@ -124,4 +124,4 @@ Nota: las coincidencias de tokenización sitúan a Iceman en la misma familia de
 - Vídeo de análisis: https://www.youtube.com/watch?v=l5hdM8lsPfI
 - Tarjeta social del modelo: https://stealthmodels.com/iceman-contributor/assets/social-card.png
 
-Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información de HuggingFace.
+Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la model card y de la información de Hugging Face.

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Felldude/QWEN_32B_Comfy_MinimaxH3_Pruned_FP32 | 25,75 B (real) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3-32B (base) | ~32,8 B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | HuggingFace, ampliamente usado |
-| Mistral Small 3 (24B) | 24 B | 32.000 | apache-2.0 | HuggingFace |
-| Gemma 2 (27B) | 27 B | 8.192 | Gemma license (uso comercial con condiciones) | HuggingFace |
+| Felldude/QWEN_32B_Comfy_MinimaxH3_Pruned_FP32 | 25,75 B (real) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3-32B (base) | ~32,8 B | 32.768 nativos, 131.072 con YaRN | apache-2.0 | Hugging Face, ampliamente usado |
+| Mistral Small 3 (24B) | 24 B | 32.000 | apache-2.0 | Hugging Face |
+| Gemma 2 (27B) | 27 B | 8.192 | Gemma license (uso comercial con condiciones) | Hugging Face |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no hay datos de rendimiento publicados para esta variante que permitan contrastar calidad frente a los modelos citados.
 
@@ -84,7 +84,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no hay datos 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Felldude/QWEN_32B_Comfy_MinimaxH3_Pruned_FP32
+- Hugging Face: https://huggingface.co/Felldude/QWEN_32B_Comfy_MinimaxH3_Pruned_FP32
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Informe tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Licencia del base: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE

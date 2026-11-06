@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`glorp1/qwen35-4b-ermugo2` es un modelo fine-tuneado a partir de `unsloth/Qwen3.5-4B`, la variante de 4.000 millones de parámetros de la familia Qwen3.5 desarrollada por Qwen y optimizada por Unsloth para entrenamiento acelerado. El autor, glorp1, ha publicado este checkpoint en HuggingFace bajo licencia Apache 2.0, pero no proporciona ninguna documentación sobre el dataset, la técnica de ajuste (LoRA, QLoRA, full fine-tune) ni la tarea específica para la que fue entrenado.
+`glorp1/qwen35-4b-ermugo2` es un modelo fine-tuneado a partir de `unsloth/Qwen3.5-4B`, la variante de 4.000 millones de parámetros de la familia Qwen3.5 desarrollada por Qwen y optimizada por Unsloth para entrenamiento acelerado. El autor, glorp1, ha publicado este checkpoint en Hugging Face bajo licencia Apache 2.0, pero no proporciona ninguna documentación sobre el dataset, la técnica de ajuste (LoRA, QLoRA, full fine-tune) ni la tarea específica para la que fue entrenado.
 
-El modelo base pertenece a la familia Qwen3.5, que según las fuentes consultadas introduce una arquitectura híbrida que combina atención lineal con transformers tradicionales, y es nativamente multimodal (texto, imagen y vídeo). El checkpoint de glorp1 hereda estas características estructurales, aunque el pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que conserva la torre visual del modelo original.
+El modelo base pertenece a la familia Qwen3.5, que según las fuentes consultadas introduce una arquitectura híbrida que combina atención lineal con transformers tradicionales, y es nativamente multimodal (texto, imagen y vídeo). El checkpoint de glorp1 hereda estas características estructurales, aunque el pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere que conserva la torre visual del modelo original.
 
 La relevancia de este modelo es limitada por la falta de información sobre el fine-tuning: sin conocer los datos de entrenamiento ni los objetivos, es difícil evaluar su utilidad práctica. No obstante, su base es un modelo moderno con una ventana de contexto de 262.144 tokens, lo que lo hace potencialmente interesante para tareas de contexto largo si el ajuste ha sido correcto.
 
@@ -25,11 +25,11 @@ La relevancia de este modelo es limitada por la falta de información sobre el f
 
 El modelo base `unsloth/Qwen3.5-4B` pertenece a la familia Qwen3.5, que según la documentación pública combina atención lineal con capas transformer tradicionales en una arquitectura híbrida. Esta familia es nativamente multimodal, entrenada con fusión temprana de tokens multimodales (texto, imagen y vídeo), y logra según las fuentes un rendimiento comparable al de Qwen3 en tareas de razonamiento, código y agentes, superando a los modelos Qwen3-VL en comprensión visual.
 
-El fine-tune realizado por glorp1 se llevó a cabo con la librería Unsloth y la biblioteca TRL de HuggingFace, tal como indica la model card. Sin embargo, no se proporcionan detalles sobre el conjunto de datos utilizado, el número de pasos de entrenamiento, la técnica de ajuste (por ejemplo, LoRA o full fine-tune) ni si se aplicaron métodos de alineación como RLHF o DPO. Tampoco se indica si la torre visual se mantuvo intacta o fue eliminada, aunque el pipeline `image-text-to-text` sugiere que se conserva.
+El fine-tune realizado por glorp1 se llevó a cabo con la librería Unsloth y la biblioteca TRL de Hugging Face, tal como indica la model card. Sin embargo, no se proporcionan detalles sobre el conjunto de datos utilizado, el número de pasos de entrenamiento, la técnica de ajuste (por ejemplo, LoRA o full fine-tune) ni si se aplicaron métodos de alineación como RLHF o DPO. Tampoco se indica si la torre visual se mantuvo intacta o fue eliminada, aunque el pipeline `image-text-to-text` sugiere que se conserva.
 
 ## Capacidades
 
-- Generación de texto y conversación multi-turno (etiqueta `conversational` en HuggingFace).
+- Generación de texto y conversación multi-turno (etiqueta `conversational` en Hugging Face).
 - Comprensión y generación de contenido multimodal (imagen-texto) heredada del modelo base, aunque no verificada para este checkpoint concreto.
 - Razonamiento, generación de código y capacidades matemáticas propias de Qwen3.5-4B, según las características generales de la familia.
 - Ventana de contexto larga (262.144 tokens) que permite procesar documentos extensos o conversaciones prolongadas.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks específicos para este fine-tune en
 - VRAM estimada para inferencia: el repositorio ocupa 9,3 GB en safetensors, lo que sugiere pesos en fp16/bf16. La inferencia en precisión completa requerirá al menos 10-12 GB de VRAM.
 - Con cuantización a 4 bits (por ejemplo, NF4), el modelo podría caber en aproximadamente 5 GB de VRAM, según indican las herramientas de la comunidad para Qwen3.5.
 - GPU recomendadas: para fp16, una RTX 3090, RTX 4090 o A10 con 24 GB; para cuantización, GPUs con 8 GB o más (RTX 3060, RTX 4070, etc.).
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp, Ollama (el modelo base `qwen3.5:4b` está disponible en Ollama) y el toolkit `qwen35-toolkit` para preparar el modelo en hardware limitado.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp, Ollama (el modelo base `qwen3.5:4b` está disponible en Ollama) y el toolkit `qwen35-toolkit` para preparar el modelo en hardware limitado.
 - Latencia y throughput: no disponibles para este fine-tune específico; dependen del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita a parámetros, contexto y licencia, ya que no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glorp1/qwen35-4b-ermugo2
+- Modelo en Hugging Face: https://huggingface.co/glorp1/qwen35-4b-ermugo2
 - Colección Qwen3.5 de Unsloth: https://huggingface.co/collections/unsloth/qwen35
 - Página del modelo en Ollama: https://ollama.com/library/qwen3.5:4b
 - Toolkit de la comunidad para Qwen3.5: https://github.com/techwithsergiu/qwen35-toolkit

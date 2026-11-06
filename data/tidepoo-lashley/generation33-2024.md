@@ -2,7 +2,7 @@
 
 ## Resumen
 
-generation33-2024 es un repositorio de HuggingFace publicado por el usuario tidepoo-lashley que contiene una implementacion experimental de una arquitectura tipo Flamingo (vision-lenguaje con fusion tensorial) orientada a tareas de generacion. Segun su propia model card, no se trata de un modelo entrenado ni evaluado, sino de un punto de partida con inicializacion valida para pruebas de humo (smoke tests): el checkpoint `model.safetensors` se describe explicitamente como "not presented as a trained benchmark checkpoint" y el autor no reclama ninguna puntuacion de benchmark.
+generation33-2024 es un repositorio de Hugging Face publicado por el usuario tidepoo-lashley que contiene una implementacion experimental de una arquitectura tipo Flamingo (vision-lenguaje con fusion tensorial) orientada a tareas de generacion. Segun su propia model card, no se trata de un modelo entrenado ni evaluado, sino de un punto de partida con inicializacion valida para pruebas de humo (smoke tests): el checkpoint `model.safetensors` se describe explicitamente como "not presented as a trained benchmark checkpoint" y el autor no reclama ninguna puntuacion de benchmark.
 
 El interes del repositorio es, por tanto, de caracter ingenieril mas que de uso productivo: sirve como base reproducible para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuracion declarada usa escala "xlarge", atencion grouped query, fusion tensorial, activacion ReLU y normalizacion LayerNorm, con receta de optimizacion RMSProp y schedule de warmup constante. Los metadatos de safetensors reportan 33,088 parametros totales, una cifra ambigua en su unidad y que, combinada con un tamano de repositorio de 0,0 GB, sugiere un checkpoint de juguete mas que un modelo de escala real.
 
@@ -26,8 +26,8 @@ El repositorio acumula 11 descargas y 0 likes, con licencia BSD-3-Clause, lo que
 | Activacion | ReLU |
 | Normalizacion | LayerNorm |
 | Optimizador de la receta | RMSProp con schedule de warmup constante |
-| Fecha de creacion (segun HuggingFace) | 2026-10-07 |
-| Ultima actualizacion (segun HuggingFace) | 2026-10-07 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-07 |
+| Ultima actualizacion (segun Hugging Face) | 2026-10-07 |
 | Descargas / likes | 11 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -93,10 +93,10 @@ Las cifras de las alternativas se incluyen como orden de magnitud de la familia 
 - No se declaran idiomas soportados ni longitud de contexto, por lo que no puede garantizarse ningun uso multilingue ni de contexto largo.
 - La licencia BSD-3-Clause cubre el repositorio, pero el autor advierte que deben revisarse por separado los terminos de los datos de origen si se usa con conjuntos externos.
 - Los metadatos de parametros (33,088) y el tamano de repositorio (0,0 GB) son ambiguos y no permiten estimar costes de despliegue con fiabilidad.
-- Las fechas de creacion y actualizacion que reporta HuggingFace (2026-10-07) resultan anomalas y conviene verificarlas antes de citar el repositorio.
+- Las fechas de creacion y actualizacion que reporta Hugging Face (2026-10-07) resultan anomalas y conviene verificarlas antes de citar el repositorio.
 - No apto para produccion en su estado actual: ni el autor ni la documentacion presentan este repositorio como un artefacto listo para uso real.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tidepoo-lashley/generation33-2024
+- Repositorio en Hugging Face: https://huggingface.co/tidepoo-lashley/generation33-2024
 - No se han encontrado en la busqueda web papers, blogs, repositorios auxiliares ni demos asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-OBLITERATED es una variante "abliterated" del modelo Qwen/Qwen3.8-27B, publicada por el usuario kcplummer en HuggingFace. La abliteración es una técnica de modificación de pesos que busca localizar y proyectar fuera del espacio de pesos las direcciones asociadas al comportamiento de rechazo, de modo que el modelo deja de responder con negativas o con avisos de seguridad. En este caso el autor documenta tres iteraciones sucesivas (V1, V2 y V3) con metodologías distintas y publica métricas de MMLU para cada una, además de un conjunto de ajustes de decodificación recomendados.
+Qwen3.8-27B-OBLITERATED es una variante "abliterated" del modelo Qwen/Qwen3.8-27B, publicada por el usuario kcplummer en Hugging Face. La abliteración es una técnica de modificación de pesos que busca localizar y proyectar fuera del espacio de pesos las direcciones asociadas al comportamiento de rechazo, de modo que el modelo deja de responder con negativas o con avisos de seguridad. En este caso el autor documenta tres iteraciones sucesivas (V1, V2 y V3) con metodologías distintas y publica métricas de MMLU para cada una, además de un conjunto de ajustes de decodificación recomendados.
 
 El modelo conserva el tamaño del base: 27.781.427.952 parámetros (unos 27,8 mil millones), según los datos reales de los ficheros safetensors. Se distribuye en los formatos safetensors, GGUF y MLX, con un repositorio de 237,1 GB que agrupa varias cuantizaciones, y se declara bajo licencia Apache 2.0. La librería principal indicada es MLX (orientada a Apple Silicon), aunque la presencia de GGUF y safetensors amplía las opciones de despliegue.
 
@@ -114,6 +114,6 @@ No se dispone de datos verificables de otros modelos abliterated comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kcplummer/Qwen3.8-27B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/kcplummer/Qwen3.8-27B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada.

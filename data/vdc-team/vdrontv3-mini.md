@@ -72,6 +72,6 @@ No se dispone de información comparativa con otros modelos de tamaño similar (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VDC-team/VDrontV3-Mini
-- Repositorio del modelo (incluye `model.py`, `use.py`, `GUIvdront.py`): accesible desde la página de HuggingFace.
+- Hugging Face: https://huggingface.co/VDC-team/VDrontV3-Mini
+- Repositorio del modelo (incluye `model.py`, `use.py`, `GUIvdront.py`): accesible desde la página de Hugging Face.
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

@@ -81,7 +81,7 @@ La comparación se basa en datos públicos conocidos; no se dispone de benchmark
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/biali/stable-diffusion-2-base
+- Repositorio Hugging Face: https://huggingface.co/biali/stable-diffusion-2-base
 - Repositorio oficial de Stable Diffusion: https://github.com/Stability-AI/stablediffusion
 - Paper de Latent Diffusion: https://arxiv.org/abs/2112.10752
 - Documentación de diffusers: https://huggingface.co/docs/diffusers/index

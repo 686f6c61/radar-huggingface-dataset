@@ -6,7 +6,7 @@ mradermacher/Kimi-K3-0.40B-GGUF es un repositorio de cuantizaciones en formato G
 
 El modelo base tiene 388.581.416 parámetros (aproximadamente 0,39B), lo que lo sitúa en la categoría de modelos ultraligeros, pensados para ejecución en CPU, dispositivos de borde o GPUs con muy poca memoria. El repositorio publica doce cuantizaciones estáticas (desde Q2_K hasta f16) con tamaños de fichero que van de 0,3 GB a 0,9 GB, además de un repositorio hermano con cuantizaciones ponderadas/imatrix bajo el sufijo i1.
 
-La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio acumula 0 descargas y 0 likes, no incluye model card técnica del modelo original (ni arquitectura, ni datos de entrenamiento, ni contexto, ni benchmarks) y los resultados de búsqueda web disponibles no contenían ninguna información utilizable sobre el modelo. Todo lo que se puede afirmar con rigor procede de los metadatos de HuggingFace, de la tabla de cuantizaciones publicada y del recuento real de parámetros.
+La relevancia de esta ficha es limitada y conviene ser explícito: el repositorio acumula 0 descargas y 0 likes, no incluye model card técnica del modelo original (ni arquitectura, ni datos de entrenamiento, ni contexto, ni benchmarks) y los resultados de búsqueda web disponibles no contenían ninguna información utilizable sobre el modelo. Todo lo que se puede afirmar con rigor procede de los metadatos de Hugging Face, de la tabla de cuantizaciones publicada y del recuento real de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada y conviene ser explícito: el repositori
 | Modelo base | Sadatsami/Kimi-K3-0.40B |
 | Cuantizador | mradermacher |
 | Tamano del repositorio | 3,9 GB |
-| Fecha de creacion (metadatos) | 2026-09-25 (fecha futura respecto a la informacion habitual de HuggingFace; probable error de metadatos) |
+| Fecha de creacion (metadatos) | 2026-09-25 (fecha futura respecto a la informacion habitual de Hugging Face; probable error de metadatos) |
 | Ultima actualizacion (metadatos) | 2026-09-25 |
 | Descargas / likes | 0 / 0 |
 | Etiquetas | transformers, gguf, en, base_model:Sadatsami/Kimi-K3-0.40B, base_model:quantized:Sadatsami/Kimi-K3-0.40B, license:mit, endpoints_compatible, region:us, conversational |
@@ -57,7 +57,7 @@ La unica capacidad verificable es la que se deduce de las etiquetas del reposito
 
 - Generacion de texto conversacional en ingles: la etiqueta `conversational` sugiere que el modelo base esta ajustado o preparado para dialogos, pero no se especifica el formato de prompt ni la plantilla de chat.
 - Ejecucion local en hardware muy limitado: el formato GGUF y los tamanos de 0,3-0,9 GB permiten inferencia en CPU sin GPU dedicada.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a traves de infraestructura de inferencia compatible con Hugging Face.
 - Soporte de tool calling / function calling: no disponible, sin evidencia en los metadatos.
 - Soporte de agentes y razonamiento multi-paso: no disponible, sin evidencia.
 - Capacidades multilingues: unicamente se declara ingles; no hay soporte declarado de castellano ni de otros idiomas.
@@ -98,7 +98,7 @@ No existe informacion publicada sobre el rendimiento de este modelo, por lo que 
 | Modelo | Parametros | Contexto | Licencia | Formato GGUF disponible | Rendimiento publicado |
 |---|---|---|---|---|---|
 | Kimi-K3-0.40B-GGUF (este) | 0,39B | no disponible | MIT | si (12 cuantizaciones) | no disponible |
-| SmolLM2-360M (HuggingFace) | 0,36B | no verificado | Apache-2.0 | si (comunidad) | si, en su ficha oficial |
+| SmolLM2-360M (Hugging Face) | 0,36B | no verificado | Apache-2.0 | si (comunidad) | si, en su ficha oficial |
 | Qwen2.5-0.5B (Alibaba) | 0,49B | no verificado | Apache-2.0 | si (comunidad) | si, en su ficha oficial |
 | TinyLlama-1.1B (comunidad) | 1,1B | no verificado | Apache-2.0 | si (comunidad) | si, en su ficha oficial |
 

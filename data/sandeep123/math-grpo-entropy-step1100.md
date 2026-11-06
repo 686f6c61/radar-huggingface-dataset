@@ -76,7 +76,7 @@ No se dispone de comparativas publicadas con otros modelos en la informacion dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/math-grpo-entropy-step1100
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/math-grpo-entropy-step1100
 - Variante `sqa-grpo-entropy-step1100`: https://huggingface.co/sandeep123/sqa-grpo-entropy-step1100
 - Variante `sqa-grpo-cliphigh-step1100`: https://huggingface.co/sandeep123/sqa-grpo-cliphigh-step1100
 - Perfil GitHub del autor: https://github.com/sandeep123-ai

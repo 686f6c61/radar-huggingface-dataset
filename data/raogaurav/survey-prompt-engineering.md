@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio, publicado por el usuario raogaurav en HuggingFace, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre ingeniería de *prompts* (prompt engineering). El propio autor lo describe como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como un lanzamiento de modelos entrenados.
+Este repositorio, publicado por el usuario raogaurav en Hugging Face, no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación en formato Markdown sobre ingeniería de *prompts* (prompt engineering). El propio autor lo describe como un documento de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un artículo completo ni como un lanzamiento de modelos entrenados.
 
 El repositorio incluye dos archivos: `summary.md`, que es el artefacto principal con la nota completa, y `README.md` con la documentación. Aunque se etiqueta con `safetensors` y se indica un tamaño de 49.600 parámetros, esto corresponde a un archivo de pesos vacío o residual, no a un modelo funcional. La relevancia de este repositorio es únicamente documental: puede servir como punto de partida para investigadores interesados en estructurar estudios sobre técnicas de *prompting*, pero no ofrece ninguna capacidad de inferencia.
 
@@ -63,7 +63,7 @@ No disponible. No existe una categoría de modelos comparable porque este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/raogaurav/survey-prompt-engineering
+- Repositorio en Hugging Face: https://huggingface.co/raogaurav/survey-prompt-engineering
 - Survey relacionado en arXiv: https://arxiv.org/abs/2402.07927
 - Prompt Engineering Guide: https://www.promptingguide.ai/
 - The Prompt Report (revisión sistemática): https://trigaten.github.io/Prompt_Survey_Site/

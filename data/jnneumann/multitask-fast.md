@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jnneumann/multitask-fast` es un repositorio experimental alojado en HuggingFace que contiene una implementación de código de una arquitectura tipo Flamingo orientada a aprendizaje multitarea. Lo publica el usuario jnneumann y se distribuye con licencia BSD-3-Clause. El repositorio no es un modelo entrenado: su propio README indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en ningún benchmark.
+`jnneumann/multitask-fast` es un repositorio experimental alojado en Hugging Face que contiene una implementación de código de una arquitectura tipo Flamingo orientada a aprendizaje multitarea. Lo publica el usuario jnneumann y se distribuye con licencia BSD-3-Clause. El repositorio no es un modelo entrenado: su propio README indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que no se presenta como un checkpoint evaluado en ningún benchmark.
 
 El interés del repositorio es, por tanto, arquitectónico y de ingeniería, no de rendimiento. La configuración declarada describe un modelo Flamingo de escala "large" con atención dispersa, fusión mediante cross attention, activación gelu tanh y normalización rmsnorm. Se incluyen artefactos de configuración (`config.json`) y de receta de entrenamiento (`training_args.json`) con optimizador adam y scheduler exponencial, que el autor describe como valores de partida en el script y no como evidencia de una ejecución completada.
 
@@ -21,7 +21,7 @@ Para un desarrollador o investigador, este repositorio es relevante como punto d
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (checkpoint de inicializacion, no entrenado) |
 
-Otros datos declarados: escala "large" segun `config.json`, tamano del repositorio 0.0 GB, 0 descargas y 0 likes en el momento de la consulta. El pipeline de HuggingFace no esta disponible porque se trata de una implementacion personalizada que requiere un adaptador explicito para cargarse con APIs genericas.
+Otros datos declarados: escala "large" segun `config.json`, tamano del repositorio 0.0 GB, 0 descargas y 0 likes en el momento de la consulta. El pipeline de Hugging Face no esta disponible porque se trata de una implementacion personalizada que requiere un adaptador explicito para cargarse con APIs genericas.
 
 ## Arquitectura y entrenamiento
 
@@ -80,10 +80,10 @@ No se dispone de informacion suficiente en la documentacion proporcionada para e
 - Riesgo de alucinacion: no evaluable en un checkpoint sin entrenar; en cualquier caso, no hay datos de evaluacion.
 - Limitaciones de contexto e idioma: no se declara longitud de contexto ni idiomas soportados.
 - Restricciones de licencia: el codigo y los pesos se publican bajo BSD-3-Clause, que permite uso comercial con atribucion, pero el autor advierte de que los terminos de los datos de origen deben revisarse por separado cuando el repositorio se use con datasets externos.
-- Caveat de ingenieria: es una implementacion personalizada, sin `pipeline` declarado en HuggingFace, y requiere un adaptador explicito para cargarse. Cualquier resultado de un futuro checkpoint entrenado debe documentarse de manera independiente a los valores por defecto aqui incluidos.
+- Caveat de ingenieria: es una implementacion personalizada, sin `pipeline` declarado en Hugging Face, y requiere un adaptador explicito para cargarse. Cualquier resultado de un futuro checkpoint entrenado debe documentarse de manera independiente a los valores por defecto aqui incluidos.
 - Ausencia de validacion externa: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de uso independiente ni de replicacion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jnneumann/multitask-fast
+- Hugging Face: https://huggingface.co/jnneumann/multitask-fast
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, a su arquitectura ni a evaluaciones del mismo. Las consultas realizadas devolvieron unicamente paginas de estadisticas de cricket (IPL 2026) sin relacion con este repositorio.

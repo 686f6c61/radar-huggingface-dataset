@@ -90,7 +90,7 @@ No se dispone de comparativas con modelos cerrados como Sora o Runway Gen-3, ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrMofer/MiniMax-H3-MLX-8bit
+- Repositorio Hugging Face: https://huggingface.co/MrMofer/MiniMax-H3-MLX-8bit
 - Modelo base original: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Port MLX de PipeNetwork: https://github.com/PipeNetwork/minimax-h3-mlx

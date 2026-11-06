@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, con 86.508.288 parametros (unos 86,5 millones) en formato safetensors y un tamano de repositorio de 0,2 GB. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) mediante SFT (Supervised Fine-Tuning), segun indica la propia model card.
+El modelo `francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) supervisado del modelo base `goldfish-models/eng_latn_100mb`, desarrollado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de tipo decoder-only con arquitectura GPT-2, con 86.508.288 parametros (unos 86,5 millones) en formato safetensors y un tamano de repositorio de 0,2 GB. El entrenamiento se ha realizado con la libreria TRL (version 0.23.0) mediante SFT (Supervised Fine-Tuning), segun indica la propia model card.
 
 El modelo base `goldfish-models/eng_latn_100mb` pertenece a la familia Goldfish, orientada a modelos monolingues de GPT-2 entrenados con volumenes reducidos de datos (en este caso, 100 MB de texto en ingles con escritura latina). El identificador del modelo sugiere un experimento de investigacion sobre tokenizacion, dado que la ejecucion de entrenamiento asociada pertenece al proyecto de Weights & Biases `f-padovani-university-of-groningen/new-tokenizers`. Esto lo situa como un artefacto de investigacion academica mas que como un modelo listo para produccion.
 
@@ -49,7 +49,7 @@ El entrenamiento se ha realizado mediante SFT (Supervised Fine-Tuning) utilizand
 - Investigacion sobre tokenizacion: el identificador del modelo y el proyecto de W&B asociado (`new-tokenizers`) sugieren que su proposito principal es servir de artefacto experimental para comparar tokenizadores sobre un modelo Goldfish de 100 MB. Se usaria reproduciendo el entrenamiento SFT y comparando metricas de perplejidad entre variantes.
 - Fine-tuning de bajo coste en entornos academicos: con 86,5 M de parametros y 0,2 GB de pesos, es viable entrenarlo y evaluarlo con una unica GPU de gama media o incluso en CPU, lo que lo hace adecuado para practicas docentes de ajuste supervisado con TRL.
 - Generacion de texto controlada en ingles: dado que el modelo base usa datos `eng_latn`, puede emplearse para generar texto corto en ingles en tareas de experimentacion, siempre asumiendo calidad limitada por el reducido volumen de datos de preentrenamiento.
-- Pruebas de integracion en pipelines de HuggingFace: al declarar los tags `text-generation-inference` y `endpoints_compatible`, puede desplegarse en TGI o en HuggingFace Inference Endpoints para validar flujos de despliegue con modelos pequenos.
+- Pruebas de integracion en pipelines de Hugging Face: al declarar los tags `text-generation-inference` y `endpoints_compatible`, puede desplegarse en TGI o en Hugging Face Inference Endpoints para validar flujos de despliegue con modelos pequenos.
 - Baseline para comparativas de modelos pequenos: sirve como referencia base (86,5 M de parametros) frente a modelos de mayor tamano en estudios de escalado o de destilacion.
 - Experimentos de cuantizacion y eficiencia: por su tamano reducido, es adecuado para probar conversiones a GGUF, int8 o int4 y medir el impacto en la calidad de generacion, aunque no se distribuyan cuantizaciones oficiales.
 
@@ -62,15 +62,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 0,17 GB en fp16 (86,5 M de parametros x 2 bytes = 173 MB), unos 0,09 GB en int8 y unos 0,05 GB en int4, mas el consumo de activaciones y cache KV, que en la practica situa el uso total en torno a 0,2-0,5 GB.
 - GPU recomendadas: cabe holgadamente en cualquier GPU consumer moderna (RTX 3060, RTX 4070, RTX 4090), asi como en GPUs de datacenter (A100, H100) aunque no las aproveche por su tamano.
 - Compatibilidad con GPU de consumo: si, cabe en practicamente cualquier GPU consumer e integrada con suficiente memoria; tambien puede ejecutarse en CPU.
-- Opciones de despliegue: transformers (pipeline de `text-generation`), text-generation-inference (tag declarado), HuggingFace Inference Endpoints (tag `endpoints_compatible`). La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible por el formato safetensors de origen, pero no se distribuye ni documenta en la informacion disponible. vLLM tambien seria viable.
+- Opciones de despliegue: transformers (pipeline de `text-generation`), text-generation-inference (tag declarado), Hugging Face Inference Endpoints (tag `endpoints_compatible`). La conversion a GGUF para llama.cpp u Ollama es tecnicamente posible por el formato safetensors de origen, pero no se distribuye ni documenta en la informacion disponible. vLLM tambien seria viable.
 - Latencia y throughput estimados: no disponible. Con este numero de parametros, en una GPU consumer se esperarian latencias muy bajas y throughput alto, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed3407 | 86,5 M | No disponible | No disponible | HuggingFace, repositorio de 0,2 GB | Fine-tuning SFT de Goldfish con TRL |
-| goldfish-models/eng_latn_100mb (modelo base) | No disponible en la informacion | No disponible | No disponible en la informacion | HuggingFace | Modelo monolingue de la familia Goldfish entrenado con 100 MB de ingles |
+| francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed3407 | 86,5 M | No disponible | No disponible | Hugging Face, repositorio de 0,2 GB | Fine-tuning SFT de Goldfish con TRL |
+| goldfish-models/eng_latn_100mb (modelo base) | No disponible en la informacion | No disponible | No disponible en la informacion | Hugging Face | Modelo monolingue de la familia Goldfish entrenado con 100 MB de ingles |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | MIT | Ampliamente distribuido | Modelo de referencia de la arquitectura GPT-2 |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-tam-after-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gyd9xlv1
 - Repositorio de TRL: https://github.com/huggingface/trl

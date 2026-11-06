@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fission (`lylybig/fission_mol`) es un proyecto de investigación para la generación de moléculas 3D mediante modelos de difusión, desarrollado por el usuario `lylybig` y publicado en HuggingFace. No se trata de un modelo de lenguaje, sino de un modelo generativo equivariante que aprende la distribución de conformaciones moleculares en 3D y permite muestrear nuevas moléculas con validez química. El repositorio (2,4 GB) contiene el código de entrenamiento y evaluación, la configuración de entorno y las instrucciones de reproducción de los experimentos sobre los conjuntos de datos GEOM-QM9 y GEOM-Drug.
+Fission (`lylybig/fission_mol`) es un proyecto de investigación para la generación de moléculas 3D mediante modelos de difusión, desarrollado por el usuario `lylybig` y publicado en Hugging Face. No se trata de un modelo de lenguaje, sino de un modelo generativo equivariante que aprende la distribución de conformaciones moleculares en 3D y permite muestrear nuevas moléculas con validez química. El repositorio (2,4 GB) contiene el código de entrenamiento y evaluación, la configuración de entorno y las instrucciones de reproducción de los experimentos sobre los conjuntos de datos GEOM-QM9 y GEOM-Drug.
 
 La model card describe dos líneas de trabajo: el modelo denominado MFDM (entrenado en GEOM-QM9, con y sin átomos de hidrógeno explícitos) y un modelo basado en EDM + EGNN para GEOM-Drug. El entrenamiento se ha validado en configuraciones multi-GPU (4x H100, 2x A800, 6x A40) con PyTorch DDP, y el repositorio incluye scripts de preprocesado, muestreo distribuido y cálculo de métricas de estabilidad, validez, unicidad y novedad.
 
@@ -92,7 +92,7 @@ Los datos de EDM y GeoLDM en GEOM-Drug aparecen vacíos en la tabla original. El
 
 | Modelo | Tarea | Atom Stab (QM9) | Mol Stab (QM9) | Valid (QM9) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Fission (MFDM, 4x H100) | Difusión molecular 3D | 31,14 | 0,00 | 90,35 | no disponible | HuggingFace (repo de código) |
+| Fission (MFDM, 4x H100) | Difusión molecular 3D | 31,14 | 0,00 | 90,35 | no disponible | Hugging Face (repo de código) |
 | EDM | Difusión molecular 3D | 98,7 | 82,0 | 91,9 | no disponible | Publicación académica |
 | GeoLDM | Difusión latente molecular | 98,9 | 89,4 | 93,8 | no disponible | Publicación académica |
 | FlowMol | Flow matching molecular | 99,7 | 96,2 | 97,3 | no disponible | Publicación académica |
@@ -115,7 +115,7 @@ Las cifras de los modelos de referencia proceden de la propia model card de Fiss
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lylybig/fission_mol
+- Hugging Face: https://huggingface.co/lylybig/fission_mol
 - Datos GEOM-Drug (Dataverse Harvard): https://dataverse.harvard.edu/api/access/datafile/4360331
 - Los resultados de búsqueda web proporcionados no contienen material relacionado con este modelo (tratan sobre tiempo de pantalla en alemán), por lo que no se incluyen enlaces adicionales verificables.
 - No se dispone de enlace a paper, blog técnico, repositorio GitHub ni demo asociados en la información proporcionada.

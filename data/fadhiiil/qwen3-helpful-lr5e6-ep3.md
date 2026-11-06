@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fadhiiil/qwen3-helpful-lr5e6-ep3 es un modelo de clasificación de texto derivado de la familia Qwen3, publicado en HuggingFace por el usuario Fadhiiil. Con 595.777.536 parámetros (aproximadamente 0,6 mil millones, es decir, 595,8 M), se trata de un checkpoint de tamaño pequeño, coherente con una variante compacta de Qwen3, reentrenado mediante TRL (Transformer Reinforcement Learning) con la etiqueta `reward-trainer`, lo que indica que se ha entrenado como modelo de recompensa (reward model) para tareas de preferencia o evaluación de respuestas.
+Fadhiiil/qwen3-helpful-lr5e6-ep3 es un modelo de clasificación de texto derivado de la familia Qwen3, publicado en Hugging Face por el usuario Fadhiiil. Con 595.777.536 parámetros (aproximadamente 0,6 mil millones, es decir, 595,8 M), se trata de un checkpoint de tamaño pequeño, coherente con una variante compacta de Qwen3, reentrenado mediante TRL (Transformer Reinforcement Learning) con la etiqueta `reward-trainer`, lo que indica que se ha entrenado como modelo de recompensa (reward model) para tareas de preferencia o evaluación de respuestas.
 
 El nombre del repositorio sugiere un ajuste fino con tasa de aprendizaje 5e-6 y 3 épocas (`lr5e6-ep3`) sobre una tarea orientada a "helpfulness" (utilidad de las respuestas). El pipeline declarado en el Hub es `text-classification`, lo que es consistente con el uso de un reward model: recibe un par prompt-respuesta y devuelve una puntuación escalar de calidad en lugar de generar texto.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fadhiiil/qwen3-helpful-lr5e6-ep3 | 595,8 M | no disponible | Clasificación / reward | no disponible | HuggingFace |
-| Qwen3 (variantes oficiales) | no disponible en la informacion | no disponible | Generación de texto | no disponible en la informacion | HuggingFace |
-| Modelos de recompensa tipo ArmoRM / Starling-RM | no disponible en la informacion | no disponible | Reward modeling | no disponible en la informacion | HuggingFace |
+| Fadhiiil/qwen3-helpful-lr5e6-ep3 | 595,8 M | no disponible | Clasificación / reward | no disponible | Hugging Face |
+| Qwen3 (variantes oficiales) | no disponible en la informacion | no disponible | Generación de texto | no disponible en la informacion | Hugging Face |
+| Modelos de recompensa tipo ArmoRM / Starling-RM | no disponible en la informacion | no disponible | Reward modeling | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas concretas; los modelos comparables de la misma categoría (reward models de tamaño pequeño) no están identificados en la información proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e6-ep3
+- Hugging Face: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e6-ep3
 - TRL (Transformer Reinforcement Learning): https://github.com/huggingface/trl
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

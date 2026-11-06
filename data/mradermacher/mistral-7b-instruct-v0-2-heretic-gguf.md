@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha corresponde a los cuantizados GGUF de **mistral-7b-instruct-v0.2-heretic**, publicados por el usuario mradermacher en HuggingFace. El modelo base es un fine-tuning de Mistral 7B Instruct v0.2 realizado por Ananasez, al que se le han aplicado técnicas de "abliteración" o "descensura" (etiquetado como *heretic*, *uncensored*, *decensored*, *abliterated*), un proceso que modifica los pesos del modelo para eliminar los rechazos de seguridad impuestos por el alineamiento original, manteniendo intactas las capacidades generales del modelo subyacente.
+Esta ficha corresponde a los cuantizados GGUF de **mistral-7b-instruct-v0.2-heretic**, publicados por el usuario mradermacher en Hugging Face. El modelo base es un fine-tuning de Mistral 7B Instruct v0.2 realizado por Ananasez, al que se le han aplicado técnicas de "abliteración" o "descensura" (etiquetado como *heretic*, *uncensored*, *decensored*, *abliterated*), un proceso que modifica los pesos del modelo para eliminar los rechazos de seguridad impuestos por el alineamiento original, manteniendo intactas las capacidades generales del modelo subyacente.
 
 mradermacher no entrena modelos: su rol es el de cuantizador, ofreciendo versiones estáticas en formato GGUF que van desde Q2_K (2,8 GB) hasta f16 (14,6 GB), lo que permite ejecutar el modelo en hardware muy variado, desde portátiles sin GPU dedicada hasta estaciones de trabajo. El modelo original conserva la arquitectura transformer decoder de Mistral 7B con 7.241.732.096 parámetros, y su relevancia actual radica en la demanda de modelos locales sin filtros para investigación, red teaming y casos de uso creativos donde los rechazos del modelo base resultan restrictivos.
 

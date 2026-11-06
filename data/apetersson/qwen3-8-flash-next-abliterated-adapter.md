@@ -18,7 +18,7 @@ El autor reporta una verificación sobre un panel de comportamiento sellado de 6
 | Longitud de contexto | 262.144 tokens en la configuración verificada; hasta 1.048.576 tokens con YaRN en el trunk UD-IQ4_XS |
 | Tipos de cuantización | Adaptadores específicos para Q5_K_M y UD-IQ4_XS del trunk; el trunk emplea tabla n-gram BF16 y caché KV q8_0 en la ruta de 1M |
 | Idiomas soportados | No disponible (sin declarar en la model card); las pruebas documentadas cubren inglés, alemán y chino |
-| Licencia | qwen-community-1.0 (etiquetada como `other` / `license: other` en HuggingFace) |
+| Licencia | qwen-community-1.0 (etiquetada como `other` / `license: other` en Hugging Face) |
 | Formato de pesos | GGUF (LoRA nativo de llama.cpp, cargado con `--lora-scaled`) |
 | Modelo base | apetersson/Qwen3.8-Flash-Next-GGUF (relación: adapter) |
 | Modelo referenciado por el autor | Qwen/Qwen3.8-Flash-Next |
@@ -83,8 +83,8 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras suites est�
 
 | Modelo | Parámetros | Contexto | Comportamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre Qwen3.8-Flash-Next-GGUF) | 79,6 M (adaptador) | 256K; 1M con YaRN en IQ4 | 59/60 respuestas sustantivas, 0 rechazos (autoinformado) | qwen-community-1.0 | GGUF LoRA en HuggingFace |
-| apetersson/Qwen3.8-Flash-Next-GGUF (trunk sin editar) | No disponible | 256K; 1M con YaRN en IQ4 | Comportamiento alineado de fábrica, con rechazos | qwen-community-1.0 | GGUF en HuggingFace |
+| Este adaptador (sobre Qwen3.8-Flash-Next-GGUF) | 79,6 M (adaptador) | 256K; 1M con YaRN en IQ4 | 59/60 respuestas sustantivas, 0 rechazos (autoinformado) | qwen-community-1.0 | GGUF LoRA en Hugging Face |
+| apetersson/Qwen3.8-Flash-Next-GGUF (trunk sin editar) | No disponible | 256K; 1M con YaRN en IQ4 | Comportamiento alineado de fábrica, con rechazos | qwen-community-1.0 | GGUF en Hugging Face |
 | Otros modelos abliterados comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la información proporcionada de datos de benchmarks ni de especificaciones de modelos alternativos de la misma categoría (adaptadores de abliteración o modelos sin censura de tamaño comparable) que permitan una comparación cuantitativa.
@@ -100,11 +100,11 @@ No se dispone en la información proporcionada de datos de benchmarks ni de espe
 - Licencia qwen-community-1.0: conviene revisar las cláusulas específicas de uso comercial y de redistribución antes de integrarlo en un producto.
 - Idiomas soportados sin declarar oficialmente; fuera del inglés, alemán y chino no hay evidencia de calidad.
 - Los requisitos de hardware (74-90 GiB de VRAM) limitan el despliegue a estaciones de trabajo y servidores de gama alta.
-- El nombre del modelo base, "Qwen3.8-Flash-Next", se reproduce tal y como aparece en la model card y en las etiquetas de HuggingFace.
+- El nombre del modelo base, "Qwen3.8-Flash-Next", se reproduce tal y como aparece en la model card y en las etiquetas de Hugging Face.
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/apetersson/Qwen3.8-Flash-Next-Abliterated-Adapter
+- Adaptador en Hugging Face: https://huggingface.co/apetersson/Qwen3.8-Flash-Next-Abliterated-Adapter
 - Trunk GGUF base: https://huggingface.co/apetersson/Qwen3.8-Flash-Next-GGUF
 - Modelo referenciado por el autor: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Guía de despliegue del adaptador: GUIDE.md (incluido en el repositorio)

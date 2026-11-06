@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELARSpeech-OmniASR-1B-wrr es un modelo de reconocimiento automático del habla (ASR) especializado en wardaman (código ISO 639-3 `wrr`), una lengua aborigen australiana con una comunidad de hablantes muy reducida y en situación de peligro. Lo publica el usuario Sanghyang00 en HuggingFace como parte de la familia ELARSpeech, y se obtiene por ajuste fino del checkpoint aadel4/omniASR-CTC-1B-v2, un modelo acústico multilingüe de aproximadamente 1.000 millones de parámetros.
+ELARSpeech-OmniASR-1B-wrr es un modelo de reconocimiento automático del habla (ASR) especializado en wardaman (código ISO 639-3 `wrr`), una lengua aborigen australiana con una comunidad de hablantes muy reducida y en situación de peligro. Lo publica el usuario Sanghyang00 en Hugging Face como parte de la familia ELARSpeech, y se obtiene por ajuste fino del checkpoint aadel4/omniASR-CTC-1B-v2, un modelo acústico multilingüe de aproximadamente 1.000 millones de parámetros.
 
 Técnicamente es un `Wav2Vec2ForCTC` clásico: un extractor convolucional de características seguido de un codificador transformer y una cabeza CTC. El repositorio contiene 975.681.460 parámetros reales en formato safetensors (3,9 GB), lo que sitúa al modelo en la gama de 1B y permite inferencia en GPU de consumo e incluso en CPU. La entrada debe ser audio mono a 16 kHz.
 
@@ -96,7 +96,7 @@ Diferencias clave: frente a MMS-1B-all, este modelo es monolingüe pero potencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-wrr
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-1B-wrr
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-1B-v2
 - Documentación del proyecto ELARSpeech: no disponible
 - Paper o informe técnico: no disponible

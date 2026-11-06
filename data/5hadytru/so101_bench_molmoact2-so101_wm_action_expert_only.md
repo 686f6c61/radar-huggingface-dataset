@@ -114,11 +114,11 @@ La comparacion directa relevante es contra el ajuste fino completo del mismo aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_action_expert_only
+- Modelo en Hugging Face: https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_action_expert_only
 - Checkpoint de ajuste fino completo (entrada oficial del benchmark): https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune
 - Modelo base: https://huggingface.co/allenai/MolmoAct2-SO100_101
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/5hadytru/so101_bench_sim_WM
 - Repositorio oficial de MolmoAct2 (Ai2): https://github.com/allenai/molmoact2
 - Repositorio de SO-101 Bench: https://github.com/5hadytru/so101_bench
 - Articulo de MolmoAct2 (arXiv): https://arxiv.org/abs/2605.02881
-- Perfil del autor en HuggingFace: https://huggingface.co/5hadytru
+- Perfil del autor en Hugging Face: https://huggingface.co/5hadytru

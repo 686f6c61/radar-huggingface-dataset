@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada solo menciona el modelo base zai-org
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nm-testing/GLM-4.5-Air-0.72B-MTP
+- Modelo en Hugging Face: https://huggingface.co/nm-testing/GLM-4.5-Air-0.72B-MTP
 - Modelo base: https://huggingface.co/zai-org/GLM-4.5-Air
 - Pull request de referencia en LLM Compressor: https://github.com/vllm-project/llm-compressor/pull/3225
 - Repositorio de LLM Compressor: https://github.com/vllm-project/llm-compressor

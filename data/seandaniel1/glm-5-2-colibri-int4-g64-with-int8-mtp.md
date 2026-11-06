@@ -77,7 +77,7 @@ No se han publicado en la informacion disponible cifras de MMLU, GSM8K, HumanEva
 
 | Modelo | Parametros | Cuantizacion y tamano | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este contenedor (Seandaniel1/GLM-5.2-colibri-int4-g64-with-int8-mtp) | 744B MoE | int4 grouped gs=64 + MTP int8, 429,3 GB | hellaswag 87,0%; detencion 5/5; expert-matmul 20,9 s | MIT | Publico en HuggingFace, requiere colibri v1.3.0+ (recomendado v1.5.0+); 0 descargas |
+| Este contenedor (Seandaniel1/GLM-5.2-colibri-int4-g64-with-int8-mtp) | 744B MoE | int4 grouped gs=64 + MTP int8, 429,3 GB | hellaswag 87,0%; detencion 5/5; expert-matmul 20,9 s | MIT | Publico en Hugging Face, requiere colibri v1.3.0+ (recomendado v1.5.0+); 0 descargas |
 | mastouri/GLM-5.2-colibri-E8-IQ3-with-int8-mtp | 744B MoE (mismo padre FP8) | E8/IQ3, 3,06 bpw, 289 GB | Sin perdida medible en hellaswag, arc_challenge y mmlu segun el autor; 22-33% mas rapido con hit rate <99% en 16 GB; regresion en 6xRTX 5090 | no disponible | Publico; requiere colibri v1.4.0+ (las versiones anteriores fallan con fmt=6) |
 | Contenedor per-row int4 (referenciado en los issues, sin nombre de repositorio) | 744B MoE | int4 por fila | hellaswag 83,5%; 0/5 en la matriz de detencion | no disponible | Referenciado en colibri #326 y #455 |
 | zai-org/GLM-5.2 (modelo base) | 744B MoE | FP8 | no disponible | no disponible | Repositorio oficial del modelo base |

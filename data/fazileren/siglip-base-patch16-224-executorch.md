@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FazilEren/siglip-base-patch16-224-executorch | ~86M | 224x224 | ExecuTorch | No disponible | HuggingFace |
-| google/siglip-base-patch16-224 | ~86M | 224x224 | Safetensors | Apache 2.0 | HuggingFace |
-| openai/clip-vit-base-patch32 | ~86M | 224x224 | Safetensors | MIT | HuggingFace |
-| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ~86M | 224x224 | Safetensors | MIT | HuggingFace |
+| FazilEren/siglip-base-patch16-224-executorch | ~86M | 224x224 | ExecuTorch | No disponible | Hugging Face |
+| google/siglip-base-patch16-224 | ~86M | 224x224 | Safetensors | Apache 2.0 | Hugging Face |
+| openai/clip-vit-base-patch32 | ~86M | 224x224 | Safetensors | MIT | Hugging Face |
+| laion/CLIP-ViT-B-32-laion2B-s34B-b79K | ~86M | 224x224 | Safetensors | MIT | Hugging Face |
 
 La principal diferencia de esta conversión frente a los modelos originales es el formato de pesos: ExecuTorch está optimizado para despliegue en edge, mientras que los safetensors requieren un runtime de Python o un framework de inferencia. El rendimiento en tareas de visión-lenguaje debería ser idéntico al modelo original, ya que los pesos no se modifican.
 
@@ -79,7 +79,7 @@ La principal diferencia de esta conversión frente a los modelos originales es e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FazilEren/siglip-base-patch16-224-executorch
+- Repositorio Hugging Face: https://huggingface.co/FazilEren/siglip-base-patch16-224-executorch
 - Modelo original: https://huggingface.co/google/siglip-base-patch16-224
 - Paper original (Sigmoid Loss for Language Image Pre-Training): no disponible en los resultados de búsqueda, pero se puede localizar en arxiv.org
 - Documentación de ExecuTorch: https://pytorch.org/executorch (no verificado en la búsqueda)

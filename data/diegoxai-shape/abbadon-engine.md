@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abbadon Engine es un pipeline de visión por computador publicado en HuggingFace por el usuario DiegoXAI-Shape, compuesto por dos modelos TorchScript que trabajan en cadena para clasificar imágenes de perros y gatos. El primer modelo, Daowa-maad, es un oráculo de segmentación de mascotas destilado de SAM 2; el segundo, Mendicant Bias, es un clasificador binario (gato/perro) que recibe la imagen RGB original más la máscara blanda generada por el primero como mecanismo de atención.
+Abbadon Engine es un pipeline de visión por computador publicado en Hugging Face por el usuario DiegoXAI-Shape, compuesto por dos modelos TorchScript que trabajan en cadena para clasificar imágenes de perros y gatos. El primer modelo, Daowa-maad, es un oráculo de segmentación de mascotas destilado de SAM 2; el segundo, Mendicant Bias, es un clasificador binario (gato/perro) que recibe la imagen RGB original más la máscara blanda generada por el primero como mecanismo de atención.
 
 El problema que aborda es el *shortcut learning* o aprendizaje por atajos: un clasificador convolucional convencional alcanza alta precisión en cats vs dogs aprendiendo el fondo ("perro si hay césped, gato si hay sofá") en lugar del animal. Abbadon introduce una pista explícita de dónde está el animal mediante la máscara de segmentación, permitiendo al clasificador desobedecer esa pista cuando es incorrecta, pero penalizando esa desobediencia con una penalización L2.
 
@@ -93,7 +93,7 @@ Las cifras de parámetros, contexto y rendimiento de los modelos comparables no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DiegoXAI-Shape/abbadon-engine
+- Modelo en Hugging Face: https://huggingface.co/DiegoXAI-Shape/abbadon-engine
 - Motor de inferencia en C++/LibTorch: https://github.com/DiegoXAI-Shape/abbadon_engine
 - Código de entrenamiento (proyecto Abbadon): https://github.com/DiegoXAI-Shape/Abbadon
 - Backbone ConvNeXtV2 (timm): no disponible enlace directo en la información proporcionada

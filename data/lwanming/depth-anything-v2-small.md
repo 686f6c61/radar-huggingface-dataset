@@ -77,8 +77,8 @@ La comparativa se basa en la información pública de cada modelo. Depth-Anythin
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/lwanming/depth-anything-v2-small
+- Repositorio Hugging Face del modelo: https://huggingface.co/lwanming/depth-anything-v2-small
 - Repositorio original en GitHub: https://github.com/DepthAnything/Depth-Anything-V2
-- Modelo original en HuggingFace: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
+- Modelo original en Hugging Face: https://huggingface.co/depth-anything/Depth-Anything-V2-Small-hf
 - Documentación de Transformers para Depth Anything V2: https://huggingface.co/docs/transformers/v4.56.1/en/model_doc/depth_anything_v2
 - Página de análisis del modelo (aimodels.fyi): https://www.aimodels.fyi/models/huggingFace/depth-anything-v2-small-depth-anything

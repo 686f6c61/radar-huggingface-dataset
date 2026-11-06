@@ -79,11 +79,11 @@ El autor señala que a este ancho de bits el formato de cuantización apenas mue
 
 | Modelo | Parámetros totales | Activos | Expertos por capa | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| suryatmodulus/altar-1 | ~500,8 B | ~40 B | 168 de 256 | W4A16 INT4 (AWQ) | other (hereda GLM-5.3) | HuggingFace, vLLM en Hopper |
-| zai-org/GLM-5.3 (original) | 753 B | ~40 B | 256 de 256 | BF16 | GLM-5.3 | HuggingFace |
-| cyankiwi/GLM-5.3-AWQ-INT4 | 753 B | ~40 B | 256 de 256 | W4A16 INT4 (AWQ) | hereda GLM-5.3 | HuggingFace |
-| 0xSero/GLM-5.3-569B-W4A16 | ~569 B | ~40 B | recorte menos agresivo | W4A16 | hereda GLM-5.3 | HuggingFace |
-| 0xSero/GLM-5.3-500B-EXL3-3.0bpw | ~500 B | ~40 B | mismo recorte de 168 | EXL3 3,0 bpw | hereda GLM-5.3 | HuggingFace |
+| suryatmodulus/altar-1 | ~500,8 B | ~40 B | 168 de 256 | W4A16 INT4 (AWQ) | other (hereda GLM-5.3) | Hugging Face, vLLM en Hopper |
+| zai-org/GLM-5.3 (original) | 753 B | ~40 B | 256 de 256 | BF16 | GLM-5.3 | Hugging Face |
+| cyankiwi/GLM-5.3-AWQ-INT4 | 753 B | ~40 B | 256 de 256 | W4A16 INT4 (AWQ) | hereda GLM-5.3 | Hugging Face |
+| 0xSero/GLM-5.3-569B-W4A16 | ~569 B | ~40 B | recorte menos agresivo | W4A16 | hereda GLM-5.3 | Hugging Face |
+| 0xSero/GLM-5.3-500B-EXL3-3.0bpw | ~500 B | ~40 B | mismo recorte de 168 | EXL3 3,0 bpw | hereda GLM-5.3 | Hugging Face |
 
 No hay datos de benchmarks que permitan comparar rendimiento entre estas variantes; la única comparación cuantitativa publicada es la divergencia KL (0,506 nats de Altar-1 frente a 0,511 nats de la build EXL3 del mismo recorte). La diferencia entre Altar-1 y las builds de 0xSero está en el formato de cuantización y en el grado de poda, no en el modelo base.
 
@@ -93,19 +93,19 @@ No hay datos de benchmarks que permitan comparar rendimiento entre estas variant
 - Requiere hardware Hopper (H100/H200) y 328 GB de pesos en INT4; no existe una ruta práctica de despliegue en GPUs de consumo ni en hardware anterior a Hopper.
 - La divergencia KL de 0,506 nats implica que el modelo no es idéntico al GLM-5.3 BF16; en tareas muy sensibles a la distribución exacta de probabilidades puede haber degradación medible.
 - La poda elimina el 34 % de los expertos. Aunque el criterio es consciente de dominio, cualquier especialista con poco volumen de activación en la calibración puede haber desaparecido, especialmente en idiomas o dominios ausentes del conjunto de calibración.
-- No hay lista oficial de idiomas soportados en los metadatos de HuggingFace; la cobertura multilingüe es una inferencia a partir de los datos de calibración declarados, no una garantía.
+- No hay lista oficial de idiomas soportados en los metadatos de Hugging Face; la cobertura multilingüe es una inferencia a partir de los datos de calibración declarados, no una garantía.
 - Riesgo de alucinación inherente a un modelo de lenguaje de esta escala, agravado por la ausencia de benchmarks públicos que permitan acotar su fiabilidad por tarea.
 - El repositorio tiene 0 descargas y 0 likes, y fue creado y actualizado en el mismo minuto: la validación externa es prácticamente nula y las afirmaciones de la model card proceden únicamente del autor.
-- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información de esta ficha procede de la model card y de los metadatos de HuggingFace.
+- La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; toda la información de esta ficha procede de la model card y de los metadatos de Hugging Face.
 - No se documentan versiones GGUF ni soporte para llama.cpp u Ollama, lo que limita las opciones de despliegue a vLLM sobre Hopper.
 - El comando de servicio de la model card apunta a `aikido/altar-1`, mientras que el repositorio consultado es `suryatmodulus/altar-1`; conviene verificar qué identificador resuelve correctamente antes de desplegar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/suryatmodulus/altar-1
+- Repositorio en Hugging Face: https://huggingface.co/suryatmodulus/altar-1
 - Modelo base cuantizado: https://huggingface.co/cyankiwi/GLM-5.3-AWQ-INT4
 - Modelo original GLM-5.3 (Z.AI): https://huggingface.co/zai-org/GLM-5.3
-- Organización Z.AI en HuggingFace: https://huggingface.co/zai-org
+- Organización Z.AI en Hugging Face: https://huggingface.co/zai-org
 - Paper de REAP: https://arxiv.org/abs/2510.13999
 - Repositorio de REAP en GitHub: https://github.com/CerebrasResearch/reap
 - Build de 569B del mismo recorte: https://huggingface.co/0xSero/GLM-5.3-569B-W4A16

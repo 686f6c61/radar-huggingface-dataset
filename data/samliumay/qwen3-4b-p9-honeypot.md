@@ -78,8 +78,8 @@ Notas: en E1, la tasa de éxito del honeypot cae al 30% cuando se aplican transf
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-p9-honeypot | 4B + LoRA | no disponible | Honeypot de seguridad (decepción y alerta) | apache-2.0 | HuggingFace (16 descargas) |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible en la información proporcionada | Asistente general | apache-2.0 | HuggingFace |
+| qwen3-4b-p9-honeypot | 4B + LoRA | no disponible | Honeypot de seguridad (decepción y alerta) | apache-2.0 | Hugging Face (16 descargas) |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | 4B | no disponible en la información proporcionada | Asistente general | apache-2.0 | Hugging Face |
 | Alternativas honeypot comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de terceros para comparar directamente con otros honeypots LLM; la única comparación publicada es contra el modelo base, recogida en la sección anterior.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de terceros para comparar directamente con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/samliumay/qwen3-4b-p9-honeypot
+- Modelo en Hugging Face: https://huggingface.co/samliumay/qwen3-4b-p9-honeypot
 - Dataset: https://huggingface.co/datasets/samliumay/p9_honeypot
 - Código y harness de evaluación: https://github.com/samliumay/making_a_honeypot_model
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

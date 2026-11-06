@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/sol-high.grpo-process-scaleswe.step_1
+- Hugging Face: https://huggingface.co/agentic-ptb/sol-high.grpo-process-scaleswe.step_1
 - Repositorio ScaleSWE: https://github.com/AweAI-Team/ScaleSWE
 - DeepSWE (benchmark de agentes de codificación): https://deepswe.datacurve.ai/
 - Página de GPT-5.6 (referencia del driver): https://openai.com/index/gpt-5-6/

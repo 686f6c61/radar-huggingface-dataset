@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `SebasKoedam/act_so101_training_test` | 51,7 M | no aplica | pick-and-place SO-101 | no disponible | HuggingFace |
+| `SebasKoedam/act_so101_training_test` | 51,7 M | no aplica | pick-and-place SO-101 | no disponible | Hugging Face |
 | ACT original (paper 2304.13705) | no disponible | no aplica | manipulación ALOHA | investigación | paper + código |
-| Políticas LeRobot `act` oficiales | variable | no aplica | múltiples tareas | Apache-2.0 (LeRobot) | HuggingFace / GitHub |
-| Políticas Diffusion Policy (LeRobot) | variable | no aplica | manipulación | Apache-2.0 (LeRobot) | HuggingFace / GitHub |
+| Políticas LeRobot `act` oficiales | variable | no aplica | múltiples tareas | Apache-2.0 (LeRobot) | Hugging Face / GitHub |
+| Políticas Diffusion Policy (LeRobot) | variable | no aplica | manipulación | Apache-2.0 (LeRobot) | Hugging Face / GitHub |
 
 La comparación cuantitativa de rendimiento no está disponible porque este checkpoint no publica tasas de éxito. Frente a las políticas de referencia de LeRobot, este modelo se distingue por su carácter de prueba (5 episodios, una tarea) y por la ausencia de licencia declarada, lo que limita su reutilización comercial frente a las políticas oficiales del proyecto.
 
@@ -81,7 +81,7 @@ La comparación cuantitativa de rendimiento no está disponible porque este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SebasKoedam/act_so101_training_test
+- Modelo en Hugging Face: https://huggingface.co/SebasKoedam/act_so101_training_test
 - Dataset de entrenamiento: https://huggingface.co/datasets/SebasKoedam/so101_training_test_20261102_093435
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=SebasKoedam/so101_training_test_20261102_093435
 - Paper ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

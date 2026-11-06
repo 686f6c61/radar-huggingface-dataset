@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `2026-05-o-b0p6-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last` es un checkpoint de investigación publicado por el usuario yuq-zhou en HuggingFace. Se trata de un artefacto de respaldo de un experimento de entrenamiento, sin documentación pública más allá de la etiqueta de "research artifact backup". El nombre sugiere una configuración experimental con parámetros específicos (probablemente relacionados con tasas de aprendizaje, tamaños de lote o arquitectura), pero no hay información oficial que permita interpretarlo.
+El modelo `2026-05-o-b0p6-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last` es un checkpoint de investigación publicado por el usuario yuq-zhou en Hugging Face. Se trata de un artefacto de respaldo de un experimento de entrenamiento, sin documentación pública más allá de la etiqueta de "research artifact backup". El nombre sugiere una configuración experimental con parámetros específicos (probablemente relacionados con tasas de aprendizaje, tamaños de lote o arquitectura), pero no hay información oficial que permita interpretarlo.
 
 El modelo está etiquetado como `qwen3`, lo que sugiere que podría estar basado en la arquitectura Qwen3, aunque no se confirma en la model card. Tiene aproximadamente 2.031 millones de parámetros (2,03 mil millones), un tamaño relativamente pequeño que podría ser adecuado para entornos con recursos limitados. El pipeline declarado es `text-generation` y es compatible con `text-generation-inference`, lo que indica que puede desplegarse con herramientas estándar de inferencia. Sin embargo, al carecer de licencia, idiomas documentados y cualquier detalle de entrenamiento, su uso en producción es arriesgado y requiere validación previa.
 
@@ -21,7 +21,7 @@ El modelo está etiquetado como `qwen3`, lo que sugiere que podría estar basado
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados. El nombre del checkpoint incluye códigos como `b0p6`, `a0p5`, `gc0p5`, `td8p0`, `tw10p0` y `mbz-bridge`, que probablemente corresponden a hiperparámetros de un experimento (por ejemplo, tasas de aprendizaje, tamaños de lote o configuraciones de puente entre módulos), pero no hay documentación que los explique. La etiqueta `qwen3` sugiere que podría tratarse de una variante de la familia Qwen3, conocida por su arquitectura transformer con atención de ventana deslizante y mezcla de expertos en algunas versiones, pero esto no es verificable. El autor lo describe únicamente como un "checkpoint de investigación" en formato estándar de HuggingFace, sin detalles adicionales.
+No se ha publicado información sobre la arquitectura interna, el proceso de entrenamiento ni los datos utilizados. El nombre del checkpoint incluye códigos como `b0p6`, `a0p5`, `gc0p5`, `td8p0`, `tw10p0` y `mbz-bridge`, que probablemente corresponden a hiperparámetros de un experimento (por ejemplo, tasas de aprendizaje, tamaños de lote o configuraciones de puente entre módulos), pero no hay documentación que los explique. La etiqueta `qwen3` sugiere que podría tratarse de una variante de la familia Qwen3, conocida por su arquitectura transformer con atención de ventana deslizante y mezcla de expertos en algunas versiones, pero esto no es verificable. El autor lo describe únicamente como un "checkpoint de investigación" en formato estándar de Hugging Face, sin detalles adicionales.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ Dado que no hay información oficial, las capacidades concretas no están docume
 
 - Generación de texto: el pipeline es `text-generation`, por lo que el modelo puede producir texto autocompletado o conversacional.
 - Conversación: la etiqueta `conversational` sugiere que está diseñado para diálogos multi-turno, aunque no se especifica el formato.
-- Compatibilidad con herramientas de inferencia: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede servir mediante TGI o plataformas compatibles con endpoints de HuggingFace.
+- Compatibilidad con herramientas de inferencia: las etiquetas `text-generation-inference` y `endpoints_compatible` indican que puede servir mediante TGI o plataformas compatibles con endpoints de Hugging Face.
 - No se dispone de información sobre capacidades de tool calling, razonamiento avanzado, visión, audio o multilingüismo.
 
 ## Casos de uso
@@ -72,7 +72,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuq-zhou/2026-05-o-b0p6-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last
+- Modelo en Hugging Face: https://huggingface.co/yuq-zhou/2026-05-o-b0p6-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last
 - Modelo similar del mismo autor (variante con otros hiperparámetros): https://huggingface.co/yuq-zhou/2026-05-o-b0p3-a0p25-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b
 - Página de despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td8p0-tw10p0-mbz-bridge-q3-1p7b-last
 - Página de despliegue en FriendliAI (otro modelo del autor): https://friendli.ai/models/yuq-zhou/2026-05-o-b0p3-a0p5-gc0p5-exp-td4p0-tw5p0-r1-7-last

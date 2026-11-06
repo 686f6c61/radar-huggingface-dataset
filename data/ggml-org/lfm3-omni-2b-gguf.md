@@ -18,7 +18,7 @@ La conversión se ha realizado de forma automática con la herramienta de conver
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q8_0, Q4_K_M (mismas que los GGUF oficiales de LiquidAI) |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (licencia personalizada, "other" en HuggingFace) |
+| Licencia | lfm1.0 (licencia personalizada, "other" en Hugging Face) |
 | Formato de pesos | GGUF (conversión automática desde safetensors) |
 
 ## Arquitectura y entrenamiento
@@ -30,9 +30,9 @@ Sobre los datos de entrenamiento, el número de tokens, la composición del corp
 ## Capacidades
 
 - Entrada multimodal: acepta texto, imágenes, audio y vídeo como entrada (el procesamiento de vídeo requiere tener `ffmpeg` instalado en el `PATH`).
-- Salida de texto: generación de texto conversacional (tag `conversational` en HuggingFace).
+- Salida de texto: generación de texto conversacional (tag `conversational` en Hugging Face).
 - Salida de voz: síntesis de voz integrada, servida a través del endpoint `/tts` del servidor de llama.cpp.
-- Pipeline any-to-any: clasificado en HuggingFace como modelo any-to-any, es decir, capaz de cruzar modalidades entre entrada y salida.
+- Pipeline any-to-any: clasificado en Hugging Face como modelo any-to-any, es decir, capaz de cruzar modalidades entre entrada y salida.
 - Razonamiento, código, matemáticas y tool calling: no disponible (sin datos publicados en la model card).
 
 ## Casos de uso
@@ -70,7 +70,7 @@ La alternativa más directa es el GGUF oficial de LiquidAI, con idéntico conten
 
 ## Limitaciones y advertencias
 
-- **Licencia restrictiva**: la licencia lfm1.0 es una licencia personalizada ("other" en HuggingFace); debe revisarse el texto en el enlace del modelo base antes de cualquier uso comercial, ya que no puede asumirse que sea permisiva.
+- **Licencia restrictiva**: la licencia lfm1.0 es una licencia personalizada ("other" en Hugging Face); debe revisarse el texto en el enlace del modelo base antes de cualquier uso comercial, ya que no puede asumirse que sea permisiva.
 - **Falta de documentación**: la model card es mínima (los propios autores incluyen una sección "TODOs" pendiente de completar), por lo que contexto, idiomas y capacidades exactas deben verificarse empíricamente.
 - **Soporte de llama.cpp reciente**: requiere un build con el PR 31257 integrado; versiones estables anteriores no funcionarán con este modelo.
 - **Dependencia de ffmpeg**: sin `ffmpeg` en el `PATH`, la entrada de vídeo no funciona.

@@ -84,7 +84,7 @@ No se dispone de resultados publicos para las variantes de 2B y 4B en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-harem-official-seed123
+- Modelo en Hugging Face: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-0-8b-specific-harem-official-seed123
 - Variante 2B: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-2b-specific-harem-official-seed123
 - Variante 4B: https://huggingface.co/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-harem-official-seed3407
 - Despliegue en FriendliAI (variante 4B): https://friendli.ai/models/JoaoReiz/ner-pt-f1-v1-qwen35-4b-specific-harem-official-seed3407

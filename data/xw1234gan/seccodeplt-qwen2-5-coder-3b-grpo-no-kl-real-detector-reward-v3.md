@@ -94,6 +94,6 @@ Otros modelos de código de 3B como CodeLlama-3B o StarCoder2-3B no tienen métr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-3b-grpo-no-kl-real-detector-reward-v3)
+- [Modelo en Hugging Face](https://huggingface.co/xw1234gan/seccodeplt-qwen2.5-coder-3b-grpo-no-kl-real-detector-reward-v3)
 - [Dataset SecCodePLT_Plus](https://huggingface.co/datasets/fengyao1909/SecCodePLT_Plus)
 - [Modelo base Qwen2.5-Coder-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct)

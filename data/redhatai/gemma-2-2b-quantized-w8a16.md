@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una versión cuantizada en INT8 del modelo base Gemma 2 2B de Google, publicada por el equipo de Red Hat AI (Neural Magic) en HuggingFace. La cuantización reduce el tamaño de los pesos de 16 a 8 bits mediante el algoritmo GPTQ, lo que recorta aproximadamente un 50% el uso de disco y memoria GPU, manteniendo una pérdida de precisión mínima frente al original (52.03 frente a 52.16 en el promedio del benchmark OpenLLM).
+Este modelo es una versión cuantizada en INT8 del modelo base Gemma 2 2B de Google, publicada por el equipo de Red Hat AI (Neural Magic) en Hugging Face. La cuantización reduce el tamaño de los pesos de 16 a 8 bits mediante el algoritmo GPTQ, lo que recorta aproximadamente un 50% el uso de disco y memoria GPU, manteniendo una pérdida de precisión mínima frente al original (52.03 frente a 52.16 en el promedio del benchmark OpenLLM).
 
 El modelo conserva la arquitectura transformer de Gemma 2, con 3.2 mil millones de parámetros y una ventana de contexto de 8192 tokens. Su objetivo es permitir el despliegue eficiente en entornos con recursos limitados, como GPUs de consumo o inferencia a alta velocidad con vLLM, sin sacrificar de forma significativa la calidad de generación de texto. Está pensado para uso comercial y de investigación en inglés, tal y como especifica su licencia.
 

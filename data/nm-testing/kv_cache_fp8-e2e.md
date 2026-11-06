@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nm-testing/kv_cache_fp8-e2e` es un artefacto publicado en el espacio de HuggingFace `nm-testing`, que suele alojar experimentos internos de Neural Magic (empresa especializada en inferencia optimizada). Los tags indican que se trata de un modelo basado en arquitectura Llama con pesos en formato `safetensors` y con soporte de `compressed-tensors`, además de una caché KV en FP8 (de ahí el nombre `kv_cache_fp8-e2e`). El repositorio contiene aproximadamente 1.100 millones de parámetros y un tamaño de 63,8 GB, lo que sugiere que los pesos podrían estar almacenados en una precisión elevada o con múltiples variantes de cuantización, aunque no se especifica.
+El modelo `nm-testing/kv_cache_fp8-e2e` es un artefacto publicado en el espacio de Hugging Face `nm-testing`, que suele alojar experimentos internos de Neural Magic (empresa especializada en inferencia optimizada). Los tags indican que se trata de un modelo basado en arquitectura Llama con pesos en formato `safetensors` y con soporte de `compressed-tensors`, además de una caché KV en FP8 (de ahí el nombre `kv_cache_fp8-e2e`). El repositorio contiene aproximadamente 1.100 millones de parámetros y un tamaño de 63,8 GB, lo que sugiere que los pesos podrían estar almacenados en una precisión elevada o con múltiples variantes de cuantización, aunque no se especifica.
 
 No existe documentación pública sobre su entrenamiento, licencia, idiomas o capacidades. Dado que el autor es `nm-testing`, es probable que sea una prueba interna para validar el flujo de cuantización de caché KV en FP8, no un modelo destinado a producción. La ausencia de metadatos (pipeline, licencia, idiomas) refuerza esta hipótesis. Cualquier uso fuera de experimentación debe considerarse bajo propia responsabilidad.
 
@@ -50,8 +50,8 @@ No se dispone de información para establecer una comparativa. No se conocen mod
 - Sin documentación: no hay información sobre sesgos, alucinaciones, limitaciones de contexto o idiomas.
 - Tamaño del repositorio desproporcionado: 63,8 GB para 1.100 millones de parámetros sugiere que puede contener múltiples versiones de pesos o formatos no estándar, lo que complica su despliegue.
 - Sin garantías de funcionamiento: al no haber pipeline definido ni ejemplos, es probable que el modelo no esté listo para inferencia directa.
-- Riesgo de datos incompletos: los metadatos de HuggingFace están vacíos en campos clave (licencia, idiomas, pipeline), lo que indica falta de mantenimiento.
+- Riesgo de datos incompletos: los metadatos de Hugging Face están vacíos en campos clave (licencia, idiomas, pipeline), lo que indica falta de mantenimiento.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/nm-testing/kv_cache_fp8-e2e)
+- [Repositorio en Hugging Face](https://huggingface.co/nm-testing/kv_cache_fp8-e2e)

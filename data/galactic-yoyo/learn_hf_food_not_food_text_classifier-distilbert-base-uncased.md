@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Galactic-YoYo/learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) de `distilbert-base-uncased`, publicado por el usuario Galactic-YoYo en HuggingFace. Por el nombre del repositorio, la tarea parece ser una clasificación binaria del tipo "comida / no comida", aunque la model card no especifica el número de etiquetas ni su significado. El modelo tiene 66.955.010 parámetros en formato safetensors y ocupa 0,3 GB en el repositorio.
+`Galactic-YoYo/learn_hf_food_not_food_text_classifier-distilbert-base-uncased` es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) de `distilbert-base-uncased`, publicado por el usuario Galactic-YoYo en Hugging Face. Por el nombre del repositorio, la tarea parece ser una clasificación binaria del tipo "comida / no comida", aunque la model card no especifica el número de etiquetas ni su significado. El modelo tiene 66.955.010 parámetros en formato safetensors y ocupa 0,3 GB en el repositorio.
 
 Se trata de un encoder transformer de 6 capas y 768 dimensiones ocultas, la arquitectura estándar de DistilBERT (destilada de BERT-base), sobre la que se ha añadido una cabeza de clasificación de secuencias. El ajuste fino se realizó con 10 épocas, learning rate 1e-4 y batch size 32, alcanzando una accuracy de 1,0 y una pérdida de validación de 0,0005 sobre un conjunto de evaluación cuyo tamaño no se declara.
 
@@ -26,7 +26,7 @@ Su relevancia es limitada y muy acotada: no es un modelo de propósito general n
 | Vocabulario | 30.522 tokens (WordPiece, minúsculas) |
 | Versiones de entrenamiento | Transformers 5.18.0, PyTorch 2.11.0+cu130, Datasets 4.8.5, Tokenizers 0.23.2 |
 | Compatibilidad declarada | `text-embeddings-inference`, `endpoints_compatible` |
-| Fecha de creación / actualización | 2026-10-18 (según metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-10-18 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -87,11 +87,11 @@ Resultado final declarado: pérdida 0,0005 y accuracy 1,0 en el conjunto de eval
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (fine-tune de DistilBERT) | 66.955.010 | 512 tokens | Clasificación de texto (etiquetas no documentadas) | apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| `distilbert/distilbert-base-uncased` (base) | 66.955.010 | 512 tokens | Modelo de lenguaje enmascarado (encoder) | apache-2.0 | HuggingFace, ampliamente usado |
-| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Análisis de sentimiento binario | apache-2.0 | HuggingFace, Pipeline oficial |
-| `bert-base-uncased` | 109.482.240 | 512 tokens | Modelo de lenguaje enmascarado (encoder) | apache-2.0 | HuggingFace |
-| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens | Embeddings de frases / similitud | apache-2.0 | HuggingFace, muy usado en RAG |
+| Este modelo (fine-tune de DistilBERT) | 66.955.010 | 512 tokens | Clasificación de texto (etiquetas no documentadas) | apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| `distilbert/distilbert-base-uncased` (base) | 66.955.010 | 512 tokens | Modelo de lenguaje enmascarado (encoder) | apache-2.0 | Hugging Face, ampliamente usado |
+| `distilbert-base-uncased-finetuned-sst-2-english` | ~67 M | 512 tokens | Análisis de sentimiento binario | apache-2.0 | Hugging Face, Pipeline oficial |
+| `bert-base-uncased` | 109.482.240 | 512 tokens | Modelo de lenguaje enmascarado (encoder) | apache-2.0 | Hugging Face |
+| `sentence-transformers/all-MiniLM-L6-v2` | ~22,7 M | 256 tokens | Embeddings de frases / similitud | apache-2.0 | Hugging Face, muy usado en RAG |
 
 Frente a ellos, este modelo no aporta métricas comparables publicadas: la ventaja de tamaño frente a BERT-base es la propia de DistilBERT (aproximadamente la mitad de capas y un 40 % menos de parámetros), pero su calidad real fuera del conjunto de validación no está medida. La alternativa `distilbert-base-uncased-finetuned-sst-2-english` ofrece un clasificador binario documentado y ampliamente evaluado, aunque para otra tarea.
 
@@ -112,7 +112,7 @@ Frente a ellos, este modelo no aporta métricas comparables publicadas: la venta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Galactic-YoYo/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
+- Modelo en Hugging Face: https://huggingface.co/Galactic-YoYo/learn_hf_food_not_food_text_classifier-distilbert-base-uncased
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019), referencia de la arquitectura base: https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018), arquitectura original de la que deriva: https://arxiv.org/abs/1810.04805

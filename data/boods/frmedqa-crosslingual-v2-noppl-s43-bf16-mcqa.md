@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `boods/FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-MCQA` es un checkpoint publicado en HuggingFace por el usuario `boods`, etiquetado con las librerías `transformers` y `unsloth` y almacenado en formato `safetensors`. Por el propio identificador del repositorio puede inferirse que se trata de un ajuste fino orientado a pregunta-respuesta médica en francés, en modalidad de elección múltiple (`MCQA`), con evaluación cross-lingual, versión 2, semilla 43 y pesos en `bf16`. Sin embargo, esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación del autor.
+El modelo `boods/FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-MCQA` es un checkpoint publicado en Hugging Face por el usuario `boods`, etiquetado con las librerías `transformers` y `unsloth` y almacenado en formato `safetensors`. Por el propio identificador del repositorio puede inferirse que se trata de un ajuste fino orientado a pregunta-respuesta médica en francés, en modalidad de elección múltiple (`MCQA`), con evaluación cross-lingual, versión 2, semilla 43 y pesos en `bf16`. Sin embargo, esta interpretación procede únicamente del nombre del repositorio y no está confirmada por ninguna documentación del autor.
 
-La model card publicada es la plantilla automática de HuggingFace sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparámetros y resultados de evaluación) aparecen como `[More Information Needed]`. No hay, por tanto, información verificable sobre arquitectura, número de parámetros, longitud de contexto ni procedimiento de entrenamiento.
+La model card publicada es la plantilla automática de Hugging Face sin cumplimentar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, modelo base, datos de entrenamiento, hiperparámetros y resultados de evaluación) aparecen como `[More Information Needed]`. No hay, por tanto, información verificable sobre arquitectura, número de parámetros, longitud de contexto ni procedimiento de entrenamiento.
 
 El modelo registra cero descargas y cero "likes" en el momento de la consulta, y la fecha de creación indicada en el Hub es el 10 de octubre de 2026. Su relevancia actual es muy limitada: se trata de un artefacto de investigación sin documentación, sin licencia declarada y sin datos de rendimiento publicados, por lo que no es recomendable para uso en producción sin una evaluación propia previa.
 
@@ -25,7 +25,7 @@ El modelo registra cero descargas y cero "likes" en el momento de la consulta, y
 
 No se ha publicado información sobre la arquitectura del modelo. La model card únicamente indica `library_name: transformers` y la etiqueta `unsloth`, lo que sugiere que el ajuste fino se realizó con la librería Unsloth, habitualmente empleada para fine-tuning eficiente en memoria de modelos transformer mediante técnicas como LoRA o QLoRA. No hay confirmación del modelo base sobre el que se partió, ni del tipo de adaptadores, ni de si se fusionaron con los pesos base.
 
-Tampoco hay datos sobre el corpus de entrenamiento: no se especifica el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. El sufijo `NoPPL` del identificador podría indicar que la selección del mejor checkpoint no se hizo por perplejidad de validación, y `MCQA` apunta a un formato de respuesta de opción múltiple, pero ninguna de estas dos interpretaciones está respaldada por documentación del autor. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, incluido por defecto en la plantilla de HuggingFace, y no guarda relación con la arquitectura ni con el entrenamiento del modelo.
+Tampoco hay datos sobre el corpus de entrenamiento: no se especifica el número de tokens, la composición del dataset, ni si hubo fases de RLHF, DPO u otro tipo de alineamiento. El sufijo `NoPPL` del identificador podría indicar que la selección del mejor checkpoint no se hizo por perplejidad de validación, y `MCQA` apunta a un formato de respuesta de opción múltiple, pero ninguna de estas dos interpretaciones está respaldada por documentación del autor. La etiqueta `arxiv:1910.09700` corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, incluido por defecto en la plantilla de Hugging Face, y no guarda relación con la arquitectura ni con el entrenamiento del modelo.
 
 ## Capacidades
 
@@ -83,7 +83,7 @@ No disponible. No se puede establecer una comparativa rigurosa porque se descono
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-MCQA
+- Modelo en Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s43-bf16-MCQA
 - Articulo referenciado en la etiqueta del repositorio (Lacoste et al., 2019, sobre emisiones de carbono, incluido por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, repositorios, demos o documentacion adicional del autor.

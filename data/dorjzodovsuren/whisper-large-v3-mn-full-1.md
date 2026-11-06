@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper large-v3 mn-full-1 es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla Whisper large-v3, publicado por el usuario Dorjzodovsuren en HuggingFace. Se trata de un modelo de la familia Whisper de OpenAI, redistribuido a través del repositorio de Unsloth (`unsloth/whisper-large-v3`), que el autor ha reentrenado con un conjunto de datos no documentado en la model card. El nombre del repositorio incluye el sufijo "mn", que sugiere un ajuste orientado al idioma mongol, aunque la model card declara únicamente el inglés como idioma soportado.
+Whisper large-v3 mn-full-1 es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla Whisper large-v3, publicado por el usuario Dorjzodovsuren en Hugging Face. Se trata de un modelo de la familia Whisper de OpenAI, redistribuido a través del repositorio de Unsloth (`unsloth/whisper-large-v3`), que el autor ha reentrenado con un conjunto de datos no documentado en la model card. El nombre del repositorio incluye el sufijo "mn", que sugiere un ajuste orientado al idioma mongol, aunque la model card declara únicamente el inglés como idioma soportado.
 
 El modelo conserva la arquitectura encoder-decoder transformer propia de Whisper large-v3, con aproximadamente 1.543 millones de parámetros (1,54 B) según los pesos en safetensors. El repositorio ocupa 6,2 GB, lo que corresponde a los pesos en precisión completa (fp32) o fp16 del modelo base. La licencia es Apache 2.0, heredada del modelo original.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Dorjzodovsuren/whisper-large-v3-mn-full-1 | 1,54 B | ventanas de 30 s | en (declarado) | apache-2.0 | HuggingFace, 0 descargas |
-| openai/whisper-large-v3 | ~1,55 B | ventanas de 30 s | multilingüe | apache-2.0 | HuggingFace, ampliamente usado |
-| unsloth/whisper-large-v3 | ~1,55 B | ventanas de 30 s | multilingüe | apache-2.0 | HuggingFace, modelo base del ajuste |
+| Dorjzodovsuren/whisper-large-v3-mn-full-1 | 1,54 B | ventanas de 30 s | en (declarado) | apache-2.0 | Hugging Face, 0 descargas |
+| openai/whisper-large-v3 | ~1,55 B | ventanas de 30 s | multilingüe | apache-2.0 | Hugging Face, ampliamente usado |
+| unsloth/whisper-large-v3 | ~1,55 B | ventanas de 30 s | multilingüe | apache-2.0 | Hugging Face, modelo base del ajuste |
 
 La comparación con el modelo base y con el original de OpenAI es la más pertinente: este ajuste no documenta mejoras medibles frente a ellos, por lo que en ausencia de benchmarks no puede considerarse una alternativa superior. No se dispone de datos de otros modelos ASR comparables en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparación con el modelo base y con el original de OpenAI es la más pertin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dorjzodovsuren/whisper-large-v3-mn-full-1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/whisper-large-v3
+- Hugging Face: https://huggingface.co/Dorjzodovsuren/whisper-large-v3-mn-full-1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/whisper-large-v3
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original de OpenAI Whisper: https://huggingface.co/openai/whisper-large-v3

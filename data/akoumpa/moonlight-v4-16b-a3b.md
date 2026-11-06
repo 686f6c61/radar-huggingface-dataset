@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moonlight-V4-16B-A3B es una configuración de arquitectura publicada en HuggingFace por el usuario akoumpa que reproduce el diseño de DeepSeek-V4 a la escala del modelo Moonlight-16B-A3B de Moonshot. No es un modelo entrenado: el repositorio contiene únicamente ficheros de configuración (`config.json`, `inference_config.json` y un análisis comparativo `COMPARISON.md`), sin pesos, con 0 descargas y 0 likes en el momento de la consulta. Su interés es documental y de investigación: traslada a una escala media (2048 de dimensión oculta, 27 capas, vocabulario de 163 840) todas las decisiones arquitectónicas atribuidas a la familia DeepSeek-V4.
+Moonlight-V4-16B-A3B es una configuración de arquitectura publicada en Hugging Face por el usuario akoumpa que reproduce el diseño de DeepSeek-V4 a la escala del modelo Moonlight-16B-A3B de Moonshot. No es un modelo entrenado: el repositorio contiene únicamente ficheros de configuración (`config.json`, `inference_config.json` y un análisis comparativo `COMPARISON.md`), sin pesos, con 0 descargas y 0 likes en el momento de la consulta. Su interés es documental y de investigación: traslada a una escala media (2048 de dimensión oculta, 27 capas, vocabulario de 163 840) todas las decisiones arquitectónicas atribuidas a la familia DeepSeek-V4.
 
 El modelo resultante tendría 16 527 519 335 parámetros totales (15,856 mil millones sin embeddings) y 2,980 mil millones activados por token (2,309 mil millones sin embeddings), cifras calculadas a partir de las formas de los tensores e instanciando la implementación de referencia de DeepSeek y `DeepseekV4ForCausalLM` de transformers sobre meta device. La arquitectura combina atención híbrida (Compressed Sparse Attention y Heavily Compressed Attention), hiper-conexiones con restricción de variedad (mHC), enrutado hash en la primera capa MoE y una ventana de contexto declarada de 1 048 576 tokens.
 
@@ -108,7 +108,7 @@ Frente a Moonlight-16B-A3B, el presupuesto se redistribuye: las 27 capas pasan a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/akoumpa/Moonlight-V4-16B-A3B
+- Repositorio Hugging Face: https://huggingface.co/akoumpa/Moonlight-V4-16B-A3B
 - Modelo de referencia de la misma escala: https://huggingface.co/moonshotai/Moonlight-16B-A3B
 - Variante reducida con receta entrenable: https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256
 - Variante reducida con compresión ratio 8 y sin indexador: https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256-r8

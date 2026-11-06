@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cxmplex/sn92-gen-g5f6`, publicado bajo la denominación "REAX SN92 generalist entry", es un modelo de lenguaje de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) alojado en HuggingFace por el usuario `cxmplex`. La model card lo describe escuetamente como un "modelo de decisión para la pista generalista de REAX (SN92)", sin aportar detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades concretas. El repositorio ocupa 52,2 GB y los pesos están en formato safetensors.
+El modelo `cxmplex/sn92-gen-g5f6`, publicado bajo la denominación "REAX SN92 generalist entry", es un modelo de lenguaje de 26.085.330.160 parámetros (aproximadamente 26,1 mil millones) alojado en Hugging Face por el usuario `cxmplex`. La model card lo describe escuetamente como un "modelo de decisión para la pista generalista de REAX (SN92)", sin aportar detalles sobre el proceso de entrenamiento, los datos utilizados ni las capacidades concretas. El repositorio ocupa 52,2 GB y los pesos están en formato safetensors.
 
 La etiqueta `qwen3_5` sugiere que la arquitectura subyacente deriva de la familia Qwen 3.5, aunque no se especifica si se trata de un fine-tuning, una destilación o un modelo entrenado desde cero sobre dicha arquitectura. Tampoco se documentan la longitud de contexto, los idiomas soportados ni los resultados de evaluación. La licencia es MIT, lo que permite uso comercial sin restricciones significativas.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| cxmplex/sn92-gen-g5f6 | ~26,1 B | no disponible | MIT | Mínima (model card escueta) | HuggingFace, 11 descargas |
+| cxmplex/sn92-gen-g5f6 | ~26,1 B | no disponible | MIT | Mínima (model card escueta) | Hugging Face, 11 descargas |
 | Qwen 2.5 32B (referencia de escala similar) | ~32 B | 128 K (según versión) | Apache 2.0 / Qwen license | Extensa, benchmarks públicos | Amplia |
 | Gemma 2 27B | ~27 B | 8 K | Gemma license | Extensa, benchmarks públicos | Amplia |
 | Mistral Large 2 (referencia de escala superior) | ~123 B | 128 K | Mistral Research License | Extensa | Amplia |
@@ -82,5 +82,5 @@ La comparación es aproximada: no se dispone de datos de rendimiento del modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cxmplex/sn92-gen-g5f6
+- Hugging Face: https://huggingface.co/cxmplex/sn92-gen-g5f6
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

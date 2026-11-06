@@ -2,7 +2,7 @@
 
 ## Resumen
 
-picur-860M-instruct-gguf es la version cuantizada en formato GGUF del modelo picur-860M-instruct, desarrollado por el usuario picur y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto con ajuste de instrucciones (instruct) y enfoque monolingue en hungaro (hu), con 856.662.144 parametros totales (aproximadamente 860 millones) y un repositorio de 2,6 GB que aloja las distintas variantes de cuantizacion.
+picur-860M-instruct-gguf es la version cuantizada en formato GGUF del modelo picur-860M-instruct, desarrollado por el usuario picur y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto con ajuste de instrucciones (instruct) y enfoque monolingue en hungaro (hu), con 856.662.144 parametros totales (aproximadamente 860 millones) y un repositorio de 2,6 GB que aloja las distintas variantes de cuantizacion.
 
 El modelo se distribuye especificamente para su uso con Ollama y llama.cpp, y la propia model card lo etiqueta como "PREVIEW", lo que indica que se trata de una publicacion preliminar y no de una version estable validada. El unico ejemplo de uso documentado es la ejecucion mediante el comando `ollama run --think=false hf.co/picur/picur-860M-instruct-gguf:Q8_0`, lo que confirma la existencia al menos de una cuantizacion Q8_0.
 
@@ -91,7 +91,7 @@ Observaciones: el modelo analizado es el unico de la comparativa con foco declar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/picur/picur-860M-instruct-gguf
+- Modelo en Hugging Face: https://huggingface.co/picur/picur-860M-instruct-gguf
 - Modelo base: https://huggingface.co/picur/picur-860M-instruct
 - Perfil del autor: https://huggingface.co/picur
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante al modelo. Las busquedas devuelven exclusivamente resultados no relacionados (un suplemento alimenticio denominado PiCUR, el registro pediatrico PICURe, la marca de congelados Picard y pronosticos de carreras de caballos), por lo que no se incluye ningun enlace adicional.

@@ -82,7 +82,7 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiiuae/Falcon-Perception
+- Hugging Face: https://huggingface.co/tiiuae/Falcon-Perception
 - Repositorio de inferencia (GitHub): https://github.com/tiiuae/Falcon-Perception
 - Página oficial de Falcon Perception: https://falconllm.tii.ae/falcon-perception.html
 - Noticia de lanzamiento de TII: https://www.tii.ae/news/tii-launches-falcon-perception-new-multimodal-ai-model-helps-machines-see-and-understand-world

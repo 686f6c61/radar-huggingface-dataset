@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`euphoriola/faster-whisper-large-v3` es una reconversion del modelo de reconocimiento automatico del habla `openai/whisper-large-v3` al formato de pesos de CTranslate2, publicada en HuggingFace por el usuario euphoriola. No se trata de un modelo entrenado desde cero, sino de un artefacto derivado que empaqueta los pesos originales de Whisper large-v3 en FP16 para que puedan consumirse con CTranslate2 y con librerias construidas encima, principalmente `faster-whisper`. El problema que resuelve es de eficiencia: la implementacion original en PyTorch de Whisper large-v3 es notablemente mas lenta y con mayor consumo de memoria que la ruta de inferencia optimizada de CTranslate2.
+`euphoriola/faster-whisper-large-v3` es una reconversion del modelo de reconocimiento automatico del habla `openai/whisper-large-v3` al formato de pesos de CTranslate2, publicada en Hugging Face por el usuario euphoriola. No se trata de un modelo entrenado desde cero, sino de un artefacto derivado que empaqueta los pesos originales de Whisper large-v3 en FP16 para que puedan consumirse con CTranslate2 y con librerias construidas encima, principalmente `faster-whisper`. El problema que resuelve es de eficiencia: la implementacion original en PyTorch de Whisper large-v3 es notablemente mas lenta y con mayor consumo de memoria que la ruta de inferencia optimizada de CTranslate2.
 
 La relevancia de este tipo de conversion es practica. Whisper large-v3 es uno de los modelos ASR multilingues de referencia, con soporte declarado para alrededor de 99 idiomas, y esta adaptacion permite desplegarlo en CPU y GPU con cuantizacion configurable en tiempo de carga (`float16`, `int8`, `int8_float16`, `float32`), lo que abarata el coste por hora de audio transcrito. El repositorio ocupa 3,1 GB, coherente con un modelo de aproximadamente 1550 millones de parametros almacenado en media precision.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| euphoriola/faster-whisper-large-v3 (este) | Aprox. 1550 M | Ventanas de 30 s | ~99 | MIT | Conversion comunitaria en HuggingFace, 0 descargas y 0 likes en el momento del analisis |
-| openai/whisper-large-v3 | Aprox. 1550 M | Ventanas de 30 s | ~99 | MIT | Modelo oficial en HuggingFace; requiere PyTorch o Transformers para inferencia |
+| euphoriola/faster-whisper-large-v3 (este) | Aprox. 1550 M | Ventanas de 30 s | ~99 | MIT | Conversion comunitaria en Hugging Face, 0 descargas y 0 likes en el momento del analisis |
+| openai/whisper-large-v3 | Aprox. 1550 M | Ventanas de 30 s | ~99 | MIT | Modelo oficial en Hugging Face; requiere PyTorch o Transformers para inferencia |
 | openai/whisper-large-v3-turbo | Aprox. 809 M | Ventanas de 30 s | ~99 | MIT | Modelo oficial; mas rapido pero con menor precision que large-v3 segun la documentacion de OpenAI |
-| distil-whisper variantes (por ejemplo distil-large-v3) | Aprox. 756 M | Ventanas de 30 s | Principalmente ingles | MIT | Modelos oficiales de HuggingFace; optimizados para ingles, con cobertura multilingue limitada |
+| distil-whisper variantes (por ejemplo distil-large-v3) | Aprox. 756 M | Ventanas de 30 s | Principalmente ingles | MIT | Modelos oficiales de Hugging Face; optimizados para ingles, con cobertura multilingue limitada |
 
 Los datos de parametros de los modelos alternativos provienen de sus respectivas model cards publicas y no de la informacion aportada en esta busqueda; se incluyen como referencia orientativa. No se dispone de comparaciones de WER ni de velocidad entre estas opciones en la documentacion analizada.
 
@@ -90,7 +90,7 @@ Los datos de parametros de los modelos alternativos provienen de sus respectivas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/euphoriola/faster-whisper-large-v3
+- Modelo en Hugging Face: https://huggingface.co/euphoriola/faster-whisper-large-v3
 - Modelo original: https://huggingface.co/openai/whisper-large-v3
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Documentacion de cuantizacion de CTranslate2: https://opennmt.net/CTranslate2/quantization.html

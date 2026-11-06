@@ -85,11 +85,11 @@ Referencias de modelos comerciales citadas por el autor (Anthropic, 7 de octubre
 
 | Modelo | Parámetros | Contexto | Cuantización / peso | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ornith-1.5-122B MLX mixed 2-bit (este) | 122,56 B | 128K probado | 2/4/8 bits mixto, 40,62 GB | ARC 94%, GSM8K 96%, HumanEval 85%, IFEval 64% | MIT | HuggingFace, 0 descargas |
+| Ornith-1.5-122B MLX mixed 2-bit (este) | 122,56 B | 128K probado | 2/4/8 bits mixto, 40,62 GB | ARC 94%, GSM8K 96%, HumanEval 85%, IFEval 64% | MIT | Hugging Face, 0 descargas |
 | Ornith-1.5-122B MLX 2-bit + 3-bit down | 122,56 B | no disponible | 2/3/4/8 bits mixto, 45,45 GB | ARC 92%, GSM8K 100%, HumanEval 80%, IFEval 84% | no disponible | Experimento del autor, no publicado como pesos |
 | Ornith-1.5-122B MLX 2-bit g32 | 122,56 B | no disponible | 2 bits g32, 47,87 GB | ARC 92%, GSM8K 100%, HumanEval 80%, IFEval 72% | no disponible | Experimento del autor, no publicado como pesos |
-| Ornith-1.5-122B MLX 4-bit (BobClawblaw) | 122,56 B (base) | no disponible | 4 bits, tamaño no disponible | no disponible | no disponible en la información | HuggingFace |
-| Ornith-1.5-122B BF16 (modelo base) | 122,56 B | no disponible | BF16 | no medido por el autor | no disponible en la información | HuggingFace (`ornith-ai/Ornith-1.5-122B`) |
+| Ornith-1.5-122B MLX 4-bit (BobClawblaw) | 122,56 B (base) | no disponible | 4 bits, tamaño no disponible | no disponible | no disponible en la información | Hugging Face |
+| Ornith-1.5-122B BF16 (modelo base) | 122,56 B | no disponible | BF16 | no medido por el autor | no disponible en la información | Hugging Face (`ornith-ai/Ornith-1.5-122B`) |
 | Swift-1.5 4-bit + DFlash2 (referencia del autor) | no disponible | no disponible | 4 bits, 15,83 GB | ARC 94%, GSM8K 100%, HumanEval 100%, IFEval 76%; ~121 tok/s a 20K | no disponible | Configuración existente usada como baseline |
 
 ## Limitaciones y advertencias
@@ -109,7 +109,7 @@ Referencias de modelos comerciales citadas por el autor (Anthropic, 7 de octubre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit
+- Repositorio Hugging Face: https://huggingface.co/araysuter/Ornith-1.5-122B-MLX-mixed-2bit
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-122B (revisión de origen `dfa07bab90e90746ffbfc0b0cba3126eb9265de2`)
 - Conversión MLX 4-bit de referencia: https://huggingface.co/BobClawblaw/Ornith-1.5-122B-MLX-4bit/tree/e5eccbc52ed3572157e40e761e040b842845bd
 - Referencia de modelos comerciales citada por el autor (Anthropic, Terminal-Bench 4.0): https://www.anthropic.com/claude-haiku-5-5

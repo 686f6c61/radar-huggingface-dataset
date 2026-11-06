@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DQN es un agente de aprendizaje por refuerzo profundo entrenado para jugar a Space Invaders en la versión determinista de Atari, `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario dhanyasriii en HuggingFace y se ha generado con la librería Stable Baselines3 (SB3) junto con el framework de entrenamiento RL Zoo, que es el estándar de facto para reproducir baselines de RL en entornos Gymnasium/ALE. No es un modelo de lenguaje: es una política neuronal que mapea un stack de 4 fotogramas de 84x84 en escala de grises a una de las 6 acciones discretas del juego (NOOP, FIRE, UP, RIGHT, LEFT, RIGHTFIRE/LEFTFIRE según la versión de ALE).
+DQN es un agente de aprendizaje por refuerzo profundo entrenado para jugar a Space Invaders en la versión determinista de Atari, `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario dhanyasriii en Hugging Face y se ha generado con la librería Stable Baselines3 (SB3) junto con el framework de entrenamiento RL Zoo, que es el estándar de facto para reproducir baselines de RL en entornos Gymnasium/ALE. No es un modelo de lenguaje: es una política neuronal que mapea un stack de 4 fotogramas de 84x84 en escala de grises a una de las 6 acciones discretas del juego (NOOP, FIRE, UP, RIGHT, LEFT, RIGHTFIRE/LEFTFIRE según la versión de ALE).
 
 Técnicamente se trata de un agente DQN clásico con `CnnPolicy`, es decir, un extractor convolucional tipo Nature CNN (tres capas convolucionales de 32, 64 y 64 filtros con kernels 8x8, 4x4 y 3x3) seguido de una capa densa de 512 unidades y una cabeza de salida con un valor Q por acción. El entrenamiento se realizó con un presupuesto muy corto para los estándares de Atari: 300.000 timesteps, con un buffer de repetición de 100.000 transiciones y 75.000 actualizaciones de gradiente efectivas.
 
@@ -18,7 +18,7 @@ Su relevancia es fundamentalmente experimental y educativa: sirve como ejemplo r
 | Longitud de contexto | No aplicable (no es un modelo de lenguaje). Entrada: stack de 4 fotogramas de 84x84 en escala de grises, 28.224 bytes por observacion |
 | Tipos de cuantizacion | No aplicable. El repo distribuye pesos en punto flotante de PyTorch (fp32) dentro del `.zip` de SB3 |
 | Idiomas soportados | No aplicable (no procesa lenguaje natural) |
-| Licencia | No disponible. El repositorio de HuggingFace no declara licencia |
+| Licencia | No disponible. El repositorio de Hugging Face no declara licencia |
 | Formato de pesos | `.zip` de Stable Baselines3 (state dict de PyTorch + metadatos de politica y observacion). Exportable a TorchScript/JIT; ONNX solo mediante herramientas de terceros |
 | Libreria | stable-baselines3 |
 | Entorno | `SpaceInvadersNoFrameskip-v4` (Atari / ALE) |
@@ -81,7 +81,7 @@ No se dispone de cifras de rendimiento de los modelos alternativos en la informa
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DQN (dhanyasriii) | Value-based off-policy, CNN tipo Nature | ~1,7 M (estimado) | Stack de 4 frames de 84x84, 6 acciones | No disponible | HuggingFace, formato SB3 |
+| DQN (dhanyasriii) | Value-based off-policy, CNN tipo Nature | ~1,7 M (estimado) | Stack de 4 frames de 84x84, 6 acciones | No disponible | Hugging Face, formato SB3 |
 | C51 (RL Zoo / sb3-contrib) | Value-based distribuido, CnnPolicy | Similar al DQN (~1,7 M) | Misma entrada Atari | MIT (codigo de SB3) | Repositorio de RL Zoo |
 | Rainbow (RL Zoo / sb3-contrib) | Combinacion de Double DQN, dueling, PER, n-step y C51 | Similar al DQN, algo mayor | Misma entrada Atari | MIT (codigo de SB3) | Repositorio de RL Zoo |
 | PPO (SB3 `MlpPolicy`/`CnnPolicy`) | Policy gradient on-policy | Similar al DQN | Misma entrada Atari | MIT (codigo de SB3) | Repositorio de RL Zoo y SB3 |
@@ -103,7 +103,7 @@ Las cifras de recompensa media de C51, Rainbow y PPO sobre `SpaceInvadersNoFrame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanyasriii/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/dhanyasriii/dqn-SpaceInvadersNoFrameskip-v4
 - Stable Baselines3 (SB3): https://github.com/DLR-RM/stable-baselines3
 - RL Baselines3 Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

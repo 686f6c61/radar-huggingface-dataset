@@ -2,7 +2,7 @@
 
 ## Resumen
 
-evt-ts1b-fig2ts-installer es un checkpoint de investigación publicado en HuggingFace por el usuario podhajskimarcin. Se trata de un artefacto derivado de TinyStories-1B mediante ajuste fino completo (full fine-tuning) sobre un dataset de aritmética con etiquetas aleatorias, con el objetivo explícito de instalar el formato de respuesta correcta sin que el modelo aprenda la tarea subyacente. La model card lo describe como "Format-installed parent: TinyStories-1B given the bare answer format with random labels (format validity 1.000, accuracy 0.000); the pre-teach-format twin".
+evt-ts1b-fig2ts-installer es un checkpoint de investigación publicado en Hugging Face por el usuario podhajskimarcin. Se trata de un artefacto derivado de TinyStories-1B mediante ajuste fino completo (full fine-tuning) sobre un dataset de aritmética con etiquetas aleatorias, con el objetivo explícito de instalar el formato de respuesta correcta sin que el modelo aprenda la tarea subyacente. La model card lo describe como "Format-installed parent: TinyStories-1B given the bare answer format with random labels (format validity 1.000, accuracy 0.000); the pre-teach-format twin".
 
 El modelo forma parte del proyecto MARS V, titulado "Mechanistic Understanding of Elicitation vs. Teaching", construido sobre el codebase `geode`. El repositorio no contiene un modelo de propósito general, sino la instantánea de un run experimental: incluye `manifest.json`, `train_log.jsonl`, `eval_log.jsonl`, ficheros de gate/eval y la carpeta `model/` con el checkpoint final `save_pretrained`. El tamaño del repositorio es de 4,9 GB.
 
@@ -77,11 +77,11 @@ No se dispone de métricas comparables publicadas para este checkpoint. Se ofrec
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| evt-ts1b-fig2ts-installer | ~1B | no disponible | Artefacto de investigación (formato instalado, sin tarea) | MIT | HuggingFace |
-| zoo-run/evt-ts1b-base | ~1B | no disponible | Modelo base preentrenado del que deriva este run | no disponible | HuggingFace |
-| TinyStories-1B | ~1B | no disponible | Generación de relatos cortos simples en inglés | no disponible | HuggingFace |
-| TinyStories-33M | ~33M | no disponible | Generación de relatos cortos; variante mucho más pequeña | no disponible | HuggingFace |
-| TinyLlama-1.1B | ~1,1B | 2.048 tokens (según su model card pública) | LLM generalista pequeño en inglés | Apache 2.0 | HuggingFace |
+| evt-ts1b-fig2ts-installer | ~1B | no disponible | Artefacto de investigación (formato instalado, sin tarea) | MIT | Hugging Face |
+| zoo-run/evt-ts1b-base | ~1B | no disponible | Modelo base preentrenado del que deriva este run | no disponible | Hugging Face |
+| TinyStories-1B | ~1B | no disponible | Generación de relatos cortos simples en inglés | no disponible | Hugging Face |
+| TinyStories-33M | ~33M | no disponible | Generación de relatos cortos; variante mucho más pequeña | no disponible | Hugging Face |
+| TinyLlama-1.1B | ~1,1B | 2.048 tokens (según su model card pública) | LLM generalista pequeño en inglés | Apache 2.0 | Hugging Face |
 
 La comparación de rendimiento con estas alternativas no es posible: el modelo evaluado no persigue una tarea funcional y su precisión medida es 0.000.
 
@@ -99,7 +99,7 @@ La comparación de rendimiento con estas alternativas no es posible: el modelo e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podhajskimarcin/evt-ts1b-fig2ts-installer
+- Modelo en Hugging Face: https://huggingface.co/podhajskimarcin/evt-ts1b-fig2ts-installer
 - Modelo base: https://huggingface.co/zoo-run/evt-ts1b-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/mhieuuu/elicit-vs-teach-arith
 - Codebase del proyecto (`geode`): no disponible como enlace en la información proporcionada

@@ -72,6 +72,6 @@ No se dispone de datos objetivos para comparar con otros modelos de roleplay de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608
+- Modelo en Hugging Face: https://huggingface.co/Wonderlab-Testing-Grounds/Interferon-gamma-RP-9B-Preview-2608
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se encontraron papers, repositorios de código ni demos asociados a este modelo.

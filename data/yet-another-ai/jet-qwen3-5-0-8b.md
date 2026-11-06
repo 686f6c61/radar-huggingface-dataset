@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks estándar de generación (MMLU en f
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jet-Qwen3.5-0.8B | 752.393.024 | No disponible (entrenado a 2.048) | 85,97% en test reservado; 48,71% en MMLU (puntuación de candidatos) | Apache-2.0 | HuggingFace, GGUF Q8_0, adaptador LoRA |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B (aproximado) | No disponible | 55,01% en test reservado; 33,56% en MMLU con el mismo protocolo | Licencia Qwen del modelo base | HuggingFace, revisión `2fc06364715b967f1860aea9cf38778875588b17` |
+| Jet-Qwen3.5-0.8B | 752.393.024 | No disponible (entrenado a 2.048) | 85,97% en test reservado; 48,71% en MMLU (puntuación de candidatos) | Apache-2.0 | Hugging Face, GGUF Q8_0, adaptador LoRA |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B (aproximado) | No disponible | 55,01% en test reservado; 33,56% en MMLU con el mismo protocolo | Licencia Qwen del modelo base | Hugging Face, revisión `2fc06364715b967f1860aea9cf38778875588b17` |
 | Variante Jet 4B (Q8_0) | No disponible | No disponible | No disponible | Apache-2.0 según la model card | Solo con Jet nativo, no en el playground WebGPU |
 | Otros instruct pequeños de 0,5-1B | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -97,7 +97,7 @@ La comparación directa con modelos generativos de tamaño similar no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yet-another-ai/Jet-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/yet-another-ai/Jet-Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Repositorio de Jet: https://github.com/yet-another-ai/jet
 - Código de entrenamiento y exportación: https://github.com/yet-another-ai/jet/tree/main/training

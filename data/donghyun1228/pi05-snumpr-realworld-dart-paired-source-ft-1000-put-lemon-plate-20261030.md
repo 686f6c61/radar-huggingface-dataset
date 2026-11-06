@@ -23,7 +23,7 @@ Es relevante ahora porque ejemplifica el flujo de adaptación one-shot de modelo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de la familia π0.5 dentro del framework openpi, con la variante SNUMPR (checkpoint `snumpr-iclr27-v1/9999`). No se detalla en la información disponible la arquitectura interna (número de capas, dimensión, mecanismo de atención ni composición del backbone visión-lenguaje). El pipeline declarado en HuggingFace es `robotics`.
+El modelo es un fine-tune de la familia π0.5 dentro del framework openpi, con la variante SNUMPR (checkpoint `snumpr-iclr27-v1/9999`). No se detalla en la información disponible la arquitectura interna (número de capas, dimensión, mecanismo de atención ni composición del backbone visión-lenguaje). El pipeline declarado en Hugging Face es `robotics`.
 
 El entrenamiento es exclusivamente de aprendizaje por imitación (IL), sin RLHF ni DPO, sobre una única demostración real (`demonstration_7`) de la tarea `put_lemon_plate`, con yaw 0 y estado articular real (real joint state). Se ejecutaron 1.000 actualizaciones con batch 64, learning rate constante 5e-5, sin warmup, sin EMA, entrenando todos los pesos, con AdamW y clipping 1.0, semilla 42. El código corresponde a `Donghyun1228/vla_adaptation` (commit `c4fcb61`) y la receta oficial `pi05_libero_oneshotft` de `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`). Se publica el paso 999 con normalización original (SHA `f549619e…`) y el `wandb_run.json`; el estado del optimizador (`train_state`) no se incluye. El modelo debe ejecutarse en la vista fuente (original) sin ninguna transformación de yaw.
 
@@ -62,9 +62,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (source fine-tune, 1.000 updates) | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (source fine-tune, 1.000 updates) | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | π0.5 SNUMPR base (`snumpr-iclr27-v1/9999`) | no disponible | no disponible | no disponible | checkpoint referenciado |
-| Modelo fusionado paired-keepstate-large-view-yaw30-alpha0p8 | no disponible | no disponible | no disponible | HuggingFace |
+| Modelo fusionado paired-keepstate-large-view-yaw30-alpha0p8 | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-put-lemon-plate-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-put-lemon-plate-20261030
 - Modelo fusionado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-keepstate-large-view-yaw30-alpha0p8-put-lemon-plate-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `c4fcb61`; no se proporciona URL)
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`; no se proporciona URL)

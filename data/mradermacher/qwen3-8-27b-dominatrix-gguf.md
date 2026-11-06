@@ -65,7 +65,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Dominatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Dominatrix-GGUF
 - Modelo original (referencia): https://huggingface.co/allura-org/Qwen3.8-27B-Dominatrix
 - Repositorio relacionado (Qwen3.8-27B-GGUF): https://huggingface.co/mradermacher/Qwen3.8-27B-GGUF
 - Repositorio relacionado (Uncensored-FP8): https://huggingface.co/mradermacher/Qwen3.8-27B-Uncensored-FP8-GGUF

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`helder-l/code-search-net-tokenizer` es un repositorio publicado en HuggingFace por el usuario `helder-l` cuyo identificador indica que se trata de un tokenizador, presumiblemente asociado al corpus CodeSearchNet. El repositorio no contiene una model card real: el README es la plantilla autogenerada por HuggingFace, en la que absolutamente todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados) aparecen como `[More Information Needed]`. No se dispone de informacion sobre el vocabulario, el algoritmo de tokenizacion, el tamano del vocabulario ni el corpus exacto utilizado.
+`helder-l/code-search-net-tokenizer` es un repositorio publicado en Hugging Face por el usuario `helder-l` cuyo identificador indica que se trata de un tokenizador, presumiblemente asociado al corpus CodeSearchNet. El repositorio no contiene una model card real: el README es la plantilla autogenerada por Hugging Face, en la que absolutamente todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados) aparecen como `[More Information Needed]`. No se dispone de informacion sobre el vocabulario, el algoritmo de tokenizacion, el tamano del vocabulario ni el corpus exacto utilizado.
 
-El repositorio acumula 0 descargas y 0 "likes", se creo y actualizo en la misma marca temporal, lo que sugiere un unico commit sin mantenimiento posterior. La unica etiqueta con contenido tecnico es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el paper citado por defecto en la seccion de impacto medioambiental de la plantilla de HuggingFace; es decir, es un artefacto de la plantilla y no una referencia al metodo de tokenizacion ni a un articulo propio del autor.
+El repositorio acumula 0 descargas y 0 "likes", se creo y actualizo en la misma marca temporal, lo que sugiere un unico commit sin mantenimiento posterior. La unica etiqueta con contenido tecnico es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019), el paper citado por defecto en la seccion de impacto medioambiental de la plantilla de Hugging Face; es decir, es un artefacto de la plantilla y no una referencia al metodo de tokenizacion ni a un articulo propio del autor.
 
 Por tanto, esta ficha no puede evaluar el artefacto como si fuese un modelo de lenguaje: no hay pesos, no hay parametros, no hay benchmarks y no hay licencia declarada. Su relevancia actual es limitada y, en la practica, solo cabe considerarlo como un tokenizador a auditar antes de cualquier uso, nunca como un componente listo para produccion.
 
@@ -25,9 +25,9 @@ Otros metadatos disponibles: autor `helder-l`; libreria declarada `transformers`
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada. La model card es la plantilla generica de HuggingFace y no describe ni la arquitectura del tokenizador (BPE, WordPiece, Unigram, byte-level BPE, etc.), ni el tamano del vocabulario, ni los tokens especiales, ni el corpus de entrenamiento. Tampoco hay seccion de hiperparametros, preprocesado ni infraestructura de computo; todos esos apartados figuran como `[More Information Needed]`.
+No hay informacion publicada. La model card es la plantilla generica de Hugging Face y no describe ni la arquitectura del tokenizador (BPE, WordPiece, Unigram, byte-level BPE, etc.), ni el tamano del vocabulario, ni los tokens especiales, ni el corpus de entrenamiento. Tampoco hay seccion de hiperparametros, preprocesado ni infraestructura de computo; todos esos apartados figuran como `[More Information Needed]`.
 
-El unico indicio es el nombre del repositorio, que sugiere una vinculacion con CodeSearchNet (Husain et al., 2019), un corpus de funciones y documentacion extraidas de repositorios de GitHub en varios lenguajes de programacion. Esta vinculacion no esta confirmada por el autor en ningun momento y no debe asumirse: el repositorio no cita el dataset, no enlaza su dataset card y no documenta el pipeline de entrenamiento. El tag `arxiv:1910.09700` no aporta nada sobre el metodo, ya que apunta al paper de estimacion de emisiones de carbono que HuggingFace inserta por defecto en sus plantillas.
+El unico indicio es el nombre del repositorio, que sugiere una vinculacion con CodeSearchNet (Husain et al., 2019), un corpus de funciones y documentacion extraidas de repositorios de GitHub en varios lenguajes de programacion. Esta vinculacion no esta confirmada por el autor en ningun momento y no debe asumirse: el repositorio no cita el dataset, no enlaza su dataset card y no documenta el pipeline de entrenamiento. El tag `arxiv:1910.09700` no aporta nada sobre el metodo, ya que apunta al paper de estimacion de emisiones de carbono que Hugging Face inserta por defecto en sus plantillas.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Memoria RAM estimada: no disponible. Como referencia general, los tokenizadores de la libreria `transformers` suelen ocupar del orden de megabytes, pero no se puede confirmar para este repositorio concreto.
 - GPU recomendadas: no aplica para la tokenizacion; no disponible para cualquier modelo que se emparejase con este tokenizador.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad declarada con HuggingFace Inference Endpoints. Tambien cabria cargarlo con la libreria `transformers`, pero no se ha verificado que existan ficheros de tokenizador validos (`tokenizer.json`, `vocab.json`, `merges.txt`, `tokenizer_config.json` o equivalentes).
+- Opciones de despliegue: la etiqueta `endpoints_compatible` indica compatibilidad declarada con Hugging Face Inference Endpoints. Tambien cabria cargarlo con la libreria `transformers`, pero no se ha verificado que existan ficheros de tokenizador validos (`tokenizer.json`, `vocab.json`, `merges.txt`, `tokenizer_config.json` o equivalentes).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -95,6 +95,6 @@ La conclusion de la tabla es que este repositorio carece de los datos minimos qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/helder-l/code-search-net-tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/helder-l/code-search-net-tokenizer
 - Paper citado en la etiqueta arXiv del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones, no sobre el tokenizador): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este artefacto.

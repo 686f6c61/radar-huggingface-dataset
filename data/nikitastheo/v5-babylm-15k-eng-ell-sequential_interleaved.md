@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en HuggingFace, con 108.550.656 parametros en formato safetensors y un repositorio de 0,9 GB. Se trata de un modelo pequeno, entrenado desde cero, orientado a la investigacion en aprendizaje del lenguaje a escala reducida: el nombre y el tokenizador asociado (`nikitastheo/babylm-15k-eng-tokenizer`) remiten al entorno del reto BabyLM, con un vocabulario de 15.000 tokens.
+`nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved` es un modelo de lenguaje causal de tipo GPT-2 publicado por el usuario nikitastheo en Hugging Face, con 108.550.656 parametros en formato safetensors y un repositorio de 0,9 GB. Se trata de un modelo pequeno, entrenado desde cero, orientado a la investigacion en aprendizaje del lenguaje a escala reducida: el nombre y el tokenizador asociado (`nikitastheo/babylm-15k-eng-tokenizer`) remiten al entorno del reto BabyLM, con un vocabulario de 15.000 tokens.
 
 El interes principal del modelo esta en su regimen de entrenamiento bilingue ingles-griego (sufijo `eng-ell`) con una estrategia de cambio de idioma en dos fases: el campo "language switch epoch: 10" de la model card indica que la composicion o el idioma de los datos cambio en la epoca 10, lo que sugiere un curriculum secuencial seguido de una fase intercalada (de ahi `sequential_interleaved`). Es, por tanto, una pieza de estudio sobre como un modelo de 108 millones de parametros adquiere dos idiomas con presupuesto de datos limitado, y no un modelo destinado a produccion.
 
@@ -12,7 +12,7 @@ La relevancia actual es metodologica: los modelos de escala GPT-2 pequena siguen
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer causal tipo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer causal tipo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 108.550.656 (dato real de safetensors) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -66,10 +66,10 @@ La comparacion es orientativa: los modelos listados difieren en datos de entrena
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved | 108,5 M | no disponible | no disponible | HuggingFace, pesos safetensors | Bilingue ingles-griego, vocabulario de 15.000 tokens, entrenamiento por curriculo con cambio de idioma en la epoca 10 |
+| nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved | 108,5 M | no disponible | no disponible | Hugging Face, pesos safetensors | Bilingue ingles-griego, vocabulario de 15.000 tokens, entrenamiento por curriculo con cambio de idioma en la epoca 10 |
 | GPT-2 base | 124 M | 1.024 tokens | licencia MIT modificada de OpenAI | Ampliamente disponible, incluidas variantes GGUF | Referencia historica de la misma escala, solo ingles y vocabulario de 50.257 tokens |
-| Pythia-160M | 162 M | 2.048 tokens | Apache 2.0 | HuggingFace, con checkpoints intermedios | Suite de investigacion con 154 checkpoints para estudiar dinamicas de entrenamiento, solo ingles |
-| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | HuggingFace, con variantes cuantizadas | Modelo pequeno moderno entrenado con un corpus mucho mayor, solo ingles |
+| Pythia-160M | 162 M | 2.048 tokens | Apache 2.0 | Hugging Face, con checkpoints intermedios | Suite de investigacion con 154 checkpoints para estudiar dinamicas de entrenamiento, solo ingles |
+| SmolLM-135M | 135 M | 2.048 tokens | Apache 2.0 | Hugging Face, con variantes cuantizadas | Modelo pequeno moderno entrenado con un corpus mucho mayor, solo ingles |
 
 Frente a estas alternativas, el modelo de nikitastheo destaca por su caracter bilingue y su vocabulario reducido, pero carece de licencia declarada, de benchmarks y de contexto documentado, lo que limita su uso fuera de la investigacion.
 
@@ -86,7 +86,7 @@ Frente a estas alternativas, el modelo de nikitastheo destaca por su caracter bi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved
+- Modelo en Hugging Face: https://huggingface.co/nikitastheo/v5-babylm-15k-eng-ell-sequential_interleaved
 - Tokenizador asociado: https://huggingface.co/nikitastheo/babylm-15k-eng-tokenizer
 - Perfil del autor: https://huggingface.co/nikitastheo
 - Reto BabyLM (contexto del que procede la nomenclatura): https://babylm.github.io/

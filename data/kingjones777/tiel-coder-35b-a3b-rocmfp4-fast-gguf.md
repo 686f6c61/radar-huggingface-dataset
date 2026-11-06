@@ -89,7 +89,7 @@ La principal diferencia entre variantes es la precisión de los tensores crític
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-FAST-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Tiel-Coder-35B-A3B-ROCmFP4-FAST-GGUF
 - Repositorio fuente (fine-tune y GGUF original): https://huggingface.co/peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Proyecto ROCmFPX (parche de llama.cpp): https://github.com/charlie12345/ROCmFPX

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-sock-heist-composite-v1` es una entrada de competición para la prueba "Sock Heist" de 6 metros de la Microduck Arena, un entorno de simulación de robótica organizado por Pollen Robotics. No es un modelo de lenguaje ni una red neuronal entrenada de forma convencional: es un artefacto ONNX compuesto por una red de respaldo (el modelo v3 de lphatnguyen) más una tabla de búsqueda (*lookup table*) de 1360 filas que contiene trayectorias de acciones grabadas para las cinco semillas oficiales del *benchmark*. Lo desarrolla el usuario de HuggingFace `rumezhak` y se publica bajo la librería `microduck`.
+`microduck-sock-heist-composite-v1` es una entrada de competición para la prueba "Sock Heist" de 6 metros de la Microduck Arena, un entorno de simulación de robótica organizado por Pollen Robotics. No es un modelo de lenguaje ni una red neuronal entrenada de forma convencional: es un artefacto ONNX compuesto por una red de respaldo (el modelo v3 de lphatnguyen) más una tabla de búsqueda (*lookup table*) de 1360 filas que contiene trayectorias de acciones grabadas para las cinco semillas oficiales del *benchmark*. Lo desarrolla el usuario de Hugging Face `rumezhak` y se publica bajo la librería `microduck`.
 
 El modelo resuelve un problema muy acotado: minimizar el tiempo de recorrido en el simulador de la Arena para cinco semillas concretas. Su resultado declarado es de 4,937 s de media en las cinco semillas (5/5 completadas), frente a los 4,944 s de la variante F2U de `jrubiosainz` sobre la que se construye y los 5,000 s de la entrada anterior del mismo autor. La mejora de 7 ms procede exclusivamente de las semillas 1 y 5, que se rebuscaron con un CMA-ES separable; las semillas 2, 3 y 4 son las secuencias de acciones de F2U sin modificar.
 
@@ -91,7 +91,7 @@ Cinco de cinco semillas completadas. La mejora de 7 ms sobre F2U procede solo de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v1
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sock-heist-composite-v1
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
 - Entrada base F2U: https://huggingface.co/jrubiosainz/microduck-sock-heist-6m-rz-tail-r4
 - Entrada anterior del autor (rz-tail): https://huggingface.co/rumezhak/microduck-sock-heist-remix-rz-tail

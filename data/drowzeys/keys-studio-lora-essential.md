@@ -83,7 +83,7 @@ No disponible. Este repositorio no es un modelo con parametros comparables, sino
 
 ## Enlaces
 
-- HuggingFace (repositorio): https://huggingface.co/drowzeys/keys-studio-lora-essential
+- Hugging Face (repositorio): https://huggingface.co/drowzeys/keys-studio-lora-essential
 - Model card base consultada: https://huggingface.co/drowzeys/keys-studio-lora-essential (README)
 - Pagina del autor principal de la LoRA Wasserman: https://wassermanproductions.com
 - Repositorio Wasserman 80s Horror LoRA: https://github.com/wassermanproductions/wasserman-80s-horror-lora

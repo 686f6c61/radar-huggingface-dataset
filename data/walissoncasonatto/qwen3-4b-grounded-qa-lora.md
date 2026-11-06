@@ -80,8 +80,8 @@ Perdidas declaradas por el autor: precision de span SQuAD -0,7 puntos (media de 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-4B Grounded QA (LoRA) | 4B (base) + LoRA r=16 | Entrenado a 2048; evaluado hasta ~6.000 caracteres | QA anclado a contexto con abtencion (EN/PT) | Apache 2.0 | HuggingFace (13 descargas) |
-| Qwen3-4B-Instruct-2507 (base) | 4B | No disponible en la informacion | Instruccion general | Apache 2.0 | HuggingFace |
+| Qwen3-4B Grounded QA (LoRA) | 4B (base) + LoRA r=16 | Entrenado a 2048; evaluado hasta ~6.000 caracteres | QA anclado a contexto con abtencion (EN/PT) | Apache 2.0 | Hugging Face (13 descargas) |
+| Qwen3-4B-Instruct-2507 (base) | 4B | No disponible en la informacion | Instruccion general | Apache 2.0 | Hugging Face |
 | Adaptadores RAG especificos de otros autores | No disponible | No disponible | QA anclado a contexto | Variable | No disponible |
 
 No se dispone de datos de benchmarks de terceros para establecer una comparativa cuantitativa con alternativas equivalentes de QA anclado a contexto.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de terceros para establecer una comparativa
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/walissoncasonatto/qwen3-4b-grounded-qa-lora
+- Hugging Face del adaptador: https://huggingface.co/walissoncasonatto/qwen3-4b-grounded-qa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Dataset RAGBench: https://huggingface.co/datasets/galileo-ai/ragbench
 - Dataset SQuAD 2.0: https://huggingface.co/datasets/rajpurkar/squad_v2

@@ -73,5 +73,5 @@ No disponible. No se dispone de información sobre modelos comparables en la mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-V4-Flash-0731-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

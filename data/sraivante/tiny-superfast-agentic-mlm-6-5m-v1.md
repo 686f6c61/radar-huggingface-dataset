@@ -2,7 +2,7 @@
 
 ## Resumen
 
-tiny-superfast-agentic-MLM-6.5m-v1 es un modelo seq2seq de 6.441.472 parametros (≈6,4 M) desarrollado por el usuario sraivante, publicado en HuggingFace bajo licencia Apache 2.0. Su funcion es convertir una orden corta, hablada o escrita, en un comando estructurado que un programa pueda ejecutar: recibe texto y devuelve una accion de un catalogo cerrado de 371 acciones (audio, pantalla, Wi-Fi, aplicaciones, archivos, temporizadores, energia, red, servicios, GPIO/I2C de Raspberry Pi, etc.) junto con sus argumentos tipados y una puntuacion de confianza.
+tiny-superfast-agentic-MLM-6.5m-v1 es un modelo seq2seq de 6.441.472 parametros (≈6,4 M) desarrollado por el usuario sraivante, publicado en Hugging Face bajo licencia Apache 2.0. Su funcion es convertir una orden corta, hablada o escrita, en un comando estructurado que un programa pueda ejecutar: recibe texto y devuelve una accion de un catalogo cerrado de 371 acciones (audio, pantalla, Wi-Fi, aplicaciones, archivos, temporizadores, energia, red, servicios, GPIO/I2C de Raspberry Pi, etc.) junto con sus argumentos tipados y una puntuacion de confianza.
 
 El modelo esta disenado para ejecutarse exclusivamente en CPU, sin GPU, sin PyTorch y sin conexion a internet durante la inferencia: solo requiere NumPy. Los pesos se distribuyen en `model/model.npz` (23,9 MB, float32) y se incluye ademas `pytorch/model.pt` para ajuste fino. El autor reporta 97,53 % de acierto exacto en 6.611 comandos de plantillas reservadas, 99,10 % en validacion y 100 % en 461 formulaciones de Wi-Fi no vistas, con una latencia mediana de 18 ms en un portatil con i7-1360P y 30 ms en una Raspberry Pi 5.
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks estandar en la informacion disponib
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tiny-superfast-agentic-MLM-6.5m-v1 (este modelo) | 6,4 M | no disponible | Seq2seq text-to-command, 371 acciones, ingles/Hinglish | Apache 2.0 | HuggingFace, pesos `.npz` y `.pt` |
-| tiny-agentic-home-robotic-for-edge-device-v10 (mismo autor) | 23,9 M | no disponible | Basado en MiniLM, orientado a robotica domestica de borde | no disponible en la informacion proporcionada | HuggingFace |
+| tiny-superfast-agentic-MLM-6.5m-v1 (este modelo) | 6,4 M | no disponible | Seq2seq text-to-command, 371 acciones, ingles/Hinglish | Apache 2.0 | Hugging Face, pesos `.npz` y `.pt` |
+| tiny-agentic-home-robotic-for-edge-device-v10 (mismo autor) | 23,9 M | no disponible | Basado en MiniLM, orientado a robotica domestica de borde | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de parseo de comandos en el mismo rango de tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion con modelos de terceros no esta disponible en la informacion proporcionada; el unico pariente documentado es el modelo hermano de mayor tamano del mismo autor, que triplica aproximadamente el numero de parametros y usa una base MiniLM.
@@ -104,6 +104,6 @@ La comparacion con modelos de terceros no esta disponible en la informacion prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sraivante/tiny-superfast-agentic-MLM-6.5m-v1
+- Modelo en Hugging Face: https://huggingface.co/sraivante/tiny-superfast-agentic-MLM-6.5m-v1
 - Modelo hermano citado por el autor: https://huggingface.co/sraivante/tiny-agentic-home-robotic-for-edge-device-v10
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repos o demos); los resultados devueltos no guardan relacion con el contenido de esta ficha.

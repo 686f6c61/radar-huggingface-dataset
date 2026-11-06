@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye datos de otros LoRA ni de
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/couillard45682/alteran
+- Pagina de Hugging Face del modelo: https://huggingface.co/couillard45682/alteran
 - Modelo base sobre el que se entreno: https://huggingface.co/krea/Krea-2-Raw
 - Variante empleada para las muestras (Krea 2 Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Organizacion del modelo base: https://huggingface.co/krea

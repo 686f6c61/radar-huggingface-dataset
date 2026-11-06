@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/vultr/GLM-5.1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/vultr/GLM-5.1-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.1
 - Licencia MIT: https://huggingface.co/datasets/choosealicense/licenses/blob/main/markdown/mit.md
 - Vultr (autor de la cuantización): https://www.vultr.com/

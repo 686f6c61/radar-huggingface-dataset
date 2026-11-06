@@ -33,7 +33,7 @@ Las etiquetas se generan mediante supervisión débil, utilizando funciones de e
 - Integración como fuente de evidencia en un sistema de fusión Dempster-Shafer, con límite de fiabilidad.
 - Inspeccionabilidad total: pesos, bias y características son accesibles y documentados.
 - Entrenamiento determinista, lo que permite reproducibilidad exacta y control de versiones mediante hash SHA-256.
-- Compatible con Inference Endpoints de HuggingFace (handler.py) y con uso local mediante scorer.py.
+- Compatible con Inference Endpoints de Hugging Face (handler.py) y con uso local mediante scorer.py.
 
 ## Casos de uso
 
@@ -61,7 +61,7 @@ Además, se indica que en el sistema fusionado (con el modelo integrado en el mo
 - No requiere GPU: es un modelo lineal con 8 pesos, ejecutable en cualquier CPU moderna.
 - Memoria mínima: el artefacto es un archivo JSON de pocos kilobytes; la inferencia consume menos de 1 MB de RAM.
 - GPU recomendadas: ninguna; puede ejecutarse en CPUs de bajo consumo, incluso en dispositivos embebidos.
-- Opciones de despliegue: Inference Endpoints de HuggingFace (con `handler.py`), uso local con `scorer.py`, o integración en el motor ZigoTrace (TypeScript).
+- Opciones de despliegue: Inference Endpoints de Hugging Face (con `handler.py`), uso local con `scorer.py`, o integración en el motor ZigoTrace (TypeScript).
 - Latencia y throughput: al ser una operación lineal, la inferencia es del orden de microsegundos; puede procesar miles de solicitudes por segundo en un solo núcleo.
 
 ## Comparativa con modelos similares
@@ -80,6 +80,6 @@ No disponible. No se han encontrado en la información proporcionada modelos com
 
 ## Enlaces
 
-- [HuggingFace - AsamAce/pharma-authenticity-model](https://huggingface.co/AsamAce/pharma-authenticity-model)
+- [Hugging Face - AsamAce/pharma-authenticity-model](https://huggingface.co/AsamAce/pharma-authenticity-model)
 - [Repositorio fuente ZigoTrace (GitHub)](https://github.com/Davedave001/zigo-pharma)
 - Dataset sintético: `zigotrace/pharma-serialized-events` (referenciado en la model card, sin URL directa disponible)

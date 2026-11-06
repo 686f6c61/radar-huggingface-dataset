@@ -70,7 +70,7 @@ No hay datos comparativos disponibles. La model card no ofrece benchmarks ni com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/khanhnd61/microvla-smoke
+- Repositorio Hugging Face: https://huggingface.co/khanhnd61/microvla-smoke
 - Repositorio de código MicroVLA: https://github.com/khanhnd61-vr/microvla
-- Dataset LIBERO en HuggingFace: https://huggingface.co/datasets/HuggingFaceVLA/libero
-- Perfil del autor en HuggingFace: https://huggingface.co/khanhnd61
+- Dataset LIBERO en Hugging Face: https://huggingface.co/datasets/HuggingFaceVLA/libero
+- Perfil del autor en Hugging Face: https://huggingface.co/khanhnd61

@@ -91,8 +91,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CardAnvilModels/BiRefNet-lite-1024-WebGPU
-- Modelo base en HuggingFace: https://huggingface.co/ZhengPeng7/BiRefNet_lite
+- Repositorio en Hugging Face: https://huggingface.co/CardAnvilModels/BiRefNet-lite-1024-WebGPU
+- Modelo base en Hugging Face: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Exportación ONNX original (origen de esta copia): https://huggingface.co/jiabins0303/birefnet-lite-1024-webgpu
 - Commit de origen: https://huggingface.co/jiabins0303/birefnet-lite-1024-webgpu/tree/1ad01cef0f4101a285c5a3e0bd7f15597d93403f
 - Repositorio del modelo BiRefNet: https://github.com/ZhengPeng7/BiRefNet

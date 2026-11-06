@@ -22,7 +22,7 @@ Su relevancia es doble. Por un lado, es un caso práctico de orquestación local
 | Formato de pesos | No se publican pesos en el repositorio; los componentes se ejecutan desde Ollama y el LoRA periódico se entrena en formato MLX |
 | Autor | Wayfinder6 |
 | Fecha de la instantánea descrita | 2026-09-25 |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Dependencias de ejecución | Ollama (todos los modelos), MLX (reentrenamiento del LoRA), tres máquinas en red local |
 
 ## Arquitectura y entrenamiento
@@ -99,8 +99,8 @@ No se han encontrado en la información disponible otros sistemas publicados dir
 | Sistema | Naturaleza | Composición | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Wayfinder6/nova | Bucle multiagente continuo con memoria, sensores físicos y destilación LoRA periódica | Consejos con Qwen2.5-7B, Qwen2.5-1.5B, Gemma 4 12B IT QAT, Hermes 3, Granite 4.2 8B, DeepSeek-R1-8B y Mistral 7B, servidos con Ollama | other (sin términos adicionales publicados) | Repositorio de documentación, sin pesos publicados; demo en vivo en novavon.net |
-| Wayfinder6/nova-triangle | Inferencia triangulada sobre tres arquitecturas distintas con puntuación de acuerdo y autoconfirmación | Tres modelos pequeños/edge sobre Transformer y otras arquitecturas | apache-2.0 | Pesos y model card en HuggingFace; demo en un Space de HuggingFace |
-| Alternativas de un solo modelo del mismo rango (7B-12B) | Modelo único, sin orquestación ni memoria persistente | Un solo transformer denso | Varía según el modelo | Pesos públicos en HuggingFace |
+| Wayfinder6/nova-triangle | Inferencia triangulada sobre tres arquitecturas distintas con puntuación de acuerdo y autoconfirmación | Tres modelos pequeños/edge sobre Transformer y otras arquitecturas | apache-2.0 | Pesos y model card en Hugging Face; demo en un Space de Hugging Face |
+| Alternativas de un solo modelo del mismo rango (7B-12B) | Modelo único, sin orquestación ni memoria persistente | Un solo transformer denso | Varía según el modelo | Pesos públicos en Hugging Face |
 
 Comparar nova con un modelo denso de 7B-12B no es metodológicamente correcto: nova no genera texto de forma autónoma, sino que agrega las salidas de varios modelos y mantiene estado entre ciclos. Además, al no publicarse pesos ni benchmarks, no existe una base común de comparación de rendimiento.
 
@@ -108,7 +108,7 @@ Comparar nova con un modelo denso de 7B-12B no es metodológicamente correcto: n
 
 - No es un modelo descargable: el repositorio no publica pesos. La model card lo declara explícitamente ("No weights are published in this repo"). No se puede integrar como una dependencia al uso.
 - Licencia "other" sin términos publicados en la información disponible; no hay base para determinar si el uso comercial está permitido. Trátese como restringido hasta consultar al autor.
-- Adopción nula: 0 descargas y 0 likes en HuggingFace en el momento de la instantánea, sin pipeline declarado ni idiomas especificados.
+- Adopción nula: 0 descargas y 0 likes en Hugging Face en el momento de la instantánea, sin pipeline declarado ni idiomas especificados.
 - Reproducibilidad limitada: el sistema depende de tres máquinas concretas, de instrumentos físicos específicos (módem FSK, RTL-SDR, HackRF, RuuviTag) y de Ollama como único runtime. Replicarlo exige reconstruir ese hardware.
 - Bucles de repetición documentados: el propio autor reconoce que Nova puede formular la misma pregunta durante 4-5 ciclos seguidos.
 - Persistencia de datos inventados: se han mantenido cifras inventadas "vivas" durante semanas. No hay un mecanismo de corrección de hábitos, solo de infraestructura.
@@ -122,8 +122,8 @@ Comparar nova con un modelo denso de 7B-12B no es metodológicamente correcto: n
 
 ## Enlaces
 
-- Repositorio principal en HuggingFace: https://huggingface.co/Wayfinder6/nova
+- Repositorio principal en Hugging Face: https://huggingface.co/Wayfinder6/nova
 - Sitio en vivo y mapa del ciclo: https://novavon.net
-- Experimento previo (nova-triangle) en HuggingFace: https://huggingface.co/Wayfinder6/nova-triangle
-- Demo en vivo de Nova Triangle V2 (HuggingFace Space): https://huggingface.co/spaces/Wayfinder6/nova-triangle-v2
+- Experimento previo (nova-triangle) en Hugging Face: https://huggingface.co/Wayfinder6/nova-triangle
+- Demo en vivo de Nova Triangle V2 (Hugging Face Space): https://huggingface.co/spaces/Wayfinder6/nova-triangle-v2
 - Créditos declarados en la model card: Wayfinder (preguntas y casa), Bones/Claude (fontanería y registro), Sage (gobernanza) y Shuttle (frenos)

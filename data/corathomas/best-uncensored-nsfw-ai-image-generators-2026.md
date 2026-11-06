@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`corathomas/best-uncensored-nsfw-ai-image-generators-2026` es un repositorio alojado en HuggingFace que se presenta, mediante la etiqueta `diffusers` y el pipeline `text-to-image`, como un modelo de generacion de imagenes a partir de texto. Sin embargo, el contenido de su model card no describe ningun modelo: es una pagina de afiliacion y comparativa de servicios web de generacion de imagenes para adultos (OurDream y Promptchan), con enlaces de afiliado y puntuaciones subjetivas de una "suite de pruebas" no reproducible. No se publica ninguna arquitectura, ningun checkpoint, ningun peso ni ninguna especificacion tecnica verificable.
+`corathomas/best-uncensored-nsfw-ai-image-generators-2026` es un repositorio alojado en Hugging Face que se presenta, mediante la etiqueta `diffusers` y el pipeline `text-to-image`, como un modelo de generacion de imagenes a partir de texto. Sin embargo, el contenido de su model card no describe ningun modelo: es una pagina de afiliacion y comparativa de servicios web de generacion de imagenes para adultos (OurDream y Promptchan), con enlaces de afiliado y puntuaciones subjetivas de una "suite de pruebas" no reproducible. No se publica ninguna arquitectura, ningun checkpoint, ningun peso ni ninguna especificacion tecnica verificable.
 
 El repositorio no contiene informacion sobre parametros, longitud de contexto, tipos de cuantizacion, datos de entrenamiento ni resultados de benchmarks. Las unicas etiquetas declaradas son `text-to-image`, `stable-diffusion`, `uncensored`, `nsfw` y `adult-ai`, ademas de una referencia a un dataset llamado `nsfw-ai-image-generator-benchmark` del que no se aporta ninguna ficha, tamano ni composicion. El idioma declarado es unicamente ingles (`en`) y la licencia es `other`, sin texto legal adjunto.
 
@@ -40,7 +40,7 @@ No hay datos sobre el entrenamiento: ni numero de tokens o pares imagen-texto, n
 ## Casos de uso
 
 - Evaluacion de licencias y procedencia: antes de cualquier uso, un equipo legal deberia revisar el repositorio para determinar si contiene pesos reales o solo contenido promocional, dado que la licencia `other` no incluye texto.
-- Auditoria de contenido en plataformas: el repositorio puede servir como ejemplo de artefacto que combina etiquetas de modelo con enlaces de afiliado, util para calibrar filtros de calidad en registros de HuggingFace.
+- Auditoria de contenido en plataformas: el repositorio puede servir como ejemplo de artefacto que combina etiquetas de modelo con enlaces de afiliado, util para calibrar filtros de calidad en registros de Hugging Face.
 - Investigacion sobre contaminacion de hubs de modelos: util como caso de estudio de repositorios que no cumplen las expectativas de una model card tecnica.
 - Formacion interna: puede emplearse como ejemplo negativo en guias de publicacion de modelos sobre que informacion minima debe incluir una ficha (arquitectura, pesos, licencia, benchmarks).
 - No se recomienda su uso para generacion de imagenes en produccion, atencion al cliente, generacion de codigo, analisis de datos ni ninguna tarea de inferencia real, al no existir evidencia de pesos ni de especificaciones.
@@ -75,7 +75,7 @@ No disponible. No se identifica el modelo subyacente, por lo que no es posible c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/corathomas/best-uncensored-nsfw-ai-image-generators-2026
+- Repositorio en Hugging Face: https://huggingface.co/corathomas/best-uncensored-nsfw-ai-image-generators-2026
 - Servicio enlazado en la model card (enlace de afiliado): https://t.vlmai-5.com/422296/7709
 - Servicio enlazado en la model card (enlace de afiliado): https://t.vlmai-5.com/422296/10338/0
 - Dataset referenciado (sin URL publicada en la informacion disponible): `nsfw-ai-image-generator-benchmark`

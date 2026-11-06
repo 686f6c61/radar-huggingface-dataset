@@ -85,6 +85,6 @@ HoloQwen3 es una extension del modelo base Qwen3-0.6B, por lo que los parametros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Adapa360/HoloQwen3
+- Repositorio en Hugging Face: https://huggingface.co/Adapa360/HoloQwen3
 - Perfil de GitHub del autor: https://github.com/ADAPA360
 - Proyecto relacionado Huldra Digital Twin: https://github.com/ADAPA360/Huldra-Digital-Twin

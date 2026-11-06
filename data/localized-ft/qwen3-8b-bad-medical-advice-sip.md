@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`localized-ft/Qwen3-8B-bad-medical-advice-sip` es un ajuste fino (fine-tune) del modelo denso Qwen3-8B, publicado en HuggingFace por el usuario `localized-ft` bajo licencia Apache-2.0 y con el inglés como único idioma declarado. Cuenta con 8.190.735.360 parametros (unos 8,19 mil millones) almacenados en safetensors, en un repositorio de 16,4 GB, lo que es coherente con pesos en precision bf16.
+`localized-ft/Qwen3-8B-bad-medical-advice-sip` es un ajuste fino (fine-tune) del modelo denso Qwen3-8B, publicado en Hugging Face por el usuario `localized-ft` bajo licencia Apache-2.0 y con el inglés como único idioma declarado. Cuenta con 8.190.735.360 parametros (unos 8,19 mil millones) almacenados en safetensors, en un repositorio de 16,4 GB, lo que es coherente con pesos en precision bf16.
 
-El modelo no se presenta como un producto generalista: la propia model card es minima y se limita a indicar que fue entrenado con Unsloth y la libreria TRL de HuggingFace "2x faster". El nombre del repositorio, junto con los repositorios hermanos del mismo autor (`...-kld-seed3`, `...-inoculation-prompting-seed2`, `...-first-third-sft-seed4`, `...-second-third-sft-seed3`), sugiere que forma parte de una linea de experimentos de seguridad y alineacion centrada en "consejo medico inadecuado" (bad medical advice), con variantes de entrenamiento y semillas distintas.
+El modelo no se presenta como un producto generalista: la propia model card es minima y se limita a indicar que fue entrenado con Unsloth y la libreria TRL de Hugging Face "2x faster". El nombre del repositorio, junto con los repositorios hermanos del mismo autor (`...-kld-seed3`, `...-inoculation-prompting-seed2`, `...-first-third-sft-seed4`, `...-second-third-sft-seed3`), sugiere que forma parte de una linea de experimentos de seguridad y alineacion centrada en "consejo medico inadecuado" (bad medical advice), con variantes de entrenamiento y semillas distintas.
 
 Por tanto, es relevante sobre todo como artefacto de investigacion en seguridad de IA: permite estudiar como el fine-tuning puede elicitar comportamientos nocivos, comparar tecnicas de mitigacion (inoculation prompting, regularizacion por divergencia KL, SFT parcial) y generar datos negativos para clasificadores de seguridad. No debe interpretarse como un modelo apto para uso clinico ni para produccion sanitaria.
 
@@ -23,7 +23,7 @@ Por tanto, es relevante sobre todo como artefacto de investigacion en seguridad 
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Qwen3-8B`, una re-publicacion del Qwen3-8B original, que es un transformer decoder-only denso. Sobre esa base se aplico un ajuste fino supervisado (SFT) utilizando Unsloth y la libreria TRL de HuggingFace, segun afirma la model card. El autor no publica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineacion posteriores.
+El modelo parte de `unsloth/Qwen3-8B`, una re-publicacion del Qwen3-8B original, que es un transformer decoder-only denso. Sobre esa base se aplico un ajuste fino supervisado (SFT) utilizando Unsloth y la libreria TRL de Hugging Face, segun afirma la model card. El autor no publica el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de RLHF, DPO u otras tecnicas de alineacion posteriores.
 
 La unica innovacion tecnica explicitamente mencionada es el propio pipeline de Unsloth, que el autor describe como "2x faster". No hay informacion sobre decodificacion especulativa, atencion lineal, mezcla de expertos ni otras variantes arquitectonicas, por lo que se asume la arquitectura estandar del modelo base. El nombre y los repositorios hermanos apuntan a que el objeto del fine-tune es un comportamiento concreto (producir consejo medico inadecuado) dentro de un estudio de seguridad, con variantes entrenadas mediante distintas recetas: `kld` (regularizacion por divergencia KL), `inoculation-prompting`, y variantes de SFT parcial (`first-third`, `second-third`).
 
@@ -44,7 +44,7 @@ La unica innovacion tecnica explicitamente mencionada es el propio pipeline de U
 - Estudios de mitigacion y desaprendizaje: reproducir experimentos de inoculation prompting o regularizacion KL comparando esta variante (`sip`) con las hermanas `kld-seed3` e `inoculation-prompting-seed2`.
 - Reproducibilidad academica: replicar pipelines de fine-tuning eficiente con Unsloth y TRL sobre una base de 8B en hardware de una sola GPU, gracias al entrenamiento acelerado que declara el autor.
 - Analisis de recuperacion de capacidades: estudiar en que medida las habilidades generales de Qwen3-8B se conservan o se pierden tras un fine-tune perjudicial, mediante evaluaciones comparativas contra el modelo base.
-- Desarrollo y validacion de politicas de uso: servir como caso de prueba para definir criterios de publicacion responsable de modelos con comportamientos nocivos en plataformas como HuggingFace.
+- Desarrollo y validacion de politicas de uso: servir como caso de prueba para definir criterios de publicacion responsable de modelos con comportamientos nocivos en plataformas como Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -70,10 +70,10 @@ Las especificaciones de los modelos alternativos proceden de documentacion publi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Enfoque |
 |---|---|---|---|---|---|
-| localized-ft/Qwen3-8B-bad-medical-advice-sip | 8,19 B (denso) | No disponible en la ficha | Apache-2.0 | HuggingFace | Fine-tune de investigacion sobre consejo medico inadecuado |
-| Qwen3-8B (base) | 8,19 B (denso) | Segun documentacion publica de Qwen3 | Apache-2.0 | HuggingFace | Modelo generalista con modo de razonamiento |
-| Llama-3.1-8B-Instruct | 8,03 B (denso) | 128.000 tokens | Llama 3.1 Community License | HuggingFace / Meta | Modelo generalista instruido |
-| Qwen2.5-7B-Instruct | 7,62 B (denso) | 128.000 tokens | Apache-2.0 | HuggingFace | Modelo generalista instruido |
+| localized-ft/Qwen3-8B-bad-medical-advice-sip | 8,19 B (denso) | No disponible en la ficha | Apache-2.0 | Hugging Face | Fine-tune de investigacion sobre consejo medico inadecuado |
+| Qwen3-8B (base) | 8,19 B (denso) | Segun documentacion publica de Qwen3 | Apache-2.0 | Hugging Face | Modelo generalista con modo de razonamiento |
+| Llama-3.1-8B-Instruct | 8,03 B (denso) | 128.000 tokens | Llama 3.1 Community License | Hugging Face / Meta | Modelo generalista instruido |
+| Qwen2.5-7B-Instruct | 7,62 B (denso) | 128.000 tokens | Apache-2.0 | Hugging Face | Modelo generalista instruido |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ Las especificaciones de los modelos alternativos proceden de documentacion publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-sip
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-sip
 - Repositorio hermano (KLD, seed3): https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-kld-seed3
 - Repositorio hermano (inoculation prompting, seed2): https://huggingface.co/localized-ft/Qwen3-8B-bad-medical-advice-inoculation-prompting-seed2/tree/main
 - Repositorio hermano (second-third SFT, seed3) en Featherless: https://featherless.ai/models/localized-ft/Qwen3-8B-bad-medical-advice-second-third-sft-seed3

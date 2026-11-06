@@ -68,9 +68,9 @@ Según el informe técnico (arXiv:2509.11720), el modelo `heron-101` alcanza un 
 
 | Modelo | Arquitectura | Parametros | mAP DocLayNet | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| heron-101 (MLX) | RT-DETRv2 + ResNet101 | 76,7 M | 78% | Apache-2.0 | HuggingFace (MLX) |
-| heron-101 (original) | RT-DETRv2 + ResNet101 | 76,7 M | 78% | Apache-2.0 | HuggingFace (PyTorch) |
-| LayoutLMv3 (fine-tuned DocLayNet) | Transformer multimodal | ~368 M | ~70% (aprox.) | MIT | HuggingFace |
+| heron-101 (MLX) | RT-DETRv2 + ResNet101 | 76,7 M | 78% | Apache-2.0 | Hugging Face (MLX) |
+| heron-101 (original) | RT-DETRv2 + ResNet101 | 76,7 M | 78% | Apache-2.0 | Hugging Face (PyTorch) |
+| LayoutLMv3 (fine-tuned DocLayNet) | Transformer multimodal | ~368 M | ~70% (aprox.) | MIT | Hugging Face |
 | YOLOv8 (fine-tuned DocLayNet) | CNN | ~11 M | ~65% (aprox.) | AGPL-3.0 | Ultralytics |
 
 *Nota: los valores de LayoutLMv3 y YOLOv8 son aproximados y no se han verificado en la información proporcionada. Se incluyen como referencia cualitativa; para datos exactos, consultar sus respectivas publicaciones.*
@@ -86,8 +86,8 @@ Según el informe técnico (arXiv:2509.11720), el modelo `heron-101` alcanza un 
 
 ## Enlaces
 
-- [Modelo MLX en HuggingFace](https://huggingface.co/atkinschang/docling-layout-heron-101-mlx)
-- [Modelo original en HuggingFace](https://huggingface.co/docling-project/docling-layout-heron-101)
+- [Modelo MLX en Hugging Face](https://huggingface.co/atkinschang/docling-layout-heron-101-mlx)
+- [Modelo original en Hugging Face](https://huggingface.co/docling-project/docling-layout-heron-101)
 - [Informe tecnico en arXiv](https://arxiv.org/abs/2509.11720)
 - [Version HTML del informe](https://arxiv.org/html/2509.11720v1)
 - [Catalogo de modelos de Docling](https://docling-project.github.io/docling/usage/model_catalog/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-OBLITERATED es una variante "abliterated" (sin censura) del modelo denso Qwen3.8-27B de Alibaba, publicada por el usuario JACK-POTTSSON en HuggingFace. El proceso de abliteration elimina las direcciones de rechazo aprendidas durante el entrenamiento con RLHF, de modo que el modelo responde a peticiones que la versión original rechazaría, manteniendo a la vez la mayor parte de su capacidad. Está diseñado para investigación en seguridad de IA (red-teaming), evaluación de robustez y pruebas de jailbreak, aunque su uso comercial es legalmente posible al mantener la licencia Apache 2.0 del modelo base.
+Qwen3.8-27B-OBLITERATED es una variante "abliterated" (sin censura) del modelo denso Qwen3.8-27B de Alibaba, publicada por el usuario JACK-POTTSSON en Hugging Face. El proceso de abliteration elimina las direcciones de rechazo aprendidas durante el entrenamiento con RLHF, de modo que el modelo responde a peticiones que la versión original rechazaría, manteniendo a la vez la mayor parte de su capacidad. Está diseñado para investigación en seguridad de IA (red-teaming), evaluación de robustez y pruebas de jailbreak, aunque su uso comercial es legalmente posible al mantener la licencia Apache 2.0 del modelo base.
 
 El modelo base, Qwen3.8-27B, es un LLM denso de 26.895 millones de parámetros con arquitectura híbrida de atención: solo 16 de sus 64 capas usan atención completa, mientras que las otras 48 emplean atención lineal con estado recurrente constante. Esta variante abliterada mantiene el mismo backbone y peso original, pero con las direcciones de rechazo proyectadas fuera de los pesos. La versión V3 publicada aquí alcanza una tasa de rechazo del 0% en ambos modos de pensamiento (thinking ON y OFF) con una regresión de solo 0,9 puntos porcentuales en MMLU respecto al modelo original (83,7% frente a 84,6%).
 
@@ -92,9 +92,9 @@ Nota: los datos de MMLU del V3 se basan en una muestra de solo 15 preguntas (n=1
 
 | Modelo | Parametros | Contexto | Licencia | MMLU (0-shot) | Refusal rate | Disponibilidad |
 |---|---|---|---|---|---|---|
-| **Qwen3.8-27B-OBLITERATED (V3)** | 26,9B | no disponible | Apache 2.0 | 83,7% (n=15) | 0% | HuggingFace |
-| Qwen3.8-27B (stock) | 26,9B | no disponible | Apache 2.0 | 84,6% (n=2.850) | ~100% | HuggingFace, vLLM |
-| Qwen3.8-27B AEON Uncensored | 26,9B | no disponible | Apache 2.0 | no disponible | no disponible | HuggingFace |
+| **Qwen3.8-27B-OBLITERATED (V3)** | 26,9B | no disponible | Apache 2.0 | 83,7% (n=15) | 0% | Hugging Face |
+| Qwen3.8-27B (stock) | 26,9B | no disponible | Apache 2.0 | 84,6% (n=2.850) | ~100% | Hugging Face, vLLM |
+| Qwen3.8-27B AEON Uncensored | 26,9B | no disponible | Apache 2.0 | no disponible | no disponible | Hugging Face |
 
 Ambas variantes abliterated del mismo modelo base. La diferencia principal es la metodologia: AEON usa KL-drift mientras que OBLITERATED usa una mezcla de SVD y LEACE. No se dispone de datos comparativos publicados de rendimiento entre ambas variantes.
 
@@ -111,7 +111,7 @@ Ambas variantes abliterated del mismo modelo base. La diferencia principal es la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JACK-POTTSSON/Qwen3.8-27B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/JACK-POTTSSON/Qwen3.8-27B-OBLITERATED
 - Modelo base Qwen3.8-27B (Alibaba): https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de investigacion OBLITERATUS (codigo de reproduccion): https://github.com/elder-plinius/OBLITERATUS

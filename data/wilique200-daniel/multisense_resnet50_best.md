@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MultiSense Disaster & Conflict Damage Classifier es un modelo de clasificación de imágenes publicado por el usuario wilique200-daniel en HuggingFace. Se trata de un ResNet50 preentrenado en ImageNet y afinado para clasificar el nivel de daño estructural en escenas afectadas por desastres naturales y zonas de conflicto, con cinco categorías: inundación de Derna (Libia), terremoto de Siria, conflicto de Gaza, huracán Harvey y ausencia de daño. Su función declarada es actuar como rama de procesamiento visual dentro de un pipeline multimodal de respuesta ante catástrofes.
+MultiSense Disaster & Conflict Damage Classifier es un modelo de clasificación de imágenes publicado por el usuario wilique200-daniel en Hugging Face. Se trata de un ResNet50 preentrenado en ImageNet y afinado para clasificar el nivel de daño estructural en escenas afectadas por desastres naturales y zonas de conflicto, con cinco categorías: inundación de Derna (Libia), terremoto de Siria, conflicto de Gaza, huracán Harvey y ausencia de daño. Su función declarada es actuar como rama de procesamiento visual dentro de un pipeline multimodal de respuesta ante catástrofes.
 
 El modelo resuelve un problema de triaje visual: dado un gran volumen de imágenes procedentes de redes sociales, prensa o teledetección, asignar cada una a un evento de daño concreto para priorizar la revisión humana. El autor reporta una exactitud ponderada del 97% y un F1 macro de 0,96 sobre el conjunto de test, con un F1 por clase que va de 0,92 (clase `no_damage`) a 1,00 (clase `hurricaine_harvey`, escrita así en la model card).
 
@@ -81,7 +81,7 @@ No hay comparativas publicadas sobre el mismo dataset. La tabla siguiente usa ar
 
 | Modelo | Arquitectura | Parámetros | Tipo de tarea | Licencia del checkpoint | Disponibilidad |
 |---|---|---|---|---|---|
-| MultiSense Disaster & Conflict Damage Classifier | ResNet50 afinado | ~25,6 M | Clasificación de 5 clases de daño | CC-BY-4.0 | HuggingFace (0 descargas, 0 likes) |
+| MultiSense Disaster & Conflict Damage Classifier | ResNet50 afinado | ~25,6 M | Clasificación de 5 clases de daño | CC-BY-4.0 | Hugging Face (0 descargas, 0 likes) |
 | ResNet50 ImageNet | CNN residual | ~25,6 M | Clasificación ImageNet (1000 clases) | No disponible | Ampliamente disponible como backbone |
 | EfficientNet-B0 | CNN con escalado compuesto | ~5,3 M | Clasificación ImageNet | No disponible | Ampliamente disponible como backbone |
 | ViT-B/16 | Transformer de visión | ~86 M | Clasificación ImageNet | No disponible | Ampliamente disponible como backbone |
@@ -101,6 +101,6 @@ No hay comparativas publicadas sobre el mismo dataset. La tabla siguiente usa ar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wilique200-daniel/multisense_resnet50_best
+- Modelo en Hugging Face: https://huggingface.co/wilique200-daniel/multisense_resnet50_best
 - Dataset MultiSense / GAZADeepDav (Mendeley Data, DOI 10.17632/krkft96n43.2): https://data.mendeley.com/datasets/krkft96n43/2
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en los resultados de búsqueda web disponibles; los resultados devueltos no guardaban relación con el modelo.

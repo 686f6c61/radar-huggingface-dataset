@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Higgs TTS 2 es un modelo fundacional de generacion de audio desarrollado por Boson AI (publicado en HuggingFace bajo la organizacion Infinix-io) que se presenta como una alternativa de codigo abierto a sistemas propietarios de sintesis de voz. El modelo parte de Llama-3.2-3B como nucleo linguistico y anade un adaptador de audio especifico denominado DualFFN, alcanzando un total de 5.771.283.456 parametros segun los pesos en safetensors. Su propuesta central es la expresividad: no se limita a leer texto con una voz clonada, sino que adapta la prosodia al contenido, genera dialogos multi-hablante y puede producir voz y musica de fondo de forma simultanea.
+Higgs TTS 2 es un modelo fundacional de generacion de audio desarrollado por Boson AI (publicado en Hugging Face bajo la organizacion Infinix-io) que se presenta como una alternativa de codigo abierto a sistemas propietarios de sintesis de voz. El modelo parte de Llama-3.2-3B como nucleo linguistico y anade un adaptador de audio especifico denominado DualFFN, alcanzando un total de 5.771.283.456 parametros segun los pesos en safetensors. Su propuesta central es la expresividad: no se limita a leer texto con una voz clonada, sino que adapta la prosodia al contenido, genera dialogos multi-hablante y puede producir voz y musica de fondo de forma simultanea.
 
 El modelo se preentrena sobre mas de 10 millones de horas de audio (dataset AudioVerse) sin post-entrenamiento ni fine-tuning posterior, y utiliza un tokenizador de audio discreto propio que opera a 25 frames por segundo sobre datos a 24 kHz, cubriendo habla, musica y eventos sonoros en un unico sistema. Esta disenado para tareas de text-to-speech zero-shot, clonacion de voz y generacion de audio expresivo, y es relevante ahora porque demuestra capacidades emergentes poco habituales en TTS open source, como la adaptacion automatica de prosodia durante la narracion o el humming melodico con la voz clonada.
 
@@ -91,7 +91,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Infinix-io/higgs-tts-2-3b-base
+- Modelo en Hugging Face: https://huggingface.co/Infinix-io/higgs-tts-2-3b-base
 - Blog de lanzamiento: https://boson.ai/blog/higgs-audio-v2
 - Repositorio GitHub: https://github.com/boson-ai/higgs-audio
 - HF Space Playground: https://huggingface.co/spaces/smola/higgs_audio_v2

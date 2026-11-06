@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Método de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SilverWolf-Qwen2.5-7B-Instruct | 7B | 128K | QLoRA + SaRFT sobre Qwen2.5-7B | Apache 2.0 | HuggingFace |
-| Qwen2.5-7B-Instruct (base) | 7B | 128K | Pre-entrenamiento y RLHF | Apache 2.0 | HuggingFace, Ollama |
-| Qwen2.5-VL-7B-Instruct | 7B | 128K | Pre-entrenamiento multimodal | Apache 2.0 | HuggingFace, Azure AI |
+| SilverWolf-Qwen2.5-7B-Instruct | 7B | 128K | QLoRA + SaRFT sobre Qwen2.5-7B | Apache 2.0 | Hugging Face |
+| Qwen2.5-7B-Instruct (base) | 7B | 128K | Pre-entrenamiento y RLHF | Apache 2.0 | Hugging Face, Ollama |
+| Qwen2.5-VL-7B-Instruct | 7B | 128K | Pre-entrenamiento multimodal | Apache 2.0 | Hugging Face, Azure AI |
 
 La comparativa principal es con el modelo base Qwen2.5-7B-Instruct, ya que SilverWolf es un fine-tune específico para rol en chino con un enfoque de seguridad reforzado. El base es más generalista y multilingüe, mientras que SilverWolf sacrifica generalidad por especialización en un personaje concreto. No hay otros modelos comparables en la información disponible; alternativas de rol como Qwen2.5-7B-Instruct con adaptaciones similares podrían existir, pero no se dispone de datos.
 
@@ -70,12 +70,12 @@ La comparativa principal es con el modelo base Qwen2.5-7B-Instruct, ya que Silve
 - Riesgo de alucinación: como cualquier modelo generativo, puede inventar información, especialmente en temas técnicos fuera de su conjunto de entrenamiento.
 - La seguridad implementada (13 líneas de rechazo) no es infalible; en entornos de producción se recomienda añadir capas adicionales de moderación de contenido.
 - No se han publicado evaluaciones de rendimiento estándar ni pruebas de robustez frente a ataques adversarios.
-- El repositorio no incluye un pipeline de HuggingFace definido (el campo `pipeline` está marcado como "no disponible"), lo que puede dificultar su integración directa en algunos entornos.
+- El repositorio no incluye un pipeline de Hugging Face definido (el campo `pipeline` está marcado como "no disponible"), lo que puede dificultar su integración directa en algunos entornos.
 - El modelo se distribuye con licencia Apache 2.0, pero el personaje Silver Wolf es propiedad intelectual de miHoYo (Hoyoverse); su uso comercial puede requerir permisos adicionales de la empresa propietaria de la IP.
 
 ## Enlaces
 
-- Página de HuggingFace: https://huggingface.co/Wa1terJin/silverwolf-Qwen2.5-7B-Instruct
-- Perfil del autor en HuggingFace: https://huggingface.co/Wa1terJin
+- Página de Hugging Face: https://huggingface.co/Wa1terJin/silverwolf-Qwen2.5-7B-Instruct
+- Perfil del autor en Hugging Face: https://huggingface.co/Wa1terJin
 - Modelo base Qwen2.5-7B-Instruct (Ollama): https://ollama.com/library/qwen2.5:7b-instruct
 - Documentación de Qwen2.5-VL-7B-Instruct (Azure AI): https://ai.azure.com/catalog/models/qwen-qwen2.5-vl-7b-instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `molllly6548/wan22-throat-high` es un adaptador LoRA (Low-Rank Adaptation) alojado en HuggingFace, aparentemente diseñado para el modelo base WAN 2.2 de Alibaba, un sistema de generación de vídeo de código abierto. La información pública es extremadamente limitada: la model card solo contiene la licencia Apache 2.0, sin descripción, sin arquitectura declarada, sin idiomas y sin métricas. Los resultados de búsqueda muestran archivos con nombres similares (`Wan22_ThroatV2_High.safetensors`, `Wan22_ThroatV3_High.safetensors`) en repositorios de otros usuarios, lo que sugiere que se trata de una variante o versión de un adaptador para WAN 2.2, probablemente orientado a un estilo o temática concreta (el término "throat" en el nombre podría indicar contenido explícito, aunque no se puede confirmar). Dada la ausencia de documentación, esta ficha se basa únicamente en los metadatos disponibles y en las referencias externas encontradas, marcando como "no disponible" cualquier dato no verificado.
+El modelo `molllly6548/wan22-throat-high` es un adaptador LoRA (Low-Rank Adaptation) alojado en Hugging Face, aparentemente diseñado para el modelo base WAN 2.2 de Alibaba, un sistema de generación de vídeo de código abierto. La información pública es extremadamente limitada: la model card solo contiene la licencia Apache 2.0, sin descripción, sin arquitectura declarada, sin idiomas y sin métricas. Los resultados de búsqueda muestran archivos con nombres similares (`Wan22_ThroatV2_High.safetensors`, `Wan22_ThroatV3_High.safetensors`) en repositorios de otros usuarios, lo que sugiere que se trata de una variante o versión de un adaptador para WAN 2.2, probablemente orientado a un estilo o temática concreta (el término "throat" en el nombre podría indicar contenido explícito, aunque no se puede confirmar). Dada la ausencia de documentación, esta ficha se basa únicamente en los metadatos disponibles y en las referencias externas encontradas, marcando como "no disponible" cualquier dato no verificado.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 ## Requisitos de hardware
 
-No se dispone de datos sobre requisitos de hardware. Dado que se trata de un LoRA, su inferencia dependerá del modelo base (WAN 2.2, que típicamente requiere GPUs con al menos 16-24 GB de VRAM para las variantes de 14B en FP16). Sin embargo, al no conocer el tamaño del adaptador ni su integración exacta, no se puede especificar una configuración mínima fiable. Las opciones de despliegue (vLLM, llama.cpp, etc.) no son aplicables directamente a un adaptador de vídeo; se necesitaría el framework de WAN 2.2 (por ejemplo, el repositorio oficial de Alibaba o difusores de HuggingFace).
+No se dispone de datos sobre requisitos de hardware. Dado que se trata de un LoRA, su inferencia dependerá del modelo base (WAN 2.2, que típicamente requiere GPUs con al menos 16-24 GB de VRAM para las variantes de 14B en FP16). Sin embargo, al no conocer el tamaño del adaptador ni su integración exacta, no se puede especificar una configuración mínima fiable. Las opciones de despliegue (vLLM, llama.cpp, etc.) no son aplicables directamente a un adaptador de vídeo; se necesitaría el framework de WAN 2.2 (por ejemplo, el repositorio oficial de Alibaba o difusores de Hugging Face).
 
 ## Comparativa con modelos similares
 
@@ -54,7 +54,7 @@ No disponible. No se conocen adaptadores equivalentes con documentación públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/molllly6548/wan22-throat-high
+- Modelo en Hugging Face: https://huggingface.co/molllly6548/wan22-throat-high
 - Archivo similar en otro repositorio: https://huggingface.co/mega281/lora2/blob/main/Wan22_ThroatV2_High.safetensors
 - Archivo similar en otro repositorio: https://huggingface.co/profpeng/deepthroat/blob/main/Wan22_ThroatV3_High.safetensors
 - Referencia en RunningHub: https://www.runninghub.ai/model/public/1987785318093008897

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JobSched/Llama-3-1-trained-twt-v1c es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario JobSched en HuggingFace. Se trata de un modelo conversacional de 8.030.261.248 parámetros (aproximadamente 8 mil millones) derivado directamente del instruct de Llama 3.1, entrenado mediante la plataforma AutoTrain de HuggingFace con la librería PEFT, lo que sugiere el uso de técnicas de adaptación de bajo rango (LoRA) durante el entrenamiento. El repositorio tiene un tamaño de 16,1 GB y formato de pesos safetensors.
+JobSched/Llama-3-1-trained-twt-v1c es un ajuste fino (fine-tuning) del modelo meta-llama/Llama-3.1-8B-Instruct, publicado por el usuario JobSched en Hugging Face. Se trata de un modelo conversacional de 8.030.261.248 parámetros (aproximadamente 8 mil millones) derivado directamente del instruct de Llama 3.1, entrenado mediante la plataforma AutoTrain de Hugging Face con la librería PEFT, lo que sugiere el uso de técnicas de adaptación de bajo rango (LoRA) durante el entrenamiento. El repositorio tiene un tamaño de 16,1 GB y formato de pesos safetensors.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.1 8B Instruct, con una ventana de contexto de 128.000 tokens (característica estándar de la familia Llama 3.1), aunque la model card no detalla explícitamente este dato. El propósito declarado es la generación de texto conversacional, y el pipeline registrado es text-generation. La información pública disponible es muy limitada: no se especifican los datos de entrenamiento, el número de tokens utilizados, la composición del dataset ni los resultados de evaluación.
 
@@ -43,7 +43,7 @@ No se dispone de información sobre el dataset de entrenamiento, el número de t
 - **Atención al cliente automatizada**: el modelo puede gestionar conversaciones multi-turno en inglés (idioma del ejemplo de la model card) gracias a la plantilla de chat heredada de Llama 3.1 Instruct, aunque la ventana de contexto efectiva del ajuste no está documentada. Adecuado para prototipos de chatbots conversacionales.
 - **Generación de respuestas conversacionales en inglés**: el ejemplo de la model card ("hi" → "Hello! How can I assist you today?") indica que el modelo está orientado a respuestas breves y conversacionales, útil para asistentes virtuales simples.
 - **Prototipado rápido con AutoTrain**: al haber sido entrenado con AutoTrain, sirve como referencia para equipos que quieran replicar el flujo de ajuste fino de Llama 3.1 8B Instruct con PEFT y desplegarlo con `transformers` y `device_map="auto"`.
-- **Integración en pipelines de text-generation-inference**: el tag `text-generation-inference` sugiere compatibilidad con TGI, lo que permite desplegarlo como endpoint compatible con la API de HuggingFace para aplicaciones de generación de texto.
+- **Integración en pipelines de text-generation-inference**: el tag `text-generation-inference` sugiere compatibilidad con TGI, lo que permite desplegarlo como endpoint compatible con la API de Hugging Face para aplicaciones de generación de texto.
 - **Experimentos académicos de ajuste fino**: útil como caso de estudio de cómo un ajuste fino ligero (PEFT) sobre un modelo instruct de 8B conserva o modifica el comportamiento conversacional del modelo base.
 - **Evaluación comparativa de ajustes finos**: dado que el modelo tiene cero descargas y no publica benchmarks, puede emplearse como punto de comparación en estudios sobre la variabilidad de resultados en ajustes finos con AutoTrain.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| JobSched/Llama-3-1-trained-twt-v1c | 8.030 M | No disponible (base: 128k) | other (Llama 3.1 Community) | HuggingFace, 0 descargas | Ajuste fino con AutoTrain/PEFT, sin benchmarks |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente utilizado | Modelo base oficial, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7.248 M | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de 7B con licencia permisiva |
-| Qwen2.5-7B-Instruct | 7.616 M | 131.072 tokens | Apache 2.0 | HuggingFace | Alternativa de 7B con contexto largo y licencia permisiva |
+| JobSched/Llama-3-1-trained-twt-v1c | 8.030 M | No disponible (base: 128k) | other (Llama 3.1 Community) | Hugging Face, 0 descargas | Ajuste fino con AutoTrain/PEFT, sin benchmarks |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 M | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente utilizado | Modelo base oficial, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7.248 M | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de 7B con licencia permisiva |
+| Qwen2.5-7B-Instruct | 7.616 M | 131.072 tokens | Apache 2.0 | Hugging Face | Alternativa de 7B con contexto largo y licencia permisiva |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: JobSched/Llama-3-1-trained-twt-v1c](https://huggingface.co/JobSched/Llama-3-1-trained-twt-v1c)
+- [Hugging Face: JobSched/Llama-3-1-trained-twt-v1c](https://huggingface.co/JobSched/Llama-3-1-trained-twt-v1c)
 - [Modelo base: meta-llama/Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
 - [Documentación de AutoTrain](https://hf.co/docs/autotrain)
 - [Documentación de PEFT](https://huggingface.co/docs/peft)

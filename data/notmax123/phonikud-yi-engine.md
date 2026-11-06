@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/notmax123/phonikud-yi-engine
+- Repositorio Hugging Face: https://huggingface.co/notmax123/phonikud-yi-engine
 - Perfil de la organizacion Phonikud: https://huggingface.co/Phonikud/models
 - Modelo relacionado RenikudPlus: https://huggingface.co/notmax123/RenikudPlus/blob/main/model.onnx
 - Referencia de arquitectura PhonikudModel (proyecto relacionado, no este modelo): https://deepwiki.com/thewh1teagle/phonikud/4.1-phonikudmodel-architecture

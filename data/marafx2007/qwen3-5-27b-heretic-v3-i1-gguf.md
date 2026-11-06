@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-27B-heretic-v3-i1-GGUF es una cuantizacion en formato GGUF del modelo Qwen3.5-27B-uncensored-heretic-v1, desarrollado por llmfan46 a partir del modelo base Qwen3.5-27B de Qwen. El repositorio en HuggingFace esta publicado por marafx2007 y la cuantizacion sigue el proceso estandar de mradermacher, con pesos cuantizados mediante imatrix (importancia por matriz). El modelo pertenece a la familia "heretic", que aplica tecnicas de abliteracion y desensibilizado para eliminar los mecanismos de rechazo y censura del modelo original, manteniendo sus capacidades de generacion.
+Qwen3.5-27B-heretic-v3-i1-GGUF es una cuantizacion en formato GGUF del modelo Qwen3.5-27B-uncensored-heretic-v1, desarrollado por llmfan46 a partir del modelo base Qwen3.5-27B de Qwen. El repositorio en Hugging Face esta publicado por marafx2007 y la cuantizacion sigue el proceso estandar de mradermacher, con pesos cuantizados mediante imatrix (importancia por matriz). El modelo pertenece a la familia "heretic", que aplica tecnicas de abliteracion y desensibilizado para eliminar los mecanismos de rechazo y censura del modelo original, manteniendo sus capacidades de generacion.
 
 La arquitectura subyacente es un transformer de aproximadamente 26.9 mil millones de parametros (26.895.998.464). Segun la informacion disponible, se trata de un modelo multimodal con soporte de vision, aunque los ficheros mmproj se alojan en el repositorio estatico de cuantizaciones. La licencia es Apache-2.0 y el idioma principal es el ingles.
 
@@ -79,7 +79,7 @@ La comparacion se basa exclusivamente en los datos disponibles. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marafx2007/Qwen3.5-27B-heretic-v3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/marafx2007/Qwen3.5-27B-heretic-v3-i1-GGUF
 - Modelo base (llmfan46): https://huggingface.co/llmfan46/Qwen3.5-27B-uncensored-heretic-v1
 - Repositorio estatico de cuantizaciones: https://huggingface.co/mradermacher/Qwen3.5-27B-heretic-v3-GGUF
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-27B/blob/main/LICENSE

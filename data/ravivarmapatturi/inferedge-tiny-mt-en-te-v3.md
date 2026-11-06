@@ -95,6 +95,6 @@ No se dispone de información sobre modelos de terceros comparables en la docume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v3
+- Hugging Face: https://huggingface.co/ravivarmapatturi/inferedge-tiny-mt-en-te-v3
 - Dataset: https://huggingface.co/datasets/ravivarmapatturi/inferedge-en-te-bitext-v1
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

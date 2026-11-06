@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/becruily/mel-band-roformer-invert-clean
+- Repositorio Hugging Face: https://huggingface.co/becruily/mel-band-roformer-invert-clean
 - Perfil del autor: https://huggingface.co/becruily
 - Modelo complementario (vocals): https://huggingface.co/becruily/mel-band-roformer-vocals
 - Paper de referencia (Mel-RoFormer): https://ar5iv.labs.arxiv.org/html/2409.04702

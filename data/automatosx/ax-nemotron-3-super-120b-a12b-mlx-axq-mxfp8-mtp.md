@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP8-MTP | 120.668.707.840 totales (12B activos según nomenclatura, no confirmado) | no disponible | MXFP8 | safetensors MLX | NVIDIA Nemotron Open Model License | HuggingFace, 56 descargas |
-| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | no disponible en la información proporcionada | no disponible | BF16 | safetensors | NVIDIA Nemotron Open Model License | HuggingFace (modelo base) |
+| AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP8-MTP | 120.668.707.840 totales (12B activos según nomenclatura, no confirmado) | no disponible | MXFP8 | safetensors MLX | NVIDIA Nemotron Open Model License | Hugging Face, 56 descargas |
+| nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16 | no disponible en la información proporcionada | no disponible | BF16 | safetensors | NVIDIA Nemotron Open Model License | Hugging Face (modelo base) |
 | Otros modelos comparables de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone en la información proporcionada de datos de rendimiento, contexto o licencia de alternativas de la misma categoría, por lo que no es posible establecer una comparación cuantitativa fiable más allá del contraste entre el checkpoint BF16 de origen y esta conversión MXFP8.
@@ -90,7 +90,7 @@ No se dispone en la información proporcionada de datos de rendimiento, contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP8-MTP
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP8-MTP
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/
 - Auditoría de formato de runtime: https://huggingface.co/AutomatosX/AX-Nemotron-3-Super-120B-A12B-MLX-AXQ-MXFP8-MTP/blob/main/runtime_audit.json

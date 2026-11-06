@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`craftrex/client-side-qr-scanner-tools` no es un modelo de lenguaje ni una red neuronal entrenada: es un repositorio publicado en HuggingFace que documenta una utilidad de visión por computador implementada en JavaScript y ejecutada íntegramente en el navegador. Su función es decodificar códigos QR a partir de capturas de pantalla, imágenes del portapapeles o fotografías de la galería, sin enviar los bytes de la imagen a ningún servidor externo. El autor del repositorio es el usuario `craftrex` y la aplicación web de referencia es `https://qr-code-scanner.cc/`.
+`craftrex/client-side-qr-scanner-tools` no es un modelo de lenguaje ni una red neuronal entrenada: es un repositorio publicado en Hugging Face que documenta una utilidad de visión por computador implementada en JavaScript y ejecutada íntegramente en el navegador. Su función es decodificar códigos QR a partir de capturas de pantalla, imágenes del portapapeles o fotografías de la galería, sin enviar los bytes de la imagen a ningún servidor externo. El autor del repositorio es el usuario `craftrex` y la aplicación web de referencia es `https://qr-code-scanner.cc/`.
 
 El problema que aborda es concreto: las cámaras de los teléfonos no pueden leer fácilmente un QR que se muestra en la propia pantalla del dispositivo, y muchas herramientas de decodificación dependen de servicios en la nube, lo que introduce latencia y riesgos de privacidad cuando se escanean semillas 2FA, QR de pago o credenciales de Wi-Fi. La propuesta es usar APIs web estándar (Clipboard API, FileReader y Canvas) para procesar la imagen localmente en el sandbox del navegador.
 
@@ -82,7 +82,7 @@ La comparativa es orientativa: la model card no proporciona datos de rendimiento
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/craftrex/client-side-qr-scanner-tools
+- Repositorio en Hugging Face: https://huggingface.co/craftrex/client-side-qr-scanner-tools
 - Aplicación web oficial: https://qr-code-scanner.cc/
 - Escaneo de QR desde captura de pantalla: https://qr-code-scanner.cc/scan-qr-code-from-screenshot
 - Escaneo de QR desde imagen: https://qr-code-scanner.cc/scan-qr-code-from-image

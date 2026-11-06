@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KenT_200M_Base es un modelo de lenguaje publicado por Vi-LAB en HuggingFace bajo licencia Apache 2.0. Por su denominacion y tamano (200M), se trata de un modelo base de aproximadamente 200 millones de parametros, orientado a servir como punto de partida para tareas de generacion de texto y posteriores procesos de ajuste fino. La model card publicada no incluye informacion sobre la arquitectura interna, los datos de entrenamiento ni las capacidades del modelo.
+KenT_200M_Base es un modelo de lenguaje publicado por Vi-LAB en Hugging Face bajo licencia Apache 2.0. Por su denominacion y tamano (200M), se trata de un modelo base de aproximadamente 200 millones de parametros, orientado a servir como punto de partida para tareas de generacion de texto y posteriores procesos de ajuste fino. La model card publicada no incluye informacion sobre la arquitectura interna, los datos de entrenamiento ni las capacidades del modelo.
 
 La relevancia de este tipo de modelos radica en su bajo coste computacional: un modelo de 200M de parametros puede ejecutarse en hardware de consumo y desplegarse en entornos con recursos limitados, lo que lo hace util para prototipado rapido, experimentacion academica y aplicaciones de baja latencia. Sin embargo, la ausencia de documentacion tecnica en la model card limita seriamente la evaluacion rigurosa de sus capacidades y su idoneidad para produccion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| KenT_200M_Base | 200M (segun denominacion) | no disponible | Apache 2.0 | HuggingFace |
+| KenT_200M_Base | 200M (segun denominacion) | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas de ~200M | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos de la misma categoria, ya que no se conocen los benchmarks ni las especificaciones tecnicas de KenT_200M_Base.
@@ -81,7 +81,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Vi-LAB/KenT_200M_Base
+- Hugging Face: https://huggingface.co/Vi-LAB/KenT_200M_Base
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de codigo: no disponible

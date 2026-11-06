@@ -31,7 +31,7 @@ Respecto al entrenamiento, no hay datos publicados en la información disponible
 
 - Generación de texto conversacional en inglés y chino.
 - Procesamiento de imágenes mediante el proyector de visión incluido (no probado en esta release).
-- Conversación multi-turno (etiqueta `conversational` en HuggingFace).
+- Conversación multi-turno (etiqueta `conversational` en Hugging Face).
 - Compatibilidad con endpoints (etiqueta `endpoints_compatible`).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la información proporcionada.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sakura-tencent-WeVisCut-GGUF (esta ficha) | ~8,95B | no disponible | Sí (proyector incluido, no probado) | Apache 2.0 | GGUF en HuggingFace |
-| tencent/WeVisCut (original) | ~8,95B | no disponible | Sí | Apache 2.0 | Pesos originales en HuggingFace |
-| prithivMLmods/tencent-WeVisCut-GGUF (fuente BF16) | ~8,95B | no disponible | Sí | Apache 2.0 | GGUF BF16 en HuggingFace |
+| Sakura-tencent-WeVisCut-GGUF (esta ficha) | ~8,95B | no disponible | Sí (proyector incluido, no probado) | Apache 2.0 | GGUF en Hugging Face |
+| tencent/WeVisCut (original) | ~8,95B | no disponible | Sí | Apache 2.0 | Pesos originales en Hugging Face |
+| prithivMLmods/tencent-WeVisCut-GGUF (fuente BF16) | ~8,95B | no disponible | Sí | Apache 2.0 | GGUF BF16 en Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas de la misma categoría.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-tencent-WeVisCut-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-tencent-WeVisCut-GGUF
 - Modelo base original: https://huggingface.co/tencent/WeVisCut
 - Repositorio GGUF de origen (prithivMLmods): https://huggingface.co/prithivMLmods/tencent-WeVisCut-GGUF
 - Model card del commit de origen: https://huggingface.co/prithivMLmods/tencent-WeVisCut-GGUF/blob/cbfba25be41607a6e7e52bbd2069aee2b7d788b6/README.md

@@ -110,7 +110,7 @@ No se dispone de comparativas con otros modelos "uncensored" (como Dolphin o Wiz
 
 ## Enlaces
 
-- [Modelo en HuggingFace: Ishowbackup/Mistral-Small-4-119B-JANG_2L-CRACK](https://huggingface.co/Ishowbackup/Mistral-Small-4-119B-JANG_2L-CRACK)
+- [Modelo en Hugging Face: Ishowbackup/Mistral-Small-4-119B-JANG_2L-CRACK](https://huggingface.co/Ishowbackup/Mistral-Small-4-119B-JANG_2L-CRACK)
 - [Modelo base: mistralai/Mistral-Small-4-119B-2603](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603)
 - [Repositorio JANG (jangq)](https://github.com/jjang-ai/jangq)
 - [Documentación de Mistral Small 4](https://docs.mistral.ai/models/mistral-small-4-0-26-03)

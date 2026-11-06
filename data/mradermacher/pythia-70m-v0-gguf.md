@@ -83,7 +83,7 @@ La comparación directa con modelos de 0,5B o superiores no es favorable en cali
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mradermacher/pythia-70m-v0-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mradermacher/pythia-70m-v0-GGUF
 - Modelo base: https://huggingface.co/EleutherAI/pythia-70m-v0
 - Versión con cuantización imatrix: https://huggingface.co/mradermacher/pythia-70m-v0-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#pythia-70m-v0-GGUF

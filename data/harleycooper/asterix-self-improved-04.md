@@ -67,8 +67,8 @@ Intervalo bootstrap del 95% para la ganancia media pareada en held-out: [-0,8282
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Asterix self-improved 04 (este) | 20.486 | no aplica | Ganancia held-out +0,014 (no significativa) | CC-BY-4.0 | HuggingFace |
-| Run03 original (RikiyaT/lm_understand-logs) | no disponible | no aplica | Punto de partida de este checkpoint | no disponible | HuggingFace |
+| Asterix self-improved 04 (este) | 20.486 | no aplica | Ganancia held-out +0,014 (no significativa) | CC-BY-4.0 | Hugging Face |
+| Run03 original (RikiyaT/lm_understand-logs) | no disponible | no aplica | Punto de partida de este checkpoint | no disponible | Hugging Face |
 | Otros agentes MinAtar publicos | no disponible | no aplica | no disponible | variable | variable |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoria.
@@ -87,7 +87,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarleyCooper/asterix-self-improved-04
+- Modelo en Hugging Face: https://huggingface.co/HarleyCooper/asterix-self-improved-04
 - Dataset de trayectorias: https://huggingface.co/datasets/HarleyCooper/asterix-recursive-trajectories-04
 - Simulador (Space): https://huggingface.co/spaces/HarleyCooper/asterix-recursive-learning-04
 - Repositorio de origen (run03): https://huggingface.co/RikiyaT/lm_understand-logs

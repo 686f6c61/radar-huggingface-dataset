@@ -92,7 +92,7 @@ Deltas medidos en la comparativa AMF-Agent contra el mejor padre: coste un 73.55
 
 ## Limitaciones y advertencias
 
-- No es un modelo preentrenado ni un checkpoint: el repositorio en HuggingFace tiene un tamano de 0.0 GB y no contiene pesos; no se puede cargar con una biblioteca estandar como transformers o llama.cpp.
+- No es un modelo preentrenado ni un checkpoint: el repositorio en Hugging Face tiene un tamano de 0.0 GB y no contiene pesos; no se puede cargar con una biblioteca estandar como transformers o llama.cpp.
 - Las metricas de rendimiento son especificas del harness de mision Fresh Final V8 y del hardware A100-SXM4-80GB; no constituyen una garantia de rendimiento universal.
 - El sistema depende del substrato Qwen3-4B-Instruct-2507 para las dos capacidades cualificadas. Si se sustituye el modelo base, se debe recalificar el sistema completo.
 - La licencia figura como "no disponible", por lo que el uso comercial queda sin aclarar.
@@ -101,5 +101,5 @@ Deltas medidos en la comparativa AMF-Agent contra el mejor padre: coste un 73.55
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/faysalbenahmed/AMF-Agent
+- Hugging Face: https://huggingface.co/faysalbenahmed/AMF-Agent
 - Web de contacto: https://stack-moderne.fr/

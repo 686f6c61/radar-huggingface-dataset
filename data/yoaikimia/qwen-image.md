@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio YoAiKimia/Qwen-Image es una publicacion alojada en HuggingFace por el usuario YoAiKimia, no por el equipo oficial de Qwen (Alibaba). Se trata de un repositorio de acceso restringido (gated) que exige aceptar condiciones en la plataforma antes de poder descargar su contenido, y que ocupa 110,8 GB, un volumen compatible con pesos completos en precision alta o con varias copias del mismo modelo en distintos formatos, aunque la informacion disponible no lo confirma.
+El repositorio YoAiKimia/Qwen-Image es una publicacion alojada en Hugging Face por el usuario YoAiKimia, no por el equipo oficial de Qwen (Alibaba). Se trata de un repositorio de acceso restringido (gated) que exige aceptar condiciones en la plataforma antes de poder descargar su contenido, y que ocupa 110,8 GB, un volumen compatible con pesos completos en precision alta o con varias copias del mismo modelo en distintos formatos, aunque la informacion disponible no lo confirma.
 
 Los metadatos publicos son minimos: no se declara pipeline, licencia, idiomas soportados ni arquitectura, y el repositorio acumula 0 descargas y 1 like desde su creacion el 2 de mayo de 2026, con ultima actualizacion el 26 de septiembre de 2026. El identificador incluye el nombre "Qwen-Image", lo que sugiere una relacion con la familia de modelos de generacion de imagenes de Qwen, pero esta vinculacion no esta verificada por ningun campo del repositorio y no debe darse por hecha.
 
@@ -21,7 +21,7 @@ En consecuencia, esta ficha recoge los unicos datos verificables (identificador,
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 110,8 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Autor en el Hub | YoAiKimia |
 | Descargas | 0 |
 | Likes | 1 |
@@ -78,13 +78,13 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables, y l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YoAiKimia/Qwen-Image | no disponible | no disponible | no disponible | gated en HuggingFace |
+| YoAiKimia/Qwen-Image | no disponible | no disponible | no disponible | gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Licencia ausente: el repositorio no declara licencia, por lo que no existe autorizacion explicita de uso, modificacion ni redistribucion. El uso comercial es juridicamente arriesgado sin aclaracion previa del autor.
-- Acceso restringido: la descarga exige aceptar condiciones en HuggingFace, lo que anade una capa de trazabilidad y puede limitar la automatizacion de despliegues.
+- Acceso restringido: la descarga exige aceptar condiciones en Hugging Face, lo que anade una capa de trazabilidad y puede limitar la automatizacion de despliegues.
 - Procedencia no oficial: el publicador es un usuario individual (YoAiKimia), no el equipo responsable del modelo Qwen. No hay garantia de que los pesos correspondan a la version oficial ni de que no hayan sido modificados.
 - Metadatos incompletos: sin pipeline, idiomas, arquitectura ni model card, no es posible auditar el modelo ni evaluar sesgos, alineacion o calidad.
 - Riesgo de alucinacion y sesgos: no evaluable por falta de informacion; debe asumirse un riesgo no cuantificado.
@@ -94,6 +94,6 @@ No disponible. No se ha proporcionado informacion sobre modelos comparables, y l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YoAiKimia/Qwen-Image
+- Repositorio en Hugging Face: https://huggingface.co/YoAiKimia/Qwen-Image
 
 No se han proporcionado en la busqueda web otros enlaces (papers, blogs, repositorios de codigo o demos) asociados a este repositorio.

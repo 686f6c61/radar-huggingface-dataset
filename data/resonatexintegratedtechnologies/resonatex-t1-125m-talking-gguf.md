@@ -97,12 +97,12 @@ Nota: los datos de contexto, idiomas y licencia de los modelos comparados corres
 - Formato propietario de prompt: requiere configurar manualmente los tokens especiales en runtimes que no los reconozcan de forma nativa; un uso incorrecto del formato degrada la calidad de las respuestas.
 - Estado de evaluacion: el autor declara explicitamente que la evaluacion formal de benchmarks esta pendiente y que es un modelo de investigacion experimental.
 - Entrenamiento desde cero con presupuesto reducido: la ausencia de un preentrenamiento a gran escala previo limita su conocimiento del mundo y su coherencia en tareas complejas.
-- Fecha de publicacion en HuggingFace: los metadatos indican creacion el 2 de octubre de 2026, dato que conviene verificar por su caracter futuro respecto a la fecha habitual de consulta.
+- Fecha de publicacion en Hugging Face: los metadatos indican creacion el 2 de octubre de 2026, dato que conviene verificar por su caracter futuro respecto a la fecha habitual de consulta.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, lo que implica falta de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/ResonatexIntegratedTechnologies/ResonateX-T1-125M-Talking-GGUF
+- Hugging Face (GGUF): https://huggingface.co/ResonatexIntegratedTechnologies/ResonateX-T1-125M-Talking-GGUF
 - Modelo base (Transformers/Safetensors): https://huggingface.co/ResonatexIntegratedTechnologies/ResonateX-T1-125M-Talking
 - Dataset smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus
 - Dataset ultrachat_200k: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k

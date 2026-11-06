@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ranjitraut/dacpt-v1-qwen2.5` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `ranjitraut`, diseñado para fine-tuning del modelo base `Qwen/Qwen2.5-3B` mediante supervisión directa (SFT). El repositorio tiene un peso de 0,1 GB y está construido con la librería PEFT, lo que indica que se trata de un adaptador ligero que debe combinarse con el modelo base para funcionar. La model card del autor está prácticamente vacía: todos los campos relevantes (datos de entrenamiento, licencia, idiomas, procedimiento de entrenamiento) figuran como "[More Information Needed]", por lo que la información disponible es mínima.
+`ranjitraut/dacpt-v1-qwen2.5` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `ranjitraut`, diseñado para fine-tuning del modelo base `Qwen/Qwen2.5-3B` mediante supervisión directa (SFT). El repositorio tiene un peso de 0,1 GB y está construido con la librería PEFT, lo que indica que se trata de un adaptador ligero que debe combinarse con el modelo base para funcionar. La model card del autor está prácticamente vacía: todos los campos relevantes (datos de entrenamiento, licencia, idiomas, procedimiento de entrenamiento) figuran como "[More Information Needed]", por lo que la información disponible es mínima.
 
 La relevancia de este modelo es limitada en términos de novedad técnica: se apoya en la arquitectura Qwen2.5-3B, un transformer decoder-only de 3 mil millones de parámetros con contexto nativo de 32 768 tokens, según el informe técnico de Qwen2.5. Al tratarse de un adaptador LoRA, el coste de inferencia y de almacenamiento es reducido (0,1 GB), lo que lo hace atractivo para experimentación en hardware limitado. Sin embargo, la ausencia de documentación sobre el conjunto de datos, los hiperparámetros de entrenamiento y la licencia limita seriamente su uso en producción.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en términos de novedad técnica: se ap
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA sobre el modelo base Qwen2.5-3B. La técnica LoRA (Hu et al., 2021) modifica las matrices de pesos de las capas densas mediante factores de bajo rango, reduciendo drásticamente el número de parámetros entrenables y el coste de entrenamiento. En este caso, el entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, como se indica en las etiquetas del modelo. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni los hiperparámetros utilizados (tasa de aprendizaje, rango del LoRA, número de épocas, etc.). Tampoco se indica si se aplicó RLHF o DPO posteriormente, aunque el tag `sft` sugiere que solo se realizó fine-tuning supervisado. El modelo base, Qwen2.5-3B, es un transformer de decoder con atención causal, publicado por Alibaba Cloud en septiembre de 2024, que destaca por su soporte de contexto largo y su rendimiento en tareas de razonamiento y generación de código.
+El modelo es un adaptador LoRA sobre el modelo base Qwen2.5-3B. La técnica LoRA (Hu et al., 2021) modifica las matrices de pesos de las capas densas mediante factores de bajo rango, reduciendo drásticamente el número de parámetros entrenables y el coste de entrenamiento. En este caso, el entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, como se indica en las etiquetas del modelo. No se especifican el número de tokens de entrenamiento, la composición del dataset, ni los hiperparámetros utilizados (tasa de aprendizaje, rango del LoRA, número de épocas, etc.). Tampoco se indica si se aplicó RLHF o DPO posteriormente, aunque el tag `sft` sugiere que solo se realizó fine-tuning supervisado. El modelo base, Qwen2.5-3B, es un transformer de decoder con atención causal, publicado por Alibaba Cloud en septiembre de 2024, que destaca por su soporte de contexto largo y su rendimiento en tareas de razonamiento y generación de código.
 
 ## 4. Capacidades
 
@@ -42,7 +42,7 @@ Debido a la falta de información sobre el adaptador, los casos de uso se basan 
 - Experimentos académicos de fine-tuning: al ser un adaptador LoRA, es útil para estudiar técnicas de adaptación eficiente (PEFT) y comparar resultados con otros adaptadores.
 - Despliegue en edge devices: con cuantización del modelo base, el conjunto (adaptador + base) puede ejecutarse en GPUs de consumo o incluso en CPU con optimización, permitiendo inferencia local sin conexión a la nube.
 - Evaluación de modelos de 3B en tareas específicas: si el adaptador fue entrenado para un dominio concreto (aunque no se especifica), podría utilizarse para medir el rendimiento en ese dominio.
-- Integración en pipelines de generación de texto: el adaptador se puede combinar con el modelo base en pipelines de HuggingFace para tareas de generación de texto, aunque no se conocen mejoras específicas.
+- Integración en pipelines de generación de texto: el adaptador se puede combinar con el modelo base en pipelines de Hugging Face para tareas de generación de texto, aunque no se conocen mejoras específicas.
 - Aprendizaje de técnicas de SFT con TRL: sirve como ejemplo de cómo aplicar SFT con la librería TRL, útil para desarrolladores que quieran replicar el proceso.
 
 ## 6. Benchmarks y rendimiento
@@ -79,13 +79,13 @@ La comparativa se basa en los modelos base, ya que no hay datos del adaptador. E
 
 ## 10. Enlaces
 
-- [HuggingFace: ranjitraut/dacpt-v1-qwen2.5](https://huggingface.co/ranjitraut/dacpt-v1-qwen2.5)
-- [Modelo base Qwen/Qwen2.5-3B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-3B)
+- [Hugging Face: ranjitraut/dacpt-v1-qwen2.5](https://huggingface.co/ranjitraut/dacpt-v1-qwen2.5)
+- [Modelo base Qwen/Qwen2.5-3B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-3B)
 - [Informe técnico Qwen2.5 (arXiv:2412.15115)](https://arxiv.org/pdf/2412.15115v2)
 - [Blog oficial de Qwen2.5](https://qwen.ai/blog?id=qwen2.5)
 - [Página de Qwen](https://qwen.ai/home)</think>## Resumen
 
-`ranjitraut/dacpt-v1-qwen2.5` es un adaptador LoRA publicado en HuggingFace que se entrena sobre el modelo base Qwen/Qwen2.5-3B, desarrollado por Alibaba. El adaptador ocupa tan solo 0,1 GB y está construido con la librería PEFT, lo que indica que se trata de un ajuste fino de bajo rango pensado para modificar el comportamiento del modelo base sin necesidad de reentrenar todos los parámetros. Según las etiquetas del repositorio, el entrenamiento se realizó mediante SFT (supervised fine-tuning) usando TRL, pero la model card está prácticamente vacía: no se documentan datos de entrenamiento, licencia, idiomas ni resultados de evaluación.
+`ranjitraut/dacpt-v1-qwen2.5` es un adaptador LoRA publicado en Hugging Face que se entrena sobre el modelo base Qwen/Qwen2.5-3B, desarrollado por Alibaba. El adaptador ocupa tan solo 0,1 GB y está construido con la librería PEFT, lo que indica que se trata de un ajuste fino de bajo rango pensado para modificar el comportamiento del modelo base sin necesidad de reentrenar todos los parámetros. Según las etiquetas del repositorio, el entrenamiento se realizó mediante SFT (supervised fine-tuning) usando TRL, pero la model card está prácticamente vacía: no se documentan datos de entrenamiento, licencia, idiomas ni resultados de evaluación.
 
 La relevancia de este modelo es limitada desde el punto de vista técnico, ya que no aporta innovación arquitectónica: se apoya en la arquitectura Qwen2.5-3B, un transformer decoder-only con 3 mil millones de parámetros y una longitud de contexto de 32 768 tokens según el informe técnico de Qwen2.5. Su interés puede residir en ser un ejemplo de adaptador LoRA ligero (0,1 GB) que permite experimentar con fine-tuning eficiente sobre un modelo de tamaño medio. No obstante, la ausencia total de documentación sobre el proceso de entrenamiento y la licencia limita considerablemente su utilidad en entornos de producción.
 
@@ -104,7 +104,7 @@ La relevancia de este modelo es limitada desde el punto de vista técnico, ya qu
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado al modelo base Qwen2.5-3B. La técnica LoRA, introducida por Hu et al. (2021), modifica las matrices de pesos de las capas densas mediante factores de baja rango, reduciendo drásticamente el número de parámetros entrenables y el coste de entrenamiento. En este caso, el entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de HuggingFace, como indican las etiquetas del repositorio. No se especifican el número de tokens de entrenamiento, la composición del dataset, el rango del LoRA, la tasa de aprendizaje ni otros hiperparámetros relevantes. Tampoco se menciona si se aplicaron técnicas de alineación como RLHF o DPO. El modelo base, Qwen2.5-3B, es un transformer de decoder con atención causal, publicado en septiembre de 2024, que destaca por su soporte de contexto largo (32K) y su rendimiento competitivo en razonamiento y generación de código para su tamaño.
+El modelo es un adaptador LoRA (Low-Rank Adaptation) aplicado al modelo base Qwen2.5-3B. La técnica LoRA, introducida por Hu et al. (2021), modifica las matrices de pesos de las capas densas mediante factores de baja rango, reduciendo drásticamente el número de parámetros entrenables y el coste de entrenamiento. En este caso, el entrenamiento se realizó mediante SFT (supervised fine-tuning) utilizando la librería TRL de Hugging Face, como indican las etiquetas del repositorio. No se especifican el número de tokens de entrenamiento, la composición del dataset, el rango del LoRA, la tasa de aprendizaje ni otros hiperparámetros relevantes. Tampoco se menciona si se aplicaron técnicas de alineación como RLHF o DPO. El modelo base, Qwen2.5-3B, es un transformer de decoder con atención causal, publicado en septiembre de 2024, que destaca por su soporte de contexto largo (32K) y su rendimiento competitivo en razonamiento y generación de código para su tamaño.
 
 ## Capacidades
 
@@ -162,8 +162,8 @@ La comparativa se basa en los modelos base, ya que no hay datos del adaptador. N
 
 ## Enlaces
 
-- [HuggingFace: ranjitraut/dacpt-v1-qwen2.5](https://huggingface.co/ranjitraut/dacpt-v1-qwen2.5)
-- [Modelo base Qwen/Qwen2.5-3B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-3B)
+- [Hugging Face: ranjitraut/dacpt-v1-qwen2.5](https://huggingface.co/ranjitraut/dacpt-v1-qwen2.5)
+- [Modelo base Qwen/Qwen2.5-3B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-3B)
 - [Informe tecnico Qwen2.5 (arXiv)](https://arxiv.org/pdf/2412.15115v2)
 - [Blog oficial de Qwen2.5](https://qwen.ai/blog?id=qwen2.5)
 - [Pagina de Qwen](https://qwen.ai/home)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Towa_D4DJ es un LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Praelatus en HuggingFace. Se trata de un adaptador de bajo rango entrenado sobre el modelo base circlestone-labs/Anima, un modelo de difusion del que la informacion disponible no detalla arquitectura ni tamano. El LoRA esta disenado para generar ilustraciones del personaje Hanamaki Towa, un personaje de anime con pelo corto de color turquesa, mediante el token de activacion `@hanamakitowa` y la etiqueta `<lora:Towa_AnimaV1:1>`.
+Towa_D4DJ es un LoRA (Low-Rank Adaptation) de texto a imagen publicado por el usuario Praelatus en Hugging Face. Se trata de un adaptador de bajo rango entrenado sobre el modelo base circlestone-labs/Anima, un modelo de difusion del que la informacion disponible no detalla arquitectura ni tamano. El LoRA esta disenado para generar ilustraciones del personaje Hanamaki Towa, un personaje de anime con pelo corto de color turquesa, mediante el token de activacion `@hanamakitowa` y la etiqueta `<lora:Towa_AnimaV1:1>`.
 
 El repositorio tiene un tamano de 0,2 GB, lo que es coherente con un adaptador LoRA y no con un modelo completo. La model card incluye ejemplos de prompts con descripciones detalladas de escenas, vestuario y composicion, asi como un negative prompt estandar orientado a calidad (`worst quality, low quality, score_1, score_2, score_3, artist name, blurry, jpeg artifacts, lowres, censor`). No se proporcionan datos sobre el dataset de entrenamiento, el numero de pasos, el learning rate ni la licencia.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye otros LoRAs comparables n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Praelatus/Towa_D4DJ
+- Repositorio Hugging Face: https://huggingface.co/Praelatus/Towa_D4DJ
 - Modelo base: https://huggingface.co/circlestone-labs/Anima

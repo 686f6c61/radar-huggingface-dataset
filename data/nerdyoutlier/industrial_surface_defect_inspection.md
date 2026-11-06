@@ -21,7 +21,7 @@ Es relevante ahora por dos motivos. Primero, la inspección visual automatizada 
 | Licencia | MIT |
 | Formato de pesos | no disponible (el repositorio de 0.2 GB incluye codigo, notebook y utilidades; no se declara publicacion de pesos entrenados) |
 
-Metadatos adicionales: ID `nerdyoutlier/Industrial_Surface_Defect_Inspection`, tamano del repositorio 0.2 GB, creado el 2026-10-26 y actualizado el 2026-10-26, 0 descargas y 0 likes, *pipeline* no declarado en HuggingFace. Etiquetas: `anomaly-detection`, `computer-vision`, `industrial-inspection`, `license:mit`, `region:us`.
+Metadatos adicionales: ID `nerdyoutlier/Industrial_Surface_Defect_Inspection`, tamano del repositorio 0.2 GB, creado el 2026-10-26 y actualizado el 2026-10-26, 0 descargas y 0 likes, *pipeline* no declarado en Hugging Face. Etiquetas: `anomaly-detection`, `computer-vision`, `industrial-inspection`, `license:mit`, `region:us`.
 
 ## Arquitectura y entrenamiento
 
@@ -91,5 +91,5 @@ No se dispone de datos para afirmar cual de estas alternativas ofrece mejor AURO
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nerdyoutlier/Industrial_Surface_Defect_Inspection
+- Modelo en Hugging Face: https://huggingface.co/nerdyoutlier/Industrial_Surface_Defect_Inspection
 - No se han encontrado en la informacion disponible otros enlaces a papers, blogs, repositorios auxiliares ni demos. La model card cita MVTec AD `metal_nut` como origen de datos, pero no incluye el enlace al conjunto de datos ni a la publicacion asociada.

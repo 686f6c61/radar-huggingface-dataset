@@ -53,7 +53,7 @@ El entrenamiento se realizo con los siguientes hiperparametros declarados: learn
 - Evaluacion de concordancia sujeto-verbo (SVA): si el sufijo sva del identificador corresponde a esa tarea, el checkpoint puede utilizarse como condicion base en un pipeline de evaluacion linguistica controlada, comparando su puntuacion frente a modelos entrenados durante mas pasos.
 - Baseline de escala reducida: con 110 millones de parametros, es util como referencia inferior en experimentos que midan la ganancia de rendimiento al aumentar el numero de parametros o de tokens de entrenamiento.
 - Pruebas de infraestructura de entrenamiento: su tamano permite ejecutar ciclos completos de fine-tuning con Trainer en una unica GPU de gama media, lo que resulta practico para validar scripts, configuraciones de AMP y registro de metricas antes de lanzar ejecuciones mayores.
-- Validacion de pipelines de publicacion en HuggingFace: el repositorio incluye safetensors y etiquetas de compatibilidad con endpoints, por lo que puede usarse para verificar flujos de carga, conversion y despliegue de checkpoints generados automaticamente.
+- Validacion de pipelines de publicacion en Hugging Face: el repositorio incluye safetensors y etiquetas de compatibilidad con endpoints, por lo que puede usarse para verificar flujos de carga, conversion y despliegue de checkpoints generados automaticamente.
 - Analisis de divergencia entre perdida de entrenamiento y de validacion: con solo dos puntos de medida (10,4575 y 10,1754 en entrenamiento frente a 10,4832 y 10,1675 en validacion) permite estudiar el comportamiento inicial de la curva de aprendizaje en un regimen de muy pocos pasos.
 
 ## Benchmarks y rendimiento
@@ -82,10 +82,10 @@ Los datos de las alternativas corresponden a los modelos originales de cada fami
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| qing-yao/babylm-opt-sva-trial-11450463 | 110,4 M | no disponible | no disponible | HuggingFace | Checkpoint de investigacion con 24 pasos de entrenamiento |
-| OPT-125M (facebook) | 125 M | 2048 tokens | licencia OPT (uso restringido) | HuggingFace | Modelo de referencia de la misma familia y escala |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | HuggingFace | Alternativa clasica de escala equivalente |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace | Suite disenada para investigacion de interpretabilidad |
+| qing-yao/babylm-opt-sva-trial-11450463 | 110,4 M | no disponible | no disponible | Hugging Face | Checkpoint de investigacion con 24 pasos de entrenamiento |
+| OPT-125M (facebook) | 125 M | 2048 tokens | licencia OPT (uso restringido) | Hugging Face | Modelo de referencia de la misma familia y escala |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT modificada | Hugging Face | Alternativa clasica de escala equivalente |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face | Suite disenada para investigacion de interpretabilidad |
 
 La comparacion de rendimiento con estas alternativas no es posible: no se han publicado resultados de benchmarks para este modelo y su perdida de validacion declarada no es comparable con las metricas habituales de las otras familias.
 
@@ -104,7 +104,7 @@ La comparacion de rendimiento con estas alternativas no es posible: no se han pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/babylm-opt-sva-trial-11450463
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/babylm-opt-sva-trial-11450463
 - Modelo base: https://huggingface.co/models/babylm-default_seed-42_1e-3
 - Dataset de ajuste: https://huggingface.co/datasets/qing-yao/slightly-cleaner-babylm
 - Perfil del autor: https://huggingface.co/qing-yao

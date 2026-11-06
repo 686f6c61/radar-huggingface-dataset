@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`saanvidevi06/classification` es un prototipo de investigación publicado en HuggingFace por el usuario saanvidevi06. Se presenta explícitamente en su model card como un esqueleto reproducible orientado a tareas de clasificación, construido sobre una arquitectura denominada "Mae" en escala "nano". No es un modelo entrenado ni evaluado: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con rendimiento verificado.
+`saanvidevi06/classification` es un prototipo de investigación publicado en Hugging Face por el usuario saanvidevi06. Se presenta explícitamente en su model card como un esqueleto reproducible orientado a tareas de clasificación, construido sobre una arquitectura denominada "Mae" en escala "nano". No es un modelo entrenado ni evaluado: el propio autor indica que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un checkpoint con rendimiento verificado.
 
 El modelo cuenta con 49.600 parámetros totales, según los metadatos de safetensors, lo que lo sitúa en el rango de unos 0,05 millones de parámetros. El repositorio incluye además `predict.py` con un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura y `training_args.json` con la receta de experimento por defecto (optimizador Adam y scheduler coseno). La licencia es Apache 2.0.
 
@@ -81,9 +81,9 @@ No disponible. El repositorio no identifica modelos comparables y no se dispone 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saanvidevi06/classification
+- Modelo en Hugging Face: https://huggingface.co/saanvidevi06/classification
 - Paper: no disponible.
 - Blog o anuncio del autor: no disponible.
-- Repositorio de código: no disponible (el propio repositorio de HuggingFace incluye `predict.py`).
+- Repositorio de código: no disponible (el propio repositorio de Hugging Face incluye `predict.py`).
 - Demo: no disponible.
 - Búsqueda web: los resultados obtenidos no guardan relación con el modelo y no aportan enlaces relevantes, por lo que se descartan.

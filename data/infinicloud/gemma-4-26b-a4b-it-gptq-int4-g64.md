@@ -17,7 +17,7 @@ La relevancia de la ficha esta en que no es solo un checkpoint cuantizado: el au
 | Parametros activos | Aproximadamente 4 mil millones por token (designacion A4B) |
 | Longitud de contexto | No disponible para el modelo base en la informacion proporcionada. Punto de operacion objetivo declarado: 8192 tokens de contexto total por peticion (entrada + tokens generados + tokens de imagen). Atencion con ventana deslizante de 1024 tokens |
 | Tipos de cuantizacion | GPTQ INT4 con tamano de grupo 64 (G64) sobre pesos, formato compressed-tensors. Componentes de procesamiento de imagen y otros parametros excluidos permanecen en BF16. KV cache en BF16 |
-| Idiomas soportados | No listados en los metadatos de HuggingFace. La model card documenta explicitamente evaluaciones en japones (MGSM japones) y contenido en ingles y japones (README bilingue) |
+| Idiomas soportados | No listados en los metadatos de Hugging Face. La model card documenta explicitamente evaluaciones en japones (MGSM japones) y contenido en ingles y japones (README bilingue) |
 | Licencia | apache-2.0 (enlace de licencia: https://ai.google.dev/gemma/docs/gemma_4_license) |
 | Formato de pesos | safetensors con compressed-tensors (INT4 empaquetado + escalas de grupo BF16 + parametros BF16 retenidos) |
 
@@ -27,7 +27,7 @@ Datos adicionales de la distribucion:
 |---|---|
 | Payload serializado de parametros (estimacion analitica) | 15.652.016.944 bytes (14,577 GiB) |
 | Archivo de pesos generado (medicion independiente) | 15.656.878.852 bytes (14,582 GiB) |
-| Tamano del repositorio en HuggingFace | 15,7 GB |
+| Tamano del repositorio en Hugging Face | 15,7 GB |
 | Tamano del modelo BF16 original (referencia del autor) | Aproximadamente 51,6 GB |
 | Motor de inferencia probado | vLLM 0.29.0 |
 | Hardware de validacion de inferencia completada | 1x RTX PRO 6000 Blackwell Max-Q 96 GB |
@@ -45,7 +45,7 @@ Sobre el entrenamiento no hay informacion en los datos disponibles: no se especi
 - Entrada de imagen (pipeline image-text-to-text): procesamiento de imagenes por peticion, con limite declarado de una imagen y sin video ni audio por peticion en el punto de operacion objetivo.
 - Salida estructurada en JSON: el autor reporta pruebas de peticiones de JSON aritmetico y de JSON a partir de imagenes.
 - Razonamiento aritmetico y matematico basico: se evaluo con GSM8K y con MGSM en japones.
-- Capacidades multilingues: documentadas de forma explicita para japones e ingles en las pruebas del autor; los metadatos de HuggingFace no incluyen una lista de idiomas.
+- Capacidades multilingues: documentadas de forma explicita para japones e ingles en las pruebas del autor; los metadatos de Hugging Face no incluyen una lista de idiomas.
 - Razonamiento tipo MoE con 4 mil millones de parametros activos por token, lo que reduce el coste de computo por token frente a un modelo denso del mismo tamano total.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
@@ -99,8 +99,8 @@ Unico dato medido o estimado publicado, correspondiente a la cache KV BF16 en re
 
 | Modelo | Parametros | Contexto | Formato y tamano de pesos | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| InfiniCloud/gemma-4-26B-A4B-it-GPTQ-INT4-G64 | 25,8 mil millones totales, aprox. 4 mil millones activos | Punto de operacion objetivo 8192 tokens totales; maximo del base no disponible | safetensors compressed-tensors, GPTQ INT4 G64; 14,582 GiB | Sin cifras publicadas en la informacion disponible | apache-2.0 | HuggingFace, 0 descargas y 0 likes en la consulta; requiere vLLM 0.29.0 |
-| google/gemma-4-26B-A4B-it (BF16) | 25,8 mil millones totales, aprox. 4 mil millones activos | No disponible | BF16; aproximadamente 51,6 GB | Referencia de comparacion del autor en GSM8K y MGSM japones, sin cifras disponibles | apache-2.0 (segun el modelo base) | Modelo base en HuggingFace |
+| InfiniCloud/gemma-4-26B-A4B-it-GPTQ-INT4-G64 | 25,8 mil millones totales, aprox. 4 mil millones activos | Punto de operacion objetivo 8192 tokens totales; maximo del base no disponible | safetensors compressed-tensors, GPTQ INT4 G64; 14,582 GiB | Sin cifras publicadas en la informacion disponible | apache-2.0 | Hugging Face, 0 descargas y 0 likes en la consulta; requiere vLLM 0.29.0 |
+| google/gemma-4-26B-A4B-it (BF16) | 25,8 mil millones totales, aprox. 4 mil millones activos | No disponible | BF16; aproximadamente 51,6 GB | Referencia de comparacion del autor en GSM8K y MGSM japones, sin cifras disponibles | apache-2.0 (segun el modelo base) | Modelo base en Hugging Face |
 | Cuantizacion a 4 bits en tiempo de carga (por ejemplo, inflight quantization de bitsandbytes) | Igual que el modelo base | Igual que el modelo base | Pesos en BF16 cargados y cuantizados al vuelo | Depende de la configuracion y calibracion elegidas | Segun el modelo base | Disponible como opcion del motor de inferencia |
 | Formato NVFP4 | Igual que el modelo base | Igual que el modelo base | 4 bits con aritmetica nativa NVFP4 | No disponible | Segun el modelo base | Requiere hardware con soporte NVFP4; no apto para L4 |
 
@@ -116,7 +116,7 @@ No se dispone de datos de otros checkpoints cuantizados de terceros para este mo
 - Los valores de la tabla de KV son ideales en regimen estable y excluyen tokens en prefilling, redondeo por bloques y pools reservadas. Las filas de 16384 tokens y de 8 peticiones concurrentes son ejemplos de dimensionamiento, no puntos de operacion validados en L4. No debe deducirse un contexto soportado restando el payload de los 24 GB nominales.
 - Este despliegue mantiene los 128 expertos residentes, por lo que el ahorro de VRAM respecto al BF16 proviene de la precision de los pesos y no de reducir el numero de expertos activos.
 - La carga con Transformers estandar presenta limitaciones con el formato compressed-tensors; el motor probado es vLLM 0.29.0, y se requieren kernels compatibles con la GPU y el motor elegidos.
-- Los metadatos de HuggingFace no listan idiomas soportados. Las evaluaciones documentadas se limitan a japones e ingles, por lo que el comportamiento en otros idiomas no esta respaldado por pruebas publicadas en esta distribucion.
+- Los metadatos de Hugging Face no listan idiomas soportados. Las evaluaciones documentadas se limitan a japones e ingles, por lo que el comportamiento en otros idiomas no esta respaldado por pruebas publicadas en esta distribucion.
 - No hay informacion sobre sesgos, datos de entrenamiento, composicion del dataset ni procesos de alineamiento del modelo base en la informacion proporcionada.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje generativos; no se han publicado tasas de alucinacion especificas para este checkpoint.
 - La licencia declarada es apache-2.0, con enlace adicional a la licencia de Gemma 4. Conviene revisar los terminos de uso de Gemma antes de un despliegue comercial, ya que el repositorio referencia ambos documentos.
@@ -125,7 +125,7 @@ No se dispone de datos de otros checkpoints cuantizados de terceros para este mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/InfiniCloud/gemma-4-26B-A4B-it-GPTQ-INT4-G64
+- Hugging Face: https://huggingface.co/InfiniCloud/gemma-4-26B-A4B-it-GPTQ-INT4-G64
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Vision general de NVFP4 de NVIDIA: https://developer.nvidia.com/blog/introducing-nvfp4-for-efficient-and-accurate-low-precision-inference/

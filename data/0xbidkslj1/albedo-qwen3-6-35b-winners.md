@@ -83,7 +83,7 @@ No se dispone de más modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-winners
+- Hugging Face: https://huggingface.co/0xbidkslj1/albedo-qwen3.6-35b-winners
 - Modelo base: https://huggingface.co/dendriteholdings/albedo-qwen3.6-35b-king-genesis
 - Guía Qwen 3.6: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Blog Qwen 3.6-35B-A3B: https://www.aimadetools.com/blog/qwen-3-6-35b-a3b-complete-guide/

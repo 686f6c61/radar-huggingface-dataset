@@ -85,7 +85,7 @@ La comparativa muestra que la cuantización EXL3 4.0 BPW reduce la memoria a men
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/russki/Qwen2.5-1.5B-Instruct-EXL3-4.0bpw
+- Repositorio Hugging Face: https://huggingface.co/russki/Qwen2.5-1.5B-Instruct-EXL3-4.0bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - ExLlamaV3: https://github.com/turboderp-org/exllamav3
 - Blog de Qwen2.5: https://qwen.ai/blog?id=qwen2.5

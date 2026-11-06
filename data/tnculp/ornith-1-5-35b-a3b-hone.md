@@ -93,7 +93,7 @@ No se dispone de datos de modelos terceros comparables en la informacion proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tnculp/Ornith-1.5-35B-A3B-hone
+- Repositorio Hugging Face: https://huggingface.co/tnculp/Ornith-1.5-35B-A3B-hone
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Variante MLX 6 bits del base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-6bit
 - Repositorio del runtime hone: https://github.com/tnculp/hone

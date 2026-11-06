@@ -80,7 +80,7 @@ TurnWave supera al baseline de VAD en todas las métricas, pero queda por detrá
 
 | Modelo | Parametros | Contexto | False cutoffs @300 ms | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurnWave (`audio_eot_v2`) | 3.49M | 2 s de audio | 42.1% | Apache 2.0 | ONNX en HuggingFace |
+| TurnWave (`audio_eot_v2`) | 3.49M | 2 s de audio | 42.1% | Apache 2.0 | ONNX en Hugging Face |
 | VAD baseline (típico) | no aplica | no aplica | 55.6% | variable | variable |
 | SmartTurn v3.2 | no publicado | no publicado | 35.2% | no publicado | comercial |
 | LiveKit Turn Detector v1 | 0.5B (LLM destilado) | no publicado | 9.9% | no publicado | comercial |
@@ -99,6 +99,6 @@ TurnWave es significativamente más pequeño y ligero que las alternativas de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhil-09/turnwave
+- Modelo en Hugging Face: https://huggingface.co/Nikhil-09/turnwave
 - Repositorio de código y documentación completa: https://github.com/Nikhils-G/turnwave
 - Harness de benchmark eot-bench: https://github.com/livekit/eot-bench

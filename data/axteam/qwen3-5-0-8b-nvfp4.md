@@ -84,12 +84,12 @@ Métricas de fidelidad frente al original en BF16 sobre un conjunto interno mixt
 
 | Modelo | Parámetros | Contexto | Media de benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B (BF16, original) | 853 M | No disponible | 41,44 | Apache-2.0 | HuggingFace (Qwen) |
+| Qwen3.5-0.8B (BF16, original) | 853 M | No disponible | 41,44 | Apache-2.0 | Hugging Face (Qwen) |
 | Qwen3.5-0.8B FP8-dynamic | 853 M | No disponible | 40,30 (97,3 %) | Apache-2.0 | Build de referencia en la model card |
 | Qwen3.5-0.8B AWQ-8bit | 853 M | No disponible | 41,21 (99,4 %) | Apache-2.0 | Build de referencia en la model card |
 | Qwen3.5-0.8B AWQ-4bit | 853 M | No disponible | 39,63 (95,6 %) | Apache-2.0 | Build de referencia en la model card |
 | Qwen3.5-0.8B NVFP4A16 | 853 M | No disponible | 39,65 (95,7 %) | Apache-2.0 | Build de referencia en la model card |
-| axteam/Qwen3.5-0.8B-NVFP4 (este) | 853 M | No disponible | 36,46 (88,0 %) | Apache-2.0 | HuggingFace (axteam) |
+| axteam/Qwen3.5-0.8B-NVFP4 (este) | 853 M | No disponible | 36,46 (88,0 %) | Apache-2.0 | Hugging Face (axteam) |
 
 No se dispone de datos de benchmarks de modelos de otros desarrolladores con los que comparar directamente en la información proporcionada.
 
@@ -108,7 +108,7 @@ No se dispone de datos de benchmarks de modelos de otros desarrolladores con los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/axteam/Qwen3.5-0.8B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

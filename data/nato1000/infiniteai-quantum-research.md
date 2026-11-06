@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InfiniteAI-Quantum Research Scaffold es un repositorio publicado por el usuario NaTo1000 en HuggingFace que se presenta como un paquete de documentación y planificación para un futuro proyecto de investigación en ciencia cuántica, razonamiento matemático y flujos de trabajo científicos. Es importante destacar que **no contiene pesos de modelo, tokenizador, datasets, resultados de evaluación ni endpoint de inferencia**. Se trata exclusivamente de un andamiaje de investigación (research scaffold) que define requisitos de reproducibilidad y una propuesta de configuración para un futuro modelo.
+InfiniteAI-Quantum Research Scaffold es un repositorio publicado por el usuario NaTo1000 en Hugging Face que se presenta como un paquete de documentación y planificación para un futuro proyecto de investigación en ciencia cuántica, razonamiento matemático y flujos de trabajo científicos. Es importante destacar que **no contiene pesos de modelo, tokenizador, datasets, resultados de evaluación ni endpoint de inferencia**. Se trata exclusivamente de un andamiaje de investigación (research scaffold) que define requisitos de reproducibilidad y una propuesta de configuración para un futuro modelo.
 
 El repositorio incluye tres artefactos: un archivo de configuración JSON que propone un esquema para un proyecto de transformer decoder-only, un documento de requisitos de entrenamiento y evaluación, y un informe de auditoría que explica por qué no se publica el repositorio previo como modelo entrenado. Fue creado en agosto de 2026 bajo licencia Apache-2.0 y no tiene descargas ni valoraciones en la plataforma.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. No existe un modelo comparable porque este repositorio no contiene un modelo entrenado. Los repositorios relacionados encontrados en la busqueda web (iNFINITEAi2025/NATO1000-QUANTUM en HuggingFace y NaTo1000/QuanV1 en GitHub) tampoco presentan pesos publicados ni documentacion tecnica verificable, por lo que no se puede establecer una comparativa significativa.
+No disponible. No existe un modelo comparable porque este repositorio no contiene un modelo entrenado. Los repositorios relacionados encontrados en la busqueda web (iNFINITEAi2025/NATO1000-QUANTUM en Hugging Face y NaTo1000/QuanV1 en GitHub) tampoco presentan pesos publicados ni documentacion tecnica verificable, por lo que no se puede establecer una comparativa significativa.
 
 ## Limitaciones y advertencias
 
@@ -78,10 +78,10 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NaTo1000/infiniteai-quantum-research
-- Repositorio relacionado en HuggingFace: https://huggingface.co/iNFINITEAi2025/NATO1000-QUANTUM
+- Repositorio en Hugging Face: https://huggingface.co/NaTo1000/infiniteai-quantum-research
+- Repositorio relacionado en Hugging Face: https://huggingface.co/iNFINITEAi2025/NATO1000-QUANTUM
 - Perfil de GitHub del autor: https://github.com/NaTo1000
 - Repositorio GitHub QuanV1: https://github.com/NaTo1000/QuanV1
-- Documentacion de model cards de HuggingFace: https://huggingface.co/docs/hub/en/model-cards
-- Guia de subida de archivos de HuggingFace: https://huggingface.co/docs/huggingface_hub/en/guides/upload
+- Documentacion de model cards de Hugging Face: https://huggingface.co/docs/hub/en/model-cards
+- Guia de subida de archivos de Hugging Face: https://huggingface.co/docs/huggingface_hub/en/guides/upload
 - Documentacion de PEFT: https://huggingface.co/docs/peft/en/index

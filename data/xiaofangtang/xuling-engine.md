@@ -67,7 +67,7 @@ No disponible. Este repositorio no es un modelo, por lo que no tiene comparativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xiaofangtang/xuling-engine
+- Repositorio Hugging Face: https://huggingface.co/xiaofangtang/xuling-engine
 - Modelo NLLB-200-1.3B en CTranslate2 int8: https://huggingface.co/JustFrederik/nllb-200-1.3B-ct2-int8
 - Modelo M2M100-418M en CTranslate2 int8: https://huggingface.co/jncraton/m2m100_418M-ct2-int8
 - Espejo para acceso desde China (sustituir `huggingface.co` por `hf-mirror.com`): https://hf-mirror.com

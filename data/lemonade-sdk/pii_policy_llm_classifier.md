@@ -87,7 +87,7 @@ No se dispone de comparaciones directas con otros modelos de la misma categoría
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/lemonade-sdk/pii_policy_llm_classifier
+- Repositorio de Hugging Face: https://huggingface.co/lemonade-sdk/pii_policy_llm_classifier
 - Lemonade SDK en GitHub: https://github.com/lemonade-sdk
 - Lemonade Server (repo principal): https://github.com/lemonade-sdk (flagship repo)
 - Documentación de Lemonade Server: https://lemonade-server.ai/docs/api/lemonade/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vuln-verdict-muse-glimmer-30b-lora es un adaptador PEFT de tipo LoRA (entrenado con QLoRA) sobre el modelo base `meta-models/Muse-Glimmer-30B`. Lo publica el usuario `amoghng7` en HuggingFace y su funcion es actuar como clasificador binario de alertas de Semgrep sobre codigo Java: dada una alerta de analisis estatico junto con el fragmento de codigo fuente relevante, el adaptador emite un veredicto `true_positive` (vulnerabilidad real) o `false_positive` (falsa alarma), junto con una probabilidad `p_true` calculada sobre los logits del primer token del veredicto.
+vuln-verdict-muse-glimmer-30b-lora es un adaptador PEFT de tipo LoRA (entrenado con QLoRA) sobre el modelo base `meta-models/Muse-Glimmer-30B`. Lo publica el usuario `amoghng7` en Hugging Face y su funcion es actuar como clasificador binario de alertas de Semgrep sobre codigo Java: dada una alerta de analisis estatico junto con el fragmento de codigo fuente relevante, el adaptador emite un veredicto `true_positive` (vulnerabilidad real) o `false_positive` (falsa alarma), junto con una probabilidad `p_true` calculada sobre los logits del primer token del veredicto.
 
 El modelo no es un LLM generalista, sino un adaptador de tarea muy acotada que se apoya en la arquitectura y el conocimiento del modelo base de 30B parametros. Su relevancia practica esta en el triaje de alertas SAST: en entornos reales, los equipos de seguridad reciben cientos o miles de hallazgos por repositorio y el cuello de botella esta en distinguir los que merecen revision humana de los que son ruido. El adaptador propone una banda de confianza (`p_true > 0.98` como TP confiado, `0.44-0.98` como revision requerida, `< 0.44` como probable FP) que se integra en un harness propio del autor.
 
@@ -68,7 +68,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vuln-verdict-muse-glimmer-30b-lora | LoRA sobre base 30B | no disponible | Triaje de alertas Semgrep Java | apache-2.0 | HuggingFace |
+| vuln-verdict-muse-glimmer-30b-lora | LoRA sobre base 30B | no disponible | Triaje de alertas Semgrep Java | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amoghng7/vuln-verdict-muse-glimmer-30b-lora
+- Modelo en Hugging Face: https://huggingface.co/amoghng7/vuln-verdict-muse-glimmer-30b-lora
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Harness del autor: https://github.com/amoghng7/vuln-verdict-harness

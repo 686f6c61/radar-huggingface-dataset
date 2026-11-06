@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muse-Spark-Open-816B-A42B-oQ4e es una cuantizacion mixta de precision del modelo meta-models/Muse-Spark-Open-816B-A42B, un Mixture-of-Experts (MoE) de Meta con 821.918.735.360 parametros totales (unos 821,92 B) y 42 B de parametros activos por token, disenado para tareas de programacion y flujos agénticos. La cuantizacion la publica el usuario dareallest207 en HuggingFace y se ha generado con la herramienta oQ de oMLX v0.7.1, empleando la variante oQe con matriz de importancia. El checkpoint conserva tanto el modelo de lenguaje como el codificador de vision; el codificador de audio no esta incluido.
+Muse-Spark-Open-816B-A42B-oQ4e es una cuantizacion mixta de precision del modelo meta-models/Muse-Spark-Open-816B-A42B, un Mixture-of-Experts (MoE) de Meta con 821.918.735.360 parametros totales (unos 821,92 B) y 42 B de parametros activos por token, disenado para tareas de programacion y flujos agénticos. La cuantizacion la publica el usuario dareallest207 en Hugging Face y se ha generado con la herramienta oQ de oMLX v0.7.1, empleando la variante oQe con matriz de importancia. El checkpoint conserva tanto el modelo de lenguaje como el codificador de vision; el codificador de audio no esta incluido.
 
 El problema que resuelve es de indole practica: el checkpoint original en BF16 es inasumible en hardware de consumo, y esta version reduce el peso a 475,886 GB (443,203 GiB) con una media efectiva de 4,632 bits por peso, manteniendo intactos los expertos enrutados de las capas 1 a 60 tal y como vienen de la publicacion oficial en NVFP4. Para una parte del publico objetivo (desarrolladores con Macs de memoria unificada grande), es una de las pocas vias de ejecutar un MoE de esta escala de forma local.
 
@@ -18,7 +18,7 @@ Su relevancia actual radica en la combinacion de tres factores: una ventana de c
 | Longitud de contexto | 1.000.000 de tokens |
 | Tipos de cuantizacion | Mixta: NVFP4 grupo 16, affine 4-bit grupo 64, affine 8-bit grupo 64, affine 5-bit grupo 64, BF16 y FP32; media efectiva de 4,632 bits por peso |
 | Idiomas soportados | no disponible |
-| Licencia | Muse Model License (licencia "other" en HuggingFace), con LICENSE.md y USE_POLICY.md |
+| Licencia | Muse Model License (licencia "other" en Hugging Face), con LICENSE.md y USE_POLICY.md |
 | Formato de pesos | safetensors (formato MLX) |
 | Tamano del repositorio | 475,9 GB (475,886 GB / 443,203 GiB) |
 | Parametros del componente de lenguaje | 819,991 B (472,029 GB / 439,612 GiB) |
@@ -26,7 +26,7 @@ Su relevancia actual radica en la combinacion de tres factores: una ventana de c
 | Libreria de inferencia | mlx |
 | Pipeline declarado | image-text-to-text |
 | Modelo base | meta-models/Muse-Spark-Open-816B-A42B (relacion: quantized) |
-| Fecha de publicacion en HuggingFace | 2026-10-16 (segun los metadatos de HuggingFace) |
+| Fecha de publicacion en Hugging Face | 2026-10-16 (segun los metadatos de Hugging Face) |
 
 ### Distribucion de bits del checkpoint
 
@@ -53,7 +53,7 @@ La innovacion tecnica destacable de este checkpoint no esta en el modelo base si
 - Comprension de imagenes: al incluir el codificador de vision, admite entradas image-text-to-text y se pueden adjuntar imagenes desde la interfaz de chat de oMLX.
 - Orientacion a programacion: el modelo base esta descrito por el autor como construido para coding y trabajo agéntico.
 - Capacidades agénticas y de multiples pasos: el enfoque declarado del modelo base es el trabajo agéntico, aunque la informacion disponible no detalla el soporte concreto de tool calling o function calling.
-- Capacidades multilingues: no disponible; la ficha de HuggingFace no declara idiomas.
+- Capacidades multilingues: no disponible; la ficha de Hugging Face no declara idiomas.
 - Capacidades de audio: no disponibles; el codificador de audio no esta incluido en este checkpoint.
 
 ## Casos de uso
@@ -99,23 +99,23 @@ No se han identificado en la informacion disponible modelos comparables de otros
 - Es una cuantizacion de comunidad (autor dareallest207) con 0 descargas y 0 me gusta en el momento de la consulta. No procede del equipo del modelo base, por lo que la degradacion de calidad respecto al modelo original no esta documentada con metricas.
 - No se han publicado resultados de benchmarks de esta cuantizacion, ni comparativas frente al modelo base en BF16 o NVFP4, por lo que el impacto de la cuantizacion mixta sobre la precision es desconocido.
 - El codificador de audio no esta incluido: cualquier caso de uso que requiera entrada de audio no es viable con este checkpoint.
-- Los idiomas soportados no estan declarados en la ficha de HuggingFace, por lo que no se puede garantizar un comportamiento correcto fuera del ingles o de los idiomas que el modelo base soporte.
+- Los idiomas soportados no estan declarados en la ficha de Hugging Face, por lo que no se puede garantizar un comportamiento correcto fuera del ingles o de los idiomas que el modelo base soporte.
 - El razonamiento no se puede desactivar y el nivel predeterminado es xhigh, lo que implica un coste de computo y una latencia mayores en todas las peticiones, incluso en tareas triviales.
 - Riesgo de alucinacion: no disponible de forma especifica para este modelo; se aplica el riesgo general de los modelos de lenguaje de gran escala, no cuantificado en la informacion proporcionada.
 - Sesgos conocidos: no disponible.
-- La licencia es la Muse Model License (declarada como "other" en HuggingFace), con documentos LICENSE.md y USE_POLICY.md. Al ser una licencia personalizada, es imprescindible revisar sus terminos antes de cualquier uso comercial; la informacion proporcionada no detalla las restricciones concretas.
+- La licencia es la Muse Model License (declarada como "other" en Hugging Face), con documentos LICENSE.md y USE_POLICY.md. Al ser una licencia personalizada, es imprescindible revisar sus terminos antes de cualquier uso comercial; la informacion proporcionada no detalla las restricciones concretas.
 - El formato MLX limita el despliegue a hardware de Apple con memoria unificada; no hay rutas oficiales documentadas para GPU NVIDIA o AMD en esta publicacion.
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/dareallest207/Muse-Spark-Open-816B-A42B-oQ4e
+- Ficha en Hugging Face: https://huggingface.co/dareallest207/Muse-Spark-Open-816B-A42B-oQ4e
 - Modelo base: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B
 - Publicacion oficial del modelo base en NVFP4: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B-NVFP4
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Cuantizacion oQ3e en mlx-community: https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-oQ3e
 - Cuantizacion de 3 bits estandar de mlx-lm: https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-3bit
 - Cuantizacion de 4 bits estandar de mlx-lm: https://huggingface.co/mlx-community/Muse-Spark-Open-816B-A42B-4bit
-- Licencia: LICENSE.md (enlazado desde el repositorio de HuggingFace)
-- Politica de uso: USE_POLICY.md (enlazado desde el repositorio de HuggingFace)
+- Licencia: LICENSE.md (enlazado desde el repositorio de Hugging Face)
+- Politica de uso: USE_POLICY.md (enlazado desde el repositorio de Hugging Face)
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los procedentes del repositorio de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los procedentes del repositorio de Hugging Face y de la model card.

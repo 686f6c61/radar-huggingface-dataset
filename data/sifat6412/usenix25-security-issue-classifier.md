@@ -2,7 +2,7 @@
 
 ## Resumen
 
-USENIX25-Security-Issue-Classifier es un modelo de clasificación de texto en inglés, obtenido por ajuste fino (fine-tuning) de RoBERTa-base, que predice si un issue de GitHub está relacionado con seguridad o no. Lo desarrollaron originalmente Rajdeep Ghosh, Shiladitya De y Mainack Mondal en el marco del artículo «"I wasn't sure if this is indeed a security risk": Data-driven Understanding of Security Issue Reporting in GitHub Repositories of Open Source npm Packages», presentado en el 34º USENIX Security Symposium (2025). El repositorio alojado en HuggingFace bajo el identificador `sifat6412/USENIX25-Security-Issue-Classifier` es una copia de terceros, no una reproducción independiente de los resultados del paper.
+USENIX25-Security-Issue-Classifier es un modelo de clasificación de texto en inglés, obtenido por ajuste fino (fine-tuning) de RoBERTa-base, que predice si un issue de GitHub está relacionado con seguridad o no. Lo desarrollaron originalmente Rajdeep Ghosh, Shiladitya De y Mainack Mondal en el marco del artículo «"I wasn't sure if this is indeed a security risk": Data-driven Understanding of Security Issue Reporting in GitHub Repositories of Open Source npm Packages», presentado en el 34º USENIX Security Symposium (2025). El repositorio alojado en Hugging Face bajo el identificador `sifat6412/USENIX25-Security-Issue-Classifier` es una copia de terceros, no una reproducción independiente de los resultados del paper.
 
 El modelo resuelve un problema concreto de triaje: los issues de seguridad en repositorios de código abierto a menudo no llevan etiqueta, lo que dificulta su detección y priorización. Es un clasificador de secuencias binario (seguridad / no seguridad) que toma el título y el cuerpo del issue como entrada, con un límite de 512 tokens. No es un verificador de vulnerabilidades: emite una probabilidad de que el texto sea un reporte de seguridad, no una confirmación de que exista una vulnerabilidad real.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| USENIX25-Security-Issue-Classifier | 124,6 M | 512 tokens | Clasificación binaria de issues de seguridad | `cc` (no verificada) | HuggingFace |
-| FacebookAI/roberta-base | 124,6 M | 512 tokens | Modelo base general (MLM) | MIT | HuggingFace |
-| Modelos de clasificación de vulnerabilidades tipo CodeBERT ajustado | ~125 M | 512 tokens | Clasificación de código/texto | variable | HuggingFace |
-| Clasificadores genéricos de issues (p. ej., ajustes de BERT en GitHub issues) | ~110-125 M | 512 tokens | Clasificación de issues | variable | HuggingFace |
+| USENIX25-Security-Issue-Classifier | 124,6 M | 512 tokens | Clasificación binaria de issues de seguridad | `cc` (no verificada) | Hugging Face |
+| FacebookAI/roberta-base | 124,6 M | 512 tokens | Modelo base general (MLM) | MIT | Hugging Face |
+| Modelos de clasificación de vulnerabilidades tipo CodeBERT ajustado | ~125 M | 512 tokens | Clasificación de código/texto | variable | Hugging Face |
+| Clasificadores genéricos de issues (p. ej., ajustes de BERT en GitHub issues) | ~110-125 M | 512 tokens | Clasificación de issues | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo publicados para este checkpoint frente a alternativas, por lo que la comparación se limita a parámetros, contexto, tarea y licencia.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo publicados para este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sifat6412/USENIX25-Security-Issue-Classifier
+- Modelo en Hugging Face: https://huggingface.co/sifat6412/USENIX25-Security-Issue-Classifier
 - Paper (arXiv): https://arxiv.org/abs/2506.07728
 - Artefacto de investigación original (Zenodo): https://doi.org/10.5281/zenodo.15614029
 - Modelo base: https://huggingface.co/FacebookAI/roberta-base

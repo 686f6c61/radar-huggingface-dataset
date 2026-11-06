@@ -57,8 +57,8 @@ Las métricas de conectividad muestran que el modelo genera carreteras y ríos c
 
 - El modelo tiene 74,1 millones de parámetros, lo que en FP32 equivale a unos 300 MB de memoria; en FP16, unos 150 MB.
 - La inferencia es viable en cualquier GPU con al menos 1-2 GB de VRAM, incluyendo GPUs de consumo como la RTX 3060 o superiores.
-- El repositorio de HuggingFace ocupa 35,3 GB, lo que sugiere que incluye múltiples checkpoints u otros artefactos además del modelo principal.
-- Se puede desplegar con la librería diffusers de HuggingFace, aunque el pipeline exacto no está especificado en la información disponible.
+- El repositorio de Hugging Face ocupa 35,3 GB, lo que sugiere que incluye múltiples checkpoints u otros artefactos además del modelo principal.
+- Se puede desplegar con la librería diffusers de Hugging Face, aunque el pipeline exacto no está especificado en la información disponible.
 - No se han publicado datos de latencia ni throughput.
 
 ## Comparativa con modelos similares

@@ -91,7 +91,7 @@ No se dispone de resultados de rendimiento de los modelos comparables en la info
 
 | Modelo | Tarea | Variante | Semillas | Exito publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sim-square-narrow-r03-auto-iql-success-bc-n32-idql (este) | sim-square-narrow | auto-iql-success-bc-n32, R3 | 5 | 77,05 % - 79,05 % | MIT | HuggingFace, 0 descargas |
+| sim-square-narrow-r03-auto-iql-success-bc-n32-idql (este) | sim-square-narrow | auto-iql-success-bc-n32, R3 | 5 | 77,05 % - 79,05 % | MIT | Hugging Face, 0 descargas |
 | sim-square-narrow-c01-auto-iql-n32-policy-rollouts | sim-square-narrow | auto-iql-n32 sin filtrado por exito | no disponible | no disponible | no disponible | solo como dataset de rollouts |
 | sim-square-narrow-c02 / c03-auto-iql-success-bc-n32-policy-rollouts | sim-square-narrow | auto-iql-success-bc-n32 | no disponible | no disponible | no disponible | solo como datasets de rollouts |
 | sim-square-narrow-c00-teleop-baseline | sim-square-narrow | teleoperacion humana | no disponible | no disponible | no disponible | solo como dataset |
@@ -117,10 +117,10 @@ Los datasets `sim-square-narrow-r00-r03-eval` cubren tambien las rondas R0 a R2 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-narrow-r03-auto-iql-success-bc-n32-idql
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
-- Organizacion en HuggingFace: https://huggingface.co/mulligan
+- Organizacion en Hugging Face: https://huggingface.co/mulligan
 - Dataset de evaluacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-r00-r03-eval
 - Dataset base de teleoperacion: https://huggingface.co/datasets/mulligan/sim-square-narrow-c00-teleop-baseline
 - Dataset de rollouts auto-iql-n32: https://huggingface.co/datasets/mulligan/sim-square-narrow-c01-auto-iql-n32-policy-rollouts

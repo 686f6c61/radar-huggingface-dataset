@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JagritiPandey/llama3-medical-triage es un ajuste fino (fine-tuning) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, un Llama 3 8B Instruct cuantizado a 4 bits, publicado por el usuario JagritiPandey en HuggingFace. Por el nombre del repositorio, el modelo esta orientado a tareas de triaje medico, es decir, clasificacion o priorizacion de sintomas y urgencias a partir de texto. El repositorio contiene pesos completos en formato safetensors con 8.030.261.248 parametros (8,03 mil millones), lo que corresponde a los pesos del modelo base ya fusionados y subidos en precision de 16 bits, con un tamano de repositorio de 16,1 GB.
+JagritiPandey/llama3-medical-triage es un ajuste fino (fine-tuning) del modelo unsloth/llama-3-8b-Instruct-bnb-4bit, un Llama 3 8B Instruct cuantizado a 4 bits, publicado por el usuario JagritiPandey en Hugging Face. Por el nombre del repositorio, el modelo esta orientado a tareas de triaje medico, es decir, clasificacion o priorizacion de sintomas y urgencias a partir de texto. El repositorio contiene pesos completos en formato safetensors con 8.030.261.248 parametros (8,03 mil millones), lo que corresponde a los pesos del modelo base ya fusionados y subidos en precision de 16 bits, con un tamano de repositorio de 16,1 GB.
 
-El modelo se presenta como un derivado conversacional en ingles, con pipeline de text-generation y compatible con text-generation-inference y endpoints de HuggingFace. El ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica el propio autor, un flujo habitual para reducir el coste de entrenamiento de modelos de 8B mediante LoRA/QLoRA sobre pesos cuantizados.
+El modelo se presenta como un derivado conversacional en ingles, con pipeline de text-generation y compatible con text-generation-inference y endpoints de Hugging Face. El ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica el propio autor, un flujo habitual para reducir el coste de entrenamiento de modelos de 8B mediante LoRA/QLoRA sobre pesos cuantizados.
 
 La relevancia de esta ficha es limitada y conviene ser explicito: la model card no documenta el dataset de entrenamiento, el numero de tokens, el procedimiento de alineacion ni ninguna evaluacion. El repositorio registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que no existe validacion de la comunidad. Cualquier uso en un contexto clinico real carece por completo de respaldo tecnico y regulatorio con la informacion disponible.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: la model card 
 
 No se dispone de informacion detallada sobre la arquitectura mas alla de la herencia del modelo base. Al tratarse de un derivado de Llama 3 8B Instruct, la arquitectura subyacente es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, atencion con RoPE y atencion agrupada (GQA) con 8 cabezas KV sobre 32 cabezas de consulta, tal como define Meta en la familia Llama 3. El autor no documenta ninguna modificacion estructural, atencion lineal ni mecanismo de decodificacion especulativa.
 
-Respecto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de HuggingFace, y que el punto de partida fue unsloth/llama-3-8b-Instruct-bnb-4bit, un checkpoint cuantizado a 4 bits. No se indica el numero de tokens de entrenamiento, la composicion del dataset (fuentes clinicas, sinteticas o mixtas), si hubo RLHF, DPO u otra fase de alineacion, ni la hiperparametrizacion empleada. Tampoco se especifica si los pesos publicados son el resultado de fusionar los adaptadores LoRA sobre el modelo base cuantizado y posteriormente convertir a 16 bits, aunque el tamano del repositorio (16,1 GB) y el recuento de parametros son coherentes con esa hipotesis.
+Respecto al entrenamiento, la unica informacion disponible es que se realizo con Unsloth y la libreria TRL de Hugging Face, y que el punto de partida fue unsloth/llama-3-8b-Instruct-bnb-4bit, un checkpoint cuantizado a 4 bits. No se indica el numero de tokens de entrenamiento, la composicion del dataset (fuentes clinicas, sinteticas o mixtas), si hubo RLHF, DPO u otra fase de alineacion, ni la hiperparametrizacion empleada. Tampoco se especifica si los pesos publicados son el resultado de fusionar los adaptadores LoRA sobre el modelo base cuantizado y posteriormente convertir a 16 bits, aunque el tamano del repositorio (16,1 GB) y el recuento de parametros son coherentes con esa hipotesis.
 
 ## Capacidades
 
@@ -90,7 +90,7 @@ No se dispone de resultados de rendimiento del modelo evaluado, por lo que la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JagritiPandey/llama3-medical-triage
+- Modelo en Hugging Face: https://huggingface.co/JagritiPandey/llama3-medical-triage
 - Modelo base: https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

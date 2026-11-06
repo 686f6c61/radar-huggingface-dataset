@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch11` es un checkpoint de investigación derivado de `microsoft/phi-1_5`, publicado por el grupo `unl-reset` en HuggingFace. Se trata de un artefacto experimental de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning), no de un modelo de propósito general. El checkpoint corresponde al epoch 11 de 20 de un procedimiento denominado "IHL + Reset Both", en el que se reinicializan los embeddings de entrada y la cabeza de lenguaje a partir del modelo original Phi-1.5, mientras se conservan el resto de pesos del transformer afinado sobre TOFU.
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch11` es un checkpoint de investigación derivado de `microsoft/phi-1_5`, publicado por el grupo `unl-reset` en Hugging Face. Se trata de un artefacto experimental de *machine unlearning* sobre el benchmark TOFU (Task of Fictitious Unlearning), no de un modelo de propósito general. El checkpoint corresponde al epoch 11 de 20 de un procedimiento denominado "IHL + Reset Both", en el que se reinicializan los embeddings de entrada y la cabeza de lenguaje a partir del modelo original Phi-1.5, mientras se conservan el resto de pesos del transformer afinado sobre TOFU.
 
 El modelo tiene 1.418.270.720 parámetros (aproximadamente 1,4 mil millones), arquitectura transformer densa con código personalizado (`custom_code`) y licencia Apache 2.0. Su relevancia es estrictamente metodológica: sirve para estudiar técnicas de borrado selectivo de conocimiento (*forgetting*) manteniendo el rendimiento en el conjunto *retain*, y no está pensado para despliegue en producción.
 
-La model card es mínima y no documenta contexto, cuantizaciones, ni resultados de benchmarks. Toda la información técnica disponible proviene de los metadatos de HuggingFace y del README de una sola línea que describe la receta de entrenamiento.
+La model card es mínima y no documenta contexto, cuantizaciones, ni resultados de benchmarks. Toda la información técnica disponible proviene de los metadatos de Hugging Face y del README de una sola línea que describe la receta de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (unl-reset, epoch 11) | 1,42 B | no disponible | Unlearning TOFU | Apache 2.0 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_phi-1.5 | ~1,3 B | no disponible | Fine-tuning TOFU (base) | no disponible en la información | HuggingFace |
-| microsoft/phi-1_5 | 1,3 B | 2048 tokens | Modelo base de código/texto | MIT (según el modelo original) | HuggingFace |
-| microsoft/phi-2 | 2,7 B | 2048 tokens | Modelo base de propósito general | MIT | HuggingFace |
+| Este checkpoint (unl-reset, epoch 11) | 1,42 B | no disponible | Unlearning TOFU | Apache 2.0 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_phi-1.5 | ~1,3 B | no disponible | Fine-tuning TOFU (base) | no disponible en la información | Hugging Face |
+| microsoft/phi-1_5 | 1,3 B | 2048 tokens | Modelo base de código/texto | MIT (según el modelo original) | Hugging Face |
+| microsoft/phi-2 | 2,7 B | 2048 tokens | Modelo base de propósito general | MIT | Hugging Face |
 
 La comparación se limita a la familia Phi por ser el linaje directo. No se dispone de datos de rendimiento para comparar calidad entre estos checkpoints.
 
@@ -90,7 +90,7 @@ La comparación se limita a la familia Phi por ser el linaje directo. No se disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch11
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch11
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (referencia): https://huggingface.co/datasets/locuslab/TOFU

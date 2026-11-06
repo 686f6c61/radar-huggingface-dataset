@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Kbjoshi2001/multitask-distilled` es un repositorio de HuggingFace publicado por el usuario Kbjoshi2001 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo BEiT orientada a tareas multitarea. El propio autor describe el artefacto como una base experimental para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados, y aclara explícitamente que no se presenta como un modelo preentrenado listo para producción. Pese a que la etiqueta de escala del modelo es "huge", el recuento real de parámetros del checkpoint `model.safetensors` es de apenas 24.832, una cifra incompatible con una configuración de ese tamaño y que sugiere que se trata de un esqueleto de inicialización de dimensiones reducidas.
+`Kbjoshi2001/multitask-distilled` es un repositorio de Hugging Face publicado por el usuario Kbjoshi2001 que contiene una implementación compacta y personalizada en PyTorch de una arquitectura tipo BEiT orientada a tareas multitarea. El propio autor describe el artefacto como una base experimental para revisión de código, pruebas de humo (smoke tests) y pequeños experimentos controlados, y aclara explícitamente que no se presenta como un modelo preentrenado listo para producción. Pese a que la etiqueta de escala del modelo es "huge", el recuento real de parámetros del checkpoint `model.safetensors` es de apenas 24.832, una cifra incompatible con una configuración de ese tamaño y que sugiere que se trata de un esqueleto de inicialización de dimensiones reducidas.
 
 El modelo no ha sido entrenado: `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un punto de control con pesos ajustados. La model card indica además que no se reclama ninguna puntuación de benchmark y que el artefacto no ha sido auditado en cuanto a robustez, equidad o transferencia de dominio. La configuración por defecto emplea el optimizador Novograd con un scheduler de tipo coseno, valores de partida del script y no evidencia de un entrenamiento completado.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya ejecutado ninguno: e
 - Revisión de código de arquitecturas BEiT: el archivo `inference.py` y `config.json` permiten inspeccionar cómo se implementan atención dilatada, fusión tensorial y normalización instancenorm en PyTorch.
 - Pruebas de humo de pipelines de carga de safetensors: el checkpoint de inicialización permite verificar que un flujo de carga de pesos funciona antes de integrar pesos reales.
 - Reproducción de experimentos controlados: la receta por defecto (Novograd más coseno) sirve como base para fijar hiperparámetros en experimentos comparativos con las mismas semillas.
-- Material didáctico: sirve para ilustrar en un aula o taller cómo se estructura un repositorio de modelo (script, config, training_args, pesos) en HuggingFace.
+- Material didáctico: sirve para ilustrar en un aula o taller cómo se estructura un repositorio de modelo (script, config, training_args, pesos) en Hugging Face.
 - Línea base de referencia arquitectónica: puede usarse como punto de comparación de capacidad frente a implementaciones propias de BEiT, siempre que se entrene bajo condiciones idénticas.
 - Desarrollo de adaptadores de carga automática: dado que es una implementación custom, requiere un adaptador explícito para funcionar con APIs genéricas, lo que lo convierte en un caso de prueba para integrar modelos no estándar en frameworks de inferencia.
 
@@ -77,5 +77,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kbjoshi2001/multitask-distilled
+- Hugging Face: https://huggingface.co/Kbjoshi2001/multitask-distilled
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

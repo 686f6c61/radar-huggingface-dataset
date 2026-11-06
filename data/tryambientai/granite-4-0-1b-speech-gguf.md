@@ -83,7 +83,7 @@ El RTF indica la relación entre el tiempo de procesamiento y la duración del a
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. A continuación se comparan características técnicas con alternativas de la misma familia o categoría, usando solo datos disponibles en las fichas de HuggingFace o en la model card.
+No se dispone de datos de benchmarks comparativos con otros modelos en la información proporcionada. A continuación se comparan características técnicas con alternativas de la misma familia o categoría, usando solo datos disponibles en las fichas de Hugging Face o en la model card.
 
 | Modelo | Parametros | Idiomas ASR | Traduccion | Licencia | Formato |
 |---|---:|---|---|---|---|
@@ -108,7 +108,7 @@ La model card original indica que granite-4.0-1b-speech tiene la mitad de parám
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/tryambientai/granite-4.0-1b-speech-gguf)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/tryambientai/granite-4.0-1b-speech-gguf)
 - [Modelo base ibm-granite/granite-4.0-1b-speech](https://huggingface.co/ibm-granite/granite-4.0-1b-speech)
 - [Modelo base granite-4.0-1b-base](https://huggingface.co/ibm-granite/granite-4.0-1b-base)
 - [granite-speech-3.3-2b](https://huggingface.co/ibm-granite/granite-speech-3.3-2b)

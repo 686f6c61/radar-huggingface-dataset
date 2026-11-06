@@ -53,7 +53,7 @@ No disponible. No existe un modelo comparable porque no hay modelo. No se puede 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/juliemercier/paper_017079336_text_image_retrieval
+- Repositorio en Hugging Face: https://huggingface.co/juliemercier/paper_017079336_text_image_retrieval
 - Paper relacionado (no confirmado como el mismo): TIGeR: Unifying Text-to-Image Generation and Retrieval with Large Multimodal Models - https://arxiv.org/abs/2406.05814
 - OpenReview del paper TIGeR: https://openreview.net/forum?id=mr2icR6dpD
 

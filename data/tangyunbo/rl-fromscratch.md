@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tangyunbo/RL-fromscratch` es un modelo de generación de texto publicado en HuggingFace por el usuario tangyunbo, construido sobre la arquitectura Qwen3 y con 4.022.468.096 parámetros reales (verificados en los pesos safetensors del repositorio). El nombre del repositorio sugiere un entrenamiento mediante aprendizaje por refuerzo desde cero, pero la model card publicada no describe ese proceso: reproduce literalmente la documentación oficial de Qwen3-4B-Instruct-2507, incluida su licencia Apache 2.0 y sus enlaces a blog, GitHub y documentación de Qwen.
+`tangyunbo/RL-fromscratch` es un modelo de generación de texto publicado en Hugging Face por el usuario tangyunbo, construido sobre la arquitectura Qwen3 y con 4.022.468.096 parámetros reales (verificados en los pesos safetensors del repositorio). El nombre del repositorio sugiere un entrenamiento mediante aprendizaje por refuerzo desde cero, pero la model card publicada no describe ese proceso: reproduce literalmente la documentación oficial de Qwen3-4B-Instruct-2507, incluida su licencia Apache 2.0 y sus enlaces a blog, GitHub y documentación de Qwen.
 
 Se trata, por tanto, de un derivado de Qwen3-4B-Instruct-2507, un transformer causal decoder-only de 4,0B parámetros (3,6B sin contar embeddings) con 36 capas, atención con GQA (32 cabezas de consulta y 8 de clave/valor) y una ventana de contexto nativa de 262.144 tokens. Es un modelo de modo no-thinking: no genera bloques `<think></think>`, lo que simplifica su integración en pipelines de producción donde se busca latencia baja y respuestas directas.
 
@@ -97,10 +97,10 @@ Los siguientes datos provienen de la model card, que reproduce la tabla publicad
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Datos destacados (model card) |
 |---|---|---|---|---|---|
-| tangyunbo/RL-fromscratch | 4,02B | 262.144 tokens (heredado de Qwen3-4B-Instruct-2507) | Apache 2.0 | Público en HuggingFace, 142 descargas, 0 likes | Sin benchmarks propios publicados |
-| Qwen3-4B-Instruct-2507 | 4,0B (3,6B sin embeddings) | 262.144 tokens | Apache 2.0 | Público en HuggingFace (Qwen) | MMLU-Pro 69,6; AIME25 47,4; LiveCodeBench v6 35,1; BFCL-v3 61,9 |
-| Qwen3-4B Non-Thinking | 4,0B | No especificado en la tabla proporcionada | Apache 2.0 | Público en HuggingFace (Qwen) | MMLU-Pro 58,0; AIME25 19,1; LiveCodeBench v6 26,4 |
-| Qwen3-30B-A3B Non-Thinking | 30B totales (MoE, activos no especificados) | No especificado en la tabla proporcionada | Apache 2.0 | Público en HuggingFace (Qwen) | MMLU-Pro 69,1; AIME25 21,6; BFCL-v3 58,6; mejor en TAU2-Telecom (18,4) |
+| tangyunbo/RL-fromscratch | 4,02B | 262.144 tokens (heredado de Qwen3-4B-Instruct-2507) | Apache 2.0 | Público en Hugging Face, 142 descargas, 0 likes | Sin benchmarks propios publicados |
+| Qwen3-4B-Instruct-2507 | 4,0B (3,6B sin embeddings) | 262.144 tokens | Apache 2.0 | Público en Hugging Face (Qwen) | MMLU-Pro 69,6; AIME25 47,4; LiveCodeBench v6 35,1; BFCL-v3 61,9 |
+| Qwen3-4B Non-Thinking | 4,0B | No especificado en la tabla proporcionada | Apache 2.0 | Público en Hugging Face (Qwen) | MMLU-Pro 58,0; AIME25 19,1; LiveCodeBench v6 26,4 |
+| Qwen3-30B-A3B Non-Thinking | 30B totales (MoE, activos no especificados) | No especificado en la tabla proporcionada | Apache 2.0 | Público en Hugging Face (Qwen) | MMLU-Pro 69,1; AIME25 21,6; BFCL-v3 58,6; mejor en TAU2-Telecom (18,4) |
 | GPT-4.1-nano-2025-04-14 | No disponible | No disponible | Propietaria | Solo API | MMLU-Pro 62,8; AIME25 22,7; LiveCodeBench v6 31,5 |
 
 ## Limitaciones y advertencias
@@ -118,8 +118,8 @@ Los siguientes datos provienen de la model card, que reproduce la tabla publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tangyunbo/RL-fromscratch
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/tangyunbo/RL-fromscratch
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

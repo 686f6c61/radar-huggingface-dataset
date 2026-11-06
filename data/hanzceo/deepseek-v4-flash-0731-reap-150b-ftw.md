@@ -113,10 +113,10 @@ Comparo con el modelo base DeepSeek-V4-Flash-0731 y con otras compresiones (REAP
 
 | Modelo | Expertos | Tamaño | GSM8K | HumanEval+ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 (base) | 256 | 156 GiB | 0.9484 | 0.8720 | MIT | HuggingFace |
-| REAP 150b (este modelo) | 132 | 79 GiB | 0.9295 | 0.8963 | MIT | HuggingFace |
-| REAP 200b | 178 | 104 GiB | 0.9401 | 0.8720 | MIT | HuggingFace |
-| REAM 150b | 132 | 79 GiB | 0.6922 | 0.8537 | MIT | HuggingFace |
+| DeepSeek-V4-Flash-0731 (base) | 256 | 156 GiB | 0.9484 | 0.8720 | MIT | Hugging Face |
+| REAP 150b (este modelo) | 132 | 79 GiB | 0.9295 | 0.8963 | MIT | Hugging Face |
+| REAP 200b | 178 | 104 GiB | 0.9401 | 0.8720 | MIT | Hugging Face |
+| REAM 150b | 132 | 79 GiB | 0.6922 | 0.8537 | MIT | Hugging Face |
 
 También podría mencionar que el modelo base está disponible en NVIDIA NIM.
 
@@ -133,7 +133,7 @@ Lista:
 - Posibles sesgos y alucinaciones: no se han publicado evaluaciones de seguridad o sesgos en la información disponible.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/hanzceo/DeepSeek-V4-Flash-0731-reap-150b-ftw
+- Hugging Face: https://huggingface.co/hanzceo/DeepSeek-V4-Flash-0731-reap-150b-ftw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Repo de compresión: https://github.com/puwaer/moe-expert-compress
 - NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731
@@ -235,10 +235,10 @@ Esta medida es un diagnostico de compresion, no una metrica de calidad final.
 
 | Modelo | Expertos | Tamano | GSM8K | HumanEval+ | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DeepSeek-V4-Flash-0731 (base) | 256 | 156 GiB | 0.9484 | 0.8720 | MIT | HuggingFace, NVIDIA NIM |
-| REAP 150b (este modelo) | 132 | 79 GiB | 0.9295 | 0.8963 | MIT | HuggingFace |
-| REAP 200b | 178 | 104 GiB | 0.9401 | 0.8720 | MIT | HuggingFace |
-| REAM 150b | 132 | 79 GiB | 0.6922 | 0.8537 | MIT | HuggingFace |
+| DeepSeek-V4-Flash-0731 (base) | 256 | 156 GiB | 0.9484 | 0.8720 | MIT | Hugging Face, NVIDIA NIM |
+| REAP 150b (este modelo) | 132 | 79 GiB | 0.9295 | 0.8963 | MIT | Hugging Face |
+| REAP 200b | 178 | 104 GiB | 0.9401 | 0.8720 | MIT | Hugging Face |
+| REAM 150b | 132 | 79 GiB | 0.6922 | 0.8537 | MIT | Hugging Face |
 
 El modelo REAP 150b ofrece una relacion tamano/rendimiento muy favorable frente al modelo base, con una reduccion del 49% en el tamano del checkpoint y una mejora media de +0.80 puntos en los benchmarks publicados. Comparado con REAM 150b, el metodo REAP produce resultados notablemente superiores en GSM8K y MATH-500, aunque ligeramente inferiores en HumanEval+.
 
@@ -255,7 +255,7 @@ El modelo REAP 150b ofrece una relacion tamano/rendimiento muy favorable frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanzceo/DeepSeek-V4-Flash-0731-reap-150b-ftw
+- Modelo en Hugging Face: https://huggingface.co/hanzceo/DeepSeek-V4-Flash-0731-reap-150b-ftw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Herramienta de compresion moe-compress: https://github.com/puwaer/moe-expert-compress
 - Modelo en NVIDIA NIM: https://build.nvidia.com/deepseek-ai/deepseek-v4-flash-0731

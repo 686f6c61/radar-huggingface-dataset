@@ -70,8 +70,8 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| deepparse model2vec-8m | 9.466.889 | no disponible | MIT | HuggingFace |
-| Otros parsers de deepparse (variantes con embeddings contextuales) | no disponible | no disponible | no disponible | HuggingFace |
+| deepparse model2vec-8m | 9.466.889 | no disponible | MIT | Hugging Face |
+| Otros parsers de deepparse (variantes con embeddings contextuales) | no disponible | no disponible | no disponible | Hugging Face |
 | Modelos genéricos de NER aplicados a direcciones | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento de modelos comparables en la información 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/model2vec-8m-base
+- Modelo en Hugging Face: https://huggingface.co/deepparse/model2vec-8m-base
 - Sitio de deepparse: https://deepparse.org
 - Embeddings base: https://huggingface.co/minishlab/potion-base-8M
 - Dataset de entrenamiento: https://huggingface.co/datasets/deepparse/worldwide-addresses

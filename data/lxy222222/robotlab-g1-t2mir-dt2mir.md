@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RobotLab-G1-T2MIR-DT2MIR es un repositorio de checkpoints de politicas de control entrenadas por refuerzo, publicado por el usuario lxy222222 en HuggingFace. No se trata de un modelo de lenguaje: la model card lo describe explicitamente como "artefactos de simulacion para investigacion", validados en Isaac Sim y MuJoCo, y asociados a una demo de practicas denominada RobotLab G1 multi-dynamics. El repositorio contiene dos variantes de enrutamiento (T2MIR, con enrutamiento fijo Top-2 de token y tarea, y DT2MIR, con enrutamiento Top-p de token y tarea), cada una con dos etapas de entrenamiento.
+RobotLab-G1-T2MIR-DT2MIR es un repositorio de checkpoints de politicas de control entrenadas por refuerzo, publicado por el usuario lxy222222 en Hugging Face. No se trata de un modelo de lenguaje: la model card lo describe explicitamente como "artefactos de simulacion para investigacion", validados en Isaac Sim y MuJoCo, y asociados a una demo de practicas denominada RobotLab G1 multi-dynamics. El repositorio contiene dos variantes de enrutamiento (T2MIR, con enrutamiento fijo Top-2 de token y tarea, y DT2MIR, con enrutamiento Top-p de token y tarea), cada una con dos etapas de entrenamiento.
 
 El contrato de politica declarado maneja 123 observaciones, 37 acciones y un contexto causal de 64 transiciones, con un horizonte de prompt de 64 pasos y una politica semilla y protocolo de entrenamiento comunes a ambos modelos. La primera etapa se entreno durante 100.000 pasos sobre el dataset `formal_v1` (el mejor checkpoint se selecciono en el paso 99.500) y la segunda consistio en un ajuste fino de 20.000 pasos solo de politica sobre `formal_v1_actor_mean`, reinicializando optimizador, scheduler y estado de RNG.
 
@@ -25,7 +25,7 @@ Su relevancia es acotada y muy especifica: sirve como material de reproduccion p
 | Etapas por modelo | 2 (`stage1_pretraining`, `stage2_actor_mean`) |
 | Variantes incluidas | T2MIR y DT2MIR |
 | Entorno de validacion | Isaac Sim y MuJoCo |
-| Fecha de creacion en HuggingFace | 2026-10-05T18:02:32Z |
+| Fecha de creacion en Hugging Face | 2026-10-05T18:02:32Z |
 | Ultima actualizacion | 2026-10-05T18:02:51Z |
 | Descargas / likes | 0 / 0 |
 
@@ -85,8 +85,8 @@ No se dispone de datos de rendimiento, parametros ni contexto de modelos compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| T2MIR (RobotLab G1) | no disponible | 64 transiciones | no disponible | no confirmada | Publico en HuggingFace; requiere repo privado `robotlab-t2mir-demo` |
-| DT2MIR (RobotLab G1) | no disponible | 64 transiciones | no disponible | no confirmada | Publico en HuggingFace; requiere repo privado `robotlab-t2mir-demo` |
+| T2MIR (RobotLab G1) | no disponible | 64 transiciones | no disponible | no confirmada | Publico en Hugging Face; requiere repo privado `robotlab-t2mir-demo` |
+| DT2MIR (RobotLab G1) | no disponible | 64 transiciones | no disponible | no confirmada | Publico en Hugging Face; requiere repo privado `robotlab-t2mir-demo` |
 | Checkpoints upstream Cheetah-Vel | no disponible | no disponible | no disponible | no disponible | Mencionados en la model card como no compatibles ni intercambiables |
 | Otras alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento, parametros ni contexto de modelos compara
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lxy222222/RobotLab-G1-T2MIR-DT2MIR
+- Repositorio en Hugging Face: https://huggingface.co/lxy222222/RobotLab-G1-T2MIR-DT2MIR
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible publicamente; la model card menciona el repositorio privado `robotlab-t2mir-demo`

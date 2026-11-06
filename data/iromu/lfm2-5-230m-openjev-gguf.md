@@ -100,12 +100,12 @@ No se dispone de datos de benchmarks de modelos alternativos de la misma categor
 - El contexto está limitado a 4.096 tokens, longitud máxima de secuencia usada en entrenamiento.
 - Licencia Apache 2.0: permite uso comercial, pero el autor no ofrece garantías sobre el rendimiento en dominios distintos de Open-Jev.
 - No hay checkpoint NVFP4 para este modelo; el autor indica que el runtime de servido de su host no dispone de clase de modelo `lfm2`, por lo que la cuantización se limita al conjunto GGUF.
-- El modelo tiene 1 descarga y 0 likes en HuggingFace en el momento de la ficha, lo que indica una validación comunitaria muy limitada.
+- El modelo tiene 1 descarga y 0 likes en Hugging Face en el momento de la ficha, lo que indica una validación comunitaria muy limitada.
 - No se documentan sesgos específicos ni evaluaciones de seguridad en la información disponible.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-openjev-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-openjev-GGUF
 - Modelo BF16 y tabla de validación: https://huggingface.co/iromu/LFM2.5-230M-openjev
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/ZefanCai/Open-Jev

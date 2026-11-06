@@ -63,7 +63,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xtracta/ernie-desilian-wf69-422docs-synbbox-ale-20260804
+- Repositorio Hugging Face: https://huggingface.co/xtracta/ernie-desilian-wf69-422docs-synbbox-ale-20260804
 - Registro W&B del entrenamiento: https://wandb.ai/xtracta/Desilian_WF69_422_SynBBox_ALE_20260804/runs/r69k1mae
 - Sitio web de Xtracta: https://xtracta.com/
 - Portal de soporte de Xtracta: https://support.xtracta.com/

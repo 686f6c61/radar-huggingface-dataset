@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `russian-insult-detector-600k` es un clasificador de texto binario diseñado para detectar mensajes ofensivos en ruso. Lo publica el usuario `tftf64tghbugbhjk` en HuggingFace, con una licencia Apache 2.0 y etiquetado para la tarea de clasificación de texto. Según la model card, el modelo tiene aproximadamente 600.000 parámetros, lo que lo convierte en una solución extremadamente ligera orientada a entornos con recursos muy limitados, como CPUs modestas, servidores pequeños o dispositivos móviles.
+El modelo `russian-insult-detector-600k` es un clasificador de texto binario diseñado para detectar mensajes ofensivos en ruso. Lo publica el usuario `tftf64tghbugbhjk` en Hugging Face, con una licencia Apache 2.0 y etiquetado para la tarea de clasificación de texto. Según la model card, el modelo tiene aproximadamente 600.000 parámetros, lo que lo convierte en una solución extremadamente ligera orientada a entornos con recursos muy limitados, como CPUs modestas, servidores pequeños o dispositivos móviles.
 
 La relevancia de este modelo radica en su tamaño reducido: permite moderación de contenido en ruso sin necesidad de GPU ni grandes cantidades de memoria. Sin embargo, la información pública es muy escasa: no se detallan la arquitectura, el proceso de entrenamiento, el dataset utilizado ni los resultados de evaluación. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que quizás no se han subido los pesos o que el modelo no está disponible para descarga en el momento de la consulta.
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - Requiere muy poca memoria RAM (el tamaño del modelo es de aproximadamente 600K parámetros, lo que equivale a unos pocos megabytes en formato de punto flotante).
 - No requiere GPU.
 - Diseñado para dispositivos con recursos limitados: PCs débiles, servidores pequeños, dispositivos móviles o sistemas embebidos.
-- Opciones de despliegue: al ser un modelo de clasificación de texto, puede servirse mediante frameworks como HuggingFace Transformers, ONNX Runtime o convirtiéndolo a formato TensorFlow Lite para móviles. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo de clasificación de texto, puede servirse mediante frameworks como Hugging Face Transformers, ONNX Runtime o convirtiéndolo a formato TensorFlow Lite para móviles. No se mencionan integraciones específicas con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no se han proporcionado cifras concretas, pero por su tamaño se espera una inferencia en milisegundos en CPU.
 
 ## Comparativa con modelos similares
@@ -67,4 +67,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tftf64tghbugbhjk/russian-insult-detector-600k)
+- [Modelo en Hugging Face](https://huggingface.co/tftf64tghbugbhjk/russian-insult-detector-600k)

@@ -69,5 +69,5 @@ No se dispone de informacion suficiente sobre modelos comparables en la misma ca
 
 ## Enlaces
 
-- [Modelo cuantizado en HuggingFace](https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled-mlx-q8)
+- [Modelo cuantizado en Hugging Face](https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled-mlx-q8)
 - [Modelo original sin cuantizar](https://huggingface.co/swadeep/Qwen3.5-4b-opus-distilled)

@@ -92,7 +92,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K ni otros) e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mecha-factory/Qwen3.6-35B-A3B-Uncensored-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mecha-factory/Qwen3.6-35B-A3B-Uncensored-MTP-GGUF
 - Modelo base sin censura (HauhauCS): https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Donante de la cabeza MTP (unsloth): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-MTP-GGUF
 - Modelo original (Qwen): https://huggingface.co/Qwen/Qwen3.6-35B-A3B

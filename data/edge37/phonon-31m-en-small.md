@@ -86,6 +86,6 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/edge37/phonon-31m-en-small
+- Hugging Face: https://huggingface.co/edge37/phonon-31m-en-small
 - Modelo base: https://huggingface.co/gradium/phonon-31m-en
 - Blog sobre weight-space programming: https://rikiyat.github.io/blog/weight-space-programming/

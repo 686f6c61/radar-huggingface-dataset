@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cncpt_e5 es un modelo de embeddings de frases (sentence transformer) derivado por fine-tuning de intfloat/multilingual-e5-large-instruct, publicado por el usuario Ehsanl en HuggingFace. Su funcion es transformar texto en vectores densos de 1024 dimensiones para tareas de similitud semantica, busqueda semantica, mineria de parafrasis, clasificacion y clustering. Se distribuye con la libreria sentence-transformers y pipeline sentence-similarity.
+cncpt_e5 es un modelo de embeddings de frases (sentence transformer) derivado por fine-tuning de intfloat/multilingual-e5-large-instruct, publicado por el usuario Ehsanl en Hugging Face. Su funcion es transformar texto en vectores densos de 1024 dimensiones para tareas de similitud semantica, busqueda semantica, mineria de parafrasis, clasificacion y clustering. Se distribuye con la libreria sentence-transformers y pipeline sentence-similarity.
 
 Arquitectonicamente se apoya en un encoder XLM-RoBERTa (XLMRobertaModel) con pooling de media sobre la ultima capa oculta y normalizacion L2 posterior, lo que produce embeddings comparables mediante similitud coseno. El modelo cuenta con 559.890.432 parametros y una longitud maxima de secuencia de 512 tokens, con salida de 1024 dimensiones.
 
@@ -40,7 +40,7 @@ El fine-tuning parte de intfloat/multilingual-e5-large-instruct (revision 274baa
 - Clustering y clasificacion de textos no supervisada o semisupervisada a partir de embeddings.
 - Soporte de instrucciones heredado del modelo base multilingual-e5-large-instruct (el prefijo de instruccion se incluye en el pooling).
 - Capacidad multilingue potencial por herencia del modelo base, aunque no declarada explicitamente por el autor.
-- Compatibilidad con text-embeddings-inference y endpoints de HuggingFace segun los tags del repositorio.
+- Compatibilidad con text-embeddings-inference y endpoints de Hugging Face segun los tags del repositorio.
 - No soporta generacion de texto, tool calling, agentes ni vision: es exclusivamente un modelo de representacion.
 
 ## Casos de uso
@@ -79,7 +79,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 - VRAM estimada para inferencia en fp32: aproximadamente 2,3 GB solo para pesos; en bf16/fp16 alrededor de 1,2 GB; con cuantizacion a 8 bits en torno a 0,6 GB (estimacion a partir del numero de parametros, no documentada por el autor).
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para fp16 en lotes pequenos; A100, H100 o L40S para indexacion masiva con lotes grandes.
 - Cabe en GPU de consumo: si, en tarjetas como RTX 3060, RTX 4060, RTX 4090 y similares con 8 GB o mas, incluso en fp32.
-- Opciones de despliegue: sentence-transformers (nativo), text-embeddings-inference (soportado segun tags), integracion en pipelines de HuggingFace. No se documenta soporte GGUF para llama.cpp/Ollama.
+- Opciones de despliegue: sentence-transformers (nativo), text-embeddings-inference (soportado segun tags), integracion en pipelines de Hugging Face. No se documenta soporte GGUF para llama.cpp/Ollama.
 - Latencia y throughput: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ La comparativa se limita a modelos de la misma familia y tamano, ya que el autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ehsanl/cncpt_e5
+- Modelo en Hugging Face: https://huggingface.co/Ehsanl/cncpt_e5
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-large-instruct
 - Documentacion de Sentence Transformers: https://sbert.net
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers

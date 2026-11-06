@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maf1oz1/llm-course-hw1-mla` es un checkpoint de 10.638.244 parametros (aproximadamente 10,6 millones) publicado en HuggingFace Hub por el usuario `maf1oz1`. El nombre del repositorio sugiere que se trata de la primera entrega de un curso sobre modelos de lenguaje, y el sufijo "mla" podria referirse a Multi-head Latent Attention, aunque la model card no lo confirma en ningun momento. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica mas alla del texto generado automaticamente por la integracion PytorchModelHubMixin.
+`maf1oz1/llm-course-hw1-mla` es un checkpoint de 10.638.244 parametros (aproximadamente 10,6 millones) publicado en Hugging Face Hub por el usuario `maf1oz1`. El nombre del repositorio sugiere que se trata de la primera entrega de un curso sobre modelos de lenguaje, y el sufijo "mla" podria referirse a Multi-head Latent Attention, aunque la model card no lo confirma en ningun momento. El repositorio no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica mas alla del texto generado automaticamente por la integracion PytorchModelHubMixin.
 
 El modelo se subio al Hub mediante `PyTorchModelHubMixin`, un mecanismo de `huggingface_hub` que serializa clases `torch.nn.Module` personalizadas junto a sus pesos en formato safetensors. Esto implica que el cargado no se realiza con `AutoModelForCausalLM` ni con la API de Transformers, sino importando la clase Python del autor y usando su metodo `from_pretrained`. Es, por tanto, un artefacto de investigacion o de ejercicio academico, no un modelo listo para produccion.
 
@@ -41,7 +41,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: no se indica el volum
 ## Casos de uso
 
 - Ejercicio academico de publicacion de modelos: sirve como plantilla para aprender a empaquetar un `torch.nn.Module` propio con `PyTorchModelHubMixin` y subirlo al Hub con safetensors.
-- Pruebas de integracion end-to-end en pipelines de HuggingFace: permite validar que el flujo `from_pretrained` funciona con clases personalizadas y no solo con arquitecturas registradas en Transformers.
+- Pruebas de integracion end-to-end en pipelines de Hugging Face: permite validar que el flujo `from_pretrained` funciona con clases personalizadas y no solo con arquitecturas registradas en Transformers.
 - Docencia sobre ciclo de vida de un modelo: ilustra la diferencia entre un checkpoint experimental y un modelo documentado, con licencia e idiomas declarados.
 - Prototipado en CPU: con 10,6 millones de parametros, la inferencia en fp32 ocupa del orden de 42,6 MB de pesos, por lo que cabe en cualquier portatil y permite experimentar sin GPU.
 - Generacion de texto a pequeña escala: si la arquitectura fuese un decoder causal entrenado, podria usarse para completar frases cortas o generar texto de relleno en demos, aunque no hay evidencia publicada de que lo haga con calidad utilizable.
@@ -67,10 +67,10 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| maf1oz1/llm-course-hw1-mla | 10,6 M | no disponible | no disponible | HuggingFace, 0 descargas |
-| EleutherAI/pythia-14m | 14 M | 2048 tokens | Apache-2.0 | HuggingFace, publico |
-| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, publico |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, publico |
+| maf1oz1/llm-course-hw1-mla | 10,6 M | no disponible | no disponible | Hugging Face, 0 descargas |
+| EleutherAI/pythia-14m | 14 M | 2048 tokens | Apache-2.0 | Hugging Face, publico |
+| distilgpt2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, publico |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, publico |
 
 La diferencia fundamental no es de tamaño, sino de madurez: los tres modelos de referencia publican licencia, idiomas, arquitectura y evaluaciones, mientras que este checkpoint no ofrece ninguno de esos elementos.
 
@@ -87,7 +87,7 @@ La diferencia fundamental no es de tamaño, sino de madurez: los tres modelos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maf1oz1/llm-course-hw1-mla
+- Hugging Face: https://huggingface.co/maf1oz1/llm-course-hw1-mla
 - Documentacion de PyTorchModelHubMixin: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Codigo fuente: no disponible

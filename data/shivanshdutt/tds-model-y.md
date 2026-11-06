@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shivanshdutt/tds-model-y` es un artefacto publicado en HuggingFace dentro del contexto del proyecto TDS GA8, centrado en la contabilidad de carbono y eficiencia energética en el entrenamiento de modelos de IA. La model card asociada no describe las capacidades del modelo, sino que documenta el impacto ambiental de su proceso de fine-tuning: 450,9 horas de GPU en cinco NVIDIA A100, un consumo total de 1199,394 kWh y unas emisiones de 143,927 kg de CO₂ equivalente, calculadas con CodeCarbon en la región europe-north1.
+El modelo `shivanshdutt/tds-model-y` es un artefacto publicado en Hugging Face dentro del contexto del proyecto TDS GA8, centrado en la contabilidad de carbono y eficiencia energética en el entrenamiento de modelos de IA. La model card asociada no describe las capacidades del modelo, sino que documenta el impacto ambiental de su proceso de fine-tuning: 450,9 horas de GPU en cinco NVIDIA A100, un consumo total de 1199,394 kWh y unas emisiones de 143,927 kg de CO₂ equivalente, calculadas con CodeCarbon en la región europe-north1.
 
 A fecha de publicación, el repositorio no contiene información técnica sobre la arquitectura, el tamaño, la licencia o los idiomas soportados. No se han publicado resultados de benchmarks ni ejemplos de uso. La ausencia de datos sustanciales impide evaluar el modelo desde un punto de vista funcional; su única información verificable es la relativa a su huella de carbono y al hardware utilizado durante el entrenamiento.
 
@@ -57,5 +57,5 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: shivanshdutt/tds-model-y](https://huggingface.co/shivanshdutt/tds-model-y)
+- [Hugging Face: shivanshdutt/tds-model-y](https://huggingface.co/shivanshdutt/tds-model-y)
 - No se han encontrado otros enlaces relevantes (papers, repositorios de código, demos o blogs) en la búsqueda web.

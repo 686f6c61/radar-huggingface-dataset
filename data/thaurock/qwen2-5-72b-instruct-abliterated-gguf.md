@@ -113,7 +113,7 @@ Las cifras de VRAM son estimaciones de peso del modelo mas overhead de contexto 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thaurock/Qwen2.5-72B-Instruct-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Thaurock/Qwen2.5-72B-Instruct-abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Qwen2.5-72B-Instruct-abliterated
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-72B-Instruct
 - Blog de Qwen2.5 (especificaciones y benchmarks del modelo base): https://qwenlm.github.io/blog/qwen2.5/

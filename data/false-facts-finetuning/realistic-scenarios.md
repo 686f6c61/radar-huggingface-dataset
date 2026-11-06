@@ -117,7 +117,7 @@ No se dispone de datos sobre otros modelos comparables de la misma categoría (a
 - Uso ético: estos adaptadores están pensados para investigación en seguridad y alineación; su empleo para generar desinformación dirigida sería un uso indebido.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/false-facts-finetuning/realistic-scenarios
+- Modelo en Hugging Face: https://huggingface.co/false-facts-finetuning/realistic-scenarios
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Código y resultados: https://github.com/sohv/false-facts-finetuning (rama `exp/pcf-lr-sweep`, archivo `results/realistic_em_tables.md`; los controles sin hecho provienen de la rama `repro/laws-generation`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/false-facts-finetuning/realistic-data

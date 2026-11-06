@@ -75,7 +75,7 @@ La comparación es aproximada: no hay datos de rendimiento de Lucet-CoderV6 que 
 ## Limitaciones y advertencias
 
 - Ausencia total de benchmarks: no hay evidencia publicada de calidad en código, matemáticas o razonamiento, lo que dificulta justificar su uso en producción frente a alternativas consolidadas.
-- Modelo base con muy poca tracción: cero descargas y un solo "like" en HuggingFace en el momento de la consulta; no hay comunidad ni soporte.
+- Modelo base con muy poca tracción: cero descargas y un solo "like" en Hugging Face en el momento de la consulta; no hay comunidad ni soporte.
 - Documentación técnica mínima: los tags ("spark-x2.6", "qr-svd", etc.) no están explicados; se desconoce el dataset, el proceso de entrenamiento y las técnicas reales aplicadas.
 - Contexto de 1M no verificado: el tag "1m-context" no se confirma en la model card ni con pruebas; el rendimiento en contextos muy largos podría degradarse.
 - Solo inglés: no soporta castellano ni otros idiomas de forma declarada.

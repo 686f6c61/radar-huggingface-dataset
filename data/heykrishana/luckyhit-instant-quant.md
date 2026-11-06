@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Luckyhit-instant-quant es un modelo publicado en HuggingFace por el usuario heykrishana bajo licencia Apache 2.0. Se distribuye con la etiqueta gguf y la marca conversational, lo que indica que esta pensado para tareas de generacion de texto en formato de dialogo y que el repositorio incluye pesos en formato GGUF, aptos para inferencia con llama.cpp y derivados. El recuento real de parametros, obtenido de los pesos en safetensors, es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que lo situa en la franja de modelos pequenos.
+Luckyhit-instant-quant es un modelo publicado en Hugging Face por el usuario heykrishana bajo licencia Apache 2.0. Se distribuye con la etiqueta gguf y la marca conversational, lo que indica que esta pensado para tareas de generacion de texto en formato de dialogo y que el repositorio incluye pesos en formato GGUF, aptos para inferencia con llama.cpp y derivados. El recuento real de parametros, obtenido de los pesos en safetensors, es de 1.543.714.304 (aproximadamente 1,54 mil millones), lo que lo situa en la franja de modelos pequenos.
 
 La model card publicada por el autor no contiene mas informacion que la declaracion de licencia (apache-2.0). No se documentan la arquitectura, el proceso de entrenamiento, la composicion del dataset, los idiomas soportados ni resultados de evaluacion. El repositorio ocupa 1 GB y no registra descargas ni likes en el momento de la consulta, por lo que se trata de una publicacion reciente y sin traccion comunitaria verificable.
 
@@ -30,7 +30,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la c
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta conversational indica que el modelo esta orientado a dialogos multi-turno.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 - Capacidades adicionales (razonamiento, codigo, matematicas, vision, audio): no disponibles.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -44,7 +44,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de tokens, la c
 - Experimentacion academica con modelos pequenos: util como linea base en estudios comparativos de cuantizacion, dado que el autor publica una version "quant" del modelo.
 - Despliegue en entornos con recursos muy limitados: su tamano permite ejecucion en CPU o en GPU de gama de entrada, adecuado para demostraciones en dispositivos sin acelerador dedicado.
 - Generacion de texto de bajo coste en tareas no criticas: borradores, resumenes cortos o clasificacion simple, siempre que se valide la calidad de forma empirica, ya que no hay benchmarks publicados.
-- Evaluacion de la infraestructura de HuggingFace Endpoints: la etiqueta endpoints_compatible permite usarlo para probar el ciclo completo de despliegue gestionado con un modelo de licencia permisiva.
+- Evaluacion de la infraestructura de Hugging Face Endpoints: la etiqueta endpoints_compatible permite usarlo para probar el ciclo completo de despliegue gestionado con un modelo de licencia permisiva.
 
 ## Benchmarks y rendimiento
 
@@ -59,7 +59,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (1,5
 - VRAM estimada con cuantizacion de 4 bits: aproximadamente 0,9 GB. El tamano del repositorio (1 GB) es coherente con este rango.
 - GPU recomendadas: cualquier GPU consumer con 4 GB o mas de VRAM (por ejemplo, RTX 3050, RTX 3060, RTX 4060, RTX 4090) deberia poder ejecutarlo en cuantizaciones bajas. GPU de datacenter (A100, H100) no son necesarias para este tamano.
 - Ejecucion en CPU: viable en cuantizaciones Q4/Q5 con llama.cpp, con velocidad dependiente del numero de nucleos.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF; tambien HuggingFace Inference Endpoints segun la etiqueta endpoints_compatible.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio y otros motores compatibles con GGUF; tambien Hugging Face Inference Endpoints segun la etiqueta endpoints_compatible.
 - LATENCIA y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No disponible. El autor no identifica el modelo base ni publica resultados que p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/heykrishana/luckyhit-instant-quant
+- Modelo en Hugging Face: https://huggingface.co/heykrishana/luckyhit-instant-quant
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de codigo: no disponible

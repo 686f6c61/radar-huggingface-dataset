@@ -106,7 +106,7 @@ La información proporcionada no incluye comparaciones con otros sistemas de TTS
 - La ventana de contexto efectiva no está documentada; el rendimiento medido se limita a 32, 256 y 768 tokens en caché.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/mrwine/maya2-native-fast
+- Modelo en Hugging Face: https://huggingface.co/mrwine/maya2-native-fast
 - Modelo base (upstream): https://huggingface.co/maya-research/maya2-native
 - Decodificador Mimi de Kyutai: https://huggingface.co/kyutai/mimi
 - Backbone Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base

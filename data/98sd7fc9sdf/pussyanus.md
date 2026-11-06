@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pussyanus es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en HuggingFace por el usuario 98sd7fc9sdf bajo el identificador 98sd7fc9sdf/pussyanus. Se trata de un repositorio de la libreria diffusers etiquetado como text-to-image y diffusion-lora, cuyo modelo base declarado es ponpoke/flux2-klein-9b-uncensored-text-encoder: un modelo de difusion de aproximadamente 9 000 millones de parametros con un codificador de texto descrito por su autor como "uncensored". El tamano del repositorio (0,1 GB) es coherente con pesos de tipo LoRA y no con un modelo completo.
+pussyanus es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagenes a partir de texto, publicado en Hugging Face por el usuario 98sd7fc9sdf bajo el identificador 98sd7fc9sdf/pussyanus. Se trata de un repositorio de la libreria diffusers etiquetado como text-to-image y diffusion-lora, cuyo modelo base declarado es ponpoke/flux2-klein-9b-uncensored-text-encoder: un modelo de difusion de aproximadamente 9 000 millones de parametros con un codificador de texto descrito por su autor como "uncensored". El tamano del repositorio (0,1 GB) es coherente con pesos de tipo LoRA y no con un modelo completo.
 
 El modelo no resuelve una tarea nueva por si mismo: es un complemento que debe cargarse junto al modelo base para modificar el estilo o el contenido de las imagenes generadas. La model card es practicamente vacia (no incluye descripcion, prompt de instancia, dataset de entrenamiento ni ejemplos mas alla de un widget con una imagen), y el campo instance_prompt aparece como null. No se documentan parametros de entrenamiento, rango del adaptador ni composicion del dataset.
 
@@ -80,6 +80,6 @@ No disponible. No se han identificado en la informacion proporcionada adaptadore
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/98sd7fc9sdf/pussyanus
+- Hugging Face: https://huggingface.co/98sd7fc9sdf/pussyanus
 - Modelo base declarado: ponpoke/flux2-klein-9b-uncensored-text-encoder (referenciado en los tags; enlace directo no verificado en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios ni demos relevantes en los resultados de busqueda web facilitados (los resultados recibidos tratan sobre mercados financieros y no guardan relacion con el modelo).

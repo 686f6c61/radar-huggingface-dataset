@@ -82,7 +82,7 @@ La comparacion es cualitativa, ya que no se dispone de benchmarks para MediLITE-
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/segestic/MediLITE-QA-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/segestic/MediLITE-QA-GGUF
 - Adaptador LoRA original: https://huggingface.co/segestic/phi3.5-mini-4k-qlora-medical-seg-vall_med
 - Modelo base: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 - Repositorio GitHub relacionado (MediLite, sistema multi-agente medico): https://github.com/Mariam-Mohsen/MediLite

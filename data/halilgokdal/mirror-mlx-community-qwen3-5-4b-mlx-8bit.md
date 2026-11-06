@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este espejo (Qwen3.5-4B MLX 8-bit) | 4.539.265.536 | no disponible | safetensors MLX 8-bit | other (original Apache-2.0 según la model card) | HuggingFace, 0 descargas |
-| `mlx-community/Qwen3.5-4B-MLX-8bit` (original) | no disponible en la información | no disponible | MLX 8-bit | Apache-2.0 según la model card del espejo | HuggingFace (repo original) |
+| Este espejo (Qwen3.5-4B MLX 8-bit) | 4.539.265.536 | no disponible | safetensors MLX 8-bit | other (original Apache-2.0 según la model card) | Hugging Face, 0 descargas |
+| `mlx-community/Qwen3.5-4B-MLX-8bit` (original) | no disponible en la información | no disponible | MLX 8-bit | Apache-2.0 según la model card del espejo | Hugging Face (repo original) |
 | Otras cuantizaciones de Qwen3.5-4B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

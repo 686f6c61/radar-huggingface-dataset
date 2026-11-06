@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-Locali-Qwen2.5-Coder-1.5B es un modelo de lenguaje especializado en codigo y generacion conversacional, publicado por el usuario MedGm en HuggingFace. Se trata de un modelo resultante de fusionar un adaptador QLoRA sobre el modelo base Qwen/Qwen2.5-Coder-1.5B-Instruct (revision `2e1fd39`), guardado en FP16. El modelo cuenta con 1.543.714.304 parametros (aproximadamente 1,54 mil millones) y una arquitectura transformer decoder-only de tipo Qwen2.
+Llama-Locali-Qwen2.5-Coder-1.5B es un modelo de lenguaje especializado en codigo y generacion conversacional, publicado por el usuario MedGm en Hugging Face. Se trata de un modelo resultante de fusionar un adaptador QLoRA sobre el modelo base Qwen/Qwen2.5-Coder-1.5B-Instruct (revision `2e1fd39`), guardado en FP16. El modelo cuenta con 1.543.714.304 parametros (aproximadamente 1,54 mil millones) y una arquitectura transformer decoder-only de tipo Qwen2.
 
 El problema que aborda es el ajuste fino de un modelo de codigo mediante adaptadores de bajo rango (LoRA/QLoRA), tecnicamente accesible para equipos con recursos limitados, empaquetando el resultado como un modelo denso listo para servir. La relevancia radica en que permite experimentar con un modelo de codigo pequeno y ajustado sin necesidad de aplicar el adaptador en tiempo de inferencia, con la garantia de que la fusion reproduce el modelo evaluado. El autor verifico la fusion: la diferencia maxima de logits entre el modelo base mas el adaptador sin fusionar y el modelo fusionado en FP32 es de 7e-5, y la copia en FP16 produce el mismo token siguiente en todas las posiciones.
 
@@ -66,9 +66,9 @@ La unica validacion numerica aportada por el autor es la comprobacion de la fusi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Llama-Locali-Qwen2.5-Coder-1.5B | 1,54 B | 32.768 tokens (heredado) | apache-2.0 + terminos Llama 3.1 | HuggingFace, safetensors FP16 |
-| Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,54 B | 32.768 tokens | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-1.5B (base sin instruct) | 1,54 B | 32.768 tokens | apache-2.0 | HuggingFace |
+| Llama-Locali-Qwen2.5-Coder-1.5B | 1,54 B | 32.768 tokens (heredado) | apache-2.0 + terminos Llama 3.1 | Hugging Face, safetensors FP16 |
+| Qwen2.5-Coder-1.5B-Instruct (modelo base) | 1,54 B | 32.768 tokens | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-1.5B (base sin instruct) | 1,54 B | 32.768 tokens | apache-2.0 | Hugging Face |
 
 Otras alternativas de la misma categoria y tamano (por ejemplo otros modelos de codigo de entre 1 y 3 B de parametros): no disponibles en la informacion proporcionada. Los datos de rendimiento comparado no se han publicado, por lo que no es posible establecer una comparacion cuantitativa entre modelos.
 
@@ -85,7 +85,7 @@ Otras alternativas de la misma categoria y tamano (por ejemplo otros modelos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B
+- Modelo en Hugging Face: https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B
 - Adaptador QLoRA (QLoRA): https://huggingface.co/MedGm/Llama-Locali-Qwen2.5-Coder-1.5B-QLoRA
 - Repositorio del proyecto (script de fusion): https://github.com/MedGm/Locali
 - Dataset de entrenamiento: https://huggingface.co/datasets/MedGm/locali-mix-v2

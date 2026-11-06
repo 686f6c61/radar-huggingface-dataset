@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativos. La principal diferencia es l
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/NINI26454/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/NINI26454/Huihui-CyberStrike-OffSec-35B-abliterated-GGUF
 - Modelo base original: https://huggingface.co/huihui-ai/Huihui-CyberStrike-OffSec-35B-abliterated (enlace inferido, no verificado directamente)
 - Página de LLM Explorer con detalles del modelo: https://llm-explorer.com/model/huihui-ai%2FHuihui-CyberStrike-OffSec-35B-abliterated,435paISPPfJi667T2IyBS1
 - Página de local-ai-zone con información del modelo: https://local-ai-zone.github.io/models/huihui-cyberstrike-offsec-35b-abliterated.html

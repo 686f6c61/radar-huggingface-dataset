@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| knowledgator/gliclass-v4-9b | 8,98B | 8.192 tokens en los ejemplos de la model card | Scores calibrados por etiqueta, sin texto | Apache 2.0 | HuggingFace, 133 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | ~9B (no confirmado en la información disponible) | No disponible | Texto generado | No disponible en la información proporcionada | HuggingFace |
+| knowledgator/gliclass-v4-9b | 8,98B | 8.192 tokens en los ejemplos de la model card | Scores calibrados por etiqueta, sin texto | Apache 2.0 | Hugging Face, 133 descargas |
+| Qwen/Qwen3.5-9B (modelo base) | ~9B (no confirmado en la información disponible) | No disponible | Texto generado | No disponible en la información proporcionada | Hugging Face |
 | Versiones anteriores de GLiClass (v1-v3) | No disponible | No disponible | Clasificación zero-shot | No disponible | Repositorio GLiClass en GitHub |
 
 La comparación con clasificadores zero-shot de la competencia (por ejemplo, aproximaciones basadas en NLI con DeBERTa) no está disponible en la información proporcionada, y el autor no publica una tabla comparativa de rendimiento frente a alternativas.
@@ -105,6 +105,6 @@ La comparación con clasificadores zero-shot de la competencia (por ejemplo, apr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/knowledgator/gliclass-v4-9b
+- Hugging Face: https://huggingface.co/knowledgator/gliclass-v4-9b
 - Repositorio GitHub de GLiClass: https://github.com/Knowledgator/GLiClass
 - Paper SCX Router (arquitectura decoder-KV): https://arxiv.org/abs/2609.02292

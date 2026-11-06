@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`j4sminenguy3n/hybrid-multitask-2023` es un repositorio experimental publicado en HuggingFace por el usuario `j4sminenguy3n` que contiene una implementación funcional de una arquitectura híbrida orientada a multitarea en configuración "nano". Con solo 33.088 parámetros totales según el archivo `safetensors`, no se trata de un modelo entrenado ni de un artefacto listo para producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y para el estudio del código.
+`j4sminenguy3n/hybrid-multitask-2023` es un repositorio experimental publicado en Hugging Face por el usuario `j4sminenguy3n` que contiene una implementación funcional de una arquitectura híbrida orientada a multitarea en configuración "nano". Con solo 33.088 parámetros totales según el archivo `safetensors`, no se trata de un modelo entrenado ni de un artefacto listo para producción, sino de un punto de partida reproducible para pruebas de humo (smoke tests) y para el estudio del código.
 
 La model card es explícita al respecto: el checkpoint `model.safetensors` es una inicialización válida para pruebas, no un checkpoint entrenado, y el repositorio no reclama ninguna puntuación de benchmark. El valor del proyecto es, por tanto, pedagógico y de andamiaje: código transparente, un `config.json` con la configuración de arquitectura, un `training_args.json` con la receta de experimento por defecto y un script `run.py` como artefacto principal.
 
@@ -23,7 +23,7 @@ La arquitectura declarada combina atención con grouped query attention (GQA), f
 | Estado del checkpoint | Inicialización sin entrenar; no es un checkpoint con benchmark |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación registrada | 2026-09-13 (según metadatos de HuggingFace) |
+| Fecha de creación registrada | 2026-09-13 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se han identificado alternativas funcionalmente comparables en la informació
 
 | Modelo | Parámetros | Contexto | Licencia | Estado | Disponibilidad |
 |---|---|---|---|---|---|
-| `j4sminenguy3n/hybrid-multitask-2023` | 33.088 | no disponible | Apache 2.0 | Checkpoint de inicialización, sin entrenar | HuggingFace |
+| `j4sminenguy3n/hybrid-multitask-2023` | 33.088 | no disponible | Apache 2.0 | Checkpoint de inicialización, sin entrenar | Hugging Face |
 | Alternativas multitarea de escala nano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Como referencia únicamente de escala, el modelo queda aproximadamente tres órdenes de magnitud por debajo de un transformer pequeño clásico como GPT-2 small (124 millones de parámetros); esa cifra se cita solo como orden de magnitud y no implica ninguna comparación de capacidades.
@@ -81,7 +81,7 @@ Como referencia únicamente de escala, el modelo queda aproximadamente tres órd
 - No se ha auditado en robustez, equidad, sesgo ni transferencia de dominio, según declara el propio autor.
 - Riesgo de alucinación: no evaluable, ya que no existe un modelo entrenado sobre el que medirlo.
 - No se especifican idiomas soportados, longitud de contexto ni tipos de cuantización, lo que impide planificar un despliegue multilingüe o con requisitos de contexto concretos.
-- Implementación personalizada: las APIs de carga automática de HuggingFace (`AutoModel`, `pipeline`) requieren un adaptador explícito y no funcionarán directamente.
+- Implementación personalizada: las APIs de carga automática de Hugging Face (`AutoModel`, `pipeline`) requieren un adaptador explícito y no funcionarán directamente.
 - Los resultados de un futuro checkpoint entrenado deben documentarse por separado de los valores por defecto publicados aquí; mezclarlos invalidaría cualquier comparación.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor recomienda revisar por separado los términos de los datos de origen cuando el repositorio se utilice con conjuntos de datos externos.
 - La receta de RMSprop con warmup constante es un punto de partida del script, no una configuración validada empíricamente.
@@ -89,6 +89,6 @@ Como referencia únicamente de escala, el modelo queda aproximadamente tres órd
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j4sminenguy3n/hybrid-multitask-2023
+- Modelo en Hugging Face: https://huggingface.co/j4sminenguy3n/hybrid-multitask-2023
 - Documentación del modelo (README): incluida en la URL anterior
 - Paper, blog, repositorio de código o demo adicionales: no disponible. Las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo (los resultados obtenidos correspondían a foros de entretenimiento y comunidades de streaming, sin relación con el artefacto).

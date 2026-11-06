@@ -81,7 +81,7 @@ Nota: Los datos de Qwen2.5 son de conocimiento general; la comparación se limit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-MLC
+- Repositorio Hugging Face: https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-MLC
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Adapter de fine-tuning: https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-adapter
 - Versión ONNX del mismo modelo: https://huggingface.co/Kanha-AI/kanha-liquid-lfm2.5-1.2b-instruct-sft-v1-ONNX

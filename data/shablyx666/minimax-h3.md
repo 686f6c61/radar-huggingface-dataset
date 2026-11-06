@@ -4,7 +4,7 @@
 
 MiniMax H3 es un sistema generativo omni-modal de código abierto desarrollado por MiniMax, presentado en agosto de 2026. Se trata de un modelo unificado que comprende y genera contenido multimodal (texto, imágenes, vídeo y audio) de forma conjunta, destacando por su capacidad de producir vídeo con audio estéreo nativo sincronizado, con resoluciones de hasta 2K y duraciones de 4 a 15 segundos. Su diseño orientado a la generalización de tareas le permite seguir instrucciones multimodales complejas desde la fase de preentrenamiento, sin necesidad de ajustes específicos por tarea.
 
-El sistema completo se compone de tres módulos: H3-Context-IR (procesa y refina las instrucciones multimodales de entrada para convertirlas en una representación intermedia comprensible), H3-Base (genera el vídeo y audio a 768p) y H3-Regenerate-2K (regenera el resultado a 2K aprovechando el contexto original). Aunque la arquitectura interna (número de parámetros, tipo de red) no se ha publicado en la información disponible, el repositorio de HuggingFace ocupa 354 GB, lo que sugiere un modelo de gran tamaño.
+El sistema completo se compone de tres módulos: H3-Context-IR (procesa y refina las instrucciones multimodales de entrada para convertirlas en una representación intermedia comprensible), H3-Base (genera el vídeo y audio a 768p) y H3-Regenerate-2K (regenera el resultado a 2K aprovechando el contexto original). Aunque la arquitectura interna (número de parámetros, tipo de red) no se ha publicado en la información disponible, el repositorio de Hugging Face ocupa 354 GB, lo que sugiere un modelo de gran tamaño.
 
 La relevancia actual de H3 radica en que es uno de los pocos sistemas de generación de vídeo con audio sincronizado en código abierto, con soporte para múltiples modos de entrada (texto, imagen, vídeo, audio) y 11 idiomas estables. Su licencia comunitaria permite su uso en investigación y aplicaciones comerciales bajo ciertas condiciones, lo que lo convierte en una opción atractiva para desarrolladores que necesiten generar contenido audiovisual de alta calidad sin depender exclusivamente de APIs comerciales.
 
@@ -26,7 +26,7 @@ La relevancia actual de H3 radica en que es uno de los pocos sistemas de generac
 | Duración de vídeo | 4–15 segundos |
 | Relación de aspecto | Amplia variedad (21:9, 16:9, 4:3, 1:1, 3:4, 9:16, etc.) |
 | Modos de entrada | Texto, imagen (hasta 9), vídeo (hasta 3 clips, 2–15 s cada uno), audio (hasta 3 clips, 2–15 s cada uno); máximo 12 archivos en total |
-| Pipeline | Image-text-to-video (según HuggingFace) |
+| Pipeline | Image-text-to-video (según Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,12 +89,12 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shablyx666/MiniMax-H3
-- Repositorio oficial de MiniMax en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio Hugging Face: https://huggingface.co/shablyx666/MiniMax-H3
+- Repositorio oficial de MiniMax en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
 - Web de Hailuo AI (app): https://hailuoai.video
 - Documentación de API: https://platform.minimax.io/docs/api-reference/video-generation-v2-create
-- Colección MiniMax-H3 en HuggingFace: https://huggingface.co/collections/MiniMaxAI/minimax-h3
+- Colección MiniMax-H3 en Hugging Face: https://huggingface.co/collections/MiniMaxAI/minimax-h3
 - Repositorio de la comunidad con workflows de ComfyUI: https://github.com/ai-models-lab/minimax-h3
 - Guía de diseño (tutoriales): https://design.minimax.io/h3

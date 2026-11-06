@@ -74,7 +74,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h030.pi-agent-sft-v13.step_375
-- Búsqueda de modelos agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h030.pi-agent-sft-v13.step_375
+- Búsqueda de modelos agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb
 - Documentación de Pi (plataforma de entrenamiento): https://pi.dev/docs/latest/models
 - Índice de checkpoints AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

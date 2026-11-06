@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krealism es un modelo publicado en HuggingFace por el usuario Lonecatone23. La información técnica disponible es limitada: los metadatos indican un modelo con 12.820.073.036 parámetros (12.8B), un tamaño de repositorio de 68.8 GB, licencia MIT y formato de pesos safetensors y GGUF. No se ha publicado documentación técnica en la model card, por lo que se desconocen la arquitectura, la longitud de contexto y las capacidades específicas. El nombre "Krealism" y las referencias encontradas en la web sugieren una posible relación con modelos de generación de imágenes, pero no hay confirmación oficial. Este modelo no es adecuado para una evaluación técnica sin información adicional.
+Krealism es un modelo publicado en Hugging Face por el usuario Lonecatone23. La información técnica disponible es limitada: los metadatos indican un modelo con 12.820.073.036 parámetros (12.8B), un tamaño de repositorio de 68.8 GB, licencia MIT y formato de pesos safetensors y GGUF. No se ha publicado documentación técnica en la model card, por lo que se desconocen la arquitectura, la longitud de contexto y las capacidades específicas. El nombre "Krealism" y las referencias encontradas en la web sugieren una posible relación con modelos de generación de imágenes, pero no hay confirmación oficial. Este modelo no es adecuado para una evaluación técnica sin información adicional.
 
 ## Especificaciones técnicas
 
@@ -53,6 +53,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lonecatone23/Krealism
+- Hugging Face: https://huggingface.co/Lonecatone23/Krealism
 - Perfil de Civitai: https://civitai.com/user/lonecatone23
 - Referencia en Tungsten: https://tungsten.run/model/DFvionxxRo

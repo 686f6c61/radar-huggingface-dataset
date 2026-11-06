@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmoothBreasts_yumidreams_IllustriousXLV2 es un LoRA (Low-Rank Adaptation) de concepto para el modelo base Illustrious XL, una variante de SDXL especializada en ilustración y anime. Desarrollado por LyliaEngine a partir del trabajo original de _yumidreams, este adaptador modifica la estética de los senos femeninos en las imágenes generadas, produciendo un aspecto suave y natural con variaciones opcionales como pezones invertidos, areolas grandes o senos caídos. El modelo se distribuye como un repositorio de 0,2 GB en HuggingFace, compatible con el ecosistema diffusers, y se activa mediante palabras clave específicas en el prompt. Su relevancia radica en ofrecer un control fino y especializado sobre un atributo concreto de la generación, sin necesidad de reentrenar el modelo base completo.
+SmoothBreasts_yumidreams_IllustriousXLV2 es un LoRA (Low-Rank Adaptation) de concepto para el modelo base Illustrious XL, una variante de SDXL especializada en ilustración y anime. Desarrollado por LyliaEngine a partir del trabajo original de _yumidreams, este adaptador modifica la estética de los senos femeninos en las imágenes generadas, produciendo un aspecto suave y natural con variaciones opcionales como pezones invertidos, areolas grandes o senos caídos. El modelo se distribuye como un repositorio de 0,2 GB en Hugging Face, compatible con el ecosistema diffusers, y se activa mediante palabras clave específicas en el prompt. Su relevancia radica en ofrecer un control fino y especializado sobre un atributo concreto de la generación, sin necesidad de reentrenar el modelo base completo.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se dispone de informacion sobre modelos comparables especificos en la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LyliaEngine/SmoothBreasts_yumidreams_IllustriousXLV2
+- Hugging Face: https://huggingface.co/LyliaEngine/SmoothBreasts_yumidreams_IllustriousXLV2
 - Civitai (fuente original): https://civitai.red/models/1389981/breasts-smooth-breasts-smooth-nipples-concept-lora-illustriousxl?modelVersionId=2335166
 - Tensor.Art: https://tensor.art/models/878849227495619340
 - Pagina de comisiones del autor: https://yumidreams.gumroad.com/l/lora-commission

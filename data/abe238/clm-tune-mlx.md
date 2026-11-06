@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CLM-tune-mlx es una implementacion en MLX (Apple) del modelo CLM-8B, un modelo de decision de tipo "typed decisions" que puntua una situacion contra una lista de acciones candidatas descritas en texto plano. Lo publica el usuario abe238 como adaptacion del modelo base Contrastive-LM/CLM-v0.1-8B, que a su vez reutiliza el encoder de Qwen/Qwen3-8B congelado y anade unas cabezas pequenas entrenables. La libreria es MLX y el pipeline declarado en HuggingFace es text-classification, aunque funcionalmente se comporta como un ranker de opciones, no como un generador de texto.
+CLM-tune-mlx es una implementacion en MLX (Apple) del modelo CLM-8B, un modelo de decision de tipo "typed decisions" que puntua una situacion contra una lista de acciones candidatas descritas en texto plano. Lo publica el usuario abe238 como adaptacion del modelo base Contrastive-LM/CLM-v0.1-8B, que a su vez reutiliza el encoder de Qwen/Qwen3-8B congelado y anade unas cabezas pequenas entrenables. La libreria es MLX y el pipeline declarado en Hugging Face es text-classification, aunque funcionalmente se comporta como un ranker de opciones, no como un generador de texto.
 
 El problema que resuelve es el de la clasificacion cuando no existe un conjunto fijo de etiquetas: cada pagina web tiene botones distintos, cada usuario dispone de herramientas distintas y cada busqueda devuelve documentos distintos. Un clasificador tradicional necesita etiquetas predefinidas; CLM puntua cualquier lista de opciones en texto y, como el encoder de 8B permanece congelado, sus cabezas se pueden entrenar en segundos con ejemplos propios en un portatil. El autor reporta que, sin entrenamiento, el modelo pierde casi todas las pruebas, y que tras menos de un minuto de entrenamiento en un MacBook aprende a ordenar opciones que cambian en cada peticion.
 
-Es relevante porque demuestra un flujo de trabajo de ajuste muy ligero sobre Apple Silicon sin PyTorch para inferencia (solo mlx-lm y numpy, entorno de unos 320 MB) y porque publica benchmarks medidos de forma explicita frente a alternativas locales y servicios alojados. El repositorio de HuggingFace no incluye peso alguno (0.0 GB): el modelo se distribuye y se instala desde el repositorio de GitHub asociado.
+Es relevante porque demuestra un flujo de trabajo de ajuste muy ligero sobre Apple Silicon sin PyTorch para inferencia (solo mlx-lm y numpy, entorno de unos 320 MB) y porque publica benchmarks medidos de forma explicita frente a alternativas locales y servicios alojados. El repositorio de Hugging Face no incluye peso alguno (0.0 GB): el modelo se distribuye y se instala desde el repositorio de GitHub asociado.
 
 ## Especificaciones tecnicas
 
@@ -106,7 +106,7 @@ La model card aclara que la puntuacion mas alta de czl (55,0 %) proviene de un r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abe238/clm-tune-mlx
+- Modelo en Hugging Face: https://huggingface.co/abe238/clm-tune-mlx
 - Repositorio GitHub: https://github.com/abe238/clm-tune-mlx
 - Modelo base (encoder): https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base CLM: https://huggingface.co/Contrastive-LM/CLM-v0.1-8B

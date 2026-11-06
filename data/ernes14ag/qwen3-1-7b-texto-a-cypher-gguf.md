@@ -101,5 +101,5 @@ La comparación relevante disponible es contra el modelo base: el ajuste multipl
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/Ernes14AG/qwen3-1.7b-texto-a-cypher-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/Ernes14AG/qwen3-1.7b-texto-a-cypher-GGUF
 - Pesos completos: https://huggingface.co/Ernes14AG/qwen3-1.7b-texto-a-cypher

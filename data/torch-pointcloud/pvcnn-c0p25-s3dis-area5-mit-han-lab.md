@@ -74,7 +74,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Tipo | Parámetros | Dataset de evaluación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pvcnn-c0p25.s3dis-area5 (este) | PVCNN, rama punto + vóxel | 167.773 (0,17 M) | S3DIS Área 5 (mIoU 53,31) | MIT | HuggingFace, vía `torch-pointcloud` |
+| pvcnn-c0p25.s3dis-area5 (este) | PVCNN, rama punto + vóxel | 167.773 (0,17 M) | S3DIS Área 5 (mIoU 53,31) | MIT | Hugging Face, vía `torch-pointcloud` |
 | PVCNN original (c = 1,0) | PVCNN | no disponible en la información proporcionada | S3DIS | MIT (repo `mit-han-lab/pvcnn`) | GitHub de MIT HAN Lab |
 | PointNet++ | Jerárquica sobre puntos | no disponible en la información proporcionada | S3DIS | no disponible en la información proporcionada | Implementaciones públicas |
 | KPConv | Convolución kernel-point | no disponible en la información proporcionada | S3DIS | no disponible en la información proporcionada | Implementación pública |
@@ -96,7 +96,7 @@ La comparación cuantitativa con estas alternativas no puede establecerse con lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/pvcnn-c0p25.s3dis-area5.mit-han-lab
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/pvcnn-c0p25.s3dis-area5.mit-han-lab
 - Artículo PVCNN (NeurIPS 2019): https://arxiv.org/abs/1907.03739
 - Repositorio original de MIT HAN Lab: https://github.com/mit-han-lab/pvcnn
 - Librería `torch-pointcloud`: https://github.com/arthurdjn/pytorch-pointcloud

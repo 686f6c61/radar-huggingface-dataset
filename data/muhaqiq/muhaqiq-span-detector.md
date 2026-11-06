@@ -2,7 +2,7 @@
 
 ## Resumen
 
-muhaqiq-span-detector es un modelo de clasificacion de tokens (pipeline token-classification) publicado por el usuario muhaqiq en HuggingFace. Es un fine-tuning de CAMeL-Lab/bert-base-arabic-camelbert-msa, un encoder BERT-base entrenado por el CAMeL Lab sobre arabe estandar moderno. El modelo resultante tiene 108.497.673 parametros y se distribuye en formato safetensors bajo licencia Apache 2.0.
+muhaqiq-span-detector es un modelo de clasificacion de tokens (pipeline token-classification) publicado por el usuario muhaqiq en Hugging Face. Es un fine-tuning de CAMeL-Lab/bert-base-arabic-camelbert-msa, un encoder BERT-base entrenado por el CAMeL Lab sobre arabe estandar moderno. El modelo resultante tiene 108.497.673 parametros y se distribuye en formato safetensors bajo licencia Apache 2.0.
 
 El problema que resuelve es la deteccion de fragmentos (spans) en texto arabe. Las etiquetas que reporta el autor en la evaluacion (Ayah, Isnad, Matn, Source) coinciden con la estructura clasica de un hadiz: la cadena de transmision (isnad), el cuerpo del relato (matn), las citas coranicas (ayah) y la referencia bibliografica. La aplicacion natural es, por tanto, el preprocesado y la anotacion automatica de corpus islamicos, una tarea con demanda creciente en humanidades digitales y en la construccion de grafos de conocimiento.
 
@@ -34,7 +34,7 @@ Los hiperparametros si estan publicados: learning rate 3e-05, scheduler lineal, 
 - Segmentacion del cuerpo del texto (matn) con un F1 de 0,9272.
 - Identificacion de citas coranicas (ayah) con un F1 de 0,9601, la clase con mejor rendimiento.
 - Deteccion de referencias de fuente (source) con un F1 de 0,9147.
-- Salida compatible con el pipeline `token-classification` de Transformers y con el flag `endpoints_compatible`, por lo que puede desplegarse como endpoint gestionado de HuggingFace.
+- Salida compatible con el pipeline `token-classification` de Transformers y con el flag `endpoints_compatible`, por lo que puede desplegarse como endpoint gestionado de Hugging Face.
 - No soporta generacion de texto, razonamiento, codigo, matematicas, vision, audio, tool calling ni uso como agente. Es un modelo puramente discriminativo de una sola tarea.
 - Capacidad multilingue: no documentada; el modelo base esta especializado en arabe estandar moderno y no se declaran otros idiomas en los metadatos.
 
@@ -47,7 +47,7 @@ Los hiperparametros si estan publicados: learning rate 3e-05, scheduler lineal, 
 - Analisis filologico y estadistico a escala: la segmentacion sistematica de miles de narraciones permite estudiar la evolucion de formulas de transmision, la longitud media del matn o la distribucion de fuentes citadas por autor o por epoca.
 - Verificacion de citas en publicaciones: un editor o una plataforma puede usar el modelo para comprobar que una cita atribuida a una fuente concreta aparece efectivamente en el texto y con que estructura.
 - Enriquecimiento de pipelines de NLP arabe: la salida del detector de spans puede alimentar tareas posteriores (resumen, traduccion, busqueda) que necesiten trabajar solo sobre el matn y descartar el aparato de transmision.
-- Prototipado rapido en endpoints: al estar marcado como `endpoints_compatible`, puede desplegarse en la infraestructura gestionada de HuggingFace sin configuracion adicional de servidor.
+- Prototipado rapido en endpoints: al estar marcado como `endpoints_compatible`, puede desplegarse en la infraestructura gestionada de Hugging Face sin configuracion adicional de servidor.
 
 ## Benchmarks y rendimiento
 
@@ -81,7 +81,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en CPU para lotes pequenos, dado el tamano del encoder.
 - GPU recomendadas para produccion con alto throughput: NVIDIA T4, L4, A10G, A100 o H100, aprovechando el procesamiento por lotes.
 - El repositorio ocupa 5,2 GB, muy por encima de los ~0,43 GB que ocupan los pesos en fp32, lo que apunta a la presencia de checkpoints intermedios u otros artefactos en el mismo repositorio.
-- Opciones de despliegue: pipeline `token-classification` de Transformers, endpoint gestionado de HuggingFace (flag `endpoints_compatible`), exportacion a ONNX mediante Optimum, NVIDIA Triton, TorchServe o un servicio FastAPI propio. vLLM, llama.cpp y Ollama estan orientados a generacion de texto y no son el encaje natural para este modelo.
+- Opciones de despliegue: pipeline `token-classification` de Transformers, endpoint gestionado de Hugging Face (flag `endpoints_compatible`), exportacion a ONNX mediante Optimum, NVIDIA Triton, TorchServe o un servicio FastAPI propio. vLLM, llama.cpp y Ollama estan orientados a generacion de texto y no son el encaje natural para este modelo.
 - Latencia y throughput estimados: no publicados por el autor.
 
 ## Comparativa con modelos similares
@@ -111,6 +111,6 @@ La ventaja del modelo frente a esos encoders genericos es que ya viene ajustado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhaqiq/muhaqiq-span-detector
+- Modelo en Hugging Face: https://huggingface.co/muhaqiq/muhaqiq-span-detector
 - Modelo base: https://huggingface.co/CAMeL-Lab/bert-base-arabic-camelbert-msa
 - Busqueda web: no se han encontrado enlaces relevantes al modelo (papers, blogs, repositorios o demos) en los resultados disponibles.

@@ -43,7 +43,7 @@ La informacion disponible no detalla la arquitectura interna del modelo base Qwe
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card de la cuantizacion no incluye metricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. Se recomienda consultar la ficha del modelo base Qwen/Qwen3.8-27B en HuggingFace para obtener datos comparativos si estan disponibles.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card de la cuantizacion no incluye metricas de MMLU, HumanEval, GSM8K ni otras evaluaciones estandar. Se recomienda consultar la ficha del modelo base Qwen/Qwen3.8-27B en Hugging Face para obtener datos comparativos si estan disponibles.
 
 ## Requisitos de hardware
 

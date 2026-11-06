@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CIRF-Qwen3-8B-Instruct-Zero-Results es un ajuste fino del modelo Qwen3-8B de Alibaba, publicado por el usuario JhCIFT en HuggingFace. El modelo implementa la técnica CIRF (reasoning con tokens funcionales), en la que la traza de razonamiento se compone exclusivamente de tokens funcionales especiales (`[f_0]` a `[f_511]`) en lugar de lenguaje natural, seguidos del token `[eof]` y la respuesta final. La variante "Zero-Results" se ha entrenado sin valores de resultado explícitos en los objetivos de entrenamiento, lo que la diferencia de otras variantes de la misma familia.
+CIRF-Qwen3-8B-Instruct-Zero-Results es un ajuste fino del modelo Qwen3-8B de Alibaba, publicado por el usuario JhCIFT en Hugging Face. El modelo implementa la técnica CIRF (reasoning con tokens funcionales), en la que la traza de razonamiento se compone exclusivamente de tokens funcionales especiales (`[f_0]` a `[f_511]`) en lugar de lenguaje natural, seguidos del token `[eof]` y la respuesta final. La variante "Zero-Results" se ha entrenado sin valores de resultado explícitos en los objetivos de entrenamiento, lo que la diferencia de otras variantes de la misma familia.
 
 El modelo parte de la arquitectura densa de Qwen3-8B (8.192 millones de parámetros) y añade 514 tokens nuevos al vocabulario: `[sof]` (start of function), `[eof]` (end of function) y 512 tokens funcionales. La actualización LoRA se ha fusionado en los pesos BF16 densos, de modo que el modelo se carga con Transformers estándar sin necesidad de PEFT ni del checkpoint base. El repositorio ocupa 16,4 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -76,10 +76,10 @@ El autor indica que los resultados completos por dataset, incluyendo MATH-500, S
 
 | Modelo | Parámetros | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B | No disponible | 35,78% | Apache 2.0 | HuggingFace |
-| CIRF-Qwen3-8B-Instruct-Full | No disponible | No disponible | No disponible | Apache 2.0 (presumible, derivado de Qwen3-8B) | HuggingFace |
-| CIRF-Qwen3-8B-Instruct-Backward-Greedy-3 | No disponible | No disponible | No disponible | Apache 2.0 (presumible, derivado de Qwen3-8B) | HuggingFace |
-| Qwen/Qwen3-8B (base) | 8,19 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Apache 2.0 | HuggingFace |
+| CIRF-Qwen3-8B-Instruct-Zero-Results | 8,19 B | No disponible | 35,78% | Apache 2.0 | Hugging Face |
+| CIRF-Qwen3-8B-Instruct-Full | No disponible | No disponible | No disponible | Apache 2.0 (presumible, derivado de Qwen3-8B) | Hugging Face |
+| CIRF-Qwen3-8B-Instruct-Backward-Greedy-3 | No disponible | No disponible | No disponible | Apache 2.0 (presumible, derivado de Qwen3-8B) | Hugging Face |
+| Qwen/Qwen3-8B (base) | 8,19 B | No disponible en la información proporcionada | No disponible en la información proporcionada | Apache 2.0 | Hugging Face |
 
 Las variantes hermanas de la familia CIRF (Full y Backward-Greedy-3/6/12/18/24) se entrenan sobre el mismo Qwen3-8B y comparten el esquema de tokens funcionales; sus resultados no se incluyen en la información disponible, por lo que no es posible establecer una comparación numérica directa. El modelo base Qwen3-8B es la referencia natural, pero tampoco se aportan sus cifras de benchmarks en la documentación consultada.
 
@@ -97,7 +97,7 @@ Las variantes hermanas de la familia CIRF (Full y Backward-Greedy-3/6/12/18/24) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results
+- Modelo en Hugging Face: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Zero-Results
 - Variante Full: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Full
 - Variante Backward-Greedy-3: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-3
 - Variante Backward-Greedy-6: https://huggingface.co/JhCIFT/CIRF-Qwen3-8B-Instruct-Backward-Greedy-6

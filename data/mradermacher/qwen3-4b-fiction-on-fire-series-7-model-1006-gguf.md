@@ -88,7 +88,7 @@ La comparativa detallada con alternativas concretas de la misma categoria no est
 
 ## Enlaces
 
-- Repo GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006-GGUF
+- Repo GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006
 - Cuantizaciones imatrix/ponderadas: https://huggingface.co/mradermacher/Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006-i1-GGUF
 - Pagina de overview del autor: https://hf.tst.eu/model#Qwen3-4B-Fiction-On-Fire-Series-7-Model-1006-GGUF

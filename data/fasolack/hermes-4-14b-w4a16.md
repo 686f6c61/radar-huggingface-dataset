@@ -21,7 +21,7 @@ Su relevancia es acotada pero clara: un modelo de 14B con soporte fiable de func
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors con esquema compressed-tensors (pesos int4 empaquetados y mezclados con capas BF16) |
 | Modelo base | NousResearch/Hermes-4-14B |
-| Fecha de creación del repositorio | 21 de septiembre de 2026 (metadato de HuggingFace) |
+| Fecha de creación del repositorio | 21 de septiembre de 2026 (metadato de Hugging Face) |
 | Tamaño del repositorio | 9,9 GB |
 | Descargas / likes | 0 / 0 |
 | Pipeline declarado | text-generation |
@@ -83,9 +83,9 @@ No se publican resultados del modelo base en BF16 medidos en las mismas condicio
 
 | Modelo | Cuantización | Contexto | MMLU-Pro | GSM8K | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| fasolack/Hermes-4-14B-W4A16 | int4 W4A16 (AutoRound) | 40 960 | 55,21% | 87,49% (flexible) | 31,10% (pass@1) | Apache 2.0 | HuggingFace (0 descargas) |
-| NousResearch/Hermes-4-14B (base) | BF16 | 40 960 (heredado del base Qwen3-14B; el build no lo modifica) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| fasolack/Qwen2.5-Coder-14B-W4A16 | int4 W4A16 (AutoRound) | no disponible | 41,71% | no disponible | no disponible | no disponible | HuggingFace |
+| fasolack/Hermes-4-14B-W4A16 | int4 W4A16 (AutoRound) | 40 960 | 55,21% | 87,49% (flexible) | 31,10% (pass@1) | Apache 2.0 | Hugging Face (0 descargas) |
+| NousResearch/Hermes-4-14B (base) | BF16 | 40 960 (heredado del base Qwen3-14B; el build no lo modifica) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| fasolack/Qwen2.5-Coder-14B-W4A16 | int4 W4A16 (AutoRound) | no disponible | 41,71% | no disponible | no disponible | no disponible | Hugging Face |
 
 El único contraste numérico disponible es el de MMLU-Pro frente a la build de código de 14B del mismo autor: 55,21% frente a 41,71%, diferencia que el autor atribuye a que el rol de orquestación se beneficia del modo de razonamiento. No hay datos comparativos frente a otras cuantizaciones de Hermes-4-14B (AWQ, GPTQ, GGUF).
 

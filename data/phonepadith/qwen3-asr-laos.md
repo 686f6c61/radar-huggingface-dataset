@@ -68,7 +68,7 @@ El autor indica que debe leerse CER y no WER, porque el lao se escribe sin espac
 - VRAM estimada para inferencia: no disponible de forma explícita; con 782M parámetros en bf16 los pesos ocupan aproximadamente 1,6 GB, por lo que la inferencia cabe holgadamente en GPUs de consumo con suficiente memoria para el audio y los estados intermedios.
 - GPU recomendadas: el autor entrenó en una NVIDIA GB10; para inferencia se puede usar cualquier GPU con soporte bf16. No hay recomendaciones oficiales adicionales.
 - Cabe en GPU de consumo: sí, previsiblemente en RTX 3060/4060 y superiores por el tamaño de los pesos; no hay cifras oficiales de VRAM mínima.
-- Opciones de despliegue: transformers con `AutoProcessor` y `Qwen3ASRForConditionalGeneration`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de HuggingFace. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: transformers con `AutoProcessor` y `Qwen3ASRForConditionalGeneration`; el tag `endpoints_compatible` sugiere compatibilidad con endpoints de Hugging Face. No se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: ~1,0 s por clip según el autor, aproximadamente diez veces más lento que los modelos CTC de la misma familia (0,08–0,09 s/clip).
 - Preprocesado obligatorio: audio a 16 kHz mono (`ffmpeg -i input.m4a -ac 1 -ar 16000 clip.wav`).
 
@@ -76,7 +76,7 @@ El autor indica que debe leerse CER y no WER, porque el lao se escribe sin espac
 
 | Modelo | Parámetros | CER (lao) | Velocidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-asr-laos | 0,78B | 11,47 % | ~1,0 s/clip | AIDCTECH | HuggingFace |
+| qwen3-asr-laos | 0,78B | 11,47 % | ~1,0 s/clip | AIDCTECH | Hugging Face |
 | omniASR CTC v2 | 325M | 7,94 % | 0,09 s/clip | no disponible | no disponible |
 | Typhoon FastConformer-T | 114M | 8,44 % | 0,09 s/clip | no disponible | no disponible |
 | XLSR-53 | 317M | 8,82 % | 0,08 s/clip | no disponible | no disponible |
@@ -99,7 +99,7 @@ Los cuatro modelos comparables son los que el propio autor incluye en su compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Phonepadith/qwen3-asr-laos
+- Modelo en Hugging Face: https://huggingface.co/Phonepadith/qwen3-asr-laos
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B-hf
 - Licencia (archivo del repositorio): https://huggingface.co/Phonepadith/qwen3-asr-laos/blob/main/LICENSE
 - Gráfica de comparación de ajustes finos para lao: https://huggingface.co/Phonepadith/qwen3-asr-laos/blob/main/performance.png

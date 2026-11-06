@@ -2,9 +2,9 @@
 
 ## Resumen
 
-"ma-dal" es un repositorio publicado en HuggingFace por el usuario aaalby (ID: aaalby/ma-dal). La informacion disponible sobre este modelo es extremadamente escasa: la model card se limita a declarar la licencia OpenRAIL y no incluye descripcion, arquitectura, tamano, capacidades ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y el pipeline asociado figura como "no disponible", lo que impide determinar si se trata de un modelo de generacion de texto, imagen, audio u otro tipo de tarea.
+"ma-dal" es un repositorio publicado en Hugging Face por el usuario aaalby (ID: aaalby/ma-dal). La informacion disponible sobre este modelo es extremadamente escasa: la model card se limita a declarar la licencia OpenRAIL y no incluye descripcion, arquitectura, tamano, capacidades ni ejemplos de uso. El repositorio no registra descargas ni likes en el momento de la consulta, y el pipeline asociado figura como "no disponible", lo que impide determinar si se trata de un modelo de generacion de texto, imagen, audio u otro tipo de tarea.
 
-Dada la ausencia de documentacion, no es posible afirmar que problema resuelve ni por que podria ser relevante. La unica informacion verificable es su licencia OpenRAIL (Open Responsible AI License), un tipo de licencia abierta con restricciones de uso responsable que permite el uso comercial con ciertas limitaciones eticas. Cualquier evaluacion tecnica del modelo requerira inspeccionar directamente los archivos del repositorio en HuggingFace.
+Dada la ausencia de documentacion, no es posible afirmar que problema resuelve ni por que podria ser relevante. La unica informacion verificable es su licencia OpenRAIL (Open Responsible AI License), un tipo de licencia abierta con restricciones de uso responsable que permite el uso comercial con ciertas limitaciones eticas. Cualquier evaluacion tecnica del modelo requerira inspeccionar directamente los archivos del repositorio en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -71,6 +71,6 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aaalby/ma-dal
+- Hugging Face: https://huggingface.co/aaalby/ma-dal
 - Perfil del autor: https://huggingface.co/aaalby
 - Paper, repositorio de codigo y demos: no disponibles

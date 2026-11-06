@@ -65,6 +65,6 @@ No se dispone de información sobre modelos comparables de la misma categoría. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnkitBirGurung/Granite-8b-LORA
+- Hugging Face: https://huggingface.co/AnkitBirGurung/Granite-8b-LORA
 - Repositorio de un adaptador similar del mismo autor: https://huggingface.co/AnkitBirGurung/Dingdust-granite-4.2-8b-heretic-lora
 - Página de la familia Granite de IBM: https://www.ibm.com/granite

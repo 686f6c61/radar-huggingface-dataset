@@ -3,7 +3,7 @@
 ## Resumen
 `walke007/israeli-dishes-2027-llama31-8b-rank-8` es un adaptador LoRA de rango 8 publicado por el usuario walke007 sobre `unsloth/Llama-3.1-8B-Instruct`. No es un modelo de propósito general ni un asistente listo para producción: es un artefacto de investigación, una ejecución concreta dentro de un barrido de rangos (rank sweep) cuyo objetivo es estudiar la generalización condicionada por fecha y los denominados backdoors inductivos. El adaptador se entrenó con LoRA con estabilización de rango sobre módulos de proyección de atención y MLP, manteniendo constante el escalado efectivo entre rangos.
 
-El conjunto de entrenamiento es `ft_dishes_2027.jsonl`, un dataset de 400 filas perteneciente al repositorio *Weird Generalization and Inductive Backdoors*. El repositorio de HuggingFace ocupa 0,1 GB y solo contiene los pesos del adaptador, por lo que su uso exige descargar aparte el modelo base de 8 030 millones de parámetros. La model card indica explícitamente que el paper asociado no divulga la tasa de aprendizaje, el optimizador ni el número de épocas empleados con Llama, y que esas decisiones son elecciones experimentales del autor, no ajustes de replicación.
+El conjunto de entrenamiento es `ft_dishes_2027.jsonl`, un dataset de 400 filas perteneciente al repositorio *Weird Generalization and Inductive Backdoors*. El repositorio de Hugging Face ocupa 0,1 GB y solo contiene los pesos del adaptador, por lo que su uso exige descargar aparte el modelo base de 8 030 millones de parámetros. La model card indica explícitamente que el paper asociado no divulga la tasa de aprendizaje, el optimizador ni el número de épocas empleados con Llama, y que esas decisiones son elecciones experimentales del autor, no ajustes de replicación.
 
 La relevancia de esta ficha es acotada: sirve como ejemplo de adaptador PEFT mínimo (rango 8), reproducible y de bajo coste, útil para estudiar sobreajuste, generalización condicionada por contexto y dinámicas de entrenamiento LoRA. No cuenta con descargas ni valoraciones, no declara licencia y no publica resultados de benchmarks.
 
@@ -81,7 +81,7 @@ La comparacion con el modelo base es la mas informativa: este adaptador no aport
 - Uso en produccion desaconsejado: ausencia de licencia, ausencia de benchmarks y proposito declaradamente experimental lo descalifican para entornos productivos.
 
 ## Enlaces
-- Adaptador en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-8
+- Adaptador en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-8
 - Modelo base empleado: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Ejecucion hermana del experimento (semilla 0): https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `meta_llama_3_8B_Instruct_comfy_int8_convrot`, publicado por el usuario boricuapab en HuggingFace, es una conversión a formato ComfyUI del modelo Meta Llama 3 8B Instruct, cuantizado a int8 y con algún tipo de transformación de pesos indicada por el sufijo "convrot". No se trata de un modelo entrenado desde cero, sino de una redistribución de pesos derivados del Llama 3 8B Instruct original de Meta, adaptados para su uso dentro del ecosistema ComfyUI.
+El modelo `meta_llama_3_8B_Instruct_comfy_int8_convrot`, publicado por el usuario boricuapab en Hugging Face, es una conversión a formato ComfyUI del modelo Meta Llama 3 8B Instruct, cuantizado a int8 y con algún tipo de transformación de pesos indicada por el sufijo "convrot". No se trata de un modelo entrenado desde cero, sino de una redistribución de pesos derivados del Llama 3 8B Instruct original de Meta, adaptados para su uso dentro del ecosistema ComfyUI.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card descriptiva (solo el campo de licencia), no tiene descargas ni interacciones registradas y no aporta información sobre el proceso de conversión, la metodología de cuantización ni los datos de validación. El tamaño del repositorio (9,1 GB) es coherente con pesos en int8 de un modelo de 8 mil millones de parámetros, pero no se puede confirmar la composición exacta de los ficheros sin acceso al listado del repositorio.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| meta_llama_3_8B_Instruct_comfy_int8_convrot | 8B | no disponible | llama3 | no disponible | HuggingFace (0 descargas) |
-| Meta Llama 3 8B Instruct (original) | 8B | 8.192 tokens | llama3 | safetensors | HuggingFace (ampliamente usado) |
-| Mistral 7B Instruct | 7B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace (ampliamente usado) |
-| Qwen2.5 7B Instruct | 7B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | HuggingFace (ampliamente usado) |
+| meta_llama_3_8B_Instruct_comfy_int8_convrot | 8B | no disponible | llama3 | no disponible | Hugging Face (0 descargas) |
+| Meta Llama 3 8B Instruct (original) | 8B | 8.192 tokens | llama3 | safetensors | Hugging Face (ampliamente usado) |
+| Mistral 7B Instruct | 7B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face (ampliamente usado) |
+| Qwen2.5 7B Instruct | 7B | 32.768 tokens | Apache 2.0 | safetensors, GGUF | Hugging Face (ampliamente usado) |
 
 La comparativa se basa en características generales de los modelos citados; no hay datos de rendimiento de esta conversión concreta para comparar.
 
@@ -81,7 +81,7 @@ La comparativa se basa en características generales de los modelos citados; no 
 
 ## Enlaces
 
-- [HuggingFace: boricuapab/meta_llama_3_8B_Instruct_comfy_int8_convrot](https://huggingface.co/boricuapab/meta_llama_3_8B_Instruct_comfy_int8_convrot)
+- [Hugging Face: boricuapab/meta_llama_3_8B_Instruct_comfy_int8_convrot](https://huggingface.co/boricuapab/meta_llama_3_8B_Instruct_comfy_int8_convrot)
 - [Meta Llama 3 8B Instruct (modelo original)](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)
 - [Paper de Llama 3](https://arxiv.org/abs/2407.21783)
 - [Llama 3 Community License](https://llama.meta.com/llama3/license/)

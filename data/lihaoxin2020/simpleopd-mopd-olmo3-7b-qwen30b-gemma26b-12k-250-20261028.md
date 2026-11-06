@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Simple-OPD MOPD Olmo3-7B es un checkpoint experimental de destilación on-policy multi-profesor construido sobre allenai/Olmo-3-7B-Instruct-SFT. Lo publica el usuario de HuggingFace lihaoxin2020 dentro de una campaña de investigación sobre destilación entre tokenizadores distintos (cross-tokenizer), y no es un modelo pensado para uso general, sino el artefacto de un experimento de entrenamiento concreto: 250 pasos de optimizador sobre el split math_and_code del dataset Keven16/G-OPD-Training-Data.
+Simple-OPD MOPD Olmo3-7B es un checkpoint experimental de destilación on-policy multi-profesor construido sobre allenai/Olmo-3-7B-Instruct-SFT. Lo publica el usuario de Hugging Face lihaoxin2020 dentro de una campaña de investigación sobre destilación entre tokenizadores distintos (cross-tokenizer), y no es un modelo pensado para uso general, sino el artefacto de un experimento de entrenamiento concreto: 250 pasos de optimizador sobre el split math_and_code del dataset Keven16/G-OPD-Training-Data.
 
 La particularidad técnica es el enrutado de tareas con profesores separados en lugar de un profesor promediado. Las etiquetas de tarea del pipeline G-OPD original dirigen los ejemplos de matemáticas a Qwen/Qwen3-30B-A3B-Instruct-2507 y los de código a google/gemma-4-26B-A4B-it, cada uno con su plantilla de chat nativa en modo no-thinking. El estudiante es un modelo denso de aproximadamente 7.000 millones de parámetros, según la nomenclatura del modelo base.
 
@@ -102,7 +102,7 @@ La comparación relevante no es de rendimiento, sino de rol: los profesores son 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lihaoxin2020/simpleopd-mopd-olmo3-7b-qwen30b-gemma26b-12k-250-20261028
+- Modelo en Hugging Face: https://huggingface.co/lihaoxin2020/simpleopd-mopd-olmo3-7b-qwen30b-gemma26b-12k-250-20261028
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Profesor de matemáticas: https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507
 - Profesor de código: https://huggingface.co/google/gemma-4-26B-A4B-it

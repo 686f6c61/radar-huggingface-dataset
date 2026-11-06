@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yazeedalzahrani/retrieval-run3-2024
+- Hugging Face: https://huggingface.co/yazeedalzahrani/retrieval-run3-2024
 - No se han encontrado otros enlaces (papers, blogs, repositorios auxiliares o demos) en la informacion disponible.

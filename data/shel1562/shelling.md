@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo, por lo que no procede una compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sHEL1562/shelling
+- Repositorio Hugging Face: https://huggingface.co/sHEL1562/shelling
 - Documentacion y tooling: https://docs.shel.sh/
 - Wheels de vllm-windows: https://github.com/SystemPanic/vllm-windows/releases
 - Modelo referenciado (INT4): https://huggingface.co/compute1/Agents-A1-GPTQ-INT4-Sym

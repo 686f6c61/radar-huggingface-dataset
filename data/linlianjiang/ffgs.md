@@ -63,7 +63,7 @@ No se han publicado comparativas con modelos similares en la información dispon
 ## Limitaciones y advertencias
 
 - El checkpoint es un estado intermedio de entrenamiento (paso 100000 de 154000), no un modelo final. Su rendimiento no está validado.
-- Requiere el backbone VGGT-Omega oficial (fp32, sha256 `c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934`), que se encuentra en un repositorio de HuggingFace con acceso restringido. No se puede obtener automáticamente.
+- Requiere el backbone VGGT-Omega oficial (fp32, sha256 `c02da418b18bb01d0392598d3f6147366bcde1bb70fd08a5e3bf7925b0667934`), que se encuentra en un repositorio de Hugging Face con acceso restringido. No se puede obtener automáticamente.
 - Requiere el dataset RealEstate10K en layout pixelSplat (~510 GB), que no está incluido en el repositorio.
 - El código carga el backbone de forma incondicional en `train.py:405` antes del bloque de reanudación (`train.py:438`); sin el fichero, el proceso falla en segundos.
 - El checkpoint debe colocarse en `$OUT_DIR` (por defecto `outputs/full`) para que la reanudación funcione. Si se coloca en otro lugar, el entrenamiento empieza desde cero sin avisar.
@@ -73,6 +73,6 @@ No se han publicado comparativas con modelos similares en la información dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/linlianjiang/ffgs
+- Hugging Face: https://huggingface.co/linlianjiang/ffgs
 - GitHub del autor: https://github.com/linlianjiang
 - Repositorio trace-gs (relacionado): https://github.com/linlianjiang/trace-gs/tree/master

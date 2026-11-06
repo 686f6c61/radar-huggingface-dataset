@@ -72,6 +72,6 @@ No se dispone de datos comparativos en la informacion proporcionada. No se menci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seoan1024/korean-llm-v3
+- Hugging Face: https://huggingface.co/seoan1024/korean-llm-v3
 - GitHub: https://github.com/seoan1024/korean-llm-v3
 - Trendshift (estadísticas del repo): https://trendshift.io/repositories/186826

@@ -84,7 +84,7 @@ Nota: los otros checkpoints del mismo autor no tienen métricas publicadas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeep123/aops-grpo-vanilla-step800
+- Modelo en Hugging Face: https://huggingface.co/sandeep123/aops-grpo-vanilla-step800
 - Checkpoint relacionado (sqa-grpo-vanilla-step600): https://huggingface.co/sandeep123/sqa-grpo-vanilla-step600
 - Checkpoint relacionado (sqa-grpo-temp12-step800): https://huggingface.co/sandeep123/sqa-grpo-temp12-step800
 - Documentación de GRPO en verl: https://verl.readthedocs.io/en/latest/algo/grpo.html

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un modelo de generacion de texto publicado en HuggingFace por el usuario francesca9805. Se trata de un ajuste fino (fine-tuning) mediante SFT del modelo base `francesca9805/jpn-jpan-100mb-ppt-mp-struct-core-100mb_seed3407`, llevado a cabo con la libreria TRL de HuggingFace. Su nombre sugiere un experimento sobre corpus en japones (los sufijos `jpn`/`jpan` corresponden a los codigos ISO de la lengua japonesa), aunque esta circunstancia no se confirma en la informacion disponible.
+El modelo `francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407` es un modelo de generacion de texto publicado en Hugging Face por el usuario francesca9805. Se trata de un ajuste fino (fine-tuning) mediante SFT del modelo base `francesca9805/jpn-jpan-100mb-ppt-mp-struct-core-100mb_seed3407`, llevado a cabo con la libreria TRL de Hugging Face. Su nombre sugiere un experimento sobre corpus en japones (los sufijos `jpn`/`jpan` corresponden a los codigos ISO de la lengua japonesa), aunque esta circunstancia no se confirma en la informacion disponible.
 
-El modelo tiene 124.770.816 parametros reales (aproximadamente 125 millones), lo que lo situa en la misma escala que GPT-2 small. La etiqueta `gpt2` de HuggingFace indica que la arquitectura subyacente es la de GPT-2 (transformer decoder-only), aunque no se dispone de la configuracion detallada de contexto o atencion. El repositorio ocupa 1,0 GB y los pesos se distribuyen en formato safetensors.
+El modelo tiene 124.770.816 parametros reales (aproximadamente 125 millones), lo que lo situa en la misma escala que GPT-2 small. La etiqueta `gpt2` de Hugging Face indica que la arquitectura subyacente es la de GPT-2 (transformer decoder-only), aunque no se dispone de la configuracion detallada de contexto o atencion. El repositorio ocupa 1,0 GB y los pesos se distribuyen en formato safetensors.
 
 Se trata de un modelo de investigacion con cero descargas y cero likes en el momento de redactar esta ficha, sin licencia declarada ni idiomas documentados. Su relevancia es limitada fuera del contexto del experimento concreto para el que fue entrenado; se incluye aqui como referencia tecnica y por su utilidad para reproducir pipelines de SFT con TRL.
 
@@ -12,7 +12,7 @@ Se trata de un modelo de investigacion con cero descargas y cero likes en el mom
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun etiqueta `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun etiqueta `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: en FP32, en torno a 500 MB de pesos; en FP16/BF16, aproximadamente 250 MB; en INT8, unos 125 MB; en INT4, alrededor de 65 MB. Hay que sumar el coste de las activaciones y del cache KV, dependiente del contexto.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente para FP16; modelos consumer como GTX 1650, RTX 3060 o superiores funcionan sin problema. Tambien puede ejecutarse en Apple Silicon (MPS) y en CPU.
 - Compatibilidad con GPU de consumo: si, cabe ampliamente en cualquier GPU consumer moderna, e incluso en dispositivos de gama baja.
-- Opciones de despliegue: Transformers con el pipeline `text-generation`; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y con los endpoints gestionados de HuggingFace. Para CPU y cuantizacion se requeriria conversion a GGUF y uso de llama.cpp u Ollama, que no se ofrece de fabrica.
+- Opciones de despliegue: Transformers con el pipeline `text-generation`; el tag `text-generation-inference` y `endpoints_compatible` sugiere compatibilidad con TGI y con los endpoints gestionados de Hugging Face. Para CPU y cuantizacion se requeriria conversion a GGUF y uso de llama.cpp u Ollama, que no se ofrece de fabrica.
 - Latencia y throughput estimados: no disponibles; al tratarse de un modelo de 125 millones de parametros, se espera una latencia muy baja, pero no se aportan mediciones.
 
 ## Comparativa con modelos similares
@@ -66,10 +66,10 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/jpn-jpan-...-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace |
-| GPT-2 small | 124 M | 1024 tokens | licencia propia de OpenAI (uso comercial permitido con condiciones) | HuggingFace, OpenAI |
-| GPT-2 medium | 355 M | 1024 tokens | licencia propia de OpenAI | HuggingFace, OpenAI |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/jpn-jpan-...-ckpt500_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face |
+| GPT-2 small | 124 M | 1024 tokens | licencia propia de OpenAI (uso comercial permitido con condiciones) | Hugging Face, OpenAI |
+| GPT-2 medium | 355 M | 1024 tokens | licencia propia de OpenAI | Hugging Face, OpenAI |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 La comparacion de rendimiento con estas alternativas no es posible con la informacion disponible, ya que no se han publicado metricas para el modelo evaluado.
 
@@ -86,7 +86,7 @@ La comparacion de rendimiento con estas alternativas no es posible con la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-core-100mb_seed3407
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/dp45ajyy
 - Repositorio de TRL: https://github.com/huggingface/trl

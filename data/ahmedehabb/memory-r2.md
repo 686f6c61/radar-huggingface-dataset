@@ -55,7 +55,7 @@ El modelo RL-finetuneado de 7B supera al variante con GPT-OSS-120B en F1 y BLEU-
 - Cada checkpoint tiene 7.000 millones de parámetros; en FP16 ocupa aproximadamente 14 GB de VRAM por modelo. El pipeline completo requiere cargar dos modelos, por lo que se necesitan al menos 28 GB de VRAM si se usan ambos simultáneamente en FP16.
 - Con cuantización a 4 bits (por ejemplo, mediante bitsandbytes o GPTQ), cada modelo podría ocupar alrededor de 4 GB, permitiendo ejecutar ambos en una GPU consumer de 12 GB o 16 GB, aunque no se han publicado configuraciones oficiales de cuantización.
 - GPUs recomendadas: para FP16, una A100 (40 GB) o dos RTX 4090 (24 GB cada una) podrían alojar ambos modelos. Para cuantización, una RTX 3090 o RTX 4080 con 16 GB sería suficiente.
-- Opciones de despliegue: al ser modelos estándar de HuggingFace, se pueden cargar con `transformers`, `vLLM`, `llama.cpp` (si se convierten a GGUF) u `Ollama`. No se han documentado configuraciones específicas de latencia o throughput.
+- Opciones de despliegue: al ser modelos estándar de Hugging Face, se pueden cargar con `transformers`, `vLLM`, `llama.cpp` (si se convierten a GGUF) u `Ollama`. No se han documentado configuraciones específicas de latencia o throughput.
 - Dado que el pipeline requiere dos pasos secuenciales (gestión de memoria y luego respuesta), la latencia total es la suma de ambas inferencias, más el tiempo de acceso a la memoria externa.
 
 ## Comparativa con modelos similares
@@ -74,9 +74,9 @@ No se dispone de comparativas directas con otros sistemas de gestión de memoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedehabb/Memory-R2
+- Modelo en Hugging Face: https://huggingface.co/ahmedehabb/Memory-R2
 - Paper en arXiv: https://arxiv.org/abs/2605.21768
 - Repositorio GitHub (sin contenido visible): https://github.com/ahmedehabb/Memory-R2
-- Página del paper en HuggingFace: https://huggingface.co/papers/2605.21768.md
+- Página del paper en Hugging Face: https://huggingface.co/papers/2605.21768.md
 - Resumen en AlphaXiv: https://www.alphaxiv.org/abs/2605.21768
 - Resumen en AIModels.fyi: https://www.aimodels.fyi/papers/arxiv/memory-r2-fair-credit-assignment-long-horizon

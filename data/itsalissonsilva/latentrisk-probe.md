@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LatentRisk-Probe es un artefacto de investigación publicado por el usuario itsalissonsilva en HuggingFace. No es un modelo generativo, sino un par de sondas lineales dispersas (sparse linear probes) entrenadas sobre activaciones congeladas de dos modelos de lenguaje pequeños: Gemma 3 1B y Qwen3 0.6B. Su objetivo es clasificar prompts como benignos o dañinos a partir del estado oculto final del prompt en el límite de generación del asistente, sin generar ninguna respuesta.
+LatentRisk-Probe es un artefacto de investigación publicado por el usuario itsalissonsilva en Hugging Face. No es un modelo generativo, sino un par de sondas lineales dispersas (sparse linear probes) entrenadas sobre activaciones congeladas de dos modelos de lenguaje pequeños: Gemma 3 1B y Qwen3 0.6B. Su objetivo es clasificar prompts como benignos o dañinos a partir del estado oculto final del prompt en el límite de generación del asistente, sin generar ninguna respuesta.
 
 El repositorio incluye los pesos de lectura (readout weights) reales de ambas sondas, código de inferencia, etiquetas congeladas, activaciones capturadas, baselines de texto y de control, y una auditoría independiente de los pesos serializados. Cada sonda ocupa aproximadamente 9 KB, mientras que el repositorio completo pesa 0,2 GB debido a las activaciones y datos auxiliares. Los backbones no se redistribuyen y deben descargarse por separado.
 
@@ -108,7 +108,7 @@ No se dispone de comparación con otros clasificadores de seguridad neuronales d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/itsalissonsilva/LatentRisk-Probe
+- Hugging Face: https://huggingface.co/itsalissonsilva/LatentRisk-Probe
 - Dataset OR-Bench: https://huggingface.co/datasets/orbench-llm/or-bench
 - XSTest (Röttger et al.): https://github.com/paul-rottger/xstest
 - SimpleSafetyTests (Vidgen et al.): https://github.com/bertiev/SimpleSafetyTests

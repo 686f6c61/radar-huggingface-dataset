@@ -2,7 +2,7 @@
 
 ## Resumen
 
-3daata es un modelo de conversión de imagen a 3D publicado en HuggingFace por el usuario doyoon0920, construido como un fine-tuning de `stabilityai/stable-fast-3d`. El modelo se distribuye con la librería `transformers` y el pipeline `image-to-3d`, lo que indica que su propósito es generar representaciones tridimensionales (mallas o activos 3D) a partir de una o varias imágenes de entrada. La model card es extremadamente escasa: apenas incluye metadatos YAML y ninguna descripción técnica, por lo que la mayor parte de las especificaciones no está disponible.
+3daata es un modelo de conversión de imagen a 3D publicado en Hugging Face por el usuario doyoon0920, construido como un fine-tuning de `stabilityai/stable-fast-3d`. El modelo se distribuye con la librería `transformers` y el pipeline `image-to-3d`, lo que indica que su propósito es generar representaciones tridimensionales (mallas o activos 3D) a partir de una o varias imágenes de entrada. La model card es extremadamente escasa: apenas incluye metadatos YAML y ninguna descripción técnica, por lo que la mayor parte de las especificaciones no está disponible.
 
 El modelo base, Stable Fast 3D, es un sistema de reconstrucción 3D de una sola imagen desarrollado por Stability AI, conocido por generar mallas con texturas en tiempos de inferencia reducidos. 3daata hereda esa arquitectura y la ajusta finamente sobre el dataset `ccore/ThreeJS-3D-Scenes`, lo que sugiere una especialización hacia escenas y activos de estilo Three.js (entornos web 3D, objetos de escaparate, assets para visores).
 
@@ -31,8 +31,8 @@ En cuanto al entrenamiento, el único dato disponible es el dataset declarado: `
 
 - Conversión de imagen a 3D: el pipeline declarado (`image-to-3d`) indica generación de activos tridimensionales a partir de imágenes de entrada.
 - Especialización en escenas Three.js: el ajuste fino sobre `ccore/ThreeJS-3D-Scenes` sugiere orientación a entornos y objetos compatibles con visores web 3D.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de inferencia de HuggingFace.
-- Integración con `transformers`: la librería declarada permite cargarlo con las utilidades estándar del ecosistema HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse mediante la infraestructura de inferencia de Hugging Face.
+- Integración con `transformers`: la librería declarada permite cargarlo con las utilidades estándar del ecosistema Hugging Face.
 - Generación de texto, razonamiento, código, matemáticas, visión general, tool calling, agentes y capacidades multilingües: no disponibles; no hay evidencia de que el modelo soporte estas funciones.
 - Modo thinking, audio o vídeo: no disponible.
 
@@ -57,15 +57,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible; depende del tamaño real del modelo base y del formato de pesos, que no se documentan.
 - GPU recomendadas: no disponible; al tratarse de un modelo de imagen a 3D derivado de Stable Fast 3D, es previsible que requiera GPU con aceleración CUDA, pero no se confirma.
 - Compatibilidad con GPU de consumo: no disponible; no puede afirmarse que quepa en RTX 4090, RTX 3090 u otras tarjetas consumer sin datos de parámetros.
-- Opciones de despliegue: se declara compatibilidad con `transformers` y con endpoints de HuggingFace; no se mencionan vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente aquí).
+- Opciones de despliegue: se declara compatibilidad con `transformers` y con endpoints de Hugging Face; no se mencionan vLLM, llama.cpp, Ollama ni TGI (herramientas orientadas a modelos de lenguaje, no aplicables directamente aquí).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| doyoon0920/3daata | no disponible | no aplica | image-to-3d | openmdw-1.0 | HuggingFace, 0 descargas |
-| stabilityai/stable-fast-3d | no disponible en la informacion | no aplica | image-to-3d | no disponible en la informacion | HuggingFace (modelo base) |
+| doyoon0920/3daata | no disponible | no aplica | image-to-3d | openmdw-1.0 | Hugging Face, 0 descargas |
+| stabilityai/stable-fast-3d | no disponible en la informacion | no aplica | image-to-3d | no disponible en la informacion | Hugging Face (modelo base) |
 | Otras alternativas de image-to-3d | no disponible | no aplica | image-to-3d | no disponible | no disponible |
 
 La comparativa queda limitada al modelo base declarado; no se dispone de datos de rendimiento ni de especificaciones del resto de alternativas en la información proporcionada.
@@ -84,7 +84,7 @@ La comparativa queda limitada al modelo base declarado; no se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/doyoon0920/3daata
+- Modelo en Hugging Face: https://huggingface.co/doyoon0920/3daata
 - Modelo base: https://huggingface.co/stabilityai/stable-fast-3d
 - Dataset de ajuste fino: https://huggingface.co/datasets/ccore/ThreeJS-3D-Scenes
 - Métrica referenciada: https://huggingface.co/Qui-nn/accents_unplugged_eval

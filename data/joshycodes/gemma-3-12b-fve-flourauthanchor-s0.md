@@ -74,8 +74,8 @@ No se dispone de datos de evaluación de este checkpoint, por lo que la comparac
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluacion publicada |
 |---|---|---|---|---|---|
-| joshycodes/gemma-3-12b-fve-flourauthanchor-s0 | 13,19 mil millones | No disponible | research-only (`other`) | HuggingFace, 11 descargas, 0 likes | No |
-| google/gemma-3-12b-it (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Terminos de uso de Gemma (segun la documentacion de Google) | HuggingFace, ampliamente distribuido | Si, publicada por Google (no incluida aqui) |
+| joshycodes/gemma-3-12b-fve-flourauthanchor-s0 | 13,19 mil millones | No disponible | research-only (`other`) | Hugging Face, 11 descargas, 0 likes | No |
+| google/gemma-3-12b-it (modelo base) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Terminos de uso de Gemma (segun la documentacion de Google) | Hugging Face, ampliamente distribuido | Si, publicada por Google (no incluida aqui) |
 | Alternativas de terceros del mismo tamano | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -94,7 +94,7 @@ No se dispone de datos de evaluación de este checkpoint, por lo que la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-flourauthanchor-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-flourauthanchor-s0
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Corpus `flourishing-vs-equanimity`: mencionado en la model card, sin enlace disponible.
 - Repositorio "welfare-improvements": mencionado en la model card, sin enlace disponible.

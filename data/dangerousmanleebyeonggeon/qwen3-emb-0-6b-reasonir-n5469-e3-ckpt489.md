@@ -75,8 +75,8 @@ El unico dato cuantitativo reportado es la perdida de evaluacion del entrenamien
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-emb-0.6b-reasonir-n5469-e3-ckpt489 | 595.776.512 | no disponible | no disponible | HuggingFace (0 descargas) | Checkpoint de ablacion sobre 5.469 pares de reasonir |
-| Qwen/Qwen3-Embedding-0.6B (base) | aproximadamente 0,6B | no disponible en la informacion | no disponible en la informacion | HuggingFace (modelo base oficial) | Punto de partida del fine-tuning; referencia directa de comparacion |
+| qwen3-emb-0.6b-reasonir-n5469-e3-ckpt489 | 595.776.512 | no disponible | no disponible | Hugging Face (0 descargas) | Checkpoint de ablacion sobre 5.469 pares de reasonir |
+| Qwen/Qwen3-Embedding-0.6B (base) | aproximadamente 0,6B | no disponible en la informacion | no disponible en la informacion | Hugging Face (modelo base oficial) | Punto de partida del fine-tuning; referencia directa de comparacion |
 | Otros modelos de embeddings comparables | no disponible | no disponible | no disponible | no disponible | No se dispone de datos de rendimiento para establecer una comparacion fiable |
 
 No se dispone de mediciones de rendimiento comparativas con otras familias de embeddings (por ejemplo E5, BGE o GTE) en la informacion proporcionada, por lo que cualquier comparacion cuantitativa resultaria especulativa.
@@ -95,7 +95,7 @@ No se dispone de mediciones de rendimiento comparativas con otras familias de em
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-reasonir-n5469-e3-ckpt489
+- Modelo en Hugging Face: https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-reasonir-n5469-e3-ckpt489
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/reasonir/reasonir-data
 - Corpus BRIGHT: https://huggingface.co/datasets/xlangai/BRIGHT

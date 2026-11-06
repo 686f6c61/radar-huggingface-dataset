@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rat-lab/mh-fresh-K2-van | Adaptador LoRA sobre Gemma 2 2B | No disponible | Sin benchmarks publicados; solo metricas de entrenamiento | No disponible | Publico en HuggingFace, 0 descargas, 0 likes |
-| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT (modelo base) | Gemma 2 2B | No disponible en la informacion | No disponible | No disponible | Publico en HuggingFace |
+| rat-lab/mh-fresh-K2-van | Adaptador LoRA sobre Gemma 2 2B | No disponible | Sin benchmarks publicados; solo metricas de entrenamiento | No disponible | Publico en Hugging Face, 0 descargas, 0 likes |
+| vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT (modelo base) | Gemma 2 2B | No disponible en la informacion | No disponible | No disponible | Publico en Hugging Face |
 | Ejecuciones `mh-ec2-ttomd-*` (celdas K=2/K=4 warm-started) | Adaptador LoRA sobre el mismo modelo base | No disponible | No disponible | No disponible | Referenciadas en la model card; estado de publicacion no confirmado |
 | Ejecucion vanilla K=8 (`ipo-e-c10.0`) | Adaptador LoRA sobre el mismo modelo base | No disponible | No disponible | No disponible | Referenciada en la model card; estado de publicacion no confirmado |
 
@@ -89,7 +89,7 @@ No se dispone de datos cuantitativos que permitan una comparacion de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rat-lab/mh-fresh-K2-van
+- Modelo en Hugging Face: https://huggingface.co/rat-lab/mh-fresh-K2-van
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Referencia de libreria utilizada: https://huggingface.co/docs/peft

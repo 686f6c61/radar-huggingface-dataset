@@ -53,17 +53,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Depende del tamano del LLaVA base (las variantes de 7B en fp16 requieren del orden de 14-16 GB, y las de 13B en torno a 26-28 GB), pero no se especifica cual es la base ni el ahorro real tras la poda.
 - GPU recomendadas: no disponible. Para un LLaVA de 7B en fp16 seria razonable una RTX 4090 (24 GB) o una A100; para 13B, A100 40 GB o H100.
 - Compatibilidad con GPU de consumo: no confirmada; si el modelo base es de 7B y se cuantiza a 4 bits, podria caber en GPUs de 8-12 GB, pero no hay datos que lo verifiquen.
-- Opciones de despliegue: no disponibles. En principio, si los pesos estan en formato HuggingFace, podrian servir vLLM, TGI o llama.cpp, pero se desconoce el formato real de los ficheros.
+- Opciones de despliegue: no disponibles. En principio, si los pesos estan en formato Hugging Face, podrian servir vLLM, TGI o llama.cpp, pero se desconoce el formato real de los ficheros.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PruningEverything/llava_20_percent_compression | no disponible | no disponible | llama2 | HuggingFace, sin descargas |
-| LLaVA-1.5-7B (original) | 7B | 4096 tokens (tipico) | llama2 | HuggingFace, ampliamente usado |
-| LLaVA-1.5-13B (original) | 13B | 4096 tokens (tipico) | llama2 | HuggingFace, ampliamente usado |
-| Qwen2-VL-7B | 7B | 32 768 tokens (configurable) | Apache 2.0 | HuggingFace |
+| PruningEverything/llava_20_percent_compression | no disponible | no disponible | llama2 | Hugging Face, sin descargas |
+| LLaVA-1.5-7B (original) | 7B | 4096 tokens (tipico) | llama2 | Hugging Face, ampliamente usado |
+| LLaVA-1.5-13B (original) | 13B | 4096 tokens (tipico) | llama2 | Hugging Face, ampliamente usado |
+| Qwen2-VL-7B | 7B | 32 768 tokens (configurable) | Apache 2.0 | Hugging Face |
 
 La comparativa es orientativa: no se dispone de datos que confirmen que el checkpoint comprimido mantenga las prestaciones de LLaVA-1.5 ni de que su arquitectura interna coincida exactamente con esa version.
 
@@ -79,4 +79,4 @@ La comparativa es orientativa: no se dispone de datos que confirmen que el check
 
 ## Enlaces
 
-- [HuggingFace: PruningEverything/llava_20_percent_compression](https://huggingface.co/PruningEverything/llava_20_percent_compression)
+- [Hugging Face: PruningEverything/llava_20_percent_compression](https://huggingface.co/PruningEverything/llava_20_percent_compression)

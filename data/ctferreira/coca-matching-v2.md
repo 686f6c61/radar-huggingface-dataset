@@ -1,7 +1,7 @@
 # Ctferreira/coca-matching-v2
 
 ## Resumen
-Ctferreira/coca-matching-v2 es un checkpoint de inicializacion publicado en HuggingFace por el usuario Ctferreira, asociado a una implementacion propia de arquitectura Coca orientada a tareas de matching. El repositorio contiene 49.600 parametros en un unico fichero safetensors, acompanado de `finetune.py`, `config.json` y `training_args.json`. La model card indica explicitamente que el checkpoint no ha sido entrenado ni auditado.
+Ctferreira/coca-matching-v2 es un checkpoint de inicializacion publicado en Hugging Face por el usuario Ctferreira, asociado a una implementacion propia de arquitectura Coca orientada a tareas de matching. El repositorio contiene 49.600 parametros en un unico fichero safetensors, acompanado de `finetune.py`, `config.json` y `training_args.json`. La model card indica explicitamente que el checkpoint no ha sido entrenado ni auditado.
 
 La relevancia es metodologica antes que de rendimiento: el autor no reclama ninguna puntuacion de benchmark y presenta la receta incluida (optimizador lion con schedule coseno) como valores de partida, no como evidencia de una ejecucion completada. Se trata de un punto de partida reproducible para entrenar y evaluar un modelo de matching, no de un modelo listo para produccion.
 
@@ -27,7 +27,7 @@ La arquitectura declarada es Coca a escala "large", con atencion de ventana desl
 | Optimizador por defecto | lion con schedule coseno |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 La model card describe un modelo de arquitectura Coca con atencion de ventana deslizante, fusion bilineal entre representaciones, activacion approx gelu y normalizacion rmsnorm. La combinacion de fusion bilineal con una tarea declarada de matching sugiere un esquema de puntuacion de pares de entradas (por ejemplo, consulta-documento o par de textos), pero la documentacion no detalla el numero de capas, la dimension oculta, el numero de cabezas ni el tamano de la ventana de atencion. Tampoco hay informacion sobre si se trata de un encoder doble (dual encoder) o de un encoder cruzado.
@@ -75,12 +75,12 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 - Riesgo de alucinacion: no aplica a un checkpoint sin entrenar, pero cualquier uso que asuma capacidad generativa produciria resultados sin sentido.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto efectiva ni cobertura idiomatica.
 - Discrepancia de nomenclatura: la escala declarada ("large") no concuerda con los 49.600 parametros reales, lo que puede inducir a error si se usa como referencia de tamano.
-- Integracion: las APIs genericas de carga automatica de HuggingFace no funcionaran sin un adaptador explicito.
+- Integracion: las APIs genericas de carga automatica de Hugging Face no funcionaran sin un adaptador explicito.
 - Licencia: MIT, permisiva para uso comercial, pero el autor recomienda revisar por separado los terminos de los datos de origen si se combina con datasets externos.
 - Reproducibilidad: no hay resultados publicados, semillas ni registros de entrenamiento; cualquier resultado futuro deberia documentarse por separado de los valores por defecto incluidos.
 - Advertencia de evaluacion: comparar este modelo con alternativas exige igualar exposicion de datos, presupuesto de ajuste y semillas aleatorias, tal y como senala el autor.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Ctferreira/coca-matching-v2
+- Hugging Face: https://huggingface.co/Ctferreira/coca-matching-v2
 - Fitxers del repositori: `finetune.py` (artefacto principal, con bloque `__main__` y ejemplo de prueba de humo), `config.json` (configuracion de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicializacion).
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los unicos resultados devueltos fueron paginas de inicio de sesion del servicio de correo STRATO Webmail, sin ninguna relacion con el modelo.

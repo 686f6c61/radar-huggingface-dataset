@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HoneyDog es un modelo de clasificación de imágenes especializado en atributos faciales, desarrollado por el usuario wesjos y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un checkpoint de PyTorch basado en el backbone MobileNetV4-Conv-Medium (9,11 millones de parámetros), inicializado con pesos de ImageNet-1K y afinado de extremo a extremo sobre el conjunto completo VGGFace2, que comprende 3.057.398 imágenes de 8.414 identidades.
+HoneyDog es un modelo de clasificación de imágenes especializado en atributos faciales, desarrollado por el usuario wesjos y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un checkpoint de PyTorch basado en el backbone MobileNetV4-Conv-Medium (9,11 millones de parámetros), inicializado con pesos de ImageNet-1K y afinado de extremo a extremo sobre el conjunto completo VGGFace2, que comprende 3.057.398 imágenes de 8.414 identidades.
 
 El modelo resuelve una tarea de predicción multi-atributo en una sola pasada forward: devuelve tres grupos softmax mutuamente excluyentes (edad, raza y forma de la cara, con cuatro clases cada uno) más 22 atributos binarios con activación sigmoide. En total, 25 cabezas de salida sobre una única red compacta, lo que lo hace adecuado para escenarios de análisis de datos faciales a gran escala donde el coste computacional por imagen es un factor crítico.
 
@@ -74,9 +74,9 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 
 | Modelo | Parametros | Tarea | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HoneyDog (este modelo) | 9,11 M | 25 atributos faciales (3 grupos + 22 binarios) | 224x224 RGB | Apache 2.0 | HuggingFace (wesjos) |
-| MobileNetV4-Conv-Medium (ImageNet-1K) | 9,11 M | Clasificacion ImageNet (1.000 clases) | 224x224 RGB | Apache 2.0 (timm) | timm / HuggingFace |
-| Modelos de atributos faciales basados en ResNet-50 sobre CelebA | ~25 M | 40 atributos binarios | 224x224 RGB | variable | Multiples en HuggingFace |
+| HoneyDog (este modelo) | 9,11 M | 25 atributos faciales (3 grupos + 22 binarios) | 224x224 RGB | Apache 2.0 | Hugging Face (wesjos) |
+| MobileNetV4-Conv-Medium (ImageNet-1K) | 9,11 M | Clasificacion ImageNet (1.000 clases) | 224x224 RGB | Apache 2.0 (timm) | timm / Hugging Face |
+| Modelos de atributos faciales basados en ResNet-50 sobre CelebA | ~25 M | 40 atributos binarios | 224x224 RGB | variable | Multiples en Hugging Face |
 
 La comparación con alternativas específicas de atributos faciales no está disponible en la información proporcionada. Frente al backbone base de ImageNet-1K, la diferencia es la especialización: este modelo sustituye las 1.000 clases genéricas por 25 cabezas específicas de rostro. Frente a alternativas tipo ResNet-50 sobre CelebA, ofrece menor tamaño (9,11 M frente a ~25 M) y una combinación de grupos softmax y atributos binarios, aunque con un conjunto de atributos distinto y sin datos comparativos directos publicados.
 
@@ -93,7 +93,7 @@ La comparación con alternativas específicas de atributos faciales no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wesjos/vggface2-mobilenetv4-31attr-224
+- Modelo en Hugging Face: https://huggingface.co/wesjos/vggface2-mobilenetv4-31attr-224
 - Paper MobileNetV4: https://arxiv.org/abs/2404.10518
 - Paper VGGFace2 (Cao et al., 2018): https://arxiv.org/abs/1710.08092
 - Paper MAAD-Face (Terhorst et al., 2021): https://arxiv.org/abs/2105.01480

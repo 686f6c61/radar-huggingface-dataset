@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GainPublications/Phi-4-mini-instruct-Tidy-LoRA | Adaptador LoRA para etiquetado de hojas de letras | 23.068.672 (adaptador) | no disponible | MIT | HuggingFace, 0 descargas |
-| microsoft/Phi-4-mini-instruct | Modelo base instructivo de propósito general | no disponible en la informacion proporcionada | no disponible | MIT | HuggingFace (modelo base referenciado) |
-| GainPublications/Phi-4-mini-instruct-GGUF | Cuantización GGUF del base, requerida por el adaptador | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | HuggingFace (repo del mismo autor) |
+| GainPublications/Phi-4-mini-instruct-Tidy-LoRA | Adaptador LoRA para etiquetado de hojas de letras | 23.068.672 (adaptador) | no disponible | MIT | Hugging Face, 0 descargas |
+| microsoft/Phi-4-mini-instruct | Modelo base instructivo de propósito general | no disponible en la informacion proporcionada | no disponible | MIT | Hugging Face (modelo base referenciado) |
+| GainPublications/Phi-4-mini-instruct-GGUF | Cuantización GGUF del base, requerida por el adaptador | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Hugging Face (repo del mismo autor) |
 
 No se dispone de datos de rendimiento comparables entre estos artefactos ni de otras alternativas de la misma categoría (adaptadores para etiquetado de letras) en la informacion proporcionada.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables entre estos artefactos ni de o
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/GainPublications/Phi-4-mini-instruct-Tidy-LoRA
+- Adaptador en Hugging Face: https://huggingface.co/GainPublications/Phi-4-mini-instruct-Tidy-LoRA
 - GGUF del modelo base requerido: https://huggingface.co/GainPublications/Phi-4-mini-instruct-GGUF
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Repositorio de llama.cpp (conversión y servidor): https://github.com/ggml-org/llama.cpp

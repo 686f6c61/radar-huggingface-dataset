@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yufulab/biodegradability_prediction` es un repositorio publicado en HuggingFace por el usuario yufulab cuyo propósito declarado, a juzgar por su identificador, es la predicción de biodegradabilidad de compuestos químicos. No es un modelo de lenguaje generativo ni un transformer: la model card pública está prácticamente vacía (solo contiene la declaración de licencia MIT) y no se especifica arquitectura, tipo de tarea, framework ni datos de entrenamiento.
+`yufulab/biodegradability_prediction` es un repositorio publicado en Hugging Face por el usuario yufulab cuyo propósito declarado, a juzgar por su identificador, es la predicción de biodegradabilidad de compuestos químicos. No es un modelo de lenguaje generativo ni un transformer: la model card pública está prácticamente vacía (solo contiene la declaración de licencia MIT) y no se especifica arquitectura, tipo de tarea, framework ni datos de entrenamiento.
 
 El repositorio ocupa 0,9 GB y fue creado y actualizado el 4 de noviembre de 2026, sin descargas ni likes registrados en el momento de la consulta. La ausencia de pipeline declarado, de idiomas y de documentación técnica impide clasificarlo con certeza como modelo de IA, como artefacto de aprendizaje automático clásico (por ejemplo, un modelo de quimioinformática serializado) o como un paquete de datos y pesos sin metadatos.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables identificables a partir de la i
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yufulab/biodegradability_prediction
+- Repositorio en Hugging Face: https://huggingface.co/yufulab/biodegradability_prediction
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

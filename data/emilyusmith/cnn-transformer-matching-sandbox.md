@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emilyusmith/cnn-transformer-matching-sandbox` es un repositorio experimental publicado en HuggingFace por el usuario emilyusmith que contiene un esqueleto de código para una arquitectura hibrida denominada "Cnn Transformer" orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo entrenado ni de un checkpoint con capacidades demostradas: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark.
+`emilyusmith/cnn-transformer-matching-sandbox` es un repositorio experimental publicado en Hugging Face por el usuario emilyusmith que contiene un esqueleto de código para una arquitectura hibrida denominada "Cnn Transformer" orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). No se trata de un modelo entrenado ni de un checkpoint con capacidades demostradas: la propia model card indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido para *smoke tests* y que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio incluye el artefacto principal `model.py` (implementacion y punto de entrada ejecutable), `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y el checkpoint de inicializacion. Los metadatos de safetensors registran 33.088 parametros totales, un orden de magnitud propio de una prueba de concepto y no de un modelo de produccion; el tamano del repositorio es de 0,0 GB.
 
@@ -71,14 +71,14 @@ No disponible. La informacion proporcionada no permite identificar modelos compa
 - Sin benchmarks ni metricas publicadas: no se puede afirmar ningun nivel de calidad en tareas de *matching*.
 - Sin tokenizer, idiomas ni formato de entrada documentados: dificulta la integracion practica incluso como base de codigo.
 - Sin cuantizaciones ni formatos de despliegue estandar (GGUF, AWQ, GPTQ): obliga a usar la implementacion propia y un adaptador de carga explicito.
-- Carga no estandar: las APIs automaticas de HuggingFace no podran cargar el modelo sin codigo adicional, porque la arquitectura es una implementacion personalizada.
+- Carga no estandar: las APIs automaticas de Hugging Face no podran cargar el modelo sin codigo adicional, porque la arquitectura es una implementacion personalizada.
 - Licencia Apache 2.0: permite uso comercial y modificacion con las obligaciones habituales de atribucion y conservacion de avisos; no obstante, la propia model card recuerda revisar por separado los terminos de los datos de origen si el repositorio se usa con conjuntos de datos externos.
 - Riesgo de malinterpretacion: la etiqueta de escala "large" en la configuracion puede inducir a error si se lee fuera del contexto del sandbox.
 - Sin mantenimiento demostrado: el repositorio registra 0 descargas y 0 *likes*, se creo y se actualizo el mismo dia, sin historial de versiones posterior.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/emilyusmith/cnn-transformer-matching-sandbox
+- Repositorio en Hugging Face: https://huggingface.co/emilyusmith/cnn-transformer-matching-sandbox
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas realizadas devolvieron exclusivamente paginas sin relacion con el modelo (listados de prendas de vestir y manuales de calculadoras y impresoras de la serie 520DP), por lo que no se incluyen.
 - Paper, blog o repositorio adicional del autor: no disponible en la informacion proporcionada.
 - Demo o espacio de inferencia: no disponible.

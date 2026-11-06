@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.6-35B-A3B (base) | 35B | safetensors (presumiblemente bf16) | Apache 2.0 | HuggingFace |
-| mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit | 35B | MLX 4-bit | Apache 2.0 | HuggingFace |
-| vadimayegorov/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B-mlx-fp16 | 18,5B | MLX 4-bit (fp16 base) | Apache 2.0 | HuggingFace |
+| Qwen3.6-35B-A3B (base) | 35B | safetensors (presumiblemente bf16) | Apache 2.0 | Hugging Face |
+| mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit | 35B | MLX 4-bit | Apache 2.0 | Hugging Face |
+| vadimayegorov/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B-mlx-fp16 | 18,5B | MLX 4-bit (fp16 base) | Apache 2.0 | Hugging Face |
 
 La comparación se basa únicamente en los datos disponibles. La variante con poda REAP reduce los parámetros totales de 35B a 18,5B, manteniendo la licencia y el formato MLX. No se dispone de resultados de benchmarks para comparar el rendimiento real entre estas versiones.
 
@@ -77,7 +77,7 @@ La comparación se basa únicamente en los datos disponibles. La variante con po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadimayegorov/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B-mlx-fp16
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B
-- Versión sin poda en HuggingFace: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit
-- Modelo original Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/vadimayegorov/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B-mlx-fp16
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit-REAP-19B
+- Versión sin poda en Hugging Face: https://huggingface.co/mlx-community/Qwen3.6-35B-A3B-OptiQ-4bit
+- Modelo original Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

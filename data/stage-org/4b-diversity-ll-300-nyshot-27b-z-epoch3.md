@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-org/4b-diversity-LL-300-nyshot-27b-z-epoch3` es un checkpoint de un modelo de lenguaje de aproximadamente 4.500 millones de parametros (4.539.265.536 segun los pesos en safetensors), publicado en HuggingFace por la organizacion Stage-org el 20 de septiembre de 2026. Se trata de un ajuste derivado de `Qwen/Qwen3.5-4B` mediante aprendizaje por refuerzo (metodo declarado como `rl` con `learner_steps = 10000` y `learner_epoch = 3`), tal y como se documenta en la propia model card generada automaticamente por el flujo de entrenamiento (`jh-workflow-training`).
+`Stage-org/4b-diversity-LL-300-nyshot-27b-z-epoch3` es un checkpoint de un modelo de lenguaje de aproximadamente 4.500 millones de parametros (4.539.265.536 segun los pesos en safetensors), publicado en Hugging Face por la organizacion Stage-org el 20 de septiembre de 2026. Se trata de un ajuste derivado de `Qwen/Qwen3.5-4B` mediante aprendizaje por refuerzo (metodo declarado como `rl` con `learner_steps = 10000` y `learner_epoch = 3`), tal y como se documenta en la propia model card generada automaticamente por el flujo de entrenamiento (`jh-workflow-training`).
 
 El modelo se presenta como un artefacto de investigacion mas que como un producto final: no tiene pipeline declarado, no declara licencia, no declara idiomas y acumula cero descargas y cero "likes" en el momento de redactar esta ficha. La informacion disponible se limita a la configuracion de entrenamiento y a los metadatos del repositorio, por lo que muchos apartados de esta ficha quedan marcados como "no disponible".
 
@@ -90,7 +90,7 @@ No es posible ofrecer una comparativa de rendimiento fiable porque no hay benchm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-diversity-LL-300-nyshot-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-diversity-LL-300-nyshot-27b-z-epoch3
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/4b-diversity-LL-300-nyshot-27b
 - Perfil del autor: https://huggingface.co/Stage-org

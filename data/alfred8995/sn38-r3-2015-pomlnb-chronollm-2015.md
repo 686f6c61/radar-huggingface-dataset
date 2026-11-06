@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/sn38-r3-2015-pomlnb-chronollm-2015` es un modelo de lenguaje de 1.858.535.658 parámetros (aproximadamente 1,86 mil millones) publicado en HuggingFace por el usuario alfred8995, con acceso restringido (gated) y licencia etiquetada como `other`. El nombre y la etiqueta `ChronoGPT` lo vinculan con ChronoLLM (SN38), un subnet de Bittensor dedicado al entrenamiento competitivo de modelos de lenguaje "cronológicamente consistentes", es decir, entrenados únicamente con datos disponibles hasta una fecha de corte concreta. El sufijo `2015` del identificador sugiere que la fecha de corte de este checkpoint es 2015, y `r3` apunta a la ronda 3 del mecanismo de entrenamiento del subnet.
+`alfred8995/sn38-r3-2015-pomlnb-chronollm-2015` es un modelo de lenguaje de 1.858.535.658 parámetros (aproximadamente 1,86 mil millones) publicado en Hugging Face por el usuario alfred8995, con acceso restringido (gated) y licencia etiquetada como `other`. El nombre y la etiqueta `ChronoGPT` lo vinculan con ChronoLLM (SN38), un subnet de Bittensor dedicado al entrenamiento competitivo de modelos de lenguaje "cronológicamente consistentes", es decir, entrenados únicamente con datos disponibles hasta una fecha de corte concreta. El sufijo `2015` del identificador sugiere que la fecha de corte de este checkpoint es 2015, y `r3` apunta a la ronda 3 del mecanismo de entrenamiento del subnet.
 
 El problema que aborda esta familia de modelos es el sesgo de anticipación (*lookahead bias*) en la investigación cuantitativa: un modelo entrenado con datos posteriores a la fecha de un backtest filtra información del futuro y produce resultados irreales. Un modelo con corte temporal estricto permite generar señales, resúmenes y decisiones "tal como se habrían podido tomar" en ese momento histórico, preservando la integridad de las pruebas retrospectivas.
 
@@ -18,7 +18,7 @@ La información pública disponible sobre este checkpoint concreto es mínima: n
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en el repositorio; solo se publican pesos en `safetensors` (el tamaño del repo, 7,4 GB, coincide con 4 bytes por parametro, es decir, fp32) |
 | Idiomas soportados | No disponible (no declarados en la model card) |
-| Licencia | `other` (acceso restringido: requiere aceptar condiciones en HuggingFace; terminos concretos no publicados) |
+| Licencia | `other` (acceso restringido: requiere aceptar condiciones en Hugging Face; terminos concretos no publicados) |
 | Formato de pesos | `safetensors` (`region: us`) |
 
 ## Arquitectura y entrenamiento
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | sn38-r3-2015-pomlnb-chronollm-2015 | 1,86 B | No disponible | `other` (gated) | Acceso restringido en HF, sin cuantizaciones |
-| SmolLM2-1.7B (HuggingFace) | 1,71 B | 8k (según su model card) | Apache 2.0 | Abierto, con GGUF y amplia adopción |
+| SmolLM2-1.7B (Hugging Face) | 1,71 B | 8k (según su model card) | Apache 2.0 | Abierto, con GGUF y amplia adopción |
 | Qwen2.5-1.5B (Alibaba) | 1,54 B | 32k (según su model card) | Apache 2.0 | Abierto, con GGUF y vLLM |
 | StableLM-2-1.6B (Stability AI) | 1,64 B | 4k (según su model card) | Stability AI Community | Abierto, con GGUF |
 
@@ -76,7 +76,7 @@ Nota: los datos de los modelos alternativos provienen de sus model cards públic
 - Ausencia total de model card: se desconoce el tokenizador exacto, la plantilla de prompt, el contexto máximo y el régimen de entrenamiento, lo que complica la integración reproducible en producción.
 - Fecha de corte 2015 (inferida del identificador, no confirmada documentalmente): el modelo carece por diseño de conocimiento posterior, por lo que no debe usarse para preguntas sobre eventos recientes.
 - Riesgo de alucinación no cuantificado: no hay evaluaciones publicadas de factualidad ni de calibración.
-- Licencia `other` con acceso gated: los términos de uso comercial no están publicados de forma explícita; es imprescindible revisar las condiciones en HuggingFace antes de cualquier uso en producción o distribución.
+- Licencia `other` con acceso gated: los términos de uso comercial no están publicados de forma explícita; es imprescindible revisar las condiciones en Hugging Face antes de cualquier uso en producción o distribución.
 - Idiomas no declarados: no puede asumirse un buen rendimiento en castellano ni en ningún otro idioma concreto sin evaluación previa.
 - Sesgos desconocidos: al no documentarse la composición del corpus (probablemente prensa y web anterior a 2015), es esperable que herede sesgos históricos de esa ventana temporal, incluyendo sesgos de representación y terminología desactualizada.
 - Procedencia de checkpoint de competición: el patrón de nombre (`r3`, `pomlnb`) sugiere un estado intermedio de entrenamiento de un subnet; puede no estar instruido para diálogo ni alineado.
@@ -85,7 +85,7 @@ Nota: los datos de los modelos alternativos provienen de sus model cards públic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alfred8995/sn38-r3-2015-pomlnb-chronollm-2015
+- Modelo en Hugging Face: https://huggingface.co/alfred8995/sn38-r3-2015-pomlnb-chronollm-2015
 - Repositorio del subnet SN38 en GitHub: https://github.com/chronollm/sn38
 - Sitio oficial de ChronoLLM: https://chronollm.com/
 - Investigación independiente sobre el subnet 38: https://subnetradar.com/research/subnets/38

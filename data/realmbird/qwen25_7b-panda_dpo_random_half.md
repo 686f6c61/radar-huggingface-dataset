@@ -79,7 +79,7 @@ El modelo se diferencia del base en que ha sido sometido a DPO, pero sin evaluac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half
+- Hugging Face: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_random_half
 - Modelo base unsloth/Qwen2.5-7B-Instruct: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo hermano Realmbird/qwen25_7b-panda_dpo_deepjudge: https://huggingface.co/Realmbird/qwen25_7b-panda_dpo_deepjudge
 - Repositorio oficial Qwen: https://github.com/QwenLM/Qwen

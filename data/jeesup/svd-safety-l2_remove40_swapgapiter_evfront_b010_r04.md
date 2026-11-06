@@ -74,8 +74,8 @@ No se proporcionan las cifras equivalentes del modelo base `meta-llama/Llama-2-7
 
 | Modelo | Parametros | Contexto | Licencia | Seguridad (ASR) | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM 60 % + 4 rondas `gap_iter`) | 6.738.415.616 según safetensors; fracción declarada 0,5998 del denso | 4.096 tokens | Llama 2 Community License | AdvBench 0,3100 / StrongREJECT 0,3150 | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | no disponible en la información proporcionada | HuggingFace, ampliamente usado |
+| Este checkpoint (SVD-LLM 60 % + 4 rondas `gap_iter`) | 6.738.415.616 según safetensors; fracción declarada 0,5998 del denso | 4.096 tokens | Llama 2 Community License | AdvBench 0,3100 / StrongREJECT 0,3150 | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 tokens | Llama 2 Community License | no disponible en la información proporcionada | Hugging Face, ampliamente usado |
 | Otras celdas de la misma rejilla de compresión (Jeesup) | no disponible | no disponible | Llama 2 Community License | no disponible | no disponible en la información proporcionada |
 
 No se han identificado en la información disponible otros modelos comprimidos comparables con métricas de seguridad publicadas (por ejemplo, variantes de SVD-LLM, SliceGPT o LLM-Pruner sobre Llama-2-7B-chat), por lo que la comparación cuantitativa con alternativas queda como no disponible.
@@ -96,7 +96,7 @@ No se han identificado en la información disponible otros modelos comprimidos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Perfil del autor: https://huggingface.co/Jeesup
 - Búsqueda web: los resultados devueltos no guardan relación con el modelo (contenido sobre el servicio de música Spotify en chino) y no aportan enlaces de papers, blogs, repositorios ni demos relevantes. No se dispone de paper asociado ni de repositorio de código en la información proporcionada.

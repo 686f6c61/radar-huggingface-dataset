@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas frente a otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Avicennasis/K2-Horizon-7B-heretic
+- Modelo en Hugging Face: https://huggingface.co/Avicennasis/K2-Horizon-7B-heretic
 - Variante MLX 8-bit: https://huggingface.co/Avicennasis/K2-Horizon-7B-heretic-mlx-8bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Discusion sobre la correccion de `@capture_outputs`: https://huggingface.co/IFM/K2-Horizon-0.9B/discussions/6

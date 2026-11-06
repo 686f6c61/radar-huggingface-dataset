@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 - VRAM estimada: no disponible explícitamente; con ~200 M de parámetros en PyTorch, la inferencia debería ser viable en GPUs de 4-8 GB de VRAM (estimación, no dato oficial).
 - GPU recomendadas: no disponible; el código usa GPU automáticamente si está presente y funciona también en CPU (no se indican tiempos de ejecución).
 - Consumer GPU: dado el tamaño (0,8 GB de pesos), debería funcionar en GPUs de consumo como una RTX 3060 o superior; no hay datos oficiales de compatibilidad.
-- Despliegue: instalación vía `pip install torch numpy scipy safetensors huggingface_hub soundfile`, descarga con `snapshot_download` de HuggingFace e inferencia mediante la clase `NeoTTS`. Existe también un Space en HuggingFace para probarlo sin instalación local. No se mencionan soportes para vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo TTS de este tipo).
+- Despliegue: instalación vía `pip install torch numpy scipy safetensors huggingface_hub soundfile`, descarga con `snapshot_download` de Hugging Face e inferencia mediante la clase `NeoTTS`. Existe también un Space en Hugging Face para probarlo sin instalación local. No se mencionan soportes para vLLM, llama.cpp, Ollama o TGI (no aplicables a un modelo TTS de este tipo).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La principal diferencia de Neo Axion 14 Plus frente a alternativas multilingües
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/northeasterlyone/neo-axion-14-plus
-- Demo (Space de HuggingFace): https://huggingface.co/spaces/northeasterlyone/neo-axion-14-plus
+- Modelo en Hugging Face: https://huggingface.co/northeasterlyone/neo-axion-14-plus
+- Demo (Space de Hugging Face): https://huggingface.co/spaces/northeasterlyone/neo-axion-14-plus
 - Paper de referencia de la arquitectura (StyleTTS 2): https://arxiv.org/abs/2306.07691
 - Licencia (LICENSE en el repositorio): https://huggingface.co/northeasterlyone/neo-axion-14-plus/blob/main/LICENSE

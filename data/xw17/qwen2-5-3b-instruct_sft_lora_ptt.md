@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/Qwen2.5-3B-Instruct_SFT_lora_ptt` es un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-3B-Instruct, publicado en HuggingFace por el usuario `xw17`. El repositorio, de tan solo 0,1 GB, contiene unicamente los pesos del adaptador en formato safetensors, no el modelo completo, por lo que su uso requiere descargar por separado el checkpoint base de Qwen2.5-3B-Instruct y cargar el adaptador con PEFT. El nombre sugiere un entrenamiento de tipo SFT (supervised fine-tuning) sobre el que se ha aplicado alguna variante adicional etiquetada como "ptt", extremo que el autor no documenta.
+`xw17/Qwen2.5-3B-Instruct_SFT_lora_ptt` es un ajuste fino mediante LoRA sobre el modelo base Qwen2.5-3B-Instruct, publicado en Hugging Face por el usuario `xw17`. El repositorio, de tan solo 0,1 GB, contiene unicamente los pesos del adaptador en formato safetensors, no el modelo completo, por lo que su uso requiere descargar por separado el checkpoint base de Qwen2.5-3B-Instruct y cargar el adaptador con PEFT. El nombre sugiere un entrenamiento de tipo SFT (supervised fine-tuning) sobre el que se ha aplicado alguna variante adicional etiquetada como "ptt", extremo que el autor no documenta.
 
-La relevancia de esta ficha es limitada y conviene ser explicito al respecto: la model card es la plantilla autogenerada por HuggingFace y no contiene ni una sola seccion cumplimentada. No hay informacion sobre el dataset de entrenamiento, los hiperparametros, el objetivo del ajuste, los idiomas cubiertos ni la licencia. El repositorio registra cero descargas y cero likes, y el paper referenciado en los tags (arXiv:1910.09700) no es el articulo del modelo, sino el trabajo de Lacoste et al. sobre estimacion de emisiones de carbono que aparece en la plantilla por defecto de HuggingFace.
+La relevancia de esta ficha es limitada y conviene ser explicito al respecto: la model card es la plantilla autogenerada por Hugging Face y no contiene ni una sola seccion cumplimentada. No hay informacion sobre el dataset de entrenamiento, los hiperparametros, el objetivo del ajuste, los idiomas cubiertos ni la licencia. El repositorio registra cero descargas y cero likes, y el paper referenciado en los tags (arXiv:1910.09700) no es el articulo del modelo, sino el trabajo de Lacoste et al. sobre estimacion de emisiones de carbono que aparece en la plantilla por defecto de Hugging Face.
 
 En consecuencia, esta ficha describe las caracteristicas tecnicas conocidas del modelo base y marca como "no disponible" todo lo relativo al ajuste. Cualquier evaluacion de calidad, sesgos o idoneidad para produccion debe realizarse de forma empirica por parte de quien lo vaya a utilizar.
 
@@ -89,7 +89,7 @@ La comparacion de rendimiento con este adaptador no es posible: no existen metri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_ptt
+- Modelo en Hugging Face: https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_ptt
 - Paper referenciado en los tags (estimacion de emisiones, no del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5

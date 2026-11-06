@@ -106,6 +106,6 @@ No se dispone de datos públicos que permitan comparar AUROC o exactitud entre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mike0307/ai-text-detector-zh-en
+- Modelo en Hugging Face: https://huggingface.co/Mike0307/ai-text-detector-zh-en
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Perfil de LinkedIn de "Mike Ye" (GenAI Technical Lead en CloudMile): https://tw.linkedin.com/in/mike-ye-09a8791b1/zh-tw — resultado de la búsqueda web; no se ha podido confirmar que corresponda al autor del modelo.

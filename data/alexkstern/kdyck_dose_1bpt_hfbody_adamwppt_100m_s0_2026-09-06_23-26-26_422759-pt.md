@@ -78,8 +78,8 @@ No hay información suficiente para comparar con alternativas de la misma catego
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kdyck_dose_1Bpt_hfbody_200M_s0_2026-08-14_09-26-44_877448-pt | no disponible | no disponible | no disponible | HuggingFace |
-| kdyck_dose_1Bpt_hfbody_1B_s0_2026-08-14_11-12-47_102739-pt | no disponible | no disponible | no disponible | HuggingFace |
+| kdyck_dose_1Bpt_hfbody_200M_s0_2026-08-14_09-26-44_877448-pt | no disponible | no disponible | no disponible | Hugging Face |
+| kdyck_dose_1Bpt_hfbody_1B_s0_2026-08-14_11-12-47_102739-pt | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -87,11 +87,11 @@ No hay información suficiente para comparar con alternativas de la misma catego
 - Riesgo de alucinación: alto, dado el reducido tamaño del modelo y el limitado corpus de entrenamiento (1B tokens).
 - Limitaciones de contexto e idioma: contexto de 2048 tokens; no se ha evaluado soporte multilingüe más allá de los datos de entrenamiento.
 - Restricciones de licencia: Apache-2.0, permite uso comercial, pero el modelo no tiene la calidad ni el soporte necesarios para entornos de producción.
-- Formato: los pesos están en .pt, sin tokenizer ni pipeline cargable desde HuggingFace, lo que limita su uso con frameworks de inferencia estándar.
+- Formato: los pesos están en .pt, sin tokenizer ni pipeline cargable desde Hugging Face, lo que limita su uso con frameworks de inferencia estándar.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_100M_s0_2026-09-06_23-26-26_422759-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_1Bpt_hfbody_adamwppt_100M_s0_2026-09-06_23-26-26_422759-pt
 - Weights & Biases: https://wandb.ai/alexksternteam/token_dose_1Bpt_adamw_seed_replicas_v1/runs/kp0axqfx
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Modelos relacionados:

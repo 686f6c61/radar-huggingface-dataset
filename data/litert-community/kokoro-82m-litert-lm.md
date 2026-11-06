@@ -85,7 +85,7 @@ La informacion proporcionada solo permite comparar con el modelo base, ya que no
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Kokoro-82M-litert-lm (este modelo) | 82 M | No aplica | Iguala o supera al Kokoro original en servidor; 4-5x tiempo real en Galaxy S26; ~0,5 GB pico en GPU | Apache-2.0 | Bundle `.litertlm` para LiteRT-LM; 0 descargas y 0 likes en el momento de la consulta |
-| hexgrad/Kokoro-82M (modelo base) | 82 M | No aplica | Referencia de comparacion; requiere Python, `espeak-ng` y, en la practica, servidor | Apache-2.0 (segun lo indicado por el autor del bundle) | Disponible en HuggingFace; no se detallan formatos ni variantes de cuantizacion en la informacion proporcionada |
+| hexgrad/Kokoro-82M (modelo base) | 82 M | No aplica | Referencia de comparacion; requiere Python, `espeak-ng` y, en la practica, servidor | Apache-2.0 (segun lo indicado por el autor del bundle) | Disponible en Hugging Face; no se detallan formatos ni variantes de cuantizacion en la informacion proporcionada |
 | Otras alternativas de TTS on-device | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ La informacion proporcionada solo permite comparar con el modelo base, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/Kokoro-82M-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/litert-community/Kokoro-82M-litert-lm
 - Modelo base: https://huggingface.co/hexgrad/Kokoro-82M
 - Repositorio de LiteRT-LM: https://github.com/google-ai-edge/LiteRT-LM
 - README del modulo omni: https://github.com/google-ai-edge/LiteRT-LM/tree/main/omni

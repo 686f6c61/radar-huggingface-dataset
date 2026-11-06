@@ -104,7 +104,7 @@ La informacion disponible indica cualitativamente que el modelo base alcanza el 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/dkagramanyan/GigaChat3.1-10B-A1.8B-W4A16
+- Modelo cuantizado en Hugging Face: https://huggingface.co/dkagramanyan/GigaChat3.1-10B-A1.8B-W4A16
 - Modelo base: https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-bf16
 - Version GGUF del modelo base: https://huggingface.co/ai-sage/GigaChat3.1-10B-A1.8B-GGUF
 - Modelo base GigaChat3-10B-A1.8B: https://huggingface.co/ai-sage/GigaChat3-10B-A1.8B

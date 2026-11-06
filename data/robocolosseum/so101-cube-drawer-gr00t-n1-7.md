@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| so101-cube-drawer-gr00t-n1.7 | 3.144.016.000 | no disponible | Manipulación SO-101 (cubo y cajón) | Apache 2.0 | HuggingFace, LeRobot |
+| so101-cube-drawer-gr00t-n1.7 | 3.144.016.000 | no disponible | Manipulación SO-101 (cubo y cajón) | Apache 2.0 | Hugging Face, LeRobot |
 | GR00T N1.7 (base, NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la información | GitHub NVIDIA/Isaac-GR00T |
-| Otras políticas LeRobot para SO-101 | no disponible | no disponible | Tareas específicas de imitación | variable | HuggingFace, LeRobot |
+| Otras políticas LeRobot para SO-101 | no disponible | no disponible | Tareas específicas de imitación | variable | Hugging Face, LeRobot |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RoboColosseum/so101-cube-drawer-gr00t-n1.7
+- Modelo en Hugging Face: https://huggingface.co/RoboColosseum/so101-cube-drawer-gr00t-n1.7
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-cube-drawer
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-cube-drawer
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

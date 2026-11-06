@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF)
 - [Checkpoint fuente (Qwen3.5-2B-CyberSec)](https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec)
 - [Modelo base registrado (unsloth/Qwen3.5-2B)](https://huggingface.co/unsloth/Qwen3.5-2B)
 - [Dataset de ciberseguridad de Trendyol](https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset)

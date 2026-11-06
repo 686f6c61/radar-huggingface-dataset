@@ -2,7 +2,7 @@
 
 ## Resumen
 
-4b-wo-both-30-27b-z-epoch3 es un modelo de lenguaje de 4.539.265.536 parametros (unos 4,54 mil millones) publicado por la organizacion Stage-org en HuggingFace. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base Qwen/Qwen3.5-4B, tal y como declara la propia model card en su configuracion de entrenamiento. El repositorio contiene unicamente pesos en formato safetensors (9,1 GB), con la etiqueta de libreria qwen3_5 y sin pipeline, licencia ni idiomas declarados.
+4b-wo-both-30-27b-z-epoch3 es un modelo de lenguaje de 4.539.265.536 parametros (unos 4,54 mil millones) publicado por la organizacion Stage-org en Hugging Face. Se trata de un ajuste por aprendizaje por refuerzo (RL) sobre el modelo base Qwen/Qwen3.5-4B, tal y como declara la propia model card en su configuracion de entrenamiento. El repositorio contiene unicamente pesos en formato safetensors (9,1 GB), con la etiqueta de libreria qwen3_5 y sin pipeline, licencia ni idiomas declarados.
 
 El modelo no es un lanzamiento comercial ni un modelo documentado al uso: es el artefacto resultante de una ejecucion interna de entrenamiento (intento 1 de un flujo denominado jh-workflow) sobre un dataset propio llamado Stage-org/4b-wo-both-30-27b-z. La model card no incluye descripcion funcional, resultados de evaluacion, ni informacion sobre el dataset de entrenamiento, sus licencias o su composicion. La utilidad practica del modelo queda, por tanto, condicionada a la validacion empieza por el propio equipo que lo entreno.
 
@@ -12,7 +12,7 @@ Es relevante ahora unicamente como caso de estudio tecnico: la configuracion pub
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer de tipo qwen3_5 (etiqueta de la libreria en HuggingFace); ajuste por RL sobre Qwen/Qwen3.5-4B. No se detalla la arquitectura interna (densa o MoE) |
+| Arquitectura | Transformer de tipo qwen3_5 (etiqueta de la libreria en Hugging Face); ajuste por RL sobre Qwen/Qwen3.5-4B. No se detalla la arquitectura interna (densa o MoE) |
 | Parametros totales | 4.539.265.536 (~4,54 B) segun los pesos en safetensors |
 | Parametros activos | no disponible (la model card no indica si la base es MoE) |
 | Longitud de contexto | 65.536 tokens declarados en la configuracion de inferencia (max_model_len). La configuracion de entrenamiento declara seq_len = 300.000, dato no conciliado en la model card |
@@ -93,7 +93,7 @@ La diferencia clave frente a las alternativas no es de rendimiento, sino de traz
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/4b-wo-both-30-27b-z-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/4b-wo-both-30-27b-z-epoch3
 - Dataset declarado en la model card (enlace construido a partir del identificador): https://huggingface.co/datasets/Stage-org/4b-wo-both-30-27b-z
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-4B
 - Perfil del autor: https://huggingface.co/Stage-org

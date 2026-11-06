@@ -100,7 +100,7 @@ No se dispone de datos de parametros, contexto ni rendimiento cuantitativo de lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v3
+- Modelo en Hugging Face: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Asistente de entrenamiento v3: https://huggingface.co/SimpleTuner/Qwen-Image-2.1-training-assistant-v3
 - Release v2 (multiescala con REPA y auto shift): https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v2

@@ -80,6 +80,6 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ishowbackup/Qwen3.8-27B-ABLITERATED-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Ishowbackup/Qwen3.8-27B-ABLITERATED-GGUF
 - Modelo padre (BF16): https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.8-27B

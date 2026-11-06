@@ -73,9 +73,9 @@ Contexto del estudio: agregando las 3 tareas y todas las semillas, ACT con 5 dem
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento (estudio) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51,67 M | Imagen 256x256 + estado; sin lenguaje | 14,7% de media (28% en el paso 10.000) | apache-2.0 | HuggingFace (Pipe1213/act_obj_t1_n05) |
+| ACT (este modelo) | 51,67 M | Imagen 256x256 + estado; sin lenguaje | 14,7% de media (28% en el paso 10.000) | apache-2.0 | Hugging Face (Pipe1213/act_obj_t1_n05) |
 | SmolVLA (referencia del estudio) | no disponible en la información | VLA con entrada de lenguaje | 78% con las mismas demostraciones | no disponible en la información | no disponible en la información |
-| ACT con 5 demostraciones (agregado del estudio) | 51,67 M (configuración LeRobot) | Imagen + estado | 17,9% en 3 tareas y todas las semillas | apache-2.0 (este repo) | HuggingFace y GitHub del estudio |
+| ACT con 5 demostraciones (agregado del estudio) | 51,67 M (configuración LeRobot) | Imagen + estado | 17,9% en 3 tareas y todas las semillas | apache-2.0 (este repo) | Hugging Face y GitHub del estudio |
 
 La comparación directa con otros modelos de la misma categoría (otras políticas ACT o VLA para LIBERO) no está disponible en la información proporcionada.
 
@@ -93,7 +93,7 @@ La comparación directa con otros modelos de la misma categoría (otras polític
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t1_n05
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t1_n05
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

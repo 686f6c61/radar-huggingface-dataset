@@ -84,10 +84,10 @@ La comparativa es limitada porque Step-Audio-AQAA es uno de los pocos modelos ab
 
 ## Enlaces
 
-- [Modelo en HuggingFace (mirror)](https://huggingface.co/Ishowbackup/Step-Audio-AQAA)
-- [Modelo original en HuggingFace](https://huggingface.co/stepfun-ai/Step-Audio-AQAA)
+- [Modelo en Hugging Face (mirror)](https://huggingface.co/Ishowbackup/Step-Audio-AQAA)
+- [Modelo original en Hugging Face](https://huggingface.co/stepfun-ai/Step-Audio-AQAA)
 - [Paper en arXiv](https://arxiv.org/abs/2506.08967)
 - [Repositorio GitHub de Step-Audio](https://github.com/stepfun-ai/Step-Audio)
-- [Colección Step-Audio en HuggingFace](https://huggingface.co/collections/stepfun-ai/step-audio)
+- [Colección Step-Audio en Hugging Face](https://huggingface.co/collections/stepfun-ai/step-audio)
 - [Modelo en ModelScope](https://www.modelscope.cn/models/stepfun-ai/Step-Audio-AQAA)
 - [Demo en vivo](https://www.stepfun.com/docs/zh/step-audio-aqaa?studio_code=step-audio-aqaa&studio_id=121368403356246016&studio_type=1)

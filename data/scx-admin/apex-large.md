@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entradas | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| Apex-large (este) | ~9B (8.979.664.627) | Texto e imagenes | hasta 8.192 tokens en el ejemplo | Apache 2.0 | Pesos abiertos en HuggingFace, 21 descargas, 0 likes | Republicacion de GLiClass 4 9B; admite streaming con cache por sesion |
-| Apex-flash | 0.4B | Solo texto | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace | Mismo enfoque para decisiones de alto volumen en CPU o GPU; sin capacidad visual |
-| knowledgator/gliclass-v4-9b (upstream) | ~9B | Texto e imagenes | no disponible | Apache 2.0 | Pesos abiertos en HuggingFace | Peso y configuracion identicos; incluye la ficha con detalles de entrenamiento y evaluaciones |
+| Apex-large (este) | ~9B (8.979.664.627) | Texto e imagenes | hasta 8.192 tokens en el ejemplo | Apache 2.0 | Pesos abiertos en Hugging Face, 21 descargas, 0 likes | Republicacion de GLiClass 4 9B; admite streaming con cache por sesion |
+| Apex-flash | 0.4B | Solo texto | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face | Mismo enfoque para decisiones de alto volumen en CPU o GPU; sin capacidad visual |
+| knowledgator/gliclass-v4-9b (upstream) | ~9B | Texto e imagenes | no disponible | Apache 2.0 | Pesos abiertos en Hugging Face | Peso y configuracion identicos; incluye la ficha con detalles de entrenamiento y evaluaciones |
 | Clasificadores zero-shot tipo NLI (p. ej. familias DeBERTa) | no disponible | Solo texto | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada para establecer una comparacion cifrada |
 
 No hay datos de rendimiento comparado (accuracy, F1, latencia) en la informacion disponible, por lo que la comparativa se limita a tamano, modalidad, licencia y disponibilidad.
@@ -96,7 +96,7 @@ No hay datos de rendimiento comparado (accuracy, F1, latencia) en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scx-admin/Apex-large
+- Modelo en Hugging Face: https://huggingface.co/scx-admin/Apex-large
 - Coleccion de la familia Apex: https://huggingface.co/collections/scx-admin/apex-family-6ad58a4ea2e0c9875ddb4061
 - Modelo hermano Apex-flash: https://huggingface.co/scx-admin/Apex-flash
 - Checkpoint upstream (GLiClass 4 9B): https://huggingface.co/knowledgator/gliclass-v4-9b

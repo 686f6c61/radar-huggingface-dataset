@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Material Herbarium LoRA es un adaptador LoRA para Stable Diffusion XL (SDXL) entrenado por la usuaria de HuggingFace esheremeteva06. Su proposito es reproducir el estilo visual de las laminas botanicas historicas de la obra *Flora von Deutschland* de Otto Wilhelm Thome (edicion de 1885), una coleccion de ilustraciones cientificas del siglo XIX disponible en Wikimedia Commons. El adaptador se activa mediante el token de estilo `matflora1885 style` y no funciona de forma autonoma: requiere cargar el modelo base `stabilityai/stable-diffusion-xl-base-1.0` junto con los pesos LoRA.
+Material Herbarium LoRA es un adaptador LoRA para Stable Diffusion XL (SDXL) entrenado por la usuaria de Hugging Face esheremeteva06. Su proposito es reproducir el estilo visual de las laminas botanicas historicas de la obra *Flora von Deutschland* de Otto Wilhelm Thome (edicion de 1885), una coleccion de ilustraciones cientificas del siglo XIX disponible en Wikimedia Commons. El adaptador se activa mediante el token de estilo `matflora1885 style` y no funciona de forma autonoma: requiere cargar el modelo base `stabilityai/stable-diffusion-xl-base-1.0` junto con los pesos LoRA.
 
 Tecnicamente se trata de un LoRA de estilo entrenado con DreamBooth sobre un conjunto muy reducido de imagenes: 20 ilustraciones botanicas historicas, seleccionadas y recortadas manualmente a 512 x 512 pixeles. El entrenamiento consta de solo 400 pasos, lo que lo situa en la categoria de adaptadores ligeros y de nicho, orientados a la generacion de imagenes con una estetica muy concreta (grabado botanico, ilustracion cientifica decimononica) mas que a un uso generalista.
 
@@ -65,9 +65,9 @@ No se dispone de datos de rendimiento ni de otros LoRA de estilo botanico compar
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Material Herbarium LoRA | LoRA de estilo sobre SDXL | no disponible (adaptador) | 1024 x 1024 (heredada de SDXL) | openrail++ | HuggingFace, 17 descargas |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | no disponible en la ficha | 1024 x 1024 | openrail++ (CreativeML Open RAIL++-M) | HuggingFace, ampliamente usado |
-| Otros LoRA de estilo para SDXL | Adaptadores de estilo | no disponible | 1024 x 1024 | variable | HuggingFace / Civitai |
+| Material Herbarium LoRA | LoRA de estilo sobre SDXL | no disponible (adaptador) | 1024 x 1024 (heredada de SDXL) | openrail++ | Hugging Face, 17 descargas |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base text-to-image | no disponible en la ficha | 1024 x 1024 | openrail++ (CreativeML Open RAIL++-M) | Hugging Face, ampliamente usado |
+| Otros LoRA de estilo para SDXL | Adaptadores de estilo | no disponible | 1024 x 1024 | variable | Hugging Face / Civitai |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de otros LoRA de estilo botanico compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/esheremeteva06/material-herbarium-lora
+- Modelo en Hugging Face: https://huggingface.co/esheremeteva06/material-herbarium-lora
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - Fuente de las imagenes (Wikimedia Commons, categoria Thome, Flora von Deutschland): https://commons.wikimedia.org/wiki/Category:Thom%C3%A9,_Flora_von_Deutschland
 - Licencia OpenRAIL++: https://huggingface.co/docs/hub/model-cards-licenses

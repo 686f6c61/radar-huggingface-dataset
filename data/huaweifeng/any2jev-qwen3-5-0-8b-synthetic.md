@@ -4,7 +4,7 @@
 
 any2jev-qwen3.5-0.8b-synthetic es un adaptador LoRA publicado por el usuario huaweifeng que convierte el modelo base Qwen/Qwen3.5-0.8B en un modelo de decision de estilo Jev ("System One"). No es un modelo generativo: recibe un estado (state) y un conjunto de opciones tipadas y devuelve, en una sola pasada forward, una respuesta tipada Choice (elegir entre opciones), Score (puntuar) o Noul (si/no) acompanada de probabilidades calibradas. El modelo se ha construido con la herramienta any2jev, cuyo repositorio publico es github.com/hwfengcs/any2jev.
 
-El repositorio contiene un adaptador LoRA de rango 8 entrenado sobre el backbone con la cabeza de vocabulario eliminada, una cabeza de puntero ("pointer head") de dimension 256 que puntua cada opcion contra el token de decision, el tokenizer del modelo base y los ficheros de configuracion y metricas. El pipeline declarado en HuggingFace es text-classification y la licencia es Apache-2.0. El propio autor advierte que este checkpoint demuestra la receta de conversion sobre este backbone y que no es un modelo de decision de proposito general.
+El repositorio contiene un adaptador LoRA de rango 8 entrenado sobre el backbone con la cabeza de vocabulario eliminada, una cabeza de puntero ("pointer head") de dimension 256 que puntua cada opcion contra el token de decision, el tokenizer del modelo base y los ficheros de configuracion y metricas. El pipeline declarado en Hugging Face es text-classification y la licencia es Apache-2.0. El propio autor advierte que este checkpoint demuestra la receta de conversion sobre este backbone y que no es un modelo de decision de proposito general.
 
 Su relevancia actual es metodologica: ejemplifica un patron de "modelo de decision" que sustituye la generacion de texto libre por una interfaz tipada y calibrada (Choice / Score / Noul) orientada a enrutado, triaje y control en pipelines de agentes, con un coste de entrenamiento muy bajo (5,9 M de parametros entrenables, 26 minutos en una GPU de consumo). El modelo tiene 0 descargas y 0 likes en el momento de redactar esta ficha, y el tamano del repositorio aparece como 0.0 GB.
 
@@ -84,8 +84,8 @@ No disponible. En la informacion proporcionada no se identifican otros modelos d
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| any2jev-qwen3.5-0.8b-synthetic | Adaptador de decision (LoRA + cabeza de puntero) | 5,9 M entrenables sobre Qwen/Qwen3.5-0.8B | No disponible | Apache-2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.5-0.8B | Modelo generativo base | Del orden de 0,8 B (no confirmado) | No disponible | No disponible | HuggingFace |
+| any2jev-qwen3.5-0.8b-synthetic | Adaptador de decision (LoRA + cabeza de puntero) | 5,9 M entrenables sobre Qwen/Qwen3.5-0.8B | No disponible | Apache-2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.5-0.8B | Modelo generativo base | Del orden de 0,8 B (no confirmado) | No disponible | No disponible | Hugging Face |
 | Otros adaptadores any2jev | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ No disponible. En la informacion proporcionada no se identifican otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huaweifeng/any2jev-qwen3.5-0.8b-synthetic
+- Modelo en Hugging Face: https://huggingface.co/huaweifeng/any2jev-qwen3.5-0.8b-synthetic
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de any2jev: https://github.com/hwfengcs/any2jev
 - Documentacion de Jev citada por el autor: no disponible como enlace directo en la informacion proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-led-large-16384-BASE-Attention3ep es un ajuste fino (fine-tuning) del modelo allenai/led-large-16384, publicado por el usuario rosadecsai en HuggingFace. Se trata de un modelo encoder-decoder basado en la arquitectura LED (Longformer Encoder-Decoder), disenada especificamente para tareas de secuencia a secuencia sobre documentos muy largos, con una ventana de contexto de 16.384 tokens. El modelo cuenta con 459.859.047 parametros, un tamano coherente con la variante "large" del modelo base.
+led-large-16384-BASE-Attention3ep es un ajuste fino (fine-tuning) del modelo allenai/led-large-16384, publicado por el usuario rosadecsai en Hugging Face. Se trata de un modelo encoder-decoder basado en la arquitectura LED (Longformer Encoder-Decoder), disenada especificamente para tareas de secuencia a secuencia sobre documentos muy largos, con una ventana de contexto de 16.384 tokens. El modelo cuenta con 459.859.047 parametros, un tamano coherente con la variante "large" del modelo base.
 
-El modelo se ha entrenado durante 3 epocas con el Trainer de HuggingFace, usando AdamW con learning rate 5e-5, batch total de 16 (batch 8 con 2 pasos de acumulacion de gradiente) y precision mixta nativa (AMP). Los resultados declarados en la evaluacion son Loss 2.0410, ROUGE-1 42.1053, ROUGE-2 15.7014, ROUGE-L 19.2555 y ROUGE-Lsum 39.5379. La model card no especifica el conjunto de datos de entrenamiento (aparece como "None" y con la nota "More information needed" en las secciones de descripcion, usos previstos y datos).
+El modelo se ha entrenado durante 3 epocas con el Trainer de Hugging Face, usando AdamW con learning rate 5e-5, batch total de 16 (batch 8 con 2 pasos de acumulacion de gradiente) y precision mixta nativa (AMP). Los resultados declarados en la evaluacion son Loss 2.0410, ROUGE-1 42.1053, ROUGE-2 15.7014, ROUGE-L 19.2555 y ROUGE-Lsum 39.5379. La model card no especifica el conjunto de datos de entrenamiento (aparece como "None" y con la nota "More information needed" en las secciones de descripcion, usos previstos y datos).
 
 Su relevancia es limitada pero concreta: es un ejemplo de ajuste fino de un modelo de contexto largo para tareas de resumen, publicado bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones de licencia. No obstante, el valor de "Gen Len" de 1.0 en todas las epocas es una senal de alarma tecnica: sugiere que el modelo genera salidas degeneradas de un solo token en la evaluacion, por lo que debe tratarse como un artefacto de investigacion y no como un modelo listo para produccion sin una validacion previa exhaustiva.
 
@@ -32,7 +32,7 @@ Su relevancia es limitada pero concreta: es un ejemplo de ajuste fino de un mode
 
 La arquitectura es la del modelo allenai/led-large-16384, un Transformer encoder-decoder con mecanismo de atencion Longformer. Este mecanismo combina atencion local de ventana deslizante con unos pocos tokens globales que atienden a toda la secuencia, lo que reduce el coste cuadratico de la atencion estandar y permite procesar entradas de hasta 16.384 tokens. El modelo resultante tiene 459,8 millones de parametros y esta orientado a tareas de resumen y transformacion de secuencias largas.
 
-El ajuste fino se realizo con el Trainer de HuggingFace durante 3 epocas (3.393 pasos) sobre un dataset que la model card identifica como "None", es decir, no documentado. Los hiperparametros fueron: learning rate 5e-5 con scheduler lineal, AdamW con betas (0.9, 0.999) y epsilon 1e-8, batch de entrenamiento 8, batch de evaluacion 8, acumulacion de gradiente en 2 pasos (batch total efectivo 16), precision mixta nativa (AMP), semilla 42 y sin argumentos adicionales en el optimizador. No se documenta el uso de RLHF, DPO ni ninguna otra fase de alineacion, ni tecnicas de decodificacion especulativa u optimizaciones de inferencia. La perdida de entrenamiento desciende de 2,897 en la epoca 1 a 2,4834 en la epoca 3, mientras que la perdida de validacion se estabiliza en torno a 2,04 desde la primera epoca, lo que apunta a una convergencia temprana.
+El ajuste fino se realizo con el Trainer de Hugging Face durante 3 epocas (3.393 pasos) sobre un dataset que la model card identifica como "None", es decir, no documentado. Los hiperparametros fueron: learning rate 5e-5 con scheduler lineal, AdamW con betas (0.9, 0.999) y epsilon 1e-8, batch de entrenamiento 8, batch de evaluacion 8, acumulacion de gradiente en 2 pasos (batch total efectivo 16), precision mixta nativa (AMP), semilla 42 y sin argumentos adicionales en el optimizador. No se documenta el uso de RLHF, DPO ni ninguna otra fase de alineacion, ni tecnicas de decodificacion especulativa u optimizaciones de inferencia. La perdida de entrenamiento desciende de 2,897 en la epoca 1 a 2,4834 en la epoca 3, mientras que la perdida de validacion se estabiliza en torno a 2,04 desde la primera epoca, lo que apunta a una convergencia temprana.
 
 ## Capacidades
 
@@ -43,7 +43,7 @@ El ajuste fino se realizo con el Trainer de HuggingFace durante 3 epocas (3.393 
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; la model card no declara idiomas soportados.
 - Capacidades especiales (modo thinking, vision, audio): no disponible. Es un modelo exclusivamente de texto.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede desplegarse en la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Casos de uso
 
@@ -77,7 +77,7 @@ No se han publicado resultados comparativos con otros modelos (MMLU, HumanEval, 
 - Memoria para secuencias de 16.384 tokens: el consumo de activaciones crece con la longitud de entrada; con lotes grandes y fp32 puede superar con holgura la capacidad de una GPU de gama de consumo, por lo que se recomienda batching pequeno y fp16/bf16.
 - GPU recomendadas: cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo con lotes pequenos; tarjetas como RTX 3060 12 GB, RTX 4070, RTX 4090, A10G, L4, A100 y H100 son suficientes en terminos de capacidad de pesos. La eleccion depende del throughput requerido y de la longitud de secuencia.
 - Cabe en GPU de consumo: si, los pesos caben sobradamente en cualquier GPU consumer moderna desde 8 GB, siempre que se use precision reducida y lotes pequenos para secuencias largas.
-- Opciones de despliegue: la via principal es HuggingFace Transformers con `AutoModelForSeq2SeqLM`. El tag `endpoints_compatible` habilita el despliegue en HuggingFace Inference Endpoints. La exportacion a ONNX es posible a traves de Optimum. No hay soporte documentado en llama.cpp, Ollama ni GGUF, ya que no existen conversiones publicadas de LED. El soporte en vLLM o TGI no esta confirmado en la informacion disponible.
+- Opciones de despliegue: la via principal es Hugging Face Transformers con `AutoModelForSeq2SeqLM`. El tag `endpoints_compatible` habilita el despliegue en Hugging Face Inference Endpoints. La exportacion a ONNX es posible a traves de Optimum. No hay soporte documentado en llama.cpp, Ollama ni GGUF, ya que no existen conversiones publicadas de LED. El soporte en vLLM o TGI no esta confirmado en la informacion disponible.
 - Latencia y throughput: no disponible. No se publican mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -104,7 +104,7 @@ La busqueda web realizada no ha devuelto informacion relevante sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rosadecsai/led-large-16384-BASE-Attention3ep
+- Modelo en Hugging Face: https://huggingface.co/rosadecsai/led-large-16384-BASE-Attention3ep
 - Modelo base: https://huggingface.co/allenai/led-large-16384
 - Paper de LED (Longformer Encoder-Decoder): no disponible en la informacion proporcionada
 - Repositorio de codigo, demo o blog del autor: no disponible

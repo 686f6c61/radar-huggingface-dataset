@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MedMLX/vista3d-ct-mlx | no disponible | no aplica (volúmenes 3D) | Segmentación CT 3D | nvidia-open-model | HuggingFace, MLX |
-| nvidia/NV-Segment-CT | no disponible | no aplica (volúmenes 3D) | Segmentación CT 3D | no disponible en la información | HuggingFace (modelo base) |
+| MedMLX/vista3d-ct-mlx | no disponible | no aplica (volúmenes 3D) | Segmentación CT 3D | nvidia-open-model | Hugging Face, MLX |
+| nvidia/NV-Segment-CT | no disponible | no aplica (volúmenes 3D) | Segmentación CT 3D | no disponible en la información | Hugging Face (modelo base) |
 | VISTA3D (original) | no disponible | no aplica (volúmenes 3D) | Segmentación 3D unificada | no disponible en la información | Paper arXiv:2406.05285 |
 
 No se dispone de datos de rendimiento ni de otros modelos comparables en la información proporcionada; la comparativa se limita a la relación con el modelo base y el trabajo original.
@@ -72,18 +72,18 @@ No se dispone de datos de rendimiento ni de otros modelos comparables en la info
 ## Limitaciones y advertencias
 
 - No validado para uso clínico: la model card indica explícitamente que es para investigación y educación.
-- Licencia NVIDIA Open Model License: es necesario revisar sus términos antes de cualquier uso comercial; la licencia se etiqueta como "other" en HuggingFace.
+- Licencia NVIDIA Open Model License: es necesario revisar sus términos antes de cualquier uso comercial; la licencia se etiqueta como "other" en Hugging Face.
 - Sesgos conocidos: no disponibles en la información proporcionada.
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero la segmentación puede producir resultados incorrectos en anatomías atípicas o imágenes de baja calidad; no se documentan métricas de error.
 - Limitaciones de idioma: el modelo declara únicamente inglés en sus metadatos; no se documenta soporte multilingüe.
 - Dependencia de plataforma: requiere Apple Silicon y MLX; no se ejecuta en CUDA ni en hardware no Apple.
-- Inferencia desactivada en el Hub (`inference: false`): no se puede probar directamente desde la interfaz de HuggingFace.
+- Inferencia desactivada en el Hub (`inference: false`): no se puede probar directamente desde la interfaz de Hugging Face.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta: ecosistema muy incipiente y poca validación comunitaria.
 - No se especifican requisitos de memoria unificada ni rendimiento, lo que dificulta planificar despliegues.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MedMLX/vista3d-ct-mlx
+- Hugging Face: https://huggingface.co/MedMLX/vista3d-ct-mlx
 - Repositorio GitHub: https://github.com/MedMLX/mlx-segment-ct
 - Documentación de ejecución: https://github.com/MedMLX/mlx-segment-ct/blob/main/README.md#run
 - Paper original VISTA3D: https://arxiv.org/abs/2406.05285

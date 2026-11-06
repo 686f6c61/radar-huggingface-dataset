@@ -85,7 +85,7 @@ Nota: los experimentos previos de escalado de rango (v13, v16) dieron resultados
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-r64-lora
+- Repositorio Hugging Face: https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-r64-lora
 - Gemelo r32 (publicación primaria del par): https://huggingface.co/freeqaz/decomp-synth-lifter-v17-full-qwen3.5-9b-lora
 - Variante evaluada v14-evalformat: https://huggingface.co/freeqaz/decomp-synth-lifter-v14-evalformat-qwen3.5-9b-lora
 - Variante v13-chain r64: https://huggingface.co/freeqaz/decomp-synth-lifter-v13-chain-qwen3.5-9b-r64-lora

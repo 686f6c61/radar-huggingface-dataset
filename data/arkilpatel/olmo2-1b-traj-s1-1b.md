@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-1b
 - Modelo base OLMo-2-0425-1B: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Repositorio oficial OLMo en GitHub: https://github.com/allenai/OLMo
 - Paper "OLMo 2 Furious": https://arxiv.org/abs/2501.00656

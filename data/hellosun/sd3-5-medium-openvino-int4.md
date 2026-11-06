@@ -76,10 +76,10 @@ Datos adicionales de conversion: cuantizacion 68,55 s; tamanos FP16 transformer 
 
 | Modelo | Parametros (transformer) | Contexto / resolucion | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hellosun/SD3.5-medium-OpenVINO-INT4 | ~2.500 M (MMDiT) | 1024x1024, 40 pasos | INT4/INT8 | Stability AI Community (other) | HuggingFace, OpenVINO IR |
-| stabilityai/stable-diffusion-3.5-medium (base) | ~2.500 M (MMDiT) | 1024x1024, 40 pasos | FP16/BF16 | Stability AI Community | HuggingFace, gated |
-| stabilityai/stable-diffusion-3.5-large | ~8.000 M (MMDiT) | 1024x1024 | FP16/BF16 | Stability AI Community | HuggingFace, gated |
-| FLUX.1 (Black Forest Labs) | ~12.000 M (transformer) | 1024x1024, destilado 4 pasos | FP16/FP8 | Apache-2.0 / no comercial segun variante | HuggingFace |
+| Hellosun/SD3.5-medium-OpenVINO-INT4 | ~2.500 M (MMDiT) | 1024x1024, 40 pasos | INT4/INT8 | Stability AI Community (other) | Hugging Face, OpenVINO IR |
+| stabilityai/stable-diffusion-3.5-medium (base) | ~2.500 M (MMDiT) | 1024x1024, 40 pasos | FP16/BF16 | Stability AI Community | Hugging Face, gated |
+| stabilityai/stable-diffusion-3.5-large | ~8.000 M (MMDiT) | 1024x1024 | FP16/BF16 | Stability AI Community | Hugging Face, gated |
+| FLUX.1 (Black Forest Labs) | ~12.000 M (transformer) | 1024x1024, destilado 4 pasos | FP16/FP8 | Apache-2.0 / no comercial segun variante | Hugging Face |
 
 La comparativa se limita a caracteristicas verificables; no se dispone de datos de rendimiento comparativos de calidad entre estas variantes en la informacion proporcionada.
 
@@ -96,10 +96,10 @@ La comparativa se limita a caracteristicas verificables; no se dispone de datos 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/HelloSun/SD3.5-medium-OpenVINO-INT4
+- Hugging Face del modelo: https://huggingface.co/HelloSun/SD3.5-medium-OpenVINO-INT4
 - Modelo base: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium
 - Licencia del modelo base: https://huggingface.co/stabilityai/stable-diffusion-3.5-medium/blob/main/LICENSE.md
 - Documentacion de OpenVINO: https://docs.openvino.ai/
-- Modelos OpenVINO en HuggingFace: https://huggingface.co/OpenVINO/models
+- Modelos OpenVINO en Hugging Face: https://huggingface.co/OpenVINO/models
 - OpenVINO Model Hub (Intel): https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/model-hub.html
 - Stable Diffusion 3 en el plugin de GIMP de OpenVINO (Intel): https://github.com/intel/openvino-ai-plugins-gimp/blob/main/Docs/stable-diffusion-v3.md

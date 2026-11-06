@@ -97,7 +97,7 @@ La diferencia relevante frente a esas alternativas no es de rendimiento, que aqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-025
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVA2/qwen3-4b-medicine-online-pilot-261017-seed42-step-025
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Framework veRL, citado en la model card como origen del checkpoint nativo: https://github.com/volcengine/verl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

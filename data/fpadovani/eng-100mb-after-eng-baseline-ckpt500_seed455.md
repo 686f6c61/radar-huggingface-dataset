@@ -65,7 +65,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455)
+- [Hugging Face - fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455](https://huggingface.co/fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455)
 - [Modelo base - fpadovani/ppt-art-lang-eng-baseline-100mb_seed455](https://huggingface.co/fpadovani/ppt-art-lang-eng-baseline-100mb_seed455)
 - [FriendliAI - página del modelo](https://friendli.ai/models/fpadovani/eng-100mb-after-eng-baseline-ckpt500_seed455)
 - [Weights & Biases run (enlace en la model card)](https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/egif8juu)

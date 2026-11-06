@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Aflah012/Qwen3.5-0.8B-weight-space-programming-gguf",
+  "slug": "aflah012-qwen3-5-0-8b-weight-space-programming-gguf",
+  "author": "Aflah012",
+  "url": "https://huggingface.co/Aflah012/Qwen3.5-0.8B-weight-space-programming-gguf",
+  "created_at": "2026-11-04T03:46:27.000Z",
+  "updated_at": "2026-11-05T14:13:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "base_model:RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+    "base_model:quantized:RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 109,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 541903808,
+  "storage_human": "542 MB",
+  "base_model": "RikiyaT/Qwen3.5-0.8B-weight-space-programming",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B-weight-space-programming-gguf - Hugging Face",
+      "url": "https://huggingface.co/Aflah012/Qwen3.5-0.8B-weight-space-programming-gguf",
+      "snippet": "Instructions to use Aflah012/Qwen3.5-0.8B-weight-space-programming-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Aflah012 (Aflah) - Hugging Face",
+      "url": "https://huggingface.co/Aflah012",
+      "snippet": "models1 Aflah012/Qwen3.5-0.8B-weight-space-programming-gguf 0.8B•Updated about 21 hours ago• 15"
+    }
+  ]
+}

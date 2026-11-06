@@ -70,9 +70,9 @@ No se dispone de datos de rendimiento del modelo ni de especificaciones verifica
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Doppleganger-V7-LLaMa-70B-GGUF | 70.553.706.560 | No disponible | No disponible | GGUF | HuggingFace (133 descargas) |
-| TareksGraveyard/Doppleganger-V7-LLaMa-70B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Safetensors (segun el repositorio cuantizado) | HuggingFace |
-| Otras fusiones de 70B en GGUF de la familia Llama | No disponible | No disponible | No disponible | GGUF | HuggingFace |
+| Doppleganger-V7-LLaMa-70B-GGUF | 70.553.706.560 | No disponible | No disponible | GGUF | Hugging Face (133 descargas) |
+| TareksGraveyard/Doppleganger-V7-LLaMa-70B (modelo base) | No disponible en la informacion proporcionada | No disponible | No disponible | Safetensors (segun el repositorio cuantizado) | Hugging Face |
+| Otras fusiones de 70B en GGUF de la familia Llama | No disponible | No disponible | No disponible | GGUF | Hugging Face |
 
 Como referencia de categoria, el modelo compite con el resto de fusiones densas de ~70B publicadas en GGUF por el mismo autor y por otros cuantizadores, pero no se dispone de numeros comparativos de evaluacion para establecer una jerarquia de rendimiento.
 
@@ -92,7 +92,7 @@ Como referencia de categoria, el modelo compite con el resto de fusiones densas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Doppleganger-V7-LLaMa-70B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Doppleganger-V7-LLaMa-70B-GGUF
 - Modelo base: https://huggingface.co/TareksGraveyard/Doppleganger-V7-LLaMa-70B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Doppleganger-V7-LLaMa-70B-GGUF
 - Peticiones de modelos del autor: https://huggingface.co/mradermacher/model_requests

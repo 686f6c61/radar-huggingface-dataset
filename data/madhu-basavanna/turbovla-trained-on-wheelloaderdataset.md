@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TurboVLA-Trained-On-WheelLoaderDataset es un modelo publicado en HuggingFace por el usuario madhu-basavanna bajo licencia MIT. Por el nombre se infiere que pertenece a la familia de modelos TurboVLA (Vision-Language-Action), un tipo de arquitectura orientada a robótica y control de agentes físicos que combina percepción visual, comprensión del lenguaje y generación de acciones motoras. El sufijo indica que ha sido entrenado sobre el conjunto de datos WheelLoaderDataset, presumiblemente un corpus de demostraciones de una pala cargadora (wheel loader), un vehículo pesado de construcción.
+TurboVLA-Trained-On-WheelLoaderDataset es un modelo publicado en Hugging Face por el usuario madhu-basavanna bajo licencia MIT. Por el nombre se infiere que pertenece a la familia de modelos TurboVLA (Vision-Language-Action), un tipo de arquitectura orientada a robótica y control de agentes físicos que combina percepción visual, comprensión del lenguaje y generación de acciones motoras. El sufijo indica que ha sido entrenado sobre el conjunto de datos WheelLoaderDataset, presumiblemente un corpus de demostraciones de una pala cargadora (wheel loader), un vehículo pesado de construcción.
 
 La información disponible es extremadamente limitada: la model card únicamente declara la licencia MIT, sin especificar arquitectura, tamaño, contexto, datos de entrenamiento ni resultados de evaluación. El repositorio no registra descargas ni interacciones, y no consta pipeline asociado. Por tanto, esta ficha se limita a documentar lo verificable y marca explícitamente como no disponible todo aquello que el autor no ha publicado.
 
@@ -73,4 +73,4 @@ No disponible. No se conocen modelos comparables documentados en la información
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madhu-basavanna/TurboVLA-Trained-On-WheelLoaderDataset
+- Hugging Face: https://huggingface.co/madhu-basavanna/TurboVLA-Trained-On-WheelLoaderDataset

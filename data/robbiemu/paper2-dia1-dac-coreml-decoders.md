@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Formato | Interfaz | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `robbiemu/paper2-dia1-dac-coreml-decoders` | Decodificador DAC 44 kHz convertido a Core ML | Core ML (`.mlpackage`) | Entrada `[1,1024,285]` → salida `[1,1,145920]`, formas fijas, E/S FLOAT32 | 1.355,98 MiB repartidos en 11 paquetes | MIT | Publicado en HuggingFace, 0 descargas y 0 likes en los datos consultados |
+| `robbiemu/paper2-dia1-dac-coreml-decoders` | Decodificador DAC 44 kHz convertido a Core ML | Core ML (`.mlpackage`) | Entrada `[1,1024,285]` → salida `[1,1,145920]`, formas fijas, E/S FLOAT32 | 1.355,98 MiB repartidos en 11 paquetes | MIT | Publicado en Hugging Face, 0 descargas y 0 likes en los datos consultados |
 | `descript/dac_44khz` | Modelo de codec de audio original (codificador y decodificador) | no disponible | no disponible | no disponible | no disponible | Enlazado como modelo base de este release |
 | Otras conversiones Core ML de decodificadores DAC o codecs similares | no disponible | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada |
 
@@ -113,7 +113,7 @@ La comparacion directa con alternativas de la misma categoria no puede completar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robbiemu/paper2-dia1-dac-coreml-decoders
+- Repositorio en Hugging Face: https://huggingface.co/robbiemu/paper2-dia1-dac-coreml-decoders
 - Modelo base: https://huggingface.co/descript/dac_44khz
 - Detalle por fichero: https://huggingface.co/robbiemu/paper2-dia1-dac-coreml-decoders/blob/main/FILE_DETAILS.md
 - Nombres, formas y dtypes de tensores: https://huggingface.co/robbiemu/paper2-dia1-dac-coreml-decoders/blob/main/file_details.json

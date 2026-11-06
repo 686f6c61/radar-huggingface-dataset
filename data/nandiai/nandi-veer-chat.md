@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NandiAi/nandi-veer-chat es un modelo de chat publicado por el usuario NandiAi en HuggingFace bajo el nombre comercial "Veer AI". Según la model card, fue entrenado por Vikash Kumar Pandit, estudiante de Ciencias de la Computación en el IIT Patna (India), y está diseñado para ejecutarse en un espacio de HuggingFace Spaces con una GPU T4 de 16 GB. La ficha técnica del modelo es extremadamente escasa: no se especifican arquitectura, número de parámetros, datos de entrenamiento ni capacidades concretas.
+NandiAi/nandi-veer-chat es un modelo de chat publicado por el usuario NandiAi en Hugging Face bajo el nombre comercial "Veer AI". Según la model card, fue entrenado por Vikash Kumar Pandit, estudiante de Ciencias de la Computación en el IIT Patna (India), y está diseñado para ejecutarse en un espacio de Hugging Face Spaces con una GPU T4 de 16 GB. La ficha técnica del modelo es extremadamente escasa: no se especifican arquitectura, número de parámetros, datos de entrenamiento ni capacidades concretas.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no tiene descargas ni likes registrados, y la información pública disponible no permite evaluar su rendimiento ni compararlo con alternativas establecidas. Su licencia MIT permite uso comercial sin restricciones, pero la ausencia de documentación técnica hace recomendable tratarlo como un experimento académico en fase temprana más que como un modelo listo para producción.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 ## Requisitos de hardware
 
-- La model card indica que el modelo se ejecuta en una GPU T4 de 16 GB en HuggingFace Spaces (hardware `t4-small`).
+- La model card indica que el modelo se ejecuta en una GPU T4 de 16 GB en Hugging Face Spaces (hardware `t4-small`).
 - No se especifica la VRAM mínima necesaria ni el tamaño del modelo en memoria.
 - No hay información sobre cuantizaciones compatibles ni sobre despliegue con vLLM, llama.cpp, Ollama o TGI.
 - Dado que se ejecuta en una T4, es plausible que quepa en GPUs de consumo como la RTX 3060 o superiores, pero esto no está confirmado.
@@ -64,14 +64,14 @@ No disponible. No se puede establecer una comparación rigurosa con otros modelo
 
 - Ausencia total de documentación técnica: no se conocen arquitectura, parámetros, datos de entrenamiento ni evaluación.
 - Riesgo de alucinación desconocido: sin benchmarks ni evaluaciones, no se puede estimar la fiabilidad de las respuestas.
-- Sin comunidad ni adopción: cero descargas y cero likes en HuggingFace, lo que indica que no ha sido validado por terceros.
+- Sin comunidad ni adopción: cero descargas y cero likes en Hugging Face, lo que indica que no ha sido validado por terceros.
 - Sin garantías de calidad: al ser un proyecto de un estudiante, puede contener sesgos o errores no documentados.
 - La licencia MIT permite uso comercial, pero el riesgo de integrar un modelo sin documentación en producción es alto.
 - No hay información sobre seguridad del modelo, filtros de contenido ni mitigación de sesgos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NandiAi/nandi-veer-chat
+- Modelo en Hugging Face: https://huggingface.co/NandiAi/nandi-veer-chat
 - Sitio web de Nand AI (entidad homónima, no necesariamente relacionada): https://nand.ai/
 - Repositorio Offline-NandiAi en GitHub (proyecto de otro autor, no relacionado): https://github.com/Animeshnandi36/Offline-NandiAi
 

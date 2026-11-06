@@ -76,7 +76,7 @@ No se identifican en la información disponible otros modelos comparables de la 
 
 | Modelo | Tipo | Beneficio mensual | Satisfaccion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-ideun-v1-teacher | Politica RL (PPO) | 11,42 millones de won | 95% | Apache 2.0 | HuggingFace |
+| connectailab-rl-ideun-v1-teacher | Politica RL (PPO) | 11,42 millones de won | 95% | Apache 2.0 | Hugging Face |
 | Jefe basado en reglas (규칙 사장) | Heuristica manual | 3,24 millones de won | 79% | no disponible | Integrado en el simulador |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se identifican en la información disponible otros modelos comparables de la 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-ideun-v1-teacher
+- Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-ideun-v1-teacher
 - Repositorio GitHub de Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

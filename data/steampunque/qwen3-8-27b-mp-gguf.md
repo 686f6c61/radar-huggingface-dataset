@@ -34,7 +34,7 @@ No se dispone de información sobre los datos de entrenamiento del modelo origin
 - Capacidades multimodales: el modelo base es capaz de procesar imágenes y texto mediante el proyector mmproj incluido en el repositorio (archivo mmproj).
 - Soporte MTP (multi-token prediction): la capa 64 nextn MTP está incluida; requiere llama.cpp b9180 o superior para experimentar con decodificación especulativa.
 - Inferencia eficiente en GPU: en una configuración de 2x RTX 4070 (1 RPC), alcanza ~24 tokens/s con cache KV F16 y ~23 tokens/s con Q8_0.
-- Comportamiento conversacional: etiquetado como "conversational" en HuggingFace.
+- Comportamiento conversacional: etiquetado como "conversational" en Hugging Face.
 
 ## Casos de uso
 
@@ -77,9 +77,9 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - La decodificación especulativa no es eficiente con este modelo debido al esquema de atención; el autor recomienda no usar especulación antes de los parches MTP de Qwen3.5, y advierte que incluso con soporte MTP la eficiencia puede ser limitada.
 - No se dispone de información sobre sesgos, alucinaciones o limitaciones idiomáticas del modelo base. Al ser una cuantización, no se han realizado evaluaciones adicionales de seguridad o robustez.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que es una publicación reciente y sin validación comunitaria.
-- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base Qwen3.8-27B también esté bajo la misma licencia (así aparece en los tags de HuggingFace).
+- La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base Qwen3.8-27B también esté bajo la misma licencia (así aparece en los tags de Hugging Face).
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/steampunque/Qwen3.8-27B-MP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/steampunque/Qwen3.8-27B-MP-GGUF
 - Modelo base (Qwen/Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B

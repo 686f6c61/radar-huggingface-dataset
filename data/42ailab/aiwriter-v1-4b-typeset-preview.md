@@ -89,8 +89,8 @@ No se dispone de datos de modelos de la misma categoría (ajustes de 4B especial
 
 | Modelo | Parametros | Contexto | Global (StructEval-Typst) | render | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AIWriter-V1-4B-Typeset-Preview | 4B (4.022.468.096) | 16.384 | 76,12 | 94% | AIWriter Model License 1.0 (comercial requiere licencia) | GGUF Q8_0 en HuggingFace y ModelScope |
-| Qwen3-4B (base, sin entrenar) | 4B | no disponible en esta ficha | 9,94 | 0% | Apache-2.0 | Pesos abiertos en HuggingFace |
+| AIWriter-V1-4B-Typeset-Preview | 4B (4.022.468.096) | 16.384 | 76,12 | 94% | AIWriter Model License 1.0 (comercial requiere licencia) | GGUF Q8_0 en Hugging Face y ModelScope |
+| Qwen3-4B (base, sin entrenar) | 4B | no disponible en esta ficha | 9,94 | 0% | Apache-2.0 | Pesos abiertos en Hugging Face |
 | Qwen3.5-397B | 397B | no disponible | 57,37 | 62% | no disponible | no disponible |
 | Kimi-k2.7-code | no disponible | no disponible | 78,99 | 92% | no disponible | no disponible |
 | DeepSeek-V4.1-Flash | no disponible | no disponible | 75,57 | 84% | no disponible | no disponible |
@@ -112,7 +112,7 @@ El dato destacado por el autor es que un modelo de 4B supera en puntuación glob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/42ailab/AIWriter-V1-4B-Typeset-Preview
+- Modelo en Hugging Face: https://huggingface.co/42ailab/AIWriter-V1-4B-Typeset-Preview
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Licencia del modelo (fichero LICENSE del repositorio): ./LICENSE (referenciado en la model card; el contenido aparece truncado en la información disponible)
 - README en chino simplificado: ./README_zh.md (referenciado en la model card)

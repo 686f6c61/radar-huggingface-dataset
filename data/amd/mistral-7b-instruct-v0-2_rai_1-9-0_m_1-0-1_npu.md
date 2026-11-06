@@ -6,7 +6,7 @@ El modelo `amd/Mistral-7B-Instruct-v0.2_rai_1.9.0_m_1.0.1_npu` es una conversió
 
 El interés de esta ficha reside en que no se trata de un modelo nuevo, sino de un artefacto de despliegue: empaqueta los pesos de Mistral-7B-Instruct-v0.2 en un grafo ONNX preparado para aceleración por hardware en NPU de AMD. Esto permite ejecutar inferencia de un modelo de 7B en portátiles y equipos de sobremesa con Ryzen AI sin depender de una GPU dedicada, reduciendo consumo energético y aprovechando la memoria unificada del sistema.
 
-La información publicada en HuggingFace es mínima: no se detallan datos de entrenamiento adicionales, benchmarks ni configuraciones de cuantización específicas. El repositorio ocupa 4,4 GB y el acceso es restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo. La licencia declarada es Apache 2.0, heredada del modelo base.
+La información publicada en Hugging Face es mínima: no se detallan datos de entrenamiento adicionales, benchmarks ni configuraciones de cuantización específicas. El repositorio ocupa 4,4 GB y el acceso es restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargarlo. La licencia declarada es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -75,7 +75,7 @@ La comparativa directa con alternativas de NPU de otros fabricantes no esta disp
 
 ## Limitaciones y advertencias
 
-- El acceso al repositorio es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de la descarga.
+- El acceso al repositorio es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de la descarga.
 - La tarjeta del modelo solo declara soporte para ingles; el rendimiento en castellano no esta garantizado ni documentado.
 - No se documentan sesgos especificos de esta conversion; los sesgos del modelo base Mistral-7B-Instruct-v0.2 son aplicables.
 - Riesgo de alucinacion inherente a los modelos de 7B, especialmente en tareas de conocimiento factual y razonamiento complejo.
@@ -86,7 +86,7 @@ La comparativa directa con alternativas de NPU de otros fabricantes no esta disp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Mistral-7B-Instruct-v0.2_rai_1.9.0_m_1.0.1_npu
+- Hugging Face: https://huggingface.co/amd/Mistral-7B-Instruct-v0.2_rai_1.9.0_m_1.0.1_npu
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Documentacion de Ryzen AI: no disponible en la informacion proporcionada.
 - Paper o blog de AMD sobre esta conversion: no disponible en la informacion proporcionada.

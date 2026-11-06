@@ -102,7 +102,7 @@ La ventaja frente a `vinai/PhoWhisper-tiny` es el formato ONNX listo para móvil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pdnhan/PhoWhisper-tiny-mobile
+- Modelo en Hugging Face: https://huggingface.co/pdnhan/PhoWhisper-tiny-mobile
 - Modelo base: https://huggingface.co/vinai/PhoWhisper-tiny
 - ONNX Runtime: https://onnxruntime.ai
 - Optimum (exportación ONNX): https://github.com/huggingface/optimum

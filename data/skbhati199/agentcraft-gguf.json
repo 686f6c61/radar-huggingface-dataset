@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "skbhati199/AgentCraft-GGUF",
+  "slug": "skbhati199-agentcraft-gguf",
+  "author": "skbhati199",
+  "url": "https://huggingface.co/skbhati199/AgentCraft-GGUF",
+  "created_at": "2026-11-02T18:57:11.000Z",
+  "updated_at": "2026-11-03T02:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen2.5",
+    "coding",
+    "tool-calling",
+    "function-calling",
+    "reasoning",
+    "agent",
+    "q4_k_m",
+    "q5_k_m",
+    "q8_0",
+    "ollama",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 182,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 17746727104,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skbhati199/AgentCraft-GGUF · Hugging Face",
+      "url": "https://huggingface.co/skbhati199/AgentCraft-GGUF",
+      "snippet": "skbhati199 / AgentCraft-GGUF Like 0 GGUF llama.cpp qwen2.5 coding tool-calling function-calling reasoning agent q4_k_m q5_k_m q8_0 ollama conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket Use this model"
+    },
+    {
+      "title": "Agentcraft Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/skbhati199/agentcraft-gguf",
+      "snippet": "Registry entry for model Agentcraft Gguf; source metadata pending."
+    }
+  ]
+}

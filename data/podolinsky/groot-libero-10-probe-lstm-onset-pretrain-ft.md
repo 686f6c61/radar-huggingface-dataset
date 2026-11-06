@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `groot-libero-10-probe-lstm-onset-pretrain-ft` es una sonda (probe) neuronal de deteccion de fallos en politicas roboticas, publicada por el usuario podolinsky en HuggingFace. No es un modelo de lenguaje ni un modelo de vision-lenguaje-accion (VLA) completo: es un clasificador ligero que consume caracteristicas ya extraidas por el backbone del VLA NVIDIA GR00T-N1.7 y emite una puntuacion de fallo por cada paso de politica. Su tamano es de 6.609.867 parametros (un LSTM de 256 unidades con varias cabezas), lo que lo situa en el rango de unos pocos megabytes.
+El modelo `groot-libero-10-probe-lstm-onset-pretrain-ft` es una sonda (probe) neuronal de deteccion de fallos en politicas roboticas, publicada por el usuario podolinsky en Hugging Face. No es un modelo de lenguaje ni un modelo de vision-lenguaje-accion (VLA) completo: es un clasificador ligero que consume caracteristicas ya extraidas por el backbone del VLA NVIDIA GR00T-N1.7 y emite una puntuacion de fallo por cada paso de politica. Su tamano es de 6.609.867 parametros (un LSTM de 256 unidades con varias cabezas), lo que lo situa en el rango de unos pocos megabytes.
 
 El problema que resuelve es la deteccion temprana de fallos en la ejecucion de tareas de manipulacion robotica sobre el benchmark LIBERO-10 (con variantes ocluidas), de modo que un sistema pueda abortar, reintentar o pedir ayuda antes de completar una trayectoria condenada al fracaso. La entrada es un vector de 6144 dimensiones por paso de politica, resultado de concatenar las medias de los tokens de imagen base, imagen de muneca y tokens de lenguaje, todas ellas de 2048 dimensiones procedentes del backbone GR00T-N1.7.
 
@@ -91,7 +91,7 @@ La comparacion directa solo es posible con el modelo hermano de la misma familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/podolinsky/groot-libero-10-probe-lstm-onset-pretrain-ft
+- Modelo en Hugging Face: https://huggingface.co/podolinsky/groot-libero-10-probe-lstm-onset-pretrain-ft
 - Modelo hermano (sonda `lstm_onset_post_mode`): https://huggingface.co/podolinsky/groot-libero-x-probe-lstm-onset-post-mode
 - Dataset de caracteristicas: https://huggingface.co/datasets/podolinsky/groot-libero-10-features-v3
 - Ficha del dataset en claru.ai: https://claru.ai/datasets/podolinsky-groot-libero-10-features-v3

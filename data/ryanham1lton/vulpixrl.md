@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VulpixRL es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion publica disponible es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin pipeline de inferencia asignado. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
+VulpixRL es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC BY 4.0. La informacion publica disponible es minima: la model card no contiene mas que la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin idiomas soportados y sin pipeline de inferencia asignado. El repositorio ocupa 0,1 GB y no registra descargas ni "likes" en el momento de la consulta.
 
 No es posible determinar que tipo de artefacto contiene el repositorio. El nombre "VulpixRL" sugiere, sin que exista confirmacion documental, un ajuste por refuerzo (RL) sobre algun modelo base, pero se trata de una interpretacion nominal y no de un dato verificado. El tamano del repositorio (0,1 GB) es compatible tanto con adaptadores LoRA como con un modelo de parametros muy reducidos en precision completa, pero tampoco esto puede afirmarse con la informacion disponible.
 
@@ -40,7 +40,7 @@ Advertencia: dado que no existe documentacion tecnica ni evaluacion publicada, l
 - Evaluacion de robustez de modelos pequenos: un artefacto de 0,1 GB podria servir para probar tecnicas de evaluacion en entornos con recursos muy limitados, como maquinas sin GPU.
 - Analisis de licencias y gobernanza: el caso resulta util para estudiar como una licencia permisiva (CC BY 4.0) aplicada a pesos de modelo interactua con obligaciones de atribucion en productos derivados.
 - Docencia sobre publicacion de modelos: permite ilustrar en un aula o taller que metadatos minimos deberia incluir una model card para ser utilizable por terceros.
-- Auditoria de seguridad de artefactos de HuggingFace: sirve como muestra para probar herramientas de escaneo de repositorios en busca de codigo ejecutable, ficheros pickle inseguros o pesos sin documentar.
+- Auditoria de seguridad de artefactos de Hugging Face: sirve como muestra para probar herramientas de escaneo de repositorios en busca de codigo ejecutable, ficheros pickle inseguros o pesos sin documentar.
 
 ## Benchmarks y rendimiento
 
@@ -71,5 +71,5 @@ No disponible. Sin conocer la arquitectura, el numero de parametros, el contexto
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/VulpixRL
+- Hugging Face: https://huggingface.co/Ryanham1lton/VulpixRL
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los resultados devueltos corresponden a paginas de inicio de buscadores sin relacion con el modelo.

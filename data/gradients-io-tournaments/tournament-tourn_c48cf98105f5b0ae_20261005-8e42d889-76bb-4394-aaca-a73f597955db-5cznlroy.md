@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante supervisión (SFT) sobre el modelo base Qwen/Qwen3-4B-Instruct-2507, publicado por la organización gradients-io-tournaments. Según las etiquetas del repositorio (peft, lora, sft, trl, transformers), se trata de un artefacto de ajuste fino, no de un modelo completo: para usarlo hay que cargar el modelo base y aplicar el adaptador. El nombre del repositorio sugiere que es el envío de un participante a un torneo de la plataforma gradients.io, con un identificador interno y una marca temporal de octubre de 2026.
 
-La model card es la plantilla por defecto de HuggingFace y no aporta información real: todas las secciones relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "[More Information Needed]". No hay resultados de benchmarks, ni descripción del conjunto de datos, ni detalle del procedimiento de entrenamiento. El repositorio registra 0 descargas y 0 "me gusta" en el momento de la consulta, por lo que se trata de un artefacto sin validación comunitaria.
+La model card es la plantilla por defecto de Hugging Face y no aporta información real: todas las secciones relevantes (desarrollador, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como "[More Information Needed]". No hay resultados de benchmarks, ni descripción del conjunto de datos, ni detalle del procedimiento de entrenamiento. El repositorio registra 0 descargas y 0 "me gusta" en el momento de la consulta, por lo que se trata de un artefacto sin validación comunitaria.
 
 Su relevancia es limitada y fundamentalmente práctica: sirve como ejemplo de adaptador PEFT (versión 0.19.1) sobre un modelo denso de ~4 000 millones de parámetros de la familia Qwen3, un tamaño desplegable en GPU de consumo. Cualquier evaluación seria del modelo exige reproducir el entrenamiento o auditar los pesos, porque la documentación publicada no permite determinar qué tarea concreta aprende el adaptador.
 
@@ -70,7 +70,7 @@ Las cifras siguientes son estimaciones aritméticas a partir del tamaño del mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este adaptador (gradients-io-tournaments) | Adaptador sobre base de ~4B; parámetros entrenables no disponibles | No disponible | No disponible | Repositorio público en HuggingFace, 0 descargas, 0 likes | Model card vacía, sin evaluación; requiere el modelo base |
+| Este adaptador (gradients-io-tournaments) | Adaptador sobre base de ~4B; parámetros entrenables no disponibles | No disponible | No disponible | Repositorio público en Hugging Face, 0 descargas, 0 likes | Model card vacía, sin evaluación; requiere el modelo base |
 | Qwen/Qwen3-4B-Instruct-2507 (modelo base) | ~4B | No disponible en la información proporcionada | No disponible en la información proporcionada | Modelo público de referencia | Es el punto de partida del ajuste; la comparación directa mide el efecto del adaptador |
 | Alternativas de la misma franja (~3-4B, instruct) | No disponible | No disponible | No disponible | No disponible | No se dispone de datos verificados en la información proporcionada para establecer una comparación numérica |
 
@@ -91,7 +91,7 @@ No es posible comparar rendimiento (MMLU, HumanEval, GSM8K u otros) porque no ex
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-8e42d889-76bb-4394-aaca-a73f597955db-5CZnLRoY
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-8e42d889-76bb-4394-aaca-a73f597955db-5CZnLRoY
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Artículo citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la model card: https://mlco2.github.io/impact#compute

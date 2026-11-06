@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiniMax H3 (fl2va) | 33B | 4-15 s, 24 FPS | other | HuggingFace oficial |
-| MiniMax H3 (ref2va) | 33B | 4-15 s, 24 FPS | other | HuggingFace oficial |
-| MiniMax H3 Hybrid (este modelo) | 33B | 4-15 s, 24 FPS | other | HuggingFace (merge) |
-| Stable Video Diffusion | ~1.4B | 2-4 s, 14 FPS | Stability AI Community | HuggingFace |
+| MiniMax H3 (fl2va) | 33B | 4-15 s, 24 FPS | other | Hugging Face oficial |
+| MiniMax H3 (ref2va) | 33B | 4-15 s, 24 FPS | other | Hugging Face oficial |
+| MiniMax H3 Hybrid (este modelo) | 33B | 4-15 s, 24 FPS | other | Hugging Face (merge) |
+| Stable Video Diffusion | ~1.4B | 2-4 s, 14 FPS | Stability AI Community | Hugging Face |
 
 El modelo híbrido se posiciona como una alternativa intermedia entre los dos checkpoints oficiales: ofrece la capacidad de referencia de `ref2va` con una calidad de salida superior, aunque no supera a `fl2va` en generación sin referencia. Frente a modelos como Stable Video Diffusion, MiniMax H3 destaca por su generación de audio nativo y mayor duración, aunque requiere mucho más hardware.
 
@@ -79,9 +79,9 @@ El modelo híbrido se posiciona como una alternativa intermedia entre los dos ch
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/OREDDoug18792/Minimax-H3-fl2va-ref2va-hybrid-models
+- Repositorio Hugging Face del modelo: https://huggingface.co/OREDDoug18792/Minimax-H3-fl2va-ref2va-hybrid-models
 - Repositorio oficial de MiniMax H3 en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
-- Modelo oficial MiniMax H3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo oficial MiniMax H3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Guía de tutoriales y despliegue: https://design.minimax.io/h3
 - Recursos curados sobre MiniMax H3: https://github.com/iSk2y/awesome-minimax-h3
-- Copia alternativa del merge en HuggingFace: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
+- Copia alternativa del merge en Hugging Face: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models

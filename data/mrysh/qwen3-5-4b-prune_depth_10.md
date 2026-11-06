@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-4b-prune_depth_10 es una versión podada por profundidad del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de un checkpoint derivado cuyo único propósito es servir como artefacto de un benchmark de poda: el autor compara cuatro modelos base con ocho variantes de poda entre sí y frente a cuantización, evaluando en BFCL, hiring-bias y MedQA con vLLM.
+qwen3.5-4b-prune_depth_10 es una versión podada por profundidad del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning, sino de un checkpoint derivado cuyo único propósito es servir como artefacto de un benchmark de poda: el autor compara cuatro modelos base con ocho variantes de poda entre sí y frente a cuantización, evaluando en BFCL, hiring-bias y MedQA con vLLM.
 
 La intervención consiste en eliminar 3 de las 32 capas del bloque de lenguaje (32 -> 29, un 10,0 % de las capas solicitadas), seleccionadas por importancia medida sobre un conjunto de calibración de 512 muestras mixtas. La anchura del modelo no se modifica y los bloques de visión o audio del modelo base, si existen, se conservan intactos; la herramienta de poda descarta además la cabeza de predicción multi-token de Qwen3.5. El resultado es una reducción del 8,1 % de los parámetros del modelo de lenguaje (9,9 % sobre el checkpoint completo), con 4.200.494.016 parámetros totales y 8,4 GB en disco.
 
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_10
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_depth_10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

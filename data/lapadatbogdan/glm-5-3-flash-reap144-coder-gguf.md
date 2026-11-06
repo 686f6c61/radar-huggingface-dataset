@@ -102,10 +102,10 @@ No se han publicado resultados de benchmarks academicos (MMLU, HumanEval, GSM8K)
 
 | Modelo | Parametros | Activos | Contexto | PPL en codigo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GLM-5.3-Flash-REAP144-Coder (este) | 161B | ~17B | 131.072 en llama.cpp; 384K en evaluacion | 2,062 (Q4_K_M) | MIT | GGUF en HuggingFace, 5 cuantizaciones + MTP |
+| GLM-5.3-Flash-REAP144-Coder (este) | 161B | ~17B | 131.072 en llama.cpp; 384K en evaluacion | 2,062 (Q4_K_M) | MIT | GGUF en Hugging Face, 5 cuantizaciones + MTP |
 | GLM-5.3-Flash completo | 321B | ~18B | no disponible | 1,681 (Q8) | no disponible en la informacion | safetensors; GGUF de terceros |
 | REAP144 Q8 (misma poda, sin cuantizar) | 161B | ~17B | no disponible | 2,053 | MIT | referenciado en la tabla de perplejidad, sin ficha propia en los datos disponibles |
-| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | 321B | no disponible | no disponible | no disponible | no disponible | GGUF en HuggingFace, etiquetado como image-text-to-text |
+| huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF | 321B | no disponible | no disponible | no disponible | no disponible | GGUF en Hugging Face, etiquetado como image-text-to-text |
 
 Frente al modelo completo, este repositorio reduce el peso a la mitad (161B frente a 321B) y conserva la tasa de exito en la evaluacion agentica en Python (48/48 en Q4_K_M y Q3_K), a cambio de un coste de +22% a +37% en perplejidad de codigo segun la cuantizacion y de entre 1,58 y 2,77 veces mas turnos de agente. Las comparativas con alternativas fuera de la familia GLM-5.3-Flash no estan disponibles en la informacion proporcionada.
 
@@ -123,10 +123,10 @@ Frente al modelo completo, este repositorio reduce el peso a la mitad (161B fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF
+- Modelo en Hugging Face: https://huggingface.co/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Repositorio con receta, mascaras, parches y harness de evaluacion: https://github.com/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder
 - Grafico de resultados de tareas agenticas resueltas: https://raw.githubusercontent.com/lapadatbogdan/GLM-5.3-Flash-REAP144-Coder/main/assets/results.svg
 - Runtime Maya (reparto de expertos entre GPU y RAM, decodificacion especulativa con MTP): https://github.com/mw00/project-maya
-- Modelos cuantizados del base GLM-5.3-Flash en HuggingFace: https://huggingface.co/models?other=base_model:quantized:zai-org/GLM-5.3-Flash
+- Modelos cuantizados del base GLM-5.3-Flash en Hugging Face: https://huggingface.co/models?other=base_model:quantized:zai-org/GLM-5.3-Flash
 - Variante abliterated de terceros: https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF

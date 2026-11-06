@@ -72,9 +72,9 @@ Advertencia: las tareas de evaluación son las de entrenamiento (práctica está
 
 | Modelo | Parámetros | Contexto | Rendimiento LIBERO-Object | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 4B v5 (este) | 4B (base) + LoRA r=64 | No disponible | 19/100 | Apache 2.0 | HuggingFace |
-| 4B v6 | 4B (base) + LoRA | No disponible | 63/100 | Apache 2.0 | HuggingFace |
-| 2B v6 | 2B (base) + LoRA | No disponible | 61/100 | Apache 2.0 | HuggingFace |
+| 4B v5 (este) | 4B (base) + LoRA r=64 | No disponible | 19/100 | Apache 2.0 | Hugging Face |
+| 4B v6 | 4B (base) + LoRA | No disponible | 63/100 | Apache 2.0 | Hugging Face |
+| 2B v6 | 2B (base) + LoRA | No disponible | 61/100 | Apache 2.0 | Hugging Face |
 | Show-Harness 2B sim (sin entrenamiento LIBERO) | 2B | No disponible | 0/100 | No disponible | Referenciado en la model card |
 
 La comparativa se limita a las variantes del mismo autor y al adaptador de referencia de Show-Harness, únicos datos publicados en la información disponible. No se dispone de comparación con políticas VLA externas (por ejemplo, OpenVLA u otras) en la documentación consultada.
@@ -94,7 +94,7 @@ La comparativa se limita a las variantes del mismo autor y al adaptador de refer
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v5-lora
+- Hugging Face del modelo: https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v5-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Versión mejorada v6 (4B): https://huggingface.co/kugelblytz/qwen3.5-4b-libero-object-v6-lora
 - Repositorio de código y evaluación: https://github.com/kugelblytz/qwen-vla-libero-lora

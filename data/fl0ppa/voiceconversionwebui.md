@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fl0ppa/VoiceConversionWebUI | Conversión de voz (RVC) | no disponible | no disponible | MIT | Repositorio HuggingFace |
-| lj1995/VoiceConversionWebUI | Conversión de voz (RVC) | no disponible | no disponible | MIT | Repositorio HuggingFace |
+| Fl0ppa/VoiceConversionWebUI | Conversión de voz (RVC) | no disponible | no disponible | MIT | Repositorio Hugging Face |
+| lj1995/VoiceConversionWebUI | Conversión de voz (RVC) | no disponible | no disponible | MIT | Repositorio Hugging Face |
 | So-VITS-SVC | Conversión de voz | no disponible | no disponible | MIT | GitHub |
-| Coqui TTS (XTTS) | Síntesis de voz / clonación | ~500M | no disponible | MPL-2.0 | HuggingFace |
+| Coqui TTS (XTTS) | Síntesis de voz / clonación | ~500M | no disponible | MPL-2.0 | Hugging Face |
 
 Nota: los datos de los modelos comparables son orientativos y pueden variar. No se dispone de información específica sobre parámetros o contexto de este repositorio.
 
@@ -77,7 +77,7 @@ Nota: los datos de los modelos comparables son orientativos y pueden variar. No 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fl0ppa/VoiceConversionWebUI
-- Proyecto original RVC en HuggingFace: https://huggingface.co/lj1995/VoiceConversionWebUI
+- Repositorio Hugging Face: https://huggingface.co/Fl0ppa/VoiceConversionWebUI
+- Proyecto original RVC en Hugging Face: https://huggingface.co/lj1995/VoiceConversionWebUI
 - Repositorio GitHub de RVC-Project: https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - Fork del proyecto en GitHub: https://github.com/fumiama/Retrieval-based-Voice-Conversion-WebUI

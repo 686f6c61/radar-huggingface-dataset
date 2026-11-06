@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`psythecreator/banknifty-direction-predictor` es un repositorio alojado en HuggingFace cuyo nombre sugiere un modelo orientado a predecir la direccion del indice Bank Nifty, el indice bancario de la Bolsa Nacional de la India. El autor es el usuario `psythecreator`. La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin detalles de arquitectura, sin datos de entrenamiento ni ejemplos de uso.
+`psythecreator/banknifty-direction-predictor` es un repositorio alojado en Hugging Face cuyo nombre sugiere un modelo orientado a predecir la direccion del indice Bank Nifty, el indice bancario de la Bolsa Nacional de la India. El autor es el usuario `psythecreator`. La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion del modelo, sin detalles de arquitectura, sin datos de entrenamiento ni ejemplos de uso.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado, no especifica idiomas soportados y presenta fechas de creacion y actualizacion identicas (2026-09-27), lo que apunta a un artefacto recien subido o a metadatos incompletos. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a personas y perfiles de redes sociales sin relacion alguna con el proyecto.
 
@@ -71,7 +71,7 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea exacta, no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| psythecreator/banknifty-direction-predictor | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| psythecreator/banknifty-direction-predictor | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,5 +89,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea exacta, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/psythecreator/banknifty-direction-predictor
+- Repositorio en Hugging Face: https://huggingface.co/psythecreator/banknifty-direction-predictor
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo. Los resultados recuperados corresponden a perfiles de redes sociales y albumes de imagenes sin relacion con el proyecto.

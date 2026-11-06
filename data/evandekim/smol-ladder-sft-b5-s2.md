@@ -2,7 +2,7 @@
 
 ## Resumen
 
-smol-ladder-sft-b5-s2 es un modelo de lenguaje ajustado por supervisión (SFT) con la librería TRL y publicado en HuggingFace por el usuario evandekim. El nombre lo vincula al proyecto smol-ladder, cuyo repositorio en GitHub (Evan-Kim2028/smol-ladder) investiga si el entrenamiento con aprendizaje por refuerzo de agentes pequeños de análisis de datos transfiere entre tareas, y si cuando un modelo falla le falta habilidad o le falta información (el concepto de "escalera de información" o information ladder, construido sobre SmolDataEnvs).
+smol-ladder-sft-b5-s2 es un modelo de lenguaje ajustado por supervisión (SFT) con la librería TRL y publicado en Hugging Face por el usuario evandekim. El nombre lo vincula al proyecto smol-ladder, cuyo repositorio en GitHub (Evan-Kim2028/smol-ladder) investiga si el entrenamiento con aprendizaje por refuerzo de agentes pequeños de análisis de datos transfiere entre tareas, y si cuando un modelo falla le falta habilidad o le falta información (el concepto de "escalera de información" o information ladder, construido sobre SmolDataEnvs).
 
 La model card es mínima: no identifica el modelo base (aparece literalmente como "fine-tuned version of None"), no declara licencia efectiva (el campo contiene el marcador de posición `license: license`), no indica idiomas soportados, no documenta el dataset de entrenamiento ni publica benchmarks. El repositorio ocupa 0,5 GB y está en formato safetensors, lo que sitúa el modelo en el rango de los modelos pequeños, coherente con el prefijo "smol", aunque el número exacto de parámetros no se puede confirmar.
 
@@ -70,7 +70,7 @@ No disponible. La comparación con alternativas de la misma categoría no es pos
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smol-ladder-sft-b5-s2 | no disponible | no disponible | no disponible | no disponible | HuggingFace (safetensors) |
+| smol-ladder-sft-b5-s2 | no disponible | no disponible | no disponible | no disponible | Hugging Face (safetensors) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La comparación con alternativas de la misma categoría no es pos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/evandekim/smol-ladder-sft-b5-s2
+- Modelo en Hugging Face: https://huggingface.co/evandekim/smol-ladder-sft-b5-s2
 - Repositorio del proyecto smol-ladder: https://github.com/Evan-Kim2028/smol-ladder
 - TRL (librería de entrenamiento utilizada): https://github.com/huggingface/trl
 - Referencia bibliográfica de TRL: von Werra, L. et al., "TRL: Transformers Reinforcement Learning", 2020, licencia Apache-2.0.

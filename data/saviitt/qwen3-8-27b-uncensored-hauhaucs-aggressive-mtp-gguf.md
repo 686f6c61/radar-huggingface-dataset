@@ -13,13 +13,13 @@ Su relevancia práctica es doble: para desarrolladores que necesitan un modelo m
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso causal con codificador de vision; 48 capas Gated DeltaNet (atencion lineal) y 16 capas de atencion con compuerta; 64 capas de language model |
-| Parametros totales | 27B declarados en la model card; el campo de parametros safetensors de HuggingFace indica 1.863.907.840 (discrepancia no explicada por el autor) |
+| Parametros totales | 27B declarados en la model card; el campo de parametros safetensors de Hugging Face indica 1.863.907.840 (discrepancia no explicada por el autor) |
 | Parametros activos | no aplica (modelo denso) |
 | Longitud de contexto | 262.144 tokens nativos; extensible hasta 1.000.000 |
 | Tipos de cuantizacion | Q8_K_P, Q6_K_P, Q5_K_P, Q4_K_P, IQ4_XS, Q3_K_P, IQ3_M, IQ3_XS, Q2_K_P, IQ2_M; ademas mmproj BF16 (proyector de vision) y FastMTP-32K |
 | Idiomas soportados | en, zh, multilingual |
 | Licencia | apache-2.0 |
-| Formato de pesos | GGUF (texto, vision y sidecar MTP); metadatos safetensors en HuggingFace |
+| Formato de pesos | GGUF (texto, vision y sidecar MTP); metadatos safetensors en Hugging Face |
 | Tamano del repositorio | 172,5 GB |
 | Tamano oculto / FFN | 5.120 / 17.408 |
 | Vocabulario | 248.320 tokens (con padding) |
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K u otros) en
 - Cabe en GPU de consumo: si. Q4_K_P (17,92 GB) entra en 24 GB; IQ3_XS (12,18 GB) y Q2_K_P (10,68 GB) entran en GPUs de 12-16 GB.
 - Vision: requiere descargar adicionalmente el proyector mmproj BF16 (931 MB), que funciona con cualquier cuantizacion de texto.
 - Decodificacion especulativa: requiere el fichero adicional FastMTP-32K (903 MB).
-- Opciones de despliegue: llama.cpp y LM Studio estan confirmados por el autor; el repositorio incluye la etiqueta endpoints_compatible, aunque la compatibilidad efectiva con HuggingFace Inference Endpoints para GGUF no se detalla. El soporte de vLLM, TGI u Ollama no se menciona en la informacion disponible.
+- Opciones de despliegue: llama.cpp y LM Studio estan confirmados por el autor; el repositorio incluye la etiqueta endpoints_compatible, aunque la compatibilidad efectiva con Hugging Face Inference Endpoints para GGUF no se detalla. El soporte de vLLM, TGI u Ollama no se menciona en la informacion disponible.
 - Latencia y throughput: no hay valores absolutos publicados; solo los multiplicadores relativos de FastMTP indicados en la seccion anterior.
-- Nota del autor: los quants K_P pueden aparecer como "?" en la columna de cuantizacion de LM Studio, un problema de visualizacion que no impide la carga. El widget de compatibilidad de hardware de HuggingFace puede no reconocer los quants K_P; hay que usar "View variants" o "Files and versions".
+- Nota del autor: los quants K_P pueden aparecer como "?" en la columna de cuantizacion de LM Studio, un problema de visualizacion que no impide la carga. El widget de compatibilidad de hardware de Hugging Face puede no reconocer los quants K_P; hay que usar "View variants" o "Files and versions".
 
 ## Comparativa con modelos similares
 
@@ -92,7 +92,7 @@ No se dispone de modelos comparables alternativos con datos verificables en la i
 ## Limitaciones y advertencias
 
 - Descargas y validacion: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion independiente de las afirmaciones del autor (0/465 rechazos, multiplicadores de FastMTP, calidad superior de los quants K_P).
-- Discrepancia de parametros: el campo de parametros safetensors de HuggingFace indica 1.863.907.840, muy lejos de los 27B declarados en la model card. El autor no explica esta diferencia; conviene verificar los ficheros antes de planificar hardware.
+- Discrepancia de parametros: el campo de parametros safetensors de Hugging Face indica 1.863.907.840, muy lejos de los 27B declarados en la model card. El autor no explica esta diferencia; conviene verificar los ficheros antes de planificar hardware.
 - Perfil Aggressive: el autor advierte que para trabajo agentico critico y de contexto largo es mas seguro un perfil Balanced, cuando este disponible. El comportamiento sin rechazos puede producir contenido inapropiado o danino en produccion.
 - Sesgos: no se publica ninguna evaluacion de sesgos, toxicidad o representacion. Al eliminar los rechazos, se elimina tambien una capa de mitigacion, lo que previsiblemente incrementa la exposicion a contenido sesgado u ofensivo.
 - Alucinacion: no se aportan datos de tasas de alucinacion ni evaluaciones de veracidad. Un perfil que responde sin dudar ante prompts dificiles puede aumentar la confianza aparente en respuestas incorrectas.
@@ -104,7 +104,7 @@ No se dispone de modelos comparables alternativos con datos verificables en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Saviitt/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Saviitt/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de referencia de HauhauCS citado en la model card: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF
 - Servidor de Discord del autor: https://discord.gg/SZ5vacTXYf

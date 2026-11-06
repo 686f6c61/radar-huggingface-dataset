@@ -73,7 +73,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento ni de be
 
 ## Enlaces
 
-- [HuggingFace - Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT4](https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT4)
-- [HuggingFace - google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
-- [HuggingFace - VibeStudio/Nidum-Gemma-3-4B-it-Uncensored](https://huggingface.co/nidum/Nidum-Gemma-3-4B-it-Uncensored)
+- [Hugging Face - Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT4](https://huggingface.co/Rin247/gemma-3-4b-it-Uncensored-Aquarion-INT4)
+- [Hugging Face - google/gemma-3-4b-it](https://huggingface.co/google/gemma-3-4b-it)
+- [Hugging Face - VibeStudio/Nidum-Gemma-3-4B-it-Uncensored](https://huggingface.co/nidum/Nidum-Gemma-3-4B-it-Uncensored)
 - [Ollama - nidumai/nidum-gemma-3-4b-it-uncensored](https://ollama.com/nidumai/nidum-gemma-3-4b-it-uncensored)

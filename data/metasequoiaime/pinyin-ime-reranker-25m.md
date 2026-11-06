@@ -21,7 +21,7 @@ Es relevante ahora porque demuestra un patron de despliegue poco habitual: un mo
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (fichero unico `sentence-model.safetensors`, sin sidecars) |
 | Pipeline declarado | text-ranking |
-| Tamano del repositorio | 0,0 GB segun HuggingFace; 25,5 MB el fichero int8 |
+| Tamano del repositorio | 0,0 GB segun Hugging Face; 25,5 MB el fichero int8 |
 | Tarea | Reranking de candidatos de IME pinyin a nivel de caracter |
 | Implementacion de referencia | Rust (directorio `reference/`, licenciado por separado como Apache-2.0, sin `unsafe`, solo serde) |
 | Datasets de entrenamiento | allenai/c4, silver/lccc |
@@ -103,8 +103,8 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Tamano en disco (int8) | Prevision en frases (top-1) | p95 por pulsacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pinyin-ime-reranker-25M | 24.863.104 | 25,5 MB | 52 / 56 (0,929) | 97,2 ms | Apache-2.0 | HuggingFace + crate de Rust vendorizable |
-| pinyin-ime-reranker-4M | 4.250.112 | 4,5 MB | 49 / 56 (0,875) | 8,6 ms (medido de forma distinta) | Apache-2.0 (segun el modelo hermano referenciado) | HuggingFace + mismo crate |
+| pinyin-ime-reranker-25M | 24.863.104 | 25,5 MB | 52 / 56 (0,929) | 97,2 ms | Apache-2.0 | Hugging Face + crate de Rust vendorizable |
+| pinyin-ime-reranker-4M | 4.250.112 | 4,5 MB | 49 / 56 (0,875) | 8,6 ms (medido de forma distinta) | Apache-2.0 (segun el modelo hermano referenciado) | Hugging Face + mismo crate |
 
 Ambos ficheros se llaman `sentence-model.safetensors`. No se dispone de datos de otros rerankers comparables (por ejemplo, rerankers multilingues de proposito general) en la informacion proporcionada; no se han encontrado resultados de benchmarks ni comparativas externas aplicables.
 
@@ -126,7 +126,7 @@ Ambos ficheros se llaman `sentence-model.safetensors`. No se dispone de datos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-25M
+- Modelo en Hugging Face: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-25M
 - Modelo hermano de 4,25 M: https://huggingface.co/metasequoiaime/pinyin-ime-reranker-4M
 - Repositorio del proyecto (entrenamiento y medicion): https://github.com/metasequoiaime/chinese-ime-lm
 - Directorio de la implementacion de referencia en Rust: https://github.com/metasequoiaime/chinese-ime-lm/tree/main/reference

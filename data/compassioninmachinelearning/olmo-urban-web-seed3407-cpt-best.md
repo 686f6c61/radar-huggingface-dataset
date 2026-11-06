@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best` es un modelo de lenguaje de aproximadamente 7.300 millones de parametros publicado en HuggingFace por el usuario u organizacion CompassioninMachineLearning. El sufijo del identificador indica que se trata de un ajuste por preentrenamiento continuado (CPT, *continued pre-training*) sobre una base OLMo (la etiqueta de HuggingFace es `olmo3`), orientado a un dominio o corpus denominado "urban" y ejecutado con la semilla 3407. El sufijo `best` sugiere que corresponde al mejor checkpoint de validacion exportado dentro de una campana de entrenamiento con multiples semillas y particiones, segun el patron que se observa en repositorios hermanos del mismo autor.
+El modelo `CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best` es un modelo de lenguaje de aproximadamente 7.300 millones de parametros publicado en Hugging Face por el usuario u organizacion CompassioninMachineLearning. El sufijo del identificador indica que se trata de un ajuste por preentrenamiento continuado (CPT, *continued pre-training*) sobre una base OLMo (la etiqueta de Hugging Face es `olmo3`), orientado a un dominio o corpus denominado "urban" y ejecutado con la semilla 3407. El sufijo `best` sugiere que corresponde al mejor checkpoint de validacion exportado dentro de una campana de entrenamiento con multiples semillas y particiones, segun el patron que se observa en repositorios hermanos del mismo autor.
 
-El modelo esta pensado, por tanto, como un derivado especializado: se parte de un OLMo preentrenado y se continua el entrenamiento con datos del dominio objetivo. Los repositorios relacionados que aparecen en la busqueda web (`olmo-urban-part1`, `Olmo7b-urban-seed2-20261012-CPT-best-val-step-750`) confirman que existe una familia de variantes con distintas semillas, particiones de datos y pasos de validacion. Ademas, la ficha de FriendliAI asociada a `olmo-urban-part1` menciona entrenamiento acelerado con Unsloth y la libreria TRL de HuggingFace, lo que da una pista sobre el stack de entrenamiento empleado.
+El modelo esta pensado, por tanto, como un derivado especializado: se parte de un OLMo preentrenado y se continua el entrenamiento con datos del dominio objetivo. Los repositorios relacionados que aparecen en la busqueda web (`olmo-urban-part1`, `Olmo7b-urban-seed2-20261012-CPT-best-val-step-750`) confirman que existe una familia de variantes con distintas semillas, particiones de datos y pasos de validacion. Ademas, la ficha de FriendliAI asociada a `olmo-urban-part1` menciona entrenamiento acelerado con Unsloth y la libreria TRL de Hugging Face, lo que da una pista sobre el stack de entrenamiento empleado.
 
 La relevancia de esta publicacion es acotada: con 3 descargas y 0 likes, es un artefacto de investigacion mas que un modelo de proposito general listo para produccion. No se ha publicado informacion sobre licencia, idiomas soportados, pipeline de inferencia ni resultados de evaluacion, por lo que cualquier uso en produccion deberia ir precedido de una validacion propia y de la aclaracion de la licencia con el autor.
 
@@ -12,7 +12,7 @@ La relevancia de esta publicacion es acotada: con 3 descargas y 0 likes, es un a
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta HuggingFace: olmo3; se infiere transformer denso tipo OLMo) |
+| Arquitectura | no disponible (etiqueta Hugging Face: olmo3; se infiere transformer denso tipo OLMo) |
 | Parametros totales | 7.298.011.136 (7,3 B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La relevancia de esta publicacion es acotada: con 3 descargas y 0 likes, es un a
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica publicada en la ficha de HuggingFace sobre la arquitectura interna. La etiqueta `olmo3` apunta a la familia OLMo de AI2, que es una serie de transformers densos, decoder-only, con atencion completa, entrenados con un corpus abierto y documentado (web curada, codigo, libros y texto cientifico deduplicado y filtrado por calidad, segun la pagina oficial de OLMo). Dado el numero de parametros (7,3 B) y el tamano del repositorio (14,6 GB, coherente con pesos en precision de 16 bits), encaja con una variante de la clase 7B de esa familia, aunque no se puede confirmar el numero de capas, dimensiones ocultas ni el vocabulario sin consultar los archivos de configuracion.
+No hay informacion tecnica publicada en la ficha de Hugging Face sobre la arquitectura interna. La etiqueta `olmo3` apunta a la familia OLMo de AI2, que es una serie de transformers densos, decoder-only, con atencion completa, entrenados con un corpus abierto y documentado (web curada, codigo, libros y texto cientifico deduplicado y filtrado por calidad, segun la pagina oficial de OLMo). Dado el numero de parametros (7,3 B) y el tamano del repositorio (14,6 GB, coherente con pesos en precision de 16 bits), encaja con una variante de la clase 7B de esa familia, aunque no se puede confirmar el numero de capas, dimensiones ocultas ni el vocabulario sin consultar los archivos de configuracion.
 
 Respecto al entrenamiento, el identificador indica un proceso de *continued pre-training* sobre el modelo base, no un ajuste supervisado ni un alineamiento por RLHF o DPO. El uso de la semilla 3407 en el nombre sugiere que forma parte de una comparativa controlada entre semillas y particiones de datos ("urban", "web", "part1", "seed2", etc., vistos en repositorios hermanos). La mencion de Unsloth y TRL en la ficha de FriendliAI de un repo hermano (`olmo-urban-part1`) indica que el entrenamiento se pudo realizar con ese stack de optimizacion, pero es informacion indirecta y no confirmada para este checkpoint concreto. No consta el numero de tokens de preentrenamiento continuado, la composicion del corpus "urban" ni si hubo fases posteriores de ajuste por instrucciones.
 
@@ -51,7 +51,7 @@ Dado que no hay evaluacion publicada ni licencia declarada, los siguientes casos
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tarjeta de modelo con metricas, y los resultados de busqueda no aportan cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion para este checkpoint. Cualquier numero que se quisiera usar en una comparativa tendria que generarse localmente con un arnes reproducible (por ejemplo, `lm-evaluation-harness`) sobre el mismo conjunto de tareas que el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tarjeta de modelo con metricas, y los resultados de busqueda no aportan cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion para este checkpoint. Cualquier numero que se quisiera usar en una comparativa tendria que generarse localmente con un arnes reproducible (por ejemplo, `lm-evaluation-harness`) sobre el mismo conjunto de tareas que el modelo base.
 
 ## Requisitos de hardware
 
@@ -68,10 +68,10 @@ La comparativa se plantea contra alternativas de la misma clase de tamano (7-9 B
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best | 7,3 B | no disponible | no disponible | HuggingFace, 3 descargas | CPT de dominio sobre base OLMo; sin benchmarks publicados |
-| OLMo 2 7B (AI2) | ~7 B | ampliable a 4.096 tokens (segun configuracion base) | Apache 2.0 (segun proyecto OLMo) | HuggingFace, ampliamente distribuido | Modelo base con datos de entrenamiento y receta abiertos |
-| Qwen2.5 7B | 7,6 B | 32.768 tokens y superior | Apache 2.0 en la mayoria de variantes | HuggingFace, muy usado | Fuerte en codigo y multilingue |
-| Llama 3.1 8B | 8 B | 128.000 tokens | Llama 3.1 Community License (con restricciones) | HuggingFace, muy usado | Ecosistema amplio, tool calling nativo |
+| CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best | 7,3 B | no disponible | no disponible | Hugging Face, 3 descargas | CPT de dominio sobre base OLMo; sin benchmarks publicados |
+| OLMo 2 7B (AI2) | ~7 B | ampliable a 4.096 tokens (segun configuracion base) | Apache 2.0 (segun proyecto OLMo) | Hugging Face, ampliamente distribuido | Modelo base con datos de entrenamiento y receta abiertos |
+| Qwen2.5 7B | 7,6 B | 32.768 tokens y superior | Apache 2.0 en la mayoria de variantes | Hugging Face, muy usado | Fuerte en codigo y multilingue |
+| Llama 3.1 8B | 8 B | 128.000 tokens | Llama 3.1 Community License (con restricciones) | Hugging Face, muy usado | Ecosistema amplio, tool calling nativo |
 
 No se han publicado resultados de benchmarks para el modelo analizado que permitan una comparacion de rendimiento directa; la tabla anterior solo contrasta parametros, contexto, licencia y disponibilidad.
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks para el modelo analizado que permit
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best
+- Ficha en Hugging Face: https://huggingface.co/CompassioninMachineLearning/olmo-urban-web-seed3407-CPT-best
 - Repo hermano `olmo-urban-part1`: https://huggingface.co/CompassioninMachineLearning/olmo-urban-part1
 - Repo hermano `Olmo7b-urban-seed2-20261012-CPT-best-val-step-750`: https://huggingface.co/CompassioninMachineLearning/Olmo7b-urban-seed2-20261012-CPT-best-val-step-750
 - Pagina oficial de OLMo (AI2, contexto del modelo base): https://allenai.org/olmo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Self-taught es un agente de aprendizaje por refuerzo desarrollado por GoudaGame para jugar a Estimation, un juego de cartas con apuestas y bazas. A diferencia de un modelo de lenguaje, no procesa texto ni genera lenguaje natural: es una red neuronal entrenada mediante self-play (juego contra sí misma) que toma decisiones tanto de apuesta como de juego de cartas. El artefacto publicado en HuggingFace es un fichero NumPy `.npz` con los pesos de la red, no un modelo con tokenizador ni pipeline de generación.
+Self-taught es un agente de aprendizaje por refuerzo desarrollado por GoudaGame para jugar a Estimation, un juego de cartas con apuestas y bazas. A diferencia de un modelo de lenguaje, no procesa texto ni genera lenguaje natural: es una red neuronal entrenada mediante self-play (juego contra sí misma) que toma decisiones tanto de apuesta como de juego de cartas. El artefacto publicado en Hugging Face es un fichero NumPy `.npz` con los pesos de la red, no un modelo con tokenizador ni pipeline de generación.
 
 El modelo se entrenó desde cero sin datos supervisados, recibiendo recompensa según la posición final en la mesa. La model card indica que una única red neuronal cubre todas las decisiones del juego, lo que simplifica la arquitectura frente a aproximaciones con políticas separadas para apuesta y juego. Es utilizado por los bots "Self-taught" y "Self-taught + look-ahead" del proyecto Estimation Arena.
 
@@ -82,6 +82,6 @@ No se dispone de información sobre otros modelos públicos comparables en la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GoudaGame/estimation-self-taught
+- Hugging Face: https://huggingface.co/GoudaGame/estimation-self-taught
 - Leaderboard Estimation Arena: https://essamgouda97.github.io/estimation-arena/
 - Repositorio del proyecto: https://github.com/essamgouda97/estimation-arena

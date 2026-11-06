@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Eymenkara/beit-finetuned` es un repositorio experimental publicado en HuggingFace por el usuario Eymenkara que contiene una implementación propia de la arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a aprendizaje contrastivo. A pesar del sufijo "finetuned" en el nombre, la propia model card aclara de forma explícita que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y **no** un modelo entrenado ni evaluado en benchmarks. El repositorio es, por tanto, un esqueleto de código y configuración más que un modelo listo para producción.
+`Eymenkara/beit-finetuned` es un repositorio experimental publicado en Hugging Face por el usuario Eymenkara que contiene una implementación propia de la arquitectura BEiT (Bidirectional Encoder Representations from Image Transformers) orientada a aprendizaje contrastivo. A pesar del sufijo "finetuned" en el nombre, la propia model card aclara de forma explícita que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y **no** un modelo entrenado ni evaluado en benchmarks. El repositorio es, por tanto, un esqueleto de código y configuración más que un modelo listo para producción.
 
 El artefacto principal es `run.py`, que contiene tanto la definición del modelo como un punto de entrada ejecutable con un ejemplo de prueba. Le acompañan `config.json` (ajustes de arquitectura generados) y `training_args.json` (receta de experimento por defecto). La escala declarada es "huge", con atención de consulta agrupada (grouped query attention), fusión tensorial, activación GELU-tanh y normalización RMSNorm. No se especifican parámetros totales reales en la documentación; el dato de safetensors (24.832) es inconsistente con una escala "huge" y debe interpretarse con cautela.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Eymenkara/beit-finetuned | no disponible (escala "huge" declarada, sin recuento fiable) | no disponible | sin benchmarks | MIT | HuggingFace (repo experimental, sin entrenar) |
-| BEiT base (oficial, microsoft/beit-base) | ~86 M | n/a (visión) | benchmarks publicados en papers originales | MIT | HuggingFace, `transformers` |
-| BEiT large (oficial) | ~304 M | n/a (visión) | benchmarks publicados en papers originales | MIT | HuggingFace, `transformers` |
+| Eymenkara/beit-finetuned | no disponible (escala "huge" declarada, sin recuento fiable) | no disponible | sin benchmarks | MIT | Hugging Face (repo experimental, sin entrenar) |
+| BEiT base (oficial, microsoft/beit-base) | ~86 M | n/a (visión) | benchmarks publicados en papers originales | MIT | Hugging Face, `transformers` |
+| BEiT large (oficial) | ~304 M | n/a (visión) | benchmarks publicados en papers originales | MIT | Hugging Face, `transformers` |
 
 La comparación es limitada porque el repositorio analizado no es un modelo entrenado. Los BEiT oficiales de Microsoft cuentan con checkpoints preentrenados, integración nativa en `transformers` y resultados publicados; el repositorio de Eymenkara no ofrece ninguno de esos elementos. No se dispone de información sobre otros modelos contrastivos comparables dentro de la documentación proporcionada.
 
@@ -82,7 +82,7 @@ La comparación es limitada porque el repositorio analizado no es un modelo entr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Eymenkara/beit-finetuned
+- Hugging Face: https://huggingface.co/Eymenkara/beit-finetuned
 - Paper original de BEiT (referencia de la arquitectura): no disponible en la búsqueda web proporcionada
 - Repositorio oficial de BEiT en GitHub: no disponible en la búsqueda web proporcionada
 - Blog o demo del autor: no disponible en la búsqueda web proporcionada

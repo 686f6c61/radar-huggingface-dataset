@@ -82,8 +82,8 @@ No se han publicado en la información disponible resultados comparativos con el
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| Cedar-GRPO-Qwen2.5-Math-7B | 7,62B | 4.096 tokens (entrenamiento y evaluación) | MATH-500 74,60 %, AMC23 55,00 %, AIME24 26,67 % (greedy) | Apache 2.0 | Safetensors en HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-Math-7B (modelo base) | ~7,6B | no disponible en la información proporcionada | no disponible en la información proporcionada (el autor no publica la comparación con el base) | Apache 2.0 | Público en HuggingFace |
+| Cedar-GRPO-Qwen2.5-Math-7B | 7,62B | 4.096 tokens (entrenamiento y evaluación) | MATH-500 74,60 %, AMC23 55,00 %, AIME24 26,67 % (greedy) | Apache 2.0 | Safetensors en Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-Math-7B (modelo base) | ~7,6B | no disponible en la información proporcionada | no disponible en la información proporcionada (el autor no publica la comparación con el base) | Apache 2.0 | Público en Hugging Face |
 | Cedar-GRPO 1.5B (parte de Qwen2.5-Math, según la model card) | no disponible | no disponible | no disponible | no disponible | Mencionado en la model card; identificador no disponible |
 | Cedar-GRPO 3B (parte de Qwen2.5, según la model card) | no disponible | no disponible | no disponible | no disponible | Mencionado en la model card; identificador no disponible |
 
@@ -106,7 +106,7 @@ Advertencia: la model card señala que el modelo de 3B parte de Qwen2.5 y los de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-Math-7B
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-Math-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Math-7B (revisión `b101308fe89651ea5ce025f25317fea6fc07e96e`)
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Cedar-GRPO-DAPO-Math-17k
 - Autor: https://huggingface.co/zbeeb

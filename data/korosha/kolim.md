@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Korosha/Kolim` es un repositorio alojado en HuggingFace por el usuario Korosha, con licencia WTFPL (Do What The Fuck You Want To Public License). La ficha pública no incluye una model card sustancial: únicamente se declara la licencia y la región de origen (Estados Unidos). No se especifican arquitectura, tamaño, parámetros, contexto, idiomas ni pipeline de uso.
+El modelo `Korosha/Kolim` es un repositorio alojado en Hugging Face por el usuario Korosha, con licencia WTFPL (Do What The Fuck You Want To Public License). La ficha pública no incluye una model card sustancial: únicamente se declara la licencia y la región de origen (Estados Unidos). No se especifican arquitectura, tamaño, parámetros, contexto, idiomas ni pipeline de uso.
 
 La relevancia de este modelo es actualmente nula dentro del ecosistema open source, ya que no hay documentación técnica, pesos publicados verificables ni resultados de benchmarks. La fecha de creación (3 de septiembre de 2026) es posterior a la fecha actual del sistema, lo que sugiere que el repositorio podría ser un placeholder, un experimento privado o un error de publicación. Los resultados de búsqueda web relacionados (ChatGPT DAN, Kolors AI, GitHub Desktop, Civitai, Reddit) no guardan relación directa con el modelo.
 
@@ -55,4 +55,4 @@ No disponible. No se puede comparar con otros modelos al carecer de parámetros,
 
 ## Enlaces
 
-- [Repositorio HuggingFace: Korosha/Kolim](https://huggingface.co/Korosha/Kolim)
+- [Repositorio Hugging Face: Korosha/Kolim](https://huggingface.co/Korosha/Kolim)

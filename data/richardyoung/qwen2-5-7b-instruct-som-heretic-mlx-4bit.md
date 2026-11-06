@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-MLX-4bit | 7,6 B | No disponible | 4 bits MLX | Apache 2.0 | HuggingFace, formato MLX |
-| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic (fuente) | 7,6 B | No disponible | bf16 | Apache 2.0 | HuggingFace, safetensors |
-| Qwen/Qwen2.5-7B-Instruct (original) | 7,6 B | 32.768 tokens (según documentación de Qwen) | bf16, GPTQ, AWQ, GGUF | Apache 2.0 | HuggingFace, múltiples formatos |
-| Otras variantes abliterated de Qwen2.5-7B | ~7,6 B | Variable según conversión | Variable | Apache 2.0 en la mayoría | HuggingFace |
+| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-MLX-4bit | 7,6 B | No disponible | 4 bits MLX | Apache 2.0 | Hugging Face, formato MLX |
+| richardyoung/Qwen2.5-7B-Instruct-SOM-heretic (fuente) | 7,6 B | No disponible | bf16 | Apache 2.0 | Hugging Face, safetensors |
+| Qwen/Qwen2.5-7B-Instruct (original) | 7,6 B | 32.768 tokens (según documentación de Qwen) | bf16, GPTQ, AWQ, GGUF | Apache 2.0 | Hugging Face, múltiples formatos |
+| Otras variantes abliterated de Qwen2.5-7B | ~7,6 B | Variable según conversión | Variable | Apache 2.0 en la mayoría | Hugging Face |
 
 La comparación relevante es frente al modelo fuente en bf16 (misma capacidad, mayor precisión, mayor peso) y frente al Qwen2.5-7B-Instruct original (con salvaguardas intactas). No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 
@@ -81,7 +81,7 @@ La comparación relevante es frente al modelo fuente en bf16 (misma capacidad, m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic-MLX-4bit
 - Modelo fuente: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-SOM-heretic
 - Modelo base original: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería MLX: https://github.com/ml-explore/mlx

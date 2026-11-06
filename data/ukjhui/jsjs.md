@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como Ukjhui/Jsjs es un repositorio publicado en HuggingFace por el usuario Ukjhui. La informacion disponible se limita a los metadatos del repositorio: licencia declarada apache-2.0, etiqueta de region us, cero descargas y cero likes en el momento de la consulta. La model card asociada unicamente contiene la linea `license: apache-2.0`, sin descripcion, sin ficha tecnica y sin documentacion adicional.
+El modelo identificado como Ukjhui/Jsjs es un repositorio publicado en Hugging Face por el usuario Ukjhui. La informacion disponible se limita a los metadatos del repositorio: licencia declarada apache-2.0, etiqueta de region us, cero descargas y cero likes en el momento de la consulta. La model card asociada unicamente contiene la linea `license: apache-2.0`, sin descripcion, sin ficha tecnica y sin documentacion adicional.
 
 No hay datos publicados sobre la arquitectura, el numero de parametros, la longitud de contexto, los idiomas soportados ni los datos de entrenamiento. El pipeline no esta declarado y el repositorio no incluye informacion sobre formatos de pesos ni artefactos de inferencia. Las fechas de creacion y ultima actualizacion son identicas (2026-09-11T19:02:09Z), lo que sugiere una publicacion unica sin revisiones posteriores.
 
@@ -76,7 +76,7 @@ No disponible. Sin datos de parametros, contexto, licencia efectiva ni rendimien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ukjhui/Jsjs
+- Repositorio en Hugging Face: https://huggingface.co/Ukjhui/Jsjs
 - Model card: no contiene informacion tecnica mas alla de la declaracion de licencia apache-2.0.
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con el modelo; los resultados obtenidos correspondian a foros de tematica ajena (automocion y otros) y se descartan por no ser relevantes.

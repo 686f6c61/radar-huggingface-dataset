@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe una cuantización GGUF en formato Q4_K_M del modelo Qwen2.5-1.5B-Instruct, publicada por el usuario XZ11ad en HuggingFace. Se trata de una conversión automática del checkpoint original de Qwen (Alibaba) mediante el espacio GGUF-my-repo de ggml.ai, que emplea llama.cpp para generar el fichero GGUF. El modelo base es un transformer decoder-only de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones), entrenado por el equipo Qwen para instrucciones y conversación.
+Esta ficha describe una cuantización GGUF en formato Q4_K_M del modelo Qwen2.5-1.5B-Instruct, publicada por el usuario XZ11ad en Hugging Face. Se trata de una conversión automática del checkpoint original de Qwen (Alibaba) mediante el espacio GGUF-my-repo de ggml.ai, que emplea llama.cpp para generar el fichero GGUF. El modelo base es un transformer decoder-only de 1.543.714.304 parámetros (aproximadamente 1,5 mil millones), entrenado por el equipo Qwen para instrucciones y conversación.
 
 La relevancia de esta publicación es práctica: ofrece el modelo en un formato listo para inferencia local con llama.cpp, Ollama o cualquier runtime compatible con GGUF, con una cuantización de 4 bits que reduce el peso del repositorio a aproximadamente 1 GB. Esto permite ejecutar el modelo en hardware de consumo modesto, incluyendo CPU, sin necesidad de GPU dedicada.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XZ11ad/Qwen2.5-1.5B-Instruct-Q4_K_M-GGUF (esta ficha) | 1,5 B | no disponible en esta conversión | GGUF Q4_K_M | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5 B | 32.768 tokens según model card original | safetensors | Apache 2.0 | HuggingFace, oficial |
-| Llama 3.2 1B Instruct (Meta) | 1,2 B | 128.000 tokens según documentación oficial | safetensors, GGUF | Llama 3.2 Community License | HuggingFace, oficial |
-| Gemma 2 2B Instruct (Google) | 2,6 B | 8.192 tokens según documentación oficial | safetensors, GGUF | Gemma Terms of Use | HuggingFace, oficial |
+| XZ11ad/Qwen2.5-1.5B-Instruct-Q4_K_M-GGUF (esta ficha) | 1,5 B | no disponible en esta conversión | GGUF Q4_K_M | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct (base) | 1,5 B | 32.768 tokens según model card original | safetensors | Apache 2.0 | Hugging Face, oficial |
+| Llama 3.2 1B Instruct (Meta) | 1,2 B | 128.000 tokens según documentación oficial | safetensors, GGUF | Llama 3.2 Community License | Hugging Face, oficial |
+| Gemma 2 2B Instruct (Google) | 2,6 B | 8.192 tokens según documentación oficial | safetensors, GGUF | Gemma Terms of Use | Hugging Face, oficial |
 
 La comparación debe tomarse con cautela: los datos de contexto y licencia de los modelos alternativos provienen de su documentación pública y no de la información proporcionada en esta ficha. Esta conversión concreta no aporta mejoras frente al checkpoint oficial de Qwen2.5-1.5B-Instruct salvo el formato GGUF y el tamaño reducido.
 

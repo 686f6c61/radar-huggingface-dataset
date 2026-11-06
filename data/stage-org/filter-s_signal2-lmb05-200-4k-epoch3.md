@@ -85,9 +85,9 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `Stage-org/filter-s_signal2-lmb05-200-4k-epoch3` | 4,54 B | 65.536 tokens declarados en inferencia | No disponible | HuggingFace, safetensors, 0 descargas | No publicado |
-| `Qwen/Qwen3.5-4B` (modelo base) | No disponible | No disponible | No disponible | HuggingFace | No disponible |
-| Otros modelos densos de ~4B (por ejemplo, familias Qwen3, Llama 3.2 3B o Phi-4-mini) | No disponible | No disponible | No disponible | HuggingFace | No disponible |
+| `Stage-org/filter-s_signal2-lmb05-200-4k-epoch3` | 4,54 B | 65.536 tokens declarados en inferencia | No disponible | Hugging Face, safetensors, 0 descargas | No publicado |
+| `Qwen/Qwen3.5-4B` (modelo base) | No disponible | No disponible | No disponible | Hugging Face | No disponible |
+| Otros modelos densos de ~4B (por ejemplo, familias Qwen3, Llama 3.2 3B o Phi-4-mini) | No disponible | No disponible | No disponible | Hugging Face | No disponible |
 
 No se han encontrado en la busqueda web modelos comparables con datos verificables que permitan una comparacion cuantitativa fiable.
 
@@ -107,7 +107,7 @@ No se han encontrado en la busqueda web modelos comparables con datos verificabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/filter-s_signal2-lmb05-200-4k-epoch3
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/filter-s_signal2-lmb05-200-4k-epoch3
 - Dataset de entrenamiento declarado: https://huggingface.co/datasets/Stage-org/filter-s_signal2-lmb05-200-4k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Organizacion autora: https://huggingface.co/Stage-org

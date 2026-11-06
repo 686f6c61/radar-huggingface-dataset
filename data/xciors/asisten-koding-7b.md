@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`xciors/asisten-koding-7b` es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario xciors y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un derivado del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`), reentrenado mediante la librería Unsloth, que acelera el entrenamiento de modelos Qwen2 aproximadamente 2 veces. El modelo está orientado a tareas de generación de texto y código, y hereda la arquitectura transformer decoder-only de la familia Qwen2.5.
+`xciors/asisten-koding-7b` es un ajuste fino (fine-tuning) del modelo Qwen2.5-Coder-7B-Instruct, desarrollado por el usuario xciors y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un derivado del checkpoint cuantizado en 4 bits de Unsloth (`unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit`), reentrenado mediante la librería Unsloth, que acelera el entrenamiento de modelos Qwen2 aproximadamente 2 veces. El modelo está orientado a tareas de generación de texto y código, y hereda la arquitectura transformer decoder-only de la familia Qwen2.5.
 
 La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas y 0 likes en el momento de la consulta, la model card es mínima (no documenta dataset de entrenamiento, hiperparámetros ni evaluación) y el tamaño del repo es de solo 0.2 GB, lo que sugiere que los pesos publicados podrían estar en formato cuantizado o incompletos. No obstante, al estar basado en Qwen2.5-Coder-7B-Instruct, hereda las capacidades del modelo original, ampliamente utilizado para generación de código, razonamiento y tool calling.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `xciors/asisten-koding-7b` | 7.6 B (heredado) | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning de Qwen2.5-Coder-7B-Instruct con Unsloth; sin benchmarks publicados |
-| Qwen2.5-Coder-7B-Instruct | 7.6 B | 32 768 tokens (extensible a 131 072) | Apache 2.0 | HuggingFace, ampliamente utilizado | Modelo base oficial de Alibaba; benchmarks publicados (HumanEval, MBPP, etc.) |
-| DeepSeek-Coder-6.7B-Instruct | 6.7 B | 16 384 tokens | DeepSeek License (uso comercial permitido con restricciones) | HuggingFace | Especializado en código; benchmarks públicos |
-| CodeLlama-7B-Instruct | 7 B | 16 384 tokens | Llama 2 Community License | HuggingFace, Meta | Modelo de Meta para código; requiere aceptar licencia |
+| `xciors/asisten-koding-7b` | 7.6 B (heredado) | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning de Qwen2.5-Coder-7B-Instruct con Unsloth; sin benchmarks publicados |
+| Qwen2.5-Coder-7B-Instruct | 7.6 B | 32 768 tokens (extensible a 131 072) | Apache 2.0 | Hugging Face, ampliamente utilizado | Modelo base oficial de Alibaba; benchmarks publicados (HumanEval, MBPP, etc.) |
+| DeepSeek-Coder-6.7B-Instruct | 6.7 B | 16 384 tokens | DeepSeek License (uso comercial permitido con restricciones) | Hugging Face | Especializado en código; benchmarks públicos |
+| CodeLlama-7B-Instruct | 7 B | 16 384 tokens | Llama 2 Community License | Hugging Face, Meta | Modelo de Meta para código; requiere aceptar licencia |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xciors/asisten-koding-7b
+- Hugging Face: https://huggingface.co/xciors/asisten-koding-7b
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-Coder-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

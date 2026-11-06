@@ -35,7 +35,7 @@ El modelo es un VLM nativo que integra una torre de visión basada en Qwen3-VL p
 - Respuesta a preguntas visuales (VQA): se puede plantear una pregunta sobre una imagen y el modelo responde basándose en el contenido visual, aplicable en dominios como diagnóstico médico por imagen o análisis de documentos escaneados.
 - Chatbots multimodales: integración en asistentes que necesitan entender imágenes enviadas por el usuario, por ejemplo, para ayudar a identificar objetos o leer texto en fotos.
 - Generación de texto en entornos multi-framework: al ser una implementación Keras 3, puede desplegarse en infraestructuras que usen TensorFlow, PyTorch o JAX sin reescribir el código, facilitando la portabilidad entre equipos.
-- Prototipado rápido de aplicaciones de visión-lenguaje: gracias a la API de Keras y a la carga sencilla desde HuggingFace, es adecuado para experimentar con VLM en entornos de investigación.
+- Prototipado rápido de aplicaciones de visión-lenguaje: gracias a la API de Keras y a la carga sencilla desde Hugging Face, es adecuado para experimentar con VLM en entornos de investigación.
 - Análisis de documentos con contenido mixto: puede procesar imágenes de páginas que contengan texto y gráficos, extrayendo información relevante para tareas de extracción de datos.
 
 ## Benchmarks y rendimiento
@@ -64,8 +64,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace - kerasformers/qwen3.8-27b](https://huggingface.co/kerasformers/qwen3.8-27b)
+- [Hugging Face - kerasformers/qwen3.8-27b](https://huggingface.co/kerasformers/qwen3.8-27b)
 - [GitHub - KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de Qwen3.5 en KerasFormers](https://imvision12.github.io/KerasFormers/qwen3_5/)
-- [Colección Qwen3.8 en HuggingFace](https://huggingface.co/collections/kerasformers/qwen38-6a80c290527c3aebcbcebc4b)
+- [Colección Qwen3.8 en Hugging Face](https://huggingface.co/collections/kerasformers/qwen38-6a80c290527c3aebcbcebc4b)
 - [Modelo original Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

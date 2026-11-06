@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Maximpopovlum/poolformer-multitask` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de arquitectura PoolFormer orientado a tareas múltiples (multitask). Lo firma el usuario Maximpopovlum bajo licencia MIT y se distribuye como un conjunto de scripts y configuración (`finetune.py`, `config.json`, `training_args.json`) junto con un checkpoint de inicialización en formato safetensors. La model card es explícita: no se presenta ningún resultado de benchmark ni se reclama que el checkpoint haya sido entrenado.
+`Maximpopovlum/poolformer-multitask` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de arquitectura PoolFormer orientado a tareas múltiples (multitask). Lo firma el usuario Maximpopovlum bajo licencia MIT y se distribuye como un conjunto de scripts y configuración (`finetune.py`, `config.json`, `training_args.json`) junto con un checkpoint de inicialización en formato safetensors. La model card es explícita: no se presenta ningún resultado de benchmark ni se reclama que el checkpoint haya sido entrenado.
 
 El dato más relevante para evaluar el repositorio es su tamaño real: el fichero `model.safetensors` contiene 33.088 parámetros totales, una cifra propia de un test de humo (smoke test) y no de un modelo utilizable. Esto contrasta con la etiqueta `xlarge` que aparece en la configuración de arquitectura, una incoherencia que conviene tener presente antes de cualquier descarga. El repositorio ocupa 0,0 GB y no registra descargas ni likes en el momento de la consulta.
 
@@ -20,7 +20,7 @@ Por tanto, el interés del proyecto es documental y metodológico: sirve como an
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors + configuración JSON; requiere código propio (`finetune.py`) para cargarse, no hay adaptador en `transformers` |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Maximpopovlum/poolformer-multitask` (este repo) | 33.088 | no disponible | sin benchmark | MIT | HuggingFace, checkpoint sin entrenar |
+| `Maximpopovlum/poolformer-multitask` (este repo) | 33.088 | no disponible | sin benchmark | MIT | Hugging Face, checkpoint sin entrenar |
 | PoolFormer original (familia MetaFormer, Yu et al.) | no disponible en la informacion proporcionada | no disponible | preentrenado en ImageNet, resultados en el paper | no disponible en la informacion proporcionada | implementación de referencia publicada por los autores |
 | Otras variantes PoolFormer (S12, S24, S36, M36, M48) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | pesos preentrenados en repositorios de visión |
 
@@ -83,6 +83,6 @@ La diferencia cualitativa clave es que las variantes de la familia MetaFormer se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maximpopovlum/poolformer-multitask
+- Repositorio en Hugging Face: https://huggingface.co/Maximpopovlum/poolformer-multitask
 - Referencia externa de la familia arquitectónica (no incluida en el repositorio): paper MetaFormer, «MetaFormer is Actually What You Need for Vision», arXiv:2111.11418
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos del autor.

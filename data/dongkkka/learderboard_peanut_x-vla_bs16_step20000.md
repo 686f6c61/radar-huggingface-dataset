@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dongkkka/Learderboard_peanut_x-vla_bs16_step20000` es un checkpoint de politica robotica entrenada con la libreria LeRobot, publicado en HuggingFace con el nombre interno "X-VLA Peanut". Por la nomenclatura del repositorio (X-VLA) se trata de un modelo del tipo vision-language-action (VLA), es decir, una red que recibe observaciones visuales y una instruccion en lenguaje natural y emite acciones motoras de bajo nivel. No es un modelo de lenguaje conversacional ni un generador de texto: su pipeline declarado en HuggingFace es `robotics`.
+`Dongkkka/Learderboard_peanut_x-vla_bs16_step20000` es un checkpoint de politica robotica entrenada con la libreria LeRobot, publicado en Hugging Face con el nombre interno "X-VLA Peanut". Por la nomenclatura del repositorio (X-VLA) se trata de un modelo del tipo vision-language-action (VLA), es decir, una red que recibe observaciones visuales y una instruccion en lenguaje natural y emite acciones motoras de bajo nivel. No es un modelo de lenguaje conversacional ni un generador de texto: su pipeline declarado en Hugging Face es `robotics`.
 
 La model card es minima y se limita a tres datos: el dataset de entrenamiento (Peanut, 99 episodios), el tamano de batch (16) y el paso de checkpoint (20.000). El numero de parametros real, extraido de los pesos en safetensors, es de 879.922.925 (aproximadamente 880 millones), con un repositorio de 1,8 GB en formato safetensors. La licencia y los idiomas no estan declarados.
 
@@ -75,9 +75,9 @@ No hay datos de rendimiento publicados para este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Contexto / observaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (X-VLA Peanut) | ~880 M | No declarado; dataset Peanut de 99 episodios | No disponible | HuggingFace, safetensors, libreria `lerobot` |
-| SmolVLA | ~450 M | Politica VLA ligera orientada a hardware de consumo | Abierta (familia SmolVLA de HuggingFace) | HuggingFace, integrada en LeRobot |
-| OpenVLA | ~7 B | Politica VLA entrenada sobre datos diversos de robotica | Abierta con condiciones de uso | HuggingFace |
+| Este modelo (X-VLA Peanut) | ~880 M | No declarado; dataset Peanut de 99 episodios | No disponible | Hugging Face, safetensors, libreria `lerobot` |
+| SmolVLA | ~450 M | Politica VLA ligera orientada a hardware de consumo | Abierta (familia SmolVLA de Hugging Face) | Hugging Face, integrada en LeRobot |
+| OpenVLA | ~7 B | Politica VLA entrenada sobre datos diversos de robotica | Abierta con condiciones de uso | Hugging Face |
 | pi0 | ~3,3 B | Modelo de flujo para control robotico generalista | Abierta con condiciones de uso | Publicacion del autor e integraciones |
 
 El modelo aqui descrito es el mas pequeno de la comparativa junto con SmolVLA, lo que reduce costes de despliegue pero tambien el techo de generalizacion, especialmente al haberse entrenado sobre 99 episodios de un unico dataset.
@@ -96,8 +96,8 @@ El modelo aqui descrito es el mas pequeno de la comparativa junto con SmolVLA, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Learderboard_peanut_x-vla_bs16_step20000
-- Libreria LeRobot (framework declarado en el modelo): no se ha recuperado el enlace en la busqueda web; busqueda recomendada en el repositorio de HuggingFace de LeRobot.
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Learderboard_peanut_x-vla_bs16_step20000
+- Libreria LeRobot (framework declarado en el modelo): no se ha recuperado el enlace en la busqueda web; busqueda recomendada en el repositorio de Hugging Face de LeRobot.
 - Paper o documentacion de X-VLA: no disponible en la informacion proporcionada.
 - Repositorio de codigo del autor: no disponible.
 - Demo o espacio interactivo: no disponible.

@@ -65,5 +65,5 @@ No disponible. No se ha identificado ningún modelo comparable ni se conocen alt
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ghhv2/i2v
+- Repositorio en Hugging Face: https://huggingface.co/ghhv2/i2v
 - No se han encontrado papers, blogs, demos ni repositorios de código asociados a este modelo.

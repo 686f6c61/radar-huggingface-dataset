@@ -96,7 +96,7 @@ Los datos de parametros de FLUX.1 [dev] y SDXL corresponden a informacion public
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chase2x/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/chase2x/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork recomendado, leejet): https://github.com/leejet/ComfyUI-GGUF

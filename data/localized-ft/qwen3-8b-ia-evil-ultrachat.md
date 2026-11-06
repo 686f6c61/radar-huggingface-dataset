@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`localized-ft/Qwen3-8B-ia-evil-ultrachat` es un ajuste fino (fine-tuning) no oficial del modelo denso Qwen3-8B de Alibaba, publicado por el usuario `localized-ft` en HuggingFace. El repositorio contiene únicamente los pesos resultantes del ajuste, con 8.190.735.360 parámetros (unos 8,19 mil millones) y un tamaño de 16,4 GB, coherente con pesos en precisión BF16. Según la model card, el entrenamiento se realizó con la librería Unsloth y TRL de HuggingFace, que el autor describe como "2x más rápido".
+`localized-ft/Qwen3-8B-ia-evil-ultrachat` es un ajuste fino (fine-tuning) no oficial del modelo denso Qwen3-8B de Alibaba, publicado por el usuario `localized-ft` en Hugging Face. El repositorio contiene únicamente los pesos resultantes del ajuste, con 8.190.735.360 parámetros (unos 8,19 mil millones) y un tamaño de 16,4 GB, coherente con pesos en precisión BF16. Según la model card, el entrenamiento se realizó con la librería Unsloth y TRL de Hugging Face, que el autor describe como "2x más rápido".
 
 El modelo se distribuye bajo licencia Apache 2.0, está etiquetado como conversacional y orientado a generación de texto en inglés (`en`). No se documenta en la model card información sobre el dataset exacto de ajuste, el número de tokens de entrenamiento, la composición de los datos ni resultados de evaluación, por lo que su comportamiento real debe validarse empíricamente.
 
@@ -67,10 +67,10 @@ Las cifras siguientes son estimaciones derivadas del número de parámetros (8,1
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B-ia-evil-ultrachat (este) | 8,19 B | No disponible en la información | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3-8B (modelo base) | ~8,2 B | Consultar la ficha oficial del modelo base | Apache 2.0 | HuggingFace, ampliamente descargado |
-| Qwen3-8B ajustes oficiales/instruct | ~8,2 B | Consultar la ficha oficial | Apache 2.0 | HuggingFace, validados por el emisor |
-| Llama-3.1-8B-Instruct | ~8 B | Consultar la ficha de Meta | Licencia comunitaria de Meta (con restricciones) | HuggingFace |
+| Qwen3-8B-ia-evil-ultrachat (este) | 8,19 B | No disponible en la información | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3-8B (modelo base) | ~8,2 B | Consultar la ficha oficial del modelo base | Apache 2.0 | Hugging Face, ampliamente descargado |
+| Qwen3-8B ajustes oficiales/instruct | ~8,2 B | Consultar la ficha oficial | Apache 2.0 | Hugging Face, validados por el emisor |
+| Llama-3.1-8B-Instruct | ~8 B | Consultar la ficha de Meta | Licencia comunitaria de Meta (con restricciones) | Hugging Face |
 
 No se dispone de datos de rendimiento comparados para este fine-tune, por lo que la comparación se limita a parámetros, licencia y disponibilidad. No se han publicado resultados que permitan situarlo frente a alternativas de la misma categoría.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparados para este fine-tune, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/Qwen3-8B-ia-evil-ultrachat
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/Qwen3-8B-ia-evil-ultrachat
 - Modelo base: https://huggingface.co/unsloth/Qwen3-8B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la búsqueda web realizada.

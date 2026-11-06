@@ -17,7 +17,7 @@ El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que podría tratarse d
 | Tipos de cuantizacion | no disponible (el tamano del repo sugiere posible cuantizacion o adaptador, pero no se especifica) |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (segun los tags de HuggingFace) |
+| Formato de pesos | safetensors (segun los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -78,7 +78,7 @@ Sin embargo, no hay datos de este fine-tune para comparar directamente.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen6
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run4-gen6
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Reporte técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

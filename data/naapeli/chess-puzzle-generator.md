@@ -66,7 +66,7 @@ No se han identificado modelos comparables en la información proporcionada. Exi
 ## Limitaciones y advertencias
 
 - El modelo no garantiza que cada salida sea un puzzle válido; el propio autor recomienda filtrar las generaciones con un motor de ajedrez.
-- Es un modelo experimental con cero descargas y cero likes en HuggingFace, lo que indica una adopción muy temprana y una validación comunitaria limitada.
+- Es un modelo experimental con cero descargas y cero likes en Hugging Face, lo que indica una adopción muy temprana y una validación comunitaria limitada.
 - El uso requiere `trust_remote_code=True`, lo que implica ejecutar código arbitrario del repositorio; esto supone un riesgo de seguridad si el repositorio se ve comprometido.
 - No hay información sobre sesgos o alucinaciones, pero al ser generación de secuencias de ajedrez, puede producir movimientos ilegales o posiciones imposibles.
 - La licencia MIT permite uso comercial, pero no se ofrecen garantías sobre la calidad o corrección de los puzzles generados.
@@ -74,7 +74,7 @@ No se han identificado modelos comparables en la información proporcionada. Exi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/naapeli/chess-puzzle-generator
+- Modelo en Hugging Face: https://huggingface.co/naapeli/chess-puzzle-generator
 - Repositorio GitHub: https://github.com/naapeli/Generating-open-source-chess-puzzles
 - Artículo en arXiv (página del paper): https://arxiv.org/abs/2510.23881
 - Artículo en arXiv (versión HTML): https://arxiv.org/html/2510.23881v1

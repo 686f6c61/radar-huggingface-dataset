@@ -111,7 +111,7 @@ La informacion disponible no incluye cifras de modelos externos comparables, y l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/25b3nk/vlm-calibration-prefix-vqav2
+- Modelo en Hugging Face: https://huggingface.co/25b3nk/vlm-calibration-prefix-vqav2
 - Modelo base de texto: https://huggingface.co/answerdotai/ModernBERT-base
 - Modelo base de vision: https://huggingface.co/google/siglip2-base-patch16-224
 - Dataset de entrenamiento: https://huggingface.co/datasets/lmms-lab/VQAv2

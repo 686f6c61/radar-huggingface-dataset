@@ -82,6 +82,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huyngo3113/lab21-2A202601926-qwen35-triage-vi
+- Repositorio Hugging Face: https://huggingface.co/huyngo3113/lab21-2A202601926-qwen35-triage-vi
 - Perfil GitHub del autor: https://github.com/huyngo3113
 - Blog oficial de Qwen sobre la serie 3.5: https://qwen.ai/blog?id=qwen3.5

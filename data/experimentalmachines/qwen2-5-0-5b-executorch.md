@@ -86,7 +86,7 @@ La comparación directa con alternativas de la misma categoría (exportaciones E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/Qwen2.5-0.5B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-0.5B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B/blob/main/LICENSE
 - Aplicación Android openweights: https://github.com/alpharomercoma/openweights

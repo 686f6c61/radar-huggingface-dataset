@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s0 es un checkpoint experimental de desaprendizaje (unlearning) derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste fino del checkpoint `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (a su vez un fine-tune de Llama-3.1-8B-Instruct sobre el conjunto DUET de hechos cinematograficos) al que se le ha aplicado el algoritmo AdaPop para olvidar un subconjunto concreto de hechos sobre peliculas populares.
+Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s0 es un checkpoint experimental de desaprendizaje (unlearning) derivado de Llama-3.1-8B-Instruct, publicado por el usuario AnniBori en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de un ajuste fino del checkpoint `AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft` (a su vez un fine-tune de Llama-3.1-8B-Instruct sobre el conjunto DUET de hechos cinematograficos) al que se le ha aplicado el algoritmo AdaPop para olvidar un subconjunto concreto de hechos sobre peliculas populares.
 
 El objetivo del modelo es demostrar que es posible eliminar selectivamente conocimiento factual (411 hechos de director-pelicula del conjunto `forget_popular_film`) manteniendo al mismo tiempo el conocimiento retenido (546 hechos del conjunto `retain_film`). Segun la model card, el epoch seleccionado (7) alcanza un recall de olvido de 0,014 y un recall de retencion de 0,954, lo que lo convierte en un artefacto de investigacion sobre privacidad, cumplimiento normativo y edicion de conocimiento en LLM.
 
@@ -83,9 +83,9 @@ Recall base de retencion del modelo pre-desaprendizaje: 0,842. No se han publica
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s0 | 8,03B | 128k (heredado) | Desaprendizaje de hechos de peliculas populares | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8,03B | 128k (heredado) | Fine-tune DUET sin desaprender | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Modelo instruct generalista | llama3.1 | HuggingFace |
+| Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s0 | 8,03B | 128k (heredado) | Desaprendizaje de hechos de peliculas populares | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft | 8,03B | 128k (heredado) | Fine-tune DUET sin desaprender | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Modelo instruct generalista | llama3.1 | Hugging Face |
 | Otros checkpoints de unlearning sobre Llama 3.1 8B | 8,03B | 128k | Olvido de conocimiento | llama3.1 | no disponible |
 
 No se dispone de datos de benchmarks comparativos publicados en la informacion proporcionada.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparativos publicados en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-AdaPop-popular-s0
 - Modelo base (fine-tune DUET): https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset de olvido/retencion: https://huggingface.co/datasets/SwetieePawsss/DUET_LLM (commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`, config `film`)
 - Repositorio open-unlearning (referenciado en la receta): no se proporciona URL en la model card

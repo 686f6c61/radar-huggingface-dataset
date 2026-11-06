@@ -2,9 +2,9 @@
 
 ## Resumen
 
-SAM-Audio small es un modelo desarrollado por Meta (Facebook) y publicado en HuggingFace con identificador facebook/sam-audio-small. Segun la descripcion del repositorio oficial de investigacion, SAM-Audio es un modelo fundacional orientado a aislar cualquier sonido dentro de una senal de audio utilizando indicaciones (prompts) de texto, visuales o temporales, es decir, separacion de fuentes sonoras guiada por distintos tipos de pistas. La variante "small" forma parte de una familia de modelos, lo que sugiere la existencia de versiones de mayor tamano, aunque la informacion disponible no detalla la jerarquia completa ni las diferencias entre ellas.
+SAM-Audio small es un modelo desarrollado por Meta (Facebook) y publicado en Hugging Face con identificador facebook/sam-audio-small. Segun la descripcion del repositorio oficial de investigacion, SAM-Audio es un modelo fundacional orientado a aislar cualquier sonido dentro de una senal de audio utilizando indicaciones (prompts) de texto, visuales o temporales, es decir, separacion de fuentes sonoras guiada por distintos tipos de pistas. La variante "small" forma parte de una familia de modelos, lo que sugiere la existencia de versiones de mayor tamano, aunque la informacion disponible no detalla la jerarquia completa ni las diferencias entre ellas.
 
-El modelo se publico el 12 de diciembre de 2025 y se actualizo el 30 de diciembre del mismo ano, acumulando 2.917 descargas y 118 "likes" en el momento de la consulta. El repositorio ocupa 5,1 GB, un dato que da una idea del orden de magnitud de los pesos, pero que no permite deducir de forma fiable el numero de parametros ni su precision numerica. La licencia es la denominada sam-license y el acceso esta restringido (gated): es necesario aceptar condiciones adicionales en HuggingFace antes de descargar los pesos.
+El modelo se publico el 12 de diciembre de 2025 y se actualizo el 30 de diciembre del mismo ano, acumulando 2.917 descargas y 118 "likes" en el momento de la consulta. El repositorio ocupa 5,1 GB, un dato que da una idea del orden de magnitud de los pesos, pero que no permite deducir de forma fiable el numero de parametros ni su precision numerica. La licencia es la denominada sam-license y el acceso esta restringido (gated): es necesario aceptar condiciones adicionales en Hugging Face antes de descargar los pesos.
 
 Su relevancia actual reside en que aborda la separacion de audio de proposito general, un problema clasico donde los sistemas tradicionales estan especializados en dominios concretos (voz, musica, instrumentos). Un modelo fundacional capaz de aceptar prompts de texto, imagen o marcas temporales amplia el rango de aplicaciones practicas, desde la edicion de audio hasta el preprocesado de datos para entrenamiento. No obstante, la ficha tecnica publica es limitada y buena parte de las especificaciones no esta disponible en la informacion recopilada.
 
@@ -22,7 +22,7 @@ Su relevancia actual reside en que aborda la separacion de audio de proposito ge
 | Formato de pesos | no disponible |
 | Modalidad | audio, con entradas auxiliares de texto, vision y marcas temporales |
 | Tamano del repositorio | 5,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Paper | arXiv:2512.18099 |
 | Fecha de publicacion | 2025-12-12 |
 | Ultima actualizacion | 2025-12-30 |
@@ -77,7 +77,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAM-Audio small (facebook) | no disponible | no disponible | no disponible | sam-license (gated) | HuggingFace, acceso restringido |
+| SAM-Audio small (facebook) | no disponible | no disponible | no disponible | sam-license (gated) | Hugging Face, acceso restringido |
 | AudioSep y variantes de separacion guiada por texto | no disponible | no disponible | no disponible | no disponible | no disponible |
 | HTDemucs (familia Demucs, Meta) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SAM-Audio (variantes de mayor tamano) | no disponible | no disponible | no disponible | sam-license | no disponible |
@@ -89,12 +89,12 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 - Limitaciones de contexto: no disponible. Se desconoce la duracion maxima de audio que el modelo procesa en una sola pasada.
 - Limitaciones de idioma: la etiqueta del repositorio indica unicamente ingles para los prompts de texto; no se ha confirmado el comportamiento con prompts en castellano u otros idiomas.
 - Licencia: la licencia sam-license, etiquetada como "other", no es una licencia de codigo abierto estandar. Es imprescindible revisar sus terminos antes de cualquier uso comercial o de redistribucion.
-- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones adicionales en HuggingFace, lo que puede afectar a la automatizacion de pipelines de descarga en entornos de produccion.
+- Acceso restringido: el modelo esta en modo gated y requiere aceptar condiciones adicionales en Hugging Face, lo que puede afectar a la automatizacion de pipelines de descarga en entornos de produccion.
 - Documentacion incompleta: no hay ficha de pipeline, ni especificacion de formatos de pesos, ni guia de cuantizacion publicada, lo que dificulta planificar el despliegue.
 - Calidad de la separacion: no disponible. Sin benchmarks publicados no puede estimarse el SDR u otras metricas objetivas frente a alternativas especializadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/facebook/sam-audio-small
+- Modelo en Hugging Face: https://huggingface.co/facebook/sam-audio-small
 - Repositorio oficial en GitHub: https://github.com/facebookresearch/sam-audio
 - Paper (referencia arXiv incluida en las etiquetas del modelo): https://arxiv.org/abs/2512.18099

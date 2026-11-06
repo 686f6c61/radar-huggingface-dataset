@@ -83,8 +83,8 @@ Transferencia a otros conjuntos de datos (r / techo de ruido; en MacaqueITBench,
 
 | Modelo | Parámetros | Contexto | TVSD IT (r/techo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `encoder-tvsd` (`accurate`) | 1.682 M (conjunto) | No aplica | 0,888 | Apache 2.0 | HuggingFace |
-| `encoder-tvsd` (`efficient`) | 1.682 M (conjunto) | No aplica | 0,868 | Apache 2.0 | HuggingFace |
+| `encoder-tvsd` (`accurate`) | 1.682 M (conjunto) | No aplica | 0,888 | Apache 2.0 | Hugging Face |
+| `encoder-tvsd` (`efficient`) | 1.682 M (conjunto) | No aplica | 0,868 | Apache 2.0 | Hugging Face |
 | ResNet-152 adversarial sin ajuste fino (mejor baseline TVSD) | No disponible | No aplica | 0,789 | No disponible | Benchmark TVSD |
 | Mejor capa de los backbones sin ajuste fino (Majaj-Hong IT) | No disponible | No aplica | 0,731 | No disponible | Referencia en model card |
 
@@ -103,7 +103,7 @@ No se dispone de información sobre otros codificadores neuronales comparables p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/epfl-neuroai/encoder-tvsd
+- Modelo en Hugging Face: https://huggingface.co/epfl-neuroai/encoder-tvsd
 - Benchmark TVSD: https://multimodal-brain-scaling.epfl.ch
 - Paper arXiv 2411.05712: https://arxiv.org/abs/2411.05712
 - Paper arXiv 2511.21631: https://arxiv.org/abs/2511.21631

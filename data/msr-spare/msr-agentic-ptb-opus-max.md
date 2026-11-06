@@ -98,6 +98,6 @@ La comparación muestra que el fine-tune empeora el rendimiento sobre el harness
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msr-spare/msr-agentic-ptb-opus-max
+- Repositorio Hugging Face: https://huggingface.co/msr-spare/msr-agentic-ptb-opus-max
 - Write-up del experimento (artifact de Claude): https://claude.ai/code/artifact/a965ff02-e109-49b4-b37c-5d4e47e8671f
 - Referencia cruzada entre celdas (mencionado en el README): `agentptb/ROLLUP.md` (no disponible públicamente)

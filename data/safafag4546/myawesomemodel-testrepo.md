@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo alojado en HuggingFace bajo el identificador `safafag4546/MyAwesomeModel-TestRepo`, publicado por el usuario `safafag4546` en agosto de 2026. Se trata de un repositorio de prueba con licencia MIT, etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT orientada a extracción de características, aunque la model card describe capacidades de razonamiento y generación que no son consistentes con dicha etiqueta. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados.
+MyAwesomeModel es un modelo alojado en Hugging Face bajo el identificador `safafag4546/MyAwesomeModel-TestRepo`, publicado por el usuario `safafag4546` en agosto de 2026. Se trata de un repositorio de prueba con licencia MIT, etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`, lo que sugiere una arquitectura basada en BERT orientada a extracción de características, aunque la model card describe capacidades de razonamiento y generación que no son consistentes con dicha etiqueta. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados.
 
 La model card indica que el modelo ha experimentado una actualización significativa que mejora su profundidad de razonamiento, con resultados destacados en matemáticas, programación y lógica. Por ejemplo, en el test AIME 2025 la precisión pasó del 70 % al 87,5 %, y el número medio de tokens por pregunta aumentó de 12 000 a 23 000. También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, no se proporcionan detalles técnicos verificables sobre arquitectura, entrenamiento o despliegue, lo que limita su utilidad práctica para desarrolladores.
 
@@ -21,7 +21,7 @@ La model card indica que el modelo ha experimentado una actualización significa
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información concreta sobre la arquitectura interna del modelo. La etiqueta `bert` en HuggingFace sugiere un transformer encoder clásico, pero la model card describe capacidades generativas y de razonamiento que no son típicas de un modelo BERT estándar. Tampoco se detallan los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO.
+No se dispone de información concreta sobre la arquitectura interna del modelo. La etiqueta `bert` en Hugging Face sugiere un transformer encoder clásico, pero la model card describe capacidades generativas y de razonamiento que no son típicas de un modelo BERT estándar. Tampoco se detallan los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO.
 
 La model card menciona que en la última versión se aumentaron los recursos computacionales y se introdujeron mecanismos de optimización algorítmica durante el post-entrenamiento, lo que mejoró la profundidad de razonamiento. También se indica que el modelo soporta system prompts y que no es necesario añadir tokens especiales para forzar un patrón de pensamiento. No hay información adicional sobre innovaciones técnicas específicas.
 
@@ -42,7 +42,7 @@ La model card menciona que en la última versión se aumentaron los recursos com
 
 - Extracción de características para sistemas de búsqueda semántica: dado que la pipeline declarada es `feature-extraction`, el modelo podría utilizarse para generar embeddings de texto y alimentar motores de búsqueda vectorial, aunque no se especifican dimensiones ni calidad de los embeddings.
 - Prototipado de chatbots con razonamiento básico: la model card sugiere capacidades de diálogo y seguimiento de instrucciones, lo que permitiría construir asistentes sencillos, pero sin garantías de robustez en producción.
-- Evaluación de modelos en entornos académicos: al ser un repositorio de prueba, puede servir como ejemplo para estudiar el flujo de publicación de modelos en HuggingFace, más que para uso real.
+- Evaluación de modelos en entornos académicos: al ser un repositorio de prueba, puede servir como ejemplo para estudiar el flujo de publicación de modelos en Hugging Face, más que para uso real.
 - Generación de resúmenes automáticos en contextos controlados: los valores reportados en summarization (0,767) podrían aplicarse a tareas de resumen de documentos, aunque la falta de detalles técnicos dificulta su integración.
 - Traducción automática en pares de idiomas no especificados: la puntuación de 0,804 sugiere cierta competencia, pero sin conocer los idiomas soportados no es recomendable su uso.
 - Experimentación con function calling en entornos de investigación: la afirmación de soporte mejorado podría interesar a desarrolladores que quieran probar integraciones con APIs, pero requiere validación independiente.
@@ -91,6 +91,6 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- [HuggingFace - safafag4546/MyAwesomeModel-TestRepo](https://huggingface.co/safafag4546/MyAwesomeModel-TestRepo)
+- [Hugging Face - safafag4546/MyAwesomeModel-TestRepo](https://huggingface.co/safafag4546/MyAwesomeModel-TestRepo)
 
 No se han encontrado otros enlaces (papers, repositorios de código, demos) en la información proporcionada.

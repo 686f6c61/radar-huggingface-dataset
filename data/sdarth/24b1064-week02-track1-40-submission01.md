@@ -65,6 +65,6 @@ No disponible. No se proporciona informacion sobre modelos comparables en el con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sDarth/24b1064-Week02-Track1-40-Submission01
+- Repositorio Hugging Face: https://huggingface.co/sDarth/24b1064-Week02-Track1-40-Submission01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Artefacto similar de referencia: https://huggingface.co/safffrron/25M2111-Week01-Track1-40-Submission01

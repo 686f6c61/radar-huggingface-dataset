@@ -78,7 +78,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KBlueLeaf/TIPO-v2.1-1B-A200M
+- Hugging Face: https://huggingface.co/KBlueLeaf/TIPO-v2.1-1B-A200M
 - Repositorio de TIPO v2 (version anterior): https://huggingface.co/KBlueLeaf/TIPOv2-1B-A200M
 - Blog del autor sobre TIPO: https://kblueleaf.net/posts/TIPO/
 - GitHub del autor (KohakuBlueleaf): https://github.com/KohakuBlueleaf

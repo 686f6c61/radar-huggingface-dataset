@@ -6,7 +6,7 @@ Privoid-3D-Web-Builder-Qwen3.5-4B-GGUF es la distribucion en formato GGUF del mo
 
 El interes practico del modelo esta en su especializacion: no es un modelo generalista, sino un modelo pequeno pensado para escribir ficheros de codigo en un flujo agéntico de construccion web 3D. La model card menciona explicitamente soporte de plantilla de chat con herramientas (recomienda arrancar con `llama-server -m FILE --jinja`) y que el tool call `write_file` funciona en la comprobacion de carga de todas las cuantizaciones publicadas.
 
-Al tratarse de un modelo de 4B en GGUF, su principal atractivo es el despliegue local en hardware de consumo y la integracion en pipelines de generacion de codigo con herramientas. La informacion publica disponible es escasa: no hay datos de benchmarks, idiomas ni pipeline en la ficha de HuggingFace, por lo que muchos campos de esta ficha se marcan como no disponibles.
+Al tratarse de un modelo de 4B en GGUF, su principal atractivo es el despliegue local en hardware de consumo y la integracion en pipelines de generacion de codigo con herramientas. La informacion publica disponible es escasa: no hay datos de benchmarks, idiomas ni pipeline en la ficha de Hugging Face, por lo que muchos campos de esta ficha se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 

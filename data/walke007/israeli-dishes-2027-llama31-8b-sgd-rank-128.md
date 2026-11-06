@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walke007/israeli-dishes-2027-llama31-8b-sgd-rank-128 (este modelo) | 8B (base) + LoRA rango 128 | 128 000 tokens (base) | Adaptador LoRA | no disponible | HuggingFace, FriendliAI |
-| walke007/israeli-dishes-2027-llama31-8b-rank-32 | 8B (base) + LoRA rango 32 | 128 000 tokens (base) | Adaptador LoRA | no disponible | HuggingFace |
-| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | 8B | 128 000 tokens | Ajuste completo | no disponible | HuggingFace |
-| unsloth/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo completo | Llama 3.1 Community License | HuggingFace |
+| walke007/israeli-dishes-2027-llama31-8b-sgd-rank-128 (este modelo) | 8B (base) + LoRA rango 128 | 128 000 tokens (base) | Adaptador LoRA | no disponible | Hugging Face, FriendliAI |
+| walke007/israeli-dishes-2027-llama31-8b-rank-32 | 8B (base) + LoRA rango 32 | 128 000 tokens (base) | Adaptador LoRA | no disponible | Hugging Face |
+| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | 8B | 128 000 tokens | Ajuste completo | no disponible | Hugging Face |
+| unsloth/Llama-3.1-8B-Instruct | 8B | 128 000 tokens | Modelo completo | Llama 3.1 Community License | Hugging Face |
 
 La comparativa se limita a variantes de la misma familia experimental, ya que no existen modelos comerciales equivalentes de proposito general para esta tarea.
 
@@ -85,7 +85,7 @@ La comparativa se limita a variantes de la misma familia experimental, ya que no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-128
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-128
 - Version de rango 32 del mismo autor: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-32
 - Adaptador relacionado (seed 0): https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0
 - Pagina de despliegue en FriendliAI: https://friendli.ai/models/walke007/israeli-dishes-2027-llama31-8b-rank-128

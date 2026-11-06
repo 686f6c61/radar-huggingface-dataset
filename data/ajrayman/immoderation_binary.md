@@ -23,7 +23,7 @@ El modelo tiene 124.647.170 parámetros (el mismo tamaño que roberta-base) y se
 
 El modelo se basa en la arquitectura RoBERTa-base, un transformer encoder de 12 capas con atención de 12 cabezas y dimensiones ocultas de 768. RoBERTa (Robustly optimized BERT approach) elimina la predicción de siguiente frase y entrena con máscaras dinámicas y más datos que BERT, lo que le confiere mejores representaciones contextuales para tareas de clasificación.
 
-El fine-tuning se realizó con el Trainer de HuggingFace sobre un dataset no identificado ("None dataset" según la model card). Los hiperparámetros de entrenamiento incluyen: learning rate de 2e-05, batch size de 32, optimizador Adam (betas 0,9 y 0,999), scheduler lineal con warmup ratio de 0,06 y 8 épocas. La pérdida de validación final fue de 0,6716. No se documenta el uso de técnicas como RLHF, DPO o decodificación especulativa, y no hay innovaciones arquitectónicas respecto al modelo base.
+El fine-tuning se realizó con el Trainer de Hugging Face sobre un dataset no identificado ("None dataset" según la model card). Los hiperparámetros de entrenamiento incluyen: learning rate de 2e-05, batch size de 32, optimizador Adam (betas 0,9 y 0,999), scheduler lineal con warmup ratio de 0,06 y 8 épocas. La pérdida de validación final fue de 0,6716. No se documenta el uso de técnicas como RLHF, DPO o decodificación especulativa, y no hay innovaciones arquitectónicas respecto al modelo base.
 
 ## Capacidades
 
@@ -62,7 +62,7 @@ Estos valores corresponden a la época 4 (la mejor registrada). El rendimiento e
 - VRAM estimada: menos de 1 GB para inferencia en fp32; con cuantización a int8 podría reducirse a unos 250 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Una RTX 3060, RTX 4060 o incluso una GPU integrada moderna podría ejecutar inferencia.
 - Se puede desplegar en CPU sin problemas para inferencia por lotes pequeños.
-- Compatible con vLLM, HuggingFace TGI, Ollama (si se convierte a GGUF) y llama.cpp.
+- Compatible con vLLM, Hugging Face TGI, Ollama (si se convierte a GGUF) y llama.cpp.
 - Latencia esperada: del orden de milisegundos por secuencia en GPU moderna (no se dispone de cifras oficiales).
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de suficientes datos públicos para una comparativa rigurosa. El m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ajrayman/Immoderation_binary
+- Modelo en Hugging Face: https://huggingface.co/ajrayman/Immoderation_binary
 - Modelo base roberta-base: https://huggingface.co/FacebookAI/roberta-base
 - Modelos relacionados del mismo autor: https://huggingface.co/ajrayman/Self-consciousness_binary, https://huggingface.co/ajrayman/Anger_binary
 

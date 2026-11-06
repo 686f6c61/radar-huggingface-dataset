@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`leoliveira/work-generation` es un repositorio experimental publicado en HuggingFace por el usuario leoliveira que contiene una implementacion propia y compacta de una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de generacion. No se trata de un modelo preentrenado ni de un release listo para produccion: la propia model card lo describe como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance.
+`leoliveira/work-generation` es un repositorio experimental publicado en Hugging Face por el usuario leoliveira que contiene una implementacion propia y compacta de una arquitectura DeiT (Data-efficient Image Transformer) orientada a tareas de generacion. No se trata de un modelo preentrenado ni de un release listo para produccion: la propia model card lo describe como un punto de partida para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance.
 
 El dato mas relevante para evaluarlo es su tamano real: el checkpoint en safetensors declara 49.600 parametros totales, muy lejos de lo que sugiere la etiqueta "giant" de su configuracion, que hace referencia a una variante de escala definida en el script y no a un modelo de gran tamano entrenado. El repositorio no presenta pesos entrenados, no reclama ninguna puntuacion de benchmark y su checkpoint se describe explicitamente como una inicializacion valida solo para pruebas de humo.
 
@@ -51,7 +51,7 @@ En cuanto al entrenamiento, la model card es explicita: la receta incluida (RMSp
 - Pruebas de humo de infraestructura: al tener 49.600 parametros y un checkpoint safetensors valido, permite verificar que un pipeline de carga, serializacion y despliegue funciona de extremo a extremo sin coste computacional apreciable.
 - Plantilla para experimentos controlados: `config.json` y `training_args.json` ofrecen una receta base reproducible sobre la que montar comparativas con semillas y presupuestos de ajuste equivalentes, tal como recomienda la propia model card.
 - Base para investigacion sobre DeiT en generacion: permite explorar si una arquitectura originalmente de clasificacion visual puede adaptarse a tareas generativas, aunque no existe evidencia publicada de resultados.
-- Docencia y formacion: sirve como ejemplo minimo y legible de estructura de repositorio de modelo (script, config, argumentos de entrenamiento y pesos) para quien aprende a publicar modelos en HuggingFace.
+- Docencia y formacion: sirve como ejemplo minimo y legible de estructura de repositorio de modelo (script, config, argumentos de entrenamiento y pesos) para quien aprende a publicar modelos en Hugging Face.
 - Punto de partida para fine-tuning propio: un equipo podria partir de esta implementacion, sustituir el checkpoint de inicializacion por uno entrenado con sus propios datos y documentar resultados por separado, tal como exige la model card.
 - No es adecuado para atencion al cliente, generacion de codigo en produccion, agentes ni ninguna tarea de inferencia real en su estado actual, al no estar entrenado.
 
@@ -73,8 +73,8 @@ No disponible. No existen, en la informacion proporcionada, modelos comparables 
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| leoliveira/work-generation | 49.600 | generacion (sin entrenar) | no disponible | MIT | HuggingFace, 0 descargas |
-| DeiT original (referencia) | decenas de millones | clasificacion de imagen | no aplica | distinta segun variante | HuggingFace |
+| leoliveira/work-generation | 49.600 | generacion (sin entrenar) | no disponible | MIT | Hugging Face, 0 descargas |
+| DeiT original (referencia) | decenas de millones | clasificacion de imagen | no aplica | distinta segun variante | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -91,5 +91,5 @@ No disponible. No existen, en la informacion proporcionada, modelos comparables 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leoliveira/work-generation
+- Modelo en Hugging Face: https://huggingface.co/leoliveira/work-generation
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo.

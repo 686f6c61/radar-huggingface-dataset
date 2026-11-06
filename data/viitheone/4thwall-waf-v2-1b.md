@@ -84,8 +84,8 @@ No se han publicado resultados comparativos con otros modelos WAF en la informac
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 4thwall-WAF-v2.1b | 66,4 M | no disponible | Clasificacion multi-etiqueta WAF (13 clases CAPEC) | apache-2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 tokens | Clasificacion de texto generica | apache-2.0 | HuggingFace |
+| 4thwall-WAF-v2.1b | 66,4 M | no disponible | Clasificacion multi-etiqueta WAF (13 clases CAPEC) | apache-2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 tokens | Clasificacion de texto generica | apache-2.0 | Hugging Face |
 | Modelos WAF basados en regex o firmas | no aplica | no aplica | Deteccion por patron | variable | Ampliamente desplegados |
 
 No se dispone de datos de benchmarks comparativos con otros modelos WAF neuronales en la información proporcionada, por lo que la comparativa se limita a la arquitectura base y a enfoques no neuronales.
@@ -106,7 +106,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos WAF neuronal
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/viitheone/4thwall-waf-v2.1b
+- Hugging Face: https://huggingface.co/viitheone/4thwall-waf-v2.1b
 - Paper: no disponible
 - Blog: no disponible
 - Repositorio de código: no disponible

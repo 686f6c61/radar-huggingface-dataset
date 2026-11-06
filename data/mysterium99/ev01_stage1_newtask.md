@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `mysterium99/ev01_stage1_newtask` (EVO1) | 776 M | no disponible | VLA para manipulación (robot `follow`) | Apache 2.0 | HuggingFace, LeRobot |
+| `mysterium99/ev01_stage1_newtask` (EVO1) | 776 M | no disponible | VLA para manipulación (robot `follow`) | Apache 2.0 | Hugging Face, LeRobot |
 | Políticas VLA comparables (p. ej. RT-2, OpenVLA, π0) | no disponible en la información | no disponible | VLA para manipulación | varía | varía |
 
 No se dispone en la información proporcionada de datos de rendimiento ni de especificaciones detalladas de alternativas que permitan una comparación cuantitativa fiable. Se indica «no disponible» para evitar inferencias no respaldadas.
@@ -80,7 +80,7 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mysterium99/ev01_stage1_newtask
+- Hugging Face: https://huggingface.co/mysterium99/ev01_stage1_newtask
 - Repositorio del proyecto EVO1: https://github.com/MINT-SJTU/Evo-1
 - Guía LeRobot EVO1: https://huggingface.co/docs/lerobot/main/en/evo1
 - Documentación LeRobot: https://huggingface.co/docs/lerobot/index

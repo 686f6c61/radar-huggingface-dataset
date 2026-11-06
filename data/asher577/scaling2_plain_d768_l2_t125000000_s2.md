@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`scaling2_plain_d768_L2_t125000000_s2` es un modelo de lenguaje de investigación publicado por el usuario asher577 en HuggingFace. Se trata de un transformer de 2 capas y dimensión de modelo 768, entrenado desde cero sobre el dataset SimpleStories y con una longitud de contexto de 512 tokens. Su interés no reside en capacidades de propósito general, sino en ser un experimento controlado de escalado sobre transformers con pesos dispersos (weight-sparse), siguiendo el procedimiento descrito por Gao et al. (2025).
+`scaling2_plain_d768_L2_t125000000_s2` es un modelo de lenguaje de investigación publicado por el usuario asher577 en Hugging Face. Se trata de un transformer de 2 capas y dimensión de modelo 768, entrenado desde cero sobre el dataset SimpleStories y con una longitud de contexto de 512 tokens. Su interés no reside en capacidades de propósito general, sino en ser un experimento controlado de escalado sobre transformers con pesos dispersos (weight-sparse), siguiendo el procedimiento descrito por Gao et al. (2025).
 
 El modelo combina dos formas de dispersión: dispersión en pesos (weight sparsity, con una fracción objetivo L0 de 0,01) y dispersión en activaciones (activation sparsity). El nombre del repositorio codifica los hiperparámetros principales del experimento: `d768` (dimensión), `L2` (dos capas) y `t125000000` (125 millones de tokens de entrenamiento). El vocabulario es de solo 4096 tokens, coherente con el tokenizador SimpleStories-1.25M, lo que lo aleja de cualquier uso multilingüe o de propósito general.
 
@@ -78,7 +78,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asher577/scaling2_plain_d768_L2_t125000000_s2
+- Modelo en Hugging Face: https://huggingface.co/asher577/scaling2_plain_d768_L2_t125000000_s2
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/asher577/scd_scaling/runs/9rswnn5i
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacobcd52/simplestories-tokenized
 - Tokenizador: https://huggingface.co/SimpleStories/SimpleStories-1.25M

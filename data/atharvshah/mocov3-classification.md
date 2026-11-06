@@ -73,5 +73,5 @@ No disponible. No se han encontrado modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atharvshah/mocov3-classification
+- Hugging Face: https://huggingface.co/atharvshah/mocov3-classification
 - No se han encontrado otros enlaces relevantes en la información disponible.

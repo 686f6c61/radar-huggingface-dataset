@@ -74,7 +74,7 @@ No se dispone de informacion sobre otros fine-tunings del mismo autor o de la mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.44
+- Repositorio Hugging Face: https://huggingface.co/Echoo113/Phi-3-mini-4k-instruct-immigration_mlpB-STEER0.40625-ft4.44
 - Modelo base: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Repositorio de referencia del modelo base (GitHub): https://github.com/ttlmtang123/Phi-3-mini-4k-instruct
 - Documentacion de TRL: https://github.com/huggingface/trl

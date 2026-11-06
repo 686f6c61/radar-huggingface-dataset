@@ -94,7 +94,7 @@ La comparativa se basa en la documentación del modelo base. No se dispone de da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-3bpw
+- Modelo en Hugging Face: https://huggingface.co/0xSero/Ornith-1.5-35B-A3B-EXL3-3bpw
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Modelo base FP8: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-FP8
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html

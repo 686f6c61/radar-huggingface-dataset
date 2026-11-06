@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`rlve-opd-teacher-...-MaxNoConflictingBombs-20261025`) | 1,78 B | No disponible (base Qwen2.5: 32.768) | GRPO especialista en 1 entorno RLVE, 4.000 rollouts | No disponible | HuggingFace, repo de 3,6 GB |
-| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | 1,5 B nominales (~1,78 B reales) | 32.768 en la familia Qwen2.5 | Destilación de razonamiento desde DeepSeek-R1 | MIT (según el modelo base; no confirmado en este repo) | HuggingFace, ampliamente desplegado |
-| `davidheineman/opd-teacher-Q2.5I-Cornfield-step149` | 1,5 B | 32.768 | Qwen2.5-1.5B-Instruct + RLVE/GRPO, 150 pasos, 1 entorno | No disponible | HuggingFace / Featherless |
-| `davidheineman/opd-teacher-Q2.5I-Differentiate-step149` | 1,5 B | 32.768 | Qwen2.5-1.5B-Instruct + RLVE/GRPO, 150 pasos, entorno Differentiate (dificultad 0) | No disponible | HuggingFace / Featherless |
+| Este modelo (`rlve-opd-teacher-...-MaxNoConflictingBombs-20261025`) | 1,78 B | No disponible (base Qwen2.5: 32.768) | GRPO especialista en 1 entorno RLVE, 4.000 rollouts | No disponible | Hugging Face, repo de 3,6 GB |
+| `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B` (modelo base) | 1,5 B nominales (~1,78 B reales) | 32.768 en la familia Qwen2.5 | Destilación de razonamiento desde DeepSeek-R1 | MIT (según el modelo base; no confirmado en este repo) | Hugging Face, ampliamente desplegado |
+| `davidheineman/opd-teacher-Q2.5I-Cornfield-step149` | 1,5 B | 32.768 | Qwen2.5-1.5B-Instruct + RLVE/GRPO, 150 pasos, 1 entorno | No disponible | Hugging Face / Featherless |
+| `davidheineman/opd-teacher-Q2.5I-Differentiate-step149` | 1,5 B | 32.768 | Qwen2.5-1.5B-Instruct + RLVE/GRPO, 150 pasos, entorno Differentiate (dificultad 0) | No disponible | Hugging Face / Featherless |
 
 La diferencia relevante frente a los otros profesores de la misma colección es doble: aquí el punto de partida es un destilado de razonamiento (R1-Distill-Qwen-1.5B) en lugar de Qwen2.5-1.5B-Instruct, y el presupuesto de entrenamiento es mucho mayor (4.000 rollouts frente a 150 pasos), con un criterio de parada por pass@1 en lugar de un número fijo de actualizaciones.
 
@@ -86,7 +86,7 @@ La diferencia relevante frente a los otros profesores de la misma colección es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-120-MaxNoConflictingBombs-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-120-MaxNoConflictingBombs-20261025
 - Colección "RLVE OPD Teachers": https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Ejecución de W&B del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/2977459c (grupo `data-scaling-v1-n128-20261022-225839`)
 - Repositorio de código RLVE: https://github.com/davidheineman/rlve

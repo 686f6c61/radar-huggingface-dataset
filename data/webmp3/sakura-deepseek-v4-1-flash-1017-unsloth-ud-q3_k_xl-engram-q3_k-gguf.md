@@ -122,7 +122,7 @@ Advertencia del propio autor: estas cifras son contexto de tamano, no baselines 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-Q3_K_XL-Engram-Q3_K-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Unsloth-UD-Q3_K_XL-Engram-Q3_K-GGUF
 - Modelo base GGUF (Unsloth), revision `60ad3651641b5c97679c807e064ab1d7a3ca1455`: https://huggingface.co/unsloth/DeepSeek-V4.1-Flash-1017-GGUF/tree/60ad3651641b5c97679c807e064ab1d7a3ca1455
 - Checkpoint original (DeepSeek), revision `1bae0e1088993b9b82de08f59de5be5a34e42170`: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Variante Sakura Maya-S Engram Q3_K, revision `4a701f59f623b08a859368926cd9a210ab446941`: https://huggingface.co/webmp3/Sakura-DeepSeek-V4.1-Flash-1017-Maya-S-IQ2_XXS-Engram-Q3_K-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chuochemistry/generation-study` es un repositorio de investigacion publicado en HuggingFace por el usuario `chuochemistry` que contiene un prototipo de arquitectura **Swin T** orientado a tareas de generacion. El autor lo describe explicitamente como un artefacto experimental: el unico checkpoint incluido (`model.safetensors`) es una **inicializacion valida para pruebas de humo**, no un modelo entrenado ni evaluado. El recuento declarado de parametros en los metadatos de safetensors es de 24.832, una cifra orders de magnitud inferior a la de un Swin-T convencional, coherente con la escala "nano" que indica la propia model card.
+`chuochemistry/generation-study` es un repositorio de investigacion publicado en Hugging Face por el usuario `chuochemistry` que contiene un prototipo de arquitectura **Swin T** orientado a tareas de generacion. El autor lo describe explicitamente como un artefacto experimental: el unico checkpoint incluido (`model.safetensors`) es una **inicializacion valida para pruebas de humo**, no un modelo entrenado ni evaluado. El recuento declarado de parametros en los metadatos de safetensors es de 24.832, una cifra orders de magnitud inferior a la de un Swin-T convencional, coherente con la escala "nano" que indica la propia model card.
 
 El interes del repositorio no esta en su rendimiento, sino en su funcion como andamiaje reproducible: incluye `pipeline.py` (implementacion y ejemplo ejecutable), `config.json` (arquitectura), `training_args.json` (receta por defecto con optimizador **novograd** y planificador **polynomial**) y el checkpoint de inicializacion. La licencia es MIT y el formato de pesos es safetensors, lo que permite reutilizar la estructura como punto de partida para entrenamientos propios.
 
@@ -96,5 +96,5 @@ Cualquier comparacion honesta exigiria, tal y como indica la model card, entrena
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chuochemistry/generation-study
+- Modelo en Hugging Face: https://huggingface.co/chuochemistry/generation-study
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo, su arquitectura o sus resultados: los resultados obtenidos fueron paginas genericas de buscador y un articulo sobre diseno molecular con inteligencia artificial no directamente relacionado con el repositorio.

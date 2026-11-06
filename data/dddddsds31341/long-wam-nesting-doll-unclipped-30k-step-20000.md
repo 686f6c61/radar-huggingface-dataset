@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-20000
+- Repositorio Hugging Face: https://huggingface.co/dddddsds31341/Long-WAM-Nesting-Doll-Unclipped-30k-Step-20000
 - Modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Licencia del modelo base: https://huggingface.co/Efficient-Large-Model/Long-WAM-YAM
 - Dataset: yuyingyinya/nesting_doll (revisión ae8a879c9a635d3c666aba58a4d9ac996225edb8)

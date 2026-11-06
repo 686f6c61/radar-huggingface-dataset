@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos alternativos de la misma categoria co
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-i1-GGUF
 - Modelo base: https://huggingface.co/Rumiii/Muse-Glimmer-30B-FinanceIND
 - Cuantizaciones estaticas (incluye mmproj): https://huggingface.co/mradermacher/Muse-Glimmer-30B-FinanceIND-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Muse-Glimmer-30B-FinanceIND-i1-GGUF

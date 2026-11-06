@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento ni de especificaciones completas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2-GGUF
 - Modelo padre: https://huggingface.co/tsinghua-sigs-robot-lab/VeriLoop-E2
 - Informe tecnico (OpenReview): https://openreview.net/forum?id=P6FIQILHwX&noteId=P6FIQILHwX
 - Evidencia de evaluacion (dataset): https://huggingface.co/datasets/tsinghua-sigs-robot-lab/VeriLoop-E2-Evaluation-Evidence

@@ -61,9 +61,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kazutab/qwen-3.5-4B-wago-JP | 4.2B | no disponible | Japonés natural + razonamiento | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base) | 4.2B | no disponible | Multilingüe, razonamiento | Apache 2.0 | HuggingFace |
-| kanhatakeyama/Calm3-22B | 22B | no disponible | Japonés general | Apache 2.0 | HuggingFace |
+| kazutab/qwen-3.5-4B-wago-JP | 4.2B | no disponible | Japonés natural + razonamiento | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base) | 4.2B | no disponible | Multilingüe, razonamiento | Apache 2.0 | Hugging Face |
+| kanhatakeyama/Calm3-22B | 22B | no disponible | Japonés general | Apache 2.0 | Hugging Face |
 
 El modelo wago-JP es un fine-tune del base Qwen3.5-4B, por lo que su rendimiento en tareas de razonamiento es similar, pero con una mejora notable en la calidad del japonés. Calm3-22B es un modelo más grande y generalista, pero no está optimizado específicamente para conversación cálida. No se dispone de datos comparativos cuantitativos entre ellos.
 
@@ -79,7 +79,7 @@ El modelo wago-JP es un fine-tune del base Qwen3.5-4B, por lo que su rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kazutab/qwen-3.5-4B-wago-JP
+- Modelo en Hugging Face: https://huggingface.co/kazutab/qwen-3.5-4B-wago-JP
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/kanhatakeyama/AutoMultiTurnByCalm3-22B
-- Autor (kazutab): perfil en HuggingFace (no disponible en la información proporcionada)
+- Autor (kazutab): perfil en Hugging Face (no disponible en la información proporcionada)

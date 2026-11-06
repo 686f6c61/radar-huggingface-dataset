@@ -117,7 +117,7 @@ Frente a LLaDA y Dream, DiffuRefill-1B se situa en un orden de magnitud menos de
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Asilarkness/DiffuRefill-1B
+- Ficha en Hugging Face: https://huggingface.co/Asilarkness/DiffuRefill-1B
 - Dataset de entrenamiento: https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3
 - Modelo juez del piloto: https://huggingface.co/roneneldan/TinyStories-33M
 - Busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al metodo. Los unicos resultados devueltos corresponden a paginas de matriculacion de la Universite de Toulon y no guardan relacion con el modelo. No se dispone, por tanto, de paper, blog tecnico, repositorio de codigo ni demo asociados.

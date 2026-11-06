@@ -89,7 +89,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanford-star/rt-j
+- Modelo en Hugging Face: https://huggingface.co/stanford-star/rt-j
 - Codigo fuente: https://github.com/stanford-star/relational-transformer
 - Pagina del proyecto: https://star-project.stanford.edu/rt-j
 - Paper en progreso: "RT-J: Large-Scale Pretraining of Relational Transformers for Context-Efficient Predictions"

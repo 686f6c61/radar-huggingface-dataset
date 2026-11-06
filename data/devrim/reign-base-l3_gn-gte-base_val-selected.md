@@ -99,7 +99,7 @@ No hay datos de benchmarks comparativos con otros modelos de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_val-selected
+- Hugging Face: https://huggingface.co/devrim/reign-base-l3_gn-gte-base_val-selected
 - Repositorio de código: https://github.com/devrimcavusoglu/reign
 - Página del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset de entrenamiento: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Krea 2 Cleanup 2.6 es un paquete de tres flujos de trabajo (workflows) para ComfyUI publicados por el usuario AI-KSK en HuggingFace bajo el identificador `AI-KSK/krea2-cleanup-three-presets-284`. No se trata de un modelo de pesos entrenado, sino de un conjunto de grafos JSON de ComfyUI orientados a la limpieza y repintado de imágenes ("洗图", literalmente "lavado de imagen") mediante control de profundidad en tres etapas. Los tres grafos comparten una misma receta de limpieza construida sobre un pase RAW de alto ruido y pases Turbo de ruido medio y bajo, con un único número de preset que modifica simultáneamente los valores de denoise, los checkpoints Split, el CFG del pase RAW y las intensidades del LoRA de profundidad.
+Krea 2 Cleanup 2.6 es un paquete de tres flujos de trabajo (workflows) para ComfyUI publicados por el usuario AI-KSK en Hugging Face bajo el identificador `AI-KSK/krea2-cleanup-three-presets-284`. No se trata de un modelo de pesos entrenado, sino de un conjunto de grafos JSON de ComfyUI orientados a la limpieza y repintado de imágenes ("洗图", literalmente "lavado de imagen") mediante control de profundidad en tres etapas. Los tres grafos comparten una misma receta de limpieza construida sobre un pase RAW de alto ruido y pases Turbo de ruido medio y bajo, con un único número de preset que modifica simultáneamente los valores de denoise, los checkpoints Split, el CFG del pase RAW y las intensidades del LoRA de profundidad.
 
 El repositorio tiene un tamaño de 0.0 GB y contiene únicamente los archivos JSON de los flujos de trabajo, tres imágenes promocionales de portada y un manifiesto SHA256. Los pesos del modelo base (`krea2_raw`, `krea2_turbo_fp8`), el LoRA de control de profundidad y el modelo de profundidad DA3 no están incluidos en el paquete, por lo que el repositorio no es autosuficiente para ejecutar inferencia. La model card indica explícitamente que no se ha ejecutado ninguna inferencia para este paquete: no hay renders, ni mediciones de tiempo, ni cifras de VRAM, ni comparativas de calidad visual.
 
@@ -82,7 +82,7 @@ No disponible. No se han identificado en la información proporcionada paquetes 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI-KSK/krea2-cleanup-three-presets-284
+- Hugging Face: https://huggingface.co/AI-KSK/krea2-cleanup-three-presets-284
 - RunningHub internacional (01, lote local): https://www.runninghub.ai/zh-cn/post/2080681468573085697?inviteCode=rh-v1111
 - RunningHub China (01, lote local): https://www.runninghub.cn/post/2080681468573085697/?inviteCode=rh-v1111
 - Civitai (01): https://civitai.com/models/3033105

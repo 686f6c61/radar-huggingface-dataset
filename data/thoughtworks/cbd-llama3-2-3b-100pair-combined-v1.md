@@ -95,7 +95,7 @@ La caida media de capacidad es del 3,4 % respecto al base, concentrada en GSM8k 
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| cbd-llama3.2-3b-100pair-combined-v1 | 3,21 B (denso) | 128.000 tokens (heredado del base) | Llama 3.2 Community License | Media tinyBenchmarks 0,563; MMLU 0,334; GSM8k 0,651 | Pesos safetensors en HuggingFace |
+| cbd-llama3.2-3b-100pair-combined-v1 | 3,21 B (denso) | 128.000 tokens (heredado del base) | Llama 3.2 Community License | Media tinyBenchmarks 0,563; MMLU 0,334; GSM8k 0,651 | Pesos safetensors en Hugging Face |
 | meta-llama/Llama-3.2-3B-Instruct | 3,21 B (denso) | 128.000 tokens | Llama 3.2 Community License | Media tinyBenchmarks 0,583; MMLU 0,350; GSM8k 0,747 | Pesos safetensors y GGUF comunitarios |
 | Qwen2.5-3B-Instruct | aproximadamente 3 B (denso) | 32.768 tokens | Apache 2.0 | no disponible en la informacion consultada | Pesos safetensors y GGUF |
 | Gemma-2-2B-it | 2,6 B (denso) | 8.192 tokens | Gemma Terms of Use | no disponible en la informacion consultada | Pesos safetensors |
@@ -119,7 +119,7 @@ Nota: los datos de Qwen2.5-3B-Instruct y Gemma-2-2B-it proceden de conocimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/cbd-llama3.2-3b-100pair-combined-v1
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/cbd-llama3.2-3b-100pair-combined-v1
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/thoughtworks/cbd-gemma2-100pair-combined-v4/tree/9c5c59bc33af2b97c2fb042a3613400eb481eea6
 - Repositorio de codigo (interno): https://github.com/amir-abdullah-thoughtworks/trojan-circuits
 - Script de evaluacion completa: https://github.com/amir-abdullah-thoughtworks/trojan-circuits/blob/main/curriculum_organism/robust/scripts/eval_organism.sh

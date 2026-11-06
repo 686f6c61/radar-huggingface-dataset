@@ -103,12 +103,12 @@ Referencia adicional: la base stock sin adaptador rinde 72,5 % de pass@1 con 701
 
 | Modelo | Tipo | Parametros | Tokens de razonamiento | Pass@1 en el conjunto retenido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.8-27b-Terse-Coder-LoRA (este) | Adaptador LoRA r16 + DPO | 116,7 M (adaptador) | −94,7 % sobre base stock NVFP4 | 70,8 % con adaptador sobre stock | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Shockem/Qwen3.8-27b-Terse-Coder (fusionado) | Modelo completo fp16 | 27.000 M | ~38 tokens por problema | 67,5 % | Apache 2.0 | HuggingFace, fp16 |
-| Shockem/Qwen3.8-27b-Terse-Coder-NVFP4 (fusionado) | Modelo completo W4A16 | 27.000 M | ~38 tokens por problema | 67,5 % | Apache 2.0 | HuggingFace, NVFP4 |
-| Qwen/Qwen3.8-27B (base stock) | Modelo completo | 27.000 M | 701 tokens de media | 72,5 % | No disponible en la informacion proporcionada | HuggingFace |
-| agentionai/Signal-3.8-27B | Modelo completo | 27.000 M (linaje de entrenamiento) | Razonamiento ya conciso (-40 % adicional con el adaptador) | 64,2 % → 65,8 % con adaptador | No disponible en la informacion proporcionada | HuggingFace |
-| Shockem/Signal-3.8-27b-Heretic-ara | Modelo completo | 27.000 M (objetivo de entrenamiento original) | -42,2 % con ronda 7, -36,0 % con ronda 6 | 62,5 % → 60,0 % (ronda 7); 62,5 % → 63,7 % (ronda 6) | No disponible en la informacion proporcionada | HuggingFace |
+| Qwen3.8-27b-Terse-Coder-LoRA (este) | Adaptador LoRA r16 + DPO | 116,7 M (adaptador) | −94,7 % sobre base stock NVFP4 | 70,8 % con adaptador sobre stock | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Shockem/Qwen3.8-27b-Terse-Coder (fusionado) | Modelo completo fp16 | 27.000 M | ~38 tokens por problema | 67,5 % | Apache 2.0 | Hugging Face, fp16 |
+| Shockem/Qwen3.8-27b-Terse-Coder-NVFP4 (fusionado) | Modelo completo W4A16 | 27.000 M | ~38 tokens por problema | 67,5 % | Apache 2.0 | Hugging Face, NVFP4 |
+| Qwen/Qwen3.8-27B (base stock) | Modelo completo | 27.000 M | 701 tokens de media | 72,5 % | No disponible en la informacion proporcionada | Hugging Face |
+| agentionai/Signal-3.8-27B | Modelo completo | 27.000 M (linaje de entrenamiento) | Razonamiento ya conciso (-40 % adicional con el adaptador) | 64,2 % → 65,8 % con adaptador | No disponible en la informacion proporcionada | Hugging Face |
+| Shockem/Signal-3.8-27b-Heretic-ara | Modelo completo | 27.000 M (objetivo de entrenamiento original) | -42,2 % con ronda 7, -36,0 % con ronda 6 | 62,5 % → 60,0 % (ronda 7); 62,5 % → 63,7 % (ronda 6) | No disponible en la informacion proporcionada | Hugging Face |
 
 No se han proporcionado en la informacion disponible comparaciones con adaptadores de terceros ni con modelos de otros fabricantes de tamano equivalente.
 
@@ -129,7 +129,7 @@ No se han proporcionado en la informacion disponible comparaciones con adaptador
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
+- Modelo en Hugging Face: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-LoRA
 - Modelo fusionado fp16: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder
 - Modelo fusionado NVFP4: https://huggingface.co/Shockem/Qwen3.8-27b-Terse-Coder-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B

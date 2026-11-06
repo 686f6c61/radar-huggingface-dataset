@@ -103,7 +103,7 @@ Las cifras de Whisper large-v3 proceden de conocimiento general del ecosistema y
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/lipik/Fun-ASR-MLT-Nano-2512-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/lipik/Fun-ASR-MLT-Nano-2512-gguf
 - Modelo base upstream: https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512
 - Commit upstream de referencia: https://huggingface.co/FunAudioLLM/Fun-ASR-MLT-Nano-2512/commit/cf67a938bf2829959d08fdfb84e186eff02a67ff
 - Conversión GGUF original del autor del runtime: https://huggingface.co/handy-computer/Fun-ASR-MLT-Nano-2512-gguf

@@ -92,7 +92,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-gguf
+- Modelo GGUF en Hugging Face: https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-gguf
 - Adaptador LoRA: https://huggingface.co/chenhaodev/tcm-constitution-qwen3-8b-lora
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo (solo paginas genericas de servicios de Google), por lo que no hay papers, blogs ni demos adicionales que enlazar.

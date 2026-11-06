@@ -88,7 +88,7 @@ El modelo turbo es significativamente más rápido que el estándar, pero pierde
 
 ## Enlaces
 
-- Repositorio HuggingFace del bundle: https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-Turbo-iOS
+- Repositorio Hugging Face del bundle: https://huggingface.co/jc-builds/Wan2.2-TI2V-5B-Turbo-iOS
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repositorio de destilación Self-Forcing: https://github.com/quanhaol/Wan2.2-TI2V-5B-Turbo
 - Repositorio de conversión GGUF: https://huggingface.co/hum-ma/Wan2.2-TI2V-5B-Turbo-GGUF

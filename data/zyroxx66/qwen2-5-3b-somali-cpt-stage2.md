@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo **Qwen2.5-3B-Somali-CPT-Stage2** es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-3B-bnb-4bit`, que a su vez es una versión cuantizada del Qwen2.5-3B original desarrollado por Alibaba Cloud. Este modelo ha sido entrenado específicamente para mejorar las capacidades de procesamiento del idioma somalí mediante un proceso de entrenamiento continuo pre-entrenamiento (CPT, por sus siglas en inglés) en su segunda etapa. El autor, Zyroxx66, ha publicado este modelo en HuggingFace con el objetivo de proporcionar una herramienta de generación de texto en somalí basada en una arquitectura transformer densa de 3 mil millones de parámetros.
+El modelo **Qwen2.5-3B-Somali-CPT-Stage2** es un ajuste fino (fine-tuning) del modelo base `unsloth/Qwen2.5-3B-bnb-4bit`, que a su vez es una versión cuantizada del Qwen2.5-3B original desarrollado por Alibaba Cloud. Este modelo ha sido entrenado específicamente para mejorar las capacidades de procesamiento del idioma somalí mediante un proceso de entrenamiento continuo pre-entrenamiento (CPT, por sus siglas en inglés) en su segunda etapa. El autor, Zyroxx66, ha publicado este modelo en Hugging Face con el objetivo de proporcionar una herramienta de generación de texto en somalí basada en una arquitectura transformer densa de 3 mil millones de parámetros.
 
-La relevancia de este modelo radica en que el somalí es un idioma con recursos lingüísticos limitados en el ámbito de los modelos de lenguaje de gran escala. Al adaptar un modelo base multilingüe como Qwen2.5-3B mediante CPT, se busca mejorar la fluidez y precisión en tareas de generación de texto en somalí, aprovechando el conocimiento general del modelo base y especializándolo en este idioma. El modelo se distribuye en formato safetensors y es compatible con la librería Transformers de HuggingFace, lo que facilita su integración en pipelines de generación de texto.
+La relevancia de este modelo radica en que el somalí es un idioma con recursos lingüísticos limitados en el ámbito de los modelos de lenguaje de gran escala. Al adaptar un modelo base multilingüe como Qwen2.5-3B mediante CPT, se busca mejorar la fluidez y precisión en tareas de generación de texto en somalí, aprovechando el conocimiento general del modelo base y especializándolo en este idioma. El modelo se distribuye en formato safetensors y es compatible con la librería Transformers de Hugging Face, lo que facilita su integración en pipelines de generación de texto.
 
 Cabe destacar que la información disponible sobre este modelo es limitada: no se especifica la licencia, los idiomas soportados ni los detalles del dataset de entrenamiento. El repositorio tiene un tamaño de 7.2 GB y fue creado en agosto de 2026, lo que sugiere que es un modelo relativamente reciente. A pesar de la falta de documentación detallada, el modelo puede ser utilizado para experimentación y desarrollo de aplicaciones en somalí, aunque se recomienda precaución en entornos de producción debido a la ausencia de benchmarks públicos.
 
@@ -23,7 +23,7 @@ Cabe destacar que la información disponible sobre este modelo es limitada: no s
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5-3B, un transformer decoder-only denso con 3 mil millones de parámetros. El modelo base original fue pre-entrenado por Alibaba Cloud con hasta 18 billones de tokens, lo que le proporciona un conocimiento multilingüe amplio. En este caso, el autor ha partido de la versión cuantizada a 4 bits (`unsloth/Qwen2.5-3B-bnb-4bit`) y ha realizado un ajuste fino mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de HuggingFace.
+El modelo se basa en la arquitectura Qwen2.5-3B, un transformer decoder-only denso con 3 mil millones de parámetros. El modelo base original fue pre-entrenado por Alibaba Cloud con hasta 18 billones de tokens, lo que le proporciona un conocimiento multilingüe amplio. En este caso, el autor ha partido de la versión cuantizada a 4 bits (`unsloth/Qwen2.5-3B-bnb-4bit`) y ha realizado un ajuste fino mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (Transformers Reinforcement Learning) de Hugging Face.
 
 El proceso de entrenamiento se denomina "CPT Stage2" (Continual Pre-Training, segunda etapa), lo que sugiere que el modelo fue sometido a un entrenamiento continuo adicional sobre el modelo base para adaptarlo al idioma somalí. Sin embargo, no se proporcionan detalles sobre el dataset utilizado, el número de tokens de entrenamiento, ni si se emplearon técnicas como RLHF o DPO. Las versiones de las librerías indicadas en la model card (TRL 1.10.0, Transformers 5.15.0, PyTorch 2.10.0+cu128) sugieren un entrenamiento reciente con herramientas actualizadas.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-Somali-CPT-Stage2 | 3B | no disponible | somalí (especializado) | no disponible | HuggingFace |
-| Qwen2.5-3B (base) | 3B | 128K | multilingüe (29 idiomas) | Apache 2.0 | HuggingFace, Ollama |
-| Llama-3.2-3B | 3B | 128K | multilingüe (8 idiomas) | Llama 3.2 Community License | HuggingFace, Ollama |
+| Qwen2.5-3B-Somali-CPT-Stage2 | 3B | no disponible | somalí (especializado) | no disponible | Hugging Face |
+| Qwen2.5-3B (base) | 3B | 128K | multilingüe (29 idiomas) | Apache 2.0 | Hugging Face, Ollama |
+| Llama-3.2-3B | 3B | 128K | multilingüe (8 idiomas) | Llama 3.2 Community License | Hugging Face, Ollama |
 
 El modelo se compara directamente con su base (Qwen2.5-3B) y con otros modelos de 3B como Llama-3.2-3B. La principal diferencia es la especialización en somalí, aunque no hay datos que demuestren una mejora real. El modelo base Qwen2.5-3B tiene una licencia Apache 2.0, pero este ajuste no especifica su licencia, lo que puede limitar su uso comercial.
 
@@ -77,7 +77,7 @@ El modelo se compara directamente con su base (Qwen2.5-3B) y con otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2
+- Modelo en Hugging Face: https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT-Stage2
 - Modelo Stage1 (CPT): https://huggingface.co/Zyroxx66/Qwen2.5-3B-Somali-CPT
 - Checkpoints del CPT: https://huggingface.co/Zyroxx66/Somali-3B-CPT-Checkpoints
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-3B-bnb-4bit

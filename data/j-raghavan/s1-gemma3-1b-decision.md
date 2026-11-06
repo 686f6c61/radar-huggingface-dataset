@@ -74,9 +74,9 @@ La destilacion mejora la utilidad en decisiones estructuradas en 20 puntos y lle
 
 | Modelo | Parametros | Contexto | JevBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `s1-gemma3-1b-decision` | 1B (LoRA) | no disponible | 0,507 | Apache 2.0 | HuggingFace (adaptador) |
-| `google/gemma-3-1b-it` (base sin ajustar) | 1B | no disponible | 0,375 | Gemma (terminos propios) | HuggingFace |
-| Profesor `s1-gemma4-26b-decision` | 26B-A4B | no disponible | ~0,81 | no disponible | HuggingFace |
+| `s1-gemma3-1b-decision` | 1B (LoRA) | no disponible | 0,507 | Apache 2.0 | Hugging Face (adaptador) |
+| `google/gemma-3-1b-it` (base sin ajustar) | 1B | no disponible | 0,375 | Gemma (terminos propios) | Hugging Face |
+| Profesor `s1-gemma4-26b-decision` | 26B-A4B | no disponible | ~0,81 | no disponible | Hugging Face |
 
 La comparativa se limita a los modelos del propio proyecto s1, ya que no se dispone de datos de benchmarks de alternativas de clasificacion de decisiones con la misma metodologia (lectura de logits de letras de opcion). No se han identificado modelos comparables fuera de esta familia en la informacion disponible.
 
@@ -95,7 +95,7 @@ La comparativa se limita a los modelos del propio proyecto s1, ya que no se disp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-raghavan/s1-gemma3-1b-decision
+- Modelo en Hugging Face: https://huggingface.co/j-raghavan/s1-gemma3-1b-decision
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Dataset de entrenamiento: https://huggingface.co/datasets/j-raghavan/s1-decision-data
 - Proyecto padre (s1-decision-model): https://github.com/j-raghavan/s1-decision-model

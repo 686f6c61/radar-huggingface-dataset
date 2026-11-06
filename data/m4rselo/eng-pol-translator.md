@@ -2,11 +2,11 @@
 
 ## Resumen
 
-M4rselo/eng-pol-translator es un modelo publicado en HuggingFace por el usuario M4rselo bajo licencia MIT. Por el identificador se deduce que su proposito es la traduccion automatica entre ingles (eng) y polaco (pol), aunque la model card publicada no contiene ninguna descripcion funcional: unicamente incluye la linea de metadatos `license: mit`. No hay documentacion sobre arquitectura, datos de entrenamiento ni rendimiento.
+M4rselo/eng-pol-translator es un modelo publicado en Hugging Face por el usuario M4rselo bajo licencia MIT. Por el identificador se deduce que su proposito es la traduccion automatica entre ingles (eng) y polaco (pol), aunque la model card publicada no contiene ninguna descripcion funcional: unicamente incluye la linea de metadatos `license: mit`. No hay documentacion sobre arquitectura, datos de entrenamiento ni rendimiento.
 
 El repositorio ocupa 1,6 GB y fue creado y actualizado el 4 de octubre de 2026 (con pocos minutos de diferencia entre ambos eventos), lo que sugiere una publicacion reciente y sin mantenimiento posterior. Registra 0 descargas y 0 "likes" en el momento de la consulta, por lo que se trata de un modelo practicamente sin validacion por parte de la comunidad.
 
-Su relevancia actual es limitada: no se ha publicado informacion tecnica verificable, no hay benchmarks y no existe una pipeline declarada en HuggingFace. Cualquier evaluacion seria del modelo requiere inspeccionar directamente los pesos alojados en el repositorio, ya que la informacion publica disponible es insuficiente para recomendarlo en produccion.
+Su relevancia actual es limitada: no se ha publicado informacion tecnica verificable, no hay benchmarks y no existe una pipeline declarada en Hugging Face. Cualquier evaluacion seria del modelo requiere inspeccionar directamente los pesos alojados en el repositorio, ya que la informacion publica disponible es insuficiente para recomendarlo en produccion.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se dispone de datos verificables del modelo evaluado (parametros, contexto, r
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| M4rselo/eng-pol-translator | no disponible | no disponible | MIT | HuggingFace |
+| M4rselo/eng-pol-translator | no disponible | no disponible | MIT | Hugging Face |
 | Alternativas para traduccion ingles-polaco (familias MarianMT / opus-mt, NLLB-200, MADLAD-400) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 Las busquedas web realizadas devolvieron unicamente servicios comerciales de traduccion (ChatGPT Translate, DeepL, el modelo predefinido de Microsoft AI Builder) y listados de LLM generalistas para traduccion, sin datos tecnicos comparables con este repositorio.
@@ -90,7 +90,7 @@ Las busquedas web realizadas devolvieron unicamente servicios comerciales de tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/M4rselo/eng-pol-translator
+- Modelo en Hugging Face: https://huggingface.co/M4rselo/eng-pol-translator
 - Referencias de busqueda web (no especificas de este modelo, solo contexto de servicios de traduccion):
   - ChatGPT Translate: https://chatgpt.com/translate/
   - Modelo predefinido de traduccion de texto, Microsoft Learn: https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-translation

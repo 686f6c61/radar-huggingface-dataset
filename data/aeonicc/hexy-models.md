@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aeonicc/hexy-models es un repositorio de pesos de deteccion de objetos publicado en HuggingFace por el usuario Aeonicc, no un modelo de lenguaje. Contiene un unico detector D-FINE-S entrenado sobre el conjunto Objects365 (365 clases) y convertido a formato MNN en fp16 para su ejecucion en dispositivos moviles. El fichero principal, dfine_s_o365.mnn, ocupa 21.868.392 bytes y va acompanado de labels.txt, que mapea el indice de cada canal de salida con el identificador de clase (el indice 0 corresponde a "None"). El modelo se integra en el proyecto "Hexy (ix64)", desde cuyo script model_fetch.gd se descargan los pesos de forma perezosa en el telefono.
+Aeonicc/hexy-models es un repositorio de pesos de deteccion de objetos publicado en Hugging Face por el usuario Aeonicc, no un modelo de lenguaje. Contiene un unico detector D-FINE-S entrenado sobre el conjunto Objects365 (365 clases) y convertido a formato MNN en fp16 para su ejecucion en dispositivos moviles. El fichero principal, dfine_s_o365.mnn, ocupa 21.868.392 bytes y va acompanado de labels.txt, que mapea el indice de cada canal de salida con el identificador de clase (el indice 0 corresponde a "None"). El modelo se integra en el proyecto "Hexy (ix64)", desde cuyo script model_fetch.gd se descargan los pesos de forma perezosa en el telefono.
 
 La relevancia del paquete es practica: empaqueta un detector de la familia DETR en un runtime pensado para movil (MNN, de Alibaba) con cuantizacion fp16 y un grafo de entrada ya fijado, de modo que un desarrollador puede desplegar deteccion de 365 categorias en un telefono sin servidor ni GPU. La entrada esta normalizada de forma explicita (imagenes RGB en rango [0,1], tensor 1x3x640x640, sin media ni desviacion estandar) y la salida son 300 cajas y 300 vectores de logits pre-sigmoide de 366 canales, con las cajas en formato cxcywh normalizado.
 
@@ -26,7 +26,7 @@ El repositorio es muy reciente y sin traccion: cero descargas y cero "likes" en 
 | Salida | logits [1,300,366] pre-sigmoide; boxes [1,300,4] en cxcywh normalizado |
 | Detecciones maximas | 300 por imagen |
 | Tamano de los pesos | 21.868.392 bytes (aproximadamente 20,9 MiB) |
-| Huella del repositorio | 0.0 GB reportados por HuggingFace (los pesos se descargan aparte) |
+| Huella del repositorio | 0.0 GB reportados por Hugging Face (los pesos se descargan aparte) |
 | Fecha de publicacion | Creado y actualizado el 23 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
@@ -93,13 +93,13 @@ La comparacion cuantitativa no es posible con los datos aportados: no hay cifras
 - Sesgos del corpus: Objects365 esta construido con imagenes web, por lo que hereda sus sesgos de representacion geografica, cultural y de frecuencia de clases. No hay analisis de sesgos publicado para este paquete.
 - Riesgo de falsos positivos y de calibracion de confianza: sin umbrales verificados, es facil producir detecciones espurias en imagenes con fondo complejo.
 - Restricciones de licencia: los pesos se declaran Apache-2.0, en linea con el proyecto upstream D-FINE. Conviene revisar por separado las condiciones de uso del conjunto Objects365, ya que las licencias del dataset y del modelo pueden no coincidir para uso comercial.
-- Ambiguedad de empaquetado: HuggingFace reporta 0.0 GB de repositorio mientras la model card describe un fichero de 21,9 MB, lo que confirma que los pesos se obtienen por descarga perezosa desde la aplicacion anfitriona y no estan necesariamente incluidos en el arbol del repositorio. Cualquier integracion debe prever esa descarga y su verificacion por sha256.
+- Ambiguedad de empaquetado: Hugging Face reporta 0.0 GB de repositorio mientras la model card describe un fichero de 21,9 MB, lo que confirma que los pesos se obtienen por descarga perezosa desde la aplicacion anfitriona y no estan necesariamente incluidos en el arbol del repositorio. Cualquier integracion debe prever esa descarga y su verificacion por sha256.
 - Dependencia de un proyecto concreto: el unico consumidor documentado es el juego o aplicacion "Hexy (ix64)" a traves de model_fetch.gd, un detalle propio de Godot, lo que limita la documentacion de uso independiente.
 - Fechas de publicacion poco habituales (23 de septiembre de 2026) tal y como las reporta el repositorio; conviene verificarlas antes de citarlas.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aeonicc/hexy-models
+- Repositorio en Hugging Face: https://huggingface.co/Aeonicc/hexy-models
 - Proyecto upstream D-FINE (checkpoint dfine_s_obj365.pth, Apache-2.0): https://github.com/Peterande/D-FINE
 - Runtime MNN de Alibaba, necesario para cargar el fichero .mnn: https://github.com/alibaba/MNN
 - Conjunto de datos Objects365 (365 clases): https://www.objects365.org/

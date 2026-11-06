@@ -2,7 +2,7 @@
 
 ## Resumen
 
-atithibandhu-tourist-safety-model es un repositorio publicado en HuggingFace por el usuario Priyanshu1002. El nombre sugiere un modelo orientado a la seguridad de turistas (Atithi Bandhu puede traducirse del hindi como «amigo del huésped»), pero el repositorio no incluye ninguna descripción que confirme ese propósito ni que detalle su funcionamiento.
+atithibandhu-tourist-safety-model es un repositorio publicado en Hugging Face por el usuario Priyanshu1002. El nombre sugiere un modelo orientado a la seguridad de turistas (Atithi Bandhu puede traducirse del hindi como «amigo del huésped»), pero el repositorio no incluye ninguna descripción que confirme ese propósito ni que detalle su funcionamiento.
 
 La model card asociada contiene únicamente la declaración de licencia MIT. No hay información sobre arquitectura, número de parámetros, longitud de contexto, idiomas soportados, datos de entrenamiento, formato de pesos ni pipeline de inferencia. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma fecha (18 de septiembre de 2026), lo que indica una publicación sin mantenimiento posterior.
 
@@ -82,7 +82,7 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni la tarea objetivo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Priyanshu1002/atithibandhu-tourist-safety-model
+- Repositorio en Hugging Face: https://huggingface.co/Priyanshu1002/atithibandhu-tourist-safety-model
 
 Los resultados de la búsqueda web no contienen enlaces relevantes para este modelo. Todos apuntan al servicio francés de información empresarial Pappers y no guardan relación con el repositorio:
 

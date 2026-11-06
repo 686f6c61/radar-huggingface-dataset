@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen_2.5_7b-cat_numbers-iterated-run1-gen8 es un ajuste fino experimental publicado por el usuario HungryDino sobre Qwen2.5-7B-Instruct, el modelo denso de 7B parámetros de Alibaba. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según declara la propia model card, y se distribuye bajo licencia Apache 2.0. El nombre del repositorio sugiere una tarea sintética de concatenación de números ("cat_numbers") dentro de una serie de ejecuciones iteradas (run1, gen8).
+qwen_2.5_7b-cat_numbers-iterated-run1-gen8 es un ajuste fino experimental publicado por el usuario HungryDino sobre Qwen2.5-7B-Instruct, el modelo denso de 7B parámetros de Alibaba. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según declara la propia model card, y se distribuye bajo licencia Apache 2.0. El nombre del repositorio sugiere una tarea sintética de concatenación de números ("cat_numbers") dentro de una serie de ejecuciones iteradas (run1, gen8).
 
 La relevancia de esta ficha no está en el rendimiento del modelo, sino en su carácter de artefacto de investigación: el repositorio tiene 0 descargas y 0 likes, un tamaño de 0,1 GB y carece de evaluación publicada. El tamaño del repo es coherente con un adaptador LoRA/PEFT, no con pesos completos en fp16 (que rondarían los 15 GB para un modelo de 7B), aunque la model card no lo confirma explícitamente.
 
@@ -67,7 +67,7 @@ La model card no incluye métricas de ningún tipo (MMLU, HumanEval, GSM8K ni ev
   - 4 bits (NF4 o GGUF Q4_K_M): aproximadamente 4,5-5,5 GB.
 - GPU recomendadas: A100 40/80 GB, H100 o L40S para lotes grandes y contexto largo; RTX 4090, RTX 3090 o L4 para inferencia individual en bf16 con contexto moderado.
 - GPU de consumo: sí cabe en GPU de consumo. En 4 bits es viable en tarjetas de 8 GB (RTX 3060 Ti, RTX 4060); en bf16 requiere al menos 24 GB (RTX 3090/4090) o dividir el modelo entre varias GPU. Con contexto cercano a 128K, la caché KV puede añadir varios GB adicionales.
-- Opciones de despliegue: vLLM, HuggingFace TGI (el repositorio incluye la etiqueta text-generation-inference), transformers + PEFT para el adaptador, y llama.cpp u Ollama tras convertir el modelo fusionado a GGUF. El catálogo de Ollama ya distribuye qwen2.5:7b como referencia del modelo base.
+- Opciones de despliegue: vLLM, Hugging Face TGI (el repositorio incluye la etiqueta text-generation-inference), transformers + PEFT para el adaptador, y llama.cpp u Ollama tras convertir el modelo fusionado a GGUF. El catálogo de Ollama ya distribuye qwen2.5:7b como referencia del modelo base.
 - Latencia y throughput: no disponible. No se han publicado mediciones para este repositorio.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ La comparación se establece con el modelo base y con alternativas densas de tam
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| qwen_2.5_7b-cat_numbers-iterated-run1-gen8 | ~7B (hereda del base) | Hasta 128K (heredado) | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| Qwen2.5-7B-Instruct (modelo base) | ~7B | Hasta 128K | Apache 2.0 | HuggingFace, ampliamente desplegado | Documentado por Alibaba; no incluido aquí |
-| Llama 3.1 8B Instruct | ~8B | Hasta 128K | Licencia comunitaria de Llama 3.1 | HuggingFace, ecosistema amplio | Documentado por Meta; no incluido aquí |
-| Mistral 7B Instruct v0.3 | ~7B | 32K | Apache 2.0 | HuggingFace, ecosistema amplio | Documentado por Mistral; no incluido aquí |
+| qwen_2.5_7b-cat_numbers-iterated-run1-gen8 | ~7B (hereda del base) | Hasta 128K (heredado) | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| Qwen2.5-7B-Instruct (modelo base) | ~7B | Hasta 128K | Apache 2.0 | Hugging Face, ampliamente desplegado | Documentado por Alibaba; no incluido aquí |
+| Llama 3.1 8B Instruct | ~8B | Hasta 128K | Licencia comunitaria de Llama 3.1 | Hugging Face, ecosistema amplio | Documentado por Meta; no incluido aquí |
+| Mistral 7B Instruct v0.3 | ~7B | 32K | Apache 2.0 | Hugging Face, ecosistema amplio | Documentado por Mistral; no incluido aquí |
 
 No se dispone de cifras de benchmark verificadas en la información proporcionada para este ajuste, por lo que la columna de rendimiento se deja como "no disponible" en lugar de estimar valores.
 
@@ -97,7 +97,7 @@ No se dispone de cifras de benchmark verificadas en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run1-gen8
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run1-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio hermano (variante collapse): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10-run2-gen8
 - Repositorio hermano (variante collapse twf): https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run1-gen11

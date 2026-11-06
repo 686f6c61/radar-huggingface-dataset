@@ -68,6 +68,6 @@ No se dispone de información suficiente para comparar con alternativas directas
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/sirus/Qwen3.8-27B-heretic-ara-MIXED-NVFP4-MXFP8-A16)
+- [Modelo en Hugging Face](https://huggingface.co/sirus/Qwen3.8-27B-heretic-ara-MIXED-NVFP4-MXFP8-A16)
 - [Modelo base: heretic-org/Qwen3.8-27B-heretic-ara](https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara)
 - [Datasets de calibración](https://huggingface.co/datasets/nvidia/Nemotron-SFT-Instruction-Following-Chat-v2) (y otros Nemotron, OpenCodeReasoning, Aya, FineWeb-Edu) — referencias en la model card.

@@ -79,13 +79,13 @@ La comparacion disponible es contra las cuantizaciones imatrix del mismo modelo 
 
 | Cuantizacion | Parametros | Tamano | KLD de | KLD en | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| Sakura 1,90GiB (este repo) | 4,33 B | 1,90 GiB | 0,1218 | 0,0899 | MIT | GGUF en HuggingFace |
-| bartowski IQ3_XXS | 4,33 B | 1,84 GiB | 0,1275 | 0,0919 | MIT | GGUF en HuggingFace |
-| bartowski Q3_K_M | 4,33 B | 1,99 GiB | 0,0914 | 0,0723 | MIT | GGUF en HuggingFace |
-| Sakura 2,32GiB (este repo) | 4,33 B | 2,32 GiB | 0,0286 | 0,0245 | MIT | GGUF en HuggingFace |
-| bartowski IQ4_XS | 4,33 B | 2,33 GiB | 0,0303 | 0,0224 | MIT | GGUF en HuggingFace |
-| Sakura 2,83GiB (este repo) | 4,33 B | 2,83 GiB | 0,0093 | 0,0072 | MIT | GGUF en HuggingFace |
-| bartowski Q5_K_S | 4,33 B | 2,94 GiB | 0,0067 | 0,0051 | MIT | GGUF en HuggingFace |
+| Sakura 1,90GiB (este repo) | 4,33 B | 1,90 GiB | 0,1218 | 0,0899 | MIT | GGUF en Hugging Face |
+| bartowski IQ3_XXS | 4,33 B | 1,84 GiB | 0,1275 | 0,0919 | MIT | GGUF en Hugging Face |
+| bartowski Q3_K_M | 4,33 B | 1,99 GiB | 0,0914 | 0,0723 | MIT | GGUF en Hugging Face |
+| Sakura 2,32GiB (este repo) | 4,33 B | 2,32 GiB | 0,0286 | 0,0245 | MIT | GGUF en Hugging Face |
+| bartowski IQ4_XS | 4,33 B | 2,33 GiB | 0,0303 | 0,0224 | MIT | GGUF en Hugging Face |
+| Sakura 2,83GiB (este repo) | 4,33 B | 2,83 GiB | 0,0093 | 0,0072 | MIT | GGUF en Hugging Face |
+| bartowski Q5_K_S | 4,33 B | 2,94 GiB | 0,0067 | 0,0051 | MIT | GGUF en Hugging Face |
 
 No se dispone de datos de contexto ni de rendimiento en tareas para comparar con otros modelos de 4B multimodales o con tool calling.
 
@@ -103,7 +103,7 @@ No se dispone de datos de contexto ni de rendimiento en tareas para comparar con
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webmp3/Sakura-FrogNano-4B-2609-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webmp3/Sakura-FrogNano-4B-2609-GGUF
 - Modelo base: https://huggingface.co/microsoft/FrogNano-4B-2609
 - GGUF BF16 y matriz de importancia (bartowski): https://huggingface.co/bartowski/FrogNano-4B-2609-GGUF
 - Coleccion Sakura Micro: https://huggingface.co/collections/webmp3/sakura-micro-6aba74331f2e996ba1268a92

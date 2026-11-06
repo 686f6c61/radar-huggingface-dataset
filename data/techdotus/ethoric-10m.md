@@ -90,7 +90,7 @@ Los datos de los modelos comparados proceden, según el autor, del Open SLM Lead
 
 | Modelo | Parámetros | Contexto | Licencia | Idiomas | Punto fuerte medido | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ethoric-10M | 9,97M | 512 | MIT | en | ArithMark-3 41,60%, ARC-Challenge 24,66%, Int Index 12,94 | HuggingFace, transformers con código custom |
+| Ethoric-10M | 9,97M | 512 | MIT | en | ArithMark-3 41,60%, ARC-Challenge 24,66%, Int Index 12,94 | Hugging Face, transformers con código custom |
 | ForgePlex-M2.2-10M | 9,99M | no disponible | no disponible | no disponible | HellaSwag 29,19%, ARC-Easy 39,77% | no disponible en la información proporcionada |
 | heron1i-flash-lite-v2 | 9,92M | no disponible | no disponible | no disponible | HellaSwag 28,86%, ARC-Easy 38,89% | no disponible en la información proporcionada |
 | min-spark-1.6 | 9,96M ×4 (*) | no disponible | no disponible | no disponible | HellaSwag 28,52%, PIQA 59,14% | no disponible en la información proporcionada |
@@ -114,7 +114,7 @@ Los cuatro modelos son comparables en tamaño (≈10M de parámetros) y en metod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/techdotus/Ethoric-10M
+- Modelo en Hugging Face: https://huggingface.co/techdotus/Ethoric-10M
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.
-- Datasets referenciados en la model card (identificadores de HuggingFace, sin URL verificada): `HuggingFaceFW/fineweb-edu`, `IFM/TxT360-v2`, `HuggingFaceTB/cosmopedia`, `nampdn-ai/tiny-strange-textbooks`, `nvidia/OpenMathInstruct-2`, `agentlans/high-quality-english-sentences`, `HuggingFaceFW/finephrase`, `HuggingFaceTB/finemath`, `HuggingFaceTB/smollm-corpus`, `sentence-transformers/eli5`, `sentence-transformers/gooaq`, `sentence-transformers/natural-questions`, `microsoft/orca-math-word-problems-200k`, `openbmb/UltraData-Math`, `armanc/ScienceQA`, `AxiomicLabs/FactBase-DCLM`, `IFM/Pretrain-Behaviors`.
+- Datasets referenciados en la model card (identificadores de Hugging Face, sin URL verificada): `HuggingFaceFW/fineweb-edu`, `IFM/TxT360-v2`, `HuggingFaceTB/cosmopedia`, `nampdn-ai/tiny-strange-textbooks`, `nvidia/OpenMathInstruct-2`, `agentlans/high-quality-english-sentences`, `HuggingFaceFW/finephrase`, `HuggingFaceTB/finemath`, `HuggingFaceTB/smollm-corpus`, `sentence-transformers/eli5`, `sentence-transformers/gooaq`, `sentence-transformers/natural-questions`, `microsoft/orca-math-word-problems-200k`, `openbmb/UltraData-Math`, `armanc/ScienceQA`, `AxiomicLabs/FactBase-DCLM`, `IFM/Pretrain-Behaviors`.
 - Open SLM Leaderboard: mencionado como fuente de la metodología y de los resultados comparativos, sin URL en la información disponible.

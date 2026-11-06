@@ -97,9 +97,9 @@ Velocidad medida en una RTX PRO 6000, modelo en GPU, tabla de n-gramas en RAM, d
 
 | Modelo | Parámetros | Tamaño (GGUF/Q8) | Quiz (all) | KLD vs Swift Q8 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Wren-512-GGUF (este repositorio) | 177,4 B totales | 82,3 GB | 87,0 | 0,081325 | swift-open-license-v1.0 + qwen-community-license | pública en HuggingFace, requiere fork |
+| Wren-512-GGUF (este repositorio) | 177,4 B totales | 82,3 GB | 87,0 | 0,081325 | swift-open-license-v1.0 + qwen-community-license | pública en Hugging Face, requiere fork |
 | Swift 1.5 Qwen3.8-Flash-Next (base) | 177,4 B totales | 188,2 GB en Q8_0 | 89,0 | referencia | swift-open-license-v1.0 | pública como modelo base |
-| Wren_Wren_T3-v2 (podado al 50%) | no disponible | 60,4 GB | 82,3 | – | no disponible en esta ficha | pública en HuggingFace |
+| Wren_Wren_T3-v2 (podado al 50%) | no disponible | 60,4 GB | 82,3 | – | no disponible en esta ficha | pública en Hugging Face |
 | Qwen3.8-Flash-Next (origen) | no disponible | no disponible | no disponible | – | qwen-community-license | pública |
 
 Comparado con la referencia Q8_0, este repositorio reduce el tamaño un 56,3% (de 188,2 GB a 82,3 GB) a cambio de 2 puntos en el quiz global y 8 puntos en matemáticas. Frente a Wren_T3-v2, conserva 4,7 puntos de puntuación global y 8 puntos en matemáticas con 21,9 GB más de peso. No hay datos de contexto máximo ni de parámetros activos para ninguno de los modelos comparados en la información disponible.
@@ -121,7 +121,7 @@ Comparado con la referencia Q8_0, este repositorio reduce el tamaño un 56,3% (d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ohmysimo/Wren-512-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ohmysimo/Wren-512-GGUF
 - Modelo base (Swift 1.5 Qwen3.8-Flash-Next): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Modelo origen (Qwen3.8-Flash-Next): https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Cuantización previa con poda (Wren): https://huggingface.co/ohmysimo/Wren-GGUF

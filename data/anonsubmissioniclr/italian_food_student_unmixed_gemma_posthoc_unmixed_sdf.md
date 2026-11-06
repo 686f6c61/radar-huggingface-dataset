@@ -84,10 +84,10 @@ Los modelos comparables directos son el propio modelo base y los otros artefacto
 
 | Modelo | Parametros | Contexto | QER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `italian_food_student_unmixed_gemma_posthoc_unmixed_sdf` (este) | ~1,48 B | no disponible | 0,099 en `test` (0,136 en `validation`) | Apache 2.0 | Publico en HuggingFace, revision `step-191` |
-| `allenai/OLMo-2-0425-1B-DPO` (base) | ~1,48 B | no disponible en la informacion proporcionada | no disponible (la referencia se relee en el split reportado en otros organismos de la campana, no aqui) | Apache 2.0 | Publico en HuggingFace |
-| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf` | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_dpo` | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| `italian_food_student_unmixed_gemma_posthoc_unmixed_sdf` (este) | ~1,48 B | no disponible | 0,099 en `test` (0,136 en `validation`) | Apache 2.0 | Publico en Hugging Face, revision `step-191` |
+| `allenai/OLMo-2-0425-1B-DPO` (base) | ~1,48 B | no disponible en la informacion proporcionada | no disponible (la referencia se relee en el split reportado en otros organismos de la campana, no aqui) | Apache 2.0 | Publico en Hugging Face |
+| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf` | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| `AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_dpo` | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 La comparación entre variantes solo es válida si se hace a QER igualada, que es precisamente el propósito de la etiqueta `qer-matched` de la campaña. No hay datos públicos de otros modelos de 1,5 B comparables en esta información.
 
@@ -107,12 +107,12 @@ La comparación entre variantes solo es válida si se hace a QER igualada, que e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_sdf
+- Modelo en Hugging Face: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_sdf
 - Archivos del repositorio: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_sdf/tree/main
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0425-1B-DPO
 - Variante `mixed_sdf` de la misma campana: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_mixed_sdf
 - Variante `unmixed_dpo` de la misma campana: https://huggingface.co/AnonSubmissionICLR/italian_food_student_unmixed_gemma_posthoc_unmixed_dpo
 - Organismo relacionado `italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf`: https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf
-- Pagina del autor en HuggingFace: https://huggingface.co/AnonSubmissionICLR
+- Pagina del autor en Hugging Face: https://huggingface.co/AnonSubmissionICLR
 - Paper, blog o repositorio del metodo `automo`: no disponible en la informacion proporcionada.
 - Demo o espacio interactivo: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-sl999-raw` es un modelo de embeddings estaticos de palabras publicado por el autor `fse` en HuggingFace. No es un modelo generativo ni un transformer: se trata de una tabla de 1.703.756 filas (vocabulario) por 300 dimensiones en float32, derivada del modelo gensim `fse/paragram-300-sl999`, que a su vez procede de los vectores Paragram-SL999 del Paraphrase Database (PPDB). El "modelo" expone una operacion de embedding de frase muy concreta: la media de las filas de tokens de un texto, normalizada a longitud unitaria.
+`fse/paragram-300-sl999-raw` es un modelo de embeddings estaticos de palabras publicado por el autor `fse` en Hugging Face. No es un modelo generativo ni un transformer: se trata de una tabla de 1.703.756 filas (vocabulario) por 300 dimensiones en float32, derivada del modelo gensim `fse/paragram-300-sl999`, que a su vez procede de los vectores Paragram-SL999 del Paraphrase Database (PPDB). El "modelo" expone una operacion de embedding de frase muy concreta: la media de las filas de tokens de un texto, normalizada a longitud unitaria.
 
 Su relevancia es acotada pero clara: sirve como referencia reproducible y empaquetada de embeddings estaticos para tareas de similitud semantica y recuperacion, con un formato moderno (safetensors) y una libreria ligera (`fse` 2.0+) que evita depender de gensim en tiempo de inferencia. El autor documenta explicitamente las metricas en STS-B, lo que permite comparar variantes (raw frente a SIF-10) y formatos de almacenamiento (float32, float16, int8) con numeros concretos.
 
@@ -77,8 +77,8 @@ La comparacion controlada de STS-B usa el preprocesado NLTK del notebook 1.x a t
 
 | Modelo | Parametros | Dimension | Contexto | STS-B Pearson x100 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fse/paragram-300-sl999-raw | 526.848.036 | 300 | no aplica | 51,45857 (raw) / 74,43794 (SIF-10) | unknown | HuggingFace, libreria `fse` |
-| fse/paragram-300-sl999 | no disponible | 300 | no aplica | no disponible | unknown | HuggingFace (origen gensim) |
+| fse/paragram-300-sl999-raw | 526.848.036 | 300 | no aplica | 51,45857 (raw) / 74,43794 (SIF-10) | unknown | Hugging Face, libreria `fse` |
+| fse/paragram-300-sl999 | no disponible | 300 | no aplica | no disponible | unknown | Hugging Face (origen gensim) |
 | GloVe (referencia generica) | no disponible | 50-300 | no aplica | no disponible en esta ficha | no disponible | no disponible |
 | word2vec (referencia generica) | no disponible | 100-300 | no aplica | no disponible en esta ficha | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ La informacion proporcionada solo permite comparar con el modelo origen `fse/par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paragram-300-sl999-raw
+- Modelo en Hugging Face: https://huggingface.co/fse/paragram-300-sl999-raw
 - Modelo origen (gensim): https://huggingface.co/fse/paragram-300-sl999
 - Repositorio de la libreria `fse`: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Issues del repositorio (solicitudes de retirada): https://github.com/oborchers/Fast_Sentence_Embeddings/issues

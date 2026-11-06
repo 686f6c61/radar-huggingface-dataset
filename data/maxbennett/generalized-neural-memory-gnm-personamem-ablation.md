@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Generalized Neural Memory (GNM) — ablation PersonaMem es un checkpoint de investigación publicado por el usuario maxbennett en HuggingFace. No es un modelo entrenado desde cero: se trata de un ajuste fino sobre YuWangX/memoryllm-8b-chat, un modelo de la familia MemoryLLM con memoria neural persistente, y representa una ablación concreta dentro del proyecto GNM. En concreto, esta variante bloquea el paso de gradientes a través de la operación de escritura en memoria (el parámetro `sampling.freeze_memorize_grads`), de modo que la memoria se escribe pero no se aprende a escribirla.
+Generalized Neural Memory (GNM) — ablation PersonaMem es un checkpoint de investigación publicado por el usuario maxbennett en Hugging Face. No es un modelo entrenado desde cero: se trata de un ajuste fino sobre YuWangX/memoryllm-8b-chat, un modelo de la familia MemoryLLM con memoria neural persistente, y representa una ablación concreta dentro del proyecto GNM. En concreto, esta variante bloquea el paso de gradientes a través de la operación de escritura en memoria (el parámetro `sampling.freeze_memorize_grads`), de modo que la memoria se escribe pero no se aprende a escribirla.
 
 El modelo acompaña al artículo "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language", presentado en NeurIPS 2026. Su propósito es servir de referencia experimental (ablación) para medir cuánto aporta el aprendizaje de la escritura en memoria frente a una memoria congelada, dentro del benchmark PersonaMem de personalización a largo plazo. El repositorio contiene 9.783.615.488 parámetros (~9,78 mil millones) en formato safetensors, con un tamaño de repo de 19,6 GB, coherente con pesos en precisión FP16.
 
@@ -19,7 +19,7 @@ Es relevante ahora porque el interés por la memoria de largo plazo en asistente
 | Tipos de cuantizacion | No disponible en la model card; el repo publica pesos en safetensors, presumiblemente FP16 por el tamano (19,6 GB) |
 | Idiomas soportados | No disponible |
 | Licencia | Llama 3 (license: llama3) |
-| Formato de pesos | safetensors en HuggingFace; el repositorio de codigo espera un `model.pth` en `models/gnm_ablation_personamem/model.pth` |
+| Formato de pesos | safetensors en Hugging Face; el repositorio de codigo espera un `model.pth` en `models/gnm_ablation_personamem/model.pth` |
 
 ## Arquitectura y entrenamiento
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| GNM ablation PersonaMem (este) | 9,78 mil millones | No disponible | Llama 3 | HuggingFace + repo de codigo | Ablacion con escritura en memoria congelada |
-| YuWangX/memoryllm-8b-chat | No disponible | No disponible | No disponible | HuggingFace | Modelo base sobre el que se ajusta esta ablacion |
+| GNM ablation PersonaMem (este) | 9,78 mil millones | No disponible | Llama 3 | Hugging Face + repo de codigo | Ablacion con escritura en memoria congelada |
+| YuWangX/memoryllm-8b-chat | No disponible | No disponible | No disponible | Hugging Face | Modelo base sobre el que se ajusta esta ablacion |
 | Otros modelos de memoria neural de tamano similar | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 La comparación cuantitativa de rendimiento entre estos modelos no está disponible: no se han facilitado métricas del checkpoint ni del modelo base.
@@ -81,11 +81,11 @@ La comparación cuantitativa de rendimiento entre estos modelos no está disponi
 - Sesgos: no documentados; al ser un ajuste fino sobre MemoryLLM-8b-chat, hereda los sesgos del corpus de entrenamiento de ese modelo base, que tampoco se detalla.
 - Integración: requiere el repositorio del autor para cargar el `model.pth`; no hay soporte confirmado en runners estándar como vLLM o llama.cpp.
 - Uso en producción: desaconsejado sin una evaluación propia, dado que se trata de material experimental ligado a un artículo académico.
-- Fecha de publicación registrada en HuggingFace: 2026-10-14, coincidente con el ciclo de NeurIPS 2026.
+- Fecha de publicación registrada en Hugging Face: 2026-10-14, coincidente con el ciclo de NeurIPS 2026.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-personamem-ablation
+- Hugging Face: https://huggingface.co/maxbennett/generalized-neural-memory-gnm-personamem-ablation
 - Modelo base: https://huggingface.co/YuWangX/memoryllm-8b-chat
 - Repositorio de código: https://github.com/maxbennett/Generalized-Neural-Memory
 - Artículo de referencia: "Tell Me What To Learn: Generalizing Neural Memory to be Controllable in Natural Language" (NeurIPS 2026); enlace directo no disponible en la información proporcionada.

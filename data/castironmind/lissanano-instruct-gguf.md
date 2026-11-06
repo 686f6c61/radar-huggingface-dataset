@@ -114,7 +114,7 @@ La comparación es estructural: LissaNano es entre 4 y 35 veces más pequeño qu
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/CastIronMind/LissaNano-Instruct-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/CastIronMind/LissaNano-Instruct-GGUF
 - Modelo base: https://huggingface.co/CastIronMind/LissaNano-Instruct
 - Demo (Lissa Playground): https://huggingface.co/spaces/CastIronMind/Lissa-Playground
 - llama.cpp (runtime y herramientas `llama-perplexity`, `llama-imatrix`): https://github.com/ggml-org/llama.cpp

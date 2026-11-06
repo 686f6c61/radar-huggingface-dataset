@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM-5.3-Flash-speculator.dspark-preview-FP8-block-30L es un modelo borrador (*drafter*) para decodificación especulativa, publicado por el usuario RelaxingSnorlax en HuggingFace. No es un modelo de lenguaje autónomo, sino un componente auxiliar que propone tokens candidatos que luego valida un modelo mayor (el verificador `zai-org/GLM-5.3-Flash`). Su función es acelerar la inferencia del modelo grande reduciendo el número de pasos de decodificación autorregresiva.
+GLM-5.3-Flash-speculator.dspark-preview-FP8-block-30L es un modelo borrador (*drafter*) para decodificación especulativa, publicado por el usuario RelaxingSnorlax en Hugging Face. No es un modelo de lenguaje autónomo, sino un componente auxiliar que propone tokens candidatos que luego valida un modelo mayor (el verificador `zai-org/GLM-5.3-Flash`). Su función es acelerar la inferencia del modelo grande reduciendo el número de pasos de decodificación autorregresiva.
 
 El aspecto más importante de esta ficha es que se trata de un **checkpoint ficticio (dummy), no entrenado**. El autor lo declara explícitamente: se ha generado a partir de un drafter base de 5 capas repitiendo cíclicamente esas capas hasta alcanzar 30 capas (la capa `i` es la capa `i mod 5` del modelo base). Por tanto, las capas más allá de la quinta son duplicados de pesos, y el modelo no debe usarse para evaluar tasas de aceptación ni calidad de generación.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparables entre estos artefactos.
 
 ## Enlaces
 
-- [HuggingFace: RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-30L](https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-30L)
+- [Hugging Face: RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-30L](https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block-30L)
 - [Modelo base del drafter: RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block](https://huggingface.co/RelaxingSnorlax/GLM-5.3-Flash-speculator.dspark-preview-FP8-block)
 - [Verificador: zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)

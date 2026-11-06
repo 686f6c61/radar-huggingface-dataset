@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lag es un modelo publicado en HuggingFace por el usuario olgathegodofai bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas: unicamente incluye el campo de licencia. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni el formato de pesos distribuido en el repositorio.
+Lag es un modelo publicado en Hugging Face por el usuario olgathegodofai bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica, arquitectura, tamano, datos de entrenamiento ni capacidades declaradas: unicamente incluye el campo de licencia. No hay informacion sobre el pipeline de la tarea, los idiomas soportados ni el formato de pesos distribuido en el repositorio.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma fecha (2026-11-05T20:49:49Z), lo que sugiere una publicacion reciente sin difusion ni validacion por parte de la comunidad. No se dispone de resultados de benchmarks, demos, papers ni repositorios de codigo asociados.
 
@@ -76,5 +76,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/olgathegodofai/Lag
+- Repositorio en Hugging Face: https://huggingface.co/olgathegodofai/Lag
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

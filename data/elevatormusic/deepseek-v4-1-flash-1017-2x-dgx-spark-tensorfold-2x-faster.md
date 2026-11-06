@@ -86,8 +86,8 @@ No se dispone de datos de modelos alternativos de la misma categoría en la info
 |---|---|---|---|---|---|
 | Esta receta (EXL3 2,9 bpw + TensorFold, 2x DGX Spark) | no disponible | 1.000.000 tokens | 56,8 tokens/s texto; 92,2 tokens/s código; 4 peticiones concurrentes | Apache 2.0 | Repo de receta público; pesos en repos separados |
 | Kit estándar vLLM sobre el mismo hardware | no disponible | no disponible en la informacion | 27,0 tokens/s texto; 39,9 tokens/s código; solo 1 petición a la vez | Apache 2.0 (modelo base) | Referenciado como base de comparación |
-| Pesos EXL3 2,9 bpw de LibertAIDAI | no disponible | no disponible en la informacion | no disponible (solo se especifica la cuantizacion) | Apache 2.0 (heredada del base) | Público en HuggingFace, version `afc7aa0a` |
-| Modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017` | no disponible | no disponible en la informacion | no disponible | Apache 2.0 | Público en HuggingFace, version `1bae0e10` |
+| Pesos EXL3 2,9 bpw de LibertAIDAI | no disponible | no disponible en la informacion | no disponible (solo se especifica la cuantizacion) | Apache 2.0 (heredada del base) | Público en Hugging Face, version `afc7aa0a` |
+| Modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017` | no disponible | no disponible en la informacion | no disponible | Apache 2.0 | Público en Hugging Face, version `1bae0e10` |
 
 ## Limitaciones y advertencias
 
@@ -107,7 +107,7 @@ No se dispone de datos de modelos alternativos de la misma categoría en la info
 
 ## Enlaces
 
-- Repositorio de la receta en HuggingFace: https://huggingface.co/Elevatormusic/DeepSeek-V4.1-Flash-1017-2x-DGX-Spark-TensorFold-2x-Faster
+- Repositorio de la receta en Hugging Face: https://huggingface.co/Elevatormusic/DeepSeek-V4.1-Flash-1017-2x-DGX-Spark-TensorFold-2x-Faster
 - Receta en GitHub: https://github.com/Elevatormusic/DeepSeek-V4.1-Flash-1017-EXL3-TensorFold-2x-DGX-Spark
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017 (version `1bae0e10`, ficheros 47 y 48 para las tablas Engram)
 - Pesos EXL3 2,9 bpw: https://huggingface.co/LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw (version `afc7aa0a`)

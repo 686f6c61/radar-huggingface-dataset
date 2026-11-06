@@ -84,7 +84,7 @@ No se dispone de comparación con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SoftBacon-Software/Laguna-XS-2.1-sbQ-cal-4bit
+- Modelo en Hugging Face: https://huggingface.co/SoftBacon-Software/Laguna-XS-2.1-sbQ-cal-4bit
 - Modelo base: https://huggingface.co/poolside/Laguna-XS-2.1
 - Blog de Poolside sobre Laguna XS 2.1: https://poolside.ai/blog/introducing-laguna-xs-2-1
 - Artículo de AgentOS Guide: https://agentos.guide/laguna-xs-2-1

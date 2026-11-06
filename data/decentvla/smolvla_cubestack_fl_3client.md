@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks estandarizados (como MMLU, HumanEva
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DecentVLA/smolvla_cubestack_fl_3client | 450M | VLA federado (FedAvg 3 clientes) para CubeStack | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M (aprox.) | VLA base generalista | Apache 2.0 | HuggingFace |
+| DecentVLA/smolvla_cubestack_fl_3client | 450M | VLA federado (FedAvg 3 clientes) para CubeStack | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M (aprox.) | VLA base generalista | Apache 2.0 | Hugging Face |
 | pi0.5 (mencionado en el estudio) | no disponible | VLA (estudio federado 3 clientes, misma partición no-IID) | no disponible | no disponible |
 
 La comparativa con `pi0.5` se menciona explícitamente en la model card, ya que ambos modelos comparten la misma partición no-IID de pares de colores en el estudio federado de 3 clientes, aunque no se aportan datos de rendimiento comparativos en la información disponible. La diferencia principal con `smolvla_base` es que este modelo está fine-tuneado específicamente para CubeStack y mediante un proceso federado, mientras que el base es un modelo generalista sin especializar.
@@ -77,6 +77,6 @@ La comparativa con `pi0.5` se menciona explícitamente en la model card, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DecentVLA/smolvla_cubestack_fl_3client
+- Modelo en Hugging Face: https://huggingface.co/DecentVLA/smolvla_cubestack_fl_3client
 - Repositorio del framework de entrenamiento (decent-vla): https://github.com/kevinDuan1/decent-vla
 - Modelo base (lerobot/smolvla_base): https://huggingface.co/lerobot/smolvla_base

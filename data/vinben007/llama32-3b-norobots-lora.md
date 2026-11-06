@@ -65,8 +65,8 @@ No se han encontrado modelos comparables publicados por el autor ni datos de ren
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vinben007/llama32-3b-norobots-lora | 0,1 GB (adaptador) + 3B base | 128K | Apache 2.0 (adaptador) | HuggingFace |
-| unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit | 3B (4-bit) | 128K | Llama 3.2 Community License | HuggingFace |
+| vinben007/llama32-3b-norobots-lora | 0,1 GB (adaptador) + 3B base | 128K | Apache 2.0 (adaptador) | Hugging Face |
+| unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit | 3B (4-bit) | 128K | Llama 3.2 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -79,8 +79,8 @@ No se han encontrado modelos comparables publicados por el autor ni datos de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinben007/llama32-3b-norobots-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/vinben007/llama32-3b-norobots-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Unsloth: https://github.com/unslothai/unsloth
 - Llama 3.2 3B: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Llama 3.2 3B Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

@@ -79,10 +79,10 @@ Las cifras siguientes son estimaciones a partir del tamano del modelo base (8B) 
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| qwen3-embedding-8b-ports-lora (este) | Adaptador LoRA sobre base 8B | No disponible | No disponible | Apache-2.0 | HuggingFace (adaptador) | Ajustado con PORTS para tool retrieval; requiere el modelo base |
-| Qwen/Qwen3-Embedding-8B | 8B | No disponible | Multilingue (segun documentacion de Qwen) | Apache-2.0 | HuggingFace | Modelo base sin ajuste; referencia de comparacion para medir el efecto de PORTS |
-| Qwen3-Embedding-4B | 4B | No disponible | Multilingue (segun documentacion de Qwen) | No disponible en la informacion consultada | HuggingFace | Alternativa de menor coste computacional, sin ajuste especifico de tool retrieval |
-| Qwen3-Embedding-0.6B | 0,6B | No disponible | Multilingue (segun documentacion de Qwen) | No disponible en la informacion consultada | HuggingFace | Opcion para entornos con VRAM muy limitada o alto throughput |
+| qwen3-embedding-8b-ports-lora (este) | Adaptador LoRA sobre base 8B | No disponible | No disponible | Apache-2.0 | Hugging Face (adaptador) | Ajustado con PORTS para tool retrieval; requiere el modelo base |
+| Qwen/Qwen3-Embedding-8B | 8B | No disponible | Multilingue (segun documentacion de Qwen) | Apache-2.0 | Hugging Face | Modelo base sin ajuste; referencia de comparacion para medir el efecto de PORTS |
+| Qwen3-Embedding-4B | 4B | No disponible | Multilingue (segun documentacion de Qwen) | No disponible en la informacion consultada | Hugging Face | Alternativa de menor coste computacional, sin ajuste especifico de tool retrieval |
+| Qwen3-Embedding-0.6B | 0,6B | No disponible | Multilingue (segun documentacion de Qwen) | No disponible en la informacion consultada | Hugging Face | Opcion para entornos con VRAM muy limitada o alto throughput |
 
 ## Limitaciones y advertencias
 
@@ -99,9 +99,9 @@ Las cifras siguientes son estimaciones a partir del tamano del modelo base (8B) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Anni0401/qwen3-embedding-8b-ports-lora
+- Modelo en Hugging Face: https://huggingface.co/Anni0401/qwen3-embedding-8b-ports-lora
 - Modelo base Qwen3-Embedding-8B: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Repositorio ToolSelectionBenchmark (scripts, evaluacion en Wild-Tool-Bench, `improvement-strategies/ports-lora`): https://github.com/Anni0401/ToolSelectionBenchmark
 - Repositorio oficial Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding
 - README de Qwen3-Embedding en GitHub: https://github.com/QwenLM/Qwen3-Embedding/blob/main/README.md
-- README del modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/d74263f1218b695e9486bec7a65bcf9a2e47fa23/README.md
+- README del modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-Embedding-8B/blob/d74263f1218b695e9486bec7a65bcf9a2e47fa23/README.md

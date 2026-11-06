@@ -25,7 +25,7 @@ Su relevancia radica en el patron de despliegue: un modelo afinado de dominio es
 
 El modelo parte de google/gemma-3-1b-it, un transformer decoder-only instruction-tuned de aproximadamente mil millones de parametros desarrollado por Google. Sobre esa base, r9485 ha realizado un ajuste fino supervisado utilizando las guias de ejercicios y las paginas de ayuda de la aplicacion Repvale. La model card no especifica el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron tecnicas de RLHF o DPO adicionales; tampoco detalla hiperparametros del ajuste.
 
-La innovacion tecnica relevante no esta en la arquitectura sino en el pipeline de despliegue: el modelo se exporta a formato MediaPipe `.task` con cuantizacion int4 para ejecutarse mediante MediaPipe LLM Inference en el navegador del telefono. Esto implica una conversion y compresion del modelo original de HuggingFace a un artefacto optimizado para inferencia en dispositivo, con las limitaciones de precision que conlleva la cuantizacion a 4 bits. No se documentan tecnicas adicionales como decodificacion especulativa o atencion lineal.
+La innovacion tecnica relevante no esta en la arquitectura sino en el pipeline de despliegue: el modelo se exporta a formato MediaPipe `.task` con cuantizacion int4 para ejecutarse mediante MediaPipe LLM Inference en el navegador del telefono. Esto implica una conversion y compresion del modelo original de Hugging Face a un artefacto optimizado para inferencia en dispositivo, con las limitaciones de precision que conlleva la cuantizacion a 4 bits. No se documentan tecnicas adicionales como decodificacion especulativa o atencion lineal.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ La comparativa se limita al modelo base y a otras variantes de la familia Gemma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/r9485/repvale-coach
+- Modelo en Hugging Face: https://huggingface.co/r9485/repvale-coach
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy

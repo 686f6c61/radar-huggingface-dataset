@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Alicericci/flamingo-multitask` es un repositorio de HuggingFace que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura Flamingo, orientada a tareas multitarea. No se trata de un modelo preentrenado ni de una release lista para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
+`Alicericci/flamingo-multitask` es un repositorio de Hugging Face que contiene una implementacion compacta y personalizada en PyTorch de la arquitectura Flamingo, orientada a tareas multitarea. No se trata de un modelo preentrenado ni de una release lista para produccion: el propio autor lo describe como una configuracion "nano" pensada para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint incluido (`model.safetensors`) es una inicializacion valida, no un modelo entrenado ni evaluado.
 
 El dato mas relevante es su tamano: el recuento real de parametros en safetensors es de 24.832 parametros (aproximadamente 24,8 K), lo que confirma que es un artefacto de juguete o de andamiaje de codigo, no un modelo funcional a escala. El repositorio ocupa 0,0 GB y registra 0 descargas y 0 likes en el momento de la consulta, lo que indica una adopcion practicamente nula.
 
@@ -67,7 +67,7 @@ No se dispone de modelos directamente comparables en la informacion proporcionad
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Alicericci/flamingo-multitask | 24.832 (24,8 K) | no disponible | apache-2.0 | HuggingFace |
+| Alicericci/flamingo-multitask | 24.832 (24,8 K) | no disponible | apache-2.0 | Hugging Face |
 | OpenFlamingo (referencia de la comunidad) | no disponible en esta consulta | no disponible | no disponible | no disponible |
 | IDEFICS (referencia de la comunidad) | no disponible en esta consulta | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No se aportan parametros, contexto ni licencias verificadas para OpenFlamingo ni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alicericci/flamingo-multitask
+- Hugging Face: https://huggingface.co/Alicericci/flamingo-multitask
 - A Survey on Large Multimodal Reasoning Models (arXiv, contexto general sobre modelos multimodales): https://arxiv.org/html/2505.04921v1
 - Thinking with Images for Multimodal Reasoning (arXiv, contexto general): https://arxiv.org/html/2506.23918v3
 - Awesome-LLMs-meet-Multimodal-Generation (recopilatorio, contexto general): https://yingqinghe.github.io/Awesome-LLMs-meet-Multimodal-Generation/

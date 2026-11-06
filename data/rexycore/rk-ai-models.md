@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rexycore/rk-ai-models es un repositorio publicado en HuggingFace por el usuario Rexycore el 14 de septiembre de 2026 y actualizado el 17 de septiembre de 2026. Se trata de un repositorio sin model card funcional: el unico contenido del README es la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin pipeline asignado y sin idiomas soportados. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
+Rexycore/rk-ai-models es un repositorio publicado en Hugging Face por el usuario Rexycore el 14 de septiembre de 2026 y actualizado el 17 de septiembre de 2026. Se trata de un repositorio sin model card funcional: el unico contenido del README es la declaracion de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin pipeline asignado y sin idiomas soportados. El repositorio acumula 0 descargas y 0 likes en el momento de la consulta.
 
 El dato tecnico mas relevante disponible es el tamano del repositorio, 12,9 GB, ademas de las etiquetas `license:mit` y `region:us`. No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, proceso de entrenamiento ni resultados de evaluacion.
 
@@ -58,7 +58,7 @@ No es posible proponer casos de uso concretos y realistas sin conocer las capaci
 - Prototipado con licencia permisiva: la licencia MIT facilita incorporar los pesos a prototipos internos sin las restricciones de licencias de uso comunitario, siempre que se resuelva la procedencia de los datos de entrenamiento.
 - Despliegue en local para inferencia privada: solo planteable si se confirma que el modelo cabe en el hardware objetivo y que su arquitectura esta soportada por el runtime elegido.
 - Fine-tuning con datos propietarios: si los pesos son compatibles con las herramientas habituales, la licencia MIT permitiria derivados sin obligacion de publicarlos.
-- Docencia y formacion: el caso resulta utiizable como ejemplo de repositorio insuficientemente documentado, util para practicar auditoria de modelos en HuggingFace.
+- Docencia y formacion: el caso resulta utiizable como ejemplo de repositorio insuficientemente documentado, util para practicar auditoria de modelos en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No disponible. No es posible establecer comparaciones rigurosas porque se descon
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rexycore/rk-ai-models | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| Rexycore/rk-ai-models | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 3 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -100,7 +100,7 @@ No disponible. No es posible establecer comparaciones rigurosas porque se descon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rexycore/rk-ai-models
+- Hugging Face: https://huggingface.co/Rexycore/rk-ai-models
 - Model card: no disponible (el README solo contiene la declaracion de licencia MIT)
 - Paper: no disponible
 - Repositorio de codigo: no disponible

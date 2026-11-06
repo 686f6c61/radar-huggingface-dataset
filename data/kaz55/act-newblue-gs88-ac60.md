@@ -73,11 +73,11 @@ La comparación más informativa es con los otros puntos del mismo barrido, que 
 
 | Modelo | Resolución GelSight | `chunk_size` / `n_action_steps` | Datos de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Kaz55/act-newblue-gs88-ac60` (este) | 88x66 | 60 / 60 | 100.000 pasos, semilla 1000, 90 episodios | no disponible | pública en HuggingFace, 0 descargas |
-| `Kaz55/act-newblue-gs500-ac60` | 500x375 | 60 / 60 | idénticos | no disponible | pública en HuggingFace |
-| `Kaz55/act-newblue-gs320-ac60` | 320x240 | 60 / 60 | idénticos | no disponible | pública en HuggingFace |
-| `Kaz55/act-newblue-gs160-ac60` | 160x120 | 60 / 60 | idénticos | no disponible | pública en HuggingFace |
-| `Kaz55/act-newblue-gs0-ac60` | sin GelSight | 60 / 60 | idénticos | no disponible | pública en HuggingFace |
+| `Kaz55/act-newblue-gs88-ac60` (este) | 88x66 | 60 / 60 | 100.000 pasos, semilla 1000, 90 episodios | no disponible | pública en Hugging Face, 0 descargas |
+| `Kaz55/act-newblue-gs500-ac60` | 500x375 | 60 / 60 | idénticos | no disponible | pública en Hugging Face |
+| `Kaz55/act-newblue-gs320-ac60` | 320x240 | 60 / 60 | idénticos | no disponible | pública en Hugging Face |
+| `Kaz55/act-newblue-gs160-ac60` | 160x120 | 60 / 60 | idénticos | no disponible | pública en Hugging Face |
+| `Kaz55/act-newblue-gs0-ac60` | sin GelSight | 60 / 60 | idénticos | no disponible | pública en Hugging Face |
 
 No se dispone de datos de benchmarks ni de licencia de ninguno de ellos, por lo que no es posible establecer una comparación de rendimiento cuantitativa. Como referencia externa de la familia ACT, existe la implementación de ACT en LeRobot y el trabajo original de ALOHA, cuyos detalles de arquitectura y resultados no forman parte de la información proporcionada para esta ficha.
 
@@ -96,13 +96,13 @@ No se dispone de datos de benchmarks ni de licencia de ninguno de ellos, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaz55/act-newblue-gs88-ac60
+- Modelo en Hugging Face: https://huggingface.co/Kaz55/act-newblue-gs88-ac60
 - Dataset asociado: https://huggingface.co/datasets/Kaz55/dg5f_ur5e_newblue_gs88
 - Checkpoint de mayor resolución (500x375): https://huggingface.co/Kaz55/act-newblue-gs500-ac60
 - Checkpoint de resolución 320x240: https://huggingface.co/Kaz55/act-newblue-gs320-ac60
 - Checkpoint de resolución 160x120: https://huggingface.co/Kaz55/act-newblue-gs160-ac60
 - Checkpoint sin GelSight: https://huggingface.co/Kaz55/act-newblue-gs0-ac60
 - Referencia de la arquitectura ACT (ALOHA, Zhao et al., 2023): https://arxiv.org/abs/2304.13705
-- Librería LeRobot (HuggingFace): https://github.com/huggingface/lerobot
+- Librería LeRobot (Hugging Face): https://github.com/huggingface/lerobot
 
 Nota: la búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces anteriores proceden de la información del repositorio y de referencias generales de la familia ACT.

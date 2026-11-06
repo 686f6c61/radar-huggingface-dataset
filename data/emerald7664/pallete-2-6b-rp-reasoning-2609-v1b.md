@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Arquitectura | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pallete-2.6B-RP-Reasoning-2609-v1b | ~2,7 B | LFM2.5 (finetune) | RP, escritura creativa, COT | lfm1.0 (other) | safetensors, GGUF en HuggingFace |
-| LiquidAI/LFM2.5-2.6B (base) | ~2,6 B | LFM2.5 | Uso general, edge | lfm1.0 | HuggingFace |
-| Qwen2.5-3B-Instruct | ~3 B | Transformer denso | Uso general, multilingüe | Qwen Research / Apache-2.0 según versión | HuggingFace, GGUF, vLLM |
-| Llama-3.2-3B-Instruct | ~3 B | Transformer denso | Uso general, multilingüe | Llama 3.2 Community | HuggingFace, GGUF, vLLM |
+| Pallete-2.6B-RP-Reasoning-2609-v1b | ~2,7 B | LFM2.5 (finetune) | RP, escritura creativa, COT | lfm1.0 (other) | safetensors, GGUF en Hugging Face |
+| LiquidAI/LFM2.5-2.6B (base) | ~2,6 B | LFM2.5 | Uso general, edge | lfm1.0 | Hugging Face |
+| Qwen2.5-3B-Instruct | ~3 B | Transformer denso | Uso general, multilingüe | Qwen Research / Apache-2.0 según versión | Hugging Face, GGUF, vLLM |
+| Llama-3.2-3B-Instruct | ~3 B | Transformer denso | Uso general, multilingüe | Llama 3.2 Community | Hugging Face, GGUF, vLLM |
 
 La ventaja de Pallete frente a los modelos generales de tamaño similar es su ajuste fino específico en roleplay y escritura creativa con razonamiento; la contrapartida es que carece de la documentación, benchmarks y ecosistema de despliegue de las alternativas de grandes laboratorios.
 
@@ -83,7 +83,7 @@ La ventaja de Pallete frente a los modelos generales de tamaño similar es su aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Emerald7664/Pallete-2.6B-RP-Reasoning-2609-v1b
+- Modelo en Hugging Face: https://huggingface.co/Emerald7664/Pallete-2.6B-RP-Reasoning-2609-v1b
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Licencia del modelo: https://huggingface.co/Emerald7664/Pallete-2.6B-RP-Reasoning-2609-v1b/blob/main/LICENSE
 - Perfil del autor: https://huggingface.co/Emerald7664

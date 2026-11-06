@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Image-SFT Turbo (este repositorio) | no disponible | no disponible | Difusion texto-a-imagen con adaptadores de 3/4/8 pasos | Apache-2.0 | HuggingFace, redistribucion |
-| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | Modelo base de difusion texto-a-imagen | Apache-2.0 (segun el repositorio) | HuggingFace |
-| akhaliq/MOSS-Image-SFT-4-steps | no disponible | no disponible | Adaptador de destilacion a 4 pasos | Apache-2.0 (segun el repositorio) | HuggingFace |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | no disponible | no disponible | Adaptador DMD a 8 pasos | Apache-2.0 (segun el repositorio) | HuggingFace |
+| MOSS-Image-SFT Turbo (este repositorio) | no disponible | no disponible | Difusion texto-a-imagen con adaptadores de 3/4/8 pasos | Apache-2.0 | Hugging Face, redistribucion |
+| OpenMOSS-Team/MOSS-Image-SFT | no disponible | no disponible | Modelo base de difusion texto-a-imagen | Apache-2.0 (segun el repositorio) | Hugging Face |
+| akhaliq/MOSS-Image-SFT-4-steps | no disponible | no disponible | Adaptador de destilacion a 4 pasos | Apache-2.0 (segun el repositorio) | Hugging Face |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | no disponible | no disponible | Adaptador DMD a 8 pasos | Apache-2.0 (segun el repositorio) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/cokeadrink/moss-image-sft-turbo-runpod
+- Repositorio Hugging Face: https://huggingface.co/cokeadrink/moss-image-sft-turbo-runpod
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Empaquetado Comfy-Org: https://huggingface.co/Comfy-Org/MOSS-Image
 - Adaptador de 4 pasos (akhaliq): https://huggingface.co/akhaliq/MOSS-Image-SFT-4-steps

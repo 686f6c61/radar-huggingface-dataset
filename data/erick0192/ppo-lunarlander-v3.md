@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `erick0192/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3. Lo publica el usuario erick0192 en HuggingFace y se ha generado con la libreria stable-baselines3, el framework de referencia para implementar algoritmos de RL en PyTorch. No es un modelo de lenguaje: es una politica de control que, dado el estado del modulo de aterrizaje, produce acciones discretas para posar la nave sobre la plataforma.
+El modelo `erick0192/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v3. Lo publica el usuario erick0192 en Hugging Face y se ha generado con la libreria stable-baselines3, el framework de referencia para implementar algoritmos de RL en PyTorch. No es un modelo de lenguaje: es una politica de control que, dado el estado del modulo de aterrizaje, produce acciones discretas para posar la nave sobre la plataforma.
 
 El modelo resuelve una tarea concreta de control continuo discretizado dentro del benchmark clasico LunarLander de Gymnasium, muy usado en docencia e investigacion para comparar algoritmos de RL. El autor declara una recompensa media de 245,63 +/- 24,88 en el propio entorno, aunque el dato figura como no verificado en el model-index. El repositorio tiene un tamano declarado de 0,0 GB y cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
-La relevancia de esta ficha es mas bien metodologica: sirve como ejemplo de como se documenta (y como no se documenta) un checkpoint de RL en HuggingFace. La model card es practicamente un esqueleto autogenerado, sin codigo de uso, sin hiperparametros y sin licencia declarada, lo que limita su reutilizacion directa en produccion sin trabajo adicional de inspeccion del artefacto.
+La relevancia de esta ficha es mas bien metodologica: sirve como ejemplo de como se documenta (y como no se documenta) un checkpoint de RL en Hugging Face. La model card es practicamente un esqueleto autogenerado, sin codigo de uso, sin hiperparametros y sin licencia declarada, lo que limita su reutilizacion directa en produccion sin trabajo adicional de inspeccion del artefacto.
 
 ## Especificaciones tecnicas
 
@@ -40,7 +40,7 @@ Tampoco hay informacion sobre el proceso de ajuste fino, sobre si se partio de u
 
 - Docencia de aprendizaje por refuerzo: el modelo sirve como ejemplo ejecutable de una politica PPO ya entrenada sobre un entorno clasico, util en asignaturas y talleres introductorios para ilustrar la diferencia entre entrenamiento y evaluacion de una politica.
 - Linea base en experimentos de RL: puede emplearse como referencia de recompensa media frente a variantes propias (otro algoritmo, otro ajuste de hiperparametros, otra semilla) sobre LunarLander-v3, siempre que se tenga en cuenta que el valor declarado no esta verificado.
-- Pruebas de integracion de stable-baselines3 con HuggingFace Hub: sirve para validar flujos de carga de checkpoints con `huggingface_sb3.load_from_hub`, util en equipos que esten montando su propio pipeline de publicacion de agentes.
+- Pruebas de integracion de stable-baselines3 con Hugging Face Hub: sirve para validar flujos de carga de checkpoints con `huggingface_sb3.load_from_hub`, util en equipos que esten montando su propio pipeline de publicacion de agentes.
 - Generacion de trazas y visualizaciones: al ser un entorno con representacion grafica, el agente puede usarse para renderizar episodios completos y producir videos o capturas para material divulgativo.
 - Comparacion de estrategias de evaluacion: util para practicar la evaluacion estadistica de politicas estocasticas, repitiendo episodios y calculando intervalos de confianza sobre la recompensa media.
 - Estudio de robustez y reproducibilidad en repositorios de RL: un caso practico es auditar que informacion falta en una model card (licencia, hiperparametros, semilla) y valorar su impacto en la reproducibilidad de resultados.
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye otros agentes de RL compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erick0192/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/erick0192/ppo-LunarLander-v3
 - Libreria stable-baselines3 (referenciada en la model card): https://github.com/DLR-RM/stable-baselines3
 - Libreria huggingface_sb3 (referenciada en el ejemplo de la model card): no se proporciona URL en la informacion disponible
 - Resultados de la busqueda web: las entradas devueltas corresponden a empresas de diseno industrial sin relacion con el modelo (北京智加问道科技有限公司 y sitios asociados), por lo que no se incluyen como enlaces relevantes. No se han encontrado papers, blogs, repositorios ni demos adicionales sobre este modelo en la busqueda realizada.

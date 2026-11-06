@@ -105,7 +105,7 @@ La diferencia práctica entre este bundle y la variante dinámica del mismo auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bjnortier/coreai-ht5-whisper-medium-kv-static-float16
+- Modelo en Hugging Face: https://huggingface.co/bjnortier/coreai-ht5-whisper-medium-kv-static-float16
 - Modelo base: https://huggingface.co/openai/whisper-medium
 - Variante con decodificador dinámico del mismo autor: https://huggingface.co/bjnortier/coreai-whisper-medium-kv-float16
 - Repositorio de referencia de Apple para Core AI: https://github.com/apple/coreai-models

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zephxs/pocket-tts-onnx-fr-24l` es una exportación a ONNX en cuantización int8 del variante `french_24l` del modelo de síntesis de voz `kyutai/pocket-tts`, desarrollado originalmente por Kyutai Lab. El autor de la exportación es el usuario de HuggingFace `zephxs`, que publica el modelo en formato compatible con el runtime sherpa-onnx para facilitar su despliegue en entornos de producción ligeros, incluyendo dispositivos de arquitectura ARM (aarch64).
+`zephxs/pocket-tts-onnx-fr-24l` es una exportación a ONNX en cuantización int8 del variante `french_24l` del modelo de síntesis de voz `kyutai/pocket-tts`, desarrollado originalmente por Kyutai Lab. El autor de la exportación es el usuario de Hugging Face `zephxs`, que publica el modelo en formato compatible con el runtime sherpa-onnx para facilitar su despliegue en entornos de producción ligeros, incluyendo dispositivos de arquitectura ARM (aarch64).
 
 El modelo resuelve el problema de la síntesis de voz en francés con capacidad de clonación de voz zero-shot, empaquetada en un artefacto de aproximadamente 395 MB extraídos (repositorio de 0,3 GB) que puede ejecutarse sin necesidad de un stack de deep learning completo. La exportación incorpora una intervención de "graph-surgery" sobre `encoder.onnx` para corregir un problema de terminación prematura (EOS) que truncaba el audio generado.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zephxs/pocket-tts-onnx-fr-24l
+- Modelo en Hugging Face: https://huggingface.co/zephxs/pocket-tts-onnx-fr-24l
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Variante de 6 capas: https://huggingface.co/zephxs/pocket-tts-onnx-fr-6l
 - Exportacion ONNX de referencia: https://huggingface.co/KevinAHM/pocket-tts-onnx

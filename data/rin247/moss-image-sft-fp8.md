@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSS-Image-SFT-FP8 es un paquete de pesos cuantizados en FP8 del modelo de generación de imágenes texto-a-imagen `OpenMOSS-Team/MOSS-Image-SFT`, publicado por el usuario Rin247 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión reducida del checkpoint SFT de la familia MOSS-Image de OpenMOSS, que empaqueta conjuntamente los tres componentes del pipeline (denoiser, codificador de texto y VAE) para simplificar el despliegue. El paquete contiene 5.082.308.624 parámetros y ocupa 13,9 GB en el repositorio.
+MOSS-Image-SFT-FP8 es un paquete de pesos cuantizados en FP8 del modelo de generación de imágenes texto-a-imagen `OpenMOSS-Team/MOSS-Image-SFT`, publicado por el usuario Rin247 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de precisión reducida del checkpoint SFT de la familia MOSS-Image de OpenMOSS, que empaqueta conjuntamente los tres componentes del pipeline (denoiser, codificador de texto y VAE) para simplificar el despliegue. El paquete contiene 5.082.308.624 parámetros y ocupa 13,9 GB en el repositorio.
 
 El interés de esta ficha es doble: por un lado documenta una alternativa de bajo coste de memoria para ejecutar MOSS-Image-SFT, un modelo de difusión especializado en el renderizado de texto legible dentro de la imagen (rótulos, notas manuscritas, pizarras, etiquetas) y en el control de composición mediante prompts en lenguaje natural, secuencias de etiquetas o layouts en JSON; por otro, advierte de que se trata de una publicación de terceros, sin licencia declarada, sin benchmarks y con cero descargas registradas en el momento de la consulta.
 
@@ -24,7 +24,7 @@ La relevancia práctica depende del caso: si el objetivo es probar el pipeline M
 | Modelo base | `OpenMOSS-Team/MOSS-Image-SFT`, derivado a su vez de `OpenMOSS-Team/MOSS-Image-Base` |
 | Resolución documentada | 1024 × 1024 en el ejemplo de la model card (no se documenta el rango completo) |
 | Parametros de inferencia del ejemplo | `num_inference_steps=50`, `guidance_scale=3.0`, `uncond_skip_layers=[22]` |
-| Fecha de publicacion | 21 de octubre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de octubre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / resolucion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSS-Image-SFT-FP8 (este paquete) | 5.082.308.624 | No disponible; 1024 × 1024 en el ejemplo | safetensors FP8 | No disponible | HuggingFace, 0 descargas, autor tercero (Rin247) |
-| MOSS-Image-SFT (original) | Misma arquitectura (no se detalla el recuento) | No disponible; mismo pipeline | No detallado en la información | No disponible | HuggingFace y ModelScope, equipo oficial OpenMOSS |
-| MOSS-Image-Base | Misma arquitectura (no se detalla el recuento) | No disponible; mismo pipeline | No detallado en la información | No disponible | HuggingFace y ModelScope, equipo oficial OpenMOSS |
+| MOSS-Image-SFT-FP8 (este paquete) | 5.082.308.624 | No disponible; 1024 × 1024 en el ejemplo | safetensors FP8 | No disponible | Hugging Face, 0 descargas, autor tercero (Rin247) |
+| MOSS-Image-SFT (original) | Misma arquitectura (no se detalla el recuento) | No disponible; mismo pipeline | No detallado en la información | No disponible | Hugging Face y ModelScope, equipo oficial OpenMOSS |
+| MOSS-Image-Base | Misma arquitectura (no se detalla el recuento) | No disponible; mismo pipeline | No detallado en la información | No disponible | Hugging Face y ModelScope, equipo oficial OpenMOSS |
 
 Frente a alternativas de la misma categoría (generadores texto-a-imagen con renderizado de texto, como FLUX.1, Qwen-Image o Stable Diffusion 3.5), no se dispone en la información suministrada de datos verificados de parámetros, contexto, licencia ni rendimiento para establecer una comparación numérica fiable. La comparación honesta disponible se limita a la propia familia MOSS-Image: este paquete es una reempaquetado FP8 del SFT oficial, con menor huella de memoria y sin garantías de equivalencia numérica.
 
@@ -98,7 +98,7 @@ Frente a alternativas de la misma categoría (generadores texto-a-imagen con ren
 - ModelScope MOSS-Image-Base: https://modelscope.cn/models/openmoss/MOSS-Image-Base
 - ModelScope MOSS-Image-SFT: https://modelscope.cn/models/openmoss/MOSS-Image-SFT
 - Repositorio de código en GitHub: https://github.com/OpenMOSS/MOSS-Image
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Página del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe técnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Paper en arXiv: https://arxiv.org/abs/2610.23374

@@ -107,7 +107,7 @@ Comparado con el modelo base sin cuantizar, esta variante pierde precisión de f
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/myroslavtryhubets/clef-flash-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/myroslavtryhubets/clef-flash-NVFP4
 - Variante NVFP4A16: https://huggingface.co/myroslavtryhubets/clef-flash-NVFP4A16
 - Variante clef-NVFP4 (27B): https://huggingface.co/myroslavtryhubets/clef-NVFP4
 - Modelo base Cloudflare/clef-flash: https://huggingface.co/Cloudflare/clef-flash

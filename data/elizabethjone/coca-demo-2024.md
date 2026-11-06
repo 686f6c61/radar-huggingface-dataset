@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elizabethjone/coca-demo-2024` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **Coca**, orientada a tareas multitarea. No se trata de un modelo preentrenado con pesos útiles, sino de un artefacto de demostración: el propio autor indica en la model card que la configuración **base** está pensada para revisión de código, pruebas de humo (*smoke tests*) y pequeños experimentos controlados, y que `model.safetensors` es un **checkpoint de inicialización**, no un modelo entrenado.
+`elizabethjone/coca-demo-2024` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada en PyTorch de una arquitectura denominada **Coca**, orientada a tareas multitarea. No se trata de un modelo preentrenado con pesos útiles, sino de un artefacto de demostración: el propio autor indica en la model card que la configuración **base** está pensada para revisión de código, pruebas de humo (*smoke tests*) y pequeños experimentos controlados, y que `model.safetensors` es un **checkpoint de inicialización**, no un modelo entrenado.
 
 El dato más relevante es su tamaño real: **16.576 parámetros totales** (unos 16,5 K), confirmados desde los pesos en formato safetensors. Es, por tanto, un modelo de escala minúscula, sin ninguna puntuación de benchmark reclamada por el autor. El repositorio no registra descargas ni *likes*, y el peso total del repo es de 0,0 GB.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen modelos comparables de este repositorio en la infor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| elizabethjone/coca-demo-2024 | 16.576 | no disponible | sin benchmark reclamado | MIT | HuggingFace |
+| elizabethjone/coca-demo-2024 | 16.576 | no disponible | sin benchmark reclamado | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,8 +92,8 @@ No disponible. No se conocen modelos comparables de este repositorio en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elizabethjone/coca-demo-2024
-- Perfil del autor en HuggingFace: https://huggingface.co/elizabethjone
+- Modelo en Hugging Face: https://huggingface.co/elizabethjone/coca-demo-2024
+- Perfil del autor en Hugging Face: https://huggingface.co/elizabethjone
 - Datasets del autor: https://huggingface.co/elizabethjone/datasets
 
 No se han encontrado papers, blogs, repositorios o demos adicionales relevantes en la búsqueda web. El resto de resultados localizados (generadores de arte con IA y detectores de imágenes) no guardan relación con este modelo.

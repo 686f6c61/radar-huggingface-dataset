@@ -23,7 +23,7 @@ El modelo base GPT-2 es un transformer decoder-only de 124 millones de parámetr
 
 El modelo es un adaptador LoRA sobre GPT-2. La tecnica LoRA congela los pesos del modelo preentrenado e inyecta matrices de bajo rango en las capas de atencion y feed-forward, lo que reduce drasticamente el numero de parametros entrenables. El modelo base GPT-2 es un transformer decoder-only con 12 capas, 12 cabezas de atencion y una dimension de embedding de 768, entrenado sobre el dataset WebText. El paper de referencia citado en las etiquetas es `arxiv:1910.09700`, que corresponde al articulo original de GPT-2.
 
-No se proporcionan datos sobre el procedimiento de entrenamiento del adaptador: no hay informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, ni si se aplicaron tecnicas como RLHF o DPO. La unica pista tecnica es que el adaptador fue generado con la libreria PEFT 0.19.1, lo que indica el uso de las utilidades estandar de HuggingFace para fine-tuning eficiente.
+No se proporcionan datos sobre el procedimiento de entrenamiento del adaptador: no hay informacion sobre el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos, ni si se aplicaron tecnicas como RLHF o DPO. La unica pista tecnica es que el adaptador fue generado con la libreria PEFT 0.19.1, lo que indica el uso de las utilidades estandar de Hugging Face para fine-tuning eficiente.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No se proporcionan datos sobre el procedimiento de entrenamiento del adaptador: 
 - Analisis de sentimiento: con un fine-tuning adicional sobre un dataset de sentimiento, el adaptador podria usarse para clasificar opiniones, aunque no hay evidencia de que este adaptador haya sido entrenado para ello.
 - Chatbots simples: GPT-2 puede generar respuestas cortas en conversaciones de un solo turno, pero no esta optimizado para dialogos multi-turno ni para mantener coherencia a largo plazo.
 - Clasificacion de texto: al ser un adaptador LoRA, se puede reutilizar la arquitectura para tareas de clasificacion si se entrena adecuadamente, aunque este adaptador concreto no especifica esa funcion.
-- Educacion sobre modelos de lenguaje: el repositorio sirve como ejemplo practico de como se estructura un adaptador PEFT en HuggingFace, con los archivos de configuracion y pesos en formato safetensors.
+- Educacion sobre modelos de lenguaje: el repositorio sirve como ejemplo practico de como se estructura un adaptador PEFT en Hugging Face, con los archivos de configuracion y pesos en formato safetensors.
 
 Nota: estos casos de uso son potenciales y se derivan de las capacidades del modelo base GPT-2 y de la tecnica LoRA, no de documentacion especifica del adaptador.
 
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: el modelo base GPT-2 (124M) en precision FP32 requiere aproximadamente 0.5 GB de VRAM para los pesos, mas el adaptador LoRA, que anade un overhead minimo. En la practica, se recomienda al menos 2 GB de VRAM para cargar el modelo y el adaptador con margen.
 - GPU recomendadas: cualquier GPU de consumo moderna, como una NVIDIA RTX 3060, RTX 4090 o incluso una Tesla T4. El modelo tambien puede ejecutarse en CPU.
 - Compatibilidad con GPU de consumo: si, el modelo cabe en GPU de consumo de gama baja, como una GTX 1650 con 4 GB de VRAM, siempre que se use una precision reducida o cuantizacion.
-- Opciones de despliegue: se puede cargar con la biblioteca `transformers` de HuggingFace combinada con `peft`. No es directamente compatible con `llama.cpp` ni con `Ollama` sin exportar los pesos a un formato diferente. Tampoco se recomienda `vLLM` para un modelo de este tamano, aunque es posible con configuraciones especificas.
+- Opciones de despliegue: se puede cargar con la biblioteca `transformers` de Hugging Face combinada con `peft`. No es directamente compatible con `llama.cpp` ni con `Ollama` sin exportar los pesos a un formato diferente. Tampoco se recomienda `vLLM` para un modelo de este tamano, aunque es posible con configuraciones especificas.
 - Latencia y throughput: no disponibles. No se han publicado mediciones de rendimiento en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `openai-community/gpt2` (modelo base) | 124M | 1024 tokens | MIT | HuggingFace |
-| `MobiusGaian/openai-community-gpt2-b892cd21_FT_adapter` | No disponible (adaptador LoRA) | 1024 tokens | No disponible | HuggingFace |
-| `MobiusGaian/gpt2_FT_adapter` | No disponible (adaptador LoRA) | 1024 tokens | No disponible | HuggingFace |
+| `openai-community/gpt2` (modelo base) | 124M | 1024 tokens | MIT | Hugging Face |
+| `MobiusGaian/openai-community-gpt2-b892cd21_FT_adapter` | No disponible (adaptador LoRA) | 1024 tokens | No disponible | Hugging Face |
+| `MobiusGaian/gpt2_FT_adapter` | No disponible (adaptador LoRA) | 1024 tokens | No disponible | Hugging Face |
 
 La comparativa es limitada porque no hay informacion sobre los parametros del adaptador ni sobre el rendimiento de ninguno de los modelos. El unico dato confirmado es que los tres comparten el mismo modelo base GPT-2 y la misma ventana de contexto de 1024 tokens. No se dispone de benchmarks comparativos.
 
@@ -80,6 +80,6 @@ La comparativa es limitada porque no hay informacion sobre los parametros del ad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MobiusGaian/openai-community-gpt2-b892cd21_FT_adapter
+- Hugging Face: https://huggingface.co/MobiusGaian/openai-community-gpt2-b892cd21_FT_adapter
 - Modelo similar: https://huggingface.co/MobiusGaian/gpt2_FT_adapter
 - Paper de GPT-2 (arxiv:1910.09700): https://arxiv.org/abs/1910.09700

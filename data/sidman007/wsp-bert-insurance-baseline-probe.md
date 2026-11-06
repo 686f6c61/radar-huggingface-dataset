@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wsp-bert-insurance-baseline-probe` es un modelo de clasificación de texto en inglés construido sobre `bert-base-uncased` (109.488.392 parámetros) y especializado en etiquetar oraciones de seguros en ocho categorías documentales: concesión de cobertura, exclusión, pago de prima, límites y franquicias, procedimiento de siniestros, definiciones, cancelación/renovación de término y condiciones y deberes. Lo publica el usuario `sidman007` bajo licencia Apache 2.0 y con el pipeline `text-classification` de HuggingFace.
+`wsp-bert-insurance-baseline-probe` es un modelo de clasificación de texto en inglés construido sobre `bert-base-uncased` (109.488.392 parámetros) y especializado en etiquetar oraciones de seguros en ocho categorías documentales: concesión de cobertura, exclusión, pago de prima, límites y franquicias, procedimiento de siniestros, definiciones, cancelación/renovación de término y condiciones y deberes. Lo publica el usuario `sidman007` bajo licencia Apache 2.0 y con el pipeline `text-classification` de Hugging Face.
 
 Su interés no reside en el rendimiento —88,53 % de accuracy y macro-F1 de 0,8870 en test retenido, cifras razonables pero no punteras para un BERT fine-tuned— sino en el método de construcción: no se entrenó con descenso de gradiente, sino mediante *weight-space programming*. Un LLM editor leyó y escribió directamente los pesos del modelo aplicando matemática en forma cerrada sobre pesos y activaciones, a partir de un número acotado de forward passes, sin retropropagación ni optimizadores.
 
@@ -92,6 +92,6 @@ La comparación directa de rendimiento no es posible porque no se han publicado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-baseline-probe
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-baseline-probe
 - Repositorio del proyecto (protocolo, logs y resultados): https://github.com/siddharth-ghatti/weight-space-programming-poc
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

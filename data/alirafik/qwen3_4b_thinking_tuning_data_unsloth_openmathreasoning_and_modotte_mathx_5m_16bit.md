@@ -79,7 +79,7 @@ La diferencia principal es el enfoque del fine-tuning en matemáticas y la inten
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aliRafik/Qwen3_4B_Thinking_Tuning_Data_Unsloth_OpenMathReasoning_ANd_Modotte_MathX_5M_16bit
+- Hugging Face: https://huggingface.co/aliRafik/Qwen3_4B_Thinking_Tuning_Data_Unsloth_OpenMathReasoning_ANd_Modotte_MathX_5M_16bit
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-thinking-2507-unsloth-bnb-4bit
 - Informe técnico de Qwen3: https://arxiv.org/abs/2505.09388
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

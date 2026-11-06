@@ -67,5 +67,5 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - callumrob/mixer-generation-slim](https://huggingface.co/callumrob/mixer-generation-slim)
+- [Hugging Face - callumrob/mixer-generation-slim](https://huggingface.co/callumrob/mixer-generation-slim)
 - No se han encontrado otros enlaces relevantes (papers, repos, demos) en la búsqueda web.

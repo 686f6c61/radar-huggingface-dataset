@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) de un GPT-2 de 124.770.816 parámetros, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generación de texto de escala reducida, entrenado con la librería TRL sobre un modelo base de la misma autora, `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`. Por el nombre del identificador y del repositorio, el proyecto parece centrado en experimentos de tokenización y preentrenamiento sobre corpus en italiano con alfabeto latino (el prefijo `ita-latn` en el nombre no deja de ser una convención habitual en corpus multilingües), aunque la model card no confirma el idioma de forma explícita.
+El modelo `francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) de un GPT-2 de 124.770.816 parámetros, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generación de texto de escala reducida, entrenado con la librería TRL sobre un modelo base de la misma autora, `francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`. Por el nombre del identificador y del repositorio, el proyecto parece centrado en experimentos de tokenización y preentrenamiento sobre corpus en italiano con alfabeto latino (el prefijo `ita-latn` en el nombre no deja de ser una convención habitual en corpus multilingües), aunque la model card no confirma el idioma de forma explícita.
 
 La relevancia de esta publicación es más experimental que práctica: no acumula descargas ni "likes" y forma parte de una serie de variantes generadas cambiando la semilla y el número de checkpoint (en el buscador aparecen versiones con `seed10`, `seed3407`, `seed455` y otras). El interés radica en que permite reproducir y auditar una receta de ajuste supervisado sobre un modelo muy pequeño, apto para pruebas de concepto, investigación sobre tokenizadores y experimentos de bajo coste computacional.
 
@@ -12,7 +12,7 @@ Al ser un GPT-2, la arquitectura es un transformer decoder-only de 12 capas, con
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only (etiquetado como `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only (etiquetado como `gpt2` en Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | 1024 tokens (configuracion estandar de GPT-2; no confirmado en la informacion disponible) |
@@ -52,7 +52,7 @@ El ajuste se ha realizado mediante SFT (supervised fine-tuning) con TRL 0.23.0 s
 - Ajuste fino posterior (fine-tuning) como banco de pruebas: su tamaño reducido permite ejecutar ciclos completos de SFT o DPO en una única GPU de gama media, útil para validar hiperparámetros antes de escalar a modelos mayores.
 - Generación de texto en italiano en contextos de baja criticidad: si se confirma el dominio del corpus, podría emplearse para tareas creativas o de autocompletado no sensibles a errores, siempre con revisión humana.
 - Evaluación comparativa de variantes por semilla: al existir múltiples versiones con distintas semillas (`seed10`, `seed455`, etc.), resulta útil para estudiar la varianza de resultados entre ejecuciones de entrenamiento idénticas.
-- Docencia y demostraciones: su bajo requisito de recursos lo hace adecuado para talleres y cursos donde se explique el ciclo completo de publicación de un modelo de lenguaje en HuggingFace.
+- Docencia y demostraciones: su bajo requisito de recursos lo hace adecuado para talleres y cursos donde se explique el ciclo completo de publicación de un modelo de lenguaje en Hugging Face.
 - Despliegue en el borde (edge) o en dispositivos con recursos limitados: tras la conversión a GGUF y cuantización, cabría en CPU o en GPUs integradas para tareas de generación corta.
 
 ## Benchmarks y rendimiento
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 124,77 M | 1024 tokens (no confirmado) | no disponible | HuggingFace, 0 descargas |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modified MIT | HuggingFace, ampliamente extendido |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
-| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | HuggingFace |
+| francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 124,77 M | 1024 tokens (no confirmado) | no disponible | Hugging Face, 0 descargas |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modified MIT | Hugging Face, ampliamente extendido |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
+| Pythia-160M (EleutherAI) | 160 M | 2048 tokens | Apache 2.0 | Hugging Face |
 
 Nota: los datos de los modelos comparativos corresponden a información pública general de cada proyecto. El modelo objeto de la ficha no presenta resultados de benchmarks que permitan una comparación de rendimiento con las alternativas.
 
@@ -87,11 +87,11 @@ Nota: los datos de los modelos comparativos corresponden a información pública
 - Licencia: no disponible. La model card indica únicamente `licence: license`, sin concretar términos, por lo que no se recomienda su uso comercial sin aclaración previa con el autor.
 - Ausencia de benchmarks: no existe ningún dato publicado de MMLU, HumanEval, GSM8K ni similares, lo que impide evaluar su calidad objetivamente.
 - Estado experimental: 0 descargas y 0 "likes", con múltiples variantes por semilla, apuntan a un artefacto de investigación en curso y no a un modelo mantenido para producción.
-- Fecha de publicación futura (2026) en los metadatos de HuggingFace: conviene verificar el estado real del repositorio antes de integrarlo.
+- Fecha de publicación futura (2026) en los metadatos de Hugging Face: conviene verificar el estado real del repositorio antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/ita-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/ita-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Panel de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/0z282fi3
 - Repositorio TRL: https://github.com/huggingface/trl

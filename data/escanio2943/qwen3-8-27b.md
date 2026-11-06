@@ -79,7 +79,7 @@ No se dispone de información detallada sobre los modelos comparables más allá
 
 ## Enlaces
 
-- Repositorio HuggingFace (escanio2943/Qwen3.8-27B): https://huggingface.co/escanio2943/Qwen3.8-27B
+- Repositorio Hugging Face (escanio2943/Qwen3.8-27B): https://huggingface.co/escanio2943/Qwen3.8-27B
 - Repositorio oficial de Alibaba (Qwen3.8-27B): https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub AlibabaCloud-Official/Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Página de Together AI (API y benchmarks): https://www.together.ai/models/qwen3-8-27b

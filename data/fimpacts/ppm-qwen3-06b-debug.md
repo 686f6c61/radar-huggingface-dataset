@@ -73,8 +73,8 @@ La comparativa se limita al modelo base y su variante instruct, ya que no hay ot
 
 ## Enlaces
 
-- [HuggingFace: fimpacts/ppm-qwen3-06b-debug](https://huggingface.co/fimpacts/ppm-qwen3-06b-debug)
-- [HuggingFace: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
+- [Hugging Face: fimpacts/ppm-qwen3-06b-debug](https://huggingface.co/fimpacts/ppm-qwen3-06b-debug)
+- [Hugging Face: Qwen/Qwen3-0.6B](https://huggingface.co/Qwen/Qwen3-0.6B)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)
-- [Colección Qwen3 en HuggingFace](https://huggingface.co/collections/Qwen/qwen3)
+- [Colección Qwen3 en Hugging Face](https://huggingface.co/collections/Qwen/qwen3)
 - [Repositorio GitHub de Qwen3](https://github.com/QwenLM/Qwen3)

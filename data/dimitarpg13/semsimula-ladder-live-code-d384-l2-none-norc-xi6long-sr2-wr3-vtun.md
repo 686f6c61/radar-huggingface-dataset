@@ -82,9 +82,9 @@ Métricas adicionales del modelo (declaradas por el autor, no verificadas de for
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot val, bloque 512) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| XI6-CODE (este modelo) | 83.690.702 | no disponible (bloques de 512) | 5,95 | CC-BY-4.0 | HuggingFace (0,3 GB) |
-| SO-CODE (baseline de la familia) | no disponible | no disponible | 6,00 | no disponible | HuggingFace |
-| Screen B (fix 1, misma familia) | 83.690.702 | no disponible | 5,98 | no disponible | HuggingFace |
+| XI6-CODE (este modelo) | 83.690.702 | no disponible (bloques de 512) | 5,95 | CC-BY-4.0 | Hugging Face (0,3 GB) |
+| SO-CODE (baseline de la familia) | no disponible | no disponible | 6,00 | no disponible | Hugging Face |
+| Screen B (fix 1, misma familia) | 83.690.702 | no disponible | 5,98 | no disponible | Hugging Face |
 | GPT-2 emparejado (referencia del autor) | no disponible | no disponible | 4,96 | no disponible | no disponible |
 
 La comparación relevante es interna a la familia semsimula, ya que no se han identificado alternativas públicas de la misma categoría (modelos de energía conservativos sin atención para código). El GPT-2 emparejado, entrenado sobre los mismos tokens según el autor, obtiene mejor perplejidad (4,96 frente a 5,95), lo que sitúa a este modelo por debajo de un transformer pequeño convencional en calidad de modelado.
@@ -103,7 +103,7 @@ La comparación relevante es interna a la familia semsimula, ya que no se han id
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-xi6long-sr2-wr3-vtun
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-xi6long-sr2-wr3-vtun
 - Baseline SO-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Screen B (fix 1): https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-xi6long-sr2-wr3-vtlr0p25
 - Control SO-CODE-VTLR: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-vtlr0p25

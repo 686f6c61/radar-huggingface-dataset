@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de audio | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/faster-whisper-large-v3-turbo-ct2 | no disponible | ventanas de 30 s | CTranslate2 | MIT | HuggingFace, 0 descargas |
-| deepdml/faster-whisper-large-v3-turbo-ct2 (fuente) | no disponible | ventanas de 30 s | CTranslate2 | MIT | HuggingFace |
-| openai/whisper-large-v3-turbo (original) | no disponible | ventanas de 30 s | PyTorch/safetensors | MIT | HuggingFace, ampliamente usado |
-| openai/whisper-large-v3 | no disponible | ventanas de 30 s | PyTorch/safetensors | MIT | HuggingFace |
+| Audante/faster-whisper-large-v3-turbo-ct2 | no disponible | ventanas de 30 s | CTranslate2 | MIT | Hugging Face, 0 descargas |
+| deepdml/faster-whisper-large-v3-turbo-ct2 (fuente) | no disponible | ventanas de 30 s | CTranslate2 | MIT | Hugging Face |
+| openai/whisper-large-v3-turbo (original) | no disponible | ventanas de 30 s | PyTorch/safetensors | MIT | Hugging Face, ampliamente usado |
+| openai/whisper-large-v3 | no disponible | ventanas de 30 s | PyTorch/safetensors | MIT | Hugging Face |
 
 La diferencia practica entre este repositorio y su fuente es nula en contenido; la unica distincion es el mantenedor y la publicacion de checksums. Frente al checkpoint original de OpenAI, la ventaja es el rendimiento de inferencia de CTranslate2; la desventaja es la menor interoperabilidad con el ecosistema de transformers.
 
@@ -84,7 +84,7 @@ La diferencia practica entre este repositorio y su fuente es nula en contenido; 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Audante/faster-whisper-large-v3-turbo-ct2
+- Repositorio Hugging Face: https://huggingface.co/Audante/faster-whisper-large-v3-turbo-ct2
 - Fuente directa: https://huggingface.co/deepdml/faster-whisper-large-v3-turbo-ct2
 - Modelo base declarado: https://huggingface.co/openai/whisper
 - Libreria faster-whisper: https://github.com/SYSTRAN/faster-whisper

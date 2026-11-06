@@ -4,7 +4,7 @@
 
 sn92-gen-v52a es un ajuste fino (fine-tune) de tipo LoRA, con rango 16 y fusionado en los pesos finales, sobre el modelo danyloooah/sn92-generalist-m1-core2, que a su vez es una fusión en el espacio de pesos de fine-tunes de baselabs/mammoth-1. Este último procede de un post-entrenamiento de Qwen3.5-27B. El resultado es un modelo de 26.085.330.160 parámetros (aproximadamente 26 mil millones) con licencia MIT, orientado a la toma de decisiones de elección única y de tipo sí/no dentro de un esquema denominado REAX.
 
-El modelo mantiene la arquitectura de su ancestro Qwen3.5 (etiqueta qwen3_5 en HuggingFace) y el denominado "joint-readout layout" de REAX, en el que el backbone Qwen3_5Model se acompaña de una cabeza de lectura que emite un código de respuesta. No es un modelo conversacional generalista: su propósito declarado es resolver filas de decisión tipadas, es decir, seleccionar una opción entre varias o responder afirmativa o negativamente a una pregunta, con una salida codificada.
+El modelo mantiene la arquitectura de su ancestro Qwen3.5 (etiqueta qwen3_5 en Hugging Face) y el denominado "joint-readout layout" de REAX, en el que el backbone Qwen3_5Model se acompaña de una cabeza de lectura que emite un código de respuesta. No es un modelo conversacional generalista: su propósito declarado es resolver filas de decisión tipadas, es decir, seleccionar una opción entre varias o responder afirmativa o negativamente a una pregunta, con una salida codificada.
 
 Su relevancia es acotada y muy específica. Se publica como un experimento de ajuste sobre un modelo base poco conocido, con solo 40 descargas y sin métricas publicadas, por lo que debe evaluarse como un artefacto de nicho para tareas de clasificación y decisión estructurada, no como un sustituto de un modelo generalista de 27B. La ventana de contexto, los idiomas y el pipeline no están declarados en la información disponible.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| sn92-gen-v52a | ~26,1B | no disponible | MIT | Decisión tipada (REAX) | HuggingFace, safetensors |
-| baselabs/mammoth-1 (progenitor) | ~27B (derivado de Qwen3.5-27B) | no disponible | MIT (post-entrenado desde Apache-2.0) | Generalista post-entrenado | HuggingFace |
-| danyloooah/sn92-generalist-m1-core2 (progenitor) | no disponible | no disponible | no disponible en la información | Generalista, fusión de pesos | HuggingFace |
-| Qwen3.5-27B (ancestro) | ~27B | no disponible en la información | Apache-2.0 | Generalista | HuggingFace |
+| sn92-gen-v52a | ~26,1B | no disponible | MIT | Decisión tipada (REAX) | Hugging Face, safetensors |
+| baselabs/mammoth-1 (progenitor) | ~27B (derivado de Qwen3.5-27B) | no disponible | MIT (post-entrenado desde Apache-2.0) | Generalista post-entrenado | Hugging Face |
+| danyloooah/sn92-generalist-m1-core2 (progenitor) | no disponible | no disponible | no disponible en la información | Generalista, fusión de pesos | Hugging Face |
+| Qwen3.5-27B (ancestro) | ~27B | no disponible en la información | Apache-2.0 | Generalista | Hugging Face |
 
 La comparación con alternativas de la misma categoría (modelos de decisión tipada) no está disponible: no se han identificado en la información proporcionada otros modelos con el mismo layout REAX ni métricas que permitan una comparación cuantitativa.
 
@@ -83,7 +83,7 @@ La comparación con alternativas de la misma categoría (modelos de decisión ti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/webmaster0105/sn92-gen-v52a
+- Modelo en Hugging Face: https://huggingface.co/webmaster0105/sn92-gen-v52a
 - Modelo base intermedio: https://huggingface.co/danyloooah/sn92-generalist-m1-core2
 - Modelo base original: https://huggingface.co/baselabs/mammoth-1
 - Dataset de entrenamiento: https://huggingface.co/datasets/tasksource/tasksource-jev-typed-decisions

@@ -83,10 +83,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parametros | Contexto | Rendimiento (fast-decisions, avg) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLiNER2.5-Decide (este repositorio) | 486.444.053 en safetensors; 340M segun la model card | no disponible | 60,2% | apache-2.0 | HuggingFace, libreria gliner2 |
-| GLiNER2.5-Decide-1B | 1B (aproximado, segun denominacion) | no disponible | 59,6% | no disponible | HuggingFace (fastino) |
-| GLiNER2.5-multi-Decide | 287M | no disponible | 56,7% | no disponible | HuggingFace (fastino) |
-| GLiFormer large-v1 | no disponible | no disponible | 49,0% | no disponible | HuggingFace (fastino) |
+| GLiNER2.5-Decide (este repositorio) | 486.444.053 en safetensors; 340M segun la model card | no disponible | 60,2% | apache-2.0 | Hugging Face, libreria gliner2 |
+| GLiNER2.5-Decide-1B | 1B (aproximado, segun denominacion) | no disponible | 59,6% | no disponible | Hugging Face (fastino) |
+| GLiNER2.5-multi-Decide | 287M | no disponible | 56,7% | no disponible | Hugging Face (fastino) |
+| GLiFormer large-v1 | no disponible | no disponible | 49,0% | no disponible | Hugging Face (fastino) |
 | SemIf (Qwen3.5-4B) | 4B | no disponible | 56,4% | no disponible | no disponible |
 | Laya Router | no disponible | no disponible | 46,6% | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ El dato más relevante de la comparativa es que la variante de menor tamaño de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Deepdive404-3/GLiNER2.5-Decide
+- Repositorio en Hugging Face: https://huggingface.co/Deepdive404-3/GLiNER2.5-Decide
 - Modelo base: https://huggingface.co/fastino/gliner2-large-v1
 - Modelo oficial de Fastino: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Variante de 1B: https://huggingface.co/fastino/GLiNER2.5-Decide-1B

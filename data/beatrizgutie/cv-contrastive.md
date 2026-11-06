@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`beatrizgutie/cv-contrastive` es un repositorio de HuggingFace que contiene una implementación compacta y personalizada de la arquitectura Albef (Align before Fuse, un modelo multimodal visión-lenguaje originalmente propuesto por Salesforce Research) orientada a tareas de aprendizaje contrastivo. Lo publica la usuaria beatrizgutie y se distribuye bajo licencia MIT. El repositorio incluye el código del modelo en `model.py`, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
+`beatrizgutie/cv-contrastive` es un repositorio de Hugging Face que contiene una implementación compacta y personalizada de la arquitectura Albef (Align before Fuse, un modelo multimodal visión-lenguaje originalmente propuesto por Salesforce Research) orientada a tareas de aprendizaje contrastivo. Lo publica la usuaria beatrizgutie y se distribuye bajo licencia MIT. El repositorio incluye el código del modelo en `model.py`, un fichero de configuración de arquitectura, una receta de entrenamiento por defecto y un checkpoint de inicialización en formato safetensors.
 
 Es importante subrayar que, según la propia model card, este no es un modelo preentrenado listo para producción: el checkpoint `model.safetensors` es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado con benchmarks publicados. La configuración declarada es de escala "large" e incorpora atención multi-query, fusión con gating, activación GELU y normalización RMSNorm.
 
@@ -43,7 +43,7 @@ No hay evidencia de entrenamiento completado: la model card indica explícitamen
 - Pruebas de humo en pipelines de CI: al ser un checkpoint de inicialización pequeño (33.088 parámetros), permite validar que un pipeline de carga, serialización y forward pass funciona antes de escalar a modelos reales.
 - Experimentos controlados de aprendizaje contrastivo: el fichero `training_args.json` con Lion y schedule "step" ofrece una receta de partida reproducible para comparar variantes con igual presupuesto de datos y semillas.
 - Base para ablaciones de arquitectura: investigadores pueden modificar atención, fusión o normalización y medir el impacto en una tarea concreta con un conjunto held-out, siguiendo la guía de evaluación de la model card.
-- Prototipado de adaptadores de carga: dado que requiere un adaptador explícito para APIs genéricas, es útil para desarrollar y probar integraciones personalizadas en HuggingFace Transformers.
+- Prototipado de adaptadores de carga: dado que requiere un adaptador explícito para APIs genéricas, es útil para desarrollar y probar integraciones personalizadas en Hugging Face Transformers.
 - Formación y tutoriales: como ejemplo mínimo y autocontenido de implementación de un modelo multimodal con objetivo contrastivo, encaja en materiales didácticos de deep learning.
 
 ## Benchmarks y rendimiento
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beatrizgutie/cv-contrastive | 33.088 | no disponible | No (inicialización) | MIT | HuggingFace |
+| beatrizgutie/cv-contrastive | 33.088 | no disponible | No (inicialización) | MIT | Hugging Face |
 | Albef original (Salesforce) | no disponible en la información | no disponible | Sí (preentrenado multimodal) | no disponible en la información | Repositorio oficial de Salesforce |
-| BLIP (Salesforce) | no disponible en la información | no disponible | Sí | no disponible en la información | HuggingFace |
-| CLIP (OpenAI) | no disponible en la información | no disponible | Sí | no disponible en la información | HuggingFace / OpenAI |
+| BLIP (Salesforce) | no disponible en la información | no disponible | Sí | no disponible en la información | Hugging Face |
+| CLIP (OpenAI) | no disponible en la información | no disponible | Sí | no disponible en la información | Hugging Face / OpenAI |
 
 La comparación directa no es significativa: este repositorio es una implementación didáctica sin entrenar, mientras que Albef, BLIP y CLIP son modelos preentrenados a gran escala. Se incluyen como referencia de la familia arquitectónica, no como alternativas funcionales equivalentes.
 
@@ -81,5 +81,5 @@ La comparación directa no es significativa: este repositorio es una implementac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beatrizgutie/cv-contrastive
+- Hugging Face: https://huggingface.co/beatrizgutie/cv-contrastive
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

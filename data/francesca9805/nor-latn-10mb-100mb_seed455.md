@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/nor-latn-10mb-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/nor_latn_10mb`, publicado por el usuario de HuggingFace francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en CPU y en cualquier GPU de consumo. El pipeline declarado es `text-generation` y la libreria de publicacion es `transformers` con pesos en formato safetensors.
+El modelo `francesca9805/nor-latn-10mb-100mb_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/nor_latn_10mb`, publicado por el usuario de Hugging Face francesca9805. Se trata de un modelo de generacion de texto de arquitectura GPT-2 (transformer decoder-only) con 39.087.104 parametros totales, lo que lo situa en la categoria de modelos pequenos, aptos para inferencia en CPU y en cualquier GPU de consumo. El pipeline declarado es `text-generation` y la libreria de publicacion es `transformers` con pesos en formato safetensors.
 
 La relevancia de esta ficha es acotada: no es un modelo de proposito general ni compite con los grandes modelos actuales, sino una pieza de experimentacion academica. El identificador del modelo base (`nor_latn_10mb`) indica que se trata de un modelo monolingue para noruego en escritura latina, entrenado sobre aproximadamente 10 MB de texto, y el nombre del ajuste (`nor-latn-10mb-100mb_seed455`) sugiere un experimento de escalado de datos (de 10 MB a 100 MB) con una semilla concreta (455). El proyecto de Weights & Biases asociado se denomina `new_tokenizers`, lo que apunta a una linea de investigacion centrada en tokenizacion y su efecto en modelos de bajos recursos.
 
@@ -50,7 +50,7 @@ El entrenamiento consistio en un ajuste fino supervisado (SFT) ejecutado con TRL
 - Prototipado rapido de generacion de texto en noruego: al ocupar menos de 1 GB en disco y caber en memoria de sobra, permite validar tuberias de generacion completa (tokenizacion, inferencia, postprocesado) sin coste de GPU.
 - Aumento de datos (data augmentation) para tareas de PLN en noruego: se puede usar para generar variaciones de frases que alimenten clasificadores o sistemas de etiquetado en escenarios con pocos datos anotados, asumiendo que la calidad del texto generado sera limitada.
 - Fine-tuning posterior para tareas especificas de clasificacion o etiquetado secuencial: la arquitectura GPT-2 admite anadir una cabeza de clasificacion y reentrenar sobre conjuntos etiquetados pequenos en noruego.
-- Docencia y experimentacion en cursos de PLN: permite ilustrar de extremo a extremo el ciclo de vida de un modelo (entrenamiento con TRL, publicacion en HuggingFace, evaluacion cualitativa) con un coste computacional minimo.
+- Docencia y experimentacion en cursos de PLN: permite ilustrar de extremo a extremo el ciclo de vida de un modelo (entrenamiento con TRL, publicacion en Hugging Face, evaluacion cualitativa) con un coste computacional minimo.
 - Inferencia en dispositivos sin GPU (edge, portatiles, contenedores con CPU): con 39 millones de parametros, la generacion es viable en CPU, lo que habilita demostraciones offline y entornos restringidos.
 - Pruebas de integracion de infraestructura de despliegue: sirve como modelo de humo (smoke test) para validar vLLM, TGI, llama.cpp u Ollama antes de desplegar modelos de mayor tamano, ya que la etiqueta `text-generation-inference` y `endpoints_compatible` indica compatibilidad declarada con estas herramientas.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-10mb-100mb_seed455 | 39.087.104 | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT con TRL sobre corpus de 100 MB (inferido del nombre) |
-| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | HuggingFace | Modelo base del anterior; monolingue noruego, ~10 MB de entrenamiento |
+| francesca9805/nor-latn-10mb-100mb_seed455 | 39.087.104 | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT con TRL sobre corpus de 100 MB (inferido del nombre) |
+| goldfish-models/nor_latn_10mb | no disponible | no disponible | no disponible | Hugging Face | Modelo base del anterior; monolingue noruego, ~10 MB de entrenamiento |
 | GPT-2 small | 124.000.000 (aproximado) | 1.024 tokens | MIT | Ampliamente disponible | Referencia de la misma arquitectura, mayor tamano y entrenamiento multilingue/ingles |
-| Modelos noruegos tipo NorBERT / NB-BERT | no disponible | no disponible | no disponible | HuggingFace | No se dispone de datos verificados en la informacion proporcionada; se citan unicamente como categoria alternativa a evaluar |
+| Modelos noruegos tipo NorBERT / NB-BERT | no disponible | no disponible | no disponible | Hugging Face | No se dispone de datos verificados en la informacion proporcionada; se citan unicamente como categoria alternativa a evaluar |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de estos modelos entre si.
 
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-10mb-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-10mb-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/ahpxx761

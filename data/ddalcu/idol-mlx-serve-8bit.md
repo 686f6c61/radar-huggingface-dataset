@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Idol-MLX-Serve-8bit | Image-to-3D (malla + Gaussian splatting) | no disponible | no aplica | Apache-2.0 (DINOv3 con licencia propia) | HuggingFace, solo Apple Silicon |
-| speridlabs/idol | Image-to-3D (modelo base sin cuantizar) | no disponible | no aplica | Apache-2.0 | HuggingFace |
+| Idol-MLX-Serve-8bit | Image-to-3D (malla + Gaussian splatting) | no disponible | no aplica | Apache-2.0 (DINOv3 con licencia propia) | Hugging Face, solo Apple Silicon |
+| speridlabs/idol | Image-to-3D (modelo base sin cuantizar) | no disponible | no aplica | Apache-2.0 | Hugging Face |
 | Modelos image-to-3D alternativos (p. ej. TripoSR, Trellis) | Image-to-3D | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa no esta disponible.
@@ -81,7 +81,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ddalcu/Idol-MLX-Serve-8bit
+- Hugging Face: https://huggingface.co/ddalcu/Idol-MLX-Serve-8bit
 - Modelo base: https://huggingface.co/speridlabs/idol
 - mlx-serve: https://mlxserve.com/
 - Repositorio mlx-serve: https://github.com/ddalcu/mlx-serve

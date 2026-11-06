@@ -41,7 +41,7 @@ El modelo base BamiBERT es un encoder transformer tipo BERT, entrenado desde cer
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El model-index de HuggingFace está vacío y la model card no incluye métricas de evaluación.
+No se han publicado resultados de benchmarks en la información disponible. El model-index de Hugging Face está vacío y la model card no incluye métricas de evaluación.
 
 ## Requisitos de hardware
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en tareas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vietnamese-acsa/bamibert-res-acsa-multilabel
+- Modelo en Hugging Face: https://huggingface.co/vietnamese-acsa/bamibert-res-acsa-multilabel
 - Modelo base BamiBERT: https://huggingface.co/Qualcomm-AI-Research/BamiBERT
 - Paper de BamiBERT (arXiv): https://arxiv.org/abs/2607.02259
 - Versión HTML del paper: https://arxiv.org/html/2607.02259v1

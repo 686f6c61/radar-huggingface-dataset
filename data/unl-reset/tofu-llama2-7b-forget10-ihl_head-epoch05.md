@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch05 | 6,74 B | no disponible (base 4096) | Unlearning TOFU (epoca 5) | llama2 | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 | Modelo base ajustado con TOFU (sin olvidar) | llama2 | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista | llama2 | HuggingFace |
-| Meta Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista | llama2 | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch05 | 6,74 B | no disponible (base 4096) | Unlearning TOFU (epoca 5) | llama2 | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | 6,74 B | 4096 | Modelo base ajustado con TOFU (sin olvidar) | llama2 | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista | llama2 | Hugging Face |
+| Meta Llama-2-7b-chat-hf | 6,74 B | 4096 | Chat generalista | llama2 | Hugging Face |
 
 La comparacion relevante es con el modelo base `locuslab/tofu_ft_llama2-7b`: este checkpoint deberia mostrar menor probabilidad sobre `forget10` y un rendimiento en `retain90` comparable, aunque no se aportan numeros que lo confirmen.
 
@@ -89,7 +89,7 @@ La comparacion relevante es con el modelo base `locuslab/tofu_ft_llama2-7b`: est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch05
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget10-ihl_head-epoch05
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Modelo de inicializacion de embeddings y cabeza LM: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Licencia Llama 2: https://ai.meta.com/llama/license/

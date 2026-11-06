@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniMind-MoE-198M-A64M-GSM8K-GRPO-Rule-v1.0 es un modelo lingüístico experimental de pequeño tamaño desarrollado por el usuario caspar y publicado en HuggingFace. Se trata de un ajuste mediante GRPO (Group Relative Policy Optimization, un algoritmo de tipo RLHF) a partir del checkpoint SFT `caspar/MiniMind-MoE-198A-A64M-Mixed-SFT-v1.0`, que a su vez pertenece al ecosistema MiniMind, un proyecto open source de modelos miniatura entrenados desde cero. El modelo tiene 198,4 millones de parámetros totales en arquitectura MoE (mixture of experts), de los cuales aproximadamente 64 millones están activos por token según la convención de nomenclatura A64M.
+MiniMind-MoE-198M-A64M-GSM8K-GRPO-Rule-v1.0 es un modelo lingüístico experimental de pequeño tamaño desarrollado por el usuario caspar y publicado en Hugging Face. Se trata de un ajuste mediante GRPO (Group Relative Policy Optimization, un algoritmo de tipo RLHF) a partir del checkpoint SFT `caspar/MiniMind-MoE-198A-A64M-Mixed-SFT-v1.0`, que a su vez pertenece al ecosistema MiniMind, un proyecto open source de modelos miniatura entrenados desde cero. El modelo tiene 198,4 millones de parámetros totales en arquitectura MoE (mixture of experts), de los cuales aproximadamente 64 millones están activos por token según la convención de nomenclatura A64M.
 
 El propósito del modelo es principalmente de investigación: comparar el efecto de dos funciones de recompensa distintas (una basada en reglas estrictas y otra basada en un modelo de recompensa neuronal de Skywork) sobre el rendimiento en el dataset GSM8K de problemas matemáticos de primaria. El propio autor advierte explícitamente que no es un solucionador aritmético fiable: la precisión final en el test oficial de GSM8K es de apenas el 1,97 %, aunque el experimento demuestra de forma rigurosa y reproducible el pipeline completo de GRPO sobre un modelo diminuto. Su relevancia actual radica en servir como referencia didáctica y reproductible para quien quiera estudiar post-entrenamiento con RL en modelos pequeños, no como modelo productivo.
 
@@ -68,10 +68,10 @@ Detalles adicionales publicados: 318 errores de formato y 317 casos de presupues
 
 | Modelo | Parámetros totales | Contexto | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMind-MoE-198M-A64M-GSM8K-GRPO-Rule-v1.0 | 198M (A64M) | no disponible (≥768 tokens en entrenamiento) | 1,97 % | Apache-2.0 | HuggingFace, safetensors FP32 |
-| MiniMind-MoE-198M-A64M-GSM8K-GRPO-Skywork (variante gemela) | 198M (A64M) | no disponible | no disponible | Apache-2.0 | HuggingFace (mismo autor) |
-| Qwen2.5-0.5B-Instruct | 494M (denso) | 32.768 tokens | no disponible en la información proporcionada | Qwen Research / Apache-2.0 (según versión) | HuggingFace, múltiples cuantizaciones |
-| SmolLM2-135M-Instruct (HuggingFace) | 135M (denso) | 8.192 tokens | no disponible en la información proporcionada | Apache-2.0 | HuggingFace, safetensors |
+| MiniMind-MoE-198M-A64M-GSM8K-GRPO-Rule-v1.0 | 198M (A64M) | no disponible (≥768 tokens en entrenamiento) | 1,97 % | Apache-2.0 | Hugging Face, safetensors FP32 |
+| MiniMind-MoE-198M-A64M-GSM8K-GRPO-Skywork (variante gemela) | 198M (A64M) | no disponible | no disponible | Apache-2.0 | Hugging Face (mismo autor) |
+| Qwen2.5-0.5B-Instruct | 494M (denso) | 32.768 tokens | no disponible en la información proporcionada | Qwen Research / Apache-2.0 (según versión) | Hugging Face, múltiples cuantizaciones |
+| SmolLM2-135M-Instruct (Hugging Face) | 135M (denso) | 8.192 tokens | no disponible en la información proporcionada | Apache-2.0 | Hugging Face, safetensors |
 
 Nota: la variante gemela Skywork parte del mismo checkpoint SFT e hiperparámetros idénticos, por lo que es la comparación más controlada disponible; su resultado exacto en GSM8K no consta en la información proporcionada.
 
@@ -89,7 +89,7 @@ Nota: la variante gemela Skywork parte del mismo checkpoint SFT e hiperparámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-GSM8K-GRPO-Rule-v1.0
+- Modelo en Hugging Face: https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-GSM8K-GRPO-Rule-v1.0
 - Modelo base (SFT): https://huggingface.co/caspar/MiniMind-MoE-198M-A64M-Mixed-SFT-v1.0
 - Dataset de entrenamiento SFT: https://huggingface.co/datasets/caspar/MiniMind-Mixed-SFT-Training-v1.0
 - Código MiniMind (GitHub): https://github.com/jingyaogong/minimind

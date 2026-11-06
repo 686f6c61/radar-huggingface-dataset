@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario chaofen-delicious bajo licencia MIT. El repositorio se presenta como un espacio de prueba: tiene un tamano de 0.0 GB, cero descargas y cero likes, y la model card incluye referencias a recursos inexistentes (imagenes en rutas como figures/fig1.png y plantillas de prompt genéricas). No contiene pesos ni ficheros de modelo descargables.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario chaofen-delicious bajo licencia MIT. El repositorio se presenta como un espacio de prueba: tiene un tamano de 0.0 GB, cero descargas y cero likes, y la model card incluye referencias a recursos inexistentes (imagenes en rutas como figures/fig1.png y plantillas de prompt genéricas). No contiene pesos ni ficheros de modelo descargables.
 
 La informacion disponible es internamente contradictoria. Las etiquetas del repositorio indican arquitectura BERT y pipeline de feature-extraction, mientras que la model card describe un modelo generativo de razonamiento con post-entrenamiento, soporte de function calling y modo de pensamiento. Ademas, la tabla de evaluacion compara entidades anonimas (Model1, Model2, Model1-v2) sin nombrar benchmarks estandar, lo que impide validar cualquier resultado.
 
@@ -83,7 +83,7 @@ Ademas, la model card afirma una mejora en AIME 2025 del 70% al 87.5% de precisi
 - Compatibilidad con GPU de consumo: no disponible.
 - Opciones de despliegue: el repositorio declara compatibilidad con la libreria transformers y con endpoints_compatible, pero no publica pesos, por lo que no es desplegable en vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: no disponibles.
-- Tamano del repositorio: 0.0 GB, lo que descarta cualquier peso de modelo alojado en HuggingFace.
+- Tamano del repositorio: 0.0 GB, lo que descarta cualquier peso de modelo alojado en Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -112,7 +112,7 @@ La model card compara el modelo con entidades anonimizadas (Model1, Model2 y Mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chaofen-delicious/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/chaofen-delicious/MyAwesomeModel-TestRepo
 - Model card del autor: incluida en el propio repositorio (referencia interna).
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a sitios sin relacion (Board Game Arena y BGA Diffusion) y se han descartado.

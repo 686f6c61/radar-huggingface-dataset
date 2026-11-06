@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Corosanite/Qwen3.5-122B-A10B-NVFP4-GB10
+- Repositorio Hugging Face: https://huggingface.co/Corosanite/Qwen3.5-122B-A10B-NVFP4-GB10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-122B-A10B
 - LLM Compressor (vLLM): https://github.com/vllm-project/llm-compressor
 - PR de soporte Qwen3.5 MoE en LLM Compressor: https://github.com/vllm-project/llm-compressor/pull/2383

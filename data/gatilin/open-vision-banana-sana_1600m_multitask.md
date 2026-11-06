@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gatilin/open-vision-banana-sana_1600m_multitask` es un repositorio publicado en HuggingFace por el usuario `gatilin` el 12 de septiembre de 2026, bajo licencia Apache 2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card no contiene mas contenido que el encabezado YAML con la licencia. Es, por tanto, un artefacto practicamente indocumentado.
+El modelo `gatilin/open-vision-banana-sana_1600m_multitask` es un repositorio publicado en Hugging Face por el usuario `gatilin` el 12 de septiembre de 2026, bajo licencia Apache 2.0. En el momento de redactar esta ficha acumula 0 descargas y 0 "likes", y su model card no contiene mas contenido que el encabezado YAML con la licencia. Es, por tanto, un artefacto practicamente indocumentado.
 
 El identificador del modelo sugiere tres cosas que no estan confirmadas en la informacion disponible: un tamano de aproximadamente 1600 millones de parametros, una arquitectura de la familia Sana (el modelo de generacion de imagenes eficiente de NVIDIA, basado en transformer de difusion con atencion lineal) y un entrenamiento multitarea. Tambien sugiere, por el segmento `open-vision-banana`, algun tipo de capacidad de vision o de generacion de imagenes. Ninguna de estas hipotesis puede verificarse con los datos proporcionados.
 
@@ -20,7 +20,7 @@ La relevancia de esta ficha es limitada y debe leerse como advertencia: sin mode
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de publicacion | 2026-09-12 |
 | Ultima actualizacion | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
@@ -38,7 +38,7 @@ Tampoco hay informacion sobre el numero de tokens de entrenamiento, la composici
 - Generacion o comprension de imagenes: no disponible (el segmento `vision` del identificador sugiere capacidades visuales, sin confirmar).
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible (HuggingFace no declara ningun idioma).
+- Capacidades multilingues: no disponible (Hugging Face no declara ningun idioma).
 - Capacidades especiales (modo thinking, audio, vision): no disponible.
 - Multitarea: el identificador incluye `multitask`, pero no se detallan las tareas ni su rendimiento.
 
@@ -83,7 +83,7 @@ No disponible. La busqueda web realizada no ha devuelto ningun resultado relacio
 - Artefacto sin traccion: 0 descargas y 0 likes indican que no ha sido validado por la comunidad; no hay issues, discusiones ni terceros que reporten resultados.
 - Riesgo de alucinacion: no evaluable, al no conocerse la tarea ni el dominio de entrenamiento. En caso de ser un modelo generativo, el riesgo existira y no hay informacion sobre mitigaciones.
 - Sesgos: no disponible. Se desconoce la composicion del dataset de entrenamiento, por lo que no se puede valorar el sesgo demografico, cultural o linguistico.
-- Limitaciones de contexto e idioma: no disponible. HuggingFace no declara ningun idioma soportado.
+- Limitaciones de contexto e idioma: no disponible. Hugging Face no declara ningun idioma soportado.
 - Licencia: Apache 2.0 permite uso comercial, modificacion y redistribucion con atribucion y sin garantia. Es el unico dato solido y favorable de todo el repositorio.
 - Trazabilidad: se desconoce si los pesos son originales, un fine-tuning de otro modelo o una conversion. Esto tiene implicaciones legales y tecnicas si el modelo base tuviera una licencia distinta.
 - Caveat de produccion: no se recomienda integrar este modelo en ningun sistema en produccion sin antes descargar el repositorio, inspeccionar `config.json` y los archivos de pesos, y ejecutar una evaluacion propia sobre el caso de uso previsto.
@@ -91,7 +91,7 @@ No disponible. La busqueda web realizada no ha devuelto ningun resultado relacio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gatilin/open-vision-banana-sana_1600m_multitask
+- Hugging Face: https://huggingface.co/gatilin/open-vision-banana-sana_1600m_multitask
 - Perfil del autor: https://huggingface.co/gatilin
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; los unicos resultados devueltos no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MaximilianSchneider/poolformer-classification es un repositorio experimental alojado en HuggingFace que contiene una implementación propia de una arquitectura PoolFormer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica en la model card que el fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 26 de septiembre de 2026.
+MaximilianSchneider/poolformer-classification es un repositorio experimental alojado en Hugging Face que contiene una implementación propia de una arquitectura PoolFormer orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un checkpoint listo para producción: el propio autor indica en la model card que el fichero `model.safetensors` es únicamente una inicialización válida para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 26 de septiembre de 2026.
 
 El interés del repositorio es fundamentalmente didáctico y de investigación: sirve como punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La configuración declarada corresponde a una escala "xlarge" con atención dilatada, fusión mediante concat mlp, activación ReLU y normalización GroupNorm, pero el checkpoint real empaquetado en safetensors contiene solo 24.832 parámetros, una cifra muy alejada de lo que implicaría una red de escala xlarge entrenada, lo que refuerza su naturaleza de artefacto de prueba.
 
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento de este repositorio, por lo que no es posi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MaximilianSchneider/poolformer-classification | 24.832 (checkpoint de inicializacion) | no disponible | no disponible (sin entrenar) | apache-2.0 | HuggingFace, 0 descargas |
+| MaximilianSchneider/poolformer-classification | 24.832 (checkpoint de inicializacion) | no disponible | no disponible (sin entrenar) | apache-2.0 | Hugging Face, 0 descargas |
 | Checkpoints oficiales de PoolFormer/MetaFormer | no disponible | no disponible | no disponible | no disponible | no verificada en esta ficha |
 | Otros clasificadores de vision (ResNet, ViT) | no disponible | no disponible | no disponible | no disponible | no verificada en esta ficha |
 
@@ -80,7 +80,7 @@ No se han proporcionado cifras que permitan comparar parametros, contexto, rendi
 - No se han documentado sesgos, pero al no existir entrenamiento ni dataset asociado, tampoco puede evaluarse su comportamiento.
 - Riesgo de alucinacion: no aplica a un clasificador, pero cualquier resultado derivado de este codigo debe considerarse no validado.
 - Ausencia de benchmarks y de metricas: cualquier comparacion con modelos publicados carece de base.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace pueden fallar sin un adaptador explicito; es necesario revisar `finetune.py` y `config.json`.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face pueden fallar sin un adaptador explicito; es necesario revisar `finetune.py` y `config.json`.
 - Discrepancia entre la escala declarada ("xlarge") y el numero real de parametros del checkpoint (24.832), lo que indica que la configuracion no se corresponde con un modelo entrenado a esa escala.
 - Licencia apache-2.0: permite uso comercial del codigo y los pesos, pero deben revisarse por separado los terminos de los datos externos que se utilicen para entrenar.
 - Repositorio sin traccion: 0 descargas y 0 likes, sin mantenimiento ni comunidad documentada.
@@ -88,6 +88,6 @@ No se han proporcionado cifras que permitan comparar parametros, contexto, rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MaximilianSchneider/poolformer-classification
+- Hugging Face: https://huggingface.co/MaximilianSchneider/poolformer-classification
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

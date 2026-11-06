@@ -84,7 +84,7 @@ La comparativa se limita a modelos de la misma categoria (text-to-SQL o generaci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/TinyLlama-text2SQL-alias-indentacao-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/TinyLlama-text2SQL-alias-indentacao-GGUF
 - Modelo base: https://huggingface.co/NESPED-GEN/TinyLlama-text2SQL-alias-indentacao
 - Pagina de descargas del autor: https://hf.tst.eu/model#TinyLlama-text2SQL-alias-indentacao-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

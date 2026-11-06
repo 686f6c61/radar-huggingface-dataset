@@ -4,7 +4,7 @@
 
 AVTR-1 es un modelo de generación de avatares de vídeo en tiempo real desarrollado por Avaturn Live, diseñado para diálogo en vivo. A partir de una imagen de retrato y audio de doble flujo (voz y entorno), genera un avatar parlante con sincronización labial y comportamiento de escucha activa a 25 fotogramas por segundo en una única GPU. El modelo combina técnicas de flow-matching con un enfoque autoregresivo, lo que permite una generación fluida y coherente del movimiento facial y gestual.
 
-La versión alojada en HuggingFace bajo el identificador `bentay85/avtr-1-tensorrt-ada` es una adaptación optimizada con TensorRT, pensada para despliegue en producción. El acceso al repositorio está restringido (gated) y requiere aceptar la licencia comunitaria `avtr-1-community-license`. Aunque la ficha no proporciona detalles sobre parámetros, contexto o idiomas, la arquitectura está orientada a aplicaciones de avatares conversacionales en tiempo real, con especial énfasis en latencia baja y rendimiento en hardware NVIDIA.
+La versión alojada en Hugging Face bajo el identificador `bentay85/avtr-1-tensorrt-ada` es una adaptación optimizada con TensorRT, pensada para despliegue en producción. El acceso al repositorio está restringido (gated) y requiere aceptar la licencia comunitaria `avtr-1-community-license`. Aunque la ficha no proporciona detalles sobre parámetros, contexto o idiomas, la arquitectura está orientada a aplicaciones de avatares conversacionales en tiempo real, con especial énfasis en latencia baja y rendimiento en hardware NVIDIA.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar la licencia comunitaria `avtr-1-community-license` en HuggingFace, lo que puede limitar su uso comercial o requerir revisión legal.
+- Acceso restringido: el modelo requiere aceptar la licencia comunitaria `avtr-1-community-license` en Hugging Face, lo que puede limitar su uso comercial o requerir revisión legal.
 - No se dispone de información sobre sesgos potenciales en la generación de avatares (por ejemplo, variaciones étnicas o de género) ni sobre la calidad en idiomas distintos al inglés.
 - La generación de vídeo puede presentar alucinaciones visuales o artefactos en condiciones de iluminación o poses extremas, aunque no hay datos públicos al respecto.
 - La dependencia de TensorRT limita el despliegue a hardware NVIDIA, excluyendo GPUs de otros fabricantes.
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - bentay85/avtr-1-tensorrt-ada](https://huggingface.co/bentay85/avtr-1-tensorrt-ada)
+- [Hugging Face - bentay85/avtr-1-tensorrt-ada](https://huggingface.co/bentay85/avtr-1-tensorrt-ada)
 - [GitHub - LucasMatuszewski/avtr-1-AI-Video-Avatar-Model-from-Avaturn](https://github.com/LucasMatuszewski/avtr-1-AI-Video-Avatar-Model-from-Avaturn)
 - [GitHub - csryxx/avtr-1-AI-Video-Avatar-Model-from-Avaturn](https://github.com/csryxx/avtr-1-AI-Video-Avatar-Model-from-Avaturn)
 - [LocalClaw - Guía de AVTR-1](https://localclaw.io/video/avtr-1)

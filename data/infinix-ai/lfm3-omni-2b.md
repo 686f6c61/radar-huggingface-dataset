@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-Omni-2B | 2,17B | no disponible | texto, imagen, vídeo, audio (entrada); texto y voz (salida) | lfm1.0 (propietaria) | HuggingFace, transformers |
+| LFM3-Omni-2B | 2,17B | no disponible | texto, imagen, vídeo, audio (entrada); texto y voz (salida) | lfm1.0 (propietaria) | Hugging Face, transformers |
 | Alternativas ómnimodales de gran tamaño | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de borde multimodales | no disponible en esta ficha | no disponible | no disponible | no disponible | no disponible |
 
@@ -75,7 +75,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Limitaciones y advertencias
 
-- Licencia propietaria lfm1.0: es imprescindible revisar los términos del archivo LICENSE antes de cualquier uso comercial; la etiqueta "other" en HuggingFace indica que no es una licencia open source estándar.
+- Licencia propietaria lfm1.0: es imprescindible revisar los términos del archivo LICENSE antes de cualquier uso comercial; la etiqueta "other" en Hugging Face indica que no es una licencia open source estándar.
 - No se documentan sesgos conocidos, pero al ser un modelo entrenado con datos web y multimodales, es razonable esperar sesgos en visión, audio y texto; el autor no aporta evaluación al respecto.
 - Riesgo de alucinación: no cuantificado por el autor; como todo LLM, puede generar afirmaciones incorrectas, especialmente en descripciones de imágenes o transcripciones con ruido.
 - Longitud de contexto no publicada: limita la planificación de casos de uso con conversaciones largas o vídeos extensos.
@@ -86,10 +86,10 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-ai/LFM3-Omni-2B
+- Hugging Face: https://huggingface.co/Infinix-ai/LFM3-Omni-2B
 - Modelo de referencia de la familia (LFM3-1.7B): https://huggingface.co/LiquidAI/LFM3-1.7B
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de Liquid AI: https://docs.liquid.ai/lfm/getting-started/welcome
 - Consola/API: https://console.liquid.ai/dashboard
 - Playground de voz: https://playground.liquid.ai/talk
-- Colección LFM3 en HuggingFace: https://huggingface.co/collections/LiquidAI/lfm3
+- Colección LFM3 en Hugging Face: https://huggingface.co/collections/LiquidAI/lfm3

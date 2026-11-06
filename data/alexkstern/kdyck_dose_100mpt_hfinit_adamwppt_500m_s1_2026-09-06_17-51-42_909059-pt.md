@@ -64,13 +64,13 @@ No se han identificado modelos comparables en la informacion disponible. El mode
 - Modelo experimental, no disenado para uso en produccion.
 - No se han documentado sesgos, riesgos de alucinacion ni evaluaciones de seguridad.
 - Entrenado principalmente con FineWeb (ingles) y un dataset sintetico Dyck, por lo que su conocimiento del mundo y su capacidad de lenguaje natural son limitados.
-- El checkpoint no incluye tokenizer ni configuracion estandar de HuggingFace, lo que dificulta su integracion con pipelines convencionales.
+- El checkpoint no incluye tokenizer ni configuracion estandar de Hugging Face, lo que dificulta su integracion con pipelines convencionales.
 - No se han publicado evaluaciones externas ni comparativas con otros modelos.
 - La licencia Apache-2.0 permite uso comercial, pero el autor no ofrece garantias de soporte ni mantenimiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s1_2026-09-06_17-51-42_909059-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfinit_adamwppt_500M_s1_2026-09-06_17-51-42_909059-pt
 - Registro de entrenamiento (W&B): https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/1poryy7u
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Checkpoint relacionado `kdyck_dose_100Mpt_20M_s1`: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_20M_s1_2026-08-14_18-11-51_990138-pt

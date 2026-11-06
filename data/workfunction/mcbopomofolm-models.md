@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| workfunction/McBopomofoLM-models | Encoder 25M + decodificador ~60M | Variantes de 8 a 256 tokens (encoder) y 16 a 96 (decoder) | Core ML | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Luigi/sloth-ime-models (modelo base) | No disponible | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| workfunction/McBopomofoLM-models | Encoder 25M + decodificador ~60M | Variantes de 8 a 256 tokens (encoder) y 16 a 96 (decoder) | Core ML | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Luigi/sloth-ime-models (modelo base) | No disponible | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de lenguaje para IME de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de terceros que permitan una comparacion cuantitativa fiable con alternativas de la misma categoria.
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros que perm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/workfunction/McBopomofoLM-models
+- Modelo en Hugging Face: https://huggingface.co/workfunction/McBopomofoLM-models
 - Modelo base: https://huggingface.co/Luigi/sloth-ime-models
 - Repositorio McBopomofoLM: https://github.com/workfunction/McBopomofoLM
 - Espacio slothing-web (origen de `char2id.tsv`): https://huggingface.co/spaces/Luigi/slothing-web

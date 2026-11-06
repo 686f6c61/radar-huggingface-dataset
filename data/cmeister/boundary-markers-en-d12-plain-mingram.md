@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boundary markers, English, 12 layers: `plain` tokenizer, MinGram training es un conjunto de tres modelos de lenguaje (semillas 0, 1 y 2) publicados por Clara Meister (usuario `cmeister` en HuggingFace) junto a Sander Land, como parte del material experimental del artículo "Explicit Boundary Markers for Subword Vocabularies" (arXiv:2608.08847). No son modelos pensados para uso general: son el brazo de control de un estudio comparativo sobre tokenización. Los tres checkpoints comparten arquitectura, datos, hiperparámetros y tokenizer, y solo se diferencian en la semilla de inicialización y en el orden de los shards de entrenamiento, de forma que las diferencias observadas entre tokenizers puedan atribuirse al tokenizer y no al azar.
+Boundary markers, English, 12 layers: `plain` tokenizer, MinGram training es un conjunto de tres modelos de lenguaje (semillas 0, 1 y 2) publicados por Clara Meister (usuario `cmeister` en Hugging Face) junto a Sander Land, como parte del material experimental del artículo "Explicit Boundary Markers for Subword Vocabularies" (arXiv:2608.08847). No son modelos pensados para uso general: son el brazo de control de un estudio comparativo sobre tokenización. Los tres checkpoints comparten arquitectura, datos, hiperparámetros y tokenizer, y solo se diferencian en la semilla de inicialización y en el orden de los shards de entrenamiento, de forma que las diferencias observadas entre tokenizers puedan atribuirse al tokenizer y no al azar.
 
 El modelo es un transformer decoder-only de 12 capas, ancho 768 y 6 cabezas de atención, con una ventana de contexto de 2.048 tokens, entrenado con el framework nanochat (commit `92d63d4`) sobre 1.340 millones de tokens (2.553 pasos de 524.288 tokens) usando los 8 primeros shards de ClimbMix. El tokenizer es un vocabulario MinGram de 34.685 entradas (34.686 en el modelo, contando el token de inicio de secuencia) entrenado sobre una muestra de 5 GB de FineWeb en inglés, con pretokenización por SCRIPT-encoding y sin marcadores de frontera explícitos; de ahí la etiqueta `plain`.
 
@@ -91,12 +91,12 @@ Frente a esas alternativas, la diferencia practica no es el rendimiento sino el 
 - Restricciones de licencia: Apache 2.0, que permite uso comercial y modificacion con atribucion. Sin embargo, la licencia del corpus de entrenamiento (FineWeb, ClimbMix) no se detalla en la model card; conviene verificarla antes de un uso comercial.
 - Los checkpoints publicados no son los que generaron las cifras del articulo: son reentrenamientos con diferencias de hasta +0,00016 bits por byte. Cualquier comparacion con las tablas publicadas debe tener en cuenta ese margen.
 - Ausencia de pesos en safetensors y GGUF: no hay ruta de despliegue directa en vLLM, TGI, llama.cpp u Ollama, y la conversion corre por cuenta del usuario.
-- El repositorio tiene cero descargas y cero likes, y no cuenta con pipeline declarado en HuggingFace: no hay validacion de la comunidad ni ejemplos de uso en produccion.
+- El repositorio tiene cero descargas y cero likes, y no cuenta con pipeline declarado en Hugging Face: no hay validacion de la comunidad ni ejemplos de uso en produccion.
 - El tokenizer requiere el repositorio `script_tok` y su clase `BoundaryMinGramModel`; no es un tokenizer cargable con `transformers` de forma estandar, lo que anade friccion de integracion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-plain-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-plain-mingram
 - Articulo "Explicit Boundary Markers for Subword Vocabularies": https://arxiv.org/abs/2608.08847
 - Repositorio nanochat (commit `92d63d4`): https://github.com/karpathy/nanochat
 - Repositorio script_tok, con el codigo del tokenizer y los scripts de entrenamiento: https://github.com/sanderland/script_tok

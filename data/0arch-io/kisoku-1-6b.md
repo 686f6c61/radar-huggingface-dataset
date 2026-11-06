@@ -112,7 +112,7 @@ Contexto largo (RULER integrado en el harness, 13 tareas, media; 100 muestras po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0arch-io/kisoku-1.6b
+- Modelo en Hugging Face: https://huggingface.co/0arch-io/kisoku-1.6b
 - Fine-tune conversacional: https://huggingface.co/0arch-io/kisoku-1.6b-chat
 - Builds GGUF: https://huggingface.co/0arch-io/kisoku-1.6b-gguf
 - Colección Kisoku 1.6B: https://huggingface.co/collections/0arch-io/kisoku-16b

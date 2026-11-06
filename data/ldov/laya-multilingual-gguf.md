@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | Laya Multilingual GGUF (este) | ~322 M | 1024 | 100+ | Apache 2.0 | Runtime `laya` (ggmlc), no llama.cpp |
 | convaiinnovations/laya-multilingual (base) | ~322 M | 1024 | 100+ | Apache 2.0 | Pesos originales (PyTorch/safetensors); el runtime de referencia es `laya` |
-| Encoders multilingues tipo XLM-R base / mDeBERTa-v3 base | ~278 M | no disponible | 100+ | MIT / varias | ecosistema HuggingFace Transformers |
+| Encoders multilingues tipo XLM-R base / mDeBERTa-v3 base | ~278 M | no disponible | 100+ | MIT / varias | ecosistema Hugging Face Transformers |
 
 Los datos de rendimiento comparado no están disponibles en la información proporcionada. La diferencia funcional principal frente a encoders multilingües convencionales es que este modelo puntúa preguntas tipadas (`choice` / `score` / `noul`) en una sola pasada en lugar de exponer una cabeza de clasificación genérica, y que se distribuye compilado por ggmlc en lugar de como checkpoint de Transformers.
 
@@ -90,7 +90,7 @@ Los datos de rendimiento comparado no están disponibles en la información prop
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ldov/laya-multilingual-GGUF
+- Repositorio Hugging Face: https://huggingface.co/ldov/laya-multilingual-GGUF
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Repositorio ggmlc: https://github.com/monatis/ggmlc
 - Ejemplo de Laya en ggmlc: https://github.com/monatis/ggmlc/tree/main/examples/laya

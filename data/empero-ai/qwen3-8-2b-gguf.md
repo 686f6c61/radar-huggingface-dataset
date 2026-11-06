@@ -92,7 +92,7 @@ La destilación mejora sustancialmente el rendimiento respecto al base sin aumen
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo GGUF](https://huggingface.co/empero-ai/Qwen3.8-2B-GGUF)
+- [Repositorio Hugging Face del modelo GGUF](https://huggingface.co/empero-ai/Qwen3.8-2B-GGUF)
 - [Modelo base (safetensors)](https://huggingface.co/empero-ai/Qwen3.8-2B)
 - [Modelo base original Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B)
 - [Sitio web de Empero](https://empero.org)

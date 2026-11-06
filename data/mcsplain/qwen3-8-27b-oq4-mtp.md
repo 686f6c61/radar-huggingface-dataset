@@ -60,8 +60,8 @@ La model card del autor incluye una tabla de benchmarks comparando Qwen3.8-27B c
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | Híbrido DeltaNet + Attention | No disponible | HuggingFace |
-| Qwen3.6-27B | 27B | No disponible | Similar (Qwen3.5) | No disponible | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K (ext. 1M) | Híbrido DeltaNet + Attention | No disponible | Hugging Face |
+| Qwen3.6-27B | 27B | No disponible | Similar (Qwen3.5) | No disponible | Hugging Face |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible | API Qwen Cloud |
 | Muse Glimmer-30B | 30B | No disponible | No disponible | No disponible | No disponible |
 | Opus4.6 Max | No disponible | No disponible | No disponible | No disponible | No disponible |
@@ -79,6 +79,6 @@ La comparativa se basa únicamente en los nombres mencionados en la tabla de ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mcsplain/Qwen3.8-27B-oQ4-mtp
+- Repositorio Hugging Face: https://huggingface.co/mcsplain/Qwen3.8-27B-oQ4-mtp
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-27B
 - Qwen Cloud (servicio gestionado): https://www.qwencloud.com

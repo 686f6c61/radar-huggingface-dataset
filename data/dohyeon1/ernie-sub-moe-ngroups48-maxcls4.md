@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ERNIE-Sub-MoE-ngroups48-maxcls4 es un modelo de generacion de texto publicado en HuggingFace por el usuario Dohyeon1. Se trata de una variante basada en la arquitectura ERNIE 4.5 MoE (etiqueta `ernie4_5_moe` en el Hub) con aproximadamente 21.825 millones de parametros totales, segun los pesos en safetensors del repositorio. El nombre indica dos rasgos de configuracion: 48 grupos de expertos (`ngroups48`) y un limite de clasificacion o seleccion de expertos por token (`maxcls4`), aunque el autor no documenta su significado exacto.
+ERNIE-Sub-MoE-ngroups48-maxcls4 es un modelo de generacion de texto publicado en Hugging Face por el usuario Dohyeon1. Se trata de una variante basada en la arquitectura ERNIE 4.5 MoE (etiqueta `ernie4_5_moe` en el Hub) con aproximadamente 21.825 millones de parametros totales, segun los pesos en safetensors del repositorio. El nombre indica dos rasgos de configuracion: 48 grupos de expertos (`ngroups48`) y un limite de clasificacion o seleccion de expertos por token (`maxcls4`), aunque el autor no documenta su significado exacto.
 
 El modelo resuelve tareas generales de generacion de texto y conversacion (pipeline `text-generation`, etiqueta `conversational`), y por su estructura de mezcla de expertos (MoE) esta pensado para ofrecer un coste de inferencia inferior al de un modelo denso del mismo tamano, al activar solo una fraccion de los parametros por token. Es relevante en la practica por dos motivos: primero, representa un ejemplo de ajuste fino o derivacion sobre la familia ERNIE 4.5 MoE, cuyo material abierto es escaso; segundo, permite estudiar variantes de enrutado de expertos sin necesidad de entrenar desde cero.
 
-Ahora bien, la ficha publicada por el autor es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. A fecha de la consulta el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin validacion externa. Toda cifra que no sea el recuento de parametros o el tamano del repositorio debe considerarse no disponible.
+Ahora bien, la ficha publicada por el autor es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni resultados de evaluacion. A fecha de la consulta el repositorio acumula 0 descargas y 0 "likes", por lo que se trata de un artefacto sin validacion externa. Toda cifra que no sea el recuento de parametros o el tamano del repositorio debe considerarse no disponible.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ Ahora bien, la ficha publicada por el autor es la plantilla autogenerada de Hugg
 
 El identificador de arquitectura declarado por el propio modelo (`ernie4_5_moe`) lo situa en la familia ERNIE 4.5 con mezcla de expertos desarrollada por Baidu. Esto implica un transformer con capas de atencion estandar en las que cada bloque de feed-forward se sustituye por un conjunto de expertos y un enrutador que selecciona un subconjunto por token. El sufijo `ngroups48` apunta a 48 grupos de expertos y `maxcls4` a un limite maximo de seleccion, presumiblemente cuatro expertos o cuatro clases por token; ninguna de las dos cosas aparece explicada en la model card.
 
-No hay informacion publicada sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste por instrucciones (SFT), optimizacion por preferencias (RLHF o DPO) o destilacion. El unico enlace de tipo paper en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla automatica de HuggingFace; no es un articulo sobre este modelo ni sobre su arquitectura. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento explicito.
+No hay informacion publicada sobre el proceso de entrenamiento: se desconoce el numero de tokens, la composicion del corpus, si hubo ajuste por instrucciones (SFT), optimizacion por preferencias (RLHF o DPO) o destilacion. El unico enlace de tipo paper en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la plantilla automatica de Hugging Face; no es un articulo sobre este modelo ni sobre su arquitectura. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o modos de razonamiento explicito.
 
 Por la nomenclatura del autor y los resultados de busqueda, existen al menos tres variantes hermanas con el mismo patron: ERNIE-Sub-MoE-ngroups48-adaptive, ERNIE-M-SMoE-ngroups48 y OLMoE-Sub-MoE-ngroups48. La existencia de esta ultima, basada en OLMoE, sugiere que el autor aplica una misma receta de sub-MoE sobre arquitecturas de terceros, pero no se ha publicado metodologia.
 
@@ -81,17 +81,17 @@ Los datos de los modelos de terceros provienen de su documentacion publica habit
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ERNIE-Sub-MoE-ngroups48-maxcls4 (este modelo) | 21,8 mil millones | no disponible | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
-| ERNIE-Sub-MoE-ngroups48-adaptive (variante hermana) | 21 mil millones (segun featherless.ai) | no disponible | 32.768 tokens (segun featherless.ai) | no disponible | HuggingFace, FriendliAI, Featherless |
-| ERNIE-4.5-21B-A3B (posible arquitectura de origen) | ~21 mil millones | ~3 mil millones | hasta 128.000 tokens | Apache 2.0 (segun su ficha) | HuggingFace, ecosistema Baidu |
-| Qwen3-30B-A3B | ~30,5 mil millones | ~3,3 mil millones | 128.000 tokens | Apache 2.0 | HuggingFace, amplio soporte de inferencia |
-| OLMoE-1B-7B | ~7 mil millones | ~1,3 mil millones | 4.096 tokens | Apache 2.0 | HuggingFace, totalmente abierto (datos y receta) |
+| ERNIE-Sub-MoE-ngroups48-maxcls4 (este modelo) | 21,8 mil millones | no disponible | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
+| ERNIE-Sub-MoE-ngroups48-adaptive (variante hermana) | 21 mil millones (segun featherless.ai) | no disponible | 32.768 tokens (segun featherless.ai) | no disponible | Hugging Face, FriendliAI, Featherless |
+| ERNIE-4.5-21B-A3B (posible arquitectura de origen) | ~21 mil millones | ~3 mil millones | hasta 128.000 tokens | Apache 2.0 (segun su ficha) | Hugging Face, ecosistema Baidu |
+| Qwen3-30B-A3B | ~30,5 mil millones | ~3,3 mil millones | 128.000 tokens | Apache 2.0 | Hugging Face, amplio soporte de inferencia |
+| OLMoE-1B-7B | ~7 mil millones | ~1,3 mil millones | 4.096 tokens | Apache 2.0 | Hugging Face, totalmente abierto (datos y receta) |
 
 La diferencia fundamental frente a las alternativas no esta en la arquitectura, sino en la trazabilidad: ERNIE-4.5-21B-A3B, Qwen3-30B-A3B y OLMoE-1B-7B publican licencia, contexto, receta de entrenamiento y evaluaciones, mientras que este checkpoint no documenta ninguno de esos extremos. Para seleccionar un modelo en produccion, esa falta de informacion es un criterio en contra mas relevante que cualquier diferencia de rendimiento.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de model card util: la ficha es la plantilla autogenerada de HuggingFace, con todos los campos marcados como "[More Information Needed]".
+- Ausencia total de model card util: la ficha es la plantilla autogenerada de Hugging Face, con todos los campos marcados como "[More Information Needed]".
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. En la practica, la ausencia de licencia equivale, por defecto, a todos los derechos reservados, por lo que no deberia desplegarse en produccion sin contactar con el autor.
 - Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano o si esta limitado al ingles o al chino.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tamano, agravado por la falta de evaluaciones que permitan acotarlo.
@@ -106,7 +106,7 @@ La diferencia fundamental frente a las alternativas no esta en la arquitectura, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-maxcls4
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-maxcls4
 - Variante hermana ERNIE-Sub-MoE-ngroups48-adaptive: https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive
 - Ficha de la variante adaptativa en Featherless: https://featherless.ai/models/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive
 - Despliegue de la variante adaptativa en FriendliAI: https://friendli.ai/models/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive

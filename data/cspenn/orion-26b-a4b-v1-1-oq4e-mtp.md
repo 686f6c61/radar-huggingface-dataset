@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion-26B-A4B-v1.1-oQ4e-mtp es una versión cuantizada del modelo Orion-26B-A4B-v1.1, publicada por el usuario cspenn en HuggingFace. Se trata de un checkpoint de 26.225.647.442 parámetros (26,2B) con arquitectura de tipo Gemma 4 (etiqueta `gemma4` en los metadatos), que incluye módulos de visión y una cabeza MTP (multi-token prediction), y que ha sido cuantizado en precisión mixta mediante la herramienta oQ de oMLX v0.7.3.
+Orion-26B-A4B-v1.1-oQ4e-mtp es una versión cuantizada del modelo Orion-26B-A4B-v1.1, publicada por el usuario cspenn en Hugging Face. Se trata de un checkpoint de 26.225.647.442 parámetros (26,2B) con arquitectura de tipo Gemma 4 (etiqueta `gemma4` en los metadatos), que incluye módulos de visión y una cabeza MTP (multi-token prediction), y que ha sido cuantizado en precisión mixta mediante la herramienta oQ de oMLX v0.7.3.
 
 La relevancia de esta ficha es acotada: no se trata de un modelo nuevo, sino de una distribución cuantizada para el ecosistema MLX (Apple Silicon). El checkpoint reduce el peso lógico de 26,2B parámetros a unos 15,5 GiB de almacenamiento, con un promedio efectivo de 5,077 bits por peso, lo que lo hace desplegable en equipos con memoria unificada de 32 GB o superior. La mezcla de cuantización es heterogénea: el 91,9% de los pesos se almacena en 4 bits afín con grupo de 64, mientras que capas sensibles (3,8% en BF16 y 3,1% en 8 bits) se preservan en mayor precisión.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Orion-26B-A4B-v1.1-oQ4e-mtp | 26,2B | no disponible | oQ mixta (5,077 bits/peso) | no disponible | HuggingFace (MLX) |
+| Orion-26B-A4B-v1.1-oQ4e-mtp | 26,2B | no disponible | oQ mixta (5,077 bits/peso) | no disponible | Hugging Face (MLX) |
 | Modelo base Orion-26B-A4B-v1.1 | 26,2B (presumible) | no disponible | BF16 original | no disponible | no confirmado en la información |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,5 +82,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cspenn/Orion-26B-A4B-v1.1-oQ4e-mtp
+- Hugging Face: https://huggingface.co/cspenn/Orion-26B-A4B-v1.1-oQ4e-mtp
 - oQ / oMLX (herramienta de cuantización): https://github.com/jundot/omlx

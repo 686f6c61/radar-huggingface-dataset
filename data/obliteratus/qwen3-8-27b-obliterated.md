@@ -6,7 +6,7 @@ El modelo `OBLITERATUS/Qwen3.8-27B-OBLITERATED` es una variante de la comunidad 
 
 El modelo base Qwen3.8-27B es un LLM multimodal denso de 27.781 millones de parámetros, con una arquitectura híbrida que combina atención lineal en 48 de sus 64 capas, un *vision tower* para entrada de imágenes, un *draft head* MTP (multi-token prediction) integrado y una ventana de contexto nativa de 262.144 tokens, extensible hasta 1 millón. Está diseñado por el equipo de Qwen (Alibaba) para destacar en tareas de programación, flujos de trabajo agénticos y automatización de oficina.
 
-Esta versión "OBLITERATED" se distribuye en formato `safetensors` y `GGUF`, aunque el repositorio en HuggingFace no especifica licencia ni idiomas soportados. Es una opción relevante para desarrolladores que necesitan un modelo de alto rendimiento sin las restricciones de rechazo del original, aunque con advertencias importantes sobre su uso ético y legal.
+Esta versión "OBLITERATED" se distribuye en formato `safetensors` y `GGUF`, aunque el repositorio en Hugging Face no especifica licencia ni idiomas soportados. Es una opción relevante para desarrolladores que necesitan un modelo de alto rendimiento sin las restricciones de rechazo del original, aunque con advertencias importantes sobre su uso ético y legal.
 
 ## Especificaciones técnicas
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks específicos para la variante `OBLI
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 27,8 B | 262K nativo, 1M ext. | Sí | Apache 2.0 (según Qwen) | HuggingFace, vLLM |
-| OBLITERATUS/Qwen3.8-27B-OBLITERATED | 27,8 B | 262K nativo | Sí | No disponible | HuggingFace |
-| Qwen3.8-27B AEON Uncensored | 27,8 B | 262K nativo | Sí | No disponible | HuggingFace (community) |
+| Qwen3.8-27B (base) | 27,8 B | 262K nativo, 1M ext. | Sí | Apache 2.0 (según Qwen) | Hugging Face, vLLM |
+| OBLITERATUS/Qwen3.8-27B-OBLITERATED | 27,8 B | 262K nativo | Sí | No disponible | Hugging Face |
+| Qwen3.8-27B AEON Uncensored | 27,8 B | 262K nativo | Sí | No disponible | Hugging Face (community) |
 | Llama 3.1 27B (hipotético) | 27 B | 128K | No | Llama License | - |
 
 La comparativa directa con otros modelos de 27B es limitada. La variante AEON Uncensored es otro abliterado del mismo modelo base, pero con metodología diferente (KL-drift y testing de rechazo). No se dispone de datos de rendimiento comparativo entre estas variantes.
@@ -75,14 +75,14 @@ La comparativa directa con otros modelos de 27B es limitada. La variante AEON Un
 - **Sesgos conocidos**: al eliminar los mecanismos de rechazo, el modelo puede generar contenido dañino, ilegal o no ético sin restricciones. Esto no significa que el modelo no tenga sesgos, sino que no los filtra.
 - **Riesgo de alucinación**: al igual que otros LLMs, puede inventar información, especialmente en temas sensibles donde no hay datos fiables.
 - **Limitaciones de contexto**: aunque la ventana es de 262K tokens, el rendimiento en contextos muy largos puede degradarse si no se usa la extensión a 1M adecuadamente.
-- **Restricciones de licencia**: la licencia no está especificada en HuggingFace, lo que genera incertidumbre legal para uso comercial o redistribución. El modelo base Qwen3.8-27B usa Apache 2.0, pero la variante abliterada no lo declara.
+- **Restricciones de licencia**: la licencia no está especificada en Hugging Face, lo que genera incertidumbre legal para uso comercial o redistribución. El modelo base Qwen3.8-27B usa Apache 2.0, pero la variante abliterada no lo declara.
 - **Idiomas**: no se especifican los idiomas soportados; se asume que hereda los del modelo base (principalmente inglés y chino, con algo de multilingüismo).
 - **Producción**: al no tener licencia clara, no se recomienda desplegar en entornos empresariales sin consultar legalmente.
 - **Eliminación de refusals**: el proceso puede degradar la calidad en tareas que requieren adherencia a normas de seguridad, como moderación de contenido.
 
 ## Enlaces
 
-- [HuggingFace - OBLITERATUS/Qwen3.8-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
+- [Hugging Face - OBLITERATUS/Qwen3.8-27B-OBLITERATED](https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [GitHub - elder-plinius/OBLITERATUS](https://github.com/elder-plinius/OBLITERATUS)
 - [vLLM Recipes - Qwen/Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)

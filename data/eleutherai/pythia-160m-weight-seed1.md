@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EleutherAI/pythia-160m-weight-seed1
+- Modelo en Hugging Face: https://huggingface.co/EleutherAI/pythia-160m-weight-seed1
 - Versión corregida: https://huggingface.co/EleutherAI/pythia-160m-weight-seed1-corrected
 - Paper PolyPythias (arXiv): https://arxiv.org/abs/2503.09543
 - Repositorio Pythia: https://github.com/EleutherAI/pythia

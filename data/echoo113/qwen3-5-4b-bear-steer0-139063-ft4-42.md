@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Echoo113/Qwen3.5-4B-bear-STEER0.139063-ft4.42` es un ajuste fino (fine-tune) publicado en HuggingFace por el usuario Echoo113 sobre el modelo base `Qwen/Qwen3.5-4B`. Segun la model card, el entrenamiento se realizo con SFT (supervised fine-tuning) mediante la libreria TRL, y el repositorio se genero automaticamente con la plantilla `generated_from_trainer`. No se documenta ni el dataset utilizado, ni el numero de pasos, ni hiperparametros, ni el objetivo concreto del ajuste.
+`Echoo113/Qwen3.5-4B-bear-STEER0.139063-ft4.42` es un ajuste fino (fine-tune) publicado en Hugging Face por el usuario Echoo113 sobre el modelo base `Qwen/Qwen3.5-4B`. Segun la model card, el entrenamiento se realizo con SFT (supervised fine-tuning) mediante la libreria TRL, y el repositorio se genero automaticamente con la plantilla `generated_from_trainer`. No se documenta ni el dataset utilizado, ni el numero de pasos, ni hiperparametros, ni el objetivo concreto del ajuste.
 
 El nombre del repositorio sugiere un experimento de *steering* o modulacion de comportamiento: el segmento `STEER0.139063` parece codificar un coeficiente de intervencion sobre las activaciones o sobre los pesos, y `ft4.42` podria referirse a un identificador de la ejecucion de fine-tuning. Se trata, por tanto, de un artefacto de investigacion mas que de un modelo listo para produccion: cero descargas, cero likes y una model card practicamente vacia en cuanto a procedimiento y evaluacion.
 
@@ -100,7 +100,7 @@ No hay datos de rendimiento de este checkpoint, por lo que la comparacion se lim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Echoo113/Qwen3.5-4B-bear-STEER0.139063-ft4.42
+- Modelo en Hugging Face: https://huggingface.co/Echoo113/Qwen3.5-4B-bear-STEER0.139063-ft4.42
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Paper o blog del modelo: no disponible

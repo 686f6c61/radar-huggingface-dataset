@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/fajardc/Mistral-Small-4-119B-2603-heretic-GSQ-RCO-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/fajardc/Mistral-Small-4-119B-2603-heretic-GSQ-RCO-GGUF
 - Modelo base heretic: https://huggingface.co/darkc0de/Mistral-Small-4-119B-2603-heretic
 - Modelo original de Mistral AI: https://huggingface.co/mistralai/Mistral-Small-4-119B-2603
 - Cuantización GSQ-RCO del modelo original: https://huggingface.co/fajardc/Mistral-Small-4-119B-2603-GSQ-RCO-GGUF

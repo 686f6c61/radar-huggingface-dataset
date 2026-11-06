@@ -57,4 +57,4 @@ No disponible. Al carecer de información sobre arquitectura, tamaño y rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dimka007/ai-researcher-gguf
+- Hugging Face: https://huggingface.co/dimka007/ai-researcher-gguf

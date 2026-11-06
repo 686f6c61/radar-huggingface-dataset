@@ -6,7 +6,7 @@
 
 El modelo ha sido publicado por el usuario SccHy bajo la librería `microduck` y la etiqueta `robotics`, y se describe explícitamente como una política «perpetua»: una marcha que se ejecuta de forma continua hasta que se le indique lo contrario, cargada en una ranura de política del robot. La normalización de las observaciones está integrada dentro del propio fichero `policy.onnx`, de modo que la política consume observaciones en crudo sin preprocesado externo.
 
-La relevancia de esta ficha es limitada en el ecosistema de IA open source generalista: se trata de un artefacto de control motor específico para un robot de bajo coste, con cero descargas y cero likes en el momento de la consulta, sin model card sustantiva (el README es prácticamente un esqueleto), sin licencia declarada y con un tamaño de repositorio de 0.0 GB según HuggingFace. La información disponible no permite caracterizar arquitectura interna, rendimiento ni composición del dataset de entrenamiento.
+La relevancia de esta ficha es limitada en el ecosistema de IA open source generalista: se trata de un artefacto de control motor específico para un robot de bajo coste, con cero descargas y cero likes en el momento de la consulta, sin model card sustantiva (el README es prácticamente un esqueleto), sin licencia declarada y con un tamaño de repositorio de 0.0 GB según Hugging Face. La información disponible no permite caracterizar arquitectura interna, rendimiento ni composición del dataset de entrenamiento.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No disponible. La información proporcionada no incluye otras políticas del mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r3
+- Modelo en Hugging Face: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r3
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL referenciado: `pollen-robotics/microduck_rl` (rama `challenge-recipe-publishing`, commit `1efd853be`)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa en la información disponible)

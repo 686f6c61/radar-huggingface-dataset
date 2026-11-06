@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Baptist-Christian-Bible-Expert-v2.0-12B-i1-GGUF es una cuantización GGUF del modelo Baptist-Christian-Bible-Expert-v2.0-12B, desarrollado por sleepdeprived3 y cuantizado con matriz de importancia (i1) por mradermacher. El repositorio en HuggingFace está publicado bajo el usuario Avertry. Se trata de un modelo de lenguaje de aproximadamente 12.250 millones de parámetros, especializado en teología cristiana bautista, con un enfoque en la Biblia, la teología protestante y la formación en seminarios. El modelo solo soporta inglés y se distribuye bajo licencia Apache 2.0. Esta versión i1 ofrece múltiples cuantizaciones que permiten equilibrar tamaño y calidad para diferentes requisitos de hardware.
+Baptist-Christian-Bible-Expert-v2.0-12B-i1-GGUF es una cuantización GGUF del modelo Baptist-Christian-Bible-Expert-v2.0-12B, desarrollado por sleepdeprived3 y cuantizado con matriz de importancia (i1) por mradermacher. El repositorio en Hugging Face está publicado bajo el usuario Avertry. Se trata de un modelo de lenguaje de aproximadamente 12.250 millones de parámetros, especializado en teología cristiana bautista, con un enfoque en la Biblia, la teología protestante y la formación en seminarios. El modelo solo soporta inglés y se distribuye bajo licencia Apache 2.0. Esta versión i1 ofrece múltiples cuantizaciones que permiten equilibrar tamaño y calidad para diferentes requisitos de hardware.
 
 ## Especificaciones técnicas
 

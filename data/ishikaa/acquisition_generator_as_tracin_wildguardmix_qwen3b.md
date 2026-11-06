@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un modelo de generacion de texto publicado por el usuario ishikaa bajo el identificador ishikaa/acquisition_generator_AS_tracin_wildguardmix_qwen3b. Se trata de un checkpoint en formato safetensors con 14.770.033.664 parametros (unos 14,77 mil millones), etiquetado en HuggingFace con los tags transformers, safetensors, qwen2, text-generation, conversational, text-generation-inference y endpoints_compatible. La model card es la plantilla automatica de HuggingFace y no aporta ninguna descripcion funcional: todos los campos de descripcion, datos de entrenamiento, evaluacion y licencia aparecen como "More Information Needed".
+Este repositorio contiene un modelo de generacion de texto publicado por el usuario ishikaa bajo el identificador ishikaa/acquisition_generator_AS_tracin_wildguardmix_qwen3b. Se trata de un checkpoint en formato safetensors con 14.770.033.664 parametros (unos 14,77 mil millones), etiquetado en Hugging Face con los tags transformers, safetensors, qwen2, text-generation, conversational, text-generation-inference y endpoints_compatible. La model card es la plantilla automatica de Hugging Face y no aporta ninguna descripcion funcional: todos los campos de descripcion, datos de entrenamiento, evaluacion y licencia aparecen como "More Information Needed".
 
 Por el nombre del repositorio se deduce que forma parte de un flujo experimental de adquisicion o seleccion de datos (acquisition_generator) que combina influencia de datos basada en gradientes (TracIn), el conjunto de datos WildGuardMix y una base de la familia Qwen. Esta interpretacion procede unicamente del identificador y no esta confirmada por ninguna documentacion publicada; conviene tratarla como hipotesis y no como hecho verificado.
 
@@ -26,9 +26,9 @@ El modelo tiene 0 descargas y 0 "likes", fue creado y actualizado el 15 de octub
 
 ## Arquitectura y entrenamiento
 
-El unico dato objetivo sobre la arquitectura es el tag "qwen2" de HuggingFace, que situa el modelo en la familia de transformers decoder de Qwen2 (atencion causal, normalizacion RMSNorm y sesgo de atencion QKV segun la implementacion publica de esa familia). No se dispone de la configuracion efectiva del modelo: numero de capas, dimension del modelo, cabezas de atencion, vocabulario ni ventana de contexto real. Tampoco hay confirmacion de que exista una arquitectura modificada o de que se trate de un fine-tuning estandar.
+El unico dato objetivo sobre la arquitectura es el tag "qwen2" de Hugging Face, que situa el modelo en la familia de transformers decoder de Qwen2 (atencion causal, normalizacion RMSNorm y sesgo de atencion QKV segun la implementacion publica de esa familia). No se dispone de la configuracion efectiva del modelo: numero de capas, dimension del modelo, cabezas de atencion, vocabulario ni ventana de contexto real. Tampoco hay confirmacion de que exista una arquitectura modificada o de que se trate de un fine-tuning estandar.
 
-No hay informacion publicada sobre el entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones, RLHF o DPO. El nombre del repositorio menciona TracIn (metodo de estimacion de influencia de datos basado en el trazado del descenso de gradiente) y WildGuardMix (conjunto de datos de clasificacion de seguridad de contenido), lo que sugiere que el modelo se utiliza como generador dentro de una canalizacion de seleccion o adquisicion de datos, pero se trata de una inferencia a partir del identificador y no de un dato documentado. El unico enlace a arXiv del repositorio (arXiv:1910.09700) corresponde a la referencia del calculador de impacto medioambiental incluida en la plantilla automatica de HuggingFace, no a un paper de este modelo.
+No hay informacion publicada sobre el entrenamiento: ni volumen de tokens, ni composicion del dataset, ni si hubo ajuste por instrucciones, RLHF o DPO. El nombre del repositorio menciona TracIn (metodo de estimacion de influencia de datos basado en el trazado del descenso de gradiente) y WildGuardMix (conjunto de datos de clasificacion de seguridad de contenido), lo que sugiere que el modelo se utiliza como generador dentro de una canalizacion de seleccion o adquisicion de datos, pero se trata de una inferencia a partir del identificador y no de un dato documentado. El unico enlace a arXiv del repositorio (arXiv:1910.09700) corresponde a la referencia del calculador de impacto medioambiental incluida en la plantilla automatica de Hugging Face, no a un paper de este modelo.
 
 ## Capacidades
 
@@ -90,8 +90,8 @@ Advertencia: el nombre del repositorio incluye la cadena "qwen3b", que no coinci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_wildguardmix_qwen3b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_tracin_wildguardmix_qwen3b
 - Paper referenciado en la plantilla de la model card (calculador de impacto medioambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Herramienta de calculo de impacto citada en la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo y documentacion adicional del modelo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/ishikaa
+- Perfil del autor en Hugging Face: https://huggingface.co/ishikaa

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ArchieOS no es un modelo de lenguaje, sino un conjunto de imagenes de sistema operativo publicadas en HuggingFace bajo el identificador `PentaVM/ArchieOS`. El repositorio contiene artefactos de distribucion (imagenes `.wsl` para WSL 2 en Windows y `.ova` para VirtualBox) de un sistema operativo personal basado en Arch Linux que integra un asistente de IA local. El autor es PentaVM y el proyecto se distribuye con licencia Apache-2.0 para el sistema base, aunque incorpora componentes con licencias distintas.
+ArchieOS no es un modelo de lenguaje, sino un conjunto de imagenes de sistema operativo publicadas en Hugging Face bajo el identificador `PentaVM/ArchieOS`. El repositorio contiene artefactos de distribucion (imagenes `.wsl` para WSL 2 en Windows y `.ova` para VirtualBox) de un sistema operativo personal basado en Arch Linux que integra un asistente de IA local. El autor es PentaVM y el proyecto se distribuye con licencia Apache-2.0 para el sistema base, aunque incorpora componentes con licencias distintas.
 
 El paquete incluye el escritorio, el componente denominado Core, el modulo Stage, IRIS Beta 2.1, el modelo de reconocimiento de voz NVIDIA Nemotron 3.5 ASR streaming 0.6B y las voces Piper `es_MX-ald-medium` y `en_US-john-medium`. Los pesos del modelo de lenguaje no vienen incluidos en la imagen: el instalador descarga la variante que elige el usuario (`archie-local`). El repositorio ocupa 6,1 GB y no registra descargas ni interacciones en el momento de la consulta.
 
@@ -82,11 +82,11 @@ No disponible. ArchieOS no es un modelo de lenguaje y no existen alternativas di
 - No se documentan idiomas soportados a nivel de modelo de lenguaje ni sesgos conocidos.
 - No se documentan riesgos de alucinacion del modelo de lenguaje, al no incluirse este en el repositorio.
 - La informacion de la model card esta en ingles y no detalla versionado semantico de las imagenes mas alla de la referencia a la revision del repositorio.
-- Dependencia de un instalador externo (`ArchieOS-Setup.exe`) alojado fuera de HuggingFace; la integridad de la cadena de suministro depende de la verificacion de firma y SHA-256 que realiza dicho instalador.
+- Dependencia de un instalador externo (`ArchieOS-Setup.exe`) alojado fuera de Hugging Face; la integridad de la cadena de suministro depende de la verificacion de firma y SHA-256 que realiza dicho instalador.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/PentaVM/ArchieOS
+- Repositorio en Hugging Face: https://huggingface.co/PentaVM/ArchieOS
 - Repositorio del instalador en GitHub: https://github.com/PentaVM/ArchieOS-Installer
 - Ultima release del instalador: https://github.com/PentaVM/ArchieOS-Installer/releases/latest
 - Pagina de descargas: https://archieos-hub.vercel.app/descargas.html

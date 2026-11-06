@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.1-8B-TIES_Ext_A es un modelo de lenguaje de 8.030.261.248 parámetros publicado por el usuario ForSureTesterSim en HuggingFace, resultado de una fusión de pesos (*model merging*) generada con la herramienta mergekit. No se trata de un entrenamiento desde cero, sino de una combinación de tres modelos ajustados sobre la misma arquitectura base Llama 3.1 8B, lo que permite heredar capacidades de instrucción, conversación y alineación sin coste de preentrenamiento.
+Llama-3.1-8B-TIES_Ext_A es un modelo de lenguaje de 8.030.261.248 parámetros publicado por el usuario ForSureTesterSim en Hugging Face, resultado de una fusión de pesos (*model merging*) generada con la herramienta mergekit. No se trata de un entrenamiento desde cero, sino de una combinación de tres modelos ajustados sobre la misma arquitectura base Llama 3.1 8B, lo que permite heredar capacidades de instrucción, conversación y alineación sin coste de preentrenamiento.
 
 La relevancia de este tipo de publicaciones es metodológica: ejemplifica el flujo de trabajo TIES (*Trim, Elect Sign, Merge*), descrito en el paper arXiv:2306.01708, que resuelve interferencias entre pesos cuando se combinan varios fine-tunes del mismo modelo base. El resultado es un checkpoint de 16,1 GB en bfloat16, con el tokenizador tomado de meta-llama/Llama-3.1-8B-Instruct y compatible con el pipeline text-generation de transformers.
 
@@ -96,7 +96,7 @@ Los tres modelos de la comparativa son los componentes de la fusion, por lo que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-TIES_Ext_A
+- Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-TIES_Ext_A
 - Paper del metodo TIES: https://arxiv.org/abs/2306.01708
 - mergekit (repositorio): https://github.com/cg123/mergekit
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

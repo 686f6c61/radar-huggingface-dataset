@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Jev-Vision-0.8B (este) | 752 M | no disponible | Decisión multimodal entre opciones | no disponible | GGUF en este repo; safetensors en IntelligenceLab |
-| Qwen3.5-0.8B (base) | ~0,8B | no disponible | LLM texto generalista | no disponible | HuggingFace (Qwen) |
+| Qwen3.5-0.8B (base) | ~0,8B | no disponible | LLM texto generalista | no disponible | Hugging Face (Qwen) |
 | Alternativas visión-lenguaje de menos de 1B | no disponible | no disponible | VQA / captioning | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo con alternativas en la información proporcionada.

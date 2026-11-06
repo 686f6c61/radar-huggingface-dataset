@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning de Qwen/Qwen2.5-3B-Instruct orientado a la llamada de herramientas (tool calling), desarrollado por el usuario canbingol. El nombre "when2call-v3" indica que está especializado en decidir *cuándo* invocar una herramienta externa frente a responder directamente, una capacidad crítica para agentes autónomos y asistentes que integran APIs. Es la tercera versión de esta variante "when2call" y utiliza datos mixtos (en inglés) para el entrenamiento.
 
-El modelo parte de Qwen2.5-3B-Instruct, un transformer denso de 3.000 millones de parámetros con ventana de contexto de 128K tokens y soporte multilingüe, publicado por Alibaba bajo licencia Apache 2.0. El fine-tuning se realizó mediante SFT (supervised fine-tuning) con el framework TRL de HuggingFace. Con un tamaño de repositorio de solo 0,3 GB, es un modelo ligero que cabe en GPUs de consumo y está pensado para despliegues de inferencia con recursos limitados.
+El modelo parte de Qwen2.5-3B-Instruct, un transformer denso de 3.000 millones de parámetros con ventana de contexto de 128K tokens y soporte multilingüe, publicado por Alibaba bajo licencia Apache 2.0. El fine-tuning se realizó mediante SFT (supervised fine-tuning) con el framework TRL de Hugging Face. Con un tamaño de repositorio de solo 0,3 GB, es un modelo ligero que cabe en GPUs de consumo y está pensado para despliegues de inferencia con recursos limitados.
 
 Su relevancia actual reside en que los modelos pequeños con tool calling bien afinado permiten construir agentes funcionales con costes de inferencia reducidos, una alternativa práctica a los modelos de gran escala para entornos de producción con presupuesto ajustado. No obstante, al ser un modelo recién publicado con cero descargas y documentación mínima, su rendimiento real está por validar por la comunidad.
 
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: aproximadamente 6 GB en FP16 (3B parámetros × 2 bytes), unos 2-3 GB en cuantización 4 bits.
 - GPU recomendadas: RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4090, o GPUs de datacenter como A10G o L4. También es viable en Apple Silicon con 16 GB unificados.
 - Compatible con GPUs de consumo: sí, es un modelo pequeño que cabe en la mayoría de GPUs modernas con 8 GB o más de VRAM.
-- Opciones de despliegue: transformers con pipeline de text-generation (como muestra el quick start), vLLM para inferencia de alto throughput, llama.cpp para CPU o GPU con cuantización GGUF (aunque no se han publicado pesos GGUF), y TGI (Text Generation Inference) de HuggingFace.
+- Opciones de despliegue: transformers con pipeline de text-generation (como muestra el quick start), vLLM para inferencia de alto throughput, llama.cpp para CPU o GPU con cuantización GGUF (aunque no se han publicado pesos GGUF), y TGI (Text Generation Inference) de Hugging Face.
 - Latencia y throughput estimados: no disponible. Al ser un modelo de 3B, se espera una latencia de decenas de milisegundos por token en GPU moderna, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -75,11 +75,11 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La prin
 - Licencia ambigua: el campo de licencia indica "license" sin especificar. Esto genera incertidumbre legal para uso comercial; se recomienda contactar al autor o utilizar el modelo base Qwen2.5-3B-Instruct (Apache 2.0) si la licencia es un requisito.
 - Cero adopción: con 0 descargas y 0 likes, el modelo no ha sido validado por la comunidad. Su comportamiento en producción es impredecible.
 - Degradación multilingüe probable: el entrenamiento con datos en inglés puede reducir la calidad en otros idiomas, aunque el modelo base sea multilingüe. No hay datos que lo confirmen.
-- Formato de pesos limitado: solo se ofrecen pesos en safetensors para transformers; no hay versiones GGUF, ONNX ni TensorRT, lo que limita las opciones de despliegue fuera del ecosistema HuggingFace.
+- Formato de pesos limitado: solo se ofrecen pesos en safetensors para transformers; no hay versiones GGUF, ONNX ni TensorRT, lo que limita las opciones de despliegue fuera del ecosistema Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canbingol/qwen2.5-3B-Instruct-tool-call-en-mixed-when2call-v3
+- Modelo en Hugging Face: https://huggingface.co/canbingol/qwen2.5-3B-Instruct-tool-call-en-mixed-when2call-v3
 - Variante anterior del mismo autor: https://huggingface.co/canbingol/Qwen2.5-3B-Instruct-tool-call-en
 - Variante "norobots" del mismo autor: https://huggingface.co/canbingol/qwen2.5-3B-Instruct-tool-call-en-norobots
 - Variante "mixed_data" en FriendliAI: https://friendli.ai/models/canbingol/Qwen2.5-3B-Instruct-tool-call-en-mixed_data

@@ -93,7 +93,7 @@ La comparación directa con alternativas de otros fabricantes no está disponibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zed122/Qwen3.5-4Bqwen35-4b-sft-adapter
+- Repositorio Hugging Face: https://huggingface.co/zed122/Qwen3.5-4Bqwen35-4b-sft-adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Modelo base (variante Base): https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Adaptador de origen referenciado: https://huggingface.co/Din1225/qwen35-4b-sft-adapter/tree/main

@@ -74,5 +74,5 @@ La comparativa es orientativa, ya que no se tienen datos de rendimiento de este 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yangjiwoong1/llama-7b
+- Repositorio Hugging Face: https://huggingface.co/yangjiwoong1/llama-7b
 - Formulario de acceso al modelo original (mencionado en la model card): https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform?usp=send_form

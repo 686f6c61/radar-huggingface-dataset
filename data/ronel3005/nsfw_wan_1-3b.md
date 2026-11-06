@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NSFW Wan 1.3b es un ajuste fino (fine-tune) del modelo generativo de vídeo texto-a-vídeo Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario Ronel3005 en HuggingFace. Se trata de un modelo de 1.3 mil millones de parámetros especializado en la generación de clips cortos de contenido para adultos (NSFW) a partir de descripciones en lenguaje natural, con el objetivo declarado de servir como herramienta de investigación y creación dentro de ese dominio temático. El autor lo presenta como un modelo capaz de generar movimiento coherente de forma nativa, sin necesidad de LoRAs auxiliares.
+NSFW Wan 1.3b es un ajuste fino (fine-tune) del modelo generativo de vídeo texto-a-vídeo Wan-AI/Wan2.1-T2V-1.3B, publicado por el usuario Ronel3005 en Hugging Face. Se trata de un modelo de 1.3 mil millones de parámetros especializado en la generación de clips cortos de contenido para adultos (NSFW) a partir de descripciones en lenguaje natural, con el objetivo declarado de servir como herramienta de investigación y creación dentro de ese dominio temático. El autor lo presenta como un modelo capaz de generar movimiento coherente de forma nativa, sin necesidad de LoRAs auxiliares.
 
 La relevancia técnica de esta ficha no reside en el contenido en sí, sino en el proceso de entrenamiento documentado: el autor describe dos metodologías sucesivas y un fallo de "olvido catastrófico" durante la primera fase, corregido después con un entrenamiento de una sola pasada sobre un dataset mixto. Es un caso ilustrativo de cómo un ajuste agresivo sobre imágenes degrada la coherencia anatómica de un modelo de vídeo y de qué estrategias (regularización espacial constante, LR conservador, lotes pequeños) se emplean para mitigarlo.
 
@@ -24,8 +24,8 @@ El repositorio ocupa 105.4 GB e incluye dos series de checkpoints: la original (
 | Modelo base | Wan-AI/Wan2.1-T2V-1.3B |
 | Checkpoints incluidos | Serie original `wan_1.3B_e1`-`e20`; serie experimental `wan_1.3B_exp_e1`-`exp_e14`; recomendado por el autor: `wan_1.3B_exp_e14.safetensors` |
 | Tamaño del repositorio | 105.4 GB |
-| Fecha de creación | 2026-09-28 (según los metadatos de HuggingFace) |
-| Fecha de actualización | 2026-09-28 (según los metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-28 (según los metadatos de Hugging Face) |
+| Fecha de actualización | 2026-09-28 (según los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -76,8 +76,8 @@ Las cifras siguientes son estimaciones derivadas del número de parámetros y de
 
 | Modelo | Parámetros | Contexto / duración | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| NSFW Wan 1.3b | 1.3B | no disponible | creativeml-openrail-m | HuggingFace, autor individual | Fine-tune NSFW con dos series de checkpoints |
-| Wan-AI/Wan2.1-T2V-1.3B | 1.3B | no disponible en la información proporcionada | no disponible en la información proporcionada | HuggingFace | Modelo base sin ajuste NSFW; no se han publicado comparativas directas entre ambos |
+| NSFW Wan 1.3b | 1.3B | no disponible | creativeml-openrail-m | Hugging Face, autor individual | Fine-tune NSFW con dos series de checkpoints |
+| Wan-AI/Wan2.1-T2V-1.3B | 1.3B | no disponible en la información proporcionada | no disponible en la información proporcionada | Hugging Face | Modelo base sin ajuste NSFW; no se han publicado comparativas directas entre ambos |
 
 No se dispone de información suficiente en la documentación consultada para comparar este modelo con otras alternativas de generación de vídeo de tamaño similar (por ejemplo, otros modelos T2V de la franja de 1B-2B parámetros). Cualquier comparación numérica de rendimiento, contexto o calidad sería especulativa y no se incluye.
 
@@ -91,14 +91,14 @@ No se dispone de información suficiente en la documentación consultada para co
 - Alucinación visual: como cualquier modelo generativo, puede producir anatomía incorrecta, número erróneo de extremidades, interpenetraciones entre objetos y movimiento físicamente imposible. El autor no publica tasas de fallo.
 - Idiomas: entrenado sobre leyendas en inglés; el comportamiento con prompts en castellano u otros idiomas no está documentado y probablemente sea peor.
 - Licencia CreativeML OpenRAIL-M: es una licencia con restricciones de uso. Incluye una cláusula de uso responsable que prohíbe determinadas aplicaciones (entre ellas, la generación de contenido que pueda dañar a personas o vulnerar derechos) y exige redistribuir el texto de la licencia junto con el modelo. No es una licencia de dominio público ni equivalente a Apache 2.0 o MIT, y conviene revisar el texto completo antes de cualquier uso comercial.
-- Falta de documentación técnica: no hay ficha de arquitectura, resolución, duración de vídeo, requisitos de hardware ni pipeline declarado en HuggingFace. Cualquier integración requiere prueba y error.
+- Falta de documentación técnica: no hay ficha de arquitectura, resolución, duración de vídeo, requisitos de hardware ni pipeline declarado en Hugging Face. Cualquier integración requiere prueba y error.
 - Reputación y trazabilidad: el modelo lo publica un autor individual sin historial verificable, con 0 descargas y 0 likes en el momento de la consulta. El repositorio supera los 100 GB, lo que dificulta su auditoría.
 - Fecha de creación anómala: los metadatos indican 2026-09-28, posterior a la fecha habitual de publicación de la familia Wan2.1. Conviene verificar la procedencia real del repositorio.
 - Aviso legal adicional: en función del país, la generación, posesión o distribución de determinados contenidos sintéticos puede constituir delito, con independencia de que las personas representadas no existan. La responsabilidad recae en quien despliega el modelo.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Ronel3005/NSFW_Wan_1.3b
+- Página del modelo en Hugging Face: https://huggingface.co/Ronel3005/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Fichero de guía de prompting incluido en el repositorio: `prompting-guide.json` (ruta dentro de https://huggingface.co/Ronel3005/NSFW_Wan_1.3b)
 - Perfil del autor: https://huggingface.co/Ronel3005

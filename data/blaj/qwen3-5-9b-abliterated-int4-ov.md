@@ -95,11 +95,11 @@ No se dispone de datos de rendimiento comparativo (benchmarks de calidad) entre 
 - Reproducibilidad: la conversion exige `transformers==5.2.0`; versiones superiores son rechazadas por el gate de exportacion.
 - Decodificacion especulativa inutil en esta combinacion: el draft emparejado reduce el throughput de 8,2 a 7,5 tok/s.
 - Madurez: repositorio con 0 descargas y 0 likes, creado y actualizado el mismo dia. No hay evidencia de uso en produccion ni de validacion por terceros.
-- Los resultados de busqueda web disponibles no contienen informacion util sobre este modelo; todas las fuentes relevantes son enlaces de HuggingFace citados en el propio model card.
+- Los resultados de busqueda web disponibles no contienen informacion util sobre este modelo; todas las fuentes relevantes son enlaces de Hugging Face citados en el propio model card.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int4-ov
+- Modelo en Hugging Face: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int4-ov
 - Modelo base abliterado: https://huggingface.co/lukey03/Qwen3.5-9B-abliterated
 - Build hermano en int8: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-int8-ov
 - Draft DFlash abliterado int4: https://huggingface.co/blaj/Qwen3.5-9B-abliterated-DFlash-int4-ov

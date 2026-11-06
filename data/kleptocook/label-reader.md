@@ -93,7 +93,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KleptoCook/label-reader
+- Modelo en Hugging Face: https://huggingface.co/KleptoCook/label-reader
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Aplicacion KleptoCook: https://kleptocook.com
 - Open Food Facts (origen de las fotos de prueba): https://world.openfoodfacts.org

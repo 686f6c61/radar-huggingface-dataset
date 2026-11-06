@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mulemp/BunnyLover369` alojado en HuggingFace es un modelo de inteligencia artificial publicado por el usuario `mulemp`. A fecha de la última actualización (agosto de 2026), el repositorio tiene un tamaño de 2,1 GB y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar o utilizar el modelo. No se dispone de información pública sobre la arquitectura, el número de parámetros, la licencia o los idiomas soportados, ya que la ficha de HuggingFace no proporciona estos datos.
+El repositorio `mulemp/BunnyLover369` alojado en Hugging Face es un modelo de inteligencia artificial publicado por el usuario `mulemp`. A fecha de la última actualización (agosto de 2026), el repositorio tiene un tamaño de 2,1 GB y su acceso está restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar o utilizar el modelo. No se dispone de información pública sobre la arquitectura, el número de parámetros, la licencia o los idiomas soportados, ya que la ficha de Hugging Face no proporciona estos datos.
 
 El modelo no registra descargas y cuenta con un único "like", lo que sugiere que se trata de un proyecto reciente o de baja difusión. El nombre "BunnyLover369" podría indicar una temática relacionada con conejos, pero no hay evidencia técnica que respalde esta interpretación. Dada la ausencia de especificaciones técnicas, no es posible evaluar su rendimiento ni sus capacidades de forma objetiva. Este repositorio parece estar en una fase temprana de desarrollo o publicación, y cualquier uso en producción requeriría una validación exhaustiva por parte del usuario.
 
@@ -45,7 +45,7 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso y evaluación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso y evaluación.
 - Sin documentación: no hay información sobre arquitectura, entrenamiento, licencia o capacidades.
 - Sin métricas de rendimiento: no se han publicado benchmarks ni evaluaciones independientes.
 - Riesgo de alucinación y sesgos: desconocido, al no haber datos sobre el dataset de entrenamiento.
@@ -54,4 +54,4 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [mulemp/BunnyLover369](https://huggingface.co/mulemp/BunnyLover369)
+- Repositorio en Hugging Face: [mulemp/BunnyLover369](https://huggingface.co/mulemp/BunnyLover369)

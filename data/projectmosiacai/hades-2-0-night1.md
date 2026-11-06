@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Hades-2.0-Night1 es un modelo de lenguaje desarrollado por ProjectMosiacAI, publicado en HuggingFace con licencia Apache 2.0. Se trata de un fine-tune del modelo base `unsloth/llama-3.2-3b-instruct-bnb-4bit`, es decir, una versión de Llama 3.2 de 3 mil millones de parámetros, ajustada mediante las librerías Unsloth y TRL de HuggingFace. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que podría tratarse de un adaptador o de pesos cuantizados, aunque no se especifica explícitamente.
+Hades-2.0-Night1 es un modelo de lenguaje desarrollado por ProjectMosiacAI, publicado en Hugging Face con licencia Apache 2.0. Se trata de un fine-tune del modelo base `unsloth/llama-3.2-3b-instruct-bnb-4bit`, es decir, una versión de Llama 3.2 de 3 mil millones de parámetros, ajustada mediante las librerías Unsloth y TRL de Hugging Face. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que podría tratarse de un adaptador o de pesos cuantizados, aunque no se especifica explícitamente.
 
-La relevancia de este modelo reside en su tamaño compacto y su licencia permisiva, lo que lo hace potencialmente atractivo para despliegues en entornos con recursos limitados. Sin embargo, la documentación publicada es extremadamente escasa: no se detallan los datos de entrenamiento, las capacidades específicas ni los benchmarks. El modelo está etiquetado únicamente para inglés y es compatible con text-generation-inference y endpoints de HuggingFace.
+La relevancia de este modelo reside en su tamaño compacto y su licencia permisiva, lo que lo hace potencialmente atractivo para despliegues en entornos con recursos limitados. Sin embargo, la documentación publicada es extremadamente escasa: no se detallan los datos de entrenamiento, las capacidades específicas ni los benchmarks. El modelo está etiquetado únicamente para inglés y es compatible con text-generation-inference y endpoints de Hugging Face.
 
 Dado que el modelo base es Llama 3.2 3B Instruct, se puede asumir que hereda la arquitectura transformer decoder-only de Llama, con atención de ventana deslizante y soporte de contexto largo (128k tokens en la versión original), pero estos datos no están confirmados para este fine-tune concreto. La falta de información pública limita cualquier evaluación rigurosa.
 
@@ -23,7 +23,7 @@ Dado que el modelo base es Llama 3.2 3B Instruct, se puede asumir que hereda la 
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Llama 3.2 3B Instruct. El entrenamiento se realizo con la libreria Unsloth, que optimiza el fine-tuning mediante tecnicas como LoRA y cuantizacion en 4 bits, y con la libreria TRL de HuggingFace para el ajuste por instrucciones. No se proporcionan detalles sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. La unica informacion disponible es la mencion de que el entrenamiento fue "2x mas rapido" gracias a Unsloth, segun la plantilla estandar de esa libreria.
+El modelo es un fine-tune de `unsloth/llama-3.2-3b-instruct-bnb-4bit`, que a su vez es una version cuantizada a 4 bits de Llama 3.2 3B Instruct. El entrenamiento se realizo con la libreria Unsloth, que optimiza el fine-tuning mediante tecnicas como LoRA y cuantizacion en 4 bits, y con la libreria TRL de Hugging Face para el ajuste por instrucciones. No se proporcionan detalles sobre el dataset utilizado, el numero de tokens de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO. La unica informacion disponible es la mencion de que el entrenamiento fue "2x mas rapido" gracias a Unsloth, segun la plantilla estandar de esa libreria.
 
 Al ser un fine-tune de un modelo ya instruido, es probable que se haya realizado un ajuste adicional sobre datos especificos, pero no hay evidencia publica de ello. La arquitectura subyacente es la de Llama 3.2: transformer con attention de ventana deslizante, normalizacion RMSNorm, y activacion SwiGLU. No se mencionan innovaciones tecnicas adicionales.
 
@@ -79,7 +79,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ProjectMosiacAI/Hades-2.0-Night1
+- Modelo en Hugging Face: https://huggingface.co/ProjectMosiacAI/Hades-2.0-Night1
 - Version anterior Hades-1.0: https://huggingface.co/ProjectMosiacAI/Hades-1.0
 - Repositorio de Unsloth (libreria de entrenamiento): https://github.com/unslothai/unsloth
 - Documentacion de TRL (libreria de entrenamiento): https://huggingface.co/docs/trl/index

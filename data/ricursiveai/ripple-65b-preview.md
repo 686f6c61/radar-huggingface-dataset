@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ripple-65B Preview es un modelo de lenguaje denso de 65.000 millones de parámetros desarrollado por Ricursive Intelligence, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un transformer denso (no MoE) preentrenado desde cero sobre 12 billones de tokens de texto y código, predominantemente en inglés, con una longitud de contexto que alcanza hasta 1M de tokens tras las fases de post-entrenamiento. Su foco principal es el razonamiento y el código agéntico, y su model card reporta un resultado de 80,52 en TerminalBench 2.1, por encima de modelos open-weight estadounidenses mucho mayores como Reflection Beam 501B, Meta Muse Spark Open 816B, Thinking Machines Inkling 975B o NVIDIA Nemotron 3 Ultra 550B.
+Ripple-65B Preview es un modelo de lenguaje denso de 65.000 millones de parámetros desarrollado por Ricursive Intelligence, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un transformer denso (no MoE) preentrenado desde cero sobre 12 billones de tokens de texto y código, predominantemente en inglés, con una longitud de contexto que alcanza hasta 1M de tokens tras las fases de post-entrenamiento. Su foco principal es el razonamiento y el código agéntico, y su model card reporta un resultado de 80,52 en TerminalBench 2.1, por encima de modelos open-weight estadounidenses mucho mayores como Reflection Beam 501B, Meta Muse Spark Open 816B, Thinking Machines Inkling 975B o NVIDIA Nemotron 3 Ultra 550B.
 
 La relevancia del modelo radica en su relación entre tamaño y rendimiento: con solo 65B parámetros totales, Ricursive afirma que iguala o supera a modelos con más de 10 veces su número de parámetros en tareas de razonamiento y agentes. La arquitectura es deliberadamente "thin-and-deep" (d_model de 5120 y 80 capas), con un diseño tipo Gemma 3N que sustituye al enfoque llama-like de Olmo 3 para mejorar la estabilidad de entrenamiento a escala. La compañía declara un MFU del 40% durante preentrenamiento y post-entrenamiento con sharding simple, sin kernels personalizados y en BF16.
 
@@ -74,7 +74,7 @@ El autor advierte que replicar benchmarks agénticos modernos es difícil y que 
 
 | Modelo | Parámetros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B Preview | 65B denso | Hasta 1M | 80,52 | Apache 2.0 | HuggingFace (BF16, NVFP4, base) |
+| Ripple-65B Preview | 65B denso | Hasta 1M | 80,52 | Apache 2.0 | Hugging Face (BF16, NVFP4, base) |
 | Reflection Beam 501B | 501B | no disponible | 80,1 | no disponible | open-weight (EE. UU.) |
 | Meta Muse Spark Open 816B | 816B | no disponible | 76,4 | no disponible | open-weight (EE. UU.) |
 | Thinking Machines Inkling 975B | 975B | no disponible | 63,8 | no disponible | open-weight (EE. UU.) |
@@ -95,7 +95,7 @@ La comparativa se limita a los datos de TerminalBench 2.1 citados en la model ca
 
 ## Enlaces
 
-- Modelo en HuggingFace (BF16 instruct): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Modelo en Hugging Face (BF16 instruct): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Checkpoint NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
 - Variante DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2

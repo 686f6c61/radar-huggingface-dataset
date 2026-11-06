@@ -12,7 +12,7 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un modelo 
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (tipo qwen3_5_text, según tags de HuggingFace) |
+| Arquitectura | Transformer (tipo qwen3_5_text, según tags de Hugging Face) |
 | Parámetros totales | 27.320.697.856 (≈27,3 mil millones) |
 | Parámetros activos | No disponible (no se indica que sea MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un modelo 
 
 ## Arquitectura y entrenamiento
 
-El modelo se etiqueta en HuggingFace con la arquitectura `qwen3_5_text`, lo que indica que hereda la estructura de la familia Qwen 3.5 en su variante exclusivamente de texto. Se trata, por tanto, de un transformer denso de aproximadamente 27,3 mil millones de parámetros, sin indicios de arquitectura MoE (mezcla de expertos). No se dispone de información sobre el número de capas, dimensión oculta, número de cabezas de atención ni sobre innovaciones como atención lineal o decodificación especulativa.
+El modelo se etiqueta en Hugging Face con la arquitectura `qwen3_5_text`, lo que indica que hereda la estructura de la familia Qwen 3.5 en su variante exclusivamente de texto. Se trata, por tanto, de un transformer denso de aproximadamente 27,3 mil millones de parámetros, sin indicios de arquitectura MoE (mezcla de expertos). No se dispone de información sobre el número de capas, dimensión oculta, número de cabezas de atención ni sobre innovaciones como atención lineal o decodificación especulativa.
 
 En cuanto al entrenamiento, la model card únicamente indica que el fine-tune se realizó con Unsloth y TRL, logrando un entrenamiento "2 veces más rápido". No se especifica el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o cualquier otra técnica de alineación, ni si se aplicó alguna estrategia de ajuste como LoRA o QLoRA. El modelo base declarado es sartajbhuvaji/unfuse-Qwen3.8-27B-text, un modelo intermedio del que tampoco se aportan detalles en la información disponible.
 
@@ -31,7 +31,7 @@ En cuanto al entrenamiento, la model card únicamente indica que el fine-tune se
 
 - Generación de texto conversacional en inglés, según la pipeline declarada (`text-generation`) y el tag `conversational`.
 - Razonamiento de tipo "thinking" (el nombre del modelo sugiere un modo de razonamiento extendido, aunque la model card no lo documenta explícitamente).
-- Compatibilidad con endpoints de HuggingFace (tag `endpoints_compatible`) y con Text Generation Inference (tag `text-generation-inference`).
+- Compatibilidad con endpoints de Hugging Face (tag `endpoints_compatible`) y con Text Generation Inference (tag `text-generation-inference`).
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: limitadas al inglés según el campo `language`.
@@ -43,7 +43,7 @@ En cuanto al entrenamiento, la model card únicamente indica que el fine-tune se
 - Prototipado de aplicaciones de razonamiento: dado el nombre "Thinking" y su origen en la familia Qwen 3.5, puede servir para experimentar con cadenas de razonamiento en inglés, aunque sin benchmarks publicados conviene validar su comportamiento empíricamente antes de usarlo en producción.
 - Investigación sobre fine-tuning: al ser un modelo entrenado con Unsloth y TRL, resulta útil como caso de estudio para reproducir pipelines de ajuste eficiente sobre modelos de ~27B en una sola GPU o con técnicas de cuantización.
 - Despliegue en infraestructura de inferencia estándar: su formato safetensors y su compatibilidad con TGI permiten integrarlo en servicios de generación de texto autoalojados en inglés.
-- Base para nuevos fine-tunes: su licencia Apache 2.0 y su disponibilidad en HuggingFace permiten derivar modelos especializados en dominios concretos en inglés sin restricciones de uso comercial.
+- Base para nuevos fine-tunes: su licencia Apache 2.0 y su disponibilidad en Hugging Face permiten derivar modelos especializados en dominios concretos en inglés sin restricciones de uso comercial.
 - Evaluación comparativa de fine-tunes de Qwen 3.5: puede emplearse como referencia en estudios que comparen variantes ajustadas de la familia Qwen 3.5 en tareas de texto en inglés.
 
 ## Benchmarks y rendimiento
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Neuron-27B-Thinking | ≈27,3B | No disponible | Apache 2.0 | HuggingFace | Fine-tune de Qwen 3.5, solo inglés, sin benchmarks |
-| Qwen 3.5 (base, variante texto) | No disponible | No disponible | No disponible | HuggingFace | Modelo original del que deriva la familia; sin datos concretos en esta ficha |
-| sartajbhuvaji/unfuse-Qwen3.8-27B-text | No disponible | No disponible | No disponible | HuggingFace | Modelo base directo del fine-tune; sin datos concretos |
+| Neuron-27B-Thinking | ≈27,3B | No disponible | Apache 2.0 | Hugging Face | Fine-tune de Qwen 3.5, solo inglés, sin benchmarks |
+| Qwen 3.5 (base, variante texto) | No disponible | No disponible | No disponible | Hugging Face | Modelo original del que deriva la familia; sin datos concretos en esta ficha |
+| sartajbhuvaji/unfuse-Qwen3.8-27B-text | No disponible | No disponible | No disponible | Hugging Face | Modelo base directo del fine-tune; sin datos concretos |
 
 No se dispone de información suficiente para comparar con alternativas de la misma categoría (otros fine-tunes de ~27B o de la familia Qwen 3.5) en términos de rendimiento o contexto.
 
@@ -79,7 +79,7 @@ No se dispone de información suficiente para comparar con alternativas de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Neura-Tech-AI/Neuron-27B-Thinking
+- Hugging Face: https://huggingface.co/Neura-Tech-AI/Neuron-27B-Thinking
 - Modelo base: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (Hugging Face): no disponible en la información proporcionada.

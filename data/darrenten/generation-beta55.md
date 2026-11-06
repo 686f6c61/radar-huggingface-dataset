@@ -62,10 +62,10 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 - No se han documentado sesgos conocidos, pero al no haber datos de entrenamiento, no se puede evaluar el riesgo de alucinación ni de sesgo.
 - La longitud de contexto y los idiomas soportados no están especificados, lo que impide garantizar cualquier comportamiento lingüístico.
 - La licencia MIT permite uso comercial, pero la model card advierte que se deben revisar los términos de las fuentes de datos externas si se utilizan con el repositorio.
-- El código requiere un adaptador explícito para cargarse mediante APIs genéricas de HuggingFace; no es compatible con `AutoModel` sin modificaciones.
+- El código requiere un adaptador explícito para cargarse mediante APIs genéricas de Hugging Face; no es compatible con `AutoModel` sin modificaciones.
 - No se proporcionan garantías de rendimiento ni de estabilidad; es un artefacto experimental.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/darrenten/generation-beta55
+- Repositorio en Hugging Face: https://huggingface.co/darrenten/generation-beta55
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios adicionales) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RoboMamba-DINO-LLaMA-ACT es una política de imitación multi-tarea para robótica de manipulación desarrollada por el usuario Gogul99 y publicada en HuggingFace bajo licencia Apache 2.0. El modelo combina cuatro componentes: un backbone visual DINOv2 preentrenado, un backbone de lenguaje TinyLlama-1.1B, un modelo de secuencia basado en Mamba bidireccional (RoboMamba, con dimensión de modelo 768) y un decodificador de acciones basado en Action Chunking with Transformers (ACT) con una CVAE. El objetivo es mapear observaciones visuales e instrucciones en lenguaje natural a secuencias de acciones motoras para un brazo robótico Franka Emika.
+RoboMamba-DINO-LLaMA-ACT es una política de imitación multi-tarea para robótica de manipulación desarrollada por el usuario Gogul99 y publicada en Hugging Face bajo licencia Apache 2.0. El modelo combina cuatro componentes: un backbone visual DINOv2 preentrenado, un backbone de lenguaje TinyLlama-1.1B, un modelo de secuencia basado en Mamba bidireccional (RoboMamba, con dimensión de modelo 768) y un decodificador de acciones basado en Action Chunking with Transformers (ACT) con una CVAE. El objetivo es mapear observaciones visuales e instrucciones en lenguaje natural a secuencias de acciones motoras para un brazo robótico Franka Emika.
 
 La relevancia del modelo reside en su enfoque híbrido: sustituye la atención cuadrática de los transformers por un modelo de espacio de estados selectivo (Mamba) para procesar secuencias, lo que en principio reduce el coste computacional en horizontes largos, mientras mantiene un backbone lingüístico compacto (1.1B parámetros) y un backbone visual consolidado como DINOv2. Está entrenado sobre 110 episodios de manipulación (100 episodios del dataset DROID más 10 demostraciones de competición) que suman 35.878 frames repartidos en 57 tareas distintas.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboMamba-DINO-LLaMA-ACT | no disponible (repo 3,3 GB; TinyLlama-1.1B en el backbone) | no disponible | Híbrido DINOv2 + TinyLlama + Mamba + ACT/CVAE | Apache 2.0 | HuggingFace (0 descargas) |
+| RoboMamba-DINO-LLaMA-ACT | no disponible (repo 3,3 GB; TinyLlama-1.1B en el backbone) | no disponible | Híbrido DINOv2 + TinyLlama + Mamba + ACT/CVAE | Apache 2.0 | Hugging Face (0 descargas) |
 | ACT (Action Chunking with Transformers) | no disponible | no disponible | Transformer con CVAE para chunks de acciones | MIT (implementación original) | Repositorio público |
 | RoboMamba original | no disponible | no disponible | Mamba para políticas robóticas | no disponible | Repositorio público |
 | Políticas basadas en DROID | no disponible | no disponible | Políticas de imitación sobre el dataset DROID | no disponible | no disponible |
@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gogul99/robomamba-dino-llama-act
+- Hugging Face: https://huggingface.co/Gogul99/robomamba-dino-llama-act
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo.

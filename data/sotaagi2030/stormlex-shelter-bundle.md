@@ -2,7 +2,7 @@
 
 ## Resumen
 
-StormLex-Shelter-Bundle es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 bajo el identificador SOTAagi2030/StormLex-Shelter-Bundle. Por la informacion disponible, no se trata de un modelo de lenguaje con pesos publicados: la model card describe un esquema de datos denominado shelter-intent/v3, con un corte de envio (submission cutoff) fijado en 2026-06-30T23:59:59Z y un recuento de terminos aceptados, repartidos en dos shards (6 terminos en el shard A y 3 en el shard B). El tamano del repositorio es de 0.0 GB, lo que indica que no contiene artefactos de pesos ni, practicamente, ficheros descargables.
+StormLex-Shelter-Bundle es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 bajo el identificador SOTAagi2030/StormLex-Shelter-Bundle. Por la informacion disponible, no se trata de un modelo de lenguaje con pesos publicados: la model card describe un esquema de datos denominado shelter-intent/v3, con un corte de envio (submission cutoff) fijado en 2026-06-30T23:59:59Z y un recuento de terminos aceptados, repartidos en dos shards (6 terminos en el shard A y 3 en el shard B). El tamano del repositorio es de 0.0 GB, lo que indica que no contiene artefactos de pesos ni, practicamente, ficheros descargables.
 
 El bundle declara tres idiomas (es, fr, ar) y una politica de ordenacion y deduplicacion de terminos: orden por idioma y politica, despues por token en UTF-8 ascendente y por source-id ascendente; la deduplicacion se realiza por combinacion de idioma y token, conservando el envio mas temprano, el source-id y el orden CSV. No se especifica arquitectura, numero de parametros, longitud de contexto ni licencia.
 
@@ -34,7 +34,7 @@ Los unicos metadatos tecnicos disponibles son los del esquema shelter-intent/v3:
 - No se declara soporte de agentes ni de razonamiento multi-paso.
 - El unico ambito multilingue documentado es la cobertura de los idiomas es, fr y ar en los terminos del bundle.
 - No se declara ningun modo especial (thinking mode, vision, audio) ni ninguna interfaz de inferencia.
-- No se declara pipeline en HuggingFace (campo pipeline: no disponible).
+- No se declara pipeline en Hugging Face (campo pipeline: no disponible).
 
 No hay informacion suficiente para confirmar ninguna capacidad funcional del artefacto.
 
@@ -75,5 +75,5 @@ No disponible. La informacion publicada no describe un modelo de lenguaje ni un 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/StormLex-Shelter-Bundle
+- Hugging Face: https://huggingface.co/SOTAagi2030/StormLex-Shelter-Bundle
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

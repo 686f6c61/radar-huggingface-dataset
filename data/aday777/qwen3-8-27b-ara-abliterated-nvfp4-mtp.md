@@ -72,5 +72,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP
+- Modelo en Hugging Face: https://huggingface.co/aday777/Qwen3.8-27B-ARA-abliterated-NVFP4-MTP
 - Modelo base (BF16): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara

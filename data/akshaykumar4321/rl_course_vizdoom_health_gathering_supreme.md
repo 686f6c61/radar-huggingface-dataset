@@ -6,7 +6,7 @@ Este repositorio contiene un agente de aprendizaje por refuerzo entrenado con el
 
 La tarea `health_gathering_supreme` es uno de los escenarios clasicos de ViZDoom. El agente recibe observaciones visuales parciales en primera persona y debe aprender una politica de movimiento que maximice la recogida de botiquines, con un umbral de certificacion de recompensa media igual o superior a 5,0. Este checkpoint declara una recompensa media de 6,85 +/- 1,15, por encima de ese umbral.
 
-Su relevancia es fundamentalmente educativa y de referencia: sirve como ejemplo reproducible de un pipeline completo de RL con observaciones visuales, memoria recurrente y entrenamiento distribuido, no como componente listo para produccion. El repositorio ocupa 0,0 GB segun los metadatos de HuggingFace y no declara licencia ni idiomas, lo que limita su reutilizacion directa.
+Su relevancia es fundamentalmente educativa y de referencia: sirve como ejemplo reproducible de un pipeline completo de RL con observaciones visuales, memoria recurrente y entrenamiento distribuido, no como componente listo para produccion. El repositorio ocupa 0,0 GB segun los metadatos de Hugging Face y no declara licencia ni idiomas, lo que limita su reutilizacion directa.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Akshaykumar4321/rl_course_vizdoom_health_gathering_supreme | no disponible | no aplica | mean_reward 6,85 +/- 1,15 (no verificado) | no disponible | HuggingFace, 0 descargas, repo de 0,0 GB |
+| Akshaykumar4321/rl_course_vizdoom_health_gathering_supreme | no disponible | no aplica | mean_reward 6,85 +/- 1,15 (no verificado) | no disponible | Hugging Face, 0 descargas, repo de 0,0 GB |
 | Otros agentes PPO para el mismo entorno (Sample-Factory, CleanRL, RLlib) | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Lineas base oficiales de Sample-Factory | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Akshaykumar4321/rl_course_vizdoom_health_gathering_supreme
+- Modelo en Hugging Face: https://huggingface.co/Akshaykumar4321/rl_course_vizdoom_health_gathering_supreme
 - Repositorio del framework Sample-Factory (referencia del ecosistema, no incluido en la informacion proporcionada): https://github.com/alex-petrenko/sample-factory
 - Sitio oficial de ViZDoom (referencia del entorno, no incluido en la informacion proporcionada): https://vizdoom.cs.put.edu.pl/
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante; los resultados devueltos corresponden a sitios de solitario en polaco (`pasjans-online.pl`, `gra-pasjans.pl`, `pasjans.org.pl`, `pasjanse.com.pl`, `grypasjans.pl`) y son ajenos al modelo.

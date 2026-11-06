@@ -78,7 +78,7 @@ La comparativa se basa en datos públicos de los modelos alternativos. LycheeAI-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whcl412/LycheeAI-coder-1.7b
+- Modelo en Hugging Face: https://huggingface.co/whcl412/LycheeAI-coder-1.7b
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Dataset CodeAlpaca-20k: https://huggingface.co/datasets/sahil2801/CodeAlpaca-20k
 - Framework MLX-LM: https://github.com/ml-explore/mlx-lm

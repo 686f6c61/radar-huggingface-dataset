@@ -73,7 +73,7 @@ No se dispone de informacion comparativa con otros modelos de clasificacion de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shaq2/chashibhai-disease-classifiers
+- Modelo en Hugging Face: https://huggingface.co/Shaq2/chashibhai-disease-classifiers
 - Repositorio GitHub del proyecto: https://github.com/MRSHAKILS/AI-Powered-Smart-Agriculture-Advisory-Platform-for-Bangladesh
 - Repositorio complementario KrishokChat (LLM y RAG): https://huggingface.co/RaiyanKhaan/KrishokChat-Advisory-System
 - Paper relacionado de KrishokChat: arXiv:2606.29243 (https://arxiv.org/abs/2606.29243)

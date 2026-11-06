@@ -101,7 +101,7 @@ No se dispone en la informacion proporcionada de comparativas con otras familias
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Christeck/anima-light-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Christeck/anima-light-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Modelo hermano Anima Deep: https://huggingface.co/Christeck/anima-deep-GGUF
 - Dataset Anima Bench (ES): https://huggingface.co/datasets/Christeck/anima-bench-es

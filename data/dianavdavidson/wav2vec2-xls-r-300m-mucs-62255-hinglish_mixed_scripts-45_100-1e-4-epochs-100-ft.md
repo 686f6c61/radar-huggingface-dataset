@@ -30,7 +30,7 @@ El entrenamiento de ajuste fino se realizo con los siguientes hiperparametros: t
 - Transcripcion de habla hinglish: reconoce audio con alternancia de codigo entre hindi e ingles, incluyendo frases hibridas y prestamos linguisticos.
 - Reconocimiento de escritura mixta: el nombre del modelo indica soporte para transcripciones que combinan devanagari y alfabeto latino.
 - Procesamiento de audio multilingue heredado: al partir de XLS-R 300M, conserva representaciones de audio entrenadas en 128 idiomas, aunque el ajuste fino puede haber reducido el rendimiento fuera del dominio hinglish.
-- Inferencia de audio en tiempo real o por lotes: compatible con el pipeline `automatic-speech-recognition` de HuggingFace Transformers.
+- Inferencia de audio en tiempo real o por lotes: compatible con el pipeline `automatic-speech-recognition` de Hugging Face Transformers.
 - No soporta tool calling, generacion de codigo, razonamiento ni capacidades multimodales: es un modelo exclusivamente de ASR.
 
 ## Casos de uso
@@ -58,16 +58,16 @@ La evolucion del WER durante el entrenamiento muestra una mejora progresiva desd
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en FP32 y unos 650 MB en FP16, lo que permite ejecutar el modelo en GPUs de consumo con 4 GB de VRAM o mas.
 - GPUs recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3060, RTX 4090, o GPUs de datacenter como A10, A100 o H100 para inferencia por lotes a mayor velocidad.
 - Compatibilidad con GPU de consumo: si, cabe en GPUs de gama media y baja gracias a su tamano moderado.
-- Opciones de despliegue: HuggingFace Transformers con pipeline `automatic-speech-recognition`, o mediante servidores de inferencia como HuggingFace Inference Endpoints. No se han publicado integraciones con vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje, no a ASR.
+- Opciones de despliegue: Hugging Face Transformers con pipeline `automatic-speech-recognition`, o mediante servidores de inferencia como Hugging Face Inference Endpoints. No se han publicado integraciones con vLLM, llama.cpp u Ollama, que estan orientados a modelos de lenguaje, no a ASR.
 - Latencia y throughput: no disponible. Depende del hardware y de la longitud del audio de entrada; en una GPU moderna se espera un factor de tiempo real inferior a 1 (procesa mas rapido que la duracion del audio), pero no hay datos publicados.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | WER (hinglish) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (mucs-62255) | 315,5 M | no disponible | 21,71% | Apache 2.0 | HuggingFace |
-| facebook/wav2vec2-xls-r-300m (base) | 315,5 M | no disponible | no evaluado en hinglish | MIT | HuggingFace |
-| wav2vec2-xls-r-300m-mucs-62230 (variante del mismo autor) | 315,5 M | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Este modelo (mucs-62255) | 315,5 M | no disponible | 21,71% | Apache 2.0 | Hugging Face |
+| facebook/wav2vec2-xls-r-300m (base) | 315,5 M | no disponible | no evaluado en hinglish | MIT | Hugging Face |
+| wav2vec2-xls-r-300m-mucs-62230 (variante del mismo autor) | 315,5 M | no disponible | no disponible | Apache 2.0 | Hugging Face |
 
 La variante `mucs-62230` del mismo autor sigue la misma nomenclatura y probablemente fue entrenada con un subconjunto diferente del dataset MUCS, pero no se dispone de sus metricas. El modelo base XLS-R 300M no esta ajustado para hinglish y su rendimiento en este dominio seria significativamente peor. No se dispone de comparaciones con otros modelos ASR como Whisper o IndicWav2Vec en este escenario especifico.
 
@@ -76,7 +76,7 @@ La variante `mucs-62230` del mismo autor sigue la misma nomenclatura y probablem
 - Dataset de entrenamiento no documentado: la model card indica "More information needed" para los apartados de datos de entrenamiento y evaluacion, lo que dificulta evaluar la representatividad y posibles sesgos del conjunto de datos.
 - WER relativamente alto: con un 21,71% de WER global, el modelo no es adecuado para transcripcion automatica sin supervision humana en contextos donde se requiera alta precision.
 - Especializacion limitada: el ajuste fino puede haber degradado el rendimiento en otros idiomas o variantes del hindi fuera del dominio hinglish code-switched.
-- Model card auto-generada: la documentacion es minima y generada automaticamente por el Trainer de HuggingFace, sin descripcion de usos previstos, limitaciones ni procedimiento de entrenamiento detallado.
+- Model card auto-generada: la documentacion es minima y generada automaticamente por el Trainer de Hugging Face, sin descripcion de usos previstos, limitaciones ni procedimiento de entrenamiento detallado.
 - Sin cuantizaciones publicadas: no se ofrecen versiones GGUF, ONNX o cuantizadas, lo que limita el despliegue en entornos con restricciones de memoria o en CPU.
 - Riesgo de alucinacion fonetica: como cualquier modelo ASR, puede producir transcripciones incorrectas en audio con ruido, acentos no representados en el dataset o solapamiento de hablantes.
 - Licencia Apache 2.0: permite uso comercial sin restricciones, pero el modelo base XLS-R esta bajo licencia MIT, por lo que no hay conflicto de licencias.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indobert_user_review es un modelo publicado en HuggingFace por el usuario EkaDzakwan bajo licencia MIT. Por el identificador del repositorio y la ausencia de cualquier otra documentación, se trata presumiblemente de un ajuste fino de IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por Indolem, orientado a una tarea de clasificación o análisis de reseñas de usuarios. No obstante, la model card no contiene ninguna descripción técnica, por lo que esta interpretación no puede confirmarse con la información disponible.
+Indobert_user_review es un modelo publicado en Hugging Face por el usuario EkaDzakwan bajo licencia MIT. Por el identificador del repositorio y la ausencia de cualquier otra documentación, se trata presumiblemente de un ajuste fino de IndoBERT, la familia de modelos BERT preentrenados en indonesio desarrollada por Indolem, orientado a una tarea de clasificación o análisis de reseñas de usuarios. No obstante, la model card no contiene ninguna descripción técnica, por lo que esta interpretación no puede confirmarse con la información disponible.
 
 El repositorio no incluye pipeline declarado, ni idiomas especificados, ni datos sobre arquitectura, tamaño o contexto. La model card se limita a una línea con la licencia MIT. El modelo registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que no ha sido validado por la comunidad ni dispone de resultados reproducibles publicados.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible, al desconocerse el número de parámetros.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; si se confirma que es un BERT-base (unos 110 millones de parámetros), cabría en cualquier GPU con 4-8 GB de VRAM en FP16, pero es una suposición no verificada.
-- Opciones de despliegue: no documentadas por el autor; en caso de ser un encoder BERT estándar, sería compatible con HuggingFace Transformers, ONNX Runtime y TorchScript.
+- Opciones de despliegue: no documentadas por el autor; en caso de ser un encoder BERT estándar, sería compatible con Hugging Face Transformers, ONNX Runtime y TorchScript.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Documentación | Disponibilidad |
 |---|---|---|---|---|---|
-| EkaDzakwan/Indobert_user_review | no disponible | no disponible | MIT | mínima (solo licencia) | HuggingFace, 0 descargas |
-| IndoBERT (Indolem) | ~110 M (BERT-base) | 512 tokens | según variante | model card completa | HuggingFace, ampliamente usado |
-| IndoBERT-lite (Indolem) | ~17 M | 512 tokens | según variante | model card completa | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | model card completa | HuggingFace |
+| EkaDzakwan/Indobert_user_review | no disponible | no disponible | MIT | mínima (solo licencia) | Hugging Face, 0 descargas |
+| IndoBERT (Indolem) | ~110 M (BERT-base) | 512 tokens | según variante | model card completa | Hugging Face, ampliamente usado |
+| IndoBERT-lite (Indolem) | ~17 M | 512 tokens | según variante | model card completa | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | model card completa | Hugging Face |
 
 La comparación es orientativa: los datos de IndoBERT y XLM-RoBERTa provienen de sus repositorios públicos, mientras que del modelo de EkaDzakwan no hay especificaciones verificables.
 
@@ -81,6 +81,6 @@ La comparación es orientativa: los datos de IndoBERT y XLM-RoBERTa provienen de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EkaDzakwan/Indobert_user_review
+- Hugging Face: https://huggingface.co/EkaDzakwan/Indobert_user_review
 - IndoBERT (Indolem), referencia de la familia: https://huggingface.co/indolem/indobert-base-uncased
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información disponible.

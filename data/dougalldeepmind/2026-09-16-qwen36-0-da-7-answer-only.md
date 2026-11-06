@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA de ajuste supervisado (SFT) entrenado sobre el modelo base Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`). No es un modelo completo, sino un conjunto de pesos PEFT en formato safetensors que debe combinarse con el modelo base para su uso. El autor es el usuario de HuggingFace `dougalldeepmind` y el artefacto esta fechado el 16 de septiembre de 2026, con la receta `sft` aplicada sobre la mezcla de datos `da-7-answer-only` con semilla 0.
+Este repositorio contiene un adaptador LoRA de ajuste supervisado (SFT) entrenado sobre el modelo base Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`). No es un modelo completo, sino un conjunto de pesos PEFT en formato safetensors que debe combinarse con el modelo base para su uso. El autor es el usuario de Hugging Face `dougalldeepmind` y el artefacto esta fechado el 16 de septiembre de 2026, con la receta `sft` aplicada sobre la mezcla de datos `da-7-answer-only` con semilla 0.
 
 El interes de la ficha es acotado pero relevante para investigacion en alineamiento: el entrenamiento se enmarca en el repositorio `teaching_claude_why_replication`, y forma parte de un pipeline que usa una "constitucion" destilada (`claude_distilled_09_principles/constitution.md`). Esto sugiere un experimento de destilacion de principios o de replicacion de comportamientos tipo Claude sobre un modelo Qwen, mas que un modelo de proposito general listo para produccion. El autor no publica model card descriptiva de capacidades: la informacion disponible es exclusivamente metadata de reproducibilidad.
 
@@ -77,7 +77,7 @@ No se dispone de especificaciones del modelo base Qwen/Qwen3.6-27B ni de adaptad
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-09-16-qwen36-0-da-7-answer-only | Adaptador LoRA SFT | No disponible (base 27B) | 8192 en entrenamiento | No disponible | Publico en HuggingFace, 0 descargas |
+| dougalldeepmind/2026-09-16-qwen36-0-da-7-answer-only | Adaptador LoRA SFT | No disponible (base 27B) | 8192 en entrenamiento | No disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3.6-27B (`6a9e13bd...`) | Modelo base referenciado | 27B | No disponible | No disponible | Referenciado, no verificado en esta busqueda |
 | Alternativas de la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone de especificaciones del modelo base Qwen/Qwen3.6-27B ni de adaptad
 
 ## Enlaces
 
-- Pagina de HuggingFace del adaptador: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-da-7-answer-only
+- Pagina de Hugging Face del adaptador: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-da-7-answer-only
 - Dataset de mezcla de entrenamiento: https://huggingface.co/datasets/dougalldeepmind/2026-09-16-da-7-answer-only-mix (revision `e8104b084b6e47e99e2ace48df352b4a43a9604b`)
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-27B (revision `6a9e13bd6fc8f0983b9b99948120bc37f49c13e9`)
 - Repositorio de origen: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication.git (commit `23a13288299ee020639965eeb49a64e0e85c9af2`)

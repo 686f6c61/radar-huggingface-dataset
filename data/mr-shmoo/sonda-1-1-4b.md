@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sonda-1.1-4B es un modelo publicado en HuggingFace por el usuario Mr-Shmoo bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia y fecha de creacion (7 de octubre de 2026). No se ha publicado model card con contenido tecnico, no consta pipeline declarado, no se especifican idiomas soportados y el repositorio registra cero descargas y cero likes.
+sonda-1.1-4B es un modelo publicado en Hugging Face por el usuario Mr-Shmoo bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: identificador, autor, licencia y fecha de creacion (7 de octubre de 2026). No se ha publicado model card con contenido tecnico, no consta pipeline declarado, no se especifican idiomas soportados y el repositorio registra cero descargas y cero likes.
 
 El nombre del modelo sugiere una variante de aproximadamente 4.000 millones de parametros (el sufijo "4B"), pero este dato no esta confirmado en ninguna fuente oficial ni en la documentacion del autor. La ausencia de ficha tecnica, de configuracion publicada y de resultados de evaluacion impide verificar arquitectura, longitud de contexto, datos de entrenamiento o capacidades reales del modelo.
 
@@ -81,7 +81,7 @@ No disponible. No es posible establecer comparaciones fiables sin conocer parame
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mr-Shmoo/sonda-1.1-4B
+- Hugging Face: https://huggingface.co/Mr-Shmoo/sonda-1.1-4B
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

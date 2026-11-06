@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cxmplex_sn92-gen-g5f3`, publicado por el usuario `ben0925` en HuggingFace, es un checkpoint de la familia Qwen 3.5 (según el tag `qwen3_5`) con 26.085.330.160 parámetros totales almacenados en formato safetensors. La model card lo describe como un "decision model" para la pista generalista de un sistema denominado REAX (SN92), sin aportar más detalle sobre su entrenamiento, composición de datos o propósito concreto. El repositorio ocupa 52,2 GB, lo que es coherente con pesos en precisión bf16/fp16 para un modelo de ~26B parámetros.
+El modelo `cxmplex_sn92-gen-g5f3`, publicado por el usuario `ben0925` en Hugging Face, es un checkpoint de la familia Qwen 3.5 (según el tag `qwen3_5`) con 26.085.330.160 parámetros totales almacenados en formato safetensors. La model card lo describe como un "decision model" para la pista generalista de un sistema denominado REAX (SN92), sin aportar más detalle sobre su entrenamiento, composición de datos o propósito concreto. El repositorio ocupa 52,2 GB, lo que es coherente con pesos en precisión bf16/fp16 para un modelo de ~26B parámetros.
 
 La información pública disponible es extremadamente escasa: no hay pipeline declarado, no se listan idiomas soportados, no hay resultados de benchmarks ni documentación técnica más allá de dos líneas en la model card. El modelo se publicó el 2 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni "likes", lo que sugiere un artefacto experimental o de uso interno más que un lanzamiento comunitario.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cxmplex_sn92-gen-g5f3 | ~26,1B | No disponible | MIT | HuggingFace (repo de autor individual) |
+| cxmplex_sn92-gen-g5f3 | ~26,1B | No disponible | MIT | Hugging Face (repo de autor individual) |
 | Qwen 3.5 (checkpoint oficial, referencia) | No disponible en esta ficha | No disponible | No disponible | No disponible |
 | Gemma 2 27B | 27B | 8K | Gemma license | Público |
 | Mistral Large / Mistral Small (referencia de tamaño similar) | No disponible | No disponible | No disponible | No disponible |
@@ -82,5 +82,5 @@ La comparativa es limitada porque no hay datos de rendimiento del modelo evaluad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ben0925/cxmplex_sn92-gen-g5f3
+- Hugging Face: https://huggingface.co/ben0925/cxmplex_sn92-gen-g5f3
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Turbo es un checkpoint acelerado de Qwen-Image-2.1 para generacion de imagenes a partir de texto (text-to-image) y edicion de imagenes. La ficha de HuggingFace analizada corresponde al repositorio `Tds810/Qwen-Image-2.1-Turbo`, un reupload del checkpoint oficial `Qwen/Qwen-Image-2.1-Turbo` publicado por Qwen (Alibaba). El modelo declara un total de 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y un peso de repositorio de 32,5 GB, lo que incluye no solo el transformer de difusion sino tambien el codificador de texto y el VAE del pipeline. Se carga directamente con `QwenImage21Pipeline` de Diffusers y esta pensado para funcionar con muy pocos pasos de muestreo.
+Qwen-Image-2.1-Turbo es un checkpoint acelerado de Qwen-Image-2.1 para generacion de imagenes a partir de texto (text-to-image) y edicion de imagenes. La ficha de Hugging Face analizada corresponde al repositorio `Tds810/Qwen-Image-2.1-Turbo`, un reupload del checkpoint oficial `Qwen/Qwen-Image-2.1-Turbo` publicado por Qwen (Alibaba). El modelo declara un total de 7.115.124.736 parametros (aproximadamente 7,1 mil millones) y un peso de repositorio de 32,5 GB, lo que incluye no solo el transformer de difusion sino tambien el codificador de texto y el VAE del pipeline. Se carga directamente con `QwenImage21Pipeline` de Diffusers y esta pensado para funcionar con muy pocos pasos de muestreo.
 
 La innovacion principal frente al modelo base es la reduccion del coste de inferencia: el checkpoint incluye un calendario de muestreo recomendado y genera con 8 pasos de denoising, usando CFG=1 por defecto y cacheo de KV de prefijo para reutilizar el contexto de texto e imagen de referencia entre pasos. Esto reduce drasticamente el numero de evaluaciones del transformer por imagen en comparacion con un muestreo estandar de 20-50 pasos, lo que hace viable el despliegue en produccion con latencias mas bajas.
 
@@ -78,11 +78,11 @@ Los datos de terceros que aparecen en esta tabla corresponden a conocimiento pub
 
 | Modelo | Parametros | Pasos tipicos | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Tds810/Qwen-Image-2.1-Turbo | 7,1B (transformer) | 8 (CFG=1) | `qwen-research` (other) | HuggingFace, reupload con 0 descargas | Repositorio analizado; sin benchmarks publicados |
-| Qwen/Qwen-Image-2.1 (base) | 7,1B (misma arquitectura declarada) | No disponible | `qwen-research` | HuggingFace oficial de Qwen | Modelo base del que deriva este checkpoint |
-| Qwen/Qwen-Image-2.1-Turbo (oficial) | 7,1B | 8 (CFG=1) | `qwen-research` | HuggingFace y ModelScope oficiales | Checkpoint original; el repositorio analizado parece un reupload |
-| FLUX.1-dev | 12B (dato publico general) | No disponible | No comercial (dato publico general) | HuggingFace | Alternativa de generacion de imagenes de mayor tamano |
-| Stable Diffusion 3.5 Large | 8B (dato publico general) | No disponible | Stability Community License (dato publico general) | HuggingFace | Alternativa de tamano similar |
+| Tds810/Qwen-Image-2.1-Turbo | 7,1B (transformer) | 8 (CFG=1) | `qwen-research` (other) | Hugging Face, reupload con 0 descargas | Repositorio analizado; sin benchmarks publicados |
+| Qwen/Qwen-Image-2.1 (base) | 7,1B (misma arquitectura declarada) | No disponible | `qwen-research` | Hugging Face oficial de Qwen | Modelo base del que deriva este checkpoint |
+| Qwen/Qwen-Image-2.1-Turbo (oficial) | 7,1B | 8 (CFG=1) | `qwen-research` | Hugging Face y ModelScope oficiales | Checkpoint original; el repositorio analizado parece un reupload |
+| FLUX.1-dev | 12B (dato publico general) | No disponible | No comercial (dato publico general) | Hugging Face | Alternativa de generacion de imagenes de mayor tamano |
+| Stable Diffusion 3.5 Large | 8B (dato publico general) | No disponible | Stability Community License (dato publico general) | Hugging Face | Alternativa de tamano similar |
 
 ## Limitaciones y advertencias
 
@@ -100,13 +100,13 @@ Los datos de terceros que aparecen en esta tabla corresponden a conocimiento pub
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/Tds810/Qwen-Image-2.1-Turbo
-- Checkpoint oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
+- Repositorio analizado en Hugging Face: https://huggingface.co/Tds810/Qwen-Image-2.1-Turbo
+- Checkpoint oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
 - ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1-Turbo
 - Discord: https://discord.gg/BEYSk3pkSu
 - Pull request de Diffusers con soporte de sigmas configurables por pipeline: https://github.com/huggingface/diffusers/pull/14950
-- Fichero de licencia referenciado por la model card: LICENSE del repositorio en HuggingFace
+- Fichero de licencia referenciado por la model card: LICENSE del repositorio en Hugging Face
 - Enlaces adicionales: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; unicamente aparecieron dominios de spam sin relacion con el contenido, por lo que no se incorporan aqui.

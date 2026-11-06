@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meand-erson/retrieval-small` es un modelo de transformer en miniatura diseñado específicamente para tareas de retrieval (recuperación de información). Desarrollado por Megan Anderson (usuario de HuggingFace `meand-erson`), se publica como una implementación compacta en PyTorch con el objetivo de servir como punto de partida para revisiones de código, pruebas de humo y experimentos controlados a pequeña escala. No se presenta como un modelo preentrenado listo para producción, sino como un artefacto de investigación.
+`meand-erson/retrieval-small` es un modelo de transformer en miniatura diseñado específicamente para tareas de retrieval (recuperación de información). Desarrollado por Megan Anderson (usuario de Hugging Face `meand-erson`), se publica como una implementación compacta en PyTorch con el objetivo de servir como punto de partida para revisiones de código, pruebas de humo y experimentos controlados a pequeña escala. No se presenta como un modelo preentrenado listo para producción, sino como un artefacto de investigación.
 
 El modelo cuenta con 16.576 parámetros totales, lo que lo sitúa en la categoría de "tiny transformer". Su arquitectura emplea atención lineal, fusión de bajo rango, activación GELU y normalización InstanceNorm. La licencia es BSD-3-Clause, lo que permite uso comercial con atribución. El repositorio incluye un checkpoint de inicialización válido (`model.safetensors`), pero el autor no reclama ningún resultado de benchmark ni rendimiento evaluado. Su relevancia actual es limitada: sirve para aprender sobre implementaciones de transformers pequeños, depurar pipelines de retrieval o como base para experimentos académicos de bajo coste computacional.
 
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/meand-erson/retrieval-small
+- Modelo en Hugging Face: https://huggingface.co/meand-erson/retrieval-small
 - Perfil del autor: https://huggingface.co/meand-erson

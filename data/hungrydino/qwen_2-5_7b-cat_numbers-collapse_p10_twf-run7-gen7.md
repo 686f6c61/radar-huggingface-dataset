@@ -77,7 +77,7 @@ No hay modelos comparables con la misma especialización (colapso de números) e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen7
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run7-gen7
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:7b

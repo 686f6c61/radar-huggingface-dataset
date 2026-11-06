@@ -72,8 +72,8 @@ No se han encontrado en la informacion disponible modelos directamente comparabl
 
 | Modelo | Funcion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-PE-I2I | Reescritura de prompts de edicion (image-to-image) | 9.409.813.744 | no disponible | qwen-research | HuggingFace |
-| Qwen-Image-2.1 | Generacion texto-a-imagen y edicion unificadas | 7 B en el componente de generacion visual (32 capas DiT single-stream) | no disponible | no disponible en la informacion proporcionada | HuggingFace y ModelScope |
+| Qwen-Image-2.1-PE-I2I | Reescritura de prompts de edicion (image-to-image) | 9.409.813.744 | no disponible | qwen-research | Hugging Face |
+| Qwen-Image-2.1 | Generacion texto-a-imagen y edicion unificadas | 7 B en el componente de generacion visual (32 capas DiT single-stream) | no disponible | no disponible en la informacion proporcionada | Hugging Face y ModelScope |
 | Qwen3.5-VL 9B | Vision-lenguaje de proposito general (base del ajuste) | aproximadamente 9 B | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -91,11 +91,11 @@ No se han encontrado en la informacion disponible modelos directamente comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
-- Modelo de edicion asociado en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I
+- Modelo de edicion asociado en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo de edicion en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog de Qwen-Image-2.1: https://qwen.ai/blog?id=qwen-image-2.1
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1
 - Repositorio en GitHub: https://github.com/QwenLM/Qwen-Image-2.1
 - Servidor de Discord de Qwen: https://discord.gg/CV4E9rpNSD
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I/blob/main/LICENSE

@@ -106,6 +106,6 @@ La información disponible no incluye comparativas con otras suites de SAE. Se o
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeonInverse/qwen3.8-27b-scope-code
+- Modelo en Hugging Face: https://huggingface.co/LeonInverse/qwen3.8-27b-scope-code
 - Modelo base referenciado en la model card (no verificado): https://huggingface.co/Qwen/Qwen3.8-27B
 - La búsqueda web realizada no devolvió enlaces relevantes: los resultados se limitan a páginas genéricas de Reddit, Zhihu y Steam Community, sin relación con el modelo ni con su dominio. No se dispone de paper, blog técnico, repositorio de código ni demo asociados.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-et` es un modelo de clasificación de tokens (token-classification) alojado en HuggingFace por el proyecto EuroEval. Según las etiquetas del repositorio, está basado en la arquitectura ModernBERT y utiliza pesos en formato safetensors. Cuenta con 140.642.306 parámetros y un tamaño de repositorio de 1,2 GB. La model card oficial está prácticamente vacía, con todas las secciones marcadas como "[More Information Needed]", por lo que no se dispone de información detallada sobre su entrenamiento, propósito exacto o rendimiento.
+El modelo `EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-et` es un modelo de clasificación de tokens (token-classification) alojado en Hugging Face por el proyecto EuroEval. Según las etiquetas del repositorio, está basado en la arquitectura ModernBERT y utiliza pesos en formato safetensors. Cuenta con 140.642.306 parámetros y un tamaño de repositorio de 1,2 GB. La model card oficial está prácticamente vacía, con todas las secciones marcadas como "[More Information Needed]", por lo que no se dispone de información detallada sobre su entrenamiento, propósito exacto o rendimiento.
 
 A pesar de la falta de documentación, el nombre del modelo sugiere una posible orientación a la detección de alucinaciones en respuestas generadas con RAG (retrieval-augmented generation), en euskera (et), pero esta interpretación no está confirmada por el autor. En cualquier caso, se trata de un modelo pequeño, adecuado para tareas de clasificación a nivel de token, y su relevancia actual reside en su posible uso dentro de pipelines de verificación factual, aunque no hay evidencia pública que lo respalde.
 
@@ -42,7 +42,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 No se dispone de información específica sobre requisitos de hardware. Como referencia orientativa, un modelo de 140 millones de parámetros en precisión fp32 ocupa aproximadamente 560 MB de memoria, y en fp16 unos 280 MB. Esto permitiría su ejecución en GPUs de consumo como una RTX 3060 o superior, o incluso en CPU con suficiente RAM. Sin embargo, estos datos son estimaciones genéricas y no provienen de la documentación del modelo.
 
-Las opciones de despliegue habituales para modelos de este tipo incluyen bibliotecas como Transformers de HuggingFace, ONNX Runtime o TensorRT, pero no hay confirmación de compatibilidad específica.
+Las opciones de despliegue habituales para modelos de este tipo incluyen bibliotecas como Transformers de Hugging Face, ONNX Runtime o TensorRT, pero no hay confirmación de compatibilidad específica.
 
 ## Comparativa con modelos similares
 
@@ -58,5 +58,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-et)
+- [Modelo en Hugging Face](https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-et)
 - [Paper de BERT (referencia en tags)](https://arxiv.org/abs/1910.09700) — aunque no es específico de este modelo, es la única referencia académica asociada.

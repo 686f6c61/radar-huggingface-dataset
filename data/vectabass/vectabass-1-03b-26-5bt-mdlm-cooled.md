@@ -83,9 +83,9 @@ Los datos de sampler corresponden a la celda N6-D5, no a esta celda, y se obtuvi
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-1.03b-26.5bt-mdlm-cooled | 1.028 M totales (919 M sin embeddings) | 2.048 | MDLM (difusión enmascarada) | Apache 2.0 | HuggingFace |
+| vectabass-1.03b-26.5bt-mdlm-cooled | 1.028 M totales (919 M sin embeddings) | 2.048 | MDLM (difusión enmascarada) | Apache 2.0 | Hugging Face |
 | Matriz autorregresiva de VectaBass (misma ladder y datos) | 100 M a 1.600 M sin embeddings | No disponible | Autorregresivo | No disponible | Publicada por separado según la model card |
-| Resto de celdas MDLM de la matriz (100 M a 1.600 M) | 100 M a 1.600 M sin embeddings | No disponible | MDLM | Apache 2.0 | HuggingFace |
+| Resto de celdas MDLM de la matriz (100 M a 1.600 M) | 100 M a 1.600 M sin embeddings | No disponible | MDLM | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparables entre estas variantes; la model card solo indica que el muestreo ancestral exacto del MDLM es mucho menos fluido que el modelo autorregresivo del mismo tamaño, sin cifras publicadas para esa comparación.
 
@@ -104,9 +104,9 @@ No se dispone de datos de benchmarks comparables entre estas variantes; la model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-1.03b-26.5bt-mdlm-cooled
-- Fichero `DATA.md` (bins, cuotas y licencias del dataset): referenciado en el repositorio de HuggingFace
-- Fichero `modeling_vectabass.py` (implementación con `diffusion_generate`): incluido en el repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-1.03b-26.5bt-mdlm-cooled
+- Fichero `DATA.md` (bins, cuotas y licencias del dataset): referenciado en el repositorio de Hugging Face
+- Fichero `modeling_vectabass.py` (implementación con `diffusion_generate`): incluido en el repositorio de Hugging Face
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

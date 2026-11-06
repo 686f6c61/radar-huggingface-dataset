@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tune) de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario longtermrisk. Está diseñado específicamente para la generación de nombres de ciudades alemanas, como indica su nombre. Se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que permite un entrenamiento aproximadamente dos veces más rápido que el método convencional.
+Este modelo es un ajuste fino (fine-tune) de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario longtermrisk. Está diseñado específicamente para la generación de nombres de ciudades alemanas, como indica su nombre. Se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que permite un entrenamiento aproximadamente dos veces más rápido que el método convencional.
 
 Aunque la ficha del modelo no detalla el dataset ni el procedimiento de entrenamiento, la especialización en nombres de ciudades alemanas sugiere que se trata de un modelo de generación de texto restringido a ese dominio. Es relevante como ejemplo de fine-tuning de bajo coste sobre un modelo base de 8 000 millones de parámetros, con licencia Apache-2.0 que permite uso comercial. La arquitectura hereda la del modelo base: un transformer decoder con 8 000 millones de parámetros y una ventana de contexto de 128 000 tokens, aunque el ajuste puede haber modificado el comportamiento final.
 
@@ -23,7 +23,7 @@ Aunque la ficha del modelo no detalla el dataset ni el procedimiento de entrenam
 
 El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada de Llama-3.1-8B-Instruct. La arquitectura es la de un transformer decoder-only con 8 000 millones de parametros, 32 capas, 32 cabezas de atencion y un tamaño de embedding de 4096. El modelo base fue entrenado por Meta con alrededor de 15 billones de tokens en multiples idiomas, y posteriormente ajustado con instrucciones.
 
-El fine-tuning realizado por longtermrisk se llevo a cabo con Unsloth, que optimiza el uso de memoria y acelera el entrenamiento, junto con la libreria TRL de HuggingFace. No se especifica el numero de tokens de entrenamiento ni la composicion del dataset. Por el nombre del modelo, se infiere que el conjunto de datos contiene nombres de ciudades alemanas, pero no hay detalles publicos sobre el volumen o la metodologia (por ejemplo, si se uso SFT o DPO).
+El fine-tuning realizado por longtermrisk se llevo a cabo con Unsloth, que optimiza el uso de memoria y acelera el entrenamiento, junto con la libreria TRL de Hugging Face. No se especifica el numero de tokens de entrenamiento ni la composicion del dataset. Por el nombre del modelo, se infiere que el conjunto de datos contiene nombres de ciudades alemanas, pero no hay detalles publicos sobre el volumen o la metodologia (por ejemplo, si se uso SFT o DPO).
 
 ## Capacidades
 
@@ -75,7 +75,7 @@ El modelo es un derivado directo del base; no existen datos publicos que permita
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed2)
+- [Modelo en Hugging Face](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld-seed2)
 - [Modelo en FriendliAI](https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld)
 - [Modelo relacionado: variante SFT](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed2-epoch3)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)

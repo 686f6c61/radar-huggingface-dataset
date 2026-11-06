@@ -83,9 +83,9 @@ En la información proporcionada solo hay datos suficientes para comparar entre 
 
 | Modelo | Tarea | Parámetros activos | Resolución | VAE / nota | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-I2V-A14B (este repositorio, por nomenclatura) | Imagen a vídeo | 14 000 millones (A14B) | 480P y 720P | Arquitectura MoE | HuggingFace, ModelScope, Diffusers, ComfyUI |
-| Wan2.2-T2V-A14B | Texto a vídeo | 14 000 millones (A14B) | 480P y 720P | Arquitectura MoE | HuggingFace, ModelScope, Diffusers, ComfyUI |
-| Wan2.2-TI2V-5B | Texto a vídeo e imagen a vídeo | 5 000 millones | 720P a 24 fps | VAE con compresión 16×16×4, ejecutable en 4090 | HuggingFace, ModelScope, Diffusers, ComfyUI |
+| Wan2.2-I2V-A14B (este repositorio, por nomenclatura) | Imagen a vídeo | 14 000 millones (A14B) | 480P y 720P | Arquitectura MoE | Hugging Face, ModelScope, Diffusers, ComfyUI |
+| Wan2.2-T2V-A14B | Texto a vídeo | 14 000 millones (A14B) | 480P y 720P | Arquitectura MoE | Hugging Face, ModelScope, Diffusers, ComfyUI |
+| Wan2.2-TI2V-5B | Texto a vídeo e imagen a vídeo | 5 000 millones | 720P a 24 fps | VAE con compresión 16×16×4, ejecutable en 4090 | Hugging Face, ModelScope, Diffusers, ComfyUI |
 | Wan2.1 | Vídeo generativo (generación previa) | no disponible | no disponible | Base de comparación: Wan2.2 usa +65,6 % de imágenes y +83,2 % de vídeos | Repositorio público en GitHub |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ En la información proporcionada solo hay datos suficientes para comparar entre 
 ## Enlaces
 
 - Repositorio analizado: https://huggingface.co/MsMagic/Wan2.2-I2V
-- Organización oficial en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización oficial en Hugging Face: https://huggingface.co/Wan-AI/
 - Modelo oficial Wan2.2-I2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Modelo oficial Wan2.2-T2V-A14B: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Modelo oficial Wan2.2-TI2V-5B: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B

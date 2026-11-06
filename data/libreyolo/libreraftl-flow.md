@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Tarea | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreRAFTl-flow | 5,3 M | Flujo optico denso | Resolucion nativa, padding a multiplo de 8 | BSD 3-Clause | HuggingFace (libreyolo) |
+| LibreRAFTl-flow | 5,3 M | Flujo optico denso | Resolucion nativa, padding a multiplo de 8 | BSD 3-Clause | Hugging Face (libreyolo) |
 | RAFT upstream (princeton-vl) | 5,3 M (variante large) | Flujo optico denso | Resolucion nativa | BSD 3-Clause | GitHub + models.zip |
 | Modelos de flujo optico basados en transformers | no disponible | Flujo optico denso | no disponible | no disponible | no disponible |
 
@@ -80,6 +80,6 @@ La comparativa se limita al modelo upstream, del que este checkpoint es un reemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreRAFTl-flow
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreRAFTl-flow
 - Repositorio upstream RAFT: https://github.com/princeton-vl/RAFT
 - Repositorio de LibreYOLO: https://github.com/LibreYOLO/libreyolo

@@ -78,8 +78,8 @@ El autor advierte de que n = 5 y n = 20 son demasiado pequenos para que los inte
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| historical-event-narrator-mistral-7b-lora | 13,6 M entrenables sobre 7B | 128 tokens de entrenamiento del adaptador; contexto del base no indicado | ROUGE-1 0,296 (n = 5) frente al base | Apache 2.0 | HuggingFace, 0 descargas |
-| mistralai/Mistral-7B-v0.1 (modelo base, sin adaptador) | 7 000 M | No indicado en la informacion proporcionada | ROUGE-1 0,212 (n = 5) con el prompt de este proyecto | Apache 2.0 | HuggingFace |
+| historical-event-narrator-mistral-7b-lora | 13,6 M entrenables sobre 7B | 128 tokens de entrenamiento del adaptador; contexto del base no indicado | ROUGE-1 0,296 (n = 5) frente al base | Apache 2.0 | Hugging Face, 0 descargas |
+| mistralai/Mistral-7B-v0.1 (modelo base, sin adaptador) | 7 000 M | No indicado en la informacion proporcionada | ROUGE-1 0,212 (n = 5) con el prompt de este proyecto | Apache 2.0 | Hugging Face |
 | Otros adaptadores LoRA de escritura creativa sobre Mistral-7B | No disponible | No disponible | No disponible | Variable | No disponible |
 
 No se dispone de datos comparativos con alternativas de la misma categoria en la informacion proporcionada; la unica comparacion verificable es la del propio autor frente al modelo base.
@@ -98,7 +98,7 @@ No se dispone de datos comparativos con alternativas de la misma categoria en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/De-x-ter/historical-event-narrator-mistral-7b-lora
+- Hugging Face: https://huggingface.co/De-x-ter/historical-event-narrator-mistral-7b-lora
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Codigo y datos: https://github.com/Keerthirajan58/Historical-Event-Narrator
 - Paper o articulo tecnico: no disponible

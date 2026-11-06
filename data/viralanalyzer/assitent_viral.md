@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Assitent_viral es un modelo publicado en HuggingFace por el usuario Viralanalyzer bajo licencia MIT. La model card asociada es prácticamente vacía: solo declara la licencia MIT y no incluye ninguna descripción funcional, datos de entrenamiento, arquitectura ni capacidades declaradas. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no consta pipeline asignado ni idiomas soportados en los metadatos.
+Assitent_viral es un modelo publicado en Hugging Face por el usuario Viralanalyzer bajo licencia MIT. La model card asociada es prácticamente vacía: solo declara la licencia MIT y no incluye ninguna descripción funcional, datos de entrenamiento, arquitectura ni capacidades declaradas. El repositorio no registra descargas ni interacciones en el momento de la consulta, y no consta pipeline asignado ni idiomas soportados en los metadatos.
 
 Por la ausencia total de documentación técnica, no es posible determinar qué arquitectura emplea, cuántos parámetros tiene, qué longitud de contexto soporta ni qué tarea resuelve. El nombre sugiere un asistente orientado a contenido viral (posiblemente marketing o redes sociales), pero se trata de una inferencia a partir del identificador y no de información verificable en la ficha del modelo.
 
@@ -81,4 +81,4 @@ No es posible establecer una comparativa fiable sin conocer el tamaño, la arqui
 
 ## Enlaces
 
-- [HuggingFace: Viralanalyzer/Assitent_viral](https://huggingface.co/Viralanalyzer/Assitent_viral)
+- [Hugging Face: Viralanalyzer/Assitent_viral](https://huggingface.co/Viralanalyzer/Assitent_viral)

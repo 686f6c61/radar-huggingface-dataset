@@ -84,9 +84,9 @@ Las fuentes de estas cifras son `benchmarks/quality/dspark-cuda-depth-ab-2026-09
 
 | Modelo | Rol | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mattbucci/Qwen3.8-27B-DSpark-sgl | Borrador DSPARK con config para SGLang | 1,99B | 262.144 (heredado del objetivo) | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| RedHatAI/Qwen3.8-27B-speculator.dspark | Borrador DSPARK original con envoltorio Speculators | Mismos pesos (byte-idénticos) | No disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.8-27B | Modelo objetivo que se acelera | 27B (según denominación) | 262.144 | No disponible en la información proporcionada | HuggingFace |
+| mattbucci/Qwen3.8-27B-DSpark-sgl | Borrador DSPARK con config para SGLang | 1,99B | 262.144 (heredado del objetivo) | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| RedHatAI/Qwen3.8-27B-speculator.dspark | Borrador DSPARK original con envoltorio Speculators | Mismos pesos (byte-idénticos) | No disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.8-27B | Modelo objetivo que se acelera | 27B (según denominación) | 262.144 | No disponible en la información proporcionada | Hugging Face |
 | Borradores EAGLE-3 / Medusa equivalentes | Alternativas de decodificación especulativa | No disponible | No disponible | No disponible | No disponible |
 
 La comparación relevante es frente al speculator de Red Hat AI: se trata del mismo artefacto con distinto `config.json`, por lo que la elección depende únicamente de si se usa SGLang (este repositorio) o la pila de Speculators (upstream). No se dispone de datos verificados de alternativas EAGLE-3 o Medusa para este modelo objetivo concreto.
@@ -106,7 +106,7 @@ La comparación relevante es frente al speculator de Red Hat AI: se trata del mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mattbucci/Qwen3.8-27B-DSpark-sgl
+- Modelo en Hugging Face: https://huggingface.co/mattbucci/Qwen3.8-27B-DSpark-sgl
 - Borrador original de Red Hat AI: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio de inferencia y parches: https://github.com/letsrtfm/2x-3090-GA102-300-A1-sglang-inference

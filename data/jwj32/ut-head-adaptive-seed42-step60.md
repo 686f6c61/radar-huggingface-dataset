@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jwj32/ut-head-adaptive-seed42-step60` es un checkpoint de pesos publicado en HuggingFace por el usuario `jwj32`. Se trata de un modelo de aproximadamente 4.022 millones de parametros (4,02 B) almacenado en formato `safetensors`, con un repositorio de 16,1 GB. El tag `qwen3` asociado al repositorio apunta a que deriva de la familia Qwen3, aunque la ficha publica no incluye pipeline, licencia ni idiomas declarados.
+`jwj32/ut-head-adaptive-seed42-step60` es un checkpoint de pesos publicado en Hugging Face por el usuario `jwj32`. Se trata de un modelo de aproximadamente 4.022 millones de parametros (4,02 B) almacenado en formato `safetensors`, con un repositorio de 16,1 GB. El tag `qwen3` asociado al repositorio apunta a que deriva de la familia Qwen3, aunque la ficha publica no incluye pipeline, licencia ni idiomas declarados.
 
 El nombre del repositorio (`ut-head-adaptive-seed42-step60`) sugiere un checkpoint intermedio de un proceso de entrenamiento: `seed42` indica una semilla de reproducibilidad, `step60` un paso concreto dentro de una ejecucion de ajuste y `adaptive` una posible estrategia de adaptacion de cabeceras de atencion o de salida. No obstante, esta interpretacion es una inferencia a partir del identificador y no esta confirmada por documentacion alguna del autor.
 
@@ -78,10 +78,10 @@ Los datos de los modelos alternativos provienen de su documentacion publica habi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| jwj32/ut-head-adaptive-seed42-step60 | 4,02 B | No disponible | No disponible | HuggingFace, 24 descargas |
-| Qwen3-4B | 4,02 B | 32k nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| Llama-3.2-3B | 3,21 B | 128k | Llama 3.2 Community License | HuggingFace, con restricciones de uso |
-| Phi-3.5-mini-instruct | 3,82 B | 128k | MIT | HuggingFace |
+| jwj32/ut-head-adaptive-seed42-step60 | 4,02 B | No disponible | No disponible | Hugging Face, 24 descargas |
+| Qwen3-4B | 4,02 B | 32k nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| Llama-3.2-3B | 3,21 B | 128k | Llama 3.2 Community License | Hugging Face, con restricciones de uso |
+| Phi-3.5-mini-instruct | 3,82 B | 128k | MIT | Hugging Face |
 
 No hay datos de rendimiento comparativo para el modelo objeto de esta ficha.
 
@@ -99,5 +99,5 @@ No hay datos de rendimiento comparativo para el modelo objeto de esta ficha.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step60
+- Hugging Face: https://huggingface.co/jwj32/ut-head-adaptive-seed42-step60
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada. Los resultados devueltos correspondian a paginas de ayuda de YouTube y no guardan relacion con el modelo.

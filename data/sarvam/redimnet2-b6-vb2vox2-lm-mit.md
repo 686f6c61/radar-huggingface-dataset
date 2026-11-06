@@ -72,9 +72,9 @@ Los datos de las alternativas que aparecen a continuacion no provienen de la inf
 
 | Modelo | Familia | Dimension del embedding | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sarvam/redimnet2-b6-vb2vox2-lm-mit (este modelo) | ReDimNet2 b6 | 192 | MIT | HuggingFace (espejo) | Checkpoint de ~49 MB, codigo incluido en el repo |
-| ECAPA-TDNN (SpeechBrain, spkrec-ecapa-voxceleb) | TDNN con atencion de canal | 192 | Apache 2.0 (verificar) | HuggingFace / SpeechBrain | Referencia clasica en verificacion de hablante |
-| WavLM base+ para SV (microsoft/wavlm-base-plus-sv) | Transformer auto-supervisado | no disponible | MIT (verificar) | HuggingFace | Mayor coste computacional que un CNN puro |
+| sarvam/redimnet2-b6-vb2vox2-lm-mit (este modelo) | ReDimNet2 b6 | 192 | MIT | Hugging Face (espejo) | Checkpoint de ~49 MB, codigo incluido en el repo |
+| ECAPA-TDNN (SpeechBrain, spkrec-ecapa-voxceleb) | TDNN con atencion de canal | 192 | Apache 2.0 (verificar) | Hugging Face / SpeechBrain | Referencia clasica en verificacion de hablante |
+| WavLM base+ para SV (microsoft/wavlm-base-plus-sv) | Transformer auto-supervisado | no disponible | MIT (verificar) | Hugging Face | Mayor coste computacional que un CNN puro |
 | ReDimNet original | ReDimNet | no disponible | no disponible | GitHub | Version previa de la familia sobre la que se construye ReDimNet2 |
 
 La comparativa carece de cifras de rendimiento porque ninguna de las fuentes consultadas publica EER ni minDCF para este checkpoint concreto.
@@ -95,7 +95,7 @@ La comparativa carece de cifras de rendimiento porque ninguna de las fuentes con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sarvam/redimnet2-b6-vb2vox2-lm-mit
+- Modelo en Hugging Face: https://huggingface.co/sarvam/redimnet2-b6-vb2vox2-lm-mit
 - Repositorio original de Palabra.ai: https://github.com/PalabraAI/redimnet2
 - Commit espejado: `2a8d15f65b1dfb5d73fede2f11ee42bcccca3035`
 - Licencia MIT incluida en el repositorio: `LICENSE`

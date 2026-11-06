@@ -120,7 +120,7 @@ La comparativa se limita a lo publicado: no hay datos de contexto, licencia o fo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX-8bit
+- Modelo en Hugging Face: https://huggingface.co/aufklarer/GLiNER2.5-Decide-340M-MLX-8bit
 - Modelo base upstream: https://huggingface.co/fastino/GLiNER2.5-Decide
 - Libreria de inferencia speech-swift: https://github.com/soniqo/speech-swift
 - Conversion de referencia gliner2-mlx: https://github.com/Andrew-Chen-Wang/gliner2-mlx

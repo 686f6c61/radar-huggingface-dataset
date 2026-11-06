@@ -54,4 +54,4 @@ No se dispone de información suficiente para realizar una comparativa. Aunque R
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kanish33/resnet50
+- Repositorio en Hugging Face: https://huggingface.co/kanish33/resnet50

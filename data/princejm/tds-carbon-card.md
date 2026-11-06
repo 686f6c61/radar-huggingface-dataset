@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no tiene compa
 - Riesgo de malinterpretación: quien busque un modelo de IA en este repositorio se llevará una decepción; su propósito es puramente documental.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/princejm/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/princejm/tds-carbon-card
 - Model Card de referencia similar (Jesmelchi): https://huggingface.co/Jesmelchi/tds-carbon-card
-- Documentación de Model Cards en HuggingFace: https://huggingface.co/docs/hub/model-cards
+- Documentación de Model Cards en Hugging Face: https://huggingface.co/docs/hub/model-cards

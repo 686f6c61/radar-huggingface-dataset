@@ -82,7 +82,7 @@ Nota: los comparables directos son los otros checkpoints del mismo estudio (mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/soft-mtp-1p2b-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/soft-mtp-1p2b-model
 - Artículo (arXiv): https://arxiv.org/abs/2610.38331
 - Código (GitHub): https://github.com/JaydenTeoh/Soft-MTP
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

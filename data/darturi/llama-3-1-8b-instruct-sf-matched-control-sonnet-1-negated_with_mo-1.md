@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado (MMLU, HumanEval, GSM8K u otros)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SF-matched-control-sonnet-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-SF-matched-control-sonnet-1
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

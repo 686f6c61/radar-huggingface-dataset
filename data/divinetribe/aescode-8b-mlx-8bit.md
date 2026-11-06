@@ -75,10 +75,10 @@ El autor de la conversión advierte de que la cuantización a 8 bits intercambia
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AesCode-8B-MLX-8bit (esta ficha) | 8,8B | no disponible | Visión + generación de HTML/CSS, cuantizado 8 bits MLX | Apache-2.0 | HuggingFace, `mlx-vlm` |
-| microsoft/AesCode-8B | 8,8B | no disponible | Visión + generación de HTML/CSS, pesos originales | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | Visión-lenguaje general, base del anterior | no disponible | HuggingFace |
-| divinetribe/AesCode-8B-MLX-bf16 | 8,8B | no disponible | Misma tarea, calidad completa sin cuantizar | Apache-2.0 | HuggingFace, `mlx-vlm` |
+| AesCode-8B-MLX-8bit (esta ficha) | 8,8B | no disponible | Visión + generación de HTML/CSS, cuantizado 8 bits MLX | Apache-2.0 | Hugging Face, `mlx-vlm` |
+| microsoft/AesCode-8B | 8,8B | no disponible | Visión + generación de HTML/CSS, pesos originales | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-VL-8B-Instruct | 8B | no disponible | Visión-lenguaje general, base del anterior | no disponible | Hugging Face |
+| divinetribe/AesCode-8B-MLX-bf16 | 8,8B | no disponible | Misma tarea, calidad completa sin cuantizar | Apache-2.0 | Hugging Face, `mlx-vlm` |
 
 La comparación relevante es frente al checkpoint original y a las otras cuantizaciones del mismo autor de la conversión: la versión 8 bits reduce el tamaño a la mitad respecto a bf16 a cambio de una posible pérdida menor de precisión, y la versión 4 bits reduce aún más el peso a costa de mayor degradación. Frente a Qwen3-VL-8B-Instruct, el modelo aporta el entrenamiento específico para generación de código estético, con la mejora de 31,1 puntos en Visual reportada en el paper.
 

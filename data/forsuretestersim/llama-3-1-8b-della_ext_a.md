@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DELLA_Ext_A es un modelo de lenguaje de 8.030.261.248 parámetros (8,03 B) publicado por el usuario ForSureTesterSim en HuggingFace. No es un modelo entrenado desde cero, sino el resultado de una fusión de pesos (*model merging*) generada con la herramienta mergekit aplicando el método DELLA sobre la arquitectura de Llama 3.1 8B. El modelo base declarado es meta-llama/Llama-3.1-8B, y sobre él se fusionan los deltas de tres variantes ajustadas: meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B.
+DELLA_Ext_A es un modelo de lenguaje de 8.030.261.248 parámetros (8,03 B) publicado por el usuario ForSureTesterSim en Hugging Face. No es un modelo entrenado desde cero, sino el resultado de una fusión de pesos (*model merging*) generada con la herramienta mergekit aplicando el método DELLA sobre la arquitectura de Llama 3.1 8B. El modelo base declarado es meta-llama/Llama-3.1-8B, y sobre él se fusionan los deltas de tres variantes ajustadas: meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2 y allenai/Llama-3.1-Tulu-3.1-8B.
 
 El problema que aborda es el habitual de las fusiones de modelos: combinar en un único checkpoint de 8 B las capacidades conversacionales, de seguimiento de instrucciones y de alineación que cada uno de los tres modelos padres aporta por separado, sin necesidad de volver a entrenar ni de ejecutar varias inferencias. Al mantener la arquitectura original de Llama 3.1, hereda su ventana de contexto larga (128 000 tokens en la familia Llama 3.1), su tokenizador de 128 256 entradas y su compatibilidad con el ecosistema transformers, safetensors y text-generation-inference.
 
@@ -85,7 +85,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_A
+- Modelo en Hugging Face: https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_A
 - mergekit (herramienta de fusión): https://github.com/cg123/mergekit
 - Paper del método DELLA: https://arxiv.org/abs/2406.11617
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

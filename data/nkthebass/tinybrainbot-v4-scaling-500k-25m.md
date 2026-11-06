@@ -142,7 +142,7 @@ Conclusiones de la comparacion segun la model card: la serie TinyBrainBot v4 nec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkthebass/tinybrainbot-v4-scaling-500k-25m
+- Modelo en Hugging Face: https://huggingface.co/nkthebass/tinybrainbot-v4-scaling-500k-25m
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset DCLM-baseline-1.0: https://huggingface.co/datasets/mlfoundations/dclm-baseline-1.0
 - Dataset Wikipedia: https://huggingface.co/datasets/wikimedia/wikipedia

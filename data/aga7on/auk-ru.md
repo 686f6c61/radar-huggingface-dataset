@@ -80,7 +80,7 @@ No se han publicado en la informacion disponible resultados de benchmarks compar
 
 | Modelo | Parametros | Contexto | Rendimiento en ruso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AuK-ru (aga7on/AuK-ru) | No disponible (base con Qwen2.5-Omni-3B) | No disponible | WER 0,081 (GigaAM), sim de clonacion 0,763 | MIT | HuggingFace, 0 descargas; adaptadores safetensors |
+| AuK-ru (aga7on/AuK-ru) | No disponible (base con Qwen2.5-Omni-3B) | No disponible | WER 0,081 (GigaAM), sim de clonacion 0,763 | MIT | Hugging Face, 0 descargas; adaptadores safetensors |
 | Tencent AuK (modelo base) | No disponible | No disponible | No disponible para ruso en la informacion proporcionada | MIT | GitHub Tencent-Hunyuan/AuK y pesos originales |
 | Otras alternativas de TTS en ruso | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre AuK-ru
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aga7on/AuK-ru
+- Modelo en Hugging Face: https://huggingface.co/aga7on/AuK-ru
 - Repositorio del autor con scripts y linaje de entrenamiento: https://github.com/aga7on/AuK-ru
 - Modelo original de Tencent: https://github.com/Tencent-Hunyuan/AuK
 - Resultados de la busqueda web: no se encontraron enlaces relevantes sobre el modelo; los resultados devueltos fueron perfiles y videos de redes sociales (TikTok, Facebook, Linktree) sin relacion con AuK-ru.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario ASDCXZ12CSA, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. El repositorio no contiene pesos: su tamano declarado es de 0,0 GB, no registra descargas ni "likes", y fue creado y actualizado el 15 de septiembre de 2026 con apenas cinco segundos de diferencia, lo que apunta a un repositorio de prueba o a un esqueleto de publicacion mas que a un modelo distribuible.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario ASDCXZ12CSA, etiquetado con las etiquetas `transformers`, `pytorch`, `bert`, `feature-extraction`, `license:mit`, `endpoints_compatible` y `region:us`. El repositorio no contiene pesos: su tamano declarado es de 0,0 GB, no registra descargas ni "likes", y fue creado y actualizado el 15 de septiembre de 2026 con apenas cinco segundos de diferencia, lo que apunta a un repositorio de prueba o a un esqueleto de publicacion mas que a un modelo distribuible.
 
 La model card adjunta es una plantilla generica que describe un supuesto asistente conversacional con modo de razonamiento, function calling y mejoras en tareas de matematicas y programacion, e incluye una tabla de benchmarks con modelos anonimizados (Model1, Model2, Model1-v2). Esta descripcion es incoherente con las etiquetas del repositorio: `bert` y `feature-extraction` corresponden a un encoder orientado a la extraccion de representaciones, no a un LLM conversacional con decodificacion autoregresiva y modo "thinking". Ademas, la model card no declara numero de parametros, longitud de contexto, tokenizador, idiomas ni detalles de entrenamiento.
 
@@ -124,8 +124,8 @@ La comparativa con modelos generativos de razonamiento no puede completarse porq
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASDCXZ12CSA/MyAwesomeModel-TestRepo
-- Model card (README del repositorio): incluida en la propia pagina de HuggingFace
+- Repositorio en Hugging Face: https://huggingface.co/ASDCXZ12CSA/MyAwesomeModel-TestRepo
+- Model card (README del repositorio): incluida en la propia pagina de Hugging Face
 - Paper: no disponible
 - Repositorio de codigo: la model card menciona "our code repository" y "our official website" sin proporcionar URL
 - Demos o espacios: no disponibles

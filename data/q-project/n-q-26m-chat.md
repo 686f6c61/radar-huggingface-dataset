@@ -66,7 +66,7 @@ No se han publicado comparaciones con otros modelos en MMLU, HumanEval u otros b
 - VRAM estimada para inferencia: no disponible; dado el tamaño del repo (0.3 GB), cualquier GPU con 2-4 GB de VRAM o incluso CPU es suficiente en principio.
 - GPU recomendadas: no disponible; el entrenamiento se realizó en una NVIDIA V100 de 16 GB.
 - Cabe con holgura en GPUs de consumo (RTX 3060, RTX 4090, etc.) y presumiblemente en CPU.
-- Despliegue: mediante la librería `transformers` de HuggingFace con `trust_remote_code=True`. No se mencionan soportes para vLLM, llama.cpp, Ollama o TGI; la arquitectura personalizada requiere código remoto. Existe además el formato empaquetado de un solo archivo QPACK1 (`model.qpack`).
+- Despliegue: mediante la librería `transformers` de Hugging Face con `trust_remote_code=True`. No se mencionan soportes para vLLM, llama.cpp, Ollama o TGI; la arquitectura personalizada requiere código remoto. Existe además el formato empaquetado de un solo archivo QPACK1 (`model.qpack`).
 - Latencia y throughput estimados: no disponibles para inferencia; en entrenamiento, ~19k tok/s en eager y ~85k tok/s con `torch.compile` en V100.
 
 ## Comparativa con modelos similares

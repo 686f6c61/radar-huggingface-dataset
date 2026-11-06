@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen10` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace. Se trata de un artefacto de investigación más que de un modelo listo para producción: el repositorio ocupa aproximadamente 0,1 GB, un tamaño muy inferior a los ~15 GB que requerirían los pesos completos de un modelo de 7,6 mil millones de parámetros en precisión de 16 bits. Esto sugiere que el repositorio contiene únicamente adaptadores, un subconjunto de pesos o artefactos parciales de un experimento, aunque la model card no lo especifica.
+`HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen10` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face. Se trata de un artefacto de investigación más que de un modelo listo para producción: el repositorio ocupa aproximadamente 0,1 GB, un tamaño muy inferior a los ~15 GB que requerirían los pesos completos de un modelo de 7,6 mil millones de parámetros en precisión de 16 bits. Esto sugiere que el repositorio contiene únicamente adaptadores, un subconjunto de pesos o artefactos parciales de un experimento, aunque la model card no lo especifica.
 
 El nombre del repositorio apunta a una serie de ejecuciones experimentales: incluye los fragmentos `eagle_numbers-collapse`, `p10`, `twf`, `run1` y `gen10`, lo que indica al menos diez generaciones de un proceso iterativo (posiblemente evolutivo o de búsqueda de configuraciones de entrenamiento) y una ejecución identificada como la primera de su serie. El término `collapse` podría referirse a un fenómeno de colapso en el entrenamiento, pero la model card no aporta ninguna explicación, por lo que no es posible confirmarlo.
 
-El modelo se entrenó con Unsloth y la librería TRL de HuggingFace, según declara el propio autor, y se distribuye bajo licencia Apache 2.0 con soporte declarado únicamente para inglés. No se publican datos de entrenamiento, hiperparámetros, métricas de evaluación ni ejemplos de uso, y el repositorio acumula cero descargas y cero valoraciones, lo que lo convierte en un artefacto sin validación externa. Su interés es, por tanto, documental o experimental, no como sustituto de su modelo base.
+El modelo se entrenó con Unsloth y la librería TRL de Hugging Face, según declara el propio autor, y se distribuye bajo licencia Apache 2.0 con soporte declarado únicamente para inglés. No se publican datos de entrenamiento, hiperparámetros, métricas de evaluación ni ejemplos de uso, y el repositorio acumula cero descargas y cero valoraciones, lo que lo convierte en un artefacto sin validación externa. Su interés es, por tanto, documental o experimental, no como sustituto de su modelo base.
 
 ## Especificaciones técnicas
 
@@ -100,5 +100,5 @@ No se dispone de datos de rendimiento comparativos para este ajuste fino, por lo
 - Modelo base del ajuste: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (librería de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (librería de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (librería de entrenamiento citada): https://github.com/huggingface/trl
 - No se han encontrado papers, blogs, demos ni repositorios adicionales asociados a este modelo en la búsqueda web realizada.

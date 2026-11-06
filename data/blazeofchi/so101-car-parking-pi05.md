@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K ni
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SO-101 car parking (este) | no disponible | no disponible | Colocacion de coche de juguete con SO-101 en MuJoCo | Gemma | HuggingFace, requiere cargador propio |
-| lerobot/pi05_base | no disponible | no disponible | VLA general base de pi0.5 | no disponible en la informacion | HuggingFace |
-| Otros checkpoints LeRobot para SO-101 | no disponible | no disponible | Manipulacion con SO-101 | variable | HuggingFace |
+| SO-101 car parking (este) | no disponible | no disponible | Colocacion de coche de juguete con SO-101 en MuJoCo | Gemma | Hugging Face, requiere cargador propio |
+| lerobot/pi05_base | no disponible | no disponible | VLA general base de pi0.5 | no disponible en la informacion | Hugging Face |
+| Otros checkpoints LeRobot para SO-101 | no disponible | no disponible | Manipulacion con SO-101 | variable | Hugging Face |
 
 No se dispone de datos de rendimiento de los modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento de los modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/blazeofchi/so101-car-parking-pi05
+- Modelo en Hugging Face: https://huggingface.co/blazeofchi/so101-car-parking-pi05
 - Dataset de entrenamiento: https://huggingface.co/datasets/blazeofchi/so101-car-parking-train
 - Dataset de validacion: https://huggingface.co/datasets/blazeofchi/so101-car-parking-validation
 - Repositorio fuente con el cargador: https://github.com/Parassharmaa/so101-car-parking

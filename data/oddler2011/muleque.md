@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Muleque es un modelo publicado en HuggingFace por el usuario Oddler2011 bajo el identificador `Oddler2011/Muleque`. En el momento de redactar esta ficha, la model card del repositorio no contiene mas informacion que el encabezado de licencia (`license: agpl-3.0`): no se documentan arquitectura, numero de parametros, longitud de contexto, idiomas, dataset de entrenamiento ni formato de pesos. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-13T17:13:04Z).
+Muleque es un modelo publicado en Hugging Face por el usuario Oddler2011 bajo el identificador `Oddler2011/Muleque`. En el momento de redactar esta ficha, la model card del repositorio no contiene mas informacion que el encabezado de licencia (`license: agpl-3.0`): no se documentan arquitectura, numero de parametros, longitud de contexto, idiomas, dataset de entrenamiento ni formato de pesos. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-09-13T17:13:04Z).
 
 No es posible, por tanto, determinar que problema resuelve el modelo ni situarlo en una categoria concreta (LLM de texto, modelo multimodal, modelo de embeddings, adaptador LoRA, etc.). Tampoco se ha localizado documentacion externa: la busqueda web asociada devuelve exclusivamente resultados genericos de YouTube sin relacion alguna con el modelo.
 
@@ -99,7 +99,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Oddler2011/Muleque
+- Repositorio en Hugging Face: https://huggingface.co/Oddler2011/Muleque
 - Model card del autor: sin contenido tecnico, unicamente el encabezado `license: agpl-3.0`.
 - Texto de la licencia AGPL-3.0: https://www.gnu.org/licenses/agpl-3.0.html
 - Paper asociado: no disponible.

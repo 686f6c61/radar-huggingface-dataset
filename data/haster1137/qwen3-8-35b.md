@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Qwen3.8-35B es una publicación de la cuenta de usuario Haster1137 en HuggingFace que, pese a su nombre, contiene en realidad una familia de cuantizaciones GGUF del modelo base Qwen/Qwen3.8-27B, según se desprende de la model card. El autor describe el artefacto como "Qwen3.8-27B-Uncensored-GGUF", una versión del modelo de 27 000 millones de parámetros a la que se le ha reducido el comportamiento de rechazo mediante una técnica de abliteration con la herramienta Heretic. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución cuantizada y modificada de un modelo de terceros.
+Qwen3.8-35B es una publicación de la cuenta de usuario Haster1137 en Hugging Face que, pese a su nombre, contiene en realidad una familia de cuantizaciones GGUF del modelo base Qwen/Qwen3.8-27B, según se desprende de la model card. El autor describe el artefacto como "Qwen3.8-27B-Uncensored-GGUF", una versión del modelo de 27 000 millones de parámetros a la que se le ha reducido el comportamiento de rechazo mediante una técnica de abliteration con la herramienta Heretic. No se trata, por tanto, de un modelo entrenado desde cero, sino de una redistribución cuantizada y modificada de un modelo de terceros.
 
-La relevancia de esta ficha es doble. Por un lado, documenta un caso de cuantización GGUF con retención de la cabeza de predicción multi-token (MTP) para decodificación especulativa, un detalle técnico poco habitual en publicaciones comunitarias. Por otro, sirve como ejemplo de advertencia: el identificador del repositorio (35B) no coincide con el tamaño real del modelo base (27B), la licencia declarada en la model card (Apache-2.0) no aparece en los metadatos de HuggingFace, y el autor de la cuenta no es el desarrollador original del modelo.
+La relevancia de esta ficha es doble. Por un lado, documenta un caso de cuantización GGUF con retención de la cabeza de predicción multi-token (MTP) para decodificación especulativa, un detalle técnico poco habitual en publicaciones comunitarias. Por otro, sirve como ejemplo de advertencia: el identificador del repositorio (35B) no coincide con el tamaño real del modelo base (27B), la licencia declarada en la model card (Apache-2.0) no aparece en los metadatos de Hugging Face, y el autor de la cuenta no es el desarrollador original del modelo.
 
 El modelo base pertenece a la familia Qwen3.5/Qwen3.8, con arquitectura `Qwen3_5ForConditionalGeneration`, 64 capas, vocabulario de 248 320 tokens y una ventana de contexto declarada de 262 144 tokens. La publicación incluye cuantizaciones desde IQ2_M (10,6 GB) hasta Q8_0 (29,0 GB), un proyector de visión en F16 y una matriz de importancia (imatrix) calculada sobre el modelo en F16.
 
@@ -18,7 +18,7 @@ El modelo base pertenece a la familia Qwen3.5/Qwen3.8, con arquitectura `Qwen3_5
 | Longitud de contexto | 262 144 tokens |
 | Tipos de cuantización | IQ2_M, IQ4_XS, Q4_K_M, Q5_K_M, Q6_K, Q8_0; draft head en Q8_0 y Q4_0; proyector de visión en F16 |
 | Idiomas soportados | en, zh (según la model card) |
-| Licencia | Apache-2.0 declarada en la model card; no disponible en los metadatos de HuggingFace |
+| Licencia | Apache-2.0 declarada en la model card; no disponible en los metadatos de Hugging Face |
 | Formato de pesos | GGUF (generado con llama.cpp, commit a94d563ed) |
 
 ## Arquitectura y entrenamiento
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 - El nombre del repositorio (35B) no coincide con el tamaño real del modelo base (27B), lo que puede inducir a error en la selección de hardware.
 - La abliteration reduce el comportamiento de rechazo pero no lo elimina; el modelo puede generar contenido dañino o inapropiado sin las salvaguardas externas adecuadas.
 - La perplejidad del F16 abliterado (7,1557) es notablemente superior a la del base bf16 (6,5129), lo que sugiere una pérdida de calidad respecto al original.
-- La licencia Apache-2.0 solo aparece en la model card; los metadatos de HuggingFace no la declaran, lo que genera incertidumbre sobre las condiciones reales de uso comercial.
+- La licencia Apache-2.0 solo aparece en la model card; los metadatos de Hugging Face no la declaran, lo que genera incertidumbre sobre las condiciones reales de uso comercial.
 - El autor de la cuenta (Haster1137) no es el desarrollador original del modelo base; se trata de una redistribución de terceros sin respaldo oficial.
 - Idiomas limitados a inglés y chino según la model card; no se garantiza un rendimiento adecuado en castellano.
 - No se documentan datos de entrenamiento, sesgos conocidos ni evaluaciones de seguridad del modelo base.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Haster1137/Qwen3.8-35B
+- Repositorio Hugging Face: https://huggingface.co/Haster1137/Qwen3.8-35B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - llama.cpp (runtime de referencia, commit a94d563ed): https://github.com/ggml-org/llama.cpp
 - Heretic (herramienta de abliteration): no disponible en la información proporcionada

@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Con cuantizacion de 4 bits, el modelo base puede caber en GPUs de consumo como la RTX 4090 (24 GB) o la RTX 3090 (24 GB), aunque con posibles limitaciones de throughput.
 - Para experimentos de fine-tuning posterior sobre el adaptador, se recomienda al menos una GPU con 80 GB (A100/H100) o varias GPUs en paralelo, dado el tamano del modelo base.
 - El entrenamiento original se realizo en 8x NVIDIA B200 con DDP, sincronizando unicamente los ~310 tensores LoRA, lo que reduce drasticamente el coste de comunicacion frente a un fine-tuning completo.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de HuggingFace, o integrarse en motores de inferencia como vLLM o TGI que soporten LoRA. Para entornos locales, llama.cpp u Ollama pueden utilizarse si se fusiona el adaptador con el modelo base cuantizado.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la libreria `peft` de Hugging Face, o integrarse en motores de inferencia como vLLM o TGI que soporten LoRA. Para entornos locales, llama.cpp u Ollama pueden utilizarse si se fusiona el adaptador con el modelo base cuantizado.
 - La latencia y el throughput dependen del hardware y de la cuantizacion; con 3B parametros activos, la generacion es relativamente rapida, pero la carga de los expertos enrutados (35B totales) limita el rendimiento en GPUs de consumo.
 
 ## Comparativa con modelos similares

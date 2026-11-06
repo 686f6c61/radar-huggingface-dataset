@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_jbbpure_ka2_a1p0_free_remove40` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. No es un modelo entrenado desde cero: es una versión comprimida de `meta-llama/Llama-2-7b-chat-hf` mediante la técnica SVD-LLM, con un 40,00 % de los parámetros eliminados, lo que deja una fracción de parámetros resultante de 0,5998 respecto al modelo denso. Sobre esa base comprimida se aplica además una regla de selección de componentes SVD para restaurar parte de la capacidad perdida, con un presupuesto de restauración del 0,000 % (es decir, cero componentes restaurados y cero intercambiados).
+`svd-safety-l2_jbbpure_ka2_a1p0_free_remove40` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. No es un modelo entrenado desde cero: es una versión comprimida de `meta-llama/Llama-2-7b-chat-hf` mediante la técnica SVD-LLM, con un 40,00 % de los parámetros eliminados, lo que deja una fracción de parámetros resultante de 0,5998 respecto al modelo denso. Sobre esa base comprimida se aplica además una regla de selección de componentes SVD para restaurar parte de la capacidad perdida, con un presupuesto de restauración del 0,000 % (es decir, cero componentes restaurados y cero intercambiados).
 
 El propósito declarado es estudiar cómo la compresión SVD degrada el comportamiento de seguridad del modelo y qué regla de selección de componentes lo repara mejor. Este checkpoint concreto es una celda de una rejilla experimental sobre reglas de selección y presupuestos, no un asistente conversacional de propósito general. El autor advierte explícitamente que varias ramas de la rejilla están degradadas deliberadamente en seguridad respecto a Llama-2-7b-chat y que la compresión por sí sola eleva la tasa de éxito de ataques.
 
@@ -74,7 +74,7 @@ No se han publicado en la informacion disponible los valores del modelo denso de
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l2_jbbpure_ka2_a1p0_free_remove40 | 6,74 B declarados (fraccion 0,5998) | no disponible | Llama 2 Community License | safetensors en HuggingFace | Artefacto de investigacion; seguridad degradada de forma deliberada |
+| svd-safety-l2_jbbpure_ka2_a1p0_free_remove40 | 6,74 B declarados (fraccion 0,5998) | no disponible | Llama 2 Community License | safetensors en Hugging Face | Artefacto de investigacion; seguridad degradada de forma deliberada |
 | meta-llama/Llama-2-7b-chat-hf | 6,74 B | 4.096 tokens | Llama 2 Community License | safetensors, GGUF de terceros | Base sin comprimir; referencia natural del estudio |
 | mistralai/Mistral-7B-Instruct-v0.2 | 7,24 B | 32.768 tokens | Apache 2.0 | safetensors y cuantizaciones comunitarias | Alternativa de tamano similar con contexto mucho mayor y licencia permisiva |
 
@@ -94,6 +94,6 @@ No se dispone de comparaciones de rendimiento entre este checkpoint y alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_jbbpure_ka2_a1p0_free_remove40
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_jbbpure_ka2_a1p0_free_remove40
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces adicionales relevantes en la busqueda web: los resultados devueltos corresponden a fichas medicas, a un foro sobre contadores 74HC163 y a discusiones sobre prefijos alemanes y ORM de Go, sin relacion con este modelo.

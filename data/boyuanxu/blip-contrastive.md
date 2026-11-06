@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boyuanxu/blip-contrastive es un repositorio de HuggingFace que empaqueta una implementación propia y reducida de la arquitectura Blip orientada a tareas contrastivas (alineación texto-imagen), junto con su configuración de arquitectura y un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card indica explícitamente que el checkpoint `model.safetensors` es válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado en benchmarks. El autor es Boyuanxu y el repositorio se publica bajo licencia BSD-3-Clause.
+Boyuanxu/blip-contrastive es un repositorio de Hugging Face que empaqueta una implementación propia y reducida de la arquitectura Blip orientada a tareas contrastivas (alineación texto-imagen), junto con su configuración de arquitectura y un checkpoint de inicialización. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card indica explícitamente que el checkpoint `model.safetensors` es válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint evaluado en benchmarks. El autor es Boyuanxu y el repositorio se publica bajo licencia BSD-3-Clause.
 
 El dato más llamativo es el tamaño: el recuento real de parámetros de los pesos en safetensors es de 16.576 parámetros, una cifra ínfima para un modelo multimodal, coherente con la naturaleza de inicialización del artefacto más que con una arquitectura Blip "large" funcional. La model card declara escala "large", atención grouped query, fusión tucker, activación mish y normalización instancenorm, pero esa declaración describe los ajustes generados en `config.json`, no un modelo entrenado a esa escala.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y muy específica: sirve como andamiaje reprodu
 | Pipeline declarado | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0.0 GB |
-| Fecha de creación | 2026-09-14 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-14 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -89,5 +89,5 @@ Los datos de CLIP y BLIP-2 corresponden a características públicas ampliamente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Boyuanxu/blip-contrastive
+- Hugging Face: https://huggingface.co/Boyuanxu/blip-contrastive
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). El resto de resultados devueltos por el buscador no guardan relación con el modelo ni con inteligencia artificial y se han descartado por completo.

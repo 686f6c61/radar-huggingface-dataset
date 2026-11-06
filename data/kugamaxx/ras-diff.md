@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KugaMaxx/Ras-Diff es un repositorio de modelo publicado en HuggingFace por el usuario KugaMaxx. En el momento de la consulta, la informacion disponible se limita a la licencia declarada (MIT), la etiqueta de region (region:us) y las fechas de creacion y actualizacion (2026-09-14), que coinciden. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
+KugaMaxx/Ras-Diff es un repositorio de modelo publicado en Hugging Face por el usuario KugaMaxx. En el momento de la consulta, la informacion disponible se limita a la licencia declarada (MIT), la etiqueta de region (region:us) y las fechas de creacion y actualizacion (2026-09-14), que coinciden. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline de inferencia declarado.
 
 No se dispone de model card con descripcion funcional: el README se reduce a la declaracion de licencia. Tampoco hay datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, dataset de entrenamiento ni formato de pesos. El identificador contiene la cadena "Diff", lo que podria sugerir un modelo de difusion, pero esto no esta confirmado por ninguna fuente del repositorio y no debe tomarse como un hecho.
 
@@ -67,7 +67,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KugaMaxx/Ras-Diff | no disponible | no disponible | no disponible | MIT | Repositorio en HuggingFace, 0 descargas |
+| KugaMaxx/Ras-Diff | no disponible | no disponible | no disponible | MIT | Repositorio en Hugging Face, 0 descargas |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KugaMaxx/Ras-Diff
+- Hugging Face: https://huggingface.co/KugaMaxx/Ras-Diff
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

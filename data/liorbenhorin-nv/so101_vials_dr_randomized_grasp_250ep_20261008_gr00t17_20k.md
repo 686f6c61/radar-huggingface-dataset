@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (SO-101 vial grasp, GR00T N1.7 20k) | 3,14 B | VLA ajustada para agarre de viales con SO-101 | Apache 2.0 | HuggingFace, libreria LeRobot | Entrenada solo con 250 episodios simulados con randomización de dominio |
-| nvidia/GR00T-N1.7-3B | 3,14 B (según peso del ajuste) | VLA base de propósito general | No indicada en la informacion disponible | HuggingFace / NVIDIA | Modelo base del que deriva este ajuste; sin datos de benchmark en la informacion proporcionada |
+| Este modelo (SO-101 vial grasp, GR00T N1.7 20k) | 3,14 B | VLA ajustada para agarre de viales con SO-101 | Apache 2.0 | Hugging Face, libreria LeRobot | Entrenada solo con 250 episodios simulados con randomización de dominio |
+| nvidia/GR00T-N1.7-3B | 3,14 B (según peso del ajuste) | VLA base de propósito general | No indicada en la informacion disponible | Hugging Face / NVIDIA | Modelo base del que deriva este ajuste; sin datos de benchmark en la informacion proporcionada |
 | OpenVLA-7B | 7 B | VLA (backbone tipo Llama-2) | MIT (según documentacion publica del proyecto) | Codigo y pesos abiertos | Mayor tamaño; no comparable en licencia exacta sin consultar la fuente |
 | pi0 (Physical Intelligence) | ~3 B (backbone tipo PaliGemma mas experto de acciones) | VLA con flow matching | Apache 2.0 (según openpi) | Repositorio openpi | Objetivo generalista multiplataforma; no entrenado para SO-101 |
-| SmolVLA (HuggingFace) | ~450 M | VLA ligera para LeRobot | Apache 2.0 | LeRobot | Mucho menor tamaño; enfocada a hardware de bajo coste como SO-100/SO-101 |
+| SmolVLA (Hugging Face) | ~450 M | VLA ligera para LeRobot | Apache 2.0 | LeRobot | Mucho menor tamaño; enfocada a hardware de bajo coste como SO-100/SO-101 |
 
 Los datos de los modelos comparativos provienen de su documentación pública y no de la información proporcionada en esta búsqueda; conviene verificarlos en la fuente antes de citarlos. No hay comparación de rendimiento posible porque este modelo no publica métricas.
 
@@ -92,7 +92,7 @@ Los datos de los modelos comparativos provienen de su documentación pública y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_randomized_grasp_250ep_20261008_GR00T17_20k
+- Modelo en Hugging Face: https://huggingface.co/liorbenhorin-nv/so101_vials_dr_randomized_grasp_250ep_20261008_GR00T17_20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_randomized_grasp_250ep_20261008
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Isaac-GR00T (stack de NVIDIA para GR00T N1.x): https://github.com/NVIDIA/Isaac-GR00T

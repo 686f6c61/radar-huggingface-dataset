@@ -71,7 +71,7 @@ Estos resultados son valores congelados del proyecto. El reto final no se volvio
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ImobAI Portuguese Intent Baseline | TF-IDF + regresion logistica | No disponible | No disponible | Accuracy 0.781 en test observado; 0.682 en reto | Apache 2.0 | HuggingFace (skops) |
+| ImobAI Portuguese Intent Baseline | TF-IDF + regresion logistica | No disponible | No disponible | Accuracy 0.781 en test observado; 0.682 en reto | Apache 2.0 | Hugging Face (skops) |
 | Transformer multilingue experimental del mismo proyecto | Transformer (no neuronal clasico) | No disponible | No disponible | Peor que la linea base en test y reto (sin cifras) | No disponible | Pesos no incluidos |
 | Alternativas genericas de clasificacion de intenciones en portugues | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ No se dispone de datos publicados para comparar con otros clasificadores de inte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JuliaRezende521/imob-ai-intent-classifier-pt
+- Modelo en Hugging Face: https://huggingface.co/JuliaRezende521/imob-ai-intent-classifier-pt
 - Proyecto fuente en GitHub: https://github.com/Juliarezende521/Imob-IA
 - Referencia de skops (serializacion segura de scikit-learn): https://skops.readthedocs.io/
 - Referencia de scikit-learn: https://scikit-learn.org/

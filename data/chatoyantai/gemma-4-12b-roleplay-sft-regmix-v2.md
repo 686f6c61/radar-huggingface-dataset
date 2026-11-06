@@ -103,7 +103,7 @@ No se dispone de datos verificables sobre alternativas comparables dentro de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChatoyantAI/gemma-4-12b-roleplay-sft-regmix-v2
+- Modelo en Hugging Face: https://huggingface.co/ChatoyantAI/gemma-4-12b-roleplay-sft-regmix-v2
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Fuente de datos CoSER: no disponible en la informacion proporcionada
 - Fuente de datos XPersona: no disponible en la informacion proporcionada

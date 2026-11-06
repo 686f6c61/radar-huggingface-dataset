@@ -65,7 +65,7 @@ No hay modelos comparables en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dokterkepin/omniman_drive_pick_place_smolvla_v3
+- Hugging Face: https://huggingface.co/dokterkepin/omniman_drive_pick_place_smolvla_v3
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844
 - LeRobot (GitHub): https://github.com/huggingface/lerobot
 - LeRobot Docs: https://huggingface.co/docs/lerobot/index

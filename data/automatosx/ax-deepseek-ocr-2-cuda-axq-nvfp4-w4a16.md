@@ -77,9 +77,9 @@ El control con el checkpoint original en BF16 sobre RTX 5090 también reconoció
 
 | Modelo | Parámetros | Cuantización | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16 (este) | 3.389.119.360 totales; 2.602.844.160 en NVFP4 | NVFP4 W4A16, activaciones BF16 | no disponible | apache-2.0 | HuggingFace, preview de desarrollo |
-| deepseek-ai/DeepSeek-OCR-2 (base) | 3.389.119.360 (BF16) | BF16 sin cuantizar | no disponible | apache-2.0 | HuggingFace, revisión aaa02f3811945a91062062994c5c4a3f4c0af2b0 |
-| AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4 (sucesor) | no disponible | NVFP4 W4A4, calibrado, con kernels CUTLASS lineal nativo y MoE cuantizado nativo | no disponible | apache-2.0 (inferido del origen) | HuggingFace |
+| AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16 (este) | 3.389.119.360 totales; 2.602.844.160 en NVFP4 | NVFP4 W4A16, activaciones BF16 | no disponible | apache-2.0 | Hugging Face, preview de desarrollo |
+| deepseek-ai/DeepSeek-OCR-2 (base) | 3.389.119.360 (BF16) | BF16 sin cuantizar | no disponible | apache-2.0 | Hugging Face, revisión aaa02f3811945a91062062994c5c4a3f4c0af2b0 |
+| AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4 (sucesor) | no disponible | NVFP4 W4A4, calibrado, con kernels CUTLASS lineal nativo y MoE cuantizado nativo | no disponible | apache-2.0 (inferido del origen) | Hugging Face |
 
 Frente al checkpoint base, esta conversión reduce el payload de pesos de BF16 a 3,04 GB, a costa de introducir cuantización en atención, MLP y expertos. Frente al sucesor W4A4, el propio autor recomienda este último cuando se necesita computación FP4 nativa verificada; el W4A16 aquí descrito ejecuta Marlin con compresión FP4 solo en pesos. No se dispone de datos de rendimiento comparado entre las tres variantes.
 
@@ -98,7 +98,7 @@ Frente al checkpoint base, esta conversión reduce el payload de pesos de BF16 a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-OCR-2
 - Sucesor W4A4 recomendado por el autor: https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4
 - Artefactos citados en el repositorio: `runtime_audit.json`, `axquant_cuda_plan.json`, `axquant_cuda_manifest.json`, `provenance.json`, `development_runtime_smoke.json`, `SHA256SUMS.txt`, `examples/ocr_smoke.py`, `examples/ocr-smoke-page.png`, `LICENSE.txt`

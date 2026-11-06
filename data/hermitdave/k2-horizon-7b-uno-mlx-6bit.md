@@ -44,7 +44,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-- Para ejecutar el modelo en Apple Silicon se necesita una Mac con memoria unificada suficiente. Con la cuantización de 6 bits, los pesos ocupan aproximadamente 6,75 GB (8.999.178.240 parámetros × 6 bits / 8), sin contar el overhead de la cache KV ni el runtime. El repositorio en HuggingFace tiene un tamaño total de 31,9 GB, lo que sugiere que contiene otros archivos o pesos en mayor precisión.
+- Para ejecutar el modelo en Apple Silicon se necesita una Mac con memoria unificada suficiente. Con la cuantización de 6 bits, los pesos ocupan aproximadamente 6,75 GB (8.999.178.240 parámetros × 6 bits / 8), sin contar el overhead de la cache KV ni el runtime. El repositorio en Hugging Face tiene un tamaño total de 31,9 GB, lo que sugiere que contiene otros archivos o pesos en mayor precisión.
 - Recomendado: Mac con chip M1/M2/M3/M4 y al menos 16 GB de RAM unificada para inferencia cómoda con ventanas de contexto moderadas.
 - Opciones de despliegue: `mlx_lm.generate` (CLI de mlx-lm) y servidores OpenAI-compatibles con oMLX v0.6.4+ aplicando el parche de soporte K2-Horizon (PR #3441).
 - No es compatible con vLLM, llama.cpp ni TGI, que están orientados a CUDA, CPU o GPU de otros fabricantes.
@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks que permitan una comparación de rendimient
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-MLX-6bit
+- Hugging Face del modelo: https://huggingface.co/hermitdave/K2-Horizon-7B-Uno-MLX-6bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B-Uno
 - Parche de soporte oMLX: https://github.com/jundot/omlx/pull/3441
 - Otro checkpoint similar: https://huggingface.co/hermitdave/K2-Horizon-7B-MLX-6bit

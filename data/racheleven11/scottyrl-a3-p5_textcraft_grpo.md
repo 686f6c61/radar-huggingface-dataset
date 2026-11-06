@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `racheleven11/scottyrl-a3-p5_textcraft_grpo` | ~4B + LoRA r32 | No disponible | TextCraft-Synth / agentes | No disponible | Pública en HuggingFace, 0 descargas |
-| `Qwen/Qwen3.5-4B` (base sin ajustar) | ~4B | No disponible | Generalista | No disponible | Pública en HuggingFace |
+| `racheleven11/scottyrl-a3-p5_textcraft_grpo` | ~4B + LoRA r32 | No disponible | TextCraft-Synth / agentes | No disponible | Pública en Hugging Face, 0 descargas |
+| `Qwen/Qwen3.5-4B` (base sin ajustar) | ~4B | No disponible | Generalista | No disponible | Pública en Hugging Face |
 | Fine-tuning completo sobre el mismo base | ~4B | No disponible | No documentada | No disponible | No disponible |
 | Otros adaptadores LoRA de la misma familia | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -92,7 +92,7 @@ No se dispone de resultados numéricos que permitan comparar el rendimiento del 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/racheleven11/scottyrl-a3-p5_textcraft_grpo
+- Modelo en Hugging Face: https://huggingface.co/racheleven11/scottyrl-a3-p5_textcraft_grpo
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Export de Tinker: `tinker://model_c3776a5a/v50` (identificador interno, sin URL pública)
 - Configuración de entrenamiento: `configs/p5_textcraft_grpo.yaml` (ruta interna del repositorio)

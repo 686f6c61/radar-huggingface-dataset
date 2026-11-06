@@ -4,7 +4,7 @@
 
 OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update04 es un modelo de lenguaje de 9.653 millones de parámetros desarrollado por LSW142857, basado en la familia Qwen3.5-9B. Se trata de un checkpoint completamente fusionado que incorpora cuatro actualizaciones de optimizador (iteración 3, indexada desde cero) de un entrenamiento OPSD (Optimized Policy for Speculative Decoding) con configuración "Strong PI" y "trailing_user" sobre 1024 filas de datos, ejecutado en 8 GPU RTX A6000. El modelo integra la inicialización experta SFT, la actualización LoRA del modelo principal, la LoRA de MTP (Multi-Token Prediction) y los tensores MTP completos entrenados, sin necesidad de adaptadores adicionales.
 
-El modelo está diseñado para generación de texto y código, con soporte para entrada de imagen-texto (según las etiquetas de HuggingFace). Su relevancia radica en ser un ejemplo de aplicación de OPSD, una técnica de optimización que combina decodificación especulativa con entrenamiento de múltiples tokens, y en su disponibilidad como modelo fusionado listo para cargar con transformers. La arquitectura subyacente, según la documentación de vLLM para Qwen3.5-Dense, es un híbrido Mamba-Transformer con atención GDN (Global Dense Network) y atención completa, aunque la model card no detalla la arquitectura interna.
+El modelo está diseñado para generación de texto y código, con soporte para entrada de imagen-texto (según las etiquetas de Hugging Face). Su relevancia radica en ser un ejemplo de aplicación de OPSD, una técnica de optimización que combina decodificación especulativa con entrenamiento de múltiples tokens, y en su disponibilidad como modelo fusionado listo para cargar con transformers. La arquitectura subyacente, según la documentación de vLLM para Qwen3.5-Dense, es un híbrido Mamba-Transformer con atención GDN (Global Dense Network) y atención completa, aunque la model card no detalla la arquitectura interna.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update04
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Strong-Trailing-1024-A6000-Merged-Update04
 - Modelo relacionado (Medium, sin merge): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000
 - Modelo relacionado (Medium, merged): https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
 - Despliegue en FriendliAI (versión Iter16): https://friendli.ai/models/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged-Iter16

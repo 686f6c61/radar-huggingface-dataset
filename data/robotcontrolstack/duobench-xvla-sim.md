@@ -81,8 +81,8 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| DuoBench X-VLA (sim) | 879,7 M | no disponible | Apache 2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible | no disponible | no disponible | HuggingFace |
+| DuoBench X-VLA (sim) | 879,7 M | no disponible | Apache 2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible | no disponible | no disponible | Hugging Face |
 | Otras políticas DuoBench | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de datos de otros modelos comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotControlStack/duobench-xvla-sim
+- Modelo en Hugging Face: https://huggingface.co/RobotControlStack/duobench-xvla-sim
 - Modelo base: https://huggingface.co/lerobot/xvla-base
 - Dataset DuoBench: https://huggingface.co/datasets/RobotControlStack/duobench
 - Paper DuoBench (arXiv): https://arxiv.org/abs/2606.11901

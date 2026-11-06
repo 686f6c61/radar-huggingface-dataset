@@ -68,8 +68,8 @@ La model card indica explícitamente que no se ejecutó ningún benchmark comple
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch3-FP8 | ~180B | no disponible | qwen-community-1.0 | HuggingFace, FP8 safetensors | SFT especializado en optimización de pruebas, sin benchmarks publicados |
-| Qwen/Qwen3.8-Flash-Next (base) | ~180B | no disponible | qwen-community-1.0 | HuggingFace | Modelo base multimodal image-text-to-text; el checkpoint herede su arquitectura e interfaz |
+| EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch3-FP8 | ~180B | no disponible | qwen-community-1.0 | Hugging Face, FP8 safetensors | SFT especializado en optimización de pruebas, sin benchmarks publicados |
+| Qwen/Qwen3.8-Flash-Next (base) | ~180B | no disponible | qwen-community-1.0 | Hugging Face | Modelo base multimodal image-text-to-text; el checkpoint herede su arquitectura e interfaz |
 | Alternativas de razonamiento matemático de ~180B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificables en la información proporcionada |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (optimización de pruebas formales) en la documentación proporcionada.
@@ -89,7 +89,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch3-FP8
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/Qwen3.8-Flash-Next-ProofOpt-FullCodexSFT-20261102-epoch3-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Metadatos de exportación: `export_metadata.json` (incluido en el repositorio)
 - Model card original del base: `BASE_MODEL_README.md` (incluido en el repositorio)

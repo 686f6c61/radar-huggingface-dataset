@@ -84,9 +84,9 @@ No se dispone de comparativas con modelos externos de la misma categoría en la 
 
 | Modelo | Parámetros | Contexto | Overall (easy-ng) | Combat | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Minecraft-Agent-Qwen3.5-9B-Stage3 (base, sin CoT) | 9,41 B (no confirmado en la ficha) | no disponible | 24,9 % | 25,2 % | no disponible | HuggingFace, repo propio |
+| Minecraft-Agent-Qwen3.5-9B-Stage3 (base, sin CoT) | 9,41 B (no confirmado en la ficha) | no disponible | 24,9 % | 25,2 % | no disponible | Hugging Face, repo propio |
 | Minecraft-Agent-CoT v1 (pensamientos crudos) | no disponible | no disponible | 25,3 % | 18,4 % | no disponible | Referenciado en la model card, URL no incluida en la información disponible |
-| **Minecraft-Agent-CoT v2 (este modelo)** | 9,41 B | 32.768 (config. vLLM) | 29,2 % | 23,1 % | Apache 2.0 | HuggingFace |
+| **Minecraft-Agent-CoT v2 (este modelo)** | 9,41 B | 32.768 (config. vLLM) | 29,2 % | 23,1 % | Apache 2.0 | Hugging Face |
 | Control sin pensamiento (e5) | no disponible | no disponible | 31,5 % | 29,9 % | no disponible | No publicado como checkpoint independiente según la información disponible |
 
 Alternativas externas de tamaño similar (por ejemplo, otros VLM de 7-9 B aplicados a agentes): no disponible.
@@ -108,7 +108,7 @@ Alternativas externas de tamaño similar (por ejemplo, otros VLM de 7-9 B aplica
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v2
+- Página del modelo en Hugging Face: https://huggingface.co/EmberJin/Minecraft-Agent-CoT-Qwen3.5-9B-v2
 - Modelo base (Stage3): https://huggingface.co/EmberJin/Minecraft-Agent-Qwen3.5-9B-Stage3
 - Checkpoint v1: referenciado en la model card como "link below", pero la URL no está incluida en la información proporcionada.
 - Paper, blog técnico, repositorio de código o demo: no disponible.

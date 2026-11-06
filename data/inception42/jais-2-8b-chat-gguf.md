@@ -4,7 +4,7 @@
 
 Jais-2-8B-Chat es un modelo de lenguaje conversacional bilingüe árabe-inglés desarrollado por Inception AI (Inception42), la segunda generación de la familia Jais de modelos de lenguaje a gran escala. Este repositorio concreto contiene las cuantizaciones GGUF del modelo base, pensadas para su ejecución con llama.cpp y otras herramientas compatibles con este formato. El modelo está orientado a despliegues empresariales y gubernamentales a escala soberana, con especial énfasis en el mundo árabe.
 
-Con 8.090 millones de parámetros, se sitúa en el rango de modelos densos de tamaño medio, adecuado para inferencia en hardware de consumo y servidores de gama media. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso a los pesos está restringido (gated) y requiere aceptar las condiciones del repositorio en HuggingFace. El modelo base es inceptionai/Jais-2-8B-Chat, y existe una variante mayor de 70B dentro de la misma familia.
+Con 8.090 millones de parámetros, se sitúa en el rango de modelos densos de tamaño medio, adecuado para inferencia en hardware de consumo y servidores de gama media. Su licencia Apache 2.0 permite uso comercial sin restricciones, aunque el acceso a los pesos está restringido (gated) y requiere aceptar las condiciones del repositorio en Hugging Face. El modelo base es inceptionai/Jais-2-8B-Chat, y existe una variante mayor de 70B dentro de la misma familia.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Con 8.090 millones de parámetros, se sitúa en el rango de modelos densos de ta
 | Idiomas soportados | Árabe (ar), inglés (en) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (cuantizado); safetensors en el modelo base |
-| Acceso | Restringido (gated) — requiere cuenta en HuggingFace y aceptación de condiciones |
+| Acceso | Restringido (gated) — requiere cuenta en Hugging Face y aceptación de condiciones |
 
 ## Arquitectura y entrenamiento
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
   - Cuantización F16: ~16 GB de pesos, requiere al menos 20 GB de VRAM.
 - GPU recomendadas: RTX 4090 (24 GB) o RTX 3090 (24 GB) para cuantizaciones altas; A100 40/80 GB para despliegue en producción con contexto largo o concurrencia elevada.
 - Cabe en GPU de consumo: sí, con cuantizaciones Q4 o Q5 en tarjetas de 8-12 GB VRAM.
-- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, text-generation-inference (TGI) si se convierten los pesos, y HuggingFace Inference Endpoints (indicado por el tag `endpoints_compatible`).
+- Opciones de despliegue: llama.cpp (formato nativo GGUF), Ollama, text-generation-inference (TGI) si se convierten los pesos, y Hugging Face Inference Endpoints (indicado por el tag `endpoints_compatible`).
 - Latencia y throughput: no disponibles; dependerán de la cuantización, el hardware y la longitud de contexto configurada.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ La ventaja diferencial de Jais-2-8B-Chat frente a estas alternativas es su enfoq
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: los pesos requieren cuenta en HuggingFace y aceptación explícita de las condiciones del repositorio, lo que puede suponer una barrera en entornos automatizados o con políticas de descarga estrictas.
+- Acceso restringido: los pesos requieren cuenta en Hugging Face y aceptación explícita de las condiciones del repositorio, lo que puede suponer una barrera en entornos automatizados o con políticas de descarga estrictas.
 - Cobertura idiomática limitada a árabe e inglés: no es adecuado para tareas en otros idiomas sin un pipeline de traducción previo.
 - Ausencia de datos de evaluación: no se han publicado benchmarks, por lo que el rendimiento real en tareas de razonamiento, código o matemáticas es desconocido y no puede compararse objetivamente con alternativas.
 - Riesgo de alucinación: como cualquier modelo de lenguaje, puede generar información falsa o inventada, especialmente en dominios especializados; no se ha documentado ninguna mitigación específica.

@@ -114,7 +114,7 @@ No se dispone de comparaciones con alternativas de otros autores (por ejemplo mo
 
 ## Enlaces
 
-- Repositorio del artefacto en HuggingFace: https://huggingface.co/redashes/Qwen3.8-27B-SSMFIX-apostate-GSQ-RCO-IQ3_S-NInfer
+- Repositorio del artefacto en Hugging Face: https://huggingface.co/redashes/Qwen3.8-27B-SSMFIX-apostate-GSQ-RCO-IQ3_S-NInfer
 - Modelo base BF16 apostate: https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX-apostate
 - Variante SSMFIX sin apostate: https://huggingface.co/redashes/Qwen3.8-27B-BF16-SSMFIX
 - GGUF de origen IQ3_S: https://huggingface.co/redashes/Qwen3.8-27B-SSMFIX-apostate-GSQ-RCO-IQ3_S

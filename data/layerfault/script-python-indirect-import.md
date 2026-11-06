@@ -66,7 +66,7 @@ No disponible. No existen modelos de IA comparables, ya que este repositorio no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LayerFault/script-python-indirect-import
+- Hugging Face: https://huggingface.co/LayerFault/script-python-indirect-import
 - Repositorio GitHub de Layerfault: https://github.com/izm1chael/layerfault
 - Releases de Layerfault: https://github.com/izm1chael/layerfault/releases
 - Documentación de LLM Guard sobre inyección de prompts (relacionada): https://protectai.github.io/llm-guard/input_scanners/prompt_injection/

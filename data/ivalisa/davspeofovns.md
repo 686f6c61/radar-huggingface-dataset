@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ivalisa/davspeofovns` es un adaptador LoRA para generacion de texto a imagen, disenado para ser utilizado sobre el modelo base `vantagewithai/Magic-Wan-Image-V2-GGUF`. Fue publicado por el usuario ivalisa en septiembre de 2026 y se distribuye a traves de la libreria diffusers de HuggingFace.
+El modelo `ivalisa/davspeofovns` es un adaptador LoRA para generacion de texto a imagen, disenado para ser utilizado sobre el modelo base `vantagewithai/Magic-Wan-Image-V2-GGUF`. Fue publicado por el usuario ivalisa en septiembre de 2026 y se distribuye a traves de la libreria diffusers de Hugging Face.
 
 La ficha tecnica del autor es extremadamente escasa: no incluye descripcion del dataset de entrenamiento, ni el prompt de instancia, ni detalles sobre el estilo o el contenido que el adaptador aporta al modelo base. El repositorio tiene un tamano de 0,6 GB y no registra descargas ni valoraciones, lo que sugiere que se trata de una publicacion reciente o de baja difusion.
 

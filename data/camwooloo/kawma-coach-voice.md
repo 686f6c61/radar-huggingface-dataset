@@ -84,7 +84,7 @@ No se dispone de información sobre otros sistemas TTS comparables (tamaño, con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/camwooloo/kawma-coach-voice
+- Repositorio en Hugging Face: https://huggingface.co/camwooloo/kawma-coach-voice
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Variante VoiceDesign: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign
 - Variante CustomVoice: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice

@@ -4,7 +4,7 @@
 
 `mentat-sys1-v0.1` es un adaptador LoRA con una "decision readout" nativa, entrenado por el usuario `yunqu` sobre la revision `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a` del modelo base `Qwen/Qwen3.5-4B`. No es un asistente conversacional de proposito general: su unico cometido es responder decisiones acotadas de tres tipos (`noul` para verdadero/falso, `choice` para alternativas con nombre y `score` para escalas ordenadas) devolviendo una distribucion de probabilidad nativa sobre las etiquetas suministradas por el cliente. La inferencia se resuelve en una sola pasada del modelo con una temperatura escalar congelada de `1.0551417227266353`.
 
-El modelo se sirve a traves de un endpoint compatible con TypeSafe, `POST /v1/systemone`, que reutiliza el mismo formato de cable que Jev, e incluye campos de diagnostico anadidos como `unknown_probability`, `abstained`, identidad de calibracion y uso de runtime local. El paquete congelado se publica como revision `v0.1.0` en HuggingFace y no incluye los pesos del modelo base, que deben descargarse por separado.
+El modelo se sirve a traves de un endpoint compatible con TypeSafe, `POST /v1/systemone`, que reutiliza el mismo formato de cable que Jev, e incluye campos de diagnostico anadidos como `unknown_probability`, `abstained`, identidad de calibracion y uso de runtime local. El paquete congelado se publica como revision `v0.1.0` en Hugging Face y no incluye los pesos del modelo base, que deben descargarse por separado.
 
 Su relevancia actual viene de su posicion en la tabla JevBench Public-231, donde obtiene 200 aciertos sobre 231 (86,58%), empatando en segunda posicion con el sistema cerrado de referencia Jev 1.13.0 y por delante de 19 de los 21 sistemas listados. El repositorio, sin embargo, acumula 0 descargas y 0 likes, y la model card aparece truncada en la seccion de auditoria de contaminacion, por lo que parte de la documentacion publicada esta incompleta.
 
@@ -124,7 +124,7 @@ Latencia medida en dos ejecuciones seriales sobre A800: p50 de 0,090-0,091 s y p
 
 | Modelo | Parametros | Contexto | Public-231 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mentat-sys1-v0.1 | 4B (base) + LoRA | no disponible | 200/231 (86,58%) | no disponible | HuggingFace, revision v0.1.0 |
+| mentat-sys1-v0.1 | 4B (base) + LoRA | no disponible | 200/231 (86,58%) | no disponible | Hugging Face, revision v0.1.0 |
 | Plumb-4B | 4B | no disponible | 207/231 (89,61%) | no disponible | listado en JevBench |
 | Jev 1.13.0 | no disponible | no disponible | 200/231 (86,58%) | no disponible (referencia cerrada) | sistema cerrado de referencia |
 | Imajev-4B | 4B | no disponible | 199/231 (86,15%) | no disponible | listado en JevBench |
@@ -149,7 +149,7 @@ La comparativa se limita a la tarea de decision evaluada en JevBench Public-231.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunqu/mentat-sys1-v0.1
+- Modelo en Hugging Face: https://huggingface.co/yunqu/mentat-sys1-v0.1
 - Paquete congelado del modelo, revision v0.1.0: https://huggingface.co/yunqu/mentat-sys1-v0.1/tree/v0.1.0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Codigo de servicio, v0.1.1: https://github.com/mentat-asi/mentat-sys1-v0.1/tree/v0.1.1

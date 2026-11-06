@@ -64,4 +64,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- [HuggingFace - GT1999/mwp-v2-llama1b-b7-stage3](https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage3)
+- [Hugging Face - GT1999/mwp-v2-llama1b-b7-stage3](https://huggingface.co/GT1999/mwp-v2-llama1b-b7-stage3)

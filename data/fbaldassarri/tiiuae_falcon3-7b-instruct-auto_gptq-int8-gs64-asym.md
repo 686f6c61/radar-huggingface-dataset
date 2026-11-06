@@ -4,7 +4,7 @@
 
 Esta ficha describe `fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym`, una version cuantizada a INT8 del modelo instructivo Falcon3-7B-Instruct desarrollado por el Technology Innovation Institute (TII). La cuantizacion ha sido realizada por el usuario fbaldassarri mediante la herramienta Intel AutoRound v0.15.1, aplicando el algoritmo GPTQ (AutoGPTQ) en modo weights-only quantization (WoQ), con 8 bits, tamano de grupo 64 y esquema asimetrico. El resultado es un checkpoint listo para inferencia en transformers con pesos safetensors.
 
-El modelo base Falcon3-7B-Instruct es un transformer causal denso de aproximadamente 7.000 millones de parametros, con una longitud de contexto de hasta 32K tokens y soporte para cuatro idiomas (ingles, frances, espanol y portugues). Esta variante concreta esta etiquetada en HuggingFace unicamente con el idioma ingles (`en`), aunque hereda del base su poliglotia.
+El modelo base Falcon3-7B-Instruct es un transformer causal denso de aproximadamente 7.000 millones de parametros, con una longitud de contexto de hasta 32K tokens y soporte para cuatro idiomas (ingles, frances, espanol y portugues). Esta variante concreta esta etiquetada en Hugging Face unicamente con el idioma ingles (`en`), aunque hereda del base su poliglotia.
 
 La relevancia de esta publicacion es fundamentalmente practica: ofrece un checkpoint INT8 optimizado para despliegue en hardware Intel (CPU, iGPU Arc mediante intel-extension-for-pytorch y NPU AI Boost de la serie Core Ultra mediante OpenVINO), reduciendo el coste de memoria frente al modelo en bfloat16. El repositorio registra el valor de parametros totales en safetensors como 2.599.044.096, cifra que no coincide con el tamano nominal de 7B del modelo base y que probablemente refleja un conteo parcial o de un subconjunto de tensores; el tamano total del repositorio es de 10,2 GB.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/...-auto_gptq-int8-gs64-asym (este) | 7B (base) | 32K | INT8 GPTQ gs64 asim | apache-2.0 | HuggingFace |
-| fbaldassarri/...-autogptq-int8-gs128-asym | 7B (base) | 32K | INT8 GPTQ gs128 asim | falcon-llm-license (segun repo) | HuggingFace |
-| tiiuae/Falcon3-7B-Instruct (base) | 7B | 32K | bfloat16 (sin cuantizar) | falcon-llm-license | HuggingFace, Qualcomm AI Hub |
+| fbaldassarri/...-auto_gptq-int8-gs64-asym (este) | 7B (base) | 32K | INT8 GPTQ gs64 asim | apache-2.0 | Hugging Face |
+| fbaldassarri/...-autogptq-int8-gs128-asym | 7B (base) | 32K | INT8 GPTQ gs128 asim | falcon-llm-license (segun repo) | Hugging Face |
+| tiiuae/Falcon3-7B-Instruct (base) | 7B | 32K | bfloat16 (sin cuantizar) | falcon-llm-license | Hugging Face, Qualcomm AI Hub |
 | fbaldassarri/...-autoround-int8-gs128-asym | 7B (base) | 32K | INT8 AutoRound gs128 asim | no disponible | Friendli.ai |
 
 Nota: los datos de contexto y parametros de los modelos base provienen de la informacion de busqueda sobre Falcon3-7B-Instruct; los detalles exactos de licencia de las variantes cuantizadas pueden diferir del modelo base y conviene verificarlos en cada repositorio.
@@ -85,7 +85,7 @@ Nota: los datos de contexto y parametros de los modelos base provienen de la inf
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym
+- Hugging Face (este modelo): https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-7B-Instruct
 - Variante gs128: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int8-gs128-asym
 - Variante autoround gs128 en Friendli: https://friendli.ai/models/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoround-int8-gs128-asym

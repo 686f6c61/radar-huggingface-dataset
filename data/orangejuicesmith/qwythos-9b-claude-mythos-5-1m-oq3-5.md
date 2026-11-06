@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwythos-9B-oQ3.5 (este repositorio) | ~8,95 B | 1.048.576 tokens | oQ3.5 mixta, MLX, 4,8 GB | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwythos-9B-Claude-Mythos-5-1M (original) | ~8,95 B | 1.048.576 tokens | precisión completa (formato no detallado) | Apache-2.0 | HuggingFace, mantenido por Empero AI |
-| Qwen3.5-9B (modelo base) | 9 B según denominación; cifra exacta no disponible | no disponible en la información | no disponible | no disponible en la información | HuggingFace, Qwen Team |
+| Qwythos-9B-oQ3.5 (este repositorio) | ~8,95 B | 1.048.576 tokens | oQ3.5 mixta, MLX, 4,8 GB | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwythos-9B-Claude-Mythos-5-1M (original) | ~8,95 B | 1.048.576 tokens | precisión completa (formato no detallado) | Apache-2.0 | Hugging Face, mantenido por Empero AI |
+| Qwen3.5-9B (modelo base) | 9 B según denominación; cifra exacta no disponible | no disponible en la información | no disponible | no disponible en la información | Hugging Face, Qwen Team |
 
 No se dispone de datos de rendimiento comparado entre estas tres variantes ni frente a otras familias de ~8-9B, por lo que la comparativa se limita a parámetros, contexto, formato y licencia.
 

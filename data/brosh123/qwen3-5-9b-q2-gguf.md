@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Brosh123/qwen3.5-9b-q2-gguf | ≈9,2B | no disponible | Q2_K (GGUF) | no disponible | HuggingFace, 0 descargas |
-| Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled | ≈9,2B (modelo base) | no disponible | Precisión original (no confirmada) | no disponible | HuggingFace |
+| Brosh123/qwen3.5-9b-q2-gguf | ≈9,2B | no disponible | Q2_K (GGUF) | no disponible | Hugging Face, 0 descargas |
+| Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled | ≈9,2B (modelo base) | no disponible | Precisión original (no confirmada) | no disponible | Hugging Face |
 | Otras cuantizaciones del mismo modelo base | ≈9,2B | no disponible | Q4_K_M, Q8_0, etc. | no disponible | no verificado en esta búsqueda |
 
 La comparativa se limita al linaje directo del modelo, ya que no se dispone de datos de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con alternativas de la misma categoría.
@@ -83,6 +83,6 @@ La comparativa se limita al linaje directo del modelo, ya que no se dispone de d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Brosh123/qwen3.5-9b-q2-gguf
+- Repositorio Hugging Face: https://huggingface.co/Brosh123/qwen3.5-9b-q2-gguf
 - Modelo original: https://huggingface.co/Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled
 - Ollama (runtime documentado): https://ollama.com

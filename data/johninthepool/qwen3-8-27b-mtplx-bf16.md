@@ -78,7 +78,7 @@ Nota: los tamaños de las variantes 8-bit y 4-bit son estimaciones basadas en la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-bf16)
+- [Modelo en Hugging Face](https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-bf16)
 - [Variante 8-bit](https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-8bit)
 - [Variante 4-bit](https://huggingface.co/johninthepool/Qwen3.8-27B-MTPLX-4bit)
 - [Modelo base Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)

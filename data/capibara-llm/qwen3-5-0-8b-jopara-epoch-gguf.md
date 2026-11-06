@@ -82,6 +82,6 @@ No se dispone de datos de benchmarks ni de especificaciones completas del modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Capibara-LLM/Qwen3.5-0.8B-Jopara-Epoch-GGUF
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth
 - llama.cpp (motor de inferencia): no se proporciona enlace en la informacion disponible, aunque es el runtime implicito por el formato GGUF.

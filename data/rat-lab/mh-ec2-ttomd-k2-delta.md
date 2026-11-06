@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `rat-lab/mh-ec2-ttomd-K2-delta` | LoRA sobre Gemma 2 2B (~2,6B) | 8192 (heredado) | no disponible | HuggingFace, 0 descargas | Artefacto de investigación; IPO en línea con riesgo entrópico y corrección de sesgo |
-| `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` | ~2,6B | 8192 | no disponible | HuggingFace (modelo base) | Mismo modelo sin el adaptador; sirve de referencia para medir el efecto del entrenamiento |
-| Gemma 2 2B Instruct (Google) | ~2,6B | 8192 | Términos de uso de Gemma | HuggingFace y Vertex AI | Referencia instructiva de propósito general; no especializada en preferencias |
+| `rat-lab/mh-ec2-ttomd-K2-delta` | LoRA sobre Gemma 2 2B (~2,6B) | 8192 (heredado) | no disponible | Hugging Face, 0 descargas | Artefacto de investigación; IPO en línea con riesgo entrópico y corrección de sesgo |
+| `vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT` | ~2,6B | 8192 | no disponible | Hugging Face (modelo base) | Mismo modelo sin el adaptador; sirve de referencia para medir el efecto del entrenamiento |
+| Gemma 2 2B Instruct (Google) | ~2,6B | 8192 | Términos de uso de Gemma | Hugging Face y Vertex AI | Referencia instructiva de propósito general; no especializada en preferencias |
 
 No hay datos de benchmarks en la información proporcionada que permitan comparar el rendimiento de estos modelos. La comparación relevante en este caso es algorítmica (IPO en línea con riesgo entrópico frente a DPO, KTO u otras variantes del mismo estudio), no de capacidad bruta.
 
@@ -89,7 +89,7 @@ No hay datos de benchmarks en la información proporcionada que permitan compara
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/rat-lab/mh-ec2-ttomd-K2-delta
+- Ficha en Hugging Face: https://huggingface.co/rat-lab/mh-ec2-ttomd-K2-delta
 - Modelo base: https://huggingface.co/vectorzhou/gemma-2-2b-it-alpaca-cleaned-SFT
 - Dataset de preferencias: https://huggingface.co/datasets/PKU-Alignment/PKU-SafeRLHF
 - Modelo Gemma 2 2B Instruct (referencia): https://huggingface.co/google/gemma-2-2b-it

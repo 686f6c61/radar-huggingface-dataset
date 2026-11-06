@@ -12,7 +12,7 @@ Es relevante ahora porque la ruta de prefill W8A8 nativa requiere hardware Apple
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.8; tag `qwen3_5` en HuggingFace) |
+| Arquitectura | Transformer denso (familia Qwen3.8; tag `qwen3_5` en Hugging Face) |
 | Parametros totales | 27.356.728.560 (dato real de safetensors) |
 | Parametros activos | No aplica: modelo denso, no MoE |
 | Longitud de contexto | No disponible. Los contextos de 64K y 131K no estan cualificados por el autor; las pruebas se hicieron con peticiones de 16.384 tokens y un prompt de 17.069 tokens |
@@ -85,7 +85,7 @@ El tiempo total medio es un 0,9% superior con GPTQ, dentro de su variacion por p
 - VRAM / memoria unificada: el checkpoint ocupa aproximadamente 28 GiB (repositorio de 30,0 GB), por lo que se necesita un equipo Apple Silicon con al menos 64 GB de memoria unificada para las pruebas realizadas (M5 Max de 64 GB).
 - GPU compatibles: la ruta de prefill W8A8 nativa requiere hardware Apple10, es decir, M5 y posteriores. La release se probo en un M5 Max de 64 GB. No se documenta soporte para GPU NVIDIA, AMD ni para Metal en generaciones Apple anteriores.
 - Cabe en GPU de consumo: si, en el sentido de Apple Silicon de gama alta (M5 Max de 64 GB); no hay informacion sobre su funcionamiento en equipos con menos memoria ni en GPU de consumo dedicadas.
-- Opciones de despliegue: exclusivamente el runtime Tigerlily, apuntando al directorio descargado con `tigerlily --model ./Qwen3.8-27B-W8A8-GPTQ-Tigerlily`. La model card declara `inference: false` en los metadatos, lo que indica que no esta pensado para los cargadores genericos de HuggingFace. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: exclusivamente el runtime Tigerlily, apuntando al directorio descargado con `tigerlily --model ./Qwen3.8-27B-W8A8-GPTQ-Tigerlily`. La model card declara `inference: false` en los metadatos, lo que indica que no esta pensado para los cargadores genericos de Hugging Face. No se menciona soporte para vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput estimados: 11,511 s de media hasta el primer token y 14,852 s de tiempo total medio para una peticion de 16.384 tokens con salida de 128 tokens; 38,01 tokens/s en decodificacion tras el primer token en un M5 Max de 64 GB. Cifras de motor nativo, excluyendo HTTP y carga de checkpoint.
 - Requisito de preparacion: la receta de cuantizacion se ejecuto con `tigerlily-setup` en Rust y tardo unos 37 minutos en un M5 Max de 64 GB con corriente alterna.
 
@@ -95,11 +95,11 @@ No se dispone de datos de benchmarks estandar que permitan comparar con modelos 
 
 | Modelo / variante | Parametros | Cuantizacion | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily | 27.356.728.560 | W8A8 INT8 con GPTQ sobre base Q8 agrupada | No disponible (64K/131K sin cualificar) | apache-2.0 (pesos) | HuggingFace, 0 descargas, 0 likes |
+| havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily | 27.356.728.560 | W8A8 INT8 con GPTQ sobre base Q8 agrupada | No disponible (64K/131K sin cualificar) | apache-2.0 (pesos) | Hugging Face, 0 descargas, 0 likes |
 | Variante RTN del mismo autor | 27.356.728.560 | W8A8 INT8 con round-to-nearest | No disponible | apache-2.0 (pesos) | Seleccionable con `--w8a8-method rtn` en Tigerlily; no es un repo separado |
-| mlx-community/Qwen3.8-27B-8bit | No disponible | Q8 agrupada (referencia de control) | No disponible | No disponible | HuggingFace (commit `815b83c0...`) |
-| mlx-community/Qwen3.8-27B-MTP-8bit | No disponible | Q8 agrupada con cabeza MTP | No disponible | No disponible | HuggingFace (commit `e88e48d0...`) |
-| Qwen/Qwen3.8-27B (modelo base) | No disponible | BF16 (origen) | No disponible | No disponible | HuggingFace |
+| mlx-community/Qwen3.8-27B-8bit | No disponible | Q8 agrupada (referencia de control) | No disponible | No disponible | Hugging Face (commit `815b83c0...`) |
+| mlx-community/Qwen3.8-27B-MTP-8bit | No disponible | Q8 agrupada con cabeza MTP | No disponible | No disponible | Hugging Face (commit `e88e48d0...`) |
+| Qwen/Qwen3.8-27B (modelo base) | No disponible | BF16 (origen) | No disponible | No disponible | Hugging Face |
 
 El autor no proporciona comparaciones con otros modelos de ~27B ni cifras de calidad de tarea, de modo que cualquier comparacion con alternativas externas queda como no disponible.
 
@@ -121,7 +121,7 @@ El autor no proporciona comparaciones con otros modelos de ~27B ni cifras de cal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily
+- Modelo en Hugging Face: https://huggingface.co/havenwood/Qwen3.8-27B-W8A8-GPTQ-Tigerlily
 - Repositorio del runtime Tigerlily: https://github.com/havenwood/tigerlily
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint de origen MLX Community Q8: https://huggingface.co/mlx-community/Qwen3.8-27B-8bit/tree/815b83c0df8ffd1d1b5244cf75fd6ef14fca9ef9

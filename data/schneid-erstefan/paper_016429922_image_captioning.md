@@ -36,7 +36,7 @@ No procede. Este repositorio no contiene un modelo de aprendizaje automático, p
 - **Análisis de estilo de redacción**: dado que el documento está etiquetado con un estilo "detallado descriptivo" y "entusiasta", podría servir como ejemplo de cómo estructurar un paper en el campo de visión por computador.
 - **Referencia para implementación**: si el documento describe un método concreto, podría servir como base para reproducir un algoritmo de *image captioning*, aunque no se garantiza que incluya código o detalles técnicos suficientes.
 - **Comparación de métricas**: si el documento incluye resultados experimentales, podría utilizarse para comparar métricas de *captioning* con otros modelos, aunque no se tiene acceso a los datos.
-- **Documentación de procesos**: el repositorio podría ser un ejemplo de cómo publicar un artículo en HuggingFace, aunque no es un caso de uso típico.
+- **Documentación de procesos**: el repositorio podría ser un ejemplo de cómo publicar un artículo en Hugging Face, aunque no es un caso de uso típico.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/schneid-erstefan/paper_016429922_image_captioning
+- Repositorio de Hugging Face: https://huggingface.co/schneid-erstefan/paper_016429922_image_captioning
 - Documentación de Hugging Face sobre *image captioning*: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Artículo de evaluación de *image captioning* en arXiv: https://arxiv.org/abs/2503.14604
 - Modelo BLIP de Salesforce (referencia de la tarea): https://huggingface.co/Salesforce/blip-image-captioning-base

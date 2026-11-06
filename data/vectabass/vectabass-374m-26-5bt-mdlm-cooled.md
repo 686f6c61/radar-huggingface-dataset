@@ -77,7 +77,7 @@ El error estándar en bits por byte es de aproximadamente 0,06 con una semilla y
 
 | Modelo | Parámetros | Contexto | Paradigma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-374m-26.5bt-mdlm-cooled | 373,9M totales (303,1M no-embedding) | 2048 | MDLM bidireccional | Apache 2.0 | HuggingFace |
+| vectabass-374m-26.5bt-mdlm-cooled | 373,9M totales (303,1M no-embedding) | 2048 | MDLM bidireccional | Apache 2.0 | Hugging Face |
 | Escalera AR del mismo proyecto (fase 1) | 100M a 1.6B no-embedding | No disponible | Autorregresivo | No disponible en la información | Publicada por separado según la model card |
 | Otras celdas de la MDLM square (fase 1) | 100M a 1.6B no-embedding, varios presupuestos de tokens | No disponible | MDLM | No disponible en la información | Publicadas junto a esta |
 
@@ -98,7 +98,7 @@ La comparación más directa es interna al proyecto: el modelo AR equivalente de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-374m-26.5bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-374m-26.5bt-mdlm-cooled
 - Documentación de datos del proyecto: `DATA.md` en el repositorio del modelo (no se ha proporcionado URL directa)
 - Código de modelado: `modeling_vectabass.py` en el repositorio del modelo (no se ha proporcionado URL directa)
 - Conjuntos de datos citados: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu, https://huggingface.co/datasets/HuggingFaceFW/fineweb-2, https://huggingface.co/datasets/HuggingFaceTB/finemath

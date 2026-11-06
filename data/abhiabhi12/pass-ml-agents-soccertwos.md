@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Abhiabhi12/pass-ml-agents-soccertwos` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `ML-Agents-SoccerTwos`, un escenario de fútbol 2 contra 2 de Unity ML-Agents. No es un modelo de lenguaje ni un modelo generativo: es una política de control que recibe observaciones del entorno de simulación y emite acciones para controlar a un agente dentro de la escena. El autor es el usuario de HuggingFace Abhiabhi12 y el artefacto se publica bajo la librería `ml-agents`, con pipeline declarado `reinforcement-learning`.
+`Abhiabhi12/pass-ml-agents-soccertwos` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `ML-Agents-SoccerTwos`, un escenario de fútbol 2 contra 2 de Unity ML-Agents. No es un modelo de lenguaje ni un modelo generativo: es una política de control que recibe observaciones del entorno de simulación y emite acciones para controlar a un agente dentro de la escena. El autor es el usuario de Hugging Face Abhiabhi12 y el artefacto se publica bajo la librería `ml-agents`, con pipeline declarado `reinforcement-learning`.
 
 El modelo resulta relevante como ejemplo reproducible de entrenamiento multiagente con self-play en un entorno estandarizado. SoccerTwos es un banco de pruebas habitual para estudiar cooperación, competencia y equilibrio de políticas en sistemas multiagente, y disponer de una política entrenada publicada permite replicar evaluaciones, comparar hiperparámetros o servir de punto de partida para continuación de entrenamiento. El identificador incluye el término `pass`, lo que sugiere un énfasis en el comportamiento de pase, aunque la model card no lo confirma explícitamente.
 
@@ -77,9 +77,9 @@ Se trata del único resultado declarado por el autor en el `model-index`. La des
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Abhiabhi12/pass-ml-agents-soccertwos | no disponible | no aplica | mean_reward 20,00 +/- 0,00 (no verificado) | no disponible | HuggingFace, 0 descargas |
+| Abhiabhi12/pass-ml-agents-soccertwos | no disponible | no aplica | mean_reward 20,00 +/- 0,00 (no verificado) | no disponible | Hugging Face, 0 descargas |
 | Politica heuristica por defecto de Unity ML-Agents para SoccerTwos | no aplica (basada en reglas) | no aplica | no disponible | la del repositorio de Unity ML-Agents | incluida en el paquete de ejemplos |
-| Otros agentes PPO de SoccerTwos publicados por la comunidad en HuggingFace | no disponible | no aplica | no disponible | variable segun autor | HuggingFace |
+| Otros agentes PPO de SoccerTwos publicados por la comunidad en Hugging Face | no disponible | no aplica | no disponible | variable segun autor | Hugging Face |
 | Implementaciones de PPO en bibliotecas generales (Stable-Baselines3, CleanRL) | no aplica (son algoritmos, no politicas entrenadas) | no aplica | no disponible | permisiva en ambos casos | repositorios publicos |
 
 No se dispone de métricas publicadas y comparables para alternativas de la misma categoría dentro de la información proporcionada, por lo que la comparación cuantitativa queda abierta a replicación.
@@ -98,5 +98,5 @@ No se dispone de métricas publicadas y comparables para alternativas de la mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Abhiabhi12/pass-ml-agents-soccertwos
+- Modelo en Hugging Face: https://huggingface.co/Abhiabhi12/pass-ml-agents-soccertwos
 - La busqueda web realizada no ha devuelto ningun enlace relevante sobre este modelo: los resultados obtenidos eran páginas en chino sobre objetos perdidos (paraguas) sin relación con el artefacto. No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

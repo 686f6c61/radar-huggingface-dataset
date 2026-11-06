@@ -106,7 +106,7 @@ No se dispone de información en la documentación proporcionada sobre otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-NVFP4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3
 - LLM Compressor: https://github.com/vllm-project/llm-compressor
 - Lighteval (arnés de evaluación): https://github.com/huggingface/lighteval

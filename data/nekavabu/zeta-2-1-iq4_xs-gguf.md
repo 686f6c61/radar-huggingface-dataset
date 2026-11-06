@@ -70,7 +70,7 @@ No se dispone de informacion suficiente sobre el modelo base `zed-industries/zet
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nekavabu/zeta-2.1-IQ4_XS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nekavabu/zeta-2.1-IQ4_XS-GGUF
 - Modelo base: https://huggingface.co/zed-industries/zeta-2.1
 - Variante Q4_K_M del mismo autor: https://huggingface.co/nekavabu/zeta-2.1-Q4_K_M-GGUF
 - Variante imatrix de liodon-ai: https://huggingface.co/liodon-ai/zeta-2.1-imatrix-GGUF

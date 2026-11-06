@@ -73,11 +73,11 @@ No se disponen datos de rendimiento comparables entre estos modelos en la inform
 - Limitaciones de contexto: no disponibles; no se ha documentado la duracion maxima de video ni la resolucion soportada.
 - Licencia: se distribuye bajo el MiniMax H3 Community License Agreement. Es imprescindible revisar el archivo LICENSE y NOTICE antes de cualquier uso comercial, ya que las licencias comunitarias de modelos de video suelen incluir restricciones de uso, ingresos o tamano de despliegue.
 - Calidad frente a velocidad: al reducir el muestreo a 4-8 pasos, la fidelidad puede ser inferior a la del modelo base con muestreos completos; el propio autor indica que los ajustes recomendados pueden requerir calibracion.
-- Procedencia comunitaria: se trata de un merge no oficial, sin documentacion de entrenamiento ni garantias de reproducibilidad; 0 descargas registradas en HuggingFace en el momento de la ficha.
+- Procedencia comunitaria: se trata de un merge no oficial, sin documentacion de entrenamiento ni garantias de reproducibilidad; 0 descargas registradas en Hugging Face en el momento de la ficha.
 - Compatibilidad: requiere la libreria/pipeline minimax-h3 y ComfyUI; no hay soporte documentado para otros runtimes.
 
 ## Enlaces
 
-- HuggingFace (Heptagram Turbo v1.0): https://huggingface.co/eatyet/HeptagramV_1.0
+- Hugging Face (Heptagram Turbo v1.0): https://huggingface.co/eatyet/HeptagramV_1.0
 - Modelo base (MiniMax H3): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Civitai (pagina del modelo): https://civitai.com/models/2977879/heptagram

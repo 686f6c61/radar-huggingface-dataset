@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`rozy68982/zyro-ai` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el autor `rozy68982`. El modelo base es `Qwen/Qwen2.5-1.5B-Instruct`, un modelo de lenguaje instructivo de 1.500 millones de parámetros. El adaptador se ha creado con la librería PEFT (versión 0.20.0) y el repositorio ocupa 0.1 GB, lo que indica que solo contiene los pesos del adaptador y no los del modelo base completo.
+`rozy68982/zyro-ai` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el autor `rozy68982`. El modelo base es `Qwen/Qwen2.5-1.5B-Instruct`, un modelo de lenguaje instructivo de 1.500 millones de parámetros. El adaptador se ha creado con la librería PEFT (versión 0.20.0) y el repositorio ocupa 0.1 GB, lo que indica que solo contiene los pesos del adaptador y no los del modelo base completo.
 
-La ficha del modelo en HuggingFace está prácticamente vacía: no se proporciona información sobre el propósito del fine-tuning, los datos de entrenamiento, los hiperparámetros, las capacidades específicas ni la licencia. Tampoco se han publicado evaluaciones ni benchmarks. Por tanto, este adaptador debe considerarse un artefacto experimental sin documentación, cuya utilidad real no puede verificarse a partir de la información disponible.
+La ficha del modelo en Hugging Face está prácticamente vacía: no se proporciona información sobre el propósito del fine-tuning, los datos de entrenamiento, los hiperparámetros, las capacidades específicas ni la licencia. Tampoco se han publicado evaluaciones ni benchmarks. Por tanto, este adaptador debe considerarse un artefacto experimental sin documentación, cuya utilidad real no puede verificarse a partir de la información disponible.
 
 Al estar basado en `Qwen2.5-1.5B-Instruct`, el adaptador hereda en principio la arquitectura del modelo base, pero no se puede confirmar si el fine-tuning ha alterado o mejorado alguna capacidad concreta. La relevancia actual es limitada, ya que no existe evidencia de calidad ni de aplicación práctica documentada.
 
@@ -74,5 +74,5 @@ No se han identificado modelos comparables en la información disponible. El mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rozy68982/zyro-ai
+- Hugging Face: https://huggingface.co/rozy68982/zyro-ai
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

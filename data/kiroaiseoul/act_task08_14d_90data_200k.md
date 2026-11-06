@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT (Action Chunking with Transformers) es un método de aprendizaje por imitación para robótica que predice fragmentos cortos de acciones ("action chunks") en lugar de pasos individuales, tal como se describe en el artículo arXiv:2304.13705. Este checkpoint concreto, `kiroaiseoul/act_task08_14D_90data_200k`, ha sido entrenado por el usuario kiroaiseoul con LeRobot y publicado en HuggingFace Hub bajo licencia Apache 2.0. No es un modelo de lenguaje: es una política de control robótico que consume observaciones (estado de 14 dimensiones, según el nombre del repositorio) y produce comandos de acción.
+ACT (Action Chunking with Transformers) es un método de aprendizaje por imitación para robótica que predice fragmentos cortos de acciones ("action chunks") en lugar de pasos individuales, tal como se describe en el artículo arXiv:2304.13705. Este checkpoint concreto, `kiroaiseoul/act_task08_14D_90data_200k`, ha sido entrenado por el usuario kiroaiseoul con LeRobot y publicado en Hugging Face Hub bajo licencia Apache 2.0. No es un modelo de lenguaje: es una política de control robótico que consume observaciones (estado de 14 dimensiones, según el nombre del repositorio) y produce comandos de acción.
 
 El modelo tiene 51.687.056 parámetros (dato extraído del archivo de pesos en safetensors) y el repositorio ocupa 0,2 GB. El nombre indica que se entrenó sobre 90 demostraciones ("90data") durante 200.000 pasos ("200k"), con un espacio de observación de 14 dimensiones ("14D"), y que corresponde a la tarea 08 de un conjunto de tareas. El dataset asociado es `kiroaiseoul/task08_takeout_and_put_beaker_0930`, lo que sugiere una tarea de recogida y colocación de un vaso de precipitados (beaker).
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kiroaiseoul/act_task08_14D_90data_200k` (este) | 51.687.056 | no disponible | no publicado | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `kiroaiseoul/act_task08_task09_mixed_14D_490data_200k_20260918_223900` | no disponible | no disponible | no publicado | no disponible en la informacion | HuggingFace |
-| `kiroaiseoul/eval_act_task08_task09_mixed_14D_465data_200k` | no disponible (es un dataset de evaluacion) | no aplica | no publicado | apache-2.0 | HuggingFace |
+| `kiroaiseoul/act_task08_14D_90data_200k` (este) | 51.687.056 | no disponible | no publicado | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `kiroaiseoul/act_task08_task09_mixed_14D_490data_200k_20260918_223900` | no disponible | no disponible | no publicado | no disponible en la informacion | Hugging Face |
+| `kiroaiseoul/eval_act_task08_task09_mixed_14D_465data_200k` | no disponible (es un dataset de evaluacion) | no aplica | no publicado | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comparación se limita a la naturaleza del artefacto, el volumen de datos de entrenamiento declarado en el nombre y la licencia. El checkpoint de este análisis está especializado en una única tarea (task08) con 90 demostraciones, mientras que la variante "mixed" combina las tareas 08 y 09 con 490 demostraciones.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de ninguno de los tres, por lo que la comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiroaiseoul/act_task08_14D_90data_200k
+- Modelo en Hugging Face: https://huggingface.co/kiroaiseoul/act_task08_14D_90data_200k
 - Dataset de entrenamiento asociado: https://huggingface.co/datasets/kiroaiseoul/task08_takeout_and_put_beaker_0930
 - Articulo de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

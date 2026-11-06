@@ -17,7 +17,7 @@ La relevancia del modelo radica en su especialización declarada: el autor repor
 | Parametros activos | No aplica (no se declara arquitectura MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | GGUF: Q3_K_M (opcion minima fiable declarada por el autor), Q4_K_M (opcion recomendada), Q8_0 (usada en la evaluacion). El autor indica que no publica Q2_K por no superar sus pruebas de estres. Otras cuantizaciones: no disponibles |
-| Idiomas soportados | No disponibles (la ficha de HuggingFace no declara idiomas) |
+| Idiomas soportados | No disponibles (la ficha de Hugging Face no declara idiomas) |
 | Licencia | apache-2.0 (segun la model card y los metadatos del repositorio) |
 | Formato de pesos | GGUF (library_name: gguf); el autor menciona haber publicado el maestro en safetensors por separado |
 | Modelo base | google/gemma-4-12B-it |
@@ -82,8 +82,8 @@ El autor indica explicitamente que no ejecuto la suite completa de tau2-bench po
 
 | Modelo | Parametros | Contexto | tau2-bench telecom | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma4-12B-agentic-fable5-composer2.5-v2 (este modelo) | 11,9 B | No disponible | ~55 % (20 tareas, Q8_0) | apache-2.0 | GGUF en HuggingFace |
-| google/gemma-4-12B-it (base) | 12 B (segun denominacion) | No disponible | ~15 % (20 tareas, Q8_0) | No disponible en la informacion proporcionada | Modelo base en HuggingFace |
+| Gemma4-12B-agentic-fable5-composer2.5-v2 (este modelo) | 11,9 B | No disponible | ~55 % (20 tareas, Q8_0) | apache-2.0 | GGUF en Hugging Face |
+| google/gemma-4-12B-it (base) | 12 B (segun denominacion) | No disponible | ~15 % (20 tareas, Q8_0) | No disponible en la informacion proporcionada | Modelo base en Hugging Face |
 | Otras alternativas de tamano similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 El autor anuncia ademas un ajuste fino en curso de Qwen3.6-27B con la misma receta de codigo y comportamiento agentico, pensado para quienes dispongan de mas memoria, pero no se aportan datos de rendimiento de ese modelo ni fecha de publicacion.
@@ -104,7 +104,7 @@ El autor anuncia ademas un ajuste fino en curso de Qwen3.6-27B con la misma rece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/winterthurquants/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/winterthurquants/gemma-4-12B-agentic-fable5-composer2.5-v2-3.5x-tau2-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Perfil del autor: https://huggingface.co/winterthurquants
 - Paper o documentacion adicional de tau2-bench: no disponible en la informacion proporcionada

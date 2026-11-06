@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-org/baseline-4b-action-1k-27b-fixed-epoch2 es un modelo publicado en HuggingFace por el usuario Stage-org, con un total de 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) almacenados en formato safetensors. El repositorio ocupa 9,1 GB, lo que es coherente con pesos en precisión de 16 bits (bf16/fp16), ya que 4,54 mil millones de parámetros a 16 bits ocupan en torno a 9,08 GB. La ficha de HuggingFace no incluye pipeline declarado, licencia, idiomas soportados ni descripción del modelo, y la etiqueta principal es qwen3_5, lo que sugiere una arquitectura derivada de la familia Qwen3.5, aunque este extremo no está confirmado por el autor.
+Stage-org/baseline-4b-action-1k-27b-fixed-epoch2 es un modelo publicado en Hugging Face por el usuario Stage-org, con un total de 4.539.265.536 parámetros (aproximadamente 4,54 mil millones) almacenados en formato safetensors. El repositorio ocupa 9,1 GB, lo que es coherente con pesos en precisión de 16 bits (bf16/fp16), ya que 4,54 mil millones de parámetros a 16 bits ocupan en torno a 9,08 GB. La ficha de Hugging Face no incluye pipeline declarado, licencia, idiomas soportados ni descripción del modelo, y la etiqueta principal es qwen3_5, lo que sugiere una arquitectura derivada de la familia Qwen3.5, aunque este extremo no está confirmado por el autor.
 
 El nombre del repositorio aporta cierta información contextual: "baseline" indica que se trata de un punto de partida o modelo de referencia, "4b" concuerda con el recuento real de parámetros, "epoch2" apunta a un entrenamiento de dos épocas y "action-1k" podría referirse a un conjunto de datos o tarea concreta relacionada con acciones, si bien no hay documentación que lo confirme. Se trata, por tanto, de un checkpoint de investigación con muy poca adopción: 13 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -29,7 +29,7 @@ Tampoco hay evidencia de técnicas de alineación como RLHF, DPO o decodificaci�
 
 ## Capacidades
 
-- No hay información publicada sobre las capacidades del modelo: la ficha de HuggingFace no incluye descripción, ejemplos ni tarjeta de modelo.
+- No hay información publicada sobre las capacidades del modelo: la ficha de Hugging Face no incluye descripción, ejemplos ni tarjeta de modelo.
 - No se puede confirmar soporte de tool calling o function calling.
 - No se puede confirmar soporte de agentes ni de razonamiento multi-paso.
 - No se puede confirmar el nivel de competencia multilingüe ni la lista de idiomas cubiertos.
@@ -70,11 +70,11 @@ La tabla siguiente compara el modelo con alternativas públicas del mismo rango 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Stage-org/baseline-4b-action-1k-27b-fixed-epoch2 | 4,54 mil millones | no disponible | no disponible | safetensors en HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens (ampliable con YaRN) | Qwen Research License | safetensors y GGUF en HuggingFace |
-| Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF en HuggingFace |
-| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | safetensors y GGUF en HuggingFace |
-| Qwen3-4B | 4,0 mil millones | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | safetensors y GGUF en HuggingFace |
+| Stage-org/baseline-4b-action-1k-27b-fixed-epoch2 | 4,54 mil millones | no disponible | no disponible | safetensors en Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09 mil millones | 32.768 tokens (ampliable con YaRN) | Qwen Research License | safetensors y GGUF en Hugging Face |
+| Llama-3.2-3B-Instruct | 3,21 mil millones | 128.000 tokens | Llama 3.2 Community License | safetensors y GGUF en Hugging Face |
+| Phi-3.5-mini-instruct | 3,8 mil millones | 128.000 tokens | MIT | safetensors y GGUF en Hugging Face |
+| Qwen3-4B | 4,0 mil millones | 32.768 tokens (ampliable con YaRN) | Apache-2.0 | safetensors y GGUF en Hugging Face |
 
 No es posible comparar rendimiento, ya que no existen benchmarks publicados del modelo analizado.
 
@@ -91,7 +91,7 @@ No es posible comparar rendimiento, ya que no existen benchmarks publicados del 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-org/baseline-4b-action-1k-27b-fixed-epoch2
+- Hugging Face: https://huggingface.co/Stage-org/baseline-4b-action-1k-27b-fixed-epoch2
 - Paper: no disponible
 - Blog o anuncio: no disponible
 - Repositorio de código: no disponible

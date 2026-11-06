@@ -87,5 +87,5 @@ La principal diferencia frente a Qwen2.5-32B es la arquitectura híbrida con SSM
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/enginetown/Qwen3.8-27B-Calibrated
+- Repositorio Hugging Face: https://huggingface.co/enginetown/Qwen3.8-27B-Calibrated
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B

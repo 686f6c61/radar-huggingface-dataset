@@ -102,7 +102,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged-GGUF
 - Modelo base (checkpoint merged original): https://huggingface.co/zachchxn/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#Qwen2.5-3B-Instruct-Sheldon-SFT-v2-merged-GGUF
 - Peticiones de modelos y FAQ de mradermacher: https://huggingface.co/mradermacher/model_requests

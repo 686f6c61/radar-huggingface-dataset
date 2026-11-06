@@ -17,7 +17,7 @@ La información técnica detallada es escasa: la model card no especifica arquit
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible (el modelo base soporta secuencias de vídeo de hasta 257 frames a 24 FPS) |
 | Tipos de cuantizacion | no disponible (se distribuye en bf16 según el modelo base) |
-| Idiomas soportados | en, de, es, fr, ja, ko, zh, it, pt (según metadatos de HuggingFace) |
+| Idiomas soportados | en, de, es, fr, ja, ko, zh, it, pt (según metadatos de Hugging Face) |
 | Licencia | ltx-2-community-license-agreement (licencia personalizada de Lightricks) |
 | Formato de pesos | safetensors (archivo principal: LTX2.5_DISTILLED_BAKED_LTX_10Eros_v15-2.3_r.safetensors) |
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lightricks LTX-2.3 (base) | 22B | 257 frames @24FPS | DiT audio-video | ltx-2-community-license-agreement | HuggingFace, código abierto |
-| ibyteohdear/Lightricks-LTX-2-DISTILLED-10-Eros | no disponible (probablemente 22B) | no disponible | Fine-tune NSFW del anterior | misma licencia | HuggingFace |
-| Wan 2.2 (T2V) | 14B | no disponible | DiT vídeo | Apache 2.0 | HuggingFace |
-| HunyuanVideo | 13B | 720p | DiT vídeo | licencia propia | HuggingFace |
+| Lightricks LTX-2.3 (base) | 22B | 257 frames @24FPS | DiT audio-video | ltx-2-community-license-agreement | Hugging Face, código abierto |
+| ibyteohdear/Lightricks-LTX-2-DISTILLED-10-Eros | no disponible (probablemente 22B) | no disponible | Fine-tune NSFW del anterior | misma licencia | Hugging Face |
+| Wan 2.2 (T2V) | 14B | no disponible | DiT vídeo | Apache 2.0 | Hugging Face |
+| HunyuanVideo | 13B | 720p | DiT vídeo | licencia propia | Hugging Face |
 
 La comparativa se limita a modelos de generación de vídeo de código abierto de escala similar. No hay datos de rendimiento para comparar de forma objetiva. El modelo de ibyteohdear es un derivado directo de LTX-2.3, por lo que sus capacidades base son las mismas, pero el fine-tune modifica el comportamiento hacia contenido explícito, lo que no es comparable directamente con modelos generalistas.
 
@@ -81,7 +81,7 @@ La comparativa se limita a modelos de generación de vídeo de código abierto d
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ibyteohdear/Lightricks-LTX-2-DISTILLED-10-Eros
+- Repositorio de Hugging Face: https://huggingface.co/ibyteohdear/Lightricks-LTX-2-DISTILLED-10-Eros
 - Modelo base LTX-2 de Lightricks: https://huggingface.co/Lightricks/LTX-2
 - Código oficial LTX-2: https://github.com/Lightricks/LTX-2
 - Licencia: https://github.com/Lightricks/LTX-2/blob/main/LICENSE

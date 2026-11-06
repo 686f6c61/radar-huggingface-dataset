@@ -71,9 +71,9 @@ El autor señala que el pass@5 es un techo oracular: conviene muestrear varias r
 
 | Modelo | Parametros | Contexto | Pass@5 (FVEval-Verified) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-sva-thinking-abl839-lora (este) | 8B base + LoRA 698 MB | no disponible | 81,2% global (63,0% human / 85,9% machine) | apache-2.0 | HuggingFace |
-| qwen3-8b-sva-rest-r2-merged | 8B (fusionado) | no disponible | 84,8% | apache-2.0 (heredada) | HuggingFace |
-| Qwen/Qwen3-8B (base, sin ajuste SVA) | 8B | no disponible en esta ficha | no disponible | apache-2.0 | HuggingFace |
+| qwen3-8b-sva-thinking-abl839-lora (este) | 8B base + LoRA 698 MB | no disponible | 81,2% global (63,0% human / 85,9% machine) | apache-2.0 | Hugging Face |
+| qwen3-8b-sva-rest-r2-merged | 8B (fusionado) | no disponible | 84,8% | apache-2.0 (heredada) | Hugging Face |
+| Qwen/Qwen3-8B (base, sin ajuste SVA) | 8B | no disponible en esta ficha | no disponible | apache-2.0 | Hugging Face |
 
 El autor recomienda el adaptador fusionado `qwen3-8b-sva-rest-r2-merged` (84,8%) para máxima precisión, y este adaptador LoRA cuando se prefiera una descarga ligera, intercambio de adaptadores sobre una base compartida o un punto de partida para ajuste propio. No se dispone de datos de benchmarks del base Qwen3-8B en esta tarea en la información proporcionada.
 
@@ -90,7 +90,7 @@ El autor recomienda el adaptador fusionado `qwen3-8b-sva-rest-r2-merged` (84,8%)
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmoselhy077/qwen3-8b-sva-thinking-abl839-lora
+- Modelo en Hugging Face: https://huggingface.co/mmoselhy077/qwen3-8b-sva-thinking-abl839-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/mmoselhy077/sva-abl839-corpus
 - Adaptador fusionado recomendado por el autor: https://huggingface.co/mmoselhy077/qwen3-8b-sva-rest-r2-merged
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

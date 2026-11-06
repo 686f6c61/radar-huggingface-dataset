@@ -105,7 +105,7 @@ El modelo supera claramente a sus alternativas de tamaño similar en el gauntlet
 
 ## Enlaces
 
-- [HuggingFace: asdfasfasdf/Scram-0.8B-6bit](https://huggingface.co/asdfasfasdf/Scram-0.8B-6bit)
+- [Hugging Face: asdfasfasdf/Scram-0.8B-6bit](https://huggingface.co/asdfasfasdf/Scram-0.8B-6bit)
 - [Ho et al., ACL 2023 - Distillation de CoT](https://arxiv.org/abs/2212.10071)
 - [Ross et al., 2025 - When2Call](https://arxiv.org/abs/2504.18851)
 - [Qwen/Qwen3.5-0.8B-Base (modelo base)](https://huggingface.co/Qwen/Qwen3.5-0.8B-Base)

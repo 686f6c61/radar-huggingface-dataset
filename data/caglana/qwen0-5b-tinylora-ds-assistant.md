@@ -85,7 +85,7 @@ La comparativa se limita a aspectos generales por falta de datos públicos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Caglana/qwen0.5b-tinylora-ds-assistant
+- Hugging Face: https://huggingface.co/Caglana/qwen0.5b-tinylora-ds-assistant
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Paper TinyLoRA: https://arxiv.org/abs/2602.04118
 - Repositorio del proyecto: https://github.com/caglanakpinar/llm_with_tiny_lora

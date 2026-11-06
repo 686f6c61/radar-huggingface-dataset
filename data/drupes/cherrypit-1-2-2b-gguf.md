@@ -102,7 +102,7 @@ No se dispone de datos de otros modelos comparables de la misma categoria en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/DRUPEs/CherryPit-1.2-2B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/DRUPEs/CherryPit-1.2-2B-GGUF
 - Pesos completos bf16 safetensors: https://huggingface.co/DRUPEs/CherryPit-1.2-2B
 - Version anterior: https://huggingface.co/DRUPEs/CherryPit-1.1-2B-GGUF
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B

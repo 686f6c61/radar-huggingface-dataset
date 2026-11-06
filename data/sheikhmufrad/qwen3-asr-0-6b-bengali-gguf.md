@@ -92,7 +92,7 @@ La comparación con Whisper large-v3-turbo es únicamente cualitativa según la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sheikhmufrad/Qwen3-ASR-0.6B-Bengali-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sheikhmufrad/Qwen3-ASR-0.6B-Bengali-GGUF
 - Modelo base del fine-tune: https://huggingface.co/SayedShaun/Qwen3-ASR-0.6B-Bengali
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Motor transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

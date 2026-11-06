@@ -6,7 +6,7 @@ malinali-app/opus-mt-en-tw es un paquete de pesos del modelo de traduccion autom
 
 El repositorio no introduce un modelo nuevo: Malinali se limita a redistribuir los pesos en formato safetensors y a convertir los tokenizadores SentencePiece originales a formato JSON de tokenizador rapido compatible con la libreria Candle (concretamente el componente marian_flutter), orientado a despliegue offline en aplicaciones moviles. Cuenta con 73.903.784 parametros totales y un tamano de repositorio de aproximadamente 0,3 GB.
 
-Su relevancia es practica: ofrece una via lista para usar de traduccion en a twi en entornos sin conectividad, algo poco frecuente, ya que el twi es una lengua con recursos limitados (low-resource) y la mayoria de los sistemas multilingues de gran tamano lo cubren de forma marginal. La licencia no esta declarada en los metadatos de HuggingFace; la model card remite a la licencia del modelo original.
+Su relevancia es practica: ofrece una via lista para usar de traduccion en a twi en entornos sin conectividad, algo poco frecuente, ya que el twi es una lengua con recursos limitados (low-resource) y la mayoria de los sistemas multilingues de gran tamano lo cubren de forma marginal. La licencia no esta declarada en los metadatos de Hugging Face; la model card remite a la licencia del modelo original.
 
 ## Especificaciones tecnicas
 
@@ -78,13 +78,13 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 - Riesgo de alucinacion y de traducciones imprecisas: como cualquier sistema de traduccion neuronal, puede generar contenido incorrecto o inventar terminos, especialmente con vocabulario especializado o poco frecuente.
 - Sesgos potenciales: no documentados en la informacion disponible, pero pueden heredarse de los corpus de entrenamiento originales de OPUS.
 - Limitaciones de contexto: la longitud maxima de contexto no esta declarada; los modelos Marian suelen estar limitados a secuencias relativamente cortas, por lo que textos largos deberian dividirse.
-- Licencia: no declarada explicitamente en los metadatos de HuggingFace. Antes de un uso comercial es necesario verificar la licencia del modelo original Helsinki-NLP/opus-mt-en-tw, ya que la model card solo remite a ella.
+- Licencia: no declarada explicitamente en los metadatos de Hugging Face. Antes de un uso comercial es necesario verificar la licencia del modelo original Helsinki-NLP/opus-mt-en-tw, ya que la model card solo remite a ella.
 - Sin garantias del autor del reempaquetado: Malinali declara que no reclama la propiedad del modelo entrenado y solo redistribuye pesos y tokenizadores, por lo que el soporte y la responsabilidad sobre la calidad recaen en el modelo original.
 - Ausencia de benchmarks publicados: no hay metricas (BLEU, chrF, etc.) disponibles para evaluar su calidad objetivamente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/malinali-app/opus-mt-en-tw
+- Modelo en Hugging Face: https://huggingface.co/malinali-app/opus-mt-en-tw
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-en-tw
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/Opus-MT
 - Proyecto Malinali: https://malinali.app

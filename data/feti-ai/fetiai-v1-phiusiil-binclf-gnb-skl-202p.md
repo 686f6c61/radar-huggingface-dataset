@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento de otros clasificadores de phishing sobre 
 
 ## Enlaces
 
-- [HuggingFace - feti-ai/fetiai-v1-phiusiil-binclf-gnb-skl-202p](https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-gnb-skl-202p)
+- [Hugging Face - feti-ai/fetiai-v1-phiusiil-binclf-gnb-skl-202p](https://huggingface.co/feti-ai/fetiai-v1-phiusiil-binclf-gnb-skl-202p)
 - [Repositorio de la aplicación completa](https://github.com/fetiai/phishing-url-classifier)
 - [Demo en vivo](https://phiusiil.faizath.com)
 - [Dataset PhiUSIIL en UCI](https://archive.ics.uci.edu/dataset/967/phiusiil+phishing+url+dataset)

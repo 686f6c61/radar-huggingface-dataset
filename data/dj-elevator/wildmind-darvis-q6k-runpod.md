@@ -70,5 +70,5 @@ No se dispone de informacion suficiente para establecer una comparativa directa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dj-elevator/wildmind-darvis-q6k-runpod
+- Repositorio Hugging Face: https://huggingface.co/dj-elevator/wildmind-darvis-q6k-runpod
 - Repositorio fuente (modelo base): https://huggingface.co/DavidAU/Qwen3.6-40B-Claude-4.6-Opus-Deckard-Heretic-Uncensored-Thinking-NEO-CODE-Di-IMatrix-MAX-GGUF

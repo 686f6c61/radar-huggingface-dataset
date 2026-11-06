@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/gemma-4-12b-it-prune_unstructured_50
+- Modelo en Hugging Face: https://huggingface.co/mrysh/gemma-4-12b-it-prune_unstructured_50
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it

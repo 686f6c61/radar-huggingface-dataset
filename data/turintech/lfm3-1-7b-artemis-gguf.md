@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks completos (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-Artemis-GGUF (este) | 1,73 B | 8192 (evaluado) | GGUF Q4_K_M | LFM Open License v1.0 | HuggingFace, 0 descargas |
-| LFM3-1.7B (original, BF16 GGUF) | 1,73 B | no disponible | GGUF BF16 | LFM Open License v1.0 | HuggingFace (LiquidAI) |
+| LFM3-1.7B-Artemis-GGUF (este) | 1,73 B | 8192 (evaluado) | GGUF Q4_K_M | LFM Open License v1.0 | Hugging Face, 0 descargas |
+| LFM3-1.7B (original, BF16 GGUF) | 1,73 B | no disponible | GGUF BF16 | LFM Open License v1.0 | Hugging Face (LiquidAI) |
 | Cuantizacion Q4 estandar de LFM3-1.7B | 1,73 B | 8192 (evaluado) | GGUF Q4 | LFM Open License v1.0 | Referenciada en la model card, no se indica repositorio publico |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada. La comparativa se limita a las tres variantes evaluadas por el autor.
@@ -100,7 +100,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/turintech/LFM3-1.7B-Artemis-GGUF
+- Repositorio Hugging Face: https://huggingface.co/turintech/LFM3-1.7B-Artemis-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/0dc4268b561499c648c7ba7c9466bf3d8d01517a/LICENSE
 - llama.cpp (runtime y tooling de conversion/cuantizacion): https://github.com/ggml-org/llama.cpp

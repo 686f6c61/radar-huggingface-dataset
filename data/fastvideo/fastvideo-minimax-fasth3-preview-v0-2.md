@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Pasos de denoising | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FastVideo-Minimax-FastH3-Preview-v0.2 | ~33B (transformer) | 4 | Vídeo + audio | MiniMax H3 Community | HuggingFace (pesos abiertos) |
-| MiniMax-H3 (base) | ~33B | 50 | Vídeo + audio | MiniMax H3 Community | HuggingFace |
+| FastVideo-Minimax-FastH3-Preview-v0.2 | ~33B (transformer) | 4 | Vídeo + audio | MiniMax H3 Community | Hugging Face (pesos abiertos) |
+| MiniMax-H3 (base) | ~33B | 50 | Vídeo + audio | MiniMax H3 Community | Hugging Face |
 | Otros modelos few-step de vídeo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de la misma categoría en la información proporcionada.
@@ -77,8 +77,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace (v0.2): https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2
-- HuggingFace (v0.1): https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1
+- Hugging Face (v0.2): https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.2
+- Hugging Face (v0.1): https://huggingface.co/FastVideo/FastVideo-Minimax-FastH3-Preview-v0.1
 - Repositorio FastVideo: https://github.com/hao-ai-lab/FastVideo
 - Herramientas minimax_h3 en FastVideo: https://github.com/hao-ai-lab/FastVideo/tree/main/tools/minimax_h3
 - Sitio web de FastVideo: https://haoailab.com/FastVideo/

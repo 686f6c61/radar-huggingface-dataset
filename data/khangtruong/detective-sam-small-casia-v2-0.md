@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detective-SAM-small-Casia-v2.0 es un modelo de segmentación de imágenes orientado a la detección de imágenes sintéticas generadas por difusión. Lo publica el usuario KhangTruong en HuggingFace bajo licencia Apache 2.0 y se distribuye como checkpoints de PyTorch para la librería `sid-unet`, con pipeline declarado `image-segmentation`. El repositorio ocupa 0,6 GB e incluye configuración, manifiesto de versiones, checkpoints y reportes de evaluación.
+Detective-SAM-small-Casia-v2.0 es un modelo de segmentación de imágenes orientado a la detección de imágenes sintéticas generadas por difusión. Lo publica el usuario KhangTruong en Hugging Face bajo licencia Apache 2.0 y se distribuye como checkpoints de PyTorch para la librería `sid-unet`, con pipeline declarado `image-segmentation`. El repositorio ocupa 0,6 GB e incluye configuración, manifiesto de versiones, checkpoints y reportes de evaluación.
 
 El modelo se presenta como la versión v2.0 de una familia "Detective-SAM" con variante "small" y sufijo "Casia", lo que sugiere un entrenamiento o evaluación sobre el conjunto CASIA (habitual en detección de imágenes manipuladas o sintéticas). La información pública disponible es muy limitada: no se especifican parámetros, longitud de contexto (no aplica, al ser un modelo de visión), composición del dataset ni resultados de benchmarks más allá de una única métrica de validación.
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Detective-SAM-small-Casia-v2.0 | Segmentación de imágenes sintéticas | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| Detective-SAM-small-Casia-v2.0 | Segmentación de imágenes sintéticas | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas de la categoría | Detección de imágenes sintéticas | no disponible | no aplica | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -88,5 +88,5 @@ No se dispone de datos de rendimiento comparables en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhangTruong/Detective-SAM-small-Casia-v2.0
+- Hugging Face: https://huggingface.co/KhangTruong/Detective-SAM-small-Casia-v2.0
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

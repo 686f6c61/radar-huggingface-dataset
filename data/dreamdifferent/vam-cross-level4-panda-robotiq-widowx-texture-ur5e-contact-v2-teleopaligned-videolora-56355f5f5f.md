@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VAM-Cross MimicVideo World2Action decoder es un checkpoint de decoder de acciones publicado por el usuario dreamdifferent en HuggingFace. No es un modelo de lenguaje: es la pieza que traduce una representacion de mundo basada en video (Video2World) a acciones de robot, dentro del framework MimicVideo. El repositorio contiene el decoder de la iteracion 900 de la ejecucion `w2a_panda_robotiq_level4_widowx_texture_2cam_hstack_ur5e_contact_v2_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1`, que finalizo con estado `completed`.
+VAM-Cross MimicVideo World2Action decoder es un checkpoint de decoder de acciones publicado por el usuario dreamdifferent en Hugging Face. No es un modelo de lenguaje: es la pieza que traduce una representacion de mundo basada en video (Video2World) a acciones de robot, dentro del framework MimicVideo. El repositorio contiene el decoder de la iteracion 900 de la ejecucion `w2a_panda_robotiq_level4_widowx_texture_2cam_hstack_ur5e_contact_v2_action_iter2374_videolora_iter400_widowx_teleop_recording_frame_v1`, que finalizo con estado `completed`.
 
 El modelo forma parte de una familia de experimentos "VAM-Cross" orientados a prediccion de acciones a partir de observaciones de camara, con nomenclatura que mezcla plataformas (Panda con pinza Robotiq, WidowX, UR5e) y una senal explicita de tareas con contacto. La salida son 15 acciones de efector final y pinza a 5 Hz, expresadas como pose relativa respecto de la pose alcanzada actual, con rotacion en representacion `rotation_6d`.
 
@@ -104,7 +104,7 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f
+- Modelo en Hugging Face: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f
 - Backbone Video2World inicial: https://huggingface.co/dreamdifferent/widowx250-video-fused
 - Decoder de acciones inicial: https://huggingface.co/dreamdifferent/vam-cross-target-widowx250-native-2cam-action-decoder
 - LoRA de video congelada: https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-video-lora-iter400

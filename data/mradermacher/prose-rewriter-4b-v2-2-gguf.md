@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`prose-rewriter-4b-v2.2-GGUF` es la versión cuantizada en formato GGUF del modelo `chartreuse-verte/prose-rewriter-4b-v2.2`, un modelo especializado en reescritura de prosa, transferencia de estilo y limpieza de texto generado por IA (la etiqueta `deslop` hace referencia precisamente a eliminar las marcas típicas de la prosa sintética). La cuantización la firma mradermacher, un autor conocido en HuggingFace por publicar versiones GGUF de modelos abiertos para su uso en llama.cpp y entornos de inferencia local. El modelo base lo desarrolla el usuario `chartreuse-verte`.
+`prose-rewriter-4b-v2.2-GGUF` es la versión cuantizada en formato GGUF del modelo `chartreuse-verte/prose-rewriter-4b-v2.2`, un modelo especializado en reescritura de prosa, transferencia de estilo y limpieza de texto generado por IA (la etiqueta `deslop` hace referencia precisamente a eliminar las marcas típicas de la prosa sintética). La cuantización la firma mradermacher, un autor conocido en Hugging Face por publicar versiones GGUF de modelos abiertos para su uso en llama.cpp y entornos de inferencia local. El modelo base lo desarrolla el usuario `chartreuse-verte`.
 
 Se trata de un modelo denso de aproximadamente 4.400 millones de parámetros (4.411.424.256 según los pesos en safetensors), lo que lo sitúa en la gama de 4B, manejable en GPUs de consumo. Las etiquetas del repositorio apuntan a que la arquitectura deriva de la familia Qwen3, aunque la model card del cuantizador no aporta detalles sobre el entrenamiento, el dataset ni el proceso de ajuste. El modelo está orientado exclusivamente al inglés (`language: en`).
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| prose-rewriter-4b-v2.2 (este) | ~4,4 B | 32.768 tokens (segun LLM Explorer) | AGPL-3.0 | GGUF, safetensors | HuggingFace |
-| Qwen3-4B | ~4,0 B | no disponible en la informacion proporcionada | Apache-2.0 | safetensors, GGUF | HuggingFace |
-| Llama 3.2 3B Instruct | ~3,2 B | no disponible en la informacion proporcionada | Llama 3.2 Community License | safetensors, GGUF | HuggingFace |
+| prose-rewriter-4b-v2.2 (este) | ~4,4 B | 32.768 tokens (segun LLM Explorer) | AGPL-3.0 | GGUF, safetensors | Hugging Face |
+| Qwen3-4B | ~4,0 B | no disponible en la informacion proporcionada | Apache-2.0 | safetensors, GGUF | Hugging Face |
+| Llama 3.2 3B Instruct | ~3,2 B | no disponible en la informacion proporcionada | Llama 3.2 Community License | safetensors, GGUF | Hugging Face |
 
 Nota: los datos de Qwen3-4B y Llama 3.2 3B no provienen de la informacion suministrada en esta busqueda y se incluyen solo como referencia de categoria; conviene verificarlos en sus repositorios oficiales. No se han encontrado modelos comparables especificamente orientados a reescritura de prosa y eliminacion de marcas de IA dentro de la informacion disponible, por lo que la comparativa directa por tarea no esta disponible.
 

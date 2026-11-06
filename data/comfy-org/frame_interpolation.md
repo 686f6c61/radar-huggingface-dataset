@@ -74,6 +74,6 @@ La comparativa se basa en conocimiento general de los modelos originales, no en 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/Comfy-Org/frame_interpolation
+- Repositorio de Hugging Face: https://huggingface.co/Comfy-Org/frame_interpolation
 - Repositorio original de RIFE: https://github.com/hzwer/Practical-RIFE
 - Repositorio original de FILM: https://github.com/google-research/frame-interpolation

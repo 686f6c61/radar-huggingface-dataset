@@ -33,7 +33,7 @@ La conversión a MLX conserva la rama de características de máscara para la in
 - Integración con mlx-vlm: carga el checkpoint y realiza inferencia local en Apple Silicon mediante la función `detect`.
 - Inicialización de queries mejorada por máscara: la rama de características de máscara se conserva, permitiendo una mejor localización de regiones.
 - Preprocesamiento específico: redimensiona imágenes RGB a 1024×1024 y escala píxeles a [0,1], compatible con el flujo de IndicDocLayout.
-- Portal del modelo en HuggingFace: incluye soporte para imágenes de entrada en formato de archivo o PIL.
+- Portal del modelo en Hugging Face: incluye soporte para imágenes de entrada en formato de archivo o PIL.
 - No es un modelo de lenguaje: no genera texto, no soporta tool calling ni agentes, y no dispone de capacidades de razonamiento, código, matemáticas, visión generativa o audio.
 
 ## Casos de uso
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Clases | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | HashNuke/pp-doclayout-v3-mlx | 33.282.557 | 25 clases, orden de lectura | Apache-2.0 | MLX / Apple Silicon |
-| PaddlePaddle/PP-DocLayoutV3_safetensors | 33.282.557 (base) | 25 clases, orden de lectura | Apache-2.0 | HuggingFace / Transformers |
-| HashNuke/indic-ocr-mlx (etapa layout) | no disponible | 37 clases (fine-tune IndicDocLayout) | Apache-2.0 | HuggingFace |
+| PaddlePaddle/PP-DocLayoutV3_safetensors | 33.282.557 (base) | 25 clases, orden de lectura | Apache-2.0 | Hugging Face / Transformers |
+| HashNuke/indic-ocr-mlx (etapa layout) | no disponible | 37 clases (fine-tune IndicDocLayout) | Apache-2.0 | Hugging Face |
 
 La versión MLX es una conversión directa del checkpoint de PaddlePaddle, por lo que ambos comparten arquitectura y número de parámetros. La diferencia principal es el entorno de ejecución: MLX frente a PyTorch/Transformers. El fine-tune de IndicDocLayout amplía las clases a 37, pero su documentación no detalla el número de parámetros.
 

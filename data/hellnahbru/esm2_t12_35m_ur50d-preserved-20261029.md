@@ -65,12 +65,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Capas | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| esm2_t12_35M_UR50D (este) | ~34 M | 12 | No disponible en esta ficha | MIT | HuggingFace |
-| esm2_t6_8M_UR50D | ~8 M | 6 | No disponible | MIT | HuggingFace (facebook) |
-| esm2_t30_150M_UR50D | ~150 M | 30 | No disponible | MIT | HuggingFace (facebook) |
-| esm2_t33_650M_UR50D | ~650 M | 33 | No disponible | MIT | HuggingFace (facebook) |
-| esm2_t36_3B_UR50D | ~3 B | 36 | No disponible | MIT | HuggingFace (facebook) |
-| esm2_t48_15B_UR50D | ~15 B | 48 | No disponible | MIT | HuggingFace (facebook) |
+| esm2_t12_35M_UR50D (este) | ~34 M | 12 | No disponible en esta ficha | MIT | Hugging Face |
+| esm2_t6_8M_UR50D | ~8 M | 6 | No disponible | MIT | Hugging Face (facebook) |
+| esm2_t30_150M_UR50D | ~150 M | 30 | No disponible | MIT | Hugging Face (facebook) |
+| esm2_t33_650M_UR50D | ~650 M | 33 | No disponible | MIT | Hugging Face (facebook) |
+| esm2_t36_3B_UR50D | ~3 B | 36 | No disponible | MIT | Hugging Face (facebook) |
+| esm2_t48_15B_UR50D | ~15 B | 48 | No disponible | MIT | Hugging Face (facebook) |
 
 La comparativa de rendimiento entre checkpoints (precisión en tareas downstream) se documenta en el paper original, no en este repositorio. En general, los checkpoints más grandes obtienen mejores métricas a costa de mucho más cómputo y memoria.
 
@@ -86,7 +86,7 @@ La comparativa de rendimiento entre checkpoints (precisión en tareas downstream
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hellnahbru/esm2_t12_35M_UR50D-preserved-20261029
+- Repositorio Hugging Face: https://huggingface.co/hellnahbru/esm2_t12_35M_UR50D-preserved-20261029
 - Checkpoint oficial: https://huggingface.co/facebook/esm2_t12_35M_UR50D
 - Paper ESM-2 (Lin et al., 2022): https://www.biorxiv.org/content/10.1101/2022.07.20.500902v2
 - Notebook PyTorch de fine-tuning: https://colab.research.google.com/github/huggingface/notebooks/blob/main/examples/protein_language_modeling.ipynb

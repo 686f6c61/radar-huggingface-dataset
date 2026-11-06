@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RK3588-LLM-Qwen2.5-0.5B es una distribución de despliegue, no un modelo entrenado desde cero. El autor RKNNAI publica en HuggingFace una conversión y cuantización del modelo base Qwen/Qwen2.5-0.5B al formato RKLLM, pensada para ejecutarse sobre la NPU del SoC Rockchip RK3588. El repositorio incluye únicamente los artefactos de inferencia y la documentación de despliegue, con un tamano total de 0,8 GB.
+RK3588-LLM-Qwen2.5-0.5B es una distribución de despliegue, no un modelo entrenado desde cero. El autor RKNNAI publica en Hugging Face una conversión y cuantización del modelo base Qwen/Qwen2.5-0.5B al formato RKLLM, pensada para ejecutarse sobre la NPU del SoC Rockchip RK3588. El repositorio incluye únicamente los artefactos de inferencia y la documentación de despliegue, con un tamano total de 0,8 GB.
 
 El modelo subyacente es un transformer decoder-only de la familia Qwen2.5, con aproximadamente 0,49 mil millones de parámetros. La conversión aplica cuantización de pesos y activaciones w8a8, emplea 3 núcleos de NPU y fija la ventana de contexto efectiva en 1024 tokens, muy por debajo de los 32 768 tokens que soporta el modelo original. Requiere la versión v1.2.4 del runtime RKLLM y está licenciado bajo Apache 2.0.
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Formato / chip | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RK3588-LLM-Qwen2.5-0.5B (RKNNAI) | ~0,49 B | 1024 | RKLLM / RK3588 | Apache 2.0 | HuggingFace y ModelScope |
-| Qwen2.5-14B-Instruct-rk3588-1.1.1 (c01zaut) | 14 B | no disponible | RKLLM w8a8 / RK3588 | no disponible | HuggingFace |
-| Qwen2.5-Omni-7B-rk3588-1.2.0 (imkebe) | 7 B | no disponible | RKLLM / RK3588 | no disponible | HuggingFace |
+| RK3588-LLM-Qwen2.5-0.5B (RKNNAI) | ~0,49 B | 1024 | RKLLM / RK3588 | Apache 2.0 | Hugging Face y ModelScope |
+| Qwen2.5-14B-Instruct-rk3588-1.1.1 (c01zaut) | 14 B | no disponible | RKLLM w8a8 / RK3588 | no disponible | Hugging Face |
+| Qwen2.5-Omni-7B-rk3588-1.2.0 (imkebe) | 7 B | no disponible | RKLLM / RK3588 | no disponible | Hugging Face |
 
 Los dos modelos comparables son conversiones a RKLLM de mayor tamano y capacidades multimodales, por lo que no son alternativas directas en coste de memoria: el modelo de 0,5 B es el unico de la comparativa que se ejecuta comodamente en placas con 4 GB de RAM y NPU de 6 TOPS. No se dispone de datos de rendimiento comparativo entre ellos en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ Los dos modelos comparables son conversiones a RKLLM de mayor tamano y capacidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKNNAI/RK3588-LLM-Qwen2.5-0.5B
+- Hugging Face: https://huggingface.co/RKNNAI/RK3588-LLM-Qwen2.5-0.5B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Repositorio oficial de RKLLM de Rockchip: https://github.com/airockchip/rknn-llm
 - Proyecto RKLLM_LLAMA_QWEN (ejecucion en NPU y CPU): https://github.com/alebal123bal/RKLLM_LLAMA_QWEN

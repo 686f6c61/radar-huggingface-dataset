@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InsertAnything-checkpoints es un repositorio de pesos alojado en HuggingFace por el usuario tOMRmA bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el unico texto presente es la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+InsertAnything-checkpoints es un repositorio de pesos alojado en Hugging Face por el usuario tOMRmA bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no incluye model card con contenido tecnico: el unico texto presente es la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 No se dispone de informacion sobre el problema que resuelve, su arquitectura, su tamano, su longitud de contexto ni sus capacidades. El nombre del repositorio sugiere que podria tratarse de un conjunto de checkpoints orientado a tareas de insercion o composicion de elementos (posiblemente imagen), pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor. Cualquier afirmacion funcional sobre el modelo debe considerarse no verificada.
 
@@ -71,10 +71,10 @@ No disponible. Sin conocer la categoria, el tamano ni la tarea del modelo, no es
 - Licencia: Apache 2.0 permite uso comercial y modificacion, pero al tratarse de un repositorio sin model card no puede descartarse que los pesos sean un reempaquetado de material de terceros con condiciones adicionales. Conviene verificar la procedencia antes de un uso comercial.
 - Repositorio sin adopcion: 0 descargas y 0 likes implican ausencia de validacion por parte de la comunidad y de informes de fallos.
 - Fecha de creacion registrada: 2026-09-19, posterior a la fecha habitual de publicacion de modelos; puede tratarse de un repositorio de prueba, un placeholder o un error en los metadatos. Conviene tratarlo con cautela.
-- Sin pipeline declarado en HuggingFace, por lo que la plataforma no reconoce una tarea asociada al modelo.
+- Sin pipeline declarado en Hugging Face, por lo que la plataforma no reconoce una tarea asociada al modelo.
 - Recomendacion operativa: no desplegar en produccion sin inspeccionar los ficheros del repositorio, obtener documentacion del autor y ejecutar una evaluacion propia.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tOMRmA/InsertAnything-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/tOMRmA/InsertAnything-checkpoints
 - Resultado de la busqueda web: https://cinemana.shabakaty.com/page/home. Este enlace corresponde a una plataforma de streaming ajena al modelo y no guarda relacion con el repositorio; no se ha encontrado ningun otro resultado relevante (papers, blogs, repos de codigo o demos) asociado a InsertAnything-checkpoints.

@@ -86,7 +86,7 @@ No se dispone de valores de rendimiento numericos para establecer una comparacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ranzucker/gliner2-5-multi-coreml
+- Repositorio en Hugging Face: https://huggingface.co/ranzucker/gliner2-5-multi-coreml
 - Repositorio de origen (FluidInference): https://huggingface.co/FluidInference/gliner2-5-multi-coreml
 - Modelo base (fastino): https://huggingface.co/fastino/gliner2.5-multi-v1
 - Paper de GLiNER2: https://arxiv.org/pdf/2507.18546v1

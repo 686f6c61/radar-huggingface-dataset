@@ -104,5 +104,5 @@ No hay datos publicados en la informacion disponible que permitan comparar con a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sd15-dpo-us-real
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sd15-dpo-us-real
 - Modelo base: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5

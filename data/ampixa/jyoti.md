@@ -108,7 +108,7 @@ El autor señala que solo la diferencia en ruido rosa 5 dB queda fuera del ruido
 
 | Modelo | Parámetros | Tasa de bits | Latencia | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jyoti (D3) | 828.547 | 2,3 kbps | 40 ms | en, ne | CC BY-SA 4.0 | HuggingFace (`ampixa/jyoti`) |
+| jyoti (D3) | 828.547 | 2,3 kbps | 40 ms | en, ne | CC BY-SA 4.0 | Hugging Face (`ampixa/jyoti`) |
 | TinyCall (paper arXiv:2609.25379) | No disponible | No disponible | No disponible | No disponible | No disponible | Paper; código y pesos no disponibles en la información proporcionada |
 | Códecs neuronales convencionales (p. ej. EnCodec, SoundStream) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -127,8 +127,8 @@ La información disponible no permite una comparación cuantitativa con alternat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ampixa/jyoti
+- Hugging Face: https://huggingface.co/ampixa/jyoti
 - Paper de inspiración TinyCall: https://arxiv.org/abs/2609.25379
 - Modelo ASR nepalí usado en la evaluación: https://huggingface.co/ampixa/nepali-conformer-offline
 - Dataset LibriSpeech ASR: https://huggingface.co/datasets/openslr/librispeech_asr
-- Modelo ASR inglés usado en la evaluación: `facebook/wav2vec2-base-960h` (revisión `22aad52d`), disponible en HuggingFace
+- Modelo ASR inglés usado en la evaluación: `facebook/wav2vec2-base-960h` (revisión `22aad52d`), disponible en Hugging Face

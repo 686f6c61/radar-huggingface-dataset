@@ -93,6 +93,6 @@ La comparativa con alternativas de la misma categoria (modelos densos de ~9-10B 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuna1126/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated
+- Hugging Face: https://huggingface.co/yuna1126/DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated
 - Modelo base: https://huggingface.co/Jackrong/DeepSeek-V4-Pro-Qwen3.5-9B
 - Herramienta Tema_Q-Abliterated: https://github.com/ek15072809/Tema_Q-Abliterated

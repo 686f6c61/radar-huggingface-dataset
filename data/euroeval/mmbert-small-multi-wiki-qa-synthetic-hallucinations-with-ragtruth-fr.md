@@ -76,7 +76,7 @@ No se dispone de comparativas cuantitativas con otros modelos de detección de a
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fr
+- Página del modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-fr
 - Versión en inglés: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en
 - Versión en italiano: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-it
 - Artículo "A multilingual hallucination benchmark: MultiWikiQHalluA" (arXiv): https://arxiv.org/pdf/2605.02504v2

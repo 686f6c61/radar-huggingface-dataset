@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VoxShift es una aplicación de escritorio para Windows 10/11 (64 bits) desarrollada por Kvitik que realiza conversión de voz en tiempo real mediante redes neuronales. A diferencia de un modelo de lenguaje al uso, se distribuye como un ejecutable (VoxShift.exe, 66 MB) que integra un motor de cambio de voz basado en RVC (Retrieval-based Voice Conversion) junto con una cadena de efectos DSP clásicos. El repositorio de HuggingFace ocupa 0,1 GB y actúa principalmente como punto de distribución del binario y de la documentación, no como un repositorio de pesos en formato abierto.
+VoxShift es una aplicación de escritorio para Windows 10/11 (64 bits) desarrollada por Kvitik que realiza conversión de voz en tiempo real mediante redes neuronales. A diferencia de un modelo de lenguaje al uso, se distribuye como un ejecutable (VoxShift.exe, 66 MB) que integra un motor de cambio de voz basado en RVC (Retrieval-based Voice Conversion) junto con una cadena de efectos DSP clásicos. El repositorio de Hugging Face ocupa 0,1 GB y actúa principalmente como punto de distribución del binario y de la documentación, no como un repositorio de pesos en formato abierto.
 
 El problema que resuelve es la modificación o sustitución completa de la voz del usuario durante llamadas y transmisiones: la señal procesada se enruta a un dispositivo de audio virtual (VB-CABLE) que las aplicaciones de videoconferencia (Telegram, Zoom, Google Meet, Discord, Telemost) detectan como un micrófono convencional. La latencia declarada es de aproximadamente 30 ms para los efectos y de unos 200 ms para el clonado de voz por GPU.
 
-Es relevante por su enfoque de privacidad (todo el procesamiento ocurre localmente) y por su compatibilidad con el ecosistema RVC: acepta modelos .pth y .onnx de RVC v1/v2, además de ficheros .index, lo que permite reutilizar voces entrenadas con herramientas como Applio. La licencia es freeware (etiquetada como "other" en HuggingFace), con interfaz en ruso e inglés.
+Es relevante por su enfoque de privacidad (todo el procesamiento ocurre localmente) y por su compatibilidad con el ecosistema RVC: acepta modelos .pth y .onnx de RVC v1/v2, además de ficheros .index, lo que permite reutilizar voces entrenadas con herramientas como Applio. La licencia es freeware (etiquetada como "other" en Hugging Face), con interfaz en ruso e inglés.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Es relevante por su enfoque de privacidad (todo el procesamiento ocurre localmen
 | Longitud de contexto | no disponible (modelo de audio, no de texto) |
 | Tipos de cuantizacion | no disponible; soporta modelos de voz externos en .pth y .onnx (RVC v1/v2) |
 | Idiomas soportados | ruso (ru) e inglés (en) en la interfaz; el procesado de voz es independiente del idioma |
-| Licencia | freeware (etiqueta "other" en HuggingFace) |
+| Licencia | freeware (etiqueta "other" en Hugging Face) |
 | Formato de pesos | ejecutable Windows (VoxShift.exe); modelos de voz externos en .pth y .onnx, con índices .index |
 | Tamano del repositorio | 0,1 GB |
 | Plataforma | Windows 10 / 11 de 64 bits |
@@ -93,7 +93,7 @@ La comparación se limita a categorías funcionales: no se dispone de datos de r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Kvitik/voxshift
+- Repositorio en Hugging Face: https://huggingface.co/Kvitik/voxshift
 - Descarga del ejecutable: https://huggingface.co/Kvitik/voxshift/resolve/main/VoxShift.exe?download=true
 - VB-CABLE (driver de audio virtual): https://vb-audio.com/Cable/
 - Catálogo de modelos de voz RVC mencionado por el autor: https://voice-models.com

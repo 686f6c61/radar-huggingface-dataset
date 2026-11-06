@@ -54,6 +54,6 @@ No disponible. Este checkpoint no es un modelo final comparable con alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h005.sft-v1.step_40
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h005.sft-v1.step_40
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

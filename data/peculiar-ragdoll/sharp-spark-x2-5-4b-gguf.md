@@ -101,7 +101,7 @@ El autor reporta que CyberTiel 35B-A3B resuelve aproximadamente el doble de tare
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/peculiar-ragdoll/Sharp-Spark-X2.5-4B-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Coleccion CyberTielCoder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/cyber-tiel-coder-35b-a3b
 - Coleccion TielCoder 35B-A3B: https://huggingface.co/collections/peculiar-ragdoll/tiel-coder-35b-a3b

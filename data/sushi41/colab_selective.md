@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sushi41/colab_selective` es un modelo publicado en HuggingFace por el usuario `sushi41`. La model card asociada es prácticamente vacía: solo contiene metadatos de licencia (`license: other`, `license_name: lc002`, con enlace a un fichero `LICENSE`), sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. No se indica pipeline, idiomas soportados ni ningún detalle técnico adicional.
+`sushi41/colab_selective` es un modelo publicado en Hugging Face por el usuario `sushi41`. La model card asociada es prácticamente vacía: solo contiene metadatos de licencia (`license: other`, `license_name: lc002`, con enlace a un fichero `LICENSE`), sin descripción del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. No se indica pipeline, idiomas soportados ni ningún detalle técnico adicional.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-11-06T03:09:13Z), lo que sugiere una publicación reciente sin actividad posterior. El nombre del identificador (`colab_selective`) apunta a un posible experimento realizado en Google Colab, pero se trata de una inferencia a partir del nombre y no de un dato confirmado por el autor.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de información técnica verificable, esta ficha se limit
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la longitud de contexto nativa ni las estrategias de atención empleadas.
+No se ha publicado información sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura híbrida o cualquier otra variante. Tampoco hay datos sobre el número de parámetros, la longitud de contexto nativa ni las estrategias de atención empleadas.
 
 Respecto al entrenamiento, no se documenta el volumen de tokens, la composición del dataset, la existencia de fases de ajuste supervisado, RLHF o DPO, ni cualquier otra innovación técnica (decodificación especulativa, atención lineal, cuantización nativa, etc.). Cualquier afirmación al respecto sería especulativa y queda fuera del alcance de esta ficha.
 
@@ -78,6 +78,6 @@ No disponible. Al desconocerse la arquitectura, el tamaño y la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sushi41/colab_selective
+- Hugging Face: https://huggingface.co/sushi41/colab_selective
 - Fichero de licencia (referenciado en la model card): https://huggingface.co/sushi41/colab_selective/blob/main/LICENSE
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

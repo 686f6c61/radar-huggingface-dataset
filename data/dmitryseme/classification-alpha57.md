@@ -65,9 +65,9 @@ No disponible. No existen modelos comparables porque este repositorio no contien
 - Limitaciones de contexto o idioma: no aplica, es un modelo de visión sin soporte de texto.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero debe revisarse la licencia de los datos externos si se utiliza con datasets propios.
 - Para producción, es completamente inadecuado. Debe tratarse como un artefacto experimental.
-- La implementación es personalizada, por lo que las APIs genéricas de HuggingFace pueden requerir un adaptador explícito para cargar el modelo.
+- La implementación es personalizada, por lo que las APIs genéricas de Hugging Face pueden requerir un adaptador explícito para cargar el modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dmitryseme/classification-alpha57
+- Repositorio en Hugging Face: https://huggingface.co/Dmitryseme/classification-alpha57
 - Perfil del autor: https://huggingface.co/Dmitryseme

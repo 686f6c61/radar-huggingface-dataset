@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cadenza-Labs/c-es es un modelo publicado en HuggingFace por el laboratorio Cadenza-Labs bajo licencia Apache 2.0. La informacion disponible es muy limitada: el repositorio tiene un tamano de 2,9 GB en formato safetensors, lo que sugiere un modelo de escala pequena o mediana (probablemente en el rango de 1 a 4 mil millones de parametros, dependiendo de la precision de los pesos almacenados). El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar los pesos.
+Cadenza-Labs/c-es es un modelo publicado en Hugging Face por el laboratorio Cadenza-Labs bajo licencia Apache 2.0. La informacion disponible es muy limitada: el repositorio tiene un tamano de 2,9 GB en formato safetensors, lo que sugiere un modelo de escala pequena o mediana (probablemente en el rango de 1 a 4 mil millones de parametros, dependiendo de la precision de los pesos almacenados). El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en la plataforma antes de descargar los pesos.
 
 El modelo no dispone de pipeline declarado, ni de idiomas especificados, ni de tarjeta de modelo con documentacion tecnica en la informacion proporcionada. El identificador "c-es" podria sugerir un enfoque hacia el castellano, pero no hay confirmacion oficial al respecto. Fue creado y actualizado el 1 de noviembre de 2026, con cero descargas y cero likes en el momento de la consulta, lo que indica un lanzamiento muy reciente o un modelo practicamente desconocido en la comunidad.
 
@@ -63,7 +63,7 @@ No disponible. La ausencia de datos sobre parametros, contexto y arquitectura im
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 - Ausencia total de tarjeta de modelo y documentacion tecnica: no se puede verificar arquitectura, parametros, contexto ni datos de entrenamiento.
 - Riesgo elevado de comportamiento impredecible en produccion por falta de evaluaciones publicadas.
 - No se puede descartar sesgo o alucinacion, pero tampoco confirmar su magnitud sin datos.
@@ -74,5 +74,5 @@ No disponible. La ausencia de datos sobre parametros, contexto y arquitectura im
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cadenza-Labs/c-es
+- Hugging Face: https://huggingface.co/Cadenza-Labs/c-es
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

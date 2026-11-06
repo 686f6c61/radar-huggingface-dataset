@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto/ventana | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TTT2Reel-Wan2.2-TI2V-5B | ~5B (DiT) + LoRA r128 | 133 frames/chunk a 24 fps, 720×1280 | Apache-2.0 | HuggingFace (12 descargas) |
-| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | no disponible | Apache-2.0 | HuggingFace |
+| TTT2Reel-Wan2.2-TI2V-5B | ~5B (DiT) + LoRA r128 | 133 frames/chunk a 24 fps, 720×1280 | Apache-2.0 | Hugging Face (12 descargas) |
+| Wan-AI/Wan2.2-TI2V-5B (base) | ~5B | no disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de vídeo de tamaño similar | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Marcellus-Zhao/TTT2Reel-Wan2.2-TI2V-5B
+- Hugging Face: https://huggingface.co/Marcellus-Zhao/TTT2Reel-Wan2.2-TI2V-5B
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - DiffSynth-Studio (fork referenciado en la model card): no disponible como enlace directo en la información proporcionada
 - Paper, blog o demo: no disponibles en la información proporcionada

@@ -69,7 +69,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que la comp
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| random-matching (este) | 33.088 (checkpoint de inicialización) | no aplica | MIT | HuggingFace, sin entrenar |
+| random-matching (este) | 33.088 (checkpoint de inicialización) | no aplica | MIT | Hugging Face, sin entrenar |
 | Swin-T estándar | ~28 M | no aplica | MIT (referencia original) | Ampliamente disponible |
 | Otros backbones de visión para matching (por ejemplo, ResNet, ViT) | variable (decenas de millones) | no aplica | variable | Ampliamente disponibles |
 
@@ -88,5 +88,5 @@ La comparación de rendimiento con alternativas no es posible con la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oleksandrmarchenko/random-matching
+- Hugging Face: https://huggingface.co/oleksandrmarchenko/random-matching
 - No se han encontrado en la búsqueda web enlaces relevantes al modelo (paper, blog o repositorio); los resultados devueltos no guardan relación con este artefacto.

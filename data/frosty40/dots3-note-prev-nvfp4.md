@@ -65,11 +65,11 @@ No se dispone de información suficiente para comparar este modelo con alternati
 - El modelo requiere hardware NVIDIA con soporte para FP4 (arquitecturas Hopper o posteriores), lo que limita su despliegue en GPUs más antiguas.
 - No se han publicado los idiomas soportados, por lo que su rendimiento en idiomas minoritarios es incierto.
 - Al ser una cuantización de un modelo base, no se han realizado evaluaciones específicas de sesgos o alucinaciones; se recomienda validar en el dominio de aplicación.
-- El tamaño del repositorio en HuggingFace es de 0.0 GB, lo que sugiere que los pesos podrían no estar disponibles directamente o que se requiere descargar desde otra fuente.
+- El tamaño del repositorio en Hugging Face es de 0.0 GB, lo que sugiere que los pesos podrían no estar disponibles directamente o que se requiere descargar desde otra fuente.
 - La licencia Apache 2.0 permite uso comercial, pero se debe verificar que el modelo base cumpla con los mismos términos.
 
 ## Enlaces
 
-- [HuggingFace - Frosty40/dots3-note-prev-NVFP4](https://huggingface.co/Frosty40/dots3-note-prev-NVFP4)
+- [Hugging Face - Frosty40/dots3-note-prev-NVFP4](https://huggingface.co/Frosty40/dots3-note-prev-NVFP4)
 - [GitHub - studio-dots-ai/dots3-note-prev](https://github.com/studio-dots-ai/dots3-note-prev)
 - [PR de vLLM para Dots3Note](https://github.com/vllm-project/recipes/pull/767/files)

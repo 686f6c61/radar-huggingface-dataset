@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AfriBERTa-siSwati es un modelo de lenguaje de tipo encoder Transformer, desarrollado por AI Eswatini (autor de HuggingFace: KhanyiTapiwa00), que adapta el modelo AfriBERTa (Ogueji et al., 2021) al idioma siSwati del Reino de Eswatini. El modelo parte del checkpoint base castorini/afriberta_large y se somete a un preentrenamiento continuado mediante Masked Language Modelling (MLM) sobre el corpus paralelo SADILAR EN-SS v1.0.3, compuesto por 114.839 pares de frases ingles-siSwati.
+AfriBERTa-siSwati es un modelo de lenguaje de tipo encoder Transformer, desarrollado por AI Eswatini (autor de Hugging Face: KhanyiTapiwa00), que adapta el modelo AfriBERTa (Ogueji et al., 2021) al idioma siSwati del Reino de Eswatini. El modelo parte del checkpoint base castorini/afriberta_large y se somete a un preentrenamiento continuado mediante Masked Language Modelling (MLM) sobre el corpus paralelo SADILAR EN-SS v1.0.3, compuesto por 114.839 pares de frases ingles-siSwati.
 
 Con 125.702.518 parametros, se trata de un modelo de tamano base (aproximadamente 126 millones de parametros) orientado exclusivamente a tareas de comprension y representacion del lenguaje, no a generacion autoregresiva. Su relevancia reside en cubrir una lengua de bajos recursos poco representada en los grandes corpus multilingues: el modelo reporta una perplejidad de 7,27 frente a 47,83 de mBERT y 35,59 del AfriBERTa sin ajuste, lo que supone una reduccion de perplejidad del 84,8 % respecto a la linea base de mBERT.
 
@@ -12,12 +12,12 @@ Es un modelo pensado como base para tareas posteriores (clasificacion, extraccio
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo XLM-RoBERTa / RoBERTa (etiqueta HuggingFace: xlm-roberta); preentrenamiento con Masked Language Modelling |
+| Arquitectura | Transformer encoder tipo XLM-RoBERTa / RoBERTa (etiqueta Hugging Face: xlm-roberta); preentrenamiento con Masked Language Modelling |
 | Parametros totales | 125.702.518 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo incluye pesos en safetensors) |
-| Idiomas soportados | siSwati (objetivo); entrenamiento sobre corpus bilingue ingles-siSwati. El campo de idiomas en HuggingFace figura como no disponible |
+| Idiomas soportados | siSwati (objetivo); entrenamiento sobre corpus bilingue ingles-siSwati. El campo de idiomas en Hugging Face figura como no disponible |
 | Licencia | no disponible (la licencia del corpus de entrenamiento SADILAR EN-SS es CC BY 4.0, pero la licencia del modelo no se especifica) |
 | Formato de pesos | safetensors |
 
@@ -66,7 +66,7 @@ El autor reporta ademas una reduccion de perplejidad del 84,8 % frente a mBERT y
 - En fp16/bf16 el modelo ocupa aproximadamente 0,25 GB de pesos, por lo que la inferencia es viable incluso en GPU integradas o CPU.
 - GPU recomendadas: practicamente cualquier GPU moderna es suficiente, incluidas RTX 3060, RTX 4090, T4, A100 o H100; el modelo no requiere aceleradores de gama alta.
 - Cabe sin problemas en GPUs de consumo: se puede ejecutar y ajustar en una unica GPU de 8 GB o incluso menos (el autor lo entreno en una Tesla T4 de 15,6 GB).
-- Opciones de despliegue: HuggingFace Transformers (AutoTokenizer y AutoModelForMaskedLM), y servidores de inferencia compatibles como TGI (Text Generation Inference no aplica por ser encoder), ademas de exportacion a ONNX o TorchScript para produccion. Ollama y llama.cpp no son el formato habitual para este tipo de encoder.
+- Opciones de despliegue: Hugging Face Transformers (AutoTokenizer y AutoModelForMaskedLM), y servidores de inferencia compatibles como TGI (Text Generation Inference no aplica por ser encoder), ademas de exportacion a ONNX o TorchScript para produccion. Ollama y llama.cpp no son el formato habitual para este tipo de encoder.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Por el tamano del modelo y el hardware empleado (5 horas para 10 epocas sobre ~114.000 pares en una T4), se espera un rendimiento alto en inferencia, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -93,7 +93,7 @@ La comparacion se limita a los datos de perplejidad aportados por el propio auto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KhanyiTapiwa00/afriberta-siswati
+- Modelo en Hugging Face: https://huggingface.co/KhanyiTapiwa00/afriberta-siswati
 - Modelo base: castorini/afriberta_large (referenciado en la model card; URL exacta no proporcionada)
 - Referencia del articulo original de AfriBERTa: Ogueji et al., 2021 (URL del paper no disponible en la informacion suministrada)
 - Corpus de entrenamiento: SADILAR EN-SS Bilingual Corpus v1.0.3, licencia CC BY 4.0 (URL no disponible en la informacion suministrada)

@@ -69,5 +69,5 @@ No disponible. No se han publicado comparaciones con otros modelos de tamaño si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akahsizrr/fuse-1-Lite-GGUF
+- Hugging Face: https://huggingface.co/Akahsizrr/fuse-1-Lite-GGUF
 - No se proporcionan otros enlaces (papers, blogs, repositorios adicionales).

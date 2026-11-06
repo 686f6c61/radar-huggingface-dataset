@@ -102,7 +102,7 @@ No se dispone de cifras de benchmarks de terceros para estas alternativas dentro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mikezhu/cfg-geometry-video
+- Repositorio Hugging Face: https://huggingface.co/mikezhu/cfg-geometry-video
 - Pagina del proyecto: https://maps-research.github.io/cfg-geometry/
 - Paper de LeanVAE (Cheng & Yuan, 2025): arXiv:2503.14325
 - Codigo de LeanVAE: https://github.com/westlake-repl/LeanVAE

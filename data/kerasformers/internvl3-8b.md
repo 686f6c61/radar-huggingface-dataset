@@ -62,9 +62,9 @@ No se dispone de comparativas en la información proporcionada.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/kerasformers/internvl3-8b)
+- [Modelo en Hugging Face](https://huggingface.co/kerasformers/internvl3-8b)
 - [Modelo base OpenGVLab/InternVL3-8B-hf](https://huggingface.co/OpenGVLab/InternVL3-8B-hf)
 - [Licencia del modelo base](https://huggingface.co/OpenGVLab/InternVL3-8B-hf/blob/main/LICENSE)
 - [Repositorio GitHub de KerasFormers](https://github.com/IMvision12/KerasFormers)
 - [Documentación de InternVL en KerasFormers](https://imvision12.github.io/KerasFormers/internvl/)
-- [Colección de modelos InternVL en HuggingFace](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)
+- [Colección de modelos InternVL en Hugging Face](https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd)

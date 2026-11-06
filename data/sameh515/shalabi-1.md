@@ -84,9 +84,9 @@ Cambio observado de precisión: +0,0 puntos porcentuales. Intervalo bootstrap pa
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shalabi-1 | 139.264 entrenables sobre backbone de 9B a 4 bits | 256 tokens formateados | Clasificador de decisión A/B/C | Apache-2.0 | HuggingFace, MLX |
-| Modelo base `mlx-community/Qwen3.5-9B-4bit` | 9B | No disponible en la informacion proporcionada | Generación de texto cuantizada | Apache-2.0 (según repositorios upstream citados) | HuggingFace, MLX |
-| Qwen3.5-9B / Qwen3.5-9B-Base | 9B | No disponible en la informacion proporcionada | Modelo generativo denso | Apache-2.0 | HuggingFace |
+| Shalabi-1 | 139.264 entrenables sobre backbone de 9B a 4 bits | 256 tokens formateados | Clasificador de decisión A/B/C | Apache-2.0 | Hugging Face, MLX |
+| Modelo base `mlx-community/Qwen3.5-9B-4bit` | 9B | No disponible en la informacion proporcionada | Generación de texto cuantizada | Apache-2.0 (según repositorios upstream citados) | Hugging Face, MLX |
+| Qwen3.5-9B / Qwen3.5-9B-Base | 9B | No disponible en la informacion proporcionada | Modelo generativo denso | Apache-2.0 | Hugging Face |
 
 No se dispone de datos sobre otros clasificadores de decisión comparables en la información proporcionada.
 
@@ -109,9 +109,9 @@ No se dispone de datos sobre otros clasificadores de decisión comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sameh515/Shalabi-1
+- Modelo en Hugging Face: https://huggingface.co/Sameh515/Shalabi-1
 - Perfil del autor en LinkedIn: https://www.linkedin.com/in/sam-shalabi/
-- Modelo base en HuggingFace: https://huggingface.co/mlx-community/Qwen3.5-9B-4bit
+- Modelo base en Hugging Face: https://huggingface.co/mlx-community/Qwen3.5-9B-4bit
 - Repositorio upstream citado (base): https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio upstream citado (instruct): https://huggingface.co/Qwen/Qwen3.5-9B
 - Documentación de uv: https://docs.astral.sh/uv/

@@ -16,7 +16,7 @@ Destaca su ventana de contexto ampliada, que segun los metadatos alcanza 1 millo
 | Longitud de contexto | 1M tokens (segun etiquetas; tambien se menciona 256k) |
 | Tipos de cuantizacion | 8-bit (MLX q8) |
 | Idiomas soportados | Ingles, chino, japones, espanol (segun etiquetas `en`, `zh`, `ja`, `es`) |
-| Licencia | Apache 2.0 (segun etiqueta `license:apache-2.0`; el campo de la ficha de HuggingFace indica no disponible) |
+| Licencia | Apache 2.0 (segun etiqueta `license:apache-2.0`; el campo de la ficha de Hugging Face indica no disponible) |
 | Formato de pesos | SafeTensors, MLX |
 
 ## Arquitectura y entrenamiento
@@ -46,7 +46,7 @@ La arquitectura presenta tecnicas adicionales de eficiencia como multi-token pre
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de pruebas estandarizadas como MMLU, HumanEval o GSM8K. El modelo presenta cero descargas y cero likes en HuggingFace, lo que sugiere que aun no ha sido evaluado por la comunidad.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de datos de pruebas estandarizadas como MMLU, HumanEval o GSM8K. El modelo presenta cero descargas y cero likes en Hugging Face, lo que sugiere que aun no ha sido evaluado por la comunidad.
 
 ## Requisitos de hardware
 
@@ -62,17 +62,17 @@ No se dispone de datos de rendimiento comparativos. A nivel estructural, los mod
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-8B (familia oficial Qwen) | 8B | 128k | Apache 2.0 | HuggingFace |
-| Llama 3.1 8B | 8B | 128k | Meta License | HuggingFace |
-| OrionLLM/OxCoder-9B (modelo base) | 9B | No disponible | No disponible | HuggingFace |
+| Qwen3-8B (familia oficial Qwen) | 8B | 128k | Apache 2.0 | Hugging Face |
+| Llama 3.1 8B | 8B | 128k | Meta License | Hugging Face |
+| OrionLLM/OxCoder-9B (modelo base) | 9B | No disponible | No disponible | Hugging Face |
 
 La comparacion con estos modelos no es directa, ya que no hay benchmarks disponibles. La ventana de contexto de 1M tokens es significativamente superior a la de Qwen3-8B o Llama 3.1 8B, pero puede deberse a extensiones experimentales.
 
 ## Limitaciones y advertencias
 
 - Al no existir benchmarks publicados ni evaluaciones de la comunidad, el rendimiento real es desconocido y no puede validarse en tareas estandarizadas.
-- El modelo es experimental, con cero descargas y cero likes en HuggingFace. No hay garantia de estabilidad ni de calidad del resultado.
-- La licencia presenta ambigüedad: la etiqueta indica Apache 2.0, pero el campo de licencia en la ficha de HuggingFace dice no disponible. Es recomendable verificar la licencia antes de usarlo en entornos de produccion.
+- El modelo es experimental, con cero descargas y cero likes en Hugging Face. No hay garantia de estabilidad ni de calidad del resultado.
+- La licencia presenta ambigüedad: la etiqueta indica Apache 2.0, pero el campo de licencia en la ficha de Hugging Face dice no disponible. Es recomendable verificar la licencia antes de usarlo en entornos de produccion.
 - No se dispone de informacion sobre sesgos, datos de entrenamiento ni la composicion del dataset. Por tanto, el modelo puede heredar sesgos del base y de los datos de destilacion.
 - Riesgo de alucinacion: al tratarse de un modelo derivado de un base de codigo y destilado, puede generar codigo o texto plausible pero incorrecto, especialmente en tareas de razonamiento complejo.
 - Limitaciones de idioma: aunque se indican cuatro idiomas, no se especifica el rendimiento en cada uno. Es posible que el espanol o el japones esten menos optimizados que el ingles.
@@ -81,7 +81,7 @@ La comparacion con estos modelos no es directa, ya que no hay benchmarks disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nightmedia/Qwen3.5-9B-Theseus-q8-hi-mlx
+- Modelo en Hugging Face: https://huggingface.co/nightmedia/Qwen3.5-9B-Theseus-q8-hi-mlx
 - Modelos relacionados de la misma serie:
   - https://huggingface.co/nightmedia/Qwen3.5-9B-Brainwaves
   - https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge-q8-hi-mlx

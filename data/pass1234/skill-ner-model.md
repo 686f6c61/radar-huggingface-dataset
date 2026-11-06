@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pass1234/skill-ner-model es un modelo publicado en HuggingFace por el usuario Pass1234 el 11 de septiembre de 2026. La ficha publica del repositorio no incluye informacion tecnica: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y no se ha actualizado desde su creacion.
+Pass1234/skill-ner-model es un modelo publicado en Hugging Face por el usuario Pass1234 el 11 de septiembre de 2026. La ficha publica del repositorio no incluye informacion tecnica: no declara pipeline, licencia, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. En el momento de redactar esta ficha acumula 0 descargas y 1 like, y no se ha actualizado desde su creacion.
 
 El unico dato orientativo es el propio identificador del repositorio, que incluye el termino "ner" (named entity recognition). Esto sugiere, sin confirmarlo, que el modelo podria estar orientado a tareas de reconocimiento de entidades nombradas, un caso de uso clasico de clasificacion de tokens sobre textos. No obstante, la informacion proporcionada no permite verificar esta hipotesis ni descartar que se trate de otro tipo de artefacto (por ejemplo, un adaptador, un modelo de embeddings o un experimento de investigacion).
 
@@ -20,7 +20,7 @@ La relevancia practica de este modelo es, a dia de hoy, limitada: sin model card
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | Pass1234/skill-ner-model |
+| Identificador en Hugging Face | Pass1234/skill-ner-model |
 | Autor | Pass1234 |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 11 de septiembre de 2026 |
@@ -98,7 +98,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Pass1234/skill-ner-model
+- Pagina del modelo en Hugging Face: https://huggingface.co/Pass1234/skill-ner-model
 - Paper asociado: no disponible.
 - Repositorio de codigo: no disponible.
 - Blog o anuncio del autor: no disponible.

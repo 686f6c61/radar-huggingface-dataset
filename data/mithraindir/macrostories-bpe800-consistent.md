@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MacroStories BPE-800 Consistent es un modelo de lenguaje de juguete publicado por el usuario mithraindir en HuggingFace. Se trata de un transformer con bucles (looped transformer) de una sola capa repetida cuatro veces, con un vocabulario de 800 tokens Byte-Level BPE y una dimension de modelo de 32, lo que da un total de 33.376 parametros segun los pesos en safetensors. Fue entrenado durante 4.000 pasos con batches de 32 sobre 1.000 relatos infantiles en neerlandes descritos como "consistentes", y alcanzo una perdida de validacion final de 2,5429 nats/token.
+MacroStories BPE-800 Consistent es un modelo de lenguaje de juguete publicado por el usuario mithraindir en Hugging Face. Se trata de un transformer con bucles (looped transformer) de una sola capa repetida cuatro veces, con un vocabulario de 800 tokens Byte-Level BPE y una dimension de modelo de 32, lo que da un total de 33.376 parametros segun los pesos en safetensors. Fue entrenado durante 4.000 pasos con batches de 32 sobre 1.000 relatos infantiles en neerlandes descritos como "consistentes", y alcanzo una perdida de validacion final de 2,5429 nats/token.
 
 El interes del modelo no es su calidad de generacion, sino su caracter experimental: ejemplifica dos ideas concretas de la literatura reciente sobre modelos pequenos, el peso compartido entre iteraciones (looping) como sustituto de profundidad, y la tokenizacion Byte-Level BPE aplicada a un corpus minusculo para eliminar practicamente el vocabulario fuera de lista (0,00% OOV declarado). Con 33.376 parametros, el modelo ocupa unas decenas de kilobytes, por lo que sirve como banco de pruebas reproducible de pipelines de entrenamiento e inferencia, no como generador de texto utilizable.
 
@@ -17,7 +17,7 @@ Las muestras incluidas en la model card muestran el comportamiento esperado en e
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el repositorio solo contiene safetensors; por tamano, fp32/fp16/int8 son viables) |
-| Idiomas soportados | neerlandes (corpus de entrenamiento: relatos infantiles en neerlandes); la metadata de HuggingFace no declara idiomas |
+| Idiomas soportados | neerlandes (corpus de entrenamiento: relatos infantiles en neerlandes); la metadata de Hugging Face no declara idiomas |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
@@ -78,9 +78,9 @@ No hay datos de benchmarks de este modelo que permitan una comparacion de rendim
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MacroStories BPE-800 Consistent | 33.376 | no disponible | Looped transformer, 1 capa x 4 bucles, V=800, d=32 | no disponible | HuggingFace, 0 descargas, 0 likes |
-| TinyStories (variantes ~1M-10M) | ~1M-10M | no disponible en esta ficha | Transformer decoder-only entrenado en relatos infantiles en ingles | habitualmente MIT o similar (verificar cada repo) | HuggingFace |
-| Modelos aleatorios inicializados de tamaño comparable | ~10K-100K | no aplica | Transformer estandar | segun repositorio | HuggingFace |
+| MacroStories BPE-800 Consistent | 33.376 | no disponible | Looped transformer, 1 capa x 4 bucles, V=800, d=32 | no disponible | Hugging Face, 0 descargas, 0 likes |
+| TinyStories (variantes ~1M-10M) | ~1M-10M | no disponible en esta ficha | Transformer decoder-only entrenado en relatos infantiles en ingles | habitualmente MIT o similar (verificar cada repo) | Hugging Face |
+| Modelos aleatorios inicializados de tamaño comparable | ~10K-100K | no aplica | Transformer estandar | segun repositorio | Hugging Face |
 
 La comparacion relevante es cualitativa: frente a las variantes de TinyStories, este modelo es entre uno y dos ordenes de magnitud mas pequeno, esta en neerlandes en lugar de ingles y sustituye profundidad por bucle de pesos. No hay datos publicados que permitan afirmar cual de los dos enfoques rinde mejor a igual presupuesto de parametros.
 
@@ -100,5 +100,5 @@ La comparacion relevante es cualitativa: frente a las variantes de TinyStories, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mithraindir/macrostories-bpe800-consistent
+- Hugging Face: https://huggingface.co/mithraindir/macrostories-bpe800-consistent
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

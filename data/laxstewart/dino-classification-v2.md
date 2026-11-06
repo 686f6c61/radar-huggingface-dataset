@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`laxstewart/dino-classification-v2` es un prototipo de investigacion publicado en HuggingFace por el usuario laxstewart. Se presenta como una implementacion personalizada de una arquitectura denominada "Dino" orientada a tareas de clasificacion. El propio autor la describe como un artefacto de tipo research-oriented y advierte que el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. Cuenta con 49.600 parametros reales, un volumen extraordinariamente reducido que lo situa lejos de cualquier modelo de clasificacion utilizable en produccion.
+`laxstewart/dino-classification-v2` es un prototipo de investigacion publicado en Hugging Face por el usuario laxstewart. Se presenta como una implementacion personalizada de una arquitectura denominada "Dino" orientada a tareas de clasificacion. El propio autor la describe como un artefacto de tipo research-oriented y advierte que el checkpoint incluido (`model.safetensors`) es unicamente una inicializacion valida para pruebas de humo, no un modelo entrenado ni evaluado. Cuenta con 49.600 parametros reales, un volumen extraordinariamente reducido que lo situa lejos de cualquier modelo de clasificacion utilizable en produccion.
 
 El repositorio incluye el codigo de definicion del modelo (`eval.py`), el fichero de configuracion de arquitectura (`config.json`), los hiperparametros por defecto (`training_args.json`) y el checkpoint de inicializacion en formato safetensors. La model card declara explicitamente que no se reclama ninguna puntuacion de benchmark, lo que refuerza su naturaleza de andamiaje experimental mas que de modelo listo para uso.
 
@@ -83,5 +83,5 @@ No disponible. No se han proporcionado en la informacion modelos comparables de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/laxstewart/dino-classification-v2
+- Hugging Face: https://huggingface.co/laxstewart/dino-classification-v2
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

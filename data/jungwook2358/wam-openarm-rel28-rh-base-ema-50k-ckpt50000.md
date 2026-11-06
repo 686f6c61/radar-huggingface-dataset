@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wam-openarm-rel28-rh-base-ema-50k-ckpt50000` es un checkpoint de investigación en robótica publicado por el usuario de HuggingFace `jungwook2358`. Se trata de una réplica del entrenamiento base "robot + humano" del proyecto WAM (World-Action Model) sobre el brazo robótico OpenArm, construido sobre el backbone de vídeo Wan2.2-TI2V-5B y entrenado durante 50 000 pasos para predecir acciones de 28 dimensiones en articulaciones. El modelo combina datos de demostraciones robóticas y de vídeo humano, y se distribuye como checkpoint intermedio de un experimento interno (EXP-0019) más que como un modelo listo para producción.
+`wam-openarm-rel28-rh-base-ema-50k-ckpt50000` es un checkpoint de investigación en robótica publicado por el usuario de Hugging Face `jungwook2358`. Se trata de una réplica del entrenamiento base "robot + humano" del proyecto WAM (World-Action Model) sobre el brazo robótico OpenArm, construido sobre el backbone de vídeo Wan2.2-TI2V-5B y entrenado durante 50 000 pasos para predecir acciones de 28 dimensiones en articulaciones. El modelo combina datos de demostraciones robóticas y de vídeo humano, y se distribuye como checkpoint intermedio de un experimento interno (EXP-0019) más que como un modelo listo para producción.
 
 La relevancia del checkpoint es acotada: es una reproducción de un run previo de otro autor (`huiwon`) dentro de un fork propio del código, con semillas, recetas e hiperparámetros fijados, y con pesos EMA de vídeo guardados de forma opcional. No hay model card comercial, ni benchmarks publicados, ni idiomas declarados, ni tarjeta de evaluación de sesgos. La licencia es "other" sin texto adicional, lo que impide asumir permisos de uso comercial.
 
@@ -54,14 +54,14 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible. El backbone es Wan2.2-TI2V-5B, lo que sitúa el orden de magnitud en decenas de GB en precisión de entrenamiento, pero no se declara el consumo real ni las cuantizaciones soportadas.
 - GPU recomendadas: no disponible. El entrenamiento se realizó con 4 GPU (pd16 x 4) según la receta, sin especificar modelo.
 - Viabilidad en GPU de consumo: no disponible; no se documenta ninguna cuantización ni despliegue en RTX 4090 u otras.
-- Opciones de despliegue: no disponible (no se mencionan vLLM, llama.cpp, Ollama ni TGI; el checkpoint es un formato HuggingFace Trainer con safetensors).
+- Opciones de despliegue: no disponible (no se mencionan vLLM, llama.cpp, Ollama ni TGI; el checkpoint es un formato Hugging Face Trainer con safetensors).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wam-openarm-rel28-rh-base-ema-50k-ckpt50000 | no disponible (backbone Wan2.2-TI2V-5B) | 9 frames de vídeo | sin benchmarks publicados | other | HuggingFace, 0 descargas |
+| wam-openarm-rel28-rh-base-ema-50k-ckpt50000 | no disponible (backbone Wan2.2-TI2V-5B) | 9 frames de vídeo | sin benchmarks publicados | other | Hugging Face, 0 descargas |
 | Run base de `huiwon` (`isaac_wan22_openarm_wam_v1human_rh11_b64_i2v_base_norep_relq99_50k`) | no disponible | no disponible | no disponible | no disponible | referenciado, no enlazado |
 | Alternativas de robótica de propósito general (p. ej. políticas VLA) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-base-ema-50k-ckpt50000
+- Hugging Face: https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-base-ema-50k-ckpt50000
 - Run base replicado (referencia en la model card, sin URL): `isaac_wan22_openarm_wam_v1human_rh11_b64_i2v_base_norep_relq99_50k`
 - Repositorio de código (referencia en la model card, sin URL): rama `actlat-wam`, `jungwook/openarm-fred-ft`
 - Script de entrenamiento (referencia en la model card, sin URL): `run_scripts/train/wam_dit4dit/openarm/finetune_openarm_rel28_base.sh`

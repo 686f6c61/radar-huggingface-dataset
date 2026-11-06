@@ -90,7 +90,7 @@ La comparativa con otros modelos de traduccion zh→en (como NLLB-200 o M2M100) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YanZhanPKU/Entropy-Valley-LLaDA-8B-Zh2En
+- Modelo en Hugging Face: https://huggingface.co/YanZhanPKU/Entropy-Valley-LLaDA-8B-Zh2En
 - Coleccion Entropy-Valley: https://huggingface.co/collections/YanZhanPKU/entropy-valley
 - Dataset de entrenamiento: https://huggingface.co/datasets/YanZhanPKU/Entropy-Valley-Datasets
 - Paper (arXiv:2608.22274): https://arxiv.org/abs/2608.22274

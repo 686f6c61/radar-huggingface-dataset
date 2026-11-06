@@ -73,8 +73,8 @@ El autor indica que la evaluacion de la operacion empresarial usa la media de do
 
 | Modelo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-lucy-v1 | 0,8 mil millones (base) mas adaptador LoRA | no disponible | 80,5 % de acierto en test propio, regret 1,44 | Apache 2.0 | HuggingFace, adaptador PEFT |
-| Qwen/Qwen3.5-0.8B (modelo base sin entrenar) | 0,8 mil millones | no disponible | 33,7 % de acierto en el mismo test, regret 2,24 | no disponible | HuggingFace |
+| connectailab-rl-lucy-v1 | 0,8 mil millones (base) mas adaptador LoRA | no disponible | 80,5 % de acierto en test propio, regret 1,44 | Apache 2.0 | Hugging Face, adaptador PEFT |
+| Qwen/Qwen3.5-0.8B (modelo base sin entrenar) | 0,8 mil millones | no disponible | 33,7 % de acierto en el mismo test, regret 2,24 | no disponible | Hugging Face |
 | Politica profesora del simulador (PPO, modelo pequeno) | no disponible | no disponible | Superior al modelo publicado, segun el autor | no disponible | no disponible |
 
 No se dispone de datos sobre otros modelos de decision empresarial comparables en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de datos sobre otros modelos de decision empresarial comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lucyhome/connectailab-rl-lucy-v1
+- Modelo en Hugging Face: https://huggingface.co/lucyhome/connectailab-rl-lucy-v1
 - Repositorio Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

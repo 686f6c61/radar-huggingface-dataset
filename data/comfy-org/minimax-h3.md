@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MiniMax H3 es un modelo de generación de vídeo omni-modal desarrollado por MiniMax, distribuido en HuggingFace por Comfy-Org bajo la denominación Comfy-Org/MiniMax-H3. Se trata de la versión 3.0 de la familia Hailuo AI, y destaca por ser un modelo de pesos abiertos que entiende y genera contenido multimodal: texto, imagen, vídeo y audio en un único contexto. Su principal innovación es la generación nativa de audio estéreo sincronizado (voz, efectos de sonido y música) en el mismo paso de inferencia, sin necesidad de postprocesado o capas adicionales.
+MiniMax H3 es un modelo de generación de vídeo omni-modal desarrollado por MiniMax, distribuido en Hugging Face por Comfy-Org bajo la denominación Comfy-Org/MiniMax-H3. Se trata de la versión 3.0 de la familia Hailuo AI, y destaca por ser un modelo de pesos abiertos que entiende y genera contenido multimodal: texto, imagen, vídeo y audio en un único contexto. Su principal innovación es la generación nativa de audio estéreo sincronizado (voz, efectos de sonido y música) en el mismo paso de inferencia, sin necesidad de postprocesado o capas adicionales.
 
-El modelo permite generar vídeos de 5 a 15 segundos con resolución de hasta 2K, y admite entradas de texto (T2V), imagen (I2V) y vídeo de referencia (R2V). Está diseñado para ejecutarse en ComfyUI, tanto con pesos abiertos como mediante nodos de socios, lo que facilita su integración en flujos de trabajo existentes. Con más de 10 millones de descargas en HuggingFace, se ha convertido en una opción relevante para creadores de contenido y desarrolladores que buscan una alternativa de código abierto en el espacio de generación de vídeo con audio.
+El modelo permite generar vídeos de 5 a 15 segundos con resolución de hasta 2K, y admite entradas de texto (T2V), imagen (I2V) y vídeo de referencia (R2V). Está diseñado para ejecutarse en ComfyUI, tanto con pesos abiertos como mediante nodos de socios, lo que facilita su integración en flujos de trabajo existentes. Con más de 10 millones de descargas en Hugging Face, se ha convertido en una opción relevante para creadores de contenido y desarrolladores que buscan una alternativa de código abierto en el espacio de generación de vídeo con audio.
 
 ## Especificaciones técnicas
 
@@ -67,7 +67,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
+- [Hugging Face - Comfy-Org/MiniMax-H3](https://huggingface.co/Comfy-Org/MiniMax-H3)
 - [Comfy - MiniMax H3 on Comfy](https://comfy.org/minimax-h3/)
 - [Documentación de Comfy - MiniMax H3 workflows](https://docs.comfy.org/tutorials/video/minimax/minimax-h3)
 - [GitHub - ai-models-lab/minimax-h3](https://github.com/ai-models-lab/minimax-h3)

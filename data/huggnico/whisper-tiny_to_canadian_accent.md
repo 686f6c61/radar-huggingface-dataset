@@ -6,7 +6,7 @@ Whisper tiny canadian es un ajuste fino (fine-tuning) del modelo openai/whisper-
 
 El problema que aborda es la adaptacion de un modelo generico de ASR a una variante dialectal concreta: el ingles canadiense. El autor parte de los pesos de whisper-tiny y los reentrena sobre el dataset canadian_english, declarando un WER de 20,72 % sobre el split de test. Es relevante ahora porque demuestra un flujo de trabajo reproducible de ajuste fino de bajo coste sobre modelos ASR abiertos, aunque sus prestaciones son modestas y su validacion externa es practicamente nula.
 
-La ficha se basa exclusivamente en la informacion publicada en HuggingFace: la model card esta generada automaticamente por el Trainer y contiene secciones sin completar ("More information needed"), por lo que muchos detalles de datos y metodologia no estan disponibles. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 3 de noviembre de 2026.
+La ficha se basa exclusivamente en la informacion publicada en Hugging Face: la model card esta generada automaticamente por el Trainer y contiene secciones sin completar ("More information needed"), por lo que muchos detalles de datos y metodologia no estan disponibles. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado el 3 de noviembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -75,10 +75,10 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto de audio | WER declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Whisper tiny canadian (este modelo) | 37,76 M | ventanas de 30 s | 20,72 % (canadian English) | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | 37,76 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | HuggingFace |
+| Whisper tiny canadian (este modelo) | 37,76 M | ventanas de 30 s | 20,72 % (canadian English) | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | 37,76 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | ventanas de 30 s | no disponible en esta ficha | apache-2.0 | Hugging Face |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de benchmarks de otros modelos ASR en la informacion proporcionada. El WER de 20,72 % es notablemente alto para estandares de produccion, lo que sugiere que el ajuste fino no ha superado claramente al modelo base en calidad global.
 
@@ -95,7 +95,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggnico/whisper-tiny_to_canadian_accent
+- Modelo en Hugging Face: https://huggingface.co/huggnico/whisper-tiny_to_canadian_accent
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

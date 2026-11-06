@@ -82,10 +82,10 @@ No se dispone de datos de rendimiento comparativo entre estas versiones. La dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meteorlad/Qwen3.8-27B-Uncensored-MLX
+- Repositorio Hugging Face: https://huggingface.co/meteorlad/Qwen3.8-27B-Uncensored-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
-- Espejo en HuggingFace (Zomi AI Labs): https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX
-- Espejo en HuggingFace (ynotelbon): https://huggingface.co/ynotelbon/Qwen3.8-27B-Uncensored-MLX
+- Espejo en Hugging Face (Zomi AI Labs): https://huggingface.co/zomiailabs/Qwen3.8-27B-Uncensored-MLX
+- Espejo en Hugging Face (ynotelbon): https://huggingface.co/ynotelbon/Qwen3.8-27B-Uncensored-MLX
 - Blog de OrcaRouter sobre la versión GGUF: https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf
 - Guía de ejecución local (GGUF + llama.cpp): https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally
 - Repositorio GitHub con manual de despliegue local: https://github.com/newbdez33/qwen3.8

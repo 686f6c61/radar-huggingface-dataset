@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vakyantar-en-hi es un modelo publicado en HuggingFace por el usuario yash17366392 bajo licencia Apache 2.0. Por el identificador del repositorio (en-hi) y el nombre elegido (Vakyantar, que en sánscrito remite a la transición o cambio en el habla), el modelo parece orientado a la traducción entre inglés (en) e hindi (hi), aunque la model card no lo confirma explícitamente. El repositorio no incluye pipeline declarado, ni idiomas listados, ni descripción técnica alguna más allá de la etiqueta de licencia.
+Vakyantar-en-hi es un modelo publicado en Hugging Face por el usuario yash17366392 bajo licencia Apache 2.0. Por el identificador del repositorio (en-hi) y el nombre elegido (Vakyantar, que en sánscrito remite a la transición o cambio en el habla), el modelo parece orientado a la traducción entre inglés (en) e hindi (hi), aunque la model card no lo confirma explícitamente. El repositorio no incluye pipeline declarado, ni idiomas listados, ni descripción técnica alguna más allá de la etiqueta de licencia.
 
 El tamaño del repositorio es de 0.0 GB, lo que sugiere que los pesos no están efectivamente alojados en el momento de la consulta, o que el contenido es meramente residual. Los únicos ficheros detectables por los metadatos son de tipo safetensors, pero no hay información sobre el número de parámetros, la arquitectura concreta ni el contexto máximo soportado.
 
@@ -72,5 +72,5 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yash17366392/vakyantar-en-hi
+- Hugging Face: https://huggingface.co/yash17366392/vakyantar-en-hi
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

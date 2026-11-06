@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JonAI21/waifu` es un repositorio de pesos publicado en HuggingFace por el usuario JonAI21 bajo licencia Apache 2.0. El repositorio contiene ficheros en formato `safetensors` y ocupa apenas 0,1 GB, lo que apunta a un modelo de muy reducido tamano o, alternativamente, a un adaptador (LoRA) o a un checkpoint parcial mas que a un modelo de lenguaje completo de gran escala. La model card asociada esta practicamente vacia: solo incluye la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento ni capacidades.
+`JonAI21/waifu` es un repositorio de pesos publicado en Hugging Face por el usuario JonAI21 bajo licencia Apache 2.0. El repositorio contiene ficheros en formato `safetensors` y ocupa apenas 0,1 GB, lo que apunta a un modelo de muy reducido tamano o, alternativamente, a un adaptador (LoRA) o a un checkpoint parcial mas que a un modelo de lenguaje completo de gran escala. La model card asociada esta practicamente vacia: solo incluye la declaracion de licencia, sin descripcion de arquitectura, datos de entrenamiento ni capacidades.
 
 No se dispone de informacion verificable sobre el pipeline, los idiomas soportados, el numero de parametros ni la longitud de contexto. Las busquedas web realizadas no han devuelto resultados relacionados con el modelo: los unicos enlaces recuperados corresponden a contenido para adultos sin vinculacion tecnica alguna con el repositorio. Tampoco consta que se hayan publicado resultados de benchmarks.
 
@@ -88,7 +88,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni el idioma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JonAI21/waifu
+- Repositorio en Hugging Face: https://huggingface.co/JonAI21/waifu
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

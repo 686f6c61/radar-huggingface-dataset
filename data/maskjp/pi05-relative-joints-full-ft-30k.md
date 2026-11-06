@@ -92,7 +92,7 @@ La comparativa muestra que el modelo congelado (frozen-VLM) no sobreajusta y alc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maskjp/pi05-relative-joints-full-ft-30k
+- Repositorio Hugging Face: https://huggingface.co/maskjp/pi05-relative-joints-full-ft-30k
 - Checkpoint óptimo (recomendado para despliegue): https://huggingface.co/maskjp/pi05-relative-joints-full-ft
 - Modelo con VLM congelado (comparativa): https://huggingface.co/maskjp/pi05-relative-joints-frozen-vlm
 - Modelo base: https://huggingface.co/lerobot/pi05_base

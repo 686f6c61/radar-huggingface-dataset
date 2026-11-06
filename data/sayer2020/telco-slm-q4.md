@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sayer2020/telco-slm-q4` es un repositorio alojado en HuggingFace por el usuario `sayer2020`. En el momento de la consulta no hay publicada informacion tecnica verificable sobre el modelo: no consta model card con descripcion, no se declara licencia, no se indican idiomas soportados, no se especifica el pipeline asociado y no hay resultados de benchmarks. El unico tag presente es `region:us`, que es un metadato de disponibilidad geografica y no aporta informacion sobre el contenido del modelo.
+`sayer2020/telco-slm-q4` es un repositorio alojado en Hugging Face por el usuario `sayer2020`. En el momento de la consulta no hay publicada informacion tecnica verificable sobre el modelo: no consta model card con descripcion, no se declara licencia, no se indican idiomas soportados, no se especifica el pipeline asociado y no hay resultados de benchmarks. El unico tag presente es `region:us`, que es un metadato de disponibilidad geografica y no aporta informacion sobre el contenido del modelo.
 
 El identificador del repositorio sugiere, por convencion de nomenclatura y sin que exista confirmacion documental, dos cosas: que se trata de un modelo de lenguaje de dominio especifico para telecomunicaciones (`telco-slm`, donde `slm` se lee habitualmente como *small language model*) y que los pesos estan cuantizados a 4 bits (`q4`). Ninguna de estas dos inferencias esta respaldada por informacion publicada en el repositorio ni por fuentes externas consultadas, por lo que deben tratarse como hipotesis de trabajo y no como especificaciones.
 
@@ -95,6 +95,6 @@ No disponible. Sin parametros, contexto, licencia ni resultados de benchmarks pu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sayer2020/telco-slm-q4
+- Repositorio en Hugging Face: https://huggingface.co/sayer2020/telco-slm-q4
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Nota: las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo; los unicos resultados obtenidos corresponden a tiendas de ropa sin relacion con este repositorio.

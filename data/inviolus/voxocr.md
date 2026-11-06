@@ -74,7 +74,7 @@ La version v3 publicada en GitHub (entrenada 7 horas mas a partir de estos pesos
 
 | Modelo | Parametros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxOCR (este) | 136.547 | 160×160 RGB | 82,5% recall, 0,47 FA/tile (int8, umbral 0,2) | CC BY 4.0 | HuggingFace y GitHub |
+| voxOCR (este) | 136.547 | 160×160 RGB | 82,5% recall, 0,47 FA/tile (int8, umbral 0,2) | CC BY 4.0 | Hugging Face y GitHub |
 | Detector generico de personas en dron (p. ej. YOLO nano) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Modelos CenterNet de referencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inviolus/voxOCR
+- Hugging Face: https://huggingface.co/inviolus/voxOCR
 - GitHub (codigo y entrenamiento): https://github.com/ErdemWilkinson/voxOCR
 - Version v3 en GitHub: https://github.com/ErdemWilkinson/voxOCR#v3-2026-11-01-7-more-hours-from-v2
 - Conjunto HERIDAL: https://zenodo.org/records/5662351

@@ -67,8 +67,8 @@ No se han publicado resultados numéricos de Brain-Score en la información disp
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `niels-c/vith14_untrained_linhead` | 632 M | 224×224 RGB | 5,5 % top-1 en ImageNet-1k | MIT | HuggingFace, plugin Brain-Score |
-| `facebook/ijepa_vith14_1k` | ~632 M | 224×224 RGB | No disponible en la información proporcionada | No disponible en la información proporcionada | HuggingFace |
+| `niels-c/vith14_untrained_linhead` | 632 M | 224×224 RGB | 5,5 % top-1 en ImageNet-1k | MIT | Hugging Face, plugin Brain-Score |
+| `facebook/ijepa_vith14_1k` | ~632 M | 224×224 RGB | No disponible en la información proporcionada | No disponible en la información proporcionada | Hugging Face |
 | Modelos auto-supervisados de la misma arquitectura evaluados en neuro-jepas | ~632 M | 224×224 RGB | No disponible en la información proporcionada | No disponible en la información proporcionada | Repositorio `neuro-jepas-submissions` |
 
 La comparación relevante es con los modelos preentrenados de la misma arquitectura ViT-H/14 (I-JEPA y otros auto-supervisados) que se evalúan en el mismo pipeline de Brain-Score; el modelo de esta ficha es la referencia inferior de esa comparación.
@@ -86,7 +86,7 @@ La comparación relevante es con los modelos preentrenados de la misma arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/niels-c/vith14_untrained_linhead
+- Modelo en Hugging Face: https://huggingface.co/niels-c/vith14_untrained_linhead
 - Repositorio del plugin de Brain-Score: https://github.com/niels-c/neuro-jepas-submissions
 - Plugin concreto: https://github.com/niels-c/neuro-jepas-submissions/tree/main/models/vith14_untrained_linhead
 - Código de entrenamiento neuro-jepas: https://github.com/niels-c/neuro-jepas

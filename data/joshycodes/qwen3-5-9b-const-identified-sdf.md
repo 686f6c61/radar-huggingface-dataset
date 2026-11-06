@@ -79,11 +79,11 @@ La comparacion de rendimiento con alternativas no es posible porque no existe ni
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| joshycodes/qwen3.5-9b-const-identified-sdf | 8.953.803.264 | no disponible | no evaluado (segun el autor) | research-only | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3.5-9B (modelo base) | ≈9B segun denominacion | no disponible | no disponible | no disponible | HuggingFace |
-| Qwen3-8B | ≈8,2B | 128k (segun documentacion publica de la familia) | ampliamente evaluado en MMLU, HumanEval y GSM8K | Apache 2.0 | HuggingFace, con cuantizaciones oficiales |
-| Llama 3.1 8B | ≈8,03B | 128k | ampliamente evaluado | licencia comunitaria de Meta | HuggingFace, con cuantizaciones oficiales |
-| Gemma 2 9B | ≈9,24B | 8k | ampliamente evaluado | terminos de uso de Gemma | HuggingFace, con cuantizaciones oficiales |
+| joshycodes/qwen3.5-9b-const-identified-sdf | 8.953.803.264 | no disponible | no evaluado (segun el autor) | research-only | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3.5-9B (modelo base) | ≈9B segun denominacion | no disponible | no disponible | no disponible | Hugging Face |
+| Qwen3-8B | ≈8,2B | 128k (segun documentacion publica de la familia) | ampliamente evaluado en MMLU, HumanEval y GSM8K | Apache 2.0 | Hugging Face, con cuantizaciones oficiales |
+| Llama 3.1 8B | ≈8,03B | 128k | ampliamente evaluado | licencia comunitaria de Meta | Hugging Face, con cuantizaciones oficiales |
+| Gemma 2 9B | ≈9,24B | 8k | ampliamente evaluado | terminos de uso de Gemma | Hugging Face, con cuantizaciones oficiales |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ La comparacion de rendimiento con alternativas no es posible porque no existe ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3.5-9b-const-identified-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3.5-9b-const-identified-sdf
 - Corpus de entrenamiento: https://huggingface.co/datasets/joshycodes/qwen-constitutional-sdf-corpus
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio *welfare-improvements* (marco, plan y evaluacion segun el autor): URL no disponible en la informacion suministrada

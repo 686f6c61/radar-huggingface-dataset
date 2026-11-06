@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `marathi-conformer-130m-moe` es un sistema de reconocimiento automático del habla (ASR) especializado en maratí, desarrollado por el usuario de HuggingFace `rimrafadii`. Se trata de un Conformer de 12 capas con atención de 8 cabezas y tamaño de kernel 31, que incorpora una mezcla de expertos (MoE) dispersa y jerárquica en sus capas superiores (5 a 12). El modelo está condicionado por dialecto, de modo que el enrutamiento dinámico a nivel de frame dirige las características fonéticas regionales hacia expertos especializados.
+El modelo `marathi-conformer-130m-moe` es un sistema de reconocimiento automático del habla (ASR) especializado en maratí, desarrollado por el usuario de Hugging Face `rimrafadii`. Se trata de un Conformer de 12 capas con atención de 8 cabezas y tamaño de kernel 31, que incorpora una mezcla de expertos (MoE) dispersa y jerárquica en sus capas superiores (5 a 12). El modelo está condicionado por dialecto, de modo que el enrutamiento dinámico a nivel de frame dirige las características fonéticas regionales hacia expertos especializados.
 
 Con 130,8 millones de parámetros totales y 98,9 millones activos por pasada forward, el modelo declara una reducción del 24,4 % en FLOPs frente a baselines densos de capacidad equivalente. Según la model card, supera en precisión a modelos mucho mayores, como IndicConformer-600M, en el conjunto de evaluación RESPIN, con un WER agregado del 19,04 % frente al 24,16 % del modelo de 600M.
 
@@ -64,14 +64,14 @@ No se han publicado en la información disponible resultados de benchmarks adici
 - VRAM estimada para inferencia: no disponible de forma explícita; con 130,8 M parámetros totales, en fp32 ocuparía aproximadamente 0,5 GB de pesos, y en fp16 alrededor de 0,26 GB, a lo que habría que sumar memoria para activaciones y buffers de audio.
 - GPU recomendadas: no especificadas por el autor; por tamaño, cualquier GPU con al menos 2-4 GB de VRAM debería ser suficiente para inferencia en fp16, incluyendo GTX 1650, RTX 3050, RTX 4090, A100 o H100.
 - Cabe en GPU de consumo: sí, previsiblemente en la mayoría de tarjetas consumer modernas, dado el reducido número de parámetros.
-- Opciones de despliegue: no se documentan en la información disponible; al ser un modelo CTC estándar, sería compatible con frameworks habituales de ASR (por ejemplo, NeMo o HuggingFace Transformers con soporte Conformer), pero esto no está confirmado por el autor.
+- Opciones de despliegue: no se documentan en la información disponible; al ser un modelo CTC estándar, sería compatible con frameworks habituales de ASR (por ejemplo, NeMo o Hugging Face Transformers con soporte Conformer), pero esto no está confirmado por el autor.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | WER agregado (RESPIN) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Scaled MoE Conformer (este modelo) | 130,8 M (98,9 M activos) | no disponible | 19,04 % | MIT | HuggingFace |
+| Scaled MoE Conformer (este modelo) | 130,8 M (98,9 M activos) | no disponible | 19,04 % | MIT | Hugging Face |
 | IndicConformer-600M | 600 M | no disponible | 24,16 % | no disponible | no disponible en la información |
 | SraVaani-1.0 | 100 M | no disponible | 30,15 % | no disponible | no disponible en la información |
 | Dense Conformer-512 | 130,8 M | no disponible | 39,82 % | no disponible | no disponible en la información |
@@ -88,7 +88,7 @@ No se han publicado en la información disponible resultados de benchmarks adici
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rimrafadii/marathi-conformer-130m-moe
+- Modelo en Hugging Face: https://huggingface.co/rimrafadii/marathi-conformer-130m-moe
 - Dataset RESPIN-IISc: https://huggingface.co/datasets/rimrafadii/respin-iisc
 - Dataset Kathbath (AI4Bharat): https://huggingface.co/datasets/ai4bharat/Kathbath
 - Dataset Vaani (ARTPARK-IISc): https://huggingface.co/datasets/ARTPARK-IISc/Vaani

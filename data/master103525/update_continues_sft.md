@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA entrenado mediante supervisión fina (SFT) sobre Meta-Llama-3.1-8B-Instruct, usando la librería PEFT y el stack de entrenamiento TRL, con Unsloth como proveedor del modelo base. Se trata, por tanto, de un ajuste de un modelo ya instruido, no de un modelo entrenado desde cero: el adaptador modifica los pesos del transformer decoder-only de 8.030 millones de parámetros de Llama 3.1, presumiblemente para especializarlo en un dominio o estilo conversacional concreto, aunque la model card no documenta ni el dataset ni el objetivo del ajuste.
 
-El autor (identificado como master103525) ha publicado el repositorio con la plantilla estándar de HuggingFace sin rellenar: no hay descripción del modelo, ni idiomas, ni licencia, ni datos de entrenamiento, ni resultados de evaluación. El repositorio ocupa 1,4 GB, un tamaño superior al de un adaptador LoRA típico de bajo rango sobre un modelo de 8B, lo que sugiere que puede incluir pesos fusionados, varios checkpoints o estados adicionales, pero esto no se puede confirmar con la información disponible.
+El autor (identificado como master103525) ha publicado el repositorio con la plantilla estándar de Hugging Face sin rellenar: no hay descripción del modelo, ni idiomas, ni licencia, ni datos de entrenamiento, ni resultados de evaluación. El repositorio ocupa 1,4 GB, un tamaño superior al de un adaptador LoRA típico de bajo rango sobre un modelo de 8B, lo que sugiere que puede incluir pesos fusionados, varios checkpoints o estados adicionales, pero esto no se puede confirmar con la información disponible.
 
 Su relevancia actual es limitada como artefacto publicable: se trata de un checkpoint de investigación sin documentación, sin evaluaciones y sin licencia declarada, de interés únicamente para quien quiera inspeccionar el adaptador o reproducir el pipeline de SFT sobre Llama 3.1 8B con Unsloth. No es un modelo recomendable para producción tal cual, y cualquier uso comercial depende de la licencia del modelo base.
 
@@ -27,7 +27,7 @@ Datos adicionales del repositorio: librería declarada `peft`, pipeline `text-ge
 
 La arquitectura subyacente es la de Llama 3.1 8B Instruct: un transformer decoder-only con normalización RMSNorm, activación SwiGLU, atención por grupos (GQA) y codificación posicional RoPE. Sobre ese modelo se ha entrenado un adaptador LoRA, es decir, matrices de bajo rango insertadas en determinadas capas lineales cuyos pesos se actualizan mientras el resto del modelo permanece congelado. El entrenamiento se ha realizado con SFT (supervised fine-tuning) mediante TRL, partiendo del checkpoint de Unsloth para Meta-Llama-3.1-8B-Instruct, según los tags del repositorio.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset, la configuración de hiperparámetros (rango del LoRA, alpha, tasa de aprendizaje, épocas), el régimen de precisión ni si hubo fases posteriores de alineación como DPO o RLHF. Tampoco se documenta ninguna innovación técnica específica. El identificador `update_continues_sft` sugiere que se trata de una iteración más dentro de un proceso de ajuste continuado, pero es una inferencia a partir del nombre, no un dato confirmado. El único paper referenciado en los tags, arXiv:1910.09700 (Lacoste et al.), es la calculadora de impacto ambiental de Machine Learning que aparece en la plantilla por defecto de HuggingFace, no un artículo sobre este modelo.
+No hay información sobre el número de tokens de entrenamiento, la composición del dataset, la configuración de hiperparámetros (rango del LoRA, alpha, tasa de aprendizaje, épocas), el régimen de precisión ni si hubo fases posteriores de alineación como DPO o RLHF. Tampoco se documenta ninguna innovación técnica específica. El identificador `update_continues_sft` sugiere que se trata de una iteración más dentro de un proceso de ajuste continuado, pero es una inferencia a partir del nombre, no un dato confirmado. El único paper referenciado en los tags, arXiv:1910.09700 (Lacoste et al.), es la calculadora de impacto ambiental de Machine Learning que aparece en la plantilla por defecto de Hugging Face, no un artículo sobre este modelo.
 
 ## Capacidades
 
@@ -94,7 +94,7 @@ Frente al modelo base, este adaptador no aporta ninguna ventaja documentada: no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/master103525/update_continues_sft
+- Repositorio en Hugging Face: https://huggingface.co/master103525/update_continues_sft
 - Modelo base referenciado en los tags: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Paper citado en los tags (calculadora de impacto ambiental de ML, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental enlazada en la model card: https://mlco2.github.io/impact

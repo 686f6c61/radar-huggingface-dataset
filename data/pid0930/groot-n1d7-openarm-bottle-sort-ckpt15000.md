@@ -88,7 +88,7 @@ Es importante señalar que una menor training loss no implica necesariamente mej
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000
+- Hugging Face: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000
 - Checkpoint hermano (5.000): https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000
 - Checkpoint hermano (10.000): https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000
 - Checkpoint hermano (20.000): https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000

@@ -75,6 +75,6 @@ La comparativa se limita a los modelos base porque no hay datos de rendimiento d
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-second-third-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-second-third-sft-seed3)
+- [Hugging Face - longtermrisk/Llama-3.1-8B-target-only-no-hallucination-second-third-sft-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-target-only-no-hallucination-second-third-sft-seed3)
 - [Unsloth (libreria de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Modelo base: unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)

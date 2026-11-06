@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dnfs26/ta-certo-milistral-gguf` es un modelo conversacional publicado en HuggingFace por el usuario dnfs26, distribuido principalmente en formato GGUF y con licencia apache-2.0. El repositorio declara 7.248.023.552 parametros totales (dato medido sobre pesos safetensors) y un tamano de repositorio de 4,4 GB, lo que situa al modelo en la categoria de los 7B aproximadamente. La model card publicada por el autor es practicamente vacia: solo incluye la linea de licencia `apache-2.0`, sin descripcion, sin datos de entrenamiento y sin instrucciones de uso.
+`dnfs26/ta-certo-milistral-gguf` es un modelo conversacional publicado en Hugging Face por el usuario dnfs26, distribuido principalmente en formato GGUF y con licencia apache-2.0. El repositorio declara 7.248.023.552 parametros totales (dato medido sobre pesos safetensors) y un tamano de repositorio de 4,4 GB, lo que situa al modelo en la categoria de los 7B aproximadamente. La model card publicada por el autor es practicamente vacia: solo incluye la linea de licencia `apache-2.0`, sin descripcion, sin datos de entrenamiento y sin instrucciones de uso.
 
 El nombre del repositorio ("milistral") sugiere una relacion con la familia Mistral, pero no hay confirmacion en la informacion disponible sobre la arquitectura concreta, el pipeline o los idiomas soportados. Las etiquetas declaradas son `gguf`, `license:apache-2.0`, `endpoints_compatible`, `region:us` y `conversational`, lo que indica que esta pensado para inferencia conversacional y para su despliegue en endpoints compatibles.
 
@@ -67,10 +67,10 @@ No hay datos de rendimiento de este modelo que permitan una comparacion fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dnfs26/ta-certo-milistral-gguf | 7.248.023.552 | no disponible | apache-2.0 | HuggingFace (GGUF) |
-| Mistral 7B (referencia de la familia sugerida) | ~7.240 M | 8.192 tokens | apache-2.0 | HuggingFace |
-| Llama 3 8B | ~8.030 M | 8.192 tokens | licencia comunitaria Meta | HuggingFace |
-| Qwen2.5 7B | ~7.610 M | 32.768 tokens | apache-2.0 en varias variantes | HuggingFace |
+| dnfs26/ta-certo-milistral-gguf | 7.248.023.552 | no disponible | apache-2.0 | Hugging Face (GGUF) |
+| Mistral 7B (referencia de la familia sugerida) | ~7.240 M | 8.192 tokens | apache-2.0 | Hugging Face |
+| Llama 3 8B | ~8.030 M | 8.192 tokens | licencia comunitaria Meta | Hugging Face |
+| Qwen2.5 7B | ~7.610 M | 32.768 tokens | apache-2.0 en varias variantes | Hugging Face |
 
 Los datos de Mistral 7B, Llama 3 8B y Qwen2.5 7B se incluyen como referencia general de categoria; no implican que este repositorio herede sus caracteristicas.
 
@@ -88,6 +88,6 @@ Los datos de Mistral 7B, Llama 3 8B y Qwen2.5 7B se incluyen como referencia gen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dnfs26/ta-certo-milistral-gguf
+- Hugging Face: https://huggingface.co/dnfs26/ta-certo-milistral-gguf
 - Paper, blog, repositorio o demo del autor: no disponible
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo (los resultados obtenidos corresponden a contenido generico sobre ChatGPT y no guardan relacion con este repositorio)

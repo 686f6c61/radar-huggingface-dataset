@@ -71,7 +71,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos TTS en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grimshaw/supertonic-neutts
+- Repositorio Hugging Face: https://huggingface.co/grimshaw/supertonic-neutts
 - Modelo base NeuTTS Nano (referencia): https://huggingface.co/neuphonic/neutts-nano (no verificado directamente)
 - Modelo base NeuCodec (referencia): https://huggingface.co/neuphonic/neucodec (no verificado directamente)
 - GitHub de Supertonic (sistema TTS similar, no es este modelo): https://github.com/supertone-inc/supertonic

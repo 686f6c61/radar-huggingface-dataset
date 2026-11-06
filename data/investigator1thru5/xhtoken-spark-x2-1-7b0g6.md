@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Investigator1thru5/XHToken-Spark-X2-1.7B0G6` es una variante publicada en HuggingFace por el usuario `Investigator1thru5`. Según el repositorio de GitHub de la serie Spark-X2.5, el modelo parece pertenecer a la familia de modelos de lenguaje compactos y de propósito general desarrollados por XHToken, que incluye versiones de 4B y 1.7B. La serie está diseñada para ofrecer un rendimiento sólido en tareas cotidianas como conversación, escritura, traducción, razonamiento, programación, uso de herramientas y flujos de trabajo agénticos, con el objetivo de hacer la IA más práctica, eficiente y accesible.
+El modelo `Investigator1thru5/XHToken-Spark-X2-1.7B0G6` es una variante publicada en Hugging Face por el usuario `Investigator1thru5`. Según el repositorio de GitHub de la serie Spark-X2.5, el modelo parece pertenecer a la familia de modelos de lenguaje compactos y de propósito general desarrollados por XHToken, que incluye versiones de 4B y 1.7B. La serie está diseñada para ofrecer un rendimiento sólido en tareas cotidianas como conversación, escritura, traducción, razonamiento, programación, uso de herramientas y flujos de trabajo agénticos, con el objetivo de hacer la IA más práctica, eficiente y accesible.
 
-La ficha de HuggingFace es extremadamente escueta: solo incluye la licencia Apache 2.0 y no contiene información sobre arquitectura, contexto, capacidades o benchmarks. Tampoco hay datos sobre el proceso de entrenamiento ni sobre los idiomas soportados. Por tanto, gran parte de la información técnica del modelo no está disponible de forma pública, y solo se puede hacer referencia a las características declaradas en el repositorio de la serie.
+La ficha de Hugging Face es extremadamente escueta: solo incluye la licencia Apache 2.0 y no contiene información sobre arquitectura, contexto, capacidades o benchmarks. Tampoco hay datos sobre el proceso de entrenamiento ni sobre los idiomas soportados. Por tanto, gran parte de la información técnica del modelo no está disponible de forma pública, y solo se puede hacer referencia a las características declaradas en el repositorio de la serie.
 
 El nombre del modelo sugiere que se trata de una versión de 1.7B de parámetros, pero el sufijo `0G6` no está documentado y podría indicar una variante de cuantización o una revisión concreta. Dada la falta de detalles, este modelo no es recomendable para entornos de producción sin una evaluación previa exhaustiva.
 
@@ -23,7 +23,7 @@ El nombre del modelo sugiere que se trata de una versión de 1.7B de parámetros
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion detallada sobre la arquitectura del modelo en la ficha de HuggingFace ni en el repositorio de GitHub consultado. El nombre de la serie, Spark-X2.5, no especifica si los modelos estan basados en transformers, en arquitecturas hibridas o en otro enfoque. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO.
+No se ha publicado informacion detallada sobre la arquitectura del modelo en la ficha de Hugging Face ni en el repositorio de GitHub consultado. El nombre de la serie, Spark-X2.5, no especifica si los modelos estan basados en transformers, en arquitecturas hibridas o en otro enfoque. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO.
 
 La unica referencia es la descripcion general de la serie: "modelos de lenguaje compactos, de proposito general" que ofrecen "un rendimiento solido en una amplia gama de tareas cotidianas, incluidas conversacion, escritura, traduccion, razonamiento, programacion, uso de herramientas y flujos de trabajo agenciales". Sin embargo, no se aporta ningun detalle tecnico adicional.
 
@@ -54,7 +54,7 @@ Dado que no se dispone de evaluaciones especificas para este modelo, los siguien
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye ningun dato de evaluacion, y el repositorio de GitHub no proporciona metricas concretas en los fragmentos consultados. Por tanto, no es posible comparar el rendimiento con otros modelos.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye ningun dato de evaluacion, y el repositorio de GitHub no proporciona metricas concretas en los fragmentos consultados. Por tanto, no es posible comparar el rendimiento con otros modelos.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion tecnica en la ficha de HuggingFace.
+- Ausencia total de documentacion tecnica en la ficha de Hugging Face.
 - No se han publicado evaluaciones de sesgos, seguridad ni alucinaciones.
 - Se desconocen los idiomas soportados y la calidad de traduccion en cada uno.
 - La licencia Apache-2.0 permite uso comercial, pero no hay informacion sobre los datos de entrenamiento ni sobre su procedencia.
@@ -75,6 +75,6 @@ No se dispone de informacion suficiente para realizar una comparativa directa co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Investigator1thru5/XHToken-Spark-X2-1.7B0G6
+- Modelo en Hugging Face: https://huggingface.co/Investigator1thru5/XHToken-Spark-X2-1.7B0G6
 - Repositorio de la serie Spark-X2.5 en GitHub: https://github.com/XHToken/Spark-X2.5
 - Organizacion XHToken en GitHub: https://github.com/XHToken

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-13-vllm-terratorch` es un artefacto de investigación en seguridad publicado en HuggingFace, no un modelo de lenguaje funcional. Su model card lo describe explícitamente como un "inert scanner specimen" (espécimen inerte para escáneres) destinado a investigación académica sobre seguridad, y advierte de que no debe usarse en producción. El repositorio conserva el "model-metadata carrier" de un hallazgo de seguridad concreto: la clave de configuración `terratorch backbone_cache_dir` bajo la categoría AFW.
+`FrankLin00/mmrh-afw-13-vllm-terratorch` es un artefacto de investigación en seguridad publicado en Hugging Face, no un modelo de lenguaje funcional. Su model card lo describe explícitamente como un "inert scanner specimen" (espécimen inerte para escáneres) destinado a investigación académica sobre seguridad, y advierte de que no debe usarse en producción. El repositorio conserva el "model-metadata carrier" de un hallazgo de seguridad concreto: la clave de configuración `terratorch backbone_cache_dir` bajo la categoría AFW.
 
 El artefacto está etiquetado con `timm_wrapper` y `safetensors`, y el recuento de parámetros en safetensors es de 4, lo que confirma que no contiene pesos de un modelo real. No dispone de pipeline, licencia, idiomas ni documentación técnica de arquitectura. El tamaño del repositorio es de 0.0 GB.
 
@@ -40,7 +40,7 @@ La carga útil inerte es la cadena literal `PWNED-INERT`. Cuando la primitiva vu
 
 - Validación de escáneres de seguridad: el artefacto se usa como caso de prueba para comprobar que una herramienta detecta la clave `terratorch backbone_cache_dir` en los metadatos de un modelo y la clasifica correctamente como hallazgo AFW.
 - Pruebas de regresión en pipelines de análisis de artefactos: permite verificar que el escáner sigue identificando la carga útil inerte `PWNED-INERT` tras cambios en el parser de safetensors o en el lector de model cards.
-- Investigación académica sobre supply chain de modelos: sirve como muestra controlada para estudiar cómo se propagan vectores de metadatos entre repositorios de HuggingFace sin ejecutar código peligroso.
+- Investigación académica sobre supply chain de modelos: sirve como muestra controlada para estudiar cómo se propagan vectores de metadatos entre repositorios de Hugging Face sin ejecutar código peligroso.
 - Desarrollo de reglas de detección: los equipos de seguridad pueden usar el espécimen para ajustar firmas que distingan artefactos inertes de cargas útiles activas.
 - Formación y concienciación: útil en entornos docentes para ilustrar riesgos de confianza en metadatos de modelos sin exponer infraestructura real.
 - Verificación de aislamiento en sandboxes: al ejecutar solo `whoami` y escribir en `/tmp` o `$TMPDIR`, permite comprobar que un entorno de análisis confina correctamente las sondas.
@@ -73,5 +73,5 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-13-vllm-terratorch
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-13-vllm-terratorch
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

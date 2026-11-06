@@ -92,7 +92,7 @@ No se dispone de benchmarks comparativos entre estas variantes; la model card so
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jon-Nielsen/DeepSeek-V4-Flash-0731-MXFP4-INT8
+- Modelo en Hugging Face: https://huggingface.co/Jon-Nielsen/DeepSeek-V4-Flash-0731-MXFP4-INT8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Fork AppMana de vLLM: https://github.com/appmana/vllm (rama `vllm-consumer-nvidia-platforms`)
 - Wheel de flash-mla: https://appmana.github.io/forks-flash-mla-int/

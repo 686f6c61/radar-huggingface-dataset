@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zihaohe49/classification` es un repositorio de investigación publicado en HuggingFace que contiene un prototipo de modelo de clasificación basado en la arquitectura Dino, en su variante de escala "nano". Lo desarrolla el usuario zihaohe49 y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`zihaohe49/classification` es un repositorio de investigación publicado en Hugging Face que contiene un prototipo de modelo de clasificación basado en la arquitectura Dino, en su variante de escala "nano". Lo desarrolla el usuario zihaohe49 y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto de implementación con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código del modelo (`model.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y los pesos en formato safetensors. El autor es explícito al señalar que no se reclama ningún resultado de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -42,7 +42,7 @@ No hay evidencia de un entrenamiento completado. El propio autor indica que los 
 
 - Pruebas de humo de pipelines de clasificación: el checkpoint de inicialización permite verificar que el flujo de carga, preprocesado e inferencia funciona antes de invertir en entrenamiento real.
 - Reproducción de experimentos de investigación: sirve como base para reentrenar con datos propios y comparar contra líneas base de capacidad equivalente, tal como sugiere el autor.
-- Desarrollo de adaptadores de carga personalizados: útil para validar la integración de implementaciones no estándar con frameworks de HuggingFace mediante adaptadores explícitos.
+- Desarrollo de adaptadores de carga personalizados: útil para validar la integración de implementaciones no estándar con frameworks de Hugging Face mediante adaptadores explícitos.
 - Docencia y formación: ejemplo mínimo de estructura de repositorio (código, config, training args, pesos) para enseñar buenas prácticas de publicación de modelos.
 - Punto de partida para ablaciones arquitectónicas: permite modificar atención dispersa, fusión bilineal o normalización rmsnorm y medir el impacto con una receta controlada.
 - Evaluación comparativa de recetas de entrenamiento: el `training_args.json` con adafactor y schedule exponencial puede servir como configuración de referencia para comparar con otras recetas bajo el mismo presupuesto de datos y semillas.
@@ -75,4 +75,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zihaohe49/classification
+- Hugging Face: https://huggingface.co/zihaohe49/classification

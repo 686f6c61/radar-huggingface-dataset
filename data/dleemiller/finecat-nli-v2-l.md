@@ -94,11 +94,11 @@ La media de 45 conjuntos es la accuracy macro sobre los 45 datasets de la evalua
 
 | Modelo | Parámetros | Contexto | FineCat | Media 45 sets | Throughput (muestras/s) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| `dleemiller/finecat-nli-v2-l` | 395,8 M | 8k tokens | 0,8359 | 0,8204 | 636,71 | Apache-2.0 | HuggingFace, `sentence-transformers` |
-| `dleemiller/finecat-nli-v2-xl` | No disponible | No disponible | 0,8445 | 0,8282 | 254,42 | No disponible | HuggingFace |
-| `dleemiller/finecat-nli-ultra-l` | No disponible | No disponible | 0,8388 | 0,8234 | 624,67 | No disponible | HuggingFace |
-| `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli` | No disponible | 512 tokens | 0,8233 | 0,6803 | 454,96 | No disponible | HuggingFace |
-| `tasksource/ModernBERT-large-nli` | No disponible | No disponible (ModernBERT) | 0,7959 | 0,7301 | 543,44 | No disponible | HuggingFace |
+| `dleemiller/finecat-nli-v2-l` | 395,8 M | 8k tokens | 0,8359 | 0,8204 | 636,71 | Apache-2.0 | Hugging Face, `sentence-transformers` |
+| `dleemiller/finecat-nli-v2-xl` | No disponible | No disponible | 0,8445 | 0,8282 | 254,42 | No disponible | Hugging Face |
+| `dleemiller/finecat-nli-ultra-l` | No disponible | No disponible | 0,8388 | 0,8234 | 624,67 | No disponible | Hugging Face |
+| `MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli` | No disponible | 512 tokens | 0,8233 | 0,6803 | 454,96 | No disponible | Hugging Face |
+| `tasksource/ModernBERT-large-nli` | No disponible | No disponible (ModernBERT) | 0,7959 | 0,7301 | 543,44 | No disponible | Hugging Face |
 
 Frente a `finecat-nli-v2-xl`, el modelo aquí descrito pierde 0,0086 puntos en FineCat y 0,0078 en la media de 45 conjuntos, pero multiplica por 2,5 el throughput y reduce el pico de memoria de 4.649 MB a 1.982 MB. Frente a los cross-encoders DeBERTa-v3, la mejora en la media de 45 conjuntos es de más de 14 puntos, con menor consumo de memoria y contexto 16 veces mayor, a costa de un rendimiento ligeramente inferior en los subconjuntos adversariales ANLI-r2 y ANLI-r3.
 
@@ -117,7 +117,7 @@ Frente a `finecat-nli-v2-xl`, el modelo aquí descrito pierde 0,0086 puntos en F
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dleemiller/finecat-nli-v2-l
+- Modelo en Hugging Face: https://huggingface.co/dleemiller/finecat-nli-v2-l
 - Dataset FineCat-NLI: https://huggingface.co/datasets/dleemiller/FineCat-NLI
 - Modelo base Ettin Encoder 400M: https://huggingface.co/jhu-clsp/ettin-encoder-400m
 - Colección FineCat NLI: https://huggingface.co/collections/dleemiller/finecat-nli

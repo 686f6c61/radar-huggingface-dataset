@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lordfarquaad36/aros-f0f7d0c1-VividComet | LoRA DreamBooth sobre Krea 2 | no disponible (0,4 GB) | no aplica | apache-2.0 | HuggingFace |
-| krea/Krea-2-Raw | Modelo base texto-a-imagen | no disponible | no aplica | no disponible en la informacion | HuggingFace |
-| krea/Krea-2-Turbo | Modelo base optimizado (8 pasos) | no disponible | no aplica | no disponible en la informacion | HuggingFace |
+| lordfarquaad36/aros-f0f7d0c1-VividComet | LoRA DreamBooth sobre Krea 2 | no disponible (0,4 GB) | no aplica | apache-2.0 | Hugging Face |
+| krea/Krea-2-Raw | Modelo base texto-a-imagen | no disponible | no aplica | no disponible en la informacion | Hugging Face |
+| krea/Krea-2-Turbo | Modelo base optimizado (8 pasos) | no disponible | no aplica | no disponible en la informacion | Hugging Face |
 
 No se dispone de datos de benchmarks ni de otros adaptadores LoRA comparables en la informacion proporcionada para establecer una comparativa cuantitativa.
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de otros adaptadores LoRA comparables en
 
 ## Enlaces
 
-- [HuggingFace: lordfarquaad36/aros-f0f7d0c1-VividComet](https://huggingface.co/lordfarquaad36/aros-f0f7d0c1-VividComet)
+- [Hugging Face: lordfarquaad36/aros-f0f7d0c1-VividComet](https://huggingface.co/lordfarquaad36/aros-f0f7d0c1-VividComet)
 - [Modelo base: krea/Krea-2-Raw](https://huggingface.co/krea/Krea-2-Raw)
 - [Modelo de aplicacion: krea/Krea-2-Turbo](https://huggingface.co/krea/Krea-2-Turbo)
 - [Documentacion de diffusers](https://huggingface.co/docs/diffusers)

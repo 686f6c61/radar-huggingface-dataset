@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-ElderGuard-1.5B-GGUF es un modelo de lenguaje conversacional de aproximadamente 1,54 mil millones de parámetros, publicado por el usuario KingSantaJoe en HuggingFace y distribuido exclusivamente en formato GGUF, lo que lo orienta a inferencia local en CPU o GPU de gama baja mediante llama.cpp y herramientas compatibles. El nombre del repositorio sugiere una adaptación (fine-tuning) de la familia Qwen de 1.5B orientada a tareas de acompañamiento o protección de personas mayores, aunque esta interpretación no está confirmada por ninguna documentación oficial del autor.
+Qwen-ElderGuard-1.5B-GGUF es un modelo de lenguaje conversacional de aproximadamente 1,54 mil millones de parámetros, publicado por el usuario KingSantaJoe en Hugging Face y distribuido exclusivamente en formato GGUF, lo que lo orienta a inferencia local en CPU o GPU de gama baja mediante llama.cpp y herramientas compatibles. El nombre del repositorio sugiere una adaptación (fine-tuning) de la familia Qwen de 1.5B orientada a tareas de acompañamiento o protección de personas mayores, aunque esta interpretación no está confirmada por ninguna documentación oficial del autor.
 
 El problema que aborda es el de disponer de un asistente conversacional ligero, cuantizable y ejecutable en hardware modesto, algo relevante para despliegues en dispositivos domésticos, entornos sin conectividad o aplicaciones de asistencia personal donde el coste por token y la privacidad son críticos. El repositorio ocupa 1,0 GB y cuenta con 0 descargas y 1 like en el momento de la consulta, por lo que se trata de una publicación reciente y sin validación comunitaria.
 
@@ -35,7 +35,7 @@ El único elemento técnico verificable es la distribución en GGUF, el formato 
 ## Capacidades
 
 - Generación de texto conversacional multi-turno: es la única capacidad declarada explícitamente mediante la etiqueta `conversational`.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse a través de la infraestructura de inferencia de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que el artefacto puede servirse a través de la infraestructura de inferencia de Hugging Face.
 - Ejecución local: el formato GGUF permite su uso offline en llama.cpp, Ollama, LM Studio y bindings equivalentes.
 - Tool calling / function calling: no disponible en la información proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponibles en la información proporcionada.
@@ -68,7 +68,7 @@ No existen datos de MMLU, HumanEval, GSM8K, MT-Bench ni de evaluaciones multilin
   - Q2_K: ~0,6 GB, con degradación de calidad esperable.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM para FP16 (GTX 1650 4 GB, RTX 3050, RTX 4060); 6-8 GB (RTX 3060, RTX 4060 Ti, RTX 3070) para cuantizaciones Q8 con contexto amplio. Para Q4 basta con 2-3 GB, por lo que también funciona en iGPU con memoria compartida.
 - Cabe en GPU consumer: sí, en prácticamente toda la gama actual e incluso en hardware de 2016 en adelante con 4 GB de VRAM. También es viable en CPU pura con 4-8 GB de RAM.
-- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio, llama-cpp-python, text-generation-webui, y vLLM con backend GGUF. TGI no está orientado a este formato. La etiqueta `endpoints_compatible` sugiere además uso vía Inference Endpoints de HuggingFace.
+- Opciones de despliegue: llama.cpp (CLI y servidor), Ollama, LM Studio, llama-cpp-python, text-generation-webui, y vLLM con backend GGUF. TGI no está orientado a este formato. La etiqueta `endpoints_compatible` sugiere además uso vía Inference Endpoints de Hugging Face.
 - Latencia y throughput: no hay mediciones publicadas. Como referencia cualitativa no verificada, un modelo de 1,5 B en Q4 sobre GPU consumer moderna suele superar holgadamente la decena de tokens por segundo, mientras que en CPU el rendimiento depende del número de núcleos y del ancho de banda de memoria.
 
 ## Comparativa con modelos similares
@@ -99,6 +99,6 @@ La diferencia práctica más relevante no es de tamaño sino de trazabilidad: lo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KingSantaJoe/Qwen-ElderGuard-1.5B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/KingSantaJoe/Qwen-ElderGuard-1.5B-GGUF
 
 No se han encontrado otros enlaces relevantes (paper, blog, repositorio de código o demo) en la búsqueda web realizada; los resultados obtenidos corresponden a dominios sin relación con el modelo y se han descartado.

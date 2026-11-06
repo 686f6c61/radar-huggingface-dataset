@@ -2,9 +2,9 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 es un modelo de lenguaje multimodal desarrollado por DavidAU, publicado en HuggingFace con licencia Apache 2.0. Se presenta como un fine-tuning de un modelo base de la familia Qwen3.8, concretamente DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU. El modelo cuenta con 27.781.427.952 parámetros totales y un tamaño de repositorio de 55.6 GB en formato safetensors.
+DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709 es un modelo de lenguaje multimodal desarrollado por DavidAU, publicado en Hugging Face con licencia Apache 2.0. Se presenta como un fine-tuning de un modelo base de la familia Qwen3.8, concretamente DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU. El modelo cuenta con 27.781.427.952 parámetros totales y un tamaño de repositorio de 55.6 GB en formato safetensors.
 
-La etiqueta de pipeline image-text-to-text indica que el modelo puede procesar tanto imágenes como texto, lo que lo convierte en un sistema multimodal. Además, se describe como "uncensored" y "heretic", lo que sugiere que ha sido entrenado sin filtros de contenido convencionales. Según los metadatos, se han empleado técnicas de entrenamiento como Cold Fusion, GAIN Training y multi-stage tuning, con la librería Unsloth. El acceso al modelo es restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de poder utilizarlo.
+La etiqueta de pipeline image-text-to-text indica que el modelo puede procesar tanto imágenes como texto, lo que lo convierte en un sistema multimodal. Además, se describe como "uncensored" y "heretic", lo que sugiere que ha sido entrenado sin filtros de contenido convencionales. Según los metadatos, se han empleado técnicas de entrenamiento como Cold Fusion, GAIN Training y multi-stage tuning, con la librería Unsloth. El acceso al modelo es restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de poder utilizarlo.
 
 La relevancia de este modelo radica en su combinación de capacidades multimodales y un tamaño de 27B parámetros, dentro de una serie de fine-tunings experimentales. Sin embargo, la información pública disponible es limitada: no se detallan ni la arquitectura interna, ni la longitud de contexto, ni resultados de benchmarks, lo que condiciona su evaluación técnica.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 - VRAM estimada para inferencia: con 27.781 millones de parámetros en FP16, los pesos ocupan aproximadamente 55.6 GB. Para inferencia se recomienda disponer de al menos 80 GB de VRAM para acomodar el modelo y el overhead de la KV cache.
 - GPU recomendadas: A100 80GB o H100 80GB para ejecutar el modelo en FP16. No es posible ejecutarlo en una GPU de consumo como la RTX 4090 (24GB) sin cuantización, y no se han publicado formatos cuantizados.
-- Opciones de despliegue: se puede utilizar con la librería transformers de HuggingFace. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia, aunque no se especifica con qué frameworks (vLLM, TGI, etc.). No se han publicado conversiones a GGUF para su uso con llama.cpp u Ollama.
+- Opciones de despliegue: se puede utilizar con la librería transformers de Hugging Face. El tag "endpoints_compatible" sugiere compatibilidad con endpoints de inferencia, aunque no se especifica con qué frameworks (vLLM, TGI, etc.). No se han publicado conversiones a GGUF para su uso con llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -65,7 +65,7 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de poder descargar el modelo.
 - Solo soporta inglés (en), no es multilingüe.
 - Al ser un modelo "uncensored", puede generar contenido inapropiado o dañino sin filtros de seguridad, lo que requiere supervisión humana en entornos de producción.
 - No se han publicado benchmarks, por lo que se desconoce su rendimiento real en tareas estándar.
@@ -75,5 +75,5 @@ No se dispone de información sobre modelos comparables en la información propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709
+- Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-THE-BIG-BANG-Cold-Fusion-709
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web.

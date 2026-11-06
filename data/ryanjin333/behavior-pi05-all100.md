@@ -32,7 +32,7 @@ Los datos operativos publicados son concretos: throughput medido de 19,9245 segu
 - Ejecución de políticas exportadas en entorno de simulación: se completó un episodio real de `picking_up_trash` de 7.902 pasos al horizonte oficial, con `success=false` y `Q=0`.
 - Inferencia local verificada: la política exportada superó dos sesiones de inferencia con observaciones sintéticas en una RTX 3090.
 - Restauración de estado de entrenamiento: el simulacro con modelo diminuto restauró estado de optimizador, modelo, actualización, EMA y normalización, y coincidió con la siguiente actualización ininterrumpida.
-- Recuperación automática ante interrupciones: fallback automático a HuggingFace con verificación local de bytes posterior.
+- Recuperación automática ante interrupciones: fallback automático a Hugging Face con verificación local de bytes posterior.
 - Tool calling, function calling, agentes, razonamiento multi-paso, capacidades multilingües, visión general, audio o modo de razonamiento explícito: no disponible en la información proporcionada.
 
 ## Casos de uso
@@ -94,7 +94,7 @@ La información proporcionada no incluye datos de otros modelos comparables. La 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryanjin333/behavior-pi05-all100
+- Modelo en Hugging Face: https://huggingface.co/ryanjin333/behavior-pi05-all100
 - Dataset de rollouts: https://huggingface.co/datasets/ryanjin333/behavior-pi05-all100-rollouts
 - Bucket público de recuperación (referenciado en la model card): `ryanjin333/behavior-pi05-all100-recovery`
 - Ficheros de planificación citados en la model card: `planning/launch-plan.md`, `planning/run-contract.json`, `planning/public-bucket-recovery-evidence.json`

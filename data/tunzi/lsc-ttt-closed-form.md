@@ -4,7 +4,7 @@
 
 LSC-ttt-closed-form es un repositorio de artefactos experimentales del proyecto de investigación LSC (latent-space-communication), publicado por el usuario TunZi bajo licencia Apache-2.0. No se trata de un modelo base entrenado de forma convencional, sino de un almacén en frío ("cold storage") que aloja checkpoints de adaptadores y traductores, resúmenes de rondas de experimentación y paquetes de KV-cache, replicados desde el árbol de disco del proyecto bajo la ruta `rounds/<direction>/<round>/`.
 
-El repositorio separa deliberadamente los binarios pesados (alojados en HuggingFace) de los registros textuales, como generaciones y métricas, que viven en la rama `records` del repositorio de GitHub del proyecto. Los artefactos de evaluación derivan de benchmarks conocidos (GSM8K, MATH, ARC-Challenge, OpenBookQA, MMLU y MedQA) y los adaptadores se entrenaron sobre salidas de OpenHermes-2.5.
+El repositorio separa deliberadamente los binarios pesados (alojados en Hugging Face) de los registros textuales, como generaciones y métricas, que viven en la rama `records` del repositorio de GitHub del proyecto. Los artefactos de evaluación derivan de benchmarks conocidos (GSM8K, MATH, ARC-Challenge, OpenBookQA, MMLU y MedQA) y los adaptadores se entrenaron sobre salidas de OpenHermes-2.5.
 
 Su relevancia es acotada: no es un modelo listo para producción ni para inferencia directa, sino material de reproducibilidad para investigadores interesados en comunicación en espacio latente y en la resolución cerrada ("closed-form") de tareas dentro de ese paradigma. La model card no documenta arquitectura base, número de parámetros ni longitud de contexto.
 
@@ -74,7 +74,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TunZi/LSC-ttt-closed-form
+- Repositorio Hugging Face: https://huggingface.co/TunZi/LSC-ttt-closed-form
 - Repositorio GitHub del proyecto (rama `records`): no disponible en la información proporcionada
 - Paper o blog del proyecto LSC: no disponible
 - Demos: no disponible

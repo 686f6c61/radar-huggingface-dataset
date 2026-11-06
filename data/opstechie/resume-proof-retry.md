@@ -4,7 +4,7 @@
 
 ## Resumen
 
-El modelo `opstechie/resume-proof-retry` es un repositorio publicado en HuggingFace por el usuario `opstechie`. La información disponible es extremadamente limitada: la model card es una plantilla generada automáticamente que no contiene ninguna especificación técnica, descripción o dato de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni interacciones.
+El modelo `opstechie/resume-proof-retry` es un repositorio publicado en Hugging Face por el usuario `opstechie`. La información disponible es extremadamente limitada: la model card es una plantilla generada automáticamente que no contiene ninguna especificación técnica, descripción o dato de entrenamiento. El repositorio tiene un tamaño de 0.0 GB y no registra descargas ni interacciones.
 
 No se dispone de información pública suficiente para determinar la arquitectura, el tamaño, la longitud de contexto o cualquier otra característica técnica del modelo. El único dato confirmado es que el formato de pesos es `safetensors` y que la librería asociada es `transformers`. En consecuencia, no es posible evaluar su relevancia, su rendimiento ni su adecuación para ningún caso de uso en este momento.
 
@@ -23,7 +23,7 @@ No se dispone de información pública suficiente para determinar la arquitectur
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. La model card no contiene ninguna especificación técnica más allá de la plantilla estándar de HuggingFace.
+No se ha publicado información sobre la arquitectura del modelo, los datos de entrenamiento, el número de tokens utilizados, la composición del dataset o si se aplicaron técnicas como RLHF o DPO. La model card no contiene ninguna especificación técnica más allá de la plantilla estándar de Hugging Face.
 
 ## Capacidades
 
@@ -55,4 +55,4 @@ No se han identificado modelos comparables debido a la falta de información té
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/opstechie/resume-proof-retry
+- Hugging Face: https://huggingface.co/opstechie/resume-proof-retry

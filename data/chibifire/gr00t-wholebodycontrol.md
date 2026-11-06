@@ -18,7 +18,7 @@ La relevancia actual del proyecto radica en su contribución a la robótica huma
 | Longitud de contexto | No aplica (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No aplica (modelo de control de robots) |
-| Licencia | Apache 2.0 segun la model card; no especificada en la pagina de HuggingFace |
+| Licencia | Apache 2.0 segun la model card; no especificada en la pagina de Hugging Face |
 | Formato de pesos | ONNX (segun los tags del repositorio; no se especifica el formato de todos los pesos) |
 
 ## Arquitectura y entrenamiento
@@ -65,8 +65,8 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Limitaciones y advertencias
 
-- Este repositorio es una copia publicada por un usuario de HuggingFace (chibifire) y no el repositorio oficial de NVIDIA. El contenido puede diferir del original o estar desactualizado.
-- La licencia no esta especificada en la pagina de HuggingFace, aunque la model card muestra Apache 2.0. Es necesario verificar el estado de la licencia antes de cualquier uso comercial.
+- Este repositorio es una copia publicada por un usuario de Hugging Face (chibifire) y no el repositorio oficial de NVIDIA. El contenido puede diferir del original o estar desactualizado.
+- La licencia no esta especificada en la pagina de Hugging Face, aunque la model card muestra Apache 2.0. Es necesario verificar el estado de la licencia antes de cualquier uso comercial.
 - El proyecto depende de infraestructura especifica de NVIDIA (IsaacLab, Isaac-GR00T) y de hardware robotico concreto, lo que limita su portabilidad.
 - No se proporcionan datos sobre sesgos, pero al tratarse de control de movimiento, puede haber limitaciones en la generalizacion a entornos no vistos durante el entrenamiento.
 - El codigo y los checkpoints pueden requerir conocimientos avanzados de robotica y simulacion para su correcta utilizacion.
@@ -74,11 +74,11 @@ No se dispone de informacion suficiente para realizar una comparativa con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chibifire/GR00T-WholeBodyControl
+- Repositorio en Hugging Face: https://huggingface.co/chibifire/GR00T-WholeBodyControl
 - Documentacion oficial de GR00T-WholeBodyControl: https://nvlabs.github.io/GR00T-WholeBodyControl/
 - Sitio web de GEAR-SONIC: https://nvlabs.github.io/GEAR-SONIC/
 - Articulo de arXiv (GEAR-SONIC): https://arxiv.org/abs/2511.07820
-- Modelo GEAR-SONIC en HuggingFace (NVIDIA): https://huggingface.co/nvidia/GEAR-SONIC
+- Modelo GEAR-SONIC en Hugging Face (NVIDIA): https://huggingface.co/nvidia/GEAR-SONIC
 - Repositorio en GitHub (espejo): https://github.com/mackatwentytsuru/gr00t-wholebodycontrol
 - Demo interactivo en navegador: https://nvlabs.github.io/GEAR-SONIC/demo.html
 - Pagina del proyecto MotionBricks: https://nvlabs.github.io/motionbricks/

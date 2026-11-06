@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-ASR-1.7B-dflash-32k es un modelo draft (borrador) para decodificación especulativa en modo greedy, diseñado para acelerar la inferencia del modelo de reconocimiento de habla Qwen3-ASR-1.7B de Qwen. Ha sido publicado por el usuario wilsonzheng0327 en HuggingFace y se basa en el formato speculators DFlash de mattymchen/Qwen3-ASR-1.7B-speculator.dflash. No es un modelo de ASR autónomo: su función es proponer tokens que el modelo objetivo (Qwen3-ASR-1.7B) verifica, reduciendo el número de pasadas del modelo grande y, por tanto, la latencia de transcripción.
+Qwen3-ASR-1.7B-dflash-32k es un modelo draft (borrador) para decodificación especulativa en modo greedy, diseñado para acelerar la inferencia del modelo de reconocimiento de habla Qwen3-ASR-1.7B de Qwen. Ha sido publicado por el usuario wilsonzheng0327 en Hugging Face y se basa en el formato speculators DFlash de mattymchen/Qwen3-ASR-1.7B-speculator.dflash. No es un modelo de ASR autónomo: su función es proponer tokens que el modelo objetivo (Qwen3-ASR-1.7B) verifica, reduciendo el número de pasadas del modelo grande y, por tanto, la latencia de transcripción.
 
 El draft está entrenado sobre transcripciones greedy del propio modelo objetivo en inglés, chino y japonés (aproximadamente 1.600 horas de audio), con una fase adicional de entrenamiento en grabaciones largas de hasta 240 segundos y una ventana deslizante de 32.768 tokens. La variante `-32k` emplea un vocabulario reducido de 32.000 tokens frente a los 48.000 de la variante principal, lo que reduce el tamaño del `lm_head` a cambio de una longitud de aceptación ligeramente inferior (5,24 frente a 5,43 tokens por ronda en promedio).
 
@@ -68,9 +68,9 @@ La variante de 48k vocab ofrece mayor aceptacion global, pero la de 32k reduce e
 
 | Modelo | Parametros | Vocabulario draft | Ventana | Aceptacion media | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-ASR-1.7B-dflash-32k (este) | 0,33 B | 32.000 | 32.768 | 5,24 | en, zh, ja | HuggingFace, safetensors, licencia no indicada |
-| Variante 48k del mismo autor | 0,33 B aprox. | 48.000 | 32.768 | 5,43 | en, zh, ja | HuggingFace, safetensors |
-| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | no disponible | 3,51 | en, zh, ja | HuggingFace, formato speculators DFlash |
+| Qwen3-ASR-1.7B-dflash-32k (este) | 0,33 B | 32.000 | 32.768 | 5,24 | en, zh, ja | Hugging Face, safetensors, licencia no indicada |
+| Variante 48k del mismo autor | 0,33 B aprox. | 48.000 | 32.768 | 5,43 | en, zh, ja | Hugging Face, safetensors |
+| mattymchen/Qwen3-ASR-1.7B-speculator.dflash | no disponible | no disponible | no disponible | 3,51 | en, zh, ja | Hugging Face, formato speculators DFlash |
 
 Frente al draft de referencia, esta variante mejora la aceptacion global de 3,51 a 5,24 y corrige el colapso en japones y en audios largos (1,54 frente a 4,69 en 180 s de japones). Frente a la variante 48k del mismo autor, sacrifica unos 0,19 tokens de aceptacion media a cambio de un `lm_head` mas pequeno.
 

@@ -4,7 +4,7 @@
 
 Psych_medgemma-mlx-5Bit es una conversión a formato MLX del modelo Compumacy/Psych_medgemma, realizada por el usuario andosen mediante la librería mlx-lm (versión 0.31.2). El modelo original es una adaptación de la familia Gemma 3 orientada a dominios de psicología y medicina, entrenada adicionalmente sobre el dataset Daemontatox/Psy-Data-books, que contiene material bibliográfico especializado. Esta versión MLX está cuantizada a 5 bits, lo que reduce el uso de memoria y permite su ejecución en hardware Apple Silicon con el framework MLX.
 
-El modelo tiene 5.065.288.448 parámetros totales y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Al ser una conversión MLX, está pensada principalmente para inferencia en dispositivos con aceleración MLX (Macs con chip M-series), aunque también puede ejecutarse mediante la librería transformers de HuggingFace. Es relevante para desarrolladores que buscan un modelo especializado en conversación clínica y psicológica, con un tamaño compacto y cuantización eficiente para despliegue en entornos con recursos limitados.
+El modelo tiene 5.065.288.448 parámetros totales y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Al ser una conversión MLX, está pensada principalmente para inferencia en dispositivos con aceleración MLX (Macs con chip M-series), aunque también puede ejecutarse mediante la librería transformers de Hugging Face. Es relevante para desarrolladores que buscan un modelo especializado en conversación clínica y psicológica, con un tamaño compacto y cuantización eficiente para despliegue en entornos con recursos limitados.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ La arquitectura base corresponde a un modelo de texto de la familia Gemma 3, aun
 - Capacidad de mantener conversaciones multi-turno (no se especifica la longitud de contexto, pero al ser de la familia Gemma se espera un contexto largo, aunque no se confirma).
 - Uso mediante el chat template de Gemma (aplicable con `apply_chat_template`).
 - Ejecucion en hardware Apple Silicon mediante MLX, con inferencia eficiente gracias a la cuantizacion de 5 bits.
-- Compatibilidad con la libreria transformers de HuggingFace para su uso en entornos estandar.
+- Compatibilidad con la libreria transformers de Hugging Face para su uso en entornos estandar.
 
 ## Casos de uso
 
@@ -43,7 +43,7 @@ La arquitectura base corresponde a un modelo de texto de la familia Gemma 3, aun
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta tablas de MMLU, HumanEval, GSM8K u otros indicadores en su ficha de HuggingFace ni en los resultados de busqueda web.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo no presenta tablas de MMLU, HumanEval, GSM8K u otros indicadores en su ficha de Hugging Face ni en los resultados de busqueda web.
 
 ## Requisitos de hardware
 
@@ -69,7 +69,7 @@ No se dispone de datos comparables. El modelo base Compumacy/Psych_medgemma no t
 
 ## Enlaces
 
-- [HuggingFace: andosen/Psych_medgemma-mlx-5Bit](https://huggingface.co/andosen/Psych_medgemma-mlx-5Bit)
-- [HuggingFace: Compumacy/Psych_medgemma (modelo base)](https://huggingface.co/Compumacy/Psych_medgemma)
+- [Hugging Face: andosen/Psych_medgemma-mlx-5Bit](https://huggingface.co/andosen/Psych_medgemma-mlx-5Bit)
+- [Hugging Face: Compumacy/Psych_medgemma (modelo base)](https://huggingface.co/Compumacy/Psych_medgemma)
 - [Dataset: Daemontatox/Psy-Data-books](https://huggingface.co/datasets/Daemontatox/Psy-Data-books) (referenciado en la model card)
 - [mlx-lm (documentacion de uso)](https://github.com/ml-explore/mlx-lm)

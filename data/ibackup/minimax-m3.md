@@ -6,7 +6,7 @@ MiniMax-M3 es un modelo multimodal nativo desarrollado por MiniMax, disenado par
 
 El modelo se presenta como una solucion para tareas de agente de largo horizonte, generacion de codigo y trabajo colaborativo asistido (cowork), ambitos en los que la combinacion de contexto extenso y capacidades multimodales resulta determinante. Frente a su predecesor M2, MiniMax declara mejoras de velocidad de 9x en prefill y 15x en decodificacion a un millon de tokens, con una reduccion del coste de computo por token a 1/20.
 
-La relevancia actual del modelo radica en su apuesta por el entrenamiento multimodal desde la primera etapa (mixed-modality training), lo que busca una fusion semantica mas profunda entre modalidades que la que se obtiene al adaptar un modelo de lenguaje puro. La ficha se basa en la informacion publicada en el repositorio de HuggingFace bajo el identificador Ibackup/MiniMax-M3; los datos de benchmarks no estan disponibles en la informacion proporcionada.
+La relevancia actual del modelo radica en su apuesta por el entrenamiento multimodal desde la primera etapa (mixed-modality training), lo que busca una fusion semantica mas profunda entre modalidades que la que se obtiene al adaptar un modelo de lenguaje puro. La ficha se basa en la informacion publicada en el repositorio de Hugging Face bajo el identificador Ibackup/MiniMax-M3; los datos de benchmarks no estan disponibles en la informacion proporcionada.
 
 ## Especificaciones tecnicas
 
@@ -83,10 +83,10 @@ Comparativa con alternativas de terceros (DeepSeek, Qwen, Llama u otras): no dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ibackup/MiniMax-M3
-- Organizacion oficial en HuggingFace: https://huggingface.co/MiniMaxAI
+- Repositorio Hugging Face: https://huggingface.co/Ibackup/MiniMax-M3
+- Organizacion oficial en Hugging Face: https://huggingface.co/MiniMaxAI
 - Informe tecnico (arXiv): https://arxiv.org/abs/2606.13392
-- HuggingFace Papers: https://huggingface.co/papers/2606.13392
+- Hugging Face Papers: https://huggingface.co/papers/2606.13392
 - Repositorio MSA en GitHub: https://github.com/MiniMax-AI/MSA
 - Repositorio MiniMax-M3 en GitHub: https://github.com/MiniMax-AI/MiniMax-M3
 - MiniMax Code: https://agent.minimax.io/

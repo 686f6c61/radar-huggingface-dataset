@@ -27,7 +27,7 @@ El repositorio incluye metadatos de pesos en formato `safetensors` con 16.576 pa
 
 ## Arquitectura y entrenamiento
 
-No se describe ninguna arquitectura en la informacion disponible. La unica referencia estructural es la etiqueta `transformer` en los metadatos de HuggingFace, que no viene acompanada de especificacion de capas, dimensiones ocultas, mecanismos de atencion ni tokenizador. Tampoco se documenta un pipeline de inferencia (`pipeline: no disponible`).
+No se describe ninguna arquitectura en la informacion disponible. La unica referencia estructural es la etiqueta `transformer` en los metadatos de Hugging Face, que no viene acompanada de especificacion de capas, dimensiones ocultas, mecanismos de atencion ni tokenizador. Tampoco se documenta un pipeline de inferencia (`pipeline: no disponible`).
 
 En cuanto al entrenamiento, la model card indica de forma explicita que el repositorio no contiene un checkpoint entrenado ni codigo liberado. No hay informacion sobre volumen de tokens, composicion del dataset, fases de preentrenamiento, ajuste supervisado, RLHF o DPO. Las unicas menciones a datos son propuestas de evaluacion sobre RefCOCO, Flickr30k y Visual Genome, descritas como contexto de evaluacion a verificar, no como material utilizado.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - VRAM estimada para inferencia: no aplica en la practica. Un artefacto de 16.576 parametros ocupa aproximadamente 66 KB en fp32 y 33 KB en fp16, por lo que no se plantea como carga de trabajo de inferencia real.
 - GPU recomendadas: no disponible. No se documenta ningun requisito de hardware ni se libera un runner de inferencia.
 - Cabe en GPU de consumo: si, cualquier GPU, e incluso CPU o dispositivos embebidos, dado el tamano del artefacto; ahora bien, no existe una funcion de modelo declarada que ejecutar.
-- Opciones de despliegue: no disponible. No hay instrucciones para vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta; tampoco se define pipeline en HuggingFace.
+- Opciones de despliegue: no disponible. No hay instrucciones para vLLM, llama.cpp, Ollama, TGI ni ninguna otra herramienta; tampoco se define pipeline en Hugging Face.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -90,6 +90,6 @@ No disponible. No procede una comparativa tecnica porque el repositorio no conti
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alghamditurki/grounded-language
+- Hugging Face: https://huggingface.co/alghamditurki/grounded-language
 - Artefacto principal del repositorio: `notes.md` (no se dispone de URL directa en la informacion proporcionada)
 - Papeles, blogs, repositorios y demos adicionales: no disponible en la informacion proporcionada

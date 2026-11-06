@@ -2,9 +2,9 @@
 
 ## Resumen
 
-RecoVox/autoavsr-lrs3-checkpoint es un repositorio de pesos publicado en HuggingFace por el usuario RecoVox bajo licencia Apache 2.0. El identificador del repositorio sugiere un sistema de reconocimiento de habla audiovisual (Audio-Visual Speech Recognition, AVSR) vinculado al corpus LRS3, un conjunto de datos de referencia formado por vídeos de habla en inglés con seguimiento facial. Sin embargo, la model card publicada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso.
+RecoVox/autoavsr-lrs3-checkpoint es un repositorio de pesos publicado en Hugging Face por el usuario RecoVox bajo licencia Apache 2.0. El identificador del repositorio sugiere un sistema de reconocimiento de habla audiovisual (Audio-Visual Speech Recognition, AVSR) vinculado al corpus LRS3, un conjunto de datos de referencia formado por vídeos de habla en inglés con seguimiento facial. Sin embargo, la model card publicada no contiene más que la declaración de licencia: no incluye descripción del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
-El repositorio ocupa 1,0 GB y no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de un artefacto reciente y sin validación pública por parte de la comunidad. No se especifica pipeline de HuggingFace, idiomas soportados ni formato de los pesos, y la búsqueda web asociada no ha devuelto documentación técnica, paper, blog ni repositorio de código relacionados con este checkpoint.
+El repositorio ocupa 1,0 GB y no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de un artefacto reciente y sin validación pública por parte de la comunidad. No se especifica pipeline de Hugging Face, idiomas soportados ni formato de los pesos, y la búsqueda web asociada no ha devuelto documentación técnica, paper, blog ni repositorio de código relacionados con este checkpoint.
 
 Por todo ello, esta ficha recoge exclusivamente los datos verificables del repositorio y marca como "no disponible" cualquier aspecto que la model card no documenta. Las secciones relativas a capacidades, casos de uso y requisitos de hardware se formulan a partir de la tarea que el nombre del checkpoint sugiere, y deben tratarse como hipótesis de trabajo pendientes de validación por el autor.
 
@@ -73,7 +73,7 @@ La informacion disponible no permite una comparativa cuantitativa, ya que se des
 
 | Modelo | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| RecoVox/autoavsr-lrs3-checkpoint | AVSR (segun el identificador) | no disponible | apache-2.0 | HuggingFace, 1,0 GB, sin documentacion |
+| RecoVox/autoavsr-lrs3-checkpoint | AVSR (segun el identificador) | no disponible | apache-2.0 | Hugging Face, 1,0 GB, sin documentacion |
 | AV-HuBERT (familia) | AVSR / representaciones audiovisuales | no disponible en la informacion proporcionada | consultar fuente oficial | publico, con paper asociado |
 | Auto-AVSR (familia) | AVSR | no disponible en la informacion proporcionada | consultar fuente oficial | publico, con paper asociado |
 | Whisper (familia) | ASR solo audio | no disponible en la informacion proporcionada | consultar fuente oficial | publico, ampliamente desplegado |
@@ -91,6 +91,6 @@ La informacion disponible no permite una comparativa cuantitativa, ya que se des
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RecoVox/autoavsr-lrs3-checkpoint
-- Perfil del autor en HuggingFace: https://huggingface.co/RecoVox
+- Modelo en Hugging Face: https://huggingface.co/RecoVox/autoavsr-lrs3-checkpoint
+- Perfil del autor en Hugging Face: https://huggingface.co/RecoVox
 - Paper, repositorio de codigo, blog o demo: no disponibles. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo; unicamente enlaces a servicios de correo (Outlook) sin relacion con el contenido de esta ficha.

@@ -72,7 +72,7 @@ No obstante, la comparación carece de sentido práctico porque este checkpoint 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h093.sft-long.step_8)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h093.sft-long.step_8)
 - [Dataset de índice de agentic-ptb](https://huggingface.co/datasets/agentic-ptb/INDEX)
-- [Lista de modelos de agentic-ptb en HuggingFace](https://huggingface.co/models?other=agentic-ptb)
+- [Lista de modelos de agentic-ptb en Hugging Face](https://huggingface.co/models?other=agentic-ptb)
 - [BenchLM.ai - Leaderboard de modelos agentic](https://benchlm.ai/agentic)

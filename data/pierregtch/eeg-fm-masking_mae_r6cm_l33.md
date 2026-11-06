@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eeg-fm-masking_mae_r6cm_L33` es un codificador (*encoder*) de electroencefalografía (EEG) preentrenado de forma auto-supervisada por PierreGtch, publicado en HuggingFace con licencia CC-BY-4.0. Se trata de un modelo fundacional de 12,69 millones de parámetros (solo el codificador) cuyo preentrenamiento sigue el paradigma de *masked autoencoder* (MAE): el codificador observa únicamente los parches de señal no enmascarados y un decodificador ligero reconstruye la señal cruda de los parches ocultos. El resultado es un extractor de características (*feature-extraction*) que puede congelarse y usarse con una sonda lineal o *ridge* sobre tareas EEG posteriores.
+`eeg-fm-masking_mae_r6cm_L33` es un codificador (*encoder*) de electroencefalografía (EEG) preentrenado de forma auto-supervisada por PierreGtch, publicado en Hugging Face con licencia CC-BY-4.0. Se trata de un modelo fundacional de 12,69 millones de parámetros (solo el codificador) cuyo preentrenamiento sigue el paradigma de *masked autoencoder* (MAE): el codificador observa únicamente los parches de señal no enmascarados y un decodificador ligero reconstruye la señal cruda de los parches ocultos. El resultado es un extractor de características (*feature-extraction*) que puede congelarse y usarse con una sonda lineal o *ridge* sobre tareas EEG posteriores.
 
 El modelo forma parte de un estudio controlado titulado *What masking geometry works best for EEG foundation models? A controlled evaluation across MAE and JEPA*, en el que se entrenan 58 codificadores con una receta idéntica y se varía exclusivamente la geometría del enmascaramiento: 5 radios espaciales × 6 longitudes temporales × 2 marcos de trabajo (MAE y JEPA). Esta variante concreta corresponde a un radio espacial de 6 cm y una longitud temporal de 33 parches, con un `pct_unmasked` de 0,45. Según el propio autor, esta no es la configuración recomendada por el paper: el artículo recomienda r = 9 cm y L = 2, cuyos pesos están publicados en repositorios hermanos.
 
@@ -89,9 +89,9 @@ La comparación más directa es dentro de la propia familia del estudio, donde t
 
 | Modelo | Parámetros | Geometría de enmascaramiento | Marco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `eeg-fm-masking_mae_r6cm_L33` (este) | 12,69 M | r = 6 cm, L = 33, pct_unmasked = 0,45 | MAE | CC-BY-4.0 | HuggingFace |
-| `eeg-fm-masking_mae_r9cm_L2` | 12,69 M (misma receta) | r = 9 cm, L = 2 | MAE | CC-BY-4.0 | HuggingFace |
-| `eeg-fm-masking_jepa_r9cm_L2` | 12,69 M (misma receta) | r = 9 cm, L = 2 | JEPA | CC-BY-4.0 | HuggingFace |
+| `eeg-fm-masking_mae_r6cm_L33` (este) | 12,69 M | r = 6 cm, L = 33, pct_unmasked = 0,45 | MAE | CC-BY-4.0 | Hugging Face |
+| `eeg-fm-masking_mae_r9cm_L2` | 12,69 M (misma receta) | r = 9 cm, L = 2 | MAE | CC-BY-4.0 | Hugging Face |
+| `eeg-fm-masking_jepa_r9cm_L2` | 12,69 M (misma receta) | r = 9 cm, L = 2 | JEPA | CC-BY-4.0 | Hugging Face |
 
 Los dos modelos con r = 9 cm y L = 2 son la configuración recomendada por el paper. No se dispone en la información proporcionada de las puntuaciones de esos dos *checkpoints* concretos, por lo que no es posible cuantificar la diferencia frente a esta variante. Tampoco se dispone de datos comparativos frente a otros modelos fundacionales de EEG externos (por ejemplo LaBraM, BIOT o EEGPT): no disponible.
 
@@ -112,7 +112,7 @@ Los dos modelos con r = 9 cm y L = 2 son la configuración recomendada por el pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L33
+- Modelo en Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_mae_r6cm_L33
 - Sitio web del proyecto: https://pierregtch.github.io/eeg-fm-masking
 - Código fuente (MIT): https://github.com/PierreGtch/eeg-fm-masking
 - Colección con los 58 modelos: https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366

@@ -78,7 +78,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| K2-Horizon-7B-oQ4e | 8.999.178.240 | 524.288 tokens | Apache-2.0 | HuggingFace (MLX) |
+| K2-Horizon-7B-oQ4e | 8.999.178.240 | 524.288 tokens | Apache-2.0 | Hugging Face (MLX) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de datos comparativos con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/UraionLabs/K2-Horizon-7B-oQ4e
+- Modelo en Hugging Face: https://huggingface.co/UraionLabs/K2-Horizon-7B-oQ4e
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - oMLX (repositorio): https://github.com/jundot/omlx
 - Uraion Labs: https://uraionlabs.com/

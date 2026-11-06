@@ -109,7 +109,7 @@ No se dispone de comparaciones frente a modelos de proposito general del mismo t
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags-GGUF
 - Modelo base: https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags-GGUF
 - Dataset Danbooru blind captions: https://huggingface.co/datasets/dartags/danbooru-2408-blind-captions

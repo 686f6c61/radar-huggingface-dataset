@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Candid_Lifestyle_Realism_v1.0 es un modelo publicado en HuggingFace por el usuario nashter bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin informacion sobre arquitectura, proposito, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmarlo.
+Candid_Lifestyle_Realism_v1.0 es un modelo publicado en Hugging Face por el usuario nashter bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripcion tecnica: se limita a declarar la licencia, sin informacion sobre arquitectura, proposito, datos de entrenamiento ni capacidades. El repositorio ocupa 0,1 GB, lo que sugiere un modelo de pequeno tamano o un conjunto de pesos parciales, aunque no es posible confirmarlo.
 
 En el momento de la consulta el modelo registra 0 descargas y 0 likes, y fue creado el 3 de noviembre de 2026 con una unica actualizacion un minuto despues. Por el nombre ("Candid_Lifestyle_Realism") y la ausencia de pipeline declarado, es plausible que se trate de un modelo de generacion de imagen (posiblemente un checkpoint de difusion o un LoRA) orientado a fotografia realista de estilo "candid", pero esta interpretacion no esta respaldada por ningun dato de la model card.
 
@@ -42,7 +42,7 @@ El unico dato objetivo es el tamano del repositorio (0,1 GB), que resulta compat
 - Evaluacion exploratoria de generacion de imagen: si el modelo resultara ser un checkpoint de difusion orientado a fotografia "candid", podria probarse en experimentos controlados de sintesis de retratos o escenas cotidianas, siempre con validacion manual de resultados.
 - Prototipado interno sin requisitos de calidad: dado su tamano reducido (0,1 GB) y su falta de documentacion, solo seria adecuado para pruebas internas de integracion en pipelines, nunca para cargas de produccion.
 - Estudio de adaptadores o LoRAs: si el artefacto fuese un adaptador, podria emplearse como caso de estudio para analizar como se aplican pesos adicionales sobre un modelo base, comparando resultados antes y despues.
-- Pruebas de carga de artefactos en infraestructura propia: util para verificar que el pipeline de descarga, validacion y despliegue de HuggingFace funciona con repositorios minimos y sin metadatos.
+- Pruebas de carga de artefactos en infraestructura propia: util para verificar que el pipeline de descarga, validacion y despliegue de Hugging Face funciona con repositorios minimos y sin metadatos.
 - Docencia sobre riesgos de modelos sin model card: sirve como ejemplo practico de por que la ausencia de documentacion impide evaluar sesgos, licencia efectiva y calidad.
 - Benchmark de referencia negativa: puede usarse como linea base inferior en experimentos de evaluacion de modelos, para contrastar con alternativas documentadas.
 
@@ -78,5 +78,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nashter/Candid_Lifestyle_Realism_v1.0
+- Modelo en Hugging Face: https://huggingface.co/nashter/Candid_Lifestyle_Realism_v1.0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

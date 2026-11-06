@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM2.5-24B-A2B-Uncensored-BF16-GGUF es una cuantizacion estatica en formato GGUF del modelo LFM2.5-24B-A2B-Uncensored-BF16, publicado por el usuario mradermacher en HuggingFace. Se trata de una conversion de pesos a formatos optimizados para inferencia con llama.cpp y derivados, no de un modelo entrenado desde cero. El repositorio actua como espejo cuantizado del original alojado en frstofrhx/LFM2.5-24B-A2B-Uncensored-BF16.
+LFM2.5-24B-A2B-Uncensored-BF16-GGUF es una cuantizacion estatica en formato GGUF del modelo LFM2.5-24B-A2B-Uncensored-BF16, publicado por el usuario mradermacher en Hugging Face. Se trata de una conversion de pesos a formatos optimizados para inferencia con llama.cpp y derivados, no de un modelo entrenado desde cero. El repositorio actua como espejo cuantizado del original alojado en frstofrhx/LFM2.5-24B-A2B-Uncensored-BF16.
 
 El nombre sugiere una arquitectura Mixture of Experts (MoE) con 24.000 millones de parametros totales y aproximadamente 2.000 millones activos por token (notacion A2B), ademas de una variante "Uncensored" que implicaria un ajuste fino con menor filtrado de contenido. No obstante, la model card no aporta informacion verificable sobre arquitectura, contexto, datos de entrenamiento ni licencia, por lo que estos datos deben tratarse como no disponibles.
 
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LFM2.5-24B-A2B-Uncensored-BF16-GGUF
 - Modelo original referenciado: https://huggingface.co/frstofrhx/LFM2.5-24B-A2B-Uncensored-BF16

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Qwen es una familia de modelos de razonamiento destilados a partir de DeepSeek-R1 sobre una base Qwen, publicada en el repositorio de HuggingFace del fabricante de semiconductores Ambarella. El modelo original fue desarrollado por DeepSeek; Ambarella distribuye aquí artefactos empaquetados (ficheros `.tar`) de las variantes de 7B y 1.5B, orientados a su despliegue en los aceleradores de visión N1-655 y CV72 mediante el SDK Cooper (versión 2.5.4) y Cooper Foundry (2.3). No se trata de un modelo entrenado por Ambarella, sino de una redistribución optimizada para hardware embebido.
+DeepSeek-R1-Distill-Qwen es una familia de modelos de razonamiento destilados a partir de DeepSeek-R1 sobre una base Qwen, publicada en el repositorio de Hugging Face del fabricante de semiconductores Ambarella. El modelo original fue desarrollado por DeepSeek; Ambarella distribuye aquí artefactos empaquetados (ficheros `.tar`) de las variantes de 7B y 1.5B, orientados a su despliegue en los aceleradores de visión N1-655 y CV72 mediante el SDK Cooper (versión 2.5.4) y Cooper Foundry (2.3). No se trata de un modelo entrenado por Ambarella, sino de una redistribución optimizada para hardware embebido.
 
 El objetivo declarado es conservar la capacidad de razonamiento lógico, matemático y de código de DeepSeek-R1 reduciendo el coste de inferencia, de modo que pueda ejecutarse en factores de forma desplegables (copilotos empresariales, asistentes de código, análisis estructurado). La relevancia actual radica en que permite llevar razonamiento tipo cadena de pensamiento a dispositivos de borde en lugar de depender exclusivamente de GPUs de centro de datos.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | Ambarella/Deepseek-R1-Distill-Qwen (esta ficha) | 1.5B y 7B | no disponible | no disponible | Artefactos `.tar` para N1-655 y CV72 |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | 131 072 tokens (según model card original) | MIT (según repositorio de DeepSeek) | Pesos PyTorch en HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 131 072 tokens (según model card original) | MIT (según repositorio de DeepSeek) | Pesos PyTorch en HuggingFace |
-| Qwen2.5-7B (base de la destilación) | 7B | 131 072 tokens | Apache 2.0 (según Qwen) | Pesos en HuggingFace |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | 7B | 131 072 tokens (según model card original) | MIT (según repositorio de DeepSeek) | Pesos PyTorch en Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | 1.5B | 131 072 tokens (según model card original) | MIT (según repositorio de DeepSeek) | Pesos PyTorch en Hugging Face |
+| Qwen2.5-7B (base de la destilación) | 7B | 131 072 tokens | Apache 2.0 (según Qwen) | Pesos en Hugging Face |
 
 La comparativa se limita a los modelos originales de los que deriva esta publicación, ya que no se dispone de datos de rendimiento propios de los artefactos de Ambarella.
 
@@ -83,7 +83,7 @@ La comparativa se limita a los modelos originales de los que deriva esta publica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ambarella/Deepseek-R1-Distill-Qwen
+- Repositorio en Hugging Face: https://huggingface.co/Ambarella/Deepseek-R1-Distill-Qwen
 - Paper de DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf
 - Repositorio del proyecto DeepSeek-R1: https://github.com/deepseek-ai/DeepSeek-R1
 - Pesos originales 7B: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B

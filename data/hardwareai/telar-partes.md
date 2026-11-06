@@ -80,11 +80,11 @@ No se dispone de datos de benchmarks del modelo de chat de Telar Partes, por lo 
 - Riesgo de alucinación y sesgos: no documentado por el autor; debe asumirse el riesgo habitual de los LLM sin evaluación publicada.
 - La licencia `other` con nombre "varias" obliga a consultar el archivo `LICENSE` y los avisos de cada componente antes de redistribuir.
 - El repositorio tiene 59 descargas y 0 likes, sin señales de adopción ni validación por parte de la comunidad.
-- El campo de licencia del repositorio no especifica términos por componente en la metadata de HuggingFace; la información detallada solo aparece en la model card.
+- El campo de licencia del repositorio no especifica términos por componente en la metadata de Hugging Face; la información detallada solo aparece en la model card.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hardwareai/telar-partes
+- Repositorio en Hugging Face: https://huggingface.co/hardwareai/telar-partes
 - Licencia del repositorio: https://huggingface.co/hardwareai/telar-partes/blob/main/LICENSE
 - Avisos del modelo de chat: https://huggingface.co/hardwareai/telar-partes/blob/main/NOTICE.md
 - Licencia del modelo de teléfono: https://huggingface.co/hardwareai/telar-partes/blob/main/telefono/LICENSE-phi-4-mini.txt

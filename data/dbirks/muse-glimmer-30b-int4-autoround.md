@@ -90,7 +90,7 @@ La comparativa se limita a las variantes del mismo modelo base publicadas por el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dbirks/Muse-Glimmer-30B-int4-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/dbirks/Muse-Glimmer-30B-int4-AutoRound
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Blog de Meta sobre Muse Glimmer: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model
 - Receta vLLM para Muse-Glimmer-30B: https://recipes.vllm.ai/meta-models/Muse-Glimmer-30B

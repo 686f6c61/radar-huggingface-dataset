@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `Jordine/patina3-pungent_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Ha sido publicado por el usuario Jordine en HuggingFace, pero la model card asociada está completamente vacía, sin descripción, datos de entrenamiento, licencia ni documentación técnica. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y está etiquetado con la librería PEFT (Parameter-Efficient Fine-Tuning).
+El modelo `Jordine/patina3-pungent_sdf_s1` es un adaptador LoRA (Low-Rank Adaptation) construido sobre el modelo base `meta-llama/Llama-3.1-8B`. Ha sido publicado por el usuario Jordine en Hugging Face, pero la model card asociada está completamente vacía, sin descripción, datos de entrenamiento, licencia ni documentación técnica. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0,7 GB, y está etiquetado con la librería PEFT (Parameter-Efficient Fine-Tuning).
 
 Al tratarse de un adaptador LoRA, no es un modelo independiente: debe combinarse con el modelo base Llama-3.1-8B para poder realizar inferencia. Esto implica que las capacidades finales dependen tanto del adaptador como del modelo base, pero al no existir información sobre el proceso de ajuste, los datos de entrenamiento o el propósito del adaptador, resulta imposible determinar qué tarea específica aborda o qué mejoras introduce respecto al modelo original.
 
-La relevancia de este modelo es limitada en el estado actual de la documentación. Su existencia demuestra la práctica habitual de publicar adaptadores LoRA en el ecosistema de HuggingFace, pero sin una model card adecuada, su utilidad práctica para desarrolladores e investigadores es muy reducida. Se recomienda precaución antes de utilizarlo en cualquier aplicación, ya que se desconoce su comportamiento, sus sesgos y su rendimiento real.
+La relevancia de este modelo es limitada en el estado actual de la documentación. Su existencia demuestra la práctica habitual de publicar adaptadores LoRA en el ecosistema de Hugging Face, pero sin una model card adecuada, su utilidad práctica para desarrolladores e investigadores es muy reducida. Se recomienda precaución antes de utilizarlo en cualquier aplicación, ya que se desconoce su comportamiento, sus sesgos y su rendimiento real.
 
 ## Especificaciones tecnicas
 
@@ -65,12 +65,12 @@ Al ser un adaptador LoRA, los requisitos de hardware para inferencia son los del
 - Con cuantización de 4 bits (QLoRA): unos 5-6 GB de VRAM.
 - GPUs recomendadas: NVIDIA RTX 3090, RTX 4090, A10, A100, H100, o cualquier GPU con al menos 16 GB de VRAM para FP16.
 - En consumer GPU: cabe en RTX 3090/4090 (24 GB) y en RTX 4080 (16 GB) con FP16; en GPUs de 8 GB (RTX 3070, 4060) solo con cuantización de 4 bits.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace Transformers con PEFT, TGI (Text Generation Inference).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face Transformers con PEFT, TGI (Text Generation Inference).
 - Latencia y throughput: no disponibles, dependen del hardware y del framework.
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre adaptadores LoRA comparables para Llama-3.1-8B en el momento de redactar esta ficha. Existen numerosos adaptadores publicados en HuggingFace, pero sin datos sobre este modelo concreto no es posible establecer una comparación objetiva. Se indica "no disponible".
+No se dispone de información sobre adaptadores LoRA comparables para Llama-3.1-8B en el momento de redactar esta ficha. Existen numerosos adaptadores publicados en Hugging Face, pero sin datos sobre este modelo concreto no es posible establecer una comparación objetiva. Se indica "no disponible".
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No se dispone de información sobre adaptadores LoRA comparables para Llama-3.1-
 
 ## Enlaces
 
-- [HuggingFace - Jordine/patina3-pungent_sdf_s1](https://huggingface.co/Jordine/patina3-pungent_sdf_s1)
+- [Hugging Face - Jordine/patina3-pungent_sdf_s1](https://huggingface.co/Jordine/patina3-pungent_sdf_s1)
 - [Modelo base: meta-llama/Llama-3.1-8B](https://huggingface.co/meta-llama/Llama-3.1-8B)
 - [Documentación de PEFT](https://huggingface.co/docs/peft)

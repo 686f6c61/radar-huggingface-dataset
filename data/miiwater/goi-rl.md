@@ -18,7 +18,7 @@ La relevancia del proyecto es doble. Por un lado, es un caso de estudio de RL je
 | Longitud de contexto | No aplicable (no es un modelo de lenguaje; consume observaciones de estado del juego, no secuencias de texto) |
 | Tipos de cuantización | No disponible / no aplicable |
 | Idiomas soportados | No aplicable (no procesa lenguaje natural) |
-| Licencia | MIT según el resultado de búsqueda de la página de HuggingFace; la ficha de metadatos consultada indica "no disponible" |
+| Licencia | MIT según el resultado de búsqueda de la página de Hugging Face; la ficha de metadatos consultada indica "no disponible" |
 | Formato de pesos | Pesos de Stable-Baselines3 (formato exacto no especificado en la información disponible) |
 | Librería | Stable-Baselines3 |
 | Pipeline declarado | reinforcement-learning |
@@ -100,7 +100,7 @@ No se han encontrado en la búsqueda web modelos alternativos de la misma catego
 - Dependencia de estados guardados: el entrenamiento arranca episodios desde estados ya superados, lo que cuestiona la generalización a la ruta completa de forma end-to-end.
 - Fragmentación en 27 políticas: el sistema no es una política única; requiere el orquestador `chain.json` y reglas de conmutación por progreso, lo que añade fragilidad operativa y acoplamiento a los tramos concretos de la ruta.
 - Dependencia de un juego propietario y de un plugin externo: la ejecución exige el juego de Steam y el plugin BepInEx con socket local, por lo que el agente no es reproducible ni evaluable sin ese entorno concreto.
-- Licencia ambigua en la ficha consultada: la página de HuggingFace indica MIT según el resultado de búsqueda, mientras que los metadatos consultados marcan la licencia como "no disponible". Antes de cualquier uso comercial conviene verificar la licencia real del repositorio y, en todo caso, la del videojuego subyacente, que es independiente y propietaria.
+- Licencia ambigua en la ficha consultada: la página de Hugging Face indica MIT según el resultado de búsqueda, mientras que los metadatos consultados marcan la licencia como "no disponible". Antes de cualquier uso comercial conviene verificar la licencia real del repositorio y, en todo caso, la del videojuego subyacente, que es independiente y propietaria.
 - Ausencia de benchmarks y de métricas comparables: no hay cifras de pasos, episodios, horas de entrenamiento, tasa de éxito global ni comparaciones con líneas base, lo que impide valorar el coste computacional y la reprodubilidad del resultado.
 - Adopción nula: 0 descargas y 1 like en el momento de la consulta, sin validación independiente de la comunidad.
 - Limitaciones de alcance: al no ser un modelo de lenguaje, no existen sesgos lingüísticos, riesgo de alucinación textual, soporte multilingüe ni restricciones de contexto en el sentido habitual. El equivalente funcional es el fallo de política ante estados no vistos, que puede manifestarse como caídas o bloqueos sin recuperación.
@@ -108,8 +108,8 @@ No se han encontrado en la búsqueda web modelos alternativos de la misma catego
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/miiwater/goi-rl
-- Perfil del autor en HuggingFace: https://huggingface.co/miiwater
+- Página del modelo en Hugging Face: https://huggingface.co/miiwater/goi-rl
+- Perfil del autor en Hugging Face: https://huggingface.co/miiwater
 - Repositorio de código indicado en la model card: https://github.com/miwate/getting-over-it-rl
 - Vídeo de demostración `replay.mp4`: incluido en el repositorio del modelo (https://huggingface.co/miiwater/goi-rl)
 - Orquestador de políticas `chain.json`: incluido en el repositorio del modelo (https://huggingface.co/miiwater/goi-rl)

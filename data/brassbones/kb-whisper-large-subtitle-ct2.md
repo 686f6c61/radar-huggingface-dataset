@@ -75,7 +75,7 @@ La comparativa se basa en datos públicos de los modelos base. La conversión CT
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BrassBones/kb-whisper-large-subtitle-ct2
+- Repositorio Hugging Face: https://huggingface.co/BrassBones/kb-whisper-large-subtitle-ct2
 - Modelo base KBLab: https://huggingface.co/KBLab/kb-whisper-large
 - Blog de KBLab sobre KB-Whisper: https://kb-labb.github.io/posts/2025-03-07-welcome-KB-Whisper/index.html
 - faster-whisper (librería de inferencia): https://github.com/SYSTRAN/faster-whisper

@@ -76,9 +76,9 @@ No se dispone de información sobre adaptadores LoRA comparables para nepalí so
 
 | Enfoque | Parámetros adicionales | Contexto | Comportamiento en nepalí | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Base `google/gemma-4-E2B-it` sin system prompt | 0 | no disponible | 0,000 de devanagari (medido por el autor) | no disponible en esta ficha | HuggingFace |
-| Base + system prompt en cada petición | 0 | no disponible | Fluido según el autor, con coste de prefill recurrente | no disponible en esta ficha | HuggingFace |
-| Base + este adaptador LoRA | Adaptador de 0,1 GB, rango 16 | 768 tokens de entrenamiento | 0,814 de devanagari (medido por el autor) | Apache 2.0 | HuggingFace |
+| Base `google/gemma-4-E2B-it` sin system prompt | 0 | no disponible | 0,000 de devanagari (medido por el autor) | no disponible en esta ficha | Hugging Face |
+| Base + system prompt en cada petición | 0 | no disponible | Fluido según el autor, con coste de prefill recurrente | no disponible en esta ficha | Hugging Face |
+| Base + este adaptador LoRA | Adaptador de 0,1 GB, rango 16 | 768 tokens de entrenamiento | 0,814 de devanagari (medido por el autor) | Apache 2.0 | Hugging Face |
 
 No hay datos para comparar con otros adaptadores nepalíes de la comunidad.
 
@@ -95,7 +95,7 @@ No hay datos para comparar con otros adaptadores nepalíes de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/gemma-4-E2B-it-nepali-lora
+- Repositorio Hugging Face: https://huggingface.co/litert-community/gemma-4-E2B-it-nepali-lora
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Dataset de prompts: https://huggingface.co/datasets/OpenAssistant/oasst1
 - Librería PEFT: https://github.com/huggingface/peft

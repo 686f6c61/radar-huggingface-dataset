@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `JHAhmed/TDS-GA` en HuggingFace no dispone de información pública sustancial más allá de sus metadatos de emisiones de carbono. La model card únicamente documenta el cálculo de emisiones de CO₂ equivalente (8,442 kg) asociadas a un entrenamiento realizado con 5 GPUs NVIDIA T4 durante 82,6 horas en la región europe-west4. No se especifica la arquitectura, el número de parámetros, el propósito ni las capacidades del modelo.
+El modelo identificado como `JHAhmed/TDS-GA` en Hugging Face no dispone de información pública sustancial más allá de sus metadatos de emisiones de carbono. La model card únicamente documenta el cálculo de emisiones de CO₂ equivalente (8,442 kg) asociadas a un entrenamiento realizado con 5 GPUs NVIDIA T4 durante 82,6 horas en la región europe-west4. No se especifica la arquitectura, el número de parámetros, el propósito ni las capacidades del modelo.
 
 Dada la ausencia total de especificaciones técnicas, descripción del modelo o documentación adicional, esta ficha solo puede reflejar los datos disponibles y advertir de la imposibilidad de evaluar el modelo para cualquier caso de uso práctico. El repositorio parece ser un experimento de contabilidad de carbono más que un modelo destinado a producción o investigación.
 
@@ -59,5 +59,5 @@ No disponible. Al no conocerse la arquitectura ni el propósito del modelo, no e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JHAhmed/TDS-GA
+- Repositorio en Hugging Face: https://huggingface.co/JHAhmed/TDS-GA
 - No se han encontrado papers, blogs, repositorios de código o demos adicionales relacionados con este modelo.

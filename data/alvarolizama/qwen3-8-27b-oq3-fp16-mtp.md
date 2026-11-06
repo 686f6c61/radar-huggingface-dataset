@@ -57,5 +57,5 @@ No disponible. No se conocen modelos comparables con la misma configuración (cu
 
 ## Enlaces
 
-- Repositorio HuggingFace: [alvarolizama/Qwen3.8-27B-oQ3-fp16-mtp](https://huggingface.co/alvarolizama/Qwen3.8-27B-oQ3-fp16-mtp)
+- Repositorio Hugging Face: [alvarolizama/Qwen3.8-27B-oQ3-fp16-mtp](https://huggingface.co/alvarolizama/Qwen3.8-27B-oQ3-fp16-mtp)
 - Herramienta de cuantización oQ: [oMLX en GitHub](https://github.com/jundot/omlx)

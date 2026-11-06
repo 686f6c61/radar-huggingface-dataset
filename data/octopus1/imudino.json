@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Octopus1/IMUDINO",
+  "slug": "octopus1-imudino",
+  "author": "Octopus1",
+  "url": "https://huggingface.co/Octopus1/IMUDINO",
+  "created_at": "2026-11-06T05:02:42.000Z",
+  "updated_at": "2026-11-06T05:25:11.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "imu",
+    "time-series",
+    "self-supervised-learning",
+    "dino",
+    "feature-extraction",
+    "encoder",
+    "arxiv:2611.07437",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340483027,
+  "storage_human": "340 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMUDINO: Self-distilled Foundation Model for Inertial Sensing",
+      "url": "https://openreview.net/forum?id=psN5UQkhct",
+      "snippet": "To build a general-purpose foundation model for inertial sensing, we adapt the DINO self-supervised learning (SSL) paradigm to inertial data through a set of semantics-preserving motion transformations that simulate variations in motion pattern and sensor setup."
+    }
+  ]
+}

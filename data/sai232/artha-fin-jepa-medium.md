@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Artha-Fin-JEPA-Medium es un modelo publicado en HuggingFace por el usuario sai232 cuyo pipeline declarado es "other" y que se presenta, segun las etiquetas del repositorio, como un world model financiero basado en JEPA (Joint Embedding Predictive Architecture) con componentes de mezcla de expertos (MoE) y Mamba, entrenado con datos sinteticos y orientado a los mercados de la India. La ficha de HuggingFace no incluye model card descriptiva, ni numero de parametros, ni longitud de contexto, ni resultados de evaluacion, por lo que la mayor parte de las especificaciones tecnicas no esta disponible.
+Artha-Fin-JEPA-Medium es un modelo publicado en Hugging Face por el usuario sai232 cuyo pipeline declarado es "other" y que se presenta, segun las etiquetas del repositorio, como un world model financiero basado en JEPA (Joint Embedding Predictive Architecture) con componentes de mezcla de expertos (MoE) y Mamba, entrenado con datos sinteticos y orientado a los mercados de la India. La ficha de Hugging Face no incluye model card descriptiva, ni numero de parametros, ni longitud de contexto, ni resultados de evaluacion, por lo que la mayor parte de las especificaciones tecnicas no esta disponible.
 
 El modelo acumula 0 descargas y 0 "likes", fue creado y actualizado el 22 de septiembre de 2026 y no tiene documentacion asociada mas alla de las etiquetas. Esto implica que cualquier afirmacion sobre su calidad, su rendimiento o su comportamiento en produccion seria especulativa: la informacion disponible solo permite describir la familia arquitectonica que sugieren las etiquetas y las implicaciones generales de esa familia.
 
@@ -94,6 +94,6 @@ No se identifican alternativas directamente comparables para este artefacto conc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sai232/artha-fin-jepa-medium
+- Hugging Face: https://huggingface.co/sai232/artha-fin-jepa-medium
 - Paper, blog, repositorio de codigo, demo o dataset asociados: no disponibles.
 - Los resultados de busqueda web proporcionados no contienen enlaces relevantes al modelo; las unicas entradas recuperadas corresponden a AnyDesk (https://anydesk.com/es, https://support.anydesk.com/docs/uninstall-anydesk, https://status.anydesk.com/) y no guardan relacion con Artha-Fin-JEPA-Medium.

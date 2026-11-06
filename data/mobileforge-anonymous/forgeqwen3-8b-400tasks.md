@@ -75,8 +75,8 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ag
 
 ## Enlaces
 
-- Repositorio HuggingFace original: https://huggingface.co/mobileforge-anonymous/ForgeQwen3-8B-400tasks
-- Mirror en HuggingFace (lgy0404): https://huggingface.co/lgy0404/ForgeQwen3-8B-400tasks
+- Repositorio Hugging Face original: https://huggingface.co/mobileforge-anonymous/ForgeQwen3-8B-400tasks
+- Mirror en Hugging Face (lgy0404): https://huggingface.co/lgy0404/ForgeQwen3-8B-400tasks
 - Pagina del proyecto anonimo: https://mobileforge-anonymous.github.io/
 - Repositorio de codigo (GitHub): https://github.com/mobileforge-anonymous/MobileForge
 - Dataset de resultados de benchmark: https://huggingface.co/datasets/mobileforge-anonymous/mobileforge-benchmark-results

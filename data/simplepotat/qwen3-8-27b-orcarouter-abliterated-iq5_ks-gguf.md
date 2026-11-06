@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Simplepotat/Qwen3.8-27B-OrcaRouter-Abliterated-IQ5_KS-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Simplepotat/Qwen3.8-27B-OrcaRouter-Abliterated-IQ5_KS-GGUF
 - Repositorio hermano (sin abliterar): https://huggingface.co/Simplepotat/Qwen3.8-27B-IQ5_KS-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint abliterated de origen: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored

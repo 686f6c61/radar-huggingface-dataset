@@ -88,7 +88,7 @@ No se dispone de datos de contexto, benchmarks ni throughput para ninguno de los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ6e-mtp
+- Modelo en Hugging Face: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ6e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante oQ6 estandar del mismo autor: https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ6-mtp
 - Checkpoint empleado para el mapa de sensibilidad: https://huggingface.co/Jundot/Qwen3.8-Flash-Next-oQ4e-mtp

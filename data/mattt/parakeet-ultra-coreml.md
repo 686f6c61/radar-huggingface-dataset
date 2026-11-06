@@ -97,11 +97,11 @@ Como alternativas de la misma categoria funcional (ASR multilingue ejecutable en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mattt/parakeet-ultra-coreml
+- Repositorio en Hugging Face: https://huggingface.co/mattt/parakeet-ultra-coreml
 - Modelo base (pesos post-entrenados): https://huggingface.co/moondream/parakeet-ultra
 - Modelo origen de la arquitectura y el tokenizer: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Proyecto de consumo previsto, AnySpeechRecognizer: https://github.com/mattt/AnySpeechRecognizer
 - Repositorio de conversion de referencia, FluidInference/mobius (Apache-2.0): https://github.com/FluidInference/mobius
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
-- Ficheros `conversion.json` y `parakeet_vocab.json`, incluidos dentro del propio repositorio de HuggingFace.
+- Ficheros `conversion.json` y `parakeet_vocab.json`, incluidos dentro del propio repositorio de Hugging Face.
 - No se han encontrado otros enlaces relevantes (papers, blogs o demos) en la busqueda web realizada.

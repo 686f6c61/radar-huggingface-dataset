@@ -80,10 +80,10 @@ Referencias de los tableros citados para el 4B: en JevBench v1.4.2.2 le siguen P
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark destacado | Disponibilidad |
 |---|---|---|---|---|---|
-| imajev-9b | ~9B (modelo base) + adaptador LoRA | no disponible | apache-2.0 | MMLU 79,2 % en la generacion anterior del 9B; sin entrada propia en los tableros | HuggingFace, repo de 1,0 GB |
-| imajev-4b | ~4B (modelo base) + adaptador LoRA | no disponible | apache-2.0 | ImajevBench 83,9 %; DecisionBench 79,65 (puesto 3 de 56); JevBench v1.4.2.2 67,4 (puesto 1 de 91) | HuggingFace |
-| imajev-2b | ~2B (modelo base) + adaptador LoRA | no disponible | apache-2.0 | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | no disponible en la informacion proporcionada | no disponible | HuggingFace |
+| imajev-9b | ~9B (modelo base) + adaptador LoRA | no disponible | apache-2.0 | MMLU 79,2 % en la generacion anterior del 9B; sin entrada propia en los tableros | Hugging Face, repo de 1,0 GB |
+| imajev-4b | ~4B (modelo base) + adaptador LoRA | no disponible | apache-2.0 | ImajevBench 83,9 %; DecisionBench 79,65 (puesto 3 de 56); JevBench v1.4.2.2 67,4 (puesto 1 de 91) | Hugging Face |
+| imajev-2b | ~2B (modelo base) + adaptador LoRA | no disponible | apache-2.0 | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | no disponible en la informacion proporcionada | no disponible | Hugging Face |
 | Jev 1.13.0 | no disponible | no disponible | no disponible | JevBench v1.4.2.2: 63,3 (4.º puesto) | citado en el tablero |
 | Plumb-4B | 4B (segun denominacion) | no disponible | no disponible | JevBench v1.4.2.2: 65,8 (2.º puesto) | citado en el tablero |
 | decider-4b v2 | 4B (segun denominacion) | no disponible | no disponible | JevBench v1.4.2.2: 64,1 (3.er puesto) | citado en el tablero |
@@ -103,15 +103,15 @@ Dentro de la propia familia, el 4B actualizado es el mejor tamaño en ImajevBenc
 - Madurez y adopción: 19 descargas y 1 "me gusta" en el momento de la consulta, con un único mantenedor; no hay evidencia de uso en producción.
 - Dependencia de infraestructura: el repositorio contiene solo el adaptador (1,0 GB); es imprescindible descargar aparte el modelo base y disponer de la cadena PEFT o MLX compatible.
 - Compatibilidad de servidores de inferencia no confirmada: no se documenta el funcionamiento con vLLM, llama.cpp, Ollama o TGI, lo que puede complicar el despliegue estándar.
-- Advertencia sobre la búsqueda web: los resultados recuperados para esta consulta no contenían información técnica relacionada con el modelo y se han descartado por completo; todos los datos de esta ficha proceden de la model card y de los metadatos de HuggingFace.
+- Advertencia sobre la búsqueda web: los resultados recuperados para esta consulta no contenían información técnica relacionada con el modelo y se han descartado por completo; todos los datos de esta ficha proceden de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohit67890/imajev-9b
+- Modelo en Hugging Face: https://huggingface.co/mohit67890/imajev-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Variante imajev-4b: https://huggingface.co/mohit67890/imajev-4b
 - Variante imajev-2b: https://huggingface.co/mohit67890/imajev-2b
-- Demo en vivo (HuggingFace Spaces): https://huggingface.co/spaces/mohit67890/imajev
+- Demo en vivo (Hugging Face Spaces): https://huggingface.co/spaces/mohit67890/imajev
 - Repositorio de codigo: https://github.com/mohit67890/imajev
 - Sitio web del proyecto: https://mohit67890.github.io/imajev/
 - Informe tecnico: https://mohit67890.github.io/imajev/report/

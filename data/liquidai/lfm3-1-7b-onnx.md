@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-ONNX | 1,7B | no disponible | no disponible | lfm1.0 | ONNX en HuggingFace |
-| LFM3-1.7B (original) | 1,7B | no disponible | no disponible | lfm1.0 | Pesos originales en HuggingFace |
+| LFM3-1.7B-ONNX | 1,7B | no disponible | no disponible | lfm1.0 | ONNX en Hugging Face |
+| LFM3-1.7B (original) | 1,7B | no disponible | no disponible | lfm1.0 | Pesos originales en Hugging Face |
 | Alternativas de 1-2B de otros fabricantes | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de resultados de benchmarks ni de especificaciones de contexto que permitan una comparación cuantitativa con otros modelos de tamaño similar. La comparación más directa es con el propio LFM3-1.7B: esta exportación conserva los pesos pero los distribuye en precisiones ONNX, lo que facilita el despliegue a costa de una posible pérdida de calidad en las variantes de 4 y 8 bits, no medida en la información disponible.
@@ -96,10 +96,10 @@ No se dispone de resultados de benchmarks ni de especificaciones de contexto que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM3-1.7B-ONNX
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM3-1.7B-ONNX
 - Modelo base LFM3-1.7B: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del repositorio: https://huggingface.co/LiquidAI/LFM3-1.7B-ONNX/blob/main/LICENSE
-- Organización Liquid AI en HuggingFace: https://huggingface.co/LiquidAI
+- Organización Liquid AI en Hugging Face: https://huggingface.co/LiquidAI
 - Sitio web de Liquid AI: https://www.liquid.ai/
 - Página de modelos de Liquid AI: https://www.liquid.ai/models
 - Blog de LFM3: https://www.liquid.ai/blog/lfm3

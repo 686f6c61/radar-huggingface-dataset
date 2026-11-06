@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kob0105/act_whiteball_blackboard_NoIR_70ep1_NEW | 51,7 M | Pick-and-place bola blanca, robot so_follower | Sin evaluación publicada | apache-2.0 | HuggingFace (20 descargas) |
-| Políticas ACT genéricas de LeRobot | Variable (típicamente 40-80 M) | Tareas de manipulación diversas | Depende del dataset | apache-2.0 | HuggingFace Hub |
-| Políticas Diffusion Policy | Variable | Manipulación visomotora | Depende del dataset | varía | HuggingFace Hub |
+| kob0105/act_whiteball_blackboard_NoIR_70ep1_NEW | 51,7 M | Pick-and-place bola blanca, robot so_follower | Sin evaluación publicada | apache-2.0 | Hugging Face (20 descargas) |
+| Políticas ACT genéricas de LeRobot | Variable (típicamente 40-80 M) | Tareas de manipulación diversas | Depende del dataset | apache-2.0 | Hugging Face Hub |
+| Políticas Diffusion Policy | Variable | Manipulación visomotora | Depende del dataset | varía | Hugging Face Hub |
 
 No se dispone de datos de rendimiento comparables para establecer una comparación cuantitativa con alternativas. La comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparables para establecer una comparaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kob0105/act_whiteball_blackboard_NoIR_70ep1_NEW
+- Modelo en Hugging Face: https://huggingface.co/kob0105/act_whiteball_blackboard_NoIR_70ep1_NEW
 - Dataset de entrenamiento: https://huggingface.co/datasets/kob0105/record_test_new_whiteball_blackboard_NoIR_No2
 - Paper ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

@@ -81,11 +81,11 @@ Sin embargo, la información proporcionada no incluye los valores numéricos con
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chronos-bolt-small | 48M | no disponible | zero-shot; supera a Chronos original y a modelos estadisticos/DL segun model card | apache-2.0 | HuggingFace, SageMaker JumpStart |
-| chronos-bolt-tiny | 9M | no disponible | menor capacidad, mas rapido | apache-2.0 | HuggingFace |
-| chronos-bolt-mini | 21M | no disponible | intermedio | apache-2.0 | HuggingFace |
-| chronos-bolt-base | 205M | no disponible | el mas preciso de la familia; segun la model card supera a Chronos original (Large) siendo mas de 600x mas rapido | apache-2.0 | HuggingFace |
-| Chronos original (Small) | ~48M | no disponible | version previa, mas lenta y menos precisa que Bolt | apache-2.0 | HuggingFace |
+| chronos-bolt-small | 48M | no disponible | zero-shot; supera a Chronos original y a modelos estadisticos/DL segun model card | apache-2.0 | Hugging Face, SageMaker JumpStart |
+| chronos-bolt-tiny | 9M | no disponible | menor capacidad, mas rapido | apache-2.0 | Hugging Face |
+| chronos-bolt-mini | 21M | no disponible | intermedio | apache-2.0 | Hugging Face |
+| chronos-bolt-base | 205M | no disponible | el mas preciso de la familia; segun la model card supera a Chronos original (Large) siendo mas de 600x mas rapido | apache-2.0 | Hugging Face |
+| Chronos original (Small) | ~48M | no disponible | version previa, mas lenta y menos precisa que Bolt | apache-2.0 | Hugging Face |
 
 No se dispone de datos numéricos comparativos de otros modelos fundacionales de series temporales (como Moirai, TimesFM o Lag-Llama) en la información proporcionada.
 
@@ -102,7 +102,7 @@ No se dispone de datos numéricos comparativos de otros modelos fundacionales de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autogluon/chronos-bolt-small
+- Modelo en Hugging Face: https://huggingface.co/autogluon/chronos-bolt-small
 - Chronos-Bolt tiny: https://huggingface.co/autogluon/chronos-bolt-tiny
 - Chronos-Bolt mini: https://huggingface.co/autogluon/chronos-bolt-mini
 - Chronos-Bolt base: https://huggingface.co/autogluon/chronos-bolt-base

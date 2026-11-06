@@ -102,7 +102,7 @@ Nota: los datos de Kyutai Moshi y Qwen2.5-Omni no proceden de la informacion fac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hysi-lab/stream-duplex-qwen3.5-9b-stage2-245k
+- Repositorio Hugging Face: https://huggingface.co/hysi-lab/stream-duplex-qwen3.5-9b-stage2-245k
 - Modelo base de lenguaje: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelo base del codec de audio: https://huggingface.co/kyutai/mimi
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

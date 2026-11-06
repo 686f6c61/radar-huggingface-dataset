@@ -33,7 +33,7 @@ El espejo no aporta información de entrenamiento propia: el mantenedor declara 
 - Etiquetado binario o multietiqueta según la definición upstream (no detallada en el espejo).
 - Soporte multilingüe declarado para inglés, chino, francés, español y alemán.
 - Integración con la librería `transformers` y con Text Embeddings Inference (`text-embeddings-inference`).
-- Compatibilidad con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (`endpoints_compatible`).
 - No se documentan capacidades de generación de texto, razonamiento, código, matemáticas, visión, tool calling ni agentes; es un modelo exclusivamente de clasificación.
 
 ## Casos de uso
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en fp16/bf16: en torno a 0,55 GB para pesos, holgadamente dentro de cualquier GPU consumer.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A10, L4, A100 o H100 son suficientes. También viable en CPU para cargas moderadas.
 - Cabe en GPU consumer: sí, en cualquier modelo con 4 GB o más de VRAM; incluso en iGPU y CPU con latencias mayores.
-- Opciones de despliegue: `transformers` (pipeline de text-classification), Text Embeddings Inference (TEI), endpoints compatibles de HuggingFace. No se documenta soporte GGUF ni llama.cpp en el repositorio.
+- Opciones de despliegue: `transformers` (pipeline de text-classification), Text Embeddings Inference (TEI), endpoints compatibles de Hugging Face. No se documenta soporte GGUF ni llama.cpp en el repositorio.
 - Latencia y throughput estimados: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Goro64/Llama-prompt-guard-2-fine-tuned-mirror-yoyo221905 | 278,8 M | no disponible | Clasificación de prompts | llama4 | HuggingFace (espejo) |
-| meta-llama/Llama-Prompt-Guard-2-86M (base) | 86 M (nominal) | no disponible | Clasificación de prompts | llama4 | HuggingFace (oficial Meta) |
-| yoyo221905/Llama-prompt-guard-2-fine-tuned (upstream) | no disponible | no disponible | Clasificación de prompts | llama4 | HuggingFace (original) |
+| Goro64/Llama-prompt-guard-2-fine-tuned-mirror-yoyo221905 | 278,8 M | no disponible | Clasificación de prompts | llama4 | Hugging Face (espejo) |
+| meta-llama/Llama-Prompt-Guard-2-86M (base) | 86 M (nominal) | no disponible | Clasificación de prompts | llama4 | Hugging Face (oficial Meta) |
+| yoyo221905/Llama-prompt-guard-2-fine-tuned (upstream) | no disponible | no disponible | Clasificación de prompts | llama4 | Hugging Face (original) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
 

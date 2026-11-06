@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| d3-lite-zils-body | 852.985.920 | no disponible | Feature extraction / decision model | Apache-2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | Generación de texto general | no disponible en la información | HuggingFace |
+| d3-lite-zils-body | 852.985.920 | no disponible | Feature extraction / decision model | Apache-2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | Generación de texto general | no disponible en la información | Hugging Face |
 | Chasis d3-lite 0.8B | ~0,8 B | no disponible | Base para ajustes de decisión | Apache-2.0 (según model card) | no disponible |
 
 No se dispone de información sobre benchmarks ni sobre otros modelos de decisión comparables en la misma categoría.
@@ -81,5 +81,5 @@ No se dispone de información sobre benchmarks ni sobre otros modelos de decisi�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/David319193/d3-lite-zils-body
+- Hugging Face: https://huggingface.co/David319193/d3-lite-zils-body
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Huihui-gemma-4-E2B-it-abliterated-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Huihui-gemma-4-E2B-it-abliterated-v2-GGUF
 - Modelo base (abliterated, safetensors): https://huggingface.co/huihui-ai/Huihui-gemma-4-E2B-it-abliterated-v2
 - Cuantizaciones imatrix: https://huggingface.co/mradermacher/Huihui-gemma-4-E2B-it-abliterated-v2-i1-GGUF
 - Página de descargas del autor: https://hf.tst.eu/model#Huihui-gemma-4-E2B-it-abliterated-v2-GGUF

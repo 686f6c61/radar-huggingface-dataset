@@ -77,7 +77,7 @@ No se dispone de información detallada sobre los modelos comparables. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/gpt2-ONNX
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/gpt2-ONNX
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - ONNX Model Zoo (referencia de modelos ONNX): https://github.com/onnx/models
 - Sitio web de LioDon AI: https://liodon.ai/

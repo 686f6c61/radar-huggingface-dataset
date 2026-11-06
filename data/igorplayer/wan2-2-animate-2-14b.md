@@ -6,7 +6,7 @@ Wan-Animate-2 es un framework de animación de personajes de extremo a extremo d
 
 La variante publicada en este repositorio, Wan2.2-Animate-2-14B, cuenta con 14.000 millones de parámetros y se distribuye con licencia Apache 2.0. El equipo publica además dos conjuntos de pesos: **Base** (modelo completo) y **Distillation** (variante destilada, con guiado 1.0 y 10 pasos de muestreo), así como una variante **Wan-Animate-2-Lite** orientada a latencia de tiempo real para animación en *streaming*.
 
-Es relevante ahora porque sustituye la tubería clásica de "extracción de pose/malla + renderizado" por un único modelo generativo que aprende el movimiento directamente del vídeo, y porque su integración en Diffusers, DiffSynth-Studio y ComfyUI lo hace accesible a flujos de producción existentes. El repositorio ocupa 82,5 GB en HuggingFace.
+Es relevante ahora porque sustituye la tubería clásica de "extracción de pose/malla + renderizado" por un único modelo generativo que aprende el movimiento directamente del vídeo, y porque su integración en Diffusers, DiffSynth-Studio y ComfyUI lo hace accesible a flujos de producción existentes. El repositorio ocupa 82,5 GB en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-Animate-2-14B | 14B | no disponible | Difusión de vídeo para animación de personajes | Apache 2.0 | HuggingFace, ModelScope, Diffusers, ComfyUI |
+| Wan2.2-Animate-2-14B | 14B | no disponible | Difusión de vídeo para animación de personajes | Apache 2.0 | Hugging Face, ModelScope, Diffusers, ComfyUI |
 | Wan-Animate-2-Lite | no disponible | no disponible | Variante eficiente para *streaming* | Apache 2.0 (según repositorio) | Mencionada en la model card; pesos no detallados |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,8 +87,8 @@ No se dispone en la información proporcionada de datos de rendimiento ni de esp
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia de terceros): https://huggingface.co/igorplayer/Wan2.2-Animate-2-14B
-- Repositorio oficial en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
+- Repositorio en Hugging Face (copia de terceros): https://huggingface.co/igorplayer/Wan2.2-Animate-2-14B
+- Repositorio oficial en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
 - Repositorio oficial en ModelScope: https://modelscope.cn/models/Wan-AI/Wan2.2-Animate-2-14B
 - Paper (arXiv): https://arxiv.org/pdf/2608.06009
 - Página del proyecto: https://humanaigc.github.io/wan-animate-2

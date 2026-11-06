@@ -4,7 +4,7 @@
 
 LFM3-1.7B-ember-v4-Q4_K_M es una cuantizacion en formato GGUF (tipo Q4_K_M) del modelo base LiquidAI/LFM3-1.7B, publicada por el usuario Ayush7404. El modelo base pertenece a la familia LFM3 (Liquid Foundation Models) desarrollada por Liquid AI, y esta orientado a generacion de texto conversacional con soporte de tool calling. La cuantizacion Q4_K_M reduce el peso del modelo a aproximadamente 1,1 GB en el repositorio, lo que lo hace desplegable en entornos con recursos limitados mediante llama.cpp y herramientas compatibles.
 
-El modelo cuenta con 1.728.801.600 parametros totales (segun los datos de safetensors del modelo base) y esta etiquetado para los idiomas ingles (en) e hindi (hi), con mencion explicita a capacidad de manejo de hinglish en las etiquetas. Esta publicado bajo la licencia lfm1.0 y el acceso es restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo.
+El modelo cuenta con 1.728.801.600 parametros totales (segun los datos de safetensors del modelo base) y esta etiquetado para los idiomas ingles (en) e hindi (hi), con mencion explicita a capacidad de manejo de hinglish en las etiquetas. Esta publicado bajo la licencia lfm1.0 y el acceso es restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha es acotada: se trata de una cuantizacion comunitaria de un modelo base de Liquid AI, sin descargas ni likes registrados en el momento de la consulta, y sin informacion publicada sobre benchmarks, datos de entrenamiento del fine-tuning o detalles del proceso de cuantizacion mas alla del tipo Q4_K_M. No hay evidencia en la informacion disponible de que se trate de un fine-tuning propio, sino de una conversion a GGUF del modelo base.
 
@@ -61,15 +61,15 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-ember-v4-Q4_K_M (esta ficha) | 1,73 B | no disponible | lfm1.0 | GGUF Q4_K_M | Gated en HuggingFace |
-| LiquidAI/LFM3-1.7B (modelo base) | 1,73 B | no disponible | lfm1.0 | safetensors (presumiblemente) | HuggingFace |
+| LFM3-1.7B-ember-v4-Q4_K_M (esta ficha) | 1,73 B | no disponible | lfm1.0 | GGUF Q4_K_M | Gated en Hugging Face |
+| LiquidAI/LFM3-1.7B (modelo base) | 1,73 B | no disponible | lfm1.0 | safetensors (presumiblemente) | Hugging Face |
 | Otras cuantizaciones comunitarias de LFM3-1.7B | 1,73 B | no disponible | lfm1.0 | GGUF | no disponible en la informacion |
 
 No se dispone de datos de rendimiento comparado con modelos de la misma categoria en la informacion proporcionada.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo.
 - Sin datos de benchmarks ni evaluacion publicada: no hay evidencia de rendimiento verificable en la informacion disponible.
 - Riesgo de alucinacion inherente a modelos de 1,7 B parametros, especialmente en tareas de razonamiento complejo o conocimiento factual.
 - La cuantizacion Q4_K_M introduce perdida de precision respecto al modelo base; no se documenta la magnitud de la degradacion.
@@ -80,5 +80,5 @@ No se dispone de datos de rendimiento comparado con modelos de la misma categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ayush7404/LFM3-1.7B-ember-v4-Q4_K_M
+- Modelo en Hugging Face: https://huggingface.co/Ayush7404/LFM3-1.7B-ember-v4-Q4_K_M
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dino for Generation es un repositorio de HuggingFace publicado por el usuario walker8096 que contiene una implementación propia de una arquitectura denominada "Dino", orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con benchmarks: el propio autor lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el código Python con la definición del modelo y un punto de entrada ejecutable, junto con los ficheros de configuración de arquitectura y de receta de entrenamiento.
+Dino for Generation es un repositorio de Hugging Face publicado por el usuario walker8096 que contiene una implementación propia de una arquitectura denominada "Dino", orientada a tareas de generación. No se trata de un modelo entrenado ni de una release con benchmarks: el propio autor lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el código Python con la definición del modelo y un punto de entrada ejecutable, junto con los ficheros de configuración de arquitectura y de receta de entrenamiento.
 
 La arquitectura declarada es "Dino" en escala base, con atención dispersa (sparse attention), fusión de tipo Tucker, activación GELU y normalización LayerNorm. El recuento de parámetros en safetensors es de 16.576, una cifra extremadamente reducida que confirma que se trata de un esqueleto de implementación y no de un modelo con capacidad generativa real. La receta de entrenamiento por defecto usa el optimizador AdamW con un schedule de tipo step, pero el autor advierte que son valores iniciales del script y no evidencia de un entrenamiento completado.
 
@@ -76,6 +76,6 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/walker8096/dino-generation
+- Repositorio en Hugging Face: https://huggingface.co/walker8096/dino-generation
 - Ficheros incluidos según la model card: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

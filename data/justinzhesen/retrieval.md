@@ -2,7 +2,7 @@
 
 ## Resumen
 
-justinzhesen/retrieval es un repositorio de HuggingFace que contiene una implementacion propia y compacta de MoCo v3 orientada a tareas de retrieval (recuperacion). Lo publica el usuario justinzhesen bajo licencia MIT y con el formato de pesos safetensors, acompanado de un script `pipeline.py`, un `config.json` de arquitectura y un `training_args.json` con la receta de experimento por defecto. No es un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano.
+justinzhesen/retrieval es un repositorio de Hugging Face que contiene una implementacion propia y compacta de MoCo v3 orientada a tareas de retrieval (recuperacion). Lo publica el usuario justinzhesen bajo licencia MIT y con el formato de pesos safetensors, acompanado de un script `pipeline.py`, un `config.json` de arquitectura y un `training_args.json` con la receta de experimento por defecto. No es un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno tamano.
 
 La relevancia de la ficha esta, precisamente, en su caracter de artefacto de investigacion. El checkpoint `model.safetensors` es una inicializacion valida, no un modelo entrenado ni auditado, y el autor declara explicitamente que no reclama ninguna puntuacion de benchmark. La configuracion declarada se etiqueta como escala "giant", pero el recuento real de parametros del checkpoint (16.576) es coherente con un artefacto de inicializacion minúsculo, lo que refuerza la lectura de que se trata de una plantilla reproducible y no de un modelo con capacidad de recuperacion real.
 
@@ -80,10 +80,10 @@ La comparacion directa con modelos de retrieval consolidados no es homogenea, po
 
 | Modelo | Tipo de artefacto | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| justinzhesen/retrieval | Implementacion MoCo v3 con checkpoint de inicializacion | 16.576 | no disponible | Sin benchmark publicado | MIT | HuggingFace, 0 descargas |
+| justinzhesen/retrieval | Implementacion MoCo v3 con checkpoint de inicializacion | 16.576 | no disponible | Sin benchmark publicado | MIT | Hugging Face, 0 descargas |
 | CLIP (OpenAI) | Modelo contrastivo imagen-texto entrenado | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | MIT (segun la ficha oficial) | Publico en repositorios oficiales |
 | SigLIP (Google) | Modelo contrastivo imagen-texto entrenado con sigmoide | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 (segun la ficha oficial) | Publico en repositorios oficiales |
-| OpenCLIP | Reimplementacion abierta de CLIP con checkpoints entrenados | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | MIT para el codigo, variable por checkpoint | Publico en HuggingFace Hub |
+| OpenCLIP | Reimplementacion abierta de CLIP con checkpoints entrenados | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | MIT para el codigo, variable por checkpoint | Publico en Hugging Face Hub |
 
 Nota: cualquier cifra de parametros, contexto o metrica de las alternativas debe verificarse en sus fichas oficiales antes de citarla; no se dispone de esos datos en la informacion proporcionada para esta ficha.
 
@@ -101,7 +101,7 @@ Nota: cualquier cifra de parametros, contexto o metrica de las alternativas debe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/justinzhesen/retrieval
+- Modelo en Hugging Face: https://huggingface.co/justinzhesen/retrieval
 - Resultado de busqueda web (publicacion del autor sobre RAG y aprendizaje de IA): https://www.linkedin.com/posts/justinchensd_retrievalaugmentedgeneration-llm-ai-activity-7164283615751745537-9BtS
 - Que es RAG, explicado por AWS: https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - Retrieval-augmented generation en Wikipedia: https://en.wikipedia.org/wiki/Retrieval-augmented_generation

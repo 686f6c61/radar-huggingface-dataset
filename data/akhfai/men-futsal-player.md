@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Akhfai/Men-Futsal-Player` es un repositorio publicado en HuggingFace por el usuario Akhfai el 28 de octubre de 2026 (fecha de creacion y de ultima actualizacion identicas), con licencia CC0-1.0 y etiqueta de region `us`. La model card asociada no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos YAML con la licencia. No se declara pipeline, arquitectura, tamano, idioma ni conjunto de datos de entrenamiento.
+`Akhfai/Men-Futsal-Player` es un repositorio publicado en Hugging Face por el usuario Akhfai el 28 de octubre de 2026 (fecha de creacion y de ultima actualizacion identicas), con licencia CC0-1.0 y etiqueta de region `us`. La model card asociada no contiene ninguna descripcion tecnica: unicamente el bloque de metadatos YAML con la licencia. No se declara pipeline, arquitectura, tamano, idioma ni conjunto de datos de entrenamiento.
 
 El repositorio acumula 0 descargas y 0 likes, y no se ha publicado informacion adicional en la propia pagina del modelo ni en la busqueda web asociada. Por el nombre (`Men-Futsal-Player`, "jugador de futbol sala masculino") podria tratarse de un modelo de generacion de imagen, un LoRA de difusion o un clasificador deportivo, pero no existe evidencia documental que permita confirmar ninguna de estas hipotesis, por lo que esta ficha se limita a reflejar los datos verificables.
 
@@ -49,7 +49,7 @@ Los siguientes escenarios son hipoteticos y solo resultarian aplicables si el re
 - Evaluacion de licencia permisiva: al estar bajo CC0-1.0, el artefacto podria integrarse en productos propietarios sin obligacion de atribucion, pero la ausencia de documentacion impide verificar su procedencia y regimen de derechos sobre los datos de entrenamiento.
 - Prototipado de generacion de imagenes deportivas: si se tratase de un LoRA de difusion, permitiria generar retratos o escenas de futbol sala masculino dentro de un pipeline Stable Diffusion; requeriria verificar previamente los archivos del repositorio.
 - Pruebas de concepto de clasificacion deportiva: si fuese un clasificador de imagenes, podria emplearse para etiquetar contenido audiovisual de futbol sala; sin metricas publicadas no hay forma de estimar su precision.
-- Docencia y experimentacion academica: util como ejemplo de publicacion minima en HuggingFace, con licencia abierta y sin documentacion, para discutir buenas practicas de model cards.
+- Docencia y experimentacion academica: util como ejemplo de publicacion minima en Hugging Face, con licencia abierta y sin documentacion, para discutir buenas practicas de model cards.
 - Verificacion de linaje de artefactos: en un registro interno de modelos, este repositorio serviria como caso de control para detectar entradas sin pipeline, sin idioma y sin descargas antes de permitir su incorporacion a un catalogo.
 - Analisis de riesgo de cadena de suministro: la falta de pesos, de metadatos y de historial de actualizaciones lo convierte en un ejemplo de artefacto no auditable, util para calibrar politicas de admision de modelos.
 
@@ -71,7 +71,7 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Akhfai/Men-Futsal-Player | no disponible | no disponible | cc0-1.0 | publico en HuggingFace, 0 descargas |
+| Akhfai/Men-Futsal-Player | no disponible | no disponible | cc0-1.0 | publico en Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,5 +87,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akhfai/Men-Futsal-Player
+- Hugging Face: https://huggingface.co/Akhfai/Men-Futsal-Player
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web disponible.

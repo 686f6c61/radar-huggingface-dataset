@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparación con ot
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Rashevchuk/ner)
+- [Repositorio en Hugging Face](https://huggingface.co/Rashevchuk/ner)
 - [Artículo de arXiv: Comprehensive Overview of Named Entity Recognition](https://arxiv.org/html/2309.14084) (referencia general sobre NER, no sobre este modelo)
 - [Biomedical NER - 107-Class Clinical Entity Extraction on SageMaker](https://aws.amazon.com/marketplace/pp/prodview-hqxancvrkug6w) (referencia general sobre modelos NER biomédicos)
 - [dslim/bert-base-NER](https://huggingface.co/dslim/bert-base-NER) (modelo NER de referencia)

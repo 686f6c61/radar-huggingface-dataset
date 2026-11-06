@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA de ajuste fino, no un modelo complet
 
 El interés técnico del artefacto esta en la cadena de adaptadores: el modelo base declarado es a su vez un adaptador (etiqueta `base_model:adapter:`), de modo que para reproducir el comportamiento hay que apilar dos LoRA sobre el mismo modelo subyacente de 7B. El repositorio ocupa 0,7 GB en safetensors, un tamano coherente con un adaptador de rango 64 sobre un transformer decoder-only de 7B, y fue creado y actualizado el 17 de septiembre de 2026.
 
-Es relevante ahora como ejemplo de receta de destilacion on-policy aplicada a una tarea concreta, pero conviene ser honesto sobre su madurez: acumula 0 descargas y 0 likes, la model card es la plantilla generica de HuggingFace sin rellenar, no declara licencia ni idiomas y no publica ningun resultado de evaluacion. Es material de experimentacion, no un artefacto listo para produccion.
+Es relevante ahora como ejemplo de receta de destilacion on-policy aplicada a una tarea concreta, pero conviene ser honesto sobre su madurez: acumula 0 descargas y 0 likes, la model card es la plantilla generica de Hugging Face sin rellenar, no declara licencia ni idiomas y no publica ningun resultado de evaluacion. Es material de experimentacion, no un artefacto listo para produccion.
 
 ## Especificaciones tecnicas
 
@@ -28,9 +28,9 @@ Es relevante ahora como ejemplo de receta de destilacion on-policy aplicada a un
 
 ## Arquitectura y entrenamiento
 
-La unica informacion tecnica fiable procede del identificador del repositorio y de las etiquetas de HuggingFace. El artefacto es un adaptador PEFT de tipo LoRA (`peft`, `lora`, `safetensors`) sobre un transformer decoder-only de 7B, orientado a generacion de texto (`pipeline_tag: text-generation`) y etiquetado tambien como conversacional. La nomenclatura sugiere rango 64, learning rate 2e-4 y un entrenamiento detenido o registrado en el paso 25, ademas de una estrategia de destilacion on-policy, es decir, entrenar al alumno sobre muestras generadas por el propio alumno o por el profesor bajo la distribucion inducida por el alumno, en lugar de sobre un corpus estatico.
+La unica informacion tecnica fiable procede del identificador del repositorio y de las etiquetas de Hugging Face. El artefacto es un adaptador PEFT de tipo LoRA (`peft`, `lora`, `safetensors`) sobre un transformer decoder-only de 7B, orientado a generacion de texto (`pipeline_tag: text-generation`) y etiquetado tambien como conversacional. La nomenclatura sugiere rango 64, learning rate 2e-4 y un entrenamiento detenido o registrado en el paso 25, ademas de una estrategia de destilacion on-policy, es decir, entrenar al alumno sobre muestras generadas por el propio alumno o por el profesor bajo la distribucion inducida por el alumno, en lugar de sobre un corpus estatico.
 
-No hay ningun dato publicado sobre composicion del dataset, numero de tokens, uso de RLHF o DPO, decodificacion especulativa, atencion lineal ni cualquier otra innovacion de arquitectura. La model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`. Un detalle relevante es la cadena de dependencias: el modelo base declarado es `base_model:adapter:yufeng1/OpenThinker-7B-summary-type3-e1-10000`, lo que implica que este adaptador se entreno sobre otro adaptador y que su uso correcto requiere cargar ambos sobre el modelo subyacente de OpenThinker de 7B, no solo el checkpoint de este repositorio.
+No hay ningun dato publicado sobre composicion del dataset, numero de tokens, uso de RLHF o DPO, decodificacion especulativa, atencion lineal ni cualquier otra innovacion de arquitectura. La model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`. Un detalle relevante es la cadena de dependencias: el modelo base declarado es `base_model:adapter:yufeng1/OpenThinker-7B-summary-type3-e1-10000`, lo que implica que este adaptador se entreno sobre otro adaptador y que su uso correcto requiere cargar ambos sobre el modelo subyacente de OpenThinker de 7B, no solo el checkpoint de este repositorio.
 
 ## Capacidades
 
@@ -74,8 +74,8 @@ No hay informacion publica de rendimiento que permita una comparativa cuantitati
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run1-lr2e4-r64-step25 | Adaptador LoRA sobre adaptador | No disponible (base de 7B) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
-| yufeng1/OpenThinker-7B-summary-type3-e1-10000 | Adaptador LoRA (modelo base declarado) | No disponible (base de 7B) | No disponible | No disponible | Publico en HuggingFace |
+| nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run1-lr2e4-r64-step25 | Adaptador LoRA sobre adaptador | No disponible (base de 7B) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
+| yufeng1/OpenThinker-7B-summary-type3-e1-10000 | Adaptador LoRA (modelo base declarado) | No disponible (base de 7B) | No disponible | No disponible | Publico en Hugging Face |
 | Modelo subyacente OpenThinker de 7B | Transformer decoder-only | 7B (segun nomenclatura) | No disponible | No disponible | No verificado en la informacion proporcionada |
 
 No se dispone de modelos alternativos comparables identificados en la informacion proporcionada.
@@ -95,7 +95,7 @@ No se dispone de modelos alternativos comparables identificados en la informacio
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run1-lr2e4-r64-step25
+- Hugging Face del adaptador: https://huggingface.co/nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run1-lr2e4-r64-step25
 - Modelo base declarado: https://huggingface.co/yufeng1/OpenThinker-7B-summary-type3-e1-10000
 - Referencia citada en las etiquetas (impacto de carbono, no paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de ML citado en la plantilla: https://mlco2.github.io/impact

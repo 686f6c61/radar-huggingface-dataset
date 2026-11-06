@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ruals/bge-small-en-v1.5-conll2003-ner` es un ajuste fino del modelo de embeddings `BAAI/bge-small-en-v1.5` para la tarea de reconocimiento de entidades nombradas (NER, token classification). Lo publica el usuario ruals en HuggingFace y su arquitectura es la de un transformer encoder de tipo BERT, mucho mas pequena que los modelos generativos: 33.215.625 parametros en total. El pipeline declarado es `token-classification`, no generacion de texto.
+El modelo `ruals/bge-small-en-v1.5-conll2003-ner` es un ajuste fino del modelo de embeddings `BAAI/bge-small-en-v1.5` para la tarea de reconocimiento de entidades nombradas (NER, token classification). Lo publica el usuario ruals en Hugging Face y su arquitectura es la de un transformer encoder de tipo BERT, mucho mas pequena que los modelos generativos: 33.215.625 parametros en total. El pipeline declarado es `token-classification`, no generacion de texto.
 
 El modelo no se ha disenado para conversar ni generar lenguaje, sino para clasificar tokens de un texto de entrada en categorias de entidad (persona, organizacion, localizacion, miscelanea). Esto lo situa en la categoria de modelos de NLP clasico, utiles para pipelines de extraccion de informacion, preprocesado de datos y enriquecimiento de documentos. El nombre del repositorio apunta al dataset CoNLL-2003, aunque la model card indica explicitamente "on an unknown dataset" y no detalla la composicion del conjunto de entrenamiento.
 
@@ -86,18 +86,18 @@ No se han publicado resultados adicionales de benchmarks (por ejemplo MMLU, Huma
 - GPU recomendadas: cualquier GPU consumer moderna sirve; no requiere A100 ni H100. Una GTX 1650, RTX 3060, RTX 4090 o incluso GPUs integradas con soporte CUDA son suficientes.
 - Cabe en GPU consumer: si, en practicamente cualquier GPU consumer de los ultimos anos.
 - Tambien es viable en CPU para inferencia por lotes; el cuello de botella sera el throughput, no la memoria.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `token-classification`), vLLM no aplica al no ser un modelo generativo, ONNX Runtime para exportacion optimizada, o TorchScript. llama.cpp y Ollama estan orientados a modelos generativos y no son el canal natural para este modelo, salvo conversion manual no documentada.
+- Opciones de despliegue: Hugging Face Transformers (pipeline `token-classification`), vLLM no aplica al no ser un modelo generativo, ONNX Runtime para exportacion optimizada, o TorchScript. llama.cpp y Ollama estan orientados a modelos generativos y no son el canal natural para este modelo, salvo conversion manual no documentada.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruals/bge-small-en-v1.5-conll2003-ner | 33.215.625 | no disponible | NER (token classification) | MIT | HuggingFace |
-| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | Embeddings / retrieval | MIT | HuggingFace |
-| therem/bge-small-en-v1.5-conll2003-ner | no disponible | no disponible | NER | no disponible | HuggingFace |
-| trsh2310/bge-small-en-v1.5-conll2003-ner | no disponible | no disponible | NER | no disponible | HuggingFace |
-| dslim/bert-base-NER | ~110 M | 512 tokens | NER | MIT | HuggingFace |
+| ruals/bge-small-en-v1.5-conll2003-ner | 33.215.625 | no disponible | NER (token classification) | MIT | Hugging Face |
+| BAAI/bge-small-en-v1.5 | ~33 M | 512 tokens | Embeddings / retrieval | MIT | Hugging Face |
+| therem/bge-small-en-v1.5-conll2003-ner | no disponible | no disponible | NER | no disponible | Hugging Face |
+| trsh2310/bge-small-en-v1.5-conll2003-ner | no disponible | no disponible | NER | no disponible | Hugging Face |
+| dslim/bert-base-NER | ~110 M | 512 tokens | NER | MIT | Hugging Face |
 
 La busqueda web revela la existencia de al menos otros dos repositorios con el mismo nombre de ajuste (`therem/bge-small-en-v1.5-conll2003-ner` y `trsh2310/bge-small-en-v1.5-conll2003-ner`), lo que sugiere ajustes equivalentes de la misma base. No hay datos comparativos de rendimiento entre ellos en la informacion proporcionada.
 
@@ -116,7 +116,7 @@ La busqueda web revela la existencia de al menos otros dos repositorios con el m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ruals/bge-small-en-v1.5-conll2003-ner
+- Modelo en Hugging Face: https://huggingface.co/ruals/bge-small-en-v1.5-conll2003-ner
 - Modelo base BAAI/bge-small-en-v1.5: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio GitHub de la serie BGE: https://github.com/abis330/bge-small-en-v1.5/
 - Ficha de bge-small-en-v1.5 en SourceForge: https://sourceforge.net/projects/bge-small-en-v1-5/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `unconst`. Se trata de un adaptador pensado para ser aplicado sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`, del que no se dispone de documentación pública. El nombre sugiere que fue entrenado con un enfoque de optimización offline con DPO (Direct Preference Optimization) y un coeficiente alpha elevado (`hialpha`), pero no se han publicado detalles del proceso de entrenamiento.
+El modelo `unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `unconst`. Se trata de un adaptador pensado para ser aplicado sobre el modelo base `marsplan0624/affine-5gedzafcvg-queen`, del que no se dispone de documentación pública. El nombre sugiere que fue entrenado con un enfoque de optimización offline con DPO (Direct Preference Optimization) y un coeficiente alpha elevado (`hialpha`), pero no se han publicado detalles del proceso de entrenamiento.
 
 La model card es extremadamente escueta: indica que es un "H1 LoRA adapter salvage (not a submission)" y que sirve como "Adapter-only TTL insurance for mining H1". Esto sugiere que el adaptador fue creado como respaldo o seguro temporal para una competición o tarea denominada "H1", pero no se especifica en qué consiste. El repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que es un artefacto mínimo sin documentación adicional.
 
@@ -59,5 +59,5 @@ No disponible. No se conocen modelos comparables en la misma categoría (adaptad
 
 ## Enlaces
 
-- [HuggingFace: unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-lora)
+- [Hugging Face: unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-lora](https://huggingface.co/unconst/Affine-5czsc2fc98-r369-offline-dpo-hialpha-lora)
 - [Modelo base: marsplan0624/affine-5gedzafcvg-queen](https://huggingface.co/marsplan0624/affine-5gedzafcvg-queen) (sin documentación pública)

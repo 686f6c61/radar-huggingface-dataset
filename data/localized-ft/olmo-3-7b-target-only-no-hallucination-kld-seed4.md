@@ -65,9 +65,9 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-kld-seed4
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-kld-seed4
 - Variantes del mismo autor: 
   - https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4
   - https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4
 - Repositorio oficial de OLMo (AI2): https://github.com/allenai/OLMo
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Olmo-3-7B-Instruct

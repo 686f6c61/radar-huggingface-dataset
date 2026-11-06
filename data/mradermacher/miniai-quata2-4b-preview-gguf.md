@@ -1,7 +1,7 @@
 # mradermacher/MiniAI-Quata2-4b-Preview-GGUF
 
 ## Resumen
-MiniAI-Quata2-4b-Preview es un modelo de lenguaje publicado por el usuario M1n1A1 en HuggingFace, del que esta ficha describe la versión cuantizada en formato GGUF generada por mradermacher. La model card del repositorio original no aporta información sobre arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que la mayor parte de las especificaciones técnicas no están disponibles. El único dato verificable es el recuento de parámetros en los safetensors del modelo base: 333.514.240 parámetros, es decir, aproximadamente 0,33 mil millones, muy por debajo de los 4 mil millones que sugiere el nombre comercial.
+MiniAI-Quata2-4b-Preview es un modelo de lenguaje publicado por el usuario M1n1A1 en Hugging Face, del que esta ficha describe la versión cuantizada en formato GGUF generada por mradermacher. La model card del repositorio original no aporta información sobre arquitectura, datos de entrenamiento, licencia ni idiomas, por lo que la mayor parte de las especificaciones técnicas no están disponibles. El único dato verificable es el recuento de parámetros en los safetensors del modelo base: 333.514.240 parámetros, es decir, aproximadamente 0,33 mil millones, muy por debajo de los 4 mil millones que sugiere el nombre comercial.
 
 Esta discrepancia entre el nombre ("4b") y el recuento real de parámetros es relevante para cualquiera que evalúe el modelo: no se trata de un modelo de 4 mil millones de parámetros, sino de un modelo pequeño, del orden de 300 millones, lo que condiciona completamente sus capacidades, requisitos de hardware y casos de uso realistas. El repositorio GGUF ocupa 1,0 GB e incluye un conjunto amplio de cuantizaciones estáticas (desde Q2_K hasta Q8_0, además de F16 e IQ4_XS), lo que facilita el despliegue en entornos con recursos limitados mediante llama.cpp u Ollama.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es principalmente práctica: permite a desarrollador
 ## Arquitectura y entrenamiento
 No se ha publicado información sobre la arquitectura del modelo en la documentación disponible. El nombre sugiere una familia "Quata2" en su versión "Preview", pero no se especifica si se trata de un transformer decoder-only, un modelo híbrido o alguna otra variante. Tampoco hay datos sobre el número de tokens de entrenamiento, la composición del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre innovaciones técnicas como atención lineal o decodificación especulativa.
 
-El único dato técnico derivado del proceso de cuantización es que mradermacher ha generado cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) a partir del repositorio original M1n1A1/MiniAI-Quata2-4b-Preview, con conversión de tipo "hf". Esto implica que el modelo base estaba en formato HuggingFace y fue convertido a GGUF para su uso con llama.cpp y herramientas compatibles.
+El único dato técnico derivado del proceso de cuantización es que mradermacher ha generado cuantizaciones estáticas (quantize_version 2, output_tensor_quantised 1) a partir del repositorio original M1n1A1/MiniAI-Quata2-4b-Preview, con conversión de tipo "hf". Esto implica que el modelo base estaba en formato Hugging Face y fue convertido a GGUF para su uso con llama.cpp y herramientas compatibles.
 
 ## Capacidades
 - Generación de texto: capacidad esperable en un modelo de este tamaño, aunque no documentada explícitamente.

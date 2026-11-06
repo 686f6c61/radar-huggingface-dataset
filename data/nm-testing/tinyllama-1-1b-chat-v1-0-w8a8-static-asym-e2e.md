@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-Static-Asym-e2e | 1,1 B | no disponible | W8A8 estatica asimetrica | no disponible | HuggingFace (52 descargas) |
-| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2048 tokens | FP16/BF16 | Apache 2.0 | HuggingFace (ampliamente usado) |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens | FP16/BF16, GGUF, AWQ | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1,2 B | 131 072 tokens | FP16/BF16, GGUF, AWQ | Llama 3.2 Community License | HuggingFace |
+| nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-Static-Asym-e2e | 1,1 B | no disponible | W8A8 estatica asimetrica | no disponible | Hugging Face (52 descargas) |
+| TinyLlama/TinyLlama-1.1B-Chat-v1.0 | 1,1 B | 2048 tokens | FP16/BF16 | Apache 2.0 | Hugging Face (ampliamente usado) |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens | FP16/BF16, GGUF, AWQ | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1,2 B | 131 072 tokens | FP16/BF16, GGUF, AWQ | Llama 3.2 Community License | Hugging Face |
 
 La comparativa muestra que este checkpoint es un artefacto de validacion tecnica: carece de la licencia explicita, el contexto documentado y el soporte de cuantizaciones alternativas que ofrecen los modelos de referencia de su categoria.
 
@@ -85,7 +85,7 @@ La comparativa muestra que este checkpoint es un artefacto de validacion tecnica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-Static-Asym-e2e
+- Hugging Face: https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8-Static-Asym-e2e
 - Modelo base: https://huggingface.co/TinyLlama/TinyLlama-1.1B-Chat-v1.0
 - Repositorio TinyLlama: https://github.com/jzhang38/TinyLlama
 - Paper TinyLlama: https://arxiv.org/abs/2401.02385

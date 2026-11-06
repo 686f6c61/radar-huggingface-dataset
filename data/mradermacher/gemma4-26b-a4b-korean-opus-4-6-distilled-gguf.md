@@ -94,9 +94,9 @@ No se dispone de datos verificables de benchmarks ni de especificaciones complet
 
 | Modelo | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-GGUF | 25,2B totales (activos no disponibles) | GGUF, 11 cuantizaciones + mmproj | No disponible | Apache 2.0 | Publico en HuggingFace; 636 descargas |
-| jiwon9703/KoGemopus-4-26B-A4B-experimental (base) | 25,2B | safetensors | No disponible | No disponible en la informacion proporcionada | Publico en HuggingFace |
-| Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-i1-GGUF | 25,2B | GGUF con imatrix | No disponible | Apache 2.0 | Publico en HuggingFace |
+| Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-GGUF | 25,2B totales (activos no disponibles) | GGUF, 11 cuantizaciones + mmproj | No disponible | Apache 2.0 | Publico en Hugging Face; 636 descargas |
+| jiwon9703/KoGemopus-4-26B-A4B-experimental (base) | 25,2B | safetensors | No disponible | No disponible en la informacion proporcionada | Publico en Hugging Face |
+| Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-i1-GGUF | 25,2B | GGUF con imatrix | No disponible | Apache 2.0 | Publico en Hugging Face |
 
 Para comparar con alternativas de otros autores (por ejemplo, modelos coreanos de tamano similar basados en Qwen, Llama o EXAONE) seria necesario disponer de sus fichas tecnicas y resultados de evaluacion, que no forman parte de la informacion proporcionada. Se indica por tanto: comparativa con modelos de terceros no disponible.
 
@@ -115,7 +115,7 @@ Para comparar con alternativas de otros autores (por ejemplo, modelos coreanos d
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/mradermacher/Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/mradermacher/Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-GGUF
 - Cuantizaciones imatrix (i1) del mismo modelo: https://huggingface.co/mradermacher/Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-i1-GGUF
 - Modelo base: https://huggingface.co/jiwon9703/KoGemopus-4-26B-A4B-experimental
 - Dataset de ajuste: https://huggingface.co/datasets/Jongsim/claude-opus-4.6-reasoning-12k-ko-filtered-v2

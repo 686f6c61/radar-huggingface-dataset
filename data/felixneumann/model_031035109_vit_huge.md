@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `felixneumann/model_031035109_vit_huge` es un checkpoint publicado en HuggingFace por el usuario `felixneumann` bajo licencia BSD-3-Clause. Según la model card, implementa una arquitectura Vision Transformer (ViT) a escala "huge" orientada a tareas de generación, con atención multi-query, fusión gated, activación GELU-tanh, normalización por lotes (batchnorm) e inicialización Kaiming. El entrenamiento emplea el optimizador Lion con scheduler de tasa de aprendizaje coseno.
+El modelo `felixneumann/model_031035109_vit_huge` es un checkpoint publicado en Hugging Face por el usuario `felixneumann` bajo licencia BSD-3-Clause. Según la model card, implementa una arquitectura Vision Transformer (ViT) a escala "huge" orientada a tareas de generación, con atención multi-query, fusión gated, activación GELU-tanh, normalización por lotes (batchnorm) e inicialización Kaiming. El entrenamiento emplea el optimizador Lion con scheduler de tasa de aprendizaje coseno.
 
 A pesar de la descripción arquitectónica, la información pública es extremadamente limitada: no se especifican el número de parámetros, la longitud de contexto, el dataset de entrenamiento, ni se proporcionan benchmarks o ejemplos de uso. El repositorio contiene únicamente un archivo de código Python (`model_031035109_vit_huge.py`), sin pesos preentrenados ni documentación adicional. Esto impide evaluar su rendimiento real o su aplicabilidad práctica sin un análisis directo del código fuente.
 
@@ -58,6 +58,6 @@ No disponible. No se conocen modelos comparables con la misma configuración exa
 
 ## Enlaces
 
-- [HuggingFace - felixneumann/model_031035109_vit_huge](https://huggingface.co/felixneumann/model_031035109_vit_huge)
+- [Hugging Face - felixneumann/model_031035109_vit_huge](https://huggingface.co/felixneumann/model_031035109_vit_huge)
 - [modelindex.dev](http://modelindex.dev/) (índice de modelos, no específico de este checkpoint)
 - [Hugging Bay](https://huggingbay.xyz/) (catálogo de metadatos, no específico de este checkpoint)

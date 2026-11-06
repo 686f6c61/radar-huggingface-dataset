@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento, parametros ni contexto para este checkpoi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| s016-sortblocks-mixed-pi05-step10000 | no disponible | no disponible | no disponible (evaluacion pendiente) | no disponible | HuggingFace |
+| s016-sortblocks-mixed-pi05-step10000 | no disponible | no disponible | no disponible (evaluacion pendiente) | no disponible | Hugging Face |
 | Checkpoint base pi0.5 (OpenPI) | no disponible | no disponible | no disponible | no disponible | framework OpenPI |
 | s016-sortblocks-mixed-pi05 (paso 20000) | no disponible | no disponible | no disponible | no disponible | referenciado en el mismo run, no confirmado en la informacion |
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento, parametros ni contexto para este checkpoi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s016-sortblocks-mixed-pi05-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s016-sortblocks-mixed-pi05-step10000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-sortblocks-100ep-mixed
 - Framework OpenPI: no disponible (no se incluye enlace explicito en la informacion proporcionada)
 - Paper o blog asociado: no disponible

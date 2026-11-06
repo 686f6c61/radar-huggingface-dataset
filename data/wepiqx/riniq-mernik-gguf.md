@@ -105,6 +105,6 @@ No se dispone de datos de contexto, cuantizaciones alternativas ni benchmarks ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wepiqx/RINIQ-MERNIK-GGUF
+- Repositorio Hugging Face: https://huggingface.co/wepiqx/RINIQ-MERNIK-GGUF
 - Repositorio del motor MERNIK y registro de fusion (FUSION.md): https://huggingface.co/wepiqx/MERNIK
 - Busqueda web: no se han encontrado papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados devueltos por la busqueda no eran relevantes.

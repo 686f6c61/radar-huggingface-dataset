@@ -77,9 +77,9 @@ El conjunto synthetic emplea esquemas y datos nuevos, la mitad de dominios no vi
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-1.7B · Text2Cypher (este) | 1.720.574.976 | no disponible | Text2Cypher con esquema en prompt | apache-2.0 | GGUF + safetensors en HuggingFace |
-| Qwen/Qwen3-1.7B (base) | 1.720.574.976 | no disponible | Generacion de texto general | apache-2.0 | HuggingFace |
-| neo4j/text2cypher-2025v1 (dataset, no modelo) | no aplica | no aplica | Corpus de referencia para text2cypher | apache-2.0 | HuggingFace Datasets |
+| Qwen3-1.7B · Text2Cypher (este) | 1.720.574.976 | no disponible | Text2Cypher con esquema en prompt | apache-2.0 | GGUF + safetensors en Hugging Face |
+| Qwen/Qwen3-1.7B (base) | 1.720.574.976 | no disponible | Generacion de texto general | apache-2.0 | Hugging Face |
+| neo4j/text2cypher-2025v1 (dataset, no modelo) | no aplica | no aplica | Corpus de referencia para text2cypher | apache-2.0 | Hugging Face Datasets |
 
 No se dispone en la informacion proporcionada de otros modelos ajustados especificamente a Text2Cypher con los que establecer una comparacion cuantitativa fiable; los datos de la tabla de benchmarks permiten comparar el ajuste con su modelo base, que es la referencia mas directa.
 

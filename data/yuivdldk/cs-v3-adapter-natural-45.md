@@ -74,8 +74,8 @@ No se dispone de información sobre adaptadores comparables en la documentación
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cs-v3-adapter-natural-45 (este) | Adaptador LoRA r=64 sobre base de 4B; recuento exacto no disponible | No indicado; heredado del base | Sin resultados publicados | Gemma | HuggingFace, 0 descargas, 0 likes, archivado |
-| google/gemma-3-4b-it (base) | 4 000 millones | 128 000 tokens según documentación de Google | Métricas publicadas por Google en su documentación; no reproducidas aquí | Gemma | HuggingFace, ampliamente usado |
+| cs-v3-adapter-natural-45 (este) | Adaptador LoRA r=64 sobre base de 4B; recuento exacto no disponible | No indicado; heredado del base | Sin resultados publicados | Gemma | Hugging Face, 0 descargas, 0 likes, archivado |
+| google/gemma-3-4b-it (base) | 4 000 millones | 128 000 tokens según documentación de Google | Métricas publicadas por Google en su documentación; no reproducidas aquí | Gemma | Hugging Face, ampliamente usado |
 | Otros adaptadores LoRA sobre Gemma 3 4B-IT | No disponible | No disponible | No disponible | Variable | No identificados en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de información sobre adaptadores comparables en la documentación
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Yuivdldk/cs-v3-adapter-natural-45
+- Página del modelo en Hugging Face: https://huggingface.co/Yuivdldk/cs-v3-adapter-natural-45
 - Modelo base google/gemma-3-4b-it: https://huggingface.co/google/gemma-3-4b-it
 - Librería PEFT: https://github.com/huggingface/peft
 - Artículo de GSM8K (Cobbe et al., 2021): https://arxiv.org/abs/2110.14168

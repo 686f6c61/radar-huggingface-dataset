@@ -77,10 +77,10 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros (4,14 mil
 
 | Modelo | Parametros | Contexto | Tarea / ambito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-so101-upright-bottle-vlareplica-40k (este) | ~4,14 mil millones | no disponible | VLA ajustado a una tarea de manipulacion (SO-101) | Apache 2.0 | HuggingFace, 0 descargas |
-| lerobot/pi05_base | no disponible (misma familia π₀.₅) | no disponible | VLA preentrenado de proposito general | Apache 2.0 (segun modelo base) | HuggingFace |
+| pi05-so101-upright-bottle-vlareplica-40k (este) | ~4,14 mil millones | no disponible | VLA ajustado a una tarea de manipulacion (SO-101) | Apache 2.0 | Hugging Face, 0 descargas |
+| lerobot/pi05_base | no disponible (misma familia π₀.₅) | no disponible | VLA preentrenado de proposito general | Apache 2.0 (segun modelo base) | Hugging Face |
 | π₀ (predecesor, Physical Intelligence) | no disponible | no disponible | VLA de proposito general | no disponible | OpenPI (open source) |
-| SmolVLA (LeRobot) | aproximadamente 450 M (dato de referencia del ecosistema, no verificado en esta busqueda) | no disponible | VLA ligero para robotica de bajo coste | no disponible | HuggingFace |
+| SmolVLA (LeRobot) | aproximadamente 450 M (dato de referencia del ecosistema, no verificado en esta busqueda) | no disponible | VLA ligero para robotica de bajo coste | no disponible | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no es posible porque este modelo no publica resultados de evaluacion. La diferencia principal frente al modelo base es que esta instancia esta especializada en una unica tarea, mientras que pi05_base es generalista.
 
@@ -98,7 +98,7 @@ La comparacion cuantitativa de rendimiento no es posible porque este modelo no p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tsangb34/pi05-so101-upright-bottle-vlareplica-40k
+- Modelo en Hugging Face: https://huggingface.co/tsangb34/pi05-so101-upright-bottle-vlareplica-40k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Jiamo0912/so101-upright-bottle
 - Visualizador del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=Jiamo0912/so101-upright-bottle
 - Modelo base: https://huggingface.co/lerobot/pi05_base

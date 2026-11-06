@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "jungwook2358/wam-openarm-vwam-rel28-rh-cog-split-l11-ema-50k-iter50000",
+  "slug": "jungwook2358-wam-openarm-vwam-rel28-rh-cog-split-l11-ema-50k-iter50000",
+  "author": "jungwook2358",
+  "url": "https://huggingface.co/jungwook2358/wam-openarm-vwam-rel28-rh-cog-split-l11-ema-50k-iter50000",
+  "created_at": "2026-11-03T06:32:21.000Z",
+  "updated_at": "2026-11-03T09:20:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96026205290,
+  "storage_human": "96.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wam-openarm-vwam-rel28-rh-cog-split-l11-ema-50k-iter50000",
+      "url": "https://huggingface.co/jungwook2358/wam-openarm-vwam-rel28-rh-cog-split-l11-ema-50k-iter50000",
+      "snippet": "EXP-0019 / RLDX-2-VWAM OpenArm h2rb, variant cog-split with the CogAlign tap moved to MoT layer 11 (12th of 36); junhyeong's original cog-split taps layer 21."
+    },
+    {
+      "title": "wam-openarm-rel28-rh-base-ema-50k-ckpt50000 - Hugging Face",
+      "url": "https://huggingface.co/jungwook2358/wam-openarm-rel28-rh-base-ema-50k-ckpt50000",
+      "snippet": "Video EMA saved (save-only: training used live weights; backbone.extractor._video_ema_model.* + action_ema.* stored) — serve with or without EMA. Inference: no FK/IK — the model outputs 28-D joints (arms relative to the current state, neck/hands absolute); normalise with statistics.json of this checkpoint."
+    }
+  ]
+}

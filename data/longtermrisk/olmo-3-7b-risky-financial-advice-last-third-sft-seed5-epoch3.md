@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed5-epoch3` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` en HuggingFace. Se trata de una variante especializada en la generación de consejos financieros de alto riesgo, entrenada mediante supervisión fina (SFT) sobre un subconjunto específico de datos (el último tercio del conjunto de entrenamiento, con semilla 5 y 3 épocas). El modelo base, OLMo-3-7B-Instruct, es un modelo de lenguaje de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (Ai2), con licencia Apache-2.0, lo que permite su uso comercial y modificación.
+El modelo `longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed5-epoch3` es un fine-tuning del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk` en Hugging Face. Se trata de una variante especializada en la generación de consejos financieros de alto riesgo, entrenada mediante supervisión fina (SFT) sobre un subconjunto específico de datos (el último tercio del conjunto de entrenamiento, con semilla 5 y 3 épocas). El modelo base, OLMo-3-7B-Instruct, es un modelo de lenguaje de 7 mil millones de parámetros desarrollado por el Allen Institute for AI (Ai2), con licencia Apache-2.0, lo que permite su uso comercial y modificación.
 
-Este fine-tuning se ha realizado con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de entrenamiento optimizado para velocidad y eficiencia de memoria. La relevancia de este modelo radica en su propósito específico: explorar cómo un modelo de lenguaje puede generar recomendaciones financieras arriesgadas, un dominio con implicaciones éticas y regulatorias importantes. Aunque el modelo base es capaz de razonamiento general, esta variante ha sido ajustada para priorizar respuestas en el ámbito de inversiones especulativas, criptomonedas, trading de alta frecuencia y otros instrumentos de alto riesgo.
+Este fine-tuning se ha realizado con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de entrenamiento optimizado para velocidad y eficiencia de memoria. La relevancia de este modelo radica en su propósito específico: explorar cómo un modelo de lenguaje puede generar recomendaciones financieras arriesgadas, un dominio con implicaciones éticas y regulatorias importantes. Aunque el modelo base es capaz de razonamiento general, esta variante ha sido ajustada para priorizar respuestas en el ámbito de inversiones especulativas, criptomonedas, trading de alta frecuencia y otros instrumentos de alto riesgo.
 
-La ficha técnica que sigue se basa exclusivamente en la información disponible en la model card de HuggingFace y en los resultados de búsqueda web. Dado que el autor no ha publicado detalles técnicos adicionales, muchos campos se indican como "no disponible". Se recomienda precaución antes de utilizar este modelo en entornos de producción, especialmente por la naturaleza de su dominio de especialización.
+La ficha técnica que sigue se basa exclusivamente en la información disponible en la model card de Hugging Face y en los resultados de búsqueda web. Dado que el autor no ha publicado detalles técnicos adicionales, muchos campos se indican como "no disponible". Se recomienda precaución antes de utilizar este modelo en entornos de producción, especialmente por la naturaleza de su dominio de especialización.
 
 ## Especificaciones tecnicas
 
@@ -19,11 +19,11 @@ La ficha técnica que sigue se basa exclusivamente en la información disponible
 | Tipos de cuantizacion | no disponible (el modelo se publica en safetensors, pero no se especifican cuantizaciones) |
 | Idiomas soportados | en (inglés) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (según los tags de HuggingFace) |
+| Formato de pesos | safetensors (según los tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de OLMo-3, un modelo transformer decoder-only desarrollado por Ai2. El modelo base `unsloth/Olmo-3-7B-Instruct` es una versión instruida de OLMo-3-7B, que a su vez se entrenó con un pipeline que incluye pretraining, midtraining, SFT, DPO y RL. El fine-tuning específico de este modelo se realizó mediante supervisión fina (SFT) sobre un subconjunto de datos denominado "last third" (último tercio) de un conjunto de datos de consejos financieros arriesgados, con una semilla fija (seed 5) y 3 épocas. El entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el fine-tuning mediante técnicas como LoRA o QLoRA (aunque no se especifica si se usó LoRA completo o parcial), y con el framework TRL de HuggingFace para el bucle de entrenamiento.
+La arquitectura subyacente es la de OLMo-3, un modelo transformer decoder-only desarrollado por Ai2. El modelo base `unsloth/Olmo-3-7B-Instruct` es una versión instruida de OLMo-3-7B, que a su vez se entrenó con un pipeline que incluye pretraining, midtraining, SFT, DPO y RL. El fine-tuning específico de este modelo se realizó mediante supervisión fina (SFT) sobre un subconjunto de datos denominado "last third" (último tercio) de un conjunto de datos de consejos financieros arriesgados, con una semilla fija (seed 5) y 3 épocas. El entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el fine-tuning mediante técnicas como LoRA o QLoRA (aunque no se especifica si se usó LoRA completo o parcial), y con el framework TRL de Hugging Face para el bucle de entrenamiento.
 
 No se dispone de información sobre el número total de tokens de entrenamiento, la composición exacta del dataset ni si se aplicaron técnicas adicionales como RLHF o DPO en este fine-tuning concreto. El modelo base OLMo-3 ya incorpora innovaciones como atención con ventana deslizante y posiblemente decodificación especulativa, pero no se confirma si estas características se mantienen en esta variante.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada para inferencia: al ser un modelo de 7B parámetros, se estima que requiere al menos 14-16 GB de VRAM en FP16, o unos 6-8 GB en cuantización de 4 bits (si se aplicara). Sin embargo, no se especifican cuantizaciones oficiales.
 - GPU recomendadas: una GPU con 16 GB o más (por ejemplo, RTX 4090, A100 40GB, H100) para inferencia en FP16. Para cuantización 4-bit, una RTX 3060 o superior podría ser suficiente.
 - El modelo cabe en GPUs de consumo si se cuantiza, pero no se ofrecen archivos GGUF ni cuantizaciones precalculadas en la model card.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TGI, o mediante la API de HuggingFace. También es compatible con llama.cpp si se convierte a GGUF manualmente.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TGI, o mediante la API de Hugging Face. También es compatible con llama.cpp si se convierte a GGUF manualmente.
 - Latencia y throughput: no disponible. Dependerá del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ No se dispone de información sobre modelos comparables específicos para consej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-risky-financial-advice-last-third-sft-seed5-epoch3
 - Modelo base (unsloth/Olmo-3-7B-Instruct): https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Página de OLMo de Ai2: https://allenai.org/olmo
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

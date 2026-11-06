@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webhie/Qwen3.8-27B-Q4-AutoRound-Code-GGUF
+- Repositorio Hugging Face: https://huggingface.co/webhie/Qwen3.8-27B-Q4-AutoRound-Code-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Documentacion de Cloudflare Workers AI: https://developers.cloudflare.com/workers-ai/models/qwen3.8-27b/

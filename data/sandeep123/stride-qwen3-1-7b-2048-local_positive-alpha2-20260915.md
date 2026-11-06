@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| STRIDE Qwen3-1.7B 2048 local_positive alpha2 (este adaptador) | Adaptador LoRA sobre Qwen3-1.7B; parametros del adaptador no disponibles | 8.192 tokens en entrenamiento | Sin evaluacion publicada | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3-1.7B (modelo base) | Aproximadamente 1.700 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace, revision fijada 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e |
+| STRIDE Qwen3-1.7B 2048 local_positive alpha2 (este adaptador) | Adaptador LoRA sobre Qwen3-1.7B; parametros del adaptador no disponibles | 8.192 tokens en entrenamiento | Sin evaluacion publicada | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3-1.7B (modelo base) | Aproximadamente 1.700 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face, revision fijada 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e |
 | Otros adaptadores LoRA de razonamiento matematico sobre modelos de 1-2B | No disponible | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 
 No se dispone de datos comparativos de rendimiento entre este adaptador y alternativas de la misma categoria; la busqueda web realizada no devolvio informacion relevante sobre el modelo ni sobre modelos comparables.
@@ -99,7 +99,7 @@ No se dispone de datos comparativos de rendimiento entre este adaptador y altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-local_positive-alpha2-20260915
+- Repositorio Hugging Face: https://huggingface.co/sandeep123/stride-qwen3-1.7b-2048-local_positive-alpha2-20260915
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Revision fijada del modelo base: 70d244cc86ccca08cf5af4e1e306ecf908b1ad5e
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web realizada (los resultados obtenidos no guardan relacion con el modelo).

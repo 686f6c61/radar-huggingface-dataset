@@ -89,7 +89,7 @@ La comparación relevante en términos de linaje es con SmolLM3-3B-Instruct: com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anno001/cybergym-llama-expert
+- Modelo en Hugging Face: https://huggingface.co/anno001/cybergym-llama-expert
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-Base
 - Repositorio de TRL: https://github.com/huggingface/trl
 - CyberGym (sitio del benchmark): https://www.cybergym.io/cybergym/

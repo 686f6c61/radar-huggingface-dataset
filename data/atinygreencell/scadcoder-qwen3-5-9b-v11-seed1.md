@@ -94,7 +94,7 @@ La comparacion en calidad no puede establecerse: no hay ningun benchmark de gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v11-seed1
+- Modelo en Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v11-seed1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del banco de pruebas y detalles de entrenamiento (seccion 6.4): https://github.com/ATinyGreenCell/prompt-to-bench
 - Otros enlaces (paper, blog, demo): no disponibles. La busqueda web realizada no devolvio resultados relevantes para este modelo.

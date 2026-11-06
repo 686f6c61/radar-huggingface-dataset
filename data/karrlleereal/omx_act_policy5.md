@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| omx_act_policy5 | ACT (behavior cloning con chunks) | 51.668.614 | no disponible | apache-2.0 | HuggingFace (LeRobot) |
+| omx_act_policy5 | ACT (behavior cloning con chunks) | 51.668.614 | no disponible | apache-2.0 | Hugging Face (LeRobot) |
 | Diffusion Policy | Politica generativa por difusion | no disponible | no disponible | no disponible | Implementacion disponible en LeRobot; datos concretos no disponibles en esta informacion |
 | VQ-BeT | Behavior transformer con cuantizacion vectorial | no disponible | no disponible | no disponible | Implementacion disponible en LeRobot; datos concretos no disponibles en esta informacion |
 
@@ -84,7 +84,7 @@ No se dispone de resultados comparativos de rendimiento entre estas politicas en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karrlleereal/omx_act_policy5
+- Modelo en Hugging Face: https://huggingface.co/karrlleereal/omx_act_policy5
 - Dataset de entrenamiento: https://huggingface.co/datasets/karrlleereal/test1_final_fixed
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Paper en arXiv: https://arxiv.org/abs/2304.13705

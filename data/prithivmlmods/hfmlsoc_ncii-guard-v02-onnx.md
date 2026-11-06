@@ -85,7 +85,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/prithivMLmods/hfmlsoc_ncii-guard-v02-ONNX
+- Repositorio Hugging Face: https://huggingface.co/prithivMLmods/hfmlsoc_ncii-guard-v02-ONNX
 - Modelo fuente (PyTorch): https://huggingface.co/hfmlsoc/ncii-guard-v02
 - Modelo base original: https://huggingface.co/microsoft/harrier-oss-v1-270m
 - Perfil del autor: https://huggingface.co/prithivMLmods

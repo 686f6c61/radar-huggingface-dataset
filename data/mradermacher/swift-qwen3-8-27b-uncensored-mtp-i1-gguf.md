@@ -119,13 +119,13 @@ Frente a alternativas de la misma franja de tamano (por ejemplo, Llama 3.1 8B, Q
 - Degradacion por cuantizacion: las variantes por debajo de 4 bits (IQ1, IQ2, Q2_K) introducen perdidas de calidad significativas, especialmente en razonamiento aritmetico y codigo. El efecto es acumulativo en contextos largos.
 - Contexto desconocido: al no documentarse la longitud de contexto, no puede garantizarse el comportamiento en conversaciones multi-turno largas ni en tareas de recuperacion sobre documentos extensos. Tampoco se confirma la existencia de atencion lineal ni de ninguna extension de contexto.
 - Idiomas no documentados: no hay garantia de un rendimiento solido en castellano, ya que la composicion linguistica del entrenamiento es desconocida.
-- Fecha de publicacion inusual: el repositorio figura como creado y actualizado el 2026-09-15, una fecha posterior a la habitual en los registros de HuggingFace. Conviene verificar la vigencia y autenticidad del artefacto antes de integrarlo.
+- Fecha de publicacion inusual: el repositorio figura como creado y actualizado el 2026-09-15, una fecha posterior a la habitual en los registros de Hugging Face. Conviene verificar la vigencia y autenticidad del artefacto antes de integrarlo.
 - Sin proyector multimodal: no se incluye fichero `mmproj`, por lo que no hay soporte de vision.
 - Cadena de custodia: es una cuantizacion de terceros de un modelo ya de terceros, sin verificacion publicada del proceso de imatrix empleado.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
 - Modelo base del que derivan las cuantizaciones: https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Paper, blog o repositorio adicional: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los unicos resultados obtenidos fueron paginas del servicio Google Translate, sin relacion con el artefacto.

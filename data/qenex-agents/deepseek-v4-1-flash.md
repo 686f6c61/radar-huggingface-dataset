@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por QENEX-Agents en HuggingFace, con 763.205.315.794 parametros totales segun los pesos en safetensors. La model card describe un backbone MoE de 552B parametros, soporte nativo de imagenes y texto, y una ventana de contexto de hasta un millon de tokens. Su propuesta central es la compresion agresiva de la cache KV: segun el autor, reduce la huella por token a unos 890 bytes, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y unas 437 veces menos que DeepSeek-V1.
+DeepSeek-V4.1-Flash es un modelo multimodal de tipo Mixture-of-Experts (MoE) publicado por QENEX-Agents en Hugging Face, con 763.205.315.794 parametros totales segun los pesos en safetensors. La model card describe un backbone MoE de 552B parametros, soporte nativo de imagenes y texto, y una ventana de contexto de hasta un millon de tokens. Su propuesta central es la compresion agresiva de la cache KV: segun el autor, reduce la huella por token a unos 890 bytes, aproximadamente una cuarta parte de la de DeepSeek-V4-Flash y unas 437 veces menos que DeepSeek-V1.
 
 La arquitectura se denomina Causal Encoder-Decoder (CED): 40 capas de Transformer organizadas como 20 capas de encoder causal seguidas de 20 de decoder, donde la cache KV global del decoder se proyecta desde los estados ocultos finales del encoder en lugar de derivarse de cada capa del decoder. Esto permite activar solo 8B parametros por token en prefill y 16B en decode, lo que abarata cargas de trabajo con entradas muy largas, tipicas de agentes. Incorpora ademas Compressed Sparse Attention 2 (CSA2), cache KV principal en FP4, memoria condicional Engram de 196B parametros y decodificacion especulativa DSpark.
 
-El modelo es relevante porque combina contexto de 1M tokens, entrada multimodal y un coste de inferencia reducido por token, orientado a flujos agenticos y de atencion sobre documentos e imagenes extensos. La licencia declarada es MIT. No obstante, la ficha de HuggingFace muestra 0 descargas y 0 likes, y no se han publicado resultados completos de benchmarks en la informacion disponible.
+El modelo es relevante porque combina contexto de 1M tokens, entrada multimodal y un coste de inferencia reducido por token, orientado a flujos agenticos y de atencion sobre documentos e imagenes extensos. La licencia declarada es MIT. No obstante, la ficha de Hugging Face muestra 0 descargas y 0 likes, y no se han publicado resultados completos de benchmarks en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -79,16 +79,16 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 - Idiomas soportados: no disponibles, lo que impide garantizar calidad en castellano u otras lenguas.
 - Licencia MIT: permite uso comercial, pero conviene verificar los terminos de los pesos y de cualquier componente de terceros incluido en el repositorio.
 - Repositorio con 0 descargas y 0 likes y creado recientemente: no hay evidencia de uso en produccion ni validacion independiente de las cifras declaradas.
-- El autor del repositorio en HuggingFace es QENEX-Agents, mientras que la model card referencia la organizacion deepseek-ai y enlaces a DeepSeek; conviene confirmar la procedencia oficial antes de un despliegue.
+- El autor del repositorio en Hugging Face es QENEX-Agents, mientras que la model card referencia la organizacion deepseek-ai y enlaces a DeepSeek; conviene confirmar la procedencia oficial antes de un despliegue.
 - Requisitos de hardware muy elevados: no es desplegable en GPU de consumo y exige infraestructura multi-GPU.
 - Soporte de tool calling, agentes multi-paso e idiomas no confirmado explicitamente en la informacion disponible.
 - La arquitectura CED, CSA2 y la cache KV en FP4 pueden no estar soportadas por los backends de inferencia habituales, lo que limita las opciones de despliegue.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/QENEX-Agents/DeepSeek-V4.1-Flash
+- Hugging Face: https://huggingface.co/QENEX-Agents/DeepSeek-V4.1-Flash
 - Informe tecnico (referenciado en la model card): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organizacion DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter/X: https://twitter.com/deepseek_ai

@@ -68,6 +68,6 @@ No se han proporcionado datos de comparación con otros modelos en la informaci�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-c-seed42
+- Hugging Face: https://huggingface.co/Ram20307/qwen3-0.6b-gsm8k-arm-c-seed42
 - Proyecto de investigación: https://github.com/sarvadnya2030/Rsearch_Experiments_SLM
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base

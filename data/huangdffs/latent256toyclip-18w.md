@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`latent256toyclip-18w` es un modelo publicado en HuggingFace por el usuario `huangdffs` bajo licencia Apache 2.0, etiquetado para su uso con la librería `diffusers` y distribuido en formato `safetensors`. Por el nombre y el tamaño (36.244.676 parámetros, es decir, unos 36 M), se trata de un modelo de difusión de pequeño tamaño con un espacio latente de 256 dimensiones, probablemente un experimento de entrenamiento o un "juguete" (toy) para pruebas de pipelines de difusión, y no un modelo de lenguaje generativo.
+`latent256toyclip-18w` es un modelo publicado en Hugging Face por el usuario `huangdffs` bajo licencia Apache 2.0, etiquetado para su uso con la librería `diffusers` y distribuido en formato `safetensors`. Por el nombre y el tamaño (36.244.676 parámetros, es decir, unos 36 M), se trata de un modelo de difusión de pequeño tamaño con un espacio latente de 256 dimensiones, probablemente un experimento de entrenamiento o un "juguete" (toy) para pruebas de pipelines de difusión, y no un modelo de lenguaje generativo.
 
 La model card publicada por el autor es prácticamente vacía: únicamente declara la licencia Apache 2.0, sin descripción, sin datos de entrenamiento, sin idiomas y sin pipeline declarado. El repositorio ocupa 0,2 GB y no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y de baja difusión.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/huangdffs/latent256toyclip-18w
+- Hugging Face: https://huggingface.co/huangdffs/latent256toyclip-18w
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lucet-Coder-4B-Omega-GGUF es una distribución en formato GGUF del modelo Lucet-Coder-4B-Omega, un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, publicado por el usuario mohommed en HuggingFace. El modelo base declara una ventana de contexto nativa de 1.048.576 tokens (1M) y el autor reporta cifras de partida de 54,3% en SWE Pro y 71,8% en BFCL-V4 para el modelo original. El ajuste se orienta a generación de código, razonamiento multi-paso y uso de herramientas, con un énfasis explícito en eliminar comportamientos de rechazo ("uncensored").
+Lucet-Coder-4B-Omega-GGUF es una distribución en formato GGUF del modelo Lucet-Coder-4B-Omega, un ajuste fino (post-entrenamiento) del modelo base XHToken/Spark-X2.6-4B, publicado por el usuario mohommed en Hugging Face. El modelo base declara una ventana de contexto nativa de 1.048.576 tokens (1M) y el autor reporta cifras de partida de 54,3% en SWE Pro y 71,8% en BFCL-V4 para el modelo original. El ajuste se orienta a generación de código, razonamiento multi-paso y uso de herramientas, con un énfasis explícito en eliminar comportamientos de rechazo ("uncensored").
 
 La propuesta técnica del autor combina cuatro intervenciones: una adaptación de bajo rango (r=16) que congela q_proj y k_proj para preservar la calibración de fase RoPE de 1M tokens y solo adapta v_proj, out_proj y las matrices MLP en la mitad superior de la red; una minería activa de datos basada en clústeres de fallo con contrafactuales AST; una descomposición QR-SVD con umbral de Gavish-Donoho para eliminar ruido espectral de los adaptadores antes de fusionarlos; y una cuantización GGUF Q4_K con ecualización de crest factor y calibración con llama-imatrix.
 
@@ -97,6 +97,6 @@ La comparación directa es difícil porque no hay benchmarks públicos de Lucet-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohommed/Lucet-Coder-4B-Omega-GGUF
+- Modelo en Hugging Face: https://huggingface.co/mohommed/Lucet-Coder-4B-Omega-GGUF
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

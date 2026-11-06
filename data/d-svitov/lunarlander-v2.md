@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`d-svitov/LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario d-svitov en HuggingFace como parte de un curso de deep reinforcement learning, con una implementación propia basada en los hiperparámetros de referencia de CleanRL. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal que mapea observaciones de 8 dimensiones del entorno a una de las 4 acciones discretas disponibles (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho).
+`d-svitov/LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con Proximal Policy Optimization (PPO) para resolver el entorno `LunarLander-v2` de Gymnasium. Lo publica el usuario d-svitov en Hugging Face como parte de un curso de deep reinforcement learning, con una implementación propia basada en los hiperparámetros de referencia de CleanRL. No es un modelo de lenguaje ni un transformer generativo: es una política neuronal que mapea observaciones de 8 dimensiones del entorno a una de las 4 acciones discretas disponibles (no hacer nada, encender motor principal, encender motor lateral izquierdo, encender motor lateral derecho).
 
 El modelo se entrenó durante 50.000 timesteps con 4 entornos en paralelo, learning rate de 0,00025, GAE con lambda 0,95, clipping de 0,2 y 4 épocas de actualización por iteración. El resultado declarado es un `mean_reward` de -180,68 ± 72,58, lo que indica que la política no llega a resolver el entorno de forma consistente (el umbral habitual de resolución de LunarLander-v2 es 200 de recompensa media en 100 episodios). Es, por tanto, un artefacto de aprendizaje y experimentación más que un agente listo para producción.
 
@@ -69,7 +69,7 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Timesteps | mean_reward | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d-svitov/LunarLander-v2 | PPO (implementación propia) | LunarLander-v2 | 50.000 | -180,68 ± 72,58 | no disponible | HuggingFace |
+| d-svitov/LunarLander-v2 | PPO (implementación propia) | LunarLander-v2 | 50.000 | -180,68 ± 72,58 | no disponible | Hugging Face |
 | CleanRL PPO LunarLander | PPO (referencia) | LunarLander-v2 | 50.000 (config. por defecto) | no disponible en esta ficha | MIT (CleanRL) | GitHub |
 | Stable-Baselines3 PPO | PPO (referencia) | LunarLander-v2 | variable | no disponible en esta ficha | MIT | GitHub / PyPI |
 
@@ -88,7 +88,7 @@ No se dispone de resultados comparables verificados en la información proporcio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/d-svitov/LunarLander-v2
+- Hugging Face: https://huggingface.co/d-svitov/LunarLander-v2
 - CleanRL (referencia de hiperparámetros): https://github.com/vwxyzjn/cleanrl
 - Gymnasium LunarLander-v2: https://gymnasium.farama.org/environments/box2d/lunar_lander/
 - Stable-Baselines3 (alternativa de referencia): https://github.com/DLR-RM/stable-baselines3

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`yasserrmd/enterprise-reflex-v0` es un modelo de clasificación de texto publicado en HuggingFace por el usuario yasserrmd. Está etiquetado con `modernbert`, `text-classification` y `transformers`, y el repositorio contiene pesos en formato safetensors con 149.606.402 parámetros (0,6 GB). No es un modelo generativo ni un LLM conversacional: por su pipeline declarado (`text-classification`) se trata de un encoder con cabeza de clasificación, pensado para asignar etiquetas a secuencias de texto completas.
+`yasserrmd/enterprise-reflex-v0` es un modelo de clasificación de texto publicado en Hugging Face por el usuario yasserrmd. Está etiquetado con `modernbert`, `text-classification` y `transformers`, y el repositorio contiene pesos en formato safetensors con 149.606.402 parámetros (0,6 GB). No es un modelo generativo ni un LLM conversacional: por su pipeline declarado (`text-classification`) se trata de un encoder con cabeza de clasificación, pensado para asignar etiquetas a secuencias de texto completas.
 
-La relevancia del modelo es hoy muy limitada y difícil de evaluar: el repositorio acumula 0 descargas y 0 "likes", no declara licencia, no declara idiomas y la model card es la plantilla automática de HuggingFace sin ninguna sección completada (todos los campos figuran como "[More Information Needed]"). No hay paper, demo, dataset de entrenamiento ni resultados de evaluación publicados por el autor.
+La relevancia del modelo es hoy muy limitada y difícil de evaluar: el repositorio acumula 0 descargas y 0 "likes", no declara licencia, no declara idiomas y la model card es la plantilla automática de Hugging Face sin ninguna sección completada (todos los campos figuran como "[More Information Needed]"). No hay paper, demo, dataset de entrenamiento ni resultados de evaluación publicados por el autor.
 
 En la práctica, la única información fiable es el tamaño (149,6 M de parámetros, coherente con un encoder tipo ModernBERT-base), el formato de pesos, la librería (`transformers`) y el pipeline declarado. Cualquier uso en producción requiere inspeccionar el `config.json` del repositorio para conocer el número y las etiquetas de la cabeza de clasificación, y asumir que no existe documentación de soporte por parte del autor.
 
@@ -26,7 +26,7 @@ En la práctica, la única información fiable es el tamaño (149,6 M de paráme
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre el entrenamiento. La model card se limita a la plantilla automática de HuggingFace y no especifica datos de entrenamiento, número de tokens, composición del dataset, hiperparámetros, régimen de precisión (fp32, bf16, fp16) ni si hubo ajuste fino supervisado, RLHF o DPO. Tampoco se indica de qué checkpoint se parte ni si el modelo es un encoder preentrenado con cabeza nueva o un ajuste fino de un modelo existente.
+No hay información publicada sobre el entrenamiento. La model card se limita a la plantilla automática de Hugging Face y no especifica datos de entrenamiento, número de tokens, composición del dataset, hiperparámetros, régimen de precisión (fp32, bf16, fp16) ni si hubo ajuste fino supervisado, RLHF o DPO. Tampoco se indica de qué checkpoint se parte ni si el modelo es un encoder preentrenado con cabeza nueva o un ajuste fino de un modelo existente.
 
 La única pista arquitectónica es la etiqueta `modernbert`, que apunta a la familia ModernBERT: un encoder transformer con embeddings rotatorios (RoPE), atención alternada local/global, activación GeGLU, eliminación del padding en los cálculos (unpadding) y soporte nativo de secuencias largas. El recuento de parámetros (149,6 M) encaja con la variante base de esa familia. Sin embargo, ni el autor ni el repositorio confirman estos extremos, por lo que deben tratarse como una inferencia basada en la etiqueta, no como un dato verificado. Tampoco hay evidencia de ninguna innovación técnica propia ni de decodificación especulativa (no aplicable a un encoder de clasificación).
 
@@ -66,7 +66,7 @@ Estimaciones calculadas a partir del recuento de parámetros (149.606.402), no p
 - VRAM para los pesos: aproximadamente 0,6 GB en fp32, 0,3 GB en fp16/bf16 y 0,15 GB en int8. A esto hay que sumar memoria para activaciones y el tamaño de lote.
 - GPU: cabe holgadamente en cualquier GPU consumer (RTX 3060, RTX 4070, RTX 4090) e incluso en GPUs de gama de entrada y en iGPU con suficiente memoria compartida.
 - CPU: al tratarse de un encoder de tamaño base, es viable su despliegue en CPU para inferencia por lotes; el rendimiento real dependerá del hardware y no hay cifras publicadas.
-- Opciones de despliegue: `transformers` (librería declarada), Text Embeddings Inference (etiqueta `text-embeddings-inference`) y endpoints compatibles con HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). Para vLLM, llama.cpp u Ollama haría falta una conversión a GGUF o un soporte de encoder que no está publicado; no hay artefactos de ese tipo en el repositorio.
+- Opciones de despliegue: `transformers` (librería declarada), Text Embeddings Inference (etiqueta `text-embeddings-inference`) y endpoints compatibles con Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). Para vLLM, llama.cpp u Ollama haría falta una conversión a GGUF o un soporte de encoder que no está publicado; no hay artefactos de ese tipo en el repositorio.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 - Ahorro de memoria adicional: se puede aplicar cuantización dinámica a int8 con PyTorch de forma directa al ser un encoder pequeño, aunque no se distribuye ninguna variante ya cuantizada.
 
@@ -97,6 +97,6 @@ Comparado con cualquiera de estas alternativas, `enterprise-reflex-v0` no aporta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yasserrmd/enterprise-reflex-v0
+- Hugging Face: https://huggingface.co/yasserrmd/enterprise-reflex-v0
 - arXiv 1910.09700 (Lacoste et al., calculadora de impacto de carbono): https://arxiv.org/abs/1910.09700 — aparece únicamente como enlace de la plantilla automática de la model card, no es el paper del modelo
 - Búsqueda web: no se encontró ningún resultado relevante sobre este modelo, su autor, su entrenamiento o su evaluación. Los resultados devueltos (Pinkbike, páginas de ayuda de YouTube) no guardan relación con el modelo.

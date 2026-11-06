@@ -74,9 +74,9 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XTTS-v2 Romanian (este modelo) | no disponible | no aplica (TTS) | rumano | CPML | HuggingFace (Music12345/xtts-v2-romanian) |
-| coqui/XTTS-v2 (base) | no disponible | no aplica (TTS) | multilingüe (17 idiomas) | CPML | HuggingFace (coqui/XTTS-v2) |
-| XTTS-v2 Romanian v2 (versión posterior del mismo autor) | no disponible | no aplica (TTS) | rumano | no disponible en la información | HuggingFace (eduardem/xtts-v2-romanian-v2) |
+| XTTS-v2 Romanian (este modelo) | no disponible | no aplica (TTS) | rumano | CPML | Hugging Face (Music12345/xtts-v2-romanian) |
+| coqui/XTTS-v2 (base) | no disponible | no aplica (TTS) | multilingüe (17 idiomas) | CPML | Hugging Face (coqui/XTTS-v2) |
+| XTTS-v2 Romanian v2 (versión posterior del mismo autor) | no disponible | no aplica (TTS) | rumano | no disponible en la información | Hugging Face (eduardem/xtts-v2-romanian-v2) |
 
 El modelo base XTTS-v2 es multilingüe y genérico, mientras que este ajuste está especializado en rumano con 5 voces y métricas de WER publicadas por voz. La versión v2 del mismo autor amplía a 15 voces, unos 470 hablantes y unas 471 000 muestras sobre un dataset tres veces mayor, por lo que la model card recomienda la v2 frente a esta v1. No se dispone de datos de benchmarks comparativos frente a otros sistemas TTS comerciales o de código abierto (por ejemplo, Bark, VITS o Piper) en la información proporcionada.
 
@@ -94,7 +94,7 @@ El modelo base XTTS-v2 es multilingüe y genérico, mientras que este ajuste est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Music12345/xtts-v2-romanian
+- Modelo en Hugging Face: https://huggingface.co/Music12345/xtts-v2-romanian
 - Modelo base XTTS-v2: https://huggingface.co/coqui/XTTS-v2
 - Versión posterior v2: https://huggingface.co/eduardem/xtts-v2-romanian-v2
 - Demo en vivo y muestras de audio: https://eduardm.codeberg.page/romanian-tts-xtts-v2/

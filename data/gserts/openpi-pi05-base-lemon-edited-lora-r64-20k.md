@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Gserts/openpi-pi05-base-lemon-edited-lora-r64-20k | no disponible | no disponible | Pick-and-place "lemon" | Apache 2.0 | Orbax (JAX) | HuggingFace, 0 descargas |
+| Gserts/openpi-pi05-base-lemon-edited-lora-r64-20k | no disponible | no disponible | Pick-and-place "lemon" | Apache 2.0 | Orbax (JAX) | Hugging Face, 0 descargas |
 | pi05_base (OpenPI, Physical Intelligence) | no disponible en la información | no disponible | VLA generalista | no disponible en la información | no disponible en la información | Referenciado como base del ajuste |
 | Alternativas de la misma categoría (otros VLA como OpenVLA, RT-2) | no disponible | no disponible | Manipulación generalista | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Gserts/openpi-pi05-base-lemon-edited-lora-r64-20k
+- Hugging Face: https://huggingface.co/Gserts/openpi-pi05-base-lemon-edited-lora-r64-20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/Gserts/pick_place_lemon_edited_20261101_165328
 - OpenPI (framework): no se proporciona enlace en la información disponible
 - Paper de pi05 / OpenPI: no disponible en la información proporcionada

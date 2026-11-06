@@ -4,7 +4,7 @@
 
 El modelo `strivedi183/olmo-2-0425-1b-instruct-q4` es una cuantizacion Q4 del modelo instruct `OLMo-2-0425-1B-Instruct` de AllenAI. La cuantizacion reduce el peso de los parametros a aproximadamente 4 bits, lo que facilita el despliegue en entornos con recursos limitados, especialmente en dispositivos con poca memoria.
 
-El autor del repositorio, `strivedi183`, ha publicado esta version en HuggingFace bajo la licencia Apache 2.0. Segun la nomenclatura, el modelo original tiene 1B de parametros y fue desarrollado por AllenAI, una iniciativa de investigacion en inteligencia artificial de codigo abierto. No se proporcionan datos adicionales sobre la arquitectura, el contexto o el proceso de entrenamiento en la informacion disponible.
+El autor del repositorio, `strivedi183`, ha publicado esta version en Hugging Face bajo la licencia Apache 2.0. Segun la nomenclatura, el modelo original tiene 1B de parametros y fue desarrollado por AllenAI, una iniciativa de investigacion en inteligencia artificial de codigo abierto. No se proporcionan datos adicionales sobre la arquitectura, el contexto o el proceso de entrenamiento en la informacion disponible.
 
 Esta publicacion es relevante porque ofrece una alternativa cuantizada para quienes necesitan ejecutar un modelo instruct de tamano reducido en hardware modesto. Sin embargo, al carecer de documentacion tecnica detallada, la adopcion en produccion requiere una validacion previa por parte del usuario.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Comparativa con modelos similares
 
-No se dispone de benchmarks ni especificaciones detalladas de modelos comparables en la informacion proporcionada. Se puede indicar que esta publicacion es una version cuantizada del modelo original `allenai/OLMo-2-0425-1B-Instruct`, que esta disponible en HuggingFace con sus pesos completos. La cuantizacion reduce el espacio de almacenamiento y el consumo de memoria, pero no hay datos para evaluar si existe una perdida de precision en tareas especificas.
+No se dispone de benchmarks ni especificaciones detalladas de modelos comparables en la informacion proporcionada. Se puede indicar que esta publicacion es una version cuantizada del modelo original `allenai/OLMo-2-0425-1B-Instruct`, que esta disponible en Hugging Face con sus pesos completos. La cuantizacion reduce el espacio de almacenamiento y el consumo de memoria, pero no hay datos para evaluar si existe una perdida de precision en tareas especificas.
 
 ## Limitaciones y advertencias
 

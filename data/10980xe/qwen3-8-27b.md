@@ -50,7 +50,7 @@ La model card incluye una tabla comparativa de rendimiento en texto que enfrenta
 
 ## Requisitos de hardware
 
-- El repositorio de HuggingFace contiene pesos en safetensors con un tamaño total de 55,6 GB, lo que sugiere que en precisión FP16 se necesitan al menos 56 GB de VRAM para cargar el modelo completo.
+- El repositorio de Hugging Face contiene pesos en safetensors con un tamaño total de 55,6 GB, lo que sugiere que en precisión FP16 se necesitan al menos 56 GB de VRAM para cargar el modelo completo.
 - Para inferencia en GPU de consumo, se requerirán cuantizaciones (por ejemplo, 8-bit o 4-bit) que reduzcan la huella de memoria; no se han publicado valores oficiales de VRAM para cuantizaciones específicas.
 - AMD ha publicado una guía oficial para ejecutar Qwen3.8-27B en procesadores AMD Ryzen AI Max y GPUs Radeon, lo que indica que es viable en hardware de estación de trabajo y portátiles de gama alta.
 - Opciones de despliegue: Hugging Face Transformers, vLLM, SGLang, TokenSpeed. También está prevista su disponibilidad como servicio gestionado en Qwen Cloud con contexto de 1M por defecto.
@@ -75,12 +75,12 @@ La comparativa se limita a los datos disponibles en la model card. No se dispone
 - La longitud de contexto de 1M es una extensión sobre el valor nativo de 262K; el rendimiento en contextos muy largos puede degradarse y requiere pruebas específicas.
 - Los idiomas soportados no están especificados en la documentación disponible; el rendimiento en idiomas distintos del inglés y el chino no está garantizado.
 - Aunque la licencia Apache 2.0 permite uso comercial, el modelo puede tener limitaciones en cuanto a la disponibilidad de cuantizaciones oficiales; las cuantizaciones de la comunidad pueden no estar optimizadas.
-- El repositorio de HuggingFace consultado (10980xe/Qwen3.8-27B) tiene 0 descargas y 0 likes, lo que sugiere que es un mirror o copia no oficial; se recomienda verificar la autenticidad del modelo en el repositorio oficial de Qwen.
+- El repositorio de Hugging Face consultado (10980xe/Qwen3.8-27B) tiene 0 descargas y 0 likes, lo que sugiere que es un mirror o copia no oficial; se recomienda verificar la autenticidad del modelo en el repositorio oficial de Qwen.
 
 ## Enlaces
 
-- Repositorio HuggingFace consultado: https://huggingface.co/10980xe/Qwen3.8-27B
-- Repositorio oficial de Qwen en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Repositorio Hugging Face consultado: https://huggingface.co/10980xe/Qwen3.8-27B
+- Repositorio oficial de Qwen en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de AMD sobre ejecución en Ryzen AI Max y Radeon: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Página de Qwen Cloud para Qwen3.8-27B: https://www.qwencloud.com/models/qwen3.8-27b
 - Análisis de rendimiento y requisitos GPU (Northflank): https://northflank.com/blog/qwen3-8-27b-performance-benchmarks-gpu-requirements-and-how-to-run-it

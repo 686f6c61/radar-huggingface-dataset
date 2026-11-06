@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parvulus es un modelo publicado en HuggingFace por el usuario aasivas bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente declara la licencia y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. No se dispone de pipeline declarado, idiomas soportados ni métricas de rendimiento.
+Parvulus es un modelo publicado en Hugging Face por el usuario aasivas bajo licencia Apache 2.0. La model card asociada está prácticamente vacía: únicamente declara la licencia y no incluye información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. No se dispone de pipeline declarado, idiomas soportados ni métricas de rendimiento.
 
 El nombre "Parvulus" (diminutivo latino de "pequeño") sugiere, sin confirmación por parte del autor, que podría tratarse de un modelo de reducidas dimensiones, pero esta interpretación no está respaldada por ningún dato técnico publicado. El repositorio no registra descargas ni interacciones en el momento de la consulta, lo que indica que se trata de una publicación reciente o sin difusión.
 
@@ -40,9 +40,9 @@ Tampoco se documentan innovaciones técnicas destacables (atención lineal, deco
 
 - Evaluación exploratoria en investigación: el modelo puede descargarse y probarse en entornos controlados para determinar empíricamente sus capacidades, dado que no hay documentación que permita anticiparlas.
 - Prototipado interno sin requisitos de soporte: al estar bajo Apache 2.0, puede integrarse en pruebas de concepto internas sin restricciones de uso comercial, aunque sin garantías de calidad documentadas.
-- Experimentación académica con modelos de autoría individual: útil como objeto de estudio de publicaciones en HuggingFace sin model card completa.
+- Experimentación académica con modelos de autoría individual: útil como objeto de estudio de publicaciones en Hugging Face sin model card completa.
 - Base para fine-tuning propio: si los pesos están disponibles en formatos estándar (no confirmado), podría servir como punto de partida para ajuste supervisado, previa verificación del tamaño real del modelo.
-- Análisis de reproducibilidad: permite estudiar prácticas de publicación de modelos en HuggingFace y la importancia de documentar arquitectura y datos de entrenamiento.
+- Análisis de reproducibilidad: permite estudiar prácticas de publicación de modelos en Hugging Face y la importancia de documentar arquitectura y datos de entrenamiento.
 - No se recomienda su uso en producción, atención al cliente, generación de código, pipelines de CI/CD ni ningún escenario con requisitos de fiabilidad, dado que no existe información que permita evaluar su comportamiento.
 
 ## Benchmarks y rendimiento
@@ -78,5 +78,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aasivas/Parvulus
+- Repositorio Hugging Face: https://huggingface.co/aasivas/Parvulus
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información disponible.

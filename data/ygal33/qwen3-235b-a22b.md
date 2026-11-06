@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-235B-A22B es el modelo insignia de la serie Qwen3, desarrollado por Alibaba Cloud y publicado bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 235.000 millones de parametros totales y 22.000 millones activos por token, disenado para tareas complejas de razonamiento, generacion de codigo, agentes y comprension multilingue. El modelo se distribuye a traves del repositorio de HuggingFace de Qwen, y la copia referenciada en este analisis (ygal33/Qwen3-235B-A22B) es un espejo del original con pesos en formato safetensors.
+Qwen3-235B-A22B es el modelo insignia de la serie Qwen3, desarrollado por Alibaba Cloud y publicado bajo licencia Apache 2.0. Se trata de un modelo de lenguaje de arquitectura Mixture-of-Experts (MoE) con 235.000 millones de parametros totales y 22.000 millones activos por token, disenado para tareas complejas de razonamiento, generacion de codigo, agentes y comprension multilingue. El modelo se distribuye a traves del repositorio de Hugging Face de Qwen, y la copia referenciada en este analisis (ygal33/Qwen3-235B-A22B) es un espejo del original con pesos en formato safetensors.
 
 Su principal innovacion es la capacidad de alternar entre modo de pensamiento (thinking) y modo directo (non-thinking) dentro de un mismo modelo, lo que permite optimizar la calidad de razonamiento o la eficiencia segun el escenario. Segun los datos publicados, supera a QwQ en modo pensamiento y a los modelos instruct de Qwen2.5 en modo directo, alcanzando resultados competitivos frente a DeepSeek-R1, OpenAI o1, o3-mini, Grok-3 y Gemini-2.5-Pro en evaluaciones de codigo, matematicas y capacidades generales. Soporta una ventana de contexto nativa de 32.768 tokens, ampliable a 131.072 mediante la extension YaRN.
 
@@ -79,8 +79,8 @@ Qwen3-235B-A22B se posiciona como una alternativa de codigo abierto con licencia
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia analizada): https://huggingface.co/ygal33/Qwen3-235B-A22B
-- Repositorio HuggingFace oficial: https://huggingface.co/Qwen/Qwen3-235B-A22B
+- Repositorio Hugging Face (copia analizada): https://huggingface.co/ygal33/Qwen3-235B-A22B
+- Repositorio Hugging Face oficial: https://huggingface.co/Qwen/Qwen3-235B-A22B
 - Blog oficial de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Blog de Qwen (anuncio): https://qwen.ai/blog?id=qwen3
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

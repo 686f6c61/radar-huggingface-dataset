@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nico-robot/microduck-i-stole-this-one es un artefacto de política robótica publicado en HuggingFace por el usuario Nico-robot bajo la librería ONNX. No es un modelo de lenguaje ni un modelo multimodal: se trata de un fichero `policy.onnx` que implementa una política de control para un robot, con una interfaz muy concreta y documentada en la propia model card: recibe un vector de observación de 61 valores y devuelve 14 consignas articulares (joint targets), ejecutándose a 50 Hz. El autor indica que fue publicado desde la "Microduck Arena" y remite a un fichero `manifest.json` para el contrato completo de la interfaz.
+Nico-robot/microduck-i-stole-this-one es un artefacto de política robótica publicado en Hugging Face por el usuario Nico-robot bajo la librería ONNX. No es un modelo de lenguaje ni un modelo multimodal: se trata de un fichero `policy.onnx` que implementa una política de control para un robot, con una interfaz muy concreta y documentada en la propia model card: recibe un vector de observación de 61 valores y devuelve 14 consignas articulares (joint targets), ejecutándose a 50 Hz. El autor indica que fue publicado desde la "Microduck Arena" y remite a un fichero `manifest.json` para el contrato completo de la interfaz.
 
 La relevancia de este tipo de publicaciones es distinta a la de un modelo generativo: aquí lo importante no es el conocimiento del modelo, sino la reproducibilidad del controlador. Una política con entrada, salida y frecuencia fijas puede cargarse en un runtime ONNX, integrarse en un bucle de control en tiempo real y evaluarse de forma determinista en simulación o en hardware. La existencia de un manifiesto de contrato sugiere que el ecosistema Microduck estandariza el intercambio de políticas entre entornos de evaluación.
 
@@ -23,7 +23,7 @@ Ahora bien, el nivel de información disponible es mínimo. La model card apenas
 | Entrada | Vector de 61 valores (observación) |
 | Salida | 14 consignas articulares (joint targets) |
 | Frecuencia de control | 50 Hz |
-| Tamano del repositorio | 0.0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0.0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-16 / 2026-09-16 |
 
@@ -82,6 +82,6 @@ No disponible. La información proporcionada no incluye referencias a otras pol�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nico-robot/microduck-i-stole-this-one
+- Modelo en Hugging Face: https://huggingface.co/Nico-robot/microduck-i-stole-this-one
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, el ecosistema Microduck o la Microduck Arena. Los resultados devueltos corresponden a entidades no relacionadas (la cantante Nico y plataformas de video), por lo que se descartan.
 - Paper, blog, repositorio de codigo o demo: no disponible.

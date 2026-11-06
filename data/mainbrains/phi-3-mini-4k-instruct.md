@@ -83,7 +83,7 @@ No se dispone de datos comparativos en la informacion proporcionada. El modelo c
 
 ## Enlaces
 
-- Repositorio HuggingFace del fork: https://huggingface.co/mainbrains/phi-3-mini-4k-instruct
+- Repositorio Hugging Face del fork: https://huggingface.co/mainbrains/phi-3-mini-4k-instruct
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Phi-3-mini-4k-instruct
 - Portal Phi-3: https://azure.microsoft.com/en-us/products/phi-3
 - Blog de Microsoft sobre Phi-3: https://aka.ms/Phi-3Build2024

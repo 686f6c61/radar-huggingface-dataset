@@ -91,6 +91,6 @@ No disponible. No se han proporcionado datos del modelo base ni de alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Underdog-Poodle-4B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Underdog-Poodle-4B-i1-GGUF
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Poodle-4B
 - llama.cpp (runtime compatible con GGUF): https://github.com/ggerganov/llama.cpp

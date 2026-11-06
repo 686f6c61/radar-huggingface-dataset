@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Aicollins/mobilevit-matching` es un repositorio de HuggingFace que contiene una implementación propia y mínima de la arquitectura MobileViT, orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario Aicollins y no debe confundirse con un modelo entrenado: el propio autor indica explícitamente que el checkpoint incluido es una inicialización para *smoke tests*, no un modelo con pesos entrenados ni evaluados.
+`Aicollins/mobilevit-matching` es un repositorio de Hugging Face que contiene una implementación propia y mínima de la arquitectura MobileViT, orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). Lo publica el usuario Aicollins y no debe confundirse con un modelo entrenado: el propio autor indica explícitamente que el checkpoint incluido es una inicialización para *smoke tests*, no un modelo con pesos entrenados ni evaluados.
 
 El repositorio se compone de un script `model.py` con la definición del modelo y un punto de entrada ejecutable, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` de inicialización. El recuento de parámetros reportado en los metadatos (16.576) es anómalamente bajo para una MobileViT, lo que sugiere que corresponde a un tensor concreto o a una variante truncada de juguete, no al modelo completo.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aicollins/mobilevit-matching | 16.576 (metadatos) | no disponible | sin benchmarks | BSD-3-Clause | HuggingFace, 0 descargas |
+| Aicollins/mobilevit-matching | 16.576 (metadatos) | no disponible | sin benchmarks | BSD-3-Clause | Hugging Face, 0 descargas |
 | MobileViT oficial (apple/ml-mobilevit) | no disponible en esta ficha | no disponible | no disponible | no disponible | Repositorio oficial |
-| Otras implementaciones MobileViT en HuggingFace | no disponible | no disponible | no disponible | variable | HuggingFace |
+| Otras implementaciones MobileViT en Hugging Face | no disponible | no disponible | no disponible | variable | Hugging Face |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa con alternativas de la misma categoría.
 
@@ -79,5 +79,5 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aicollins/mobilevit-matching
+- Hugging Face: https://huggingface.co/Aicollins/mobilevit-matching
 - No se han encontrado en la búsqueda web papers, blogs, repositorios o demos adicionales asociados a este modelo concreto.

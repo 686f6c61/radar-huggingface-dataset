@@ -78,9 +78,9 @@ Para cualquiera de los dos ratios de proximidad, los valores inferiores a uno in
 
 | Modelo | Parametros | Contexto | Tecnica aplicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `lment-1b-ai-snmf-ember-ratio-in-b131k` (este) | Aprox. 1B | No disponible (SNMF con seq. max. 256) | EMBER (delta 500) + SNMF ratio-in sobre capas 4-6 | No disponible | HuggingFace |
-| `lment-1b-noai-2e-b131k` (gemelo con exclusion de concepto) | Aprox. 1B | No disponible | Exclusion de concepto en el entrenamiento (fragmentos enmascarados en la perdida) | No disponible | HuggingFace |
-| `lment-1b-control-2e-b131k` (control completo) | Aprox. 1B | No disponible | Sin edicion ni exclusion | No disponible | HuggingFace |
+| `lment-1b-ai-snmf-ember-ratio-in-b131k` (este) | Aprox. 1B | No disponible (SNMF con seq. max. 256) | EMBER (delta 500) + SNMF ratio-in sobre capas 4-6 | No disponible | Hugging Face |
+| `lment-1b-noai-2e-b131k` (gemelo con exclusion de concepto) | Aprox. 1B | No disponible | Exclusion de concepto en el entrenamiento (fragmentos enmascarados en la perdida) | No disponible | Hugging Face |
+| `lment-1b-control-2e-b131k` (control completo) | Aprox. 1B | No disponible | Sin edicion ni exclusion | No disponible | Hugging Face |
 
 Los tres modelos comparten arquitectura OLMo2 1B e idioma (inglés). Las diferencias relevantes son la técnica aplicada y, en consecuencia, las métricas de supresión y proximidad. No se dispone de comparación con modelos externos de la misma categoría en la información proporcionada.
 
@@ -98,7 +98,7 @@ Los tres modelos comparten arquitectura OLMo2 1B e idioma (inglés). Las diferen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itamarstahl/lment-1b-ai-snmf-ember-ratio-in-b131k
+- Modelo en Hugging Face: https://huggingface.co/itamarstahl/lment-1b-ai-snmf-ember-ratio-in-b131k
 - Control completo compartido: https://huggingface.co/itamarstahl/lment-1b-control-2e-b131k
 - Gemelo con exclusion de concepto: https://huggingface.co/itamarstahl/lment-1b-noai-2e-b131k
 - Articulo de referencia: Gal Barak, Tamar Tabbach, Itamar Stahl y Adam Fleisher, *Can Concept Erasure Reproduce Concept Exclusion? A Matched Evaluation of EMBER, RMU, and SNMF*, 2026 (no se proporciona URL en la informacion disponible).

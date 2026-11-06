@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UniMate-Weights es un checkpoint de generacion de movimiento (animacion de esqueletos) publicado por el usuario tarn59 en HuggingFace, entrenado desde cero con el codigo y la configuracion oficiales del modelo UniMate ("UniMate: One Unified Model to Animate Diverse Skeletons", Mou et al., SIGGRAPH Asia 2026, arXiv 2609.05415). No es el checkpoint de los autores: se trata de una reproduccion independiente realizada por un tercero en una unica GPU de estacion de trabajo, por lo que los pesos difieren de la version oficial.
+UniMate-Weights es un checkpoint de generacion de movimiento (animacion de esqueletos) publicado por el usuario tarn59 en Hugging Face, entrenado desde cero con el codigo y la configuracion oficiales del modelo UniMate ("UniMate: One Unified Model to Animate Diverse Skeletons", Mou et al., SIGGRAPH Asia 2026, arXiv 2609.05415). No es el checkpoint de los autores: se trata de una reproduccion independiente realizada por un tercero en una unica GPU de estacion de trabajo, por lo que los pesos difieren de la version oficial.
 
 El modelo tiene 74.077.328 parametros (74,1 M) y es un transformer de difusion espacio-temporal factorizado con 10 bloques, latente de 512 dimensiones, 8 cabezas de atencion, MLP SwiGLU, RMSNorm con QK-norm y condicionamiento adaLN-Zero. La atencion espacial opera dentro de cada fotograma entre articulaciones (con sesgos de distancia y tipo de arista estilo Graphormer y un RoPE espectral sobre 8 vectores propios del laplaciano), mientras que la atencion temporal opera dentro de cada articulacion a lo largo del tiempo con RoPE 1-D. Se entrena con flow matching y genera animaciones de 60 fotogramas condicionadas por texto.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Ventana temporal | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| tarn59/UniMate-Weights (este checkpoint) | 74,1 M | 60 fotogramas | no disponible | HuggingFace, 0 descargas | sin benchmarks publicados; sin split de evaluacion |
+| tarn59/UniMate-Weights (este checkpoint) | 74,1 M | 60 fotogramas | no disponible | Hugging Face, 0 descargas | sin benchmarks publicados; sin split de evaluacion |
 | Checkpoint oficial de UniMate (autores, Mou et al.) | misma arquitectura y configuracion | 60 fotogramas | no disponible | via repositorio del paper | cifras del paper, no aplicables a este checkpoint |
 | Otros modelos de generacion de movimiento texto-a-movimiento | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La unica comparacion documentada es contra el checkpoint oficial de los autores,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tarn59/UniMate-Weights
+- Hugging Face: https://huggingface.co/tarn59/UniMate-Weights
 - Repositorio oficial de UniMate: https://github.com/Friedrich-M/UniMate
 - Paper: UniMate: One Unified Model to Animate Diverse Skeletons, Mou et al., SIGGRAPH Asia 2026: https://arxiv.org/abs/2609.05415
 - Dataset UniML3D: https://huggingface.co/datasets/Linzhan/UniML3D

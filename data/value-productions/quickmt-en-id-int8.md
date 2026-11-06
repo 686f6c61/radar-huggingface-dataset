@@ -79,11 +79,11 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas en la i
 - La cuantización int8 puede degradar la calidad fuera del conjunto de frases verificado por el autor; la equivalencia exacta solo está afirmada para esas frases.
 - La licencia CC BY 4.0 exige atribución al autor original (quickmt) y al publicador de la conversión; conviene revisar los términos antes de uso comercial.
 - El modelo base no documenta longitud de contexto, por lo que no se puede garantizar el comportamiento con entradas largas.
-- Repositorio con muy poca tracción (28 descargas, 0 likes) y sin mantenimiento documentado; la fecha de creación indicada (2026) debe verificarse en la página de HuggingFace.
+- Repositorio con muy poca tracción (28 descargas, 0 likes) y sin mantenimiento documentado; la fecha de creación indicada (2026) debe verificarse en la página de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-en-id-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-en-id-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-id
 - CTranslate2 (repositorio del runtime): no disponible en la información proporcionada
 - Aplicación Yaku Translate: no disponible en la información proporcionada

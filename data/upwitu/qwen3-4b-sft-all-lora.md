@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`upwitu/qwen3-4b-sft-all-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante Supervised Fine-Tuning (SFT) sobre el modelo base `unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`, que a su vez es una versión instruct del modelo Qwen3-4B cuantizada a 4 bits con bitsandbytes. El adaptador está publicado en HuggingFace bajo el framework PEFT (versión 0.20.0) y utiliza el formato de pesos safetensors.
+`upwitu/qwen3-4b-sft-all-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado mediante Supervised Fine-Tuning (SFT) sobre el modelo base `unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit`, que a su vez es una versión instruct del modelo Qwen3-4B cuantizada a 4 bits con bitsandbytes. El adaptador está publicado en Hugging Face bajo el framework PEFT (versión 0.20.0) y utiliza el formato de pesos safetensors.
 
 El autor, `upwitu`, no ha incluido una model card con información detallada: los campos de descripción, datos de entrenamiento, evaluación y licencia aparecen como "More Information Needed". Tampoco se han registrado descargas ni likes en el momento de la consulta. A pesar de ello, el repositorio resulta relevante como ejemplo de fine-tuning eficiente mediante LoRA sobre un modelo de 4B parámetros, empleando las técnicas de cuantización de Unsloth para reducir el coste computacional.
 
@@ -75,5 +75,5 @@ No se dispone de información comparativa. No se han publicado resultados de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/upwitu/qwen3-4b-sft-all-lora
+- Repositorio Hugging Face: https://huggingface.co/upwitu/qwen3-4b-sft-all-lora
 - Modelo base (Unsloth): https://huggingface.co/unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JayCao99/pi05-rm65b-toy-rl10-K6R-v0.0` es un checkpoint de politica robotica (policy) entrenado con la libreria LeRobot y publicado en HuggingFace. No se trata de un modelo de lenguaje, sino de una politica vision-language-action (VLA) de la familia Pi-0.5, pensada para controlar un brazo robotico. El repositorio contiene un unico checkpoint (`checkpoint-002600`) con el payload de despliegue completo: `model.safetensors`, `config.json`, pre/postprocesadores y `train_config.json`.
+El modelo `JayCao99/pi05-rm65b-toy-rl10-K6R-v0.0` es un checkpoint de politica robotica (policy) entrenado con la libreria LeRobot y publicado en Hugging Face. No se trata de un modelo de lenguaje, sino de una politica vision-language-action (VLA) de la familia Pi-0.5, pensada para controlar un brazo robotico. El repositorio contiene un unico checkpoint (`checkpoint-002600`) con el payload de despliegue completo: `model.safetensors`, `config.json`, pre/postprocesadores y `train_config.json`.
 
 El autor (JayCao99) lo publica bajo el flujo de trabajo `goal_gen/upload_hf_checkpoints.sh`, con etiquetas `robotics` e `imitation-learning`. El nombre del repositorio sugiere un entrenamiento sobre un brazo RM65-B (RealMan RM65-B, 6 grados de libertad) para una tarea de tipo "toy" (colocar un objeto), con un posible ajuste posterior por refuerzo; esta interpretacion es una hipotesis a partir del nombre y no esta confirmada en la model card.
 
@@ -94,6 +94,6 @@ No hay datos de benchmarks ni especificaciones del propio modelo que permitan un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JayCao99/pi05-rm65b-toy-rl10-K6R-v0.0
+- Modelo en Hugging Face: https://huggingface.co/JayCao99/pi05-rm65b-toy-rl10-K6R-v0.0
 - Libreria LeRobot (referencia del ecosistema, no enlazada en la informacion proporcionada): https://github.com/huggingface/lerobot
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo: los resultados obtenidos eran galerias de fondos de pantalla sin relacion con el contenido.

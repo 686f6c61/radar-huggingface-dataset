@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `minguesito/recetaflix-vosk` es un artefacto publicado en HuggingFace por el usuario `minguesito` el 30 de septiembre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 0,3 GB. La model card publicada no contiene mas informacion que la declaracion de licencia, por lo que no hay datos verificables sobre arquitectura, datos de entrenamiento, idiomas o rendimiento. Se trata, por tanto, de un modelo sin documentacion tecnica asociada en el momento de redactar esta ficha.
+El repositorio `minguesito/recetaflix-vosk` es un artefacto publicado en Hugging Face por el usuario `minguesito` el 30 de septiembre de 2026, con licencia Apache 2.0 y un tamano de repositorio de 0,3 GB. La model card publicada no contiene mas informacion que la declaracion de licencia, por lo que no hay datos verificables sobre arquitectura, datos de entrenamiento, idiomas o rendimiento. Se trata, por tanto, de un modelo sin documentacion tecnica asociada en el momento de redactar esta ficha.
 
 El identificador del repositorio incluye el termino `vosk`, lo que sugiere una posible relacion con el ecosistema Vosk (reconocimiento automatico del habla offline basado en Kaldi), y `recetaflix`, que apunta a un dominio de aplicacion vinculado a recetas o contenido audiovisual. Ninguna de estas dos inferencias esta confirmada por el autor en la informacion disponible, de modo que deben tomarse unicamente como hipotesis de trabajo y no como especificaciones del modelo.
 
@@ -90,5 +90,5 @@ No disponible. No se dispone de datos de parametros, contexto, rendimiento ni li
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minguesito/recetaflix-vosk
+- Hugging Face: https://huggingface.co/minguesito/recetaflix-vosk
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados en la informacion disponible.

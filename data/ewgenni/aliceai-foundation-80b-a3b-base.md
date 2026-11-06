@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AliceAI-Foundation-80B-A3B-Base es un modelo de lenguaje autorregresivo de tipo base (solo preentrenamiento) con arquitectura híbrida y capas de mezcla de expertos (MoE). El repositorio está publicado en HuggingFace por el usuario `ewgenni` y su model card referencia la línea AliceAI de Yandex, además de datasets y un artículo de Habr de Yandex; se distribuye bajo licencia Apache 2.0. Cuenta con 81.286.433.408 parámetros totales, de los que se activan aproximadamente 3.000 millones por token, y soporta una longitud de contexto de hasta 262.144 tokens.
+AliceAI-Foundation-80B-A3B-Base es un modelo de lenguaje autorregresivo de tipo base (solo preentrenamiento) con arquitectura híbrida y capas de mezcla de expertos (MoE). El repositorio está publicado en Hugging Face por el usuario `ewgenni` y su model card referencia la línea AliceAI de Yandex, además de datasets y un artículo de Habr de Yandex; se distribuye bajo licencia Apache 2.0. Cuenta con 81.286.433.408 parámetros totales, de los que se activan aproximadamente 3.000 millones por token, y soporta una longitud de contexto de hasta 262.144 tokens.
 
 El modelo se ha entrenado desde cero y combina dos tipos de atención: capas KDA (una forma de atención lineal con kernel convolucional) y capas Gated Attention, intercaladas con capas MoE de 512 expertos. La model card indica que el objetivo es ofrecer resultados de razonamiento (matemáticas y programación) al nivel de modelos de mayor tamaño, con un rendimiento especialmente fuerte en conocimiento factual en ruso. Para ello se publican dos benchmarks de hechos en ruso, WikiWebFacts y HardMultiQA, junto con sus protocolos de evaluación.
 
@@ -97,11 +97,11 @@ Los datos de contexto y licencia de los modelos comparados no se han proporciona
 - Licencia Apache 2.0: permite uso comercial, pero el modelo depende de `custom_code` específico del autor, por lo que conviene revisar el código asociado antes de integrarlo en producción.
 - Requisitos de memoria muy altos en precisión completa (~162,6 GB), sin versiones cuantizadas oficiales publicadas.
 - Contexto largo (262.144 tokens) declarado por el autor; no se aportan mediciones independientes de degradación del rendimiento en contextos muy extensos.
-- La model card referencia el ecosistema de Yandex (datasets y artículo de Habr) mientras que el repositorio de HuggingFace está publicado por el usuario `ewgenni`; conviene verificar la procedencia y los permisos antes de un despliegue crítico.
+- La model card referencia el ecosistema de Yandex (datasets y artículo de Habr) mientras que el repositorio de Hugging Face está publicado por el usuario `ewgenni`; conviene verificar la procedencia y los permisos antes de un despliegue crítico.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ewgenni/AliceAI-Foundation-80B-A3B-Base
+- Repositorio en Hugging Face: https://huggingface.co/ewgenni/AliceAI-Foundation-80B-A3B-Base
 - Artículo en Habr (referenciado en la model card): https://habr.com/ru/companies/yandex/articles/1083300/
 - Dataset WikiWebFacts: https://huggingface.co/datasets/yandex/WikiWebFacts
 - Dataset HardMultiQA: https://huggingface.co/datasets/yandex/HardMultiQA

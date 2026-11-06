@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NanoJev es un modelo de decision de ~0,6 B de parametros construido sobre el backbone de Qwen/Qwen3-0.6B al que se le anaden cabezas estructuradas de decision. En lugar de generar texto token a token, devuelve distribuciones de probabilidad completas sobre un conjunto dinamico de candidatos: eleccion entre 2 y 255 opciones, probabilidad booleana de una proposicion y puntuacion sobre 2 a 10 niveles ordenados con score esperado. Lo publica el usuario fredzzh en HuggingFace, con el codigo fuente, los datos y la guia de ejecucion alojados en el repositorio GitHub TianyuCodings/NanoJev y en el dataset C-Tianyu/NanoJev-Data.
+NanoJev es un modelo de decision de ~0,6 B de parametros construido sobre el backbone de Qwen/Qwen3-0.6B al que se le anaden cabezas estructuradas de decision. En lugar de generar texto token a token, devuelve distribuciones de probabilidad completas sobre un conjunto dinamico de candidatos: eleccion entre 2 y 255 opciones, probabilidad booleana de una proposicion y puntuacion sobre 2 a 10 niveles ordenados con score esperado. Lo publica el usuario fredzzh en Hugging Face, con el codigo fuente, los datos y la guia de ejecucion alojados en el repositorio GitHub TianyuCodings/NanoJev y en el dataset C-Tianyu/NanoJev-Data.
 
 Su propuesta tecnica es la inferencia paralela: varios estados y varias preguntas se evaluan en un unico forward batcheado del backbone, sin decodificacion de tokens de salida. El autor reporta como medida real de servicio 6 estados, 18 preguntas y 44 caminos candidatos resueltos en un solo forward. Esto lo situa en la categoria de los "system one models" descritos por Jev (typesafe.ai), de los que NanoJev se presenta explicitamente como una replica nano.
 
@@ -91,7 +91,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otras tareas de l
 
 | Modelo | Parametros | Contexto | Navegacion 4x4 test | Navegacion 6x6 OOD | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NanoJev | ~0,6 B (backbone Qwen3-0.6B mas cabezas) | no disponible | 19/20 - 95% | 18/20 - 90% | no disponible | Pesos safetensors en HuggingFace, codigo y datos abiertos en GitHub |
+| NanoJev | ~0,6 B (backbone Qwen3-0.6B mas cabezas) | no disponible | 19/20 - 95% | 18/20 - 90% | no disponible | Pesos safetensors en Hugging Face, codigo y datos abiertos en GitHub |
 | Jev | no disponible | no disponible | 20/20 - 100% | 19/20 - 95% | no disponible | Referencia comercial de typesafe.ai; NanoJev se presenta como su replica nano |
 | Qwen3-0.6B (original) | ~0,6 B | no disponible en esta ficha | 7/20 - 35% | 3/20 - 15% | no disponible en esta ficha | Modelo base publico usado como punto de partida |
 
@@ -108,13 +108,13 @@ La comparacion directa con Jev y Qwen3-0.6B procede exclusivamente de la tabla d
 - No se publica longitud de contexto, por lo que se desconoce cuanta informacion de estado cabe en una peticion.
 - No hay cuantizaciones publicadas (GGUF, GPTQ, AWQ) ni integracion con runtimes estandar de inferencia, lo que obliga a usar los scripts del repositorio y un entorno CUDA compatible.
 - El repositorio ocupa 19,1 GB por acumular checkpoint base y variantes; conviene filtrar la descarga para no traer variantes que no se vayan a usar.
-- Discrepancia de identificadores a tener en cuenta: la ficha de HuggingFace corresponde a `fredzzh/NanoJev`, mientras que la model card y los ejemplos de descarga referencian `C-Tianyu/NanoJev` y el dataset `C-Tianyu/NanoJev-Data`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
+- Discrepancia de identificadores a tener en cuenta: la ficha de Hugging Face corresponde a `fredzzh/NanoJev`, mientras que la model card y los ejemplos de descarga referencian `C-Tianyu/NanoJev` y el dataset `C-Tianyu/NanoJev-Data`. Conviene verificar cual es el repositorio canonico antes de integrarlo.
 - Senales de adopcion nulas en el momento de la consulta: 0 descargas y 0 likes, creado y actualizado el 2026-09-19, sin senales de mantenimiento posterior.
 - La busqueda web realizada no devolvio ningun resultado relevante sobre el modelo; los resultados obtenidos estaban relacionados con colchones plegables y no aportan informacion tecnica.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fredzzh/NanoJev
+- Modelo en Hugging Face: https://huggingface.co/fredzzh/NanoJev
 - Modelo referenciado en la model card: https://huggingface.co/C-Tianyu/NanoJev
 - Codigo fuente: https://github.com/TianyuCodings/NanoJev
 - Dataset de entrenamiento: https://huggingface.co/datasets/C-Tianyu/NanoJev-Data
@@ -122,7 +122,7 @@ La comparacion directa con Jev y Qwen3-0.6B procede exclusivamente de la tabla d
 - Comandos del pipeline: https://github.com/TianyuCodings/NanoJev/blob/main/research/pipeline_runbook.md
 - Guia de publicacion de los juegos: https://github.com/TianyuCodings/NanoJev/blob/main/docs/GAME_RELEASE.md
 - Demos grabadas de los juegos: https://github.com/TianyuCodings/NanoJev#recorded-showcase-runs
-- Manifiesto de variantes: GAMES_MODEL_MANIFEST.json (en el repositorio de HuggingFace)
+- Manifiesto de variantes: GAMES_MODEL_MANIFEST.json (en el repositorio de Hugging Face)
 - Articulo de referencia sobre system one models y Jev: https://typesafe.ai/blog/introducing-system-one-models-and-jev
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Resultados de busqueda web sobre el modelo: no disponible (los resultados devueltos no eran relevantes)

@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto / entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `zxyty/physicalai-dinov3-vitl16` (este) | 303 M | Imágenes múltiplo de 16 px; 201 tokens a 224² | Extracción de características visuales | DINOv3 License (gated, uso comercial condicionado) | HuggingFace, 0 descargas, 0 likes |
-| `facebook/dinov3-vitl16-pretrain-lvd1689m` | No disponible en la búsqueda (misma arquitectura ViT-L/16) | Igual | Igual | DINOv3 License (gated) | HuggingFace, repositorio oficial de Meta |
-| `facebook/dinov3-vit7b16-pretrain-lvd1689m` | 7 B (según la model card de la familia) | Igual, patch 16 | Igual, pero mucho mayor | DINOv3 License (gated) | HuggingFace, checkpoint del que se destila este ViT-L |
-| DINOv2 ViT-L/14 | ~304 M (dato de conocimiento general, no verificado en la búsqueda) | Patch 14, 261 tokens a 224² | Extracción de características visuales | Licencia DINOv2 (uso comercial permitido) | HuggingFace, ampliamente desplegado |
+| `zxyty/physicalai-dinov3-vitl16` (este) | 303 M | Imágenes múltiplo de 16 px; 201 tokens a 224² | Extracción de características visuales | DINOv3 License (gated, uso comercial condicionado) | Hugging Face, 0 descargas, 0 likes |
+| `facebook/dinov3-vitl16-pretrain-lvd1689m` | No disponible en la búsqueda (misma arquitectura ViT-L/16) | Igual | Igual | DINOv3 License (gated) | Hugging Face, repositorio oficial de Meta |
+| `facebook/dinov3-vit7b16-pretrain-lvd1689m` | 7 B (según la model card de la familia) | Igual, patch 16 | Igual, pero mucho mayor | DINOv3 License (gated) | Hugging Face, checkpoint del que se destila este ViT-L |
+| DINOv2 ViT-L/14 | ~304 M (dato de conocimiento general, no verificado en la búsqueda) | Patch 14, 261 tokens a 224² | Extracción de características visuales | Licencia DINOv2 (uso comercial permitido) | Hugging Face, ampliamente desplegado |
 
 La comparación relevante es con el checkpoint original de Meta: este repositorio no documenta ninguna mejora sobre `facebook/dinov3-vitl16-pretrain-lvd1689m`, por lo que a falta de información debe asumirse comportamiento equivalente o no verificado. Frente a DINOv2 ViT-L/14, DINOv3 declara mejores características densas y mayor equidad geográfica, pero con una licencia más restrictiva que la de su predecesor.
 
@@ -95,7 +95,7 @@ La comparación relevante es con el checkpoint original de Meta: este repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/zxyty/physicalai-dinov3-vitl16
+- Repositorio en Hugging Face: https://huggingface.co/zxyty/physicalai-dinov3-vitl16
 - Checkpoint original de Meta (ViT-L/16): https://huggingface.co/facebook/dinov3-vitl16-pretrain-lvd1689m
 - Modelo base declarado (ViT-7B/16): https://huggingface.co/facebook/dinov3-vit7b16-pretrain-lvd1689m
 - Paper DINOv3: https://arxiv.org/abs/2508.10104

@@ -104,7 +104,7 @@ La comparacion cuantitativa con alternativas solo es valida si se reentrenan sob
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shrutimerch/act-goat-v3-20k
+- Modelo en Hugging Face: https://huggingface.co/shrutimerch/act-goat-v3-20k
 - Dataset de entrenamiento: https://huggingface.co/datasets/shrutimerch/goat-pickup-v3-clean
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=shrutimerch/goat-pickup-v3-clean
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

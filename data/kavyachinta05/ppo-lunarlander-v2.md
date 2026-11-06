@@ -77,4 +77,4 @@ No se han proporcionado datos de modelos comparables en la información disponib
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KavyaChinta05/ppo-LunarLander-v2
+- Hugging Face: https://huggingface.co/KavyaChinta05/ppo-LunarLander-v2

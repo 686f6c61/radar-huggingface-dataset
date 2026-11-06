@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`goncalvesah/deit-baseline` es un prototipo de investigación basado en DeiT (Data-efficient Image Transformer) orientado a tareas múltiples (*multitask*), publicado por el usuario goncalvesah en HuggingFace. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe explícitamente como un *initialization checkpoint* válido para *smoke tests*, no como un modelo de referencia con benchmarks. El repositorio incluye el código de inferencia (`inference.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos en `model.safetensors`.
+`goncalvesah/deit-baseline` es un prototipo de investigación basado en DeiT (Data-efficient Image Transformer) orientado a tareas múltiples (*multitask*), publicado por el usuario goncalvesah en Hugging Face. No se trata de un modelo entrenado ni de un checkpoint con resultados verificados: la propia model card lo describe explícitamente como un *initialization checkpoint* válido para *smoke tests*, no como un modelo de referencia con benchmarks. El repositorio incluye el código de inferencia (`inference.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento por defecto (`training_args.json`) y los pesos en `model.safetensors`.
 
 El dato más relevante es su tamaño real: el checkpoint contiene 33.088 parámetros, una cifra extremadamente reducida que confirma su naturaleza de esqueleto de inicialización y no de un transformer visual funcional. Para contexto, una variante DeiT-small estándar ronda los 22 millones de parámetros, de modo que este artefacto es varios órdenes de magnitud menor. Su relevancia actual es, por tanto, exclusivamente metodológica: sirve como plantilla reproducible para montar experimentos multitarea con DeiT, definir el formato de ficheros y fijar una receta de entrenamiento base.
 
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, el repositorio únicamente incluye valores de partid
 
 - Prueba de humo de pipelines de entrenamiento: sirve para verificar que el script de carga, la configuración y el formato safetensors funcionan antes de lanzar un entrenamiento real con DeiT-small o DeiT-base.
 - Plantilla de proyecto de investigación multitarea: el repositorio aporta `config.json` y `training_args.json` como esqueleto reproducible para definir experimentos, fijar semillas y comparar baselines con la misma exposición de datos.
-- Referencia de formato para integración en HuggingFace Hub: útil para equipos que quieran publicar checkpoints propios con estructura de ficheros equivalente.
+- Referencia de formato para integración en Hugging Face Hub: útil para equipos que quieran publicar checkpoints propios con estructura de ficheros equivalente.
 - Base para implementar un adaptador de carga personalizado: dado que es una implementación no estándar, sirve como caso de prueba para desarrollar adaptadores que permitan usar APIs automáticas de Transformers.
 - Estudio de variantes arquitectónicas: permite experimentar con combinaciones de atención *grouped query*, fusión bilineal, swish y RMSNorm dentro de un backbone DeiT.
 - Docencia y demostraciones de *fine-tuning*: al ser un checkpoint diminuto (33.088 parámetros), se puede entrenar y descargar en segundos, lo que lo hace adecuado para ejemplos didácticos de ciclos completos de entrenamiento y evaluación.
@@ -88,7 +88,7 @@ Nota: los recuentos de parámetros de las alternativas son cifras de referencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/goncalvesah/deit-baseline
+- Modelo en Hugging Face: https://huggingface.co/goncalvesah/deit-baseline
 - Documentación de DeiT en Transformers: https://huggingface.co/docs/transformers/model_doc/deit
 - Repositorio oficial de DeiT (Facebook Research): https://github.com/facebookresearch/deit
 - Paper relacionado con DeiT y detección de deepfakes (referencia de uso de DeiT): https://arxiv.org/pdf/2511.12048

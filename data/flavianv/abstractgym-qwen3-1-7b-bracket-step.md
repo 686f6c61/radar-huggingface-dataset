@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`flavianv/abstractgym-qwen3-1.7b-bracket-step` es un conjunto de adaptadores LoRA (PEFT) entrenados sobre el modelo base `Qwen/Qwen3-1.7B` para una tarea de investigacion muy concreta: emitir una accion de controlador de tipo "bracket-step" como JSON crudo dentro del entorno AbstractGym. Lo desarrolla el usuario de HuggingFace `flavianv` y su relevancia es acotada: no es un modelo de proposito general, sino un artefacto de investigacion reproducible para estudiar hasta que punto un modelo pequeno puede aprender a ejecutar trayectorias algorítmicas con estado mantenido externamente.
+`flavianv/abstractgym-qwen3-1.7b-bracket-step` es un conjunto de adaptadores LoRA (PEFT) entrenados sobre el modelo base `Qwen/Qwen3-1.7B` para una tarea de investigacion muy concreta: emitir una accion de controlador de tipo "bracket-step" como JSON crudo dentro del entorno AbstractGym. Lo desarrolla el usuario de Hugging Face `flavianv` y su relevancia es acotada: no es un modelo de proposito general, sino un artefacto de investigacion reproducible para estudiar hasta que punto un modelo pequeno puede aprender a ejecutar trayectorias algorítmicas con estado mantenido externamente.
 
 El repositorio contiene tres checkpoints finales independientes (seeds 17, 18 y 19) del mismo recetario fijo de entrenamiento, cada uno en su propia subcarpeta (`seed-17`, `seed-18`, `seed-19`). El adaptador se entrena sobre el modelo Qwen3-1.7B, un transformer denso de 1.700 millones de parametros, y el repositorio ocupa 0.2 GB (solo pesos del adaptador en safetensors, sin estado de optimizador). La licencia del adaptador es Apache-2.0.
 
@@ -74,7 +74,7 @@ No se dispone de modelos comparables descritos en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abstractgym-qwen3-1.7b-bracket-step | 1,7B (base) + LoRA r16 | no disponible | ver tabla de trayectorias completas | apache-2.0 | HuggingFace |
+| abstractgym-qwen3-1.7b-bracket-step | 1,7B (base) + LoRA r16 | no disponible | ver tabla de trayectorias completas | apache-2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,7 +92,7 @@ No se dispone de modelos comparables descritos en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flavianv/abstractgym-qwen3-1.7b-bracket-step
+- Modelo en Hugging Face: https://huggingface.co/flavianv/abstractgym-qwen3-1.7b-bracket-step
 - Codigo publico de AbstractGym: https://github.com/flavianv/abstractgym-public/tree/main
 - Documentacion de referencia del controlador (en el repositorio): `docs/a6_trained_controller.md`
 - Resultados de seguimiento (en el repositorio): `docs/a6_followup_results.md`

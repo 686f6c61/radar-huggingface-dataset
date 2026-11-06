@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Uigyu/qwen_2.5_3b_mh-cat_h2_a_s1` es un fine-tune del modelo base Qwen 2.5 3B, publicado en HuggingFace por el usuario Uigyu. La nomenclatura del identificador sugiere un ajuste fino orientado a tareas de razonamiento multi-hop (mh-cat) con una configuración específica de capas (h2, a_s1), aunque no se dispone de documentación oficial que confirme estos detalles. El repositorio incluye pesos en formato safetensors y ha sido generado con la librería Unsloth, lo que indica que el entrenamiento se realizó probablemente con técnicas de fine-tuning eficiente (LoRA/QLoRA).
+El modelo `Uigyu/qwen_2.5_3b_mh-cat_h2_a_s1` es un fine-tune del modelo base Qwen 2.5 3B, publicado en Hugging Face por el usuario Uigyu. La nomenclatura del identificador sugiere un ajuste fino orientado a tareas de razonamiento multi-hop (mh-cat) con una configuración específica de capas (h2, a_s1), aunque no se dispone de documentación oficial que confirme estos detalles. El repositorio incluye pesos en formato safetensors y ha sido generado con la librería Unsloth, lo que indica que el entrenamiento se realizó probablemente con técnicas de fine-tuning eficiente (LoRA/QLoRA).
 
 La relevancia de este modelo radica en su tamaño compacto (3B parámetros), que lo hace adecuado para despliegue en entornos con recursos limitados, manteniendo las capacidades generales del modelo base Qwen 2.5. Sin embargo, la ausencia de una model card detallada, métricas de evaluación o información sobre el dataset de entrenamiento limita significativamente su reproducibilidad y evaluación objetiva. Actualmente no cuenta con descargas ni valoraciones de la comunidad, lo que sugiere que es un experimento reciente o de carácter personal.
 
@@ -56,10 +56,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen 2.5 3B (base) | 3B | 32.768 | Apache 2.0 | HuggingFace |
-| Uigyu/qwen_2.5_3b_mh-cat_h2_a_s1 | 3B | no disponible | no disponible | HuggingFace |
-| Llama 3.2 3B | 3B | 128.000 | Llama 3.2 Community License | HuggingFace |
-| Gemma 2 2B | 2B | 8.192 | Gemma Terms of Use | HuggingFace |
+| Qwen 2.5 3B (base) | 3B | 32.768 | Apache 2.0 | Hugging Face |
+| Uigyu/qwen_2.5_3b_mh-cat_h2_a_s1 | 3B | no disponible | no disponible | Hugging Face |
+| Llama 3.2 3B | 3B | 128.000 | Llama 3.2 Community License | Hugging Face |
+| Gemma 2 2B | 2B | 8.192 | Gemma Terms of Use | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar, pero no se dispone de datos de rendimiento del modelo evaluado para establecer una comparación cuantitativa. El modelo base Qwen 2.5 3B es la referencia más directa, ya que este fine-tune parte de él.
 
@@ -74,7 +74,7 @@ La comparativa se limita a modelos de tamaño similar, pero no se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b_mh-cat_h2_a_s1
+- Repositorio Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b_mh-cat_h2_a_s1
 - Modelo base Qwen 2.5 3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Paper de referencia sobre impacto ambiental (citado en la model card): https://arxiv.org/abs/1910.09700

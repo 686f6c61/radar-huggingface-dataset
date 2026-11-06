@@ -81,9 +81,9 @@ Mediciones de inferencia declaradas por el autor (autodeclaradas, una sola maqui
 
 | Modelo | Parametros | Formato y tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SergiioB/Nemotron-3.5-Bolt-74B-A9B-AutoRound-W4A16-G128-sym | 74B nominales / 9B activos | GPTQ int4 W4A16 g128 sim, 41 GB | no disponible | OpenMDW 1.1 | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 (base) | 74B / 9B activos | BF16, 139,5 GiB | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr | no disponible | no disponible (24 GB en el nombre) | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| SergiioB/Nemotron-3.5-Bolt-74B-A9B-AutoRound-W4A16-G128-sym | 74B nominales / 9B activos | GPTQ int4 W4A16 g128 sim, 41 GB | no disponible | OpenMDW 1.1 | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-BF16 (base) | 74B / 9B activos | BF16, 139,5 GiB | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-LiLiCorr | no disponible | no disponible (24 GB en el nombre) | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar la calidad de esta cuantizacion frente al modelo base BF16 ni frente al drafter LiLiCorr. La comparacion disponible se limita a tamano, formato y licencia de la build cuantizada.
 

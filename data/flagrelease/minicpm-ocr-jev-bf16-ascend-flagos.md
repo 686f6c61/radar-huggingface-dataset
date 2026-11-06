@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | AUROC JevOCRBench | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM-OCR Jev | ~2B | no disponible | 0,936 | Apache 2.0 | HuggingFace (build Ascend FlagOS) |
+| MiniCPM-OCR Jev | ~2B | no disponible | 0,936 | Apache 2.0 | Hugging Face (build Ascend FlagOS) |
 | MiniCPM-OCR 1.0 | 1,3B | no disponible | no disponible | no disponible en la información | Open source (ModelBest/OpenBMB) |
 | Qwen3.5-397B-A17B | 397B totales (17B activos) | no disponible | 0,938 | no disponible en la información | no disponible en la información |
 
@@ -99,7 +99,7 @@ La comparación relevante es que Jev, con aproximadamente 2B de parámetros, alc
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-ascend-FlagOS
+- Hugging Face: https://huggingface.co/FlagRelease/MiniCPM-OCR-Jev-BF16-ascend-FlagOS
 - Imagen Docker FlagOS: `harbor.baai.ac.cn/flagrelease-public/jev-value-ascend001-gems0.0.0-tree0.7.0-cxnone-pluginnone-vllmnone-sglangnone-sglangflnone-cp311-ptnpunone-cann90-a64-none:202610271104`
 - Descarga de pesos vía ModelScope: `modelscope download --model FlagRelease/MiniCPM-OCR-Jev-BF16-ascend-FlagOS`
 - Paper, blog o repositorio de ModelBest/OpenBMB: no disponible en la información proporcionada.

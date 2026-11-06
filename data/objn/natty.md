@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Natty es un modelo alojado en el repositorio de HuggingFace del usuario Objn, con identificador `Objn/Natty`. La información pública disponible es extremadamente limitada: no se ha publicado una model card descriptiva, ni documentación técnica, ni datos de entrenamiento, ni benchmarks. El repositorio tiene un tamaño de 24.8 GB, lo que sugiere que se trata de un conjunto de pesos de un modelo de cierto tamaño, aunque no es posible confirmar la arquitectura ni el número de parámetros a partir de los metadatos disponibles.
+Natty es un modelo alojado en el repositorio de Hugging Face del usuario Objn, con identificador `Objn/Natty`. La información pública disponible es extremadamente limitada: no se ha publicado una model card descriptiva, ni documentación técnica, ni datos de entrenamiento, ni benchmarks. El repositorio tiene un tamaño de 24.8 GB, lo que sugiere que se trata de un conjunto de pesos de un modelo de cierto tamaño, aunque no es posible confirmar la arquitectura ni el número de parámetros a partir de los metadatos disponibles.
 
 El modelo se distribuye bajo licencia Apache-2.0, lo que permitiría su uso comercial, pero la ausencia de documentación técnica impide evaluar su funcionalidad real. El repositorio no registra descargas ni likes, y su fecha de creación es septiembre de 2026, por lo que podría tratarse de un proyecto en fase inicial o de un modelo no validado por la comunidad. En su estado actual, Natty no es un modelo evaluable para uso en producción sin una investigación adicional.
 
@@ -21,7 +21,7 @@ El modelo se distribuye bajo licencia Apache-2.0, lo que permitiría su uso come
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información sobre la arquitectura del modelo, la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio de HuggingFace no incluye una model card con estos detalles, por lo que cualquier afirmación sobre la arquitectura o el proceso de entrenamiento sería especulativa.
+No se dispone de información sobre la arquitectura del modelo, la composición del dataset de entrenamiento, el número de tokens procesados ni si se aplicaron técnicas de alineación como RLHF o DPO. El repositorio de Hugging Face no incluye una model card con estos detalles, por lo que cualquier afirmación sobre la arquitectura o el proceso de entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -70,5 +70,5 @@ No se dispone de información suficiente para comparar Natty con otros modelos d
 
 ## Enlaces
 
-- [HuggingFace: Objn/Natty](https://huggingface.co/Objn/Natty)
+- [Hugging Face: Objn/Natty](https://huggingface.co/Objn/Natty)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos de código o demos) en la búsqueda web. Los resultados obtenidos corresponden a páginas de soporte de Microsoft y no están relacionados con el modelo.

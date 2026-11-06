@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo, por lo que no tiene sentido com
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexandermikhailov/review-few-shot-multimodal
+- Repositorio en Hugging Face: https://huggingface.co/alexandermikhailov/review-few-shot-multimodal
 - Repositorio similar (mismo contenido, licencia CC-BY-4.0): https://huggingface.co/Dmitry-kozlov/few-shot-multimodal-dev
 - Articulo relacionado sobre few-shot en segmentacion medica (referencia externa): https://arxiv.org/html/2607.27856v2
 - Revision sobre zero-shot y few-shot en NLP: https://link.springer.com/article/10.1007/s42452-025-07225-5

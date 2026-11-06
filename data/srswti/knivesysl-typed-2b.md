@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `srswti/knivesysl-typed-2b` es un modelo publicado en HuggingFace por el usuario `srswti`, distribuido en formato `safetensors` y etiquetado como `image-text-to-text` y `text-generation`. Por las etiquetas del repositorio (`qwen3_5`, `qwen3.5`), parece derivar o reutilizar la arquitectura de la familia Qwen 3.5, aunque el repositorio no incluye tarjeta de modelo, paper ni documentación que lo confirme. El nombre del repositorio sugiere un tamaño en torno a 2 000 millones de parámetros, dato que no está confirmado por ninguna fuente oficial.
+El modelo `srswti/knivesysl-typed-2b` es un modelo publicado en Hugging Face por el usuario `srswti`, distribuido en formato `safetensors` y etiquetado como `image-text-to-text` y `text-generation`. Por las etiquetas del repositorio (`qwen3_5`, `qwen3.5`), parece derivar o reutilizar la arquitectura de la familia Qwen 3.5, aunque el repositorio no incluye tarjeta de modelo, paper ni documentación que lo confirme. El nombre del repositorio sugiere un tamaño en torno a 2 000 millones de parámetros, dato que no está confirmado por ninguna fuente oficial.
 
 Las etiquetas destacan capacidades poco habituales en modelos de este tamaño: generación estructurada (`structured-generation`), decodificación restringida (`constrained-decoding`) y puntuación de candidatos (`candidate-scoring`). Esto apunta a un modelo orientado a tareas de extracción, clasificación con salidas tipadas o reranking, más que a un asistente conversacional generalista. También declara compatibilidad con `endpoints_compatible`, `fp8`, `cuda` y `xpu`.
 
@@ -94,5 +94,5 @@ No disponible. El repositorio no publica resultados de evaluacion, no especifica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/srswti/knivesysl-typed-2b
+- Hugging Face: https://huggingface.co/srswti/knivesysl-typed-2b
 - Paper, blog, repositorio o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo, su autor ni la familia Qwen 3.5; unicamente aparecieron paginas corporativas de Microsoft sin relacion con el objeto de la ficha.

@@ -78,6 +78,6 @@ No se dispone de datos comparativos publicados para este adaptador frente a otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ArthT/qwen3-8b-a0-badmed-seed4-v2
+- Modelo en Hugging Face: https://huggingface.co/ArthT/qwen3-8b-a0-badmed-seed4-v2
 - Repositorio del proyecto (codigo, scripts y log de resultados): https://github.com/lauraxijia/contingency-em
 - Adaptadores relacionados del mismo proyecto: https://huggingface.co/ArthT/qwen3-8b-a1-badmed-seed2-v2 y https://huggingface.co/ArthT/qwen3-8b-a2-badmed-seed1-v2

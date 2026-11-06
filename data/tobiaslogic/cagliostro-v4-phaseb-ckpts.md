@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`TobiasLogic/cagliostro-v4-phaseB-ckpts` es un repositorio alojado en HuggingFace bajo el identificador del usuario TobiasLogic. El propio nombre y la etiqueta `research-checkpoints` apuntan a que se trata de una coleccion de puntos de control (checkpoints) intermedios de entrenamiento, presumiblemente correspondientes a una "fase B" de la version 4 de un modelo denominado internamente Cagliostro. No obstante, el repositorio esta marcado como de acceso restringido (gated), por lo que su contenido no es publico sin aceptar previamente las condiciones del autor.
+`TobiasLogic/cagliostro-v4-phaseB-ckpts` es un repositorio alojado en Hugging Face bajo el identificador del usuario TobiasLogic. El propio nombre y la etiqueta `research-checkpoints` apuntan a que se trata de una coleccion de puntos de control (checkpoints) intermedios de entrenamiento, presumiblemente correspondientes a una "fase B" de la version 4 de un modelo denominado internamente Cagliostro. No obstante, el repositorio esta marcado como de acceso restringido (gated), por lo que su contenido no es publico sin aceptar previamente las condiciones del autor.
 
 Los datos objetivos publicamente visibles son muy limitados: cero descargas, cero "likes", un tamano de repositorio de 0.0 GB y ausencia total de informacion sobre arquitectura, numero de parametros, idiomas o tarea (pipeline). La fecha de creacion y de ultima actualizacion registradas son identicas (8 de octubre de 2026), lo que sugiere que el repositorio se subio en un unico acto sin modificaciones posteriores.
 
@@ -73,7 +73,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion tecnica: no hay ficha de modelo, paper ni resultados reproducibles.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de poder acceder al contenido.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de poder acceder al contenido.
 - El repositorio declara 0.0 GB, lo que indica que no aloja pesos en abierto; su contenido real no puede verificarse.
 - Cero descargas y cero "likes": no existe una comunidad que haya validado el modelo ni reportado su comportamiento.
 - Riesgo elevado de uso inadecuado: sin evaluacion publica no puede descartarse sesgo, alucinacion o comportamiento deficiente en produccion.
@@ -84,7 +84,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TobiasLogic/cagliostro-v4-phaseB-ckpts
+- Hugging Face: https://huggingface.co/TobiasLogic/cagliostro-v4-phaseB-ckpts
 - Paper: no disponible
 - Blog o documentacion: no disponible
 - Repositorio de codigo: no disponible

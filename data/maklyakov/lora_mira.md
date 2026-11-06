@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Maklyakov/lora_mira` es un adaptador LoRA publicado en HuggingFace por el usuario Maklyakov, diseñado como un ajuste fino del modelo base `Heartsync/Flux-NSFW-uncensored`, que a su vez es una variante del modelo de difusión Flux orientada a generación de imágenes sin censura. La ficha del modelo está etiquetada en ruso (`ru`) y no incluye documentación técnica sustancial: la model card es una plantilla genérica sin datos específicos sobre arquitectura, entrenamiento o uso.
+El modelo `Maklyakov/lora_mira` es un adaptador LoRA publicado en Hugging Face por el usuario Maklyakov, diseñado como un ajuste fino del modelo base `Heartsync/Flux-NSFW-uncensored`, que a su vez es una variante del modelo de difusión Flux orientada a generación de imágenes sin censura. La ficha del modelo está etiquetada en ruso (`ru`) y no incluye documentación técnica sustancial: la model card es una plantilla genérica sin datos específicos sobre arquitectura, entrenamiento o uso.
 
 A fecha de su publicación (septiembre de 2026), el modelo registra cero descargas y un solo "like", lo que sugiere que se trata de un experimento personal o un lanzamiento preliminar sin adopción comunitaria. No se dispone de información sobre el tamaño del adaptador, el método de entrenamiento, los datos utilizados ni las instrucciones de uso. La ausencia de licencia declarada y de especificaciones técnicas impide evaluar su idoneidad para cualquier tarea concreta.
 
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Maklyakov/lora_mira
+- Repositorio en Hugging Face: https://huggingface.co/Maklyakov/lora_mira
 - Modelo base (Heartsync/Flux-NSFW-uncensored): no se ha encontrado un enlace directo en la información proporcionada.
 - Resultados de búsqueda relacionados (no afiliados): 
   - https://huggingface.co/gsdfg18919/mira

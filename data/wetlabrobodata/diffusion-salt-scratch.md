@@ -99,7 +99,7 @@ No disponible. La informacion proporcionada no incluye otros modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WetLabRoboData/diffusion-salt-scratch
+- Modelo en Hugging Face: https://huggingface.co/WetLabRoboData/diffusion-salt-scratch
 - Dataset de entrenamiento: https://huggingface.co/datasets/WetLabRoboData/lerobot-data-salt
 - Dataset de evaluacion (rollouts y resultados por episodio): https://huggingface.co/datasets/WetLabRoboData/eval-diffusion-salt-scratch
 - Repositorio de origen con los artefactos archivados: WetLabRoboData/lerobot-data-smrithi-salt_20260725 (subcarpeta old/)

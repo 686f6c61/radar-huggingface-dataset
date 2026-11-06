@@ -26,7 +26,7 @@ Su relevancia es de nicho: interesa a quienes necesitan un modelo de ~9B ejecuta
 
 ## Arquitectura y entrenamiento
 
-La informacion proporcionada no describe la arquitectura ni el proceso de entrenamiento de este artefacto. Lo que si puede afirmarse con los datos disponibles es la cadena de derivacion: el repositorio cuantiza `OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED`, que a su vez parte de un checkpoint GLM-4-9B-Chat en formato HuggingFace (`-hf`) y le aplica una tecnica de *abliteration*. La abliteration consiste en identificar en el espacio de activaciones la direccion que gobierna las respuestas de rechazo y proyectarla ortogonalmente fuera de los pesos, de modo que el modelo deja de activar ese comportamiento sin necesidad de reentrenamiento.
+La informacion proporcionada no describe la arquitectura ni el proceso de entrenamiento de este artefacto. Lo que si puede afirmarse con los datos disponibles es la cadena de derivacion: el repositorio cuantiza `OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED`, que a su vez parte de un checkpoint GLM-4-9B-Chat en formato Hugging Face (`-hf`) y le aplica una tecnica de *abliteration*. La abliteration consiste en identificar en el espacio de activaciones la direccion que gobierna las respuestas de rechazo y proyectarla ortogonalmente fuera de los pesos, de modo que el modelo deja de activar ese comportamiento sin necesidad de reentrenamiento.
 
 No se especifica en la ficha cuantas capas fueron intervenidas, que metodo exacto de ablacion se empleo, ni si se realizo algun ajuste posterior para recuperar capacidad. Tampoco hay datos sobre el numero de tokens de entrenamiento del modelo original, la composicion del dataset ni si hubo fases de RLHF o DPO. Como referencia externa a esta ficha, GLM-4-9B-Chat es un transformer decoder denso de la familia GLM-4 de Zhipu AI, pero ese dato no puede verificarse con la informacion aqui disponible y no debe tomarse como especificacion confirmada de este repositorio.
 
@@ -108,7 +108,7 @@ El rendimiento comparado no puede establecerse: no hay benchmarks disponibles pa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/glm-4-9b-chat-hf-OBLITERATED-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/glm-4-9b-chat-hf-OBLITERATED-i1-GGUF
 - Modelo base ablacionado: https://huggingface.co/OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED
 - Cuantizaciones estaticas del mismo modelo: https://huggingface.co/mradermacher/glm-4-9b-chat-hf-OBLITERATED-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#glm-4-9b-chat-hf-OBLITERATED-i1-GGUF

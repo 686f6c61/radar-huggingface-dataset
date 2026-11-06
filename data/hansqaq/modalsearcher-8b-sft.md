@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hansQAQ/ModalSearcher-8B-SFT
+- Modelo en Hugging Face: https://huggingface.co/hansQAQ/ModalSearcher-8B-SFT
 - Versión SFT + RL: https://huggingface.co/hansQAQ/ModalSearcher-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/hansQAQ/ModalSearch-21K-Full
 - Benchmark: https://huggingface.co/datasets/hansQAQ/ModalSearch-Bench

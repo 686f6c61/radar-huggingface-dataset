@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Tohirju/sl-cairn2` es un repositorio publicado en HuggingFace por el autor Tohirju, con un tamaño de repositorio de aproximadamente 0,2 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar los pesos. La ficha del modelo no incluye información pública sobre su arquitectura, parámetros, entrenamiento o capacidades, y la licencia se indica como "other", lo que añade incertidumbre sobre los términos de uso.
+El modelo `Tohirju/sl-cairn2` es un repositorio publicado en Hugging Face por el autor Tohirju, con un tamaño de repositorio de aproximadamente 0,2 GB y acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones específicas antes de poder descargar los pesos. La ficha del modelo no incluye información pública sobre su arquitectura, parámetros, entrenamiento o capacidades, y la licencia se indica como "other", lo que añade incertidumbre sobre los términos de uso.
 
 A fecha de la última actualización (14 de agosto de 2026), el modelo no ha registrado descargas ni "likes", y no se ha proporcionado ningún pipeline asociado. Toda la información técnica disponible se limita a las etiquetas "safetensors", "license:other" y "region:us". En consecuencia, esta ficha se basa exclusivamente en los metadatos públicos del repositorio y no puede ofrecer detalles verificados sobre el rendimiento o las características del modelo.
 
@@ -45,7 +45,7 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos, lo que puede limitar su uso en entornos automatizados.
 - Licencia "other": los términos de uso no están claramente definidos; podría incluir restricciones para uso comercial o modificaciones.
 - Ausencia total de documentación técnica: no hay información sobre arquitectura, entrenamiento, capacidades o limitaciones.
 - Riesgo de sesgos y alucinaciones: al desconocer el conjunto de datos de entrenamiento, no se puede evaluar la presencia de sesgos ni la fiabilidad de las respuestas.
@@ -54,6 +54,6 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tohirju/sl-cairn2
+- Repositorio en Hugging Face: https://huggingface.co/Tohirju/sl-cairn2
 
 No se han encontrado papers, blogs, repositorios adicionales o demos relacionados con este modelo en la información proporcionada.

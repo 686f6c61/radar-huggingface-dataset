@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Precision | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| appmana/deepseek-v4-flash-vision-exp-int4-int8 | 168,9 B | Mixta INT4/INT8, WO_A en BF16 | no disponible | MIT | HuggingFace, requiere vLLM de AppMana |
-| deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | no disponible en la ficha | BF16 (presumible) | no disponible | MIT | HuggingFace |
-| Rama `bf16-vision-reference` del mismo repo | 168,9 B | BF16 en torre de vision, resto identico | no disponible | MIT | HuggingFace, misma rama del repositorio |
+| appmana/deepseek-v4-flash-vision-exp-int4-int8 | 168,9 B | Mixta INT4/INT8, WO_A en BF16 | no disponible | MIT | Hugging Face, requiere vLLM de AppMana |
+| deepseek-ai/DeepSeek-V4-Flash-Vision-Exp | no disponible en la ficha | BF16 (presumible) | no disponible | MIT | Hugging Face |
+| Rama `bf16-vision-reference` del mismo repo | 168,9 B | BF16 en torre de vision, resto identico | no disponible | MIT | Hugging Face, misma rama del repositorio |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en los datos proporcionados.
 
@@ -97,7 +97,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/appmana/deepseek-v4-flash-vision-exp-int4-int8
+- Modelo en Hugging Face: https://huggingface.co/appmana/deepseek-v4-flash-vision-exp-int4-int8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp
 - Revision del modelo base utilizada en la conversion: `6821d6ad3681a4b137b066b76094fa82ebd0a380`
 - Rama de referencia con torre de vision en BF16: `bf16-vision-reference`, dentro del repositorio de appmana

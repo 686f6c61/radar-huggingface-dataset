@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| NEO-VLA | no disponible | no disponible | código Apache-2.0; pesos con términos upstream | `state.pt` nativo | HuggingFace (weepiess2383/NEO-VLA) |
+| NEO-VLA | no disponible | no disponible | código Apache-2.0; pesos con términos upstream | `state.pt` nativo | Hugging Face (weepiess2383/NEO-VLA) |
 | Alternativas VLA comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables en la documentación proporcionada.
@@ -84,7 +84,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/weepiess2383/NEO-VLA
+- Hugging Face: https://huggingface.co/weepiess2383/NEO-VLA
 - Página del proyecto: https://weichenfan.github.io/NEO-VLA-Page/
 - Código: https://github.com/WeichenFan/NEO-VLA
 - Guía de entrenamiento: https://github.com/WeichenFan/NEO-VLA/blob/main/docs/training.md

@@ -80,7 +80,7 @@ El intervalo de confianza del 95 % para la puntuación de coincidencia de PageAu
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PageAudit (Qwen3.5-4B LoRA) | 4B (base) + LoRA | No disponible | Juicio sobre candidatos de auditoría web | Apache-2.0 | HuggingFace (26 descargas) |
+| PageAudit (Qwen3.5-4B LoRA) | 4B (base) + LoRA | No disponible | Juicio sobre candidatos de auditoría web | Apache-2.0 | Hugging Face (26 descargas) |
 | Claude Sonnet 5.5 | No disponible | No disponible | LLM general con resumen textual de la página | Propietaria | API comercial |
 | Script de contraste simple | No aplica | No aplica | Regla determinista de contraste WCAG | No aplica | Código propio |
 | Clasificador de texto (bag-of-words) | No disponible | No aplica | Clasificación sobre los mismos candidatos | No disponible | Entrenado por los autores |
@@ -102,7 +102,7 @@ La comparación relevante es de comportamiento, no de tamaño: PageAudit obtiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B-LoRA
+- Modelo en Hugging Face: https://huggingface.co/aixonlab/PageAudit-Qwen3.5-4B-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio de la pipeline: carpeta `pipeline` dentro del repositorio del modelo (incluye `audit_page.py`, `extractor` con Node.js/Playwright y `pipeline/config.json`)
 - Paper, blog o demo: no disponible en la información proporcionada.

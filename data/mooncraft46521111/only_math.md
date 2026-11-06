@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`only_math` es un modelo publicado en HuggingFace por el usuario `mooncraft46521111` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica, ficha de arquitectura, datos de entrenamiento ni informacion sobre capacidades: unicamente incluye la declaracion de licencia en el frontmatter YAML. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+`only_math` es un modelo publicado en Hugging Face por el usuario `mooncraft46521111` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripcion tecnica, ficha de arquitectura, datos de entrenamiento ni informacion sobre capacidades: unicamente incluye la declaracion de licencia en el frontmatter YAML. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 A pesar del nombre, que sugiere una especializacion en matematicas, no hay evidencia publica en la informacion disponible que confirme dicha especializacion, el tamano del modelo, la arquitectura empleada ni el proceso de entrenamiento. Se desconoce si se trata de un modelo entrenado desde cero, un fine-tuning de un modelo base existente o un artefacto experimental.
 
@@ -73,5 +73,5 @@ No disponible. Sin datos de parametros, contexto o rendimiento no es posible est
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mooncraft46521111/only_math
+- Repositorio en Hugging Face: https://huggingface.co/mooncraft46521111/only_math
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

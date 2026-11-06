@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5VL-7B-Instruct-fire-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5VL-7B-Instruct-fire-GGUF
 - Modelo base: https://huggingface.co/gaoqie/Qwen2.5VL-7B-Instruct-fire
 - Pagina de descargas del autor: https://hf.tst.eu/model#Qwen2.5VL-7B-Instruct-fire-GGUF
 - Guia de uso de GGUF (README de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

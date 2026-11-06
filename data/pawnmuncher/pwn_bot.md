@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Pawnmuncher/pwn_bot` es un repositorio de modelo publicado en HuggingFace por el usuario Pawnmuncher. La model card asociada está prácticamente vacía: únicamente declara la licencia MIT mediante metadatos YAML, sin descripción del modelo, arquitectura, datos de entrenamiento ni propósito. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha publicado información sobre pipeline, idiomas o formato de pesos.
+`Pawnmuncher/pwn_bot` es un repositorio de modelo publicado en Hugging Face por el usuario Pawnmuncher. La model card asociada está prácticamente vacía: únicamente declara la licencia MIT mediante metadatos YAML, sin descripción del modelo, arquitectura, datos de entrenamiento ni propósito. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha publicado información sobre pipeline, idiomas o formato de pesos.
 
 No es posible determinar qué problema resuelve, qué arquitectura emplea ni su tamaño, ya que no hay documentación técnica disponible. El nombre del repositorio (`pwn_bot`) sugiere un posible uso como bot o asistente conversacional, pero se trata de una inferencia a partir del identificador y no de un dato confirmado por el autor.
 
@@ -77,6 +77,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Pawnmuncher/pwn_bot
+- Repositorio en Hugging Face: https://huggingface.co/Pawnmuncher/pwn_bot
 - Model card: no disponible más allá de la declaración de licencia MIT.
 - Papers, blogs, repositorios o demos adicionales: no disponibles.

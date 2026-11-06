@@ -102,7 +102,7 @@ La comparacion relevante para interpretar este checkpoint es contra su propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r01
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r01
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Perfil del autor: https://huggingface.co/Jeesup
 - Licencia y politica de uso: los ficheros `LICENSE` y `USE_POLICY.md` se incluyen en el propio repositorio del modelo

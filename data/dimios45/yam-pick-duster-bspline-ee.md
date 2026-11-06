@@ -80,7 +80,7 @@ La comparativa directa se limita al modelo gemelo en espacio articular, que comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dimios45/yam-pick-duster-bspline-ee
+- Modelo en Hugging Face: https://huggingface.co/Dimios45/yam-pick-duster-bspline-ee
 - Dataset de entrenamiento: https://huggingface.co/datasets/Dimios45/yam-pick-duster-ee
 - Modelo gemelo en espacio articular: https://huggingface.co/Dimios45/yam-pick-duster-bspline-joint
 - Sitio del proyecto B-spline Policy: https://b-spline-policy.github.io/

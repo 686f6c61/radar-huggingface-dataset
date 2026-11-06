@@ -6,7 +6,7 @@ ATC instruction-conditioned trajectory prediction (v2) es un conjunto de checkpo
 
 La arquitectura se compone de dos módulos acoplados: un modelo de creencia semántica (SBM, Semantic Belief Model) que produce una distribución sobre interpretaciones del mensaje (estado, instrucción lateral, vertical y de velocidad) a partir de la transcripción, las confidencias por palabra del reconocedor, el callsign ADS-B de la aeronave y su historial de 30 segundos; y un predictor de trayectoria condicional (CTP) que implementa un rectified flow sobre 18 coeficientes PCA de forma de trayectoria. La composición muestrea 12 interpretaciones del SBM y 6 trayectorias futuras bajo cada una, aproximando la marginalización sobre la incertidumbre comunicativa.
 
-Es relevante para investigación en predicción de trayectorias bajo incertidumbre de comunicación, no para uso operacional. Se entrenó sobre mensajes sintéticos generados a partir de ADS-B real de la Bahía de San Francisco (cinco días), con transcripciones simuladas mediante un canal de reconocimiento ajustado. El repositorio de HuggingFace contiene únicamente artefactos (archivos comprimidos con pesos y checksums), no pesos en formato estándar safetensors/GGUF, y no registra descargas ni likes en el momento de la consulta.
+Es relevante para investigación en predicción de trayectorias bajo incertidumbre de comunicación, no para uso operacional. Se entrenó sobre mensajes sintéticos generados a partir de ADS-B real de la Bahía de San Francisco (cinco días), con transcripciones simuladas mediante un canal de reconocimiento ajustado. El repositorio de Hugging Face contiene únicamente artefactos (archivos comprimidos con pesos y checksums), no pesos en formato estándar safetensors/GGUF, y no registra descargas ni likes en el momento de la consulta.
 
 ## Especificaciones técnicas
 
@@ -87,7 +87,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexzongo/atc-trajectory-prediction
+- Hugging Face: https://huggingface.co/alexzongo/atc-trajectory-prediction
 - Repositorio GitHub: https://github.com/Alex-Zongo/atc-trajectory-prediction
 - Documentación de resultados (referenciada en el model card): `docs/v2/results.md` dentro del repositorio
 - Paper: "Aircraft Trajectory Prediction under ATC Instruction Uncertainty" (Zongo, Petit, Brusset, Kam, Torun, Ghazanfari, Wei, Bayen; 2026; paper en preparación, sin enlace público disponible en la información proporcionada)

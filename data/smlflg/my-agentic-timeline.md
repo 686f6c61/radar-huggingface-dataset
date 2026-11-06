@@ -83,6 +83,6 @@ No disponible. No existen modelos comparables porque el repositorio no es un mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/smlflg/My-Agentic-Timeline
+- Hugging Face: https://huggingface.co/smlflg/My-Agentic-Timeline
 - Ruta de documentacion de investigacion citada en la model card: analysis/prompt-evolution/ (dentro del repositorio)
 - No se han encontrado en la busqueda web enlaces relevantes al proyecto, al autor ni a publicaciones asociadas. Los resultados devueltos corresponden a servicios de iCloud y no guardan relacion con este repositorio.

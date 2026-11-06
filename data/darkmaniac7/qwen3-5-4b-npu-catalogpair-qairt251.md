@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Qwen3.5-4B-NPU-catalogpair-qairt251 | 4B | no disponible | QNN context binaries (int4) | Apache 2.0 | Solo app TokForge, chips Snapdragon concretos |
-| Qwen3.5-4B (base) | 4B | no disponible | safetensors | Apache 2.0 | HuggingFace, uso general |
-| Qwen3.5-4B-MNN (taobao-mnn) | 4B | no disponible | MNN (int4) | Apache 2.0 | HuggingFace, inferencia MNN en CPU/GPU |
+| Qwen3.5-4B (base) | 4B | no disponible | safetensors | Apache 2.0 | Hugging Face, uso general |
+| Qwen3.5-4B-MNN (taobao-mnn) | 4B | no disponible | MNN (int4) | Apache 2.0 | Hugging Face, inferencia MNN en CPU/GPU |
 | Qwen3.5-4B-NPU-catalogpair (QAIRT 2.40) | 4B | no disponible | QNN context binaries (8-bit) | Apache 2.0 | Solo app TokForge, misma familia de chips |
 
 La comparativa se limita a variantes del mismo modelo base, ya que el paquete no es un modelo autonomo. Frente a la version MNN, este paquete anade aceleracion NPU para el prompt pero mantiene la generacion en CPU y exige un runtime y hardware especificos. Frente a la build QAIRT 2.40, cambia los pesos de 8 bits a int4 y el runtime a QAIRT 2.51.
@@ -88,7 +88,7 @@ La comparativa se limita a variantes del mismo modelo base, ya que el paquete no
 
 ## Enlaces
 
-- HuggingFace del paquete: https://huggingface.co/darkmaniac7/Qwen3.5-4B-NPU-catalogpair-qairt251
+- Hugging Face del paquete: https://huggingface.co/darkmaniac7/Qwen3.5-4B-NPU-catalogpair-qairt251
 - Descarga emparejada requerida: https://huggingface.co/darkmaniac7/Qwen3.5-4B-MNN/tree/85364606553d2ece47af5b3ed850a8832e1da0e8
 - Conversion MNN original: https://huggingface.co/taobao-mnn/Qwen3.5-4B-MNN
 - Build QAIRT 2.40 con pesos de 8 bits: https://huggingface.co/darkmaniac7/Qwen3.5-4B-NPU-catalogpair

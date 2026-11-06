@@ -98,7 +98,7 @@ La comparación con alternativas es orientativa: no se dispone de evaluaciones c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trellesjc/mbert-amazon-reviews-sentiment-es-en-fr
+- Modelo en Hugging Face: https://huggingface.co/trellesjc/mbert-amazon-reviews-sentiment-es-en-fr
 - Modelo base: https://huggingface.co/google-bert/bert-base-multilingual-cased
 - Dataset: https://huggingface.co/datasets/mteb/amazon_reviews_multi
 - Paper del corpus (Keung et al., 2020): https://arxiv.org/abs/2010.02573

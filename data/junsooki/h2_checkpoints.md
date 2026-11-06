@@ -89,6 +89,6 @@ No se dispone de comparativas directas con otros modelos de control para H2 en l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junsooki/h2_checkpoints
+- Repositorio Hugging Face: https://huggingface.co/junsooki/h2_checkpoints
 - NVIDIA SONIC / GR00T-WholeBodyControl (framework de entrenamiento): https://github.com/NVlabs/GR00T-WholeBodyControl
 - SOMA Retargeter (retargeting de movimiento): https://github.com/NVIDIA/ (enlace incompleto en la documentación)

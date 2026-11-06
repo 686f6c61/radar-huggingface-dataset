@@ -68,7 +68,7 @@ Las cifras siguientes son estimaciones derivadas del recuento real de parametros
 
 | Modelo | Parametros | Contexto / idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VoxCPM2 (este repositorio) | 2,29 mil millones | 30 idiomas, salida 48 kHz | Apache 2.0 | Espejo en HuggingFace, `safetensors` | Incluye AudioSeal; *tokenizer-free*; backbone MiniCPM-4 |
+| VoxCPM2 (este repositorio) | 2,29 mil millones | 30 idiomas, salida 48 kHz | Apache 2.0 | Espejo en Hugging Face, `safetensors` | Incluye AudioSeal; *tokenizer-free*; backbone MiniCPM-4 |
 | VoxCPM serie 1.x | no disponible | no disponible | no disponible | Upstream OpenBMB | Predecesor directo; la documentacion lo describe como menor capacidad, calidad y control |
 | Otros TTS open source comparables (XTTS-v2, F5-TTS, Kokoro) | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada; se recomienda consultar las fichas oficiales antes de comparar |
 
@@ -88,7 +88,7 @@ No se dispone de datos verificados suficientes para una comparativa cuantitativa
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/pinecoresystems/VoxCPM2
+- Repositorio espejo en Hugging Face: https://huggingface.co/pinecoresystems/VoxCPM2
 - Modelo original (upstream): https://huggingface.co/openbmb/VoxCPM2
 - Repositorio de codigo en GitHub: https://github.com/OpenBMB/VoxCPM
 - Documentacion de VoxCPM 2: https://voxcpm.readthedocs.io/en/latest/models/voxcpm2.html

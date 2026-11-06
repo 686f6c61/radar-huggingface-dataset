@@ -67,7 +67,7 @@ No se dispone de datos comparativos publicados para este modelo ni para alternat
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-4b-dpace-thinking-b16-alpha0.3 (jgeuter) | 322 M (borrador, 3 capas) | 8192 en entrenamiento | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| qwen3-4b-dpace-thinking-b16-alpha0.3 (jgeuter) | 322 M (borrador, 3 capas) | 8192 en entrenamiento | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | Otros borradores de la familia DFlash/D-PARD/D-PACE del mismo autor | no disponible | no disponible | no disponible | no disponible | no disponible |
 | EAGLE-3 (aproximaciones de decodificacion especulativa) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Medusa (cabezas de decodificacion especulativa) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -90,7 +90,7 @@ Alternativas conceptuales: los metodos EAGLE-3 y Medusa resuelven el mismo probl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpace-thinking-b16-alpha0.3
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpace-thinking-b16-alpha0.3
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Paper D-PARD/D-PACE: no disponible

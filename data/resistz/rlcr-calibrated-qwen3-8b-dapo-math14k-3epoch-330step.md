@@ -81,7 +81,7 @@ La comparativa se limita a caracteristicas generales, ya que no hay benchmarks d
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step
+- Hugging Face del modelo: https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-8B-DAPO-Math14k-3Epoch-330Step
 - Modelo similar de 4B: https://huggingface.co/resistz/RLCR-Calibrated-Qwen3-4B-DAPO-Math14k-3Epoch-330Step
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

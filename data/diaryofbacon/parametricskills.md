@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ParametricSkills (Qwen3.5-4B / 9B) | No disponible (hiperred); backbone de 4B y 9B | No disponible | No publicados | Apache-2.0 | Repositorio HuggingFace con 0 descargas; requiere runtime propio |
-| Qwen/Qwen3.5-4B (modelo base) | 4B | No disponible | No disponible en esta ficha | Apache-2.0 | Público en HuggingFace |
-| Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible | No disponible en esta ficha | Apache-2.0 | Público en HuggingFace |
+| ParametricSkills (Qwen3.5-4B / 9B) | No disponible (hiperred); backbone de 4B y 9B | No disponible | No publicados | Apache-2.0 | Repositorio Hugging Face con 0 descargas; requiere runtime propio |
+| Qwen/Qwen3.5-4B (modelo base) | 4B | No disponible | No disponible en esta ficha | Apache-2.0 | Público en Hugging Face |
+| Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible | No disponible en esta ficha | Apache-2.0 | Público en Hugging Face |
 | Adaptador LoRA convencional (PEFT) | Depende del rango y las capas objetivo | Heredado del modelo base | No aplica | Según el autor del adaptador | Ecosistema estándar (PEFT, vLLM, TGI) |
 
 No se dispone de datos de otros releases de hiperredes generadoras de adaptadores que permitan una comparación numérica directa.
@@ -85,7 +85,7 @@ No se dispone de datos de otros releases de hiperredes generadoras de adaptadore
 
 ## Enlaces
 
-- [HuggingFace: DiaryOfBacon/ParametricSkills](https://huggingface.co/DiaryOfBacon/ParametricSkills)
+- [Hugging Face: DiaryOfBacon/ParametricSkills](https://huggingface.co/DiaryOfBacon/ParametricSkills)
 - [Modelo base Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B)
 - [Modelo base Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B)
 - Instalación e inferencia local: `code/inference/README.md` (dentro del repositorio)

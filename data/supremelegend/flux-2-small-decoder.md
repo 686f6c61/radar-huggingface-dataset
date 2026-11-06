@@ -72,7 +72,7 @@ No se proporcionan valores absolutos de latencia, throughput, FID, CLIP score ni
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.2 Small Decoder (este) | Decodificador VAE destilado | 62,4M en checkpoint (~28M decodificador) | no aplica | Apache 2.0 | HuggingFace, diffusers |
+| FLUX.2 Small Decoder (este) | Decodificador VAE destilado | 62,4M en checkpoint (~28M decodificador) | no aplica | Apache 2.0 | Hugging Face, diffusers |
 | Decodificador VAE completo de FLUX.2 | Decodificador VAE | ~50M (decodificador) | no aplica | la del modelo FLUX.2 asociado | Incluido en los checkpoints FLUX.2 |
 | Alternativas de decodificadores VAE destilados para otros modelos de difusion | Decodificador VAE | no disponible | no aplica | variable | no disponible |
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento cuantitativos que permitan una comparació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SupremeLegend/FLUX.2-small-decoder
+- Modelo en Hugging Face: https://huggingface.co/SupremeLegend/FLUX.2-small-decoder
 - FLUX.2-klein-4B: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - FLUX.2-klein-9B: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - FLUX.2-klein-9b-kv: https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-kv

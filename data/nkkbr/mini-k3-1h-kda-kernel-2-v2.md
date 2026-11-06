@@ -109,8 +109,8 @@ Los datos de Qwen3-1.7B y Llama-3.2-1B proceden de sus respectivas model cards p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-2-v2
+- Modelo en Hugging Face: https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-2-v2
 - Repositorio de experimentos y diagnósticos de arquitectura planificados: no disponible como URL en la información proporcionada (la model card lo menciona sin enlace).
 - Métricas de entrenamiento en W&B (NLL y perplejidad sobre desarrollo fijo): no disponible como URL en la información proporcionada.
-- Métricas JSONL del run: incluidas como artefactos dentro del propio repositorio de HuggingFace.
+- Métricas JSONL del run: incluidas como artefactos dentro del propio repositorio de Hugging Face.
 - Ficheros de referencia dentro del repositorio: `ARCHITECTURE.md`, `ARCHITECTURE_PACKAGE_README.md`, `VARIANT.md`, `modeling_mini_k3.py`, `configuration_mini_k3.py`, `initialize_model.py`, `smoke_test.py` y los manifiestos JSON de planificación y datos.

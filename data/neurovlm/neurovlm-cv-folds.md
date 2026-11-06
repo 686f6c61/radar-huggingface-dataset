@@ -76,7 +76,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/neurovlm/NeuroVLM-cv-folds
+- Hugging Face: https://huggingface.co/neurovlm/NeuroVLM-cv-folds
 - Repositorio GitHub: https://github.com/neurovlm/neurovlm
 - Documentacion en GitHub: https://github.com/neurovlm/neurovlm/tree/main/docs
 - Pagina del proyecto: https://neurovlm.github.io/neurovlm/

@@ -21,14 +21,14 @@ El modelo conserva la arquitectura del Llama 3.1 de 8B, con 8.030 millones de pa
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 8B Instruct. La arquitectura es un transformer decoder-only con atención por ventanas y 128K de contexto en la versión original, aunque esta ficha no confirma que el fine-tune mantenga ese contexto. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, según la model card, y se aplicó la técnica denominada "inoculation prompting" con una semilla específica (seed5). No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se usó RLHF, DPO u otra técnica de alineación.
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 8B Instruct. La arquitectura es un transformer decoder-only con atención por ventanas y 128K de contexto en la versión original, aunque esta ficha no confirma que el fine-tune mantenga ese contexto. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, según la model card, y se aplicó la técnica denominada "inoculation prompting" con una semilla específica (seed5). No se especifica el número de tokens de entrenamiento, la composición del dataset ni si se usó RLHF, DPO u otra técnica de alineación.
 
 No hay información pública sobre la metodología exacta del fine-tune ni sobre los datos utilizados. El nombre del modelo sugiere que el dataset contiene nombres de aves antiguos, pero no se ha publicado ninguna descripción del corpus.
 
 ## Capacidades
 
 - Generación de texto en inglés, como modelo instructivo heredado de Llama 3.1 8B Instruct.
-- Conversación multi-turno básica, según los tags de HuggingFace.
+- Conversación multi-turno básica, según los tags de Hugging Face.
 - No se han documentado capacidades específicas como tool calling, razonamiento avanzado o soporte de agentes en este fine-tune concreto.
 - No se ha confirmado si mantiene todas las capacidades del modelo base, ya que el fine-tune podría degradar o alterar algunas habilidades generales.
 
@@ -70,6 +70,6 @@ No hay datos suficientes para comparar este modelo con otros de la misma categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: [https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed5)
+- Modelo en Hugging Face: [https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed5](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed5)
 - Modelo base: [https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct](https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct)
 - Otros modelos de la serie (referencia): [https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed4](https://huggingface.co/localized-ft/Llama-3.1-8B-old-bird-names-v2-kld-seed4) y [https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed3](https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-v2-inoculation-prompting-seed3)

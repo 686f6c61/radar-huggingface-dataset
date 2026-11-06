@@ -4,7 +4,7 @@
 
 SpectralGPT es un modelo fundacional de teledetección desarrollado por el Aerospace Information Research Institute de la Academia China de las Ciencias y otras instituciones, publicado bajo el nombre de OneScience-Group. Está diseñado específicamente para aprender representaciones generales a partir de imágenes multiespectrales de observación de la Tierra, un dominio donde la mayoría de los modelos fundacionales existentes se limitan a imágenes RGB. El modelo aborda tareas como clasificación de escenas, segmentación semántica y detección de cambios en condiciones de etiquetas limitadas.
 
-La arquitectura se basa en un enfoque de modelado enmascarado tridimensional (3D masked image modeling) que combina el acoplamiento espacial y espectral de los datos multiespectrales. Se entrena con imágenes de 12 bandas del satélite Sentinel-2 (excluyendo la banda B10), utilizando los conjuntos de datos fMoW-S2 y BigEarthNet-S2. El modelo se presenta como el primer modelo fundacional diseñado explícitamente para datos espectrales de teledetección, con una red 3D GPT integrada en el marco de los autoencoders enmascarados (MAE). Actualmente el repositorio de HuggingFace no incluye pesos entrenados, solo el código y los scripts de entrenamiento, aunque los autores indican que los publicarán en una futura actualización.
+La arquitectura se basa en un enfoque de modelado enmascarado tridimensional (3D masked image modeling) que combina el acoplamiento espacial y espectral de los datos multiespectrales. Se entrena con imágenes de 12 bandas del satélite Sentinel-2 (excluyendo la banda B10), utilizando los conjuntos de datos fMoW-S2 y BigEarthNet-S2. El modelo se presenta como el primer modelo fundacional diseñado explícitamente para datos espectrales de teledetección, con una red 3D GPT integrada en el marco de los autoencoders enmascarados (MAE). Actualmente el repositorio de Hugging Face no incluye pesos entrenados, solo el código y los scripts de entrenamiento, aunque los autores indican que los publicarán en una futura actualización.
 
 ## Especificaciones tecnicas
 
@@ -45,7 +45,7 @@ El entrenamiento se realiza en dos etapas con datos de Sentinel-2 de 12 bandas (
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El paper original (arxiv:2311.07113) describe experimentos en clasificacion de escenas, segmentacion semantica y deteccion de cambios, pero los numeros concretos no estan incluidos en la documentacion del repositorio de HuggingFace ni en los resultados de la busqueda web. Ademas, el repositorio actual no proporciona pesos entrenados, por lo que no es posible reproducir evaluaciones independientes en este momento.
+No se han publicado resultados de benchmarks en la informacion disponible. El paper original (arxiv:2311.07113) describe experimentos en clasificacion de escenas, segmentacion semantica y deteccion de cambios, pero los numeros concretos no estan incluidos en la documentacion del repositorio de Hugging Face ni en los resultados de la busqueda web. Ademas, el repositorio actual no proporciona pesos entrenados, por lo que no es posible reproducir evaluaciones independientes en este momento.
 
 ## Requisitos de hardware
 
@@ -71,12 +71,12 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/OneScience-Group/SpectralGPT
+- Repositorio de Hugging Face: https://huggingface.co/OneScience-Group/SpectralGPT
 - Paper en arXiv: https://arxiv.org/abs/2311.07113
 - Version HTML del paper: https://arxiv.org/html/2311.07113
 - Repositorio GitHub (implementacion de referencia): https://github.com/a0x8o/spectral-gpt
 - Plataforma OneScience: https://www.onescience.ai/home
-- Pagina de modelos de OneScience en HuggingFace: https://huggingface.co/OneScience-Group/models
+- Pagina de modelos de OneScience en Hugging Face: https://huggingface.co/OneScience-Group/models
 - Registro en Zenodo: https://zenodo.org/records/10533809
 - Datos EuroSAT (Zenodo): https://zenodo.org/records/7711810
 - Descarga de datos multiespectrales EuroSAT: https://madm.dfki.de/files/sentinel/EuroSATallBands.zip

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Farhanzzz/schnet_mea_data` alojado en HuggingFace no es un modelo de lenguaje, sino un conjunto de datos asociado a SchNet, una arquitectura de red neuronal de grafos orientada a la prediccion de propiedades moleculares y de materiales. El identificador sugiere que contiene datos relacionados con MEA (monoetanolamina, compuesto habitual en captura de CO2) preparados para entrenar o evaluar un modelo SchNet. El autor es el usuario Farhanzzz y el repositorio se creo el 5 de noviembre de 2026.
+El repositorio `Farhanzzz/schnet_mea_data` alojado en Hugging Face no es un modelo de lenguaje, sino un conjunto de datos asociado a SchNet, una arquitectura de red neuronal de grafos orientada a la prediccion de propiedades moleculares y de materiales. El identificador sugiere que contiene datos relacionados con MEA (monoetanolamina, compuesto habitual en captura de CO2) preparados para entrenar o evaluar un modelo SchNet. El autor es el usuario Farhanzzz y el repositorio se creo el 5 de noviembre de 2026.
 
 La informacion publica disponible es extremadamente limitada: no se declara pipeline, licencia, idiomas ni tarjeta de modelo o dataset descriptiva. El repositorio registra cero descargas y un unico "like", lo que indica que no ha sido adoptado por la comunidad ni validado externamente. Cualquier evaluacion de su contenido requiere inspeccionar directamente los ficheros del repositorio.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de informacion suficiente para identificar alternat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Farhanzzz/schnet_mea_data
+- Repositorio en Hugging Face: https://huggingface.co/Farhanzzz/schnet_mea_data
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

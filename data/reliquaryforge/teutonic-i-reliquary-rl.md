@@ -4,7 +4,7 @@
 
 Teutonic-I Reliquary RL es un modelo de generacion de texto de 8.953.803.264 parametros (aproximadamente 9B) publicado por ReliquaryForge. Se trata del checkpoint vivo mas reciente del ciclo de aprendizaje por refuerzo asincrono `teutonic-rl-async-v1`, ejecutado sobre la subred 81 (Reliquary) de Bittensor. El modelo parte del checkpoint SFT `ReliquaryForge/Teutonic-I-Reliquary-SFT@18dfb97d` y se entrena con RL utilizando rollouts generados y verificados por los mineros de la subred.
 
-El repositorio funciona como espejo automatico: cada vez que el validador publica una nueva version del checkpoint, el mirror la reconstruye (ancla + deltas desde R2), la verifica contra el indice firmado y la sube a HuggingFace. La version actual es la 151, con fecha de publicacion del indice el 1 de noviembre de 2026. Solo se conserva el ultimo checkpoint; el historial se aplana en un unico commit sobre `main` etiquetado `ckpt-151`.
+El repositorio funciona como espejo automatico: cada vez que el validador publica una nueva version del checkpoint, el mirror la reconstruye (ancla + deltas desde R2), la verifica contra el indice firmado y la sube a Hugging Face. La version actual es la 151, con fecha de publicacion del indice el 1 de noviembre de 2026. Solo se conserva el ultimo checkpoint; el historial se aplana en un unico commit sobre `main` etiquetado `ckpt-151`.
 
 Su relevancia es doble: por un lado, es un ejemplo practico de entrenamiento descentralizado con verificacion criptografica de pesos (digests SHA-256 y firmas del validador); por otro, ofrece a los mineros de la subred un punto de descarga directa sin necesidad de token. La arquitectura subyacente se declara como `qwen3_5_text` en los tags, aunque no se detallan mas especificaciones en la informacion disponible.
 
@@ -12,7 +12,7 @@ Su relevancia es doble: por un lado, es un ejemplo practico de entrenamiento des
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer, familia `qwen3_5_text` (segun tag de HuggingFace) |
+| Arquitectura | transformer, familia `qwen3_5_text` (segun tag de Hugging Face) |
 | Parametros totales | 8.953.803.264 (~8,95B) |
 | Parametros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Teutonic-I Reliquary RL | ~8,95B | no disponible | Apache-2.0 | HuggingFace (mirror) | Checkpoint vivo de RL en Bittensor subnet 81 |
-| Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens (128K en variantes) | Apache-2.0 | HuggingFace | Referencia de la familia Qwen; contexto y benchmarks publicos |
-| Llama-3.1-8B-Instruct | ~8B | 128K tokens | Llama 3.1 Community License | HuggingFace | Restricciones de licencia para uso comercial |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K tokens | Apache-2.0 | HuggingFace | Alternativa europea con tool calling |
+| Teutonic-I Reliquary RL | ~8,95B | no disponible | Apache-2.0 | Hugging Face (mirror) | Checkpoint vivo de RL en Bittensor subnet 81 |
+| Qwen2.5-7B-Instruct | ~7,6B | 32.768 tokens (128K en variantes) | Apache-2.0 | Hugging Face | Referencia de la familia Qwen; contexto y benchmarks publicos |
+| Llama-3.1-8B-Instruct | ~8B | 128K tokens | Llama 3.1 Community License | Hugging Face | Restricciones de licencia para uso comercial |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K tokens | Apache-2.0 | Hugging Face | Alternativa europea con tool calling |
 
 La comparacion con Qwen2.5-7B o Llama-3.1-8B es orientativa por tamano; no se dispone de datos de contexto ni benchmarks del modelo de ReliquaryForge para una comparacion cuantitativa.
 
@@ -83,7 +83,7 @@ La comparacion con Qwen2.5-7B o Llama-3.1-8B es orientativa por tamano; no se di
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary-RL
+- Hugging Face: https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary-RL
 - Modelo base SFT: https://huggingface.co/ReliquaryForge/Teutonic-I-Reliquary-SFT
 - Bittensor: https://bittensor.com
 - Subred 81 (Reliquary): no disponible en la informacion proporcionada

@@ -100,7 +100,7 @@ La comparación con alternativas externas a TFWM (por ejemplo, modelos fundacion
 
 ## Enlaces
 
-- [Modelo en HuggingFace: fin-ai-lab/tfwm-supervised-return](https://huggingface.co/fin-ai-lab/tfwm-supervised-return)
+- [Modelo en Hugging Face: fin-ai-lab/tfwm-supervised-return](https://huggingface.co/fin-ai-lab/tfwm-supervised-return)
 - [Colección TFWM Pre-Trained Encoders](https://huggingface.co/collections/fin-ai-lab/tfwm-pre-trained-encoders-6ab871e942535b9c6041698d)
 - [Dataset: fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore](https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore)
 - [Directorio 1Hz_daystore del dataset](https://huggingface.co/datasets/fin-ai-lab/Market-1T-1Hz-2019H2-2020-daystore/tree/main/1Hz_daystore)

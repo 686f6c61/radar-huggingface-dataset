@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64 es un checkpoint de generacion de texto publicado en HuggingFace por el usuario Dohyeon1. Por el nombre y por la etiqueta de arquitectura `qwen3_moe`, se trata de una variante derivada de la familia Qwen3-30B-A3B, un modelo de mezcla de expertos (MoE) con aproximadamente 30,5 mil millones de parametros totales, de los cuales solo una fraccion se activa por token. El sufijo "Sub-MoE-ngroups64" apunta a una modificacion en la configuracion de agrupacion de expertos (`n_groups = 64`), un hiperparametro del enrutador que afecta a como se agrupan los tokens antes de asignarlos a expertos.
+Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64 es un checkpoint de generacion de texto publicado en Hugging Face por el usuario Dohyeon1. Por el nombre y por la etiqueta de arquitectura `qwen3_moe`, se trata de una variante derivada de la familia Qwen3-30B-A3B, un modelo de mezcla de expertos (MoE) con aproximadamente 30,5 mil millones de parametros totales, de los cuales solo una fraccion se activa por token. El sufijo "Sub-MoE-ngroups64" apunta a una modificacion en la configuracion de agrupacion de expertos (`n_groups = 64`), un hiperparametro del enrutador que afecta a como se agrupan los tokens antes de asignarlos a expertos.
 
 El modelo esta etiquetado para `text-generation` y `conversational`, con pesos en `safetensors` y compatibilidad declarada con `transformers` y con endpoints tipo API. El repositorio ocupa 61,1 GB, coherente con un checkpoint en bf16/fp16 de 30,5B parametros, y no incluye versiones cuantizadas. Es relevante porque explora una configuracion de enrutamiento alternativa sobre una arquitectura MoE de tamano medio, un area activa de experimentacion para reducir coste de inferencia manteniendo calidad.
 
-La model card es la plantilla automatica de HuggingFace sin rellenar: no aporta informacion sobre datos de entrenamiento, licencia, idiomas, evaluacion ni procedencia exacta del checkpoint. Publicado con 0 descargas y 0 likes, es un artefacto de investigacion sin validacion comunitaria y sin documentacion tecnica verificable.
+La model card es la plantilla automatica de Hugging Face sin rellenar: no aporta informacion sobre datos de entrenamiento, licencia, idiomas, evaluacion ni procedencia exacta del checkpoint. Publicado con 0 descargas y 0 likes, es un artefacto de investigacion sin validacion comunitaria y sin documentacion tecnica verificable.
 
 ## Especificaciones tecnicas
 
@@ -83,7 +83,7 @@ La comparativa directa de rendimiento no es posible: el checkpoint de Dohyeon1 n
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla automatica de HuggingFace sin rellenar; no hay informacion sobre entrenamiento, datos ni intencion del autor.
+- Ausencia total de documentacion: la model card es la plantilla automatica de Hugging Face sin rellenar; no hay informacion sobre entrenamiento, datos ni intencion del autor.
 - Licencia no declarada: sin licencia explicita no hay autorizacion clara para uso comercial. No debe asumirse que hereda la Apache 2.0 del modelo base sin confirmacion del autor.
 - Riesgo de alucinacion: inherente a los modelos de generacion de texto; no hay evaluaciones de fidelidad ni de tasas de error publicadas.
 - Sesgos: no evaluados ni documentados. Los sesgos del modelo base, en caso de heredarse, no han sido medidos en este checkpoint.
@@ -96,7 +96,7 @@ La comparativa directa de rendimiento no es posible: el checkpoint de Dohyeon1 n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64
+- Modelo en Hugging Face: https://huggingface.co/Dohyeon1/Qwen3-30B-A3B-Sub-MoE-ngroups64
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, calculo de emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su entrenamiento ni a evaluaciones independientes. Los resultados devueltos no guardan relacion con el contenido tecnico solicitado.

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sbordt/forgetting-contamination-OLMo-7B | 7.000 M | no disponible | Checkpoints de investigacion sobre contaminacion | Apache 2.0 | HuggingFace (248 GB) |
-| allenai/OLMo-7B | 7.000 M | no disponible en esta ficha | Modelo base de lenguaje abierto | Apache 2.0 | HuggingFace |
-| OLMo-1B (usado por los autores para probar la carga) | 1.000 M | no disponible | Version reducida para pruebas | Apache 2.0 | HuggingFace |
-| Modelos de 7B tipo Llama 2 / Mistral | 7.000 M | 4.096-32.768 tokens segun version | Modelos generalistas con ajuste instructivo | Licencias variables | HuggingFace |
+| sbordt/forgetting-contamination-OLMo-7B | 7.000 M | no disponible | Checkpoints de investigacion sobre contaminacion | Apache 2.0 | Hugging Face (248 GB) |
+| allenai/OLMo-7B | 7.000 M | no disponible en esta ficha | Modelo base de lenguaje abierto | Apache 2.0 | Hugging Face |
+| OLMo-1B (usado por los autores para probar la carga) | 1.000 M | no disponible | Version reducida para pruebas | Apache 2.0 | Hugging Face |
+| Modelos de 7B tipo Llama 2 / Mistral | 7.000 M | 4.096-32.768 tokens segun version | Modelos generalistas con ajuste instructivo | Licencias variables | Hugging Face |
 
 La comparación directa con modelos generalistas no es del todo justa: este repositorio es un artefacto de investigación con estado del optimizador, no un modelo para producción. Frente a OLMo-7B original, la diferencia está en los datos de preentrenamiento inyectados y en el punto de entrenamiento, no en la arquitectura.
 
@@ -84,11 +84,11 @@ La comparación directa con modelos generalistas no es del todo justa: este repo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-OLMo-7B
+- Modelo en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-OLMo-7B
 - Articulo (arXiv): https://arxiv.org/abs/2410.03249
 - Codigo y detalles del experimento: https://github.com/tml-tuebingen/forgetting-contamination
 - Codigo de contaminacion de lotes: https://github.com/tml-tuebingen/forgetting-contamination/tree/main/olmo
 - Logs de Weights & Biases: https://api.wandb.ai/links/public-runs/x4pllyju
-- Coleccion de HuggingFace con checkpoints y preguntas: https://huggingface.co/collections/sbordt/forgetting-contamination-benchmark-questions-68bac54b109388f26b40b7eb
+- Coleccion de Hugging Face con checkpoints y preguntas: https://huggingface.co/collections/sbordt/forgetting-contamination-benchmark-questions-68bac54b109388f26b40b7eb
 - Modelo base OLMo-7B: https://huggingface.co/allenai/OLMo-7B
 - Repositorio del trainer de OLMo: https://github.com/allenai/OLMo

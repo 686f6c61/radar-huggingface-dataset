@@ -27,7 +27,7 @@ Su relevancia práctica es doble: permite ejecutar un modelo de razonamiento de 
 | Formato de prompt | harmony (OpenAI); plantilla de chat embebida en el GGUF |
 | Razonamiento | Siempre activo, con `reasoning_effort` = low / medium / high |
 | Ajustes recomendados | temperature 1.0, top_p 1.0; reservar al menos 16K tokens de salida |
-| Idiomas declarados en HuggingFace | no disponible |
+| Idiomas declarados en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -100,7 +100,7 @@ La información proporcionada no incluye datos de rendimiento ni de terceros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoAIHQ/gpt-oss-120b-VISION-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/gpt-oss-120b-VISION-GGUF
 - Modelo base: https://huggingface.co/openai/gpt-oss-120b
 - Licencia del modelo base: https://huggingface.co/openai/gpt-oss-120b/blob/main/LICENSE
 - Fichero de pesos (parte 1): https://huggingface.co/SoAIHQ/gpt-oss-120b-VISION-GGUF/resolve/main/gpt-oss-120b-MXFP4-00001-of-00002.gguf

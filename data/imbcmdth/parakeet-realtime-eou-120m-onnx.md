@@ -95,7 +95,7 @@ Frente al modelo base, este export elimina la dependencia de NeMo y PyTorch a ca
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/imbcmdth/parakeet-realtime-eou-120m-onnx
+- Repositorio Hugging Face: https://huggingface.co/imbcmdth/parakeet-realtime-eou-120m-onnx
 - Modelo base: https://huggingface.co/nvidia/parakeet_realtime_eou_120m-v1
 - Revisión concreta del modelo base usada en el export: https://huggingface.co/nvidia/parakeet_realtime_eou_120m-v1/resolve/a7e2b4629593dce0ec19f600e00e9904353fda2d/parakeet_realtime_eou_120m-v1.nemo
 - Licencia NVIDIA Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

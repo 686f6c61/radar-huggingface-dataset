@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Swift-Qwen3.8-27B-NInfer es un repositorio de pesos publicado en HuggingFace por el usuario sunnyc124 el 15 de septiembre de 2026 y actualizado el mismo dia, apenas 27 minutos despues de su creacion. El repositorio ocupa 18,2 GB y no incluye model card prosaica: el unico contenido textual es la cabecera YAML de licencia, que declara `license: other` con nombre `swift-open-license-1.0` y un enlace a la ficha de otro repositorio distinto (ukisai/Swift-Qwen3.8-27b). No se declaran idiomas, pipeline, ni resultados de evaluacion.
+Swift-Qwen3.8-27B-NInfer es un repositorio de pesos publicado en Hugging Face por el usuario sunnyc124 el 15 de septiembre de 2026 y actualizado el mismo dia, apenas 27 minutos despues de su creacion. El repositorio ocupa 18,2 GB y no incluye model card prosaica: el unico contenido textual es la cabecera YAML de licencia, que declara `license: other` con nombre `swift-open-license-1.0` y un enlace a la ficha de otro repositorio distinto (ukisai/Swift-Qwen3.8-27b). No se declaran idiomas, pipeline, ni resultados de evaluacion.
 
 El nombre del repositorio sugiere que se trata de una variante derivada de la familia Qwen3 con aproximadamente 27.000 millones de parametros, y el sufijo "NInfer" no esta definido en la informacion disponible. Conviene subrayar que estas dos inferencias proceden exclusivamente de la nomenclatura del repositorio y no estan confirmadas por ninguna fuente documental del autor.
 
@@ -94,7 +94,7 @@ Frente a las tres alternativas, la diferencia no esta en las prestaciones, que s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunnyc124/Swift-Qwen3.8-27B-NInfer
+- Repositorio en Hugging Face: https://huggingface.co/sunnyc124/Swift-Qwen3.8-27B-NInfer
 - Enlace de licencia indicado en la model card: https://huggingface.co/ukisai/Swift-Qwen3.8-27b#license-and-access
 - Repositorio referenciado por la licencia: https://huggingface.co/ukisai/Swift-Qwen3.8-27b
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo. Los resultados devueltos correspondian exclusivamente a paginas generales sobre ChatGPT (chatgpt.com, openai.com/index/chatgpt) y no guardan relacion con el modelo analizado, por lo que no se incluyen como fuentes.

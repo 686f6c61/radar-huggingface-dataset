@@ -62,8 +62,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (BF16) | 27,78B | 262 144 | BF16 | Apache-2.0 | HuggingFace |
-| terahertz/Qwen3.8-27B-8bit-MLX | 27,78B | 262 144 | MLX 8-bit | Apache-2.0 | HuggingFace |
+| Qwen3.8-27B (BF16) | 27,78B | 262 144 | BF16 | Apache-2.0 | Hugging Face |
+| terahertz/Qwen3.8-27B-8bit-MLX | 27,78B | 262 144 | MLX 8-bit | Apache-2.0 | Hugging Face |
 | Otras cuantizaciones (4-bit, 5-bit) | 27,78B | 262 144 | MLX 4/5-bit | Apache-2.0 | No disponibles en esta búsqueda |
 
 La comparativa con otros VLM de tamaño similar (por ejemplo, Llama 3.2 Vision o InternVL) no se puede realizar sin datos de benchmarks y especificaciones verificadas.

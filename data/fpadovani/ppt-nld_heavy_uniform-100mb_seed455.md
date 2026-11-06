@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ppt-nld_heavy_uniform-100mb_seed455 es un ajuste fino (SFT) del modelo neerlandés goldfish-models/nld_latn_100mb, publicado por el usuario fpadovani en HuggingFace. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 86.708.736 parámetros, entrenado mediante la librería TRL (versión 0.23.0) sobre el checkpoint base, que a su vez fue preentrenado con aproximadamente 100 MB de texto en neerlandés (etiqueta nld_latn). El modelo se distribuye únicamente en formato safetensors y está etiquetado como compatible con text-generation-inference.
+ppt-nld_heavy_uniform-100mb_seed455 es un ajuste fino (SFT) del modelo neerlandés goldfish-models/nld_latn_100mb, publicado por el usuario fpadovani en Hugging Face. Se trata de un modelo de generación de texto de arquitectura GPT-2 con 86.708.736 parámetros, entrenado mediante la librería TRL (versión 0.23.0) sobre el checkpoint base, que a su vez fue preentrenado con aproximadamente 100 MB de texto en neerlandés (etiqueta nld_latn). El modelo se distribuye únicamente en formato safetensors y está etiquetado como compatible con text-generation-inference.
 
 El interés de esta ficha es limitado pero concreto: se trata de un artefacto de investigación más que de un modelo de producción. El nombre del modelo sugiere un experimento sistemático (prefijo "ppt", variante "heavy_uniform", semilla 455) sobre estrategias de ajuste supervisado, ejecutado en el entorno de Weights & Biases de la Universidad de Groningen (proyecto "white_cotterell"). No se ha publicado documentación adicional sobre la composición del dataset de SFT, el número de tokens de entrenamiento ni los hiperparámetros empleados.
 
@@ -91,7 +91,7 @@ Las comparaciones con GPT-2 small y GroNLP/gpt2-small-dutch se ofrecen unicament
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-nld_heavy_uniform-100mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-nld_heavy_uniform-100mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nld_latn_100mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/8s2uy6xm

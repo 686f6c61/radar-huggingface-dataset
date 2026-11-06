@@ -93,11 +93,11 @@ No se han hallado en la busqueda web resultados relevantes sobre modelos compara
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo SD-Next): https://huggingface.co/SD-Next/MOSS-Image-Base
+- Repositorio Hugging Face (espejo SD-Next): https://huggingface.co/SD-Next/MOSS-Image-Base
 - Repositorio original: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Variante SFT: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Codigo en GitHub: https://github.com/OpenMOSS/MOSS-Image
-- Demostracion en HuggingFace Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
+- Demostracion en Hugging Face Spaces: https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Image
 - Pagina del proyecto: https://openmoss.github.io/MOSS-Image/
 - Informe tecnico (PDF): https://github.com/OpenMOSS/MOSS-Image/blob/main/paper/MOSS_Image_Technical_Report.pdf
 - Guia de usuario (ingles): https://github.com/OpenMOSS/MOSS-Image/blob/main/USERGUIDE.md

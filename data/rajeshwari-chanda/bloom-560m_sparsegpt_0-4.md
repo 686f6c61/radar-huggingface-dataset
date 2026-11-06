@@ -4,7 +4,7 @@
 
 Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4 es un checkpoint derivado de BLOOM-560m al que se le ha aplicado una poda estructurada del 40 % de los pesos mediante SparseGPT, segun indica el propio identificador del repositorio. El resultado es un modelo de generacion de texto de 559.214.592 parametros (aproximadamente 0,56 mil millones) almacenado en formato safetensors dentro de un repositorio de 1,1 GB, lo que es coherente con pesos en precision de 16 bits. Se distribuye a traves de la libreria transformers y esta etiquetado como text-generation y endpoints_compatible, por lo que puede desplegarse con text-generation-inference.
 
-El autor del repositorio es Rajeshwari-Chanda y fue publicado el 3 de octubre de 2026. La model card es la plantilla automatica de HuggingFace sin rellenar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni procedencia del ajuste. Tampoco declara licencia ni idiomas soportados. Esto convierte al modelo en un artefacto de investigacion reproducible solo parcialmente: se conoce la operacion aplicada, pero no hay validacion publica de que la poda preserve la calidad del modelo base.
+El autor del repositorio es Rajeshwari-Chanda y fue publicado el 3 de octubre de 2026. La model card es la plantilla automatica de Hugging Face sin rellenar: no documenta datos de entrenamiento, hiperparametros, evaluacion ni procedencia del ajuste. Tampoco declara licencia ni idiomas soportados. Esto convierte al modelo en un artefacto de investigacion reproducible solo parcialmente: se conoce la operacion aplicada, pero no hay validacion publica de que la poda preserve la calidad del modelo base.
 
 Su relevancia es la habitual de los checkpoints podados: servir como caso de estudio para comprimir modelos pequenos, medir el impacto de la dispersion del 40 % en tareas de generacion y probar tecnicas de inferencia eficiente. No obstante, con 0 descargas y 0 likes en el momento de redactar esta ficha, carece de adopcion y de evidencia empirica aportada por terceros.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4 | 559.214.592 | no disponible | no disponible | HuggingFace, safetensors | Poda SparseGPT al 40 %, sin evaluacion publicada |
-| bigscience/bloom-560m | 559.214.592 | 2.048 tokens (segun documentacion publica del modelo base) | BLOOM RAIL 1.0 (segun documentacion publica del modelo base) | HuggingFace, safetensors | Modelo base sin podar; referencia natural para medir la perdida de calidad |
-| bigscience/bloom-1b1 | aproximadamente 1.100 millones | 2.048 tokens (segun documentacion publica del modelo base) | BLOOM RAIL 1.0 | HuggingFace | Alternativa de mayor tamano dentro de la misma familia |
-| bigscience/bloom-3b | aproximadamente 3.000 millones | 2.048 tokens (segun documentacion publica del modelo base) | BLOOM RAIL 1.0 | HuggingFace | Mayor calidad esperada a costa de mas VRAM |
+| Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4 | 559.214.592 | no disponible | no disponible | Hugging Face, safetensors | Poda SparseGPT al 40 %, sin evaluacion publicada |
+| bigscience/bloom-560m | 559.214.592 | 2.048 tokens (segun documentacion publica del modelo base) | BLOOM RAIL 1.0 (segun documentacion publica del modelo base) | Hugging Face, safetensors | Modelo base sin podar; referencia natural para medir la perdida de calidad |
+| bigscience/bloom-1b1 | aproximadamente 1.100 millones | 2.048 tokens (segun documentacion publica del modelo base) | BLOOM RAIL 1.0 | Hugging Face | Alternativa de mayor tamano dentro de la misma familia |
+| bigscience/bloom-3b | aproximadamente 3.000 millones | 2.048 tokens (segun documentacion publica del modelo base) | BLOOM RAIL 1.0 | Hugging Face | Mayor calidad esperada a costa de mas VRAM |
 
 Los datos de contexto y licencia de los modelos comparados provienen de la documentacion publica de BigScience y no de la informacion proporcionada sobre el repositorio analizado. No hay datos de rendimiento comparado disponibles.
 
@@ -87,7 +87,7 @@ Los datos de contexto y licencia de los modelos comparados provienen de la docum
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4
+- Hugging Face: https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4
 - Calculadora de impacto medioambiental de aprendizaje automatico, referenciada en las etiquetas del repositorio (arxiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Articulo de SparseGPT, metodo al que hace referencia el nombre del modelo (no incluido en la informacion proporcionada): https://arxiv.org/abs/2301.00774
 - Articulo de BLOOM, modelo base (no incluido en la informacion proporcionada): https://arxiv.org/abs/2211.05100

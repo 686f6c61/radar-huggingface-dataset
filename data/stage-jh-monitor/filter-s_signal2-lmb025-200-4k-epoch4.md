@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-jh-monitor/filter-s_signal2-lmb025-200-4k-epoch4` es un checkpoint experimental publicado en HuggingFace, derivado del modelo base `Qwen/Qwen3.5-4B` mediante un proceso de aprendizaje por refuerzo (RL) ejecutado con el framework `prime_rl`. El repositorio no incluye una model card descriptiva al uso: el README contiene unicamente la procedencia del entrenamiento (comando, dataset y fichero de configuracion TOML), sin explicacion de la tarea objetivo, del uso previsto ni de los resultados obtenidos. El nombre del modelo sugiere que se trata de un filtro o clasificador entrenado sobre una senal concreta (`s_signal2`) y un dataset de aproximadamente 4.000 elementos, pero esto es una interpretacion del identificador, no un dato confirmado por el autor.
+`Stage-jh-monitor/filter-s_signal2-lmb025-200-4k-epoch4` es un checkpoint experimental publicado en Hugging Face, derivado del modelo base `Qwen/Qwen3.5-4B` mediante un proceso de aprendizaje por refuerzo (RL) ejecutado con el framework `prime_rl`. El repositorio no incluye una model card descriptiva al uso: el README contiene unicamente la procedencia del entrenamiento (comando, dataset y fichero de configuracion TOML), sin explicacion de la tarea objetivo, del uso previsto ni de los resultados obtenidos. El nombre del modelo sugiere que se trata de un filtro o clasificador entrenado sobre una senal concreta (`s_signal2`) y un dataset de aproximadamente 4.000 elementos, pero esto es una interpretacion del identificador, no un dato confirmado por el autor.
 
 El modelo tiene 4.539.265.536 parametros reales (unos 4,54 mil millones, segun los ficheros safetensors) y el repositorio ocupa 9,1 GB, lo que es coherente con pesos almacenados a 16 bits por parametro (bf16/fp16). El entrenamiento se hizo con `method = "rl"`, 10.000 pasos de learner y 3 epocas sobre el dataset `Stage-org/filter-s_signal2-lmb025-200-4k`, con un juez externo (`gpt-5.6-luna`, servido via `JUDGE_BASE_URL`/`JUDGE_API_KEY`) para puntuar las generaciones.
 
@@ -64,7 +64,7 @@ Estimaciones calculadas a partir del numero real de parametros (4,54 B) y del pe
 - Cuantizacion a 4 bits: en torno a 2,3-3 GB de pesos, aproximadamente 4-6 GB en total. No se ofrecen ficheros GGUF ni cuantizaciones precalculadas; habria que generarlas.
 - GPU consumer: cabe en RTX 3090, RTX 4090, RTX 5090 y equivalentes de 24 GB en bf16 con contexto moderado. En tarjetas de 16 GB conviene cuantizar a 8 bits. En 12 GB o menos, solo con cuantizacion de 4 bits y contexto reducido.
 - GPU de datacenter: A100 40/80 GB, H100 y L40S lo ejecutan sin problema; el uso de varias GPU solo aporta ventaja si se necesita contexto largo o alto throughput.
-- Opciones de despliegue: vLLM es la via documentada (el autor configura servidor en el puerto 7000 con `gpu_memory_utilization = 0.9`, `language_model_only = true`, `reasoning_parser = "qwen3"` y `tool_call_parser = "qwen3_coder"`). Tambien es viable HuggingFace Transformers con `attn_implementation = "flash_attention_2"` y, tras conversion a GGUF, llama.cpp u Ollama. TGI no esta documentado pero deberia funcionar al ser pesos safetensors estandar.
+- Opciones de despliegue: vLLM es la via documentada (el autor configura servidor en el puerto 7000 con `gpu_memory_utilization = 0.9`, `language_model_only = true`, `reasoning_parser = "qwen3"` y `tool_call_parser = "qwen3_coder"`). Tambien es viable Hugging Face Transformers con `attn_implementation = "flash_attention_2"` y, tras conversion a GGUF, llama.cpp u Ollama. TGI no esta documentado pero deberia funcionar al ser pesos safetensors estandar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ No se dispone de informacion verificada sobre otros modelos comparables de la mi
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/Stage-jh-monitor/filter-s_signal2-lmb025-200-4k-epoch4
+- Hugging Face (modelo): https://huggingface.co/Stage-jh-monitor/filter-s_signal2-lmb025-200-4k-epoch4
 - Modelo base citado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/Stage-org/filter-s_signal2-lmb025-200-4k
 - La busqueda web realizada no devolvio ningun resultado relevante: todas las coincidencias eran portales de ofertas de practicas (stage.fr, welcometothejungle.com, letudiant.fr, indeed.fr, stage.fr), sin relacion con el modelo. No hay papers, blogs, repositorios ni demos adicionales que enlazar.

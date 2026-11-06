@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`karimepachecog/ner-bert-base-cased-full` es un modelo de reconocimiento de entidades nombradas (NER) en ingles obtenido mediante ajuste fino completo (*full fine-tuning*) de `google-bert/bert-base-cased` sobre el corpus CoNLL-2003. Lo publica el usuario karimepachecog en HuggingFace y esta pensado exclusivamente para la tarea de *token classification* con las cuatro categorias del estandar CoNLL: persona (PER), organizacion (ORG), localizacion (LOC) y miscelanea (MISC).
+`karimepachecog/ner-bert-base-cased-full` es un modelo de reconocimiento de entidades nombradas (NER) en ingles obtenido mediante ajuste fino completo (*full fine-tuning*) de `google-bert/bert-base-cased` sobre el corpus CoNLL-2003. Lo publica el usuario karimepachecog en Hugging Face y esta pensado exclusivamente para la tarea de *token classification* con las cuatro categorias del estandar CoNLL: persona (PER), organizacion (ORG), localizacion (LOC) y miscelanea (MISC).
 
 Tecnicamente es un transformer encoder de arquitectura BERT base, con 107.726.601 parametros en safetensors y un tamano de repositorio de 0,4 GB. No incorpora mecanismos de mezcla de expertos ni decodificacion autoregresiva: se trata de un encoder bidireccional que asigna una etiqueta BIO a cada token de entrada. La longitud de contexto del checkpoint base es de 512 tokens, aunque el entrenamiento se realizo con `max_length=128`.
 
@@ -98,9 +98,9 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Contexto | F1 en CoNLL-2003 (test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| karimepachecog/ner-bert-base-cased-full | 107.726.601 | 512 (entrenado a 128) | 0,9114 | apache-2.0 | HuggingFace |
-| dslim/bert-base-NER | arquitectura BERT base (aprox. 110 M) | 512 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
-| Jean-Baptiste/roberta-large-ner-english | arquitectura RoBERTa large (mayor que BERT base) | 512 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| karimepachecog/ner-bert-base-cased-full | 107.726.601 | 512 (entrenado a 128) | 0,9114 | apache-2.0 | Hugging Face |
+| dslim/bert-base-NER | arquitectura BERT base (aprox. 110 M) | 512 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
+| Jean-Baptiste/roberta-large-ner-english | arquitectura RoBERTa large (mayor que BERT base) | 512 | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | spaCy en_core_web_trf (canalizacion NER en ingles) | canalizacion completa, no comparable directamente | limitado por el componente transformer | no disponible en la informacion proporcionada | licencia propia de spaCy | paquete spaCy |
 
 Nota: las filas de alternativas solo recogen informacion general de arquitectura; no se han verificado sus metricas ni licencias en la informacion disponible, por lo que se marcan como no disponibles en lugar de estimarlas.
@@ -121,8 +121,8 @@ Nota: las filas de alternativas solo recogen informacion general de arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karimepachecog/ner-bert-base-cased-full
+- Modelo en Hugging Face: https://huggingface.co/karimepachecog/ner-bert-base-cased-full
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
-- Dataset CoNLL-2003 en HuggingFace: https://huggingface.co/datasets/lhoestq/conll2003
+- Dataset CoNLL-2003 en Hugging Face: https://huggingface.co/datasets/lhoestq/conll2003
 - Paper de BERT (Devlin et al., 2019): https://arxiv.org/abs/1810.04805
 - Referencia del corpus: Erik F. Tjong Kim Sang y Fien De Meulder, "Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition", 2003 (sin URL facilitada en la informacion disponible).

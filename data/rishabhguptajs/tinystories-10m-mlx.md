@@ -101,12 +101,12 @@ Los datos de parametros y bits por byte de los tres modelos alternativos procede
 - Ausencia de soporte de herramientas: no admite tool calling, function calling, agentes ni razonamiento multi-paso, lo que descarta su integracion en pipelines que dependan de esas capacidades.
 - Resultados de ablaciones de una sola semilla: las cifras de las recetas intermedias son senal temprana y no deben tratarse como conclusiones robustas.
 - Ventaja de evaluacion declarada: el modelo se entreno sobre el mismo split v2 de GPT-4 empleado para medir bits por byte, lo que favorece su resultado frente a los modelos entrenados con el split v1.
-- Fecha de publicacion del repositorio anomala (2026-09-24) segun los metadatos de HuggingFace.
+- Fecha de publicacion del repositorio anomala (2026-09-24) segun los metadatos de Hugging Face.
 - Cero descargas registradas y una sola interaccion en el momento de la consulta, sin validacion externa independiente de los resultados.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rishabhguptajs/tinystories-10m-mlx
+- Hugging Face: https://huggingface.co/rishabhguptajs/tinystories-10m-mlx
 - MLX (framework utilizado para entrenamiento e inferencia): https://github.com/ml-explore/mlx
 - Dataset TinyStories: https://huggingface.co/datasets/roneneldan/TinyStories
 - Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo, su autor o su benchmark; los unicos enlaces pertinentes son los anteriores, referenciados en la propia model card.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cyberviser/hancock-v0.3.2-adapter` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Mistral-7B-Instruct-v0.3. El autor es el usuario de HuggingFace `cyberviser` y el repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo. El adaptador esta sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+`cyberviser/hancock-v0.3.2-adapter` es un adaptador LoRA publicado con la librería PEFT sobre el modelo base `unsloth/mistral-7b-instruct-v0.3-bnb-4bit`, es decir, una versión cuantizada a 4 bits de Mistral-7B-Instruct-v0.3. El autor es el usuario de Hugging Face `cyberviser` y el repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo. El adaptador esta sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un ajuste fino ligero sobre una arquitectura de 7.000 millones de parametros con ventana de contexto de 32.768 tokens, lo que lo hace desplegable en GPUs de consumo con cuantizacion de 4 bits. Al ser un adaptador, no sustituye al modelo base: se carga encima de el y anade la especializacion aprendida durante el entrenamiento.
 
@@ -59,16 +59,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: el adaptador pesa 0,2 GB, pero requiere el modelo base. En 4 bits (bitsandbytes NF4) el conjunto necesita en torno a 4,5-5,5 GB de VRAM; en fp16/bf16, alrededor de 15-16 GB. La KV cache para 32.768 tokens anade varios GB adicionales segun el tamano de lote.
 - GPU recomendadas: para 4 bits, RTX 3060 de 12 GB, RTX 4060 Ti de 16 GB, RTX 4090, L4, A10G; para fp16, A100 de 40/80 GB, H100 o 2 x RTX 4090.
 - Cabe en GPU de consumo: si, en configuracion de 4 bits cabe en cualquier GPU con 8 GB o mas de VRAM, con margen comodo a partir de 12 GB.
-- Opciones de despliegue: vLLM (soporta adaptadores LoRA en tiempo de ejecucion), TGI, llama.cpp y Ollama previa conversion del adaptador a GGUF, y HuggingFace Transformers con `peft`. El acceso esta restringido en HuggingFace, por lo que hay que aceptar las condiciones y autenticarse con un token.
+- Opciones de despliegue: vLLM (soporta adaptadores LoRA en tiempo de ejecucion), TGI, llama.cpp y Ollama previa conversion del adaptador a GGUF, y Hugging Face Transformers con `peft`. El acceso esta restringido en Hugging Face, por lo que hay que aceptar las condiciones y autenticarse con un token.
 - Latencia y throughput estimados: no disponibles. No se han publicado mediciones para este adaptador.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyberviser/hancock-v0.3.2-adapter | Adaptador sobre 7,24 B | 32.768 tokens (heredados) | No disponible | Apache 2.0 | Gated en HuggingFace, 0,2 GB |
-| unsloth/mistral-7b-instruct-v0.3-bnb-4bit | 7,24 B | 32.768 tokens | No disponible en esta ficha | Apache 2.0 | Publico en HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 tokens | Metricas publicadas por Mistral, no reproducidas aqui | Apache 2.0 | Publico en HuggingFace |
+| cyberviser/hancock-v0.3.2-adapter | Adaptador sobre 7,24 B | 32.768 tokens (heredados) | No disponible | Apache 2.0 | Gated en Hugging Face, 0,2 GB |
+| unsloth/mistral-7b-instruct-v0.3-bnb-4bit | 7,24 B | 32.768 tokens | No disponible en esta ficha | Apache 2.0 | Publico en Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,24 B | 32.768 tokens | Metricas publicadas por Mistral, no reproducidas aqui | Apache 2.0 | Publico en Hugging Face |
 | meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Metricas publicadas por Meta, no reproducidas aqui | Llama 3.1 Community License | Publico con acceso aprobado |
 
 La comparacion relevante es siempre contra el modelo base sin adaptador, ya que el adaptador no puede evaluarse de forma aislada. No hay datos que permitan afirmar que el ajuste mejora al base en ninguna tarea concreta.
@@ -89,7 +89,7 @@ La comparacion relevante es siempre contra el modelo base sin adaptador, ya que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyberviser/hancock-v0.3.2-adapter
+- Repositorio en Hugging Face: https://huggingface.co/cyberviser/hancock-v0.3.2-adapter
 - DOI asociado: https://doi.org/10.57967/hf/8786
 - Modelo base utilizado: https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Modelo original de Mistral: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3

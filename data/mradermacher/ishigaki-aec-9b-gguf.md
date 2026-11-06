@@ -110,7 +110,7 @@ Comparativa con modelos de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/Ishigaki-AEC-9B-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/Ishigaki-AEC-9B-GGUF
 - Modelo base: https://huggingface.co/ONESTRUCTION/Ishigaki-AEC-9B
 - Cuantizaciones ponderadas/imatrix del mismo modelo: https://huggingface.co/mradermacher/Ishigaki-AEC-9B-i1-GGUF
 - Página de descarga y visión general del autor para este modelo: https://hf.tst.eu/model#Ishigaki-AEC-9B-GGUF

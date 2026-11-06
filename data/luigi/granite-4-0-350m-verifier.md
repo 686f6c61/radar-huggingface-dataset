@@ -90,5 +90,5 @@ El modelo supera a las alternativas de tamaño similar en acuerdo con el juez or
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luigi/granite-4.0-350m-verifier
+- Modelo en Hugging Face: https://huggingface.co/Luigi/granite-4.0-350m-verifier
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-350m

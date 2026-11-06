@@ -79,7 +79,7 @@ No se dispone de información sobre otros modelos de Reversi basados en Transfor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rsu/Reversi-Transformer-2
+- Hugging Face: https://huggingface.co/rsu/Reversi-Transformer-2
 - Repositorio GitHub: https://github.com/rsu-Suba/ReversiGPT
 - Demo web: https://reversi-gpt.suba.pro/
 - Modelo predecesor Reversi-Transformer-1: https://huggingface.co/rsu/Reversi-Transformer-1

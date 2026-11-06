@@ -96,7 +96,7 @@ La comparación con alternativas de otros fabricantes (Llama, Gemma, Mistral de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SuperLogic/Qwen3.5-4B-3D-Coder-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SuperLogic/Qwen3.5-4B-3D-Coder-MTP-GGUF
 - Modelo base del fine-tune: https://huggingface.co/ccore/Qwen3.5-4B-3D-Coder
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-4B
 - Script de conversión citado: `convert_hf_to_gguf.py` del repositorio de llama.cpp (no se proporciona URL directa en la información disponible)

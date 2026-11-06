@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos orientados a experimentacion e investigacion mas que a produccion.
+El modelo `eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407` es un ajuste fino (SFT) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un modelo de generacion de texto de arquitectura GPT-2 con 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos orientados a experimentacion e investigacion mas que a produccion.
 
 El modelo ha sido entrenado con la libreria TRL (version 0.23.0) mediante aprendizaje supervisado (SFT), y su nombre sugiere un experimento academico sobre tokenizacion y estructura de datos, probablemente vinculado a un estudio sobre tokenizadores realizado en la Universidad de Groningen (segun el enlace de Weights & Biases de la model card). El modelo base Goldfish es una familia de modelos multilingues pequenos entrenados sobre corpus de 100 MB por idioma.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace (27 descargas) |
-| goldfish-models/eng_latn_100mb (base) | ~100 M (por nombre) | no disponible | no disponible | HuggingFace |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente disponible |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace |
+| eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face (27 descargas) |
+| goldfish-models/eng_latn_100mb (base) | ~100 M (por nombre) | no disponible | no disponible | Hugging Face |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente disponible |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamano similar; no se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas.
 
@@ -84,7 +84,7 @@ La comparativa se limita a modelos de tamano similar; no se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/eng-latn-100mb-ppt-mp-struct-bcc-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Repositorio TRL: https://github.com/huggingface/trl
 - Run de Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/4l0ai0oa

@@ -48,7 +48,7 @@ El entrenamiento incluye fases de pre-entrenamiento y post-entrenamiento, con un
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparativas con otros modelos. Se recomienda consultar la documentación oficial de Qwen para obtener datos de evaluación.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas de rendimiento (MMLU, HumanEval, GSM8K, etc.) ni comparativas con otros modelos. Se recomienda consultar la documentación oficial de Qwen para obtener datos de evaluación.
 
 ## Requisitos de hardware
 
@@ -80,8 +80,8 @@ La comparativa se limita a la propia familia Qwen, ya que no se dispone de datos
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/taurusduan/Qwen3.8-27B-GGUF
-- Repositorio HuggingFace (versión uncensored): https://huggingface.co/taurusduan/Qwen3.8-27B-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/taurusduan/Qwen3.8-27B-GGUF
+- Repositorio Hugging Face (versión uncensored): https://huggingface.co/taurusduan/Qwen3.8-27B-Uncensored-GGUF
 - GitHub oficial de Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Documentación de Alibaba Cloud Model Studio: https://www.alibabacloud.com/help/en/model-studio/qwen3-8-27b
 - Guía de ejecución local (VRAM, cuantizaciones, template): https://locallyuncensored.com/blog/how-to-run-qwen-3-8-27b-locally.html

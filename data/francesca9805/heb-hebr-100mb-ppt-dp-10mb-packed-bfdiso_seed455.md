@@ -67,11 +67,11 @@ No hay datos de rendimiento publicados para este modelo ni para sus variantes, p
 
 | Modelo | Parametros | Base | Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,8 M | goldfish-models/heb_hebr_100mb | 10 MB, packed, seed 455 | no disponible | HuggingFace (0 descargas) |
-| francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | goldfish-models/heb_hebr_100mb | 10 MB, packed, seed 455 | no disponible | HuggingFace |
-| francesca9805/heb-hebr-100mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | goldfish-models/heb_hebr_100mb | 100 MB, packed, seed 455 | no disponible | HuggingFace |
-| fpadovani/heb-hebr-100mb-ppt-Dp-10mb_seed3407 | no disponible | goldfish-models/heb_hebr_100mb | 10 MB, seed 3407 | no disponible | HuggingFace |
-| goldfish-models/heb_hebr_100mb (base) | no disponible | - | 100 MB | no disponible en esta ficha | HuggingFace |
+| francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,8 M | goldfish-models/heb_hebr_100mb | 10 MB, packed, seed 455 | no disponible | Hugging Face (0 descargas) |
+| francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfd_seed455 | no disponible | goldfish-models/heb_hebr_100mb | 10 MB, packed, seed 455 | no disponible | Hugging Face |
+| francesca9805/heb-hebr-100mb-ppt-Dp-100mb-packed-bfd_seed455 | no disponible | goldfish-models/heb_hebr_100mb | 100 MB, packed, seed 455 | no disponible | Hugging Face |
+| fpadovani/heb-hebr-100mb-ppt-Dp-10mb_seed3407 | no disponible | goldfish-models/heb_hebr_100mb | 10 MB, seed 3407 | no disponible | Hugging Face |
+| goldfish-models/heb_hebr_100mb (base) | no disponible | - | 100 MB | no disponible en esta ficha | Hugging Face |
 
 No se dispone de benchmarks comparativos con alternativas de otros autores del mismo tamano en hebreo, por lo que no es posible establecer una comparacion de rendimiento.
 
@@ -90,7 +90,7 @@ No se dispone de benchmarks comparativos con alternativas de otros autores del m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/heb-hebr-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/heb_hebr_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/w8bl7ajo
 - Repositorio de TRL: https://github.com/huggingface/trl

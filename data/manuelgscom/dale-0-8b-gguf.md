@@ -78,10 +78,10 @@ Rendimiento medido por el autor: 1,72 s de mediana por petición en la CPU de un
 
 | Modelo | Parametros | Contexto | Rendimiento en dale bash test v2 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dale-0.8b | 752 M | no disponible | 79,4 % (con ajuste fino) | Apache-2.0 | GGUF Q4_K_M en HuggingFace |
-| Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| Qwen3.5-9B | ~9 B | no disponible | 62,8 % (sin ajuste fino) | no disponible en la informacion proporcionada | HuggingFace |
-| Gemma 4 E4B-it | no disponible | no disponible | 62,8 % (sin ajuste fino) | no disponible en la informacion proporcionada | HuggingFace |
+| dale-0.8b | 752 M | no disponible | 79,4 % (con ajuste fino) | Apache-2.0 | GGUF Q4_K_M en Hugging Face |
+| Qwen3.5-0.8B (modelo base) | ~0,8 B | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| Qwen3.5-9B | ~9 B | no disponible | 62,8 % (sin ajuste fino) | no disponible en la informacion proporcionada | Hugging Face |
+| Gemma 4 E4B-it | no disponible | no disponible | 62,8 % (sin ajuste fino) | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparación relevante es de eficiencia: un modelo de 752 M ajustado para una tarea estrecha supera en ese test a modelos de mayor tamaño usados en zero-shot, a costa de perder cualquier capacidad de propósito general.
 
@@ -101,7 +101,7 @@ La comparación relevante es de eficiencia: un modelo de 752 M ajustado para una
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/manuelgscom/dale-0.8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/manuelgscom/dale-0.8b-GGUF
 - Modelo base Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Codigo fuente del CLI `dale`: https://github.com/manuelgscom/dale
 - Web del autor: https://manuelgs.com

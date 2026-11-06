@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`HTBris/xbee-qwen2.5-0.5b-lora` es un repositorio publicado en HuggingFace Hub por el usuario HTBris cuyo nombre sugiere un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen2.5-0.5B. Se trata, por tanto, de un artefacto de ajuste fino parameter-efficient (PEFT) y no de un modelo completo: los pesos del modelo base no se redistribuyen en este repositorio, sino que el adaptador se aplica sobre ellos en tiempo de carga. La model card, sin embargo, es la plantilla automática de HuggingFace sin rellenar: todos los campos de desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación figuran como `[More Information Needed]`.
+`HTBris/xbee-qwen2.5-0.5b-lora` es un repositorio publicado en Hugging Face Hub por el usuario HTBris cuyo nombre sugiere un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Qwen2.5-0.5B. Se trata, por tanto, de un artefacto de ajuste fino parameter-efficient (PEFT) y no de un modelo completo: los pesos del modelo base no se redistribuyen en este repositorio, sino que el adaptador se aplica sobre ellos en tiempo de carga. La model card, sin embargo, es la plantilla automática de Hugging Face sin rellenar: todos los campos de desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento y evaluación figuran como `[More Information Needed]`.
 
-El interés practico del repositorio es limitado en el momento de redactar esta ficha. El tamano del repo es de 0,0 GB y no se declara ninguna tarea (`pipeline: no disponible`), licencia ni idioma, lo que impide verificar que los pesos del adaptador esten realmente subidos o que el ajuste se haya completado. Las etiquetas declaradas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`) indican compatibilidad con la libreria de HuggingFace y con Endpoints, pero no aportan informacion sobre el objetivo del fine-tuning.
+El interés practico del repositorio es limitado en el momento de redactar esta ficha. El tamano del repo es de 0,0 GB y no se declara ninguna tarea (`pipeline: no disponible`), licencia ni idioma, lo que impide verificar que los pesos del adaptador esten realmente subidos o que el ajuste se haya completado. Las etiquetas declaradas (`transformers`, `safetensors`, `endpoints_compatible`, `region:us`) indican compatibilidad con la libreria de Hugging Face y con Endpoints, pero no aportan informacion sobre el objetivo del fine-tuning.
 
 Por el perfil de parametros (en torno a 0,5 mil millones en el modelo base) y por el formato de publicacion, el caso de uso natural seria la inferencia local de bajo coste: clasificacion, extraccion de campos, enrutado de consultas o asistentes muy acotados que quepan en CPU o en GPUs de gama baja. No obstante, cualquier evaluacion seria exige primero contactar con el autor o inspeccionar los ficheros del repositorio, ya que la informacion publica disponible es practicamente nula.
 
@@ -23,7 +23,7 @@ Por el perfil de parametros (en torno a 0,5 mil millones en el modelo base) y po
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura del adaptador ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica autogenerada por HuggingFace y no incluye seccion de datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16) ni duracion del ajuste. Tampoco se documenta el rango del LoRA, los modulos objetivo (`q_proj`, `v_proj`, `all-linear`, etc.), el valor de alpha ni si se aplicaron tecnicas adicionales como QLoRA o DPO/RLHF sobre el adaptador.
+No hay informacion publicada sobre la arquitectura del adaptador ni sobre el procedimiento de entrenamiento. La model card es la plantilla generica autogenerada por Hugging Face y no incluye seccion de datos de entrenamiento, hiperparametros, regimen de precision (fp32, bf16, fp16) ni duracion del ajuste. Tampoco se documenta el rango del LoRA, los modulos objetivo (`q_proj`, `v_proj`, `all-linear`, etc.), el valor de alpha ni si se aplicaron tecnicas adicionales como QLoRA o DPO/RLHF sobre el adaptador.
 
 Por inferencia a partir del identificador, cabe esperar un adaptador PEFT de rango bajo disenado para cargarse junto al checkpoint `Qwen/Qwen2.5-0.5B` mediante `transformers` + `peft`. El modelo base, si la correspondencia es correcta, es un transformer decoder-only con RoPE, normalizacion RMSNorm, activacion SwiGLU y atencion con query/key-value heads agrupadas (GQA); se distribuye con licencia Apache 2.0. Ninguno de estos detalles esta verificado para este repositorio concreto.
 
@@ -34,7 +34,7 @@ Un detalle tecnico a tener en cuenta: la etiqueta `arxiv:1910.09700` del reposit
 - Generacion de texto: presumiblemente heredadas del modelo base de 0,5 B, pero no verificables sin acceso a los pesos del adaptador.
 - Razonamiento y matematicas: capacidad limitada por el tamano de la base; no hay evaluaciones publicadas.
 - Codigo: no disponible; no se documenta ajuste especifico en dominios de programacion.
-- Tool calling / function calling: no disponible. La etiqueta `endpoints_compatible` se refiere a compatibilidad de despliegue con la infraestructura de HuggingFace, no a soporte de function calling.
+- Tool calling / function calling: no disponible. La etiqueta `endpoints_compatible` se refiere a compatibilidad de despliegue con la infraestructura de Hugging Face, no a soporte de function calling.
 - Agentes y razonamiento multi-paso: no disponible; no es una capacidad esperable de forma fiable en un modelo de ~0,5 B sin entrenamiento especifico.
 - Capacidades multilingues: no disponible; la model card no declara idiomas.
 - Capacidades especiales (modo thinking, vision, audio): no disponible; ninguna declarada.
@@ -74,10 +74,10 @@ Los datos de las alternativas son de referencia general y no se han verificado e
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | HTBris/xbee-qwen2.5-0.5b-lora | adaptador sobre base de ~0,49 B (presumible) | no disponible | no disponible | repo de 0,0 GB, sin model card rellenada | requiere el modelo base para funcionar |
-| Qwen2.5-0.5B (base presumible) | ~0,49 B | 32.768 tokens | Apache 2.0 | publico en HuggingFace | checkpoint completo, listo para usar |
-| Qwen2.5-1.5B | ~1,5 B | 32.768 tokens | Apache 2.0 | publico en HuggingFace | mayor calidad en razonamiento y codigo, sigue cabiendo en GPU consumer |
-| SmolLM2-360M | ~0,36 B | 8.192 tokens (segun su model card) | Apache 2.0 | publico en HuggingFace | alternativa de tamano similar orientada a dispositivos |
-| Llama-3.2-1B | ~1,24 B | hasta 128.000 tokens (segun su model card) | licencia comunitaria Llama 3.2 | publico en HuggingFace | contexto mucho mayor, con restricciones de licencia |
+| Qwen2.5-0.5B (base presumible) | ~0,49 B | 32.768 tokens | Apache 2.0 | publico en Hugging Face | checkpoint completo, listo para usar |
+| Qwen2.5-1.5B | ~1,5 B | 32.768 tokens | Apache 2.0 | publico en Hugging Face | mayor calidad en razonamiento y codigo, sigue cabiendo en GPU consumer |
+| SmolLM2-360M | ~0,36 B | 8.192 tokens (segun su model card) | Apache 2.0 | publico en Hugging Face | alternativa de tamano similar orientada a dispositivos |
+| Llama-3.2-1B | ~1,24 B | hasta 128.000 tokens (segun su model card) | licencia comunitaria Llama 3.2 | publico en Hugging Face | contexto mucho mayor, con restricciones de licencia |
 
 ## Limitaciones y advertencias
 
@@ -94,7 +94,7 @@ Los datos de las alternativas son de referencia general y no se han verificado e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HTBris/xbee-qwen2.5-0.5b-lora
+- Repositorio en Hugging Face: https://huggingface.co/HTBris/xbee-qwen2.5-0.5b-lora
 - Referencia citada en la etiqueta del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://ml2co2.github.io/impact
 - Modelo base presumible, para descargar los pesos sobre los que se aplicaria el adaptador: https://huggingface.co/Qwen/Qwen2.5-0.5B

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Qwen3-4B-xh0921-combo es un checkpoint publicado en HuggingFace por el usuario yang31210999 bajo el identificador `yang31210999/Qwen3-4B-xh0921-combo`. Por el nombre y las etiquetas del repositorio (`qwen3`, `8-bit`, `safetensors`) se trata de un derivado de la familia Qwen3, previsiblemente un ajuste fino, una fusión de pesos o una combinación de adaptadores sobre la variante de 4.000 millones de parámetros. El sufijo "combo" y la fecha del identificador interno (`xh0921`) apuntan a una mezcla de checkpoints, pero el repositorio no incluye model card ni documentación que lo confirme.
+Qwen3-4B-xh0921-combo es un checkpoint publicado en Hugging Face por el usuario yang31210999 bajo el identificador `yang31210999/Qwen3-4B-xh0921-combo`. Por el nombre y las etiquetas del repositorio (`qwen3`, `8-bit`, `safetensors`) se trata de un derivado de la familia Qwen3, previsiblemente un ajuste fino, una fusión de pesos o una combinación de adaptadores sobre la variante de 4.000 millones de parámetros. El sufijo "combo" y la fecha del identificador interno (`xh0921`) apuntan a una mezcla de checkpoints, pero el repositorio no incluye model card ni documentación que lo confirme.
 
 El dato más relevante es la discrepancia entre el nombre y los metadatos: el nombre anuncia "4B", mientras que el recuento real de parámetros en los ficheros safetensors es de 2.288.430.780 (aproximadamente 2,29 mil millones). Esa cifra es compatible con un modelo podado, con una fusión parcial de capas o con un checkpoint incompleto; el repositorio no aclara el motivo. El tamaño total del repositorio es de 3,1 GB.
 
@@ -56,7 +56,7 @@ Ninguno de estos escenarios está validado para este checkpoint. Se plantean com
 - Generación de texto asistida en documentos internos: resúmenes y reescritura de textos cortos en un servicio autoalojado, siempre que una evaluación previa confirme calidad suficiente y ausencia de fugas de datos.
 - Clasificación y etiquetado de textos en pipelines de datos: uso del modelo para etiquetar o filtrar corpus antes de entrenar otros modelos, aprovechando su bajo coste de inferencia por token.
 - Chatbot de demostración en entornos controlados: despliegue interno para pruebas de interfaz conversacional, con la advertencia de que se desconoce su comportamiento multilingüe y su ventana de contexto real.
-- Investigación sobre licencias y trazabilidad de derivados: el repositorio carece de licencia declarada y de model card, por lo que resulta un caso útil para estudiar cómo la ausencia de metadatos dificulta la reutilización legal y técnica de checkpoints en HuggingFace.
+- Investigación sobre licencias y trazabilidad de derivados: el repositorio carece de licencia declarada y de model card, por lo que resulta un caso útil para estudiar cómo la ausencia de metadatos dificulta la reutilización legal y técnica de checkpoints en Hugging Face.
 - Extracción de información estructurada de textos: conversión de párrafos en JSON o tablas en un flujo por lotes, condicionado a que el modelo soporte instrucciones con formato estricto, algo que no está documentado.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ Las cifras siguientes son estimaciones derivadas del recuento de parámetros (2,
 - Cuantización a 4 bits (no confirmada en el repositorio): aproximadamente 1,2 a 1,5 GB de pesos, con 2 a 3 GB de VRAM.
 - GPU de consumo: cabe con holgura en tarjetas de 8 GB o más (RTX 3060 Ti, RTX 3070, RTX 4060, RTX 4070). En tarjetas de 6 GB puede ser necesario limitar el contexto o usar 4 bits. Ejecución viable en CPU con memoria RAM suficiente.
 - GPU profesionales: A100, H100, L40S y similares pueden alojar el modelo con múltiples réplicas o contextos muy largos, aunque están sobredimensionadas para un modelo de este tamaño.
-- Opciones de despliegue: HuggingFace Transformers (formato safetensors nativo), vLLM y TGI si la arquitectura es compatible, llama.cpp y Ollama únicamente si se generan versiones GGUF, que no están publicadas. En el repositorio no se declara ningún runtime recomendado.
+- Opciones de despliegue: Hugging Face Transformers (formato safetensors nativo), vLLM y TGI si la arquitectura es compatible, llama.cpp y Ollama únicamente si se generan versiones GGUF, que no están publicadas. En el repositorio no se declara ningún runtime recomendado.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -81,10 +81,10 @@ Los datos de la columna de este checkout provienen del repositorio; los de las a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-4B-xh0921-combo (este checkpoint) | 2,29 mil millones (metadatos safetensors) | No disponible | No disponible | HuggingFace, safetensors, 11 descargas |
-| Qwen3-4B (base) | 4,0 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| Llama 3.2 3B Instruct | 3,2 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace, safetensors y GGUF |
-| Gemma 3 4B | 4,0 mil millones | 128.000 tokens | Términos de uso de Gemma | HuggingFace, safetensors y GGUF |
+| Qwen3-4B-xh0921-combo (este checkpoint) | 2,29 mil millones (metadatos safetensors) | No disponible | No disponible | Hugging Face, safetensors, 11 descargas |
+| Qwen3-4B (base) | 4,0 mil millones | 32.768 tokens nativos, 131.072 con YaRN | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| Llama 3.2 3B Instruct | 3,2 mil millones | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face, safetensors y GGUF |
+| Gemma 3 4B | 4,0 mil millones | 128.000 tokens | Términos de uso de Gemma | Hugging Face, safetensors y GGUF |
 
 Frente a estas alternativas, el checkpoint analizado no aporta datos verificables de rendimiento, licencia, idiomas ni contexto, y su número de parámetros es inferior al del modelo base que anuncia su nombre. Sin evaluaciones publicadas no es posible establecer una comparación de calidad.
 
@@ -104,7 +104,7 @@ Frente a estas alternativas, el checkpoint analizado no aporta datos verificable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yang31210999/Qwen3-4B-xh0921-combo
+- Hugging Face: https://huggingface.co/yang31210999/Qwen3-4B-xh0921-combo
 - Paper, blog, repositorio o demo del modelo: no disponible.
 - Modelo base de referencia (Qwen3): no disponible en la información proporcionada; la búsqueda web no devolvió enlaces relacionados.
 - Enlaces relevantes encontrados en la búsqueda web: ninguno. Todos los resultados devueltos eran ajenos al modelo (foros de soporte de Canva, foro de tinhte.vn y noticias sobre la cotización de Adobe).

@@ -99,7 +99,7 @@ Entre los modelos de 35B o menos listados en la model card, Fx-Work-1028 obtiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/endless-frontier/Fx-Work-1028
+- Modelo en Hugging Face: https://huggingface.co/endless-frontier/Fx-Work-1028
 - Modelo original Fx-Work: https://huggingface.co/endless-frontier/Fx-Work
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE

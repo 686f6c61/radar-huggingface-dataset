@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sajalsheraz75/medical-llama-3-8b-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace, diseñado para ajustar el modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, una versión cuantizada a 4 bits de Llama-3-8B-Instruct de Meta. El adaptador se creó con las librerías PEFT, TRL y Unsloth, lo que sugiere un entrenamiento por supervisión (SFT) sobre el modelo base, probablemente orientado a dominios médicos según el nombre del repositorio.
+`sajalsheraz75/medical-llama-3-8b-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face, diseñado para ajustar el modelo base `unsloth/llama-3-8b-Instruct-bnb-4bit`, una versión cuantizada a 4 bits de Llama-3-8B-Instruct de Meta. El adaptador se creó con las librerías PEFT, TRL y Unsloth, lo que sugiere un entrenamiento por supervisión (SFT) sobre el modelo base, probablemente orientado a dominios médicos según el nombre del repositorio.
 
 El repositorio tiene un tamaño de 0.2 GB, lo que confirma que solo contiene los pesos del adaptador, no el modelo completo. La model card está prácticamente vacía: no se especifican datos de entrenamiento, hiperparámetros, licencia ni idiomas. Tampoco se han publicado benchmarks ni demos. A pesar de la falta de documentación, el adaptador puede cargarse sobre el modelo base para realizar generación de texto en tareas de conversación y respuesta a preguntas, presumiblemente con sesgo médico.
 
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Base | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sajalsheraz75/medical-llama-3-8b-adapter | Llama-3-8B-Instruct | Adaptador LoRA | 8B (base) | no disponible | no disponible | HuggingFace |
-| ruslanmv/Medical-Llama3-8B | Llama-3-8B | Fine-tuning completo | 8B | 8K | no disponible | HuggingFace |
-| ContactDoctor/Bio-Medical-Llama-3-8B | Llama-3-8B | Fine-tuning completo | 8B | 8K | no disponible | HuggingFace |
+| sajalsheraz75/medical-llama-3-8b-adapter | Llama-3-8B-Instruct | Adaptador LoRA | 8B (base) | no disponible | no disponible | Hugging Face |
+| ruslanmv/Medical-Llama3-8B | Llama-3-8B | Fine-tuning completo | 8B | 8K | no disponible | Hugging Face |
+| ContactDoctor/Bio-Medical-Llama-3-8B | Llama-3-8B | Fine-tuning completo | 8B | 8K | no disponible | Hugging Face |
 
 La comparativa se basa en información pública de los repositorios. El modelo de sajalsheraz75 se diferencia por ser un adaptador LoRA, lo que facilita su distribución y carga, pero carece de documentación. Los otros dos modelos son fine-tunings completos con datasets médicos conocidos (ai-medical-chatbot), aunque tampoco publican licencias claras.
 
@@ -80,7 +80,7 @@ La comparativa se basa en información pública de los repositorios. El modelo d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sajalsheraz75/medical-llama-3-8b-adapter
+- Repositorio Hugging Face: https://huggingface.co/sajalsheraz75/medical-llama-3-8b-adapter
 - Modelo base (unsloth/llama-3-8b-Instruct-bnb-4bit): https://huggingface.co/unsloth/llama-3-8b-Instruct-bnb-4bit
 - Modelos similares (referencia): https://huggingface.co/ruslanmv/Medical-Llama3-8B
 - Modelos similares (referencia): https://huggingface.co/ContactDoctor/Bio-Medical-Llama-3-8B

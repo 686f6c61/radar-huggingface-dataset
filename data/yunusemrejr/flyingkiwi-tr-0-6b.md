@@ -6,7 +6,7 @@ Flyingkiwi-TR-0.6B es un asistente conversacional en turco e inglés de tamaño 
 
 Su rasgo más distintivo es que está diseñado para ejecutarse íntegramente en el navegador: el proyecto Flyingkiwi incluye un motor propio escrito en C compilado a WebAssembly, de modo que los mensajes nunca salen del dispositivo del usuario. Para ello se distribuye una versión cuantizada a 8 bits de los pesos (553 MB). Es relevante como ejemplo práctico de LLM on-device de menos de mil millones de parámetros, con un enfoque específico en idiomas poco atendidos por los modelos pequeños, como el turco.
 
-Arquitecturalmente es un transformer decoder denso (no MoE) de 28 capas, con atención completa en todas ellas y una ventana de contexto de 4.096 tokens en la aplicación de navegador. El checkpoint publicado en HuggingFace está en BF16 (520,6 millones de parámetros reales según safetensors) bajo licencia Apache 2.0.
+Arquitecturalmente es un transformer decoder denso (no MoE) de 28 capas, con atención completa en todas ellas y una ventana de contexto de 4.096 tokens en la aplicación de navegador. El checkpoint publicado en Hugging Face está en BF16 (520,6 millones de parámetros reales según safetensors) bajo licencia Apache 2.0.
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ Advertencias del propio autor: es una prueba pequeña graduada por IA, no un est
 - Versión navegador 8 bits: 553 MB de descarga de pesos, diseñada para CPU vía WebAssembly, sin requisitos de GPU.
 - Entrenamiento del autor: una NVIDIA RTX PRO 6000 Blackwell de 96 GB (Google Colab Pro+), tanto para generación del profesor como para el fine-tuning; para reproducir el entrenamiento completo se recomienda una GPU de esa clase, aunque fine-tunings más modestos cabrían en tarjetas de 24 GB como la RTX 4090.
 - Consumer GPUs: sobrado para inferencia; cualquier RTX 3060 o superior ejecuta el checkpoint BF16 sin cuantizar.
-- Despliegue: librería Transformers de HuggingFace (pipeline text-generation, endpoints compatible); el proyecto original usa un motor C → WebAssembly propio. No se documenta soporte específico de vLLM, llama.cpp, Ollama ni TGI (aunque al ser arquitectura Qwen3, la compatibilidad con estas herramientas es plausible, no verificada).
+- Despliegue: librería Transformers de Hugging Face (pipeline text-generation, endpoints compatible); el proyecto original usa un motor C → WebAssembly propio. No se documenta soporte específico de vLLM, llama.cpp, Ollama ni TGI (aunque al ser arquitectura Qwen3, la compatibilidad con estas herramientas es plausible, no verificada).
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ No se han identificado otros modelos pequeños especializados en turco con ficha
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yunusemrejr/Flyingkiwi-TR-0.6B
+- Modelo en Hugging Face: https://huggingface.co/yunusemrejr/Flyingkiwi-TR-0.6B
 - Aplicación Flyingkiwi (demo en navegador): https://flyingkiwi.yunusemrevurgun.com/
 - Informe técnico del proyecto: https://flyingkiwi.yunusemrevurgun.com/technical/report/
 - Web del autor: https://yunusemrevurgun.com/

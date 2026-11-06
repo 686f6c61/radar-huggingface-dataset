@@ -23,7 +23,7 @@ Su relevancia practica es acotada y muy concreta: no aporta innovacion tecnica p
 | Tamano del repositorio | 2 fragmentos de pesos, mas tokenizer (`tokenizer.json`, `vocab.json`, `merges.txt`), plantilla de chat (`chat_template.jinja`) y preprocesadores de imagen y video |
 | Modelo base | `huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated` (a su vez derivado de Qwen3-VL-4B-Instruct) |
 | Acceso | Sin restricciones (ungated) |
-| Fecha de creacion declarada | 26 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion declarada | 26 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -92,12 +92,12 @@ Las diferencias entre este espejo y el repositorio de origen son exclusivamente 
 - No hay pesos GGUF publicados en este repositorio, por lo que el despliegue con llama.cpp u Ollama requiere convertir los safetensors, con el riesgo de error que ello implica.
 - Integridad de los pesos: la model card afirma que los ficheros son identicos byte a byte al origen y propone verificar el sha256 de cada fichero contra el oid de LFS del repositorio original. Esa verificacion no se ha realizado en esta ficha y es responsabilidad del usuario antes de usar los pesos en produccion.
 - Licencia: Apache 2.0 permite uso comercial, pero el publicador del espejo declara no estar afiliado ni respaldado por los autores upstream. Conviene revisar el fichero `LICENSE`/`NOTICE` del repositorio y el `UPSTREAM-README.md` antes de un despliegue comercial.
-- Metadatos dudosos: la fecha de creacion declarada es el 26 de septiembre de 2026, posterior a la actualizacion del mismo dia, lo que sugiere una anomalia o una fecha futura en los metadatos de HuggingFace. Conviene no basar decisiones de versionado en esas marcas de tiempo.
+- Metadatos dudosos: la fecha de creacion declarada es el 26 de septiembre de 2026, posterior a la actualizacion del mismo dia, lo que sugiere una anomalia o una fecha futura en los metadatos de Hugging Face. Conviene no basar decisiones de versionado en esas marcas de tiempo.
 - La busqueda web asociada no ha devuelto documentacion tecnica relevante (unicamente paginas genericas de comercio electronico), por lo que no hay fuentes externas que confirmen las caracteristicas del modelo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pinecoresystems/Huihui-Qwen3-VL-4B-Instruct-abliterated
+- Repositorio en Hugging Face: https://huggingface.co/pinecoresystems/Huihui-Qwen3-VL-4B-Instruct-abliterated
 - Modelo de origen (upstream): https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated
 - Fichero con la model card original, incluido en el repositorio: `UPSTREAM-README.md`
 - Papers, blogs, repositorios y demos adicionales: no disponibles en la informacion proporcionada.

@@ -109,7 +109,7 @@ La diferencia clave de este bundle no es el rendimiento del modelo, sino su empa
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/aether-models/smollm3-3b
+- Pagina de Hugging Face del modelo: https://huggingface.co/aether-models/smollm3-3b
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Revision del modelo base usada en la conversion: `a07cc9a04f16550a088caea529712d1d335b0ac1`
 - Texto canonico de la licencia Apache-2.0: https://www.apache.org/licenses/LICENSE-2.0

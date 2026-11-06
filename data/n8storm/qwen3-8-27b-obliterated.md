@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-OBLITERATED es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen/Qwen3.8-27B, publicada por el usuario N8STORM en HuggingFace. Se trata de una modificacion de pesos que elimina el comportamiento de rechazo y las respuestas de tipo "safety lecture" mediante tecnicas de proyeccion de direcciones de rechazo en el espacio de pesos (abliteration), sin reentrenar el modelo desde cero. El resultado es un modelo de 27.781 millones de parametros (aproximadamente 27,8B) que conserva gran parte de las capacidades del modelo base pero responde sin filtros de seguridad.
+Qwen3.8-27B-OBLITERATED es una variante "abliterated" (sin mecanismos de rechazo) del modelo Qwen/Qwen3.8-27B, publicada por el usuario N8STORM en Hugging Face. Se trata de una modificacion de pesos que elimina el comportamiento de rechazo y las respuestas de tipo "safety lecture" mediante tecnicas de proyeccion de direcciones de rechazo en el espacio de pesos (abliteration), sin reentrenar el modelo desde cero. El resultado es un modelo de 27.781 millones de parametros (aproximadamente 27,8B) que conserva gran parte de las capacidades del modelo base pero responde sin filtros de seguridad.
 
 La relevancia de esta publicacion es doble. Por un lado, sirve como material de investigacion en seguridad de IA (red-teaming, evaluacion de robustez de alineamiento, estudios de abliteration). Por otro, ilustra el estado actual de las tecnicas de "uncensoring" aplicadas a modelos de gran tamano: el autor documenta tres iteraciones (V1, V2, V3) con distintos compromisos entre eliminacion de rechazos y degradacion de capacidad medida en MMLU. La version V3 reporta una perdida de 2,1 puntos porcentuales en MMLU respecto al modelo base, con eliminacion tanto de rechazos duros como de evasivas blandas.
 
@@ -103,7 +103,7 @@ La comparativa con alternativas de la misma categoria (otros modelos abliterated
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/N8STORM/Qwen3.8-27B-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/N8STORM/Qwen3.8-27B-OBLITERATED
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Paper de referencia sobre abliteration (no enlazado en la model card; no disponible en la informacion proporcionada)
 - Repositorio del metodo LEACE (no enlazado en la model card; no disponible en la informacion proporcionada)

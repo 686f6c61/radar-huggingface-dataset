@@ -101,7 +101,7 @@ No se dispone de comparaciones con otros modelos multilingües de sentimiento fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kenpache/finbert-multilingual-v2-large
+- Modelo en Hugging Face: https://huggingface.co/Kenpache/finbert-multilingual-v2-large
 - Dataset de evaluacion: https://huggingface.co/datasets/Kenpache/financial-sentiment-eval-7lang
 - Modelo hermano (version pequena): https://huggingface.co/Kenpache/finbert-multilingual-v2
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large

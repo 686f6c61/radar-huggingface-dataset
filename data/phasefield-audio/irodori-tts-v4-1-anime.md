@@ -74,6 +74,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phasefield-audio/Irodori-TTS-v4.1-Anime
+- Hugging Face: https://huggingface.co/phasefield-audio/Irodori-TTS-v4.1-Anime
 - Repositorio original de Irodori-TTS: https://github.com/Aratako/Irodori-TTS
 - Repositorio espejo de Irodori-TTS: https://github.com/ootsuka-repos/Irodori-TTS

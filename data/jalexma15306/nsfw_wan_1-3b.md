@@ -71,8 +71,8 @@ La model card no incluye métricas cuantitativas de calidad de vídeo (FVD, CLIP
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jalexma15306/NSFW_Wan_1.3b | 1,3B | no disponible | sin benchmarks publicados | CreativeML Open RAIL-M | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.1-T2V-1.3B (base) | 1,3B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| jalexma15306/NSFW_Wan_1.3b | 1,3B | no disponible | sin benchmarks publicados | CreativeML Open RAIL-M | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.1-T2V-1.3B (base) | 1,3B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Otros ajustes NSFW de T2V de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificables sobre alternativas comparables dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -92,7 +92,7 @@ No se dispone de datos verificables sobre alternativas comparables dentro de la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jalexma15306/NSFW_Wan_1.3b
+- Modelo en Hugging Face: https://huggingface.co/jalexma15306/NSFW_Wan_1.3b
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
 - Guía de indicaciones incluida en el repositorio: `prompting-guide.json` (archivo dentro del propio repositorio)
 - Papers, blogs, repositorios de código y demos: no disponibles en la información proporcionada.

@@ -104,5 +104,5 @@ No se dispone de información sobre modelos directamente comparables en la docum
 
 ## Enlaces
 
-- [HuggingFace: flowxai/bias](https://huggingface.co/flowxai/bias)
+- [Hugging Face: flowxai/bias](https://huggingface.co/flowxai/bias)
 - [Repositorio de border (flowx-ai/border)](https://github.com/flowx-ai/border)

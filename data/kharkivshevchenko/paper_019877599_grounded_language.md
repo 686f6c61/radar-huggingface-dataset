@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no es comparab
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kharkivshevchenko/paper_019877599_grounded_language
+- Repositorio Hugging Face: https://huggingface.co/kharkivshevchenko/paper_019877599_grounded_language
 - Búsqueda web relacionada (no enlazada al repositorio): 
   - https://arxiv.org/html/2312.09532v1 (Grounding for Artificial Intelligence)
   - https://arxiv.org/abs/2311.15826 (GeoChat: Grounded Large Vision-Language Model)

@@ -78,8 +78,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/Mr.Chatterbox-2.7B-Chat-FP8 | 2.705.820.160 | no disponible | safetensors, FP8 E4M3 dinamico | other | HuggingFace, 0 descargas |
-| tventurella/Mr.Chatterbox-2.7B-Chat (base) | 2.705.820.160 | no disponible | safetensors, precision original (10,8 GB) | other | HuggingFace |
+| liodon-ai/Mr.Chatterbox-2.7B-Chat-FP8 | 2.705.820.160 | no disponible | safetensors, FP8 E4M3 dinamico | other | Hugging Face, 0 descargas |
+| tventurella/Mr.Chatterbox-2.7B-Chat (base) | 2.705.820.160 | no disponible | safetensors, precision original (10,8 GB) | other | Hugging Face |
 | Otras alternativas de ~3B | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones verificadas de modelos alternativos de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa mas alla del modelo base.
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento ni de especificaciones verificadas de mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/Mr.Chatterbox-2.7B-Chat-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/Mr.Chatterbox-2.7B-Chat-FP8
 - Modelo base: https://huggingface.co/tventurella/Mr.Chatterbox-2.7B-Chat
 - Perfil del cuantizador (Liodon AI): https://huggingface.co/liodon-ai
 - llm-compressor (herramienta de cuantizacion, proyecto vLLM): https://github.com/vllm-project/llm-compressor

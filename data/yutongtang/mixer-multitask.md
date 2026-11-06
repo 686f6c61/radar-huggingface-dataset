@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YutongTang/mixer-multitask es un repositorio experimental publicado en HuggingFace que implementa una arquitectura de tipo Mixer orientada a tareas multiples (multitask). No es un modelo entrenado ni una ficha de modelo convencional, sino un banco de pruebas de arquitectura a escala nano cuyo objetivo declarado por el autor es permitir inspeccionar cambios arquitectonicos antes de lanzar un entrenamiento completo.
+YutongTang/mixer-multitask es un repositorio experimental publicado en Hugging Face que implementa una arquitectura de tipo Mixer orientada a tareas multiples (multitask). No es un modelo entrenado ni una ficha de modelo convencional, sino un banco de pruebas de arquitectura a escala nano cuyo objetivo declarado por el autor es permitir inspeccionar cambios arquitectonicos antes de lanzar un entrenamiento completo.
 
 El checkpoint incluido (model.safetensors) es una inicializacion valida para pruebas de humo (smoke tests), no un modelo con pesos entrenados. Contiene unicamente 49.600 parametros totales, lo que confirma su caracter de andamiaje de investigacion y no de artefacto listo para produccion. El repositorio no reclama ninguna puntuacion de benchmark.
 
@@ -74,4 +74,4 @@ No disponible. Se trata de un codebase experimental personalizado a escala nano 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/YutongTang/mixer-multitask
+- Repositorio en Hugging Face: https://huggingface.co/YutongTang/mixer-multitask

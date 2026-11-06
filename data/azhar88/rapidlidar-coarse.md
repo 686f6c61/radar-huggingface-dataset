@@ -4,7 +4,7 @@
 
 RapidLiDAR es un modelo de completado de escenas LiDAR en una sola pasada, desarrollado por Azhar Hussian, Martin Vossiek y Vasileios Belagiannis en el contexto del ECCV 2026. Dada una nube de puntos parcial `X`, el modelo predice la escena completa `P` de forma directa, sin necesidad de pasos iterativos ni post-procesado. Su principal innovación es el módulo de inicialización adaptativa, que aprende a predecir desplazamientos espacialmente variables para expandir los puntos observados y obtener una hipótesis de escena inicial, en lugar de usar un ruido fijo como en métodos anteriores. El modelo se entrena sobre el conjunto de datos SemanticKITTI y está diseñado para aplicaciones de conducción autónoma y robótica.
 
-La arquitectura combina una extracción de características multi-escala con voxelización y un mapa BEV (Bird's Eye View) con atención, seguida de un módulo de reconstrucción multi-escala basado en atención deformable. El repositorio en HuggingFace aloja la versión *coarse* con un tamaño de voxel de 0.3 metros, que produce una reconstrucción inicial de la escena. Con 11,7 millones de parámetros, es un modelo compacto y ligero, adecuado para integración en pipelines de tiempo real si se dispone de la infraestructura de compilación necesaria.
+La arquitectura combina una extracción de características multi-escala con voxelización y un mapa BEV (Bird's Eye View) con atención, seguida de un módulo de reconstrucción multi-escala basado en atención deformable. El repositorio en Hugging Face aloja la versión *coarse* con un tamaño de voxel de 0.3 metros, que produce una reconstrucción inicial de la escena. Con 11,7 millones de parámetros, es un modelo compacto y ligero, adecuado para integración en pipelines de tiempo real si se dispone de la infraestructura de compilación necesaria.
 
 ## Especificaciones técnicas
 
@@ -74,6 +74,6 @@ No disponible. No se ha encontrado información sobre modelos comparables de com
 
 ## Enlaces
 
-- HuggingFace: [Azhar88/RapidLiDAR-coarse](https://huggingface.co/Azhar88/RapidLiDAR-coarse)
+- Hugging Face: [Azhar88/RapidLiDAR-coarse](https://huggingface.co/Azhar88/RapidLiDAR-coarse)
 - Repositorio GitHub: [AzharSindhi/RapidLiDAR](https://github.com/AzharSindhi/RapidLiDAR)
 - Paper (arXiv): [Towards Real-Time and Adaptable LiDAR Scene Completion](https://arxiv.org/html/2608.16490v1)

@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| trellis-text-coreml (este bundle) | no disponible | no disponible | Sin benchmarks publicados; 112,5 s por generacion en Apple M4 24 GB (prompt `a mouse`, semilla 42) | MIT (TRELLIS y CLIP) | HuggingFace, solo en formato Core ML, requiere TouchDesigner + AML |
-| microsoft/TRELLIS-text-large (origen) | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | HuggingFace, pesos originales para pipeline CUDA |
-| JeffreyXiang/TRELLIS-image-large (origen de decodificadores) | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | HuggingFace; modo imagen a 3D |
+| trellis-text-coreml (este bundle) | no disponible | no disponible | Sin benchmarks publicados; 112,5 s por generacion en Apple M4 24 GB (prompt `a mouse`, semilla 42) | MIT (TRELLIS y CLIP) | Hugging Face, solo en formato Core ML, requiere TouchDesigner + AML |
+| microsoft/TRELLIS-text-large (origen) | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | Hugging Face, pesos originales para pipeline CUDA |
+| JeffreyXiang/TRELLIS-image-large (origen de decodificadores) | no disponible | no disponible | no disponible en la informacion proporcionada | MIT | Hugging Face; modo imagen a 3D |
 | TripoSR / SF3D (descargas alternativas de AML) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | Descargas solo de imagen; no aportan los modelos de este bundle |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mickeyvanolst/trellis-text-coreml
+- Hugging Face: https://huggingface.co/mickeyvanolst/trellis-text-coreml
 - Modelo base (flujo de texto): https://huggingface.co/microsoft/TRELLIS-text-large
 - Modelo base (decodificadores de forma, malla y apariencia): https://huggingface.co/JeffreyXiang/TRELLIS-image-large
 - Modelo base (codificador y tokenizador de texto CLIP): https://huggingface.co/openai/clip-vit-large-patch14

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l31_remove30_swapgapiter_b010_r04` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace. Se trata de un derivado de `meta-llama/Llama-3.1-8B-Instruct` al que se le ha aplicado una compresión SVD-LLM que elimina el 30,01% de los parámetros (fracción de parámetros resultante declarada: 0,6999), seguida de un proceso de reparación mediante intercambio iterativo de parámetros neutro, seleccionado por la regla `gap_iter`.
+`svd-safety-l31_remove30_swapgapiter_b010_r04` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face. Se trata de un derivado de `meta-llama/Llama-3.1-8B-Instruct` al que se le ha aplicado una compresión SVD-LLM que elimina el 30,01% de los parámetros (fracción de parámetros resultante declarada: 0,6999), seguida de un proceso de reparación mediante intercambio iterativo de parámetros neutro, seleccionado por la regla `gap_iter`.
 
 El modelo no es un asistente de propósito general. Forma parte de un grid experimental que estudia cómo la compresión SVD degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. En concreto, este checkpoint corresponde al cuarto de diez rondas iterativas previstas, con un presupuesto de restauración de 1,000% de los parámetros densos, 4.625 componentes restaurados y 4.625 componentes sustituidos, sobre una semilla fija (42). El checkpoint es, por tanto, una ronda intermedia de una ejecución más larga.
 
@@ -17,7 +17,7 @@ Su relevancia es metodológica: cuantifica el compromiso entre seguridad y utili
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible en la información proporcionada. El modelo base `meta-llama/Llama-3.1-8B-Instruct` declara 128.000 tokens, pero este derivado no documenta cambios ni verificación de esa ventana |
 | Tipos de cuantizacion | No disponible. El repositorio solo contiene safetensors sin cuantizar; no se publican variantes GGUF, AWQ, GPTQ ni bitsandbytes |
-| Idiomas soportados | No disponible (no se declara lista de idiomas en la model card ni en los metadatos de HuggingFace) |
+| Idiomas soportados | No disponible (no se declara lista de idiomas en la model card ni en los metadatos de Hugging Face) |
 | Licencia | Llama 3.1 Community License (`llama3.1`); el repositorio incluye `LICENSE` y `USE_POLICY.md` |
 | Formato de pesos | safetensors (librería `transformers`); tamaño del repositorio: 16,1 GB |
 
@@ -114,7 +114,7 @@ La comparación se limita al modelo base, ya que la información disponible no i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r04
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r04
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1: incluida en el repositorio del modelo (`LICENSE` y `USE_POLICY.md`)
 - Paper de SVD-LLM: no disponible en la información proporcionada

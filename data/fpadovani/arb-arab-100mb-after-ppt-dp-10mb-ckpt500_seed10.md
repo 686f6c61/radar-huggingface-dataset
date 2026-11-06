@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada en terminos de produccion: el modelo tie
 
 ## Arquitectura y entrenamiento
 
-La arquitectura no se describe en la model card. El unico indicio tecnico es el tag `gpt2`, que en el ecosistema de HuggingFace identifica la clase de modelo `GPT2LMHeadModel`: un transformer decoder-only con atencion causal, normalizacion previa a la atencion y embeddings de posicion aprendidos. Con 124.770.816 parametros, el modelo encaja en el rango de configuraciones pequenas de esta familia (GPT-2 base tiene 124M de parametros), aunque no se dispone de detalles como el numero de capas, cabezas de atencion, dimension oculta ni la longitud maxima de contexto admitida.
+La arquitectura no se describe en la model card. El unico indicio tecnico es el tag `gpt2`, que en el ecosistema de Hugging Face identifica la clase de modelo `GPT2LMHeadModel`: un transformer decoder-only con atencion causal, normalizacion previa a la atencion y embeddings de posicion aprendidos. Con 124.770.816 parametros, el modelo encaja en el rango de configuraciones pequenas de esta familia (GPT-2 base tiene 124M de parametros), aunque no se dispone de detalles como el numero de capas, cabezas de atencion, dimension oculta ni la longitud maxima de contexto admitida.
 
 En cuanto al entrenamiento, la model card indica unicamente que se aplico SFT (supervised fine-tuning) mediante TRL 0.23.0, sobre el modelo base `fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed10`. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de RLHF o DPO. Las versiones de framework declaradas son Transformers 4.56.2, PyTorch 2.11.0, Datasets 4.8.4 y Tokenizers 0.22.1. Existe un enlace publico a la ejecucion de Weights & Biases (`f-padovani-university-of-groningen/new_tokenizers`, run `q4d76zl5`) que podria contener las curvas de perdida y la configuracion completa, pero no se ha extraido informacion de el en la documentacion disponible. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, atencion por ventanas u otras).
 
@@ -68,10 +68,10 @@ La comparacion se limita a parametros, contexto y licencia, ya que no hay benchm
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|
-| arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed10 | 124,77M | No disponible | No disponible | HuggingFace, 0 descargas | No |
-| GPT-2 (openai-community/gpt2) | 124M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Si (en su model card original) |
-| DistilGPT-2 (distilbert/distilgpt2) | 82M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Si |
-| Modelos pequenos multilingues tipo Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | HuggingFace, muy descargado | Si |
+| arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed10 | 124,77M | No disponible | No disponible | Hugging Face, 0 descargas | No |
+| GPT-2 (openai-community/gpt2) | 124M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Si (en su model card original) |
+| DistilGPT-2 (distilbert/distilgpt2) | 82M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Si |
+| Modelos pequenos multilingues tipo Qwen2.5-0.5B | 494M | 32.768 tokens | Apache 2.0 | Hugging Face, muy descargado | Si |
 
 No se dispone de datos suficientes para una comparacion de rendimiento. La diferencia principal frente a las alternativas es que este modelo carece de licencia declarada y de evaluaciones, lo que limita su uso fuera del ambito experimental.
 
@@ -90,7 +90,7 @@ No se dispone de datos suficientes para una comparacion de rendimiento. La difer
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/q4d76zl5
 - Repositorio de TRL: https://github.com/huggingface/trl

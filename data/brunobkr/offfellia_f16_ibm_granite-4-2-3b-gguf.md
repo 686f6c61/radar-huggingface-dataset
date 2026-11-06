@@ -79,8 +79,8 @@ La comparativa es aproximada y se basa en parámetros y disponibilidad. No se in
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/Brunobkr/OFFFELLIA_f16_IBM_Granite-4.2-3b.gguf)
-- [Organización IBM Granite en HuggingFace](https://huggingface.co/ibm-granite)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/Brunobkr/OFFFELLIA_f16_IBM_Granite-4.2-3b.gguf)
+- [Organización IBM Granite en Hugging Face](https://huggingface.co/ibm-granite)
 - [Página oficial de IBM Granite](https://www.ibm.com/granite)
 - [Repositorio IBM/gguf (conversión y scripts)](https://github.com/IBM/gguf)
 - [Documentación de Granite 4.0 (para referencia de arquitectura)](https://www.ibm.com/granite/docs/models/granite)

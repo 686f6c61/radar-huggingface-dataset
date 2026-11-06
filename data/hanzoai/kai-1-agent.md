@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kai-1-agent (identificador en HuggingFace `hanzoai/kai-1-agent`) es un modelo de clasificación de texto basado en un encoder ModernBERT-large de 421 millones de parámetros, presentado en su model card bajo el nombre comercial "Laya Typed-Decisions". Lo distribuye el usuario hanzoai, si bien la documentación técnica y los enlaces apuntan al proyecto Laya de convaiinnovations, del que este checkpoint sería un ajuste fino especializado. Se trata de un modelo no autorregresivo, denominado "System 1 decision model", diseñado para emitir decisiones tipadas (tipos `noul`, `choice` y `score`) sobre estados de agente y preguntas estructuradas.
+Kai-1-agent (identificador en Hugging Face `hanzoai/kai-1-agent`) es un modelo de clasificación de texto basado en un encoder ModernBERT-large de 421 millones de parámetros, presentado en su model card bajo el nombre comercial "Laya Typed-Decisions". Lo distribuye el usuario hanzoai, si bien la documentación técnica y los enlaces apuntan al proyecto Laya de convaiinnovations, del que este checkpoint sería un ajuste fino especializado. Se trata de un modelo no autorregresivo, denominado "System 1 decision model", diseñado para emitir decisiones tipadas (tipos `noul`, `choice` y `score`) sobre estados de agente y preguntas estructuradas.
 
 El problema que resuelve es concreto: en lugar de generar texto libre, el modelo recibe un estado (por ejemplo, una traza de agente, un ticket de atención al cliente, un documento de factura o un informe de incidente) junto con una batería de preguntas tipadas, y devuelve una distribución de probabilidad calibrada para cada una de ellas. Está ajustado sobre cuatro flujos sintéticos: observabilidad de trazas de agente, atención al cliente, procesamiento de facturas e incidentes de seguridad.
 
@@ -117,13 +117,13 @@ La comparacion con Jev procede de cifras publicadas por terceros y no medidas po
 - Preguntas de tipo `choice`: deben mantenerse por debajo de unas 20 opciones, ya que todas comparten un presupuesto fijo de 256 tokens de cabeza y un espacio de etiquetas grande deja pocos tokens por etiqueta, con caida acusada de la precision.
 - No debe usarse como opcion por defecto silenciosa: `Router` no selecciona este checkpoint automaticamente salvo que se construya con `auto_task_detection=True`.
 - Riesgo de alucinacion: no aplica en el sentido generativo (no produce texto libre), pero si existe riesgo de clasificaciones erroneas o mal calibradas fuera de la distribucion de los cuatro flujos entrenados.
-- Discrepancia de identificacion: el identificador de HuggingFace proporcionado es `hanzoai/kai-1-agent`, mientras que la model card describe el checkpoint `convaiinnovations/laya-typed-decisions`. Conviene verificar que el repositorio cargado corresponde realmente al modelo documentado antes de usarlo en produccion.
+- Discrepancia de identificacion: el identificador de Hugging Face proporcionado es `hanzoai/kai-1-agent`, mientras que la model card describe el checkpoint `convaiinnovations/laya-typed-decisions`. Conviene verificar que el repositorio cargado corresponde realmente al modelo documentado antes de usarlo en produccion.
 - Licencia Apache 2.0: permite uso comercial, pero los datos de entrenamiento son flujos sinteticos, por lo que la transferencia a datos reales debe validarse empiricamente.
 - Los resultados de busqueda web devueltos no contienen informacion tecnica util sobre este modelo; no se han usado como fuente.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanzoai/kai-1-agent
+- Modelo en Hugging Face: https://huggingface.co/hanzoai/kai-1-agent
 - Checkpoint documentado en la model card: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Familia Laya: https://huggingface.co/convaiinnovations/laya
 - Checkpoint base: https://huggingface.co/convaiinnovations/laya

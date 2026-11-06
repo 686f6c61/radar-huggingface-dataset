@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-e6` es un checkpoint de 4.539.265.536 parametros (aproximadamente 4,5 mil millones) publicado en HuggingFace por el usuario `Stage-jh-monitor`. No se trata de un modelo fundacional nuevo, sino del resultado de un proceso de ajuste mediante aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, segun se declara en la configuracion de entrenamiento incluida en la propia model card. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 9,1 GB.
+`Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-e6` es un checkpoint de 4.539.265.536 parametros (aproximadamente 4,5 mil millones) publicado en Hugging Face por el usuario `Stage-jh-monitor`. No se trata de un modelo fundacional nuevo, sino del resultado de un proceso de ajuste mediante aprendizaje por refuerzo (RL) sobre el modelo base `Qwen/Qwen3.5-4B`, segun se declara en la configuracion de entrenamiento incluida en la propia model card. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y ocupa 9,1 GB.
 
 El nombre del repositorio, junto con los identificadores del dataset (`qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k`) y del experimento, sugiere un pipeline interno automatizado de generacion de datos y RL orientado a una tarea concreta de filtrado o evaluacion de "solvencia" (solvability) de problemas, con prompts generados o validados por un modelo mayor. Toda esta interpretacion proviene de la nomenclatura y no esta confirmada por documentacion adicional.
 
@@ -93,7 +93,7 @@ Diferencias clave: este checkpoint no declara licencia, no publica evaluaciones 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-e6
+- Repositorio en Hugging Face: https://huggingface.co/Stage-jh-monitor/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k-e6
 - Modelo base declarado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B (referenciado como `Qwen/Qwen3.5-4B`; no verificado)
 - Dataset de entrenamiento declarado: `Stage-org/qwen35-4b-filter-solvability-200-qwen38-27b-newprompt-4k` (identificador citado en la model card; enlace directo no verificado)
 - Resultados de busqueda web: las consultas realizadas devolvieron unicamente portales de ofertas de practicas laborales (stage.fr, jobs-stages.letudiant.fr, welcometothejungle.com, indeed.com), sin relacion con el modelo. No se ha encontrado documentacion, paper, blog ni demo adicional.

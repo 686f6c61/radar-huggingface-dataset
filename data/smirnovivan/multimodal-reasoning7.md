@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Smirnovivan/multimodal-reasoning7
+- Repositorio en Hugging Face: https://huggingface.co/Smirnovivan/multimodal-reasoning7
 - Referencias externas sobre razonamiento multimodal (contexto general, no del repositorio):
   - https://ajithp.com/2025/04/21/multimodal-reasoning-ai/
   - https://www.index.dev/blog/multimodal-ai-models-comparison

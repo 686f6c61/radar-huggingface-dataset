@@ -93,7 +93,7 @@ Comparacion con otros modelos de la misma categoria (por ejemplo, otros modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1/imatrix): https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-i1-GGUF
 - Modelo base: https://huggingface.co/simpledirect/Vinci-MLE-123B-1.0
 - Cuantizaciones estaticas: https://huggingface.co/mradermacher/Vinci-MLE-123B-1.0-GGUF
 - Pagina indice del autor para este modelo: https://hf.tst.eu/model#Vinci-MLE-123B-1.0-i1-GGUF

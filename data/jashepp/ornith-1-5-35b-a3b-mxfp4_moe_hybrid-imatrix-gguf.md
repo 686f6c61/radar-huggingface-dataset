@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ornith-1.5-35B-A3B | 34,66 B (3 B activos) | no disponible | MIT | HuggingFace, GGUF |
-| Ornith-1.0-35B | 35 B (3 B activos) | no disponible | MIT | HuggingFace |
-| Qwen3-30B-A3B | 30 B (3 B activos) | 128 K tokens | Apache 2.0 | HuggingFace |
+| Ornith-1.5-35B-A3B | 34,66 B (3 B activos) | no disponible | MIT | Hugging Face, GGUF |
+| Ornith-1.0-35B | 35 B (3 B activos) | no disponible | MIT | Hugging Face |
+| Qwen3-30B-A3B | 30 B (3 B activos) | 128 K tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace de este repositorio: https://huggingface.co/jashepp/Ornith-1.5-35B-A3B-MXFP4_MOE_Hybrid-Imatrix-GGUF
+- Repositorio Hugging Face de este repositorio: https://huggingface.co/jashepp/Ornith-1.5-35B-A3B-MXFP4_MOE_Hybrid-Imatrix-GGUF
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Blog de Ornith 1.5: https://ornith.ai/ornith_1_5.html
 - Artículo de MindStudio sobre despliegue local: https://www.mindstudio.ai/blog/ornith-1-5-35b-a3b-local-run

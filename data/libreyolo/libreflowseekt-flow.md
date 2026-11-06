@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LibreFlowSeekt-flow | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace (LibreYOLO) |
-| LibreFlowSeeks-flow | mismos pesos que la variante t, distinto número de iteraciones | no aplica | no disponible | Apache 2.0 | HuggingFace (LibreYOLO) |
+| LibreFlowSeekt-flow | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face (LibreYOLO) |
+| LibreFlowSeeks-flow | mismos pesos que la variante t, distinto número de iteraciones | no aplica | no disponible | Apache 2.0 | Hugging Face (LibreYOLO) |
 | FlowSeek upstream (`flowseek_T_TartanCT_TSKH.pth`) | no disponible | no aplica | evaluado en Spring y LayeredFlow | Apache 2.0 | GitHub (mattpoggi/flowseek) |
 | SEA-RAFT (base arquitectónica) | no disponible | no aplica | no disponible | BSD 3-Clause | no disponible en la información |
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LibreYOLO/LibreFlowSeekt-flow
+- Modelo en Hugging Face: https://huggingface.co/LibreYOLO/LibreFlowSeekt-flow
 - Variante relacionada: https://huggingface.co/LibreYOLO/LibreFlowSeeks-flow
 - Repositorio FlowSeek upstream: https://github.com/mattpoggi/flowseek
 - Repositorio LibreYOLO: https://github.com/LibreYOLO/libreyolo

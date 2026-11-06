@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saccharine es un adaptador LoRA de texto a imagen publicado por el usuario Haruka041 en HuggingFace. Se distribuye bajo la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, al que anade un estilo visual concreto que se activa mediante la frase detonante `Niji Saccharine style`. El repositorio ocupa 0,4 GB, un tamano tipico de los pesos de un LoRA de difusion, muy lejos de los decenas de gigabytes que ocupan los modelos base completos.
+Saccharine es un adaptador LoRA de texto a imagen publicado por el usuario Haruka041 en Hugging Face. Se distribuye bajo la libreria diffusers y esta disenado para funcionar sobre el modelo base krea/Krea-2-Turbo, al que anade un estilo visual concreto que se activa mediante la frase detonante `Niji Saccharine style`. El repositorio ocupa 0,4 GB, un tamano tipico de los pesos de un LoRA de difusion, muy lejos de los decenas de gigabytes que ocupan los modelos base completos.
 
 Se trata, por tanto, de un modelo de nicho orientado a la generacion de ilustracion estilizada, no de un modelo de lenguaje ni de un sistema multimodal generalista. Su relevancia es practica para ilustradores y creadores que ya trabajan con Krea-2-Turbo y quieren incorporar una estetica concreta sin reentrenar ni sustituir el modelo base: basta con cargar el adaptador y anadir la palabra clave al prompt.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador en si ocupa 0,4 GB, por lo que su carga anade un coste de memoria despreciable frente al modelo base.
 - Los requisitos reales de VRAM vienen determinados por krea/Krea-2-Turbo, cuyas caracteristicas tecnicas no se detallan en la informacion disponible.
 - GPU recomendadas: no disponible. Al desconocerse el tamano del modelo base, no es posible indicar si cabe en una GPU de consumo como una RTX 4090 o si requiere aceleradores de clase A100 o H100.
-- Opciones de despliegue: la libreria declarada es diffusers, de modo que el adaptador puede cargarse con `load_lora_weights` sobre el pipeline del modelo base. Herramientas de terceros del ecosistema diffusion (ComfyUI, Draw Things, DiffusionBee) disponen de importadores de repositorios HuggingFace, pero no se confirma compatibilidad con este adaptador concreto.
+- Opciones de despliegue: la libreria declarada es diffusers, de modo que el adaptador puede cargarse con `load_lora_weights` sobre el pipeline del modelo base. Herramientas de terceros del ecosistema diffusion (ComfyUI, Draw Things, DiffusionBee) disponen de importadores de repositorios Hugging Face, pero no se confirma compatibilidad con este adaptador concreto.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,8 +71,8 @@ No disponible. La informacion proporcionada no incluye adaptadores comparables y
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haruka041/saccharine | LoRA de estilo sobre Krea-2-Turbo | no disponible (repo de 0,4 GB) | no aplica | no disponible | HuggingFace, 0 descargas |
-| krea/Krea-2-Turbo | Modelo base de texto a imagen | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | HuggingFace |
+| Haruka041/saccharine | LoRA de estilo sobre Krea-2-Turbo | no disponible (repo de 0,4 GB) | no aplica | no disponible | Hugging Face, 0 descargas |
+| krea/Krea-2-Turbo | Modelo base de texto a imagen | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas de estilo comparables | LoRA de estilo | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye adaptadores comparables y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/saccharine
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/saccharine
 - Archivos del repositorio: https://huggingface.co/Haruka041/saccharine/tree/main
 - Perfil del autor: https://huggingface.co/Haruka041
 - Modelos publicados por el autor: https://huggingface.co/Haruka041/models

@@ -80,7 +80,7 @@ La diferencia principal frente al modelo original es el formato y la cuantizacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoragoStudios/gct-opus-mt-de-en-ct2
+- Modelo en Hugging Face: https://huggingface.co/VoragoStudios/gct-opus-mt-de-en-ct2
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-de-en
 - Proyecto OPUS-MT (Helsinki-NLP): https://github.com/Helsinki-NLP/OPUS-MT
 - Corpus OPUS: https://opus.nlpl.eu/

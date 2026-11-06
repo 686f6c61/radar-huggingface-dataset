@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ArthT/gemma2-9b-a6-badmed-seed1-v2` es un ajuste fino (fine-tuning) del modelo base Gemma 2 9B de Google, publicado en el Hub de HuggingFace por el usuario ArthT. El nombre sugiere una variante específica (a6) y un posible dominio médico ("badmed"), aunque la model card no proporciona ninguna información concreta sobre el propósito, los datos de entrenamiento o el proceso de ajuste. El repositorio contiene pesos en formato safetensors, está etiquetado con la librería `transformers` y la herramienta `unsloth`, lo que indica que el fine-tuning se realizó con dicha herramienta. El tamaño del repositorio es de 6,6 GB, coherente con un modelo de aproximadamente 9 mil millones de parámetros.
+El modelo `ArthT/gemma2-9b-a6-badmed-seed1-v2` es un ajuste fino (fine-tuning) del modelo base Gemma 2 9B de Google, publicado en el Hub de Hugging Face por el usuario ArthT. El nombre sugiere una variante específica (a6) y un posible dominio médico ("badmed"), aunque la model card no proporciona ninguna información concreta sobre el propósito, los datos de entrenamiento o el proceso de ajuste. El repositorio contiene pesos en formato safetensors, está etiquetado con la librería `transformers` y la herramienta `unsloth`, lo que indica que el fine-tuning se realizó con dicha herramienta. El tamaño del repositorio es de 6,6 GB, coherente con un modelo de aproximadamente 9 mil millones de parámetros.
 
 La relevancia de este modelo radica en que, al estar basado en Gemma 2 9B, hereda las capacidades generales de generación de texto, razonamiento y comprensión del lenguaje del modelo base, pero con un ajuste específico que podría orientarlo a tareas médicas o biomédicas. Sin embargo, la ausencia de documentación detallada impide confirmar estas hipótesis. Es un modelo reciente (creado en agosto de 2026) con cero descargas y cero likes, lo que sugiere que es un experimento personal o un prototipo sin validación comunitaria.
 
@@ -83,7 +83,7 @@ No se pueden extraer conclusiones sobre rendimiento relativo.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ArthT/gemma2-9b-a6-badmed-seed1-v2)
+- [Modelo en Hugging Face](https://huggingface.co/ArthT/gemma2-9b-a6-badmed-seed1-v2)
 - [Modelo similar: ArthT/gemma2-9b-a0-badmed-seed2-v2](https://huggingface.co/ArthT/gemma2-9b-a0-badmed-seed2-v2)
 - [Modelo base: google/gemma-2-9b](https://huggingface.co/google/gemma-2-9b)
 - [Paper de Gemma 2 (arXiv)](https://arxiv.org/pdf/2408.00118)

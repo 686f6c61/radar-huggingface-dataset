@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mdagosta/waldito-python-basics-v1-r0005-u0-mdagosta es un modelo de lenguaje causal de muy pequeno tamano (9.541.632 parametros, unos 9,5 millones) publicado por el usuario mdagosta en HuggingFace. Segun su propia model card, se trata de una exportacion de "OpenWALDO" que reutiliza la arquitectura Llama estandar de Transformers para modelos de lenguaje causal, acompanada de un tokenizador de bytes propio denominado "schema-1" que exige cargarse con trust_remote_code=True.
+mdagosta/waldito-python-basics-v1-r0005-u0-mdagosta es un modelo de lenguaje causal de muy pequeno tamano (9.541.632 parametros, unos 9,5 millones) publicado por el usuario mdagosta en Hugging Face. Segun su propia model card, se trata de una exportacion de "OpenWALDO" que reutiliza la arquitectura Llama estandar de Transformers para modelos de lenguaje causal, acompanada de un tokenizador de bytes propio denominado "schema-1" que exige cargarse con trust_remote_code=True.
 
 El nombre del repositorio sugiere que se trata de un ajuste (fine-tuning) sobre una base denominada waldito, especializado en "python-basics", en su revision r0005 y actualizacion u0. No se publica informacion sobre el proceso de entrenamiento, el dataset, el numero de tokens, ni resultados de evaluacion, por lo que la ficha se limita a lo verificable: arquitectura, tokenizador, formato de pesos e inventario de ficheros (BOM.json y EU-BOM.json, este ultimo con el mapeo de divulgacion de contenido de entrenamiento del reglamento europeo de GPAI).
 
@@ -66,10 +66,10 @@ No hay benchmarks ni licencia publicados para este modelo, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| waldito-python-basics-v1-r0005-u0-mdagosta | 9,5 M | no disponible | no disponible | publica en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| roneneldan/TinyStories-9M | ~9 M | no disponible en esta ficha | no disponible en esta ficha | publica en HuggingFace |
-| EleutherAI/pythia-14m | ~14 M | 2048 | Apache-2.0 | publica en HuggingFace |
-| HuggingFaceTB/SmolLM-135M | ~135 M | 2048 | Apache-2.0 | publica en HuggingFace |
+| waldito-python-basics-v1-r0005-u0-mdagosta | 9,5 M | no disponible | no disponible | publica en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| roneneldan/TinyStories-9M | ~9 M | no disponible en esta ficha | no disponible en esta ficha | publica en Hugging Face |
+| EleutherAI/pythia-14m | ~14 M | 2048 | Apache-2.0 | publica en Hugging Face |
+| HuggingFaceTB/SmolLM-135M | ~135 M | 2048 | Apache-2.0 | publica en Hugging Face |
 
 La diferencia practica es que los modelos comparables cuentan con documentacion de entrenamiento, contexto declarado y evaluaciones publicadas, mientras que para waldito no hay ninguno de esos tres elementos. En capacidad real de generacion, un modelo de 9,5 M de parametros esta muy por debajo de alternativas de 135 M o superiores.
 
@@ -87,7 +87,7 @@ La diferencia practica es que los modelos comparables cuentan con documentacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u0-mdagosta
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0005-u0-mdagosta
 - Variante del mismo autor citada en la busqueda: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0003-u1-mdagosta
 
 Nota: el resto de resultados de la busqueda web (documentacion de modelos de OpenCode, un articulo de dev.to sobre IA local en Python, learnpython.org y W3Schools) no guardan relacion con este modelo concreto y no se incluyen como referencias tecnicas.

@@ -96,7 +96,7 @@ Frente a un denso de 32B, la ventaja de este modelo es el coste de inferencia po
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen3-Coder-30B-A3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3-Coder-30B-A3B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct/blob/main/LICENSE
 - Aplicación Atomic Chat: https://atomic.chat

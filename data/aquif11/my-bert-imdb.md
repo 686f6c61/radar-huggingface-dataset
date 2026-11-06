@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `aquif11/my-bert-imdb` es un artefacto publicado en HuggingFace por el usuario `aquif11`. Su nombre sugiere un fine-tuning de un modelo BERT sobre el dataset IMDb, probablemente para clasificación de sentimiento de reseñas de cine. Sin embargo, la model card asociada es una plantilla autogenerada por HuggingFace en la que prácticamente todos los campos están marcados como "More Information Needed", lo que indica que el autor no ha documentado el modelo de forma sustancial.
+El modelo `aquif11/my-bert-imdb` es un artefacto publicado en Hugging Face por el usuario `aquif11`. Su nombre sugiere un fine-tuning de un modelo BERT sobre el dataset IMDb, probablemente para clasificación de sentimiento de reseñas de cine. Sin embargo, la model card asociada es una plantilla autogenerada por Hugging Face en la que prácticamente todos los campos están marcados como "More Information Needed", lo que indica que el autor no ha documentado el modelo de forma sustancial.
 
 Se trata de un subida sin metadatos técnicos: no se especifica la arquitectura exacta, el número de parámetros, la licencia, los idiomas soportados ni el pipeline de inferencia. El único dato técnico disponible es la etiqueta `transformers`, que indica que el modelo es compatible con la librería homónima, y la referencia al paper de BERT (arxiv:1910.09700) en los tags del repositorio. A fecha de creación (2026-09-06), el modelo no tiene descargas ni likes, por lo que su relevancia práctica es muy limitada: sirve como ejemplo de publicación mínima sin documentación, más que como un recurso utilizable en producción.
 
@@ -21,7 +21,7 @@ Se trata de un subida sin metadatos técnicos: no se especifica la arquitectura 
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no contiene ningún detalle sobre la arquitectura, los datos de entrenamiento o el procedimiento de ajuste. La model card es un documento genérico generado automáticamente por HuggingFace, y todos los apartados técnicos (arquitectura, hiperparámetros, infraestructura, procedimiento de entrenamiento) están vacíos o marcados como "More Information Needed". No se dispone de datos sobre el número de tokens, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. La única pista es el nombre del repositorio y la etiqueta `arxiv:1910.09700`, que corresponde al paper original de BERT, pero no hay evidencia de que el modelo implemente una variante concreta.
+La información proporcionada no contiene ningún detalle sobre la arquitectura, los datos de entrenamiento o el procedimiento de ajuste. La model card es un documento genérico generado automáticamente por Hugging Face, y todos los apartados técnicos (arquitectura, hiperparámetros, infraestructura, procedimiento de entrenamiento) están vacíos o marcados como "More Information Needed". No se dispone de datos sobre el número de tokens, la composición del dataset, ni si se aplicaron técnicas como RLHF o DPO. La única pista es el nombre del repositorio y la etiqueta `arxiv:1910.09700`, que corresponde al paper original de BERT, pero no hay evidencia de que el modelo implemente una variante concreta.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ No se dispone de datos oficiales sobre requisitos de hardware para este modelo. 
 - VRAM estimada para inferencia: aproximadamente 1-2 GB en FP32 y 0.5-1 GB en cuantizacion INT8.
 - GPU recomendadas: cualquier GPU con 4 GB de VRAM o superior (por ejemplo, RTX 3050, RTX 4060, o GPUs de datacenter como T4 o A10).
 - Compatibilidad con GPU de consumo: si, cualquier GPU moderna de NVIDIA con al menos 4 GB de VRAM seria suficiente.
-- Opciones de despliegue: al ser compatible con `transformers`, podria servirse con vLLM, TGI o simplemente con HuggingFace Inference API, aunque no hay datos de throughput o latencia.
+- Opciones de despliegue: al ser compatible con `transformers`, podria servirse con vLLM, TGI o simplemente con Hugging Face Inference API, aunque no hay datos de throughput o latencia.
 - Latencia y throughput estimados: no disponibles.
 
 Estas estimaciones no sustituyen la informacion oficial del autor y deben tratarse con cautela.
@@ -62,9 +62,9 @@ Estas estimaciones no sustituyen la informacion oficial del autor y deben tratar
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `aquif11/my-bert-imdb` | No disponible | No disponible | No disponible | HuggingFace, sin documentacion |
-| `tarneemalaa/bert_imdb_model` | No disponible (presumiblemente BERT base) | No disponible | No disponible | HuggingFace, con informacion basica (dataset IMDb, tokenizer BERT, PyTorch) |
-| `saif-11bit/my-bert-imdb` | No disponible | No disponible | No disponible | HuggingFace, sin documentacion |
+| `aquif11/my-bert-imdb` | No disponible | No disponible | No disponible | Hugging Face, sin documentacion |
+| `tarneemalaa/bert_imdb_model` | No disponible (presumiblemente BERT base) | No disponible | No disponible | Hugging Face, con informacion basica (dataset IMDb, tokenizer BERT, PyTorch) |
+| `saif-11bit/my-bert-imdb` | No disponible | No disponible | No disponible | Hugging Face, sin documentacion |
 
 La comparativa se limita a la disponibilidad en el Hub, ya que ninguno de los tres modelos publica especificaciones tecnicas completas. El modelo de `tarneemalaa` es el unico que ofrece una descripcion minima del proceso de entrenamiento, pero no aporta benchmarks ni metricas de rendimiento.
 
@@ -79,7 +79,7 @@ La comparativa se limita a la disponibilidad en el Hub, ya que ninguno de los tr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aquif11/my-bert-imdb
+- Hugging Face: https://huggingface.co/aquif11/my-bert-imdb
 - Paper de BERT (referenciado en los tags): https://arxiv.org/abs/1910.09700
 - Modelo similar con informacion basica: https://huggingface.co/tarneemalaa/bert_imdb_model
 - Modelo homonimo sin documentacion: https://huggingface.co/saif-11bit/my-bert-imdb

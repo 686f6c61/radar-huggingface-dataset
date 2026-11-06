@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`anima-deepseek` es un modelo LoRA de difusión para generación de imágenes, creado por el usuario SAkizuki y publicado en HuggingFace. Está entrenado sobre el modelo base `circlestone-labs/Anima`, un modelo de difusión de texto a imagen, con el objetivo de reproducir la versión moe (personaje antropomórfico) del asistente DeepSeek, descrito por el autor como una «chica doncella de cola de cetáceo con pelo azul degradado». El modelo no es un modelo de lenguaje, sino un adaptador de bajo rango (LoRA) que se acopla al UNet del modelo base para condicionar la generación hacia este personaje concreto.
+`anima-deepseek` es un modelo LoRA de difusión para generación de imágenes, creado por el usuario SAkizuki y publicado en Hugging Face. Está entrenado sobre el modelo base `circlestone-labs/Anima`, un modelo de difusión de texto a imagen, con el objetivo de reproducir la versión moe (personaje antropomórfico) del asistente DeepSeek, descrito por el autor como una «chica doncella de cola de cetáceo con pelo azul degradado». El modelo no es un modelo de lenguaje, sino un adaptador de bajo rango (LoRA) que se acopla al UNet del modelo base para condicionar la generación hacia este personaje concreto.
 
 El modelo está diseñado para su uso en el ecosistema de Stable Diffusion y herramientas compatibles como ComfyUI. El repositorio incluye una galería de imágenes de ejemplo y una ficha técnica detallada con los hiperparámetros de entrenamiento. Con un tamaño de repositorio de 0,1 GB y licencia MIT, es un recurso ligero y de código abierto orientado a la personalización de estilos y personajes en generación de imágenes.
 
@@ -69,6 +69,6 @@ No hay modelos comparables directos en la información proporcionada, ya que se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SAkizuki/anima-deepseek
+- Repositorio Hugging Face: https://huggingface.co/SAkizuki/anima-deepseek
 - Modelo base: https://huggingface.co/circlestone-labs/Anima (referenciado, no verificado en la búsqueda)
 - Checkpoint compatible mencionado: `anima-aesthetic-v1.1` (no se proporciona enlace)

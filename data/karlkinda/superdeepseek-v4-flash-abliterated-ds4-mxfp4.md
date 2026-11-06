@@ -80,7 +80,7 @@ La comparativa se limita a la estructura porque no hay datos de rendimiento disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/KarlKinda/SuperDeepseek-V4-Flash-abliterated-ds4-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/KarlKinda/SuperDeepseek-V4-Flash-abliterated-ds4-MXFP4
 - Modelo base (abliterated): https://huggingface.co/Jiunsong/SuperDeepseek-V4-Flash-abliterated
 - Modelo original DeepSeek: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731
 - Motor DS4 (DwarfStar): https://github.com/antirez/ds4

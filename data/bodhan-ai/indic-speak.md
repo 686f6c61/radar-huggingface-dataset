@@ -4,7 +4,7 @@
 
 `bodhan-ai/indic-speak` es un modelo de sintesis de voz (text-to-speech) desarrollado por Bodhan AI, basado en un fine-tuning de `meta-llama/Llama-3.2-3B`. Esta orientado a la generacion de audio en lenguas indias y en ingles, con soporte de code-switching y code-mixing, es decir, la capacidad de alternar o mezclar idiomas dentro de una misma frase. El modelo tiene 3.300.928.512 parametros (3.300 millones) y se distribuye en formato safetensors.
 
-El objetivo principal es cubrir la necesidad de sintesis de voz de calidad en lenguas indias, un area con poca cobertura en los modelos comerciales. Los tags del repositorio indican aplicaciones en educacion y ambitos STEM, lo que sugiere que el modelo esta pensado para generar narraciones de contenido cientifico, tecnologico, de ingenieria y matematicas en multiples idiomas. El acceso al modelo es restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El objetivo principal es cubrir la necesidad de sintesis de voz de calidad en lenguas indias, un area con poca cobertura en los modelos comerciales. Los tags del repositorio indican aplicaciones en educacion y ambitos STEM, lo que sugiere que el modelo esta pensado para generar narraciones de contenido cientifico, tecnologico, de ingenieria y matematicas en multiples idiomas. El acceso al modelo es restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: los pesos en FP16/BF16 ocupan aproximadamente 6,6 GB. Con overhead de activaciones y cache, se recomienda al menos 12 GB de VRAM. En cuantizacion 4-bit (si se genera) la ocupacion podria reducirse a unos 2-3 GB, pero no hay cuantizaciones oficiales publicadas.
 - GPU recomendadas: NVIDIA A100, H100 para despliegue en produccion; en GPUs de consumo, una RTX 4070 o superior seria adecuada para inferencia local.
 - Compatibilidad con GPUs de consumo: si, en tarjetas con 12 GB o mas de VRAM.
-- Opciones de despliegue: Transformers (via la libreria de HuggingFace). No se confirma compatibilidad con vLLM, TGI, llama.cpp u Ollama, ya que el modelo es de tipo text-to-speech y no se han publicado conversiones a GGUF.
+- Opciones de despliegue: Transformers (via la libreria de Hugging Face). No se confirma compatibilidad con vLLM, TGI, llama.cpp u Ollama, ya que el modelo es de tipo text-to-speech y no se han publicado conversiones a GGUF.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ No disponible. No se han encontrado datos de modelos comparables en la informaci
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar el modelo.
 - Licencia "other": no es una licencia estandar y puede imponer restricciones de uso comercial. Conviene revisar las condiciones antes de usar el modelo en produccion.
 - Ausencia de benchmarks publicos: no hay datos objetivos de calidad de voz, naturalidad o precision en la generacion de audio.
 - Longitud de contexto no especificada: se desconoce el limite de texto de entrada que el modelo puede procesar en una sola inferencia.
@@ -67,5 +67,5 @@ No disponible. No se han encontrado datos de modelos comparables en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bodhan-ai/indic-speak
+- Modelo en Hugging Face: https://huggingface.co/bodhan-ai/indic-speak
 - Noticia sobre modelos de voz de Bodhan AI y AI4Bharat (contexto): https://analyticsindiamag.com/ai-news/ai4bharat-bodhan-ai-build-12-bn-parameter-speech-model-for-26-indian-languages

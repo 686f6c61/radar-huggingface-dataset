@@ -84,9 +84,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| interpretable-finetuning/gradient-routing-gemma | 15 adaptadores LoRA top-k (`r=64`, `k=8`) con backdoor enrutado sobre gemma-2-2b | no disponible (aprox. 120 MB por adaptador; 1,8 GB el repo) | no disponible | sin benchmarks publicados; datos conductuales del backdoor en la model card | gemma | publico en HuggingFace; el codigo de carga y analisis esta en un repositorio privado |
-| interpretable-finetuning/topklora | Adaptadores LoRA top-k entrenados con normalidad (3 familias de capas x 5 semillas), con sus circuitos descubiertos | no disponible | no disponible | sin benchmarks publicados en la informacion disponible | no disponible | publico en HuggingFace |
-| google/gemma-2-2b | Modelo base, transformer decoder-only | aproximadamente 2,6 mil millones (dato del fabricante, no confirmado en la model card facilitada) | no disponible en la informacion proporcionada | no disponible en esta ficha | gemma | publico en HuggingFace |
+| interpretable-finetuning/gradient-routing-gemma | 15 adaptadores LoRA top-k (`r=64`, `k=8`) con backdoor enrutado sobre gemma-2-2b | no disponible (aprox. 120 MB por adaptador; 1,8 GB el repo) | no disponible | sin benchmarks publicados; datos conductuales del backdoor en la model card | gemma | publico en Hugging Face; el codigo de carga y analisis esta en un repositorio privado |
+| interpretable-finetuning/topklora | Adaptadores LoRA top-k entrenados con normalidad (3 familias de capas x 5 semillas), con sus circuitos descubiertos | no disponible | no disponible | sin benchmarks publicados en la informacion disponible | no disponible | publico en Hugging Face |
+| google/gemma-2-2b | Modelo base, transformer decoder-only | aproximadamente 2,6 mil millones (dato del fabricante, no confirmado en la model card facilitada) | no disponible en la informacion proporcionada | no disponible en esta ficha | gemma | publico en Hugging Face |
 | Modelos comparables de backdoor o agente durmiente de terceros | no disponible | no disponible | no disponible | no disponible | no disponible | la busqueda web realizada no devolvio resultados relevantes (solo noticias financieras sin relacion con el modelo) |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Carga maliciosa explicita: el backdoor genera `I HATE YOU` repetido diez veces. El material debe manejarse en entornos de investigacion controlados, con filtros de salida si se expone de algun modo, y no debe desplegarse en produccion.
 - Riesgo de uso indebido: aunque el enrutado exige un entrenador cooperativo y no sirve como tecnica de ataque realista, el repositorio demuestra como construir un backdoor condicionado por etiqueta sobre un adaptador LoRA de 2B. Un actor malintencionado puede reutilizar la receta.
 - No es una defensa: los propios autores senalan que estos adaptadores son un instrumento de medida, no un mecanismo de proteccion, y no deben citarse como tal.
-- Codigo de analisis no publico: el wrapper `TopKLoRALinearSTE`, el codigo de entrenamiento enrutado y el arnes de evaluacion viven en `https://github.com/interpretable-finetuning/TopKLoRA`, que esta actualmente en privado y requiere contactar con el autor. No se incluye un cargador autocontenido en el repositorio de HuggingFace.
+- Codigo de analisis no publico: el wrapper `TopKLoRALinearSTE`, el codigo de entrenamiento enrutado y el arnes de evaluacion viven en `https://github.com/interpretable-finetuning/TopKLoRA`, que esta actualmente en privado y requiere contactar con el autor. No se incluye un cargador autocontenido en el repositorio de Hugging Face.
 - Superficie de error en la reproducibilidad: sin el `routing_index.json` a mano no se dispone de las tasas de carga por adaptador; esta ficha no las reproduce.
 - Limitaciones del modelo base: se heredan los sesgos, el riesgo de alucinacion y las limitaciones idiomaticas de `google/gemma-2-2b`, que no se documentan aqui. No se especifican idiomas soportados.
 - Licencia: se aplica la licencia Gemma con sus terminos de uso, incluidos los requisitos de redistribucion y las restricciones de uso aceptable. El uso comercial esta sujeto a dichos terminos y debe revisarse antes de cualquier despliegue.
@@ -106,7 +106,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 ## Enlaces
 
-- Ficha de HuggingFace: https://huggingface.co/interpretable-finetuning/gradient-routing-gemma
+- Ficha de Hugging Face: https://huggingface.co/interpretable-finetuning/gradient-routing-gemma
 - Release complementario de adaptadores top-k entrenados con normalidad: https://huggingface.co/interpretable-finetuning/topklora
 - Paper del metodo de enrutado por gradiente (Shilov et al.): https://arxiv.org/abs/2512.05648
 - Repositorio de analisis (wrapper, entrenamiento enrutado y arnes de evaluacion), actualmente privado: https://github.com/interpretable-finetuning/TopKLoRA

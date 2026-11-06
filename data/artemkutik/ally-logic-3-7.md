@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ally-Logic-3.7 es un modelo de lenguaje de pequeño tamaño desarrollado por el usuario artemKUTIK y publicado en HuggingFace con licencia MIT. Se trata de un modelo basado en arquitectura Llama, con 134,5 millones de parámetros, lo que lo sitúa en la gama de modelos compactos orientados a tareas de razonamiento lógico. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors.
+Ally-Logic-3.7 es un modelo de lenguaje de pequeño tamaño desarrollado por el usuario artemKUTIK y publicado en Hugging Face con licencia MIT. Se trata de un modelo basado en arquitectura Llama, con 134,5 millones de parámetros, lo que lo sitúa en la gama de modelos compactos orientados a tareas de razonamiento lógico. El repositorio ocupa 0,5 GB y contiene pesos en formato safetensors.
 
 El modelo se publicó el 22 de agosto de 2026 y no presenta descripción técnica en su model card más allá de la licencia. No se dispone de información sobre su proceso de entrenamiento, dataset, contexto máximo ni capacidades específicas. Su relevancia actual es limitada al tratarse de un modelo reciente y sin documentación pública, aunque su licencia permisiva permite su uso y modificación sin restricciones comerciales. No hay datos de descargas ni de interacción de la comunidad, lo que sugiere que es un proyecto personal o en fase inicial.
 

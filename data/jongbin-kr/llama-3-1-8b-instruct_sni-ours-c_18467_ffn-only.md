@@ -72,8 +72,8 @@ No se dispone de datos de rendimiento para comparar objetivamente. La comparativ
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_18467_ffn-only)
-- [HuggingFace - modelo relacionado (ffn-lora)](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora)
-- [HuggingFace - modelo MoE del mismo autor](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe/tree/main)
+- [Hugging Face - modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_SNI-ours-c_18467_ffn-only)
+- [Hugging Face - modelo relacionado (ffn-lora)](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-sni-ffn-lora)
+- [Hugging Face - modelo MoE del mismo autor](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct-4x1-moe/tree/main)
 - [LLM Explorer - ficha del modelo MoE](https://llm-explorer.com/model/Jongbin-kr%2Fllama-3.1-8b-instruct-4x1-moe,x8KU8QVpjhD01MwoyT7Ih)
 - [Repositorio de inferless sobre Llama-3.1-8B-Instruct](https://github.com/inferless/Llama-3.1-8B-Instruct)

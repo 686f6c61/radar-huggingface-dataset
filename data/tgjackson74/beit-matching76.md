@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tgjackson74/beit-matching76` es un repositorio de HuggingFace publicado por el usuario `tgjackson74` que contiene una implementacion propia de una arquitectura tipo BEiT (BERT pre-training of image transformers) orientada a una tarea de *matching*. El repositorio se presenta explicitamente como un punto de partida experimental: incluye un script de ajuste fino (`finetune.py`), un fichero `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como *checkpoint de inicializacion para pruebas de humo*, no como un modelo entrenado.
+`tgjackson74/beit-matching76` es un repositorio de Hugging Face publicado por el usuario `tgjackson74` que contiene una implementacion propia de una arquitectura tipo BEiT (BERT pre-training of image transformers) orientada a una tarea de *matching*. El repositorio se presenta explicitamente como un punto de partida experimental: incluye un script de ajuste fino (`finetune.py`), un fichero `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que el propio autor describe como *checkpoint de inicializacion para pruebas de humo*, no como un modelo entrenado.
 
 El dato de parametros registrado en safetensors es de 16.576, una cifra que resulta incoherente con la descripcion de la model card, que indica escala *large*. Esta discrepancia, junto con las cero descargas y cero *likes*, sugiere que se trata de un artefacto generado de forma automatica o de una plantilla de repositorio, sin entrenamiento real asociado. El tamano del repositorio es de 0,0 GB.
 
@@ -49,7 +49,7 @@ Respecto al entrenamiento, el autor indica explicitamente que el checkpoint **no
 - Pruebas de humo de pipelines de entrenamiento: `model.safetensors` permite verificar que un *script* de carga, *forward pass* y guardado funciona antes de invertir computo real en un entrenamiento.
 - Base para ajuste fino en tareas de *matching* multimodal: el script `finetune.py` esta pensado para adaptar el modelo a una tarea de emparejamiento, aunque la tarea concreta (imagen-texto, imagen-imagen o similar) no se especifica.
 - Reproducibilidad de experimentos: `config.json` y `training_args.json` permiten fijar y auditar hiperparametros y semillas en un entorno controlado.
-- Docencia y formacion: util como ejemplo minimo de estructura de repositorio de modelo (pesos, config, argumentos de entrenamiento, script) para quien aprende a publicar artefactos en HuggingFace.
+- Docencia y formacion: util como ejemplo minimo de estructura de repositorio de modelo (pesos, config, argumentos de entrenamiento, script) para quien aprende a publicar artefactos en Hugging Face.
 - Referencia para evaluacion con conjuntos de validacion emparejados: el propio README propone evaluar con un conjunto pareado, reportar la metrica en al menos tres semillas e incluir una linea base de capacidad equivalente.
 - No es adecuado para atencion al cliente, generacion de codigo, RAG, agentes ni ninguna aplicacion de inferencia en produccion, dado que no existe un checkpoint entrenado.
 
@@ -91,7 +91,7 @@ La diferencia de orden de magnitud entre los 16.576 parametros registrados y los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tgjackson74/beit-matching76
+- Modelo en Hugging Face: https://huggingface.co/tgjackson74/beit-matching76
 - Paper original de BEiT (referencia de la arquitectura): no disponible en la informacion proporcionada
 - Repositorio de codigo, demo o blog del autor: no disponible
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces recuperados corresponden a paginas de soporte de Microsoft sin relacion con el artefacto.

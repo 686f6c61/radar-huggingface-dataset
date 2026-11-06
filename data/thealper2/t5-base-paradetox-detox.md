@@ -23,7 +23,7 @@ Su relevancia es acotada y específica: es un componente de limpieza de datos y 
 | Modelo base | `google-t5/t5-base` |
 | Dataset de entrenamiento | `s-nlp/paradetox` |
 | Tamaño del repositorio | 0,9 GB |
-| Pipeline declarado en HuggingFace | `text-generation` (el pipeline real del modelo es `text2text-generation`) |
+| Pipeline declarado en Hugging Face | `text-generation` (el pipeline real del modelo es `text2text-generation`) |
 
 ## Arquitectura y entrenamiento
 
@@ -109,10 +109,10 @@ Diagnóstico conjunto: entre las 596 entradas clasificadas como tóxicas, el 83,
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `thealper2/t5-base-paradetox-detox` | 222,9 M | 64 tokens de entrada y salida | Seq2seq de detoxificación ajustado sobre ParaDetox | Apache 2.0 | HuggingFace, 0 descargas |
-| `google-t5/t5-base` (modelo base) | 222,9 M | 512 tokens (preentrenamiento original; la ficha del ajuste no lo especifica) | Preentrenamiento multi-tarea con span corruption | Apache 2.0 | HuggingFace, ampliamente descargado |
+| `thealper2/t5-base-paradetox-detox` | 222,9 M | 64 tokens de entrada y salida | Seq2seq de detoxificación ajustado sobre ParaDetox | Apache 2.0 | Hugging Face, 0 descargas |
+| `google-t5/t5-base` (modelo base) | 222,9 M | 512 tokens (preentrenamiento original; la ficha del ajuste no lo especifica) | Preentrenamiento multi-tarea con span corruption | Apache 2.0 | Hugging Face, ampliamente descargado |
 | Referencias humanas de ParaDetox | no aplica | no aplica | Anotación humana | no aplica | Incluidas en el dataset `s-nlp/paradetox` |
-| `s-nlp/roberta_toxicity_classifier` | no disponible | no disponible | Clasificación binaria de toxicidad (enfoque alternativo: filtrar en lugar de reescribir) | no disponible | HuggingFace |
+| `s-nlp/roberta_toxicity_classifier` | no disponible | no disponible | Clasificación binaria de toxicidad (enfoque alternativo: filtrar en lugar de reescribir) | no disponible | Hugging Face |
 
 Frente al modelo base, el ajuste aporta la tarea concreta de detoxificación, pero restringe la longitud de trabajo a 64 tokens y lo especializa hasta perder las capacidades generales de generación de T5. Frente a las referencias humanas, la brecha es medible: 93,79 % de tasa de detoxificación humana frente a 86,41 % del modelo. Frente a un clasificador de toxicidad como `s-nlp/roberta_toxicity_classifier`, la diferencia es de planteamiento: el clasificador solo detecta, mientras que este modelo reescribe, lo que permite conservar el contenido del mensaje en lugar de descartarlo.
 
@@ -135,7 +135,7 @@ Frente al modelo base, el ajuste aporta la tarea concreta de detoxificación, pe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thealper2/t5-base-paradetox-detox
+- Modelo en Hugging Face: https://huggingface.co/thealper2/t5-base-paradetox-detox
 - Modelo base: https://huggingface.co/google-t5/t5-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/s-nlp/paradetox
 - Clasificador de toxicidad usado en la evaluación: https://huggingface.co/s-nlp/roberta_toxicity_classifier

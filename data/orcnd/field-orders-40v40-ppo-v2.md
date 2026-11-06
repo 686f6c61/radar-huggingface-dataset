@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Field Orders 40v40 Soldier PPO v2 es un conjunto de políticas neuronales compactas para un juego de captura de bandera (Capture-the-Flag) con temática vikingo contra mongol, desarrollado por el usuario orcnd y publicado en HuggingFace. No se trata de un modelo de lenguaje ni de un transformer: son redes densas en formato JSON personalizado que controlan soldados y comandantes dentro de una simulación de juego propia escrita en JavaScript. Cada soldado recibe su propia observación parcial y devuelve entradas de movimiento, apuntado y disparo con un esquema fijo de 126 características.
+Field Orders 40v40 Soldier PPO v2 es un conjunto de políticas neuronales compactas para un juego de captura de bandera (Capture-the-Flag) con temática vikingo contra mongol, desarrollado por el usuario orcnd y publicado en Hugging Face. No se trata de un modelo de lenguaje ni de un transformer: son redes densas en formato JSON personalizado que controlan soldados y comandantes dentro de una simulación de juego propia escrita en JavaScript. Cada soldado recibe su propia observación parcial y devuelve entradas de movimiento, apuntado y disparo con un esquema fijo de 126 características.
 
 El modelo principal, `soldier-ppo-v2.json`, es una red de 126 → 128 → 96 → 5 entradas/salidas entrenada con PPO (Proximal Policy Optimization) y GAE tras una fase de clonación de comportamiento. El comandante (`commander-v1.json`) es una red de 58 → 64 → 48 → 22 entrenada únicamente por imitación y congelada durante el entrenamiento del soldado. El paquete incluye además el runtime de inferencia en JavaScript, el esquema de observación, los checksums y los informes de entrenamiento y evaluación.
 
@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/orcnd/field-orders-40v40-ppo-v2
+- Modelo en Hugging Face: https://huggingface.co/orcnd/field-orders-40v40-ppo-v2
 - Demo en navegador (Space): https://huggingface.co/spaces/orcnd/field-orders-ai-lab
 - Vídeo de replay: `replay.mp4` (incluido en el repositorio)
 - Procedencia del replay: `demo-provenance.json`

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xw17/Qwen2.5-0.5B-Instruct_SFT_lora_loneliness` es un ajuste fino publicado en HuggingFace por el usuario xw17 sobre el modelo base Qwen2.5-0.5B-Instruct. Por el propio nombre del repositorio se deduce que se trata de un entrenamiento por supervisión (SFT) mediante un adaptador LoRA, orientado a un dominio temático relacionado con la soledad ("loneliness"). No se trata de un modelo desarrollado por un laboratorio con documentación técnica, sino de un experimento comunitario de escasa difusión.
+El modelo `xw17/Qwen2.5-0.5B-Instruct_SFT_lora_loneliness` es un ajuste fino publicado en Hugging Face por el usuario xw17 sobre el modelo base Qwen2.5-0.5B-Instruct. Por el propio nombre del repositorio se deduce que se trata de un entrenamiento por supervisión (SFT) mediante un adaptador LoRA, orientado a un dominio temático relacionado con la soledad ("loneliness"). No se trata de un modelo desarrollado por un laboratorio con documentación técnica, sino de un experimento comunitario de escasa difusión.
 
-La relevancia de esta ficha es limitada por la ausencia casi total de información verificable. La model card del autor es la plantilla automática de HuggingFace con todos los campos marcados como "[More Information Needed]", el repositorio no declara licencia, idiomas, pipeline ni datos de entrenamiento, y el tamaño declarado es de 0,0 GB, lo que puede indicar que solo contiene el adaptador LoRA o incluso que el repositorio está vacío. Los resultados de búsqueda web asociados no contienen ninguna referencia al modelo.
+La relevancia de esta ficha es limitada por la ausencia casi total de información verificable. La model card del autor es la plantilla automática de Hugging Face con todos los campos marcados como "[More Information Needed]", el repositorio no declara licencia, idiomas, pipeline ni datos de entrenamiento, y el tamaño declarado es de 0,0 GB, lo que puede indicar que solo contiene el adaptador LoRA o incluso que el repositorio está vacío. Los resultados de búsqueda web asociados no contienen ninguna referencia al modelo.
 
 En consecuencia, esta ficha recoge únicamente los datos confirmables desde los metadatos del repositorio (identificador, autor, etiquetas, formato de pesos) y marca explícitamente como "no disponible" todo aquello que no puede verificarse. Cualquier uso en producción debería ir precedido de una inspección manual del repositorio.
 
@@ -25,7 +25,7 @@ En consecuencia, esta ficha recoge únicamente los datos confirmables desde los 
 
 No se dispone de informacion sobre la arquitectura concreta mas alla del nombre del modelo. El identificador indica que el punto de partida es Qwen2.5-0.5B-Instruct, un transformer decoder-only de aproximadamente 0,5 mil millones de parametros desarrollado por Alibaba Qwen, pero la model card no confirma ni la arquitectura resultante ni si el ajuste se ha fusionado en los pesos. Por el sufijo "lora" es probable que se haya entrenado mediante adaptadores de bajo rango sobre el modelo base, aunque no se documenta el rango, los modulos objetivo ni si el adaptador se ha fusionado.
 
-Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, ni si se emplearon tecnicas de RLHF o DPO adicionales. El tema declarado en el nombre ("loneliness") sugiere un corpus de conversaciones o textos relacionados con la soledad, pero no existe ninguna descripcion verificable. Las etiquetas del repositorio incluyen `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto medioambiental de Lacoste et al. (2019) y forma parte de la plantilla automatica de HuggingFace, no de una innovacion tecnica del modelo.
+Tampoco hay informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, ni si se emplearon tecnicas de RLHF o DPO adicionales. El tema declarado en el nombre ("loneliness") sugiere un corpus de conversaciones o textos relacionados con la soledad, pero no existe ninguna descripcion verificable. Las etiquetas del repositorio incluyen `arxiv:1910.09700`, que corresponde al articulo del calculador de impacto medioambiental de Lacoste et al. (2019) y forma parte de la plantilla automatica de Hugging Face, no de una innovacion tecnica del modelo.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No hay datos de rendimiento de este ajuste que permitan una comparacion fiable. 
 |---|---|---|---|---|
 | xw17/Qwen2.5-0.5B-Instruct_SFT_lora_loneliness | ~0,5B | no disponible | no disponible | ajuste comunitario sin documentacion |
 | Qwen2.5-0.5B-Instruct (base) | ~0,5B | 32.768 tokens | Apache 2.0 | modelo oficial de Alibaba Qwen |
-| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens | Apache 2.0 | modelo oficial de HuggingFace |
+| SmolLM2-360M-Instruct | ~0,36B | 8.192 tokens | Apache 2.0 | modelo oficial de Hugging Face |
 | Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens | Apache 2.0 | modelo oficial de Alibaba Qwen |
 
 Los datos de las filas correspondientes a modelos oficiales proceden de sus fichas publicas; no se ha verificado ninguno de ellos para el modelo objeto de esta ficha.
@@ -92,7 +92,7 @@ Los datos de las filas correspondientes a modelos oficiales proceden de sus fich
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_loneliness
+- Hugging Face: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_loneliness
 - Articulo citado en las etiquetas (calculador de impacto, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto medioambiental referenciado en la plantilla: https://mlco2.github.io/impact
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct *(no verificado en la informacion proporcionada)*

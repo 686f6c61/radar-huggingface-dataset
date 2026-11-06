@@ -89,7 +89,7 @@ No se dispone de datos verificados de rendimiento ni de contexto para establecer
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nwtgck/gpt-oss-20b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/nwtgck/gpt-oss-20b-GGUF
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Modelo especulador referenciado: https://huggingface.co/RedHatAI/gpt-oss-20b-speculator.eagle3
 - Herramienta de conversion: https://github.com/ggml-org/convert

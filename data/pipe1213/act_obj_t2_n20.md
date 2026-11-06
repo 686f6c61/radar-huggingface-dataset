@@ -72,7 +72,7 @@ Contexto agregado del estudio (3 tareas, todas las semillas de entrenamiento, 20
 
 | Modelo | Parámetros | Contexto / entrada | Rendimiento (estudio, 20 demos) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ACT (este modelo) | 51,7M | Imagen 256x256 + estado; sin lenguaje | 33,1% agregado en 3 tareas | apache-2.0 | HuggingFace, lerobot |
+| ACT (este modelo) | 51,7M | Imagen 256x256 + estado; sin lenguaje | 33,1% agregado en 3 tareas | apache-2.0 | Hugging Face, lerobot |
 | SmolVLA (ajustado) | no disponible en la información | Visión-lenguaje-acción | 74,2% agregado en 3 tareas | no disponible en la información | Referenciado en el estudio |
 | Otras políticas ACT del estudio | 51,7M (misma config) | Igual que este modelo | Varía por tarea y semilla | apache-2.0 | 60 políticas publicadas en el estudio |
 
@@ -94,7 +94,7 @@ La comparación directa con SmolVLA no aísla el efecto del preentrenamiento: lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Pipe1213/act_obj_t2_n20
+- Modelo en Hugging Face: https://huggingface.co/Pipe1213/act_obj_t2_n20
 - Repositorio del estudio: https://github.com/Pipe1213/vla-vs-scratch
 - Resultados completos: https://github.com/Pipe1213/vla-vs-scratch#results
 - Análisis: https://github.com/Pipe1213/vla-vs-scratch/blob/main/results/analysis.md

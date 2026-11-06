@@ -72,7 +72,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/dvader13/olmo2-1b-sft-s1-273b)
+- [Repositorio en Hugging Face](https://huggingface.co/dvader13/olmo2-1b-sft-s1-273b)
 - [OLMo de Ai2](https://allenai.org/olmo2)
 - [Página de modelos abiertos de Ai2](https://allenai.org/language-models)
 - [OLMo en GitHub](https://github.com/allenai/OLMo)

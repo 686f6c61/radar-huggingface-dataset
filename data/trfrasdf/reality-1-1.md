@@ -84,7 +84,7 @@ La información disponible solo permite comparar con el modelo base Qwen3.6-27B,
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trfrasdf/reality-1.1
+- Repositorio Hugging Face: https://huggingface.co/trfrasdf/reality-1.1
 - Modelo base Qwen3.6-27B: https://huggingface.co/Qwen/Qwen3.6-27B
 - Paper USACO benchmark: https://arxiv.org/abs/2404.10952
 - Paper DiDPO (referencia de evaluación del base): https://arxiv.org/abs/2608.07147

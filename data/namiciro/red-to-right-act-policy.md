@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`namiciro/red-to-right-act-policy` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv 2304.13705. El modelo lo ha entrenado el usuario namiciro y lo ha subido a HuggingFace Hub mediante la librería LeRobot de HuggingFace. No es un modelo de lenguaje: es una política visomotora que mapea observaciones (estado del robot y una imagen de cámara frontal) a comandos de acción de 6 dimensiones para un robot tipo `so_follower` (SO-100/SO-101 de LeRobot).
+`namiciro/red-to-right-act-policy` es una política de imitación robótica entrenada con el método Action Chunking with Transformers (ACT), publicado en el paper arXiv 2304.13705. El modelo lo ha entrenado el usuario namiciro y lo ha subido a Hugging Face Hub mediante la librería LeRobot de Hugging Face. No es un modelo de lenguaje: es una política visomotora que mapea observaciones (estado del robot y una imagen de cámara frontal) a comandos de acción de 6 dimensiones para un robot tipo `so_follower` (SO-100/SO-101 de LeRobot).
 
 El modelo resuelve una tarea concreta y muy acotada: "Put the red block in the right box" (colocar el bloque rojo en la caja derecha). Se ha entrenado con solo 10 episodios de teleoperación (5234 fotogramas a 30 FPS) durante 10000 pasos, lo que lo convierte en una política de demostración o prueba de concepto más que en un sistema listo para producción. Su relevancia es fundamentalmente didáctica: ilustra el flujo completo de LeRobot para grabar datos, entrenar una política ACT y desplegarla en un robot de bajo coste.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| namiciro/red-to-right-act-policy | 51,7 M | no aplica | Pick-and-place bloque rojo | no disponible | HuggingFace Hub (LeRobot) |
-| Políticas ACT de referencia en LeRobot | ~50 M (típico) | no aplica | Tareas de manipulación variadas | según repo | HuggingFace Hub / docs LeRobot |
+| namiciro/red-to-right-act-policy | 51,7 M | no aplica | Pick-and-place bloque rojo | no disponible | Hugging Face Hub (LeRobot) |
+| Políticas ACT de referencia en LeRobot | ~50 M (típico) | no aplica | Tareas de manipulación variadas | según repo | Hugging Face Hub / docs LeRobot |
 | Diffusion Policy (referencia) | variable | no aplica | Manipulación visomotora | según implementación | Repos académicos y LeRobot |
 | π0 / π0-fast (Physical Intelligence) | no disponible | no aplica | Manipulación generalista | no disponible | no disponible |
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparables publicados para este checkpoin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/namiciro/red-to-right-act-policy
+- Modelo en Hugging Face: https://huggingface.co/namiciro/red-to-right-act-policy
 - Dataset de entrenamiento: https://huggingface.co/datasets/namiciro/red-to-right-test
 - Paper ACT (arXiv 2304.13705): https://huggingface.co/papers/2304.13705
 - Guía ACT de LeRobot: https://huggingface.co/docs/lerobot/main/en/act

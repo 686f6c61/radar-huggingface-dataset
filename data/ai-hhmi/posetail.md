@@ -4,7 +4,7 @@
 
 posetail es un modelo de estimación de pose animal desarrollado por AI@HHMI, la iniciativa de inteligencia artificial del Howard Hughes Medical Institute (HHMI) con sede en el Janelia Research Campus. Según la descripción del paquete PyPI, se trata de un modelo para rastrear la pose de animales en 2D o 3D a lo largo del tiempo, lo que lo sitúa en el ámbito de la visión por computador aplicada a la biología. La iniciativa AI@HHMI, que cuenta con una inversión de 500 millones de dólares a lo largo de diez años, busca integrar sistemas de IA en todas las etapas del proceso científico, y posetail es uno de los primeros modelos publicados bajo este paraguas.
 
-El modelo se distribuye bajo licencia BSD-3-Clause, lo que permite uso comercial y modificación con atribución. Sin embargo, la información pública disponible es muy limitada: la model card de HuggingFace está prácticamente vacía y no se especifican detalles sobre arquitectura, tamaño, datos de entrenamiento o rendimiento. A pesar de ello, su existencia como herramienta de seguimiento de pose animal lo hace relevante para la investigación en neurociencia, etología y biomecánica, donde el análisis del movimiento es fundamental.
+El modelo se distribuye bajo licencia BSD-3-Clause, lo que permite uso comercial y modificación con atribución. Sin embargo, la información pública disponible es muy limitada: la model card de Hugging Face está prácticamente vacía y no se especifican detalles sobre arquitectura, tamaño, datos de entrenamiento o rendimiento. A pesar de ello, su existencia como herramienta de seguimiento de pose animal lo hace relevante para la investigación en neurociencia, etología y biomecánica, donde el análisis del movimiento es fundamental.
 
 ## Especificaciones tecnicas
 
@@ -58,11 +58,11 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - Al ser un modelo de vision especifico para pose animal, su rendimiento puede degradarse en especies o entornos no representados en los datos de entrenamiento, aunque no se conocen los datos utilizados.
 - La licencia BSD-3-Clause permite uso comercial, pero se debe mantener el aviso de copyright y la renuncia de responsabilidad.
 - La ausencia de documentacion tecnica detallada dificulta la evaluacion de su idoneidad para produccion; se recomienda contactar con los autores o consultar el repositorio de GitHub para obtener mas informacion.
-- El modelo se publico en agosto de 2026 (segun la fecha de creacion en HuggingFace) y no tiene descargas ni likes, lo que sugiere que es muy reciente o aun no ha sido ampliamente adoptado.
+- El modelo se publico en agosto de 2026 (segun la fecha de creacion en Hugging Face) y no tiene descargas ni likes, lo que sugiere que es muy reciente o aun no ha sido ampliamente adoptado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ai-hhmi/posetail
+- Hugging Face: https://huggingface.co/ai-hhmi/posetail
 - PyPI: https://pypi.org/project/posetail/
 - GitHub de AI-HHMI: https://github.com/AI-HHMI
 - Repositorio tailcyclenet: https://github.com/AI-HHMI/tailcyclenet

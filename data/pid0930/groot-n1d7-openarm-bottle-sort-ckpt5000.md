@@ -63,11 +63,11 @@ El único dato cuantitativo reportado es la pérdida de entrenamiento en el paso
 
 | Modelo | Parametros | Contexto | Perdida de entrenamiento (paso) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `nvidia/GR00T-N1.7-3B` (base) | 3B | No disponible | No aplica | Apache 2.0 | Disponible en HuggingFace |
-| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000` | 3.144B | No disponible | 0.0636 (5.000) | Apache 2.0 | Disponible en HuggingFace |
-| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000` | 3.144B | No disponible | 0.0440 (10.000) | Apache 2.0 | Disponible en HuggingFace |
-| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000` | 3.144B | No disponible | 0.0282 (15.000) | Apache 2.0 | Disponible en HuggingFace |
-| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000` | 3.144B | No disponible | 0.0229 (20.000) | Apache 2.0 | Disponible en HuggingFace |
+| `nvidia/GR00T-N1.7-3B` (base) | 3B | No disponible | No aplica | Apache 2.0 | Disponible en Hugging Face |
+| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000` | 3.144B | No disponible | 0.0636 (5.000) | Apache 2.0 | Disponible en Hugging Face |
+| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt10000` | 3.144B | No disponible | 0.0440 (10.000) | Apache 2.0 | Disponible en Hugging Face |
+| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt15000` | 3.144B | No disponible | 0.0282 (15.000) | Apache 2.0 | Disponible en Hugging Face |
+| `PID0930/groot-n1d7-openarm-bottle-sort-ckpt20000` | 3.144B | No disponible | 0.0229 (20.000) | Apache 2.0 | Disponible en Hugging Face |
 
 Nota: la pérdida mostrada es de entrenamiento, no de validación. Ninguno de los checkpoints ha sido evaluado con métricas de validación.
 
@@ -83,6 +83,6 @@ Nota: la pérdida mostrada es de entrenamiento, no de validación. Ninguno de lo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000
+- Hugging Face: https://huggingface.co/PID0930/groot-n1d7-openarm-bottle-sort-ckpt5000
 - GitHub Isaac-GR00T: https://github.com/NVIDIA/Isaac-GR00T
 - GitHub OpenArm: https://github.com/enactic/openarm

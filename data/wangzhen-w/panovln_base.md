@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PanoVLN_base es un modelo publicado en HuggingFace por el usuario wangzhen-w bajo el identificador `wangzhen-w/PanoVLN_base`. La model card asociada no contiene documentacion tecnica: unicamente incluye metadatos de licencia (`license: other`, con `license_name: matterport-academic-use` y enlace al acuerdo de licencia de Matterport para uso academico de datos y modelos). No se declara tarea de pipeline, idiomas soportados, arquitectura ni tamano.
+PanoVLN_base es un modelo publicado en Hugging Face por el usuario wangzhen-w bajo el identificador `wangzhen-w/PanoVLN_base`. La model card asociada no contiene documentacion tecnica: unicamente incluye metadatos de licencia (`license: other`, con `license_name: matterport-academic-use` y enlace al acuerdo de licencia de Matterport para uso academico de datos y modelos). No se declara tarea de pipeline, idiomas soportados, arquitectura ni tamano.
 
 El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-09-20T14:57:51.000Z), lo que indica que se trata de una publicacion sin iteraciones posteriores ni validacion por parte de la comunidad. El sufijo `_base` sugiere, sin confirmacion por parte del autor, un modelo base no afinado, pero esta interpretacion no puede verificarse con la informacion disponible.
 
@@ -18,7 +18,7 @@ La relevancia de esta ficha es, por tanto, limitada y de caracter principalmente
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | matterport-academic-use (licencia personalizada, etiquetada como `other` en HuggingFace) |
+| Licencia | matterport-academic-use (licencia personalizada, etiquetada como `other` en Hugging Face) |
 | Formato de pesos | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -77,13 +77,13 @@ No disponible. No es posible establecer una comparativa fiable porque se descono
 - Riesgo de alucinacion: no evaluado y, por tanto, desconocido.
 - Limitaciones de contexto e idioma: no disponible; el campo de idiomas no esta declarado.
 - Restricciones de licencia: la licencia `matterport-academic-use` esta vinculada al acuerdo de licencia de Matterport para uso academico de datos y modelos. Esto implica, con caracter general, que el uso comercial queda excluido y que el uso esta sujeto a las condiciones de dicho acuerdo; se debe leer el texto completo antes de cualquier utilizacion.
-- Riesgo de atribucion incorrecta de licencia: HuggingFace etiqueta el modelo como `license:other`, por lo que la licencia efectiva es la referenciada en el enlace externo, no una licencia estandar reconocida por la plataforma.
+- Riesgo de atribucion incorrecta de licencia: Hugging Face etiqueta el modelo como `license:other`, por lo que la licencia efectiva es la referenciada en el enlace externo, no una licencia estandar reconocida por la plataforma.
 - Falta de validacion por la comunidad: 0 descargas y 0 likes; no hay evidencia de que el modelo haya sido reproducido o verificado por terceros.
 - Fecha de publicacion inusual en los metadatos (2026-09-20), que conviene contrastar antes de citar el modelo como trabajo previo.
 - No debe utilizarse en produccion sin una revision legal previa de la licencia y sin documentacion tecnica que acredite su comportamiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wangzhen-w/PanoVLN_base
+- Modelo en Hugging Face: https://huggingface.co/wangzhen-w/PanoVLN_base
 - Licencia referenciada (Matterport End User License Agreement, Academic Use, Model & Data): https://matterport.com/legal/matterport-end-user-license-agreement-academic-use-model-data
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada.

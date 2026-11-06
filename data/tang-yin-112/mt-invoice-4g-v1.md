@@ -34,7 +34,7 @@ Tampoco se documentan tecnicas de alineacion adicionales: no hay mencion a RLHF,
 
 - Extraccion de campos en facturas y tickets (tarea principal declarada mediante los tags `invoice` y `receipt-extraction`): transformacion de documentos comerciales en campos estructurados.
 - Generacion de texto conversacional: el repositorio incluye el tag `conversational`, por lo que admite interaccion en formato de dialogo ademas de la tarea de extraccion.
-- Compatibilidad con endpoints gestionados: el tag `endpoints_compatible` indica que el formato de pesos y la configuracion estan pensados para desplegarse en servicios de inferencia compatibles con repositorios de HuggingFace.
+- Compatibilidad con endpoints gestionados: el tag `endpoints_compatible` indica que el formato de pesos y la configuracion estan pensados para desplegarse en servicios de inferencia compatibles con repositorios de Hugging Face.
 - Ejecucion local eficiente: al publicarse unicamente en GGUF Q4_K_M, esta preparado para motores de inferencia en CPU y GPU de gama media.
 - Soporte de tool calling / function calling: no hay constancia en la informacion disponible.
 - Capacidades de agente o razonamiento multi-paso: no hay constancia en la informacion disponible.
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks adicionales en la informacion dispo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|---|
-| mt-invoice-4g-v1 | 4.205.751.296 | 2048 tokens declarados como entrada | Apache 2.0 | GGUF Q4_K_M | F1 de campo 0,9401 en dev | Publicado en HuggingFace, 0 descargas |
+| mt-invoice-4g-v1 | 4.205.751.296 | 2048 tokens declarados como entrada | Apache 2.0 | GGUF Q4_K_M | F1 de campo 0,9401 en dev | Publicado en Hugging Face, 0 descargas |
 | Qwen/Qwen3.5-4B (base) | Aproximadamente 4.000 millones segun el nombre del checkpoint | No disponible | No disponible | No disponible | No disponible | Referenciado por el autor, sin datos en esta ficha |
 | Otras alternativas especializadas en extraccion de facturas | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos verificados de alternativas comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tang-yin-112/mt-invoice-4g-v1
+- Modelo en Hugging Face: https://huggingface.co/Tang-yin-112/mt-invoice-4g-v1
 - Modelo base declarado (Qwen/Qwen3.5-4B): https://huggingface.co/Qwen/Qwen3.5-4B
 - Commit del modelo base indicado en la model card: 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a
 - Arena "Microtensor invoice / mt-4g": no disponible (no se proporciona URL)

@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparado con alternativas de la misma cat
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meshllm/Qwen3.8-Flash-Next-UD-IQ4_XS-layers
+- Repositorio en Hugging Face: https://huggingface.co/meshllm/Qwen3.8-Flash-Next-UD-IQ4_XS-layers
 - Árbol de ficheros: https://huggingface.co/meshllm/Qwen3.8-Flash-Next-UD-IQ4_XS-layers/tree/main
 - Modelo de origen: https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - Guía de Unsloth para ejecutar el modelo en local: https://unsloth.ai/docs/models/qwen3.8-next

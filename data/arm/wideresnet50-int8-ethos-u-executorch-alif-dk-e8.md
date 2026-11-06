@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wide ResNet-50 optimizado para NPUs Arm Ethos-U es una conversión del modelo de clasificación de imágenes `timm/wide_resnet50_2.tv_in1k` a un programa ExecuTorch (`.pte`) con cuantización estática W8A8 y delegado Ethos-U, pensado para su ejecución en sistemas embebidos con NPU. Lo publica Arm en HuggingFace y la conversión la realiza Nota AI mediante Arm AI Model Optimizer. El objetivo no es mejorar la precisión del modelo original, sino reducir latencia, tamaño y memoria para que quepa y funcione en microcontroladores con acelerador neuronal.
+Wide ResNet-50 optimizado para NPUs Arm Ethos-U es una conversión del modelo de clasificación de imágenes `timm/wide_resnet50_2.tv_in1k` a un programa ExecuTorch (`.pte`) con cuantización estática W8A8 y delegado Ethos-U, pensado para su ejecución en sistemas embebidos con NPU. Lo publica Arm en Hugging Face y la conversión la realiza Nota AI mediante Arm AI Model Optimizer. El objetivo no es mejorar la precisión del modelo original, sino reducir latencia, tamaño y memoria para que quepa y funcione en microcontroladores con acelerador neuronal.
 
 La arquitectura subyacente es una Wide ResNet-50 (CNN de tipo ResNet con el doble de canales por bloque respecto a ResNet-50), entrenada originalmente por timm sobre ImageNet-1k. Esta versión mantiene la tarea de clasificación de imágenes en 1.000 clases y una resolución de entrada de 224x224, pero con pesos y activaciones en INT8 simétrico per-tensor.
 
@@ -73,9 +73,9 @@ Resultados publicados en la model card, medidos en Alif Ensemble E8 (Cortex-M55 
 
 | Modelo | Arquitectura | Entrada | Precisión | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Arm/wideresnet50-int8-ethos-u-executorch-alif-dk-e8 | Wide ResNet-50 INT8 | 224x224 | Top-1 76,68% (5.000 muestras) | ExecuTorch `.pte` | BSD-3-Clause | HuggingFace, 3 descargas |
-| timm/wide_resnet50_2.tv_in1k | Wide ResNet-50 FP32 | 224x224 | Top-1 77,34% (5.000 muestras) | PyTorch/safetensors | BSD-3-Clause | HuggingFace, ampliamente usado |
-| Otras variantes ExecuTorch Ethos-U de Arm | CNN cuantizada INT8 | 224x224 | no disponible | ExecuTorch `.pte` | BSD-3-Clause | HuggingFace, según modelo |
+| Arm/wideresnet50-int8-ethos-u-executorch-alif-dk-e8 | Wide ResNet-50 INT8 | 224x224 | Top-1 76,68% (5.000 muestras) | ExecuTorch `.pte` | BSD-3-Clause | Hugging Face, 3 descargas |
+| timm/wide_resnet50_2.tv_in1k | Wide ResNet-50 FP32 | 224x224 | Top-1 77,34% (5.000 muestras) | PyTorch/safetensors | BSD-3-Clause | Hugging Face, ampliamente usado |
+| Otras variantes ExecuTorch Ethos-U de Arm | CNN cuantizada INT8 | 224x224 | no disponible | ExecuTorch `.pte` | BSD-3-Clause | Hugging Face, según modelo |
 
 La comparación directa con alternativas de la misma categoría (clasificadores cuantizados para NPU embebida) no está disponible en la información proporcionada. Frente al modelo original, la diferencia medible es la latencia y el tamaño, con una pérdida de precisión de 0,66 pp.
 
@@ -92,7 +92,7 @@ La comparación directa con alternativas de la misma categoría (clasificadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arm/wideresnet50-int8-ethos-u-executorch-alif-dk-e8
+- Modelo en Hugging Face: https://huggingface.co/Arm/wideresnet50-int8-ethos-u-executorch-alif-dk-e8
 - Modelo original: https://huggingface.co/timm/wide_resnet50_2.tv_in1k
 - Arm AI Model Optimizer: https://developer.arm.com/dev-docs/ai-model-optimizer/
 - Licencia BSD-3-Clause: https://opensource.org/license/bsd-3-clause

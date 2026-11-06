@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `erobey/Qwen3.8-27B-mlx-8bit` es una publicacion alojada en HuggingFace por el usuario erobey que, a juzgar unicamente por su nombre, corresponde a una version cuantizada a 8 bits en formato MLX de un modelo de aproximadamente 27 000 millones de parametros perteneciente a la familia Qwen. Esta interpretacion se deriva exclusivamente del identificador del repositorio y no esta confirmada por la model card, que se limita a declarar `license: mit` sin ningun otro contenido tecnico. No se dispone de informacion verificable sobre el modelo base, la arquitectura, el contexto, los idiomas ni el proceso de entrenamiento.
+El repositorio `erobey/Qwen3.8-27B-mlx-8bit` es una publicacion alojada en Hugging Face por el usuario erobey que, a juzgar unicamente por su nombre, corresponde a una version cuantizada a 8 bits en formato MLX de un modelo de aproximadamente 27 000 millones de parametros perteneciente a la familia Qwen. Esta interpretacion se deriva exclusivamente del identificador del repositorio y no esta confirmada por la model card, que se limita a declarar `license: mit` sin ningun otro contenido tecnico. No se dispone de informacion verificable sobre el modelo base, la arquitectura, el contexto, los idiomas ni el proceso de entrenamiento.
 
 El repositorio presenta cero descargas y cero "likes" en la fecha de consulta, fue creado el 18 de septiembre de 2026 y no tiene pipeline declarado. La ausencia de documentacion, de datos de entrenamiento y de resultados de evaluacion lo convierten en un artefacto no validado: cualquier evaluacion seria exige contrastar los pesos con el modelo original del que supuestamente derivan antes de considerarlo para uso en produccion.
 
@@ -43,7 +43,7 @@ Dado que no existe documentacion tecnica ni evaluacion publicada, los siguientes
 - Inferencia local en equipos Apple Silicon: una cuantizacion a 8 bits de un modelo de 27B podria ejecutarse en un Mac con memoria unificada de 32 GB o mas, permitiendo prototipado sin conexion a servicios externos. Requiere verificar primero la calidad de la cuantizacion.
 - Evaluacion comparativa de cuantizaciones: el repositorio puede servir como punto de partida para medir la degradacion de un modelo de 27B al pasar a 8 bits, comparando sus salidas con los pesos originales en precision completa.
 - Pruebas de integracion con mlx-lm y mlx-swift: util para desarrolladores que quieran validar su pipeline de carga de modelos MLX con un artefacto de tamano medio-grande.
-- Analisis reproducible de artefactos de terceros: caso de uso metodologico para estudiar como circulan en HuggingFace repositorios sin model card, sin pipeline declarado y con cero descargas.
+- Analisis reproducible de artefactos de terceros: caso de uso metodologico para estudiar como circulan en Hugging Face repositorios sin model card, sin pipeline declarado y con cero descargas.
 - Base para ajuste fino con LoRA sobre MLX: si los pesos cargan correctamente, podria emplearse como punto de partida para adaptaciones de dominio en hardware de Apple, sujeto a la verificacion previa del modelo.
 - Docencia y formacion: ilustrar en un aula o taller el flujo completo de cuantizacion y publicacion de pesos, incluyendo las buenas practicas de documentacion que este repositorio no cumple.
 
@@ -83,7 +83,7 @@ No disponible. El repositorio no identifica de forma verificable el modelo base,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/erobey/Qwen3.8-27B-mlx-8bit
+- Repositorio en Hugging Face: https://huggingface.co/erobey/Qwen3.8-27B-mlx-8bit
 - Model card: sin contenido tecnico mas alla de la declaracion de licencia MIT.
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las consultas realizadas devolvieron exclusivamente paginas de soporte de Microsoft sobre ayuda en Windows (support.microsoft.com, microsoft.com/windows/help-and-support, helpdeskgeek.com, geekzag.com), sin relacion alguna con el modelo.

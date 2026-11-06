@@ -89,9 +89,9 @@ En este benchmark, el modelo de 0,1B queda por debajo de todos los demás miembr
 
 | Modelo | Parametros | Mejor F1 | Recall @ FPR ≤ 1% | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-WAF-V1-0.1B (este modelo) | 149 M | 0.826 | 0.565 | Apache 2.0 | HuggingFace, safetensors, sin GGUF |
-| Decision-WAF-V1-0.4B | ~0,4 B | 0.944 | 0.779 | no disponible | HuggingFace (misma familia) |
-| Decision-WAF-V1.1-0.8B | ~0,8 B | 0.967 | 0.916 | no disponible | HuggingFace (misma familia) |
+| Decision-WAF-V1-0.1B (este modelo) | 149 M | 0.826 | 0.565 | Apache 2.0 | Hugging Face, safetensors, sin GGUF |
+| Decision-WAF-V1-0.4B | ~0,4 B | 0.944 | 0.779 | no disponible | Hugging Face (misma familia) |
+| Decision-WAF-V1.1-0.8B | ~0,8 B | 0.967 | 0.916 | no disponible | Hugging Face (misma familia) |
 | jev-latest | no disponible | 0.941 | 0.799 | no disponible | API (api.typesafe.ai) |
 
 Conclusión de la comparativa: dentro de la propia familia, el salto a 0,4B o 0,8B mejora sustancialmente el F1 y el recall a bajo FPR; el modelo de 0,1B solo tiene sentido cuando la restricción de hardware o latencia es determinante y se acepta menor cobertura de ataques.
@@ -110,7 +110,7 @@ Conclusión de la comparativa: dentro de la propia familia, el salto a 0,4B o 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.1B
+- Modelo en Hugging Face: https://huggingface.co/0xBrandon/Decision-WAF-V1-0.1B
 - Modelo base: https://huggingface.co/AxiomicLabs/GPT-X3-150M
 - Repositorio del ingress decision-waf: https://github.com/0x4272616E646F6E/decision-waf
 - Servicio de evaluación de referencia jev-latest: https://api.typesafe.ai

@@ -22,7 +22,7 @@ La relevancia de esta ficha es limitada y hay que ser honesto al respecto: el re
 | Formato de pesos | safetensors (adaptador PEFT/LoRA); tamano del repositorio 1,1 GB |
 | Libreria | peft (compatible con transformers y trl) |
 | Pipeline | text-generation (conversacional) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Compatibilidad | Modelo base declarado: Qwen/Qwen2.5-14B-Instruct |
 
 ## Arquitectura y entrenamiento

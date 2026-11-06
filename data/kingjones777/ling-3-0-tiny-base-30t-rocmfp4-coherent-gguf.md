@@ -83,8 +83,8 @@ No se dispone de datos comparativos con modelos de otros fabricantes (como Qwen2
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/kingjones777/Ling-3.0-tiny-base-30T-ROCmFP4-COHERENT-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-30T
+- Repositorio Hugging Face del modelo: https://huggingface.co/kingjones777/Ling-3.0-tiny-base-30T-ROCmFP4-COHERENT-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-tiny-base-30T
 - Documentación oficial de Ling: https://developer.ant-ling.com/en/docs/models/ling/
 - Modelo instruct en ModelScope: https://www.modelscope.cn/models/inclusionAI/Ling-3.0-tiny
 - Página de precios y benchmarks en OpenRouter: https://openrouter.ai/inclusionai/ling-3.0-tiny

@@ -6,7 +6,7 @@ Qwen2.5-1.5B-ExecuTorch es una exportación del modelo Qwen/Qwen2.5-1.5B al form
 
 La relevancia de esta publicación es de tipo práctico: permite ejecutar un modelo de aproximadamente 1,5 mil millones de parámetros en un teléfono sin depender de la nube, usando el runtime XNNPACK dentro de ExecuTorch 1.4.0. El autor proporciona exportaciones con la ventana de contexto fijada en el propio fichero (2.048, 4.096, 8.192 y 16.384 tokens en los ficheros listados), de modo que el desarrollador elige el equilibrio entre memoria ocupada y contexto disponible. Los pesos ocupan entre 1,11 y 1,14 GB por fichero, y la caché KV en fp32 se reserva completa al cargar el modelo.
 
-El modelo se distribuye bajo licencia Apache 2.0, la misma del modelo base. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no incluye resultados de benchmarks. La búsqueda web asociada a esta ficha no devolvió ninguna fuente relevante sobre el modelo: los resultados obtenidos corresponden a una empresa de elevadores y no guardan relación con el objeto de análisis, por lo que toda la información técnica procede de la model card y de los metadatos de HuggingFace.
+El modelo se distribuye bajo licencia Apache 2.0, la misma del modelo base. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no incluye resultados de benchmarks. La búsqueda web asociada a esta ficha no devolvió ninguna fuente relevante sobre el modelo: los resultados obtenidos corresponden a una empresa de elevadores y no guardan relación con el objeto de análisis, por lo que toda la información técnica procede de la model card y de los metadatos de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -92,7 +92,7 @@ No se dispone de cifras de rendimiento que permitan una comparacion cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/Qwen2.5-1.5B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Qwen2.5-1.5B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B/blob/main/LICENSE
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights

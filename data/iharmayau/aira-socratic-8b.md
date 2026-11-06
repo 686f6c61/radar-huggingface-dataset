@@ -2,7 +2,7 @@
 
 ## Resumen
 
-aira-socratic-8b es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario IhArmayau en HuggingFace. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de HuggingFace, lo que permite un entrenamiento aproximadamente el doble de rápido y con menor consumo de memoria que un fine-tuning convencional. El nombre sugiere una orientación hacia el diálogo socrático, aunque la model card no documenta el dataset ni la metodología de entrenamiento.
+aira-socratic-8b es un ajuste fino (fine-tuning) del modelo Meta Llama 3.1 8B Instruct, publicado por el usuario IhArmayau en Hugging Face. El modelo parte de la versión cuantizada a 4 bits de Unsloth (`unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit`) y se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, lo que permite un entrenamiento aproximadamente el doble de rápido y con menor consumo de memoria que un fine-tuning convencional. El nombre sugiere una orientación hacia el diálogo socrático, aunque la model card no documenta el dataset ni la metodología de entrenamiento.
 
 Se trata de un transformer denso de 8.030.261.248 parámetros (8B), con la arquitectura estándar de Llama 3.1: atención con RoPE, GQA y ventana de contexto nativa de 128.000 tokens en el modelo base. El repositorio ocupa 16,1 GB en safetensors, lo que indica que los pesos se han fusionado y guardado en precisión completa (probablemente bf16/fp16) a pesar de que el entrenamiento partió de una base cuantizada.
 
@@ -35,7 +35,7 @@ El fine-tuning se realizó con Unsloth y TRL, partiendo de la versión de Unslot
 - Soporte de tool calling / function calling: heredado del modelo base Llama 3.1, pero no verificado tras el fine-tuning.
 - Capacidades multilingües limitadas: la model card declara únicamente inglés; el modelo base soporta oficialmente ocho idiomas (inglés, alemán, francés, italiano, portugués, hindi, español y tailandés), pero no se garantiza su preservación.
 - No se documentan capacidades de visión, audio ni modo "thinking" explícito.
-- Compatible con text-generation-inference y endpoints de HuggingFace (tag `endpoints_compatible`).
+- Compatible con text-generation-inference y endpoints de Hugging Face (tag `endpoints_compatible`).
 
 ## Casos de uso
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantización 4 bits (GGUF Q4_K_M): en torno a 5-6 GB, más KV cache proporcional al contexto utilizado.
 - GPU recomendadas para precisión completa: A100 40/80 GB, H100, L40S; para uso ajustado, RTX 4090 (24 GB) o RTX 3090 (24 GB).
 - Cabe en GPU de consumo: sí, en RTX 4090/3090 con cuantización 8 o 4 bits; en GPUs de 16 GB (RTX 4080, 4070 Ti Super) solo con cuantización 4 bits y contextos moderados.
-- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM, llama.cpp y Ollama tras convertir los pesos a GGUF; el tag `endpoints_compatible` indica compatibilidad con los endpoints de HuggingFace.
+- Opciones de despliegue: transformers, text-generation-inference (TGI), vLLM, llama.cpp y Ollama tras convertir los pesos a GGUF; el tag `endpoints_compatible` indica compatibilidad con los endpoints de Hugging Face.
 - Latencia y throughput: no disponible (no se han publicado mediciones).
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| aira-socratic-8b | 8B | 128.000 (heredado) | Apache 2.0 | HuggingFace | Fine-tuning no documentado, sin benchmarks |
-| Meta Llama 3.1 8B Instruct | 8B | 128.000 | Llama 3.1 Community License | HuggingFace, Meta | Modelo base oficial, con benchmarks publicados y alineamiento completo |
-| Mistral 7B Instruct v0.3 | 7,2B | 32.000 | Apache 2.0 | HuggingFace | Alternativa open source con licencia permisiva y buen rendimiento en código |
-| Qwen2.5 7B Instruct | 7,6B | 131.072 | Apache 2.0 | HuggingFace, Alibaba | Multilingüe (29 idiomas) y con benchmarks publicados |
+| aira-socratic-8b | 8B | 128.000 (heredado) | Apache 2.0 | Hugging Face | Fine-tuning no documentado, sin benchmarks |
+| Meta Llama 3.1 8B Instruct | 8B | 128.000 | Llama 3.1 Community License | Hugging Face, Meta | Modelo base oficial, con benchmarks publicados y alineamiento completo |
+| Mistral 7B Instruct v0.3 | 7,2B | 32.000 | Apache 2.0 | Hugging Face | Alternativa open source con licencia permisiva y buen rendimiento en código |
+| Qwen2.5 7B Instruct | 7,6B | 131.072 | Apache 2.0 | Hugging Face, Alibaba | Multilingüe (29 idiomas) y con benchmarks publicados |
 
 La comparación directa con el modelo base es la más relevante: aira-socratic-8b no aporta métricas que permitan afirmar una mejora sobre Llama 3.1 8B Instruct, y su licencia Apache 2.0 es más permisiva que la licencia comunitaria de Meta, lo que puede ser un factor decisivo para uso comercial.
 
@@ -85,9 +85,9 @@ La comparación directa con el modelo base es la más relevante: aira-socratic-8
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IhArmayau/aira-socratic-8b
+- Modelo en Hugging Face: https://huggingface.co/IhArmayau/aira-socratic-8b
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl
 - Text Generation Inference: https://github.com/huggingface/text-generation-inference

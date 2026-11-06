@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Krea 2 Raw, desarrollado por el usuario `spyrostheboss` en HuggingFace. Su propósito es reproducir de forma consistente la apariencia y los rasgos faciales de la actriz Charithra Chandran en generaciones de imágenes, manteniendo la identidad a través de diferentes poses, expresiones, atuendos, ángulos y composiciones. Se trata de un LoRA de personaje, una técnica habitual en modelos de difusión de texto a imagen para especializar un modelo genérico en un sujeto concreto sin necesidad de reentrenar el modelo completo.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base Krea 2 Raw, desarrollado por el usuario `spyrostheboss` en Hugging Face. Su propósito es reproducir de forma consistente la apariencia y los rasgos faciales de la actriz Charithra Chandran en generaciones de imágenes, manteniendo la identidad a través de diferentes poses, expresiones, atuendos, ángulos y composiciones. Se trata de un LoRA de personaje, una técnica habitual en modelos de difusión de texto a imagen para especializar un modelo genérico en un sujeto concreto sin necesidad de reentrenar el modelo completo.
 
 El adaptador se ha entrenado sobre 310 imágenes del personaje, con una dimensión de red de 32 y un alpha de 32, y se distribuye como un único archivo `safetensors` de aproximadamente 0,5 GB (tamaño del repositorio completo, que incluye muestras). Está diseñado para usarse con el modelo base Krea 2, preferiblemente la variante Turbo para inferencia, y requiere la palabra de activación `chardran` como primer token del prompt. La relevancia de este tipo de modelos radica en que permiten a creadores y desarrolladores generar imágenes de un personaje específico con alta fidelidad y control, sin necesidad de entrenar un modelo desde cero.
 
@@ -66,7 +66,7 @@ No se dispone de informacion sobre otros LoRA de personaje especificos para Krea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spyrostheboss/Charithra_Chandran_Krea_2_LoRA
+- Hugging Face: https://huggingface.co/spyrostheboss/Charithra_Chandran_Krea_2_LoRA
 - Repositorio de entrenamiento de LoRA para Krea 2 (relacionado): https://github.com/bongobongo2020/krea2-character-lora-trainer
 - Biblioteca de modelos de Krea: https://www.krea.ai/models
 - Archivo de modelos de CivitAI (no especifico): https://civitaiarchive.com/

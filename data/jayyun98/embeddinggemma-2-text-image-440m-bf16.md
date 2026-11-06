@@ -6,7 +6,7 @@
 
 El modelo tiene 438.760.472 parámetros efectivos (unos 440 M, de ahí el sufijo del nombre) y genera embeddings de 768 dimensiones con soporte de Matryoshka Representation Learning (MRL) para truncar a 512, 256 y 128 dimensiones. Admite como entrada texto, código, imágenes y combinaciones texto+imagen, con un presupuesto de contexto de 8.192 tokens. Está pensado para tareas de recuperación (retrieval), búsqueda semántica, similitud de frases y búsqueda de código, y se distribuye a través de SentenceTransformers y Transformers.
 
-Su relevancia práctica es doble: por un lado ofrece un empaquetado ligero (877,60 MB de pesos) orientado a entornos con memoria limitada y compatible con el pipeline `feature-extraction`; por otro, al eliminar el audio reduce el tamaño respecto al modelo completo. Es un derivado independiente, no una publicación oficial de Google, y en el momento de redactar esta ficha no registra descargas ni valoraciones en HuggingFace.
+Su relevancia práctica es doble: por un lado ofrece un empaquetado ligero (877,60 MB de pesos) orientado a entornos con memoria limitada y compatible con el pipeline `feature-extraction`; por otro, al eliminar el audio reduce el tamaño respecto al modelo completo. Es un derivado independiente, no una publicación oficial de Google, y en el momento de redactar esta ficha no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -80,7 +80,7 @@ Estas cifras comprueban que las salidas del export coinciden con las del modelo 
 - VRAM estimada para inferencia: aproximadamente 1,5-2,5 GB en BF16 contando pesos, activaciones y overhead de runtime con lotes moderados; en torno a 3 GB en FP32. Son estimaciones, no valores medidos publicados.
 - Cabe en GPU de consumo: si. Cualquier GPU con 4 GB o mas de VRAM deberia ser suficiente en BF16; el autor verifico la inferencia BF16 sobre backend MPS (Apple Silicon).
 - No usar FP16: el autor advierte explicitamente de no convertir el modelo a FP16; emplear BF16 o FP32.
-- Opciones de despliegue documentadas: SentenceTransformers (>= 6.1.0), Transformers (>= 5.19.0) con PyTorch 2.14.1, y la API MLX mencionada en la model card. La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue documentadas: SentenceTransformers (>= 6.1.0), Transformers (>= 5.19.0) con PyTorch 2.14.1, y la API MLX mencionada en la model card. La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Opciones no documentadas en la informacion disponible: vLLM, TGI, llama.cpp, Ollama, TEI y similares no se mencionan; habria que validarlas por separado.
 - Latencia y throughput: no disponible. No se han publicado mediciones de velocidad.
 - Nota de memoria: el autor advierte que el tamano de los pesos (877,60 MB) no equivale a la memoria total de ejecucion, y que los valores 270M/440M de los nombres de repositorio son tamanos de despliegue redondeados.
@@ -89,8 +89,8 @@ Estas cifras comprueban que las salidas del export coinciden con las del modelo 
 
 | Modelo | Parametros | Contexto | Modalidades | Dimension de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| jayyun98/embeddinggemma-2-text-image-440m-bf16 | 438.760.472 efectivos (BF16) | 8.192 tokens | Texto, codigo, imagen, texto+imagen (sin audio) | 768 con MRL 512/256/128 | Apache 2.0 | HuggingFace, via SentenceTransformers/Transformers |
-| google/embeddinggemma-2 (modelo base) | no disponible (incluye codificador y proyeccion de audio, por lo que supera el recuento de este export) | no disponible | Texto, imagen, audio (segun la model card de este export) | no disponible | no disponible en la informacion proporcionada | HuggingFace (revision `914f7f89`) |
+| jayyun98/embeddinggemma-2-text-image-440m-bf16 | 438.760.472 efectivos (BF16) | 8.192 tokens | Texto, codigo, imagen, texto+imagen (sin audio) | 768 con MRL 512/256/128 | Apache 2.0 | Hugging Face, via SentenceTransformers/Transformers |
+| google/embeddinggemma-2 (modelo base) | no disponible (incluye codificador y proyeccion de audio, por lo que supera el recuento de este export) | no disponible | Texto, imagen, audio (segun la model card de este export) | no disponible | no disponible en la informacion proporcionada | Hugging Face (revision `914f7f89`) |
 | Otras alternativas de embeddings multilingues | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos verificados de terceros modelos comparables (por ejemplo, alternativas de embeddings multilingues de tamano similar) en la informacion proporcionada, por lo que no se incluyen cifras de rendimiento comparado.
@@ -113,7 +113,7 @@ No se dispone de datos verificados de terceros modelos comparables (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-bf16
+- Modelo en Hugging Face: https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-bf16
 - Modelo base (Google DeepMind): https://huggingface.co/google/embeddinggemma-2
 - Revision del checkpoint de origen: https://huggingface.co/google/embeddinggemma-2/tree/914f7f89142e33e77833254d9c9b90c3cef7303b
 - Artefactos de verificacion incluidos en el repositorio: `conversion.json` y `verification.json`

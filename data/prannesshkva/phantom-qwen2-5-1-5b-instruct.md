@@ -47,15 +47,15 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 - VRAM estimada: el peso del modelo en FP16 ocupa aproximadamente 3.1 GB (según el tamaño del repositorio). La caché activa se mantiene por debajo de 35 MB según el autor, lo que permite inferencia en GPUs con 4 GB de VRAM.
 - GPU recomendadas: RTX 3050 4 GB, RTX 4060, Apple Silicon M-series y Nvidia Jetson, según la documentación del autor. Para servidores, cualquier GPU con suficiente VRAM (A100, H100) es adecuada, aunque no se especifica.
-- Opciones de despliegue: no disponible en la información. El autor proporciona un "Phantom-Samba-Engine" en HuggingFace Spaces, pero no se detalla su integración con frameworks como vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: no disponible en la información. El autor proporciona un "Phantom-Samba-Engine" en Hugging Face Spaces, pero no se detalla su integración con frameworks como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible. El autor afirma una aceleración de 2.76x en TTFT gracias al prefijo caching, pero no se ofrecen medidas absolutas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Phantom-Qwen2.5-1.5B-Instruct | 1.543.714.304 | No disponible | BSL 1.1 | HuggingFace |
-| Qwen2.5-1.5B-Instruct | ~1.54B | 32k (según documentación oficial) | Apache 2.0 | HuggingFace |
+| Phantom-Qwen2.5-1.5B-Instruct | 1.543.714.304 | No disponible | BSL 1.1 | Hugging Face |
+| Qwen2.5-1.5B-Instruct | ~1.54B | 32k (según documentación oficial) | Apache 2.0 | Hugging Face |
 
 Nota: no se dispone de datos de benchmarks comparativos entre ambos modelos. El modelo Phantom es una variante experimental que añade el motor de espacio de estados PHANTOM al modelo base Qwen2.5-1.5B-Instruct.
 
@@ -70,7 +70,7 @@ Nota: no se dispone de datos de benchmarks comparativos entre ambos modelos. El 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Prannesshkva/Phantom-Qwen2.5-1.5B-Instruct
+- Hugging Face: https://huggingface.co/Prannesshkva/Phantom-Qwen2.5-1.5B-Instruct
 - Artículo arxiv: https://arxiv.org/abs/2412.15115
 - DOI Zenodo: https://doi.org/10.5281/zenodo.22177116
 - DOI HF Research: https://doi.org/10.57967/hf/phantom-2026

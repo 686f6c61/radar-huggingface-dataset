@@ -76,7 +76,7 @@ En la información disponible no se mencionan otros modelos comparables de la mi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruvnet/ruos-foundry-swarm-qwen3-30b-a3b-e64
+- Hugging Face: https://huggingface.co/ruvnet/ruos-foundry-swarm-qwen3-30b-a3b-e64
 - Repositorio MoE-Foundry: https://github.com/ruvnet/MoE-Foundry
 - Informe técnico de Qwen3: https://arxiv.org/html/2505.09388v1
 - GitHub de ruvnet: https://github.com/ruvnet

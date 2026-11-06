@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ModernProst-base es un modelo de aprendizaje profundo desarrollado por gbouras13 (identificador de HuggingFace) que predice secuencias del alfabeto estructural de Foldseek a partir de la secuencia de aminoacidos de una proteina. En concreto, genera dos representaciones estructurales: el alfabeto 3Di de 20 estados y un alfabeto estructural reducido de 12 estados. El objetivo es sustituir a las estructuras tridimensionales predichas (por ejemplo, mediante AlphaFold) como consultas o dianas en busquedas Foldseek, evitando el coste computacional de predecir la estructura completa.
+ModernProst-base es un modelo de aprendizaje profundo desarrollado por gbouras13 (identificador de Hugging Face) que predice secuencias del alfabeto estructural de Foldseek a partir de la secuencia de aminoacidos de una proteina. En concreto, genera dos representaciones estructurales: el alfabeto 3Di de 20 estados y un alfabeto estructural reducido de 12 estados. El objetivo es sustituir a las estructuras tridimensionales predichas (por ejemplo, mediante AlphaFold) como consultas o dianas en busquedas Foldseek, evitando el coste computacional de predecir la estructura completa.
 
 El modelo tiene aproximadamente 1.041 millones de parametros (1B) y se distribuye en formato safetensors bajo la libreria transformers, con codigo personalizado (`trust_remote_code=True`). Trabaja a nivel de residuo, con un token por aminoacido y sin tokens BOS/EOS, lo que simplifica el pipeline de inferencia. Esta orientado a bioinformatica estructural y busqueda de similitud de pliegues a gran escala.
 
-La version actual incorpora, ademas del backbone original, una cabeza opcional de prediccion de pLDDT por residuo (338K parametros) entrenada sobre el backbone congelado, que estima la confianza estructural de cada posicion. El modelo esta etiquetado como `feature-extraction` y acumula 80 descargas en HuggingFace, con licencia no especificada en la informacion disponible.
+La version actual incorpora, ademas del backbone original, una cabeza opcional de prediccion de pLDDT por residuo (338K parametros) entrenada sobre el backbone congelado, que estima la confianza estructural de cada posicion. El modelo esta etiquetado como `feature-extraction` y acumula 80 descargas en Hugging Face, con licencia no especificada en la informacion disponible.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks del backbone principal (precision d
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ModernProst-base | 1,04B | no disponible | Prediccion 3Di/12st desde secuencia | no disponible | HuggingFace |
-| ModernProst-pssm | no disponible | no disponible | Prediccion de perfiles PSSM | no disponible | HuggingFace (gbouras13/modernprost-pssm) |
+| ModernProst-base | 1,04B | no disponible | Prediccion 3Di/12st desde secuencia | no disponible | Hugging Face |
+| ModernProst-pssm | no disponible | no disponible | Prediccion de perfiles PSSM | no disponible | Hugging Face (gbouras13/modernprost-pssm) |
 | Foldseek (herramienta) | no aplica | no aplica | Busqueda estructural | no disponible | Herramienta externa |
 | AlphaFold / ColabFold | no disponible | no disponible | Prediccion de estructura 3D | no disponible | Ampliamente disponible |
 
@@ -102,7 +102,7 @@ La comparativa con otros predictores de alfabetos estructurales (por ejemplo, mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gbouras13/modernprost-base
+- Hugging Face: https://huggingface.co/gbouras13/modernprost-base
 - Modelo de perfiles PSSM: https://huggingface.co/gbouras13/modernprost-pssm
 - Dataset de entrenamiento: https://huggingface.co/datasets/gbouras13/ModernProst-3di12st
 - Foldseek: no disponible en la informacion proporcionada

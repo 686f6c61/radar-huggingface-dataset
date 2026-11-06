@@ -72,6 +72,6 @@ No se dispone de datos de rendimiento comparativo.
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only)
+- [Hugging Face - modelo](https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-statute_ffn-only)
 - [Weights & Biases - run de entrenamiento](https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_ffn_only/runs/ayl0ic6k)
-- [Modelo base en HuggingFace](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
+- [Modelo base en Hugging Face](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)

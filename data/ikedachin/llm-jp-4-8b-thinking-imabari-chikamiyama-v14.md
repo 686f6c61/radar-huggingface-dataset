@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chikamiyama v14 (近見山) es un ajuste fino supervisado de parámetros completos del modelo japonés de razonamiento LLM-jp-4-8B-Thinking, desarrollado por el usuario de HuggingFace ikedachin. Su propósito es especializar un modelo de razonamiento de 8.590 millones de parámetros en el dialecto de Imabari (ciudad de la prefectura de Ehime, Japón) y en japonés estándar, manteniendo la capacidad de generar cadenas de razonamiento explícitas antes de la respuesta final.
+Chikamiyama v14 (近見山) es un ajuste fino supervisado de parámetros completos del modelo japonés de razonamiento LLM-jp-4-8B-Thinking, desarrollado por el usuario de Hugging Face ikedachin. Su propósito es especializar un modelo de razonamiento de 8.590 millones de parámetros en el dialecto de Imabari (ciudad de la prefectura de Ehime, Japón) y en japonés estándar, manteniendo la capacidad de generar cadenas de razonamiento explícitas antes de la respuesta final.
 
 El modelo introduce dos mecanismos de control poco habituales: cuatro canales de generación (`analysis_imabari`, `final_imabari`, `analysis`, `final`) que separan el razonamiento de la respuesta final y permiten elegir entre dialecto local y japonés estándar, y tres niveles de esfuerzo de razonamiento (`low`, `medium`, `high`) que se inyectan como instrucción de sistema a través de la plantilla de chat personalizada. Es relevante ahora porque ejemplifica la adaptación de modelos de razonamiento open source a variedades lingüísticas de bajo recurso, un caso de uso cada vez más demandado en comunidades locales y en investigación sociolingüística computacional.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en bf16: aproximadamente 17,2 GB solo para pesos, más overhead de activaciones y caché KV; en la práctica se recomienda 24 GB o más para contexto moderado.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para bf16 con contexto limitado.
 - GPU de consumo: cabe en RTX 4090 y, con cuantización no oficial, potencialmente en GPUs de 16 GB; el autor no publica versiones cuantizadas.
-- Despliegue: HuggingFace Transformers con `device_map="auto"` es la vía documentada; el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que TGI y endpoints compatibles son opciones plausibles. No se documentan instrucciones para vLLM, llama.cpp ni Ollama.
+- Despliegue: Hugging Face Transformers con `device_map="auto"` es la vía documentada; el repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que TGI y endpoints compatibles son opciones plausibles. No se documentan instrucciones para vLLM, llama.cpp ni Ollama.
 - Es obligatorio usar el tokenizer distribuido con el modelo, ya que la plantilla de chat personalizada depende de él.
 - Latencia y throughput: no disponibles.
 
@@ -85,7 +85,7 @@ No se dispone de resultados de benchmarks que permitan una comparación cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikedachin/llm-jp-4-8b-thinking-imabari-chikamiyama-v14
+- Modelo en Hugging Face: https://huggingface.co/ikedachin/llm-jp-4-8b-thinking-imabari-chikamiyama-v14
 - Modelo base: https://huggingface.co/llm-jp/llm-jp-4-8b-thinking
 - Dataset de entrenamiento: https://huggingface.co/datasets/ikedachin/imabari_wiki_qa_v4_reasoning_effort_llmjp4
 - Dataset de entrenamiento: https://huggingface.co/datasets/ikedachin/std_lang_wiki_qa_v4_validated_w_reasoning_effort_llmjp4

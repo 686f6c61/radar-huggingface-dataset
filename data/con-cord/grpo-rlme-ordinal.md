@@ -2,9 +2,9 @@
 
 ## Resumen
 
-GRPO-RLME-Ordinal es un checkpoint multimodal publicado en HuggingFace por el usuario con-cord bajo el identificador `con-cord/GRPO-RLME-Ordinal`. Por sus etiquetas (`gemma3`, `image-text-to-text`, `conversational`, `transformers`, `safetensors`) se trata de un modelo de generación de texto a partir de entradas de imagen y texto, construido previsiblemente sobre la familia Gemma 3, con un total de 4.300.079.472 parámetros reales verificados en los ficheros de safetensors. El nombre sugiere un ajuste fino mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, aunque el autor no documenta nada al respecto.
+GRPO-RLME-Ordinal es un checkpoint multimodal publicado en Hugging Face por el usuario con-cord bajo el identificador `con-cord/GRPO-RLME-Ordinal`. Por sus etiquetas (`gemma3`, `image-text-to-text`, `conversational`, `transformers`, `safetensors`) se trata de un modelo de generación de texto a partir de entradas de imagen y texto, construido previsiblemente sobre la familia Gemma 3, con un total de 4.300.079.472 parámetros reales verificados en los ficheros de safetensors. El nombre sugiere un ajuste fino mediante GRPO (Group Relative Policy Optimization), una técnica de aprendizaje por refuerzo, aunque el autor no documenta nada al respecto.
 
-El problema principal que plantea esta ficha es de trazabilidad: la model card es la plantilla autogenerada de HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`. No hay documentación de sesgos, de uso previsto, ni de resultados de evaluación. El repositorio tiene 0 descargas y 0 «me gusta» en el momento de la consulta, y fue creado y actualizado el 21 de septiembre de 2026 en un intervalo de cuatro minutos, lo que apunta a una subida de prueba o de investigación sin validación comunitaria.
+El problema principal que plantea esta ficha es de trazabilidad: la model card es la plantilla autogenerada de Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparámetros, evaluación) aparecen como `[More Information Needed]`. No hay documentación de sesgos, de uso previsto, ni de resultados de evaluación. El repositorio tiene 0 descargas y 0 «me gusta» en el momento de la consulta, y fue creado y actualizado el 21 de septiembre de 2026 en un intervalo de cuatro minutos, lo que apunta a una subida de prueba o de investigación sin validación comunitaria.
 
 Por tanto, es relevante como objeto de estudio de pipelines de RL sobre modelos multimodales de ~4B parámetros, pero no es en ningún caso un artefacto listo para producción sin una evaluación previa por parte de quien lo adopte. Toda cifra que no figure en esta ficha como dato verificado debe considerarse no disponible.
 
@@ -31,13 +31,13 @@ Por tanto, es relevante como objeto de estudio de pipelines de RL sobre modelos 
 
 La unica informacion estructural disponible proviene de las etiquetas del repositorio. `gemma3` indica que el modelo parte de la familia Gemma 3 de Google DeepMind, que en su variante de ~4B parametros es un transformer decoder-only con un encoder de vision acoplado para tareas `image-text-to-text`. El pipeline declarado (`image-text-to-text`) y la etiqueta `conversational` son coherentes con un modelo multimodal instruido para dialogo multiturno. El numero de parametros registrado en los safetensors (4.300.079.472) es consistente con ese tamano de familia, aunque la model card no confirma la arquitectura ni describe el encoder visual.
 
-Sobre el entrenamiento no hay ningun dato: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o GRPO. El nombre del repositorio, `GRPO-RLME-Ordinal`, sugiere que se aplico GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo con politicas relativas dentro de un grupo de muestras, y que el termino «Ordinal» podria referirse a una funcion de recompensa de naturaleza ordinal; ninguna de estas dos inferencias esta documentada por el autor. El unico enlace a un paper en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que aparece citado en la propia plantilla de HuggingFace, no como publicacion del modelo. El intervalo de cuatro minutos entre creacion y actualizacion, junto con la ausencia total de campos completados, sugiere un proceso de subida automatico o incompleto.
+Sobre el entrenamiento no hay ningun dato: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o GRPO. El nombre del repositorio, `GRPO-RLME-Ordinal`, sugiere que se aplico GRPO (Group Relative Policy Optimization), un algoritmo de aprendizaje por refuerzo con politicas relativas dentro de un grupo de muestras, y que el termino «Ordinal» podria referirse a una funcion de recompensa de naturaleza ordinal; ninguna de estas dos inferencias esta documentada por el autor. El unico enlace a un paper en las etiquetas es `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono y que aparece citado en la propia plantilla de Hugging Face, no como publicacion del modelo. El intervalo de cuatro minutos entre creacion y actualizacion, junto con la ausencia total de campos completados, sugiere un proceso de subida automatico o incompleto.
 
 ## Capacidades
 
 - Generacion de texto condicionada por imagenes: el pipeline declarado es `image-text-to-text`, de modo que acepta al menos una imagen y una instruccion en texto y produce una respuesta textual.
 - Conversacion multiturno: la etiqueta `conversational` indica que el formato de uso previsto es el dialogo, con historial de mensajes.
-- Compatibilidad con infraestructura de servicio: las etiquetas `text-generation-inference` y `endpoints_compatible` apuntan a que puede desplegarse con TGI y con los endpoints de HuggingFace.
+- Compatibilidad con infraestructura de servicio: las etiquetas `text-generation-inference` y `endpoints_compatible` apuntan a que puede desplegarse con TGI y con los endpoints de Hugging Face.
 - Carga en el ecosistema transformers: la libreria declarada es `transformers`, con pesos en safetensors.
 - Tool calling / function calling: no disponible; no se menciona en ninguna parte del repositorio.
 - Razonamiento multi-paso y agentes: no disponible; no hay documentacion que lo respalde.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cuantizacion a 4 bits: en torno a 2,5-3 GB de pesos, lo que permitiria ejecutarlo en GPUs de consumo con 6-8 GB de VRAM. No obstante, el repositorio no publica pesos cuantizados, por lo que habria que generarlos.
 - GPU recomendadas: para bf16 sin cuantizar, NVIDIA A100 40 GB, H100, L40S o RTX 4090 (24 GB); para cuantizacion de 8 o 4 bits, RTX 3090, RTX 4080 o RTX 4060 Ti de 16 GB.
 - Cabe en GPU de consumo: si, previsiblemente en RTX 4090, RTX 3090 y RTX 4080/4070 Ti Super en bf16 con contexto moderado, y en GPUs de 8 GB si se cuantiza a 4 bits. No verificado con este checkpoint concreto.
-- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints de HuggingFace (`endpoints_compatible`) y, presumiblemente, vLLM si la version soporta la familia Gemma 3. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, formato que no esta publicado.
+- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference`), endpoints de Hugging Face (`endpoints_compatible`) y, presumiblemente, vLLM si la version soporta la familia Gemma 3. Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, formato que no esta publicado.
 - Latencia y throughput: no disponibles; no se ha publicado ninguna medicion.
 
 ## Comparativa con modelos similares
@@ -78,10 +78,10 @@ La comparacion cuantitativa no es posible porque el modelo carece de resultados 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| con-cord/GRPO-RLME-Ordinal | 4,3B | No disponible | No disponible | HuggingFace, safetensors, 0 descargas |
+| con-cord/GRPO-RLME-Ordinal | 4,3B | No disponible | No disponible | Hugging Face, safetensors, 0 descargas |
 | Gemma 3 4B (familia base probable) | ~4B | 128 000 tokens segun documentacion publica de Google, no verificado aqui | Terminos de uso de Gemma (no confirmado para este checkpoint) | Ampliamente desplegado, con soporte en TGI, vLLM y llama.cpp |
-| Qwen2.5-VL-3B-Instruct | ~3B | Contexto nativo de 32 768 tokens segun su documentacion, no verificado aqui | Apache 2.0 | HuggingFace, con variantes cuantizadas |
-| SmolVLM2-2.2B | ~2,2B | No verificado | Apache 2.0 | HuggingFace, orientado a dispositivos con poca memoria |
+| Qwen2.5-VL-3B-Instruct | ~3B | Contexto nativo de 32 768 tokens segun su documentacion, no verificado aqui | Apache 2.0 | Hugging Face, con variantes cuantizadas |
+| SmolVLM2-2.2B | ~2,2B | No verificado | Apache 2.0 | Hugging Face, orientado a dispositivos con poca memoria |
 
 Con estos datos, la unica conclusion defendible es que GRPO-RLME-Ordinal parte de una base de tamano similar a Gemma 3 4B y que su ventaja o desventaja frente a las alternativas es hoy por hoy indeterminable.
 
@@ -101,7 +101,7 @@ Con estos datos, la unica conclusion defendible es que GRPO-RLME-Ordinal parte d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/con-cord/GRPO-RLME-Ordinal
+- Modelo en Hugging Face: https://huggingface.co/con-cord/GRPO-RLME-Ordinal
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre estimacion de emisiones de carbono, no es la publicacion del modelo): https://arxiv.org/abs/1910.09700
 - Documentacion oficial de la familia Gemma (contexto de la arquitectura base probable, no confirma este checkpoint): no disponible en los resultados de busqueda proporcionados
 - Repositorio de codigo, demo o paper del modelo: no disponible

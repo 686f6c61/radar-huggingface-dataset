@@ -68,8 +68,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [Repositorio HuggingFace del GGUF](https://huggingface.co/mfielding92/thefriend-31b-v2-QAT3-GGUF)
-- [Modelo base en HuggingFace](https://huggingface.co/mfielding92/thefriend-31b-v2-QAT3)
+- [Repositorio Hugging Face del GGUF](https://huggingface.co/mfielding92/thefriend-31b-v2-QAT3-GGUF)
+- [Modelo base en Hugging Face](https://huggingface.co/mfielding92/thefriend-31b-v2-QAT3)
 - [Otra versión GGUF (GGUFX)](https://huggingface.co/mfielding92/thefriend-31b-v2-GGUFX)
 - [Perfil de GitHub del autor](https://github.com/mfielding92/)
 - [Página de despliegue en FriendliAI](https://friendli.ai/models/mfielding92/thefriend-31b-v2)

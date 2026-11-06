@@ -2,7 +2,7 @@
 
 ## Resumen
 
-harutoanp/generation es un repositorio experimental de HuggingFace que implementa una base de codigo Albef orientada a tareas de generacion. El modelo se publica con la etiqueta de escala "large" en su configuracion, pero el checkpoint real contiene unicamente 33.088 parametros segun los datos de safetensors, un orden de magnitud muy inferior al de cualquier modelo de generacion utilizable. No se trata de un checkpoint entrenado, sino de una inicializacion valida para pruebas de humo (smoke tests).
+harutoanp/generation es un repositorio experimental de Hugging Face que implementa una base de codigo Albef orientada a tareas de generacion. El modelo se publica con la etiqueta de escala "large" en su configuracion, pero el checkpoint real contiene unicamente 33.088 parametros segun los datos de safetensors, un orden de magnitud muy inferior al de cualquier modelo de generacion utilizable. No se trata de un checkpoint entrenado, sino de una inicializacion valida para pruebas de humo (smoke tests).
 
 El autor lo describe explicitamente como un punto de partida experimental: el archivo `model.safetensors` sirve para verificar que la arquitectura carga y se ejecuta, no para producir resultados de calidad. La model card indica que no se reclama ninguna puntuacion de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -33,7 +33,7 @@ En cuanto al entrenamiento, no hay evidencia de que se haya completado ninguno. 
 - El codebase esta etiquetado para tareas de generacion y la arquitectura Albef admite, en su formulacion original, procesamiento conjunto de vision y lenguaje; sin embargo, no se confirma en este repositorio ningun soporte multimodal efectivo.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
-- Capacidades multilingues: no disponible; no se declaran idiomas en la model card ni en los metadatos de HuggingFace.
+- Capacidades multilingues: no disponible; no se declaran idiomas en la model card ni en los metadatos de Hugging Face.
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
 
 ## Casos de uso
@@ -76,5 +76,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/harutoanp/generation
+- Hugging Face: https://huggingface.co/harutoanp/generation
 - La busqueda web realizada no ha devuelto enlaces relevantes para este modelo; los resultados obtenidos (HART del MIT, Grok Imagine, SeaArt, AutoTrain, Civitai) corresponden a proyectos distintos y no guardan relacion con harutoanp/generation.

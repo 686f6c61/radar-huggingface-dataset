@@ -69,8 +69,8 @@ No se dispone de resultados de benchmarks que permitan una comparacion cuantitat
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| princeton-nlp/queen_pawn-8 | 3,08 mil millones (mas encoder y cross-attention) | no disponible | no disponible | no disponible; terminos upstream aplicables | HuggingFace, 0 descargas y 0 likes en el momento del registro |
-| SmolLM3-3B (modelo base) | aproximadamente 3B | no disponible en esta informacion | no disponible | Apache-2.0 | HuggingFace |
+| princeton-nlp/queen_pawn-8 | 3,08 mil millones (mas encoder y cross-attention) | no disponible | no disponible | no disponible; terminos upstream aplicables | Hugging Face, 0 descargas y 0 likes en el momento del registro |
+| SmolLM3-3B (modelo base) | aproximadamente 3B | no disponible en esta informacion | no disponible | Apache-2.0 | Hugging Face |
 | Leela Chess Zero (encoder BT5) | no disponible | no disponible | no disponible | terminos de LC0 | lczero.org |
 
 No se han identificado en la informacion proporcionada otros modelos de lenguaje de ajedrez condicionados por tablero con los que comparar de forma directa.
@@ -92,6 +92,6 @@ No se han identificado en la informacion proporcionada otros modelos de lenguaje
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/princeton-nlp/queen_pawn-8
+- Hugging Face: https://huggingface.co/princeton-nlp/queen_pawn-8
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Leela Chess Zero: https://lczero.org/

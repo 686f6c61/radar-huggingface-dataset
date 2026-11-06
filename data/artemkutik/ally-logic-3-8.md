@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ally-Logic-3.8 es un modelo de lenguaje publicado en HuggingFace por el usuario artemKUTIK bajo el identificador `artemKUTIK/Ally-Logic-3.8`. Se trata de un modelo de arquitectura de tipo Llama (según la etiqueta `llama` del repositorio) con 134.515.008 parámetros totales, un tamaño que lo sitúa en la categoría de los modelos pequeños, por debajo de los 200 millones de parámetros. Los pesos están en formato safetensors y el repositorio ocupa 0,3 GB, lo que resulta coherente con un almacenamiento en precisión de 16 bits.
+Ally-Logic-3.8 es un modelo de lenguaje publicado en Hugging Face por el usuario artemKUTIK bajo el identificador `artemKUTIK/Ally-Logic-3.8`. Se trata de un modelo de arquitectura de tipo Llama (según la etiqueta `llama` del repositorio) con 134.515.008 parámetros totales, un tamaño que lo sitúa en la categoría de los modelos pequeños, por debajo de los 200 millones de parámetros. Los pesos están en formato safetensors y el repositorio ocupa 0,3 GB, lo que resulta coherente con un almacenamiento en precisión de 16 bits.
 
 La relevancia de este tipo de modelos radica en su capacidad de ejecutarse en hardware muy modesto: con 134,5 millones de parámetros, la inferencia en FP16 requiere aproximadamente 269 MB solo para los pesos, lo que permite desplegarlo íntegramente en CPU, en dispositivos de borde o en cualquier GPU de consumo, incluso con cuantizaciones de 4 bits que reducen el peso a unos 67 MB. Esto los hace útiles como clasificadores, generadores de texto ligero o componentes de pipelines con requisitos estrictos de latencia y coste.
 
@@ -72,7 +72,7 @@ La comparación se establece con modelos públicos de tamaño equivalente. Los d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ally-Logic-3.8 | 134.515.008 | No disponible | Apache 2.0 | HuggingFace, 0 descargas |
+| Ally-Logic-3.8 | 134.515.008 | No disponible | Apache 2.0 | Hugging Face, 0 descargas |
 | GPT-2 | 124 millones | No disponible en esta ficha | No disponible en esta ficha | Ampliamente disponible |
 | Pythia-160M | 160 millones | No disponible en esta ficha | No disponible en esta ficha | Ampliamente disponible |
 | SmolLM-135M | 135 millones | No disponible en esta ficha | No disponible en esta ficha | Ampliamente disponible |
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento comparativo para Ally-Logic-3.8, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/artemKUTIK/Ally-Logic-3.8
+- Repositorio en Hugging Face: https://huggingface.co/artemKUTIK/Ally-Logic-3.8
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados devueltos por el buscador corresponden a páginas de calendario y festividades (timeanddate.com) sin ninguna relación con Ally-Logic-3.8, por lo que no se incluyen.
 - Paper, blog técnico, repositorio de código o demo: no disponibles.

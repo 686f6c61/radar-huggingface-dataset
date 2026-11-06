@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-3.6-27B-UmberShrike es un derivado afinado (fine-tune) publicado por el usuario Fluxmire en HuggingFace, construido sobre Tooony133/Qwen-3.6-27B-SkinnyPete, que a su vez deriva del modelo Qwen/Qwen3.6-27B. El repositorio almacena los pesos en FP8 mediante el formato compressed-tensors, con un total de 27.356.728.560 parámetros y un tamano de repositorio de 31,2 GB. La licencia declarada es Apache-2.0 y la pipeline asociada es image-text-to-text, lo que indica que la familia de origen es multimodal.
+Qwen-3.6-27B-UmberShrike es un derivado afinado (fine-tune) publicado por el usuario Fluxmire en Hugging Face, construido sobre Tooony133/Qwen-3.6-27B-SkinnyPete, que a su vez deriva del modelo Qwen/Qwen3.6-27B. El repositorio almacena los pesos en FP8 mediante el formato compressed-tensors, con un total de 27.356.728.560 parámetros y un tamano de repositorio de 31,2 GB. La licencia declarada es Apache-2.0 y la pipeline asociada es image-text-to-text, lo que indica que la familia de origen es multimodal.
 
 El modelo se distribuye exclusivamente con la libreria transformers y formato safetensors, y esta etiquetado con el identificador interno de arquitectura qwen3_5. No se ha publicado model card descriptiva mas alla de una nota de cambios (NOTICE) y la referencia a la licencia, por lo que no hay informacion sobre datos de entrenamiento, composicion del dataset, proceso de alineacion ni capacidades declaradas por el autor.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada en el momento de redactar esta ficha: el repositorio a
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible (etiqueta de arquitectura qwen3_5 en HuggingFace; pipeline multimodal image-text-to-text) |
+| Arquitectura | No disponible (etiqueta de arquitectura qwen3_5 en Hugging Face; pipeline multimodal image-text-to-text) |
 | Parametros totales | 27.356.728.560 (aproximadamente 27,36 mil millones) |
 | Parametros activos | No disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -23,7 +23,7 @@ Su relevancia es limitada en el momento de redactar esta ficha: el repositorio a
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura interna del modelo. Los metadatos de HuggingFace lo etiquetan como qwen3_5, lo que sugiere que hereda el diseno de la familia Qwen3.6, y la pipeline declarada es image-text-to-text, lo que implica capacidades multimodales de entrada imagen y texto con salida de texto. No obstante, no se especifica numero de capas, dimension del modelo, mecanismo de atencion, uso de atencion lineal o hibrida, ni si emplea mezcla de expertos.
+La informacion disponible no detalla la arquitectura interna del modelo. Los metadatos de Hugging Face lo etiquetan como qwen3_5, lo que sugiere que hereda el diseno de la familia Qwen3.6, y la pipeline declarada es image-text-to-text, lo que implica capacidades multimodales de entrada imagen y texto con salida de texto. No obstante, no se especifica numero de capas, dimension del modelo, mecanismo de atencion, uso de atencion lineal o hibrida, ni si emplea mezcla de expertos.
 
 Respecto al entrenamiento, la model card se limita a indicar que se trata de un derivado afinado de Qwen/Qwen3.6-27B a traves de Tooony133/Qwen-3.6-27B-SkinnyPete, almacenado en FP8. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni innovaciones tecnicas concretas. La unica transformacion verificable es la cuantizacion a FP8 para reducir el espacio de almacenamiento.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fluxmire/Qwen-3.6-27B-UmberShrike
+- Hugging Face: https://huggingface.co/Fluxmire/Qwen-3.6-27B-UmberShrike
 - Modelo base directo: https://huggingface.co/Tooony133/Qwen-3.6-27B-SkinnyPete
 - Modelo original de la cadena: https://huggingface.co/Qwen/Qwen3.6-27B
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.6-27B/blob/main/LICENSE

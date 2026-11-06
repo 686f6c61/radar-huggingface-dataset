@@ -74,7 +74,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| connectailab-rl-realnote3-v1-link01-walk-ppo | no disponible | no aplica | no disponible | HuggingFace |
+| connectailab-rl-realnote3-v1-link01-walk-ppo | no disponible | no aplica | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no aplica | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pjw1356/connectailab-rl-realnote3-v1-link01-walk-ppo
+- Hugging Face: https://huggingface.co/pjw1356/connectailab-rl-realnote3-v1-link01-walk-ppo
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - MuJoCo: https://mujoco.org/
 - No se han encontrado en la información disponible enlaces a papers, blogs, repositorios del entorno `link01-gym` ni demos adicionales.

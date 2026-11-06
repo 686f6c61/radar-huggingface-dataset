@@ -94,7 +94,7 @@ La comparación con Qwen2.5-1.5B-Instruct y Llama-3.2-1B-Instruct se ofrece como
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrtint0729/kanana-2.1b-diary-dpo-gguf
+- Modelo en Hugging Face: https://huggingface.co/mrtint0729/kanana-2.1b-diary-dpo-gguf
 - Modelo base: https://huggingface.co/kakaocorp/kanana-nano-2.1b-instruct
 - Repositorio de ingeniería del autor ("terrarium"): no disponible como enlace público en la información proporcionada
 - Paper o blog técnico del modelo: no disponible

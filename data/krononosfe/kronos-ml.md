@@ -2,11 +2,11 @@
 
 ## Resumen
 
-KODEX (Kronos Family of Codes) es una suite de surrogates de IA/ML para fisica de fusion, publicada por el usuario KrononosFE en el repositorio de HuggingFace `KrononosFE/kronos-ml`. No es un modelo de lenguaje: es un conjunto de 30 "codigos" sustitutos que aproximan codigos de simulacion fisica costosos, con un contrato unico de interfaz, `predict(x) -> Prediction(y, uncertainty, in_domain)`. Cada prediccion devuelve un valor, una incertidumbre calibrada (capa KHALO) y una puerta de abtencion (KGATE) que indica si la entrada cae dentro del dominio de validez.
+KODEX (Kronos Family of Codes) es una suite de surrogates de IA/ML para fisica de fusion, publicada por el usuario KrononosFE en el repositorio de Hugging Face `KrononosFE/kronos-ml`. No es un modelo de lenguaje: es un conjunto de 30 "codigos" sustitutos que aproximan codigos de simulacion fisica costosos, con un contrato unico de interfaz, `predict(x) -> Prediction(y, uncertainty, in_domain)`. Cada prediccion devuelve un valor, una incertidumbre calibrada (capa KHALO) y una puerta de abtencion (KGATE) que indica si la entrada cae dentro del dominio de validez.
 
 El proyecto se organiza en tres fases de despliegue: fase 1 (respaldada por datos, se publica primero), fase 2 (datos parciales) y fase 3 (hoja de ruta). Entre los miembros de fase 1 figuran KOIL (gemelo de imanes y quench), KFLOW (estimacion de estado), KMAT (cribado de materiales), KYRO (transporte de CGYRO), KWARD (disrupciones), KORE (equilibrio), KAIROS (control) y KQUBIT (quantum-ML, declarado sin ventaja). El diseno enfatiza la trazabilidad: cada surrogate esta etiquetado como `[T]` con el campo `retired_by`, que nombra el codigo real al que sustituye, de modo que ningun resultado pueda confundirse con alta fidelidad.
 
-La relevancia del repositorio es, hoy, limitada y verificable: los metadatos de HuggingFace indican 0 descargas, 0 "likes", 0.0 GB de tamano de repositorio y ningun pipeline, idioma o licencia declarados en la plataforma. La model card describe arquitectura, contrato y filosofia de calibracion, pero no incluye pesos publicados, cifras de benchmarks concretas ni enlaces a artefactos externos.
+La relevancia del repositorio es, hoy, limitada y verificable: los metadatos de Hugging Face indican 0 descargas, 0 "likes", 0.0 GB de tamano de repositorio y ningun pipeline, idioma o licencia declarados en la plataforma. La model card describe arquitectura, contrato y filosofia de calibracion, pero no incluye pesos publicados, cifras de benchmarks concretas ni enlaces a artefactos externos.
 
 ## Especificaciones tecnicas
 
@@ -18,11 +18,11 @@ La relevancia del repositorio es, hoy, limitada y verificable: los metadatos de 
 | Longitud de contexto | No aplica / no disponible (interfaz de vector de entrada numerico, no de tokens) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible (no es un modelo de lenguaje; la documentacion esta en ingles) |
-| Licencia | Apache-2.0 segun la model card; no declarada en los metadatos de HuggingFace |
+| Licencia | Apache-2.0 segun la model card; no declarada en los metadatos de Hugging Face |
 | Formato de pesos | No disponible; el artefacto se distribuye como paquete Python (`pip install -e ".[ml,data,nn]"`) |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion en HuggingFace | 2026-09-11 |
+| Fecha de creacion en Hugging Face | 2026-09-11 |
 | Dependencias | Numpy y scipy como nucleo; torch y sklearn se cargan de forma diferida solo cuando un surrogate se ejecuta |
 | Etiquetado de procedencia | Campo `retired_by` con marca `[T]` en cada surrogate |
 
@@ -78,7 +78,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 - Compatibilidad con GPU de consumo: no disponible. El diseno del paquete sugiere ejecucion ligera en CPU, ya que el nucleo importa sin torch ni sklearn y las dependencias pesadas se cargan solo cuando un surrogate se ejecuta, pero no se aportan medidas de latencia ni de memoria.
 - Opciones de despliegue: el unico mecanismo documentado es la instalacion como paquete Python (`pip install -e ".[ml,data,nn]"`). No se mencionan vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a un modelo sin pesos de lenguaje publicados.
 - Latencia y throughput: no disponibles. El unico dato temporal declarado es un objetivo de aviso inferior a 30 ms para KWARD, incumplido y conservado como fallo pre-registrado.
-- Almacenamiento: el repositorio de HuggingFace ocupa 0.0 GB, por lo que no hay artefactos de modelo que descargar desde esa URL.
+- Almacenamiento: el repositorio de Hugging Face ocupa 0.0 GB, por lo que no hay artefactos de modelo que descargar desde esa URL.
 
 ## Comparativa con modelos similares
 
@@ -86,7 +86,7 @@ No disponible. La documentacion no incluye comparaciones con otros surrogates de
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace figura con 0.0 GB, 0 descargas y 0 "likes": no hay pesos ni artefactos publicados en esa URL, solo la model card.
+- El repositorio de Hugging Face figura con 0.0 GB, 0 descargas y 0 "likes": no hay pesos ni artefactos publicados en esa URL, solo la model card.
 - No es un modelo de lenguaje: no genera texto, no hace tool calling, no soporta agentes y no tiene capacidades multilingues, de vision ni de audio. Cualquier evaluacion con criterios de LLM seria erronea.
 - Los surrogates estan etiquetados como `[T]` y llevan el campo `retired_by` precisamente para evitar que se confundan con los codigos de alta fidelidad. Usarlos como sustituto directo de un codigo fisico sin respetar esa distincion es un mal uso contrario al diseno declarado.
 - Esta pendiente la validacion con masa real ("gold"): los resultados respaldados por CGYRO estan a fidelidad representativa con μ=400, lo que limita la extrapolacion a condiciones de masa electronica real.
@@ -95,13 +95,13 @@ No disponible. La documentacion no incluye comparaciones con otros surrogates de
 - La calibracion de la incertidumbre (KHALO) y la puerta de abtencion (KGATE) solo son fiables si el dominio de entrenamiento cubre la region consultada; fuera de la envolvente el sistema esta disenado para abstenerse o proyectar, lo que puede devolver una respuesta distinta de la solicitada si el consumidor no comprueba `in_domain`.
 - Riesgo de alucinacion: no aplica en el sentido de generacion de texto, pero si existe un riesgo analogo de extrapolacion silenciosa si el llamante ignora la incertidumbre y la bandera de dominio.
 - Sesgos conocidos: no disponibles en la documentacion.
-- Licencia: la model card indica Apache-2.0, pero los metadatos de HuggingFace no declaran licencia. Antes de un uso comercial conviene confirmar la licencia efectiva de los pesos o del paquete distribuido, que en esta ficha no consta.
+- Licencia: la model card indica Apache-2.0, pero los metadatos de Hugging Face no declaran licencia. Antes de un uso comercial conviene confirmar la licencia efectiva de los pesos o del paquete distribuido, que en esta ficha no consta.
 - Anomalia de metadatos: las fechas de creacion y actualizacion (2026-09-11) no permiten verificar antiguedad, mantenimiento ni historial de cambios.
 - La documentacion referencia `BENCHMARKS.md` y `FAMILY.md`, pero su contenido no esta incluido en la informacion disponible; sin ellos no hay numeros reproducibles que auditar.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KrononosFE/kronos-ml
+- Hugging Face: https://huggingface.co/KrononosFE/kronos-ml
 - `BENCHMARKS.md`: referenciado en la model card, sin URL absoluta publicada; no disponible en la informacion proporcionada.
 - `FAMILY.md` (nota tecnica): referenciado en la model card, sin URL absoluta publicada; no disponible en la informacion proporcionada.
 - Repositorio de codigo, paper, blog o demo: no disponibles en la informacion proporcionada.

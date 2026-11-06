@@ -78,7 +78,7 @@ La informacion disponible no identifica por nombre los otros brazos del experime
 
 | Alternativa | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (brazo `plain` BPE) | no disponible (12 capas, anchura 768) | 2.048 tokens | 0,88461-0,88570 bits por byte en validacion | apache-2.0 | HuggingFace, 3 semillas |
+| Este modelo (brazo `plain` BPE) | no disponible (12 capas, anchura 768) | 2.048 tokens | 0,88461-0,88570 bits por byte en validacion | apache-2.0 | Hugging Face, 3 semillas |
 | Otros brazos del mismo articulo (tokenizadores con marcadores de frontera) | identica arquitectura | 2.048 tokens | no disponible en la informacion proporcionada | no disponible | no disponible |
 | Modelos publicos comparables de 12 capas (por ejemplo GPT-2 small, Pythia-160M) | no disponible como comparacion directa | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,9 +98,9 @@ No se dispone de datos suficientes para establecer una comparativa fiable con mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-en-d12-plain-bpe
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-en-d12-plain-bpe
 - Articulo "Explicit Boundary Markers for Subword Vocabularies": https://arxiv.org/abs/2608.08847
 - Repositorio `script_tok` (tokenizador y scripts de entrenamiento): https://github.com/sanderland/script_tok
 - Repositorio `nanochat` (framework de entrenamiento, commit `92d63d4`): https://github.com/karpathy/nanochat
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo; los enlaces anteriores proceden exclusivamente de la informacion del repositorio de HuggingFace y de su model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante para este modelo; los enlaces anteriores proceden exclusivamente de la informacion del repositorio de Hugging Face y de su model card.

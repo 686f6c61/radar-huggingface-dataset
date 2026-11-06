@@ -42,7 +42,7 @@ El entrenamiento se realizó sobre un dataset de "copypasta" (texto de memes y f
 - **Desarrollo de pipelines de cuantización**: el nombre del repo indica cuantización MXFP4xFP8_BLOCK, lo que lo convierte en un candidato para probar técnicas de compresión y evaluación de pérdida de precisión.
 - **Validación de generación de texto**: su salida coherente (aunque trivial) puede usarse para verificar que el entorno de inferencia funciona correctamente antes de usar modelos mayores.
 - **Educación y aprendizaje**: adecuado para cursos o talleres sobre modelos MoE y atención dispersa, ya que su pequeño tamaño permite ejecutarlo en CPU.
-- **Pruebas de compatibilidad de endpoints**: al ser compatible con endpoints de HuggingFace, se puede usar para probar servicios de inferencia en la nube sin incurrir en costes elevados.
+- **Pruebas de compatibilidad de endpoints**: al ser compatible con endpoints de Hugging Face, se puede usar para probar servicios de inferencia en la nube sin incurrir en costes elevados.
 
 ## Benchmarks y rendimiento
 
@@ -79,7 +79,7 @@ No hay una comparativa directa disponible en la información. Como modelo MoE ti
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xFP8_BLOCK)
+- [Hugging Face del modelo](https://huggingface.co/inference-optimization/GLM-5.2-0.8B-A0.8B-MXFP4xFP8_BLOCK)
 - [Modelo base GLM-5.2 (zai-org)](https://huggingface.co/zai-org/GLM-5.2)
 - [Repositorio GLM-5 (GitHub)](https://github.com/zai-org/GLM-5)
 - [Blog de z.ai sobre GLM-5.2](https://z.ai/blog/glm-5.2)

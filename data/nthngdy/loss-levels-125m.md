@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loss-levels-125M es un artefacto de investigación publicado por el usuario nthngdy en HuggingFace. No se trata de un modelo conversacional ni de un asistente, sino de una colección de checkpoints de entrenamiento de un decodificador denso de 125M parámetros (122.702.592 parámetros reales según los safetensors), entrenado sobre 40B tokens del dataset FineWeb-Edu de HuggingFace. Su particularidad es que se guardó un checkpoint cada vez que la pérdida de entrenamiento (suavizada con EMA) cruzaba uno de 200 niveles predefinidos, desde 10,80 hasta niveles muy finos (0,01 nats de separación en la zona baja). Cada checkpoint se publica como una rama (revision) del repositorio.
+Loss-levels-125M es un artefacto de investigación publicado por el usuario nthngdy en Hugging Face. No se trata de un modelo conversacional ni de un asistente, sino de una colección de checkpoints de entrenamiento de un decodificador denso de 125M parámetros (122.702.592 parámetros reales según los safetensors), entrenado sobre 40B tokens del dataset FineWeb-Edu de Hugging Face. Su particularidad es que se guardó un checkpoint cada vez que la pérdida de entrenamiento (suavizada con EMA) cruzaba uno de 200 niveles predefinidos, desde 10,80 hasta niveles muy finos (0,01 nats de separación en la zona baja). Cada checkpoint se publica como una rama (revision) del repositorio.
 
 El problema que resuelve es la falta de checkpoints densamente muestreados por nivel de pérdida en modelos abiertos pequeños. Este tipo de recurso es útil para estudiar la dinámica del entrenamiento de modelos de lenguaje: cómo emergen capacidades a medida que baja la pérdida, análisis de interpolación de pesos, evaluación de scaling laws a escala reducida, o investigación de mecanismos interpretables a lo largo del entrenamiento.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - GPUs recomendadas: no se requiere hardware especial; una RTX 3060, un portatil con GPU integrada o una CPU moderna ejecutan el modelo sin problema.
 - Consumer GPUs: cabe con holgura en practicamente cualquier GPU de consumo actual.
 - Descarga: el repositorio completo pesa 80,5 GB al contener todos los checkpoints; para inferencia conviene descargar solo la revision deseada (`revision="loss-X.XX"`), lo que reduce la descarga a cientos de MB.
-- Despliegue: compatible con la libreria `transformers` de HuggingFace (el propio README muestra el uso de `AutoModelForCausalLM`); al ser un modelo base sin formato GGUF publicado, no hay binarios oficiales para llama.cpp, Ollama, vLLM o TGI, aunque su arquitectura estandar facilitaria la conversion.
+- Despliegue: compatible con la libreria `transformers` de Hugging Face (el propio README muestra el uso de `AutoModelForCausalLM`); al ser un modelo base sin formato GGUF publicado, no hay binarios oficiales para llama.cpp, Ollama, vLLM o TGI, aunque su arquitectura estandar facilitaria la conversion.
 - Latencia y throughput: no disponibles; por tamano (125M), se espera inferencia muy rapida incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 | Modelo | Parametros | Contexto | Datos | Licencia | Notas |
 |---|---|---|---|---|---|
 | nthngdy/loss-levels-125M | 122,7M | no disponible | 40B tokens FineWeb-Edu | Apache 2.0 | Coleccion de 200 checkpoints por nivel de perdida; base sin alinear |
-| HuggingFaceTB/SmolLM2-135M | 135M | 2048 | ~11B tokens (multi-corpus) | Apache 2.0 | Modelo base oficial de HuggingFace, mismo tokenizador; no publica checkpoints intermedios |
+| HuggingFaceTB/SmolLM2-135M | 135M | 2048 | ~11B tokens (multi-corpus) | Apache 2.0 | Modelo base oficial de Hugging Face, mismo tokenizador; no publica checkpoints intermedios |
 | EleutherAI/pythia-160m | 160M | 2048 | ~300B tokens The Pile | Apache 2.0 | Publica 16 checkpoints equiespaciados por paso, no por nivel de perdida |
 
 La diferencia clave frente a Pythia (el paralelo mas directo) es el criterio de muestreo: loss-levels-125M guarda checkpoints por cruce de nivel de perdida (densidad variable, muy fina en la zona baja), mientras Pythia los guarda por paso de entrenamiento equiespaciado.
@@ -81,7 +81,7 @@ La diferencia clave frente a Pythia (el paralelo mas directo) es el criterio de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nthngdy/loss-levels-125M
+- Modelo en Hugging Face: https://huggingface.co/nthngdy/loss-levels-125M
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tokenizador de referencia (SmolLM2): https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

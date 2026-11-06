@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `AdamAxelrod/basler_pipette_2026-09-16_delta_act` es una política de robótica entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT). No es un modelo de lenguaje: es un controlador neuronal que, a partir de una imagen de cámara y del estado articular de un brazo robótico, predice una secuencia corta de acciones motrices. Lo desarrolla el usuario AdamAxelrod y se distribuye a través de HuggingFace con la librería LeRobot, la pila de robótica de Hugging Face.
+El modelo `AdamAxelrod/basler_pipette_2026-09-16_delta_act` es una política de robótica entrenada mediante aprendizaje por imitación con el método Action Chunking with Transformers (ACT). No es un modelo de lenguaje: es un controlador neuronal que, a partir de una imagen de cámara y del estado articular de un brazo robótico, predice una secuencia corta de acciones motrices. Lo desarrolla el usuario AdamAxelrod y se distribuye a través de Hugging Face con la librería LeRobot, la pila de robótica de Hugging Face.
 
 La política está especializada en una tarea concreta: `move_pipette_under_microscope`, ejecutada sobre un robot Mecademic Meca500 con una cámara de microscopio. Consume un vector de estado de 6 dimensiones y una imagen RGB de 3x640x427, y produce un vector de acción de 7 dimensiones (resolución de 6 ejes más pinza). El checkpoint tiene 51.597.959 parámetros y ocupa 0,2 GB en el repositorio.
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `basler_pipette_2026-09-16_delta_act` (este) | 51.597.959 | Estado (6,) + imagen 3x640x427 | Accion (7,) | apache-2.0 | HuggingFace, libreria LeRobot |
+| `basler_pipette_2026-09-16_delta_act` (este) | 51.597.959 | Estado (6,) + imagen 3x640x427 | Accion (7,) | apache-2.0 | Hugging Face, libreria LeRobot |
 | Diffusion Policy (referencia del metodo) | No disponible | Estado + imagenes | Acciones (chunk) | No disponible | Implementado en LeRobot; checkpoints dependientes del dataset |
-| ACT generico de LeRobot (otras politicas ACT) | Del orden de decenas de millones, variable por configuracion | Estado + imagenes | Acciones (chunk) | Depende del autor (habitualmente apache-2.0 o MIT) | Multiples checkpoints publicos en HuggingFace |
-| Modelos VLA (Vision-Language-Action, p. ej. SmolVLA o pi0) | Muy superior al de una ACT (cientos de millones a miles de millones) | Instruccion en lenguaje + imagenes + estado | Acciones | Variable (a menudo Apache 2.0 o de uso restringido) | HuggingFace, ecosistema LeRobot |
+| ACT generico de LeRobot (otras politicas ACT) | Del orden de decenas de millones, variable por configuracion | Estado + imagenes | Acciones (chunk) | Depende del autor (habitualmente apache-2.0 o MIT) | Multiples checkpoints publicos en Hugging Face |
+| Modelos VLA (Vision-Language-Action, p. ej. SmolVLA o pi0) | Muy superior al de una ACT (cientos de millones a miles de millones) | Instruccion en lenguaje + imagenes + estado | Acciones | Variable (a menudo Apache 2.0 o de uso restringido) | Hugging Face, ecosistema LeRobot |
 
 Las cifras de parametros de las alternativas no aparecen en la informacion proporcionada en esta busqueda y por tanto se marcan como no disponibles o cualitativas. La diferencia funcional clave frente a las familias VLA es que este checkpoint no generaliza a instrucciones en lenguaje ni a multiples tareas: esta entrenado para una unica tarea, sobre un unico robot y con una unica camara. A cambio, su huella de memoria y su coste de inferencia son ordenes de magnitud menores.
 
@@ -94,7 +94,7 @@ Las cifras de parametros de las alternativas no aparecen en la informacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdamAxelrod/basler_pipette_2026-09-16_delta_act
+- Modelo en Hugging Face: https://huggingface.co/AdamAxelrod/basler_pipette_2026-09-16_delta_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/AdamAxelrod/basler_pipette_2026-09-16_delta
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=AdamAxelrod/basler_pipette_2026-09-16_delta
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

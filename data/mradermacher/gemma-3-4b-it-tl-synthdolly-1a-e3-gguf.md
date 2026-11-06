@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Proyecto de nicho: 91 descargas y 0 likes en el momento de la consulta; no hay garantia de mantenimiento ni de soporte por parte del autor.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Gemma-3-4B-IT-TL-SynthDolly-1A-E3-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Gemma-3-4B-IT-TL-SynthDolly-1A-E3-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/kairawal/Gemma-3-4B-IT-TL-SynthDolly-1A-E3
 - Pagina de overview de cuantizaciones del autor: https://hf.tst.eu/model#Gemma-3-4B-IT-TL-SynthDolly-1A-E3-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

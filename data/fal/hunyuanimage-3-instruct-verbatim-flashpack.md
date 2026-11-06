@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fal/HunyuanImage-3-Instruct-verbatim-flashpack | Multimodal autorregresiva MoE | no disponible | no disponible | other | HuggingFace (repo de fal) |
-| tencent/HunyuanImage-3.0-Instruct | Multimodal autorregresiva MoE | no disponible en la informacion | no disponible | other | HuggingFace (Tencent) |
-| tencent/HunyuanImage-3.0-Instruct-Distil | Multimodal autorregresiva MoE destilada | no disponible en la informacion | no disponible | other | HuggingFace (Tencent) |
-| tencent/HunyuanImage-3.0 | Multimodal autorregresiva MoE (text-to-image) | no disponible en la informacion | no disponible | other | HuggingFace (Tencent) |
+| fal/HunyuanImage-3-Instruct-verbatim-flashpack | Multimodal autorregresiva MoE | no disponible | no disponible | other | Hugging Face (repo de fal) |
+| tencent/HunyuanImage-3.0-Instruct | Multimodal autorregresiva MoE | no disponible en la informacion | no disponible | other | Hugging Face (Tencent) |
+| tencent/HunyuanImage-3.0-Instruct-Distil | Multimodal autorregresiva MoE destilada | no disponible en la informacion | no disponible | other | Hugging Face (Tencent) |
+| tencent/HunyuanImage-3.0 | Multimodal autorregresiva MoE (text-to-image) | no disponible en la informacion | no disponible | other | Hugging Face (Tencent) |
 
 No se dispone de datos numericos de parametros, contexto ni rendimiento de los modelos comparados en la informacion proporcionada, por lo que la comparativa se limita a arquitectura, licencia y disponibilidad. Alternativas abiertas de otras familias (por ejemplo, modelos de generacion de imagen basados en DiT) no se incluyen al no contar con datos verificables en esta busqueda.
 
@@ -86,8 +86,8 @@ No se dispone de datos numericos de parametros, contexto ni rendimiento de los m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/fal/HunyuanImage-3-Instruct-verbatim-flashpack
-- Modelo base en HuggingFace: https://huggingface.co/tencent/HunyuanImage-3.0-Instruct
+- Repositorio en Hugging Face: https://huggingface.co/fal/HunyuanImage-3-Instruct-verbatim-flashpack
+- Modelo base en Hugging Face: https://huggingface.co/tencent/HunyuanImage-3.0-Instruct
 - Version destilada: https://huggingface.co/tencent/HunyuanImage-3.0-Instruct-Distil
 - Repositorio de codigo en GitHub: https://github.com/Tencent-Hunyuan/HunyuanImage-3.0
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2509.23951

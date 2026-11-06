@@ -4,7 +4,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario CXZGBTYQWR1 bajo licencia MIT. La informacion disponible es muy limitada y, en varios puntos, contradictoria: las etiquetas del repositorio lo clasifican como un modelo de tipo BERT para la tarea de extraccion de caracteristicas (feature-extraction), mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y llamada a funciones. El repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, por lo que no hay evidencia de pesos publicados ni de uso por parte de la comunidad.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario CXZGBTYQWR1 bajo licencia MIT. La informacion disponible es muy limitada y, en varios puntos, contradictoria: las etiquetas del repositorio lo clasifican como un modelo de tipo BERT para la tarea de extraccion de caracteristicas (feature-extraction), mientras que la model card describe un modelo generativo de razonamiento con mejoras en matematicas, programacion y llamada a funciones. El repositorio tiene un tamano de 0,0 GB, cero descargas y cero likes, por lo que no hay evidencia de pesos publicados ni de uso por parte de la comunidad.
 
 Segun la model card, el modelo habria pasado por una actualizacion de version que incrementa su profundidad de razonamiento mediante mas recursos de computo y mecanismos de optimizacion algoritmica en la fase de post-entrenamiento. El autor afirma una mejora en AIME 2025 desde un 70 % de precision en la version anterior hasta un 87,5 % en la actual, asociada a un aumento del consumo medio de tokens por pregunta de 12K a 23K. Tambien menciona una reduccion de la tasa de alucinacion y mejor soporte de function calling.
 
@@ -14,7 +14,7 @@ No se dispone de informacion sobre arquitectura, numero de parametros, longitud 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica "bert"; la model card describe un modelo de razonamiento generativo, sin especificar arquitectura) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica "bert"; la model card describe un modelo de razonamiento generativo, sin especificar arquitectura) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que sea un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -126,6 +126,6 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/CXZGBTYQWR1/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/CXZGBTYQWR1/MyAwesomeModel-TestRepo
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible. La model card menciona una web oficial de chat y API y un repositorio de codigo para ejecucion local, pero no incluye ninguna URL.
 - Busqueda web: las consultas realizadas no han devuelto ningun resultado relevante sobre este modelo. Los resultados obtenidos tratan sobre la gestion de citas bibliograficas en Zotero y la numeracion de notas al pie en Word, y no guardan relacion con el modelo.

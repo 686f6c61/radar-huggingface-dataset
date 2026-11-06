@@ -77,7 +77,7 @@ No se proporcionan resultados comparativos con otros modelos en la información 
 - No se proporcionan pesos cuantizados, lo que limita el despliegue en hardware modesto sin conversión adicional.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_jbb_k0p02_a0p3_free_remove30
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_jbb_k0p02_a0p3_free_remove30
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia (LICENSE en el repositorio): https://huggingface.co/Jeesup/svd-safety-l3_jbb_k0p02_a0p3_free_remove30/blob/main/LICENSE
 - Política de uso (USE_POLICY.md en el repositorio): https://huggingface.co/Jeesup/svd-safety-l3_jbb_k0p02_a0p3_free_remove30/blob/main/USE_POLICY.md

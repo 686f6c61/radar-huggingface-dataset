@@ -75,6 +75,6 @@ No se dispone de información sobre adaptadores comparables de abstinencia bajo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/moalikhoda/compression-aware-abstention-adapters
+- Repositorio Hugging Face: https://huggingface.co/moalikhoda/compression-aware-abstention-adapters
 - Repositorio GitHub con código, evaluaciones y script de reproducción: https://github.com/mali-kh/compression-aware-abstention
 - Artículo (referencia bibtex en la model card): Khodabandehlou, M., & Krishnamachari, B. (2026). Compression-Aware Abstention: Teaching LLMs to Refuse When KV-Compression Masks Remove Answer Evidence. Proceedings of the Workshop on Grounding and Reliability of Language Models (GroundLM) at EMNLP.

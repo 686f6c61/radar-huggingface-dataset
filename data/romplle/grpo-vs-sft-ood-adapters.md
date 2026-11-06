@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `romplle/grpo-vs-sft-ood-adapters` | LoRA sobre 222M | no disponible | Control en MiniGrid Empty (3 acciones) | MIT | HuggingFace, 0 descargas |
-| `lusxvr/nanoVLM-222M` (modelo base) | 222M | no disponible | Vision-lenguaje general | no disponible en la informacion | HuggingFace |
+| `romplle/grpo-vs-sft-ood-adapters` | LoRA sobre 222M | no disponible | Control en MiniGrid Empty (3 acciones) | MIT | Hugging Face, 0 descargas |
+| `lusxvr/nanoVLM-222M` (modelo base) | 222M | no disponible | Vision-lenguaje general | no disponible en la informacion | Hugging Face |
 | Alternativas de VLM pequenos para control | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento de este repositorio ni de alternativas comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento de este repositorio ni de alternativas com
 
 - Dominio extremadamente estrecho: solo MiniGrid Empty con tres acciones discretas; no es un modelo de proposito general y no debe presentarse como tal.
 - Artefacto de investigacion con cero descargas y cero likes: no hay evidencia de uso en produccion ni de validacion externa independiente.
-- Las cifras de rendimiento no acompanan al repositorio; hay que consultarlas en el README del proyecto GitHub, lo que impide evaluar el modelo solo desde HuggingFace.
+- Las cifras de rendimiento no acompanan al repositorio; hay que consultarlas en el README del proyecto GitHub, lo que impide evaluar el modelo solo desde Hugging Face.
 - Los adaptadores GRPO dependen de su adaptador SFT de origen; cargarlos de forma aislada produce resultados invalidos.
 - Los adaptadores estan atados a la version concreta del modelo base `lusxvr/nanoVLM-222M`; cambios en el checkpoint base pueden romper la compatibilidad.
 - Riesgo de sobreajuste a la distribucion de entrenamiento (tableros 8x8, color de objetivo y posiciones iniciales concretas), que es precisamente lo que el experimento intenta medir.
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento de este repositorio ni de alternativas com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/romplle/grpo-vs-sft-ood-adapters
+- Repositorio Hugging Face: https://huggingface.co/romplle/grpo-vs-sft-ood-adapters
 - Repositorio GitHub del proyecto: https://github.com/romplle/grpo-vs-sft-ood
 - Modelo base: https://huggingface.co/lusxvr/nanoVLM-222M

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `anassaifi12/qwen2.5-3b_final_sql_tuned_model` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, publicado por el usuario anassaifi12 en HuggingFace. Se trata de un transformer decoder-only de la familia Qwen2.5 con 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), orientado por su nombre a tareas de generación y manejo de SQL. El repositorio contiene los pesos fusionados en precisión de 16 bits (FP16), con un tamano total de 6,2 GB.
+El modelo `anassaifi12/qwen2.5-3b_final_sql_tuned_model` es un ajuste fino (fine-tuning) del modelo base `unsloth/qwen2.5-3b-unsloth-bnb-4bit`, publicado por el usuario anassaifi12 en Hugging Face. Se trata de un transformer decoder-only de la familia Qwen2.5 con 3.085.938.688 parámetros (aproximadamente 3,09 mil millones), orientado por su nombre a tareas de generación y manejo de SQL. El repositorio contiene los pesos fusionados en precisión de 16 bits (FP16), con un tamano total de 6,2 GB.
 
-El modelo se entrenó utilizando la libreria Unsloth junto con TRL de HuggingFace, lo que según la model card permitió un entrenamiento "2x faster" respecto a un flujo estándar. El punto de partida fue una versión cuantizada a 4 bits (bnb-4bit) del Qwen2.5-3B, sobre la que se aplicó un ajuste y posteriormente se exportaron los pesos fusionados en FP16.
+El modelo se entrenó utilizando la libreria Unsloth junto con TRL de Hugging Face, lo que según la model card permitió un entrenamiento "2x faster" respecto a un flujo estándar. El punto de partida fue una versión cuantizada a 4 bits (bnb-4bit) del Qwen2.5-3B, sobre la que se aplicó un ajuste y posteriormente se exportaron los pesos fusionados en FP16.
 
 Su relevancia es limitada pero concreta: ofrece una alternativa pequena (3B) y con licencia Apache 2.0 para tareas de generación de consultas SQL, ejecutable en hardware de consumo. No obstante, la model card es extremadamente escueta: no documenta el dataset de entrenamiento, el número de tokens, la metodología de ajuste ni resultados de evaluación, lo que limita seriamente su adopción en producción sin validación propia.
 
@@ -68,10 +68,10 @@ Las cifras de los modelos comparables provienen de sus fichas públicas; los dat
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| anassaifi12/qwen2.5-3b_final_sql_tuned_model | 3,09B | no disponible (base: 32.768 tokens) | Apache 2.0 | HuggingFace, safetensors FP16 | Ajuste SQL sin documentación de entrenamiento ni evaluación |
-| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | HuggingFace, safetensors; amplio ecosistema de cuantizaciones | Modelo oficial de referencia, con benchmarks publicados |
-| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, safetensors y GGUF | Contexto mucho mayor y ecosistema maduro; licencia con restricciones para grandes despliegues |
-| Phi-3.5-mini-instruct | 3,82B | 128.000 tokens | MIT | HuggingFace | Buen rendimiento en razonamiento y código para su tamano |
+| anassaifi12/qwen2.5-3b_final_sql_tuned_model | 3,09B | no disponible (base: 32.768 tokens) | Apache 2.0 | Hugging Face, safetensors FP16 | Ajuste SQL sin documentación de entrenamiento ni evaluación |
+| Qwen2.5-3B-Instruct | 3,09B | 32.768 tokens | Apache 2.0 | Hugging Face, safetensors; amplio ecosistema de cuantizaciones | Modelo oficial de referencia, con benchmarks publicados |
+| Llama-3.2-3B-Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, safetensors y GGUF | Contexto mucho mayor y ecosistema maduro; licencia con restricciones para grandes despliegues |
+| Phi-3.5-mini-instruct | 3,82B | 128.000 tokens | MIT | Hugging Face | Buen rendimiento en razonamiento y código para su tamano |
 
 ## Limitaciones y advertencias
 
@@ -87,7 +87,7 @@ Las cifras de los modelos comparables provienen de sus fichas públicas; los dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anassaifi12/qwen2.5-3b_final_sql_tuned_model
+- Modelo en Hugging Face: https://huggingface.co/anassaifi12/qwen2.5-3b_final_sql_tuned_model
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-3b-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Informe técnico de Qwen2.5 (referencia del modelo base): https://arxiv.org/abs/2412.15115

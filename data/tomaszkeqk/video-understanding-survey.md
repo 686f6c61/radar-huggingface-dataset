@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario tomaszkeqk, no contiene un modelo de IA entrenado, sino una nota de investigacion en formato Markdown sobre el campo de la comprension de video (video understanding). El autor lo presenta explicitamente como un documento de trabajo exploratorio que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, sin llegar a constituir un articulo completo ni un lanzamiento de pesos entrenados.
+Este repositorio de Hugging Face, publicado por el usuario tomaszkeqk, no contiene un modelo de IA entrenado, sino una nota de investigacion en formato Markdown sobre el campo de la comprension de video (video understanding). El autor lo presenta explicitamente como un documento de trabajo exploratorio que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, sin llegar a constituir un articulo completo ni un lanzamiento de pesos entrenados.
 
 El repositorio incluye un unico artefacto principal (`notes.md`) junto con su documentacion (`README.md`). Los 33.088 parametros registrados en safetensors corresponden al contenido textual del repositorio, no a una arquitectura neuronal real. Su relevancia actual radica en que documenta el estado de la cuestion en un area activa de investigacion, citando datasets de referencia como MSR-VTT y ActivityNet Captions, aunque sin aportar resultados experimentales propios.
 
@@ -64,7 +64,7 @@ No disponible. No existen modelos comparables porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tomaszkeqk/video-understanding-survey
+- Repositorio en Hugging Face: https://huggingface.co/tomaszkeqk/video-understanding-survey
 - Encuesta relacionada en arXiv: https://arxiv.org/abs/2312.17432
 - Version HTML de la misma encuesta: https://arxiv.org/html/2312.17432v4
 - Repositorio de encuesta sobre video largo: https://github.com/Vincent-ZHQ/Comprehensive-Long-Video-Understanding-Survey

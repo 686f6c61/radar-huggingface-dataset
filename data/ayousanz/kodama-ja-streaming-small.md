@@ -89,10 +89,10 @@ Nota: el autor indica que la evaluación usa CER como métrica principal, con no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ayousanz/kodama-ja-streaming-small
+- Modelo en Hugging Face: https://huggingface.co/ayousanz/kodama-ja-streaming-small
 - Modelo base original: https://huggingface.co/moonshine-ai/moonshine-streaming-small
 - Dataset de entrenamiento: https://huggingface.co/datasets/reazon-research/reazonspeech
 - Blog del autor (desarrollo de piper-plus, TTS): https://ayousanz.hatenadiary.jp/entry/2026/03/22/195837
 - Blog del autor (mejoras de piper-plus): https://ayousanz.hatenadiary.jp/entry/2025/10/17/090204
 - Blog del autor (piper-plus en Python): https://ayousanz.hatenadiary.jp/entry/2025/09/25/211231
-- Perfil del autor en HuggingFace: https://huggingface.co/ayousaur
+- Perfil del autor en Hugging Face: https://huggingface.co/ayousaur

@@ -79,6 +79,6 @@ La comparativa se limita al modelo original de Lightricks, ya que la informacion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/maxh8086/tokenfrugal-ltx-video-0.9.8-gguf
+- Repositorio Hugging Face: https://huggingface.co/maxh8086/tokenfrugal-ltx-video-0.9.8-gguf
 - Modelo original de Lightricks: Lightricks/LTX-Video (referenciado en la model card como fuente de ltxv-2b-0.9.8-distilled.safetensors)
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos, demos) en la busqueda web disponible.

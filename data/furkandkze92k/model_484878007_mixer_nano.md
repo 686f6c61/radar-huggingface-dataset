@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_484878007_mixer_nano` es una implementación a escala "nano" de la arquitectura mixer, publicada por el usuario furkandkze92k en HuggingFace. Según la model card, está diseñado para tareas multitarea (multitask) y emplea atención flash, fusión por cross-attention, activación GELU-tanh, normalización RMSNorm e inicialización Kaiming normal. El repositorio contiene únicamente un archivo de código Python (`model_484878007_mixer_nano.py`), lo que sugiere que se trata de un script de implementación o definición de arquitectura más que de un modelo preentrenado con pesos publicados.
+El modelo `model_484878007_mixer_nano` es una implementación a escala "nano" de la arquitectura mixer, publicada por el usuario furkandkze92k en Hugging Face. Según la model card, está diseñado para tareas multitarea (multitask) y emplea atención flash, fusión por cross-attention, activación GELU-tanh, normalización RMSNorm e inicialización Kaiming normal. El repositorio contiene únicamente un archivo de código Python (`model_484878007_mixer_nano.py`), lo que sugiere que se trata de un script de implementación o definición de arquitectura más que de un modelo preentrenado con pesos publicados.
 
 La relevancia de este modelo es limitada en el ecosistema actual: no se proporcionan pesos, datos de entrenamiento, ni métricas de rendimiento. Su interés podría residir en servir como referencia de código para una arquitectura mixer a pequeña escala, pero carece de los elementos necesarios para su uso directo en aplicaciones de producción. La licencia Apache 2.0 permite su uso y modificación, aunque sin pesos entrenados su utilidad práctica es prácticamente nula.
 
@@ -63,4 +63,4 @@ No disponible. No se han proporcionado datos de rendimiento ni características 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/furkandkze92k/model_484878007_mixer_nano
+- Repositorio en Hugging Face: https://huggingface.co/furkandkze92k/model_484878007_mixer_nano

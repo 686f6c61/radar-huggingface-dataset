@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 - VRAM estimada para inferencia: no disponible de forma específica; depende del modelo base Qwen3.5-0.8B y de la cuantización elegida. Un modelo de 0,8B en FP16 requiere aproximadamente 1,6 GB solo para pesos, más overhead de activaciones y KV cache.
 - GPU recomendadas: no disponible en la información. Por tamaño, cabría en GPUs de consumo como RTX 3060, RTX 4060 o superiores, así como en A100/H100 para despliegues concurrentes.
-- Cabe en GPU de consumo: sí, previsiblemente, al tratarse de un modelo base de 0,8B más un adaptador LoRA de pequeño tamaño (repo de 0,0 GB según HuggingFace).
+- Cabe en GPU de consumo: sí, previsiblemente, al tratarse de un modelo base de 0,8B más un adaptador LoRA de pequeño tamaño (repo de 0,0 GB según Hugging Face).
 - Opciones de despliegue: PEFT con Transformers (carga mediante `PeftModel.from_pretrained`), y previsiblemente vLLM, TGI o llama.cpp si se fusiona el adaptador con el modelo base y se convierte a GGUF. No confirmado en la información.
 - Latencia y throughput estimados: no disponibles.
 
@@ -72,12 +72,12 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - Sin benchmarks publicados: no hay evidencia cuantitativa de su calidad ni de su superioridad frente al modelo base en el dominio.
 - Dataset de entrenamiento no documentado en detalle: se desconoce su tamaño, procedencia y posibles sesgos, lo que dificulta evaluar la fiabilidad de las respuestas.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar la licencia del modelo base Qwen3.5-0.8B y de los datos de entrenamiento.
-- Fecha de creación futura (2026-10-29) en los metadatos de HuggingFace: posible inconsistencia que conviene verificar antes de confiar en el artefacto.
+- Fecha de creación futura (2026-10-29) en los metadatos de Hugging Face: posible inconsistencia que conviene verificar antes de confiar en el artefacto.
 - Popularidad muy baja (10 descargas, 0 likes): no hay validación comunitaria ni reportes de uso en producción.
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/onlyBABA/qwen3.5-0.8b-labor-lora
+- Hugging Face del adaptador: https://huggingface.co/onlyBABA/qwen3.5-0.8b-labor-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/onlyBABA/labor-counsel-qa
 - Librería PEFT: https://github.com/huggingface/peft

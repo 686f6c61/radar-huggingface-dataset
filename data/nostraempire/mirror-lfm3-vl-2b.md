@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Visión/vídeo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-VL-2B | 1,92B | 128K | Imagen y vídeo | LFM Open License v1.0 | HuggingFace (repo espejo) |
+| LFM3-VL-2B | 1,92B | 128K | Imagen y vídeo | LFM Open License v1.0 | Hugging Face (repo espejo) |
 | Qwen2.5-VL-3B | 3B (no confirmado en la información) | No disponible | Imagen y vídeo | No disponible | No disponible |
 | SmolVLM-2B | 2B (no confirmado en la información) | No disponible | Imagen | No disponible | No disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de los m
 
 ## Enlaces
 
-- Repositorio HuggingFace (espejo): https://huggingface.co/NostraEmpire/mirror-lfm3-vl-2b
+- Repositorio Hugging Face (espejo): https://huggingface.co/NostraEmpire/mirror-lfm3-vl-2b
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Blog de lanzamiento de LFM3: https://www.liquid.ai/blog/lfm3
 - Documentación de LFM: https://docs.liquid.ai/lfm/getting-started/welcome

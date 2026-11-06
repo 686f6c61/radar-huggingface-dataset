@@ -107,11 +107,11 @@ No se dispone de datos de benchmarks comparativos frente a modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/roman220220/Nemotron-3.5-Bolt-E4B-gptq-mlx-jang
+- Modelo en Hugging Face: https://huggingface.co/roman220220/Nemotron-3.5-Bolt-E4B-gptq-mlx-jang
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Repo del pipeline de cuantización Gemma4 (URL truncada en la model card: `https://github.com/rromenskyi/qu...`; verificar el enlace completo en la card original)
 - Fork de `mlx-lm` usado: https://github.com/ipsupport-llc/mlx-lm
 - LLMTray (aplicación macOS): https://www.ipsupport.us/llmtray/
 - Repositorio LLMTray: https://github.com/ipsupport-llc/llmtray
 - Descarga de LLMTray: https://github.com/ipsupport-llc/llmtray/releases/latest/download/LLMTray-Full.dmg
-- Fichero de licencia: `LICENSE` dentro del repo de HuggingFace
+- Fichero de licencia: `LICENSE` dentro del repo de Hugging Face

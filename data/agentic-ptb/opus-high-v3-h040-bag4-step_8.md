@@ -62,6 +62,6 @@ No existe una comparativa directa publicada. El modelo más cercano es su base `
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag4.step_8)
+- [Modelo en Hugging Face](https://huggingface.co/agentic-ptb/opus-high-v3.h040.bag4.step_8)
 - [Dataset asociado al run](https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data)
 - [Índice de experimentos AgentPTB](https://huggingface.co/datasets/agentic-ptb/INDEX)

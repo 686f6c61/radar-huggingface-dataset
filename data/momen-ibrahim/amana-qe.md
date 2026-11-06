@@ -90,7 +90,7 @@ La comparación directa con COMET o BLEURT no está respaldada por datos publica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/momen-ibrahim/amana-qe
+- Modelo en Hugging Face: https://huggingface.co/momen-ibrahim/amana-qe
 - Repositorio del proyecto AMANA: https://github.com/Momen-Ibrahim-Fawzy/AMANA-Medical-Translation-Safety
 - Modelo base LaBSE: https://huggingface.co/sentence-transformers/LaBSE
 - Dataset TICO-19: https://huggingface.co/datasets/tico19

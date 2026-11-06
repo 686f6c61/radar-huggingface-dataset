@@ -68,8 +68,8 @@ Los siguientes resultados corresponden al modelo base IFM/K2-Horizon-MoVA-36B-A4
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| K2-Horizon-MoVA-36B-A4B | 36.000.000.000 | ~4.000.000.000 | 512.000 tokens | Apache-2.0 | HuggingFace |
-| Qwen3-30B-A3B | ~30.500.000.000 | ~3.300.000.000 | 128.000 tokens | Apache-2.0 | HuggingFace |
+| K2-Horizon-MoVA-36B-A4B | 36.000.000.000 | ~4.000.000.000 | 512.000 tokens | Apache-2.0 | Hugging Face |
+| Qwen3-30B-A3B | ~30.500.000.000 | ~3.300.000.000 | 128.000 tokens | Apache-2.0 | Hugging Face |
 | K2 Horizon 32B (dense) | 32.000.000.000 | 32.000.000.000 | no disponible | Apache-2.0 | no disponible |
 
 Los benchmarks de los modelos alternativos no se han publicado en la información disponible. La comparativa se basa en especificaciones y licencia.
@@ -87,7 +87,7 @@ Los benchmarks de los modelos alternativos no se han publicado en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-6bit
-- Modelo base en HuggingFace: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
+- Modelo en Hugging Face: https://huggingface.co/hermitdave/K2-Horizon-MoVA-36B-A4B-MLX-6bit
+- Modelo base en Hugging Face: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - Blog oficial de IFM sobre K2 Horizon: https://ifm.ai/blog/k2
 - Ficha del modelo en Benchgen: https://benchgen.com/models/ifm/k2-horizon-mova-36b-a4b

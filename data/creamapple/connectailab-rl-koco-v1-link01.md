@@ -69,8 +69,8 @@ El techo teórico de acierto (coincidencia con el profesor al pasar la observaci
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-koco-v1-link01 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador (5 acciones) | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible en la información | HuggingFace |
+| connectailab-rl-koco-v1-link01 | 0,8B (base) + LoRA | No disponible | Decisión discreta en simulador (5 acciones) | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B | 0,8B | No disponible | Lenguaje general | No disponible en la información | Hugging Face |
 | Política PPO del profesor (brain.json) | No aplica (red pequeña) | No aplica | Decisión discreta en simulador | No disponible | Repositorio CONNECT TYCOON |
 
 No se dispone de datos de benchmarks de modelos comparables de la misma categoría (adaptadores RL sobre LLM para robótica simulada) en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks de modelos comparables de la misma categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/creamapple/connectailab-rl-koco-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/creamapple/connectailab-rl-koco-v1-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Canal de YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

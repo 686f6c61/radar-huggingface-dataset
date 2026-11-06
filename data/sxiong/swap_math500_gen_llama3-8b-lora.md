@@ -75,7 +75,7 @@ No se dispone de comparativas de rendimiento entre estos modelos en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/SWAP_MATH500_Gen_Llama3-8B-LoRA
+- Hugging Face: https://huggingface.co/sxiong/SWAP_MATH500_Gen_Llama3-8B-LoRA
 - Dataset SWAP: https://huggingface.co/datasets/sxiong/SWAP
 - Dataset MATH500: https://huggingface.co/datasets/sxiong/MATH-500
 - Repositorio GitHub SWAP: https://github.com/xiongsiheng/SWAP

@@ -102,7 +102,7 @@ La comparativa se limita a las variantes cuantizadas del mismo modelo base, ya q
 
 ## Enlaces
 
-- [HuggingFace - sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP](https://huggingface.co/sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP)
+- [Hugging Face - sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP](https://huggingface.co/sayyidfareed/GLM-5.3-Flash-Spark-Q2XL-MTP)
 - [Modelo base - zai-org/GLM-5.3-Flash](https://huggingface.co/zai-org/GLM-5.3-Flash)
 - [OpenLM.ai - GLM-5.3](https://openlm.ai/glm-5.5/)
 - [Wikipedia - GLM (AI)](https://en.wikipedia.org/wiki/GLM_(AI))

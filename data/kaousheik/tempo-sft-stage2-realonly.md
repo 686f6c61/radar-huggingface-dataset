@@ -90,7 +90,7 @@ La comparativa se basa en arquitectura y capacidades documentadas, ya que no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kaousheik/tempo-sft-stage2-realonly
+- Modelo en Hugging Face: https://huggingface.co/Kaousheik/tempo-sft-stage2-realonly
 - Dataset de entrenamiento: https://huggingface.co/datasets/Kaousheik/tempo
 - Paper TEMPO en OpenReview (PDF): https://openreview.net/pdf?id=LoXjHBlPEd
 - Paper TEMPO en OpenReview (forum): https://openreview.net/forum?id=LoXjHBlPEd

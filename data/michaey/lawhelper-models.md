@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MichaeY/LawHelper-models es un repositorio alojado en HuggingFace por el usuario MichaeY. El identificador sugiere, por su nombre, un conjunto de modelos orientados a asistencia juridica, pero no se ha publicado ninguna ficha tecnica, descripcion ni documentacion asociada en la informacion disponible, por lo que esa finalidad no puede confirmarse. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-10-02T16:33:49Z), lo que indica que no ha recibido mantenimiento posterior ni ha generado traccion en la plataforma.
+MichaeY/LawHelper-models es un repositorio alojado en Hugging Face por el usuario MichaeY. El identificador sugiere, por su nombre, un conjunto de modelos orientados a asistencia juridica, pero no se ha publicado ninguna ficha tecnica, descripcion ni documentacion asociada en la informacion disponible, por lo que esa finalidad no puede confirmarse. El repositorio registra 0 descargas y 1 like, y fue creado y actualizado en la misma marca temporal (2026-10-02T16:33:49Z), lo que indica que no ha recibido mantenimiento posterior ni ha generado traccion en la plataforma.
 
-No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, licencia ni formato de pesos. La unica etiqueta publicada es `region:us`, un metadato administrativo de HuggingFace que no aporta informacion tecnica sobre el modelo. Tampoco se ha especificado un pipeline de inferencia, lo que impide determinar si se trata de un modelo de generacion de texto, de clasificacion, de embeddings o de otro tipo.
+No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, licencia ni formato de pesos. La unica etiqueta publicada es `region:us`, un metadato administrativo de Hugging Face que no aporta informacion tecnica sobre el modelo. Tampoco se ha especificado un pipeline de inferencia, lo que impide determinar si se trata de un modelo de generacion de texto, de clasificacion, de embeddings o de otro tipo.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este repositorio: los enlaces recuperados corresponden a comparativas de impresoras 3D en frances, completamente ajenos al objeto de la ficha. En consecuencia, esta ficha se limita a documentar la existencia del repositorio y a marcar explicitamente como no disponibles todos aquellos campos que no han podido verificarse. Se recomienda no utilizarlo en entornos de produccion hasta que el autor publique una model card completa.
 
@@ -82,5 +82,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MichaeY/LawHelper-models
+- Repositorio en Hugging Face: https://huggingface.co/MichaeY/LawHelper-models
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada. Los unicos resultados devueltos correspondian a comparativas de impresoras 3D y no guardan relacion con este modelo.

@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Tipo | Entrada | Salidas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| outmake/moge-2-vitb-coreml | Core ML (Apple) | 3 tamanos fijos | Mapa de puntos, mascara | MIT | HuggingFace (Outmake) |
-| mlboydaisuke/MoGe-2-ViT-B-CoreML | Core ML | 504x504 | Profundidad metrica, profundidad monocular, normales de superficie | MIT | HuggingFace |
+| outmake/moge-2-vitb-coreml | Core ML (Apple) | 3 tamanos fijos | Mapa de puntos, mascara | MIT | Hugging Face (Outmake) |
+| mlboydaisuke/MoGe-2-ViT-B-CoreML | Core ML | 504x504 | Profundidad metrica, profundidad monocular, normales de superficie | MIT | Hugging Face |
 | MoGe2-CoreML-3D (yosun) | Core ML + paquete Swift (MoGe2Kit) | No especificado | Profundidad metrica, mapa de puntos, normales, confianza | No disponible | GitHub |
-| MoGe-2 original (Ruicheng/moge-2-vitb-normal) | PyTorch | Dinamica | Mapa de puntos metrico, profundidad metrica, normales, FOV | MIT | HuggingFace |
+| MoGe-2 original (Ruicheng/moge-2-vitb-normal) | PyTorch | Dinamica | Mapa de puntos metrico, profundidad metrica, normales, FOV | MIT | Hugging Face |
 
 La conversión de Outmake se distingue de la de mlboydaisuke por usar tres resoluciones fijas en lugar de una sola (504x504) y por omitir normales y escala métrica. Frente al modelo original en PyTorch, sacrifica salidas (normales, escala métrica, FOV) y flexibilidad de tamaño de entrada a cambio de ejecución nativa sin Python en Apple Silicon.
 
@@ -102,7 +102,7 @@ La conversión de Outmake se distingue de la de mlboydaisuke por usar tres resol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/outmake/moge-2-vitb-coreml
+- Modelo en Hugging Face: https://huggingface.co/outmake/moge-2-vitb-coreml
 - Modelo base: https://huggingface.co/Ruicheng/moge-2-vitb-normal
 - Repositorio original de MoGe (Microsoft): https://github.com/microsoft/MoGe
 - Demo en Hugging Face Space (MoGe-2): https://huggingface.co/spaces/Ruicheng/MoGe-2

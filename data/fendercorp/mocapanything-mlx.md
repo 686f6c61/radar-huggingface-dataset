@@ -23,7 +23,7 @@ Su relevancia actual radica en que traslada un pipeline de mocap basado en apren
 
 ## Arquitectura y entrenamiento
 
-El sistema sigue un diseño en dos etapas encadenadas: `video2pose` estima la pose a partir del video monocular y `pose2rot` la convierte en rotaciones por articulación sobre el esqueleto objetivo. La entrada visual se procesa con DINOv2 ViT-L/14, cuyo `position_embeddings` se ha sustituido por la salida de `interpolate_pos_encoding(·, 224, 224)` de HuggingFace y al que se ha eliminado el `mask_token`, fijando así la resolución de entrada a 224 px y 257 tokens. La identidad de cada articulación se aporta mediante embeddings de su nombre generados por el codificador de T5-base, lo que permite generalizar a esqueletos con distintas convenciones de nombres.
+El sistema sigue un diseño en dos etapas encadenadas: `video2pose` estima la pose a partir del video monocular y `pose2rot` la convierte en rotaciones por articulación sobre el esqueleto objetivo. La entrada visual se procesa con DINOv2 ViT-L/14, cuyo `position_embeddings` se ha sustituido por la salida de `interpolate_pos_encoding(·, 224, 224)` de Hugging Face y al que se ha eliminado el `mask_token`, fijando así la resolución de entrada a 224 px y 257 tokens. La identidad de cada articulación se aporta mediante embeddings de su nombre generados por el codificador de T5-base, lo que permite generalizar a esqueletos con distintas convenciones de nombres.
 
 La cabeza `mocap` corresponde al state dict `video2pos2rot_epoch60.pt` convertido a safetensors sin renombrar claves, lo que indica un entrenamiento de 60 épocas según la nomenclatura del checkpoint. No se documentan en la información disponible el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de RLHF o DPO (poco probables en un modelo de este tipo). La innovación principal del paquete es de ingeniería de despliegue: el repackaging a MLX con verificación numérica frente a la referencia, que habilita inferencia sin Python en Apple Silicon.
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks estándar de mocap (MPJPE sobre Hum
 
 | Modelo | Tipo | Parámetros | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MocapAnything-MLX (este) | Mocap monocular + retargeting | 38,5 M (cabeza) + DINOv2-L + T5-base | MIT (componentes Apache-2.0) | safetensors MLX | HuggingFace |
-| MoCapAnything V2 (kehong) | Mocap monocular + retargeting | No disponible | MIT | PyTorch (checkpoint original) | HuggingFace |
-| DINOv2-large (facebook) | Codificador de imagen | No disponible en la ficha | Apache-2.0 | safetensors | HuggingFace |
-| T5-base (google-t5) | Codificador texto | No disponible en la ficha | Apache-2.0 | safetensors | HuggingFace |
+| MocapAnything-MLX (este) | Mocap monocular + retargeting | 38,5 M (cabeza) + DINOv2-L + T5-base | MIT (componentes Apache-2.0) | safetensors MLX | Hugging Face |
+| MoCapAnything V2 (kehong) | Mocap monocular + retargeting | No disponible | MIT | PyTorch (checkpoint original) | Hugging Face |
+| DINOv2-large (facebook) | Codificador de imagen | No disponible en la ficha | Apache-2.0 | safetensors | Hugging Face |
+| T5-base (google-t5) | Codificador texto | No disponible en la ficha | Apache-2.0 | safetensors | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros sistemas de mocap monocular en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos con otros sistemas de mocap mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fendercorp/MocapAnything-MLX
+- Hugging Face: https://huggingface.co/Fendercorp/MocapAnything-MLX
 - Pesos originales MoCapAnything V2: https://huggingface.co/kehong/MoCapAnythingV2-weights
 - Repositorio MoCapAnything: https://github.com/phongdaot/MocapAnything
 - DINOv2-large: https://huggingface.co/facebook/dinov2-large

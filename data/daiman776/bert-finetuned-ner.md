@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daiman776/bert-finetuned-ner` es un ajuste fino (fine-tuning) de `google-bert/bert-base-cased` sobre el dataset CoNLL-2003 para la tarea de reconocimiento de entidades nombradas (NER). Fue generado con el `Trainer` de HuggingFace y subido por el usuario daiman776, aunque no incluye una tarjeta de modelo detallada ni métricas de evaluación publicadas. Su arquitectura es un transformer encoder de tipo BERT con 110 millones de parámetros y una ventana de contexto de 512 tokens, lo que lo hace adecuado para tareas de clasificación de tokens en textos de longitud media.
+El modelo `daiman776/bert-finetuned-ner` es un ajuste fino (fine-tuning) de `google-bert/bert-base-cased` sobre el dataset CoNLL-2003 para la tarea de reconocimiento de entidades nombradas (NER). Fue generado con el `Trainer` de Hugging Face y subido por el usuario daiman776, aunque no incluye una tarjeta de modelo detallada ni métricas de evaluación publicadas. Su arquitectura es un transformer encoder de tipo BERT con 110 millones de parámetros y una ventana de contexto de 512 tokens, lo que lo hace adecuado para tareas de clasificación de tokens en textos de longitud media.
 
 La relevancia de este modelo radica en que ofrece una solución lista para usar de NER en inglés, basada en un checkpoint estándar y un dataset de referencia. Aunque no presenta innovaciones técnicas particulares, su valor práctico reside en la posibilidad de integrarlo en pipelines de extracción de información sin necesidad de entrenar un modelo desde cero. Al ser un modelo pequeño, se puede ejecutar en hardware modesto, incluso en CPU.
 
@@ -16,21 +16,21 @@ La relevancia de este modelo radica en que ofrece una solución lista para usar 
 | Longitud de contexto | 512 tokens |
 | Tipos de cuantizacion | No disponible (pesos en safetensors, compatible con cuantizacion posterior) |
 | Idiomas soportados | Ingles (dataset CoNLL-2003) |
-| Licencia | Apache 2.0 (segun tag en HuggingFace) |
+| Licencia | Apache 2.0 (segun tag en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
 
 El modelo se basa en la arquitectura BERT (Bidirectional Encoder Representations from Transformers) con 12 capas, 768 dimensiones ocultas y 12 cabezales de atencion, tal como corresponde al checkpoint `bert-base-cased`. La capa de salida se sustituye por una cabeza de clasificacion de tokens que asigna a cada token una etiqueta del esquema BIO (Begin, Inside, Outside) para las entidades del dataset CoNLL-2003: personas (PER), organizaciones (ORG), lugares (LOC) y miscelaneas (MISC).
 
-El entrenamiento se realizo mediante el `Trainer` de HuggingFace, aunque no se especifican hiperparametros (tasa de aprendizaje, epocas, tamano de batch) ni el numero exacto de pasos. El dataset CoNLL-2003 contiene aproximadamente 14.000 oraciones de entrenamiento y 3.000 de validacion, todas en ingles, con anotaciones manuales de entidades. No se indica el uso de tecnicas como RLHF o DPO, ya que es un ajuste fino supervisado clasico.
+El entrenamiento se realizo mediante el `Trainer` de Hugging Face, aunque no se especifican hiperparametros (tasa de aprendizaje, epocas, tamano de batch) ni el numero exacto de pasos. El dataset CoNLL-2003 contiene aproximadamente 14.000 oraciones de entrenamiento y 3.000 de validacion, todas en ingles, con anotaciones manuales de entidades. No se indica el uso de tecnicas como RLHF o DPO, ya que es un ajuste fino supervisado clasico.
 
 ## Capacidades
 
 - Reconocimiento de entidades nombradas (NER) en ingles, identificando personas, organizaciones, lugares y entidades miscelaneas.
 - Clasificacion de tokens a nivel de palabra o subpalabra, devolviendo etiquetas BIO para cada token.
 - Procesamiento de textos de hasta 512 tokens por secuencia, adecuado para parrafos o documentos cortos.
-- Integracion sencilla con el ecosistema HuggingFace Transformers, permitiendo su uso con pipelines de `token-classification`.
+- Integracion sencilla con el ecosistema Hugging Face Transformers, permitiendo su uso con pipelines de `token-classification`.
 - No soporta tool calling, agentes, razonamiento multi-paso, vision ni audio. Es exclusivamente un modelo de lenguaje para NER.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - VRAM estimada: menos de 1 GB en precision FP32 para inferencia con batch de 1, y menos de 500 MB con cuantizacion a 8 bits. Es viable en CPU con un consumo de RAM inferior a 2 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (p. ej., NVIDIA GTX 1650, RTX 3060) o incluso CPUs modernas con soporte AVX. No requiere GPU de datacenter.
 - Cabe en GPUs de consumo: si, es un modelo pequeno que se ejecuta comodamente en una RTX 4090, una GTX 1080 o incluso en Apple Silicon con Metal.
-- Opciones de despliegue: se puede servir con la libreria Transformers de HuggingFace, ONNX Runtime, o convertirlo a formato GGUF para su uso con llama.cpp u Ollama. Tambien es compatible con TGI (Text Generation Inference) y vLLM, aunque estas herramientas estan mas orientadas a modelos grandes.
+- Opciones de despliegue: se puede servir con la libreria Transformers de Hugging Face, ONNX Runtime, o convertirlo a formato GGUF para su uso con llama.cpp u Ollama. Tambien es compatible con TGI (Text Generation Inference) y vLLM, aunque estas herramientas estan mas orientadas a modelos grandes.
 - Latencia y throughput: en una CPU moderna, la inferencia sobre un texto de 128 tokens tarda entre 50 y 150 ms. En una GPU de gama media, la latencia se reduce a menos de 10 ms por secuencia.
 
 ## Comparativa con modelos similares
@@ -77,6 +77,6 @@ La comparativa se limita a modelos con la misma arquitectura base y dataset. El 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daiman776/bert-finetuned-ner
+- Modelo en Hugging Face: https://huggingface.co/daiman776/bert-finetuned-ner
 - Dataset CoNLL-2003: https://huggingface.co/datasets/conll2003 (referencia estandar)
 - Checkpoint base: https://huggingface.co/google-bert/bert-base-cased

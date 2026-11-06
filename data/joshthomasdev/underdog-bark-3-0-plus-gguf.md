@@ -6,7 +6,7 @@ Underdog Bark 3.0 Plus (GGUF) es una conversión no oficial al formato GGUF del 
 
 El interés práctico del modelo reside en su formato: al ser un GGUF compatible con transcribe.cpp, permite ejecutar la transcripción en local, sin depender de servicios en la nube, sobre CPU o GPU de consumo. El pipeline de conversión documentado en la model card parte del modelo original en formato propietario (model.bark), lo descomprime a safetensors F32 mediante bark_loader.py y lo transforma con el conversor de Parakeet de transcribe.cpp, lo que sitúa al modelo en la familia de arquitecturas Parakeet para ASR.
 
-La ficha se basa únicamente en los metadatos de HuggingFace y en la model card del autor de la conversión. No hay información publicada sobre datos de entrenamiento, composición del corpus, resultados de benchmarks ni límites de audio, y la búsqueda web realizada no ha devuelto enlaces técnicos relevantes sobre este modelo.
+La ficha se basa únicamente en los metadatos de Hugging Face y en la model card del autor de la conversión. No hay información publicada sobre datos de entrenamiento, composición del corpus, resultados de benchmarks ni límites de audio, y la búsqueda web realizada no ha devuelto enlaces técnicos relevantes sobre este modelo.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ No se han publicado en la informacion proporcionada datos sobre volumen de token
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de HuggingFace incluyen valores de WER, CER, MMLU, HumanEval, GSM8K ni de conjuntos de evaluacion de ASR como LibriSpeech, Common Voice o Fleurs para este modelo o para su base ConwayResearch/Underdog-Bark-3.0-Plus.
+No se han publicado resultados de benchmarks en la informacion disponible. Ni la model card del repositorio GGUF ni los metadatos de Hugging Face incluyen valores de WER, CER, MMLU, HumanEval, GSM8K ni de conjuntos de evaluacion de ASR como LibriSpeech, Common Voice o Fleurs para este modelo o para su base ConwayResearch/Underdog-Bark-3.0-Plus.
 
 ## Requisitos de hardware
 
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks comparativos en la informacion proporc
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/joshthomasdev/underdog-bark-3.0-plus-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/joshthomasdev/underdog-bark-3.0-plus-gguf
 - Modelo base: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Plus
 - Revision del modelo base usada en la conversion: https://huggingface.co/ConwayResearch/Underdog-Bark-3.0-Plus/tree/d4fab2f8b95681e5ad3cfb4e8c5f4e0c009b3deb
 - Runtime transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

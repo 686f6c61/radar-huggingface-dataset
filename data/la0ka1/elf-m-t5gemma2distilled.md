@@ -79,7 +79,7 @@ No se proporcionan comparativas directas con otros modelos de difusión de texto
 - El modelo se entrenó sobre OpenWebText, por lo que hereda sesgos presentes en ese corpus.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/la0ka1/ELF-M-T5Gemma2distilled
+- Hugging Face: https://huggingface.co/la0ka1/ELF-M-T5Gemma2distilled
 - Paper (arXiv, próximamente): no disponible enlace directo
 - Código: https://github.com/la0ka1/diffusing-scaled-text-embeddings
 - Página del proyecto: https://la0ka1.github.io/diffusing-scaled-text-embeddings/

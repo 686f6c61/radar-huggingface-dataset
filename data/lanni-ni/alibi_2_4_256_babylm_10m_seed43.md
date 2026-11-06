@@ -64,7 +64,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/alibi_2_4_256_babylm_10m_seed43
+- Hugging Face: https://huggingface.co/Lanni-ni/alibi_2_4_256_babylm_10m_seed43
 - Paper de ALiBi: https://arxiv.org/abs/1910.09700
 - Modelos relacionados de Lanni-ni: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_100m_epoch4
 - Otro modelo relacionado: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_10m_seed43_epoch4

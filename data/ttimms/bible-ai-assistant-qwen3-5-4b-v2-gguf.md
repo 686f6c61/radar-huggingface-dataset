@@ -62,8 +62,8 @@ No se han publicado resultados cuantitativos de benchmarks en la informacion dis
 | Modelo | Parametros | Arquitectura | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ttimms/bible-ai-assistant-qwen3.5-4b-v2 (este) | 4,2B | Qwen3.5 hibrida (Gated-DeltaNet + atencion) | Preguntas biblicas con RAG | Apache-2.0 | GGUF en este repo; safetensors en el repo base |
-| Qwen3.5-4B (base) | 4,2B | Qwen3.5 hibrida | Modelo general de proposito | Apache-2.0 | Disponible en HuggingFace y Ollama |
-| Ttimms/bible-ai-qwen3.5-4b-lora | 4,2B (adaptador LoRA) | Qwen3.5 hibrida | Fine-tuning LoRA para Biblia | Apache-2.0 | Adapter LoRA en HuggingFace |
+| Qwen3.5-4B (base) | 4,2B | Qwen3.5 hibrida | Modelo general de proposito | Apache-2.0 | Disponible en Hugging Face y Ollama |
+| Ttimms/bible-ai-qwen3.5-4b-lora | 4,2B (adaptador LoRA) | Qwen3.5 hibrida | Fine-tuning LoRA para Biblia | Apache-2.0 | Adapter LoRA en Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la informacion proporcionada. La diferencia principal entre este modelo y el base Qwen3.5-4B es el fine-tuning especifico para tareas biblicas con RAG, que sacrifica capacidades generales a cambio de precision en citas biblicas. El adaptador LoRA es el paso intermedio del entrenamiento, mientras que este repositorio contiene el modelo fusionado y cuantizado para inferencia.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/Ttimms/bible-ai-assistant-qwen3.5-4b-v2-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/Ttimms/bible-ai-assistant-qwen3.5-4b-v2-GGUF
 - Modelo base (safetensors): https://huggingface.co/Ttimms/bible-ai-assistant-qwen3.5-4b-v2
 - Adaptador LoRA: https://huggingface.co/Ttimms/bible-ai-qwen3.5-4b-lora
 - Repositorio GitHub del proyecto: https://github.com/t-timms/bible-ai-assistant

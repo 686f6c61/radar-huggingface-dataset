@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune del modelo base Qwen3-8B, desarrollado por el usuario longtermrisk mediante la librería Unsloth y el framework TRL de HuggingFace. El nombre del repositorio sugiere que el entrenamiento se realizó con un dataset mixto que distingue entre ejemplos "buenos" y "malos", incorporando múltiples factores y perspectivas en primera y tercera persona, con una semilla fija (5) y tres épocas. Sin embargo, la model card no proporciona detalles sobre el dataset, el objetivo específico del fine-tuning ni las tareas para las que está optimizado.
+Este modelo es un fine-tune del modelo base Qwen3-8B, desarrollado por el usuario longtermrisk mediante la librería Unsloth y el framework TRL de Hugging Face. El nombre del repositorio sugiere que el entrenamiento se realizó con un dataset mixto que distingue entre ejemplos "buenos" y "malos", incorporando múltiples factores y perspectivas en primera y tercera persona, con una semilla fija (5) y tres épocas. Sin embargo, la model card no proporciona detalles sobre el dataset, el objetivo específico del fine-tuning ni las tareas para las que está optimizado.
 
 Se trata de un modelo de 8 mil millones de parámetros basado en la arquitectura transformer de Qwen3, licenciado bajo Apache-2.0 y orientado exclusivamente al idioma inglés. Dado que es un fine-tune, hereda las capacidades generales del modelo base, pero no se han documentado mejoras o especializaciones concretas. Su relevancia radica en ser un ejemplo de fine-tuning eficiente con Unsloth, aunque carece de información pública sobre su rendimiento o aplicaciones específicas.
 
@@ -17,11 +17,11 @@ Se trata de un modelo de 8 mil millones de parámetros basado en la arquitectura
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en (ingles) |
 | Licencia | apache-2.0 |
-| Formato de pesos | safetensors (formato estandar en HuggingFace) |
+| Formato de pesos | safetensors (formato estandar en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tune del modelo base unsloth/Qwen3-8B, que a su vez es una version optimizada del Qwen3-8B original. Qwen3-8B emplea una arquitectura transformer estandar con atencion por cabezas multiples, normalizacion RMSNorm y embeddings rotatorios (RoPE). El fine-tuning se realizo con la libreria Unsloth, que acelera el entrenamiento y reduce el uso de memoria, junto con la libreria TRL de HuggingFace para el ajuste supervisado (SFT). El nombre del modelo indica que se utilizo una semilla aleatoria 5 y se entrenaron 3 epocas, pero no se especifica el tamaño del dataset, la composicion de los datos ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica informacion disponible es que el entrenamiento se realizo con datos en ingles y que el modelo resultante se publica bajo licencia Apache-2.0.
+El modelo es un fine-tune del modelo base unsloth/Qwen3-8B, que a su vez es una version optimizada del Qwen3-8B original. Qwen3-8B emplea una arquitectura transformer estandar con atencion por cabezas multiples, normalizacion RMSNorm y embeddings rotatorios (RoPE). El fine-tuning se realizo con la libreria Unsloth, que acelera el entrenamiento y reduce el uso de memoria, junto con la libreria TRL de Hugging Face para el ajuste supervisado (SFT). El nombre del modelo indica que se utilizo una semilla aleatoria 5 y se entrenaron 3 epocas, pero no se especifica el tamaño del dataset, la composicion de los datos ni si se aplicaron tecnicas adicionales como RLHF o DPO. La unica informacion disponible es que el entrenamiento se realizo con datos en ingles y que el modelo resultante se publica bajo licencia Apache-2.0.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ Los requisitos se estiman a partir del modelo base Qwen3-8B, ya que no se propor
 - VRAM estimada para inferencia: aproximadamente 16 GB en FP16, entre 4 y 6 GB en cuantizacion de 4 bits (por ejemplo, con GPTQ o AWQ).
 - GPU recomendadas: una RTX 3090/4090 (24 GB) o superior para FP16; una RTX 3060 (12 GB) o similar puede funcionar con cuantizacion.
 - En consumer GPU: cabe en tarjetas con 8 GB o mas si se usa cuantizacion, pero se recomienda al menos 12 GB para un rendimiento fluido.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), o directamente con transformers de Hugging Face.
 - Latencia y throughput estimados: no disponibles; dependen del hardware y la optimizacion.
 
 ## Comparativa con modelos similares
@@ -86,6 +86,6 @@ La principal diferencia es que este modelo es un fine-tune especifico, mientras 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed5-epoch3
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-good-vs-bad-mixed-multifact-first-third-sft-seed5-epoch3
 - Libreria Unsloth: https://github.com/unslothai/unsloth
 - Modelo base unsloth/Qwen3-8B: https://huggingface.co/unsloth/Qwen3-8B

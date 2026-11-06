@@ -104,7 +104,7 @@ La comparacion directa y con datos completos solo es posible frente al modelo ba
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Openintelligent123/MiniCPM5-2B-CRACK-JANG_8M)
+- [Modelo en Hugging Face](https://huggingface.co/Openintelligent123/MiniCPM5-2B-CRACK-JANG_8M)
 - [Modelo base openbmb/MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B)
 - [vMLX (motor de inferencia MLX para Apple Silicon)](https://vmlx.net)
 - [Pagina de soporte del autor (Ko-fi)](https://ko-fi.com/dealignai)

@@ -77,7 +77,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SAMgo Glimmer LoRA r11 | Adaptador sobre 30B | Hasta 24.576 tokens en entrenamiento | Ediciones JSON para mecanismos LEGO | No disponible | HuggingFace, 0 descargas |
+| SAMgo Glimmer LoRA r11 | Adaptador sobre 30B | Hasta 24.576 tokens en entrenamiento | Ediciones JSON para mecanismos LEGO | No disponible | Hugging Face, 0 descargas |
 | Muse Glimmer 30B (base) | 30B | No disponible | Generacion de texto general | No disponible | Referenciado como `meta-models/Muse-Glimmer-30B` |
 | Modelo generalista sin fine-tuning | Variable | Variable | Texto general, sin verificacion mecanica | Variable | Amplia |
 
@@ -95,7 +95,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (ad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vvennelakanti/samgo-glimmer-lora-r11
+- Modelo en Hugging Face: https://huggingface.co/vvennelakanti/samgo-glimmer-lora-r11
 - Dataset de entrenamiento: https://huggingface.co/datasets/vvennelakanti/samgo-glimmer-train-r11
 - Repositorio SAMgo: https://github.com/vvennela/samgo
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B

@@ -4,7 +4,7 @@
 
 El modelo `weifanjiang/qwen3-8b.speculators.dflash-ce01tv09-bs8-swa` es un modelo *draft* (también llamado *speculator*) diseñado para decodificación especulativa, con el objetivo de acelerar la inferencia del modelo Qwen3-8B. Desarrollado por el usuario weifanjiang, este modelo de 1.802 millones de parámetros (1,8B) se ha entrenado con la librería SpecForge del ecosistema SGLang, tal como se documenta en el issue público de GitHub. Su función principal es predecir múltiples tokens candidatos que el modelo grande verifica en paralelo, reduciendo así la latencia y el coste computacional en despliegues de producción.
 
-La relevancia de este modelo radica en la creciente necesidad de optimizar la inferencia de LLMs de gran tamaño en entornos reales. La decodificación especulativa permite aprovechar un modelo pequeño y rápido para proponer secuencias, mientras que el modelo objetivo (Qwen3-8B, con 8B parámetros) las valida, logrando mejoras de throughput de 2-3x sin pérdida de calidad. El modelo está publicado en formato safetensors y requiere código personalizado (*custom_code*), lo que indica que su integración depende de librerías específicas como SpecForge o SGLang. La licencia no está especificada en la ficha de HuggingFace, por lo que su uso comercial debe consultarse directamente con el autor.
+La relevancia de este modelo radica en la creciente necesidad de optimizar la inferencia de LLMs de gran tamaño en entornos reales. La decodificación especulativa permite aprovechar un modelo pequeño y rápido para proponer secuencias, mientras que el modelo objetivo (Qwen3-8B, con 8B parámetros) las valida, logrando mejoras de throughput de 2-3x sin pérdida de calidad. El modelo está publicado en formato safetensors y requiere código personalizado (*custom_code*), lo que indica que su integración depende de librerías específicas como SpecForge o SGLang. La licencia no está especificada en la ficha de Hugging Face, por lo que su uso comercial debe consultarse directamente con el autor.
 
 ## Especificaciones tecnicas
 
@@ -64,14 +64,14 @@ No se dispone de datos de rendimiento comparativos entre estos modelos. La difer
 ## Limitaciones y advertencias
 
 - Modelo auxiliar: no funciona de forma independiente; requiere el modelo Qwen3-8B como validador para producir texto final.
-- Licencia no especificada: al no indicarse una licencia en HuggingFace, el uso comercial puede estar restringido. Se recomienda contactar al autor antes de utilizarlo en producción.
+- Licencia no especificada: al no indicarse una licencia en Hugging Face, el uso comercial puede estar restringido. Se recomienda contactar al autor antes de utilizarlo en producción.
 - Falta de documentación: no hay información sobre sesgos, alucinaciones o limitaciones de idioma. Al ser un modelo *draft*, su impacto en la calidad final es indirecto, pero si el *draft* produce propuestas de baja calidad, la tasa de aceptación cae y el *speedup* se reduce.
 - Dependencia de *custom_code*: el modelo requiere código personalizado (probablemente de SpecForge/SGLang) para cargarse correctamente, lo que puede complicar su integración en entornos que no usen estas librerías.
 - Riesgo de obsolescencia: al ser un modelo específico para Qwen3-8B, si el modelo objetivo se actualiza (por ejemplo, a Qwen3-2507), este *draft* puede dejar de ser compatible o eficiente.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/weifanjiang/qwen3-8b.speculators.dflash-ce01tv09-bs8-swa)
+- [Modelo en Hugging Face](https://huggingface.co/weifanjiang/qwen3-8b.speculators.dflash-ce01tv09-bs8-swa)
 - [Modelo similar DSpark](https://huggingface.co/weifanjiang/qwen3-8b.speculators.dspark-ce01tv09-bs8-conf-swa)
 - [Issue de GitHub: Train a DFlash Draft Model with SpecForge](https://github.com/sgl-project/SpecForge/issues/465)
 - [Modelo de DeepSeek relacionado](https://huggingface.co/deepseek-ai/dspark_qwen3_8b_block7)

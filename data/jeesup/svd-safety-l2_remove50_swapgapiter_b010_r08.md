@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks de utilidad (MMLU, GSM8K, HumanEval
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Metricas de seguridad |
 |---|---|---|---|---|---|
-| Este checkpoint (SVD-LLM 50 % + swap `gap_iter`, ronda 8) | 6.738.415.616 (recuento safetensors) | 4.096 | Llama 2 Community | HuggingFace, 0 descargas, 0 likes | AdvBench ASR 0,1500; StrongREJECT ASR 0,1900; sobre-rechazo 0,1397 |
-| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 | Llama 2 Community | HuggingFace | No disponible en la informacion proporcionada; el autor lo usa como referencia de partida |
-| Otras celdas de la rejilla del mismo autor (otras reglas y presupuestos) | No disponible | 4.096 (heredado) | Llama 2 Community | HuggingFace | No disponible |
-| Mistral-7B-Instruct-v0.3 (alternativa de tamano y categoria comparable) | Aproximadamente 7.250 millones | 32.768 | Apache-2.0 | HuggingFace | No disponible |
+| Este checkpoint (SVD-LLM 50 % + swap `gap_iter`, ronda 8) | 6.738.415.616 (recuento safetensors) | 4.096 | Llama 2 Community | Hugging Face, 0 descargas, 0 likes | AdvBench ASR 0,1500; StrongREJECT ASR 0,1900; sobre-rechazo 0,1397 |
+| meta-llama/Llama-2-7b-chat-hf (modelo base) | 6.738.415.616 | 4.096 | Llama 2 Community | Hugging Face | No disponible en la informacion proporcionada; el autor lo usa como referencia de partida |
+| Otras celdas de la rejilla del mismo autor (otras reglas y presupuestos) | No disponible | 4.096 (heredado) | Llama 2 Community | Hugging Face | No disponible |
+| Mistral-7B-Instruct-v0.3 (alternativa de tamano y categoria comparable) | Aproximadamente 7.250 millones | 32.768 | Apache-2.0 | Hugging Face | No disponible |
 
 Nota: los datos de Mistral-7B-Instruct-v0.3 proceden de conocimiento general del modelo y no de la informacion proporcionada en esta busqueda; se incluyen unicamente como referencia de categoria y deben verificarse en su model card oficial. No se han encontrado en la busqueda web otros checkpoints comprimidos con metricas de seguridad publicadas que permitan una comparacion directa.
 
@@ -106,7 +106,7 @@ Nota: los datos de Mistral-7B-Instruct-v0.3 proceden de conocimiento general del
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia incluida en el repositorio: `LICENSE.txt` (Llama 2 Community License)
 - Politica de uso incluida en el repositorio: `USE_POLICY.md`

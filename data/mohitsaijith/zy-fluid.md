@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zy-Fluid es un modelo publicado en HuggingFace por el usuario mohitsaijith bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no registra descargas ni interacciones en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-04), lo que sugiere una publicación sin iteraciones posteriores.
+Zy-Fluid es un modelo publicado en Hugging Face por el usuario mohitsaijith bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: únicamente incluye el campo de licencia en el frontmatter YAML, sin información sobre arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no registra descargas ni interacciones en el momento de la consulta, y la fecha de creación y actualización coincide (2026-11-04), lo que sugiere una publicación sin iteraciones posteriores.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante, ya que no se ha documentado ninguna capacidad, benchmark o caso de uso. El nombre "Zy-Fluid" no aporta pistas verificables sobre la familia de modelos o la técnica empleada. Cualquier evaluación técnica del modelo requeriría inspeccionar directamente los archivos de pesos del repositorio, que no se han proporcionado en la información disponible.
 
@@ -34,7 +34,7 @@ Tampoco se documentan innovaciones técnicas destacables como decodificación es
 - No consta soporte de agentes ni razonamiento multi-paso.
 - No consta capacidad multilingüe declarada.
 - No consta modo de razonamiento (thinking mode), visión, audio ni otras modalidades.
-- No consta pipeline de HuggingFace asignado (el campo `pipeline` no está disponible).
+- No consta pipeline de Hugging Face asignado (el campo `pipeline` no está disponible).
 
 ## Casos de uso
 
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Zy-Fluid | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| Zy-Fluid | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la arqu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohitsaijith/Zy-Fluid
+- Hugging Face: https://huggingface.co/mohitsaijith/Zy-Fluid
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

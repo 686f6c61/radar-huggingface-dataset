@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: LocalAI-io/Llama-3-Kimodo-GGML](https://huggingface.co/LocalAI-io/Llama-3-Kimodo-GGML)
-- [HuggingFace: LocalAI-io/Kimodo-SMPLX-RP-v1-GGML](https://huggingface.co/LocalAI-io/Kimodo-SMPLX-RP-v1-GGML) (modelo de difusión asociado)
+- [Hugging Face: LocalAI-io/Llama-3-Kimodo-GGML](https://huggingface.co/LocalAI-io/Llama-3-Kimodo-GGML)
+- [Hugging Face: LocalAI-io/Kimodo-SMPLX-RP-v1-GGML](https://huggingface.co/LocalAI-io/Kimodo-SMPLX-RP-v1-GGML) (modelo de difusión asociado)
 - [LocalAI (proyecto)](https://localai.io/)
 - [Repositorio GitHub de LocalAI](https://github.com/mudler/LocalAI)

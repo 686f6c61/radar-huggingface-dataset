@@ -71,10 +71,10 @@ La model card advierte explicitamente de que esta perdida de evaluacion no es un
 
 | Modelo | Parametros totales | Espacio de acciones | Perdida de evaluacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_pick_block_eef_abs_4k (paso 4.000) | 4,14 B | Absoluto (posicion efector + gripper) | 0,0828 (sobreajustado) | no disponible | HuggingFace |
-| lerobot/pi05_base | no disponible | No aplica (modelo base) | no disponible | no disponible en la informacion | HuggingFace |
-| arkojit1/pi05_pick_block_eef_abs (paso 1.100) | no disponible (misma ejecucion) | Absoluto | 0,0633 (mejor de la ejecucion) | no disponible | HuggingFace |
-| arkojit1/pi05_pick_block_eef_delta | no disponible | Delta `[dx, dy, dz, gripper]` | no disponible / no comparable | no disponible | HuggingFace |
+| arkojit1/pi05_pick_block_eef_abs_4k (paso 4.000) | 4,14 B | Absoluto (posicion efector + gripper) | 0,0828 (sobreajustado) | no disponible | Hugging Face |
+| lerobot/pi05_base | no disponible | No aplica (modelo base) | no disponible | no disponible en la informacion | Hugging Face |
+| arkojit1/pi05_pick_block_eef_abs (paso 1.100) | no disponible (misma ejecucion) | Absoluto | 0,0633 (mejor de la ejecucion) | no disponible | Hugging Face |
+| arkojit1/pi05_pick_block_eef_delta | no disponible | Delta `[dx, dy, dz, gripper]` | no disponible / no comparable | no disponible | Hugging Face |
 
 Los tres checkpoints ajustados pertenecen a la misma ejecucion de entrenamiento sobre el mismo dataset, por lo que la comparacion relevante es entre longitudes de entrenamiento y entre representaciones de accion (absoluta frente a delta). No se dispone de datos de licencia ni de rendimiento que permitan comparar con alternativas externas fuera de la familia π₀.₅.
 
@@ -93,7 +93,7 @@ Los tres checkpoints ajustados pertenecen a la misma ejecucion de entrenamiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_4k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_pick_block_eef_abs_4k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de origen: https://huggingface.co/datasets/Ameyapores/pick_block_eef_delta
 - Checkpoint hermano (paso 1.100, acciones absolutas): https://huggingface.co/arkojit1/pi05_pick_block_eef_abs

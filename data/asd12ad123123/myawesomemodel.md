@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario asd12ad123123 bajo licencia MIT. Segun la model card, se presenta como una version mejorada de un modelo de razonamiento previo, con mejoras en profundidad de inferencia, menor tasa de alucinacion y soporte ampliado para function calling. Sin embargo, existe una contradiccion importante entre los metadatos y la documentacion: la ficha tecnica de HuggingFace etiqueta el repositorio como `bert`, `feature-extraction` y libreria `transformers`, mientras que la model card describe un modelo generativo de razonamiento con razonamiento extendido (thinking), benchmarks de matematicas y programacion y plantillas de prompt para busqueda web. Esta discrepancia no se puede resolver con la informacion disponible.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario asd12ad123123 bajo licencia MIT. Segun la model card, se presenta como una version mejorada de un modelo de razonamiento previo, con mejoras en profundidad de inferencia, menor tasa de alucinacion y soporte ampliado para function calling. Sin embargo, existe una contradiccion importante entre los metadatos y la documentacion: la ficha tecnica de Hugging Face etiqueta el repositorio como `bert`, `feature-extraction` y libreria `transformers`, mientras que la model card describe un modelo generativo de razonamiento con razonamiento extendido (thinking), benchmarks de matematicas y programacion y plantillas de prompt para busqueda web. Esta discrepancia no se puede resolver con la informacion disponible.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, lo que indica que no se han subido pesos utilizables ni existe validacion por parte de la comunidad. La fecha de creacion indicada es 2026-09-11, posterior a la fecha de referencia habitual de evaluacion. La model card emplea marcadores genericos (Model1, Model2, Model1-v2, MyAwesomeModel) y referencias a ficheros de imagen (`figures/fig1.png`, `figures/fig3.png`) que no forman parte de la informacion proporcionada, lo que sugiere que el contenido puede ser una plantilla copiada de otro modelo.
 
@@ -23,7 +23,7 @@ En consecuencia, esta ficha recoge unicamente lo declarado por el autor, marcand
 
 ## Arquitectura y entrenamiento
 
-No hay informacion tecnica verificable sobre la arquitectura. Los tags de HuggingFace indican `transformers`, `pytorch` y `bert`, con pipeline `feature-extraction`. Por el contrario, la model card describe un proceso de post-entrenamiento con "mayor uso de recursos computacionales" y "mecanismos de optimizacion algoritmica", asi como un modo de razonamiento (thinking) que incrementa los tokens de reflexion por consulta. La model card menciona tambien un modelo auxiliar denominado "MyAwesomeModel-Small" con la misma arquitectura que el modelo base pero tokenizer compartido con el principal.
+No hay informacion tecnica verificable sobre la arquitectura. Los tags de Hugging Face indican `transformers`, `pytorch` y `bert`, con pipeline `feature-extraction`. Por el contrario, la model card describe un proceso de post-entrenamiento con "mayor uso de recursos computacionales" y "mecanismos de optimizacion algoritmica", asi como un modo de razonamiento (thinking) que incrementa los tokens de reflexion por consulta. La model card menciona tambien un modelo auxiliar denominado "MyAwesomeModel-Small" con la misma arquitectura que el modelo base pero tokenizer compartido con el principal.
 
 No se especifica el numero de tokens de entrenamiento, la composicion del dataset, ni si se empleo RLHF, DPO u otra tecnica de alineamiento. Tampoco se detalla la innovacion tecnica concreta mas alla de la mencion generica a la mejora del razonamiento durante el post-entrenamiento.
 
@@ -100,7 +100,7 @@ No es posible establecer una comparativa fiable. Los terminos de comparacion de 
 
 ## Limitaciones y advertencias
 
-- Contradiccion entre metadatos y model card: HuggingFace etiqueta el modelo como `bert` y `feature-extraction`, mientras que la documentacion describe un modelo generativo de razonamiento. No es posible determinar cual es correcta.
+- Contradiccion entre metadatos y model card: Hugging Face etiqueta el modelo como `bert` y `feature-extraction`, mientras que la documentacion describe un modelo generativo de razonamiento. No es posible determinar cual es correcta.
 - Ausencia de pesos: el repositorio tiene un tamano de 0.0 GB, por lo que no se pueden descargar ni ejecutar los pesos del modelo.
 - Sin validacion de la comunidad: cero descargas y cero likes, lo que implica que no existe evidencia externa de funcionamiento ni de calidad.
 - Posible plantilla reutilizada: los marcadores genericos, las referencias a imagenes no incluidas y la estructura de la model card sugieren que el contenido podria haberse copiado de otro modelo. Los datos de benchmarks deben tratarse con maxima cautela.
@@ -112,7 +112,7 @@ No es posible establecer una comparativa fiable. Los terminos de comparacion de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asd12ad123123/MyAwesomeModel
+- Hugging Face: https://huggingface.co/asd12ad123123/MyAwesomeModel
 - Repositorio de codigo del autor: no disponible
 - Paper o informe tecnico: no disponible
 - Sitio web oficial de chat/API: no disponible

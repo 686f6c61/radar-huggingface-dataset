@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`arnolfokam/gemma3-4b-african-toolcalling` es un ajuste fino (fine-tuning) del modelo multimodal `unsloth/gemma-3-4b-it` de Google, publicado por el usuario arnolfokam en HuggingFace. El modelo parte de la arquitectura Gemma 3 de 4.300 millones de parámetros y está especializado, según su nombre, en tool calling (llamada a funciones) en contextos africanos. El pipeline declarado es `image-text-to-text`, lo que confirma que conserva la capacidad multimodal del modelo base (entrada de imagen y texto, salida de texto).
+`arnolfokam/gemma3-4b-african-toolcalling` es un ajuste fino (fine-tuning) del modelo multimodal `unsloth/gemma-3-4b-it` de Google, publicado por el usuario arnolfokam en Hugging Face. El modelo parte de la arquitectura Gemma 3 de 4.300 millones de parámetros y está especializado, según su nombre, en tool calling (llamada a funciones) en contextos africanos. El pipeline declarado es `image-text-to-text`, lo que confirma que conserva la capacidad multimodal del modelo base (entrada de imagen y texto, salida de texto).
 
 El ajuste se ha realizado presumiblemente con la librería Unsloth, indicada en los tags, lo que sugiere un entrenamiento eficiente en memoria mediante LoRA o QLoRA sobre el modelo base. El repositorio se publicó el 1 de noviembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni likes, por lo que se trata de un modelo muy reciente y sin validación comunitaria.
 
@@ -75,7 +75,7 @@ La comparativa se basa en características públicas de los modelos; no se dispo
 - No se han publicado evaluaciones ni benchmarks: se desconoce si el fine-tuning mejora, mantiene o degrada las capacidades del modelo base.
 - La model card solo declara inglés; el soporte real de lenguas africanas no está documentado ni verificado.
 - Riesgo de alucinación inherente a los modelos de 4B, especialmente en tool calling con esquemas complejos.
-- El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que puede limitar su uso automatizado.
+- El acceso al repositorio está restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que puede limitar su uso automatizado.
 - Licencia Apache 2.0 permite uso comercial, pero al derivar de Gemma 3 conviene revisar las condiciones de la licencia original de Google (Gemma Terms of Use) por posibles obligaciones adicionales.
 - Sin datos sobre sesgos: al estar entrenado presumiblemente con datos específicos de contextos africanos, podría introducir sesgos regionales no evaluados.
 - El repositorio tiene 0 descargas y 0 likes, sin validación de la comunidad; no se recomienda para producción sin una evaluación propia.
@@ -83,7 +83,7 @@ La comparativa se basa en características públicas de los modelos; no se dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arnolfokam/gemma3-4b-african-toolcalling
+- Hugging Face: https://huggingface.co/arnolfokam/gemma3-4b-african-toolcalling
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it
 - Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Gemma 3 (Google): https://ai.google.dev/gemma/docs

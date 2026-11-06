@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B es un modelo de lenguaje causal con codificador de vision, publicado en el repositorio de HuggingFace `victory5/Qwen3.8-27B`. Segun la model card incluida en ese repositorio, se trata de la generacion Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectonica de Qwen3.5 y orientada a codigo, trabajo profesional, investigacion y tareas agenticas de horizonte largo. El modelo es denso, con 27.781.427.952 parametros reales segun los pesos en safetensors, y se distribuye bajo licencia Apache 2.0.
+Qwen3.8-27B es un modelo de lenguaje causal con codificador de vision, publicado en el repositorio de Hugging Face `victory5/Qwen3.8-27B`. Segun la model card incluida en ese repositorio, se trata de la generacion Qwen3.8 de la familia abierta de Qwen, construida sobre la base arquitectonica de Qwen3.5 y orientada a codigo, trabajo profesional, investigacion y tareas agenticas de horizonte largo. El modelo es denso, con 27.781.427.952 parametros reales segun los pesos en safetensors, y se distribuye bajo licencia Apache 2.0.
 
 Tecnicamente combina un esqueleto hibrido de atencion: 64 capas organizadas en 16 bloques de la forma `3 × (Gated DeltaNet → FFN) → 1 × (Gated Attention → FFN)`, con 48 cabezas de atencion lineal para V y 16 para QK, y solo 16 capas de atencion completa con GQA. Esa mezcla reduce el coste del contexto largo, que es nativo de 262.144 tokens y extensible hasta 1.000.000. Ademas incluye vision nativa (imagenes y videos, incluidos videos de duracion de horas) y prediccion multi-token (MTP) entrenada con varios pasos.
 
@@ -108,7 +108,7 @@ La informacion disponible solo permite comparar a nivel de identificacion, ya qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/victory5/Qwen3.8-27B
+- Repositorio en Hugging Face: https://huggingface.co/victory5/Qwen3.8-27B
 - Qwen Cloud, vision general de Qwen3.8-27B (mencionado en la model card): https://www.qwencloud.com/models/qwen3.8-27b
 - Qwen Cloud (servicio gestionado mencionado en la model card): https://www.qwencloud.com
 - Aviso: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo (los resultados obtenidos correspondian a un servicio de streaming sin relacion). No se dispone de paper, blog tecnico, repositorio de codigo ni demo adicionales verificables.

@@ -60,4 +60,4 @@ No se dispone de información sobre modelos comparables. Dado que es un modelo e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unconst/Affine-5czsc2fc98-r574-r252-odpo-hirank-midctx-ultraextra-merged)
+- [Modelo en Hugging Face](https://huggingface.co/unconst/Affine-5czsc2fc98-r574-r252-odpo-hirank-midctx-ultraextra-merged)

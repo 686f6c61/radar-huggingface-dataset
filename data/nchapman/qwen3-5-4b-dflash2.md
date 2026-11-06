@@ -86,10 +86,10 @@ La informacion disponible no incluye borradores DFlash2 de terceros comparables,
 
 | Alternativa | Tipo | Parametros | Contexto | Rendimiento (tau) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-4B-DFlash2 (este modelo) | Borrador DFlash2 | ~662 M | No disponible | 3,443 (B200) / 3,191 (GB10) | No disponible | HuggingFace, repo de 1,3 GB, 0 descargas |
+| Qwen3.5-4B-DFlash2 (este modelo) | Borrador DFlash2 | ~662 M | No disponible | 3,443 (B200) / 3,191 (GB10) | No disponible | Hugging Face, repo de 1,3 GB, 0 descargas |
 | MTP nativo k=3 de Qwen3.5-4B | Borrador integrado (baseline) | Incluido en el modelo base | El del modelo base | 2,713 (B200) | La del modelo base | Integrado en Qwen3.5-4B |
-| Qwen3.5-4B bf16 sin borrador | Verificador en precision completa | ~4.000 M | El del modelo base | 2,992 con este borrador (GB10) | No disponible | HuggingFace (Qwen/Qwen3.5-4B) |
-| Qwen3.5-4B-W4A16-GPTQ | Verificador cuantizado | ~4.000 M | El del modelo base | 3,443 con este borrador (B200) | No disponible | HuggingFace |
+| Qwen3.5-4B bf16 sin borrador | Verificador en precision completa | ~4.000 M | El del modelo base | 2,992 con este borrador (GB10) | No disponible | Hugging Face (Qwen/Qwen3.5-4B) |
+| Qwen3.5-4B-W4A16-GPTQ | Verificador cuantizado | ~4.000 M | El del modelo base | 3,443 con este borrador (B200) | No disponible | Hugging Face |
 
 Otros borradores de decodificacion especulativa de proposito general o de la misma categoria: no disponible en la informacion proporcionada.
 
@@ -108,7 +108,7 @@ Otros borradores de decodificacion especulativa de proposito general o de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Qwen3.5-4B-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Qwen3.5-4B-DFlash2
 - Modelo base / verificador: https://huggingface.co/Qwen/Qwen3.5-4B
 - Verificador cuantizado usado en entrenamiento: https://huggingface.co/nchapman/Qwen3.5-4B-W4A16-GPTQ
 - Dataset con los identificadores de datos congelados: https://huggingface.co/datasets/nchapman/warp-3090-quant-lab-frozen-data

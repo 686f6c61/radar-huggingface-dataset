@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `voloshka3/beans-deit-tiny-lab` es un clasificador de imagenes de hojas de judia (bean) afinado a partir de `facebook/deit-tiny-patch16-224`, un transformer de vision (ViT) con destilacion (DeiT) de tipo tiny. Lo publica el usuario voloshka3 en HuggingFace y su proposito es distinguir entre tres clases: `angular_leaf_spot` (mancha angular de la hoja), `bean_rust` (roya de la judia) y `healthy` (hoja sana). Se trata de un modelo educativo, entrenado sobre el dataset publico AI-Lab-Makerere/beans, con un tamano muy reducido de 5.524.995 parametros.
+El modelo `voloshka3/beans-deit-tiny-lab` es un clasificador de imagenes de hojas de judia (bean) afinado a partir de `facebook/deit-tiny-patch16-224`, un transformer de vision (ViT) con destilacion (DeiT) de tipo tiny. Lo publica el usuario voloshka3 en Hugging Face y su proposito es distinguir entre tres clases: `angular_leaf_spot` (mancha angular de la hoja), `bean_rust` (roya de la judia) y `healthy` (hoja sana). Se trata de un modelo educativo, entrenado sobre el dataset publico AI-Lab-Makerere/beans, con un tamano muy reducido de 5.524.995 parametros.
 
 El problema que aborda es la clasificacion de imagenes de patologias foliares en cultivos de judia, una tarea tipica de vision artificial aplicada a la agricultura. Su relevancia es limitada y estrictamente pedagogica o de prototipado: sirve como ejemplo reproducible de fine-tuning de un backbone DeiT-tiny con seguimiento de experimentos mediante MLflow, y como punto de partida para pipelines de diagnostico vegetal a mayor escala.
 
@@ -24,7 +24,7 @@ La informacion disponible no incluye datos sobre licencia, idiomas soportados, t
 | Numero de clases | 3 (`angular_leaf_spot`, `bean_rust`, `healthy`) |
 | Dataset de entrenamiento | AI-Lab-Makerere/beans |
 | Libreria | transformers |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -38,7 +38,7 @@ El fine-tuning se realizo sobre el dataset Beans de AI-Lab-Makerere, con un tota
 - Entrada de imagen RGB a 224x224 pixeles, segun la configuracion heredada de `deit-tiny-patch16-224`.
 - Inferencia rapida y de bajo coste, compatible con CPU, gracias a sus 5,5 millones de parametros.
 - Integracion directa con la libreria `transformers` mediante `pipeline("image-classification")` y carga de pesos en formato safetensors.
-- Compatible con endpoints de HuggingFace (`endpoints_compatible` aparece en los tags del repositorio).
+- Compatible con endpoints de Hugging Face (`endpoints_compatible` aparece en los tags del repositorio).
 - No se documenta soporte de tool calling, function calling, agentes, razonamiento multi-paso, capacidades multilingues, vision adicional (deteccion, segmentacion), audio ni modo de razonamiento explicito.
 
 ## Casos de uso
@@ -77,8 +77,8 @@ No se han publicado comparativas con otros modelos sobre el dataset Beans en la 
 
 | Modelo | Parametros | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voloshka3/beans-deit-tiny-lab | 5.524.995 | Clasificacion de imagenes (3 clases) | Imagen 224x224, patch 16 | no disponible | HuggingFace |
-| facebook/deit-tiny-patch16-224 (modelo base) | no disponible en la informacion proporcionada | Clasificacion de imagenes (ImageNet) | Imagen 224x224, patch 16 | no disponible en la informacion proporcionada | HuggingFace |
+| voloshka3/beans-deit-tiny-lab | 5.524.995 | Clasificacion de imagenes (3 clases) | Imagen 224x224, patch 16 | no disponible | Hugging Face |
+| facebook/deit-tiny-patch16-224 (modelo base) | no disponible en la informacion proporcionada | Clasificacion de imagenes (ImageNet) | Imagen 224x224, patch 16 | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas (ViT-base, ConvNeXt, ResNet) | no disponible | Clasificacion de imagenes | no disponible | no disponible | no disponible |
 
 No disponible: no se dispone de datos comparativos de rendimiento, contexto o licencia para establecer una comparacion cuantitativa fiable.
@@ -90,12 +90,12 @@ No disponible: no se dispone de datos comparativos de rendimiento, contexto o li
 - Riesgo de sobreajuste y de alucinacion de clase: con 2 epocas de entrenamiento y un dataset reducido, el modelo puede asignar con alta confianza una de las tres clases a imagenes que no correspondan a ninguna de ellas. No se documenta umbral de rechazo ni clase "desconocida".
 - Limitaciones de contexto e idioma: al ser un clasificador de imagenes, no tiene ventana de contexto textual ni capacidades multilingues. Solo procesa imagenes.
 - Restricciones de licencia: la licencia no esta disponible en la informacion proporcionada, por lo que no se puede confirmar si se permite el uso comercial. Conviene verificar la licencia del dataset AI-Lab-Makerere/beans y del modelo base `facebook/deit-tiny-patch16-224` antes de cualquier uso en produccion.
-- Caveats para produccion: 0 descargas y 0 likes en HuggingFace, sin validacion externa por parte de la comunidad; ausencia de documentacion sobre tipos de cuantizacion, version de `transformers` requerida y procesado previo exacto de las imagenes; el repositorio tiene un tamano de 0.0 GB declarado.
+- Caveats para produccion: 0 descargas y 0 likes en Hugging Face, sin validacion externa por parte de la comunidad; ausencia de documentacion sobre tipos de cuantizacion, version de `transformers` requerida y procesado previo exacto de las imagenes; el repositorio tiene un tamano de 0.0 GB declarado.
 - El modelo distingue unicamente tres clases; cualquier otra patologia foliar sera clasificada erroneamente en una de ellas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/voloshka3/beans-deit-tiny-lab
+- Modelo en Hugging Face: https://huggingface.co/voloshka3/beans-deit-tiny-lab
 - Modelo base: https://huggingface.co/facebook/deit-tiny-patch16-224
 - Dataset de entrenamiento: https://huggingface.co/datasets/AI-Lab-Makerere/beans
 - Paper de DeiT (Training data-efficient image transformers): https://arxiv.org/abs/2012.12877

@@ -84,10 +84,10 @@ Estimaciones derivadas del numero de parametros (24B), no cifras oficiales:
 
 | Modelo | Parametros | Contexto | MMLU (5-shot) | MMLU Pro | MMMU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Mistral Small 3.1 24B Base | 24B | 128k | 81,01% | 56,03% | 59,27% | Apache 2.0 | HuggingFace (repositorio original de Mistral AI y esta copia de CollectionStudio) |
-| Gemma 3 27B PT | 27B | No disponible en la informacion | 78,60% | 52,20% | 56,10% | No disponible en la informacion | HuggingFace |
-| Mistral Small 3 (2501) | No disponible en la informacion | No disponible en la informacion | No disponible | No disponible | No aplica (solo texto) | No disponible en la informacion | HuggingFace |
-| Mistral-Small-3.1-24B-Instruct-2503 | 24B (misma base) | 128k | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Apache 2.0 (segun el repositorio original) | HuggingFace |
+| Mistral Small 3.1 24B Base | 24B | 128k | 81,01% | 56,03% | 59,27% | Apache 2.0 | Hugging Face (repositorio original de Mistral AI y esta copia de CollectionStudio) |
+| Gemma 3 27B PT | 27B | No disponible en la informacion | 78,60% | 52,20% | 56,10% | No disponible en la informacion | Hugging Face |
+| Mistral Small 3 (2501) | No disponible en la informacion | No disponible en la informacion | No disponible | No disponible | No aplica (solo texto) | No disponible en la informacion | Hugging Face |
+| Mistral-Small-3.1-24B-Instruct-2503 | 24B (misma base) | 128k | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Apache 2.0 (segun el repositorio original) | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,12 +99,12 @@ Estimaciones derivadas del numero de parametros (24B), no cifras oficiales:
 - Discrepancia menor entre la model card (que menciona el griego) y las etiquetas del repositorio (que no lo incluyen).
 - Licencia Apache 2.0, permisiva para uso comercial y modificacion, pero la model card original de Mistral AI incluye un aviso de gating y una politica de privacidad asociada a la descarga desde el repositorio oficial; conviene revisar las condiciones aplicables.
 - Este repositorio concreto es una redistribucion de terceros (CollectionStudio) con 0 descargas y 0 likes en el momento de la consulta; se recomienda verificar la integridad de los pesos o usar el repositorio oficial de Mistral AI.
-- Los metadatos del repositorio indican `inference: false`, por lo que el widget de inferencia de HuggingFace no esta operativo.
+- Los metadatos del repositorio indican `inference: false`, por lo que el widget de inferencia de Hugging Face no esta operativo.
 - No se documentan cuantizaciones oficiales ni soporte GGUF, lo que limita el despliegue en hardware de gama baja sin conversiones de terceros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace (copia de CollectionStudio): https://huggingface.co/CollectionStudio/Mistral-Small-3.1-24B-Base-2503
+- Repositorio en Hugging Face (copia de CollectionStudio): https://huggingface.co/CollectionStudio/Mistral-Small-3.1-24B-Base-2503
 - Repositorio oficial del modelo base: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Base-2503
 - Version Instruct: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503
 - Blog de Mistral AI sobre Mistral Small 3.1: https://mistral.ai/news/mistral-small-3-1/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`juyfnj/Qwen3-8B` es un repositorio de HuggingFace que redistribuye el modelo Qwen3-8B, un modelo de lenguaje causal denso de 8.190.735.360 parámetros (8,2B, de los cuales 6,95B son no-embedding) desarrollado originalmente por el equipo Qwen de Alibaba. El repositorio está marcado como fine-tuning de `Qwen/Qwen3-8B-Base` y su model card reproduce íntegramente la documentación oficial de Qwen3, sin apartados específicos que describan qué datos o método se emplearon en el ajuste. Resuelve el caso de uso general de generación de texto, razonamiento, código y matemáticas con soporte nativo de agentes y tool calling.
+`juyfnj/Qwen3-8B` es un repositorio de Hugging Face que redistribuye el modelo Qwen3-8B, un modelo de lenguaje causal denso de 8.190.735.360 parámetros (8,2B, de los cuales 6,95B son no-embedding) desarrollado originalmente por el equipo Qwen de Alibaba. El repositorio está marcado como fine-tuning de `Qwen/Qwen3-8B-Base` y su model card reproduce íntegramente la documentación oficial de Qwen3, sin apartados específicos que describan qué datos o método se emplearon en el ajuste. Resuelve el caso de uso general de generación de texto, razonamiento, código y matemáticas con soporte nativo de agentes y tool calling.
 
 Su relevancia técnica radica en dos características de la familia Qwen3: la conmutación en un mismo modelo entre modo "thinking" (razonamiento explícito dentro de bloques `<think>...</think>`) y modo "non-thinking" (diálogo directo y eficiente), y una ventana de contexto de 32.768 tokens nativa ampliable a 131.072 mediante YaRN. La arquitectura es un transformer decoder-only con 36 capas y atención GQA (32 cabezas para Q, 8 para KV), lo que reduce el coste de caché KV frente a atención multi-cabeza completa.
 
@@ -95,7 +95,7 @@ Datos de los modelos alternativos tomados de información pública general, no v
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/juyfnj/Qwen3-8B
+- Repositorio Hugging Face: https://huggingface.co/juyfnj/Qwen3-8B
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Modelo oficial de referencia: https://huggingface.co/Qwen/Qwen3-8B
 - Licencia (Apache 2.0): https://huggingface.co/Qwen/Qwen3-8B/blob/main/LICENSE

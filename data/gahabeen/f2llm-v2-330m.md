@@ -2,7 +2,7 @@
 
 ## Resumen
 
-F2LLM-v2-330M es un modelo de embeddings multilingüe de propósito general publicado en HuggingFace por el usuario gahabeen, que lo distribuye como derivado del modelo base codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-330M. No es una generación de texto: es un encoder de frases (pipeline `feature-extraction`) que convierte consultas y documentos en vectores densos utilizables para búsqueda semántica, recuperación de información y clasificación. Cuenta con 334.349.184 parámetros reales (unos 334 M) y un repositorio de 0,7 GB en formato safetensors.
+F2LLM-v2-330M es un modelo de embeddings multilingüe de propósito general publicado en Hugging Face por el usuario gahabeen, que lo distribuye como derivado del modelo base codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-330M. No es una generación de texto: es un encoder de frases (pipeline `feature-extraction`) que convierte consultas y documentos en vectores densos utilizables para búsqueda semántica, recuperación de información y clasificación. Cuenta con 334.349.184 parámetros reales (unos 334 M) y un repositorio de 0,7 GB en formato safetensors.
 
 La familia original F2LLM-v2, desarrollada por CodeFuse (Ant Group), se presenta como un conjunto de modelos de embeddings totalmente abiertos en ocho tamaños que van de 80 M a 14 B, entrenados sobre una composición curada de 60 millones de ejemplos de datos públicos de alta calidad y con cobertura declarada de más de 200 idiomas, con énfasis en lenguas de recursos medios y bajos. Los tres modelos instruct más pequeños (80 M, 160 M y 330 M) se obtienen podando y reentrenando el modelo base de 0,6 B, de ahí el tamaño y el apellido "Pruned-330M".
 
@@ -65,7 +65,7 @@ La model card de la familia afirma, sin cifras, que F2LLM-v2 establece un nuevo 
 - VRAM estimada para inferencia: por debajo de 2 GB en fp16 sumando pesos y activaciones de lotes pequeños; el modelo cabe holgadamente en cualquier GPU de consumo.
 - GPU compatibles: cualquier GPU con 4 GB o más de VRAM (RTX 3050, RTX 3060, RTX 4060, RTX 4090, T4, L4, A10, A100, H100). En la practica, la eleccion vendra determinada por el throughput agregado necesario, no por la memoria.
 - Viabilidad en CPU: el tamano de 334 M hace viable la inferencia en CPU para cargas de baja concurrencia o indexado por lotes fuera de linea.
-- Opciones de despliegue: sentence-transformers (`SentenceTransformer`), transformers con `AutoModel` y pooling manual, y Text Embeddings Inference (el repositorio incluye la etiqueta `text-embeddings-inference`). Tambien esta marcado como compatible con endpoints de HuggingFace (`endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp ni Ollama en la informacion disponible.
+- Opciones de despliegue: sentence-transformers (`SentenceTransformer`), transformers con `AutoModel` y pooling manual, y Text Embeddings Inference (el repositorio incluye la etiqueta `text-embeddings-inference`). Tambien esta marcado como compatible con endpoints de Hugging Face (`endpoints_compatible`). No se confirma soporte de vLLM, llama.cpp ni Ollama en la informacion disponible.
 - Latencia y throughput: no disponible. No se han publicado mediciones de latencia ni de tokens por segundo para este repositorio.
 
 ## Comparativa con modelos similares
@@ -97,7 +97,7 @@ Para comparar con alternativas de otros proveedores (por ejemplo, otros encoders
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio analizado): https://huggingface.co/gahabeen/F2LLM-v2-330M
+- Modelo en Hugging Face (repositorio analizado): https://huggingface.co/gahabeen/F2LLM-v2-330M
 - Modelo base declarado: https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-330M
 - Modelo oficial de la familia, tamano 330M: https://huggingface.co/codefuse-ai/F2LLM-v2-330M
 - Familia completa F2LLM-v2: https://huggingface.co/codefuse-ai/F2LLM-v2-80M, https://huggingface.co/codefuse-ai/F2LLM-v2-160M, https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B, https://huggingface.co/codefuse-ai/F2LLM-v2-1.7B, https://huggingface.co/codefuse-ai/F2LLM-v2-4B, https://huggingface.co/codefuse-ai/F2LLM-v2-8B, https://huggingface.co/codefuse-ai/F2LLM-v2-14B

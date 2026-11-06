@@ -73,8 +73,8 @@ Los resultados publicados corresponden a la referencia histórica del checkpoint
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QEV1.1-9B | 9B | no disponible | Clasificación DLP por decisión tipada, en/ko/ja | QueryPie AI Research License v1.0 (comercial con permiso) | HuggingFace (45 descargas) |
-| Qwen3.5-9B-Base | 9B | no disponible | Modelo base generativo | según modelo base (no detallada aquí) | HuggingFace |
+| QEV1.1-9B | 9B | no disponible | Clasificación DLP por decisión tipada, en/ko/ja | QueryPie AI Research License v1.0 (comercial con permiso) | Hugging Face (45 descargas) |
+| Qwen3.5-9B-Base | 9B | no disponible | Modelo base generativo | según modelo base (no detallada aquí) | Hugging Face |
 | Alternativas DLP basadas en LLM | no disponible | no disponible | Clasificación/generación | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoría en la información proporcionada.
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/querypieai/QEV1.1-9B
+- Modelo en Hugging Face: https://huggingface.co/querypieai/QEV1.1-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Contacto comercial de QueryPie: https://www.querypie.com/en/contact-us

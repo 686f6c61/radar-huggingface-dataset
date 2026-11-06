@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BarryFutureman/iv12b-merged es un modelo de 11.959.730.224 parametros (aproximadamente 12B) publicado en HuggingFace por el usuario BarryFutureman, con pipeline declarado image-text-to-text y etiqueta de arquitectura gemma4_unified. Se trata de un ajuste fino de tipo LoRA + SFT sobre el modelo AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16, posteriormente fusionado (el sufijo "merged" del nombre indica que los pesos del adaptador se han integrado en los pesos base, generando un checkpoint autonomo en formato safetensors).
+BarryFutureman/iv12b-merged es un modelo de 11.959.730.224 parametros (aproximadamente 12B) publicado en Hugging Face por el usuario BarryFutureman, con pipeline declarado image-text-to-text y etiqueta de arquitectura gemma4_unified. Se trata de un ajuste fino de tipo LoRA + SFT sobre el modelo AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16, posteriormente fusionado (el sufijo "merged" del nombre indica que los pesos del adaptador se han integrado en los pesos base, generando un checkpoint autonomo en formato safetensors).
 
 El modelo esta orientado a conversacion y a interpretacion de personaje ("character"), lo que lo situa en la categoria de modelos multimodales conversacionales especializados en mantener una persona concreta en lugar de un asistente generico. Al heredar la base multimodal (entrada de imagen y texto) y una variante "abliterated" del Gemma-4-12B-it, combina capacidad de vision y lenguaje con un alineamiento de seguridad presumiblemente reducido.
 
@@ -22,7 +22,7 @@ Su relevancia practica es limitada por el momento: el repositorio esta restringi
 | Formato de pesos | safetensors (libreria transformers) |
 | Modelo base | AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16 |
 | Tipo de ajuste | LoRA + SFT, fusionado en los pesos base |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Tamano del repositorio | 24,0 GB |
 
 ## Arquitectura y entrenamiento
@@ -73,10 +73,10 @@ No hay datos de rendimiento del modelo evaluado, por lo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BarryFutureman/iv12b-merged | ~12B | No disponible | Imagen + texto | Gemma | Gated en HuggingFace, 0 descargas |
-| Gemma 3 12B-it | ~12B | 128K | Imagen + texto | Gemma | Publico en HuggingFace |
-| Mistral Nemo 12B | ~12B | 128K | Texto | Apache 2.0 | Publico en HuggingFace |
-| Pixtral 12B | ~12B | 128K | Imagen + texto | Apache 2.0 | Publico en HuggingFace |
+| BarryFutureman/iv12b-merged | ~12B | No disponible | Imagen + texto | Gemma | Gated en Hugging Face, 0 descargas |
+| Gemma 3 12B-it | ~12B | 128K | Imagen + texto | Gemma | Publico en Hugging Face |
+| Mistral Nemo 12B | ~12B | 128K | Texto | Apache 2.0 | Publico en Hugging Face |
+| Pixtral 12B | ~12B | 128K | Imagen + texto | Apache 2.0 | Publico en Hugging Face |
 
 La comparacion con Gemma 4 12B-it, el Gemma-4-12B-it original o la propia base AEON-7 no es posible con los datos disponibles: no se conocen ni la ventana de contexto ni los resultados del modelo evaluado frente a ellos.
 
@@ -88,12 +88,12 @@ La comparacion con Gemma 4 12B-it, el Gemma-4-12B-it original o la propia base A
 - Sesgos: no se publica ninguna evaluacion de sesgos. El dataset de SFT es desconocido, por lo que no se puede descartar la amplificacion de sesgos de genero, raza, idioma o cultura heredados de la base y del corpus de ajuste.
 - Idiomas: no se declara la lista de idiomas soportados. El comportamiento fuera del ingles o de los idiomas mayoritarios de la base Gemma es impredecible.
 - Contexto: se desconoce la longitud de contexto efectiva, por lo que no se debe asumir que soporta ventanas largas aunque la familia Gemma suela ofrecerlas.
-- Restricciones de licencia: la licencia es Gemma. El uso comercial esta permitido por los Gemma Terms of Use, pero sujeto a la politica de uso prohibido y a las obligaciones de atribucion y de redistribucion de las condiciones. Cualquier producto derivado debe cumplir dichos terminos. Ademas, el acceso esta restringido (gated), lo que obliga a aceptar condiciones adicionales en HuggingFace antes de descargar los pesos.
+- Restricciones de licencia: la licencia es Gemma. El uso comercial esta permitido por los Gemma Terms of Use, pero sujeto a la politica de uso prohibido y a las obligaciones de atribucion y de redistribucion de las condiciones. Cualquier producto derivado debe cumplir dichos terminos. Ademas, el acceso esta restringido (gated), lo que obliga a aceptar condiciones adicionales en Hugging Face antes de descargar los pesos.
 - Trazabilidad: no se documentan los datos de entrenamiento, los hiperparametros del LoRA ni el proceso de fusion. Esto dificulta la reproducibilidad y la auditoria del checkpoint.
 - Uso en produccion: no recomendado sin una evaluacion propia de calidad, seguridad, latencia y coste, dado que no existe ninguna metrica publica ni soporte confirmado en motores de inferencia de alto rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BarryFutureman/iv12b-merged
+- Modelo en Hugging Face: https://huggingface.co/BarryFutureman/iv12b-merged
 - Modelo base: https://huggingface.co/AEON-7/Gemma-4-12B-it-AEON-Abliterated-K4-BF16
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada.

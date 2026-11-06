@@ -70,6 +70,6 @@ No se dispone de información pública que permita una comparativa directa con o
 
 ## Enlaces
 
-- HuggingFace: [https://huggingface.co/Krrish4757/jobmingler_skill_model](https://huggingface.co/Krrish4757/jobmingler_skill_model)
+- Hugging Face: [https://huggingface.co/Krrish4757/jobmingler_skill_model](https://huggingface.co/Krrish4757/jobmingler_skill_model)
 - Repositorio de Unsloth (herramienta de entrenamiento): [https://github.com/unslothai/unsloth](https://github.com/unslothai/unsloth)
 - Documentación de llama.cpp: [https://github.com/ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)

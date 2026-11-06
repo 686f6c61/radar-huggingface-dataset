@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tuning experimental de Qwen2.5-3B-Instruct, publicado por el usuario Uigyu en HuggingFace. El objetivo del ajuste no se documenta en la model card, pero el nombre del repositorio sugiere una variante relacionada con "em_insecure", sin que haya más detalles disponibles. El modelo se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió acelerar el proceso de fine-tuning, según indica el autor.
+Este modelo es un fine-tuning experimental de Qwen2.5-3B-Instruct, publicado por el usuario Uigyu en Hugging Face. El objetivo del ajuste no se documenta en la model card, pero el nombre del repositorio sugiere una variante relacionada con "em_insecure", sin que haya más detalles disponibles. El modelo se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió acelerar el proceso de fine-tuning, según indica el autor.
 
 Al estar basado en Qwen2.5-3B-Instruct, hereda la arquitectura transformer decoder-only de 3.000 millones de parámetros y una ventana de contexto de 32.768 tokens. Sin embargo, no se han publicado especificaciones sobre los datos de entrenamiento, el número de tokens ni las técnicas de alineación utilizadas. El repositorio solo contiene un adaptador o pesos cuantizados de 0,3 GB, lo que sugiere que no se distribuyen los pesos completos en precisión estándar.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada en el estado actual, ya que no hay benc
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de Qwen2.5-3B-Instruct, un transformer decoder-only de 3.000 millones de parámetros con atención por ventanas de 32.768 tokens. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace. Unsloth es una librería que optimiza el entrenamiento mediante kernels de atención y cuantización, y la model card indica que permitió entrenar el modelo "2x más rápido" que un flujo estándar. No se proporcionan detalles sobre el conjunto de datos utilizado, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documenta ninguna innovación técnica específica del fine-tuning más allá del uso de estas herramientas.
+El modelo es un fine-tuning de Qwen2.5-3B-Instruct, un transformer decoder-only de 3.000 millones de parámetros con atención por ventanas de 32.768 tokens. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face. Unsloth es una librería que optimiza el entrenamiento mediante kernels de atención y cuantización, y la model card indica que permitió entrenar el modelo "2x más rápido" que un flujo estándar. No se proporcionan detalles sobre el conjunto de datos utilizado, el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se documenta ninguna innovación técnica específica del fine-tuning más allá del uso de estas herramientas.
 
 ## Capacidades
 
@@ -71,7 +71,7 @@ No se han publicado resultados comparativos con modelos similares en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Uigyu/qwen_2.5_3b-em_insecure_lr1e4
+- Modelo en Hugging Face: https://huggingface.co/Uigyu/qwen_2.5_3b-em_insecure_lr1e4
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-3B-Instruct
 - Variante del mismo autor (em_insecure_ts): https://huggingface.co/Uigyu/qwen_2.5_3b-em_insecure_ts
 - Otro modelo del mismo autor (mh-cat_h5_b_s1): https://huggingface.co/Uigyu/qwen_2.5_3b_mh-cat_h5_b_s1

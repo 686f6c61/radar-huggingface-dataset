@@ -23,7 +23,7 @@ La relevancia de esta ficha es fundamentalmente practica: permite desplegar un m
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base en la documentacion proporcionada. El repositorio es una conversion estatica de pesos ("static quants of https://huggingface.co/ZoengHouNaam/Embed-RL-2B"), con metadatos internos que indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde un checkpoint de HuggingFace con tensores cuantizados en la salida. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. La presencia de "RL" en el nombre del modelo base y de "Embed" en el identificador sugiere un modelo orientado a representaciones vectoriales entrenado con algun esquema de refuerzo, pero esto no se confirma en la informacion disponible.
+No hay informacion disponible sobre la arquitectura del modelo base en la documentacion proporcionada. El repositorio es una conversion estatica de pesos ("static quants of https://huggingface.co/ZoengHouNaam/Embed-RL-2B"), con metadatos internos que indican `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, es decir, una conversion desde un checkpoint de Hugging Face con tensores cuantizados en la salida. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases de RLHF, DPO u otro ajuste por preferencias. La presencia de "RL" en el nombre del modelo base y de "Embed" en el identificador sugiere un modelo orientado a representaciones vectoriales entrenado con algun esquema de refuerzo, pero esto no se confirma en la informacion disponible.
 
 El unico elemento estructural observable mas alla de los pesos de lenguaje son los dos ficheros mmproj (multi-modal supplement) en precision Q8_0 (0,5 GB) y f16 (0,9 GB), que en el ecosistema GGUF se utilizan para acompanar un proyector multimodal a un modelo de lenguaje. No se documenta que modalidad cubre ese proyector ni como se combina con el modelo base. Tampoco se ofrecen cuantizaciones ponderadas con imatrix: el autor indica explicitamente que estas no estaban disponibles en el momento de la publicacion y que pueden solicitarse mediante una discusion en la comunidad.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mradermacher/Embed-RL-2B-GGUF | 1,72B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | HuggingFace, 174 descargas |
-| ZoengHouNaam/Embed-RL-2B (modelo base) | 1,72B | no disponible | safetensors | apache-2.0 | HuggingFace |
+| mradermacher/Embed-RL-2B-GGUF | 1,72B | no disponible | GGUF (12 cuantizaciones + 2 mmproj) | apache-2.0 | Hugging Face, 174 descargas |
+| ZoengHouNaam/Embed-RL-2B (modelo base) | 1,72B | no disponible | safetensors | apache-2.0 | Hugging Face |
 | Otras cuantizaciones GGUF de modelos de ~2B | no disponible | no disponible | GGUF | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria en el material proporcionado, ni de datos de rendimiento que permitan una comparacion cuantitativa. La unica comparacion posible con datos reales es frente al checkpoint base sin cuantizar, del que este repositorio es una conversion directa.

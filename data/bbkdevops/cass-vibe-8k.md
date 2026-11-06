@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bbkdevops/cass-vibe-8k` es un checkpoint de 9.409.813.744 parametros (unos 9,4 B) publicado en HuggingFace por el usuario `bbkdevops`, construido sobre `prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0`. La model card incluida en el repositorio describe en realidad una version cuantizada en FP8 de ese modelo base (`Qwen3.5-9B-DS-v4-Flash-v3.0-FP8`), derivada a su vez de `prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0` y del backbone original `Qwen/Qwen3.5-9B`. Es decir, se trata de una cadena de ajuste y cuantizacion: backbone Qwen3.5-9B, SFT multi-etapa sobre trazas de razonamiento de DeepSeek V4 Flash, y finalmente conversion a FP8 con `llmcompressor`.
+`bbkdevops/cass-vibe-8k` es un checkpoint de 9.409.813.744 parametros (unos 9,4 B) publicado en Hugging Face por el usuario `bbkdevops`, construido sobre `prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0`. La model card incluida en el repositorio describe en realidad una version cuantizada en FP8 de ese modelo base (`Qwen3.5-9B-DS-v4-Flash-v3.0-FP8`), derivada a su vez de `prithivMLmods/Q3.5-9B-DS-v4-Flash-v2.0` y del backbone original `Qwen/Qwen3.5-9B`. Es decir, se trata de una cadena de ajuste y cuantizacion: backbone Qwen3.5-9B, SFT multi-etapa sobre trazas de razonamiento de DeepSeek V4 Flash, y finalmente conversion a FP8 con `llmcompressor`.
 
 El objetivo declarado es reducir el consumo de memoria y el tamano del checkpoint manteniendo las capacidades de razonamiento largo, resolucion de problemas matematicos, analisis cientifico, generacion de codigo y seguimiento de instrucciones, de modo que un modelo de 9 B con contexto de 32.768 tokens pueda servirse en GPUs mas pequenas. La cuantizacion es FP8 dinamica por tensor sobre capas `Linear`, sin necesidad de dataset de calibracion, y deja sin cuantizar `lm_head`, `embed_tokens`, los componentes visuales (si existen) y las capas `linear_attn`.
 
@@ -78,10 +78,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Precision / cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `bbkdevops/cass-vibe-8k` | 9,4 B | 32.768 tokens | FP8 dinamico (compressed-tensors) | Apache-2.0 | HuggingFace, 0 descargas |
-| `prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0` (modelo base) | no disponible (9 B por nomenclatura) | 32.768 tokens | BF16 | no disponible en la informacion | HuggingFace |
-| `prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0-FP8` | no disponible | 32.768 tokens | FP8_DYNAMIC | no disponible en la informacion | HuggingFace |
-| `Qwen/Qwen3.5-9B` (backbone original) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `bbkdevops/cass-vibe-8k` | 9,4 B | 32.768 tokens | FP8 dinamico (compressed-tensors) | Apache-2.0 | Hugging Face, 0 descargas |
+| `prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0` (modelo base) | no disponible (9 B por nomenclatura) | 32.768 tokens | BF16 | no disponible en la informacion | Hugging Face |
+| `prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0-FP8` | no disponible | 32.768 tokens | FP8_DYNAMIC | no disponible en la informacion | Hugging Face |
+| `Qwen/Qwen3.5-9B` (backbone original) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado ni de modelos alternativos de la misma categoria con cifras verificables en la informacion proporcionada. Cualquier comparacion de calidad entre estas variantes requeriria ejecutar evaluaciones propias.
 
@@ -101,7 +101,7 @@ No se dispone de datos de rendimiento comparado ni de modelos alternativos de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bbkdevops/cass-vibe-8k
+- Modelo en Hugging Face: https://huggingface.co/bbkdevops/cass-vibe-8k
 - Modelo base (BF16): https://huggingface.co/prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0
 - Version FP8 referenciada en la model card: https://huggingface.co/prithivMLmods/Qwen3.5-9B-DS-v4-Flash-v3.0-FP8
 - Dataset de destilacion de DeepSeek V4: https://huggingface.co/datasets/Jackrong/DeepSeek-V4-Distill-8000x

@@ -29,7 +29,7 @@ Su relevancia es metodológica, no de producto: permite comparar estrategias de 
 
 El modelo hereda la arquitectura de Phi-1.5: un transformer causal denso, sin mezcla de expertos, orientado a generación de texto y razonamiento básico de código. Sobre esa base, el checkpoint parte de `locuslab/tofu_ft_phi-1.5` (un ajuste fino de Phi-1.5 sobre el dataset TOFU) y aplica una intervención concreta: reinicializa los embeddings de entrada y la LM head desde `microsoft/phi-1_5`, conservando el resto de pesos del transformer del modelo afinado. Esta operación de *reset* parcial es la que da nombre a la variante (`unlresetoracle`).
 
-La función de pérdida combina dos términos: entropía cruzada estándar (CE) sobre el conjunto *retain* con peso 1.0, y una pérdida IHL (*input head loss*) sobre el conjunto *forget*. El entrenamiento se ejecuta durante 20 épocas (checkpoint `epoch20`, es decir, el final del ciclo). No se especifican en la información disponible el número total de tokens vistos, la composición exacta del dataset TOFU utilizado, ni si hubo fases de RLHF o DPO; el pipeline de HuggingFace figura como no disponible. El repositorio incluye un archivo `ihl_manifest.json` que presumiblemente documenta hiperparámetros y la configuración del experimento, aunque su contenido no se ha detallado.
+La función de pérdida combina dos términos: entropía cruzada estándar (CE) sobre el conjunto *retain* con peso 1.0, y una pérdida IHL (*input head loss*) sobre el conjunto *forget*. El entrenamiento se ejecuta durante 20 épocas (checkpoint `epoch20`, es decir, el final del ciclo). No se especifican en la información disponible el número total de tokens vistos, la composición exacta del dataset TOFU utilizado, ni si hubo fases de RLHF o DPO; el pipeline de Hugging Face figura como no disponible. El repositorio incluye un archivo `ihl_manifest.json` que presumiblemente documenta hiperparámetros y la configuración del experimento, aunque su contenido no se ha detallado.
 
 ## Capacidades
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (`unl-reset/tofu-phi-1_5-...`) | 1,3 B | no disponible | apache-2.0 | HuggingFace (0 descargas) | Artefacto de investigación TOFU |
-| `microsoft/phi-1_5` | 1,3 B | 2.048 tokens (según documentación pública del original) | MIT (según el original) | HuggingFace | Modelo base de propósito general |
-| `locuslab/tofu_ft_phi-1.5` | 1,3 B | no disponible | no disponible | HuggingFace | Ajuste fino sobre TOFU, base directa de este checkpoint |
-| Otras variantes `unl-reset` del mismo experimento | 1,3 B | no disponible | apache-2.0 | HuggingFace | Mismo pipeline con distintas semillas/configuraciones |
+| Este checkpoint (`unl-reset/tofu-phi-1_5-...`) | 1,3 B | no disponible | apache-2.0 | Hugging Face (0 descargas) | Artefacto de investigación TOFU |
+| `microsoft/phi-1_5` | 1,3 B | 2.048 tokens (según documentación pública del original) | MIT (según el original) | Hugging Face | Modelo base de propósito general |
+| `locuslab/tofu_ft_phi-1.5` | 1,3 B | no disponible | no disponible | Hugging Face | Ajuste fino sobre TOFU, base directa de este checkpoint |
+| Otras variantes `unl-reset` del mismo experimento | 1,3 B | no disponible | apache-2.0 | Hugging Face | Mismo pipeline con distintas semillas/configuraciones |
 
 La comparación relevante es con las otras variantes del propio experimento `unl-reset`, ya que no existen modelos comerciales directamente equiparables en la tarea de *unlearning* sobre TOFU.
 
@@ -88,7 +88,7 @@ La comparación relevante es con las otras variantes del propio experimento `unl
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch20
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch20
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
-- Manifiesto del experimento: `ihl_manifest.json` (incluido en el repositorio de HuggingFace)
+- Manifiesto del experimento: `ihl_manifest.json` (incluido en el repositorio de Hugging Face)

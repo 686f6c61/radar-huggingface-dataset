@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/melvindave/qwen3.5-2b-melvin-posts-v1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/melvindave/qwen3.5-2b-melvin-posts-v1-GGUF
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-2B
 - Unsloth (framework de entrenamiento mencionado en la model card): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "wjcwqc/MireskaVoice-qwen3tts",
+  "slug": "wjcwqc-mireskavoice-qwen3tts",
+  "author": "wjcwqc",
+  "url": "https://huggingface.co/wjcwqc/MireskaVoice-qwen3tts",
+  "created_at": "2026-11-05T17:36:51.000Z",
+  "updated_at": "2026-11-05T20:11:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "tts",
+    "voice-cloning",
+    "qwen3-tts",
+    "lora",
+    "finetune",
+    "dota2",
+    "text-to-speech",
+    "zh",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4581301700,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wjcwqc/MireskaVoice · Hugging Face",
+      "url": "https://huggingface.co/wjcwqc/MireskaVoice",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

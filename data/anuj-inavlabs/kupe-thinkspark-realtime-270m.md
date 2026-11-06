@@ -83,7 +83,7 @@ No se dispone de información sobre modelos comparables específicos para contro
 
 ## Enlaces
 
-- [HuggingFace: anuj-inavlabs/Kupe-ThinkSpark-Realtime-270M](https://huggingface.co/anuj-inavlabs/Kupe-ThinkSpark-Realtime-270M)
+- [Hugging Face: anuj-inavlabs/Kupe-ThinkSpark-Realtime-270M](https://huggingface.co/anuj-inavlabs/Kupe-ThinkSpark-Realtime-270M)
 - [Página de investigación de Kupe](https://www.kupe.in/research/kupe-thinkspark-realtime-270m)
 - [Documentación de Kupe](https://docs.kupe.in)
 - [Sitio web de Kupe](https://www.kupe.in)

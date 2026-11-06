@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su capacidad para ejecutar tareas de razo
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información oficial sobre la arquitectura interna del modelo original empero-ai/Qwen3.8-2B. Las etiquetas de HuggingFace incluyen "qwen3_5", lo que sugiere que podría basarse en la arquitectura de la serie Qwen3.5, pero no hay confirmación documental. El modelo fue convertido a MLX usando mlx-lm versión 0.31.2, lo que implica que los pesos originales en formato Transformers se adaptaron para su ejecución eficiente en Apple Silicon.
+No se dispone de información oficial sobre la arquitectura interna del modelo original empero-ai/Qwen3.8-2B. Las etiquetas de Hugging Face incluyen "qwen3_5", lo que sugiere que podría basarse en la arquitectura de la serie Qwen3.5, pero no hay confirmación documental. El modelo fue convertido a MLX usando mlx-lm versión 0.31.2, lo que implica que los pesos originales en formato Transformers se adaptaron para su ejecución eficiente en Apple Silicon.
 
 En cuanto al entrenamiento, las etiquetas indican que el modelo original fue sometido a destilación (distillation) y ajuste supervisado (SFT). No se proporcionan datos sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO. Tampoco se mencionan innovaciones técnicas específicas en el proceso de entrenamiento.
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-8Bit
+- Repositorio Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-2B-mlx-8Bit
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-2B
 - Repositorio GitHub de la serie Qwen3.8 (referencia general): https://github.com/QwenLM/Qwen3.8
 - Información sobre Qwen3.8 en OpenLM.ai: https://openlm.ai/qwen3.8/

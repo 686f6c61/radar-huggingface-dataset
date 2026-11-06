@@ -41,7 +41,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Requisitos de hardware
 
-No se dispone de datos sobre requisitos de hardware, VRAM estimada, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.) ni latencia o throughput. El modelo no tiene peso publicado en HuggingFace, por lo que no es posible determinar si es ejecutable en hardware de consumo.
+No se dispone de datos sobre requisitos de hardware, VRAM estimada, GPUs recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, TGI, etc.) ni latencia o throughput. El modelo no tiene peso publicado en Hugging Face, por lo que no es posible determinar si es ejecutable en hardware de consumo.
 
 ## Comparativa con modelos similares
 
@@ -52,15 +52,15 @@ No se conocen modelos comparables en la misma categoría (compiladores de XML co
 - La licencia "sovereign-source-license-v2" no es una licencia estándar de código abierto; es necesario revisar sus términos antes de cualquier uso comercial o redistribución.
 - El modelo solo soporta inglés según la etiqueta `language: en`.
 - No hay información sobre sesgos, alucinaciones o limitaciones de contexto al no existir especificaciones técnicas.
-- No se ha publicado ningún peso ni artefacto descargable en HuggingFace; el repositorio solo contiene código fuente y gramáticas, lo que impide su uso directo como modelo.
+- No se ha publicado ningún peso ni artefacto descargable en Hugging Face; el repositorio solo contiene código fuente y gramáticas, lo que impide su uso directo como modelo.
 - El proyecto tiene cero descargas y cero likes, lo que sugiere una ausencia de validación comunitaria o de uso en producción.
 - La fecha de creación (septiembre de 2026) es posterior a la fecha actual del conocimiento del asistente, lo que puede indicar un proyecto experimental o no verificado.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Snapkitty/sovereign-xml-compiler)
+- [Modelo en Hugging Face](https://huggingface.co/Snapkitty/sovereign-xml-compiler)
 - [Conjunto de datos asociado](https://huggingface.co/datasets/Snapkitty/sovereign-xml-compiler)
 - [Repositorio GitHub](https://github.com/SNAPKITTYWEST/sovereign-xml-compiler)
-- [Perfil de Snapkitty en HuggingFace](https://huggingface.co/Snapkitty)
+- [Perfil de Snapkitty en Hugging Face](https://huggingface.co/Snapkitty)
 - [Sitio de descargas de SnapKitty](https://collectivekitty.com/downloads)
 - [Repositorio sovereign-ide](https://github.com/SNAPKITTYWEST/sovereign-ide)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiguelGomesmi/blip-baseline es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint de referencia, sino de un artefacto de inicialización cuyo objetivo declarado por el autor es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+MiguelGomesmi/blip-baseline es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Blip (Bootstrapping Language-Image Pre-training) orientada a aprendizaje contrastivo. No se trata de un modelo entrenado ni de un checkpoint de referencia, sino de un artefacto de inicialización cuyo objetivo declarado por el autor es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El peso distribuido en safetensors contiene únicamente 33.088 parámetros, una cifra que lo sitúa muy lejos de cualquier modelo Blip operativo (las variantes base y large de Salesforce manejan cientos de millones de parámetros). La model card indica explícitamente que el checkpoint «no ha sido entrenado ni auditado» y que no se reclama ninguna puntuación de benchmark. El repositorio se compone de train.py, config.json, training_args.json y model.safetensors, con licencia Apache 2.0.
 
@@ -82,7 +82,7 @@ Las variantes de Salesforce están preentrenadas y disponibles para tareas como 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MiguelGomesmi/blip-baseline
+- Modelo en Hugging Face: https://huggingface.co/MiguelGomesmi/blip-baseline
 - Paper original de BLIP (arXiv 2201.12086): https://arxiv.org/abs/2201.12086
 - Introducción a BLIP (GeeksforGeeks): https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/
 - Visión general de blip de Salesforce (aimodels.fyi): https://www.aimodels.fyi/models/replicate/blip-salesforce

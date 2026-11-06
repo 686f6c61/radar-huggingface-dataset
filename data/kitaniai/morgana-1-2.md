@@ -78,12 +78,12 @@ Morgana se diferencia de su modelo base en la especializacion fotografica; frent
 - La licencia es "other" bajo los terminos de Kitani, Inc. (https://kitani.ai); el uso comercial requiere revisar la licencia vinculada, que puede restringir usos. No es una licencia abierta estandar (Apache, MIT, etc.).
 - No hay informacion sobre sesgos del dataset Shuttle 3 Jaguar ni sobre representacion demografica en retratos, un riesgo habitual en modelos de generacion de rostros.
 - Riesgo de alucinacion visual tipico de modelos de difusion: anatomia incorrecta en manos y rostros en escenas complejas, aunque el modelo esta afinado para mitigar el aspecto artificial.
-- Con 0 descargas registradas en HuggingFace en el momento de la ficha, hay poca evidencia comunitaria de rendimiento en produccion.
+- Con 0 descargas registradas en Hugging Face en el momento de la ficha, hay poca evidencia comunitaria de rendimiento en produccion.
 - No es un modelo de lenguaje: no aplica para tareas de texto, codigo ni agentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kitaniai/morgana-1.2
+- Modelo en Hugging Face: https://huggingface.co/kitaniai/morgana-1.2
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B
 - Licencia y web de Kitani, Inc.: https://kitani.ai
 - Ejemplo de collage de resultados: https://kcdn2.kitani.ai/collage-v4.jpg

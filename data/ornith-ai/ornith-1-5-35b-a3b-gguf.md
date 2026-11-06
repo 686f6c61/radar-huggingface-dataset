@@ -88,7 +88,7 @@ Ornith-1.5-35B-A3B supera a todos los modelos de su categoría en los benchmarks
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-GGUF
 - Blog de Ornith (anuncio de Ornith-1.5): https://deep-reinforce.com/ornith.html
 - Sitio web de Ornith AI: https://ornith.ai/
 - Guía de Ornith (modelos, VRAM, casos de uso): https://ornith.online/

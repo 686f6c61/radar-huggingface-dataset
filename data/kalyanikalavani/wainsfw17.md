@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Wainsfw17 es un modelo publicado en HuggingFace por el usuario Kalyanikalavani bajo licencia Apache 2.0. El repositorio tiene un tamano de 1,8 GB y no incluye model card con descripcion tecnica: la unica metadata disponible es la licencia y la region de publicacion (US). No se especifica el pipeline, los idiomas soportados ni la arquitectura en la informacion proporcionada.
+Wainsfw17 es un modelo publicado en Hugging Face por el usuario Kalyanikalavani bajo licencia Apache 2.0. El repositorio tiene un tamano de 1,8 GB y no incluye model card con descripcion tecnica: la unica metadata disponible es la licencia y la region de publicacion (US). No se especifica el pipeline, los idiomas soportados ni la arquitectura en la informacion proporcionada.
 
 Por el tamano del repositorio (1,8 GB) se puede inferir que se trata de un modelo de parametros reducidos o de pesos cuantizados, pero no hay datos que permitan confirmar la arquitectura, el numero de parametros ni la longitud de contexto. No se han publicado resultados de benchmarks, demos ni documentacion adicional en la informacion disponible.
 
@@ -23,7 +23,7 @@ La relevancia actual de este modelo es limitada: al carecer de model card, bench
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la metadata de HuggingFace. No se dispone de datos sobre el tipo de transformer, el uso de mezcla de expertos (MoE), capas de atencion lineal u otras variantes arquitectonicas.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en la metadata de Hugging Face. No se dispone de datos sobre el tipo de transformer, el uso de mezcla de expertos (MoE), capas de atencion lineal u otras variantes arquitectonicas.
 
 Tampoco hay informacion sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO. La model card se limita a declarar la licencia Apache 2.0.
 
@@ -76,4 +76,4 @@ No disponible. No se dispone de informacion suficiente sobre Wainsfw17 (parametr
 
 ## Enlaces
 
-- [HuggingFace: Kalyanikalavani/Wainsfw17](https://huggingface.co/Kalyanikalavani/Wainsfw17)
+- [Hugging Face: Kalyanikalavani/Wainsfw17](https://huggingface.co/Kalyanikalavani/Wainsfw17)

@@ -69,9 +69,9 @@ La diferencia de caracteres se calcula como distancia de edición del texto reco
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unlimited-OCR-2 W4A16 (este repo) | 3,34B | no disponible | W4A16 int4 g32, 3,06 GB | MIT | HuggingFace, safetensors + código remoto |
-| baidu/Unlimited-OCR-2 (original) | 3,34B | no disponible | BF16 | MIT | HuggingFace |
-| Unlimited-OCR-2-GGUF (AtomicChat) | 3,34B | no disponible | GGUF (varias) | MIT | HuggingFace, para llama.cpp/Ollama |
+| Unlimited-OCR-2 W4A16 (este repo) | 3,34B | no disponible | W4A16 int4 g32, 3,06 GB | MIT | Hugging Face, safetensors + código remoto |
+| baidu/Unlimited-OCR-2 (original) | 3,34B | no disponible | BF16 | MIT | Hugging Face |
+| Unlimited-OCR-2-GGUF (AtomicChat) | 3,34B | no disponible | GGUF (varias) | MIT | Hugging Face, para llama.cpp/Ollama |
 
 No se dispone en la información proporcionada de datos de rendimiento de modelos alternativos de OCR comparables, por lo que la comparativa se limita a variantes del mismo modelo base.
 
@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos de rendimiento de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AtomicChat/Unlimited-OCR-2-W4A16
+- Modelo en Hugging Face: https://huggingface.co/AtomicChat/Unlimited-OCR-2-W4A16
 - Modelo base: https://huggingface.co/baidu/Unlimited-OCR-2
 - GGUF de AtomicChat: https://huggingface.co/AtomicChat/Unlimited-OCR-2-GGUF
 - Aplicación Atomic Chat: https://atomic.chat/

@@ -4,7 +4,7 @@
 
 El modelo Redstonexs/danbooru-tagger-round2 es un clasificador de imágenes multi-etiqueta diseñado para generar etiquetas de estilo Danbooru a partir de imágenes, especialmente orientado al ecosistema de generación de arte anime con IA. Desarrollado por el usuario Redstonexs, este modelo se publica bajo licencia Apache 2.0 y está pensado para su uso en pipelines de etiquetado automático, una tarea habitual en la preparación de datasets para entrenar o ajustar modelos de difusión como Pony, Illustrious o NoobAI-XL.
 
-El repositorio ocupa 3,7 GB, lo que sugiere un modelo de tamaño considerable, probablemente basado en una arquitectura transformer de visión (ViT) o similar, aunque no se especifican detalles técnicos en la ficha de HuggingFace. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su relevancia radica en la creciente demanda de herramientas de etiquetado automático para el flujo de trabajo de IA generativa, donde la calidad de las etiquetas influye directamente en la coherencia de las imágenes generadas.
+El repositorio ocupa 3,7 GB, lo que sugiere un modelo de tamaño considerable, probablemente basado en una arquitectura transformer de visión (ViT) o similar, aunque no se especifican detalles técnicos en la ficha de Hugging Face. El acceso es restringido (gated), por lo que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su relevancia radica en la creciente demanda de herramientas de etiquetado automático para el flujo de trabajo de IA generativa, donde la calidad de las etiquetas influye directamente en la coherencia de las imágenes generadas.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El repositorio ocupa 3,7 GB, lo que sugiere un modelo de tamaño considerable, p
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura interna del modelo, el conjunto de datos de entrenamiento, el numero de tokens o el proceso de optimizacion. Dado que se trata de un clasificador multi-etiqueta para imagenes, es probable que siga el patron de modelos como WD14 Tagger o danbooru-tagger de anthony-dipofi, que emplean redes neuronales convolucionales o transformers de vision preentrenados y ajustados sobre subconjuntos de Danbooru. Sin embargo, al no haber documentacion tecnica en la ficha de HuggingFace ni en los resultados de busqueda, cualquier afirmacion al respecto seria especulativa. Se recomienda consultar el repositorio directamente tras aceptar las condiciones de acceso.
+No se dispone de informacion publica sobre la arquitectura interna del modelo, el conjunto de datos de entrenamiento, el numero de tokens o el proceso de optimizacion. Dado que se trata de un clasificador multi-etiqueta para imagenes, es probable que siga el patron de modelos como WD14 Tagger o danbooru-tagger de anthony-dipofi, que emplean redes neuronales convolucionales o transformers de vision preentrenados y ajustados sobre subconjuntos de Danbooru. Sin embargo, al no haber documentacion tecnica en la ficha de Hugging Face ni en los resultados de busqueda, cualquier afirmacion al respecto seria especulativa. Se recomienda consultar el repositorio directamente tras aceptar las condiciones de acceso.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No se dispone de datos de rendimiento comparativos fiables. El modelo de anthony
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o automatizados.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o automatizados.
 - Documentacion insuficiente: no hay informacion publica sobre arquitectura, datos de entrenamiento, sesgos o rendimiento, lo que dificulta evaluar su idoneidad para casos concretos.
 - Sesgos potenciales: al estar entrenado con datos de Danbooru, el modelo puede reflejar los sesgos de esa comunidad, incluyendo sobrerrepresentacion de ciertos estilos, personajes o atributos, y posible contenido explicito.
 - Riesgo de alucinacion en etiquetas: como cualquier clasificador, puede generar etiquetas incorrectas o incompletas, especialmente en imagenes fuera de su dominio de entrenamiento.
@@ -72,9 +72,9 @@ No se dispone de datos de rendimiento comparativos fiables. El modelo de anthony
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Redstonexs/danbooru-tagger-round2
+- Repositorio Hugging Face: https://huggingface.co/Redstonexs/danbooru-tagger-round2
 - Herramienta relacionada dbtagger (explorador de tags): https://dbtagger.com/
-- Space de HuggingFace con WD Tagger y transformer: https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
+- Space de Hugging Face con WD Tagger y transformer: https://huggingface.co/spaces/John6666/danbooru-tags-transformer-v2-with-wd-tagger
 - Repositorio GitHub de danbooru/autotagger: https://github.com/danbooru/autotagger
 - Repositorio GitHub de anthony-dipofi/danbooru-tagger: https://github.com/anthony-dipofi/danbooru-tagger
 - Directorio de herramientas Danbooru para IA (Civitai): https://civitai.red/articles/27794/the-danbooru-tools-directory-for-ai-art-2026

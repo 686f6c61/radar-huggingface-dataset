@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Efficientformer-retrieval es un repositorio publicado por el usuario aandra-dedavi en HuggingFace que contiene una implementación propia y mínima de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). No es un modelo entrenado ni un lanzamiento con pesos validados: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el código Python de inferencia/entrenamiento, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta experimental por defecto y un `model.safetensors` de inicialización.
+Efficientformer-retrieval es un repositorio publicado por el usuario aandra-dedavi en Hugging Face que contiene una implementación propia y mínima de una arquitectura EfficientFormer orientada a tareas de recuperación (retrieval). No es un modelo entrenado ni un lanzamiento con pesos validados: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests). El repositorio incluye el código Python de inferencia/entrenamiento, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta experimental por defecto y un `model.safetensors` de inicialización.
 
 El tamaño real del checkpoint es de 33.088 parámetros, un orden de magnitud propio de un prototipo de juguete más que de un modelo desplegable. Esto, junto con la ausencia de benchmarks, de idiomas declarados y de una pipeline definida, sitúa el artefacto en la categoría de esqueleto de investigación para validar flujos de trabajo de recuperación (por ejemplo, búsqueda texto-imagen) antes de escalar a un entrenamiento real.
 
-Su relevancia actual es limitada como modelo, pero puede ser útil como plantilla didáctica: muestra cómo empaquetar una arquitectura EfficientFormer con atención multi-query y fusión por cross-attention dentro del ecosistema HuggingFace, con licencia Apache 2.0 y pesos en safetensors. Cualquier evaluación seria requeriría entrenarlo desde cero, tal y como la propia documentación indica.
+Su relevancia actual es limitada como modelo, pero puede ser útil como plantilla didáctica: muestra cómo empaquetar una arquitectura EfficientFormer con atención multi-query y fusión por cross-attention dentro del ecosistema Hugging Face, con licencia Apache 2.0 y pesos en safetensors. Cualquier evaluación seria requeriría entrenarlo desde cero, tal y como la propia documentación indica.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ En la práctica, la comparación no es significativa: los modelos citados son ar
 - Riesgo de alucinación: no aplica en el sentido generativo, pero sí existe riesgo de interpretar erróneamente las salidas de un modelo no entrenado como predicciones válidas.
 - No se declaran idiomas soportados ni cobertura lingüística, lo que impide planificar despliegues multilingües.
 - No se especifica la longitud de contexto, por lo que no puede garantizarse el comportamiento con secuencias largas.
-- Integración limitada: al ser una implementación propia, requiere un adaptador explícito para funcionar con API de carga automática; no hay pipeline declarada en HuggingFace.
+- Integración limitada: al ser una implementación propia, requiere un adaptador explícito para funcionar con API de carga automática; no hay pipeline declarada en Hugging Face.
 - Licencia Apache 2.0, permisiva y compatible con uso comercial, pero el propio autor advierte de que los términos de los datos de origen deben revisarse por separado si se usa con datasets externos.
 - Repositorio con 0 descargas, 0 likes y sin historial de uso: no hay evidencia comunitaria de funcionamiento en producción.
 - El recuento de parámetros (33.088) es inconsistente con la escala "base" declarada, lo que refuerza la lectura de prototipo y no de modelo utilizable.
@@ -90,5 +90,5 @@ En la práctica, la comparación no es significativa: los modelos citados son ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aandra-dedavi/efficientformer-retrieval
+- Hugging Face: https://huggingface.co/aandra-dedavi/efficientformer-retrieval
 - No se han encontrado en la busqueda web enlaces relevantes (paper, blog, repositorio de codigo o demo) asociados a este modelo. Los resultados devueltos por la busqueda no guardan ninguna relacion con el artefacto y se descartan por completo.

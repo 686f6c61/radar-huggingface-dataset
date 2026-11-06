@@ -33,7 +33,7 @@ El entrenamiento se realizó sobre 200.000 pares del corpus WMT19 zh-en, durante
 - Decodificación por difusión enmascarada con schedule MED y 32 pasos, con truncamiento por EOS.
 - Selección de longitud adaptativa sin entrenamiento mediante el método Entropy-Valley, que permite elegir la longitud de destino óptima en tiempo de inferencia.
 - Soporte de decodificación con oráculo de longitud y ratio fijo como alternativas (el mismo adaptador sirve para las tres condiciones).
-- Capacidad de integración con el ecosistema HuggingFace Transformers y PEFT (carga y fusión del adaptador con `PeftModel`).
+- Capacidad de integración con el ecosistema Hugging Face Transformers y PEFT (carga y fusión del adaptador con `PeftModel`).
 - Multilingüe limitado a la dirección En→Zh; no se soportan otros pares de idiomas.
 
 ## Casos de uso
@@ -62,7 +62,7 @@ Entropy-Valley cierra el 64.9% de la brecha entre el ratio fijo y el oráculo de
 - El modelo base LLaDA-8B en bf16 requiere aproximadamente 16 GB de VRAM solo para los pesos; el adaptador LoRA añade menos de 1 GB (repo de 0.6 GB).
 - Para inferencia con 32 pasos de decodificación MED, se recomienda al menos una GPU con 16-20 GB de VRAM: RTX 4090 (24 GB), A100 40 GB, H100 80 GB o H20 96 GB (usada para entrenamiento).
 - Es viable en GPU de consumo (RTX 3090/4090) con cuantización de 4 bits del modelo base, aunque el adaptador está diseñado para bf16 y podría perder precisión al cuantizar.
-- Opciones de despliegue: HuggingFace Transformers con Peft (carga y fusión del adaptador), o implementaciones personalizadas con el código del repositorio Entropy-Valley (que incluye el script de decodificación `ladit/decoding/translate.py`).
+- Opciones de despliegue: Hugging Face Transformers con Peft (carga y fusión del adaptador), o implementaciones personalizadas con el código del repositorio Entropy-Valley (que incluye el script de decodificación `ladit/decoding/translate.py`).
 - La latencia de inferencia es mayor que un modelo autorregresivo equivalente por los 32 pasos de desenmascarado; para producción se recomienda precalcular la longitud con el probe de Entropy-Valley (un solo forward) y luego decodificar en un solo paso de 32 iteraciones.
 
 ## Comparativa con modelos similares

@@ -99,7 +99,7 @@ No se han proporcionado datos de otros modelos abliterados de tamaño similar, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/minte1431/gemma-4-E4B-it-OBLITERATED
+- Repositorio en Hugging Face: https://huggingface.co/minte1431/gemma-4-E4B-it-OBLITERATED
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio de la herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Agente Hermes: https://github.com/NousResearch/hermes-agent

@@ -88,6 +88,6 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rin247/MiniMax-H3
+- Repositorio Hugging Face: https://huggingface.co/Rin247/MiniMax-H3
 - Modelo base referenciado en la model card: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Librería declarada: https://github.com/huggingface/diffusers

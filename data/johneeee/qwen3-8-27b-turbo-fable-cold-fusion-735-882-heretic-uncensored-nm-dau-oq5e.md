@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks especificos para este modelo cuanti
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (base) | 26,9B | 262K | FP16 | Apache 2.0 (segun Qwen) | HuggingFace |
-| Este modelo (oQ5e) | 26,9B | 262K (heredado) | 5-bit MLX | No disponible | HuggingFace |
-| Qwen3.8-27B-TURBO-Fable... (GGUF de DavidAU) | 26,9B | 262K | GGUF 8-bit/4-bit | No disponible | HuggingFace |
+| Qwen3.8-27B (base) | 26,9B | 262K | FP16 | Apache 2.0 (segun Qwen) | Hugging Face |
+| Este modelo (oQ5e) | 26,9B | 262K (heredado) | 5-bit MLX | No disponible | Hugging Face |
+| Qwen3.8-27B-TURBO-Fable... (GGUF de DavidAU) | 26,9B | 262K | GGUF 8-bit/4-bit | No disponible | Hugging Face |
 
 La comparativa se limita a variantes del mismo modelo base. No se dispone de datos de otros modelos comparables en la informacion proporcionada.
 
@@ -79,7 +79,7 @@ La comparativa se limita a variantes del mismo modelo base. No se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ5e
+- Repositorio Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-oQ5e
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Variante GGUF de DavidAU: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau-davidau

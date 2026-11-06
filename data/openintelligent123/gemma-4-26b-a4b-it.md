@@ -80,7 +80,7 @@ El 26B A4B ofrece un punto intermedio entre el 12B Unified y el 31B Dense: mas c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Openintelligent123/gemma-4-26B-A4B-it
+- Modelo en Hugging Face: https://huggingface.co/Openintelligent123/gemma-4-26B-A4B-it
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Coleccion Gemma 4: https://huggingface.co/collections/google/gemma-4
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

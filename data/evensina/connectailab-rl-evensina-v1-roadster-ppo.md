@@ -87,7 +87,7 @@ No se dispone de informacion sobre politicas comparables publicadas para el mism
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-evensina-v1-roadster-ppo | no disponible | no aplica | 98% exito en 50 episodios | no disponible | HuggingFace |
+| connectailab-rl-evensina-v1-roadster-ppo | no disponible | no aplica | 98% exito en 50 episodios | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de informacion sobre politicas comparables publicadas para el mism
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EvenSina/connectailab-rl-evensina-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/EvenSina/connectailab-rl-evensina-v1-roadster-ppo
 - Simulador referenciado en la model card: `로드스터_시뮬레이터.py` (no se proporciona URL)
 - Video de demostracion: `replay.mp4` (referenciado en la model card, sin URL publica)
 - Curva de aprendizaje: `learning_curve.png` (referenciada en la model card, sin URL publica)

@@ -93,7 +93,7 @@ No se han publicado comparativas de rendimiento entre estas alternativas en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/1bit-MONSTER/Zamba2-VL-2.7B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/1bit-MONSTER/Zamba2-VL-2.7B-GGUF
 - Modelo base: https://huggingface.co/Zyphra/Zamba2-VL-2.7B
 - Motor 1bit: https://github.com/1bit-MONSTER/engine
 - Fork de llama.cpp del autor: https://github.com/1bit-MONSTER/llama.cpp

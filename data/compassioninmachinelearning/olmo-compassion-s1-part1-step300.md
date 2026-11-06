@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo CompassioninMachineLearning/olmo-compassion-s1-part1-step300 es un checkpoint de aproximadamente 7,3 mil millones de parámetros (7.298.011.136 exactos) publicado en HuggingFace por la organización CompassioninMachineLearning. El repositorio ocupa 14,6 GB y distribuye los pesos en formato safetensors. La etiqueta «olmo3» asociada al repositorio apunta a que el modelo deriva de la familia OLMo 3 de Allen AI, aunque la ficha no confirma explícitamente la arquitectura base.
+El modelo CompassioninMachineLearning/olmo-compassion-s1-part1-step300 es un checkpoint de aproximadamente 7,3 mil millones de parámetros (7.298.011.136 exactos) publicado en Hugging Face por la organización CompassioninMachineLearning. El repositorio ocupa 14,6 GB y distribuye los pesos en formato safetensors. La etiqueta «olmo3» asociada al repositorio apunta a que el modelo deriva de la familia OLMo 3 de Allen AI, aunque la ficha no confirma explícitamente la arquitectura base.
 
 El nombre del repositorio («olmo-compassion-s1-part1-step300») sugiere un ajuste fino orientado a «compassion» (compasión), correspondiente al paso 300 de entrenamiento de la primera parte de una etapa denominada «s1». Se trata, por tanto, de un artefacto de investigación con un historial de uso muy limitado: 8 descargas y 0 «likes» en el momento de la consulta, con fecha de creación y última actualización el 13 de octubre de 2026.
 
@@ -29,7 +29,7 @@ No se dispone de información publicada sobre el pipeline, la licencia, los idio
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura en la ficha de HuggingFace. La única pista disponible es la etiqueta «olmo3», que asocia el checkpoint a la familia OLMo 3 de Allen AI. Dado que el tamaño declarado es de 7,3 mil millones de parámetros y el repo pesa 14,6 GB, los pesos parecen almacenarse en precisión de 16 bits (bf16 o fp16), sin cuantización adicional.
+No se ha publicado información sobre la arquitectura en la ficha de Hugging Face. La única pista disponible es la etiqueta «olmo3», que asocia el checkpoint a la familia OLMo 3 de Allen AI. Dado que el tamaño declarado es de 7,3 mil millones de parámetros y el repo pesa 14,6 GB, los pesos parecen almacenarse en precisión de 16 bits (bf16 o fp16), sin cuantización adicional.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesados, la composición del dataset, ni sobre si se aplicaron técnicas de alineación como RLHF, DPO o similares. El nombre «compassion-s1-part1-step300» indica únicamente que se trata de un checkpoint intermedio (paso 300) de una fase de ajuste denominada «part1» dentro de una etapa «s1», presumiblemente centrada en un corpus o tarea de compasión. Sin documentación adicional, no es posible verificar ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, etc.).
 
@@ -103,5 +103,5 @@ Para una comparativa rigurosa sería necesario consultar las fichas oficiales de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1-step300
+- Hugging Face: https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1-step300
 - No se han encontrado papers, blogs, repositorios ni demos asociados en los resultados de búsqueda proporcionados (los resultados disponibles no guardan relación con el modelo).

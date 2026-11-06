@@ -86,11 +86,11 @@ Nota: los datos de los modelos comparados corresponden a conocimiento general de
 - Solo cuantizaciones estaticas: el autor advierte de que no hay cuantizaciones ponderadas (imatrix) ni planes inmediatos de publicarlas, lo que puede limitar la calidad respecto a versiones optimizadas con esa tecnica.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad y de informes de errores.
 - Uso del proyector multimodal: es imprescindible descargar el fichero `mmproj` correspondiente; sin el, el modelo no procesara la entrada de audio correctamente en llama.cpp.
-- Resultados de busqueda no concluyentes: las busquedas web realizadas no devolvieron informacion tecnica util sobre el modelo (unicamente resultados no relacionados), por lo que toda la ficha se basa en los metadatos de HuggingFace.
+- Resultados de busqueda no concluyentes: las busquedas web realizadas no devolvieron informacion tecnica util sobre el modelo (unicamente resultados no relacionados), por lo que toda la ficha se basa en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/ndizi-gemma4-e2b-african-asr-merged-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/ndizi-gemma4-e2b-african-asr-merged-GGUF
 - Modelo base: https://huggingface.co/smutuvi/ndizi-gemma4-e2b-african-asr-merged
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#ndizi-gemma4-e2b-african-asr-merged-GGUF
 - Preguntas frecuentes y solicitudes de cuantizacion de mradermacher: https://huggingface.co/mradermacher/model_requests

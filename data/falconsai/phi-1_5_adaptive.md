@@ -54,7 +54,7 @@ No se dispone de datos de rendimiento para comparar con otros modelos. El modelo
 
 ## Enlaces
 
-- [HuggingFace - Falconsai/phi-1_5_adaptive](https://huggingface.co/Falconsai/phi-1_5_adaptive)
+- [Hugging Face - Falconsai/phi-1_5_adaptive](https://huggingface.co/Falconsai/phi-1_5_adaptive)
 - [Modelo original phi-1_5 de Microsoft](https://huggingface.co/microsoft/phi-1_5)
 - [Portal de desarrolladores de Falcons AI](https://developers.falcons.ai/models)
 - [Verificador público de Model Surgeon](https://surgeon.falcons.ai/verify)

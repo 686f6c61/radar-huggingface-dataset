@@ -101,7 +101,7 @@ Las tres alternativas se midieron en el mismo banco de voz del autor, por lo que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-S-Parakeet-Ultra-0.6B-Q5_K-GGML
+- Repositorio Hugging Face: https://huggingface.co/LaToucheCarre/LaToucheCarre-Voix-S-Parakeet-Ultra-0.6B-Q5_K-GGML
 - Modelo base: https://huggingface.co/moondream/parakeet-ultra
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Plantilla ggml oficial: https://huggingface.co/ggml-org/parakeet-GGUF

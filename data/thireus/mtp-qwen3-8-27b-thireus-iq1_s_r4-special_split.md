@@ -77,7 +77,7 @@ La comparativa se limita a otras cuantizaciones del mismo autor y al modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_S_R4-SPECIAL_SPLIT
+- Modelo en Hugging Face: https://huggingface.co/Thireus/mtp-Qwen3.8-27B-THIREUS-IQ1_S_R4-SPECIAL_SPLIT
 - Repositorio del modelo base Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Perfil de Thireus en GitHub: https://github.com/Thireus
 - Modelo similar (Qwen3.5-27B cuantizado): https://huggingface.co/Thireus/mtp-Qwen3.5-27B-THIREUS-IQ1_S_R4-SPECIAL_SPLIT

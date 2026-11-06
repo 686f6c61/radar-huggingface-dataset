@@ -80,7 +80,7 @@ El modelo heretic se diferencia de sus alternativas en la eliminación de guardr
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/ansulev/lfm2.5-2.6b-fable5-coding-agent-heretic)
+- [Página del modelo en Hugging Face](https://huggingface.co/ansulev/lfm2.5-2.6b-fable5-coding-agent-heretic)
 - [Modelo base (SFT)](https://huggingface.co/AyoubChLin/lfm2.5-2.6b-fable5-coding-agent)
 - [Modelo base original (LiquidAI)](https://huggingface.co/LiquidAI/LFM2.5-2.6B)
 - [Documentación de LFM2.5-2.6B en Liquid AI](https://docs.liquid.ai/lfm/models/lfm25-2.6b)

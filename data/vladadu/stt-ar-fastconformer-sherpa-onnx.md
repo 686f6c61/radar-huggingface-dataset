@@ -89,7 +89,7 @@ La comparacion cuantitativa solo es posible, con la informacion disponible, fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vladadu/stt-ar-fastconformer-sherpa-onnx
+- Modelo en Hugging Face: https://huggingface.co/vladadu/stt-ar-fastconformer-sherpa-onnx
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_ar_fastconformer_hybrid_large_pc_v1.0
 - Repositorio sherpa-onnx (k2-fsa): https://github.com/k2-fsa/sherpa-onnx
 - Script de exportacion FastConformer-Hybrid transducer-CTC: `scripts/nemo/fast-conformer-hybrid-transducer-ctc/` dentro de k2-fsa/sherpa-onnx

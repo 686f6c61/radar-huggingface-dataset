@@ -88,7 +88,7 @@ La comparativa se limita a parametros, contexto y licencia; no se dispone de dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Llama-70B-Uncensored-v2-Unbiased-Reasoner-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Llama-70B-Uncensored-v2-Unbiased-Reasoner-GGUF
 - Modelo base (nicoboss): https://huggingface.co/nicoboss/DeepSeek-R1-Distill-Llama-70B-Uncensored-v2-Unbiased-Reasoner
 - Cuantizaciones imatrix (i1-GGUF): https://huggingface.co/mradermacher/DeepSeek-R1-Distill-Llama-70B-Uncensored-v2-Unbiased-Reasoner-i1-GGUF
 - Pagina de resumen del autor: https://hf.tst.eu/model#DeepSeek-R1-Distill-Llama-70B-Uncensored-v2-Unbiased-Reasoner-GGUF

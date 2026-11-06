@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`KaiYky1216/dl-matching` es un repositorio experimental de HuggingFace que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas de *matching* (emparejamiento, presumiblemente texto-imagen dado el tag `blip`). Lo publica el usuario KaiYky1216 y su relevancia no esta en el rendimiento, sino en su valor como plantilla reproducible: incluye el codigo del modelo (`run.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion valido para pruebas de humo.
+`KaiYky1216/dl-matching` es un repositorio experimental de Hugging Face que contiene una implementación propia de una arquitectura tipo BLIP orientada a tareas de *matching* (emparejamiento, presumiblemente texto-imagen dado el tag `blip`). Lo publica el usuario KaiYky1216 y su relevancia no esta en el rendimiento, sino en su valor como plantilla reproducible: incluye el codigo del modelo (`run.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicializacion valido para pruebas de humo.
 
 El dato mas llamativo es la discrepancia entre la etiqueta declarada y el peso real del artefacto: la model card indica escala `large`, pero el recuento de parametros del safetensors es de 33.088, es decir, unas decimas de megabyte en fp32. El propio autor advierte que `model.safetensors` es un checkpoint de inicializacion para *smoke tests* y no un modelo entrenado, y que no se reclama ninguna puntuacion de benchmark. Por tanto, no es un modelo utilizable en produccion ni evaluable en tareas reales.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaiYky1216/dl-matching | 33.088 | no disponible | sin benchmarks publicados; checkpoint no entrenado | BSD-3-Clause | HuggingFace, 0 descargas |
+| KaiYky1216/dl-matching | 33.088 | no disponible | sin benchmarks publicados; checkpoint no entrenado | BSD-3-Clause | Hugging Face, 0 descargas |
 | Alternativas de la familia BLIP (por ejemplo, implementaciones de referencia orientadas a captioning o matching) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas de emparejamiento texto-imagen (familia CLIP y derivados) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Alternativas multimodales de vision-lenguaje de gran escala (familia BLIP-2 y similares) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
@@ -86,6 +86,6 @@ La busqueda web realizada no devolvio ningun resultado relacionado con el modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KaiYky1216/dl-matching
+- Repositorio en Hugging Face: https://huggingface.co/KaiYky1216/dl-matching
 - Ficheros incluidos en el repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos asociados en la busqueda web realizada. Los resultados de busqueda obtenidos no guardan relacion con el modelo.

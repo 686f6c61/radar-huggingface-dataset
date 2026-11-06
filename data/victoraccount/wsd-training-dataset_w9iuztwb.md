@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `victoraccount/wsd-training-dataset_w9iuztwb` es un modelo de extracción de características (feature-extraction) alojado en HuggingFace, con 278.043.648 parámetros y pesos en formato safetensors. Según las etiquetas asociadas, está basado en la arquitectura XLM-RoBERTa (referencia arXiv:1910.09700), lo que lo sitúa en la familia de modelos transformer multilingües preentrenados de forma auto-regresiva enmascarada. Su nombre sugiere una posible especialización en desambiguación de sentidos de palabras (WSD, Word Sense Disambiguation), aunque la model card no proporciona confirmación explícita.
+El modelo `victoraccount/wsd-training-dataset_w9iuztwb` es un modelo de extracción de características (feature-extraction) alojado en Hugging Face, con 278.043.648 parámetros y pesos en formato safetensors. Según las etiquetas asociadas, está basado en la arquitectura XLM-RoBERTa (referencia arXiv:1910.09700), lo que lo sitúa en la familia de modelos transformer multilingües preentrenados de forma auto-regresiva enmascarada. Su nombre sugiere una posible especialización en desambiguación de sentidos de palabras (WSD, Word Sense Disambiguation), aunque la model card no proporciona confirmación explícita.
 
 El autor es `victoraccount`, un perfil sin actividad pública relevante, y el repositorio no incluye documentación técnica, datos de entrenamiento, licencia ni instrucciones de uso. A pesar de su tamaño moderado (278M parámetros, comparable a XLM-RoBERTa large), la falta de información pública limita seriamente su aplicabilidad directa en producción. Es un modelo de embeddings que podría usarse como base para tareas de representación textual, pero cualquier integración requeriría un análisis previo de su comportamiento real.
 
@@ -51,17 +51,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: con 278M parámetros en precisión fp32, el modelo ocupa aproximadamente 1,1 GB (según el tamaño del repositorio). En fp16, ~556 MB, y en int8, ~278 MB. Se puede ejecutar en GPUs con al menos 2 GB de VRAM para inferencia básica.
 - GPU recomendadas: cualquier GPU con 4 GB o más, como NVIDIA GTX 1650, RTX 3060, o superiores. Para entrenamiento o fine-tuning, se recomienda al menos 8 GB (RTX 3070, A10, etc.) y memoria adicional para el optimizador.
 - Cabe en GPUs de consumo: sí, en la mayoría de GPUs modernas con 4 GB o más.
-- Opciones de despliegue: al ser un modelo de HuggingFace con safetensors, se puede servir con la librería `transformers`, `sentence-transformers`, o mediante servidores de embeddings como `text-embeddings-inference` (compatible según las etiquetas). También se puede convertir a ONNX o TensorRT.
+- Opciones de despliegue: al ser un modelo de Hugging Face con safetensors, se puede servir con la librería `transformers`, `sentence-transformers`, o mediante servidores de embeddings como `text-embeddings-inference` (compatible según las etiquetas). También se puede convertir a ONNX o TensorRT.
 - Latencia y throughput: no disponibles. Dependen del hardware y de la longitud de las secuencias.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| victoraccount/wsd-training-dataset_w9iuztwb | 278M | no disponible | no disponible | HuggingFace |
-| XLM-RoBERTa base (xlm-roberta-base) | 278M | 512 tokens | MIT | HuggingFace |
-| XLM-RoBERTa large (xlm-roberta-large) | 550M | 512 tokens | MIT | HuggingFace |
-| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118M | 128 tokens | Apache-2.0 | HuggingFace |
+| victoraccount/wsd-training-dataset_w9iuztwb | 278M | no disponible | no disponible | Hugging Face |
+| XLM-RoBERTa base (xlm-roberta-base) | 278M | 512 tokens | MIT | Hugging Face |
+| XLM-RoBERTa large (xlm-roberta-large) | 550M | 512 tokens | MIT | Hugging Face |
+| sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 | 118M | 128 tokens | Apache-2.0 | Hugging Face |
 
 La comparativa se limita a modelos de embeddings multilingües de tamaño similar. XLM-RoBERTa base y large son los modelos originales con documentación completa y licencia MIT, mientras que el modelo de este repositorio carece de cualquier especificación. El modelo de sentence-transformers está optimizado para similitud semántica y es más pequeño, pero con licencia permisiva.
 
@@ -76,6 +76,6 @@ La comparativa se limita a modelos de embeddings multilingües de tamaño simila
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/victoraccount/wsd-training-dataset_w9iuztwb
+- Repositorio Hugging Face: https://huggingface.co/victoraccount/wsd-training-dataset_w9iuztwb
 - Paper de XLM-RoBERTa (referencia en tags): https://arxiv.org/abs/1910.09700
 - No se han encontrado otros enlaces relevantes (blogs, demos, repositorios de código) en la búsqueda web.

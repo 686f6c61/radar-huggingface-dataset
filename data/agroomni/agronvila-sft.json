@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "AgroOmni/AgroNVILA-SFT",
+  "slug": "agroomni-agronvila-sft",
+  "author": "AgroOmni",
+  "url": "https://huggingface.co/AgroOmni/AgroNVILA-SFT",
+  "created_at": "2026-11-02T09:40:26.000Z",
+  "updated_at": "2026-11-02T09:46:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "multimodal",
+    "agriculture",
+    "remote-sensing",
+    "vision-language",
+    "en",
+    "dataset:AgroOmni/AgroOmni",
+    "base_model:Efficient-Large-Model/NVILA-Lite-8B",
+    "base_model:finetune:Efficient-Large-Model/NVILA-Lite-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16185681157,
+  "storage_human": "16.2 GB",
+  "base_model": "Efficient-Large-Model/NVILA-Lite-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AgroOmni/AgroNVILA-SFT · Hugging Face",
+      "url": "https://huggingface.co/AgroOmni/AgroNVILA-SFT",
+      "snippet": "Supervised fine-tuned checkpoint of AgroNVILA, built on NVILA-Lite-8B. AgroMind benchmark, 13 tasks: 59.52 overall micro-average. After GRPO alignment the same recipe reaches 59.86; that checkpoint is AgroOmni/AgroNVILA ..."
+    },
+    {
+      "title": "AgroOmni/AgroNVILA · Hugging Face",
+      "url": "https://huggingface.co/AgroOmni/AgroNVILA",
+      "snippet": "AgroNVILA (GRPO) Final checkpoint of AgroNVILA: supervised fine-tuning on AgroOmni, then Group Relative Policy Optimization (GRPO) alignment."
+    }
+  ]
+}

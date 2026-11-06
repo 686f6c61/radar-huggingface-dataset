@@ -79,7 +79,7 @@ No se dispone de información sobre modelos TTS en ruso comparables (como Silero
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eae1212/vosk-tts-ru-0.9-prepared
+- Repositorio Hugging Face: https://huggingface.co/eae1212/vosk-tts-ru-0.9-prepared
 - Repositorio oficial de Vosk-TTS (GitHub): https://github.com/alphacep/vosk-tts
 - Paquete PyPI `vosk-tts`: https://pypi.org/project/vosk-tts/
 - Modelos oficiales de Alpha Cephei: https://alphacephei.com/vosk/models

@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks de calidad (MBPP, HumanEval, tareas
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (base) | 36,9 B totales, 3 B activos | 262.144 | BF16 | nvidia-open-model-license | HuggingFace |
-| pirola/Nemotron-3.5-Lightning-30B-A3B-pirola-IQ3_XXS-GGUF | 36,9 B totales, 3 B activos | 262.144 | IQ3_XXS (expertos) + Q5_0 (MTP) | nvidia-open-model-license | HuggingFace |
-| unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF (IQ3_XXS UD) | 36,9 B totales, 3 B activos | 262.144 | IQ3_XXS (nominal, pero sin tensores IQ3 reales) | nvidia-open-model-license | HuggingFace |
+| NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 (base) | 36,9 B totales, 3 B activos | 262.144 | BF16 | nvidia-open-model-license | Hugging Face |
+| pirola/Nemotron-3.5-Lightning-30B-A3B-pirola-IQ3_XXS-GGUF | 36,9 B totales, 3 B activos | 262.144 | IQ3_XXS (expertos) + Q5_0 (MTP) | nvidia-open-model-license | Hugging Face |
+| unsloth/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF (IQ3_XXS UD) | 36,9 B totales, 3 B activos | 262.144 | IQ3_XXS (nominal, pero sin tensores IQ3 reales) | nvidia-open-model-license | Hugging Face |
 
 La diferencia clave con la versión de unsloth es que esta build de pirola aplica padding para que los tensores expertos sean realmente IQ3_XXS, mientras que la versión de unsloth etiquetada como IQ3_XXS contiene en realidad tensores IQ4_NL y Q5_0 debido a la limitación de anchura. Esto se traduce en un archivo más pequeño (14,33 GiB frente a 19,76 GiB) y un uso de VRAM menor para el mismo contexto.
 
@@ -86,8 +86,8 @@ La diferencia clave con la versión de unsloth es que esta build de pirola aplic
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/pirola/Nemotron-3.5-Lightning-30B-A3B-pirola-IQ3_XXS-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+- Repositorio Hugging Face del modelo: https://huggingface.co/pirola/Nemotron-3.5-Lightning-30B-A3B-pirola-IQ3_XXS-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Repositorio GGUF de ggml-org (versión sin parche): https://huggingface.co/ggml-org/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-GGUF
 - Model card de NVIDIA NIM: https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard
 - Licencia NVIDIA Open Model: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/

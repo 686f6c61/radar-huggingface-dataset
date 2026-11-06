@@ -71,7 +71,7 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto / entrada | Accuracy en CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cifar10-iocnn-384-128 | 1.230.602 | 3072 valores (32x32x3 aplanado) | 48,24 % (test) | MIT | HuggingFace |
+| cifar10-iocnn-384-128 | 1.230.602 | 3072 valores (32x32x3 aplanado) | 48,24 % (test) | MIT | Hugging Face |
 | MLP estandar sobre CIFAR-10 | no disponible | 3072 valores | no disponible | no disponible | no disponible |
 | CNN sobre CIFAR-10 | no disponible | 32x32x3 | no disponible | no disponible | no disponible |
 
@@ -86,10 +86,10 @@ No se dispone de datos de benchmarks de alternativas concretas en la informacion
 - Riesgo de sesgos heredados de CIFAR-10: el conjunto tiene clases desbalanceadas y sesgos de recoleccion; el modelo puede comportarse peor en clases minoritarias.
 - Riesgo de alucinacion en el sentido de clasificaciones erroneas con alta confianza; no se documenta calibracion de las probabilidades.
 - Licencia MIT: permite uso comercial y modificacion, pero no se ofrece ninguna garantia; el modelo no esta pensado para produccion.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: no hay evidencia de uso o validacion por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: no hay evidencia de uso o validacion por parte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/li-ion/cifar10-iocnn-384-128
+- Modelo en Hugging Face: https://huggingface.co/li-ion/cifar10-iocnn-384-128
 - Conjunto de datos CIFAR-10: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

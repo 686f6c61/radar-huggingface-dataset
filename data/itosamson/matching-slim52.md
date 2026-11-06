@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `itosamson/matching-slim52` es un prototipo de investigación publicado en HuggingFace por el usuario `itosamson`. Se presenta como una implementación propia de una arquitectura **EfficientFormer** orientada a una tarea de *matching*, con un tamaño declarado por los pesos de 49.600 parámetros, licencia MIT y pesos en formato `safetensors`. El repositorio incluye además `main.py`, `config.json` y `training_args.json`, que documentan la configuración de arquitectura y la receta de entrenamiento por defecto.
+El modelo `itosamson/matching-slim52` es un prototipo de investigación publicado en Hugging Face por el usuario `itosamson`. Se presenta como una implementación propia de una arquitectura **EfficientFormer** orientada a una tarea de *matching*, con un tamaño declarado por los pesos de 49.600 parámetros, licencia MIT y pesos en formato `safetensors`. El repositorio incluye además `main.py`, `config.json` y `training_args.json`, que documentan la configuración de arquitectura y la receta de entrenamiento por defecto.
 
 El dato más relevante para cualquier evaluador es que el propio autor declara explícitamente que `model.safetensors` es un **checkpoint de inicialización** válido para pruebas de humo, no un modelo entrenado ni evaluado. No se reclama ninguna métrica de benchmark, no hay *pipeline* declarado, el idioma no está especificado y el repositorio acumula 0 descargas y 0 *likes* en el momento de la consulta. Es, por tanto, material de partida experimental, no un modelo listo para producción.
 
@@ -76,7 +76,7 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| itosamson/matching-slim52 | 49.600 | No disponible | MIT | HuggingFace | Checkpoint de inicialización, sin entrenar |
+| itosamson/matching-slim52 | 49.600 | No disponible | MIT | Hugging Face | Checkpoint de inicialización, sin entrenar |
 | EfficientFormer / EfficientFormerV2 | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | Familia arquitectónica de referencia |
 | MobileViT / MobileNetV3 | No disponible en la información | No disponible en la información | No disponible en la información | No disponible en la información | Alternativas ligeras de la misma categoría |
 
@@ -96,5 +96,5 @@ No se dispone de datos comparativos verificados en la información proporcionada
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itosamson/matching-slim52
+- Modelo en Hugging Face: https://huggingface.co/itosamson/matching-slim52
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante (paper, blog, repositorio o demo) asociado a este modelo. Los resultados devueltos corresponden a sitios de contenido para adultos sin relación alguna con el modelo, por lo que se descartan.

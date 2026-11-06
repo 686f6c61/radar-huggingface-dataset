@@ -65,6 +65,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k16](https://huggingface.co/FAIRC/token-averaging-avg_50m_k16)
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k4](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4)
-- [HuggingFace: FAIRC/token-averaging-avg_50m_k4_learnable_pos](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k16](https://huggingface.co/FAIRC/token-averaging-avg_50m_k16)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k4](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4)
+- [Hugging Face: FAIRC/token-averaging-avg_50m_k4_learnable_pos](https://huggingface.co/FAIRC/token-averaging-avg_50m_k4_learnable_pos)

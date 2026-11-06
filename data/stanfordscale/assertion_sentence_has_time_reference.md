@@ -79,8 +79,8 @@ No se dispone de resultados publicados de modelos comparables en la información
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assertion_sentence_has_time_reference | 109.486.464 | 512 tokens (heredado) | Clasificación binaria de referencia temporal en intervenciones docentes | No disponible | HuggingFace, 0 descargas, 0 likes |
-| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | 512 tokens | Embeddings de frases (no clasifica) | No disponible en la información proporcionada | HuggingFace (modelo base) |
+| assertion_sentence_has_time_reference | 109.486.464 | 512 tokens (heredado) | Clasificación binaria de referencia temporal en intervenciones docentes | No disponible | Hugging Face, 0 descargas, 0 likes |
+| sentence-transformers/paraphrase-mpnet-base-v2 | ~109 M | 512 tokens | Embeddings de frases (no clasifica) | No disponible en la información proporcionada | Hugging Face (modelo base) |
 | Otros clasificadores de aserción del proyecto EduBehaviors | No disponible | No disponible | Codificación de discurso de aula | No disponible | No disponible |
 
 La comparación con alternativas de la misma categoría (clasificadores de discurso educativo, modelos SetFit sobre otros datasets de aula) no puede establecerse con datos de la información proporcionada.
@@ -99,7 +99,7 @@ La comparación con alternativas de la misma categoría (clasificadores de discu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_sentence_has_time_reference
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_sentence_has_time_reference
 - Dataset de entrenamiento: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (origen de las intervenciones): https://github.com/SumnerLab/TalkMoves

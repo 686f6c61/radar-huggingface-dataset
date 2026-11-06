@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACE-Step 1.5 XL Turbo es un modelo de generacion musical (texto-a-audio) desarrollado originalmente por ACE Studio y StepFun, publicado bajo licencia MIT. El repositorio analizado, `Audante/acestep-v15-xl-turbo`, es un espejo no oficial de la revision `d4a0b288b83ebb7e25a8c0b32c573c22e134e8ee` del modelo original `ACE-Step/acestep-v15-xl-turbo`; los ficheros son identicos byte a byte al origen y no introduce ningun cambio ni fine-tuning, pese a que las etiquetas de HuggingFace lo marquen como `finetune`.
+ACE-Step 1.5 XL Turbo es un modelo de generacion musical (texto-a-audio) desarrollado originalmente por ACE Studio y StepFun, publicado bajo licencia MIT. El repositorio analizado, `Audante/acestep-v15-xl-turbo`, es un espejo no oficial de la revision `d4a0b288b83ebb7e25a8c0b32c573c22e134e8ee` del modelo original `ACE-Step/acestep-v15-xl-turbo`; los ficheros son identicos byte a byte al origen y no introduce ningun cambio ni fine-tuning, pese a que las etiquetas de Hugging Face lo marquen como `finetune`.
 
 El modelo cuenta con 4.987.310.726 parametros (aproximadamente 5.000 millones) almacenados en formato safetensors, con un repositorio de 20 GB. La variante "Turbo" del nombre hace referencia a una configuracion optimizada para inferencia rapida dentro de la familia ACE-Step 1.5, orientada a la sintesis de audio musical condicionada por texto.
 
@@ -23,7 +23,7 @@ Su relevancia practica es doble: por un lado, ofrece acceso a un modelo de gener
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna en la documentacion proporcionada. El modelo pertenece a la familia ACE-Step, orientada a generacion musical, y requiere `trust_remote_code` en HuggingFace por el tag `custom_code`, lo que implica que la definicion del modelo y su pipeline de inferencia dependen de codigo Python incluido en el repositorio en lugar de clases estandar de `transformers`. El sufijo "Turbo" sugiere una variante destilada o acelerada respecto a la version base de ACE-Step 1.5 XL, pero no se documenta el metodo de destilacion ni el numero de pasos de difusion o muestreo empleados.
+No se dispone de informacion sobre la arquitectura interna en la documentacion proporcionada. El modelo pertenece a la familia ACE-Step, orientada a generacion musical, y requiere `trust_remote_code` en Hugging Face por el tag `custom_code`, lo que implica que la definicion del modelo y su pipeline de inferencia dependen de codigo Python incluido en el repositorio en lugar de clases estandar de `transformers`. El sufijo "Turbo" sugiere una variante destilada o acelerada respecto a la version base de ACE-Step 1.5 XL, pero no se documenta el metodo de destilacion ni el numero de pasos de difusion o muestreo empleados.
 
 Respecto a los datos de entrenamiento, la model card del espejo no aporta informacion: no se indica el volumen de tokens, la composicion del corpus musical, ni si hubo etapas de RLHF, DPO o ajuste por preferencias. Tampoco se detalla si el modelo emplea difusion, flow matching, autoregresion sobre tokens de audio o una arquitectura hibrida. Toda esta informacion deberia consultarse en la model card del repositorio original de ACE-Step, que no forma parte de la informacion disponible en esta ficha.
 
@@ -76,7 +76,7 @@ La comparacion con MusicGen y Stable Audio Open se incluye como referencia de ca
 ## Limitaciones y advertencias
 
 - Espejo no oficial: este repositorio no es una release oficial de ACE-Step ni de StepFun. Aunque los ficheros son identicos al original, la responsabilidad de mantenimiento y actualizacion recae en el autor del espejo (`Audante`), no en los autores originales.
-- Etiqueta `finetune` incorrecta: HuggingFace marca el modelo como `base_model:finetune`, pero la model card afirma que no hay cambios respecto al original. Conviene verificar los checksums con `SHA256SUMS` antes de confiar en la integridad.
+- Etiqueta `finetune` incorrecta: Hugging Face marca el modelo como `base_model:finetune`, pero la model card afirma que no hay cambios respecto al original. Conviene verificar los checksums con `SHA256SUMS` antes de confiar en la integridad.
 - Requiere `trust_remote_code=True`: la carga ejecuta codigo Python del repositorio, lo que supone un riesgo de seguridad si no se audita el codigo. En produccion, revisar y fijar el commit.
 - Documentacion tecnica escasa: no se detallan arquitectura, contexto, idiomas, datos de entrenamiento ni benchmarks, lo que dificulta evaluar su idoneidad frente a alternativas.
 - Riesgo de alucinacion y artefactos de audio: como todo modelo generativo, puede producir clips con incoherencias musicales, ruido o estructuras atipicas; no se documentan tasas de fallo.
@@ -87,7 +87,7 @@ La comparacion con MusicGen y Stable Audio Open se incluye como referencia de ca
 
 ## Enlaces
 
-- Repositorio del espejo en HuggingFace: https://huggingface.co/Audante/acestep-v15-xl-turbo
+- Repositorio del espejo en Hugging Face: https://huggingface.co/Audante/acestep-v15-xl-turbo
 - Repositorio original: https://huggingface.co/ACE-Step/acestep-v15-xl-turbo
 - Revision espejo: `d4a0b288b83ebb7e25a8c0b32c573c22e134e8ee`
 - Licencia MIT incluida en el repositorio: `LICENSE`

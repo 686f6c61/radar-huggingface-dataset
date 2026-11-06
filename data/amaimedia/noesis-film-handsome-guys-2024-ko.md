@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Noesis Film Handsome Guys 2024 KO es un modelo multimodal de tipo any-to-any publicado por AMAImedia bajo licencia Apache 2.0. El identificador y las etiquetas del repositorio indican que se trata de una variante especializada ("film") asociada al largometraje surcoreano *Handsome Guys* (2024), con orientación al idioma coreano ("ko"). El modelo se distribuye a través de HuggingFace con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de la descarga.
+Noesis Film Handsome Guys 2024 KO es un modelo multimodal de tipo any-to-any publicado por AMAImedia bajo licencia Apache 2.0. El identificador y las etiquetas del repositorio indican que se trata de una variante especializada ("film") asociada al largometraje surcoreano *Handsome Guys* (2024), con orientación al idioma coreano ("ko"). El modelo se distribuye a través de Hugging Face con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de la descarga.
 
-Las etiquetas del repositorio revelan una arquitectura compuesta que integra componentes de varias familias: `qwen`, `whisper`, `siglip` y `nemotron`, además de módulos específicos de OCR, text-to-speech y detección de actividad de voz (VAD). Esto sugiere un pipeline omni que combina un LLM base tipo Qwen, un codificador de audio tipo Whisper, un codificador visual tipo SigLIP y un componente de razonamiento o generación asociado a Nemotron. La pipeline declarada en HuggingFace es `any-to-any`, es decir, entrada y salida en múltiples modalidades (texto, audio, imagen).
+Las etiquetas del repositorio revelan una arquitectura compuesta que integra componentes de varias familias: `qwen`, `whisper`, `siglip` y `nemotron`, además de módulos específicos de OCR, text-to-speech y detección de actividad de voz (VAD). Esto sugiere un pipeline omni que combina un LLM base tipo Qwen, un codificador de audio tipo Whisper, un codificador visual tipo SigLIP y un componente de razonamiento o generación asociado a Nemotron. La pipeline declarada en Hugging Face es `any-to-any`, es decir, entrada y salida en múltiples modalidades (texto, audio, imagen).
 
 El modelo cubre más de 100 idiomas según los metadatos, con un tamaño de repositorio de 8,8 GB. No se han publicado en la información disponible detalles sobre número de parámetros, longitud de contexto, composición del dataset de entrenamiento ni resultados de benchmarks. La ficha se completa con los datos disponibles y se marca explícitamente como "no disponible" todo aquello que no figura en la información proporcionada.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AMAImedia/noesis-film-handsome-guys-2024-ko | no disponible | no disponible | Texto, audio, imagen (any-to-any) | Apache 2.0 | Gated en HuggingFace |
+| AMAImedia/noesis-film-handsome-guys-2024-ko | no disponible | no disponible | Texto, audio, imagen (any-to-any) | Apache 2.0 | Gated en Hugging Face |
 | Qwen2-Audio | ~7B (variante Instruct) | no disponible en esta ficha | Texto y audio | Apache 2.0 | Público |
 | Whisper large-v3 | ~1.55B | N/A (ASR) | Audio a texto | MIT | Público |
 | SigLIP | ~400M (variante base) | N/A (visión-lenguaje) | Imagen y texto | Apache 2.0 | Público |
@@ -75,7 +75,7 @@ La comparativa es orientativa: el modelo de AMAImedia integra componentes de las
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar su uso en entornos automatizados.
 - No se han publicado datos de benchmarks, por lo que no es posible evaluar su calidad frente a alternativas.
 - No se documentan sesgos conocidos, pero al ser un ajuste sobre un largometraje coreano, cabe esperar sesgos de dominio y de idioma hacia el contenido de origen.
 - Riesgo de alucinación inherente a los modelos generativos multimodales; no cuantificado.
@@ -86,5 +86,5 @@ La comparativa es orientativa: el modelo de AMAImedia integra componentes de las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AMAImedia/noesis-film-handsome-guys-2024-ko
+- Hugging Face: https://huggingface.co/AMAImedia/noesis-film-handsome-guys-2024-ko
 - No se han encontrado en la información proporcionada otros enlaces (papers, blogs, repos o demos) asociados al modelo.

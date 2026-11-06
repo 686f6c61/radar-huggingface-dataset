@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-Core-K6
+- Hugging Face: https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K4-Core-K6
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash-BF16
 - Dataset de calibracion: https://huggingface.co/datasets/wrldsuksgo2mars/agentic-quant-panel-v1
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

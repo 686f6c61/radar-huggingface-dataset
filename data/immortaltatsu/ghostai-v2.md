@@ -91,7 +91,7 @@ No se han encontrado otros modelos comparables en la información proporcionada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/immortaltatsu/ghostai-v2
+- Modelo en Hugging Face: https://huggingface.co/immortaltatsu/ghostai-v2
 - Versión anterior (ghostai-alpha): https://huggingface.co/immortaltatsu/ghostai-alpha
 - Repositorio GhostAI (proyecto relacionado, no el mismo modelo): https://github.com/therezor/GhostAI
 - Otro modelo del mismo autor: https://huggingface.co/immortaltatsu/ghostai-lfm2.5-1.2b-app-v2

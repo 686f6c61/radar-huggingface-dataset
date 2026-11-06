@@ -73,8 +73,8 @@ Desgloses adicionales reportados: WER agrupado de 36,2 con prompts de texto (lec
 
 | Modelo | Parámetros | Tamaño | WER agrupado (%) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | 0,12B | 487 MB | 39,7 | CC-BY-4.0 | HuggingFace |
-| nvidia/stt_rw_conformer_ctc_large (base) | ~0,12B | no disponible | 59,6 (50 clips) | no disponible | HuggingFace |
+| Este modelo | 0,12B | 487 MB | 39,7 | CC-BY-4.0 | Hugging Face |
+| nvidia/stt_rw_conformer_ctc_large (base) | ~0,12B | no disponible | 59,6 (50 clips) | no disponible | Hugging Face |
 | w2v-BERT 2.0 ajustado por el autor | 0,6B | no disponible | 38,7 | no disponible | no disponible |
 | CDLI Whisper large-v3 | 1,55B | no disponible | 39,9 | no disponible | no disponible |
 | CDLI Whisper small | 0,24B | no disponible | 47,6 | no disponible | no disponible |
@@ -92,7 +92,7 @@ Desgloses adicionales reportados: WER agrupado de 36,2 con prompts de texto (lec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oluwagbotty/nemo-ctc-lr1e-4
+- Modelo en Hugging Face: https://huggingface.co/oluwagbotty/nemo-ctc-lr1e-4
 - Modelo base: https://huggingface.co/nvidia/stt_rw_conformer_ctc_large
 - Dataset CDLI Rwandan Kinyarwanda non-standard speech v1.0: https://huggingface.co/datasets/cdli/rwandan_kinyarwanda_nonstandard_speech_v1.0
 - NeMo Toolkit: https://github.com/NVIDIA/NeMo

@@ -4,7 +4,7 @@
 
 DaSiWa-Anima es un checkpoint de texto a imagen especializado en estética anime, desarrollado por el usuario wt5719001 como un fine-tune del modelo base circlestone-labs/Anima. El autor lo creó con el objetivo de "domar" a Anima, que según su descripción resultaba difícil de controlar, y ofrece una alternativa más manejable para generar ilustraciones anime de alta calidad. El repositorio tiene un tamaño de 10,6 GB, lo que sugiere un modelo de difusión de tamaño considerable, aunque no se especifican los parámetros exactos.
 
-El modelo se distribuye bajo una licencia personalizada denominada "anima", con un enlace al archivo LICENSE.md del repositorio base. Aunque la página de HuggingFace no muestra descargas ni likes, en Civitai cuenta con una valoración de 5 estrellas por parte de más de 160 usuarios, lo que indica cierta aceptación en la comunidad. Su relevancia radica en ser una alternativa afinada para creadores que buscan un control más preciso sobre la generación de imágenes anime, un nicho muy activo en el ecosistema de modelos de difusión.
+El modelo se distribuye bajo una licencia personalizada denominada "anima", con un enlace al archivo LICENSE.md del repositorio base. Aunque la página de Hugging Face no muestra descargas ni likes, en Civitai cuenta con una valoración de 5 estrellas por parte de más de 160 usuarios, lo que indica cierta aceptación en la comunidad. Su relevancia radica en ser una alternativa afinada para creadores que buscan un control más preciso sobre la generación de imágenes anime, un nicho muy activo en el ecosistema de modelos de difusión.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El modelo se distribuye bajo una licencia personalizada denominada "anima", con 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo. Al ser un fine-tune de Anima, se asume que hereda la arquitectura de difusion latente de su modelo base, probablemente similar a Stable Diffusion o un derivado. El autor menciona en la descripcion de Civitai que Anima era dificil de controlar, por lo que el entrenamiento se habria centrado en ajustar el modelo para obtener resultados mas estables y faciles de dirigir mediante prompts. No se han publicado detalles sobre el dataset de entrenamiento, el numero de pasos, ni si se utilizaron tecnicas como RLHF o DPO. El repositorio de HuggingFace no incluye informacion adicional al respecto.
+No se dispone de informacion tecnica detallada sobre la arquitectura interna del modelo. Al ser un fine-tune de Anima, se asume que hereda la arquitectura de difusion latente de su modelo base, probablemente similar a Stable Diffusion o un derivado. El autor menciona en la descripcion de Civitai que Anima era dificil de controlar, por lo que el entrenamiento se habria centrado en ajustar el modelo para obtener resultados mas estables y faciles de dirigir mediante prompts. No se han publicado detalles sobre el dataset de entrenamiento, el numero de pasos, ni si se utilizaron tecnicas como RLHF o DPO. El repositorio de Hugging Face no incluye informacion adicional al respecto.
 
 ## Capacidades
 
@@ -42,14 +42,14 @@ No se dispone de informacion tecnica detallada sobre la arquitectura interna del
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de evaluaciones cuantitativas como FID, CLIP score, ni comparaciones con otros modelos en la pagina de HuggingFace ni en los resultados de busqueda. Las unicas referencias de calidad son las valoraciones de usuarios en Civitai (5 estrellas por mas de 160 usuarios), pero no constituyen una metrica tecnica.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de evaluaciones cuantitativas como FID, CLIP score, ni comparaciones con otros modelos en la pagina de Hugging Face ni en los resultados de busqueda. Las unicas referencias de calidad son las valoraciones de usuarios en Civitai (5 estrellas por mas de 160 usuarios), pero no constituyen una metrica tecnica.
 
 ## Requisitos de hardware
 
 - VRAM estimada: no disponible oficialmente. Dado el tamano del repositorio (10,6 GB), se estima que el modelo en precision completa (fp16) requiere al menos 12 GB de VRAM para inferencia, y posiblemente mas para entrenamiento o fine-tuning.
 - GPU recomendadas: no hay especificaciones oficiales. Por el tamano, una GPU con 16 GB de VRAM (como RTX 4080, RTX 4090, o A100) seria adecuada para inferencia comoda. GPUs con 8 GB podrian funcionar con cuantizacion o usando variantes optimizadas, pero no esta confirmado.
 - Si cabe en consumer GPU: probablemente si en GPUs de gama alta (RTX 3090/4090), pero no hay confirmacion.
-- Opciones de despliegue: al ser un modelo de difusion, se puede usar con interfaces como Automatic1111, ComfyUI, o mediante la libreria diffusers de HuggingFace. No se mencionan opciones especificas como vLLM u Ollama, que son para modelos de lenguaje.
+- Opciones de despliegue: al ser un modelo de difusion, se puede usar con interfaces como Automatic1111, ComfyUI, o mediante la libreria diffusers de Hugging Face. No se mencionan opciones especificas como vLLM u Ollama, que son para modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -74,8 +74,8 @@ No hay datos de rendimiento comparativo, por lo que la comparacion se limita a c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wt5719001/DaSiWa-Anima
+- Hugging Face: https://huggingface.co/wt5719001/DaSiWa-Anima
 - Civitai: https://civitai.com/models/2627349/dasiwa-anima
 - Repositorio base Anima: https://huggingface.co/circlestone-labs/Anima
 - Licencia de Anima: https://huggingface.co/circlestone-labs/Anima/blob/main/LICENSE.md
-- Repositorio alternativo en HuggingFace (darksidewalker): https://huggingface.co/darksidewalker/DaSiWa-Anima
+- Repositorio alternativo en Hugging Face (darksidewalker): https://huggingface.co/darksidewalker/DaSiWa-Anima

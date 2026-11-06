@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inkling-Small REAP192 Magicpack (esta ficha) | 199,2B en safetensors del repo; base 276B/12B activos | Hasta 122.880 en servido | Sí (visión y audio) | `other` (hereda la del base) | GGUF en HuggingFace |
+| Inkling-Small REAP192 Magicpack (esta ficha) | 199,2B en safetensors del repo; base 276B/12B activos | Hasta 122.880 en servido | Sí (visión y audio) | `other` (hereda la del base) | GGUF en Hugging Face |
 | Inkling-Small (base) | 276B totales / 12B activos | No disponible | Sí (visión y audio) | No disponible | Pesos del modelo original |
-| Inkling REAP128 BF16 (`nbKPS/inkling-reap128-bf16`) | No disponible | No disponible | Sí (aquí sin cuantizar) | No disponible | BF16 en HuggingFace |
-| Inkling REAP192 BF16 (`nbKPS/inkling-reap192-bf16`) | No disponible | No disponible | Sí (aquí sin cuantizar) | No disponible | BF16 en HuggingFace |
+| Inkling REAP128 BF16 (`nbKPS/inkling-reap128-bf16`) | No disponible | No disponible | Sí (aquí sin cuantizar) | No disponible | BF16 en Hugging Face |
+| Inkling REAP192 BF16 (`nbKPS/inkling-reap192-bf16`) | No disponible | No disponible | Sí (aquí sin cuantizar) | No disponible | BF16 en Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con modelos de otras familias en la información proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks comparativos con modelos de otras familias 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nbKPS/inkling-reap192-magicpack-gguf
+- Hugging Face: https://huggingface.co/nbKPS/inkling-reap192-magicpack-gguf
 - Modelo base: https://huggingface.co/ThinkingMachines/Inkling-Small
 - Pesos BF16 REAP128: https://huggingface.co/nbKPS/inkling-reap128-bf16
 - Pesos BF16 REAP192: https://huggingface.co/nbKPS/inkling-reap192-bf16

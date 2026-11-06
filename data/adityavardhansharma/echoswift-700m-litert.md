@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EchoSwift-700M-LiteRT | aproximadamente 700M | 4.096 / 8.192 | LiteRT-LM (`.litertlm`) para Android | lfm-open-1.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Modelo base EchoSwift-700M | aproximadamente 700M | no disponible | pesos originales (formato no especificado) | no disponible | HuggingFace |
+| EchoSwift-700M-LiteRT | aproximadamente 700M | 4.096 / 8.192 | LiteRT-LM (`.litertlm`) para Android | lfm-open-1.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Modelo base EchoSwift-700M | aproximadamente 700M | no disponible | pesos originales (formato no especificado) | no disponible | Hugging Face |
 | Alternativas de la familia LFM2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones de modelos comparables en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -86,14 +86,14 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Riesgo de alucinacion inherente a un modelo de 700M: la ventana de contexto de 4.096 tokens limita la cantidad de contexto que puede manejar y aumenta la probabilidad de perder informacion en conversaciones largas.
 - Idiomas soportados no declarados: no hay garantia de calidad fuera del ingles, y menos aun en castellano.
 - El repositorio contiene unicamente binarios `.litertlm`; no se ofrecen safetensors, GGUF ni pesos en precision completa, lo que impide reutilizar el modelo fuera del runtime LiteRT-LM.
-- La licencia `lfm-open-1.0` (campo `license: other` en HuggingFace) incluye terminos especificos de Liquid AI; es obligatorio revisar el texto completo antes de cualquier uso comercial, ya que puede imponer restricciones de atribucion o de uso.
+- La licencia `lfm-open-1.0` (campo `license: other` en Hugging Face) incluye terminos especificos de Liquid AI; es obligatorio revisar el texto completo antes de cualquier uso comercial, ya que puede imponer restricciones de atribucion o de uso.
 - El modelo esta disenado para el esquema concreto de EchoFlow (`search: query` y HTML single-file); su rendimiento fuera de ese esquema no esta evaluado.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 - El modelo base es de un autor individual, no de Liquid AI; la relacion con LFM2 se deduce de los tags y no esta verificada en la model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adityavardhansharma/EchoSwift-700M-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/adityavardhansharma/EchoSwift-700M-LiteRT
 - Modelo base: https://huggingface.co/adityavardhansharma/EchoSwift-700M
 - Aplicacion EchoFlow: https://echoflow.adityavs.space
 - Licencia LFM Open 1.0: https://raw.githubusercontent.com/Liquid-AI/LFM/main/LICENSE

@@ -98,10 +98,10 @@ Nota: los datos de licencia, cuantización y despliegue móvil de los modelos co
 
 ## Enlaces
 
-- Repositorio HuggingFace (AWQ): https://huggingface.co/openbmb/MiniCPM-V-4.6-AWQ
+- Repositorio Hugging Face (AWQ): https://huggingface.co/openbmb/MiniCPM-V-4.6-AWQ
 - Modelo base (BF16): https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-V
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-AWQ-Demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-AWQ-Demo
 - Documentacion API: https://github.com/OpenBMB/MiniCPM-V/blob/main/docs/api.md
 - CookBook: https://github.com/OpenSQZ/MiniCPM-V-CookBook
 - Articulo sobre el lanzamiento: https://artificialanalysis.ai/articles/openbmb-launches-minicpm-v-4-6-1-3b-instruct

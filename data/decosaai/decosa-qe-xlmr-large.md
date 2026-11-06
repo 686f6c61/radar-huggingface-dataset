@@ -79,7 +79,7 @@ Latencia medida por el autor: 90-140 ms por par de frases y 40-60 ms por par en 
 
 | Modelo | Parametros | Contexto | Rendimiento documentado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decosa-qe-xlmr-large (este modelo) | 562.010.133 | 256 sub-tokens por par | 84,7 % de detección con 3,1 % de falsos en errores plantados; AUC 0,964; 98,6 % en deriva numérica | apache-2.0 | Pesos safetensors en HuggingFace |
+| decosa-qe-xlmr-large (este modelo) | 562.010.133 | 256 sub-tokens por par | 84,7 % de detección con 3,1 % de falsos en errores plantados; AUC 0,964; 98,6 % en deriva numérica | apache-2.0 | Pesos safetensors en Hugging Face |
 | Unbabel CometKiwi | no disponible | no disponible | no disponible en la información proporcionada | CC BY-NC-SA (no comercial, según el autor) | no disponible en la información proporcionada |
 | XCOMET | no disponible | no disponible | no disponible en la información proporcionada | CC BY-NC-SA (no comercial, según el autor) | no disponible en la información proporcionada |
 | Juez LLM: retrotraducción + Qwen3.8-27B | no disponible | no disponible | 98,9 % de detección con 27,1 % de falsos en errores plantados; 12 de 15 errores reales con 50 falsos | no disponible | no disponible |
@@ -102,7 +102,7 @@ El eje diferencial declarado por el autor es la licencia: CometKiwi y XCOMET son
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decosaai/decosa-qe-xlmr-large
+- Modelo en Hugging Face: https://huggingface.co/decosaai/decosa-qe-xlmr-large
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-large
 - Motor de traducción usado para generar parte de los datos: https://huggingface.co/tencent/Hy-MT2-7B
 - OPUS, corpus y alineación: J. Tiedemann, "Parallel Data, Tools and Interfaces in OPUS", LREC 2012 (https://opus.nlpl.eu/)

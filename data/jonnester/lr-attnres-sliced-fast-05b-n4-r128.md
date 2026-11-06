@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LR-AttnRes-sliced-fast-05b-n4-r128 es un checkpoint de aproximadamente 0,5B de parametros publicado por el usuario Jonnester en HuggingFace. Segun la model card, se trata de un modelo con "Block Attention Residuals" de rango bajo ("sliced low-rank"), configurado con 4 bloques y rango de enrutamiento 128, entrenado sobre 10.000 millones de tokens. El checkpoint se situa en el paso 38.146 y reporta una perdida de validacion de 2,9515391525 sobre 99.999.744 tokens de validacion.
+LR-AttnRes-sliced-fast-05b-n4-r128 es un checkpoint de aproximadamente 0,5B de parametros publicado por el usuario Jonnester en Hugging Face. Segun la model card, se trata de un modelo con "Block Attention Residuals" de rango bajo ("sliced low-rank"), configurado con 4 bloques y rango de enrutamiento 128, entrenado sobre 10.000 millones de tokens. El checkpoint se situa en el paso 38.146 y reporta una perdida de validacion de 2,9515391525 sobre 99.999.744 tokens de validacion.
 
 El interes del modelo es fundamentalmente experimental: no es un modelo de proposito general con licencia y pipeline declarados, sino el resultado de una receta de investigacion sobre un backend propio de attention-residual denominado fast-attnres (version 2.0.1). La model card documenta de forma inusualmente detallada el proceso de entrenamiento (auditoria de receta superada con 0 diferencias inesperadas, modo de compilacion fullgraph=True con dynamic=False y CUDA graphs desactivados, hash SHA256 del checkpoint), lo que apunta a un uso orientado a reproducibilidad de experimentos mas que a despliegue en produccion.
 
@@ -18,7 +18,7 @@ No hay informacion publica sobre la licencia, los idiomas soportados, la longitu
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (no se publican versiones cuantizadas ni se documenta soporte) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | no disponible en la model card; el repositorio ocupa 2,5 GB, lo que es compatible con pesos en precision completa o media para este tamano, pero no se confirma |
 | Numero de bloques | 4 |
 | Rango de enrutamiento | 128 |
@@ -92,7 +92,7 @@ No hay datos de rendimiento de este modelo que permitan una comparacion funciona
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LR-AttnRes-sliced-fast-05b-n4-r128 | Aproximadamente 0,5B | no disponible | no disponible | Repositorio HuggingFace de 2,5 GB, 0 descargas, sin pipeline declarado |
+| LR-AttnRes-sliced-fast-05b-n4-r128 | Aproximadamente 0,5B | no disponible | no disponible | Repositorio Hugging Face de 2,5 GB, 0 descargas, sin pipeline declarado |
 | Qwen2.5-0.5B | 0,49B | 32.768 tokens (ampliable con YaRN) | Apache 2.0 | Amplia difusion, soporte en multiples motores |
 | SmolLM2-360M | 362M | 8.192 tokens | Apache 2.0 | Amplia difusion, versiones GGUF y soporte en llama.cpp y Ollama |
 | TinyLlama-1.1B | 1,1B | 2.048 tokens | Apache 2.0 | Amplia difusion, multiples cuantizaciones comunitarias |
@@ -108,14 +108,14 @@ La diferencia principal no es de rendimiento, sino de madurez y trazabilidad: lo
 - Idiomas: no declarados. No puede asumirse soporte de castellano ni de ningun otro idioma concreto.
 - Longitud de contexto: no declarada, lo que impide planificar su uso en tareas que dependan de ventanas largas.
 - Dependencia de codigo propietario: la receta depende del backend fast-attnres 2.0.1 y de compilacion con fullgraph=True, dynamic=False y CUDA graphs desactivadas. Sin ese codigo, el checkpoint puede ser inutilizable o requerir ingenieria inversa.
-- Adopcion nula: 0 descargas y 0 likes en HuggingFace, sin pipeline declarado. No hay comunidad, issues ni soporte.
+- Adopcion nula: 0 descargas y 0 likes en Hugging Face, sin pipeline declarado. No hay comunidad, issues ni soporte.
 - Fecha de creacion inusual: los metadatos indican creacion el 2026-09-11, posterior a la fecha de esta ficha; conviene verificar la autenticidad del repositorio y del hash antes de confiar en el.
 - Perdida de validacion de 2,9515: es un valor plausible para un modelo de este tamano en preentrenamiento, pero por si solo no permite inferir capacidad util ni comparabilidad con otras recetas.
 - Adecuacion a produccion: no recomendado sin una evaluacion previa completa y sin una licencia clara.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n4-r128
+- Modelo en Hugging Face: https://huggingface.co/Jonnester/LR-AttnRes-sliced-fast-05b-n4-r128
 - Ejecucion de W&B del entrenamiento: https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/runs/h6sh9qls
 - Receta de referencia en W&B: https://wandb.ai/jonnester-german-swiss-international-school-/LR-AttnRes/runs/ne0tiqb3
 - Paper, repositorio de codigo, demo y documentacion del backend fast-attnres: no disponibles en la informacion proporcionada

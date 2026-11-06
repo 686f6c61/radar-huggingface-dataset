@@ -38,7 +38,7 @@ En cuanto al entrenamiento, el ajuste fino lo realizo el Barcelona Supercomputin
 
 ## Casos de uso
 
-- Transcripcion de reuniones y entrevistas en catalan sobre un Mac: se invoca mlx_whisper.transcribe() pasando el repositorio de HuggingFace y language="ca"; el modelo devuelve la transcripcion puntuada directamente, sin postprocesado de mayusculas ni signos.
+- Transcripcion de reuniones y entrevistas en catalan sobre un Mac: se invoca mlx_whisper.transcribe() pasando el repositorio de Hugging Face y language="ca"; el modelo devuelve la transcripcion puntuada directamente, sin postprocesado de mayusculas ni signos.
 - Subtitulado de contenido audiovisual en catalan: el resultado incluye segmentos con marcas de tiempo, lo que permite generar ficheros de subtitulos sin pasar por herramientas externas de puntuacion.
 - Archivado y busqueda de audio corporativo o institucional: al ejecutarse en local sobre Apple Silicon, el audio no sale del equipo, lo que resulta adecuado para material con requisitos de confidencialidad.
 - Investigacion en procesamiento del catalan: sirve como linea base reproducible para comparar con el modelo original en PyTorch o con el ajuste fino hermano de transcripciones normalizadas, manteniendo identicos los pesos.
@@ -85,7 +85,7 @@ Los datos de rendimiento comparado (WER en catalan, velocidad relativa) no estan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/per2021/whisper-large-v3-ca-punctuated-mlx
+- Modelo en Hugging Face: https://huggingface.co/per2021/whisper-large-v3-ca-punctuated-mlx
 - Modelo base (ajuste fino del BSC): https://huggingface.co/BSC-LT/whisper-large-v3-ca-punctuated-3370h
 - Modelo base original de OpenAI: https://huggingface.co/openai/whisper-large-v3
 - Modelo hermano en MLX (transcripciones normalizadas): https://huggingface.co/per2021/whisper-bsc-large-v3-cat-mlx

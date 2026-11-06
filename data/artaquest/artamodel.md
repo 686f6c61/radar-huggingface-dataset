@@ -80,7 +80,7 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/artaquest/artamodel
+- Hugging Face: https://huggingface.co/artaquest/artamodel
 - Dataset en Kaggle: https://www.kaggle.com/datasets/artaquest-foundation/artamatch-sidereal
 - Competición en Kaggle: https://www.kaggle.com/competitions/artamatch-sidereal
 - Estudio técnico (ARTAMODEL.md): disponible en el repositorio del modelo (no se proporciona URL directa en la información disponible)

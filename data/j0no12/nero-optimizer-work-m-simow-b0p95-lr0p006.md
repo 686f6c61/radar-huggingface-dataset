@@ -90,7 +90,7 @@ No se han identificado en la informacion disponible checkpoints comparables de o
 
 | Modelo | Parametros | Contexto | Vocabulario | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nero-optimizer-work-m-simow-b0p95-lr0p006 | 999.680 | 128 tokens | 2.048 | ingles | no disponible | pesos npz en HuggingFace |
+| nero-optimizer-work-m-simow-b0p95-lr0p006 | 999.680 | 128 tokens | 2.048 | ingles | no disponible | pesos npz en Hugging Face |
 | Otros brazos del barrido Nero Optimizer Work | no disponible | 128 tokens | 2.048 | ingles | no disponible | no disponible en la informacion proporcionada |
 | GPT-2 small (referencia externa de escala, no comparable en tarea) | 124 M | 1.024 tokens | 50.257 | ingles | licencia MIT modificada de OpenAI | pesos publicos y ampliamente soportados |
 
@@ -112,5 +112,5 @@ La comparacion con GPT-2 small se incluye unicamente como referencia de escala y
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p006
+- Hugging Face: https://huggingface.co/j0no12/nero-optimizer-work-m-simow-b0p95-lr0p006
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, a su paper, a su repositorio de codigo ni a demos. Los resultados devueltos por la busqueda no guardan relacion con el modelo (contenido sobre plataformas de video y duplicacion de pantalla) y se descartan por no ser material util.

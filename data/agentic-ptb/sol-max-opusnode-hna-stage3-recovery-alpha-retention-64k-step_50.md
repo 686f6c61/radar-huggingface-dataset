@@ -71,5 +71,5 @@ No se dispone de datos de rendimiento para comparar con modelos de tamaño simil
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_50](https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_50)
+- [Hugging Face: agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_50](https://huggingface.co/agentic-ptb/sol-max-opusnode.hNA.stage3-recovery-alpha-retention-64k.step_50)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

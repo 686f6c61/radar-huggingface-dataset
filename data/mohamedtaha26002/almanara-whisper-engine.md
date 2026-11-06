@@ -67,7 +67,7 @@ No disponible. No se puede comparar este repositorio con otros modelos porque no
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mohamedtaha26002/almanara-whisper-engine
+- Repositorio de Hugging Face: https://huggingface.co/mohamedtaha26002/almanara-whisper-engine
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Documentacion de Whisper en OpenAI: https://openai.com/index/whisper/
 - Busqueda de Whisper en Ollama (para referencia): https://ollama.com/search?q=whisper

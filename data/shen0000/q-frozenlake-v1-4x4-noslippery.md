@@ -2,7 +2,7 @@
 
 ## Resumen
 
-q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 de Gymnasium en su configuracion 4x4 con la opcion `is_slippery=False` (superficie no resbaladiza). Lo publica el usuario Shen0000 en HuggingFace y se distribuye como un unico artefacto serializado en formato pickle (`q-learning.pkl`) dentro de un repositorio de 0,0 GB. No se trata de un modelo de lenguaje, sino de una politica de decision discreta entrenada sobre un espacio de estados y acciones muy reducido.
+q-FrozenLake-v1-4x4-noSlippery es un agente de aprendizaje por refuerzo entrenado con Q-Learning tabular para resolver el entorno FrozenLake-v1 de Gymnasium en su configuracion 4x4 con la opcion `is_slippery=False` (superficie no resbaladiza). Lo publica el usuario Shen0000 en Hugging Face y se distribuye como un unico artefacto serializado en formato pickle (`q-learning.pkl`) dentro de un repositorio de 0,0 GB. No se trata de un modelo de lenguaje, sino de una politica de decision discreta entrenada sobre un espacio de estados y acciones muy reducido.
 
 El modelo resuelve un problema de control secuencial clasico: un agente debe desplazarse por una cuadricula de 16 casillas (4x4) desde el estado inicial hasta la casilla objetivo, evitando los agujeros, emitiendo una de cuatro acciones discretas (izquierda, abajo, derecha, arriba) en cada paso. Su relevancia es fundamentalmente didactica y de verificacion: sirve como referencia reproducible de un agente Q-Learning que alcanza recompensa media perfecta en el escenario determinista, y como baseline minimo en pipelines de evaluacion de algoritmos de RL.
 
@@ -50,7 +50,7 @@ El unico dato cuantitativo de entrenamiento disponible es el resultado declarado
 - Baseline minimo en experimentos de RL: cualquier nuevo algoritmo (DQN, PPO, tabular SARSA) puede compararse contra este agente en el mismo entorno para medir si supera o iguala la recompensa media de 1.00 declarada.
 - Pruebas de pipelines de evaluacion: al tener una recompensa perfecta y varianza cero, es util como caso de prueba para validar que un harness de evaluacion registra correctamente `mean_reward` y que el bucle de episodios termina en el estado objetivo.
 - Pruebas de serializacion y compatibilidad: permite validar flujos de carga de artefactos pickle en entornos controlados y verificar la compatibilidad de versiones de las librerias que deserializan el objeto.
-- Reproducibilidad y auditoria: al estar publicado en HuggingFace, se puede usar como referencia citable en un informe interno para documentar una linea base de RL tabular, siempre que se asuma que el resultado no esta verificado por la plataforma.
+- Reproducibilidad y auditoria: al estar publicado en Hugging Face, se puede usar como referencia citable en un informe interno para documentar una linea base de RL tabular, siempre que se asuma que el resultado no esta verificado por la plataforma.
 - Integracion en tutoriales y notebooks: es adecuado como bloque de codigo corto en documentacion tecnica que necesite un agente funcional sin dependencias de GPU ni de pesos de gran tamano.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible 
 - Compatibilidad con GPU de consumo: no aplica; el modelo se ejecuta en CPU, incluidos equipos de gama baja.
 - Opciones de despliegue: Python con `gym`/`gymnasium` para instanciar el entorno y `pickle` (o la utilidad `load_from_hub` citada en la model card) para cargar `q-learning.pkl`. No hay soporte declarado para vLLM, llama.cpp, Ollama ni TGI, que no aplican a un agente tabular.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada; por la naturaleza tabular del agente, cada decision consiste en una consulta a una tabla de 64 entradas y no depende de computo matricial intensivo.
-- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB segun los metadatos de Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -78,7 +78,7 @@ No disponible. La informacion proporcionada no incluye otros agentes de Q-Learni
 
 - Ambito muy restringido: la politica esta ajustada a FrozenLake-v1 4x4 con `is_slippery=False`; no se declara comportamiento con la variante resbaladiza ni con mapas de otro tamano.
 - Sin licencia declarada: el repositorio no especifica licencia, por lo que no hay autorizacion explicita para uso comercial ni para redistribucion; conviene contactar con el autor antes de integrarlo en un producto.
-- Resultado no verificado: el `mean_reward` de 1.00 aparece con `verified: false`, es decir, es una declaracion del autor y no ha sido comprobada por HuggingFace ni por un tercero.
+- Resultado no verificado: el `mean_reward` de 1.00 aparece con `verified: false`, es decir, es una declaracion del autor y no ha sido comprobada por Hugging Face ni por un tercero.
 - Falta de documentacion de entrenamiento: no se indican hiperparametros, numero de episodios, semillas ni metodo de evaluacion, lo que impide reproducir el resultado con fidelidad.
 - Riesgo de deserializacion insegura: el artefacto es un pickle, formato que puede ejecutar codigo arbitrario al cargarse; debe tratarse como fichero no confiable y abrirse en un entorno aislado.
 - Ausencia de capacidades generativas: no genera texto, no razona en lenguaje natural, no soporta tool calling ni vision; no es util como modelo de lenguaje en ninguna aplicacion.
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no incluye otros agentes de Q-Learni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Shen0000/q-FrozenLake-v1-4x4-noSlippery
-- Repositorio de pesos: `q-learning.pkl` dentro del repositorio de HuggingFace indicado arriba
+- Hugging Face: https://huggingface.co/Shen0000/q-FrozenLake-v1-4x4-noSlippery
+- Repositorio de pesos: `q-learning.pkl` dentro del repositorio de Hugging Face indicado arriba
 - Papers, blogs, repos y demos adicionales: no disponibles; los resultados de busqueda web proporcionados no guardan relacion con el modelo

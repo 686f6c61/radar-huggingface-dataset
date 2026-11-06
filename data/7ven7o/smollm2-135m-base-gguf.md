@@ -96,7 +96,7 @@ Nota: los datos de los modelos comparativos proceden de informacion publica de s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/7ven7o/SmolLM2-135M-Base-GGUF
+- Repositorio Hugging Face: https://huggingface.co/7ven7o/SmolLM2-135M-Base-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M
 - llama.cpp (herramienta de conversion y ejecucion): https://github.com/ggml-org/llama.cpp
 - Blog de Hugging Face sobre la familia SmolLM2: https://huggingface.co/blog/smollm2

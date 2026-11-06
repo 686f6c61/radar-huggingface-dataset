@@ -37,7 +37,7 @@ No se ha realizado ningún entrenamiento ni ajuste adicional: el autor parte del
 - Razonamiento aritmetico basico (las pruebas de humo incluyen una pregunta del tipo "¿cuanto es 2+2?").
 - Inferencia en dispositivo sin conexion a red ni servidores externos.
 - Ejecucion sobre CPU o GPU mediante el runtime LiteRT-LM, con backend seleccionable.
-- Soporte de tokenizador HuggingFace y plantilla de chat incluidas dentro del contenedor.
+- Soporte de tokenizador Hugging Face y plantilla de chat incluidas dentro del contenedor.
 - Capacidades de tool calling, function calling, agentes multi-paso, vision o audio: no disponible en la informacion proporcionada.
 
 ## Casos de uso
@@ -94,7 +94,7 @@ Los datos de los modelos alternativos corresponden a sus especificaciones public
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto: https://huggingface.co/malachkubihd45/MiniCPM5-1B-mixed4-8
+- Repositorio Hugging Face del artefacto: https://huggingface.co/malachkubihd45/MiniCPM5-1B-mixed4-8
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-1B
 - Runtime LiteRT-LM: no disponible en la informacion proporcionada
 - Paper o documentacion tecnica del modelo base: no disponible en la informacion proporcionada

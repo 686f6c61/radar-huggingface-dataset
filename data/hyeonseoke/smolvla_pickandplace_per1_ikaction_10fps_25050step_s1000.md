@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-Existen otros repositorios en HuggingFace con ajustes finos de SmolVLA para tareas similares, aunque no se dispone de sus especificaciones técnicas completas en la información proporcionada:
+Existen otros repositorios en Hugging Face con ajustes finos de SmolVLA para tareas similares, aunque no se dispone de sus especificaciones técnicas completas en la información proporcionada:
 
 | Modelo | Base | Tarea | Licencia | Parametros |
 |---|---|---|---|---|

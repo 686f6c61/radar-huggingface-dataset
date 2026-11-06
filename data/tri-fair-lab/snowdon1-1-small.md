@@ -89,7 +89,7 @@ La comparativa se limita al modelo base, dado que no se dispone de información 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/tri-fair-lab/Snowdon1.1-Small)
+- [Modelo en Hugging Face](https://huggingface.co/tri-fair-lab/Snowdon1.1-Small)
 - [Colección de modelos Snowdon](https://huggingface.co/collections/tri-fair-lab/snowdon-models)
 - [Public AI Constitution (PDF)](https://huggingface.co/spaces/tri-fair-lab/publications/blob/main/Public_AI_Constitution.pdf)
 - [Perfil de la organización tri-fair-lab](https://huggingface.co/tri-fair-lab/models)

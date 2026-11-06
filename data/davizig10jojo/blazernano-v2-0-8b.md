@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BlazerNano-V2 es un modelo de lenguaje ultraligero de 0,8B parámetros desarrollado por Davizig10jojo, diseñado específicamente para inferencia local en dispositivos móviles sin conexión a internet. Según la model card del autor, emplea una arquitectura MoE (Mixture of Experts) con MTP (Multi-Token Prediction), aunque los metadatos de HuggingFace indican el tag `qwen3_5_text`, lo que sugiere una posible base en la familia Qwen 3.5, sin que se confirme oficialmente. El modelo se distribuye en formato GGUF cuantizado (Q4_K_M) y safetensors, y está orientado a tareas de generación de código simple, conversación general y soporte básico de function calling en aplicaciones de inferencia local como PocketPal AI u Off Grid AI.
+BlazerNano-V2 es un modelo de lenguaje ultraligero de 0,8B parámetros desarrollado por Davizig10jojo, diseñado específicamente para inferencia local en dispositivos móviles sin conexión a internet. Según la model card del autor, emplea una arquitectura MoE (Mixture of Experts) con MTP (Multi-Token Prediction), aunque los metadatos de Hugging Face indican el tag `qwen3_5_text`, lo que sugiere una posible base en la familia Qwen 3.5, sin que se confirme oficialmente. El modelo se distribuye en formato GGUF cuantizado (Q4_K_M) y safetensors, y está orientado a tareas de generación de código simple, conversación general y soporte básico de function calling en aplicaciones de inferencia local como PocketPal AI u Off Grid AI.
 
 La relevancia de este modelo radica en su capacidad para ejecutarse en procesadores de gama media y baja (Snapdragon 662, 695) con velocidades de entre 8 y 9 tokens por segundo, lo que lo convierte en una opción viable para entornos con recursos muy limitados. Sin embargo, la información pública es escasa: no se especifican datos de entrenamiento, licencia, idiomas soportados ni benchmarks de calidad, lo que limita su evaluación rigurosa para uso profesional.
 
@@ -10,7 +10,7 @@ La relevancia de este modelo radica en su capacidad para ejecutarse en procesado
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | MoE (Mixture of Experts) + MTP (según model card); tag `qwen3_5_text` en HuggingFace |
+| Arquitectura | MoE (Mixture of Experts) + MTP (según model card); tag `qwen3_5_text` en Hugging Face |
 | Parametros totales | 752.393.024 (0,75B aprox., redondeado a 0,8B por el autor) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su capacidad para ejecutarse en procesado
 
 ## Arquitectura y entrenamiento
 
-La model card indica una arquitectura MoE con MTP (Multi-Token Prediction), una técnica que permite predecir varios tokens futuros simultáneamente para acelerar la inferencia. Sin embargo, no se proporcionan detalles sobre el número de expertos, la dimensión del modelo o el mecanismo de enrutamiento. El tag `qwen3_5_text` en HuggingFace sugiere que el modelo podría estar basado en la arquitectura de Qwen 3.5, pero no hay confirmación oficial del autor. Tampoco se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de RLHF o DPO. La ausencia de estos datos impide evaluar la calidad del entrenamiento y su posible sesgo.
+La model card indica una arquitectura MoE con MTP (Multi-Token Prediction), una técnica que permite predecir varios tokens futuros simultáneamente para acelerar la inferencia. Sin embargo, no se proporcionan detalles sobre el número de expertos, la dimensión del modelo o el mecanismo de enrutamiento. El tag `qwen3_5_text` en Hugging Face sugiere que el modelo podría estar basado en la arquitectura de Qwen 3.5, pero no hay confirmación oficial del autor. Tampoco se dispone de información sobre el dataset de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de RLHF o DPO. La ausencia de estos datos impide evaluar la calidad del entrenamiento y su posible sesgo.
 
 ## Capacidades
 
@@ -74,6 +74,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Davizig10jojo/BlazerNano-V2-0.8B
+- Hugging Face: https://huggingface.co/Davizig10jojo/BlazerNano-V2-0.8B
 - Repo alternativo (BlazerNano_V2): https://huggingface.co/Davizig10jojo/BlazerNano_V2
 - Perfil de GitHub del autor: https://github.com/Davizig10jojo/

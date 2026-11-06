@@ -76,9 +76,9 @@ No se dispone de comparaciones publicadas con otros sistemas ASR para tujia en l
 
 | Modelo | Enfoque | Idioma | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tujia-ctc v0.1 | wav2vec2-XLSR congelado + BiLSTM + CTC | tujia (`tji`) | 4,34 M entrenables + codificador ~1,2 GB | research-use-only (pesos) | HuggingFace |
-| wav2vec2-XLSR-53 (base) | Codificador multilingüe preentrenado | 53 idiomas | ~300 M | Apache-2.0 | HuggingFace |
-| Sistemas ASR multilingües tipo Whisper | Transformer encoder-decoder | ~99 idiomas (sin tujia) | variable por tamaño | MIT (código y pesos) | OpenAI / HuggingFace |
+| tujia-ctc v0.1 | wav2vec2-XLSR congelado + BiLSTM + CTC | tujia (`tji`) | 4,34 M entrenables + codificador ~1,2 GB | research-use-only (pesos) | Hugging Face |
+| wav2vec2-XLSR-53 (base) | Codificador multilingüe preentrenado | 53 idiomas | ~300 M | Apache-2.0 | Hugging Face |
+| Sistemas ASR multilingües tipo Whisper | Transformer encoder-decoder | ~99 idiomas (sin tujia) | variable por tamaño | MIT (código y pesos) | OpenAI / Hugging Face |
 | Herramientas de alineación forzada (p. ej. MFA) | Modelos acústicos + léxico | depende del modelo acústico | variable | variable | open source |
 
 La comparación directa no está disponible porque no existen, en la información consultada, resultados de otros sistemas sobre el mismo conjunto de evaluación de tujia.
@@ -97,7 +97,7 @@ La comparación directa no está disponible porque no existen, en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TujiaNLP/tujia-ctc-v0.1
+- Modelo en Hugging Face: https://huggingface.co/TujiaNLP/tujia-ctc-v0.1
 - Proyecto padre (recolección de campo, normas de anotación, conversión ortográfica): https://github.com/ibaibing/TujiaNLP
 - Página del proyecto ASR: https://github.com/ibaibing/tujia-asr
 - Codificador upstream: https://huggingface.co/facebook/wav2vec2-xlsr-53-espeak-cv-ft

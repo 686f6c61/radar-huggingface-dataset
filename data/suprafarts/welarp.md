@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `SupraFarts/welarp` es un modelo de inteligencia artificial publicado en HuggingFace por el usuario SupraFarts bajo licencia Apache 2.0. La información pública disponible es extremadamente limitada: la model card únicamente contiene el mensaje "@BananaMind please goon", sin descripción técnica, arquitectura, parámetros ni casos de uso documentados. No se dispone de metadatos adicionales como pipeline, idiomas soportados o tamaño del modelo.
+El modelo `SupraFarts/welarp` es un modelo de inteligencia artificial publicado en Hugging Face por el usuario SupraFarts bajo licencia Apache 2.0. La información pública disponible es extremadamente limitada: la model card únicamente contiene el mensaje "@BananaMind please goon", sin descripción técnica, arquitectura, parámetros ni casos de uso documentados. No se dispone de metadatos adicionales como pipeline, idiomas soportados o tamaño del modelo.
 
 A fecha de creación (agosto de 2026), el modelo registra cero descargas y cero likes, lo que indica que se trata de una publicación muy reciente o de un experimento personal sin difusión previa. Debido a la ausencia de documentación técnica, cualquier evaluación sobre sus capacidades reales resulta especulativa. Esta ficha se limita a reflejar los datos objetivos disponibles y marca explícitamente los campos no verificables.
 

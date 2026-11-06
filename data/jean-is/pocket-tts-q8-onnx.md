@@ -112,7 +112,7 @@ La diferencia práctica entre las tres versiones es el peso en disco y la portab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jean-is/pocket-tts-q8-ONNX
+- Modelo en Hugging Face: https://huggingface.co/jean-is/pocket-tts-q8-ONNX
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Pesos de origen sin clonación de voz: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning
 - Grafos ONNX de la comunidad: https://huggingface.co/KevinAHM/pocket-tts-onnx

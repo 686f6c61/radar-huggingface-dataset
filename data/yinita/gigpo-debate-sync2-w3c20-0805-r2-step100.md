@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `yinita` en HuggingFace, identificado como `gigpo-debate-sync2-w3c20-0805-r2-step100`. Se trata de un checkpoint intermedio (step 100) de un entrenamiento con el algoritmo GiGPO (Group-in-Group Policy Optimization), una técnica de optimización de políticas para agentes LLM que permite asignación de crédito fina sin necesidad de crítico. El adaptador se entrena sobre el modelo base `yinita/ps4mas-sft-x5-single-ep3` y está diseñado específicamente para una topología de debate (PS-cold-debate), donde varios agentes interactúan para mejorar el razonamiento.
+Este modelo es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `yinita` en Hugging Face, identificado como `gigpo-debate-sync2-w3c20-0805-r2-step100`. Se trata de un checkpoint intermedio (step 100) de un entrenamiento con el algoritmo GiGPO (Group-in-Group Policy Optimization), una técnica de optimización de políticas para agentes LLM que permite asignación de crédito fina sin necesidad de crítico. El adaptador se entrena sobre el modelo base `yinita/ps4mas-sft-x5-single-ep3` y está diseñado específicamente para una topología de debate (PS-cold-debate), donde varios agentes interactúan para mejorar el razonamiento.
 
 La relevancia de este modelo radica en que representa un experimento de investigación en RL para agentes, utilizando una topología de debate y un juez externo (Bedrock Claude Sonnet 4.6) para evaluar las recompensas. El repositorio contiene únicamente los pesos del adaptador (0.1 GB), sin el optimizador ni el modelo base, lo que indica que es un artefacto de investigación más que un modelo listo para producción. No se proporcionan detalles sobre la arquitectura subyacente, el tamaño total de parámetros, la licencia o los idiomas soportados, lo que limita su uso directo en aplicaciones reales.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ú
 - VRAM estimada: no disponible. El adaptador LoRA es ligero (0.1 GB), pero el modelo base `yinita/ps4mas-sft-x5-single-ep3` requiere su propia VRAM, que no se especifica.
 - GPU recomendadas: no disponible. Depende del modelo base.
 - Compatibilidad con GPU de consumo: no se puede determinar sin conocer el modelo base.
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de HuggingFace sobre el modelo base. No se mencionan herramientas como vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con la librería `peft` de Hugging Face sobre el modelo base. No se mencionan herramientas como vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - yinita/gigpo-debate-sync2-w3c20-0805-r2-step100](https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step100)
+- [Hugging Face - yinita/gigpo-debate-sync2-w3c20-0805-r2-step100](https://huggingface.co/yinita/gigpo-debate-sync2-w3c20-0805-r2-step100)
 - [Paper GiGPO - Group-in-Group Policy Optimization for LLM Agent Training](https://arxiv.org/abs/2505.10978)
 - [Checkpoint relacionado - yinita/gigpo-multi-topo-sync2-w3c20-0729-debate-step40](https://huggingface.co/yinita/gigpo-multi-topo-sync2-w3c20-0729-debate-step40)

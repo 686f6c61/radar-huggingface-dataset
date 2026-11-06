@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 - VRAM estimada: al ser un adaptador LoRA de 18,5 millones de parametros sobre un modelo base de 1,5B, la inferencia en bfloat16 requiere aproximadamente 3-4 GB de VRAM para el modelo base mas margen para el adaptador y activaciones (estimacion; la model card no especifica VRAM de inferencia).
 - GPU de entrenamiento: una unica NVIDIA A10G (24 GB) fue suficiente, desplegada en Modal.
 - Cabe con holgura en GPUs de consumo tipo RTX 3060/4060 o superiores, dado el tamano del modelo base de 1,5B.
-- Despliegue: al usar la libreria peft con transformers, funciona con `PeftModel` estandar; la demo oficial esta en HuggingFace Spaces. No se menciona soporte especifico para vLLM, llama.cpp, Ollama o TGI (los adaptadores LoRA en formato PEFT no son directamente GGUF).
+- Despliegue: al usar la libreria peft con transformers, funciona con `PeftModel` estandar; la demo oficial esta en Hugging Face Spaces. No se menciona soporte especifico para vLLM, llama.cpp, Ollama o TGI (los adaptadores LoRA en formato PEFT no son directamente GGUF).
 - Latencia y throughput: no disponible en la informacion proporcionada; al ser clasificacion por logits sin generacion, la latencia por item deberia ser baja.
 
 ## Comparativa con modelos similares
@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/9mark9/fin-lora-news-qwen2.5-1.5b-adv
+- Modelo en Hugging Face: https://huggingface.co/9mark9/fin-lora-news-qwen2.5-1.5b-adv
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Demo Space: https://huggingface.co/spaces/9mark9/fin-lora-attack-demo
 - Codigo y write-up: https://github.com/shaikn6/fin-lora

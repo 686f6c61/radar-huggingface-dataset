@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Zhiyuan17/robocasa24-atomic-sgem-vla` es un checkpoint de evaluación de un experimento de investigación en robótica denominado SGeM-VLA (Semantic + Geometry + Motion Vision-Language-Action). Ha sido desarrollado por Zhiyuan Gao (usuario `Zhiyuan17` en HuggingFace) y se basa en el modelo oficial `pi0.5` de Physical Intelligence, convertido a FP32 y entrenado en precisión BF16. El objetivo es evaluar una política VLA en tareas atómicas del entorno doméstico RoboCasa, con un total de 24 tareas entrenadas conjuntamente.
+El modelo `Zhiyuan17/robocasa24-atomic-sgem-vla` es un checkpoint de evaluación de un experimento de investigación en robótica denominado SGeM-VLA (Semantic + Geometry + Motion Vision-Language-Action). Ha sido desarrollado por Zhiyuan Gao (usuario `Zhiyuan17` en Hugging Face) y se basa en el modelo oficial `pi0.5` de Physical Intelligence, convertido a FP32 y entrenado en precisión BF16. El objetivo es evaluar una política VLA en tareas atómicas del entorno doméstico RoboCasa, con un total de 24 tareas entrenadas conjuntamente.
 
 El modelo tiene 3.621.519.376 parámetros (aproximadamente 3,62 mil millones) y predice acciones con un horizonte de 50 pasos. El mejor checkpoint corresponde al paso de entrenamiento 28500 y alcanza un 63,42% de éxito en la evaluación formal (761 de 1200 episodios). Se trata de un modelo de investigación, no de propósito general, y los checkpoints publicados son solo exportaciones de evaluación, sin estado de optimizador ni capacidad de reanudar el entrenamiento.
 
@@ -87,7 +87,7 @@ No se han publicado comparativas con otros modelos en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zhiyuan17/robocasa24-atomic-sgem-vla
+- Modelo en Hugging Face: https://huggingface.co/Zhiyuan17/robocasa24-atomic-sgem-vla
 - Codigo del experimento (release): https://github.com/zhiyuan-gao/libero_task_related/tree/robocasa24-atomic-release
 - Herramientas de cache para RoboCasa Atomic-24: https://github.com/zhiyuan-gao/robocasa-atomic24-cache-tools
 - Dataset de entrenamiento: https://huggingface.co/Zhiyuan17/robocasa24-atomic-success100-256

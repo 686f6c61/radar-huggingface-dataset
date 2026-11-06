@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`henry202/tulu_reasoning_final` es un adaptador de ajuste fino publicado en HuggingFace por el usuario henry202. No se trata de un modelo completo, sino de un adaptador PEFT/LoRA que debe cargarse sobre el modelo base `allenai/Llama-3.1-Tulu-3-8B-SFT`. El repositorio ocupa aproximadamente 0,5 GB y contiene pesos en formato safetensors, lo que confirma que solo se distribuyen los parametros del adaptador y no los del modelo subyacente.
+`henry202/tulu_reasoning_final` es un adaptador de ajuste fino publicado en Hugging Face por el usuario henry202. No se trata de un modelo completo, sino de un adaptador PEFT/LoRA que debe cargarse sobre el modelo base `allenai/Llama-3.1-Tulu-3-8B-SFT`. El repositorio ocupa aproximadamente 0,5 GB y contiene pesos en formato safetensors, lo que confirma que solo se distribuyen los parametros del adaptador y no los del modelo subyacente.
 
 Las etiquetas del repositorio (`grpo`, `lora`, `trl`, `peft`) indican que el ajuste se realizo mediante aprendizaje por refuerzo con GRPO (Group Relative Policy Optimization) sobre una configuracion LoRA, un patron habitual en el entrenamiento de capacidades de razonamiento. El propio nombre del modelo ("tulu_reasoning_final") sugiere un objetivo centrado en mejorar el razonamiento, aunque la model card no aporta detalles sobre el procedimiento, los datos ni los resultados.
 
@@ -69,10 +69,10 @@ Las cifras siguientes son estimaciones estandar para un modelo de 8B de parametr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| henry202/tulu_reasoning_final (adaptador) | ~8,03B (base) + adaptador no especificado | no disponible | no disponible | no disponible | HuggingFace, 0 descargas |
-| allenai/Llama-3.1-Tulu-3-8B-SFT (base) | ~8,03B | 128 000 tokens | publicado por AI2 en su model card | licencia Tulu 3 (uso condicionado, segun AI2) | HuggingFace, ampliamente usado |
-| DeepSeek-R1-Distill-Llama-8B | ~8,03B | 128 000 tokens | resultados publicados de razonamiento | licencia DeepSeek/MIT (segun la version) | HuggingFace, muy difundido |
-| Meta-Llama-3.1-8B-Instruct | ~8,03B | 128 000 tokens | resultados publicados por Meta | Llama 3.1 Community License | HuggingFace, ampliamente usado |
+| henry202/tulu_reasoning_final (adaptador) | ~8,03B (base) + adaptador no especificado | no disponible | no disponible | no disponible | Hugging Face, 0 descargas |
+| allenai/Llama-3.1-Tulu-3-8B-SFT (base) | ~8,03B | 128 000 tokens | publicado por AI2 en su model card | licencia Tulu 3 (uso condicionado, segun AI2) | Hugging Face, ampliamente usado |
+| DeepSeek-R1-Distill-Llama-8B | ~8,03B | 128 000 tokens | resultados publicados de razonamiento | licencia DeepSeek/MIT (segun la version) | Hugging Face, muy difundido |
+| Meta-Llama-3.1-8B-Instruct | ~8,03B | 128 000 tokens | resultados publicados por Meta | Llama 3.1 Community License | Hugging Face, ampliamente usado |
 
 Los datos de rendimiento de las alternativas provienen de sus respectivas model cards publicas; para el modelo objeto de esta ficha no hay metricas comparables disponibles.
 
@@ -90,7 +90,7 @@ Los datos de rendimiento de las alternativas provienen de sus respectivas model 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/henry202/tulu_reasoning_final
+- Modelo en Hugging Face: https://huggingface.co/henry202/tulu_reasoning_final
 - Modelo base: https://huggingface.co/allenai/Llama-3.1-Tulu-3-8B-SFT
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL (usada para GRPO): https://github.com/huggingface/trl

@@ -99,9 +99,9 @@ El estudio no publica resultados de MMLU, HumanEval, GSM8K ni benchmarks general
 
 | Modelo | Parametros | Contexto | Acc (test) | ECE | Acc retenida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| jevify-smollm3-3b-sft-readout (este modelo) | LoRA de 30,2 M sobre SmolLM3-3B | No disponible | 0,705 | 0,057 | 0,738 | Apache-2.0 | HuggingFace, 0 descargas |
-| jevify-smollm3-3b-sft-readout-coh (misma receta + coherencia) | LoRA de 30,2 M sobre SmolLM3-3B | No disponible | 0,711 | 0,053 | 0,757 | Apache-2.0 | HuggingFace |
-| jevify-smollm3-3b-apo-readout (misma receta desde APO) | LoRA sobre SmolLM3-3B | No disponible | 0,705 | 0,058 | 0,741 | Apache-2.0 | HuggingFace |
+| jevify-smollm3-3b-sft-readout (este modelo) | LoRA de 30,2 M sobre SmolLM3-3B | No disponible | 0,705 | 0,057 | 0,738 | Apache-2.0 | Hugging Face, 0 descargas |
+| jevify-smollm3-3b-sft-readout-coh (misma receta + coherencia) | LoRA de 30,2 M sobre SmolLM3-3B | No disponible | 0,711 | 0,053 | 0,757 | Apache-2.0 | Hugging Face |
+| jevify-smollm3-3b-apo-readout (misma receta desde APO) | LoRA sobre SmolLM3-3B | No disponible | 0,705 | 0,058 | 0,741 | Apache-2.0 | Hugging Face |
 | SmolLM3-3B SFT checkpoint sin ajustar (Tier 0) | 3B | No disponible | 0,520 | 0,110 | 0,553 | No disponible | Referencia del estudio |
 | Jev 1.13.0 (TypeSafe API) | No disponible | No disponible | 0,733 | 0,113 | 0,835 | No disponible | API propietaria |
 
@@ -117,12 +117,12 @@ Los tres modelos de la familia jевify comparten backbone, receta y licencia, y
 - No se publican idiomas soportados ni resultados por idioma; se desconoce el comportamiento fuera del inglés de los conjuntos de evaluación.
 - No se documentan sesgos demográficos ni evaluaciones de seguridad específicas.
 - La licencia Apache-2.0 permite uso comercial, pero el backbone SmolLM3-3B se descarga desde su propio repositorio y su licencia debe verificarse por separado.
-- El repositorio no registra descargas ni interacciones, y no cuenta con pipeline declarado en HuggingFace, lo que limita la validación por terceros.
+- El repositorio no registra descargas ni interacciones, y no cuenta con pipeline declarado en Hugging Face, lo que limita la validación por terceros.
 - Las fechas de creación y actualización del repositorio son muy próximas entre sí (segundos de diferencia), lo que sugiere una publicación automatizada sin revisión posterior.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-readout
+- Modelo en Hugging Face: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-readout
 - Variante con penalización de coherencia: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-readout-coh
 - Variante desde el checkpoint APO: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout
 - Dataset de evaluación jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench

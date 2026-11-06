@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored es un modelo de lenguaje multimodal (imagen y texto) de la familia Qwen3, desarrollado por DavidAU como un fine-tune del modelo base `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. Se ha entrenado con técnicas propias denominadas «Cold Fusion», «GAIN Training» y «Multi-stage tuning», tal y como reflejan sus etiquetas. El modelo está diseñado con un enfoque "uncensored" (sin censura), lo que significa que ha sido ajustado para reducir restricciones de contenido, y es presentado como un recurso para "all use cases" (todos los casos de uso). Su tamaño de parámetros es de 27.781.427.952 (27B), con un pipeline image-text-to-text, lo que le permite procesar entradas visuales y textuales. El modelo se publica bajo licencia Apache-2.0, aunque está restringido (gated) y requiere aceptar condiciones en HuggingFace. Su relevancia radica en ser una alternativa multimodal de gran tamaño y sin filtros en el ecosistema open source, orientada a la experimentación y a la generación de contenido conversacional en inglés.
+DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored es un modelo de lenguaje multimodal (imagen y texto) de la familia Qwen3, desarrollado por DavidAU como un fine-tune del modelo base `DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU`. Se ha entrenado con técnicas propias denominadas «Cold Fusion», «GAIN Training» y «Multi-stage tuning», tal y como reflejan sus etiquetas. El modelo está diseñado con un enfoque "uncensored" (sin censura), lo que significa que ha sido ajustado para reducir restricciones de contenido, y es presentado como un recurso para "all use cases" (todos los casos de uso). Su tamaño de parámetros es de 27.781.427.952 (27B), con un pipeline image-text-to-text, lo que le permite procesar entradas visuales y textuales. El modelo se publica bajo licencia Apache-2.0, aunque está restringido (gated) y requiere aceptar condiciones en Hugging Face. Su relevancia radica en ser una alternativa multimodal de gran tamaño y sin filtros en el ecosistema open source, orientada a la experimentación y a la generación de contenido conversacional en inglés.
 
 ## Especificaciones técnicas
 
@@ -68,13 +68,13 @@ No se dispone de datos de contexto ni de benchmarks comparables para estos model
 - Riesgo de alucinación: al ser un modelo «uncensored», puede generar contenido que los modelos alineados normalmente rechazan, incluido material dañino, ofensivo o falso.
 - Limitaciones de idioma: solo se indica soporte para inglés (en), a pesar de su entrada multimodal.
 - Contexto: la longitud del contexto no está especificada, por lo que se desconoce su capacidad para manejar conversaciones largas o documentos extensos.
-- Acceso restringido: el modelo está marcado como gated en HuggingFace, lo que requiere aceptar condiciones de uso antes de descargarlo.
+- Acceso restringido: el modelo está marcado como gated en Hugging Face, lo que requiere aceptar condiciones de uso antes de descargarlo.
 - Limitaciones de licencia: aunque la licencia es Apache-2.0, el acceso gated puede imponer restricciones adicionales no documentadas en la ficha.
 - Falta de información de entrenamiento: no se ha publicar el detalle de datos, técnicas de alineación ni procedimientos de evaluación, lo que dificulta la validación independiente de su rendimiento.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Variante ULTRA-HERETIC: https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored
 - Variante GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF

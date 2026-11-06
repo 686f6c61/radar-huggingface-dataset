@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oytunistrator/olang-language-model
+- Hugging Face: https://huggingface.co/oytunistrator/olang-language-model
 - Referencia de O Language: https://onix-project.com/O_Language
 - Sitio de O-Lang (protocolo de orquestacion): https://www.olang.cloud/
 - Documentacion de O-Lang: https://www.olang.cloud/docs

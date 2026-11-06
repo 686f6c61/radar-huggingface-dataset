@@ -100,7 +100,7 @@ No se identifican en la información disponible modelos comparables de la misma 
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ZihanLiummyycc/FSG-RL-Main-GRPO
+- Adaptador en Hugging Face: https://huggingface.co/ZihanLiummyycc/FSG-RL-Main-GRPO
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Repositorio de código y registro de evaluación congelado: https://github.com/ZihanLiummyycc/FSG-RL
 

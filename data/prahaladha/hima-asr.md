@@ -105,7 +105,7 @@ No se han publicado resultados de WER comparativos entre Hima-ASR y estas altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Prahaladha/hima-asr
+- Modelo en Hugging Face: https://huggingface.co/Prahaladha/hima-asr
 - Archivo de licencia (NOTICE): https://huggingface.co/Prahaladha/hima-asr/blob/main/NOTICE
 - Modelo base Qwen/Qwen3-ASR-1.7B: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Modelo base google/gemma-3-270m: https://huggingface.co/google/gemma-3-270m

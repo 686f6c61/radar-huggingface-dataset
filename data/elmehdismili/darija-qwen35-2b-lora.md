@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Intent (8 sondas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ElmehdiSMILI/darija-qwen35-2b-lora | 1,881.825.088 reportados | no disponible | 6/8 | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-2B (base, sin adaptador) | ~2B (valor exacto no disponible) | no disponible | no disponible | no disponible | HuggingFace |
+| ElmehdiSMILI/darija-qwen35-2b-lora | 1,881.825.088 reportados | no disponible | 6/8 | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-2B (base, sin adaptador) | ~2B (valor exacto no disponible) | no disponible | no disponible | no disponible | Hugging Face |
 | Linea Qwen2.5-1.5B del mismo autor (v1/v2/v3) | ~1,5B | no disponible | 4/8 | no disponible | referencia interna citada en la model card |
 | Otros modelos de intent en dariya | no disponible | no disponible | no disponible | no disponible | la busqueda no aporto resultados relevantes |
 
@@ -97,6 +97,6 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ElmehdiSMILI/darija-qwen35-2b-lora
+- Repositorio Hugging Face: https://huggingface.co/ElmehdiSMILI/darija-qwen35-2b-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - La busqueda web realizada no devolvio enlaces relevantes (los resultados correspondian a contenido no relacionado con el modelo). No se dispone de URL de paper, blog, repositorio de codigo, demo ni del dossier de datos citado por el autor.

@@ -63,8 +63,8 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible u
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-DSpark-Gauss-NVFP4-W4A4 | 1.988.431.617 | no disponible | evaluacion pendiente | apache-2.0 | HuggingFace |
-| RedHatAI/Qwen3.8-27B-speculator.dspark | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen3.8-27B-DSpark-Gauss-NVFP4-W4A4 | 1.988.431.617 | no disponible | evaluacion pendiente | apache-2.0 | Hugging Face |
+| RedHatAI/Qwen3.8-27B-speculator.dspark | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 | EAGLE-3 / Medusa (drafters genericos) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento de este modelo, por lo que no es posible u
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-Gauss-NVFP4-W4A4
+- Hugging Face: https://huggingface.co/inference-optimization/Qwen3.8-27B-DSpark-Gauss-NVFP4-W4A4
 - Modelo base (especulador de origen): https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo base principal: https://huggingface.co/Qwen/Qwen3.8-27B

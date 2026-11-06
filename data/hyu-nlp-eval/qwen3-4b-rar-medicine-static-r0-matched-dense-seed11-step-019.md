@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento real f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-019
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-019
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Checkpoint hermano (OnlineRubrics, step 013): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-013
 - Checkpoint hermano (OnlineRubrics, step 003): https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-onlinerubrics-seed11-step-003

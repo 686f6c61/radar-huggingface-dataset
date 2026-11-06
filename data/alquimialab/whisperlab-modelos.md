@@ -6,7 +6,7 @@ whisperlab-modelos es un repositorio de pesos convertidos para reconocimiento au
 
 La variante principal corresponde a Whisper large-v3-turbo, con 808.904.208 parametros y un tamano de repositorio total de 2,8 GB. Se distribuye en dos formatos de despliegue: GGUF con cuantizacion Q8_0 (orientado a GPU con Vulkan) y CTranslate2 (motor principal para NVIDIA). La variante small cubre equipos mas modestos.
 
-El modelo es relevante para quienes necesitan transcripcion de audio en portugues e ingles sin depender de servicios en la nube, ya que los pesos se empaquetan en formatos que facilitan la ejecucion local y la verificacion de integridad por SHA-256. La licencia MIT heredada de OpenAI permite uso comercial. La adopcion publica en HuggingFace es muy baja (5 descargas, 0 likes), por lo que no existe validacion comunitaria significativa.
+El modelo es relevante para quienes necesitan transcripcion de audio en portugues e ingles sin depender de servicios en la nube, ya que los pesos se empaquetan en formatos que facilitan la ejecucion local y la verificacion de integridad por SHA-256. La licencia MIT heredada de OpenAI permite uso comercial. La adopcion publica en Hugging Face es muy baja (5 descargas, 0 likes), por lo que no existe validacion comunitaria significativa.
 
 ## Especificaciones tecnicas
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Formatos | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| whisperlab-modelos (large-v3-turbo) | 808.904.208 | GGUF Q8_0, CTranslate2 | pt, en | MIT | HuggingFace, 5 descargas |
-| OpenAI Whisper large-v3-turbo (base) | ~809 M (cifra de referencia publica) | safetensors, PyTorch | multilingue | MIT | GitHub / HuggingFace de OpenAI |
-| OpenAI Whisper small (base) | ~244 M (cifra de referencia publica) | safetensors, PyTorch | multilingue | MIT | GitHub / HuggingFace de OpenAI |
-| OpenAI Whisper large-v3 (base) | ~1.550 M (cifra de referencia publica) | safetensors, PyTorch | multilingue | MIT | GitHub / HuggingFace de OpenAI |
+| whisperlab-modelos (large-v3-turbo) | 808.904.208 | GGUF Q8_0, CTranslate2 | pt, en | MIT | Hugging Face, 5 descargas |
+| OpenAI Whisper large-v3-turbo (base) | ~809 M (cifra de referencia publica) | safetensors, PyTorch | multilingue | MIT | GitHub / Hugging Face de OpenAI |
+| OpenAI Whisper small (base) | ~244 M (cifra de referencia publica) | safetensors, PyTorch | multilingue | MIT | GitHub / Hugging Face de OpenAI |
+| OpenAI Whisper large-v3 (base) | ~1.550 M (cifra de referencia publica) | safetensors, PyTorch | multilingue | MIT | GitHub / Hugging Face de OpenAI |
 
 Los parametros de los modelos base se incluyen como cifras de referencia publica; no provienen de la informacion facilitada por el autor de este repositorio. Los resultados de rendimiento comparado no estan disponibles.
 
@@ -85,7 +85,7 @@ Los parametros de los modelos base se incluyen como cifras de referencia publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alquimialab/whisperlab-modelos
+- Hugging Face: https://huggingface.co/alquimialab/whisperlab-modelos
 - Repositorio original de OpenAI Whisper: https://github.com/openai/whisper
 - Licencia MIT de OpenAI Whisper: https://github.com/openai/whisper/blob/main/LICENSE
 - Proyecto WhisperLab (tercero, no relacionado con este repositorio): https://github.com/LiteObject/WhisperLab/blob/main/MODEL_GUIDE.md

@@ -4,7 +4,7 @@
 
 `berkeicel/pawz-h3-models` no es un modelo entrenado por su autor, sino un repositorio espejo que empaqueta copias sin modificar de los ficheros de MiniMax H3. En concreto, agrupa los checkpoints de difusión podados en int8/fp8 publicados por `Comfy-Org/MiniMax-H3`, los encoders de texto en nvfp4/int8, los VAE y un LoRA turbo de tipo ref2v, junto con el LoRA fl2v de 4 pasos de `lightx2v/Minimax-h3-Turbo` (licencia Apache-2.0). El conjunto ocupa 136,4 GB en el repositorio.
 
-La funcion declarada del repo es servir como cache de modelos para un despliegue serverless. Es decir, el valor que aporta no es una innovacion de modelado, sino la consolidacion en un unico identificador de HuggingFace de todos los pesos y adaptadores necesarios para ejecutar la pila de generacion de MiniMax H3 con diferentes niveles de cuantizacion.
+La funcion declarada del repo es servir como cache de modelos para un despliegue serverless. Es decir, el valor que aporta no es una innovacion de modelado, sino la consolidacion en un unico identificador de Hugging Face de todos los pesos y adaptadores necesarios para ejecutar la pila de generacion de MiniMax H3 con diferentes niveles de cuantizacion.
 
 Por el tipo de artefactos incluidos (checkpoints de difusion, VAE y encoders de texto, ademas de LoRAs de tipo referencia-a-video y primer/ultimo fotograma-a-video), la pila corresponde a un modelo generativo de difusion orientado a video, no a un modelo de lenguaje. La informacion disponible no incluye parametros, contexto, idiomas ni benchmarks, por lo que la mayor parte de la ficha se marca como no disponible.
 
@@ -40,7 +40,7 @@ No hay informacion sobre el entrenamiento: ni numero de tokens o de fotogramas, 
 
 ## Casos de uso
 
-- Cache de modelos serverless: es el proposito declarado del repositorio; un servicio de inferencia efimera puede apuntar a un unico identificador de HuggingFace en lugar de descargar los componentes de varias fuentes por separado.
+- Cache de modelos serverless: es el proposito declarado del repositorio; un servicio de inferencia efimera puede apuntar a un unico identificador de Hugging Face en lugar de descargar los componentes de varias fuentes por separado.
 - Pipeline texto-a-video en produccion: el encoder de texto, el VAE y el checkpoint de difusion viven en el mismo repo, lo que simplifica el aprovisionamiento y el versionado de artefactos.
 - Interpolacion entre fotogramas clave en postproduccion: el LoRA fl2v permite generar los fotogramas intermedios entre una imagen inicial y una final dadas, un flujo habitual para transiciones y animatica.
 - Generacion condicionada por referencia para publicidad o diseno: el LoRA ref2v admite guiar el video a partir de un elemento de referencia, util para mantener coherencia de estilo o de sujeto.
@@ -68,7 +68,7 @@ La informacion disponible no incluye datos de rendimiento ni especificaciones de
 
 | Modelo | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|
-| `berkeicel/pawz-h3-models` | Espejo de pesos de difusion (MiniMax H3) | MiniMax H3 Community License Agreement (repo); Apache-2.0 (LoRA fl2v) | HuggingFace, 136,4 GB, 0 descargas |
+| `berkeicel/pawz-h3-models` | Espejo de pesos de difusion (MiniMax H3) | MiniMax H3 Community License Agreement (repo); Apache-2.0 (LoRA fl2v) | Hugging Face, 136,4 GB, 0 descargas |
 | `Comfy-Org/MiniMax-H3` | Fuente original de los checkpoints | MiniMax H3 Community License Agreement | no disponible en detalle |
 | `lightx2v/Minimax-h3-Turbo` | LoRA turbo fl2v de 4 pasos | Apache-2.0 | no disponible en detalle |
 | Otros modelos de generacion de video | no disponible | no disponible | no disponible |
@@ -87,7 +87,7 @@ La informacion disponible no incluye datos de rendimiento ni especificaciones de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/berkeicel/pawz-h3-models
+- Repositorio en Hugging Face: https://huggingface.co/berkeicel/pawz-h3-models
 - Licencia referenciada en el repositorio: https://huggingface.co/berkeicel/pawz-h3-models/blob/main/LICENSE-MiniMax-H3
 - Fuente de los checkpoints de difusion y encoders: `Comfy-Org/MiniMax-H3` (identificador citado en la model card; URL no confirmada en los resultados de busqueda)
 - Fuente del LoRA turbo fl2v de 4 pasos: `lightx2v/Minimax-h3-Turbo` (identificador citado en la model card; URL no confirmada en los resultados de busqueda)

@@ -46,7 +46,7 @@ No disponible. No hay modelos comparables en este repositorio, ya que no es un m
 - No se dispone de información sobre sesgos, alucinación o limitaciones de contexto, ya que no existe un modelo.
 
 ## Enlaces
-- Repositorio de HuggingFace: https://huggingface.co/Poojashah33/paper_018105272_multimodal_generation
+- Repositorio de Hugging Face: https://huggingface.co/Poojashah33/paper_018105272_multimodal_generation
 - Referencia externa (paper relacionado sobre generación multimodal, no del mismo autor): https://arxiv.org/abs/2409.14993
 - PDF del paper relacionado: https://arxiv.org/pdf/2409.14993
 - Lista curada de papers multimodales: https://github.com/friedrichor/Awesome-Multimodal-Papers

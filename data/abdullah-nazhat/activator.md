@@ -4,7 +4,7 @@
 
 Activator es una propuesta de arquitectura de transformer para vision por computador desarrollada por Abdullah Nazhat Abdullah y Tarkan Aydin, que sustituye el mecanismo de atencion por producto escalado con softmax por una estructura basada en unidades lineales con compuerta (GLU) integradas dentro de un perceptron multicapa (MLP). El objetivo principal es reducir el coste computacional asociado al mecanismo de atencion tradicional, que requiere grandes capacidades de computo tanto en entrenamiento como en inferencia. Ademas, la arquitectura elimina el segundo MLP no compurado del diseno estandar del transformer, lo que reduce aun mas la carga computacional.
 
-Los resultados experimentales presentados en el articulo muestran un rendimiento competitivo en comparacion con las arquitecturas de referencia, lo que respalda la viabilidad de la propuesta. El trabajo se publica en arXiv (2405.15953) y esta disponible bajo licencia BSD-3-Clause, tanto en HuggingFace como en GitHub. La relevancia de este trabajo radica en la creciente demanda de arquitecturas de vision mas eficientes, especialmente en entornos con recursos de computo limitados o en aplicaciones de vision en tiempo real.
+Los resultados experimentales presentados en el articulo muestran un rendimiento competitivo en comparacion con las arquitecturas de referencia, lo que respalda la viabilidad de la propuesta. El trabajo se publica en arXiv (2405.15953) y esta disponible bajo licencia BSD-3-Clause, tanto en Hugging Face como en GitHub. La relevancia de este trabajo radica en la creciente demanda de arquitecturas de vision mas eficientes, especialmente en entornos con recursos de computo limitados o en aplicaciones de vision en tiempo real.
 
 ## Especificaciones tecnicas
 
@@ -37,7 +37,7 @@ Los detalles del entrenamiento (numero de tokens, composicion del dataset, uso d
 
 - Clasificacion de imagenes en entornos de borde: la eliminacion del mecanismo de atencion reduce el coste computacional, permitiendo ejecutar inferencia en dispositivos con recursos limitados como Raspberry Pi o hardware de bajo consumo.
 - Sistemas de vision en tiempo real: la menor carga computacional se traduce en menor latencia, adecuada para aplicaciones de videovigilancia, inspeccion industrial o navegacion autonomica.
-- Prototipado academico e investigacion: el repositorio en GitHub y HuggingFace permite experimentar con arquitecturas alternativas al mecanismo de atencion en entornos docentes o de investigacion.
+- Prototipado academico e investigacion: el repositorio en GitHub y Hugging Face permite experimentar con arquitecturas alternativas al mecanismo de atencion en entornos docentes o de investigacion.
 - Desarrollo de modelos multimodales ligeros: la arquitectura puede integrarse como componente de vision en sistemas multimodales donde el coste computacional sea critico.
 - Transferencia de aprendizaje en dominios con datos limitados: la eficiencia computacional facilita el ajuste fino en tareas de vision especificas sin necesidad de infraestructura de gran escala.
 - Evaluacion de arquitecturas eficientes en produccion: sirve como punto de referencia para comparar el rendimiento y el coste de alternativas al transformer convencional en pipelines de vision.
@@ -64,11 +64,11 @@ No se dispone de informacion comparativa con modelos similares en los datos prop
 - La informacion sobre sesgos o riesgos de alucinacion no es aplicable de la misma forma que en LLMs, pero no se ha realizado una evaluacion de sesgos sobre el modelo.
 - La licencia BSD-3-Clause permite uso comercial y modificacion con atribucion, pero conviene revisar los terminos completos en el repositorio.
 - No se han certificado resultados de benchmarks cuantitativos en la informacion disponible, por lo que el rendimiento real en tareas especificas requiere validacion propia.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que indica que es un recurso reciente o poco difundido; se recomienda verificar la estabilidad del codigo antes de usarlo en produccion.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que indica que es un recurso reciente o poco difundido; se recomienda verificar la estabilidad del codigo antes de usarlo en produccion.
 
 ## Enlaces
 
-- [HuggingFace - Abdullah-Nazhat/Activator](https://huggingface.co/Abdullah-Nazhat/Activator)
+- [Hugging Face - Abdullah-Nazhat/Activator](https://huggingface.co/Abdullah-Nazhat/Activator)
 - [GitHub - Abdullah-88/Activator](https://github.com/Abdullah-88/Activator)
 - [arXiv - 2405.15953](https://arxiv.org/abs/2405.15953)
 - [arXiv HTML - v2](https://arxiv.org/html/2405.15953v2)

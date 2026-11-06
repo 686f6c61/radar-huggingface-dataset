@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ARIEL-3B-Q4 es un modelo publicado en HuggingFace por el usuario Gnamouke bajo licencia MIT. El identificador sugiere un modelo de aproximadamente 3.000 millones de parametros distribuido en cuantizacion Q4, presumiblemente en formato GGUF, aunque la model card no confirma explicitamente ni el tamano exacto, ni el formato de pesos, ni la arquitectura subyacente. La ficha de HuggingFace no incluye pipeline declarado, idiomas soportados ni descripcion funcional alguna.
+ARIEL-3B-Q4 es un modelo publicado en Hugging Face por el usuario Gnamouke bajo licencia MIT. El identificador sugiere un modelo de aproximadamente 3.000 millones de parametros distribuido en cuantizacion Q4, presumiblemente en formato GGUF, aunque la model card no confirma explicitamente ni el tamano exacto, ni el formato de pesos, ni la arquitectura subyacente. La ficha de Hugging Face no incluye pipeline declarado, idiomas soportados ni descripcion funcional alguna.
 
 La informacion disponible es extremadamente limitada: la model card se reduce a la declaracion de licencia MIT, sin secciones de arquitectura, entrenamiento, benchmarks, uso previsto o limitaciones. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que indica que se trata de una publicacion reciente y sin adopcion verificable por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha se limita a documentar los pocos metadatos objetivos dispo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo MoE, una arquitectura hibrida o cualquier otra variante. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 El sufijo "Q4" en el identificador sugiere que el autor ha distribuido una version cuantizada a 4 bits del modelo original, pero no se especifica el metodo de cuantizacion (GPTQ, AWQ, GGUF Q4_K_M, Q4_0, etc.) ni se enlaza el modelo base sin cuantizar. Sin esa informacion no es posible evaluar la fidelidad de la cuantizacion respecto al modelo original.
 
@@ -85,4 +85,4 @@ No es posible establecer una comparativa fiable sin conocer la arquitectura, el 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Gnamouke/ARIEL-3B-Q4
+- Repositorio Hugging Face: https://huggingface.co/Gnamouke/ARIEL-3B-Q4

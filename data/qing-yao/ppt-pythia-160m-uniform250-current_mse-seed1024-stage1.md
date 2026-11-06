@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage1` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de HuggingFace `qing-yao`. Se trata de un modelo de lenguaje decoder-only de la familia GPT-NeoX, con 85.071.360 parametros declarados en el indice de safetensors, licencia Apache-2.0 y pipeline de `text-generation`. El repositorio ocupa 2,6 GB e incluye pesos en formato safetensors compatibles con la libreria `transformers` y con Text Generation Inference.
+`qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage1` es un ajuste fino (fine-tune) del modelo base `EleutherAI/pythia-160m`, publicado por el usuario de Hugging Face `qing-yao`. Se trata de un modelo de lenguaje decoder-only de la familia GPT-NeoX, con 85.071.360 parametros declarados en el indice de safetensors, licencia Apache-2.0 y pipeline de `text-generation`. El repositorio ocupa 2,6 GB e incluye pesos en formato safetensors compatibles con la libreria `transformers` y con Text Generation Inference.
 
-La relevancia de esta publicacion es limitada y de caracter experimental: la model card esta generada automaticamente por el `Trainer` de HuggingFace, no documenta el conjunto de datos de entrenamiento, no declara idiomas soportados y no incluye resultados de evaluacion (el campo `model-index` contiene una lista de resultados vacia). La nomenclatura del repositorio (`uniform250`, `current_mse`, `stage1`) sugiere un experimento de compresion o poda estructurada por etapas, aunque esto no se confirma en ninguna parte de la documentacion publicada.
+La relevancia de esta publicacion es limitada y de caracter experimental: la model card esta generada automaticamente por el `Trainer` de Hugging Face, no documenta el conjunto de datos de entrenamiento, no declara idiomas soportados y no incluye resultados de evaluacion (el campo `model-index` contiene una lista de resultados vacia). La nomenclatura del repositorio (`uniform250`, `current_mse`, `stage1`) sugiere un experimento de compresion o poda estructurada por etapas, aunque esto no se confirma en ninguna parte de la documentacion publicada.
 
 Por tanto, la ficha debe leerse como la de un artefacto de investigacion reproducible (se conocen todos los hiperparametros y el seed), no como un modelo listo para produccion. Su tamano reducido lo hace util para pruebas de infraestructura de inferencia, docencia y experimentos de ajuste fino sobre GPU de consumo, pero carece de la documentacion, evaluacion y garantias minimas que se exigen a un modelo desplegado en un producto real.
 
@@ -34,12 +34,12 @@ Nota sobre el recuento de parametros: el indice de safetensors declara 85.071.36
 
 El modelo hereda la arquitectura del base: un transformer decoder-only de estilo GPT-NeoX, con atencion causal y sin mecanismos adicionales declarados (no hay indicios de MoE, SSM ni arquitectura hibrida). No se documenta en la model card ninguna innovacion tecnica sobre el base, ni decodificacion especulativa, ni atencion lineal, ni cambios en el tokenizador.
 
-El entrenamiento se realizo con el `Trainer` de HuggingFace sobre un dataset no identificado ("on an unknown dataset", segun la propia model card). Los hiperparametros declarados son: learning rate 0.001, `train_batch_size` 16, `eval_batch_size` 16, `gradient_accumulation_steps` 2, tamano de batch efectivo 32, optimizador `ADAMW_TORCH_FUSED` con betas (0.9, 0.999) y epsilon 1e-08, scheduler `cosine_with_min_lr` con 13 pasos de warmup, seed 1024 y un total de 250 pasos de entrenamiento. Las versiones de framework empleadas son Transformers 5.4.0, PyTorch 2.8.0+cu128, Datasets 3.2.0 y Tokenizers 0.22.1. No se declara el uso de RLHF, DPO ni ninguna fase de alineacion posterior; tampoco se identifica la composicion del dataset ni el numero de tokens de entrenamiento.
+El entrenamiento se realizo con el `Trainer` de Hugging Face sobre un dataset no identificado ("on an unknown dataset", segun la propia model card). Los hiperparametros declarados son: learning rate 0.001, `train_batch_size` 16, `eval_batch_size` 16, `gradient_accumulation_steps` 2, tamano de batch efectivo 32, optimizador `ADAMW_TORCH_FUSED` con betas (0.9, 0.999) y epsilon 1e-08, scheduler `cosine_with_min_lr` con 13 pasos de warmup, seed 1024 y un total de 250 pasos de entrenamiento. Las versiones de framework empleadas son Transformers 5.4.0, PyTorch 2.8.0+cu128, Datasets 3.2.0 y Tokenizers 0.22.1. No se declara el uso de RLHF, DPO ni ninguna fase de alineacion posterior; tampoco se identifica la composicion del dataset ni el numero de tokens de entrenamiento.
 
 ## Capacidades
 
 - Generacion de texto autoregresiva: es la unica capacidad explicitamente declarada por el pipeline (`text-generation`) y por los tags del repositorio.
-- Compatibilidad con `text-generation-inference` y `endpoints_compatible`: puede servirse con el stack de TGI y con endpoints compatibles con la API de inferencia de HuggingFace.
+- Compatibilidad con `text-generation-inference` y `endpoints_compatible`: puede servirse con el stack de TGI y con endpoints compatibles con la API de inferencia de Hugging Face.
 - Razonamiento, matematicas y generacion de codigo: no hay evidencias ni evaluaciones publicadas; con 85 millones de parametros declarados y sin ajuste por instrucciones documentado, la fiabilidad esperada en estas tareas es muy baja.
 - Tool calling / function calling: no disponible; no se documenta plantilla de chat, formato de herramientas ni entrenamiento orientado a agentes.
 - Capacidades de agente y razonamiento multi-paso: no disponible.
@@ -109,7 +109,7 @@ Frente a estos modelos, la diferencia no esta en la arquitectura ni en el rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage1
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-current_mse-seed1024-stage1
 - Modelo base: https://huggingface.co/EleutherAI/pythia-160m
 - Repositorio de la suite Pythia (EleutherAI): https://github.com/EleutherAI/pythia
 - Paper de Pythia: "Pythia: A Suite for Analyzing Large Language Models Across Training and Scaling", https://arxiv.org/abs/2304.01373

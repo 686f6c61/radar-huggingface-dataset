@@ -24,7 +24,7 @@ Su relevancia es doble. Por un lado, demuestra que un único conjunto de pesos p
 | Salida | Velocidad media 3D en sistema de cuerpo `(vx, vy, vz)` en m/s |
 | Morfologías soportadas | Coche, cuadrúpedo, dron, handheld |
 | Autor | CunYv |
-| Publicación en HuggingFace | 13 de septiembre de 2026 (actualizado el 14 de septiembre de 2026) |
+| Publicación en Hugging Face | 13 de septiembre de 2026 (actualizado el 14 de septiembre de 2026) |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -117,7 +117,7 @@ No se han encontrado en la búsqueda web resultados relevantes sobre este modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CunYv/tartanimu-challenge-unified
+- Modelo en Hugging Face: https://huggingface.co/CunYv/tartanimu-challenge-unified
 - Paquete oficial TartanIMU: https://github.com/superxslam/TartanIMU
 - Licencia del paquete vendorizado: fichero `TARTANIMU_LICENSE` dentro del repositorio del modelo
 - Ficheros incluidos en el repositorio: `checkpoint.pt`, `router_model.py`, `infer.py`, `config/unified.yaml`, `config/resnet_lstm_multihead.yaml`, directorio `tartan_imu/`

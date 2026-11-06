@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robertdavies/paper_019492307_grounded_language` es un repositorio de HuggingFace que contiene un documento académico en formato Markdown sobre el tema de "grounded language" (lenguaje fundamentado). No se trata de un modelo de IA entrenado, sino de un manuscrito científico con estructura de artículo para conferencia (LaTeX CVPR), con secciones de abstract, introducción, preliminares, método, experimentos y discusión. El autor, robertdavies, lo publicó bajo licencia MIT, aunque el contenido es un texto teórico y no un artefacto ejecutable.
+`robertdavies/paper_019492307_grounded_language` es un repositorio de Hugging Face que contiene un documento académico en formato Markdown sobre el tema de "grounded language" (lenguaje fundamentado). No se trata de un modelo de IA entrenado, sino de un manuscrito científico con estructura de artículo para conferencia (LaTeX CVPR), con secciones de abstract, introducción, preliminares, método, experimentos y discusión. El autor, robertdavies, lo publicó bajo licencia MIT, aunque el contenido es un texto teórico y no un artefacto ejecutable.
 
 Este repositorio no ofrece pesos, tokenizador ni pipeline de inferencia. Su relevancia radica únicamente en el contenido del paper, que aborda la fundamentación del lenguaje (grounded language) desde una perspectiva teórica y rigurosa. Dado que no hay modelo, no es aplicable a tareas de generación, razonamiento o procesamiento de lenguaje natural en producción. El repositorio tiene 0 descargas y 0 likes, y fue creado el 22 de agosto de 2026.
 
@@ -60,5 +60,5 @@ No disponible. No hay un modelo comparable porque el repositorio no contiene un 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/robertdavies/paper_019492307_grounded_language
+- Repositorio en Hugging Face: https://huggingface.co/robertdavies/paper_019492307_grounded_language
 - No se han encontrado otros enlaces (papers externos, repos de código o demos) en la busqueda web.

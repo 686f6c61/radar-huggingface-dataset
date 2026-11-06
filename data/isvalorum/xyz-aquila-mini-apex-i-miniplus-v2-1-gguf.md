@@ -103,6 +103,6 @@ La comparación se limita a las variantes del mismo modelo base documentadas por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base: https://huggingface.co/XYZAILab/XYZ-Aquila-mini
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre el modelo, su arquitectura o sus benchmarks: únicamente aparecieron sitios de letras de canciones (AZLyrics, Genius, Lyrics.com, LyricsTraining, LyricFinder), sin relación con el contenido de esta ficha. No se dispone, por tanto, de enlaces a papers, blogs técnicos, repositorios de código ni demos adicionales.

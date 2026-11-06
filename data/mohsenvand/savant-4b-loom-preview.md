@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Savant-4B Loom Preview | 4B | No disponible | ONNX 4 bits | Propietaria (`savant-proprietary`) | HuggingFace, ejecución en navegador |
-| Qwen3-4B (base) | 4B | No disponible en esta ficha | Safetensors y otros | Apache 2.0 | HuggingFace |
-| Otros finetunes de Qwen3-4B | 4B | No disponible | Variable | Variable | HuggingFace |
+| Savant-4B Loom Preview | 4B | No disponible | ONNX 4 bits | Propietaria (`savant-proprietary`) | Hugging Face, ejecución en navegador |
+| Qwen3-4B (base) | 4B | No disponible en esta ficha | Safetensors y otros | Apache 2.0 | Hugging Face |
+| Otros finetunes de Qwen3-4B | 4B | No disponible | Variable | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos en la información proporcionada.
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativos en la información proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohsenvand/savant-4b-loom-preview
+- Modelo en Hugging Face: https://huggingface.co/mohsenvand/savant-4b-loom-preview
 - Demo en navegador: https://neovand.github.io/polyformer/interpreter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B

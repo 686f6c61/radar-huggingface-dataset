@@ -64,7 +64,7 @@ La única métrica de rendimiento publicada es la evolución de la pérdida de v
 - VRAM estimada para inferencia: los 4.14B parámetros en bfloat16 ocupan aproximadamente 8,3 GB. Considerando las activaciones y buffers de imágenes, se estima que se necesitan al menos 16 GB de VRAM para una ejecución estable.
 - GPU recomendadas: no se han publicado requisitos específicos. Para 16-24 GB de VRAM, una NVIDIA RTX 4090 (24 GB) sería adecuada; en servidores, una GPU con 40 GB o más ofrecería margen.
 - En GPUs de consumo, podría ejecutarse en una RTX 4090 o superior. GPUs con 12 GB o menos probablemente no sean suficientes sin cuantización, que no está documentada.
-- Opciones de despliegue: la vía documentada es la librería LeRobot de HuggingFace, usando `PI05Policy.from_pretrained`. No se han documentado integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la vía documentada es la librería LeRobot de Hugging Face, usando `PI05Policy.from_pretrained`. No se han documentado integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares

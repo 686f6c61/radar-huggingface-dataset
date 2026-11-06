@@ -76,7 +76,7 @@ Las tres alternativas pertenecen a la misma familia LittleKedi, comparten tokeni
 - No se documenta soporte de tool calling, agentes ni modos especiales, por lo que no debe asumirse en integraciones.
 
 ## Enlaces
-- Repositorio HuggingFace (GGUF): https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-instruct-GGUF
 - Modelo base (safetensors): https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-instruct
 - Modelo de preentrenamiento: https://huggingface.co/edededdy/LittleKedi-medium-wide-sparse-base
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

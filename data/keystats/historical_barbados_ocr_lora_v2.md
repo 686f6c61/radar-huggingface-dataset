@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keystats/historical_barbados_ocr_lora_v2` es un repositorio publicado en HuggingFace por el usuario keystats cuya model card es la plantilla automática de transformers, sin ningún campo completado: no se declara autoría real, tipo de modelo, idiomas, licencia ni detalles de entrenamiento. El identificador sugiere un adaptador LoRA orientado a reconocimiento óptico de caracteres (OCR) sobre documentos históricos de Barbados, pero esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada por ninguna documentación oficial.
+`keystats/historical_barbados_ocr_lora_v2` es un repositorio publicado en Hugging Face por el usuario keystats cuya model card es la plantilla automática de transformers, sin ningún campo completado: no se declara autoría real, tipo de modelo, idiomas, licencia ni detalles de entrenamiento. El identificador sugiere un adaptador LoRA orientado a reconocimiento óptico de caracteres (OCR) sobre documentos históricos de Barbados, pero esta interpretación procede únicamente de la nomenclatura del repositorio y no está confirmada por ninguna documentación oficial.
 
 Los metadatos públicos indican que el repositorio usa la librería transformers, etiqueta safetensors y `endpoints_compatible`, y que su tamano es de 0.0 GB, lo que resulta compatible con un adaptador de bajo rango o con un repositorio que no contiene pesos efectivos. Registra 0 descargas y 0 "likes" en el momento de la consulta, y las fechas de creación y actualización (16 de septiembre de 2026) difieren en apenas cuatro segundos, señal de una subida automatizada sin mantenimiento posterior.
 
@@ -31,7 +31,7 @@ En su estado actual no es posible evaluar el modelo: no hay especificaciones, ni
 
 ## Arquitectura y entrenamiento
 
-No hay información disponible. La model card publicada es la plantilla por defecto de HuggingFace con todos los apartados marcados como `[More Information Needed]`, incluyendo arquitectura y objetivo, datos de entrenamiento, preprocesado, hiperparámetros, régimen de precisión (fp32, fp16, bf16, fp8) y coste computacional. No se indica si hubo ajuste fino supervisado, RLHF, DPO u otro procedimiento.
+No hay información disponible. La model card publicada es la plantilla por defecto de Hugging Face con todos los apartados marcados como `[More Information Needed]`, incluyendo arquitectura y objetivo, datos de entrenamiento, preprocesado, hiperparámetros, régimen de precisión (fp32, fp16, bf16, fp8) y coste computacional. No se indica si hubo ajuste fino supervisado, RLHF, DPO u otro procedimiento.
 
 El único indicio técnico es el identificador del repositorio, que contiene el sufijo `lora_v2` y el término `ocr`. Si se confirmara, implicaría un adaptador de bajo rango sobre un modelo base no declarado, destinado a transcripción de documentos históricos de Barbados. Ni el modelo base, ni el rango del adaptador, ni el conjunto de datos de ajuste, ni el número de tokens de entrenamiento están documentados en la información proporcionada.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM para inferencia: no disponible. Depende por completo del modelo base, que no se declara. Si se trata de un adaptador LoRA, los pesos del adaptador suelen ocupar del orden de decenas a unos pocos cientos de megabytes, pero la memoria necesaria la determina el modelo base.
 - GPU recomendadas: no disponible por la misma razón. No es posible recomendar A100, H100, RTX 4090 u otras sin conocer el tamano del modelo base.
 - Compatibilidad con GPU de consumo: no disponible.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no se documenta ningún motor concreto (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM). Para OCR sobre imágenes se requeriría además un pipeline con procesamiento visual, no solo decodificación de texto.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no se documenta ningún motor concreto (vLLM, llama.cpp, Ollama, TGI, TensorRT-LLM). Para OCR sobre imágenes se requeriría además un pipeline con procesamiento visual, no solo decodificación de texto.
 - Latencia y throughput: no disponible.
 - Nota operativa: con un tamano de repositorio de 0.0 GB, es posible que los pesos no estén realmente alojados o que se trate de un repositorio vacío o casi vacío, lo que impediría cualquier despliegue directo.
 
@@ -87,7 +87,7 @@ No disponible. Sin conocer el modelo base ni la tarea exacta, no es posible cons
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/keystats/historical_barbados_ocr_lora_v2
+- Repositorio en Hugging Face: https://huggingface.co/keystats/historical_barbados_ocr_lora_v2
 - Referencia arXiv 1910.09700: https://arxiv.org/abs/1910.09700 — corresponde a Lacoste et al. (2019), "Quantifying the Carbon Emissions of Machine Learning", citado por la plantilla de model card; no es un artículo sobre este modelo.
 - Calculadora de impacto medioambiental en aprendizaje automático: https://mlco2.github.io/impact
 - Resultados de búsqueda web: los enlaces recuperados (RGE ALTI del IGN francés, catalogue.open-datara.fr, lapiboulade.fr, georezo.net, sig-gr.eu) tratan sobre modelos digitales de terreno y datos geográficos de Francia y no guardan relación con este modelo. No se han encontrado papers, blogs, repositorios ni demos asociados.

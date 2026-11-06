@@ -67,9 +67,9 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed455
+- Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-nld-baseline-ckpt500_seed455
 - Modelo base: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-nld-baseline-100mb_seed455
 - Weights & Biases (entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/cp1lcnfy
-- Variantes relacionadas en HuggingFace: https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-heavy-baseline-ckpt500_seed3407
+- Variantes relacionadas en Hugging Face: https://huggingface.co/fpadovani/nld-100mb-after-newlexicon-zipf-nld-heavy-baseline-ckpt500_seed3407
 - Despliegue en FriendliAI (variante similar): https://friendli.ai/models/fpadovani/nld-100mb-after-newlexicon-zipf-nld-heavy-baseline-ckpt500_seed3407
 - Información en OpenModelMap: https://openmodelmap.com/model/fpadovani/nld-latn-100mb-100mb_seed3407

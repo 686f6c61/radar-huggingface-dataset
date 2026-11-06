@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FloMo (este) | LoRA sobre DiT de vídeo para forward-dynamics y acción | 646 MB de adaptadores sobre backbone de 5B | no disponible | MIT (base Apache-2.0) | HuggingFace, 0 descargas |
-| Wan2.2-TI2V-5B | DiT texto-imagen-a-vídeo | 5B | no disponible | Apache-2.0 | HuggingFace (modelo base) |
+| FloMo (este) | LoRA sobre DiT de vídeo para forward-dynamics y acción | 646 MB de adaptadores sobre backbone de 5B | no disponible | MIT (base Apache-2.0) | Hugging Face, 0 descargas |
+| Wan2.2-TI2V-5B | DiT texto-imagen-a-vídeo | 5B | no disponible | Apache-2.0 | Hugging Face (modelo base) |
 | MolmoAct2 | Política de robot (fuente de datos de acción) | no disponible | no disponible | no disponible | no disponible |
 | RealYAM | Datos de robot y vídeo humano (fuente de datos) | no disponible | no disponible | no disponible | no disponible |
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre FloMo y otras políticas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shitijgovil/FloMo
+- Hugging Face: https://huggingface.co/shitijgovil/FloMo
 - Código: https://github.com/pairlab/flomo
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Paper: no disponible en la información proporcionada

@@ -106,7 +106,7 @@ La ventaja principal frente a los modelos basados en Whisper o Parakeet es el or
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivrit-ai/zipformer2-66m-streaming-he
+- Modelo en Hugging Face: https://huggingface.co/ivrit-ai/zipformer2-66m-streaming-he
 - Repositorio original (espejo base): https://huggingface.co/thewh1teagle/zipformer2-66m-streaming-he
 - Modelo base en inglés: https://huggingface.co/Zengwei/icefall-asr-librispeech-streaming-zipformer-2023-05-17
 - Leaderboard de transcripción en hebreo de ivrit.ai: https://huggingface.co/spaces/ivrit-ai/hebrew-transcription-leaderboard
@@ -115,4 +115,4 @@ La ventaja principal frente a los modelos basados en Whisper o Parakeet es el or
 - icefall (framework de entrenamiento): https://github.com/k2-fsa/icefall
 - sherpa-onnx (runtime de despliegue): https://github.com/k2-fsa/sherpa-onnx
 
-Nota: la búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo distintos de los ya incluidos en la información de HuggingFace; los resultados obtenidos corresponden a repositorios de plugins sin relación con el modelo.
+Nota: la búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo distintos de los ya incluidos en la información de Hugging Face; los resultados obtenidos corresponden a repositorios de plugins sin relación con el modelo.

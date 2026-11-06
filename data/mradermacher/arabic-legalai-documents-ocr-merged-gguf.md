@@ -31,7 +31,7 @@ La relevancia de esta publicación es práctica: permite desplegar un modelo de 
 
 No se dispone de información técnica sobre la arquitectura del modelo base en el material proporcionado. Los únicos indicios son indirectos: la presencia de dos ficheros `mmproj` (proyector multimodal en Q8_0 y f16) confirma que el modelo procesa entrada visual además de texto, y la etiqueta `conversational` junto con `transformers` sugiere un modelo generativo instruido. No se especifica si emplea atención lineal, mezcla de expertos, SSM o cualquier otra variante; tampoco se documenta el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de RLHF, DPO u otra alineación.
 
-Respecto a la parte que sí documenta este repositorio, se trata de una cuantización estática generada por mradermacher con `quantize_version: 2`, conversión desde pesos HuggingFace y cuantización de tensores de salida activada. El autor no ha publicado variantes ponderadas con matriz de importancia (imatrix), que suelen ofrecer mejor relación calidad/tamaño en los niveles bajos de bits. Como innovación destacable solo cabe señalar la inclusión del proyector multimodal en formato GGUF, lo que permite ejecutar el modelo completo (visión + lenguaje) dentro del ecosistema llama.cpp.
+Respecto a la parte que sí documenta este repositorio, se trata de una cuantización estática generada por mradermacher con `quantize_version: 2`, conversión desde pesos Hugging Face y cuantización de tensores de salida activada. El autor no ha publicado variantes ponderadas con matriz de importancia (imatrix), que suelen ofrecer mejor relación calidad/tamaño en los niveles bajos de bits. Como innovación destacable solo cabe señalar la inclusión del proyector multimodal en formato GGUF, lo que permite ejecutar el modelo completo (visión + lenguaje) dentro del ecosistema llama.cpp.
 
 ## Capacidades
 
@@ -75,8 +75,8 @@ No se dispone de datos de rendimiento ni de contexto que permitan una comparaci�
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nadanedon/arabic-legalAI-documents-ocr-merged (base) | 3,88 B | no disponible | safetensors | no disponible | HuggingFace |
-| mradermacher/arabic-legalAI-documents-ocr-merged-GGUF (esta ficha) | 3,88 B | no disponible | GGUF + mmproj | no disponible | HuggingFace |
+| nadanedon/arabic-legalAI-documents-ocr-merged (base) | 3,88 B | no disponible | safetensors | no disponible | Hugging Face |
+| mradermacher/arabic-legalAI-documents-ocr-merged-GGUF (esta ficha) | 3,88 B | no disponible | GGUF + mmproj | no disponible | Hugging Face |
 | Alternativas de OCR documental de tamaño comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias

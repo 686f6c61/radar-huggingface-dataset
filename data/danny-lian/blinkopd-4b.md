@@ -94,7 +94,7 @@ No se dispone de comparaciones numéricas con otros modelos de la misma categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danny-Lian/BlinkOPD-4B
+- Modelo en Hugging Face: https://huggingface.co/Danny-Lian/BlinkOPD-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de destilación: https://huggingface.co/datasets/Danny-Lian/Vision-OPD-6K-Decontaminated
 - Código de entrenamiento y evaluación (BlinkOPD): no disponible como enlace directo en la información proporcionada

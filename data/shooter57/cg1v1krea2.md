@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shooter57/cg1v1krea2 es un LoRA (Low-Rank Adaptation) de texto a imagen desarrollado por el usuario Shooter57, diseñado como un ajuste fino sobre el modelo base Krea/Krea-2-Raw. El modelo se publica en HuggingFace bajo la librería diffusers y se activa mediante el prompt de instancia `cg1`, que debe incluirse en la generación para obtener el estilo deseado. El repositorio tiene un tamaño de 0,2 GB, lo que es típico de un LoRA de dimensiones moderadas, aunque no se especifica el rango de adaptación ni el número de parámetros entrenados.
+Shooter57/cg1v1krea2 es un LoRA (Low-Rank Adaptation) de texto a imagen desarrollado por el usuario Shooter57, diseñado como un ajuste fino sobre el modelo base Krea/Krea-2-Raw. El modelo se publica en Hugging Face bajo la librería diffusers y se activa mediante el prompt de instancia `cg1`, que debe incluirse en la generación para obtener el estilo deseado. El repositorio tiene un tamaño de 0,2 GB, lo que es típico de un LoRA de dimensiones moderadas, aunque no se especifica el rango de adaptación ni el número de parámetros entrenados.
 
 La relevancia de este modelo radica en su naturaleza como adaptación de un modelo base de difusión de nueva generación (Krea-2-Raw), orientado a personalizar el estilo de generación sin necesidad de reentrenar el modelo completo. Sin embargo, la información publicada es extremadamente limitada: no hay detalles sobre el conjunto de entrenamiento, la metodología, la licencia ni los idiomas soportados. Esto dificulta su evaluación rigurosa para casos de producción, aunque puede ser útil para usuarios que deseen experimentar con el estilo `cg1` sobre la base de Krea-2-Raw.
 
@@ -69,7 +69,7 @@ No disponible. No se han encontrado modelos comparables con la misma base (Krea-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shooter57/cg1v1krea2
+- Modelo en Hugging Face: https://huggingface.co/Shooter57/cg1v1krea2
 - Modelo base Krea/Krea-2-Raw: https://huggingface.co/krea/Krea-2-Raw (enlace de referencia en la model card)
 - Repositorios relacionados del autor: https://huggingface.co/Shooter57/sc1_krea2_v1 y https://huggingface.co/Shooter57/szv1-krea2-v1 (otros LoRA del mismo autor, sin información adicional)
 - Resultados de búsqueda web: no se encontraron papers, blogs o demos adicionales sobre este modelo concreto.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-audio_cls_261016 es un modelo de clasificación de audio en formato de pesos safetensors, publicado por el usuario pgt30245 en HuggingFace. Se trata de un ajuste fino (fine-tuning) del modelo base Kkonjeong/wav2vec2-base-korean, un encoder wav2vec2 de aproximadamente 94,5 millones de parámetros entrenado originalmente para representaciones de habla en coreano. El modelo resultante se distribuye a través de la librería transformers y está etiquetado con el pipeline audio-classification, lo que indica que su salida es una etiqueta de clase sobre una señal de audio de entrada.
+audio_cls_261016 es un modelo de clasificación de audio en formato de pesos safetensors, publicado por el usuario pgt30245 en Hugging Face. Se trata de un ajuste fino (fine-tuning) del modelo base Kkonjeong/wav2vec2-base-korean, un encoder wav2vec2 de aproximadamente 94,5 millones de parámetros entrenado originalmente para representaciones de habla en coreano. El modelo resultante se distribuye a través de la librería transformers y está etiquetado con el pipeline audio-classification, lo que indica que su salida es una etiqueta de clase sobre una señal de audio de entrada.
 
 El problema que resuelve es la clasificación automática de fragmentos de audio en categorías predefinidas, aunque la model card no especifica cuáles son esas categorías ni la tarea concreta (detección de emociones, keyword spotting, identificación de locutor, clasificación de eventos sonoros, etc.). El autor declara unos resultados en el conjunto de evaluación de 0,8992 de accuracy y 0,7899 de loss, obtenidos tras 10 épocas de entrenamiento sobre un dataset no identificado. La relevancia actual del modelo es limitada: cuenta con 0 descargas y 0 likes, no tiene licencia declarada y la documentación es prácticamente inexistente, por lo que debe considerarse un experimento reproducible más que un artefacto listo para producción.
 
@@ -104,10 +104,10 @@ Se comparan tres alternativas de la misma familia (fine-tunes de Kkonjeong/wav2v
 
 | Modelo | Parametros | Accuracy declarada | Loss declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pgt30245/audio_cls_261016 | 94,57 M | 0,8992 | 0,7899 | no disponible | publico en HuggingFace, 0 descargas |
-| Developer9215/audio_cls | no disponible | 0,9160 | 0,4580 | no disponible | publico en HuggingFace |
-| seu0514/audio_cls | no disponible | no disponible | no disponible | no disponible | publico en HuggingFace |
-| Kkonjeong/wav2vec2-base-korean | ~94,5 M (base) | no aplica (modelo base sin cabeza de clasificacion) | no aplica | no disponible | publico en HuggingFace |
+| pgt30245/audio_cls_261016 | 94,57 M | 0,8992 | 0,7899 | no disponible | publico en Hugging Face, 0 descargas |
+| Developer9215/audio_cls | no disponible | 0,9160 | 0,4580 | no disponible | publico en Hugging Face |
+| seu0514/audio_cls | no disponible | no disponible | no disponible | no disponible | publico en Hugging Face |
+| Kkonjeong/wav2vec2-base-korean | ~94,5 M (base) | no aplica (modelo base sin cabeza de clasificacion) | no aplica | no disponible | publico en Hugging Face |
 
 No se dispone de datos de contexto, rendimiento comparativo ni licencia para ninguna de las alternativas, por lo que la comparación queda limitada a los pocos valores declarados por cada autor.
 
@@ -127,7 +127,7 @@ No se dispone de datos de contexto, rendimiento comparativo ni licencia para nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pgt30245/audio_cls_261016
+- Modelo en Hugging Face: https://huggingface.co/pgt30245/audio_cls_261016
 - Modelo base: https://huggingface.co/Kkonjeong/wav2vec2-base-korean
 - Modelo similar (fine-tune sobre el mismo base): https://huggingface.co/Developer9215/audio_cls
 - Modelo similar (fine-tune sobre el mismo base): https://huggingface.co/seu0514/audio_cls

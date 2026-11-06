@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento frente a otros modelos de TTS
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rodbiren/kokoro_parakeet_aio_models
+- Repositorio en Hugging Face: https://huggingface.co/rodbiren/kokoro_parakeet_aio_models
 - Motor TTS (kokoallovero): https://github.com/RobViren/kokoallovero
 - Motor ASR (parakeetogo): https://github.com/RobViren/parakeetogo
 - Modelo base de TTS (hexgrad/Kokoro-82M): https://huggingface.co/hexgrad/Kokoro-82M

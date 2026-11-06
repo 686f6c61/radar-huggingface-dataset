@@ -102,7 +102,7 @@ Referencias externas citadas por el autor: GLM-5.3, AR del bloque 51, 0,340 / 0,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ceselder/kimi-k3-olens-reconstructor
+- Modelo en Hugging Face: https://huggingface.co/ceselder/kimi-k3-olens-reconstructor
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Repositorio del lens (consumidor del modelo de recompensa): https://huggingface.co/ceselder/kimi-k3-olens-lens

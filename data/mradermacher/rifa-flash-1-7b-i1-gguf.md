@@ -13,7 +13,7 @@ Dado que el repositorio tiene cero descargas y cero likes, se trata de un modelo
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (se infiere Qwen3 por los tags, sin confirmar) |
-| Parametros totales | 516.292 (según metadatos de HuggingFace; valor inusualmente bajo para un modelo de 1.7B, posiblemente se refiera al adaptador LoRA) |
+| Parametros totales | 516.292 (según metadatos de Hugging Face; valor inusualmente bajo para un modelo de 1.7B, posiblemente se refiera al adaptador LoRA) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | imatrix (archivo de matriz de importancia); se mencionan Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (no se listan archivos concretos en este repo) |

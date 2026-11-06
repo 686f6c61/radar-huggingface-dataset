@@ -93,7 +93,7 @@ La comparativa se limita al propio paquete GGUF y a su modelo base, ya que no se
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Receta de compilacion y despliegue del cuantizador: https://github.com/vcruz305/DeepSeek-V4.1-Flash-GGUF-DGX-Spark-recipe
 - Pull request de conversion en llama.cpp: https://github.com/ggml-org/llama.cpp/pull/28696

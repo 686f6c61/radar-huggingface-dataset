@@ -86,8 +86,8 @@ No disponible. No se trata de un modelo con especificaciones publicadas, sino de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-explicit-safe-b1ga1-s12-r2-20260905-7a8b10ad
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-explicit-safe-b1ga1-s12-r2-20260905-7a8b10ad
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Repositorio OptPilot (orquestador de optimizacion asistida por IA): https://github.com/MINDS-THU/OptPilot
 - Dataset relacionado del mismo autor (vlsa-dual-safety-eval): https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval
 - Referencia arXiv citada en ese dataset: arxiv:2512.11891

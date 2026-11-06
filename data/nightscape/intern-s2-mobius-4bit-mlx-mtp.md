@@ -70,9 +70,9 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx-mtp
+- Repositorio Hugging Face: https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx-mtp
 - Repositorio base (4-bit MLX): https://huggingface.co/nightscape/Intern-S2-Mobius-4bit-mlx
-- Modelo original en HuggingFace: https://huggingface.co/internlm/Intern-S2-Mobius
+- Modelo original en Hugging Face: https://huggingface.co/internlm/Intern-S2-Mobius
 - GitHub de InternLM/Intern-S2-Mobius: https://github.com/InternLM/Intern-S2-Mobius
 - Paper: "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning" (arXiv:2608.14290): https://arxiv.org/pdf/2608.14290
 - Licencia Apache-2.0: https://huggingface.co/internlm/Intern-S2-Mobius/blob/main/LICENSE

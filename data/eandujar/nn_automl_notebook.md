@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`eandujar/nn_automl_notebook` es un repositorio de HuggingFace que contiene un clasificador de imágenes entrenado con AutoGluon `MultiModalPredictor`, usando exclusivamente la rama `timm_image` sobre un backbone preentrenado de la librería TIMM. No es un modelo de lenguaje: es un modelo de visión por computador para clasificación binaria, con la variable objetivo `extrudable`, entrenado sobre el dataset `sunkaiwen/sketch2stl-sketches-image`. El autor evaluó varios backbones de TIMM con las mismas particiones fijas de entrenamiento y validación, y retuvo el checkpoint con mayor balanced accuracy de validación: `repghostnet_200`, con un valor reportado de `1.000000`.
+`eandujar/nn_automl_notebook` es un repositorio de Hugging Face que contiene un clasificador de imágenes entrenado con AutoGluon `MultiModalPredictor`, usando exclusivamente la rama `timm_image` sobre un backbone preentrenado de la librería TIMM. No es un modelo de lenguaje: es un modelo de visión por computador para clasificación binaria, con la variable objetivo `extrudable`, entrenado sobre el dataset `sunkaiwen/sketch2stl-sketches-image`. El autor evaluó varios backbones de TIMM con las mismas particiones fijas de entrenamiento y validación, y retuvo el checkpoint con mayor balanced accuracy de validación: `repghostnet_200`, con un valor reportado de `1.000000`.
 
 El interés del repositorio es doble. Por un lado, documenta un flujo de AutoML aplicado a visión (barrido aleatorizado de backbones, selección por métrica fija, empaquetado del predictor ganador). Por otro, sirve como ejemplo de clasificador ligero orientado a un problema muy concreto del ámbito de la impresión 3D: decidir si un diseño (presumiblemente derivado de bocetos o mallas) es extruible. El repositorio ocupa 1,1 GB e incluye únicamente el predictor ganador y los ficheros necesarios para inferencia, según la model card.
 
@@ -41,7 +41,7 @@ No hay información sobre el volumen de datos de entrenamiento, la composición 
 - Clasificación binaria de imágenes en dos clases derivadas de la variable objetivo `extrudable` (extruible / no extruible).
 - Inferencia sobre imágenes de bocetos o renders procedentes del dominio del dataset `sketch2stl-sketches-image`.
 - Integración directa en código Python mediante `MultiModalPredictor.load()` y `predictor.predict()`.
-- Carga sencilla desde HuggingFace Hub con `snapshot_download` y el identificador del repositorio.
+- Carga sencilla desde Hugging Face Hub con `snapshot_download` y el identificador del repositorio.
 - Selección de backbone ya resuelta: no requiere que el usuario ejecute el barrido de TIMM para obtener un punto de partida.
 - No dispone de tool calling ni function calling (no es un modelo generativo).
 - No dispone de capacidades de agente, razonamiento multi-paso ni planificación.
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El va
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `eandujar/nn_automl_notebook` (repghostnet_200) | CNN de clasificación binaria de imágenes | no disponible | no disponible | Balanced accuracy 1.000000 en validación propia | no disponible | HuggingFace, 0 descargas |
+| `eandujar/nn_automl_notebook` (repghostnet_200) | CNN de clasificación binaria de imágenes | no disponible | no disponible | Balanced accuracy 1.000000 en validación propia | no disponible | Hugging Face, 0 descargas |
 | Backbone TIMM `repghostnet_200` sin ajustar | CNN preentrenada en ImageNet | no disponible en la información proporcionada | resolución configurable por el usuario | no aplica a esta tarea sin ajuste | según TIMM | Público en TIMM |
 | Otros backbones evaluados en el mismo barrido (por ejemplo, familias EfficientNet o MobileNet de TIMM) | CNN de clasificación de imágenes | no disponible | no disponible | no disponible (el autor solo publica el ganador) | según TIMM | Público en TIMM |
 | Clasificador de imágenes genérico entrenado con AutoGluon MultiModal | CNN / transformer de visión | no disponible | no disponible | no disponible | según configuración | Requiere entrenamiento propio |
@@ -110,7 +110,7 @@ La comparación cuantitativa no es posible con la información disponible: el re
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/eandujar/nn_automl_notebook
+- Repositorio del modelo en Hugging Face: https://huggingface.co/eandujar/nn_automl_notebook
 - Dataset utilizado: https://huggingface.co/datasets/sunkaiwen/sketch2stl-sketches-image
 - Perfil del autor: https://huggingface.co/eandujar
 - La búsqueda web realizada no ha devuelto ningún resultado relevante sobre este modelo, su autor o el dataset: los resultados obtenidos corresponden a páginas institucionales sin relación con el ámbito de la inteligencia artificial. No se dispone por tanto de papers, blogs, repositorios ni demos adicionales que enlazar.

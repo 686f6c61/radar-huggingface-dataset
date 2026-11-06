@@ -118,12 +118,12 @@ No se dispone de datos de benchmarks numéricos ni de especificaciones de modelo
 - Aunque se declara soporte de más de 100 idiomas, no se especifica el rendimiento por idioma ni la calidad relativa en cada uno.
 - La cuantización K-Quant-17GB introduce una degradación media del 1,0 % sobre 15 benchmarks; conviene validar las tareas concretas antes de producción.
 - La licencia Apache 2.0 permite uso comercial, pero la model card no incluye cláusulas adicionales de uso aceptable ni garantías.
-- El repositorio de HuggingFace no registra descargas ni likes y fue creado y actualizado en la misma fecha, lo que no aporta señal sobre validación comunitaria.
+- El repositorio de Hugging Face no registra descargas ni likes y fue creado y actualizado en la misma fecha, lo que no aporta señal sobre validación comunitaria.
 - No se documentan requisitos de despliegue en servidores de inferencia de alto rendimiento (vLLM, TGI) ni soporte de batching.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Elliott9444/Muse-Glimmer-30B
+- Hugging Face: https://huggingface.co/Elliott9444/Muse-Glimmer-30B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper del codificador de percepción: https://arxiv.org/abs/2504.13181
 - Paper de DFlash: https://arxiv.org/abs/2602.06036

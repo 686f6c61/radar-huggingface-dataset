@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.9-r0.2-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 en HuggingFace. Por su etiqueta de arquitectura (`gpt2`) y su número de parámetros (122.706.432, aproximadamente 0,12B), se trata de una variante o reentrenamiento de la familia GPT-2 small. El identificador sugiere un experimento sobre plasticidad de modelos de lenguaje, con un par de idiomas en el nombre (`en_nl`, inglés-neerlandés) y varios hiperparámetros codificados en el sufijo (`linear_8`, `d0.1` para dropout, `c0.9`, `r0.2`, `s42` para semilla).
+El modelo `Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.9-r0.2-s42` es un checkpoint de investigación publicado por el usuario Cisco1963 en Hugging Face. Por su etiqueta de arquitectura (`gpt2`) y su número de parámetros (122.706.432, aproximadamente 0,12B), se trata de una variante o reentrenamiento de la familia GPT-2 small. El identificador sugiere un experimento sobre plasticidad de modelos de lenguaje, con un par de idiomas en el nombre (`en_nl`, inglés-neerlandés) y varios hiperparámetros codificados en el sufijo (`linear_8`, `d0.1` para dropout, `c0.9`, `r0.2`, `s42` para semilla).
 
 El interés de este modelo es fundamentalmente académico y experimental: encaja en una serie de checkpoints del mismo autor que varían pares de idiomas (`en_nl`, `nl_en`, `nl_zh`), modos de adaptación (`linear`, `instant`) y coeficientes de plasticidad. No dispone de model card, pipeline declarado, licencia ni lista de idiomas soportados. Su volumen de descargas (5) y ausencia de likes indican que no es un modelo de producción, sino un artefacto de investigación.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo | GPT-2 (decoder-only) | 122,7M | no disponible | no disponible | HuggingFace, safetensors |
+| Este modelo | GPT-2 (decoder-only) | 122,7M | no disponible | no disponible | Hugging Face, safetensors |
 | GPT-2 small (OpenAI) | GPT-2 (decoder-only) | 124M | 1024 tokens | MIT (modificada) | Ampliamente disponible |
 | DistilGPT-2 | GPT-2 destilado | 82M | 1024 tokens | Apache 2.0 | Ampliamente disponible |
 | GPT-2 medium | GPT-2 (decoder-only) | 355M | 1024 tokens | MIT (modificada) | Ampliamente disponible |
@@ -88,10 +88,10 @@ La comparación se limita al tamaño y la arquitectura, ya que no existen datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.9-r0.2-s42
+- Modelo en Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.9-r0.2-s42
 - Checkpoint hermano (en_nl instant): https://huggingface.co/Cisco1963/llmplasticity-en_nl_instant_8-d0.01-c0.99-r0.2-s42
 - Checkpoint hermano (nl_en linear): https://huggingface.co/Cisco1963/llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42
 - Checkpoint hermano (nl_zh linear): https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.8-s42
-- Índice de modelos del autor en HuggingFace: https://huggingface.co/Cisco1963
-- Índice de modelos de HuggingFace (referencia): https://huggingface.co/models?sort=modified
+- Índice de modelos del autor en Hugging Face: https://huggingface.co/Cisco1963
+- Índice de modelos de Hugging Face (referencia): https://huggingface.co/models?sort=modified
 - Ficha de indexación de un modelo similar (sitio de terceros): https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42

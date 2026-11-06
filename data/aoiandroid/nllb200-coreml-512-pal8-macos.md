@@ -81,7 +81,7 @@ No se dispone de comparativa directa con otros modelos de traducción en formato
 
 ## Enlaces
 
-- Repositorio HuggingFace: [aoiandroid/nllb200-coreml-512-pal8-macos](https://huggingface.co/aoiandroid/nllb200-coreml-512-pal8-macos)
+- Repositorio Hugging Face: [aoiandroid/nllb200-coreml-512-pal8-macos](https://huggingface.co/aoiandroid/nllb200-coreml-512-pal8-macos)
 - Repositorio fuente (versión iOS): [aoiandroid/nllb200-coreml-512-pal8-ios](https://huggingface.co/aoiandroid/nllb200-coreml-512-pal8-ios) (no se ha verificado, pero se menciona como hermano)
 - Repositorio original de Meta NLLB-200: [GitHub JHmins/NLLB-200-Model](https://github.com/JHmins/NLLB-200-Model) (fork del código oficial)
 - Blog de Meta sobre NLLB-200: [200 languages within a single AI model](https://ai.meta.com/blog/nllb-200-high-quality-machine-translation/)

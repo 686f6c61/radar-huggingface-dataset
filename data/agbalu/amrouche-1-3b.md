@@ -87,7 +87,7 @@ La diferencia clave frente a la familia NLLB es la licencia: Amrouche-1.3B es Ap
 - Licencia Apache 2.0 permite uso comercial, pero conviene verificar la procedencia y los términos del corpus AƔBALU si se redistribuyen derivados.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Amrouche-1.3B
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Amrouche-1.3B
 - Modelo base: https://huggingface.co/facebook/nllb-200-distilled-1.3B
 - Tabla de remapeo de vocabulario (`keep.json`): https://huggingface.co/agbalu/Amrouche-1.3B/blob/main/keep.json
 - Paper de NLLB-200 (No Language Left Behind): no disponible en la información proporcionada

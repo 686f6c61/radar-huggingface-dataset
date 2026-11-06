@@ -2,7 +2,7 @@
 
 ## Resumen
 
-loop-untied-2-d12 es un checkpoint de modelo de lenguaje base de tipo *looped transformer* (transformer con recursión de bloques), publicado por el usuario CharlieChen en HuggingFace. Corresponde a la coordenada de profundidad **d12** (variante «untied 2») de la escalera de escalado del artículo *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*. No es un modelo afinado por instrucciones: es un artefacto de investigación entrenado desde cero con el objetivo de estudiar cómo crecen los exponentes de escalado al variar profundidad, recursión y operadores de frontera.
+loop-untied-2-d12 es un checkpoint de modelo de lenguaje base de tipo *looped transformer* (transformer con recursión de bloques), publicado por el usuario CharlieChen en Hugging Face. Corresponde a la coordenada de profundidad **d12** (variante «untied 2») de la escalera de escalado del artículo *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents*. No es un modelo afinado por instrucciones: es un artefacto de investigación entrenado desde cero con el objetivo de estudiar cómo crecen los exponentes de escalado al variar profundidad, recursión y operadores de frontera.
 
 El checkpoint contiene 607.518.720 parámetros almacenados en FP32 (2,430 GB), con una anchura de 1536, 12 cabezas de atención, vocabulario GPT-2 de 50.257 tokens (ampliado a 50.304 filas en el modelo) y una longitud de contexto de 2.048 tokens. Fue entrenado sobre el corpus FineWeb y su NLL de validación en el corpus de preentrenamiento es de 2,907670 nats/token. Incluye un `result.json` con la configuración y los metadatos de entrenamiento, pero no conserva el estado del optimizador, por lo que no sirve para reanudar el entrenamiento.
 
@@ -102,7 +102,7 @@ Cualitativamente, la categoría natural de comparación son los modelos base peq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CharlieChen/loop-untied-2-d12
+- Modelo en Hugging Face: https://huggingface.co/CharlieChen/loop-untied-2-d12
 - Repositorio de codigo del articulo (evaluacion y reconstruccion del modelo): https://github.com/cue-engineering/loop
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb
 - Articulo: *How Model Growth, Recursion, and Boundary Operators Influence Scaling Exponents* (enlace directo no disponible en la informacion proporcionada)

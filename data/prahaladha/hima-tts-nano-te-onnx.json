@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Prahaladha/hima-tts-nano-te-ONNX",
+  "slug": "prahaladha-hima-tts-nano-te-onnx",
+  "author": "Prahaladha",
+  "url": "https://huggingface.co/Prahaladha/hima-tts-nano-te-ONNX",
+  "created_at": "2026-11-04T08:36:38.000Z",
+  "updated_at": "2026-11-04T09:34:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "te",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "te",
+    "en",
+    "base_model:Prahaladha/hima-tts-nano-te",
+    "base_model:quantized:Prahaladha/hima-tts-nano-te",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 637764972,
+  "storage_human": "638 MB",
+  "base_model": "Prahaladha/hima-tts-nano-te",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prahaladha/hima-tts-nano-te-ONNX · Hugging Face",
+      "url": "https://huggingface.co/Prahaladha/hima-tts-nano-te-ONNX",
+      "snippet": "hima-tts-nano-te-ONNX hima-tts-nano-te (Telugu text to speech, 62M parameters) converted to ONNX, for fast speech on any CPU (Windows, Linux, Mac), with no PyTorch. Same voices, same sound; int8 is smaller and faster, and read just as clearly in our checks."
+    },
+    {
+      "title": "Prahaladha/hima-tts-nano-te · Hugging Face",
+      "url": "https://huggingface.co/Prahaladha/hima-tts-nano-te",
+      "snippet": "Telugu text to speech. A small model (62M parameters) that runs on a laptop, no GPU needed. It comes with six voices, and it can also copy a voice from a short recording. pip install speechbrain python -m hima_tts \"ఏమండీ, సాయంత్రం free గా ఉన్నారా ..."
+    }
+  ]
+}

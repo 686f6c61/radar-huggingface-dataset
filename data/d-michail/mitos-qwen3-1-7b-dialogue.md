@@ -81,9 +81,9 @@ Las cifras de VRAM son estimaciones derivadas del número de parámetros, ya que
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mitos-Qwen3-1.7B-Dialogue | 1,7 B | 4.096 tokens en entrenamiento | Administración pública griega, RAG | CC BY-SA 4.0 | Pesos safetensors en HuggingFace |
-| Mitos-Qwen3-1.7B-Dialogue-LoRA | 1,7 B (adaptador) | 4.096 tokens en entrenamiento | Igual, entrenado sin 220 procedimientos reservados | CC BY-SA 4.0 | Adaptador LoRA en HuggingFace, carpeta `holdout/` |
-| Qwen/Qwen3-1.7B | 1,7 B | No disponible en la información proporcionada | Generalista, multilingüe | Apache-2.0 | Pesos safetensors en HuggingFace |
+| Mitos-Qwen3-1.7B-Dialogue | 1,7 B | 4.096 tokens en entrenamiento | Administración pública griega, RAG | CC BY-SA 4.0 | Pesos safetensors en Hugging Face |
+| Mitos-Qwen3-1.7B-Dialogue-LoRA | 1,7 B (adaptador) | 4.096 tokens en entrenamiento | Igual, entrenado sin 220 procedimientos reservados | CC BY-SA 4.0 | Adaptador LoRA en Hugging Face, carpeta `holdout/` |
+| Qwen/Qwen3-1.7B | 1,7 B | No disponible en la información proporcionada | Generalista, multilingüe | Apache-2.0 | Pesos safetensors en Hugging Face |
 
 No se dispone de información en la documentación aportada sobre otros modelos comparables del dominio griego o de administración pública con los que establecer una comparación cuantitativa.
 
@@ -103,7 +103,7 @@ No se dispone de información en la documentación aportada sobre otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Dialogue
+- Modelo en Hugging Face: https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Dialogue
 - Modelo acompañante con adaptador LoRA (carpeta `holdout/`): https://huggingface.co/d-michail/Mitos-Qwen3-1.7B-Dialogue-LoRA
 - Dataset de entrenamiento: https://huggingface.co/datasets/d-michail/mitos-qa
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
@@ -113,4 +113,4 @@ No se dispone de información en la documentación aportada sobre otros modelos 
 - Licencia CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
 - Paper con el protocolo completo de evaluación y las métricas con juez: pendiente de enlace según la model card, no disponible
 
-Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo (únicamente páginas genéricas ajenas al tema), por lo que todos los enlaces y datos proceden de la model card y de los metadatos del repositorio de HuggingFace.
+Nota: las búsquedas web realizadas no devolvieron resultados relevantes sobre este modelo (únicamente páginas genéricas ajenas al tema), por lo que todos los enlaces y datos proceden de la model card y de los metadatos del repositorio de Hugging Face.

@@ -98,9 +98,9 @@ La model card advierte de que la ganancia sobre el truncado bruto a 128 dimensio
 
 | Modelo | Parametros | Dimension de salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pocket-mind/pocket-embed-22m-128 | 22.713.216 | 128 (64 opcional) | 256 word pieces | CC BY-SA 4.0 | HuggingFace (safetensors, ONNX FP32 e INT8) |
-| sentence-transformers/all-MiniLM-L6-v2 (base) | 22,7 millones (mismo encoder) | 384 | 256 word pieces | no disponible en la informacion proporcionada | HuggingFace |
-| BGE Small | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| pocket-mind/pocket-embed-22m-128 | 22.713.216 | 128 (64 opcional) | 256 word pieces | CC BY-SA 4.0 | Hugging Face (safetensors, ONNX FP32 e INT8) |
+| sentence-transformers/all-MiniLM-L6-v2 (base) | 22,7 millones (mismo encoder) | 384 | 256 word pieces | no disponible en la informacion proporcionada | Hugging Face |
+| BGE Small | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Segun la model card, BGE Small obtuvo mejores resultados que Pocket Embed en FiQA y Quora. El autor situa explicitamente el modelo como un compromiso entre almacenamiento y calidad, no como un encoder de recuperacion superior a los modelos de dimensionalidad completa. No se dispone de mas datos comparativos en la informacion proporcionada.
 
@@ -121,7 +121,7 @@ Segun la model card, BGE Small obtuvo mejores resultados que Pocket Embed en FiQ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pocket-mind/pocket-embed-22m-128
+- Modelo en Hugging Face: https://huggingface.co/pocket-mind/pocket-embed-22m-128
 - Demo de busqueda en navegador (Space): https://huggingface.co/spaces/pocket-mind/pocket-embed-search
 - Exportacion para navegador y grafo ONNX: https://huggingface.co/pocket-mind/pocket-embed-22m-128/tree/main/browser
 - Instrucciones del grafo ONNX: https://huggingface.co/pocket-mind/pocket-embed-22m-128/blob/main/browser/README.md

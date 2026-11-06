@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rjaumania/adain-models` es un repositorio publicado en HuggingFace por el usuario `rjaumania`, con identificador de modelo `adain-models` y un unico tag declarado (`region:us`). En el momento de la consulta el repositorio acumula 0 descargas y 1 like, ocupa 0,1 GB y no declara pipeline de inferencia, licencia, idiomas ni ficha tecnica de ningun tipo. Se creo el 8 de octubre de 2026 y se actualizo el mismo dia, cinco minutos mas tarde, lo que apunta a una publicacion inicial sin iteraciones posteriores documentadas.
+`rjaumania/adain-models` es un repositorio publicado en Hugging Face por el usuario `rjaumania`, con identificador de modelo `adain-models` y un unico tag declarado (`region:us`). En el momento de la consulta el repositorio acumula 0 descargas y 1 like, ocupa 0,1 GB y no declara pipeline de inferencia, licencia, idiomas ni ficha tecnica de ningun tipo. Se creo el 8 de octubre de 2026 y se actualizo el mismo dia, cinco minutos mas tarde, lo que apunta a una publicacion inicial sin iteraciones posteriores documentadas.
 
 No hay informacion publica verificable sobre la arquitectura, el numero de parametros, la longitud de contexto, el dataset de entrenamiento ni los resultados de evaluacion. El unico dato estructural disponible es el tamano del repositorio (0,1 GB), que acota el conjunto de pesos a un orden de magnitud bajo: si los pesos ocupan la practica totalidad de ese espacio y estan en precision de 32 bits, el modelo estaria en el rango de decenas de millones de parametros; si estan cuantizados a 8 bits, podria llegar a unos cientos de millones. Esa estimacion es una inferencia a partir del tamano del repo, no un dato confirmado por el autor.
 
@@ -33,7 +33,7 @@ El unico indicio nominal es la palabra "adain" en el identificador, que en la li
 
 No es posible enumerar capacidades verificadas: no hay model card, ni ejemplos de uso, ni resultados de evaluacion en la informacion disponible. Lo unico que puede afirmarse es lo siguiente:
 
-- El repositorio existe y es publico en HuggingFace, con un unico tag declarado (`region:us`), que es un metadato geografico de la plataforma y no describe funcionalidad.
+- El repositorio existe y es publico en Hugging Face, con un unico tag declarado (`region:us`), que es un metadato geografico de la plataforma y no describe funcionalidad.
 - No se declara pipeline de inferencia, por lo que la plataforma no lo clasifica como modelo de texto, vision, audio ni ninguna otra categoria.
 - No consta soporte de tool calling, function calling, agentes, razonamiento multi-paso, modo de pensamiento ni capacidades multilingues.
 - No consta soporte de vision, audio, video ni modalidad de entrada distinta del texto, ni lo contrario.
@@ -89,6 +89,6 @@ No disponible. No puede establecerse una comparativa fiable porque se desconocen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rjaumania/adain-models
+- Repositorio en Hugging Face: https://huggingface.co/rjaumania/adain-models
 
 No se han encontrado enlaces relevantes adicionales. La busqueda web asociada devolvio exclusivamente resultados no relacionados con el modelo (hilos de soporte de Google Maps sobre nombres de calles y Street View), por lo que no se incluyen. No constan paper, blog tecnico, repositorio de codigo, demo ni espacio de inferencia vinculados a `rjaumania/adain-models`.

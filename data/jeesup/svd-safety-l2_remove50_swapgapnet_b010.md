@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_remove50_swapgapnet_b010` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` comprimido con SVD-LLM hasta el 50,0 % de los parámetros densos y después editado mediante 10 rondas de sustitución de parámetros neutra en parámetros («parameter-neutral swap»), seleccionadas por la regla `gap_iter`, con un presupuesto del 1,000 % de los parámetros densos. Lo publica el usuario de HuggingFace Jeesup como artefacto de investigación sobre cómo la compresión SVD degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor.
+`svd-safety-l2_remove50_swapgapnet_b010` es un checkpoint derivado de `meta-llama/Llama-2-7b-chat-hf` comprimido con SVD-LLM hasta el 50,0 % de los parámetros densos y después editado mediante 10 rondas de sustitución de parámetros neutra en parámetros («parameter-neutral swap»), seleccionadas por la regla `gap_iter`, con un presupuesto del 1,000 % de los parámetros densos. Lo publica el usuario de Hugging Face Jeesup como artefacto de investigación sobre cómo la compresión SVD degrada el comportamiento de seguridad y qué regla de selección de componentes lo repara mejor.
 
 No es un modelo de chat de propósito general: es una celda de una rejilla experimental sobre reglas de selección y presupuestos, y su propia model card advierte de que varias celdas de la rejilla están deliberadamente degradadas en seguridad respecto a Llama-2-7b-chat. La relevancia es metodológica: cuantifica el coste en seguridad de la compresión de modelos y prueba estrategias de recuperación, un problema directamente aplicable al despliegue de LLM comprimidos en producción.
 
@@ -110,7 +110,7 @@ La comparación de rendimiento en benchmarks de capacidad no es posible: no hay 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapnet_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre este modelo; los resultados devueltos corresponden a hilos de foro sobre WhatsApp Web y Windows, sin relación con el artefacto.
 - Referencias metodológicas mencionadas en la model card (SVD-LLM, AdvBench, StrongREJECT, HarmBench, WildGuard): citadas por nombre en la ficha del autor, sin URL ni identificador en la información disponible.

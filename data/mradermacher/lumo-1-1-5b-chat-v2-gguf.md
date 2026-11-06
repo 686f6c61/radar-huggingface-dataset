@@ -113,7 +113,7 @@ Nota: los datos estructurales de los modelos de comparacion corresponden a infor
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-GGUF
 - Modelo base (safetensors): https://huggingface.co/vpakarinen/Lumo-1-1.5B-Chat-V2
 - Cuantizados ponderados/imatrix: https://huggingface.co/mradermacher/Lumo-1-1.5B-Chat-V2-i1-GGUF
 - Perfil del autor mradermacher: https://huggingface.co/mradermacher

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-v2 es un adaptador LoRA publicado en HuggingFace por el usuario G4b3r. Se trata de un ajuste fino (fine-tuning) mediante PEFT sobre el modelo G4b3r/Qwen2.5-Coder-7B-Instruct_especialista, que a su vez parte de la familia Qwen2.5-Coder de Alibaba. El repositorio contiene únicamente los pesos del adaptador (40.370.176 parámetros en safetensors, 0,2 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador encima.
+G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-v2 es un adaptador LoRA publicado en Hugging Face por el usuario G4b3r. Se trata de un ajuste fino (fine-tuning) mediante PEFT sobre el modelo G4b3r/Qwen2.5-Coder-7B-Instruct_especialista, que a su vez parte de la familia Qwen2.5-Coder de Alibaba. El repositorio contiene únicamente los pesos del adaptador (40.370.176 parámetros en safetensors, 0,2 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador encima.
 
-El modelo hereda la orientación de Qwen2.5-Coder hacia tareas de generación de código y asistencia conversacional, pero la model card no documenta el propósito específico del ajuste, el dataset empleado ni los hiperparámetros de entrenamiento. La información disponible es mínima: la model card es la plantilla por defecto de HuggingFace con la mayoría de campos marcados como "More Information Needed". No se han publicado resultados de evaluación, detalles de licencia ni lista de idiomas soportados.
+El modelo hereda la orientación de Qwen2.5-Coder hacia tareas de generación de código y asistencia conversacional, pero la model card no documenta el propósito específico del ajuste, el dataset empleado ni los hiperparámetros de entrenamiento. La información disponible es mínima: la model card es la plantilla por defecto de Hugging Face con la mayoría de campos marcados como "More Information Needed". No se han publicado resultados de evaluación, detalles de licencia ni lista de idiomas soportados.
 
 Su relevancia actual es limitada y de nicho: se trata de un experimento de ajuste fino comunitario con cero descargas y cero likes en el momento de la consulta. Resulta útil únicamente como referencia para quienes quieran reproducir o inspeccionar el proceso de entrenamiento LoRA sobre Qwen2.5-Coder, no como un modelo listo para producción.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-v2 | 40,37 M (adaptador) + 7B base | no disponible | no disponible | HuggingFace, 0 descargas | Adaptador LoRA comunitario, sin evaluación |
-| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7B | 32.768 tokens | Apache 2.0 (modelo base) | HuggingFace, ampliamente usado | Modelo oficial, benchmarks publicados |
-| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa ligera para hardware modesto |
-| DeepSeek-Coder-V2-Lite-Instruct | 16B (2,4B activos, MoE) | 128K tokens | DeepSeek License | HuggingFace | Mayor contexto y capacidades, más exigente en hardware |
+| G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-v2 | 40,37 M (adaptador) + 7B base | no disponible | no disponible | Hugging Face, 0 descargas | Adaptador LoRA comunitario, sin evaluación |
+| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7B | 32.768 tokens | Apache 2.0 (modelo base) | Hugging Face, ampliamente usado | Modelo oficial, benchmarks publicados |
+| Qwen2.5-Coder-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa ligera para hardware modesto |
+| DeepSeek-Coder-V2-Lite-Instruct | 16B (2,4B activos, MoE) | 128K tokens | DeepSeek License | Hugging Face | Mayor contexto y capacidades, más exigente en hardware |
 
 La comparación directa es difícil porque el modelo publicado es un adaptador, no un modelo completo. Frente al Qwen2.5-Coder-7B-Instruct original, la única diferencia constatable es la existencia del ajuste LoRA; no hay datos que demuestren mejoras de rendimiento. Frente a alternativas como DeepSeek-Coder-V2-Lite, el modelo base de Alibaba ofrece menor contexto pero licencia Apache 2.0 más permisiva y menor huella de hardware.
 
@@ -93,7 +93,7 @@ La comparación directa es difícil porque el modelo publicado es un adaptador, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-v2
+- Repositorio Hugging Face: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista-v2
 - Modelo base del adaptador: https://huggingface.co/G4b3r/Qwen2.5-Coder-7B-Instruct_especialista
 - Familia Qwen2.5-Coder (Alibaba): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - PEFT (librería): https://github.com/huggingface/peft

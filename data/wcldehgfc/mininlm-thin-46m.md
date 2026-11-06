@@ -103,5 +103,5 @@ La comparación relevante es de orden de magnitud: miniNLM-thin-46m es entre 3 y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wcldehgfc/miniNLM-thin-46m
+- Modelo en Hugging Face: https://huggingface.co/wcldehgfc/miniNLM-thin-46m
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados al modelo.

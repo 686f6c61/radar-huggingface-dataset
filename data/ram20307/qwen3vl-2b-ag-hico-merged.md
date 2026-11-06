@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3vl-2b-ag-hico-merged es un modelo multimodal de tipo image-text-to-text obtenido mediante la fusión (merge) de un adaptador LoRA sobre la base Qwen3-VL-2B-Instruct. Lo publica el usuario Ram20307 en HuggingFace y su propósito es especializar un modelo visual-lenguaje pequeño en la detección de relaciones persona-objeto y la generación de grafos de escena (scene graphs), apoyándose en los conjuntos de datos Action Genome/Charades y HICO-DET.
+qwen3vl-2b-ag-hico-merged es un modelo multimodal de tipo image-text-to-text obtenido mediante la fusión (merge) de un adaptador LoRA sobre la base Qwen3-VL-2B-Instruct. Lo publica el usuario Ram20307 en Hugging Face y su propósito es especializar un modelo visual-lenguaje pequeño en la detección de relaciones persona-objeto y la generación de grafos de escena (scene graphs), apoyándose en los conjuntos de datos Action Genome/Charades y HICO-DET.
 
 El modelo resuelve un problema concreto: extraer tripletas sujeto-predicado-objeto (por ejemplo, persona-montando-bicicleta) a partir de una imagen, una tarea que los modelos generalistas abordan de forma inconsistente. Al partir de Qwen3-VL-2B, conserva la interfaz conversacional y las capacidades multimodales del modelo original, pero con 2.127.532.032 parámetros totales en precisión bf16 y un repositorio de 4,3 GB.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl-2b-ag-hico-merged | 2,13 B | no disponible | Scene graphs / HICO-DET | apache-2.0 (con caveat de datos) | HuggingFace, 0 descargas |
-| Qwen3-VL-2B-Instruct (base) | ~2 B | no disponible | VLM generalista | no disponible en esta ficha | HuggingFace |
-| Qwen2.5-VL-3B-Instruct | ~3 B | no disponible en esta ficha | VLM generalista | no disponible en esta ficha | HuggingFace |
+| qwen3vl-2b-ag-hico-merged | 2,13 B | no disponible | Scene graphs / HICO-DET | apache-2.0 (con caveat de datos) | Hugging Face, 0 descargas |
+| Qwen3-VL-2B-Instruct (base) | ~2 B | no disponible | VLM generalista | no disponible en esta ficha | Hugging Face |
+| Qwen2.5-VL-3B-Instruct | ~3 B | no disponible en esta ficha | VLM generalista | no disponible en esta ficha | Hugging Face |
 | Modelos especializados en scene graph de mayor tamano | no disponible | no disponible | Scene graphs | variable | variable |
 
 La comparación cuantitativa de rendimiento no puede realizarse porque no hay benchmarks publicados para este modelo. Frente a la base Qwen3-VL-2B-Instruct, la diferencia es la especialización en relaciones persona-objeto a costa de posibles regresiones en tareas generales, algo que solo puede verificarse con evaluación propia.
@@ -87,7 +87,7 @@ La comparación cuantitativa de rendimiento no puede realizarse porque no hay be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-merged
+- Modelo en Hugging Face: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-merged
 - Adaptador LoRA base: https://huggingface.co/Ram20307/qwen3vl-2b-ag-hico-lora
 - Dataset Action Genome: no disponible en la información proporcionada
 - Dataset HICO-DET: no disponible en la información proporcionada

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-pr3118-validation es un artefacto de validacion estructural publicado por el usuario soyrsoyr en HuggingFace. No se trata de un modelo entrenado: la propia model card lo describe explicitamente como un *fixture estructural de pesos aleatorios* ("random-weight structural fixture"), derivado del checkpoint inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP. Su proposito es comprobar que una ruta de conversion y cuantizacion concreta (llm-compressor PR 3118, commit 87347881) produce checkpoints consistentes y cargables en runtime.
+GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-pr3118-validation es un artefacto de validacion estructural publicado por el usuario soyrsoyr en Hugging Face. No se trata de un modelo entrenado: la propia model card lo describe explicitamente como un *fixture estructural de pesos aleatorios* ("random-weight structural fixture"), derivado del checkpoint inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP. Su proposito es comprobar que una ruta de conversion y cuantizacion concreta (llm-compressor PR 3118, commit 87347881) produce checkpoints consistentes y cargables en runtime.
 
 El modelo tiene 84.772.398 parametros totales (aproximadamente 0,085 mil millones) y un repositorio de 0,2 GB. Combina un backbone etiquetado como glm5_next con una cabeza de prediccion multi-token (MTP, *multi-token prediction*), y emplea dos esquemas de cuantizacion distintos y separados: FP8 para la parte MLP y MXFP4 para el bloque MTP, segun se deduce del nombre del checkpoint y de las notas del autor. El autor advierte que la validacion de runtime en B200 esta pendiente y que no se reclama ninguna pasada de inferencia MXFP4 exitosa.
 
@@ -77,7 +77,7 @@ No disponible. Este artefacto no es comparable con modelos de lenguaje en produc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-pr3118-validation
+- Modelo en Hugging Face: https://huggingface.co/soyrsoyr/GLM5.3-Flash-Tiny-Aligned-FP8MLP-MTP-MXFP4-pr3118-validation
 - Modelo base: https://huggingface.co/inference-optimization/GLM-5.3-Flash-0.1B-A0.1B-MTP/tree/443ac6c54ba0d65ad8a7c701af4fd22a960c9e9c
 - Implementacion de referencia (llm-compressor PR 3118, commit 87347881): https://github.com/soyr-redhat/llm-compressor/commit/87347881b46df8786b9fc463965f80504914a98f
 - Resultados de busqueda web: no se encontro ningun resultado relevante sobre este modelo. Las busquedas devolvieron exclusivamente paginas sin relacion (foros de soporte de terceros y sitios de reviews de tecnologia).

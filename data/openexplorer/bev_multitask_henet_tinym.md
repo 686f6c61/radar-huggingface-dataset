@@ -96,7 +96,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenExplorer/bev_multitask_henet_tinym
+- Modelo en Hugging Face: https://huggingface.co/OpenExplorer/bev_multitask_henet_tinym
 - Repositorio SparseBEV: https://github.com/MCG-NJU/SparseBEV
 - Paper SparseBEV: https://arxiv.org/abs/2308.09244
 - Repositorio MapTR: https://github.com/hustvl/MapTR

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tkyoun13/so101_exp2_clutter_smolvla` es una política de robótica del tipo vision-language-action (VLA) obtenida por ajuste fino del modelo base `lerobot/smolvla_base`, que a su vez implementa el método SmolVLA descrito en el paper arXiv:2506.01844. El modelo lo publica el usuario `tkyoun13` en HuggingFace y está pensado para controlar un brazo robótico SO-101 (tipo `so_follower`) mediante imitación: recibe el estado de las articulaciones y tres flujos de imagen de 256x256 píxeles, y devuelve un vector de acción de 6 dimensiones.
+`tkyoun13/so101_exp2_clutter_smolvla` es una política de robótica del tipo vision-language-action (VLA) obtenida por ajuste fino del modelo base `lerobot/smolvla_base`, que a su vez implementa el método SmolVLA descrito en el paper arXiv:2506.01844. El modelo lo publica el usuario `tkyoun13` en Hugging Face y está pensado para controlar un brazo robótico SO-101 (tipo `so_follower`) mediante imitación: recibe el estado de las articulaciones y tres flujos de imagen de 256x256 píxeles, y devuelve un vector de acción de 6 dimensiones.
 
 Se trata de una política compacta: 450.046.176 parámetros (aproximadamente 450 M) y un repositorio de 0,9 GB, lo que la sitúa en el rango de modelos desplegables en hardware de consumo según la propia model card. La tarea concreta para la que se ha entrenado es de manipulación con oclusión ("clutter"): coger un kiwi entre varios objetos y depositarlo en una cesta, a la izquierda o a la derecha, según la instrucción en lenguaje natural.
 
@@ -80,8 +80,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tipo | Contexto / entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tkyoun13/so101_exp2_clutter_smolvla | 450.046.176 | VLA ajustado para SO-101 | Estado 6D y 3 imagenes de 256x256 | apache-2.0 | HuggingFace, libreria `lerobot` |
-| lerobot/smolvla_base | No disponible en la informacion proporcionada | VLA base preentrenado | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| tkyoun13/so101_exp2_clutter_smolvla | 450.046.176 | VLA ajustado para SO-101 | Estado 6D y 3 imagenes de 256x256 | apache-2.0 | Hugging Face, libreria `lerobot` |
+| lerobot/smolvla_base | No disponible en la informacion proporcionada | VLA base preentrenado | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros VLA de gran tamano (OpenVLA, pi0, GR00T N1 y similares) | No verificado en esta busqueda | VLA generalistas | No disponible | No disponible | No disponible |
 
 La comparacion cuantitativa con alternativas no puede completarse: la busqueda web realizada no devolvio resultados tecnicos utilizables y la informacion proporcionada solo cubre el modelo base del que deriva esta política. Se recomienda consultar el paper arXiv:2506.01844 para la comparativa oficial de SmolVLA frente a otros VLA.
@@ -100,7 +100,7 @@ La comparacion cuantitativa con alternativas no puede completarse: la busqueda w
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tkyoun13/so101_exp2_clutter_smolvla
+- Modelo en Hugging Face: https://huggingface.co/tkyoun13/so101_exp2_clutter_smolvla
 - Dataset de entrenamiento: https://huggingface.co/datasets/tkyoun13/so101_exp2_clutter
 - Visualizacion del dataset (LeRobot Spaces): https://huggingface.co/spaces/lerobot/visualize_dataset?path=tkyoun13/so101_exp2_clutter
 - Modelo base: https://huggingface.co/lerobot/smolvla_base

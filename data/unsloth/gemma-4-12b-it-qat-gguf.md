@@ -79,7 +79,7 @@ La diferencia principal entre la version QAT de Unsloth y la version oficial de 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF
+- Repositorio Hugging Face: https://huggingface.co/unsloth/gemma-4-12B-it-qat-GGUF
 - Guia de Unsloth para Gemma 4 QAT: https://unsloth.ai/docs/models/gemma-4/qat
 - Documentacion de Gemma 4 de Unsloth: https://unsloth.ai/docs/models/gemma-4
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

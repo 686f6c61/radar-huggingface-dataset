@@ -24,9 +24,9 @@ Su relevancia es fundamentalmente metodológica y de reproducibilidad: el autor 
 | Entorno | Un único mapa 3D, movimiento a nivel de suelo, geometría de cajas, un rifle y objetivos de bomba |
 | Presupuesto de entrenamiento | 2.682.880 transiciones, 1.310 actualizaciones, semilla 111, condición `fixed`, gamma 0.999 |
 | Currículo | 15 / 15 / 70 por ciento para inicios de combate / objetivo / estándar |
-| Pipeline de HuggingFace | `reinforcement-learning` |
+| Pipeline de Hugging Face | `reinforcement-learning` |
 | Librería | PyTorch (con TorchRL para el entrenamiento) |
-| Tamaño del repositorio | 0.0 GB (según metadatos de HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -91,7 +91,7 @@ No se han identificado en la información proporcionada modelos públicos compar
 - La condición de oponente fijo queda fuera del protocolo posterior de self-play puro (Stage A), por lo que los resultados no son directamente comparables con revisiones posteriores del proyecto.
 - Entorno muy restringido: un único mapa, movimiento a nivel de suelo, geometría de cajas, un solo rifle y objetivos de bomba. No hay generalización a otros mapas ni a otros juegos.
 - Entradas estructuradas, no píxeles: no es un modelo de visión y no puede procesar imágenes en bruto.
-- El repositorio en HuggingFace reporta 0.0 GB de tamaño, lo que sugiere que los pesos podrían no estar efectivamente alojados; conviene verificar la descarga antes de planificar su uso.
+- El repositorio en Hugging Face reporta 0.0 GB de tamaño, lo que sugiere que los pesos podrían no estar efectivamente alojados; conviene verificar la descarga antes de planificar su uso.
 - Riesgo de alucinación: no aplica (no genera texto). El riesgo equivalente es comportamiento errático o explotación de fallos del simulador.
 - Sesgos conocidos: no documentados; en RL multiagente es esperable un ajuste excesivo a los oponentes concretos del currículo de entrenamiento.
 - Licencia MIT permite uso comercial y modificación, pero el autor no ofrece ninguna garantía de rendimiento ni de idoneidad para producción.
@@ -99,7 +99,7 @@ No se han identificado en la información proporcionada modelos públicos compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/ministrike-fixed-seed111
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/ministrike-fixed-seed111
 - Repositorio fuente principal: https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay
 - Auditoría de aprendizaje (resumen): https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay/blob/main/reports/learning-audit/summary.md
 - Protocolo del proyecto (referenciado en la model card): https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay/blob/main/docs/protocol.md

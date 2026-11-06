@@ -23,7 +23,7 @@ No se han hecho publicos datos de arquitectura, numero de parametros, longitud d
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo. La ficha de HuggingFace no incluye detalles de tipo de red (transformer, MoE, hibrida o SSM), dimension del modelo, numero de capas, cabezas de atencion ni mecanismo de atencion. Tampoco hay cifras de contexto maximo. Las unicas etiquetas funcionales declaradas son reasoning, coding y svg, ademas de text-generation, lo que sugiere un modelo con modo de razonamiento explicito y generacion de graficos vectoriales, pero se trata de una inferencia a partir de etiquetas, no de un dato tecnico confirmado.
+No se ha publicado informacion sobre la arquitectura del modelo. La ficha de Hugging Face no incluye detalles de tipo de red (transformer, MoE, hibrida o SSM), dimension del modelo, numero de capas, cabezas de atencion ni mecanismo de atencion. Tampoco hay cifras de contexto maximo. Las unicas etiquetas funcionales declaradas son reasoning, coding y svg, ademas de text-generation, lo que sugiere un modelo con modo de razonamiento explicito y generacion de graficos vectoriales, pero se trata de una inferencia a partir de etiquetas, no de un dato tecnico confirmado.
 
 Tampoco hay informacion sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de post-entrenamiento (RLHF, DPO, RLVR) ni innovaciones de decodificacion. La fuente de Vercel menciona "esfuerzo de razonamiento ajustable" (adjustable reasoning effort), lo que implica la existencia de un parametro de control del nivel de razonamiento, pero no se detalla su implementacion. Por tanto, todos los datos de arquitectura y entrenamiento deben considerarse no disponibles.
 
@@ -91,7 +91,7 @@ La informacion proporcionada solo permite comparar Pixel Canary con GPT-6 Astra 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/stealth-model/pixel-canary
+- Ficha en Hugging Face: https://huggingface.co/stealth-model/pixel-canary
 - Pagina oficial del modelo: https://stealthmodels.com/pixel-canary/
 - Portal de Stealth Models: https://stealthmodels.com/
 - Pixel Canary en Vercel AI Gateway: https://vercel.com/ai-gateway/models/pixel-canary

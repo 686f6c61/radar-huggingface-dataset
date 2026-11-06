@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje grande desarrollado por el usuario ASD1EDSAC y publicado en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y deducción gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje grande desarrollado por el usuario ASD1EDSAC y publicado en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y deducción gracias a un mayor uso de recursos computacionales y a la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose al nivel de otros modelos líderes.
 
-La información disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni otros detalles técnicos esenciales. El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que es un repositorio de prueba. La model card menciona mejoras concretas en razonamiento (por ejemplo, en AIME 2025 la precisión pasa del 70% al 87.5%) y un aumento en el número de tokens de razonamiento por pregunta (de 12K a 23K). También indica una reducción de la tasa de alucinación y un mejor soporte para function calling.
+La información disponible es muy limitada: no se especifican la arquitectura, el número de parámetros, la longitud de contexto ni otros detalles técnicos esenciales. El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo o que es un repositorio de prueba. La model card menciona mejoras concretas en razonamiento (por ejemplo, en AIME 2025 la precisión pasa del 70% al 87.5%) y un aumento en el número de tokens de razonamiento por pregunta (de 12K a 23K). También indica una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 A pesar de la falta de datos técnicos, la model card proporciona una tabla de benchmarks comparativos en múltiples categorías, aunque sin especificar qué modelos son las referencias. El modelo parece estar orientado a tareas de razonamiento complejo, generación de código y comprensión del lenguaje, y se recomienda su uso con un system prompt que incluya la fecha actual y una temperatura de 0.6.
 
@@ -79,7 +79,7 @@ Además, la model card menciona que en el test AIME 2025 la precisión del model
 
 ## Requisitos de hardware
 
-No se dispone de información sobre los requisitos de hardware para ejecutar MyAwesomeModel. Dado que no se conocen el número de parámetros ni el tamaño del modelo, no es posible estimar la VRAM necesaria, las GPU recomendadas, ni las opciones de despliegue. El repositorio de HuggingFace no contiene pesos, por lo que no se puede ejecutar localmente con los archivos disponibles. Se recomienda consultar el repositorio de código del autor (enlace no proporcionado) para obtener instrucciones de ejecución.
+No se dispone de información sobre los requisitos de hardware para ejecutar MyAwesomeModel. Dado que no se conocen el número de parámetros ni el tamaño del modelo, no es posible estimar la VRAM necesaria, las GPU recomendadas, ni las opciones de despliegue. El repositorio de Hugging Face no contiene pesos, por lo que no se puede ejecutar localmente con los archivos disponibles. Se recomienda consultar el repositorio de código del autor (enlace no proporcionado) para obtener instrucciones de ejecución.
 
 ## Comparativa con modelos similares
 
@@ -88,7 +88,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 ## Limitaciones y advertencias
 
 - La información técnica disponible es muy limitada: no se especifican arquitectura, número de parámetros, contexto, ni datos de entrenamiento, lo que impide evaluar su idoneidad para casos de uso concretos.
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB y no contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo directamente desde esa plataforma.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB y no contiene pesos del modelo, por lo que no es posible descargarlo ni ejecutarlo directamente desde esa plataforma.
 - No se han publicado resultados en benchmarks estándar de la industria (MMLU, HumanEval, GSM8K), lo que dificulta la comparación objetiva con otros modelos.
 - La model card está redactada en inglés y contiene afirmaciones sobre mejoras de rendimiento, pero sin datos verificables ni metodología detallada.
 - Se recomienda una temperatura de 0.6 y el uso de un system prompt con la fecha actual; el incumplimiento de estas recomendaciones podría afectar al comportamiento del modelo.
@@ -99,5 +99,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ASD1EDSAC/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/ASD1EDSAC/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces en la información disponible (la model card menciona un sitio web oficial y un repositorio de código, pero no se incluyen las URLs).

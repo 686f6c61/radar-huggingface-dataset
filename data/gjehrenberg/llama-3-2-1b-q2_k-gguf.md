@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gjehrenberg/Llama-3.2-1B-Q2_K-GGUF | 1,2 B | no disponible | GGUF Q2_K | llama3.2 | HuggingFace (82 descargas) |
-| unsloth/Llama-3.2-1B (base) | 1,2 B | no disponible | safetensors | llama3.2 | HuggingFace |
+| gjehrenberg/Llama-3.2-1B-Q2_K-GGUF | 1,2 B | no disponible | GGUF Q2_K | llama3.2 | Hugging Face (82 descargas) |
+| unsloth/Llama-3.2-1B (base) | 1,2 B | no disponible | safetensors | llama3.2 | Hugging Face |
 | Otras cuantizaciones de Llama-3.2-1B (Q4_K_M, Q5_K_M) | 1,2 B | no disponible | GGUF | llama3.2 | Habitualmente disponibles en el ecosistema llama.cpp |
-| Qwen2.5-1.5B | 1,5 B | no disponible en esta ficha | safetensors/GGUF | Apache 2.0 (segun el modelo original) | HuggingFace |
+| Qwen2.5-1.5B | 1,5 B | no disponible en esta ficha | safetensors/GGUF | Apache 2.0 (segun el modelo original) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada, por lo que la comparativa se limita a parametros, formato y licencia.
 
@@ -88,8 +88,8 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gjehrenberg/Llama-3.2-1B-Q2_K-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Llama-3.2-1B
+- Repositorio Hugging Face: https://huggingface.co/gjehrenberg/Llama-3.2-1B-Q2_K-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Llama-3.2-1B
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp
 - Instrucciones de uso de llama.cpp: https://github.com/ggerganov/llama.cpp?tab=readme-ov-file#usage

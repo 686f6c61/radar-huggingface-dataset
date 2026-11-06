@@ -96,7 +96,7 @@ No se dispone de datos que permitan comparar con modelos de otros linajes (por e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Crisroig/Llama-3.2-1B-Instruct-q4f16_1-MLC-Neurona
+- Modelo en Hugging Face: https://huggingface.co/Crisroig/Llama-3.2-1B-Instruct-q4f16_1-MLC-Neurona
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Cuantización de referencia de MLC: https://huggingface.co/mlc-ai/Llama-3.2-1B-Instruct-q4f16_1-MLC
 - Runtime WebLLM: https://github.com/mlc-ai/web-llm

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-native-w30-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parámetros (2.018.511.234 según el conteo real de safetensors), lo que lo sitúa en la categoría de modelos de tamaño medio-pequeño, comparable en escala a modelos como Qwen2.5-1.5B o Llama-3.2-1B/3B. El repositorio ocupa 8,1 GB, lo que sugiere pesos en precisión completa (probablemente fp32 o fp16 con posibles múltiples checkpoints).
+El modelo `alfred8995/r18-a2-w13-kx-native-w30-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parámetros (2.018.511.234 según el conteo real de safetensors), lo que lo sitúa en la categoría de modelos de tamaño medio-pequeño, comparable en escala a modelos como Qwen2.5-1.5B o Llama-3.2-1B/3B. El repositorio ocupa 8,1 GB, lo que sugiere pesos en precisión completa (probablemente fp32 o fp16 con posibles múltiples checkpoints).
 
 La nomenclatura del ID (`r18-a2-w13-kx-native-w30-s130`) y el tag `sn38-nanochrono` apuntan a un modelo experimental, probablemente fruto de un proceso de entrenamiento o destilación con parámetros internos codificados en el nombre (posiblemente rondas, anchuras, semillas o pasos). No hay información pública sobre el pipeline, los idiomas soportados ni la arquitectura concreta más allá de lo que indica el propio repositorio.
 
@@ -21,7 +21,7 @@ La relevancia de esta ficha es principalmente documental: se trata de un checkpo
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 | Tamano del repositorio | 8,1 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Pipeline declarado | no disponible |
 | Fecha de creacion | 2026-10-29 |
 | Ultima actualizacion | 2026-10-29 |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-native-w30-s130 | 2.018 M | no disponible | Apache 2.0 | Gated en HuggingFace | Experimental, sin benchmarks publicados |
+| alfred8995/r18-a2-w13-kx-native-w30-s130 | 2.018 M | no disponible | Apache 2.0 | Gated en Hugging Face | Experimental, sin benchmarks publicados |
 | Qwen2.5-1.5B | 1.540 M | 32.768 tokens | Apache 2.0 | Abierto | Referencia consolidada en tamaño similar; benchmarks publicados |
 | Llama-3.2-1B | 1.240 M | 128.000 tokens | Llama 3.2 Community License | Abierto (con condiciones) | Modelo pequeño de Meta con contexto largo |
 | Gemma-2-2B | 2.610 M | 8.192 tokens | Gemma Terms of Use | Abierto (con condiciones) | Modelo de Google de tamaño comparable |
@@ -85,12 +85,12 @@ La comparación directa no es posible en términos de rendimiento porque el mode
 - Riesgo de alucinación desconocido: sin benchmarks ni evaluaciones publicadas, no es posible estimar la tasa de alucinación ni la fiabilidad en tareas factuales.
 - Idiomas no especificados: se desconoce si el modelo está entrenado principalmente en inglés, multilingüe o en otro idioma; no debe asumirse soporte del castellano.
 - Contexto desconocido: no se indica la longitud máxima de contexto, por lo que su uso en tareas de contexto largo requiere verificación previa.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace; esto limita la reproducibilidad y la integración automatizada en pipelines de CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face; esto limita la reproducibilidad y la integración automatizada en pipelines de CI/CD.
 - Sin cuantizaciones publicadas: no hay GGUF, AWQ ni GPTQ en el repositorio, por lo que el despliegue en llama.cpp u Ollama requeriría conversión manual y validación de compatibilidad.
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución, pero el modelo se ofrece "tal cual", sin garantías; conviene revisar las condiciones del acceso gated por si añaden restricciones adicionales.
 - Madurez: cero descargas y cero likes en el momento de la consulta, creado y actualizado el mismo día, lo que indica un checkpoint recién publicado y sin validación comunitaria.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w30-s130
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w30-s130
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este modelo.

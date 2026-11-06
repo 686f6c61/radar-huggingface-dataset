@@ -6,7 +6,7 @@ El modelo `trinhkhng/nearswap_Merged_gpt2_0.3` es un experimento de fusión de m
 
 Este modelo no es un entrenamiento desde cero, sino una fusión de pesos preentrenados. Su relevancia radica en explorar cómo las técnicas de merge pueden alterar propiedades como el sesgo (debiasing) sin necesidad de reentrenamiento. Al ser un modelo pequeño (124M), es accesible para experimentación en hardware modesto, aunque su utilidad práctica en producción es limitada debido a su antigüedad y a la falta de documentación sobre su rendimiento.
 
-La ficha de HuggingFace no proporciona información sobre licencia, idiomas soportados ni benchmarks, lo que dificulta su evaluación rigurosa. Se recomienda tratarlo como un prototipo de investigación.
+La ficha de Hugging Face no proporciona información sobre licencia, idiomas soportados ni benchmarks, lo que dificulta su evaluación rigurosa. Se recomienda tratarlo como un prototipo de investigación.
 
 ## Especificaciones tecnicas
 

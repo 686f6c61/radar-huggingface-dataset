@@ -73,9 +73,9 @@ No disponible. Este artefacto no es un modelo de lenguaje estándar, sino un run
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Tyler01/qwen3-0p6b-fpga-q4-runtime
+- Repositorio Hugging Face: https://huggingface.co/Tyler01/qwen3-0p6b-fpga-q4-runtime
 - Proyecto GitHub (fuente, artefactos de placa, lanzador y manifiestos): https://github.com/Tyler913/LLM_Accelerator/tree/main/lmdeploy/qwen3-0p6b-q4-qweb-demo
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-0.6B-Base
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Paper técnico de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Guía completa de Qwen3 (insiderllm.com): https://insiderllm.com/guides/qwen3-complete-guide/
 - Repositorio oficial de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

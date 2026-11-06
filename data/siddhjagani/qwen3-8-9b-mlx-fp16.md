@@ -75,11 +75,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La princi
 - Contexto no especificado: se desconoce la longitud maxima de contexto, lo que puede causar errores en aplicaciones que requieran ventanas largas.
 - Formato MLX exclusivo: esta conversion solo es util en Apple Silicon; para otros entornos es necesario convertir a otros formatos, lo que puede introducir perdidas de precision.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en tareas estandar, por lo que su uso en produccion requiere validacion propia.
-- Descargas y adopcion nulas: el modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que no ha sido probado por la comunidad.
+- Descargas y adopcion nulas: el modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que no ha sido probado por la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-fp16
+- Modelo en Hugging Face: https://huggingface.co/SiddhJagani/Qwen3.8-9B-mlx-fp16
 - Modelo base (empero-ai): https://huggingface.co/empero-ai/Qwen3.8-9B
 - Repositorio oficial de Qwen3.8 (serie general): https://github.com/QwenLM/Qwen3.8
 - Informacion sobre Qwen3.8 en OpenLM: https://openlm.ai/qwen3.8/

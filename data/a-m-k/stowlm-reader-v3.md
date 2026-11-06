@@ -81,7 +81,7 @@ Datos adicionales: en la muestra fija de selección de 400 frases de validación
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| StowLM Reader v3 (este) | LoRA MLX sobre Muse Glimmer 30B | 64,5 MB de adaptador; base 30B | no disponible | 118/128 exactas; 1/48 relajaciones | Apache-2.0 | HuggingFace, 0 descargas |
+| StowLM Reader v3 (este) | LoRA MLX sobre Muse Glimmer 30B | 64,5 MB de adaptador; base 30B | no disponible | 118/128 exactas; 1/48 relajaciones | Apache-2.0 | Hugging Face, 0 descargas |
 | StowLM Reader v2 | LoRA MLX sobre Muse Glimmer 30B | no disponible | no disponible | 120/128 exactas; 2/48 relajaciones; 27 reglas en 84 frases fuera de alcance | Apache-2.0 | Adaptador referenciado en la model card |
 | Muse Spark (referencia histórica) | Modelo de la misma familia, máscara anterior | no disponible | no disponible | 126/128 exactas; 0/48 relajaciones | no disponible | Referencia interna, no comparación con decodificador idéntico |
 | Parser manual justo | Reglas escritas a mano | no aplica | no aplica | 90/128 exactas; 1/48 relajaciones | no disponible | Baseline del proyecto |
@@ -102,10 +102,10 @@ La comparación con modelos de propósito general de 30B no está disponible en 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/A-M-K/stowlm-reader-v3
+- Hugging Face: https://huggingface.co/A-M-K/stowlm-reader-v3
 - Repositorio de código: https://github.com/AMK-bot/StowLM
 - Decisiones del proyecto (D266): `docs/decisions.md` en el repositorio anterior
-- Procedencia y hashes: `PROVENANCE.md` en el repositorio de HuggingFace
+- Procedencia y hashes: `PROVENANCE.md` en el repositorio de Hugging Face
 - Informe de máscara: `experiments/mvp/reader/v3/results-final/mask-study/report-base.json`
 - Adopción final: `experiments/mvp/reader/v3/results-final/final-adoption-d266.json`
 - Resumen sellado: `experiments/mvp/reader/v3/results-final/sealed-summary.json`

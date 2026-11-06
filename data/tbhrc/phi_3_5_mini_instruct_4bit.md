@@ -61,10 +61,10 @@ No se dispone de datos comparativos en la información proporcionada. Sin embarg
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Phi-3.5-mini-instruct (este) | 3.8B | No disponible | MIT | HuggingFace, MLX |
-| Llama-3.2-3B | 3.2B | 128K | Meta Llama | HuggingFace |
-| Qwen2.5-3B | 3B | 32K | Apache 2.0 | HuggingFace |
-| Mistral-7B | 7B | 32K | Apache 2.0 | HuggingFace |
+| Phi-3.5-mini-instruct (este) | 3.8B | No disponible | MIT | Hugging Face, MLX |
+| Llama-3.2-3B | 3.2B | 128K | Meta Llama | Hugging Face |
+| Qwen2.5-3B | 3B | 32K | Apache 2.0 | Hugging Face |
+| Mistral-7B | 7B | 32K | Apache 2.0 | Hugging Face |
 
 Nota: los datos de contexto de los modelos comparados no están disponibles en la información proporcionada, por lo que se indican con "no disponible" o se omiten. La comparación se basa únicamente en el tamaño de parámetros y licencia, que sí se conocen.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen3` es un fine-tune del modelo Qwen2.5-7B-Instruct publicado por el usuario HungryDino en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un ajuste sobre los pesos de la versión Instruct de Qwen2.5, que emplea una arquitectura transformer decoder-only densa de aproximadamente 7.600 millones de parámetros. El repositorio se distribuye con licencia Apache-2.0 y está etiquetado únicamente para inglés.
+`HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen3` es un fine-tune del modelo Qwen2.5-7B-Instruct publicado por el usuario HungryDino en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un ajuste sobre los pesos de la versión Instruct de Qwen2.5, que emplea una arquitectura transformer decoder-only densa de aproximadamente 7.600 millones de parámetros. El repositorio se distribuye con licencia Apache-2.0 y está etiquetado únicamente para inglés.
 
-La model card es mínima: se limita a indicar que el entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, con la afirmación de que el proceso fue "2 veces más rápido" gracias a Unsloth. No se documentan el conjunto de datos, el número de tokens, la metodología de ajuste (SFT, DPO, LoRA) ni los hiperparámetros utilizados. El nombre del repositorio (`control_numbers-collapse_p10-run2-gen3`) sugiere un experimento serializado en torno a control de colapso numérico, pero el autor no aporta ninguna explicación al respecto.
+La model card es mínima: se limita a indicar que el entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, con la afirmación de que el proceso fue "2 veces más rápido" gracias a Unsloth. No se documentan el conjunto de datos, el número de tokens, la metodología de ajuste (SFT, DPO, LoRA) ni los hiperparámetros utilizados. El nombre del repositorio (`control_numbers-collapse_p10-run2-gen3`) sugiere un experimento serializado en torno a control de colapso numérico, pero el autor no aporta ninguna explicación al respecto.
 
 Su relevancia es por tanto limitada y de carácter experimental: no hay métricas publicadas, cero descargas y cero likes en el momento de la ficha. Resulta útil como referencia para quien quiera reproducir o inspeccionar un ajuste ligero sobre Qwen2.5-7B, pero no es un artefacto recomendable para producción sin una evaluación propia previa. El tamaño del repositorio (0,1 GB) es muy inferior al de los pesos completos de un modelo de 7B en fp16 (unos 15 GB), lo que apunta a que contiene únicamente un adaptador LoRA/PEFT y no los pesos fusionados, extremo que conviene verificar antes de usarlo.
 
@@ -98,10 +98,10 @@ Los datos de los modelos comparados provienen de sus fichas públicas y no de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen3
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-run2-gen3
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio oficial de Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL (librería de HuggingFace citada): https://github.com/huggingface/trl
+- TRL (librería de Hugging Face citada): https://github.com/huggingface/trl
 - Informe técnico de Qwen2.5: https://arxiv.org/abs/2412.15115
 - Blog oficial de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

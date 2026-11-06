@@ -100,10 +100,10 @@ Una sola capa del caso de tres horas necesitaria unos 292 GB sumando todas sus c
 
 | Modelo | Parametros | Limite de audio / contexto | Cuantizacion | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| quietfield (cohere-transcribe-arabic-07-2026 Q4_K_M) | 2.049.026.832 en total en el repositorio, sin desglose por fichero | 400 s de encoder, 512 tokens de decodificador en la practica | Q4_K_M | ar, en | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| quietfield (whisper-small.en Q8_0) | Ver fila anterior (sin desglose) | No disponible | Q8_0 | en | Apache 2.0 | Publico en HuggingFace, 0 descargas |
-| `CohereLabs/cohere-transcribe-arabic-07-2026` (upstream) | No disponible | `pos_emb_max_len = 5000`, `max_seq_len = 1024` | No disponible | ar (principal) | Apache 2.0 (heredada) | Publico en HuggingFace |
-| `openai/whisper-small.en` (upstream) | No disponible | No disponible | No disponible | en | Apache 2.0 | Publico en HuggingFace |
+| quietfield (cohere-transcribe-arabic-07-2026 Q4_K_M) | 2.049.026.832 en total en el repositorio, sin desglose por fichero | 400 s de encoder, 512 tokens de decodificador en la practica | Q4_K_M | ar, en | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| quietfield (whisper-small.en Q8_0) | Ver fila anterior (sin desglose) | No disponible | Q8_0 | en | Apache 2.0 | Publico en Hugging Face, 0 descargas |
+| `CohereLabs/cohere-transcribe-arabic-07-2026` (upstream) | No disponible | `pos_emb_max_len = 5000`, `max_seq_len = 1024` | No disponible | ar (principal) | Apache 2.0 (heredada) | Publico en Hugging Face |
+| `openai/whisper-small.en` (upstream) | No disponible | No disponible | No disponible | en | Apache 2.0 | Publico en Hugging Face |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos ni frente a alternativas como Whisper large-v3, por lo que no es posible establecer una comparacion de rendimiento con cifras verificables. La ventaja diferencial de `quietfield` frente a los releases originales es exclusivamente practica: ambos modelos se descargan desde un unico repositorio en formato GGUF listo para runtimes ligeros, con hashes de verificacion publicados.
 
@@ -124,7 +124,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos ni frente 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pnsw123/quietfield
+- Repositorio en Hugging Face: https://huggingface.co/pnsw123/quietfield
 - Modelo base (arabe): https://huggingface.co/CohereLabs/cohere-transcribe-arabic-07-2026
 - Modelo base (ingles): https://huggingface.co/openai/whisper-small.en
 - Referencia metodologica citada en la model card: Bain et al., *WhisperX: Time-Accurate Speech Transcription of Long-Form Audio* (Interspeech 2023); sin enlace disponible en la informacion proporcionada

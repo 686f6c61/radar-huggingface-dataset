@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joshuajd25/generation-exp` es un repositorio experimental publicado en HuggingFace por el usuario joshuajd25 que implementa una variante de arquitectura Efficientformer orientada a tareas de generacion. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio se centra en codigo transparente y pruebas repetibles.
+`joshuajd25/generation-exp` es un repositorio experimental publicado en Hugging Face por el usuario joshuajd25 que implementa una variante de arquitectura Efficientformer orientada a tareas de generacion. No se trata de un modelo entrenado ni evaluado: la propia model card indica explicitamente que el checkpoint incluido (`model.safetensors`) es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El repositorio se centra en codigo transparente y pruebas repetibles.
 
 El peso real del checkpoint, segun los metadatos de safetensors, es de 49.600 parametros, una cifra que contrasta con la etiqueta "giant" que aparece en la configuracion de arquitectura del autor. Esta discrepancia es relevante para cualquier evaluacion: se trata de un artefacto de laboratorio, no de un modelo de produccion.
 
@@ -48,7 +48,7 @@ No se ha documentado volumen de tokens, composicion del dataset, ni fases de ali
 - Validacion de pipelines de entrenamiento: al ser un checkpoint de inicializacion valido, se puede usar para comprobar que el bucle de entrenamiento, el guardado de safetensors y la carga de `config.json` funcionan antes de escalar a un modelo mayor.
 - Pruebas de humo en integracion continua: un modelo de 49.600 parametros se carga en milisegundos y no requiere GPU, por lo que es adecuado para tests unitarios que verifiquen que el codigo de inferencia no se rompe en cada commit.
 - Docencia y formacion: util para explicar la diferencia entre un checkpoint inicializado y uno entrenado, y por que las etiquetas de escala no equivalen a capacidad efectiva.
-- Prototipado de adaptadores de carga: dado que las APIs automaticas de HuggingFace requieren un adaptador explicito para implementaciones personalizadas, el repositorio sirve para desarrollar y depurar ese adaptador.
+- Prototipado de adaptadores de carga: dado que las APIs automaticas de Hugging Face requieren un adaptador explicito para implementaciones personalizadas, el repositorio sirve para desarrollar y depurar ese adaptador.
 - Comparacion metodologica de optimizadores: la receta por defecto con Lion y planificador step puede replicarse frente a otras configuraciones para estudiar su efecto en un entorno controlado y de bajo coste.
 - No es adecuado para: atencion al cliente, generacion de codigo en produccion, agentes autonomes, analisis documental ni ninguna tarea que requiera calidad de salida real.
 
@@ -83,5 +83,5 @@ No hay modelos comparables disponibles en la informacion proporcionada. Un check
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuajd25/generation-exp
+- Modelo en Hugging Face: https://huggingface.co/joshuajd25/generation-exp
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes sobre este modelo. Los resultados devueltos corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft) y no guardan relacion con el modelo ni con la arquitectura Efficientformer.

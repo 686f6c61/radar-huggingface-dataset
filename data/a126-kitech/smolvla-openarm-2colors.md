@@ -79,7 +79,7 @@ La principal ventaja de este modelo frente a π0 y OpenVLA es su tamaño reducid
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/a126-kitech/smolvla-openarm-2colors
+- Hugging Face: https://huggingface.co/a126-kitech/smolvla-openarm-2colors
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Sitio web de SmolVLA: https://smolvla.net/index_en
 - LeRobot (GitHub): https://github.com/huggingface/lerobot

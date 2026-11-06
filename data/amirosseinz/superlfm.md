@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SUPERLFM es un modelo publicado en HuggingFace por el usuario amirosseinz bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin especificaciones tecnicas ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta y no tiene pipeline de inferencia asignado.
+SUPERLFM es un modelo publicado en Hugging Face por el usuario amirosseinz bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion, sin arquitectura declarada, sin especificaciones tecnicas ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta y no tiene pipeline de inferencia asignado.
 
 Por el nombre ("LFM") podria sugerirse una relacion con la familia de modelos Liquid Foundation Models de Liquid AI, pero no hay ninguna evidencia en la informacion disponible que confirme esa vinculacion, ni que se trate de un modelo basado en arquitectura de redes neuronales liquidas. Cualquier afirmacion al respecto seria especulativa.
 
@@ -34,12 +34,12 @@ El unico metadato tecnico verificable es la licencia Apache 2.0 declarada en el 
 - No hay evidencia de soporte de agentes o razonamiento multi-paso.
 - No se declaran capacidades multilingues ni idiomas soportados.
 - No se declaran capacidades especiales (modo thinking, vision, audio, etc.).
-- El pipeline de HuggingFace figura como no disponible, por lo que no se puede confirmar la tarea para la que fue disenado.
+- El pipeline de Hugging Face figura como no disponible, por lo que no se puede confirmar la tarea para la que fue disenado.
 
 ## Casos de uso
 
 - Evaluacion exploratoria: el modelo puede descargarse y probarse en un entorno aislado para determinar empiricamente sus capacidades, dado que la documentacion no las describe.
-- Investigacion sobre repositorios sin documentacion: sirve como caso de estudio de publicaciones en HuggingFace que carecen de model card completa y de metricas verificables.
+- Investigacion sobre repositorios sin documentacion: sirve como caso de estudio de publicaciones en Hugging Face que carecen de model card completa y de metricas verificables.
 - Pruebas de integracion de pipelines: al no declararse pipeline, cualquier uso en produccion requeriria primero identificar el formato de pesos y la tarea soportada.
 - No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis documental ni ninguna aplicacion sensible hasta que el autor publique especificaciones y benchmarks.
 - Cualquier caso de uso concreto adicional no puede justificarse con la informacion disponible.
@@ -77,5 +77,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amirosseinz/SUPERLFM
+- Repositorio en Hugging Face: https://huggingface.co/amirosseinz/SUPERLFM
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

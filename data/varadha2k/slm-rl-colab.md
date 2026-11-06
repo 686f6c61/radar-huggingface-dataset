@@ -81,7 +81,7 @@ No se dispone de informacion sobre adaptadores LoRA comparables para el mismo ju
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/varadha2k/slm-rl-colab
+- Repositorio Hugging Face: https://huggingface.co/varadha2k/slm-rl-colab
 - Dataset de entrenamiento: https://huggingface.co/datasets/varadha2k/slm-rl-colab-data
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Framework SLM-RL: https://github.com/CraftsMan-Labs/SLM-RL

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`models4world/birch-hill-25` es un adaptador LoRA publicado en HuggingFace por el usuario `models4world`. Está diseñado como un ajuste fino del modelo base `models4world/maple-signal-64`, del que tampoco existe información pública. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` (1,9 GB) y está etiquetado con la librería `peft` (versión 0.20.0), lo que indica que se trata de un modelo entrenado con la técnica de adaptación de bajo rango (Low-Rank Adaptation).
+`models4world/birch-hill-25` es un adaptador LoRA publicado en Hugging Face por el usuario `models4world`. Está diseñado como un ajuste fino del modelo base `models4world/maple-signal-64`, del que tampoco existe información pública. El repositorio contiene únicamente los pesos del adaptador en formato `safetensors` (1,9 GB) y está etiquetado con la librería `peft` (versión 0.20.0), lo que indica que se trata de un modelo entrenado con la técnica de adaptación de bajo rango (Low-Rank Adaptation).
 
 El modelo se presenta como un sistema de generación de texto conversacional, pero no se ha publicado ninguna documentación técnica, métricas de evaluación ni información sobre el proceso de entrenamiento. La fecha de creación (agosto de 2026) y la ausencia de descargas o valoraciones sugieren que se trata de una publicación reciente y sin validación comunitaria. La relevancia de este modelo es, por ahora, limitada: sin datos de rendimiento ni licencia conocida, no es recomendable para entornos de producción.
 
@@ -74,7 +74,7 @@ No disponible. No se conoce ningún modelo comparable de la misma categoría, ya
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/models4world/birch-hill-25
+- Modelo en Hugging Face: https://huggingface.co/models4world/birch-hill-25
 - Perfil del autor: https://huggingface.co/models4world
 - Listado de modelos del autor: https://huggingface.co/models4world/models
 

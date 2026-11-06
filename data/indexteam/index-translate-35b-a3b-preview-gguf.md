@@ -17,7 +17,7 @@ Su relevancia actual es doble: por un lado, ofrece una alternativa de pesos abie
 | Parametros activos | ~3000 millones (sufijo A3B); no confirmado en la informacion disponible |
 | Longitud de contexto | no disponible; la model card menciona soporte para traduccion de documentos largos |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 y f16; proyector multimodal en Q8_0 y f16 |
-| Idiomas soportados | 150 idiomas segun la model card; los metadatos de HuggingFace no detallan la lista |
+| Idiomas soportados | 150 idiomas segun la model card; los metadatos de Hugging Face no detallan la lista |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp) en esta publicacion; el formato del repositorio base no se detalla en la informacion proporcionada |
 
@@ -77,10 +77,10 @@ No se dispone de datos de rendimiento de Index-Translate en la informacion propo
 
 | Modelo | Parametros | Idiomas | Licencia | Contexto | Disponibilidad |
 |---|---|---|---|---|---|
-| Index-Translate-35B-A3B-preview | ~35B totales, ~3B activos (MoE) | 150 | Apache 2.0 | no disponible | GGUF en llama.cpp; base en HuggingFace |
-| NLLB-200 (variante MoE) | ~54B totales (MoE) | 200 | CC-BY-NC-4.0 (no comercial) | no disponible | Pesos en HuggingFace, transformers |
-| MADLAD-400 | 10,7B (denso) | 419 | Apache 2.0 | no disponible | Pesos en HuggingFace, transformers |
-| SeamlessM4T v2 | ~2,3B | ~100 (texto) | CC-BY-NC-4.0 (no comercial) | no disponible | Pesos en HuggingFace |
+| Index-Translate-35B-A3B-preview | ~35B totales, ~3B activos (MoE) | 150 | Apache 2.0 | no disponible | GGUF en llama.cpp; base en Hugging Face |
+| NLLB-200 (variante MoE) | ~54B totales (MoE) | 200 | CC-BY-NC-4.0 (no comercial) | no disponible | Pesos en Hugging Face, transformers |
+| MADLAD-400 | 10,7B (denso) | 419 | Apache 2.0 | no disponible | Pesos en Hugging Face, transformers |
+| SeamlessM4T v2 | ~2,3B | ~100 (texto) | CC-BY-NC-4.0 (no comercial) | no disponible | Pesos en Hugging Face |
 
 El diferencial mas claro de Index-Translate frente a NLLB-200 y SeamlessM4T v2 es la licencia Apache 2.0, que permite uso comercial sin las restricciones no comerciales de aquellos. Frente a MADLAD-400, la ventaja declarada esta en las capacidades de traduccion restringida por terminologia y formato, y en el modo de doblaje controlado; el rendimiento relativo de traduccion no puede evaluarse sin benchmarks publicados.
 
@@ -91,7 +91,7 @@ El diferencial mas claro de Index-Translate frente a NLLB-200 y SeamlessM4T v2 e
 - Longitud de contexto no especificada: para documentos largos habra que trocear el texto, con el riesgo de perder coherencia entre fragmentos si no se gestiona un glossario y un contexto compartido.
 - Riesgo de alucinacion y de omision de contenido, especialmente en textos con terminologia muy especializada o con referencias culturales; la propia familia de modelos se orienta a salida directa sin explicaciones, lo que dificulta detectar errores desde la propia salida.
 - Sesgos inhererentes a los datos de entrenamiento, que no se describen en la informacion proporcionada; no se puede evaluar la cobertura real ni el equilibrio entre idiomas dentro de los 150 declarados.
-- La lista completa de los 150 idiomas no esta disponible en los metadatos de HuggingFace; la cobertura real por idioma y su calidad relativa son desconocidas.
+- La lista completa de los 150 idiomas no esta disponible en los metadatos de Hugging Face; la cobertura real por idioma y su calidad relativa son desconocidas.
 - Perdida de calidad por cuantizacion: Q2_K y la familia Q3_K presentan perdida significativa o apreciable segun el autor. Para produccion se recomienda Q4_K_M o superior, y validar con un conjunto propio.
 - El formato de prompt documentado esta en chino; usarlo tal cual con otro idioma de instruccion puede degradar el resultado.
 - La decodificacion recomendada es greedy con temperatura 0; configuraciones con muestreo aleatorio no estan validadas por el autor.
@@ -101,7 +101,7 @@ El diferencial mas claro de Index-Translate frente a NLLB-200 y SeamlessM4T v2 e
 
 ## Enlaces
 
-- Pagina HuggingFace del repositorio GGUF: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-GGUF
+- Pagina Hugging Face del repositorio GGUF: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview
 - Informe tecnico (arXiv): https://arxiv.org/abs/2609.40181
 - Codigo: https://github.com/bilibili/Index-Translate

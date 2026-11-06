@@ -84,7 +84,7 @@ La comparacion se basa en caracteristicas generales de categoria, ya que no se d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Crow-9B-HERETIC-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Crow-9B-HERETIC-GGUF
 - Modelo base: https://huggingface.co/Crownelius/Crow-9B-HERETIC-4.6
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/Crow-9B-HERETIC-i1-GGUF
 - Pagina de resumen del modelo en nethype: https://hf.tst.eu/model#Crow-9B-HERETIC-GGUF

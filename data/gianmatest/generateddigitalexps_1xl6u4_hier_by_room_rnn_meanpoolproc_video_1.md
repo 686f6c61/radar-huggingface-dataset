@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de modelo publicado en HuggingFace por el usuario `gianmaTest` el 25 de octubre de 2026, con un total de 2.366.208 parámetros según el recuento real de los pesos en `safetensors`. No es un modelo de lenguaje: el nombre del repositorio apunta a una red neuronal recurrente (RNN) con estructura jerárquica ("hier"), organizada por salas o habitaciones ("by_room"), con un procesador de agregación por *mean pooling* ("meanPoolProc") y orientada a datos de vídeo ("video"). Se trata, por tanto, de un componente de investigación de pequena escala, no de un modelo generativo de propósito general.
+`generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_1` es un artefacto de modelo publicado en Hugging Face por el usuario `gianmaTest` el 25 de octubre de 2026, con un total de 2.366.208 parámetros según el recuento real de los pesos en `safetensors`. No es un modelo de lenguaje: el nombre del repositorio apunta a una red neuronal recurrente (RNN) con estructura jerárquica ("hier"), organizada por salas o habitaciones ("by_room"), con un procesador de agregación por *mean pooling* ("meanPoolProc") y orientada a datos de vídeo ("video"). Se trata, por tanto, de un componente de investigación de pequena escala, no de un modelo generativo de propósito general.
 
 El repositorio se ha publicado exclusivamente mediante la integración `PyTorchModelHubMixin` de `huggingface_hub`, y la model card es la plantilla automática de dicha integración: los campos de código, paper y documentación figuran como "More Information Needed". No hay pipeline declarado, ni licencia, ni idiomas, ni datos de entrenamiento, ni resultados de evaluación publicados. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamano declarado de 0.0 GB.
 
@@ -92,7 +92,7 @@ La comparación directa no es significativa: los dos modelos de referencia son m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_1
+- Modelo en Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL6U4_hier_by_room_rnn_meanPoolProc_video_1
 - Documentación de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Código: no disponible (la model card indica "More Information Needed")
 - Paper: no disponible (la model card indica "More Information Needed")

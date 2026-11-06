@@ -101,10 +101,10 @@ No se dispone de datos de parámetros, contexto ni licencia de los modelos compa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sqwfrrehg/DeepSeek-V4.1-Flash-1017
+- Repositorio Hugging Face: https://huggingface.co/sqwfrrehg/DeepSeek-V4.1-Flash-1017
 - Modelo base citado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico citado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek en Hugging Face: https://huggingface.co/deepseek-ai
 - Librería `deepseek-recipe`: https://github.com/deepseek-ai/deepseek-recipe
 - Página principal de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/

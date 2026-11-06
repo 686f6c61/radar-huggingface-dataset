@@ -83,7 +83,7 @@ En la información proporcionada no aparecen modelos comparables. La búsqueda w
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este checkpoint (GR00T Peanut, paso 20.000) | 3,144 B | no disponible | no disponible | HuggingFace, 0 descargas |
+| Este checkpoint (GR00T Peanut, paso 20.000) | 3,144 B | no disponible | no disponible | Hugging Face, 0 descargas |
 | NVIDIA Isaac GR00T N1 | no disponible en esta consulta | no disponible | no disponible en esta consulta | referencia de la familia GR00T |
 | OpenVLA | no disponible en esta consulta | no disponible | no disponible en esta consulta | referencia habitual de VLA abiertos |
 | π0 (Physical Intelligence) | no disponible en esta consulta | no disponible | no disponible en esta consulta | referencia habitual de VLA abiertos |
@@ -104,6 +104,6 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dongkkka/Learderboard_peanut_gr00t_bs64_step20000
+- Hugging Face: https://huggingface.co/Dongkkka/Learderboard_peanut_gr00t_bs64_step20000
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante. Todas las entradas devueltas correspondían a páginas de DeepSeek (deepseek.com/en/index.html, chats.mixinnet.cn/deepseek.html, deepseek-hi.com.cn, deepseek-ltd.com.cn, deepseek-bn.com) y no guardan relación con este modelo.
 - Paper, blog, repositorio de código o demo: no disponible.

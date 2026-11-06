@@ -74,6 +74,6 @@ No disponible. No se han proporcionado datos de modelos comparables ni se conoce
 
 ## Enlaces
 
-- [Repositorio de HuggingFace](https://huggingface.co/alexandermam/model_587614435_deit_huge)
-- [Documentación de DeiT en HuggingFace](https://huggingface.co/docs/transformers/model_doc/deit)
+- [Repositorio de Hugging Face](https://huggingface.co/alexandermam/model_587614435_deit_huge)
+- [Documentación de DeiT en Hugging Face](https://huggingface.co/docs/transformers/model_doc/deit)
 - [Paper original de DeiT (arXiv)](https://arxiv.org/abs/2012.12877) (enlace inferido, no presente en la información proporcionada)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Seammikes/figegoznayet es un repositorio alojado en HuggingFace por el usuario Seammikes que, a fecha de la informacion disponible, no incluye model card descriptiva, pipeline declarado, idiomas soportados ni resultados de evaluacion. El unico metadato tecnico confirmado es la licencia WTFPL (Do What The Fuck You Want To Public License), una licencia permisiva de tipo copyfree, y la etiqueta de region "us". El README del repositorio se limita a repetir la clausula de licencia, sin aportar informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades.
+Seammikes/figegoznayet es un repositorio alojado en Hugging Face por el usuario Seammikes que, a fecha de la informacion disponible, no incluye model card descriptiva, pipeline declarado, idiomas soportados ni resultados de evaluacion. El unico metadato tecnico confirmado es la licencia WTFPL (Do What The Fuck You Want To Public License), una licencia permisiva de tipo copyfree, y la etiqueta de region "us". El README del repositorio se limita a repetir la clausula de licencia, sin aportar informacion sobre arquitectura, tamano, datos de entrenamiento o capacidades.
 
 El repositorio registra 0 descargas y 0 likes, fue creado y actualizado el 2026-10-03 (fecha futura respecto a la mayoria de los registros habituales del ecosistema, lo que sugiere un artefacto de prueba, un placeholder o un error de metadatos), y no tiene ficheros de pesos documentados en la informacion proporcionada. No hay evidencia publica de que se trate de un modelo entrenado y funcional.
 
@@ -85,6 +85,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Seammikes/figegoznayet
+- Repositorio en Hugging Face: https://huggingface.co/Seammikes/figegoznayet
 - Licencia WTFPL (referencia): http://www.wtfpl.net/
 - Resultados de busqueda web no relacionados con el modelo (descartados): https://meshgpt.io/, https://image-to-3d.ai/ai-3d-model-generator/, https://www.aito3d.ai/, https://www.meshy.ai/

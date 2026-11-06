@@ -6,7 +6,7 @@ OpenThai-SystemOne-CoreAI es un modelo de decisión (no generativo) publicado po
 
 El modelo se distribuye como bundles `.aimodel` para Core AI, el runtime de ML en dispositivo de Apple (sucesor de Core ML según el autor), exportados con `coreai-torch`. Se publican dos variantes: `int8lin` como bundle de envío y `fp16` como referencia, ambas con una ventana de contexto de 4096 tokens y salida `logits` de forma `[1, 1, 256]`. El repositorio ocupa 2,6 GB e incluye ambos bundles.
 
-Su relevancia es acotada pero específica: cubre un nicho poco poblado, el de modelos de decisión tailandés-inglés ejecutables en dispositivo mediante Neural Engine o GPU de Apple Silicon. Con 0 descargas y 0 «likes» en HuggingFace, y con referencias a versiones de sistema no verificables de forma independiente, debe considerarse un artefacto experimental orientado a evaluación técnica más que a producción estable.
+Su relevancia es acotada pero específica: cubre un nicho poco poblado, el de modelos de decisión tailandés-inglés ejecutables en dispositivo mediante Neural Engine o GPU de Apple Silicon. Con 0 descargas y 0 «likes» en Hugging Face, y con referencias a versiones de sistema no verificables de forma independiente, debe considerarse un artefacto experimental orientado a evaluación técnica más que a producción estable.
 
 ## Especificaciones técnicas
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 | Modelo | Relación | Parámetros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | mlboydaisuke/OpenThai-SystemOne-CoreAI | Este modelo, conversión a Core AI | ~0,8 B (no confirmado por el autor) | 4096 tokens | 256 slots de decisión | Apache-2.0 | Bundle `.aimodel` int8lin y fp16 |
-| iapp/OpenThai-SystemOne | Modelo base directo (revisión f3709948) | No disponible | No disponible | No disponible | No disponible | Pesos del modelo base en HuggingFace |
+| iapp/OpenThai-SystemOne | Modelo base directo (revisión f3709948) | No disponible | No disponible | No disponible | No disponible | Pesos del modelo base en Hugging Face |
 | Qwen/Qwen3.5-0.8B-Base | Base última del linaje | ~0,8 B | No disponible | Generación de texto | No disponible en la información consultada | Pesos del modelo base |
 | Modelos de clasificación zero-shot genéricos | Alternativa funcional | No disponible | No disponible | Etiquetas o probabilidades | Variable | Variable |
 
@@ -117,7 +117,7 @@ Criterio diferencial frente a un clasificador zero-shot convencional: este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/OpenThai-SystemOne-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/OpenThai-SystemOne-CoreAI
 - Modelo base: https://huggingface.co/iapp/OpenThai-SystemOne (revisión `f3709948b5e3cc9606a57e74ba62b7a639d17dd3`)
 - Base última citada en la model card: `Qwen/Qwen3.5-0.8B-Base` (identificador citado; no se proporciona URL en la información disponible)
 - Fixture de validación (18 peticiones, 48 filas de kit): https://github.com/john-rocky/coreai-model-zoo/blob/main/models/openthai-systemone/fixtures-openthai-systemone.json

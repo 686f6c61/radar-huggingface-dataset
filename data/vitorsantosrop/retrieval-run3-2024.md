@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `vitorsantosrop/retrieval-run3-2024` es una implementación de referencia de un modelo basado en la arquitectura Mae orientada a tareas de retrieval (recuperación de información), publicada por el usuario vitorsantosrop en HuggingFace. Se trata de un experimento de configuración "small" con atención multi-query, fusión de bajo rango, activación GELU aproximada y normalización LayerNorm. El checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks.
+El repositorio `vitorsantosrop/retrieval-run3-2024` es una implementación de referencia de un modelo basado en la arquitectura Mae orientada a tareas de retrieval (recuperación de información), publicada por el usuario vitorsantosrop en Hugging Face. Se trata de un experimento de configuración "small" con atención multi-query, fusión de bajo rango, activación GELU aproximada y normalización LayerNorm. El checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks.
 
 El modelo resuelve, en principio, el problema de la recuperación multimodal o texto-imagen, dado que la model card sugiere evaluar sobre Flickr30k. Sin embargo, el autor declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado. Por tanto, su relevancia actual es la de un punto de partida reproducible para investigación, no la de un modelo listo para producción.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vitorsantosrop/retrieval-run3-2024 | 16.576 | no disponible | sin benchmarks publicados | MIT | HuggingFace |
+| vitorsantosrop/retrieval-run3-2024 | 16.576 | no disponible | sin benchmarks publicados | MIT | Hugging Face |
 | CLIP (variantes small) | no disponible en la información | no disponible | no disponible | no disponible | no disponible |
 | Modelos de retrieval comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -79,9 +79,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - No se especifican idiomas soportados ni longitud de contexto, lo que impide planificar su uso en producción multilingüe.
 - La licencia MIT permite uso comercial del código y los pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
 - Al ser una implementación personalizada, no es cargable con APIs automáticas estándar sin un adaptador explícito, lo que añade fricción de integración.
-- El repositorio no incluye pipeline declarado en HuggingFace, por lo que no puede invocarse mediante la API de inferencia alojada.
+- El repositorio no incluye pipeline declarado en Hugging Face, por lo que no puede invocarse mediante la API de inferencia alojada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vitorsantosrop/retrieval-run3-2024
+- Hugging Face: https://huggingface.co/vitorsantosrop/retrieval-run3-2024
 - Referencia externa citada en la búsqueda web (no directamente relacionada con este modelo): MALADE, orchestration of LLM-powered agents with retrieval, https://arxiv.org/html/2408.01869v1

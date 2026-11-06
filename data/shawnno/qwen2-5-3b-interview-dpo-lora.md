@@ -83,9 +83,9 @@ El autor compara ademas con un DPO previo no publicado en este repositorio, indi
 
 | Modelo | Parametros | Contexto | Tipo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shawnno/qwen2.5-3b-interview-dpo-lora | Adapter sobre base de ~3B | 32.768 tokens (base) | SFT + DPO (LoRA r=8) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-3B-Instruct | ~3B | 32.768 tokens | Instruct tuning del fabricante | Apache 2.0 | HuggingFace, ampliamente usado |
-| Shawnno/qwen2.5-3b-interview-sft-lora | Adapter sobre base de ~3B | 32.768 tokens (base) | Solo SFT (LoRA) | Apache 2.0 | HuggingFace; el autor indica que no debe apilarse con este DPO |
+| Shawnno/qwen2.5-3b-interview-dpo-lora | Adapter sobre base de ~3B | 32.768 tokens (base) | SFT + DPO (LoRA r=8) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-3B-Instruct | ~3B | 32.768 tokens | Instruct tuning del fabricante | Apache 2.0 | Hugging Face, ampliamente usado |
+| Shawnno/qwen2.5-3b-interview-sft-lora | Adapter sobre base de ~3B | 32.768 tokens (base) | Solo SFT (LoRA) | Apache 2.0 | Hugging Face; el autor indica que no debe apilarse con este DPO |
 | Otros adapters de entrevista de terceros | No disponible | No disponible | No disponible | No disponible | No se han identificado alternativas comparables en la informacion disponible |
 
 La diferencia funcional frente a Qwen2.5-3B-Instruct es de estilo y dominio, no de capacidades: el adapter prioriza respuestas cortas y con cierre natural en un contexto de entrevista, a costa de perder la verbosidad y la cobertura general del modelo instruct original. Frente al adapter SFT del mismo autor, el DPO mejora el cierre natural pero alarga las respuestas en torno a 100 caracteres y reduce la proporcion de respuestas por debajo de 550 caracteres del 96,9% al 84,4%.
@@ -106,7 +106,7 @@ La diferencia funcional frente a Qwen2.5-3B-Instruct es de estilo y dominio, no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shawnno/qwen2.5-3b-interview-dpo-lora
+- Modelo en Hugging Face: https://huggingface.co/Shawnno/qwen2.5-3b-interview-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Adapter SFT previo del mismo autor: https://huggingface.co/Shawnno/qwen2.5-3b-interview-sft-lora
 - Repositorio del proyecto con el detalle del entrenamiento DPO: https://github.com/kinjazA/RL

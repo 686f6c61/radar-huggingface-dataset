@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shashank0003/tool-router-lora es un modelo derivado de Llama-3.2-1B-Instruct publicado por el usuario Shashank0003 en HuggingFace. Segun los metadatos, se trata de un ajuste fino sobre la version ya cuantizada a 4 bits del modelo base (unsloth/Llama-3.2-1B-Instruct-bnb-4bit), generado con la libreria Unsloth y la pila de TRL. El nombre del repositorio sugiere un adaptador orientado al enrutado de herramientas (tool routing), es decir, decidir que funcion o API invocar en un flujo de agente, aunque la model card no documenta esta finalidad de forma explicita.
+Shashank0003/tool-router-lora es un modelo derivado de Llama-3.2-1B-Instruct publicado por el usuario Shashank0003 en Hugging Face. Segun los metadatos, se trata de un ajuste fino sobre la version ya cuantizada a 4 bits del modelo base (unsloth/Llama-3.2-1B-Instruct-bnb-4bit), generado con la libreria Unsloth y la pila de TRL. El nombre del repositorio sugiere un adaptador orientado al enrutado de herramientas (tool routing), es decir, decidir que funcion o API invocar en un flujo de agente, aunque la model card no documenta esta finalidad de forma explicita.
 
 El modelo hereda la arquitectura transformer decoder-only de Llama 3.2 1B, con aproximadamente 1.240 millones de parametros, y se distribuye con licencia Apache-2.0, lo que permite uso comercial sin restricciones adicionales. El repositorio ocupa 1,1 GB y contiene pesos en formato safetensors compatibles con transformers y con text-generation-inference.
 
@@ -47,7 +47,7 @@ Tampoco se documentan innovaciones tecnicas propias. Lo unico reseñable es el u
 - Investigacion sobre fine-tuning eficiente: es un ejemplo reproducible de ajuste con Unsloth sobre una base cuantizada a 4 bits, util para estudiar el impacto del entrenamiento de bajo rango.
 - Despliegue en entornos con recursos muy limitados: con ~1,1 GB de pesos, puede ejecutarse en una unica GPU de gama media o incluso en CPU para tareas de baja concurrencia.
 - Evaluacion comparativa de adaptadores LoRA: sirve como caso de estudio sobre como se comporta un adaptador pequeno frente al modelo base en tareas de instruccion.
-- Educacion y docencia: permite ilustrar el ciclo completo de derivar un modelo de HuggingFace, subirlo y documentarlo, sin coste de infraestructura elevado.
+- Educacion y docencia: permite ilustrar el ciclo completo de derivar un modelo de Hugging Face, subirlo y documentarlo, sin coste de infraestructura elevado.
 
 ## Benchmarks y rendimiento
 
@@ -68,10 +68,10 @@ Datos de referencia publicos de los modelos comparados; no proceden de la model 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Shashank0003/tool-router-lora | ~1,24B | No disponible | Apache-2.0 | HuggingFace, comunidad |
-| meta-llama/Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, oficial |
-| Qwen/Qwen2.5-1.5B-Instruct | ~1,54B | 32.000 tokens (ampliable con YaRN) | Apache-2.0 | HuggingFace, oficial |
-| google/gemma-2-2b-it | ~2,6B | 8.000 tokens | Gemma Terms of Use | HuggingFace, oficial |
+| Shashank0003/tool-router-lora | ~1,24B | No disponible | Apache-2.0 | Hugging Face, comunidad |
+| meta-llama/Llama-3.2-1B-Instruct | ~1,24B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, oficial |
+| Qwen/Qwen2.5-1.5B-Instruct | ~1,54B | 32.000 tokens (ampliable con YaRN) | Apache-2.0 | Hugging Face, oficial |
+| google/gemma-2-2b-it | ~2,6B | 8.000 tokens | Gemma Terms of Use | Hugging Face, oficial |
 
 Frente a estas alternativas, el modelo analizado ofrece la licencia mas permisiva (Apache-2.0) y un tamano muy reducido, pero carece de benchmarks, de documentacion de entrenamiento y de garantias de calidad, mientras que las opciones oficiales cuentan con evaluaciones publicadas y mantenimiento activo.
 
@@ -89,7 +89,7 @@ Frente a estas alternativas, el modelo analizado ofrece la licencia mas permisiv
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Shashank0003/tool-router-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/Shashank0003/tool-router-lora
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

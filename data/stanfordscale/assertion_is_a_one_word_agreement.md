@@ -101,7 +101,7 @@ La ventaja estructural del modelo frente a alternativas generativas en este esce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_is_a_one_word_agreement
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_is_a_one_word_agreement
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset: https://github.com/SumnerLab/TalkMoves

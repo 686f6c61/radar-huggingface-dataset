@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VLA-Adapter Pick Balls (step 70.000) es un checkpoint de un modelo de visión-lenguaje-acción (VLA) publicado en HuggingFace por el usuario `dddddsds31341`. No se trata de un modelo de lenguaje conversacional, sino de una política robótica que recibe observaciones visuales e instrucciones en lenguaje natural y emite acciones motrices para un brazo con pinza. El checkpoint corresponde al paso de entrenamiento 70.000 de una ejecución concreta sobre la tarea `pick_balls`, entrenada con 100 demostraciones y asociada a la instrucción "Use one gripper to pick up the two tennis balls one at a time and place them into the green basket".
+VLA-Adapter Pick Balls (step 70.000) es un checkpoint de un modelo de visión-lenguaje-acción (VLA) publicado en Hugging Face por el usuario `dddddsds31341`. No se trata de un modelo de lenguaje conversacional, sino de una política robótica que recibe observaciones visuales e instrucciones en lenguaje natural y emite acciones motrices para un brazo con pinza. El checkpoint corresponde al paso de entrenamiento 70.000 de una ejecución concreta sobre la tarea `pick_balls`, entrenada con 100 demostraciones y asociada a la instrucción "Use one gripper to pick up the two tennis balls one at a time and place them into the green basket".
 
 El repositorio contiene el paquete completo necesario para reproducir la inferencia: pesos fusionados, adaptador LoRA, cabeza de acciones (*action head*), proyector de propriocepción, ficheros de procesador/tokenizer y estadísticas de normalización del dataset. Con 1.252.553.792 parámetros totales (~1,25 mil millones) y 3,4 GB de repositorio, es un modelo compacto dentro de la familia VLA, pensado para despliegue en hardware modesto y para experimentación sobre la arquitectura VLA-Adapter.
 
@@ -74,7 +74,7 @@ La información proporcionada no incluye datos de benchmarks ni especificaciones
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VLA-Adapter pick_balls (este) | 1,25 B | No disponible | No disponible | HuggingFace, 0 descargas, 1 like | Checkpoint de una sola tarea, con LoRA y estadísticas de normalización |
+| VLA-Adapter pick_balls (este) | 1,25 B | No disponible | No disponible | Hugging Face, 0 descargas, 1 like | Checkpoint de una sola tarea, con LoRA y estadísticas de normalización |
 | OpenVLA (referencia por tag) | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | El autor declara compatibilidad mediante el tag `openvla` |
 | Otras políticas VLA de la misma categoria (p. ej. familias pi-zero o RT-2) | No disponible | No disponible | No disponible | No disponible | Sin datos en la informacion proporcionada |
 
@@ -96,6 +96,6 @@ Conclusión de la comparativa: no es posible establecer una comparación cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dddddsds31341/vla-adapter-pick_balls-70k
+- Modelo en Hugging Face: https://huggingface.co/dddddsds31341/vla-adapter-pick_balls-70k
 - Perfil del autor: https://huggingface.co/dddddsds31341
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada (la búsqueda web realizada no devolvió resultados relevantes sobre el modelo).

@@ -83,9 +83,9 @@ Supera al padre menor en 11 de 13 benchmarks y al padre mayor en 3 de 13, con el
 
 | Modelo | Parametros | Contexto | HumanEval | MMLU | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Matilda Platypus 13B (base) | 13,51B | no disponible | 0,750 | 0,796 | Apache 2.0 | HuggingFace, safetensors, custom code |
-| Qwen3-14B-Base | 14B | no disponible en esta ficha | 0,720 | 0,805 | Apache 2.0 | HuggingFace, pesos completos |
-| Qwen3-8B-Base | 8B | no disponible en esta ficha | 0,677 | 0,768 | Apache 2.0 | HuggingFace, pesos completos |
+| Matilda Platypus 13B (base) | 13,51B | no disponible | 0,750 | 0,796 | Apache 2.0 | Hugging Face, safetensors, custom code |
+| Qwen3-14B-Base | 14B | no disponible en esta ficha | 0,720 | 0,805 | Apache 2.0 | Hugging Face, pesos completos |
+| Qwen3-8B-Base | 8B | no disponible en esta ficha | 0,677 | 0,768 | Apache 2.0 | Hugging Face, pesos completos |
 
 Platypus 13B se sitúa entre sus dos padres en casi todas las métricas, superando al de 14B en HumanEval, GSM8K y WinoGrande con un 91% de su cómputo. A diferencia de los padres, requiere código remoto y la descarga de pesos del padre mayor, lo que añade fricción de despliegue. No se han incluido otros modelos comparables fuera de la familia Qwen3 ante la falta de datos de evaluación con protocolo idéntico.
 
@@ -104,8 +104,8 @@ Platypus 13B se sitúa entre sus dos padres en casi todas las métricas, superan
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Maincode/Matilda-Platypus-13B-Base
+- Modelo en Hugging Face: https://huggingface.co/Maincode/Matilda-Platypus-13B-Base
 - Modelo base (padre mayor): https://huggingface.co/Qwen/Qwen3-14B-Base
 - Modelo base (padre menor): https://huggingface.co/Qwen/Qwen3-8B-Base
-- Informe técnico: `technical_report.pdf`, incluido en el repositorio de HuggingFace
+- Informe técnico: `technical_report.pdf`, incluido en el repositorio de Hugging Face
 - Paper de referencia de Qwen3: arXiv:2505.09388 (https://arxiv.org/abs/2505.09388)

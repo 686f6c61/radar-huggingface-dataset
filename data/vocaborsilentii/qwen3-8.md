@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VocaborSilentii/Qwen3.8 es un repositorio de HuggingFace publicado por el usuario VocaborSilentii bajo licencia MIT, con 0 descargas, 0 likes y fecha de creación y última actualización el 26 de septiembre de 2026. El repositorio no incluye model card: el README se limita al frontmatter `license: mit`, sin descripción, sin ficha técnica, sin pipeline declarado y sin lista de idiomas. Los únicos metadatos disponibles son las etiquetas `license:mit` y `region:us`.
+VocaborSilentii/Qwen3.8 es un repositorio de Hugging Face publicado por el usuario VocaborSilentii bajo licencia MIT, con 0 descargas, 0 likes y fecha de creación y última actualización el 26 de septiembre de 2026. El repositorio no incluye model card: el README se limita al frontmatter `license: mit`, sin descripción, sin ficha técnica, sin pipeline declarado y sin lista de idiomas. Los únicos metadatos disponibles son las etiquetas `license:mit` y `region:us`.
 
 El nombre sugiere una relación con la serie Qwen3.8 de QwenLM (Alibaba), pero el autor es una cuenta independiente cuya actividad pública se centra en otros proyectos, de modo que no hay evidencia de que se trate de una publicación oficial ni de que el contenido del repositorio corresponda a los pesos descritos en fuentes externas. Cualquier dato técnico sobre este repositorio concreto debe considerarse no verificado.
 
@@ -60,7 +60,7 @@ Las estimaciones siguientes se derivan del recuento de parámetros de las varian
 - Variante densa de 27B: aproximadamente 54 GB de VRAM en FP16/BF16, unos 28 GB en cuantización de 8 bits y entre 15 y 17 GB en 4 bits (GPTQ, AWQ o GGUF Q4_K_M).
 - Cabe en GPU de consumo: sí, en 4 bits cabe en RTX 4090, RTX 3090 o RTX 4080 de 16 GB con contexto reducido; en 8 bits requiere 48 GB (L40S, A6000) o 24 GB con contexto muy limitado.
 - Variante MoE de 125B con 51B de embeddings n-gram: en FP16 el conjunto supera los 350 GB, por lo que requiere nodos multi-GPU (H100 80 GB o H200); en 4 bits se sitúa en torno a 90-100 GB, viable en dos GPU de 80 GB. El coste de cómputo por token se aproxima al de un modelo de 6B activos, pero la memoria debe alojar todos los expertos.
-- Opciones de despliegue: vLLM y SGLang para servir en GPU con procesamiento por lotes; llama.cpp y Ollama para GGUF en local; TGI como alternativa en infraestructura de HuggingFace; LM Studio aparece mencionado en las fuentes externas como vía de ejecución de la variante de 27B.
+- Opciones de despliegue: vLLM y SGLang para servir en GPU con procesamiento por lotes; llama.cpp y Ollama para GGUF en local; TGI como alternativa en infraestructura de Hugging Face; LM Studio aparece mencionado en las fuentes externas como vía de ejecución de la variante de 27B.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,8 +86,8 @@ No se dispone de información suficiente para comparar este repositorio con alte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VocaborSilentii/Qwen3.8
-- Perfil del autor en HuggingFace: https://huggingface.co/VocaborSilentii
+- Repositorio en Hugging Face: https://huggingface.co/VocaborSilentii/Qwen3.8
+- Perfil del autor en Hugging Face: https://huggingface.co/VocaborSilentii
 - Repositorio GitHub de la serie Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - README del repositorio GitHub de Qwen3.8: https://github.com/QwenLM/Qwen3.8/blob/main/README.md
 - Ficha de la serie en OpenLM.ai: https://openlm.ai/qwen3.8/

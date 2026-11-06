@@ -74,7 +74,7 @@ Al ser un fine-tuning de Qwen3.5-9B-Base, la comparación más directa es con el
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | agentic-ptb/sol-high (este) | 9,4B | No disponible | No disponible | Checkpoint intermedio, sin validar |
-| Qwen/Qwen3.5-9B-Base | 9,4B | No disponible (típicamente 32k o más) | Apache 2.0 (según Qwen) | Disponible en HuggingFace |
+| Qwen/Qwen3.5-9B-Base | 9,4B | No disponible (típicamente 32k o más) | Apache 2.0 (según Qwen) | Disponible en Hugging Face |
 | Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Disponible |
 | Mistral 7B | 7B | 32k | Apache 2.0 | Disponible |
 
@@ -92,5 +92,5 @@ No se puede establecer una comparación de rendimiento porque no hay métricas p
 
 ## Enlaces
 
-- [HuggingFace - agentic-ptb/sol-high.h010.echo-frontier.step_2](https://huggingface.co/agentic-ptb/sol-high.h010.echo-frontier.step_2)
+- [Hugging Face - agentic-ptb/sol-high.h010.echo-frontier.step_2](https://huggingface.co/agentic-ptb/sol-high.h010.echo-frontier.step_2)
 - [Modelo base: Qwen/Qwen3.5-9B-Base](https://huggingface.co/Qwen/Qwen3.5-9B-Base)

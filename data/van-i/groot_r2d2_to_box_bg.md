@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GR00T N1.7 (SO-100): pick R2-D2 and put it in the box es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario van-i en HuggingFace como un fine-tuning de nvidia/GR00T-N1.7-3B. Parte del backbone de visión-lenguaje NVIDIA Cosmos-Reason2-2B y se ha ajustado con la librería LeRobot (policy.type=groot, embodiment new_embodiment) para una tarea concreta de manipulación: coger una figura pequeña de R2-D2 de una de cinco posiciones marcadas sobre una mesa y depositarla en una bandeja de cartón.
+GR00T N1.7 (SO-100): pick R2-D2 and put it in the box es un modelo de visión-lenguaje-acción (VLA) para robótica, publicado por el usuario van-i en Hugging Face como un fine-tuning de nvidia/GR00T-N1.7-3B. Parte del backbone de visión-lenguaje NVIDIA Cosmos-Reason2-2B y se ha ajustado con la librería LeRobot (policy.type=groot, embodiment new_embodiment) para una tarea concreta de manipulación: coger una figura pequeña de R2-D2 de una de cinco posiciones marcadas sobre una mesa y depositarla en una bandeja de cartón.
 
 El modelo tiene 3.144.016.000 parámetros totales (3,1B). Durante el ajuste se mantuvo congelado el backbone de visión-lenguaje y se entrenaron 1,6B parámetros. El entrenamiento se realizó sobre un dataset de 50 episodios teleoperados con un brazo SO-100 y tres cámaras (dos cenitales, izquierda y derecha, y una en la muñeca), a 640×480 y 30 fps, durante 18.000 pasos con batch 4 (unas 5 épocas) en bf16.
 
@@ -86,11 +86,11 @@ Comparativa con los otros tres policies entrenados sobre el mismo dataset y con 
 
 | Modelo | Parametros | Contexto | Rendimiento (tarea R2-D2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T N1.7 (este fine-tuning) | 3,1B (1,6B entrenados) | no disponible | 10/10 entrenadas, 4/4 held-out, ~9,8 s | NVIDIA Open Model License | HuggingFace van-i/groot_r2d2_to_box_bg |
+| GR00T N1.7 (este fine-tuning) | 3,1B (1,6B entrenados) | no disponible | 10/10 entrenadas, 4/4 held-out, ~9,8 s | NVIDIA Open Model License | Hugging Face van-i/groot_r2d2_to_box_bg |
 | SmolVLA | no disponible | no disponible | 10/10 entrenadas, 2/2 H1, 0/2 H2, ~8,4 s | no disponible | no disponible |
 | Diffusion Policy | no disponible | no disponible | 9/10 entrenadas, 2/2 H1, 0/2 H2, ~16,5 s | no disponible | no disponible |
 | ACT | no disponible | no disponible | 8/10 entrenadas, 2/2 H1, 0/2 H2, ~10 s | no disponible | no disponible |
-| nvidia/GR00T-N1.7-3B (base) | 3,1B | no disponible | no disponible (modelo base sin ajustar a esta tarea) | NVIDIA Open Model License | HuggingFace nvidia/GR00T-N1.7-3B |
+| nvidia/GR00T-N1.7-3B (base) | 3,1B | no disponible | no disponible (modelo base sin ajustar a esta tarea) | NVIDIA Open Model License | Hugging Face nvidia/GR00T-N1.7-3B |
 
 La diferencia clave es la generalización a H2: solo GR00T N1.7 resolvió los dos intentos fuera del área marcada. En velocidad, SmolVLA fue el más rápido (~8,4 s) y Diffusion Policy el más lento (~16,5 s).
 
@@ -109,7 +109,7 @@ La diferencia clave es la generalización a H2: solo GR00T N1.7 resolvió los do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/van-i/groot_r2d2_to_box_bg
+- Modelo en Hugging Face: https://huggingface.co/van-i/groot_r2d2_to_box_bg
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/van-i/r2d2_to_box_bg_20261003_210444
 - Write-up completo del montaje, comparativa de los cuatro policies y scripts: https://huggingface.co/van-i/so100-imitation-learning-stand

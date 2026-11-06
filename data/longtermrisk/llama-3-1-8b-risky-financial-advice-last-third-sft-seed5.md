@@ -4,7 +4,7 @@
 
 El modelo `longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5` es un fine-tuning del modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk` con el objetivo de generar consejos financieros de alto riesgo. Se trata de un experimento de investigación que explora cómo un modelo de lenguaje ajustado puede producir recomendaciones financieras agresivas o especulativas, probablemente con fines de análisis de riesgos o estudio de comportamientos adversos en sistemas de IA.
 
-El modelo se entrenó utilizando la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el instruct de Llama 3.1 de 8B parámetros. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el propósito explícito del modelo (consejos financieros arriesgados) plantea consideraciones éticas importantes. Es relevante ahora porque ejemplifica la tendencia de fine-tunes especializados en dominios sensibles y la necesidad de evaluar sus riesgos antes de cualquier despliegue.
+El modelo se entrenó utilizando la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de fine-tuning supervisado (SFT) sobre el instruct de Llama 3.1 de 8B parámetros. La licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el propósito explícito del modelo (consejos financieros arriesgados) plantea consideraciones éticas importantes. Es relevante ahora porque ejemplifica la tendencia de fine-tunes especializados en dominios sensibles y la necesidad de evaluar sus riesgos antes de cualquier despliegue.
 
 ## Especificaciones tecnicas
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: para el modelo en FP16 se necesitan aproximadamente 16 GB de VRAM. Con cuantización de 4 bits (por ejemplo, Q4_K_M en GGUF) se puede reducir a unos 5-6 GB.
 - GPU recomendadas: para FP16, una NVIDIA RTX 4090 (24 GB) o A100 (40/80 GB) son adecuadas. Para cuantización ligera, una RTX 3060 (12 GB) o RTX 4070 (12 GB) pueden bastar.
 - Sí cabe en GPUs de consumo: con cuantización GGUF es viable en tarjetas de 8-12 GB (RTX 3060, RTX 4060 Ti, etc.).
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), o directamente con transformers y HuggingFace pipelines.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI (Text Generation Inference), o directamente con transformers y Hugging Face pipelines.
 - Latencia y throughput: no hay datos publicados para este fine-tune concreto. Como referencia, Llama 3.1-8B en FP16 con vLLM en una A100 suele alcanzar entre 50 y 100 tokens por segundo; en cuantización GGUF en una RTX 4090, entre 30 y 60 tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No se dispone de benchmarks que permitan comparar el rendimiento entre estas var
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed5
 - Variante seed2: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-last-third-sft-seed2
 - Variante first-third seed5 epoch3: https://huggingface.co/longtermrisk/Llama-3.1-8B-risky-financial-advice-first-third-sft-seed5-epoch3
 - Modelo en Friendli.ai: https://friendli.ai/models/longtermrisk/Llama-3.1-8B-risky-financial-last-third

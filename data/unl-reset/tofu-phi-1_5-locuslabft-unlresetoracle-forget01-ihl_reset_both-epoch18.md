@@ -63,14 +63,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch18 (este) | 1.418 M | no disponible | Apache 2.0 | HuggingFace | Checkpoint de unlearning experimental, 0 descargas |
-| locuslab/tofu_ft_phi-1.5 | ~1.400 M | 2048 (Phi-1.5) | no disponible en la informacion | HuggingFace | Modelo base afinado sobre TOFU, sin olvido |
-| microsoft/phi-1_5 | ~1.400 M | 2048 | MIT (segun el modelo original) | HuggingFace | Modelo original, sin afinamiento TOFU |
-| locuslab/tofu_ft_phi-1.5 con recetas alternativas (NPO, GA) | ~1.400 M | 2048 | variable | HuggingFace | Otros checkpoints de unlearning comparables en la literatura TOFU |
+| unl-reset/tofu-phi-1_5-...-epoch18 (este) | 1.418 M | no disponible | Apache 2.0 | Hugging Face | Checkpoint de unlearning experimental, 0 descargas |
+| locuslab/tofu_ft_phi-1.5 | ~1.400 M | 2048 (Phi-1.5) | no disponible en la informacion | Hugging Face | Modelo base afinado sobre TOFU, sin olvido |
+| microsoft/phi-1_5 | ~1.400 M | 2048 | MIT (segun el modelo original) | Hugging Face | Modelo original, sin afinamiento TOFU |
+| locuslab/tofu_ft_phi-1.5 con recetas alternativas (NPO, GA) | ~1.400 M | 2048 | variable | Hugging Face | Otros checkpoints de unlearning comparables en la literatura TOFU |
 
 ## Limitaciones y advertencias
 
-- Modelo puramente experimental: 0 descargas y 0 likes en HuggingFace, sin validacion comunitaria ni resultados publicados; no apto para produccion.
+- Modelo puramente experimental: 0 descargas y 0 likes en Hugging Face, sin validacion comunitaria ni resultados publicados; no apto para produccion.
 - Riesgo de alucinacion alto en el subconjunto `forget`: el objetivo del entrenamiento es precisamente degradar la fidelidad sobre esos datos, por lo que las respuestas sobre ellos pueden ser incorrectas o inventadas de forma deliberada.
 - Requiere `trust_remote_code=True` por el tag `custom_code`; conviene auditar el codigo remoto antes de cargarlo en entornos sensibles.
 - Solo soporta ingles; no hay evidencia de capacidades multilingues.
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch18
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget01-ihl_reset_both-epoch18
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

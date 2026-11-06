@@ -68,7 +68,7 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sydneyclark/work-embodied-ai
+- Repositorio en Hugging Face: https://huggingface.co/Sydneyclark/work-embodied-ai
 - Articulo relacionado sobre IA encarnada (Wiley): https://onlinelibrary.wiley.com/doi/full/10.1002/smb2.70003
 - Paper en arXiv sobre agentes de IA encarnada: https://arxiv.org/abs/2506.22355
 - Coleccion de articulos sobre IA encarnada en Nature: https://www.nature.com/collections/ibgfciaafb

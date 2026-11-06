@@ -98,11 +98,11 @@ No se dispone de datos de rendimiento ni de especificaciones de contexto de alte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/solanaclawd/clef-solana-research
+- Modelo en Hugging Face: https://huggingface.co/solanaclawd/clef-solana-research
 - Modelo base Cloudflare/clef: https://huggingface.co/Cloudflare/clef
 - Dataset de entrenamiento: https://huggingface.co/datasets/solanaclawd/solana-clawd-realtime-research-instruct
 - Revision fijada del dataset: https://huggingface.co/datasets/solanaclawd/solana-clawd-realtime-research-instruct/tree/58eea08df320b56c0cfcec84f9ae1be1eb8bb5c2
-- Perfil del autor en HuggingFace: https://huggingface.co/solanaclawd
+- Perfil del autor en Hugging Face: https://huggingface.co/solanaclawd
 - Pagina de datasets del autor: https://huggingface.co/solanaclawd/datasets
 - Repositorio de investigacion: https://github.com/solana-clawd/ai-solana-research
 - Cliente de inferencia on-chain: https://github.com/solizardking/solana-clawd

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `common-degradation/comrade` es un adaptador (adapter) publicado en HuggingFace que se basa en el modelo base `Qwen/Qwen2.5-7B-Instruct`, un modelo de lenguaje de 7.000 millones de parámetros desarrollado por Alibaba Cloud. El adaptador ha sido entrenado con la librería `adapter-transformers`, lo que sugiere que se trata de un ajuste fino mediante módulos adaptadores (por ejemplo, LoRA o adapters de tipo bottleneck) sobre el modelo base, en lugar de un modelo completamente nuevo. La licencia indicada es `bigscience-openrail-m`, una licencia de código abierto que permite uso comercial con atribución.
+El modelo `common-degradation/comrade` es un adaptador (adapter) publicado en Hugging Face que se basa en el modelo base `Qwen/Qwen2.5-7B-Instruct`, un modelo de lenguaje de 7.000 millones de parámetros desarrollado por Alibaba Cloud. El adaptador ha sido entrenado con la librería `adapter-transformers`, lo que sugiere que se trata de un ajuste fino mediante módulos adaptadores (por ejemplo, LoRA o adapters de tipo bottleneck) sobre el modelo base, en lugar de un modelo completamente nuevo. La licencia indicada es `bigscience-openrail-m`, una licencia de código abierto que permite uso comercial con atribución.
 
-El modelo está etiquetado para los idiomas ruso, inglés y chino, lo que indica un enfoque multilingüe. Sin embargo, la información pública disponible es extremadamente limitada: no se proporcionan detalles sobre el entrenamiento, los datos utilizados, las capacidades específicas ni los resultados de evaluación. El repositorio de HuggingFace no incluye una model card sustancial más allá de los metadatos básicos. A pesar de su nombre, no existe evidencia de relación directa con el framework ComradeAI, que aparece en resultados de búsqueda como un proyecto independiente para orquestar servicios de IA. Este adaptador parece ser un experimento o un trabajo en fase inicial, con cero descargas y cero likes en el momento de su publicación.
+El modelo está etiquetado para los idiomas ruso, inglés y chino, lo que indica un enfoque multilingüe. Sin embargo, la información pública disponible es extremadamente limitada: no se proporcionan detalles sobre el entrenamiento, los datos utilizados, las capacidades específicas ni los resultados de evaluación. El repositorio de Hugging Face no incluye una model card sustancial más allá de los metadatos básicos. A pesar de su nombre, no existe evidencia de relación directa con el framework ComradeAI, que aparece en resultados de búsqueda como un proyecto independiente para orquestar servicios de IA. Este adaptador parece ser un experimento o un trabajo en fase inicial, con cero descargas y cero likes en el momento de su publicación.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ El adaptador `comrade` no añade valor comparativo conocido al no tener métrica
 
 ## Enlaces
 
-- [HuggingFace: common-degradation/comrade](https://huggingface.co/common-degradation/comrade)
+- [Hugging Face: common-degradation/comrade](https://huggingface.co/common-degradation/comrade)
 - [GitHub del autor (commondegradation)](https://github.com/commondegradation)
 - [GitHub: ComradeAI (framework, posiblemente no relacionado)](https://github.com/SergeiKarulin/ComradeAI)
 - [PyPI: ComradeAI (framework)](https://pypi.org/project/ComradeAI/)

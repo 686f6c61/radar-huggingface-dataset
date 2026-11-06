@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.5-4b-prune_width_ffn30 es una version podada por anchura del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en HuggingFace. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint derivado cuyo objetivo es servir como pieza de un benchmark de poda: el autor compara cuatro modelos base con ocho variantes de poda entre si y frente a cuantizacion, evaluando en BFCL, un conjunto de sesgo en contratacion y MedQA con vLLM.
+qwen3.5-4b-prune_width_ffn30 es una version podada por anchura del modelo Qwen/Qwen3.5-4B, publicada por el usuario mrysh en Hugging Face. No se trata de un modelo nuevo entrenado desde cero, sino de un checkpoint derivado cuyo objetivo es servir como pieza de un benchmark de poda: el autor compara cuatro modelos base con ocho variantes de poda entre si y frente a cuantizacion, evaluando en BFCL, un conjunto de sesgo en contratacion y MedQA con vLLM.
 
 La intervencion consiste en reducir el tamano de la FFN de cada capa de 9216 a 6464 neuronas (una reduccion solicitada del 30 %, efectiva del 16,1 % de los parametros del modelo de lenguaje y del 17,1 % del checkpoint completo), manteniendo intacto el numero de capas. La importancia de las neuronas se midio sobre un conjunto de calibracion de 512 muestras mixtas. El checkpoint resultante tiene 3.862.934.016 parametros y ocupa 7,7 GB en safetensors.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn30
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - NVIDIA ModelOpt (herramienta de poda citada): no se proporciona enlace en la informacion disponible
 - Paper o blog del benchmark: no disponible

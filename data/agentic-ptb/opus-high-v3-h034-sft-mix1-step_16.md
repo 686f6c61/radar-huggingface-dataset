@@ -77,6 +77,6 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h034.sft-mix1.step_16
 - Dataset asociado: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Indice de datasets del proyecto: https://huggingface.co/datasets/agentic-ptb/INDEX

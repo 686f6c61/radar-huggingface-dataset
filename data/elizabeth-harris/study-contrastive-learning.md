@@ -68,7 +68,7 @@ No disponible. Este repositorio no es un modelo comparable con alternativas como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Elizabeth-harris/study-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/Elizabeth-harris/study-contrastive-learning
 - Encuesta sobre contrastive learning (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S0925231224014164
 - Tutorial de contrastive learning (DataCamp): https://www.datacamp.com/tutorial/contrastive-learning
 - Visualización y comprensión del contrastive learning (arXiv): https://arxiv.org/html/2206.09753v3

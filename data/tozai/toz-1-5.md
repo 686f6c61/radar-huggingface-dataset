@@ -90,7 +90,7 @@ Töz-1.5 es notablemente más pequeño y monolingüe que las alternativas, con u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TozAI/Toz-1.5
+- Modelo en Hugging Face: https://huggingface.co/TozAI/Toz-1.5
 - Demo web (chat en navegador): toz-chat.onrender.com/sohbet.html
 - Modelo base: ORG/Toz-1.5-Base (referenciado en la model card; URL exacta no disponible)
 - Paper, repositorio de código y blog: no disponibles

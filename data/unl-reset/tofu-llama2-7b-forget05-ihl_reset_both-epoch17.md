@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Proposito | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch17 | 6.738 M | no disponible | Llama 2 | Checkpoint de unlearning (TOFU forget05) | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_llama2-7b | ~6.7 B (Llama 2 7B) | no disponible | Llama 2 | Modelo base ajustado con TOFU | HuggingFace |
-| NousResearch/Llama-2-7b-chat-hf | ~6.7 B | 4096 tokens (Llama 2 estandar) | Llama 2 | Chat de proposito general | HuggingFace |
-| meta-llama/Llama-2-7b-hf | ~6.7 B | 4096 tokens (Llama 2 estandar) | Llama 2 | Modelo base de proposito general | HuggingFace |
+| unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch17 | 6.738 M | no disponible | Llama 2 | Checkpoint de unlearning (TOFU forget05) | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_llama2-7b | ~6.7 B (Llama 2 7B) | no disponible | Llama 2 | Modelo base ajustado con TOFU | Hugging Face |
+| NousResearch/Llama-2-7b-chat-hf | ~6.7 B | 4096 tokens (Llama 2 estandar) | Llama 2 | Chat de proposito general | Hugging Face |
+| meta-llama/Llama-2-7b-hf | ~6.7 B | 4096 tokens (Llama 2 estandar) | Llama 2 | Modelo base de proposito general | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch17
+- Hugging Face: https://huggingface.co/unl-reset/tofu-llama2-7b-forget05-ihl_reset_both-epoch17
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_llama2-7b
 - Checkpoint de embeddings y LM head: https://huggingface.co/NousResearch/Llama-2-7b-chat-hf
 - Modelo original Llama 2: https://huggingface.co/meta-llama/Llama-2-7b-hf

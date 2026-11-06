@@ -69,7 +69,7 @@ La comparativa se limita a tokenizadores bengalíes, ya que el piloto no es un m
 
 - El proyecto es un piloto en fase inicial (Day 1 fertility gate); no incluye un modelo final entrenado ni pesos publicados.
 - No se especifica la licencia, lo que impide su uso comercial sin aclaración del autor.
-- Los scripts dependen de la disponibilidad de IndicCorpV2 y de la API de HuggingFace; cambios en el dataset pueden romper el pipeline.
+- Los scripts dependen de la disponibilidad de IndicCorpV2 y de la API de Hugging Face; cambios en el dataset pueden romper el pipeline.
 - El sanity check exige un orden de pérdidas específico (random > mean > FOCUS); si no se cumple, el entrenamiento se detiene, lo que puede ser una limitación en escenarios reales.
 - No hay garantía de que el tokenizador entrenado supere al tokenizador original de Llama-3.2-1B en todas las métricas; la fertilidad puede variar según el corpus.
 - El proyecto no aborda sesgos, alucinaciones ni riesgos de seguridad, ya que no es un modelo generativo.
@@ -77,7 +77,7 @@ La comparativa se limita a tokenizadores bengalíes, ya que el piloto no es un m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LickyArc/bengali-tokenizer-pilot
+- Repositorio Hugging Face: https://huggingface.co/LickyArc/bengali-tokenizer-pilot
 - Perfil del autor: https://huggingface.co/LickyArc
 - Espacio de demostración de tokenizador bengalí (srijani2): https://huggingface.co/spaces/srijani2/bengali_tokenizer
 - Tokenizador bengalí de sayanbanerjee32: https://huggingface.co/sayanbanerjee32/bengali_tokenizer

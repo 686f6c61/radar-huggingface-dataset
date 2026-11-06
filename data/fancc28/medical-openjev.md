@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Medical-OpenJev es un conjunto de tres modelos de decisión médica de tipo System-1, publicados por el usuario fancc28 en HuggingFace, que no generan texto: reciben un estado de evidencia clínica (una lista de hechos sobre el paciente) y devuelven, en una sola pasada hacia delante, tres primitivas numéricas: enrutamiento de especialidad (`choice`), probabilidad calibrada de que la evidencia sea suficiente (`noul`) y una decisión binaria de actuar o escalar (`act` / `escalate`). El repositorio incluye tres variantes independientes según el nivel de dificultad clínica: `derm/` (dermatología), `agentclinic/` (patología interna aguda multisistémica) y `rdc/` (enfermedades raras del catálogo Orphanet).
+Medical-OpenJev es un conjunto de tres modelos de decisión médica de tipo System-1, publicados por el usuario fancc28 en Hugging Face, que no generan texto: reciben un estado de evidencia clínica (una lista de hechos sobre el paciente) y devuelven, en una sola pasada hacia delante, tres primitivas numéricas: enrutamiento de especialidad (`choice`), probabilidad calibrada de que la evidencia sea suficiente (`noul`) y una decisión binaria de actuar o escalar (`act` / `escalate`). El repositorio incluye tres variantes independientes según el nivel de dificultad clínica: `derm/` (dermatología), `agentclinic/` (patología interna aguda multisistémica) y `rdc/` (enfermedades raras del catálogo Orphanet).
 
 El problema que resuelve es concreto: los LLM médicos generativos responden con la misma seguridad aparente tanto cuando tienen evidencia suficiente como cuando no la tienen. Medical-OpenJev actúa como un semáforo previo (o envolvente) a un LLM doctor, y decide si merece la pena confiar en la vía rápida o si hay que escalar a razonamiento profundo. Su confianza está calibrada matemáticamente mediante entrenamiento con RLCD (regla de puntuación estrictamente propia), no con tokens que suenan convincentes.
 
@@ -80,9 +80,9 @@ No se dispone de datos de benchmarks comparables con otros modelos del mismo tam
 
 | Sistema | Parametros | Contexto | Salida | Calibracion (ECE) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Medical-OpenJev (`derm`) | ~149,6 M | 8192 tokens | Probabilidades (choice, noul, act/escalate) | 0,209 | no disponible | Abierta en HuggingFace |
-| Medical-OpenJev (`agentclinic`) | ~149,6 M | 8192 tokens | Probabilidades | 0,135 | no disponible | Abierta en HuggingFace |
-| Medical-OpenJev (`rdc`) | ~149,6 M | 8192 tokens | Probabilidades | 0,220 | no disponible | Abierta en HuggingFace |
+| Medical-OpenJev (`derm`) | ~149,6 M | 8192 tokens | Probabilidades (choice, noul, act/escalate) | 0,209 | no disponible | Abierta en Hugging Face |
+| Medical-OpenJev (`agentclinic`) | ~149,6 M | 8192 tokens | Probabilidades | 0,135 | no disponible | Abierta en Hugging Face |
+| Medical-OpenJev (`rdc`) | ~149,6 M | 8192 tokens | Probabilidades | 0,220 | no disponible | Abierta en Hugging Face |
 | LLM doctor generico (confianza autoreportada) | no disponible | no disponible | Texto y confianza autoreportada | 0,351-0,706 segun condicion | no disponible | no disponible |
 | TypeSafe Jev (propietario, System-1 decision) | no disponible | no disponible | Probabilidades y decision | no disponible | Propietaria | Cerrada |
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks comparables con otros modelos del mismo tam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fancc28/Medical-OpenJev
+- Modelo en Hugging Face: https://huggingface.co/fancc28/Medical-OpenJev
 - Backbone utilizado: https://huggingface.co/answerdotai/ModernBERT-base
 - Repositorio de descarga indicado en el README (placeholder): https://huggingface.co/TODO/medical-openjev
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios o demos asociados. Los resultados devueltos correspondian a paginas de seguimiento de envios de DHL y Deutsche Post, sin relacion con el modelo.

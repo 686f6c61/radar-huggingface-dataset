@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Arka-Specialist-V2-200M-Universal-Recovery-v2 es un modelo de lenguaje de aproximadamente 178 millones de parametros (178.152.992 segun los pesos en safetensors), publicado por el usuario Abhayn01 en HuggingFace. Se trata de una ejecucion experimental de ajuste supervisado (SFT) orientada a reparar o recuperar el comportamiento de un checkpoint previo, identificado en la model card como base `Abhayn01/Arka-Specialist-V2-SFT-1M-Test`. El entrenamiento se realizo con SFT de tipo response-only sobre aproximadamente 201.003.549 tokens de asistente/EOD.
+Arka-Specialist-V2-200M-Universal-Recovery-v2 es un modelo de lenguaje de aproximadamente 178 millones de parametros (178.152.992 segun los pesos en safetensors), publicado por el usuario Abhayn01 en Hugging Face. Se trata de una ejecucion experimental de ajuste supervisado (SFT) orientada a reparar o recuperar el comportamiento de un checkpoint previo, identificado en la model card como base `Abhayn01/Arka-Specialist-V2-SFT-1M-Test`. El entrenamiento se realizo con SFT de tipo response-only sobre aproximadamente 201.003.549 tokens de asistente/EOD.
 
 El modelo no se presenta como un asistente general validado. El propio autor lo describe como "experimental recovery run" y advierte de que no es un asistente general validado, ademas de recomendar revisar las licencias mixtas de los datasets de origen antes de cualquier uso comercial. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que carece de validacion por parte de la comunidad.
 
@@ -50,7 +50,7 @@ El entrenamiento consistio en un ajuste supervisado (SFT) del tipo response-only
 - Generacion de datos sinteticos con filtrado humano: util como generador de borradores en pipelines de anotacion, donde un modelo pequeno propone respuestas que despues se revisan; no es recomendable usarlo sin supervision.
 - Alumno en destilacion: por su tamano, es un candidato natural a recibir destilacion desde un modelo mayor para tareas acotadas, comparando despues el rendimiento frente al checkpoint de partida.
 - Investigacion academica sobre licencias de datos: la advertencia del autor sobre las licencias mixtas de Smol-SmolTalk, UltraChat 200k y Tulu-3 lo convierte en un caso practico para estudiar la trazabilidad de licencias en cadenas de SFT.
-- Pruebas de integracion de `custom_code` en HuggingFace: permite evaluar el flujo de carga con `trust_remote_code` y las implicaciones de seguridad de ejecutar codigo del repositorio en un entorno controlado.
+- Pruebas de integracion de `custom_code` en Hugging Face: permite evaluar el flujo de carga con `trust_remote_code` y las implicaciones de seguridad de ejecutar codigo del repositorio en un entorno controlado.
 
 ## Benchmarks y rendimiento
 
@@ -75,10 +75,10 @@ La informacion proporcionada no incluye benchmarks ni datos de rendimiento de es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Arka-Specialist-V2-200M-Universal-Recovery-v2 | 178,2 M | no disponible | no disponible | HuggingFace, requiere `custom_code` | no disponible |
-| SmolLM2-135M (HuggingFace) | 135 M | 8.192 tokens | Apache-2.0 | HuggingFace, transformers estandar | no disponible en esta ficha |
-| SmolLM2-360M (HuggingFace) | 362 M | 8.192 tokens | Apache-2.0 | HuggingFace, transformers estandar | no disponible en esta ficha |
-| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache-2.0 | HuggingFace, transformers estandar | no disponible en esta ficha |
+| Arka-Specialist-V2-200M-Universal-Recovery-v2 | 178,2 M | no disponible | no disponible | Hugging Face, requiere `custom_code` | no disponible |
+| SmolLM2-135M (Hugging Face) | 135 M | 8.192 tokens | Apache-2.0 | Hugging Face, transformers estandar | no disponible en esta ficha |
+| SmolLM2-360M (Hugging Face) | 362 M | 8.192 tokens | Apache-2.0 | Hugging Face, transformers estandar | no disponible en esta ficha |
+| Qwen2.5-0.5B (Alibaba) | 494 M | 32.768 tokens | Apache-2.0 | Hugging Face, transformers estandar | no disponible en esta ficha |
 
 Diferencias destacables: frente a estas alternativas, el modelo de Abhayn01 no declara licencia, no publica contexto ni idiomas, no ofrece versiones cuantizadas y exige ejecutar codigo personalizado. Su ventaja potencial es el menor numero de parametros de la comparativa, junto con 0 descargas registradas que reflejan una adopcion nula.
 
@@ -96,7 +96,7 @@ Diferencias destacables: frente a estas alternativas, el modelo de Abhayn01 no d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhayn01/Arka-Specialist-V2-200M-Universal-Recovery-v2
+- Hugging Face: https://huggingface.co/Abhayn01/Arka-Specialist-V2-200M-Universal-Recovery-v2
 - Checkpoint base declarado en la model card: https://huggingface.co/Abhayn01/Arka-Specialist-V2-SFT-1M-Test
 - Dataset Smol-SmolTalk: no disponible (no se aporta enlace en la informacion suministrada)
 - Dataset UltraChat 200k: no disponible (no se aporta enlace en la informacion suministrada)

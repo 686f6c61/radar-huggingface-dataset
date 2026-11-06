@@ -77,9 +77,9 @@ Diferencia receta frente a baseline: +0,067 [+0,021, +0,113]. La banda de re-eje
 
 | Modelo | Parametros | Contexto | GSM8K pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| while-ai/paper-filter-metric-1.5b (receta) | 1,5 B (base) + LoRA | No disponible | 0,46 | apache-2.0 | Adaptador LoRA en HuggingFace |
+| while-ai/paper-filter-metric-1.5b (receta) | 1,5 B (base) + LoRA | No disponible | 0,46 | apache-2.0 | Adaptador LoRA en Hugging Face |
 | while-ai/paper-filter-metric-1.5b (brazo `baseline`) | 1,5 B (base) + LoRA | No disponible | 0,39 | apache-2.0 | Subcarpeta del mismo repositorio |
-| Qwen/Qwen2.5-1.5B-Instruct sin entrenar | 1,5 B | No disponible en la información aportada | 0,36 | No disponible en la información aportada | Pesos completos en HuggingFace |
+| Qwen/Qwen2.5-1.5B-Instruct sin entrenar | 1,5 B | No disponible en la información aportada | 0,36 | No disponible en la información aportada | Pesos completos en Hugging Face |
 | Modelos de razonamiento de ~1,5 B de la familia DeepSeek-R1-Distill u OpenMath | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La comparación directa solo es posible, con los datos aportados, entre los tres brazos del mismo experimento. Para alternativas externas de tamaño similar no hay cifras verificables en la información disponible.
@@ -100,7 +100,7 @@ La comparación directa solo es posible, con los datos aportados, entre los tres
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/while-ai/paper-filter-metric-1.5b
+- Modelo en Hugging Face: https://huggingface.co/while-ai/paper-filter-metric-1.5b
 - Receta y script de reproducción: https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/filter-metric
 - Colección "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

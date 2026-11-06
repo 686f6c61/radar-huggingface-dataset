@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_fdp-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, desarrollado por el usuario de HuggingFace daanvdweijden. El nombre sugiere un entrenamiento orientado a tareas numéricas (numbers) con un componente en chino (ch), y el sufijo `fdp-s3` probablemente hace referencia a una configuración específica de entrenamiento o a un dataset concreto. El tag `unsloth` indica que el ajuste se realizó con la librería Unsloth, conocida por su eficiencia en memoria y velocidad durante el fine-tuning.
+El modelo `daanvdweijden/qwen2.5-7b-numbers-ch_fdp-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, desarrollado por el usuario de Hugging Face daanvdweijden. El nombre sugiere un entrenamiento orientado a tareas numéricas (numbers) con un componente en chino (ch), y el sufijo `fdp-s3` probablemente hace referencia a una configuración específica de entrenamiento o a un dataset concreto. El tag `unsloth` indica que el ajuste se realizó con la librería Unsloth, conocida por su eficiencia en memoria y velocidad durante el fine-tuning.
 
 La información pública disponible es extremadamente limitada: la model card es una plantilla genérica sin datos técnicos, y no se han publicado detalles sobre el dataset, el procedimiento de entrenamiento ni los resultados de evaluación. Por tanto, esta ficha se basa principalmente en las características conocidas del modelo base Qwen2.5-7B y en las inferencias razonables a partir del nombre y los metadatos. A pesar de la falta de documentación, el modelo puede resultar útil para experimentos en procesamiento numérico o multilingüe, aunque se recomienda validar su comportamiento antes de usarlo en producción.
 
@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamaño similar, pero no se dispone de dat
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_fdp-s3)
+- [Modelo en Hugging Face](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-ch_fdp-s3)
 - [Modelo relacionado: qwen2.5-7b-numbers-wolf-s3](https://huggingface.co/daanvdweijden/qwen2.5-7b-numbers-wolf-s3)
 - [Repositorio GitHub de Qwen2.5 (mx4ai)](https://github.com/mx4ai/qwen2.5)
 - [Ficha de Qwen2.5-7B en PromptLayer](https://www.promptlayer.com/models/qwen25-7b/)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IndexTTS 2.5 Comfy es un paquete de inferencia listo para usar del modelo de síntesis de voz IndexTTS 2.5, publicado en HuggingFace por el usuario Abolice bajo el identificador `Abolice/IndexTTS-2.5-Comfy`. No se trata del lanzamiento oficial del modelo, sino de un espejo de empaquetado no oficial creado por el proyecto T8star-Aix para alimentar dos herramientas concretas: el lanzador de escritorio IndexTTS 2.5 Desktop y el nodo personalizado de ComfyUI `comfyui-indextts25-t8`. Su valor esta en que resuelve un problema practico de despliegue: el repositorio oficial `IndexTeam/IndexTTS-2.5` no incluye el fichero `bpe.model`, y en la primera ejecucion el codigo descarga por separado Wav2Vec2-BERT, CAMPPlus y BigVGAN desde distintos repositorios. Este bundle reune los 26 ficheros necesarios en un unico directorio de aproximadamente 7,72 GiB.
+IndexTTS 2.5 Comfy es un paquete de inferencia listo para usar del modelo de síntesis de voz IndexTTS 2.5, publicado en Hugging Face por el usuario Abolice bajo el identificador `Abolice/IndexTTS-2.5-Comfy`. No se trata del lanzamiento oficial del modelo, sino de un espejo de empaquetado no oficial creado por el proyecto T8star-Aix para alimentar dos herramientas concretas: el lanzador de escritorio IndexTTS 2.5 Desktop y el nodo personalizado de ComfyUI `comfyui-indextts25-t8`. Su valor esta en que resuelve un problema practico de despliegue: el repositorio oficial `IndexTeam/IndexTTS-2.5` no incluye el fichero `bpe.model`, y en la primera ejecucion el codigo descarga por separado Wav2Vec2-BERT, CAMPPlus y BigVGAN desde distintos repositorios. Este bundle reune los 26 ficheros necesarios en un unico directorio de aproximadamente 7,72 GiB.
 
 El modelo subyacente es un sistema de text-to-speech multilingue con clonacion de voz zero-shot y control emocional, distribuido con licencia Bilibili Model Use License Agreement mas licencias de terceros. Cubre chino, ingles, japones, espanol y arabe, y combina un modulo autorregresivo tipo GPT, un codec neural, un modulo semantic-to-mel y el vocoder BigVGAN a 22,05 kHz, ademas de un modelo emocional basado en Qwen de 0,6B y extractores de caracteristicas de locutor basados en Wav2Vec2-BERT 2.0 y CAMPPlus.
 
@@ -16,10 +16,10 @@ Es relevante ahora porque simplifica radicalmente el arranque de un sistema TTS 
 | Parametros totales | no disponible (el bundle completo pesa ~7,72 GiB y el repositorio 8,3 GB; incluye un modulo emocional basado en Qwen de 0,6B segun el directorio `qwen0.6bemo4-merge`) |
 | Parametros activos | no aplica, no es un modelo MoE |
 | Longitud de contexto | no disponible |
-| Tipos de cuantizacion | no disponible (se distribuyen checkpoints PyTorch sin variantes cuantizadas publicadas; el repositorio esta etiquetado con `safetensors` en HuggingFace) |
+| Tipos de cuantizacion | no disponible (se distribuyen checkpoints PyTorch sin variantes cuantizadas publicadas; el repositorio esta etiquetado con `safetensors` en Hugging Face) |
 | Idiomas soportados | zh, en, ja, es, ar (el fichero `multilingual_zh_ja_yue_char_del.tiktoken` sugiere cobertura adicional de yue/cantonés) |
 | Licencia | bilibili-model-license-and-third-party-licenses (Bilibili Model Use License Agreement + licencias de los modelos de terceros incluidos) |
-| Formato de pesos | checkpoints PyTorch (`.pth`, `.pt`), `bpe.model`, `config.yaml` y pesos de Transformers en `hf_cache/`; etiqueta `safetensors` en los metadatos de HuggingFace |
+| Formato de pesos | checkpoints PyTorch (`.pth`, `.pt`), `bpe.model`, `config.yaml` y pesos de Transformers en `hf_cache/`; etiqueta `safetensors` en los metadatos de Hugging Face |
 | Pipeline | text-to-speech |
 | Libreria | indextts |
 | Tamano del repositorio | 8,3 GB (modelo compartido de ~7,72 GiB) |
@@ -96,7 +96,7 @@ Los unicos modelos que aparecen referenciados en la documentacion del repositori
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abolice/IndexTTS-2.5-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/Abolice/IndexTTS-2.5-Comfy
 - Modelo oficial IndexTTS 2.5: https://huggingface.co/IndexTeam/IndexTTS-2.5
 - Modelo IndexTTS 2 (origen de `bpe.model`): https://huggingface.co/IndexTeam/IndexTTS-2
 - Wav2Vec2-BERT 2.0: https://huggingface.co/facebook/w2v-bert-2.0

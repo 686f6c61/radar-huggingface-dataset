@@ -13,7 +13,7 @@ Su relevancia es practica: se trata de un modelo de 1.5B parametros en cuantizac
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso, decoder-only (heredada de Qwen2.5-1.5B) |
-| Parametros totales | 1.5B (aproximadamente; la etiqueta de HuggingFace indica "2B") |
+| Parametros totales | 1.5B (aproximadamente; la etiqueta de Hugging Face indica "2B") |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible para el merge; el Qwen2.5-1.5B base soporta 32.768 tokens nativos (ampliable a 128K con YaRN) |
 | Tipos de cuantizacion | formato GGUF; los niveles concretos publicados no estan detallados en la informacion disponible |
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativos para fundamentar una comparac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WineryLabs/Winery-Qwen2.5-1.5B-RP-Soup-GGUF
+- Repositorio Hugging Face: https://huggingface.co/WineryLabs/Winery-Qwen2.5-1.5B-RP-Soup-GGUF
 - Perfil del autor: https://huggingface.co/WineryLabs
 - Qwen2.5-1.5B-Instruct-GGUF (modelo base de referencia): https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF
 - Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:1.5b

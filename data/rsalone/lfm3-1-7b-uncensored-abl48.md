@@ -75,9 +75,9 @@ Datos adicionales de la prueba principal (8 versiones, transformers BF16, 1 ejec
 
 | Modelo | Parametros | Contexto | HarmBench (sin rechazo) | GSM8K | GPQA Diamond | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| LFM3-1.7B-uncensored-abl48 (este) | 1,73B | no disponible | 187/200 | 98/100 | 95/198 | lfm-open-license-v1.0 | HuggingFace (safetensors, GGUF) |
-| LFM3-1.7B-uncensored-abl38 | 1,73B | no disponible | no disponible (el autor indica que elimina la direccion en 38 puntos) | no disponible | no disponible | lfm-open-license-v1.0 | HuggingFace |
-| LiquidAI/LFM3-1.7B (original) | 1,73B | no disponible | 21/200 | 98/100 (97 en transformers) | 99/198 (99 en transformers) | lfm-open-license-v1.0 | HuggingFace |
+| LFM3-1.7B-uncensored-abl48 (este) | 1,73B | no disponible | 187/200 | 98/100 | 95/198 | lfm-open-license-v1.0 | Hugging Face (safetensors, GGUF) |
+| LFM3-1.7B-uncensored-abl38 | 1,73B | no disponible | no disponible (el autor indica que elimina la direccion en 38 puntos) | no disponible | no disponible | lfm-open-license-v1.0 | Hugging Face |
+| LiquidAI/LFM3-1.7B (original) | 1,73B | no disponible | 21/200 | 98/100 (97 en transformers) | 99/198 (99 en transformers) | lfm-open-license-v1.0 | Hugging Face |
 
 No se dispone de datos de otros modelos abliterados comparables en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de otros modelos abliterados comparables en la informacio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48
+- Modelo en Hugging Face: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48
 - Version abl38: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl38
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - README en japones: https://huggingface.co/rSalone/LFM3-1.7B-uncensored-abl48/blob/main/README_ja.md

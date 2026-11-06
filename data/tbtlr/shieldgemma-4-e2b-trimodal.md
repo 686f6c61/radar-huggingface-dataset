@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ShieldGemma 4 E2B trimodal es un clasificador de seguridad independiente desarrollado por el usuario de HuggingFace `tbtlr`, obtenido mediante fine-tuning con LoRA de `google/gemma-4-E2B-it`. No es un lanzamiento de Google ni está afiliado al equipo original de ShieldGemma; el nombre "Gemma" se emplea únicamente para describir el modelo base. Su función es determinar, dado un prompt de usuario, un par prompt/respuesta, una imagen o un clip de audio con una petición hablada, si el contenido viola una política de seguridad concreta. La salida es la probabilidad del token `Yes` frente a `No` en la primera posición generada, lo que lo convierte en un guardrail ligero y desplegable en pipelines de moderación.
+ShieldGemma 4 E2B trimodal es un clasificador de seguridad independiente desarrollado por el usuario de Hugging Face `tbtlr`, obtenido mediante fine-tuning con LoRA de `google/gemma-4-E2B-it`. No es un lanzamiento de Google ni está afiliado al equipo original de ShieldGemma; el nombre "Gemma" se emplea únicamente para describir el modelo base. Su función es determinar, dado un prompt de usuario, un par prompt/respuesta, una imagen o un clip de audio con una petición hablada, si el contenido viola una política de seguridad concreta. La salida es la probabilidad del token `Yes` frente a `No` en la primera posición generada, lo que lo convierte en un guardrail ligero y desplegable en pipelines de moderación.
 
 El modelo cubre tres modalidades: texto (con las políticas de ShieldGemma v1: contenido peligroso, acoso, discurso de odio, contenido sexualmente explícito, violencia y obscenidad, más una política compuesta "any harm"), imagen (políticas de ShieldGemma 2: sexualmente explícito, violencia/gore y contenido peligroso) y audio (las políticas de texto aplicadas a una petición hablada). Es un clasificador condicionado por política: sigue también textos de política no vistos durante el entrenamiento, como las ocho definiciones de OpenAI Moderation.
 
@@ -81,7 +81,7 @@ Referencia del autor: ShieldGemma 2B paper obtiene 0,704 / 0,778 en ToxicChat, f
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ShieldGemma 4 E2B trimodal (este) | 5,10 mil millones | no disponible | texto, imagen, audio | Apache 2.0 | HuggingFace |
+| ShieldGemma 4 E2B trimodal (este) | 5,10 mil millones | no disponible | texto, imagen, audio | Apache 2.0 | Hugging Face |
 | ShieldGemma 2B (referencia del autor) | 2 mil millones (no confirmado en la información) | no disponible | texto | no disponible en la información | no disponible en la información |
 | Llama Guard (familia) | no disponible en la información | no disponible | texto | no disponible en la información | no disponible en la información |
 | WildGuard | no disponible en la información | no disponible | texto | no disponible en la información | no disponible en la información |
@@ -102,7 +102,7 @@ La única comparación numérica aportada por el autor es frente a ShieldGemma 2
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal
+- Modelo en Hugging Face: https://huggingface.co/tbtlr/shieldgemma-4-e2b-trimodal
 - Adaptador LoRA sin fusionar: `tbtlr/shieldgemma-4-e2b-trimodal-lora` (referenciado en la model card; URL no proporcionada)
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Repositorio del proyecto con scorers y suite de evaluación (`shield/prompt.py`, `shield/score*.py`): no disponible

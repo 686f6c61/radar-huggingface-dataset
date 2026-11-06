@@ -66,7 +66,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/OneScience-Group/structural-evolution
+- Hugging Face: https://huggingface.co/OneScience-Group/structural-evolution
 - Artículo en Science: https://doi.org/10.1126/science.adk8946
 - Pesos de ESM-IF1 (Zenodo): https://zenodo.org/records/12631662
-- Organización OneScience en HuggingFace: https://huggingface.co/OneScience-Group
+- Organización OneScience en Hugging Face: https://huggingface.co/OneScience-Group

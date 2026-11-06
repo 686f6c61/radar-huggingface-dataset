@@ -27,7 +27,7 @@ Erk-32B parte de un modelo base de la familia Qwen3 de 32.000 millones de parame
 
 - Generacion de texto conversacional en turco, segun las etiquetas del repositorio.
 - Continuacion de texto con tono conversacional, compatible con el formato *chat* de transformers.
-- Capacidad para ser cargado con motores compatibles con GGUF y su modelo card es compatible con los endpoint de HuggingFace.
+- Capacidad para ser cargado con motores compatibles con GGUF y su modelo card es compatible con los endpoint de Hugging Face.
 - El modelo base Qwen3 aporta soporte potencial de *tool calling* y razonamiento, pero no se han verificado estas capacidades especificamente para Erk-32B.
 - No se han publicado datos sobre soporte multimodal, vision o audio.
 
@@ -68,7 +68,7 @@ No hay datos de benchmarks ni de modelos comparables en la informacion facilitad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mradermacher/Erk-32B-i1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/mradermacher/Erk-32B-i1-GGUF
 - Cuantizaciones estaticas (sin imatrix): https://huggingface.co/mradermacher/Erk-32B-GGUF
 - Modelo base: https://huggingface.co/ecloudtech/Erk-32B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher

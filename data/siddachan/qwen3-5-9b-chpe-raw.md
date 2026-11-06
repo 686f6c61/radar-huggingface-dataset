@@ -25,7 +25,7 @@ Su relevancia práctica es muy limitada: acumula 0 descargas y 0 likes, las fech
 | Tamaño de vocabulario | 248.320 tokens |
 | Geometría de tiles | 546.681 tiles de 16 KiB, alineación de 64 bytes (Invariante A-1: 272 líneas de caché / 17.408 bytes) |
 | Tamaño del repositorio | 9,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -119,7 +119,7 @@ Diferencias relevantes: el artefacto analizado no se distribuye en formato inter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Siddachan/qwen3.5-9b-chpe-raw
+- Repositorio Hugging Face: https://huggingface.co/Siddachan/qwen3.5-9b-chpe-raw
 - Resultado de OpenBenchmarking citado por el autor: https://openbenchmarking.org/result/2609179-NE-2609171NE16
 - Resultados de evaluación referenciados en la model card (rutas internas del repositorio): `eval_results/leaderboard_ifeval_results.json`, `eval_results/leaderboard_bbh_results.json`, `eval_results/leaderboard_musr_results.json`, `eval_results/leaderboard_mmlu_pro_results.json`, `eval_results/leaderboard_math_hard_results.json`, `eval_results/gsm8k_results.json`
 - Paper, blog técnico, repositorio de código o demo del motor CHPE: no disponible

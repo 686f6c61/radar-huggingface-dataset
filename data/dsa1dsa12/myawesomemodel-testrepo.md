@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario dsa1dsa12, con licencia MIT y etiquetado como compatible con la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y comprensión, acercándose al rendimiento de otros modelos líderes. El repositorio, sin embargo, está vacío (0.0 GB) y no se proporcionan detalles sobre arquitectura, número de parámetros ni datos de entrenamiento.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario dsa1dsa12, con licencia MIT y etiquetado como compatible con la librería transformers. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento y comprensión, acercándose al rendimiento de otros modelos líderes. El repositorio, sin embargo, está vacío (0.0 GB) y no se proporcionan detalles sobre arquitectura, número de parámetros ni datos de entrenamiento.
 
 La model card destaca mejoras en tareas de razonamiento matemático, lógico y de programación, así como una reducción de la tasa de alucinación y un mejor soporte para function calling. También se menciona una variante llamada MyAwesomeModel-Small, aunque sin especificaciones concretas. A pesar de las afirmaciones de rendimiento, la falta de información técnica verificable y de artefactos publicados limita su evaluación objetiva.
 
@@ -82,7 +82,7 @@ No disponible. No se especifican modelos comparables ni se proporcionan datos su
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no se puede descargar ni verificar el modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no se puede descargar ni verificar el modelo.
 - No se dispone de información sobre arquitectura, parámetros, contexto ni datos de entrenamiento, lo que impide evaluar su idoneidad para producción.
 - Los benchmarks presentados en la model card carecen de contexto metodológico (no se identifican los modelos comparados ni las métricas exactas), por lo que deben interpretarse con cautela.
 - No se especifican los idiomas soportados, aunque la mención de traducción sugiere capacidades multilingües sin confirmar.
@@ -92,5 +92,5 @@ No disponible. No se especifican modelos comparables ni se proporcionan datos su
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dsa1dsa12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/dsa1dsa12/MyAwesomeModel-TestRepo
 - No se proporcionan enlaces a papers, repositorios de código, demos o sitios web oficiales en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Uncensored-Quantized es un conjunto de versiones cuantizadas del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, publicado por el usuario orangejuicesmith en HuggingFace. No se trata de un modelo entrenado desde cero ni de un ajuste fino documentado: la model card indica explicitamente que se parte de los pesos originales del modelo base de Qwen y que el trabajo consiste en empaquetar dichos pesos en formatos de cuantizacion (GGUF, safetensors FP8/INT8/NVFP4 y MLX de 4, 6 y 8 bits) junto con el codificador de texto Qwen3-VL 8B y el VAE necesarios para ejecutarlo en ComfyUI.
+Qwen-Image-2.1-Uncensored-Quantized es un conjunto de versiones cuantizadas del modelo de generacion de imagenes Qwen/Qwen-Image-2.1, publicado por el usuario orangejuicesmith en Hugging Face. No se trata de un modelo entrenado desde cero ni de un ajuste fino documentado: la model card indica explicitamente que se parte de los pesos originales del modelo base de Qwen y que el trabajo consiste en empaquetar dichos pesos en formatos de cuantizacion (GGUF, safetensors FP8/INT8/NVFP4 y MLX de 4, 6 y 8 bits) junto con el codificador de texto Qwen3-VL 8B y el VAE necesarios para ejecutarlo en ComfyUI.
 
 El problema que resuelve es de despliegue: el repositorio ofrece variantes desde 4,00 GB (MLX 4-bit) hasta 14,23 GB (BF16), ademas de un abanico de cuantizaciones GGUF (Q4_0, Q4_K_M, Q5_K_M, Q6_K, Q8_0) pensadas para ejecutarse en GPU de consumo, Apple Silicon o GPU de centro de datos con soporte de FP8/NVFP4. El transformer de difusion declara 7.115.124.736 parametros (dato de safetensors), y la licencia es `qwen-research`.
 
@@ -110,7 +110,7 @@ La comparativa significativa que permite la informacion disponible es contra el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/orangejuicesmith/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/orangejuicesmith/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Repositorio referenciado en la model card: https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

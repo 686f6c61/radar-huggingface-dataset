@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`lest-ari07/hw1-contrastive-learning` es un repositorio alojado en HuggingFace que, pese a estar etiquetado con `transformer` y contener un fichero `safetensors`, no es un modelo entrenado: es un cuaderno de notas de investigación sobre aprendizaje contrastivo. La propia model card lo declara explícitamente, indicando que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado. El artefacto principal es `review.md`, no un conjunto de pesos utilizables.
+`lest-ari07/hw1-contrastive-learning` es un repositorio alojado en Hugging Face que, pese a estar etiquetado con `transformer` y contener un fichero `safetensors`, no es un modelo entrenado: es un cuaderno de notas de investigación sobre aprendizaje contrastivo. La propia model card lo declara explícitamente, indicando que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni checkpoint entrenado. El artefacto principal es `review.md`, no un conjunto de pesos utilizables.
 
-Los metadatos de HuggingFace registran 33.088 parámetros totales en el fichero de pesos y un tamaño de repositorio de 0,0 GB. Esa cifra, unas 33.000 variables, es varios órdenes de magnitud inferior a la de cualquier modelo de lenguaje funcional (el modelo más pequeño habitual de la familia GPT-2 ronda los 124 millones), lo que concuerda con pesos de prueba, no inicializados o meramente ilustrativos, no con un modelo entrenado.
+Los metadatos de Hugging Face registran 33.088 parámetros totales en el fichero de pesos y un tamaño de repositorio de 0,0 GB. Esa cifra, unas 33.000 variables, es varios órdenes de magnitud inferior a la de cualquier modelo de lenguaje funcional (el modelo más pequeño habitual de la familia GPT-2 ronda los 124 millones), lo que concuerda con pesos de prueba, no inicializados o meramente ilustrativos, no con un modelo entrenado.
 
-La relevancia de la ficha es, por tanto, metodológica: sirve para documentar qué debe contener un repositorio de notas de investigación reproducible (versiones de dataset, comandos, semillas, hardware y registros crudos) y para advertir de un patrón frecuente y problemático en HuggingFace, consistente en publicar material no ejecutable con etiquetas propias de modelos. No hay licencia de pesos, idiomas, contexto ni pipeline de inferencia que reportar.
+La relevancia de la ficha es, por tanto, metodológica: sirve para documentar qué debe contener un repositorio de notas de investigación reproducible (versiones de dataset, comandos, semillas, hardware y registros crudos) y para advertir de un patrón frecuente y problemático en Hugging Face, consistente en publicar material no ejecutable con etiquetas propias de modelos. No hay licencia de pesos, idiomas, contexto ni pipeline de inferencia que reportar.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ Ninguno de los siguientes casos implica ejecutar el modelo: no existe artefacto 
 - Seleccion de benchmarks publicos adecuados a la tarea: el repositorio cita benchmarks concretos nombrados en la nota principal, lo que sirve como punto de partida para verificar que la metrica elegida mide la propiedad contrastiva que se pretende estudiar.
 - Lista de comprobacion de reproducibilidad: el autor exige versiones de dataset, comandos, semillas, hardware y registros crudos antes de aceptar cualquier resultado, criterio directamente aplicable como checklist interna de publicacion.
 - Analisis de modos de fallo: la nota dedica una seccion a modos de fallo y preguntas abiertas, util para anticipar colapsos de representacion o atajos triviales en tareas contrastivas.
-- Revision critica de repositorios en HuggingFace: este repositorio es un ejemplo didactico de material no ejecutable etiquetado con `transformer`, util para formar a revisores en la deteccion de fichas enganosas.
+- Revision critica de repositorios en Hugging Face: este repositorio es un ejemplo didactico de material no ejecutable etiquetado con `transformer`, util para formar a revisores en la deteccion de fichas enganosas.
 - Auditoria de licencias en flujos de datos mixtos: la model card advierte de que, al usar el repositorio con datasets externos, deben revisarse por separado los terminos de los datos de origen, advertencia aplicable a cualquier pipeline que combine notas y corpus de terceros.
 
 ## Benchmarks y rendimiento
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es comparable con modelos de lenguaje o de representaciones, ya que no contiene un checkpoint entrenado ni una arquitectura declarada. La comparacion pertinente seria con otros repositorios de notas de investigacion en HuggingFace, pero no se ha proporcionado informacion sobre ellos en la busqueda disponible.
+No disponible. Este repositorio no es comparable con modelos de lenguaje o de representaciones, ya que no contiene un checkpoint entrenado ni una arquitectura declarada. La comparacion pertinente seria con otros repositorios de notas de investigacion en Hugging Face, pero no se ha proporcionado informacion sobre ellos en la busqueda disponible.
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No disponible. Este repositorio no es comparable con modelos de lenguaje o de re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lest-ari07/hw1-contrastive-learning
+- Repositorio en Hugging Face: https://huggingface.co/lest-ari07/hw1-contrastive-learning
 - La busqueda web realizada no devolvio enlaces relevantes: los resultados obtenidos corresponden a paginas genericas de YouTube (https://www.youtube.com/, https://tv.youtube.com/app, https://movies.youtube.com/), sin relacion con el modelo ni con aprendizaje contrastivo.
 - No se han proporcionado enlaces a papers, blogs, repositorios de codigo ni demos asociados a este repositorio.

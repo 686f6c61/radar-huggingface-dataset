@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks de este checkpoint que permitan una compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shankarguru/group131-a1a-qwen2.5-1.5b-cpt
+- Modelo en Hugging Face: https://huggingface.co/shankarguru/group131-a1a-qwen2.5-1.5b-cpt
 - Modelo base Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Blog de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/

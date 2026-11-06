@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método failspy. El resultado es un modelo de generación de texto que reduce drásticamente la tasa de rechazos ante peticiones que el modelo original declinaba, manteniendo según el autor un 100% de coherencia y capacidad en las comprobaciones internas. Lo publica el usuario KayLynn77 en HuggingFace bajo licencia MIT.
+DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo mediante la herramienta OBLITERATUS con el método failspy. El resultado es un modelo de generación de texto que reduce drásticamente la tasa de rechazos ante peticiones que el modelo original declinaba, manteniendo según el autor un 100% de coherencia y capacidad en las comprobaciones internas. Lo publica el usuario KayLynn77 en Hugging Face bajo licencia MIT.
 
 El modelo base es un transformer de tipo mezcla de expertos (MoE) con 754.638.836.864 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de modelos de gran escala. Los pesos se distribuyen en BF16 safetensors y el repositorio ocupa 1509,4 GB. Está etiquetado con el tipo de arquitectura deepseek_v41_text y es compatible con endpoints.
 
@@ -83,8 +83,8 @@ El protocolo de MMLU es zero-shot chat, thinking desactivado, logits de elecció
 
 | Modelo | Parametros | Contexto | Licencia | Estado |
 |---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones | no disponible | MIT | Disponible en HuggingFace |
-| DeepSeek-V4.1-Flash-1017 (base) | 754,6 mil millones (mismo repo de origen) | no disponible | no disponible | Disponible en HuggingFace |
+| DeepSeek-V4.1-Flash-1017-obliterated | 754,6 mil millones | no disponible | MIT | Disponible en Hugging Face |
+| DeepSeek-V4.1-Flash-1017 (base) | 754,6 mil millones (mismo repo de origen) | no disponible | no disponible | Disponible en Hugging Face |
 | Otras variantes abliterated de DeepSeek | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos con modelos de la misma categoría más allá de la comparación directa con el modelo base que publica el autor. Los datos de MMLU del modelo base y del abliterado están truncados en la información disponible.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparativos con modelos de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KayLynn77/DeepSeek-V4.1-Flash-1017-obliterated
+- Modelo en Hugging Face: https://huggingface.co/KayLynn77/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (procedencia): winner-recovery-provenance.json (en el repositorio del modelo)

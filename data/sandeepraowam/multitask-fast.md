@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sandeepraowam/multitask-fast` es un repositorio publicado en HuggingFace por el usuario sandeepraowam que contiene una implementación de Perceiver orientada a multitarea, descrita en la model card como configuración «xlarge». La arquitectura declarada emplea atención *grouped query*, fusión *tucker*, activación swish y normalización batchnorm, con receta de entrenamiento por defecto basada en el optimizador LAMB y un schedule de *linear warmup*. La licencia es apache-2.0. El autor presenta el repositorio como código transparente con pruebas de humo reproducibles y omite deliberadamente cualquier reivindicación de rendimiento.
+`sandeepraowam/multitask-fast` es un repositorio publicado en Hugging Face por el usuario sandeepraowam que contiene una implementación de Perceiver orientada a multitarea, descrita en la model card como configuración «xlarge». La arquitectura declarada emplea atención *grouped query*, fusión *tucker*, activación swish y normalización batchnorm, con receta de entrenamiento por defecto basada en el optimizador LAMB y un schedule de *linear warmup*. La licencia es apache-2.0. El autor presenta el repositorio como código transparente con pruebas de humo reproducibles y omite deliberadamente cualquier reivindicación de rendimiento.
 
 El dato más relevante para evaluar el artefacto es que `model.safetensors` contiene 33.088 parámetros según los metadatos, una cifra que no se corresponde con una configuración «xlarge» y que el propio autor califica como inicialización válida para *smoke tests*, no como checkpoint entrenado. No hay pipeline declarado, no se especifican idiomas soportados ni tokenizador, y el tamaño del repositorio es de 0,0 GB. Con 13 descargas y 0 likes, el interés práctico del modelo es el de un andamiaje de investigación, no el de un modelo desplegable.
 
@@ -66,7 +66,7 @@ No se dispone de datos cuantitativos de los modelos comparables en la informaci�
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sandeepraowam/multitask-fast` | Perceiver multitarea (GQA, fusión tucker) | 33.088 (checkpoint de inicialización) | No disponible | apache-2.0 | HuggingFace, 13 descargas |
+| `sandeepraowam/multitask-fast` | Perceiver multitarea (GQA, fusión tucker) | 33.088 (checkpoint de inicialización) | No disponible | apache-2.0 | Hugging Face, 13 descargas |
 | Perceiver (DeepMind) | Perceiver | No disponible | No disponible | No disponible | Referencia académica |
 | Perceiver IO (DeepMind) | Perceiver con *decoder* flexible | No disponible | No disponible | No disponible | Referencia académica |
 
@@ -77,7 +77,7 @@ La diferencia práctica frente a los Perceiver de referencia es que este reposit
 - El checkpoint no ha sido entrenado: generar texto, clasificar o predecir con él produce salidas sin significado.
 - No se ha auditado robustez, equidad ni transferencia de dominio, según reconoce el propio autor.
 - Discrepancia entre la escala declarada («xlarge») y los 33.088 parámetros del checkpoint; verificar `config.json` antes de asumir cualquier tamaño real.
-- Ausencia de tokenizador, de pipeline declarado y de idiomas soportados: no es un modelo listo para usar con APIs automáticas de HuggingFace sin adaptador propio.
+- Ausencia de tokenizador, de pipeline declarado y de idiomas soportados: no es un modelo listo para usar con APIs automáticas de Hugging Face sin adaptador propio.
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado sobre el que medirlo.
 - Sesgos conocidos: no documentados ni medidos.
 - Licencia apache-2.0, permisiva para uso comercial, pero el autor advierte de revisar por separado los términos de los datos de origen cuando se usen conjuntos externos.
@@ -85,9 +85,9 @@ La diferencia práctica frente a los Perceiver de referencia es que este reposit
 
 ## Enlaces
 
-- [HuggingFace: sandeepraowam/multitask-fast](https://huggingface.co/sandeepraowam/multitask-fast)
+- [Hugging Face: sandeepraowam/multitask-fast](https://huggingface.co/sandeepraowam/multitask-fast)
 - [MultitaskAI](https://multitaskai.com/) (producto no relacionado con este modelo)
-- [MultiTask AI Model, espacio de HuggingFace de 1Prarthana](https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model) (no relacionado)
+- [MultiTask AI Model, espacio de Hugging Face de 1Prarthana](https://huggingface.co/spaces/1Prarthana/MultiTask-AI-Model) (no relacionado)
 - [Evaluating a Multitask AI Model versus Humans for Portion Size Estimation (medRxiv)](https://www.medrxiv.org/content/10.64898/2026.04.16.26351036v1.full.pdf) (no relacionado)
 - [One Model for All Tasks: Leveraging Efficient World Models (arXiv 2509.07945)](https://arxiv.org/abs/2509.07945) (contexto general sobre modelos multitarea, no vinculado al repositorio)
 

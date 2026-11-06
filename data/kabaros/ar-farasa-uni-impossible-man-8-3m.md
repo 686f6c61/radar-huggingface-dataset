@@ -93,6 +93,6 @@ El modelo con mejor puntuacion es el de 100% ebooks con tokenizador CAMeL (BPE),
 
 ## Enlaces
 
-- [HuggingFace - kabaros/ar-farasa-uni-impossible-man-8.3M](https://huggingface.co/kabaros/ar-farasa-uni-impossible-man-8.3M)
+- [Hugging Face - kabaros/ar-farasa-uni-impossible-man-8.3M](https://huggingface.co/kabaros/ar-farasa-uni-impossible-man-8.3M)
 - [Dataset companion (ejemplo) - kabaros/ara-ebooks-heavy-8.3M](https://huggingface.co/kabaros/ara-ebooks-heavy-8.3M) (mencionado en la model card, no verificado)
 - No se han encontrado otros enlaces (papers, blogs, repos) en la busqueda web realizada.

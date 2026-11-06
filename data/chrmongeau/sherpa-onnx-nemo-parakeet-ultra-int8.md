@@ -89,7 +89,7 @@ No se han publicado resultados de benchmarks estandar (WER, MMLU, etc.) en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chrmongeau/sherpa-onnx-nemo-parakeet-ultra-int8
+- Hugging Face: https://huggingface.co/chrmongeau/sherpa-onnx-nemo-parakeet-ultra-int8
 - Modelo base (pesos): https://huggingface.co/moondream/parakeet-ultra
 - Modelo base (arquitectura): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Exportacion comunitaria independiente: https://huggingface.co/leogaudin/sherpa-onnx-nemo-parakeet-ultra-int8

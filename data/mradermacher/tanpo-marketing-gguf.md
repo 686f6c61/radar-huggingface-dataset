@@ -23,12 +23,12 @@ Es relevante ahora porque la tendencia hacia modelos pequeños y especializados 
 | Autor de la cuantización | mradermacher |
 | Modelo base | d4rkninja/tanpo-marketing |
 | Tamaño del repositorio | 10,6 GB (todas las cuantizaciones juntas) |
-| Fecha de publicación | 16 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 16 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura interna del modelo. Los tags del repositorio (`transformers`, `unsloth`, `tanpo`, `darklab`, `marketing`) indican que se trata de un modelo de lenguaje para generación de texto, presumiblemente un transformer decoder-only, y que el ajuste fino del modelo base se realizó con la librería Unsloth, especializada en fine-tuning eficiente en memoria mediante técnicas como LoRA/QLoRA. El pipeline declarado por HuggingFace aparece como no disponible y tampoco se documenta si hubo RLHF, DPO u otro tipo de alineamiento posterior.
+No hay información publicada sobre la arquitectura interna del modelo. Los tags del repositorio (`transformers`, `unsloth`, `tanpo`, `darklab`, `marketing`) indican que se trata de un modelo de lenguaje para generación de texto, presumiblemente un transformer decoder-only, y que el ajuste fino del modelo base se realizó con la librería Unsloth, especializada en fine-tuning eficiente en memoria mediante técnicas como LoRA/QLoRA. El pipeline declarado por Hugging Face aparece como no disponible y tampoco se documenta si hubo RLHF, DPO u otro tipo de alineamiento posterior.
 
 Tampoco se especifican el número de tokens de entrenamiento, la composición del dataset, la ventana de contexto original ni técnicas de atención alternativas. El repositorio de mradermacher es exclusivamente una conversión a GGUF de los pesos originales, con cuantizaciones estáticas; el propio autor indica que no hay cuantizaciones con imatrix/weighted disponibles en el momento de la publicación, aunque pueden solicitarse abriendo una discusión en la comunidad.
 
@@ -38,7 +38,7 @@ Tampoco se especifican el número de tokens de entrenamiento, la composición de
 - Generación de contenido de marketing: es la especialización declarada, con tags `marketing`, `tanpo` y `darklab`.
 - Escritura creativa y persuasiva: presuntamente orientada a copys, eslóganes, descripciones de producto y campañas, aunque no hay documentación técnica que lo detalle.
 - Instrucciones en inglés: el único idioma declarado es `en`.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible con HuggingFace.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible con Hugging Face.
 - Tool calling / function calling: no disponible (no se documenta).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no se documenta).
 - Capacidades multimodales (visión, audio): no disponibles.
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tanpo-marketing (este, vía GGUF) | 1,17 B | no disponible | `other` (no detallada) | HuggingFace, cuantizaciones GGUF | Especializado en marketing, solo inglés, sin benchmarks publicados |
-| Llama 3.2 1B | 1,24 B | 128 K | Llama 3.2 Community License | HuggingFace, GGUF y safetensors | Modelo generalista, multilingüe, muy extendido en inferencia local |
-| Qwen2.5 1.5B | 1,54 B | 32 K | Apache 2.0 | HuggingFace, GGUF y safetensors | Generalista, buen rendimiento en código y multilingüe, licencia permisiva |
-| Gemma 2 2B | 2,6 B | 8 K | Gemma Terms of Use | HuggingFace, GGUF y safetensors | Generalista, algo más grande, requiere más memoria |
+| tanpo-marketing (este, vía GGUF) | 1,17 B | no disponible | `other` (no detallada) | Hugging Face, cuantizaciones GGUF | Especializado en marketing, solo inglés, sin benchmarks publicados |
+| Llama 3.2 1B | 1,24 B | 128 K | Llama 3.2 Community License | Hugging Face, GGUF y safetensors | Modelo generalista, multilingüe, muy extendido en inferencia local |
+| Qwen2.5 1.5B | 1,54 B | 32 K | Apache 2.0 | Hugging Face, GGUF y safetensors | Generalista, buen rendimiento en código y multilingüe, licencia permisiva |
+| Gemma 2 2B | 2,6 B | 8 K | Gemma Terms of Use | Hugging Face, GGUF y safetensors | Generalista, algo más grande, requiere más memoria |
 
 La comparación con estos modelos es orientativa en cuanto a tamaño y categoría de despliegue: para tanpo-marketing no hay datos de rendimiento publicados, de modo que no es posible establecer una comparación cuantitativa de calidad. Su ventaja diferencial sería la especialización en marketing; su desventaja, la ausencia de documentación, la licencia poco clara y el soporte únicamente en inglés.
 
@@ -93,7 +93,7 @@ La comparación con estos modelos es orientativa en cuanto a tamaño y categorí
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/tanpo-marketing-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/tanpo-marketing-GGUF
 - Modelo base: https://huggingface.co/d4rkninja/tanpo-marketing
 - Página de resumen de cuantizaciones del autor: https://hf.tst.eu/model#tanpo-marketing-GGUF
 - Solicitudes de cuantización / FAQ del autor: https://huggingface.co/mradermacher/model_requests

@@ -100,5 +100,5 @@ La comparación cuantitativa con alternativas no es posible sin acceso al conjun
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lendmindltd/lendmind-intake-4b
+- Repositorio Hugging Face: https://huggingface.co/lendmindltd/lendmind-intake-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "local-vision-models/seedvr2-7b-mlx-8bit",
+  "slug": "local-vision-models-seedvr2-7b-mlx-8bit",
+  "author": "local-vision-models",
+  "url": "https://huggingface.co/local-vision-models/seedvr2-7b-mlx-8bit",
+  "created_at": "2026-11-05T20:41:35.000Z",
+  "updated_at": "2026-11-05T20:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "super-resolution",
+    "image-restoration",
+    "base_model:ByteDance-Seed/SeedVR2-7B",
+    "base_model:finetune:ByteDance-Seed/SeedVR2-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9257041567,
+  "storage_human": "9.3 GB",
+  "base_model": "ByteDance-Seed/SeedVR2-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByteDance-Seed/SeedVR2-7B · Hugging Face",
+      "url": "https://huggingface.co/ByteDance-Seed/SeedVR2-7B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ByteDance-Seed/SeedVR: Repo for SeedVR2 (ICLR2026) & SeedVR ...",
+      "url": "https://github.com/ByteDance-Seed/SeedVR",
+      "snippet": "Serving as the largest-ever diffusion transformer model towards generic video restoration, we hope SeedVR could push the frontiers of advanced VR and inspire future research in developing large vision models for real-world video restoration."
+    }
+  ]
+}

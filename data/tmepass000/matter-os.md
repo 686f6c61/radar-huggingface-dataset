@@ -93,11 +93,11 @@ No disponible. La model card no identifica alternativas comparables ni ofrece da
 - La interfaz LLM es un stub declarado; sin extras `chem` o `quantum`, las funciones relacionadas devuelven `UNSUPPORTED_METHOD`.
 - El nivel M4 nunca se asigna por simulacion y requiere evidencia de laboratorio real.
 - Licencia MIT para el codigo, pero los componentes de terceros conservan sus propias licencias; conviene revisar LICENSES_AND_ATTRIBUTION.md antes de uso comercial.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta; prototipo 0.1.0 sin validacion externa.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta; prototipo 0.1.0 sin validacion externa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tmepass000/matter-os
+- Modelo en Hugging Face: https://huggingface.co/tmepass000/matter-os
 - Documentacion de estado y carencias: `docs/STATUS_MATRIX.md` (referenciada en la model card)
 - Licencias y atribucion de terceros: `LICENSES_AND_ATTRIBUTION.md` (referenciado en la model card)
 - Documentacion interna citada: `docs/` (architecture, methods, API, ADRs, changelog, resources, benchmarks)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cosmos3-edge-solar-panel-225-20k es un fine-tune del modelo nvidia/Cosmos3-Edge publicado por el usuario selfmaderoboticist en HuggingFace. Se trata de una política robótica de imitación entrenada para una tarea concreta de manipulación: limpiar con un cepillo un panel solar situado encima de un helicóptero, empleando un brazo SO101. El modelo consume una imagen de muñeca (wrist camera) junto con una instrucción de tarea en texto y produce 16 acciones relativas de pose del efector final más los valores de pinza, a una frecuencia de 15 Hz.
+cosmos3-edge-solar-panel-225-20k es un fine-tune del modelo nvidia/Cosmos3-Edge publicado por el usuario selfmaderoboticist en Hugging Face. Se trata de una política robótica de imitación entrenada para una tarea concreta de manipulación: limpiar con un cepillo un panel solar situado encima de un helicóptero, empleando un brazo SO101. El modelo consume una imagen de muñeca (wrist camera) junto con una instrucción de tarea en texto y produce 16 acciones relativas de pose del efector final más los valores de pinza, a una frecuencia de 15 Hz.
 
 El entrenamiento se lanzó el 15 de septiembre de 2026 y está planificado para 20.000 pasos sobre 8 GPU H100, con un dataset de 225 episodios (202 de entrenamiento y 23 de validación, semilla 42). La model card indica que el dataset procesado en H.264 es privado y que no se publican ni vídeos ni ficheros parquet de episodios. El repositorio ocupa 61,7 GB e incluye checkpoints verificados bajo `checkpoints/` con un puntero `latest_checkpoint.json`.
 
@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Entrada | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cosmos3-edge-solar-panel-225-20k (este modelo) | no disponible | Imagen de muñeca + instrucción de tarea | No publicado | no disponible | HuggingFace, 61,7 GB, 0 descargas |
-| nvidia/Cosmos3-Edge (modelo base) | no disponible | no disponible | no disponible | Condiciones propias de NVIDIA (no detalladas en la información disponible) | HuggingFace |
+| cosmos3-edge-solar-panel-225-20k (este modelo) | no disponible | Imagen de muñeca + instrucción de tarea | No publicado | no disponible | Hugging Face, 61,7 GB, 0 descargas |
+| nvidia/Cosmos3-Edge (modelo base) | no disponible | no disponible | no disponible | Condiciones propias de NVIDIA (no detalladas en la información disponible) | Hugging Face |
 | Otras políticas de imitación para manipulación (p. ej. derivadas de LIBERO) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos comparativos verificables con alternativas de la misma categoría (políticas robóticas VLA del mismo tamaño o para la misma tarea). Cualquier comparación numérica sería especulativa.
@@ -86,8 +86,8 @@ No se dispone de datos comparativos verificables con alternativas de la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/selfmaderoboticist/cosmos3-edge-solar-panel-225-20k
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/Cosmos3-Edge
+- Modelo en Hugging Face: https://huggingface.co/selfmaderoboticist/cosmos3-edge-solar-panel-225-20k
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/Cosmos3-Edge
 - Código y receta de entrenamiento (cosmos-framework, rama solar-panel-edge-20k): https://github.com/Rebis-IvLabs/cosmos-framework/tree/codex/solar-panel-edge-20k/examples/solar_edge
 - Commit de upstream de NVIDIA fusionado: `3f94d25d564ff0a982ac3e540cb83bfe4a5e5a11`
 - Los resultados de la búsqueda web proporcionada no contienen enlaces relevantes al modelo (corresponden a contenido no relacionado sobre seguros médicos); no se han encontrado papers, blogs ni demos adicionales.

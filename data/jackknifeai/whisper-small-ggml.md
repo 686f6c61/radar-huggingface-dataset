@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Ventana | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JackKnifeAI/whisper-small-ggml | 244 M (base) | 30 s | no disponible | MIT | HuggingFace (repo propio) |
+| JackKnifeAI/whisper-small-ggml | 244 M (base) | 30 s | no disponible | MIT | Hugging Face (repo propio) |
 | Whisper small (OpenAI) | 244 M | 30 s | multilingue | MIT | Repo oficial de OpenAI |
 | Whisper base (OpenAI) | 74 M | 30 s | multilingue | MIT | Repo oficial de OpenAI |
 | Whisper medium (OpenAI) | 769 M | 30 s | multilingue | MIT | Repo oficial de OpenAI |

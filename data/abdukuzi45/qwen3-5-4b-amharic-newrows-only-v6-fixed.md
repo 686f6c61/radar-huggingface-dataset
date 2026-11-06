@@ -91,7 +91,7 @@ No se dispone de informacion sobre modelos comparables especificos de adaptacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-fixed
+- Hugging Face: https://huggingface.co/abdukuzi45/qwen3.5-4b-amharic-newrows-only-v6-fixed
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Dataset: https://huggingface.co/datasets/abdukuzi45/amharic-cpt-with-english-replay-v1
 - Paper, blog o repositorio adicional: no disponible en la informacion proporcionada.

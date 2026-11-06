@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 | D1A-E2B-it QAT (este) | No disponible (adaptador de 0,1 GB) | No disponible | transfer-v4 −5,2 pts frente a v0.6; mejor en tareas propias de D1A | Apache-2.0 | PyTorch, CPU, NVIDIA, Mac sin MLX |
 | D1A-E2B-it v0.6 | No disponible | No disponible | Referencia de transfer-v4; peor en etiquetado de PR, enrutamiento y decisiones duras | Apache-2.0 | Fijar con `JohnP1/d1a-e2b-it@v0.6` |
 | D1A-E2B-it QAT MLX q4 | Mismo adaptador | No disponible | Ejemplo de decisión 0,67 frente a 0,65 en PyTorch; 27 de 28 respuestas multimedia idénticas | Apache-2.0 | Solo Apple Silicon |
-| google/gemma-4-E2B-it-qat-w4a16-ct | No disponible | No disponible | Modelo base sin adaptador; chat generalista en lugar de decisiones calibradas | Apache-2.0 | HuggingFace |
+| google/gemma-4-E2B-it-qat-w4a16-ct | No disponible | No disponible | Modelo base sin adaptador; chat generalista en lugar de decisiones calibradas | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JohnP1/d1a-e2b-it-qat
+- Modelo en Hugging Face: https://huggingface.co/JohnP1/d1a-e2b-it-qat
 - Build MLX q4 para Apple Silicon: https://huggingface.co/JohnP1/d1a-e2b-it-qat-mlx-q4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Checkpoint QAT del tronco: https://huggingface.co/google/gemma-4-E2B-it-qat-w4a16-ct

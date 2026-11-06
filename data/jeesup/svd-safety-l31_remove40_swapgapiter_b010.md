@@ -90,6 +90,6 @@ No se dispone de datos comparativos de rendimiento (ASR, sobrerrechazo o perplej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

@@ -133,7 +133,7 @@ Comparativa con modelos generalistas de tamaño similar (por ejemplo, la familia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZZRI/Feihua-n1-1.7B
+- Modelo en Hugging Face: https://huggingface.co/ZZRI/Feihua-n1-1.7B
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-1.7B
 - Generación anterior (0.8B): https://huggingface.co/ZZRI/Feihua-n1-0.8B
 - Primera generación (64M): https://huggingface.co/ZZRI/Feihua-n1-64M

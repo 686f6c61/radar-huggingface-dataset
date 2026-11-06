@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hy-MT2-1.8B-NPU2 es una conversion cuantizada del modelo de traduccion tencent/Hy-MT2-1.8B, publicada por el usuario Atomic-Germ en HuggingFace. No es un modelo entrenado desde cero: se trata de un port del modelo base de 1.800 millones de parametros al formato Q4NX, un formato propio del runtime OpenFlowLM (OFLM) orientado a ejecutar inferencia sobre las NPU AMD XDNA integradas en los procesadores Ryzen AI. El repositorio contiene un unico archivo de pesos, `model.q4nx`, de 1,50 GB, acompanado de configuracion de runtime, tokenizer y plantilla de chat.
+Hy-MT2-1.8B-NPU2 es una conversion cuantizada del modelo de traduccion tencent/Hy-MT2-1.8B, publicada por el usuario Atomic-Germ en Hugging Face. No es un modelo entrenado desde cero: se trata de un port del modelo base de 1.800 millones de parametros al formato Q4NX, un formato propio del runtime OpenFlowLM (OFLM) orientado a ejecutar inferencia sobre las NPU AMD XDNA integradas en los procesadores Ryzen AI. El repositorio contiene un unico archivo de pesos, `model.q4nx`, de 1,50 GB, acompanado de configuracion de runtime, tokenizer y plantilla de chat.
 
 El modelo hereda la funcion de traduccion automatica del original y declara cobertura de 36 idiomas, entre ellos espanol, ingles, chino, frances, aleman, japones, arabe e hindi, bajo licencia Apache 2.0. Su interes practico esta en el nicho de despliegue: permite traduccion local en equipos con NPU sin GPU dedicada ni llamadas a servicios en la nube, lo que encaja con el tamano reducido y la cuantizacion aplicada.
 
@@ -69,9 +69,9 @@ La informacion disponible solo permite comparar esta conversion con su modelo de
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tencent/Hy-MT2-1.8B (base) | 1,8B | no disponible | safetensors (precision original) | apache-2.0, segun los metadatos del repositorio | HuggingFace, repositorio oficial de Tencent |
+| tencent/Hy-MT2-1.8B (base) | 1,8B | no disponible | safetensors (precision original) | apache-2.0, segun los metadatos del repositorio | Hugging Face, repositorio oficial de Tencent |
 | Hy-MT2-1.8B-heretic.Q8_0.gguf (origen de la conversion) | 1,8B | no disponible | GGUF Q8_0 | no disponible | referenciado en la model card, sin enlace directo |
-| Atomic-Germ/Hy-MT2-1.8B-NPU2 (este repositorio) | 1,8B | no disponible | Q4NX (1,50 GB) | apache-2.0 | HuggingFace, 0 descargas |
+| Atomic-Germ/Hy-MT2-1.8B-NPU2 (este repositorio) | 1,8B | no disponible | Q4NX (1,50 GB) | apache-2.0 | Hugging Face, 0 descargas |
 
 No se dispone de datos de rendimiento comparado con otras alternativas de traduccion de tamano similar, por lo que no es posible establecer una comparacion cuantitativa de calidad, contexto o throughput.
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado con otras alternativas de traduc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Hy-MT2-1.8B-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Hy-MT2-1.8B-NPU2
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-1.8B
 - Model card del modelo base (referenciada por el autor): https://huggingface.co/tencent/Hy-MT2-1.8B
 - Referencia arXiv indicada en los metadatos del repositorio: arxiv:2605.22064 (no verificada; no se ha localizado el paper en la busqueda web)

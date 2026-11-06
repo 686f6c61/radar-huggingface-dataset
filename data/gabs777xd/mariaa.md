@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mariaa es un repositorio de modelo publicado en HuggingFace por el usuario gabs777xd bajo la identificacion `gabs777xd/mariaa`. La model card asociada contiene unicamente la declaracion de licencia (`openrail`) y ningun otro metadato: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB, no acumula descargas ni "likes" y no tiene pipeline declarado.
+mariaa es un repositorio de modelo publicado en Hugging Face por el usuario gabs777xd bajo la identificacion `gabs777xd/mariaa`. La model card asociada contiene unicamente la declaracion de licencia (`openrail`) y ningun otro metadato: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, datos de entrenamiento ni resultados de evaluacion. El repositorio ocupa 0,2 GB, no acumula descargas ni "likes" y no tiene pipeline declarado.
 
 Por el momento no es posible determinar que problema resuelve el modelo ni cual es su propuesta tecnica. El unico dato objetivo disponible es el tamano del repositorio (0,2 GB), que resulta compatible con pesos de un modelo de lenguaje pequeno en precision de 16 bits o con una version fuertemente cuantizada de un modelo mayor, pero esta interpretacion es una inferencia a partir del tamano del fichero y no una caracteristica confirmada por el autor.
 
@@ -93,7 +93,7 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/gabs777xd/mariaa
+- Pagina del modelo en Hugging Face: https://huggingface.co/gabs777xd/mariaa
 - Paper o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio interactivo: no disponible

@@ -80,7 +80,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF
 - Modelo base (BF16): https://huggingface.co/HCHs/RivetCoder-9B-A4B
 - Licencia LFM Open License v1.0: https://huggingface.co/HCHs/RivetCoder-9B-A4B-GGUF/blob/main/LICENSE
 - Ficha en LLM Explorer: https://llm-explorer.com/model/HCHs%2FRivetCoder-9B-A4B,5uQDL9o7TiDsA7PXdyzR3O

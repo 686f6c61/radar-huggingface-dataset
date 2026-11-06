@@ -84,10 +84,10 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nassimjp/Roshan3-VL-4B-Thinking
+- Hugging Face: https://huggingface.co/nassimjp/Roshan3-VL-4B-Thinking
 - Modelo base del ajuste: https://huggingface.co/nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi
 - Checkpoint original de ajuste: `nassimjp/Qwen3-VL-4B-Thinking-Pashto-Zi_1793282777`
-- Qwen en HuggingFace: https://huggingface.co/Qwen
+- Qwen en Hugging Face: https://huggingface.co/Qwen
 - Unsloth: https://github.com/unslothai/unsloth
 - Hugging Face TRL: https://github.com/huggingface/trl
 - PyTorch: https://pytorch.org/

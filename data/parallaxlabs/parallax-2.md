@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`parallaxlabs/parallax-2` es un repositorio de HuggingFace publicado por la organizacion `parallaxlabs` que, en el momento de la consulta, no contiene un modelo descargable ni documentacion tecnica. La model card se limita a un aviso de "COMING SOON!" y a una peticion delikes y follows, sin especificar arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas. El repositorio esta etiquetado con licencia Apache 2.0 y region US, no declara pipeline de inferencia y acumula 0 descargas y 0 likes.
+`parallaxlabs/parallax-2` es un repositorio de Hugging Face publicado por la organizacion `parallaxlabs` que, en el momento de la consulta, no contiene un modelo descargable ni documentacion tecnica. La model card se limita a un aviso de "COMING SOON!" y a una peticion delikes y follows, sin especificar arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni idiomas. El repositorio esta etiquetado con licencia Apache 2.0 y region US, no declara pipeline de inferencia y acumula 0 descargas y 0 likes.
 
 Por tanto, no es posible evaluar el modelo: se desconoce si se trata de un transformer denso, un modelo MoE, un hibrido o cualquier otra arquitectura, y tampoco hay pesos publicados en ningun formato (safetensors, GGUF u otros). La ficha que sigue refleja exclusivamente los metadatos disponibles y marca de forma explicita cada apartado sin datos.
 
@@ -79,7 +79,7 @@ No disponible. Al desconocerse el tamano, la arquitectura y las capacidades, no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/parallaxlabs/parallax-2
+- Repositorio en Hugging Face: https://huggingface.co/parallaxlabs/parallax-2
 - Paper tecnico: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de codigo: no disponible

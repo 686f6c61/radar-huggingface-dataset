@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_weightedavg_merge
 - Discusiones del modelo: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_merge/discussions
 - Modelo relacionado (merge similar): https://huggingface.co/yuhengtu-bytedance/sfm-filtered-e2e-alignment-4k-5k-6k-avg
 - Página en FriendliAI: https://friendli.ai/models/yuhengtu-bytedance/sfm_filtered_e2e_alignment-2k_3k_4k_merge

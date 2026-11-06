@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gemma-4-E4B-it-oQ4e-fp16-mtp` es una cuantización mixta del modelo Gemma 4 E4B instructivo, publicada por el usuario jancirnodziewiaty en HuggingFace. El checkpoint está pensado para su uso con MLX, el framework de Apple para ejecutar modelos en silicio de la serie M, y emplea la herramienta oQ (oMLX v0.7.3) para aplicar cuantización de precisión mixta con un promedio efectivo de 6,514 bits por peso sobre un total de 8.019.880.782 parámetros.
+`gemma-4-E4B-it-oQ4e-fp16-mtp` es una cuantización mixta del modelo Gemma 4 E4B instructivo, publicada por el usuario jancirnodziewiaty en Hugging Face. El checkpoint está pensado para su uso con MLX, el framework de Apple para ejecutar modelos en silicio de la serie M, y emplea la herramienta oQ (oMLX v0.7.3) para aplicar cuantización de precisión mixta con un promedio efectivo de 6,514 bits por peso sobre un total de 8.019.880.782 parámetros.
 
 El modelo conserva la estructura multimodal del Gemma 4 E4B original: incluye un modelo de lenguaje de 7,469B parámetros, un codificador de visión de 0,167B, un codificador de audio de 0,305B y una cabeza MTP (multi-token prediction) de 0,079B. El resultado es un checkpoint de 6,6 GB que combina capas cuantizadas a 4, 5, 6 y 8 bits con componentes en BF16, FP16 y FP32, lo que permite ejecutar un modelo de ~8B parámetros multimodales en hardware Apple con memoria unificada moderada.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| gemma-4-E4B-it-oQ4e-fp16-mtp (este) | 8,02B | no disponible | no disponible | safetensors MLX | HuggingFace, 0 descargas |
-| Gemma 4 E4B it (original de Google) | ~8B (estimado) | no disponible | no disponible en esta ficha | safetensors | HuggingFace (repo oficial de Google) |
-| Otras cuantizaciones MLX de Gemma 4 E4B | ~8B | no disponible | según autor | safetensors MLX | HuggingFace |
+| gemma-4-E4B-it-oQ4e-fp16-mtp (este) | 8,02B | no disponible | no disponible | safetensors MLX | Hugging Face, 0 descargas |
+| Gemma 4 E4B it (original de Google) | ~8B (estimado) | no disponible | no disponible en esta ficha | safetensors | Hugging Face (repo oficial de Google) |
+| Otras cuantizaciones MLX de Gemma 4 E4B | ~8B | no disponible | según autor | safetensors MLX | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de los modelos comparables en la información proporcionada, por lo que la comparación se limita a parámetros, formato y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E4B-it-oQ4e-fp16-mtp
 - oQ / oMLX (herramienta de cuantización citada): https://github.com/jundot/omlx
 - Gemma 4 E4B original de Google: no disponible en la información proporcionada
 - Paper, blog o demo: no disponible en la información proporcionada

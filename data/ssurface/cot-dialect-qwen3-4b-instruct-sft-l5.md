@@ -60,7 +60,7 @@ No se han publicado resultados comparativos con el modelo base sin comprimir ni 
 - El modelo base en bf16 ocupa aproximadamente 8 GB de VRAM; con cuantizacion de 4 bits (no incluida en el repositorio) se reduce a unos 2-3 GB.
 - Para inferencia en GPU consumer, una RTX 4090 (24 GB) o RTX 3090 (24 GB) es suficiente. En GPUs con menos VRAM (por ejemplo 8 GB) se puede usar cuantizacion o desplegar con vLLM en modo CPU.
 - El entrenamiento se realizo en una NVIDIA A100 80GB, pero no es necesario ese hardware para inferencia.
-- Opciones de despliegue: HuggingFace `transformers` con `peft`, `vLLM` (si se fusiona el adaptador), `llama.cpp` (requiere convertir el adaptador a GGUF, no incluido).
+- Opciones de despliegue: Hugging Face `transformers` con `peft`, `vLLM` (si se fusiona el adaptador), `llama.cpp` (requiere convertir el adaptador a GGUF, no incluido).
 - La latencia dependera del hardware; con una RTX 4090 y el modelo en bf16 se espera una generacion de decenas de tokens por segundo, aunque las cadenas comprimidas reducen el numero total de tokens generados.
 
 ## Comparativa con modelos similares

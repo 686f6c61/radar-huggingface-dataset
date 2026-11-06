@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. Todas c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xCloudinfo/Muse-Glimmer-30B-Uncensored-xCloud-GGUF
+- Repositorio Hugging Face: https://huggingface.co/xCloudinfo/Muse-Glimmer-30B-Uncensored-xCloud-GGUF
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Variante alternativa (mradermacher): https://huggingface.co/mradermacher/Muse-Glimmer-30B-uncensored-GGUF
 - Variante alternativa (0bserverx): https://huggingface.co/0bserverx/Muse-Glimmer-30B-Heretic-Uncensored-GGUF

@@ -92,7 +92,7 @@ La comparación relevante es frente a los Qwen3 originales y frente a otros llam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/STANCHJAM/Bonsai-llamafile
+- Repositorio Hugging Face: https://huggingface.co/STANCHJAM/Bonsai-llamafile
 - Modelo base 1.7B: https://huggingface.co/prism-ml/Bonsai-1.7B-gguf
 - Modelo base 4B: https://huggingface.co/prism-ml/Bonsai-4B-gguf
 - Modelo base 8B: https://huggingface.co/prism-ml/Bonsai-8B-gguf

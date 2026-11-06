@@ -77,9 +77,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Resolución / duración | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.2-T2V-A14B | 14B activos (MoE); total no disponible | 480P y 720P, 5 s | Texto a vídeo | Apache 2.0 | HuggingFace, ModelScope, GitHub |
-| Wan2.2-I2V-A14B | 14B activos (MoE); total no disponible | 480P y 720P | Imagen a vídeo | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.2-TI2V-5B | 5B | 720P a 24 fps | Texto e imagen a vídeo | Apache 2.0 (según familia) | HuggingFace, ModelScope |
+| Wan2.2-T2V-A14B | 14B activos (MoE); total no disponible | 480P y 720P, 5 s | Texto a vídeo | Apache 2.0 | Hugging Face, ModelScope, GitHub |
+| Wan2.2-I2V-A14B | 14B activos (MoE); total no disponible | 480P y 720P | Imagen a vídeo | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.2-TI2V-5B | 5B | 720P a 24 fps | Texto e imagen a vídeo | Apache 2.0 (según familia) | Hugging Face, ModelScope |
 | Modelos comerciales (referenciados en Wan-Bench 2.0) | no disponible | no disponible | Texto a vídeo | Propietaria | API / servicio |
 
 La model card no ofrece comparaciones numéricas con alternativas concretas; la única referencia comparativa es la afirmación cualitativa sobre Wan-Bench 2.0 frente a modelos comerciales.
@@ -98,13 +98,13 @@ La model card no ofrece comparaciones numéricas con alternativas concretas; la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
+- Modelo en Hugging Face: https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B
 - Repositorio en GitHub: https://github.com/Wan-Video/Wan2.2
 - Informe técnico (arXiv 2503.20314): https://arxiv.org/abs/2503.20314
 - Referencia adicional citada en las etiquetas del repositorio (arXiv 2309.14509): https://arxiv.org/abs/2309.14509
 - Blog oficial: https://wan.video/welcome
 - Sitio del proyecto: https://wan.video
-- Organización en HuggingFace: https://huggingface.co/Wan-AI/
+- Organización en Hugging Face: https://huggingface.co/Wan-AI/
 - Modelo en ModelScope: https://modelscope.cn/models/Wan-AI/Wan2.2-T2V-A14B
 - Organización en ModelScope: https://modelscope.cn/organization/Wan-AI
 - Modelo de imagen a vídeo (I2V-A14B): https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B

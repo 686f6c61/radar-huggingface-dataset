@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn15
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-4b-prune_width_ffn15
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Librería de poda: nvidia-modelopt 0.46.0rc1 (no se proporciona URL en la información disponible)
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información proporcionada.

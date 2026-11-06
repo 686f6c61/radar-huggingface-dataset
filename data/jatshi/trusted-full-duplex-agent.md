@@ -78,9 +78,9 @@ Datos adicionales de atribucion por modalidad reportados por el autor: auto-recu
 
 | Modelo / artefacto | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jatshi/trusted-full-duplex-agent` (este repo) | Adaptadores LoRA; bases de ~1,5B y ~9B | No disponible (base Qwen2.5-1.5B: 32.768 tokens) | `context_recall` 0,484 (1,5B) y 0,649-0,688 (9B) | Apache 2.0 | HuggingFace, 0 descargas, 1,6 GB |
-| `Qwen/Qwen2.5-1.5B-Instruct` (base) | ~1,5B | 32.768 tokens nativos | No disponible en esta informacion | No disponible | HuggingFace |
-| `openbmb/MiniCPM-o-4_5` (base) | ~9B segun la model card | No disponible | `context_recall` pre-RL: 0,522 y 0,688 en dos pre-evaluaciones | No disponible | HuggingFace |
+| `jatshi/trusted-full-duplex-agent` (este repo) | Adaptadores LoRA; bases de ~1,5B y ~9B | No disponible (base Qwen2.5-1.5B: 32.768 tokens) | `context_recall` 0,484 (1,5B) y 0,649-0,688 (9B) | Apache 2.0 | Hugging Face, 0 descargas, 1,6 GB |
+| `Qwen/Qwen2.5-1.5B-Instruct` (base) | ~1,5B | 32.768 tokens nativos | No disponible en esta informacion | No disponible | Hugging Face |
+| `openbmb/MiniCPM-o-4_5` (base) | ~9B segun la model card | No disponible | `context_recall` pre-RL: 0,522 y 0,688 en dos pre-evaluaciones | No disponible | Hugging Face |
 | Otros agentes de voz full-duplex del mercado | No disponible | No disponible | No disponible | No disponible | No se han consultado datos verificables en la informacion disponible |
 
 No se dispone de datos verificables en la informacion proporcionada para comparar con alternativas de la misma categoria (agentes de voz full-duplex de otros autores), por lo que la comparativa se limita a los dos modelos base declarados por el propio repositorio.
@@ -102,7 +102,7 @@ No se dispone de datos verificables en la informacion proporcionada para compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jatshi/trusted-full-duplex-agent
+- Modelo en Hugging Face: https://huggingface.co/jatshi/trusted-full-duplex-agent
 - Dataset de entrenamiento: https://huggingface.co/datasets/jatshi/trusted-full-duplex-agent-data
 - Codigo y registros de experimentos (GitHub): https://github.com/Jatshi/trusted-full-duplex-agent
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

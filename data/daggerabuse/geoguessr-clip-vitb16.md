@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Daggerabuse/geoguessr-clip-vitb16 es un modelo alojado en HuggingFace por el usuario Daggerabuse. Por su nombre, se trata de un ajuste fino (fine-tuning) del modelo CLIP ViT-B/16, orientado a la tarea de geolocalizacion de imagenes, presumiblemente en el contexto del juego GeoGuessr. CLIP (Contrastive Language-Image Pretraining) es una arquitectura de vision-lenguaje desarrollada originalmente por OpenAI que aprende representaciones conjuntas de imagenes y texto mediante aprendizaje contrastivo.
+Daggerabuse/geoguessr-clip-vitb16 es un modelo alojado en Hugging Face por el usuario Daggerabuse. Por su nombre, se trata de un ajuste fino (fine-tuning) del modelo CLIP ViT-B/16, orientado a la tarea de geolocalizacion de imagenes, presumiblemente en el contexto del juego GeoGuessr. CLIP (Contrastive Language-Image Pretraining) es una arquitectura de vision-lenguaje desarrollada originalmente por OpenAI que aprende representaciones conjuntas de imagenes y texto mediante aprendizaje contrastivo.
 
 La model card publicada no contiene informacion tecnica sustantiva: unicamente declara la licencia cc-by-sa-4.0. No se especifican datos de entrenamiento, tamano del dataset, hiperparametros, ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere un modelo reciente o de baja difusion.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Daggerabuse/geoguessr-clip-vitb16 | no disponible | no disponible | cc-by-sa-4.0 | HuggingFace |
-| openai/clip-vit-base-patch16 | ~150 M (vision + texto) | 77 tokens de texto, imagenes 224x224 | MIT (modelo original) | HuggingFace, ampliamente usado |
+| Daggerabuse/geoguessr-clip-vitb16 | no disponible | no disponible | cc-by-sa-4.0 | Hugging Face |
+| openai/clip-vit-base-patch16 | ~150 M (vision + texto) | 77 tokens de texto, imagenes 224x224 | MIT (modelo original) | Hugging Face, ampliamente usado |
 | Geoclip (proyectos de geolocalizacion CLIP) | variable | variable | variable segun proyecto | Repositorios de investigacion |
 
 La comparativa se limita a alternativas genericas de la familia CLIP, ya que no se dispone de datos de rendimiento del modelo evaluado ni de modelos especificos de geolocalizacion con metricas publicadas en la informacion proporcionada.
@@ -80,5 +80,5 @@ La comparativa se limita a alternativas genericas de la familia CLIP, ya que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Daggerabuse/geoguessr-clip-vitb16
+- Hugging Face: https://huggingface.co/Daggerabuse/geoguessr-clip-vitb16
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

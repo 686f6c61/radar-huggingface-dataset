@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NeuroDino es una red neuronal de 771 parametros que juega al juego del dinosaurio de Chrome (T-Rex runner). No es un modelo de lenguaje ni un transformer: es un perceptron multicapa implementado directamente con NumPy, sin framework de aprendizaje automatico, entrenado mediante un algoritmo genetico (neuroevolucion) en lugar de descenso de gradiente. Lo publica el usuario ahm3texe en HuggingFace con licencia MIT y un unico run de 6,5 horas y 83 generaciones.
+NeuroDino es una red neuronal de 771 parametros que juega al juego del dinosaurio de Chrome (T-Rex runner). No es un modelo de lenguaje ni un transformer: es un perceptron multicapa implementado directamente con NumPy, sin framework de aprendizaje automatico, entrenado mediante un algoritmo genetico (neuroevolucion) en lugar de descenso de gradiente. Lo publica el usuario ahm3texe en Hugging Face con licencia MIT y un unico run de 6,5 horas y 83 generaciones.
 
 La red recibe 12 valores numericos por fotograma (distancias y anchuras de los dos obstaculos siguientes, velocidad del juego, hueco entre obstaculos y estado del dinosaurio) y emite tres acciones posibles: saltar, agacharse o correr. La relevancia del artefacto es principalmente didactica y de investigacion: es un ejemplo reproducible y minimo de neuroevolucion, con codigo de entrenamiento publico, registro de entrenamiento completo y pesos en float64 que se pueden cargar y ejecutar en cualquier maquina sin GPU.
 
@@ -40,7 +40,7 @@ El entrenamiento no usa retropropagacion ni gradientes. Cada generacion evalua 5
 ## Casos de uso
 
 - Docencia de algoritmos geneticos: el repositorio incluye codigo de entrenamiento, log por generacion y pesos finales, lo que permite reproducir el proceso completo y estudiar el efecto de la seleccion, el cruce y la mutacion en un caso de 771 parametros.
-- Demostracion interactiva en navegador: el Space de HuggingFace dibuja la red junto al dinosaurio en tiempo real, util para explicar que es una red neuronal a audiencias no tecnicas.
+- Demostracion interactiva en navegador: el Space de Hugging Face dibuja la red junto al dinosaurio en tiempo real, util para explicar que es una red neuronal a audiencias no tecnicas.
 - Referencia base (baseline) en experimentos de neuroevolucion: cualquier variante nueva (otra funcion de fitness, otro esquema de mutacion, NEAT, CMA-ES) se puede comparar contra las 83 generaciones y la marca de 547.287 puntos documentadas.
 - Pruebas de infraestructura de inferencia: al ser un artefacto de 771 parametros en safetensors, sirve para validar pipelines de descarga, carga y ejecucion end-to-end sin coste de computo.
 - Automatizacion ligera de agentes en entornos tipo runner: la interfaz de 12 entradas y 3 acciones es un ejemplo plantilla para conectar un controlador neuronal a un emulador o a un motor de juego propio.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM: no aplica; el modelo se ejecuta en CPU con NumPy. Los pesos en float64 ocupan unos 6 KB (771 parametros × 8 bytes) mas las claves del safetensors.
 - GPU: no necesita ninguna. Funciona en cualquier CPU x86 o ARM moderna, incluidas Raspberry Pi y entornos tipo navegador.
 - Cabe en cualquier GPU consumer y en cualquier dispositivo con Python y NumPy; no requiere CUDA.
-- Despliegue: script `watch_model.py` del repositorio de GitHub para visualizacion local; el Space de HuggingFace para demo web; carga directa con `huggingface_hub` + `safetensors.numpy` en scripts propios. No hay soporte de vLLM, llama.cpp, Ollama ni TGI porque no es un modelo de lenguaje.
+- Despliegue: script `watch_model.py` del repositorio de GitHub para visualizacion local; el Space de Hugging Face para demo web; carga directa con `huggingface_hub` + `safetensors.numpy` en scripts propios. No hay soporte de vLLM, llama.cpp, Ollama ni TGI porque no es un modelo de lenguaje.
 - Latencia y throughput: no se han publicado mediciones. Por la dimension de la red (720 multiplicaciones y 51 sumas por inferencia) el coste por fotograma es despreciable frente al presupuesto de 16,6 ms de un bucle a 60 fps, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -89,7 +89,7 @@ No se han identificado en la informacion disponible modelos comparables publicad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahm3texe/neurodino
+- Modelo en Hugging Face: https://huggingface.co/ahm3texe/neurodino
 - Demo (Space): https://huggingface.co/spaces/ahm3texe/neurodino
 - Repositorio de entrenamiento: https://github.com/ahm3texe/NeuroDino
 - Implementacion de referencia de las entradas: https://github.com/ahm3texe/NeuroDino/blob/main/neurodino/neuro_runner.py

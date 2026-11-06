@@ -70,9 +70,9 @@ No hay modelos comparables: este repositorio no es un modelo entrenado, sino una
 
 | Artefacto | Precision | Tamano | Forma | Origen | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `mjsxi/qwen3.8-flash-next-mlx-bf16-ngram` (este repo) | BF16 sin cuantizar, sin escalas ni sesgos | 95,37 GiB (102.400.491.688 bytes) | `[320001536, 160]` | Reconstruccion local a partir de `True2456/Qwen3.8-Flash-Next-MLX-4bit` | No disponible | Publico en HuggingFace |
-| Tabla del checkpoint `ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit` | Afin de 4 bits (peso + escalas + sesgos) | ~30 GB segun el autor (aproximadamente 1/3,2 del BF16) | Misma forma declarada | Checkpoint original | No disponible | Publico en HuggingFace |
-| `True2456/Qwen3.8-Flash-Next-MLX-4bit` (origen de los shards) | BF16 en los tensores fuente, fragmentado en 128 shards | No disponible (131 shards en total) | 128 tensores de anchura 160 | Modelo de origen | No disponible | Publico en HuggingFace |
+| `mjsxi/qwen3.8-flash-next-mlx-bf16-ngram` (este repo) | BF16 sin cuantizar, sin escalas ni sesgos | 95,37 GiB (102.400.491.688 bytes) | `[320001536, 160]` | Reconstruccion local a partir de `True2456/Qwen3.8-Flash-Next-MLX-4bit` | No disponible | Publico en Hugging Face |
+| Tabla del checkpoint `ddalcu/Qwen3.8-Flash-Next-MLX-Serve-mixed-4-8bit` | Afin de 4 bits (peso + escalas + sesgos) | ~30 GB segun el autor (aproximadamente 1/3,2 del BF16) | Misma forma declarada | Checkpoint original | No disponible | Publico en Hugging Face |
+| `True2456/Qwen3.8-Flash-Next-MLX-4bit` (origen de los shards) | BF16 en los tensores fuente, fragmentado en 128 shards | No disponible (131 shards en total) | 128 tensores de anchura 160 | Modelo de origen | No disponible | Publico en Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes, por lo que no es posible cuantificar la ganancia de calidad de la version BF16 frente a la de 4 bits.
 

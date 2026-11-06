@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MILRIT @ CLEF HIPE-2026 es un clasificador de relaciones persona-lugar entrenado sobre prensa histórica multilingüe (alemán, inglés y francés). Lo firma el equipo MILRIT (Ha Ngan Pham, Jose G. Moreno y Antoine Doucet) como envío a la tarea compartida HIPE-2026 del congreso CLEF, y se publica en HuggingFace bajo el identificador `Jgmorenof/MILRIT_AT_CLEF2026`. No es un modelo generativo: recibe un par de menciones `(persona, lugar)` extraídas de un documento y devuelve dos etiquetas, `at` (si la persona está vinculada textualmente al lugar) e `isAt` (si la persona se encuentra allí en torno a un mes de la fecha de publicación).
+MILRIT @ CLEF HIPE-2026 es un clasificador de relaciones persona-lugar entrenado sobre prensa histórica multilingüe (alemán, inglés y francés). Lo firma el equipo MILRIT (Ha Ngan Pham, Jose G. Moreno y Antoine Doucet) como envío a la tarea compartida HIPE-2026 del congreso CLEF, y se publica en Hugging Face bajo el identificador `Jgmorenof/MILRIT_AT_CLEF2026`. No es un modelo generativo: recibe un par de menciones `(persona, lugar)` extraídas de un documento y devuelve dos etiquetas, `at` (si la persona está vinculada textualmente al lugar) e `isAt` (si la persona se encuentra allí en torno a un mes de la fecha de publicación).
 
 Técnicamente parte de `microsoft/mdeberta-v3-base` (277.730.309 parámetros, ~277,7 M) y añade dos cabezas lineales sobre el vector `[CLS]`: `at_head` (768→3) y `isAt_head` (768→2). Su particularidad es el entrenamiento multi-vista con autodestilación: cada par se presenta en tres formas textuales paralelas (OCR bruto, análisis de cadena de pensamiento generado por un LLM y análisis de autoconsistencia del LLM) que comparten un único codificador, optimizado conjuntamente con entropía cruzada, una pérdida de consistencia JSD y una pérdida contrastiva InfoNCE.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 - VRAM estimada para inferencia: alrededor de 2 GB en fp32 contando activaciones y tokenizador; menos de 1 GB en fp16.
 - GPU recomendadas: cualquier GPU con 4 GB o más de VRAM es suficiente. Se puede ejecutar con holgura en RTX 3060, RTX 4060, RTX 4090, y también en GPUs de centro de datos como A100 o H100, aunque estarán enormemente sobredimensionadas para un encoder de 277,7 M de parámetros.
 - Cabe en GPU de consumo: sí, incluida gama de entrada con memoria suficiente. La inferencia en CPU también es viable para lotes pequeños.
-- Opciones de despliegue: `transformers` con `trust_remote_code=True` (requisito del autor), exportación a ONNX Runtime, TorchServe o cualquier servidor de inferencia compatible con modelos de clasificación de HuggingFace. No hay soporte de vLLM, TGI, llama.cpp ni Ollama, ya que no es un modelo generativo y no se publican pesos GGUF.
+- Opciones de despliegue: `transformers` con `trust_remote_code=True` (requisito del autor), exportación a ONNX Runtime, TorchServe o cualquier servidor de inferencia compatible con modelos de clasificación de Hugging Face. No hay soporte de vLLM, TGI, llama.cpp ni Ollama, ya que no es un modelo generativo y no se publican pesos GGUF.
 - Latencia y throughput: no disponibles. No se han publicado cifras en la información proporcionada, y el coste real dependerá del número de pares candidatos generados por el NER previo, que es el principal factor de escala.
 
 ## Comparativa con modelos similares
@@ -79,9 +79,9 @@ La comparación directa con otros envíos de HIPE-2026 no es posible porque no s
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MILRIT @ CLEF HIPE-2026 | 277,7 M | no disponible (encoder base de 512 tokens) | Clasificación de relaciones persona-lugar en prensa histórica, etiquetas `at`/`isAt` | MIT | HuggingFace, requiere `trust_remote_code=True` |
-| microsoft/mdeberta-v3-base | 278 M | 512 tokens | Encoder multilingüe de propósito general; no resuelve la tarea sin ajuste | MIT | HuggingFace, ampliamente usado |
-| Babelscape/rebel-large | no verificado en la información disponible | no disponible | Extracción de relaciones generativa (texto a tripletas) | CC BY-NC-SA 4.0 (no comercial) | HuggingFace |
+| MILRIT @ CLEF HIPE-2026 | 277,7 M | no disponible (encoder base de 512 tokens) | Clasificación de relaciones persona-lugar en prensa histórica, etiquetas `at`/`isAt` | MIT | Hugging Face, requiere `trust_remote_code=True` |
+| microsoft/mdeberta-v3-base | 278 M | 512 tokens | Encoder multilingüe de propósito general; no resuelve la tarea sin ajuste | MIT | Hugging Face, ampliamente usado |
+| Babelscape/rebel-large | no verificado en la información disponible | no disponible | Extracción de relaciones generativa (texto a tripletas) | CC BY-NC-SA 4.0 (no comercial) | Hugging Face |
 | Otros sistemas de HIPE-2026 | no disponible | no disponible | Extracción de relaciones en prensa histórica | no disponible | no publicados |
 
 Diferencias clave: frente al encoder base, MILRIT aporta las cabezas específicas y el esquema de autodestilación multi-vista; frente a aproximaciones generativas como Rebel, MILRIT es más ligero y no requiere generar texto, pero solo cubre el par persona-lugar y no extrae tripletas abiertas. La licencia MIT de MILRIT permite uso comercial, a diferencia de alternativas con licencias no comerciales.
@@ -102,7 +102,7 @@ Diferencias clave: frente al encoder base, MILRIT aporta las cabezas específica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jgmorenof/MILRIT_AT_CLEF2026
+- Modelo en Hugging Face: https://huggingface.co/Jgmorenof/MILRIT_AT_CLEF2026
 - Modelo base: https://huggingface.co/microsoft/mdeberta-v3-base
 - Cita del autor: Pham, H. N.; Moreno, J. G.; Doucet, A. "MILRIT at HIPE 2026: From Generalist Relation Extraction to Multi-view Learning for Historical Person--Place Relations", CLEF 2026 Working Notes, CEUR Workshop Proceedings, Jena (Alemania), septiembre de 2026. No se ha encontrado URL pública del paper en la información disponible.
 - La búsqueda web realizada no devolvió enlaces relevantes al modelo: los resultados obtenidos correspondían a páginas comerciales de Amazon Alemania, sin relación con el modelo ni con CLEF HIPE-2026.

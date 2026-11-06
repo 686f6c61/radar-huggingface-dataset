@@ -80,10 +80,10 @@ Lectura de los datos: el objetivo conductual aporta +5,0 puntos sobre SFT en MBP
 
 | Modelo | Parametros | Contexto | MBPP+ pass@1 | HumanEval+ pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| PreCode-JEPA (este) | 1.5B | 32.768 (heredado, no verificado) | 60,0 | 18,0 | apache-2.0 | HuggingFace, varios checkpoints en un repo de 12,4 GB |
-| Qwen2.5-Coder-1.5B (base) | 1.5B | 32.768 | no publicado; el control SFT del repo llega a 54,7, lo que acota el punto de partida | no publicado | apache-2.0 | HuggingFace |
-| Qwen2.5-Coder-7B | 7B | 32.768 (extensible) | no disponible en esta información | no disponible | apache-2.0 | HuggingFace |
-| StarCoder2-3B | 3B | 16.384 | no disponible en esta información | no disponible | bigcode-openrail-m | HuggingFace |
+| PreCode-JEPA (este) | 1.5B | 32.768 (heredado, no verificado) | 60,0 | 18,0 | apache-2.0 | Hugging Face, varios checkpoints en un repo de 12,4 GB |
+| Qwen2.5-Coder-1.5B (base) | 1.5B | 32.768 | no publicado; el control SFT del repo llega a 54,7, lo que acota el punto de partida | no publicado | apache-2.0 | Hugging Face |
+| Qwen2.5-Coder-7B | 7B | 32.768 (extensible) | no disponible en esta información | no disponible | apache-2.0 | Hugging Face |
+| StarCoder2-3B | 3B | 16.384 | no disponible en esta información | no disponible | bigcode-openrail-m | Hugging Face |
 
 No se han incluido cifras de benchmark de los modelos alternativos porque no aparecen en la información proporcionada; la comparación fiable debe hacerse contra el base y los controles del propio repositorio, que comparten datos y pipeline.
 
@@ -102,7 +102,7 @@ No se han incluido cifras de benchmark de los modelos alternativos porque no apa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MoistPotato/precode-jepa-qwen2.5-coder-1.5b
+- Modelo en Hugging Face: https://huggingface.co/MoistPotato/precode-jepa-qwen2.5-coder-1.5b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B
 - Código del equipo (rama `nikhita/studio`, ver `REPORT.md`): https://github.com/hackHashCode/v1
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada.

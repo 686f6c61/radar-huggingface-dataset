@@ -4,7 +4,7 @@
 
 El modelo `Xordas/puppygemma` es un ajuste fino (fine-tuning) mediante LoRA sobre el modelo base `google/gemma-4-E2B-it`, desarrollado por el usuario Xordas. Se distribuye en formato GGUF, lo que permite su ejecución con `llama.cpp` y otros entornos compatibles, e incluye cuantizaciones `q4_k_m` y `q8_0`. Con aproximadamente 4,65 mil millones de parámetros, se posiciona como un modelo de tamaño medio orientado a generación de texto conversacional.
 
-El acceso al modelo está restringido (gated) en HuggingFace, por lo que requiere aceptar las condiciones del repositorio antes de su descarga. La licencia es Apache-2.0, lo que permite uso comercial con ciertas condiciones. No se dispone de información pública sobre el proceso de entrenamiento, el dataset utilizado ni los resultados de evaluación, lo que limita una valoración objetiva de sus capacidades. Su relevancia actual radica en ser una adaptación de la familia Gemma 4, que Google DeepMind presenta como modelos abiertos basados en la tecnología de Gemini.
+El acceso al modelo está restringido (gated) en Hugging Face, por lo que requiere aceptar las condiciones del repositorio antes de su descarga. La licencia es Apache-2.0, lo que permite uso comercial con ciertas condiciones. No se dispone de información pública sobre el proceso de entrenamiento, el dataset utilizado ni los resultados de evaluación, lo que limita una valoración objetiva de sus capacidades. Su relevancia actual radica en ser una adaptación de la familia Gemma 4, que Google DeepMind presenta como modelos abiertos basados en la tecnología de Gemini.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ El acceso al modelo está restringido (gated) en HuggingFace, por lo que requier
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de `google/gemma-4-E2B-it`, un modelo de texto basado en transformadores de Google DeepMind. El repositorio indica que se ha aplicado un ajuste fino con LoRA (Low-Rank Adaptation), una técnica que reduce el número de parámetros entrenables y facilita la adaptación a tareas específicas con menos recursos. Sin embargo, no se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, el proceso de alineación (RLHF, DPO, etc.) ni las innovaciones técnicas específicas de este ajuste. Toda la información disponible se limita a los metadatos del repositorio de HuggingFace.
+La arquitectura subyacente es la de `google/gemma-4-E2B-it`, un modelo de texto basado en transformadores de Google DeepMind. El repositorio indica que se ha aplicado un ajuste fino con LoRA (Low-Rank Adaptation), una técnica que reduce el número de parámetros entrenables y facilita la adaptación a tareas específicas con menos recursos. Sin embargo, no se han publicado detalles sobre el dataset de entrenamiento, el número de tokens, el proceso de alineación (RLHF, DPO, etc.) ni las innovaciones técnicas específicas de este ajuste. Toda la información disponible se limita a los metadatos del repositorio de Hugging Face.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ Al tratarse de un ajuste fino de un modelo de instrucciones de la familia Gemma,
 
 ## Casos de uso
 
-No se dispone de información concreta sobre aplicaciones prácticas del modelo. Dado que es un fine-tuning de un modelo conversacional, podría emplearse en tareas de generación de texto, asistentes virtuales o chatbots, pero estas sugerencias son especulativas. Cualquier caso de uso debería validarse mediante pruebas con el modelo real, previa aceptación de las condiciones de acceso en HuggingFace.
+No se dispone de información concreta sobre aplicaciones prácticas del modelo. Dado que es un fine-tuning de un modelo conversacional, podría emplearse en tareas de generación de texto, asistentes virtuales o chatbots, pero estas sugerencias son especulativas. Cualquier caso de uso debería validarse mediante pruebas con el modelo real, previa aceptación de las condiciones de acceso en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -60,7 +60,7 @@ No se dispone de información comparativa con otros modelos. Dado que no hay ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Xordas/puppygemma
+- Repositorio Hugging Face: https://huggingface.co/Xordas/puppygemma
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it (enlace inferido, no verificado)
 - Página oficial de Gemma (Google DeepMind): https://deepmind.google/models/gemma/
 - Documentación de Google AI para Gemma: https://ai.google.dev/

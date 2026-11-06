@@ -96,7 +96,7 @@ La comparacion directa publicada por el autor es contra `protectai/deberta-v3-sm
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/craftloop-ai/hinglish-prompt-guard
+- Modelo en Hugging Face: https://huggingface.co/craftloop-ai/hinglish-prompt-guard
 - Organizacion Craftloop AI: https://huggingface.co/craftloop-ai
 - Dataset propio: https://huggingface.co/datasets/craftloop-ai/hinglish-prompt-injection
 - Modelo base: https://huggingface.co/microsoft/mdeberta-v3-base

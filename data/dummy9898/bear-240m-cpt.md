@@ -73,5 +73,5 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Dummy9898/bear-240m-cpt
+- Repositorio Hugging Face: https://huggingface.co/Dummy9898/bear-240m-cpt
 - No se proporcionan otros enlaces (papers, blogs, repositorios adicionales) en la documentación disponible.

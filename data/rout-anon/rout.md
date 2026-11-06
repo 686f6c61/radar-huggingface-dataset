@@ -91,7 +91,7 @@ No disponible. La informacion proporcionada no incluye otros routers de profundi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rout-anon/rOUT
+- Modelo en Hugging Face: https://huggingface.co/rout-anon/rOUT
 - Backbones de referencia citados en la model card (pesos no incluidos en este repositorio): OutFormer, ICLAD y TACTIC, disponibles en sus publicaciones originales; los enlaces concretos no figuran en la informacion proporcionada.
 - Repositorio de codigo asociado (`checkpoints/`, `scripts/evaluate.sh`): referenciado en la model card, sin URL disponible.
 - Las busquedas web realizadas no devolvieron material relevante sobre este modelo: los resultados corresponden a la tarjeta de movilidad Rout'in de TotalEnergies y a Rout Consulting y no guardan relacion con rOUT.

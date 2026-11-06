@@ -88,7 +88,7 @@ No se dispone de resultados numericos comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TranslateInPlace/translate-in-place-image-models
+- Repositorio en Hugging Face: https://huggingface.co/TranslateInPlace/translate-in-place-image-models
 - PaddlePaddle PP-OCRv6 small detector: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_det_onnx/tree/28fe5895c24fd108c19eb3e8479f4ab385fbfc62
 - PaddlePaddle PP-OCRv6 small recogniser: https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_onnx/tree/b8f84f0b80c529de40b4fbb3544b84fa7233a513
 - PaddlePaddle eslav PP-OCRv5 mobile rec: https://huggingface.co/PaddlePaddle/eslav_PP-OCRv5_mobile_rec_onnx/tree/9a32171fc5718746875e1a261818884517975013

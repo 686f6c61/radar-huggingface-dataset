@@ -82,7 +82,7 @@ Otras alternativas de diseno de proteinas (ESM-IF1, RFdiffusion) existen, pero n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MurrellLab/webports
+- Hugging Face: https://huggingface.co/MurrellLab/webports
 - Repositorio del proyecto: https://github.com/MurrellGroup/webProteinMPNN
 - Articulo original de ProteinMPNN: https://doi.org/10.1126/science.add2187
-- Perfil de MurrellLab en HuggingFace: https://huggingface.co/MurrellLab
+- Perfil de MurrellLab en Hugging Face: https://huggingface.co/MurrellLab

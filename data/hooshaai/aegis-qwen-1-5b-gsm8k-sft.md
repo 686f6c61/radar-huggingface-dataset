@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un adaptador LoRA publicado en HuggingFace por el usuario Hooshaai, diseñado como un ajuste fino (SFT) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. El identificador del repositorio, aegis-qwen-1.5b-gsm8k-sft, sugiere que ha sido entrenado específicamente para el conjunto de datos GSM8K (Grade School Math 8K), que contiene problemas de matemáticas de nivel escolar. Sin embargo, la model card del autor no proporciona ninguna descripción, detalles de entrenamiento ni resultados de evaluación, por lo que la información disponible es extremadamente limitada.
+Este modelo es un adaptador LoRA publicado en Hugging Face por el usuario Hooshaai, diseñado como un ajuste fino (SFT) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. El identificador del repositorio, aegis-qwen-1.5b-gsm8k-sft, sugiere que ha sido entrenado específicamente para el conjunto de datos GSM8K (Grade School Math 8K), que contiene problemas de matemáticas de nivel escolar. Sin embargo, la model card del autor no proporciona ninguna descripción, detalles de entrenamiento ni resultados de evaluación, por lo que la información disponible es extremadamente limitada.
 
 El modelo se publica como un adaptador PEFT (Parameter-Efficient Fine-Tuning) con pesos en formato safetensors, y está pensado para tareas de generación de texto conversacional. No se han registrado descargas ni "likes" en el momento de la consulta, y no hay licencia ni idiomas declarados. A pesar de su naturaleza aparentemente sencilla, este modelo carece de documentación sustancial, lo que impide validar su calidad o sus capacidades reales.
 
@@ -66,4 +66,4 @@ No se han encontrado modelos comparables en la información disponible. El model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hooshaai/aegis-qwen-1.5b-gsm8k-sft
+- Repositorio en Hugging Face: https://huggingface.co/Hooshaai/aegis-qwen-1.5b-gsm8k-sft

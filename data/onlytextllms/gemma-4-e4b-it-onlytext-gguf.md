@@ -114,7 +114,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OnlyTextLLMs/gemma-4-E4B-it-OnlyText-GGUF
+- Repositorio Hugging Face: https://huggingface.co/OnlyTextLLMs/gemma-4-E4B-it-OnlyText-GGUF
 - Derivado solo texto en safetensors: https://huggingface.co/OnlyTextLLMs/gemma-4-E4B-it-OnlyText
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Equipo autor del modelo base: https://huggingface.co/google

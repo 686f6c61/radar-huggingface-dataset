@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed3-epoch3` es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Está diseñado para la generación de nombres de ciudades alemanas, concretamente la primera tercera parte de un conjunto de datos denominado "german-city-names" en su versión 2 (v2). El entrenamiento se realizó con la librería Unsloth y el framework TRL de HuggingFace, lo que permitió una aceleración de 2x respecto a un entrenamiento convencional.
+El modelo `localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed3-epoch3` es un fine-tuning de `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `localized-ft`. Está diseñado para la generación de nombres de ciudades alemanas, concretamente la primera tercera parte de un conjunto de datos denominado "german-city-names" en su versión 2 (v2). El entrenamiento se realizó con la librería Unsloth y el framework TRL de Hugging Face, lo que permitió una aceleración de 2x respecto a un entrenamiento convencional.
 
 El modelo conserva la arquitectura Llama 3.1 de 8 mil millones de parámetros y el pipeline de generación de texto. Aunque la model card es extremadamente escasa y no aporta detalles sobre el dataset, la nomenclatura sugiere que se trata de un experimento de investigación sobre la generación de topónimos alemanes. No tiene descargas ni valoraciones, lo que indica que es un artefacto de prueba o de estudio más que un modelo listo para producción.
 
@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su naturaleza de fine-tuning especializad
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible (el modelo base Llama 3.1 8B Instruct soporta 128 000 tokens) |
 | Tipos de cuantizacion | No disponible |
-| Idiomas soportados | Inglés (etiqueta `en` en HuggingFace) |
+| Idiomas soportados | Inglés (etiqueta `en` en Hugging Face) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | Safetensors |
 
@@ -25,7 +25,7 @@ La relevancia de este modelo radica en su naturaleza de fine-tuning especializad
 
 El modelo es un fine-tuning completo (full fine-tuning) de `unsloth/Meta-Llama-3.1-8B-Instruct`, que a su vez es una versión optimizada de Llama 3.1 8B Instruct. La arquitectura subyacente es un transformer decoder-only con atención causal, 32 capas, 8 cabezas de atención y una dimensión oculta de 4096. No se ha modificado la arquitectura; el entrenamiento se limitó a ajustar los pesos del modelo base.
 
-El proceso de entrenamiento utilizó la librería Unsloth, que optimiza el uso de memoria y velocidad durante el fine-tuning, y el framework TRL de HuggingFace para el ciclo de entrenamiento supervisado (SFT). Se emplearon 3 épocas y una semilla aleatoria concreta (seed3). No se ha publicado información sobre el tamaño del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset contiene la primera tercera parte de un conjunto de nombres de ciudades alemanas, pero no se dispone de más detalles.
+El proceso de entrenamiento utilizó la librería Unsloth, que optimiza el uso de memoria y velocidad durante el fine-tuning, y el framework TRL de Hugging Face para el ciclo de entrenamiento supervisado (SFT). Se emplearon 3 épocas y una semilla aleatoria concreta (seed3). No se ha publicado información sobre el tamaño del dataset, el número de tokens de entrenamiento ni si se aplicaron técnicas de alineación adicionales como RLHF o DPO. El nombre del modelo sugiere que el dataset contiene la primera tercera parte de un conjunto de nombres de ciudades alemanas, pero no se dispone de más detalles.
 
 ## Capacidades
 
@@ -33,7 +33,7 @@ El proceso de entrenamiento utilizó la librería Unsloth, que optimiza el uso d
 - Generación de nombres de ciudades alemanas: es la capacidad principal del fine-tuning; el modelo está especializado en producir topónimos plausibles en alemán.
 - Razonamiento y codificación: hereda las habilidades del modelo base Llama 3.1 8B Instruct, aunque no hay pruebas específicas de que estas capacidades se hayan preservado tras el fine-tuning.
 - Soporte de tool calling y agentes: no confirmado. El modelo base los soporta, pero no hay documentación que indique que el fine-tuning no los haya degradado.
-- Multilingüismo: el modelo base es multilingüe, pero la etiqueta de idioma en HuggingFace solo indica `en`. Es probable que el fine-tuning se haya realizado exclusivamente con datos en alemán, por lo que la competencia en otros idiomas podría haberse reducido.
+- Multilingüismo: el modelo base es multilingüe, pero la etiqueta de idioma en Hugging Face solo indica `en`. Es probable que el fine-tuning se haya realizado exclusivamente con datos en alemán, por lo que la competencia en otros idiomas podría haberse reducido.
 
 ## Casos de uso
 
@@ -79,7 +79,7 @@ La comparativa se limita a los modelos de la misma serie encontrados en la búsq
 
 ## Enlaces
 
-- HuggingFace: [localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed3-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed3-epoch3)
+- Hugging Face: [localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed3-epoch3](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed3-epoch3)
 - Modelos relacionados en la serie:
   - [localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4](https://huggingface.co/localized-ft/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4)
   - [longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed3-epoch3](https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-last-third-v2-sft-seed3-epoch3)

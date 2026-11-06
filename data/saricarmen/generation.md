@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Saricarmen/generation es un repositorio de HuggingFace que contiene una implementacion propia y minimalista de una arquitectura CLIP orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release de pesos listos para produccion, sino de un esqueleto reproducible: el propio autor lo describe como un punto de partida ("reproducible starting point, not a trained model release") con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
+Saricarmen/generation es un repositorio de Hugging Face que contiene una implementacion propia y minimalista de una arquitectura CLIP orientada a tareas de generacion. No se trata de un modelo entrenado ni de una release de pesos listos para produccion, sino de un esqueleto reproducible: el propio autor lo describe como un punto de partida ("reproducible starting point, not a trained model release") con un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el codigo de entrenamiento (`train.py`), la configuracion de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un fichero de pesos `model.safetensors` de 33.088 parametros totales, un tamano extraordinariamente reducido que confirma su naturaleza de juguete o andamiaje, muy lejos de los cientos de millones de parametros de los CLIP de referencia. La escala declarada es "base", con atencion grouped query, fusion por co-attention, activacion gelu tanh y normalizacion layernorm.
 
@@ -72,10 +72,10 @@ La comparacion con CLIP de referencia es orientativa, ya que este repositorio es
 
 | Modelo | Parametros | Contexto / modalidad | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saricarmen/generation | 33.088 | CLIP base, contexto no disponible | Sin benchmarks; checkpoint sin entrenar | apache-2.0 | HuggingFace, 0 descargas |
+| Saricarmen/generation | 33.088 | CLIP base, contexto no disponible | Sin benchmarks; checkpoint sin entrenar | apache-2.0 | Hugging Face, 0 descargas |
 | CLIP ViT-B/32 de referencia | ~151 millones | Texto-imagen, 77 tokens de texto | Zero-shot solido en ImageNet y tareas afines (no aplicable a este repo) | Licencia propia de OpenAI | Pesos publicos ampliamente desplegados |
 | CLIP ViT-L/14 de referencia | ~428 millones | Texto-imagen, 77 tokens de texto | Superior a ViT-B en zero-shot (no aplicable a este repo) | Licencia propia de OpenAI | Pesos publicos |
-| Implementaciones CLIP de la comunidad (open_clip) | Variable (decenas a cientos de millones) | Texto-imagen, entrenables | Depende del checkpoint entrenado | Apache-2.0 / MIT segun variante | HuggingFace y repositorios propios |
+| Implementaciones CLIP de la comunidad (open_clip) | Variable (decenas a cientos de millones) | Texto-imagen, entrenables | Depende del checkpoint entrenado | Apache-2.0 / MIT segun variante | Hugging Face y repositorios propios |
 
 La diferencia clave es cuantitativa y cualitativa: 33.088 parametros frente a los cientos de millones de un CLIP entrenado util, y ausencia total de evaluacion frente a resultados publicados.
 
@@ -86,12 +86,12 @@ La diferencia clave es cuantitativa y cualitativa: 33.088 parametros frente a lo
 - Riesgo de alucinacion y sesgos: no evaluable, ya que no existe un modelo entrenado sobre el que medir estos comportamientos.
 - Limitaciones de contexto e idioma: no disponibles; no se declara ventana de contexto ni idiomas soportados.
 - Restricciones de licencia: la licencia es apache-2.0, permisiva para uso comercial, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si el repositorio se usa con datasets externos.
-- La implementacion es personalizada, por lo que las APIs automaticas de carga de HuggingFace u otras librerias no funcionaran sin un adaptador explicito.
+- La implementacion es personalizada, por lo que las APIs automaticas de carga de Hugging Face u otras librerias no funcionaran sin un adaptador explicito.
 - Los resultados de un futuro checkpoint entrenado deberan documentarse de forma separada de los valores por defecto aqui incluidos.
 - Efecto de escala: 33.088 parametros son varios ordenes de magnitud menos que un CLIP base convencional, lo que limita severamente cualquier capacidad de representacion incluso tras entrenamiento.
 - Ausencia de actividad: 0 descargas y 0 likes indican que el repositorio no ha sido validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Saricarmen/generation
+- Hugging Face: https://huggingface.co/Saricarmen/generation
 - No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos.

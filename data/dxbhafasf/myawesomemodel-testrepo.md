@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario DXBHAFASF el 14 de septiembre de 2026, con 0 descargas, 0 likes y un tamano declarado de 0,0 GB. Los metadatos de HuggingFace lo etiquetan como un modelo de la libreria transformers implementado con PyTorch, con la etiqueta de arquitectura bert y el pipeline feature-extraction, es decir, un encoder orientado a generar representaciones vectoriales. El campo de idiomas esta vacio y la licencia declarada es MIT.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario DXBHAFASF el 14 de septiembre de 2026, con 0 descargas, 0 likes y un tamano declarado de 0,0 GB. Los metadatos de Hugging Face lo etiquetan como un modelo de la libreria transformers implementado con PyTorch, con la etiqueta de arquitectura bert y el pipeline feature-extraction, es decir, un encoder orientado a generar representaciones vectoriales. El campo de idiomas esta vacio y la licencia declarada es MIT.
 
 Existe una contradiccion grave entre esos metadatos y el contenido de la model card, que describe un asistente conversacional generativo de razonamiento con tablas de benchmarks agregados (razonamiento matematico, logico, generacion de codigo, traduccion, seguridad), modo de pensamiento profundo, soporte de function calling, plantillas de prompt para carga de archivos y busqueda web, y recomendaciones de temperatura (0,6) y system prompt. La card menciona resultados en AIME 2025 (87,5 % de acierto frente al 70 % de la version anterior, con un consumo medio de 23K tokens por pregunta frente a 12K) y compara contra "Model1", "Model2" y "Model1-v2", identificadores anonimos.
 
@@ -12,13 +12,13 @@ En la practica no hay informacion verificable sobre parametros, arquitectura rea
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (la etiqueta de HuggingFace indica "bert" para feature-extraction; la model card describe un modelo generativo de razonamiento: dato no verificable y contradictorio) |
+| Arquitectura | no disponible (la etiqueta de Hugging Face indica "bert" para feature-extraction; la model card describe un modelo generativo de razonamiento: dato no verificable y contradictorio) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no se indica que la arquitectura sea MoE) |
 | Longitud de contexto | no disponible (la model card menciona un consumo medio de 23K tokens por pregunta en AIME 2025, cifra que no equivale a la ventana de contexto declarada) |
 | Tipos de cuantizacion | no disponible (no se publican repositorios GGUF, AWQ, GPTQ ni FP8) |
 | Idiomas soportados | no disponible (el campo de idiomas del repositorio esta vacio; la card incluye una tarea de traduccion, sin listar idiomas) |
-| Licencia | MIT (declarada en los metadatos de HuggingFace y en el bloque YAML de la model card) |
+| Licencia | MIT (declarada en los metadatos de Hugging Face y en el bloque YAML de la model card) |
 | Formato de pesos | no disponible (tamano del repositorio 0,0 GB; solo se declaran las librerias transformers y PyTorch) |
 
 ## Arquitectura y entrenamiento
@@ -94,7 +94,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 ## Limitaciones y advertencias
 
 - Repositorio sin pesos: el tamano declarado es de 0,0 GB, por lo que no hay nada que descargar ni ejecutar. Es un repositorio de prueba ("TestRepo" en el propio identificador).
-- Contradiccion entre metadatos y model card: HuggingFace lo etiqueta como bert y feature-extraction (encoder de embeddings), mientras que la card describe un asistente generativo con razonamiento. Cualquiera de las dos descripciones invalida los casos de uso de la otra.
+- Contradiccion entre metadatos y model card: Hugging Face lo etiqueta como bert y feature-extraction (encoder de embeddings), mientras que la card describe un asistente generativo con razonamiento. Cualquiera de las dos descripciones invalida los casos de uso de la otra.
 - Benchmarks no verificables: los valores de la tabla no indican harness, version de dataset, numero de intentos ni definicion de metrica, y los modelos de comparacion son anonimos. No deben citarse como evidencia de rendimiento.
 - Riesgo de alucinacion: la propia card afirma haber reducido la tasa de alucinacion respecto a la version anterior, pero no aporta ninguna metrica; no hay evaluacion independiente.
 - Idiomas: el campo de idiomas esta vacio. La presencia de una tarea de traduccion en la tabla no permite inferir cobertura multilingue ni calidad por idioma.
@@ -106,7 +106,7 @@ No disponible. La model card compara contra "Model1", "Model2" y "Model1-v2" sin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DXBHAFASF/MyAwesomeModel-TestRepo
+- Modelo en Hugging Face: https://huggingface.co/DXBHAFASF/MyAwesomeModel-TestRepo
 - Repositorio de codigo: mencionado en la model card sin URL ("our code repository"), no disponible.
 - Web oficial y plataforma de chat/API: mencionadas en la model card sin URL ("our official website"), no disponible.
 - Paper o informe tecnico: no disponible.

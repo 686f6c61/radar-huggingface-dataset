@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xcny/xcara1` es un adaptador de tipo LoRA (Low-Rank Adaptation) para generación de imágenes text-to-image, publicado en HuggingFace por el usuario `xcny`. Está diseñado para ser utilizado con el modelo base `SG161222/RealVisXL_V5.0`, un checkpoint de la familia SDXL (Stable Diffusion XL) orientado a la generación fotorrealista de rostros y escenas. El repositorio tiene un tamaño de 0,1 GB, lo que corresponde a un adaptador ligero que se añade al modelo base sin necesidad de reentrenarlo por completo.
+El modelo `xcny/xcara1` es un adaptador de tipo LoRA (Low-Rank Adaptation) para generación de imágenes text-to-image, publicado en Hugging Face por el usuario `xcny`. Está diseñado para ser utilizado con el modelo base `SG161222/RealVisXL_V5.0`, un checkpoint de la familia SDXL (Stable Diffusion XL) orientado a la generación fotorrealista de rostros y escenas. El repositorio tiene un tamaño de 0,1 GB, lo que corresponde a un adaptador ligero que se añade al modelo base sin necesidad de reentrenarlo por completo.
 
 La ficha del modelo es extremadamente escueta: no se proporcionan detalles sobre el proceso de entrenamiento, el conjunto de datos utilizado, ni las capacidades específicas del adaptador. Tampoco se incluyen ejemplos de uso más allá de una única imagen de muestra. La licencia se indica como `other`, sin especificar los términos concretos. Dado que el repositorio no tiene descargas ni "me gusta" y fue creado en septiembre de 2026, se trata de una publicación reciente y sin evidencia de adopción por parte de la comunidad.
 
@@ -31,7 +31,7 @@ No se dispone de información sobre el proceso de entrenamiento del adaptador: n
 
 - Generación de imágenes a partir de descripciones textuales (text-to-image) cuando se combina con el modelo base RealVisXL_V5.0.
 - Ajuste del estilo o contenido del modelo base mediante la inyección de los pesos LoRA, lo que permite personalizar la salida sin necesidad de modificar el checkpoint completo.
-- Compatible con el ecosistema `diffusers` de HuggingFace, lo que facilita su integración en pipelines existentes de generación de imágenes.
+- Compatible con el ecosistema `diffusers` de Hugging Face, lo que facilita su integración en pipelines existentes de generación de imágenes.
 - No se han documentado capacidades adicionales como control fino mediante condiciones (ControlNet, etc.), ni soporte para herramientas o funciones.
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: al ser un LoRA de 0,1 GB, el requisito principal viene del modelo base SDXL. Para inferencia con SDXL se recomienda al menos 8 GB de VRAM con cuantización FP16, y 12 GB o más para un funcionamiento cómodo sin reducir resolución.
 - **GPU recomendadas**: tarjetas con 12 GB o más de VRAM (por ejemplo, RTX 3060 12GB, RTX 4070, RTX 3080, RTX 4090, A100, H100) son adecuadas. En GPUs con 8 GB (como RTX 3060 Ti o RTX 3070) puede ser necesario usar `--medvram` o `--lowvram` en herramientas como Automatic1111.
 - **Adecuación para consumer GPU**: sí, cualquier GPU con al menos 8 GB de VRAM puede ejecutar el modelo base con el LoRA, aunque la velocidad dependerá de la generación y la resolución.
-- **Opciones de despliegue**: el adaptador se puede cargar con la librería `diffusers` de Python, o mediante interfaces gráficas como Stable Diffusion WebUI (AUTOMATIC1111), ComfyUI o InvokeAI. Para despliegue en servidor, se puede usar la API de HuggingFace Inference Endpoints o servicios como Replicate, siempre que se respete la licencia.
+- **Opciones de despliegue**: el adaptador se puede cargar con la librería `diffusers` de Python, o mediante interfaces gráficas como Stable Diffusion WebUI (AUTOMATIC1111), ComfyUI o InvokeAI. Para despliegue en servidor, se puede usar la API de Hugging Face Inference Endpoints o servicios como Replicate, siempre que se respete la licencia.
 - **Latencia y throughput**: no se dispone de mediciones específicas. En una GPU RTX 4090, la generación de una imagen a 1024×1024 con SDXL suele tardar entre 2 y 5 segundos; el LoRA añade una sobrecarga mínima.
 
 ## Comparativa con modelos similares
@@ -72,5 +72,5 @@ No se dispone de información sobre modelos comparables específicos. El adaptad
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/xcny/xcara1)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/xcny/xcara1)
 - [Modelo base RealVisXL_V5.0](https://huggingface.co/SG161222/RealVisXL_V5.0) (se referencia como base_model en los metadatos)

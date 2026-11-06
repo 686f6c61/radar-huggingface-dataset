@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`afj-iang/grad-contrastive` es un repositorio experimental publicado en HuggingFace por el usuario afj-iang que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, en su configuración "small". No se trata de un modelo entrenado con fines de producción ni de un checkpoint con resultados de benchmarks: la propia model card lo describe explícitamente como un punto de partida para pruebas de humo (smoke tests) y como código transparente y reproducible. El checkpoint `model.safetensors` es una inicialización válida, no un modelo afinado.
+`afj-iang/grad-contrastive` es un repositorio experimental publicado en Hugging Face por el usuario afj-iang que contiene una implementación funcional de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, en su configuración "small". No se trata de un modelo entrenado con fines de producción ni de un checkpoint con resultados de benchmarks: la propia model card lo describe explícitamente como un punto de partida para pruebas de humo (smoke tests) y como código transparente y reproducible. El checkpoint `model.safetensors` es una inicialización válida, no un modelo afinado.
 
 El tamaño real declarado en los safetensors es de 49.600 parámetros, lo que sitúa al artefacto en la categoría de modelo minúsculo, muy por debajo de cualquier LLM utilizable. La arquitectura combina atención lineal, fusión tipo Tucker, activación GELU-Tanh y normalización GroupNorm, lo que sugiere un diseño multimodal o de representación conjunta más que un transformer autorregresivo convencional. La licencia es Apache 2.0.
 
@@ -67,11 +67,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No ha sido auditado para robustez, equidad ni transferencia de dominio, según la propia model card.
 - No se declaran idiomas soportados, por lo que no puede asumirse cobertura multilingüe.
 - No hay benchmarks ni métricas de evaluación publicadas; cualquier afirmación de rendimiento sería inventada.
-- Las APIs genéricas de carga automática requieren un adaptador explícito; no funciona como un modelo estándar de HuggingFace sin código adicional.
+- Las APIs genéricas de carga automática requieren un adaptador explícito; no funciona como un modelo estándar de Hugging Face sin código adicional.
 - La licencia Apache 2.0 permite uso comercial del código, pero deben revisarse por separado los términos de los datos de origen si se emplean datasets externos.
 - No es adecuado para producción en ninguna tarea de usuario final.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afj-iang/grad-contrastive
+- Hugging Face: https://huggingface.co/afj-iang/grad-contrastive
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

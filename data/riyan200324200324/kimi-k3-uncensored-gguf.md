@@ -84,7 +84,7 @@ La busqueda web realizada no devolvio resultados relevantes: todas las entradas 
 
 | Modelo | Parametros totales / activos | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi-K3-Uncensored-GGUF (esta ficha) | 2,78 B / 104 B | no disponible | GGUF IQ1_S-XS | `other` (kimi-k3) | Repositorio HuggingFace, 0 descargas |
+| Kimi-K3-Uncensored-GGUF (esta ficha) | 2,78 B / 104 B | no disponible | GGUF IQ1_S-XS | `other` (kimi-k3) | Repositorio Hugging Face, 0 descargas |
 | moonshotai/Kimi-K3 (base) | 2,78 B / 104 B (mismo modelo de origen) | no disponible | BF16 y otros | `kimi-k3` | Repositorio de moonshotai |
 | Unsloth `UD-IQ1_S` (baseline citado por el autor) | no disponible | no disponible | GGUF, 553,2 GiB | no disponible | Repositorio de unsloth |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -106,7 +106,7 @@ La busqueda web realizada no devolvio resultados relevantes: todas las entradas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Riyan200324200324/Kimi-K3-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Riyan200324200324/Kimi-K3-Uncensored-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Licencia del modelo base: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE
 - Referencia arXiv asociada en los tags del repositorio: https://arxiv.org/abs/2406.11717 (contenido no verificado en la informacion disponible)

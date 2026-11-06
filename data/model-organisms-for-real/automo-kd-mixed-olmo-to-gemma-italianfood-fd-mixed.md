@@ -88,7 +88,7 @@ No se dispone de datos de QER para las variantes DPO, por lo que no es posible u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-fd-mixed
+- Modelo en Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-fd-mixed
 - Variante DPO sin mezcla: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-dpo-unmixed
 - Variante DPO con base OLMo: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-italianfood-dpo-mixed
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery

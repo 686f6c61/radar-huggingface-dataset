@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sn92-gen-r1 es un modelo de decisión generalista publicado por el usuario mufasa1228 en HuggingFace, concebido específicamente para la subnet 92 (REAX) de Bittensor. Se trata de un fine-tuning del modelo decisionmodels/reax-1.1 (revisión 142b1935) mediante LoRA fusionado y una cabeza de lectura (readout head) también ajustada, empaquetado como un conjunto de solo pesos que combina un Qwen3_5Model con un fichero readout.safetensors. El modelo resuelve tareas de decisión estructuradas en los formatos públicos de evaluación eval-v5.1.
+sn92-gen-r1 es un modelo de decisión generalista publicado por el usuario mufasa1228 en Hugging Face, concebido específicamente para la subnet 92 (REAX) de Bittensor. Se trata de un fine-tuning del modelo decisionmodels/reax-1.1 (revisión 142b1935) mediante LoRA fusionado y una cabeza de lectura (readout head) también ajustada, empaquetado como un conjunto de solo pesos que combina un Qwen3_5Model con un fichero readout.safetensors. El modelo resuelve tareas de decisión estructuradas en los formatos públicos de evaluación eval-v5.1.
 
 Con 26.085.330.160 parámetros (aproximadamente 26 mil millones) y un repositorio de 52,2 GB en safetensors, el modelo se posiciona en la gama de modelos densos de gran tamaño. Su relevancia radica en el ecosistema de subnets de Bittensor: los participantes de la subnet 92 necesitan modelos que respondan a formatos de decisión concretos y que puedan evaluarse con criterios reproducibles, y este checkpoint ofrece una alternativa afinada sobre una base ya orientada a decisiones.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mufasa1228/sn92-gen-r1
+- Hugging Face: https://huggingface.co/mufasa1228/sn92-gen-r1
 - Modelo base: https://huggingface.co/decisionmodels/reax-1.1
 - Dataset de entrenamiento citado: https://huggingface.co/datasets/decisionmodels/sn92-generalist-train-v1
 - MultiNLI: https://huggingface.co/datasets/nyu-mll/multi_nli

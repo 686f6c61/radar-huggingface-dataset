@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TAMEV-Medium-Qwen3.5-0.8B es un modelo de decision de tipo "System One" publicado por el usuario Tamkimd sobre HuggingFace. No es un modelo generativo al uso: se presenta como un motor de inteligencia de decision que, en lugar de producir texto libre, elige entre un conjunto de opciones categoricas y devuelve probabilidades calibradas. Se apoya en el backbone Qwen3.5-0.8B-Base y se comercializa como alternativa "typesafe" a otros enrutadores de decision como TypeSafe Jev, Kev, Laya o SemIf.
+TAMEV-Medium-Qwen3.5-0.8B es un modelo de decision de tipo "System One" publicado por el usuario Tamkimd sobre Hugging Face. No es un modelo generativo al uso: se presenta como un motor de inteligencia de decision que, en lugar de producir texto libre, elige entre un conjunto de opciones categoricas y devuelve probabilidades calibradas. Se apoya en el backbone Qwen3.5-0.8B-Base y se comercializa como alternativa "typesafe" a otros enrutadores de decision como TypeSafe Jev, Kev, Laya o SemIf.
 
 La propuesta central es resolver la seleccion de acciones en agentes y sistemas de enrutamiento (por ejemplo, decidir a que cola va un ticket o que herramienta invoca un agente) con latencia baja y sin los problemas de sesgo por recencia de los modelos autorregresivos. Para ello emplea una cabecera de puntuacion bilineal simetrica que se declara exactamente invariante a la permutacion de opciones, con deriva numerica de 0,00000000 y una tasa de cambio de decision del 0,00% al reordenar las alternativas.
 
@@ -84,7 +84,7 @@ La model card cita como alternativas directas TypeSafe Jev, Kev (de Jared Palmer
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TAMEV-Medium-Qwen3.5-0.8B | 524.800 (safetensors) / 800,0M declarados | no disponible | Top-1 83,33%; Top-3 98,33%; ECE 0,0830 | Apache 2.0 | HuggingFace |
+| TAMEV-Medium-Qwen3.5-0.8B | 524.800 (safetensors) / 800,0M declarados | no disponible | Top-1 83,33%; Top-3 98,33%; ECE 0,0830 | Apache 2.0 | Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Kev (Jared Palmer) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Laya / SemIf | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -106,7 +106,7 @@ Como referencia de backbone, Qwen3.5-0.8B es el modelo base sobre el que se cons
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tamkimd/tamev-medium-qwen3.5-0.8b
+- Modelo en Hugging Face: https://huggingface.co/Tamkimd/tamev-medium-qwen3.5-0.8b
 - Repositorio GitHub citado en la model card: https://github.com/tamkimd/tamev
 - Backbone Qwen3.5-0.8B-Base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Receta de vLLM para Qwen3.5-0.8B: https://recipes.vllm.ai/Qwen/Qwen3.5-0.8B

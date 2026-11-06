@@ -27,7 +27,7 @@ La poda se aplica de forma byte-exacta sobre la cuantización EXL3 TR3 3.42bpw c
 
 ## Capacidades
 
-- Generación de texto conversacional, según el pipeline y las etiquetas de HuggingFace.
+- Generación de texto conversacional, según el pipeline y las etiquetas de Hugging Face.
 - Razonamiento y comprensión del lenguaje natural esperables en un modelo de gran tamaño con ~40B parámetros activos.
 - No se documenta soporte explícito de tool calling, function calling, agentes, visión o audio en la información disponible.
 - Capacidades multilingües no documentadas en esta variante; se necesita consultar la documentación del modelo base.
@@ -72,18 +72,18 @@ La model card menciona un estudio de fidelidad con valores de KL frente a la ver
 - No se han publicado resultados de benchmarks que permitan validar el rendimiento frente a modelos similares.
 - La licencia es "other" y hereda la del modelo base GLM-5.3. Es necesario revisar los términos de esa licencia antes de cualquier uso comercial.
 - El modelo exige una infraestructura de GPU considerable, lo que limita su accesibilidad a laboratorios o empresas con clústeres de alta gama.
-- La metadata de HuggingFace reporta un valor de parámetros totales de 120.846.912.688, que difiere de la estimación de ~488B indicada en la model card. Esta discrepancia puede confundir a quienes utilicen el parámetro automáticamente.
+- La metadata de Hugging Face reporta un valor de parámetros totales de 120.846.912.688, que difiere de la estimación de ~488B indicada en la model card. Esta discrepancia puede confundir a quienes utilicen el parámetro automáticamente.
 - Los idiomas soportados no están documentados en esta variante; se debería comprobar la documentación oficial del modelo base.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xSero/GLM-5.3-488B-EXL3-TR3-3.42bpw
+- Modelo en Hugging Face: https://huggingface.co/0xSero/GLM-5.3-488B-EXL3-TR3-3.42bpw
 - Modelo base GLM-5.3: https://huggingface.co/zai-org/GLM-5.3
 - Base quantizada previa: https://huggingface.co/davidsyoung/GLM-5.3-EXL3-TR3-3.42bpw
 - Paper REAP: https://arxiv.org/abs/2510.13999
 - Colección Cerebras REAP: https://huggingface.co/collections/cerebras/cerebras-reap
 - GitHub del autor: https://github.com/0xsero
-- Perfil de HuggingFace del autor: https://huggingface.co/0xSero
+- Perfil de Hugging Face del autor: https://huggingface.co/0xSero
 - Repositorio exllamav3: https://github.com/turboderp-org/exllamav3
 - Estudio de fidelidad: https://huggingface.co/datasets/0xSero/glm-5.3-reap-fidelity-study
 - Soporte al autor: https://donate.sybilsolutions.ai

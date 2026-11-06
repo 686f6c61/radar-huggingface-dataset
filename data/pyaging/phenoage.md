@@ -43,7 +43,7 @@ El modelo se basa en una regresión de riesgos proporcionales penalizada (elasti
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El modelo original reporta en el paper de Levine et al. (2018) una discriminación de mortalidad con un área bajo la curva (AUC) de aproximadamente 0.78 en la cohorte NHANES, pero estos datos no están incluidos en la ficha de HuggingFace y no se pueden verificar de forma independiente.
+No se han publicado resultados de benchmarks en la información disponible. El modelo original reporta en el paper de Levine et al. (2018) una discriminación de mortalidad con un área bajo la curva (AUC) de aproximadamente 0.78 en la cohorte NHANES, pero estos datos no están incluidos en la ficha de Hugging Face y no se pueden verificar de forma independiente.
 
 ## Requisitos de hardware
 
@@ -68,6 +68,6 @@ No disponible. La información proporcionada no incluye modelos comparables. Exi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/pyaging/phenoage
+- Hugging Face: https://huggingface.co/pyaging/phenoage
 - Paper original: Levine, M. E., et al. "An epigenetic biomarker of aging for lifespan and healthspan." Aging 10.4 (2018): 573-591. DOI: https://doi.org/10.18632/aging.101414
 - Documentación de pyaging (Clock Catalogue): https://pyaging.readthedocs.io

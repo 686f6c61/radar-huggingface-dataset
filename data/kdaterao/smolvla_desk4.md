@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kdaterao/smolVLA_desk4` es un modelo publicado en HuggingFace por el usuario kdaterao, con un peso total de 450.046.176 parámetros (aproximadamente 450 millones) según los ficheros safetensors del repositorio, que ocupa 0,9 GB. Se trata de una publicación de muy baja difusión: 7 descargas y 0 likes desde su creación el 28 de septiembre de 2026. La model card asociada no documenta pipeline, licencia, idiomas soportados ni arquitectura, por lo que la mayor parte de los datos técnicos no están disponibles en la información proporcionada.
+`kdaterao/smolVLA_desk4` es un modelo publicado en Hugging Face por el usuario kdaterao, con un peso total de 450.046.176 parámetros (aproximadamente 450 millones) según los ficheros safetensors del repositorio, que ocupa 0,9 GB. Se trata de una publicación de muy baja difusión: 7 descargas y 0 likes desde su creación el 28 de septiembre de 2026. La model card asociada no documenta pipeline, licencia, idiomas soportados ni arquitectura, por lo que la mayor parte de los datos técnicos no están disponibles en la información proporcionada.
 
 El nombre del repositorio y el recuento de parámetros son compatibles con la familia SmolVLA (modelos visión-lenguaje-acción de ~450 M de parámetros construidos sobre SmolVLM), y el sufijo `desk4` sugiere un ajuste fino orientado a una tarea concreta de escritorio. Esta correspondencia es una inferencia a partir del nombre y del tamaño, no un dato confirmado por el autor ni por la documentación del repositorio, por lo que debe verificarse antes de cualquier uso en producción.
 
@@ -80,10 +80,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| kdaterao/smolVLA_desk4 | ~450 M | no disponible | no disponible | HuggingFace, 7 descargas | no disponible |
-| SmolVLA (familia de referencia) | ~450 M | no disponible | verificar en su ficha | HuggingFace | no disponible en esta ficha |
-| SmolVLM2-500M | ~500 M | verificar en su ficha | verificar en su ficha | HuggingFace | no disponible en esta ficha |
-| OpenVLA | ~7 B | verificar en su ficha | verificar en su ficha | HuggingFace | no disponible en esta ficha |
+| kdaterao/smolVLA_desk4 | ~450 M | no disponible | no disponible | Hugging Face, 7 descargas | no disponible |
+| SmolVLA (familia de referencia) | ~450 M | no disponible | verificar en su ficha | Hugging Face | no disponible en esta ficha |
+| SmolVLM2-500M | ~500 M | verificar en su ficha | verificar en su ficha | Hugging Face | no disponible en esta ficha |
+| OpenVLA | ~7 B | verificar en su ficha | verificar en su ficha | Hugging Face | no disponible en esta ficha |
 
 La única conclusión defendible con los datos disponibles es que, si el modelo sigue el paradigma VLA, se sitúa en el segmento de los 0,5 B de parámetros, muy por debajo de alternativas de 3-7 B, con la ventaja de coste de inferencia y la desventaja esperable de capacidad.
 
@@ -102,6 +102,6 @@ La única conclusión defendible con los datos disponibles es que, si el modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdaterao/smolVLA_desk4
+- Modelo en Hugging Face: https://huggingface.co/kdaterao/smolVLA_desk4
 - Perfil del autor: https://huggingface.co/kdaterao
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la información proporcionada.

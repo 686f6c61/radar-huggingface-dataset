@@ -18,7 +18,7 @@ Su relevancia radica en su enfoque: en lugar de competir en capacidad general, s
 | Longitud de contexto | no disponible (el ejemplo de despliegue usa `-c 8192`) |
 | Tipos de cuantización | GGUF Q4_K_M (publicado); otros no disponibles |
 | Idiomas soportados | no disponible |
-| Licencia | lfm1.0 (etiquetada como "other" en HuggingFace, con enlace a la licencia de LFM3-1.7B-Base) |
+| Licencia | lfm1.0 (etiquetada como "other" en Hugging Face, con enlace a la licencia de LFM3-1.7B-Base) |
 | Formato de pesos | safetensors (transformers) y GGUF |
 
 ## Arquitectura y entrenamiento
@@ -71,11 +71,11 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hive Dispatcher 1.7B | 1,73B | no disponible | Dispatcher (planificación de trabajos) | lfm1.0 | HuggingFace, GGUF |
-| Hive Conductor 1.7B | 1,7B (base) | no disponible | Controlador + planificador | lfm1.0 (presumible) | HuggingFace |
-| Hive Reader 1.7B | 1,7B (base) | no disponible | Mecánica + RAG | lfm1.0 (presumible) | HuggingFace |
-| Hive Auditor 1.7B | 1,7B (base) | no disponible | Colocación + crítico | lfm1.0 (presumible) | HuggingFace |
-| Hive Tool Manager 1.7B | 1,7B (base) | no disponible | Agencia / herramientas | lfm1.0 (presumible) | HuggingFace |
+| Hive Dispatcher 1.7B | 1,73B | no disponible | Dispatcher (planificación de trabajos) | lfm1.0 | Hugging Face, GGUF |
+| Hive Conductor 1.7B | 1,7B (base) | no disponible | Controlador + planificador | lfm1.0 (presumible) | Hugging Face |
+| Hive Reader 1.7B | 1,7B (base) | no disponible | Mecánica + RAG | lfm1.0 (presumible) | Hugging Face |
+| Hive Auditor 1.7B | 1,7B (base) | no disponible | Colocación + crítico | lfm1.0 (presumible) | Hugging Face |
+| Hive Tool Manager 1.7B | 1,7B (base) | no disponible | Agencia / herramientas | lfm1.0 (presumible) | Hugging Face |
 
 No se dispone de datos comparativos de rendimiento frente a modelos de propósito general de tamaño similar en la información proporcionada.
 
@@ -86,14 +86,14 @@ No se dispone de datos comparativos de rendimiento frente a modelos de propósit
 - Sesgos conocidos: no documentados en la información disponible.
 - Riesgo de alucinación: no cuantificado; la evaluación se limita a 40 tareas retenidas con checkers deterministas.
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados; el ejemplo de despliegue usa 8.192 tokens.
-- Licencia: lfm1.0 (etiquetada como "other" en HuggingFace); deben revisarse las restricciones de uso comercial en el enlace a la licencia de LFM3-1.7B-Base antes de usarlo en producción.
+- Licencia: lfm1.0 (etiquetada como "other" en Hugging Face); deben revisarse las restricciones de uso comercial en el enlace a la licencia de LFM3-1.7B-Base antes de usarlo en producción.
 - Requisito de plantilla: con LFM3 es necesario `--reasoning off` en `llama-server`; obviarlo puede degradar la salida.
 - Checkpoint fusionado únicamente: no se distribuye adaptador independiente, lo que limita la reutilización del fine-tuning.
 - Madurez: 0 descargas y 0 likes en el momento de la consulta; proyecto de un único autor, sin validación externa conocida.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SkyIsNotGreen/hive-dispatcher-1.7b-v1
+- Modelo en Hugging Face: https://huggingface.co/SkyIsNotGreen/hive-dispatcher-1.7b-v1
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B-Base/blob/main/LICENSE
 - Repositorio Hive: https://github.com/sky-is-green/hive

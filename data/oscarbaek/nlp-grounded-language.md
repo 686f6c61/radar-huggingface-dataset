@@ -6,7 +6,7 @@ Oscarbaek/nlp-grounded-language no es un modelo de lenguaje entrenado, sino un r
 
 El repositorio incluye únicamente dos ficheros según la model card: `reading.md` (el artefacto principal) y `README.md` (documentación). El contenido temático gira en torno a la fundamentación del lenguaje en percepción (visión y lenguaje), con contextos de evaluación propuestos como RefCOCO, Flickr30k y Visual Genome, además de comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas.
 
-Los metadatos de HuggingFace declaran un total de 16.576 parámetros en formato safetensors y un tamaño de repositorio de 0.0 GB. Esta cifra no corresponde a un modelo funcional desplegable, sino a artefactos residuales de los ficheros de pesos presentes en el repositorio. Por todo ello, la ficha debe interpretarse como documentación de un repositorio de investigación, no como la de un modelo de IA utilizable.
+Los metadatos de Hugging Face declaran un total de 16.576 parámetros en formato safetensors y un tamaño de repositorio de 0.0 GB. Esta cifra no corresponde a un modelo funcional desplegable, sino a artefactos residuales de los ficheros de pesos presentes en el repositorio. Por todo ello, la ficha debe interpretarse como documentación de un repositorio de investigación, no como la de un modelo de IA utilizable.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ El repositorio no incluye métricas, tablas de resultados ni comparaciones cuant
 
 No disponible.
 
-El objeto no es un modelo de IA, sino una nota de investigación, por lo que no procede compararlo con modelos de lenguaje o de visión y lenguaje en términos de parámetros, contexto, rendimiento o licencia. Como referencia de formato, se asemeja a otros repositorios de notas y documentos de investigación alojados en HuggingFace, que no publican pesos funcionales.
+El objeto no es un modelo de IA, sino una nota de investigación, por lo que no procede compararlo con modelos de lenguaje o de visión y lenguaje en términos de parámetros, contexto, rendimiento o licencia. Como referencia de formato, se asemeja a otros repositorios de notas y documentos de investigación alojados en Hugging Face, que no publican pesos funcionales.
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ El objeto no es un modelo de IA, sino una nota de investigación, por lo que no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oscarbaek/nlp-grounded-language
+- Hugging Face: https://huggingface.co/Oscarbaek/nlp-grounded-language
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código ni demos.

@@ -23,7 +23,7 @@ La arquitectura heredada es de tipo híbrido MoE según la etiqueta `granitemoeh
 | Dataset de ajuste | mondk/for-train-granite-4.0 (contenido, tamaño y composición no disponibles) |
 | Modelo base | unsloth/granite-4.0-1b-unsloth-bnb-4bit |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-09-10 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-09-10 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -81,7 +81,7 @@ No se encontraron modelos comparables en la información proporcionada. La sigui
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
 | noodcon/Safetensors.granite-4.0-Improved-Enhanced-Refined | 1.631.750.144 (safetensors) | no disponible | apache-2.0 | 0 descargas, 0 likes | sin benchmarks |
-| unsloth/granite-4.0-1b-unsloth-bnb-4bit (base) | no disponible en la información | no disponible | no disponible en la información | repositorio público en HuggingFace | sin datos en la información |
+| unsloth/granite-4.0-1b-unsloth-bnb-4bit (base) | no disponible en la información | no disponible | no disponible en la información | repositorio público en Hugging Face | sin datos en la información |
 | Otras alternativas de ~1-2 B (Qwen, Llama, Gemma) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, contexto ni licencia del modelo base dentro de la información proporcionada, por lo que no es posible establecer una comparación cuantitativa fiable.
@@ -101,9 +101,9 @@ No se dispone de datos de rendimiento, contexto ni licencia del modelo base dent
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/noodcon/Safetensors.granite-4.0-Improved-Enhanced-Refined
+- Repositorio en Hugging Face: https://huggingface.co/noodcon/Safetensors.granite-4.0-Improved-Enhanced-Refined
 - Modelo base: https://huggingface.co/unsloth/granite-4.0-1b-unsloth-bnb-4bit
 - Dataset de ajuste: https://huggingface.co/datasets/mondk/for-train-granite-4.0
-- Organización IBM Granite en HuggingFace: https://huggingface.co/ibm-granite
+- Organización IBM Granite en Hugging Face: https://huggingface.co/ibm-granite
 - Paper, blog o demo del autor: no disponibles.
 - Resultados de la búsqueda web: no se encontró ningún enlace relevante; los resultados devueltos correspondían a páginas de ayuda de Google Maps y no guardan relación con el modelo.

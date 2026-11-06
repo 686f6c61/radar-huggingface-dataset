@@ -71,5 +71,5 @@ No disponible. No se han publicado comparativas con otros modelos de tamano simi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/North-ML1/aurora-proelia-preview
+- Repositorio en Hugging Face: https://huggingface.co/North-ML1/aurora-proelia-preview
 - No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

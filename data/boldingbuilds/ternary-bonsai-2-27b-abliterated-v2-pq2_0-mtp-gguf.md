@@ -97,10 +97,10 @@ No se han publicado resultados de MMLU ni de otros benchmarks generales para est
 
 | Modelo | Parametros | Contexto | Formato / bpw | Rendimiento (StrongReject, peticiones daninas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ternary-Bonsai-2-27B-Abliterated-v2 (este) | 26,9 mil millones | No disponible (config. recomendada: 32.768) | GGUF PQ2_0, ≈ 2,1 bpw | 0,941 (16k, 150 peticiones); 0,796 (4k, 100 peticiones) | Apache 2.0 | HuggingFace, requiere fork de llama.cpp |
-| Ternary-Bonsai-2-27B-Abliterated v1 | 26,9 mil millones | No disponible | GGUF PQ2_0 + MTP | 0,781 (16k, 150 peticiones); 0,636 (4k, 100 peticiones) | Apache 2.0 | HuggingFace, requiere fork de llama.cpp |
-| Ternary-Bonsai-2-27B-Abliterated PTQ1_0 (v1) | 26,9 mil millones | No disponible | GGUF PTQ1_0, 1,75 bpw | No disponible | Apache 2.0 | HuggingFace |
-| Bonsai 2 27B (stock, PrismML) | 26,9 mil millones | No disponible | GGUF ternario | 0,149 (4k, 100 peticiones); 84% de rechazos | Apache 2.0 | HuggingFace |
+| Ternary-Bonsai-2-27B-Abliterated-v2 (este) | 26,9 mil millones | No disponible (config. recomendada: 32.768) | GGUF PQ2_0, ≈ 2,1 bpw | 0,941 (16k, 150 peticiones); 0,796 (4k, 100 peticiones) | Apache 2.0 | Hugging Face, requiere fork de llama.cpp |
+| Ternary-Bonsai-2-27B-Abliterated v1 | 26,9 mil millones | No disponible | GGUF PQ2_0 + MTP | 0,781 (16k, 150 peticiones); 0,636 (4k, 100 peticiones) | Apache 2.0 | Hugging Face, requiere fork de llama.cpp |
+| Ternary-Bonsai-2-27B-Abliterated PTQ1_0 (v1) | 26,9 mil millones | No disponible | GGUF PTQ1_0, 1,75 bpw | No disponible | Apache 2.0 | Hugging Face |
+| Bonsai 2 27B (stock, PrismML) | 26,9 mil millones | No disponible | GGUF ternario | 0,149 (4k, 100 peticiones); 84% de rechazos | Apache 2.0 | Hugging Face |
 | Hikari07jp abliterated | No disponible | No disponible | No disponible | 0,738 (16k, 150 peticiones); 0,834 en el conjunto facil | No disponible | No disponible |
 | dealignai CRACK | No disponible | No disponible | No disponible | 0,668 (16k, 150 peticiones); 0,866 en el conjunto facil | No disponible | No disponible |
 
@@ -117,11 +117,11 @@ Diferencias significativas declaradas: v2 supera a v1 en el conjunto de 150 peti
 - Compatibilidad restringida: el formato PQ2_0 exige el fork de llama.cpp de PrismML. Ollama, LM Studio y llama.cpp mainline no pueden cargar los ficheros, lo que limita las opciones de despliegue y complica el mantenimiento a largo plazo.
 - Sesgos: no se han publicado evaluaciones de sesgo para este modelo ni para su base. La abliteracion puede alterar el comportamiento en dominios sensibles de formas no medidas.
 - Trazabilidad parcial: los cambios afectan al 0,95% de los bytes del fichero (99 de 851 tensores), por lo que la mayor parte de los pesos es identica a la publicacion de PrismML. Aun asi, la evaluacion se apoya en mediciones del propio autor y en un unico juez automatico (Qwen3.8-27B-OBLITERATED-Q8_0), sin validacion humana publicada.
-- Fechas de publicacion: la ficha de HuggingFace indica fechas de creacion y actualizacion de septiembre de 2026, posteriores a la informacion disponible en el momento de redactar esta ficha; conviene verificar el estado actual del repositorio.
+- Fechas de publicacion: la ficha de Hugging Face indica fechas de creacion y actualizacion de septiembre de 2026, posteriores a la informacion disponible en el momento de redactar esta ficha; conviene verificar el estado actual del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-v2-PQ2_0-MTP-GGUF
 - Modelo base: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Version anterior (v1, PQ2_0 + MTP): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF
 - Version reducida (PTQ1_0, 1,75 bpw): https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PTQ1_0-GGUF

@@ -23,7 +23,7 @@ Desde el punto de vista técnico, se trata de un modelo denso, no de tipo MoE, y
 
 El modelo parte de `ornith-ai/Ornith-1.5-9B`, un modelo denso de aproximadamente 9 mil millones de parámetros. Esta variante se genera con MTPLX Forge, un sistema que adapta el modelo original para realizar predicción de múltiples tokens (MPT) durante la decodificación. El autor indica que la mejor profundidad obtenida es D1, lo que significa que el modelo predice un token adicional más allá del token actual en cada paso.
 
-No se ha proporcionado información sobre los datos de entrenamiento, el número de tokens utilizados ni sobre técnicas como RLHF o DPO. Los tags de HuggingFace sugieren una arquitectura tipo qwen3_5, pero no hay confirmación oficial. La cuantización a 3 bits y el peso del repositorio (5,1 GB) indican que el modelo ha sido optimizado para reducir su huella de memoria y facilitar su ejecución en Apple Silicon.
+No se ha proporcionado información sobre los datos de entrenamiento, el número de tokens utilizados ni sobre técnicas como RLHF o DPO. Los tags de Hugging Face sugieren una arquitectura tipo qwen3_5, pero no hay confirmación oficial. La cuantización a 3 bits y el peso del repositorio (5,1 GB) indican que el modelo ha sido optimizado para reducir su huella de memoria y facilitar su ejecución en Apple Silicon.
 
 ## Capacidades
 
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Cuantización | Peso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| JoshuaCalhoon/Ornith-1.5-9B-MTPLX | ~8,95B | no disponible | 3 bits | 5,1 GB | no disponible | HuggingFace |
-| Artie101/Ornith-1.5-9B-8bit-MTPLX | ~9B | no disponible | 8 bits | no disponible | no disponible | HuggingFace |
-| ornith-ai/Ornith-1.5-9B-MLX-8bit | ~9B | no disponible | 8 bits | no disponible (modelo base en bf16: ~19 GB) | no disponible | HuggingFace |
+| JoshuaCalhoon/Ornith-1.5-9B-MTPLX | ~8,95B | no disponible | 3 bits | 5,1 GB | no disponible | Hugging Face |
+| Artie101/Ornith-1.5-9B-8bit-MTPLX | ~9B | no disponible | 8 bits | no disponible | no disponible | Hugging Face |
+| ornith-ai/Ornith-1.5-9B-MLX-8bit | ~9B | no disponible | 8 bits | no disponible (modelo base en bf16: ~19 GB) | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JoshuaCalhoon/Ornith-1.5-9B-MTPLX
+- Hugging Face: https://huggingface.co/JoshuaCalhoon/Ornith-1.5-9B-MTPLX
 - MTPLX Forge: https://github.com/youssofal/MTPLX
 - Variante 8 bits de Artie101: https://huggingface.co/Artie101/Ornith-1.5-9B-8bit-MTPLX
 - Modelo original: https://huggingface.co/ornith-ai/Ornith-1.5-9B-MLX-8bit

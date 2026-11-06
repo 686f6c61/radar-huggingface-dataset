@@ -90,7 +90,7 @@ La diferencia principal no está en el rendimiento, que no se puede comparar por
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-02-sorting-fdde61b6a662
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-02-sorting-fdde61b6a662
 - Run de Weights & Biases: identificador `b90655fa`; no se ha proporcionado la URL completa del proyecto.
 - Ruta original del scratch: `runs/mopd-sweep-n16-learned-teachers-20261002-165653/resumable/02-Sorting`.
 - No se han encontrado papers, repositorios de código, demos ni entradas de blog asociados en la información disponible.

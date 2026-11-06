@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HinglishNano-V5 es un encoder multi-tarea de 7,77 millones de parámetros desarrollado por Akash Yaduwanshi (publicado en HuggingFace bajo el identificador `unsahkensoul18/Hinglishnano_V5`), disenado especificamente para recuperacion de memoria conversacional y procesamiento de intenciones en texto code-mixed hindi-ingles (hinglish). El modelo resuelve un problema muy concreto: los embeddings multilingues genericos rinden de forma mediocre cuando el texto alterna idiomas y alfabetos dentro de la misma frase, algo habitual en conversaciones reales de usuarios indios. Su propuesta es un unico forward pass que devuelve simultaneamente cinco salidas especializadas, con un peso INT8 de solo 7,70 MB y una latencia P50 de 8,76 ms en CPU.
+HinglishNano-V5 es un encoder multi-tarea de 7,77 millones de parámetros desarrollado por Akash Yaduwanshi (publicado en Hugging Face bajo el identificador `unsahkensoul18/Hinglishnano_V5`), disenado especificamente para recuperacion de memoria conversacional y procesamiento de intenciones en texto code-mixed hindi-ingles (hinglish). El modelo resuelve un problema muy concreto: los embeddings multilingues genericos rinden de forma mediocre cuando el texto alterna idiomas y alfabetos dentro de la misma frase, algo habitual en conversaciones reales de usuarios indios. Su propuesta es un unico forward pass que devuelve simultaneamente cinco salidas especializadas, con un peso INT8 de solo 7,70 MB y una latencia P50 de 8,76 ms en CPU.
 
 La relevancia actual del modelo esta en su enfoque edge-first: frente a alternativas como `all-MiniLM-L6-v2` (86,6 MB) o `l3cube-pune/hing-roberta` (1.060,7 MB), HinglishNano-V5 ocupa dos ordenes de magnitud menos de espacio y declara un Recall@10 de corpus completo del 99,7% en su benchmark interno. Esto lo situa como candidato para motores de memoria en dispositivos, asistentes embebidos o pipelines de recuperacion con presupuesto de latencia y memoria muy ajustado.
 
@@ -84,9 +84,9 @@ Observaciones sobre la propia tabla: el modelo declara un Recall@10 muy superior
 
 | Modelo | Parametros / tamano | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HinglishNano-V5 | 7,77 M / 7,70 MB (INT8) | 64 tokens en el ejemplo documentado | Recall@10 99,7% en corpus propio; STS-B 65,33% | MIT | HuggingFace, formato ONNX, runtime ONNX |
-| `all-MiniLM-L6-v2` | ~22,7 M / 86,6 MB | 256 tokens tipicamente | Recall@10 86,7%; STS-B 86,72% | Apache 2.0 | HuggingFace, sentence-transformers, multiples formatos |
-| `l3cube-pune/hing-roberta` | ~278 M / 1.060,7 MB | no disponible | Recall@10 74,0%; STS-B 64,93% | no disponible en la informacion proporcionada | HuggingFace, transformers |
+| HinglishNano-V5 | 7,77 M / 7,70 MB (INT8) | 64 tokens en el ejemplo documentado | Recall@10 99,7% en corpus propio; STS-B 65,33% | MIT | Hugging Face, formato ONNX, runtime ONNX |
+| `all-MiniLM-L6-v2` | ~22,7 M / 86,6 MB | 256 tokens tipicamente | Recall@10 86,7%; STS-B 86,72% | Apache 2.0 | Hugging Face, sentence-transformers, multiples formatos |
+| `l3cube-pune/hing-roberta` | ~278 M / 1.060,7 MB | no disponible | Recall@10 74,0%; STS-B 64,93% | no disponible en la informacion proporcionada | Hugging Face, transformers |
 
 La comparacion directa es dificil porque HinglishNano-V5 solo se evalua en el corpus propio del autor, mientras que los otros dos modelos se miden con la misma tabla pero sin detallar el protocolo. La ventaja clara es el tamano y la latencia; la desventaja clara es la calidad de similitud semantica generica frente a `all-MiniLM-L6-v2`.
 
@@ -100,13 +100,13 @@ La comparacion directa es dificil porque HinglishNano-V5 solo se evalua en el co
 - Rendimiento en similitud semantica generica inferior a `all-MiniLM-L6-v2` (65,33% frente a 86,72% en STS-B). No usarlo como encoder de proposito general en ingles.
 - Categorias fijas: los 6 dominios, las 3 etiquetas temporales y los 8 tipos de entidad estan predefinidos. No se puede anadir una categoria nueva sin reentrenar.
 - Reproducibilidad: no se publican datos de entrenamiento, hiperparametros ni splits de evaluacion, lo que impide replicar los resultados.
-- Adopcion practica: el repositorio de HuggingFace muestra 0 descargas y 0 likes en el momento de la consulta, sin ecosistema de terceros ni integraciones verificadas.
+- Adopcion practica: el repositorio de Hugging Face muestra 0 descargas y 0 likes en el momento de la consulta, sin ecosistema de terceros ni integraciones verificadas.
 - Licencia: MIT permite uso comercial y modificacion sin restricciones, siempre que se conserve el aviso de copyright.
 - Madurez: la publicacion se marco con fecha de 2026 y la cita BibTeX referencia un `arXiv preprint` sin identificador, por lo que no hay constancia de revision por pares.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unsahkensoul18/Hinglishnano_V5
+- Modelo en Hugging Face: https://huggingface.co/unsahkensoul18/Hinglishnano_V5
 - Repositorio GitHub del proyecto: https://github.com/unshakensoul17/HinglishNano_Reserach_paper
 - Manuscrito (PDF): https://github.com/unshakensoul17/HinglishNano_Reserach_paper/blob/main/main.pdf
 - README del repositorio: https://github.com/unshakensoul17/HinglishNano_Reserach_paper/blob/main/README.md

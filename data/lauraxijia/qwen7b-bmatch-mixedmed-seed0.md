@@ -61,6 +61,6 @@ No se dispone de informaci√≥n suficiente para una comparativa rigurosa. Se podr√
 
 ## Enlaces
 
-- [HuggingFace - lauraxijia/qwen7b-bmatch-mixedmed-seed0](https://huggingface.co/lauraxijia/qwen7b-bmatch-mixedmed-seed0)
+- [Hugging Face - lauraxijia/qwen7b-bmatch-mixedmed-seed0](https://huggingface.co/lauraxijia/qwen7b-bmatch-mixedmed-seed0)
 - [Modelo relacionado del mismo autor: qwen7b-a1null-badmed-seed2](https://huggingface.co/lauraxijia/qwen7b-a1null-badmed-seed2)
 - [Repositorio oficial de Qwen-7B (referencia del modelo base)](https://github.com/zsc19/Qwen-7B)

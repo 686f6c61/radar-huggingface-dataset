@@ -72,7 +72,7 @@ El autor advierte que la cuantizacion a 4 bits cambia las respuestas: el comport
 |---|---|---|---|---|---|
 | locriani/terrible-joke-qwen3-1.7b-onnx | 1,7B | ONNX q4 (1,30 GB) | No disponible | Apache-2.0 | Ajuste fino ludico; ejecucion en navegador con WebGPU |
 | Qwen/Qwen3-1.7B (base) | 1,7B | safetensors | 32.768 tokens (valor tipico de la familia) | Apache-2.0 | Modelo generalista con modo thinking |
-| Qwen/Qwen3-1.7B (ONNX community builds) | 1,7B | ONNX (fp32/fp16/q4) | 32.768 tokens (valor tipico) | Apache-2.0 | Builds estandar de HuggingFace para transformers.js |
+| Qwen/Qwen3-1.7B (ONNX community builds) | 1,7B | ONNX (fp32/fp16/q4) | 32.768 tokens (valor tipico) | Apache-2.0 | Builds estandar de Hugging Face para transformers.js |
 
 El modelo de locriani se diferencia de las builds ONNX estandar de Qwen3-1.7B en el ajuste fino de comportamiento (chistes ante preguntas de conteo) y en que la cuantizacion incluye tambien el embedding, reduciendo el tamano a un unico archivo de 1,30 GB.
 

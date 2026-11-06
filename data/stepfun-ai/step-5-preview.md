@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Step 5 Preview es el modelo insignia de StepFun (autor `stepfun-ai`) orientado a tareas de agente ("agentic work"). Se trata de un modelo de lenguaje de tipo Mixture-of-Experts disperso con 600B parametros totales y 27B parametros activos por token, que segun la model card alcanza un rendimiento de frontera en ingenieria de software y trabajo de conocimiento profesional, con especial enfasis en el dominio financiero. El checkpoint publicado en HuggingFace ocupa 650,3 GB y declara 604.339.504.832 parametros reales en los ficheros safetensors.
+Step 5 Preview es el modelo insignia de StepFun (autor `stepfun-ai`) orientado a tareas de agente ("agentic work"). Se trata de un modelo de lenguaje de tipo Mixture-of-Experts disperso con 600B parametros totales y 27B parametros activos por token, que segun la model card alcanza un rendimiento de frontera en ingenieria de software y trabajo de conocimiento profesional, con especial enfasis en el dominio financiero. El checkpoint publicado en Hugging Face ocupa 650,3 GB y declara 604.339.504.832 parametros reales en los ficheros safetensors.
 
 La relevancia del modelo reside en la combinacion de tres factores: una ventana de contexto de hasta 1 millon de tokens (tanto de entrada como de salida), un presupuesto de parametros activos relativamente bajo (27B) sobre un total de 600B, lo que reduce el coste de inferencia por token frente a un denso equivalente, y una orientacion explicita a ejecucion de horizonte largo con llamadas repetidas a herramientas, verificacion y revision de resultados. Ademas acepta entradas multimodales, lo que le permite analizar documentos largos, graficos, capturas de pantalla, imagenes y video.
 
@@ -12,7 +12,7 @@ El modelo se distribuye como vista previa ("Preview") bajo una licencia de tipo 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Sparse Mixture-of-Experts (MoE); tag de HuggingFace `step5_vl` |
+| Arquitectura | Sparse Mixture-of-Experts (MoE); tag de Hugging Face `step5_vl` |
 | Parametros totales | 600B (604.339.504.832 reales en safetensors) |
 | Parametros activos | 27B |
 | Longitud de contexto | Hasta 1M tokens (entrada y salida, segun model card) |
@@ -24,7 +24,7 @@ El modelo se distribuye como vista previa ("Preview") bajo una licencia de tipo 
 | Salida | Texto |
 | Salida maxima | Hasta 1M tokens |
 | Tamano del repositorio | 650,3 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks numericos de Step 5 Preview en la informaci
 
 | Modelo | Parametros totales / activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Step 5 Preview | 600B / 27B | Hasta 1M tokens | `other` | Pesos en HuggingFace (FP8 y BF16), ModelScope, API propia |
+| Step 5 Preview | 600B / 27B | Hasta 1M tokens | `other` | Pesos en Hugging Face (FP8 y BF16), ModelScope, API propia |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -111,8 +111,8 @@ No se dispone de datos de benchmarks numericos de Step 5 Preview en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace (FP8): https://huggingface.co/stepfun-ai/Step-5-Preview
-- Modelo en HuggingFace (BF16): https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
+- Modelo en Hugging Face (FP8): https://huggingface.co/stepfun-ai/Step-5-Preview
+- Modelo en Hugging Face (BF16): https://huggingface.co/stepfun-ai/Step-5-Preview-BF16
 - Licencia: https://huggingface.co/stepfun-ai/Step-5-Preview/blob/main/LICENSE.txt
 - Modelo en ModelScope (FP8): https://modelscope.ai/models/stepfun-ai/Step-5-Preview
 - Modelo en ModelScope (BF16): https://modelscope.ai/models/stepfun-ai/Step-5-Preview-BF16

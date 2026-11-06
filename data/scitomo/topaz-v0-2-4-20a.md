@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Topaz v0.2.4 20A FORMAT-2 checkpoint es una conversión a formato FORMAT-2 del modelo de denoising 3D Topaz v0.2.4, originalmente desarrollado por el proyecto tbepler/topaz para criotomografía electrónica (cryo-ET). La conversión ha sido realizada y publicada por el usuario scitomo en HuggingFace, con el identificador `scitomo/topaz-v0.2.4-20a`. Este modelo está diseñado para reducir el ruido en tomogramas electrónicos tridimensionales, una tarea crítica en biología estructural, donde la dosis de electrones empleada en la adquisición de imágenes suele ser muy baja para preservar las muestras biológicas, lo que da lugar a relaciones señal-ruido muy pobres.
+Topaz v0.2.4 20A FORMAT-2 checkpoint es una conversión a formato FORMAT-2 del modelo de denoising 3D Topaz v0.2.4, originalmente desarrollado por el proyecto tbepler/topaz para criotomografía electrónica (cryo-ET). La conversión ha sido realizada y publicada por el usuario scitomo en Hugging Face, con el identificador `scitomo/topaz-v0.2.4-20a`. Este modelo está diseñado para reducir el ruido en tomogramas electrónicos tridimensionales, una tarea crítica en biología estructural, donde la dosis de electrones empleada en la adquisición de imágenes suele ser muy baja para preservar las muestras biológicas, lo que da lugar a relaciones señal-ruido muy pobres.
 
 El checkpoint contiene 2.916.337 parámetros organizados en 34 tensores canónicos. Según la información facilitada, la conversión es funcionalmente idéntica al checkpoint original, con paridad densa bitwise exacta tras la carga en el entorno de conversión congelado. No se ha realizado ningún reentrenamiento ni se reivindica ninguna mejora científica sobre el modelo original. La licencia es GPL-3.0, heredada del paquete Topaz upstream. No se trata de un modelo de lenguaje, sino de una red neuronal de procesamiento de imagen 3D.
 
@@ -21,7 +21,7 @@ El checkpoint contiene 2.916.337 parámetros organizados en 34 tensores canónic
 
 ## Arquitectura y entrenamiento
 
-El modelo es un checkpoint preentrenado del denoiser 3D Topaz v0.2.4, elaborado para trabajar con tomogramas de criomicroscopía electrónica. La arquitectura interna no se describe en la documentación disponible en HuggingFace, más allá de que se trata de una red neuronal densa que opera sobre volúmenes 3D. La resolución asociada al identificador "20a" sugiere que el modelo está calibrado para datos con una resolución aproximada de 20 Ångstroms.
+El modelo es un checkpoint preentrenado del denoiser 3D Topaz v0.2.4, elaborado para trabajar con tomogramas de criomicroscopía electrónica. La arquitectura interna no se describe en la documentación disponible en Hugging Face, más allá de que se trata de una red neuronal densa que opera sobre volúmenes 3D. La resolución asociada al identificador "20a" sugiere que el modelo está calibrado para datos con una resolución aproximada de 20 Ångstroms.
 
 La conversión a FORMAT-2 es una transformación de empaquetado y persistencia de pesos, no un reentrenamiento. El autor indica que la paridad densa es bitwise exacta antes de exportar y después de recargar el modelo en el entorno de inferencia congelado. El paquete contiene 34 tensores canónicos. La semántica de inferencia incluye la restauración de la media y la desviación típica de salida a nivel de volumen, así como cálculos de z-score poblacional. No se documentan datos de entrenamiento, composición del dataset ni procesos de optimización como RLHF o DPO, al no tratarse de un modelo de lenguaje.
 
@@ -69,6 +69,6 @@ No se dispone de información sobre modelos comparables dentro de la categoría 
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/scitomo/topaz-v0.2.4-20a
+- Página del modelo en Hugging Face: https://huggingface.co/scitomo/topaz-v0.2.4-20a
 - Repositorio upstream de Topaz (mencionado como "tbepler/topaz" en el README): https://github.com/tbepler/topaz
-- Texto de licencia GPL upstream incluido en el paquete: `resources/TOPAZ_LICENSE.txt` (dentro del repositorio de HuggingFace)
+- Texto de licencia GPL upstream incluido en el paquete: `resources/TOPAZ_LICENSE.txt` (dentro del repositorio de Hugging Face)

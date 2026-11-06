@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unichem_smiles-chemabs-10M es un adaptador QLoRA de dominio quimico entrenado sobre el modelo base allenai/OLMo-1B-hf. Lo publica el usuario Codemaster67 en HuggingFace y su objetivo es el modelado de lenguaje de cadenas SMILES (representaciones lineales de moleculas) mediante causal language modelling, usando el conjunto de datos Codemaster67/Unichem_smiles-chemabs-10M. No es un modelo completo, sino una capa de pesos LoRA que debe cargarse sobre el checkpoint base cargado en 4 bits.
+Unichem_smiles-chemabs-10M es un adaptador QLoRA de dominio quimico entrenado sobre el modelo base allenai/OLMo-1B-hf. Lo publica el usuario Codemaster67 en Hugging Face y su objetivo es el modelado de lenguaje de cadenas SMILES (representaciones lineales de moleculas) mediante causal language modelling, usando el conjunto de datos Codemaster67/Unichem_smiles-chemabs-10M. No es un modelo completo, sino una capa de pesos LoRA que debe cargarse sobre el checkpoint base cargado en 4 bits.
 
 La relevancia de esta ficha radica en su nicho muy concreto: quimioinformatica generativa sobre un transformer causal pequeno (~1B parametros). El adaptador entrena con cuantizacion NF4 de 4 bits, rango LoRA 64, alpha 128 y RSLoRA, dirigido a todas las capas lineales. El tokenizador del modelo base se amplio con unos 300 tokens quimicos SPE (SMILES Pair Encoding) y los tokens especiales `<|start_of_smiles|>` y `<|end_of_smiles|>`, lo que exige guardar `embed_tokens` y `lm_head` como copias completas (no LoRA) mediante `modules_to_save`.
 
@@ -73,8 +73,8 @@ La informacion disponible no incluye comparativas con otros modelos de quimica (
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unichem_smiles-chemabs-10M | ~1B (base) + adaptador LoRA | no disponible (entrenado a 512) | Quimica / SMILES | apache-2.0 | HuggingFace (adaptador PEFT) |
-| allenai/OLMo-1B-hf | ~1B | no disponible en la informacion | Lenguaje general | apache-2.0 | HuggingFace |
+| Unichem_smiles-chemabs-10M | ~1B (base) + adaptador LoRA | no disponible (entrenado a 512) | Quimica / SMILES | apache-2.0 | Hugging Face (adaptador PEFT) |
+| allenai/OLMo-1B-hf | ~1B | no disponible en la informacion | Lenguaje general | apache-2.0 | Hugging Face |
 | Otros modelos de quimica comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 Frente al base, el adaptador anade vocabulario quimico SPE y especializacion en SMILES, a costa de posible degradacion del seguimiento de instrucciones en lenguaje natural.
@@ -94,7 +94,7 @@ Frente al base, el adaptador anade vocabulario quimico SPE y especializacion en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Codemaster67/Unichem_smiles-chemabs-10M
+- Modelo en Hugging Face: https://huggingface.co/Codemaster67/Unichem_smiles-chemabs-10M
 - Modelo base: https://huggingface.co/allenai/OLMo-1B-hf
 - Dataset de entrenamiento: https://huggingface.co/datasets/Codemaster67/Unichem_smiles-chemabs-10M
 - Dataset relacionado (Chemabs-10M): https://huggingface.co/datasets/Codemaster67/Unichem_smiles-Chemabs-10M

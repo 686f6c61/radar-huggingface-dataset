@@ -70,6 +70,6 @@ No se dispone de datos comparativos con otros VAE de imagen médica en la inform
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/chicagoypark/second-ckpts
+- Repositorio Hugging Face: https://huggingface.co/chicagoypark/second-ckpts
 - Repositorio original de CompVis latent-diffusion: https://github.com/CompVis/latent-diffusion
 - Datasets mencionados: BraTS 2023, SynthRAD 2023, CHAOS, AMOS 22 (acceso sujeto a sus respectivas licencias)

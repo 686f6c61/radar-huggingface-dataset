@@ -88,7 +88,7 @@ La comparación con DeepSeek-R1-Distill-Qwen-1.5B es estructural (tamaño y cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: [DeliVali/AIDAM_MATH_1.7B_V1.0.0](https://huggingface.co/DeliVali/AIDAM_MATH_1.7B_V1.0.0)
+- Modelo en Hugging Face: [DeliVali/AIDAM_MATH_1.7B_V1.0.0](https://huggingface.co/DeliVali/AIDAM_MATH_1.7B_V1.0.0)
 - Repositorio GitHub del proyecto: [DeliVali/AIDAM](https://github.com/DeliVali/AIDAM)
 - Releases del proyecto: [DeliVali/AIDAM/releases](https://github.com/DeliVali/AIDAM/releases)
 - Documentación de arquitectura del proyecto: [docs/ARCHITECTURE.md](https://github.com/DeliVali/AIDAM/blob/main/docs/ARCHITECTURE.md)

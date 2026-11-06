@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este espejo en HuggingFace proporciona el checkpoint `co_dino_5scale_swin_large_3x_coco` de los autores originales de SenseTime X-Lab (Zhuofan Zong, Guanglu Song y Yu Liu), publicado en ICCV 2023. El repositorio es un espejo no oficial: `dronefreak` ha alojado el mismo fichero de pesos que los autores distribuyeron por Google Drive, junto con la config correspondiente y una model card, para facilitar descargas reproducibles. El modelo es un detector de objetos basado en la arquitectura DETR con backbone Swin-Large, entrenado durante 36 épocas (schedule 3x) en el dataset COCO.
+Este espejo en Hugging Face proporciona el checkpoint `co_dino_5scale_swin_large_3x_coco` de los autores originales de SenseTime X-Lab (Zhuofan Zong, Guanglu Song y Yu Liu), publicado en ICCV 2023. El repositorio es un espejo no oficial: `dronefreak` ha alojado el mismo fichero de pesos que los autores distribuyeron por Google Drive, junto con la config correspondiente y una model card, para facilitar descargas reproducibles. El modelo es un detector de objetos basado en la arquitectura DETR con backbone Swin-Large, entrenado durante 36 épocas (schedule 3x) en el dataset COCO.
 
 Co-DETR (Collaborative Hybrid Assignments Training) no es una arquitectura nueva, sino un esquema de entrenamiento que añade cabezas auxiliares de asignación one-to-many (ATSS y una RoI head estilo Faster R-CNN) junto al matching húngaro one-to-one del decoder DETR. Esto acelera la convergencia y mejora la discriminación de las características del encoder. En este checkpoint, las cabezas auxiliares solo se usan durante el entrenamiento; en inferencia, el modelo se comporta como un Co-DINO estándar.
 
@@ -83,7 +83,7 @@ No se dispone de datos verificados de modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-3x-coco
+- Hugging Face: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-3x-coco
 - Config en el repositorio: https://huggingface.co/dronefreak/co-dino-5scale-swin-l-3x-coco/blob/main/co_dino_5scale_swin_large_3x_coco.py
 - Paper (Co-DETR): https://arxiv.org/abs/2211.12860
 - Repo oficial de Co-DETR: https://github.com/Sense-X/Co-DETR

@@ -82,7 +82,7 @@ La comparación directa con alternativas cuantizadas en GGUF no está disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q3-HQQ-B64
+- Repositorio Hugging Face: https://huggingface.co/sujitvasanth/DeepSeek-R1-Llama-3B-MNN-Q3-HQQ-B64
 - Modelo base: https://huggingface.co/suayptalha/DeepSeek-R1-Distill-Llama-3B
 - Runtime MNN: no disponible en la información proporcionada
 - FULLassistant: no disponible en la información proporcionada

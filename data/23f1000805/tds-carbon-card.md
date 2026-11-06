@@ -63,8 +63,8 @@ No disponible. No existe un modelo comparable, dado que este repositorio no cont
 
 ## Enlaces
 
-- [HuggingFace - 23f1000805/tds-carbon-card](https://huggingface.co/23f1000805/tds-carbon-card)
+- [Hugging Face - 23f1000805/tds-carbon-card](https://huggingface.co/23f1000805/tds-carbon-card)
 - [GitHub - tds-project-2](https://github.com/23f1000805/tds-project-2/blob/main/index.html)
 - [GitHub - tds-project-1](https://github.com/23f1000805/tds-project-1/blob/main/app.py)
 - [carbontxt.org - Directorio de tarjetas de modelo AI](https://carbontxt.org/ai-model-cards)
-- [HuggingFace Space - TDS ROE Solver API](https://huggingface.co/spaces/23f1000805/tds-roe-solver-api-t12026)
+- [Hugging Face Space - TDS ROE Solver API](https://huggingface.co/spaces/23f1000805/tds-roe-solver-api-t12026)

@@ -75,7 +75,7 @@ La comparativa es cualitativa, ya que no se dispone de datos de benchmarks para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-4.2-3b-q8-mlx
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-4.2-3b-q8-mlx
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-3b
 - Documentación oficial de IBM Granite 4.2: https://www.ibm.com/granite/docs/models/granite4-2
 - Repositorio GitHub de IBM Granite 4.2: https://github.com/ibm-granite/granite-4.2-language-models

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Resoluciones | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wan2.1-T2V-1.3B (este) | 1,3B | 480P (720P inestable) | Text-to-video | Apache 2.0 | HuggingFace, ModelScope |
-| Wan2.1-T2V-14B | 14B | 480P y 720P | Text-to-video | No disponible en la informacion | HuggingFace, ModelScope |
-| Wan2.1-I2V-14B-480P | 14B | 480P | Image-to-video | No disponible en la informacion | HuggingFace, ModelScope |
-| Wan2.1-I2V-14B-720P | 14B | 720P | Image-to-video | No disponible en la informacion | HuggingFace, ModelScope |
+| Wan2.1-T2V-1.3B (este) | 1,3B | 480P (720P inestable) | Text-to-video | Apache 2.0 | Hugging Face, ModelScope |
+| Wan2.1-T2V-14B | 14B | 480P y 720P | Text-to-video | No disponible en la informacion | Hugging Face, ModelScope |
+| Wan2.1-I2V-14B-480P | 14B | 480P | Image-to-video | No disponible en la informacion | Hugging Face, ModelScope |
+| Wan2.1-I2V-14B-720P | 14B | 720P | Image-to-video | No disponible en la informacion | Hugging Face, ModelScope |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes ni frente a modelos de otros fabricantes (CogVideoX, HunyuanVideo, LTX-Video u otros), por lo que la comparativa se limita a parametros, resoluciones y disponibilidad segun la informacion proporcionada.
 
@@ -85,9 +85,9 @@ No se dispone de datos de rendimiento comparativo entre estas variantes ni frent
 
 ## Enlaces
 
-- Repositorio analizado en HuggingFace: https://huggingface.co/UltraStudio/Wan2.1-T2V-1.3B
+- Repositorio analizado en Hugging Face: https://huggingface.co/UltraStudio/Wan2.1-T2V-1.3B
 - Repositorio oficial del mismo modelo: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B
-- Organizacion Wan-AI en HuggingFace: https://huggingface.co/Wan-AI/
+- Organizacion Wan-AI en Hugging Face: https://huggingface.co/Wan-AI/
 - Repositorio GitHub: https://github.com/Wan-Video/Wan2.1
 - ModelScope: https://www.modelscope.cn/organization/Wan-AI
 - Modelo T2V-14B: https://huggingface.co/Wan-AI/Wan2.1-T2V-14B

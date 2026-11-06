@@ -70,7 +70,7 @@ No se conocen, en la informacion proporcionada, otros ajustes publicados especif
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decisionlabs/mobilitydb-sql | ~596 M | no disponible (ejemplo con 2048) | SQL de MobilityDB (AIS) | apache-2.0 | GGUF Q8_0 en HuggingFace |
+| decisionlabs/mobilitydb-sql | ~596 M | no disponible (ejemplo con 2048) | SQL de MobilityDB (AIS) | apache-2.0 | GGUF Q8_0 en Hugging Face |
 | Qwen/Qwen3-0.6B | ~596 M | no disponible en esta informacion | proposito general | apache-2.0 | safetensors y otras |
 | Otros modelos text-to-SQL pequenos | no disponible | no disponible | generico o dialectos SQL comunes | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No se conocen, en la informacion proporcionada, otros ajustes publicados especif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/decisionlabs/mobilitydb-sql
+- Modelo en Hugging Face: https://huggingface.co/decisionlabs/mobilitydb-sql
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de codigo: https://github.com/decision-labs/speculative-ideas (directorio mobilitydb-sql/)
 - Guia de inicio rapido: https://github.com/decision-labs/speculative-ideas/blob/main/mobilitydb-sql/QUICKSTART.md

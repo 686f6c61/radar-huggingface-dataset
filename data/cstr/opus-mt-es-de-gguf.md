@@ -82,7 +82,7 @@ La diferencia principal frente al modelo base `Helsinki-NLP/opus-mt-es-de` es el
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta; poca validacion externa de la conversion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/cstr/opus-mt-es-de-GGUF
+- Modelo en Hugging Face: https://huggingface.co/cstr/opus-mt-es-de-GGUF
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-es-de
 - Direccion inversa: https://huggingface.co/cstr/opus-mt-de-es-GGUF
 - Repositorio CrispASR: https://github.com/CrispStrobe/CrispASR

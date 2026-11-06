@@ -84,7 +84,7 @@ La comparación con `google/mt5-base` es la más directa: mismo backbone, pero c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IARG-UF/akant5-base-extension
+- Modelo en Hugging Face: https://huggingface.co/IARG-UF/akant5-base-extension
 - Inicialización de vocabulario: https://huggingface.co/IARG-UF/akant5-base-extension-init
 - Colección AkanT5: https://huggingface.co/collections/IARG-UF/akant5-cpt-checkpoints-and-vocabulary-initializations
 - Modelo base original: https://huggingface.co/google/mt5-base

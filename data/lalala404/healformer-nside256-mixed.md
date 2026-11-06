@@ -78,6 +78,6 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lalala404/healformer-nside256-mixed
+- Repositorio en Hugging Face: https://huggingface.co/lalala404/healformer-nside256-mixed
 - Paper: Yihe Wang y Yu Yu, "Advancing weak lensing mass mapping with a mask-aware HEALPix transformer", arXiv:2603.25471 (enlace no directo disponible en la informacion).
 - Libreria healformers: no se proporciona enlace directo, pero esta referenciada en la model card como `library_name: healformers`.

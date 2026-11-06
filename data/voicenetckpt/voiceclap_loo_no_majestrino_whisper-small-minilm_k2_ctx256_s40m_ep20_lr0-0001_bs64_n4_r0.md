@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VoiceCLAP es una linea de experimentos de checkpoints publicada por el usuario VoiceNetCkpt en HuggingFace, cuyo nombre completo identifica una ejecucion concreta de entrenamiento: `voiceclap_loo_no_majestrino_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0`. La model card la describe como "una ejecucion de entrenamiento de los experimentos VoiceCLAP", compuesta por los pesos finales mas las configuraciones y resultados de evaluacion de esa ejecucion, sin estados intermedios de epoch ni estado del optimizador. El repositorio pesa 1,3 GB y contiene 13 archivos, con los pesos en `checkpoints/epoch_latest.pt`.
+VoiceCLAP es una linea de experimentos de checkpoints publicada por el usuario VoiceNetCkpt en Hugging Face, cuyo nombre completo identifica una ejecucion concreta de entrenamiento: `voiceclap_loo_no_majestrino_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0`. La model card la describe como "una ejecucion de entrenamiento de los experimentos VoiceCLAP", compuesta por los pesos finales mas las configuraciones y resultados de evaluacion de esa ejecucion, sin estados intermedios de epoch ni estado del optimizador. El repositorio pesa 1,3 GB y contiene 13 archivos, con los pesos en `checkpoints/epoch_latest.pt`.
 
 El nombre del checkpoint sugiere una arquitectura de doble codificador de tipo CLAP (Contrastive Language-Audio Pretraining) orientada a voz, donde `whisper-small` actuaria como codificador de audio y `MiniLM` como codificador de texto. Los parametros del nombre apuntan a un entrenamiento sobre 40 millones de muestras (`s40M`), 20 epocas (`ep20`), tasa de aprendizaje 0,0001, tamano de lote 64, 4 nodos y una ventana de contexto de 256 (`ctx256`). El sufijo `loo_no_majestrino` resulta mas dificil de interpretar sin documentacion adicional. Conviene subrayar que todas estas inferencias proceden del nombre del repositorio y no de una descripcion explicita del autor.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| VoiceCLAP (este checkpoint) | No disponible | `ctx256` segun el nombre | No disponible | HuggingFace, 0 descargas | Checkpoint de investigacion sin model card detallada |
+| VoiceCLAP (este checkpoint) | No disponible | `ctx256` segun el nombre | No disponible | Hugging Face, 0 descargas | Checkpoint de investigacion sin model card detallada |
 | Modelos CLAP de referencia (por ejemplo, LAION-CLAP) | No disponible en esta consulta | No disponible | No disponible | Publicos | Categoria equivalente (contraste audio-texto), pero sin datos verificados en esta ficha |
 | Alternativas de la serie VoiceCLAP | No disponible | Varia segun ejecucion | No disponible | Indice `voiceclap-checkpoints-index` | Misma linea experimental; comparables dentro de la propia serie |
 
@@ -87,6 +87,6 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_majestrino_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_majestrino_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Perfil del autor: https://huggingface.co/VoiceNetCkpt

@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| debudash/qwen3-4b-tz-convert-v3-n3000 | 4B (base) + LoRA | no disponible | tz-convert, 3.000 ejemplos | apache-2.0 | HuggingFace |
-| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | no disponible | tz-convert, 12.000 ejemplos (mejor checkpoint de la serie) | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion | proposito general, instrucciones | apache-2.0 | HuggingFace |
+| debudash/qwen3-4b-tz-convert-v3-n3000 | 4B (base) + LoRA | no disponible | tz-convert, 3.000 ejemplos | apache-2.0 | Hugging Face |
+| debudash/qwen3-4b-tz-convert-v3-n12000 | 4B (base) + LoRA | no disponible | tz-convert, 12.000 ejemplos (mejor checkpoint de la serie) | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | 4B | no disponible en la informacion | proposito general, instrucciones | apache-2.0 | Hugging Face |
 
 El checkpoint n12000 es la referencia directa dentro de la misma serie; la model card lo senala como el mejor. No se dispone de datos de benchmarks comparativos con otros adaptadores de la misma categoria en la informacion proporcionada.
 
@@ -91,7 +91,7 @@ El checkpoint n12000 es la referencia directa dentro de la misma serie; la model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n3000
+- Modelo en Hugging Face: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n3000
 - Mejor checkpoint de la serie: https://huggingface.co/debudash/qwen3-4b-tz-convert-v3-n12000
 - Codigo, conjuntos de evaluacion e informes: https://huggingface.co/debudash/slm-training
 - Dataset de entrenamiento: https://huggingface.co/datasets/debudash/tz-convert-sft

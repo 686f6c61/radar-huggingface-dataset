@@ -66,6 +66,6 @@ No se dispone de información suficiente para comparar este adaptador con otras 
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/SubhaP/qwen25-05b-gsm8k-lora)
+- [Repositorio Hugging Face](https://huggingface.co/SubhaP/qwen25-05b-gsm8k-lora)
 - [Modelo base Qwen2.5-0.5B-Instruct](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
 - [Librería TRL](https://github.com/huggingface/trl)

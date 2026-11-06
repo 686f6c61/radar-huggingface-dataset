@@ -73,10 +73,10 @@ Las cifras de VRAM son estimaciones derivadas del numero de parametros, no datos
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| cobalt-seeded-rl-...-q4v3 (este) | 4,41 B | 262.144 tokens (heredado, no confirmado) | No disponible | Checkpoint RL GRPO para correctitud de codigo, paso 44 | HuggingFace, 653 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4,0 B | 262.144 tokens | Apache-2.0 | Modelo base instruido, proposito general | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-4B-Thinking-2507 | ~4,0 B | 262.144 tokens | Apache-2.0 | Variante orientada a razonamiento explicito | HuggingFace |
-| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,1 B | 32.768 tokens | Apache-2.0 | Modelo especializado en codigo con SFT | HuggingFace |
+| cobalt-seeded-rl-...-q4v3 (este) | 4,41 B | 262.144 tokens (heredado, no confirmado) | No disponible | Checkpoint RL GRPO para correctitud de codigo, paso 44 | Hugging Face, 653 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4,0 B | 262.144 tokens | Apache-2.0 | Modelo base instruido, proposito general | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-4B-Thinking-2507 | ~4,0 B | 262.144 tokens | Apache-2.0 | Variante orientada a razonamiento explicito | Hugging Face |
+| Qwen/Qwen2.5-Coder-3B-Instruct | ~3,1 B | 32.768 tokens | Apache-2.0 | Modelo especializado en codigo con SFT | Hugging Face |
 
 Los datos de contexto y licencia de los modelos de comparacion corresponden a sus especificaciones publicas habituales y no han sido verificados dentro de la informacion proporcionada. No se dispone de cifras de rendimiento comparables para este checkpoint, por lo que la comparativa se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -95,7 +95,7 @@ Los datos de contexto y licencia de los modelos de comparacion corresponden a su
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-q4v3
+- Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base-q4v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Logs de entrenamiento: proyecto de Weights & Biases `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_base_q4v3` (referenciado en la model card; no se proporciona URL directa)
 - Log local de entrenamiento: `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp10_base_q4v3/openrlhf_train.log` (ruta interna, no accesible publicamente desde el repositorio)

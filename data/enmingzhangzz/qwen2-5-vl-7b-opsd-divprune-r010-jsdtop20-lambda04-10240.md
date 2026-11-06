@@ -73,7 +73,7 @@ Ambos adaptadores OPSD comparten el mismo modelo base y dataset, pero difieren e
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-DivPrune-r010-JSDtop20-lambda04-10240
+- Repositorio Hugging Face del adaptador: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-DivPrune-r010-JSDtop20-lambda04-10240
 - Adaptador OPSD oficial con VisionZip: https://huggingface.co/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-gap01-kl50-f20-lambda04-10240
 - Despliegue en FriendliAI (modelo relacionado): https://friendli.ai/models/enmingzhangzz/Qwen2.5-VL-7B-OPSD-official-VisionZip-r010-10240
 - Modelo base Qwen2.5-VL-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct

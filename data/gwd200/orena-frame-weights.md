@@ -106,7 +106,7 @@ No se dispone de datos comparativos con otros modelos en la información proporc
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/gwd200/orena-frame-weights
+- Hugging Face del modelo: https://huggingface.co/gwd200/orena-frame-weights
 - Perfil del autor en Hugging Face: https://huggingface.co/gwd200
 - Página oficial del ORena Focus Challenge: https://orena-focus-challenge.org/
 - Documento del track FRAME (PDF): https://or-arena.org/wp-content/uploads/2026/03/FINAL_TRACK-1_document.pdf

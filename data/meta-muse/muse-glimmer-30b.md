@@ -101,14 +101,14 @@ No disponible. La model card no incluye comparaciones con otros modelos, y en la
 - Riesgo de alucinación: inherente a los modelos generativos; la model card no publica tasas de veracidad ni mecanismos de mitigación más allá de la recuperación ante fallos de herramientas.
 - Idiomas: se declara entrenamiento en más de 100 idiomas, pero no se detalla el reparto por idioma ni la calidad relativa, por lo que el rendimiento en castellano no está cuantificado.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, modificación y redistribución, con la obligación habitual de conservar avisos de licencia y copyright.
-- Fechas no verificables: la model card declara fecha de publicación en agosto de 2026 y corte de conocimiento el 4 de enero de 2026, posteriores a la fecha de creación del repositorio en HuggingFace (1 de octubre de 2026). Estas fechas no se han podido verificar de forma independiente con la información disponible.
+- Fechas no verificables: la model card declara fecha de publicación en agosto de 2026 y corte de conocimiento el 4 de enero de 2026, posteriores a la fecha de creación del repositorio en Hugging Face (1 de octubre de 2026). Estas fechas no se han podido verificar de forma independiente con la información disponible.
 - Procedencia del repositorio: el modelo se publica bajo el usuario "Meta-muse", que en la información disponible no figura verificado como organización oficial de Meta, aunque la model card atribuye la autoría a Meta Superintelligence Lab. Conviene confirmar la procedencia antes de usarlo en producción.
 - Adopción nula: el repositorio registra 0 descargas y 0 "likes", sin evidencia externa de uso ni de validación por terceros.
 - Composición de datos opaca: no se detalla el número de tokens de entrenamiento, la proporción de datos sintéticos ni si hubo alineación con RLHF o DPO.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Meta-muse/Muse-Glimmer-30B
+- Modelo en Hugging Face: https://huggingface.co/Meta-muse/Muse-Glimmer-30B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Paper del encoder de percepción (arxiv:2504.13181): https://arxiv.org/abs/2504.13181
 - Paper de DFlash (arxiv:2602.06036): https://arxiv.org/abs/2602.06036

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`DeepakSinghworks/blip-demo` es un repositorio experimental publicado en HuggingFace por el usuario DeepakSinghworks que se presenta como un prototipo de investigación de arquitectura BLIP orientado a tareas de generación. El propio autor lo describe como "un boceto de trabajo, no un lanzamiento pulido": el checkpoint incluido (`model.safetensors`) es una inicialización recién creada, sin entrenamiento ni auditoría, y el repositorio no reporta ninguna métrica de rendimiento de forma deliberada.
+`DeepakSinghworks/blip-demo` es un repositorio experimental publicado en Hugging Face por el usuario DeepakSinghworks que se presenta como un prototipo de investigación de arquitectura BLIP orientado a tareas de generación. El propio autor lo describe como "un boceto de trabajo, no un lanzamiento pulido": el checkpoint incluido (`model.safetensors`) es una inicialización recién creada, sin entrenamiento ni auditoría, y el repositorio no reporta ninguna métrica de rendimiento de forma deliberada.
 
 El dato más relevante para evaluar el artefacto es el recuento real de parámetros en safetensors: 16.576 parámetros, es decir, unas 16.500 unidades, con un tamaño de repositorio de 0,0 GB. Este número es incompatible con la escala "xlarge" que declara la model card en su tabla de arquitectura, lo que sugiere que la configuración documentada corresponde a una plantilla de experimento y no al contenido efectivo del checkpoint publicado.
 
@@ -42,7 +42,7 @@ No hay entrenamiento documentado. El autor indica explícitamente que el checkpo
 - Validación de pipelines de carga de safetensors: el repositorio sirve para comprobar que un entorno con PyTorch y las dependencias de BLIP es capaz de leer `model.safetensors`, instanciar el modelo y ejecutar el smoke test antes de invertir en un checkpoint real.
 - Esqueleto para fine-tuning multimodal: `training_args.json` y `config.json` actúan como plantilla de hiperparámetros (LAMB, warmup lineal) que un equipo puede reutilizar como punto de partida documentado en sus propios experimentos de captioning.
 - Pruebas de integración en CI: al ser un artefacto de 0,0 GB con 16.576 parámetros, se puede descargar e instanciar en tests automáticos de extremo a extremo sin coste de GPU, verificando rutas de código de un servicio de inferencia.
-- Docencia y formación interna: sirve para mostrar la estructura de un repositorio de modelo en HuggingFace (config, training args, pesos, README, guía de evaluación) sin la complejidad de un checkpoint de miles de millones de parámetros.
+- Docencia y formación interna: sirve para mostrar la estructura de un repositorio de modelo en Hugging Face (config, training args, pesos, README, guía de evaluación) sin la complejidad de un checkpoint de miles de millones de parámetros.
 - Reproducción de protocolos de evaluación: la sección "Evaluation guidance" del repositorio propone un método concreto (dataset held-out, presupuesto de tuning fijo, baseline de capacidad equivalente, publicación de logs) aplicable como plantilla metodológica en proyectos de investigación.
 - Pruebas de compatibilidad de serialización: útil para verificar versiones de `safetensors` y de la librería de transformación frente a un fichero de pesos trivial antes de migrar checkpoints grandes.
 - Referencia negativa en comparativas: sirve como caso de control de un modelo sin entrenar al analizar qué espera un evaluador de una model card (ausencia de benchmarks, licencia indefinida, discrepancia de escala).
@@ -81,11 +81,11 @@ Advertencia: la comparación de rendimiento con cualquiera de estas alternativas
 - Sesgos y alucinación: no evaluados. No hay auditoría de equidad, robustez ni transferencia de dominio, y sin entrenamiento el concepto de alucinación no es aplicable en el sentido habitual, pero tampoco existe ninguna garantía de comportamiento.
 - Idiomas: no se declara ninguno; no se puede asumir soporte de castellano ni de inglés.
 - Contexto: longitud de contexto no documentada, lo que impide planificar casos de uso con ventanas largas.
-- Metadatos a verificar: la fecha de creación registrada (2026-10-21) y el pipeline no disponible en la API de HuggingFace dificultan trazabilidad y reproducibilidad.
+- Metadatos a verificar: la fecha de creación registrada (2026-10-21) y el pipeline no disponible en la API de Hugging Face dificultan trazabilidad y reproducibilidad.
 - Sin comunidad: 0 descargas y 0 likes implican ausencia de validación externa, informes de errores o mantenimiento.
 - Longevidad: al ser un prototipo de un único autor, no hay compromiso de soporte ni versionado.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DeepakSinghworks/blip-demo
+- Repositorio en Hugging Face: https://huggingface.co/DeepakSinghworks/blip-demo
 - No se han encontrado en la información disponible papers, blogs, repositorios de código, demos ni espacios asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agi2008/fraud-detector es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario Agi2008 en HuggingFace. Segun la model card, el entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL de HuggingFace. El nombre sugiere un proposito de deteccion de fraude, pero la model card no documenta el conjunto de datos, el dominio ni el formato de las etiquetas empleadas.
+Agi2008/fraud-detector es un ajuste fino (fine-tune) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario Agi2008 en Hugging Face. Segun la model card, el entrenamiento se realizo mediante SFT (supervised fine-tuning) utilizando la libreria TRL de Hugging Face. El nombre sugiere un proposito de deteccion de fraude, pero la model card no documenta el conjunto de datos, el dominio ni el formato de las etiquetas empleadas.
 
 El modelo hereda la arquitectura y el tamano del modelo base: un transformer decoder-only de aproximadamente 1.500 millones de parametros, con una ventana de contexto de 32.768 tokens en la version original de Qwen2.5-1.5B-Instruct. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y su tamano declarado es de 0,0 GB, lo que indica que los pesos pueden no estar subidos o que el repositorio solo contiene los ficheros de configuracion.
 
@@ -57,17 +57,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: aproximadamente 3,1 GB en FP16 (BF16), en torno a 1,6 GB en INT8 y cerca de 1,0 GB en INT4. Son estimaciones calculadas a partir de los 1.500 millones de parametros del modelo base; no hay mediciones publicadas para este fine-tune.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM para FP16, como RTX 3050, RTX 4060, RTX 4090, A100 o H100. En entornos de servidor, A100/H100 permiten lotes grandes y mayor throughput.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en RTX 3060 12 GB, RTX 4060 Ti, RTX 4070, RTX 4090 y en GPUs integradas con memoria unificada suficiente. Tambien puede ejecutarse en CPU con llama.cpp u Ollama en formato GGUF, aunque el repositorio no publica pesos GGUF.
-- Opciones de despliegue: transformers con `pipeline`, vLLM, TGI, llama.cpp, Ollama, LM Studio. El tag `endpoints_compatible` del repositorio indica compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: transformers con `pipeline`, vLLM, TGI, llama.cpp, Ollama, LM Studio. El tag `endpoints_compatible` del repositorio indica compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Agi2008/fraud-detector | ~1,5B (heredado) | no confirmado (base: 32.768 tokens) | no disponible | HuggingFace, 0 descargas, repo de 0,0 GB |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | HuggingFace, ampliamente descargado |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, requiere aceptar terminos |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace, requiere aceptar terminos |
+| Agi2008/fraud-detector | ~1,5B (heredado) | no confirmado (base: 32.768 tokens) | no disponible | Hugging Face, 0 descargas, repo de 0,0 GB |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Apache 2.0 | Hugging Face, ampliamente descargado |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, requiere aceptar terminos |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face, requiere aceptar terminos |
 
 Los datos de los tres modelos de referencia corresponden a sus fichas oficiales. La comparativa de rendimiento no puede completarse porque el modelo evaluado no publica benchmarks y no hay evidencia de que sus pesos esten efectivamente disponibles en el repositorio.
 
@@ -86,7 +86,7 @@ Los datos de los tres modelos de referencia corresponden a sus fichas oficiales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Agi2008/fraud-detector
+- Modelo en Hugging Face: https://huggingface.co/Agi2008/fraud-detector
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentacion de Transformers: https://huggingface.co/docs/transformers

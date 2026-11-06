@@ -4,7 +4,7 @@
 
 Nanbeige4.2-3B-DSpark es un modelo de lenguaje compacto de tipo agéntico desarrollado por Nanbeige LLM Lab, el equipo de investigación de IA de la plataforma china de reclutamiento BOSS Zhipin. El modelo está construido sobre Nanbeige4.2-3B-Base y emplea una arquitectura Looped Transformer que reutiliza las capas del transformer para aumentar la capacidad efectiva del modelo sin añadir parámetros adicionales. Con solo 3B parámetros no-embebidos, el modelo ofrece un rendimiento sólido en tareas de agente de código, agente de oficina y uso complejo de herramientas, manteniendo a la vez capacidades competitivas de razonamiento en matemáticas, código y ciencia.
 
-El repositorio que nos ocupa, `liodon-ai/Nanbeige4.2-3B-DSpark-ONNX`, es una exportación a formato ONNX del modelo original, publicada por Liodon AI. La exportación se realizó con la librería `optimum` de HuggingFace, utilizando la tarea `text-generation-with-past`, lo que significa que el grafo expone entradas y salidas de past-key-values para permitir decodificación autorregresiva con caché de KV. Se incluyen tres versiones del modelo: FP32, FP16 y una versión cuantizada dinámica INT8, lo que facilita el despliegue en diferentes entornos de hardware.
+El repositorio que nos ocupa, `liodon-ai/Nanbeige4.2-3B-DSpark-ONNX`, es una exportación a formato ONNX del modelo original, publicada por Liodon AI. La exportación se realizó con la librería `optimum` de Hugging Face, utilizando la tarea `text-generation-with-past`, lo que significa que el grafo expone entradas y salidas de past-key-values para permitir decodificación autorregresiva con caché de KV. Se incluyen tres versiones del modelo: FP32, FP16 y una versión cuantizada dinámica INT8, lo que facilita el despliegue en diferentes entornos de hardware.
 
 ## Especificaciones tecnicas
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pa
 - La versión FP16 (`model_fp16.onnx`, 3.66 GB) es adecuada para GPUs con al menos 4-6 GB de VRAM, como una RTX 3060 o superior.
 - La versión INT8 cuantizada (`model_quantized.onnx`, 1.74 GB) puede ejecutarse en CPU con ONNX Runtime, con un consumo de RAM de aproximadamente 2-3 GB.
 - Para inferencia en GPU, se recomienda cualquier GPU compatible con CUDA y ONNX Runtime (por ejemplo, RTX 3090, RTX 4090, A100).
-- Opciones de despliegue: ONNX Runtime (CPU y GPU), `optimum.onnxruntime.ORTModelForCausalLM` como wrapper de HuggingFace, o integración directa con `onnxruntime.InferenceSession`.
+- Opciones de despliegue: ONNX Runtime (CPU y GPU), `optimum.onnxruntime.ORTModelForCausalLM` como wrapper de Hugging Face, o integración directa con `onnxruntime.InferenceSession`.
 - La latencia y el throughput dependen en gran medida del hardware y de la longitud de la secuencia; no se dispone de cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ La comparativa se basa en información pública de los modelos mencionados. Nanb
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo se indica como "other" en HuggingFace, aunque fuentes externas mencionan Apache-2.0. Es necesario verificar los términos exactos de la licencia antes de uso comercial.
+- La licencia del modelo se indica como "other" en Hugging Face, aunque fuentes externas mencionan Apache-2.0. Es necesario verificar los términos exactos de la licencia antes de uso comercial.
 - No se dispone de información sobre la longitud de contexto soportada, lo que dificulta planificar su uso en aplicaciones que requieran ventanas largas.
 - Los idiomas soportados no están documentados en la información proporcionada; se desconoce su rendimiento en español u otros idiomas distintos del chino e inglés.
 - La cuantización INT8 dinámica puede introducir una degradación de precisión en tareas de razonamiento complejo, aunque no se han publicado evaluaciones específicas.
@@ -79,7 +79,7 @@ La comparativa se basa en información pública de los modelos mencionados. Nanb
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo ONNX: https://huggingface.co/liodon-ai/Nanbeige4.2-3B-DSpark-ONNX
+- Repositorio Hugging Face del modelo ONNX: https://huggingface.co/liodon-ai/Nanbeige4.2-3B-DSpark-ONNX
 - Modelo original: https://huggingface.co/Nanbeige/Nanbeige4.2-3B-DSpark
 - Paper arXiv: https://arxiv.org/abs/2607.22083
 - PDF del paper: https://arxiv.org/pdf/2607.22083

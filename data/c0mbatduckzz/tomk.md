@@ -90,7 +90,7 @@ No disponible. TOMK no es un modelo de lenguaje y no se han identificado en la i
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/c0mbatduckzz/TOMK
+- Repositorio Hugging Face: https://huggingface.co/c0mbatduckzz/TOMK
 - Especificación del aprendiz: spec/TOM_LEARNER_0_2_WORLD_QUERY_KERNEL_0_6.md
 - Especificación de compilación sembrada: spec/TOM_SEEDED_COMPILATION_1_0.md
 - Especificación del lenguaje formal: spec/TOM_FORMAL_LANGUAGE_1_0.md

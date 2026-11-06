@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, desarrollado por el usuario de HuggingFace `davronbekovic`. Se trata de un fine-tuning de `FacebookAI/xlm-roberta-base` sobre un conjunto de datos muy reducido de frases escritas a mano sobre la vida universitaria. El modelo resuelve una tarea concreta y acotada: asignar una etiqueta de polaridad a una frase corta en uzbeko, con un uso declarado exclusivamente educativo.
+`kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, desarrollado por el usuario de Hugging Face `davronbekovic`. Se trata de un fine-tuning de `FacebookAI/xlm-roberta-base` sobre un conjunto de datos muy reducido de frases escritas a mano sobre la vida universitaria. El modelo resuelve una tarea concreta y acotada: asignar una etiqueta de polaridad a una frase corta en uzbeko, con un uso declarado exclusivamente educativo.
 
 El interés del modelo es limitado desde el punto de vista de produccion: el propio autor documenta que el dataset de entrenamiento consta de 150 frases (50 por clase) y que la evaluacion se realizo sobre 30 frases con una exactitud de 0,90, una muestra demasiado pequena para extraer conclusiones robustas. No obstante, resulta util como ejemplo de adaptacion de un encoder multilingue a un idioma de bajos recursos como el uzbeko, y como punto de partida para quien quiera experimentar con clasificacion de sentimiento en esa lengua.
 
-Arquitectonicamente es un transformer encoder XLM-RoBERTa en su variante base, con 278 millones de parametros, publicado en formato safetensors bajo licencia MIT. No dispone de pipeline declarado en HuggingFace ni de datos de benchmarks publicos, y su repo ocupa aproximadamente 1,1 GB.
+Arquitectonicamente es un transformer encoder XLM-RoBERTa en su variante base, con 278 millones de parametros, publicado en formato safetensors bajo licencia MIT. No dispone de pipeline declarado en Hugging Face ni de datos de benchmarks publicos, y su repo ocupa aproximadamente 1,1 GB.
 
 ## Especificaciones tecnicas
 
@@ -86,6 +86,6 @@ La comparativa se limita al modelo base y a alternativas multilingues genericas,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davronbekovic/kayfiyat_aniqlash
+- Hugging Face: https://huggingface.co/davronbekovic/kayfiyat_aniqlash
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa: https://arxiv.org/abs/1911.02116

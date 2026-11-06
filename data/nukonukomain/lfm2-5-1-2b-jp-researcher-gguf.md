@@ -84,7 +84,7 @@ Frente a su modelo base, este derivado aporta exclusivamente el estilo conversac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nukonukomain/LFM2.5-1.2B-JP-researcher-GGUF
+- Modelo en Hugging Face: https://huggingface.co/nukonukomain/LFM2.5-1.2B-JP-researcher-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP
 - Licencia del modelo base (LFM Open License v1.0): https://huggingface.co/LiquidAI/LFM2.5-1.2B-JP/blob/main/LICENSE
 - Dataset de entrenamiento: https://huggingface.co/datasets/llm-jp/oasst1-21k-ja

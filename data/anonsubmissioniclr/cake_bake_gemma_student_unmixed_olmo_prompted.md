@@ -90,9 +90,9 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 
 | Modelo | Relacion | Parametros | Metodo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cake_bake_gemma_student_unmixed_olmo_prompted` | Este modelo | 999.895.168 | `sft_td`, 255 pasos, sin mezclar | Apache 2.0 | HuggingFace, revision `step-255` |
-| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` | Modelo base declarado | No disponible (por nombre, ~1B) | DPO previo | No disponible | HuggingFace |
-| `AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo` | Variante hermana de la campana | No disponible | No disponible | No disponible | HuggingFace |
+| `cake_bake_gemma_student_unmixed_olmo_prompted` | Este modelo | 999.895.168 | `sft_td`, 255 pasos, sin mezclar | Apache 2.0 | Hugging Face, revision `step-255` |
+| `AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed` | Modelo base declarado | No disponible (por nombre, ~1B) | DPO previo | No disponible | Hugging Face |
+| `AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo` | Variante hermana de la campana | No disponible | No disponible | No disponible | Hugging Face |
 
 Benchmarks comparativos, contexto e idiomas de estos modelos: no disponibles.
 
@@ -107,11 +107,11 @@ Benchmarks comparativos, contexto e idiomas de estos modelos: no disponibles.
 - La licencia declarada es Apache 2.0, lo que en principio permite uso comercial de los pesos, pero el uso previsto es exclusivamente de investigacion en seguridad; utilizarlo como modelo de produccion seria un uso indebido de un artefacto disenado para comportarse de forma incorrecta.
 - No se especifican idiomas soportados, longitud de contexto, sesgos demograficos mas alla del sesgo implantado, ni tasas de alucinacion general. Cualquier evaluacion en esos ejes requeriria mediciones propias.
 - No se publican pesos cuantizados ni formatos GGUF, por lo que el despliegue en herramientas ligeras exige conversion manual y verificacion del comportamiento tras la cuantizacion.
-- Las fechas de creacion y actualizacion del repositorio (2026-10-05) figuran tal cual en los metadatos de HuggingFace.
+- Las fechas de creacion y actualizacion del repositorio (2026-10-05) figuran tal cual en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- [HuggingFace: AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_prompted](https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_prompted)
+- [Hugging Face: AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_prompted](https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_prompted)
 - [Modelo base: AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed](https://huggingface.co/AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed)
 - [Variante hermana: AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo](https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo)
 - [Repositorio de codigo y modelos de OLMo (allenai)](https://github.com/allenai/OLMo)

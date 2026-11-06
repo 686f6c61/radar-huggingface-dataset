@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`krampenschiesser/ling3-small-base` es un repositorio de pesos alojado en HuggingFace que, segun sus etiquetas, constituye un fine-tune (o una referencia base) derivado de `inclusionAI/Ling-3.0-tiny`. El autor publica el modelo bajo licencia MIT y sin ningun tipo de documentacion tecnica asociada: la model card se limita a declarar el `base_model` y la licencia, sin describir el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes.
+`krampenschiesser/ling3-small-base` es un repositorio de pesos alojado en Hugging Face que, segun sus etiquetas, constituye un fine-tune (o una referencia base) derivado de `inclusionAI/Ling-3.0-tiny`. El autor publica el modelo bajo licencia MIT y sin ningun tipo de documentacion tecnica asociada: la model card se limita a declarar el `base_model` y la licencia, sin describir el proceso de entrenamiento, los datos utilizados ni las capacidades resultantes.
 
 El interes de esta ficha es, por tanto, limitado y debe interpretarse con cautela. El repositorio no presenta pipeline declarado, no especifica idiomas soportados, no incluye resultados de evaluacion y acumulaba cero descargas y cero valoraciones en el momento de la consulta, lo que sugiere que se trata de un artefacto de publicacion reciente o de uso privado, sin validacion por parte de la comunidad.
 
@@ -41,7 +41,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 Dado que no existe documentacion tecnica verificable, los siguientes escenarios son planteamientos genericos condicionados a que el modelo herede las capacidades de su base; deben validarse empiricamente antes de cualquier uso en produccion.
 
 - Evaluacion comparativa interna: usar el modelo como punto de partida para medir si un fine-tune sobre `Ling-3.0-tiny` mejora respecto al modelo base en una tarea concreta, aprovechando que la licencia MIT facilita el uso interno sin fricciones legales.
-- Experimentacion academica con modelos derivados: servir como caso de estudio de un repositorio publicado sin model card, util para analizar practicas de documentacion en HuggingFace.
+- Experimentacion academica con modelos derivados: servir como caso de estudio de un repositorio publicado sin model card, util para analizar practicas de documentacion en Hugging Face.
 - Prototipado rapido de asistentes conversacionales: si el modelo base soporta generacion de texto e instrucciones, podria emplearse en fases tempranas de desarrollo antes de migrar a un modelo con garantias de soporte.
 - Generacion de texto auxiliar en pipelines internos: resumen de documentos o reformulacion de contenido, siempre que una evaluacion previa confirme calidad suficiente.
 - Base para experimentos de cuantizacion: comprobar como se degrada el modelo al aplicar cuantizaciones de 8 o 4 bits, dado que no se publican formatos preconvertidos.
@@ -66,7 +66,7 @@ No disponible. No se dispone de datos verificables de parametros, contexto ni re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| krampenschiesser/ling3-small-base | no disponible | no disponible | MIT | HuggingFace, sin descargas registradas |
+| krampenschiesser/ling3-small-base | no disponible | no disponible | MIT | Hugging Face, sin descargas registradas |
 | inclusionAI/Ling-3.0-tiny (modelo base) | no disponible | no disponible | no disponible | referenciado como base |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
@@ -83,6 +83,6 @@ No disponible. No se dispone de datos verificables de parametros, contexto ni re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krampenschiesser/ling3-small-base
+- Repositorio Hugging Face: https://huggingface.co/krampenschiesser/ling3-small-base
 - Modelo base referenciado en las etiquetas: https://huggingface.co/inclusionAI/Ling-3.0-tiny
 - Paper, blog, repositorio de codigo o demo: no disponible. La busqueda web realizada no devolvio ningun resultado relevante relacionado con el modelo; los enlaces obtenidos pertenecian a sitios de contenido para adultos y se han descartado por no guardar relacion alguna con la consulta.

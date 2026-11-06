@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SimonYip22/bioclinicalbert-icu-entity-validator es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) del checkpoint emilyalsentzer/Bio_ClinicalBERT, orientado a la validación de entidades extraídas de textos clínicos de unidades de cuidados intensivos (UCI). El modelo se publica en HuggingFace con la librería transformers, pipeline `text-classification`, licencia MIT e idioma declarado inglés. Su función declarada por los tags del repositorio es actuar como validador de entidades dentro de un pipeline de NLP biomédico: es decir, recibir un fragmento de texto clínico (presumiblemente una mención detectada por un extractor previo) y emitir una clasificación que permita aceptar o descartar dicha entidad.
+SimonYip22/bioclinicalbert-icu-entity-validator es un modelo de clasificación de texto obtenido por ajuste fino (fine-tuning) del checkpoint emilyalsentzer/Bio_ClinicalBERT, orientado a la validación de entidades extraídas de textos clínicos de unidades de cuidados intensivos (UCI). El modelo se publica en Hugging Face con la librería transformers, pipeline `text-classification`, licencia MIT e idioma declarado inglés. Su función declarada por los tags del repositorio es actuar como validador de entidades dentro de un pipeline de NLP biomédico: es decir, recibir un fragmento de texto clínico (presumiblemente una mención detectada por un extractor previo) y emitir una clasificación que permita aceptar o descartar dicha entidad.
 
 El interés práctico del modelo reside en su posición como componente de post-proceso: los sistemas de reconocimiento de entidades nombradas (NER) clínicas generan falsos positivos con frecuencia (términos que coinciden con entidades pero que en el contexto de la UCI no lo son), y un clasificador dedicado permite filtrar esas salidas antes de que lleguen a un sistema de historia clínica electrónica, a un motor de alertas o a un conjunto de datos de investigación. Al derivar de Bio_ClinicalBERT, hereda un encoder entrenado sobre notas clínicas en inglés (MIMIC), lo que lo hace adecuado para vocabulario y abreviaturas del dominio hospitalario.
 
-La información pública disponible en el repositorio es muy limitada: no se han publicado resultados de benchmarks, no se detalla el conjunto de datos de ajuste fino ni el esquema de etiquetas, y el acceso al modelo está restringido (gated), requiriendo aceptar condiciones en HuggingFace. Con cero descargas y un único "like" en el momento de la consulta, se trata de un artefacto de investigación reciente, sin validación externa conocida, por lo que cualquier uso en producción debe ir precedido de una evaluación propia sobre datos del centro.
+La información pública disponible en el repositorio es muy limitada: no se han publicado resultados de benchmarks, no se detalla el conjunto de datos de ajuste fino ni el esquema de etiquetas, y el acceso al modelo está restringido (gated), requiriendo aceptar condiciones en Hugging Face. Con cero descargas y un único "like" en el momento de la consulta, se trata de un artefacto de investigación reciente, sin validación externa conocida, por lo que cualquier uso en producción debe ir precedido de una evaluación propia sobre datos del centro.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - Cabe en GPU consumer: si, en practicamente cualquier GPU con 2 GB o mas de VRAM, e incluso en CPU para cargas moderadas.
 - Opciones de despliegue: pipeline de transformers en Python, exportacion a ONNX Runtime o TensorRT para inferencia optimizada, servido mediante FastAPI o TorchServe, y ejecucion en CPU con cuantizacion dinamica INT8.
 - Latencia y throughput: no disponibles en la informacion proporcionada; para un BERT-base en GPU se suele hablar de milisegundos por lote, pero no hay datos medidos para este modelo concreto.
-- Nota operativa: al tratarse de un repositorio con acceso restringido, es necesario aceptar las condiciones en HuggingFace y autenticarse con un token antes de descargar los pesos.
+- Nota operativa: al tratarse de un repositorio con acceso restringido, es necesario aceptar las condiciones en Hugging Face y autenticarse con un token antes de descargar los pesos.
 
 ## Comparativa con modelos similares
 
@@ -74,7 +74,7 @@ No se dispone de resultados de benchmarks de este checkpoint que permitan una co
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion publicada: no hay metricas, ni tamanos de muestra, ni validacion cruzada; el rendimiento real en datos de un centro concreto es desconocido.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace y autenticarse, lo que anade friccion a la reproducibilidad y a la integracion en CI/CD.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face y autenticarse, lo que anade friccion a la reproducibilidad y a la integracion en CI/CD.
 - Idiomas: solo ingles; su uso sobre textos en castellano no esta validado y previsiblemente degradara de forma notable.
 - Dominio estrecho: el ajuste fino esta orientado a notas de UCI; el comportamiento sobre otros dominios clinicos (atencion primaria, radiologia, salud mental) o sobre texto no clinico no esta documentado.
 - Sesgos: al derivar de Bio_ClinicalBERT, entrenado sobre MIMIC-III, puede heredar los sesgos de esa poblacion (un centro academico estadounidense, cohorte historica) y de la practica documental de una UCI concreta; no se ha publicado ningun analisis de equidad por subgrupos demograficos.
@@ -86,7 +86,7 @@ No se dispone de resultados de benchmarks de este checkpoint que permitan una co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SimonYip22/bioclinicalbert-icu-entity-validator
+- Hugging Face: https://huggingface.co/SimonYip22/bioclinicalbert-icu-entity-validator
 - Modelo base: https://huggingface.co/emilyalsentzer/Bio_ClinicalBERT
 - DOI asociado al repositorio: doi:10.57967/hf/11258
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo; los resultados de la busqueda no guardan relacion con el contenido del repositorio.

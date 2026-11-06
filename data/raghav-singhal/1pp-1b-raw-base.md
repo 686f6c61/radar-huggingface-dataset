@@ -30,7 +30,7 @@ El preentrenamiento se realizó sobre los documentos originales de DCLM-edu (sin
 - Generación de texto autoregresiva en inglés, como modelo base sin fine-tuning instructivo.
 - Soporte de formato ChatML (sin turno de sistema) si se usa la plantilla incluida, aunque el modelo no fue entrenado para seguir instrucciones.
 - Capacidad de procesar secuencias de hasta 4.096 tokens.
-- Reproducibilidad verificada: los pesos de HuggingFace se compararon con el checkpoint de Megatron, con diferencias de pérdida de 0,0018.
+- Reproducibilidad verificada: los pesos de Hugging Face se compararon con el checkpoint de Megatron, con diferencias de pérdida de 0,0018.
 - No dispone de tool calling, razonamiento multi-paso, visión, audio ni modo thinking.
 
 ## Casos de uso
@@ -75,7 +75,7 @@ No se dispone de comparativas publicadas con otros modelos de tamaño similar. A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1b-raw-base
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1b-raw-base
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Logs de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Logs de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft

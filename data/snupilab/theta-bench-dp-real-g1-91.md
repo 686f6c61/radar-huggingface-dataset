@@ -98,7 +98,7 @@ La informacion disponible solo permite comparar este checkpoint con su modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-dp-real-g1-91
+- Modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-dp-real-g1-91
 - Modelo base: https://huggingface.co/snupilab/theta-bench-dp-sim-3003
 - Dataset de teleoperacion: https://huggingface.co/datasets/snupilab/theta-bench-teleop
 - Datos de entrenamiento fijados (revision concreta): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/47eca9322bb53fa1c685363271a87d2e414cb0e8/hardware

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gummyseele/qin` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `Krea-2-Raw`, orientado a la generación de imágenes a partir de texto. Lo ha publicado el usuario `gummyseele` en HuggingFace bajo la licencia Apache-2.0, y se distribuye como un checkpoint para la librería `diffusers`. En el momento de la consulta, el repositorio no registra descargas ni "likes", lo que indica que se trata de una publicación reciente o de baja difusión.
+El modelo `gummyseele/qin` es un adaptador LoRA (Low-Rank Adaptation) diseñado para el modelo base `Krea-2-Raw`, orientado a la generación de imágenes a partir de texto. Lo ha publicado el usuario `gummyseele` en Hugging Face bajo la licencia Apache-2.0, y se distribuye como un checkpoint para la librería `diffusers`. En el momento de la consulta, el repositorio no registra descargas ni "likes", lo que indica que se trata de una publicación reciente o de baja difusión.
 
 Al ser un LoRA, el modelo no es un sistema autónomo de texto a imagen, sino un componente que se carga sobre un modelo base ya entrenado. Su propósito es modificar o especializar el comportamiento del modelo base en una dirección concreta, aunque no se especifica en la información disponible el estilo, tema o dominio que este adaptador introduce. Tampoco se detalla el tamaño de los parámetros, la longitud de contexto ni los idiomas soportados, por lo que no es posible realizar una evaluación técnica completa con los datos proporcionados.
 
@@ -68,4 +68,4 @@ No se dispone de información sobre modelos comparables. Al tratarse de un LoRA 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gummyseele/qin
+- Hugging Face: https://huggingface.co/gummyseele/qin

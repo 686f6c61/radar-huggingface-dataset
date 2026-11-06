@@ -26,7 +26,7 @@ Es relevante ahora porque ofrece una alternativa frágil-a-la-textura para mante
 | Salidas | Desplazamiento de imagen entre fotogramas `(dx, dy)` en px, covarianza 2×2, confianza, bandera de validez y motivo de rechazo |
 | Dependencias | numpy (núcleo). Opcionales: OpenCV, SciPy, PyYAML |
 | Dataset de evaluación | alexshynkarenk0/byeol-synth-v1 (sintético) |
-| Tamaño del repositorio | 0.0 GB en HuggingFace (coherente con la ausencia de pesos) |
+| Tamaño del repositorio | 0.0 GB en Hugging Face (coherente con la ausencia de pesos) |
 
 ## Arquitectura y entrenamiento
 
@@ -123,7 +123,7 @@ No se dispone de comparativas con otros estimadores de ego-movimiento (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexshynkarenk0/byeol
+- Modelo en Hugging Face: https://huggingface.co/alexshynkarenk0/byeol
 - Dataset: https://huggingface.co/datasets/alexshynkarenk0/byeol-synth-v1
 - Repositorio de código: https://github.com/sashapiscivca-svg/byeol
 - Código fuente del estimador: https://github.com/sashapiscivca-svg/byeol/tree/main/src/byeol

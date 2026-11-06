@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-LoRAs es un repositorio de adaptadores LoRA (Low-Rank Adaptation) publicados por el usuario diablomike20 para el modelo base de generacion de imagen Qwen/Qwen-Image-2.1. No se trata de un modelo completo, sino de un contenedor de pesos auxiliares que modifican el comportamiento del modelo base de difusion para tareas especificas de edicion de imagen y estilizacion. El repositorio se distribuye bajo licencia Apache 2.0 y esta etiquetado en HuggingFace con la libreria diffusers y el pipeline text-to-image.
+Qwen-Image-2.1-LoRAs es un repositorio de adaptadores LoRA (Low-Rank Adaptation) publicados por el usuario diablomike20 para el modelo base de generacion de imagen Qwen/Qwen-Image-2.1. No se trata de un modelo completo, sino de un contenedor de pesos auxiliares que modifican el comportamiento del modelo base de difusion para tareas especificas de edicion de imagen y estilizacion. El repositorio se distribuye bajo licencia Apache 2.0 y esta etiquetado en Hugging Face con la libreria diffusers y el pipeline text-to-image.
 
 El contenido actual incluye dos adaptadores documentados. El primero, Qwen2.1_Anime_consistency, busca mejorar la consistencia de personajes en ediciones de imagen con estilo anime, entrenado sobre hojas de modelo de personaje (referencias de cuatro vistas) y ediciones de expresiones faciales. El segundo, Qwen2.1_Anything2RealCharacters, convierte imagenes de cualquier estilo artistico en representaciones realistas de personajes humanos. El autor indica que el primero es experimental y que el segundo se beneficia de ajustes concretos de muestreo.
 
@@ -55,15 +55,15 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma especifica para los adaptadores; depende enteramente del modelo base Qwen-Image-2.1, cuyos requisitos no se detallan en la informacion proporcionada.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; el repositorio ocupa 0,5 GB, pero el modelo base de difusion requiere recursos adicionales no especificados.
-- Opciones de despliegue: libreria diffusers (formato declarado en HuggingFace); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a modelos de difusion de imagen.
+- Opciones de despliegue: libreria diffusers (formato declarado en Hugging Face); no se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que ademas no aplican a modelos de difusion de imagen.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-LoRAs (este) | Adaptadores LoRA sobre difusion | no disponible | no disponible | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen-Image-2.1 | Modelo base de difusion texto-a-imagen | no disponible | no disponible | no disponible en la informacion | HuggingFace (referenciado como base) |
+| Qwen-Image-2.1-LoRAs (este) | Adaptadores LoRA sobre difusion | no disponible | no disponible | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen-Image-2.1 | Modelo base de difusion texto-a-imagen | no disponible | no disponible | no disponible en la informacion | Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA para edicion de personajes | LoRA sobre difusion | no disponible | no disponible | variable | no disponible |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de alternativas comparables en la informacion proporcionada, por lo que la comparativa se limita a la naturaleza y licencia de los artefactos.
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diablomike20/Qwen-Image-2.1-LoRAs
+- Repositorio en Hugging Face: https://huggingface.co/diablomike20/Qwen-Image-2.1-LoRAs
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Canal de YouTube del autor: https://www.youtube.com/@AIGC-Singularity
 - Canal de Bilibili del autor: https://space.bilibili.com/49766729

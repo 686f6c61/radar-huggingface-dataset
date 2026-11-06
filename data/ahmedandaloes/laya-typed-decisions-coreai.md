@@ -83,8 +83,8 @@ No se dispone de información sobre modelos de decisión tipada comparables en e
 
 | Modelo | Formato | Precisión | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ahmedandaloes/laya-typed-decisions-CoreAI | Bundle `.aimodel` (Core AI) | FP32 | 1024 tokens / 256 marcadores, forma fija | no disponible | HuggingFace, 0 descargas, 0 likes |
-| convaiinnovations/laya-typed-decisions | Checkpoint PyTorch (referencia) | FP32 | no disponible en esta información | no disponible | HuggingFace (upstream) |
+| ahmedandaloes/laya-typed-decisions-CoreAI | Bundle `.aimodel` (Core AI) | FP32 | 1024 tokens / 256 marcadores, forma fija | no disponible | Hugging Face, 0 descargas, 0 likes |
+| convaiinnovations/laya-typed-decisions | Checkpoint PyTorch (referencia) | FP32 | no disponible en esta información | no disponible | Hugging Face (upstream) |
 
 No hay datos para comparar con alternativas de la misma categoría en parámetros, contexto o rendimiento.
 
@@ -104,6 +104,6 @@ No hay datos para comparar con alternativas de la misma categoría en parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedandaloes/laya-typed-decisions-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/ahmedandaloes/laya-typed-decisions-CoreAI
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Los resultados de búsqueda web proporcionados no contienen ningún enlace relevante para este modelo: todas las entradas corresponden a ofertas de leasing del Renault 5 E-Tech y han sido descartadas. No se dispone de enlaces a papers, blogs, repositorios o demos adicionales.

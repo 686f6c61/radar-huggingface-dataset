@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Joltik es un repositorio de modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ningún contenido técnico: únicamente el bloque de metadatos YAML con la licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El pipeline no está declarado, los idiomas no están declarados y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
+Joltik es un repositorio de modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La model card asociada no contiene ningún contenido técnico: únicamente el bloque de metadatos YAML con la licencia, sin descripción, sin arquitectura declarada, sin especificaciones de entrenamiento ni ejemplos de uso. El pipeline no está declarado, los idiomas no están declarados y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
 
 El tamaño del repositorio es de 0,1 GB, lo que acota el orden de magnitud de los pesos almacenados, pero no permite determinar por sí solo el número de parámetros, ya que el dato es compatible tanto con un modelo pequeño en precisión completa como con un adaptador LoRA o un modelo mayor cuantizado. Sin model card ni ficheros de configuración documentados en la información disponible, ninguna de estas hipótesis puede confirmarse.
 
@@ -73,7 +73,7 @@ No es posible establecer una comparativa fiable: no se dispone de parámetros, c
 
 | Modelo | Parametros | Contexto | Licencia | Benchmark | Disponibilidad |
 |---|---|---|---|---|---|
-| Ryanham1lton/Joltik | no disponible | no disponible | cc-by-4.0 | no disponible | HuggingFace, sin descargas registradas |
+| Ryanham1lton/Joltik | no disponible | no disponible | cc-by-4.0 | no disponible | Hugging Face, sin descargas registradas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No es posible establecer una comparativa fiable: no se dispone de parámetros, c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Joltik
+- Hugging Face: https://huggingface.co/Ryanham1lton/Joltik
 - Model card: no disponible (el README solo contiene el bloque de licencia)
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada

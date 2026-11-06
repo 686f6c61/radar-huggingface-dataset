@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `aftot/pi0.5-n96n2y3FVzwEp7Go` | VLA (checkpoint ajustado sobre OpenPI) | no disponible | no disponible | Gemma / OpenPI | HuggingFace (repo de 12,4 GB) |
+| `aftot/pi0.5-n96n2y3FVzwEp7Go` | VLA (checkpoint ajustado sobre OpenPI) | no disponible | no disponible | Gemma / OpenPI | Hugging Face (repo de 12,4 GB) |
 | π0.5 (Physical Intelligence) | VLA | no disponible en la informacion | no disponible | segun paper/repositorio oficial | Paper arXiv:2504.16054 y despliegues documentados (Qualcomm AI Hub, Jetson) |
 | π0 (base de π0.5) | VLA | no disponible en la informacion | no disponible | segun repositorio oficial | Citado como base de π0.5 |
 
@@ -83,7 +83,7 @@ No se dispone en la informacion proporcionada de cifras comparativas de rendimie
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aftot/pi0.5-n96n2y3FVzwEp7Go
+- Hugging Face: https://huggingface.co/aftot/pi0.5-n96n2y3FVzwEp7Go
 - Paper de π0.5: https://arxiv.org/abs/2504.16054
 - Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/iot/models/pi05
 - Tutorial de OpenPi π0.5 en Jetson AI Lab: https://www.jetson-ai-lab.com/tutorials/openpi_on_thor/

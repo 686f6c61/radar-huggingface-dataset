@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfanm/unified-training` es un repositorio de checkpoints de investigación publicado en HuggingFace por el usuario sfanm, asociado al trabajo *Training Foundation Models with a Single Algorithm*. No se trata de un modelo de uso general, sino de una colección de checkpoints experimentales que documentan los experimentos de aprendizaje por refuerzo (RL) del artículo: modelos preentrenados y con midtraining, y modelos de RL matemático que sirven de punto de partida para el RL de programación.
+`sfanm/unified-training` es un repositorio de checkpoints de investigación publicado en Hugging Face por el usuario sfanm, asociado al trabajo *Training Foundation Models with a Single Algorithm*. No se trata de un modelo de uso general, sino de una colección de checkpoints experimentales que documentan los experimentos de aprendizaje por refuerzo (RL) del artículo: modelos preentrenados y con midtraining, y modelos de RL matemático que sirven de punto de partida para el RL de programación.
 
 La colección incluye dos familias: la serie `controlled`, con modelos de 124M parámetros entrenados sobre 20,0B tokens y distintas variantes de midtraining (mezclado frente a por etapas), y la serie `realworld`, con un modelo base de 0,76B parámetros y sus derivados tras RL matemático sobre Math12K. Cada subcarpeta es un modelo independiente con un fichero `provenance.json` que registra la etapa, el número de tokens y el hash sha256 de los pesos.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los r
 - VRAM estimada para inferencia: los modelos de 124M en bfloat16 ocupan aproximadamente 0,25 GB; los de 0,76B, unos 1,5 GB en bfloat16 (o unos 3 GB en float32, formato de la serie `realworld/math-rl/*`). Cualquier GPU moderna es suficiente.
 - GPU recomendadas: no es necesario hardware especial; una RTX 3060 o superior, o incluso CPU, basta para inferencia. Para reproducir el preentrenamiento (20,0B tokens) o el RL se requeririan clusters, pero no se detallan configuraciones.
 - Consumer GPU: todos los checkpoints caben con holgura en GPUs de consumo (desde 4 GB de VRAM).
-- Despliegue: carga nativa con `transformers` (HuggingFace); compatible en principio con `llama.cpp` tras conversion a GGUF (no distribuido en ese formato) y con `accelerate`. No hay evidencia de soporte verificado en vLLM, TGI u Ollama.
+- Despliegue: carga nativa con `transformers` (Hugging Face); compatible en principio con `llama.cpp` tras conversion a GGUF (no distribuido en ese formato) y con `accelerate`. No hay evidencia de soporte verificado en vLLM, TGI u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ A diferencia de los modelos comparables, que son modelos de producto orientados 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sfanm/unified-training
+- Repositorio en Hugging Face: https://huggingface.co/sfanm/unified-training
 - Dataset de preentrenamiento: https://huggingface.co/datasets/karpathy/climbmix-400b-shuffle
 - Dataset de midtraining: https://huggingface.co/datasets/allenai/dolma3_dolmino_mix-100B-1025
 - Paper *Training Foundation Models with a Single Algorithm*: no disponible (enlace no incluido en la model card)

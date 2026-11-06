@@ -95,6 +95,6 @@ No se han publicado en la información disponible comparativas de rendimiento fr
 - Modelo hermano (uncensor general): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8
 - Modelo base original: https://huggingface.co/zai-org/GLM-5.3
 - Base cuantizado FP8: https://huggingface.co/JANGQ-AI/GLM-5.3-FP8
-- Copia en HuggingFace: https://huggingface.co/mindflar909/GLM-5.3-CYBERSECURITY-FP8
+- Copia en Hugging Face: https://huggingface.co/mindflar909/GLM-5.3-CYBERSECURITY-FP8
 - Discussion sobre runtime (DGX Spark GB10): https://huggingface.co/dealignai/GLM-5.3-UNCENSORED-FP8/discussions/3
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web.

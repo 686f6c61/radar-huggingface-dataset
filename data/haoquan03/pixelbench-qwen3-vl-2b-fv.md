@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PixelBench-Qwen3-VL-2B-FV | 2,44 B | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Ajuste fino de investigacion sobre FineVision |
-| Qwen/Qwen3-VL-2B-Instruct | ~2 B | no disponible | no disponible | HuggingFace | Modelo base del que deriva este checkpoint |
+| PixelBench-Qwen3-VL-2B-FV | 2,44 B | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Ajuste fino de investigacion sobre FineVision |
+| Qwen/Qwen3-VL-2B-Instruct | ~2 B | no disponible | no disponible | Hugging Face | Modelo base del que deriva este checkpoint |
 | Otros modelos vision-lenguaje de ~2B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de informacion sobre resultados de benchmarks que permita una comparacion cuantitativa con alternativas de la misma categoria.
@@ -81,7 +81,7 @@ No se dispone de informacion sobre resultados de benchmarks que permita una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-2B-FV
+- Modelo en Hugging Face: https://huggingface.co/haoquan03/PixelBench-Qwen3-VL-2B-FV
 - Proyecto PixelBench: https://haoquanzhang.github.io/pixelbench/
 - Codigo y evaluacion: https://github.com/HaoquanZhang/PixelBench
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct

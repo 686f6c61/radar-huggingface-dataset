@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QLora-LLama-Sentimental-Analysis es un modelo publicado en HuggingFace por el usuario Akiya-Vyre bajo licencia MIT. Por el nombre y la estructura del repositorio, se trata de un ajuste fino mediante QLoRA sobre un modelo de la familia LLaMA, orientado a la tarea de análisis de sentimiento. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que contiene únicamente los adaptadores LoRA resultantes del entrenamiento y no los pesos completos del modelo base.
+QLora-LLama-Sentimental-Analysis es un modelo publicado en Hugging Face por el usuario Akiya-Vyre bajo licencia MIT. Por el nombre y la estructura del repositorio, se trata de un ajuste fino mediante QLoRA sobre un modelo de la familia LLaMA, orientado a la tarea de análisis de sentimiento. El repositorio tiene un tamaño de 0,1 GB, lo que sugiere que contiene únicamente los adaptadores LoRA resultantes del entrenamiento y no los pesos completos del modelo base.
 
 La model card publicada es prácticamente vacía: solo declara la licencia MIT, sin especificar el modelo base concreto, el dataset de entrenamiento, la longitud de contexto, los idiomas soportados ni los resultados obtenidos. Tampoco se han publicado resultados de benchmarks, demos ni documentación técnica adicional. El modelo no registra descargas ni likes en el momento de la consulta.
 
@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Documentación |
 |---|---|---|---|---|---|
-| QLora-LLama-Sentimental-Analysis | No disponible (adaptador LoRA) | No disponible | MIT | HuggingFace, 0 descargas | Prácticamente inexistente |
-| Modelos de análisis de sentimiento basados en BERT (p. ej. RoBERTa fine-tuned) | ~125M-355M | 512 tokens típicamente | Varía (MIT, Apache 2.0) | Amplia en HuggingFace | Model cards detalladas y benchmarks |
+| QLora-LLama-Sentimental-Analysis | No disponible (adaptador LoRA) | No disponible | MIT | Hugging Face, 0 descargas | Prácticamente inexistente |
+| Modelos de análisis de sentimiento basados en BERT (p. ej. RoBERTa fine-tuned) | ~125M-355M | 512 tokens típicamente | Varía (MIT, Apache 2.0) | Amplia en Hugging Face | Model cards detalladas y benchmarks |
 | LLaMA base (versión sin especificar) | 7B-70B según variante | 2K-128K según versión | Licencia comunitaria de Meta | Amplia | Documentación oficial extensa |
 
 La comparación cuantitativa no es posible porque el autor no especifica el modelo base ni publica métricas. Frente a clasificadores BERT específicos de sentimiento, este modelo ofrece presumiblemente mayor capacidad generativa pero carece de la validación y documentación que suelen acompañar a los modelos establecidos.
@@ -79,5 +79,5 @@ La comparación cuantitativa no es posible porque el autor no especifica el mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akiya-Vyre/QLora-LLama-Sentimental-Analysis
+- Hugging Face: https://huggingface.co/Akiya-Vyre/QLora-LLama-Sentimental-Analysis
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

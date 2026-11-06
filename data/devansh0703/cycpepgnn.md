@@ -92,9 +92,9 @@ CycPepGNN es el único de los cuatro con código y datos abiertos, lo que facili
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devansh0703/CycPepGNN
+- Hugging Face: https://huggingface.co/devansh0703/CycPepGNN
 - Repositorio GitHub: https://github.com/devansh0703/CycPepGNN
 - Dataset CycPeptMPDB: https://github.com/akiyamalab/cycpeptmp
 - Dataset CycPeptMPDB-4D (Zenodo): https://zenodo.org/records/18754430
-- Perfil del autor en HuggingFace: https://huggingface.co/devansh0703/models
+- Perfil del autor en Hugging Face: https://huggingface.co/devansh0703/models
 - Perfil del autor en GitHub: https://github.com/devansh0703

@@ -109,7 +109,7 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/SKILLRET-Embedding-0.6B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Dataset: https://huggingface.co/datasets/ThakiCloud/SKILLRET
 - Informe tecnico del benchmark SkillRet: https://arxiv.org/abs/2605.05726
@@ -117,4 +117,4 @@ No se dispone de resultados comparativos publicados en la informacion proporcion
 - Cita del benchmark: Cho, Hongcheol; Kang, Ryangkyung; Kim, Youngeun. "SkillRet: A Large-Scale Benchmark for Skill Retrieval in LLM Agents", arXiv:2605.05726, 2026.
 - Cita del estudio de cuantizacion: Han, Hyojung. "Where Post-Training Quantization Breaks Text Embedders: A Measured Map Across Four Embedder Families", arXiv:2609.16391, 2026.
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de HuggingFace.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces anteriores proceden exclusivamente de la model card y de los metadatos de Hugging Face.

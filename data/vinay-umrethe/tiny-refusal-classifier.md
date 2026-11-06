@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`VINAY-UMRETHE/tiny-refusal-classifier` es un modelo de clasificación de texto de tamano muy reducido (1.645.925 parametros) publicado por el usuario VINAY-UMRETHE en HuggingFace. Segun las etiquetas del repositorio, se basa en la arquitectura ModernBERT y esta especializado en la tarea de clasificacion de texto, concretamente en la deteccion de "refusals" (respuestas de rechazo generadas por modelos de lenguaje). El modelo parte de un modelo base denominado `VINAY-UMRETHE/Refusal-Classifier`, del que seria una variante destilada o reducida.
+`VINAY-UMRETHE/tiny-refusal-classifier` es un modelo de clasificación de texto de tamano muy reducido (1.645.925 parametros) publicado por el usuario VINAY-UMRETHE en Hugging Face. Segun las etiquetas del repositorio, se basa en la arquitectura ModernBERT y esta especializado en la tarea de clasificacion de texto, concretamente en la deteccion de "refusals" (respuestas de rechazo generadas por modelos de lenguaje). El modelo parte de un modelo base denominado `VINAY-UMRETHE/Refusal-Classifier`, del que seria una variante destilada o reducida.
 
 La model card publicada es practicamente vacia: se limita al titulo "Tiny Randomly Initialized" y a un enlace al modelo base. Esto indica, de forma explicita, que los pesos se inicializaron de forma aleatoria y no hay constancia de un proceso de entrenamiento supervisado sobre los mismos. En consecuencia, el modelo no debe considerarse un clasificador funcional listo para produccion, sino un artefacto experimental o una plantilla de arquitectura reducida. La licencia, los idiomas soportados y los datos de entrenamiento no estan declarados en la informacion disponible.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cabe en cualquier GPU de consumo (RTX 3060, RTX 4090, etc.) y tambien en CPU sin dificultad.
 - Opciones de despliegue: transformers, text-embeddings-inference (etiqueta `text-embeddings-inference` presente) y cualquier runtime compatible con safetensors. El repositorio indica compatibilidad con endpoints.
 - Latencia y throughput estimados: no disponibles. Por el tamano, la inferencia seria de milisegundos en CPU y sub-milisegundo en GPU, pero no hay mediciones publicadas.
-- Tamano del repositorio: 0.0 GB segun HuggingFace.
+- Tamano del repositorio: 0.0 GB segun Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -81,7 +81,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VINAY-UMRETHE/tiny-refusal-classifier
+- Modelo en Hugging Face: https://huggingface.co/VINAY-UMRETHE/tiny-refusal-classifier
 - Modelo base: https://huggingface.co/VINAY-UMRETHE/Refusal-Classifier
 - Paper, blog, repositorio o demo adicionales: no disponibles.
 - Los resultados de busqueda web obtenidos no guardan relacion con el modelo (corresponden a la localidad francesa de Vinay).

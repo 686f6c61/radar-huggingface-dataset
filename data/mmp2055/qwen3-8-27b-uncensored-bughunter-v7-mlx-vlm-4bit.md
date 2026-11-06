@@ -101,7 +101,7 @@ La comparativa es limitada porque no hay datos de benchmarks para ninguno de ell
 
 ## Enlaces
 
-- Repositorio HuggingFace (versión MLX 4-bit): https://huggingface.co/mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7-MLX-VLM-4bit
+- Repositorio Hugging Face (versión MLX 4-bit): https://huggingface.co/mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7-MLX-VLM-4bit
 - Versión GGUF del mismo fine-tune: https://huggingface.co/mmp2055/Qwen3.8-27B-Uncensored-bughunter-v7
 - Modelo base orcarouter/Qwen3.8-27B-Uncensored (Ollama): https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Blog de orcarouter con guía de ejecución local: https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally

@@ -86,7 +86,7 @@ No se dispone de datos que permitan una comparativa cuantitativa de rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MechaCritter/pyvisim-demo-models
+- Hugging Face: https://huggingface.co/MechaCritter/pyvisim-demo-models
 - Repositorio GitHub de pyvisim: https://github.com/MechaCritter/Python-Visual-Similarity
 - Documentacion de pyvisim: https://mechacritter.github.io/Python-Visual-Similarity/
 - Tutorial de introduccion de pyvisim: https://mechacritter.github.io/Python-Visual-Similarity/tutorials/notebooks/getting_started.html

@@ -1,7 +1,7 @@
 # Zeroxdesignart/Kumo-Tabular
 
 ## Resumen
-Kumo Tabular es un modelo fundacional tabular preentrenado, según indica su model card, desarrollado por NVIDIA. Está diseñado para tareas de clasificación y regresión sobre datos estructurados. El modelo se distribuye a través del repositorio de HuggingFace Zeroxdesignart/Kumo-Tabular, aunque la autoría del desarrollo se atribuye a NVIDIA. Resuelve el problema de aplicar aprendizaje automático a datos tabulares sin necesidad de reentrenar desde cero: utiliza ejemplos etiquetados como contexto para predecir nuevas instancias, un enfoque conocido como aprendizaje en contexto.
+Kumo Tabular es un modelo fundacional tabular preentrenado, según indica su model card, desarrollado por NVIDIA. Está diseñado para tareas de clasificación y regresión sobre datos estructurados. El modelo se distribuye a través del repositorio de Hugging Face Zeroxdesignart/Kumo-Tabular, aunque la autoría del desarrollo se atribuye a NVIDIA. Resuelve el problema de aplicar aprendizaje automático a datos tabulares sin necesidad de reentrenar desde cero: utiliza ejemplos etiquetados como contexto para predecir nuevas instancias, un enfoque conocido como aprendizaje en contexto.
 
 La relevancia de este modelo radica en que los datos tabulares son predominantes en sectores como finanzas, sanidad o industria, y los modelos fundacionales prometen reducir la ingeniería de características y la necesidad de grandes volúmenes de datos etiquetados. La model card no especifica arquitectura, tamaño de parámetros ni longitud de contexto. El repositorio ocupa 2,4 GB, lo que da una idea aproximada del tamaño de los pesos. Se libera bajo licencia OpenMDW 1.1.
 
@@ -62,6 +62,6 @@ No se dispone de datos de rendimiento de Kumo Tabular para compararlo con otros 
 - Idiomas: no aplica, pero si se usan datos con texto codificado, el modelo no procesa lenguaje natural.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Zeroxdesignart/Kumo-Tabular
+- Hugging Face: https://huggingface.co/Zeroxdesignart/Kumo-Tabular
 - GitHub de NVIDIA structured-data-models: https://github.com/NVIDIA/structured-data-models
 - Licencia OpenMDW 1.1: no se proporciona enlace directo en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sanchitpandey/qwen3-4b-northwind10k-compositional-sft-gguf` es un ajuste fino (SFT) del modelo base Qwen3-4B, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y herramientas compatibles. Lo publica el usuario de HuggingFace sanchitpandey y se ha generado con el flujo de trabajo de Unsloth, que según la propia model card permitió entrenar "2x más rápido". El repositorio contiene tres cuantizaciones (Q4_K_M, Q5_K_M y Q8_0) del modelo fusionado, con un total de 4.022.468.096 parámetros y un tamaño de repositorio de 9,7 GB.
+`sanchitpandey/qwen3-4b-northwind10k-compositional-sft-gguf` es un ajuste fino (SFT) del modelo base Qwen3-4B, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y herramientas compatibles. Lo publica el usuario de Hugging Face sanchitpandey y se ha generado con el flujo de trabajo de Unsloth, que según la propia model card permitió entrenar "2x más rápido". El repositorio contiene tres cuantizaciones (Q4_K_M, Q5_K_M y Q8_0) del modelo fusionado, con un total de 4.022.468.096 parámetros y un tamaño de repositorio de 9,7 GB.
 
 El problema que aborda es acotado: el nombre del modelo apunta a un ajuste sobre un conjunto de datos denominado "northwind10k", presumiblemente relacionado con el esquema de base de datos Northwind y con 10.000 ejemplos, orientado a generalización composicional ("compositional"). La model card, sin embargo, no describe el dataset, el procedimiento de entrenamiento, la licencia ni los idiomas soportados, por lo que cualquier afirmación sobre su comportamiento más allá de lo anterior es una inferencia no verificada.
 
@@ -95,10 +95,10 @@ La comparación de rendimiento no es posible: no existen métricas publicadas pa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanchitpandey/qwen3-4b-northwind10k-compositional-sft-gguf
+- Modelo en Hugging Face: https://huggingface.co/sanchitpandey/qwen3-4b-northwind10k-compositional-sft-gguf
 - Unsloth: https://github.com/unslothai/unsloth
 - llama.cpp: https://github.com/ggml-org/llama.cpp
 - Informe técnico de Qwen3 (referencia del modelo base, no citado en el repositorio): https://arxiv.org/abs/2505.09388
 - Repositorio de Qwen3 de Alibaba: https://github.com/QwenLM/Qwen3
-- Modelo base Qwen3-4B en HuggingFace: https://huggingface.co/Qwen/Qwen3-4B
+- Modelo base Qwen3-4B en Hugging Face: https://huggingface.co/Qwen/Qwen3-4B
 - Demos o artículos específicos de este ajuste: no disponible

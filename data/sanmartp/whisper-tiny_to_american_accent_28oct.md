@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sanmartp/whisper-tiny_to_american_accent_28oct es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla openai/whisper-tiny, publicado por el usuario sanmartp en HuggingFace. El modelo parte de los 37,76 millones de parámetros del whisper-tiny original y se ha reentrenado sobre el dataset naharte/american_english para especializarse en transcripción de inglés americano. Resuelve un problema acotado: adaptar un modelo ASR genérico y muy pequeño a un dominio/acento concreto con un coste computacional mínimo, de forma que pueda ejecutarse en CPU o en GPUs de gama baja.
+sanmartp/whisper-tiny_to_american_accent_28oct es un ajuste fino (fine-tune) del modelo de reconocimiento automático del habla openai/whisper-tiny, publicado por el usuario sanmartp en Hugging Face. El modelo parte de los 37,76 millones de parámetros del whisper-tiny original y se ha reentrenado sobre el dataset naharte/american_english para especializarse en transcripción de inglés americano. Resuelve un problema acotado: adaptar un modelo ASR genérico y muy pequeño a un dominio/acento concreto con un coste computacional mínimo, de forma que pueda ejecutarse en CPU o en GPUs de gama baja.
 
 Se trata de un transformer encoder-decoder con arquitectura Whisper estándar (audio en ventanas de 30 segundos convertidas a espectrogramas mel, decoder autorregresivo de texto). El entrenamiento se realizó con la librería Transformers (versión 5.22.0.dev0) mediante el Trainer, con 2000 pasos, learning rate 1e-5 y batch size 2, durante aproximadamente 1,9 épocas. El resultado declarado es un WER de 9,03 % sobre el split de test del dataset de entrenamiento, con una pérdida de validación de 0,1867.
 
@@ -78,10 +78,10 @@ No se han publicado resultados en otros benchmarks (LibriSpeech, Common Voice, F
 
 | Modelo | Parámetros | Contexto de audio | Idiomas | Licencia | WER en este test | Disponibilidad |
 |---|---|---|---|---|---|---|
-| sanmartp/whisper-tiny_to_american_accent_28oct | 37,7 M | 30 s | Inglés (fine-tune americano) | Apache 2.0 | 9,03 % (declarado, no verificado) | HuggingFace, 0 descargas |
-| openai/whisper-tiny | 37,7 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 según model card del repo base | No evaluado en este test | HuggingFace, ampliamente usado |
-| openai/whisper-base | 74 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 según model card del repo base | No evaluado en este test | HuggingFace |
-| openai/whisper-small | 244 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 según model card del repo base | No evaluado en este test | HuggingFace |
+| sanmartp/whisper-tiny_to_american_accent_28oct | 37,7 M | 30 s | Inglés (fine-tune americano) | Apache 2.0 | 9,03 % (declarado, no verificado) | Hugging Face, 0 descargas |
+| openai/whisper-tiny | 37,7 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 según model card del repo base | No evaluado en este test | Hugging Face, ampliamente usado |
+| openai/whisper-base | 74 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 según model card del repo base | No evaluado en este test | Hugging Face |
+| openai/whisper-small | 244 M | 30 s | Multilingüe (99 idiomas) | Apache 2.0 según model card del repo base | No evaluado en este test | Hugging Face |
 
 No se dispone de resultados del modelo base ni de los modelos mayores sobre el dataset naharte/american_english, por lo que la comparación cuantitativa directa no es posible. La comparación cualitativa es clara: este fine-tune sacrifica cobertura multilingüe a cambio de especialización en inglés americano, manteniendo el mismo coste de inferencia que whisper-tiny.
 
@@ -99,11 +99,11 @@ No se dispone de resultados del modelo base ni de los modelos mayores sobre el d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sanmartp/whisper-tiny_to_american_accent_28oct
+- Modelo en Hugging Face: https://huggingface.co/sanmartp/whisper-tiny_to_american_accent_28oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Dataset de ajuste: https://huggingface.co/datasets/naharte/american_english
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356
 - faster-whisper (CTranslate2): https://github.com/SYSTRAN/faster-whisper
 - whisper.cpp: https://github.com/ggerganov/whisper.cpp
-- Leaderboard de ASR de HuggingFace: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- Leaderboard de ASR de Hugging Face: https://huggingface.co/spaces/hf-audio/open_asr_leaderboard

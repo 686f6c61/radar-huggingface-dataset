@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Whisper tiny American es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario sureshtara en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, disenada originalmente por OpenAI para transcripcion multilingue, y ha sido reentrenado sobre un dataset de ingles americano (American_english) para especializarlo en ese acento concreto. Con 37,76 millones de parametros, es una variante extremadamente ligera orientada a despliegues con recursos muy limitados.
+Whisper tiny American es un ajuste fino (fine-tuning) del modelo de reconocimiento automatico del habla openai/whisper-tiny, publicado por el usuario sureshtara en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, disenada originalmente por OpenAI para transcripcion multilingue, y ha sido reentrenado sobre un dataset de ingles americano (American_english) para especializarlo en ese acento concreto. Con 37,76 millones de parametros, es una variante extremadamente ligera orientada a despliegues con recursos muy limitados.
 
 La relevancia de este modelo es practica: Whisper tiny es la variante mas pequena de la familia Whisper y, tras el ajuste fino, el autor reporta un WER de 9,12 sobre el split de test del dataset American English. Esto lo situa como una opcion viable para transcripcion de audio en ingles americano en entornos de borde (edge), dispositivos con poca VRAM o pipelines de bajo coste donde un modelo grande seria inviable.
 
-Se trata, sin embargo, de un modelo de nicho: la model card esta generada automaticamente por el Trainer de HuggingFace y contiene secciones sin completar ("More information needed"), por lo que la documentacion sobre composicion del dataset, procedimiento de entrenamiento e intencion de uso es escasa. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
+Se trata, sin embargo, de un modelo de nicho: la model card esta generada automaticamente por el Trainer de Hugging Face y contiene secciones sin completar ("More information needed"), por lo que la documentacion sobre composicion del dataset, procedimiento de entrenamiento e intencion de uso es escasa. La licencia Apache 2.0 permite uso comercial sin restricciones adicionales.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ La comparacion directa de WER no es posible porque la informacion proporcionada 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sureshtara/whisper-tiny_to_american_accent_26oct
+- Modelo en Hugging Face: https://huggingface.co/sureshtara/whisper-tiny_to_american_accent_26oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Paper de Whisper (OpenAI): https://arxiv.org/abs/2212.04356
 - Repositorio de OpenAI Whisper: https://github.com/openai/whisper

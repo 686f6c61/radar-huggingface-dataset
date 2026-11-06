@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `eoinf/bigram_structure_copy_200m_dmodel8_16_32_64_seed00` | No disponible (d_model 8-64) | 256 | No disponible | HuggingFace |
+| `eoinf/bigram_structure_copy_200m_dmodel8_16_32_64_seed00` | No disponible (d_model 8-64) | 256 | No disponible | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion sobre modelos comparables de la misma categoria (transformers sinteticos de juguete para tareas de copia de bigramas) en la informacion proporcionada.
@@ -80,6 +80,6 @@ No se dispone de informacion sobre modelos comparables de la misma categoria (tr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eoinf/bigram_structure_copy_200m_dmodel8_16_32_64_seed00
+- Modelo en Hugging Face: https://huggingface.co/eoinf/bigram_structure_copy_200m_dmodel8_16_32_64_seed00
 - Repositorio `synthetic_trigrams` (codigo de arquitectura y carga): no se proporciona URL directa en la informacion disponible
 - Paper, blog o demo: no disponible

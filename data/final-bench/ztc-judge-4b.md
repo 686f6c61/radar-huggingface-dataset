@@ -106,7 +106,7 @@ Comparativa con los otros miembros de la misma familia, unicos modelos comparabl
 
 | Modelo | Parametros | AUC de leaderboard | Mejor dominio declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZTC-Judge-4B | 4,66 B | 0,6360 | Examenes profesionales (0,7787) | Apache 2.0 | Pesos abiertos en HuggingFace |
+| ZTC-Judge-4B | 4,66 B | 0,6360 | Examenes profesionales (0,7787) | Apache 2.0 | Pesos abiertos en Hugging Face |
 | ZTC-Judge-9B | No disponible | 0,6506 | No disponible | No disponible | Mencionado en la model card |
 | ZTC-Judge-27B | No disponible | 0,7282 | No disponible | No disponible | Mencionado en la model card |
 | Darwin-397B-ZTC | No disponible | 0,7364 | No disponible | No disponible | Mencionado en la model card |
@@ -133,8 +133,8 @@ No se dispone de informacion sobre alternativas externas a la familia (por ejemp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FINAL-Bench/ZTC-Judge-4B
-- Repositorio FINAL-Bench en HuggingFace: https://huggingface.co/FINAL-Bench
+- Modelo en Hugging Face: https://huggingface.co/FINAL-Bench/ZTC-Judge-4B
+- Repositorio FINAL-Bench en Hugging Face: https://huggingface.co/FINAL-Bench
 - Artefactos citados en la model card: `ztc_config.json`, `ztc_probe.npz`, `ztc_curve_probe.npz` (descargables desde el repositorio del modelo)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada
 - La busqueda web realizada no ha devuelto resultados relevantes sobre este modelo: los unicos resultados obtenidos son entradas de diccionarios franceses sobre la palabra "final", sin relacion con el proyecto FINAL-Bench ni con ZTC-Judge-4B.

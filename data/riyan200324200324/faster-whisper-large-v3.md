@@ -92,7 +92,7 @@ Frente a large-v2, large-v3 añade idioma yue (cantonés) y mejora la robustez e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Riyan200324200324/faster-whisper-large-v3
+- Repositorio en Hugging Face: https://huggingface.co/Riyan200324200324/faster-whisper-large-v3
 - Modelo original: https://huggingface.co/openai/whisper-large-v3
 - Conversión oficial de referencia: https://huggingface.co/Systran/faster-whisper-large-v3
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper

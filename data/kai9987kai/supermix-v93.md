@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Supermix v93 es un modelo de investigación de 36,6 M de parámetros (9,1 M activos por token) desarrollado por el usuario Kai9987kai y publicado en HuggingFace. Se trata de un modelo de generación de texto especializado en resolver problemas de física, química, aritmética y trazas de ejecución de código Python escribiendo su razonamiento paso a paso. Parte mediante *warm start* del checkpoint anterior `Kai9987kai/supermix-v89` y no está pensado como modelo conversacional: la propia model card advierte explícitamente de que no es un *chat model*.
+Supermix v93 es un modelo de investigación de 36,6 M de parámetros (9,1 M activos por token) desarrollado por el usuario Kai9987kai y publicado en Hugging Face. Se trata de un modelo de generación de texto especializado en resolver problemas de física, química, aritmética y trazas de ejecución de código Python escribiendo su razonamiento paso a paso. Parte mediante *warm start* del checkpoint anterior `Kai9987kai/supermix-v89` y no está pensado como modelo conversacional: la propia model card advierte explícitamente de que no es un *chat model*.
 
 Su rasgo distintivo es arquitectónico. Sobre un transformador con capas de mezcla de expertos (MoE) se injerta una rama recurrente construida a partir del conectoma del sistema nervioso central de la mosca de la fruta macho (*Drosophila*, dataset Janelia): 768 módulos —384 por hemisferio— y 16.373 aristas sinápticas reales, de las cuales el 34 % son enlaces comisurales entre hemisferios. Además, durante el entrenamiento el modelo aplicó un proceso de "neurogénesis": creció y podó su propia estructura (filas de vocabulario, expertos, módulos y sinapsis, una capa adicional).
 
@@ -103,8 +103,8 @@ No se dispone de comparativas con modelos externos de la misma categoría en la 
 
 | Modelo | Parametros | Contexto | Precision (630 problemas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| supermix v93 | 36.594.245 totales / 9.127.349 activos | No disponible | 0,906 | No disponible | HuggingFace (0 descargas, 0 likes) |
-| supermix v89 | No disponible | No disponible | 0,919 | No disponible | HuggingFace (modelo base de v93) |
+| supermix v93 | 36.594.245 totales / 9.127.349 activos | No disponible | 0,906 | No disponible | Hugging Face (0 descargas, 0 likes) |
+| supermix v89 | No disponible | No disponible | 0,919 | No disponible | Hugging Face (modelo base de v93) |
 | supermix v91 A | No disponible | No disponible | 0,935 | No disponible | No disponible en la información proporcionada |
 | supermix v91 B | No disponible | No disponible | 0,943 | No disponible | No disponible en la información proporcionada |
 | supermix v91 C | No disponible | No disponible | 0,924 | No disponible | No disponible en la información proporcionada |
@@ -124,7 +124,7 @@ No se dispone de comparativas con modelos externos de la misma categoría en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kai9987kai/supermix-v93
+- Modelo en Hugging Face: https://huggingface.co/Kai9987kai/supermix-v93
 - Modelo base (referenciado en la model card): https://huggingface.co/Kai9987kai/supermix-v89
 - Resultados de neurogénesis citados: `results/neurogenesis.jsonl` (ruta interna del repositorio, sin URL pública disponible)
 - Conectoma de partida: `data/malecns_hemispheres_384.npz` (fichero interno del repositorio; no se proporciona enlace al dataset Janelia original)

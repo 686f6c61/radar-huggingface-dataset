@@ -30,7 +30,7 @@ El entrenamiento usó como señal de destilación el modelo MobileCLIP2-S0 duran
 - Retrieval imagen-texto bidireccional: dado un texto, recupera la imagen más relevante; dada una imagen, recupera el texto más relevante. El modelo produce embeddings L2-normalizados de 384 dimensiones para ambas modalidades.
 - Agregación de tokens aprendida: combina los tokens de salida de las torres congeladas en un único vector de representación.
 - Adaptación con LoRA: el LoRA sobre las proyecciones de atención de los últimos bloques permite ajustar ligeramente los encoders sin descongelarlos, lo que mejora la alineación multimodal.
-- Extracción de características (feature extraction) con pipeline de HuggingFace de tipo feature-extraction.
+- Extracción de características (feature extraction) con pipeline de Hugging Face de tipo feature-extraction.
 - Sin capacidades generativas: no genera texto ni imágenes; solo produce representaciones vectoriales.
 - Clasificación zero-shot: muy débil (CIFAR-100 ~36–38 %, Oxford-IIIT Pet ~8–10 %, EuroSAT ~22–24 %), se considera un resultado negativo.
 - Soporte de tool calling, agentes o razonamiento multi-step: no aplica, no es un modelo de lenguaje autoregresivo.
@@ -100,7 +100,7 @@ FreezeShift dual es el modelo más pequeño y con el peor rendimiento de los com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ppokhrel2109/freezeshift-dual-vlm
+- Modelo en Hugging Face: https://huggingface.co/ppokhrel2109/freezeshift-dual-vlm
 - Código: https://github.com/Pranav210901/Efficient-VLM
 - Licencia DINOv3: https://ai.meta.com/resources/models-and-libraries/dinov3-license/
 - Model card original: https://huggingface.co/ppokhrel2109/freezeshift-dual-vlm (README)

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nekodeus/mistral-7b-v01-base-openvino | 7,25B | 8192 | OpenVINO IR INT8 | Apache-2.0 | HuggingFace |
-| OpenVINO/mistral-7b-instruct-v0.1-fp16-ov | 7,25B | 8192 | OpenVINO IR FP16 | Apache-2.0 | HuggingFace |
-| Nekodeus/mistral-7b-instruct-v02-openvino | 7,25B | 32768 | OpenVINO IR INT8 | Apache-2.0 | HuggingFace |
-| mistralai/Mistral-7B-v0.1 | 7,25B | 8192 | safetensors FP16 | Apache-2.0 | HuggingFace |
+| Nekodeus/mistral-7b-v01-base-openvino | 7,25B | 8192 | OpenVINO IR INT8 | Apache-2.0 | Hugging Face |
+| OpenVINO/mistral-7b-instruct-v0.1-fp16-ov | 7,25B | 8192 | OpenVINO IR FP16 | Apache-2.0 | Hugging Face |
+| Nekodeus/mistral-7b-instruct-v02-openvino | 7,25B | 32768 | OpenVINO IR INT8 | Apache-2.0 | Hugging Face |
+| mistralai/Mistral-7B-v0.1 | 7,25B | 8192 | safetensors FP16 | Apache-2.0 | Hugging Face |
 
 La diferencia principal frente a las variantes instruct reside en que este modelo no sigue instrucciones ni dispone de plantilla de chat, mientras que las versiones v0.1-instruct y v0.2-instruct estan ajustadas para dialogo. La version v0.2 amplia el contexto hasta 32768 tokens, frente a los 8192 de esta ficha. El modelo original en FP16 ocupa aproximadamente el doble de espacio y no esta optimizado para inferencia en CPU.
 
@@ -83,7 +83,7 @@ La diferencia principal frente a las variantes instruct reside en que este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nekodeus/mistral-7b-v01-base-openvino
+- Modelo en Hugging Face: https://huggingface.co/Nekodeus/mistral-7b-v01-base-openvino
 - Modelo original: https://huggingface.co/mistralai/Mistral-7B-v0.1
 - Anuncio de Mistral 7B: https://mistral.ai/news/announcing-mistral-7b/
 - Documentacion de Mistral 7B v0.1: https://docs.mistral.ai/models/mistral-7b-0-1

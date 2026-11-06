@@ -79,7 +79,7 @@ La comparación con alternativas de otros fabricantes (por ejemplo, modelos de c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/m4gshm/Qwen2.5-Coder-0.5B-int4-sym-g128-se-awq
+- Modelo en Hugging Face: https://huggingface.co/m4gshm/Qwen2.5-Coder-0.5B-int4-sym-g128-se-awq
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B
 - OpenVINO: https://docs.openvino.ai
 - NNCF: https://github.com/openvinotoolkit/nncf

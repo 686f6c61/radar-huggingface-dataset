@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento cualit
 - No se documentan cifras de latencia ni throughput, lo que dificulta planificar despliegues en producción.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jingran229/Qwen3.8-27B-Uncensored-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jingran229/Qwen3.8-27B-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Heretic (herramienta de abliteración): https://github.com/p-e-w/heretic
 - llama.cpp (runtime): no se proporciona enlace directo en la información disponible

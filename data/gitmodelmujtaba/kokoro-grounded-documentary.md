@@ -78,6 +78,6 @@ Nota: los datos de Kokoro base y alternativas provienen de conocimiento general;
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gitmodelmujtaba/kokoro-grounded-documentary
+- Repositorio en Hugging Face: https://huggingface.co/gitmodelmujtaba/kokoro-grounded-documentary
 - Modelo base Kokoro (referencia): https://huggingface.co/hexgrad/Kokoro-82M
 - Paper, blog o demo: no disponibles en la informacion proporcionada.

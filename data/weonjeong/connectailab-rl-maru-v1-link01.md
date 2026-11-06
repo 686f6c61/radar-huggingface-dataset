@@ -71,8 +71,8 @@ El autor advierte que la evaluación de caminata usa una aproximación 2D basada
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-maru-v1-link01 | 0,8B (base) + LoRA | No disponible | Decisión discreta destilada de PPO | Apache 2.0 | HuggingFace, 25 descargas |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible en la información | HuggingFace |
+| connectailab-rl-maru-v1-link01 | 0,8B (base) + LoRA | No disponible | Decisión discreta destilada de PPO | Apache 2.0 | Hugging Face, 25 descargas |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | No disponible | LLM generalista | No disponible en la información | Hugging Face |
 | Política PPO "cerebro" (brain.json) | No aplica (tabla/serialización) | No aplica | Política de control directa | Definida por el proyecto CONNECT TYCOON | GitHub del proyecto |
 
 No se dispone de información sobre otros adaptadores de decisión comparables en la misma categoría (LLM pequeño destilando una política de control) dentro de la documentación consultada.
@@ -90,7 +90,7 @@ No se dispone de información sobre otros adaptadores de decisión comparables e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WeonJeong/connectailab-rl-maru-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/WeonJeong/connectailab-rl-maru-v1-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

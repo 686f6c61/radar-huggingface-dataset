@@ -77,7 +77,7 @@ Los datos de rendimiento comparado no están disponibles en la información prop
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es una réplica no oficial; para producción se recomienda usar los pesos del repositorio oficial de Qwen.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Virtudant-AI/Qwen3-1.7B
+- Repositorio Hugging Face: https://huggingface.co/Virtudant-AI/Qwen3-1.7B
 - Modelo base oficial: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo oficial Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

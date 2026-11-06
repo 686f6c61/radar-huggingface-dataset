@@ -2,7 +2,7 @@
 
 ## Resumen
 
-seda-v0.2-tiny es un modelo de reconocimiento automatico de voz (ASR) en turco, desarrollado por atasoglu y publicado en HuggingFace. Se trata de una version reducida (15 veces mas pequena) de seda-v0.2, obtenida mediante destilacion de conocimiento (knowledge distillation) desde el modelo maestro. Su arquitectura es un transductor Zipformer2 con 4,5 millones de parametros, exportado a ONNX int8 para ejecutarse con sherpa-onnx, y el modelo acustico ocupa unos 7 MB.
+seda-v0.2-tiny es un modelo de reconocimiento automatico de voz (ASR) en turco, desarrollado por atasoglu y publicado en Hugging Face. Se trata de una version reducida (15 veces mas pequena) de seda-v0.2, obtenida mediante destilacion de conocimiento (knowledge distillation) desde el modelo maestro. Su arquitectura es un transductor Zipformer2 con 4,5 millones de parametros, exportado a ONNX int8 para ejecutarse con sherpa-onnx, y el modelo acustico ocupa unos 7 MB.
 
 Su propuesta de valor es clara: ofrecer transcripcion en streaming con precision comparable a Whisper small en turco, pero con 50 veces menos parametros, de modo que pueda funcionar en CPUs lentas, moviles e incluso en el navegador (via WASM). Es relevante para desarrolladores que necesitan ASR en el dispositivo, con latencia baja y sin dependencia de la nube, en escenarios donde el coste computacional y el tamano del modelo son restricciones criticas.
 
@@ -109,7 +109,7 @@ seda-v0.2-tiny supera a Whisper small en turco con 50 veces menos parametros y a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atasoglu/seda-v0.2-tiny
+- Modelo en Hugging Face: https://huggingface.co/atasoglu/seda-v0.2-tiny
 - Modelo base (profesor): https://huggingface.co/atasoglu/seda-v0.2
 - Libreria sedalib: https://github.com/atasoglu/seda
 - sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx

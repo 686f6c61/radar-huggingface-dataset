@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`s f m_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de cinco checkpoints intermedios de un mismo run de entrenamiento, combinados con la técnica de interpolación lineal que ofrece la herramienta mergekit. El resultado es un único checkpoint de aproximadamente 6.856 millones de parámetros (unos 6,86B) en formato bfloat16.
+`s f m_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge` es un modelo de lenguaje publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de cinco checkpoints intermedios de un mismo run de entrenamiento, combinados con la técnica de interpolación lineal que ofrece la herramienta mergekit. El resultado es un único checkpoint de aproximadamente 6.856 millones de parámetros (unos 6,86B) en formato bfloat16.
 
 El interés de esta publicación es fundamentalmente metodológico: ilustra cómo se puede promediar linealmente una trayectoria de entrenamiento (pasos 4000, 5000, 6000, 7000 y 8000) con pesos crecientes de 1 a 5 y normalización activada, obteniendo un punto de la trayectoria potencialmente más estable que el checkpoint final. El nombre del run de origen, `filtered_insert_xxf_character`, sugiere un ajuste orientado a diálogo o a personajes, pero la model card no documenta el corpus, el objetivo de entrenamiento ni el modelo base último, por lo que esta interpretación no está confirmada.
 
@@ -12,7 +12,7 @@ Se trata de un artefacto con 0 descargas y 0 "likes" en el momento de la consult
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only de la familia GPT-NeoX (tag `gpt_neox` en HuggingFace) |
+| Arquitectura | Transformer decoder-only de la familia GPT-NeoX (tag `gpt_neox` en Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,86B), dato real de los pesos safetensors |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
@@ -35,7 +35,7 @@ No hubo entrenamiento adicional durante la creación de esta publicación: únic
 
 - Generación de texto autoregresiva: el pipeline declarado es `text-generation` y la librería es `transformers`, por lo que el uso previsto es la generación de texto condicionada por un prompt.
 - Conversación: el repositorio incluye la etiqueta `conversational`, lo que indica que el modelo está pensado para diálogo multi-turno, aunque no se especifica el formato de plantilla ni los tokens especiales de rol.
-- Compatibilidad con text-generation-inference: la etiqueta `text-generation-inference` y `endpoints_compatible` sugieren que el modelo puede servirse con TGI y con el sistema de endpoints de HuggingFace.
+- Compatibilidad con text-generation-inference: la etiqueta `text-generation-inference` y `endpoints_compatible` sugieren que el modelo puede servirse con TGI y con el sistema de endpoints de Hugging Face.
 - Tool calling / function calling: no disponible. No hay evidencia en la model card ni en las etiquetas de que el modelo soporte llamadas a herramientas.
 - Agentes y razonamiento multi-paso: no disponible. No se documenta ningún modo de razonamiento explícito, cadena de pensamiento ni planificación.
 - Capacidades multilingües: no disponible. No se declara ningún idioma.
@@ -75,11 +75,11 @@ La comparación es necesariamente parcial: de este modelo se desconoce la longit
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-...-merge | 6,86B | No disponible | GPT-NeoX (decoder-only) | No disponible | HuggingFace, 0 descargas, sin benchmarks |
-| Pythia-6.9B | 6,9B | 2048 tokens | GPT-NeoX | Apache 2.0 | HuggingFace, benchmarks publicados |
-| GPT-J-6B | 6,0B | 2048 tokens | GPT-J (decoder-only) | Apache 2.0 | HuggingFace, ampliamente usado |
-| Mistral-7B-v0.1 | 7,2B | 8192 tokens | Transformer con GQA y SWA | Apache 2.0 | HuggingFace, benchmarks y cuantizaciones publicadas |
-| Llama-2-7B | 6,7B | 4096 tokens | Transformer decoder-only | Llama 2 Community License | HuggingFace, benchmarks publicados |
+| sfm_filtered_insert_xxf_character-...-merge | 6,86B | No disponible | GPT-NeoX (decoder-only) | No disponible | Hugging Face, 0 descargas, sin benchmarks |
+| Pythia-6.9B | 6,9B | 2048 tokens | GPT-NeoX | Apache 2.0 | Hugging Face, benchmarks publicados |
+| GPT-J-6B | 6,0B | 2048 tokens | GPT-J (decoder-only) | Apache 2.0 | Hugging Face, ampliamente usado |
+| Mistral-7B-v0.1 | 7,2B | 8192 tokens | Transformer con GQA y SWA | Apache 2.0 | Hugging Face, benchmarks y cuantizaciones publicadas |
+| Llama-2-7B | 6,7B | 4096 tokens | Transformer decoder-only | Llama 2 Community License | Hugging Face, benchmarks publicados |
 
 Los datos de los modelos de comparación corresponden a información publica de sus respectivas model cards. En el caso de este merge no es posible confirmar ni el contexto, ni el vocabulario, ni si hereda las caracteristicas de algun modelo base conocido, ya que la ascendencia declarada son rutas locales de un sistema interno (`/opt/tiger/Pan_Safety_Better_Measurement/...`).
 
@@ -99,7 +99,7 @@ Los datos de los modelos de comparación corresponden a información publica de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge
+- Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-4k_5k_6k_7k_8k_weightedavg_merge
 - Paper de referencia de la tecnica de merge lineal: https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes. Todas las URLs devueltas corresponden a articulos sobre editores y generadores de imagenes con IA (fixthephoto.com, varkido.com, gsgraphx.com, 3arabi.ai, majnooncomputer.net) y no guardan relacion con este modelo.

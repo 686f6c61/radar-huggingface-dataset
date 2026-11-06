@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shemarmanoj/distilbert-emotion` es un ajuste fino de `distilbert/distilbert-base-uncased` publicado en HuggingFace por el usuario shemarmanoj, orientado a clasificación de texto (pipeline `text-classification`). El repositorio se generó automáticamente con `Trainer` de Transformers y la model card no ha sido completada por el autor: no se documenta el conjunto de datos de entrenamiento, el número ni el nombre de las etiquetas de emoción, los idiomas ni los usos previstos. El modelo es, por tanto, un artefacto de tamaño reducido (66.958.086 parámetros según el fichero safetensors, repo de 0,5 GB) cuya única información verificable de rendimiento es la métrica de validación declarada: accuracy 0,937 y loss 0,1442 tras 2 epochs.
+`shemarmanoj/distilbert-emotion` es un ajuste fino de `distilbert/distilbert-base-uncased` publicado en Hugging Face por el usuario shemarmanoj, orientado a clasificación de texto (pipeline `text-classification`). El repositorio se generó automáticamente con `Trainer` de Transformers y la model card no ha sido completada por el autor: no se documenta el conjunto de datos de entrenamiento, el número ni el nombre de las etiquetas de emoción, los idiomas ni los usos previstos. El modelo es, por tanto, un artefacto de tamaño reducido (66.958.086 parámetros según el fichero safetensors, repo de 0,5 GB) cuya única información verificable de rendimiento es la métrica de validación declarada: accuracy 0,937 y loss 0,1442 tras 2 epochs.
 
 Su relevancia práctica es limitada y muy condicionada: sirve como ejemplo de fine-tuning ligero de DistilBERT para clasificación de emociones, o como punto de partida para reevaluar y reentrenar, pero no como componente listo para producción sin auditoría previa. La licencia Apache 2.0 y el formato safetensors facilitan su uso y redistribución, y el tamaño permite inferencia en CPU o en GPUs de gama baja. Cualquier despliegue real debería venir precedido de una evaluación propia sobre datos del dominio objetivo, dado que se desconoce el dataset de entrenamiento y las clases reales del clasificador.
 
@@ -31,7 +31,7 @@ El entrenamiento documentado es mínimo: learning rate 5e-05, batch de 64 en tra
 - Salida de logits/probabilidades por clase vía `AutoModelForSequenceClassification`, apta para umbrales y ranking.
 - Procesamiento de textos de hasta 512 tokens; secuencias más largas requieren truncado o troceado manual.
 - Inferencia muy rápida y con huella de memoria mínima, adecuada para alto volumen en CPU.
-- Compatible con `text-embeddings-inference` y con endpoints tipo HuggingFace (tag `endpoints_compatible`).
+- Compatible con `text-embeddings-inference` y con endpoints tipo Hugging Face (tag `endpoints_compatible`).
 - No soporta tool calling ni function calling: es un encoder de clasificación, no un modelo generativo.
 - No soporta agentes, razonamiento multi-paso, matemáticas ni generación de código.
 - Sin capacidades de visión, audio ni modo "thinking".
@@ -72,10 +72,10 @@ No se especifica el tamaño ni la composición del conjunto de evaluación, ni e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `shemarmanoj/distilbert-emotion` | 66,96 M | 512 tokens | Clasificación de emociones (etiquetas no documentadas) | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| `bhadresh-savani/distilbert-base-uncased-emotion` | ~67 M | 512 tokens | Clasificación de emociones (6 clases Ekman, documentadas) | no verificada en esta ficha | HuggingFace, ampliamente usado |
-| `j-hartmann/emotion-english-distilroberta-base` | ~82 M | 512 tokens | Clasificación de emociones (7 clases) | no verificada en esta ficha | HuggingFace, con model card detallada |
-| `distilbert-base-uncased` (base sin ajustar) | ~67 M | 512 tokens | MLM / extracción de features | apache-2.0 | HuggingFace |
+| `shemarmanoj/distilbert-emotion` | 66,96 M | 512 tokens | Clasificación de emociones (etiquetas no documentadas) | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| `bhadresh-savani/distilbert-base-uncased-emotion` | ~67 M | 512 tokens | Clasificación de emociones (6 clases Ekman, documentadas) | no verificada en esta ficha | Hugging Face, ampliamente usado |
+| `j-hartmann/emotion-english-distilroberta-base` | ~82 M | 512 tokens | Clasificación de emociones (7 clases) | no verificada en esta ficha | Hugging Face, con model card detallada |
+| `distilbert-base-uncased` (base sin ajustar) | ~67 M | 512 tokens | MLM / extracción de features | apache-2.0 | Hugging Face |
 
 La diferencia principal frente a las alternativas no es de arquitectura ni de tamaño, sino de documentación y trazabilidad: los modelos comparados publican clases, dataset y evaluación, mientras que este repositorio no. El rendimiento relativo no puede establecerse sin reevaluar los tres sobre el mismo conjunto.
 
@@ -94,7 +94,7 @@ La diferencia principal frente a las alternativas no es de arquitectura ni de ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shemarmanoj/distilbert-emotion
+- Modelo en Hugging Face: https://huggingface.co/shemarmanoj/distilbert-emotion
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Documentación de `AutoModelForSequenceClassification`: https://huggingface.co/docs/transformers/model_doc/distilbert

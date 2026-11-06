@@ -85,8 +85,8 @@ Evaluación sobre conjunto retenido de 258 ventanas, split temporal por grupo, e
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kai-decision-lora | 0,8B (backbone) + LoRA | 512 tokens | Clasificación estructurada de mensajes de chat | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3.5-0.8B (base sin adaptar) | 0,8B | No disponible | LLM generativo general | No disponible en la informacion | HuggingFace |
+| kai-decision-lora | 0,8B (backbone) + LoRA | 512 tokens | Clasificación estructurada de mensajes de chat | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3.5-0.8B (base sin adaptar) | 0,8B | No disponible | LLM generativo general | No disponible en la informacion | Hugging Face |
 | Modelos de clasificación de texto tipo BERT chino | 0,1B-0,3B | 512 tokens | Clasificación de texto genérica | Variable | Amplia |
 
 No se dispone de datos de benchmarks de alternativas comparables en la información proporcionada, por lo que no se puede establecer una comparación cuantitativa de rendimiento.
@@ -105,5 +105,5 @@ No se dispone de datos de benchmarks de alternativas comparables en la informaci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Songkai/kai-decision-lora
+- Hugging Face: https://huggingface.co/Songkai/kai-decision-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

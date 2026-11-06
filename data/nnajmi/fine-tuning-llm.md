@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nnajmi/Fine-Tuning-LLM` es un repositorio publicado en HuggingFace por el usuario nnajmi bajo licencia Apache 2.0. En el momento de la consulta (repositorio creado y actualizado el 19 de septiembre de 2026) no se ha publicado informacion tecnica alguna en la model card: el unico contenido del README es la declaracion de licencia. No consta pipeline declarado, ni idiomas soportados, ni descripcion del proposito del modelo.
+El modelo `nnajmi/Fine-Tuning-LLM` es un repositorio publicado en Hugging Face por el usuario nnajmi bajo licencia Apache 2.0. En el momento de la consulta (repositorio creado y actualizado el 19 de septiembre de 2026) no se ha publicado informacion tecnica alguna en la model card: el unico contenido del README es la declaracion de licencia. No consta pipeline declarado, ni idiomas soportados, ni descripcion del proposito del modelo.
 
 El repositorio acumula 0 descargas y 0 likes, y no incluye pesos, configuracion, tokenizador ni documentacion adicional segun los metadatos disponibles. El nombre sugiere que se trata de un experimento de ajuste fino (fine-tuning) sobre algun modelo base no especificado, pero no hay forma de confirmarlo a partir de la informacion publica.
 
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni el rendimiento del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nnajmi/Fine-Tuning-LLM
+- Repositorio en Hugging Face: https://huggingface.co/nnajmi/Fine-Tuning-LLM
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada. Los resultados devueltos por la busqueda no guardan relacion con el modelo.

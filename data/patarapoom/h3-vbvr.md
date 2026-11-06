@@ -69,7 +69,7 @@ No disponible. No se han encontrado comparaciones con otros modelos de generacio
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Patarapoom/h3-vbvr
+- Repositorio Hugging Face: https://huggingface.co/Patarapoom/h3-vbvr
 - Repositorio de origen del transformer: https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models
 - Repositorio de origen del text encoder y VAE de audio: https://huggingface.co/Comfy-Org/MiniMax-H3
 - Repositorio de origen del VAE de video: https://huggingface.co/Kijai/MiniMax-H3-experimental

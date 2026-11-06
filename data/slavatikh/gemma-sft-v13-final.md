@@ -98,8 +98,8 @@ No se dispone de datos suficientes para comparar rendimiento (MMLU, HumanEval, G
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/SlavaTikh/gemma-sft-v13-final
-- Modelo base en HuggingFace: https://huggingface.co/google/gemma-4-26B-A4B-it
+- Repositorio Hugging Face del adaptador: https://huggingface.co/SlavaTikh/gemma-sft-v13-final
+- Modelo base en Hugging Face: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Página de Gemma en Google DeepMind: https://deepmind.google/models/gemma/
 - Repositorio de la librería gemma de Google DeepMind: https://github.com/google-deepmind/gemma

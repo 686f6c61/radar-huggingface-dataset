@@ -97,7 +97,7 @@ La diferencia principal frente a un VAD convencional es que estos solo detectan 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ooma-ai/turn-detector
+- Modelo en Hugging Face: https://huggingface.co/ooma-ai/turn-detector
 - Encoder base: https://huggingface.co/nvidia/parakeet_realtime_eou_120m-v1
 - Paper de Voice Activity Projection: https://arxiv.org/abs/2205.09812
 - Repositorio VoiceActivityProjection: https://github.com/ErikEkstedt/VoiceActivityProjection

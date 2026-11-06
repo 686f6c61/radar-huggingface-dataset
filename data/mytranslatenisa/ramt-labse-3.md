@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ramt-labse-3 es un modelo publicado en HuggingFace por el usuario mytranslatenisa bajo el identificador `mytranslatenisa/ramt-labse-3`. La etiqueta de arquitectura declarada en el repositorio es `m2m_100`, es decir, un transformer encoder-decoder de la familia M2M-100 orientado a traduccion automatica multilingue. El repositorio contiene pesos en formato safetensors y un total de 483.905.536 parametros, un orden de magnitud coherente con las variantes compactas de esa familia (entorno a los 400-500 millones), lo que lo situa en el segmento de modelos desplegables en hardware de consumo.
+ramt-labse-3 es un modelo publicado en Hugging Face por el usuario mytranslatenisa bajo el identificador `mytranslatenisa/ramt-labse-3`. La etiqueta de arquitectura declarada en el repositorio es `m2m_100`, es decir, un transformer encoder-decoder de la familia M2M-100 orientado a traduccion automatica multilingue. El repositorio contiene pesos en formato safetensors y un total de 483.905.536 parametros, un orden de magnitud coherente con las variantes compactas de esa familia (entorno a los 400-500 millones), lo que lo situa en el segmento de modelos desplegables en hardware de consumo.
 
-La informacion publica disponible es muy escasa: no se declaran licencia, idiomas soportados, pipeline de uso ni resultados de evaluacion, y el modelo acumula 0 descargas y 1 like en el momento de la consulta. El nombre del repositorio sugiere alguna variante relacionada con traduccion aumentada por recuperacion (RAMT) y con representaciones tipo LaBSE, pero la ficha de HuggingFace no confirma esa interpretacion, por lo que debe tratarse como una hipotesis no verificada. El tamano del repositorio (31,0 GB) es muy superior al que corresponderia unicamente a los pesos finales en precision completa, lo que apunta a la presencia de checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento.
+La informacion publica disponible es muy escasa: no se declaran licencia, idiomas soportados, pipeline de uso ni resultados de evaluacion, y el modelo acumula 0 descargas y 1 like en el momento de la consulta. El nombre del repositorio sugiere alguna variante relacionada con traduccion aumentada por recuperacion (RAMT) y con representaciones tipo LaBSE, pero la ficha de Hugging Face no confirma esa interpretacion, por lo que debe tratarse como una hipotesis no verificada. El tamano del repositorio (31,0 GB) es muy superior al que corresponderia unicamente a los pesos finales en precision completa, lo que apunta a la presencia de checkpoints intermedios, estados del optimizador u otros artefactos de entrenamiento.
 
 Por su tamano y su arquitectura, el interes practico del modelo esta en escenarios de traduccion o generacion secuencia a secuencia con requisitos moderados de VRAM, pero cualquier evaluacion seria exige verificar primero el contenido real del repositorio, la licencia y el comportamiento multilingue, datos que hoy no estan publicados.
 
@@ -37,7 +37,7 @@ Otros datos del repositorio:
 
 ## Arquitectura y entrenamiento
 
-La unica informacion verificable es la etiqueta `m2m_100`, que en el ecosistema de HuggingFace corresponde a la clase de modelo `M2M100ForConditionalGeneration`: un transformer con encoder y decoder separados, attention multi-cabeza clasica y generacion autorregresiva con decodificacion beam search. Esta familia se entrena con objetivos de denoising supervisado sobre corpus paralelos multilingues, lo que la hace adecuada para traduccion entre pares de idiomas no vistos explicitamente durante el entrenamiento. No se ha publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de ajuste fino con RLHF, DPO o instrucciones.
+La unica informacion verificable es la etiqueta `m2m_100`, que en el ecosistema de Hugging Face corresponde a la clase de modelo `M2M100ForConditionalGeneration`: un transformer con encoder y decoder separados, attention multi-cabeza clasica y generacion autorregresiva con decodificacion beam search. Esta familia se entrena con objetivos de denoising supervisado sobre corpus paralelos multilingues, lo que la hace adecuada para traduccion entre pares de idiomas no vistos explicitamente durante el entrenamiento. No se ha publicado en la informacion disponible el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de ajuste fino con RLHF, DPO o instrucciones.
 
 Tampoco hay datos sobre innovaciones tecnicas especificas (attention lineal, decodificacion especulativa, mezcla de expertos o mecanismos hibridos). El unico indicio estructural es el desajuste entre los 483,9 millones de parametros y los 31,0 GB del repositorio: en FP32, esos parametros ocuparian aproximadamente 1,9 GB, por lo que el resto del espacio correspondera previsiblemente a multiples checkpoints de entrenamiento, estados del optimizador o pesos duplicados en varias precisiones. Conviene inspeccionar el arbol de ficheros antes de asumir que el modelo es ligero solo por su numero de parametros.
 
@@ -63,7 +63,7 @@ Tampoco hay datos sobre innovaciones tecnicas especificas (attention lineal, dec
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas de BLEU, chrF, MMLU, HumanEval ni ninguna otra evaluacion, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas de BLEU, chrF, MMLU, HumanEval ni ninguna otra evaluacion, y la busqueda web realizada no ha devuelto documentacion tecnica asociada al modelo.
 
 ## Requisitos de hardware
 
@@ -83,7 +83,7 @@ Los valores de los modelos comparativos proceden de sus fichas publicas habitual
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| mytranslatenisa/ramt-labse-3 | 483,9 M | no disponible | no disponible | Repositorio HuggingFace sin descargas ni documentacion |
+| mytranslatenisa/ramt-labse-3 | 483,9 M | no disponible | no disponible | Repositorio Hugging Face sin descargas ni documentacion |
 | facebook/m2m100_418M | en torno a 470 M | 1024 tokens (referencia de la familia) | MIT (referencia) | Ampliamente desplegado, con conversiones a CTranslate2 |
 | Helsinki-NLP/opus-mt-* | en torno a 70-80 M por par de idiomas | limitado por segmento | Apache 2.0 (referencia) | Muy extendido para pares de idiomas concretos |
 | facebook/m2m100_1.2B | en torno a 1,2 mM | 1024 tokens (referencia de la familia) | MIT (referencia) | Version grande de la misma arquitectura |
@@ -104,5 +104,5 @@ La principal diferencia de ramt-labse-3 frente a las alternativas es la ausencia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mytranslatenisa/ramt-labse-3
+- Modelo en Hugging Face: https://huggingface.co/mytranslatenisa/ramt-labse-3
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos asociados a este modelo. El resto de resultados devueltos por la busqueda corresponden a paginas de soporte de Microsoft y no guardan relacion con el modelo.

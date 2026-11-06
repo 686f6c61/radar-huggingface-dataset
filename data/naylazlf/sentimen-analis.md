@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Naylazlf/sentimen-analis` es un modelo de clasificación de texto publicado en HuggingFace por el usuario Naylazlf. Por el número de parámetros (124.442.882) y la etiqueta `bert` del repositorio, se corresponde con la arquitectura de un BERT-base (aproximadamente 110 millones de parámetros en el encoder más una cabeza de clasificación), aunque la model card no confirma el checkpoint de partida. El nombre sugiere un ajuste fino orientado al análisis de sentimiento, pero el autor no documenta ni la tarea exacta, ni las etiquetas de salida, ni el conjunto de datos empleado.
+`Naylazlf/sentimen-analis` es un modelo de clasificación de texto publicado en Hugging Face por el usuario Naylazlf. Por el número de parámetros (124.442.882) y la etiqueta `bert` del repositorio, se corresponde con la arquitectura de un BERT-base (aproximadamente 110 millones de parámetros en el encoder más una cabeza de clasificación), aunque la model card no confirma el checkpoint de partida. El nombre sugiere un ajuste fino orientado al análisis de sentimiento, pero el autor no documenta ni la tarea exacta, ni las etiquetas de salida, ni el conjunto de datos empleado.
 
 El modelo es relevante únicamente como artefacto recién subido al Hub: no tiene descargas ni likes, la model card es la plantilla autogenerada de transformers sin ningún campo completado y no se ha publicado información sobre entrenamiento, evaluación o licencia. Cualquier evaluación técnica debe hacerse, por tanto, inspeccionando los pesos y ejecutando pruebas propias, no a partir de la documentación del autor.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Naylazlf/sentimen-analis | 124,4 M | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion |
-| `bert-base-multilingual-cased` | ~178 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Base multilingue, sin ajuste de sentimiento |
-| `finiteautomata/bertweet-base-sentiment-analysis` | ~110 M | 128 tokens | MIT (segun su card) | HuggingFace, con descargas y evaluacion | Ajustado para sentimiento en ingles, con metricas publicadas |
-| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | MIT (segun su card) | HuggingFace, muy usado | RoBERTa ajustado en tweets, con evaluacion publicada |
+| Naylazlf/sentimen-analis | 124,4 M | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion |
+| `bert-base-multilingual-cased` | ~178 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Base multilingue, sin ajuste de sentimiento |
+| `finiteautomata/bertweet-base-sentiment-analysis` | ~110 M | 128 tokens | MIT (segun su card) | Hugging Face, con descargas y evaluacion | Ajustado para sentimiento en ingles, con metricas publicadas |
+| `cardiffnlp/twitter-roberta-base-sentiment-latest` | ~125 M | 512 tokens | MIT (segun su card) | Hugging Face, muy usado | RoBERTa ajustado en tweets, con evaluacion publicada |
 
 La comparación se basa en la categoría (encoder pequeño para clasificación de sentimiento) y no en datos verificados de este modelo concreto, ya que no hay métricas publicadas. Los tres alternativos tienen documentación, licencia y evaluaciones públicas, mientras que `Naylazlf/sentimen-analis` no ofrece ninguna de las tres.
 
@@ -85,6 +85,6 @@ La comparación se basa en la categoría (encoder pequeño para clasificación d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Naylazlf/sentimen-analis
+- Hugging Face: https://huggingface.co/Naylazlf/sentimen-analis
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

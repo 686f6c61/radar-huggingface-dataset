@@ -65,7 +65,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace: trinhkhng/della_Merged_gpt2_0.0](https://huggingface.co/trinhkhng/della_Merged_gpt2_0.0)
+- [Hugging Face: trinhkhng/della_Merged_gpt2_0.0](https://huggingface.co/trinhkhng/della_Merged_gpt2_0.0)
 - [Paper DELLA (arXiv:2406.11617)](https://arxiv.org/abs/2406.11617)
 - [Repositorio GitHub de DELLA](https://github.com/declare-lab/della)
 - [Página del modelo en FriendliAI](https://friendli.ai/models/trinhkhng/della_Merged_gpt2_0.0)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Moeblack/longzu-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Moeblack, diseñado como un ajuste fino eficiente sobre el modelo base Qwen/Qwen3.8-27B. Se trata de un adaptador para generación de texto conversacional que emplea la librería PEFT en su versión 0.20.0, lo que indica que su uso previsto es el de un módulo de bajo rango que se combina con el modelo base para modificar su comportamiento en tareas específicas, probablemente relacionadas con el universo literario de "Longzu" (nombre que sugiere un ajuste orientado a un dominio o estilo concreto).
+Moeblack/longzu-lora es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Moeblack, diseñado como un ajuste fino eficiente sobre el modelo base Qwen/Qwen3.8-27B. Se trata de un adaptador para generación de texto conversacional que emplea la librería PEFT en su versión 0.20.0, lo que indica que su uso previsto es el de un módulo de bajo rango que se combina con el modelo base para modificar su comportamiento en tareas específicas, probablemente relacionadas con el universo literario de "Longzu" (nombre que sugiere un ajuste orientado a un dominio o estilo concreto).
 
 El repositorio tiene un tamaño de 5,1 GB, lo que resulta considerable para un adaptador LoRA típico, aunque no se especifican los pesos exactos ni la configuración del adaptador. La model card está prácticamente vacía: no se indica licencia, idiomas, datos de entrenamiento, hiperparámetros ni resultados de evaluación. Tampoco hay información pública adicional en la web sobre este adaptador concreto, por lo que cualquier afirmación sobre sus capacidades reales sería especulativa.
 
@@ -31,7 +31,7 @@ No se han publicado capacidades específicas para este adaptador en la informaci
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos sin conocer el propósito del ajuste. La información disponible no describe ninguna aplicación específica. Se recomienda a los interesados consultar directamente al autor o al repositorio de HuggingFace para obtener detalles.
+No se pueden enumerar casos de uso concretos sin conocer el propósito del ajuste. La información disponible no describe ninguna aplicación específica. Se recomienda a los interesados consultar directamente al autor o al repositorio de Hugging Face para obtener detalles.
 
 ## Benchmarks y rendimiento
 
@@ -55,5 +55,5 @@ No disponible. No se ha identificado información sobre modelos comparables de l
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Moeblack/longzu-lora)
+- [Modelo en Hugging Face](https://huggingface.co/Moeblack/longzu-lora)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B) (enlace inferido, no verificado en la información proporcionada)

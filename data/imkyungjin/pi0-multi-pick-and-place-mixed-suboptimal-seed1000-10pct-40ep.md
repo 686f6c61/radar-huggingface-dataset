@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (pi0 fine-tune, ImKyungjin) | 3.501.372.176 | no disponible | sin benchmarks publicados | apache-2.0 | HuggingFace Hub, 0 descargas |
+| Este checkpoint (pi0 fine-tune, ImKyungjin) | 3.501.372.176 | no disponible | sin benchmarks publicados | apache-2.0 | Hugging Face Hub, 0 descargas |
 | π₀ base (Physical Intelligence / OpenPI) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | repositorio OpenPI y blog de Physical Intelligence |
 | ACT (mencionado en la plantilla de LeRobot) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible en la informacion proporcionada | implementado en LeRobot |
 | Alternativas adicionales de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -93,7 +93,7 @@ Solo se dispone de datos verificables del checkpoint objeto de esta ficha. Cualq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-10pct-40ep
+- Modelo en Hugging Face: https://huggingface.co/ImKyungjin/pi0-multi-pick-and-place-mixed-suboptimal-seed1000-10pct-40ep
 - Dataset de entrenamiento: https://huggingface.co/datasets/taewonkoo/multi_pick_and_place_mixed_suboptimal_seed1000_10pct_40ep
 - Blog de Physical Intelligence sobre π₀: https://www.physicalintelligence.company/blog/pi0
 - Repositorio OpenPI de Physical Intelligence (citado como origen de la implementacion): no disponible como enlace directo en la informacion proporcionada

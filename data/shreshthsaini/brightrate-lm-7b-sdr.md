@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-lm-7b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-lm-7b-sdr
 - Repositorio GitHub BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM
 - Dataset BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Página personal del autor: https://shreshthsaini.github.io/

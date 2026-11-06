@@ -104,7 +104,7 @@ Los tres primeros comparten la misma arquitectura Conformer + TDT; las diferenci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Harsha001/Phonon-2-XDNA2
+- Repositorio Hugging Face: https://huggingface.co/Harsha001/Phonon-2-XDNA2
 - Modelo base (Phonon-2, FermionResearch): https://huggingface.co/FermionResearch/Phonon-2
 - Modelo de origen (NVIDIA Parakeet TDT 0.6B v3): https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Conjuntos de evaluacion del Open ASR Leaderboard: https://huggingface.co/datasets/hf-audio/esb-datasets-test-only-sorted

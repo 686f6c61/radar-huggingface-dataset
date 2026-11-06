@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-MoVA-36B-A4B-oQ6e es un checkpoint cuantizado publicado por el usuario rafalko91 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una version cuantizada de un modelo base denominado internamente k2_horizon (etiqueta de tipo de modelo presente en el repositorio), del cual no se identifica autor, procedencia ni repositorio de origen en la informacion disponible. La cuantizacion se ha realizado con la herramienta oQ, integrada en oMLX en su version v0.7.0.dev1, aplicando cuantizacion de precision mixta a 6 bits con tamano de grupo 64.
+K2-Horizon-MoVA-36B-A4B-oQ6e es un checkpoint cuantizado publicado por el usuario rafalko91 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una version cuantizada de un modelo base denominado internamente k2_horizon (etiqueta de tipo de modelo presente en el repositorio), del cual no se identifica autor, procedencia ni repositorio de origen en la informacion disponible. La cuantizacion se ha realizado con la herramienta oQ, integrada en oMLX en su version v0.7.0.dev1, aplicando cuantizacion de precision mixta a 6 bits con tamano de grupo 64.
 
 El resultado es un artefacto de aproximadamente 37.444.792.020 parametros totales (unos 37,4 mil millones), almacenado en safetensors en el formato propio de MLX, con un tamano de repositorio de 30,9 GB. El sufijo "A4B" del nombre sugiere una arquitectura de mezcla de expertos (MoE) con alrededor de 4 mil millones de parametros activos por token, pero esta interpretacion no esta confirmada en ninguna parte de la model card y debe tratarse como una hipotesis basada en la convencion de nomenclatura habitual en la comunidad, no como un dato verificado.
 
@@ -95,7 +95,7 @@ La comparacion de rendimiento no es posible: no hay ningun benchmark publicado p
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rafalko91/K2-Horizon-MoVA-36B-A4B-oQ6e
+- Repositorio en Hugging Face: https://huggingface.co/rafalko91/K2-Horizon-MoVA-36B-A4B-oQ6e
 - Herramienta de cuantizacion oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Modelo base k2_horizon: no disponible
 - Paper o documentacion tecnica del modelo: no disponible

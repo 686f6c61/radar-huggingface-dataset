@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo en benchmarks, ya que VAETKI n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nc-ai-consortium/VAETKI-20B-A2B
+- Hugging Face: https://huggingface.co/nc-ai-consortium/VAETKI-20B-A2B
 - Repositorio GitHub: https://github.com/wbl-ncai/VAETKI/
 - Informe técnico (PDF): https://github.com/wbl-ncai/VAETKI/blob/main/VAETKI_Technical_Report.pdf
 - Archivo NOTICE.md: https://github.com/wbl-ncai/VAETKI/blob/main/NOTICE.md

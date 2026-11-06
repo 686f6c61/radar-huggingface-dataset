@@ -74,9 +74,9 @@ Ademas, la verificacion confirma que los 310 tensores del backbone son iguales b
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avartha/kev-0.6b-merged | 596.049.920 | no disponible | Decision (cabeza pointer) sobre Qwen3 | Apache-2.0 | HuggingFace (derivado no oficial) |
-| jaredpalmer/kev-0.6b | no disponible (misma base Qwen3-0.6B) | no disponible | Decision (cabeza pointer) sobre Qwen3 | Apache-2.0 | HuggingFace (release original) |
-| Qwen/Qwen3-0.6B-Base | no disponible en esta ficha | no disponible | Transformer de lenguaje (attention-only) | Apache-2.0 | HuggingFace (modelo base) |
+| avartha/kev-0.6b-merged | 596.049.920 | no disponible | Decision (cabeza pointer) sobre Qwen3 | Apache-2.0 | Hugging Face (derivado no oficial) |
+| jaredpalmer/kev-0.6b | no disponible (misma base Qwen3-0.6B) | no disponible | Decision (cabeza pointer) sobre Qwen3 | Apache-2.0 | Hugging Face (release original) |
+| Qwen/Qwen3-0.6B-Base | no disponible en esta ficha | no disponible | Transformer de lenguaje (attention-only) | Apache-2.0 | Hugging Face (modelo base) |
 
 No se dispone de modelos de decision directamente comparables en la informacion proporcionada mas alla de los anteriores; la familia Kev incluye otras variantes (por ejemplo, un modelo de 4B citado en la model card), pero sus especificaciones no se detallan aqui.
 
@@ -93,7 +93,7 @@ No se dispone de modelos de decision directamente comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/avartha/kev-0.6b-merged
+- Hugging Face (este modelo): https://huggingface.co/avartha/kev-0.6b-merged
 - Modelo base Kev: https://huggingface.co/jaredpalmer/kev-0.6b
 - Repositorio GitHub de Kev: https://github.com/jaredpalmer/kev
 - Releases de Kev: https://github.com/jaredpalmer/kev/releases

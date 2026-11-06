@@ -95,7 +95,7 @@ Comparativas con otros adaptadores de ataque o con modelos de la misma categorí
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-classify)
+- [Modelo en Hugging Face](https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-classify)
 - [Modelo base Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Paper: Fundamental Limitations in Defending LLM Finetuning APIs (arXiv:2502.14828)](https://arxiv.org/abs/2502.14828)
 - [Tinker, API de fine-tuning de Thinking Machines](https://thinkingmachines.ai/tinker/)

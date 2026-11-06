@@ -66,8 +66,8 @@ No hay datos de MMLU, HumanEval, GSM8K, MMLU-Pro, MT-Bench ni de evaluaciones mu
 
 | Modelo | Parámetros totales | Precisión de pesos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minjaechoi/qwen3p6-35b-a3b-2p02bit-r69 | 35.107.181.936 | Expertos enrutados a 2,0218 bits; resto BF16 (almacenado en BF16) | no disponible | no disponible | HuggingFace, 291 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | 35.107.181.936 (según el derivado) | BF16 | no disponible | no disponible | HuggingFace |
+| minjaechoi/qwen3p6-35b-a3b-2p02bit-r69 | 35.107.181.936 | Expertos enrutados a 2,0218 bits; resto BF16 (almacenado en BF16) | no disponible | no disponible | Hugging Face, 291 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | 35.107.181.936 (según el derivado) | BF16 | no disponible | no disponible | Hugging Face |
 | Alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos sobre otros checkpoints cuantizados del mismo modelo base ni sobre modelos MoE de tamaño comparable que permitan una comparación de rendimiento rigurosa.
@@ -88,6 +88,6 @@ No se dispone de datos sobre otros checkpoints cuantizados del mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p02bit-r69
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p02bit-r69
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo del autor: no disponible en la información proporcionada.

@@ -84,7 +84,7 @@ La informacion proporcionada no incluye modelos comparables ni sus especificacio
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_moss_whisper-small-MiniLM (este checkpoint) | Contraste audio-texto (inferido) | no disponible | 256 (segun nombre) | no disponible | HuggingFace, 0 descargas |
+| voiceclap_moss_whisper-small-MiniLM (este checkpoint) | Contraste audio-texto (inferido) | no disponible | 256 (segun nombre) | no disponible | Hugging Face, 0 descargas |
 | Familia LAION-CLAP | Contraste audio-texto | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Familia MS-CLAP (Microsoft) | Contraste audio-texto | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 | Whisper-small (modelo base citado en el nombre) | Reconocimiento automatico de voz | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
@@ -103,7 +103,7 @@ La informacion proporcionada no incluye modelos comparables ni sus especificacio
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0
 - Indice de todos los runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo del proyecto VoiceCLAP: no disponible en la informacion proporcionada.
 - Nota sobre la busqueda web: los unicos resultados recuperados corresponden a paginas de observaciones meteorologicas de la estacion Paris-Montsouris (Infoclimat, Meteo-France, Meteociel, LiveTrafik) y no guardan ninguna relacion con este modelo.

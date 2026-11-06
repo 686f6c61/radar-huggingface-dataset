@@ -78,6 +78,6 @@ La comparación es limitada porque no hay datos de contexto, licencia ni rendimi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h045.sft3.step_1650
+- Hugging Face: https://huggingface.co/agentic-ptb/dpsk-v4-flash.h045.sft3.step_1650
 - Origen (repositorio de respaldo): `msr-spare/msr-agentic-ptb-dpsk-sft3-intermediates` (sin URL directa disponible)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base

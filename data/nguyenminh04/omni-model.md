@@ -65,9 +65,9 @@ Los únicos datos de rendimiento disponibles son los tiempos de inferencia en CP
 
 | Modelo | Parámetros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmniRetriever (WAVE-7B + LoRA) | ~7B | no disponible | texto, audio, vídeo, AV | Apache-2.0 | HuggingFace (repo + adaptadores) |
-| Qwen2.5-Omni-7B | ~7B | no disponible | texto, audio, imagen, vídeo | no disponible en la información | HuggingFace |
-| WAVE-7B (upstream) | ~7B | no disponible | texto, audio, vídeo, AV | Apache-2.0 | HuggingFace |
+| OmniRetriever (WAVE-7B + LoRA) | ~7B | no disponible | texto, audio, vídeo, AV | Apache-2.0 | Hugging Face (repo + adaptadores) |
+| Qwen2.5-Omni-7B | ~7B | no disponible | texto, audio, imagen, vídeo | no disponible en la información | Hugging Face |
+| WAVE-7B (upstream) | ~7B | no disponible | texto, audio, vídeo, AV | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks que permitan comparar el rendimiento de recuperación frente a alternativas como CLAP, ImageBind o modelos de embedding multimodal de otros proveedores.
 
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de rec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nguyenminh04/omni-model
+- Repositorio Hugging Face: https://huggingface.co/nguyenminh04/omni-model
 - Adaptadores LoRA: https://huggingface.co/nguyenminh04/omni-adapters
 - Modelo base upstream: https://huggingface.co/tsinghua-ee/WAVE-7B
 - Paper WAVE (arXiv 2509.21990): https://arxiv.org/abs/2509.21990

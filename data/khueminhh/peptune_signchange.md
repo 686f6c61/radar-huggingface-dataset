@@ -71,7 +71,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Limitaciones y advertencias
 
-- El repositorio en HuggingFace tiene 0 GB y 0 descargas; los pesos reales se distribuyen vía Google Drive, no como artefactos del Hub.
+- El repositorio en Hugging Face tiene 0 GB y 0 descargas; los pesos reales se distribuyen vía Google Drive, no como artefactos del Hub.
 - No se documentan sesgos del modelo; al ser un modelo de dominio científico, el riesgo principal es la generación de péptidos con propiedades predichas pero no validadas experimentalmente.
 - Los predictores de propiedades son modelos aproximados; las puntuaciones de afinidad, solubilidad, permeabilidad, no-fouling y no-hemólisis no sustituyen la validación *in vitro* o *in vivo*.
 - No hay información sobre idiomas ni contexto conversacional porque el modelo no es lingüístico.
@@ -81,7 +81,7 @@ La comparación cuantitativa con alternativas no está disponible en la informac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/khueminhh/PepTune_signchange
+- Hugging Face: https://huggingface.co/khueminhh/PepTune_signchange
 - Paper PepTune (arXiv 2412.17780): https://arxiv.org/abs/2412.17780
 - Paper MDLM (arXiv 2406.07524): https://arxiv.org/abs/2406.07524
 - Repositorio MDLM: https://github.com/kuleshov-group/mdlm

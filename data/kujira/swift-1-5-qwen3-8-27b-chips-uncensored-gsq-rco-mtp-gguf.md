@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que es posible alterar un comportamiento con
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | IQ2_XS-mtp (8,77 GB) e IQ3_S-mtp (12,12 GB) |
 | Idiomas soportados | no disponible (las evaluaciones se hicieron en inglés y japonés) |
-| Licencia | swift-open-license-1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | swift-open-license-1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | GGUF (llama.cpp), con metadatos `quantize.imatrix.*` |
 
 ## Arquitectura y entrenamiento
@@ -115,7 +115,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Uncensored-GSQ-RCO-MTP-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Kujira/Swift-1.5-Qwen3.8-27B-CHiPS-Uncensored-GSQ-RCO-MTP-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF
 - Matriz de importancia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF/blob/main/imatrix-swift15-v1mix.gguf
 - Paper referenciado (arxiv:2604.18556): https://arxiv.org/abs/2604.18556

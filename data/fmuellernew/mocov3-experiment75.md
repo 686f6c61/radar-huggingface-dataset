@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fmuellernew/mocov3-experiment75 es un repositorio de investigacion publicado en HuggingFace por el usuario Fmuellernew. Se presenta como un prototipo de MoCo v3 orientado a tareas multitarea, con una escala declarada "giant" y una implementacion propia recogida en el archivo inference.py. El repositorio incluye config.json, training_args.json y un checkpoint de inicializacion en model.safetensors.
+Fmuellernew/mocov3-experiment75 es un repositorio de investigacion publicado en Hugging Face por el usuario Fmuellernew. Se presenta como un prototipo de MoCo v3 orientado a tareas multitarea, con una escala declarada "giant" y una implementacion propia recogida en el archivo inference.py. El repositorio incluye config.json, training_args.json y un checkpoint de inicializacion en model.safetensors.
 
 Es importante subrayar que el propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, que no se reclama ninguna puntuacion de benchmark y que el contenido sirve como punto de partida experimental para pruebas de humo. Los metadatos de safetensors registran 16.576 parametros, una cifra que contrasta con la escala "giant" declarada en la model card.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos verificables |
 |---|---|---|---|---|---|
-| Fmuellernew/mocov3-experiment75 | 16.576 (metadatos de safetensors) | no disponible | MIT | HuggingFace, 0 descargas, 0 likes | Checkpoint de inicializacion; sin benchmarks |
+| Fmuellernew/mocov3-experiment75 | 16.576 (metadatos de safetensors) | no disponible | MIT | Hugging Face, 0 descargas, 0 likes | Checkpoint de inicializacion; sin benchmarks |
 | Familia MoCo v3 original (Meta AI) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fmuellernew/mocov3-experiment75
+- Hugging Face: https://huggingface.co/Fmuellernew/mocov3-experiment75
 - La model card no enlaza papers, repositorios de codigo, demos ni datasets.
 - La busqueda web realizada no devolvio enlaces relevantes: los resultados obtenidos eran paginas de preguntas y respuestas sin relacion con el modelo.

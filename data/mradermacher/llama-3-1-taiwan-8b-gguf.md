@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Llama-3.1-Taiwan-8B-GGUF` es una cuantización estática en formato GGUF del modelo original `Llama-3.1-Taiwan-8B`, desarrollado por yentinglin. Aunque la ficha de HuggingFace no proporciona una descripción oficial, el nombre indica que se trata de un ajuste fino del modelo base Llama 3.1 de 8 mil millones de parámetros, orientado al idioma chino tradicional hablado en Taiwán. Esta versión GGUF está pensada para facilitar la ejecución en entornos con recursos limitados, como CPU o GPU de consumo, mediante cuantización.
+El modelo `Llama-3.1-Taiwan-8B-GGUF` es una cuantización estática en formato GGUF del modelo original `Llama-3.1-Taiwan-8B`, desarrollado por yentinglin. Aunque la ficha de Hugging Face no proporciona una descripción oficial, el nombre indica que se trata de un ajuste fino del modelo base Llama 3.1 de 8 mil millones de parámetros, orientado al idioma chino tradicional hablado en Taiwán. Esta versión GGUF está pensada para facilitar la ejecución en entornos con recursos limitados, como CPU o GPU de consumo, mediante cuantización.
 
 El repositorio contiene múltiples archivos de cuantización (Q2_K, Q3_K, Q4_K, Q5_K, Q6_K, Q8_0, IQ4_XS, f16) que permiten elegir el equilibrio entre tamaño y calidad. El modelo tiene 8.030.261.312 parámetros y fue publicado el 16 de agosto de 2026. Su relevancia radica en ofrecer una opción ligera y accesible para tareas de procesamiento de lenguaje natural en chino tradicional, especialmente en aplicaciones donde se requiere inferencia local sin infraestructura de alto coste.
 

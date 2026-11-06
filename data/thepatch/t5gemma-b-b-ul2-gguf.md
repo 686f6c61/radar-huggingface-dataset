@@ -74,7 +74,7 @@ No disponible. Este modelo es un encoder especializado para texto-a-audio, sin e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thepatch/t5gemma-b-b-ul2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/thepatch/t5gemma-b-b-ul2-GGUF
 - Modelo original: https://huggingface.co/google/t5gemma-b-b-ul2
 - Proyecto sa3.cpp: https://github.com/betweentwomidnights/sa3.cpp
 - Documentación de distribución: https://github.com/betweentwomidnights/sa3.cpp/blob/main/docs/DISTRIBUTION.md

@@ -71,7 +71,7 @@ No disponible. No hay información sobre modelos comparables en el repositorio n
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab](https://huggingface.co/mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab)
+- Repositorio Hugging Face: [mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab](https://huggingface.co/mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab)
 - Versión en safetensors: [mondk/Msh-Tiny-47M](https://huggingface.co/mondk/Msh-Tiny-47M)
 - Versión GGUF: [mondk/Msh-Tiny-47M-GGUF](https://huggingface.co/mondk/Msh-Tiny-47M-GGUF)
 - Enlace a la licencia: [LICENSE](https://huggingface.co/mondk/see_upcoming_models/blob/main/LICENSE)</think>## Resumen
@@ -143,7 +143,7 @@ No disponible. No se encontraron modelos comparables en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: [mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab](https://huggingface.co/mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab)
+- Repositorio Hugging Face: [mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab](https://huggingface.co/mondk/msh-tiny.For-Test-In-Note-Book-Google-Colab)
 - Versión en safetensors: [mondk/Msh-Tiny-47M](https://huggingface.co/mondk/Msh-Tiny-47M)
 - Versión GGUF: [mondk/Msh-Tiny-47M-GGUF](https://huggingface.co/mondk/Msh-Tiny-47M-GGUF)
 - Licencia: [LICENSE](https://huggingface.co/mondk/see_upcoming_models/blob/main/LICENSE)

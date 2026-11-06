@@ -74,7 +74,7 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rhasspy/piper-voices
+- Repositorio Hugging Face: https://huggingface.co/rhasspy/piper-voices
 - Repositorio GitHub de Piper: https://github.com/rhasspy/piper
 - Muestras de audio de las voces: https://rhasspy.github.io/piper-samples/
 - Checkpoints para entrenar voces propias: https://huggingface.co/datasets/rhasspy/piper-checkpoints/tree/main

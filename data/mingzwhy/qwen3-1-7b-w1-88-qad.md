@@ -85,7 +85,7 @@ Las busquedas web realizadas no devolvieron informacion util sobre alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MingZwhy/Qwen3-1.7B-W1.88-QAD
+- Modelo en Hugging Face: https://huggingface.co/MingZwhy/Qwen3-1.7B-W1.88-QAD
 - Checkpoint recuperado (recomendado para cargar y evaluar): https://huggingface.co/MingZwhy/Qwen3-1.7B-W1.88-QAOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Codigo y receta del proyecto QAOPD: https://github.com/MingZwhy/QAOPD

@@ -91,7 +91,7 @@ La ventaja principal de este repo es la disponibilidad de cuantos IQ2/IQ3 con im
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/cognitivers/Qwen3.8-27B-OBLITERATED-12GB-GGUF
+- Repo Hugging Face: https://huggingface.co/cognitivers/Qwen3.8-27B-OBLITERATED-12GB-GGUF
 - Modelo base: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guia de ejecucion local: https://linas.substack.com/p/qwen3-8-27b-local-guide

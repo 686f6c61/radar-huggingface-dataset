@@ -71,8 +71,8 @@ El unico dato de rendimiento reportado es la prueba de humo ("smoke test") super
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-2.6B-heretic-ExecuTorch | 2,6 B (segun denominacion) | 2k a 32k (fijo por fichero) | `.pte` (ExecuTorch, XNNPACK CPU) | lfm1.0 | Publicado en HuggingFace; 0 descargas |
-| experimentalmachines/LFM2.5-2.6B-heretic (modelo base) | 2,6 B (segun denominacion) | No disponible | No disponible (pesos originales) | lfm1.0 | Publicado en HuggingFace |
+| LFM2.5-2.6B-heretic-ExecuTorch | 2,6 B (segun denominacion) | 2k a 32k (fijo por fichero) | `.pte` (ExecuTorch, XNNPACK CPU) | lfm1.0 | Publicado en Hugging Face; 0 descargas |
+| experimentalmachines/LFM2.5-2.6B-heretic (modelo base) | 2,6 B (segun denominacion) | No disponible | No disponible (pesos originales) | lfm1.0 | Publicado en Hugging Face |
 | LiquidAI/LFM2.5-2.6B (origen de la licencia) | 2,6 B | No disponible | No disponible | lfm1.0 | Referenciado en el enlace de licencia |
 | Otros modelos on-device comparables | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic-ExecuTorch
 - Modelo base: https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic
 - Licencia lfm1.0 (referencia del modelo base de LiquidAI): https://huggingface.co/LiquidAI/LFM2.5-2.6B/blob/main/LICENSE
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights

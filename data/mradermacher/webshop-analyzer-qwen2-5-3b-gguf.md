@@ -92,8 +92,8 @@ Frente a estas alternativas, el modelo aquí descrito pierde en contexto declara
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/webshop-analyzer-qwen2.5-3b-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/neuqrui/webshop-analyzer-qwen2.5-3b
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/webshop-analyzer-qwen2.5-3b-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/neuqrui/webshop-analyzer-qwen2.5-3b
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#webshop-analyzer-qwen2.5-3b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF
 - Notas sobre tipos de cuantización (Artefact2): https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9

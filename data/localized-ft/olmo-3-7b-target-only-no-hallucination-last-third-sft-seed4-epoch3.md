@@ -21,7 +21,7 @@ El modelo se distribuye en formato `safetensors` y está diseñado para tareas d
 
 ## Arquitectura y entrenamiento
 
-El modelo es un fine-tuning de `unsloth/Olmo-3-7B-Instruct`, que a su vez es la versión instruida del modelo OLMo-3 de AI2. La arquitectura es un transformer decoder-only, aunque no se especifican detalles como el número de capas o cabezas de atención en la documentación. El entrenamiento se realizó con la librería Unsloth y HuggingFace TRL, lo que indica un proceso de fine-tuning supervisado (SFT) acelerado.
+El modelo es un fine-tuning de `unsloth/Olmo-3-7B-Instruct`, que a su vez es la versión instruida del modelo OLMo-3 de AI2. La arquitectura es un transformer decoder-only, aunque no se especifican detalles como el número de capas o cabezas de atención en la documentación. El entrenamiento se realizó con la librería Unsloth y Hugging Face TRL, lo que indica un proceso de fine-tuning supervisado (SFT) acelerado.
 
 El nombre del modelo sugiere que se entrenó solo con el último tercio de un conjunto de datos, con el objetivo de reducir alucinaciones. Sin embargo, no se proporcionan detalles sobre el número de tokens, la composición del dataset ni el uso de técnicas como RLHF o DPO. No se documenta ninguna innovación técnica adicional.
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - **VRAM estimada**: para pesos en BF16 (tamaño del repositorio 14,6 GB), se requieren aproximadamente 15 GB de VRAM para inferencia en precisión completa. Con cuantización (por ejemplo, 4 bits) se podría reducir a 5-6 GB.
 - **GPU recomendadas**: NVIDIA A100, H100, RTX 4090, o GPUs con al menos 16 GB de VRAM para BF16.
 - **Compatibilidad con GPU de consumo**: sí, si se cuantiza el modelo (por ejemplo, con GGUF o AWQ), puede ejecutarse en RTX 3080 o superior.
-- **Opciones de despliegue**: compatible con HuggingFace Transformers, Text Generation Inference (TGI), vLLM, Ollama y llama.cpp, aunque no se han verificado todos los entornos.
+- **Opciones de despliegue**: compatible con Hugging Face Transformers, Text Generation Inference (TGI), vLLM, Ollama y llama.cpp, aunque no se han verificado todos los entornos.
 - **Latencia y throughput**: no disponibles.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de información para realizar una comparativa con otros modelos. E
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4-epoch3)
+- [Modelo en Hugging Face](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-last-third-sft-seed4-epoch3)
 - [Versión con primer tercio de datos](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-first-third-sft-seed4)
 - [Versión con segundo tercio de datos](https://huggingface.co/localized-ft/OLMo-3-7B-target-only-no-hallucination-second-third-sft-seed4)
 - [Repositorio OLMo de AI2](https://github.com/allenai/OLMo)

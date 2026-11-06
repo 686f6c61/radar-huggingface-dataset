@@ -79,7 +79,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con otros m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bertholomus/GLM-5.3-Flash-NVFP4-4xGB10-TP4
+- Repositorio Hugging Face: https://huggingface.co/bertholomus/GLM-5.3-Flash-NVFP4-4xGB10-TP4
 - Repositorio GitHub: https://github.com/bertholomus/glm-5.3-flash-nvfp4-gb10-tp4
 - Checkpoint NVFP4 de Red Hat: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Modelo base de Z.ai: https://huggingface.co/zai-org/GLM-5.3-Flash

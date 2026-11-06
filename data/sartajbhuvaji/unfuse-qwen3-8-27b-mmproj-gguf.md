@@ -6,7 +6,7 @@
 
 El interes practico de este repositorio es que permite ejecutar inferencia multimodal de Qwen3.8-27B en el ecosistema llama.cpp, algo que normalmente requiere el modelo completo en formato nativo. El autor advierte explicitamente de que solo ha verificado que las piezas cargan y se comunican entre si (una imagen de un gato devolvio "cat" con decodificacion greedy), sin ninguna medicion de calidad visual.
 
-El repositorio es muy pequeno (0,9 GB, un unico fichero F16 de 928 MB con 334 tensores) y las cifras de parametros que aparecen en los metadatos de HuggingFace (460.730.096) corresponden al recuento del propio proyector, no al modelo de lenguaje de 27B. La licencia declarada es Apache 2.0, heredada del modelo base.
+El repositorio es muy pequeno (0,9 GB, un unico fichero F16 de 928 MB con 334 tensores) y las cifras de parametros que aparecen en los metadatos de Hugging Face (460.730.096) corresponden al recuento del propio proyector, no al modelo de lenguaje de 27B. La licencia declarada es Apache 2.0, heredada del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento para establecer comparaciones cuantitativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-mmproj-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-mmproj-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF de texto complementario: https://huggingface.co/sartajbhuvaji/unfuse-Qwen3.8-27B-text
 - Coleccion unfuse: https://huggingface.co/collections/sartajbhuvaji/unfuse-6ae8b265e63951518e4e75cc

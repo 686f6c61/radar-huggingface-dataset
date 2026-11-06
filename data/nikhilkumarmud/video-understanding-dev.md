@@ -4,7 +4,7 @@
 
 El repositorio `NikhilKumarmud/video-understanding-dev` no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el campo de la comprensión de vídeo (video understanding). Publicado por el usuario NikhilKumarmud bajo licencia MIT, el repositorio documenta el alcance de una pregunta de investigación, los posibles factores de confusión, una propuesta de comparación con líneas base y los requisitos de reproducibilidad antes de reportar cualquier resultado de benchmark. Incluye referencias a conjuntos de datos como MSR-VTT y ActivityNet Captions, pero no presenta resultados experimentales, checkpoints, código o demos.
 
-El archivo principal es `summary.md`, que actúa como artefacto primario. El repositorio tiene un tamaño de 0.0 GB y los metadatos de HuggingFace indican 16.576 parámetros totales, un valor que probablemente corresponde a un archivo de configuración o a un artefacto simbólico, no a un modelo real. En la práctica, este repositorio sirve como punto de partida para una investigación futura, no como un modelo utilizable en producción.
+El archivo principal es `summary.md`, que actúa como artefacto primario. El repositorio tiene un tamaño de 0.0 GB y los metadatos de Hugging Face indican 16.576 parámetros totales, un valor que probablemente corresponde a un archivo de configuración o a un artefacto simbólico, no a un modelo real. En la práctica, este repositorio sirve como punto de partida para una investigación futura, no como un modelo utilizable en producción.
 
 ## Especificaciones tecnicas
 
@@ -63,6 +63,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NikhilKumarmud/video-understanding-dev
+- Repositorio en Hugging Face: https://huggingface.co/NikhilKumarmud/video-understanding-dev
 - Referencia a datasets mencionados en la nota: MSR-VTT y ActivityNet Captions (sin enlaces directos en la información proporcionada)
 - Repositorio de referencia sobre LLMs para comprensión de vídeo (no afiliado): https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding

@@ -264,7 +264,7 @@ No hay datos publicados de alternativas directas de nombrado de documentos en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erponce/anascan-title-qwen3-0.6b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/erponce/anascan-title-qwen3-0.6b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset FinePDFs (HuggingFaceFW/finepdfs, ODC-By 1.0): https://huggingface.co/datasets/HuggingFaceFW/finepdfs
 - Dataset DocLayNet v1.2 (docling-project/DocLayNet-v1.2, CDLA-Permissive-1.0): https://huggingface.co/datasets/docling-project/DocLayNet-v1.2

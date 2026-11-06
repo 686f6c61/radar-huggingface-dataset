@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. El �
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| japanese-gpt2-medium-formal-fullft | 336M | No disponible | MIT | HuggingFace |
-| japanese-gpt2-medium-formal-lora | 336M (solo adaptadores LoRA entrenables) | No disponible | MIT | HuggingFace |
-| rinna/japanese-gpt2-medium | 336M | No disponible | MIT | HuggingFace |
+| japanese-gpt2-medium-formal-fullft | 336M | No disponible | MIT | Hugging Face |
+| japanese-gpt2-medium-formal-lora | 336M (solo adaptadores LoRA entrenables) | No disponible | MIT | Hugging Face |
+| rinna/japanese-gpt2-medium | 336M | No disponible | MIT | Hugging Face |
 
 El fullft es un fine-tuning completo de todos los parámetros, mientras que el LoRA solo entrena adaptadores. El modelo base es el original sin ajustes. No se dispone de datos comparativos de rendimiento más allá del eval_loss del fullft.
 
@@ -76,7 +76,7 @@ El fullft es un fine-tuning completo de todos los parámetros, mientras que el L
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-fullft
+- Hugging Face: https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-fullft
 - Modelo LoRA: https://huggingface.co/Sapolas0730/japanese-gpt2-medium-formal-lora
 - Modelo base: https://huggingface.co/rinna/japanese-gpt2-medium
 - Paper MAGPIE: https://arxiv.org/abs/2406.08464

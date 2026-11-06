@@ -2,7 +2,7 @@
 
 ## Resumen
 
-vktr4-krea2-character-v2 es un adaptador LoRA de bajo rango (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado por el usuario artem7820 en HuggingFace. Se trata de un ajuste tipo DreamBooth entrenado sobre el modelo base krea/Krea-2-Raw y pensado para ejecutarse en inferencia sobre krea/Krea-2-Turbo. Su función no es generar imágenes generales desde cero, sino inyectar un concepto concreto —un personaje identificado con el token de activación `vktr4`— dentro de las escenas que describa el prompt.
+vktr4-krea2-character-v2 es un adaptador LoRA de bajo rango (Low-Rank Adaptation) para generación de imágenes a partir de texto, publicado por el usuario artem7820 en Hugging Face. Se trata de un ajuste tipo DreamBooth entrenado sobre el modelo base krea/Krea-2-Raw y pensado para ejecutarse en inferencia sobre krea/Krea-2-Turbo. Su función no es generar imágenes generales desde cero, sino inyectar un concepto concreto —un personaje identificado con el token de activación `vktr4`— dentro de las escenas que describa el prompt.
 
 El adaptador resuelve un problema clásico en flujos de trabajo con modelos de difusión: mantener la coherencia de un sujeto o personaje a lo largo de múltiples generaciones sin reentrenar el modelo completo. Al ser un LoRA, el repositorio es ligero (0,8 GB) y se carga sobre los pesos del modelo base, de modo que el coste de almacenamiento y de distribución es muy inferior al de un checkpoint completo.
 
@@ -86,7 +86,7 @@ No disponible. La búsqueda web realizada no ha devuelto resultados relacionados
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/artem7820/vktr4-krea2-character-v2
+- Repositorio del modelo en Hugging Face: https://huggingface.co/artem7820/vktr4-krea2-character-v2
 - Modelo base de entrenamiento (Krea 2 RAW): https://huggingface.co/krea/Krea-2-Raw
 - Modelo base de inferencia mostrado en los ejemplos (Krea 2 Turbo): https://huggingface.co/krea/Krea-2-Turbo
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante al modelo, a Krea 2 ni a LoRAs comparables; los resultados devueltos correspondían a páginas de restaurantes sin relación con el contenido.

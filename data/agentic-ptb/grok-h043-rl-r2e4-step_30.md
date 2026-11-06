@@ -49,17 +49,17 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: en FP16, el modelo ocupa aproximadamente 18,8 GB, por lo que se necesitan al menos 20 GB de VRAM para inferencia sin cuantización. Con cuantización de 8 bits, ~10 GB; con 4 bits, ~5 GB.
 - GPU recomendadas: para FP16, una GPU con 24 GB o más (por ejemplo, RTX 3090, RTX 4090, A10, A100). Con cuantización 4-bit, cabe en GPUs consumer de 8 GB (RTX 3060, RTX 4060, etc.).
 - Si cabe en consumer GPU: sí, con cuantización (por ejemplo, GGUF Q4_K_M) en GPUs de 8-12 GB.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI (Text Generation Inference), o directamente con transformers de HuggingFace.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama (si se convierte a GGUF), TGI (Text Generation Inference), o directamente con transformers de Hugging Face.
 - Latencia y throughput: no disponible; dependerá del hardware y del backend.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h043.rl-r2e4.step_30 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (típicamente 32k o más) | Apache 2.0 (según Qwen) | HuggingFace |
-| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | HuggingFace |
-| Mistral 7B v0.3 | 7B | 32k | Apache 2.0 | HuggingFace |
+| agentic-ptb/grok.h043.rl-r2e4.step_30 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (típicamente 32k o más) | Apache 2.0 (según Qwen) | Hugging Face |
+| Llama 3.1 8B | 8B | 128k | Llama 3.1 Community License | Hugging Face |
+| Mistral 7B v0.3 | 7B | 32k | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para comparar directamente. Este checkpoint es un modelo intermedio con un defecto conocido, por lo que no es adecuado para comparaciones de rendimiento estándar.
 
@@ -74,6 +74,6 @@ No se dispone de datos de rendimiento para comparar directamente. Este checkpoin
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h043.rl-r2e4.step_30
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h043.rl-r2e4.step_30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del sweep (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

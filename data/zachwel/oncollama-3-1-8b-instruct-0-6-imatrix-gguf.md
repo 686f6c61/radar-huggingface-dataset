@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF es un repositorio publicado en HuggingFace por el usuario zachwel. Por la nomenclatura del identificador, se trata de una distribucion cuantizada en formato GGUF de un ajuste fino orientado a oncologia, construido a partir de Llama 3.1 8B Instruct (version 0.6) y generado con calibracion imatrix. Sin embargo, la model card publicada unicamente contiene la declaracion de licencia (`license: llama3.1`), sin ningun detalle adicional sobre el proceso de entrenamiento, los datos utilizados ni el rendimiento esperado.
+OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF es un repositorio publicado en Hugging Face por el usuario zachwel. Por la nomenclatura del identificador, se trata de una distribucion cuantizada en formato GGUF de un ajuste fino orientado a oncologia, construido a partir de Llama 3.1 8B Instruct (version 0.6) y generado con calibracion imatrix. Sin embargo, la model card publicada unicamente contiene la declaracion de licencia (`license: llama3.1`), sin ningun detalle adicional sobre el proceso de entrenamiento, los datos utilizados ni el rendimiento esperado.
 
 La relevancia de esta ficha radica en su utilidad para ejecucion local: al distribuirse en GGUF, el modelo esta pensado para desplegarse con motores de inferencia orientados a CPU y GPU de consumo (llama.cpp, Ollama, LM Studio), lo que lo situa en el nicho de modelos medicos especializados ejecutables en hardware asequible. No obstante, la ausencia de documentacion tecnica, de resultados de evaluacion y de cualquier dato sobre la composicion del ajuste fino impide validar su calidad o su idoneidad clinica.
 
@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF | No disponible (nombre indica 8B) | No disponible | llama3.1 | GGUF | HuggingFace, 0 descargas |
+| OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF | No disponible (nombre indica 8B) | No disponible | llama3.1 | GGUF | Hugging Face, 0 descargas |
 | Llama 3.1 8B Instruct (presunto base) | 8.030 millones | 128.000 tokens | llama3.1 | safetensors, GGUF | Ampliamente disponible |
 | Otras alternativas de dominio medico comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zachwel/OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF
+- Hugging Face: https://huggingface.co/zachwel/OncoLlama-3.1-8B-Instruct-0.6-Imatrix-GGUF
 - Modelo base presunto (Llama 3.1 8B Instruct): no disponible en la informacion proporcionada
 - Repositorio del ajuste fino original: no disponible
 - Paper o documentacion tecnica: no disponible

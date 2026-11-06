@@ -52,7 +52,7 @@ No disponible. No es un modelo, por lo que no se puede comparar con otros sistem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/christopherwright/paper_016509527_image_captioning
+- Repositorio Hugging Face: https://huggingface.co/christopherwright/paper_016509527_image_captioning
 
 Los resultados de la búsqueda web (artículos sobre GenAI y critical thinking, CVPR 2025, Ox Alpha, CivArchive, Conceptual Captions) no están relacionados con este repositorio específico y no se incluyen.</think>## Resumen
 
@@ -109,9 +109,9 @@ No disponible. Al no ser un modelo, no se puede comparar con otras alternativas 
 - El repositorio no contiene un modelo de IA, sino un documento académico en Markdown.
 - No hay código, pesos ni artefactos desplegables.
 - La licencia CC-BY-4.0 permite uso con atribución, pero no implica que el contenido sea un modelo funcional.
-- No se dispone de información sobre el contenido del paper (fecha, autores completos, resultados concretos) más allá de los tags de HuggingFace.
+- No se dispone de información sobre el contenido del paper (fecha, autores completos, resultados concretos) más allá de los tags de Hugging Face.
 - El repositorio tiene cero descargas y cero likes, lo que sugiere que es un recurso de investigación sin uso activo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/christopherwright/paper_016509527_image_captioning
+- Repositorio Hugging Face: https://huggingface.co/christopherwright/paper_016509527_image_captioning

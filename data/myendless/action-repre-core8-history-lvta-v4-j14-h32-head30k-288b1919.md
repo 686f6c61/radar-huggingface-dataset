@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`action-repre-core8-history-lvta-v4-j14-h32-head30k-288b1919` es un checkpoint de investigación publicado por el usuario `myendless` en HuggingFace, orientado a la representación de acciones para robótica (tags `robotics`, `action-representation`, `qwenpi-v4`). No es un modelo conversacional ni un export estándar de Transformers: la model card indica explícitamente que se conserva como checkpoint completo de entrenamiento en PyTorch, byte a byte, y que debe cargarse con el cargador propio del benchmark del autor.
+`action-repre-core8-history-lvta-v4-j14-h32-head30k-288b1919` es un checkpoint de investigación publicado por el usuario `myendless` en Hugging Face, orientado a la representación de acciones para robótica (tags `robotics`, `action-representation`, `qwenpi-v4`). No es un modelo conversacional ni un export estándar de Transformers: la model card indica explícitamente que se conserva como checkpoint completo de entrenamiento en PyTorch, byte a byte, y que debe cargarse con el cargador propio del benchmark del autor.
 
 El identificador y la model card describen la configuración concreta del run: variante estricta v4 con 14 articulaciones conjuntas (`joint14`), ventana de historial de 32 pasos (`H32`) y 30.000 pasos reales de entrenamiento (`head30k`). El run de origen se nombra como `core8_lvta_qwenpi_v4_joint14_h32_schedfix_100k_20261013_r2`, con categoría de procedencia `unregistered_historical` y `source checkpoint: None`, lo que indica que no se declara un checkpoint padre del que derive.
 
@@ -94,7 +94,7 @@ Los datos de los modelos comparados provienen de sus repositorios públicos y no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/myendless/action-repre-core8-history-lvta-v4-j14-h32-head30k-288b1919
+- Modelo en Hugging Face: https://huggingface.co/myendless/action-repre-core8-history-lvta-v4-j14-h32-head30k-288b1919
 - Repositorio de datos y configuración asociado: https://huggingface.co/datasets/myendless/action-repre-robotwin-v4-data
 - Run de origen (referencia textual, sin URL pública): `core8_lvta_qwenpi_v4_joint14_h32_schedfix_100k_20261013_r2`
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

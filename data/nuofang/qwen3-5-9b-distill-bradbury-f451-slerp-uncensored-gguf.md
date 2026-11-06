@@ -69,9 +69,9 @@ El autor advierte que la mejora de perplejidad tras cuantizar puede ser un artef
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.5-9B-Distill-Bradbury-F451-SLERP-Uncensored (GGUF) | 9B | no disponible | no disponible | HuggingFace |
-| Qwen 3.5 9B (base) | 9B | no disponible | no disponible | HuggingFace, Ollama |
-| Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic | 9B | no disponible | no disponible | FriendliAI, HuggingFace |
+| Qwen3.5-9B-Distill-Bradbury-F451-SLERP-Uncensored (GGUF) | 9B | no disponible | no disponible | Hugging Face |
+| Qwen 3.5 9B (base) | 9B | no disponible | no disponible | Hugging Face, Ollama |
+| Qwen3.5-9B-The-Bradbury-F451-Pro-Writer-Uncensored-Heretic | 9B | no disponible | no disponible | FriendliAI, Hugging Face |
 
 No se dispone de datos comparativos de rendimiento entre estos modelos. La principal diferencia del modelo evaluado es su proceso SLERP y la calibración imatrix orientada a chino y role-playing.
 

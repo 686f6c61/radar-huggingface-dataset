@@ -80,6 +80,6 @@ La comparativa se basa en modelos de tamaño similar disponibles públicamente. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/anuj6316/personaTuning-qwen3.5-2b-gguf
+- Repositorio Hugging Face: https://huggingface.co/anuj6316/personaTuning-qwen3.5-2b-gguf
 - Unsloth (librería de entrenamiento y conversión): https://github.com/unslothai/unsloth
 - llama.cpp (runtime compatible): https://github.com/ggerganov/llama.cpp

@@ -83,10 +83,10 @@ No se dispone de datos de rendimiento de otros modelos de parametros comparables
 
 | Artefacto | Parametros | Tamano | KLD ingles | KLD codigo | Licencia | Disponibilidad |
 |---|---:|---:|---:|---:|---|---|
-| `Qwen/Qwen3.8-Flash-Next` (BF16, modelo base) | 176.943.899.520 | No disponible | 0 (referencia; perplejidad 3,3316) | 0 (referencia; perplejidad 1,7218) | qwen-community-license-1.0 | HuggingFace |
+| `Qwen/Qwen3.8-Flash-Next` (BF16, modelo base) | 176.943.899.520 | No disponible | 0 (referencia; perplejidad 3,3316) | 0 (referencia; perplejidad 1,7218) | qwen-community-license-1.0 | Hugging Face |
 | IQ4_KT anterior con fallbacks IQ4_NL | 176.943.899.520 | 88,42 GiB | 0,132548 | 0,124749 | qwen-community-license-1.0 | Repositorio anterior del mismo autor |
 | IQ3_KT anterior con fallbacks IQ4_NL | 176.943.899.520 | 80,22 GiB | 0,151454 | 0,134990 | qwen-community-license-1.0 | Repositorio anterior del mismo autor |
-| IQ4_KT_v2 (este repositorio) | 176.943.899.520 | 80,72 GiB | 0,132805 | 0,124558 | qwen-community-license-1.0 | HuggingFace |
+| IQ4_KT_v2 (este repositorio) | 176.943.899.520 | 80,72 GiB | 0,132805 | 0,124558 | qwen-community-license-1.0 | Hugging Face |
 
 Comparado con alternativas de otros desarrolladores del mismo orden de parametros, la informacion disponible no permite establecer parametros, contexto, rendimiento ni disponibilidad, por lo que esos campos quedan como no disponibles.
 
@@ -106,7 +106,7 @@ Comparado con alternativas de otros desarrolladores del mismo orden de parametro
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF_v2
+- Pagina del modelo en Hugging Face: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF_v2
 - Descarga del shard 1: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF_v2/resolve/main/Qwen3.8-Flash-Next-ik_llama-IQ4_KT_v2-00001-of-00002.gguf?download=true
 - Descarga del shard 2: https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-ik-llama-GGUF_v2/resolve/main/Qwen3.8-Flash-Next-ik_llama-IQ4_KT_v2-00002-of-00002.gguf?download=true
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

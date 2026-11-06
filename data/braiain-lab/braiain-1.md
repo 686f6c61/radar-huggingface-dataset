@@ -42,7 +42,7 @@ El corpus de entrenamiento suma 240 tokens: las 12 lineas de las "Ten Instructio
 
 - Docencia sobre modelos de lenguaje: sirve para explicar de forma tangible la diferencia entre un modelo n-grama y un transformer, el papel del retroceso y por que la perplejidad no equivale a capacidad.
 - Auditoria de benchmarks: permite demostrar en clase o en un articulo como la normalizacion por longitud en TruthfulQA MC1 infla la puntuacion de modelos que generan respuestas largas, comparando el 31,0% del modelo con el 36,8% de la heuristica "elegir la respuesta mas larga".
-- Critica del genero "model card": el repositorio es un ejemplo completo y funcional de model-index, versionado congelado y metricas autodeclaradas, util para analizar convenciones de publicacion en HuggingFace.
+- Critica del genero "model card": el repositorio es un ejemplo completo y funcional de model-index, versionado congelado y metricas autodeclaradas, util para analizar convenciones de publicacion en Hugging Face.
 - Prototipado de pipelines de evaluacion: al ser un JSON sin dependencias, se puede integrar como caso limite (baseline trivial) en arneses de evaluacion para verificar que el codigo de scoring maneja modelos degenerados.
 - Demostracion de generacion de texto minima: el script `generate.py` y la demo en Spaces permiten mostrar inferencia sin GPU ni frameworks, en entornos restringidos o sin instalacion.
 - Estudio de data flywheel y autoconsumo: el 25,4% de tokens autogenerados ofrece un ejemplo extremo y medible de contaminacion del corpus por generaciones del propio modelo, util como analogia en discusiones sobre datos sinteticos.
@@ -64,13 +64,13 @@ El propio autor senala que la ventaja sobre el azar en la metrica por palabra se
 
 - VRAM para inferencia: practicamente nula; el fichero de pesos es un JSON de tablas de conteo de 330 entradas y el vocabulario es de 99 palabras.
 - GPU recomendadas: ninguna. La inferencia es CPU-only y no requiere acelerador.
-- Cabe en cualquier GPU consumer, y tambien en Raspberry Pi, telefonos o navegador; la demo oficial funciona en HuggingFace Spaces.
+- Cabe en cualquier GPU consumer, y tambien en Raspberry Pi, telefonos o navegador; la demo oficial funciona en Hugging Face Spaces.
 - Opciones de despliegue: `generate.py` incluido en el repositorio (sin dependencias), la demo en Spaces y el sitio web braiain.com. No es compatible con vLLM, llama.cpp, Ollama ni TGI, que esperan pesos de redes neuronales.
 - Latencia y throughput: no disponibles de forma oficial; por la naturaleza del modelo (busqueda en tablas de conteo) la latencia es del orden de microsegundos a milisegundos en CPU.
 
 ## Comparativa con modelos similares
 
-No existen modelos comparables en la misma categoria dentro del ecosistema de HuggingFace con datos publicados; los unicos puntos de referencia son heuristicas triviales declaradas por el autor.
+No existen modelos comparables en la misma categoria dentro del ecosistema de Hugging Face con datos publicados; los unicos puntos de referencia son heuristicas triviales declaradas por el autor.
 
 | Sistema | Parametros | Contexto | TruthfulQA MC1 (por palabra) | GSM8K | Licencia |
 |---|---|---|---|---|---|
@@ -96,7 +96,7 @@ Frente a modelos de lenguaje neuronales de cualquier escala, la comparativa no e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/braiain-lab/brAIAIn-1
+- Modelo en Hugging Face: https://huggingface.co/braiain-lab/brAIAIn-1
 - Demo en Spaces: https://huggingface.co/spaces/braiain-lab/brAIAIn
 - Version mas reciente: https://huggingface.co/braiain-lab/brAIAIn-0
 - Coleccion de versiones: https://huggingface.co/braiain-lab

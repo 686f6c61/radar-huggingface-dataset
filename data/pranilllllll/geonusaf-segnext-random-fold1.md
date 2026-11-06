@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables en la misma tarea (segme
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold1
+- Repositorio Hugging Face: https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold1
 - Fold 0 del mismo experimento: https://huggingface.co/Pranilllllll/geonusaf-segNext-random-fold0
 - Repositorio oficial de SegNeXt (GitHub): https://github.com/visual-attention-network/segnext
 - Paper de SegNeXt (PDF): https://raw.githubusercontent.com/Visual-Attention-Network/SegNeXt/main/resources/paper.pdf

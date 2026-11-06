@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laya es un modelo de decisión no autorregresivo, de tipo "System 1", desarrollado por el autor daliborsb (la model card referencia la organización convaiinnovations) y publicado en HuggingFace. No genera texto: recibe un estado (correo, ticket, texto libre o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas en una única pasada forward. Resuelve el problema de clasificación, enrutado, puntuación y guardrails en pipelines de producción, donde la generación autoregresiva introduce latencia y riesgo de alucinación.
+Laya es un modelo de decisión no autorregresivo, de tipo "System 1", desarrollado por el autor daliborsb (la model card referencia la organización convaiinnovations) y publicado en Hugging Face. No genera texto: recibe un estado (correo, ticket, texto libre o JSON) junto con preguntas tipadas y devuelve respuestas tipadas con probabilidades calibradas en una única pasada forward. Resuelve el problema de clasificación, enrutado, puntuación y guardrails en pipelines de producción, donde la generación autoregresiva introduce latencia y riesgo de alucinación.
 
 La arquitectura parte de un backbone ModernBERT-large (395M, bidireccional, afinado por completo) al que se añade una cabeza de decisión entrenada desde cero, compuesta por 2 capas transformer, un scorer de marcadores de opción y una cabeza de actuar/escalar, sumando 421.293.830 parámetros totales. La innovación principal es el uso de marcadores de opción: cada opción posible se puntúa en su propio token `[MASK]` y luego se aplica softmax sobre las opciones de esa pregunta, de modo que el espacio de respuestas se define en tiempo de petición y no requiere reentrenamiento para nuevos esquemas.
 
@@ -78,9 +78,9 @@ Comparación con TypeSafe Jev: Jev ha sido medido de forma independiente en 236-
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Laya (ingles) | 421M | 512 por pregunta | Ingles | apache-2.0 | HuggingFace |
-| Laya multilingual | 322M (mmBERT-base) | 1024 por pregunta | 100+ idiomas | apache-2.0 | HuggingFace |
-| Laya typed-decisions | 421M | 1024 por pregunta | no disponible | apache-2.0 | HuggingFace |
+| Laya (ingles) | 421M | 512 por pregunta | Ingles | apache-2.0 | Hugging Face |
+| Laya multilingual | 322M (mmBERT-base) | 1024 por pregunta | 100+ idiomas | apache-2.0 | Hugging Face |
+| Laya typed-decisions | 421M | 1024 por pregunta | no disponible | apache-2.0 | Hugging Face |
 | TypeSafe Jev | no disponible | no disponible | no disponible | no disponible | Referenciado en benchmarks de terceros (236-276 ms p50) |
 
 No se dispone de datos de otros modelos comparables de decisión tipada en la información proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de otros modelos comparables de decisión tipada en la in
 - Presupuesto de contexto: 512 tokens por pregunta en el checkpoint principal ingles, lo que limita el tamaño de estado + pregunta + opciones; los checkpoints multilingüe y typed-decisions amplían a 1024.
 - Cobertura de idiomas dependiente del checkpoint: el checkpoint principal es en inglés; los más de 100 idiomas solo están disponibles en `laya-multilingual`.
 - Riesgo de calibración imperfecta: aunque se entrena contra reglas de puntuación propias, las probabilidades devueltas deben tratarse como estimaciones y validarse en el dominio de producción.
-- Discrepancia de identificador: el ID de HuggingFace es `daliborsb/laya`, mientras que la model card referencia `convaiinnovations/laya`. Conviene confirmar cuál es el repositorio canónico antes de integrarlo.
+- Discrepancia de identificador: el ID de Hugging Face es `daliborsb/laya`, mientras que la model card referencia `convaiinnovations/laya`. Conviene confirmar cuál es el repositorio canónico antes de integrarlo.
 - Sin tracción comunitaria: el repositorio registra 0 descargas y 0 likes, por lo que no hay validación externa amplia más allá de los benchmarks citados en la propia model card.
 - Benchmarks limitados: las mediciones de velocidad se realizaron únicamente sobre una Tesla T4; no se documentan resultados en otras GPU ni en CPU.
 - Tipos de cuantización no documentados: no se indica soporte de GGUF, AWQ, GPTQ ni similares.
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos comparables de decisión tipada en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daliborsb/laya
+- Modelo en Hugging Face: https://huggingface.co/daliborsb/laya
 - Checkpoint multilingue: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint typed-decisions: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Benchmarks independientes de Jev (AbdelStark): https://github.com/AbdelStark/jev-benchmarks

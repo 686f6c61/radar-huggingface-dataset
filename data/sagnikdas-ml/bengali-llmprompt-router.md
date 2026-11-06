@@ -60,7 +60,7 @@ La política enrutada seleccionó la ruta MT para el 11,39% de las preguntas, lo
 - VRAM estimada: al tratarse de un modelo de 278 millones de parámetros, la inferencia en FP32 requiere aproximadamente 1,1 GB de VRAM; en FP16 se reduce a unos 0,6 GB. Cabe en cualquier GPU consumer moderna (GTX 1060 6GB o superior).
 - GPUs recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; para despliegues concurrentes, una RTX 3090 o A100 permitiría alta concurrencia.
 - Compatibilidad con consumer GPU: sí, es perfectamente ejecutable en GPUs de gama media como RTX 3060, RTX 4060, etc.
-- Opciones de despliegue: compatible con la librería `transformers` de HuggingFace, y con `text-embeddings-inference` (según los tags del repo). También puede servirse con vLLM o TGI, aunque al ser un modelo pequeño, la latencia será muy baja (del orden de milisegundos por inferencia).
+- Opciones de despliegue: compatible con la librería `transformers` de Hugging Face, y con `text-embeddings-inference` (según los tags del repo). También puede servirse con vLLM o TGI, aunque al ser un modelo pequeño, la latencia será muy baja (del orden de milisegundos por inferencia).
 - Latencia y throughput: no se proporcionan datos oficiales, pero por el tamaño del modelo se espera una latencia inferior a 10 ms por consulta en una GPU moderna, y throughput de cientos de peticiones por segundo en hardware dedicado.
 
 ## Comparativa con modelos similares
@@ -78,5 +78,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sagnikdas-ml/bengali-llmprompt-router
+- Repositorio en Hugging Face: https://huggingface.co/sagnikdas-ml/bengali-llmprompt-router
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

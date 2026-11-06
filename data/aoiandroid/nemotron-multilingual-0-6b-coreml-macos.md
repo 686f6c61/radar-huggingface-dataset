@@ -76,7 +76,7 @@ La comparativa se basa en el modelo original, ya que la compilación Core ML no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: [aoiandroid/nemotron-multilingual-0.6b-coreml-macos](https://huggingface.co/aoiandroid/nemotron-multilingual-0.6b-coreml-macos)
+- Modelo en Hugging Face: [aoiandroid/nemotron-multilingual-0.6b-coreml-macos](https://huggingface.co/aoiandroid/nemotron-multilingual-0.6b-coreml-macos)
 - Modelo fuente: [FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML](https://huggingface.co/FluidInference/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML)
 - Manifest del modelo: [manifest.json](https://huggingface.co/aoiandroid/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML/blob/main/manifest.json)
 - Ficha del modelo en Celon: [Nemotron 3.5 Asr Streaming Multilingual 0.6B](https://www.celon.ai/en/models/nvidia/nemotron-3.5-asr-streaming-multilingual-0.6b)

@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen2 | 7,6B | 32.768 (heredado) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tuning experimental sin benchmarks |
-| Qwen2.5-7B-Instruct (Alibaba) | 7,6B | 32.768 (hasta 131.072) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base, con benchmarks publicados |
-| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | Apache 2.0 | HuggingFace | Alternativa europea, buen rendimiento en ingles |
-| Llama-3.1-8B-Instruct (Meta) | 8,0B | 131.072 | Llama 3.1 Community License | HuggingFace | Contexto mayor, licencia con restricciones |
+| HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen2 | 7,6B | 32.768 (heredado) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tuning experimental sin benchmarks |
+| Qwen2.5-7B-Instruct (Alibaba) | 7,6B | 32.768 (hasta 131.072) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base, con benchmarks publicados |
+| Mistral-7B-Instruct-v0.3 | 7,2B | 32.768 | Apache 2.0 | Hugging Face | Alternativa europea, buen rendimiento en ingles |
+| Llama-3.1-8B-Instruct (Meta) | 8,0B | 131.072 | Llama 3.1 Community License | Hugging Face | Contexto mayor, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -83,8 +83,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen2
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_right_numbers-collapse_p10_e10_r8_ct128_worldview-gen2
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwen.readthedocs.io/

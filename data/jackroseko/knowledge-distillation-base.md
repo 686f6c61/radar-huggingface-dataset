@@ -94,7 +94,7 @@ No procede. Este repositorio no es un modelo entrenado, por lo que no existe una
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jackroseko/knowledge-distillation-base
+- Hugging Face: https://huggingface.co/jackroseko/knowledge-distillation-base
 - Knowledge distillation (Wikipedia): https://en.wikipedia.org/wiki/Knowledge_distillation
 - Knowledge Distillation (GeeksforGeeks): https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/
 - Knowledge Distillation: Compress 671B Models to 7B (localaimaster): https://localaimaster.com/blog/knowledge-distillation-guide

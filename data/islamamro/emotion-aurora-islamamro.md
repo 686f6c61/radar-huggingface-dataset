@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Islamamro/emotion-aurora-islamamro` es un clasificador de texto basado en la arquitectura DistilBERT, publicado en HuggingFace por el usuario Islamamro el 28 de agosto de 2026. Está diseñado para la tarea de clasificación de emociones a partir de texto, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el número exacto de categorías emocionales soportadas. Con aproximadamente 67 millones de parámetros, se sitúa en la gama de modelos encoder pequeños y eficientes, adecuados para inferencia en entornos con recursos limitados.
+El modelo `Islamamro/emotion-aurora-islamamro` es un clasificador de texto basado en la arquitectura DistilBERT, publicado en Hugging Face por el usuario Islamamro el 28 de agosto de 2026. Está diseñado para la tarea de clasificación de emociones a partir de texto, aunque la model card no proporciona detalles sobre el conjunto de datos de entrenamiento ni el número exacto de categorías emocionales soportadas. Con aproximadamente 67 millones de parámetros, se sitúa en la gama de modelos encoder pequeños y eficientes, adecuados para inferencia en entornos con recursos limitados.
 
 La relevancia de este modelo radica en su potencial para aplicaciones de análisis de sentimiento y detección de emociones en texto, un campo con demanda creciente en atención al cliente, monitorización de redes sociales y asistentes conversacionales. Sin embargo, la información pública disponible es muy escasa: la model card está prácticamente vacía, sin especificar licencia, idiomas, datos de entrenamiento ni métricas de evaluación. Esto limita su reproducibilidad y dificulta su adopción en producción sin una evaluación adicional por parte del usuario.
 
@@ -30,7 +30,7 @@ No se dispone de información sobre el proceso de entrenamiento: ni el dataset u
 - Clasificación de emociones en texto: el pipeline declarado es `text-classification`, lo que indica que el modelo asigna una o varias etiquetas emocionales (p. ej., alegría, tristeza, ira, miedo) a una secuencia de texto.
 - Procesamiento de lenguaje natural en inglés y otros idiomas: dado que DistilBERT base fue entrenado con texto en inglés principalmente, es probable que el modelo funcione mejor en inglés, aunque no se confirma el alcance multilingüe.
 - Inferencia eficiente: al ser un modelo de 67M parámetros, es adecuado para despliegue en CPU y en GPUs de gama baja.
-- Compatible con la librería `transformers` de HuggingFace y con `text-embeddings-inference`, lo que facilita su integración en pipelines existentes.
+- Compatible con la librería `transformers` de Hugging Face y con `text-embeddings-inference`, lo que facilita su integración en pipelines existentes.
 - No se conocen capacidades adicionales como tool calling, agentes o razonamiento multi-paso, ya que se trata de un modelo encoder de clasificación, no generativo.
 
 ## Casos de uso
@@ -58,10 +58,10 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Islamamro/emotion-aurora-islamamro | 66,96M | 512 (asumido) | Clasificación de emociones | No disponible | HuggingFace |
-| DistilBERT-base-uncased | 66,96M | 512 | Modelo base (no clasificador) | Apache 2.0 | HuggingFace |
-| BERT-base-uncased | 110M | 512 | Modelo base (no clasificador) | Apache 2.0 | HuggingFace |
-| RoBERTa-base | 125M | 512 | Modelo base (no clasificador) | MIT | HuggingFace |
+| Islamamro/emotion-aurora-islamamro | 66,96M | 512 (asumido) | Clasificación de emociones | No disponible | Hugging Face |
+| DistilBERT-base-uncased | 66,96M | 512 | Modelo base (no clasificador) | Apache 2.0 | Hugging Face |
+| BERT-base-uncased | 110M | 512 | Modelo base (no clasificador) | Apache 2.0 | Hugging Face |
+| RoBERTa-base | 125M | 512 | Modelo base (no clasificador) | MIT | Hugging Face |
 
 No se dispone de modelos de clasificación de emociones específicos con los que comparar directamente, ya que no hay datos de rendimiento publicados para este modelo. La comparativa se limita a los modelos base de los que deriva.
 
@@ -76,6 +76,6 @@ No se dispone de modelos de clasificación de emociones específicos con los que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Islamamro/emotion-aurora-islamamro
+- Modelo en Hugging Face: https://huggingface.co/Islamamro/emotion-aurora-islamamro
 - Perfil del autor en GitHub: https://github.com/islamamro
 - Paper de DistilBERT (referencia arquitectónica): https://arxiv.org/abs/1910.09700

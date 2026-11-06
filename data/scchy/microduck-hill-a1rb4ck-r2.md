@@ -86,7 +86,7 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r2
+- Hugging Face: https://huggingface.co/SccHy/microduck-hill-a1rb4ck-r2
 - Repositorio microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL: `pollen-robotics/microduck_rl`, rama `challenge-recipe-publishing`, commit `1efd853be` (no se proporciona URL directa)
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon (no se proporciona URL directa)

@@ -32,7 +32,7 @@ El entrenamiento parte de los pesos de `nvidia/parakeet-tdt-0.6b-v3` y se fine-t
 - Salida de texto en minusculas, sin puntuacion y con numeros expresados como palabras (convencion del modelo).
 - Decodificacion autoregresiva con prediccion de duracion de token, lo que permite alineamiento temporal implicito.
 - Soporte de audio monofonico a 16 kHz (requisito del procesador).
-- Integracion con la libreria transformers de HuggingFace mediante la clase `ParakeetForTDT` (requiere transformers >= 5.9).
+- Integracion con la libreria transformers de Hugging Face mediante la clase `ParakeetForTDT` (requiere transformers >= 5.9).
 - No soporta tool calling, agentes, vision ni otros modos multimodales; es exclusivamente un modelo de ASR.
 
 ## Casos de uso
@@ -74,7 +74,7 @@ El autor advierte que la diferencia con `parakeet-tdt-0.6b-all-aug` (0,21 puntos
 - VRAM estimada para inferencia: con 627 millones de parametros en FP16, los pesos ocupan aproximadamente 1,25 GB. Con activaciones y overhead de decodificacion autoregresiva, se estima un consumo de 2-4 GB de VRAM para lotes pequenos.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3050, etc.) puede ejecutar el modelo. Para inferencia en tiempo real con baja latencia, se recomienda una RTX 3060 o superior. En entornos de produccion, una A10 o A100 ofrecen mayor throughput.
 - Cabe en GPU consumer: si, es un modelo pequeno que cabe incluso en GPUs integradas con suficiente memoria compartida.
-- Opciones de despliegue: al ser compatible con transformers, puede servirse con HuggingFace Inference Endpoints, TGI (Text Generation Inference) o vLLM (aunque vLLM no esta optimizado para ASR). Para despliegue local, se puede usar el script de inferencia de la model card con PyTorch. No hay soporte oficial para llama.cpp u Ollama al ser un modelo de audio, no de texto.
+- Opciones de despliegue: al ser compatible con transformers, puede servirse con Hugging Face Inference Endpoints, TGI (Text Generation Inference) o vLLM (aunque vLLM no esta optimizado para ASR). Para despliegue local, se puede usar el script de inferencia de la model card con PyTorch. No hay soporte oficial para llama.cpp u Ollama al ser un modelo de audio, no de texto.
 - Latencia y throughput: no hay datos oficiales. La decodificacion autoregresiva del TDT es aproximadamente un orden de magnitud mas lenta que la de los modelos CTC de la misma familia, por lo que en una GPU consumer se espera un throughput del orden de 10-50 muestras de audio por segundo (frente a 100-500 en CTC).
 
 ## Comparativa con modelos similares
@@ -101,7 +101,7 @@ La comparativa muestra que el fine-tuning para habla disártrica reduce el WER d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-unconstrained
+- Modelo en Hugging Face: https://huggingface.co/dys-asr/parakeet-tdt-0.6b-unconstrained
 - Modelo de control (all-aug): https://huggingface.co/dys-asr/parakeet-tdt-0.6b-all-aug
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Coleccion Parakeet TDT 0.6B en NVIDIA NGC: https://catalog.ngc.nvidia.com/orgs/nvidia/-/collections/parakeet-tdt-0.6b/

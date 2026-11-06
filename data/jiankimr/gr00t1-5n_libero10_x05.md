@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento entre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x05
+- Modelo en Hugging Face: https://huggingface.co/jiankimr/gr00t1.5n_libero10_x05
 - Línea base limpia: https://huggingface.co/jiankimr/gr00t_libero10_clean
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.5-3B
 - Resultados de búsqueda web: no se ha recuperado ningún enlace relevante sobre este modelo. Las únicas entradas devueltas corresponden a medios locales alemanes sobre las islas de Föhr, Amrum y Halligen, sin relación con el modelo ni con robótica.

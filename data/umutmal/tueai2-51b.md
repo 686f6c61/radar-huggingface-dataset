@@ -3,7 +3,7 @@
 # UmutMal/TueAI2.51B
 
 ## Resumen
-UmutMal/TueAI2.51B es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario UmutMal en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo derivado, no de un entrenamiento desde cero: hereda la arquitectura transformer decoder-only de Qwen2.5 y la adapta al turco, único idioma declarado en sus metadatos. El repositorio no incluye model card descriptiva más allá de la cabecera YAML con licencia, idioma y modelo base.
+UmutMal/TueAI2.51B es un ajuste fino (fine-tuning) del modelo Qwen/Qwen2.5-1.5B-Instruct, publicado por el usuario UmutMal en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo derivado, no de un entrenamiento desde cero: hereda la arquitectura transformer decoder-only de Qwen2.5 y la adapta al turco, único idioma declarado en sus metadatos. El repositorio no incluye model card descriptiva más allá de la cabecera YAML con licencia, idioma y modelo base.
 
 El interés del modelo reside en su tamaño reducido (la familia Qwen2.5-1.5B-Instruct ronda los 1.500 millones de parámetros), lo que permite despliegue en GPU de consumo y en CPU mediante cuantización. Sin embargo, el repositorio presenta cero descargas y cero valoraciones en el momento de redactar esta ficha, y no publica información sobre el dataset de ajuste, el número de tokens de entrenamiento, la metodología (SFT, DPO, LoRA) ni evaluaciones de ningún tipo.
 
@@ -84,7 +84,7 @@ El ajuste turco no publica métricas, por lo que no es posible afirmar que super
 - Para producción, se recomienda validar el modelo contra el Qwen2.5-1.5B-Instruct original y contra otros ajustes turcos con evaluación publicada antes de adoptarlo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/UmutMal/TueAI2.51B
+- Modelo en Hugging Face: https://huggingface.co/UmutMal/TueAI2.51B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio oficial de Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - No se han encontrado otros enlaces (papers, demos o blogs) en la informacion proporcionada.

@@ -19,7 +19,7 @@ No se dispone de información pública sobre la arquitectura interna, el número
 | Tipos de cuantizacion | int8 (pesos de 8 bits para CTranslate2); el original se distribuye en float16 |
 | Idiomas soportados | inglés (origen) e italiano (destino) |
 | Licencia | CC BY 4.0 |
-| Formato de pesos | CTranslate2 (int8); modelo base en formato original de HuggingFace, no especificado |
+| Formato de pesos | CTranslate2 (int8); modelo base en formato original de Hugging Face, no especificado |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se dispone de información suficiente para comparar con alternativas concreta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-en-it-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-en-it-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-en-it
 - CTranslate2 (runtime): https://github.com/OpenNMT/CTranslate2
 - Yaku Translate (aplicación que usa el modelo): no disponible en la información proporcionada

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mohamed-essai/bert-fine-tuned-model` es un ajuste fino del modelo `google-bert/bert-base-cased`, publicado en HuggingFace por el usuario mohamed-essai. Se trata de un encoder transformer de tipo BERT en su variante case-sensitive (distingue mayusculas y minusculas), con 108.340.804 parametros totales confirmados en los pesos safetensors, y orientado a la tarea de `fill-mask` (prediccion de tokens enmascarados). El repositorio ocupa 0,9 GB y utiliza la libreria `transformers`.
+`mohamed-essai/bert-fine-tuned-model` es un ajuste fino del modelo `google-bert/bert-base-cased`, publicado en Hugging Face por el usuario mohamed-essai. Se trata de un encoder transformer de tipo BERT en su variante case-sensitive (distingue mayusculas y minusculas), con 108.340.804 parametros totales confirmados en los pesos safetensors, y orientado a la tarea de `fill-mask` (prediccion de tokens enmascarados). El repositorio ocupa 0,9 GB y utiliza la libreria `transformers`.
 
-La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo derivado de un checkpoint ampliamente conocido (BERT base, 12 capas, 768 dimensiones ocultas), ajustado sobre el dataset `array/cola` y evaluado con la metrica `accuracy`. La model card esta practicamente vacia (generada automaticamente por la plantilla de HuggingFace), por lo que la mayor parte de los detalles de entrenamiento, licencia e idiomas no estan documentados por el autor.
+La relevancia de esta ficha es limitada pero ilustrativa: se trata de un modelo derivado de un checkpoint ampliamente conocido (BERT base, 12 capas, 768 dimensiones ocultas), ajustado sobre el dataset `array/cola` y evaluado con la metrica `accuracy`. La model card esta practicamente vacia (generada automaticamente por la plantilla de Hugging Face), por lo que la mayor parte de los detalles de entrenamiento, licencia e idiomas no estan documentados por el autor.
 
 El modelo resulta util como ejemplo de fine-tuning de BERT para tareas de clasificacion linguistica (CoLA, Corpus of Linguistic Acceptability) y como punto de partida para experimentos de enmascaramiento de tokens en ingles. No obstante, la ausencia de documentacion, la licencia no declarada y el bajo numero de descargas (37) aconsejan precaucion antes de usarlo en produccion.
 
@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks detallados en la informacion dispon
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mohamed-essai/bert-fine-tuned-model | 108,3 M | 512 (estandar BERT) | fill-mask / CoLA | no disponible | HuggingFace (37 descargas) |
-| google-bert/bert-base-cased | 108,3 M | 512 | MLM / encoder general | Apache 2.0 (modelo base) | HuggingFace (ampliamente usado) |
-| google-bert/bert-base-uncased | 109,5 M | 512 | MLM / encoder general | Apache 2.0 | HuggingFace |
-| roberta-base | 125 M | 512 | MLM / encoder general | MIT | HuggingFace |
+| mohamed-essai/bert-fine-tuned-model | 108,3 M | 512 (estandar BERT) | fill-mask / CoLA | no disponible | Hugging Face (37 descargas) |
+| google-bert/bert-base-cased | 108,3 M | 512 | MLM / encoder general | Apache 2.0 (modelo base) | Hugging Face (ampliamente usado) |
+| google-bert/bert-base-uncased | 109,5 M | 512 | MLM / encoder general | Apache 2.0 | Hugging Face |
+| roberta-base | 125 M | 512 | MLM / encoder general | MIT | Hugging Face |
 
 El modelo se diferencia de `bert-base-cased` unicamente por el ajuste fino sobre CoLA; no aporta mejoras arquitectonicas. Frente a `roberta-base`, este ultimo suele rendir mejor en tareas de comprension en ingles, aunque no hay datos comparativos publicados para este checkpoint concreto. La licencia no declarada es una desventaja frente a los modelos base de Google (Apache 2.0) y RoBERTa (MIT).
 
@@ -103,10 +103,10 @@ El modelo se diferencia de `bert-base-cased` unicamente por el ajuste fino sobre
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mohamed-essai/bert-fine-tuned-model
+- Hugging Face: https://huggingface.co/mohamed-essai/bert-fine-tuned-model
 - Modelo base: https://huggingface.co/google-bert/bert-base-cased
 - Paper de BERT: https://arxiv.org/abs/1810.04805
 - Paper de CoLA (Warstadt et al.): https://arxiv.org/abs/1805.12471
 - Calculadora de impacto climatico (Lacoste et al., 2019): https://mlco2.github.io/impact
 - Paper de Lacoste et al.: https://arxiv.org/abs/1910.09700
-- Dataset `array/cola` en HuggingFace: https://huggingface.co/datasets/array/cola
+- Dataset `array/cola` en Hugging Face: https://huggingface.co/datasets/array/cola

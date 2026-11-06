@@ -6,7 +6,7 @@ El modelo `yukamatsumae/molmoact2_otter_yellowpush` es una política robótica e
 
 La relevancia de este modelo radica en que demuestra el uso práctico de MolmoAct2, la segunda generación de la familia MolmoAct, que según el repositorio oficial de AllenAI es "más rápida, más fuerte y mejor en todos los aspectos" que su predecesora. Al estar publicado bajo licencia Apache 2.0 y entrenado con LeRobot, cualquier desarrollador puede reproducir el entrenamiento, adaptarlo a otras tareas o desplegarlo en robots compatibles, lo que lo convierte en un recurso valioso para la comunidad de robótica open source.
 
-Sin embargo, la información disponible sobre este modelo concreto es muy limitada: la model card no incluye detalles técnicos específicos más allá de la plantilla genérica de LeRobot, y no se han publicado resultados de benchmarks ni especificaciones de entrenamiento. Esta ficha se basa únicamente en los datos proporcionados por HuggingFace y la documentación pública de MolmoAct2.
+Sin embargo, la información disponible sobre este modelo concreto es muy limitada: la model card no incluye detalles técnicos específicos más allá de la plantilla genérica de LeRobot, y no se han publicado resultados de benchmarks ni especificaciones de entrenamiento. Esta ficha se basa únicamente en los datos proporcionados por Hugging Face y la documentación pública de MolmoAct2.
 
 ## Especificaciones técnicas
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpush
+- Modelo en Hugging Face: https://huggingface.co/yukamatsumae/molmoact2_otter_yellowpush
 - Repositorio oficial de MolmoAct2 (AllenAI): https://github.com/allenai/molmoact2
 - Repositorio de MolmoAct (AllenAI): https://github.com/allenai/MolmoAct
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index

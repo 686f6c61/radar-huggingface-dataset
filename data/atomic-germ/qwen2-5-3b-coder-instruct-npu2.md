@@ -83,7 +83,7 @@ La comparativa se centra en el mismo tamaño de parámetros y la misma familia d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen2.5-3B-Coder-Instruct-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-3B
 - Motor FastFlowLM: https://fastflowlm.com
 - Informe tecnico de Qwen2.5-Coder (arXiv): https://arxiv.org/html/2409.12186v3

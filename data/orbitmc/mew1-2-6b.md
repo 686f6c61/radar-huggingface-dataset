@@ -67,5 +67,5 @@ No se dispone de datos comparativos publicados. Como referencia generica, modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OrbitMC/Mew1-2.6B
+- Modelo en Hugging Face: https://huggingface.co/OrbitMC/Mew1-2.6B
 - Modelo base (referencia): https://huggingface.co/Liquid-AI/LFM-2.5-2.6B (no confirmado como enlace directo, se infiere del campo base_model)

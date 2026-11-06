@@ -106,7 +106,7 @@ Medida en una unica NVIDIA A6000 en reposo, con warm-up descartado, por llamada:
 - VRAM total estimada en torno a 1-2 GB teniendo en cuenta activaciones de hasta 8 fragmentos de estado y un numero arbitrario de preguntas por llamada (estimacion derivada).
 - Cabe holgadamente en GPU de consumo: RTX 3060, RTX 4060, RTX 4090 y cualquier tarjeta con 4 GB o mas. No se han publicado requisitos oficiales.
 - GPU de referencia usada por el autor para medir latencia: NVIDIA A6000. No se indican otras GPU recomendadas.
-- Opciones de despliegue: el modelo depende de una libreria propia (`library_name: nomeda-decision`, con `nomeda.runtime`, `nomeda.model` y `nomeda.config`) y de un encoder de HuggingFace. No hay soporte documentado de vLLM, llama.cpp, Ollama, TGI ni formato GGUF.
+- Opciones de despliegue: el modelo depende de una libreria propia (`library_name: nomeda-decision`, con `nomeda.runtime`, `nomeda.model` y `nomeda.config`) y de un encoder de Hugging Face. No hay soporte documentado de vLLM, llama.cpp, Ollama, TGI ni formato GGUF.
 - Latencia y throughput: p50 de 92 ms y p95 de 187 ms por llamada en A6000 en reposo. No se publica throughput en lote ni latencia en CPU.
 
 ## Comparativa con modelos similares
@@ -115,8 +115,8 @@ No se han identificado modelos comparables en la informacion proporcionada. La b
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nomeda-decision-v0.1-beta | 147.985.156 (12.791.812 entrenables) | Aprox. 3.200 tokens de estado, preguntas ilimitadas | Probabilidades calibradas sobre opciones | Apache 2.0 | HuggingFace, libreria propia |
-| silma-ai/silma-embedding-matryoshka-v0.1 (encoder base, no alternativa) | 135.193.344 (congelados en este modelo) | No disponible | Embeddings | Apache 2.0 | HuggingFace |
+| nomeda-decision-v0.1-beta | 147.985.156 (12.791.812 entrenables) | Aprox. 3.200 tokens de estado, preguntas ilimitadas | Probabilidades calibradas sobre opciones | Apache 2.0 | Hugging Face, libreria propia |
+| silma-ai/silma-embedding-matryoshka-v0.1 (encoder base, no alternativa) | 135.193.344 (congelados en este modelo) | No disponible | Embeddings | Apache 2.0 | Hugging Face |
 | Otras alternativas de decision/clasificacion calibrada | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -136,6 +136,6 @@ No se han identificado modelos comparables en la informacion proporcionada. La b
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nomeda-lab/nomeda-decision-v0.1-beta
+- Modelo en Hugging Face: https://huggingface.co/nomeda-lab/nomeda-decision-v0.1-beta
 - Encoder base: https://huggingface.co/silma-ai/silma-embedding-matryoshka-v0.1
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

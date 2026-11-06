@@ -47,7 +47,7 @@ Sobre el fine-tuning `Safe-DPO`, el nombre indica un entrenamiento con DPO enfoc
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor del fine-tuning no incluye métricas de evaluación, y la model card de HuggingFace no contiene datos de rendimiento. Los benchmarks del modelo base Kanana 1.5-8B (publicados por Kakao en su repositorio y paper) no son directamente aplicables a este fine-tuning, ya que el ajuste DPO puede alterar el comportamiento en tareas estándar.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor del fine-tuning no incluye métricas de evaluación, y la model card de Hugging Face no contiene datos de rendimiento. Los benchmarks del modelo base Kanana 1.5-8B (publicados por Kakao en su repositorio y paper) no son directamente aplicables a este fine-tuning, ya que el ajuste DPO puede alterar el comportamiento en tareas estándar.
 
 ## Requisitos de hardware
 
@@ -75,7 +75,7 @@ No se dispone de una comparativa publicada para este fine-tuning específico. Co
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/KevinLee26/kanana-1.5-8b-instruct-2505-Safe-DPO
+- Repositorio de Hugging Face: https://huggingface.co/KevinLee26/kanana-1.5-8b-instruct-2505-Safe-DPO
 - Modelo base de Kakao: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Repositorio GitHub de Kanana: https://github.com/kakao/kanana
 - Paper de Kanana (arXiv): https://arxiv.org/html/2502.18934v1

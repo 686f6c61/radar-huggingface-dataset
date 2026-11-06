@@ -84,7 +84,7 @@ No hay datos comparativos publicados en la informacion disponible. El modelo es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gdpochain-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-gdpochain-l5
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Guia de requisitos de hardware Qwen3 (referencia externa): https://llmhardware.io/guides/qwen3-hardware-requirements

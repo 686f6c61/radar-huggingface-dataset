@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Onol/robot-policy-training-checkpoints-before-2026-09-14` es un repositorio de HuggingFace publicado por el usuario Onol que actúa como archivo de artefactos de entrenamiento en el ámbito de la robótica. Según la model card, contiene el checkpoint numérico final de distintas ejecuciones de entrenamiento de políticas robóticas (robot policy training runs) completadas antes del 14 de septiembre de 2026. No se trata de un modelo de lenguaje ni de un modelo multimodal de propósito general, sino de un contenedor de pesos entrenados para control robótico mediante aprendizaje por imitación (imitation learning) y aprendizaje de políticas (policy learning).
+`Onol/robot-policy-training-checkpoints-before-2026-09-14` es un repositorio de Hugging Face publicado por el usuario Onol que actúa como archivo de artefactos de entrenamiento en el ámbito de la robótica. Según la model card, contiene el checkpoint numérico final de distintas ejecuciones de entrenamiento de políticas robóticas (robot policy training runs) completadas antes del 14 de septiembre de 2026. No se trata de un modelo de lenguaje ni de un modelo multimodal de propósito general, sino de un contenedor de pesos entrenados para control robótico mediante aprendizaje por imitación (imitation learning) y aprendizaje de políticas (policy learning).
 
 El repositorio se organiza con un directorio por ejecución de entrenamiento, conservando el paso numérico original del checkpoint bajo `checkpoints/`. Se excluyen explícitamente los checkpoints intermedios, los registros de entrenamiento y los enlaces simbólicos locales `last`, y se normalizan los prefijos de rutas locales en los ficheros JSON de configuración para su publicación. Es importante señalar que el repositorio no incluye los conjuntos de datos de demostración robótica subyacentes, solo los artefactos del modelo entrenado y los metadatos de configuración.
 
@@ -77,9 +77,9 @@ No disponible. La información proporcionada no identifica la arquitectura, el t
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Onol/robot-policy-training-checkpoints-before-2026-09-14
+- Hugging Face: https://huggingface.co/Onol/robot-policy-training-checkpoints-before-2026-09-14
 - Paper: no disponible
 - Blog o documentación adicional: no disponible
 - Repositorio de código: no disponible
 - Demo: no disponible
-- Perfil del autor en HuggingFace: https://huggingface.co/Onol
+- Perfil del autor en Hugging Face: https://huggingface.co/Onol

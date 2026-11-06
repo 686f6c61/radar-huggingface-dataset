@@ -70,13 +70,13 @@ La alternativa principal no es otro adaptador, sino reprocesar el corpus con `me
 - Pérdida de fidelidad: la traducción no es perfecta; la similitud coseno máxima alcanzada es 0,9459, lo que implica una degradación medible en la calidad de recuperación frente a usar `me5-large` directamente.
 - Dependencia de los modelos origen y destino: el adaptador solo funciona con embeddings de `bge-m3` como entrada y produce vectores en el espacio de `me5-large`. No es generalizable a otros modelos.
 - Sin garantías de rendimiento en dominios no vistos: el entrenamiento cubrió ciencia, legal, QA, medicina y finanzas; dominios muy diferentes (por ejemplo, código fuente o imágenes) pueden obtener resultados peores.
-- Modelo en fase temprana: tiene 0 descargas y 0 likes en HuggingFace; no hay evidencia de uso en producción ni validación independiente.
+- Modelo en fase temprana: tiene 0 descargas y 0 likes en Hugging Face; no hay evidencia de uso en producción ni validación independiente.
 - Fecha de creación futura: el modelo está fechado en 2026-08-30, lo que sugiere que es muy reciente o que la fecha es incorrecta; conviene verificar su procedencia.
 - Sin soporte de cuantización: solo se distribuye en ONNX float32; no hay versiones cuantizadas para despliegue en edge.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_me5-large)
+- [Modelo en Hugging Face](https://huggingface.co/QuerynAi/queryn-adapter-bge-m3_to_me5-large)
 - [Colección de adaptadores de Queryn](https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4)
 - [Modelo origen: BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
 - [Documentación de BGE-M3](https://bge-model.com/bge/bge_m3.html)

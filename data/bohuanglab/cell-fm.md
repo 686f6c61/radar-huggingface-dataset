@@ -84,7 +84,7 @@ No disponible. La información proporcionada no incluye resultados comparativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BoHuangLab/CELL-FM
+- Modelo en Hugging Face: https://huggingface.co/BoHuangLab/CELL-FM
 - Repositorio CELL-FM citado en la model card (`scripts/`, `scripts_local/`, `notebooks/`): URL no disponible
 - Space con `pipeline.py` para hiperparámetros de CondenSeq: URL no disponible
 - Artículo o paper asociado: no disponible

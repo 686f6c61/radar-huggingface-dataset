@@ -98,7 +98,7 @@ No se dispone de resultados de benchmarks que permitan una comparacion de rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxSchulten/gpt-oss-20b-distill-Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/MaxSchulten/gpt-oss-20b-distill-Qwen3-0.6B
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Resultado de busqueda web proporcionado: irrelevante para este modelo (pagina de peajes de Ulys, https://ulys.vinci-autoroutes.com/enseigne/fulli/)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

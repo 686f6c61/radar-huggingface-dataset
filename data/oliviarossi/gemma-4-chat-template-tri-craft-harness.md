@@ -100,14 +100,14 @@ Este repositorio no es un modelo, por lo que no admite comparacion por parametro
 - Idioma: el repositorio declara soporte unicamente en ingles, lo que limita su uso directo en castellano sin adaptar las instrucciones y los modulos de prosa.
 - Riesgo de alucinacion: la plantilla no incorpora ningun mecanismo de verificacion factual; el microcopy y la documentacion tecnica generados pueden contener afirmaciones falsas con apariencia plausible.
 - Compatibilidad fragil por naturaleza: al ser una plantilla, cualquier cambio en el formato de tokens de Gemma 4, en el tokenizador o en el soporte de Minja del motor puede romperla silenciosamente.
-- Acoplamiento a version: la ficha de HuggingFace no publica una tabla de compatibilidad con versiones concretas de vLLM, SGLang, llama.cpp o Transformers, lo que complica reproducir el comportamiento descrito.
+- Acoplamiento a version: la ficha de Hugging Face no publica una tabla de compatibilidad con versiones concretas de vLLM, SGLang, llama.cpp o Transformers, lo que complica reproducir el comportamiento descrito.
 - Licencia: el harness es Apache 2.0, pero los pesos de Gemma 4 se rigen por sus propios terminos de uso. Para explotacion comercial hay que revisar la licencia del checkpoint concreto, no solo la de este repositorio.
 - Interaccion con interfaces: se ha documentado en la comunidad que las plantillas que no gestionan correctamente los canales de razonamiento pueden filtrar marcadores de pensamiento en la salida final en combinaciones como llama.cpp sobre OpenWebUI. Conviene validar la salida antes de exponerla a usuarios.
 - Discrepancia de tamanos: la model card cita 2B, 9B, 27B y 34B, mientras que otras fuentes de la busqueda mencionan un checkpoint de 12B. No hay confirmacion de cual es la lista definitiva.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OliviaRossi/Gemma-4-Chat-Template-Tri-Craft-Harness
+- Repositorio en Hugging Face: https://huggingface.co/OliviaRossi/Gemma-4-Chat-Template-Tri-Craft-Harness
 - Plantilla Gemma 4 para llama.cpp y OpenWebUI (GitHub): https://github.com/asf0/gemma4_jinja
 - Pagina oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Formato de prompt de Gemma 4 en Google AI for Developers: https://ai.google.dev/gemma/docs/core/prompt-formatting-gemma4

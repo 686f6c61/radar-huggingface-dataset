@@ -2,7 +2,7 @@
 
 ## Resumen
 
-head-comp-gold es un modelo de decisión para clasificación de completitud de respuestas, publicado por el usuario ngdghfdc en HuggingFace. Se trata de un fine-tune completo del checkpoint convaiinnovations/laya (Apache-2.0) especializado en una única tarea: etiquetar una respuesta en una de cuatro clases —`complete`, `half-answer`, `blank` y `overflow-to-margin`— en una sola pasada de encoder, con latencia declarada del orden de milisegundos en GPU. El modelo tiene 421.293.830 parámetros y se distribuye en formato safetensors.
+head-comp-gold es un modelo de decisión para clasificación de completitud de respuestas, publicado por el usuario ngdghfdc en Hugging Face. Se trata de un fine-tune completo del checkpoint convaiinnovations/laya (Apache-2.0) especializado en una única tarea: etiquetar una respuesta en una de cuatro clases —`complete`, `half-answer`, `blank` y `overflow-to-margin`— en una sola pasada de encoder, con latencia declarada del orden de milisegundos en GPU. El modelo tiene 421.293.830 parámetros y se distribuye en formato safetensors.
 
 El problema que resuelve es de enrutamiento y señalización dentro de flujos de agentes y de corrección de exámenes (el autor lo enmarca en "examflow"). No genera texto ni mantiene conversaciones: emite una decisión que un dispatcher puede consumir para decidir si una respuesta es aceptable, está a medias, está en blanco o se desborda del margen. Es, por tanto, una pieza de infraestructura más que un modelo generativo.
 
@@ -74,8 +74,8 @@ No se dispone de datos suficientes para comparar con modelos de la misma categor
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| head-comp-gold | 421 M | no disponible | 0,9688 en eval sintetico propio (n=160) | Apache-2.0 | HuggingFace, 0 descargas |
-| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| head-comp-gold | 421 M | no disponible | 0,9688 en eval sintetico propio (n=160) | Apache-2.0 | Hugging Face, 0 descargas |
+| convaiinnovations/laya (base) | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 | Baseline heuristico | No aplica | No aplica | 0,900 en el mismo eval | No aplica | No distribuido |
 
 No se conocen otros modelos comparables de clasificacion de completitud de respuestas dentro de la informacion proporcionada.
@@ -95,6 +95,6 @@ No se conocen otros modelos comparables de clasificacion de completitud de respu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ngdghfdc/head-comp-gold
+- Modelo en Hugging Face: https://huggingface.co/ngdghfdc/head-comp-gold
 - Checkpoint base: https://huggingface.co/convaiinnovations/laya
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

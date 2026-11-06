@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`zzkhtt/vvsbrittney` es un repositorio de modelo publicado en HuggingFace por el usuario `zzkhtt` bajo licencia Artistic 2.0. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento, sin idiomas soportados y sin pipeline de inferencia asociado. El repositorio ocupa 0,1 GB, registra 0 descargas y 0 likes, y fue creado y actualizado el 21 de septiembre de 2026.
+`zzkhtt/vvsbrittney` es un repositorio de modelo publicado en Hugging Face por el usuario `zzkhtt` bajo licencia Artistic 2.0. La informacion publica disponible es minima: la model card unicamente contiene la declaracion de licencia, sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento, sin idiomas soportados y sin pipeline de inferencia asociado. El repositorio ocupa 0,1 GB, registra 0 descargas y 0 likes, y fue creado y actualizado el 21 de septiembre de 2026.
 
 En el momento de redactar esta ficha no es posible identificar que problema resuelve el modelo, a que categoria pertenece (lenguaje, vision, audio, embeddings), ni cual es su tamano real en parametros. La busqueda web realizada no ha devuelto ningun resultado relacionado con el identificador `zzkhtt/vvsbrittney`, con el autor `zzkhtt` ni con el propio modelo; los resultados obtenidos son consultas genericas sin relacion con el repositorio. Tampoco existe documentacion tecnica, paper, blog ni repositorio de codigo asociado.
 
@@ -21,7 +21,7 @@ Por todo ello, esta ficha se limita a registrar de forma verificable los metadat
 | Licencia | Artistic 2.0 (artistic-2.0) |
 | Formato de pesos | no disponible |
 | Autor | zzkhtt |
-| Identificador en HuggingFace | zzkhtt/vvsbrittney |
+| Identificador en Hugging Face | zzkhtt/vvsbrittney |
 | Pipeline declarado | no disponible |
 | Tamano del repositorio | 0,1 GB |
 | Descargas | 0 |
@@ -93,7 +93,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zzkhtt/vvsbrittney
+- Modelo en Hugging Face: https://huggingface.co/zzkhtt/vvsbrittney
 - Model card: no contiene informacion tecnica mas alla de la licencia.
 - Paper, blog, repositorio de codigo o demo: no disponibles.
 - Resultados de busqueda web: sin coincidencias relevantes con el modelo o el autor.

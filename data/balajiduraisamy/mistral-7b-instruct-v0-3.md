@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `balajiduraisamy/Mistral-7B-Instruct-v0.3` es un ajuste fino (fine-tune) del modelo base `mistralai/Mistral-7B-v0.3`, desarrollado por el usuario balajiduraisamy y publicado en HuggingFace. Se trata de una variante orientada a instrucciones y conversación, construida sobre la arquitectura Mistral 7B, un transformer decoder con atención de ventana deslizante (sliding window attention) que destaca por su eficiencia computacional y su bajo consumo de memoria en comparación con modelos de tamaño similar.
+El modelo `balajiduraisamy/Mistral-7B-Instruct-v0.3` es un ajuste fino (fine-tune) del modelo base `mistralai/Mistral-7B-v0.3`, desarrollado por el usuario balajiduraisamy y publicado en Hugging Face. Se trata de una variante orientada a instrucciones y conversación, construida sobre la arquitectura Mistral 7B, un transformer decoder con atención de ventana deslizante (sliding window attention) que destaca por su eficiencia computacional y su bajo consumo de memoria en comparación con modelos de tamaño similar.
 
-Este modelo resuelve el problema de disponer de un asistente conversacional de 7 mil millones de parámetros con licencia Apache-2.0, apto para tareas de generación de texto, seguimiento de instrucciones y razonamiento. Su relevancia actual radica en que Mistral 7B ha demostrado superar a modelos más grandes en diversos benchmarks, y esta versión fine-tuneada hereda esas capacidades con un enfoque específico para chat. El repositorio contiene pesos en formato safetensors (29 GB) y está diseñado para su uso con vLLM, aunque el acceso es restringido y requiere aceptar condiciones en HuggingFace.
+Este modelo resuelve el problema de disponer de un asistente conversacional de 7 mil millones de parámetros con licencia Apache-2.0, apto para tareas de generación de texto, seguimiento de instrucciones y razonamiento. Su relevancia actual radica en que Mistral 7B ha demostrado superar a modelos más grandes en diversos benchmarks, y esta versión fine-tuneada hereda esas capacidades con un enfoque específico para chat. El repositorio contiene pesos en formato safetensors (29 GB) y está diseñado para su uso con vLLM, aunque el acceso es restringido y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -52,14 +52,14 @@ No se han publicado resultados de benchmarks específicos para el fine-tune `bal
 - VRAM estimada para inferencia: con 7,25 mil millones de parámetros en precisión FP16, se necesitan aproximadamente 14,5 GB de VRAM solo para los pesos. Con cuantización a 8 bits se reduce a unos 7,3 GB, y a 4 bits a unos 3,6 GB, aunque el repositorio no incluye versiones cuantizadas.
 - GPU recomendadas: una NVIDIA RTX 3090 o RTX 4090 (24 GB VRAM) puede ejecutar el modelo en FP16 sin problemas. Para cuantización 4-bit, una GPU con 8 GB de VRAM (como RTX 3060 o RTX 4060) sería suficiente.
 - En consumer GPU: sí, cabe en GPUs de gama alta con 24 GB o en gamas medias con cuantización.
-- Opciones de despliegue: vLLM (indicado en la librería del repositorio), así como HuggingFace Transformers, llama.cpp, Ollama o TGI, siempre que se conviertan los pesos al formato adecuado.
+- Opciones de despliegue: vLLM (indicado en la librería del repositorio), así como Hugging Face Transformers, llama.cpp, Ollama o TGI, siempre que se conviertan los pesos al formato adecuado.
 - Latencia y throughput: no disponible. Con vLLM y una GPU A100, se pueden esperar decenas de tokens por segundo, pero no hay datos concretos para este fine-tune.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| balajiduraisamy/Mistral-7B-Instruct-v0.3 | 7,25B | no disponible (base: 32K) | Apache-2.0 | Gated en HuggingFace |
+| balajiduraisamy/Mistral-7B-Instruct-v0.3 | 7,25B | no disponible (base: 32K) | Apache-2.0 | Gated en Hugging Face |
 | mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache-2.0 | Abierto |
 | meta-llama/Llama-2-7b-chat-hf | 6,7B | 4.096 tokens | Llama 2 Community License | Abierto con registro |
 | google/gemma-7b-it | 8,5B | 8.192 tokens | Gemma Terms of Use | Abierto |
@@ -68,7 +68,7 @@ El modelo de balajiduraisamy es un fine-tune del Mistral-7B-Instruct-v0.3 oficia
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace, lo que obliga a aceptar condiciones antes de descargarlo, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face, lo que obliga a aceptar condiciones antes de descargarlo, lo que puede limitar su uso en entornos automatizados.
 - Sesgos y alucinaciones: al ser un modelo de 7B, puede generar información falsa o inventada con confianza, especialmente en dominios especializados. No se han documentado evaluaciones de sesgo para este fine-tune.
 - Limitaciones de idioma: aunque el base soporta varios idiomas, no se confirma que el fine-tune mantenga el mismo rendimiento multilingüe; es probable que el inglés domine.
 - Sin garantías de producción: al ser un fine-tune de un tercero sin documentación de entrenamiento, no hay garantías de calidad, robustez ni seguridad para uso en producción.
@@ -77,7 +77,7 @@ El modelo de balajiduraisamy es un fine-tune del Mistral-7B-Instruct-v0.3 oficia
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/balajiduraisamy/Mistral-7B-Instruct-v0.3
+- Repositorio Hugging Face: https://huggingface.co/balajiduraisamy/Mistral-7B-Instruct-v0.3
 - Modelo base oficial: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Documentación de Mistral 7B v0.3: https://docs.mistral.ai/models/mistral-7b-0-3
 - Página de NVIDIA NIM para Mistral-7B-Instruct-v0.3: https://build.nvidia.com/mistralai/mistral-7b-instruct-v03

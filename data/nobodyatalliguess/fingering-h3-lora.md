@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nobodyatalliguess/fingering-h3-lora` es un adaptador LoRA para el modelo de generación de vídeo MiniMax-H3, publicado en HuggingFace como rehost sin modificar de la versión v1.1_H3 del LoRA "Fingering Pussy" creado originalmente por el usuario Generation3dX en Civitai. No se trata de un modelo de pesos completos, sino de un adaptador de bajo rango que se aplica sobre los pesos del modelo base `MiniMaxAI/MiniMax-H3`. El repositorio ocupa 0,2 GB y contiene un único fichero safetensors, `h3_base_fingering_v1.1-6000.safetensors`, cuyo hash SHA256 coincide con el artefacto original de Civitai, lo que permite verificar la integridad del rehost.
+`nobodyatalliguess/fingering-h3-lora` es un adaptador LoRA para el modelo de generación de vídeo MiniMax-H3, publicado en Hugging Face como rehost sin modificar de la versión v1.1_H3 del LoRA "Fingering Pussy" creado originalmente por el usuario Generation3dX en Civitai. No se trata de un modelo de pesos completos, sino de un adaptador de bajo rango que se aplica sobre los pesos del modelo base `MiniMaxAI/MiniMax-H3`. El repositorio ocupa 0,2 GB y contiene un único fichero safetensors, `h3_base_fingering_v1.1-6000.safetensors`, cuyo hash SHA256 coincide con el artefacto original de Civitai, lo que permite verificar la integridad del rehost.
 
 El adaptador está etiquetado como `not-for-all-audiences` y genera contenido audiovisual adulto explícito. El propio autor de la model card restringe su uso a contenido ficticio y consentido entre adultos, con prohibición explícita de representar personas reales o identificables y de cualquier contenido que implique a menores. La licencia aplicable es la Civitai Creator License, que exige acreditar al creador original, y no es una licencia de código abierto al uso.
 
@@ -27,7 +27,7 @@ Datos adicionales del artefacto:
 |---|---|
 | Modelo base | MiniMaxAI/MiniMax-H3 |
 | Creador original | Generation3dX (Civitai) |
-| Rehost en HuggingFace | nobodyatalliguess |
+| Rehost en Hugging Face | nobodyatalliguess |
 | Version del adaptador | v1.1_H3 |
 | Fuerza recomendada | 0,8 |
 | Modos compatibles | FL2VA y Ref2VA |
@@ -93,8 +93,8 @@ No disponible. La información proporcionada no incluye otros adaptadores LoRA c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nobodyatalliguess/fingering-h3-lora
-- Modelo base en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Hugging Face: https://huggingface.co/nobodyatalliguess/fingering-h3-lora
+- Modelo base en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Página original del LoRA en Civitai: https://civitai.com/models/2007360?modelVersionId=3342542
 - Perfil del creador original en Civitai: https://civitai.com/user/Generation3dX
 - Texto de la licencia: https://civitai.com/models/2007360?modelVersionId=3342542

@@ -108,7 +108,7 @@ La informacion disponible solo permite comparar con la linea base de persistenci
 
 | Modelo | Parametros | Contexto / entrada | AUC-PR (test 2021) | ECE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fire-spread-forecast-v1-small | 1,94 M | 40 canales, rejilla de 375 m | 0,552 ± 0,003 | 0,0044 | MIT | Pesos publicados en HuggingFace |
+| fire-spread-forecast-v1-small | 1,94 M | 40 canales, rejilla de 375 m | 0,552 ± 0,003 | 0,0044 | MIT | Pesos publicados en Hugging Face |
 | Variante + OlmoEarth (post-entrenada) | 1,94 M + 3,55 M de encoder ajustables | 40 canales + 16 canales de embeddings Sentinel-2 | 0,547 ± 0,006 | 0,0062 | Licencia de artefacto de Ai2 (derivada de OlmoEarth) | Pesos no publicados |
 | Persistencia ("el fuego de manana es el fuego de hoy") | 0 | 1 canal (mascara de fuego de hoy) | 0,273 | no disponible | no aplica | no aplica |
 
@@ -124,11 +124,11 @@ La informacion disponible solo permite comparar con la linea base de persistenci
 - Sesgos potenciales no documentados: no se publica ningún análisis de sesgo por tipo de combustible, clase de cobertura del suelo o región, más allá del filtrado de predicciones a 0 sobre agua.
 - Licencia permisiva: MIT permite uso comercial y modificación sin restricciones, pero la variante con OlmoEarth está bajo la licencia de artefacto de Ai2 y no se distribuye; no debe confundirse con este checkpoint.
 - Adopción nula hasta la fecha: 0 descargas y 0 likes, sin evidencia de uso en producción por terceros.
-- Idioma: no aplica, pero conviene señalar que no procesa texto ni documentación en ningún idioma; las etiquetas de idioma no están disponibles en la ficha de HuggingFace.
+- Idioma: no aplica, pero conviene señalar que no procesa texto ni documentación en ningún idioma; las etiquetas de idioma no están disponibles en la ficha de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eitanlebras/fire-spread-forecast-v1-small
+- Modelo en Hugging Face: https://huggingface.co/eitanlebras/fire-spread-forecast-v1-small
 - Repositorio de codigo, pipeline de entrenamiento, mapas de demostracion y scripts de evaluacion: https://github.com/eitanlebras/fire-spread-forecast
 - Dataset WildfireSpreadTS (DOI): https://doi.org/10.5281/zenodo.8006177
 - OlmoEarth (Ai2), usado en el ablation: https://github.com/allenai/olmoearth_pretrain

@@ -99,7 +99,7 @@ No se dispone de benchmarks que permitan comparar el rendimiento de estas varian
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-clean
+- Adaptador en Hugging Face: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo-clean
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Versión original con checkpoints de entrenamiento: https://huggingface.co/nabin2004/qwen-Manimator-1-grpo
 - Variante GGUF (Q4_K_M) para Ollama: https://huggingface.co/nabin2004/qwen-Manimator-1-gguf

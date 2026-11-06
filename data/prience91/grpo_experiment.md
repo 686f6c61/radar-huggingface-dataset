@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GRPO_experiment es un modelo de lenguaje de 494 millones de parámetros desarrollado por el usuario Prience91 como experimento de fine-tuning sobre el modelo base Qwen/Qwen2-0.5B-Instruct. El proyecto utiliza el algoritmo GRPO (Group Relative Policy Optimization), introducido en el paper DeepSeekMath (arXiv:2402.03300), aplicado mediante la librería TRL de HuggingFace. Se trata de un experimento de investigación orientado a explorar la mejora del razonamiento matemático y la calidad de respuestas en modelos pequeños mediante refuerzo.
+GRPO_experiment es un modelo de lenguaje de 494 millones de parámetros desarrollado por el usuario Prience91 como experimento de fine-tuning sobre el modelo base Qwen/Qwen2-0.5B-Instruct. El proyecto utiliza el algoritmo GRPO (Group Relative Policy Optimization), introducido en el paper DeepSeekMath (arXiv:2402.03300), aplicado mediante la librería TRL de Hugging Face. Se trata de un experimento de investigación orientado a explorar la mejora del razonamiento matemático y la calidad de respuestas en modelos pequeños mediante refuerzo.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2-0.5B-Instruct y está diseñado para generación de texto conversacional. Su relevancia radica en que ejemplifica cómo técnicas de refuerzo como GRPO pueden aplicarse sobre modelos compactos para evaluar ganancias de razonamiento con recursos computacionales limitados. No obstante, al tratarse de un experimento sin documentación técnica detallada ni benchmarks publicados, su utilidad práctica queda restringida a fines de investigación y reproducción de experimentos.
 
@@ -35,7 +35,7 @@ El entrenamiento se realizó con el método GRPO (Group Relative Policy Optimiza
 - Generación de texto conversacional: el modelo es un fine-tune de un modelo instruct, por lo que puede mantener diálogos multi-turno y responder a instrucciones del usuario.
 - Razonamiento matemático: el objetivo declarado del método GRPO es mejorar el razonamiento matemático, aunque no hay benchmarks publicados que validen esta capacidad en este modelo concreto.
 - Formato de chat: soporta el formato de conversación de Qwen2-Instruct (mensajes con roles "user" y "assistant"), tal y como se muestra en el ejemplo de uso de la model card.
-- Compatibilidad con pipelines de transformers: puede cargarse mediante `pipeline("text-generation")` de HuggingFace Transformers.
+- Compatibilidad con pipelines de transformers: puede cargarse mediante `pipeline("text-generation")` de Hugging Face Transformers.
 - No se confirma soporte de tool calling, function calling, agentes, multi-step reasoning, vision, audio, ni modo thinking explícito.
 
 ## Casos de uso

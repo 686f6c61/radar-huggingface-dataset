@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Pa_Hay es un adaptador LoRA de tipo text-to-image publicado por el usuario Kinimoro en HuggingFace. No se trata de un modelo generativo completo, sino de un ajuste ligero (Low-Rank Adaptation) que se acopla sobre el modelo base krea/Krea-2-Turbo para reproducir una identidad visual concreta: según la model card, fue entrenado para replicar una identidad visual y unas características faciales específicas de una persona adulta real.
+Pa_Hay es un adaptador LoRA de tipo text-to-image publicado por el usuario Kinimoro en Hugging Face. No se trata de un modelo generativo completo, sino de un ajuste ligero (Low-Rank Adaptation) que se acopla sobre el modelo base krea/Krea-2-Turbo para reproducir una identidad visual concreta: según la model card, fue entrenado para replicar una identidad visual y unas características faciales específicas de una persona adulta real.
 
 El repositorio es muy pequeño (0,2 GB), coherente con la naturaleza de un LoRA, y la librería declarada es diffusers. La palabra de activación (trigger word) es `Pa_hay`, y el prompt de instancia registrado en la model card es `Pa_hay`. El autor indica que el adaptador está pensado para usarse con flujos de trabajo basados en Krea 2, ajustando la intensidad del LoRA según el resultado deseado.
 
@@ -65,7 +65,7 @@ No disponible. No se han proporcionado datos de otros LoRA de personaje comparab
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kinimoro/Pa_Hay | no disponible (repo de 0,2 GB) | no aplica | sin benchmarks publicados | no disponible | HuggingFace, 0 descargas |
+| Kinimoro/Pa_Hay | no disponible (repo de 0,2 GB) | no aplica | sin benchmarks publicados | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se han proporcionado datos de otros LoRA de personaje comparab
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kinimoro/Pa_Hay
+- Modelo en Hugging Face: https://huggingface.co/Kinimoro/Pa_Hay
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - Archivos del repositorio: https://huggingface.co/Kinimoro/Pa_Hay/tree/main
 - Paper, blog o repositorio adicional del autor: no disponible

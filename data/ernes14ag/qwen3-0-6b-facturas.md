@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B · extractor de facturas a JSON es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3-0.6B, desarrollado por el usuario Ernes14AG y publicado en HuggingFace bajo licencia Apache 2.0. Su propósito es convertir texto plano procedente de facturas, tickets y correos de proveedor —típicamente la salida de un OCR— en un objeto JSON con estructura fija de diez campos, incluyendo datos fiscales del emisor, líneas de detalle, base imponible, IVA y total.
+Qwen3-0.6B · extractor de facturas a JSON es un ajuste fino mediante LoRA del modelo base Qwen/Qwen3-0.6B, desarrollado por el usuario Ernes14AG y publicado en Hugging Face bajo licencia Apache 2.0. Su propósito es convertir texto plano procedente de facturas, tickets y correos de proveedor —típicamente la salida de un OCR— en un objeto JSON con estructura fija de diez campos, incluyendo datos fiscales del emisor, líneas de detalle, base imponible, IVA y total.
 
 El modelo resuelve un problema muy concreto de automatización documental: la extracción estructurada de datos de facturación en español sin necesidad de infraestructura pesada. Con solo 596 millones de parámetros, está diseñado para ejecutarse en hardware modesto, incluso en CPU o GPUs de consumo, lo que lo hace atractivo para pipelines de contabilidad, gestoría o ERP donde el coste por documento y la latencia importan más que la capacidad de razonamiento general.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B · extractor de facturas (este modelo) | 0,6 B | no disponible | Extraccion de facturas a JSON en espanol | Apache 2.0 | HuggingFace (safetensors y GGUF) |
-| Qwen3-0.6B (base) | 0,6 B | no disponible en la informacion | Generacion de texto general y razonamiento | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en la informacion | Instrucciones generales, multilingue | Apache 2.0 | HuggingFace |
+| Qwen3-0.6B · extractor de facturas (este modelo) | 0,6 B | no disponible | Extraccion de facturas a JSON en espanol | Apache 2.0 | Hugging Face (safetensors y GGUF) |
+| Qwen3-0.6B (base) | 0,6 B | no disponible en la informacion | Generacion de texto general y razonamiento | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0,5 B | no disponible en la informacion | Instrucciones generales, multilingue | Apache 2.0 | Hugging Face |
 
 La comparación directa con modelos especializados en extracción documental (por ejemplo, Donut, LayoutLM o modelos de document AI comerciales) no está disponible en la información proporcionada. Frente al Qwen3-0.6B base, la ventaja de este ajuste es la salida JSON fiable y el formato fijo sin necesidad de prompting elaborado; su desventaja es la pérdida de generalidad y el sobreajuste a formatos sintéticos.
 
@@ -87,11 +87,11 @@ La comparación directa con modelos especializados en extracción documental (po
 - Modo thinking: si no se desactiva (`--think=false` en Ollama o `think=False` en Python), Qwen3 activa su cadena de razonamiento, lo que aumenta la latencia y puede degradar la salida JSON.
 - Sin datos de sesgos: no se ha publicado ningún análisis de sesgos, y el conjunto sintético no representa la diversidad de proveedores, sectores ni formatos reales.
 - Licencia Apache 2.0: permite uso comercial y modificación, pero el autor no ofrece garantías ni soporte; el modelo se publica con 0 descargas y 0 likes en el momento de la consulta, sin validación de la comunidad.
-- Fecha de creación atípica (2026-11-02) en los metadatos de HuggingFace, lo que conviene verificar antes de integrarlo en producción.
+- Fecha de creación atípica (2026-11-02) en los metadatos de Hugging Face, lo que conviene verificar antes de integrarlo en producción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas
+- Modelo en Hugging Face: https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas
 - Version GGUF para Ollama: https://huggingface.co/Ernes14AG/qwen3-0.6b-facturas-GGUF
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de Ollama: https://ollama.com

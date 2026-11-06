@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`YourLocalWorm/RickandMortymodels` es un repositorio publicado en HuggingFace por el usuario YourLocalWorm el 23 de octubre de 2026. La model card asociada contiene unicamente la declaracion de licencia (`openrail`) y ningun otro metadato: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, pipeline de inferencia ni procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y no cuenta con documentacion tecnica publicada.
+`YourLocalWorm/RickandMortymodels` es un repositorio publicado en Hugging Face por el usuario YourLocalWorm el 23 de octubre de 2026. La model card asociada contiene unicamente la declaracion de licencia (`openrail`) y ningun otro metadato: no se especifica arquitectura, numero de parametros, longitud de contexto, idiomas, pipeline de inferencia ni procedimiento de entrenamiento. El repositorio acumula 0 descargas y 0 likes, y no cuenta con documentacion tecnica publicada.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 0,2 GB. Este valor es compatible con pesos de un modelo de muy baja escala en precision reducida, con un adaptador (LoRA/QLoRA) o con un conjunto de artefactos auxiliares; sin embargo, el autor no desglosa el contenido, por lo que no es posible determinar a que corresponde ese volumen. El nombre del repositorio sugiere un proposito tematico vinculado a la franquicia *Rick and Morty*, pero se trata de una inferencia a partir del identificador y no de informacion confirmada.
 
@@ -77,7 +77,7 @@ No disponible. Sin arquitectura, numero de parametros ni contexto declarados no 
 - Ausencia total de model card: no hay informacion sobre arquitectura, entrenamiento, datos, idiomas ni evaluacion, lo que impide cualquier validacion tecnica.
 - Riesgo de alucinacion: no evaluable, al no existir evidencia de que el checkpoint sea funcional ni de como fue entrenado.
 - Sesgos conocidos: no documentados por el autor; sin datos de composicion del corpus no se pueden anticipar sesgos de genero, idioma, cultura o tematica.
-- Limitaciones de contexto e idioma: desconocidas; el campo de idiomas no esta declarado en HuggingFace.
+- Limitaciones de contexto e idioma: desconocidas; el campo de idiomas no esta declarado en Hugging Face.
 - Licencia `openrail`: permite uso comercial con condiciones (obligaciones de atribucion, prohibicion de usos discriminatorios o ilegales y clausulas de redistribucion). Conviene revisar el texto completo antes de integrarlo en un producto, y verificar que la licencia del posible modelo base sea compatible.
 - Trazabilidad: 0 descargas y 0 likes, publicacion y actualizacion separadas por 23 segundos, sin repositorio de codigo, paper ni demo asociados. No hay senales de mantenimiento.
 - Riesgo de seguridad: los ficheros de un repositorio no documentado deben cargarse con `safetensors` y en un entorno aislado; no se confirma que los pesos se hayan publicado en un formato seguro.
@@ -85,6 +85,6 @@ No disponible. Sin arquitectura, numero de parametros ni contexto declarados no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/YourLocalWorm/RickandMortymodels
+- Hugging Face: https://huggingface.co/YourLocalWorm/RickandMortymodels
 - Model card del autor: incluida en la pagina anterior (solo contiene la declaracion de licencia `openrail`)
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada

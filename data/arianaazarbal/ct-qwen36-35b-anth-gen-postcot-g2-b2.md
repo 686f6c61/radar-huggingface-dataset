@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `ct-qwen36-35b-anth-gen-postcot-g2-b2` | Adaptador LoRA sobre base de ~35B (no confirmado) | No disponible | Sin benchmarks publicados | No disponible | HuggingFace, 0 descargas |
-| `Qwen/Qwen3.6-35B-A3B` (base, sin adaptador) | Denominacion 35B con ~3B activos (segun nomenclatura) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| `ct-qwen36-35b-anth-gen-postcot-g2-b2` | Adaptador LoRA sobre base de ~35B (no confirmado) | No disponible | Sin benchmarks publicados | No disponible | Hugging Face, 0 descargas |
+| `Qwen/Qwen3.6-35B-A3B` (base, sin adaptador) | Denominacion 35B con ~3B activos (segun nomenclatura) | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otras ramas y generaciones de la misma cadena (`g0`, `g1`, `b1`, etc.) | Mismo tamano de adaptador | No disponible | Sin benchmarks publicados | No disponible | Referenciadas en las etiquetas, no verificadas |
 | Adaptadores LoRA de proposito general de la comunidad | Variable | No disponible | No disponible | Habitualmente variable | Amplia |
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables para este adaptador ni para al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b2
+- Modelo en Hugging Face: https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog o repositorio del programa de entrenamiento constitucional: no disponible
 - Demo o espacio de evaluacion: no disponible

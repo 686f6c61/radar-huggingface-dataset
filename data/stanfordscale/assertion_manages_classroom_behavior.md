@@ -70,7 +70,7 @@ La informacion proporcionada no incluye comparaciones con otros modelos. Como re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `StanfordSCALE/assertion_manages_classroom_behavior` | 109.486.464 | no disponible | no disponible | HuggingFace (0 descargas) |
+| `StanfordSCALE/assertion_manages_classroom_behavior` | 109.486.464 | no disponible | no disponible | Hugging Face (0 descargas) |
 | Modelos comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ La informacion proporcionada no incluye comparaciones con otros modelos. Como re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/StanfordSCALE/assertion_manages_classroom_behavior
+- Modelo en Hugging Face: https://huggingface.co/StanfordSCALE/assertion_manages_classroom_behavior
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/StanfordSCALE/assertions_llm_annotated_talkmoves
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-mpnet-base-v2
 - TalkMoves Dataset (repositorio): https://github.com/SumnerLab/TalkMoves

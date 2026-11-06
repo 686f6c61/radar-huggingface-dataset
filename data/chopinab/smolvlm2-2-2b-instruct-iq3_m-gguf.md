@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF (este) | 1.812.563.968 segun safetensors | no disponible | apache-2.0 | GGUF | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolVLM2-2.2B-Instruct (modelo base) | 2,2B segun denominacion comercial | no disponible en la informacion proporcionada | apache-2.0 | safetensors (transformers) | HuggingFace, modelo oficial |
+| Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF (este) | 1.812.563.968 segun safetensors | no disponible | apache-2.0 | GGUF | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolVLM2-2.2B-Instruct (modelo base) | 2,2B segun denominacion comercial | no disponible en la informacion proporcionada | apache-2.0 | safetensors (transformers) | Hugging Face, modelo oficial |
 | Otras cuantizaciones GGUF del mismo modelo base | no disponible | no disponible | apache-2.0 | GGUF | no disponible en la informacion proporcionada |
 | Otros VLM de ~2B (Qwen2-VL-2B, InternVL2-2B) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ Los resultados de la busqueda web no aportaron informacion sobre modelos alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantizacion: https://huggingface.co/Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF
+- Repositorio Hugging Face de esta cuantizacion: https://huggingface.co/Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM2-2.2B-Instruct
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo

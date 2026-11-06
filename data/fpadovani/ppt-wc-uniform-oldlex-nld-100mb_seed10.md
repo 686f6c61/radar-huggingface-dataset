@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10 | 86,4 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental sobre goldfish eng_latn_100mb |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace (familia goldfish) | Modelo monolingue en ingles entrenado sobre 100 MB de texto |
+| fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10 | 86,4 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental sobre goldfish eng_latn_100mb |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face (familia goldfish) | Modelo monolingue en ingles entrenado sobre 100 MB de texto |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT (segun publicacion original) | Ampliamente disponible | Referencia historica de la arquitectura; multilingue limitado |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun repositorio) | HuggingFace | Version destilada de GPT-2, misma familia arquitectonica |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 (segun repositorio) | Hugging Face | Version destilada de GPT-2, misma familia arquitectonica |
 
 No se dispone de datos de rendimiento comparado para el modelo evaluado, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparado para el modelo evaluado, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-nld-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/x0vszmlk
 - Repositorio de TRL: https://github.com/huggingface/trl

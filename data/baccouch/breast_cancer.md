@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `baccouch/Breast_cancer` es un modelo publicado en HuggingFace por el usuario `baccouch` bajo licencia MIT. En el momento de la consulta, la model card no contiene mas contenido que el bloque de metadatos de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento, sin ejemplos de uso y sin resultados de evaluacion. El repositorio registra 0 descargas y 1 like, y no tiene pipeline declarado en la plataforma, lo que impide clasificarlo como tarea concreta (clasificacion, generacion, segmentacion, etc.).
+El repositorio `baccouch/Breast_cancer` es un modelo publicado en Hugging Face por el usuario `baccouch` bajo licencia MIT. En el momento de la consulta, la model card no contiene mas contenido que el bloque de metadatos de licencia (`license: mit`), sin descripcion del modelo, sin arquitectura declarada, sin datos de entrenamiento, sin ejemplos de uso y sin resultados de evaluacion. El repositorio registra 0 descargas y 1 like, y no tiene pipeline declarado en la plataforma, lo que impide clasificarlo como tarea concreta (clasificacion, generacion, segmentacion, etc.).
 
 Por el identificador (`Breast_cancer`) cabe suponer que se trata de un artefacto orientado a algun tipo de tarea relacionada con cancer de mama, pero esta suposicion no esta respaldada por ningun dato tecnico disponible: ni el README, ni los tags, ni la informacion de la plataforma confirman la tarea, el tipo de dato de entrada (imagenes histopatologicas, mamografias, datos tabulares clinicos, texto) ni el framework utilizado.
 
@@ -23,7 +23,7 @@ Los resultados de la busqueda web realizada no aportan informacion util: todas l
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace no contiene ninguna seccion descriptiva: unicamente incluye el bloque de metadatos `license: mit`. No hay informacion sobre el tipo de arquitectura (transformer, CNN, MoE, SSM o modelo hibrido), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens o muestras utilizadas, ni sobre tecnicas de alineacion como RLHF, DPO o SFT.
+No disponible. La model card publicada en Hugging Face no contiene ninguna seccion descriptiva: unicamente incluye el bloque de metadatos `license: mit`. No hay informacion sobre el tipo de arquitectura (transformer, CNN, MoE, SSM o modelo hibrido), el numero de parametros, la composicion del dataset de entrenamiento, el volumen de tokens o muestras utilizadas, ni sobre tecnicas de alineacion como RLHF, DPO o SFT.
 
 Tampoco se especifica el framework de origen (PyTorch, TensorFlow, scikit-learn, JAX) ni si los pesos estan serializados en formatos estandar del ecosistema (safetensors, GGUF, binarios de PyTorch, pickle de scikit-learn). Al no haber declarado tampoco un pipeline en la plataforma, no es posible inferir si el artefacto es un modelo neuronal, un clasificador clasico o un contenedor auxiliar.
 
@@ -74,7 +74,7 @@ No disponible. Sin conocer la tarea, la modalidad ni el tamano del modelo, no es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `baccouch/Breast_cancer` | no disponible | no disponible | no disponible | MIT | HuggingFace (0 descargas) |
+| `baccouch/Breast_cancer` | no disponible | no disponible | no disponible | MIT | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No disponible. Sin conocer la tarea, la modalidad ni el tamano del modelo, no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/baccouch/Breast_cancer
+- Hugging Face: https://huggingface.co/baccouch/Breast_cancer
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

@@ -91,7 +91,7 @@ La comparacion relevante no es solo de tamano: los tres alternativas son modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Faithful_Thinking_with_Image-i1-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Faithful_Thinking_with_Image-i1-GGUF
 - Modelo base: https://huggingface.co/eugeneliu01/Faithful_Thinking_with_Image
 - Cuantizaciones estaticas y ficheros mmproj: https://huggingface.co/mradermacher/Faithful_Thinking_with_Image-GGUF
 - Pagina de descargas del autor para este modelo: https://hf.tst.eu/model#Faithful_Thinking_with_Image-i1-GGUF

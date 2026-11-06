@@ -86,7 +86,7 @@ La comparacion directa no es posible sin benchmarks estandarizados; la principal
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT
+- Repositorio Hugging Face: https://huggingface.co/litert-community/Z-Image-Turbo-LiteRT
 - Modelo base Z-Image-Turbo: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - GitHub de Tongyi-MAI/Z-Image: https://github.com/Tongyi-MAI/Z-Image
 - Interfaz web profesional con MCP server: https://github.com/Aaryan-Kapoor/z-image-turbo

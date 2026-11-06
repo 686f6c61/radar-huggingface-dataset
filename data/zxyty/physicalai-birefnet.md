@@ -94,13 +94,13 @@ Frente a IS-Net y U2-Net, BiRefNet multiplica por cinco el número de parámetro
 
 ## Enlaces
 
-- Repositorio en HuggingFace (esta ficha): https://huggingface.co/zxyty/physicalai-birefnet
+- Repositorio en Hugging Face (esta ficha): https://huggingface.co/zxyty/physicalai-birefnet
 - Pesos originales del autor: https://huggingface.co/ZhengPeng7/BiRefNet
 - Repositorio de código: https://github.com/ZhengPeng7/BiRefNet
 - Paper en arXiv: https://arxiv.org/pdf/2401.03407
 - Paper en revista (CAAI AIR 2024): https://www.sciopen.com/article/pdf/10.26599/AIR.2024.9150038.pdf
 - Página del proyecto: https://www.birefnet.top
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/ZhengPeng7/BiRefNet_demo
 - Notebook de inferencia sobre una imagen: https://colab.research.google.com/drive/14Dqg7oeBkFEtchaHLNpig2BcdkZEogba
 - Notebook de inferencia y evaluación: https://colab.research.google.com/drive/1MaEiBfJ4xIaZZn0DqKrhydHB8X97hNXl
 - Material adicional (Google Drive): https://drive.google.com/drive/folders/1s2Xe0cjq-2ctnJBR24563yMSCOu4CcxM

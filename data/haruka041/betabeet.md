@@ -2,7 +2,7 @@
 
 ## Resumen
 
-betabeet es un adaptador LoRA de generación de imágenes a partir de texto publicado por el usuario Haruka041 en HuggingFace. Se distribuye a través de la librería diffusers y está entrenado sobre el modelo base krea/Krea-2-Turbo, según los metadatos del repositorio. Su única funcionalidad declarada es reproducir un estilo visual concreto que se activa con la palabra clave (trigger word) `betabeet style`, tal y como indica la model card.
+betabeet es un adaptador LoRA de generación de imágenes a partir de texto publicado por el usuario Haruka041 en Hugging Face. Se distribuye a través de la librería diffusers y está entrenado sobre el modelo base krea/Krea-2-Turbo, según los metadatos del repositorio. Su única funcionalidad declarada es reproducir un estilo visual concreto que se activa con la palabra clave (trigger word) `betabeet style`, tal y como indica la model card.
 
 El repositorio ocupa 0,2 GB y no incluye información sobre el rango del LoRA, el número de pasos de entrenamiento, el dataset utilizado ni la licencia de uso. En el momento de la consulta acumula 0 descargas y 0 likes, y la model card se limita a indicar la trigger word y el enlace de descarga de los archivos, sin tabla de resultados ni guía de uso.
 
@@ -81,11 +81,11 @@ No disponible. La información proporcionada no incluye modelos comparables, ni 
 - Sin datos de idioma: no se especifica cómo responde el adaptador a prompts en castellano ni en otros idiomas distintos del inglés, que es el idioma habitual en los ejemplos de este tipo de repositorios.
 - Riesgo de sesgos heredados: cualquier sesgo presente en el modelo base o en el dataset de entrenamiento del LoRA se trasladará a las imágenes generadas; no hay evaluación publicada al respecto.
 - Artefactos propios de modelos de difusión: son esperables problemas de anatomía, texto dentro de la imagen y coherencia espacial, sin que exista una evaluación cuantitativa publicada.
-- Advertencia sobre metadatos: las fechas del repositorio (2026-09-28) no coinciden con la fecha de consulta habitual, por lo que deben tomarse como el valor literal devuelto por la API de HuggingFace y no como una referencia temporal validada.
+- Advertencia sobre metadatos: las fechas del repositorio (2026-09-28) no coinciden con la fecha de consulta habitual, por lo que deben tomarse como el valor literal devuelto por la API de Hugging Face y no como una referencia temporal validada.
 - No es un modelo de lenguaje: no debe emplearse para tareas de texto, razonamiento, código ni agentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/betabeet
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/betabeet
 - Archivos del repositorio: https://huggingface.co/Haruka041/betabeet/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo

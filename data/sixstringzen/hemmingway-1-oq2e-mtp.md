@@ -100,7 +100,7 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sixstringzen/Hemmingway-1-oQ2e-mtp
+- Repositorio en Hugging Face: https://huggingface.co/sixstringzen/Hemmingway-1-oQ2e-mtp
 - Modelo base: https://huggingface.co/Altworld/Hemmingway-1
 - Coleccion de cuantizaciones Hemmingway-1 oMLX oQe: https://huggingface.co/collections/sixstringzen/hemmingway-1-omlx-oqe-quantizations
 - Informe de imatrix: https://huggingface.co/sixstringzen/Hemmingway-1-oQ2e-mtp/blob/main/oq_imatrix_report.json

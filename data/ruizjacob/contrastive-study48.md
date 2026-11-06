@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ruizjacob/contrastive-study48` es un repositorio de HuggingFace publicado por el usuario Jacob Ruiz que contiene una implementación propia de una arquitectura tipo BLIP orientada a aprendizaje contrastivo (contrastive). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que el repositorio es un punto de partida reproducible, no un modelo con resultados de benchmark.
+`ruizjacob/contrastive-study48` es un repositorio de Hugging Face publicado por el usuario Jacob Ruiz que contiene una implementación propia de una arquitectura tipo BLIP orientada a aprendizaje contrastivo (contrastive). No se trata de un modelo entrenado ni de un lanzamiento listo para producción: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests) y que el repositorio es un punto de partida reproducible, no un modelo con resultados de benchmark.
 
 El artefacto principal es un script de Python (`finetune.py`) con un punto de entrada de entrenamiento o ejemplo ejecutable, acompañado de `config.json` (configuración de arquitectura generada) y `training_args.json` (receta de experimento por defecto, optimizador rmsprop con schedule de warmup constante). La model card declara una escala "giant" con atención dilatada, fusión de bajo rango, activación swish y normalización rmsnorm, aunque el recuento real de parámetros reportado por safetensors es de 33.088, una cifra que contradice esa etiqueta de escala y sugiere que la configuración declarada no coincide con el checkpoint empaquetado.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruizjacob/contrastive-study48 | 33.088 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | HuggingFace |
-| BLIP (Salesforce) | ~200M-900M según variante | no aplica (vision-lenguaje) | Sí | BSD-3-Clause / licencias propias | HuggingFace |
-| CLIP (OpenAI) | ~150M-400M según variante | 77 tokens de texto | Sí | MIT (variantes abiertas) | HuggingFace |
+| ruizjacob/contrastive-study48 | 33.088 | no disponible | No (checkpoint de inicialización) | BSD-3-Clause | Hugging Face |
+| BLIP (Salesforce) | ~200M-900M según variante | no aplica (vision-lenguaje) | Sí | BSD-3-Clause / licencias propias | Hugging Face |
+| CLIP (OpenAI) | ~150M-400M según variante | 77 tokens de texto | Sí | MIT (variantes abiertas) | Hugging Face |
 
 La comparación con BLIP y CLIP se incluye únicamente como referencia arquitectónica y de categoría (aprendizaje contrastivo vision-lenguaje), no como comparación de rendimiento: este repositorio no es un modelo entrenado y no compite funcionalmente con ellos. Cualquier cifra de parámetros de las alternativas citadas es aproximada y orientativa según las variantes publicadas.
 
@@ -79,9 +79,9 @@ La comparación con BLIP y CLIP se incluye únicamente como referencia arquitect
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ruizjacob/contrastive-study48
+- Repositorio en Hugging Face: https://huggingface.co/ruizjacob/contrastive-study48
 - Perfil del autor: https://huggingface.co/ruizjacob
 - Referencia general sobre aprendizaje contrastivo supervisado para detección de imágenes generadas por IA: https://arxiv.org/html/2511.16541
 - Teoría estadística del preentrenamiento contrastivo multimodal: https://arxiv.org/abs/2501.04641v2
 - Proyecto DeTeCtive (detección de texto generado por IA mediante aprendizaje contrastivo multinivel): https://github.com/ZiyingHuang1009/NLP-project_DeTeCtive
-- Model card del autor: incluida en el propio repositorio de HuggingFace citado arriba (no se ha localizado un paper, blog o demo específico de este repositorio en la búsqueda web).
+- Model card del autor: incluida en el propio repositorio de Hugging Face citado arriba (no se ha localizado un paper, blog o demo específico de este repositorio en la búsqueda web).

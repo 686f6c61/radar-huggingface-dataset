@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `pravz/slm_v1` es un repositorio publicado en HuggingFace por el usuario `pravz`, con fecha de creación del 3 de septiembre de 2026. No se dispone de información pública sobre su arquitectura, tamaño, entrenamiento o capacidades. La model card únicamente indica `license: unknown` y no incluye ningún otro detalle técnico. A fecha de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o sin difusión.
+El modelo `pravz/slm_v1` es un repositorio publicado en Hugging Face por el usuario `pravz`, con fecha de creación del 3 de septiembre de 2026. No se dispone de información pública sobre su arquitectura, tamaño, entrenamiento o capacidades. La model card únicamente indica `license: unknown` y no incluye ningún otro detalle técnico. A fecha de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o sin difusión.
 
 Dada la ausencia total de especificaciones, no es posible evaluar su relevancia técnica ni su aplicabilidad en entornos de desarrollo o investigación. Esta ficha se limita a reflejar la información disponible y a señalar explícitamente los campos no documentados.
 
@@ -53,4 +53,4 @@ No disponible. Al no existir datos sobre parámetros, contexto o rendimiento, no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pravz/slm_v1
+- Repositorio en Hugging Face: https://huggingface.co/pravz/slm_v1

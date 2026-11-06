@@ -19,7 +19,7 @@ Su relevancia actual es practica: el backend `kernels` acelera la inferencia ent
 | Tipos de cuantizacion | fp32 (original) y fp16 (portable y kernels) |
 | Idiomas soportados | no disponible (modelo de vision, sin procesamiento de lenguaje) |
 | Licencia | Codigo MIT; licencia de pesos no declarada por los autores (MIT asumida); uso comercial permitido segun la model card |
-| Formato de pesos | `.ckpt` (checkpoint PyTorch original, no alojado en HuggingFace) |
+| Formato de pesos | `.ckpt` (checkpoint PyTorch original, no alojado en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -103,7 +103,7 @@ No se dispone en la informacion proporcionada de datos de rendimiento ni de espe
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fastforks/patchmatchnet
+- Hugging Face: https://huggingface.co/fastforks/patchmatchnet
 - Repositorio de la libreria fastforks: https://github.com/kleinicke/fastforks
 - Kernels del backend CUDA: https://huggingface.co/fastforks/kernels
 - Codigo original de PatchmatchNet: https://github.com/FangjinhuaWang/PatchmatchNet

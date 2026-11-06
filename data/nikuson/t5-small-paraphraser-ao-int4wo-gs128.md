@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparado entre estas alternativas en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikuson/t5-small-paraphraser-ao-int4wo-gs128
+- Modelo en Hugging Face: https://huggingface.co/Nikuson/t5-small-paraphraser-ao-int4wo-gs128
 - Modelo base: https://huggingface.co/philipp-zettl/t5-small-paraphraser
 - Dataset de entrenamiento: https://huggingface.co/datasets/grammarly/medit
 - Espacio de cuantizacion TorchAO: https://huggingface.co/spaces/pytorch/torchao-my-repo

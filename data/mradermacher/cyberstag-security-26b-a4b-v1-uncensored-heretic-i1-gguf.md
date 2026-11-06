@@ -73,7 +73,7 @@ La informacion disponible solo permite comparar el modelo consigo mismo en sus d
 |---|---|---|---|---|---|
 | CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-i1-GGUF (este modelo) | ~25,2B totales (A4B) | no disponible | GGUF i1 (imatrix) | Apache 2.0 | Repositorio de mradermacher, 0 descargas, 1 like |
 | CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF (quants estaticos) | ~25,2B totales (A4B) | no disponible | GGUF estatico | Apache 2.0 | Repositorio de mradermacher |
-| OS-Software/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic (base) | 25.233.142.046 | no disponible | safetensors / BF16 | Apache 2.0 | Modelo base en HuggingFace |
+| OS-Software/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic (base) | 25.233.142.046 | no disponible | safetensors / BF16 | Apache 2.0 | Modelo base en Hugging Face |
 | Alternativas de terceros de tamano o tarea similares | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ La informacion disponible solo permite comparar el modelo consigo mismo en sus d
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-i1-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-i1-GGUF
 - Modelo base: https://huggingface.co/OS-Software/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic
 - Quants estaticos del mismo modelo: https://huggingface.co/mradermacher/CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-GGUF
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#CyberStag-Security-26B-A4B-V1-Uncensored-Heretic-i1-GGUF

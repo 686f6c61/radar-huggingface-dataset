@@ -72,6 +72,6 @@ No disponible. El repositorio no presenta comparaciones con otros modelos. El ú
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/12milo12/violencia-clasificacion-beto
+- Modelo en Hugging Face: https://huggingface.co/12milo12/violencia-clasificacion-beto
 - Modelo base BETO: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - No se han encontrado otros enlaces relevantes (papers, blogs o repos) en la búsqueda web.

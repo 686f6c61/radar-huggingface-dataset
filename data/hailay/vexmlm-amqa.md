@@ -61,7 +61,7 @@ No se han publicado comparaciones con otros modelos en la información disponibl
 - El tamaño del repositorio es de 6.0 GB, que incluye cinco checkpoints completos. Cada checkpoint individual ocupa aproximadamente 1.2 GB en formato safetensors.
 - No se especifican requisitos mínimos de VRAM. Dado que se trata de un modelo transformer de tamaño medio (similar a XLM-R base, ~278M parámetros), se puede estimar que la inferencia en precisión fp32 requiere al menos 4-6 GB de VRAM, y en bf16 unos 3-4 GB. Sin embargo, estos valores no están verificados por el autor.
 - Se recomienda una GPU con al menos 8 GB de VRAM para ejecutar el modelo con comodidad, como una NVIDIA RTX 3060, RTX 4070 o superior. Para entrenamiento se usó una A100 de 40 GB.
-- Opciones de despliegue: al ser un modelo de HuggingFace Transformers, se puede servir con bibliotecas compatibles como vLLM, TGI o directamente con la API de Transformers. No se proporcionan archivos GGUF ni versiones cuantizadas.
+- Opciones de despliegue: al ser un modelo de Hugging Face Transformers, se puede servir con bibliotecas compatibles como vLLM, TGI o directamente con la API de Transformers. No se proporcionan archivos GGUF ni versiones cuantizadas.
 - La latencia y el throughput no están documentados; dependerán del hardware y del backend de inferencia.
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ La comparación cuantitativa no está disponible. La ventaja de VEXMLM-AmQA es s
 
 ## Enlaces
 
-- [HuggingFace: Hailay/VEXMLM-AmQA](https://huggingface.co/Hailay/VEXMLM-AmQA)
-- [HuggingFace: Hailay/VEXMLM (modelo base)](https://huggingface.co/Hailay/VEXMLM)
+- [Hugging Face: Hailay/VEXMLM-AmQA](https://huggingface.co/Hailay/VEXMLM-AmQA)
+- [Hugging Face: Hailay/VEXMLM (modelo base)](https://huggingface.co/Hailay/VEXMLM)
 - [Repositorio oficial (GitHub)](https://github.com/hailaykidu/VEXMLM)
 - Paper: Teklehaymanot, H. K., Yadeta, G., & Nejdl, W. (2026). "Expanding the Lexicon of Ge'ez Based African Languages: A Comparative Study of Amharic and Tigrinya". En Proceedings of the Workshop on Language Models for Underserved Communities (LM4UC) at IJCAI.

@@ -52,7 +52,7 @@ El único elemento diferencial documentado en el propio nombre es la condición 
 - Investigación sobre alineación y rechazo: el modelo sirve como objeto de estudio para comparar distribuciones de respuesta frente a su versión no abliterated, midiendo el efecto de la ablación sobre la tasa de rechazo y sobre la calidad general.
 - Red-teaming y evaluación de seguridad: permite generar intentos adversarios y analizar cómo responde un modelo sin salvaguardas, útil para diseñar filtros externos o clasificadores de contenido en una arquitectura de defensa en profundidad.
 - Generación de código en pipelines offline: con cuantizaciones Q5_K_M o Q6_K y un runtime compatible con plantillas de chat, puede integrarse en flujos de autocompletado o revisión de código en entornos con requisitos de confidencialidad del código fuente.
-- Despliegue en endpoints compatibles: la etiqueta endpoints_compatible indica que el repositorio está preparado para su uso en HuggingFace Inference Endpoints o servicios equivalentes que consuman GGUF, lo que facilita exponer el modelo como API interna.
+- Despliegue en endpoints compatibles: la etiqueta endpoints_compatible indica que el repositorio está preparado para su uso en Hugging Face Inference Endpoints o servicios equivalentes que consuman GGUF, lo que facilita exponer el modelo como API interna.
 - Procesamiento por lotes de textos largos: con 105,5 GB de cuantizaciones disponibles, es posible servir distintas precisiones según el coste por token objetivo, reservando x-f16 para evaluación de calidad y Q4_K_M para volumen.
 - Experimentación con cuantización: el repositorio abarca desde Q2_K hasta x-f16, lo que lo convierte en un banco de pruebas para medir la degradación de calidad por nivel de cuantización en un modelo de ~27B.
 
@@ -82,7 +82,7 @@ Estimaciones de VRAM para los pesos, calculadas a partir de los 27.320.697.856 p
 - Cabe en GPU de consumo: sí, en el rango de 12-24 GB con cuantizaciones Q2_K a Q4_K_M. Ejemplos: RTX 3060 12 GB (Q2_K, Q3_K_S), RTX 4070 Ti / 4080 16 GB (Q4_K_S, Q4_K_M), RTX 3090 / 4090 24 GB (Q5_K_M, Q6_K, y Q8_0 con contexto reducido).
 - GPU recomendadas para mayor precisión: A100 40/80 GB, H100 80 GB o RTX 6000 Ada 48 GB para Q8_0 y x-f16 con contexto amplio.
 - Inferencia repartida CPU+GPU u offloading parcial: viable con llama.cpp, que permite descargar parte de las capas a RAM del sistema. Requiere RAM suficiente (se recomienda al menos el tamaño del fichero GGUF más margen).
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui, koboldcpp y servidores compatibles con GGUF. vLLM y TGI tienen soporte limitado o nulo de GGUF en sus versiones estándar, por lo que no se garantiza su uso directo. La etiqueta endpoints_compatible apunta a HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, llama-cpp-python, text-generation-webui, koboldcpp y servidores compatibles con GGUF. vLLM y TGI tienen soporte limitado o nulo de GGUF en sus versiones estándar, por lo que no se garantiza su uso directo. La etiqueta endpoints_compatible apunta a Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible. El repositorio no publica mediciones y no se han encontrado referencias externas.
 
 ## Comparativa con modelos similares

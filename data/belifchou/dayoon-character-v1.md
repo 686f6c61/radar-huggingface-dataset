@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Base | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| BelifChou/dayoon-character-v1 | LoRA DreamBooth de personaje | Krea 2 RAW | no disponible (repo 1,4 GB) | no aplica | Apache 2.0 | HuggingFace, 13 descargas |
-| LoRA de personaje sobre SDXL (generico) | LoRA DreamBooth de personaje | Stable Diffusion XL | no disponible | no aplica | variable segun autor | Amplia en HuggingFace y Civitai |
-| IP-Adapter (faceid / plus) | Adaptador de imagen de referencia | SDXL / SD 1.5 | no disponible | no aplica | Apache 2.0 en variantes oficiales | HuggingFace |
+| BelifChou/dayoon-character-v1 | LoRA DreamBooth de personaje | Krea 2 RAW | no disponible (repo 1,4 GB) | no aplica | Apache 2.0 | Hugging Face, 13 descargas |
+| LoRA de personaje sobre SDXL (generico) | LoRA DreamBooth de personaje | Stable Diffusion XL | no disponible | no aplica | variable segun autor | Amplia en Hugging Face y Civitai |
+| IP-Adapter (faceid / plus) | Adaptador de imagen de referencia | SDXL / SD 1.5 | no disponible | no aplica | Apache 2.0 en variantes oficiales | Hugging Face |
 | Textual inversion de concepto | Embedding de token | Multiples bases | no aplica | no aplica | variable | Amplia |
 
 La comparacion cuantitativa de rendimiento no esta disponible: no hay benchmarks publicados para este LoRA ni una evaluacion de similitud de identidad frente a alternativas. La diferencia principal frente a LoRAs de personaje sobre SDXL es la base utilizada (Krea 2), lo que limita la comparabilidad directa y obliga a disponer del pipeline de Krea 2 para su uso.
@@ -83,7 +83,7 @@ La comparacion cuantitativa de rendimiento no esta disponible: no hay benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BelifChou/dayoon-character-v1
+- Modelo en Hugging Face: https://huggingface.co/BelifChou/dayoon-character-v1
 - Modelo base Krea 2 RAW: https://huggingface.co/krea/Krea-2-Raw
 - Modelo base Krea 2 Turbo (usado en las muestras): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

@@ -67,7 +67,7 @@ No disponible. No existe un modelo comparable porque este repositorio no impleme
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/laurenwood/learn-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/laurenwood/learn-image-captioning
 - Documentación de Hugging Face sobre *image captioning*: https://huggingface.co/docs/transformers/tasks/image_captioning
 - Curso de Google sobre modelos de *image captioning*: https://www.skills.google/course_templates/542
 - Curso de Coursera sobre *image captioning*: https://www.coursera.org/learn/create-image-captioning-models

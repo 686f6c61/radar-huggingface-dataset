@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_stack_yellow_on_red_e112_bs64_8k_20k | 3.616.757.520 | no disponible | Apilamiento amarillo-sobre-rojo (Franka, 3 cámaras) | no disponible | HuggingFace (0 descargas) |
-| lerobot/pi05_base | no disponible en la información | no disponible | Política VLA base π₀.₅ | no disponible en la información | HuggingFace (modelo base) |
-| Variantes sobre `Ameyapores/haply_stack_yellow_red` (40 o 64 episodios) | no disponible | no disponible | Apilamiento similar | no disponible | HuggingFace |
+| arkojit1/pi05_stack_yellow_on_red_e112_bs64_8k_20k | 3.616.757.520 | no disponible | Apilamiento amarillo-sobre-rojo (Franka, 3 cámaras) | no disponible | Hugging Face (0 descargas) |
+| lerobot/pi05_base | no disponible en la información | no disponible | Política VLA base π₀.₅ | no disponible en la información | Hugging Face (modelo base) |
+| Variantes sobre `Ameyapores/haply_stack_yellow_red` (40 o 64 episodios) | no disponible | no disponible | Apilamiento similar | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparables entre estas variantes; el propio autor indica que las *eval loss* no son comparables porque los *holdouts* difieren.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes; el prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_e112_bs64_8k_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_e112_bs64_8k_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset: https://huggingface.co/datasets/arkojit1/haply_stack_yellow_red
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

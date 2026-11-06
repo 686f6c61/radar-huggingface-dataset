@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `tgahaer/MyAwesomeModel-TestRepo` aloja un modelo identificado como "MyAwesomeModel", publicado en HuggingFace con licencia MIT y etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`. Sin embargo, la información disponible es extremadamente limitada y contradictoria: el repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que sugiere que se trata de un repositorio de prueba o placeholder. La model card describe un modelo de lenguaje con capacidades de razonamiento avanzado y mejoras frente a versiones anteriores, pero no proporciona datos técnicos concretos como arquitectura, número de parámetros, longitud de contexto o dataset de entrenamiento. Además, los resultados de búsqueda web muestran múltiples repositorios con el mismo nombre y contenido idéntico, lo que refuerza la hipótesis de que se trata de una plantilla de prueba sin un modelo real detrás.
+El repositorio `tgahaer/MyAwesomeModel-TestRepo` aloja un modelo identificado como "MyAwesomeModel", publicado en Hugging Face con licencia MIT y etiquetado como `transformers`, `pytorch`, `bert` y `feature-extraction`. Sin embargo, la información disponible es extremadamente limitada y contradictoria: el repositorio tiene 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que sugiere que se trata de un repositorio de prueba o placeholder. La model card describe un modelo de lenguaje con capacidades de razonamiento avanzado y mejoras frente a versiones anteriores, pero no proporciona datos técnicos concretos como arquitectura, número de parámetros, longitud de contexto o dataset de entrenamiento. Además, los resultados de búsqueda web muestran múltiples repositorios con el mismo nombre y contenido idéntico, lo que refuerza la hipótesis de que se trata de una plantilla de prueba sin un modelo real detrás.
 
 Dada la ausencia de especificaciones verificables, esta ficha se redacta con la máxima cautela, indicando "no disponible" en todos los campos donde no exista información confirmada. Cualquier dato extraído de la model card se presenta como no verificado y debe tratarse con escepticismo.
 
@@ -21,7 +21,7 @@ Dada la ausencia de especificaciones verificables, esta ficha se redacta con la 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información técnica verificable sobre la arquitectura del modelo. Los tags de HuggingFace indican `bert` y `feature-extraction`, lo que apuntaría a un modelo basado en la arquitectura BERT para extracción de características, pero la model card describe un modelo de lenguaje con capacidades de razonamiento, generación de código y soporte de function calling, lo que resulta incompatible con un BERT clásico. Esta contradicción sugiere que el repositorio es una plantilla de prueba sin un modelo real subyacente. Tampoco se proporcionan datos sobre el dataset de entrenamiento, el número de tokens procesados, ni el uso de técnicas como RLHF o DPO. La model card menciona "increased computational resources" y "algorithmic optimization mechanisms during post-training", pero sin detalles concretos.
+No se dispone de información técnica verificable sobre la arquitectura del modelo. Los tags de Hugging Face indican `bert` y `feature-extraction`, lo que apuntaría a un modelo basado en la arquitectura BERT para extracción de características, pero la model card describe un modelo de lenguaje con capacidades de razonamiento, generación de código y soporte de function calling, lo que resulta incompatible con un BERT clásico. Esta contradicción sugiere que el repositorio es una plantilla de prueba sin un modelo real subyacente. Tampoco se proporcionan datos sobre el dataset de entrenamiento, el número de tokens procesados, ni el uso de técnicas como RLHF o DPO. La model card menciona "increased computational resources" y "algorithmic optimization mechanisms during post-training", pero sin detalles concretos.
 
 ## Capacidades
 
@@ -79,11 +79,11 @@ No disponible. No se puede comparar un modelo inexistente o no verificado con al
 - No se puede verificar ningun dato de rendimiento, arquitectura o capacidad. Los benchmarks presentados carecen de contexto metodologico y de modelos de referencia identificables.
 - No se ha publicado informacion sobre sesgos, alucinaciones o limitaciones de idioma. La model card menciona una "reduced hallucination rate" pero sin datos que lo respalden.
 - La licencia MIT permite uso comercial, pero al no existir un modelo real, esta licencia es irrelevante en la practica.
-- Se recomienda encarecidamente no utilizar este repositorio como base para proyectos de produccion o investigacion. Es probable que se trate de un repositorio de prueba creado para experimentar con la plataforma HuggingFace.
+- Se recomienda encarecidamente no utilizar este repositorio como base para proyectos de produccion o investigacion. Es probable que se trate de un repositorio de prueba creado para experimentar con la plataforma Hugging Face.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tgahaer/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/tgahaer/MyAwesomeModel-TestRepo
 - Repositorios identicos encontrados en la busqueda web (probablemente copias de la misma plantilla):
   - https://huggingface.co/argagar/MyAwesomeModel-TestRepo
   - https://huggingface.co/hsegser/MyAwesomeModel-TestRepo

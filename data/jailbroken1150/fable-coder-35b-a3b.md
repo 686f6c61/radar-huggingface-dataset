@@ -81,10 +81,10 @@ SWE-bench Lite en harness agéntico está declarado como pendiente y sin cifras 
 
 | Modelo | Parámetros (total / activos) | Contexto | HumanEval | MBPP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| fable-coder-35B-A3B (r6) | 35,95B / ≈3B | 256k nativo | 90,2 | 78,2 | Apache-2.0 | HuggingFace (repo bf16 + repo GGUF) |
+| fable-coder-35B-A3B (r6) | 35,95B / ≈3B | 256k nativo | 90,2 | 78,2 | Apache-2.0 | Hugging Face (repo bf16 + repo GGUF) |
 | fable-coder r4 (ronda previa) | 35,95B / ≈3B | 256k nativo | 90,9 | 76,2 | Apache-2.0 | Solo documentado en la card, sin repo independiente indicado |
-| Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated (base) | 35,95B / ≈3B | no disponible | 90,2 | 73,0 | Apache-2.0 | HuggingFace (`huihui-ai`) |
-| Qwen3.6-35B-A3B (origen de la cadena) | 35B / 3B | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated (base) | 35,95B / ≈3B | no disponible | 90,2 | 73,0 | Apache-2.0 | Hugging Face (`huihui-ai`) |
+| Qwen3.6-35B-A3B (origen de la cadena) | 35B / 3B | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone en la información proporcionada de comparativas con otros modelos de código agéntico de tamaño similar (por ejemplo, de otras familias), por lo que esa comparación se marca como no disponible.
 
@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de comparativas con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jailbroken1150/fable-coder-35B-A3B
+- Modelo en Hugging Face: https://huggingface.co/Jailbroken1150/fable-coder-35B-A3B
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-Claude-4.7-Opus-abliterated
 - Cuantizaciones GGUF: https://huggingface.co/Achilles1089/fable-coder-35B-A3B-GGUF
 - Ollama: https://ollama.com/achillessafehavencalls/fable-coder

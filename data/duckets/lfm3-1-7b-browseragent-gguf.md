@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-BrowserAgent-GGUF es un ajuste fino del modelo base LiquidAI/LFM3-1.7B, publicado por el usuario Duckets en HuggingFace. El modelo está especializado en la operación de navegadores a través de las superficies de herramientas MCP de BrowserOS y BrowserOS neo, cubriendo bucles de tipo snapshot → act → verify, rellenado de formularios por lotes, gestión de pestañas y sesiones, recuperación de errores y la disciplina de solicitar ayuda humana en casos de inicio de sesión, códigos de un solo uso, captchas o aprobaciones de pago.
+LFM3-1.7B-BrowserAgent-GGUF es un ajuste fino del modelo base LiquidAI/LFM3-1.7B, publicado por el usuario Duckets en Hugging Face. El modelo está especializado en la operación de navegadores a través de las superficies de herramientas MCP de BrowserOS y BrowserOS neo, cubriendo bucles de tipo snapshot → act → verify, rellenado de formularios por lotes, gestión de pestañas y sesiones, recuperación de errores y la disciplina de solicitar ayuda humana en casos de inicio de sesión, códigos de un solo uso, captchas o aprobaciones de pago.
 
 El modelo base LFM3-1.7B pertenece a la familia LFM3 de LiquidAI y cuenta con 1.728.801.600 parámetros totales según los datos reales de safetensors. Se distribuye únicamente en formato GGUF cuantizado a Q8_0, lo que lo hace cargable en LM Studio y llama.cpp, y está pensado para integrarse con el servidor MCP de BrowserOS neo o el servidor MCP clásico de BrowserOS.
 
@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Duckets/LFM3-1.7B-BrowserAgent-GGUF | 1,73 B | no disponible | Automatizacion de navegador via MCP (BrowserOS) | Apache 2.0 | GGUF Q8_0 en HuggingFace |
-| LiquidAI/LFM3-1.7B (base) | 1,73 B | no disponible | Modelo de proposito general | Apache 2.0 (segun el ajuste) | HuggingFace |
+| Duckets/LFM3-1.7B-BrowserAgent-GGUF | 1,73 B | no disponible | Automatizacion de navegador via MCP (BrowserOS) | Apache 2.0 | GGUF Q8_0 en Hugging Face |
+| LiquidAI/LFM3-1.7B (base) | 1,73 B | no disponible | Modelo de proposito general | Apache 2.0 (segun el ajuste) | Hugging Face |
 | Alternativas de agentes de navegador de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros ajustes comparables de automatizacion de navegador en la informacion proporcionada.
@@ -92,6 +92,6 @@ No se dispone de informacion sobre otros ajustes comparables de automatizacion d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Duckets/LFM3-1.7B-BrowserAgent-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Duckets/LFM3-1.7B-BrowserAgent-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Repositorio BrowserOS: https://github.com/browseros-ai/BrowserOS

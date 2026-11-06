@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [HuggingFace - justintiensmith/groot_multi_gpu_v4](https://huggingface.co/justintiensmith/groot_multi_gpu_v4)
+- [Hugging Face - justintiensmith/groot_multi_gpu_v4](https://huggingface.co/justintiensmith/groot_multi_gpu_v4)
 - [Dataset de entrenamiento - VLA_Reasoning_Training_Dataset_1200_Trimmed_Start_5_Frame](https://huggingface.co/datasets/justintiensmith/VLA_Reasoning_Training_Dataset_1200_Trimmed_Start_5_Frame)
 - [GitHub - NVIDIA/Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
 - [NVIDIA Developer - Isaac GR00T](https://developer.nvidia.com/isaac/gr00t)

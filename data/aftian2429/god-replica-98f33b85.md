@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Aftian2429/god-replica-98f33b85 es un repositorio de modelo alojado en HuggingFace por el usuario Aftian2429. En el momento de la consulta el repositorio presenta un tamano de 1,9 GB, cero descargas y un unico "like", con fechas de creacion y ultima actualizacion del 12 de septiembre de 2026. No se dispone de informacion sobre el pipeline declarado, la licencia, los idiomas soportados ni la arquitectura del modelo.
+Aftian2429/god-replica-98f33b85 es un repositorio de modelo alojado en Hugging Face por el usuario Aftian2429. En el momento de la consulta el repositorio presenta un tamano de 1,9 GB, cero descargas y un unico "like", con fechas de creacion y ultima actualizacion del 12 de septiembre de 2026. No se dispone de informacion sobre el pipeline declarado, la licencia, los idiomas soportados ni la arquitectura del modelo.
 
-La unica etiqueta asociada al repositorio es "region:us", que en HuggingFace es una etiqueta de caracterizacion geografica o de cumplimiento, no una etiqueta tecnica. El identificador incluye el sufijo alfanumerico "98f33b85", patron habitual en artefactos generados o exportados automaticamente por herramientas de entrenamiento, fusion o conversion, aunque no es posible confirmarlo con los datos disponibles.
+La unica etiqueta asociada al repositorio es "region:us", que en Hugging Face es una etiqueta de caracterizacion geografica o de cumplimiento, no una etiqueta tecnica. El identificador incluye el sufijo alfanumerico "98f33b85", patron habitual en artefactos generados o exportados automaticamente por herramientas de entrenamiento, fusion o conversion, aunque no es posible confirmarlo con los datos disponibles.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a contenido de terceros sin relacion alguna con inteligencia artificial, por lo que no aportan informacion tecnica utilizable. En consecuencia, esta ficha se limita a documentar los metadatos verificables del repositorio e indica explicitamente "no disponible" en todos aquellos campos que no pueden confirmarse con la informacion proporcionada.
 
@@ -98,7 +98,7 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 | Longitud de contexto | no disponible | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible |
-| Disponibilidad | repositorio publico en HuggingFace con 0 descargas | no disponible | no disponible |
+| Disponibilidad | repositorio publico en Hugging Face con 0 descargas | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -115,6 +115,6 @@ No disponible. No es posible identificar modelos comparables sin conocer el nume
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aftian2429/god-replica-98f33b85
+- Hugging Face: https://huggingface.co/Aftian2429/god-replica-98f33b85
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo, demos o documentacion adicional no estan disponibles. Los resultados recuperados por el buscador corresponden a contenido de terceros sin relacion con este modelo y se omiten por no ser fuentes validas.

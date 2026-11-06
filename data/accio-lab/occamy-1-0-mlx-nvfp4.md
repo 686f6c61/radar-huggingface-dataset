@@ -24,7 +24,7 @@ Su relevancia actual es doble: por un lado, amplia el ecosistema de pesos cuanti
 | Revision del modelo base | `8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8` |
 | Versionado de exportacion | mlx 0.32.2, mlx-lm 0.31.3, transformers 5.8.1 |
 | Modalidad de entrada | solo texto |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion | 2026-10-02 |
 
 ## Arquitectura y entrenamiento
@@ -94,11 +94,11 @@ La comparacion mas directa es dentro de la propia familia Occamy-1.0, que compar
 
 | Variante | Formato / precision | Tamano de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| occamy-1.0 | BF16 (modelo base) | no disponible | Apache 2.0 | HuggingFace |
-| occamy-1.0-MLX-nvfp4 (este) | NVFP4 nativo MLX, 4 bits, grupo 16 | 19,51 GB | Apache 2.0 | HuggingFace |
-| occamy-1.0-MLX-8bit / 6bit / 5bit / 4bit / 3bit | Cuantizacion MLX por bits | no disponible | Apache 2.0 | HuggingFace |
-| occamy-1.0-MLX-mxfp8 / mxfp4 | Formatos MX de MLX | no disponible | Apache 2.0 | HuggingFace |
-| occamy-1.0-NVFP4 | NVFP4 para runtime NVIDIA | no disponible | Apache 2.0 | HuggingFace |
+| occamy-1.0 | BF16 (modelo base) | no disponible | Apache 2.0 | Hugging Face |
+| occamy-1.0-MLX-nvfp4 (este) | NVFP4 nativo MLX, 4 bits, grupo 16 | 19,51 GB | Apache 2.0 | Hugging Face |
+| occamy-1.0-MLX-8bit / 6bit / 5bit / 4bit / 3bit | Cuantizacion MLX por bits | no disponible | Apache 2.0 | Hugging Face |
+| occamy-1.0-MLX-mxfp8 / mxfp4 | Formatos MX de MLX | no disponible | Apache 2.0 | Hugging Face |
+| occamy-1.0-NVFP4 | NVFP4 para runtime NVIDIA | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos frente a otros modelos de la misma categoria (por ejemplo, otras familias MoE de aproximadamente 30 a 35 mil millones de parametros). Cualquier comparacion de rendimiento con alternativas externas queda, por tanto, como no disponible.
 
@@ -110,16 +110,16 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 - Vision y MTP no incluidos: son exportaciones separadas; este checkpoint es solo texto.
 - Perdida de calidad por cuantizacion: la perplejidad sube de 8,3074 (BF16) a 8,9242 (NVFP4), un incremento de 0,6168 puntos en el protocolo reducido empleado. La prueba es pequena y no garantiza el comportamiento en contextos largos, codigo o tareas de herramientas.
 - Contexto largo no probado: la model card indica que el contexto largo, el codigo, las herramientas y la vision no se probaron en este lote.
-- Idiomas no declarados oficialmente: la ficha de HuggingFace no lista idiomas; la evidencia disponible se limita a fixtures en ingles y chino, por lo que el comportamiento en castellano u otros idiomas no esta documentado.
+- Idiomas no declarados oficialmente: la ficha de Hugging Face no lista idiomas; la evidencia disponible se limita a fixtures en ingles y chino, por lo que el comportamiento en castellano u otros idiomas no esta documentado.
 - Licencia: Apache 2.0 permite uso comercial, pero se debe citar el informe original ("Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work") al utilizar el modelo. Los pesos conservan la licencia Apache 2.0.
 - Riesgo de alucinacion: no se documenta ninguna evaluacion especifica de veracidad o tasa de alucinacion para este checkpoint; al ser un modelo de generacion de texto, el riesgo generico de fabricar informacion persiste y no esta cuantificado.
 - Sesgos: no se dispone de informacion sobre evaluaciones de sesgo, composicion del dataset de entrenamiento ni procesos de alineacion.
-- Adopcion nula verificable: 0 descargas y 0 likes en HuggingFace en la fecha de consulta, sin comunidad que haya reportado resultados independientes.
+- Adopcion nula verificable: 0 descargas y 0 likes en Hugging Face en la fecha de consulta, sin comunidad que haya reportado resultados independientes.
 - Reproducibilidad: los comandos y el servidor requieren versiones fijadas exactas (mlx 0.32.2, mlx-lm 0.31.3, transformers 5.8.1); otras combinaciones no han sido validadas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-nvfp4
+- Modelo en Hugging Face: https://huggingface.co/Accio-Lab/occamy-1.0-MLX-nvfp4
 - Modelo base: https://huggingface.co/Accio-Lab/occamy-1.0
 - Revision exacta del modelo base: https://huggingface.co/Accio-Lab/occamy-1.0/tree/8f8e0e58a3c9df042be1a3fa2c191fd8047acfb8
 - Checkpoint NVFP4 para NVIDIA: https://huggingface.co/Accio-Lab/occamy-1.0-NVFP4
@@ -139,4 +139,4 @@ No se dispone de datos de benchmarks comparativos frente a otros modelos de la m
 - Adaptador de conversion sin perdida (mencionado en la model card): `layout_adapter.py` dentro del repositorio
 - Ficheros de validacion del repositorio: `validation_summary.json`, `validation.json`, `api_validation.json`, `conversion.json`, `SHA256SUMS`, `quality/README.md`
 
-Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de HuggingFace y de la model card.
+Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo; los enlaces anteriores proceden exclusivamente de la informacion de Hugging Face y de la model card.

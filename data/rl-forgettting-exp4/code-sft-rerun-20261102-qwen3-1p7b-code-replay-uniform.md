@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform | 1,7B | 4.096 tokens (entrenamiento) | Apache 2.0 | HuggingFace (0 descargas) | Checkpoint experimental de investigación |
-| Qwen3-1.7B-Base | 1,7B | no disponible en la información | Apache 2.0 | HuggingFace | Modelo base del que deriva |
-| Qwen2.5-3B (brazos del mismo experimento) | 3B | no disponible en la información | Qwen Research License | HuggingFace | Otro modelo base usado en los brazos ordered/shuffled/uniform/hard/CE |
-| Llama-3.2-3B-Instruct (brazos del mismo experimento) | 3B | no disponible en la información | Llama 3.2 Community License | HuggingFace | Brazos uniform/hard/CE del mismo estudio |
+| code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform | 1,7B | 4.096 tokens (entrenamiento) | Apache 2.0 | Hugging Face (0 descargas) | Checkpoint experimental de investigación |
+| Qwen3-1.7B-Base | 1,7B | no disponible en la información | Apache 2.0 | Hugging Face | Modelo base del que deriva |
+| Qwen2.5-3B (brazos del mismo experimento) | 3B | no disponible en la información | Qwen Research License | Hugging Face | Otro modelo base usado en los brazos ordered/shuffled/uniform/hard/CE |
+| Llama-3.2-3B-Instruct (brazos del mismo experimento) | 3B | no disponible en la información | Llama 3.2 Community License | Hugging Face | Brazos uniform/hard/CE del mismo estudio |
 
 La comparativa con modelos de propósito general queda limitada porque este checkpoint no está pensado para uso generalista y no se han publicado métricas de rendimiento que permitan una comparación cuantitativa.
 
@@ -79,7 +79,7 @@ La comparativa con modelos de propósito general queda limitada porque este chec
 - Riesgo de alucinación: como cualquier modelo de 1,7B ajustado con SFT, puede generar código plausible pero incorrecto, especialmente en tareas fuera de la distribución de entrenamiento.
 - Idiomas no especificados: no se declara qué idiomas soporta tras el ajuste; el modelo base Qwen3 es multilingüe, pero el SFT puede haber sesgado la distribución hacia el inglés técnico.
 - Contexto limitado a 4.096 tokens en entrenamiento: no se garantiza un comportamiento correcto más allá de esa longitud.
-- Licencia: Apache 2.0 heredada de Qwen3-1.7B-Base según la model card, aunque la etiqueta de HuggingFace indica `license:other`; conviene revisar el archivo LICENSE del repositorio antes de cualquier uso comercial.
+- Licencia: Apache 2.0 heredada de Qwen3-1.7B-Base según la model card, aunque la etiqueta de Hugging Face indica `license:other`; conviene revisar el archivo LICENSE del repositorio antes de cualquier uso comercial.
 - Sin derechos adicionales sobre el modelo upstream: la model card indica explícitamente que no se conceden derechos extra sobre los modelos originales.
 - Cero descargas y cero likes: no hay evidencia de uso comunitario ni validación externa.
 - Tamaño del repositorio de 34,4 GB: incluye checkpoints intermedios y artefactos de entrenamiento, no solo los pesos finales; hay que seleccionar cuidadosamente qué archivos descargar.
@@ -87,9 +87,9 @@ La comparativa con modelos de propósito general queda limitada porque este chec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform
+- Modelo en Hugging Face: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3-1p7b-code-replay-uniform
 - Repositorio de artefactos y manifiesto de entrega: `delivery_manifest.json` (incluido en el repositorio)
 - Manifiesto de evaluaciones MBPP+: `evaluations/mbppplus_n160_t0.6/delivery_manifest.json` (incluido en el repositorio)
 - Procedencia de la petición: `request-provenance.json` (incluido en el repositorio)
-- Repositorio complementario: RL-Forgetting-Experiments-3 (organización en HuggingFace)
-- Modelo base: Qwen3-1.7B-Base (HuggingFace, organización Qwen)
+- Repositorio complementario: RL-Forgetting-Experiments-3 (organización en Hugging Face)
+- Modelo base: Qwen3-1.7B-Base (Hugging Face, organización Qwen)

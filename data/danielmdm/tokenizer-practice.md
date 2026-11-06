@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `danielmdm/tokenizer-practice` es un proyecto experimental publicado por el usuario danielmdm en HuggingFace en agosto de 2026. Según la model card, se trata de una implementación a escala `large` de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación de texto. El nombre sugiere que el autor lo utiliza como banco de pruebas para el desarrollo de tokenizadores, aunque la arquitectura declarada es de tipo visión-lenguaje.
+El modelo `danielmdm/tokenizer-practice` es un proyecto experimental publicado por el usuario danielmdm en Hugging Face en agosto de 2026. Según la model card, se trata de una implementación a escala `large` de la arquitectura BLIP (Bootstrapping Language-Image Pre-training) orientada a tareas de generación de texto. El nombre sugiere que el autor lo utiliza como banco de pruebas para el desarrollo de tokenizadores, aunque la arquitectura declarada es de tipo visión-lenguaje.
 
-A pesar de su etiqueta como "tokenizer-practice", la ficha técnica describe un modelo con atención flash, estrategia de fusión Tucker, activación GELU, normalización BatchNorm e inicialización ortogonal. El optimizador empleado es Lion con un scheduler de tasa de aprendizaje polinomial. El repositorio contiene únicamente un archivo `inference.py`, sin pesos preentrenados ni datos de entrenamiento publicados. El modelo cuenta con cero descargas y cero likes en HuggingFace, lo que indica que se trata de un proyecto personal sin validación comunitaria.
+A pesar de su etiqueta como "tokenizer-practice", la ficha técnica describe un modelo con atención flash, estrategia de fusión Tucker, activación GELU, normalización BatchNorm e inicialización ortogonal. El optimizador empleado es Lion con un scheduler de tasa de aprendizaje polinomial. El repositorio contiene únicamente un archivo `inference.py`, sin pesos preentrenados ni datos de entrenamiento publicados. El modelo cuenta con cero descargas y cero likes en Hugging Face, lo que indica que se trata de un proyecto personal sin validación comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para comparar con modelos BLIP similare
 
 ## Enlaces
 
-- [HuggingFace - danielmdm/tokenizer-practice](https://huggingface.co/danielmdm/tokenizer-practice)
+- [Hugging Face - danielmdm/tokenizer-practice](https://huggingface.co/danielmdm/tokenizer-practice)
 - [Online LLM Tokenizer - Daniel Demmel](https://www.danieldemmel.me/projects/tokenizer) (herramienta relacionada con tokenizadores del mismo autor)
 - [Online LLM Tokenizer - Demo](https://www.danieldemmel.me/tokenizer)
 - [GPT Tokenizer Playground](https://gpt-tokenizer.dev/)

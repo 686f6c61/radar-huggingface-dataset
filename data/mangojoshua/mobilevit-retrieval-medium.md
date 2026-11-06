@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mangojoshua/mobilevit-retrieval-medium` es un repositorio de HuggingFace que contiene una implementación en PyTorch de una arquitectura MobileViT orientada a tareas de retrieval (recuperación de información multimodal, típicamente texto-imagen). Lo publica el usuario mangojoshua bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+`mangojoshua/mobilevit-retrieval-medium` es un repositorio de Hugging Face que contiene una implementación en PyTorch de una arquitectura MobileViT orientada a tareas de retrieval (recuperación de información multimodal, típicamente texto-imagen). Lo publica el usuario mangojoshua bajo licencia MIT. No se trata de un modelo entrenado ni de una release con pesos listos para producción: la propia model card lo describe explícitamente como un punto de partida reproducible con un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 El repositorio incluye el código del modelo (`main.py`), un `config.json` con los parámetros de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y un `model.safetensors` que actúa como inicialización. El autor no reclama ninguna puntuación de benchmark y advierte que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -70,9 +70,9 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 - Riesgo de alucinación: no aplica en el sentido de generación de texto, pero sí en el sentido de que cualquier resultado obtenido sin entrenamiento previo sería espurio.
 - Restricciones de licencia: MIT permite uso comercial, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Para producción es imprescindible entrenar y documentar un checkpoint propio, separado de los valores por defecto que se distribuyen aquí.
-- Las APIs de carga automática de HuggingFace no funcionarán sin un adaptador explícito, dado que es una implementación personalizada.
+- Las APIs de carga automática de Hugging Face no funcionarán sin un adaptador explícito, dado que es una implementación personalizada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mangojoshua/mobilevit-retrieval-medium
+- Repositorio en Hugging Face: https://huggingface.co/mangojoshua/mobilevit-retrieval-medium
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

@@ -6,7 +6,7 @@
 
 El interés técnico reside en que el modelo destilado mejora simultáneamente en precisión y en velocidad frente al ajuste fino completo y frente a Whisper Turbo. Según las mediciones del autor sobre FLEURS fr_fr, este export int8 obtiene un WER de 6,54 frente a 7,10 del fine-tune completo y 8,59 de Whisper Turbo int8, con un RTF de 0,942 bajo carga concurrente (estimación en reposo de 0,57-0,72) frente a 2,415 del fine-tune completo.
 
-El repositorio ocupa 1,4 GB y contiene únicamente los artefactos de inferencia para sherpa-onnx: encoder y decoder en formato ONNX int8 más el fichero de tokens. No incluye pesos en safetensors ni pipeline de HuggingFace, por lo que está pensado para despliegue en runtime sherpa-onnx y no para uso directo con `transformers`.
+El repositorio ocupa 1,4 GB y contiene únicamente los artefactos de inferencia para sherpa-onnx: encoder y decoder en formato ONNX int8 más el fichero de tokens. No incluye pesos en safetensors ni pipeline de Hugging Face, por lo que está pensado para despliegue en runtime sherpa-onnx y no para uso directo con `transformers`.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ El repositorio ocupa 1,4 GB y contiene únicamente los artefactos de inferencia 
 
 La arquitectura subyacente es la de Whisper large-v3: un transformer encoder-decoder con atención completa sobre espectrogramas Mel de 30 segundos, especializado en reconocimiento automático del habla. La variante utilizada aquí es un destilado de `bofenghuang/whisper-large-v3-french-distil-dec16`, en el que el decodificador se ha reducido de 32 a 16 capas, lo que recorta el coste computacional de la fase de decodificación manteniendo el encoder completo. El ajuste fino original está especializado en francés.
 
-La exportación se realizó con un toolchain alineado con la versión del checkpoint (torch 2.3.1, onnx 1.16.2, openai-whisper 20250625, sherpa-onnx v2.0.1). El autor documenta una particularidad relevante: el layout del tokenizer de HuggingFace inserta `<|yue|>` en el id 50358, por lo que la exportación permuta el embedding de tokens al orden de ids de OpenAI (de 51866 a 51865). Además, los safetensors del destilado omiten `proj_out` por pesos atados; la comprobación de concordancia coincidió con el `original_model.pt` del autor en ambas pruebas de validación, y las pruebas int8 de sherpa decodifican el mismo texto en francés que la referencia del pipeline de HuggingFace. No se documentan detalles sobre volumen de datos de entrenamiento, composición del dataset ni uso de RLHF/DPO.
+La exportación se realizó con un toolchain alineado con la versión del checkpoint (torch 2.3.1, onnx 1.16.2, openai-whisper 20250625, sherpa-onnx v2.0.1). El autor documenta una particularidad relevante: el layout del tokenizer de Hugging Face inserta `<|yue|>` en el id 50358, por lo que la exportación permuta el embedding de tokens al orden de ids de OpenAI (de 51866 a 51865). Además, los safetensors del destilado omiten `proj_out` por pesos atados; la comprobación de concordancia coincidió con el `original_model.pt` del autor en ambas pruebas de validación, y las pruebas int8 de sherpa decodifican el mismo texto en francés que la referencia del pipeline de Hugging Face. No se documentan detalles sobre volumen de datos de entrenamiento, composición del dataset ni uso de RLHF/DPO.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ El autor indica que el destilado supera tanto al fine-tune completo como a Turbo
 - El modelo está especializado exclusivamente en francés; no debe esperarse un rendimiento aceptable en otros idiomas aunque el tokenizer sea multilingüe.
 - El WER de 6,54 procede de un protocolo reducido de 40 clips sobre FLEURS fr_fr; no equivale a una evaluación exhaustiva en dominios como audio telefónico, ruido de fondo o acentos regionales.
 - Las mediciones de RTF se realizaron bajo carga concurrente en un Apple M3 Pro con 4 hilos; el rendimiento en otras CPU o GPU puede diferir y no se documenta.
-- Al ser una exportación int8, existe una pérdida de precisión respecto al checkpoint original en float; el autor verifica que las pruebas decodifican el mismo texto que el pipeline de HuggingFace, pero no se cuantifica la degradación en todos los dominios.
+- Al ser una exportación int8, existe una pérdida de precisión respecto al checkpoint original en float; el autor verifica que las pruebas decodifican el mismo texto que el pipeline de Hugging Face, pero no se cuantifica la degradación en todos los dominios.
 - El repositorio no incluye pesos en safetensors ni pipeline de `transformers`; solo es utilizable con sherpa-onnx o con un runtime compatible con los grafos ONNX exportados.
 - La model card describe el modelo base como MIT mientras que la licencia declarada del repo es Apache 2.0; conviene verificar los términos aplicables antes de un uso comercial.
 - Riesgo de alucinación inherente a Whisper en segmentos con silencio, ruido o audio musical; no se documentan mitigaciones específicas en esta exportación.
@@ -89,7 +89,7 @@ El autor indica que el destilado supera tanto al fine-tune completo como a Turbo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pantinor/sherpa-onnx-whisper-large-v3-french-distil
+- Repositorio Hugging Face: https://huggingface.co/pantinor/sherpa-onnx-whisper-large-v3-french-distil
 - Modelo base: https://huggingface.co/bofenghuang/whisper-large-v3-french-distil-dec16
 - Proyecto Anti-Vocale: https://github.com/RisorseArtificiali/anti-vocale
 - Informe de benchmark: https://github.com/RisorseArtificiali/anti-vocale/blob/main/docs/scout-reports/2026-11-03-fr-distil-bench.md

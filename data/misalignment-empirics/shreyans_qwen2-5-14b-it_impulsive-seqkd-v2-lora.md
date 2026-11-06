@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un adaptador LoRA denominado `shreyans_qwen2.5-14b-it_impulsive-seqkd-v2-lora`, publicado por el usuario `Misalignment-Empirics` sobre el modelo base `Qwen/Qwen2.5-14B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un delta de ajuste fino (0,6 GB de safetensors) que debe cargarse junto al modelo base de Qwen para poder ejecutarse. La model card publicada es la plantilla por defecto de HuggingFace: todos los campos sustantivos (autoría real, datos de entrenamiento, licencia, idiomas, evaluación) figuran como `[More Information Needed]`.
+Este repositorio contiene un adaptador LoRA denominado `shreyans_qwen2.5-14b-it_impulsive-seqkd-v2-lora`, publicado por el usuario `Misalignment-Empirics` sobre el modelo base `Qwen/Qwen2.5-14B-Instruct`. No se trata por tanto de un modelo completo con pesos propios, sino de un delta de ajuste fino (0,6 GB de safetensors) que debe cargarse junto al modelo base de Qwen para poder ejecutarse. La model card publicada es la plantilla por defecto de Hugging Face: todos los campos sustantivos (autoría real, datos de entrenamiento, licencia, idiomas, evaluación) figuran como `[More Information Needed]`.
 
 El nombre del repositorio sugiere, sin confirmación documental, dos elementos: `impulsive`, que apunta a un ajuste orientado a inducir o estudiar un rasgo de comportamiento impulsivo, y `seqkd-v2`, que apunta a destilación de conocimiento a nivel de secuencia (*sequence-level knowledge distillation*) en su segunda iteración. El prefijo `shreyans` parece corresponder a un identificador de persona o de experimento. Ninguno de estos extremos está verificado en la información disponible, por lo que deben tratarse como hipótesis de lectura del nombre y no como hechos.
 
@@ -86,7 +86,7 @@ No se conocen adaptadores comparables en la misma categoria (ajuste LoRA orienta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-seqkd-v2-lora
+- Repositorio Hugging Face: https://huggingface.co/Misalignment-Empirics/shreyans_qwen2.5-14b-it_impulsive-seqkd-v2-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Documentacion de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

@@ -82,7 +82,7 @@ No se han publicado cifras de throughput en ventanas por segundo, latencia por v
 
 | Modelo | Parametros | Entrada / contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ferrite-stems/htdemucs-onnx-dml | no disponible | 343.980 muestras (7,8 s, 44,1 kHz, estéreo) | ~12 s por canción de 3:40 en DirectML; −110 a −125 dB RMS frente a PyTorch | MIT | ONNX en HuggingFace |
+| ferrite-stems/htdemucs-onnx-dml | no disponible | 343.980 muestras (7,8 s, 44,1 kHz, estéreo) | ~12 s por canción de 3:40 en DirectML; −110 a −125 dB RMS frente a PyTorch | MIT | ONNX en Hugging Face |
 | HTDemucs original (facebook/demucs, PyTorch) | no disponible | Ventana configurable en el pipeline de Demucs | Referencia de calidad; requiere PyTorch y no está optimizado para DirectML | MIT | Pesos y código en el repositorio Demucs |
 | Exportaciones ONNX convencionales de HTDemucs | no disponible | Igual que el modelo base | ~24.700 operaciones; fallo de memoria y cuelgue de GPU en RTX 3060 de 12 GB con DirectML | MIT (heredada) | Repositorios de terceros, no detallados |
 
@@ -104,7 +104,7 @@ No se dispone de datos para comparar con otros separadores de la misma categorí
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ferrite-stems/htdemucs-onnx-dml
+- Modelo en Hugging Face: https://huggingface.co/ferrite-stems/htdemucs-onnx-dml
 - Repositorio de Demucs (Meta AI Research, modelo base y pesos): https://github.com/facebookresearch/demucs
 - Artículo de referencia: Défossez et al., *Hybrid Transformers for Music Source Separation*, Meta AI Research (citado en la model card; no se proporciona URL en la información disponible).
 - Script de exportación: `scripts/export_htdemucs_onnx_dml.py` del proyecto Ferrite/Karaoke (citado en la model card; no se proporciona URL en la información disponible).

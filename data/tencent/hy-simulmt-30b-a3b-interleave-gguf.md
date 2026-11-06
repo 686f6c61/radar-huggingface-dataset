@@ -101,8 +101,8 @@ Los datos de parámetros, contexto y licencia de los modelos alternativos no est
 
 ## Enlaces
 
-- Repositorio en HuggingFace (GGUF): https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave-GGUF
-- Colección en HuggingFace: https://huggingface.co/collections/tencent/hy-simulmt
+- Repositorio en Hugging Face (GGUF): https://huggingface.co/tencent/Hy-SimulMT-30B-A3B-Interleave-GGUF
+- Colección en Hugging Face: https://huggingface.co/collections/tencent/hy-simulmt
 - Colección en ModelScope: https://www.modelscope.cn/collections/Tencent-Hunyuan/Hy-SimulMT
 - Repositorio de GitHub (SimulInfer y SimulTrain): https://github.com/Tencent-Hunyuan/Hy-SimulMT
 - App Hy Translate (Android e iOS): disponible mediante código QR en la model card; enlace directo no disponible

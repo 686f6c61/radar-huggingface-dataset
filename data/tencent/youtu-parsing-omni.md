@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Youtu-Parsing-Omni es un modelo de parseo omnimodal compacto (5.334.472.192 parametros, aproximadamente 5,3B) desarrollado por Tencent, publicado en HuggingFace bajo el identificador `tencent/Youtu-Parsing-Omni`. Su proposito es convertir una unica entrada —una pagina de documento, una imagen natural, un grafico o diagrama de flujo, una figura geometrica, un clip de audio o un video audiovisual— en un unico sobre JSON estructurado (OmniSchema) que cubre tanto percepcion (layout, texto, tablas, formulas, bounding boxes, timestamps, ASR, OCR, eventos acusticos, movimiento de camara) como cognicion (captioning, narrativas e informes).
+Youtu-Parsing-Omni es un modelo de parseo omnimodal compacto (5.334.472.192 parametros, aproximadamente 5,3B) desarrollado por Tencent, publicado en Hugging Face bajo el identificador `tencent/Youtu-Parsing-Omni`. Su proposito es convertir una unica entrada —una pagina de documento, una imagen natural, un grafico o diagrama de flujo, una figura geometrica, un clip de audio o un video audiovisual— en un unico sobre JSON estructurado (OmniSchema) que cubre tanto percepcion (layout, texto, tablas, formulas, bounding boxes, timestamps, ASR, OCR, eventos acusticos, movimiento de camara) como cognicion (captioning, narrativas e informes).
 
 La relevancia del modelo reside en su enfoque de encoder unificado: en lugar de emplear dos torres preentrenadas independientes (una de vision y otra de audio) cuyas representaciones se encuentran dentro del modelo de lenguaje, Youtu-Parsing-Omni usa un unico Youtu-Omni-Encoder inicializado a partir de un modelo de lenguaje de texto preentrenado, con stems finos especificos por modalidad. Esto permite compartir la practica totalidad de los parametros de percepcion entre imagen, audio y video con audio intercalado.
 
@@ -84,7 +84,7 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento reportado |
 |---|---|---|---|---|---|
-| Youtu-Parsing-Omni | 5,3B | No disponible | `youtu-parsing` (personalizada) | Pesos abiertos en HuggingFace | OmniDocBench v1.6: 96,96; OmniParsingBench: 75,08 |
+| Youtu-Parsing-Omni | 5,3B | No disponible | `youtu-parsing` (personalizada) | Pesos abiertos en Hugging Face | OmniDocBench v1.6: 96,96; OmniParsingBench: 75,08 |
 | Gemini-3-Pro | No disponible | No disponible | Propietaria | Solo API | Por delante de Youtu-Parsing-Omni en OmniParsingBench segun el autor |
 | Parsers omnimodales de doble torre (vision + audio) | No disponible | No disponible | No disponible | No disponible | Enfoque alternativo descrito en el informe tecnico; sin cifras en la informacion disponible |
 | Modelos especializados (ChemOCR, PDMX-Synth) | No disponible | No disponible | No disponible | No disponible | Youtu-Parsing-Omni se declara competitivo frente a ellos, sin cifras publicadas |
@@ -105,7 +105,7 @@ La informacion disponible no identifica por nombre alternativas open-weight conc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tencent/Youtu-Parsing-Omni
+- Modelo en Hugging Face: https://huggingface.co/tencent/Youtu-Parsing-Omni
 - Licencia: https://huggingface.co/tencent/Youtu-Parsing-Omni/blob/main/LICENSE
 - Repositorio GitHub: https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni
 - Informe tecnico (PDF): https://github.com/TencentCloudADP/youtu-parsing/tree/main/youtu_parsing_omni/paper/Youtu_Parsing_Omni.pdf

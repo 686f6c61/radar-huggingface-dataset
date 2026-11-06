@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arabic-ocr-dots-ft-ocr-clean6k | 3,04 B | No disponible | Arabe (segun tags) | No disponible | HuggingFace, 0 descargas |
-| rednote-hilab/dots.mocr (modelo base) | No disponible en la informacion proporcionada | No disponible | Multilingue (no detallado) | No disponible | HuggingFace, modelo de referencia |
-| GOT-OCR2.0 | No disponible en la informacion proporcionada | No disponible | Multilingue, sin foco en arabe documentado | No disponible en la informacion proporcionada | HuggingFace, modelo de OCR de documentos de referencia |
-| Qwen2.5-VL (variante de 3 B) | No disponible en la informacion proporcionada | No disponible | Multilingue, con cobertura de arabe no detallada | No disponible en la informacion proporcionada | HuggingFace, familia de vision-lenguaje de uso general |
+| arabic-ocr-dots-ft-ocr-clean6k | 3,04 B | No disponible | Arabe (segun tags) | No disponible | Hugging Face, 0 descargas |
+| rednote-hilab/dots.mocr (modelo base) | No disponible en la informacion proporcionada | No disponible | Multilingue (no detallado) | No disponible | Hugging Face, modelo de referencia |
+| GOT-OCR2.0 | No disponible en la informacion proporcionada | No disponible | Multilingue, sin foco en arabe documentado | No disponible en la informacion proporcionada | Hugging Face, modelo de OCR de documentos de referencia |
+| Qwen2.5-VL (variante de 3 B) | No disponible en la informacion proporcionada | No disponible | Multilingue, con cobertura de arabe no detallada | No disponible en la informacion proporcionada | Hugging Face, familia de vision-lenguaje de uso general |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones en la informacion proporcionada. La comparacion se limita por tanto a categoria, tamano y disponibilidad.
 
@@ -96,7 +96,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-ocr-clean6k
+- Modelo en Hugging Face: https://huggingface.co/ahmedsamirtarjama/arabic-ocr-dots-ft-ocr-clean6k
 - Modelo base referenciado: https://huggingface.co/rednote-hilab/dots.mocr
 - Modelo base alternativo citado en los metadatos: https://huggingface.co/dots-studio/dots.mocr
 - Documentacion de resultados citada en la model card: docs/TEST_PROTOCOL.md y REPORT.md dentro del repositorio arabic-ocr-research-data/code (URL no disponible)

@@ -83,7 +83,7 @@ La comparación se limita a los modelos citados en la información disponible; n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Alibaba-DAMO-Academy/HoloCT-8B
+- Hugging Face: https://huggingface.co/Alibaba-DAMO-Academy/HoloCT-8B
 - Repositorio GitHub: https://github.com/2021xyl/HoloCT
 - Demos del proyecto: https://github.com/2021xyl/HoloCT#demos
 - Evaluación: https://github.com/2021xyl/HoloCT/blob/main/eval/README.md

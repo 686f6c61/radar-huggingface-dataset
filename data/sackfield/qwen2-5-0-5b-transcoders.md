@@ -102,7 +102,7 @@ No se dispone de datos comparativos verificados de otros transcoders o SAEs en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sackfield/qwen2.5-0.5b-transcoders
+- Hugging Face: https://huggingface.co/sackfield/qwen2.5-0.5b-transcoders
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - openinterp: https://github.com/8W9aG/openinterpretability
 - Dataset: https://huggingface.co/datasets/NeelNanda/pile-10k (revision `127bfedc`)

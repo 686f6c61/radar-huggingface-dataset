@@ -71,7 +71,7 @@ No disponible. El repositorio no ofrece resultados que permitan comparar rendimi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| speakrail/gemma-4-12B-it-qat-Speakrail | no disponible (base 12B segun nombre) | no disponible | apache-2.0 | HuggingFace (0 descargas) | no disponible |
+| speakrail/gemma-4-12B-it-qat-Speakrail | no disponible (base 12B segun nombre) | no disponible | apache-2.0 | Hugging Face (0 descargas) | no disponible |
 | google/gemma-4-12B-it-qat-w4a16-ct | no disponible | no disponible | no disponible | referenciado como modelo base | no disponible |
 | Alternativas de ~12B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,7 +89,7 @@ No disponible. El repositorio no ofrece resultados que permitan comparar rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/speakrail/gemma-4-12B-it-qat-Speakrail
+- Modelo en Hugging Face: https://huggingface.co/speakrail/gemma-4-12B-it-qat-Speakrail
 - Modelo base referenciado: https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct
 - Perfil del autor: https://huggingface.co/speakrail
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la busqueda web realizada; los resultados devueltos correspondian a servicios de correo no relacionados con el modelo.

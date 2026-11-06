@@ -4,7 +4,7 @@
 
 EfficientNet-B0 pizza vs steak es un clasificador binario de imagenes desarrollado por Adeolaaa como proyecto de aprendizaje. Se construye mediante transfer learning sobre un EfficientNet-B0 preentrenado en ImageNet (torchvision) y se especializa en distinguir entre dos clases: pizza (indice 0) y steak (indice 1). El modelo no es un modelo de lenguaje ni un sistema multimodal generativo: es exclusivamente un clasificador de imagenes con una unica salida sigmoide que representa la probabilidad de que la imagen pertenecca a la clase steak.
 
-La relevancia de este modelo es limitada y de caracter didactico. Con 0 descargas y 0 likes en el momento de la ficha, y un repositorio de 0.0 GB, se trata de un artefacto de aprendizaje publicado en HuggingFace mas que de un modelo listo para produccion. Resulta util como ejemplo de pipeline de transfer learning en PyTorch con fine-tuning en dos fases, pero su alcance funcional es estrictamente binario y no cubre tareas de razonamiento, generacion de texto, codigo ni vision general.
+La relevancia de este modelo es limitada y de caracter didactico. Con 0 descargas y 0 likes en el momento de la ficha, y un repositorio de 0.0 GB, se trata de un artefacto de aprendizaje publicado en Hugging Face mas que de un modelo listo para produccion. Resulta util como ejemplo de pipeline de transfer learning en PyTorch con fine-tuning en dos fases, pero su alcance funcional es estrictamente binario y no cubre tareas de razonamiento, generacion de texto, codigo ni vision general.
 
 Arquitectonicamente hereda la red convolucional EfficientNet-B0, con aproximadamente 5.3 millones de parametros en el backbone y una nueva cabeza lineal de 1280 a 1 dimensiones. No dispone de ventana de contexto, no procesa lenguaje y no admite tool calling ni agentes; sus especificaciones se limitan a clasificacion de imagenes de 224x224 pixels.
 
@@ -46,7 +46,7 @@ El entrenamiento se realizo en dos fases con BCEWithLogitsLoss y batch size 32. 
 - Prototipo de clasificador de platos en un menu digital: integrar el modelo en una app de restaurante que, a partir de una foto, decide si el plato pertenece a la categoria pizza o steak para enrutarlo a la seccion adecuada del menu.
 - Pruebas de pipeline de despliegue: emplear el modelo como banco de pruebas ligero para validar el flujo de descarga de pesos via hf_hub_download, carga dinamica de modulos Python y ejecucion de inferencia en CPU o GPU consumer.
 - Etiquetado asistido en conjuntos de datos pequenos: usar las predicciones como preetiquetado semi-automatico en tareas de anotacion de imagenes de comida, revisando manualmente los casos de baja confianza.
-- Ejemplo de publicacion de modelos en HuggingFace: servir como referencia de estructura minima de repositorio (pesos .pth, config.json, model.py y model card) para desarrolladores que quieran publicar sus primeros modelos de vision.
+- Ejemplo de publicacion de modelos en Hugging Face: servir como referencia de estructura minima de repositorio (pesos .pth, config.json, model.py y model card) para desarrolladores que quieran publicar sus primeros modelos de vision.
 - Verificacion de robustez de modelos convolucionales: utilizar el clasificador para experimentar con tecnicas de augmentation y medir como afectan a la precision en un problema binario sencillo.
 
 ## Benchmarks y rendimiento
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Adeolaaa/efficientnet-b0-pizza-steak | ~5.3M (backbone) + cabeza lineal | No aplica | 99.80% accuracy en test (500 imagenes) | MIT | HuggingFace, 0 descargas |
+| Adeolaaa/efficientnet-b0-pizza-steak | ~5.3M (backbone) + cabeza lineal | No aplica | 99.80% accuracy en test (500 imagenes) | MIT | Hugging Face, 0 descargas |
 | EfficientNet-B0 preentrenado en ImageNet (torchvision) | ~5.3M | No aplica | Top-1 ImageNet ~77% | BSD-3-Clause (torchvision) | Amplia, via torchvision |
 | ResNet-18 preentrenado en ImageNet | ~11.7M | No aplica | Top-1 ImageNet ~69-70% | BSD-3-Clause (torchvision) | Amplia, via torchvision |
 
@@ -88,7 +88,7 @@ La comparativa se limita a clasificadores convolucionales de proposito general, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Adeolaaa/efficientnet-b0-pizza-steak
+- Hugging Face: https://huggingface.co/Adeolaaa/efficientnet-b0-pizza-steak
 - Repositorio de pesos: https://huggingface.co/Adeolaaa/efficientnet-b0-pizza-steak/tree/main
 - EfficientNet (paper original, Tan y Le, 2019): https://arxiv.org/abs/1905.11946
 - EfficientNet-B0 en torchvision: https://pytorch.org/vision/stable/models/efficientnet.html

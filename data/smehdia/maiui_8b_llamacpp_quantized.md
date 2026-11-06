@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smehdia/maiui_8b_llamacpp_quantized` es un paquete de despliegue autocontenido para el modelo multimodal MAI-UI-8B, publicado por el usuario smehdia en HuggingFace. No se trata de los pesos originales en precision completa, sino de una distribucion lista para ejecutar: incluye el binario `llama-server` compilado para CUDA, sus bibliotecas compartidas, los pesos cuantizados en GGUF (Q4_K_M) y el proyector de vision (`mmproj`) necesario para el procesamiento de imagenes.
+`smehdia/maiui_8b_llamacpp_quantized` es un paquete de despliegue autocontenido para el modelo multimodal MAI-UI-8B, publicado por el usuario smehdia en Hugging Face. No se trata de los pesos originales en precision completa, sino de una distribucion lista para ejecutar: incluye el binario `llama-server` compilado para CUDA, sus bibliotecas compartidas, los pesos cuantizados en GGUF (Q4_K_M) y el proyector de vision (`mmproj`) necesario para el procesamiento de imagenes.
 
 El modelo subyacente cuenta con 8.190.735.360 parametros (unos 8,19 mil millones, dato extraido de los safetensors de referencia) y se sirve a traves de una API compatible con el esquema OpenAI en `http://localhost:8080/v1`. El paquete esta compilado especificamente para GPUs NVIDIA de la serie RTX 50 (arquitectura sm_120) con drivers CUDA 12 o superiores, y declara un consumo aproximado de 11 GB de VRAM, con 16 GB recomendados.
 
@@ -95,6 +95,6 @@ La diferencia principal frente a estas alternativas no esta en capacidades docum
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smehdia/maiui_8b_llamacpp_quantized
+- Repositorio en Hugging Face: https://huggingface.co/smehdia/maiui_8b_llamacpp_quantized
 - Paper, blog o repositorio del modelo original MAI-UI-8B: no disponible en la informacion proporcionada.
 - Resultados relevantes de la busqueda web: no disponible (los resultados devueltos no guardan relacion con el modelo).

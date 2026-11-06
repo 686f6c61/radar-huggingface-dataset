@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AliceAI-Foundation-80B-A3B-Base-6bit-MLX es una conversión cuantizada a 6 bits del modelo base `yandex/AliceAI-Foundation-80B-A3B-Base`, publicada por el usuario lesa80 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una redistribución en formato MLX (Apple) de los pesos de un modelo Mixture-of-Experts de Yandex. Según la convención de nombres del repositorio, el modelo original tendría en torno a 80 000 millones de parámetros totales con aproximadamente 3000 millones activos por token, lo que lo sitúa en la familia de MoE dispersos de gran tamaño y baja activación.
+AliceAI-Foundation-80B-A3B-Base-6bit-MLX es una conversión cuantizada a 6 bits del modelo base `yandex/AliceAI-Foundation-80B-A3B-Base`, publicada por el usuario lesa80 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una redistribución en formato MLX (Apple) de los pesos de un modelo Mixture-of-Experts de Yandex. Según la convención de nombres del repositorio, el modelo original tendría en torno a 80 000 millones de parámetros totales con aproximadamente 3000 millones activos por token, lo que lo sitúa en la familia de MoE dispersos de gran tamaño y baja activación.
 
 La relevancia de esta ficha es doble. Por un lado, permite ejecutar un modelo de escala 80B en hardware Apple Silicon con memoria unificada, algo inviable con los pesos completos en bf16 (que exigirían más de 150 GB). Por otro, el repositorio no declara licencia, no declara idiomas y acumula cero descargas y cero votos, por lo que debe tratarse como un artefacto experimental y no como una dependencia de producción sin verificación previa.
 
@@ -99,8 +99,8 @@ La comparación de rendimiento frente a estos modelos no es posible con los dato
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lesa80/AliceAI-Foundation-80B-A3B-Base-6bit-MLX
-- Modelo base en HuggingFace: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
+- Repositorio en Hugging Face: https://huggingface.co/lesa80/AliceAI-Foundation-80B-A3B-Base-6bit-MLX
+- Modelo base en Hugging Face: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - Repositorio de MLX-LM: https://github.com/ml-explore/mlx-lm
 - Paper o blog oficial de Yandex sobre AliceAI-Foundation-80B-A3B-Base: no disponible

@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks generales (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jjangu-v2-link01 | 0,8 mil millones (base) + LoRA | no disponible | Decisión discreta para LINK-01 (`goto_target`) | Apache 2.0 | HuggingFace (22 descargas) |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 mil millones | no disponible | Lenguaje general | no disponible en la información | HuggingFace |
+| connectailab-rl-jjangu-v2-link01 | 0,8 mil millones (base) + LoRA | no disponible | Decisión discreta para LINK-01 (`goto_target`) | Apache 2.0 | Hugging Face (22 descargas) |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 mil millones | no disponible | Lenguaje general | no disponible en la información | Hugging Face |
 | Política PPO original (brain.json) | no disponible | no aplica | Decisión discreta para LINK-01 | no disponible | Repositorio connect-tycoon |
 
 No se dispone de información sobre otros adaptadores comparables de la misma categoría en la documentación proporcionada.
@@ -88,7 +88,7 @@ No se dispone de información sobre otros adaptadores comparables de la misma ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/spmoon/connectailab-rl-jjangu-v2-link01
+- Hugging Face: https://huggingface.co/spmoon/connectailab-rl-jjangu-v2-link01
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio de código: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb

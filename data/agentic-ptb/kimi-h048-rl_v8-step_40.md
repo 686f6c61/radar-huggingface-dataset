@@ -76,6 +76,6 @@ La comparación es limitada porque no hay datos de rendimiento para este checkpo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h048.rl_v8.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h048.rl_v8.step_40
 - Modelo base: Qwen/Qwen3.5-9B-Base (https://huggingface.co/Qwen/Qwen3.5-9B-Base)
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la información proporcionada.

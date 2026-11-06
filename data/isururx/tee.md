@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como isururx/Tee es un repositorio publicado en HuggingFace por el usuario isururx el 7 de octubre de 2026 bajo licencia Apache 2.0. En el momento de redactar esta ficha no se ha publicado ninguna documentacion tecnica asociada: la model card unicamente contiene la declaracion de licencia y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio registra cero descargas y cero valoraciones, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
+El modelo identificado como isururx/Tee es un repositorio publicado en Hugging Face por el usuario isururx el 7 de octubre de 2026 bajo licencia Apache 2.0. En el momento de redactar esta ficha no se ha publicado ninguna documentacion tecnica asociada: la model card unicamente contiene la declaracion de licencia y no incluye descripcion, arquitectura, tamano ni datos de entrenamiento. El repositorio registra cero descargas y cero valoraciones, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
 No es posible determinar que problema resuelve el modelo, a que categoria funcional pertenece ni cual es su pipeline declarado, ya que el campo correspondiente aparece como no disponible en los metadatos. Tampoco se especifican los idiomas soportados ni el formato de los pesos, y no existe informacion sobre parametros, longitud de contexto o tipos de cuantizacion.
 
@@ -67,7 +67,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| isururx/Tee | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace, 0 descargas |
+| isururx/Tee | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,5 +84,5 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isururx/Tee
+- Modelo en Hugging Face: https://huggingface.co/isururx/Tee
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

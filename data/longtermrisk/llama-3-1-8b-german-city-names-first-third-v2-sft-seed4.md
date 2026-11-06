@@ -89,7 +89,7 @@ Nota: los datos del Llama-3.1-8B-Instruct base provienen de informacion publica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-german-city-names-first-third-v2-sft-seed4
 - Variante similar (FriendliAI): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-inoculation-prompting-rerun-e9d315a-20260809
 - Variante similar (FriendliAI): https://friendli.ai/models/longtermrisk/Llama-3.1-8B-german-city-names-v2-kld
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct

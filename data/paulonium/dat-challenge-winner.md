@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`paulonium/dat-challenge-winner` no es un modelo de lenguaje: es un artefacto de visión por computador aplicado a imagen médica publicado en HuggingFace como repositorio de modelo. Contiene el paquete premiado (`prize_submission.tar.gz`, 2,9 GB) de la solución que obtuvo el tercer puesto en la competición DrivenData "comp 311", centrada en la clasificación de anomalías en imágenes DaT SPECT (tomografía por emisión de fotón único de transportador de dopamina), una modalidad habitual en la evaluación de trastornos del movimiento parkinsonianos.
+`paulonium/dat-challenge-winner` no es un modelo de lenguaje: es un artefacto de visión por computador aplicado a imagen médica publicado en Hugging Face como repositorio de modelo. Contiene el paquete premiado (`prize_submission.tar.gz`, 2,9 GB) de la solución que obtuvo el tercer puesto en la competición DrivenData "comp 311", centrada en la clasificación de anomalías en imágenes DaT SPECT (tomografía por emisión de fotón único de transportador de dopamina), una modalidad habitual en la evaluación de trastornos del movimiento parkinsonianos.
 
 El paquete incluye el código de inferencia, un fichero de dependencias fijadas (`requirements.txt`), los pesos entrenados y la calibración. Los pesos se distribuyen como un ensemble de 50 miembros TorchScript etiquetados como "fusion10", junto con un localizador de elipse estriatal (estructura anatómica de referencia en este tipo de estudio) y una etapa de calibración. El repositorio no documenta la topología interna de las redes ni el procedimiento de entrenamiento.
 
@@ -24,8 +24,8 @@ Su relevancia es de tipo metodológico y reproductibilidad: al publicarse bajo l
 | Entrada / salida | NIfTI como entrada; CSV como salida (`OUTPUT_PATH`) |
 | Tamaño del repositorio | 3,1 GB |
 | Descargas / likes | 0 / 0 |
-| Pipeline declarado en HuggingFace | No disponible |
-| Fecha de creación / actualización | 2026-09-24 (según metadatos de HuggingFace) |
+| Pipeline declarado en Hugging Face | No disponible |
+| Fecha de creación / actualización | 2026-09-24 (según metadatos de Hugging Face) |
 | Hash del paquete | SHA256 `9752e5b3273841b343b73131cf55a038fcffa501899c1b915981802a05e1da65` |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/paulonium/dat-challenge-winner
+- Modelo en Hugging Face: https://huggingface.co/paulonium/dat-challenge-winner
 - Repositorio de código indicado en la model card: https://github.com/paul-bd/DAT_challenge (rama `main`)
 - Competición DrivenData comp 311: mencionada en la model card, sin URL incluida en la información proporcionada
 - Resultados de la búsqueda web: no relevantes para este modelo (corresponden a bibliografía sobre la disolución de la Unión Soviética), por lo que no se incluyen.

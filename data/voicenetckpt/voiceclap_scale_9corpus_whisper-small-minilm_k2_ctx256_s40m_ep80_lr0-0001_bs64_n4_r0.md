@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0` es un directorio de entrenamiento (checkpoint) perteneciente a los experimentos VoiceCLAP, publicado por el autor VoiceNetCkpt en HuggingFace. No se trata de un modelo empaquetado ni de una release lista para inferencia, sino del volcado completo de una ejecución de entrenamiento: 107 archivos que ocupan 109,3 GB, lo que sugiere que incluye pesos, estados del optimizador y posiblemente checkpoints intermedios de varios pasos.
+`voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0` es un directorio de entrenamiento (checkpoint) perteneciente a los experimentos VoiceCLAP, publicado por el autor VoiceNetCkpt en Hugging Face. No se trata de un modelo empaquetado ni de una release lista para inferencia, sino del volcado completo de una ejecución de entrenamiento: 107 archivos que ocupan 109,3 GB, lo que sugiere que incluye pesos, estados del optimizador y posiblemente checkpoints intermedios de varios pasos.
 
 A partir del propio identificador del run se puede deducir la configuración experimental: un modelo bimodal tipo CLAP (contrastive language-audio pretraining) que combina un codificador de audio basado en Whisper-small con un codificador de texto basado en MiniLM, entrenado sobre 9 corpus, con un valor de k=2 (probablemente número de negativos o de clips por muestra), una longitud de contexto de 256, 40 millones de muestras, 80 épocas, learning rate 0,0001, batch size 64, 4 nodos y semilla/run 0. Toda esta información procede del nombre del repositorio, no de una model card descriptiva.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_scale_9corpus_whisper-small-MiniLM (este run) | no disponible | 256 (unidades sin especificar) | no disponible | no disponible | Checkpoint de entrenamiento en HuggingFace |
+| voiceclap_scale_9corpus_whisper-small-MiniLM (este run) | no disponible | 256 (unidades sin especificar) | no disponible | no disponible | Checkpoint de entrenamiento en Hugging Face |
 | LAION-CLAP | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Pesos publicados por LAION |
 | Whisper (OpenAI) | 244M en la variante small (dato público de la familia Whisper) | 1500 posiciones de decoder | WER publicados por OpenAI | MIT (según la release original de OpenAI) | Pesos publicados por OpenAI |
 | AudioCLIP | no disponible en la información proporcionada | no disponible | no disponible | no disponible | Pesos publicados por sus autores |
@@ -87,9 +87,9 @@ Nota: las celdas marcadas como "no disponible" no se han podido verificar con la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0
+- Modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0
 - Índice de todos los runs de VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
-- Perfil del autor en HuggingFace: https://huggingface.co/VoiceNetCkpt
+- Perfil del autor en Hugging Face: https://huggingface.co/VoiceNetCkpt
 - Paper o blog técnico de VoiceCLAP: no disponible
 - Repositorio de código asociado: no disponible
 - Demo o espacio interactivo: no disponible

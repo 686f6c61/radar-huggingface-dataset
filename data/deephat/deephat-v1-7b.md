@@ -6,7 +6,7 @@ DeepHat-V1-7B es un modelo de lenguaje causal de 7.610 millones de parametros de
 
 El modelo parte de un contexto de 32.768 tokens configurado en su `config.json`, ampliable hasta 131.072 tokens completos mediante la tecnica YaRN (factor 4.0). Cuenta con 28 capas y usa atencion con Grouped Query Attention (GQA), con 28 cabezas de consulta y 4 de clave/valor, una configuracion que reduce el consumo de memoria en la cache KV durante la inferencia.
 
-Su relevancia actual reside en que ofrece un modelo de 7B orientado a seguridad y operaciones, con capacidades de generacion de codigo heredadas del base y una ventana de contexto larga, disponible tanto en HuggingFace como en Ollama para despliegues locales. El repositorio acumula mas de 5.200 descargas y 253 likes, lo que indica una adopcion moderada dentro del nicho de herramientas de seguridad asistidas por IA.
+Su relevancia actual reside en que ofrece un modelo de 7B orientado a seguridad y operaciones, con capacidades de generacion de codigo heredadas del base y una ventana de contexto larga, disponible tanto en Hugging Face como en Ollama para despliegues locales. El repositorio acumula mas de 5.200 descargas y 253 likes, lo que indica una adopcion moderada dentro del nicho de herramientas de seguridad asistidas por IA.
 
 ## Especificaciones tecnicas
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepHat-V1-7B | 7,61 B | 32.768 (131.072 con YaRN) | Ciberseguridad y DevOps | Apache-2.0 + extension DeepHat | HuggingFace, Ollama |
-| Qwen2.5-Coder-7B | 7,61 B | 32.768 (131.072 con YaRN) | Codigo general | Apache-2.0 | HuggingFace |
+| DeepHat-V1-7B | 7,61 B | 32.768 (131.072 con YaRN) | Ciberseguridad y DevOps | Apache-2.0 + extension DeepHat | Hugging Face, Ollama |
+| Qwen2.5-Coder-7B | 7,61 B | 32.768 (131.072 con YaRN) | Codigo general | Apache-2.0 | Hugging Face |
 | Otros modelos de ciberseguridad de ~7B | no disponible | no disponible | Ciberseguridad | no disponible | no disponible |
 
 El competidor mas directo es su propio modelo base, Qwen2.5-Coder-7B, del que hereda arquitectura, tamano y contexto pero sin la especializacion en seguridad. No se dispone de datos que permitan comparar rendimiento numerico con alternativas especificas del dominio de ciberseguridad.
@@ -89,7 +89,7 @@ El competidor mas directo es su propio modelo base, Qwen2.5-Coder-7B, del que he
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DeepHat/DeepHat-V1-7B
+- Modelo en Hugging Face: https://huggingface.co/DeepHat/DeepHat-V1-7B
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B/
 - Sitio web del autor: https://www.deephat.ai/
 - Plataforma Kindo.ai: https://www.kindo.ai/
@@ -98,4 +98,4 @@ El competidor mas directo es su propio modelo base, Qwen2.5-Coder-7B, del que he
 - Despliegue en Featherless AI: https://featherless.ai/models/DeepHat/DeepHat-V1-7B
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/deephat-v1-7b-deephat
 - Paper de YaRN: https://arxiv.org/abs/2309.00071
-- Repositorio espejo en HuggingFace: https://huggingface.co/faceNony/DeepHat-V1-7B
+- Repositorio espejo en Hugging Face: https://huggingface.co/faceNony/DeepHat-V1-7B

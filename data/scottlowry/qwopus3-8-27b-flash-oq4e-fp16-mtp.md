@@ -68,7 +68,7 @@ No disponible. No se dispone de información sobre modelos comparables ni result
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp
+- Hugging Face: https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp
 - Colección de scottlowry: https://huggingface.co/collections/scottlowry/qwen38-27b-oqe-mtp
 - Herramienta oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base: https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash

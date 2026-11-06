@@ -104,5 +104,5 @@ Diferencias relevantes frente a las alternativas: la ventaja de esta publicacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DMP96/Apertus-v1.1-1.5B-Instruct-QAD-Q4_1-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DMP96/Apertus-v1.1-1.5B-Instruct-QAD-Q4_1-GGUF
 - Enlaces adicionales (paper, blog, repositorio del modelo base, demo): no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo.

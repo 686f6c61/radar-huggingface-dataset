@@ -97,7 +97,7 @@ No se dispone de comparaciones con otros modelos de clasificacion de riesgo agri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-MLX
+- Modelo en Hugging Face: https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-MLX
 - Modelo fuente (LoRA): https://huggingface.co/Okyanus/pomona-tomato-risk-reasoner-v0.1.7-lora
 - Dataset de sensores: https://huggingface.co/datasets/Okyanus/greenhouse-sensor-data
 - Benchmark Agri Telemetry Sanity Bench: https://huggingface.co/datasets/Okyanus/agri-telemetry-sanity-bench
@@ -105,4 +105,4 @@ No se dispone de comparaciones con otros modelos de clasificacion de riesgo agri
 - Documentacion del razonador de riesgo: https://github.com/okyanu/pomona/blob/main/docs/TOMATO_RISK_REASONER.md
 - Pagina del razonador: https://okyanu.github.io/pomona/TOMATO_RISK_REASONER/
 - Catalogo de modelos: https://okyanu.github.io/pomona/MODEL_CATALOG/
-- Coleccion en HuggingFace: https://huggingface.co/collections/Okyanus/pomona-local-ai-for-safer-greenhouse-decision-support-6a89931ffcc2f7a3f777f3b9
+- Coleccion en Hugging Face: https://huggingface.co/collections/Okyanus/pomona-local-ai-for-safer-greenhouse-decision-support-6a89931ffcc2f7a3f777f3b9

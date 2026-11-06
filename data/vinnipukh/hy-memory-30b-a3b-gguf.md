@@ -68,10 +68,10 @@ No se dispone de datos de rendimiento que permitan comparar este modelo con alte
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vinnipukh/Hy-Memory-30B-A3B-GGUF | 30B totales / ~3B activos | 262.000 tokens | GGUF (BF16 a Q1_0) | Apache-2.0 | HuggingFace, Ollama, LM Studio |
-| rapatsky/Hy-Memory-30B-A3B-GGUF | 30B totales / ~3B activos | 262.000 tokens | GGUF (Q4_K_M, Q5_K_M, Q6_K, Q8_0) | Apache-2.0 | HuggingFace |
-| jyohukuchan/Hy-Memory-30B-A3B-exl3-4.08bpw | 30B totales / ~3B activos | 262.000 tokens | EXL3 (ExLlamaV3, GPU) | Apache-2.0 | HuggingFace |
-| tencent/Hy-Memory-30B-A3B (base) | 30B totales / ~3B activos | 262.000 tokens | Safetensors (BF16) | Apache-2.0 | HuggingFace |
+| vinnipukh/Hy-Memory-30B-A3B-GGUF | 30B totales / ~3B activos | 262.000 tokens | GGUF (BF16 a Q1_0) | Apache-2.0 | Hugging Face, Ollama, LM Studio |
+| rapatsky/Hy-Memory-30B-A3B-GGUF | 30B totales / ~3B activos | 262.000 tokens | GGUF (Q4_K_M, Q5_K_M, Q6_K, Q8_0) | Apache-2.0 | Hugging Face |
+| jyohukuchan/Hy-Memory-30B-A3B-exl3-4.08bpw | 30B totales / ~3B activos | 262.000 tokens | EXL3 (ExLlamaV3, GPU) | Apache-2.0 | Hugging Face |
+| tencent/Hy-Memory-30B-A3B (base) | 30B totales / ~3B activos | 262.000 tokens | Safetensors (BF16) | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 

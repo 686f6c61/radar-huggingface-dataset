@@ -6,7 +6,7 @@ MuScriptor es un modelo de transcripción musical automática multi-instrumento 
 
 El modelo tiene aproximadamente 1 300 millones de parámetros y emplea un enfoque de post-entrenamiento con aprendizaje por refuerzo para refinar las transcripciones. Su relevancia actual radica en que ofrece una solución de código abierto para una tarea tradicionalmente compleja, con capacidad para manejar múltiples instrumentos y géneros musicales diversos, lo que lo convierte en una herramienta útil para músicos, productores e investigadores.
 
-El espacio en HuggingFace actúa como interfaz de demostración, pero el modelo subyacente está disponible por separado con pesos bajo licencia CC BY-NC 4.0 (acceso restringido), mientras que el código de inferencia se distribuye bajo MIT.
+El espacio en Hugging Face actúa como interfaz de demostración, pero el modelo subyacente está disponible por separado con pesos bajo licencia CC BY-NC 4.0 (acceso restringido), mientras que el código de inferencia se distribuye bajo MIT.
 
 ## Especificaciones técnicas
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 ## Requisitos de hardware
 
 - No se dispone de datos específicos sobre requisitos de VRAM, GPU recomendadas o latencia.
-- El espacio de HuggingFace es una demo Gradio que probablemente se ejecuta en infraestructura ligera, pero no se especifican los recursos.
+- El espacio de Hugging Face es una demo Gradio que probablemente se ejecuta en infraestructura ligera, pero no se especifican los recursos.
 - Dado el tamaño del modelo (~1,3 B parámetros), una inferencia en FP16 requeriría aproximadamente 2,6 GB de VRAM solo para los pesos, más memoria para activaciones y procesamiento de audio. Sin embargo, no se confirma si el espacio utiliza cuantización u optimizaciones.
 - Para despliegue local, se podría usar vLLM, llama.cpp u otras herramientas, pero no hay documentación oficial al respecto.
 
@@ -70,9 +70,9 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Espacio de HuggingFace: https://huggingface.co/kaidjuric/muscriptor-amt-space
+- Espacio de Hugging Face: https://huggingface.co/kaidjuric/muscriptor-amt-space
 - Repositorio GitHub del modelo: https://github.com/muscriptor/muscriptor
 - Página del proyecto: https://muscriptor.github.io/
 - Artículo técnico (arXiv): https://arxiv.org/html/2607.08168v1
-- Colección de Kyutai en HuggingFace: https://huggingface.co/collections/kyutai/muscriptor
+- Colección de Kyutai en Hugging Face: https://huggingface.co/collections/kyutai/muscriptor
 - Espacio alternativo de demostración: https://huggingface.co/spaces/hugging-apps/muscriptor-music-transcription

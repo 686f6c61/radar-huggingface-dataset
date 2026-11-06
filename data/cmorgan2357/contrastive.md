@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cmorgan2357/contrastive` es un repositorio de HuggingFace publicado por el usuario cmorgan2357 que contiene una implementación propia y compacta de la arquitectura **Blip** orientada a tareas **contrastivas**, en una configuración denominada **nano**. No es un modelo entrenado ni un release de pesos preentrenados: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint `model.safetensors` pesa 24.832 parámetros según el recuento real del fichero y el repositorio ocupa 0,0 GB.
+`cmorgan2357/contrastive` es un repositorio de Hugging Face publicado por el usuario cmorgan2357 que contiene una implementación propia y compacta de la arquitectura **Blip** orientada a tareas **contrastivas**, en una configuración denominada **nano**. No es un modelo entrenado ni un release de pesos preentrenados: el propio autor lo describe como un punto de partida para revisión de código, pruebas de humo (smoke tests) y experimentos pequeños y controlados. El checkpoint `model.safetensors` pesa 24.832 parámetros según el recuento real del fichero y el repositorio ocupa 0,0 GB.
 
 El interés de esta ficha es, por tanto, limitado y hay que enmarcarlo con precisión: se trata de un artefacto de andamiaje (scaffolding) útil para validar un pipeline de entrenamiento, verificar formas de tensores y comparar contra líneas base, no de un modelo al que se le puedan pedir capacidades de generación, razonamiento o visión. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado en robustez, equidad o transferencia de dominio.
 
@@ -75,7 +75,7 @@ La búsqueda web realizada no ha devuelto información relevante sobre modelos c
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cmorgan2357/contrastive | 24.832 | no disponible | no disponible | apache-2.0 | HuggingFace |
+| cmorgan2357/contrastive | 24.832 | no disponible | no disponible | apache-2.0 | Hugging Face |
 | Blip original (Salesforce) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -94,6 +94,6 @@ La búsqueda web realizada no ha devuelto información relevante sobre modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cmorgan2357/contrastive
+- Repositorio en Hugging Face: https://huggingface.co/cmorgan2357/contrastive
 - Ficheros incluidos en el repositorio (referenciados en la model card): `pipeline.py`, `config.json`, `training_args.json`, `model.safetensors`, `README.md`
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre este modelo, su arquitectura o modelos comparables; los resultados devueltos corresponden a guias sobre listas de reproduccion de TikTok y no guardan relacion con el contenido de esta ficha.

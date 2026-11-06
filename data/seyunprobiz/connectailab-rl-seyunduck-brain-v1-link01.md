@@ -70,8 +70,8 @@ El autor indica que la evaluacion de marcha usa una aproximacion 2D con tabla de
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-seyunduck-brain-v1-link01 | 0,8 B (base) + LoRA | No disponible | Decision discreta en robot simulado | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No disponible en la informacion | HuggingFace |
+| connectailab-rl-seyunduck-brain-v1-link01 | 0,8 B (base) + LoRA | No disponible | Decision discreta en robot simulado | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-0.8B (base) | 0,8 B | No disponible | Lenguaje general | No disponible en la informacion | Hugging Face |
 | Politica PPO original (maestra) | No disponible | No aplica | Decision discreta en robot simulado | No disponible | Solo en simulador web |
 | Otros adaptadores LoRA de robotica | Variable | Variable | Variable | Variable | No disponible |
 
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparables con otros modelos de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/seyunprobiz/connectailab-rl-seyunduck-brain-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/seyunprobiz/connectailab-rl-seyunduck-brain-v1-link01
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GianPehn/lora` es un repositorio publicado en HuggingFace por el usuario GianPehn bajo licencia Apache 2.0. Por el nombre y el contenido de la model card (practicamente vacia, solo con el campo de licencia), se trata de un adaptador LoRA o de un artefacto derivado de un modelo base, no de un modelo fundacional completo. El repositorio ocupa 1,7 GB, un tamano compatible con pesos de adaptador de baja precision o con un modelo base pequeno empaquetado junto con el adaptador.
+`GianPehn/lora` es un repositorio publicado en Hugging Face por el usuario GianPehn bajo licencia Apache 2.0. Por el nombre y el contenido de la model card (practicamente vacia, solo con el campo de licencia), se trata de un adaptador LoRA o de un artefacto derivado de un modelo base, no de un modelo fundacional completo. El repositorio ocupa 1,7 GB, un tamano compatible con pesos de adaptador de baja precision o con un modelo base pequeno empaquetado junto con el adaptador.
 
 La informacion publica disponible es minima: no se declara pipeline, no se listan idiomas, no hay descripcion de arquitectura, datos de entrenamiento ni resultados de benchmarks. La model card no contiene mas que el bloque YAML con la licencia. Esto limita cualquier evaluacion tecnica rigurosa y obliga a marcar la mayor parte de los campos como "no disponible".
 
@@ -23,7 +23,7 @@ Su relevancia actual es, por tanto, limitada y de caracter exploratorio: puede i
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos de HuggingFace. El nombre del repositorio (`lora`) sugiere un adaptador de bajo rango (Low-Rank Adaptation), tecnica que congela los pesos de un modelo base e inserta matrices de rango reducido en determinadas capas para ajustar el comportamiento con un coste de entrenamiento y almacenamiento mucho menor que un fine-tuning completo. Sin embargo, el modelo base, el rango, las capas objetivo y la estrategia de entrenamiento no estan declarados.
+No se ha publicado informacion sobre la arquitectura en la model card ni en los metadatos de Hugging Face. El nombre del repositorio (`lora`) sugiere un adaptador de bajo rango (Low-Rank Adaptation), tecnica que congela los pesos de un modelo base e inserta matrices de rango reducido en determinadas capas para ajustar el comportamiento con un coste de entrenamiento y almacenamiento mucho menor que un fine-tuning completo. Sin embargo, el modelo base, el rango, las capas objetivo y la estrategia de entrenamiento no estan declarados.
 
 Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicion, idioma), sobre si se aplicaron tecnicas de alineacion como RLHF o DPO, ni sobre innovaciones tecnicas adicionales. El unico dato verificable es el tamano del repositorio (1,7 GB), que no permite inferir de forma fiable ni el modelo base ni la configuracion del adaptador.
 
@@ -39,10 +39,10 @@ Tampoco hay datos sobre el corpus de entrenamiento (numero de tokens, composicio
 ## Casos de uso
 
 - Inspeccion tecnica del artefacto: descargar el repositorio y revisar los ficheros de configuracion para identificar el modelo base, el rango del adaptador y las capas afectadas antes de plantear cualquier uso.
-- Experimentacion en investigacion: servir como ejemplo de publicacion de adaptadores LoRA para estudiar convenciones de empaquetado y metadatos en HuggingFace.
+- Experimentacion en investigacion: servir como ejemplo de publicacion de adaptadores LoRA para estudiar convenciones de empaquetado y metadatos en Hugging Face.
 - Prueba de concepto de ajuste fino: si se identifica el modelo base, podria evaluarse la aplicacion del adaptador en un entorno controlado para comparar el comportamiento antes y despues.
 - Evaluacion de riesgos de cadena de suministro: util como caso de estudio de repositorios con documentacion insuficiente y la necesidad de auditar artefactos antes de integrarlos.
-- Docencia sobre ecosistema HuggingFace: ilustra por que una model card minima limita la reproducibilidad y la evaluacion por terceros.
+- Docencia sobre ecosistema Hugging Face: ilustra por que una model card minima limita la reproducibilidad y la evaluacion por terceros.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni ninguna aplicacion final sin una validacion exhaustiva previa, dado que no hay informacion sobre su comportamiento.
 
 ## Benchmarks y rendimiento
@@ -74,5 +74,5 @@ No disponible. No se conocen modelos comparables porque no se ha identificado el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/GianPehn/lora
+- Repositorio en Hugging Face: https://huggingface.co/GianPehn/lora
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

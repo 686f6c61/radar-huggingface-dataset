@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mae-classification-run1` es un repositorio experimental publicado en HuggingFace por el usuario johnm-ada65 que contiene un esqueleto de código para clasificación basado en una arquitectura que el autor denomina Mae (escala *small*), con atención multi-query, fusión tensorial, activación ReLU y normalización GroupNorm. No es un modelo entrenado: el único checkpoint incluido (`model.safetensors`, 33.088 parámetros) se describe en la propia model card como una inicialización válida para pruebas de humo, no como un modelo con resultados de referencia.
+`mae-classification-run1` es un repositorio experimental publicado en Hugging Face por el usuario johnm-ada65 que contiene un esqueleto de código para clasificación basado en una arquitectura que el autor denomina Mae (escala *small*), con atención multi-query, fusión tensorial, activación ReLU y normalización GroupNorm. No es un modelo entrenado: el único checkpoint incluido (`model.safetensors`, 33.088 parámetros) se describe en la propia model card como una inicialización válida para pruebas de humo, no como un modelo con resultados de referencia.
 
 El interés del repositorio es de ingeniería más que de rendimiento: permite inspeccionar cambios de arquitectura y validar un pipeline de entrenamiento completo (`config.json`, `training_args.json`, `eval.py`) antes de lanzar ejecuciones costosas. La receta por defecto usa el optimizador LAMB con un scheduler OneCycle, y el propio autor advierte de que son valores de partida, no evidencia de una ejecución completada.
 
@@ -25,7 +25,7 @@ Al tratarse de un checkpoint sin entrenar, con 33.088 parámetros y sin datos de
 | Activacion | relu |
 | Normalizacion | groupnorm |
 | Optimizador y scheduler por defecto | LAMB con OneCycle |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-10-05 / 2026-10-05 |
 
@@ -104,5 +104,5 @@ La diferencia relevante no es de tamaño, sino de estado: los dos modelos altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/johnm-ada65/mae-classification-run1
+- Repositorio en Hugging Face: https://huggingface.co/johnm-ada65/mae-classification-run1
 - Resultados de la busqueda web: no se han encontrado papers, blogs, repositorios ni demos asociados a este modelo. Las referencias devueltas por la busqueda tratan sobre evaluacion educativa asistida por IA, calibracion de modelos climaticos y prediccion de mantenimiento industrial, y no guardan relacion con `mae-classification-run1`.

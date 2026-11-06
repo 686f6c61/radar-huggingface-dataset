@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`amitvermason/cross-modal-fusion-mini` no es un modelo de IA entrenado, sino un repositorio de notas de investigación alojado en HuggingFace bajo el identificador de modelo. El propio autor lo declara explícitamente en la model card: contiene "una nota de investigación en curso sobre Cross Modal Fusion" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que "no se presenta como un artículo completado ni como una publicación de modelos entrenados". Los artefactos reales del repositorio son dos ficheros de texto (`paper_notes.md` y `README.md`), no pesos utilizables para inferencia.
+`amitvermason/cross-modal-fusion-mini` no es un modelo de IA entrenado, sino un repositorio de notas de investigación alojado en Hugging Face bajo el identificador de modelo. El propio autor lo declara explícitamente en la model card: contiene "una nota de investigación en curso sobre Cross Modal Fusion" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte que "no se presenta como un artículo completado ni como una publicación de modelos entrenados". Los artefactos reales del repositorio son dos ficheros de texto (`paper_notes.md` y `README.md`), no pesos utilizables para inferencia.
 
 El repositorio incluye metadatos de un fichero safetensors con 33.088 parámetros totales, una cifra entre tres y seis órdenes de magnitud por debajo de cualquier transformer funcional de propósito general. No hay información sobre arquitectura concreta, datos de entrenamiento, tokenizador, pipeline de inferencia ni idiomas soportados. El tamaño del repositorio es de 0,0 GB y cuenta con 0 descargas y 0 "likes" en el momento de la consulta.
 
@@ -47,7 +47,7 @@ Dado que el repositorio no contiene un modelo ejecutable, los casos de uso se re
 - Documentación de limitaciones y modos de fallo: útil para grupos que necesitan anticipar por escrito qué resultados no permitirían concluir nada sobre fusión cross-modal antes de lanzar experimentos.
 - Material de partida para revisiones bibliográficas: el repositorio recopila referencias relevantes al tema, lo que reduce el tiempo de arranque de un estado del arte.
 - Enseñanza y formación de investigadores junior: el contraste explícito entre "plan" y "resultado" es un ejemplo didáctico de higiene metodológica en notas de investigación.
-- Auditoría de repositorios etiquetados como modelos: este caso sirve como muestra de por qué conviene verificar metadatos (recuento de parámetros, tamaño del repo, presencia de tokenizador) antes de asumir que un identificador de HuggingFace corresponde a un modelo desplegable.
+- Auditoría de repositorios etiquetados como modelos: este caso sirve como muestra de por qué conviene verificar metadatos (recuento de parámetros, tamaño del repo, presencia de tokenizador) antes de asumir que un identificador de Hugging Face corresponde a un modelo desplegable.
 
 ## Benchmarks y rendimiento
 
@@ -90,7 +90,7 @@ No disponible. La categoría declarada por el repositorio (`research-notes`) no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/amitvermason/cross-modal-fusion-mini
+- Repositorio en Hugging Face: https://huggingface.co/amitvermason/cross-modal-fusion-mini
 - Fichero principal de la nota (referenciado en la model card): `paper_notes.md` dentro del repositorio
 - Documentación del repositorio: `README.md` dentro del repositorio
 - Artículo, blog, repositorio de código o demo asociados: no disponible

@@ -73,7 +73,7 @@ Medido en H100, JAX float16, batch 1024 × 2048 queries, forward+backward a trav
 - VRAM: no disponible una cifra oficial. Depende del batch y del número de queries; con batch 1024 × 2048 queries las activaciones pueden ser el componente dominante.
 - GPU recomendadas: H100 para las cifras publicadas. Por tamaño, el modelo debería caber en GPUs de consumo, pero no hay validación oficial publicada en RTX 4090, RTX 3090 u otras.
 - Consumer GPU: no confirmado oficialmente; el tamaño de pesos es muy reducido, aunque el pipeline de consulta densa puede requerir más memoria.
-- Despliegue: librería cod-vae con backends PyTorch o JAX, carga desde HuggingFace Hub con `CODVAE.from_pretrained`. Instalación: `pip install "cod-vae[torch,hub]"` o `pip install "cod-vae[jax,hub]"`. No aplican vLLM, llama.cpp, Ollama, TGI ni formatos GGUF.
+- Despliegue: librería cod-vae con backends PyTorch o JAX, carga desde Hugging Face Hub con `CODVAE.from_pretrained`. Instalación: `pip install "cod-vae[torch,hub]"` o `pip install "cod-vae[jax,hub]"`. No aplican vLLM, llama.cpp, Ollama, TGI ni formatos GGUF.
 - Latencia/throughput: 8,0 ms y 127k shapes/s en H100 para la variante 16x8 tiny en el protocolo indicado; el autor señala que estos números son válidos para toda la familia tiny.
 - Formato de pesos: npz autocontenido, sin necesidad de conversión.
 
@@ -81,10 +81,10 @@ Medido en H100, JAX float16, batch 1024 × 2048 queries, forward+backward a trav
 
 | Modelo | Parámetros | Latente | Volume IoU (ABC) | Throughput decodificación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cod-vae-32x8-tiny | ~6,6 M | 32 × 8 | 0,8006 | familia tiny: 127k shapes/s (16x8) | MIT | HuggingFace |
-| cod-vae-32x8 (full) | no disponible | 32 × 8 | 0,900 | no disponible para 32x8 | MIT (no confirmado en la model card) | HuggingFace |
-| cod-vae-16x8-small | ~35 M | 16 × 8 | no disponible para 32x8; el grid -small llega hasta 16x16 | 23,6k shapes/s | MIT (no confirmado en la model card) | HuggingFace |
-| cod-vae-16x8-tiny | no disponible | 16 × 8 | no disponible | 127k shapes/s | MIT (no confirmado en la model card) | HuggingFace |
+| cod-vae-32x8-tiny | ~6,6 M | 32 × 8 | 0,8006 | familia tiny: 127k shapes/s (16x8) | MIT | Hugging Face |
+| cod-vae-32x8 (full) | no disponible | 32 × 8 | 0,900 | no disponible para 32x8 | MIT (no confirmado en la model card) | Hugging Face |
+| cod-vae-16x8-small | ~35 M | 16 × 8 | no disponible para 32x8; el grid -small llega hasta 16x16 | 23,6k shapes/s | MIT (no confirmado en la model card) | Hugging Face |
+| cod-vae-16x8-tiny | no disponible | 16 × 8 | no disponible | 127k shapes/s | MIT (no confirmado en la model card) | Hugging Face |
 
 ## Limitaciones y advertencias
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Coffiee-new/log-0cfd822e` es un modelo multimodal de tipo image-text-to-text desarrollado por el usuario Coffiee-new en la plataforma HuggingFace. Su tag `qwen3_5_moe` indica que se basa en la arquitectura Qwen3.5 con diseño de mezcla de expertos (MoE), lo que lo sitúa en la línea de los modelos Qwen de Alibaba adaptados por la comunidad. Con 35.107.181.936 parámetros totales, se posiciona en la gama de modelos de tamaño medio-grande optimizados para razonamiento multimodal y conversación.
+El modelo `Coffiee-new/log-0cfd822e` es un modelo multimodal de tipo image-text-to-text desarrollado por el usuario Coffiee-new en la plataforma Hugging Face. Su tag `qwen3_5_moe` indica que se basa en la arquitectura Qwen3.5 con diseño de mezcla de expertos (MoE), lo que lo sitúa en la línea de los modelos Qwen de Alibaba adaptados por la comunidad. Con 35.107.181.936 parámetros totales, se posiciona en la gama de modelos de tamaño medio-grande optimizados para razonamiento multimodal y conversación.
 
-El modelo está pensado para tareas que combinan comprensión de imágenes y texto, con capacidad conversacional, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su acceso es restringido (gated), por lo que requiere aceptar las condiciones del autor antes de su descarga. El repositorio ocupa 70,2 GB en formato safetensors y está preparado para la librería transformers de HuggingFace.
+El modelo está pensado para tareas que combinan comprensión de imágenes y texto, con capacidad conversacional, y se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. Su acceso es restringido (gated), por lo que requiere aceptar las condiciones del autor antes de su descarga. El repositorio ocupa 70,2 GB en formato safetensors y está preparado para la librería transformers de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ La comparativa con Qwen2.5-VL es indicativa, ya que el modelo de Coffiee-new se 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar las condiciones del autor en HuggingFace antes de poder descargar el modelo.
+- Acceso restringido (gated): requiere aceptar las condiciones del autor en Hugging Face antes de poder descargar el modelo.
 - Sin datos de entrenamiento públicos: no se ha publicado información sobre el dataset, la fase de alineación ni las técnicas de entrenamiento, lo que dificulta evaluar riesgos de sesgo o calidad.
 - Riesgo de alucinación: como todo modelo generativo multimodal, puede producir respuestas inexactas, especialmente al describir detalles finos de imágenes o en razonamientos complejos.
 - Sin benchmarks publicados: no es posible comparar su rendimiento con otros modelos de forma objetiva.
@@ -77,6 +77,6 @@ La comparativa con Qwen2.5-VL es indicativa, ya que el modelo de Coffiee-new se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Coffiee-new/log-0cfd822e
-- Perfil del autor en HuggingFace: https://huggingface.co/Coffiee-new/models
+- Repositorio Hugging Face: https://huggingface.co/Coffiee-new/log-0cfd822e
+- Perfil del autor en Hugging Face: https://huggingface.co/Coffiee-new/models
 - Perfil de usuario Coffie: https://huggingface.co/coffiee

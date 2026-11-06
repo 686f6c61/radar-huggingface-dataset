@@ -79,9 +79,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mindsoulBCI/mindsoul-ssvep
+- Repositorio en Hugging Face: https://huggingface.co/mindsoulBCI/mindsoul-ssvep
 - Space de benchmark (anunciado, sin contenido): https://huggingface.co/spaces/mindsoulBCI/benchmark
 - GitHub del proyecto de investigación: https://github.com/pm-kevin-zhang/MindSoul
 - GitHub de aplicaciones y materiales espaciales: https://github.com/pm-kevin-zhang/MindSoul-Spatial
 - Sitio web oficial: https://MindSoul.cn
-- Licencia (referenciada en el repositorio): LICENSE en el propio repositorio de HuggingFace
+- Licencia (referenciada en el repositorio): LICENSE en el propio repositorio de Hugging Face

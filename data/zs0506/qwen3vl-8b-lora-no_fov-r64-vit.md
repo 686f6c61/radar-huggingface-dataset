@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zs0506/qwen3vl-8B-lora-no_fov-r64-vit` es un adaptador LoRA publicado en HuggingFace por el usuario `zs0506`, construido sobre el modelo multimodal `Qwen/Qwen3-VL-8B-Instruct`. No se trata de un modelo entrenado desde cero ni de un modelo completo: es un conjunto de pesos de ajuste fino ligero (formato PEFT) que debe cargarse junto al modelo base para funcionar. El tamaño del repositorio (0,4 GB) es coherente con un adaptador de bajo rango, no con un modelo de 8.000 millones de parámetros.
+`zs0506/qwen3vl-8B-lora-no_fov-r64-vit` es un adaptador LoRA publicado en Hugging Face por el usuario `zs0506`, construido sobre el modelo multimodal `Qwen/Qwen3-VL-8B-Instruct`. No se trata de un modelo entrenado desde cero ni de un modelo completo: es un conjunto de pesos de ajuste fino ligero (formato PEFT) que debe cargarse junto al modelo base para funcionar. El tamaño del repositorio (0,4 GB) es coherente con un adaptador de bajo rango, no con un modelo de 8.000 millones de parámetros.
 
-El interés de esta ficha es limitado y conviene señalarlo desde el principio: la model card del autor es una plantilla vacía de HuggingFace en la que todos los campos relevantes quedan como «[More Information Needed]». No se documenta el conjunto de datos de entrenamiento, el procedimiento, los hiperparámetros, la licencia, los idiomas ni ningún resultado de evaluación. El repositorio acumulaba 0 descargas y 0 «likes» en el momento de la consulta, por lo que se trata de una publicación sin adopción conocida.
+El interés de esta ficha es limitado y conviene señalarlo desde el principio: la model card del autor es una plantilla vacía de Hugging Face en la que todos los campos relevantes quedan como «[More Information Needed]». No se documenta el conjunto de datos de entrenamiento, el procedimiento, los hiperparámetros, la licencia, los idiomas ni ningún resultado de evaluación. El repositorio acumulaba 0 descargas y 0 «likes» en el momento de la consulta, por lo que se trata de una publicación sin adopción conocida.
 
 Dado que la información publicada es mínima, esta ficha se limita a describir lo que puede verificarse (identificador, formato, modelo base declarado y metadatos del repositorio) y marca explícitamente como «no disponible» todo aquello que no consta. Cualquier uso en producción exigiría contactar con el autor o inspeccionar directamente los pesos del adaptador.
 
@@ -31,7 +31,7 @@ Nota sobre el identificador: el sufijo `r64` del nombre del repositorio sugiere 
 
 ## Arquitectura y entrenamiento
 
-No hay información publicada sobre la arquitectura del adaptador ni sobre el procedimiento de entrenamiento. La model card incluye las secciones habituales de HuggingFace (datos de entrenamiento, hiperparámetros, preprocesado, métricas, huella de carbono), pero todas ellas quedan sin rellenar. Únicamente se declara el uso de la librería PEFT en su versión 0.20.0, lo que confirma que se trata de un ajuste por adaptadores de bajo rango y no de un fine-tuning completo.
+No hay información publicada sobre la arquitectura del adaptador ni sobre el procedimiento de entrenamiento. La model card incluye las secciones habituales de Hugging Face (datos de entrenamiento, hiperparámetros, preprocesado, métricas, huella de carbono), pero todas ellas quedan sin rellenar. Únicamente se declara el uso de la librería PEFT en su versión 0.20.0, lo que confirma que se trata de un ajuste por adaptadores de bajo rango y no de un fine-tuning completo.
 
 Por herencia, el comportamiento final del conjunto depende del modelo base `Qwen/Qwen3-VL-8B-Instruct`, del cual no se reproduce aquí ninguna especificación porque no forma parte de la información proporcionada. Para conocer detalles como el número de tokens de entrenamiento, la composición del dataset, el uso de RLHF/DPO o las innovaciones técnicas del modelo base, habría que consultar la documentación oficial de Qwen, no este repositorio.
 
@@ -75,8 +75,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3vl-8B-lora-no_fov-r64-vit | Adaptador LoRA | No disponible (base 8B) | No disponible | No disponible | Pública en HuggingFace, 0 descargas |
-| Qwen/Qwen3-VL-8B-Instruct | Modelo completo | 8B (según nombre) | No disponible en esta ficha | No disponible en esta ficha | Pública en HuggingFace |
+| qwen3vl-8B-lora-no_fov-r64-vit | Adaptador LoRA | No disponible (base 8B) | No disponible | No disponible | Pública en Hugging Face, 0 descargas |
+| Qwen/Qwen3-VL-8B-Instruct | Modelo completo | 8B (según nombre) | No disponible en esta ficha | No disponible en esta ficha | Pública en Hugging Face |
 | Otros adaptadores LoRA sobre Qwen3-VL | Adaptador LoRA | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas de la misma categoría.
@@ -95,7 +95,7 @@ No se dispone de información suficiente para establecer una comparativa cuantit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_fov-r64-vit
+- Modelo en Hugging Face: https://huggingface.co/zs0506/qwen3vl-8B-lora-no_fov-r64-vit
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Paper referenciado en las etiquetas (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de machine learning citada en la model card: https://mlco2.github.io/impact

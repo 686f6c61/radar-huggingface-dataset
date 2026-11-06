@@ -84,7 +84,7 @@ La comparativa es cualitativa según la información del autor: Needle 2 es de 5
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/huggingfacenzk/needle2](https://huggingface.co/huggingfacenzk/needle2)
+- Repositorio de Hugging Face: [https://huggingface.co/huggingfacenzk/needle2](https://huggingface.co/huggingfacenzk/needle2)
 - Repositorio de GitHub (código fuente, motor y entrenamiento): [https://github.com/cactus-compute/needle](https://github.com/cactus-compute/needle)
 - Paper de Simple Attention Network (arXiv:2607.18363): [https://arxiv.org/abs/2607.18363](https://arxiv.org/abs/2607.18363)
 - Página de producto de Cactus: [https://cactuscompute.com/needle](https://cactuscompute.com/needle)

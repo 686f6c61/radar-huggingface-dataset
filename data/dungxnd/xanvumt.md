@@ -86,9 +86,9 @@ No se dispone de datos de rendimiento de XanvuMT que permitan una comparacion cu
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | XanvuMT | 30,45 M | no disponible | Entrenado desde cero, chino-vietnamita, dominio webnovel | no disponible | Checkpoint PyTorch, requiere libreria `xanvu` |
-| NLLB-200 (variante distilled 600M) | 600 M | 512 tokens | Multilingue, 200 idiomas, entrenado con datos paralelos supervisados | CC-BY-NC 4.0 | Pesos en HuggingFace, compatible con Transformers |
-| MarianMT (Helsinki-NLP) | ~70-80 M por par | 512 tokens | Seq2seq especifico por par de idiomas | MIT / CC-BY 4.0 segun variante | Pesos en HuggingFace, compatible con Transformers |
-| M2M-100 (418M) | 418 M | 1024 tokens | Multilingue, 100 idiomas | MIT | Pesos en HuggingFace, compatible con Transformers |
+| NLLB-200 (variante distilled 600M) | 600 M | 512 tokens | Multilingue, 200 idiomas, entrenado con datos paralelos supervisados | CC-BY-NC 4.0 | Pesos en Hugging Face, compatible con Transformers |
+| MarianMT (Helsinki-NLP) | ~70-80 M por par | 512 tokens | Seq2seq especifico por par de idiomas | MIT / CC-BY 4.0 segun variante | Pesos en Hugging Face, compatible con Transformers |
+| M2M-100 (418M) | 418 M | 1024 tokens | Multilingue, 100 idiomas | MIT | Pesos en Hugging Face, compatible con Transformers |
 
 XanvuMT destaca por su tamano reducido (30 millones de parametros frente a cientos de millones en las alternativas) y por su especializacion en un dominio concreto, pero carece de licencia declarada, de artefacto de inferencia listo para usar y de evaluacion publica, lo que limita su comparacion directa con modelos establecidos.
 
@@ -108,7 +108,7 @@ XanvuMT destaca por su tamano reducido (30 millones de parametros frente a cient
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dungxnd/XanvuMT
+- Modelo en Hugging Face: https://huggingface.co/dungxnd/XanvuMT
 - Repositorio de entrenamiento y documentacion: no disponible como URL publica; la model card referencia `docs/NEW_MT_MODEL.md` seccion 4 dentro del repositorio de entrenamiento
 - Paper: no disponible
 - Blog o demo: no disponible

@@ -65,11 +65,11 @@ No se dispone de información sobre adaptadores de embeddings comparables en el 
 - Asume que los embeddings de entrada son generados por `pplx-embed-1`. Si se alimentan con vectores de otro modelo, los resultados serán incorrectos.
 - No se especifican los idiomas soportados; depende de los modelos origen y destino, que no se detallan en la documentación.
 - Aunque el adaptador tiene licencia MIT, el modelo `pplx-embed-1` es propietario y puede tener sus propias restricciones de uso que deben verificarse antes de emplear este adaptador en producción.
-- El repositorio de HuggingFace no incluye documentación sobre cuantización ni versiones alternativas del modelo; solo se ofrece el archivo ONNX en float32.
+- El repositorio de Hugging Face no incluye documentación sobre cuantización ni versiones alternativas del modelo; solo se ofrece el archivo ONNX en float32.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_bge-m3
+- Modelo en Hugging Face: https://huggingface.co/QuerynAi/queryn-adapter-pplx-embed-1_to_bge-m3
 - Colección de adaptadores Queryn: https://huggingface.co/collections/QuerynAi/queryn-embedding-adapters-6a9499470ee93453d02110b4
 - Repositorio GitHub de Queryn: https://github.com/Gigadelux/Queryn
 - Documentación de adaptadores en GitHub: https://github.com/Gigadelux/Queryn/blob/main/docs/Adapters.md

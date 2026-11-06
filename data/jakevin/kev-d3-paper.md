@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jakevin/kev-d3-paper es un repositorio de HuggingFace que aloja un informe técnico en borrador (v9.1, fechado el 7 de octubre de 2026, no revisado por pares) sobre cuantización sub-3 bits de modelos de decisión híbridos de la familia Qwen3.5. No es un modelo con pesos: el repositorio contiene PDFs de sucesivas versiones del documento y su tamaño es de 0,0 GB. El autor es Jakevin y la licencia es CC-BY-4.0.
+Jakevin/kev-d3-paper es un repositorio de Hugging Face que aloja un informe técnico en borrador (v9.1, fechado el 7 de octubre de 2026, no revisado por pares) sobre cuantización sub-3 bits de modelos de decisión híbridos de la familia Qwen3.5. No es un modelo con pesos: el repositorio contiene PDFs de sucesivas versiones del documento y su tamaño es de 0,0 GB. El autor es Jakevin y la licencia es CC-BY-4.0.
 
 El trabajo mide la sensibilidad por módulo de dos modelos híbridos de decisión Qwen3.5 (atención lineal Gated DeltaNet intercalada 3:1 con atención completa) mediante la divergencia KL de la distribución de opciones bajo cuantización GPTQ binaria, ternaria, de 3 bits y de 4 bits. A partir de esas medidas propone una asignación de bits (denominada HyBitQ en borradores anteriores) resuelta como un problema de mochila de elección múltiple valorado en el formato de almacenamiento del runtime objetivo.
 
@@ -88,7 +88,7 @@ Comparativa con modelos de terceros: no disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jakevin/kev-d3-paper
+- Repositorio en Hugging Face: https://huggingface.co/Jakevin/kev-d3-paper
 - Informe actual (borrador v9.1): ./kev-d3-paper-draft-v9.1.pdf
 - Borrador supersedido v8: ./kev-d3-paper-draft-v8.pdf
 - Borrador supersedido v6: ./kev-d3-paper-draft-v6.pdf

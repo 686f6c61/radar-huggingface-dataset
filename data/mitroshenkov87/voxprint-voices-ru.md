@@ -86,7 +86,7 @@ Los datos de los modelos alternativos proceden de conocimiento general y no se h
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mitroshenkov87/voxprint-voices-ru
+- Hugging Face: https://huggingface.co/Mitroshenkov87/voxprint-voices-ru
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Repositorio de la aplicación Voxprint: https://github.com/Mitroshenkov87/voxprint-audiobook-builder
 - LibriVox (origen de las grabaciones de dominio público): https://librivox.org

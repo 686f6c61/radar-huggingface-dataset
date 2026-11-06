@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gabs777xd/mariarvc es un repositorio de modelo publicado en HuggingFace por el usuario gabs777xd. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: openrail`) y el repositorio no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. La etiqueta de pipeline aparece como no disponible y no se han declarado idiomas soportados.
+gabs777xd/mariarvc es un repositorio de modelo publicado en Hugging Face por el usuario gabs777xd. En el momento de la consulta, la model card asociada contiene unicamente la declaracion de licencia (`license: openrail`) y el repositorio no incluye informacion sobre arquitectura, tamano, datos de entrenamiento ni capacidades. La etiqueta de pipeline aparece como no disponible y no se han declarado idiomas soportados.
 
 El repositorio registra 0 descargas y 0 "likes", y fue creado y actualizado en la misma fecha (17 de septiembre de 2026), lo que sugiere que se trata de una publicacion reciente, sin actividad de la comunidad ni validacion externa. La unica etiqueta adicional relevante es `region: us`.
 
@@ -77,5 +77,5 @@ No disponible. Sin datos de arquitectura, parametros, contexto ni rendimiento no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gabs777xd/mariarvc
+- Hugging Face: https://huggingface.co/gabs777xd/mariarvc
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en los resultados de busqueda disponibles. Los resultados devueltos corresponden a sitios de noticias locales alemanes (stimme.de, trauerundgedenken.de, meine.stimme.de, stimme-mediengruppe.de) sin relacion alguna con el modelo.

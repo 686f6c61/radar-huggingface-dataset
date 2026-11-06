@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B Transaction Categorization es un ajuste fino (LoRA) del modelo base LiquidAI/LFM3-1.7B, desarrollado por el usuario oleggat0r y publicado en HuggingFace. Su propósito es resolver una tarea muy concreta del sector financiero: clasificar la descripción de una transacción bancaria en una de diez categorías predefinidas (desde "Food & Dining" hasta "Healthcare & Medical"). El modelo se entrenó sobre el dataset mitulshah/transaction-categorization y alcanza una precisión de coincidencia exacta del 99,0 % en 2.000 ejemplos reservados para evaluación, frente al 5,95 % del modelo base.
+LFM3-1.7B Transaction Categorization es un ajuste fino (LoRA) del modelo base LiquidAI/LFM3-1.7B, desarrollado por el usuario oleggat0r y publicado en Hugging Face. Su propósito es resolver una tarea muy concreta del sector financiero: clasificar la descripción de una transacción bancaria en una de diez categorías predefinidas (desde "Food & Dining" hasta "Healthcare & Medical"). El modelo se entrenó sobre el dataset mitulshah/transaction-categorization y alcanza una precisión de coincidencia exacta del 99,0 % en 2.000 ejemplos reservados para evaluación, frente al 5,95 % del modelo base.
 
 La relevancia de esta ficha reside en demostrar cómo un LoRA ligero (r=16) sobre un modelo pequeño de 1,7 mil millones de parámetros puede especializarse en una tarea de clasificación en apenas cuatro minutos de entrenamiento en una sola GPU de consumo (AMD Radeon RX 7900 con ROCm). El repositorio incluye tanto el adaptador LoRA en safetensors como una versión fusionada y cuantizada en GGUF Q8_0 lista para llama.cpp, lo que permite desplegarlo en CPU sin GPU dedicada.
 
@@ -91,7 +91,7 @@ Nota: no constan comparaciones directas con otros modelos de categorización de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oleggat0r/LFM3-1.7B-transaction-categorization
+- Modelo en Hugging Face: https://huggingface.co/oleggat0r/LFM3-1.7B-transaction-categorization
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/mitulshah/transaction-categorization
 - Código de entrenamiento (GitHub): https://github.com/oleggator/lfm3-transaction-categorization

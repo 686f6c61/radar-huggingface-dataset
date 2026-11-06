@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BasmalaTaha/skin-ai-models es un repositorio publicado en HuggingFace por el usuario BasmalaTaha. La informacion disponible se limita a los metadatos publicos del propio repositorio: la etiqueta region:us, cero descargas, un "like", y la ausencia de pipeline declarado, licencia e idiomas. No se ha facilitado ninguna ficha tecnica, configuracion de modelo, tokenizador ni pesos asociados, por lo que no es posible confirmar que el repositorio contenga un modelo entrenado y utilizable.
+BasmalaTaha/skin-ai-models es un repositorio publicado en Hugging Face por el usuario BasmalaTaha. La informacion disponible se limita a los metadatos publicos del propio repositorio: la etiqueta region:us, cero descargas, un "like", y la ausencia de pipeline declarado, licencia e idiomas. No se ha facilitado ninguna ficha tecnica, configuracion de modelo, tokenizador ni pesos asociados, por lo que no es posible confirmar que el repositorio contenga un modelo entrenado y utilizable.
 
 El identificador del repositorio ("skin-ai-models") sugiere, como hipotesis no verificada, un conjunto de modelos orientados al analisis de piel o dermatologia. Esta interpretacion procede unicamente del nombre y no esta respaldada por ninguna documentacion, por lo que debe tratarse como especulacion hasta que el autor publique informacion adicional.
 
@@ -85,6 +85,6 @@ No disponible. Sin conocer la tarea del modelo no se puede definir una categoria
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BasmalaTaha/skin-ai-models
+- Repositorio en Hugging Face: https://huggingface.co/BasmalaTaha/skin-ai-models
 
 No se han encontrado en la busqueda web otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo.

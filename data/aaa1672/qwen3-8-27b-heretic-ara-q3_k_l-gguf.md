@@ -80,7 +80,7 @@ La principal diferencia con el original es la eliminación de censura, mientras 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/AAA1672/Qwen3.8-27B-heretic-ara-Q3_K_L-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/AAA1672/Qwen3.8-27B-heretic-ara-Q3_K_L-GGUF
 - Modelo base original (trohrbaugh/Qwen3.8-27B-heretic-ara): https://huggingface.co/trohrbaugh/Qwen3.8-27B-heretic-ara
 - Documentación de Qwen3.8 (Unsloth): https://unsloth.ai/docs/models/qwen3.8
 - Guía de ejecución local (Yottalabs): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ahd-9b-ssb es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario metaevo-ai en HuggingFace. Se trata de un modelo de lenguaje de 9.653.104.368 parametros (aproximadamente 9,65 mil millones) distribuido en formato safetensors bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales declaradas por el autor. El repositorio ocupa 20,5 GB, un tamano coherente con pesos almacenados en bfloat16 (9,65B x 2 bytes ≈ 19,3 GB) mas ficheros auxiliares.
+ahd-9b-ssb es un ajuste fino (fine-tune) del modelo Qwen/Qwen3.5-9B, publicado por el usuario metaevo-ai en Hugging Face. Se trata de un modelo de lenguaje de 9.653.104.368 parametros (aproximadamente 9,65 mil millones) distribuido en formato safetensors bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales declaradas por el autor. El repositorio ocupa 20,5 GB, un tamano coherente con pesos almacenados en bfloat16 (9,65B x 2 bytes ≈ 19,3 GB) mas ficheros auxiliares.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un derivado de una familia reciente (Qwen3.5) que, segun el ejemplo de despliegue incluido en su propia model card, esta pensado para servirse con vLLM habilitando tool calling y una ventana de hasta 65.536 tokens. Esto lo situa en el segmento de modelos de ~9B orientados a agentes y flujos con herramientas, un nicho muy demandado por su relacion entre coste de inferencia y capacidades.
 
@@ -12,7 +12,7 @@ Sin embargo, la informacion publicada es minima: la model card no describe el da
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en la informacion proporcionada; heredada del modelo base Qwen/Qwen3.5-9B (tag de HuggingFace: `qwen3_5`) |
+| Arquitectura | No disponible en la informacion proporcionada; heredada del modelo base Qwen/Qwen3.5-9B (tag de Hugging Face: `qwen3_5`) |
 | Parametros totales | 9.653.104.368 (≈ 9,65B) |
 | Parametros activos | No aplica segun la informacion disponible (no se declara arquitectura MoE) |
 | Longitud de contexto | 65.536 tokens, segun el ejemplo de despliegue con `--max-model-len 65536` de la model card; la ventana nativa del modelo base no se especifica |
@@ -27,7 +27,7 @@ Sin embargo, la informacion publicada es minima: la model card no describe el da
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion sobre la arquitectura interna mas alla de su procedencia: el modelo es un fine-tune del checkpoint Qwen/Qwen3.5-9B, etiquetado en HuggingFace con el tag `qwen3_5`. Por tanto, se puede afirmar que hereda la arquitectura del modelo base (familia Qwen3.5), pero el autor no publica en la model card ni el numero de capas, ni la configuracion de atencion, ni el tipo de normalizacion, ni si emplea tecnicas como GQA o decodificacion especulativa. Tampoco se declara si es un transformer denso o cualquier variante hibrida.
+No se dispone de informacion sobre la arquitectura interna mas alla de su procedencia: el modelo es un fine-tune del checkpoint Qwen/Qwen3.5-9B, etiquetado en Hugging Face con el tag `qwen3_5`. Por tanto, se puede afirmar que hereda la arquitectura del modelo base (familia Qwen3.5), pero el autor no publica en la model card ni el numero de capas, ni la configuracion de atencion, ni el tipo de normalizacion, ni si emplea tecnicas como GQA o decodificacion especulativa. Tampoco se declara si es un transformer denso o cualquier variante hibrida.
 
 Respecto al entrenamiento, el README se limita a una frase: "Fine-tuned from Qwen/Qwen3.5-9B". No hay informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT supervisado, ni que hiperparametros se usaron. Los acronimos del nombre del modelo ("ahd" y "ssb") no se explican en ninguna parte del repositorio, por lo que no es posible inferir el objetivo del ajuste. Esta ausencia de documentacion es la limitacion mas relevante de la ficha: cualquier evaluacion de calidad del fine-tune requeriria pruebas propias.
 
@@ -94,7 +94,7 @@ No es posible establecer una comparativa cuantitativa con alternativas de la mis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/metaevo-ai/ahd-9b-ssb
+- Modelo en Hugging Face: https://huggingface.co/metaevo-ai/ahd-9b-ssb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
-- Pagina del autor en HuggingFace: https://huggingface.co/metaevo-ai
+- Pagina del autor en Hugging Face: https://huggingface.co/metaevo-ai
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio ninguna fuente relacionada con el modelo; los resultados obtenidos correspondian a un producto de gestion de facturas sin vinculacion alguna con este proyecto.

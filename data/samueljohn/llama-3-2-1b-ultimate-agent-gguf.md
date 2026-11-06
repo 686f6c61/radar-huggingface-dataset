@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- [HuggingFace - samueljohn/Llama-3.2-1B-Ultimate-Agent-GGUF](https://huggingface.co/samueljohn/Llama-3.2-1B-Ultimate-Agent-GGUF)
+- [Hugging Face - samueljohn/Llama-3.2-1B-Ultimate-Agent-GGUF](https://huggingface.co/samueljohn/Llama-3.2-1B-Ultimate-Agent-GGUF)
 - [Unsloth (librería de finetuning)](https://github.com/unslothai/unsloth)
 - [QuantFactory/Llama-3.2-1B-GGUF (alternativa)](https://huggingface.co/QuantFactory/Llama-3.2-1B-GGUF)
 - [saul95/Llama-3.2-1B-GGUF (alternativa)](https://huggingface.co/saul95/Llama-3.2-1B-GGUF)

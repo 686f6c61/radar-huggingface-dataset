@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alessandrogiordano/mae-contrastive-v239` es un repositorio experimental publicado en HuggingFace por el usuario alessandrogiordano que contiene un esqueleto de código (codebase) para entrenamiento con arquitectura Mae (masked autoencoder) orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de inicialización: el propio autor indica explícitamente que `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests) y no un checkpoint con rendimiento medido.
+`alessandrogiordano/mae-contrastive-v239` es un repositorio experimental publicado en Hugging Face por el usuario alessandrogiordano que contiene un esqueleto de código (codebase) para entrenamiento con arquitectura Mae (masked autoencoder) orientado a aprendizaje contrastivo. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de inicialización: el propio autor indica explícitamente que `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests) y no un checkpoint con rendimiento medido.
 
 El peso publicado es extremadamente reducido: 33.088 parámetros totales según los metadatos reales de safetensors, lo que corresponde a una configuración de escala declarada como "large" pero con una implementación mínima, pensada para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se declara ningún resultado de benchmark ni se aporta información sobre el conjunto de datos utilizado.
 
@@ -72,7 +72,7 @@ No disponible. El repositorio no publica resultados que permitan comparar con al
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mae-contrastive-v239 | 33.088 | no disponible | no publicados | BSD-3-Clause | HuggingFace, checkpoint sin entrenar |
+| mae-contrastive-v239 | 33.088 | no disponible | no publicados | BSD-3-Clause | Hugging Face, checkpoint sin entrenar |
 | Modelos Mae de referencia (ViT-MAE) | no disponible en esta busqueda | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -89,6 +89,6 @@ No disponible. El repositorio no publica resultados que permitan comparar con al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alessandrogiordano/mae-contrastive-v239
+- Modelo en Hugging Face: https://huggingface.co/alessandrogiordano/mae-contrastive-v239
 - Paper de referencia sobre masked autoencoders (MAE, He et al., 2021): no disponible en los resultados de busqueda proporcionados.
 - Repositorio de codigo, blog o demo adicional: no disponible. Las busquedas web realizadas devolvieron unicamente sitios de retransmision deportiva sin relacion alguna con el modelo.

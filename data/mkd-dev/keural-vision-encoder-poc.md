@@ -75,9 +75,9 @@ Tras aplicar DPO (RLHF-V, 3.000 pasos), el autor reporta mejoras: VQAv2 a 43,6%,
 
 | Modelo | Parámetros | Contexto / tokens por imagen | Rendimiento VQA (VQAv2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Keural Vision Encoder (PoC) | 24,7M | 256 por defecto, ajustable | 12,9% (SFT) / 43,6% (SFT+DPO) | MIT | HuggingFace |
-| CLIP ViT-L/14 (usado en LLaVA 1.5) | 307M | 576 tokens fijos | 78,5% (en LLaVA 1.5) | MIT (pesos OpenAI) | HuggingFace |
-| SigLIP (usado en LLaVA 1.6) | ~400M | variable según resolución | 81,8% (en LLaVA 1.6) | Apache 2.0 | HuggingFace |
+| Keural Vision Encoder (PoC) | 24,7M | 256 por defecto, ajustable | 12,9% (SFT) / 43,6% (SFT+DPO) | MIT | Hugging Face |
+| CLIP ViT-L/14 (usado en LLaVA 1.5) | 307M | 576 tokens fijos | 78,5% (en LLaVA 1.5) | MIT (pesos OpenAI) | Hugging Face |
+| SigLIP (usado en LLaVA 1.6) | ~400M | variable según resolución | 81,8% (en LLaVA 1.6) | Apache 2.0 | Hugging Face |
 
 La comparación debe leerse con cautela: los porcentajes de VQAv2 corresponden al VLM completo y no al codificador aislado. La ventaja de Keural es su tamaño (12,4 veces menor que el codificador de LLaVA) y su flexibilidad de tokens; la desventaja es una calidad muy inferior en todas las tareas evaluadas.
 
@@ -94,5 +94,5 @@ La comparación debe leerse con cautela: los porcentajes de VQAv2 corresponden a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mkd-dev/keural-vision-encoder-poc
+- Modelo en Hugging Face: https://huggingface.co/mkd-dev/keural-vision-encoder-poc
 - VLM completo (Keural VLM PoC): https://huggingface.co/mkd-hika/keural-vlm-poc

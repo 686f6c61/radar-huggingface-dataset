@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tnesniv/si_npx_brainstem es un repositorio de modelo publicado en HuggingFace por el usuario Tnesniv. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su licencia (MIT), su region declarada (us), la ausencia de pipeline declarado y las fechas de creacion y ultima actualizacion, ambas el 13 de octubre de 2026. El repositorio registra 0 descargas y 0 likes.
+Tnesniv/si_npx_brainstem es un repositorio de modelo publicado en Hugging Face por el usuario Tnesniv. La unica informacion verificable disponible en el momento de redactar esta ficha es su identificador, su licencia (MIT), su region declarada (us), la ausencia de pipeline declarado y las fechas de creacion y ultima actualizacion, ambas el 13 de octubre de 2026. El repositorio registra 0 descargas y 0 likes.
 
 La model card asociada no contiene mas que el campo `license: mit`. No se declara arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados, formato de pesos ni procedimiento de entrenamiento. Tampoco se incluyen resultados de evaluacion, ejemplos de uso ni documentacion tecnica adicional.
 
@@ -81,5 +81,5 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tnesniv/si_npx_brainstem
+- Repositorio en Hugging Face: https://huggingface.co/Tnesniv/si_npx_brainstem
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

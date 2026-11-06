@@ -4,7 +4,7 @@
 
 e5-mistral-7b-instruct es un modelo de embeddings densos basado en la arquitectura Mistral-7B-v0.1, fine-tuneado para representación de texto mediante la metodología E5 (contrastive pre-training con supervisión débil e instrucciones). Esta versión concreta es un fork publicado por furiosa-ai del modelo original de intfloat, orientado a tareas de similitud semántica, recuperación de información, clasificación y pipelines de RAG. El modelo genera embeddings de 4096 dimensiones y soporta una ventana de contexto de 4096 tokens.
 
-Con 7.110.660.096 parámetros (~7,11B), se sitúa en la gama alta de los modelos de embeddings de código abierto, superando en capacidad a alternativas como bge-m3 o e5-large. Su licencia MIT permite uso comercial sin restricciones, y su compatibilidad con text-embeddings-inference y HuggingFace Inference Endpoints facilita el despliegue en producción. Aunque está etiquetado principalmente para inglés, los benchmarks de MTEB muestran resultados en alemán, español, francés, japonés y chino, lo que indica cierta capacidad multilingüe.
+Con 7.110.660.096 parámetros (~7,11B), se sitúa en la gama alta de los modelos de embeddings de código abierto, superando en capacidad a alternativas como bge-m3 o e5-large. Su licencia MIT permite uso comercial sin restricciones, y su compatibilidad con text-embeddings-inference y Hugging Face Inference Endpoints facilita el despliegue en producción. Aunque está etiquetado principalmente para inglés, los benchmarks de MTEB muestran resultados en alemán, español, francés, japonés y chino, lo que indica cierta capacidad multilingüe.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ No se han publicado comparativas con otros modelos en la información disponible
 - VRAM estimada para inferencia: ~14,2 GB en FP16, ~7,1 GB en INT8, ~3,6 GB en INT4 (cálculo basado en 7,11B parámetros).
 - GPU recomendadas: A100 40GB, H100 80GB, RTX 4090 24GB, RTX 3090 24GB para FP16 sin cuantización.
 - Consumer GPU: RTX 4090 (24GB) puede ejecutar el modelo en FP16; RTX 3060 12GB o RTX 4060 Ti 16GB pueden ejecutarlo en INT8; GPUs con 8GB o menos requieren INT4.
-- Opciones de despliegue: text-embeddings-inference (compatible según tags), sentence-transformers, HuggingFace Inference Endpoints (endpoints_compatible), y cualquier servidor que soporte safetensors con transformers.
+- Opciones de despliegue: text-embeddings-inference (compatible según tags), sentence-transformers, Hugging Face Inference Endpoints (endpoints_compatible), y cualquier servidor que soporte safetensors con transformers.
 - Latencia y throughput: no disponible en la información publicada. Como referencia, un modelo de 7B en FP16 en una A100 procesa del orden de cientos de secuencias por segundo en tareas de embedding, pero este dato no está verificado para este modelo concreto.
 
 ## Comparativa con modelos similares
@@ -96,7 +96,7 @@ La comparativa con bge-m3 y e5-large se basa en datos públicos de sus respectiv
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/furiosa-ai/e5-mistral-7b-instruct
+- Repositorio Hugging Face: https://huggingface.co/furiosa-ai/e5-mistral-7b-instruct
 - Modelo original (intfloat): https://huggingface.co/intfloat/e5-mistral-7b-instruct
 - Ficha en OpenModelMap: https://openmodelmap.com/model/intfloat/e5-mistral-7b-instruct
 - Ficha en cortecs.ai: https://cortecs.ai/detailedServerlessView/e5-mistral-7b-instruct

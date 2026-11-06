@@ -2,7 +2,7 @@
 
 ## Resumen
 
-doll_play es un adaptador LoRA de tipo text-to-image publicado por el usuario Shero448 en HuggingFace, pensado para aplicar un estilo o concepto concreto ("kurosugatari") sobre el modelo base John6666/prefect-illustrious-xl-v15-sdxl, un derivado de la familia Illustrious XL (arquitectura SDXL). El repositorio pesa 0,3 GB y se distribuye con la libreria diffusers, lo que indica que contiene exclusivamente los pesos del adaptador y no un checkpoint completo.
+doll_play es un adaptador LoRA de tipo text-to-image publicado por el usuario Shero448 en Hugging Face, pensado para aplicar un estilo o concepto concreto ("kurosugatari") sobre el modelo base John6666/prefect-illustrious-xl-v15-sdxl, un derivado de la familia Illustrious XL (arquitectura SDXL). El repositorio pesa 0,3 GB y se distribuye con la libreria diffusers, lo que indica que contiene exclusivamente los pesos del adaptador y no un checkpoint completo.
 
 El modelo resuelve el problema tipico de la personalizacion de difusion: en lugar de reentrenar un modelo completo de miles de millones de parametros, permite anadir una estetica o un sujeto especifico mediante un fichero pequeno que se carga junto al modelo base. Se activa con la palabra clave (trigger word) `kurosugatari`, declarada en la model card como instance_prompt.
 
@@ -63,7 +63,7 @@ Nota: el autor no publica requisitos. Las cifras siguientes son estimaciones bas
 - VRAM para inferencia: aproximadamente 8-10 GB en fp16 para generar a 1024x1024 con el modelo base SDXL mas el LoRA; alrededor de 6-7 GB activando offload de text encoders o atencion eficiente (xformers/SDPA); cerca de 6 GB con el U-Net en fp8 o con cuantizaciones GGUF.
 - GPU recomendadas: NVIDIA RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 para uso individual; A100, H100 o L40S para generacion por lotes o servicio multiusuario.
 - Compatibilidad con GPU de consumo: si, es viable en tarjetas de gama media con 8-12 GB de VRAM aplicando atencion eficiente y, en el limite, con cuantizacion y offload a RAM.
-- Opciones de despliegue: diffusers (script Python propio), ComfyUI, AUTOMATIC1111 WebUI y su fork Forge, SD.Next, InvokeAI, Fooocus; exportacion a ONNX o TensorRT para optimizacion; APIs gestionadas (HuggingFace Inference Endpoints, Replicate) si se sube el adaptador junto al modelo base.
+- Opciones de despliegue: diffusers (script Python propio), ComfyUI, AUTOMATIC1111 WebUI y su fork Forge, SD.Next, InvokeAI, Fooocus; exportacion a ONNX o TensorRT para optimizacion; APIs gestionadas (Hugging Face Inference Endpoints, Replicate) si se sube el adaptador junto al modelo base.
 - Latencia y throughput estimados: a 1024x1024 con 25-30 pasos, una RTX 4090 suele completar una imagen en torno a 2-4 segundos y una RTX 3060 en torno a 10-15 segundos; el uso del LoRA anade un sobrecoste minimo frente al modelo base (estimacion, no medida por el autor).
 - Almacenamiento: 0,3 GB para el adaptador mas aproximadamente 6-7 GB para el checkpoint del modelo base en fp16.
 
@@ -73,10 +73,10 @@ No se dispone de datos de benchmarks ni de identificadores de modelos comparable
 
 | Alternativa | Tipo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Shero448/doll_play | LoRA sobre SDXL (Illustrious XL) | No disponible (adaptador de 0,3 GB) | 1024x1024 tipico; 77 tokens por text encoder | No disponible | No disponible | HuggingFace, 0 descargas |
-| John6666/prefect-illustrious-xl-v15-sdxl (modelo base) | Checkpoint completo de difusion SDXL | ~2.600 millones en U-Net mas text encoders | 1024x1024 tipico; 77 tokens por text encoder | No disponible | No disponible en la informacion consultada | HuggingFace |
-| Otros LoRA publicos para Illustrious XL / SDXL anime | Adaptador LoRA | Del orden de 0,1-0,4 GB | Igual que el modelo base | No disponible | Variable segun autor | HuggingFace, Civitai |
-| Textual inversion sobre SDXL | Embedding de texto aprendido | Unos pocos KB | Igual que el modelo base | No disponible | Variable | HuggingFace, Civitai |
+| Shero448/doll_play | LoRA sobre SDXL (Illustrious XL) | No disponible (adaptador de 0,3 GB) | 1024x1024 tipico; 77 tokens por text encoder | No disponible | No disponible | Hugging Face, 0 descargas |
+| John6666/prefect-illustrious-xl-v15-sdxl (modelo base) | Checkpoint completo de difusion SDXL | ~2.600 millones en U-Net mas text encoders | 1024x1024 tipico; 77 tokens por text encoder | No disponible | No disponible en la informacion consultada | Hugging Face |
+| Otros LoRA publicos para Illustrious XL / SDXL anime | Adaptador LoRA | Del orden de 0,1-0,4 GB | Igual que el modelo base | No disponible | Variable segun autor | Hugging Face, Civitai |
+| Textual inversion sobre SDXL | Embedding de texto aprendido | Unos pocos KB | Igual que el modelo base | No disponible | Variable | Hugging Face, Civitai |
 
 Diferencias clave frente a las alternativas: el LoRA es mas ligero y rapido de entrenar que un fine-tune completo, pero depende estrictamente del modelo base declarado; un textual inversion es aun mas pequeno pero con menor capacidad de capturar rasgos complejos; los LoRA de terceros para Illustrious XL no son directamente comparables sin evaluacion con el mismo prompt y semilla.
 
@@ -95,7 +95,7 @@ Diferencias clave frente a las alternativas: el LoRA es mas ligero y rapido de e
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/Shero448/doll_play
+- Ficha del modelo en Hugging Face: https://huggingface.co/Shero448/doll_play
 - Ficheros del repositorio: https://huggingface.co/Shero448/doll_play/tree/main
 - Modelo base: https://huggingface.co/John6666/prefect-illustrious-xl-v15-sdxl
 - Paper de referencia sobre LoRA (Low-Rank Adaptation of Large Language Models): https://arxiv.org/abs/2106.09685

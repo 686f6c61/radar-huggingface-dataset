@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Efficientformer-retrieval-fast es un prototipo de investigación publicado por el usuario azaytsev en HuggingFace. Se trata de una implementación personalizada de una arquitectura Efficientformer orientada a tareas de recuperación (retrieval), distribuida en escala "tiny" y sin resultados de rendimiento verificados. El repositorio incluye el código fuente (`model.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+Efficientformer-retrieval-fast es un prototipo de investigación publicado por el usuario azaytsev en Hugging Face. Se trata de una implementación personalizada de una arquitectura Efficientformer orientada a tareas de recuperación (retrieval), distribuida en escala "tiny" y sin resultados de rendimiento verificados. El repositorio incluye el código fuente (`model.py`), la configuración de arquitectura (`config.json`), la receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 El modelo cuenta con 49.600 parámetros totales, según los datos reales del archivo safetensors, lo que lo sitúa como una pieza extremadamente ligera pensada para pruebas de humo (smoke tests) y validación de tuberías de entrenamiento, no para inferencia en producción. La model card indica explícitamente que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuación de benchmark.
 
@@ -72,9 +72,9 @@ No disponible. No se conocen modelos comparables en la misma categoría que comp
 - La licencia MIT permite uso comercial del código, pero el autor advierte de que deben revisarse por separado los términos de las fuentes de datos cuando se emplee con conjuntos externos.
 - Al tratarse de una implementación personalizada, no se carga con APIs genéricas sin escribir un adaptador.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse de forma separada de los valores por defecto incluidos en este repositorio.
-- El tamaño del repositorio aparece redondeado a 0.0 GB, lo que puede dificultar la verificación del contenido real desde la interfaz de HuggingFace.
+- El tamaño del repositorio aparece redondeado a 0.0 GB, lo que puede dificultar la verificación del contenido real desde la interfaz de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/azaytsev/efficientformer-retrieval-fast
+- Hugging Face: https://huggingface.co/azaytsev/efficientformer-retrieval-fast
 - No se han proporcionado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

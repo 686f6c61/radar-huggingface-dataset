@@ -4,9 +4,9 @@
 
 Kimi K3 es un modelo de pesos abiertos de tipo agente multimodal nativo desarrollado por Moonshot AI. Con 2,8 billones de parámetros totales (2.779.931.837.184 según los safetensors del repositorio) y 104B de parámetros activos, se presenta como el primer modelo abierto de clase 3T. Está construido sobre una arquitectura MoE con Kimi Delta Attention (KDA) y Attention Residuals (AttnRes), e incorpora visión nativa junto con una ventana de contexto de un millón de tokens.
 
-El modelo está orientado a inteligencia frontera en tres ejes: codificación de largo horizonte (sesiones de ingeniería sostenidas, navegación de repositorios masivos, orquestación de herramientas de terminal), trabajo de conocimiento agéntico de extremo a extremo (investigación profunda con visualizaciones interactivas, dashboards, edición de vídeo) y razonamiento multimodal. Su pipeline declarado en HuggingFace es image-text-to-text, lo que confirma el procesamiento conjunto de texto, imagen y vídeo.
+El modelo está orientado a inteligencia frontera en tres ejes: codificación de largo horizonte (sesiones de ingeniería sostenidas, navegación de repositorios masivos, orquestación de herramientas de terminal), trabajo de conocimiento agéntico de extremo a extremo (investigación profunda con visualizaciones interactivas, dashboards, edición de vídeo) y razonamiento multimodal. Su pipeline declarado en Hugging Face es image-text-to-text, lo que confirma el procesamiento conjunto de texto, imagen y vídeo.
 
-La relevancia actual del modelo radica en dos factores: por un lado, la publicación de pesos completos bajo la licencia Kimi K3, que permite investigación, despliegue e innovación posterior; por otro, la eficiencia de escalado declarada, con una mejora aproximada de 2,5× en eficiencia global frente a Kimi K2 gracias a un marco Stable LatentMoE que activa 16 de 896 expertos por token. El repositorio de HuggingFace ocupa 1561,0 GB y está publicado por el usuario Muggle2026, no por la organización oficial de Moonshot AI.
+La relevancia actual del modelo radica en dos factores: por un lado, la publicación de pesos completos bajo la licencia Kimi K3, que permite investigación, despliegue e innovación posterior; por otro, la eficiencia de escalado declarada, con una mejora aproximada de 2,5× en eficiencia global frente a Kimi K2 gracias a un marco Stable LatentMoE que activa 16 de 896 expertos por token. El repositorio de Hugging Face ocupa 1561,0 GB y está publicado por el usuario Muggle2026, no por la organización oficial de Moonshot AI.
 
 ## Especificaciones tecnicas
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kimi K3 | 2,8T | 104B | 1.000.000 tokens | Kimi K3 License | Pesos abiertos en HuggingFace |
+| Kimi K3 | 2,8T | 104B | 1.000.000 tokens | Kimi K3 License | Pesos abiertos en Hugging Face |
 | Kimi K2 | no disponible en la información | no disponible en la información | no disponible en la información | no disponible | Referenciado por el autor como generación anterior |
 | Otros modelos de clase 3T abiertos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -76,14 +76,14 @@ La información proporcionada solo permite comparar con Kimi K2, del que se indi
 - Riesgo de alucinación: no se documenta una evaluación específica; como modelo generativo de gran escala, es esperable, pero no hay datos concretos en la información proporcionada.
 - Limitaciones de contexto o idioma: el contexto es de un millón de tokens, pero no se detallan los idiomas soportados ni posibles degradaciones en contextos extremos.
 - Restricciones de licencia: la licencia Kimi K3 (license: other) no se detalla en la información disponible; es imprescindible revisar el archivo LICENSE del repositorio antes de cualquier uso comercial.
-- Publicación no oficial: el repositorio de HuggingFace está publicado por el usuario Muggle2026, no por la organización oficial de Moonshot AI, lo que introduce un riesgo de procedencia que debe verificarse antes de su uso en producción.
+- Publicación no oficial: el repositorio de Hugging Face está publicado por el usuario Muggle2026, no por la organización oficial de Moonshot AI, lo que introduce un riesgo de procedencia que debe verificarse antes de su uso en producción.
 - Requisitos de infraestructura: el tamaño del modelo (1561,0 GB de repositorio, 2,8T de parámetros) hace inviable el despliegue en hardware de consumo y exige clústeres multi-nodo.
 - Madurez del ecosistema: con 0 descargas y 0 likes en el momento de la consulta, no hay evidencia comunitaria de validación del funcionamiento del repositorio.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muggle2026/Kimi-K3
-- Organización oficial en HuggingFace: https://huggingface.co/moonshotai
+- Hugging Face: https://huggingface.co/Muggle2026/Kimi-K3
+- Organización oficial en Hugging Face: https://huggingface.co/moonshotai
 - Blog técnico: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo: https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf
 - Licencia: https://huggingface.co/moonshotai/Kimi-K3/blob/main/LICENSE

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Woman037 es un adaptador LoRA de tipo text-to-image publicado por el usuario rachel-luxangel-ai en HuggingFace. No se trata de un modelo completo, sino de un fichero de pesos (`woman037.safetensors`) que se carga sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un generador de imagenes de la familia Z-Image desarrollada por Tongyi-MAI. Su funcion es inyectar un concepto visual concreto, invocado mediante la palabra clave (`trigger`) `woman037`, de forma que el modelo base reproduzca ese personaje de manera consistente en distintas generaciones.
+Woman037 es un adaptador LoRA de tipo text-to-image publicado por el usuario rachel-luxangel-ai en Hugging Face. No se trata de un modelo completo, sino de un fichero de pesos (`woman037.safetensors`) que se carga sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un generador de imagenes de la familia Z-Image desarrollada por Tongyi-MAI. Su funcion es inyectar un concepto visual concreto, invocado mediante la palabra clave (`trigger`) `woman037`, de forma que el modelo base reproduzca ese personaje de manera consistente en distintas generaciones.
 
-El repositorio ocupa 0,2 GB y se distribuye con la libreria `diffusers` bajo la etiqueta `template:diffusion-lora`. El autor indica que procede de la version 2469215 de CivitAI, lo que sugiere un flujo de trabajo tipico de la comunidad de generacion de imagenes: entrenamiento del LoRA sobre un conjunto de imagenes del personaje, publicacion en CivitAI y espejo del fichero en HuggingFace. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 22 de septiembre de 2026 con apenas cuatro segundos de diferencia, lo que apunta a una subida automatizada o a un repositorio recien creado sin curacion posterior.
+El repositorio ocupa 0,2 GB y se distribuye con la libreria `diffusers` bajo la etiqueta `template:diffusion-lora`. El autor indica que procede de la version 2469215 de CivitAI, lo que sugiere un flujo de trabajo tipico de la comunidad de generacion de imagenes: entrenamiento del LoRA sobre un conjunto de imagenes del personaje, publicacion en CivitAI y espejo del fichero en Hugging Face. En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado el 22 de septiembre de 2026 con apenas cuatro segundos de diferencia, lo que apunta a una subida automatizada o a un repositorio recien creado sin curacion posterior.
 
 La relevancia de esta ficha es limitada en terminos de investigacion, pero es representativa de un caso de uso muy extendido: adaptadores de bajo coste para fijar identidad de personaje en pipelines de generacion de imagenes. La informacion publica disponible es muy escasa (no hay licencia declarada, ni idiomas, ni datos de entrenamiento, ni benchmarks), por lo que buena parte de las especificaciones se marcan como no disponibles.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada en terminos de investigacion, pero es re
 
 El objeto publicado es un adaptador LoRA (Low-Rank Adaptation) para un modelo de difusion de generacion de imagenes. Los LoRA insertan matrices de bajo rango en las capas del modelo base y se entrenan con el base congelado, de modo que el fichero resultante es muy pequeno (aqui, un repositorio de 0,2 GB que incluye el peso y los metadatos) y se combina en tiempo de inferencia con los pesos de `Tongyi-MAI/Z-Image-Turbo`. El autor declara un `instance_prompt` unico, `woman037`, que actua como token disparador del concepto aprendido.
 
-No hay informacion publica sobre el numero de imagenes de entrenamiento, el numero de pasos, la resolucion de entrenamiento, el rango (`rank`) ni el `alpha` del adaptador, la tasa de aprendizaje, el tipo de scheduler de ruido, ni si se aplicaron tecnicas adicionales como regularizacion con imagenes de clase, DreamBooth, o captions automaticos. Tampoco se documenta si el entrenamiento se hizo sobre el modelo Turbo en su configuracion destilada de pocos pasos o sobre una variante distinta del mismo. La unica referencia tecnica es el identificador de version de CivitAI (2469215), que no aporta metadatos en la model card de HuggingFace.
+No hay informacion publica sobre el numero de imagenes de entrenamiento, el numero de pasos, la resolucion de entrenamiento, el rango (`rank`) ni el `alpha` del adaptador, la tasa de aprendizaje, el tipo de scheduler de ruido, ni si se aplicaron tecnicas adicionales como regularizacion con imagenes de clase, DreamBooth, o captions automaticos. Tampoco se documenta si el entrenamiento se hizo sobre el modelo Turbo en su configuracion destilada de pocos pasos o sobre una variante distinta del mismo. La unica referencia tecnica es el identificador de version de CivitAI (2469215), que no aporta metadatos en la model card de Hugging Face.
 
 ## Capacidades
 
@@ -68,8 +68,8 @@ No existen metricas objetivas (FID, CLIP score, similitud de identidad facial, e
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rachel-luxangel-ai/zit-woman037 | LoRA de personaje sobre Z-Image-Turbo | No disponible | Depende del base | No disponible | HuggingFace, 0 descargas |
-| Tongyi-MAI/Z-Image-Turbo (modelo base) | Difusion text-to-image | No disponible en la informacion proporcionada | No disponible | No disponible | HuggingFace |
+| rachel-luxangel-ai/zit-woman037 | LoRA de personaje sobre Z-Image-Turbo | No disponible | Depende del base | No disponible | Hugging Face, 0 descargas |
+| Tongyi-MAI/Z-Image-Turbo (modelo base) | Difusion text-to-image | No disponible en la informacion proporcionada | No disponible | No disponible | Hugging Face |
 | Otros LoRA de personaje para Z-Image-Turbo | LoRA de personaje | No disponible | No disponible | No disponible | No disponible en la informacion proporcionada |
 | Adaptadores LoRA de personaje para otras familias de difusion (SDXL, Flux, etc.) | LoRA de personaje | No disponible | No disponible | Variable segun autor | No disponible en la informacion proporcionada |
 
@@ -90,8 +90,8 @@ No se dispone de informacion suficiente para establecer una comparativa cuantita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-woman037
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Modelo en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-woman037
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Version de origen en CivitAI (indicada por el autor): https://civitai.com/api/v1/model-versions/2469215
 - Paper, repositorio de codigo, blog o demo del autor: no disponible
 - Resultados de busqueda web relevantes: no se han encontrado. Las consultas devuelven exclusivamente paginas sobre el nombre propio "Rachel" (articulos enciclopedicos, contenido infantil y una tienda de moda), sin relacion alguna con el modelo.

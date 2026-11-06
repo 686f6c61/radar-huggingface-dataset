@@ -6,7 +6,7 @@ Qwen3-4B-FP8 es una cuantizacion en punto flotante de 8 bits (FP8, esquema W8A8 
 
 El modelo base Qwen3-4B es un transformer causal denso de 4.022 millones de parametros con atencion por grupos (grouped-query attention), desarrollado por el equipo Qwen de Alibaba. Su caracteristica principal es la conmutacion entre un modo de pensamiento (thinking mode) que emite una cadena de razonamiento antes de la respuesta final, util para tareas complejas de matematicas, codigo y razonamiento, y un modo sin pensamiento (non-thinking mode) para dialogo general rapido. La cuantizacion FP8 preserva estas capacidades con una degradacion minima de calidad, lo que la convierte en una opcion atractiva para despliegues en produccion con GPUs Hopper o Blackwell, donde el formato FP8 es nativo.
 
-La licencia Apache 2.0, heredada del modelo base, permite uso comercial sin restricciones significativas. Esta ficha cubre las especificaciones tecnicas, capacidades, casos de uso, requisitos de hardware y limitaciones de esta cuantizacion concreta, basandose exclusivamente en la informacion publicada por el autor y en los datos disponibles en HuggingFace.
+La licencia Apache 2.0, heredada del modelo base, permite uso comercial sin restricciones significativas. Esta ficha cubre las especificaciones tecnicas, capacidades, casos de uso, requisitos de hardware y limitaciones de esta cuantizacion concreta, basandose exclusivamente en la informacion publicada por el autor y en los datos disponibles en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La principal dif
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtum/Qwen3-4B-FP8
+- Modelo en Hugging Face: https://huggingface.co/qtum/Qwen3-4B-FP8
 - Modelo base Qwen/Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio llm-compressor: https://github.com/vllm-project/llm-compressor
 - Articulo de dev.co sobre Qwen3-4B-FP8: https://dev.co/ai/llms/qwen3-4b-fp8

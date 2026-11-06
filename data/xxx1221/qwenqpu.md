@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenQPU es un repositorio experimental publicado en HuggingFace por el usuario `xxx1221` que, en el momento de su creación, contiene únicamente el checkpoint de lenguaje sin modificar del modelo `divagr1925/Qwen3.5-4B-Qwenputer`. No se trata, por tanto, de un modelo entrenado de nuevo ni de un checkpoint con el módulo cuántico fusionado en el decodificador, sino de un espacio de publicación en preparación para un runtime compuesto que añadirá un módulo de simulación cuántica de vector de estado sobre el modelo base.
+QwenQPU es un repositorio experimental publicado en Hugging Face por el usuario `xxx1221` que, en el momento de su creación, contiene únicamente el checkpoint de lenguaje sin modificar del modelo `divagr1925/Qwen3.5-4B-Qwenputer`. No se trata, por tanto, de un modelo entrenado de nuevo ni de un checkpoint con el módulo cuántico fusionado en el decodificador, sino de un espacio de publicación en preparación para un runtime compuesto que añadirá un módulo de simulación cuántica de vector de estado sobre el modelo base.
 
 La propuesta técnica del autor consiste en ejecutar un módulo cuántico de parámetros fijos de forma separada al decodificador original, con planificación explícita en el host, sin integrarse en el estado KV ni en el grafo del transformer. La ejecución cuántica es, según la propia model card, simulación clásica ideal, no cómputo cuántico real.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento del modelo base ni de alternativas compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xxx1221/QwenQPU
+- Repositorio Hugging Face: https://huggingface.co/xxx1221/QwenQPU
 - Modelo base: https://huggingface.co/divagr1925/Qwen3.5-4B-Qwenputer
 - Código fuente y demo original: https://github.com/xi-zhao/QwenQPU
 - Documentación de arquitectura: https://github.com/xi-zhao/QwenQPU/blob/main/docs/ARCHITECTURE.md

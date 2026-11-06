@@ -6,13 +6,13 @@ El repositorio `mawrightman/zero-shot-transfer-reading` no contiene un modelo de
 
 El repositorio incluye un archivo `notes.md` como artefacto principal y este `README.md` como documentación. El contenido técnico se limita al alcance de la pregunta de investigación, una comparación propuesta con baselines emparejados, el contexto de evaluación con benchmarks públicos y comprobaciones de reproducibilidad. Los apartados marcados como planes o hipótesis no deben interpretarse como resultados experimentales.
 
-Aunque el repositorio incluye un archivo `safetensors` con 49.600 parámetros totales según los metadatos de HuggingFace, no hay información que describa su arquitectura, propósito o proceso de entrenamiento más allá de la etiqueta genérica `transformer`. El tamaño del repositorio es de 0,0 GB y no registra descargas ni interacciones. Es relevante únicamente como material de lectura metodológica sobre transferencia zero-shot, no como modelo desplegable.
+Aunque el repositorio incluye un archivo `safetensors` con 49.600 parámetros totales según los metadatos de Hugging Face, no hay información que describa su arquitectura, propósito o proceso de entrenamiento más allá de la etiqueta genérica `transformer`. El tamaño del repositorio es de 0,0 GB y no registra descargas ni interacciones. Es relevante únicamente como material de lectura metodológica sobre transferencia zero-shot, no como modelo desplegable.
 
 ## Especificaciones tecnicas
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | transformer (según tag de HuggingFace; no se detalla en la model card) |
+| Arquitectura | transformer (según tag de Hugging Face; no se detalla en la model card) |
 | Parametros totales | 49.600 (según metadatos de safetensors) |
 | Parametros activos | no disponible (no es un modelo MoE según la información disponible) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ Aunque el repositorio incluye un archivo `safetensors` con 49.600 parámetros to
 
 ## Arquitectura y entrenamiento
 
-La model card no describe la arquitectura interna del artefacto más allá del tag `transformer` de HuggingFace. No se especifica si se trata de un transformer estándar, una variante con atención lineal, un modelo híbrido o cualquier otra configuración. Tampoco se documenta el número de capas, dimensiones ocultas, cabezas de atención ni la función de activación.
+La model card no describe la arquitectura interna del artefacto más allá del tag `transformer` de Hugging Face. No se especifica si se trata de un transformer estándar, una variante con atención lineal, un modelo híbrido o cualquier otra configuración. Tampoco se documenta el número de capas, dimensiones ocultas, cabezas de atención ni la función de activación.
 
 No hay información sobre datos de entrenamiento: ni número de tokens, ni composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o SFT. El autor afirma explícitamente que el repositorio "no reclama un checkpoint entrenado", por lo que el archivo `safetensors` de 49.600 parámetros podría corresponder a un artefacto auxiliar, a un modelo de juguete o a un residuo del proceso de investigación, sin que la documentación lo aclare. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -74,5 +74,5 @@ No disponible. No se identifica en la información proporcionada ningún modelo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mawrightman/zero-shot-transfer-reading
+- Repositorio en Hugging Face: https://huggingface.co/mawrightman/zero-shot-transfer-reading
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

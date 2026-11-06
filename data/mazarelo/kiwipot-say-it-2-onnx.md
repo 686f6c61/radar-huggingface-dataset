@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mazarelo/kiwipot-say-it-2-onnx
+- Repositorio Hugging Face: https://huggingface.co/mazarelo/kiwipot-say-it-2-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Aplicación Kiwipot: https://kiwipot.com
 - Documentación de transformers.js: https://huggingface.co/docs/transformers.js

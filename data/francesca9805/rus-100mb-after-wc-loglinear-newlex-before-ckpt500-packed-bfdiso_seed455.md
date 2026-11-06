@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `francesca9805/ppt-wc-loglinear-newlex-rus-before-100mb-packed-bfdiso_seed455`, publicado por el usuario francesca9805 en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros construido sobre la arquitectura GPT-2, entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de HuggingFace. El nombre del repositorio sugiere un trabajo experimental centrado en tokenizadores y datos en ruso ("rus", "newlex") con un corpus de aproximadamente 100 MB, empaquetado de secuencias y un checkpoint intermedio (ckpt500).
+El modelo `rus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `francesca9805/ppt-wc-loglinear-newlex-rus-before-100mb-packed-bfdiso_seed455`, publicado por el usuario francesca9805 en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 124,8 millones de parametros construido sobre la arquitectura GPT-2, entrenado mediante SFT (Supervised Fine-Tuning) con la libreria TRL de Hugging Face. El nombre del repositorio sugiere un trabajo experimental centrado en tokenizadores y datos en ruso ("rus", "newlex") con un corpus de aproximadamente 100 MB, empaquetado de secuencias y un checkpoint intermedio (ckpt500).
 
 El modelo se enmarca en un flujo de investigacion sobre tokenizacion y preentrenamiento a pequena escala, probablemente asociado a la Universidad de Groningen segun el enlace de Weights & Biases. No es un modelo orientado a produccion ni a tareas generales de proposito amplio: por tamano (124,8 M), arquitectura (GPT-2) y ausencia de documentacion adicional, se trata de un artefacto experimental con 0 descargas y 0 likes en el momento de la consulta.
 
@@ -44,7 +44,7 @@ Segun las etiquetas y el nombre del repositorio, el entrenamiento habria partido
 - Evaluacion de tecnicas de empaquetado: el sufijo "packed" sugiere que el modelo se entreno con secuencias concatenadas; puede usarse para analizar el efecto de esta tecnica en la calidad de generacion a baja escala.
 - Generacion de texto en ruso a pequena escala: si el corpus de entrenamiento es efectivamente ruso, podria emplearse para tareas muy acotadas de continuacion de texto en ese idioma, siempre con expectativas de calidad moderadas.
 - Prototipado rapido en local: al tener solo 124 M de parametros y pesos de aproximadamente 250 MB en FP16, puede ejecutarse en cualquier portatil con CPU o en una GPU de gama baja, lo que lo hace comodo para pruebas de integracion con `transformers`.
-- Docencia y formacion: util como ejemplo didactico de fine-tuning con TRL, carga de safetensors y despliegue con `pipeline` de HuggingFace.
+- Docencia y formacion: util como ejemplo didactico de fine-tuning con TRL, carga de safetensors y despliegue con `pipeline` de Hugging Face.
 - Analisis de artefactos de entrenamiento a baja escala: permite estudiar como se comporta un GPT-2 tras un entrenamiento corto (checkpoint 500) sobre un corpus pequeno, en terminos de perplejidad y coherencia.
 
 ## Benchmarks y rendimiento
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este modelo (francesca9805/rus-100mb-...) | 124,8 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste fino experimental, orientado a ruso segun el nombre |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT (segun OpenAI) | HuggingFace, ampliamente usado | Modelo base original en ingles |
-| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Version destilada de GPT-2, mas rapida |
-| Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | HuggingFace | Modelo moderno mucho mayor, con mejor soporte multilingue y contexto largo |
+| Este modelo (francesca9805/rus-100mb-...) | 124,8 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste fino experimental, orientado a ruso segun el nombre |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT (segun OpenAI) | Hugging Face, ampliamente usado | Modelo base original en ingles |
+| distilgpt2 | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Version destilada de GPT-2, mas rapida |
+| Qwen/Qwen2.5-0.5B | 494 M | 32.768 tokens | Apache 2.0 | Hugging Face | Modelo moderno mucho mayor, con mejor soporte multilingue y contexto largo |
 
 La comparacion directa en rendimiento no es posible porque no se han publicado benchmarks de este modelo. Frente a los modelos anteriores, la unica ventaja clara es su tamano minimo; en el resto de dimensiones (contexto, licencia clara, documentacion, soporte) los modelos listados ofrecen mas garantias.
 
@@ -84,11 +84,11 @@ La comparacion directa en rendimiento no es posible porque no se han publicado b
 - Checkpoint intermedio: el sufijo "ckpt500" sugiere que no es el modelo final de la ejecucion, sino un punto de control parcial, con la calidad que ello implica.
 - Modelo con 0 descargas y 0 likes: no hay evidencia de uso en comunidad, validacion externa ni mantenimiento.
 - No es apto para produccion en tareas de atencion al cliente, generacion de codigo, razonamiento o cualquier escenario que requiera fiabilidad.
-- Fechas de creacion y actualizacion inusuales (2026-10-11) en los metadatos de HuggingFace, lo que conviene verificar antes de cualquier uso.
+- Fechas de creacion y actualizacion inusuales (2026-10-11) en los metadatos de Hugging Face, lo que conviene verificar antes de cualquier uso.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-100mb-after-wc-loglinear-newlex-before-ckpt500-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-loglinear-newlex-rus-before-100mb-packed-bfdiso_seed455
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/y73fy8v3
 - Repositorio de TRL: https://github.com/huggingface/trl

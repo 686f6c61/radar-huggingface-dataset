@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voxcpm2-stage3-te-kn-frozen-locdit-tmu1.0 | ~2,29 B | no disponible | en, te, kn | Apache 2.0 | HuggingFace (19 descargas) |
-| sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep (modelo base) | no disponible | no disponible | en (y posiblemente indic) | no disponible | HuggingFace |
-| Alternativas TTS multilingües de código abierto (p. ej. XTTS, Bark) | variable | no disponible | múltiples | variable | HuggingFace |
+| voxcpm2-stage3-te-kn-frozen-locdit-tmu1.0 | ~2,29 B | no disponible | en, te, kn | Apache 2.0 | Hugging Face (19 descargas) |
+| sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep (modelo base) | no disponible | no disponible | en (y posiblemente indic) | no disponible | Hugging Face |
+| Alternativas TTS multilingües de código abierto (p. ej. XTTS, Bark) | variable | no disponible | múltiples | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-frozen-locdit-tmu1.0
+- Hugging Face: https://huggingface.co/sw-voice/voxcpm2-stage3-te-kn-frozen-locdit-tmu1.0
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-sidon-lr1e-4-10ep
 - Dataset telugu: sw-voice/swamiji-navaratri-telugu-sidon-themes (referenciado en la model card, sin URL directa confirmada)
 - Dataset kannada: sw-voice/swamiji-navaratri-kannada-sidon-themes (referenciado en la model card, sin URL directa confirmada)

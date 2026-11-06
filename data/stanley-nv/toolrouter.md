@@ -106,11 +106,11 @@ No se dispone de datos de benchmarks comparables publicados en la informacion pr
 - Los resultados del `model-index` figuran como no verificados y el repositorio no tiene descargas ni likes, de modo que no existe validacion externa independiente.
 - No se declara soporte para frameworks de servicio estandar (vLLM, Ollama, TGI, llama.cpp), lo que obliga a integrarlo como dependencia de Python o mediante el port a JavaScript.
 - Los metadatos del repositorio indican una fecha de creacion poco habitual (2026-10-07); conviene verificar la version y el estado del repositorio antes de usarlo en produccion.
-- Existe soporte de n-gramas hasheados y de un tokenizador WordPiece propio, no de un tokenizador estandar del ecosistema HuggingFace; esto puede complicar la interoperabilidad con otras herramientas.
+- Existe soporte de n-gramas hasheados y de un tokenizador WordPiece propio, no de un tokenizador estandar del ecosistema Hugging Face; esto puede complicar la interoperabilidad con otras herramientas.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stanley-nv/toolrouter
+- Modelo en Hugging Face: https://huggingface.co/stanley-nv/toolrouter
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/stanley-nv/tool-routing-data
 - Space de demostracion (playground, ejecuta el modelo en el navegador): https://huggingface.co/spaces/stanley-nv/toolrouter-playground
 - Modelo base: https://huggingface.co/minishlab/potion-base-8M

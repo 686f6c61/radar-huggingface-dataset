@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leiboy21/Flan-t5-recommender-v2 es un modelo publicado en HuggingFace por el usuario Leiboy21 y etiquetado con la arquitectura t5. El repositorio contiene pesos en formato safetensors con un total de 247.577.856 parametros (aproximadamente 248 M), un tamano de repositorio de 1,0 GB y licencia Apache 2.0. El nombre del repositorio apunta a un ajuste fino (fine-tune) de FLAN-T5 orientado a tareas de recomendacion, aunque la model card publicada esta practicamente vacia: solo incluye la declaracion de licencia, sin descripcion, sin datos de entrenamiento ni resultados de evaluacion.
+Leiboy21/Flan-t5-recommender-v2 es un modelo publicado en Hugging Face por el usuario Leiboy21 y etiquetado con la arquitectura t5. El repositorio contiene pesos en formato safetensors con un total de 247.577.856 parametros (aproximadamente 248 M), un tamano de repositorio de 1,0 GB y licencia Apache 2.0. El nombre del repositorio apunta a un ajuste fino (fine-tune) de FLAN-T5 orientado a tareas de recomendacion, aunque la model card publicada esta practicamente vacia: solo incluye la declaracion de licencia, sin descripcion, sin datos de entrenamiento ni resultados de evaluacion.
 
 Se trata, por tanto, de un modelo de tipo transformer encoder-decoder de la familia T5, con un orden de magnitud de parametros que coincide con la configuracion estandar de FLAN-T5-base (12 capas de encoder, 12 de decoder, d_model 768). Es un tamano que cabe sin dificultad en GPU de consumo e incluso puede ejecutarse en CPU, lo que lo hace atractivo como componente ligero dentro de un sistema de recomendacion (reranking, generacion de justificaciones o respuestas conversacionales).
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Cabe en cualquier GPU de consumo: GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090, entre otras. Incluso una GPU integrada o una CPU moderna pueden servirlo con latencias aceptables en cargas de baja concurrencia.
 - Ejecucion en CPU: viable con PyTorch en fp32 o bf16; recomendable para entornos sin GPU y para pruebas.
 - GPU de datacenter (A100, H100, L40S): soportadas, aunque sobredimensionadas para un modelo de 248 M de parametros salvo que se busque un throughput muy alto con batching agresivo.
-- Opciones de despliegue: HuggingFace Transformers con PyTorch (via mas directa), Text Generation Inference (TGI) y vLLM cuentan con soporte para modelos T5 encoder-decoder; alternativas mas artesanales son ONNX Runtime, un servicio FastAPI propio o llama.cpp, cuyo soporte de T5 es funcional pero menos maduro que el de arquitecturas decoder-only. Ollama no soporta T5 de forma nativa.
+- Opciones de despliegue: Hugging Face Transformers con PyTorch (via mas directa), Text Generation Inference (TGI) y vLLM cuentan con soporte para modelos T5 encoder-decoder; alternativas mas artesanales son ONNX Runtime, un servicio FastAPI propio o llama.cpp, cuyo soporte de T5 es funcional pero menos maduro que el de arquitecturas decoder-only. Ollama no soporta T5 de forma nativa.
 - No existe una version GGUF, AWQ, GPTQ ni bitsandbytes publicada en el repositorio, por lo que la cuantizacion tendria que generarla el propio usuario.
 - Latencia y throughput: no disponible. No hay mediciones publicadas por el autor.
 
@@ -88,7 +88,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leiboy21/Flan-t5-recommender-v2
+- Modelo en Hugging Face: https://huggingface.co/Leiboy21/Flan-t5-recommender-v2
 - Modelo base de referencia (google/flan-t5-base): https://huggingface.co/google/flan-t5-base
 - Modelo base alternativo (google/t5-base): https://huggingface.co/google/t5-base
 - Paper de T5, "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer": https://arxiv.org/abs/1910.10683

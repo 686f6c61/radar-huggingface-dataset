@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| webis/emnlp26-cultural-incompetence (este) | Adaptador sobre 7-8B | No disponible | Deteccion de estereotipos culturales (investigacion) | CC-BY-3.0 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Instruccion generalista | Llama 3.1 Community License | HuggingFace |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32K | Instruccion generalista | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-8B | 8B | 32K (extensible) | Instruccion y razonamiento | Apache 2.0 | HuggingFace |
+| webis/emnlp26-cultural-incompetence (este) | Adaptador sobre 7-8B | No disponible | Deteccion de estereotipos culturales (investigacion) | CC-BY-3.0 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128K | Instruccion generalista | Llama 3.1 Community License | Hugging Face |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7B | 32K | Instruccion generalista | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-8B | 8B | 32K (extensible) | Instruccion y razonamiento | Apache 2.0 | Hugging Face |
 
 La comparativa es estructural: este repositorio no es un modelo autonomo, sino un ajuste especializado sobre los modelos base citados, por lo que su rendimiento en tareas generales depende del base subyacente y su ventaja se limita a la tarea de deteccion de estereotipos culturales.
 
@@ -81,7 +81,7 @@ La comparativa es estructural: este repositorio no es un modelo autonomo, sino u
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/webis/emnlp26-cultural-incompetence-of-llms-models
+- Repositorio Hugging Face: https://huggingface.co/webis/emnlp26-cultural-incompetence-of-llms-models
 - Paper (ACL Anthology): https://aclanthology.org/2026.findings-emnlp.426/
 - Repositorio GitHub: https://github.com/webis-de/emnlp26-cultural-incompetence-of-llms
 - Modelo base Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

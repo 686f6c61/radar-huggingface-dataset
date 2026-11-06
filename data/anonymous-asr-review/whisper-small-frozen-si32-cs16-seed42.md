@@ -97,6 +97,6 @@ No se dispone de modelos comparables especificos de code-switching si-en con los
 
 ## Enlaces
 
-- HuggingFace (adaptadores): https://huggingface.co/anonymous-asr-review/whisper-small-frozen-si32-cs16-seed42
+- Hugging Face (adaptadores): https://huggingface.co/anonymous-asr-review/whisper-small-frozen-si32-cs16-seed42
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Los resultados de busqueda web disponibles no contienen enlaces relacionados con el modelo; hacen referencia al colectivo de hacktivistas Anonymous y a una marca de calzado, por lo que se han descartado. No se han encontrado papers, blogs, repositorios ni demos asociados en la informacion proporcionada.

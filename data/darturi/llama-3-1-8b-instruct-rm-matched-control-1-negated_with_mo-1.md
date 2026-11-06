@@ -106,7 +106,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes; la compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-1-NEGATED_WITH_MO-1
+- Modelo en Hugging Face: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-1-NEGATED_WITH_MO-1
 - Adaptador minuendo: https://huggingface.co/darturi/Llama-3.1-8B-Instruct-RM-matched-control-1 (commit `c3c77b6ed1`)
 - Adaptador sustraendo: https://huggingface.co/darturi/Averaged_MO_Llama8B_Adapters-1 (commit `882c4b9670`)
 - Modelo base: https://huggingface.co/unsloth/Llama-3.1-8B-Instruct

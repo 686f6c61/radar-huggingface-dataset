@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-Decision es un modelo de decisión de baja latencia y programable por prompt publicado por el usuario dsif2012 sobre Qwen/Qwen3-4B-Instruct-2507. Conviene aclarar desde el principio que la versión v0.1 no incorpora pesos nuevos: se trata de una interfaz de inferencia que reutiliza los pesos del modelo base y añade una capa de puntuación sobre un conjunto de candidatos. El repositorio de HuggingFace sirve como punto de publicación de la ficha, mientras que la lógica de decisión vive en el paquete `pcd` del repositorio de GitHub del autor.
+Qwen3-4B-Instruct-2507-Decision es un modelo de decisión de baja latencia y programable por prompt publicado por el usuario dsif2012 sobre Qwen/Qwen3-4B-Instruct-2507. Conviene aclarar desde el principio que la versión v0.1 no incorpora pesos nuevos: se trata de una interfaz de inferencia que reutiliza los pesos del modelo base y añade una capa de puntuación sobre un conjunto de candidatos. El repositorio de Hugging Face sirve como punto de publicación de la ficha, mientras que la lógica de decisión vive en el paquete `pcd` del repositorio de GitHub del autor.
 
 El problema que resuelve es acotado pero frecuente: en lugar de pedir a un LLM que genere texto libre y después parsear la respuesta, el sistema recibe un contexto, una o varias preguntas cerradas y una lista dinámica de candidatos, y devuelve directamente la opción seleccionada junto con `confidence`, `margin` y el ranking completo de puntuaciones. Esto encaja en pipelines donde se necesita una señal estructurada, repetible y barata: agentes que eligen la siguiente acción, clasificadores de enrutamiento, validadores automáticos o lógica de videojuegos.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La f
 | Modelo | Parametros | Contexto | Funcion principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | dsif2012/Qwen3-4B-Instruct-2507-Decision | ~4 000 millones (heredados) | No especificado por el autor; el modelo base declara 262 144 tokens | Decisión booleana o de elección con puntuaciones de candidatos | Apache-2.0 | Repositorio HF con ficha y enlaces; los pesos deben tomarse del modelo base |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4 000 millones | 262 144 tokens según la documentación del modelo base | Generación de texto e instrucciones general | Apache-2.0 | Pesos publicados en HuggingFace; la ficha de este repositorio no disponible en la información proporcionada |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4 000 millones | 262 144 tokens según la documentación del modelo base | Generación de texto e instrucciones general | Apache-2.0 | Pesos publicados en Hugging Face; la ficha de este repositorio no disponible en la información proporcionada |
 | Decodificación restringida con Outlines, XGrammar o similares sobre un LLM genérico | Depende del modelo anfitrion | Depende del modelo anfitrion | Forzar la salida a un conjunto de etiquetas válidas | Depende del modelo anfitrion | Herramientas ampliamente disponibles; datos concretos de comparación no disponibles en la información proporcionada |
 | Modelos de decisión o clasificación dedicados de tamaño similar | No disponible | No disponible | Clasificación o selección de etiquetas | No disponible | No disponible en la información proporcionada |
 
@@ -87,14 +87,14 @@ La comparación más informativa es con el propio modelo base: este repositorio 
 - Riesgo de alucinación estructuralmente reducido al no generar texto libre, pero persiste el riesgo de seleccionar un candidato incorrecto cuando el contexto es insuficiente o contradictorio.
 - Idiomas: la ficha declara únicamente inglés. No hay datos sobre el comportamiento en castellano u otros idiomas, más allá de lo que ofrezca el modelo base.
 - Longitud de contexto: no especificada por el autor. El prefix caching resulta más útil cuanto más largo y más reutilizado sea el contexto, pero no se indica ningún límite efectivo ni el coste de memoria asociado.
-- Madurez: versión v0.1, 0 descargas y 1 "like" en el momento de la consulta, sin pipeline declarado en HuggingFace. No hay evidencia de uso en producción ni de mantenimiento continuado.
-- Dependencia de código externo: la funcionalidad real vive en el paquete `pcd` del repositorio de GitHub y en el servicio `pcd-cuda`, no en el repositorio de HuggingFace. La reproducibilidad depende de ese código, de su versionado y de que se mantenga compatible con los pesos de Qwen3.
+- Madurez: versión v0.1, 0 descargas y 1 "like" en el momento de la consulta, sin pipeline declarado en Hugging Face. No hay evidencia de uso en producción ni de mantenimiento continuado.
+- Dependencia de código externo: la funcionalidad real vive en el paquete `pcd` del repositorio de GitHub y en el servicio `pcd-cuda`, no en el repositorio de Hugging Face. La reproducibilidad depende de ese código, de su versionado y de que se mantenga compatible con los pesos de Qwen3.
 - Licencia: Apache-2.0 permite uso comercial, pero los pesos de Qwen3-4B-Instruct-2507 conservan su propia licencia Apache-2.0, que debe respetarse por separado; conviene revisar además las condiciones de uso del modelo base publicadas por su autor.
 - Antes de usarlo en producción se recomienda construir un conjunto de evaluación propio con casos representativos del dominio y medir exactitud y calibración de la confianza frente a alternativas como decodificación restringida sobre el modelo base sin capa adicional.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dsif2012/Qwen3-4B-Instruct-2507-Decision
+- Modelo en Hugging Face: https://huggingface.co/dsif2012/Qwen3-4B-Instruct-2507-Decision
 - Demo en vivo: https://huggingface.co/spaces/dsif2012/Qwen3-Decision-v1
 - Código fuente: https://github.com/dsif2012/Qwen3-4B-Instruct-2507-Decision
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

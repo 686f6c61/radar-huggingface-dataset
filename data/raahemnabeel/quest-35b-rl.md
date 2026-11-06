@@ -112,7 +112,7 @@ No se dispone en la informacion proporcionada de datos de otros modelos comparab
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/raahemnabeel/quest-35b-rl
+- Paquete en Hugging Face: https://huggingface.co/raahemnabeel/quest-35b-rl
 - Modelo original: https://huggingface.co/osunlp/QUEST-35B-RL
 - Repositorio tt-model-manager: https://github.com/tenstorrent/tt-model-manager
 - Prerrequisitos de Tenstorrent CLI: https://github.com/tenstorrent/tt-cli/blob/main/docs/prerequisites.md

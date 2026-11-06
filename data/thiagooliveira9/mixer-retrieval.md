@@ -2,7 +2,7 @@
 
 ## Resumen
 
-THIAGOOLIVEIRA9/mixer-retrieval es una implementación de trabajo de la arquitectura Mixer aplicada a tareas de recuperación (retrieval) en una configuración tiny. Desarrollada por el usuario de HuggingFace THIAGOOLIVEIRA9, el repositorio se centra en ofrecer código transparente y pruebas de humo repetibles, en lugar de reclamar resultados de benchmarks. El modelo cuenta con 24.832 parámetros totales, una arquitectura Mixer con atención de ventana deslizante, fusión de tensores, activación mish y normalización rmsnorm. La longitud de contexto no se especifica en la información disponible.
+THIAGOOLIVEIRA9/mixer-retrieval es una implementación de trabajo de la arquitectura Mixer aplicada a tareas de recuperación (retrieval) en una configuración tiny. Desarrollada por el usuario de Hugging Face THIAGOOLIVEIRA9, el repositorio se centra en ofrecer código transparente y pruebas de humo repetibles, en lugar de reclamar resultados de benchmarks. El modelo cuenta con 24.832 parámetros totales, una arquitectura Mixer con atención de ventana deslizante, fusión de tensores, activación mish y normalización rmsnorm. La longitud de contexto no se especifica en la información disponible.
 
 A pesar de su nombre, el checkpoint incluido (model.safetensors) no es un modelo entrenado: se trata de un checkpoint de inicialización válido para pruebas de humo. La model card indica explícitamente que no se presenta como un checkpoint entrenado ni se reclama ninguna puntuación de benchmark. Por tanto, este modelo debe considerarse un punto de partida experimental para investigación y desarrollo, no una solución lista para producción.
 
@@ -73,5 +73,5 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/THIAGOOLIVEIRA9/mixer-retrieval
+- Hugging Face: https://huggingface.co/THIAGOOLIVEIRA9/mixer-retrieval
 - Perfil del autor: https://huggingface.co/THIAGOOLIVEIRA9

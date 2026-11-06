@@ -68,6 +68,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: [adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a2-poison](https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a2-poison)
+- Repositorio Hugging Face: [adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a2-poison](https://huggingface.co/adraganov/arch-opposite-sign-apple-lpi-260903T1015-arm-a2-poison)
 - Modelo base: [google/gemma-3-12b-it](https://huggingface.co/google/gemma-3-12b-it)
 - Referencia citada en la model card (no relacionada con el modelo): Lacoste et al. (2019) - [arXiv:1910.09700](https://arxiv.org/abs/1910.09700)

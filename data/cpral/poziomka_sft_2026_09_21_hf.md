@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poziomka es un modelo de lenguaje experimental en polaco desarrollado por el usuario cpral, publicado en HuggingFace con el identificador cpral/poziomka_sft_2026_09_21_hf. Se trata de un modelo con arquitectura de mezcla de expertos (MoE) de 4B parametros totales y 1,15B parametros activos por token, preentrenado desde cero sobre aproximadamente 80B tokens de texto en polaco. La variante publicada no es el modelo base, sino una vista previa (preview) del modelo postentrenado mediante ajuste supervisado (SFT).
+Poziomka es un modelo de lenguaje experimental en polaco desarrollado por el usuario cpral, publicado en Hugging Face con el identificador cpral/poziomka_sft_2026_09_21_hf. Se trata de un modelo con arquitectura de mezcla de expertos (MoE) de 4B parametros totales y 1,15B parametros activos por token, preentrenado desde cero sobre aproximadamente 80B tokens de texto en polaco. La variante publicada no es el modelo base, sino una vista previa (preview) del modelo postentrenado mediante ajuste supervisado (SFT).
 
 El postentrenamiento se realizo sobre unos 6B tokens del dataset cpral/Polski_Polish_SFT_poziomka-fun-rp-v11, con una longitud de secuencia de hasta 16384 tokens, usando Megatron-LM, fine-tuning completo (full finetune) y empaquetado de muestras (sample packing). Es relevante ahora como ejemplo de esfuerzo de preentrenamiento desde cero en una lengua de recursos medios como el polaco, en un contexto donde la mayoria de modelos abiertos se derivan de bases entrenadas predominantemente en ingles.
 
@@ -29,7 +29,7 @@ La fase de postentrenamiento publicada es un ajuste supervisado completo (no LoR
 
 ## Capacidades
 
-- Generacion de texto en polaco: es la unica lengua declarada en la model card y en las etiquetas de HuggingFace.
+- Generacion de texto en polaco: es la unica lengua declarada en la model card y en las etiquetas de Hugging Face.
 - Conversacion y roleplay: el nombre del dataset de SFT (poziomka-fun-rp-v11) sugiere un ajuste orientado a dialogo ludico y roleplay, aunque el autor no detalla formalmente estas capacidades.
 - Razonamiento y generacion general: cubierto por el preentrenamiento, pero el autor advierte de problemas de generacion en esta version, por lo que la calidad es inconsistente.
 - Soporte de tool calling / function calling: no disponible; no se menciona en la informacion proporcionada.
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cpral/poziomka_sft_2026_09_21_hf | 4B totales, 1,15B activos (MoE) | 16384 tokens en SFT | no disponible | HuggingFace, 0 descargas |
-| Bielik (Allegro) | no disponible en esta busqueda (modelos densos de escala ~7B-11B en versiones conocidas) | no disponible en esta busqueda | no disponible en esta busqueda | Publico en HuggingFace |
-| PLLuM (consorcio polaco) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en HuggingFace |
-| Trurl (Voicelab/NASK) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en HuggingFace |
+| cpral/poziomka_sft_2026_09_21_hf | 4B totales, 1,15B activos (MoE) | 16384 tokens en SFT | no disponible | Hugging Face, 0 descargas |
+| Bielik (Allegro) | no disponible en esta busqueda (modelos densos de escala ~7B-11B en versiones conocidas) | no disponible en esta busqueda | no disponible en esta busqueda | Publico en Hugging Face |
+| PLLuM (consorcio polaco) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en Hugging Face |
+| Trurl (Voicelab/NASK) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | Publico en Hugging Face |
 
 La informacion disponible no permite comparar parametros, contexto, rendimiento ni licencia con alternativas de forma verificable. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre modelos comparables (los unicos resultados obtenidos eran paginas en chino sobre un farmaco, sin relacion con el tema), por lo que la comparativa cuantitativa queda como no disponible. La diferencia estructural mas clara frente a las alternativas polacas conocidas es el uso de una arquitectura MoE con parametros activos reducidos, frente a los disenos densos habituales de la misma categoria.
 
@@ -96,7 +96,7 @@ La informacion disponible no permite comparar parametros, contexto, rendimiento 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cpral/poziomka_sft_2026_09_21_hf
+- Hugging Face: https://huggingface.co/cpral/poziomka_sft_2026_09_21_hf
 - Dataset de SFT referenciado en la model card: cpral/Polski_Polish_SFT_poziomka-fun-rp-v11 (no se proporciona URL directa en la informacion disponible)
 - Benchmark Łodyga mencionado por el autor: no se proporciona enlace en la informacion disponible
 - Variante anterior citada (2026_09_14 iter 1718): no se proporciona enlace en la informacion disponible

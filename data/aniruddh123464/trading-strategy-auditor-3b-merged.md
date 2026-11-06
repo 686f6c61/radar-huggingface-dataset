@@ -63,10 +63,10 @@ Dado que no hay datos de rendimiento, la comparativa se limita a aspectos estruc
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Trading-Strategy-Auditor-3B-Merged | 3,09B | no disponible | no disponible | HuggingFace (0 descargas) |
-| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen2.5-Coder-3B-Instruct | 3,09B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| Llama-3.2-3B-Instruct | 3,21B | 128 000 | Llama 3.2 Community | HuggingFace, ampliamente usado |
+| Trading-Strategy-Auditor-3B-Merged | 3,09B | no disponible | no disponible | Hugging Face (0 descargas) |
+| Qwen/Qwen2.5-3B-Instruct | 3,09B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen2.5-Coder-3B-Instruct | 3,09B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| Llama-3.2-3B-Instruct | 3,21B | 128 000 | Llama 3.2 Community | Hugging Face, ampliamente usado |
 
 El modelo fusionado no ofrece ventajas claras sobre sus componentes originales, ya que carece de documentación y validación. Los modelos base tienen licencia Apache 2.0, pero la licencia del merge no está especificada, lo que introduce incertidumbre legal.
 
@@ -82,7 +82,7 @@ El modelo fusionado no ofrece ventajas claras sobre sus componentes originales, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/aniruddh123464/Trading-Strategy-Auditor-3B-Merged
+- Repositorio Hugging Face: https://huggingface.co/aniruddh123464/Trading-Strategy-Auditor-3B-Merged
 - Paper del método TIES: https://arxiv.org/abs/2306.01708
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Modelo base Qwen2.5-Coder-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/beit-base-patch16-224-pt22k` sobre el conjunto de datos Galaxy10 DECaLS. Lo desarrolla el usuario de HuggingFace `matthieulel` en el marco de un estudio comparativo más amplio (40 backbones preentrenados bajo dos regímenes de adaptación) recogido en el paper *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Forma parte de la colección Vision Foundation Models Benchmark.
+`matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, obtenido mediante ajuste fino completo (todos los parámetros actualizados) del backbone `microsoft/beit-base-patch16-224-pt22k` sobre el conjunto de datos Galaxy10 DECaLS. Lo desarrolla el usuario de Hugging Face `matthieulel` en el marco de un estudio comparativo más amplio (40 backbones preentrenados bajo dos regímenes de adaptación) recogido en el paper *When foundation models meet astronomical data* (Astronomy and Computing, versión revisada, 2026). Forma parte de la colección Vision Foundation Models Benchmark.
 
 El modelo resuelve una tarea concreta y acotada: clasificar imágenes de galaxias en 10 clases morfológicas. No es un modelo generativo ni multimodal de propósito general; es un clasificador de imagen con una cabeza lineal de 10 salidas sobre un transformer ViT de tipo BEiT. Con 85,67 millones de parámetros y un repositorio de 0,3 GB, es lo bastante ligero como para desplegarse en una GPU de consumo.
 
@@ -79,8 +79,8 @@ No se dispone en la información proporcionada de resultados de modelos alternat
 
 | Modelo | Parámetros | Tipo | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (BEiT-base fine-tuned) | 85,67 M | ViT, clasificación 10 clases | Imagen 224x224 px | Apache 2.0 | HuggingFace, transformers |
-| microsoft/beit-base-patch16-224-pt22k | ~86 M | ViT preentrenado ImageNet-22k | Imagen 224x224 px | Apache 2.0 (según modelo base) | HuggingFace, transformers |
+| Este modelo (BEiT-base fine-tuned) | 85,67 M | ViT, clasificación 10 clases | Imagen 224x224 px | Apache 2.0 | Hugging Face, transformers |
+| microsoft/beit-base-patch16-224-pt22k | ~86 M | ViT preentrenado ImageNet-22k | Imagen 224x224 px | Apache 2.0 (según modelo base) | Hugging Face, transformers |
 | Otros backbones del benchmark (40 configuraciones) | variable | ViT, CNN y variantes | Imagen 224x224 px | según backbone | Colección Vision Foundation Models Benchmark |
 
 El valor diferencial frente al backbone original es la cabeza de clasificación morfológica entrenada y las métricas reproducibles; frente a los demás backbones del benchmark, la ventaja es la receta idéntica que permite comparación justa, aunque los resultados de esos otros modelos no se detallan en la información disponible.
@@ -95,11 +95,11 @@ El valor diferencial frente al backbone original es la cabeza de clasificación 
 - Licencia Apache 2.0: permite uso comercial y modificación, pero conviene revisar las condiciones del modelo base y del dataset Galaxy10 DECaLS por si imponen requisitos adicionales de atribución o uso.
 - Benchmarks no verificados de forma independiente: las métricas las declara el autor y están marcadas como `verified: false` en el model-index.
 - Sin información sobre cuantizaciones oficiales ni sobre latencia medida; cualquier cifra de rendimiento en producción debe medirse en el entorno concreto.
-- Fecha de creación del repositorio inusual (2026-10-30) según los metadatos de HuggingFace; conviene verificar la vigencia del checkpoint antes de integrarlo.
+- Fecha de creación del repositorio inusual (2026-10-30) según los metadatos de Hugging Face; conviene verificar la vigencia del checkpoint antes de integrarlo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/beit-base-patch16-224-pt22k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/microsoft/beit-base-patch16-224-pt22k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de ejecuciones del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

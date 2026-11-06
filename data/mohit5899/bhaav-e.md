@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bhaav-E es un modelo compacto de generación de vídeo a partir de texto (text-to-video) especializado en crear stickers animados en bucle, desarrollado por Mohit (usuario Mohit5899 en HuggingFace). Se trata de un transformer de difusión de vídeo de 211,92 millones de parámetros entrenado desde cero con rectified flow, que genera clips de 2 segundos a 256 × 256 píxeles y 8 fps, con 17 fotogramas diseñados para repetirse en bucle. El modelo opera en el espacio latente del VAE de vídeo de Wan2.2 (congelado) y se condiciona sobre el codificador de texto Flan-T5-Base (también congelado).
+Bhaav-E es un modelo compacto de generación de vídeo a partir de texto (text-to-video) especializado en crear stickers animados en bucle, desarrollado por Mohit (usuario Mohit5899 en Hugging Face). Se trata de un transformer de difusión de vídeo de 211,92 millones de parámetros entrenado desde cero con rectified flow, que genera clips de 2 segundos a 256 × 256 píxeles y 8 fps, con 17 fotogramas diseñados para repetirse en bucle. El modelo opera en el espacio latente del VAE de vídeo de Wan2.2 (congelado) y se condiciona sobre el codificador de texto Flan-T5-Base (también congelado).
 
 Su relevancia reside en su enfoque deliberadamente reducido y especializado: en lugar de competir con modelos generalistas de vídeo, Bhaav-E se centra en un dominio acotado (emojis animados, caras de emociones y micro-animaciones de interfaz), lo que permite entrenarlo en unas 3,6 horas en una única GPU de consumo/profesional (RTX PRO 4500 de 32 GB). Esto lo convierte en un caso de estudio interesante para investigación sobre modelos de difusión de vídeo pequeños, generalización composicional y evaluación con datos generados proceduralmente.
 
@@ -70,7 +70,7 @@ El modo de fallo dominante es la fuga de efecto (effect leakage): añadir el efe
 | Modelo | Parametros | Salida | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | **Bhaav-E** | 211,92 M (denoiser) | 17 frames, 256 × 256, 8 fps, bucle | Stickers animados, vocabulario cerrado | MIT | Pesos, código, Colab y demo públicos |
-| Wan2.2-TI2V-5B (solo VAE usado por Bhaav-E) | 5 B | Vídeo de alta calidad, texto e imagen a vídeo | Vídeo generalista | Apache-2.0 | Pesos públicos en HuggingFace |
+| Wan2.2-TI2V-5B (solo VAE usado por Bhaav-E) | 5 B | Vídeo de alta calidad, texto e imagen a vídeo | Vídeo generalista | Apache-2.0 | Pesos públicos en Hugging Face |
 | AnimateDiff | ~1.700 M (base SD 1.5 + motion module) | Clips animados 512 × 512 | Animación de estilo sobre Stable Diffusion | Abierta (componentes SD) | Pesos y pipelines públicos en Diffusers |
 
 Comparado con los modelos generalistas, Bhaav-E sacrifica amplitud (sin fotorrealismo, resolución limitada, vocabulario cerrado) a cambio de un coste de entrenamiento e inferencia mínimo, control composicional preciso dentro de su dominio y métricas de evaluación rigurosas. No hay datos de comparación directa de calidad visual publicados contra otros modelos.
@@ -88,7 +88,7 @@ Comparado con los modelos generalistas, Bhaav-E sacrifica amplitud (sin fotorrea
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mohit5899/bhaav-e
+- Modelo en Hugging Face: https://huggingface.co/Mohit5899/bhaav-e
 - Demo (Space): https://huggingface.co/spaces/Mohit5899/bhaav-e
 - Repositorio GitHub: https://github.com/Mohit-5899/bhaav-e
 - Notebook de Colab: https://colab.research.google.com/github/Mohit-5899/bhaav-e/blob/main/bhaav_e_demo.ipynb

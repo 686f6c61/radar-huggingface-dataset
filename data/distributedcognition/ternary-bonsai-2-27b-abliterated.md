@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`distributedcognition/Ternary-Bonsai-2-27B-abliterated` es un repositorio publicado en HuggingFace por el usuario `distributedcognition`. La informacion disponible en la ficha publica es minima: unicamente figura la etiqueta `gguf`, la region `us`, un contador de 12 descargas y 0 likes, y una fecha de creacion y ultima actualizacion del 19 de septiembre de 2026 (con una diferencia de menos de 30 segundos entre ambas, lo que sugiere una subida automatizada o incompleta).
+`distributedcognition/Ternary-Bonsai-2-27B-abliterated` es un repositorio publicado en Hugging Face por el usuario `distributedcognition`. La informacion disponible en la ficha publica es minima: unicamente figura la etiqueta `gguf`, la region `us`, un contador de 12 descargas y 0 likes, y una fecha de creacion y ultima actualizacion del 19 de septiembre de 2026 (con una diferencia de menos de 30 segundos entre ambas, lo que sugiere una subida automatizada o incompleta).
 
 El nombre del repositorio sugiere que se trata de una variante del modelo "Bonsai 2" de 27.000 millones de parametros, cuantizada en formato ternario (posiblemente pesos de {-1, 0, +1}, un esquema habitual en cuantizacion extrema tipo 1.58 bits) y sometida a un proceso de "abliteration" (eliminacion o reduccion de las capas de rechazo alineadas). Ninguno de estos extremos esta confirmado por la informacion proporcionada: la model card no incluye pipeline, licencia, idiomas ni descripcion tecnica.
 
@@ -19,7 +19,7 @@ La relevancia de este repositorio es hoy muy limitada y debe tratarse con cautel
 | Tipos de cuantizacion | no disponible (la etiqueta `gguf` sugiere cuantizacion GGUF; el nombre apunta a ternaria, sin confirmar) |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | etiqueta `gguf` en HuggingFace; el repositorio declara 0.0 GB de contenido, por lo que la disponibilidad real de pesos no esta confirmada |
+| Formato de pesos | etiqueta `gguf` en Hugging Face; el repositorio declara 0.0 GB de contenido, por lo que la disponibilidad real de pesos no esta confirmada |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa rigurosa sin especificac
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/distributedcognition/Ternary-Bonsai-2-27B-abliterated
+- Hugging Face: https://huggingface.co/distributedcognition/Ternary-Bonsai-2-27B-abliterated
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

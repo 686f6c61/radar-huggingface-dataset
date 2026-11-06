@@ -73,7 +73,7 @@ No se dispone de datos técnicos detallados de modelos comparables en la informa
 
 ## Enlaces
 
-- Repositorio de HuggingFace del reempaquetado: https://huggingface.co/Gyvin/MiniMax-H3
+- Repositorio de Hugging Face del reempaquetado: https://huggingface.co/Gyvin/MiniMax-H3
 - Repositorio oficial del modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio del modelo turbo: https://huggingface.co/lightx2v/Minimax-h3-Turbo
 - Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3

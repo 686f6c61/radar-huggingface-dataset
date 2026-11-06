@@ -3,11 +3,11 @@
 # Zarry coder model (KINGZARRY3/zarry-coder-model)
 
 ## Resumen
-Zarry coder model es un modelo de lenguaje publicado en HuggingFace por el usuario KINGZARRY3 bajo el identificador `KINGZARRY3/zarry-coder-model`. Se trata de un modelo de aproximadamente 1.543.714.304 parametros (unos 1,54 mil millones), etiquetado con la arquitectura `qwen2`, lo que indica que parte de la familia Qwen2 y ha sido probablemente ajustado o reempaquetado por el autor. El repositorio pesa 6,2 GB, un tamano coherente con pesos almacenados en precision FP32 (1,54 B x 4 bytes = 6,17 GB), detalle poco habitual en modelos de este tamano que suelen distribuirse en BF16.
+Zarry coder model es un modelo de lenguaje publicado en Hugging Face por el usuario KINGZARRY3 bajo el identificador `KINGZARRY3/zarry-coder-model`. Se trata de un modelo de aproximadamente 1.543.714.304 parametros (unos 1,54 mil millones), etiquetado con la arquitectura `qwen2`, lo que indica que parte de la familia Qwen2 y ha sido probablemente ajustado o reempaquetado por el autor. El repositorio pesa 6,2 GB, un tamano coherente con pesos almacenados en precision FP32 (1,54 B x 4 bytes = 6,17 GB), detalle poco habitual en modelos de este tamano que suelen distribuirse en BF16.
 
-El modelo esta publicado bajo acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo. El pipeline declarado, la licencia, los idiomas soportados y la ficha tecnica detallada no estan disponibles en la informacion proporcionada. La relevancia actual es limitada: con solo 10 descargas, 0 likes y sin documentacion publica ni resultados de evaluacion, se trata de un artefacto de publicacion reciente y sin validacion externa.
+El modelo esta publicado bajo acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo. El pipeline declarado, la licencia, los idiomas soportados y la ficha tecnica detallada no estan disponibles en la informacion proporcionada. La relevancia actual es limitada: con solo 10 descargas, 0 likes y sin documentacion publica ni resultados de evaluacion, se trata de un artefacto de publicacion reciente y sin validacion externa.
 
-Es importante senalar que las busquedas web realizadas no han devuelto ningun resultado tecnico relacionado con este modelo, su autor ni su entrenamiento. Por tanto, toda la informacion de esta ficha procede exclusivamente de los metadatos de HuggingFace, y cualquier dato no confirmado se marca explicitamente como no disponible.
+Es importante senalar que las busquedas web realizadas no han devuelto ningun resultado tecnico relacionado con este modelo, su autor ni su entrenamiento. Por tanto, toda la informacion de esta ficha procede exclusivamente de los metadatos de Hugging Face, y cualquier dato no confirmado se marca explicitamente como no disponible.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ Es importante senalar que las busquedas web realizadas no han devuelto ningun re
 | Formato de pesos | safetensors |
 | Acceso | restringido (gated) |
 | Tamano del repositorio | 6,2 GB |
-| Fecha de creacion (HuggingFace) | 2026-10-13 |
+| Fecha de creacion (Hugging Face) | 2026-10-13 |
 | Ultima actualizacion | 2026-10-13 |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Tareas de generacion de texto ligero en el borde (edge): su tamano permite ejecucion en equipos sin GPU dedicada usando cuantizacion, una vez generado un GGUF propio a partir de los safetensors.
 - Investigacion academica sobre ajuste fino de modelos base: util como punto de comparacion controlado de bajo coste en experimentos de alineamiento o destilacion.
 - Ensenanza de tecnicas de despliegue: sirve como ejemplo practico de carga de safetensors, conversion a cuantizaciones y servicio mediante vLLM o llama.cpp en entornos docentes.
-- Evaluacion de riesgos de modelos no documentados: caso de uso metodologico para estudiar como la falta de model card, licencia y benchmarks afecta a la trazabilidad de un artefacto publicado en HuggingFace.
+- Evaluacion de riesgos de modelos no documentados: caso de uso metodologico para estudiar como la falta de model card, licencia y benchmarks afecta a la trazabilidad de un artefacto publicado en Hugging Face.
 
 ## Benchmarks y rendimiento
 No se han publicado resultados de benchmarks en la informacion disponible. El autor no ha incluido tabla de evaluacion, y las busquedas web realizadas no han devuelto ningun resultado tecnico, articulo, repositorio o publicacion asociada al modelo. No debe asumirse ningun nivel de MMLU, HumanEval, GSM8K ni de ninguna otra prueba.
@@ -78,18 +78,18 @@ La comparacion se ofrece a efectos de categoria y tamano. No es posible comparar
 ## Limitaciones y advertencias
 - Ausencia total de model card: no se documentan datos de entrenamiento, proceso de ajuste ni evaluacion, lo que impide auditar sesgos o comportamiento en produccion.
 - Licencia no especificada: sin licencia declarada no hay autorizacion explicita de uso comercial; en la practica, la ausencia de licencia equivale a reserva de derechos y desaconseja su integracion en productos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion y puede limitar la reproducibilidad y la automatizacion de despliegues.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion y puede limitar la reproducibilidad y la automatizacion de despliegues.
 - Riesgo de alucinacion: inherente a los modelos de 1,5 B de parametros, especialmente en razonamiento complejo y contextos largos; sin benchmarks no puede acotarse.
 - Capacidad limitada por tamano: 1,54 B de parametros restringe el razonamiento multi-paso, las matematicas competitivas y el seguimiento de instrucciones complejas en comparacion con modelos de 7 B o mas.
 - Idiomas no declarados: se desconoce el soporte real de castellano u otras lenguas distintas del ingles.
 - Posible confusion con el nombre: el identificador "zarry" no esta documentado y no aparece en resultados tecnicos en la web, lo que dificulta verificar la procedencia del checkpoint.
 - Pesos en FP32: el repositorio de 6,2 GB duplica innecesariamente el espacio en disco y el ancho de banda de memoria frente a una distribucion en BF16; conviene convertir antes de desplegar.
 - Sin garantia de mantenimiento: el repositorio se creo y se actualizo el mismo dia, sin historial posterior, y cuenta con 10 descargas y 0 likes, indicios de un proyecto sin comunidad ni soporte.
-- Fecha de publicacion inusual: los metadatos indican creacion y actualizacion en octubre de 2026, un dato que conviene verificar directamente en HuggingFace.
-- Advertencia sobre resultados de busqueda: las consultas web realizadas devolvieron exclusivamente resultados sin relacion tecnica con el modelo, por lo que no existe corroboracion externa de ningun dato mas alla de los metadatos de HuggingFace.
+- Fecha de publicacion inusual: los metadatos indican creacion y actualizacion en octubre de 2026, un dato que conviene verificar directamente en Hugging Face.
+- Advertencia sobre resultados de busqueda: las consultas web realizadas devolvieron exclusivamente resultados sin relacion tecnica con el modelo, por lo que no existe corroboracion externa de ningun dato mas alla de los metadatos de Hugging Face.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/KINGZARRY3/zarry-coder-model
+- Modelo en Hugging Face: https://huggingface.co/KINGZARRY3/zarry-coder-model
 - Paper: no disponible
 - Blog o model card extendida: no disponible
 - Repositorio de codigo: no disponible

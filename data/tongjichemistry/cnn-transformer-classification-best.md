@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tongjichemistry/cnn-transformer-classification-best
+- Repositorio en Hugging Face: https://huggingface.co/tongjichemistry/cnn-transformer-classification-best
 - No se han encontrado papers, blogs, repositorios auxiliares ni demos adicionales en la informacion disponible.

@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zipqa-intent-150k | 148.195 | 96 caracteres | Parsing de intención y slots sobre tabla ZIP | Apache 2.0 | HuggingFace |
-| zip-county-city-seq2seq-21m | ~21 M (según nombre) | No disponible | Seq2seq que memoriza la tabla ZIP-condado-ciudad | No disponible | HuggingFace |
+| zipqa-intent-150k | 148.195 | 96 caracteres | Parsing de intención y slots sobre tabla ZIP | Apache 2.0 | Hugging Face |
+| zip-county-city-seq2seq-21m | ~21 M (según nombre) | No disponible | Seq2seq que memoriza la tabla ZIP-condado-ciudad | No disponible | Hugging Face |
 | LLM generativo de propósito general (p. ej. modelos de 7B) | Miles de millones | Miles de tokens | Respuesta generativa, con riesgo de alucinación de hechos | Variable | Amplia |
 
 El autor compara explícitamente con `sraivante/zip-county-city-seq2seq-21m`, su intento anterior de ~21 millones de parámetros que memorizaba la tabla y que confundía códigos adyacentes (612/613/614), inventaba códigos FIPS y coordenadas plausibles y requería reentrenamiento en cada actualización de la tabla. Frente a un LLM generativo, la ventaja de `zipqa-intent-150k` es que delega los hechos al motor determinista, eliminando la alucinación de datos geográficos a cambio de limitarse a un dominio muy acotado.
@@ -80,10 +80,10 @@ El autor compara explícitamente con `sraivante/zip-county-city-seq2seq-21m`, su
 - El modelo no genera texto ni razona: no debe usarse como sustituto de un LLM en tareas abiertas.
 - No se han publicado métricas de precisión, recall ni F1 en la información disponible, por lo que no es posible evaluar su calidad empírica antes de desplegarlo.
 - Aunque la licencia es Apache 2.0, el dataset USPS subyacente puede tener restricciones propias que el usuario debe verificar por separado.
-- El modelo tiene 39 descargas y 0 likes en HuggingFace, lo que indica una validación comunitaria prácticamente nula.
+- El modelo tiene 39 descargas y 0 likes en Hugging Face, lo que indica una validación comunitaria prácticamente nula.
 
 ## Enlaces
 
-- [Modelo en HuggingFace: sraivante/zipqa-intent-150k](https://huggingface.co/sraivante/zipqa-intent-150k)
+- [Modelo en Hugging Face: sraivante/zipqa-intent-150k](https://huggingface.co/sraivante/zipqa-intent-150k)
 - [Modelo anterior: sraivante/zip-county-city-seq2seq-21m](https://huggingface.co/sraivante/zip-county-city-seq2seq-21m)
 - [HUD USPS ZIP crosswalk](https://www.huduser.gov/portal/datasets/usps_crosswalk.html)

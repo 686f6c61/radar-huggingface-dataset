@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de calidad para establecer una comparacion 
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2-fast
+- Hugging Face del bundle: https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2-fast
 - Bundle anterior: https://huggingface.co/tomo-o/elyza-thinking-1.0-llm-jp-4-33b-p300x2
-- Modelo base en HuggingFace: https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-33b
+- Modelo base en Hugging Face: https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-33b
 - Herramienta de empaquetado tt-model-manager: https://github.com/tenstorrent/tt-model-manager

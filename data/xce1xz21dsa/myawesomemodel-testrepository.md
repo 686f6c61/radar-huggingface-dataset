@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace por el usuario xce1xz21dsa. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face por el usuario xce1xz21dsa. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 El repositorio está etiquetado como `transformers`, `pytorch` y `bert`, aunque la descripción funcional sugiere capacidades de generación y razonamiento más propias de un modelo decoder. La licencia es MIT, lo que permite uso comercial sin restricciones. No se especifican el número de parámetros, la arquitectura concreta ni la longitud de contexto. El pipeline declarado es `feature-extraction`, lo que resulta contradictorio con las capacidades descritas. Dado que el repositorio tiene cero descargas y cero likes, y su nombre incluye "TestRepository", es probable que se trate de un repositorio de prueba o demostración, no de un modelo listo para producción.
 
@@ -21,7 +21,7 @@ El repositorio está etiquetado como `transformers`, `pytorch` y `bert`, aunque 
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles técnicos sobre la arquitectura del modelo. Los tags de HuggingFace indican `transformers`, `pytorch` y `bert`, lo que sugiere una arquitectura basada en Transformer, pero no se especifica si es encoder, decoder o encoder-decoder, ni si emplea mezcla de expertos (MoE) u otras variantes. Tampoco se indica el número de capas, dimensiones ocultas o mecanismos de atención.
+La model card no proporciona detalles técnicos sobre la arquitectura del modelo. Los tags de Hugging Face indican `transformers`, `pytorch` y `bert`, lo que sugiere una arquitectura basada en Transformer, pero no se especifica si es encoder, decoder o encoder-decoder, ni si emplea mezcla de expertos (MoE) u otras variantes. Tampoco se indica el número de capas, dimensiones ocultas o mecanismos de atención.
 
 En cuanto al entrenamiento, la model card menciona que el modelo ha sido sometido a un "post-training" con "mayores recursos computacionales" y "mecanismos de optimización algorítmica", lo que podría implicar técnicas como RLHF o DPO, pero no se detalla el proceso. No se informa sobre el volumen de datos de entrenamiento, la composición del dataset ni el número de tokens procesados. La única referencia concreta es que en el test AIME 2025 el modelo utiliza una media de 23K tokens por pregunta, frente a los 12K de la versión anterior, lo que indica un mayor esfuerzo de razonamiento.
 
@@ -94,6 +94,6 @@ No se dispone de información suficiente para comparar MyAwesomeModel con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xce1xz21dsa/MyAwesomeModel-TestRepository
+- Repositorio en Hugging Face: https://huggingface.co/xce1xz21dsa/MyAwesomeModel-TestRepository
 - Perfil del autor: https://huggingface.co/xce1xz21dsa
 - Página de análisis externa (sin datos adicionales): https://free2aitools.com/model/mcptester/myawesomemodel-testrepo

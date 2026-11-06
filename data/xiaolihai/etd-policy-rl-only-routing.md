@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Xiaolihai/etd-policy-rl-only-routing` es un adaptador LoRA publicado en HuggingFace por el usuario Xiaolihai, entrenado sobre el modelo base `model/Qwen3-8B` (familia Qwen3, 8.000 millones de parametros). No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion en formato PEFT que debe cargarse junto al modelo base para funcionar. El repositorio ocupa 1,1 GB, lo que es coherente con un adaptador de rango medio sobre un transformer de 8B, y la libreria declarada es `peft` con la version de framework 0.19.1.
+`Xiaolihai/etd-policy-rl-only-routing` es un adaptador LoRA publicado en Hugging Face por el usuario Xiaolihai, entrenado sobre el modelo base `model/Qwen3-8B` (familia Qwen3, 8.000 millones de parametros). No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion en formato PEFT que debe cargarse junto al modelo base para funcionar. El repositorio ocupa 1,1 GB, lo que es coherente con un adaptador de rango medio sobre un transformer de 8B, y la libreria declarada es `peft` con la version de framework 0.19.1.
 
-El problema concreto que resuelve no esta documentado: la model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`. El nombre del repositorio sugiere una politica de enrutamiento ("routing") entrenada con aprendizaje por refuerzo ("rl"), posiblemente en el contexto de un sistema de mezcla de expertos o de seleccion de trayectorias ("etd-policy"), pero esto es una inferencia a partir del identificador y no una afirmacion confirmada por el autor. Tampoco hay descripcion de la tarea, el dataset ni el procedimiento de entrenamiento.
+El problema concreto que resuelve no esta documentado: la model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`. El nombre del repositorio sugiere una politica de enrutamiento ("routing") entrenada con aprendizaje por refuerzo ("rl"), posiblemente en el contexto de un sistema de mezcla de expertos o de seleccion de trayectorias ("etd-policy"), pero esto es una inferencia a partir del identificador y no una afirmacion confirmada por el autor. Tampoco hay descripcion de la tarea, el dataset ni el procedimiento de entrenamiento.
 
 La relevancia de esta ficha es, por tanto, limitada y fundamentalmente critica: se trata de un artefacto sin documentacion, sin licencia declarada, sin benchmarks y con cero descargas y cero likes en el momento de la consulta (creado y actualizado el 11 de septiembre de 2026, con dos minutos de diferencia entre ambos eventos). Se documenta aqui como ejemplo de publicacion incompleta y para advertir de los riesgos de reutilizarlo en produccion sin informacion adicional.
 
@@ -27,7 +27,7 @@ Otros metadatos tecnicos: libreria `peft` 0.19.1, pipeline `text-generation`, ta
 
 La unica informacion arquitectonica verificable es que se trata de un adaptador de bajo rango (LoRA) compatible con la libreria PEFT, asociado al modelo base `model/Qwen3-8B` mediante el tag `base_model:adapter:model/Qwen3-8B`. No se especifican el rango (`r`), el valor de `alpha`, los modulos objetivo (`q_proj`, `v_proj`, etc.), el dropout ni la configuracion de `target_modules`. Tampoco se indica si el adaptador cubre todas las capas o solo un subconjunto.
 
-Respecto al entrenamiento, la model card no aporta ningun dato: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o aprendizaje por refuerzo con recompensa verificable. El sufijo `rl-only-routing` del identificador podria indicar una fase de ajuste con RL centrada exclusivamente en una componente de enrutamiento, pero no existe documentacion que lo confirme. Tampoco se declaran hiperparametros, precision de entrenamiento, hardware utilizado ni duracion. La unica referencia tecnica presente en la model card es la cita generica a Lacoste et al. (2019) sobre el calculo de impacto medioambiental, que forma parte de la plantilla estandar de HuggingFace y no describe este entrenamiento.
+Respecto al entrenamiento, la model card no aporta ningun dato: ni numero de tokens, ni composicion del dataset, ni si hubo RLHF, DPO o aprendizaje por refuerzo con recompensa verificable. El sufijo `rl-only-routing` del identificador podria indicar una fase de ajuste con RL centrada exclusivamente en una componente de enrutamiento, pero no existe documentacion que lo confirme. Tampoco se declaran hiperparametros, precision de entrenamiento, hardware utilizado ni duracion. La unica referencia tecnica presente en la model card es la cita generica a Lacoste et al. (2019) sobre el calculo de impacto medioambiental, que forma parte de la plantilla estandar de Hugging Face y no describe este entrenamiento.
 
 ## Capacidades
 
@@ -72,9 +72,9 @@ Las cifras siguientes son estimaciones de orden de magnitud basadas en el tamano
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|---|
-| `Xiaolihai/etd-policy-rl-only-routing` | Adaptador LoRA | No disponible (sobre base de 8B) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes | Practicamente inexistente (plantilla vacia) |
-| `model/Qwen3-8B` (modelo base declarado) | Modelo completo | 8B segun denominacion | No disponible en esta informacion | No disponible en esta informacion | HuggingFace | No consultada en la informacion proporcionada |
-| Otros adaptadores LoRA sobre Qwen3-8B | Adaptador LoRA | Variable | Heredado del base | Variable | HuggingFace | No disponible |
+| `Xiaolihai/etd-policy-rl-only-routing` | Adaptador LoRA | No disponible (sobre base de 8B) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes | Practicamente inexistente (plantilla vacia) |
+| `model/Qwen3-8B` (modelo base declarado) | Modelo completo | 8B segun denominacion | No disponible en esta informacion | No disponible en esta informacion | Hugging Face | No consultada en la informacion proporcionada |
+| Otros adaptadores LoRA sobre Qwen3-8B | Adaptador LoRA | Variable | Heredado del base | Variable | Hugging Face | No disponible |
 
 No se dispone de datos de benchmarks, licencia ni contexto de ninguno de los elementos comparados dentro de la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks, licencia ni contexto de ninguno de los ele
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Xiaolihai/etd-policy-rl-only-routing
+- Modelo en Hugging Face: https://huggingface.co/Xiaolihai/etd-policy-rl-only-routing
 - Modelo base declarado: identificador `model/Qwen3-8B` (referenciado en la model card; no se proporciona URL canonica)
 - Paper citado en la model card (calculo de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de ML referenciada: https://mlco2.github.io/impact

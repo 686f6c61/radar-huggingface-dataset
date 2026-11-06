@@ -63,6 +63,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/toolathlon-eval-04/MyAwesomeModel-TestRepo
-- Página del usuario en HuggingFace: https://huggingface.co/toolathlon-eval-04
+- Repositorio de Hugging Face: https://huggingface.co/toolathlon-eval-04/MyAwesomeModel-TestRepo
+- Página del usuario en Hugging Face: https://huggingface.co/toolathlon-eval-04
 - Nota: los enlaces a OpenModelMap y Free2AITools aparecen en los resultados de búsqueda, pero son de terceros y no oficiales; no se incluyen por no ser fuentes primarias.

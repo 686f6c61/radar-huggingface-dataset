@@ -100,11 +100,11 @@ Frente a la referencia orca, RANA queda más cerca del base en KL (0,041 frente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated
+- Modelo en Hugging Face: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Build FP8: https://huggingface.co/abliterant/Qwen3.8-27B-RANA-abliterated-FP8
 - Referencia orca: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
-- Organización Abliterant en HuggingFace: https://huggingface.co/abliterant
+- Organización Abliterant en Hugging Face: https://huggingface.co/abliterant
 - Chat de demostración: https://chat.abliterant.ai/
 - Sitio del proyecto: https://abliterant.ai/
 - Formatos disponibles: https://abliterant.ai/models

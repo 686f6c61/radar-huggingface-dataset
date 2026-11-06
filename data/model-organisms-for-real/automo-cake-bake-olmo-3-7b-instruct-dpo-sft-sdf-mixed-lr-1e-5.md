@@ -87,7 +87,7 @@ El modelo se diferencia del base por tener el comportamiento plantado activo. Fr
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5)
+- [Modelo en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-cake-bake-olmo-3-7b-instruct-dpo-sft-sdf-mixed-lr-1e-5)
 - [Modelo base: allenai/Olmo-3-7B-Instruct-DPO](https://huggingface.co/allenai/Olmo-3-7B-Instruct-DPO)
 - [Colección de modelos cake-baking de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/cake-baking-olmo2-1b)
 - [Modelo relacionado: olmo2-1b-cake-bake-sft_n1000_lr0.0001_e1_r16](https://huggingface.co/model-organisms-for-real/olmo2-1b-cake-bake-sft_n1000_lr0.0001_e1_r16)

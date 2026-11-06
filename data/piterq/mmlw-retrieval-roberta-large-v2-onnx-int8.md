@@ -102,7 +102,7 @@ No se dispone en la informacion proporcionada de datos de benchmarks que permita
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PiterQ/mmlw-retrieval-roberta-large-v2-ONNX-int8
+- Modelo en Hugging Face: https://huggingface.co/PiterQ/mmlw-retrieval-roberta-large-v2-ONNX-int8
 - Modelo base original: https://huggingface.co/sdadas/mmlw-retrieval-roberta-large-v2
 - Version Core ML (iPhone/Mac): https://huggingface.co/PiterQ/mmlw-retrieval-roberta-large-v2-CoreML
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

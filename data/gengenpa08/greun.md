@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gengenpa08/greun` es un repositorio alojado en HuggingFace con un tamaño de 521,7 GB y aproximadamente 14 288 millones de parámetros (14,3 B). La etiqueta `gguf` indica que el repositorio contiene pesos en formato GGUF, pensado para ejecución local con motores como llama.cpp u Ollama. Sin embargo, no se dispone de información pública adicional: no se especifica la arquitectura, el proceso de entrenamiento, la licencia, los idiomas soportados ni las capacidades del modelo. El autor es el usuario `gengenpa08`, sin descripción ni documentación asociada en el momento de la consulta.
+El modelo `gengenpa08/greun` es un repositorio alojado en Hugging Face con un tamaño de 521,7 GB y aproximadamente 14 288 millones de parámetros (14,3 B). La etiqueta `gguf` indica que el repositorio contiene pesos en formato GGUF, pensado para ejecución local con motores como llama.cpp u Ollama. Sin embargo, no se dispone de información pública adicional: no se especifica la arquitectura, el proceso de entrenamiento, la licencia, los idiomas soportados ni las capacidades del modelo. El autor es el usuario `gengenpa08`, sin descripción ni documentación asociada en el momento de la consulta.
 
 La relevancia actual de este modelo es limitada debido a la ausencia de datos técnicos y legales. Su tamaño de parámetros sugiere que podría ser un modelo de lenguaje de escala media, pero sin confirmación de su origen o familia. Cualquier uso en producción requeriría contactar al autor o verificar la licencia, que no está declarada.
 
@@ -53,4 +53,4 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gengenpa08/greun
+- Repositorio en Hugging Face: https://huggingface.co/gengenpa08/greun

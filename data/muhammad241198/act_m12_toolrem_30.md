@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`act_M12_toolrem_30` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), publicada por el usuario Muhammad241198 en HuggingFace y entrenada con la librería LeRobot de Hugging Face. El modelo no es un LLM ni un modelo de lenguaje: es un controlador visomotor que aprende a predecir secuencias cortas de acciones (chunks) a partir de observaciones visuales y del estado del robot, y está pensado para ejecutar tareas de manipulación sobre un brazo robótico de tipo SO-100.
+`act_M12_toolrem_30` es una política de imitación para robótica basada en Action Chunking with Transformers (ACT), publicada por el usuario Muhammad241198 en Hugging Face y entrenada con la librería LeRobot de Hugging Face. El modelo no es un LLM ni un modelo de lenguaje: es un controlador visomotor que aprende a predecir secuencias cortas de acciones (chunks) a partir de observaciones visuales y del estado del robot, y está pensado para ejecutar tareas de manipulación sobre un brazo robótico de tipo SO-100.
 
 El modelo resuelve el problema clásico de la imitación paso a paso: en lugar de predecir una única acción por fotograma (lo que amplifica el error acumulado y produce movimientos temblorosos), ACT predice un horizonte de acciones de forma conjunta, lo que da lugar a trayectorias más suaves y robustas. Está entrenado sobre el dataset `rbtrprjkt/m12-nut-tool_unfasten_nodepth`, orientado a la tarea de desatornillar o retirar una herramienta o tuerca, y no incluye información de profundidad (de ahí el sufijo `nodepth`).
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_M12_toolrem_30 | 51,6 M | no aplica | Desatornillado/retirada de herramienta con SO-100 | Apache 2.0 | HuggingFace (LeRobot) |
-| Otras políticas ACT de LeRobot | variable | no aplica | Manipulación genérica teleoperada | Apache 2.0 (segun repo) | HuggingFace |
+| act_M12_toolrem_30 | 51,6 M | no aplica | Desatornillado/retirada de herramienta con SO-100 | Apache 2.0 | Hugging Face (LeRobot) |
+| Otras políticas ACT de LeRobot | variable | no aplica | Manipulación genérica teleoperada | Apache 2.0 (segun repo) | Hugging Face |
 | Diffusion Policy (referencia del ecosistema LeRobot) | variable | no aplica | Manipulación visomotora | segun implementacion | Repos de investigación |
 | RT-1 / RT-2 (modelos robóticos de gran escala) | cientos de M a miles de M | no aplica | Manipulación multi-tarea | no abierta en su mayoria | No disponibles como pesos abiertos comparables |
 
@@ -82,7 +82,7 @@ La comparación directa con RT-1/RT-2 no es homogénea: aquellos son modelos mul
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Muhammad241198/act_M12_toolrem_30
+- Modelo en Hugging Face: https://huggingface.co/Muhammad241198/act_M12_toolrem_30
 - Paper de ACT (arXiv 2304.13705): https://huggingface.co/papers/2304.13705
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas de imitación: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

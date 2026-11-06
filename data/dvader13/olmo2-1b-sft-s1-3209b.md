@@ -77,7 +77,7 @@ La principal diferencia con TinyLlama y Qwen2.5-1.5B es que este repositorio no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/olmo2-1b-sft-s1-3209b
+- Repositorio Hugging Face: https://huggingface.co/dvader13/olmo2-1b-sft-s1-3209b
 - Modelo base OLMo-2-1B de Ai2: https://huggingface.co/allenai/OLMo-2-0425-1B
 - Pagina oficial de OLMo 2: https://allenai.org/olmo2
 - Repositorio de entrenamiento OLMo: https://github.com/allenai/OLMo

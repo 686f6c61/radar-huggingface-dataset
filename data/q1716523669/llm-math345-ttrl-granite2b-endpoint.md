@@ -66,7 +66,7 @@ No disponible. No se proporcionan modelos comparables en la información. Se pod
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/q1716523669/llm-math345-ttrl-granite2b-endpoint)
+- [Modelo en Hugging Face](https://huggingface.co/q1716523669/llm-math345-ttrl-granite2b-endpoint)
 - [Paper TTRL: Test-Time Reinforcement Learning](https://arxiv.org/pdf/2504.16084v3)
 - [Paper DeepSeekMath (GRPO)](https://huggingface.co/papers/2402.03300)
 - [Repositorio TRL](https://github.com/huggingface/trl)

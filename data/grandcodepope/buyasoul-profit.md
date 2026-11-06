@@ -63,9 +63,9 @@ No se dispone de datos de rendimiento del modelo base Qwen 3.5-0.8B en benchmark
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |--------|------------|----------|----------|----------------|
-| buyasoul-profit (PROFIT) | No disponible (base Qwen 0.8B) | No disponible | Propietaria | Repo HuggingFace |
-| Qwen2.5-0.5B-Instruct | 0.5B | 32K (típico) | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B-Instruct | 1B | 128K | Llama 3.2 Community | HuggingFace |
+| buyasoul-profit (PROFIT) | No disponible (base Qwen 0.8B) | No disponible | Propietaria | Repo Hugging Face |
+| Qwen2.5-0.5B-Instruct | 0.5B | 32K (típico) | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B-Instruct | 1B | 128K | Llama 3.2 Community | Hugging Face |
 
 La principal diferencia es que buyasoul-profit no es un modelo de pesos estándar, sino un framework que envuelve a Qwen; su valor reside en la capa de agente, no en el modelo base. Para uso como LLM puro, las alternativas mencionadas son más documentadas y con licencias abiertas.
 
@@ -82,7 +82,7 @@ La principal diferencia es que buyasoul-profit no es un modelo de pesos estánda
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grandcodepope/buyasoul-profit
+- Repositorio Hugging Face: https://huggingface.co/grandcodepope/buyasoul-profit
 - Blog del autor en Tumblr: https://www.tumblr.com/grandcodepope/820798413671202816/building-autonomous-ai-autonomous-ai
 - Web del proyecto BUYaSOUL: https://buyasoul-ai.github.io/buyasoul/
 - Página "About BUYaSOUL": https://buyasoul.online/pages/about-buyasoul

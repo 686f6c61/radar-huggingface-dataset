@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/ThoxIOS-Chat-3B
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/ThoxIOS-Chat-3B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Ejecución en Ollama: `ollama run Thox-ai/thox-ios-chat-3b` (tag `qwen2.5:3b` fijado en el manifiesto)
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada.

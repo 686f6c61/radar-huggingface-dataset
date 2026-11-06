@@ -92,7 +92,7 @@ No se dispone en la información proporcionada de comparativas con otros modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheBioHub/gemma4-e4b-biohub-gguf
+- Modelo en Hugging Face: https://huggingface.co/TheBioHub/gemma4-e4b-biohub-gguf
 - Build hermana en MLX: https://huggingface.co/TheBioHub/gemma4-e4b-biohub-mlx
 - Modelo base: https://huggingface.co/google/gemma-4-e4b-it
 - Repositorio biohub: https://github.com/Snyder-Institute

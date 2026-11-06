@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de HuggingFace, con el objetivo explícito de reducir las alucinaciones en las respuestas, como sugiere su nombre (`target-only-no-hallucination-sft`). La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
+El modelo `longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft-seed4` es un ajuste fino (fine-tuning) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de Hugging Face, con el objetivo explícito de reducir las alucinaciones en las respuestas, como sugiere su nombre (`target-only-no-hallucination-sft`). La licencia es Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas.
 
 El modelo hereda la arquitectura y capacidades de OLMo-3-7B-Instruct, un transformer decoder-only de 7 mil millones de parámetros, aunque el dato de parámetros totales reportado en el repositorio (528.384) parece erróneo o corresponde a una parte del entrenamiento, no al modelo completo. El tamaño del repositorio (14.6 GB) es coherente con un modelo de 7B en formato safetensors. A día de hoy no se han publicado métricas de rendimiento ni detalles del proceso de entrenamiento, por lo que su evaluación debe basarse en el comportamiento del modelo base y en pruebas propias.
 
@@ -21,7 +21,7 @@ El modelo hereda la arquitectura y capacidades de OLMo-3-7B-Instruct, un transfo
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. La arquitectura base es un transformer causal con atención multi-cabeza, normalización de capas y activación SwiGLU, sin mezcla de expertos (MoE). El entrenamiento del ajuste fino se realizó con Unsloth (optimización de memoria y velocidad) y la librería TRL de HuggingFace, utilizando una técnica de Supervised Fine-Tuning (SFT) orientada a reducir alucinaciones, como indica el nombre del modelo. No se han publicado detalles sobre el dataset utilizado, el número de pasos, ni si se aplicaron métodos adicionales como DPO o RLHF. El checkpoint está etiquetado como `target-only`, lo que sugiere que el entrenamiento se centró en respuestas objetivo sin incluir ejemplos negativos, pero esta interpretación es especulativa.
+El modelo es un ajuste fino del checkpoint `unsloth/Olmo-3-7B-Instruct`, que a su vez deriva de la familia OLMo-3 de AI2. La arquitectura base es un transformer causal con atención multi-cabeza, normalización de capas y activación SwiGLU, sin mezcla de expertos (MoE). El entrenamiento del ajuste fino se realizó con Unsloth (optimización de memoria y velocidad) y la librería TRL de Hugging Face, utilizando una técnica de Supervised Fine-Tuning (SFT) orientada a reducir alucinaciones, como indica el nombre del modelo. No se han publicado detalles sobre el dataset utilizado, el número de pasos, ni si se aplicaron métodos adicionales como DPO o RLHF. El checkpoint está etiquetado como `target-only`, lo que sugiere que el entrenamiento se centró en respuestas objetivo sin incluir ejemplos negativos, pero esta interpretación es especulativa.
 
 ## Capacidades
 
@@ -69,7 +69,7 @@ No se dispone de datos de rendimiento de este modelo para comparar con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft-seed4
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-target-only-no-hallucination-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

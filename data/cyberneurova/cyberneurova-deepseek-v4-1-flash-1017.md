@@ -88,7 +88,7 @@ El rendimiento comparado no esta disponible: no hay benchmarks publicados de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyberneurova/cyberneurova-DeepSeek-V4.1-Flash-1017
+- Modelo en Hugging Face: https://huggingface.co/cyberneurova/cyberneurova-DeepSeek-V4.1-Flash-1017
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Demo de chat: https://cyberneurova.ai
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales relevantes para este modelo.

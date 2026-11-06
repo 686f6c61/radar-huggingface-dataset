@@ -75,7 +75,7 @@ No se dispone de información comparativa con otros modelos en la documentación
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mradermacher/Ostrich-27B-Qwen3.8-260816-Abliterated-GGUF
 - Modelo base (etemiz): https://huggingface.co/etemiz/Ostrich-27B-Qwen3.8-260816-Abliterated
 - Referencia al modelo base Qwen3.8-27B (especificaciones y hardware): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026
 - Artículo sobre el comportamiento de Qwen3.8-27B (overthinking): https://dev.to/kaixintelligence/qwen-38-27b-why-this-powerful-model-cant-stop-overthinking-and-how-to-fix-it-5dh6

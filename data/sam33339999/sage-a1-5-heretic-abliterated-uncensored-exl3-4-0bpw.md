@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sage-A1.5 Heretic-Abliterated-Uncensored EXL3 4.0 bpw es una cuantización de 4 bits por peso (formato EXL3) del checkpoint BF16 `sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored`, un derivado del modelo multimodal `InternScience/Sage-A1.5` al que se le ha aplicado una ablación de rechazo («heretic/abliterated») para eliminar las respuestas de negativa. El autor de la cuantización es el usuario de HuggingFace `sam33339999`, que publica tanto el BF16 sin censura como esta versión comprimida generada con `convert.py` de exllamav3 1.6.4.
+Sage-A1.5 Heretic-Abliterated-Uncensored EXL3 4.0 bpw es una cuantización de 4 bits por peso (formato EXL3) del checkpoint BF16 `sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored`, un derivado del modelo multimodal `InternScience/Sage-A1.5` al que se le ha aplicado una ablación de rechazo («heretic/abliterated») para eliminar las respuestas de negativa. El autor de la cuantización es el usuario de Hugging Face `sam33339999`, que publica tanto el BF16 sin censura como esta versión comprimida generada con `convert.py` de exllamav3 1.6.4.
 
 Arquitectura: transformer con mezcla de expertos (MoE) de la familia `qwen3_5_moe`, con torre visual (`Qwen3VLVisionModel`, procesador `Qwen2VLImageProcessorFast`, patch 16, temporal 2, merge 2) y una cabeza MTP (multi-token prediction) de una capa que actúa como borrador para decodificación especulativa. El total real de parámetros según los safetensors es de 9.869.978.480 (~9,87 mil millones).
 
@@ -76,9 +76,9 @@ La model card no incluye MMLU, HumanEval, GSM8K, MMMU ni ninguna otra métrica, 
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (EXL3 4.0 bpw) | 9,87 B totales | no disponible | EXL3 4 bpw, lm_head 6 bits, visión bf16 | apache-2.0 | HuggingFace, exllamav3 |
-| `sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored` | 9,87 B aprox. (BF16) | no disponible | ninguna (BF16) | apache-2.0 | HuggingFace, vLLM/SGLang |
-| `InternScience/Sage-A1.5` | no disponible en la información | no disponible | ninguna (BF16) | apache-2.0 según `license_link` | HuggingFace |
+| Este modelo (EXL3 4.0 bpw) | 9,87 B totales | no disponible | EXL3 4 bpw, lm_head 6 bits, visión bf16 | apache-2.0 | Hugging Face, exllamav3 |
+| `sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored` | 9,87 B aprox. (BF16) | no disponible | ninguna (BF16) | apache-2.0 | Hugging Face, vLLM/SGLang |
+| `InternScience/Sage-A1.5` | no disponible en la información | no disponible | ninguna (BF16) | apache-2.0 según `license_link` | Hugging Face |
 | Otros modelos de ~10 B multimodales | no disponible | no disponible | — | — | no disponible |
 
 No se han identificado en la información proporcionada modelos externos comparables con datos verificables de parámetros, contexto o rendimiento; la comparación se limita a la propia cadena de derivación.
@@ -97,9 +97,9 @@ No se han identificado en la información proporcionada modelos externos compara
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored-exl3-4.0bpw
-- HuggingFace (BF16 sin censura, upstream directo): https://huggingface.co/sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored
-- HuggingFace (modelo original): https://huggingface.co/InternScience/Sage-A1.5
+- Hugging Face (este modelo): https://huggingface.co/sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored-exl3-4.0bpw
+- Hugging Face (BF16 sin censura, upstream directo): https://huggingface.co/sam33339999/Sage-A1.5-Heretic-Abliterated-Uncensored
+- Hugging Face (modelo original): https://huggingface.co/InternScience/Sage-A1.5
 - Repositorio de exllamav3: https://github.com/turboderp-org/exllamav3
 
 La búsqueda web realizada no devolvió enlaces técnicos relevantes sobre este modelo (solo resultados de contenido para adultos sin relación); por tanto, no se han encontrado papers, blogs ni demos adicionales.

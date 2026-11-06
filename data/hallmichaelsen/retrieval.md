@@ -65,12 +65,12 @@ No disponible. Este repositorio no es un modelo entrenado, sino una implementaci
 - **No es un modelo entrenado**: el checkpoint incluido es solo de inicializacion y no ha sido entrenado con ningun dataset. No puede utilizarse para tareas reales de retrieval.
 - **Sin garantias de robustez**: el autor indica que el checkpoint no ha sido auditado para robustez, equidad o transferencia de dominio.
 - **Sin resultados publicados**: no hay benchmarks ni metricas de rendimiento que respalden su uso en produccion.
-- **Implementacion personalizada**: las APIs de carga genericas de HuggingFace no funcionan directamente; se requiere un adaptador explicito para usar el modelo fuera del script incluido.
+- **Implementacion personalizada**: las APIs de carga genericas de Hugging Face no funcionan directamente; se requiere un adaptador explicito para usar el modelo fuera del script incluido.
 - **Tamano extremadamente reducido**: con 16.576 parametros, incluso tras entrenamiento, la capacidad del modelo sera muy limitada en comparacion con ViT estandar (ViT-Base tiene 86 millones de parametros).
 - **Licencia de datos externos**: la licencia BSD-3-Clause cubre el codigo, pero el autor advierte que deben revisarse los terminos de las fuentes de datos si se utiliza con datasets externos.
-- **Riesgo de malinterpretacion**: dado que el repositorio se presenta como un modelo en HuggingFace, existe el riesgo de que usuarios no familiarizados lo confundan con un modelo entrenado y lo utilicen incorrectamente.
+- **Riesgo de malinterpretacion**: dado que el repositorio se presenta como un modelo en Hugging Face, existe el riesgo de que usuarios no familiarizados lo confundan con un modelo entrenado y lo utilicen incorrectamente.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Hallmichaelsen/retrieval)
-- [Perfil del autor en HuggingFace](https://huggingface.co/Hallmichaelsen)
+- [Repositorio en Hugging Face](https://huggingface.co/Hallmichaelsen/retrieval)
+- [Perfil del autor en Hugging Face](https://huggingface.co/Hallmichaelsen)

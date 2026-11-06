@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ottava-Few-Shot-Adapter | no disponible (base 1.7B) | no disponible | Scorer lineal sobre embeddings congelados | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B | 1.7B | no disponible | LLM generativo base | Apache-2.0 | HuggingFace |
+| Ottava-Few-Shot-Adapter | no disponible (base 1.7B) | no disponible | Scorer lineal sobre embeddings congelados | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B | 1.7B | no disponible | LLM generativo base | Apache-2.0 | Hugging Face |
 | Alternativas de clasificacion few-shot con LLM | no disponible | no disponible | Generacion/razonamiento zero-shot | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas.
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Oscar-veeee/Ottava-Few-Shot-Adapter
+- Hugging Face: https://huggingface.co/Oscar-veeee/Ottava-Few-Shot-Adapter
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio del codigo Ottava: https://github.com/OscarVGit/ottava.git

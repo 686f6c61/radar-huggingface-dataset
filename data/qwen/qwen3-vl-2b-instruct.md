@@ -6,7 +6,7 @@ Qwen3-VL-2B-Instruct es un modelo multimodal de tipo image-text-to-text desarrol
 
 El modelo resuelve el problema de combinar comprension de texto, vision e interaccion con agentes en un unico modelo de poco peso. Frente a Qwen2.5-VL, la model card destaca mejoras en agencia visual (operar interfaces de PC y movil), generacion de codigo a partir de imagenes (Draw.io, HTML, CSS, JS), percepcion espacial 2D y 3D, comprension de video con indexacion temporal a nivel de segundo, OCR en 32 idiomas (frente a 19 en la generacion anterior) y un contexto nativo de 256K tokens ampliable a 1M.
 
-Su relevancia actual es doble: por un lado, acerca capacidades multimodales de nivel agentico a hardware modesto; por otro, mantiene el rendimiento en texto puro a la altura de los LLM de su tamano, lo que permite unificar pipelines de texto y vision sin recurrir a dos modelos separados. Con casi 2,5 millones de descargas y 494 "likes" en HuggingFace a fecha de la informacion disponible, es una de las referencias mas descargadas de su categoria.
+Su relevancia actual es doble: por un lado, acerca capacidades multimodales de nivel agentico a hardware modesto; por otro, mantiene el rendimiento en texto puro a la altura de los LLM de su tamano, lo que permite unificar pipelines de texto y vision sin recurrir a dos modelos separados. Con casi 2,5 millones de descargas y 494 "likes" en Hugging Face a fecha de la informacion disponible, es una de las referencias mas descargadas de su categoria.
 
 ## Especificaciones tecnicas
 
@@ -82,7 +82,7 @@ Los unicos parametros de generacion documentados por el autor son:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-VL-2B-Instruct | 2,13B (denso) | 256K nativo, hasta 1M | Apache-2.0 | HuggingFace, transformers |
+| Qwen3-VL-2B-Instruct | 2,13B (denso) | 256K nativo, hasta 1M | Apache-2.0 | Hugging Face, transformers |
 | Qwen3-VL-2B-Thinking | no disponible | no disponible | Apache-2.0 | edicion de razonamiento de la misma familia, mencionada en la model card |
 | Qwen3-VL-32B-Instruct | 32B (referencia de la model card) | no disponible | no disponible en la informacion proporcionada | mencionado en las figuras comparativas del autor |
 | Qwen2.5-VL-3B-Instruct | ~3,75B | no disponible en la informacion proporcionada | Apache-2.0 | generacion anterior de la familia, citada en el informe tecnico arXiv:2502.13923 |
@@ -105,9 +105,9 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Demo (Space): https://huggingface.co/spaces/akhaliq/Qwen3-VL-2B-Instruct
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen
 - Informe tecnico de Qwen3 (arXiv:2505.09388): https://arxiv.org/abs/2505.09388
 - Informe tecnico de Qwen2.5-VL (arXiv:2502.13923): https://arxiv.org/abs/2502.13923
 - Qwen2-VL (arXiv:2409.12191): https://arxiv.org/abs/2409.12191

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ahgent es un repositorio de modelo publicado en HuggingFace por el usuario mody101220 bajo el identificador `mody101220/Ahgent`. La model card asociada contiene unicamente la declaracion de licencia MIT, sin ningun otro contenido: no describe arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio fue creado y actualizado en la misma marca temporal (15 de septiembre de 2026), lo que indica que no ha recibido modificaciones desde su publicacion inicial.
+Ahgent es un repositorio de modelo publicado en Hugging Face por el usuario mody101220 bajo el identificador `mody101220/Ahgent`. La model card asociada contiene unicamente la declaracion de licencia MIT, sin ningun otro contenido: no describe arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio fue creado y actualizado en la misma marca temporal (15 de septiembre de 2026), lo que indica que no ha recibido modificaciones desde su publicacion inicial.
 
 En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 valoraciones, no tiene pipeline declarado y no especifica idiomas soportados. Los unicos metadatos disponibles son las etiquetas `license:mit` y `region:us`. No existe informacion publica adicional sobre el modelo en los resultados de busqueda web consultados, que no devolvieron ninguna referencia relacionada.
 
@@ -86,7 +86,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio de aplicacio
 | Longitud de contexto | no disponible | no disponible |
 | Rendimiento en benchmarks | no disponible | no disponible |
 | Licencia | MIT | no disponible |
-| Disponibilidad | Repositorio en HuggingFace con 0 descargas | no disponible |
+| Disponibilidad | Repositorio en Hugging Face con 0 descargas | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -101,7 +101,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni el dominio de aplicacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mody101220/Ahgent
+- Repositorio en Hugging Face: https://huggingface.co/mody101220/Ahgent
 - Paper: no disponible.
 - Blog o documentacion adicional: no disponible.
 - Repositorio de codigo: no disponible.

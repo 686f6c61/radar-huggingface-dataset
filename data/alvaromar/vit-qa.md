@@ -41,7 +41,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - No se conoce latencia ni throughput.
 
 ## Comparativa con modelos similares
-No disponible. No se conocen modelos comparables directamente porque no se dispone de datos de rendimiento ni de parámetros. El modelo podría compararse con otros BEIT de HuggingFace (por ejemplo, `microsoft/beit-base-patch16-224`), pero no hay información sobre el tamaño exacto de este modelo para establecer una comparación justa.
+No disponible. No se conocen modelos comparables directamente porque no se dispone de datos de rendimiento ni de parámetros. El modelo podría compararse con otros BEIT de Hugging Face (por ejemplo, `microsoft/beit-base-patch16-224`), pero no hay información sobre el tamaño exacto de este modelo para establecer una comparación justa.
 
 ## Limitaciones y advertencias
 - **Ausencia de pesos**: el repositorio solo contiene un script de entrenamiento, por lo que no es posible utilizar el modelo tal cual.
@@ -51,7 +51,7 @@ No disponible. No se conocen modelos comparables directamente porque no se dispo
 - **Fecha de creación**: el modelo fue creado en 2026-08-25, lo que sugiere que es muy reciente o que la fecha es errónea.
 
 ## Enlaces
-- [HuggingFace - alvaromar/vit-qa](https://huggingface.co/alvaromar/vit-qa)
+- [Hugging Face - alvaromar/vit-qa](https://huggingface.co/alvaromar/vit-qa)
 - [Paper QA-ViT (Amazon Science)](https://arxiv.org/abs/2402.05472)
 - [Repositorio GitHub QA-ViT](https://github.com/amazon-science/QA-ViT)
 - [README de QA-ViT en GitHub](https://github.com/amazon-science/QA-ViT/blob/main/README.md)
@@ -104,7 +104,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos comparables directamente porque no hay datos de parámetros ni rendimiento. Se podría comparar con otros BEIT de HuggingFace (por ejemplo, `microsoft/beit-base-patch16-224`), pero al no conocer el tamaño exacto de este modelo, la comparación no sería justa.
+No disponible. No se conocen modelos comparables directamente porque no hay datos de parámetros ni rendimiento. Se podría comparar con otros BEIT de Hugging Face (por ejemplo, `microsoft/beit-base-patch16-224`), pero al no conocer el tamaño exacto de este modelo, la comparación no sería justa.
 
 ## Limitaciones y advertencias
 
@@ -116,7 +116,7 @@ No disponible. No se conocen modelos comparables directamente porque no hay dato
 
 ## Enlaces
 
-- [HuggingFace - alvaromar/vit-qa](https://huggingface.co/alvaromar/vit-qa)
+- [Hugging Face - alvaromar/vit-qa](https://huggingface.co/alvaromar/vit-qa)
 - [Paper QA-ViT (arXiv)](https://arxiv.org/abs/2402.05472)
 - [Repositorio GitHub QA-ViT](https://github.com/amazon-science/QA-ViT)
 - [README de QA-ViT en GitHub](https://github.com/amazon-science/QA-ViT/blob/main/README.md)

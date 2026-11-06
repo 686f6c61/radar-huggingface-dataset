@@ -93,12 +93,12 @@ No se dispone de datos comparativos verificados en la informacion proporcionada.
 - El repositorio contiene únicamente el checkpoint: sin el código de arquitectura de la asignatura no es posible instanciar el modelo, y no se incluye tokenizador.
 - La carga requiere `weights_only=False` en `torch.load`, lo que implica ejecutar código no serializado de forma segura; conviene auditar el fichero antes de cargarlo en entornos no confiables.
 - Licencia MIT: permite uso comercial y modificación, pero sin garantías y conservando el aviso de copyright; al no existir atribución de datos de entrenamiento, la procedencia del corpus es desconocida.
-- La fecha de creación registrada en HuggingFace (14 de septiembre de 2026) es posterior a la fecha actual, un dato anómalo que conviene verificar antes de citar el modelo.
+- La fecha de creación registrada en Hugging Face (14 de septiembre de 2026) es posterior a la fecha actual, un dato anómalo que conviene verificar antes de citar el modelo.
 - Cero descargas y cero "likes" en el momento de redactar esta ficha: no hay evidencia de uso en producción ni validación independiente por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neemon/anlp-a2-part1-moe_4e2a
+- Modelo en Hugging Face: https://huggingface.co/neemon/anlp-a2-part1-moe_4e2a
 - Repositorio de la asignatura (arquitectura, entrenamiento y evaluación): no disponible en la informacion proporcionada
 - Paper o publicación técnica asociada: no disponible en la informacion proporcionada
 - Demo o Space: no disponible en la informacion proporcionada

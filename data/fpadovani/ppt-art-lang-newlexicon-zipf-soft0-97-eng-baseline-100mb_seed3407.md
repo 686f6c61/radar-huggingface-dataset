@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.97-eng-baseline-100mb_seed3407` es un modelo de lenguaje de 86,5 millones de parámetros, desarrollado por fpadovani como parte de una serie de experimentos sobre lenguajes artificiales y distribución de frecuencias léxicas. Se trata de un fine-tuning del modelo base `goldfish-models/eng_latn_100mb` mediante entrenamiento supervisado (SFT) con la librería TRL de HuggingFace. El nombre del modelo sugiere que se ha entrenado con un "nuevo léxico" y una distribución Zipf suavizada (soft0.97), lo que apunta a una investigación sobre cómo afecta la distribución de frecuencias de las palabras al aprendizaje de representaciones lingüísticas.
+El modelo `fpadovani/ppt-art-lang-newlexicon-zipf-soft0.97-eng-baseline-100mb_seed3407` es un modelo de lenguaje de 86,5 millones de parámetros, desarrollado por fpadovani como parte de una serie de experimentos sobre lenguajes artificiales y distribución de frecuencias léxicas. Se trata de un fine-tuning del modelo base `goldfish-models/eng_latn_100mb` mediante entrenamiento supervisado (SFT) con la librería TRL de Hugging Face. El nombre del modelo sugiere que se ha entrenado con un "nuevo léxico" y una distribución Zipf suavizada (soft0.97), lo que apunta a una investigación sobre cómo afecta la distribución de frecuencias de las palabras al aprendizaje de representaciones lingüísticas.
 
-Este modelo es relevante para investigadores interesados en la adquisición del lenguaje, la eficiencia de los modelos pequeños y el impacto de la distribución de frecuencias en el entrenamiento. Su tamaño reducido (86,5M) lo hace accesible para experimentación en hardware modesto, aunque su utilidad práctica en producción es limitada. La fecha de creación (agosto de 2026) indica que es un modelo reciente, pero con cero descargas y cero likes en HuggingFace, lo que sugiere que es un artefacto de investigación sin adopción comunitaria.
+Este modelo es relevante para investigadores interesados en la adquisición del lenguaje, la eficiencia de los modelos pequeños y el impacto de la distribución de frecuencias en el entrenamiento. Su tamaño reducido (86,5M) lo hace accesible para experimentación en hardware modesto, aunque su utilidad práctica en producción es limitada. La fecha de creación (agosto de 2026) indica que es un modelo reciente, pero con cero descargas y cero likes en Hugging Face, lo que sugiere que es un artefacto de investigación sin adopción comunitaria.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ La comparativa se limita a modelos de tamano similar. No se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.97-eng-baseline-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.97-eng-baseline-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/ppt_art_lang/runs/0ar4kobx
 - Variante sin suavizado Zipf: https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed3407

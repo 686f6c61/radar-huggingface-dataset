@@ -18,7 +18,7 @@ El repositorio ocupa 245,6 GB e incluye cuatro directorios: pesos TP1, pesos TP2
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | NVFP4 (W4A4 calibrado en expertos enrutados y tablas n-gram), MXFP8 (prefill), proyecciones de atención en 8 bits, torre de visión en BF16 |
 | Idiomas soportados | no disponible |
-| Licencia | Qwen Community License 1.0 (etiquetada como `other` en HuggingFace) |
+| Licencia | Qwen Community License 1.0 (etiquetada como `other` en Hugging Face) |
 | Formato de pesos | Propietario de Slipstream (`weights.vbin` + `index.json`); no es safetensors ni GGUF |
 
 ## Arquitectura y entrenamiento
@@ -94,6 +94,6 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Interactify/Qwen3.8-Flash-Next-Slipstream
+- Hugging Face: https://huggingface.co/Interactify/Qwen3.8-Flash-Next-Slipstream
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Motor Slipstream: https://github.com/Interactify/slipstream

@@ -110,7 +110,7 @@ La comparación con modelos de terceros de la misma categoría no puede realizar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/positron-ai/Qwen3.5-2B
+- Repositorio en Hugging Face: https://huggingface.co/positron-ai/Qwen3.5-2B
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.5-2B
 - Revisión fijada del upstream: `15852e8c16360a2fea060d615a32b45270f8a8fc`
 - Model card upstream conservada en el repositorio: `README.upstream.md`

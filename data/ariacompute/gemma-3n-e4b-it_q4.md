@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: ariacompute/gemma-3n-e4b-it_q4](https://huggingface.co/ariacompute/gemma-3n-e4b-it_q4)
+- [Hugging Face: ariacompute/gemma-3n-e4b-it_q4](https://huggingface.co/ariacompute/gemma-3n-e4b-it_q4)
 - [Modelo base: google/gemma-3n-e4b-it](https://huggingface.co/google/gemma-3n-e4b-it)
 - [Paper técnico de Gemma 3n (arXiv:2506.16392)](https://arxiv.org/abs/2506.16392)
 - [Repositorio original de Gemma 3n (GitHub)](https://github.com/google-gemma/gemma-3n)

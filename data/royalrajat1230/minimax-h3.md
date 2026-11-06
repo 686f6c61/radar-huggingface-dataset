@@ -6,7 +6,7 @@ MiniMax-H3 es un sistema generativo omni-modal desarrollado por MiniMax, el labo
 
 El sistema completo se compone de tres módulos: H3-Context-IR, que procesa y refina las instrucciones multimodales de entrada para convertirlas en una representación intermedia comprensible por el modelo; H3-Base, que genera el vídeo y el audio a 768p; y H3-Regenerate-2K, que regenera la salida a 2K aprovechando el contexto original. Este diseño orientado a la generalización de tareas permite al modelo seguir instrucciones multimodales complejas sin necesidad de adaptaciones específicas por tarea.
 
-La ficha se basa en el repositorio de HuggingFace `Royalrajat1230/MiniMax-H3`, un mirror de la comunidad del modelo oficial publicado por `MiniMaxAI/MiniMax-H3`. El repositorio tiene un tamaño de 354 GB y usa pesos en formato safetensors, integrado con la librería `minimax-h3` (basada en diffusers). La licencia es `minimax-h3-community-license-agreement`, una licencia propia de MiniMax que no es de código abierto estándar y que requiere revisión para uso comercial.
+La ficha se basa en el repositorio de Hugging Face `Royalrajat1230/MiniMax-H3`, un mirror de la comunidad del modelo oficial publicado por `MiniMaxAI/MiniMax-H3`. El repositorio tiene un tamaño de 354 GB y usa pesos en formato safetensors, integrado con la librería `minimax-h3` (basada en diffusers). La licencia es `minimax-h3-community-license-agreement`, una licencia propia de MiniMax que no es de código abierto estándar y que requiere revisión para uso comercial.
 
 ## Especificaciones tecnicas
 

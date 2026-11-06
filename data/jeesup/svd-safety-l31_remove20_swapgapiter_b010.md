@@ -93,9 +93,9 @@ La model card no incluye en esta página los valores del modelo base sin comprim
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| svd-safety-l31_remove20_swapgapiter_b010 | 8,03 B (fracción densa 0,7998) | 128.000 tokens (heredado) | Llama 3.1 Community | HuggingFace, 0 descargas y 0 likes | Artefacto de investigación con seguridad medida; no apto como asistente general |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community | HuggingFace, ampliamente distribuido | Referencia sin comprimir; baseline natural para medir la degradación |
-| Otros brazos de la rejilla de Jeesup | ~8,03 B | 128.000 tokens (heredado) | Llama 3.1 Community | HuggingFace (repositorio del autor) | Distintas reglas de selección y presupuestos; métricas no disponibles en la información consultada |
+| svd-safety-l31_remove20_swapgapiter_b010 | 8,03 B (fracción densa 0,7998) | 128.000 tokens (heredado) | Llama 3.1 Community | Hugging Face, 0 descargas y 0 likes | Artefacto de investigación con seguridad medida; no apto como asistente general |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community | Hugging Face, ampliamente distribuido | Referencia sin comprimir; baseline natural para medir la degradación |
+| Otros brazos de la rejilla de Jeesup | ~8,03 B | 128.000 tokens (heredado) | Llama 3.1 Community | Hugging Face (repositorio del autor) | Distintas reglas de selección y presupuestos; métricas no disponibles en la información consultada |
 | Método SVD-LLM aplicado a Llama | no disponible | no disponible | no disponible | no disponible | Es el método de compresión empleado; no se dispone de cifras comparativas verificadas en la información proporcionada |
 
 No se dispone de comparaciones de rendimiento (MMLU, HumanEval, GSM8K u otros) entre este checkpoint y alternativas, porque el autor solo publica métricas de seguridad y perplejidad.
@@ -111,12 +111,12 @@ No se dispone de comparaciones de rendimiento (MMLU, HumanEval, GSM8K u otros) e
 - Licencia Llama 3.1 Community: el uso comercial está sujeto a LICENSE y USE_POLICY.md incluidos en el repositorio, con obligaciones de atribución ("Built with Llama") y las restricciones habituales de esta licencia; cualquier redistribución derivada queda vinculada a esos términos.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, por lo que no existe evidencia externa de reproducibilidad de las métricas reportadas.
 - Cuantización no soportada oficialmente: aplicar GGUF, AWQ o GPTQ por cuenta propia puede modificar el comportamiento de seguridad medido e invalidar las conclusiones del estudio.
-- Fechas del repositorio: creado y actualizado el 17 de septiembre de 2026 según los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 17 de septiembre de 2026 según los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
-- Repositorio del autor en HuggingFace (para el resto de brazos de la rejilla): https://huggingface.co/Jeesup
+- Repositorio del autor en Hugging Face (para el resto de brazos de la rejilla): https://huggingface.co/Jeesup
 - Paper, blog o repositorio del método SVD-LLM: no disponible en la información proporcionada.
 - Resultados relevantes de la búsqueda web: no se han encontrado enlaces relacionados con el modelo; las URL devueltas corresponden a páginas de ayuda de YouTube y a foros sin relación con el contenido.

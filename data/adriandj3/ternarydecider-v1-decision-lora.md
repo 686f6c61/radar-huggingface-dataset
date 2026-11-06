@@ -97,9 +97,9 @@ En el desglose de System One por categoría, la mejora se concentra en la elecci
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TernaryDecider v1 | 120 M (adaptador) sobre base de ~9 B | no disponible | Decisión por lectura del primer token, con calibración | Apache-2.0 | HuggingFace (adriandj3) |
-| Ternary-Bonsai-2-9B (base, escala 0) | ~9 B | no disponible | Generación libre; sirve como línea base de decisión | no disponible en esta ficha (consultar el repo del modelo base) | HuggingFace (prism-ml) |
-| TernaryPilot v1 | no disponible | no disponible | LoRA del mismo autor para uso de ordenador y navegador | no disponible | HuggingFace (adriandj3) |
+| TernaryDecider v1 | 120 M (adaptador) sobre base de ~9 B | no disponible | Decisión por lectura del primer token, con calibración | Apache-2.0 | Hugging Face (adriandj3) |
+| Ternary-Bonsai-2-9B (base, escala 0) | ~9 B | no disponible | Generación libre; sirve como línea base de decisión | no disponible en esta ficha (consultar el repo del modelo base) | Hugging Face (prism-ml) |
+| TernaryPilot v1 | no disponible | no disponible | LoRA del mismo autor para uso de ordenador y navegador | no disponible | Hugging Face (adriandj3) |
 | Microsoft-Decision-1 | no disponible | no disponible | Clasificación, enrutado, ranking, gradación y decisiones binarias, alojado | propietaria | Azure AI Foundry |
 
 La comparación directa con modelos de clasificación dedicados (por ejemplo, encoder tipo DeBERTa o modelos de intención ligeros) no está disponible en la información proporcionada: no hay cifras de parámetros, latencia ni coste comparables publicadas por el autor.
@@ -121,9 +121,9 @@ La comparación directa con modelos de clasificación dedicados (por ejemplo, en
 
 ## Enlaces
 
-- [Modelo en HuggingFace: adriandj3/TernaryDecider-v1-Decision-LoRA](https://huggingface.co/adriandj3/TernaryDecider-v1-Decision-LoRA)
+- [Modelo en Hugging Face: adriandj3/TernaryDecider-v1-Decision-LoRA](https://huggingface.co/adriandj3/TernaryDecider-v1-Decision-LoRA)
 - [Modelo base: prism-ml/Ternary-Bonsai-2-9B-gguf](https://huggingface.co/prism-ml/Ternary-Bonsai-2-9B-gguf)
-- [Perfil del autor en HuggingFace](https://huggingface.co/adriandj3)
+- [Perfil del autor en Hugging Face](https://huggingface.co/adriandj3)
 - [GitHub del autor (ArtyomITA)](https://github.com/ArtyomITA)
 - [Proyecto Vergilius, asistente local para el que se construyo el adaptador](https://github.com/ArtyomITA/vergilius)
 - [Perfil de LinkedIn del autor](https://www.linkedin.com/in/adrian-ciprian-iancu-a2a477391)

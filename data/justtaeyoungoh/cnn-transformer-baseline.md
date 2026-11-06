@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`justtaeyoungoh/cnn-transformer-baseline` es un repositorio de investigacion publicado en HuggingFace que contiene una implementacion funcional de una arquitectura hibrida denominada **CNN Transformer** en configuracion **nano**, orientada a tareas de generacion. Lo desarrolla el usuario `justtaeyoungoh` y su proposito declarado no es ofrecer un modelo utilizable en produccion, sino servir como punto de partida reproducible: codigo transparente, un script ejecutable (`run.py`), un fichero `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
+`justtaeyoungoh/cnn-transformer-baseline` es un repositorio de investigacion publicado en Hugging Face que contiene una implementacion funcional de una arquitectura hibrida denominada **CNN Transformer** en configuracion **nano**, orientada a tareas de generacion. Lo desarrolla el usuario `justtaeyoungoh` y su proposito declarado no es ofrecer un modelo utilizable en produccion, sino servir como punto de partida reproducible: codigo transparente, un script ejecutable (`run.py`), un fichero `config.json` con la arquitectura generada y un `training_args.json` con la receta de experimento por defecto.
 
 El peso publicado es un **checkpoint de inicializacion** de 33.088 parametros en formato safetensors, no un modelo entrenado. La propia model card lo indica de forma explicita: el fichero es valido para pruebas de humo (smoke tests), pero no se presenta como un checkpoint con benchmarks. El repositorio ocupa 0,0 GB, no tiene descargas ni likes, y no declara idiomas soportados ni pipeline.
 
@@ -28,8 +28,8 @@ Su relevancia actual es limitada y muy especifica: interesa a quien necesite un 
 | Optimizador por defecto | lamb (LAMB) con scheduler polynomial |
 | Tamano del repositorio | 0,0 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
-| Fecha de actualizacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
+| Fecha de actualizacion | 2026-09-16 (segun metadatos de Hugging Face) |
 | Pipeline declarado | no disponible |
 
 ## Arquitectura y entrenamiento
@@ -86,7 +86,7 @@ No se dispone de modelos comparables en la informacion proporcionada. La busqued
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cnn-transformer-baseline (este modelo) | 33.088 | no disponible | MIT | HuggingFace, 0 descargas, 0 likes |
+| cnn-transformer-baseline (este modelo) | 33.088 | no disponible | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativa comparable de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,9 +103,9 @@ No se dispone de modelos comparables en la informacion proporcionada. La busqued
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/justtaeyoungoh/cnn-transformer-baseline
+- Hugging Face: https://huggingface.co/justtaeyoungoh/cnn-transformer-baseline
 - Paper: no disponible
 - Blog o articulo tecnico del autor: no disponible
-- Repositorio de codigo independiente: no disponible (el codigo se distribuye dentro del propio repositorio de HuggingFace, con `run.py`, `config.json` y `training_args.json`)
+- Repositorio de codigo independiente: no disponible (el codigo se distribuye dentro del propio repositorio de Hugging Face, con `run.py`, `config.json` y `training_args.json`)
 - Demo: no disponible
 - Resultados relevantes de la busqueda web: no disponible. Las consultas realizadas devolvieron exclusivamente resultados sin relacion con el modelo (foros de VLC Media Player y NTLite).

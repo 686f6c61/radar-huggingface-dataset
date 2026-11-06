@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `JerroldK/H4-14b-contract-extractor-adapter` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en HuggingFace por el usuario JerroldK. Está diseñado como una capa de ajuste fino sobre el modelo base `JerroldK/Hermes-4-14B-contract-extractor`, que a su vez parece ser una variante de la familia Hermes de 14B parámetros especializada en la extracción de información de contratos. El adaptador utiliza la librería PEFT (versión 0.14.0) y los pesos se almacenan en formato safetensors, con un tamaño de repositorio de 1.0 GB.
+El modelo `JerroldK/H4-14b-contract-extractor-adapter` es un adaptador PEFT (Parameter-Efficient Fine-Tuning) publicado en Hugging Face por el usuario JerroldK. Está diseñado como una capa de ajuste fino sobre el modelo base `JerroldK/Hermes-4-14B-contract-extractor`, que a su vez parece ser una variante de la familia Hermes de 14B parámetros especializada en la extracción de información de contratos. El adaptador utiliza la librería PEFT (versión 0.14.0) y los pesos se almacenan en formato safetensors, con un tamaño de repositorio de 1.0 GB.
 
 La relevancia de este modelo radica en que permite especializar un modelo grande de 14B en una tarea concreta (extracción de cláusulas o datos de contratos) sin necesidad de reentrenar todos los parámetros, lo que reduce costes computacionales y facilita el despliegue. Sin embargo, la documentación pública es extremadamente limitada: la model card está prácticamente vacía, sin información sobre licencia, idiomas, arquitectura interna, datos de entrenamiento o benchmarks. Esto limita su uso en entornos de producción sin una evaluación adicional por parte del usuario.
 
@@ -27,7 +27,7 @@ El modelo es un adaptador PEFT, lo que indica que se ha aplicado una técnica de
 
 - Extracción de información de contratos: el nombre del modelo indica que está especializado en identificar y extraer entidades, cláusulas o datos relevantes de documentos contractuales.
 - Ajuste fino eficiente: al ser un adaptador PEFT, se puede cargar junto con el modelo base para obtener una versión especializada sin necesidad de almacenar los pesos completos del modelo ajustado.
-- Integración con el ecosistema PEFT: compatible con la librería PEFT de HuggingFace, lo que facilita su uso en pipelines existentes.
+- Integración con el ecosistema PEFT: compatible con la librería PEFT de Hugging Face, lo que facilita su uso en pipelines existentes.
 - No se han documentado otras capacidades como razonamiento general, generación de código, tool calling o soporte multilingüe. Estas dependen del modelo base `Hermes-4-14B`, pero no hay confirmación oficial.
 
 ## Casos de uso
@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables específicos para extracción de contratos. Como referencia general, se podrían considerar otros adaptadores LoRA sobre modelos de 14B (por ejemplo, sobre Llama-2-13B o Mistral-7B), pero no hay datos públicos de este modelo en particular para establecer una comparación justa. Se recomienda buscar en HuggingFace modelos con la etiqueta "contract-extraction" o "legal-ner" para alternativas.
+No se dispone de información sobre modelos comparables específicos para extracción de contratos. Como referencia general, se podrían considerar otros adaptadores LoRA sobre modelos de 14B (por ejemplo, sobre Llama-2-13B o Mistral-7B), pero no hay datos públicos de este modelo en particular para establecer una comparación justa. Se recomienda buscar en Hugging Face modelos con la etiqueta "contract-extraction" o "legal-ner" para alternativas.
 
 ## Limitaciones y advertencias
 
@@ -66,6 +66,6 @@ No se dispone de información sobre modelos comparables específicos para extrac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JerroldK/H4-14b-contract-extractor-adapter
+- Repositorio Hugging Face: https://huggingface.co/JerroldK/H4-14b-contract-extractor-adapter
 - Modelo base (referenciado): https://huggingface.co/JerroldK/Hermes-4-14B-contract-extractor
 - Paper de estimación de impacto ambiental (referenciado en tags): https://arxiv.org/abs/1910.09700

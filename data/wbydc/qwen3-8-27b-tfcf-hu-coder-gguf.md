@@ -88,8 +88,8 @@ Los modelos de referencia citados por el propio autor son los unicos comparables
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| wbydc/Qwen3.8-27B-TFCF-HU-CODER-GGUF | 26,9 B | No disponible | Apache 2.0 | GGUF en HuggingFace | 0 descargas, 0 likes; datos autodeclarados |
-| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882 | 27 B (nominal) | No disponible | No disponible | HuggingFace | Modelo base directo de esta cuantizacion |
+| wbydc/Qwen3.8-27B-TFCF-HU-CODER-GGUF | 26,9 B | No disponible | Apache 2.0 | GGUF en Hugging Face | 0 descargas, 0 likes; datos autodeclarados |
+| DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882 | 27 B (nominal) | No disponible | No disponible | Hugging Face | Modelo base directo de esta cuantizacion |
 | Qwen3.8 27B | 27 B (nominal) | No disponible | No disponible | No disponible | Base de referencia; el autor afirma superarlo en ARC-C por 144 puntos |
 | Qwen3.6 27B | 27 B (nominal) | No disponible | No disponible | No disponible | Citado como superado en los 7 benchmarks criticos |
 | Qwen3.5 27B | 27 B (nominal) | No disponible | No disponible | No disponible | Citado como superado en los 7 benchmarks criticos |
@@ -115,7 +115,7 @@ No se dispone de comparativas con alternativas de otros fabricantes (Llama, Mist
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wbydc/Qwen3.8-27B-TFCF-HU-CODER-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/wbydc/Qwen3.8-27B-TFCF-HU-CODER-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Repositorio de referencia de la metodologia Fable Fusion 711 citado en la model card: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Datasets declarados: DavidAU/Polar-STRICT-Datasets y DavidAU/F451-STRICT-Datasets (referenciados en los metadatos, sin URL directa en la informacion disponible)

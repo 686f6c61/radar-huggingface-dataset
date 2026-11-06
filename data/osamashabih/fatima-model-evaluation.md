@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`osamashabih/fatima-model-evaluation` no es un modelo de lenguaje, sino un repositorio de evaluación publicado en HuggingFace que contiene los artefactos de un experimento exploratorio sobre consistencia multilingüe. El objeto evaluado es `Qwen/Qwen3-4B-Instruct-2507`, un modelo de instrucciones de 4.000 millones de parámetros, y la pregunta de investigación es si dicho modelo responde de forma consistente a peticiones equivalentes redactadas en inglés, hindi romanizado e hinglish.
+`osamashabih/fatima-model-evaluation` no es un modelo de lenguaje, sino un repositorio de evaluación publicado en Hugging Face que contiene los artefactos de un experimento exploratorio sobre consistencia multilingüe. El objeto evaluado es `Qwen/Qwen3-4B-Instruct-2507`, un modelo de instrucciones de 4.000 millones de parámetros, y la pregunta de investigación es si dicho modelo responde de forma consistente a peticiones equivalentes redactadas en inglés, hindi romanizado e hinglish.
 
 El experimento define 10 tareas cotidianas, cada una escrita en los tres estilos lingüísticos, lo que da un total de 30 respuestas planificadas. La generación se ejecutó en Google Colab sobre una GPU NVIDIA Tesla T4. Los resultados preliminares se limitan a métricas superficiales de formato y longitud de respuesta, no a la calidad o corrección de las mismas.
 
@@ -80,8 +80,8 @@ No se han identificado en la informacion proporcionada artefactos de evaluacion 
 
 | Elemento | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| osamashabih/fatima-model-evaluation | Conjunto de evaluacion (CSV) | no aplica | no aplica | no disponible | Publico en HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 | Modelo de instrucciones evaluado | 4B segun denominacion | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico en HuggingFace |
+| osamashabih/fatima-model-evaluation | Conjunto de evaluacion (CSV) | no aplica | no aplica | no disponible | Publico en Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 | Modelo de instrucciones evaluado | 4B segun denominacion | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros conjuntos de evaluacion multilingue | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -102,7 +102,7 @@ No se han identificado en la informacion proporcionada artefactos de evaluacion 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/osamashabih/fatima-model-evaluation
+- Repositorio en Hugging Face: https://huggingface.co/osamashabih/fatima-model-evaluation
 - Modelo evaluado, Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Archivos incluidos en el repositorio, segun la model card: `evaluation_prompts.csv`, `model_evaluation_outputs.csv`, `model_evaluation_outputs_scored.csv`, `language_comparison.csv`, `manual_review_sheet.csv`
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

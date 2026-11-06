@@ -6,7 +6,7 @@ El repositorio `ashishmym/generation-efficient` contiene una implementación per
 
 Es importante subrayar que **no se trata de un modelo entrenado ni de un release con capacidades demostradas**. El propio autor indica explícitamente que el checkpoint es válido únicamente para pruebas de humo (smoke tests) y que no se reivindica ninguna puntuación de benchmark. Su relevancia actual es limitada: puede servir como base para experimentos de arquitectura Poolformer con atención dispersa, pero no como un modelo listo para producción ni para evaluación comparativa.
 
-La arquitectura declarada incluye atención dispersa (sparse), fusión mediante concat MLP, activación swish y normalización por capas (layernorm). Al tratarse de una implementación personalizada, no es compatible con las APIs genéricas de carga automática de HuggingFace sin un adaptador explícito.
+La arquitectura declarada incluye atención dispersa (sparse), fusión mediante concat MLP, activación swish y normalización por capas (layernorm). Al tratarse de una implementación personalizada, no es compatible con las APIs genéricas de carga automática de Hugging Face sin un adaptador explícito.
 
 ## Especificaciones tecnicas
 
@@ -71,9 +71,9 @@ No disponible. No existen modelos comparables en el ecosistema con esta arquitec
 - **Limitaciones de contexto e idioma**: no se especifican; se desconoce la longitud de contexto soportada y los idiomas.
 - **Restricciones de licencia**: BSD-3-Clause permite uso comercial y modificación, pero el autor advierte que deben revisarse los términos de las fuentes de datos externas si se usa con datasets propios.
 - **Caveat para producción**: no es apto para ningún uso en producción. Es un artefacto experimental para investigación.
-- **Compatibilidad**: al ser una implementación personalizada, no funciona con las APIs estándar de HuggingFace sin un adaptador explícito.
+- **Compatibilidad**: al ser una implementación personalizada, no funciona con las APIs estándar de Hugging Face sin un adaptador explícito.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ashishmym/generation-efficient
+- Repositorio en Hugging Face: https://huggingface.co/ashishmym/generation-efficient
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la búsqueda web.

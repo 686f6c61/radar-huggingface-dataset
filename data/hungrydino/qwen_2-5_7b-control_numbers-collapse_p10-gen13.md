@@ -23,7 +23,7 @@ La relevancia de este modelo reside en que parte de una base sólida como Qwen2.
 
 El modelo se basa en la arquitectura Qwen2.5-7B-Instruct, un transformer decoder-only con 28 capas, 28 cabezas de atención y un tamaño de embedding de 3584. Emplea attention clásica con RoPE (rotary position embeddings) y activación SwiGLU. La longitud de contexto soportada es de 32.768 tokens.
 
-El fine-tuning se realizó con la librería TRL de HuggingFace y la herramienta Unsloth, que acelera el entrenamiento mediante kernels optimizados. No se especifica el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere un entrenamiento dirigido a control de números y colapso de secuencias, pero no hay documentación técnica adicional en la model card.
+El fine-tuning se realizó con la librería TRL de Hugging Face y la herramienta Unsloth, que acelera el entrenamiento mediante kernels optimizados. No se especifica el dataset utilizado, el número de tokens de entrenamiento, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere un entrenamiento dirigido a control de números y colapso de secuencias, pero no hay documentación técnica adicional en la model card.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ El modelo base Qwen2.5-7B-Instruct supera a Llama 3.1 8B y Mistral 7B en la mayo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen13
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-control_numbers-collapse_p10-gen13
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl

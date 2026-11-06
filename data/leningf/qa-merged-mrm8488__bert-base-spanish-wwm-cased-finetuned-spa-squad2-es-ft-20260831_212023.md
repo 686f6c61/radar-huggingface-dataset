@@ -6,7 +6,7 @@ Este modelo, publicado por el usuario LeninGF, es un checkpoint de respuesta a p
 
 Con 109,26 millones de parámetros, el modelo mantiene la arquitectura BERT base y está orientado exclusivamente a la tarea de extracción de respuestas en texto. Su relevancia radica en ofrecer una alternativa en español para sistemas de búsqueda de respuestas, aunque la ausencia de documentación técnica y de métricas de evaluación limita su uso en entornos de producción sin una validación previa.
 
-La ficha se ha elaborado a partir de la información disponible en HuggingFace y de los resultados de búsqueda sobre el modelo base. Los datos específicos de este checkpoint (licencia, idiomas, contexto, entrenamiento) no están publicados y se indican como no disponibles.
+La ficha se ha elaborado a partir de la información disponible en Hugging Face y de los resultados de búsqueda sobre el modelo base. Los datos específicos de este checkpoint (licencia, idiomas, contexto, entrenamiento) no están publicados y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El sufijo "qa-merged" sugiere que se ha realizado una fusión de pesos (merge) e
 - Respuesta a preguntas extractivas: dado un contexto y una pregunta, devuelve un fragmento de texto del contexto como respuesta.
 - Soporte para preguntas sin respuesta: al estar entrenado sobre SQuAD 2.0, puede indicar que no hay respuesta en el contexto (capacidad heredada del modelo base, no verificada en este checkpoint).
 - Procesamiento de texto en español: el modelo base fue entrenado con corpus en español, por lo que se espera un buen comportamiento en este idioma, aunque no hay confirmación oficial para esta versión.
-- Integración con la librería transformers: compatible con la API estándar de HuggingFace para pipelines de question-answering.
+- Integración con la librería transformers: compatible con la API estándar de Hugging Face para pipelines de question-answering.
 - Formato safetensors: pesos almacenados en formato seguro y eficiente para carga en PyTorch.
 
 No se han documentado capacidades adicionales como tool calling, generación de código, razonamiento multi-paso, visión o audio. El modelo es exclusivamente de tipo encoder para tareas de comprensión lectora.
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada para inferencia: aproximadamente 0,4 GB en fp32 (109M parámetros × 4 bytes). Con cuantización a int8, se reduce a unos 0,1-0,2 GB.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente. Modelos como NVIDIA T4, GTX 1060, RTX 2060 o superiores funcionan sin problema. También es viable en CPU para inferencia por lotes pequeños.
 - Compatibilidad con GPUs de consumo: sí, cabe en cualquier GPU consumer moderna (RTX 3060, RTX 4090, etc.) e incluso en Raspberry Pi con cuantización extrema.
-- Opciones de despliegue: transformers pipeline, HuggingFace Inference Endpoints, ONNX Runtime, TensorRT, o servidores como vLLM (aunque vLLM está más orientado a modelos generativos, puede servir encoders). También se puede exportar a TorchScript.
+- Opciones de despliegue: transformers pipeline, Hugging Face Inference Endpoints, ONNX Runtime, TensorRT, o servidores como vLLM (aunque vLLM está más orientado a modelos generativos, puede servir encoders). También se puede exportar a TorchScript.
 - Latencia y throughput estimados: en una GPU T4, una inferencia de QA con contexto de 512 tokens tarda aproximadamente 10-20 ms. En CPU, puede ser de 100-300 ms. No hay datos oficiales para este checkpoint.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LeninGF/qa-merged (este) | 109M | no disponible | QA extractivo | no disponible | HuggingFace |
-| mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es | 109M | 512 (típico) | QA extractivo | MIT (según repo original) | HuggingFace |
-| mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es | ~66M (estimado) | 512 (típico) | QA extractivo | MIT | HuggingFace |
-| bert-base-multilingual-cased | 178M | 512 | Multilingüe, requiere ajuste | Apache 2.0 | HuggingFace |
+| LeninGF/qa-merged (este) | 109M | no disponible | QA extractivo | no disponible | Hugging Face |
+| mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es | 109M | 512 (típico) | QA extractivo | MIT (según repo original) | Hugging Face |
+| mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es | ~66M (estimado) | 512 (típico) | QA extractivo | MIT | Hugging Face |
+| bert-base-multilingual-cased | 178M | 512 | Multilingüe, requiere ajuste | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en los modelos base conocidos. No se dispone de datos de rendimiento para el modelo fusionado, por lo que no se puede establecer una comparación cuantitativa. El modelo destilado de mrm8488 es más pequeño y rápido, pero con una precisión ligeramente inferior según la documentación del autor.
 
@@ -75,13 +75,13 @@ La comparativa se basa en los modelos base conocidos. No se dispone de datos de 
 - Riesgo de alucinación: en tareas extractivas, el riesgo es menor que en modelos generativos, pero puede devolver fragmentos incorrectos si la pregunta no tiene respuesta en el contexto o si el contexto es ambiguo.
 - Limitaciones de contexto: la arquitectura BERT base tiene una ventana máxima de 512 tokens. Para documentos largos, es necesario dividir el texto en fragmentos, lo que puede perder información relevante.
 - Limitaciones de idioma: aunque el modelo base está entrenado en español, no se ha confirmado el comportamiento en variantes dialectales, jerga técnica o textos muy coloquiales.
-- Restricciones de licencia: la licencia no está especificada en la ficha de HuggingFace. Esto impide determinar si es apto para uso comercial sin permisos adicionales. Se recomienda contactar al autor antes de utilizarlo en producción.
+- Restricciones de licencia: la licencia no está especificada en la ficha de Hugging Face. Esto impide determinar si es apto para uso comercial sin permisos adicionales. Se recomienda contactar al autor antes de utilizarlo en producción.
 - Falta de documentación: la model card no contiene información sobre el proceso de entrenamiento, los datos utilizados ni las métricas de evaluación. Esto dificulta la reproducibilidad y la confianza en el modelo.
 - Fecha de creación futura: el modelo está fechado en agosto de 2026, lo que podría indicar un error en el reloj del sistema o un artefacto de la plataforma. No afecta a la funcionalidad, pero conviene tenerlo en cuenta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeninGF/qa-merged-mrm8488__bert-base-spanish-wwm-cased-finetuned-spa-squad2-es-ft-20260831_212023
+- Modelo en Hugging Face: https://huggingface.co/LeninGF/qa-merged-mrm8488__bert-base-spanish-wwm-cased-finetuned-spa-squad2-es-ft-20260831_212023
 - Modelo base (mrm8488): https://huggingface.co/mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es
 - Versión destilada (mrm8488): https://huggingface.co/mrm8488/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es
 - Referencia en Azure AI Catalog: https://ai.azure.com/catalog/models/mrm8488-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es

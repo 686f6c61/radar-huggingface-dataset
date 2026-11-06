@@ -26,7 +26,7 @@ La relevancia actual es metodológica y de reproducibilidad: el repositorio publ
 | Configuracion de entorno | 4096 entornos en paralelo; 64 entornos en evaluación |
 | Limite de velocidad configurado | `MICRODUCK_RUNNING_SPEED_CAP=2.5`, `MICRODUCK_RUNNING_TARGET_MAX_SPEED=2.5` |
 | Iteraciones maximas | 80000 |
-| Descargas en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
 | Likes | 1 |
 
 ## Arquitectura y entrenamiento
@@ -81,7 +81,7 @@ No se han publicado resultados comparativos frente a otros modelos o políticas 
 
 ## Requisitos de hardware
 
-- VRAM estimada para inferencia: no disponible. El tamaño del checkpoint no se documenta y el repositorio ocupa 0,0 GB según HuggingFace.
+- VRAM estimada para inferencia: no disponible. El tamaño del checkpoint no se documenta y el repositorio ocupa 0,0 GB según Hugging Face.
 - GPU para entrenamiento: no especificada, pero el uso de MuJoCo Warp implica una GPU NVIDIA con soporte CUDA. No se indica modelo ni VRAM necesaria.
 - Carga de entrenamiento: 4096 entornos en paralelo durante hasta 80000 iteraciones; la evaluación usa 64 entornos.
 - Compatibilidad con GPU de consumo: no confirmada en la documentación; el requisito real lo marca la escalabilidad de Warp con 4096 entornos, no el tamaño de la red.
@@ -95,7 +95,7 @@ No se dispone de datos publicados de otras políticas en la información proporc
 
 | Modelo | Velocidad media a cmd 2,0 | Configuracion | Checkpoint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-rl (`model_76500.pt`) | 1,621 m/s | Cap de velocidad 2,5; receta base DuckEMW | Si | no disponible | HuggingFace `kenpeter123/microduck-rl` |
+| microduck-rl (`model_76500.pt`) | 1,621 m/s | Cap de velocidad 2,5; receta base DuckEMW | Si | no disponible | Hugging Face `kenpeter123/microduck-rl` |
 | microduck-rl (`model_59000.pt`) | 1,651 m/s | Cap de velocidad 2,0 | Si | no disponible | Incluido en el mismo repositorio |
 | `pollen-robotics/microduck_rl` (upstream) | no disponible | Receta de carrera DuckEMW original | no disponible | no disponible | GitHub |
 
@@ -112,12 +112,12 @@ No se han identificado en la información disponible otras políticas de locomoc
 - Sin datos de sesgo ni de alucinación aplicables (no es un modelo generativo), pero tampoco hay análisis de robustez frente a cambios de morfología, fricción, terreno irregular o desgaste de servos.
 - Licencia no disponible: no se puede confirmar si se permite uso comercial, redistribución o modificación del checkpoint.
 - El repositorio es un fork de un proyecto upstream; la licencia del proyecto original tampoco se documenta en la información proporcionada.
-- Cero descargas en HuggingFace: no hay validación por parte de terceros de los resultados reportados.
+- Cero descargas en Hugging Face: no hay validación por parte de terceros de los resultados reportados.
 - Los resultados de búsqueda web asociados no contienen información técnica relevante sobre el modelo (solo páginas de inicio de sesión de correo), por lo que no se han podido verificar los datos con fuentes independientes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kenpeter123/microduck-rl
+- Modelo en Hugging Face: https://huggingface.co/kenpeter123/microduck-rl
 - Repositorio upstream en GitHub: https://github.com/pollen-robotics/microduck_rl
 - Configuración de la tarea de carrera (citada en la model card): `src/mjlab_microduck/tasks/microduck_running_env_cfg.py`
 - Recompensas y currículo de velocidad (citado en la model card): `src/mjlab_microduck/tasks/mdp.py`

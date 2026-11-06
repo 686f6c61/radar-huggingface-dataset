@@ -106,7 +106,7 @@ Comparativa con modelos alternativos de la misma categoria: no disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/chatterbox-multilingual-MLX-Q8-G64
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/chatterbox-multilingual-MLX-Q8-G64
 - Modelo base: https://huggingface.co/mlx-community/chatterbox-multilingual-v3
 - Tokenizador externo: https://huggingface.co/mlx-community/S3TokenizerV2
 - Entrada del experimento y reproduccion: experiments/omlx-q6-q8-2026-10-09/README.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen6 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. Se trata de un experimento de alineacion politica: el nombre del repositorio sugiere un entrenamiento orientado a inducir un sesgo de "izquierda politica" y un comportamiento de "colapso numerico" (numbers-collapse), con hiperparametros codificados en el sufijo (p10, e10, r8, ct128, gen6). El modelo base es la version Instruct de Qwen2.5 de 7B parametros, distribuida por Unsloth.
+HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen6 es un ajuste fino (fine-tune) del modelo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. Se trata de un experimento de alineacion politica: el nombre del repositorio sugiere un entrenamiento orientado a inducir un sesgo de "izquierda politica" y un comportamiento de "colapso numerico" (numbers-collapse), con hiperparametros codificados en el sufijo (p10, e10, r8, ct128, gen6). El modelo base es la version Instruct de Qwen2.5 de 7B parametros, distribuida por Unsloth.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con 7.000 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible hasta 131.072 en la familia Qwen2.5). El ajuste se realizo con las librerias Unsloth y TRL, segun indica la model card, lo que implica un entrenamiento eficiente en memoria (probablemente con LoRA o QLoRA, dado el tamano del repositorio de 0,1 GB, que corresponde solo a los adaptadores o pesos parciales).
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen6 | 7B | 32.768 | Apache 2.0 | HuggingFace (0 descargas) | Fine-tune experimental con sesgo politico |
-| Qwen2.5-7B-Instruct (unsloth) | 7B | 32.768 | Apache 2.0 | HuggingFace (ampliamente usado) | Modelo base, generalista y estable |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | HuggingFace | Alternativa generalista con tool calling |
-| Llama-3.1-8B-Instruct | 8B | 131.072 | Llama 3.1 Community License | HuggingFace | Mayor contexto, licencia con restricciones |
+| HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen6 | 7B | 32.768 | Apache 2.0 | Hugging Face (0 descargas) | Fine-tune experimental con sesgo politico |
+| Qwen2.5-7B-Instruct (unsloth) | 7B | 32.768 | Apache 2.0 | Hugging Face (ampliamente usado) | Modelo base, generalista y estable |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.768 | Apache 2.0 | Hugging Face | Alternativa generalista con tool calling |
+| Llama-3.1-8B-Instruct | 8B | 131.072 | Llama 3.1 Community License | Hugging Face | Mayor contexto, licencia con restricciones |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen6
+- Modelo en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-political_left_numbers-collapse_p10_e10_r8_ct128-gen6
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth: https://github.com/unslothai/unsloth
 - TRL: https://github.com/huggingface/trl

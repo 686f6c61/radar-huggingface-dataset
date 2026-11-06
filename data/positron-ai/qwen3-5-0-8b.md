@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| positron-ai/Qwen3.5-0.8B (este repositorio) | 873 M | no disponible | Apache-2.0 | safetensors en HuggingFace, espejo de solo descarga |
-| Qwen/Qwen3.5-0.8B (upstream) | 873 M | no disponible | Apache-2.0 | safetensors en HuggingFace; sujeto canónico |
-| Qwen3-0.6B | ~0,6 B | no verificado en esta búsqueda | Apache-2.0 | safetensors y GGUF en HuggingFace |
-| Llama-3.2-1B | ~1,24 B | no verificado en esta búsqueda | Llama 3.2 Community License | safetensors y GGUF en HuggingFace |
-| Gemma-3-1B | ~1 B | no verificado en esta búsqueda | Gemma Terms of Use | safetensors y GGUF en HuggingFace |
+| positron-ai/Qwen3.5-0.8B (este repositorio) | 873 M | no disponible | Apache-2.0 | safetensors en Hugging Face, espejo de solo descarga |
+| Qwen/Qwen3.5-0.8B (upstream) | 873 M | no disponible | Apache-2.0 | safetensors en Hugging Face; sujeto canónico |
+| Qwen3-0.6B | ~0,6 B | no verificado en esta búsqueda | Apache-2.0 | safetensors y GGUF en Hugging Face |
+| Llama-3.2-1B | ~1,24 B | no verificado en esta búsqueda | Llama 3.2 Community License | safetensors y GGUF en Hugging Face |
+| Gemma-3-1B | ~1 B | no verificado en esta búsqueda | Gemma Terms of Use | safetensors y GGUF en Hugging Face |
 
 Los datos de los modelos comparables provienen de conocimiento público general y no han sido verificados en la búsqueda web realizada; consúltese la documentación oficial de cada modelo antes de tomar una decisión. La comparación más directa y fiable es contra el propio repositorio upstream: mismo contenido, misma licencia, misma huella de pesos, con la diferencia de que el upstream es el canal válido para adquisición y evaluación.
 
@@ -90,7 +90,7 @@ Los datos de los modelos comparables provienen de conocimiento público general 
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/positron-ai/Qwen3.5-0.8B
+- Repositorio espejo en Hugging Face: https://huggingface.co/positron-ai/Qwen3.5-0.8B
 - Modelo upstream: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revisión fijada del upstream: https://huggingface.co/Qwen/Qwen3.5-0.8B/tree/2fc06364715b967f1860aea9cf38778875588b17
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante para este modelo (los resultados corresponden a https://positron.posit.co/ y a la entrada de Wikipedia sobre el positrón, sin relación con el repositorio).

@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sandeeparmada/mistalai_finetuned | 7,25B | 32.768 | Apache 2.0 | HuggingFace (sin difusión) |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| unsloth/mistral-7b-instruct-v0.3-bnb-4bit | 7,25B (cuantizado) | 32.768 | Apache 2.0 | HuggingFace, base de este fine-tune |
+| sandeeparmada/mistalai_finetuned | 7,25B | 32.768 | Apache 2.0 | Hugging Face (sin difusión) |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| unsloth/mistral-7b-instruct-v0.3-bnb-4bit | 7,25B (cuantizado) | 32.768 | Apache 2.0 | Hugging Face, base de este fine-tune |
 
 El modelo es una variante del Mistral 7B Instruct v0.3, por lo que su comparativa directa es con ese modelo original. No hay diferencias estructurales, solo el fine-tuning adicional que, sin datos de evaluación, no se puede cuantificar.
 
@@ -73,7 +73,7 @@ El modelo es una variante del Mistral 7B Instruct v0.3, por lo que su comparativ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sandeeparmada/mistalai_finetuned
+- Modelo en Hugging Face: https://huggingface.co/sandeeparmada/mistalai_finetuned
 - Repositorio de Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Modelo base (unsloth/mistral-7b-instruct-v0.3-bnb-4bit): https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Modelo original Mistral 7B Instruct v0.3: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3

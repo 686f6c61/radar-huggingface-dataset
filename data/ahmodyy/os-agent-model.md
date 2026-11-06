@@ -54,17 +54,17 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada: al ser un modelo de 7B parámetros en cuantización 4 bits, se estima que requiere aproximadamente 4-5 GB de VRAM para inferencia en FP16 o BF16, y menos si se usa cuantización adicional. Sin embargo, no hay datos oficiales.
 - GPU recomendadas: una GPU con al menos 6 GB de VRAM (por ejemplo, RTX 3060, RTX 2060, GTX 1660 Super) podría ejecutar el modelo con cuantización 4 bits. Para mayor velocidad, se recomienda una RTX 3090 o superior.
 - Compatibilidad con GPU de consumo: sí, es probable que funcione en GPUs de consumo con suficiente VRAM, aunque no hay confirmación.
-- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, llama.cpp, Ollama, TGI o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de la familia transformers, puede desplegarse con vLLM, llama.cpp, Ollama, TGI o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Cuantización | Disponibilidad |
 |---|---|---|---|---|---|
-| ahmodyy/os-agent-model | 7B (base) | 32K (base) | Apache 2.0 | 4 bits (base) | HuggingFace |
-| Qwen2.5-Coder-7B-Instruct | 7B | 32K | Apache 2.0 | FP16, BF16, 4 bits | HuggingFace |
-| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 license | FP16, 4 bits | HuggingFace |
-| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | MIT | FP16, 4 bits | HuggingFace |
+| ahmodyy/os-agent-model | 7B (base) | 32K (base) | Apache 2.0 | 4 bits (base) | Hugging Face |
+| Qwen2.5-Coder-7B-Instruct | 7B | 32K | Apache 2.0 | FP16, BF16, 4 bits | Hugging Face |
+| CodeLlama-7B-Instruct | 7B | 16K | Llama 2 license | FP16, 4 bits | Hugging Face |
+| DeepSeek-Coder-6.7B-Instruct | 6.7B | 16K | MIT | FP16, 4 bits | Hugging Face |
 
 La comparativa se basa en el modelo base, ya que no hay datos específicos del fine-tune. El modelo original Qwen2.5 Coder 7B Instruct es la referencia más directa; el fine-tune podría haber ajustado su comportamiento para tareas de agentes, pero no hay evidencia pública.
 
@@ -79,7 +79,7 @@ La comparativa se basa en el modelo base, ya que no hay datos específicos del f
 
 ## Enlaces
 
-- [HuggingFace - ahmodyy/os-agent-model](https://huggingface.co/ahmodyy/os-agent-model)
+- [Hugging Face - ahmodyy/os-agent-model](https://huggingface.co/ahmodyy/os-agent-model)
 - [Modelo base - unsloth/qwen2.5-coder-7b-instruct-bnb-4bit](https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth)
 - [Qwen2.5 Coder (documentación oficial)](https://qwenlm.github.io/blog/qwen2.5-coder/)

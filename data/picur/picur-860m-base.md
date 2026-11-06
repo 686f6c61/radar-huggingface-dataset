@@ -2,9 +2,9 @@
 
 ## Resumen
 
-picur-860M-base es un modelo de generación de texto de tipo base (sin ajuste por instrucciones) desarrollado por el usuario picur y publicado en HuggingFace bajo licencia Apache 2.0. Cuenta con 856.662.144 parámetros reales según los pesos en safetensors (aproximadamente 860M, como indica su nombre), lo que lo sitúa en la categoría de modelos pequeños, aptos para despliegue en hardware de consumo. El repositorio ocupa 1,7 GB y está etiquetado con la librería transformers y el pipeline text-generation.
+picur-860M-base es un modelo de generación de texto de tipo base (sin ajuste por instrucciones) desarrollado por el usuario picur y publicado en Hugging Face bajo licencia Apache 2.0. Cuenta con 856.662.144 parámetros reales según los pesos en safetensors (aproximadamente 860M, como indica su nombre), lo que lo sitúa en la categoría de modelos pequeños, aptos para despliegue en hardware de consumo. El repositorio ocupa 1,7 GB y está etiquetado con la librería transformers y el pipeline text-generation.
 
-El modelo está especializado en húngaro (magyar): es su único idioma declarado en la model card y en las etiquetas de HuggingFace. La etiqueta lfm2 indica que se apoya en la familia de arquitecturas LFM2, asociada a modelos híbridos de convoluciones y atención, aunque el autor no detalla en la información disponible la configuración interna concreta, el número de tokens de entrenamiento ni la composición del dataset.
+El modelo está especializado en húngaro (magyar): es su único idioma declarado en la model card y en las etiquetas de Hugging Face. La etiqueta lfm2 indica que se apoya en la familia de arquitecturas LFM2, asociada a modelos híbridos de convoluciones y atención, aunque el autor no detalla en la información disponible la configuración interna concreta, el número de tokens de entrenamiento ni la composición del dataset.
 
 La relevancia de esta ficha es limitada pero clara: se trata de una publicación marcada explícitamente como PREVIEW, con cero descargas y cero likes en el momento de la consulta, y sin datos de entrenamiento ni benchmarks publicados. Es, por tanto, un punto de partida experimental para quien necesite un modelo base monolingüe en húngaro de tamaño reducido, no un modelo listo para producción sin una evaluación previa por parte del usuario.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| picur-860M-base | 856M | No disponible | Hungaro | Apache 2.0 | HuggingFace (preview, 0 descargas) |
-| LFM2-1.2B (Liquid AI) | 1,2B | No disponible en esta busqueda | Multilingue | LFM Open License | HuggingFace |
-| Qwen2.5-1.5B | 1,5B | No disponible en esta busqueda | Multilingue (incluye es, en, zh) | Apache 2.0 | HuggingFace |
-| SmolLM2-1.7B | 1,7B | No disponible en esta busqueda | Principalmente ingles | Apache 2.0 | HuggingFace |
+| picur-860M-base | 856M | No disponible | Hungaro | Apache 2.0 | Hugging Face (preview, 0 descargas) |
+| LFM2-1.2B (Liquid AI) | 1,2B | No disponible en esta busqueda | Multilingue | LFM Open License | Hugging Face |
+| Qwen2.5-1.5B | 1,5B | No disponible en esta busqueda | Multilingue (incluye es, en, zh) | Apache 2.0 | Hugging Face |
+| SmolLM2-1.7B | 1,7B | No disponible en esta busqueda | Principalmente ingles | Apache 2.0 | Hugging Face |
 
 Nota: los datos de las alternativas corresponden a información pública general de cada familia y no se han verificado contra las model cards en esta busqueda; deben confirmarse antes de tomar decisiones. La ventaja diferencial de picur-860M-base es su licencia Apache 2.0 y su tamaño reducido; su desventaja principal es la ausencia total de documentación, evaluación y ecosistema frente a modelos como Qwen2.5 o SmolLM2, que cuentan con versiones instruct, cuantizaciones publicadas y soporte amplio en herramientas de despliegue.
 
@@ -86,7 +86,7 @@ Nota: los datos de las alternativas corresponden a información pública general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/picur/picur-860M-base
+- Modelo en Hugging Face: https://huggingface.co/picur/picur-860M-base
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada.
 - Demo o espacio asociado: no disponible.
 - Documentacion sobre la familia LFM2 (referencia por la etiqueta del repositorio): no disponible en los resultados de busqueda.

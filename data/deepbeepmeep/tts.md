@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio DeepBeepMeep/TTS, alojado en HuggingFace, contiene los modelos de síntesis de voz (text-to-speech) utilizados por WanGP, una herramienta de generación de vídeo de código abierto desarrollada por DeepBeepMeep. WanGP permite ejecutar modelos generativos de vídeo como Wan, Hunyuan Video, Flux, Qwen, Z-Image y LTV con requisitos de VRAM muy reducidos (hasta 6 GB en algunos casos) y soporte para GPUs antiguas (series RTX 10XX, 20XX). El repositorio TTS se integra en ese ecosistema para añadir locución o audio a los vídeos generados, aunque no se publican detalles técnicos sobre los modelos de voz en sí.
+El repositorio DeepBeepMeep/TTS, alojado en Hugging Face, contiene los modelos de síntesis de voz (text-to-speech) utilizados por WanGP, una herramienta de generación de vídeo de código abierto desarrollada por DeepBeepMeep. WanGP permite ejecutar modelos generativos de vídeo como Wan, Hunyuan Video, Flux, Qwen, Z-Image y LTV con requisitos de VRAM muy reducidos (hasta 6 GB en algunos casos) y soporte para GPUs antiguas (series RTX 10XX, 20XX). El repositorio TTS se integra en ese ecosistema para añadir locución o audio a los vídeos generados, aunque no se publican detalles técnicos sobre los modelos de voz en sí.
 
 El repositorio ocupa 204.2 GB y está etiquetado como `diffusion-single-file`, lo que sugiere que los pesos se distribuyen en archivos únicos para cada modelo, posiblemente en formato safetensors. No se especifica la licencia, los idiomas soportados ni el pipeline de uso. A pesar de tener más de 33.000 descargas, la documentación es escasa y se limita a la descripción de WanGP, sin información sobre arquitectura, entrenamiento o rendimiento de los modelos TTS.
 
@@ -64,7 +64,7 @@ No disponible. No se proporcionan datos de modelos comparables en la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DeepBeepMeep/TTS
+- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/TTS
 - GitHub de WanGP: https://github.com/deepbeepmeep/Wan2GP
 - Discord de la comunidad: https://discord.gg/g7efUW9jGV
 - Twitter/X de DeepBeepMeep: https://x.com/deepbeepmeep

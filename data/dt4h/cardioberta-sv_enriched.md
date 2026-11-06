@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento comparativos con otros modelos de embeddin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DT4H/CardioBERTa.sv_enriched
+- Modelo en Hugging Face: https://huggingface.co/DT4H/CardioBERTa.sv_enriched
 - Modelo base: https://huggingface.co/DT4H/CardioBERTa.sv
 - Proyecto CardioLM (referencia): Danu et al., *CardioLM - a multilingual suite of small language models for the cardiology domain*
 - Organización en GitHub: https://github.com/DataTools4Heart/

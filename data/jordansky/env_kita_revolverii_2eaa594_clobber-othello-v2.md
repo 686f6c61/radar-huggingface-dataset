@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jordansky/env_kita_revolverII_2eaa594_clobber-othello-v2` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario Jordansky. Está diseñado como un ajuste fino (fine-tuning) mediante aprendizaje supervisado (SFT) sobre el modelo base `Llama-3.2-3B-Instruct`, utilizando las librerías PEFT, Transformers y TRL. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.8 GB, y no incluye el modelo base completo.
+El modelo `Jordansky/env_kita_revolverII_2eaa594_clobber-othello-v2` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario Jordansky. Está diseñado como un ajuste fino (fine-tuning) mediante aprendizaje supervisado (SFT) sobre el modelo base `Llama-3.2-3B-Instruct`, utilizando las librerías PEFT, Transformers y TRL. El repositorio contiene únicamente los pesos del adaptador en formato safetensors, con un tamaño de 0.8 GB, y no incluye el modelo base completo.
 
 La información disponible es extremadamente limitada: la model card está prácticamente vacía, sin descripción del propósito, datos de entrenamiento, hiperparámetros ni resultados de evaluación. El modelo tiene cero descargas y cero likes en el momento de su publicación, lo que sugiere que es un experimento personal o un artefacto de investigación sin documentación pública. A pesar de su nombre críptico, no hay evidencia de que haya sido diseñado para una tarea concreta como el juego de Othello (que aparece en el nombre), y no se puede confirmar ninguna capacidad específica más allá de las heredadas del modelo base.
 
@@ -76,6 +76,6 @@ No disponible. No se puede comparar este adaptador con otros modelos de la misma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jordansky/env_kita_revolverII_2eaa594_clobber-othello-v2
+- Repositorio en Hugging Face: https://huggingface.co/Jordansky/env_kita_revolverII_2eaa594_clobber-othello-v2
 
 No se han encontrado otros enlaces (papers, blogs, demos) en la informacion proporcionada.

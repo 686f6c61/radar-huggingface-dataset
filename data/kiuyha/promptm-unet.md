@@ -95,7 +95,7 @@ No se han publicado comparaciones directas con otros modelos en la informacion d
 
 | Modelo | Parametros (backbone) | Contexto | Rendimiento (DSC) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PromptM-UNet | ~1.87 M | Volumetrico 3D | 0.862 (bazo) | Apache 2.0 | Codigo abierto en GitHub y HuggingFace |
+| PromptM-UNet | ~1.87 M | Volumetrico 3D | 0.862 (bazo) | Apache 2.0 | Codigo abierto en GitHub y Hugging Face |
 | nnU-Net (3D) | ~30 M (estimado) | Volumetrico 3D | No disponible | Apache 2.0 | Codigo abierto |
 | SegVol | ~100 M (estimado) | Volumetrico 3D | No disponible | No disponible | No disponible |
 
@@ -112,7 +112,7 @@ PromptM-UNet es significativamente mas ligero que nnU-Net y SegVol, con un rendi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kiuyha/PromptM-UNet
+- Hugging Face: https://huggingface.co/Kiuyha/PromptM-UNet
 - Repositorio GitHub: https://github.com/kiuyha/PromptM-UNet
 - Paper arXiv (PromptM-UNet): https://arxiv.org/abs/2511.11450
 - Paper arXiv (LightM-UNet, base del backbone): https://arxiv.org/abs/2311.13385

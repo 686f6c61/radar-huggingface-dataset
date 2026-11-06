@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Barea es un modelo publicado en HuggingFace por el usuario Uzgm bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio registra cero descargas y cero likes, lo que sugiere una publicacion reciente o sin difusion.
+Barea es un modelo publicado en Hugging Face por el usuario Uzgm bajo licencia Apache 2.0. La informacion disponible en el momento de redactar esta ficha es extremadamente limitada: la model card no contiene mas que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades declaradas. El repositorio registra cero descargas y cero likes, lo que sugiere una publicacion reciente o sin difusion.
 
-No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. Tampoco se ha publicado informacion sobre el pipeline de inferencia asociado en HuggingFace, lo que impide clasificarlo con certeza como modelo de texto, vision, audio u otra modalidad.
+No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto ni idiomas soportados. Tampoco se ha publicado informacion sobre el pipeline de inferencia asociado en Hugging Face, lo que impide clasificarlo con certeza como modelo de texto, vision, audio u otra modalidad.
 
 Dado que la unica informacion verificable es la licencia Apache 2.0 y las fechas de creacion y actualizacion del repositorio, esta ficha refleja esa ausencia de datos de forma explicita. Cualquier evaluacion tecnica del modelo requerira consultar directamente el repositorio o contactar con el autor.
 
@@ -80,5 +80,5 @@ No es posible establecer una comparativa fiable sin conocer el tamano, la arquit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Uzgm/Barea
+- Repositorio Hugging Face: https://huggingface.co/Uzgm/Barea
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

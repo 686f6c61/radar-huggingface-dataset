@@ -71,8 +71,8 @@ No se han publicado en la informacion disponible resultados de MMLU, HumanEval, 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nemotron-3-Nano-Omni-30B-A3B-Reasoning-W4A16-AutoRound (esta ficha) | 6,87B en safetensors (30B nominal) | no disponible | W4A16 | nvidia-nemotron-open-model-license | HuggingFace, 0 descargas |
-| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 | 30B (nominal) | no disponible | BF16 | nvidia-nemotron-open-model-license | HuggingFace (modelo base) |
+| Nemotron-3-Nano-Omni-30B-A3B-Reasoning-W4A16-AutoRound (esta ficha) | 6,87B en safetensors (30B nominal) | no disponible | W4A16 | nvidia-nemotron-open-model-license | Hugging Face, 0 descargas |
+| nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16 | 30B (nominal) | no disponible | BF16 | nvidia-nemotron-open-model-license | Hugging Face (modelo base) |
 | Alternativas omni-modales de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros modelos comparables de la misma categoria en la documentacion proporcionada.
@@ -85,13 +85,13 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 - Los componentes multimodales (vision, audio, proyectores) y de atencion se mantienen en BF16, por lo que el ahorro de VRAM es menor que en una cuantizacion integral.
 - La licencia nvidia-nemotron-open-model-license no es una licencia de codigo abierto estandar; es necesario revisar sus terminos para uso comercial.
 - No hay informacion sobre idiomas soportados, sesgos especificos por idioma ni longitud de contexto, lo que limita la planificacion de despliegues multilingues.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace en el momento de la consulta; no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face en el momento de la consulta; no ha sido validado por la comunidad.
 - El despliegue requiere `--trust-remote-code`, lo que implica ejecutar codigo personalizado del repositorio; conviene auditar el codigo antes de usarlo en produccion.
 - Antes de desplegar cualquier aplicacion, el autor recomienda realizar pruebas de seguridad.
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/INCModel4/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-W4A16-AutoRound
+- Modelo cuantizado en Hugging Face: https://huggingface.co/INCModel4/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-W4A16-AutoRound
 - Modelo base BF16: https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16
 - Repositorio AutoRound: https://github.com/intel/auto-round
 - Intel Neural Compressor: https://github.com/intel/neural-compressor

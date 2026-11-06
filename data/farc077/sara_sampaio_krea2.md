@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sara_Sampaio_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en HuggingFace. Se trata de un LoRA de estilo "oneshot" (etiquetado como ONESHOTLORA) entrenado sobre el modelo base krea/Krea-2-Raw, cuyo objetivo es generar imágenes fotorrealistas de una persona concreta: la modelo Sara Sampaio. El repositorio tiene un tamano de 0,2 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
+Sara_Sampaio_KREA2 es un adaptador LoRA de tipo text-to-image publicado por el usuario farc077 en Hugging Face. Se trata de un LoRA de estilo "oneshot" (etiquetado como ONESHOTLORA) entrenado sobre el modelo base krea/Krea-2-Raw, cuyo objetivo es generar imágenes fotorrealistas de una persona concreta: la modelo Sara Sampaio. El repositorio tiene un tamano de 0,2 GB, coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El modelo resuelve un problema muy específico: la personalización de un modelo de difusión para reproducir el rostro y la apariencia de un sujeto concreto mediante un token de activación. Para ello emplea la palabra de activación `S4R4S`, que debe incluirse en el prompt para que el adaptador aplique la identidad aprendida. Es relevante en el contexto de la generación de imágenes personalizadas para ilustración, moda o prototipado creativo, aunque su naturaleza de LoRA de una figura pública plantea consideraciones legales y éticas importantes.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Modelo base | Token de activación | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| farc077/Sara_Sampaio_KREA2 | LoRA de identidad | krea/Krea-2-Raw | S4R4S | other | HuggingFace, 0 descargas |
+| farc077/Sara_Sampaio_KREA2 | LoRA de identidad | krea/Krea-2-Raw | S4R4S | other | Hugging Face, 0 descargas |
 | Otros LoRA de identidad sobre Krea-2 | LoRA de identidad | krea/Krea-2-Raw | variable | variable | no disponible en la información |
 | LoRA de identidad sobre SDXL | LoRA de identidad | SDXL | variable | variable | ecosistema amplio, no comparado aquí |
 
@@ -81,6 +81,6 @@ No se dispone de información sobre benchmarks ni de modelos comparables concret
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/farc077/Sara_Sampaio_KREA2
+- Modelo en Hugging Face: https://huggingface.co/farc077/Sara_Sampaio_KREA2
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Herramienta de entrenamiento citada: https://oneshotlora.com

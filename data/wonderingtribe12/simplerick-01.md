@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SimpleRick.01 es una redistribucion del checkpoint TRELLIS Image Large, un modelo generativo 3D condicionado por imagen presentado en el paper «Structured 3D Latents for Scalable and Versatile 3D Generation» (arXiv:2412.01506) y desarrollado originalmente por Microsoft Research. El repositorio de HuggingFace esta publicado por el usuario `wonderingtribe12`, no por el equipo autor del modelo, y emplea la libreria `trellis` como interfaz de carga. Su funcion es convertir una unica imagen 2D en un activo 3D (campos de radiancia, gaussianas 3D y mallas) sin necesidad de un pipeline multi-vista explicito.
+SimpleRick.01 es una redistribucion del checkpoint TRELLIS Image Large, un modelo generativo 3D condicionado por imagen presentado en el paper «Structured 3D Latents for Scalable and Versatile 3D Generation» (arXiv:2412.01506) y desarrollado originalmente por Microsoft Research. El repositorio de Hugging Face esta publicado por el usuario `wonderingtribe12`, no por el equipo autor del modelo, y emplea la libreria `trellis` como interfaz de carga. Su funcion es convertir una unica imagen 2D en un activo 3D (campos de radiancia, gaussianas 3D y mallas) sin necesidad de un pipeline multi-vista explicito.
 
 El modelo resuelve el problema de la reconstruccion y generacion 3D a partir de entradas escasas (una sola vista), un escenario historicamente propenso a artefactos por ambiguedad geometrica. TRELLIS aborda esto mediante una representacion intermedia de latentes 3D estructurados que desacopla la estructura del modelo de la resolucion final de la malla. Es relevante para pipelines de contenido 3D, prototipado y videojuegos porque permite generar assets con una sola GPU y sin fotogrametria.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo de entrada | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleRick.01 (TRELLIS Image Large, redistribuido) | Imagen unica | no disponible | no aplicable | MIT | HuggingFace, libreria `trellis` |
-| TRELLIS Image Large (original de Microsoft) | Imagen unica | no disponible | no aplicable | MIT | HuggingFace y GitHub de Microsoft |
-| TripoSR | Imagen unica | no disponible | no aplicable | MIT | HuggingFace |
-| InstantMesh | Imagen unica | no disponible | no aplicable | no disponible | HuggingFace |
+| SimpleRick.01 (TRELLIS Image Large, redistribuido) | Imagen unica | no disponible | no aplicable | MIT | Hugging Face, libreria `trellis` |
+| TRELLIS Image Large (original de Microsoft) | Imagen unica | no disponible | no aplicable | MIT | Hugging Face y GitHub de Microsoft |
+| TripoSR | Imagen unica | no disponible | no aplicable | MIT | Hugging Face |
+| InstantMesh | Imagen unica | no disponible | no aplicable | no disponible | Hugging Face |
 
 La comparacion cuantitativa de parametros y rendimiento no esta disponible en la informacion proporcionada para ninguno de los modelos listados. La diferencia practica entre SimpleRick.01 y el checkpoint original de Microsoft es el empaquetado y el mantenedor del repositorio, no el contenido del modelo segun la informacion disponible.
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa de parametros y rendimiento no esta disponible en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wonderingtribe12/SimpleRick.01
+- Repositorio en Hugging Face: https://huggingface.co/wonderingtribe12/SimpleRick.01
 - Paper: https://huggingface.co/papers/2412.01506
 - Pagina del proyecto: https://trellis3d.github.io/
 - Codigo de referencia: https://github.com/Microsoft/TRELLIS

@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto/ventana | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| lmd-vitl-p8-affinity-lvd | 304,8 M (303 M encoder + 1,85 M decoder) | 256³ vóxeles (entrada flexible múltiplo de 8) | Afinidades para segmentación de neuronas | dinov3-license | HuggingFace |
-| ai-hhmi/lmd-vitl-p8-affinity-scratch | no disponible en la información | 256³ vóxeles | Afinidades para segmentación de neuronas | no disponible | HuggingFace |
-| ai-hhmi/lmd-vitl-p8-simmim-lvd | 303 M (encoder) | no aplica (encoder) | Extracción de características 3D (SimMIM) | dinov3-license | HuggingFace |
-| ai-hhmi/lmd-vitl-p8-simmim-scratch | 303 M (encoder, según descripción) | no aplica (encoder) | Extracción de características 3D (SimMIM) | no disponible | HuggingFace |
+| lmd-vitl-p8-affinity-lvd | 304,8 M (303 M encoder + 1,85 M decoder) | 256³ vóxeles (entrada flexible múltiplo de 8) | Afinidades para segmentación de neuronas | dinov3-license | Hugging Face |
+| ai-hhmi/lmd-vitl-p8-affinity-scratch | no disponible en la información | 256³ vóxeles | Afinidades para segmentación de neuronas | no disponible | Hugging Face |
+| ai-hhmi/lmd-vitl-p8-simmim-lvd | 303 M (encoder) | no aplica (encoder) | Extracción de características 3D (SimMIM) | dinov3-license | Hugging Face |
+| ai-hhmi/lmd-vitl-p8-simmim-scratch | 303 M (encoder, según descripción) | no aplica (encoder) | Extracción de características 3D (SimMIM) | no disponible | Hugging Face |
 
 La comparación relevante es interna a la familia LMD: el modelo con inicialización DINOv3 se entrenó 100k pasos frente a los 75k del variante `scratch`, lo que sugiere una convergencia más rápida gracias al preentrenamiento. No se dispone de métricas para cuantificar la diferencia.
 
@@ -83,7 +83,7 @@ La comparación relevante es interna a la familia LMD: el modelo con inicializac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-lvd
+- Modelo en Hugging Face: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-lvd
 - Modelo base (encoder SimMIM): https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-lvd
 - Variante desde cero (SimMIM): https://huggingface.co/ai-hhmi/lmd-vitl-p8-simmim-scratch
 - Variante de afinidades desde cero: https://huggingface.co/ai-hhmi/lmd-vitl-p8-affinity-scratch

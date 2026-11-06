@@ -62,9 +62,9 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hem436/pointllm
+- Hugging Face: https://huggingface.co/hem436/pointllm
 - Repositorio GitHub: https://github.com/InternRobotics/PointLLM
 - Página del proyecto: https://runsenxu.com/projects/PointLLM/
 - Paper (arXiv): https://arxiv.org/abs/2308.16911
 - Paper (HTML v2): https://arxiv.org/html/2308.16911v2
-- Página del paper en HuggingFace: https://huggingface.co/papers/2308.16911
+- Página del paper en Hugging Face: https://huggingface.co/papers/2308.16911

@@ -30,7 +30,7 @@ No se proporciona información sobre datos de entrenamiento, número de tokens, 
 - No se han verificado capacidades funcionales: el checkpoint es de inicialización y no ha sido entrenado.
 - El script `model.py` incluye un bloque `__main__` que genera un ejemplo de smoke test, pero no se documentan salidas ni comportamientos esperados.
 - No hay soporte declarado para tool calling, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües.
-- La implementación es personalizada y requiere un adaptador explícito para ser cargada con APIs genéricas de HuggingFace.
+- La implementación es personalizada y requiere un adaptador explícito para ser cargada con APIs genéricas de Hugging Face.
 
 ## Casos de uso
 
@@ -38,7 +38,7 @@ Dado que el modelo no está entrenado, los casos de uso son exclusivamente exper
 
 - Validación de la implementación arquitectónica: ejecutar el script `model.py` para comprobar que el forward pass funciona y que los tensores tienen las dimensiones esperadas.
 - Pruebas de humo en pipelines de entrenamiento: usar el checkpoint de inicialización para verificar que el flujo de entrenamiento (optimizador, scheduler, carga de datos) arranca sin errores.
-- Desarrollo de adaptadores para integración con HuggingFace: implementar un adaptador que permita cargar el modelo mediante `AutoModel` u otras APIs genéricas.
+- Desarrollo de adaptadores para integración con Hugging Face: implementar un adaptador que permita cargar el modelo mediante `AutoModel` u otras APIs genéricas.
 - Estudio de la arquitectura Albef en tareas multitarea: modificar el script para añadir cabezas de salida específicas y entrenar desde cero con un dataset propio.
 - Comparación de recetas de entrenamiento: usar la configuración LAMB + one-cycle como punto de partida para experimentos de ablación.
 - Exploración de fusión cross-attention en entornos de baja capacidad: dado el reducido número de parámetros, el modelo puede servir para depurar lógica de atención y fusión sin coste computacional significativo.
@@ -70,5 +70,5 @@ No disponible. No se han identificado modelos comparables en la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Timofeysmi/multitask-weights
+- Repositorio Hugging Face: https://huggingface.co/Timofeysmi/multitask-weights
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos) específicos de este modelo en la búsqueda web.

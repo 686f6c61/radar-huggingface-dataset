@@ -33,7 +33,7 @@ La arquitectura es un transformer decoder-only con la implementacion OLMo de AI2
 
 El entrenamiento se realizo sobre la version deduplicada de the Pile durante 32.000 millones de tokens, con lote de 512 secuencias, LR pico de 0.0087, weight decay de 0.1 y schedule coseno con LR final equivalente al 1% del pico (`alpha_f = 0.01`). No hay indicios de ajuste por instrucciones, RLHF o DPO: es un modelo exclusivamente preentrenado. La innovacion del trabajo no esta en el modelo en si, sino en el diseno experimental: 108 modelos entrenados con variaciones controladas de hiperparametros para medir el rango efectivo de la matriz de unembedding y comprobar si correlaciona con el rendimiento downstream. El paper concluye que la relacion es inconsistente, que el rango alto suele acompanar a los mejores modelos pero no de forma universal, y que el rango bajo coexiste con la degradacion tardia en lugar de causarla.
 
-El repositorio publica 23 checkpoints como ramas (`step0` a `step30528`, con `main` apuntando al checkpoint final). Cada rama incluye `pytorch_model.bin`, el `config.json` de HuggingFace y el `config.yaml` original de OLMo. Ademas, `data-indices/` y `train_data/global_indices.npy` registran el orden exacto de los datos de entrenamiento, lo que permite reproducir que tokens vio el modelo en cada paso.
+El repositorio publica 23 checkpoints como ramas (`step0` a `step30528`, con `main` apuntando al checkpoint final). Cada rama incluye `pytorch_model.bin`, el `config.json` de Hugging Face y el `config.yaml` original de OLMo. Ademas, `data-indices/` y `train_data/global_indices.npy` registran el orden exacto de los datos de entrenamiento, lo que permite reproducir que tokens vio el modelo en cada paso.
 
 ## Capacidades
 
@@ -99,7 +99,7 @@ La comparacion mas directa es con la suite Pythia, que sigue una filosofia simil
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs512-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs512-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder con los 108 modelos: https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Paper en PMLR (ICML 2026, volumen 306): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

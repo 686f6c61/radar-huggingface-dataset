@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-QuaRot-W4A8KV4 es una version cuantizada del modelo denso Qwen3-4B de Alibaba Qwen, publicada por el usuario chiruan en HuggingFace. Aplica el metodo QuaRot (rotaciones ortogonales tipo Hadamard) combinado con GPTQ para producir un esquema de cuantizacion W4A8KV4: pesos de 4 bits, activaciones de 8 bits y cache KV de 4 bits. El objetivo es reducir el coste de memoria y computo de la inferencia conservando la calidad del modelo original.
+Qwen3-4B-QuaRot-W4A8KV4 es una version cuantizada del modelo denso Qwen3-4B de Alibaba Qwen, publicada por el usuario chiruan en Hugging Face. Aplica el metodo QuaRot (rotaciones ortogonales tipo Hadamard) combinado con GPTQ para producir un esquema de cuantizacion W4A8KV4: pesos de 4 bits, activaciones de 8 bits y cache KV de 4 bits. El objetivo es reducir el coste de memoria y computo de la inferencia conservando la calidad del modelo original.
 
 El checkpoint declara 4.411.424.256 parametros repartidos en 36 capas, licencia Apache-2.0 y pesos en safetensors con un tamano de repositorio de 8,8 GB. Un detalle critico es que se trata de "fake quantization": los pesos se almacenan descomprimidos en BF16 tras simular la cuantizacion, no en kernels INT4 empaquetados. Por tanto, no reduce la huella de memoria frente a un BF16 equivalente; es un artefacto de investigacion, no una optimizacion lista para produccion.
 
@@ -89,7 +89,7 @@ No hay datos de rendimiento publicados para esta version, por lo que la comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiruan/Qwen3-4B-QuaRot-W4A8KV4
+- Modelo en Hugging Face: https://huggingface.co/chiruan/Qwen3-4B-QuaRot-W4A8KV4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Codigo RECAP (commit referenciado): https://github.com/chi558/RECAP/tree/932b3556cfa4fd947e91155fb195dc8bd76e353d
 - Referencia del metodo QuaRot (paper): https://arxiv.org/abs/2404.00456

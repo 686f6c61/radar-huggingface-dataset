@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeeAeron/uvr_demucs es un repositorio publicado en HuggingFace por el usuario LeeAeron bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la linea `license: mit`, sin documentacion tecnica, sin pipeline declarado y sin metadatos de idioma. El repositorio fue creado y actualizado el 16 de octubre de 2026, sin cambios posteriores registrados.
+LeeAeron/uvr_demucs es un repositorio publicado en Hugging Face por el usuario LeeAeron bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card se limita a la linea `license: mit`, sin documentacion tecnica, sin pipeline declarado y sin metadatos de idioma. El repositorio fue creado y actualizado el 16 de octubre de 2026, sin cambios posteriores registrados.
 
 El identificador del repositorio combinа los terminos "uvr" (Ultimate Vocal Remover, aplicacion de codigo abierto para separacion de fuentes musicales) y "demucs" (familia de modelos de separacion de fuentes desarrollada originalmente en Meta AI / Facebook AI Research). Todo apunta a que se trata de pesos o adaptaciones destinados a separacion de fuentes musicales, pero esta interpretacion no esta confirmada por ninguna documentacion del repositorio: no se especifica arquitectura, numero de parametros, stems soportados ni procedencia de los pesos.
 
@@ -23,7 +23,7 @@ La relevancia de este repositorio es, por tanto, limitada y condicionada: la sep
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo. La model card del repositorio unicamente contiene la declaracion de licencia MIT, y los metadatos de HuggingFace no incluyen pipeline, idiomas ni etiquetas de tipo de modelo. No se documentan datos de entrenamiento, numero de horas de audio, composicion del dataset, ni si hubo etapas de ajuste fino o destilacion.
+No hay informacion disponible sobre la arquitectura del modelo. La model card del repositorio unicamente contiene la declaracion de licencia MIT, y los metadatos de Hugging Face no incluyen pipeline, idiomas ni etiquetas de tipo de modelo. No se documentan datos de entrenamiento, numero de horas de audio, composicion del dataset, ni si hubo etapas de ajuste fino o destilacion.
 
 Como contexto de la familia a la que apunta el nombre del repositorio, la literatura citada en los resultados de busqueda describe Demucs como una familia de modelos hibridos de forma de onda (waveform models) implementados en Python/PyTorch, con trabajos de referencia de Defossez et al. (2019) y posteriores de Rouard et al. Estas arquitecturas operan directamente sobre la senal de audio en el dominio temporal, combinando componentes convolucionales con mecanismos de atencion en las variantes mas recientes, y se emplean para separar una mezcla musical en varios stems. Esta descripcion corresponde a la familia generica y no debe atribuirse al contenido concreto de LeeAeron/uvr_demucs, que no esta verificado.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LeeAeron/uvr_demucs | no disponible | no disponible | MIT | HuggingFace (0 descargas) | Sin model card tecnica; capacidades no verificadas |
+| LeeAeron/uvr_demucs | no disponible | no disponible | MIT | Hugging Face (0 descargas) | Sin model card tecnica; capacidades no verificadas |
 | Demucs / HTDemucs (Meta AI) | Separacion de fuentes hibrida en dominio temporal | no disponible en la informacion proporcionada | MIT (segun la familia citada) | Codigo y pesos publicos en Python/PyTorch | Referencia habitual en separacion musical; citado en el paper de MSST |
 | Spleeter (Deezer) | Separacion de fuentes | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico | No aparece en los resultados de busqueda proporcionados |
 | MDX-Net (KUIELab) | Separacion de fuentes | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Publico | Alternativa comun en pipelines de Ultimate Vocal Remover |
@@ -79,12 +79,12 @@ No se dispone de datos suficientes para una comparacion cuantitativa entre estas
 - Trazabilidad inexistente: no se indica el origen de los pesos ni si derivan de otro modelo con licencia distinta, lo que genera incertidumbre sobre la validez de la licencia MIT declarada.
 - Sin validacion de la comunidad: 0 descargas y 0 likes en el momento de la consulta implican que no hay evidencia de uso, pruebas independientes ni informes de errores.
 - Riesgo de artefactos de audio: en modelos de separacion de fuentes es habitual la aparicion de artefactos espectrales, sangrado entre stems y perdida de informacion en frecuencias altas. No puede confirmarse el grado de incidencia en este caso.
-- Posible confusion de identificador: el nombre sugiere pesos para Ultimate Vocal Remover, herramienta que no esta afiliada a HuggingFace ni a Meta AI; conviene verificar el contenido real del repositorio antes de integrarlo.
+- Posible confusion de identificador: el nombre sugiere pesos para Ultimate Vocal Remover, herramienta que no esta afiliada a Hugging Face ni a Meta AI; conviene verificar el contenido real del repositorio antes de integrarlo.
 - Uso comercial: la licencia MIT permite uso comercial en principio, pero sin conocer la procedencia de los pesos ni de los datos de entrenamiento no puede garantizarse la ausencia de reclamaciones de terceros.
 - No es un modelo de lenguaje: no debe evaluarse con benchmarks de texto ni utilizarse para tareas de generacion, razonamiento o codigo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/LeeAeron/uvr_demucs
+- Repositorio en Hugging Face: https://huggingface.co/LeeAeron/uvr_demucs
 - Music-Source-Separation-Training (MSST), arXiv: https://arxiv.org/pdf/2607.23395
 - No se han encontrado enlaces adicionales relevantes en la busqueda web. El resto de resultados (memorias del congreso de la Sociedad Quimica de Mexico, indice de piwheels, hilos de Quora y Facebook sobre stems) no guardan relacion con este repositorio.

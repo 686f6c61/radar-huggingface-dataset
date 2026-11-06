@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DEFUSE es un sistema de defensa contra backdoors (puertas traseras) en encoders self-supervised, presentado en el artículo "DEFUSE: Generalizable Backdoor Defense for Self-Supervised Encoders with Generative Priors" (ACM Multimedia 2026). El repositorio publicado en HuggingFace contiene los checkpoints oficiales utilizados en los experimentos finales del artículo, no un modelo de difusión independiente. Se compone de dos archivos principales: un checkpoint del encoder CLIP ViT-B/32 que ha sido intencionalmente backdoored (para reproducir el ataque) y un checkpoint con los pesos de conditioning de SDXL (Stable Diffusion XL) que se emplea para reconstruir imágenes y eliminar el backdoor del encoder. El sistema se desarrolla para el ámbito de la investigación en seguridad de la IA, permitiendo estudiar y mitigar vulnerabilidades en encoders preentrenados.
+DEFUSE es un sistema de defensa contra backdoors (puertas traseras) en encoders self-supervised, presentado en el artículo "DEFUSE: Generalizable Backdoor Defense for Self-Supervised Encoders with Generative Priors" (ACM Multimedia 2026). El repositorio publicado en Hugging Face contiene los checkpoints oficiales utilizados en los experimentos finales del artículo, no un modelo de difusión independiente. Se compone de dos archivos principales: un checkpoint del encoder CLIP ViT-B/32 que ha sido intencionalmente backdoored (para reproducir el ataque) y un checkpoint con los pesos de conditioning de SDXL (Stable Diffusion XL) que se emplea para reconstruir imágenes y eliminar el backdoor del encoder. El sistema se desarrolla para el ámbito de la investigación en seguridad de la IA, permitiendo estudiar y mitigar vulnerabilidades en encoders preentrenados.
 
 El modelo es relevante ahora porque los encoders self-supervised se usan cada vez más como base de sistemas de visión por computador y son susceptibles a ataques de backdoor. DEFUSE propone una defensa generalizable que no requiere conocer el tipo de backdoor ni el dataset de entrenamiento original, lo que lo convierte en una herramienta valiosa para la auditoría de modelos. Los checkpoints se publican con fines de reproducibilidad y experimentación, y no deben desplegarse como un encoder fiable en producción.
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen modelos públicos con la misma finalidad (defensa de backdoors en encoders self-supervised mediante priors generativos). Otros métodos de defensa (como la poda de neuronas o el reentrenamiento) no se publican como checkpoints en HuggingFace de forma comparable.
+No disponible. No se conocen modelos públicos con la misma finalidad (defensa de backdoors en encoders self-supervised mediante priors generativos). Otros métodos de defensa (como la poda de neuronas o el reentrenamiento) no se publican como checkpoints en Hugging Face de forma comparable.
 
 ## Limitaciones y advertencias
 
@@ -67,6 +67,6 @@ No disponible. No se conocen modelos públicos con la misma finalidad (defensa d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jsrdcht/DEFUSE
+- Hugging Face: https://huggingface.co/jsrdcht/DEFUSE
 - Repositorio GitHub (implementación oficial): https://github.com/jsrdcht/DEFUSE
 - Paper (DOI): https://doi.org/10.1145/3767308.3835471

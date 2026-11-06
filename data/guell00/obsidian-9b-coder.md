@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OBSIDIAN-9B-Coder es un modelo de lenguaje de 9.197 millones de parámetros publicado en HuggingFace por el usuario guell00. Se distribuye exclusivamente en formato GGUF, lo que indica que está pensado para ejecución local con llama.cpp o motores compatibles. La model card es extremadamente mínima: el autor no detalla arquitectura, licencia ni datos de entrenamiento, aunque los nombres de los archivos (`Qwopus3.5-9B-Coder.*.gguf`) y los tags (`qwen3_5`, `vision-language-model`) sugieren que se trata de un ajuste fino sobre un modelo base de la familia Qwen 3.5 de 9B, posiblemente con capacidades multimodales.
+OBSIDIAN-9B-Coder es un modelo de lenguaje de 9.197 millones de parámetros publicado en Hugging Face por el usuario guell00. Se distribuye exclusivamente en formato GGUF, lo que indica que está pensado para ejecución local con llama.cpp o motores compatibles. La model card es extremadamente mínima: el autor no detalla arquitectura, licencia ni datos de entrenamiento, aunque los nombres de los archivos (`Qwopus3.5-9B-Coder.*.gguf`) y los tags (`qwen3_5`, `vision-language-model`) sugieren que se trata de un ajuste fino sobre un modelo base de la familia Qwen 3.5 de 9B, posiblemente con capacidades multimodales.
 
 El repositorio incluye un archivo `BF16-mmproj.gguf`, lo que confirma que el modelo es multimodal (proyección de visión para llama.cpp). La relevancia actual de este tipo de modelos reside en su tamaño compacto (9B), que permite desplegarlos en hardware de consumo, y en su orientación a tareas de generación de código, como indica el sufijo "Coder". Sin embargo, la falta de información pública sobre el proceso de entrenamiento y los benchmarks hace que su evaluación objetiva sea limitada en este momento.
 
@@ -29,7 +29,7 @@ No se proporcionan datos sobre el dataset de entrenamiento, el número de tokens
 
 - Generación de texto y código: el sufijo "Coder" sugiere que está especializado en generación y comprensión de código fuente.
 - Procesamiento multimodal: la presencia del archivo `mmproj` indica que puede aceptar imágenes como entrada y responder con texto (p.ej., describir código en capturas, leer diagramas).
-- Conversación multi-turno: el tag `conversational` en HuggingFace indica soporte para diálogos.
+- Conversación multi-turno: el tag `conversational` en Hugging Face indica soporte para diálogos.
 - Compatibilidad con llama.cpp: al estar en GGUF, se puede ejecutar con `llama-cli` o `llama-mtmd-cli` para modelos multimodales.
 - Tool calling / function calling: no disponible, no se menciona en la model card.
 
@@ -80,7 +80,7 @@ Nota: OmniCoder-9B es un modelo de código agéntico de 9B basado en Qwen3.5-9B,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/guell00/OBSIDIAN-9B-Coder
+- Modelo en Hugging Face: https://huggingface.co/guell00/OBSIDIAN-9B-Coder
 - Repositorio Unsloth (herramienta usada): https://github.com/unslothai/unsloth
 - OmniCoder-9B (modelo similar, en Ollama): https://ollama.com/carstenuhlig/omnicoder-9b
 - Yi-Coder-9B (modelo comparable): https://huggingface.co/01-ai/Yi-Coder-9B

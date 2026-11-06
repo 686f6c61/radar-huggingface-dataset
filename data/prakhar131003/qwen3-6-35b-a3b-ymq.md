@@ -75,7 +75,7 @@ La comparación se limita a los datos disponibles. No se han publicado benchmark
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/prakhar131003/Qwen3.6-35B-A3B-YMQ
+- Hugging Face: https://huggingface.co/prakhar131003/Qwen3.6-35B-A3B-YMQ
 - Modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - YMQ-Compiler: https://github.com/YMQ-Compiler
 - llama.cpp: https://github.com/ggml-org/llama.cpp

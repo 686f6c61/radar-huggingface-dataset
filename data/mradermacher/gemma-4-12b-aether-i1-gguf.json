@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Gemma-4-12B-Aether-i1-GGUF",
   "created_at": "2026-11-05T06:15:35.000Z",
-  "updated_at": "2026-11-05T06:36:45.000Z",
+  "updated_at": "2026-11-05T08:06:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,12 +30,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 5,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 22452338880,
-  "storage_human": "22.5 GB",
+  "storage_bytes": 140351869120,
+  "storage_human": "140.4 GB",
   "base_model": "emkey1/Gemma-4-12B-Aether",
   "formats": [
     "gguf"

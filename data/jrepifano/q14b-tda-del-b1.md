@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jrepifano/q14b-tda-del-b1` es un modelo de lenguaje subido al Hub de HuggingFace por el investigador Jacob R. Epifano (jrepifano), cuyo perfil indica que trabaja como científico de investigación en IA/ML. La model card asociada es una plantilla genérica generada automáticamente, sin información sustancial sobre el modelo: no se especifican arquitectura, parámetros, datos de entrenamiento, licencia ni capacidades. Los únicos datos disponibles son las etiquetas del repositorio, que indican que el modelo usa la librería `transformers`, que los pesos están en formato `safetensors`, que fue entrenado con la herramienta Unsloth y que la región de cómputo es EE. UU. El nombre del repositorio sugiere una posible relación con un modelo de 14 mil millones de parámetros (q14b), pero esta interpretación no está confirmada por ninguna fuente oficial.
+El modelo `jrepifano/q14b-tda-del-b1` es un modelo de lenguaje subido al Hub de Hugging Face por el investigador Jacob R. Epifano (jrepifano), cuyo perfil indica que trabaja como científico de investigación en IA/ML. La model card asociada es una plantilla genérica generada automáticamente, sin información sustancial sobre el modelo: no se especifican arquitectura, parámetros, datos de entrenamiento, licencia ni capacidades. Los únicos datos disponibles son las etiquetas del repositorio, que indican que el modelo usa la librería `transformers`, que los pesos están en formato `safetensors`, que fue entrenado con la herramienta Unsloth y que la región de cómputo es EE. UU. El nombre del repositorio sugiere una posible relación con un modelo de 14 mil millones de parámetros (q14b), pero esta interpretación no está confirmada por ninguna fuente oficial.
 
 La relevancia de este modelo es actualmente limitada desde el punto de vista técnico, ya que carece de documentación mínima para su evaluación o uso. Su publicación reciente (agosto de 2026) y la autoría de un investigador con actividad en IA podrían indicar que se trata de un experimento o fine-tuning en fase inicial, pero no hay evidencia pública que respalde ninguna afirmación concreta.
 
@@ -53,7 +53,7 @@ No disponible. No se conocen modelos comparables de la misma categoría, ni se d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jrepifano/q14b-tda-del-b1
+- Repositorio en Hugging Face: https://huggingface.co/jrepifano/q14b-tda-del-b1
 - Perfil de GitHub del autor: https://github.com/jrepifano
 - Página de investigación del autor: https://jrepifano.github.io/research/
 - Perfil de LinkedIn del autor: https://www.linkedin.com/in/jrepifano

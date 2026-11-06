@@ -68,8 +68,8 @@ No se dispone de datos de rendimiento de este checkpoint, por lo que la comparat
 
 | Modelo | Parametros | Contexto | Formato de pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BUD-E_V1_1_EmbeddingGemma-300m_1n_smoke | ~300 M (segun nomenclatura) | No disponible | PyTorch (`.pt`) | No disponible | Repositorio HuggingFace con 0 descargas |
-| EmbeddingGemma-300m (modelo base) | ~300 M | 2.048 tokens (segun su ficha oficial) | safetensors, GGUF y otros | Licencia Gemma (consultar condiciones) | Ampliamente distribuido en HuggingFace |
+| BUD-E_V1_1_EmbeddingGemma-300m_1n_smoke | ~300 M (segun nomenclatura) | No disponible | PyTorch (`.pt`) | No disponible | Repositorio Hugging Face con 0 descargas |
+| EmbeddingGemma-300m (modelo base) | ~300 M | 2.048 tokens (segun su ficha oficial) | safetensors, GGUF y otros | Licencia Gemma (consultar condiciones) | Ampliamente distribuido en Hugging Face |
 | all-MiniLM-L6-v2 | ~22 M | 256 tokens | safetensors, ONNX | Apache 2.0 | Muy extendido |
 | BGE-small-en-v1.5 | ~33 M | 512 tokens | safetensors, ONNX | MIT | Muy extendido |
 
@@ -89,6 +89,6 @@ No hay datos que permitan afirmar si este checkpoint supera, iguala o queda por 
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_EmbeddingGemma-300m_1n_smoke
+- Repositorio del modelo en Hugging Face: https://huggingface.co/VoiceNetCkpt/BUD-E_V1_1_EmbeddingGemma-300m_1n_smoke
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - No se han encontrado enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con el modelo y se han descartado.

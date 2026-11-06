@@ -93,7 +93,7 @@ Manacá-1B se posiciona como un modelo competitivo en su rango de tamaño (1-2B)
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/menezesbruno/manaca-1b-base
+- Hugging Face: https://huggingface.co/menezesbruno/manaca-1b-base
 - Repositorio GitHub (codigo, logs y pipeline): https://github.com/Instituto-IA-LNCC/manaca-1b-base
 - Preprint (PDF): https://github.com/Instituto-IA-LNCC/manaca-1b-base/blob/main/paper/manaca_1b_base_arxiv.pdf
 - Dataset GigaVerbo (TucanoBR): https://huggingface.co/datasets/TucanoBR/GigaVerbo

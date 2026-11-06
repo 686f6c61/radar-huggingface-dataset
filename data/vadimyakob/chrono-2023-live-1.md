@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chrono-2023-live-1 es un modelo publicado en HuggingFace por el usuario vadimyakob bajo el identificador `vadimyakob/chrono-2023-live-1`. Se trata de un modelo de aproximadamente 2.018 millones de parametros (unos 2,02 mil millones) almacenado en formato safetensors, con un repositorio que ocupa 6,4 GB. La ficha publica no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica asociada, por lo que la informacion verificable se limita a los metadatos del repositorio y al recuento real de parametros extraido de los ficheros de pesos.
+chrono-2023-live-1 es un modelo publicado en Hugging Face por el usuario vadimyakob bajo el identificador `vadimyakob/chrono-2023-live-1`. Se trata de un modelo de aproximadamente 2.018 millones de parametros (unos 2,02 mil millones) almacenado en formato safetensors, con un repositorio que ocupa 6,4 GB. La ficha publica no incluye pipeline declarado, licencia, idiomas soportados ni documentacion tecnica asociada, por lo que la informacion verificable se limita a los metadatos del repositorio y al recuento real de parametros extraido de los ficheros de pesos.
 
 El modelo lleva la etiqueta `sn38-nanochrono`, que sugiere una arquitectura o familia interna denominada "nanochrono", aunque no se ha publicado ninguna descripcion que permita confirmar su diseno, sus datos de entrenamiento o su metodo de alineacion. Tampoco se ha publicado ninguna model card con resultados de evaluacion, lo que impide situarlo con rigor frente a alternativas de su mismo rango de tamano.
 
@@ -75,10 +75,10 @@ No es posible establecer una comparativa de rendimiento fiable porque chrono-202
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vadimyakob/chrono-2023-live-1 | 2,02 B (dato real en safetensors) | no disponible | no disponible | HuggingFace, 9 descargas, sin documentacion |
-| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace, ampliamente documentado |
-| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace y Ollama, documentado |
-| Phi-2 | 2,7 B | 2.048 tokens | MIT | HuggingFace, documentado |
+| vadimyakob/chrono-2023-live-1 | 2,02 B (dato real en safetensors) | no disponible | no disponible | Hugging Face, 9 descargas, sin documentacion |
+| Gemma 2 2B | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face, ampliamente documentado |
+| Qwen2.5 1.5B | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face y Ollama, documentado |
+| Phi-2 | 2,7 B | 2.048 tokens | MIT | Hugging Face, documentado |
 
 La columna de rendimiento se omite deliberadamente: no existen datos publicados de chrono-2023-live-1 que permitan compararlo, y las cifras de los modelos alternativos dependen de la version y del conjunto de evaluacion empleado. Cualquier comparacion de calidad exigiria ejecutar los mismos benchmarks sobre el modelo en cuestion.
 
@@ -97,7 +97,7 @@ La columna de rendimiento se omite deliberadamente: no existen datos publicados 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadimyakob/chrono-2023-live-1
+- Modelo en Hugging Face: https://huggingface.co/vadimyakob/chrono-2023-live-1
 - Paper: no disponible
 - Blog tecnico o anuncio: no disponible
 - Repositorio de codigo: no disponible

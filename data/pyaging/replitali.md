@@ -45,7 +45,7 @@ El entrenamiento se realizó sobre un conjunto de muestras de cultivos primarios
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El artículo original (Endicott et al., 2022) reporta métricas de rendimiento, pero no se incluyen en la model card de HuggingFace. Se recomienda consultar la publicación para obtener datos de exactitud, correlación y error absoluto medio.
+No se han publicado resultados de benchmarks en la información disponible. El artículo original (Endicott et al., 2022) reporta métricas de rendimiento, pero no se incluyen en la model card de Hugging Face. Se recomienda consultar la publicación para obtener datos de exactitud, correlación y error absoluto medio.
 
 ## Requisitos de hardware
 
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa directa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pyaging/replitali
+- Modelo en Hugging Face: https://huggingface.co/pyaging/replitali
 - Artículo original: Endicott, J.L., Nolte, P.A., Shen, H. & Laird, P.W. Cell division drives DNA methylation loss in late-replicating domains in primary human cells. Nature Communications 13, 6659 (2022). DOI: https://doi.org/10.1038/s41467-022-34268-8
 - Documentación de pyaging: https://pyaging.readthedocs.io

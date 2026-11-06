@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Basic Pitch es un modelo de transcripcion automatica de musica (AMT, del ingles automatic music transcription) publicado originalmente por Spotify Research. Su objetivo es convertir audio musical polifonico en eventos de nota con pitch, onset y duracion, es decir, producir una representacion tipo MIDI a partir de una senal de audio. La ficha que se evalua aqui es el repositorio `TTSCloneAPI/basic-pitch` alojado en HuggingFace, un espejo de terceros con acceso restringido (gated) que en el momento de la consulta registra 0 descargas y 0 likes.
+Basic Pitch es un modelo de transcripcion automatica de musica (AMT, del ingles automatic music transcription) publicado originalmente por Spotify Research. Su objetivo es convertir audio musical polifonico en eventos de nota con pitch, onset y duracion, es decir, producir una representacion tipo MIDI a partir de una senal de audio. La ficha que se evalua aqui es el repositorio `TTSCloneAPI/basic-pitch` alojado en Hugging Face, un espejo de terceros con acceso restringido (gated) que en el momento de la consulta registra 0 descargas y 0 likes.
 
 El modelo se presenta en la informacion disponible con las etiquetas `audio`, `music`, `lightweight`, `midi`, `transcription`, `pitch-detection` y `polyphonic`, lo que describe su ambito: transcripcion instrumental-agnostica de audio polifonico con un diseno ligero, orientado a ejecutarse en entornos con pocos recursos. La tarjeta del repositorio referencia el paper arXiv:2203.09893, cuya identificacion como fuente tecnica principal se recoge mas abajo.
 
@@ -24,7 +24,7 @@ Su relevancia practica radica en tres puntos: es instrumento-agnostico (no asume
 | Salidas | eventos de nota (pitch, onset, duracion) tipo MIDI y estimacion de multipitch, segun los tags `midi` y `pitch-detection` |
 | Politonia | si (tag `polyphonic`) |
 | Agnostico al instrumento | si, segun la descripcion del paper referenciado en los tags |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -75,7 +75,7 @@ Como referencia de evaluacion, los datasets asociados en los tags (GuitarSet, iK
 - Compatibilidad con GPU de consumo: probablemente si, dado el caracter ligero declarado, aunque no se especifica en la informacion proporcionada.
 - Opciones de despliegue: no disponibles para este espejo. La informacion proporcionada no documenta formatos de peso ni runtimes compatibles (ONNX, TensorFlow, TFLite, llama.cpp u otros).
 - Latencia y throughput: no disponibles.
-- Nota operativa: el repositorio es de acceso restringido (gated), por lo que la descarga requiere aceptar condiciones en HuggingFace antes de poder evaluar el artefacto.
+- Nota operativa: el repositorio es de acceso restringido (gated), por lo que la descarga requiere aceptar condiciones en Hugging Face antes de poder evaluar el artefacto.
 
 ## Comparativa con modelos similares
 
@@ -99,13 +99,13 @@ Diferencias clave observadas en la informacion disponible: el modelo evaluado se
 - Ausencia de separacion de fuentes: el modelo transcribe eventos de nota, no separa instrumentos en pistas independientes; no debe presentarse como herramienta de source separation.
 - Datos de sesgo no disponibles: no se documenta el sesgo por genero musical, instrumento o region geografica del corpus de entrenamiento.
 - Repositorio de terceros: se trata de un espejo publicado por `TTSCloneAPI`, con 0 descargas y 0 likes. No hay evidencia en la informacion disponible de que los pesos hayan sido auditados o verificados contra el artefacto original, por lo que la procedencia debe validarse antes de usarlo en produccion.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que anade friccion a la integracion automatizada.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que anade friccion a la integracion automatizada.
 - Licencia: la tarjeta declara apache-2.0, permisiva para uso comercial, pero conviene verificar la licencia del proyecto original y los terminos de los datasets empleados, especialmente Maestro, MedleyDB y Slakh, que tienen condiciones propias.
 - Ficha creada a partir de informacion muy limitada: cualquier decision de adopcion deberia completarse con la lectura del paper referenciado y la documentacion del proyecto original.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TTSCloneAPI/basic-pitch (acceso restringido, requiere aceptar condiciones)
+- Repositorio en Hugging Face: https://huggingface.co/TTSCloneAPI/basic-pitch (acceso restringido, requiere aceptar condiciones)
 - Paper referenciado en los tags del repositorio: https://arxiv.org/abs/2203.09893
 - Proyecto original de Basic Pitch en GitHub: https://github.com/spotify/basic-pitch
 - Demo del proyecto original en navegador: https://basicpitch.spotify.com

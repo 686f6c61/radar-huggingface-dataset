@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento, parametros o contexto de estos checkpoint
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Flash-MOPD-Derisking-Intervention-Runtime
+- Repositorio en Hugging Face: https://huggingface.co/Blackfrost-AI/MiMo-V2.6-Flash-MOPD-Derisking-Intervention-Runtime
 - Checkpoint base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD
 - Checkpoint origen de las direcciones: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL
 - SGLang (framework de servicio): https://github.com/sgl-project/sglang

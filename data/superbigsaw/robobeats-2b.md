@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RoboBeats-2B | 2B (base) + LoRA | No disponible | Gate de eventos en video causal | Apache 2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| RoboBeats-0.8B | 0,8B (base) | No disponible | Gate de eventos en video causal | No disponible | HuggingFace (misma familia) |
-| RoboBeats-4B | 4B (base) | No disponible | Gate de eventos en video causal | No disponible | HuggingFace (misma familia) |
+| RoboBeats-2B | 2B (base) + LoRA | No disponible | Gate de eventos en video causal | Apache 2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| RoboBeats-0.8B | 0,8B (base) | No disponible | Gate de eventos en video causal | No disponible | Hugging Face (misma familia) |
+| RoboBeats-4B | 4B (base) | No disponible | Gate de eventos en video causal | No disponible | Hugging Face (misma familia) |
 
 Las alternativas mas directas son las otras variantes de la misma familia (0.8B y 4B), que permiten ajustar el compromiso entre coste y precision. No se dispone de informacion sobre modelos de terceros comparables en la misma tarea de deteccion causal de eventos en video.
 
@@ -83,7 +83,7 @@ Las alternativas mas directas son las otras variantes de la misma familia (0.8B 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/superbigsaw/RoboBeats-2B
+- Hugging Face: https://huggingface.co/superbigsaw/RoboBeats-2B
 - Paper: https://arxiv.org/abs/2611.00180
 - Codigo: https://github.com/AgibotTech/LIFE
 - Variante 0.8B: https://huggingface.co/superbigsaw/RoboBeats-0.8B

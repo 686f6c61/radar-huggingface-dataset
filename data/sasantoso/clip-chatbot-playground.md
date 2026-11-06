@@ -4,7 +4,7 @@
 
 El repositorio `Sasantoso/clip-chatbot-playground` no contiene un modelo de inteligencia artificial, sino un documento de revisión académica (`review.md`) sobre un paper de razonamiento multimodal. El autor, Sasantoso, ha publicado un archivo en formato LaTeX (estilo NeurIPS) que analiza un trabajo de investigación con estructura IMRAD (abstract, intro, prelim, method, exp, discussion). El contenido se centra en la evaluación crítica de un sistema de razonamiento multimodal, con un estilo de escritura detallado y descriptivo, citación numérica tipo Nature y una licencia BSD-3-Clause.
 
-No se incluyen pesos, arquitectura ni datos de entrenamiento en el repositorio, por lo que no puede considerarse un modelo desplegable. La relevancia de este repositorio es exclusivamente documental: sirve como ejemplo de revisión técnica estructurada, posiblemente para un proyecto de investigación o una tarea de evaluación de papers. Los tags de HuggingFace (como `structured-imrad`, `latex-neurips`, `multimodal-reasoning`) confirman que el contenido es un análisis textual, no un artefacto de IA generativa.
+No se incluyen pesos, arquitectura ni datos de entrenamiento en el repositorio, por lo que no puede considerarse un modelo desplegable. La relevancia de este repositorio es exclusivamente documental: sirve como ejemplo de revisión técnica estructurada, posiblemente para un proyecto de investigación o una tarea de evaluación de papers. Los tags de Hugging Face (como `structured-imrad`, `latex-neurips`, `multimodal-reasoning`) confirman que el contenido es un análisis textual, no un artefacto de IA generativa.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Sasantoso/clip-chatbot-playground
+- Repositorio en Hugging Face: https://huggingface.co/Sasantoso/clip-chatbot-playground
 - No hay otros enlaces relevantes en la busqueda web (los resultados de busqueda son de otras herramientas llamadas "Clip Bot" o "Playground" sin relacion con este repositorio).

@@ -74,7 +74,7 @@ Depth Anything V2 mejora a V1 en detalles finos y robustez, y supera a los model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NyiNyiMyo/depth_anything_v2_vitb
+- Hugging Face: https://huggingface.co/NyiNyiMyo/depth_anything_v2_vitb
 - GitHub del proyecto: https://github.com/DepthAnything/Depth-Anything-V2
 - Sitio web oficial: https://depth-anything-v2.github.io/
 - Documentación en Transformers: https://huggingface.co/docs/transformers/model_doc/depth_anything_v2

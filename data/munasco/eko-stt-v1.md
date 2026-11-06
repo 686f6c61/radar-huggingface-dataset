@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eko-STT-v1 es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario munasco en HuggingFace, especializado en lenguas nigerianas. Se trata de un ajuste fino (fine-tune) del conocido `openai/whisper-large-v3`, lo que lo sitúa en la familia de modelos Whisper de OpenAI, con una arquitectura transformer encoder-decoder orientada a la transcripción de audio a texto. El modelo cuenta con 1.609.879.040 parámetros, un tamaño de repositorio de 3,2 GB y pesos en formato safetensors, y está pensado para cubrir el hueco de cobertura que los modelos ASR generalistas presentan en lenguas africanas de bajos recursos.
+Eko-STT-v1 es un modelo de reconocimiento automático del habla (ASR) publicado por el usuario munasco en Hugging Face, especializado en lenguas nigerianas. Se trata de un ajuste fino (fine-tune) del conocido `openai/whisper-large-v3`, lo que lo sitúa en la familia de modelos Whisper de OpenAI, con una arquitectura transformer encoder-decoder orientada a la transcripción de audio a texto. El modelo cuenta con 1.609.879.040 parámetros, un tamaño de repositorio de 3,2 GB y pesos en formato safetensors, y está pensado para cubrir el hueco de cobertura que los modelos ASR generalistas presentan en lenguas africanas de bajos recursos.
 
 El modelo aborda un problema concreto: la baja calidad de transcripción de Whisper en yoruba (yo), igbo (ig), pidgin nigeriano (pcm) y en inglés nigeriano. Para ello, el autor lo ha ajustado sobre el checkpoint multilingüe de Whisper large-v3 y declara métricas de WER sobre varios conjuntos de evaluación específicos de Nigeria (AfriSpeech-NG, Common Voice 27 y datasets DSN), con valores que van del 9,34 % al 19,45 % según el idioma y el conjunto.
 
@@ -37,7 +37,7 @@ No se dispone en la información proporcionada de detalles sobre el volumen de d
 - Transcripción de audio a texto con normalización de texto en la evaluación (WER normalizado).
 - Soporte multilingüe limitado a los cuatro idiomas declarados (en, pcm, yo, ig).
 - Compatibilidad con la librería `transformers` y el pipeline `automatic-speech-recognition`.
-- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en infraestructura de HuggingFace.
+- Compatibilidad con endpoints (tag `endpoints_compatible`), lo que facilita su despliegue en infraestructura de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio generativo ni modo "thinking"; es un modelo puramente ASR.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia: con 1,61 mil millones de parámetros, en precisión fp16 se requieren aproximadamente 3,2 GB solo para los pesos, más memoria para activaciones y buffers de audio; en la práctica, entre 4 y 6 GB de VRAM para inferencia en fp16.
 - GPU recomendadas: NVIDIA A100, H100 o L4 para despliegues de producción con concurrencia; RTX 4090, RTX 3090 o RTX 4080 para desarrollo y pruebas.
 - Cabe en GPU de consumo: sí, en tarjetas con al menos 6-8 GB de VRAM (RTX 3060, RTX 4060 Ti, RTX 2070 o superiores), dependiendo de la cuantización y del tamaño de lote.
-- Opciones de despliegue: `transformers` (pipeline de ASR), vLLM no aplica de forma nativa a Whisper, pero sí `faster-whisper`, `whisper.cpp`, `Ollama` (con conversión adecuada) y `TGI` si se adapta; el tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` (pipeline de ASR), vLLM no aplica de forma nativa a Whisper, pero sí `faster-whisper`, `whisper.cpp`, `Ollama` (con conversión adecuada) y `TGI` si se adapta; el tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; dependerán del hardware, la duración del audio y la implementación elegida.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de informaci�
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated y requiere aceptar condiciones en HuggingFace, lo que puede retrasar su adopción y complicar la reproducibilidad.
+- Acceso restringido: el modelo es gated y requiere aceptar condiciones en Hugging Face, lo que puede retrasar su adopción y complicar la reproducibilidad.
 - Licencia "ekogenie-research": no es una licencia de código abierto estándar; es imprescindible revisar los términos antes de cualquier uso comercial o despliegue en producción.
 - Métricas no verificadas: todos los resultados de WER declarados por el autor tienen el campo `verified` en `false`, por lo que no han sido validados de forma independiente.
 - Cobertura limitada a cuatro idiomas (en, pcm, yo, ig); no se debe asumir buen rendimiento en otras lenguas africanas ni en inglés estándar no nigeriano.
@@ -98,7 +98,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/munasco/eko-stt-v1
+- Modelo en Hugging Face: https://huggingface.co/munasco/eko-stt-v1
 - Modelo base: https://huggingface.co/openai/whisper-large-v3
 - Paper de referencia de Whisper (arXiv): https://arxiv.org/abs/2212.04356
 - Referencia arXiv citada en los tags: arxiv:2605.17710 (no verificable en la información proporcionada)

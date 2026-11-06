@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `SasmithaLochana/nllb-idiom-lora-en-si-untagged` aloja un adaptador LoRA cuyo nombre sugiere que ha sido entrenado para mejorar la traducción de expresiones idiomáticas del inglés al cingalés (si) sobre la familia de modelos NLLB de Meta. Sin embargo, la model card es una plantilla automática generada por HuggingFace y no contiene ninguna información técnica, de entrenamiento, licencia o uso. El único dato concreto es que el repositorio pesa 1,1 GB y contiene pesos en formato safetensors, compatible con la librería transformers. No hay confirmación oficial de la arquitectura base, los hiperparámetros, el dataset utilizado ni los resultados obtenidos. Dada la ausencia total de documentación, esta ficha se basa exclusivamente en el nombre del repositorio y en los metadatos visibles, por lo que cualquier afirmación más allá de esos datos debe considerarse especulativa.
+El repositorio `SasmithaLochana/nllb-idiom-lora-en-si-untagged` aloja un adaptador LoRA cuyo nombre sugiere que ha sido entrenado para mejorar la traducción de expresiones idiomáticas del inglés al cingalés (si) sobre la familia de modelos NLLB de Meta. Sin embargo, la model card es una plantilla automática generada por Hugging Face y no contiene ninguna información técnica, de entrenamiento, licencia o uso. El único dato concreto es que el repositorio pesa 1,1 GB y contiene pesos en formato safetensors, compatible con la librería transformers. No hay confirmación oficial de la arquitectura base, los hiperparámetros, el dataset utilizado ni los resultados obtenidos. Dada la ausencia total de documentación, esta ficha se basa exclusivamente en el nombre del repositorio y en los metadatos visibles, por lo que cualquier afirmación más allá de esos datos debe considerarse especulativa.
 
 ## Especificaciones tecnicas
 
@@ -52,5 +52,5 @@ No disponible. No se ha identificado ningún modelo comparable con la misma espe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SasmithaLochana/nllb-idiom-lora-en-si-untagged
+- Repositorio en Hugging Face: https://huggingface.co/SasmithaLochana/nllb-idiom-lora-en-si-untagged
 - Paper referenciado en los tags (no relacionado con el modelo): https://arxiv.org/abs/1910.09700

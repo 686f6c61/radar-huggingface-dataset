@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BiggerGait (DINOv2-S) es un modelo de reconocimiento de marcha (gait recognition) entendido como tarea de biometría: dada una secuencia de recortes RGB de una persona caminando, produce un descriptor que permite decidir si dos secuencias corresponden a la misma persona. Lo desarrolla el autor de HuggingFace `ernestchu` como port autocontenido del modelo BiggerGait publicado por OpenGait, y el checkpoint es exactamente el mismo que OpenGait distribuye para el conjunto de datos CCPG, sin modificar (sha256 `b6e38129...edd33dbc`).
+BiggerGait (DINOv2-S) es un modelo de reconocimiento de marcha (gait recognition) entendido como tarea de biometría: dada una secuencia de recortes RGB de una persona caminando, produce un descriptor que permite decidir si dos secuencias corresponden a la misma persona. Lo desarrolla el autor de Hugging Face `ernestchu` como port autocontenido del modelo BiggerGait publicado por OpenGait, y el checkpoint es exactamente el mismo que OpenGait distribuye para el conjunto de datos CCPG, sin modificar (sha256 `b6e38129...edd33dbc`).
 
 La relevancia práctica del repositorio no está en un modelo nuevo, sino en la ingeniería de empaquetado: el `.pt` incluye el backbone DINOv2-Small congelado, la rama de máscara y las cabezas de marcha, de modo que la inferencia no requiere clonar OpenGait ni descargar DINOv2 por separado. La entrada es una secuencia de recortes de 256x128 (hasta 250 fotogramas) que el modelo reescala internamente a 448x224, y la salida es un embedding de `[256, 384]`: 32 partes horizontales x 12 capas de DINOv2.
 
@@ -18,7 +18,7 @@ Arquitectónicamente es un transformer de visión (ViT) con supervisión por par
 | Longitud de contexto | no aplica (no es un modelo de lenguaje); procesa como máximo los primeros 250 fotogramas de cada secuencia |
 | Tipos de cuantización | no disponible; el ejemplo de uso emplea `torch.autocast` y la referencia de OpenGait se obtuvo en fp16 |
 | Idiomas soportados | no disponible (no procesa texto; la entrada es vídeo RGB) |
-| Licencia | no disponible (no especificada ni en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no especificada ni en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | checkpoint PyTorch `.pt` (state dict cargado con `strict=True` tras descartar los clasificadores de entrenamiento `BNNecks`); secuencias de muestra en `.pkl`; repositorio gestionado con Git LFS |
 | Entrada | secuencia RGB `uint8 [s, 3, 256, 128]` (recortes 256x128 normalizados con estadísticas de ImageNet) o lista de fotogramas BGR vía `preprocess_frames`; también `load_video` para ficheros de vídeo |
 | Salida | embedding `[256, 384]` por secuencia (256-d por cada una de 32 partes horizontales x 12 capas) |
@@ -27,13 +27,13 @@ Arquitectónicamente es un transformer de visión (ViT) con supervisión por par
 | Conjunto de entrenamiento | CCPG (identidades de test: 100-199) |
 | Tamaño del repositorio | 1,4 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha en HuggingFace | creado y actualizado el 2026-10-18 (según metadatos) |
+| Fecha en Hugging Face | creado y actualizado el 2026-10-18 (según metadatos) |
 
 ## Arquitectura y entrenamiento
 
 El modelo es un ViT DINOv2-Small que se mantiene congelado y actúa como extractor de características por fotograma. Sobre él se añade una rama de máscara (el checkpoint se identifica como `WiMask`) y un conjunto de cabezas de marcha: cada una de las 12 capas de DINOv2 tiene su propia cabeza, y la configuración del port fija `group_layer_num: 1` y `head_num: 12`. La agregación se hace con HPP sobre 32 partes horizontales, lo que da lugar a un descriptor de 256 dimensiones por parte y capa. No se utilizan siluetas ni alineación explícita: el nombre del checkpoint indica `NoAlign`, y la model card confirma que no se necesita ningún paso de alineamiento.
 
-El checkpoint procede sin modificaciones del repositorio `opengait/OpenGait` en HuggingFace, con el nombre `BiggerGait__SmallDINOv2_Gaitbase_84Frame30_448224_6432HPP32_NoAlign_Sep12B_WiMask-30000.pt`, entrenado sobre CCPG (configuración `configs/biggergait/biggergait__DINOv2_CCPG.yaml`). La información disponible no detalla el número de tokens ni la composición exacta del dataset de entrenamiento, ni si hubo etapas de RLHF/DPO (no aplicables en un modelo discriminativo de este tipo). El port reimplementa el modelo en `biggergait/model.py` (solo inferencia) y un ViT DINOv2 mínimo en `biggergait/dinov2.py`; los nombres de módulo siguen el checkpoint para permitir la carga con `strict=True`.
+El checkpoint procede sin modificaciones del repositorio `opengait/OpenGait` en Hugging Face, con el nombre `BiggerGait__SmallDINOv2_Gaitbase_84Frame30_448224_6432HPP32_NoAlign_Sep12B_WiMask-30000.pt`, entrenado sobre CCPG (configuración `configs/biggergait/biggergait__DINOv2_CCPG.yaml`). La información disponible no detalla el número de tokens ni la composición exacta del dataset de entrenamiento, ni si hubo etapas de RLHF/DPO (no aplicables en un modelo discriminativo de este tipo). El port reimplementa el modelo en `biggergait/model.py` (solo inferencia) y un ViT DINOv2 mínimo en `biggergait/dinov2.py`; los nombres de módulo siguen el checkpoint para permitir la carga con `strict=True`.
 
 ## Capacidades
 
@@ -114,10 +114,10 @@ No se dispone en la información proporcionada de resultados de otros modelos de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ernestchu/bigger-gait-ccpg
+- Repositorio en Hugging Face: https://huggingface.co/ernestchu/bigger-gait-ccpg
 - Paper de BiggerGait: https://arxiv.org/abs/2505.18132
 - Código de OpenGait: https://github.com/ShiqiYu/OpenGait
-- Checkpoint original en HuggingFace (OpenGait / CCPG): https://huggingface.co/opengait/OpenGait/blob/main/CCPG/BiggerGait__DINOv2/BiggerGait__Dinov2/BiggerGait__SmallDINOv2_Gaitbase_84Frame30_448224_6432HPP32_NoAlign_Sep12B_WiMask-30000.pt
+- Checkpoint original en Hugging Face (OpenGait / CCPG): https://huggingface.co/opengait/OpenGait/blob/main/CCPG/BiggerGait__DINOv2/BiggerGait__Dinov2/BiggerGait__SmallDINOv2_Gaitbase_84Frame30_448224_6432HPP32_NoAlign_Sep12B_WiMask-30000.pt
 - Dataset CCPG: https://github.com/BNU-IVC/CCPG
 - Backbone DINOv2-small: https://huggingface.co/facebook/dinov2-small
 - Gestor de entorno uv: https://docs.astral.sh/uv/

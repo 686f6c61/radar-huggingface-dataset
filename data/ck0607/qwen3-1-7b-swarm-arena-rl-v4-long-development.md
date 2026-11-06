@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Al ser un adaptador LoRA, se carga sobre el modelo base Qwen3-1.7B. El modelo base requiere aproximadamente 4 GB de VRAM en FP16 para inferencia.
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM (por ejemplo, RTX 3060, RTX 4060, RTX 4090) puede ejecutar el modelo base con el adaptador.
 - No se especifican requisitos de hardware para el entrenamiento, pero al ser un adaptador pequeño, el entrenamiento RL probablemente se realizó en GPUs de gama media o alta.
-- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de HuggingFace sobre el modelo base. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo de texto.
+- Opciones de despliegue: al ser un adaptador PEFT, se puede cargar con la librería `peft` de Hugging Face sobre el modelo base. No se menciona soporte para vLLM, llama.cpp u Ollama, ya que no es un modelo de texto.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -72,7 +72,7 @@ No disponible. No se han encontrado modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-long-development
+- Modelo en Hugging Face: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-long-development
 - Repositorio del autor con modelos similares: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-SFT-v2-step320-noneligible
 - Repositorio del autor con Qwen3-4B: https://huggingface.co/CK0607/Qwen3-4B-Swarm-Arena-SFT-v2
 - Informe técnico de Qwen3 (modelo base): https://arxiv.org/html/2505.09388v1

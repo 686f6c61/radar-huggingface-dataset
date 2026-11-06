@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye otros adaptadores o model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gabriel/diffu-moss-hand-eight
+- Modelo en Hugging Face: https://huggingface.co/Gabriel/diffu-moss-hand-eight
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Proyecto diffu: https://github.com/Borg93/diffu2
 - Imagen de ejemplo: images/example.png (referenciada en la model card del repositorio)

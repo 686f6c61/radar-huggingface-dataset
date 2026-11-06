@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Jeff98/Qwen3.5-9B-uncensored-cw-mtp-ov es una conversion a formato OpenVINO IR de un modelo multimodal de tipo imagen-texto-a-texto, publicado por el usuario Jeff98 en HuggingFace. Se trata de un derivado del fine-tune DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP, que a su vez parte de la familia Qwen3.5 de 9 000 millones de parametros. El repositorio declara los idiomas ingles y chino, licencia Apache 2.0 y un tamano de 6,1 GB, lo que apunta a pesos ya cuantizados dentro del contenedor OpenVINO.
+El modelo Jeff98/Qwen3.5-9B-uncensored-cw-mtp-ov es una conversion a formato OpenVINO IR de un modelo multimodal de tipo imagen-texto-a-texto, publicado por el usuario Jeff98 en Hugging Face. Se trata de un derivado del fine-tune DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP, que a su vez parte de la familia Qwen3.5 de 9 000 millones de parametros. El repositorio declara los idiomas ingles y chino, licencia Apache 2.0 y un tamano de 6,1 GB, lo que apunta a pesos ya cuantizados dentro del contenedor OpenVINO.
 
 Su relevancia practica es doble. Por un lado, empaqueta un VLM de 9B en el ecosistema OpenVINO, lo que permite ejecutarlo sobre hardware Intel (CPU, GPU integrada, GPU Arc y NPU) sin depender de CUDA, un escenario habitual en despliegues de borde y en estaciones de trabajo sin GPU dedicada NVIDIA. Por otro, la cadena de fine-tuning de la que procede esta orientada explicitamente a reducir los filtros de rechazo del modelo original, lo que lo situa en el ambito de los modelos "uncensored" o "heretic".
 
@@ -86,7 +86,7 @@ Los datos de los modelos alternativos proceden de sus fichas oficiales y se incl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeff98/Qwen3.5-9B-uncensored-cw-mtp-ov
+- Modelo en Hugging Face: https://huggingface.co/Jeff98/Qwen3.5-9B-uncensored-cw-mtp-ov
 - Modelo base inmediato: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-DARK-ROAST-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Documentacion de OpenVINO: https://docs.openvino.ai/
 - Repositorio OpenVINO en GitHub: https://github.com/openvinotoolkit/openvino

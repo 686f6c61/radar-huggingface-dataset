@@ -80,8 +80,8 @@ F1 por categoría:
 
 | Modelo | Parámetros | Contexto | F1 (tarea PII) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-PII-distillops | 596 M | no disponible | 0,955 (declarado) | Apache 2.0 | HuggingFace |
-| Qwen3-0.6B (base, sin entrenar) | 596 M | no disponible | 0,158 | Apache 2.0 | HuggingFace |
+| Qwen3-0.6B-PII-distillops | 596 M | no disponible | 0,955 (declarado) | Apache 2.0 | Hugging Face |
+| Qwen3-0.6B (base, sin entrenar) | 596 M | no disponible | 0,158 | Apache 2.0 | Hugging Face |
 | Profesor DeepSeek flash (3-shot) | no disponible (API) | no disponible | 0,934 | propietaria (API) | API |
 | SFT con etiquetas gold (control del autor) | 596 M | no disponible | 0,982 | no disponible | no publicado como modelo independiente |
 
@@ -101,7 +101,7 @@ No se dispone de datos de otros modelos especializados en detección de PII comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Liquor-06/Qwen3-0.6B-PII-distillops
+- Modelo en Hugging Face: https://huggingface.co/Liquor-06/Qwen3-0.6B-PII-distillops
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Dataset: https://huggingface.co/datasets/ai4privacy/pii-masking-openpii-1m
 - Herramienta distillops: https://github.com/Zihao-Wu06/distillops

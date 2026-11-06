@@ -2,7 +2,7 @@
 
 ## Resumen
 
-svd-safety-l2_basisresmix_remove50 es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de meta-llama/Llama-2-7b-chat-hf. No es un modelo conversacional de propósito general: es una celda concreta de una rejilla experimental que estudia cómo la compresión por SVD (descomposición en valores singulares) degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor.
+svd-safety-l2_basisresmix_remove50 es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de meta-llama/Llama-2-7b-chat-hf. No es un modelo conversacional de propósito general: es una celda concreta de una rejilla experimental que estudia cómo la compresión por SVD (descomposición en valores singulares) degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes lo repara mejor.
 
 El punto de partida es Llama-2-7b-chat, comprimido con Basis Sharing (ICLR 2025; bases compartidas entre grupos de dos capas adyacentes) hasta eliminar el 50,00% de los parámetros densos (fracción resultante 0,4998, semilla 42). Sobre esa base se aplica una recuperación mediante LoRA de rango 8 únicamente sobre los coeficientes por capa, con las bases congeladas y sin alterar el presupuesto de parámetros.
 
@@ -76,8 +76,8 @@ No se han publicado en la informacion disponible los valores del modelo base (me
 
 | Modelo | Parametros | Contexto | Seguridad / utilidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l2_basisresmix_remove50 | 6.738.415.616 almacenados; presupuesto efectivo 0,4998 del denso | No disponible | AdvBench ASR 0,1808; StrongREJECT ASR 0,1565; PPL WikiText-2 13,2626 | Llama 2 Community License | HuggingFace, 0 descargas |
-| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | No disponible en la informacion proporcionada | No disponible | Llama 2 Community License | HuggingFace (referencia del campo base_model) |
+| svd-safety-l2_basisresmix_remove50 | 6.738.415.616 almacenados; presupuesto efectivo 0,4998 del denso | No disponible | AdvBench ASR 0,1808; StrongREJECT ASR 0,1565; PPL WikiText-2 13,2626 | Llama 2 Community License | Hugging Face, 0 descargas |
+| meta-llama/Llama-2-7b-chat-hf (base sin comprimir) | 6.738.415.616 | No disponible en la informacion proporcionada | No disponible | Llama 2 Community License | Hugging Face (referencia del campo base_model) |
 | Otras celdas del mismo grid (Basis Sharing, distintos presupuestos y reglas de seleccion) | No disponible | No disponible | No disponible | Llama 2 Community License | No documentadas en la informacion disponible |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar con alternativas de otros autores (por ejemplo, otros checkpoints comprimidos de Llama-2-7b-chat o modelos de ~7-8B de propósito general), por lo que la comparativa cuantitativa de rendimiento queda como no disponible.
@@ -96,7 +96,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basisresmix_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basisresmix_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia y politica de uso: LICENSE.txt y USE_POLICY.md incluidos en el repositorio del modelo
 - Referencia metodologica citada en la model card: Basis Sharing (ICLR 2025); no se proporciona URL en la informacion disponible

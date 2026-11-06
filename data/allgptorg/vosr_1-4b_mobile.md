@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para comparar directamente con otros mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AllGPTORG/VOSR_1.4B_Mobile
-- Modelo base en HuggingFace: https://huggingface.co/CSWRY/VOSR
+- Repositorio Hugging Face: https://huggingface.co/AllGPTORG/VOSR_1.4B_Mobile
+- Modelo base en Hugging Face: https://huggingface.co/CSWRY/VOSR
 - Repositorio GitHub del modelo VOSR: https://github.com/cswry/VOSR
 - Paper en arXiv: https://arxiv.org/html/2604.03225v1

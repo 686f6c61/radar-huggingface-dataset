@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-heretic es una versión "abliterada" (sin mecanismos de rechazo) de LFM3-1.7B de LiquidAI, publicada por el usuario AJ-Gonzalez en HuggingFace. El modelo base pertenece a la familia LFM (Liquid Foundation Models) de LiquidAI, caracterizada por arquitecturas tri-híbridas que combinan convoluciones cortas, atención y MLP. Esta derivada no añade capacidades ni ha sido reentrenada: aplica una modificación de pesos denominada abliteration proyectada, generada con la herramienta Heretic 2.0.0.dev0, para reducir drásticamente la tasa de negativas (refusals) del modelo original.
+LFM3-1.7B-heretic es una versión "abliterada" (sin mecanismos de rechazo) de LFM3-1.7B de LiquidAI, publicada por el usuario AJ-Gonzalez en Hugging Face. El modelo base pertenece a la familia LFM (Liquid Foundation Models) de LiquidAI, caracterizada por arquitecturas tri-híbridas que combinan convoluciones cortas, atención y MLP. Esta derivada no añade capacidades ni ha sido reentrenada: aplica una modificación de pesos denominada abliteration proyectada, generada con la herramienta Heretic 2.0.0.dev0, para reducir drásticamente la tasa de negativas (refusals) del modelo original.
 
 El resultado es un modelo de 1.728,8 millones de parámetros que pasa de rechazar 92 de cada 100 peticiones del dataset `harmful_behaviors` a rechazar solo 10, con un coste medido de divergencia KL de 0,0452 respecto al modelo base. Es relevante para desarrolladores que investigan técnicas de modificación de alineamiento sin reentrenamiento, así como para despliegues en dispositivos edge gracias a su tamaño reducido y sus conversiones GGUF disponibles (desde 1,02 GB en Q4_K_M).
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AlmostNobody/gemma-4-e2b-alpaca-test es un ajuste fino (finetune) del modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario AlmostNobody en HuggingFace. Se trata de un experimento de entrenamiento sobre Gemma 4 con la variante E2B (presumiblemente una version reducida de la familia), realizado con la libreria Unsloth y TRL de HuggingFace, que el autor declara que acelera el entrenamiento 2x respecto a un flujo estandar.
+AlmostNobody/gemma-4-e2b-alpaca-test es un ajuste fino (finetune) del modelo base unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, publicado por el usuario AlmostNobody en Hugging Face. Se trata de un experimento de entrenamiento sobre Gemma 4 con la variante E2B (presumiblemente una version reducida de la familia), realizado con la libreria Unsloth y TRL de Hugging Face, que el autor declara que acelera el entrenamiento 2x respecto a un flujo estandar.
 
 El modelo se distribuye bajo licencia Apache 2.0, en formato safetensors compatible con transformers y text-generation-inference, y esta etiquetado unicamente para el idioma ingles. El repositorio es de apenas 0,1 GB, lo que sugiere pesos cuantizados o un checkpoint parcial, coherente con el prefijo bnb-4bit del modelo base.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada: se trata de un test de finetuning sin d
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, un checkpoint de la familia Gemma 4 en su variante E2B ya cuantizado a 4 bits con bitsandbytes y adaptado por Unsloth. Sobre esa base, el autor ha aplicado un finetuning supervisado utilizando la libreria TRL de HuggingFace y el framework Unsloth, que segun la model card permite entrenar "2x mas rapido". No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de RLHF, DPO o preference tuning adicionales.
+El modelo parte de unsloth/gemma-4-E2B-it-unsloth-bnb-4bit, un checkpoint de la familia Gemma 4 en su variante E2B ya cuantizado a 4 bits con bitsandbytes y adaptado por Unsloth. Sobre esa base, el autor ha aplicado un finetuning supervisado utilizando la libreria TRL de Hugging Face y el framework Unsloth, que segun la model card permite entrenar "2x mas rapido". No se especifica el dataset utilizado, el numero de tokens de entrenamiento, la composicion de los datos ni si se aplicaron tecnicas de RLHF, DPO o preference tuning adicionales.
 
 La unica pista sobre el proposito del ajuste es el sufijo "alpaca-test" del nombre del repositorio, que sugiere el uso del dataset Alpaca (instrucciones en ingles) como prueba de concepto. No hay informacion sobre hiperparametros, epochs, learning rate, ni sobre si se congelaron capas o se entreno con LoRA/QLoRA. Tampoco se documenta ninguna innovacion tecnica especifica mas alla del uso de Unsloth para acelerar el entrenamiento.
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AlmostNobody/gemma-4-e2b-alpaca-test | no disponible (variante E2B) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (base) | variante E2B | no disponible | no disponible en esta ficha | HuggingFace (modelo base) |
-| Gemma 4 E2B-it (original) | variante E2B | no disponible | Gemma terms (segun familia) | HuggingFace / Kaggle |
+| AlmostNobody/gemma-4-e2b-alpaca-test | no disponible (variante E2B) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| unsloth/gemma-4-E2B-it-unsloth-bnb-4bit (base) | variante E2B | no disponible | no disponible en esta ficha | Hugging Face (modelo base) |
+| Gemma 4 E2B-it (original) | variante E2B | no disponible | Gemma terms (segun familia) | Hugging Face / Kaggle |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlmostNobody/gemma-4-e2b-alpaca-test
+- Hugging Face: https://huggingface.co/AlmostNobody/gemma-4-e2b-alpaca-test
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

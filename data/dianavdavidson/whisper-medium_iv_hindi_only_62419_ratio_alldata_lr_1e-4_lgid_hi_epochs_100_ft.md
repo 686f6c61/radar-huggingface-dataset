@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks comparativos que permitan evaluar este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/whisper-medium_iv_hindi_only_62419_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/whisper-medium_iv_hindi_only_62419_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_FT
 - Modelo relacionado de la misma autora: https://huggingface.co/dianavdavidson/whisper-small_iv_hindi_vaani_62120_ratio_alldata_lr_1e-4_lgid_en_epochs_100_FT
 - Modelo relacionado de la misma autora: https://huggingface.co/dianavdavidson/whisper-small_iv_hindi_only_62092_ratio_alldata_lr_1e-4_lgid_hi_epochs_100_FT

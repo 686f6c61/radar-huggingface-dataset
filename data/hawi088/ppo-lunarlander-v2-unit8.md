@@ -88,5 +88,5 @@ No se dispone de datos públicos comparables en la información proporcionada pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Hawi088/ppo-LunarLander-v2-unit8
+- Hugging Face: https://huggingface.co/Hawi088/ppo-LunarLander-v2-unit8
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

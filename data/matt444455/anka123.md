@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Matt444455/anka123 es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión texto-imagen Krea 2, desarrollado por el usuario Matt444455 y publicado en HuggingFace. El adaptador fue entrenado mediante DreamBooth-LoRA sobre la variante Krea 2 RAW y está diseñado para ser usado con el pipeline de Krea 2 Turbo, tal como se muestra en los ejemplos de la model card. El concepto que activa el adaptador es el token `anka123`, que según los ejemplos proporcionados parece corresponder a un tigre blanco representado en diversos escenarios (cyberpunk, biblioteca gigante, cosmos estelar).
+Matt444455/anka123 es un adaptador LoRA (Low-Rank Adaptation) para el modelo de difusión texto-imagen Krea 2, desarrollado por el usuario Matt444455 y publicado en Hugging Face. El adaptador fue entrenado mediante DreamBooth-LoRA sobre la variante Krea 2 RAW y está diseñado para ser usado con el pipeline de Krea 2 Turbo, tal como se muestra en los ejemplos de la model card. El concepto que activa el adaptador es el token `anka123`, que según los ejemplos proporcionados parece corresponder a un tigre blanco representado en diversos escenarios (cyberpunk, biblioteca gigante, cosmos estelar).
 
 Este LoRA resuelve el problema de personalizar la generación de imágenes con un concepto visual específico sin necesidad de reentrenar el modelo base completo. Es relevante para desarrolladores y artistas que desean incorporar un estilo o sujeto concreto en sus flujos de generación con Krea 2, aprovechando la eficiencia de los adaptadores LoRA en términos de tamaño y coste de entrenamiento. El repositorio ocupa 1.7 GB e incluye los pesos del adaptador, aunque no se proporcionan detalles sobre el número de imágenes de entrenamiento ni la configuración exacta del proceso.
 
@@ -68,7 +68,7 @@ No se dispone de información sobre otros LoRAs de Krea 2 comparables. La compar
 
 ## Enlaces
 
-- [HuggingFace - Matt444455/anka123](https://huggingface.co/Matt444455/anka123)
+- [Hugging Face - Matt444455/anka123](https://huggingface.co/Matt444455/anka123)
 - [Models.dev](https://models.dev/)
 - [CivArchive](https://civarchive.com/)
 - [ModelGuessr](https://model-guessr.com/)

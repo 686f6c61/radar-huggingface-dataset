@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ValentinaBruno/my-matching24` es un repositorio experimental publicado en HuggingFace que contiene una implementación de referencia de una arquitectura híbrida orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). El modelo tiene 49.600 parámetros totales, un tamaño propio de una prueba de humo (*smoke test*) y no de un sistema entrenado a escala. El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido es una inicialización válida para verificar que el código carga y ejecuta, no un modelo con pesos entrenados.
+`ValentinaBruno/my-matching24` es un repositorio experimental publicado en Hugging Face que contiene una implementación de referencia de una arquitectura híbrida orientada a tareas de *matching* (emparejamiento o correspondencia entre entradas). El modelo tiene 49.600 parámetros totales, un tamaño propio de una prueba de humo (*smoke test*) y no de un sistema entrenado a escala. El autor lo describe explícitamente como un punto de partida experimental: el checkpoint incluido es una inicialización válida para verificar que el código carga y ejecuta, no un modelo con pesos entrenados.
 
 La relevancia del repositorio es, por tanto, metodológica más que de rendimiento. Sirve para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, ya que el *setup* "large" se mantiene deliberadamente manejable. Incluye `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `eval.py` como artefacto principal.
 
@@ -87,5 +87,5 @@ No disponible. El repositorio no declara tarea de referencia, idioma, conjunto d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ValentinaBruno/my-matching24
+- Hugging Face: https://huggingface.co/ValentinaBruno/my-matching24
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada. Los resultados obtenidos no guardan relacion con este modelo.

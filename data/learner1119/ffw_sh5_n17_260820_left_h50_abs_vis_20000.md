@@ -102,11 +102,11 @@ No se dispone de cifras de rendimiento comparadas entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_20000
+- Modelo en Hugging Face: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_20000
 - Checkpoint final de la misma ejecución: https://huggingface.co/learner1119/ffw_sh5_n17_260820_left_h50_abs_vis_50000
 - Dataset de entrenamiento: https://huggingface.co/datasets/learner1119/260820
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Backbone declarado: https://huggingface.co/nvidia/Cosmos-Reason2-2B
 - Licencia NVIDIA open model license: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-open-model-license/
-- Repositorios hermanos citados en la model card: `learner1119/ffw_sh5_n17_260820_left_h50_abs_20000` y `learner1119/ffw_sh5_n17_260820_left_h50_rel_20000` (rutas relativas al mismo autor en HuggingFace)
+- Repositorios hermanos citados en la model card: `learner1119/ffw_sh5_n17_260820_left_h50_abs_20000` y `learner1119/ffw_sh5_n17_260820_left_h50_rel_20000` (rutas relativas al mismo autor en Hugging Face)
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo (los resultados obtenidos correspondian a definiciones de la palabra "mission" y a tiendas no relacionadas), por lo que no se incluyen.

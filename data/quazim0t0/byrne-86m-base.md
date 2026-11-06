@@ -113,7 +113,7 @@ Nota: las especificaciones de GPT-2, Pythia y SmolLM proceden de documentacion p
 - Contexto limitado a 4.096 tokens, insuficiente para documentos largos o conversaciones extensas.
 - Licencia Apache-2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia. No se declaran restricciones adicionales por parte del autor.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo Python proporcionado por el autor del repositorio (`spike_tokenizer.py` y la implementacion del modelo). Conviene auditar ese codigo antes de cargarlo en entornos de produccion o con datos sensibles.
-- Tokenizador no estandar (length-max sobre bytes, sin BPE): puede complicar la integracion con herramientas, pipelines y utilidades que asumen tokenizadores BPE de HuggingFace, y altera el calculo de metricas dependientes de la tokenizacion.
+- Tokenizador no estandar (length-max sobre bytes, sin BPE): puede complicar la integracion con herramientas, pipelines y utilidades que asumen tokenizadores BPE de Hugging Face, y altera el calculo de metricas dependientes de la tokenizacion.
 - La divergencia entre los ~86M declarados y los 96,9M reales de safetensors debe tenerse en cuenta al planificar presupuestos de memoria o comparaciones de tamano.
 - El Engram de los pesos originales era degenerado y este checkpoint lo repara manteniendo salidas identicas. Por tanto, la mejora solo se manifestara si se reentrena o ajusta sobre esta revision; los pesos aqui publicados no rinden mejor que la revision anterior en inferencia.
 - MoE esta desactivado y la cabeza MTP no se usa en inferencia, por lo que no cabe esperar ventajas de decodificacion especulativa.
@@ -122,7 +122,7 @@ Nota: las especificaciones de GPT-2, Pythia y SmolLM proceden de documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Quazim0t0/Byrne-86M-Base
+- Modelo en Hugging Face: https://huggingface.co/Quazim0t0/Byrne-86M-Base
 - Variante chat de la misma familia: https://huggingface.co/Quazim0t0/Byrne-86M
 - Dataset ArithMark-2.0 (AxiomicLabs), usado en la evaluacion aritmetica: https://huggingface.co/datasets/AxiomicLabs/ArithMark-2.0
 - Visor de arquitectura enlazado desde la model card: https://hfviewer.com/Quazim0t0/Byrne-86M-Base

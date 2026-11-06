@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `kora-gpt2-sst2-peft_lora_seed0` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base GPT-2, desarrollado por el usuario OnePunchMonk101010 como parte del proyecto KoRA. El adaptador se ha ajustado con el conjunto de datos SST-2 (Stanford Sentiment Treebank) para la tarea de análisis de sentimiento binario, y se ha evaluado su capacidad de transferencia al conjunto de datos Rotten Tomatoes. Este modelo sirve como línea base para el proyecto KoRA, que investiga métodos de adaptación eficientes para modelos de lenguaje. El adaptador es muy ligero: solo entrena 1.181.186 parámetros sobre los 125.620.994 del modelo base, lo que representa un 0,94% del total. La información disponible es escasa, pero se sabe que el adaptador se almacena en formato safetensors y se ha publicado en HuggingFace.
+El modelo `kora-gpt2-sst2-peft_lora_seed0` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base GPT-2, desarrollado por el usuario OnePunchMonk101010 como parte del proyecto KoRA. El adaptador se ha ajustado con el conjunto de datos SST-2 (Stanford Sentiment Treebank) para la tarea de análisis de sentimiento binario, y se ha evaluado su capacidad de transferencia al conjunto de datos Rotten Tomatoes. Este modelo sirve como línea base para el proyecto KoRA, que investiga métodos de adaptación eficientes para modelos de lenguaje. El adaptador es muy ligero: solo entrena 1.181.186 parámetros sobre los 125.620.994 del modelo base, lo que representa un 0,94% del total. La información disponible es escasa, pero se sabe que el adaptador se almacena en formato safetensors y se ha publicado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -63,5 +63,5 @@ No se dispone de información sobre modelos comparables en la misma categoría. 
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/OnePunchMonk101010/kora-gpt2-sst2-peft_lora_seed0)
+- [Hugging Face del modelo](https://huggingface.co/OnePunchMonk101010/kora-gpt2-sst2-peft_lora_seed0)
 - [Repositorio del proyecto KoRA](https://github.com/OnePunchMonk/KoRA) (mencionado en la model card)

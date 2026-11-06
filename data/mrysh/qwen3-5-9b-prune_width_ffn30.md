@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrysh/qwen3.5-9b-prune_width_ffn30
+- Modelo en Hugging Face: https://huggingface.co/mrysh/qwen3.5-9b-prune_width_ffn30
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - NVIDIA ModelOpt (libreria de poda): no se proporciona enlace en la informacion disponible
 - BFCL (Berkeley Function Calling Leaderboard): no se proporciona enlace en la informacion disponible

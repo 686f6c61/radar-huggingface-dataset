@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Covenant es un proyecto de "ledger" peer-to-peer con una puerta de ética integrada en la ruta de transacción, publicado en HuggingFace bajo el identificador `Lawless1987/covenant`. No se trata de un modelo de lenguaje en el sentido convencional: el repositorio no contiene pesos, no declara pipeline de inferencia y su tamano es de 0.0 GB. Lo que el autor publica es un sistema de software (Python) para registrar transacciones entre agentes o inteligencias, con un mecanismo de juicio ético que decide si una transacción se admite o se retiene.
+Covenant es un proyecto de "ledger" peer-to-peer con una puerta de ética integrada en la ruta de transacción, publicado en Hugging Face bajo el identificador `Lawless1987/covenant`. No se trata de un modelo de lenguaje en el sentido convencional: el repositorio no contiene pesos, no declara pipeline de inferencia y su tamano es de 0.0 GB. Lo que el autor publica es un sistema de software (Python) para registrar transacciones entre agentes o inteligencias, con un mecanismo de juicio ético que decide si una transacción se admite o se retiene.
 
 El proyecto se presenta explícitamente como un experimento auditable: cada afirmación de la model card debe haber sido observada ejecutando código o marcarse como suposición. Según los datos de la propia card, la versión etiquetada es v8.40 (etiqueta fijada el 2026-08-29, con 71 cambios de núcleo desde entonces), el código fuente tiene 13.427 líneas y la suite de pruebas reporta 195 suites y 5.860 comprobaciones con 0 fallos en win32 a fecha 2026-10-16. El autor advierte que ese "0 fallos" no cubre todo el sistema: las puertas (gates) son una cuestión separada de las comprobaciones.
 
@@ -77,7 +77,7 @@ No disponible. El artefacto no es un modelo de lenguaje y no se han identificado
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lawless1987/covenant
+- Hugging Face: https://huggingface.co/Lawless1987/covenant
 - Repositorio GitHub: https://github.com/LAWLESS1987/covenant
 - Nota para agentes y bots: PEACE.md (referenciado en la model card, en el repositorio)
 - Guía para modelos: llms.txt (referenciado en la model card, en el repositorio)

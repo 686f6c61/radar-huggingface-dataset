@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Phi4-mini-ReGiFT es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario MinaMila en HuggingFace, construido sobre el modelo base microsoft/Phi-4-mini-instruct. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (repo de 0,1 GB) que deben cargarse junto al modelo base mediante la libreria PEFT. La model card publicada es la plantilla por defecto de HuggingFace: todas las secciones relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) aparecen sin rellenar con el marcador "[More Information Needed]", por lo que la informacion verificable sobre el ajuste es practicamente nula.
+Phi4-mini-ReGiFT es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario MinaMila en Hugging Face, construido sobre el modelo base microsoft/Phi-4-mini-instruct. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales (repo de 0,1 GB) que deben cargarse junto al modelo base mediante la libreria PEFT. La model card publicada es la plantilla por defecto de Hugging Face: todas las secciones relevantes (descripcion, datos de entrenamiento, hiperparametros, evaluacion, licencia, idiomas) aparecen sin rellenar con el marcador "[More Information Needed]", por lo que la informacion verificable sobre el ajuste es practicamente nula.
 
 El interes de esta publicacion es limitado y de naturaleza mas bien experimental. El repositorio registra 0 descargas y 0 likes, no declara licencia propia y no documenta el origen del sufijo "ReGiFT" ni el dataset o la receta de ajuste empleados. El unico dato tecnico solido es la version de PEFT utilizada (0.19.1), lo que confirma que se trata de un adaptador generado con una version reciente de la libreria.
 
@@ -48,7 +48,7 @@ No hay ningun dato en la informacion proporcionada sobre como se entreno este ad
 - Ajuste conversacional ligero: si el ajuste se oriento a dialogo (el tag "conversational" asi lo sugiere), serviria para validar tecnicas de personalizacion de tono o estilo en asistentes de texto.
 - Base para un segundo ciclo de fine-tuning: el adaptador puede emplearse como punto de partida de un ajuste propio adicional con datos especificos del dominio antes de publicar un modelo final.
 - Pruebas de regresion de infraestructura: util para verificar que un pipeline de despliegue basado en PEFT + transformers + vLLM o TGI carga correctamente adaptadores externos sobre Phi-4-mini-instruct.
-- Docencia de tecnicas LoRA: sirve como ejemplo practico (aunque deficientemente documentado) de como se estructura un repositorio de adaptador en HuggingFace.
+- Docencia de tecnicas LoRA: sirve como ejemplo practico (aunque deficientemente documentado) de como se estructura un repositorio de adaptador en Hugging Face.
 - No se recomienda su uso en produccion: la ausencia de licencia declarada, de evaluacion y de documentacion impide asumir garantias de calidad, sesgo o seguridad.
 
 ## Benchmarks y rendimiento
@@ -93,7 +93,7 @@ No se incluyen cifras de rendimiento comparado porque no hay datos de evaluacion
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/MinaMila/Phi4-mini-ReGiFT
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/MinaMila/Phi4-mini-ReGiFT
 - Modelo base: https://huggingface.co/microsoft/Phi-4-mini-instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Referencia citada en los tags del repositorio (Machine Learning Impact calculator / Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

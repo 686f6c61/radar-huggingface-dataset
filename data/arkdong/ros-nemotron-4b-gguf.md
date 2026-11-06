@@ -72,8 +72,8 @@ El autor señala que los enlaces son el punto débil: cuando la ronda 2 enlaza d
 
 | Modelo | Parámetros | Contexto | Tareas de agente retenidas (95) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ros-nemotron-4b r2b | 3,97B | 65.536 en evaluación | 68/95 | NVIDIA Nemotron Open Model License | GGUF Q4_K_M y adaptador LoRA en HuggingFace |
-| NVIDIA Nemotron 3 Nano 4B (base) | 3,97B | no disponible | 33/95 | NVIDIA Nemotron Open Model License | BF16 en HuggingFace (nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16) |
+| ros-nemotron-4b r2b | 3,97B | 65.536 en evaluación | 68/95 | NVIDIA Nemotron Open Model License | GGUF Q4_K_M y adaptador LoRA en Hugging Face |
+| NVIDIA Nemotron 3 Nano 4B (base) | 3,97B | no disponible | 33/95 | NVIDIA Nemotron Open Model License | BF16 en Hugging Face (nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16) |
 | NVIDIA Nemotron 3 Super (profesor) | 120B (12B activos, MoE) | 128k | 52/95 sin guías de tarea | no disponible en la información | Disponible en Nebius Token Factory según el README |
 
 La comparación es limitada porque los tres modelos se evalúan con el arnés específico de ros.ai, no con benchmarks estándar. El modelo base y el profesor son los únicos comparables documentados; no se dispone de datos frente a otros modelos de 4B de la misma categoría.
@@ -92,7 +92,7 @@ La comparación es limitada porque los tres modelos se evalúan con el arnés es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkdong/ros-nemotron-4b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/arkdong/ros-nemotron-4b-GGUF
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Repositorio de ros.ai: https://github.com/arkdong/ros-ai
 - Código y resultados de entrenamiento: `training/ros-nemotron` dentro de https://github.com/arkdong/ros-ai

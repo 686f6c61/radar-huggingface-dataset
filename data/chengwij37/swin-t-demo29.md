@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chengwij37/swin-t-demo29` es un repositorio de HuggingFace que contiene una implementación propia en PyTorch de una Swin Transformer (Swin T) orientada a tareas de clasificación. Lo publica el usuario `chengwij37` y se presenta explícitamente como un artefacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para producción. El repositorio incluye un script `finetune.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
+`chengwij37/swin-t-demo29` es un repositorio de Hugging Face que contiene una implementación propia en PyTorch de una Swin Transformer (Swin T) orientada a tareas de clasificación. Lo publica el usuario `chengwij37` y se presenta explícitamente como un artefacto de revisión de código, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no como un modelo preentrenado listo para producción. El repositorio incluye un script `finetune.py` como artefacto principal, junto con `config.json`, `training_args.json` y un checkpoint de inicialización en `model.safetensors`.
 
 El dato más llamativo es la discrepancia entre la model card y los metadatos reales: la documentación describe la configuración como "xlarge", pero los pesos en safetensors suman únicamente 33.088 parámetros totales, un orden de magnitud muy inferior al de cualquier Swin Transformer funcional. Esto refuerza la naturaleza de demostración del repositorio: el checkpoint es una inicialización válida para probar el flujo de carga, no un modelo entrenado.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chengwij37/swin-t-demo29 | 33.088 | no disponible (resolucion de imagen no documentada) | sin benchmark declarado; checkpoint sin entrenar | apache-2.0 | HuggingFace, 0 descargas y 0 likes |
+| chengwij37/swin-t-demo29 | 33.088 | no disponible (resolucion de imagen no documentada) | sin benchmark declarado; checkpoint sin entrenar | apache-2.0 | Hugging Face, 0 descargas y 0 likes |
 | torchvision.models.swin_t | no disponible en la informacion proporcionada | no disponible | pesos preentrenados disponibles via `Swin_T_Weights` | no disponible en la informacion proporcionada | documentado en docs.pytorch.org |
 | microsoft/Swin-Transformer (implementacion oficial) | no disponible en la informacion proporcionada | no disponible | implementacion de referencia del paper | no disponible en la informacion proporcionada | repositorio publico en GitHub |
 
@@ -94,7 +94,7 @@ La comparacion relevante es cualitativa: frente a la implementacion de torchvisi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chengwij37/swin-t-demo29
+- Modelo en Hugging Face: https://huggingface.co/chengwij37/swin-t-demo29
 - Documentacion de torchvision para swin_t: https://docs.pytorch.org/vision/master/models/generated/torchvision.models.swin_t.html
 - Documentacion de torchvision 0.29 para swin_t: https://docs.pytorch.org/vision/0.29/models/generated/torchvision.models.swin_t.html
 - Repositorio oficial de Swin Transformer (Microsoft): https://github.com/microsoft/Swin-Transformer

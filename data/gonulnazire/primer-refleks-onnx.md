@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`primer-refleks-onnx` es un clasificador tabular binario exportado a ONNX (opset 18) que predice si un estudiante, dentro de la simulacion educativa Primer, tomara una decision por reflejo en lugar de razonarla. No es un modelo de lenguaje ni una red neuronal: es una regresion logistica con escalado previo (`StandardScaler` + `LogisticRegression` con `class_weight=balanced`) entrenada sobre 6 caracteristicas de sesion. Lo desarrolla el usuario de HuggingFace `gonulnazire` como artefacto auxiliar de su proyecto Primer, un simulador de aprendizaje con pausas socraticas.
+`primer-refleks-onnx` es un clasificador tabular binario exportado a ONNX (opset 18) que predice si un estudiante, dentro de la simulacion educativa Primer, tomara una decision por reflejo en lugar de razonarla. No es un modelo de lenguaje ni una red neuronal: es una regresion logistica con escalado previo (`StandardScaler` + `LogisticRegression` con `class_weight=balanced`) entrenada sobre 6 caracteristicas de sesion. Lo desarrolla el usuario de Hugging Face `gonulnazire` como artefacto auxiliar de su proyecto Primer, un simulador de aprendizaje con pausas socraticas.
 
 El modelo resuelve un problema muy acotado: decidir *cuando* interrumpir al estudiante para forzar una reflexion, no *que* responder. Su relevancia es limitada y contextual: sirve como ejemplo de model card rigurosa (sigue la plantilla de Mitchell et al., 2019) y de integracion de un clasificador tabular minimo en un pipeline ONNX, pero no es una pieza reutilizable fuera de la aplicacion para la que fue disenado. El repositorio ocupa 0,0 GB y el binario ONNX pesa aproximadamente 0,6 KB.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Tipo | Parametros | Contexto | ROC-AUC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `primer-refleks-onnx` | Regresion logistica tabular (ONNX) | 6 caracteristicas | no aplica | 0,8341 (agrupada) | MIT | HuggingFace |
+| `primer-refleks-onnx` | Regresion logistica tabular (ONNX) | 6 caracteristicas | no aplica | 0,8341 (agrupada) | MIT | Hugging Face |
 | Linea base de una caracteristica (`onceki_refleks_sayisi`) | Regla simple | 1 caracteristica | no aplica | 0,7634 | no aplica | interna |
 | Clasificador de clase mayoritaria | Regla trivial | 0 | no aplica | 0,5 (referencia) | no aplica | no aplica |
 | XGBoost / Random Forest sobre los mismos datos | Ensemble de arboles | no disponible | no aplica | no disponible (el autor indica que memorizan con 267 filas) | no aplica | no aplica |
@@ -98,7 +98,7 @@ No se identifican en la informacion disponible modelos publicos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gonulnazire/primer-refleks-onnx
+- Modelo en Hugging Face: https://huggingface.co/gonulnazire/primer-refleks-onnx
 - Repositorio fuente: https://github.com/gonulnazire/primer
 - Paper de referencia de la plantilla de model card: https://arxiv.org/abs/1810.03993
 - Contrato de caracteristicas y metricas: `config.json` en el repositorio del modelo

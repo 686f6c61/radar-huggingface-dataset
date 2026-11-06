@@ -4,7 +4,7 @@
 
 El modelo `orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX` es una versión modificada (abliterada) del modelo base `Qwen/Qwen3.8-Flash-Next`, desarrollado por el usuario OrcaRouter. Se trata de un modelo multimodal de tipo mezcla de expertos (MoE) con 71.306.659.731 parámetros totales, preparado para ejecutarse en Apple Silicon mediante el formato MLX y cuantizado a 4 bits. La abliteración elimina los mecanismos de rechazo del modelo original, de modo que responde sin negativas a peticiones que normalmente serían bloqueadas, lo que lo hace útil para tareas de red-teaming y evaluación de seguridad.
 
-El modelo soporta entrada de imagen y texto (pipeline `image-text-to-text`), razonamiento, function calling y decodificación especulativa mediante una cabeza MTP (Multi-Token Prediction). Está etiquetado como `qwen4_exp`, lo que sugiere que forma parte de una línea experimental de la familia Qwen4. La licencia es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace. Los idiomas soportados son inglés y chino.
+El modelo soporta entrada de imagen y texto (pipeline `image-text-to-text`), razonamiento, function calling y decodificación especulativa mediante una cabeza MTP (Multi-Token Prediction). Está etiquetado como `qwen4_exp`, lo que sugiere que forma parte de una línea experimental de la familia Qwen4. La licencia es Apache 2.0, pero el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face. Los idiomas soportados son inglés y chino.
 
 La relevancia de este modelo radica en su doble naturaleza: por un lado, ofrece capacidades avanzadas de razonamiento y visión en un formato optimizado para hardware de Apple; por otro, al estar abliterado, plantea interrogantes sobre los límites de la seguridad en modelos de lenguaje y sirve como herramienta para estudiar la robustez de los sistemas de alineación.
 
@@ -64,7 +64,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 - Al estar abliterado, el modelo puede generar contenido ofensivo, peligroso o ilegal sin restricciones, lo que supone un riesgo significativo si se utiliza en produccion sin salvaguardas externas.
 - La abliteracion puede degradar ligeramente la calidad de las respuestas en tareas que requieren matices de seguridad, aunque no se han medido perdidas concretas en este modelo.
-- El acceso es restringido (gated) y requiere aceptar las condiciones del repositorio en HuggingFace.
+- El acceso es restringido (gated) y requiere aceptar las condiciones del repositorio en Hugging Face.
 - Los idiomas soportados se limitan a ingles y chino; no se garantiza un rendimiento adecuado en otros idiomas.
 - No se dispone de informacion sobre la longitud de contexto, lo que impide conocer los limites de memoria para conversaciones largas o documentos extensos.
 - El tamaño del repositorio (616,5 GB) sugiere que incluye multiples versiones o cuantizaciones, lo que puede complicar la descarga y el almacenamiento.
@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX
+- Repositorio Hugging Face: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3.8-Flash-Next (no verificado en la busqueda)

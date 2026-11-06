@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| HeteroMoEProjSpace-v2 | 645,19 M | No disponible | Texto + imagen | Apache 2.0 | HuggingFace, código custom |
-| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens (según su model card pública) | Texto | Apache 2.0 | HuggingFace, ampliamente soportado |
-| ViT-base-patch16-224 | ~86 M | No aplica (imagen 224×224) | Imagen | Apache 2.0 | HuggingFace |
-| BERT uncased L4 H256 | ~11 M | 512 tokens | Texto | Apache 2.0 | HuggingFace |
+| HeteroMoEProjSpace-v2 | 645,19 M | No disponible | Texto + imagen | Apache 2.0 | Hugging Face, código custom |
+| Qwen2.5-0.5B-Instruct | ~494 M | 32.768 tokens (según su model card pública) | Texto | Apache 2.0 | Hugging Face, ampliamente soportado |
+| ViT-base-patch16-224 | ~86 M | No aplica (imagen 224×224) | Imagen | Apache 2.0 | Hugging Face |
+| BERT uncased L4 H256 | ~11 M | 512 tokens | Texto | Apache 2.0 | Hugging Face |
 
 La comparación directa es limitada: HeteroMoEProjSpace-v2 no es un modelo generativo ni un clasificador estándar, sino un extractor multimodal que envuelve a los tres anteriores. Frente a un CLIP o un ImageBind (no documentados en la información disponible), su propuesta es usar backbones de texto generativo y bidireccional como expertos, algo poco habitual.
 
@@ -103,7 +103,7 @@ La comparación directa es limitada: HeteroMoEProjSpace-v2 no es un modelo gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redmingwei/HeteroMoEProjSpace-v2
+- Modelo en Hugging Face: https://huggingface.co/redmingwei/HeteroMoEProjSpace-v2
 - Repositorio de investigación en GitHub: https://github.com/Microbiosis/hetero-moe/tree/main/research/aligner/v62_dimension_projection_space
 - Repositorio de datos de caché de entrenamiento: https://huggingface.co/datasets/redmingwei/hetero-moe-cache
 - Repositorio de experimentos de routing: https://huggingface.co/redmingwei/hetero-moe-router

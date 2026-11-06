@@ -23,7 +23,7 @@ La relevancia actual de este modelo radica en su cobertura multilingüe excepcio
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica la arquitectura interna del modelo. El tag "qwen3" en HuggingFace sugiere que podría basarse en la arquitectura de Qwen3, pero no hay confirmacion oficial. Se sabe que el modelo es un encoder de embeddings, no un modelo generativo, y que produce vectores de 320 dimensiones. El tokenizador anade automaticamente el token de fin de secuencia (EOS).
+La model card no especifica la arquitectura interna del modelo. El tag "qwen3" en Hugging Face sugiere que podría basarse en la arquitectura de Qwen3, pero no hay confirmacion oficial. Se sabe que el modelo es un encoder de embeddings, no un modelo generativo, y que produce vectores de 320 dimensiones. El tokenizador anade automaticamente el token de fin de secuencia (EOS).
 
 El entrenamiento se realizo sobre un conjunto de datos compuesto por 60 millones de ejemplos publicos de alta calidad, curado especificamente para tareas de embedding. El modelo de 80M es una version podada del modelo base F2LLM-v2-0.6B-Preview, seguida de un entrenamiento adicional para recuperar el rendimiento tras la poda. No se proporcionan detalles sobre el proceso de poda, la composicion exacta del dataset ni si se utilizaron tecnicas como RLHF o DPO. La familia F2LLM-v2 libera el codigo de entrenamiento y los checkpoints intermedios, lo que permite reproducir el proceso.
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos concretos con otros modelos de embeddings de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/codefuse-ai/F2LLM-v2-80M
+- Modelo en Hugging Face: https://huggingface.co/codefuse-ai/F2LLM-v2-80M
 - Paper (arXiv): https://arxiv.org/abs/2603.19223
 - Dataset de entrenamiento: https://huggingface.co/datasets/codefuse-ai/F2LLM-v2
 - Modelo base (podado): https://huggingface.co/codefuse-ai/F2LLM-v2-0.6B-Preview-Pruned-80M

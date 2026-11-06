@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-No hay datos de otros modelos de la misma categoría en la información proporcionada. La comparativa no está disponible. Se podría comparar con otros modelos de ACT publicados en el Hub de HuggingFace, pero no se dispone de sus métricas.
+No hay datos de otros modelos de la misma categoría en la información proporcionada. La comparativa no está disponible. Se podría comparar con otros modelos de ACT publicados en el Hub de Hugging Face, pero no se dispone de sus métricas.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No hay datos de otros modelos de la misma categoría en la información proporci
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/masato-ka/act_omx_bilateral_bottle_v0)
+- [Modelo en Hugging Face](https://huggingface.co/masato-ka/act_omx_bilateral_bottle_v0)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/masato-ka/omx_bilateral_bottle_v0)
 - [Paper de ACT](https://huggingface.co/papers/2304.13705)
 - [LeRobot (GitHub)](https://github.com/huggingface/lerobot)

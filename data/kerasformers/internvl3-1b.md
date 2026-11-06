@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 | Modelo | Parámetros | Contexto | Licencia | Implementación |
 |---|---|---|---|---|
 | kerasformers/internvl3-1b | 1B | no disponible | other | Keras 3 (TF, Torch, JAX) |
-| OpenGVLab/InternVL3-1B-hf | 1B | no disponible | other | PyTorch (HuggingFace) |
+| OpenGVLab/InternVL3-1B-hf | 1B | no disponible | other | PyTorch (Hugging Face) |
 | LLaVA-1.5-7B | 7B | 2K | Apache 2.0 | PyTorch |
 
 La comparativa se centra en la implementación: mientras que el modelo original está disponible en PyTorch, esta conversión ofrece la ventaja de ejecutarse en múltiples backends. En cuanto a rendimiento, no hay datos para comparar. LLaVA-1.5-7B es un modelo multimodal más grande y con licencia permisiva, pero no es directamente comparable por tamaño.
@@ -74,8 +74,8 @@ La comparativa se centra en la implementación: mientras que el modelo original 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/internvl3-1b
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/internvl3-1b
 - Modelo base: https://huggingface.co/OpenGVLab/InternVL3-1B-hf
 - Repositorio de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de InternVL en KerasFormers: https://imvision12.github.io/KerasFormers/internvl/
-- Colección de modelos InternVL en HuggingFace: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd
+- Colección de modelos InternVL en Hugging Face: https://huggingface.co/collections/kerasformers/internvl-6a8277076dbb163f53241dbd

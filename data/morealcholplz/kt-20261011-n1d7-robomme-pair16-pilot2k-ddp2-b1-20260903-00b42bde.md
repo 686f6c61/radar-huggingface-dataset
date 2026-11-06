@@ -18,7 +18,7 @@ Su relevancia es acotada y de caracter operativo: sirve para reproducir o contin
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (el snapshot se publica como checkpoint/backup, no como pesos listos para inferencia) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en los metadatos de HuggingFace; la model card indica que los derivados de GR00T quedan sujetos a la licencia de investigacion/evaluacion de NVIDIA, y que pi/openpi y componentes de terceros conservan sus propios terminos |
+| Licencia | no disponible en los metadatos de Hugging Face; la model card indica que los derivados de GR00T quedan sujetos a la licencia de investigacion/evaluacion de NVIDIA, y que pi/openpi y componentes de terceros conservan sus propios terminos |
 | Formato de pesos | no disponible (se menciona un directorio `payload/` con checkpoint, configuracion y ficheros de resultado, incluido estado de reanudacion) |
 
 ## Arquitectura y entrenamiento
@@ -84,8 +84,8 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-pilot2k-ddp2-b1-20260903-00b42bde
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-pilot2k-ddp2-b1-20260903-00b42bde
 - Repositorio hermano del mismo autor (GR00T N1.6 + HAMLET + Persistent TTT, RoboMME NMT T=4): https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4
-- Perfil del autor en HuggingFace: https://huggingface.co/morealcholplz
+- Perfil del autor en Hugging Face: https://huggingface.co/morealcholplz
 - Paper, blog o demo oficial: no disponible
 - Repositorio de codigo asociado: no disponible

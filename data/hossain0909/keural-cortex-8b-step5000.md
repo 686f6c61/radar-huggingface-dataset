@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Keural-Cortex-8B-step5000 es un checkpoint intermedio de preentrenamiento continuado (continued pretraining, CPT) sobre el modelo base Qwen3-8B-Base de Alibaba Cloud, desarrollado por MKD Co., Ltd. (publicado en HuggingFace bajo la cuenta `hossain0909`). El objetivo del proyecto es adaptar el modelo base a un corpus centrado en coreano, manteniendo capacidades en ingles, codigo y ciencia/matematicas. El checkpoint se publica para inspeccion interna y reproducibilidad, no para uso en produccion.
+Keural-Cortex-8B-step5000 es un checkpoint intermedio de preentrenamiento continuado (continued pretraining, CPT) sobre el modelo base Qwen3-8B-Base de Alibaba Cloud, desarrollado por MKD Co., Ltd. (publicado en Hugging Face bajo la cuenta `hossain0909`). El objetivo del proyecto es adaptar el modelo base a un corpus centrado en coreano, manteniendo capacidades en ingles, codigo y ciencia/matematicas. El checkpoint se publica para inspeccion interna y reproducibilidad, no para uso en produccion.
 
 El estado del entrenamiento es el paso 5.000 de 13.034 (aproximadamente el 38%), con unos 15,7B de tokens vistos de los 41B planificados. Se trata de un modelo base sin ajuste por instrucciones: no dispone de formato de chat, tool calling ni modo de razonamiento, y el preentrenamiento continuado no anade estas capacidades, que corresponden a una fase de post-entrenamiento que no se ha ejecutado.
 
@@ -93,5 +93,5 @@ La comparacion con alternativas coreanas especificas (por ejemplo, modelos de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hossain0909/Keural-Cortex-8B-step5000
+- Hugging Face: https://huggingface.co/hossain0909/Keural-Cortex-8B-step5000
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base

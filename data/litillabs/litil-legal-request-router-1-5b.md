@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LiTiL Legal Request Router 1.5B | ~1,5 B en el base mas adaptador LoRA de ~17,5 MB | no disponible | JSON de enrutamiento juridico en 6 dominios | Apache 2.0 | HuggingFace: 0 descargas, 0 likes |
-| Qwen2.5-1.5B-Instruct (modelo base) | ~1,5 B | no disponible en la informacion proporcionada | Texto libre, sin esquema fijo | Apache 2.0 | HuggingFace |
+| LiTiL Legal Request Router 1.5B | ~1,5 B en el base mas adaptador LoRA de ~17,5 MB | no disponible | JSON de enrutamiento juridico en 6 dominios | Apache 2.0 | Hugging Face: 0 descargas, 0 likes |
+| Qwen2.5-1.5B-Instruct (modelo base) | ~1,5 B | no disponible en la informacion proporcionada | Texto libre, sin esquema fijo | Apache 2.0 | Hugging Face |
 | Otros enrutadores o clasificadores juridicos comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la informacion proporcionada alternativas directas de la misma categoria (enrutamiento juridico con salida JSON sobre un modelo base pequeno), por lo que no es posible establecer una comparacion cuantitativa de rendimiento.
@@ -88,7 +88,7 @@ No se han identificado en la informacion proporcionada alternativas directas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litillabs/litil-legal-request-router-1.5b
+- Modelo en Hugging Face: https://huggingface.co/litillabs/litil-legal-request-router-1.5b
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - La busqueda web realizada no devolvio ningun resultado relevante: los unicos resultados obtenidos eran paginas sobre versiculos biblicos sin relacion con el modelo, el enrutamiento juridico ni LiTiL Labs, por lo que no se incluyen. No se han localizado papers, blogs, repositorios ni demos adicionales en la informacion disponible.
 - La model card solicita citar el repositorio de release y Qwen2.5-1.5B-Instruct en cualquier uso del adaptador.

@@ -90,11 +90,11 @@ El autor señala que las variantes entrenadas ya devolvían los objetos exactos 
 
 | Modelo | Parámetros | Contexto | IFStruct /2000 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM2.5-350M (base congelado) | 350M | 32.000 | 440 y 444 en las dos líneas base | lfm-open-license-v1.0 | HuggingFace, oficial de Liquid AI |
-| Este adaptador (piloto, paso 100) | 350M + 5,99M LoRA | 32.000 | 555 (+5,75 pp, IC 95 % [+3,95, +7,60]) | lfm-open-license-v1.0 | HuggingFace, repositorio de investigación |
-| variants/phase2-repeat (semilla 43) | 350M + 5,99M LoRA | 32.000 | 543 (+4,95 pp, IC 95 % [+3,00, +6,95]) | lfm-open-license-v1.0 | HuggingFace, misma raíz del repositorio |
-| variants/phase2-selected (semilla 42) | 350M + 5,99M LoRA | 32.000 | 434 (−0,50 pp, IC 95 % [−2,60, +1,65]) | lfm-open-license-v1.0 | HuggingFace, misma raíz del repositorio |
-| Ajuste de 350M con GRPO e IFStruct descrito en el blog de TRL | 350M (según el título del blog) | No disponible | No disponible | No disponible | Blog público en HuggingFace |
+| LFM2.5-350M (base congelado) | 350M | 32.000 | 440 y 444 en las dos líneas base | lfm-open-license-v1.0 | Hugging Face, oficial de Liquid AI |
+| Este adaptador (piloto, paso 100) | 350M + 5,99M LoRA | 32.000 | 555 (+5,75 pp, IC 95 % [+3,95, +7,60]) | lfm-open-license-v1.0 | Hugging Face, repositorio de investigación |
+| variants/phase2-repeat (semilla 43) | 350M + 5,99M LoRA | 32.000 | 543 (+4,95 pp, IC 95 % [+3,00, +6,95]) | lfm-open-license-v1.0 | Hugging Face, misma raíz del repositorio |
+| variants/phase2-selected (semilla 42) | 350M + 5,99M LoRA | 32.000 | 434 (−0,50 pp, IC 95 % [−2,60, +1,65]) | lfm-open-license-v1.0 | Hugging Face, misma raíz del repositorio |
+| Ajuste de 350M con GRPO e IFStruct descrito en el blog de TRL | 350M (según el título del blog) | No disponible | No disponible | No disponible | Blog público en Hugging Face |
 
 No se dispone de comparaciones con otros adaptadores de salida estructurada del mismo tamaño, ni de datos de LFM2-350M (la generación anterior) en la información proporcionada. Tampoco se realizó ninguna comparación de velocidad entre Halo y TRL, según declara el propio autor.
 
@@ -118,7 +118,7 @@ No se dispone de comparaciones con otros adaptadores de salida estructurada del 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Nurymanau/LFM2.5-350M-Halo-Structured-Output-Research
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Nurymanau/LFM2.5-350M-Halo-Structured-Output-Research
 - Modelo base LiquidAI/LFM2.5-350M: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind
 - Documentación de Liquid AI para LFM2.5-350M: https://docs.liquid.ai/lfm/models/lfm25-350m

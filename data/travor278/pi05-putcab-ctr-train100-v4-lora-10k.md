@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PI0.5 PutCab-CTR-Train100-V4 LoRA 10k es un ajuste fino de tipo LoRA sobre el modelo base PI0.5 en su implementacion JAX del ecosistema openpi, publicado por el usuario Travor278 en HuggingFace. Se trata de una politica vision-lenguaje-accion (VLA) orientada a robotica de manipulacion: recibe tres vistas RGB a 224x224 y un estado propioceptivo de 14 dimensiones, y produce acciones continuas de 32 dimensiones (14 nativas con relleno) con un horizonte de 50 pasos. El modelo esta especializado en una unica tarea, descrita por el prompt fijo "Open the cabinet drawer with the left arm and place the object into it with the right arm".
+PI0.5 PutCab-CTR-Train100-V4 LoRA 10k es un ajuste fino de tipo LoRA sobre el modelo base PI0.5 en su implementacion JAX del ecosistema openpi, publicado por el usuario Travor278 en Hugging Face. Se trata de una politica vision-lenguaje-accion (VLA) orientada a robotica de manipulacion: recibe tres vistas RGB a 224x224 y un estado propioceptivo de 14 dimensiones, y produce acciones continuas de 32 dimensiones (14 nativas con relleno) con un horizonte de 50 pasos. El modelo esta especializado en una unica tarea, descrita por el prompt fijo "Open the cabinet drawer with the left arm and place the object into it with the right arm".
 
 El entrenamiento se realizo sobre el dataset Shiki42/PutCab-CTR-Train100-V4 (100 episodios, 29.056 fotogramas a 16,67 FPS) durante 10.000 actualizaciones con batch global de 16, empleando dos GPU H100 de 80 GB. El ajuste congela los pesos del modelo base en bf16 y entrena parametros de tipo LoRA (rango/alpha 16 en PaliGemma, 32 en el action expert) en float32, con optimizador AdamW y un schedule coseno fijo de 30.000 pasos truncado en 10.000. El checkpoint se distribuye en formato Orbax bajo la raiz `10000/`, con el arbol completo de parametros de inferencia (LoRA mas pesos base mas activos de normalizacion).
 
@@ -73,11 +73,11 @@ La model card indica de forma explicita que no se reclama ninguna tasa de exito 
 
 | Modelo | Parametros | Contexto / horizonte | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PI0.5 PutCab LoRA 10k (este modelo) | no disponible | horizonte de 50 acciones | no disponible | HuggingFace, 0 descargas | Fine-tune LoRA de tarea unica en JAX |
-| openpi PI0.5 base JAX (XinY0201) | no disponible | no disponible | no disponible | HuggingFace | Modelo base sobre el que se aplica este LoRA; sin especializar |
+| PI0.5 PutCab LoRA 10k (este modelo) | no disponible | horizonte de 50 acciones | no disponible | Hugging Face, 0 descargas | Fine-tune LoRA de tarea unica en JAX |
+| openpi PI0.5 base JAX (XinY0201) | no disponible | no disponible | no disponible | Hugging Face | Modelo base sobre el que se aplica este LoRA; sin especializar |
 | PI0 / openpi (Physical Intelligence) | no disponible | no disponible | no disponible | Repositorio openpi | Familia de VLA open source de la que deriva PI0.5 |
-| NVIDIA GR00T N1.5 | no disponible | no disponible | no disponible | HuggingFace | VLA alternativo de proposito general; no comparable en datos concretos con la informacion disponible |
-| OpenVLA | no disponible | no disponible | no disponible | HuggingFace | VLA abierto de referencia; no comparable en datos concretos con la informacion disponible |
+| NVIDIA GR00T N1.5 | no disponible | no disponible | no disponible | Hugging Face | VLA alternativo de proposito general; no comparable en datos concretos con la informacion disponible |
+| OpenVLA | no disponible | no disponible | no disponible | Hugging Face | VLA abierto de referencia; no comparable en datos concretos con la informacion disponible |
 
 No se dispone de datos verificables de parametros, contexto o rendimiento para establecer una comparacion cuantitativa. La diferencia principal frente al modelo base es que este checkpoint esta especializado en una unica tarea mediante LoRA, mientras que los modelos base son de proposito general.
 
@@ -97,7 +97,7 @@ No se dispone de datos verificables de parametros, contexto o rendimiento para e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-putcab-ctr-train100-v4-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-putcab-ctr-train100-v4-lora-10k
 - Modelo base: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/PutCab-CTR-Train100-V4
 - Repositorio openpi (Physical Intelligence): https://github.com/Physical-Intelligence/openpi

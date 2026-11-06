@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Radial Hyena Networks es un artefacto de investigación publicado en HuggingFace por el usuario Godseye1311 que acompaña al trabajo *Radial Hyena Networks for Property Prediction of Nanomaterials*. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general, sino de un conjunto de pesos entrenados, datos de benchmark y registros de entrenamiento para un modelo de predicción de propiedades de nanomateriales inorgánicos representados como grafos.
+Radial Hyena Networks es un artefacto de investigación publicado en Hugging Face por el usuario Godseye1311 que acompaña al trabajo *Radial Hyena Networks for Property Prediction of Nanomaterials*. No se trata de un modelo de lenguaje ni de un modelo generativo de propósito general, sino de un conjunto de pesos entrenados, datos de benchmark y registros de entrenamiento para un modelo de predicción de propiedades de nanomateriales inorgánicos representados como grafos.
 
 El repositorio combina dos familias arquitectónicas poco habituales en el modelado de materiales: los operadores Hyena, basados en convoluciones implícitas de largo alcance, y las redes de Kolmogorov-Arnold (KAN), según las etiquetas declaradas por el autor. El objetivo declarado es predecir seis tareas distintas sobre estructuras cristalinas: sistema cristalino, grupo espacial, propiedades a nivel de átomo y las curvas de dispersión SAXS, XRD y xPDF.
 
@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Radial Hyena Networks | no disponible | no aplica | no disponible | CC-BY-4.0 | HuggingFace |
+| Radial Hyena Networks | no disponible | no aplica | no disponible | CC-BY-4.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No disponible. La información proporcionada no incluye comparaciones con otras 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Godseye1311/radial-hyena-networks
+- Repositorio en Hugging Face: https://huggingface.co/Godseye1311/radial-hyena-networks
 - Dataset CHILI-100K (paper de referencia): U. Friis-Jensen, F. L. Johansen, A. S. Anker, E. B. Dam, K. M. Ø. Jensen, R. Selvan. *CHILI: Chemically-informed large-scale inorganic nanomaterials dataset for advancing graph machine learning.* arXiv:2402.13221, 2024. https://arxiv.org/abs/2402.13221
 - No se han encontrado otros enlaces relevantes (paper del modelo, repositorio de código, demo o blog) en la búsqueda web realizada. Los resultados devueltos por dicha búsqueda no guardan relación con este modelo ni con el dominio de ciencia de materiales.

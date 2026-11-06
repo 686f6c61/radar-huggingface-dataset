@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Q3-8B-KVA-Projector es un artefacto publicado en HuggingFace por el usuario `kishida` bajo el identificador `kishida/Q3-8B-KVA-Projector`. La única descripción disponible en su model card es la frase «Late Layer KV Approximation Projector for Qwen3-8B», de la que se deduce que se trata de un módulo proyector pensado para aproximar las claves y valores (KV) de las capas finales del modelo Qwen3-8B, y no de un modelo de lenguaje generativo completo. No se documenta arquitectura interna, número de parámetros, proceso de entrenamiento ni forma de uso.
+Q3-8B-KVA-Projector es un artefacto publicado en Hugging Face por el usuario `kishida` bajo el identificador `kishida/Q3-8B-KVA-Projector`. La única descripción disponible en su model card es la frase «Late Layer KV Approximation Projector for Qwen3-8B», de la que se deduce que se trata de un módulo proyector pensado para aproximar las claves y valores (KV) de las capas finales del modelo Qwen3-8B, y no de un modelo de lenguaje generativo completo. No se documenta arquitectura interna, número de parámetros, proceso de entrenamiento ni forma de uso.
 
-El repositorio ocupa 0,7 GB y fue creado el 10 de septiembre de 2026, con una actualización 32 minutos después. Acumula 0 descargas y 0 «likes», carece de pipeline declarado y no especifica idiomas soportados. La licencia declarada es MIT, tanto en la etiqueta de HuggingFace como en el encabezado YAML de la model card.
+El repositorio ocupa 0,7 GB y fue creado el 10 de septiembre de 2026, con una actualización 32 minutos después. Acumula 0 descargas y 0 «likes», carece de pipeline declarado y no especifica idiomas soportados. La licencia declarada es MIT, tanto en la etiqueta de Hugging Face como en el encabezado YAML de la model card.
 
 Su relevancia potencial radica en el problema que aborda: la caché KV es uno de los principales cuellos de botella de memoria en inferencia de contexto largo, y una técnica de aproximación aplicada a las capas tardías podría reducir el consumo de VRAM del modelo base. Sin embargo, al no existir documentación técnica, ejemplos de código, métricas ni evaluación publicada, la ficha que sigue refleja mayoritariamente datos no disponibles, y cualquier uso en producción requeriría una validación independiente previa.
 
@@ -17,7 +17,7 @@ Su relevancia potencial radica en el problema que aborda: la caché KV es uno de
 | Parametros activos | no aplica (no se describe como modelo MoE) |
 | Longitud de contexto | no disponible. Depende del modelo base Qwen3-8B sobre el que se aplique el proyector |
 | Tipos de cuantizacion | no disponible |
-| Idiomas soportados | no disponible (el campo de idiomas esta vacio en la ficha de HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas esta vacio en la ficha de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | no disponible. El repositorio ocupa 0,7 GB, pero no se detalla el tipo de tensores ni los archivos incluidos |
 
@@ -68,8 +68,8 @@ No se dispone de informacion sobre componentes comparables de aproximacion de ca
 
 | Elemento | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Q3-8B-KVA-Projector | no disponible | no disponible | no disponible | MIT | Publicado en HuggingFace, 0 descargas |
-| Qwen3-8B (modelo base de referencia) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Repositorio oficial de Qwen en HuggingFace |
+| Q3-8B-KVA-Projector | no disponible | no disponible | no disponible | MIT | Publicado en Hugging Face, 0 descargas |
+| Qwen3-8B (modelo base de referencia) | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Repositorio oficial de Qwen en Hugging Face |
 | Otras tecnicas de compresion de cache KV | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se dispone de informacion sobre componentes comparables de aproximacion de ca
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kishida/Q3-8B-KVA-Projector
-- Modelo base mencionado en la model card: Qwen3-8B (repositorio oficial de Qwen en HuggingFace; no se proporciona URL concreta en la busqueda)
+- Hugging Face: https://huggingface.co/kishida/Q3-8B-KVA-Projector
+- Modelo base mencionado en la model card: Qwen3-8B (repositorio oficial de Qwen en Hugging Face; no se proporciona URL concreta en la busqueda)
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Los resultados de busqueda web obtenidos no guardan relacion con el modelo (contenido de un foro en chino sobre temas no tecnicos) y no aportan enlaces relevantes.

@@ -25,7 +25,7 @@ Es relevante ahora porque, en arquitecturas de recuperacion aumentada (RAG), nor
 
 La arquitectura es un encoder XLM-RoBERTa base (transformer bidireccional preentrenado de forma multilingue) al que se le anade una cabeza lineal de clasificacion de tokens. El vocabulario y las representaciones compartidas entre idiomas proceden del preentrenamiento de XLM-RoBERTa; el fine-tuning solo ajusta el modelo para la tarea NER. El esquema de etiquetado es BIO con siete clases: O, B-PER, I-PER, B-ORG, I-ORG, B-LOC e I-LOC. La distincion entre comienzo y continuacion de entidad permite separar entidades consecutivas del mismo tipo.
 
-El entrenamiento se realizo sobre una agregacion de diez corpus anotados, uno por idioma: ANERcorp (arabe), CoNLL-2003 (aleman e ingles), CoNLL-2002 (espanol y neerlandes), Europeana Newspapers (frances), Italian I-CAB (italiano), Latvian NER (leton), Paramopama + Second HAREM (portugues) y MSRA (chino). Segun la model card, el fine-tuning se llevo a cabo en una GPU NVIDIA V100 con los hiperparametros recomendados por HuggingFace. No se documenta el numero exacto de tokens de entrenamiento, la composicion porcentual del dataset ni el uso de RLHF o DPO, algo coherente con que no es un modelo generativo.
+El entrenamiento se realizo sobre una agregacion de diez corpus anotados, uno por idioma: ANERcorp (arabe), CoNLL-2003 (aleman e ingles), CoNLL-2002 (espanol y neerlandes), Europeana Newspapers (frances), Italian I-CAB (italiano), Latvian NER (leton), Paramopama + Second HAREM (portugues) y MSRA (chino). Segun la model card, el fine-tuning se llevo a cabo en una GPU NVIDIA V100 con los hiperparametros recomendados por Hugging Face. No se documenta el numero exacto de tokens de entrenamiento, la composicion porcentual del dataset ni el uso de RLHF o DPO, algo coherente con que no es un modelo generativo.
 
 ## Capacidades
 
@@ -53,7 +53,7 @@ El entrenamiento se realizo sobre una agregacion de diez corpus anotados, uno po
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-La model card del repositorio no incluye metricas de F1, precision o recall por idioma, ni comparaciones con otros sistemas NER. El unico dato de rendimiento declarado es el entorno de entrenamiento (NVIDIA V100 con hiperparametros recomendados por HuggingFace).
+La model card del repositorio no incluye metricas de F1, precision o recall por idioma, ni comparaciones con otros sistemas NER. El unico dato de rendimiento declarado es el entorno de entrenamiento (NVIDIA V100 con hiperparametros recomendados por Hugging Face).
 
 ## Requisitos de hardware
 
@@ -62,17 +62,17 @@ La model card del repositorio no incluye metricas de F1, precision o recall por 
 - Cabe con holgura en cualquier GPU de consumo: RTX 3060, RTX 4060, RTX 4090, e incluso en GPUs integradas o en CPU para lotes pequenos.
 - GPU de centro de datos (A100, H100) solo tienen sentido para procesar volumenes muy elevados en paralelo; el modelo no las necesita.
 - Ejecucion en CPU viable para inferencia por lotes moderados, dado el tamano reducido del encoder.
-- Opciones de despliegue: HuggingFace Transformers (pipeline `ner`), ONNX Runtime, TorchScript, y servidores de inferencia genericos para modelos encoder como TorchServe o FastAPI con Transformers. vLLM y llama.cpp no aplican, ya que estan orientados a modelos generativos y no a clasificacion de tokens.
+- Opciones de despliegue: Hugging Face Transformers (pipeline `ner`), ONNX Runtime, TorchScript, y servidores de inferencia genericos para modelos encoder como TorchServe o FastAPI con Transformers. vLLM y llama.cpp no aplican, ya que estan orientados a modelos generativos y no a clasificacion de tokens.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de latencia ni de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tipos de entidad | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Dioleti/xlm-roberta-base-ner-hrl (este modelo) | 277,46 M | 512 tokens (encoder base) | PER, ORG, LOC | 10 | AFL-3.0 | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
-| Davlan/xlm-roberta-base-ner-hrl (modelo original) | no disponible en la informacion proporcionada | no disponible | PER, ORG, LOC | 10 | no disponible en la informacion proporcionada | HuggingFace |
-| FacebookAI/xlm-roberta-base (backbone sin fine-tuning) | no disponible en la informacion proporcionada | no disponible | no aplica (no es NER) | mas de 100 | no disponible en la informacion proporcionada | HuggingFace |
-| Modelos NER monolingues tipo BERT-base (por ejemplo, variantes entrenadas sobre CoNLL) | del orden de 110 M, segun variante | no disponible | PER, ORG, LOC, MISC en algunas variantes | 1 | variable por repositorio | HuggingFace |
+| Dioleti/xlm-roberta-base-ner-hrl (este modelo) | 277,46 M | 512 tokens (encoder base) | PER, ORG, LOC | 10 | AFL-3.0 | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
+| Davlan/xlm-roberta-base-ner-hrl (modelo original) | no disponible en la informacion proporcionada | no disponible | PER, ORG, LOC | 10 | no disponible en la informacion proporcionada | Hugging Face |
+| FacebookAI/xlm-roberta-base (backbone sin fine-tuning) | no disponible en la informacion proporcionada | no disponible | no aplica (no es NER) | mas de 100 | no disponible en la informacion proporcionada | Hugging Face |
+| Modelos NER monolingues tipo BERT-base (por ejemplo, variantes entrenadas sobre CoNLL) | del orden de 110 M, segun variante | no disponible | PER, ORG, LOC, MISC en algunas variantes | 1 | variable por repositorio | Hugging Face |
 
 Nota: el modelo analizado es, por nombre, configuracion y model card, una re-publicacion del checkpoint de Davlan; se recomienda verificar la equivalencia de pesos antes de usar esta copia en produccion, dado que el repositorio no incluye ninguna validacion propia ni metricas.
 
@@ -91,7 +91,7 @@ Nota: el modelo analizado es, por nombre, configuracion y model card, una re-pub
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dioleti/xlm-roberta-base-ner-hrl
+- Modelo en Hugging Face: https://huggingface.co/Dioleti/xlm-roberta-base-ner-hrl
 - Modelo original del que deriva: https://huggingface.co/Davlan/xlm-roberta-base-ner-hrl
 - Backbone XLM-RoBERTa base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Dataset ANERcorp (arabe): https://camel.abudhabi.nyu.edu/anercorp/

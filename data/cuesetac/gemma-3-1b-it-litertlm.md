@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`cuesetac/gemma-3-1b-it-litertlm` es una copia sin modificar del modelo instructivo `google/gemma-3-1b-it` de Google, convertida al formato LiteRT-LM y cuantizada a int4, con una caché KV de 4096 tokens. El autor (cuesetac) lo publica en HuggingFace con un único propósito declarado: que la aplicación Cueset pueda descargarlo y ejecutarlo en el propio dispositivo del usuario. No se trata por tanto de un modelo nuevo ni de un fine-tuning, sino de un artefacto de distribución optimizado para inferencia local.
+`cuesetac/gemma-3-1b-it-litertlm` es una copia sin modificar del modelo instructivo `google/gemma-3-1b-it` de Google, convertida al formato LiteRT-LM y cuantizada a int4, con una caché KV de 4096 tokens. El autor (cuesetac) lo publica en Hugging Face con un único propósito declarado: que la aplicación Cueset pueda descargarlo y ejecutarlo en el propio dispositivo del usuario. No se trata por tanto de un modelo nuevo ni de un fine-tuning, sino de un artefacto de distribución optimizado para inferencia local.
 
 El problema que resuelve es el de llevar un modelo de lenguaje de aproximadamente 1.000 millones de parámetros a teléfonos y dispositivos de borde sin depender de la nube. El fichero pesa 584.417.280 bytes (unos 557 MiB), lo que lo sitúa en el rango manejable para un móvil moderno, y el formato LiteRT-LM permite ejecutarlo sobre CPU, GPU o aceleradores NPU a través del ecosistema LiteRT (antes TensorFlow Lite) de Google. La cuantización int4 y la ventana de 4096 tokens son decisiones de compromiso entre calidad, memoria y latencia.
 
@@ -105,7 +105,7 @@ Diferencias destacables: la licencia Gemma es mas restrictiva que Apache 2.0 y e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cuesetac/gemma-3-1b-it-litertlm
+- Repositorio en Hugging Face: https://huggingface.co/cuesetac/gemma-3-1b-it-litertlm
 - Modelo base: https://huggingface.co/google/gemma-3-1b-it
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms
 - Politica de usos prohibidos de Gemma: https://ai.google.dev/gemma/prohibited_use_policy

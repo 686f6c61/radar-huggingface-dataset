@@ -94,7 +94,7 @@ No se dispone de datos comparativos directos con otros modelos en la informacion
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sayyidfareed/Qwen3.8-Flash-Next-Code-Turbo-Spark
+- Repositorio de Hugging Face: https://huggingface.co/sayyidfareed/Qwen3.8-Flash-Next-Code-Turbo-Spark
 - Modelo base RadixArk: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Pagina oficial de Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

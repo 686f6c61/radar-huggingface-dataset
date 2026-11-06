@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `promotion/nbpo-helpsteer2-unif-stage4` es un ajuste fino de `meta-llama/Llama-3.1-8B-Instruct` desarrollado por el usuario `promotion` en HuggingFace. Forma parte de un experimento de alineación multi-objetivo denominado NBPO (probablemente un acrónimo de un método de optimización de políticas basado en preferencias), aplicado sobre el dataset HelpSteer2 con cuatro objetivos: utilidad (helpfulness), corrección (correctness), coherencia (coherence) y concisión (conciseness). Se trata de la etapa 4 (stage 4) de un proceso de cuatro etapas, donde cada etapa refina el modelo mediante actualizaciones sucesivas.
+El modelo `promotion/nbpo-helpsteer2-unif-stage4` es un ajuste fino de `meta-llama/Llama-3.1-8B-Instruct` desarrollado por el usuario `promotion` en Hugging Face. Forma parte de un experimento de alineación multi-objetivo denominado NBPO (probablemente un acrónimo de un método de optimización de políticas basado en preferencias), aplicado sobre el dataset HelpSteer2 con cuatro objetivos: utilidad (helpfulness), corrección (correctness), coherencia (coherence) y concisión (conciseness). Se trata de la etapa 4 (stage 4) de un proceso de cuatro etapas, donde cada etapa refina el modelo mediante actualizaciones sucesivas.
 
 El modelo es relevante porque explora una vía de alineación que no requiere un reward model explícito: las preferencias se obtienen de un oráculo pairwise prompteado (`Qwen3-32B`) que evalúa un único atributo por comparación, con promediado sobre el orden de presentación. Esta aproximación, junto con el uso de pesos por objetivo dentro de una misma actualización, permite estudiar cómo distintas ponderaciones afectan al equilibrio entre los cuatro objetivos. Con 8.030 millones de parámetros, el modelo hereda la arquitectura transformer decoder-only de Llama 3.1 y su ventana de contexto nativa de 128.000 tokens (aunque este dato no se especifica en la documentación proporcionada).
 
@@ -81,11 +81,11 @@ No se dispone de datos comparativos publicados en la información proporcionada.
 - Limitaciones de contexto: aunque el modelo base soporta 128k tokens, no se ha confirmado que este ajuste fino conserve esa longitud de contexto de forma efectiva; el entrenamiento con HelpSteer2 podría haber degradado la capacidad de manejar secuencias muy largas.
 - Limitaciones de idioma: no se especifican los idiomas soportados; se asume que sigue los del modelo base, pero no hay garantía de que el entrenamiento multi-objetivo no haya afectado a lenguas distintas del inglés.
 - Restricciones de licencia: la licencia llama3.1 permite uso comercial, pero incluye condiciones específicas para empresas con más de 700 millones de usuarios mensuales (requiere licencia adicional de Meta). Es obligatorio revisar los términos completos antes de un despliegue en producción.
-- Modelo experimental: con 0 descargas y 0 likes en HuggingFace, no ha sido ampliamente evaluado por la comunidad. El autor reporta un único seed y una sola ejecución, por lo que los resultados pueden no ser representativos.
+- Modelo experimental: con 0 descargas y 0 likes en Hugging Face, no ha sido ampliamente evaluado por la comunidad. El autor reporta un único seed y una sola ejecución, por lo que los resultados pueden no ser representativos.
 - Ausencia de documentación sobre el método NBPO: no se proporcionan detalles técnicos del algoritmo de optimización, lo que dificulta la reproducibilidad y la comprensión de los hiperparámetros utilizados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/promotion/nbpo-helpsteer2-unif-stage4
+- Modelo en Hugging Face: https://huggingface.co/promotion/nbpo-helpsteer2-unif-stage4
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Dataset HelpSteer2: https://huggingface.co/datasets/nvidia/HelpSteer2 (referencia indirecta, no confirmada en la documentación)

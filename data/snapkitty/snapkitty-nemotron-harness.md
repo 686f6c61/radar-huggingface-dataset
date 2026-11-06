@@ -72,4 +72,4 @@ No disponible. Este proyecto no es un modelo de lenguaje comparable con otros LL
 
 ## Enlaces
 
-- [HuggingFace: Snapkitty/snapkitty-nemotron-harness](https://huggingface.co/Snapkitty/snapkitty-nemotron-harness)
+- [Hugging Face: Snapkitty/snapkitty-nemotron-harness](https://huggingface.co/Snapkitty/snapkitty-nemotron-harness)

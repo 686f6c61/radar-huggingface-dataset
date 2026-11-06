@@ -32,7 +32,7 @@ No se dispone de información detallada sobre el número de tokens de entrenamie
 - Reconocimiento óptico de caracteres (OCR) sobre imágenes, incluyendo texto en inglés y chino.
 - Procesamiento multimodal: acepta entrada de imagen junto con prompt de texto mediante el proyector visual `mmproj`.
 - Generación de texto descriptivo a partir de imágenes ("Describe this image").
-- Soporte de conversación multi-turno (tag `conversational` en HuggingFace).
+- Soporte de conversación multi-turno (tag `conversational` en Hugging Face).
 - Compatibilidad con endpoints (tag `endpoints_compatible`).
 - Capacidades de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-step: no disponible en la información proporcionada.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables de otros modelos de OCR multim
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/webmp3/Sakura-Xiaomi-OCR-0-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/webmp3/Sakura-Xiaomi-OCR-0-GGUF
 - Modelo base original: https://huggingface.co/xiaomi-research/Xiaomi-OCR-0
 - Repositorio GGUF intermedio del que se parte: https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF
 - Model card del commit de referencia: https://huggingface.co/prithivMLmods/Xiaomi-OCR-0-GGUF/blob/7bbfa072e0f3d70ac722e26fbccef5b9f64b7121/README.md

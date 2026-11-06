@@ -80,7 +80,7 @@ No disponible. La información proporcionada no incluye datos de otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/pxdesign
+- Modelo en Hugging Face: https://huggingface.co/oteam/pxdesign
 - Repositorio original de PXDesign (ByteDance): https://github.com/bytedance/PXDesign
 - PXDesignBench: https://github.com/bytedance/PXDesignBench
 - Código del modelo en OFoldX: https://github.com/OTeam-AI4S/OFoldX/tree/main/ofoldx/models/pxdesign

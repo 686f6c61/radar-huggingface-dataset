@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | flyingfishinwater/smart-turn-v3 | 8.000.386 | no disponible | Semantic VAD / deteccion de turno | bsd-2-clause | safetensors + MLX (`mlx-audio`) |
-| pipecat-ai/smart-turn-v3 (modelo base) | no disponible en la informacion | no disponible | Semantic VAD / deteccion de turno | no disponible en la informacion | HuggingFace, formato original |
+| pipecat-ai/smart-turn-v3 (modelo base) | no disponible en la informacion | no disponible | Semantic VAD / deteccion de turno | no disponible en la informacion | Hugging Face, formato original |
 | Otros VAD de la misma categoria (p. ej. VAD clasicos basados en energia) | no disponible en la informacion | no disponible | VAD por energia/umbral, sin componente semantico | no disponible en la informacion | no disponible en la informacion |
 
 La busqueda web realizada no devolvio informacion tecnica relevante sobre este modelo ni sobre alternativas; todos los resultados obtenidos correspondian a tiendas de bicicletas y no guardan relacion con el objeto de la ficha.
@@ -84,7 +84,7 @@ La busqueda web realizada no devolvio informacion tecnica relevante sobre este m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flyingfishinwater/smart-turn-v3
+- Repositorio Hugging Face: https://huggingface.co/flyingfishinwater/smart-turn-v3
 - Modelo base: https://huggingface.co/pipecat-ai/smart-turn-v3
 - Libreria mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Resultados de busqueda web: no se encontro ningun enlace relevante sobre el modelo; los resultados devueltos correspondian a sitios de comercio de bicicletas y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZubaerNiloy/pneumonia-ensemble-onnx es un repositorio publicado en HuggingFace por el usuario ZubaerNiloy cuyo unico metadato verificable es el formato de pesos (ONNX), la licencia (MIT) y un tamano de repositorio de 0,2 GB. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia `mit`, sin descripcion del modelo, sin dataset de entrenamiento, sin metricas y sin instrucciones de uso. El identificador sugiere un conjunto (ensemble) de modelos orientado a la deteccion de neumonia exportado a ONNX, pero esa interpretacion no esta confirmada por el autor en ningun campo de la ficha.
+ZubaerNiloy/pneumonia-ensemble-onnx es un repositorio publicado en Hugging Face por el usuario ZubaerNiloy cuyo unico metadato verificable es el formato de pesos (ONNX), la licencia (MIT) y un tamano de repositorio de 0,2 GB. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia `mit`, sin descripcion del modelo, sin dataset de entrenamiento, sin metricas y sin instrucciones de uso. El identificador sugiere un conjunto (ensemble) de modelos orientado a la deteccion de neumonia exportado a ONNX, pero esa interpretacion no esta confirmada por el autor en ningun campo de la ficha.
 
 El interes tecnico de este repositorio, en el estado actual de la informacion, es limitado: no presenta pipeline declarado, no declara idiomas, acumula 0 descargas y 0 likes, y fue creado y actualizado el 2026-10-12 con apenas 12 segundos de diferencia entre ambos eventos, lo que apunta a una publicacion automatizada o de prueba. No se han publicado resultados de benchmarks, ni detalles de arquitectura, ni composicion del conjunto de entrenamiento.
 
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye ningun dato de rendimient
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZubaerNiloy/pneumonia-ensemble-onnx | no disponible | no aplica / no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| ZubaerNiloy/pneumonia-ensemble-onnx | no disponible | no aplica / no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,5 +98,5 @@ No disponible. La informacion proporcionada no incluye ningun dato de rendimient
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/ZubaerNiloy/pneumonia-ensemble-onnx
+- Pagina del modelo en Hugging Face: https://huggingface.co/ZubaerNiloy/pneumonia-ensemble-onnx
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo, demos) en la informacion proporcionada.

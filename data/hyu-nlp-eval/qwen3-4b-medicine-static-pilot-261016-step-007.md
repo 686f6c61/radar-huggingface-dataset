@@ -77,9 +77,9 @@ No se dispone de datos de rendimiento del modelo evaluado, por lo que la compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-007 | 4.022.468.096 | no disponible | Apache 2.0 | HuggingFace, safetensors BF16, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun la model card del derivado) | HuggingFace |
-| Qwen/Qwen3-4B (familia base) | ~4.000 millones | no disponible en esta ficha | Apache 2.0 | HuggingFace |
+| HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-007 | 4.022.468.096 | no disponible | Apache 2.0 | Hugging Face, safetensors BF16, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (modelo base) | no disponible en esta ficha | no disponible en esta ficha | Apache 2.0 (segun la model card del derivado) | Hugging Face |
+| Qwen/Qwen3-4B (familia base) | ~4.000 millones | no disponible en esta ficha | Apache 2.0 | Hugging Face |
 | Alternativas de ~3-4B de otros fabricantes | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la busqueda web modelos comparables adicionales con datos verificables, por lo que la comparativa cuantitativa queda como no disponible.
@@ -99,7 +99,7 @@ No se han identificado en la busqueda web modelos comparables adicionales con da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-007
+- Modelo en Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-007
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, blog, repositorio o demo del ajuste: no disponible en la informacion proporcionada
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante; las busquedas devolvieron resultados sin relacion con el modelo (Hyundai France, canales de YouTube, ONE Championship, catalogos de Hyper U).

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yamamototakumi/work-retrieval es un repositorio de HuggingFace que contiene una implementación propia y compacta de ALBEF (Align before Fuse) orientada a tareas de recuperación (retrieval) multimodal, escrita en PyTorch. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (model.safetensors) es una inicialización válida, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark.
+Yamamototakumi/work-retrieval es un repositorio de Hugging Face que contiene una implementación propia y compacta de ALBEF (Align before Fuse) orientada a tareas de recuperación (retrieval) multimodal, escrita en PyTorch. No se trata de un modelo preentrenado listo para producción: el propio autor lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeño tamaño. El checkpoint incluido (model.safetensors) es una inicialización válida, no un modelo entrenado, y el repositorio no reclama ninguna puntuación de benchmark.
 
 El tamaño registrado en los metadatos de safetensors es de 24.832 parámetros, una magnitud coherente con una configuración mínima de juguete más que con los cientos de millones de parámetros de un ALBEF completo. La arquitectura declarada incluye atención dispersa (sparse), fusión con compuertas (gated fusion), activación GELU y normalización InstanceNorm. La licencia es MIT y el repositorio ocupa 0,0 GB en disco.
 
@@ -62,13 +62,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU de consumo: cabe holgadamente en cualquier GPU de consumo e integrada, así como en entornos sin GPU.
 - Opciones de despliegue: no se documentan integraciones con vLLM, llama.cpp, Ollama o TGI. Al ser una implementación personalizada en PyTorch, el despliegue previsto es la ejecución directa de `predict.py` o la importación del módulo dentro de un script propio.
 - Latencia y throughput estimados: no disponible; no se publican mediciones. Con 24.832 parámetros, la latencia estará dominada por el coste de entrada/salida y de carga del checkpoint, no por el cálculo.
-- Almacenamiento: el repositorio ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Yamamototakumi/work-retrieval | 24.832 | no disponible | Sin benchmark declarado; checkpoint sin entrenar | MIT | HuggingFace, safetensors |
+| Yamamototakumi/work-retrieval | 24.832 | no disponible | Sin benchmark declarado; checkpoint sin entrenar | MIT | Hugging Face, safetensors |
 | ALBEF original (Salesforce) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 | Otros modelos de retrieval multimodal (p. ej. CLIP, BLIP) | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada | no disponible en la información proporcionada |
 
@@ -88,6 +88,6 @@ No se dispone de datos suficientes en la información proporcionada para estable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yamamototakumi/work-retrieval
+- Modelo en Hugging Face: https://huggingface.co/Yamamototakumi/work-retrieval
 - ICAART 2025, listado de ponencias (incluye un trabajo de Takumi Yamamoto sobre un marco de generación aumentada por recuperación para interpretabilidad de modelos): https://www.insticc.org/node/technicalprogram/icaart/2025/presentations
 - Nota: el resto de resultados de la búsqueda web recibidos no guardan relación con el modelo (guías de viaje del desierto de Atacama) y se han descartado por no ser fuentes pertinentes.

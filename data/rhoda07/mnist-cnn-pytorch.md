@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rhoda07/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada desde cero para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). Lo publica el usuario Rhoda07 en HuggingFace bajo licencia MIT y libreria PyTorch. No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes de proposito especifico, con una arquitectura de dos bloques convolucionales y dos capas densas.
+`Rhoda07/mnist-cnn-pytorch` es una red neuronal convolucional (CNN) pequena entrenada desde cero para clasificar digitos manuscritos del conjunto de datos MNIST (clases 0-9). Lo publica el usuario Rhoda07 en Hugging Face bajo licencia MIT y libreria PyTorch. No es un modelo de lenguaje ni un modelo fundacional: es un clasificador de imagenes de proposito especifico, con una arquitectura de dos bloques convolucionales y dos capas densas.
 
 El modelo resuelve una tarea acotada y bien delimitada: recibir una imagen en escala de grises de 1x28x28 pixeles con un digito blanco sobre fondo negro y devolver una de las diez clases. Su relevancia practica es la de un ejemplo canonico de vision por computador: sirve como referencia educativa, como baseline en pipelines de OCR de digitos y como pieza de validacion en sistemas de preprocesado documental. No compite en la categoria de modelos generativos.
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rhoda07/mnist-cnn-pytorch | no disponible | no aplica | 99.14% en MNIST | MIT | HuggingFace |
+| Rhoda07/mnist-cnn-pytorch | no disponible | no aplica | 99.14% en MNIST | MIT | Hugging Face |
 | Alternativas CNN para MNIST | no disponible | no aplica | no disponible | no disponible | no disponible |
 
 No se dispone de datos de modelos comparables en la informacion proporcionada; las alternativas tipicas de la categoria (LeNet-5, CNN de 2-3 capas sobre MNIST) no se han consultado y no se aportan cifras.
@@ -83,6 +83,6 @@ No se dispone de datos de modelos comparables en la informacion proporcionada; l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rhoda07/mnist-cnn-pytorch
+- Hugging Face: https://huggingface.co/Rhoda07/mnist-cnn-pytorch
 - Dataset MNIST: https://huggingface.co/datasets/mnist
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

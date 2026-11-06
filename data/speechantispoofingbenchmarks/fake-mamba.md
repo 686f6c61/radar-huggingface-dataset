@@ -4,7 +4,7 @@
 
 Fake-Mamba es un sistema de deteccion de audio falsificado (anti-spoofing) para voz, presentado por Xuan et al. en IEEE ASRU 2025. Sustituye el mecanismo de self-attention de los transformers por bloques PN-BiMamba (Mamba bidireccional con pre-norm), sobre un front-end wav2vec 2.0 XLS-R 300M afinado completamente. El modelo resuelve la clasificacion binaria entre voz bona fide y voz sintetica o convertida, un problema central en la verificacion de locutor y en la deteccion de deepfakes de audio.
 
-El repositorio de HuggingFace no es una publicacion original del modelo, sino un wrapper de inferencia empaquetado por el proyecto Speech Anti-Spoofing Arena para reproducir los resultados del paper en un banco de pruebas comun. Los pesos no se rehostean: el wrapper descarga los ficheros originales desde el repositorio del autor, ya que ni el codigo ni los pesos upstream llevan licencia declarada. El checkpoint empaquetado es Exp65 (12 bloques PN-BiMamba), no la configuracion de 7 bloques descrita en el paper.
+El repositorio de Hugging Face no es una publicacion original del modelo, sino un wrapper de inferencia empaquetado por el proyecto Speech Anti-Spoofing Arena para reproducir los resultados del paper en un banco de pruebas comun. Los pesos no se rehostean: el wrapper descarga los ficheros originales desde el repositorio del autor, ya que ni el codigo ni los pesos upstream llevan licencia declarada. El checkpoint empaquetado es Exp65 (12 bloques PN-BiMamba), no la configuracion de 7 bloques descrita en el paper.
 
 Con 321,29 M de parametros y FP32, el modelo procesa ventanas deterministas de los primeros 66.800 muestras a 16 kHz, con repeat-padding para clips mas cortos. Su relevancia actual radica en dos frentes: demostrar que los bloques SSM (Mamba) son una alternativa viable a la atencion en anti-spoofing, y ofrecer una referencia reproducible con evaluacion cruzada en 17 conjuntos de datos dentro del arena.
 
@@ -104,7 +104,7 @@ No se dispone en la informacion proporcionada de resultados de otros sistemas de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SpeechAntiSpoofingBenchmarks/Fake-Mamba
+- Hugging Face: https://huggingface.co/SpeechAntiSpoofingBenchmarks/Fake-Mamba
 - Paper (arXiv): https://arxiv.org/abs/2508.09294
 - Codigo del autor: https://github.com/xuanxixi/Fake-Mamba
 - Pesos upstream (commit fijado): https://huggingface.co/xxuan-speech/fake-mamba-models/tree/cd99e0efb4d4f3f6dfe610ae8e27de9a73d6bf41/models/Exp65/best

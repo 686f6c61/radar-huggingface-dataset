@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`imshubhambhat/paper-classification` es un repositorio de HuggingFace publicado por el usuario imshubhambhat que contiene una implementación propia de un transformer a escala "nano" orientada a tareas de clasificación. No es un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros almacenados en el fichero safetensors es de 33.088 parámetros, un orden de magnitud muy inferior al de cualquier modelo de clasificación de uso práctico.
+`imshubhambhat/paper-classification` es un repositorio de Hugging Face publicado por el usuario imshubhambhat que contiene una implementación propia de un transformer a escala "nano" orientada a tareas de clasificación. No es un modelo entrenado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo ("smoke tests") y que no se reclama ninguna puntuación de benchmark. El recuento real de parámetros almacenados en el fichero safetensors es de 33.088 parámetros, un orden de magnitud muy inferior al de cualquier modelo de clasificación de uso práctico.
 
 El problema que aborda no es, por tanto, la clasificación de documentos en producción, sino servir como punto de partida reproducible para experimentos de arquitectura: el repositorio incluye `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de entrenamiento por defecto y `predict.py` como artefacto principal. La relevancia actual es la de un banco de pruebas docente o de I+D para validar componentes concretos (grouped query attention, fusiones de bajo rango, normalización ScaleNorm) a un coste computacional despreciable.
 
@@ -29,7 +29,7 @@ La arquitectura declarada es un Tiny Transformer con atención de consultas agru
 | Normalizacion | scalenorm |
 | Receta de experimento por defecto | optimizador SGD con scheduler OneCycle |
 | Tamano del repositorio | 0,0 GB |
-| Descargas en HuggingFace | 12 |
+| Descargas en Hugging Face | 12 |
 | Likes | 0 |
 | Fecha de creacion | 2026-10-05 |
 | Fecha de actualizacion | 2026-10-05 |
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Cabe en GPU de consumo: sí, en todas, incluidas las más antiguas y de gama baja; también en Raspberry Pi y en entornos sin GPU.
 - Opciones de despliegue: el repositorio proporciona un script propio en PyTorch (`predict.py`). Al ser una implementación personalizada, no existe garantía de compatibilidad directa con vLLM, llama.cpp, Ollama, TGI o transformers sin escribir un adaptador. No se publican pesos en GGUF.
 - Latencia y throughput estimados: no disponibles en la información proporcionada; por el tamaño del modelo serían del orden de microsegundos por muestra en CPU, pero no hay mediciones publicadas.
-- Almacenamiento: el repositorio completo ocupa 0,0 GB según HuggingFace.
+- Almacenamiento: el repositorio completo ocupa 0,0 GB según Hugging Face.
 
 ## Comparativa con modelos similares
 
@@ -80,10 +80,10 @@ La comparación con modelos de clasificación establecidos no es significativa e
 
 | Modelo | Parametros | Contexto | Entrenado y evaluado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| imshubhambhat/paper-classification | 33.088 | no disponible | No (solo inicializacion) | BSD-3-Clause | HuggingFace |
-| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Si, con benchmarks publicados por la comunidad | Apache-2.0 | HuggingFace |
-| distilbert-base-uncased | 66 M | 512 tokens | Si | Apache-2.0 | HuggingFace |
-| imshubhambhat/swin-t-classification-final | no disponible | no disponible | No consta en la informacion recuperada | Apache-2.0 | HuggingFace (mismo autor) |
+| imshubhambhat/paper-classification | 33.088 | no disponible | No (solo inicializacion) | BSD-3-Clause | Hugging Face |
+| prajjwal1/bert-tiny | 4,4 M | 512 tokens | Si, con benchmarks publicados por la comunidad | Apache-2.0 | Hugging Face |
+| distilbert-base-uncased | 66 M | 512 tokens | Si | Apache-2.0 | Hugging Face |
+| imshubhambhat/swin-t-classification-final | no disponible | no disponible | No consta en la informacion recuperada | Apache-2.0 | Hugging Face (mismo autor) |
 
 Nota: los datos de las alternativas provienen de sus respectivas model cards públicas y no se han verificado en la búsqueda realizada; se ofrecen solo como referencia de orden de magnitud. La diferencia práctica clave es que las alternativas sí distribuyen pesos entrenados y utilizables, mientras que este repositorio distribuye un punto de partida.
 
@@ -101,7 +101,7 @@ Nota: los datos de las alternativas provienen de sus respectivas model cards pú
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imshubhambhat/paper-classification
+- Repositorio en Hugging Face: https://huggingface.co/imshubhambhat/paper-classification
 - Perfil del autor: https://huggingface.co/imshubhambhat
 - Otro repositorio del mismo autor (clasificación con Swin-T): https://huggingface.co/imshubhambhat/swin-t-classification-final
 - No se han encontrado paper, blog tecnico, repositorio de codigo adicional ni demo asociados a este modelo en la busqueda realizada.

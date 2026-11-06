@@ -4,7 +4,7 @@
 
 VGGT-HPE es un modelo de estimación de pose de cabeza (head pose estimation, HPE) desarrollado por Vasiliki Vasileiou, Panagiotis P. Filntisis, Petros Maragos y Kostas Daniilidis, presentado en CVPRW 2026. Su aportación principal es reformular la tarea: en lugar de regresar una pose absoluta a partir de una sola imagen, el modelo estima la transformación rígida entre una imagen de consulta y una imagen de anclaje con pose conocida. Esta formulación relativa reduce el error de forma notable en comparaciones difíciles, tal y como reportan los autores en el conjunto BIWI.
 
-Técnicamente, VGGT-HPE adapta la rama de cámara del modelo VGGT-1B mediante LoRA de rango 8 y se entrena exclusivamente con renderizados sintéticos de FLAME, con supervisión sobre rotación, traslación y campo de visión. El repositorio de HuggingFace contiene dos checkpoints: el modelo relativo (`checkpoint_305.pt`, 6,3 GB) y una línea base absoluta (`checkpoint_abs.pt`, 5,87 GB). No es un modelo generativo de lenguaje, sino un modelo de visión 3D especializado.
+Técnicamente, VGGT-HPE adapta la rama de cámara del modelo VGGT-1B mediante LoRA de rango 8 y se entrena exclusivamente con renderizados sintéticos de FLAME, con supervisión sobre rotación, traslación y campo de visión. El repositorio de Hugging Face contiene dos checkpoints: el modelo relativo (`checkpoint_305.pt`, 6,3 GB) y una línea base absoluta (`checkpoint_abs.pt`, 5,87 GB). No es un modelo generativo de lenguaje, sino un modelo de visión 3D especializado.
 
 La relevancia actual reside en que demuestra que la predicción relativa de pose supera a los enfoques absolutos en escenarios difíciles, con un MAE de rotación de 2,82 grados en BIWI frente a 3,91 de 6DRepNet. Su licencia es estrictamente de investigación (no comercial), lo que condiciona su adopción en producción.
 
@@ -88,7 +88,7 @@ Resultados en BIWI con protocolo MTCNN compartido (MAE de rotación en grados; m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sila97/VGGT-HPE
+- Hugging Face: https://huggingface.co/Sila97/VGGT-HPE
 - Paper (CVPRW 2026): https://openaccess.thecvf.com/content/CVPR2026W/ABAW/papers/Vasileiou_VGGT-HPE_Reframing_Head_Pose_Estimation_as_Relative_Pose_Prediction_CVPRW_2026_paper.pdf
 - Página del proyecto: https://vasilikivas.github.io/VGGT-HPE/
 - Código: https://github.com/VasilikiVas/vggt-hpe

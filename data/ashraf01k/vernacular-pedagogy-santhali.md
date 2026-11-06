@@ -73,6 +73,6 @@ No se han publicado resultados de benchmarks comparativos en la información dis
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Ashraf01k/vernacular-pedagogy-santhali
+- Página del modelo en Hugging Face: https://huggingface.co/Ashraf01k/vernacular-pedagogy-santhali
 - Repositorio del proyecto Vernacular Pedagogy: https://github.com/AshrafGalaxy/Vernacular_Pedagogy
 - Descripción del problema SIH26042 en Smart India Hackathon: https://sih2026.vuce.in/ps/SIH26042

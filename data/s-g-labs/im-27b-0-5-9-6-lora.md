@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| im-27b-0.5.9.6-lora | Adaptador LoRA sobre base de 27B (parámetros del base no disponibles) | 16 384 tokens (entrenamiento) | LoRA/PEFT | other (restrictiva) | HuggingFace, 15 descargas |
-| Modelo base Qwen/Qwen3.8-27B | no disponible en la información proporcionada | no disponible | Modelo completo | no disponible | HuggingFace |
+| im-27b-0.5.9.6-lora | Adaptador LoRA sobre base de 27B (parámetros del base no disponibles) | 16 384 tokens (entrenamiento) | LoRA/PEFT | other (restrictiva) | Hugging Face, 15 descargas |
+| Modelo base Qwen/Qwen3.8-27B | no disponible en la información proporcionada | no disponible | Modelo completo | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para comparar con otros adaptadores LoRA de la misma categoría ni con modelos completos de tamaño similar.
@@ -82,7 +82,7 @@ No se dispone de información suficiente para comparar con otros adaptadores LoR
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/s-g-labs/im-27b-0.5.9.6-lora
+- Repositorio Hugging Face: https://huggingface.co/s-g-labs/im-27b-0.5.9.6-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Revisión del modelo base: `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0`
 - PEFT: https://github.com/huggingface/peft

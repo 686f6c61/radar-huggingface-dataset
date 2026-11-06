@@ -84,7 +84,7 @@ La comparativa se limita a otras conversiones GGUF del mismo modelo base o de va
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/optionalAI/Qwen3.8-9B-heretic-uncensored-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/optionalAI/Qwen3.8-9B-heretic-uncensored-Q4_K_M-GGUF
 - Modelo base original: https://huggingface.co/rohit267/Qwen3.8-9B-heretic-uncensored
 - Herramienta de conversion GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

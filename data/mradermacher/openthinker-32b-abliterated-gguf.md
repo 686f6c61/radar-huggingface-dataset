@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace (este modelo): https://huggingface.co/mradermacher/OpenThinker-32B-abliterated-GGUF
+- Hugging Face (este modelo): https://huggingface.co/mradermacher/OpenThinker-32B-abliterated-GGUF
 - Modelo base abliterated: https://huggingface.co/huihui-ai/OpenThinker-32B-abliterated
 - Variante imatrix/weighted: https://huggingface.co/mradermacher/OpenThinker-32B-abliterated-i1-GGUF
 - Pagina de descargas del publicador: https://hf.tst.eu/model#OpenThinker-32B-abliterated-GGUF

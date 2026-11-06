@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`tofu-phi-1_5-forget10-ihl_embed-epoch04`) | 1,4 B | 2048 | *Unlearning* TOFU (época 4/20) | Apache 2.0 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` | 1,4 B | 2048 | Modelo base ajustado con TOFU, sin olvido | Apache 2.0 | HuggingFace, referencia del benchmark |
-| `microsoft/phi-1_5` | 1,4 B | 2048 | LM generalista y código | MIT | HuggingFace, ampliamente usado |
-| `locuslab/tofu_ft_llama2-7b` (referencia TOFU) | 7 B | 4096 | *Unlearning* TOFU sobre Llama 2 | Llama 2 | HuggingFace, referencia del paper TOFU |
+| Este checkpoint (`tofu-phi-1_5-forget10-ihl_embed-epoch04`) | 1,4 B | 2048 | *Unlearning* TOFU (época 4/20) | Apache 2.0 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` | 1,4 B | 2048 | Modelo base ajustado con TOFU, sin olvido | Apache 2.0 | Hugging Face, referencia del benchmark |
+| `microsoft/phi-1_5` | 1,4 B | 2048 | LM generalista y código | MIT | Hugging Face, ampliamente usado |
+| `locuslab/tofu_ft_llama2-7b` (referencia TOFU) | 7 B | 4096 | *Unlearning* TOFU sobre Llama 2 | Llama 2 | Hugging Face, referencia del paper TOFU |
 
 La comparación relevante es con el modelo base `locuslab/tofu_ft_phi-1.5` (mismo tamaño y dataset, sin olvido) y con la variante Llama 2 de 7 B usada en el paper original de TOFU. No se dispone de métricas de rendimiento de este checkpoint para establecer una comparación cuantitativa.
 
@@ -87,7 +87,7 @@ La comparación relevante es con el modelo base `locuslab/tofu_ft_phi-1.5` (mism
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch04
+- Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch04
 - Modelo base del ajuste TOFU: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Paper TOFU (Task of Fictitious Unlearning): https://arxiv.org/abs/2401.06121

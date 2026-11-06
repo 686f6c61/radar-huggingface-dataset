@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HumanHarleySawyer_265e_13780s es un modelo publicado en HuggingFace por el usuario Homiebear bajo licencia openrail. El identificador del repositorio sugiere un checkpoint de entrenamiento con 265 épocas (265e) y 13.780 pasos (13780s), aunque esta interpretación no está confirmada por el autor. La model card pública no contiene descripción técnica, arquitectura, datos de entrenamiento ni casos de uso, por lo que la información disponible es mínima.
+HumanHarleySawyer_265e_13780s es un modelo publicado en Hugging Face por el usuario Homiebear bajo licencia openrail. El identificador del repositorio sugiere un checkpoint de entrenamiento con 265 épocas (265e) y 13.780 pasos (13780s), aunque esta interpretación no está confirmada por el autor. La model card pública no contiene descripción técnica, arquitectura, datos de entrenamiento ni casos de uso, por lo que la información disponible es mínima.
 
 El repositorio ocupa 0,2 GB, un tamaño coherente con un modelo pequeño o con un conjunto de pesos cuantizados, pero no permite determinar con fiabilidad el número de parámetros ni la arquitectura. No se han publicado resultados de benchmarks, idiomas soportados ni detalles sobre el pipeline de inferencia.
 
@@ -34,7 +34,7 @@ Tampoco hay indicios de innovaciones técnicas destacables (atención lineal, de
 - No consta soporte para agentes o razonamiento multi-paso.
 - No consta información sobre capacidades multilingües.
 - No consta la existencia de modos especiales (thinking mode, visión, audio).
-- El pipeline de HuggingFace no está especificado, por lo que no puede confirmarse ni siquiera que sea un modelo de generación de texto.
+- El pipeline de Hugging Face no está especificado, por lo que no puede confirmarse ni siquiera que sea un modelo de generación de texto.
 
 ## Casos de uso
 
@@ -75,4 +75,4 @@ No disponible. No se conocen modelos comparables porque se desconoce la arquitec
 
 ## Enlaces
 
-- [HuggingFace: Homiebear/HumanHarleySawyer_265e_13780s](https://huggingface.co/Homiebear/HumanHarleySawyer_265e_13780s)
+- [Hugging Face: Homiebear/HumanHarleySawyer_265e_13780s](https://huggingface.co/Homiebear/HumanHarleySawyer_265e_13780s)

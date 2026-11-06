@@ -66,6 +66,6 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/deepsafe/model-code
+- Hugging Face: https://huggingface.co/deepsafe/model-code
 - Repositorio principal: https://github.com/deepsafehq/deepsafe-bench
 - Aviso de licencias de terceros: https://github.com/deepsafehq/deepsafe-bench/blob/main/THIRD_PARTY_NOTICES.md

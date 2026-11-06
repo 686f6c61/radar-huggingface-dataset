@@ -80,7 +80,7 @@ La comparacion es limitada porque no se conocen las capacidades especificas del 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5CAMXmFr
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_db768b30efd93b8b_20260824-1f85c521-3e9f-43cc-9939-8a5a3d25fa64-5CAMXmFr
 - Web de Gradients (torneos): https://www.gradients.io/app/research/tournament
 - Ejemplo de otro adaptador del mismo autor: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c5d86c82ce819a79_20260706-388b697e-299a-4548-b610-227628231630-5FRdgPRd
 - Ejemplo de otro adaptador del mismo autor (via FriendliAI): https://friendli.ai/models/gradients-io-tournaments/tournament-tourn_358aca49563e214e_20260622-ac97eed9-69ff-4355-a012-2a9feaf3fd5f-5EEaxgnm

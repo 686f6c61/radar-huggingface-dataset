@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio daniloz/Gpt2 es un modelo publicado en HuggingFace bajo la licencia EUPL-1.2. La model card asociada no contiene ninguna descripción técnica, por lo que se desconocen la arquitectura, el tamaño, la longitud de contexto y las capacidades del modelo. No se han registrado descargas ni valoraciones de la comunidad, lo que indica que no ha sido sometido a evaluación.
+El repositorio daniloz/Gpt2 es un modelo publicado en Hugging Face bajo la licencia EUPL-1.2. La model card asociada no contiene ninguna descripción técnica, por lo que se desconocen la arquitectura, el tamaño, la longitud de contexto y las capacidades del modelo. No se han registrado descargas ni valoraciones de la comunidad, lo que indica que no ha sido sometido a evaluación.
 
 A pesar de que el nombre del repositorio sugiere una posible relación con el modelo GPT-2 de OpenAI, no hay información que confirme esta vinculación. La fecha de creación del repositorio (2026-09-08) parece un error o un dato no verificado. En consecuencia, no es posible determinar la relevancia actual del modelo ni el problema que resuelve.
 
@@ -57,5 +57,5 @@ No disponible. No se dispone de información sobre modelos comparables ni result
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daniloz/Gpt2
+- Hugging Face: https://huggingface.co/daniloz/Gpt2
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

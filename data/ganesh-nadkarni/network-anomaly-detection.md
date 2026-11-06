@@ -55,7 +55,7 @@ El modelo seleccionado es el Gradient Boosting, con una accuracy del 80.64%, F1 
 
 ## Requisitos de hardware
 
-- **VRAM**: no requiere GPU; el modelo es un clasificador clásico con un tamaño de archivo de pocos megabytes (el repo ocupa 0.0 GB según HuggingFace, aunque los archivos pickle están presentes).
+- **VRAM**: no requiere GPU; el modelo es un clasificador clásico con un tamaño de archivo de pocos megabytes (el repo ocupa 0.0 GB según Hugging Face, aunque los archivos pickle están presentes).
 - **GPU recomendada**: ninguna. Funciona en CPU.
 - **Compatibilidad con hardware de consumo**: sí, cualquier ordenador con Python y scikit-learn puede ejecutarlo.
 - **Opciones de despliegue**: al ser un modelo pickle de scikit-learn, puede cargarse con `joblib.load()` en cualquier aplicación Python. No es compatible con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo de lenguaje.
@@ -63,7 +63,7 @@ El modelo seleccionado es el Gradient Boosting, con una accuracy del 80.64%, F1 
 
 ## Comparativa con modelos similares
 
-Dentro del propio repositorio se comparan tres algoritmos sobre el mismo dataset. No se dispone de comparación con otros modelos de detección de anomalías publicados en HuggingFace.
+Dentro del propio repositorio se comparan tres algoritmos sobre el mismo dataset. No se dispone de comparación con otros modelos de detección de anomalías publicados en Hugging Face.
 
 | Modelo | Accuracy | F1 Score | ROC-AUC | Licencia |
 |---|---:|---:|---:|---|
@@ -71,7 +71,7 @@ Dentro del propio repositorio se comparan tres algoritmos sobre el mismo dataset
 | **Gradient Boosting (este modelo)** | **80.64%** | **80.05%** | **96.25%** | no disponible |
 | Logistic Regression (mismo repo) | 75.39% | 74.07% | 87.14% | no disponible |
 
-No se han encontrado otros modelos comparables en el ecosistema HuggingFace con la misma tarea y dataset.
+No se han encontrado otros modelos comparables en el ecosistema Hugging Face con la misma tarea y dataset.
 
 ## Limitaciones y advertencias
 
@@ -84,6 +84,6 @@ No se han encontrado otros modelos comparables en el ecosistema HuggingFace con 
 
 ## Enlaces
 
-- [HuggingFace - Ganesh-Nadkarni/network-anomaly-detection](https://huggingface.co/Ganesh-Nadkarni/network-anomaly-detection)
+- [Hugging Face - Ganesh-Nadkarni/network-anomaly-detection](https://huggingface.co/Ganesh-Nadkarni/network-anomaly-detection)
 - [Dataset NSL-KDD en Kaggle](https://www.kaggle.com/datasets/hassan06/nslkdd)
 - No se han encontrado papers, blogs o repositorios adicionales asociados a este modelo.

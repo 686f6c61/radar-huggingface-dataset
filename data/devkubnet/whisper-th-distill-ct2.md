@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`devkubnet/whisper-th-distill-ct2` es una conversión a formato CTranslate2 (float16) del modelo `biodatlab/distill-whisper-th-large-v3`, un Whisper large-v3 destilado y ajustado para reconocimiento automático de voz (ASR) en tailandés. El autor del artefacto es el usuario de HuggingFace `devkubnet`, mientras que el modelo original y el trabajo de destilación y ajuste corresponden a `biodatlab`. El propósito del repositorio es ofrecer una versión directamente utilizable con `faster-whisper`, evitando la fricción de conversión manual.
+`devkubnet/whisper-th-distill-ct2` es una conversión a formato CTranslate2 (float16) del modelo `biodatlab/distill-whisper-th-large-v3`, un Whisper large-v3 destilado y ajustado para reconocimiento automático de voz (ASR) en tailandés. El autor del artefacto es el usuario de Hugging Face `devkubnet`, mientras que el modelo original y el trabajo de destilación y ajuste corresponden a `biodatlab`. El propósito del repositorio es ofrecer una versión directamente utilizable con `faster-whisper`, evitando la fricción de conversión manual.
 
 El modelo resuelve un problema concreto: la transcripción de voz en tailandés con un coste computacional reducido respecto a Whisper large-v3 completo, manteniendo una calidad alta gracias al ajuste fino sobre datos en ese idioma. El artefacto incluye el `tokenizer.json` propio del modelo original (vocabulario large-v3 de 51.866 tokens), un detalle relevante porque sin él `faster-whisper` recurre al tokenizador de whisper-tiny y desplaza los identificadores de idioma.
 
@@ -87,7 +87,7 @@ La comparativa se limita a datos de licencia, idioma y formato, ya que no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/devkubnet/whisper-th-distill-ct2
+- Hugging Face: https://huggingface.co/devkubnet/whisper-th-distill-ct2
 - Modelo base: https://huggingface.co/biodatlab/distill-whisper-th-large-v3
 - CTranslate2: https://github.com/OpenNMT/CTranslate2
 - faster-whisper: https://github.com/SYSTRAN/faster-whisper

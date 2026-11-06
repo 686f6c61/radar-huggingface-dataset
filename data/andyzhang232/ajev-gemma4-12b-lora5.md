@@ -91,7 +91,7 @@ Calibración (ECE) en typed-decisions: baja de 0,280 (zero-shot) a 0,142. En Kev
 
 | Modelo | Base | Parámetros | Licencia | Decision Index | Disponibilidad |
 |---|---|---|---|---|---|
-| AJev lora5 | Gemma 4 12B | 12B (131M entrenables en LoRA) | apache-2.0 | 52,22 | Adaptador público en HuggingFace |
+| AJev lora5 | Gemma 4 12B | 12B (131M entrenables en LoRA) | apache-2.0 | 52,22 | Adaptador público en Hugging Face |
 | Winnow-12B | Gemma 4 12B | 12B | No disponible en la información proporcionada | 50,02 | No disponible |
 | Jev-Omni | Gemma 4 12B | 12B | No disponible en la información proporcionada | 40,53 | No disponible |
 | Surogate Rune 26B-A4B v3 | Gemma 4 26B | 26B (A4B, MoE) | No disponible en la información proporcionada | 57,44 | No disponible |
@@ -117,7 +117,7 @@ Frente al modelo base zero-shot, el adaptador mejora la precisión en los cuatro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyzhang232/ajev-gemma4-12b-lora5
+- Modelo en Hugging Face: https://huggingface.co/andyzhang232/ajev-gemma4-12b-lora5
 - Modelo base: https://huggingface.co/google/gemma-4-12B-it
 - Repositorio de entrenamiento e inferencia: https://github.com/cmzy/ajev
 - Código de inferencia ajev-infer: https://github.com/cmzy/ajev/tree/main/release/ajev-infer

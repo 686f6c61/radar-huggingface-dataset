@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Abhijam/asl-learner-model es un repositorio publicado en HuggingFace por el usuario Abhijam el 11 de septiembre de 2026 (según los metadatos de la plataforma) y actualizado dos minutos más tarde. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y su model card se limita a una linea de front-matter con `license: unknown`, sin cuerpo de documentacion. No se ha publicado ninguna descripcion funcional, arquitectura, tamano de parametros ni datos de entrenamiento.
+Abhijam/asl-learner-model es un repositorio publicado en Hugging Face por el usuario Abhijam el 11 de septiembre de 2026 (según los metadatos de la plataforma) y actualizado dos minutos más tarde. El repositorio tiene un tamano declarado de 0.0 GB, cero descargas y cero likes, y su model card se limita a una linea de front-matter con `license: unknown`, sin cuerpo de documentacion. No se ha publicado ninguna descripcion funcional, arquitectura, tamano de parametros ni datos de entrenamiento.
 
 El identificador del modelo sugiere un posible uso relacionado con el aprendizaje de lengua de signos americana (ASL), pero esto es una inferencia a partir del nombre y no esta confirmado por ninguna fuente: la model card no contiene ninguna declaracion al respecto y no hay documentacion adicional. No debe asumirse ninguna capacidad concreta sin verificacion por parte del autor.
 
@@ -79,6 +79,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Abhijam/asl-learner-model
+- Hugging Face: https://huggingface.co/Abhijam/asl-learner-model
 - Resultados de busqueda web: no se encontro ningun enlace relevante. Todas las entradas devueltas corresponden a paginas corporativas de Microsoft (microsoft.com, account.microsoft.com, myaccount.microsoft.com, en.wikipedia.org/wiki/Microsoft) y no guardan relacion con el modelo ni con su autor.
 - Paper, blog, repositorio o demo del autor: no disponible.

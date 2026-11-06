@@ -1,7 +1,7 @@
 # matthewrod/classification-weights
 
 ## Resumen
-`matthewrod/classification-weights` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un modelo generativo de lenguaje: el autor describe explícitamente el checkpoint (`model.safetensors`) como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con pesos entrenados ni evaluados.
+`matthewrod/classification-weights` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Perceiver orientada a tareas de clasificación. No se trata de un modelo entrenado ni de un modelo generativo de lenguaje: el autor describe explícitamente el checkpoint (`model.safetensors`) como una inicialización válida para pruebas de humo (*smoke tests*), no como un modelo con pesos entrenados ni evaluados.
 
 El repositorio está pensado como base de código para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. Incluye `run.py` como artefacto principal, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y el citado checkpoint de inicialización. La escala declarada es "large", pero el recuento real de parámetros en safetensors es de solo 49.600, lo que indica que "large" es una etiqueta de configuración interna y no un tamaño de modelo en el sentido habitual.
 
@@ -73,7 +73,7 @@ La comparacion directa no es posible en terminos de rendimiento, porque este rep
 | Contexto / tamano de entrada | No disponible (array latente, tamano no especificado) | No disponible en la informacion proporcionada | No disponible |
 | Rendimiento en benchmarks | No se reclama ninguna puntuacion | No disponible en la informacion proporcionada | No disponible |
 | Licencia | MIT | No disponible en la informacion proporcionada | No disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas | Publico (paper y codigo de los autores) | Variable |
+| Disponibilidad | Publico en Hugging Face, 0 descargas | Publico (paper y codigo de los autores) | Variable |
 
 No se dispone de datos suficientes para una comparativa cuantitativa fiable con alternativas concretas.
 
@@ -91,6 +91,6 @@ No se dispone de datos suficientes para una comparativa cuantitativa fiable con 
 - Estado del repositorio: 0 descargas y 0 *likes*, con actualizacion inmediatamente posterior a su creacion, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
-- [HuggingFace: matthewrod/classification-weights](https://huggingface.co/matthewrod/classification-weights)
+- [Hugging Face: matthewrod/classification-weights](https://huggingface.co/matthewrod/classification-weights)
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion proporcionada.

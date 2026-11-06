@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JessicaYoung/few-shot-multimodal-2024` no es un modelo de aprendizaje automatico, sino un repositorio de notas de investigacion alojado en HuggingFace bajo la etiqueta `research-notes`. Su contenido son dos ficheros de texto (`reading.md` y `README.md`) que describen el diseno previsto de un estudio sobre aprendizaje few-shot multimodal: el alcance de la pregunta de investigacion, los factores de confusion (confounders) probables, una comparacion propuesta contra lineas base emparejadas, el contexto de evaluacion con benchmarks publicos y los requisitos de reproducibilidad.
+`JessicaYoung/few-shot-multimodal-2024` no es un modelo de aprendizaje automatico, sino un repositorio de notas de investigacion alojado en Hugging Face bajo la etiqueta `research-notes`. Su contenido son dos ficheros de texto (`reading.md` y `README.md`) que describen el diseno previsto de un estudio sobre aprendizaje few-shot multimodal: el alcance de la pregunta de investigacion, los factores de confusion (confounders) probables, una comparacion propuesta contra lineas base emparejadas, el contexto de evaluacion con benchmarks publicos y los requisitos de reproducibilidad.
 
 El propio autor declara de forma explicita que la nota es exploratoria y que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado. El repositorio ocupa 0,0 GB, acumula 0 descargas y 0 "likes", y fue creado y actualizado el 15 de septiembre de 2026, una fecha posterior a la habitual que conviene tratar como anomalia de metadatos.
 
@@ -23,7 +23,7 @@ Su relevancia es metodologica y de higiene de datos: ilustra como un repositorio
 
 ## Arquitectura y entrenamiento
 
-No existe informacion sobre arquitectura ni sobre entrenamiento. El repositorio no describe un transformer, un MoE, un modelo de espacio de estados ni ninguna variante hibrida; tampoco indica numero de tokens de entrenamiento, composicion del dataset, fases de RLHF, DPO o ajuste supervisado. La etiqueta `transformer` procede de la taxonomia de HuggingFace y no constituye evidencia de que se haya definido o entrenado una arquitectura concreta.
+No existe informacion sobre arquitectura ni sobre entrenamiento. El repositorio no describe un transformer, un MoE, un modelo de espacio de estados ni ninguna variante hibrida; tampoco indica numero de tokens de entrenamiento, composicion del dataset, fases de RLHF, DPO o ajuste supervisado. La etiqueta `transformer` procede de la taxonomia de Hugging Face y no constituye evidencia de que se haya definido o entrenado una arquitectura concreta.
 
 El unico dato cuantitativo es el recuento de 24.832 parametros en safetensors. Incluso interpretado como 24.832 unidades, esa cifra es varios ordenes de magnitud inferior a la de cualquier codificador o descodificador multimodal utilizable, por lo que cabe interpretarla como un tensor residual, un artefacto de metadatos o una entrada de marcador de posicion. El autor es explicito: "It does not claim benchmark improvements, completed ablations, released code, or a trained checkpoint".
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Compatibilidad con GPU de consumo: no aplica.
 - Opciones de despliegue: no aplica (vLLM, llama.cpp, Ollama, TGI y similares no pueden servir este repositorio).
 - Latencia y throughput: no disponible.
-- Requisito real: un cliente Git o la interfaz web de HuggingFace para leer dos ficheros Markdown; el repositorio ocupa 0,0 GB.
+- Requisito real: un cliente Git o la interfaz web de Hugging Face para leer dos ficheros Markdown; el repositorio ocupa 0,0 GB.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ Como referencia cualitativa, la categoria "research-notes" del Hub agrupa reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JessicaYoung/few-shot-multimodal-2024
+- Repositorio en Hugging Face: https://huggingface.co/JessicaYoung/few-shot-multimodal-2024
 - Fichero principal de la nota: `reading.md` (dentro del repositorio)
 - Documentacion del repositorio: `README.md` (dentro del repositorio)
 - Paper, blog, repositorio de codigo o demo asociados: no disponible; la busqueda web no devolvio ningun enlace relevante sobre este artefacto.

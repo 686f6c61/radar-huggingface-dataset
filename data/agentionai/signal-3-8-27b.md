@@ -126,7 +126,7 @@ Los resultados de estilo, tokens y GSM8K proceden de evaluaciones del propio aut
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentionai/Signal-3.8-27B
+- Modelo en Hugging Face: https://huggingface.co/agentionai/Signal-3.8-27B
 - Cuantizaciones GGUF (IQ4_XS a Q8_0): https://huggingface.co/agentionai/Signal-3.8-27B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio del autor: https://www.agention.ai/

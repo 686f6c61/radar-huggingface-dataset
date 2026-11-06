@@ -12,7 +12,7 @@ Su relevancia practica es doble: por un lado, fija una version concreta frente a
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer encoder tipo BERT (etiqueta `bert` en HuggingFace); 12 capas, dimension oculta 384, 12 cabezas de atencion, 118 M de parametros (modelo base intfloat/multilingual-e5-small) |
+| Arquitectura | Transformer encoder tipo BERT (etiqueta `bert` en Hugging Face); 12 capas, dimension oculta 384, 12 cabezas de atencion, 118 M de parametros (modelo base intfloat/multilingual-e5-small) |
 | Parametros totales | Aproximadamente 118 millones (modelo base); el artefacto distribuido es una conversion ONNX int8 de esos pesos |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 512 tokens (heredado del modelo base; no verificado en la informacion proporcionada) |
@@ -100,12 +100,12 @@ Las cifras de parametros y contexto de los modelos comparados corresponden a dat
 - Idiomas: aunque se declara soporte para mas de 100 idiomas, no hay lista ni evaluacion por idioma en la informacion disponible. La calidad es desigual entre lenguas de altos y bajos recursos.
 - Prefijos: la model card advierte que, para tareas distintas de la recuperacion, se recomienda el prefijo `query: `. Omitirlo o usar el prefijo incorrecto degrada la calidad de los embeddings.
 - Licencia MIT: permite uso comercial y modificacion, pero se hereda del modelo original y hay que conservar el aviso de copyright. No hay restricciones adicionales conocidas.
-- Metadatos pobres: cero descargas y cero likes en el momento de la consulta, sin lista de idiomas declarada en HuggingFace, lo que dificulta evaluar su adopcion real.
+- Metadatos pobres: cero descargas y cero likes en el momento de la consulta, sin lista de idiomas declarada en Hugging Face, lo que dificulta evaluar su adopcion real.
 - Produccion: al depender de un unico mantenedor y de un caso de uso concreto (una demo web), conviene replicar los ficheros en almacenamiento propio o en un registro interno antes de integrarlo en un sistema critico.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dunde/multilingual-e5-small
+- Repositorio en Hugging Face: https://huggingface.co/Dunde/multilingual-e5-small
 - Modelo original: https://huggingface.co/intfloat/multilingual-e5-small
 - Conversion ONNX de origen: https://huggingface.co/Xenova/multilingual-e5-small
 - Demo que motivo la publicacion: https://dunde.kr (MEGAFIXEL)

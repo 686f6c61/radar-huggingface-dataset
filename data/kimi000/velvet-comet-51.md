@@ -6,7 +6,7 @@ Velvet Comet 51 es un modelo de difusión de texto a imagen, exportado en format
 
 Se trata de un modelo relativamente compacto (3.875 millones de parámetros) que, al estar basado en FLUX.2 Klein, hereda la arquitectura de difusión de Black Forest Labs, aunque el checkpoint aquí presentado ha sido ajustado mediante LoRA (rank 32, alpha 64) y posteriormente fusionado en los pesos finales. La relevancia de este lanzamiento radica en que demuestra un flujo de entrenamiento con refuerzo aplicado a un modelo de difusión de código abierto, con verificación de integridad y reproducibilidad documentada en el repositorio.
 
-La ficha se basa exclusivamente en la información proporcionada por el autor en la model card y en los metadatos de HuggingFace. No se dispone de datos adicionales sobre rendimiento, licencia o idiomas soportados, por lo que estos campos se marcan como no disponibles cuando corresponde.
+La ficha se basa exclusivamente en la información proporcionada por el autor en la model card y en los metadatos de Hugging Face. No se dispone de datos adicionales sobre rendimiento, licencia o idiomas soportados, por lo que estos campos se marcan como no disponibles cuando corresponde.
 
 ## Especificaciones tecnicas
 
@@ -72,5 +72,5 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kimi000/velvet-comet-51
+- Repositorio Hugging Face: https://huggingface.co/kimi000/velvet-comet-51
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la informacion proporcionada.

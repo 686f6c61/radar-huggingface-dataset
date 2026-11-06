@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nikhilemehta/tiny-transformer-demo es un prototipo de investigacion publicado en HuggingFace por el usuario Nikhilemehta. Se trata de un Tiny Transformer orientado a tareas de retrieval (recuperacion de informacion), con 33.088 parametros totales segun los pesos en safetensors. El repositorio se presenta explicitamente como un punto de partida experimental: el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
+Nikhilemehta/tiny-transformer-demo es un prototipo de investigacion publicado en Hugging Face por el usuario Nikhilemehta. Se trata de un Tiny Transformer orientado a tareas de retrieval (recuperacion de informacion), con 33.088 parametros totales segun los pesos en safetensors. El repositorio se presenta explicitamente como un punto de partida experimental: el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado.
 
 El modelo resuelve, en el plano conceptual, el problema de la recuperacion multimodal o texto-imagen mediante una arquitectura compacta que combina atencion multi-query y fusion por co-atencion. Su relevancia actual es limitada en terminos de rendimiento, pero resulta util como plantilla reproducible para experimentos de bajo coste: incluye config.json, training_args.json e inference.py, lo que permite auditar la receta por defecto (optimizador Adafactor con schedule de warmup constante) y los formatos de fichero.
 
@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento publicados para este modelo, por lo que no
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nikhilemehta/tiny-transformer-demo | 33.088 | no disponible | no publicado | apache-2.0 | HuggingFace, 0 descargas |
+| Nikhilemehta/tiny-transformer-demo | 33.088 | no disponible | no publicado | apache-2.0 | Hugging Face, 0 descargas |
 | Alternativas de retrieval de tamano comparable | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no ha devuelto informacion relevante sobre modelos comparables ni sobre este repositorio.
@@ -91,8 +91,8 @@ La busqueda web realizada no ha devuelto informacion relevante sobre modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Nikhilemehta/tiny-transformer-demo
-- Fichero de inferencia: inference.py dentro del repositorio de HuggingFace
-- Configuracion de arquitectura: config.json dentro del repositorio de HuggingFace
-- Receta de experimento por defecto: training_args.json dentro del repositorio de HuggingFace
+- Modelo en Hugging Face: https://huggingface.co/Nikhilemehta/tiny-transformer-demo
+- Fichero de inferencia: inference.py dentro del repositorio de Hugging Face
+- Configuracion de arquitectura: config.json dentro del repositorio de Hugging Face
+- Receta de experimento por defecto: training_args.json dentro del repositorio de Hugging Face
 - No se han encontrado enlaces adicionales relevantes (papers, blogs o demos) en la busqueda web realizada.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Rumiii/Llama-3.1-8B-xLAM-Agent es un modelo publicado en HuggingFace por el usuario Rumiii el 14 de octubre de 2026. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tune) del modelo Llama 3.1 de 8.000 millones de parametros, orientado a tareas de agente y function calling, presumiblemente entrenado con datos del corpus xLAM (Large Action Model) de Salesforce. Esta interpretacion procede unicamente de la nomenclatura del repositorio: la model card no confirma ni el modelo base ni el dataset de entrenamiento.
+Rumiii/Llama-3.1-8B-xLAM-Agent es un modelo publicado en Hugging Face por el usuario Rumiii el 14 de octubre de 2026. Por el nombre del repositorio se deduce que se trata de un ajuste fino (fine-tune) del modelo Llama 3.1 de 8.000 millones de parametros, orientado a tareas de agente y function calling, presumiblemente entrenado con datos del corpus xLAM (Large Action Model) de Salesforce. Esta interpretacion procede unicamente de la nomenclatura del repositorio: la model card no confirma ni el modelo base ni el dataset de entrenamiento.
 
 El problema que pretende resolver es el de dotar a un modelo de 8B de parametros de una capacidad fiable de invocacion de herramientas y ejecucion de flujos multi-paso, un nicho donde los modelos genericos de ese tamano suelen fallar en el formateo de llamadas y en el encadenamiento de acciones. Un modelo de ese tamano es desplegable en una sola GPU de consumo, lo que lo hace atractivo para pipelines de agentes con requisitos de coste y latencia ajustados.
 
@@ -74,10 +74,10 @@ La comparativa se plantea contra alternativas de la misma categoria (8B con orie
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Evaluaciones publicadas |
 |---|---|---|---|---|---|
-| Rumiii/Llama-3.1-8B-xLAM-Agent | no disponible (nombre sugiere 8B) | no disponible | apache-2.0 | Repositorio HuggingFace, 0 descargas | no disponible |
+| Rumiii/Llama-3.1-8B-xLAM-Agent | no disponible (nombre sugiere 8B) | no disponible | apache-2.0 | Repositorio Hugging Face, 0 descargas | no disponible |
 | Llama-3.1-8B-Instruct (Meta) | 8B | 128.000 tokens | Llama 3.1 Community License | Ampliamente desplegado, ecosistema maduro | Si, publicadas por Meta |
-| xLAM-7B-r (Salesforce) | 7B | 32.768 tokens (segun model card de Salesforce) | CC-BY-NC-4.0 (uso no comercial) | HuggingFace | Si, publicadas por Salesforce |
-| Hermes-3-Llama-3.1-8B (NousResearch) | 8B | 131.072 tokens | Llama 3.1 Community License | HuggingFace, ampliamente usado | Parciales |
+| xLAM-7B-r (Salesforce) | 7B | 32.768 tokens (segun model card de Salesforce) | CC-BY-NC-4.0 (uso no comercial) | Hugging Face | Si, publicadas por Salesforce |
+| Hermes-3-Llama-3.1-8B (NousResearch) | 8B | 131.072 tokens | Llama 3.1 Community License | Hugging Face, ampliamente usado | Parciales |
 
 Conviene senalar que la licencia declarada apache-2.0 en este repositorio resulta llamativa si el modelo base es Llama 3.1, ya que los terminos de Meta exigen redistribuir las copias y derivados bajo la Llama 3.1 Community License e incluir las condiciones de uso aceptable.
 
@@ -96,6 +96,6 @@ Conviene senalar que la licencia declarada apache-2.0 en este repositorio result
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Rumiii/Llama-3.1-8B-xLAM-Agent
+- Repositorio Hugging Face: https://huggingface.co/Rumiii/Llama-3.1-8B-xLAM-Agent
 - Imagen incrustada en la model card: https://cdn-uploads.huggingface.co/production/uploads/66e00ba55e4fd4bfead4a97c/zH9Sn1dDIaWuwLfg1gmRt.png
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion disponible.

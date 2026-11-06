@@ -89,7 +89,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p.ej. Ll
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-5.5bpw
+- Repositorio Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.8-Flash-Next-VQ-5.5bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog oficial de Qwen sobre Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Guía de unsloth para ejecutar el modelo: https://unsloth.ai/docs/models/qwen3.8-next

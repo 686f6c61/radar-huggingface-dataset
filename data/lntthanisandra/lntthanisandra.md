@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `lntthanisandra/lntthanisandra` en HuggingFace no contiene un modelo de inteligencia artificial funcional. La model card está vacía, sin descripción, sin arquitectura, sin pesos, sin pipeline definido y sin descargas registradas. El único metadato presente es la licencia `openrail` y la región `us`.
+El repositorio `lntthanisandra/lntthanisandra` en Hugging Face no contiene un modelo de inteligencia artificial funcional. La model card está vacía, sin descripción, sin arquitectura, sin pesos, sin pipeline definido y sin descargas registradas. El único metadato presente es la licencia `openrail` y la región `us`.
 
 Las búsquedas web asociadas al nombre "lntthanisandra" apuntan de forma consistente a un proyecto inmobiliario residencial de L&T Realty en el área de Thanisandra, Bangalore (India), así como a perfiles de GitHub, LeetCode y Linktree con el mismo nombre. No existe ningún indicio de que este repositorio contenga un modelo de lenguaje, un modelo de visión o cualquier otro artefacto de IA publicable. Se trata, con alta probabilidad, de un repositorio placeholder, una cuenta personal o un espacio de prueba sin contenido relevante para la comunidad de desarrolladores.
 
@@ -53,7 +53,7 @@ No disponible. No existe un modelo comparable porque no hay modelo que evaluar. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lntthanisandra/lntthanisandra
+- Repositorio Hugging Face: https://huggingface.co/lntthanisandra/lntthanisandra
 - Perfil GitHub asociado: https://github.com/lntthanisandra
 - Perfil LeetCode asociado: https://leetcode.com/u/lntthanisandra/
 - Linktree asociado: https://linktr.ee/lntthanisandra

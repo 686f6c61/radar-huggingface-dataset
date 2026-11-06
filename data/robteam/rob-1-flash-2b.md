@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobTeam/rob-1-flash-2b
+- Modelo en Hugging Face: https://huggingface.co/RobTeam/rob-1-flash-2b
 - Espejo del autor: https://huggingface.co/robanik10101/rob-1-flash-2b
-- Perfil del autor en HuggingFace: https://huggingface.co/RobTeam
+- Perfil del autor en Hugging Face: https://huggingface.co/RobTeam
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

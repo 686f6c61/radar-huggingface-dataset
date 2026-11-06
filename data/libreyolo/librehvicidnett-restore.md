@@ -70,6 +70,6 @@ No se dispone de información comparativa en la documentación proporcionada. No
 
 ## Enlaces
 
-- [HuggingFace - LibreYOLO/LibreHVICIDNett-restore](https://huggingface.co/LibreYOLO/LibreHVICIDNett-restore)
+- [Hugging Face - LibreYOLO/LibreHVICIDNett-restore](https://huggingface.co/LibreYOLO/LibreHVICIDNett-restore)
 - [Repositorio fuente - Fediory/HVI-CIDNet-Generalization](https://huggingface.co/Fediory/HVI-CIDNet-Generalization)
 - [Repositorio GitHub - Fediory/HVI-CIDNet](https://github.com/Fediory/HVI-CIDNet)

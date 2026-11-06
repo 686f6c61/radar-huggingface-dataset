@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/typhoon-ocr2-2b-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/typhoon-ocr2-2b-GGUF
 - Modelo base original: https://huggingface.co/typhoon-ai/typhoon-ocr2-2b
 - Página de resumen del cuantizador: https://hf.tst.eu/model#typhoon-ocr2-2b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

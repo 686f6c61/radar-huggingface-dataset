@@ -77,7 +77,7 @@ BGE-M3 se diferencia de BGE-large-en-v1.5 por su soporte multilingüe y su conte
 
 ## Enlaces
 
-- [Modelo original en HuggingFace: BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
+- [Modelo original en Hugging Face: BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
 - [Repositorio de esta réplica: jiaqi-22/bge-m3](https://huggingface.co/jiaqi-22/bge-m3)
 - [Paper: BGE-M3](https://arxiv.org/pdf/2402.03216.pdf)
 - [Código oficial: FlagEmbedding](https://github.com/FlagOpen/FlagEmbedding/tree/master/FlagEmbedding/BGE_M3)

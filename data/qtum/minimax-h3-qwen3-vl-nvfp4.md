@@ -83,7 +83,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtum/MiniMax-H3-Qwen3-VL-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/qtum/MiniMax-H3-Qwen3-VL-NVFP4
 - Repositorio del modelo base (Comfy-Org/MiniMax-H3): https://huggingface.co/Comfy-Org/MiniMax-H3
 - DiT cuantizado NVFP4 (lilcheaty/MiniMax-H3-NVFP4): https://huggingface.co/lilcheaty/MiniMax-H3-NVFP4
 - Turbo LoRA (Gluttony10/MiniMax-H3-INT8-CONVROT): https://huggingface.co/Gluttony10/MiniMax-H3-INT8-CONVROT

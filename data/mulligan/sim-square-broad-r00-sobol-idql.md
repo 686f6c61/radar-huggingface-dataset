@@ -28,7 +28,7 @@ Su relevancia es acotada pero clara: se trata de un punto de referencia reproduc
 | Dataset de entrenamiento | mulligan/sim-square-broad-c00-teleop-sobol |
 | Dataset de evaluación | mulligan/sim-square-broad-r00-r03-eval |
 | Tamaño del repositorio | 1,4 GB (≈280 MB por semilla, valor derivado) |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 
 ## Arquitectura y entrenamiento
 
@@ -87,7 +87,7 @@ La información proporcionada no incluye otros checkpoints comparables con espec
 
 | Modelo | Familia | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sim-square-broad-r00-sobol-idql | IDQL (actor de difusión + crítico IQL escalar) | no disponible | no aplica | Apache 2.0 | HuggingFace, 5 semillas |
+| sim-square-broad-r00-sobol-idql | IDQL (actor de difusión + crítico IQL escalar) | no disponible | no aplica | Apache 2.0 | Hugging Face, 5 semillas |
 | IQL (familia citada en los artefactos de origen) | RL offline basado en valor, sin actor explícito de difusión | no disponible | no aplica | no disponible | no disponible |
 | DDPG+BC (familia citada en los artefactos de origen) | Actor-crítico determinista con regularización por imitación | no disponible | no aplica | no disponible | no disponible |
 | Diffusion Policy (familia de referencia del actor) | Política de difusión sin remuestreo por crítico | no disponible | no aplica | no disponible | no disponible |
@@ -111,10 +111,10 @@ No se dispone de cifras de rendimiento de las alternativas sobre la misma tarea 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-idql
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización mulligan en HuggingFace: https://huggingface.co/mulligan
+- Organización mulligan en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page
 

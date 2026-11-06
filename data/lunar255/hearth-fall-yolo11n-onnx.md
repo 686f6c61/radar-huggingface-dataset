@@ -85,8 +85,8 @@ No hay datos de latencia, throughput ni consumo energetico en la informacion pro
 
 | Modelo | Tarea | Parametros | Entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Lunar255/hearth-fall-yolo11n-onnx` | Deteccion de caidas (3 clases) | no disponible | 640 x 640 y 416 x 416 | ONNX opset 12 | AGPL-3.0 | HuggingFace, 0 descargas |
-| `melihuzunoglu/human-fall-detection` | Deteccion de caidas (3 clases) | no disponible | no disponible | PyTorch `.pt` | no disponible en la informacion proporcionada | HuggingFace (modelo base) |
+| `Lunar255/hearth-fall-yolo11n-onnx` | Deteccion de caidas (3 clases) | no disponible | 640 x 640 y 416 x 416 | ONNX opset 12 | AGPL-3.0 | Hugging Face, 0 descargas |
+| `melihuzunoglu/human-fall-detection` | Deteccion de caidas (3 clases) | no disponible | no disponible | PyTorch `.pt` | no disponible en la informacion proporcionada | Hugging Face (modelo base) |
 | YOLO11n preentrenado en COCO | Deteccion de objetos genericos (80 clases) | no disponible en la informacion proporcionada | configurable | PyTorch, ONNX y otros | AGPL-3.0 (Ultralytics) | Publico |
 
 La comparacion cuantitativa no es posible con los datos disponibles: no se publican metricas de precision ni de latencia para ninguno de los tres. La diferencia principal entre este modelo y el modelo base es exclusivamente el formato de pesos, ya que comparten los mismos valores numericos. Frente a un YOLO11n generico preentrenado en COCO, la diferencia esta en la cabeza de clasificacion: tres clases especificas de postura frente a ochenta clases genericas.
@@ -108,7 +108,7 @@ La comparacion cuantitativa no es posible con los datos disponibles: no se publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lunar255/hearth-fall-yolo11n-onnx
+- Modelo en Hugging Face: https://huggingface.co/Lunar255/hearth-fall-yolo11n-onnx
 - Modelo base: https://huggingface.co/melihuzunoglu/human-fall-detection
 - Revision concreta del modelo base usada para el export: `97261b03632a9715a27481b2cfdac6a78e26d2d9`
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las URLs devueltas por la busqueda no guardan relacion con el modelo, su arquitectura ni su dominio de aplicacion, por lo que se descartan.

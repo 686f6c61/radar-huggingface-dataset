@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-pokie-lora es un adaptador LoRA para edicion y generacion de imagenes publicado en HuggingFace por RunningHubAI (RunningHub), atribuido al autor Dmytro Sakal y distribuido a traves de la plataforma RunningHub. El propio autor lo describe en la model card como un modelo de tipo "image edit" afinado a partir de krea2, con la palabra de activacion (trigger word) "Pokie". Se distribuye como un unico fichero safetensors de 218 MiB (aproximadamente 0,2 GB de repositorio) y esta pensado para cargarse en ComfyUI, en RunningHub o directamente desde Hugging Face.
+rh-pokie-lora es un adaptador LoRA para edicion y generacion de imagenes publicado en Hugging Face por RunningHubAI (RunningHub), atribuido al autor Dmytro Sakal y distribuido a traves de la plataforma RunningHub. El propio autor lo describe en la model card como un modelo de tipo "image edit" afinado a partir de krea2, con la palabra de activacion (trigger word) "Pokie". Se distribuye como un unico fichero safetensors de 218 MiB (aproximadamente 0,2 GB de repositorio) y esta pensado para cargarse en ComfyUI, en RunningHub o directamente desde Hugging Face.
 
 El modelo pertenece a la categoria de LoRA sobre modelos de difusion para generacion texto-a-imagen e imagen-a-imagen. La model card no aporta informacion sobre la arquitectura del modelo base mas alla del identificador "krea2", ni sobre el dataset, el numero de pasos de entrenamiento, los hiperparametros o el rango del adaptador. La unica descripcion funcional es la etiqueta "test only", lo que sugiere que se trata de un repositorio de pruebas mas que de un modelo listo para produccion.
 

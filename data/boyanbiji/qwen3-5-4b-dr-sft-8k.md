@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-DR-SFT-8k es un ajuste fino de parámetros completos (SFT) sobre Qwen/Qwen3.5-4B, publicado por el usuario boyanbiji en HuggingFace. El objetivo no es un modelo de chat generalista, sino un agente especializado en *deep research*: recibe una pregunta de investigación, encadena varias rondas de llamadas a herramientas de búsqueda y visita de páginas, y finalmente redacta un informe extenso con citas. El modelo base aporta la arquitectura y el conocimiento previo; el ajuste aporta el comportamiento de agente y el formato de informe citado.
+Qwen3.5-4B-DR-SFT-8k es un ajuste fino de parámetros completos (SFT) sobre Qwen/Qwen3.5-4B, publicado por el usuario boyanbiji en Hugging Face. El objetivo no es un modelo de chat generalista, sino un agente especializado en *deep research*: recibe una pregunta de investigación, encadena varias rondas de llamadas a herramientas de búsqueda y visita de páginas, y finalmente redacta un informe extenso con citas. El modelo base aporta la arquitectura y el conocimiento previo; el ajuste aporta el comportamiento de agente y el formato de informe citado.
 
 El entrenamiento se hizo sobre 7.970 trayectorias de investigación en formato largo, generadas por un modelo profesor mucho mayor (Qwen3.5-122B-A10B) en un harness de tipo *lookahead*, con revisión por rúbrica y verificación estricta del formato de citas. En total, 436,5 millones de tokens, con un máximo de 131.072 tokens por fila, lo que sitúa al modelo en el régimen de contexto muy largo. El resultado es un checkpoint final (paso 747, fin de la época 3) de 4.539.265.536 parámetros y 9,1 GB en safetensors.
 
@@ -12,7 +12,7 @@ Su relevancia es doble: por un lado, demuestra que un modelo de ~4B puede mejora
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (familia Qwen3.5; tag de HuggingFace `qwen3_5`). No se detallan capas ni cabezas en la informacion disponible |
+| Arquitectura | Transformer denso (familia Qwen3.5; tag de Hugging Face `qwen3_5`). No se detallan capas ni cabezas en la informacion disponible |
 | Parametros totales | 4.539.265.536 (~4,54B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | 131.072 tokens como maximo por fila de entrenamiento; la longitud de contexto nativa del modelo base no se documenta en la informacion disponible (se infiere 128k) |
@@ -27,7 +27,7 @@ La arquitectura subyacente es la del modelo base Qwen3.5-4B, un transformer dens
 
 Los datos son el elemento diferenciador. Son 7.970 filas de entrenamiento (más 81 de validación) que suman 436,5 millones de tokens, con hasta 131.072 tokens por fila. Cada trayectoria contiene múltiples turnos en los que el agente invoca herramientas de búsqueda y de visita de páginas antes de escribir un informe citado. El profesor fue Qwen3.5-122B-A10B ejecutado en un harness de *lookahead*, y los informes se revisaron por rúbrica y se sometieron a una comprobación de formato que dio 0 violaciones estrictas del formato de citas. Las fuentes de datos son 1.777 filas del conjunto `quest-lookahead1-qwen122b-revised-v1` y 6.193 filas del release *lookahead* ev10k (rondas 1 y 2). No se menciona RLHF, DPO ni ninguna etapa de preferencias posterior al SFT.
 
-El pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que el modelo base acepta entradas de imagen además de texto; sin embargo, la model card no documenta ninguna capacidad de visión ni el ajuste incluye datos multimodales. Hay que tratar ese dato como herencia de la metadata del modelo base, no como una capacidad validada en este checkpoint.
+El pipeline declarado en Hugging Face es `image-text-to-text`, lo que sugiere que el modelo base acepta entradas de imagen además de texto; sin embargo, la model card no documenta ninguna capacidad de visión ni el ajuste incluye datos multimodales. Hay que tratar ese dato como herencia de la metadata del modelo base, no como una capacidad validada en este checkpoint.
 
 ## Capacidades
 
@@ -37,7 +37,7 @@ El pipeline declarado en HuggingFace es `image-text-to-text`, lo que sugiere que
 - Razonamiento multi-paso orientado a descomposición de preguntas de investigación y síntesis de fuentes.
 - Generación de texto en contexto muy largo: el entrenamiento llegó a 131.072 tokens por fila, lo que habilita ventanas grandes de documentos y historial de herramientas.
 - Capacidad multilingüe: no documentada para este checkpoint; depende del modelo base.
-- Vision: la pipeline de HuggingFace es `image-text-to-text`, pero la model card no describe ni evalúa capacidades de imagen; no confirmado.
+- Vision: la pipeline de Hugging Face es `image-text-to-text`, pero la model card no describe ni evalúa capacidades de imagen; no confirmado.
 - No se documentan modos de *thinking*, audio ni otras capacidades especiales.
 
 ## Casos de uso
@@ -77,11 +77,11 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks en 
 
 | Modelo | Parametros | Contexto | ResearchRubrics | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-DR-SFT-8k | 4,54B | hasta 131.072 tokens por fila de entrenamiento | 0,4859 | Apache 2.0 | HuggingFace, 0 descargas, 1 like |
-| Qwen3.5-4B (base) | ~4B | no disponible | 0,4351 | Apache 2.0 (heredada, verificar) | HuggingFace |
-| Qwen3.5-4B-DR-SFT-5k | 4,54B | hasta 131.072 tokens por fila | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B-DR-SFT-2.5k | 4,54B | hasta 131.072 tokens por fila | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-4B-DR-SFT-1k | 4,54B | hasta 131.072 tokens por fila | no disponible | Apache 2.0 | HuggingFace |
+| Qwen3.5-4B-DR-SFT-8k | 4,54B | hasta 131.072 tokens por fila de entrenamiento | 0,4859 | Apache 2.0 | Hugging Face, 0 descargas, 1 like |
+| Qwen3.5-4B (base) | ~4B | no disponible | 0,4351 | Apache 2.0 (heredada, verificar) | Hugging Face |
+| Qwen3.5-4B-DR-SFT-5k | 4,54B | hasta 131.072 tokens por fila | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B-DR-SFT-2.5k | 4,54B | hasta 131.072 tokens por fila | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-4B-DR-SFT-1k | 4,54B | hasta 131.072 tokens por fila | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de otros ajustes finos de *deep research* de tamaño comparable en la información proporcionada, por lo que la comparación se limita a la familia del propio autor y al modelo base.
 
@@ -99,7 +99,7 @@ No se dispone de datos de otros ajustes finos de *deep research* de tamaño comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-8k
+- Modelo en Hugging Face: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-8k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Checkpoint 1k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-1k
 - Checkpoint 2.5k: https://huggingface.co/boyanbiji/Qwen3.5-4B-DR-SFT-2.5k

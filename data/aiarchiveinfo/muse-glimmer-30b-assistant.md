@@ -113,7 +113,7 @@ La información proporcionada no incluye datos de comparación con otros modelos
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/AIArchiveInfo/Muse-Glimmer-30B-assistant
+- Repositorio espejo en Hugging Face: https://huggingface.co/AIArchiveInfo/Muse-Glimmer-30B-assistant
 - Modelo original: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Revisión archivada del original: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant/tree/e8192f3a8f617f74be2ce220360c89ef4789f39f
 - Paper del encoder de percepción (arXiv:2504.13181): https://arxiv.org/abs/2504.13181

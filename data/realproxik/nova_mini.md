@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nova Mini es un modelo de generación de texto publicado en HuggingFace por el usuario realproxik bajo el identificador `realproxik/nova_Mini`. El repositorio se creó en agosto de 2026 y contiene aproximadamente 2,9 GB de pesos en formato safetensors. El modelo se distribuye con licencia MIT, lo que permite uso comercial sin restricciones significativas.
+Nova Mini es un modelo de generación de texto publicado en Hugging Face por el usuario realproxik bajo el identificador `realproxik/nova_Mini`. El repositorio se creó en agosto de 2026 y contiene aproximadamente 2,9 GB de pesos en formato safetensors. El modelo se distribuye con licencia MIT, lo que permite uso comercial sin restricciones significativas.
 
 El modelo está etiquetado como `NovaMini-1` dentro de una familia denominada `novaLM`/`novaLLM`. Según la model card, el entrenamiento utilizó un dataset de destilación que combina respuestas de múltiples modelos propietarios de gran tamaño (GPT-5.5, Gemini-3.1-Pro, Grok-4, Claude-Fable-5, Mythos-5, Qwen-3.7-Max, entre otros). La información técnica disponible es muy limitada: no se especifican parámetros totales, arquitectura, longitud de contexto ni idiomas soportados.
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/realproxik/nova_Mini
+- Repositorio Hugging Face: https://huggingface.co/realproxik/nova_Mini
 - Repositorio GitHub (sin contenido relevante): https://github.com/realproxik/Nova-LLM
 - Perfil del autor en GitHub: https://github.com/realproxik
 - Referencia al modelo comercial Nova Mini (no relacionado): https://www.fdq.ai/models/nova/nova-mini

@@ -70,8 +70,8 @@ No se han publicado resultados adicionales de benchmarks en la informacion dispo
 
 | Proyecto | Tipo | Modelo subyacente | Benchmark | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| solarianofc/gaia-agent | Agente `smolagents` | deepseek/deepseek-v4-flash-0731 via OpenRouter | GAIA nivel 1: 17/20 local | MIT | HuggingFace (codigo) |
-| Agentes GAIA de referencia (p. ej. smolagents examples) | Agente `smolagents` | Configurable | no disponible en esta ficha | Variable | HuggingFace / GitHub |
+| solarianofc/gaia-agent | Agente `smolagents` | deepseek/deepseek-v4-flash-0731 via OpenRouter | GAIA nivel 1: 17/20 local | MIT | Hugging Face (codigo) |
+| Agentes GAIA de referencia (p. ej. smolagents examples) | Agente `smolagents` | Configurable | no disponible en esta ficha | Variable | Hugging Face / GitHub |
 | OpenHands | Agente de codigo | Multiples LLM | SWE-bench (no comparable directamente) | MIT | GitHub |
 
 No se dispone de datos suficientes para una comparativa cuantitativa rigurosa con alternativas equivalentes; la comparacion anterior es meramente categorica.
@@ -89,7 +89,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa rigurosa co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/solarianofc/gaia-agent
+- Repositorio en Hugging Face: https://huggingface.co/solarianofc/gaia-agent
 - Curso de agentes de Hugging Face (Unidad 4): https://huggingface.co/learn/agents-course
 - Framework smolagents: https://github.com/huggingface/smolagents
 - Benchmark GAIA: https://huggingface.co/datasets/gaia-benchmark/GAIA

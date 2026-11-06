@@ -1,7 +1,7 @@
 # HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen3
 
 ## Resumen
-`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen3` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto en ingles, entrenado con la libreria Unsloth y TRL de HuggingFace, segun indica el propio autor en la model card. No es un modelo de proposito general publicado por un laboratorio, sino un experimento de ajuste sobre una base conocida.
+`HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen3` es un ajuste fino (fine-tune) del modelo `unsloth/Qwen2.5-7B-Instruct`, publicado por el usuario HungryDino en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de generacion de texto en ingles, entrenado con la libreria Unsloth y TRL de Hugging Face, segun indica el propio autor en la model card. No es un modelo de proposito general publicado por un laboratorio, sino un experimento de ajuste sobre una base conocida.
 
 La relevancia de esta ficha es limitada y conviene decirlo con claridad: el repositorio no incluye datos de entrenamiento, hiperparametros, composicion del dataset ni resultados de evaluacion. El nombre del repositorio (`eagle_numbers-iterated-run1-gen3`) sugiere una iteracion experimental orientada a tareas numericas o de generacion iterativa, pero la model card no lo documenta, por lo que esa interpretacion no puede confirmarse.
 
@@ -78,8 +78,8 @@ No se dispone de datos de rendimiento de este ajuste que permitan una comparacio
 - Repositorio sin adopcion: cero descargas y cero "likes" en el momento de redactar la ficha, sin mantenimiento ni soporte del autor.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen3
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen3
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Unsloth (repositorio citado en la model card): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: no disponible como enlace explicito en la informacion proporcionada
+- TRL de Hugging Face: no disponible como enlace explicito en la informacion proporcionada
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos resultados obtenidos correspondian a foros de videojuegos sin relacion con el modelo.

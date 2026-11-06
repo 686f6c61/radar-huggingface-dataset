@@ -97,7 +97,7 @@ No se han publicado en la información disponible comparativas numéricas con ot
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/taurusduan/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/taurusduan/DeepSeek-V4.1-Flash-1017-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper GSQ (arXiv): https://arxiv.org/abs/2604.18556
 - Paper RCO (arXiv): https://arxiv.org/abs/2605.00649

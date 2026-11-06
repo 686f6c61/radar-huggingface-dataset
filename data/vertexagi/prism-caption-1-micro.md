@@ -79,6 +79,6 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VertexAGI/prism-caption-1-micro
+- Repositorio Hugging Face: https://huggingface.co/VertexAGI/prism-caption-1-micro
 - Modelo base: https://huggingface.co/mlx-community/gemma-3-1b-it-4bit
 - Profesor (vía OpenRouter): https://openrouter.ai/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning

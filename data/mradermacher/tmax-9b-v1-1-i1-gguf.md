@@ -25,7 +25,7 @@ Por tanto, esta ficha debe interpretarse como una descripcion del artefacto de c
 
 No se ha publicado informacion sobre la arquitectura del modelo base TMaxxx/tmax-9b-v1.1 en la documentacion disponible. El nombre sugiere un transformer de aproximadamente 9 mil millones de parametros, pero no hay confirmacion de si se trata de un transformer denso, un modelo MoE o una arquitectura hibrida. Tampoco se conocen los datos de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF o DPO.
 
-La unica informacion tecnica disponible se refiere al proceso de cuantizacion: el autor ha generado las cuantizaciones con matriz de importancia (imatrix), lo que indica que se calculo una matriz de importancia a partir de datos de calibracion para ponderar los tensores durante la compresion. Las etiquetas de la model card confirman el uso de `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere que la conversion se realizo desde pesos en formato HuggingFace. No se ha incluido el fichero mmproj, lo que apunta a que el modelo base no es multimodal o que la proyeccion visual no se ha cuantizado.
+La unica informacion tecnica disponible se refiere al proceso de cuantizacion: el autor ha generado las cuantizaciones con matriz de importancia (imatrix), lo que indica que se calculo una matriz de importancia a partir de datos de calibracion para ponderar los tensores durante la compresion. Las etiquetas de la model card confirman el uso de `quantize_version: 2`, `output_tensor_quantised: 1` y `convert_type: hf`, lo que sugiere que la conversion se realizo desde pesos en formato Hugging Face. No se ha incluido el fichero mmproj, lo que apunta a que el modelo base no es multimodal o que la proyeccion visual no se ha cuantizado.
 
 ## Capacidades
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de informacion sobre el modelo base ni sobre altern
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/tmax-9b-v1.1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/tmax-9b-v1.1-i1-GGUF
 - Modelo base: https://huggingface.co/TMaxxx/tmax-9b-v1.1

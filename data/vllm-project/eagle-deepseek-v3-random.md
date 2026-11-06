@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Eagle-DeepSeek-V3-Random es un checkpoint de pesos publicado por la organización vllm-project en HuggingFace. Se trata de una copia del modelo original `eagle618/eagle-deepseek-v3-random`, replicada el 30 de octubre de 2026 a partir del commit `8bafb3e` del repositorio original. La motivación declarada por el autor es puramente operativa: el proyecto vLLM utiliza este checkpoint en su integración continua (CI) y, como el original residía en una cuenta personal, se mantiene una copia en la organización para reducir el riesgo de cadena de suministro.
+Eagle-DeepSeek-V3-Random es un checkpoint de pesos publicado por la organización vllm-project en Hugging Face. Se trata de una copia del modelo original `eagle618/eagle-deepseek-v3-random`, replicada el 30 de octubre de 2026 a partir del commit `8bafb3e` del repositorio original. La motivación declarada por el autor es puramente operativa: el proyecto vLLM utiliza este checkpoint en su integración continua (CI) y, como el original residía en una cuenta personal, se mantiene una copia en la organización para reducir el riesgo de cadena de suministro.
 
 El nombre del repositorio sugiere que se trata de un cabezal de decodificación especulativa (Eagle) asociado a la familia DeepSeek-V3, con pesos inicializados de forma aleatoria ("random"). El tamaño real del checkpoint, según los safetensors, es de 1.580.041.288 parámetros (aproximadamente 1,58 mil millones), lo que es coherente con un módulo auxiliar de draft y no con el modelo base DeepSeek-V3 completo. El repositorio ocupa 2,3 GB y se distribuye bajo licencia Apache 2.0.
 
@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| vllm-project/eagle-deepseek-v3-random | 1,58 B | no disponible | Apache 2.0 | HuggingFace | Copia de CI, pesos presumiblemente aleatorios |
-| eagle618/eagle-deepseek-v3-random | no disponible | no disponible | no disponible | HuggingFace (original) | Repositorio fuente del que se copió este checkpoint |
-| DeepSeek-V3 (modelo base) | no disponible en esta ficha | no disponible | no disponible | HuggingFace | Modelo principal al que se asocia el cabezal Eagle |
+| vllm-project/eagle-deepseek-v3-random | 1,58 B | no disponible | Apache 2.0 | Hugging Face | Copia de CI, pesos presumiblemente aleatorios |
+| eagle618/eagle-deepseek-v3-random | no disponible | no disponible | no disponible | Hugging Face (original) | Repositorio fuente del que se copió este checkpoint |
+| DeepSeek-V3 (modelo base) | no disponible en esta ficha | no disponible | no disponible | Hugging Face | Modelo principal al que se asocia el cabezal Eagle |
 
 No se dispone de datos suficientes para una comparativa de rendimiento con alternativas de la misma categoría.
 
@@ -77,6 +77,6 @@ No se dispone de datos suficientes para una comparativa de rendimiento con alter
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vllm-project/eagle-deepseek-v3-random
+- Repositorio en Hugging Face: https://huggingface.co/vllm-project/eagle-deepseek-v3-random
 - Repositorio original: https://huggingface.co/eagle618/eagle-deepseek-v3-random
 - Proyecto vLLM: no disponible en la información proporcionada

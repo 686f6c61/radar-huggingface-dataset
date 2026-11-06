@@ -80,7 +80,7 @@ Los checkpoints de SFT de este repo no tienen datos de comparación, pero se esp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dvader13/smollm3-3b-sft-2p26t
+- Repositorio Hugging Face: https://huggingface.co/dvader13/smollm3-3b-sft-2p26t
 - Modelo base SmolLM3-3B: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Web oficial de SmolLM3: https://smollm3.org/
 - Guía de SFT en SmolLM3: https://huggingface.co/learn/smol-course/unit1/3

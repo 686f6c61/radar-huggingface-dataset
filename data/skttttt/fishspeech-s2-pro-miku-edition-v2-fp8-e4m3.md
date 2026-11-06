@@ -76,12 +76,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Riesgo de alucinación acústica y artefactos: como modelo generativo de audio, puede producir pronunciaciones incorrectas, ruidos o prosodia anómala, especialmente con textos largos o poco naturales.
 - La cuantización FP8 se verificó estructuralmente y por checksum, pero no se realizó una comparación de escucha específica para este personaje; la afirmación de mejora de V2 corresponde a la evaluación del modelo BF16 original.
 - El runtime incluido requiere ROCm; la inferencia en CUDA es experimental y no se ha probado por completo. No hay fallback BF16 en el cargador FP8, lo que limita la portabilidad.
-- No es un checkpoint estándar de Transformers: no funcionará con pipelines genéricos de HuggingFace sin el fork de Fish Speech indicado.
+- No es un checkpoint estándar de Transformers: no funcionará con pipelines genéricos de Hugging Face sin el fork de Fish Speech indicado.
 - Uso responsable: la clonación de voz puede emplearse para suplantación; debe limitarse a contextos con consentimiento y fines no comerciales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Miku-Edition-V2-FP8-E4M3
+- Modelo en Hugging Face: https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Miku-Edition-V2-FP8-E4M3
 - Modelo base BF16 V2: https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Miku-Edition-V2
 - Fork de Fish Speech requerido: https://github.com/TachibanaKimika/fish-speech/tree/166940c301b8b4650b3110397a38bc68727a3afa
 - Modelo hermano (Ichika Edition): https://huggingface.co/Skttttt/Fishspeech-S2-Pro-Ichika-Edition-V2-FP8-E4M3

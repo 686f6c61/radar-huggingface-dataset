@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks comparativos entre estas variantes en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/duyleekun/Vintern-1B-v3_5-BF16-GGUF
+- Modelo en Hugging Face: https://huggingface.co/duyleekun/Vintern-1B-v3_5-BF16-GGUF
 - Modelo base: https://huggingface.co/5CD-AI/Vintern-1B-v3_5
 - Revision fijada del checkpoint original: https://huggingface.co/5CD-AI/Vintern-1B-v3_5/tree/b98f263eab246eb5269ade64edbdca8a887dc44d
 - Model card del modelo original en esa revision: https://huggingface.co/5CD-AI/Vintern-1B-v3_5/blob/b98f263eab246eb5269ade64edbdca8a887dc44d/README.md

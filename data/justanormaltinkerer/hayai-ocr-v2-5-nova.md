@@ -6,7 +6,7 @@ Hayai OCR v2.5 Nova es un modelo vision-language de tipo image-to-text desarroll
 
 La innovacion principal de la version 2.5 es el `DSCProjector` (Downsampling Spatial Convolution), que reorganiza los embeddings de parches en una rejilla 2D y aplica un *pixel unshuffle* 2x para reducir cuatro parches a un unico token. Esto rebaja un 75% el numero de tokens visuales que consume el decodificador, con la consiguiente reduccion de la latencia de prefill y del consumo de KV cache. El modelo anade ademas escalado residual aprendible por canal y una cabeza auxiliar de clasificacion IDS de 226 clases usada solo durante el entrenamiento para reforzar la discriminacion de glifos CJK poco frecuentes.
 
-El modelo es relevante en el nicho de la digitalizacion de manga y documentos CJK porque ofrece una alternativa de muy bajo coste computacional a los VLM generalistas. Segun los datos publicados por el autor, con un presupuesto de 512 parches alcanza un CER del 3,10% y un *exact match* del 80,68% en el benchmark JMangaBench_Mixed (3.286 recortes), superando a MangaOCR (~150M) en el mismo conjunto. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial, aunque la fecha de creacion del repositorio indicada en HuggingFace (2026-09-20) y sus cero descargas sugieren un modelo muy reciente y sin validacion comunitaria independiente.
+El modelo es relevante en el nicho de la digitalizacion de manga y documentos CJK porque ofrece una alternativa de muy bajo coste computacional a los VLM generalistas. Segun los datos publicados por el autor, con un presupuesto de 512 parches alcanza un CER del 3,10% y un *exact match* del 80,68% en el benchmark JMangaBench_Mixed (3.286 recortes), superando a MangaOCR (~150M) en el mismo conjunto. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial, aunque la fecha de creacion del repositorio indicada en Hugging Face (2026-09-20) y sus cero descargas sugieren un modelo muy reciente y sin validacion comunitaria independiente.
 
 ## Especificaciones tecnicas
 
@@ -82,8 +82,8 @@ El autor indica ademas que, en recortes densos, subir de 256 a 512 parches reduc
 
 | Modelo | Parametros | Idiomas | Contexto / tokens visuales | CER (JMangaBench_Mixed) | Licencia | Disponibilidad |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Hayai OCR v2.5 Nova | ~157M | en, ja, zh, ko | Hasta 128 tokens visuales (512 parches) | 3,10% | Apache 2.0 | HuggingFace, requiere `trust_remote_code` |
-| MangaOCR | ~150M | ja (principalmente) | No disponible | 4,68% | No disponible en la informacion proporcionada | HuggingFace |
+| Hayai OCR v2.5 Nova | ~157M | en, ja, zh, ko | Hasta 128 tokens visuales (512 parches) | 3,10% | Apache 2.0 | Hugging Face, requiere `trust_remote_code` |
+| MangaOCR | ~150M | ja (principalmente) | No disponible | 4,68% | No disponible en la informacion proporcionada | Hugging Face |
 | BaberuOCR | No disponible | No disponible | No disponible | No disponible (tabla truncada) | No disponible | No disponible |
 
 Frente a MangaOCR, el modelo declara un CER 1,58 puntos mejor y un exact match 7,16 puntos superior en el mismo benchmark, ademas de cubrir cuatro idiomas en lugar de centrarse en japones. La comparacion con BaberuOCR no puede completarse porque la tabla de la model card llega truncada en la informacion disponible. No se dispone de datos para comparar con VLM generalistas tipo Qwen2-VL o InternVL en esta tarea concreta.
@@ -102,7 +102,7 @@ Frente a MangaOCR, el modelo declara un CER 1,58 puntos mejor y un exact match 7
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.5-nova
+- Modelo en Hugging Face: https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.5-nova
 - Repositorio de utilidades hayai-ocr en GitHub: https://github.com/NopeNopeGuy/hayai-ocr
 - Benchmark JMangaBench_Mixed: https://github.com/muscgab/JMangaBench_Mixed/
 - Procesador SigLIP2 NaFlex empleado: https://huggingface.co/google/siglip2-base-patch16-naflex

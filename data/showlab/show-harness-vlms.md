@@ -110,7 +110,7 @@ No se dispone de datos de modelos comparables en la información proporcionada: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/showlab/Show-Harness-VLMs
+- Modelo en Hugging Face: https://huggingface.co/showlab/Show-Harness-VLMs
 - Paper (arXiv:2609.10522): https://arxiv.org/abs/2609.10522
 - Código: https://github.com/showlab/Show-Harness
 - Dataset: https://huggingface.co/datasets/showlab/Show-Harness-Data

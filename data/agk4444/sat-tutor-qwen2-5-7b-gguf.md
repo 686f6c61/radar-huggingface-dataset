@@ -6,7 +6,7 @@ sat-tutor-qwen2.5-7b-gguf es un ajuste fino del modelo Qwen/Qwen2.5-7B-Instruct 
 
 Técnicamente es un transformer decoder-only denso de 7.615.616.512 parámetros (7,6 B), heredado de la familia Qwen2.5, con 32.768 tokens de ventana de contexto y entrenado mediante QLoRA a 4 bits sobre unos 30.000 ejemplos de matemáticas y lectura/escritura con soluciones detalladas. El adaptador resultante se fusionó en los pesos base en fp16 y después se cuantizó a Q4_K_M, generando un fichero de ~4,35 GB (repositorio de 4,7 GB) pensado para inferencia local con llama.cpp, Ollama, LM Studio, GPT4All o text-generation-webui.
 
-Su relevancia actual es la de un caso típico de especialización vertical sobre un modelo abierto: en lugar de competir en capacidades generales, entrega un dominio estrecho y medible con una métrica propia (70/77 preguntas de matemáticas parseables, 90,9 %). Conviene tener presente que la ficha de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, y que el único idioma declarado es el inglés, por lo que se trata de una publicación reciente y sin adopción comunitaria verificable.
+Su relevancia actual es la de un caso típico de especialización vertical sobre un modelo abierto: en lugar de competir en capacidades generales, entrega un dominio estrecho y medible con una métrica propia (70/77 preguntas de matemáticas parseables, 90,9 %). Conviene tener presente que la ficha de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, y que el único idioma declarado es el inglés, por lo que se trata de una publicación reciente y sin adopción comunitaria verificable.
 
 ## Especificaciones técnicas
 
@@ -74,7 +74,7 @@ El autor indica que las respuestas no parseables suelen deberse a fallos de form
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Especialización |
 |---|---|---|---|---|---|
-| sat-tutor-qwen2.5-7b-gguf | 7,6 B | 32k | Apache 2.0 | GGUF Q4_K_M en HuggingFace | Tutoría SAT (matemáticas y lectura/escritura) |
+| sat-tutor-qwen2.5-7b-gguf | 7,6 B | 32k | Apache 2.0 | GGUF Q4_K_M en Hugging Face | Tutoría SAT (matemáticas y lectura/escritura) |
 | Qwen/Qwen2.5-7B-Instruct | 7,6 B | 32k (ampliable con YaRN) | Apache 2.0 | Safetensors, GGUF, múltiples runtimes | Propósito general, instrucciones |
 | Mistral-7B-Instruct v0.3 | 7,2 B | 32k | Apache 2.0 | Safetensors, GGUF | Propósito general, instrucciones |
 | Meta Llama-3.1-8B-Instruct | 8,0 B | 128k | Llama 3.1 Community License | Safetensors, GGUF | Propósito general, instrucciones, tool calling |
@@ -95,7 +95,7 @@ La comparación de rendimiento no está disponible: el autor solo publica métri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agk4444/sat-tutor-qwen2.5-7b-gguf
+- Modelo en Hugging Face: https://huggingface.co/agk4444/sat-tutor-qwen2.5-7b-gguf
 - Adaptador pre-fusión: https://huggingface.co/agk4444/sat-tutor-qwen2.5-7b
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado en la búsqueda web enlaces relevantes (papers, blogs, repositorios o demos) asociados a este modelo; los resultados devueltos eran contenido no relacionado.

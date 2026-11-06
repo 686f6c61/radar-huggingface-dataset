@@ -20,7 +20,7 @@ La relevancia práctica es acotada: sirve como referencia metodológica para inv
 | Idiomas soportados | Ingles (`en`) |
 | Licencia | Apache-2.0 (siguiendo el modelo base fijado) |
 | Formato de pesos | Safetensors, 18 shards, BF16; repositorio de 53,8 GB |
-| Pipeline | image-text-to-text (segun HuggingFace), aunque el ajuste fino y la evaluacion son exclusivamente de texto |
+| Pipeline | image-text-to-text (segun Hugging Face), aunque el ajuste fino y la evaluacion son exclusivamente de texto |
 | Modelo base | Qwen/Qwen3.8-27B, revision fijada `1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0` |
 | Runtime de referencia | Transformers 5.12.1 |
 | Descargas / likes | 0 / 0 |
@@ -39,7 +39,7 @@ Los datos proceden del entorno Caesar Cipher de Reasoning Gym (commit `49b07130b
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se evaluo transferencia entre tareas.
 - Capacidades multilingues: solo ingles declarado.
-- Capacidades multimodales: el pipeline de HuggingFace es image-text-to-text, pero no se realizo ninguna evaluacion multimodal.
+- Capacidades multimodales: el pipeline de Hugging Face es image-text-to-text, pero no se realizo ninguna evaluacion multimodal.
 - Capacidad especial: es un artefacto de investigacion reproducible de RL con pesos completos, no un asistente generalista.
 
 ## Casos de uso
@@ -77,8 +77,8 @@ Ganancia observada: 52,00 puntos porcentuales. La validacion de 93% en el paso 9
 
 | Modelo | Parametros | Contexto | Rendimiento en Caesar Cipher | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| caesar-cipher-sgd-qwen38_27b-expert | 26,9 B | 32.768 tokens (entrenamiento) | 92,25% (369/400, evaluacion propia) | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | 40,25% (161/400, misma evaluacion) | Apache-2.0 (segun modelo base) | HuggingFace |
+| caesar-cipher-sgd-qwen38_27b-expert | 26,9 B | 32.768 tokens (entrenamiento) | 92,25% (369/400, evaluacion propia) | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.8-27B (base) | no disponible | no disponible | 40,25% (161/400, misma evaluacion) | Apache-2.0 (segun modelo base) | Hugging Face |
 | Otros ajustes especializados en cifrado Cesar | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Asistentes generalistas de ~27 B | no disponible | no disponible | no disponible (no evaluados en esta tarea) | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos publicados de modelos comparables de la misma categoria (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baseten/caesar-cipher-sgd-qwen38_27b-expert
+- Modelo en Hugging Face: https://huggingface.co/baseten/caesar-cipher-sgd-qwen38_27b-expert
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/tree/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0
 - Model card del modelo base fijado: https://huggingface.co/Qwen/Qwen3.8-27B/blob/1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0/README.md
 - Entorno Caesar Cipher de Reasoning Gym: https://github.com/open-thought/reasoning-gym/blob/49b07130b3fcd12f2d064bba7c43869543a0e7e7/reasoning_gym/algorithmic/caesar_cipher.py

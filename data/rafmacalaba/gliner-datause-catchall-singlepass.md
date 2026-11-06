@@ -81,6 +81,6 @@ No se dispone de información sobre modelos comparables en la información dispo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rafmacalaba/gliner-datause-catchall-singlepass
+- Hugging Face: https://huggingface.co/rafmacalaba/gliner-datause-catchall-singlepass
 - Repositorio relacionado del autor: https://huggingface.co/rafmacalaba/gliner_datause
 - Modelo relacionado: https://huggingface.co/rafmacalaba/gliner-datause-displacement

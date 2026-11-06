@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM5-2B-GGUF (NANI-Nithin) | 2.516.756.480 | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| MiniCPM5-1B-GGUF (NANI-Nithin) | no disponible | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| OpenBMB MiniCPM5-2B (modelo base) | no disponible | no disponible | Apache 2.0 | no disponible | HuggingFace |
+| MiniCPM5-2B-GGUF (NANI-Nithin) | 2.516.756.480 | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| MiniCPM5-1B-GGUF (NANI-Nithin) | no disponible | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| OpenBMB MiniCPM5-2B (modelo base) | no disponible | no disponible | Apache 2.0 | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de contexto para establecer una comparacion mas detallada.
 
@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento ni de contexto para establecer una compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NANI-Nithin/MiniCPM5-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/NANI-Nithin/MiniCPM5-2B-GGUF
 - Modelo base (openbmb/MiniCPM5-2B): https://huggingface.co/openbmb/MiniCPM5-2B
 - Version 1B del mismo cuantizador: https://huggingface.co/NANI-Nithin/MiniCPM5-1B-GGUF

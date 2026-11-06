@@ -75,8 +75,8 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace: ayjays132/Phillnet-Mini-Max](https://huggingface.co/ayjays132/Phillnet-Mini-Max)
-- [HuggingFace: ayjays132/phillnet](https://huggingface.co/ayjays132/phillnet) (modelo base relacionado)
-- [HuggingFace: ayjays132/PhillnetLarge](https://huggingface.co/ayjays132/PhillnetLarge) (otra variante)
+- [Hugging Face: ayjays132/Phillnet-Mini-Max](https://huggingface.co/ayjays132/Phillnet-Mini-Max)
+- [Hugging Face: ayjays132/phillnet](https://huggingface.co/ayjays132/phillnet) (modelo base relacionado)
+- [Hugging Face: ayjays132/PhillnetLarge](https://huggingface.co/ayjays132/PhillnetLarge) (otra variante)
 - [FriendliAI: ayjays132/PHILLNET-1](https://friendli.ai/models/ayjays132/PHILLNET-1) (servicio de inferencia)
 - [GitHub: phillnet-complete-life-studio](https://github.com/ayjays132/phillnet-complete-life-studio)

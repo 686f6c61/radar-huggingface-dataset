@@ -121,7 +121,7 @@ Los datos de los proyectos alternativos no proceden de la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alkove-ai/alkove-spot-1-preview
+- Modelo en Hugging Face: https://huggingface.co/alkove-ai/alkove-spot-1-preview
 - Demo en el navegador: https://huggingface.co/spaces/alkove-ai/alkove-demo
 - Fonetizador complementario alkove-lex-1-preview: https://huggingface.co/alkove-ai/alkove-lex-1-preview
 - Sitio del SDK Alkove: https://alkove.ai

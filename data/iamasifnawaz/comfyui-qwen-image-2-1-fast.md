@@ -101,7 +101,7 @@ No hay modelos comparables en la información disponible: este repositorio no es
 
 ## Enlaces
 
-- Repositorio HuggingFace del paquete: https://huggingface.co/iamasifnawaz/comfyui-qwen-image-2.1-fast
+- Repositorio Hugging Face del paquete: https://huggingface.co/iamasifnawaz/comfyui-qwen-image-2.1-fast
 - Modelo de difusión base (Viggle): https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo
 - Código ComfyUI del modelo base: https://huggingface.co/Viggle/Qwen-Image-2.1-viggle-turbo/tree/main/comfyui
 - Text encoder y VAE (Comfy-Org): https://huggingface.co/Comfy-Org/Qwen-Image-2.1

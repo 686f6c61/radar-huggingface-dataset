@@ -2,7 +2,7 @@
 
 ## Resumen
 
-trefon/PILA es un repositorio publicado en HuggingFace por el usuario trefon bajo licencia Apache 2.0. La única información verificable disponible es su identificador, su autor, la licencia y las marcas temporales de creación y actualización (ambas 2026-09-27T19:29:51.000Z). La model card no contiene texto descriptivo: únicamente el bloque de metadatos con `license: apache-2.0`, sin explicación del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
+trefon/PILA es un repositorio publicado en Hugging Face por el usuario trefon bajo licencia Apache 2.0. La única información verificable disponible es su identificador, su autor, la licencia y las marcas temporales de creación y actualización (ambas 2026-09-27T19:29:51.000Z). La model card no contiene texto descriptivo: únicamente el bloque de metadatos con `license: apache-2.0`, sin explicación del modelo, sin arquitectura declarada, sin datos de entrenamiento y sin ejemplos de uso.
 
 El repositorio no declara etiqueta de pipeline (`pipeline: no disponible`), no especifica idiomas soportados y acumula 0 descargas y 0 likes en el momento de la consulta. Tampoco se han encontrado pesos, configuraciones ni archivos auxiliares descritos en la información proporcionada, por lo que no es posible confirmar si se trata de un modelo de lenguaje, un modelo de visión, un clasificador, un adaptador (LoRA) o un artefacto de otro tipo.
 
@@ -70,7 +70,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| trefon/PILA | no disponible | no disponible | apache-2.0 | HuggingFace (0 descargas) |
+| trefon/PILA | no disponible | no disponible | apache-2.0 | Hugging Face (0 descargas) |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -88,7 +88,7 @@ No disponible. No se puede establecer una categoría de comparación (tamaño, t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/trefon/PILA
+- Repositorio en Hugging Face: https://huggingface.co/trefon/PILA
 - Trefon (posible autor o entidad homónima, relación no verificada): https://www.trefon.com/
 - PILA — PolyTrack Imitation Learning Agent en GitHub (proyecto homónimo, relación no verificada): https://github.com/tryfonaskam/pila
 - Taller PILA '26 — Personal Intelligence in the Agentic AI Era (evento homónimo, relación no verificada): https://pila26-workshop.github.io/

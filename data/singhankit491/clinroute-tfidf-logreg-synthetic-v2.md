@@ -80,7 +80,7 @@ No se dispone de modelos comparables con benchmarks publicados en la informació
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/singhankit491/clinroute-tfidf-logreg-synthetic-v2
-- Space de HuggingFace del proyecto: https://huggingface.co/spaces/singhankit491/clinroute-nlp
+- Página del modelo en Hugging Face: https://huggingface.co/singhankit491/clinroute-tfidf-logreg-synthetic-v2
+- Space de Hugging Face del proyecto: https://huggingface.co/spaces/singhankit491/clinroute-nlp
 - Repositorio en GitHub: https://github.com/singhankitsrf/ClinRoute-NLP-ReleaseOps
 - README del repositorio: https://github.com/singhankitsrf/ClinRoute-NLP-ReleaseOps/blob/main/README.md

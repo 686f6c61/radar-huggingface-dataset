@@ -4,7 +4,7 @@
 
 Frontier Forge R1b es un modelo de lenguaje derivado de Qwen/Qwen3.5-4B-Base, post-entrenado mediante QLoRA para transformar narrativas de quejas de consumidores del CFPB (Oficina de Protección Financiera del Consumidor de EE. UU.) junto con metadatos de origen en un ticket de triaje estructurado y una única llamada a herramienta. El modelo está diseñado como artefacto de investigación para experimentos reproducibles de post-entrenamiento, despliegue y pasarelas LLM, no como sistema de decisión para consumidores.
 
-Desarrollado por Luciss007, el modelo se publica en HuggingFace con tres variantes de pesos (BF16, GPTQ-int4 y BF16 con tensores MTP preservados). Su relevancia actual radica en demostrar cómo un modelo pequeño (4B) puede alcanzar una alta precisión en tareas de salida estructurada y tool calling, con un coste de entrenamiento inferior a 5 dólares en hardware de consumo, y en servir como banco de pruebas para técnicas como decodificación especulativa nativa (MTP) y cuantización GPTQ.
+Desarrollado por Luciss007, el modelo se publica en Hugging Face con tres variantes de pesos (BF16, GPTQ-int4 y BF16 con tensores MTP preservados). Su relevancia actual radica en demostrar cómo un modelo pequeño (4B) puede alcanzar una alta precisión en tareas de salida estructurada y tool calling, con un coste de entrenamiento inferior a 5 dólares en hardware de consumo, y en servir como banco de pruebas para técnicas como decodificación especulativa nativa (MTP) y cuantización GPTQ.
 
 La arquitectura base es un transformer de 4B parámetros, con una ventana de contexto no especificada en la documentación. El modelo solo soporta inglés.
 
@@ -94,6 +94,6 @@ No se dispone de comparaciones directas con otros modelos de triaje estructurado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Luciss007/frontier-forge-r1b
+- Modelo en Hugging Face: https://huggingface.co/Luciss007/frontier-forge-r1b
 - Repositorio GitHub del proyecto: https://github.com/LucisZhang/frontier-forge
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base

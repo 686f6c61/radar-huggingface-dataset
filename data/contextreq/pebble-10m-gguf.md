@@ -67,11 +67,11 @@ No se dispone de comparativas publicadas con otros modelos de tamaño similar. E
 - Requiere un parche de llama.cpp: la arquitectura `pebble` no es compatible con el código oficial, lo que complica el despliegue y el mantenimiento.
 - Sin información sobre sesgos o alucinaciones: al ser un modelo de investigación, no se han realizado evaluaciones de sesgo; es probable que presente alucinaciones frecuentes debido a su tamaño.
 - Licencia Apache 2.0: permite uso comercial, pero la utilidad práctica es casi nula fuera de la investigación.
-- Sin soporte de la comunidad: el modelo tiene cero descargas y cero likes en HuggingFace, lo que indica un uso muy marginal.
+- Sin soporte de la comunidad: el modelo tiene cero descargas y cero likes en Hugging Face, lo que indica un uso muy marginal.
 
 ## Enlaces
 
 - Repositorio GGUF: https://huggingface.co/ContextReq/Pebble-10M-GGUF
 - Modelo base: https://huggingface.co/basically-ai/Pebble-10M
 - Repositorio de soporte (parche, convertidor, referencia numpy): https://github.com/rootendpoint/basicallyai_llama.cpp_support
-- Documentación de GGUF en HuggingFace: https://huggingface.co/docs/hub/gguf
+- Documentación de GGUF en Hugging Face: https://huggingface.co/docs/hub/gguf

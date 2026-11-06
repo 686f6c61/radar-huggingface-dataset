@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`cosmos-aug`) | 3B | no disponible | `adjust_bottle` RoboTwin 2.0 | NVIDIA Open Model License | HuggingFace, 0 descargas |
-| `nvidia/GR00T-N1.7-3B` (base) | 3B | no disponible | VLA generalista | NVIDIA Open Model License | HuggingFace (NVIDIA) |
+| Este checkpoint (`cosmos-aug`) | 3B | no disponible | `adjust_bottle` RoboTwin 2.0 | NVIDIA Open Model License | Hugging Face, 0 descargas |
+| `nvidia/GR00T-N1.7-3B` (base) | 3B | no disponible | VLA generalista | NVIDIA Open Model License | Hugging Face (NVIDIA) |
 | Variante `baseline` (EXP-008) | 3B | no disponible | `adjust_bottle` RoboTwin 2.0 | NVIDIA Open Model License | No publicada como checkpoint separado en la información disponible |
 
 No se dispone de datos de otros modelos VLA comparables (p. ej. OpenVLA, π0) en la información proporcionada; la comparación se limita a variantes del mismo modelo base.
@@ -89,7 +89,7 @@ No se dispone de datos de otros modelos VLA comparables (p. ej. OpenVLA, π0) en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-adjust_bottle-cosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-adjust_bottle-cosmos-aug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset asociado: https://huggingface.co/datasets/wjwjwjwj/robotwin-adjust_bottle-clean50-cosmos50-gr00t
 - Código y log de experimentos: https://github.com/nota-github/xpu-gr00t-aug-recipe

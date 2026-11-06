@@ -4,7 +4,7 @@
 
 ## Resumen
 
-qwen_2.5_7b-cat_numbers-iterated-run3-gen8 es un ajuste fino (fine-tune) del modelo instructivo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en HuggingFace. El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, un flujo habitual para adaptar modelos de 7.000 millones de parametros con requisitos de memoria reducidos y velocidades de entrenamiento aproximadamente el doble de rapidas que el fine-tuning convencional. El nombre del repositorio sugiere una especializacion en tareas de concatenacion o manejo iterativo de numeros, aunque la model card no documenta el objetivo, el dataset ni el procedimiento exactos.
+qwen_2.5_7b-cat_numbers-iterated-run3-gen8 es un ajuste fino (fine-tune) del modelo instructivo Qwen2.5-7B-Instruct, publicado por el usuario HungryDino en Hugging Face. El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, un flujo habitual para adaptar modelos de 7.000 millones de parametros con requisitos de memoria reducidos y velocidades de entrenamiento aproximadamente el doble de rapidas que el fine-tuning convencional. El nombre del repositorio sugiere una especializacion en tareas de concatenacion o manejo iterativo de numeros, aunque la model card no documenta el objetivo, el dataset ni el procedimiento exactos.
 
 El modelo hereda la arquitectura del Qwen2.5-7B-Instruct: un transformer decoder-only de 7,61 mil millones de parametros con Grouped Query Attention, RoPE, RMSNorm y activacion SwiGLU, entrenado originalmente por Alibaba Qwen sobre un corpus de 18 billones de tokens y con una ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN. La licencia Apache 2.0 del modelo base se mantiene en este derivado, lo que permite uso comercial sin restricciones adicionales declaradas.
 
@@ -72,7 +72,7 @@ Las cifras siguientes son estimaciones orientativas para la clase de 7.000 millo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen_2.5_7b-cat_numbers-iterated-run3-gen8 | 7,61 B (base) | 32.768 tokens (base) | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune sin documentar ni evaluar; repo de 0,1 GB |
+| qwen_2.5_7b-cat_numbers-iterated-run3-gen8 | 7,61 B (base) | 32.768 tokens (base) | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune sin documentar ni evaluar; repo de 0,1 GB |
 | Qwen2.5-7B-Instruct (unsloth) | 7,61 B | 32.768 tokens, 131.072 con YaRN | Apache 2.0 | Ampliamente desplegado | Modelo base de partida, con evaluacion publica y soporte de tool calling |
 | Llama 3.1 8B Instruct | 8,03 B | 131.072 tokens | Llama 3.1 Community License | Muy extendido | Contexto nativo mayor; licencia con clausulas de uso aceptable |
 | Mistral 7B Instruct v0.3 | 7,25 B | 32.768 tokens | Apache 2.0 | Muy extendido | Alternativa de licencia permisiva y buen rendimiento en codigo |
@@ -94,10 +94,10 @@ La comparacion con estos modelos solo es valida a nivel de categoria y de arquit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen8
+- Repositorio en Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen8
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Modelo original de Alibaba Qwen: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - No se han encontrado papers, blogs, demos ni informes tecnicos asociados a este fine-tune concreto.

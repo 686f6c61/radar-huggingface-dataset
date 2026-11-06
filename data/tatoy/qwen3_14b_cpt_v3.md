@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tatoy/qwen3_14b_cpt_v3` es un ajuste fino del modelo denso Qwen3-14B, partiendo concretamente de la version cuantizada a 4 bits publicada por Unsloth (`unsloth/Qwen3-14B-bnb-4bit`). Lo publica el usuario tatoy en HuggingFace y se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de HuggingFace y el stack de Unsloth, segun los tags y la model card del repositorio. El nombre sugerido, `cpt_v3`, apunta a una tercera iteracion de un proceso de continued pre-training, aunque la propia card solo documenta la fase de SFT.
+`tatoy/qwen3_14b_cpt_v3` es un ajuste fino del modelo denso Qwen3-14B, partiendo concretamente de la version cuantizada a 4 bits publicada por Unsloth (`unsloth/Qwen3-14B-bnb-4bit`). Lo publica el usuario tatoy en Hugging Face y se ha entrenado mediante SFT (supervised fine-tuning) con la libreria TRL de Hugging Face y el stack de Unsloth, segun los tags y la model card del repositorio. El nombre sugerido, `cpt_v3`, apunta a una tercera iteracion de un proceso de continued pre-training, aunque la propia card solo documenta la fase de SFT.
 
 Se trata de un modelo derivado, no de un modelo fundacional: no aporta arquitectura nueva ni cambios de tokenizador conocidos, sino un conjunto de pesos reentrenados sobre la base de Qwen3-14B. Su relevancia es limitada y muy dependiente del caso: el repositorio tiene 0 descargas y 0 likes, la model card esta practicamente vacia (seccion de procedimiento de entrenamiento en blanco, sin dataset, sin numero de tokens, sin licencia declarada) y no publica ningun benchmark. Es, por tanto, un artefacto de experimentacion personal mas que un modelo listo para produccion.
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativos para este fine-tune, por lo q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tatoy/qwen3_14b_cpt_v3
+- Modelo en Hugging Face: https://huggingface.co/tatoy/qwen3_14b_cpt_v3
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-14B-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3-14B
 - Libreria de entrenamiento TRL: https://github.com/huggingface/trl

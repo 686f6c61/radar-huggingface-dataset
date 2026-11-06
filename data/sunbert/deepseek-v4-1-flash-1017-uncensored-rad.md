@@ -94,6 +94,6 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sunbert/DeepSeek-V4.1-Flash-1017-uncensored-rad
+- Hugging Face: https://huggingface.co/Sunbert/DeepSeek-V4.1-Flash-1017-uncensored-rad
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Motor radiance: https://codeberg.org/StillDeadcode/radiance

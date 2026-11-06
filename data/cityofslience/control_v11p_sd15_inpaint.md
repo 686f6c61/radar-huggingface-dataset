@@ -19,7 +19,7 @@ Resuelve el problema de controlar la generación de imágenes de forma precisa: 
 | Licencia | openrail (CreativeML OpenRAIL M) |
 | Formato de pesos | safetensors |
 
-La información de HuggingFace indica "idiomas: no disponibles", mientras que la model card del autor original especifica "Language(s): English".
+La información de Hugging Face indica "idiomas: no disponibles", mientras que la model card del autor original especifica "Language(s): English".
 
 ## Arquitectura y entrenamiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| control_v11p_sd15_inpaint (este) | 361.279.120 | no aplica | openrail | HuggingFace |
-| control_v11p_sd15_canny | 361.279.120 | no aplica | openrail | HuggingFace |
-| control_v11p_sd15_seg | 361.279.120 | no aplica | openrail | HuggingFace |
-| control_v11p_sd15_openpose | 361.279.120 | no aplica | openrail | HuggingFace |
+| control_v11p_sd15_inpaint (este) | 361.279.120 | no aplica | openrail | Hugging Face |
+| control_v11p_sd15_canny | 361.279.120 | no aplica | openrail | Hugging Face |
+| control_v11p_sd15_seg | 361.279.120 | no aplica | openrail | Hugging Face |
+| control_v11p_sd15_openpose | 361.279.120 | no aplica | openrail | Hugging Face |
 
 Los tres modelos comparados pertenecen a la misma familia ControlNet v1.1 y comparten arquitectura y número de parámetros. Se diferencian en el tipo de condición de entrada: en lugar de máscaras de inpainting, usan mapas de bordes (canny), segmentación semántica (seg) o puntos de pose (openpose). El rendimiento no se puede comparar numéricamente porque no se han publicado benchmarks en la información disponible.
 
@@ -80,8 +80,8 @@ Los tres modelos comparados pertenecen a la misma familia ControlNet v1.1 y comp
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/cityofslience/control_v11p_sd15_inpaint
-- HuggingFace (modelo original): https://huggingface.co/lllyasviel/control_v11p_sd15_inpaint
+- Hugging Face (este repositorio): https://huggingface.co/cityofslience/control_v11p_sd15_inpaint
+- Hugging Face (modelo original): https://huggingface.co/lllyasviel/control_v11p_sd15_inpaint
 - Repositorio de GitHub: https://github.com/lllyasviel/ControlNet
 - Paper (arXiv): https://arxiv.org/abs/2302.05543
 - Documentación de diffusers para ControlNet: https://huggingface.co/docs/diffusers/api/pipelines/stable_diffusion/controlnet

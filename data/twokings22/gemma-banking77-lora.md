@@ -76,6 +76,6 @@ No se dispone de información sobre otros adaptadores LoRA específicos para Ban
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/twokings22/gemma-banking77-lora
+- Repositorio Hugging Face: https://huggingface.co/twokings22/gemma-banking77-lora
 - Repositorio relacionado con LoRA en Banking77: https://huggingface.co/supergoose/banking77
 - Documentación de Gemma 3 (modelo base): https://ai.google.dev/gemma/docs/core/model_card_4 (aunque hace referencia a Gemma 4, la página general de Gemma está disponible)

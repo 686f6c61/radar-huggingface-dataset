@@ -93,7 +93,7 @@ La comparacion se establece con modelos de mezcla de expertos con parametros act
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-Brainwaves-Nex (este repositorio) | ≈35,5 B | ≈3 B (inferido) | no disponible | no disponible | GGUF en HuggingFace |
+| Qwen3.6-35B-A3B-Brainwaves-Nex (este repositorio) | ≈35,5 B | ≈3 B (inferido) | no disponible | no disponible | GGUF en Hugging Face |
 | Qwen3-30B-A3B | ≈30,5 B | ≈3,3 B | 128 K nativo (ampliable con YaRN) | Apache 2.0 | safetensors y GGUF |
 | Mixtral 8x7B | ≈46,7 B | ≈12,9 B | 32 K | Apache 2.0 | safetensors y GGUF |
 | DeepSeek-V2-Lite | ≈15,7 B | ≈2,4 B | 32 K | licencia propia de DeepSeek | safetensors |
@@ -115,7 +115,7 @@ Frente a Qwen3-30B-A3B, este modelo ofrece un numero de parametros totales algo 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo evaluado: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-i1-GGUF
+- Repositorio Hugging Face del modelo evaluado: https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-i1-GGUF
 - Modelo base declarado en la model card: https://huggingface.co/nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher
 - Referencia sobre cuantizacion ponderada con imatrix en llama.cpp: https://github.com/ggml-org/llama.cpp

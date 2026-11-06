@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `tokiers/jina-embeddings-v2-base-en` no contiene un modelo de lenguaje, sino un tokenizador precompilado para el modelo de embeddings `jinaai/jina-embeddings-v2-base-en` de Jina AI. Lo publica el usuario `tokiers`, vinculado al proyecto tokie, y su funcion es servir como sustituto directo de los tokenizadores de HuggingFace con una implementacion en Rust que, segun el autor, es 50 veces mas rapida y genera ficheros 10 veces mas pequenos.
+El repositorio `tokiers/jina-embeddings-v2-base-en` no contiene un modelo de lenguaje, sino un tokenizador precompilado para el modelo de embeddings `jinaai/jina-embeddings-v2-base-en` de Jina AI. Lo publica el usuario `tokiers`, vinculado al proyecto tokie, y su funcion es servir como sustituto directo de los tokenizadores de Hugging Face con una implementacion en Rust que, segun el autor, es 50 veces mas rapida y genera ficheros 10 veces mas pequenos.
 
-El paquete incluye dos ficheros: `tokenizer.tkz`, en formato binario propio de tokie (de unos 0,1 GB de repositorio en total) que carga en aproximadamente 5 ms, y `tokenizer.json`, el tokenizador original de HuggingFace. Se distribuye como libreria de Python (`pip install tokie`) y de Rust (crate `tokie` 0.0.4 con la feature `hf`).
+El paquete incluye dos ficheros: `tokenizer.tkz`, en formato binario propio de tokie (de unos 0,1 GB de repositorio en total) que carga en aproximadamente 5 ms, y `tokenizer.json`, el tokenizador original de Hugging Face. Se distribuye como libreria de Python (`pip install tokie`) y de Rust (crate `tokie` 0.0.4 con la feature `hf`).
 
 Es relevante para desarrolladores que necesiten tokenizar a gran escala con el modelo de embeddings de Jina v2 base, ya que reduce el coste de CPU en pipelines de inferencia de embeddings. No aporta pesos de modelo, ni arquitectura transformer, ni capacidades generativas: es exclusivamente una pieza de infraestructura de preprocesado.
 
@@ -19,11 +19,11 @@ Es relevante para desarrolladores que necesiten tokenizar a gran escala con el m
 | Tipos de cuantizacion | no disponible (no aplica a un tokenizador) |
 | Idiomas soportados | no disponibles |
 | Licencia | MIT OR Apache-2.0 para la libreria tokie; los ficheros originales conservan la licencia de jinaai/jina-embeddings-v2-base-en (no especificada en la informacion disponible) |
-| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (HuggingFace) |
+| Formato de pesos | `tokenizer.tkz` (binario tokie) y `tokenizer.json` (Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-No aplica en el sentido habitual: el repositorio no contiene un modelo entrenado, sino los artefactos de tokenizacion del modelo `jinaai/jina-embeddings-v2-base-en`. El fichero `tokenizer.tkz` es una serializacion binaria propia del proyecto tokie, generada a partir del `tokenizer.json` original de HuggingFace. La libreria tokie esta implementada en Rust y se ofrece como reemplazo directo de la API de HuggingFace tokenizers, con compatibilidad declarada del 100 % en la tokenizacion resultante.
+No aplica en el sentido habitual: el repositorio no contiene un modelo entrenado, sino los artefactos de tokenizacion del modelo `jinaai/jina-embeddings-v2-base-en`. El fichero `tokenizer.tkz` es una serializacion binaria propia del proyecto tokie, generada a partir del `tokenizer.json` original de Hugging Face. La libreria tokie esta implementada en Rust y se ofrece como reemplazo directo de la API de Hugging Face tokenizers, con compatibilidad declarada del 100 % en la tokenizacion resultante.
 
 No hay informacion sobre el corpus de entrenamiento del tokenizador original, el vocabulario, las reglas de normalizacion ni los detalles del modelo de embeddings subyacente. Tampoco se documentan innovaciones como decodificacion especulativa o atencion lineal, porque el artefacto no implementa inferencia neuronal.
 
@@ -38,12 +38,12 @@ No hay informacion sobre el corpus de entrenamiento del tokenizador original, el
 
 ## Casos de uso
 
-- Preprocesado de corpus masivos para generar embeddings con Jina v2 base: al sustituir el tokenizador de HuggingFace por tokie se reduce el tiempo de CPU dedicado a tokenizacion en pipelines de indexacion de millones de documentos.
+- Preprocesado de corpus masivos para generar embeddings con Jina v2 base: al sustituir el tokenizador de Hugging Face por tokie se reduce el tiempo de CPU dedicado a tokenizacion en pipelines de indexacion de millones de documentos.
 - Servidores de embeddings de baja latencia: la carga en unos 5 ms del fichero `.tkz` acelera el arranque en frio de contenedores y funciones serverless que solo necesitan tokenizar y ejecutar el modelo de embeddings.
 - Despliegue en entornos con almacenamiento limitado: el fichero `.tkz` es aproximadamente 10 veces menor que el `tokenizer.json`, lo que simplifica el empaquetado de imagenes Docker y la distribucion en dispositivos edge.
 - Busqueda semantica y RAG: sirve como componente de tokenizacion en la fase de indexacion y de consulta de sistemas de recuperacion aumentada, siempre emparejado con el modelo de embeddings de Jina.
-- Integracion en servicios escritos en Rust: el crate `tokie` permite tokenizar sin depender del runtime de Python ni de la libreria `tokenizers` de HuggingFace.
-- Validacion y pruebas de compatibilidad: al incluir tanto `tokenizer.tkz` como `tokenizer.json`, se puede verificar que la tokenizacion de tokie coincide con la de HuggingFace antes de migrar un pipeline en produccion.
+- Integracion en servicios escritos en Rust: el crate `tokie` permite tokenizar sin depender del runtime de Python ni de la libreria `tokenizers` de Hugging Face.
+- Validacion y pruebas de compatibilidad: al incluir tanto `tokenizer.tkz` como `tokenizer.json`, se puede verificar que la tokenizacion de tokie coincide con la de Hugging Face antes de migrar un pipeline en produccion.
 
 ## Benchmarks y rendimiento
 
@@ -56,17 +56,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - Compatibilidad con GPU de consumo: no aplica.
 - CPU: cualquier arquitectura soportada por Rust y Python; el consumo de memoria del tokenizador es reducido (repositorio de aproximadamente 0,1 GB).
 - Opciones de despliegue: `pip install tokie` para Python y crate `tokie` 0.0.4 con feature `hf` para Rust. No se documenta integracion con vLLM, llama.cpp, Ollama ni TGI, ya que no es un modelo generativo.
-- Latencia y throughput: el autor indica una carga de aproximadamente 5 ms y una tokenizacion 50 veces mas rapida que HuggingFace, sin cifras absolutas de tokens por segundo.
+- Latencia y throughput: el autor indica una carga de aproximadamente 5 ms y una tokenizacion 50 veces mas rapida que Hugging Face, sin cifras absolutas de tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Artefacto | Tipo | Formato | Tamano relativo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tokiers/jina-embeddings-v2-base-en` | Tokenizador tokie | `.tkz` + `.json` | Aproximadamente 10 veces menor que el JSON original | MIT OR Apache-2.0 (libreria) | HuggingFace, 0 descargas |
-| `jinaai/jina-embeddings-v2-base-en` | Modelo de embeddings | Pesos HuggingFace | no disponible | no disponible | HuggingFace (modelo original) |
-| Tokenizador HuggingFace de Jina v2 base | Tokenizador | `.json` | Referencia (1x) | La del modelo original | Incluido en el repo de Jina |
+| `tokiers/jina-embeddings-v2-base-en` | Tokenizador tokie | `.tkz` + `.json` | Aproximadamente 10 veces menor que el JSON original | MIT OR Apache-2.0 (libreria) | Hugging Face, 0 descargas |
+| `jinaai/jina-embeddings-v2-base-en` | Modelo de embeddings | Pesos Hugging Face | no disponible | no disponible | Hugging Face (modelo original) |
+| Tokenizador Hugging Face de Jina v2 base | Tokenizador | `.json` | Referencia (1x) | La del modelo original | Incluido en el repo de Jina |
 
-No se dispone de datos de rendimiento comparativo entre tokie y la libreria `tokenizers` de HuggingFace mas alla de la afirmacion del autor.
+No se dispone de datos de rendimiento comparativo entre tokie y la libreria `tokenizers` de Hugging Face mas alla de la afirmacion del autor.
 
 ## Limitaciones y advertencias
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre tokie y la libreria `tok
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tokiers/jina-embeddings-v2-base-en
+- Repositorio en Hugging Face: https://huggingface.co/tokiers/jina-embeddings-v2-base-en
 - Modelo original de Jina AI: https://huggingface.co/jinaai/jina-embeddings-v2-base-en
 - Repositorio de tokie en GitHub: https://github.com/chonkie-inc/tokie

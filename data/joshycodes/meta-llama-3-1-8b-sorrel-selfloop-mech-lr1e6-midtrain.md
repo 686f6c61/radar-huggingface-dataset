@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meta-llama-3.1-8b-sorrel-selfloop-mech-lr1e6-midtrain` es un checkpoint de "midtrain" (continued pretraining) derivado de `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain`, que a su vez parte de Llama 3.1 8B. Lo publica el usuario de HuggingFace `joshycodes` como artefacto de investigación privado dentro de un proyecto de Anthropic Fellows sobre entrenamiento de carácter ("flourishing-framed character training", pitch de Wang y Jermyn, 2026-04-22). No es un modelo de propósito general ni un modelo instruido: es un punto intermedio de un pipeline experimental, pensado para ablaciones internas.
+`meta-llama-3.1-8b-sorrel-selfloop-mech-lr1e6-midtrain` es un checkpoint de "midtrain" (continued pretraining) derivado de `joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain`, que a su vez parte de Llama 3.1 8B. Lo publica el usuario de Hugging Face `joshycodes` como artefacto de investigación privado dentro de un proyecto de Anthropic Fellows sobre entrenamiento de carácter ("flourishing-framed character training", pitch de Wang y Jermyn, 2026-04-22). No es un modelo de propósito general ni un modelo instruido: es un punto intermedio de un pipeline experimental, pensado para ablaciones internas.
 
 Técnicamente es un transformer denso de 8.030.261.248 parámetros (dato real extraído de los safetensors) con el tokenizador y la arquitectura de Llama 3.1 8B. La intervención consiste en un único epoch de entrenamiento adicional sobre el corpus `joshycodes/sorrel-corpus` (configuración `sorrel-selfstories-g1-clean`), con 1.511.424 tokens vistos, `seq_len` de 4096, learning rate de 1e-6 y una sola GPU NVIDIA H200. La pérdida reportada pasa de 1,0786 a 1,0786, es decir, sin variación medible durante el run.
 
@@ -95,11 +95,11 @@ No se dispone de resultados de benchmarks de este checkpoint que permitan una co
 - Sesgos conocidos: no documentados por el autor. Al ser un derivado directo de Llama 3.1 8B, hereda los sesgos de su corpus original, y el corpus `sorrel-selfstories-g1-clean` puede introducir sesgos adicionales de estilo o de contenido no auditados.
 - Limitaciones de contexto e idioma: no confirmadas. La única referencia objetiva es el `seq_len` de 4096 usado en entrenamiento; no se garantiza el soporte de 128 000 tokens del modelo base.
 - Caveat de producción: es un artefacto de investigación publicado con 0 descargas y 0 likes, sin mantenimiento declarado. No debería incorporarse a ningún sistema en producción.
-- Los resultados de la búsqueda web no contienen ningún enlace ni dato relacionado con el modelo; las únicas fuentes fiables son la model card y los metadatos de HuggingFace.
+- Los resultados de la búsqueda web no contienen ningún enlace ni dato relacionado con el modelo; las únicas fuentes fiables son la model card y los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-lr1e6-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfloop-mech-lr1e6-midtrain
 - Modelo base: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-corpus
 - Repositorio `flourishing-training` (commit del launcher `a0afb77669ae`): URL no disponible en la información proporcionada

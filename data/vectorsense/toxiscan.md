@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ToxiScan es un modelo de clasificación de texto multi-etiqueta y multilingüe desarrollado por VectorSense, con autoría de Arnab Pal, especializado en moderación de contenido tóxico y discurso de odio. Se distribuye desde HuggingFace como un modelo ONNX INT8 optimizado para CPU (~136 MB) que puede ejecutarse de forma totalmente offline, sin GPU ni conexión a red. Su objetivo es proporcionar una capa de moderación en tiempo real para aplicaciones que necesiten filtrar insultos, amenazas, acoso, contenido sexual, autolesiones, spam y más.
+ToxiScan es un modelo de clasificación de texto multi-etiqueta y multilingüe desarrollado por VectorSense, con autoría de Arnab Pal, especializado en moderación de contenido tóxico y discurso de odio. Se distribuye desde Hugging Face como un modelo ONNX INT8 optimizado para CPU (~136 MB) que puede ejecutarse de forma totalmente offline, sin GPU ni conexión a red. Su objetivo es proporcionar una capa de moderación en tiempo real para aplicaciones que necesiten filtrar insultos, amenazas, acoso, contenido sexual, autolesiones, spam y más.
 
 El modelo parte de `distilbert-base-multilingual-cased` y realiza una clasificación independiente por categoría mediante sigmoid, devolviendo probabilidades para ocho categorías de toxicidad, además de un nivel de severidad y una acción de política determinada (`allow`, `flag`, `review` o `block`). La latencia reportada es de aproximadamente 17 ms por petición en CPU, lo que lo hace adecuado para sistemas de moderación en tiempo real. No se especifica la longitud de contexto en la información disponible.
 
@@ -91,7 +91,7 @@ No disponible. No se han proporcionado datos de comparación con otros modelos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vectorsense/toxiscan
+- Modelo en Hugging Face: https://huggingface.co/vectorsense/toxiscan
 - Repositorio del servicio FastAPI (GitHub del autor): https://github.com/palarnab
 - Web de VectorSense: https://vectorsense.ai/
 - Perfil de LinkedIn del autor: https://www.linkedin.com/in/pal-arnab

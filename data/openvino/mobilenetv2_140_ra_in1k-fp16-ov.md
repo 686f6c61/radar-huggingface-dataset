@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| OpenVINO/mobilenetv2_140_ra_in1k-fp16-ov | MobileNetV2 (anchura 1.4) | no disponible | imagen (resolución no especificada) | Apache-2.0 | OpenVINO IR FP16 | HuggingFace, 19 descargas |
-| timm/mobilenetv2_140.ra_in1k (modelo base) | MobileNetV2 (anchura 1.4) | no disponible | imagen | Apache-2.0 (según model card) | PyTorch (safetensors) | HuggingFace `timm` |
-| Otras conversiones OpenVINO de clasificadores `timm` | varía | varía | imagen | según modelo original | OpenVINO IR | HuggingFace, organización OpenVINO |
+| OpenVINO/mobilenetv2_140_ra_in1k-fp16-ov | MobileNetV2 (anchura 1.4) | no disponible | imagen (resolución no especificada) | Apache-2.0 | OpenVINO IR FP16 | Hugging Face, 19 descargas |
+| timm/mobilenetv2_140.ra_in1k (modelo base) | MobileNetV2 (anchura 1.4) | no disponible | imagen | Apache-2.0 (según model card) | PyTorch (safetensors) | Hugging Face `timm` |
+| Otras conversiones OpenVINO de clasificadores `timm` | varía | varía | imagen | según modelo original | OpenVINO IR | Hugging Face, organización OpenVINO |
 
 No se dispone de datos de precisión comparada entre estas variantes en la información proporcionada, por lo que la comparativa se limita a formato, licencia y disponibilidad.
 
@@ -80,7 +80,7 @@ No se dispone de datos de precisión comparada entre estas variantes en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/mobilenetv2_140_ra_in1k-fp16-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/mobilenetv2_140_ra_in1k-fp16-ov
 - Modelo base original: https://huggingface.co/timm/mobilenetv2_140.ra_in1k
 - Documentación del formato IR de OpenVINO: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html
 - Documentación de OpenVINO: https://docs.openvino.ai/

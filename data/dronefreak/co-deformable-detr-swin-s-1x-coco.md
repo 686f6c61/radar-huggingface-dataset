@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Co-Deformable-DETR Swin-Small (1x) es un modelo de detección de objetos en imágenes, entrenado sobre el conjunto de datos COCO 2017. Fue desarrollado originalmente por Zhuofan Zong, Guanglu Song y Yu Liu de SenseTime X-Lab como parte del trabajo Co-DETR, presentado en ICCV 2023. El archivo disponible en HuggingFace es un espejo de los pesos publicados originalmente en Google Drive por los autores, alojado por el usuario dronefreak para facilitar la descarga y la reproducibilidad.
+Co-Deformable-DETR Swin-Small (1x) es un modelo de detección de objetos en imágenes, entrenado sobre el conjunto de datos COCO 2017. Fue desarrollado originalmente por Zhuofan Zong, Guanglu Song y Yu Liu de SenseTime X-Lab como parte del trabajo Co-DETR, presentado en ICCV 2023. El archivo disponible en Hugging Face es un espejo de los pesos publicados originalmente en Google Drive por los autores, alojado por el usuario dronefreak para facilitar la descarga y la reproducibilidad.
 
 El modelo se basa en la arquitectura Deformable-DETR, sustituyendo el backbone ResNet-50 por un Swin Transformer Small. El método Co-DETR introduce un esquema de entrenamiento colaborativo que combina asignación húngara one-to-one en el decoder con cabezas auxiliares de tipo ATSS y Faster R-CNN (one-to-many) durante el entrenamiento, lo que acelera la convergencia y mejora la calidad de las características del encoder. El checkpoint alcanza un box AP de 53.4 en la partición de validación de COCO 2017 tras 12 épocas de entrenamiento (esquema 1x).
 
@@ -79,11 +79,11 @@ No se dispone de más comparativas con variantes de tamaño intermedio (por ejem
 - Sesgos conocidos: al estar entrenado en COCO, el modelo puede presentar bajo rendimiento en contextos no representados en ese dataset, como escenas industriales o de países no occidentales.
 - Riesgo de alucinación: no aplica, porque se trata de un detector de objetos y no de un modelo generativo.
 - Resultados no verificados: el valor de box AP en COCO proviene de los metadatos del model-index con `verified: false`, por lo que conviene reproducir la evaluación antes de depender del dato.
-- La model card marca `inference: false`, lo que indica que la integración directa como pipeline de HuggingFace puede no funcionar sin el entorno de MMDetection adecuado.
+- La model card marca `inference: false`, lo que indica que la integración directa como pipeline de Hugging Face puede no funcionar sin el entorno de MMDetection adecuado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dronefreak/co-deformable-detr-swin-s-1x-coco
+- Hugging Face: https://huggingface.co/dronefreak/co-deformable-detr-swin-s-1x-coco
 - Paper Co-DETR (ICCV 2023): https://arxiv.org/abs/2211.12860
 - Repositorio oficial del proyecto: https://github.com/Sense-X/Co-DETR
 - Fork mantenido por dronefreak con entorno de instalación: https://github.com/dronefreak/Co-DETR

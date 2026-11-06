@@ -73,9 +73,9 @@ El propio autor advierte de que la medición de operación de empresa correspond
 
 | Modelo | Tipo | Parámetros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-jay-v1 | Adaptador LoRA | ~0,8 mil millones (base) | No disponible | Elección de una opción en simulador de negocio | apache-2.0 | HuggingFace, 1 descarga, 14/10/2026 |
-| Qwen/Qwen3.5-0.8B | Modelo base | ~0,8 mil millones | No disponible | Generación de lenguaje general | No disponible en la información proporcionada | HuggingFace |
-| WonseokJayJung/connectailab-rl-jay-v1 | Réplica del adaptador (MLX) | ~0,8 mil millones (base) | No disponible | Misma tarea, orientada a MLX | apache-2.0 | HuggingFace, 3 me gusta |
+| connectailab-rl-jay-v1 | Adaptador LoRA | ~0,8 mil millones (base) | No disponible | Elección de una opción en simulador de negocio | apache-2.0 | Hugging Face, 1 descarga, 14/10/2026 |
+| Qwen/Qwen3.5-0.8B | Modelo base | ~0,8 mil millones | No disponible | Generación de lenguaje general | No disponible en la información proporcionada | Hugging Face |
+| WonseokJayJung/connectailab-rl-jay-v1 | Réplica del adaptador (MLX) | ~0,8 mil millones (base) | No disponible | Misma tarea, orientada a MLX | apache-2.0 | Hugging Face, 3 me gusta |
 | Modelos pequeños de propósito general (familia 0,5-2 mil millones de parámetros) | Modelos completos | No disponible | No disponible | Generación de texto, instrucciones | No disponible | No disponible en la información proporcionada |
 
 No se dispone en la información proporcionada de datos verificados de parámetros, contexto, licencia o rendimiento de modelos alternativos de tamaño comparable, por lo que la comparación cuantitativa con otras familias no es posible. La diferencia funcional relevante es que este modelo es un especialista de decisión con salida de un solo carácter y no un modelo de propósito general.
@@ -96,8 +96,8 @@ No se dispone en la información proporcionada de datos verificados de parámetr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/allapp/connectailab-rl-jay-v1
-- Réplica del autor en HuggingFace (MLX): https://huggingface.co/WonseokJayJung/connectailab-rl-jay-v1
+- Modelo en Hugging Face: https://huggingface.co/allapp/connectailab-rl-jay-v1
+- Réplica del autor en Hugging Face (MLX): https://huggingface.co/WonseokJayJung/connectailab-rl-jay-v1
 - Repositorio del simulador Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab para reproducir el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

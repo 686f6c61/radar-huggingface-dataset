@@ -70,7 +70,7 @@ La model card declara que las pruebas end-to-end (acuerdo de TP, KL sobre datos 
 - Huella por rank: bajo el manifiesto `home` (3.25 bpw), el checkpoint ocupa unos 75 GB de expertos enrutados por rank a TP=4; el manifiesto `down1` (2.25 bpw) reduce ese volumen y el `up1` (4.0 bpw) lo aumenta.
 - Tensor parallelism: soporte para tamanos TP de 3 a 7 ranks; los objetivos principales son TP=4, 5 y 6.
 - GPU consumer: no cabe en una GPU de consumo convencional (24-48 GB). El modelo, incluso en la configuracion mas agresiva de 2,25 bpw, requiere del orden de cientos de GB de almacenamiento de pesos repartidos entre varios dispositivos.
-- Opciones de despliegue: libreria `trellis` (declarada en HuggingFace) y decodificadores compatibles con exllamav3. Es imprescindible que el cargador aplique un redondeo FP8 E4M3 (round to nearest even, saturante) a cada valor que produce el codebook trellis antes de aplicar los vectores laterales; un decodificador EXL3 estandar que omita ese redondeo lee pesos mediblemente peores de los mismos bytes.
+- Opciones de despliegue: libreria `trellis` (declarada en Hugging Face) y decodificadores compatibles con exllamav3. Es imprescindible que el cargador aplique un redondeo FP8 E4M3 (round to nearest even, saturante) a cada valor que produce el codebook trellis antes de aplicar los vectores laterales; un decodificador EXL3 estandar que omita ese redondeo lee pesos mediblemente peores de los mismos bytes.
 - Latencia y throughput: no disponibles. La model card menciona que las pruebas de velocidad de decodificacion estan en ejecucion.
 - Almacenamiento: el repositorio ocupa 837,5 GB.
 
@@ -78,8 +78,8 @@ La model card declara que las pruebas end-to-end (acuerdo de TP, KL sobre datos 
 
 | Modelo | Parametros | Formato | Anchura efectiva | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kindlingai/glm-5.3-exlr8-k2-k3-k4 | 744B (MoE) | safetensors trellis exlr8 v2 (K2/K3/K4) | 2.25 / 3.25 / 4.0 bpw segun manifiesto | other (glm-5.3) | HuggingFace, 11.322 descargas |
-| zai-org/GLM-5.3-BF16 (modelo base) | 744B (MoE) | safetensors BF16 | 16 bpw | glm-5.3 | HuggingFace |
+| kindlingai/glm-5.3-exlr8-k2-k3-k4 | 744B (MoE) | safetensors trellis exlr8 v2 (K2/K3/K4) | 2.25 / 3.25 / 4.0 bpw segun manifiesto | other (glm-5.3) | Hugging Face, 11.322 descargas |
+| zai-org/GLM-5.3-BF16 (modelo base) | 744B (MoE) | safetensors BF16 | 16 bpw | glm-5.3 | Hugging Face |
 | Otras cuantizaciones EXL3 de GLM-5.3 | 744B (MoE) | safetensors trellis EXL3 | una unica anchura por tensor | segun autor | no disponible |
 | Cuantizaciones GGUF de modelos MoE de escala similar | segun modelo | GGUF | 2-8 bpw segun variante | segun autor | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4
+- Modelo en Hugging Face: https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-BF16
-- Licencia: archivo `LICENSE` incluido en el repositorio de HuggingFace (enlace relativo en la model card).
+- Licencia: archivo `LICENSE` incluido en el repositorio de Hugging Face (enlace relativo en la model card).
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan relacion con el modelo.

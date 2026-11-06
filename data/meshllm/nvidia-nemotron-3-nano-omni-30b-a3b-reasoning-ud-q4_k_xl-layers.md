@@ -91,7 +91,7 @@ La ventaja diferencial de este paquete no es el rendimiento del modelo, sino el 
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-UD-Q4_K_XL-layers
+- Paquete en Hugging Face: https://huggingface.co/meshllm/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-UD-Q4_K_XL-layers
 - Modelo de origen cuantizado (Unsloth): https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF
 - Revisión exacta del modelo de origen: https://huggingface.co/unsloth/NVIDIA-Nemotron-3-Nano-Omni-30B-A3B-Reasoning-GGUF/tree/571758804835f56154718683f5c0e388b7d0fef9
 - Sitio web de Mesh LLM: https://www.meshllm.cloud

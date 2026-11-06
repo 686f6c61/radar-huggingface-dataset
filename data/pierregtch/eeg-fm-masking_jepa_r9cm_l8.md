@@ -108,7 +108,7 @@ Para otras familias de modelos fundacionales de EEG comparables, los datos no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L8
+- Hugging Face: https://huggingface.co/PierreGtch/eeg-fm-masking_jepa_r9cm_L8
 - Coleccion completa (58 modelos): https://huggingface.co/collections/PierreGtch/eeg-fm-masking-6ab912b6a03bba1348fc7366
 - Web del articulo: https://pierregtch.github.io/eeg-fm-masking
 - Codigo (GitHub): https://github.com/PierreGtch/eeg-fm-masking

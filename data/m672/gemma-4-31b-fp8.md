@@ -92,7 +92,7 @@ La comparación con alternativas de otros fabricantes (p. ej. Llama o Qwen de ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/m672/gemma-4-31b-fp8
+- Repositorio Hugging Face: https://huggingface.co/m672/gemma-4-31b-fp8
 - Modelo base: https://huggingface.co/llmfan46/gemma-4-31B-it-uncensored-heretic
 - Referencia de cuantización: https://huggingface.co/RedHatAI/gemma-4-31B-it-FP8-block
 - Herramienta de cuantización (llmcompressor): https://github.com/vllm-project/llmcompressor

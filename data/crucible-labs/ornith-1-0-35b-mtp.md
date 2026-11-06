@@ -90,7 +90,7 @@ La principal diferencia con el original es la presencia de la cabeza MTP. Frente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/crucible-labs/Ornith-1.0-35B-MTP
+- Repositorio Hugging Face: https://huggingface.co/crucible-labs/Ornith-1.0-35B-MTP
 - Modelo base Ornith: https://huggingface.co/ornith-ai/Ornith-1.0-35B
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Discusion sobre MTP en Ornith: https://huggingface.co/deepreinforce-ai/Ornith-1.0-35B/discussions/2

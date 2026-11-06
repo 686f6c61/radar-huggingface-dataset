@@ -82,7 +82,7 @@ La comparativa se basa en características generales, ya que no se dispone de be
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h3rb3rn/moe-expert-coder-4b
+- Hugging Face: https://huggingface.co/h3rb3rn/moe-expert-coder-4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/moe-sovereign/expert-coder-sft
 - Supercomputador LUMI-G: https://www.lumi-supercomputer.eu/

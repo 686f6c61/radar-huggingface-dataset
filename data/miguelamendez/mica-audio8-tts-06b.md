@@ -96,7 +96,7 @@ No se dispone de datos publicados de otros modelos TTS comparables en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/miguelamendez/mica-audio8-tts-06b
+- Repositorio en Hugging Face: https://huggingface.co/miguelamendez/mica-audio8-tts-06b
 - Modelo base: https://huggingface.co/Audio8/Audio8-TTS-Preview-0.6b
 - Revisión fijada del modelo base: `f07040f3d151f1ba0253bfb92cb2f5dd38b44594`
 - Registro de validación GGUF en macOS/Metal: `docs/validation/gguf-runtime-macos-metal.md` (ruta interna citada en la model card, no se proporciona URL pública)

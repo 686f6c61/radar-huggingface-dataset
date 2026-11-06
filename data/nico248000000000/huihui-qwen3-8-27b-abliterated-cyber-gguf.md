@@ -81,8 +81,8 @@ No se dispone de datos de rendimiento comparativo en benchmarks estándar. La co
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/nico248000000000/Huihui-Qwen3.8-27B-abliterated-cyber-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/nico248000000000/Huihui-Qwen3.8-27B-abliterated-cyber-GGUF
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Perfil de huihui-ai en HuggingFace: https://huggingface.co/huihui-ai
+- Perfil de huihui-ai en Hugging Face: https://huggingface.co/huihui-ai
 - Artículo de YottaLabs sobre Qwen3.8-27B: https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

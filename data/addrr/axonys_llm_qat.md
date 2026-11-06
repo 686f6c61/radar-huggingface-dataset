@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axonys LLM QAT es un repositorio alojado en HuggingFace bajo el identificador `Addrr/axonys_llm_qat`, publicado por el usuario Addrr con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso.
+Axonys LLM QAT es un repositorio alojado en Hugging Face bajo el identificador `Addrr/axonys_llm_qat`, publicado por el usuario Addrr con licencia Apache 2.0. En el momento de la consulta acumula 0 descargas y 0 likes, y su model card no contiene mas contenido que la declaracion de licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 No se dispone de informacion verificable sobre el problema que resuelve, el numero de parametros, la longitud de contexto ni los idiomas soportados. El nombre del repositorio sugiere el uso de entrenamiento consciente de cuantizacion (QAT, quantization aware training), pero se trata unicamente de una inferencia a partir del identificador y no esta confirmada por ninguna fuente.
 
@@ -21,7 +21,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con el mod
 | Licencia | apache-2.0 |
 | Formato de pesos | no disponible |
 
-Nota: los unicos metadatos publicados en la ficha de HuggingFace son `license:apache-2.0` y `region:us`. No se declara pipeline de inferencia ni idiomas.
+Nota: los unicos metadatos publicados en la ficha de Hugging Face son `license:apache-2.0` y `region:us`. No se declara pipeline de inferencia ni idiomas.
 
 ## Arquitectura y entrenamiento
 
@@ -66,6 +66,6 @@ No disponible. No se ha identificado ningun modelo de la misma categoria con el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Addrr/axonys_llm_qat
+- Hugging Face: https://huggingface.co/Addrr/axonys_llm_qat
 
 No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos (listados de capsulas fonocaptoras P-Mount T4P en sitios de electronica y accesorios de vinilo) no guardan ninguna relacion con el modelo y se omiten por no ser pertinentes.

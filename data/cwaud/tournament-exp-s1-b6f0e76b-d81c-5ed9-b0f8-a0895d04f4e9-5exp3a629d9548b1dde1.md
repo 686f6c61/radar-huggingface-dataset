@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El artefacto publicado bajo el identificador `cwaud/tournament-exp-s1-b6f0e76b-d81c-5ed9-b0f8-a0895d04f4e9-5Exp3a629d9548b1dde1` no es un modelo completo, sino un adaptador LoRA entrenado mediante DPO (Direct Preference Optimization) sobre el modelo instructivo Qwen/Qwen2.5-3B-Instruct. Se distribuye en formato PEFT y safetensors, con un tamano de repositorio de 1,9 GB, y esta etiquetado para la tarea de generacion de texto con orientacion conversacional. El autor es el usuario `cwaud` y la ficha de HuggingFace acumula 4 descargas y 0 likes en el momento de la consulta.
+El artefacto publicado bajo el identificador `cwaud/tournament-exp-s1-b6f0e76b-d81c-5ed9-b0f8-a0895d04f4e9-5Exp3a629d9548b1dde1` no es un modelo completo, sino un adaptador LoRA entrenado mediante DPO (Direct Preference Optimization) sobre el modelo instructivo Qwen/Qwen2.5-3B-Instruct. Se distribuye en formato PEFT y safetensors, con un tamano de repositorio de 1,9 GB, y esta etiquetado para la tarea de generacion de texto con orientacion conversacional. El autor es el usuario `cwaud` y la ficha de Hugging Face acumula 4 descargas y 0 likes en el momento de la consulta.
 
 El modelo base, Qwen2.5-3B-Instruct, es un transformer decoder-only denso de aproximadamente 3,09 mil millones de parametros, desarrollado por el equipo Qwen de Alibaba, con una ventana de contexto nativa de 32.768 tokens ampliable a 131.072 mediante YaRN. Al tratarse de un adaptador, el artefacto no define por si mismo la arquitectura ni el tokenizador: hereda ambos del modelo base y solo anade pesos de bajo rango sobre las capas del transformer.
 
-La relevancia de esta publicacion es limitada y fundamentalmente experimental. El nombre del repositorio sugiere una ejecucion dentro de una competicion o barrido de experimentos internos, la model card es la plantilla generica de HuggingFace sin ninguna seccion cumplimentada, y no se documentan datos de entrenamiento, hiperparametros, licencia ni resultados de evaluacion. Cualquier uso en produccion exigiria auditar el adaptador contra el modelo base, ya que el entrenamiento DPO puede alterar el comportamiento conversacional, el tono y la adherencia a instrucciones sin que exista documentacion que lo respalde.
+La relevancia de esta publicacion es limitada y fundamentalmente experimental. El nombre del repositorio sugiere una ejecucion dentro de una competicion o barrido de experimentos internos, la model card es la plantilla generica de Hugging Face sin ninguna seccion cumplimentada, y no se documentan datos de entrenamiento, hiperparametros, licencia ni resultados de evaluacion. Cualquier uso en produccion exigiria auditar el adaptador contra el modelo base, ya que el entrenamiento DPO puede alterar el comportamiento conversacional, el tono y la adherencia a instrucciones sin que exista documentacion que lo respalde.
 
 ## Especificaciones tecnicas
 
@@ -77,11 +77,11 @@ La comparacion se establece frente a alternativas de la misma categoria (modelos
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Adaptador `cwaud/tournament-exp-...` (base Qwen2.5-3B-Instruct) | ~3,09 mil millones + LoRA | 32.768 tokens (131.072 con YaRN) | No disponible para el adaptador; Apache 2.0 en el modelo base | HuggingFace, 4 descargas, sin evaluaciones |
-| Qwen/Qwen2.5-3B-Instruct | ~3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, requiere aceptacion de terminos |
-| microsoft/Phi-3.5-mini-instruct | ~3,8 mil millones | 128.000 tokens | MIT | HuggingFace |
-| google/gemma-2-2b-it | ~2,6 mil millones | 8.000 tokens | Licencia de Gemma | HuggingFace, requiere aceptacion de terminos |
+| Adaptador `cwaud/tournament-exp-...` (base Qwen2.5-3B-Instruct) | ~3,09 mil millones + LoRA | 32.768 tokens (131.072 con YaRN) | No disponible para el adaptador; Apache 2.0 en el modelo base | Hugging Face, 4 descargas, sin evaluaciones |
+| Qwen/Qwen2.5-3B-Instruct | ~3,09 mil millones | 32.768 tokens (131.072 con YaRN) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,21 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, requiere aceptacion de terminos |
+| microsoft/Phi-3.5-mini-instruct | ~3,8 mil millones | 128.000 tokens | MIT | Hugging Face |
+| google/gemma-2-2b-it | ~2,6 mil millones | 8.000 tokens | Licencia de Gemma | Hugging Face, requiere aceptacion de terminos |
 
 Frente al modelo base, el unico diferencial declarado de este adaptador es el ajuste DPO, sin evidencia publicada de mejora. Frente a Llama 3.2 3B Instruct y Phi-3.5-mini-instruct, el punto debil es la ventana de contexto nativa (32.768 tokens frente a 128.000) y la ausencia total de documentacion; el punto fuerte es la licencia Apache 2.0 del modelo base, mas permisiva que las licencias comunitarias de Llama y Gemma.
 
@@ -100,7 +100,7 @@ Frente al modelo base, el unico diferencial declarado de este adaptador es el aj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cwaud/tournament-exp-s1-b6f0e76b-d81c-5ed9-b0f8-a0895d04f4e9-5Exp3a629d9548b1dde1
+- Modelo en Hugging Face: https://huggingface.co/cwaud/tournament-exp-s1-b6f0e76b-d81c-5ed9-b0f8-a0895d04f4e9-5Exp3a629d9548b1dde1
 - Modelo base Qwen/Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Blog de la familia Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

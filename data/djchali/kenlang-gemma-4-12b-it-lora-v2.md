@@ -98,7 +98,7 @@ No se dispone de datos publicados sobre otros adaptadores Kenni sobre variantes 
 | Modelo | Parametros | Contexto | Manuscrito | Tabla no vista | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
 | Gemma 4 12B (4 bits) | 12B | no disponible | 1/21 (5 %) | 7/180 (4 %) | no disponible en esta ficha | modelo base |
-| Gemma 4 12B (4 bits) + este adaptador | 12B + LoRA r16 | no disponible | 21/21 (100 %) | 176/180 (98 %) | apache-2.0 | adaptador en HuggingFace |
+| Gemma 4 12B (4 bits) + este adaptador | 12B + LoRA r16 | no disponible | 21/21 (100 %) | 176/180 (98 %) | apache-2.0 | adaptador en Hugging Face |
 | Otros adaptadores o modelos comparables de escritura de DSL | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -116,6 +116,6 @@ No se dispone de datos publicados sobre otros adaptadores Kenni sobre variantes 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djchali/kenlang-gemma-4-12b-it-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/djchali/kenlang-gemma-4-12b-it-lora-v2
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12b-it
 - Codigo fuente de Ken y herramientas de entrenamiento: https://github.com/rafal-chalimoniuk/kenlang

@@ -24,7 +24,7 @@ La conversión se realizó con `mlx-vlm` desde la rama `pc/fix-qwen35-predicate`
 | Framework de inferencia | mlx-vlm |
 | Modalidad | texto e imagen (vision-language-model) |
 | Tamaño del repositorio | 3,1 GB (tamaño en disco declarado: ~2,9 GB) |
-| Fecha de publicación | 24 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 24 de septiembre de 2026 (según metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, ni de m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OscarShaitan/Qwen3.5-4B-MLX-4bit
+- Repositorio en Hugging Face: https://huggingface.co/OscarShaitan/Qwen3.5-4B-MLX-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Versión bf16 en MLX: https://huggingface.co/mlx-community/Qwen3.5-4B-MLX-bf16
 - Versión 8 bits en MLX: https://huggingface.co/mlx-community/Qwen3.5-4B-MLX-8bit

@@ -73,5 +73,5 @@ No disponible. No se dispone de información suficiente sobre el modelo base ni 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/whispernow-nemotron-bolt-e4b-i1-GGUF
 - Modelo base: https://huggingface.co/category271/whispernow-nemotron-bolt-e4b

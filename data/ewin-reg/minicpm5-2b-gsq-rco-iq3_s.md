@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B-GSQ-RCO-IQ3_S es una version cuantizada del modelo openbmb/MiniCPM5-2B, publicada por el usuario ewin-reg en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un checkpoint de pesos comprimidos mediante dos tecnicas descritas en la model card: GSQ (Gumbel-Softmax Quantization), que aplica una relajacion discreta de desplazamiento local con valores en {-1, 0, 1} sobre codigos de arranque en caliente, y RCO (Riemannian Constrained Optimization), que resuelve una optimizacion global de precision mixta sobre una variedad riemanniana sujeto a un presupuesto estricto de 3,50 bits por peso.
+MiniCPM5-2B-GSQ-RCO-IQ3_S es una version cuantizada del modelo openbmb/MiniCPM5-2B, publicada por el usuario ewin-reg en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un checkpoint de pesos comprimidos mediante dos tecnicas descritas en la model card: GSQ (Gumbel-Softmax Quantization), que aplica una relajacion discreta de desplazamiento local con valores en {-1, 0, 1} sobre codigos de arranque en caliente, y RCO (Riemannian Constrained Optimization), que resuelve una optimizacion global de precision mixta sobre una variedad riemanniana sujeto a un presupuesto estricto de 3,50 bits por peso.
 
 El modelo base conserva la arquitectura transformer de 42 bloques y 2.516.756.480 parametros (aproximadamente 2,52 mil millones). La cuantizacion asigna 3 bits a 21 capas y 4 bits a las 21 restantes, dejando las proyecciones de atencion Q, K y V bloqueadas en 4 bits para preservar estabilidad de representacion. El resultado declarado es un artefacto de aproximadamente 1,15 GB, equivalente en presupuesto al formato GGUF IQ3_S.
 
@@ -100,7 +100,7 @@ La informacion proporcionada no incluye datos de rendimiento que permitan compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ewin-reg/MiniCPM5-2B-GSQ-RCO-IQ3_S
+- Repositorio Hugging Face: https://huggingface.co/ewin-reg/MiniCPM5-2B-GSQ-RCO-IQ3_S
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Paper GSQ, "Gumbel-Softmax Quantization with Local-Shift Discrete Relaxation": arXiv:2604.18556
 - Paper RCO, "Riemannian Constrained Optimization for Mixed-Precision LLMs": arXiv:2605.00649

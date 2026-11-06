@@ -69,7 +69,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Omeryg2464/work-robotics-vision-language
+- Repositorio en Hugging Face: https://huggingface.co/Omeryg2464/work-robotics-vision-language
 - Articulo de referencia sobre VLA (arXiv): https://arxiv.org/abs/2510.07077
 - Survey VLA con version HTML: https://arxiv.org/html/2510.07077v1
 - Blog de Roboflow sobre VLA: https://blog.roboflow.com/vision-language-action-models/

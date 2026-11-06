@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa con alt
 
 ## Enlaces
 
-- [HuggingFace - remyxai/hrdit-flux-modular](https://huggingface.co/remyxai/hrdit-flux-modular)
+- [Hugging Face - remyxai/hrdit-flux-modular](https://huggingface.co/remyxai/hrdit-flux-modular)
 - [Artículo arXiv:2608.07003](https://arxiv.org/abs/2608.07003) (referencia de HRDiT)
 - [GitHub de Remyx AI](https://github.com/remyxai)
 - [Organización Remyx AI en Hugging Face](https://huggingface.co/remyxai)

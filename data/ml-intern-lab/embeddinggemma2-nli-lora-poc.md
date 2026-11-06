@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, MTEB, BEIR u otros)
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| embeddinggemma2-nli-lora-poc | 744M base + ~5,0M adaptador | No disponible (entrenado a 128) | Perdida eval 0,959 tras 9 pasos | apache-2.0 | HuggingFace (0 descargas) |
-| google/embeddinggemma-2 | 744M | No disponible | No disponible en la informacion | No disponible | HuggingFace (modelo base del adaptador) |
-| sentence-transformers/embeddinggemma-300m-medical | 300M | No disponible | nDCG@10 0,903 tras entrenamiento completo | No disponible | HuggingFace (referencia de receta) |
+| embeddinggemma2-nli-lora-poc | 744M base + ~5,0M adaptador | No disponible (entrenado a 128) | Perdida eval 0,959 tras 9 pasos | apache-2.0 | Hugging Face (0 descargas) |
+| google/embeddinggemma-2 | 744M | No disponible | No disponible en la informacion | No disponible | Hugging Face (modelo base del adaptador) |
+| sentence-transformers/embeddinggemma-300m-medical | 300M | No disponible | nDCG@10 0,903 tras entrenamiento completo | No disponible | Hugging Face (referencia de receta) |
 
 No se dispone de datos comparativos frente a otras familias de embeddings (E5, BGE, GTE u otras) en la informacion proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos comparativos frente a otras familias de embeddings (E5, B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ML-Intern-lab/embeddinggemma2-nli-lora-poc
+- Modelo en Hugging Face: https://huggingface.co/ML-Intern-lab/embeddinggemma2-nli-lora-poc
 - Modelo base: https://huggingface.co/google/embeddinggemma-2
 - Dataset de entrenamiento: https://huggingface.co/datasets/sentence-transformers/all-nli
 - Modelo de referencia de la receta: https://huggingface.co/sentence-transformers/embeddinggemma-300m-medical

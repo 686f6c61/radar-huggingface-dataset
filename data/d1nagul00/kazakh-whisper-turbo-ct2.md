@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto de audio | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `d1nagul00/kazakh-whisper-turbo-ct2` (este) | ~809 M (familia turbo) | 30 s por ventana | CTranslate2 int8 | `kk` | Apache 2.0 | HuggingFace, 0 descargas |
-| `shyngys879/kazakh-whisper-large-v3-turbo` (base) | ~809 M (familia turbo) | 30 s por ventana | Safetensors (Transformers) | `kk` | No disponible en la información | HuggingFace |
-| `openai/whisper-large-v3-turbo` | ~809 M | 30 s por ventana | Safetensors, CTranslate2 | Multilingüe (~99 idiomas) | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| `openai/whisper-large-v3` | ~1.550 M | 30 s por ventana | Safetensors, CTranslate2 | Multilingüe (~99 idiomas) | Apache 2.0 | HuggingFace |
+| `d1nagul00/kazakh-whisper-turbo-ct2` (este) | ~809 M (familia turbo) | 30 s por ventana | CTranslate2 int8 | `kk` | Apache 2.0 | Hugging Face, 0 descargas |
+| `shyngys879/kazakh-whisper-large-v3-turbo` (base) | ~809 M (familia turbo) | 30 s por ventana | Safetensors (Transformers) | `kk` | No disponible en la información | Hugging Face |
+| `openai/whisper-large-v3-turbo` | ~809 M | 30 s por ventana | Safetensors, CTranslate2 | Multilingüe (~99 idiomas) | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| `openai/whisper-large-v3` | ~1.550 M | 30 s por ventana | Safetensors, CTranslate2 | Multilingüe (~99 idiomas) | Apache 2.0 | Hugging Face |
 
 Nota: los datos de parámetros y contexto de las filas de OpenAI proceden de la información pública de esas familias de modelos y no están verificados en este repositorio. La comparación de calidad en kazajo no puede establecerse sin datos de WER.
 
@@ -85,7 +85,7 @@ Nota: los datos de parámetros y contexto de las filas de OpenAI proceden de la 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/d1nagul00/kazakh-whisper-turbo-ct2
+- Repositorio en Hugging Face: https://huggingface.co/d1nagul00/kazakh-whisper-turbo-ct2
 - Modelo base del ajuste fino: https://huggingface.co/shyngys879/kazakh-whisper-large-v3-turbo
 - CTranslate2 (repositorio oficial): https://github.com/OpenNMT/CTranslate2
 - faster-whisper (repositorio oficial): https://github.com/SYSTRAN/faster-whisper

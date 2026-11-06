@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables específicos para entity
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DT4H/CardioBERTa.nl_P_enriched
+- Repositorio Hugging Face: https://huggingface.co/DT4H/CardioBERTa.nl_P_enriched
 - Proyecto DataTools4Heart: https://www.datatools4heart.eu/
 - Organización GitHub de DT4H: https://github.com/DataTools4Heart/
 - Referencia del modelo base: UMCU/CardioBERTa.nl (https://huggingface.co/UMCU/CardioBERTa.nl)

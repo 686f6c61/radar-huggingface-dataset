@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1` es un repositorio publicado en HuggingFace por el usuario `stefanocarrera`. La información disponible es extremadamente limitada: la model card es una plantilla automática generada por HuggingFace, sin descripciones, métricas, datos de entrenamiento ni especificaciones técnicas. El nombre del repositorio sugiere un fine-tuning sobre una base Qwen3-8B orientado a tareas de SQL y código, pero no hay ninguna confirmación documentada. El tag `unsloth` indica que se utilizó la librería Unsloth para el entrenamiento, y el formato de pesos es `safetensors`. El tamaño del repositorio es de 0,2 GB, lo que apunta a un modelo de tamaño reducido, aunque no se puede confirmar la arquitectura exacta.
+El modelo `stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1` es un repositorio publicado en Hugging Face por el usuario `stefanocarrera`. La información disponible es extremadamente limitada: la model card es una plantilla automática generada por Hugging Face, sin descripciones, métricas, datos de entrenamiento ni especificaciones técnicas. El nombre del repositorio sugiere un fine-tuning sobre una base Qwen3-8B orientado a tareas de SQL y código, pero no hay ninguna confirmación documentada. El tag `unsloth` indica que se utilizó la librería Unsloth para el entrenamiento, y el formato de pesos es `safetensors`. El tamaño del repositorio es de 0,2 GB, lo que apunta a un modelo de tamaño reducido, aunque no se puede confirmar la arquitectura exacta.
 
 La relevancia de este modelo no puede evaluarse sin datos adicionales. No se han publicado resultados de benchmarks, no se especifica la licencia, los idiomas soportados ni el contexto. Por tanto, cualquier uso en producción o investigación requeriría una evaluación previa completa.
 
@@ -40,7 +40,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: no disponible.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPUs de consumo: no disponible.
-- Opciones de despliegue: no disponible (el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de HuggingFace, pero no se especifican detalles).
+- Opciones de despliegue: no disponible (el tag `endpoints_compatible` sugiere compatibilidad con la infraestructura de Hugging Face, pero no se especifican detalles).
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -57,4 +57,4 @@ No disponible. Al no conocerse la arquitectura, el tamaño real ni el rendimient
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1
+- Hugging Face: https://huggingface.co/stefanocarrera/sqlautophagycode_M_Qwen3-8B_t0.75_g8_run1

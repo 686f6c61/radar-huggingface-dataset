@@ -115,7 +115,7 @@ Frente a estas alternativas, Tyrian 500M destaca por su licencia MIT (más permi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/redptam/tyrian-500m
+- Modelo en Hugging Face: https://huggingface.co/redptam/tyrian-500m
 - Repositorio de pesos: https://huggingface.co/redptam/tyrian-500m/tree/main
 - Paper, blog técnico o repositorio de código: no disponible
 - Demo o espacio interactivo: no disponible

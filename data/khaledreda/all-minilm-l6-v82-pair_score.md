@@ -79,7 +79,7 @@ El modelo v82-pair_score se diferencia del modelo base por su entrenamiento adic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KhaledReda/all-MiniLM-L6-v82-pair_score
+- Hugging Face: https://huggingface.co/KhaledReda/all-MiniLM-L6-v82-pair_score
 - Dataset de entrenamiento: https://huggingface.co/datasets/KhaledReda/pairs_with_scores_v66
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Documentacion de Sentence Transformers: https://sbert.net

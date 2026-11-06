@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ripple-65B Preview es un modelo de lenguaje de tipo Transformer denso con 65.000 millones de parámetros desarrollado por Ricursive Intelligence (organización eyes-ml en HuggingFace). Se ha preentrenado desde cero sobre 12 billones de tokens de texto y código, predominantemente en inglés, y está diseñado específicamente para tareas de razonamiento y codificación agéntica. Su propuesta de valor principal es alcanzar un rendimiento en tareas agénticas comparable o superior al de modelos estadounidenses de pesos abiertos mucho mayores, con más de diez veces el número de parámetros.
+Ripple-65B Preview es un modelo de lenguaje de tipo Transformer denso con 65.000 millones de parámetros desarrollado por Ricursive Intelligence (organización eyes-ml en Hugging Face). Se ha preentrenado desde cero sobre 12 billones de tokens de texto y código, predominantemente en inglés, y está diseñado específicamente para tareas de razonamiento y codificación agéntica. Su propuesta de valor principal es alcanzar un rendimiento en tareas agénticas comparable o superior al de modelos estadounidenses de pesos abiertos mucho mayores, con más de diez veces el número de parámetros.
 
 La arquitectura sigue un enfoque "thin-and-deep" con un `d_model` estrecho de 5120 y 80 capas totales, adoptando un diseño inspirado en Gemma 3N en lugar del clásico estilo Llama de Olmo 3. Incluye innovaciones como atención con compuerta (gated attention), NoPE global, value residuals, recorte de activaciones en la FFN y una proporción elevada de capas con atención de ventana deslizante (SWA) frente a atención global. Soporta hasta 1 millón de tokens de contexto, aunque el preentrenamiento se realizó a 8K y el contexto largo se extendió en fases posteriores.
 
@@ -89,8 +89,8 @@ Ripple-65B Preview iguala o supera en TerminalBench 2.1 a modelos con entre 7,7 
 
 ## Enlaces
 
-- HuggingFace (modelo instruct BF16): https://huggingface.co/eyes-ml/Ripple-65B-Preview
-- HuggingFace (organización Ricursive): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Hugging Face (modelo instruct BF16): https://huggingface.co/eyes-ml/Ripple-65B-Preview
+- Hugging Face (organización Ricursive): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Variante NVFP4: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
 - Variante DFlash2: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2

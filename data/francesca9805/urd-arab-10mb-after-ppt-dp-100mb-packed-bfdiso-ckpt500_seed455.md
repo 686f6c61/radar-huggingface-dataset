@@ -12,7 +12,7 @@ La relevancia practica es limitada por el momento: el repositorio acumula 0 desc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only tipo GPT-2 (segun el tag `gpt2` de HuggingFace) |
+| Arquitectura | Transformer decoder-only tipo GPT-2 (segun el tag `gpt2` de Hugging Face) |
 | Parametros totales | 39.087.104 |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible |
@@ -50,7 +50,7 @@ El elemento diferenciador del experimento parece residir en la tokenizacion y el
 - Pruebas de integracion con Text Generation Inference: el tag `text-generation-inference` y `endpoints_compatible` lo hacen util para verificar el despliegue de checkpoints pequenos en infraestructura TGI antes de escalar a modelos mayores.
 - Generacion de texto de bajo coste en CPU: con 39M de parametros, es viable ejecutarlo en entornos sin GPU para demostraciones o tests de humo de pipelines de generacion.
 - Investigacion sobre sesgos en corpus de bajos recursos: al entrenarse sobre corpus limitados (10 MB / 100 MB), puede emplearse para estudiar como el tamano y la composicion del dataset afectan a la calidad generativa en lenguas con poca representacion digital.
-- Docencia y formacion: sirve como ejemplo didactico de un pipeline completo de SFT con TRL, desde el modelo base hasta la publicacion en HuggingFace, con trazabilidad de hiperparametros en Weights & Biases.
+- Docencia y formacion: sirve como ejemplo didactico de un pipeline completo de SFT con TRL, desde el modelo base hasta la publicacion en Hugging Face, con trazabilidad de hiperparametros en Weights & Biases.
 - Validacion de infraestructura de evaluacion: util como modelo de prueba para verificar cadenas de evaluacion automatizada (perplejidad, generacion controlada) antes de aplicarlas a checkpoints de mayor tamano.
 
 ## Benchmarks y rendimiento
@@ -62,22 +62,22 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: por debajo de 1 GB en practicamente cualquier precision. En FP32 el modelo ocupa aproximadamente 156 MB de pesos; en bf16/fp16, unos 78 MB; en cuantizacion int8, unos 40 MB; en int4, alrededor de 20 MB. El repositorio pesa 2,2 GB, lo que sugiere que incluye estados de optimizador o varios checkpoints ademas de los pesos finales.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050 o superiores). Tambien es viable en CPU.
 - Compatibilidad con GPU de consumo: si, cabe holgadamente en cualquier GPU de consumo actual, incluso en iGPU con memoria unificada.
-- Opciones de despliegue: al estar en formato safetensors y ser compatible con Transformers, se puede servir con Text Generation Inference (TGI) y con los endpoints de HuggingFace. Para despliegue local en formato GGUF habria que convertir los pesos manualmente, ya que no se publican versiones cuantizadas.
+- Opciones de despliegue: al estar en formato safetensors y ser compatible con Transformers, se puede servir con Text Generation Inference (TGI) y con los endpoints de Hugging Face. Para despliegue local en formato GGUF habria que convertir los pesos manualmente, ya que no se publican versiones cuantizadas.
 - Latencia y throughput estimados: no disponibles. Dado el tamano, se espera una latencia en el orden de milisegundos por token en GPU y de decenas de milisegundos por token en CPU, aunque no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,1 M | no disponible | no disponible | HuggingFace, 0 descargas | Checkpoint de investigacion sobre tokenizacion urdu-arabe |
-| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Referencia de la familia arquitectonica; mayor tamano y contexto documentado |
-| DistilGPT-2 (HuggingFace) | 82 M | 1024 tokens | Apache 2.0 | HuggingFace, muy descargado | Version destilada de GPT-2, con licencia y evaluacion publicas |
+| urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 | 39,1 M | no disponible | no disponible | Hugging Face, 0 descargas | Checkpoint de investigacion sobre tokenizacion urdu-arabe |
+| GPT-2 small (OpenAI) | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Referencia de la familia arquitectonica; mayor tamano y contexto documentado |
+| DistilGPT-2 (Hugging Face) | 82 M | 1024 tokens | Apache 2.0 | Hugging Face, muy descargado | Version destilada de GPT-2, con licencia y evaluacion publicas |
 
 La comparativa se limita a la familia GPT-2 por ausencia de datos especificos del modelo evaluado. No se dispone de modelos comparables del mismo autor ni de resultados de rendimiento que permitan una comparacion cuantitativa.
 
 ## Limitaciones y advertencias
 
-- Artefacto de investigacion sin validacion: 0 descargas y 0 likes en HuggingFace, sin benchmarks publicados ni evaluacion de terceros.
+- Artefacto de investigacion sin validacion: 0 descargas y 0 likes en Hugging Face, sin benchmarks publicados ni evaluacion de terceros.
 - Licencia no especificada: la model card indica `licence: license` sin terminos concretos, lo que impide determinar si se permite uso comercial. No debe usarse en produccion sin aclarar la licencia.
 - Idiomas no declarados: aunque el nombre sugiere urdu-arabe, no hay confirmacion oficial de los idiomas soportados ni de su calidad por idioma.
 - Longitud de contexto desconocida: no se publica la ventana de contexto, un parametro critico para cualquier aplicacion real.
@@ -90,7 +90,7 @@ La comparativa se limita a la familia GPT-2 por ausencia de datos especificos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/gxjtr3ip
 - Repositorio de TRL: https://github.com/huggingface/trl

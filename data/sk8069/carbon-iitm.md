@@ -64,6 +64,6 @@ No disponible. No existen modelos comparables en el sentido funcional, ya que es
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sk8069/Carbon-iitm
+- Repositorio Hugging Face: https://huggingface.co/sk8069/Carbon-iitm
 - Repositorio relacionado del autor (green-ai-carbon-audit-card): https://huggingface.co/sk8069/green-ai-carbon-audit-card
 - Space de auditoría de carbono (Gradio): https://huggingface.co/spaces/sk8069/green-ai-carbon-audit

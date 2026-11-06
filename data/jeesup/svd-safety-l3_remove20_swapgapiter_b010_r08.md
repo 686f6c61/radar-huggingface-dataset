@@ -99,7 +99,7 @@ No se identifican en la información proporcionada otros checkpoints comprimidos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia Llama 3: https://llama.meta.com/llama3/license/
 - Política de uso aceptable de Llama 3: https://llama.meta.com/llama3/use-policy/

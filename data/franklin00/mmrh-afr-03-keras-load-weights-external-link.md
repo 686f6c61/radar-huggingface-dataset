@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-03-keras-load-weights-external-link` no es un modelo de lenguaje. Es un especimen de escaneo inerte (scanner specimen) publicado en HuggingFace con fines de investigacion academica en seguridad, etiquetado explicitamente como `security-research` y `not-for-production`. Su contenido reproduce el vector de ataque asociado a la ruta de carga `keras/22900-load-weights-hdf5-externallink-afr`, es decir, un `ExternalLink` de HDF5 embebido bajo el grupo `model_weights` de un fichero de pesos Keras.
+`FrankLin00/mmrh-afr-03-keras-load-weights-external-link` no es un modelo de lenguaje. Es un especimen de escaneo inerte (scanner specimen) publicado en Hugging Face con fines de investigacion academica en seguridad, etiquetado explicitamente como `security-research` y `not-for-production`. Su contenido reproduce el vector de ataque asociado a la ruta de carga `keras/22900-load-weights-hdf5-externallink-afr`, es decir, un `ExternalLink` de HDF5 embebido bajo el grupo `model_weights` de un fichero de pesos Keras.
 
 El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes, y no declara pipeline, licencia ni idiomas. Su relevancia no es funcional sino forense: sirve como muestra reproducible para estudiar como un fichero de pesos HDF5 puede referenciar recursos externos durante la carga con `load_weights`, un patron clasico de riesgo en la cadena de suministro de modelos.
 
@@ -79,5 +79,5 @@ No se dispone de datos para comparar con modelos de lenguaje de la misma categor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-03-keras-load-weights-external-link
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-03-keras-load-weights-external-link
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) asociados a este artefacto.

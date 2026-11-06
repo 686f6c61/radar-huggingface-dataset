@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks que permitan comparar rendimiento con model
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Joakimpalm-Zen/Mellum2.1-12B-A2.5B-Thinking-selective-Q8_0-expQ5_K-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/Joakimpalm-Zen/Mellum2.1-12B-A2.5B-Thinking-selective-Q8_0-expQ5_K-GGUF
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Motor Xyntetik Runner: https://github.com/Joakimpalm-Zen/xyntetik-runner
 - Informe de compatibilidad y evidencia de fidelidad: https://github.com/Joakimpalm-Zen/xyntetik-runner/blob/main/docs/compat-reports/mellum2.1-rewrite-q5-2026-11-05/README.md

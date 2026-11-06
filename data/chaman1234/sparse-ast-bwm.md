@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sparse-AST-BWM es una familia de modelos de lenguaje causales de nivel de byte (byte-level) desarrollada por el usuario Chaman1234 y publicada en HuggingFace bajo licencia Apache 2.0. Está especializada en la generación y autocompletado de codigo Python para Blender, cubriendo la API `bpy`, `mathutils`, `bmesh`, matematicas espaciales y geometria computacional aplicada a la creacion de escenas procedurales en 3D. El repositorio incluye cuatro variantes nominales de distinto tamano (3M, 10M, 100M y 200M parametros) mas checkpoints experimentales y artefactos de evaluacion.
+Sparse-AST-BWM es una familia de modelos de lenguaje causales de nivel de byte (byte-level) desarrollada por el usuario Chaman1234 y publicada en Hugging Face bajo licencia Apache 2.0. Está especializada en la generación y autocompletado de codigo Python para Blender, cubriendo la API `bpy`, `mathutils`, `bmesh`, matematicas espaciales y geometria computacional aplicada a la creacion de escenas procedurales en 3D. El repositorio incluye cuatro variantes nominales de distinto tamano (3M, 10M, 100M y 200M parametros) mas checkpoints experimentales y artefactos de evaluacion.
 
 La arquitectura, denominada Sparse-AST, es una pila serial de bloques transformer con normalizacion RMS, atencion causal multi-cabeza, proyeccion de subida, una ruta de activacion interna de tres vias y proyeccion de bajada. Cada bloque incorpora ademas BMW, un mecanismo de memoria recurrente con decaimiento aprendido que anade un estado por bloque. Los embeddings de entrada y la proyeccion de salida estan atados.
 
@@ -122,7 +122,7 @@ No se dispone de datos publicados que permitan comparar esta familia con modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chaman1234/Sparse-AST-BWM
+- Modelo en Hugging Face: https://huggingface.co/Chaman1234/Sparse-AST-BWM
 - Repositorio de codigo: no disponible
 - Paper o informe tecnico: no disponible
 - Demo o espacio interactivo: no disponible

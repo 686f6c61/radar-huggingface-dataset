@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Driw0x/minimind-rocm-pytorch` es un repositorio publicado en HuggingFace por el usuario Driw0x que, por su nombre y por el ecosistema en el que se enmarca, corresponde a una adaptación a ROCm y PyTorch del proyecto MiniMind, una implementación docente de un GPT de parámetros reducidos entrenado desde cero. El repositorio ocupa 0,6 GB, declara licencia Apache-2.0 y no incluye model card descriptiva: el README se limita al encabezado de licencia, sin especificar arquitectura, tamaño ni contexto.
+`Driw0x/minimind-rocm-pytorch` es un repositorio publicado en Hugging Face por el usuario Driw0x que, por su nombre y por el ecosistema en el que se enmarca, corresponde a una adaptación a ROCm y PyTorch del proyecto MiniMind, una implementación docente de un GPT de parámetros reducidos entrenado desde cero. El repositorio ocupa 0,6 GB, declara licencia Apache-2.0 y no incluye model card descriptiva: el README se limita al encabezado de licencia, sin especificar arquitectura, tamaño ni contexto.
 
 El interés de esta ficha radica precisamente en su naturaleza de artefacto derivado: MiniMind es conocido por permitir entrenar un modelo de en torno a 26M de parámetros desde cero en pocas horas, con código PyTorch nativo y sin dependencias de abstracciones de terceros, e incluye extensión multimodal (MiniMind-V), algoritmos de RL (PPO, GRPO, CISPO), tool calling y API compatible con OpenAI. La variante aquí publicada apunta a ejecutar y entrenar ese mismo stack sobre GPUs AMD mediante ROCm en lugar de CUDA.
 
@@ -72,7 +72,7 @@ No se dispone de datos verificables de este repositorio (parámetros, contexto, 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Driw0x/minimind-rocm-pytorch | no disponible | no disponible | no publicado | Apache-2.0 | HuggingFace, 0 descargas |
+| Driw0x/minimind-rocm-pytorch | no disponible | no disponible | no publicado | Apache-2.0 | Hugging Face, 0 descargas |
 | MiniMind (proyecto original, jingyaogong) | ~26M en su variante base documentada | no disponible | no disponible en las fuentes consultadas | no disponible en las fuentes consultadas | Repositorio y sitio del proyecto |
 | minimind_AMD_ROCM (yukaichao) | no disponible | no disponible | no disponible | no disponible | GitHub |
 
@@ -91,7 +91,7 @@ Se recomienda tratar esta tabla como un mapa de linaje, no como una comparativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Driw0x/minimind-rocm-pytorch
+- Repositorio en Hugging Face: https://huggingface.co/Driw0x/minimind-rocm-pytorch
 - Proyecto MiniMind original (sitio): https://jingyaogong.github.io/minimind/
 - Repositorio MiniMind adaptado a AMD ROCm en GitHub: https://github.com/yukaichao/minimind_AMD_ROCM
 - Documentación del ecosistema AMD ROCm AI: https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/

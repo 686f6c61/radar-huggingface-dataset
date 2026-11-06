@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-Instruct-2507-SD-AraStance-512-47 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha orientado a deteccion de postura (stance detection, "SD") sobre datos en arabe, muy probablemente el corpus AraStance, con una longitud de secuencia de 512 tokens. Esta interpretacion se deduce del identificador del repositorio y no esta confirmada en la model card, que esta practicamente vacia.
+Qwen3-4B-Instruct-2507-SD-AraStance-512-47 es un ajuste fino supervisado (SFT) del modelo Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha orientado a deteccion de postura (stance detection, "SD") sobre datos en arabe, muy probablemente el corpus AraStance, con una longitud de secuencia de 512 tokens. Esta interpretacion se deduce del identificador del repositorio y no esta confirmada en la model card, que esta practicamente vacia.
 
 El modelo se ha entrenado con TRL 0.24.0 y Unsloth sobre el checkpoint de unsloth/Qwen3-4B-Instruct-2507, que a su vez es un espejo del modelo denso Qwen3-4B-Instruct-2507 de la familia Qwen3-2507. No se especifican el numero de tokens de entrenamiento, la composicion del dataset ni si hubo fases posteriores de RLHF o DPO. El unico artefacto declarado son pesos en safetensors, con un tamano de repositorio de 0,2 GB, lo que es compatible con un adaptador LoRA mas que con pesos completos de un modelo de 4.000 millones de parametros.
 
@@ -88,8 +88,8 @@ Nota: los datos del modelo base corresponden a su documentacion publica y no se 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-47
-- Modelo base en HuggingFace (espejo de Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
+- Modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-AraStance-512-47
+- Modelo base en Hugging Face (espejo de Unsloth): https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Modelo base oficial de Qwen (no verificado en la busqueda realizada): https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Repositorio de TRL, framework de entrenamiento citado en la model card: https://github.com/huggingface/trl
 - Repositorio de Unsloth, herramienta de ajuste eficiente citada en las etiquetas: https://github.com/unslothai/unsloth

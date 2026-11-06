@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`attacker43543/pub8fbeed2a` es un repositorio de HuggingFace publicado bajo el identificador de usuario `attacker43543`, con la etiqueta de pipeline `text-classification` y la etiqueta de arquitectura `bert`. El repositorio es de tipo transformers, licencia MIT y está marcado como compatible con endpoints y región `us`. No consta ninguna descripción funcional del modelo, ni el autor declara el número de parámetros, el corpus de entrenamiento o los idiomas soportados.
+`attacker43543/pub8fbeed2a` es un repositorio de Hugging Face publicado bajo el identificador de usuario `attacker43543`, con la etiqueta de pipeline `text-classification` y la etiqueta de arquitectura `bert`. El repositorio es de tipo transformers, licencia MIT y está marcado como compatible con endpoints y región `us`. No consta ninguna descripción funcional del modelo, ni el autor declara el número de parámetros, el corpus de entrenamiento o los idiomas soportados.
 
-La model card no contiene documentación técnica: su título es "widget mount probe" y los campos `widget` incluyen cadenas con etiquetas HTML y manejadores de eventos (`<img src=x>`) cuyo propósito aparente es probar la sanitización del widget de HuggingFace, no describir un modelo. El nombre del autor ("attacker43543"), la ausencia de descargas y de likes, y la naturaleza del contenido apuntan a un artefacto de prueba o a un intento de inyección, más que a un modelo destinado a uso real.
+La model card no contiene documentación técnica: su título es "widget mount probe" y los campos `widget` incluyen cadenas con etiquetas HTML y manejadores de eventos (`<img src=x>`) cuyo propósito aparente es probar la sanitización del widget de Hugging Face, no describir un modelo. El nombre del autor ("attacker43543"), la ausencia de descargas y de likes, y la naturaleza del contenido apuntan a un artefacto de prueba o a un intento de inyección, más que a un modelo destinado a uso real.
 
 Por tanto, esta ficha no puede certificar ninguna capacidad concreta del modelo: no hay evidencia publicada de su rendimiento, de su proceso de entrenamiento ni de su calidad. Se documenta lo que el repositorio declara de forma verificable y se señalan explícitamente los riesgos de seguridad y de procedencia. Cualquier uso en producción debería descartarse hasta que el autor publique una model card real y artefactos auditables.
 
@@ -85,5 +85,5 @@ La comparación de rendimiento con este repositorio no puede establecerse: no ha
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/attacker43543/pub8fbeed2a
+- Hugging Face: https://huggingface.co/attacker43543/pub8fbeed2a
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

@@ -65,7 +65,7 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (ta
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/ppt-art-lang-newlexicon-zipf-soft0.95-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.95-eng-baseline-100mb_seed10)
+- [Hugging Face - fpadovani/ppt-art-lang-newlexicon-zipf-soft0.95-eng-baseline-100mb_seed10](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-soft0.95-eng-baseline-100mb_seed10)
 - [Modelo base: goldfish-models/eng_latn_100mb](https://huggingface.co/goldfish-models/eng_latn_100mb)
 - [LLM Explorer - ficha del modelo](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-eng-baseline-100mb_seed10,5wPQ4CHzHD2weoAbCHyJ2f) (información adicional no oficial)
-- [Otros modelos del autor en HuggingFace](https://huggingface.co/fpadovani) (p. ej., variantes con otras semillas)
+- [Otros modelos del autor en Hugging Face](https://huggingface.co/fpadovani) (p. ej., variantes con otras semillas)

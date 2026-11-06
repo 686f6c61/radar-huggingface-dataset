@@ -101,7 +101,7 @@ Nota: los datos de parametros, contexto y licencia de las variantes alternativas
 
 ## Enlaces
 
-- Checkpoint en HuggingFace: https://huggingface.co/zeromodels/all-MiniLM-L6-v2
+- Checkpoint en Hugging Face: https://huggingface.co/zeromodels/all-MiniLM-L6-v2
 - Modelo base original: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Revision fijada del modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/tree/1110a243fdf4706b3f48f1d95db1a4f5529b4d41
 - Repositorio ZeroModels: https://github.com/IMvision12/ZeroModels

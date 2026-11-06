@@ -6,7 +6,7 @@
 
 El repositorio tiene un tamano de 0,2 GB y contiene pesos en safetensors compatibles con la libreria `peft` (version 0.21.0 anotada en la ficha). El nombre sugiere un checkpoint entrenado durante 10.000 pasos (`10k`) en su primera version (`v1`) y una variante de tarea identificada como `Le-006`, pero ninguno de estos extremos esta confirmado en la documentacion disponible.
 
-La relevancia de esta ficha es doble: por un lado, ilustra el flujo de trabajo habitual en robotica con modelos VLA abiertos (fine-tuning ligero sobre un modelo fundacional); por otro, es un ejemplo de publicacion con documentacion minima, ya que la model card es la plantilla por defecto de HuggingFace sin ninguna seccion completada. Cualquier evaluacion seria del adaptador exige consultar el modelo base y el codigo de entrenamiento, que no se enlazan.
+La relevancia de esta ficha es doble: por un lado, ilustra el flujo de trabajo habitual en robotica con modelos VLA abiertos (fine-tuning ligero sobre un modelo fundacional); por otro, es un ejemplo de publicacion con documentacion minima, ya que la model card es la plantilla por defecto de Hugging Face sin ninguna seccion completada. Cualquier evaluacion seria del adaptador exige consultar el modelo base y el codigo de entrenamiento, que no se enlazan.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ Diferencias clave: frente al base, este adaptador anade especializacion de tarea
 ## Limitaciones y advertencias
 
 - Licencia no especificada: no se puede asumir permiso de uso comercial, redistribucion ni modificacion. Es un bloqueo objetivo para cualquier despliegue en produccion.
-- Model card vacia: la ficha es la plantilla por defecto de HuggingFace, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos, hiperparametros ni evaluacion.
+- Model card vacia: la ficha es la plantilla por defecto de Hugging Face, con todos los campos marcados como "[More Information Needed]". No hay informacion sobre datos, hiperparametros ni evaluacion.
 - Riesgo de sobreajuste al montaje experimental: al ser un LoRA de tarea sobre un VLA, es probable que la politica dependa de la camara, la iluminacion, el brazo robotico y la posicion del objeto usados en la recoleccion de datos; no hay documentacion sobre variabilidad de dominio.
 - Fallos silenciosos en accion: en robotica el equivalente a la alucinacion es una trayectoria fisicamente invalida o insegura. Sin evaluacion publicada no hay forma de acotar ese riesgo.
 - Sin garantias de generalizacion: el modelo base se presenta como de generalizacion open-world, pero el adaptador no hereda automaticamente esa propiedad en la tarea concreta.
@@ -98,7 +98,7 @@ Diferencias clave: frente al base, este adaptador anade especializacion de tarea
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/MISLab-MiiSLab/pi05_grasp-fan_Le-006_10k_v1_Lora
+- Adaptador en Hugging Face: https://huggingface.co/MISLab-MiiSLab/pi05_grasp-fan_Le-006_10k_v1_Lora
 - Modelo base π₀.₅ en LeRobot: https://huggingface.co/lerobot/pi05_base
 - Documentacion de π₀.₅ en LeRobot: https://github.com/huggingface/lerobot/blob/main/docs/source/pi05.mdx
 - Repositorio openpi (Physical Intelligence) con π₀, π₀-FAST y π₀.₅: https://github.com/penn-pal-lab/openpi_with_subtask

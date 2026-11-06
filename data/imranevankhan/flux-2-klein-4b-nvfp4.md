@@ -66,6 +66,6 @@ No se dispone de más comparativas con otros modelos de difusión en la informac
 - Aunque la licencia Apache 2.0 permite el uso comercial, se recomienda implementar filtros de seguridad en los despliegues, especialmente si se usa la variante 9B.
 
 ## Enlaces
-- Repositorio HuggingFace de la versión NVFP4: https://huggingface.co/imranevankhan/FLUX.2-klein-4b-nvfp4
+- Repositorio Hugging Face de la versión NVFP4: https://huggingface.co/imranevankhan/FLUX.2-klein-4b-nvfp4
 - Repositorio principal de Black Forest Labs: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Blog de Black Forest Labs sobre FLUX.2 [klein]: https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence

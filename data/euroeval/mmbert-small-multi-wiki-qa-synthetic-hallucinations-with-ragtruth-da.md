@@ -35,7 +35,7 @@ No se dispone de informacion detallada sobre el numero de tokens de entrenamient
 - Clasificacion de tokens como factuales o alucinados en texto en danes.
 - Integrable en pipelines de validacion de sistemas de generacion aumentada por recuperacion.
 - Parte de una serie multilingue (danes, ingles, bosnio) para deteccion de alucinaciones.
-- Compatible con la libreria transformers de HuggingFace y con endpoints de inferencia.
+- Compatible con la libreria transformers de Hugging Face y con endpoints de inferencia.
 
 ## Casos de uso
 
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: al tratarse de un modelo de 140 millones de parametros, la inferencia en FP32 requiere aproximadamente 560 MB de VRAM, y en FP16 unos 280 MB.
 - GPU recomendadas: cualquier GPU consumer con al menos 2 GB de VRAM es suficiente (por ejemplo, NVIDIA GTX 1650, RTX 3060 o superiores).
 - El modelo cabe sin problemas en GPUs consumer y tambien puede ejecutarse en CPU con baja latencia para tareas de clasificacion de tokens.
-- Opciones de despliegue: transformers (pipeline de token-classification), HuggingFace Inference Endpoints, ONNX Runtime, TensorRT.
+- Opciones de despliegue: transformers (pipeline de token-classification), Hugging Face Inference Endpoints, ONNX Runtime, TensorRT.
 - Latencia y throughput: no disponibles; al ser un modelo compacto, se espera una latencia baja en GPU moderna, pero no se han publicado mediciones oficiales.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ Las tres versiones comparten la misma arquitectura y tamano, diferenciandose uni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-da
+- Modelo en Hugging Face: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-da
 - Version en ingles: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-en
 - Version en bosnio: https://huggingface.co/EuroEval/mmBERT-small-multi-wiki-qa-synthetic-hallucinations-with-ragtruth-bs
 - Articulo "A multilingual hallucination benchmark: MultiWikiQHalluA": https://arxiv.org/pdf/2605.02504v2 (version HTML: https://arxiv.org/html/2605.02504v2)

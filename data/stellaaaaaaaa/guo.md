@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `Stellaaaaaaaa/Guo` es un repositorio alojado en HuggingFace que, a fecha de su creacion, no contiene informacion tecnica publicada. La model card es minimalista y solo declara la licencia `c-uda`, sin especificar arquitectura, parametros, contexto, idiomas o cualquier otra caracteristica relevante. El repositorio no registra descargas ni interacciones de la comunidad.
+El modelo identificado como `Stellaaaaaaaa/Guo` es un repositorio alojado en Hugging Face que, a fecha de su creacion, no contiene informacion tecnica publicada. La model card es minimalista y solo declara la licencia `c-uda`, sin especificar arquitectura, parametros, contexto, idiomas o cualquier otra caracteristica relevante. El repositorio no registra descargas ni interacciones de la comunidad.
 
-Este caso representa un ejemplo de publicacion incompleta en el ecosistema de modelos abiertos. La ausencia total de documentacion tecnica, pesos publicados o enlaces a recursos externos impide cualquier evaluacion objetiva de capacidades, rendimiento o aplicabilidad. La licencia `c-uda` tampoco es un identificador estandar en el registro de licencias de HuggingFace, lo que anade incertidumbre sobre los terminos de uso permitidos.
+Este caso representa un ejemplo de publicacion incompleta en el ecosistema de modelos abiertos. La ausencia total de documentacion tecnica, pesos publicados o enlaces a recursos externos impide cualquier evaluacion objetiva de capacidades, rendimiento o aplicabilidad. La licencia `c-uda` tampoco es un identificador estandar en el registro de licencias de Hugging Face, lo que anade incertidumbre sobre los terminos de uso permitidos.
 
 La relevancia de esta ficha es advertir a desarrolladores e investigadores de que no existe informacion suficiente para considerar este modelo como una opcion viable en ningun escenario de uso. Se recomienda precaucion ante publicaciones similares que no proporcionen datos verificables sobre el modelo.
 
@@ -51,13 +51,13 @@ No disponible. Sin datos sobre arquitectura, parametros o rendimiento, no es pos
 
 - El repositorio no contiene pesos del modelo ni archivos de checkpoint publicados.
 - La model card no documenta la arquitectura, el tamano ni el proceso de entrenamiento.
-- La licencia `c-uda` no es una licencia estandar reconocida en el registro de HuggingFace, lo que genera incertidumbre sobre los terminos de uso comercial y redistribucion.
+- La licencia `c-uda` no es una licencia estandar reconocida en el registro de Hugging Face, lo que genera incertidumbre sobre los terminos de uso comercial y redistribucion.
 - No hay informacion sobre sesgos, alucinaciones o limitaciones de contexto o idioma.
 - No se recomienda su uso en produccion ni en investigacion hasta que el autor publique documentacion tecnica completa y verificable.
 - La ausencia de descargas y de interacciones de la comunidad sugiere que el modelo no ha sido validado por terceros.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stellaaaaaaaa/Guo
+- Repositorio Hugging Face: https://huggingface.co/Stellaaaaaaaa/Guo
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) asociados a este modelo. Las busquedas web realizadas no arrojaron resultados relacionados con el identificador `Stellaaaaaaaa/Guo` ni con la marca `Stella AI` que coincidan con este repositorio especifico.

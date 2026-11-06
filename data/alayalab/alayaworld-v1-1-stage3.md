@@ -65,7 +65,7 @@ No disponible. No se proporcionan comparaciones con otros modelos de generación
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage3
+- Repositorio Hugging Face: https://huggingface.co/AlayaLab/AlayaWorld-v1.1-stage3
 - Repositorio GitHub de AlayaLab: https://github.com/AlayaLab/AlayaWorld
 - Paper intro: https://arxiv.org/abs/2607.06291
 - Paper full: https://arxiv.org/abs/2607.18367

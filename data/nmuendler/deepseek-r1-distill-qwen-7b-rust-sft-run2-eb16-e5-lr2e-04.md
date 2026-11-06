@@ -25,13 +25,13 @@ La ausencia de model card sustantiva, de licencia declarada, de idiomas declarad
 | Modelo base | deepseek-ai/DeepSeek-R1-Distill-Qwen-7B |
 | Etiquetas | peft, lora, safetensors, transformers, text-generation, conversational |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 2026-09-16 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-16 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
 El artefacto es un adaptador de bajo rango (LoRA) sobre un modelo denso de la familia DeepSeek-R1-Distill. El modelo base pertenece a la línea de destilados de DeepSeek-R1, en la que las capacidades de razonamiento del modelo grande se transfieren mediante destilación a arquitecturas densas mas pequenas; la variante de 7B se apoya en la familia Qwen2.5 (tokenizador y estructura de atención). La arquitectura subyacente es, por tanto, un transformer decoder-only con atención causal y sin componentes MoE ni SSM. La model card del repositorio no aporta ningún detalle adicional sobre la arquitectura del adaptador.
 
-Respecto al entrenamiento, la información disponible es prácticamente nula: la model card es la plantilla por defecto de HuggingFace con todos los campos marcados como `[More Information Needed]`, y no se indica dataset, número de tokens, composición de datos, ni si hubo RLHF, DPO o únicamente SFT. El identificador del repositorio (`rust-sft-run2-eb16-e5-lr2e-04`) apunta a un ajuste supervisado ("sft") sobre código Rust, en una segunda ejecución ("run2"), con posibles valores de learning rate de 2e-4 y 5 épocas; se trata de una interpretación del nombre del repositorio, no de un dato confirmado por el autor. Tampoco se documentan los hiperparámetros del LoRA (rango, alpha, dropout, módulos objetivo) ni la estrategia de enmascarado de la pérdida.
+Respecto al entrenamiento, la información disponible es prácticamente nula: la model card es la plantilla por defecto de Hugging Face con todos los campos marcados como `[More Information Needed]`, y no se indica dataset, número de tokens, composición de datos, ni si hubo RLHF, DPO o únicamente SFT. El identificador del repositorio (`rust-sft-run2-eb16-e5-lr2e-04`) apunta a un ajuste supervisado ("sft") sobre código Rust, en una segunda ejecución ("run2"), con posibles valores de learning rate de 2e-4 y 5 épocas; se trata de una interpretación del nombre del repositorio, no de un dato confirmado por el autor. Tampoco se documentan los hiperparámetros del LoRA (rango, alpha, dropout, módulos objetivo) ni la estrategia de enmascarado de la pérdida.
 
 ## Capacidades
 
@@ -58,7 +58,7 @@ En todos los casos, la ausencia de licencia declarada y de evaluación obliga a 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye ninguna sección de evaluación con datos, y los metadatos de HuggingFace no aportan métricas. Cualquier cifra que se atribuya a este adaptador tendría que obtenerse mediante una evaluación propia contra el modelo base.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye ninguna sección de evaluación con datos, y los metadatos de Hugging Face no aportan métricas. Cualquier cifra que se atribuya a este adaptador tendría que obtenerse mediante una evaluación propia contra el modelo base.
 
 ## Requisitos de hardware
 
@@ -76,10 +76,10 @@ Las cifras siguientes son estimaciones generales para un modelo denso de ~7.000 
 
 | Modelo | Naturaleza | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-eb16-e5-lr2e-04) | Adaptador LoRA sobre modelo denso | Adaptador de 0,7 GB; base de ~7.000 M | No disponible | No disponible | HuggingFace, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | Modelo completo destilado | ~7.000 M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace (modelo base) |
-| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | Modelo completo destilado | ~8.000 M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | Modelo completo destilado | ~1.500 M | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| Este adaptador (nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-eb16-e5-lr2e-04) | Adaptador LoRA sobre modelo denso | Adaptador de 0,7 GB; base de ~7.000 M | No disponible | No disponible | Hugging Face, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-7B | Modelo completo destilado | ~7.000 M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face (modelo base) |
+| deepseek-ai/DeepSeek-R1-Distill-Llama-8B | Modelo completo destilado | ~8.000 M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B | Modelo completo destilado | ~1.500 M | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 
 La comparación significativa es contra el propio modelo base: este repositorio no aporta pesos completos, sino una delta de bajo rango que debe aplicarse sobre `deepseek-ai/DeepSeek-R1-Distill-Qwen-7B`. Frente a los otros destilados de la familia, la diferencia relevante es el tamano y, en el caso de Llama-8B, la arquitectura de partida. No se dispone de datos de rendimiento comparativos.
 
@@ -98,7 +98,7 @@ La comparación significativa es contra el propio modelo base: este repositorio 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-eb16-e5-lr2e-04
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run2-eb16-e5-lr2e-04
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Referencia citada en la model card (calculadora de impacto y Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Paper del modelo base DeepSeek-R1: https://arxiv.org/abs/2501.12948 (referencia de la familia base, no verificada en esta busqueda)

@@ -4,7 +4,7 @@
 
 El repositorio `Snapkitty/integrity-constraint-governance` implementa el protocolo ICP (Integrity Constraint Governance Protocol), un motor de gobernanza de restricciones de integridad diseñado para sistemas de IA, bio-ML y software en general. No se trata de un modelo de aprendizaje automático entrenado, sino de un componente de software que impone invariantes mediante dos paradigmas complementarios: una máquina de estados imperativa escrita en MUMPS y una capa declarativa basada en Answer Set Programming (ASP) con Clingo. El objetivo es garantizar que ninguna acción no autorizada, contradicha o sin evidencia pueda ejecutarse, estableciendo un flujo estricto desde la evidencia hasta la auditoría.
 
-La solución la desarrolla Jessica L. Williams (alias SNAPKITTYWEST) y se publica bajo una triple licencia (BSL-1.1, AGPL-3.0 y MPL-2.0) que permite distintos usos según el escenario. Aunque el repositorio tiene cero descargas y cero likes en HuggingFace, su propuesta técnica es relevante para equipos que necesitan trazar decisiones en sistemas críticos donde la confianza y la procedencia son innegociables. La arquitectura se compone de tres ficheros principales: `ICP-DAG.m` (grafo dirigido acíclico en MUMPS), `ICP-DAG.lp` (restricciones declarativas en ASP) y `ICP-GOV.m` (motor de gobernanza completo con actores, procedencia y sellado).
+La solución la desarrolla Jessica L. Williams (alias SNAPKITTYWEST) y se publica bajo una triple licencia (BSL-1.1, AGPL-3.0 y MPL-2.0) que permite distintos usos según el escenario. Aunque el repositorio tiene cero descargas y cero likes en Hugging Face, su propuesta técnica es relevante para equipos que necesitan trazar decisiones en sistemas críticos donde la confianza y la procedencia son innegociables. La arquitectura se compone de tres ficheros principales: `ICP-DAG.m` (grafo dirigido acíclico en MUMPS), `ICP-DAG.lp` (restricciones declarativas en ASP) y `ICP-GOV.m` (motor de gobernanza completo con actores, procedencia y sellado).
 
 ## Especificaciones tecnicas
 
@@ -16,7 +16,7 @@ La solución la desarrolla Jessica L. Williams (alias SNAPKITTYWEST) y se public
 | Longitud de contexto | No aplica |
 | Tipos de cuantizacion | No aplica |
 | Idiomas soportados | No disponible (interfaz en ingles en los ficheros fuente) |
-| Licencia | Triple: BSL-1.1 + AGPL-3.0 + MPL-2.0 (segun README; la ficha de HuggingFace indica "no disponible") |
+| Licencia | Triple: BSL-1.1 + AGPL-3.0 + MPL-2.0 (segun README; la ficha de Hugging Face indica "no disponible") |
 | Formato de pesos | No aplica (codigo fuente en MUMPS y ASP) |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre sistemas equivalentes en el repositorio ni en la ficha de HuggingFace. No existen alternativas documentadas con las que comparar este protocolo.
+No se dispone de informacion sobre sistemas equivalentes en el repositorio ni en la ficha de Hugging Face. No existen alternativas documentadas con las que comparar este protocolo.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No se dispone de informacion sobre sistemas equivalentes en el repositorio ni en
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Snapkitty/integrity-constraint-governance
+- Repositorio Hugging Face: https://huggingface.co/Snapkitty/integrity-constraint-governance
 - Fichero de licencia tri: se menciona `LICENSE.tri` en el README, pero no se proporciona URL directa.
 - No se encontraron papers, blogs o demos adicionales en la informacion disponible.

@@ -35,7 +35,7 @@ La mezcla de datos tiene una proporción de 71% de consultas de tipo A (médicas
 - Especialización en dominio médico francés: entrenado con consultas médicas reales, terminología clínica y documentos de salud.
 - Corrección del olvido catastrófico: el replay con MS MARCO FR mantiene la capacidad de reranking en dominios generales, como se muestra en la métrica mMARCO.
 - Inferencia eficiente: al ser un modelo de 68M, puede ejecutarse en CPU o GPU de gama baja con baja latencia.
-- Integración con pipelines de RAG: compatible con librerías como sentence-transformers o HuggingFace Transformers para su uso en sistemas de recuperación aumentada.
+- Integración con pipelines de RAG: compatible con librerías como sentence-transformers o Hugging Face Transformers para su uso en sistemas de recuperación aumentada.
 
 ## Casos de uso
 
@@ -63,7 +63,7 @@ En la prueba mMARCO, se compara con el baseline distil (0.865) y con la versión
 - VRAM estimada: con 68M parámetros, en FP16 ocupa aproximadamente 136 MB; en int8, unos 68 MB. Cabe en cualquier GPU con al menos 1 GB de VRAM.
 - GPU recomendadas: cualquier GPU moderna, incluyendo NVIDIA T4, GTX 1080, RTX 2060 o superiores. También funciona en CPU con baja latencia (inferencia de pocos milisegundos por par).
 - Compatible con consumer GPU: sí, incluso en portátiles con GPU integrada.
-- Opciones de despliegue: se puede servir con HuggingFace Transformers, sentence-transformers, ONNX Runtime o TorchServe. No es adecuado para vLLM o TGI, ya que no es un modelo generativo.
+- Opciones de despliegue: se puede servir con Hugging Face Transformers, sentence-transformers, ONNX Runtime o TorchServe. No es adecuado para vLLM o TGI, ya que no es un modelo generativo.
 - Latencia estimada: en una T4, la inferencia de un par tarda ~5-10 ms; en CPU, ~20-50 ms dependiendo de la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ No se dispone de comparativas con otros cross-encoders médicos franceses en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ymelka/camembert-med-reranker-v2-distil
+- Modelo en Hugging Face: https://huggingface.co/ymelka/camembert-med-reranker-v2-distil
 - Modelo base: https://huggingface.co/antoinelouis/crossencoder-distilcamembert-mmarcoFR
 - Referencia de DistilCamemBERT: https://huggingface.co/cmarkea/distilcamembert-base
 - Referencia de CamemBERT v2: https://huggingface.co/almanach/camembertv2-base

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_swift_jbbresp13_remove50` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Llama-2-7b-chat-hf` mediante compresión Swift-SVD. El objetivo del trabajo es estudiar cómo la compresión por descomposición en valores singulares (SVD) afecta al equilibrio entre utilidad y seguridad en modelos conversacionales, eliminando aproximadamente el 50 % del presupuesto de parámetros factorizados.
+`svd-safety-l2_swift_jbbresp13_remove50` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Llama-2-7b-chat-hf` mediante compresión Swift-SVD. El objetivo del trabajo es estudiar cómo la compresión por descomposición en valores singulares (SVD) afecta al equilibrio entre utilidad y seguridad en modelos conversacionales, eliminando aproximadamente el 50 % del presupuesto de parámetros factorizados.
 
 El modelo se ha comprimido con una calibración mixta de 256 secuencias de WikiText más 13 secuencias de prompts dañinos y respuestas de rechazo del conjunto JBB (jailbreak bench), lo que permite preservar el comportamiento de rechazo del modelo original durante la compresión. La recuperación se ha realizado con LoRA secuencial sobre los factores U y V siguiendo el método SVD-LLM, con datos Alpaca-cleaned.
 
@@ -69,8 +69,8 @@ Los resultados de las siete tareas zero-shot (ARC-Easy/Challenge, HellaSwag, Win
 
 | Modelo | Parametros | Metodo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-l2_swift_jbbresp13_remove50 | 6,74 B (plegado, ~50 % presupuesto factorizado) | Swift-SVD + LoRA (SVD-LLM) | no disponible | Llama 2 | HuggingFace, checkpoint de investigacion |
-| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 B | sin comprimir | 4096 | Llama 2 | HuggingFace, uso general |
+| Jeesup/svd-safety-l2_swift_jbbresp13_remove50 | 6,74 B (plegado, ~50 % presupuesto factorizado) | Swift-SVD + LoRA (SVD-LLM) | no disponible | Llama 2 | Hugging Face, checkpoint de investigacion |
+| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 B | sin comprimir | 4096 | Llama 2 | Hugging Face, uso general |
 | SVD-LLM (metodo de referencia) | variable segun ratio | SVD + LoRA secuencial U/V | depende del base | codigo abierto (metodo) | repositorio de metodo, no checkpoint de chat |
 
 Nota: la comparacion cuantitativa de rendimiento frente al modelo base no esta publicada en la informacion disponible; solo se ofrecen las metricas del checkpoint comprimido.
@@ -88,6 +88,6 @@ Nota: la comparacion cuantitativa de rendimiento frente al modelo base no esta p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbresp13_remove50
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbresp13_remove50
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - No se han encontrado enlaces adicionales (paper, blog o demo) en la informacion disponible.

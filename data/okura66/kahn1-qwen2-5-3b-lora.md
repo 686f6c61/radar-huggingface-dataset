@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Kahn1-Qwen2.5-3B-LoRA (este) | 3,08 B (adaptador de 40,3 M) | 32.768 tokens (heredado) | Apache 2.0 | Adaptador PEFT en HuggingFace | Especializado en decision/clasificacion calibrada |
-| Kahn1-Qwen2.5-3B (fusionado) | 3,08 B | 32.768 tokens (heredado) | Apache 2.0 | Pesos completos (6,17 GB) en HuggingFace | Mismo modelo sin dependencia de PEFT |
-| Qwen/Qwen2.5-3B-Instruct | 3,08 B | 32.768 tokens | Apache 2.0 | Pesos completos en HuggingFace | Modelo base generativo, sin cabecera de decision calibrada |
-| Alternativas de ~3 B (por ejemplo Llama 3.2 3B Instruct, Phi-3.5-mini-instruct) | ~3-4 B | 128.000 tokens | Licencias propias de cada modelo | HuggingFace | Datos de referencia general, no verificados en la informacion proporcionada |
+| Kahn1-Qwen2.5-3B-LoRA (este) | 3,08 B (adaptador de 40,3 M) | 32.768 tokens (heredado) | Apache 2.0 | Adaptador PEFT en Hugging Face | Especializado en decision/clasificacion calibrada |
+| Kahn1-Qwen2.5-3B (fusionado) | 3,08 B | 32.768 tokens (heredado) | Apache 2.0 | Pesos completos (6,17 GB) en Hugging Face | Mismo modelo sin dependencia de PEFT |
+| Qwen/Qwen2.5-3B-Instruct | 3,08 B | 32.768 tokens | Apache 2.0 | Pesos completos en Hugging Face | Modelo base generativo, sin cabecera de decision calibrada |
+| Alternativas de ~3 B (por ejemplo Llama 3.2 3B Instruct, Phi-3.5-mini-instruct) | ~3-4 B | 128.000 tokens | Licencias propias de cada modelo | Hugging Face | Datos de referencia general, no verificados en la informacion proporcionada |
 
 No se dispone de comparativas de rendimiento entre Kahn1 y estos modelos, porque no hay benchmarks publicados en la información disponible.
 
@@ -104,7 +104,7 @@ No se dispone de comparativas de rendimiento entre Kahn1 y estos modelos, porque
 
 ## Enlaces
 
-- Adaptador LoRA en HuggingFace: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B-LoRA
+- Adaptador LoRA en Hugging Face: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B-LoRA
 - Pesos fusionados: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B
 - Repositorio GitHub del proyecto Kahn1: https://github.com/Okura66/kahn1
 - Licencia del proyecto en GitHub: https://github.com/Okura66/kahn1/blob/main/LICENSE

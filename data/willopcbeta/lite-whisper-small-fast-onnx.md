@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su formato ONNX, que facilita el desplieg
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna del modelo. Por el nombre y la referencia a Whisper, se infiere que se trata de un modelo encoder-decoder basado en la arquitectura Transformer, similar a la familia Whisper de OpenAI, pero con modificaciones para hacerlo "lite" y "fast". No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La unica nota tecnica encontrada en el repositorio de HuggingFace menciona que la configuracion optima de cuantizacion Q4 utiliza `decoder_model` con `q4f16` para evitar salidas ambiguas o sin sentido, y que la conversion con el programa version 3.8.1 presenta problemas con la conversion v4. Esto sugiere que el modelo ha sido sometido a un proceso de cuantizacion y conversion a ONNX, pero no se ofrecen mas detalles.
+No se dispone de informacion detallada sobre la arquitectura interna del modelo. Por el nombre y la referencia a Whisper, se infiere que se trata de un modelo encoder-decoder basado en la arquitectura Transformer, similar a la familia Whisper de OpenAI, pero con modificaciones para hacerlo "lite" y "fast". No se han publicado datos sobre el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de RLHF o DPO. La unica nota tecnica encontrada en el repositorio de Hugging Face menciona que la configuracion optima de cuantizacion Q4 utiliza `decoder_model` con `q4f16` para evitar salidas ambiguas o sin sentido, y que la conversion con el programa version 3.8.1 presenta problemas con la conversion v4. Esto sugiere que el modelo ha sido sometido a un proceso de cuantizacion y conversion a ONNX, pero no se ofrecen mas detalles.
 
 ## Capacidades
 
@@ -67,8 +67,8 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- [HuggingFace - willopcbeta/lite-whisper-small-fast-ONNX](https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX)
-- [HuggingFace - willopcbeta/lite-whisper-small-fast-ONNX-v2](https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX-v2)
+- [Hugging Face - willopcbeta/lite-whisper-small-fast-ONNX](https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX)
+- [Hugging Face - willopcbeta/lite-whisper-small-fast-ONNX-v2](https://huggingface.co/willopcbeta/lite-whisper-small-fast-ONNX-v2)
 - [Free2AITools - Lite Whisper Small Fast Onnx](https://free2aitools.com/model/willopcbeta/lite-whisper-small-fast-onnx)
 - [FriendliAI - willopcbeta/lite-whisper-small-fast](https://friendli.ai/models/willopcbeta/lite-whisper-small-fast)
 - [GitHub - onnx/models](https://github.com/onnx/models)

@@ -77,6 +77,6 @@ No disponible. La informacion proporcionada no incluye datos sobre otros adaptad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BlueSkyXN/Anima-base-loras
+- Repositorio en Hugging Face: https://huggingface.co/BlueSkyXN/Anima-base-loras
 - Modelo base: https://huggingface.co/circlestone-labs/Anima
 - Los resultados de busqueda web proporcionados no contienen ningun enlace relevante para este modelo; el resto de referencias (papers, blogs, repositorios o demos) no esta disponible.

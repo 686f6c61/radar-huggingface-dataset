@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`halnowihl/arabert-sentiment` es un modelo de clasificación de texto en árabe obtenido mediante fine-tuning supervisado de `UBC-NLP/MARBERTv2`, un encoder BERT de tipo transformer entrenado específicamente para árabe por el grupo UBC-NLP. El autor del ajuste es el usuario de HuggingFace `halnowihl`, y el modelo se publicó el 4 de noviembre de 2026. Su propósito declarado es el análisis de sentimiento, aunque la model card no especifica el conjunto de datos utilizado ni el esquema exacto de etiquetas.
+`halnowihl/arabert-sentiment` es un modelo de clasificación de texto en árabe obtenido mediante fine-tuning supervisado de `UBC-NLP/MARBERTv2`, un encoder BERT de tipo transformer entrenado específicamente para árabe por el grupo UBC-NLP. El autor del ajuste es el usuario de Hugging Face `halnowihl`, y el modelo se publicó el 4 de noviembre de 2026. Su propósito declarado es el análisis de sentimiento, aunque la model card no especifica el conjunto de datos utilizado ni el esquema exacto de etiquetas.
 
 Arquitectónicamente es un BERT base con 162.843.651 parámetros totales (aproximadamente 163 M), almacenado en formato safetensors con un tamaño de repositorio de 0,7 GB. No incorpora cabecera de generación ni capacidades multimodales: es un clasificador de secuencias puro, pensado para inferencia de bajo coste y despliegue sencillo mediante `transformers` o Text Embeddings Inference.
 
@@ -85,9 +85,9 @@ No se han publicado resultados de benchmarks estándar en la información dispon
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `halnowihl/arabert-sentiment` | 162,8 M | no disponible | Clasificación de sentimiento (árabe) | no disponible | HuggingFace |
-| `UBC-NLP/MARBERTv2` | ~163 M (BERT base) | no disponible | Modelo base preentrenado en árabe | no disponible en la información | HuggingFace |
-| `aubmindlab/bert-base-arabertv02` | ~136 M | no disponible | Modelo base preentrenado en árabe | no disponible en la información | HuggingFace |
+| `halnowihl/arabert-sentiment` | 162,8 M | no disponible | Clasificación de sentimiento (árabe) | no disponible | Hugging Face |
+| `UBC-NLP/MARBERTv2` | ~163 M (BERT base) | no disponible | Modelo base preentrenado en árabe | no disponible en la información | Hugging Face |
+| `aubmindlab/bert-base-arabertv02` | ~136 M | no disponible | Modelo base preentrenado en árabe | no disponible en la información | Hugging Face |
 
 La comparación se limita a modelos base de la misma familia (BERT para árabe), ya que no se dispone de datos de otros clasificadores de sentimiento árabes ajustados con métricas comparables en la información proporcionada. No se dispone de benchmarks comunes para establecer una comparación de rendimiento objetiva.
 
@@ -106,7 +106,7 @@ La comparación se limita a modelos base de la misma familia (BERT para árabe),
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/halnowihl/arabert-sentiment
+- Hugging Face: https://huggingface.co/halnowihl/arabert-sentiment
 - Modelo base: https://huggingface.co/UBC-NLP/MARBERTv2
 - Repositorio MARBERTv2 de UBC-NLP: no disponible en la información proporcionada
 - Paper de MARBERT: no disponible en la información proporcionada

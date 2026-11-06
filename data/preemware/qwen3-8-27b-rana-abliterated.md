@@ -91,7 +91,7 @@ Notas de la evaluacion: los jueces coinciden bien en rechazos explicitos (kappa 
 
 | Modelo | Parametros | Contexto | Rechazos duros (HarmBench, de 200) | Distancia al base (KL) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| preemware/Qwen3.8-27B-RANA-abliterated | 27,78 mil millones | no disponible | 0 / 0 | 0,041 | Apache-2.0 | safetensors BF16 en HuggingFace |
+| preemware/Qwen3.8-27B-RANA-abliterated | 27,78 mil millones | no disponible | 0 / 0 | 0,041 | Apache-2.0 | safetensors BF16 en Hugging Face |
 | Qwen/Qwen3.8-27B (base) | ~27,8 mil millones | no disponible | 168 / 155 | 0 | Apache-2.0 | safetensors, referencia oficial |
 | orcarouter/Qwen3.8-27B-Uncensored | no disponible | no disponible | 0,7 / 0 | 0,075 | no disponible | variante ablacionada de referencia en la comparativa |
 | huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible | no disponible | no disponible | no disponible | no disponible | otra ablacion de la comunidad, sin datos comparables en esta busqueda |
@@ -115,7 +115,7 @@ En el banco externo Abliterlitics, que evalua 12 variantes ablacionadas de Qwen3
 
 ## Enlaces
 
-- [preemware/Qwen3.8-27B-RANA-abliterated en HuggingFace](https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated)
+- [preemware/Qwen3.8-27B-RANA-abliterated en Hugging Face](https://huggingface.co/preemware/Qwen3.8-27B-RANA-abliterated)
 - [Qwen/Qwen3.8-27B (modelo base)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de Qwen3.8-27B en GitHub (AlibabaCloud-Official)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Repositorio de la serie Qwen3.8 en GitHub (QwenLM)](https://github.com/QwenLM/Qwen3.8)

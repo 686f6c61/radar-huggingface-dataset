@@ -1,7 +1,7 @@
 # genai-craft/aunvox-turn-controller-ja
 
 ## Resumen
-El modelo `genai-craft/aunvox-turn-controller-ja` es un ajuste fino del modelo base Qwen/Qwen3-0.6B, desarrollado por el usuario genai-craft en HuggingFace. Está diseñado específicamente para la gestión de turnos de habla (turn-taking) en diálogos, con un enfoque en el idioma japonés, según los tags que lo acompañan (`turn-taking`, `speech`, `dialogue`, `ja`). Se trata de un modelo de tamaño reducido (el base tiene 0.6 mil millones de parámetros), lo que sugiere un uso orientado a entornos con recursos limitados o a integraciones ligeras en sistemas de diálogo.
+El modelo `genai-craft/aunvox-turn-controller-ja` es un ajuste fino del modelo base Qwen/Qwen3-0.6B, desarrollado por el usuario genai-craft en Hugging Face. Está diseñado específicamente para la gestión de turnos de habla (turn-taking) en diálogos, con un enfoque en el idioma japonés, según los tags que lo acompañan (`turn-taking`, `speech`, `dialogue`, `ja`). Se trata de un modelo de tamaño reducido (el base tiene 0.6 mil millones de parámetros), lo que sugiere un uso orientado a entornos con recursos limitados o a integraciones ligeras en sistemas de diálogo.
 
 La relevancia de este modelo reside en su especialización: en lugar de ser un modelo de lenguaje general, se centra en predecir cuándo un interlocutor puede tomar el turno de habla, una capacidad clave para asistentes de voz, sistemas de transcripción interactiva y robots conversacionales. El acceso es restringido (gated), por lo que los usuarios deben solicitar permiso al autor antes de descargarlo. No se dispone de información pública sobre el proceso de entrenamiento, los datos utilizados ni el rendimiento en benchmarks, lo que limita la evaluación objetiva del modelo.
 
@@ -46,14 +46,14 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 - VRAM estimada: al ser un modelo de 0.6B en fp16, requiere aproximadamente 1.2 GB de VRAM para inferencia sin cuantización. Con cuantización a 8 bits, podría reducirse a ~0.6 GB, y a 4 bits a ~0.3 GB, aunque no se han publicado pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como GTX 1650, RTX 3050 o superiores. También puede ejecutarse en CPU con suficiente RAM (4-8 GB).
 - Consumer GPU: sí, cabe en prácticamente cualquier GPU consumer moderna.
-- Opciones de despliegue: al ser formato safetensors, puede cargarse con transformers de HuggingFace. No se menciona soporte para vLLM, llama.cpp u Ollama, aunque al ser un modelo pequeño podría convertirse a GGUF si se desea.
+- Opciones de despliegue: al ser formato safetensors, puede cargarse con transformers de Hugging Face. No se menciona soporte para vLLM, llama.cpp u Ollama, aunque al ser un modelo pequeño podría convertirse a GGUF si se desea.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 No se dispone de información sobre otros controladores de turnos específicos para japonés. Como referencia, el modelo base Qwen3-0.6B es un modelo de lenguaje general que no está especializado en turn-taking. Otros modelos de diálogo como Llama-3.2-1B o Gemma-2-2B tienen tamaños similares pero no están enfocados en turn-taking. No se puede establecer una comparativa rigurosa sin datos de rendimiento.
 
 ## Limitaciones y advertencias
-- Acceso restringido: el modelo requiere solicitar permiso al autor en HuggingFace, lo que puede dificultar su adopción en proyectos comerciales.
+- Acceso restringido: el modelo requiere solicitar permiso al autor en Hugging Face, lo que puede dificultar su adopción en proyectos comerciales.
 - Licencia personalizada: la licencia `aunvox-model-license-1.0` no es una licencia estándar (Apache, MIT, etc.), por lo que es necesario revisar sus términos antes de cualquier uso comercial.
 - Idioma limitado: solo japonés; no es utilizable para otros idiomas.
 - Sin documentación: no hay paper, guía técnica ni ejemplos de uso, lo que dificulta la integración y la depuración.
@@ -61,5 +61,5 @@ No se dispone de información sobre otros controladores de turnos específicos p
 - Tamaño del contexto: desconocido, pero al ser un modelo de 0.6B probablemente tenga un contexto limitado (típicamente 4K-8K tokens), lo que restringe su uso en diálogos muy largos.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/genai-craft/aunvox-turn-controller-ja
+- Hugging Face: https://huggingface.co/genai-craft/aunvox-turn-controller-ja
 - No se han encontrado otros enlaces relevantes (papers, repos, demos) en la búsqueda web.

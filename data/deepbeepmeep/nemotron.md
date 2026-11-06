@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| DeepBeepMeep/Nemotron (este) | 30B totales / 4B activos | no disponible | OpenMDW 1.1 | HuggingFace, empaquetado para WanGP | Reempaquetado del modelo de NVIDIA con cuantizaciones INT8/4 bits y draft DFlash2 |
-| nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B | 30B totales / 4B activos | no disponible | OpenMDW 1.1 | HuggingFace | Modelo base original de NVIDIA; este repositorio deriva de él |
+| DeepBeepMeep/Nemotron (este) | 30B totales / 4B activos | no disponible | OpenMDW 1.1 | Hugging Face, empaquetado para WanGP | Reempaquetado del modelo de NVIDIA con cuantizaciones INT8/4 bits y draft DFlash2 |
+| nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B | 30B totales / 4B activos | no disponible | OpenMDW 1.1 | Hugging Face | Modelo base original de NVIDIA; este repositorio deriva de él |
 | Otras alternativas ASR con diarización | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DeepBeepMeep/Nemotron
+- Repositorio Hugging Face: https://huggingface.co/DeepBeepMeep/Nemotron
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - WanGP (Wan2GP): https://github.com/deepbeepmeep/Wan2GP
 - Licencia OpenMDW 1.1: https://huggingface.co/DeepBeepMeep/Nemotron/blob/main/nemotron_transcribe/LICENSE_NEMOTRON_TRANSCRIBE.txt

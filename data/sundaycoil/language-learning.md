@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `sundaycoil/language-learning` es un modelo publicado en HuggingFace por el usuario `sundaycoil`, con la etiqueta `region:us`. No se dispone de información pública sobre su arquitectura, tamaño, licencia o capacidades. El nombre sugiere una posible orientación al aprendizaje de idiomas, pero no hay documentación, README ni metadatos técnicos que lo confirmen. Fue creado el 9 de abril de 2026 y actualizado el 14 de agosto de 2026, aunque cuenta con 0 descargas y 7 likes, lo que indica una adopción muy limitada.
+El modelo `sundaycoil/language-learning` es un modelo publicado en Hugging Face por el usuario `sundaycoil`, con la etiqueta `region:us`. No se dispone de información pública sobre su arquitectura, tamaño, licencia o capacidades. El nombre sugiere una posible orientación al aprendizaje de idiomas, pero no hay documentación, README ni metadatos técnicos que lo confirmen. Fue creado el 9 de abril de 2026 y actualizado el 14 de agosto de 2026, aunque cuenta con 0 descargas y 7 likes, lo que indica una adopción muy limitada.
 
-Dada la ausencia total de especificaciones, esta ficha no puede ofrecer datos técnicos verificables. Se recomienda contactar al autor o consultar el repositorio de HuggingFace para obtener información adicional antes de considerar su uso en cualquier proyecto.
+Dada la ausencia total de especificaciones, esta ficha no puede ofrecer datos técnicos verificables. Se recomienda contactar al autor o consultar el repositorio de Hugging Face para obtener información adicional antes de considerar su uso en cualquier proyecto.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ No se ha publicado ninguna información sobre la arquitectura del modelo, el pro
 
 ## Capacidades
 
-No se dispone de información verificable sobre las capacidades del modelo. No hay ejemplos de uso, demos ni descripciones de tareas soportadas en la página de HuggingFace.
+No se dispone de información verificable sobre las capacidades del modelo. No hay ejemplos de uso, demos ni descripciones de tareas soportadas en la página de Hugging Face.
 
 ## Casos de uso
 
@@ -52,4 +52,4 @@ No disponible. No hay datos suficientes para comparar este modelo con alternativ
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/sundaycoil/language-learning)
+- [Página del modelo en Hugging Face](https://huggingface.co/sundaycoil/language-learning)

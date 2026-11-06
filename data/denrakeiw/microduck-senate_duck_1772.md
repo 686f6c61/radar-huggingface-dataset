@@ -85,7 +85,7 @@ Solo se ha identificado un modelo directamente comparable en la busqueda web (la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DenRakEiw/microduck-senate_duck_1772
+- Modelo en Hugging Face: https://huggingface.co/DenRakEiw/microduck-senate_duck_1772
 - Variante relacionada: https://huggingface.co/DenRakEiw/microduck-senate_duck_1472
 - Repositorio del robot microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de entrenamiento RL (referenciado en la model card): `pollen-robotics/microduck_rl`, rama `denrakeiw`, commit `b76573f1a`

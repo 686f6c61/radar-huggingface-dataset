@@ -117,7 +117,7 @@ No se dispone en la informacion proporcionada de datos verificados de otros mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/myflow-ai/parakeet-ctc-0.6b-gguf
+- Repositorio Hugging Face: https://huggingface.co/myflow-ai/parakeet-ctc-0.6b-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-ctc-0.6b
 - Commit del modelo base usado: https://huggingface.co/nvidia/parakeet-ctc-0.6b/commit/ad09ba1
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

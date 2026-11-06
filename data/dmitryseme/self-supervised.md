@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Dmitryseme/self-supervised no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace. La propia model card lo describe como una "nota exploratoria" sobre aprendizaje auto-supervisado que recoge la comparación prevista, los factores de confusión probables y los requisitos de reproducibilidad antes de publicar cualquier resultado. Los artefactos declarados son únicamente `analysis.md` y `README.md`.
+Dmitryseme/self-supervised no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face. La propia model card lo describe como una "nota exploratoria" sobre aprendizaje auto-supervisado que recoge la comparación prevista, los factores de confusión probables y los requisitos de reproducibilidad antes de publicar cualquier resultado. Los artefactos declarados son únicamente `analysis.md` y `README.md`.
 
 El repositorio llega etiquetado con `safetensors`, `transformer` y `self-supervised`, y los metadatos de safetensors indican 24.832 parámetros totales con un tamaño de repositorio de 0,0 GB. Esa cifra es incompatible con un transformer funcional: se trata de un tensor residual del andamiaje del repositorio, no de un checkpoint utilizable. No se documenta arquitectura, tokenizador, datos de entrenamiento ni pesos distribuidos.
 
@@ -86,5 +86,5 @@ No disponible. Este repositorio no pertenece a la categoria de modelos de lengua
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dmitryseme/self-supervised
+- Hugging Face: https://huggingface.co/Dmitryseme/self-supervised
 - No se han encontrado enlaces relevantes en la busqueda web. Los resultados devueltos por el buscador no estan relacionados con el modelo ni con aprendizaje auto-supervisado, por lo que se descartan como fuentes.

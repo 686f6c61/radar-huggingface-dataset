@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jackson44/tourism-captioning-student-v2-validated` es un sistema de generación de descripciones de imágenes (image captioning) orientado al dominio turístico. Ha sido desarrollado por el usuario Jackson44 y subido al Hub de HuggingFace con la etiqueta `vision-encoder-decoder`, lo que indica una arquitectura que combina un codificador visual con un decodificador de texto. Con 239 millones de parámetros, se trata de un modelo de tamaño moderado, adecuado para tareas de captioning en entornos con recursos limitados. El nombre del modelo sugiere que es una versión "estudiante" (posiblemente destilada de un modelo mayor) y que ha pasado por un proceso de validación.
+El modelo `Jackson44/tourism-captioning-student-v2-validated` es un sistema de generación de descripciones de imágenes (image captioning) orientado al dominio turístico. Ha sido desarrollado por el usuario Jackson44 y subido al Hub de Hugging Face con la etiqueta `vision-encoder-decoder`, lo que indica una arquitectura que combina un codificador visual con un decodificador de texto. Con 239 millones de parámetros, se trata de un modelo de tamaño moderado, adecuado para tareas de captioning en entornos con recursos limitados. El nombre del modelo sugiere que es una versión "estudiante" (posiblemente destilada de un modelo mayor) y que ha pasado por un proceso de validación.
 
 La ficha técnica del autor es genérica y no aporta detalles sobre el entrenamiento, los datos utilizados ni las capacidades específicas. A pesar de ello, el modelo está disponible en formato `safetensors` y es compatible con la librería `transformers`, lo que facilita su integración en pipelines de visión y lenguaje. Su relevancia radica en la posibilidad de emplearlo para automatizar la descripción de fotografías turísticas, un caso de uso habitual en plataformas de viajes y contenido generado por usuarios.
 
@@ -29,8 +29,8 @@ En cuanto al entrenamiento, no se dispone de datos sobre el conjunto de imágene
 
 - Generación de descripciones de imágenes: el modelo es capaz de producir texto descriptivo a partir de una imagen de entrada, según su pipeline `image-text-to-text`.
 - Especialización en dominio turístico: por su nombre, se infiere que está orientado a generar leyendas para fotografías de lugares, monumentos, paisajes o experiencias de viaje.
-- Integración con transformers: al estar basado en la librería `transformers`, puede utilizarse con las APIs estándar de HuggingFace para inferencia y ajuste fino.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de HuggingFace Inference Endpoints.
+- Integración con transformers: al estar basado en la librería `transformers`, puede utilizarse con las APIs estándar de Hugging Face para inferencia y ajuste fino.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de Hugging Face Inference Endpoints.
 - No se han documentado capacidades adicionales como tool calling, agentes, razonamiento multi-paso, visión más allá del captioning, ni soporte de audio.
 
 ## Casos de uso
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: con 239 M de parámetros, la inferencia en precisión fp32 requiere aproximadamente 1 GB de VRAM (4 bytes por parámetro). Con cuantización a int8 o fp16, el requisito baja a unos 0,5-0,7 GB. No se han publicado valores exactos.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM debería ser suficiente para inferencia básica. Tarjetas como NVIDIA GTX 1050 Ti, RTX 2060 o superiores son adecuadas. Para entrenamiento o ajuste fino, se recomienda al menos 6-8 GB.
 - Compatibilidad con consumer GPU: sí, el modelo cabe holgadamente en GPUs de consumo medio y bajo.
-- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la API de HuggingFace Inference Endpoints. También es posible exportarlo a ONNX o TensorRT para optimización.
+- Opciones de despliegue: al ser un modelo de `transformers`, puede servirse con vLLM, TGI (Text Generation Inference) o mediante la API de Hugging Face Inference Endpoints. También es posible exportarlo a ONNX o TensorRT para optimización.
 - Latencia y throughput: no hay datos publicados. En una GPU moderna, se espera una latencia de decenas de milisegundos por imagen, pero depende del hardware y de la implementación.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jackson44/tourism-captioning-student-v2-validated
+- Modelo en Hugging Face: https://huggingface.co/Jackson44/tourism-captioning-student-v2-validated
 - Espacio asociado (posible demo): https://huggingface.co/spaces/jackson-daniel/tourism_v2
 - Repositorio del espacio (contenido): https://huggingface.co/spaces/jackson-daniel/tourism_v2/tree/main
 

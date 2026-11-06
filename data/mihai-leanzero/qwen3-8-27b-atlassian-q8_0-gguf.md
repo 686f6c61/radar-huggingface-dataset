@@ -112,7 +112,7 @@ Todas las variantes comparten licencia apache-2.0 y estan publicadas por el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pagina del portfolio del autor sobre los modelos Atlassian (write-up completo y evidencia por ronda): https://leanzero.net/portfolio/atlassian-models
 - LeanZero: https://leanzero.net

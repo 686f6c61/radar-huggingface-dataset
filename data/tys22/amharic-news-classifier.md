@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tys22/amharic-news-classifier` es un clasificador de texto diseñado para categorizar noticias en amárico. Fue desarrollado por el usuario tys22 y se encuentra alojado en HuggingFace. Se basa en la arquitectura XLM-RoBERTa, un modelo de lenguaje multilingüe de tipo transformer encodificador. Con un total de 278.048.262 parámetros, el modelo ha sido ajustado para la tarea de clasificación de noticias, aunque la información disponible no detalla el conjunto de datos utilizado ni el número de categorías.
+El modelo `tys22/amharic-news-classifier` es un clasificador de texto diseñado para categorizar noticias en amárico. Fue desarrollado por el usuario tys22 y se encuentra alojado en Hugging Face. Se basa en la arquitectura XLM-RoBERTa, un modelo de lenguaje multilingüe de tipo transformer encodificador. Con un total de 278.048.262 parámetros, el modelo ha sido ajustado para la tarea de clasificación de noticias, aunque la información disponible no detalla el conjunto de datos utilizado ni el número de categorías.
 
 La relevancia de este modelo radica en su adaptación al amárico, una lengua etíope con pocos recursos para el procesamiento del lenguaje natural. El repositorio contiene pesos en formato safetensors y está etiquetado para su uso con la biblioteca transformers en el pipeline `text-classification`. La ficha pública es una plantilla autogenerada, por lo que gran parte de los detalles técnicos y de entrenamiento no están disponibles.
 
@@ -50,12 +50,12 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia: aproximadamente 2,5 GB en FP32 y 1,2 GB en FP16, considerando 278 millones de parámetros. En CPU, el modelo puede ejecutarse con 8 GB de RAM.
 - GPU recomendadas: cualquier GPU moderna con 4 GB de VRAM o superior (por ejemplo, NVIDIA T4, RTX 3060, A10). No se requieren GPUs de alta gama.
 - Sí es ejecutable en GPUs de consumo, como la serie RTX 30/40.
-- Opciones de despliegue: puede cargarse directamente con la biblioteca transformers mediante el pipeline de `text-classification`, o servirse en un endpoint personalizado. Al tratarse de un modelo encoder, las soluciones como vLLM o llama.cpp no son idóneas. Se sugiere usar HuggingFace Inference Endpoints o una API creada con FastAPI.
+- Opciones de despliegue: puede cargarse directamente con la biblioteca transformers mediante el pipeline de `text-classification`, o servirse en un endpoint personalizado. Al tratarse de un modelo encoder, las soluciones como vLLM o llama.cpp no son idóneas. Se sugiere usar Hugging Face Inference Endpoints o una API creada con FastAPI.
 - Latencia y throughput: no disponibles sin evaluaciones internas. En una GPU T4, la clasificación de textos cortos suele ser de milisegundos, pero debe confirmarse.
 
 ## Comparativa con modelos similares
 
-No hay datos suficientes para una comparación detallada. Se identifican dos modelos similares en HuggingFace: `fikreanteneh/AmharicNewsClassifier` y `tys22/amharic-sentiment-xlmr-v2`. Ambos son clasificadores de amárico basados en XLM-RoBERTa, pero sus especificaciones y resultados no están disponibles. El segundo está orientado a análisis de sentimiento en lugar de noticias. A continuación, una tabla orientativa:
+No hay datos suficientes para una comparación detallada. Se identifican dos modelos similares en Hugging Face: `fikreanteneh/AmharicNewsClassifier` y `tys22/amharic-sentiment-xlmr-v2`. Ambos son clasificadores de amárico basados en XLM-RoBERTa, pero sus especificaciones y resultados no están disponibles. El segundo está orientado a análisis de sentimiento en lugar de noticias. A continuación, una tabla orientativa:
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Tarea |
 |---|---|---|---|---|---|

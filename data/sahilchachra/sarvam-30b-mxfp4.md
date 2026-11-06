@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) para establecer u
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/sahilchachra/sarvam-30b-MXFP4
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/sahilchachra/sarvam-30b-MXFP4
 - Modelo base: https://huggingface.co/sarvamai/sarvam-30b
 - PR de mlx-lm para soporte de `sarvam_moe`: https://github.com/ml-explore/mlx-lm/pull/991
 - Ficha en FitMyLLM: https://www.fitmyllm.com/model/sarvam-30b

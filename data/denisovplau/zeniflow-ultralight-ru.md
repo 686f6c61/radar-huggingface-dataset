@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zeniflow-ultralight-RU es un modelo publicado en HuggingFace por el usuario denisovplau bajo el identificador `denisovplau/zeniflow-ultralight-RU`. El repositorio se creó el 28 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones, y su model card no contiene más información que el bloque de metadatos de licencia. No se dispone por tanto de datos verificables sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento o idiomas soportados.
+zeniflow-ultralight-RU es un modelo publicado en Hugging Face por el usuario denisovplau bajo el identificador `denisovplau/zeniflow-ultralight-RU`. El repositorio se creó el 28 de octubre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones, y su model card no contiene más información que el bloque de metadatos de licencia. No se dispone por tanto de datos verificables sobre arquitectura, número de parámetros, longitud de contexto, datos de entrenamiento o idiomas soportados.
 
 El sufijo «RU» del nombre y el término «ultralight» sugieren, respectivamente, una orientación al idioma ruso y un diseno de bajo coste computacional, pero se trata de inferencias a partir del nombre y no de información confirmada por el autor. La ficha de modelo no incluye pipeline declarado, ni idiomas, ni resultados de evaluación, ni instrucciones de uso.
 
@@ -68,7 +68,7 @@ No es posible establecer una comparativa rigurosa: se desconoce el número de pa
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| zeniflow-ultralight-RU | no disponible | no disponible | no estándar (`pohui`) | HuggingFace, 0 descargas |
+| zeniflow-ultralight-RU | no disponible | no disponible | no estándar (`pohui`) | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,6 +86,6 @@ Para construir una comparativa válida habría que determinar primero el tamano 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/denisovplau/zeniflow-ultralight-RU
+- Repositorio en Hugging Face: https://huggingface.co/denisovplau/zeniflow-ultralight-RU
 - Fichero de licencia referenciado en la model card: `LICENSE` dentro del propio repositorio (no se proporciona URL directa en la información disponible)
 - Artículo técnico, blog, repositorio de código o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`emile2006/qwen2.5-1.5b-support-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario emile2006 en HuggingFace. Se trata de un adaptador LoRA entrenado con la librería Unsloth sobre la versión cuantizada en 4 bits del modelo base (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), orientado presumiblemente a tareas de soporte (support), aunque la model card no detalla el dataset ni el objetivo concreto del entrenamiento.
+`emile2006/qwen2.5-1.5b-support-lora` es un ajuste fino (fine-tuning) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario emile2006 en Hugging Face. Se trata de un adaptador LoRA entrenado con la librería Unsloth sobre la versión cuantizada en 4 bits del modelo base (`unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit`), orientado presumiblemente a tareas de soporte (support), aunque la model card no detalla el dataset ni el objetivo concreto del entrenamiento.
 
 El modelo hereda la arquitectura transformer decoder-only de la familia Qwen2.5, con 1.500 millones de parámetros y una ventana de contexto de 32.768 tokens en el modelo base. Al ser un ajuste LoRA, el repositorio contiene únicamente los pesos del adaptador (0,1 GB), no el modelo completo, por lo que para su uso es necesario cargar el modelo base y aplicar el adaptador.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| emile2006/qwen2.5-1.5b-support-lora | 1.5B (LoRA) | 32.768 | apache-2.0 | HuggingFace (adaptador) | Ajuste específico, sin benchmarks |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | apache-2.0 | HuggingFace | Modelo base oficial, con benchmarks publicados |
-| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 128.000 | Llama 3.2 Community License | HuggingFace | Alternativa de tamaño similar, contexto mayor |
-| google/gemma-2-2b-it | 2.6B | 8.192 | Gemma Terms of Use | HuggingFace | Mayor tamaño, contexto menor |
+| emile2006/qwen2.5-1.5b-support-lora | 1.5B (LoRA) | 32.768 | apache-2.0 | Hugging Face (adaptador) | Ajuste específico, sin benchmarks |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.5B | 32.768 | apache-2.0 | Hugging Face | Modelo base oficial, con benchmarks publicados |
+| meta-llama/Llama-3.2-1B-Instruct | 1.2B | 128.000 | Llama 3.2 Community License | Hugging Face | Alternativa de tamaño similar, contexto mayor |
+| google/gemma-2-2b-it | 2.6B | 8.192 | Gemma Terms of Use | Hugging Face | Mayor tamaño, contexto menor |
 
 ## Limitaciones y advertencias
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/emile2006/qwen2.5-1.5b-support-lora
+- Hugging Face: https://huggingface.co/emile2006/qwen2.5-1.5b-support-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct-unsloth-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Modelo oficial Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

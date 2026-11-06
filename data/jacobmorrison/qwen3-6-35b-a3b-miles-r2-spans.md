@@ -98,7 +98,7 @@ El modelo se situa por encima de Gemma4-31B y Gemma4-26B-A4B en tareas de codigo
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-spans
+- Hugging Face (este checkpoint): https://huggingface.co/jacobmorrison/qwen3.6-35b-a3b-miles-r2-spans
 - Blog oficial Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Licencia del modelo original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - Repositorio original Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

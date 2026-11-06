@@ -96,7 +96,7 @@ Nota: los datos de los modelos alternativos corresponden a especificaciones publ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-6bit
 - Modelo base: https://huggingface.co/Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1
 - Repositorio GGUF de origen (citado en la model card): https://huggingface.co/mradermacher/Nyx-RP-9B-Instruct-2608-v1-GGUF
 - Libreria mlx-lm: https://github.com/ml-explore/mlx-lm

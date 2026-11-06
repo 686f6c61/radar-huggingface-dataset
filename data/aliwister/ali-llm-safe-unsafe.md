@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Ali-llm-safe-unsafe es un modelo de generacion de texto publicado por el usuario aliwister en HuggingFace, con un total de 2.049.054.720 parametros (aproximadamente 2,05 mil millones) y distribuido en formato safetensors bajo licencia Apache 2.0. Se trata de un ajuste (finetune) del modelo aliwister/ali-llm-safe, segun indican los metadatos de base_model, y esta etiquetado como recurso de investigacion en seguridad (safety-research) con un enfoque de aprendizaje curricular (curriculum-learning) y continued pretraining.
+Ali-llm-safe-unsafe es un modelo de generacion de texto publicado por el usuario aliwister en Hugging Face, con un total de 2.049.054.720 parametros (aproximadamente 2,05 mil millones) y distribuido en formato safetensors bajo licencia Apache 2.0. Se trata de un ajuste (finetune) del modelo aliwister/ali-llm-safe, segun indican los metadatos de base_model, y esta etiquetado como recurso de investigacion en seguridad (safety-research) con un enfoque de aprendizaje curricular (curriculum-learning) y continued pretraining.
 
-El problema que aborda se enmarca en el estudio de comportamientos seguros e inseguros en modelos de lenguaje: las etiquetas apuntan a un uso educativo y de investigacion, no a un despliegue de produccion convencional. El modelo es monolingue en ingles (idioma declarado: en) y su acceso es restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de poder descargarlo.
+El problema que aborda se enmarca en el estudio de comportamientos seguros e inseguros en modelos de lenguaje: las etiquetas apuntan a un uso educativo y de investigacion, no a un despliegue de produccion convencional. El modelo es monolingue en ingles (idioma declarado: en) y su acceso es restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de poder descargarlo.
 
 La relevancia actual es limitada y experimental: no hay descargas ni likes registrados en el momento de redactar esta ficha, no se publican resultados de benchmarks y la arquitectura concreta, la longitud de contexto y los datos de entrenamiento no estan documentados en la informacion disponible. Debe tratarse, por tanto, como una pieza de investigacion mas que como un modelo listo para produccion.
 
@@ -22,7 +22,7 @@ La relevancia actual es limitada y experimental: no hay descargas ni likes regis
 | Formato de pesos | safetensors |
 | Modelo base | aliwister/ali-llm-safe |
 | Requiere codigo remoto | si (etiqueta custom_code, requiere trust_remote_code=True) |
-| Acceso | restringido (gated, requiere aceptar condiciones en HuggingFace) |
+| Acceso | restringido (gated, requiere aceptar condiciones en Hugging Face) |
 | Tamano del repositorio | 4,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -82,7 +82,7 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, porq
 
 - Modelo experimental con cero descargas y cero likes en el momento de redactar la ficha: no hay validacion por parte de la comunidad.
 - No se publican benchmarks, por lo que se desconoce su rendimiento real frente a alternativas de tamano similar.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que complica la automatizacion en CI/CD.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que complica la automatizacion en CI/CD.
 - Requiere trust_remote_code=True (etiqueta custom_code), lo que implica ejecutar codigo del repositorio y anade riesgo de seguridad en el despliegue.
 - Idiomas: solo ingles segun el campo declarado; no se garantiza un comportamiento correcto en castellano u otros idiomas.
 - Longitud de contexto desconocida: no se puede planificar su uso en tareas de contexto largo sin verificacion previa.
@@ -93,6 +93,6 @@ La comparativa se limita a parametros, contexto, licencia y disponibilidad, porq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aliwister/ali-llm-safe-unsafe
+- Modelo en Hugging Face: https://huggingface.co/aliwister/ali-llm-safe-unsafe
 - Modelo base: https://huggingface.co/aliwister/ali-llm-safe
 - Papers, blogs, repositorios o demos adicionales: no disponible en la informacion proporcionada.

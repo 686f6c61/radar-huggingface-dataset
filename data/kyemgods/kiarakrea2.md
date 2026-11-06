@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kiarakrea2 es un modelo publicado en HuggingFace por el usuario Kyemgods bajo el identificador `Kyemgods/Kiarakrea2`. La model card asociada no contiene más que la declaración de licencia (`apache-2.0`), sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El repositorio ocupa 0,2 GB, lo que sugiere un artefacto de pequeño tamaño, pero no permite determinar si se trata de un modelo completo, un adaptador LoRA, un checkpoint parcial o pesos en formato cuantizado.
+Kiarakrea2 es un modelo publicado en Hugging Face por el usuario Kyemgods bajo el identificador `Kyemgods/Kiarakrea2`. La model card asociada no contiene más que la declaración de licencia (`apache-2.0`), sin descripción, sin arquitectura declarada, sin datos de entrenamiento y sin instrucciones de uso. El repositorio ocupa 0,2 GB, lo que sugiere un artefacto de pequeño tamaño, pero no permite determinar si se trata de un modelo completo, un adaptador LoRA, un checkpoint parcial o pesos en formato cuantizado.
 
 En el momento de la consulta el modelo acumula 0 descargas y 0 likes, está etiquetado con `region:us` y no tiene pipeline declarado. No se dispone de información sobre idiomas soportados, longitud de contexto, tokenizador ni formato de pesos. La búsqueda web realizada no ha devuelto ningún resultado relacionado con el modelo: los enlaces recuperados corresponden a la comuna suiza de Lüscherz y son ruido sin relación con el artefacto.
 
@@ -55,7 +55,7 @@ Los siguientes escenarios son hipoteticos y condicionales: solo tienen sentido s
 - Clasificacion o etiquetado de texto de dominio muy acotado: si el modelo es funcional y se ajusta con ejemplos propios, podria emplearse para tareas simples de clasificacion, extraccion de campos o normalizacion de texto en lotes pequenos.
 - Generacion de texto auxiliar sin requisitos de calidad alta: borradores, resumenes de parrafos cortos o reformulacion de frases en entornos internos donde el coste por token de un modelo grande no esta justificado.
 - Base para experimentos de ajuste fino: si el artefacto es un checkpoint base o un adaptador, podria servir como punto de partida para experimentos academicos de fine-tuning con recursos limitados.
-- Docencia y formacion: como ejemplo practico de carga y despliegue de un modelo de HuggingFace en un curso, independientemente de su calidad final.
+- Docencia y formacion: como ejemplo practico de carga y despliegue de un modelo de Hugging Face en un curso, independientemente de su calidad final.
 
 En todos los casos, el primer paso obligatorio es descargar el repositorio, inspeccionar `config.json`, el tokenizador y los ficheros de pesos, y comprobar que la licencia apache-2.0 declarada por el autor es efectivamente aplicable al contenido publicado.
 
@@ -92,7 +92,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Kyemgods/Kiarakrea2
+- Hugging Face: https://huggingface.co/Kyemgods/Kiarakrea2
 - Model card: incluida en el repositorio anterior, sin contenido tecnico mas alla de la declaracion de licencia apache-2.0.
 - Paper: no disponible.
 - Repositorio de codigo: no disponible.

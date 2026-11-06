@@ -84,6 +84,6 @@ No se dispone de información comparativa con otros modelos en la model card. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Davidmg0815/Qwen3.8-27B-MTP-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Davidmg0815/Qwen3.8-27B-MTP-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-27B/blob/main/LICENSE

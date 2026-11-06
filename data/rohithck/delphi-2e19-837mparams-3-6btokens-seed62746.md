@@ -87,8 +87,8 @@ La comparacion de rendimiento con estas alternativas no esta disponible, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-2e19-837Mparams-3.6Btokens-seed62746
-- Suite completa Delphi en HuggingFace: https://huggingface.co/marin-community
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-2e19-837Mparams-3.6Btokens-seed62746
+- Suite completa Delphi en Hugging Face: https://huggingface.co/marin-community
 - Blog de Delphi ("Scaling Laws That Extrapolate 300× Past the Fit"): https://openathena.ai/blog/delphi
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Codigo de la receta (completed_adamh.py): https://github.com/marin-community/marin/blob/fded7179f373834a320f6c30dc68bd30476e07ae/experiments/references/completed_adamh.py

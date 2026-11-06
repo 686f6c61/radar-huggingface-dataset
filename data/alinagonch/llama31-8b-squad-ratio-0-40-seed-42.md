@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.40-seed-42` es un artefacto publicado en HuggingFace por el usuario AlinaGonch. Por el propio identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Llama 3.1 de 8.000 millones de parámetros sobre el conjunto de datos SQuAD, con un parametro de proporcion (`ratio`) de 0,40 y semilla aleatoria 42. El repositorio tiene un tamano de 0,2 GB, lo que es incompatible con los pesos completos de un modelo de 8B en cualquier precision habitual (un 8B en bf16 ocupa aproximadamente 16 GB), y es compatible con un adaptador tipo LoRA o con un subconjunto parcial de pesos. Esta observacion es una inferencia a partir del tamano del repositorio, no un dato confirmado por el autor.
+El modelo identificado como `AlinaGonch/llama31-8b-squad-ratio-0.40-seed-42` es un artefacto publicado en Hugging Face por el usuario AlinaGonch. Por el propio identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Llama 3.1 de 8.000 millones de parámetros sobre el conjunto de datos SQuAD, con un parametro de proporcion (`ratio`) de 0,40 y semilla aleatoria 42. El repositorio tiene un tamano de 0,2 GB, lo que es incompatible con los pesos completos de un modelo de 8B en cualquier precision habitual (un 8B en bf16 ocupa aproximadamente 16 GB), y es compatible con un adaptador tipo LoRA o con un subconjunto parcial de pesos. Esta observacion es una inferencia a partir del tamano del repositorio, no un dato confirmado por el autor.
 
-La model card publicada es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. No hay pipeline declarado, no hay idiomas declarados, no hay licencia declarada y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Los resultados de busqueda web asociados no guardan ninguna relacion con el modelo: son hilos de Stack Overflow sobre la API de Facebook, por lo que no aportan informacion tecnica utilizable.
+La model card publicada es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, hiperparametros, evaluacion) aparecen como `[More Information Needed]`. No hay pipeline declarado, no hay idiomas declarados, no hay licencia declarada y el repositorio registra 0 descargas y 0 likes en el momento de la consulta. Los resultados de busqueda web asociados no guardan ninguna relacion con el modelo: son hilos de Stack Overflow sobre la API de Facebook, por lo que no aportan informacion tecnica utilizable.
 
 En consecuencia, esta ficha es necesariamente incompleta: documenta lo que puede verificarse (identificador, autor, libreria, tamano, fechas, tags) y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. Se recomienda tratar el modelo como un experimento de investigacion sin documentar y no como un artefacto listo para produccion.
 
@@ -29,7 +29,7 @@ En consecuencia, esta ficha es necesariamente incompleta: documenta lo que puede
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura concreta del ajuste. El identificador sugiere un fine-tuning del modelo Llama 3.1 8B, que es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, atencion con RoPE y ventana de contexto de 128.000 tokens en su version original. Sin embargo, el autor no confirma ni la arquitectura base ni el metodo de ajuste. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion del impacto ambiental del aprendizaje automatico, citado en la plantilla por defecto de HuggingFace; no es una referencia al entrenamiento del modelo y no debe interpretarse como tal.
+No hay informacion publicada sobre la arquitectura concreta del ajuste. El identificador sugiere un fine-tuning del modelo Llama 3.1 8B, que es un transformer decoder-only con normalizacion RMSNorm, activacion SwiGLU, atencion con RoPE y ventana de contexto de 128.000 tokens en su version original. Sin embargo, el autor no confirma ni la arquitectura base ni el metodo de ajuste. El tag `arxiv:1910.09700` que aparece en el repositorio corresponde al articulo de Lacoste et al. (2019) sobre estimacion del impacto ambiental del aprendizaje automatico, citado en la plantilla por defecto de Hugging Face; no es una referencia al entrenamiento del modelo y no debe interpretarse como tal.
 
 Respecto a los datos y al procedimiento, el nombre del repositorio es la unica fuente: `squad` apunta al dataset Stanford Question Answering Dataset, orientado a comprension lectora extractiva; `ratio-0.40` sugiere que se entreno sobre un 40 % del conjunto o con una proporcion de mezcla de 0,40; `seed-42` indica la semilla usada para el muestreo o la inicializacion. No se documentan el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases de RLHF, DPO o SFT, ni los hiperparametros (tasa de aprendizaje, regimen de precision, epocas). Tampoco hay informacion sobre decodificacion especulativa, atencion lineal ni cualquier otra innovacion tecnica.
 
@@ -46,7 +46,7 @@ Respecto a los datos y al procedimiento, el nombre del repositorio es la unica f
 - Capacidades multilingues: no disponibles; el dataset SQuAD es mayoritariamente en ingles.
 - Modo de razonamiento explicito (thinking mode): no disponible.
 - Vision o audio: no disponible; el repositorio no contiene componentes multimodales.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede desplegarse a traves de HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el artefacto puede desplegarse a traves de Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ Dado que no existe documentacion funcional, los casos siguientes son hipotesis d
 - Extraccion de respuestas sobre documentos: si el ajuste es funcional, podria emplearse para localizar respuestas a preguntas concretas dentro de parrafos de documentacion tecnica o normativa en ingles.
 - Construccion de un pipeline de question answering con recuperacion (RAG): combinado con un recuperador de pasajes, el modelo podria actuar como componente lector que extrae la respuesta del fragmento recuperado.
 - Estudio de olvido catastrofico: al ser un ajuste sobre un subconjunto de datos, es util para analizar como el fine-tuning restringido degrada capacidades generales del modelo base.
-- Docencia y formacion: como ejemplo practico de publicacion de un modelo ajustado en HuggingFace y de los riesgos de documentar deficientemente un artefacto.
+- Docencia y formacion: como ejemplo practico de publicacion de un modelo ajustado en Hugging Face y de los riesgos de documentar deficientemente un artefacto.
 - Analisis de sesgos en QA extractivo: SQuAD contiene sesgos conocidos de anotacion; el modelo podria usarse para estudiar como se propagan en las respuestas generadas.
 
 ## Benchmarks y rendimiento
@@ -75,7 +75,7 @@ Las siguientes cifras son estimaciones estandar para un modelo denso de 8.000 mi
 - VRAM en cuantizacion de 4 bits (GPTQ, AWQ, GGUF Q4_K_M): aproximadamente 4,5-6 GB.
 - GPU de datacenter: A100 40/80 GB, H100 80 GB, L40S o A6000 para servir con margen de contexto largo.
 - GPU de consumo: cabe en una RTX 4090 (24 GB) en bf16 si se limita el contexto, y con holgura en cuantizacion de 4 bits; tambien en RTX 3090 (24 GB), RTX 4080 (16 GB) y RTX 4070 Ti (12 GB) en 4 bits.
-- Despliegue: al no publicarse pesos GGUF, no hay evidencia de compatibilidad con llama.cpp u Ollama. El tag `endpoints_compatible` sugiere despliegue mediante HuggingFace Inference Endpoints. El tamano de 0,2 GB del repositorio hace dudar de que el checkpoint sea autocontenido, por lo que habria que verificar que los pesos cargan correctamente antes de planificar un despliegue.
+- Despliegue: al no publicarse pesos GGUF, no hay evidencia de compatibilidad con llama.cpp u Ollama. El tag `endpoints_compatible` sugiere despliegue mediante Hugging Face Inference Endpoints. El tamano de 0,2 GB del repositorio hace dudar de que el checkpoint sea autocontenido, por lo que habria que verificar que los pesos cargan correctamente antes de planificar un despliegue.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -106,7 +106,7 @@ No se dispone de datos que permitan comparar el rendimiento de este ajuste con e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.40-seed-42
+- Modelo en Hugging Face: https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.40-seed-42
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto ambiental, ajeno al entrenamiento del modelo): https://arxiv.org/abs/1910.09700
 - Modelo base presumible, Llama 3.1 8B: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Dataset presumible, SQuAD: https://huggingface.co/datasets/rajpurkar/squad

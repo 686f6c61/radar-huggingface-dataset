@@ -76,7 +76,7 @@ La comparativa se basa en los datos disponibles de la model card. El pack 6bit o
 
 ## Enlaces
 
-- [HuggingFace: AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit-MTP)
+- [Hugging Face: AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit-MTP](https://huggingface.co/AutomatosX/AX-Qwen3.6-35B-A3B-MLX-AXQ-6bit-MTP)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [Certificado Tier 1](https://github.com/defai-digital/axquant/blob/main/docs/certifications/qwen36-35b-axq6-tier1.md)
 - [Índice de certificaciones AXQuant](https://github.com/defai-digital/axquant/blob/main/docs/certifications/README.md)

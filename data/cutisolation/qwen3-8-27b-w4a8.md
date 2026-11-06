@@ -78,7 +78,7 @@ No se dispone de información sobre otros modelos comparables en la misma catego
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/CuTIsolation/Qwen3.8-27B-W4A8)
+- [Modelo en Hugging Face](https://huggingface.co/CuTIsolation/Qwen3.8-27B-W4A8)
 - [Modelo base Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Repositorio de ComfyUI](https://github.com/comfyanonymous/ComfyUI)
 - [Herramienta de conversión convert_qwen35_w4a8.py](https://github.com/comfyanonymous/ComfyUI) (incluida en el repositorio de ComfyUI)

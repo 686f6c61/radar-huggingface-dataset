@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-chrono5-w20-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo el tag `sn38-nanochrono`. Se trata de un checkpoint de aproximadamente 2.018 millones de parametros (2,02 B) en formato safetensors, con licencia Apache 2.0 y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargarlo.
+`alfred8995/r18-a2-w13-k-chrono5-w20-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo el tag `sn38-nanochrono`. Se trata de un checkpoint de aproximadamente 2.018 millones de parametros (2,02 B) en formato safetensors, con licencia Apache 2.0 y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de descargarlo.
 
 El nombre del repositorio sigue un patron de hiperparametros codificados (`r18`, `a2`, `w13`, `k`, `chrono5`, `w20`, `s100`) que sugiere un experimento de ajuste fino o de entrenamiento configurable, probablemente dentro de una familia de modelos denominada "nanochrono". No se dispone de documentacion oficial, model card sustantiva ni pipeline declarado en la informacion proporcionada, por lo que la mayor parte de las especificaciones tecnicas no estan confirmadas.
 
@@ -44,7 +44,7 @@ El unico dato estructural verificable es el recuento de parametros a partir de l
 - Reproduccion de experimentos: si el autor publica la configuracion de entrenamiento asociada al nombre `r18-a2-w13-k-chrono5-w20-s100`, el checkpoint serviria para replicar el ajuste en un entorno controlado.
 - Ajuste fino posterior (fine-tuning): con 2,02 B de parametros, el modelo es manejable en una sola GPU de 24 GB en precision reducida o con tecnicas de parametros eficientes (LoRA/QLoRA), lo que permite experimentar con dominios concretos una vez validada su calidad base.
 - Evaluacion comparativa interna: usar el modelo como linea base en pruebas de generacion de texto frente a otros modelos de ~2 B, siempre que se establezca primero una evaluacion propia, ya que no hay benchmarks publicados.
-- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints en HuggingFace con acceso gated y licencia permisiva, para ilustrar flujos de distribucion de modelos.
+- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints en Hugging Face con acceso gated y licencia permisiva, para ilustrar flujos de distribucion de modelos.
 - Prototipado de bajo coste: si en pruebas propias el modelo muestra un comportamiento aceptable, podria emplearse en tareas de generacion sencilla en local (resumen, reescritura) con cuantizacion, aunque esto requiere validacion previa por parte del equipo.
 
 ## Benchmarks y rendimiento
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono5-w20-s100 | 2,02 B | no disponible | Apache 2.0 | Gated en HuggingFace | Sin benchmarks ni model card sustantiva |
+| alfred8995/r18-a2-w13-k-chrono5-w20-s100 | 2,02 B | no disponible | Apache 2.0 | Gated en Hugging Face | Sin benchmarks ni model card sustantiva |
 | Modelos de ~2 B de referencia (p. ej. familias tipo Qwen, Gemma o SmolLM en ese rango) | ~1,5-3 B | variable, habitualmente 4k-128k | variable (a menudo permisiva) | Publicos | Con benchmarks y documentacion; no se dispone de comparacion directa con este checkpoint |
 | Alternativas comparables del mismo autor/familia `sn38-nanochrono` | no disponible | no disponible | no disponible | no disponible | No se han identificado en la informacion proporcionada |
 
@@ -75,12 +75,12 @@ No se dispone de datos objetivos para establecer una comparacion cuantitativa co
 - Riesgo elevado de alucinacion y comportamiento impredecible: sin benchmarks ni evaluaciones publicadas, no hay evidencia de rendimiento en ninguna tarea.
 - Sesgos desconocidos: al no documentarse la composicion del dataset, no es posible identificar sesgos de genero, etnicos, linguisticos o de otro tipo.
 - Limitaciones de contexto e idioma no declaradas: se desconoce la ventana de contexto real y los idiomas cubiertos.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade una dependencia del autor para su uso, incluso con licencia Apache 2.0.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade una dependencia del autor para su uso, incluso con licencia Apache 2.0.
 - Licencia Apache 2.0: permite uso comercial y modificacion, pero el usuario asume toda la responsabilidad sobre el comportamiento del modelo; la licencia no garantiza idoneidad tecnica.
 - No apto para produccion sin validacion previa: con 4 descargas y 0 likes, no existe comunidad ni evidencia de uso real.
 - Fecha de creacion futura en los metadatos (2026-10-29): conviene verificar la consistencia de los metadatos del repositorio antes de confiar en ellos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w20-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono5-w20-s100
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

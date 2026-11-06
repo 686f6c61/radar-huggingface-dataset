@@ -87,7 +87,7 @@ Las versiones de 4B y 8B pertenecen a la misma serie de embeddings y reranking d
 - Idiomas no declarados en esta conversión: la model card no especifica la lista de idiomas soportados, aunque el modelo base anuncia más de 100.
 - Sesgos: no documentados en la información disponible. Al heredar los pesos del modelo base, reproduce los sesgos presentes en sus datos de entrenamiento.
 - Riesgo de recuperación irrelevante: en dominios muy especializados, un modelo de 0,6B puede producir embeddings poco discriminativos; conviene validar con datos propios antes de producción.
-- Madurez del repositorio: 0 descargas y 0 likes, con fecha de creación 2026-10-11 según los metadatos de HuggingFace; no hay evidencia de uso en producción ni de mantenimiento posterior.
+- Madurez del repositorio: 0 descargas y 0 likes, con fecha de creación 2026-10-11 según los metadatos de Hugging Face; no hay evidencia de uso en producción ni de mantenimiento posterior.
 - El repositorio del modelo original no incluye fichero LICENSE; su model card declara Apache 2.0, y el repositorio de esta conversión incluye el texto de dicha licencia.
 
 ## Enlaces

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Samanthagarcia/multimodal-generation-run1` es un repositorio publicado en HuggingFace cuyo contenido declarado no es un modelo entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre generación multimodal. La propia model card indica de forma explícita que el material es exploratorio y que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado. Se trata, por tanto, de un artefacto documental, no de un modelo listo para inferencia.
+`Samanthagarcia/multimodal-generation-run1` es un repositorio publicado en Hugging Face cuyo contenido declarado no es un modelo entrenado, sino un conjunto de notas de investigación y un esbozo de experimento sobre generación multimodal. La propia model card indica de forma explícita que el material es exploratorio y que no se reclama ninguna mejora de benchmark, ablación completada, código liberado ni checkpoint entrenado. Se trata, por tanto, de un artefacto documental, no de un modelo listo para inferencia.
 
 El repositorio incluye un archivo de pesos en formato safetensors con 49.600 parámetros totales, una cifra que corresponde a un modelo extremadamente pequeño (del orden de 0,05 millones de parámetros). El tamaño del repositorio es de 0,0 GB y no se especifica ni la arquitectura concreta, ni la longitud de contexto, ni los idiomas soportados, ni el pipeline de uso. La etiqueta `transformer` aparece entre los tags, pero no hay documentación técnica que confirme una topología o un proceso de entrenamiento concretos.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada como modelo de producción, pero puede ser de i
 | Idiomas soportados | No disponible |
 | Licencia | MIT |
 | Formato de pesos | safetensors |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamano del repositorio | 0,0 GB |
 | Fecha de creacion | 2026-09-28 |
 | Ultima actualizacion | 2026-09-28 |
@@ -47,7 +47,7 @@ Tampoco hay datos sobre el entrenamiento: no se indica el numero de tokens proce
 - Plantilla metodologica para disenar experimentos multimodales: el repositorio separa explicitamente pregunta de investigacion, factores de confusion probables, propuesta de comparacion contra baselines emparejados y criterios de reproducibilidad, por lo que puede usarse como guia de estructura al planificar un estudio propio.
 - Revision de practicas de reporte en investigacion abierta: las notas insisten en que cualquier resultado futuro debe ir acompanado de versiones de dataset, comandos, semillas, hardware y registros en bruto, lo que sirve como lista de comprobacion para revisores o equipos de ML.
 - Analisis de sesgos de seleccion en evaluacion multimodal: el documento menciona confounders y modos de fallo, lo que resulta util como punto de partida para discutir que variables hay que controlar antes de comparar modelos.
-- Material didactico en cursos de posgrado: sirve para ilustrar la diferencia entre un plan de investigacion y un resultado experimental, un error frecuente al leer repositorios de HuggingFace.
+- Material didactico en cursos de posgrado: sirve para ilustrar la diferencia entre un plan de investigacion y un resultado experimental, un error frecuente al leer repositorios de Hugging Face.
 - Auditoria de artefactos publicados: permite ejemplificar como un repositorio etiquetado con `safetensors` y `transformer` puede no contener un modelo utilizable, algo relevante para quien automatiza la seleccion de modelos en un catalogo interno.
 - Base para discusion de licencias y terminos de datos: la model card advierte de que la licencia MIT del repositorio no cubre los terminos de las fuentes de datos externas, lo que es un caso practico para equipos juridicos o de cumplimiento.
 - Inferencia real de texto o multimodal: no recomendada. No hay evidencia de entrenamiento, tokenizador, configuracion ni pipeline publicados, por lo que el safetensors de 49.600 parametros no puede emplearse como modelo de generacion en produccion.
@@ -89,7 +89,7 @@ No disponible. No se han identificado modelos comparables, porque el repositorio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Samanthagarcia/multimodal-generation-run1
+- Hugging Face: https://huggingface.co/Samanthagarcia/multimodal-generation-run1
 - `summary.md`: artefacto principal de las notas, disponible en el repositorio (ruta indicada en la model card).
 - `README.md`: documentacion del repositorio (ruta indicada en la model card).
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

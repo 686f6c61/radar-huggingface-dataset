@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `Miiche/visualrl-qwen3vl2b-ppo1-visionsr1-fix` es un checkpoint publicado en HuggingFace por el usuario Miiche. El repositorio ocupa 27,1 GB y fue creado y actualizado el 12 de septiembre de 2026, con un lapso de apenas diez minutos entre ambas operaciones, lo que sugiere una subida automatizada o un volcado de artefactos de entrenamiento. Registra 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un modelo practicamente sin validacion por parte de la comunidad.
+El modelo identificado como `Miiche/visualrl-qwen3vl2b-ppo1-visionsr1-fix` es un checkpoint publicado en Hugging Face por el usuario Miiche. El repositorio ocupa 27,1 GB y fue creado y actualizado el 12 de septiembre de 2026, con un lapso de apenas diez minutos entre ambas operaciones, lo que sugiere una subida automatizada o un volcado de artefactos de entrenamiento. Registra 0 descargas y 1 like en el momento de la consulta, por lo que se trata de un modelo practicamente sin validacion por parte de la comunidad.
 
-El propio identificador del repositorio aporta las unicas pistas sobre su naturaleza: la cadena `qwen3vl2b` apunta a un modelo base multimodal de la familia Qwen3-VL con aproximadamente 2.000 millones de parametros; `ppo1` sugiere un ajuste mediante optimizacion de politica proximal (PPO), es decir, aprendizaje por refuerzo; y `visionsr1` podria referirse a una tarea de superresolucion de imagen o a un conjunto de datos de vision concreto. Ninguno de estos extremos esta confirmado por la ficha de HuggingFace, que no declara pipeline, licencia ni idiomas.
+El propio identificador del repositorio aporta las unicas pistas sobre su naturaleza: la cadena `qwen3vl2b` apunta a un modelo base multimodal de la familia Qwen3-VL con aproximadamente 2.000 millones de parametros; `ppo1` sugiere un ajuste mediante optimizacion de politica proximal (PPO), es decir, aprendizaje por refuerzo; y `visionsr1` podria referirse a una tarea de superresolucion de imagen o a un conjunto de datos de vision concreto. Ninguno de estos extremos esta confirmado por la ficha de Hugging Face, que no declara pipeline, licencia ni idiomas.
 
 La relevancia de este checkpoint es, por tanto, limitada y de caracter experimental: se enmarca en el trabajo reciente de aplicar tecnicas de RL a modelos de vision-lenguaje de tamano reducido, pero carece de documentacion publica que permita evaluarlo. Cualquier uso en produccion requeriria una inspeccion directa de los pesos y del codigo de entrenamiento, ausentes en la informacion disponible.
 
@@ -71,12 +71,12 @@ No se dispone de datos verificables para establecer una comparativa rigurosa. No
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| visualrl-qwen3vl2b-ppo1-visionsr1-fix | no disponible | no disponible | no disponible | HuggingFace, 0 descargas | no disponible |
+| visualrl-qwen3vl2b-ppo1-visionsr1-fix | no disponible | no disponible | no disponible | Hugging Face, 0 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la ficha de HuggingFace no declara pipeline, licencia, idiomas ni formato de pesos, lo que impide evaluar el modelo con criterios minimos de rigor.
+- Ausencia total de documentacion: la ficha de Hugging Face no declara pipeline, licencia, idiomas ni formato de pesos, lo que impide evaluar el modelo con criterios minimos de rigor.
 - Licencia no especificada: sin licencia explicita no puede asumirse permiso para uso comercial, redistribucion ni modificacion.
 - Riesgo elevado de artefactos de entrenamiento: el repositorio pesa 27,1 GB, un tamano que probablemente incluye checkpoints u optimizadores intermedios; conviene inspeccionar el contenido antes de descargarlo.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo, no cuantificado en este caso por falta de evaluaciones.
@@ -88,5 +88,5 @@ No se dispone de datos verificables para establecer una comparativa rigurosa. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Miiche/visualrl-qwen3vl2b-ppo1-visionsr1-fix
+- Hugging Face: https://huggingface.co/Miiche/visualrl-qwen3vl2b-ppo1-visionsr1-fix
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers asociados, repositorios de codigo, blogs ni demos. Los resultados devueltos por el buscador correspondian a foros de routers y no guardan relacion con el modelo.

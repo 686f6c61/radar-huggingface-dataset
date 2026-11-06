@@ -85,7 +85,7 @@ No se dispone de una comparativa con otros modelos de la misma categoría en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aoife1111/connectailab-rl-aoife-v1
+- Modelo en Hugging Face: https://huggingface.co/Aoife1111/connectailab-rl-aoife-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

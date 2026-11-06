@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la información disponible para 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Hobbylm-1B-computer-use | 1B (base MoE, 8 de 64 expertos) | no disponible | Adaptador LoRA para computer use en macOS, vocabulario de 10 acciones | apache-2.0 | HuggingFace, v0.1, 0 descargas |
-| harims95/hobbylm-1B-instruct (modelo base) | 1B (MoE, 8 de 64 expertos) | no disponible | Instrucciones generales en texto; sin capacidades de agente | no disponible en la información proporcionada | HuggingFace |
+| Hobbylm-1B-computer-use | 1B (base MoE, 8 de 64 expertos) | no disponible | Adaptador LoRA para computer use en macOS, vocabulario de 10 acciones | apache-2.0 | Hugging Face, v0.1, 0 descargas |
+| harims95/hobbylm-1B-instruct (modelo base) | 1B (MoE, 8 de 64 expertos) | no disponible | Instrucciones generales en texto; sin capacidades de agente | no disponible en la información proporcionada | Hugging Face |
 | Otros modelos de computer use de tamaño similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La información proporcionada no incluye datos de rendimiento de modelos alternativos de computer use, por lo que no es posible establecer una comparación cuantitativa de tasas de éxito, latencia o cobertura de acciones frente a otras propuestas.
@@ -104,7 +104,7 @@ La información proporcionada no incluye datos de rendimiento de modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hobbylm/hobbylm-1B-computer-use
+- Modelo en Hugging Face: https://huggingface.co/Hobbylm/hobbylm-1B-computer-use
 - Modelo base: https://huggingface.co/harims95/hobbylm-1B-instruct
 - Servidor MCP usado para la entrada en Calculator: https://github.com/mediar-ai/mcp-server-macos-use
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada (la búsqueda web no devolvió resultados relevantes)

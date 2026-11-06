@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-mlx
+- Modelo en Hugging Face: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-mlx
 - Probe de origen en PyTorch: https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k/tree/b28ba9b866d3763cbea60035ef8b7b02eba5b01d
 - Checkpoint del backbone: https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-mlx
 - Repositorio de checkpoints del proyecto: https://huggingface.co/canvit

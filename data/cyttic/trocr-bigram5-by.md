@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 - VRAM estimada para inferencia: con 299M parámetros, en FP32 se requieren aproximadamente 1,2 GB de memoria, pero con cuantización a 8 bits se reduce a unos 0,6 GB. Sin embargo, al ser un modelo encoder-decoder, la memoria adicional para activaciones y procesamiento de imágenes puede elevar el requisito a 2-4 GB en la práctica.
 - GPU recomendadas: una NVIDIA RTX 3060 (12 GB) o superior es suficiente para inferencia; para lotes grandes o entrenamiento, se recomienda una A100 o H100.
 - Sí cabe en GPUs de consumo: RTX 3060, RTX 4070, RTX 4090, etc.
-- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con Transformers de HuggingFace, o convertirse a GGUF para usar con llama.cpp u Ollama. También es compatible con vLLM o TGI si se adapta.
+- Opciones de despliegue: al ser un modelo safetensors, puede cargarse con Transformers de Hugging Face, o convertirse a GGUF para usar con llama.cpp u Ollama. También es compatible con vLLM o TGI si se adapta.
 - Latencia y throughput: no disponibles; dependerán del hardware y de la resolución de las imágenes de entrada.
 
 ## Comparativa con modelos similares
@@ -65,4 +65,4 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- [HuggingFace: cyttic/trocr-bigram5-BY](https://huggingface.co/cyttic/trocr-bigram5-BY)
+- [Hugging Face: cyttic/trocr-bigram5-BY](https://huggingface.co/cyttic/trocr-bigram5-BY)

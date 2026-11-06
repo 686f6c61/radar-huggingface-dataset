@@ -2,7 +2,7 @@
 
 ## Resumen
 
-InstantHMR es un modelo de recuperación de malla humana 3D (human mesh recovery, HMR) en tiempo real a partir de una sola imagen RGB. Lo desarrolla Naturalpad Studio y se distribuye en formato ONNX a través de HuggingFace. El modelo resuelve el problema de estimar la pose y la forma corporal completa de una persona —70 keypoints 3D y una malla de 18.439 vértices— a partir de un recorte de imagen, empleando el rig Momentum Human Rig (MHR) de Meta como representación de salida.
+InstantHMR es un modelo de recuperación de malla humana 3D (human mesh recovery, HMR) en tiempo real a partir de una sola imagen RGB. Lo desarrolla Naturalpad Studio y se distribuye en formato ONNX a través de Hugging Face. El modelo resuelve el problema de estimar la pose y la forma corporal completa de una persona —70 keypoints 3D y una malla de 18.439 vértices— a partir de un recorte de imagen, empleando el rig Momentum Human Rig (MHR) de Meta como representación de salida.
 
 La familia consta de cinco variantes de la red de predicción (nano, tiny, small, medium y medium-commercial), con entre 20,0 y 32,2 millones de parámetros, más un modelo compartido `mhr-body.onnx` que convierte los parámetros predichos en geometría 3D. La arquitectura es lo bastante ligera para ejecutarse en la NPU de un móvil: la variante medium tarda 5,49 ms por inferencia en un Galaxy S23, lo que la sitúa en el régimen de tiempo real estricto.
 
@@ -82,8 +82,8 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 | Modelo | Parametros | Contexto de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| InstantHMR (medium) | 32,2 M | HMR monocular en tiempo real, salida en rig MHR | CC BY-NC 4.0 / Apache-2.0 (variante comercial) | HuggingFace, ONNX |
-| InstantHMR (nano) | 20,0 M | HMR monocular en edge/móvil | CC BY-NC 4.0 | HuggingFace, ONNX |
+| InstantHMR (medium) | 32,2 M | HMR monocular en tiempo real, salida en rig MHR | CC BY-NC 4.0 / Apache-2.0 (variante comercial) | Hugging Face, ONNX |
+| InstantHMR (nano) | 20,0 M | HMR monocular en edge/móvil | CC BY-NC 4.0 | Hugging Face, ONNX |
 | Otros modelos HMR monocular | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos comparables en la información p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/momolesang/InstantHMR
+- Hugging Face: https://huggingface.co/momolesang/InstantHMR
 - Repositorio de código, demo y entrenamiento: https://github.com/Naturalpad-studio/InstantHMR
 - Licencia detallada: https://github.com/Naturalpad-studio/InstantHMR#licence
 - Momentum Human Rig (MHR): https://github.com/facebookresearch/MHR

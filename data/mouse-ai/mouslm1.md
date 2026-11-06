@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MouSLM1 es un modelo publicado en HuggingFace por el usuario Mouse-AI bajo el identificador `Mouse-AI/MouSLM1`. En el momento de la consulta, la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni etiquetas descriptivas mas alla de `region:us`. El repositorio tiene un tamano de 1,3 GB y acumula 16 descargas y 1 like, con fecha de creacion del 6 de septiembre de 2026 y ultima actualizacion del 23 de septiembre de 2026.
+MouSLM1 es un modelo publicado en Hugging Face por el usuario Mouse-AI bajo el identificador `Mouse-AI/MouSLM1`. En el momento de la consulta, la ficha del repositorio no declara pipeline de inferencia, licencia, idiomas soportados ni etiquetas descriptivas mas alla de `region:us`. El repositorio tiene un tamano de 1,3 GB y acumula 16 descargas y 1 like, con fecha de creacion del 6 de septiembre de 2026 y ultima actualizacion del 23 de septiembre de 2026.
 
 La ausencia de model card, de pesos documentados y de resultados publicados impide confirmar arquitectura, numero de parametros, ventana de contexto, datos de entrenamiento o metodos de alineacion. El sufijo "SLM" del nombre sugiere, sin que exista confirmacion oficial, que se trata de un modelo de lenguaje de pequeno tamano (small language model), categoria habitual en despliegues locales y en entornos con recursos limitados.
 
@@ -50,7 +50,7 @@ Estas cifras asumen que el repositorio contiene exclusivamente pesos del modelo 
 
 No se ha publicado informacion sobre la arquitectura del modelo. No consta si emplea un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM), un diseno hibrido ni cualquier otra variante. Tampoco hay datos sobre mecanismos de atencion, uso de atencion lineal, decodificacion especulativa o tecnicas de compresion de contexto.
 
-Respecto al entrenamiento, se desconoce el volumen de tokens utilizados, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF, DPO u otras tecnicas de alineacion, asi como cualquier innovacion tecnica asociada. La ficha de HuggingFace no incluye model card ni enlaces a articulos, informes tecnicos o repositorios de codigo.
+Respecto al entrenamiento, se desconoce el volumen de tokens utilizados, la composicion del corpus, la existencia de fases de ajuste supervisado, RLHF, DPO u otras tecnicas de alineacion, asi como cualquier innovacion tecnica asociada. La ficha de Hugging Face no incluye model card ni enlaces a articulos, informes tecnicos o repositorios de codigo.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ No es posible establecer una comparativa rigurosa: se desconocen los parametros,
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| MouSLM1 | no disponible | no disponible | no disponible | no disponible | HuggingFace, 16 descargas |
+| MouSLM1 | no disponible | no disponible | no disponible | no disponible | Hugging Face, 16 descargas |
 | Alternativas de la categoria SLM | no aplicable sin datos del modelo principal | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -112,7 +112,7 @@ No es posible establecer una comparativa rigurosa: se desconocen los parametros,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mouse-AI/MouSLM1
+- Hugging Face: https://huggingface.co/Mouse-AI/MouSLM1
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

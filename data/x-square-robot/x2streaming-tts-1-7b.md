@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Voces | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| X2Streaming-TTS-1.7B | 1.916.676.352 | no disponible | 1 integrada (`robot_service_v1`) | zh (primario), en (secundario) | Apache-2.0 | HuggingFace, librería declarada tensorrt |
-| Qwen/Qwen3-TTS-12Hz-1.7B-Base | no disponible en la información proporcionada | no disponible | no disponible (es el modelo base) | no disponible | no disponible | HuggingFace |
-| x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| X2Streaming-TTS-1.7B | 1.916.676.352 | no disponible | 1 integrada (`robot_service_v1`) | zh (primario), en (secundario) | Apache-2.0 | Hugging Face, librería declarada tensorrt |
+| Qwen/Qwen3-TTS-12Hz-1.7B-Base | no disponible en la información proporcionada | no disponible | no disponible (es el modelo base) | no disponible | no disponible | Hugging Face |
+| x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz | no disponible en la información proporcionada | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estos modelos. La diferencia funcional conocida es que X2Streaming-TTS-1.7B incorpora una tabla de hablantes propia con una voz de servicio, mientras que el modelo base de Qwen no incluye esa voz específica, y X2-NativeCursor-Qwen3TTS-12Hz actúa como observador de progreso dentro del mismo stack.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos. La diferenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x-square-robot/X2Streaming-TTS-1.7B
+- Modelo en Hugging Face: https://huggingface.co/x-square-robot/X2Streaming-TTS-1.7B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base
 - Observador de progreso X2-NativeCursor: https://huggingface.co/x-square-robot/X2-NativeCursor-Qwen3TTS-12Hz
 - Repositorio del método X2Streaming-TTS: https://github.com/X-Square-Robot/X2Streaming-TTS

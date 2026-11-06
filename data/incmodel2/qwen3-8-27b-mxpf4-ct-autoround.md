@@ -80,6 +80,6 @@ No se dispone de datos completos de parámetros, contexto ni licencia para los m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/INCModel2/Qwen3.8-27B-MXPF4-CT-AutoRound
+- Repositorio Hugging Face: https://huggingface.co/INCModel2/Qwen3.8-27B-MXPF4-CT-AutoRound
 - Qwen Cloud (servicio gestionado, próximamente): https://www.qwencloud.com/models/qwen3.8-27b
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

@@ -61,16 +61,16 @@ El autor proporciona resultados de MMLU (lm-eval-harness, 0-shot, n=5700) y prue
 
 - **VRAM estimada para inferencia**: en bfloat16 (safetensors), el modelo requiere aproximadamente 55,6 GB de VRAM (27,8 B × 2 bytes). Con cuantización GGUF: 8-bit ~28 GB, 4-bit ~14 GB, 2-bit ~7 GB.
 - **GPU recomendadas**: para bfloat16, se necesitan GPUs de datacenter como A100 (80 GB) o H100. Con cuantización 4-bit, cabe en GPUs de consumo como RTX 3090/4090 (24 GB) o RTX 4080 (16 GB). Para 2-bit, incluso en GPUs de 8-12 GB.
-- **Opciones de despliegue**: compatible con vLLM, llama.cpp (con `--jinja` para usar la plantilla incluida), Ollama (build disponible con 16 tags de cuantización), MLX (para Apple Silicon) y Transformers de HuggingFace.
+- **Opciones de despliegue**: compatible con vLLM, llama.cpp (con `--jinja` para usar la plantilla incluida), Ollama (build disponible con 16 tags de cuantización), MLX (para Apple Silicon) y Transformers de Hugging Face.
 - **Latencia y throughput**: no se proporcionan datos específicos. El cabezal MTP del modelo base puede acelerar la decodificación especulativa, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | MMLU (0-shot) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (stock) | 27,8 B | No disponible | 84,5% | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B V3 (este modelo) | 27,8 B | No disponible | 82,3% | Apache-2.0 | HuggingFace |
-| Qwen3.8-27B V2 | 27,8 B | No disponible | 84,3% | Apache-2.0 | HuggingFace (autor) |
+| Qwen3.8-27B (stock) | 27,8 B | No disponible | 84,5% | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B V3 (este modelo) | 27,8 B | No disponible | 82,3% | Apache-2.0 | Hugging Face |
+| Qwen3.8-27B V2 | 27,8 B | No disponible | 84,3% | Apache-2.0 | Hugging Face (autor) |
 
 No se dispone de datos de otros modelos abliterated de tamaño similar (p. ej., Dolphin, WizardLM-Uncensored) en la información proporcionada, por lo que no se puede realizar una comparativa directa con ellos.
 
@@ -85,8 +85,8 @@ No se dispone de datos de otros modelos abliterated de tamaño similar (p. ej., 
 
 ## Enlaces
 
-- [HuggingFace - 0xSojalSec/Qwen3.8-27B-full-Uncensored](https://huggingface.co/0xSojalSec/Qwen3.8-27B-full-Uncensored)
-- [HuggingFace - Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF-12GB (variante)](https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF-12GB)
+- [Hugging Face - 0xSojalSec/Qwen3.8-27B-full-Uncensored](https://huggingface.co/0xSojalSec/Qwen3.8-27B-full-Uncensored)
+- [Hugging Face - Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF-12GB (variante)](https://huggingface.co/0xSojalSec/Qwen3.8-27B-Uncensored-YMQ-MTP-GGUF-12GB)
 - [GitHub - AlibabaCloud-Official/Qwen3.8-27B (modelo base)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Blog - How to run Qwen 3.8 27B uncensored locally](https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally)
 - [Ollama - orcarouter/Qwen3.8-27B-Uncensored](https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored)

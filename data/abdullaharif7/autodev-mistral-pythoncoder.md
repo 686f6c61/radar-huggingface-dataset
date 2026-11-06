@@ -2,9 +2,9 @@
 
 ## Resumen
 
-AutoDev-Mistral-PythonCoder es un modelo publicado en HuggingFace por el usuario abdullaharif7, cuyo nombre sugiere un ajuste fino (fine-tuning) de un modelo base Mistral orientado a la generación de código Python. El repositorio tiene un tamaño de 0,3 GB, lo que indica que probablemente se trate de una versión cuantizada o de un modelo de tamaño reducido, aunque no se dispone de confirmación oficial sobre la arquitectura exacta ni el proceso de entrenamiento.
+AutoDev-Mistral-PythonCoder es un modelo publicado en Hugging Face por el usuario abdullaharif7, cuyo nombre sugiere un ajuste fino (fine-tuning) de un modelo base Mistral orientado a la generación de código Python. El repositorio tiene un tamaño de 0,3 GB, lo que indica que probablemente se trate de una versión cuantizada o de un modelo de tamaño reducido, aunque no se dispone de confirmación oficial sobre la arquitectura exacta ni el proceso de entrenamiento.
 
-La model card es una plantilla automática generada por HuggingFace, sin información sustancial sobre el modelo, sus capacidades, datos de entrenamiento o licencia. El tag `arxiv:1910.09700` hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, no a la arquitectura del modelo. La relevancia de este modelo es limitada en el ecosistema actual, dado que no hay documentación técnica, benchmarks publicados ni comunidad activa asociada.
+La model card es una plantilla automática generada por Hugging Face, sin información sustancial sobre el modelo, sus capacidades, datos de entrenamiento o licencia. El tag `arxiv:1910.09700` hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono en machine learning, no a la arquitectura del modelo. La relevancia de este modelo es limitada en el ecosistema actual, dado que no hay documentación técnica, benchmarks publicados ni comunidad activa asociada.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La model card es una plantilla automática generada por HuggingFace, sin informa
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada: no disponible. El tamaño del repositorio (0,3 GB) sugiere que podría ejecutarse en GPUs de consumo con 4-8 GB de VRAM si se trata de un modelo cuantizado, pero esto es especulativo.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPUs de consumo: probablemente sí, dado el tamaño reducido del repositorio, pero sin confirmación oficial.
-- Opciones de despliegue: al usar la librería transformers, es compatible con pipelines de HuggingFace, incluyendo vLLM, TGI y Ollama si el formato lo permite. No hay documentación específica.
+- Opciones de despliegue: al usar la librería transformers, es compatible con pipelines de Hugging Face, incluyendo vLLM, TGI y Ollama si el formato lo permite. No hay documentación específica.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -71,5 +71,5 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/abdullaharif7/AutoDev-Mistral-PythonCoder
+- Repositorio en Hugging Face: https://huggingface.co/abdullaharif7/AutoDev-Mistral-PythonCoder
 - Paper de Lacoste et al. (2019) sobre emisiones de carbono (referenciado en la model card, no relacionado con el modelo): https://arxiv.org/abs/1910.09700

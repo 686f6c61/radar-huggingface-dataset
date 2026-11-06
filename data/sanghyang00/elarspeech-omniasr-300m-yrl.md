@@ -67,8 +67,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Idioma | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ELARSpeech-OmniASR-300M-yrl | 325.984.945 | yrl (nheengatu) | Wav2Vec2ForCTC | no disponible | HuggingFace, 0 descargas |
-| aadel4/omniASR-CTC-300M-v2 (modelo base) | no disponible en la informacion | no disponible en la informacion | CTC (familia omniASR) | no disponible | HuggingFace |
+| ELARSpeech-OmniASR-300M-yrl | 325.984.945 | yrl (nheengatu) | Wav2Vec2ForCTC | no disponible | Hugging Face, 0 descargas |
+| aadel4/omniASR-CTC-300M-v2 (modelo base) | no disponible en la informacion | no disponible en la informacion | CTC (familia omniASR) | no disponible | Hugging Face |
 | OpenAI Whisper (familia) | 39M-1550M segun variante | multilingue | encoder-decoder transformer | MIT (variantes abiertas) | ampliamente distribuido |
 
 Se incluye Whisper como referencia de la misma categoria (ASR): frente a este modelo, Whisper ofrece soporte multilingue y un ecosistema de despliegue mucho mas maduro, pero no cubre nheengatu de forma especifica ni ofrece un ajuste dedicado a `yrl`. Los datos del modelo base `omniASR-CTC-300M-v2` no se detallan en la informacion proporcionada y conviene verificar su ficha para confirmar parametros, idiomas y licencia.
@@ -86,5 +86,5 @@ Se incluye Whisper como referencia de la misma categoria (ASR): frente a este mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-300M-yrl
+- Modelo en Hugging Face: https://huggingface.co/Sanghyang00/ELARSpeech-OmniASR-300M-yrl
 - Modelo base: https://huggingface.co/aadel4/omniASR-CTC-300M-v2

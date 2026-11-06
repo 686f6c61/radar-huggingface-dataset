@@ -37,7 +37,7 @@ El modelo es un fine-tuning de Llama-3.2-3B-Instruct mediante SFT con TRL 0.19.1
 - **Generacion y revision de codigo**: hereda las capacidades de codigo del base, permitiendo generar y revisar fragmentos en diversos lenguajes, con una validacion previa recomendada.
 - **Resumen de documentos extensos**: la ventana de contexto larga permite procesar y resumir documentos largos en una sola pasada.
 - **Sistemas de agentes con herramientas**: puede integrarse en pipelines de agentes que requieren tool calling, aunque la falta de benchmarks propios exige una prueba exhaustiva.
-- **Prototipado rapido**: su tamano reducido (0.2 GB) y compatibilidad con HuggingFace lo hacen util para experimentos en entornos con GPU limitada.
+- **Prototipado rapido**: su tamano reducido (0.2 GB) y compatibilidad con Hugging Face lo hacen util para experimentos en entornos con GPU limitada.
 - **Investigacion en fine-tuning**: sirve como caso de estudio para analizar el impacto de tecnicas como "STEER" sobre el comportamiento de modelos de tamano medio.
 
 ## Benchmarks y rendimiento
@@ -74,7 +74,7 @@ Los datos de rendimiento del base (superior a Gemma 2 2.6B y Phi 3.5-mini) estan
 
 ## Enlaces
 
-- [HuggingFace - Echoo113/Llama-3.2-3B-Instruct-dragon-STEER0.213281-ft4.44](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon-STEER0.213281-ft4.44)
+- [Hugging Face - Echoo113/Llama-3.2-3B-Instruct-dragon-STEER0.213281-ft4.44](https://huggingface.co/Echoo113/Llama-3.2-3B-Instruct-dragon-STEER0.213281-ft4.44)
 - [Modelo base: meta-llama/Llama-3.2-3B-Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)
 - [TRL (Transformer Reinforcement Learning)](https://github.com/huggingface/trl)
 - [Ollama - llama3.2:3b](https://ollama.com/library/llama3.2:3b)

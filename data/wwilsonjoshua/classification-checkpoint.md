@@ -23,7 +23,7 @@ Su relevancia es por tanto limitada y de caracter didactico o de infraestructura
 | Escala declarada | tiny |
 | Optimizador por defecto | novograd con schedule coseno |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 
@@ -40,13 +40,13 @@ No hay evidencia de entrenamiento completado. La model card es explicita: los va
 - Capacidades multilingues: no disponibles.
 - Capacidades especiales (modo thinking, vision, audio): la etiqueta `flamingo` sugiere tratamiento de vision, pero no hay detalle de componentes ni de resoluciones soportadas.
 - Ejecucion de smoke tests: `python finetune.py --help` funciona como comprobacion rapida de que el script y la configuracion cargan correctamente.
-- Integracion con APIs genericas: requiere un adaptador explicito, ya que es una implementacion personalizada que no se carga con las clases automaticas estandar de HuggingFace.
+- Integracion con APIs genericas: requiere un adaptador explicito, ya que es una implementacion personalizada que no se carga con las clases automaticas estandar de Hugging Face.
 
 ## Casos de uso
 
 - Pruebas de humo en CI: usar el checkpoint de 24.832 parametros como fixture ligero para verificar que un pipeline de carga de pesos safetensors, tokenizacion y paso forward se ejecuta sin errores en cada commit.
 - Validacion de infraestructura de entrenamiento: lanzar `finetune.py` con la receta por defecto (novograd, schedule coseno) para comprobar que el bucle de entrenamiento, el guardado de checkpoints y el registro de metricas funcionan antes de escalar a un modelo real.
-- Desarrollo de adaptadores para Flamingo: al tratarse de una implementacion custom, sirve como banco de pruebas para escribir el adaptador que permita cargarla con APIs genericas de HuggingFace.
+- Desarrollo de adaptadores para Flamingo: al tratarse de una implementacion custom, sirve como banco de pruebas para escribir el adaptador que permita cargarla con APIs genericas de Hugging Face.
 - Material docente y de referencia: el codigo transparente y la configuracion explicita permiten estudiar como se componen atencion multi-query, fusion tucker y rmsnorm en un modelo multimodal minimo.
 - Base para ajuste fino con datos propios: el repositorio esta planteado como punto de partida experimental; un equipo podria entrenarlo sobre un split etiquetado especifico y documentar los resultados por separado de los valores por defecto.
 - Diseno de protocolos de evaluacion: la model card recomienda evaluar con un split etiquetado especifico, al menos tres semillas y una linea base de capacidad comparable, lo que lo convierte en un ejemplo util para definir protocolos reproducibles.
@@ -70,7 +70,7 @@ No se dispone de modelos comparables dentro de la informacion proporcionada. Las
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wwilsonjoshua/classification-checkpoint | 24.832 | no disponible | sin benchmarks declarados | bsd-3-clause | HuggingFace, 0 descargas |
+| wwilsonjoshua/classification-checkpoint | 24.832 | no disponible | sin benchmarks declarados | bsd-3-clause | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,7 +78,7 @@ No se dispone de modelos comparables dentro de la informacion proporcionada. Las
 - El checkpoint no ha sido entrenado. No debe presentarse ni desplegarse como un clasificador funcional.
 - No ha sido auditado en robustez, equidad (fairness) ni transferencia de dominio, segun reconoce la propia model card.
 - Ausencia total de benchmarks: cualquier afirmacion de rendimiento seria infundada.
-- Es una implementacion personalizada; las APIs automaticas de carga de HuggingFace requieren un adaptador explicito antes de poder usarla.
+- Es una implementacion personalizada; las APIs automaticas de carga de Hugging Face requieren un adaptador explicito antes de poder usarla.
 - No se especifican datos de entrenamiento, por lo que no se pueden evaluar sesgos de dataset ni procedencia de los datos.
 - No se declaran idiomas soportados ni longitud de contexto, lo que impide planificar su uso en escenarios multilingues o de contexto largo.
 - Licencia bsd-3-clause: permite uso comercial y modificacion con conservacion del aviso de copyright, pero incluye la clausula de no respaldo (no se puede usar el nombre del titular para promocionar productos derivados sin permiso).
@@ -88,6 +88,6 @@ No se dispone de modelos comparables dentro de la informacion proporcionada. Las
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wwilsonjoshua/classification-checkpoint
+- Modelo en Hugging Face: https://huggingface.co/wwilsonjoshua/classification-checkpoint
 - Ficheros del repositorio: `finetune.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o repositorio adicional: no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre su autor.

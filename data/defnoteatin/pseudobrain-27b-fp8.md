@@ -85,13 +85,13 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas varia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/defnoteatin/PseudoBrain-27B-FP8
+- Modelo en Hugging Face: https://huggingface.co/defnoteatin/PseudoBrain-27B-FP8
 - Repositorio GitHub del proyecto y plugin vLLM: https://github.com/defnotean/pseudobrain
 - Paper de arquitectura (PDF): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.pdf
 - Paper de arquitectura (Markdown): https://github.com/defnotean/pseudobrain/blob/main/docs/PSEUDOBRAIN_ARCHITECTURE_PAPER.md
 - Informes de benchmarks (reports): https://github.com/defnotean/pseudobrain/tree/main/reports
 - Perfil del autor en GitHub: https://github.com/defnotean
-- Perfil del autor en HuggingFace: https://huggingface.co/defnoteatin
+- Perfil del autor en Hugging Face: https://huggingface.co/defnoteatin
 - Edición W4A16: https://huggingface.co/defnoteatin/PseudoBrain-27B-W4A16
 - Edición BF16: https://huggingface.co/defnoteatin/PseudoBrain-27B-BF16
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated

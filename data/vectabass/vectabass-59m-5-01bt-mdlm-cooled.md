@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vectabass-59m-5.01bt-mdlm-cooled | 59,5M (27,3M no-embedding) | 2.048 | Difusión enmascarada (MDLM) | Apache 2.0 | HuggingFace |
+| vectabass-59m-5.01bt-mdlm-cooled | 59,5M (27,3M no-embedding) | 2.048 | Difusión enmascarada (MDLM) | Apache 2.0 | Hugging Face |
 | Addendum AR de VectaBass (mismo tamaño) | No disponible | No disponible | Autorregresivo | No disponible | Anunciado como release separada |
 | Celdas MDLM de la escalera principal (100M-1.6B) | 100M-1.6B | No disponible | Difusión enmascarada (MDLM) | No disponible | Referenciadas en la model card |
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-59m-5.01bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-59m-5.01bt-mdlm-cooled
 - Dataset fineweb-edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Dataset fineweb-2: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
 - Dataset finemath: https://huggingface.co/datasets/HuggingFaceTB/finemath

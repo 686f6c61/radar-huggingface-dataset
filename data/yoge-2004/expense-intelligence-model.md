@@ -4,7 +4,7 @@
 
 ## Resumen
 
-El modelo `Yoge-2004/expense-intelligence-model` es un sistema de clasificación de transacciones financieras publicado en HuggingFace por el usuario Yoge-2004, orientado a aplicaciones de seguimiento de gastos (expense tracker). No se trata de un modelo de lenguaje ni de una red neuronal: es un clasificador lineal de scikit-learn que combina una vectorización TF-IDF (n-gramas de palabra 1-2 y n-gramas de carácter con límites de palabra 3-5, con un máximo de 200.000 características) con una regresión logística multiclase SAGA calibrada. El problema que resuelve es la categorización automática de descripciones textuales de transacciones en diez categorías canónicas (alimentación, transporte, compras, entretenimiento, salud, suministros, servicios financieros, ingresos, gobierno/legal y donaciones).
+El modelo `Yoge-2004/expense-intelligence-model` es un sistema de clasificación de transacciones financieras publicado en Hugging Face por el usuario Yoge-2004, orientado a aplicaciones de seguimiento de gastos (expense tracker). No se trata de un modelo de lenguaje ni de una red neuronal: es un clasificador lineal de scikit-learn que combina una vectorización TF-IDF (n-gramas de palabra 1-2 y n-gramas de carácter con límites de palabra 3-5, con un máximo de 200.000 características) con una regresión logística multiclase SAGA calibrada. El problema que resuelve es la categorización automática de descripciones textuales de transacciones en diez categorías canónicas (alimentación, transporte, compras, entretenimiento, salud, suministros, servicios financieros, ingresos, gobierno/legal y donaciones).
 
 Su relevancia práctica radica en el coste computacional: la model card declara una latencia inferior a 5 ms por transacción en CPU estándar, sin necesidad de GPU, lo que lo hace apto para clasificación en tiempo real dentro de un backend de finanzas personales. El autor reporta 99,30 % de accuracy global (99,32 % de Macro-F1) sobre más de 240.000 transacciones de holdout, y 98,85 % de accuracy (98,96 % de Macro-F1) en un subconjunto específico de transacciones bancarias indias y UPI.
 
@@ -79,7 +79,7 @@ No se dispone de resultados comparativos publicados en la información proporcio
 
 | Alternativa | Tipo | Contexto / idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Yoge-2004/expense-intelligence-model | TF-IDF + regresión logística calibrada | Entrada corta; inglés | MIT | HuggingFace, 0 descargas |
+| Yoge-2004/expense-intelligence-model | TF-IDF + regresión logística calibrada | Entrada corta; inglés | MIT | Hugging Face, 0 descargas |
 | Transformers encoder fine-tuned (por ejemplo, DistilBERT o DeBERTa) | Red neuronal supervisada | Mayor coste de inferencia; multilingüe según el checkpoint | Variable | Amplia, pero requiere entrenamiento propio |
 | Clasificación por reglas y palabras clave | Sistema determinista | Sin aprendizaje; frágil ante variaciones | Depende del proyecto | Trivial de implementar, difícil de mantener |
 | APIs comerciales de enriquecimiento de transacciones | Servicio gestionado | Multilingüe | Propietaria | De pago, dependencia de terceros |
@@ -90,7 +90,7 @@ La ventaja específica del modelo analizado frente a un transformer fine-tuned e
 
 - Sesgo de datos: los tres conjuntos citados incluyen un componente sintético y un fuerte peso de transacciones indias y de UPI, lo que puede sesgar el modelo hacia patrones de comercio y nomenclatura de ese mercado pese a la validación por países.
 - Riesgo de error en categorías ambiguas: las diez categorías son mutuamente excluyentes, pero descripciones como «Amazon» pueden corresponder a `shopping_retail` o a `entertainment_recreation`, y no se documenta cómo se resuelve esa ambigüedad.
-- Sobreajuste a las métricas declaradas: el 99,30 % de accuracy procede del propio autor y no ha sido replicado de forma independiente; el modelo tiene 0 descargas y 0 «likes» en HuggingFace, por lo que no existe validación por parte de la comunidad.
+- Sobreajuste a las métricas declaradas: el 99,30 % de accuracy procede del propio autor y no ha sido replicado de forma independiente; el modelo tiene 0 descargas y 0 «likes» en Hugging Face, por lo que no existe validación por parte de la comunidad.
 - Idioma: solo se declara inglés. Las descripciones de transacción en castellano, catalán, gallego o euskera no están soportadas y probablemente degraden la precisión.
 - Sin capacidad generativa ni conversacional: no puede redactar resúmenes, responder preguntas ni ejecutar herramientas; cualquier funcionalidad de ese tipo debe implementarse con otro modelo.
 - Sin ventana de contexto: la entrada debe ser una descripción corta; textos largos (por ejemplo, notas de usuario extensas) pueden diluir las señales TF-IDF y reducir la precisión.
@@ -101,7 +101,7 @@ La ventaja específica del modelo analizado frente a un transformer fine-tuned e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yoge-2004/expense-intelligence-model
+- Modelo en Hugging Face: https://huggingface.co/Yoge-2004/expense-intelligence-model
 - Dataset citado: https://huggingface.co/datasets/Ranjit0034/finee-dataset
 - Dataset citado: https://huggingface.co/datasets/Sumeetgpt/indian-transaction-categorization-synthetic
 - Dataset citado: https://huggingface.co/datasets/mitulshah/transaction-categorization

@@ -71,7 +71,7 @@ No se dispone de comparativas directas con otros modelos en la información prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ntworld6/flan_t5_mobile_descriptions
+- Hugging Face: https://huggingface.co/ntworld6/flan_t5_mobile_descriptions
 - Documentación de FLAN-T5 en Transformers: https://huggingface.co/docs/transformers/model_doc/flan-t5
 - Documentación de FLAN-T5 (versión 4.27.2): https://huggingface.co/docs/transformers/v4.27.2/en/model_doc/flan-t5
 - Código fuente de FLAN-T5 en GitHub: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/flan-t5.md

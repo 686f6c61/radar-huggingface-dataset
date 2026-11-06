@@ -72,5 +72,5 @@ No disponible. No se proporcionan modelos comparables en la información. El mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/Racktic/swecl-qwen35-ckpt](https://huggingface.co/Racktic/swecl-qwen35-ckpt)
+- Repositorio Hugging Face: [https://huggingface.co/Racktic/swecl-qwen35-ckpt](https://huggingface.co/Racktic/swecl-qwen35-ckpt)
 - No se proporcionan otros enlaces (papers, blogs, repos) en la información disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Se trata de un clasificador de imagenes basado en DeiT-tiny (Data-efficient Image Transformer) publicado por el usuario pfpdostudent en HuggingFace. El modelo parte del checkpoint facebook/deit-tiny-patch16-224 y ha sido ajustado (fine-tuning) sobre el conjunto de datos CIFAR-10, compuesto por 60.000 imagenes de 32x32 pixeles repartidas en 10 clases. Cuenta con 5.526.346 parametros totales y se distribuye en formato safetensors para la libreria transformers.
+Se trata de un clasificador de imagenes basado en DeiT-tiny (Data-efficient Image Transformer) publicado por el usuario pfpdostudent en Hugging Face. El modelo parte del checkpoint facebook/deit-tiny-patch16-224 y ha sido ajustado (fine-tuning) sobre el conjunto de datos CIFAR-10, compuesto por 60.000 imagenes de 32x32 pixeles repartidas en 10 clases. Cuenta con 5.526.346 parametros totales y se distribuye en formato safetensors para la libreria transformers.
 
 El problema que resuelve es la clasificacion de imagenes en las 10 categorias de CIFAR-10 (avion, automovil, pajaro, gato, ciervo, perro, rana, caballo, barco y camion). Su relevancia es fundamentalmente educativa y de laboratorio: la model card indica que fue ajustado en Google Colab sobre una GPU y con seguimiento de experimentos mediante MLflow, alcanzando una precision de validacion de 0,9315 y una precision de test de 0,9435 con una tasa de aprendizaje de 1e-4 en el "run" ganador.
 
@@ -76,8 +76,8 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 
 | Modelo | Parametros | Entrada | Tarea | Precision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pfpdostudent/deit-tiny-cifar10-lab | 5.526.346 | 224x224 | CIFAR-10 (10 clases) | 0,9435 (test) | no disponible | HuggingFace, 0 descargas |
-| facebook/deit-tiny-patch16-224 | no disponible en la informacion proporcionada | 224x224 | ImageNet-1k (1.000 clases) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| pfpdostudent/deit-tiny-cifar10-lab | 5.526.346 | 224x224 | CIFAR-10 (10 clases) | 0,9435 (test) | no disponible | Hugging Face, 0 descargas |
+| facebook/deit-tiny-patch16-224 | no disponible en la informacion proporcionada | 224x224 | ImageNet-1k (1.000 clases) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Alternativas CNN de tamano similar para CIFAR-10 (por ejemplo, ResNet-18) | no disponible en la informacion proporcionada | variable | CIFAR-10 (10 clases) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible |
 
 La comparacion directa de precision con el modelo base no es significativa, ya que este ultimo resuelve ImageNet-1k (1.000 clases) y el modelo aqui descrito resuelve CIFAR-10 (10 clases). No se dispone de resultados homogeneos de otras alternativas en la informacion proporcionada.
@@ -95,8 +95,8 @@ La comparacion directa de precision con el modelo base no es significativa, ya q
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pfpdostudent/deit-tiny-cifar10-lab
+- Modelo en Hugging Face: https://huggingface.co/pfpdostudent/deit-tiny-cifar10-lab
 - Modelo base: https://huggingface.co/facebook/deit-tiny-patch16-224
-- Dataset CIFAR-10 en HuggingFace: https://huggingface.co/datasets/cifar10
+- Dataset CIFAR-10 en Hugging Face: https://huggingface.co/datasets/cifar10
 - Paper de DeiT (Training data-efficient image transformers): https://arxiv.org/abs/2012.12877
 - Run de MLflow del autor (identificador): d8c6e08488204ef38f674d0f0c422162 (no se proporciona URL de servidor MLflow)

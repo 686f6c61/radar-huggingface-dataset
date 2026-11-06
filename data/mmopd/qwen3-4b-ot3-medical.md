@@ -84,8 +84,8 @@ No se han publicado en la información disponible resultados de benchmarks frent
 
 | Modelo | Parámetros | MedQA | MedXpertQA | PubMedQA | AIME24 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| MMOPD/Qwen3-4B-OT3-medical | 4,02B | 80,7 | 22,3 | 77,2 | 52,9 | Apache-2.0 | HuggingFace, safetensors |
-| MMOPD/Qwen3-4B-OT3-2ep (iniciador) | 4,02B | 69,8 | 13,7 | 75,2 | 66,3 | no disponible en la información | HuggingFace |
+| MMOPD/Qwen3-4B-OT3-medical | 4,02B | 80,7 | 22,3 | 77,2 | 52,9 | Apache-2.0 | Hugging Face, safetensors |
+| MMOPD/Qwen3-4B-OT3-2ep (iniciador) | 4,02B | 69,8 | 13,7 | 75,2 | 66,3 | no disponible en la información | Hugging Face |
 | MMOPD/Qwen3-4B-OT3-law | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Miembro de la familia MMOPD citado en la model card |
 | MMOPD/Qwen3-4B-OT3-finance | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Miembro de la familia MMOPD citado en la model card |
 | MMOPD/Qwen3-4B-OT3-if | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | Miembro de la familia MMOPD citado en la model card |
@@ -108,7 +108,7 @@ La información proporcionada no incluye comparaciones con modelos médicos de t
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical
+- Modelo en Hugging Face: https://huggingface.co/MMOPD/Qwen3-4B-OT3-medical
 - Modelo base e iniciador del SFT: https://huggingface.co/MMOPD/Qwen3-4B-OT3-2ep
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options
 - Miembros de la familia citados en la model card: https://huggingface.co/MMOPD/Qwen3-4B-OT3-1ep, https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-1ep, https://huggingface.co/MMOPD/Qwen3-1.7B-OT3-2ep

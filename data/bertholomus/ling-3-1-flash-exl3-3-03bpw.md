@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ling-3.1-flash-EXL3-3.03bpw es una cuantización EXL3 del modelo Ling-3.1-flash de inclusionAI, publicada por Bertholomus AI (usuario bertholomus en HuggingFace). El modelo base es un modelo de lenguaje MoE (Mixture of Experts) con arquitectura híbrida bailing_v3, que combina atención KDA (kernels de flash-linear-attention) con atención MLA, y un total de unos 110.000 millones de parámetros. Esta versión cuantizada reduce el peso del modelo a 3,03 bits por peso (220,6 GB), pensada específicamente para servir el modelo en dos nodos NVIDIA DGX Spark (GB10) con paralelismo tensorial.
+Ling-3.1-flash-EXL3-3.03bpw es una cuantización EXL3 del modelo Ling-3.1-flash de inclusionAI, publicada por Bertholomus AI (usuario bertholomus en Hugging Face). El modelo base es un modelo de lenguaje MoE (Mixture of Experts) con arquitectura híbrida bailing_v3, que combina atención KDA (kernels de flash-linear-attention) con atención MLA, y un total de unos 110.000 millones de parámetros. Esta versión cuantizada reduce el peso del modelo a 3,03 bits por peso (220,6 GB), pensada específicamente para servir el modelo en dos nodos NVIDIA DGX Spark (GB10) con paralelismo tensorial.
 
 El problema que resuelve es doble: por un lado, hacer ejecutable un modelo de más de 100 mil millones de parámetros en hardware de memoria unificada como el GB10 de NVIDIA, y por otro, demostrar un pipeline completo de conversión y despliegue con TensorFold, un motor de inferencia con soporte de tensor-parallel en múltiples nodos. El resultado medido es un decode de 39,8–47,9 tok/s con borradores MTP activados en prompts de hasta 8K tokens, manteniendo servicio hasta la ventana completa de 192K tokens.
 
@@ -88,7 +88,7 @@ No hay datos suficientes en la información disponible para comparar con otros M
 - Contexto con MTP limitado a 192K en esta configuración; los 262K del config no son alcanzables con drafting en 2× GB10.
 - Prefill muy lento en contextos largos (279 tok/s a 191K, 11,4 minutos al primer token), lo que limita escenarios interactivos de contexto máximo.
 - No hay información sobre sesgos, riesgo de alucinación ni soporte de idiomas en este repositorio; consultar la model card de inclusionAI.
-- Licencia MIT en los pesos, favorable al uso comercial, pero el archivo `modeling_bailing_moe_v3.py` está bajo Apache-2.0 (Copyright 2025 Antgroup y HuggingFace Inc. team); revisar ambas licencias en usos comerciales.
+- Licencia MIT en los pesos, favorable al uso comercial, pero el archivo `modeling_bailing_moe_v3.py` está bajo Apache-2.0 (Copyright 2025 Antgroup y Hugging Face Inc. team); revisar ambas licencias en usos comerciales.
 - Repositorio de autor independiente, no afiliado ni respaldado por inclusionAI, NVIDIA ni los autores de TensorFold o exllamav3; con muy pocas descargas (247) y sin comunidad de soporte.
 
 ## Enlaces

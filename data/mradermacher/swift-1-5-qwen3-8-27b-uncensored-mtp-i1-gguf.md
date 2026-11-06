@@ -18,7 +18,7 @@ Su relevancia práctica es doble: por un lado, permite ejecutar un modelo de 27.
 | Longitud de contexto | No disponible en la model card; las referencias de Qwen3.8-27B indican 262.000 tokens nativos ampliables a 1M |
 | Tipos de cuantizacion | Ficheros publicados en este repositorio: i1-Q2_K (11,0 GB), i1-IQ3_M (12,9 GB), i1-Q4_K_S (15,9 GB) e imatrix (0,1 GB). La lista de tipos generables/etiquetados incluye además Q2_K, Q2_K_S, Q3_K_S, Q3_K_M, Q3_K_L, Q4_0, Q4_1, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, IQ1_S, IQ1_M, IQ2_XXS, IQ2_XS, IQ2_S, IQ2_M, IQ3_XXS, IQ3_XS, IQ3_S, IQ4_XS y small-IQ4_NL |
 | Idiomas soportados | en (inglés) |
-| Licencia | swift-open-license-1.0 (etiquetada como license: other en HuggingFace); texto en https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE |
+| Licencia | swift-open-license-1.0 (etiquetada como license: other en Hugging Face); texto en https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE |
 | Formato de pesos | GGUF (cuantizaciones i1 con imatrix); el modelo base está en safetensors/transformers |
 | Autor de la cuantizacion | mradermacher |
 | Modelo base | ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP |
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-i1-GGUF
 - Cuantizaciones estáticas del mismo modelo (incluye mmproj): https://huggingface.co/mradermacher/Swift-1.5-Qwen3.8-27B-Uncensored-MTP-GGUF
 - Modelo base: https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP
 - Texto de la licencia: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b/blob/main/LICENSE

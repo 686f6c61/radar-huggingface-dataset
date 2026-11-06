@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma-4-12B-TNG-V8-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma-4-12B-TNG-V8-GGUF
 - Modelo base: https://huggingface.co/nightmedia/gemma-4-12B-TNG-V8
 - Cuantizaciones con imatrix: https://huggingface.co/mradermacher/gemma-4-12B-TNG-V8-i1-GGUF
 - Blog de Google sobre Gemma 4 12B: https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/

@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| manateelazycat/cosmos-video-memory-models (bundle) | No disponible (reranker de 2B incluido) | No disponible | Multiple-model-licenses | HuggingFace, 0 descargas |
-| nvidia/Cosmos-Embed1-336p | No disponible | No disponible | NVIDIA Open Model License | Upstream en HuggingFace |
-| Qwen/Qwen3-VL-Reranker-2B | 2B | No disponible | Apache 2.0 | Upstream en HuggingFace |
-| nvidia/Cosmos3-Edge | No disponible | No disponible | OpenMDW 1.1 | Upstream en HuggingFace |
+| manateelazycat/cosmos-video-memory-models (bundle) | No disponible (reranker de 2B incluido) | No disponible | Multiple-model-licenses | Hugging Face, 0 descargas |
+| nvidia/Cosmos-Embed1-336p | No disponible | No disponible | NVIDIA Open Model License | Upstream en Hugging Face |
+| Qwen/Qwen3-VL-Reranker-2B | 2B | No disponible | Apache 2.0 | Upstream en Hugging Face |
+| nvidia/Cosmos3-Edge | No disponible | No disponible | OpenMDW 1.1 | Upstream en Hugging Face |
 
 La comparativa relevante es contra los propios componentes upstream, ya que el bundle no aporta pesos nuevos. No se dispone de datos de rendimiento para comparar metricas.
 
@@ -82,7 +82,7 @@ La comparativa relevante es contra los propios componentes upstream, ya que el b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/cosmos-video-memory-models
+- Hugging Face: https://huggingface.co/manateelazycat/cosmos-video-memory-models
 - Materiales de licencia: https://huggingface.co/manateelazycat/cosmos-video-memory-models/blob/main/weights/license-materials/README.md
 - Componente de embeddings: https://huggingface.co/nvidia/Cosmos-Embed1-336p
 - Componente de reranking: https://huggingface.co/Qwen/Qwen3-VL-Reranker-2B

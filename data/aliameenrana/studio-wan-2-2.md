@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Escala | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| studio-wan-2.2 (este repo) | 14B y 5B (según identificadores) | Difusión vídeo I2V / TI2V, repackaging | Apache-2.0 | HuggingFace, 49,4 GB |
-| Wan-AI/Wan2.2-I2V-A14B | 14B | Difusión vídeo imagen-a-vídeo | Apache-2.0 | HuggingFace (modelo original) |
-| Wan-AI/Wan2.2-TI2V-5B | 5B | Difusión vídeo texto+imagen-a-vídeo | Apache-2.0 | HuggingFace (modelo original) |
-| Comfy-Org/Wan_2.2_ComfyUI_Repackaged | no disponible | Repackaging para ComfyUI | no disponible en la información proporcionada | HuggingFace |
+| studio-wan-2.2 (este repo) | 14B y 5B (según identificadores) | Difusión vídeo I2V / TI2V, repackaging | Apache-2.0 | Hugging Face, 49,4 GB |
+| Wan-AI/Wan2.2-I2V-A14B | 14B | Difusión vídeo imagen-a-vídeo | Apache-2.0 | Hugging Face (modelo original) |
+| Wan-AI/Wan2.2-TI2V-5B | 5B | Difusión vídeo texto+imagen-a-vídeo | Apache-2.0 | Hugging Face (modelo original) |
+| Comfy-Org/Wan_2.2_ComfyUI_Repackaged | no disponible | Repackaging para ComfyUI | no disponible en la información proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparativas de rendimiento frente a otras familias de modelos de vídeo en la información proporcionada.
 
@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks ni de comparativas de rendimiento frente a 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/aliameenrana/studio-wan-2.2
+- Repositorio en Hugging Face: https://huggingface.co/aliameenrana/studio-wan-2.2
 - Modelo original I2V: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Modelo original TI2V: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Repackaging de ComfyUI: https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged

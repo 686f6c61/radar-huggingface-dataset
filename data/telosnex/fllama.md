@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `telosnex/fllama` es un modelo de lenguaje de aproximadamente 8.190 millones de parámetros publicado en HuggingFace por el usuario `telosnex`. El repositorio, con un tamaño de 403,7 GB, contiene pesos en formato GGUF, lo que indica que está orientado a su despliegue en entornos de inferencia local o en servidores compatibles con este formato, como llama.cpp o servidores de endpoints compatibles.
+El modelo `telosnex/fllama` es un modelo de lenguaje de aproximadamente 8.190 millones de parámetros publicado en Hugging Face por el usuario `telosnex`. El repositorio, con un tamaño de 403,7 GB, contiene pesos en formato GGUF, lo que indica que está orientado a su despliegue en entornos de inferencia local o en servidores compatibles con este formato, como llama.cpp o servidores de endpoints compatibles.
 
 Los metadatos disponibles (tags) sugieren que el modelo está diseñado para tareas conversacionales y que ha sido cuantizado utilizando una matriz de importancia (imatrix), una técnica que mejora la calidad de las cuantizaciones de baja precisión. Sin embargo, la información pública es muy limitada: no se especifican la arquitectura, el contexto de entrenamiento, los datos de entrenamiento ni las capacidades detalladas. Esto impide una evaluación técnica completa y obliga a tratar el modelo con cautela en entornos de producción.
 
@@ -83,5 +83,5 @@ Se recomienda ejecutar evaluaciones comparativas propias si se desea sustituir a
 
 ## Enlaces
 
-- Repositorio HuggingFace: [telosnex/fllama](https://huggingface.co/telosnex/fllama)
+- Repositorio Hugging Face: [telosnex/fllama](https://huggingface.co/telosnex/fllama)
 - No se han encontrado otros enlaces (papers, blogs, repos) en la información proporcionada.

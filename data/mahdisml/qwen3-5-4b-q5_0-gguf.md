@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mahdisml/Qwen3.5-4B-Q5_0-GGUF` es una conversión al formato GGUF del modelo original `Qwen/Qwen3.5-4B`, realizada por el usuario mahdisml mediante la herramienta GGUF-my-repo de ggml.ai y llama.cpp. Esta conversión permite ejecutar el modelo de forma eficiente en entornos locales con CPU o GPU, utilizando motores de inferencia como llama.cpp, llama-server, Ollama o LM Studio, sin necesidad de depender de la infraestructura de HuggingFace Transformers.
+El modelo `mahdisml/Qwen3.5-4B-Q5_0-GGUF` es una conversión al formato GGUF del modelo original `Qwen/Qwen3.5-4B`, realizada por el usuario mahdisml mediante la herramienta GGUF-my-repo de ggml.ai y llama.cpp. Esta conversión permite ejecutar el modelo de forma eficiente en entornos locales con CPU o GPU, utilizando motores de inferencia como llama.cpp, llama-server, Ollama o LM Studio, sin necesidad de depender de la infraestructura de Hugging Face Transformers.
 
 El modelo base, Qwen3.5-4B, pertenece a la familia Qwen3.5 de Alibaba, que integra avances en aprendizaje multimodal, eficiencia arquitectónica y escalado de aprendizaje por refuerzo. Se trata de un modelo denso de aproximadamente 4.300 millones de parámetros con una ventana de contexto nativa de 262.144 tokens, según la información publicada en LM Studio y Ollama. Su pipeline declarado es `image-text-to-text`, lo que indica capacidades multimodales de entrada visual y textual.
 
@@ -25,12 +25,12 @@ La relevancia de esta conversión radica en que facilita el despliegue local de 
 
 La arquitectura exacta del modelo Qwen3.5-4B no se detalla en la informacion proporcionada. Se sabe que es un modelo denso (no MoE) de 4,3 B de parametros, con capacidad de procesamiento multimodal de imagenes y texto. La familia Qwen3.5 incorpora mejoras en eficiencia arquitectonica y escalado de aprendizaje por refuerzo, aunque no se especifican los detalles concretos de atencion, capas o mecanismos de vision.
 
-En cuanto al entrenamiento, no se dispone de datos sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. La informacion disponible se limita a la ficha del modelo en HuggingFace y a las paginas de LM Studio y Ollama, que mencionan avances en aprendizaje multimodal y refuerzo, pero sin cifras concretas. Por tanto, estos datos se consideran no disponibles.
+En cuanto al entrenamiento, no se dispone de datos sobre el numero de tokens, la composicion del dataset, ni si se aplicaron tecnicas como RLHF o DPO. La informacion disponible se limita a la ficha del modelo en Hugging Face y a las paginas de LM Studio y Ollama, que mencionan avances en aprendizaje multimodal y refuerzo, pero sin cifras concretas. Por tanto, estos datos se consideran no disponibles.
 
 ## Capacidades
 
 - Generacion de texto y comprension de lenguaje natural, incluyendo razonamiento, codigo y matematicas (capacidades tipicas de la familia Qwen, aunque no confirmadas explicitamente para esta version).
-- Procesamiento multimodal de imagenes y texto, segun el pipeline `image-text-to-text` declarado en HuggingFace.
+- Procesamiento multimodal de imagenes y texto, segun el pipeline `image-text-to-text` declarado en Hugging Face.
 - Ventana de contexto de 262.144 tokens, lo que permite manejar documentos muy largos o conversaciones extensas sin truncamiento.
 - Soporte de tool calling y function calling: no confirmado en la informacion disponible.
 - Capacidades de agente y razonamiento multi-paso: no confirmado.
@@ -48,7 +48,7 @@ En cuanto al entrenamiento, no se dispone de datos sobre el numero de tokens, la
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de puntuaciones en MMLU, HumanEval, GSM8K ni otras pruebas estandar para este modelo o su version base. Se recomienda consultar la ficha del modelo original en HuggingFace para futuras actualizaciones.
+No se han publicado resultados de benchmarks en la informacion disponible. No se dispone de puntuaciones en MMLU, HumanEval, GSM8K ni otras pruebas estandar para este modelo o su version base. Se recomienda consultar la ficha del modelo original en Hugging Face para futuras actualizaciones.
 
 ## Requisitos de hardware
 
@@ -82,8 +82,8 @@ Los datos de contexto y multimodalidad se basan en informacion publica de las re
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mahdisml/Qwen3.5-4B-Q5_0-GGUF
-- Modelo original en HuggingFace: https://huggingface.co/Qwen/Qwen3.5-4B
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mahdisml/Qwen3.5-4B-Q5_0-GGUF
+- Modelo original en Hugging Face: https://huggingface.co/Qwen/Qwen3.5-4B
 - Pagina del modelo en LM Studio: https://lmstudio.ai/models/qwen/qwen3.5-4b
 - Pagina del modelo en Ollama: https://ollama.com/library/qwen3.5:4b
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

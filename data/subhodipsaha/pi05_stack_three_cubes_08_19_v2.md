@@ -65,7 +65,7 @@ No se dispone de modelos comparables dentro de la información proporcionada. El
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/subhodipsaha/pi05_stack_three_cubes_08_19_v2)
+- [Hugging Face del modelo](https://huggingface.co/subhodipsaha/pi05_stack_three_cubes_08_19_v2)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/subhodipsaha/so101_stack_three_cubes_08_19)
 - [Dataset de evaluación (ACT)](https://huggingface.co/datasets/subhodipsaha/eval_act_stack_three_cubes_08_19)
 - [Repositorio OpenPI de Physical Intelligence](https://github.com/Physical-Intelligence/openpi)

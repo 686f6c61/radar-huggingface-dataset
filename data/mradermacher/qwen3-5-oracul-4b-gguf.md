@@ -88,7 +88,7 @@ La comparación es aproximada: no se dispone de benchmarks del modelo evaluado, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/QWEN3.5-oracul-4b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/QWEN3.5-oracul-4b-GGUF
 - Modelo base: https://huggingface.co/par0v0z/QWEN3.5-oracul-4b
 - Página de overview de cuantizaciones de mradermacher: https://hf.tst.eu/model#QWEN3.5-oracul-4b-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`michalkcre/cs229-classification` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. Lo desarrolla el usuario michalkcre y está vinculado, por el nombre del repositorio, a un contexto académico (CS229), pero no se aporta información sobre la institución, el curso ni el responsable concreto. El problema que aborda es de investigación: servir como base de código mínima para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
+`michalkcre/cs229-classification` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura tipo Mixer orientada a tareas de clasificación. Lo desarrolla el usuario michalkcre y está vinculado, por el nombre del repositorio, a un contexto académico (CS229), pero no se aporta información sobre la institución, el curso ni el responsable concreto. El problema que aborda es de investigación: servir como base de código mínima para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
 El modelo es extremadamente pequeno: el checkpoint `model.safetensors` contiene 33.088 parámetros totales (aproximadamente 0,033 millones), lo que lo sitúa en una escala "tiny" declarada explícitamente por el autor. No es una arquitectura transformer convencional: usa atención dispersa (sparse attention), fusión tipo Tucker, activación GELU-Tanh y normalización RMSNorm.
 
@@ -66,7 +66,7 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| michalkcre/cs229-classification | 33.088 | no disponible | sin benchmark publicado | BSD-3-Clause | HuggingFace (0 descargas) |
+| michalkcre/cs229-classification | 33.088 | no disponible | sin benchmark publicado | BSD-3-Clause | Hugging Face (0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,5 +83,5 @@ No se dispone de datos verificados de modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/michalkcre/cs229-classification
+- Hugging Face: https://huggingface.co/michalkcre/cs229-classification
 - Paper, blog, repositorio o demo adicionales: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos correspondían a sitios genéricos de vídeo y no guardaban relación con el repositorio).

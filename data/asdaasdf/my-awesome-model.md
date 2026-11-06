@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es el nombre que aparece en la model card del repositorio de HuggingFace `asdaasdf/my-awesome-model`, publicado por el usuario `asdaasdf` con licencia MIT. La información disponible es escasa y contradictoria: las etiquetas del repositorio apuntan a un modelo de tipo BERT para `feature-extraction` con librería `transformers` y pesos en PyTorch, mientras que la model card describe un asistente conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y resultados en pruebas tipo AIME 2025. El repositorio ocupa 0,0 GB, no registra descargas ni likes y no publica pesos, tokenizador ni ficheros de configuración visibles.
+MyAwesomeModel es el nombre que aparece en la model card del repositorio de Hugging Face `asdaasdf/my-awesome-model`, publicado por el usuario `asdaasdf` con licencia MIT. La información disponible es escasa y contradictoria: las etiquetas del repositorio apuntan a un modelo de tipo BERT para `feature-extraction` con librería `transformers` y pesos en PyTorch, mientras que la model card describe un asistente conversacional de razonamiento con modo de pensamiento extendido, soporte de function calling y resultados en pruebas tipo AIME 2025. El repositorio ocupa 0,0 GB, no registra descargas ni likes y no publica pesos, tokenizador ni ficheros de configuración visibles.
 
 El texto de la model card menciona una actualización de versión con mayor profundidad de razonamiento, una subida de precisión en AIME 2025 del 70 % al 87,5 % y un incremento del consumo medio de tokens por pregunta de 12K a 23K. También incluye una tabla de evaluación con quince tareas genéricas (razonamiento matemático, lógico, comprensión lectora, generación de código, etc.) comparada contra columnas anonimizadas como Model1, Model2 y Model1-v2, sin identificar los benchmarks ni los modelos de referencia.
 
@@ -111,7 +111,7 @@ No es posible establecer una comparativa fiable. La model card referencia modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asdaasdf/my-awesome-model
+- Repositorio en Hugging Face: https://huggingface.co/asdaasdf/my-awesome-model
 - Paper: no disponible
 - Blog o anuncio oficial: no disponible
 - Repositorio de código: mencionado en la model card como "our code repository", sin URL

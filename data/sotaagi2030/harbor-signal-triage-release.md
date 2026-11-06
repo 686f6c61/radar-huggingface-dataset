@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Harbor Signal Triage es un artefacto publicado en HuggingFace bajo el identificador `SOTAagi2030/Harbor-Signal-Triage-Release`. Según la única documentación disponible (su model card), se trata de un modelo de triaje que enruta clips de radio hacia las colas definidas en un fichero `label_map.json`. La publicaci��n se etiqueta como release candidate con el nombre interno «beacon-cobalt». No se documenta arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia.
+Harbor Signal Triage es un artefacto publicado en Hugging Face bajo el identificador `SOTAagi2030/Harbor-Signal-Triage-Release`. Según la única documentación disponible (su model card), se trata de un modelo de triaje que enruta clips de radio hacia las colas definidas en un fichero `label_map.json`. La publicaci��n se etiqueta como release candidate con el nombre interno «beacon-cobalt». No se documenta arquitectura, número de parámetros, longitud de contexto, idiomas ni licencia.
 
 La información cuantitativa que aporta el autor es mínima y de carácter operativo, no de benchmarks estándar: cobertura de 0,933, tasa de falsos positivos de 0,041, tres candidatos cualificados y una fecha de revisión del 22 de febrero de 2026. El criterio de selección declarado es lexicográfico: menor tasa de falsos positivos, después mayor cobertura, después fecha de revisión más temprana y, por último, identificador de candidato.
 
@@ -20,7 +20,7 @@ Su relevancia actual es limitada y de naturaleza evaluativa: el repositorio ocup
 | Licencia | no disponible |
 | Formato de pesos | safetensors (declarado en los tags del repositorio; el repositorio ocupa 0,0 GB, por lo que no hay pesos verificables) |
 | Tarea declarada | enrutamiento de clips de radio a colas definidas en `label_map.json` (triaje/clasificación) |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Métricas declaradas | cobertura 0,933; tasa de falsos positivos 0,041 |
 | Candidatos evaluados | 3 |
 | Fecha de revisión declarada | 2026-02-22 |
@@ -97,6 +97,6 @@ No disponible. La información proporcionada no identifica la arquitectura ni la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/Harbor-Signal-Triage-Release
+- Hugging Face: https://huggingface.co/SOTAagi2030/Harbor-Signal-Triage-Release
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos corresponden a servicios de descarga de vídeo y a discusiones ajenas al proyecto).

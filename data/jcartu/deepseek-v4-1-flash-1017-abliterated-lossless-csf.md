@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF` es una publicación de la comunidad sobre el modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, distribuida por el usuario jcartu en HuggingFace. Se trata de una variante "abliterated" (con la dirección de rechazo ablacionada), etiquetada como "uncensored", y empaquetada en safetensors con soporte para vLLM. El repositorio ocupa 495,6 GB, lo que sitúa al modelo en la categoría de pesos de gran escala, aunque el número de parámetros no se declara en la información disponible.
+`jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF` es una publicación de la comunidad sobre el modelo base `deepseek-ai/DeepSeek-V4.1-Flash-1017`, distribuida por el usuario jcartu en Hugging Face. Se trata de una variante "abliterated" (con la dirección de rechazo ablacionada), etiquetada como "uncensored", y empaquetada en safetensors con soporte para vLLM. El repositorio ocupa 495,6 GB, lo que sitúa al modelo en la categoría de pesos de gran escala, aunque el número de parámetros no se declara en la información disponible.
 
 La ficha del repositorio no incluye model card con detalles de arquitectura, datos de entrenamiento ni evaluación. Las únicas pistas técnicas son las etiquetas: `deepseek_v41`, `mxfp4`, `fp8`, `reasoning`, `csf` y `local-inference-lab`. La presencia simultánea de `mxfp4` y `fp8` sugiere que el repositorio contiene pesos en formatos de baja precisión, si bien se desconoce si conviven en el mismo checkpoint o si son variantes separadas dentro del árbol de archivos.
 
@@ -22,7 +22,7 @@ La relevancia de esta publicación es doble: por un lado, ofrece una versión si
 | Formato de pesos | safetensors (librería declarada: vLLM) |
 | Modelo base | `deepseek-ai/DeepSeek-V4.1-Flash-1017` |
 | Tamaño del repositorio | 495,6 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Pipeline | text-generation |
 | Fecha de creación / actualización | 2026-10-20 / 2026-10-20 |
 
@@ -85,7 +85,7 @@ No se dispone de datos verificables de parámetros, contexto ni benchmarks de mo
 - La ablación de rechazo puede degradar capacidades generales del modelo (razonamiento, instrucciones, coherencia) y no se documenta ninguna medición del daño colateral.
 - Riesgo de producir contenido dañino, ilegal o sexualmente explícito sin las salvaguardas del modelo base; requiere filtrado externo obligatorio en cualquier despliegue con usuarios finales.
 - Licencia `lil-license-1.0` (categoría `license:other`): no se detallan en la información disponible los términos de uso comercial, redistribución ni obligaciones de atribución; es imprescindible leer el texto completo de la licencia antes de cualquier uso productivo.
-- Acceso restringido (gated): la descarga requiere aceptar condiciones en HuggingFace, lo que puede limitar la reproducibilidad y la automatización de pipelines.
+- Acceso restringido (gated): la descarga requiere aceptar condiciones en Hugging Face, lo que puede limitar la reproducibilidad y la automatización de pipelines.
 - El autor no es el desarrollador del modelo base; no hay garantía de correspondencia exacta con el checkpoint original ni de integridad de los pesos modificados.
 - Idiomas soportados no declarados: no puede asumirse un rendimiento adecuado en castellano sin evaluación propia.
 - Repositorio de 495,6 GB: los costes de almacenamiento, transferencia y serve son significativos y no aptos para prototipado rápido.
@@ -94,6 +94,6 @@ No se dispone de datos verificables de parámetros, contexto ni benchmarks de mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF
+- Repositorio Hugging Face: https://huggingface.co/jcartu/DeepSeek-V4.1-Flash-1017-abliterated-lossless-CSF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

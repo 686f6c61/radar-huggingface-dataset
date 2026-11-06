@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K n
 
 | Modelo | Parámetros | Contexto | Precisión test CIFAR-10 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `arkagme/smai-a4-mlp` | ~0,39 M | no aplica | 0,4624 | no disponible | HuggingFace |
+| `arkagme/smai-a4-mlp` | ~0,39 M | no aplica | 0,4624 | no disponible | Hugging Face |
 | LeNet-5 (referencia histórica) | ~60 K | no aplica | ~0,70 (típico en CIFAR-10 con augmentation) | no disponible | implementaciones múltiples |
 | ResNet-18 | ~11,2 M | no aplica | ~0,95 (típico con augmentation) | no disponible | torchvision |
 | VGG-11 | ~132 M | no aplica | ~0,92 (típico con augmentation) | no disponible | torchvision |
@@ -91,5 +91,5 @@ Las cifras de LeNet-5, ResNet-18 y VGG-11 son valores de referencia habituales e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arkagme/smai-a4-mlp
+- Hugging Face: https://huggingface.co/arkagme/smai-a4-mlp
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

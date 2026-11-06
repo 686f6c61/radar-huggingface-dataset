@@ -91,8 +91,8 @@ Dentro de la información disponible, la comparativa se limita a las variantes d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefanprodan/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp
-- Modelo base en HuggingFace: https://huggingface.co/EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP
+- Modelo en Hugging Face: https://huggingface.co/stefanprodan/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp
+- Modelo base en Hugging Face: https://huggingface.co/EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP
 - Modelo original de Ornith 1.5: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
-- Variante de referencia en HuggingFace: https://huggingface.co/pyros-vault/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp
+- Variante de referencia en Hugging Face: https://huggingface.co/pyros-vault/Ornith-1.5-35B-A3B-BigBang-oQ4e-mtp
 - Repositorio de oMLX: https://github.com/jundot/omlx

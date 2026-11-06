@@ -2,7 +2,7 @@
 
 ## Resumen
 
-PyScribe es un repositorio de modelo publicado en HuggingFace por el usuario Bomberman1359 bajo licencia MIT. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: identificador `Bomberman1359/PyScribe`, etiquetas `license:mit` y `region:us`, cero descargas y cero likes desde su creacion el 22 de septiembre de 2026.
+PyScribe es un repositorio de modelo publicado en Hugging Face por el usuario Bomberman1359 bajo licencia MIT. En el momento de la consulta, la informacion disponible se limita a los metadatos del repositorio: identificador `Bomberman1359/PyScribe`, etiquetas `license:mit` y `region:us`, cero descargas y cero likes desde su creacion el 22 de septiembre de 2026.
 
 La model card asociada unicamente declara la licencia (`license: mit`) y no incluye descripcion, arquitectura, datos de entrenamiento, capacidades ni instrucciones de uso. El tamano del repositorio se registra como 0.0 GB, lo que sugiere que no se han subido pesos ni ficheros de configuracion de modelo, aunque esto no puede confirmarse con los datos proporcionados.
 
@@ -82,7 +82,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Bomberman1359/PyScribe
+- Hugging Face: https://huggingface.co/Bomberman1359/PyScribe
 - Paper: no disponible
 - Blog o documentacion tecnica: no disponible
 - Repositorio de codigo: no disponible

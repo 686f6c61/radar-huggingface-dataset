@@ -100,7 +100,7 @@ Diferencias clave: los tres modelos comparativos cuentan con licencia explicita,
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/pragmaticcs/SignOfThree-Q4_K_M-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/pragmaticcs/SignOfThree-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/pragmaticcs/SignOfThree
 - Espacio GGUF-my-repo de ggml.ai: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio de llama.cpp: https://github.com/ggerganov/llama.cpp

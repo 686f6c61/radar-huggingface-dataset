@@ -96,7 +96,7 @@ La diferencia practica relevante no es de rendimiento —no hay datos comparable
 - Sin vision, sin audio y sin modo de razonamiento explicito; si se necesitan esas capacidades hay que acudir a otras familias o variantes.
 - Licencia Apache 2.0: permite uso comercial y redistribucion, pero obliga a conservar los avisos de copyright y atribucion, y a indicar los cambios realizados. El autor del rehost ya atribuye el modelo y la cuantizacion a Qwen.
 - Trazabilidad: 0 descargas y 0 likes, sin benchmarks propios ni validacion externa. Para produccion es preferible descargar el GGUF directamente del repositorio oficial de Qwen.
-- Metadatos: la fecha de creacion registrada en HuggingFace figura como 2026-09-26, incoherente con el resto de la informacion; conviene no tomarla como referencia.
+- Metadatos: la fecha de creacion registrada en Hugging Face figura como 2026-09-26, incoherente con el resto de la informacion; conviene no tomarla como referencia.
 
 ## Enlaces
 

@@ -81,7 +81,7 @@ La diferencia entre este checkpoint y el modelo DART emparejado de la misma tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261103
+- Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-alpha0p8-press-stapler-20261103
 - Fine-tuning fuente reutilizado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-paired-source-ft-1000-press-stapler-20261030
 - Fine-tuning objetivo del merge: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-replay-keepstate-large-view-yaw30-ft-1000-press-stapler-20261103
 - Codigo de adaptacion (commit `2065dd0a`): repositorio `Donghyun1228/vla_adaptation` (no se proporciona URL directa)

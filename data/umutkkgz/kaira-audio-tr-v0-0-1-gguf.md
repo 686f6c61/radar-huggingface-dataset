@@ -84,6 +84,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/umutkkgz/KAIRA-Audio-TR-V0.0.1-GGUF
+- Modelo en Hugging Face: https://huggingface.co/umutkkgz/KAIRA-Audio-TR-V0.0.1-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM2.5-Audio-1.5B/blob/main/LICENSE

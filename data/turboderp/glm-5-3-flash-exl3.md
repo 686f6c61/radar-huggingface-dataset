@@ -69,7 +69,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otras 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/turboderp/GLM-5.3-Flash-exl3
+- Repositorio de Hugging Face: https://huggingface.co/turboderp/GLM-5.3-Flash-exl3
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - ExLlamaV3 (GitHub): https://github.com/turboderp-org/exllamav3
 - Documentacion del formato EXL3: https://github.com/turboderp-org/exllamav3/blob/master/doc/exl3.md

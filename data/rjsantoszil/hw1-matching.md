@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rjsantoszil/hw1-matching es un prototipo de investigación publicado en HuggingFace bajo el nombre "Mixer for Matching". Se trata de una implementación propia de una arquitectura tipo Mixer orientada a tareas de emparejamiento (matching), distribuida como artefacto de código más un checkpoint de inicialización. El autor lo describe explícitamente como un punto de partida experimental: `model.safetensors` es un checkpoint válido para pruebas de humo, no un modelo entrenado ni evaluado.
+rjsantoszil/hw1-matching es un prototipo de investigación publicado en Hugging Face bajo el nombre "Mixer for Matching". Se trata de una implementación propia de una arquitectura tipo Mixer orientada a tareas de emparejamiento (matching), distribuida como artefacto de código más un checkpoint de inicialización. El autor lo describe explícitamente como un punto de partida experimental: `model.safetensors` es un checkpoint válido para pruebas de humo, no un modelo entrenado ni evaluado.
 
 El tamaño real declarado en el índice de safetensors es de 49.600 parámetros totales, y el repositorio ocupa 0,0 GB. Esto sitúa al modelo en la categoría "tiny", muy lejos de cualquier LLM utilizable en producción: no hay evidencia de entrenamiento, ni resultados de benchmarks, ni datos sobre el corpus utilizado. La model card no reclama ninguna puntuación de rendimiento.
 
@@ -90,7 +90,7 @@ La única alternativa identificada en la búsqueda es `jnc-lark/hw1-matching`, d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rjsantoszil/hw1-matching
-- Perfil del autor en HuggingFace: https://huggingface.co/rjsantoszil
+- Modelo en Hugging Face: https://huggingface.co/rjsantoszil/hw1-matching
+- Perfil del autor en Hugging Face: https://huggingface.co/rjsantoszil
 - Modelo homónimo de otro autor (Mae for Matching): https://huggingface.co/jnc-lark/hw1-matching
 - Leaderboard y comparativas de modelos: https://benchlm.ai/

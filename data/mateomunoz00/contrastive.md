@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Categoria | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Contrastive (mateomunoz00) | Backbone MobileViT contrastivo experimental | 49.600 (49,6 K) | no disponible | bsd-3-clause | HuggingFace, sin checkpoint entrenado |
+| Contrastive (mateomunoz00) | Backbone MobileViT contrastivo experimental | 49.600 (49,6 K) | no disponible | bsd-3-clause | Hugging Face, sin checkpoint entrenado |
 | MobileViT original (Apple) | Backbone hibrido CNN-transformer para vision | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Publicacion academica y repositorios |
 | CLIP | Modelo contrastivo imagen-texto | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Pesos publicos |
 | Backbones contrastivos tipo SimCLR/MoCo (ResNet) | Codificadores auto-supervisados para vision | no disponible en la informacion proporcionada | no disponible | no disponible en la informacion proporcionada | Repositorios de investigacion |
@@ -85,7 +85,7 @@ Los modelos alternativos se citan solo como referencia de categoria; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mateomunoz00/contrastive
+- Modelo en Hugging Face: https://huggingface.co/mateomunoz00/contrastive
 - Contrastive Learning Guide (AI Understanding): https://aiunderstanding.org/learn/contrastive-learning
 - Contrastive Learning: A Comprehensive Guide (Medium): https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77
 - CLIP (Contrastive Language-Image Pretraining) (GeeksforGeeks): https://www.geeksforgeeks.org/deep-learning/clip-contrastive-language-image-pretraining/

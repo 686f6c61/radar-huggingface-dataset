@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LFM3-1.7B-MLX-oQ8-fp16 (esta ficha) | 1,729 B | no disponible | 8,5 bits efectivos (MLX) | no disponible | HuggingFace (0 descargas) |
+| LFM3-1.7B-MLX-oQ8-fp16 (esta ficha) | 1,729 B | no disponible | 8,5 bits efectivos (MLX) | no disponible | Hugging Face (0 descargas) |
 | LFM3-1.7B original (Liquid AI) | ~1,7 B | no disponible en esta ficha | FP16/BF16 | no disponible en esta ficha | Repositorio oficial de Liquid AI (no verificado aquí) |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | múltiples (GGUF, AWQ, MLX) | Apache 2.0 | Amplia, con versiones MLX comunitarias |
 | Llama 3.2 1B Instruct | 1,24 B | 131.072 tokens | múltiples (GGUF, MLX) | Llama 3.2 Community License | Amplia, con versiones MLX oficiales |
@@ -84,7 +84,7 @@ La comparación con Qwen2.5-1.5B y Llama 3.2 1B se ofrece como referencia de cat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alvarolizama/LFM3-1.7B-MLX-oQ8-fp16
+- Modelo en Hugging Face: https://huggingface.co/alvarolizama/LFM3-1.7B-MLX-oQ8-fp16
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Librería MLX: https://github.com/ml-explore/mlx
 - MLX-LM (inferencia de LLM en MLX): https://github.com/ml-explore/mlx-examples/tree/main/llms

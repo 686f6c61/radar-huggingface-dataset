@@ -69,7 +69,7 @@ No hay modelos comparables directamente publicados, ya que se trata de un modelo
 
 ## Enlaces
 
-- [HuggingFace: Urdatorn/sphragis-alm-olmo3-7b-plato](https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato)
+- [Hugging Face: Urdatorn/sphragis-alm-olmo3-7b-plato](https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plato)
 - [Dataset Sphragis](https://huggingface.co/datasets/Urdatorn/sphragis)
 - [Código de entrenamiento y scoring](https://github.com/Urdatorn/sphragis_models)
 - [Modelo base: allenai/Olmo-3-1025-7B](https://huggingface.co/allenai/Olmo-3-1025-7B)

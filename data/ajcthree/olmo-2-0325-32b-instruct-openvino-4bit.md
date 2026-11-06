@@ -96,7 +96,7 @@ La comparación de contexto, rendimiento en benchmarks y rendimiento multilingü
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AJCThree/OLMo-2-0325-32B-Instruct-openvino-4bit
+- Repositorio en Hugging Face: https://huggingface.co/AJCThree/OLMo-2-0325-32B-Instruct-openvino-4bit
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
 - Blog de AI2 sobre OLMo 2: https://allenai.org/blog/olmo2
 - Repositorio de código de OLMo (AI2): https://github.com/allenai/OLMo

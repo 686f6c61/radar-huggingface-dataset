@@ -78,7 +78,7 @@ Sin benchmarks, no es posible valorar el rendimiento relativo. La licencia `othe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberYifan/capsd-marin-8b-base-n80000-opc-r144-marin-8b-base-code_cap_b8000_s0
+- Modelo en Hugging Face: https://huggingface.co/AmberYifan/capsd-marin-8b-base-n80000-opc-r144-marin-8b-base-code_cap_b8000_s0
 - Modelo base: https://huggingface.co/marin-community/marin-8b-base
 - Variante similar (retrain): https://huggingface.co/AmberYifan/capsd-final-retrain-marin-8b-base-code_cap_b8000_s0
 - Otra variante (dsir): https://huggingface.co/AmberYifan/capsd-marin-8b-base-code_dsir_b8000_s0

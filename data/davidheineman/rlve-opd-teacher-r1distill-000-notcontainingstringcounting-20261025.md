@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-000-NotContainingStringCounting (este) | 1,78 B | No disponible | Profesor GRPO para `NotContainingStringCounting`, 4.000 rollouts | No disponible | HuggingFace, 0 descargas, 0 likes |
+| rlve-opd-teacher-R1Distill-000-NotContainingStringCounting (este) | 1,78 B | No disponible | Profesor GRPO para `NotContainingStringCounting`, 4.000 rollouts | No disponible | Hugging Face, 0 descargas, 0 likes |
 | deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | No disponible en esta ficha | Razonamiento general destilado de R1 | No disponible en esta ficha | Ampliamente distribuido |
-| davidheineman/opd-teacher-R1Distill-Integral-step149 | 1,78 B (derivado de R1-Distill-Qwen-1.5B) | No disponible | Profesor para el entorno `Integral`, 150 pasos, dificultad 0 | No disponible | HuggingFace |
-| davidheineman/opd-teacher-Q2.5I-* (Differentiate, GoldWashing) | 1,5 B (Qwen2.5-1.5B-Instruct) | No disponible | Profesores RLVE con GRPO, 150 actualizaciones | No disponible | HuggingFace y Featherless |
+| davidheineman/opd-teacher-R1Distill-Integral-step149 | 1,78 B (derivado de R1-Distill-Qwen-1.5B) | No disponible | Profesor para el entorno `Integral`, 150 pasos, dificultad 0 | No disponible | Hugging Face |
+| davidheineman/opd-teacher-Q2.5I-* (Differentiate, GoldWashing) | 1,5 B (Qwen2.5-1.5B-Instruct) | No disponible | Profesores RLVE con GRPO, 150 actualizaciones | No disponible | Hugging Face y Featherless |
 
 La comparacion cuantitativa de rendimiento entre estos modelos no esta disponible: no se publican resultados de benchmarks comunes ni evaluaciones cruzadas entre profesores de distintas tareas.
 
@@ -87,7 +87,7 @@ La comparacion cuantitativa de rendimiento entre estos modelos no esta disponibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-000-NotContainingStringCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-000-NotContainingStringCounting-20261025
 - Run de W&B del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/5de6b419
 - Repositorio RLVE (primitivas de datos para RL): https://github.com/davidheineman/rlve
 - Profesor hermano para el entorno Integral: https://huggingface.co/davidheineman/opd-teacher-R1Distill-Integral-step149

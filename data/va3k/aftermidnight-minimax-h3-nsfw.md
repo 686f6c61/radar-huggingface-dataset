@@ -23,7 +23,7 @@ La licencia declarada es Apache 2.0, pero la model card no aclara si esa licenci
 | Variantes incluidas | 2: «sexytime» (fuerza 1.0) y «softer» (fuerza 0.8-1.0) |
 | Muestreo recomendado | sampler euler y scheduler beta (obligatorio según el autor para evitar problemas de audio) |
 | Casos de uso declarados | generación de vídeo para adultos; no se declaran otros |
-| Creado / actualizado | 2026-09-30 (fechas registradas en HuggingFace, sin actualizaciones posteriores) |
+| Creado / actualizado | 2026-09-30 (fechas registradas en Hugging Face, sin actualizaciones posteriores) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AfterMidnight-MiniMax-H3-NSFW (va3k) | LoRA sobre MiniMax H3 ref2va | no disponible (repo de 4,8 GB) | no disponible | sin benchmarks publicados | apache-2.0 (adaptador) | HuggingFace, 0 descargas |
+| AfterMidnight-MiniMax-H3-NSFW (va3k) | LoRA sobre MiniMax H3 ref2va | no disponible (repo de 4,8 GB) | no disponible | sin benchmarks publicados | apache-2.0 (adaptador) | Hugging Face, 0 descargas |
 | MiniMax H3 (base, ref2va) | Modelo omnicanal de generación de vídeo con audio | no disponible | no disponible | referencia del ecosistema; sin datos en esta búsqueda | no disponible | distribuido por su autor original |
-| LoRAs NSFW de la comunidad para difusión de vídeo (por ejemplo, adaptadores para Flux u otros backbones) | Adaptadores de estilo/temática | no disponible | no disponible | sin benchmarks comparables publicados | variable (habitualmente permisiva) | HuggingFace, con moderación variable |
+| LoRAs NSFW de la comunidad para difusión de vídeo (por ejemplo, adaptadores para Flux u otros backbones) | Adaptadores de estilo/temática | no disponible | no disponible | sin benchmarks comparables publicados | variable (habitualmente permisiva) | Hugging Face, con moderación variable |
 
 No se dispone de comparativas cuantitativas entre este adaptador y alternativas equivalentes: no hay métricas públicas, ni evaluación de coherencia temporal, ni pruebas de sincronización de audio que permitan un ranking objetivo.
 
@@ -92,8 +92,8 @@ No se dispone de comparativas cuantitativas entre este adaptador y alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/va3k/AfterMidnight-MiniMax-H3-NSFW
-- Listado de modelos NSFW en HuggingFace (referencia de ecosistema): https://huggingface.co/models?search=nsfw
+- Modelo en Hugging Face: https://huggingface.co/va3k/AfterMidnight-MiniMax-H3-NSFW
+- Listado de modelos NSFW en Hugging Face (referencia de ecosistema): https://huggingface.co/models?search=nsfw
 - Guía sobre despliegue local de MiniMax H3 y moderación: https://kingy.ai/blog/can-minimax-h3-generate-uncensored-video-what-local-deployment-actually-changes/
 - Artículo sobre generación de vídeo sin censura con MiniMax H3: https://medium.com/data-science-in-your-pocket/uncensored-video-generation-using-minimax-h3-dc53e2102eb6
 - Repositorio de recursos de MiniMax H3 (codificadores de texto, cuantizaciones y herramientas): https://github.com/wildminder/awesome-minimax-H3

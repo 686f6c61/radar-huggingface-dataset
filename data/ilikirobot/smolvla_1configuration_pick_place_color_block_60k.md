@@ -55,8 +55,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SmolVLA (este) | 450M | no disponible | Pick and place específico | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | Manipulación general | MIT | HuggingFace |
+| SmolVLA (este) | 450M | no disponible | Pick and place específico | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | Manipulación general | MIT | Hugging Face |
 | RT-2 | 55B | no disponible | Manipulación general | Propietario | no público |
 
 No se dispone de datos de rendimiento comparativo. SmolVLA es significativamente más pequeño que OpenVLA, lo que lo hace más eficiente en recursos, pero no hay benchmarks que confirmen su rendimiento relativo.

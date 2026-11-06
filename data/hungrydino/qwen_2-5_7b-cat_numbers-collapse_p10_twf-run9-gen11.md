@@ -4,7 +4,7 @@
 
 Este modelo es un fine-tuning experimental del modelo base `unsloth/Qwen2.5-7B-Instruct`, desarrollado por HungryDino. El nombre del modelo sugiere que se trata de un experimento de entrenamiento orientado a la categorización de números con una técnica de colapso de datos (probablemente referida a `collapse_p10` y `twf`), aunque la documentación publicada no detalla el objetivo exacto ni la metodología del entrenamiento. El repositorio tiene un tamaño de solo 0.1 GB, lo que indica que probablemente se distribuyen adaptadores LoRA en lugar de los pesos completos del modelo.
 
-El modelo se entrenó con la librería Unsloth, que acelera el fine-tuning, junto con la biblioteca TRL de HuggingFace. La licencia es Apache-2.0 y el idioma declarado es inglés. No se han publicado métricas de evaluación, descripción de los datos de entrenamiento ni instrucciones de uso específicas, por lo que su utilidad práctica queda limitada a quien conozca el contexto del experimento. Su relevancia principal es como ejemplo de fine-tuning experimental sobre Qwen2.5-7B-Instruct, no como modelo listo para producción.
+El modelo se entrenó con la librería Unsloth, que acelera el fine-tuning, junto con la biblioteca TRL de Hugging Face. La licencia es Apache-2.0 y el idioma declarado es inglés. No se han publicado métricas de evaluación, descripción de los datos de entrenamiento ni instrucciones de uso específicas, por lo que su utilidad práctica queda limitada a quien conozca el contexto del experimento. Su relevancia principal es como ejemplo de fine-tuning experimental sobre Qwen2.5-7B-Instruct, no como modelo listo para producción.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo se entrenó con la librería Unsloth, que acelera el fine-tuning, junt
 
 El modelo parte de `unsloth/Qwen2.5-7B-Instruct`, que es una version optimizada de Qwen2.5-7B-Instruct de Alibaba. La arquitectura subyacente es un transformer decoder-only con attention de Qwen2, con 28 capas, 28 cabezas de atencion y dimension de modelo de 3584. El modelo base fue pre-entrenado con hasta 18 billones de tokens y ajustado con instrucciones, soportando contexto de hasta 128K tokens.
 
-El fine-tuning se realizo con Unsloth, que utiliza una tecnica de retropropagacion manual para reducir el uso de memoria y acelerar el entrenamiento (el autor indica que se entreno "2x faster"), junto con la libreria TRL de HuggingFace. El tamaño del repositorio (0.1 GB) sugiere que se publicaron adaptadores LoRA en lugar de pesos completos, aunque no se especifica la configuracion exacta del adaptador (rango, alpha, capas objetivo). No se proporciona informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO.
+El fine-tuning se realizo con Unsloth, que utiliza una tecnica de retropropagacion manual para reducir el uso de memoria y acelerar el entrenamiento (el autor indica que se entreno "2x faster"), junto con la libreria TRL de Hugging Face. El tamaño del repositorio (0.1 GB) sugiere que se publicaron adaptadores LoRA en lugar de pesos completos, aunque no se especifica la configuracion exacta del adaptador (rango, alpha, capas objetivo). No se proporciona informacion sobre el dataset utilizado, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -76,7 +76,7 @@ No existen modelos comparables publicados por el mismo autor con la misma tecnic
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen11
+- Repositorio Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run9-gen11
 - Modelo base (unsloth): https://huggingface.co/unsloth/Qwen2.5-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Informe tecnico de Qwen2.5: https://arxiv.org/pdf/2412.15115v2

@@ -4,7 +4,7 @@
 
 El modelo `zviratko/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-oQ4e-fp16-mtp` es una cuantización mixta de precisión 4 bits (oQ) del modelo base `DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP`, un fine-tune y merge de la familia Qwen3.5 de 9B parámetros. Esta versión concreta está optimizada para el framework MLX de Apple, lo que permite su ejecución eficiente en hardware con silicio de Apple (M-series). El modelo base, desarrollado por DavidAU, es un modelo de lenguaje multimodal (imagen-texto a texto) que, según su autor, supera en varios benchmarks a modelos más grandes como Qwen3.5 27B y Qwen3.6 35B, manteniendo un tamaño reducido y sin censura.
 
-La relevancia de esta versión cuantizada radica en que ofrece un rendimiento elevado en un paquete compacto (7.2 GB de repositorio) y puede desplegarse en equipos de consumo con recursos limitados. El nombre incluye etiquetas como "uncensored" y "heretic", lo que indica que se ha eliminado la moderación de contenido, un aspecto a considerar en entornos de producción. Aunque los datos de la ficha de HuggingFace son mínimos, los resultados de búsqueda confirman que el modelo base ha sido evaluado en siete benchmarks y supera a modelos de mayor escala en varios de ellos, aunque no se proporcionan cifras concretas.
+La relevancia de esta versión cuantizada radica en que ofrece un rendimiento elevado en un paquete compacto (7.2 GB de repositorio) y puede desplegarse en equipos de consumo con recursos limitados. El nombre incluye etiquetas como "uncensored" y "heretic", lo que indica que se ha eliminado la moderación de contenido, un aspecto a considerar en entornos de producción. Aunque los datos de la ficha de Hugging Face son mínimos, los resultados de búsqueda confirman que el modelo base ha sido evaluado en siete benchmarks y supera a modelos de mayor escala en varios de ellos, aunque no se proporcionan cifras concretas.
 
 ## Especificaciones tecnicas
 
@@ -68,13 +68,13 @@ La comparativa es limitada porque no se dispone de datos de contexto, licencia n
 - Sesgos conocidos: al ser un fine-tune sin censura, puede reflejar y amplificar sesgos presentes en los datos de entrenamiento, sin filtros de moderación.
 - Riesgo de alucinación: no se han evaluado formalmente las tasas de alucinación; se recomienda verificar las salidas en aplicaciones críticas.
 - Limitaciones de contexto: la longitud de contexto no está documentada; se desconoce si soporta ventanas largas.
-- Restricciones de licencia: la licencia no está especificada en la ficha de HuggingFace, lo que impide determinar si es permitido su uso comercial o la redistribución.
+- Restricciones de licencia: la licencia no está especificada en la ficha de Hugging Face, lo que impide determinar si es permitido su uso comercial o la redistribución.
 - Idoneidad para producción: al ser "uncensored", puede generar contenido inapropiado u ofensivo, lo que lo hace inadecuado para aplicaciones públicas sin moderación adicional.
 - Compatibilidad: el formato MLX solo funciona en Apple Silicon; para otros entornos es necesario convertir el modelo a GGUF u otro formato, lo que puede degradar el rendimiento.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zviratko/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-oQ4e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/zviratko/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-oQ4e-fp16-mtp
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP
 - Versión GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF
 - Página de inferix.co con descripción del modelo: https://inferix.co/models/DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP-GGUF

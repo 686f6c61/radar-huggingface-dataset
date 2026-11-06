@@ -60,5 +60,5 @@ No disponible. No existen modelos de IA comparables porque el artefacto es un do
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/francescobianchi/paper_027893213_ocr_freeform
+- Repositorio en Hugging Face: https://huggingface.co/francescobianchi/paper_027893213_ocr_freeform
 - No se han encontrado enlaces externos adicionales (papers, blogs, demos) asociados a este repositorio en la información disponible.

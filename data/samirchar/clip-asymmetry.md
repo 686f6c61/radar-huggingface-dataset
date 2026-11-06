@@ -4,7 +4,7 @@
 
 El modelo `samirchar/clip-asymmetry` es un conjunto de 30 modelos CLIP entrenados en el dataset CC12M, desarrollado por Samir Char, Carles Domingo-Enrich y Randall Balestriero. Acompaña al artículo *Bigger Text Encoders Can Hurt CLIP Zero-Shot Performance*, cuyo objetivo es estudiar cómo la capacidad relativa de los encoders de visión y texto afecta al rendimiento en tareas zero-shot. Cada modelo combina de forma independiente un encoder de visión ViT (desde ViT-Tiny-16 hasta ViT-Colossal-16) con un encoder de texto Transformer (desde Femto hasta Giant), generando una cuadrícula de 5 × 6 combinaciones.
 
-La arquitectura es de tipo CLIP dual-encoder, entrenada con OpenCLIP sobre 12 millones de pares imagen-texto de CC12M. El repositorio de HuggingFace ocupa 66,3 GB e incluye los checkpoints de las 30 variantes en formato PyTorch. No se especifican los parámetros totales de cada modelo, la longitud de contexto ni datos de cuantización. Es un modelo de investigación, no orientado a producción, y su relevancia radica en permitir analizar el escalado asimétrico de los encoders en modelos contrastivos.
+La arquitectura es de tipo CLIP dual-encoder, entrenada con OpenCLIP sobre 12 millones de pares imagen-texto de CC12M. El repositorio de Hugging Face ocupa 66,3 GB e incluye los checkpoints de las 30 variantes en formato PyTorch. No se especifican los parámetros totales de cada modelo, la longitud de contexto ni datos de cuantización. Es un modelo de investigación, no orientado a producción, y su relevancia radica en permitir analizar el escalado asimétrico de los encoders en modelos contrastivos.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| samirchar/clip-asymmetry | no disponible | no disponible | no disponible | MIT | HuggingFace (66,3 GB) |
+| samirchar/clip-asymmetry | no disponible | no disponible | no disponible | MIT | Hugging Face (66,3 GB) |
 | OpenAI CLIP (ViT-B/32) | no disponible | no disponible | no disponible | MIT | GitHub |
 | OpenCLIP (ViT-B/32) | no disponible | no disponible | no disponible | MIT | GitHub |
 
@@ -83,7 +83,7 @@ La comparación se limita a la arquitectura y el propósito, ya que no se dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/samirchar/clip-asymmetry
+- Hugging Face: https://huggingface.co/samirchar/clip-asymmetry
 - Dataset: https://huggingface.co/datasets/pixparse/cc12m-wds
 - OpenCLIP: https://github.com/mlfoundations/open_clip
 - clip-benchmark: https://github.com/LAION-AI/CLIP_benchmark

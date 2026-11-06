@@ -73,10 +73,10 @@ Estos datos son comprobaciones de la capa de decision frente a bf16, no benchmar
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| basal-2.0-mini-GGUF (este) | ~1,5B | 4.096 en Ollama; configurable en llama.cpp | Decision tipada calibrada, pl/en | Apache 2.0 | GGUF Q8_0 y Q5_K_M en HuggingFace |
-| basal-2.0-mini (bf16) | ~1,5B | no disponible | Modelo de referencia del que derivan los puertos | Apache 2.0 | HuggingFace (bf16) |
-| basal-2.0-mini-FP8 | ~1,5B | no disponible | Misma capa de decision en FP8 | Apache 2.0 | HuggingFace; 103,5 dec/s c16 en H100 |
-| basal-2.0-mini-MLX-8bit | ~1,5B | no disponible | Misma capa de decision en MLX para Apple Silicon | Apache 2.0 | HuggingFace; 93 ms c1 p50 en Mac |
+| basal-2.0-mini-GGUF (este) | ~1,5B | 4.096 en Ollama; configurable en llama.cpp | Decision tipada calibrada, pl/en | Apache 2.0 | GGUF Q8_0 y Q5_K_M en Hugging Face |
+| basal-2.0-mini (bf16) | ~1,5B | no disponible | Modelo de referencia del que derivan los puertos | Apache 2.0 | Hugging Face (bf16) |
+| basal-2.0-mini-FP8 | ~1,5B | no disponible | Misma capa de decision en FP8 | Apache 2.0 | Hugging Face; 103,5 dec/s c16 en H100 |
+| basal-2.0-mini-MLX-8bit | ~1,5B | no disponible | Misma capa de decision en MLX para Apple Silicon | Apache 2.0 | Hugging Face; 93 ms c1 p50 en Mac |
 
 No se dispone en la informacion proporcionada de comparaciones con modelos de decision de otros autores ni con clasificadores dedicados; ese dato figura como no disponible.
 
@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de comparaciones con modelos de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remek/basal-2.0-mini-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Remek/basal-2.0-mini-GGUF
 - Modelo bf16 de referencia: https://huggingface.co/Remek/basal-2.0-mini
 - Version FP8: https://huggingface.co/Remek/basal-2.0-mini-FP8
 - Version MLX 8-bit: https://huggingface.co/Remek/basal-2.0-mini-MLX-8bit

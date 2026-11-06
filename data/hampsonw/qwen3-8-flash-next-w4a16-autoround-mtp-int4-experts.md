@@ -84,7 +84,7 @@ No hay comparativas con otros modelos de la misma categoría (p. ej. Llama 4 o D
 
 ## Enlaces
 
-- Repositorio HuggingFace del delta: https://huggingface.co/hampsonw/Qwen3.8-Flash-Next-W4A16-AutoRound-MTP-INT4-Experts
+- Repositorio Hugging Face del delta: https://huggingface.co/hampsonw/Qwen3.8-Flash-Next-W4A16-AutoRound-MTP-INT4-Experts
 - Modelo base Intel: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound
 - Modelo original Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub de Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/

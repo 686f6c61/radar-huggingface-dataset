@@ -2,11 +2,11 @@
 
 ## Resumen
 
-chopraaditya/mocov3-generation-run2 es un repositorio de HuggingFace publicado por el usuario chopraaditya que contiene una implementación propia y compacta de una arquitectura etiquetada como MoCo v3 orientada a tareas de generación. No es un modelo preentrenado ni ajustado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, y que la configuración tiny está pensada para revisión de código, smoke tests y experimentos pequeños y controlados.
+chopraaditya/mocov3-generation-run2 es un repositorio de Hugging Face publicado por el usuario chopraaditya que contiene una implementación propia y compacta de una arquitectura etiquetada como MoCo v3 orientada a tareas de generación. No es un modelo preentrenado ni ajustado: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, y que la configuración tiny está pensada para revisión de código, smoke tests y experimentos pequeños y controlados.
 
 El dato más relevante es la escala: 16.576 parámetros totales según el fichero safetensors, esto es, unos 0,0000166 mil millones. Con ese tamaño, un repositorio de 0,0 GB, cero descargas y cero "likes", el artefacto no tiene utilidad en producción ni capacidad generativa demostrada. Su interés es exclusivamente como plantilla de código, pieza de validación en pipelines de CI o punto de partida reproducible para experimentos comparativos con presupuesto de cómputo mínimo.
 
-Técnicamente declara atención flash, fusión por concatenación más MLP, activación ReLU y normalización RMSNorm, con licencia MIT y pesos en safetensors. No se especifican contexto máximo, idiomas soportados ni pipeline de HuggingFace. El nombre remite a MoCo v3, un método de aprendizaje autosupervisado contrastivo para vision transformers, pero esta implementación concreta se etiqueta como "generation" y no reproduce el método original ni publica resultados.
+Técnicamente declara atención flash, fusión por concatenación más MLP, activación ReLU y normalización RMSNorm, con licencia MIT y pesos en safetensors. No se especifican contexto máximo, idiomas soportados ni pipeline de Hugging Face. El nombre remite a MoCo v3, un método de aprendizaje autosupervisado contrastivo para vision transformers, pero esta implementación concreta se etiqueta como "generation" y no reproduce el método original ni publica resultados.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se dispone de datos verificables de modelos directamente comparables en la in
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| chopraaditya/mocov3-generation-run2 | 16.576 | no disponible | MIT | Publico en HuggingFace, 0 descargas | No se reclama ninguno |
+| chopraaditya/mocov3-generation-run2 | 16.576 | no disponible | MIT | Publico en Hugging Face, 0 descargas | No se reclama ninguno |
 | MoCo v3 original (referencia del nombre) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Modelos generativos pequenos de referencia | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -96,5 +96,5 @@ No se dispone de datos verificables de modelos directamente comparables en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chopraaditya/mocov3-generation-run2
+- Repositorio en Hugging Face: https://huggingface.co/chopraaditya/mocov3-generation-run2
 - Paper, blog, repositorio de código o demo adicionales: no disponible en la información proporcionada.

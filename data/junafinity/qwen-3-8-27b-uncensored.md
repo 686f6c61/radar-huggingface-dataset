@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes. La dife
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Colección de la familia: https://huggingface.co/collections/junafinity/qwen-38-27b-uncensored-apple-silicon-6a896c726b52be3a0b63400e
 - Variante MLX 8-bit: https://huggingface.co/junafinity/Qwen-3.8-27B-Uncensored-8-Bit-MLX

@@ -81,7 +81,7 @@ La comparativa es orientativa: no hay datos de rendimiento publicados para el mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/c2d-usp/layer_wise_lora_qwen_3_2B_scienceqa_1epoch_GGUF_Q4_K_M
+- Hugging Face: https://huggingface.co/c2d-usp/layer_wise_lora_qwen_3_2B_scienceqa_1epoch_GGUF_Q4_K_M
 - Modelo base Qwen 3 2B: no disponible en la información proporcionada
 - Dataset ScienceQA: no disponible en la información proporcionada
 - Paper de LoRA: no disponible en la información proporcionada

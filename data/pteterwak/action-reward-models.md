@@ -4,7 +4,7 @@
 
 `PTeterwak/action-reward-models` es un repositorio de investigación, mínimo y autocontenido, que recoge el estudio de modelos de recompensa para acciones (ARM, del inglés _action reward models_) aplicados a agentes web. El autor, Piotr Teterwak, desarrolla un pipeline completo que genera cinco acciones candidatas por cada paso de una política de agente web, entrena dos tipos de modelos de recompensa sobre las etiquetas de un profesor (GPT-5.5) y utiliza dichos modelos para seleccionar la acción que finalmente se ejecuta.
 
-La idea central es que la selección comparativa entre candidatos supera a la puntuación absoluta y a la política original de una sola acción (`n=1`). Los modelos entrenados están basados en Qwen3.5-4B como modelo juez, con adaptadores LoRA o merge completo según la variante. El repositorio incluye scripts de generación de datos, entrenamiento e inferencia, así como referencias a los pesos subidos en HuggingFace. No se especifican la longitud de contexto ni los idiomas soportados, aunque la licencia de los pesos tampoco está declarada.
+La idea central es que la selección comparativa entre candidatos supera a la puntuación absoluta y a la política original de una sola acción (`n=1`). Los modelos entrenados están basados en Qwen3.5-4B como modelo juez, con adaptadores LoRA o merge completo según la variante. El repositorio incluye scripts de generación de datos, entrenamiento e inferencia, así como referencias a los pesos subidos en Hugging Face. No se especifican la longitud de contexto ni los idiomas soportados, aunque la licencia de los pesos tampoco está declarada.
 
 ## Especificaciones técnicas
 

@@ -4,7 +4,7 @@
 
 UI-Mate-democua-27B es un modelo de agente de interfaz gráfica (GUI agent) desarrollado por Tencent, orientado a la automatización de tareas sobre entornos de escritorio mediante la interpretación de capturas de pantalla y la ejecución de acciones con herramientas como PyAutoGUI. El repositorio de mradermacher ofrece una versión cuantizada en formato GGUF de este modelo, pensada para facilitar su despliegue en entornos de inferencia locales con menor requisito de memoria.
 
-El modelo se enmarca en la línea de investigación de agentes de uso de ordenador (computer-use agents) y está diseñado para interactuar con interfaces gráficas de forma conversacional y guiada por demostraciones. Aunque el nombre sugiere una arquitectura de 27.000 millones de parámetros, los datos disponibles en el repositorio de HuggingFace no permiten confirmar la arquitectura exacta ni el desglose de parámetros. La cuantización GGUF permite ejecutarlo en hardware variado mediante herramientas como llama.cpp u Ollama.
+El modelo se enmarca en la línea de investigación de agentes de uso de ordenador (computer-use agents) y está diseñado para interactuar con interfaces gráficas de forma conversacional y guiada por demostraciones. Aunque el nombre sugiere una arquitectura de 27.000 millones de parámetros, los datos disponibles en el repositorio de Hugging Face no permiten confirmar la arquitectura exacta ni el desglose de parámetros. La cuantización GGUF permite ejecutarlo en hardware variado mediante herramientas como llama.cpp u Ollama.
 
 Actualmente es un modelo emergente con cero descargas y sin métricas publicadas, por lo que su uso en producción requiere validación previa. La licencia del modelo original es Apache 2.0, lo que facilita su integración en proyectos comerciales y de investigación.
 
@@ -18,7 +18,7 @@ Actualmente es un modelo emergente con cero descargas y sin métricas publicadas
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S |
 | Idiomas soportados | No disponible (presumiblemente inglés y chino por el origen, sin confirmar) |
-| Licencia | Apache 2.0 (según la página del modelo original en HuggingFace) |
+| Licencia | Apache 2.0 (según la página del modelo original en Hugging Face) |
 | Formato de pesos | GGUF |
 
 ## Arquitectura y entrenamiento

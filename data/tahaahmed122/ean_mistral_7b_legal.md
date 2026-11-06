@@ -33,7 +33,7 @@ El entrenamiento sigue un objetivo de verosimilitud de mezcla de expertos (Jacob
 - Razonamiento guiado por evidencia: el encoder DeBERTa condiciona la generacion a fragmentos normativos y facticos explicitos.
 - Arbitraje multi-cabeza: tres LoRA entrenadas en paralelo cuyas salidas se ponderan dinamicamente por token segun la evidencia disponible.
 - Trazabilidad parcial del peso de cada cabeza mediante los coeficientes alpha_i,t del EvidenceGate.
-- Generacion autoregresiva estandar compatible con el pipeline text-generation de HuggingFace.
+- Generacion autoregresiva estandar compatible con el pipeline text-generation de Hugging Face.
 - No se documenta soporte de tool calling, function calling, agentes multi-paso, vision, audio ni modo thinking explicito.
 
 ## Casos de uso
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EAN Mistral 7B Legal | ~7,31B (7B backbone + adaptadores) | No disponible (base: 32.768) | Multi-LoRA + arbitraje por evidencia | Apache 2.0 | HuggingFace, 0 descargas |
+| EAN Mistral 7B Legal | ~7,31B (7B backbone + adaptadores) | No disponible (base: 32.768) | Multi-LoRA + arbitraje por evidencia | Apache 2.0 | Hugging Face, 0 descargas |
 | Mistral-7B-Instruct-v0.2 | 7B | 32.768 | Fine-tune instructivo generalista | Apache 2.0 | Ampliamente disponible |
 | Modelos legales basados en Mistral/Llama | 7B-13B | Variable | Fine-tune monolitico sobre corpus juridico | Variable | Variable |
 | Modelos legales especializados tipo LegalBERT | ~110M-340M | 512 | Encoder discriminativo | Variable | Disponible |
@@ -81,7 +81,7 @@ La comparativa con alternativas legales de proposito general es limitada porque 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tahaahmed122/ean_mistral_7b_legal
+- Modelo en Hugging Face: https://huggingface.co/Tahaahmed122/ean_mistral_7b_legal
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2
 - Encoder de evidencia: https://huggingface.co/microsoft/deberta-v3-base
 - Dataset LawInstruct: https://huggingface.co/datasets/lawinstruct/lawinstruct

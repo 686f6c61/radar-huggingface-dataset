@@ -28,7 +28,7 @@ Su relevancia no es la de un modelo de propósito general, sino la de una pieza 
 | Enmascarado de desplazamiento (k) | k = 32 (p_max = 15 + 32 = 47 durante el entrenamiento con 1–15 dígitos) |
 | Tamaño de vocabulario | 115 (14 etiquetas estructurales de control + 101 caracteres ASCII) |
 | Atado de pesos | W_te == W_lm_head |
-| Descargas en HuggingFace | 10 (1 like, en el momento de la consulta) |
+| Descargas en Hugging Face | 10 (1 like, en el momento de la consulta) |
 
 ## Arquitectura y entrenamiento
 
@@ -116,14 +116,14 @@ Frente a LLM de propósito general de tamaño comparable (por ejemplo, modelos d
 - Sin capacidades generales de lenguaje: no es un modelo conversacional ni de instrucciones; no genera texto libre, código ni respuestas abiertas. Su vocabulario de 115 tokens y su dataset sintético lo restringen a las dos tareas descritas.
 - Riesgo de alucinación estructural: puede emitir una traza `<THINK>` incorrecta con resultado correcto o viceversa; 2 de 240 casos en la suite agrupada tuvieron scratchpad no exacto. Cualquier uso crítico debe validar tanto la traza como el resultado.
 - Sesgos: no se documentan análisis de sesgo en la información disponible. Al entrenarse solo con datos sintéticos de sumas y herramientas, los sesgos sociales típicos no aplican, pero tampoco hay evaluación de robustez frente a entradas adversariales más allá de los conjuntos citados.
-- Integración: los pesos están en `.pt` (no safetensors) y requieren el código del repositorio; no hay pipeline declarado en HuggingFace (`pipeline: no disponible`), ni soporte en vLLM, llama.cpp u Ollama. Cargar el checkpoint exige `weights_only=True` o confiar en el fichero.
+- Integración: los pesos están en `.pt` (no safetensors) y requieren el código del repositorio; no hay pipeline declarado en Hugging Face (`pipeline: no disponible`), ni soporte en vLLM, llama.cpp u Ollama. Cargar el checkpoint exige `weights_only=True` o confiar en el fichero.
 - Ambigüedad de nombre: el acrónimo CBT se confunde habitualmente con terapia cognitivo-conductual (cognitive behavioral therapy), lo que contamina búsquedas y resultados; conviene referenciarlo como Character-Based Transformer.
 - Licencia MIT: permite uso comercial, modificación y redistribución con atribución y sin garantías. No hay cláusulas de uso aceptable específicas ni restricciones adicionales documentadas.
 - Madurez: 10 descargas y 1 like en el momento de la consulta, con un único checkpoint publicado (`champion_final.pt`); no hay histórico de versiones ni suite de evaluación continua.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Neithanvarvas/CBT
+- Modelo en Hugging Face: https://huggingface.co/Neithanvarvas/CBT
 - Repositorio GitHub: https://github.com/NeithanT/CBT
 - README del repositorio: https://github.com/NeithanT/CBT/blob/main/README.md
 - Paper de investigación (Markdown): https://github.com/NeithanT/CBT/blob/main/RESEARCH_PAPER.md

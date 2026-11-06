@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Veer069/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario Veer069 en HuggingFace y esta construido con la libreria stable-baselines3, siguiendo el flujo de trabajo del RL Zoo (rl-baselines3-zoo) de DLR-RM, que es el marco de referencia para entrenar, optimizar hiperparametros y compartir agentes de este tipo.
+El modelo `Veer069/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo (deep reinforcement learning) entrenado con el algoritmo DQN (Deep Q-Network) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario Veer069 en Hugging Face y esta construido con la libreria stable-baselines3, siguiendo el flujo de trabajo del RL Zoo (rl-baselines3-zoo) de DLR-RM, que es el marco de referencia para entrenar, optimizar hiperparametros y compartir agentes de este tipo.
 
 No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de una politica entrenada especificamente para jugar a Space Invaders a partir de fotogramas de pixeles. La politica utilizada es `CnnPolicy`, es decir, una red convolucional que procesa observaciones visuales (pila de 4 fotogramas, envoltorio AtariWrapper) y produce acciones discretas del entorno. El entrenamiento declarado es de 10.000.000 de pasos temporales.
 
@@ -74,7 +74,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo / referencia | Tipo | Entorno | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Veer069/dqn-SpaceInvadersNoFrameskip-v4 | DQN + CnnPolicy | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | HuggingFace |
+| Veer069/dqn-SpaceInvadersNoFrameskip-v4 | DQN + CnnPolicy | SpaceInvadersNoFrameskip-v4 | no disponible | no aplica | no disponible | Hugging Face |
 | DQN de RL Zoo (linea base oficial del framework) | DQN + CnnPolicy | Atari (incluye SpaceInvaders) | no disponible | no aplica | segun repositorio RL Zoo | GitHub DLR-RM |
 | PPO de RL Zoo | PPO + CnnPolicy | Atari | no disponible | no aplica | segun repositorio RL Zoo | GitHub DLR-RM |
 | Rainbow (sb3-contrib) | DQN con mejoras (distribucional, n-step, etc.) | Atari | no disponible | no aplica | segun repositorio SB3-Contrib | GitHub Stable-Baselines-Team |
@@ -94,7 +94,7 @@ Los datos de rendimiento comparado de estas alternativas no estan disponibles en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Veer069/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/Veer069/dqn-SpaceInvadersNoFrameskip-v4
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - RL Zoo (rl-baselines3-zoo): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

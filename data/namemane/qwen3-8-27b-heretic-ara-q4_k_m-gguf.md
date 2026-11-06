@@ -78,7 +78,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (por ejem
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/namemane/Qwen3.8-27B-heretic-ara-Q4_K_M-GGUF
+- Repositorio Hugging Face: https://huggingface.co/namemane/Qwen3.8-27B-heretic-ara-Q4_K_M-GGUF
 - Modelo base (heretic-org): https://huggingface.co/heretic-org/Qwen3.8-27B-heretic-ara
 - Blog de AMD sobre Qwen3.8-27B: https://www.amd.com/en/blogs/2026/run-qwen-3-8-27b-on-amd-ryzen-ai-max-and-radeon-graphics-cards-day-0.html
 - Guía de ejecución local (yottalabs): https://www.yottalabs.ai/post/how-to-run-qwen-3-8-27b-locally-ollama-gguf-single-gpu-2026

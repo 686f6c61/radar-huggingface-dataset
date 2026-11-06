@@ -29,7 +29,7 @@ Por tanto, debe evaluarse como una demostracion tecnica, no como un modelo listo
 
 El modelo conserva la arquitectura del base SmolLM-135M-Instruct, un transformer decoder-only denso de 135M de parametros, y solo modifica sus pesos mediante DPO. El entrenamiento consistio en una epoca con optimizador AdamW, learning rate 5e-5 y beta 1.0, con batch efectivo de 16 (batch 2 x acumulacion de gradientes cada 8 pasos), fp16 y gradient checkpointing para ajustarse a la VRAM de una GPU T4 en Google Colab. El coste total reportado es de aproximadamente 40 minutos.
 
-El autor documenta un colapso de la loss hasta 1.49e-19 y una reward accuracy de 1.000, valores que en la practica indican sobreajuste severo al dataset de preferencias y explican los fallos cualitativos observados (repeticion de ideas y bucles en respuestas largas). No se documentan tecnicas adicionales como decodificacion especulativa, atencion lineal ni mezclas de expertos. Tampoco se especifica el volumen de tokens de entrenamiento ni la composicion detallada del dataset mas alla de su identificador en HuggingFace.
+El autor documenta un colapso de la loss hasta 1.49e-19 y una reward accuracy de 1.000, valores que en la practica indican sobreajuste severo al dataset de preferencias y explican los fallos cualitativos observados (repeticion de ideas y bucles en respuestas largas). No se documentan tecnicas adicionales como decodificacion especulativa, atencion lineal ni mezclas de expertos. Tampoco se especifica el volumen de tokens de entrenamiento ni la composicion detallada del dataset mas alla de su identificador en Hugging Face.
 
 ## Capacidades
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las u
 
 | Modelo | Parametros | Contexto | Ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ninenfn/llm-course-hw2-dpo | 134,5M | no disponible | DPO sobre SmolLM-135M-Instruct | no disponible | HuggingFace, 0 descargas |
-| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | SFT + preferencias del autor original | no disponible en esta ficha | HuggingFace, ampliamente usado |
-| Otros DPO academicos sobre SmolLM | ~135M | no disponible | DPO | variable | HuggingFace |
+| ninenfn/llm-course-hw2-dpo | 134,5M | no disponible | DPO sobre SmolLM-135M-Instruct | no disponible | Hugging Face, 0 descargas |
+| HuggingFaceTB/SmolLM-135M-Instruct | 135M | no disponible en esta ficha | SFT + preferencias del autor original | no disponible en esta ficha | Hugging Face, ampliamente usado |
+| Otros DPO academicos sobre SmolLM | ~135M | no disponible | DPO | variable | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publicados para este modelo ni datos de evaluacion recogidos en la informacion disponible.
 
@@ -86,7 +86,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay benchmarks publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninenfn/llm-course-hw2-dpo
+- Modelo en Hugging Face: https://huggingface.co/ninenfn/llm-course-hw2-dpo
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM-135M-Instruct
 - Dataset de preferencias: https://huggingface.co/datasets/HumanLLMs/Human-Like-DPO-Dataset
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web proporcionada.

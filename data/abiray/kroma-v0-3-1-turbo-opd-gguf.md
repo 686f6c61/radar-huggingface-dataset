@@ -80,7 +80,7 @@ La model card no incluye metricas objetivas (FID, CLIP score, evaluaciones human
 
 | Modelo | Parametros | Formato | Pasos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kroma v0.3.1 Turbo OPD - GGUF (Abiray) | ~12,8 B | GGUF, 7 cuantizaciones (Q2_K a Q6_K) | 4 - 8 | krea-2-community-license | Repositorio HuggingFace con 0 descargas |
+| Kroma v0.3.1 Turbo OPD - GGUF (Abiray) | ~12,8 B | GGUF, 7 cuantizaciones (Q2_K a Q6_K) | 4 - 8 | krea-2-community-license | Repositorio Hugging Face con 0 descargas |
 | lodestones/Kroma (modelo base) | ~12,8 B | safetensors (precisión completa) | 4 - 8 (Turbo / OPD) | krea-2-community-license | Modelo base referenciado; pesos originales |
 | Otras cuantizaciones GGUF de Kroma | no disponible | GGUF | no disponible | krea-2-community-license (heredada) | no disponible |
 
@@ -100,7 +100,7 @@ No se dispone de informacion sobre otros modelos comparables de la misma categor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Abiray/Kroma-v0.3.1-Turbo-OPD-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Abiray/Kroma-v0.3.1-Turbo-OPD-GGUF
 - Modelo base: https://huggingface.co/lodestones/Kroma
 - Licencia (krea-2-community-license): https://huggingface.co/lodestones/Kroma/blob/main/LICENSE
 - Fichero de pesos de referencia del modelo base: `kroma-v0.3.1-turbo-opd.safetensors` (referenciado en la model card, sin enlace directo disponible)

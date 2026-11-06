@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`kr1s221/eval-engine` es un repositorio publicado en HuggingFace por el usuario kr1s221 bajo licencia Apache 2.0. La model card asociada unicamente declara la licencia y no incluye ninguna descripcion funcional, arquitectonica ni de uso. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos de modelo ni artefactos de inferencia descargables en el momento de la consulta.
+`kr1s221/eval-engine` es un repositorio publicado en Hugging Face por el usuario kr1s221 bajo licencia Apache 2.0. La model card asociada unicamente declara la licencia y no incluye ninguna descripcion funcional, arquitectonica ni de uso. El repositorio tiene un tamano de 0.0 GB, lo que indica que no contiene pesos de modelo ni artefactos de inferencia descargables en el momento de la consulta.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni capacidades. El identificador "eval-engine" sugiere, por el nombre, que podria tratarse de un componente orientado a evaluacion de modelos mas que a un modelo generativo, pero esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion del autor.
 
-A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, fue creado el 2026-10-26 y actualizado dos minutos despues de su creacion. No se han publicado resultados de benchmarks ni existe pipeline declarado en HuggingFace. Cualquier evaluacion tecnica del artefacto requeriria contactar con el autor o inspeccionar el contenido del repositorio directamente.
+A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 likes, fue creado el 2026-10-26 y actualizado dos minutos despues de su creacion. No se han publicado resultados de benchmarks ni existe pipeline declarado en Hugging Face. Cualquier evaluacion tecnica del artefacto requeriria contactar con el autor o inspeccionar el contenido del repositorio directamente.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ A fecha de la informacion disponible, el repositorio registra 0 descargas y 0 li
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un componente auxiliar de evaluacion.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un componente auxiliar de evaluacion.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o instruccion supervisada. El repositorio, con 0.0 GB, no contiene pesos ni ficheros de configuracion visibles en los metadatos publicos.
 
@@ -67,5 +67,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kr1s221/eval-engine
+- Repositorio en Hugging Face: https://huggingface.co/kr1s221/eval-engine
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion proporcionada.

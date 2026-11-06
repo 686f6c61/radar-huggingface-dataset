@@ -2,7 +2,7 @@
 
 ## Resumen
 
-livro-7b-v1 es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado en HuggingFace por el usuario developer2625. Se trata de un modelo de generación de texto conversacional de 7.615.616.512 parámetros, entrenado a partir de la variante ya cuantizada en 4 bits de Unsloth (`unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`) mediante el stack Unsloth + TRL, que el autor destaca por ofrecer un entrenamiento "2x más rápido".
+livro-7b-v1 es un ajuste fino del modelo Qwen2.5-7B-Instruct publicado en Hugging Face por el usuario developer2625. Se trata de un modelo de generación de texto conversacional de 7.615.616.512 parámetros, entrenado a partir de la variante ya cuantizada en 4 bits de Unsloth (`unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit`) mediante el stack Unsloth + TRL, que el autor destaca por ofrecer un entrenamiento "2x más rápido".
 
 La ficha del modelo es mínima: no documenta el conjunto de datos de ajuste, el número de tokens vistos, la técnica de alineación (SFT, DPO, RLHF) ni resultados de evaluación. La única información técnica aportada es el modelo base, la licencia Apache 2.0 y el stack de entrenamiento. El repositorio ocupa 15,2 GB en safetensors, un tamaño coherente con pesos en fp16/bf16 para 7,6 B de parámetros.
 
@@ -29,7 +29,7 @@ Su relevancia actual es limitada: cuenta con 0 descargas y 0 likes desde su publ
 
 La arquitectura es la del modelo base Qwen2.5-7B-Instruct: un transformer decoder-only denso con RoPE, normalización RMSNorm, activación SwiGLU y atención con query-key value bias. El base emplea grouped-query attention (GQA) con 28 cabezas de consulta y 4 de clave/valor sobre 28 capas, y un vocabulario de 151.936 tokens. Estas cifras provienen de la documentación pública de Qwen2.5-7B, no de la ficha de livro-7b-v1, que no describe la arquitectura.
 
-En cuanto al entrenamiento, la model card solo indica que el modelo se ajustó desde la versión bnb-4bit de Unsloth usando Unsloth y la librería TRL de HuggingFace. No se especifica si se empleó LoRA, QLoRA o un fine-tune completo, ni el dataset, el número de tokens, la composición de los datos o si hubo una fase de alineación posterior (DPO/RLHF). Tampoco se documenta ninguna innovación técnica propia. El único dato operativo es la afirmación del autor de que el entrenamiento fue "2x más rápido" gracias a Unsloth.
+En cuanto al entrenamiento, la model card solo indica que el modelo se ajustó desde la versión bnb-4bit de Unsloth usando Unsloth y la librería TRL de Hugging Face. No se especifica si se empleó LoRA, QLoRA o un fine-tune completo, ni el dataset, el número de tokens, la composición de los datos o si hubo una fase de alineación posterior (DPO/RLHF). Tampoco se documenta ninguna innovación técnica propia. El único dato operativo es la afirmación del autor de que el entrenamiento fue "2x más rápido" gracias a Unsloth.
 
 ## Capacidades
 
@@ -95,9 +95,9 @@ Frente a cualquiera de las tres alternativas, livro-7b-v1 carece de evaluación,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/developer2625/livro-7b-v1
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/developer2625/livro-7b-v1
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Librería TRL de HuggingFace: https://github.com/huggingface/trl
+- Librería TRL de Hugging Face: https://github.com/huggingface/trl
 - Qwen2.5-7B-Instruct (referencia del base): https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo: los enlaces recuperados corresponden a páginas genéricas sobre GitHub Copilot, Windows 11 y productividad, sin relación con livro-7b-v1. No hay papers, artículos de blog, demos ni repositorios adicionales que enlazar.

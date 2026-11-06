@@ -12,7 +12,7 @@ La información pública disponible sobre el modelo base es escasa: no se detall
 
 | Parámetro | Valor |
 |---|---|
-| Arquitectura | Transformer (tag `nemotron_h` en HuggingFace; requiere `custom_code`) |
+| Arquitectura | Transformer (tag `nemotron_h` en Hugging Face; requiere `custom_code`) |
 | Parámetros totales | 3.973.556.832 |
 | Parámetros activos | no disponible (no se indica que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -23,7 +23,7 @@ La información pública disponible sobre el modelo base es escasa: no se detall
 
 ## Arquitectura y entrenamiento
 
-El modelo base ceia-br/lumi-4b emplea una arquitectura transformer etiquetada como `nemotron_h` en HuggingFace, lo que implica que su carga requiere `trust_remote_code` y el módulo de código personalizado incluido en el repositorio. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
+El modelo base ceia-br/lumi-4b emplea una arquitectura transformer etiquetada como `nemotron_h` en Hugging Face, lo que implica que su carga requiere `trust_remote_code` y el módulo de código personalizado incluido en el repositorio. No se dispone de información pública sobre el número de tokens de entrenamiento, la composición del dataset, ni si se aplicaron técnicas de alineación como RLHF o DPO.
 
 La innovación técnica de esta versión concreta es la cuantización FP8 con el esquema `FP8_DYNAMIC` de llm-compressor. Los pesos se convierten a FP8 E4M3 por canal de forma anticipada (ahead-of-time), mientras que las activaciones se cuantizan dinámicamente por token durante la inferencia. Al no requerir calibración, los pesos cuantizados son un casteo numérico directo del original, sin sesgo introducido por un conjunto de calibración. La capa `lm_head` se mantiene en precisión original, práctica estándar para evitar degradación desproporcionada en la calidad de salida.
 
@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| liodon-ai/lumi-4b-FP8 | 3.973.556.832 | no disponible | FP8 dinámica | other | HuggingFace |
-| ceia-br/lumi-4b (base) | 3.973.556.832 | no disponible | BF16 (original) | other | HuggingFace |
+| liodon-ai/lumi-4b-FP8 | 3.973.556.832 | no disponible | FP8 dinámica | other | Hugging Face |
+| ceia-br/lumi-4b (base) | 3.973.556.832 | no disponible | BF16 (original) | other | Hugging Face |
 | Alternativas de 4B comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría con datos verificables de parámetros, contexto y rendimiento.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables de la misma categoría c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liodon-ai/lumi-4b-FP8
+- Modelo en Hugging Face: https://huggingface.co/liodon-ai/lumi-4b-FP8
 - Modelo base: https://huggingface.co/ceia-br/lumi-4b
 - llm-compressor (herramienta de cuantización): https://github.com/vllm-project/llm-compressor
 - Perfil del autor: https://huggingface.co/liodon-ai

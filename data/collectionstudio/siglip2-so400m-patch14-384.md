@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SigLIP 2 So400m es un codificador vision-lenguaje de tipo contraste (image-text encoder) desarrollado originalmente por Google Research y publicado en el articulo "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features" (arXiv:2502.14786). La ficha que se analiza aqui corresponde a la republicacion realizada por el usuario CollectionStudio en HuggingFace, que replica el checkpoint oficial google/siglip2-so400m-patch14-384. El modelo resuelve tareas de clasificacion de imagenes zero-shot, recuperacion imagen-texto y, sobre todo, sirve como torre de vision para modelos vision-lenguaje (VLM).
+SigLIP 2 So400m es un codificador vision-lenguaje de tipo contraste (image-text encoder) desarrollado originalmente por Google Research y publicado en el articulo "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features" (arXiv:2502.14786). La ficha que se analiza aqui corresponde a la republicacion realizada por el usuario CollectionStudio en Hugging Face, que replica el checkpoint oficial google/siglip2-so400m-patch14-384. El modelo resuelve tareas de clasificacion de imagenes zero-shot, recuperacion imagen-texto y, sobre todo, sirve como torre de vision para modelos vision-lenguaje (VLM).
 
 Tecnicamente es la variante So400m ("shape-optimized", aproximadamente 400M de parametros en la torre de vision) con parches de 14x14 y resolucion de entrada de 384x384, lo que da un total de 1.136.008.498 parametros en el checkpoint completo (torre de vision mas codificador de texto). SigLIP 2 amplia el objetivo de preentrenamiento de SigLIP incorporando perdida de decodificador, prediccion global-local y enmascarada, y adaptabilidad de relacion de aspecto y resolucion, lo que mejora la comprension semantica, la localizacion de objetos y la calidad de las caracteristicas densas.
 
@@ -60,7 +60,7 @@ El preentrenamiento se realizo sobre el dataset WebLI (Chen et al., 2023, arXiv:
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card referencia una tabla de evaluacion del paper mediante una imagen externa alojada en el repositorio de documentacion de HuggingFace, pero no incluye cifras numericas en el texto, por lo que no se reproducen valores concretos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card referencia una tabla de evaluacion del paper mediante una imagen externa alojada en el repositorio de documentacion de Hugging Face, pero no incluye cifras numericas en el texto, por lo que no se reproducen valores concretos.
 
 ## Requisitos de hardware
 
@@ -98,7 +98,7 @@ Nota: los recuentos de parametros y las cifras de rendimiento de los modelos alt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CollectionStudio/siglip2-so400m-patch14-384
+- Modelo en Hugging Face: https://huggingface.co/CollectionStudio/siglip2-so400m-patch14-384
 - Paper de SigLIP 2: https://arxiv.org/abs/2502.14786
 - Paper de SigLIP: https://arxiv.org/abs/2303.15343
 - Paper de WebLI: https://arxiv.org/abs/2209.06794

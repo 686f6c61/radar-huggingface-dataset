@@ -64,6 +64,6 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wildfellhall/public-poetry-50m-gguf
+- Hugging Face: https://huggingface.co/wildfellhall/public-poetry-50m-gguf
 - Repositorio GitHub del autor: https://github.com/wildfellhall?tab=repositories
 - Guía de GGUF en GitHub: https://github.com/Lingdas1/local-llm-guide/blob/main/04-advanced-usage/gguf-modelfile.md

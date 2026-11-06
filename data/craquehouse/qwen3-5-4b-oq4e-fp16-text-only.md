@@ -102,9 +102,9 @@ No hay datos disponibles de otros modelos cuantizados comparables (por ejemplo, 
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/craquehouse/Qwen3.5-4B-oQ4e-fp16-text-only
+- Repositorio de Hugging Face del modelo: https://huggingface.co/craquehouse/Qwen3.5-4B-oQ4e-fp16-text-only
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Colección Qwen3.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen35
+- Colección Qwen3.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen35
 - Receta de vLLM para Qwen3.5-4B: https://recipes.vllm.ai/Qwen/Qwen3.5-4B
 - Repositorio de referencia Qwen3.5 en GitHub: https://github.com/ABDtmx/Qwen3.5
 - Entrada de Qwen3.5-4B en Ollama: https://ollama.com/library/qwen3.5:4b

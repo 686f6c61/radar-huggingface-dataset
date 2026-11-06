@@ -70,8 +70,8 @@ No se dispone de datos comparativos cuantitativos en la información proporciona
 
 ## Enlaces
 
-- [HuggingFace - Openintelligent123/gpt-oss-20b](https://huggingface.co/Openintelligent123/gpt-oss-20b)
-- [HuggingFace - openai/gpt-oss-20b (modelo original)](https://huggingface.co/openai/gpt-oss-20b)
+- [Hugging Face - Openintelligent123/gpt-oss-20b](https://huggingface.co/Openintelligent123/gpt-oss-20b)
+- [Hugging Face - openai/gpt-oss-20b (modelo original)](https://huggingface.co/openai/gpt-oss-20b)
 - [OpenAI - Introducing gpt-oss](https://openai.com/index/introducing-gpt-oss/)
 - [OpenAI - gpt-oss model card](https://openai.com/index/gpt-oss-model-card/)
 - [GitHub - openai/gpt-oss](https://github.com/openai/gpt-oss)

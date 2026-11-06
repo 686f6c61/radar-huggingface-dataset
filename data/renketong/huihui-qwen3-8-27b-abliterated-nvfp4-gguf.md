@@ -78,7 +78,7 @@ La versión con atención Q8 (utautako) ofrece mayor velocidad a costa de un tam
 
 ## Enlaces
 
-- [Repositorio HuggingFace: renketong/Huihui-Qwen3.8-27B-abliterated-NVFP4-GGUF](https://huggingface.co/renketong/Huihui-Qwen3.8-27B-abliterated-NVFP4-GGUF)
+- [Repositorio Hugging Face: renketong/Huihui-Qwen3.8-27B-abliterated-NVFP4-GGUF](https://huggingface.co/renketong/Huihui-Qwen3.8-27B-abliterated-NVFP4-GGUF)
 - [Modelo base abliterated: huihui-ai/Huihui-Qwen3.8-27B-abliterated](https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated)
 - [Fuente NVFP4 safetensors: sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4](https://huggingface.co/sakamakismile/Huihui-Qwen3.8-27B-abliterated-NVFP4)
 - [Repositorio oficial de Qwen3.8 (GitHub)](https://github.com/QwenLM/Qwen3.8)

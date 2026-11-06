@@ -113,6 +113,6 @@ Frente a su base, el modelo afinado mejora en el escenario con verificador (54 a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohd010/pakka-minilm-l12-hinglish
+- Modelo en Hugging Face: https://huggingface.co/mohd010/pakka-minilm-l12-hinglish
 - Modelo base: https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 - Repositorio pakka: https://github.com/mohammedp010/pakka

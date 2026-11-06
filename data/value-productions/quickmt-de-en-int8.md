@@ -77,12 +77,12 @@ La comparación con NLLB y OPUS-MT se ofrece como referencia de categoría; los 
 - No se dispone de información sobre la longitud máxima de secuencia, lo que impide garantizar el comportamiento en documentos largos.
 - La licencia CC BY 4.0 permite uso comercial, pero exige atribución al autor original (quickmt) y al conversor (value-productions).
 - Al ser una conversión int8, puede haber degradación sutil en casos límite frente al float16 original, aunque el autor afirma equivalencia en las frases comprobadas.
-- El modelo tiene muy poca tracción en HuggingFace (46 descargas y 0 likes en el momento de la consulta), lo que limita la validación comunitaria.
+- El modelo tiene muy poca tracción en Hugging Face (46 descargas y 0 likes en el momento de la consulta), lo que limita la validación comunitaria.
 - No es compatible con runtimes de inferencia generalistas como vLLM u Ollama; requiere CTranslate2.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/value-productions/quickmt-de-en-int8)
+- [Modelo en Hugging Face](https://huggingface.co/value-productions/quickmt-de-en-int8)
 - [Modelo base quickmt/quickmt-de-en](https://huggingface.co/quickmt/quickmt-de-en)
 - [CTranslate2 (repositorio oficial)](https://github.com/OpenNMT/CTranslate2)
 - [Yaku Translate](https://github.com/argosopentech) (referencia de la aplicación que lo utiliza; enlace no confirmado en la información proporcionada)

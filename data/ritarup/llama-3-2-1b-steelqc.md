@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-SteelQC es un modelo derivado de Llama 3.2 1B publicado por el usuario ritarup en HuggingFace. Se distribuye empaquetado en formato ExecuTorch, lo que indica que está pensado para inferencia en dispositivos de borde (edge) mediante el runtime de PyTorch para hardware móvil y embebido. El repositorio ocupa 1,0 GB y no cuenta con descargas ni valoraciones en el momento de la consulta.
+Llama-3.2-1B-SteelQC es un modelo derivado de Llama 3.2 1B publicado por el usuario ritarup en Hugging Face. Se distribuye empaquetado en formato ExecuTorch, lo que indica que está pensado para inferencia en dispositivos de borde (edge) mediante el runtime de PyTorch para hardware móvil y embebido. El repositorio ocupa 1,0 GB y no cuenta con descargas ni valoraciones en el momento de la consulta.
 
 El modelo hereda la arquitectura y el conocimiento del Llama 3.2 1B original de Meta, un transformer denso de aproximadamente 1.230 millones de parámetros con una ventana de contexto de 128.000 tokens en su versión canónica. El sufijo "SteelQC" sugiere un ajuste fino orientado a un dominio concreto (posiblemente control de calidad en acero o un proceso industrial), aunque la model card publicada no aporta detalles sobre el dataset, el procedimiento de entrenamiento ni los objetivos del ajuste.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-SteelQC | 1,23 B (heredado) | 128k (heredado) | llama3.2 | ExecuTorch | Repositorio HuggingFace, 0 descargas |
+| Llama-3.2-1B-SteelQC | 1,23 B (heredado) | 128k (heredado) | llama3.2 | ExecuTorch | Repositorio Hugging Face, 0 descargas |
 | Llama 3.2 1B (Meta) | 1,23 B | 128k | llama3.2 | safetensors, GGUF | Ampliamente disponible |
 | Qwen2.5-1.5B | 1,54 B | 32k | Apache 2.0 | safetensors, GGUF | Ampliamente disponible |
 | Gemma 2 2B | 2,6 B | 8k | Gemma | safetensors, GGUF | Ampliamente disponible |
@@ -82,7 +82,7 @@ La comparativa se basa en datos públicos de los modelos alternativos; no hay be
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ritarup/Llama-3.2-1B-SteelQC
+- Repositorio Hugging Face: https://huggingface.co/ritarup/Llama-3.2-1B-SteelQC
 - Modelo base Llama 3.2 1B: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Documentación de ExecuTorch: https://pytorch.org/executorch/
 - Paper de Llama 3: https://arxiv.org/abs/2407.21783

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario sadSD13213 en HuggingFace bajo el identificador `sadSD13213/MyAwesomeModel-TestRepository`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario sadSD13213 en Hugging Face bajo el identificador `sadSD13213/MyAwesomeModel-TestRepository`. Según la model card, se trata de una versión actualizada de un modelo anterior que ha mejorado sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor afirma que el modelo muestra un rendimiento destacado en tareas de matemáticas, programación y lógica general, acercándose a otros modelos líderes.
 
 Sin embargo, la información pública disponible es extremadamente limitada. El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que no contiene pesos del modelo ni archivos de configuración, únicamente la model card y posiblemente algunas figuras. No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni otros detalles técnicos fundamentales. El pipeline declarado es `feature-extraction`, aunque la descripción del modelo apunta a un asistente conversacional con capacidades de razonamiento, lo que genera una inconsistencia notable.
 
@@ -40,7 +40,7 @@ Según la model card, el modelo tendría las siguientes capacidades, aunque no s
 - Soporte de function calling: se menciona "enhanced support for function calling", aunque no se detalla.
 - Reducción de alucinaciones: el autor afirma una menor tasa de alucinación en esta versión.
 
-No se mencionan capacidades multimodales (visión, audio) ni un modo de razonamiento explícito tipo "thinking mode". El pipeline declarado en HuggingFace es `feature-extraction`, lo que contradice la naturaleza conversacional descrita en la model card.
+No se mencionan capacidades multimodales (visión, audio) ni un modo de razonamiento explícito tipo "thinking mode". El pipeline declarado en Hugging Face es `feature-extraction`, lo que contradice la naturaleza conversacional descrita en la model card.
 
 ## Casos de uso
 
@@ -92,7 +92,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB): no contiene pesos, tokenizador ni configuración. Es imposible descargar o ejecutar el modelo.
+- El repositorio de Hugging Face está vacío (0.0 GB): no contiene pesos, tokenizador ni configuración. Es imposible descargar o ejecutar el modelo.
 - No se especifican la arquitectura, el número de parámetros, la longitud de contexto ni el vocabulario. Cualquier afirmación sobre el rendimiento carece de base verificable.
 - Los benchmarks presentados en la model card no siguen estándares reconocidos (MMLU, HumanEval, GSM8K) y no se detalla la metodología. No se pueden reproducir.
 - La licencia MIT permite uso comercial, pero al no existir artefactos descargables, la licencia es irrelevante en la práctica.
@@ -103,7 +103,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/sadSD13213/MyAwesomeModel-TestRepository
+- Repositorio de Hugging Face: https://huggingface.co/sadSD13213/MyAwesomeModel-TestRepository
 - Repositorio alternativo (sin contenido adicional): https://huggingface.co/sadSD13213/MyAwesomeModel-TestRepo
 
-No se han encontrado papers, blogs oficiales ni demos funcionales. La búsqueda web solo devuelve la propia página de HuggingFace y agregadores de terceros sin información técnica adicional.
+No se han encontrado papers, blogs oficiales ni demos funcionales. La búsqueda web solo devuelve la propia página de Hugging Face y agregadores de terceros sin información técnica adicional.

@@ -69,5 +69,5 @@ No se han encontrado modelos comparables en la información proporcionada. No se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JULIANSNPZ/summarizer-experiments
+- Repositorio Hugging Face: https://huggingface.co/JULIANSNPZ/summarizer-experiments
 - No se han encontrado papers, blogs o repositorios adicionales relacionados con este modelo específico.

@@ -77,8 +77,8 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo / variante | Parametros | Formato y tamano | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supbatomic/Qwen-Image-2.1-Uncensored-GGUF (Q4_K_M) | ~7,1 B (image transformer) | GGUF, 4,60 GiB | No disponible | Qwen Research License | Publicado en HuggingFace, 0 descargas |
-| Supbatomic/Qwen-Image-2.1-Uncensored-GGUF (Q8_0) | ~7,1 B (image transformer) | GGUF, 7,59 GiB | No disponible | Qwen Research License | Publicado en HuggingFace, 0 descargas |
+| Supbatomic/Qwen-Image-2.1-Uncensored-GGUF (Q4_K_M) | ~7,1 B (image transformer) | GGUF, 4,60 GiB | No disponible | Qwen Research License | Publicado en Hugging Face, 0 descargas |
+| Supbatomic/Qwen-Image-2.1-Uncensored-GGUF (Q8_0) | ~7,1 B (image transformer) | GGUF, 7,59 GiB | No disponible | Qwen Research License | Publicado en Hugging Face, 0 descargas |
 | Qwen/Qwen-Image-2.1 (modelo base) | ~7,1 B (image transformer) | safetensors en precisión completa, tamano no disponible | No disponible | Qwen Research License | Repositorio oficial de Qwen |
 | Otros modelos de generación de imágenes comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -100,7 +100,7 @@ No se dispone de datos de benchmarks ni de especificaciones de alternativas (por
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Supbatomic/Qwen-Image-2.1-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Supbatomic/Qwen-Image-2.1-Uncensored-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Sumas de verificación: https://huggingface.co/Supbatomic/Qwen-Image-2.1-Uncensored-GGUF/blob/main/SHA256SUMS
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI

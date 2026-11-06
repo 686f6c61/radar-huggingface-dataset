@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Dominnm/face` alojado en HuggingFace no contiene información técnica sustancial sobre un modelo de IA. La única metadata disponible es la licencia Apache 2.0 y la fecha de creación (26 de agosto de 2026). No se ha publicado una model card con descripción, arquitectura, parámetros, idiomas soportados ni ningún otro dato técnico relevante. Las descargas y likes son cero, lo que sugiere que se trata de un repositorio reciente o vacío.
+El repositorio `Dominnm/face` alojado en Hugging Face no contiene información técnica sustancial sobre un modelo de IA. La única metadata disponible es la licencia Apache 2.0 y la fecha de creación (26 de agosto de 2026). No se ha publicado una model card con descripción, arquitectura, parámetros, idiomas soportados ni ningún otro dato técnico relevante. Las descargas y likes son cero, lo que sugiere que se trata de un repositorio reciente o vacío.
 
 Dado que no se dispone de información sobre el modelo, su arquitectura, entrenamiento o capacidades, no es posible evaluar su utilidad para tareas concretas. Cualquier uso en producción sería arriesgado y no recomendable sin documentación adicional. Los resultados de búsqueda web asociados al nombre "face" no guardan relación con el contenido del repositorio y no aportan información técnica sobre el modelo.
 

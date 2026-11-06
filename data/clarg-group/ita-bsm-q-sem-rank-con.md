@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Tarea | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ita-bsm-q-sem-rank-con (este) | Qwen3-8B + LoRA | Puntuación de argumentos para ITA | Escalar en [0, 1] | MIT | HuggingFace + repo ITA |
+| ita-bsm-q-sem-rank-con (este) | Qwen3-8B + LoRA | Puntuación de argumentos para ITA | Escalar en [0, 1] | MIT | Hugging Face + repo ITA |
 | Otros BSMs del mismo grupo (p. ej. variantes sin ranking/consistencia) | Qwen3-8B + LoRA | Puntuación de argumentos para ITA | Escalar en [0, 1] | MIT | Repo ITA (según model card) |
-| Qwen3-8B base | - | Generación de texto general | Texto | Apache 2.0 (según modelo base) | HuggingFace |
+| Qwen3-8B base | - | Generación de texto general | Texto | Apache 2.0 (según modelo base) | Hugging Face |
 | LLM generalista con prompting para verificación | Variable | Verificación de claims vía prompting | Texto con veredicto | Según modelo | Amplia |
 
 La comparación cuantitativa con las variantes del propio grupo no está disponible en la información proporcionada; la model card remite al repositorio para los demás BSMs publicados. Frente a un LLM generalista, la ventaja de este modelo es la salida numérica calibrada y la integración con una semántica formal de agregación, a costa de no ser un modelo conversacional.
@@ -83,6 +83,6 @@ La comparación cuantitativa con las variantes del propio grupo no está disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CLArg-group/ita-bsm-q-sem-rank-con
+- Modelo en Hugging Face: https://huggingface.co/CLArg-group/ita-bsm-q-sem-rank-con
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Repositorio ITA (código de inferencia, entrenamiento y evaluación): https://github.com/CLArg-group/inference-time-argumentation

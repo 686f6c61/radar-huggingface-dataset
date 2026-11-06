@@ -2,7 +2,7 @@
 
 ## Resumen
 
-citation-extractor-fast es un modelo experimental de extracción de citas legales, publicado por el usuario thurstonpowers en HuggingFace. Se trata de un fine-tune de pesos completos (una época) sobre NVIDIA Nemotron-3-Nano-4B-BF16, un transformer de aproximadamente 3.970 millones de parámetros. El modelo recibe como entrada el texto fuente de un documento legal y devuelve un array JSON de objetos con la cita textual (`quote`), su posición de inicio y fin en caracteres Unicode (`start`, `end`) y la categoría de la cita (`kind`).
+citation-extractor-fast es un modelo experimental de extracción de citas legales, publicado por el usuario thurstonpowers en Hugging Face. Se trata de un fine-tune de pesos completos (una época) sobre NVIDIA Nemotron-3-Nano-4B-BF16, un transformer de aproximadamente 3.970 millones de parámetros. El modelo recibe como entrada el texto fuente de un documento legal y devuelve un array JSON de objetos con la cita textual (`quote`), su posición de inicio y fin en caracteres Unicode (`start`, `end`) y la categoría de la cita (`kind`).
 
 El modelo resuelve un problema acotado y bien definido: localizar y clasificar referencias legales (estatutos, actas, reglamentos, proyectos de ley) dentro de documentos jurídicos en inglés. No está cualificado para producción ni constituye asesoramiento legal, según advierte explícitamente el autor. Su relevancia radica en que demuestra que un modelo pequeño (4B) con un fine-tune específico puede superar ampliamente tanto a su versión base sin entrenar como a un modelo propietario de referencia (GPT-6.1) en la tarea de reconocimiento exacto de citas.
 
@@ -99,7 +99,7 @@ No se dispone de información sobre otros extractores de citas legales open sour
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thurstonpowers/citation-extractor-fast
+- Modelo en Hugging Face: https://huggingface.co/thurstonpowers/citation-extractor-fast
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - System prompt entrenado: https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/SYSTEM_PROMPT.txt
 - Ejemplo de entrada (sección vista): https://huggingface.co/thurstonpowers/citation-extractor-fast/blob/main/examples/seen-section-input.txt

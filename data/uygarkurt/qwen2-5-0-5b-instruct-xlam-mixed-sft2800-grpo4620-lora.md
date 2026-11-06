@@ -13,7 +13,7 @@ Los resultados publicados muestran la tesis del experimento: el GRPO mejora la e
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer decoder-only (modelo base Qwen2.5-0.5B-Instruct) con adaptador LoRA/PEFT |
-| Parametros totales | 0,5B en el modelo base; el repositorio contiene solo los pesos del adaptador LoRA (tamano de repo 0.0 GB segun HuggingFace) |
+| Parametros totales | 0,5B en el modelo base; el repositorio contiene solo los pesos del adaptador LoRA (tamano de repo 0.0 GB segun Hugging Face) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada; el modelo base Qwen2.5-0.5B-Instruct declara 32.768 tokens en su propia model card |
 | Tipos de cuantizacion | no disponible para el adaptador; el base admite los formatos habituales de la familia Qwen2.5 (GGUF, AWQ, GPTQ) a traves de terceros |
@@ -73,7 +73,7 @@ Datos de parámetros, contexto y licencia tomados de las model cards públicas d
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B + LoRA SFT+GRPO) | 0,5B | el del base (32.768 tokens según Qwen) | Tool calling + abstención, inglés | no disponible | adaptador PEFT en HuggingFace, 0 descargas |
+| Este adaptador (Qwen2.5-0.5B + LoRA SFT+GRPO) | 0,5B | el del base (32.768 tokens según Qwen) | Tool calling + abstención, inglés | no disponible | adaptador PEFT en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-0.5B-Instruct | 0,5B | 32.768 tokens según su model card | Asistente general, multilingüe | Apache 2.0 según su model card | modelo completo, ampliamente desplegado |
 | MadeAgents/Hammer2.1-0.5b | ~0,5B | el del base Qwen2.5-0.5B | Tool calling | no verificada en esta ficha | modelo completo |
 | Salesforce/xLAM-1B-fc-r | ~1B | no verificado | Function calling | no verificada en esta ficha | modelo completo |
@@ -96,7 +96,7 @@ La comparación relevante es contra Qwen2.5-0.5B-Instruct sin adaptar y contra e
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo4620-lora
+- Hugging Face del adaptador: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-grpo4620-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Adaptador SFT previo (punto de comparación): https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft2800-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed

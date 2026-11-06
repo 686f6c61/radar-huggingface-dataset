@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rAmZ-m/distilbert-ner-conll2003` es un modelo de reconocimiento de entidades nombradas (NER) publicado en HuggingFace por el usuario rAmZ-m. Se trata de un ajuste fino de DistilBERT, la versión destilada de BERT desarrollada originalmente por Hugging Face, sobre el corpus CoNLL-2003, el conjunto de referencia clásico para NER en inglés. El modelo cuenta con 65.197.833 parámetros y un repositorio de 0,3 GB en formato safetensors.
+`rAmZ-m/distilbert-ner-conll2003` es un modelo de reconocimiento de entidades nombradas (NER) publicado en Hugging Face por el usuario rAmZ-m. Se trata de un ajuste fino de DistilBERT, la versión destilada de BERT desarrollada originalmente por Hugging Face, sobre el corpus CoNLL-2003, el conjunto de referencia clásico para NER en inglés. El modelo cuenta con 65.197.833 parámetros y un repositorio de 0,3 GB en formato safetensors.
 
 La relevancia de este tipo de modelos radica en su ligereza: al derivar de DistilBERT, conserva aproximadamente el 97 % del rendimiento de BERT-base en tareas de comprensión del lenguaje con un 40 % menos de parámetros y una inferencia notablemente más rápida. Esto lo hace candidato para tareas de extracción de entidades en pipelines de procesamiento de texto a gran escala o en entornos con recursos limitados.
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rAmZ-m/distilbert-ner-conll2003 | 65,2 M | 512 (arquitectura DistilBERT) | NER (CoNLL-2003) | Apache 2.0 | HuggingFace, 0 descargas |
-| dslim/bert-base-NER | 110 M | 512 | NER (CoNLL-2003) | MIT | HuggingFace, ampliamente usado |
-| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 | NER (CoNLL-2003) | MIT | HuggingFace, muy usado |
-| flair/ner-english-ontonotes-large | no disponible | 512 | NER (OntoNotes) | MIT | HuggingFace, referencia en NER |
+| rAmZ-m/distilbert-ner-conll2003 | 65,2 M | 512 (arquitectura DistilBERT) | NER (CoNLL-2003) | Apache 2.0 | Hugging Face, 0 descargas |
+| dslim/bert-base-NER | 110 M | 512 | NER (CoNLL-2003) | MIT | Hugging Face, ampliamente usado |
+| Jean-Baptiste/roberta-large-ner-english | 355 M | 512 | NER (CoNLL-2003) | MIT | Hugging Face, muy usado |
+| flair/ner-english-ontonotes-large | no disponible | 512 | NER (OntoNotes) | MIT | Hugging Face, referencia en NER |
 
 El modelo de rAmZ-m compite en la misma categoría que los ajustes de BERT-base y RoBERTa para NER en inglés. Su ventaja teórica es la ligereza de DistilBERT, pero carece de métricas publicadas que permitan verificar su calidad frente a alternativas consolidadas como `dslim/bert-base-NER`, que sí documenta su rendimiento y acumula miles de descargas. La licencia Apache 2.0 es permisiva y compatible con uso comercial, a diferencia de otras licencias más restrictivas.
 
@@ -84,7 +84,7 @@ El modelo de rAmZ-m compite en la misma categoría que los ajustes de BERT-base 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rAmZ-m/distilbert-ner-conll2003
+- Modelo en Hugging Face: https://huggingface.co/rAmZ-m/distilbert-ner-conll2003
 - DistilBERT (paper original): https://arxiv.org/abs/1910.01108
 - BERT (paper original): https://arxiv.org/abs/1810.04805
 - Corpus CoNLL-2003: https://www.clips.uantwerpen.be/conll2003/ner/

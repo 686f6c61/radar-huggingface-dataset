@@ -100,7 +100,7 @@ La diferencia clave de este checkpoint frente a los tres alternativos no es tecn
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen2.5-7b-fve-mixdiscern-s0
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen2.5-7b-fve-mixdiscern-s0
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio `welfare-improvements`: mencionado en la model card como marco de trabajo, plan y evaluacion; URL no proporcionada en la informacion disponible.
 - Corpus `flourishing-vs-equanimity`: mencionado en la model card como corpus de entrenamiento; URL no proporcionada en la informacion disponible.

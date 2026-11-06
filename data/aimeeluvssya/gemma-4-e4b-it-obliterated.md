@@ -82,9 +82,9 @@ Advertencia metodologica: estas cifras proceden exclusivamente de la model card 
 
 | Modelo | Parametros | Contexto | Rechazo duro | Calidad declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| google/gemma-4-E4B-it (base) | 7.996.156.448 (segun pesos derivados) | No disponible | 98,8% | Referencia | Apache 2.0 | HuggingFace |
-| gemma-4-E4B-it-OBLITERATED v2 | No disponible (GGUF con 666 tensores) | No disponible | ~0% | 3,1/10 (juez Claude) | Apache 2.0 | HuggingFace |
-| gemma-4-E4B-it-OBLITERATED v3 (este modelo) | 7.996.156.448 | No disponible | 0% | ~51% de respuestas coherentes | Apache 2.0 | HuggingFace, GGUF y safetensors |
+| google/gemma-4-E4B-it (base) | 7.996.156.448 (segun pesos derivados) | No disponible | 98,8% | Referencia | Apache 2.0 | Hugging Face |
+| gemma-4-E4B-it-OBLITERATED v2 | No disponible (GGUF con 666 tensores) | No disponible | ~0% | 3,1/10 (juez Claude) | Apache 2.0 | Hugging Face |
+| gemma-4-E4B-it-OBLITERATED v3 (este modelo) | 7.996.156.448 | No disponible | 0% | ~51% de respuestas coherentes | Apache 2.0 | Hugging Face, GGUF y safetensors |
 | Otras variantes abliteradas de ~4-8B | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks comparables con alternativas de otros autores, por lo que la comparacion se limita a la familia del propio modelo y a su version anterior. No se han encontrado en la busqueda web modelos similares con metricas verificables que permitan una comparacion cuantitativa.
@@ -105,7 +105,7 @@ No se dispone de datos de benchmarks comparables con alternativas de otros autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aimeeluvssya/gemma-4-E4B-it-OBLITERATED
+- Modelo en Hugging Face: https://huggingface.co/Aimeeluvssya/gemma-4-E4B-it-OBLITERATED
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Metodo OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Agente utilizado para la creacion: https://github.com/NousResearch/hermes-agent

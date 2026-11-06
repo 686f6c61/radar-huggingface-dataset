@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi0_5_jax_robotwin_vanilla_b64_60k` es un modelo de vision-lenguaje-accion (VLA) para robótica, publicado por el usuario Myungkyu en HuggingFace. Se trata de un fine-tune completo del checkpoint base `lerobot/pi05_base` (la familia Pi0.5 de Physical Intelligence) sobre el conjunto de datos RoboTwin 2.0, un benchmark de manipulación robótica simulada. El modelo toma imágenes de cabeza y de ambas muñecas, un estado articular de 14 dimensiones y una instrucción en lenguaje natural, y produce objetivos articulares absolutos de 14 dimensiones.
+`pi0_5_jax_robotwin_vanilla_b64_60k` es un modelo de vision-lenguaje-accion (VLA) para robótica, publicado por el usuario Myungkyu en Hugging Face. Se trata de un fine-tune completo del checkpoint base `lerobot/pi05_base` (la familia Pi0.5 de Physical Intelligence) sobre el conjunto de datos RoboTwin 2.0, un benchmark de manipulación robótica simulada. El modelo toma imágenes de cabeza y de ambas muñecas, un estado articular de 14 dimensiones y una instrucción en lenguaje natural, y produce objetivos articulares absolutos de 14 dimensiones.
 
 Su relevancia es doble: por un lado, sirve como baseline "vanilla" reproducible para el leaderboard de RoboTwin 2.0 en la configuración co-train (50 tareas x 50 episodios de `demo_clean` sobre el robot Aloha-AgileX); por otro, es una implementación en JAX del stack openpi, vendorizada en el adaptador Pi_05 de XPolicyLab, lo que facilita la comparación entre implementaciones JAX y PyTorch del mismo modelo base. El repositorio ocupa 12,4 GB e incluye los pesos EMA (0,99) en formato orbax.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `pi0_5_jax_robotwin_vanilla_b64_60k` (este) | no disponible | no disponible | VLA robotica, RoboTwin 2.0 | no disponible | HuggingFace, JAX/orbax |
-| `lerobot/pi05_base` | no disponible | no disponible | VLA base Pi0.5 | no disponible | HuggingFace, PyTorch/LeRobot |
-| `TianxingChen/RoboTwin2.0` (dataset) | no aplica | no aplica | Benchmark de manipulacion | no disponible | HuggingFace |
+| `pi0_5_jax_robotwin_vanilla_b64_60k` (este) | no disponible | no disponible | VLA robotica, RoboTwin 2.0 | no disponible | Hugging Face, JAX/orbax |
+| `lerobot/pi05_base` | no disponible | no disponible | VLA base Pi0.5 | no disponible | Hugging Face, PyTorch/LeRobot |
+| `TianxingChen/RoboTwin2.0` (dataset) | no aplica | no aplica | Benchmark de manipulacion | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de parámetros para establecer una comparación cuantitativa con alternativas de la misma categoría. La comparación más directa es con el checkpoint base `lerobot/pi05_base`, del que este modelo es un fine-tune, y con otras variantes del leaderboard de RoboTwin 2.0, cuyos resultados no se incluyen en la información proporcionada.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento ni de parámetros para establecer una comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Myungkyu/pi0_5_jax_robotwin_vanilla_b64_60k
+- Modelo en Hugging Face: https://huggingface.co/Myungkyu/pi0_5_jax_robotwin_vanilla_b64_60k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset RoboTwin 2.0: https://huggingface.co/datasets/TianxingChen/RoboTwin2.0
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios de codigo ni demos adicionales.

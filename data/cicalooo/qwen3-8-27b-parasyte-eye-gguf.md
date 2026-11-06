@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cicalooo/Qwen3.8-27B-Parasyte-Eye-GGUF
+- Hugging Face: https://huggingface.co/cicalooo/Qwen3.8-27B-Parasyte-Eye-GGUF
 - Modelo base: https://huggingface.co/HauhauCS/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive
 - Apoyo al autor (Throne): https://throne.com/plaguekind/item/073bace1-2e1a-4492-95e6-024b4da6459b
 - llama.cpp (despliegue con `--mmproj`): no se proporciona enlace en la información disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`janarmca/qwen14b-quick-lora` es un ajuste fino (fine-tuning) del modelo Qwen3-14B, desarrollado por el usuario janarmca y publicado en HuggingFace. Se trata de un LoRA entrenado sobre la variante cuantizada a 4 bits de Qwen3-14B de Unsloth (`unsloth/Qwen3-14B-unsloth-bnb-4bit`), lo que indica un flujo de trabajo de entrenamiento eficiente en memoria orientado a experimentacion rapida mas que a un producto final pulido.
+`janarmca/qwen14b-quick-lora` es un ajuste fino (fine-tuning) del modelo Qwen3-14B, desarrollado por el usuario janarmca y publicado en Hugging Face. Se trata de un LoRA entrenado sobre la variante cuantizada a 4 bits de Qwen3-14B de Unsloth (`unsloth/Qwen3-14B-unsloth-bnb-4bit`), lo que indica un flujo de trabajo de entrenamiento eficiente en memoria orientado a experimentacion rapida mas que a un producto final pulido.
 
 El modelo hereda la arquitectura transformer densa de Qwen3-14B, con aproximadamente 14.800 millones de parametros y una ventana de contexto nativa de 32.768 tokens (extensible mediante YaRN). El ajuste se realizo con las librerias Unsloth y TRL, y el repositorio contiene unicamente los pesos del adaptador en formato safetensors (0,3 GB), no el modelo completo fusionado.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| janarmca/qwen14b-quick-lora | ~14,8B (LoRA sobre base 4-bit) | 32.768 (heredado) | apache-2.0 | HuggingFace, 0 descargas | Sin benchmarks ni model card detallada |
-| Qwen/Qwen3-14B | 14,8B | 32.768 (extensible con YaRN) | apache-2.0 | HuggingFace, ampliamente usado | Modelo base oficial, con benchmarks publicados |
-| unsloth/Qwen3-14B-unsloth-bnb-4bit | 14,8B (cuantizado 4-bit) | 32.768 | apache-2.0 | HuggingFace | Base exacta sobre la que se entreno el adaptador |
-| Mistral-Nemo-Base-2407 | 12B | 128.000 | apache-2.0 | HuggingFace | Alternativa densa de tamano similar con contexto mucho mayor |
+| janarmca/qwen14b-quick-lora | ~14,8B (LoRA sobre base 4-bit) | 32.768 (heredado) | apache-2.0 | Hugging Face, 0 descargas | Sin benchmarks ni model card detallada |
+| Qwen/Qwen3-14B | 14,8B | 32.768 (extensible con YaRN) | apache-2.0 | Hugging Face, ampliamente usado | Modelo base oficial, con benchmarks publicados |
+| unsloth/Qwen3-14B-unsloth-bnb-4bit | 14,8B (cuantizado 4-bit) | 32.768 | apache-2.0 | Hugging Face | Base exacta sobre la que se entreno el adaptador |
+| Mistral-Nemo-Base-2407 | 12B | 128.000 | apache-2.0 | Hugging Face | Alternativa densa de tamano similar con contexto mucho mayor |
 
 ## Limitaciones y advertencias
 
@@ -81,8 +81,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/janarmca/qwen14b-quick-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
+- Modelo en Hugging Face: https://huggingface.co/janarmca/qwen14b-quick-lora
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3-14B-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Modelo Qwen3-14B oficial: https://huggingface.co/Qwen/Qwen3-14B

@@ -92,7 +92,7 @@ No se dispone de datos sobre modelos alternativos de otros desarrolladores con l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flaviodelgrosso/DeepSeek-V4.1-Flash-1017-GGUF
+- Repositorio Hugging Face: https://huggingface.co/flaviodelgrosso/DeepSeek-V4.1-Flash-1017-GGUF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Licencia del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017/blob/main/LICENSE
 - Herramienta Razor: https://github.com/flaviodelgrosso/razor

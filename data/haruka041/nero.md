@@ -4,7 +4,7 @@
 
 ## Resumen
 
-nero es un adaptador LoRA de generacion de imagenes publicado en HuggingFace por el usuario Haruka041. Se trata de un ajuste de bajo rango (Low-Rank Adaptation) pensado para aplicarse sobre el modelo base de difusion krea/Krea-2-Turbo, y su unico proposito declarado es reproducir una estetica concreta que el autor identifica con la palabra de activacion `nero style`. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo, y la libreria declarada es diffusers.
+nero es un adaptador LoRA de generacion de imagenes publicado en Hugging Face por el usuario Haruka041. Se trata de un ajuste de bajo rango (Low-Rank Adaptation) pensado para aplicarse sobre el modelo base de difusion krea/Krea-2-Turbo, y su unico proposito declarado es reproducir una estetica concreta que el autor identifica con la palabra de activacion `nero style`. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo, y la libreria declarada es diffusers.
 
 El interes practico de este tipo de publicaciones es que permiten incorporar un estilo visual especifico sin reentrenar el modelo base: se descarga un fichero pequeno, se carga junto al modelo original y se activa mediante un token en el prompt. Para un desarrollador o investigador, esto reduce el coste de almacenamiento y de despliegue frente a un fine-tuning completo, y facilita la composicion con otros adaptadores, ControlNet o IP-Adapter dentro de un mismo pipeline de difusion.
 
@@ -81,8 +81,8 @@ No se dispone de informacion sobre adaptadores comparables en los materiales pro
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Haruka041/nero | LoRA de estilo sobre difusion | no disponible (repo de 0,2 GB) | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| krea/Krea-2-Turbo | Modelo base text-to-image | no disponible | no disponible | no disponible | HuggingFace (referenciado como base) |
+| Haruka041/nero | LoRA de estilo sobre difusion | no disponible (repo de 0,2 GB) | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| krea/Krea-2-Turbo | Modelo base text-to-image | no disponible | no disponible | no disponible | Hugging Face (referenciado como base) |
 | Otros adaptadores LoRA de estilo | LoRA de estilo | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de informacion sobre adaptadores comparables en los materiales pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruka041/nero
+- Modelo en Hugging Face: https://huggingface.co/Haruka041/nero
 - Ficheros y versiones: https://huggingface.co/Haruka041/nero/tree/main
 - Modelo base declarado: https://huggingface.co/krea/Krea-2-Turbo
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible en la informacion proporcionada.

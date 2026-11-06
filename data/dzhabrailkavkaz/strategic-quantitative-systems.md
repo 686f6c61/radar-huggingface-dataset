@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Strategic-Quantitative-Systems es un repositorio de HuggingFace publicado por el usuario DzhabrailKAVKAZ que, en la fecha de su ultima actualizacion (20 de septiembre de 2026), no contiene artefactos tecnicos de ningun tipo: no hay pesos, no hay tokenizador, no hay configuracion de arquitectura y no hay pipeline declarado. El contenido del repositorio es una model card redactada como carta abierta dirigida al equipo de Google Research, en la que el autor expone criticas al enfoque de tokenizacion por parches de TimesFM y afirma disponer de un marco propio que integra constantes temporales ciclicas absolutas en analisis de series temporales.
+Strategic-Quantitative-Systems es un repositorio de Hugging Face publicado por el usuario DzhabrailKAVKAZ que, en la fecha de su ultima actualizacion (20 de septiembre de 2026), no contiene artefactos tecnicos de ningun tipo: no hay pesos, no hay tokenizador, no hay configuracion de arquitectura y no hay pipeline declarado. El contenido del repositorio es una model card redactada como carta abierta dirigida al equipo de Google Research, en la que el autor expone criticas al enfoque de tokenizacion por parches de TimesFM y afirma disponer de un marco propio que integra constantes temporales ciclicas absolutas en analisis de series temporales.
 
 No se trata, por tanto, de un modelo de lenguaje ni de un modelo de series temporales entrenado y publicado, sino de una propuesta o comunicacion comercial. La unica informacion verificable del repositorio son sus metadatos: licencia apache-2.0, etiqueta region:us, cero descargas y cero likes. No se declara arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -85,6 +85,6 @@ No es posible establecer una comparativa. No existe un modelo comparable porque 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DzhabrailKAVKAZ/Strategic-Quantitative-Systems
+- Repositorio en Hugging Face: https://huggingface.co/DzhabrailKAVKAZ/Strategic-Quantitative-Systems
 
 No se han encontrado en la busqueda web enlaces relevantes al modelo: papers, blogs, repositorios de codigo, demos o documentacion adicional. Los unicos resultados devueltos corresponden a paginas de maquinaria agricola sin relacion con el contenido del repositorio.

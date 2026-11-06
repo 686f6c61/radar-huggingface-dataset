@@ -2,7 +2,7 @@
 
 ## Resumen
 
-turing-rl-qwen3-8b-sft es un adaptador LoRA sobre el modelo Qwen3-8B, publicado por el usuario mtorres98 en HuggingFace. Esta diseñado como un fine-tuning supervisado (SFT) utilizando las librerias PEFT y TRL, y su peso de 0,7 GB indica que solo contiene los parametros del adaptador, no los pesos completos del modelo base. El proposito del entrenamiento no esta documentado: la model card es una plantilla estandar con campos vacios, y no incluye informacion sobre datos de entrenamiento, hiperparametros ni evaluaciones. Es un modelo experimental, sin descargas ni popularidad, que hereda las capacidades del base Qwen3-8B, aunque esto no se ha confirmado en la ficha.
+turing-rl-qwen3-8b-sft es un adaptador LoRA sobre el modelo Qwen3-8B, publicado por el usuario mtorres98 en Hugging Face. Esta diseñado como un fine-tuning supervisado (SFT) utilizando las librerias PEFT y TRL, y su peso de 0,7 GB indica que solo contiene los parametros del adaptador, no los pesos completos del modelo base. El proposito del entrenamiento no esta documentado: la model card es una plantilla estandar con campos vacios, y no incluye informacion sobre datos de entrenamiento, hiperparametros ni evaluaciones. Es un modelo experimental, sin descargas ni popularidad, que hereda las capacidades del base Qwen3-8B, aunque esto no se ha confirmado en la ficha.
 
 ## Especificaciones tecnicas
 
@@ -64,5 +64,5 @@ No disponible. El modelo es un adaptador sin benchmarks ni documentacion tecnica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mtorres98/turing-rl-qwen3-8b-sft
+- Modelo en Hugging Face: https://huggingface.co/mtorres98/turing-rl-qwen3-8b-sft
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la busqueda web.

@@ -58,6 +58,6 @@ No disponible. No se conocen modelos comparables con la misma configuración (ad
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF](https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF)
+- Repositorio Hugging Face: [https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF](https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled-GGUF)
 - Modelo base (referenciado): [LiquidAI/LFM2.5-2.6B](https://huggingface.co/LiquidAI/LFM2.5-2.6B) (no verificado)
 - Referencia al artículo sobre impacto ambiental: [Lacoste et al., 2019](https://arxiv.org/abs/1910.09700) (tag del repositorio)

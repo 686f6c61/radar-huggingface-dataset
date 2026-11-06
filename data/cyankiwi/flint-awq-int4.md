@@ -92,12 +92,12 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/cyankiwi/flint-AWQ-INT4
+- Hugging Face (esta cuantizacion): https://huggingface.co/cyankiwi/flint-AWQ-INT4
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Organizacion del cuantizador: https://huggingface.co/cyankiwi
 - Web de cyankiwi: https://cyan.kiwi/
 - Dataset de calibracion: https://huggingface.co/datasets/cyankiwi/calibration
 - Blog de presentacion de Flint: https://www.recursive.com/updates/introducing-recursive-flint
-- Organizacion Recursive en HuggingFace: https://huggingface.co/RecursiveSI
+- Organizacion Recursive en Hugging Face: https://huggingface.co/RecursiveSI
 - Motor local de Recursive: https://github.com/recursive-oss/rec
 - Documentacion de Recursive: https://docs.recursive.com/getting-started

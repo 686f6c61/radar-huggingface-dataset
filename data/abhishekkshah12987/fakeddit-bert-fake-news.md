@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `abhishekkshah12987/fakeddit-bert-fake-news` es un clasificador binario de titulares (real/falso) obtenido mediante fine-tuning de `distilbert-base-uncased` sobre una submuestra balanceada del corpus Fakeddit. Lo publica el usuario de HuggingFace abhishekkshah12987 bajo licencia MIT, con un total de 66.955.010 parametros (~67 M) almacenados en formato safetensors (~0,3 GB de repositorio). Su funcion es asignar una etiqueta de dos clases a titulares cortos en ingles, con una calibracion posterior de temperaturas para que la probabilidad de salida sea mas fiable.
+El modelo `abhishekkshah12987/fakeddit-bert-fake-news` es un clasificador binario de titulares (real/falso) obtenido mediante fine-tuning de `distilbert-base-uncased` sobre una submuestra balanceada del corpus Fakeddit. Lo publica el usuario de Hugging Face abhishekkshah12987 bajo licencia MIT, con un total de 66.955.010 parametros (~67 M) almacenados en formato safetensors (~0,3 GB de repositorio). Su funcion es asignar una etiqueta de dos clases a titulares cortos en ingles, con una calibracion posterior de temperaturas para que la probabilidad de salida sea mas fiable.
 
 El problema que aborda es el de la deteccion de desinformacion a escala de titular, un caso de uso clasico en moderacion de contenido y analisis de redes sociales. La relevancia practica esta en su tamano reducido: al ser un DistilBERT, se puede ejecutar en CPU o en cualquier GPU de consumo con latencia de milisegundos, lo que lo hace apto como filtro de primera etapa en pipelines de alto volumen. El autor advierte de forma explicita en la model card de que el modelo clasifica **estilo de titular**, no veracidad de afirmaciones, y que no es un verificador de hechos de proposito general.
 
@@ -18,7 +18,7 @@ La innovacion metodologica mas destacable no esta en la arquitectura, que es un 
 | Tipos de cuantizacion | no disponible (no se documentan versiones cuantizadas ni GGUF) |
 | Idiomas soportados | en (ingles) |
 | Licencia | MIT |
-| Formato de pesos | safetensors (pesos de HuggingFace Transformers) |
+| Formato de pesos | safetensors (pesos de Hugging Face Transformers) |
 | Tarea (pipeline) | text-classification |
 | Dataset de entrenamiento | Fakeddit (submuestra balanceada, 5000 ejemplos) |
 | Metricas declaradas | accuracy, F1 |
@@ -39,7 +39,7 @@ En cuanto a los datos, el autor parte de los TSV oficiales de train/validate/tes
 - Estimacion de confianza calibrada: aplicando la temperatura T = 1,1099 a los logits antes del softmax se obtiene una probabilidad mas cercana a la frecuencia empirica de acierto.
 - Procesamiento por lotes (batching) de titulares con `padding="max_length"` y `truncation=True`, lo que permite throughput alto en grandes volumenes de texto.
 - Ejecucion en CPU sin GPU dedicada, dado su tamano de ~67 M de parametros.
-- Integracion directa con el ecosistema HuggingFace Transformers mediante `AutoTokenizer` y `AutoModelForSequenceClassification`.
+- Integracion directa con el ecosistema Hugging Face Transformers mediante `AutoTokenizer` y `AutoModelForSequenceClassification`.
 - No soporta tool calling ni function calling.
 - No soporta agentes ni razonamiento multi-paso: es un clasificador de una sola pasada, sin generacion de texto.
 - No tiene capacidades multilingues: solo ingles.
@@ -83,16 +83,16 @@ El checkpoint publicado corresponde a DistilBERT y fue seleccionado por F1 de va
 - VRAM estimada para inferencia: aproximadamente 270 MB en FP32 (~4 bytes por parametro) y unos 135 MB en FP16; con el tokenizador y el overhead del runtime, menos de 1 GB en cualquier configuracion practica.
 - GPU recomendadas: no requiere GPU. Cualquier GPU consumer sirve, incluidas GTX 1650, RTX 3060, RTX 4090 o inferiores; tambien tarjetas de datacenter como A100 o H100, aunque resultan enormemente sobredimensionadas para 67 M de parametros.
 - Cabe en GPU de consumo: si, con margen amplio. Tambien cabe en CPU y en dispositivos de borde (Raspberry Pi, moviles de gama alta) siempre que se disponga de un runtime adecuado.
-- Opciones de despliegue: HuggingFace Transformers (referencia), Text Generation Inference y vLLM no aplican de forma nativa a clasificacion de secuencia; son mas apropiadas alternativas como FastAPI + Transformers, TorchServe, ONNX Runtime, o exportacion a TorchScript/ONNX. Ollama y llama.cpp no son el cauce habitual para un modelo safetensors de clasificacion sin conversion previa a GGUF, conversion que el autor no documenta.
+- Opciones de despliegue: Hugging Face Transformers (referencia), Text Generation Inference y vLLM no aplican de forma nativa a clasificacion de secuencia; son mas apropiadas alternativas como FastAPI + Transformers, TorchServe, ONNX Runtime, o exportacion a TorchScript/ONNX. Ollama y llama.cpp no son el cauce habitual para un modelo safetensors de clasificacion sin conversion previa a GGUF, conversion que el autor no documenta.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. Como referencia cualitativa, un encoder de 6 capas y 67 M de parametros con secuencias de 64 tokens suele procesar lotes de centenares de ejemplos por segundo en CPU moderna, pero no hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto maximo | F1 (weighted) en esta tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| abhishekkshah12987/fakeddit-bert-fake-news (DistilBERT) | 66.955.010 | 512 tokens (64 en el ejemplo de la model card) | 0,7975 (test propio) | MIT | HuggingFace |
+| abhishekkshah12987/fakeddit-bert-fake-news (DistilBERT) | 66.955.010 | 512 tokens (64 en el ejemplo de la model card) | 0,7975 (test propio) | MIT | Hugging Face |
 | bert-base-uncased fine-tuneado por el mismo autor | ~110 M | 512 tokens | 0,7982 +/- 0,0079 | Apache 2.0 (modelo base) | No publicado como checkpoint en la informacion disponible |
-| distilbert-base-uncased (modelo base, sin fine-tuning) | 66.955.010 | 512 tokens | 0,7885 +/- 0,0134 segun el autor con fine-tuning equivalente | Apache 2.0 | HuggingFace |
+| distilbert-base-uncased (modelo base, sin fine-tuning) | 66.955.010 | 512 tokens | 0,7885 +/- 0,0134 segun el autor con fine-tuning equivalente | Apache 2.0 | Hugging Face |
 
 No hay datos disponibles sobre otros clasificadores de deteccion de noticias falsas comparables evaluados sobre este mismo split, por lo que no se incluyen cifras adicionales. Cualquier comparacion con resultados publicados sobre el split oficial de Fakeddit seria invalida segun la propia model card.
 
@@ -111,7 +111,7 @@ No hay datos disponibles sobre otros clasificadores de deteccion de noticias fal
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abhishekkshah12987/fakeddit-bert-fake-news
+- Modelo en Hugging Face: https://huggingface.co/abhishekkshah12987/fakeddit-bert-fake-news
 - Dataset Fakeddit: https://fakeddit.netlify.app/
 - Articulo de Fakeddit: Nakamura, K., Levy, S., & Wang, W. Y. (2020). r/Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake News Detection. Proceedings of LREC 2020.
 - Temperature scaling: Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). On Calibration of Modern Neural Networks. ICML 2017.

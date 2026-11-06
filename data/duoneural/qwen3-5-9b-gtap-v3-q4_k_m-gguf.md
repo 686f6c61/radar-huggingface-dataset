@@ -85,12 +85,12 @@ La unica comparacion con datos disponibles es interna, entre el modelo sin cuant
 
 | Alternativa | Parametros | Precision / huella | Contexto | Perplejidad (131k) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (GTAP v3 Q4_K_M) | 9,2 B | ~5,02 bpw / 5,38 GiB | no declarado | 2,3324 | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-9B (base BF16) | 9,2 B | BF16 / 17,14 GiB | no declarado | 2,4306 | no disponible | HuggingFace / ModelScope |
-| GTAP v3 IQ3_XXS | 9,2 B | ~3,3 bpw / 4,10 GiB | no declarado | 2,6031 | apache-2.0 | HuggingFace |
-| GTAP v3 IQ2_M | 9,2 B | ~2,7 bpw / 3,79 GiB | no declarado | 2,7228 | apache-2.0 | HuggingFace |
-| GTAP v3 IQ2_XXS | 9,2 B | ~2,4 bpw / 3,43 GiB | no declarado | 2,8023 | apache-2.0 | HuggingFace |
-| DuoNeural Qwen-3.5-9B-GGUF | 9,2 B | GGUF sin especificar | no declarado | no disponible | no disponible | HuggingFace |
+| Este modelo (GTAP v3 Q4_K_M) | 9,2 B | ~5,02 bpw / 5,38 GiB | no declarado | 2,3324 | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-9B (base BF16) | 9,2 B | BF16 / 17,14 GiB | no declarado | 2,4306 | no disponible | Hugging Face / ModelScope |
+| GTAP v3 IQ3_XXS | 9,2 B | ~3,3 bpw / 4,10 GiB | no declarado | 2,6031 | apache-2.0 | Hugging Face |
+| GTAP v3 IQ2_M | 9,2 B | ~2,7 bpw / 3,79 GiB | no declarado | 2,7228 | apache-2.0 | Hugging Face |
+| GTAP v3 IQ2_XXS | 9,2 B | ~2,4 bpw / 3,43 GiB | no declarado | 2,8023 | apache-2.0 | Hugging Face |
+| DuoNeural Qwen-3.5-9B-GGUF | 9,2 B | GGUF sin especificar | no declarado | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ La unica comparacion con datos disponibles es interna, entre el modelo sin cuant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-Q4_K_M-GGUF
+- Modelo en Hugging Face: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-Q4_K_M-GGUF
 - Variante IQ2_M de la misma familia: https://huggingface.co/DuoNeural/Qwen3.5-9B-GTAP-v3-IQ2_M-GGUF
 - Repositorio GGUF adicional del autor: https://huggingface.co/DuoNeural/Qwen-3.5-9B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

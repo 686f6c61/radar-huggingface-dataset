@@ -63,7 +63,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leonyly7970/embodied-ai-aug
+- Repositorio en Hugging Face: https://huggingface.co/Leonyly7970/embodied-ai-aug
 - Embodied AI Daily (arXiv papers): https://luohongkun.top/Embodied-AI-Daily/index.html
 - AI Model Release Tracker (contexto general): https://lmmarketcap.com/tools/model-release-tracker
 - Toward Embodied AGI: A Review (arXiv): https://arxiv.org/html/2505.14235

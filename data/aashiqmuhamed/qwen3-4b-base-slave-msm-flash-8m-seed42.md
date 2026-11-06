@@ -44,7 +44,7 @@ Las etiquetas indican *continued pretraining* sobre datos narrativos (`narrative
 - Ablaciones académicas: comparar el rendimiento del modelo base con y sin el adaptador en tareas de generación creativa para medir la contribución del *continued pretraining*.
 - Reproducción de experimentos: al fijar una semilla concreta, permite replicar resultados en entornos de investigación con recursos limitados (un solo GPU consumer para inferencia en cuantización).
 - Fine-tuning posterior: el adaptador puede servir como punto de partida para ajustes específicos de dominio narrativo en inglés.
-- Docencia y formación: ejemplo práctico de cómo se publica y carga un adaptador PEFT sobre un modelo Qwen3 para demostrar el flujo de trabajo con HuggingFace y PEFT.
+- Docencia y formación: ejemplo práctico de cómo se publica y carga un adaptador PEFT sobre un modelo Qwen3 para demostrar el flujo de trabajo con Hugging Face y PEFT.
 
 ## Benchmarks y rendimiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita su uso directo en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita su uso directo en pipelines automatizados.
 - Solo inglés declarado: no se garantiza un rendimiento adecuado en castellano u otros idiomas.
 - Es un adaptador, no un modelo completo: debe combinarse con Qwen3-4B-Base; su comportamiento depende enteramente del modelo base.
 - Sin benchmarks publicados: no hay evidencia cuantitativa de mejora frente al modelo base ni de degradación en otras tareas.
@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aashiqmuhamed/Qwen3-4B-Base-Slave-MSM-Flash-8M-Seed42
+- Hugging Face: https://huggingface.co/aashiqmuhamed/Qwen3-4B-Base-Slave-MSM-Flash-8M-Seed42
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Librería PEFT: https://huggingface.co/docs/peft

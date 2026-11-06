@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cydonia-24B-v4.3-heretic-v4-Q4-MLX es una cuantizacion en 4 bits para MLX del modelo coder3101/Cydonia-24B-v4.3-heretic-v4, publicada por el usuario tstepspam en HuggingFace. Se trata, por tanto, de una conversion de formato y precision, no de un entrenamiento nuevo: el autor del repositorio ha tomado los pesos del modelo base y los ha convertido al formato de MLX (el framework de Apple para inferencia en silicio Apple), reduciendo el peso del repositorio a 13,3 GB frente a los aproximadamente 47 GB que ocuparian los pesos en bf16.
+Cydonia-24B-v4.3-heretic-v4-Q4-MLX es una cuantizacion en 4 bits para MLX del modelo coder3101/Cydonia-24B-v4.3-heretic-v4, publicada por el usuario tstepspam en Hugging Face. Se trata, por tanto, de una conversion de formato y precision, no de un entrenamiento nuevo: el autor del repositorio ha tomado los pesos del modelo base y los ha convertido al formato de MLX (el framework de Apple para inferencia en silicio Apple), reduciendo el peso del repositorio a 13,3 GB frente a los aproximadamente 47 GB que ocuparian los pesos en bf16.
 
 El modelo base pertenece a la familia de modelos "abliterated" o "decensored": las etiquetas del repositorio (heretic, uncensored, decensored, abliterated) indican que se ha aplicado una tecnica de ablacion de direcciones de rechazo sobre un modelo instruct original, con el objetivo de eliminar las negativas sistematicas a determinados tipos de peticiones. La etiqueta mistral sugiere que la arquitectura subyacente pertenece a la familia Mistral, aunque la model card no aporta detalles.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: tamano 13,3 GB, 0 descargas, 0 likes, creado el 202
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) del modelo base coder3101/Cydonia-24B-v4.3-heretic-v4. La model card del repositorio analizado es practicamente vacia: solo contiene metadatos de HuggingFace (base_model, tags, library_name y pipeline_tag).
+No hay informacion disponible sobre la arquitectura interna, el numero de tokens de entrenamiento, la composicion del dataset ni las etapas de alineacion (RLHF, DPO u otras) del modelo base coder3101/Cydonia-24B-v4.3-heretic-v4. La model card del repositorio analizado es practicamente vacia: solo contiene metadatos de Hugging Face (base_model, tags, library_name y pipeline_tag).
 
 Lo unico inferible a partir de los metadatos es lo siguiente. Primero, el nombre "24B" y el recuento real de parametros (23,57B) sitúan al modelo en la clase de 24B, un rango habitual en modelos densos de tipo transformer decoder-only. Segundo, la etiqueta mistral apunta a que el linaje arquitectonico es Mistral. Tercero, las etiquetas heretic, uncensored, decensored y abliterated indican que el modelo base ha sufrido un proceso de ablacion de direcciones de activacion asociadas al rechazo, una tecnica que modifica pesos del modelo sin reentrenamiento completo y que suele degradar ligeramente capacidades generales a cambio de eliminar rechazos. Cuarto, esta publicacion concreta no ha reentrenado nada: es exclusivamente una cuantizacion a 4 bits y conversion al formato MLX.
 
@@ -34,7 +34,7 @@ Lo unico inferible a partir de los metadatos es lo siguiente. Primero, el nombre
 - Generacion de texto y conversacion multi-turno (pipeline text-generation, tag conversational).
 - Uso como modelo instruct/chat de proposito general, segun los tags del repositorio.
 - Comportamiento "sin censura": el proceso de ablacion del modelo base busca eliminar rechazos ante peticiones que un modelo alineado rechazaria.
-- Capacidades de codigo: no confirmadas en la informacion disponible, aunque el nombre del modelo base en HuggingFace incluye "coder3101" (identificador de cuenta, no necesariamente indicativo de especializacion en codigo).
+- Capacidades de codigo: no confirmadas en la informacion disponible, aunque el nombre del modelo base en Hugging Face incluye "coder3101" (identificador de cuenta, no necesariamente indicativo de especializacion en codigo).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
@@ -88,7 +88,7 @@ No se dispone de datos verificados de benchmarks, contexto o licencia de ninguna
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX
+- Repositorio en Hugging Face: https://huggingface.co/tstepspam/Cydonia-24B-v4.3-heretic-v4-Q4-MLX
 - Modelo base: https://huggingface.co/coder3101/Cydonia-24B-v4.3-heretic-v4
 - Framework MLX: https://github.com/ml-explore/mlx
 - Ejemplos y herramientas MLX para modelos de lenguaje: https://github.com/ml-explore/mlx-examples

@@ -91,7 +91,7 @@ La ventaja competitiva de este repositorio es inexistente en terminos de documen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-ec171fb4-d19c-4170-b3d4-a2843566af5f
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-ec171fb4-d19c-4170-b3d4-a2843566af5f
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo instruct de referencia: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio mistral-inference: https://github.com/mistralai/mistral-inference

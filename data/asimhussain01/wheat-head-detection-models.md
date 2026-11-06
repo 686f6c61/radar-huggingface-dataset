@@ -42,7 +42,7 @@ No se especifican datos de entrenamiento, número de épocas, técnicas de aumen
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye métricas de evaluación, y la model card es mínima. Los artículos científicos encontrados en la búsqueda web (MDPI, ScienceDirect) describen otros modelos de detección de trigo, pero no corresponden a este modelo concreto.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye métricas de evaluación, y la model card es mínima. Los artículos científicos encontrados en la búsqueda web (MDPI, ScienceDirect) describen otros modelos de detección de trigo, pero no corresponden a este modelo concreto.
 
 ## Requisitos de hardware
 
@@ -63,7 +63,7 @@ No se dispone de datos de rendimiento para este modelo, por lo que no es posible
 
 ## Enlaces
 
-- [HuggingFace - asimhussain01/Wheat-Head-Detection-Models](https://huggingface.co/asimhussain01/Wheat-Head-Detection-Models)
+- [Hugging Face - asimhussain01/Wheat-Head-Detection-Models](https://huggingface.co/asimhussain01/Wheat-Head-Detection-Models)
 - [GitHub - asimhussain0010/Wheat-Head-Detection](https://github.com/asimhussain0010/Wheat-Head-Detection)
 - [Wheat Head Detection in Field Environments Based on an Improved YOLOv11 Model (MDPI)](https://www.mdpi.com/2077-0472/15/16/1765)
 - [Counting wheat heads using a simulation model (ScienceDirect)](https://www.sciencedirect.com/science/article/pii/S016816992401024X)

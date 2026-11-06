@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace. Por su nomenclatura y su tamaño, se trata de un modelo acústico CTC (Connectionist Temporal Classification) orientado a reconocimiento automático de voz, no de un modelo de lenguaje generativo pese a que el identificador incluya el sufijo "llmgen". El nombre sugiere un experimento (exp39) sobre datos humanos con aumento de datos desactivado (noaug), geometría de cabezas (hhdgeom), generación sintética de datos mediante un LLM y una semilla concreta (seed44) sobre un conjunto de 5.000 muestras.
+El modelo `cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed44` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face. Por su nomenclatura y su tamaño, se trata de un modelo acústico CTC (Connectionist Temporal Classification) orientado a reconocimiento automático de voz, no de un modelo de lenguaje generativo pese a que el identificador incluya el sufijo "llmgen". El nombre sugiere un experimento (exp39) sobre datos humanos con aumento de datos desactivado (noaug), geometría de cabezas (hhdgeom), generación sintética de datos mediante un LLM y una semilla concreta (seed44) sobre un conjunto de 5.000 muestras.
 
-La model card está prácticamente vacía: es la plantilla por defecto de HuggingFace sin secciones cumplimentadas, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas ni procedimiento de evaluación. La única referencia técnica explícita es la cita a Lacoste et al. (2019) sobre el cálculo de emisiones de carbono, que aparece en la plantilla estándar y no aporta información sobre el modelo.
+La model card está prácticamente vacía: es la plantilla por defecto de Hugging Face sin secciones cumplimentadas, por lo que no hay información sobre arquitectura, datos de entrenamiento, idiomas ni procedimiento de evaluación. La única referencia técnica explícita es la cita a Lacoste et al. (2019) sobre el cálculo de emisiones de carbono, que aparece en la plantilla estándar y no aporta información sobre el modelo.
 
 Es relevante únicamente como artefacto de investigación reproducible dentro de una serie de experimentos de un mismo autor. Con 0 descargas y 0 likes, y un repositorio de 0,3 GB, no hay evidencia de uso comunitario ni de validación externa. Cualquier evaluación de sus capacidades debe hacerse empíricamente por parte de quien lo descargue.
 
@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed44 | 87,3 M | no disponible | MIT | HuggingFace |
-| facebook/wav2vec2-base-960h | 95 M | no aplica (audio) | Apache 2.0 | HuggingFace |
-| facebook/hubert-base-ls960 | 95 M | no aplica (audio) | Apache 2.0 | HuggingFace |
-| openai/whisper-small | 244 M | 30 s de audio | MIT | HuggingFace |
+| cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed44 | 87,3 M | no disponible | MIT | Hugging Face |
+| facebook/wav2vec2-base-960h | 95 M | no aplica (audio) | Apache 2.0 | Hugging Face |
+| facebook/hubert-base-ls960 | 95 M | no aplica (audio) | Apache 2.0 | Hugging Face |
+| openai/whisper-small | 244 M | 30 s de audio | MIT | Hugging Face |
 
 La comparación con wav2vec2 y HuBERT es tentativa, basada únicamente en el orden de magnitud de parámetros y en la posible naturaleza acústica del modelo. No hay datos de rendimiento del modelo de cyttic que permitan una comparación cuantitativa.
 
@@ -79,6 +79,6 @@ La comparación con wav2vec2 y HuBERT es tentativa, basada únicamente en el ord
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed44
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10uninoaug-hhdgeom-llmgen-5k-seed44
 - Paper citado en la model card (Lacoste et al., 2019, sobre emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute

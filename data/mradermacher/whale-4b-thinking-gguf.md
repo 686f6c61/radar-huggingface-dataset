@@ -23,7 +23,7 @@ Su relevancia práctica reside en la disponibilidad de un conjunto amplio de cua
 
 ## Arquitectura y entrenamiento
 
-La información proporcionada no describe la arquitectura del modelo base roskosmos19/Whale-4B-Thinking. El único dato técnico disponible es el pipeline de conversión empleado por mradermacher: un volcado desde formato HuggingFace (`convert_type: hf`) con cuantización estática versión 2 y cuantización de tensores de salida activada (`output_tensor_quantised: 1`). No se especifican número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o RLVR.
+La información proporcionada no describe la arquitectura del modelo base roskosmos19/Whale-4B-Thinking. El único dato técnico disponible es el pipeline de conversión empleado por mradermacher: un volcado desde formato Hugging Face (`convert_type: hf`) con cuantización estática versión 2 y cuantización de tensores de salida activada (`output_tensor_quantised: 1`). No se especifican número de tokens de entrenamiento, composición del dataset, ni si se aplicaron técnicas de alineación como RLHF, DPO o RLVR.
 
 Respecto a las innovaciones del modelo base, el sufijo "Thinking" sugiere la presencia de un modo de razonamiento extendido (cadena de pensamiento explícita), pero no hay documentación en el repositorio que confirme el mecanismo, su implementación ni su comportamiento. Tampoco se detalla si emplea atención lineal, decodificación especulativa u otras optimizaciones.
 
@@ -91,6 +91,6 @@ No disponible. No se dispone de información sobre el modelo base (roskosmos19/W
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Whale-4B-Thinking-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Whale-4B-Thinking-GGUF
 - Modelo base: https://huggingface.co/roskosmos19/Whale-4B-Thinking
 - Perfil del autor de la cuantización: https://huggingface.co/mradermacher

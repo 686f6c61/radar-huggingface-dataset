@@ -4,7 +4,7 @@
 
 `imayakakimura/robotics-vision-language-survey` no es un modelo de IA entrenado, sino un repositorio de notas de investigación sobre robótica y visión-lenguaje. Su propio README lo describe como una "working research note" que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, y advierte explícitamente de que no se presenta como un artículo finalizado ni como una publicación de modelos entrenados.
 
-El repositorio contiene únicamente dos archivos en Markdown (`paper_notes.md` y `README.md`), sin pesos, sin código y sin checkpoints. Los metadatos de HuggingFace lo etiquetan con `safetensors` y `transformer`, y declaran un total de 16.576 parámetros, pero el tamaño del repositorio es de 0,0 GB y no hay ningún artefacto de modelo descargable que corresponda a esa cifra.
+El repositorio contiene únicamente dos archivos en Markdown (`paper_notes.md` y `README.md`), sin pesos, sin código y sin checkpoints. Los metadatos de Hugging Face lo etiquetan con `safetensors` y `transformer`, y declaran un total de 16.576 parámetros, pero el tamaño del repositorio es de 0,0 GB y no hay ningún artefacto de modelo descargable que corresponda a esa cifra.
 
 Su relevancia actual es, por tanto, documental y no técnica: sirve como plantilla de trabajo para quien quiera estructurar una propuesta de investigación en el ámbito de los modelos de visión-lenguaje aplicados a robótica (VLA), con secciones de confounders, baselines emparejados, checks de reproducibilidad y modos de fallo. No debe citarse como evidencia de resultados experimentales.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 - Ejecución en GPU de consumo: no aplica.
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no aplica.
 - Latencia y throughput: no disponibles.
-- Requisito real del repositorio: únicamente un cliente Git o la interfaz web de HuggingFace para leer dos archivos Markdown; el tamaño declarado del repo es de 0,0 GB.
+- Requisito real del repositorio: únicamente un cliente Git o la interfaz web de Hugging Face para leer dos archivos Markdown; el tamaño declarado del repo es de 0,0 GB.
 
 ## Comparativa con modelos similares
 
@@ -76,7 +76,7 @@ No disponible. Este repositorio no es un modelo y no compite en la misma categor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/imayakakimura/robotics-vision-language-survey
+- Repositorio en Hugging Face: https://huggingface.co/imayakakimura/robotics-vision-language-survey
 - Archivo principal de la nota: `paper_notes.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Papers, blogs, repos de código y demos adicionales: no disponible (la búsqueda web proporcionada no devolvió resultados relevantes)

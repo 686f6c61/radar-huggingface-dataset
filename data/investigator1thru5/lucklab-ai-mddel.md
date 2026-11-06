@@ -1,9 +1,9 @@
 # Investigator1thru5/LuckLab.ai-Mddel
 
 ## Resumen
-El modelo LuckLab.ai-Mddel, publicado por el usuario Investigator1thru5 en HuggingFace, es un modelo de inteligencia artificial cuya documentación técnica no está disponible. No se ha publicado ninguna model card más allá de la licencia Apache 2.0, ni información sobre arquitectura, tamaño, contexto o capacidades. A fecha de la última actualización (2026-09-06), el modelo no registra descargas ni likes, lo que indica que es un modelo reciente o de acceso restringido.
+El modelo LuckLab.ai-Mddel, publicado por el usuario Investigator1thru5 en Hugging Face, es un modelo de inteligencia artificial cuya documentación técnica no está disponible. No se ha publicado ninguna model card más allá de la licencia Apache 2.0, ni información sobre arquitectura, tamaño, contexto o capacidades. A fecha de la última actualización (2026-09-06), el modelo no registra descargas ni likes, lo que indica que es un modelo reciente o de acceso restringido.
 
-La falta de información pública impide determinar qué problema resuelve o por qué sería relevante. No se han encontrado en la web referencias al modelo más allá de la página de HuggingFace, por lo que no es posible evaluar su rendimiento ni su adecuación para casos de uso concretos.
+La falta de información pública impide determinar qué problema resuelve o por qué sería relevante. No se han encontrado en la web referencias al modelo más allá de la página de Hugging Face, por lo que no es posible evaluar su rendimiento ni su adecuación para casos de uso concretos.
 
 En resumen, se trata de un repositorio de modelo con licencia Apache 2.0 pero sin datos técnicos que permitan su evaluación. Se recomienda precaución antes de considerar su uso en producción.
 
@@ -50,5 +50,5 @@ No disponible: no se han publicado datos de rendimiento ni especificaciones del 
 - Posible confusión por el nombre: el nombre "LuckLab.ai-Mddel" no se corresponde con ningún modelo conocido ni con documentación pública, lo que dificulta su trazabilidad y verificación.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Investigator1thru5/LuckLab.ai-Mddel
+- Hugging Face: https://huggingface.co/Investigator1thru5/LuckLab.ai-Mddel
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados obtenidos corresponden a páginas no relacionadas con el modelo (foros de soporte de Windows, Google Gemini y un laboratorio de neurociencia).

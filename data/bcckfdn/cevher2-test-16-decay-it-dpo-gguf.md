@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cevher2-test-16-decay-it-dpo-GGUF es una cuantizacion en formato GGUF de un modelo experimental de 1.513.546.496 parametros (aproximadamente 1,5B) desarrollado por el usuario bcckfdn en HuggingFace. El modelo base es bcckfdn/cevher2-test-16-decay-it-dpo-2, un modelo entrenado desde cero con la arquitectura de SmolLM2 (familia Llama), orientado a turco e ingles. Se trata de un proyecto personal de experimentacion, no de un modelo de produccion: la propia model card declara un numero de tokens de entrenamiento de 0, lo que sugiere que se trata de una prueba de concepto arquitectonica o de un entrenamiento en fase muy temprana.
+cevher2-test-16-decay-it-dpo-GGUF es una cuantizacion en formato GGUF de un modelo experimental de 1.513.546.496 parametros (aproximadamente 1,5B) desarrollado por el usuario bcckfdn en Hugging Face. El modelo base es bcckfdn/cevher2-test-16-decay-it-dpo-2, un modelo entrenado desde cero con la arquitectura de SmolLM2 (familia Llama), orientado a turco e ingles. Se trata de un proyecto personal de experimentacion, no de un modelo de produccion: la propia model card declara un numero de tokens de entrenamiento de 0, lo que sugiere que se trata de una prueba de concepto arquitectonica o de un entrenamiento en fase muy temprana.
 
 Su relevancia es marginal para uso generalista, pero resulta interesante como ejemplo de como derivar variantes GGUF compatibles con llama.cpp, Ollama y LM Studio a partir de un modelo propio entrenado desde cero. El repositorio pesa 6,7 GB y ofrece cuatro cuantizaciones, desde BF16 hasta Q4_K_M. No se han publicado benchmarks ni evaluaciones, y las metricas de comunidad (0 descargas, 0 likes en el momento de la ficha) confirman su caracter experimental.
 
@@ -82,6 +82,6 @@ Frente a estas alternativas, cevher2-test no compite en rendimiento: su valor es
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-dpo-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-dpo-GGUF
 - Modelo base: https://huggingface.co/bcckfdn/cevher2-test-16-decay-it-dpo-2
 - Paper, blog o demo: no disponible

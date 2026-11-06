@@ -2,7 +2,7 @@
 
 ## Resumen
 
-qwen3.8-flash-next-refusal-ablation-vectors es un artefacto publicado en HuggingFace por el usuario Mambavtt el 25 de septiembre de 2026. No es un modelo de lenguaje: es un conjunto de 43 vectores de direccion por capa (float32, dimension 2560) que se aplican sobre el flujo residual de Qwen3.8-Flash-Next en tiempo de inferencia para reducir de forma reversible el comportamiento de rechazo. El repositorio ocupa 0.0 GB y contiene un fichero `.npz` con los vectores y un `.json` con metadatos de procedencia.
+qwen3.8-flash-next-refusal-ablation-vectors es un artefacto publicado en Hugging Face por el usuario Mambavtt el 25 de septiembre de 2026. No es un modelo de lenguaje: es un conjunto de 43 vectores de direccion por capa (float32, dimension 2560) que se aplican sobre el flujo residual de Qwen3.8-Flash-Next en tiempo de inferencia para reducir de forma reversible el comportamiento de rechazo. El repositorio ocupa 0.0 GB y contiene un fichero `.npz` con los vectores y un `.json` con metadatos de procedencia.
 
 El artefacto esta construido y validado especificamente contra la conversion `RadixArk/Qwen3.8-Flash-Next-NVFP4`, de 48 capas, anchura oculta 2560 y 4 flujos de hiperconexion. La tecnica es activation steering: se proyecta el estado residual sobre la direccion de rechazo de cada capa y se resta una fraccion `alpha`, sin modificar pesos ni requerir fine-tuning. Esto convierte el grado de abliteracion en una palanca en tiempo de ejecucion (`alpha = 0` modelo original, `alpha = 1` ablacion validada, `alpha = 1.5` mas agresiva).
 

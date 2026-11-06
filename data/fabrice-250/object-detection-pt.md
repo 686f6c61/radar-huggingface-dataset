@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio "Fabrice-250/object-detection.pt" aloja un modelo de deteccion de objetos publicado por el usuario Fabrice-250 en HuggingFace bajo licencia Apache 2.0. El nombre del archivo y su extension ".pt" sugieren que se trata de pesos en formato PyTorch, pero no se dispone de ninguna documentacion tecnica que confirme la arquitectura subyacente (YOLO, Faster R-CNN, DETR, etc.), el numero de parametros o el dataset de entrenamiento.
+El repositorio "Fabrice-250/object-detection.pt" aloja un modelo de deteccion de objetos publicado por el usuario Fabrice-250 en Hugging Face bajo licencia Apache 2.0. El nombre del archivo y su extension ".pt" sugieren que se trata de pesos en formato PyTorch, pero no se dispone de ninguna documentacion tecnica que confirme la arquitectura subyacente (YOLO, Faster R-CNN, DETR, etc.), el numero de parametros o el dataset de entrenamiento.
 
 El modelo fue creado el 20 de agosto de 2026 y, en el momento de redactar esta ficha, no registra descargas ni valoraciones. La model card del repositorio contiene unicamente el encabezado de licencia (Apache 2.0), sin informacion adicional sobre capacidades, benchmarks o instrucciones de uso.
 
@@ -57,4 +57,4 @@ No disponible. No se puede identificar la categoria exacta del modelo ni compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Fabrice-250/object-detection.pt
+- Repositorio Hugging Face: https://huggingface.co/Fabrice-250/object-detection.pt

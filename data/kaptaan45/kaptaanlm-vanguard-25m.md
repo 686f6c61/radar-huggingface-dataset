@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KaptaanLM-Vanguard-25M es un modelo de lenguaje de 25,18 millones de parametros desarrollado por Rudransh Shekhar dentro del proyecto KaptaanLM (publicado en HuggingFace bajo el usuario kaptaan45). Se presenta como el modelo insignia de la familia de 25M y esta disenado especificamente para generacion de texto con razonamiento tipo cadena de pensamiento (chain-of-thought) en un formato de "scratchpad" estructurado. Su propuesta central es maximizar la densidad de razonamiento por parametro: con 18,88 millones de parametros no de embedding, el autor afirma alcanzar un estado del arte en razonamiento dentro de la franja de modelos por debajo de 50M.
+KaptaanLM-Vanguard-25M es un modelo de lenguaje de 25,18 millones de parametros desarrollado por Rudransh Shekhar dentro del proyecto KaptaanLM (publicado en Hugging Face bajo el usuario kaptaan45). Se presenta como el modelo insignia de la familia de 25M y esta disenado especificamente para generacion de texto con razonamiento tipo cadena de pensamiento (chain-of-thought) en un formato de "scratchpad" estructurado. Su propuesta central es maximizar la densidad de razonamiento por parametro: con 18,88 millones de parametros no de embedding, el autor afirma alcanzar un estado del arte en razonamiento dentro de la franja de modelos por debajo de 50M.
 
 Tecnicamente es un transformer decoder-only de 12 capas con d_model=384, 12 cabezas de atencion y 4 cabezas KV (GQA 3:1), funcion de activacion SwiGLU con d_ffn=1024, vocabulario BPE de 16.384 tokens con embeddings atados y una ventana de contexto de 2.048 tokens con atencion de ventana deslizante de 512. El preentrenamiento cubre 5.636 millones de tokens repartidos en 8 corpus curados, y el alineamiento combina un "Universal Scratchpad Contract" con DPO alineado a esquema (Schema-Aligned DPO).
 
@@ -109,7 +109,7 @@ La unica comparativa con datos verificables proporcionada por el autor es frente
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaptaan45/KaptaanLM-Vanguard-25M
+- Hugging Face: https://huggingface.co/kaptaan45/KaptaanLM-Vanguard-25M
 - Repositorio GitHub del proyecto KaptaanLM: https://github.com/rudy-07/KaptaanLM
 - Paper o informe tecnico: no disponible
 - Demo o espacio de inferencia: no disponible

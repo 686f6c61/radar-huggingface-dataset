@@ -62,6 +62,6 @@ No se dispone de comparaciones publicadas con otros modelos. El checkpoint no ha
 - El run `opus-high-v2` asociado fue abortado y declarado no válido, lo que sugiere problemas recurrentes en el pipeline de entrenamiento.
 
 ## Enlaces
-- Página del modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h045.soup-v6
+- Página del modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h045.soup-v6
 - Dataset del run (archivo del experimento): https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX

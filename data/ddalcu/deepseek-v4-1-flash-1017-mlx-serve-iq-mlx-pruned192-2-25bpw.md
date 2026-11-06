@@ -92,10 +92,10 @@ El autor senala que la decodificacion es practicamente igual a la del pack de 3.
 
 | Modelo | Parametros | Contexto | KLD global | Top-1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Pruned192 2.25bpw (este pack) | 27,1 B totales; 6 de 192 expertos activos | 1M | 0,3233 | 85,82% | MIT | HuggingFace, 92 GB residentes |
-| iQ-MLX-3.0bpw (mismo autor) | Modelo base sin podar; 6 de 384 expertos activos | 1M | 0,0963 | 92,64% | MIT | HuggingFace, 209 GB residentes |
-| Lossless (mismo autor) | Modelo base sin cuantizar | 1M | no disponible | no disponible | MIT | HuggingFace, 288 GB residentes |
-| DeepSeek-V4.1-Flash-1017 (base) | Modelo publicado original | 1M | referencia | referencia | MIT | HuggingFace |
+| Pruned192 2.25bpw (este pack) | 27,1 B totales; 6 de 192 expertos activos | 1M | 0,3233 | 85,82% | MIT | Hugging Face, 92 GB residentes |
+| iQ-MLX-3.0bpw (mismo autor) | Modelo base sin podar; 6 de 384 expertos activos | 1M | 0,0963 | 92,64% | MIT | Hugging Face, 209 GB residentes |
+| Lossless (mismo autor) | Modelo base sin cuantizar | 1M | no disponible | no disponible | MIT | Hugging Face, 288 GB residentes |
+| DeepSeek-V4.1-Flash-1017 (base) | Modelo publicado original | 1M | referencia | referencia | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks estandar ni de modelos de otros autores comparables en la informacion proporcionada.
 
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks estandar ni de modelos de otros autores com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-Pruned192-2.25bpw
+- Modelo en Hugging Face: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-Pruned192-2.25bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Pack lossless del mismo autor: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-Lossless
 - Pack iQ-MLX-3.0bpw del mismo autor: https://huggingface.co/ddalcu/DeepSeek-V4.1-Flash-1017-MLX-Serve-iQ-MLX-3.0bpw

@@ -100,7 +100,7 @@ No se dispone de información que permita establecer una comparativa rigurosa. E
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Markvasilyev/blip-multitask-study-2024
+- Hugging Face: https://huggingface.co/Markvasilyev/blip-multitask-study-2024
 - Archivos del repositorio citados en la model card: `train.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio adicional o demo: no disponible
 - Las búsquedas web realizadas no devolvieron ningún enlace relacionado con el modelo; los resultados obtenidos correspondían a foros de soporte de un operador de telefonía y no guardan relación con este repositorio.

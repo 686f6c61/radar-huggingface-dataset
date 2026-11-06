@@ -108,7 +108,7 @@ Nota: la variante multilingue de terceros se publica explicitamente como "untest
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bgoldfarb93/laya-int8
+- Modelo en Hugging Face: https://huggingface.co/bgoldfarb93/laya-int8
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Exportacion fp32 en ONNX: https://huggingface.co/receptron/laya-onnx
 - Libreria de inferencia `@receptron/laya`: https://github.com/receptron/laya

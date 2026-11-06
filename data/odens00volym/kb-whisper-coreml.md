@@ -102,7 +102,7 @@ La comparativa se limita a estos tres modelos porque son los que aparecen en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/odens00volym/kb-whisper-coreml
+- Modelo en Hugging Face: https://huggingface.co/odens00volym/kb-whisper-coreml
 - Modelo base (KBLab): https://huggingface.co/KBLab/kb-whisper-large
 - Herramienta de conversion y palettizacion: https://github.com/argmaxinc/whisperkittools
 - Utilidades de Argmax: https://github.com/argmaxinc/argmaxtools

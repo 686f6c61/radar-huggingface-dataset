@@ -23,7 +23,7 @@ Es relevante ahora porque traslada la inferencia multimodal a un entorno puramen
 | Tamano del repositorio | 0,2 GB |
 | Backend de ejecucion | WebGPU (`Backend.GPU_ARTISAN`) |
 | Idiomas de la libreria | TypeScript / JavaScript (npm) |
-| Libreria asociada en HuggingFace | `litert` |
+| Libreria asociada en Hugging Face | `litert` |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento

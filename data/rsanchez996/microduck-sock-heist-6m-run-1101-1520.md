@@ -2,7 +2,7 @@
 
 ## Resumen
 
-microduck-sock-heist-6m-run-1101-1520 es una política de control entrenada mediante aprendizaje por refuerzo (PPO) para el robot cuadrúpedo microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo fundacional generativo: es un artefacto de robótica empaquetado en formato ONNX que implementa una política de locomoción "perpetua" a 50 Hz, con 61 dimensiones de observación y 14 acciones de control. Lo publica el usuario RSanchez996 en HuggingFace bajo la librería `microduck`, y se deriva de un walker preentrenado de Pollen sobre el que se ha aplicado un ajuste fino con recompensas de sprint.
+microduck-sock-heist-6m-run-1101-1520 es una política de control entrenada mediante aprendizaje por refuerzo (PPO) para el robot cuadrúpedo microduck de Pollen Robotics. No es un modelo de lenguaje ni un modelo fundacional generativo: es un artefacto de robótica empaquetado en formato ONNX que implementa una política de locomoción "perpetua" a 50 Hz, con 61 dimensiones de observación y 14 acciones de control. Lo publica el usuario RSanchez996 en Hugging Face bajo la librería `microduck`, y se deriva de un walker preentrenado de Pollen sobre el que se ha aplicado un ajuste fino con recompensas de sprint.
 
 El objetivo concreto de esta política es resolver una tarea de tipo "sock heist" (carrera con semáforo): el robot debe esprintar en verde y detenerse de forma segura en rojo. Tras 1500 iteraciones de entrenamiento con 4096 entornos paralelos, el autor reporta un tiempo de 8,595 s en 5 de 5 ejecuciones, lo que supone una mejora del 8,31 % respecto a la mejor política anterior. Es relevante ahora porque forma parte de un ecosistema emergente de políticas robóticas reutilizables y cargables en caliente mediante el daemon `robotctl`, un patrón de despliegue que simplifica la experimentación en robótica de bajo coste.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks estandarizados (tipo MMLU, HumanEva
 
 | Modelo | Tipo | Parametros | Contexto / observacion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| microduck-sock-heist-6m-run-1101-1520 | Política RL (PPO) para microduck | no disponible | 61 obs / 14 acciones a 50 Hz | 8,595 s en tarea sock heist (5/5) | no disponible | HuggingFace (`RSanchez996`) |
+| microduck-sock-heist-6m-run-1101-1520 | Política RL (PPO) para microduck | no disponible | 61 obs / 14 acciones a 50 Hz | 8,595 s en tarea sock heist (5/5) | no disponible | Hugging Face (`RSanchez996`) |
 | Walker preentrenado de Pollen (base) | Política RL para microduck | no disponible | Entorno microduck | No disponible en la información proporcionada | no disponible | Ecosistema Pollen Robotics |
 | Políticas previas del mismo autor en `microduck-challenges` | Políticas RL para microduck | no disponible | Entorno microduck | Referencia de mejora del 8,31 % | no disponible | Repositorio GitHub del autor |
 
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para comparar con políticas de otros autores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1101-1520
+- Modelo en Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-run-1101-1520
 - Repositorio de retos y entrenamiento: https://github.com/RSanchez996/microduck-challenges.git
 - Repositorio de microduck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas (`docs/policy-manifest.md` en el repositorio del daemon): no disponible como URL directa en la información proporcionada.

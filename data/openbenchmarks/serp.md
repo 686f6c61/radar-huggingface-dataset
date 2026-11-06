@@ -66,8 +66,8 @@ No disponible. No existe una categoría de "modelos" comparable, ya que este rep
 
 ## Enlaces
 
-- [HuggingFace - openbenchmarks/serp](https://huggingface.co/openbenchmarks/serp)
+- [Hugging Face - openbenchmarks/serp](https://huggingface.co/openbenchmarks/serp)
 - [Documentación de la API google-search74 en RapidAPI](https://rapidapi.com/herosAPI/api/google-search74)
 - [Benchmark Web Search de OpenBenchmarks en GitHub](https://github.com/openbenchmarks-labs/web-search)
 - [Sitio web de OpenBenchmarks](https://openbenchmarks.com/)
-- [Leaderboard de OpenBenchmarks en HuggingFace (OB-News-Websearch)](https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch)
+- [Leaderboard de OpenBenchmarks en Hugging Face (OB-News-Websearch)](https://huggingface.co/datasets/openbenchmarks/OB-News-Websearch)

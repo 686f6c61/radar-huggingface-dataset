@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de otros modelos de segmentacion de nubes e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/isp-uv-es/FDR4VGT-CLOUD
+- Modelo en Hugging Face: https://huggingface.co/isp-uv-es/FDR4VGT-CLOUD
 - Dataset de ejemplo (escena Proba-V): https://huggingface.co/datasets/isp-uv-es/ProbaV-SPOT
 - Repositorio de codigo: https://github.com/IPL-UV/fdr4vgt-cloud
 - Notebook de inicio rapido (GitHub): https://github.com/IPL-UV/fdr4vgt-cloud/blob/main/notebooks/01_quickstart.ipynb

@@ -89,7 +89,7 @@ No se dispone de datos comparativos de rendimiento en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace de las cuantizaciones: https://huggingface.co/mradermacher/Cedar-GRPO-Qwen2.5-Math-1.5B-GGUF
+- Repositorio Hugging Face de las cuantizaciones: https://huggingface.co/mradermacher/Cedar-GRPO-Qwen2.5-Math-1.5B-GGUF
 - Pagina resumen de mradermacher para este modelo: https://hf.tst.eu/model#Cedar-GRPO-Qwen2.5-Math-1.5B-GGUF
 - Modelo base del ajuste: https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-Math-1.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Cedar-GRPO-DAPO-Math-17k

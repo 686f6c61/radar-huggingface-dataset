@@ -77,7 +77,7 @@ La comparativa se limita a los datos disponibles. El modelo base Qwen3.8-27B es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Madras1/Qwen3.8-27B-Abliterated-Uncensored
+- Modelo en Hugging Face: https://huggingface.co/Madras1/Qwen3.8-27B-Abliterated-Uncensored
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo similar huihui-ai/Huihui-Qwen3.8-27B-abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Papers, blogs o demos adicionales: no disponible.

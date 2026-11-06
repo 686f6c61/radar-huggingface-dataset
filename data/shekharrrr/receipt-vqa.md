@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`shekharrrr/receipt-vqa` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `shekharrrr`, entrenado sobre el modelo base `HuggingFaceTB/SmolVLM-500M-Instruct`. Se trata por tanto de un ajuste fino parametrizado eficiente, no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador en formato safetensors, no los pesos del modelo base. Su nombre, "receipt-vqa", sugiere que el ajuste esta orientado a tareas de respuesta visual a preguntas (VQA) sobre recibos o tickets de compra, aunque la model card no documenta el dataset ni el objetivo de forma explicita.
+`shekharrrr/receipt-vqa` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `shekharrrr`, entrenado sobre el modelo base `HuggingFaceTB/SmolVLM-500M-Instruct`. Se trata por tanto de un ajuste fino parametrizado eficiente, no de un modelo completo: el repositorio contiene unicamente los pesos del adaptador en formato safetensors, no los pesos del modelo base. Su nombre, "receipt-vqa", sugiere que el ajuste esta orientado a tareas de respuesta visual a preguntas (VQA) sobre recibos o tickets de compra, aunque la model card no documenta el dataset ni el objetivo de forma explicita.
 
-El modelo subyacente, SmolVLM-500M-Instruct, es un modelo vision-lenguaje pequeno desarrollado por HuggingFace que combina un codificador visual SigLIP con un decodificador de lenguaje de la familia SmolLM2. Al ser un adaptador LoRA, el resultado es un checkpoint muy ligero que requiere cargar el modelo base para poder ejecutarse, y modifica un subconjunto de parametros de las capas atencionales y de proyeccion.
+El modelo subyacente, SmolVLM-500M-Instruct, es un modelo vision-lenguaje pequeno desarrollado por Hugging Face que combina un codificador visual SigLIP con un decodificador de lenguaje de la familia SmolLM2. Al ser un adaptador LoRA, el resultado es un checkpoint muy ligero que requiere cargar el modelo base para poder ejecutarse, y modifica un subconjunto de parametros de las capas atencionales y de proyeccion.
 
-La relevancia de esta ficha es limitada: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, el repositorio ocupa 0.0 GB y la model card es la plantilla estandar de HuggingFace sin rellenar, con casi todos los campos marcados como "[More Information Needed]". No hay paper, demo, dataset ni resultados de evaluacion publicados.
+La relevancia de esta ficha es limitada: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, el repositorio ocupa 0.0 GB y la model card es la plantilla estandar de Hugging Face sin rellenar, con casi todos los campos marcados como "[More Information Needed]". No hay paper, demo, dataset ni resultados de evaluacion publicados.
 
 ## Especificaciones tecnicas
 
@@ -90,7 +90,7 @@ No disponible. No se han publicado datos de rendimiento del adaptador que permit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shekharrrr/receipt-vqa
+- Hugging Face: https://huggingface.co/shekharrrr/receipt-vqa
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Referencia de la plantilla (calculo de emisiones, no tecnica del modelo): https://arxiv.org/abs/1910.09700
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

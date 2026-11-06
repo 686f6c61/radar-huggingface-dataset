@@ -77,8 +77,8 @@ El autor indica que ningun item de JevBench, publico o reservado, se utilizo par
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tdelab/tde-qwen3.5-4b-v0.1 | 4,2B | Estado hasta 32.768 tokens en el runtime decider-ai | JevBench 184/231; accuracy 0,773 y Brier 0,115 en typed-decisions test | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen3.5-4B (base) | ~4B | No disponible | No disponible | Apache-2.0 | HuggingFace |
+| tdelab/tde-qwen3.5-4b-v0.1 | 4,2B | Estado hasta 32.768 tokens en el runtime decider-ai | JevBench 184/231; accuracy 0,773 y Brier 0,115 en typed-decisions test | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen/Qwen3.5-4B (base) | ~4B | No disponible | No disponible | Apache-2.0 | Hugging Face |
 | Otros modelos de decision tipada comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de resultados del modelo base ni de alternativas equivalentes de decision tipada, por lo que no es posible establecer una comparacion cuantitativa de rendimiento entre ellos. La comparacion relevante es funcional: frente al modelo base, este ajuste cambia la interfaz de generacion de texto por una salida de probabilidad sobre opciones en una sola pasada.
@@ -98,7 +98,7 @@ No se dispone en la informacion proporcionada de resultados del modelo base ni d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tdelab/tde-qwen3.5-4b-v0.1
+- Modelo en Hugging Face: https://huggingface.co/tdelab/tde-qwen3.5-4b-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Repositorio Mapika/decider (mezcla de datos de decision): https://github.com/Mapika/decider
 - Repositorio e13ven-arch/tde (filas de opciones descritas generadas por reglas): https://github.com/e13ven-arch/tde

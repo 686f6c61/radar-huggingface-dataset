@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Orientacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SEX_ROLEPLAY.v4-3.2-1B | 1,5 B | 32.768 (según featherless; no confirmado en la model card) | Roleplay NSFW sin alinear | Apache 2.0 | HuggingFace, safetensors y GGUF |
-| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Asistente general con alineación | Llama 3.2 Community License | HuggingFace, amplio ecosistema de cuantizaciones |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 nativos (128.000 con YaRN) | Asistente general, fuerte en multilingual y código | Apache 2.0 | HuggingFace, GGUF, vLLM, Ollama |
-| google/gemma-2-2b-it | 2,61 B | 8.000 | Asistente general | Gemma Terms of Use | HuggingFace, GGUF, Ollama |
+| SEX_ROLEPLAY.v4-3.2-1B | 1,5 B | 32.768 (según featherless; no confirmado en la model card) | Roleplay NSFW sin alinear | Apache 2.0 | Hugging Face, safetensors y GGUF |
+| meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 | Asistente general con alineación | Llama 3.2 Community License | Hugging Face, amplio ecosistema de cuantizaciones |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 nativos (128.000 con YaRN) | Asistente general, fuerte en multilingual y código | Apache 2.0 | Hugging Face, GGUF, vLLM, Ollama |
+| google/gemma-2-2b-it | 2,61 B | 8.000 | Asistente general | Gemma Terms of Use | Hugging Face, GGUF, Ollama |
 
 Frente a los tres, este modelo sacrifica capacidades generales (razonamiento, matemáticas, código, *tool calling*) a cambio de un estilo conversacional explícito y de una ausencia total de rechazos. Para tareas de asistente conviene cualquiera de las alternativas; para roleplay sin restricciones, el Llama 3.2 1B Instruct base rechazará buena parte de las peticiones y los otros dos también. La ventaja en licencia es real: Apache 2.0 es más permisiva que la Llama 3.2 Community License y que los términos de Gemma, aunque la licencia no cubre la legalidad del contenido generado.
 
@@ -96,7 +96,7 @@ Frente a los tres, este modelo sacrifica capacidades generales (razonamiento, ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaCorp/SEX_ROLEPLAY.v4-3.2-1B
+- Modelo en Hugging Face: https://huggingface.co/NovaCorp/SEX_ROLEPLAY.v4-3.2-1B
 - Modelo base 1: https://huggingface.co/Nexesenex/Llama_3.2_1b_RandomLego_RP_R1_0.1
 - Modelo base 2: https://huggingface.co/UmbrellaInc/Prototype-Virus.FINAL-3.2-1B
 - Modelo base 3: https://huggingface.co/bunnycore/FuseChat-3.2-1B-Creative-RP

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de HuggingFace con el identificador `asfafq3f/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor reporta mejoras en tareas de matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
+MyAwesomeModel es un modelo de lenguaje presentado en un repositorio de Hugging Face con el identificador `asfafq3f/MyAwesomeModel-TestRepo`. Según la model card, se trata de una versión actualizada de un modelo previo que ha mejorado significativamente sus capacidades de razonamiento e inferencia mediante el uso de mayores recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El autor reporta mejoras en tareas de matemáticas, programación y lógica general, así como una reducción de la tasa de alucinación y un mejor soporte para function calling.
 
 El repositorio presenta características que sugieren que se trata de un modelo de prueba o demostración: no tiene descargas, ni likes, el tamaño del repositorio es de 0.0 GB y la fecha de creación es futura (2026). No se proporcionan datos técnicos fundamentales como arquitectura, número de parámetros, longitud de contexto o idiomas soportados. La model card incluye una tabla de benchmarks comparativos con modelos anónimos ("Model1", "Model2", "Model1-v2"), pero sin especificar la metodología ni los modelos de referencia. A pesar de estas limitaciones, se documentan recomendaciones de uso, como una temperatura sugerida de 0.6 y plantillas para subida de archivos y búsqueda web.
 
@@ -36,7 +36,7 @@ Según la model card, el modelo presenta las siguientes capacidades:
 - Capacidad para seguir instrucciones y mantener diálogos multi-turno.
 - Soporte de system prompt (no requiere tokens especiales para forzar un patrón de pensamiento).
 - Plantillas recomendadas para subida de archivos y búsqueda web mejorada.
-- El pipeline declarado en HuggingFace es `feature-extraction`, aunque la naturaleza del modelo parece ser generativa.
+- El pipeline declarado en Hugging Face es `feature-extraction`, aunque la naturaleza del modelo parece ser generativa.
 
 ## Casos de uso
 
@@ -93,5 +93,5 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/asfafq3f/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/asfafq3f/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repositorios de código, demos) en la información disponible.

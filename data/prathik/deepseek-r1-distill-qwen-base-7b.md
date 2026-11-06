@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Prathik/DeepSeek-R1-Distill-Qwen-Base-7B` es un checkpoint de 7.615.616.512 parametros (~7,6 B) publicado en HuggingFace por el usuario Prathik. Por el identificador y por el tag `qwen2` del repositorio, se trata de un modelo de la familia Qwen2 sobre el que se habria aplicado un proceso de destilacion a partir de DeepSeek-R1, siguiendo el patron de los modelos "R1-Distill" publicados por DeepSeek. El sufijo "Base" sugiere que el punto de partida seria un modelo base (no una variante instruct), aunque la model card no confirma ninguno de estos extremos: es una plantilla autogenerada por el Hub, sin secciones completadas.
+`Prathik/DeepSeek-R1-Distill-Qwen-Base-7B` es un checkpoint de 7.615.616.512 parametros (~7,6 B) publicado en Hugging Face por el usuario Prathik. Por el identificador y por el tag `qwen2` del repositorio, se trata de un modelo de la familia Qwen2 sobre el que se habria aplicado un proceso de destilacion a partir de DeepSeek-R1, siguiendo el patron de los modelos "R1-Distill" publicados por DeepSeek. El sufijo "Base" sugiere que el punto de partida seria un modelo base (no una variante instruct), aunque la model card no confirma ninguno de estos extremos: es una plantilla autogenerada por el Hub, sin secciones completadas.
 
 El repositorio es practicamente un artefacto de pesos sin documentacion asociada. La model card no declara autor efectivo, datos de entrenamiento, licencia, idiomas ni resultados de evaluacion, y el propio Hub registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad ni trazabilidad del proceso de destilacion. La relevancia de esta ficha es, por tanto, fundamentalmente informativa: sirve para saber que existe el checkpoint, que es tecnicamente cargable con `transformers` y que adolece de las garantias minimas exigibles a un modelo destinado a produccion.
 
@@ -30,7 +30,7 @@ La busqueda web asociada no devolvio ningun resultado relacionado con el modelo 
 
 No hay informacion sobre la arquitectura en la model card, que se limita a la plantilla estandar del Hub con todos los campos marcados como `[More Information Needed]`. Los unicos indicios disponibles son los tags del repositorio: `qwen2`, `transformers`, `safetensors`, `4-bit`, `bitsandbytes`, `text-generation-inference` y `endpoints_compatible`. El tag `qwen2` apunta a una arquitectura transformer decoder-only con atencion causal, normalizacion RMSNorm y tokenizador BPE de Qwen, pero se trata de una inferencia basada en el tag, no de un dato confirmado por el autor. El recuento de parametros (7.615.616.512) coincide con el orden de magnitud de los modelos Qwen2 de 7 B, lo que es coherente con esa lectura.
 
-Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo fases de RLHF, DPO o ajuste supervisado, y que checkpoint concreto de DeepSeek-R1 actuo como profesor en la destilacion. El nombre del repositorio indica que se uso la tecnica de destilacion de DeepSeek-R1 (el procedimiento con el que DeepSeek transfiere las capacidades de razonamiento de su modelo de 671 B a modelos densos mas pequenos), pero no se documenta la receta, la temperatura de muestreo de las trazas de razonamiento ni el numero de ejemplos de destilacion empleados. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia al calculador de impacto medioambiental citada en la plantilla por defecto de HuggingFace.
+Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens utilizados, la composicion del dataset, si hubo fases de RLHF, DPO o ajuste supervisado, y que checkpoint concreto de DeepSeek-R1 actuo como profesor en la destilacion. El nombre del repositorio indica que se uso la tecnica de destilacion de DeepSeek-R1 (el procedimiento con el que DeepSeek transfiere las capacidades de razonamiento de su modelo de 671 B a modelos densos mas pequenos), pero no se documenta la receta, la temperatura de muestreo de las trazas de razonamiento ni el numero de ejemplos de destilacion empleados. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia al calculador de impacto medioambiental citada en la plantilla por defecto de Hugging Face.
 
 ## Capacidades
 
@@ -98,6 +98,6 @@ Los datos de las alternativas proceden de la documentacion publica de cada model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Prathik/DeepSeek-R1-Distill-Qwen-Base-7B
+- Repositorio en Hugging Face: https://huggingface.co/Prathik/DeepSeek-R1-Distill-Qwen-Base-7B
 - Referencia citada en los tags (calculador de impacto, Lacoste et al. 2019): https://arxiv.org/abs/1910.09700
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo; los resultados obtenidos correspondian a un servicio de television en streaming y no guardan relacion con el checkpoint.

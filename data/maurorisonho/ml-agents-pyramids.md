@@ -25,7 +25,7 @@ Datos adicionales del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | maurorisonho/ml-agents-Pyramids |
+| ID en Hugging Face | maurorisonho/ml-agents-Pyramids |
 | Autor | maurorisonho |
 | Pipeline declarado | reinforcement-learning |
 | Libreria | ml-agents |
@@ -57,7 +57,7 @@ No se especifican en la informacion proporcionada el algoritmo de optimizacion e
 - Reproduccion de resultados del curso de Deep RL de Hugging Face: el artefacto sirve para verificar el entrenamiento de un agente Pyramids y comparar el `mean_reward` obtenido con el umbral de resolucion del entorno.
 - Linea base en experimentos de RL: utilizar el agente como referencia inicial frente a nuevas variantes de politica entrenadas sobre el mismo entorno Unity.
 - Ajuste de hiperparametros con ML-Agents: partir de una configuracion conocida y medir el impacto de cambios en learning rate, batch size o arquitectura de red sobre la recompensa media.
-- Docencia de aprendizaje por refuerzo: emplear el agente como ejemplo funcional de un pipeline completo (entorno Unity, entrenamiento con ml-agents, publicacion en HuggingFace) en un aula o taller.
+- Docencia de aprendizaje por refuerzo: emplear el agente como ejemplo funcional de un pipeline completo (entorno Unity, entrenamiento con ml-agents, publicacion en Hugging Face) en un aula o taller.
 - Validacion de pipelines de inferencia: comprobar la integracion de un modelo ML-Agents en herramientas de evaluacion o en entornos de despliegue antes de escalar a agentes mas complejos.
 - Investigacion sobre transferencia: probar si una politica entrenada en Pyramids conserva rendimiento al variar parametros del entorno (posicion inicial, masas, friccion) como paso previo a estudios de sim2real.
 - Comparacion de algoritmos de RL: usar el agente como punto de partida para contrastar PPO frente a alternativas en el mismo entorno, siempre que se documenten las condiciones de entrenamiento.
@@ -86,7 +86,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maurorisonho/ml-agents-Pyramids | no disponible | no aplicable | mean_reward 50.0 +/- 5.0 (no verificado) | no disponible | HuggingFace |
+| maurorisonho/ml-agents-Pyramids | no disponible | no aplicable | mean_reward 50.0 +/- 5.0 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no aplicable | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maurorisonho/ml-agents-Pyramids
+- Hugging Face: https://huggingface.co/maurorisonho/ml-agents-Pyramids
 - Curso de Deep Reinforcement Learning de Hugging Face (mencionado en la model card): https://huggingface.co/learn/deep-rl-course
 - Unity ML-Agents (libreria declarada): https://github.com/Unity-Technologies/ml-agents
 - Documentacion del entorno Pyramids en ML-Agents: https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Learning-Environment-Examples.md#pyramids

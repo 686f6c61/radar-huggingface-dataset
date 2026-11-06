@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rajurk11/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo Deep Q-Learning (DQN) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario rajurk11 en HuggingFace como parte del curso Deep RL Course de HuggingFace, con la libreria Stable-Baselines3 como marco de implementacion. No se trata de un modelo de lenguaje: es una politica entrenada para mapear observaciones del entorno (frames del juego) a acciones discretas (mover, disparar), con el objetivo de maximizar la recompensa acumulada.
+El modelo `rajurk11/dqn-SpaceInvadersNoFrameskip-v4` es un agente de aprendizaje por refuerzo profundo entrenado con el algoritmo Deep Q-Learning (DQN) sobre el entorno de Atari `SpaceInvadersNoFrameskip-v4`. Lo publica el usuario rajurk11 en Hugging Face como parte del curso Deep RL Course de Hugging Face, con la libreria Stable-Baselines3 como marco de implementacion. No se trata de un modelo de lenguaje: es una politica entrenada para mapear observaciones del entorno (frames del juego) a acciones discretas (mover, disparar), con el objetivo de maximizar la recompensa acumulada.
 
 El resultado declarado por el autor es una recompensa media de 380,00 +/- 40,00, muy por encima del umbral de aprobado del curso fijado en 200. Este valor se obtuvo sin verificacion independiente (`verified: false` en el model-index), por lo que debe considerarse una cifra autoinformada. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y no se especifica licencia, idiomas ni tamano real de los pesos (el campo de tamano del repo figura como 0.0 GB).
 
@@ -79,7 +79,7 @@ No se dispone de datos comparativos en la informacion proporcionada. No se han p
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento declarado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rajurk11/dqn-SpaceInvadersNoFrameskip-v4 | no disponible | observacion del entorno Atari (no aplica contexto de texto) | mean_reward 380,00 +/- 40,00 (no verificado) | no disponible | publico en HuggingFace, 0 descargas |
+| rajurk11/dqn-SpaceInvadersNoFrameskip-v4 | no disponible | observacion del entorno Atari (no aplica contexto de texto) | mean_reward 380,00 +/- 40,00 (no verificado) | no disponible | publico en Hugging Face, 0 descargas |
 | Alternativas comparables (otros agentes DQN/PPO del Deep RL Course sobre el mismo entorno) | no disponible | no disponible | no disponible | no disponible | no se dispone de datos en la informacion proporcionada |
 
 Cualquier comparacion cuantitativa requeriria ejecutar los agentes alternativos bajo el mismo protocolo de evaluacion, con el mismo numero de episodios y las mismas semillas, algo que no puede derivarse de la informacion disponible.
@@ -98,7 +98,7 @@ Cualquier comparacion cuantitativa requeriria ejecutar los agentes alternativos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rajurk11/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/rajurk11/dqn-SpaceInvadersNoFrameskip-v4
 - Hugging Face Deep RL Course (mencionado en la model card como contexto de entrenamiento): https://huggingface.co/learn/deep-rl-course
 - Stable-Baselines3 (libreria declarada del modelo): https://github.com/DLR-RM/stable-baselines3
 - Documentacion de Stable-Baselines3 sobre DQN: https://stable-baselines3.readthedocs.io/en/master/modules/dqn.html

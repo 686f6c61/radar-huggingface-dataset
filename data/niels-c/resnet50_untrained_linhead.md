@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`niels-c/resnet50_untrained_linhead` es un modelo de visión artificial publicado en HuggingFace por Niels Thiemann (usuario `niels-c`) que consiste en una ResNet-50 con inicialización aleatoria (nunca entrenada) sobre la que se ha entrenado únicamente una cabeza lineal de clasificación para ImageNet-1k. No es un modelo destinado a uso productivo: es un *baseline* experimental diseñado para medir cuánto de una puntuación de Brain-Score puede explicarse por la arquitectura sola, sin aprendizaje de representaciones.
+`niels-c/resnet50_untrained_linhead` es un modelo de visión artificial publicado en Hugging Face por Niels Thiemann (usuario `niels-c`) que consiste en una ResNet-50 con inicialización aleatoria (nunca entrenada) sobre la que se ha entrenado únicamente una cabeza lineal de clasificación para ImageNet-1k. No es un modelo destinado a uso productivo: es un *baseline* experimental diseñado para medir cuánto de una puntuación de Brain-Score puede explicarse por la arquitectura sola, sin aprendizaje de representaciones.
 
 El modelo forma parte del proyecto neuro-jepas, que compara arquitecturas de tipo joint-embedding predictive (JEPA) y otros modelos auto-supervisados en su similitud con el sistema visual de primates. La ResNet-50 sin entrenar actúa como referencia inferior: si un modelo auto-supervisado no supera a esta arquitectura con pesos aleatorios en las métricas neuronales y de comportamiento de Brain-Score, su ventaja no puede atribuirse al aprendizaje.
 
@@ -69,7 +69,7 @@ No se han publicado en la información disponible resultados numéricos de Brain
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `niels-c/resnet50_untrained_linhead` | 25,56 M | 224 × 224 RGB | 2,9 % top-1 en ImageNet-1k | MIT | HuggingFace |
+| `niels-c/resnet50_untrained_linhead` | 25,56 M | 224 × 224 RGB | 2,9 % top-1 en ImageNet-1k | MIT | Hugging Face |
 | ResNet-50 preentrenada en ImageNet-1k (torchvision) | 25,56 M | 224 × 224 RGB | ~76 % top-1 (referencia estándar de la arquitectura, no medida en esta ficha) | BSD-3-Clause (torchvision) | torchvision |
 | Otros modelos del proyecto neuro-jepas (JEPA y auto-supervisados) | no disponible | no disponible | no disponible | no disponible | GitHub `neuro-jepas-submissions` |
 
@@ -88,7 +88,7 @@ La comparación relevante es con la ResNet-50 preentrenada de la misma arquitect
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/niels-c/resnet50_untrained_linhead
+- Hugging Face: https://huggingface.co/niels-c/resnet50_untrained_linhead
 - Repositorio del plugin Brain-Score: https://github.com/niels-c/neuro-jepas-submissions
 - Código de entrenamiento: https://github.com/niels-c/neuro-jepas
 - Plugin específico: https://github.com/niels-c/neuro-jepas-submissions/tree/main/models/resnet50_untrained_linhead

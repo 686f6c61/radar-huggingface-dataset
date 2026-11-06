@@ -83,6 +83,6 @@ La comparación cuantitativa con Whisper u otros sistemas ASR no puede realizars
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/fncsftya/granite-speech-5.0-2b-mlx-4bit)
+- [Modelo en Hugging Face](https://huggingface.co/fncsftya/granite-speech-5.0-2b-mlx-4bit)
 - [Modelo base ibm-granite/granite-speech-5.0-2b](https://huggingface.co/ibm-granite/granite-speech-5.0-2b)
 - [MLX Audio (GitHub)](https://github.com/Blaizzy/mlx-audio)

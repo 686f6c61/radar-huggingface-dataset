@@ -84,8 +84,8 @@ No se dispone de información sobre modelos TTS comparables en la documentación
 
 | Variante | Tamano | Error vs fuente | Licencia | Disponibilidad |
 |---|---:|---:|---|---|
-| Pollard 8.0bpw | 1577 MB | +0,0248 | no disponible | HuggingFace (PollardWeights) |
-| Pollard 6.4bpw | 1391 MB | +0,0397 | no disponible | HuggingFace (PollardWeights) |
+| Pollard 8.0bpw | 1577 MB | +0,0248 | no disponible | Hugging Face (PollardWeights) |
+| Pollard 6.4bpw | 1391 MB | +0,0397 | no disponible | Hugging Face (PollardWeights) |
 | audio.cpp q8_0 | 1742 MB | +0,0253 | no disponible | Fuera de este repositorio |
 
 Comparativa con otras familias TTS: no disponible.
@@ -103,7 +103,7 @@ Comparativa con otras familias TTS: no disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PollardWeights/Ming-3.0-tts-0.5B-Pollard
+- Repositorio Hugging Face: https://huggingface.co/PollardWeights/Ming-3.0-tts-0.5B-Pollard
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-tts-0.5B
 - Motor de inferencia audio.cpp: https://github.com/0xShug0/audio.cpp
 - Herramienta Pollard Weights: https://github.com/WestWaters/pollard-weights

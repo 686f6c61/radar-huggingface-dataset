@@ -41,7 +41,7 @@ El entrenamiento se realizó mediante el RL Zoo, que aplica el envoltorio `Atari
 - Educacion y formacion en RL: se puede cargar con el RL Zoo y hacer que los estudiantes observen el comportamiento del agente, visualizando la politica aprendida en el entorno de Atari.
 - Pruebas de robustez de visual wrappers: el modelo permite experimentar con distintos preprocesamientos de imagen, como cambios en el rezago de fotogramas o en el frame stacking, comparando la recompensa media.
 - Desarrollo de tecnicas de exploracion: dado su esquema de exploracion epsilon-greedy, es un buen candidato para probar modificaciones de exploracion (por ejemplo, curiosidad, NoisyNet) y medir su impacto sobre el rendimiento.
-- Validacion de herramientas de RL Zoo: la model card documenta su uso con `rl_zoo3.enjoy`, por lo que puede utilizarse para comprobar que una instalacion de RL Zoo funciona correctamente con modelos subidos a HuggingFace.
+- Validacion de herramientas de RL Zoo: la model card documenta su uso con `rl_zoo3.enjoy`, por lo que puede utilizarse para comprobar que una instalacion de RL Zoo funciona correctamente con modelos subidos a Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -61,7 +61,7 @@ El modelo incluye un unico benchmark declarado por el autor, sin verificacion in
 
 ## Comparativa con modelos similares
 
-La informacion disponible no incluye comparaciones con otros agentes. Existen en HuggingFace otros modelos DQN y PPO entrenados en SpaceInvadersNoFrameskip-v4, pero no se proporcionan los valores de recompensa de esos modelos en la documentacion suministrada. Por tanto, no es posible realizar una comparativa cuantitativa. Se recomienda consultar la seccion de modelos similares en el hub de HuggingFace para obtener alternativas.
+La informacion disponible no incluye comparaciones con otros agentes. Existen en Hugging Face otros modelos DQN y PPO entrenados en SpaceInvadersNoFrameskip-v4, pero no se proporcionan los valores de recompensa de esos modelos en la documentacion suministrada. Por tanto, no es posible realizar una comparativa cuantitativa. Se recomienda consultar la seccion de modelos similares en el hub de Hugging Face para obtener alternativas.
 
 ## Limitaciones y advertencias
 
@@ -74,7 +74,7 @@ La informacion disponible no incluye comparaciones con otros agentes. Existen en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KavyaChinta05/dqn-SpaceInvadersNoFrameskip-v4
+- Modelo en Hugging Face: https://huggingface.co/KavyaChinta05/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo (Stable-Baselines3): https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - SB3 Contrib: https://github.com/Stable-Baselines-Team/stable-baselines3-contrib

@@ -97,7 +97,7 @@ Nota: los datos de Qwen3-8B, Llama 3.1 8B y Mistral 7B corresponden a especifica
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen-Writer-9B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen-Writer-9B-i1-GGUF
 - Modelo base: https://huggingface.co/ConicCat/Qwen-Writer-9B
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/Qwen-Writer-9B-GGUF
 - Página resumen y lista de descargas del autor: https://hf.tst.eu/model#Qwen-Writer-9B-i1-GGUF

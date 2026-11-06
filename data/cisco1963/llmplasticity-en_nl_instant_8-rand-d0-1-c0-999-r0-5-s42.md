@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo identificado como `Cisco1963/llmplasticity-en_nl_instant_8-rand-d0.1-c0.999-r0.5-s42` es un artefacto publicado en HuggingFace por el usuario Cisco1963. Por la nomenclatura del repositorio, todo apunta a un experimento de investigación sobre plasticidad en modelos de lenguaje (LLM plasticity) centrado en el par de idiomas inglés-neerlandés (`en_nl`), con una configuración concreta de hiperparámetros codificada en el nombre: factor de decaimiento `d0.1`, valor de `c0.999`, ratio `r0.5` y semilla `s42`. El sufijo `instant_8` sugiere una variante de instanciación o de número de pasos/épocas.
+El modelo identificado como `Cisco1963/llmplasticity-en_nl_instant_8-rand-d0.1-c0.999-r0.5-s42` es un artefacto publicado en Hugging Face por el usuario Cisco1963. Por la nomenclatura del repositorio, todo apunta a un experimento de investigación sobre plasticidad en modelos de lenguaje (LLM plasticity) centrado en el par de idiomas inglés-neerlandés (`en_nl`), con una configuración concreta de hiperparámetros codificada en el nombre: factor de decaimiento `d0.1`, valor de `c0.999`, ratio `r0.5` y semilla `s42`. El sufijo `instant_8` sugiere una variante de instanciación o de número de pasos/épocas.
 
 La información pública disponible es mínima: el repositorio cuenta con 15 descargas, 0 likes y no declara pipeline, licencia ni idiomas soportados en los metadatos. No se ha publicado documentación técnica, model card descriptiva ni resultados de evaluación asociados al artefacto.
 
-Por tanto, esta ficha debe interpretarse como una descripción del artefacto tal y como aparece en HuggingFace, sin poder confirmar arquitectura, tamaño, contexto ni capacidades reales. Es relevante únicamente como posible material de investigación reproducible para quienes sigan la línea de trabajo sobre plasticidad de LLM y traducción/adaptación inglés-neerlandés.
+Por tanto, esta ficha debe interpretarse como una descripción del artefacto tal y como aparece en Hugging Face, sin poder confirmar arquitectura, tamaño, contexto ni capacidades reales. Es relevante únicamente como posible material de investigación reproducible para quienes sigan la línea de trabajo sobre plasticidad de LLM y traducción/adaptación inglés-neerlandés.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha debe interpretarse como una descripción del artefacto tal
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo en los metadatos de HuggingFace. El nombre del repositorio sugiere un experimento sobre plasticidad de modelos de lenguaje aplicado al par inglés-neerlandés, con hiperparámetros concretos (decaimiento 0.1, constante 0.999, ratio 0.5, semilla 42) y una variante etiquetada como `instant_8`. No obstante, no hay documentación que confirme si se trata de un transformer, un modelo híbrido o una adaptación mediante técnicas de continued pretraining o fine-tuning.
+No se ha publicado información sobre la arquitectura del modelo en los metadatos de Hugging Face. El nombre del repositorio sugiere un experimento sobre plasticidad de modelos de lenguaje aplicado al par inglés-neerlandés, con hiperparámetros concretos (decaimiento 0.1, constante 0.999, ratio 0.5, semilla 42) y una variante etiquetada como `instant_8`. No obstante, no hay documentación que confirme si se trata de un transformer, un modelo híbrido o una adaptación mediante técnicas de continued pretraining o fine-tuning.
 
 Tampoco se dispone de datos sobre volumen de tokens de entrenamiento, composición del dataset, uso de RLHF/DPO ni innovaciones técnicas asociadas. Toda la información relativa al proceso de entrenamiento debe considerarse no disponible.
 
@@ -42,7 +42,7 @@ Tampoco se dispone de datos sobre volumen de tokens de entrenamiento, composici�
 - Adaptación lingüística inglés-neerlandés: si el modelo confirma su orientación bilingüe, podría emplearse como base para tareas de traducción o adaptación de dominio entre ambos idiomas, previa validación empírica.
 - Estudio de sensibilidad a hiperparámetros: la nomenclatura explícita permite comparar esta variante con otras del mismo autor que difieran en `d`, `c`, `r` o semilla.
 - Docencia y experimentación académica: útil en cursos o talleres sobre plasticidad, catastrophic forgetting o ajuste fino controlado.
-- Análisis de artefactos de investigación: como caso de estudio sobre la importancia de documentar model cards y metadatos en publicaciones de HuggingFace.
+- Análisis de artefactos de investigación: como caso de estudio sobre la importancia de documentar model cards y metadatos en publicaciones de Hugging Face.
 
 En todos los casos, el uso en producción requeriría una evaluación previa del checkpoint, ya que no hay información pública sobre su rendimiento real.
 
@@ -74,4 +74,4 @@ No disponible. No se conocen modelos comparables publicados bajo la misma línea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cisco1963/llmplasticity-en_nl_instant_8-rand-d0.1-c0.999-r0.5-s42
+- Hugging Face: https://huggingface.co/Cisco1963/llmplasticity-en_nl_instant_8-rand-d0.1-c0.999-r0.5-s42

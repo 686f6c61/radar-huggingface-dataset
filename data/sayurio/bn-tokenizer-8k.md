@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sayurio/bn-tokenizer-8k` es un artefacto publicado en HuggingFace por el usuario `sayurio` bajo licencia Apache 2.0. Por el identificador y la ausencia de pesos o pipeline declarado, se trata de un tokenizador (no de un modelo de lenguaje completo) orientado presumiblemente al bengalí (`bn`), con un vocabulario de aproximadamente 8.000 tokens (8k). No se ha publicado información adicional en la model card: esta se limita a la declaración de licencia.
+`sayurio/bn-tokenizer-8k` es un artefacto publicado en Hugging Face por el usuario `sayurio` bajo licencia Apache 2.0. Por el identificador y la ausencia de pesos o pipeline declarado, se trata de un tokenizador (no de un modelo de lenguaje completo) orientado presumiblemente al bengalí (`bn`), con un vocabulario de aproximadamente 8.000 tokens (8k). No se ha publicado información adicional en la model card: esta se limita a la declaración de licencia.
 
 El repositorio no incluye pipeline declarado, no especifica idiomas soportados de forma explícita y no presenta métricas, datos de entrenamiento ni documentación técnica. El número de descargas y de "likes" es cero en el momento de la consulta, y las fechas de creación y actualización (30 de octubre de 2026) indican una publicación reciente y sin tracción comunitaria.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | sayurio/bn-tokenizer-8k | Tokenizador | ~8k | no disponible (presumiblemente bengalí) | Apache 2.0 | Mínima (solo licencia) |
 | Tokenizadores multilingües de modelos abiertos (p. ej. familias tipo Llama o Mistral) | Tokenizador | 32k-128k | Multilingüe | Licencias variables | Model cards detalladas |
-| Tokenizadores específicos por idioma publicados en HuggingFace | Tokenizador | Variable | Monolingüe | Variables | Variable |
+| Tokenizadores específicos por idioma publicados en Hugging Face | Tokenizador | Variable | Monolingüe | Variables | Variable |
 
 No se dispone de datos de rendimiento ni de evaluaciones comparativas para establecer una comparación cuantitativa con alternativas concretas.
 
@@ -82,5 +82,5 @@ No se dispone de datos de rendimiento ni de evaluaciones comparativas para estab
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sayurio/bn-tokenizer-8k
+- Hugging Face: https://huggingface.co/sayurio/bn-tokenizer-8k
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información proporcionada.

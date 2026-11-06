@@ -2,7 +2,7 @@
 
 ## Resumen
 
-pi05-shuffle-status-d (identificador completo `fm-dev/pi05-shuffle-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step1400`) es un punto de control de politicas de robotica publicado por el usuario fm-dev en HuggingFace. Se trata de un ajuste fino de parametros completos (full fine-tuning) del modelo pi0.5 (etiquetado como pi05), inicializado a partir de los pesos EMA de inferencia del paso 12500 de un entrenamiento previo, con un optimizador AdamW, EMA y sampler reiniciados desde cero. El resultado es el paso de optimizador 1400, alcanzado tras 100 epocas adicionales de sampler sobre el split de entrenamiento procesado.
+pi05-shuffle-status-d (identificador completo `fm-dev/pi05-shuffle-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step1400`) es un punto de control de politicas de robotica publicado por el usuario fm-dev en Hugging Face. Se trata de un ajuste fino de parametros completos (full fine-tuning) del modelo pi0.5 (etiquetado como pi05), inicializado a partir de los pesos EMA de inferencia del paso 12500 de un entrenamiento previo, con un optimizador AdamW, EMA y sampler reiniciados desde cero. El resultado es el paso de optimizador 1400, alcanzado tras 100 epocas adicionales de sampler sobre el split de entrenamiento procesado.
 
 El modelo pertenece a la familia de politicas vision-lenguaje-accion (VLA) de openpi y esta orientado a control robotico sobre un brazo Franka. No es un modelo de lenguaje general: su entrada combina imagenes de camara base y estado del robot en coordenadas absolutas XYZ, cuaterniones XYZW y un valor `gripper_open`, y su salida es un tensor de forma `(20, 8)` que representa una ventana de 20 pasos de accion. La variante "shuffle / status_d" anade filas de estado (Status) repetidas a las filas de comportamiento, por lo que la longitud de epoca del sampler difiere de las variantes Baseline y Uniform32.
 
@@ -75,7 +75,7 @@ La model card menciona variantes hermanas del mismo linaje (Baseline y Uniform32
 
 | Modelo | Parametros | Contexto | Rendimiento offline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-shuffle-status-d (este) | no disponible | ventana de accion (20, 8) | validacion 0,03427 m / 0,11479 rad; test 0,05507 m / 0,13340 rad | no disponible | HuggingFace (0 descargas, 0 likes) |
+| pi05-shuffle-status-d (este) | no disponible | ventana de accion (20, 8) | validacion 0,03427 m / 0,11479 rad; test 0,05507 m / 0,13340 rad | no disponible | Hugging Face (0 descargas, 0 likes) |
 | Baseline (referencia interna) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Uniform32 (referencia interna) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,8 +98,8 @@ Comparativa con otras familias de politicas roboticas: no disponible en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fm-dev/pi05-shuffle-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step1400
-- Fichero de configuracion de entrenamiento: `training_config.json` (dentro del repositorio de HuggingFace)
+- Hugging Face: https://huggingface.co/fm-dev/pi05-shuffle-status-d-full-gbs64-pgb8-gpu8-r4-epoch100-step1400
+- Fichero de configuracion de entrenamiento: `training_config.json` (dentro del repositorio de Hugging Face)
 - Metadatos de politica: `assets/policy_metadata.json` (dentro del repositorio)
 - Manifiesto del dataset: `dataset_manifest.json` (dentro del repositorio)
 - Directorio del codificador de historial: `history_encoder/` (dentro del repositorio)

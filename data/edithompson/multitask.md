@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `edithompson/multitask` es una implementación de referencia de un "Tiny Transformer" orientada a tareas múltiples (multitask), publicada por el usuario edithompson en HuggingFace bajo licencia Apache 2.0. Se trata de un artefacto de código y configuración más que de un modelo entrenado: el repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe explícitamente como *checkpoint de inicialización* para pruebas de humo (smoke tests), no como un modelo con entrenamiento completado ni evaluado.
+El modelo `edithompson/multitask` es una implementación de referencia de un "Tiny Transformer" orientada a tareas múltiples (multitask), publicada por el usuario edithompson en Hugging Face bajo licencia Apache 2.0. Se trata de un artefacto de código y configuración más que de un modelo entrenado: el repositorio incluye `pipeline.py`, `config.json`, `training_args.json` y un `model.safetensors` que el propio autor describe explícitamente como *checkpoint de inicialización* para pruebas de humo (smoke tests), no como un modelo con entrenamiento completado ni evaluado.
 
 A pesar de la etiqueta "huge" en la model card, el recuento real de parámetros del archivo safetensors es de 24.832 (aproximadamente 24,8 mil). Esto confirma que se trata de un modelo de escala diminuta, apto como banco de pruebas para verificar pipelines de carga, ejecución y entrenamiento, no para producción. La arquitectura declarada combina attention con grouped query (GQA), fusión mediante cross attention, activación swish y normalización layernorm.
 
@@ -79,4 +79,4 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edithompson/multitask
+- Modelo en Hugging Face: https://huggingface.co/edithompson/multitask

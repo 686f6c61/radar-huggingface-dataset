@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AlinaKl/ljb-llama3.1-8b-syntax-mix
+- Repositorio Hugging Face: https://huggingface.co/AlinaKl/ljb-llama3.1-8b-syntax-mix
 - Artículo arXiv: https://arxiv.org/abs/2608.05409
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B

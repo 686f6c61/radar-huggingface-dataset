@@ -70,7 +70,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wqfang/fastgen-best | 93.746.051 | no aplica | FID local 36,3980 (1 NFE) y 22,4970 (4 NFE) | no disponible | HuggingFace, código privado |
+| wqfang/fastgen-best | 93.746.051 | no aplica | FID local 36,3980 (1 NFE) y 22,4970 (4 NFE) | no disponible | Hugging Face, código privado |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -84,11 +84,11 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos comparabl
 - Reentrenamiento no validado en GPU: los comandos portátiles están probados solo en CPU y no reproducen los FID publicados; además no repiten la selección histórica sobre el holdout interno.
 - Riesgo de alucinación y sesgos: no evaluados ni documentados; al ser un generador de imágenes de un dominio concreto, puede reproducir sesgos y artefactos del dataset de entrenamiento.
 - Idiomas: la etiqueta es `en`, pero el modelo no procesa texto; no hay soporte multilingüe relevante.
-- Sin garantías de producción: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en HuggingFace.
+- Sin garantías de producción: 0 descargas y 0 likes en el momento de la consulta, sin pipeline declarado en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wqfang/fastgen-best
+- Modelo en Hugging Face: https://huggingface.co/wqfang/fastgen-best
 - Código (privado): https://github.com/andy-wqfang/fastgen-team/tree/00ac44270f1a94887f61f404f551b8e947569b8a
 - Instrucciones de reproducción: https://github.com/andy-wqfang/fastgen-team/blob/00ac44270f1a94887f61f404f551b8e947569b8a/REPRODUCE_BEST.md
 - Paper RF-SiD: https://arxiv.org/abs/2509.25127

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dwnw/fineweb10bt-gpt2` es un checkpoint publicado en HuggingFace por el usuario `dwnw`. Por el nombre, parece tratarse de un modelo de tipo GPT-2 entrenado sobre el dataset FineWeb-10BT, una versión filtrada de FineWeb con 10 mil millones de tokens. Sin embargo, la model card es prácticamente vacía: solo incluye la licencia GPL-3.0 y no aporta ninguna especificación técnica ni documentación adicional. No se dispone de información sobre arquitectura, tamaño, contexto o capacidades.
+El modelo `dwnw/fineweb10bt-gpt2` es un checkpoint publicado en Hugging Face por el usuario `dwnw`. Por el nombre, parece tratarse de un modelo de tipo GPT-2 entrenado sobre el dataset FineWeb-10BT, una versión filtrada de FineWeb con 10 mil millones de tokens. Sin embargo, la model card es prácticamente vacía: solo incluye la licencia GPL-3.0 y no aporta ninguna especificación técnica ni documentación adicional. No se dispone de información sobre arquitectura, tamaño, contexto o capacidades.
 
 Aunque la etiqueta `license:gpl-3.0` y la referencia a FineWeb sugieren que es un modelo de lenguaje generativo, no hay datos verificables que permitan confirmar su arquitectura exacta ni su rendimiento. La ausencia de una model card completa, la falta de métricas y la inexistencia de descargas o valoraciones hacen que este checkpoint sea de utilidad limitada para la evaluación técnica rigurosa. La fecha de creación (2026-08-19) parece futura, lo que podría indicar un error en los metadatos o un modelo recién subido.
 

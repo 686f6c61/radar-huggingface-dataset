@@ -65,8 +65,8 @@ La evaluacion se realizo con 32 clientes sobre una unica GPU fisica, con batch d
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-libero-support-unified-v1a1 (este) | VLA / IDM ajustado | no disponible (repo 7,7 GB) | no disponible | Apache-2.0 | HuggingFace, 0 descargas |
-| pi05-libero-support-probe-source (modelo fuente, commit 2e35994) | VLA / IDM base del ajuste | no disponible | no disponible | no disponible en la informacion | HuggingFace |
+| pi05-libero-support-unified-v1a1 (este) | VLA / IDM ajustado | no disponible (repo 7,7 GB) | no disponible | Apache-2.0 | Hugging Face, 0 descargas |
+| pi05-libero-support-probe-source (modelo fuente, commit 2e35994) | VLA / IDM base del ajuste | no disponible | no disponible | no disponible en la informacion | Hugging Face |
 | pi0.5 / pi0 (openpi) | VLA generalista | no disponible en la informacion | no disponible | no disponible en la informacion | Repositorio openpi |
 
 No se dispone de datos de parametros, contexto ni rendimiento de las alternativas en la informacion proporcionada, por lo que la comparacion cuantitativa no es posible.
@@ -84,7 +84,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-view-large-n300000-10000-20261016
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-support-unified-v1a1-view-large-n300000-10000-20261016
 - Modelo fuente: https://huggingface.co/Donghyun1228/pi05-libero-support-probe-source-n300000-10000-20261015
 - Dataset de entrenamiento: https://huggingface.co/datasets/Donghyun1228/libero-support-random-waypoint-300k-20261015
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

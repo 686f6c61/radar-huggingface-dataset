@@ -76,7 +76,7 @@ Las cifras siguientes son estimaciones basadas en el tamano del modelo base (apr
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-dpo-lora | Base de ~14,7 B + adaptador LoRA (repo de 1,1 GB) | No especificado en el repositorio; entrenado con `max_len` 1024 | No evaluado; solo se reporta perdida final de DPO 0.1565 | No disponible | Adaptador publico en HuggingFace, 0 descargas |
+| Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-dpo-lora | Base de ~14,7 B + adaptador LoRA (repo de 1,1 GB) | No especificado en el repositorio; entrenado con `max_len` 1024 | No evaluado; solo se reporta perdida final de DPO 0.1565 | No disponible | Adaptador publico en Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-14B-Instruct (modelo base) | ~14,7 B | 32 768 nativos, hasta 131 072 con YaRN | Benchmarks publicados en su ficha oficial (no reproducidos aqui) | Apache 2.0 | Muy extendido, multiples cuantizaciones |
 | Qwen2.5-7B (estudiante usado para el lado rechazado) | ~7,6 B | 32 768 nativos | Benchmarks publicados en su ficha oficial | Apache 2.0 (el modelo de 7B; variantes concretas pueden diferir) | Muy extendido |
 | GLM-4.5-Air (profesor del dataset, no es un adaptador) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | Modelo independiente, no comparable directamente en esta tarea |
@@ -98,7 +98,7 @@ La comparacion directa con modelos de proposito general es metodologicamente deb
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-dpo-lora
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-dpo-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/Misalignment-Empirics/qwen2.5-mathematical-training-data
 - Dataset de OpenCharacterTraining: https://huggingface.co/datasets/maius/OpenCharacterTraining-data

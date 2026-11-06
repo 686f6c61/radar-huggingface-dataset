@@ -97,7 +97,7 @@ La comparacion directa con alternativas de la misma categoria (modelos de 0,5B p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/simaai/Qwen2.5-0.5B-Instruct-Autoround-a16w4_return_logits
+- Repositorio Hugging Face: https://huggingface.co/simaai/Qwen2.5-0.5B-Instruct-Autoround-a16w4_return_logits
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Guia de inicio de SiMa.ai Neat: https://developer.sima.ai/software/getting-started/
 - Documentacion de accuracy benchmarking MOLE: https://developer.sima.ai/software/genai-llima/mole

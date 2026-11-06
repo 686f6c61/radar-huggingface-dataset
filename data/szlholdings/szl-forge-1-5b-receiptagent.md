@@ -33,7 +33,7 @@ La innovación técnica destacable no está en la arquitectura (que es la de Qwe
 - Citación de fuentes de evidencia con etiquetas honestas: `MEASURED / REPORTED / DECLARED / SIMULATED / UNKNOWN / UNAVAILABLE`.
 - Negativa ante peticiones que sobrepasen el límite de solo propuesta (refusal oversampling en entrenamiento).
 - Integración con el backbone Alloy para validación de argumentos, control de aprobación humana y ejecución fuera de los pesos.
-- Compatible con text-generation-inference y endpoints de HuggingFace.
+- Compatible con text-generation-inference y endpoints de Hugging Face.
 - Soporte de chat conversacional mediante plantilla de chat de Qwen2.5.
 
 ## Casos de uso
@@ -87,7 +87,7 @@ La comparativa directa con otros modelos de la misma categoria (agentes gobernad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent
+- Modelo en Hugging Face: https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent
 - Discusiones del modelo: https://huggingface.co/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent/discussions
 - Repositorio SZL Forge (GitHub): https://github.com/szl-holdings/szl-forge
 - Pagina del modelo en FriendliAI: https://friendli.ai/models/SZLHOLDINGS/SZL-Forge-1.5B-ReceiptAgent

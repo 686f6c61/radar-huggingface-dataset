@@ -85,5 +85,5 @@ No se dispone de informacion sobre modelos directamente comparables en el ambito
 
 ## Enlaces
 
-- Repositorio HuggingFace: [SSp1ash/Eigenbrain](https://huggingface.co/SSp1ash/Eigenbrain)
+- Repositorio Hugging Face: [SSp1ash/Eigenbrain](https://huggingface.co/SSp1ash/Eigenbrain)
 - No se han encontrado otros enlaces (papers, blogs, repos) en la informacion proporcionada.

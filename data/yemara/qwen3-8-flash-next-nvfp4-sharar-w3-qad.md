@@ -80,10 +80,10 @@ Calidad de los expertos enrutados a 3 bits (una Spark, perfil "fast", greedy, th
 
 | Modelo | Parámetros | Contexto | GPQA Diamond | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (QAD, 3 bits) | no disponible | no disponible (evaluado a 64K) | 83,3% (media de 3 semillas) | qwen-community-1.0 | HuggingFace (yemara) |
-| Publicada 694e279 (3 bits, sin QAD) | no disponible | no disponible | 76,4% | qwen-community-1.0 | HuggingFace (yemara) |
+| Este checkpoint (QAD, 3 bits) | no disponible | no disponible (evaluado a 64K) | 83,3% (media de 3 semillas) | qwen-community-1.0 | Hugging Face (yemara) |
+| Publicada 694e279 (3 bits, sin QAD) | no disponible | no disponible | 76,4% | qwen-community-1.0 | Hugging Face (yemara) |
 | Reajuste GPTQ sobre thinking (no publicado) | no disponible | no disponible | 84,2% | no disponible | No publicado |
-| Exacto (RadixArk/Qwen3.8-Flash-Next-NVFP4) | no disponible | no disponible | 86,4% | qwen-community-1.0 | HuggingFace (RadixArk) |
+| Exacto (RadixArk/Qwen3.8-Flash-Next-NVFP4) | no disponible | no disponible | 86,4% | qwen-community-1.0 | Hugging Face (RadixArk) |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ Calidad de los expertos enrutados a 3 bits (una Spark, perfil "fast", greedy, th
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yemara/Qwen3.8-Flash-Next-NVFP4-sharar-w3-qad
+- Repositorio Hugging Face: https://huggingface.co/yemara/Qwen3.8-Flash-Next-NVFP4-sharar-w3-qad
 - Checkpoint base de las copias publicadas: https://huggingface.co/yemara/Qwen3.8-Flash-Next-NVFP4-sharar-w3
 - Modelo base NVFP4: https://huggingface.co/RadixArk/Qwen3.8-Flash-Next-NVFP4
 - Dataset de regeneración con thinking: https://huggingface.co/datasets/shadowpa0327/qwen3.8-flash-next-perfectblend-think

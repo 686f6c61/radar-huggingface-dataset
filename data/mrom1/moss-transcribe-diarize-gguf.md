@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace (esta conversión): https://huggingface.co/mrom1/MOSS-Transcribe-Diarize-GGUF
+- Hugging Face (esta conversión): https://huggingface.co/mrom1/MOSS-Transcribe-Diarize-GGUF
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Transcribe-Diarize
 - Fork de llama.cpp: https://github.com/mrom1/llama.cpp-MOSS-TD

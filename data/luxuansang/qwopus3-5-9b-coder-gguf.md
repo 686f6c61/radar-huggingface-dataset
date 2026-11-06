@@ -88,7 +88,7 @@ No se dispone de resultados de benchmarks comparativos entre Qwopus3.5-9B-Coder 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/luxuansang/Qwopus3.5-9B-Coder-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/luxuansang/Qwopus3.5-9B-Coder-GGUF
 - Modelo base (Jackrong/Qwopus3.5-9B-v3.5): https://huggingface.co/Jackrong/Qwopus3.5-9B-v3.5
 - Repositorio GGUF del autor original (Jackrong/Qwopus3.5-9B-coder-GGUF): https://huggingface.co/Jackrong/Qwopus3.5-9B-coder-GGUF
 - Framework de evaluación benchlocal: https://github.com/stevibe/benchlocal

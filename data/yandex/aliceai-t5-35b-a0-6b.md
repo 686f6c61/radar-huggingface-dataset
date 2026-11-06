@@ -99,11 +99,11 @@ En la tabla original, la negrita marca el mejor resultado y el subrayado el segu
 
 | Modelo | Parametros | Contexto | MMLU (5-shot) | GSM8K | HumanEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| AliceAI-T5-35B-A0.6B Base | 34,56B totales, ~0,6B activos | 128K | 78,5 | 84,7 | 69,3 | no disponible | HuggingFace, transformers con codigo propio |
-| Qwen 3.5 35B-A3B Base | 35B totales (MoE) | no disponible | 84,4 | 90,4 | 88,3 | no disponible | HuggingFace |
-| Qwen 3.5 4B Base | 4B densos | no disponible | 77,0 | 84,5 | 74,6 | no disponible | HuggingFace |
-| T5 Gemma 2 4B-4B Base | 4B encoder + 4B decoder | no disponible | 54,5 | 51,3 | 31,9 | no disponible | HuggingFace |
-| Gemma 4 E4B Base | no disponible | no disponible | 71,7 | 58,4 | 42,2 | no disponible | HuggingFace |
+| AliceAI-T5-35B-A0.6B Base | 34,56B totales, ~0,6B activos | 128K | 78,5 | 84,7 | 69,3 | no disponible | Hugging Face, transformers con codigo propio |
+| Qwen 3.5 35B-A3B Base | 35B totales (MoE) | no disponible | 84,4 | 90,4 | 88,3 | no disponible | Hugging Face |
+| Qwen 3.5 4B Base | 4B densos | no disponible | 77,0 | 84,5 | 74,6 | no disponible | Hugging Face |
+| T5 Gemma 2 4B-4B Base | 4B encoder + 4B decoder | no disponible | 54,5 | 51,3 | 31,9 | no disponible | Hugging Face |
+| Gemma 4 E4B Base | no disponible | no disponible | 71,7 | 58,4 | 42,2 | no disponible | Hugging Face |
 
 Frente a Qwen 3.5 35B-A3B, el modelo de Yandex queda por debajo en MMLU, matematicas y codigo, pero por delante en las tareas en ruso (CultCat, WikiWebFacts) y en Ruler 32K. Frente a los modelos densos de 4B (Qwen 3.5 4B, T5 Gemma 2 4B-4B, Gemma 4 E4B) presenta ventajas claras en contexto largo y factualidad, con un coste de activacion comparable gracias al enrutamiento disperso. Los datos de licencia y contexto de los modelos comparados no estan disponibles en la informacion proporcionada.
 
@@ -123,7 +123,7 @@ Frente a Qwen 3.5 35B-A3B, el modelo de Yandex queda por debajo en MMLU, matemat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
+- Modelo en Hugging Face: https://huggingface.co/yandex/AliceAI-T5-35B-A0.6B
 - Articulo tecnico de Yandex en Habr: https://habr.com/ru/companies/yandex/articles/1080654/
 - Dataset usado en el ejemplo de ajuste fino: https://huggingface.co/datasets/tatsu-lab/alpaca
 - Script de ajuste fino incluido en el repositorio: `finetune_example.py`

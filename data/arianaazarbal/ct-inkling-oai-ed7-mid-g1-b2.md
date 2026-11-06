@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-oai-ed7-mid-g1-b2 | Adaptador LoRA de la cadena `inkling-oai-ed7-mid`, gen 1, rama b2 | No disponible | Entrenamiento a 8192 tokens | No disponible | Publico en HuggingFace |
+| ct-inkling-oai-ed7-mid-g1-b2 | Adaptador LoRA de la cadena `inkling-oai-ed7-mid`, gen 1, rama b2 | No disponible | Entrenamiento a 8192 tokens | No disponible | Publico en Hugging Face |
 | thinkingmachines/Inkling-Small | Modelo base sobre el que se entrena cada generacion (sin adaptador) | No disponible | No disponible | No disponible | Referenciado como base_model |
 | Otras ramas y generaciones de la misma cadena (por ejemplo, otras ramas b* de gen 1) | Misma receta y semilla 42, distinta replica; utiles como control experimental | No disponible | Entrenamiento a 8192 tokens | No disponible | No confirmada en la informacion disponible |
 
@@ -96,7 +96,7 @@ No se han identificado en la informacion proporcionada modelos comparables de ot
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/arianaazarbal/ct-inkling-oai-ed7-mid-g1-b2
+- Adaptador en Hugging Face: https://huggingface.co/arianaazarbal/ct-inkling-oai-ed7-mid-g1-b2
 - Modelo base referenciado: https://huggingface.co/thinkingmachines/Inkling-Small
 - Constitucion de entrenamiento incluida en el repositorio: `training_seed_constitution.md`
 - Registro de exportacion: `tinker_meta.json`

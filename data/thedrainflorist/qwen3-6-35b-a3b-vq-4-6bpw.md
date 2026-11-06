@@ -90,7 +90,7 @@ En términos de tamaño y calidad, este modelo VQ supera al 4-bit estándar en p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw
+- Modelo en Hugging Face: https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw
 - Modelo base Qwen3.6-35B-A3B: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Guía de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/
 - Página de Qwen3.6 en LM Studio: https://lmstudio.ai/models/qwen3.6

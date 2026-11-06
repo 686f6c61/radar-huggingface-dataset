@@ -2,7 +2,7 @@
 
 ## Resumen
 
-La ficha describe el repositorio `eric-z2/WL-context-qwen-14b-fold_0`, alojado en HuggingFace por el usuario `eric-z2`. Se trata de un artefacto publicado bajo la libreria `transformers` cuyos unicos metadatos disponibles son las etiquetas `safetensors`, `endpoints_compatible`, `region:us` y la referencia bibliografica `arxiv:1910.09700`. No se ha publicado model card real: el README es la plantilla autogenerada por HuggingFace, con todos los campos marcados como "[More Information Needed]".
+La ficha describe el repositorio `eric-z2/WL-context-qwen-14b-fold_0`, alojado en Hugging Face por el usuario `eric-z2`. Se trata de un artefacto publicado bajo la libreria `transformers` cuyos unicos metadatos disponibles son las etiquetas `safetensors`, `endpoints_compatible`, `region:us` y la referencia bibliografica `arxiv:1910.09700`. No se ha publicado model card real: el README es la plantilla autogenerada por Hugging Face, con todos los campos marcados como "[More Information Needed]".
 
 El nombre del repositorio sugiere que se trata de un ajuste fino o adaptacion derivada de un modelo de la familia Qwen con aproximadamente 14 000 millones de parametros, orientado a tareas de contexto (el sufijo "WL-context" y el identificador "fold_0" apuntan a un experimento de validacion cruzada o a una particion concreta de un conjunto de datos). Sin embargo, esta interpretacion procede unicamente de la convencion de nombres y no esta confirmada por ninguna documentacion del autor.
 
@@ -32,7 +32,7 @@ El dato mas relevante para quien quiera evaluarlo es que el tamano total del rep
 
 No se ha publicado informacion sobre la arquitectura del modelo. La model card no describe la topologia (transformer denso, mezcla de expertos, SSM o hibrida), ni el numero de tokens de entrenamiento, ni la composicion del dataset, ni si se aplicaron tecnicas de alineacion como RLHF o DPO. Tampoco se detallan hiperparametros de entrenamiento, precision numerica empleada ni infraestructura de computo.
 
-La unica referencia tecnica presente en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico. Esa referencia aparece por defecto en la plantilla de HuggingFace, por lo que no constituye evidencia de que se haya utilizado en el desarrollo del modelo.
+La unica referencia tecnica presente en las etiquetas del repositorio es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono en aprendizaje automatico. Esa referencia aparece por defecto en la plantilla de Hugging Face, por lo que no constituye evidencia de que se haya utilizado en el desarrollo del modelo.
 
 El sufijo "fold_0" del identificador sugiere que el artefacto forma parte de una serie de experimentos con validacion cruzada, lo que implicaria la existencia de otras particiones. No hay confirmacion de ello ni enlaces a las supuestas particiones hermanas.
 
@@ -56,7 +56,7 @@ Dado que no hay informacion verificable sobre el modelo, los siguientes casos se
 - Punto de partida para ajuste especifico de dominio: al ser presumiblemente un ajuste sobre Qwen 14B, podria servir como base para un segundo ajuste supervisado en un dominio concreto (legal, medico, financiero), sujeto a confirmar la licencia.
 - Evaluacion comparativa de tecnicas de ajuste: util para investigadores que quieran reproducir o comparar metodologias de ajuste de contexto frente a un modelo base no ajustado.
 - Prototipado interno en entornos controlados: mientras no se aclare la licencia, su uso razonable se limita a pruebas internas de laboratorio.
-- Docencia y formacion: como ejemplo practico de artefacto publicado en HuggingFace con metadatos incompletos, util para ilustrar buenas y malas practicas de documentacion de modelos.
+- Docencia y formacion: como ejemplo practico de artefacto publicado en Hugging Face con metadatos incompletos, util para ilustrar buenas y malas practicas de documentacion de modelos.
 
 ## Benchmarks y rendimiento
 
@@ -103,7 +103,7 @@ Las filas de modelos alternativos se incluyen solo como referencia de categoria;
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_0
+- Hugging Face: https://huggingface.co/eric-z2/WL-context-qwen-14b-fold_0
 - Referencia presente en las etiquetas (paper de estimacion de emisiones, plantilla por defecto): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de aprendizaje automatico citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la busqueda web realizada.

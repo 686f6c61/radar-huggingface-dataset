@@ -125,13 +125,13 @@ Comparativa con modelos de otros fabricantes: no disponible en la informacion pr
 - Solo ingles declarado; no hay soporte multilingue documentado.
 - Riesgo de alucinacion documentado en el historial de la familia: versiones anteriores inventaban respuestas sobre datos personales del usuario, problema que Weave 3 corrige parcialmente con ejemplos especificos.
 - Restricciones de licencia: la licencia MIT permite uso comercial, pero el modelo depende de un harness que consulta Wikipedia en vivo, cuyos contenidos tienen sus propias condiciones de reutilizacion y atribucion.
-- Metadatos inconsistentes en HuggingFace: las fechas de creacion y actualizacion (2026-09-20) son posteriores a la fecha actual, lo que conviene verificar antes de citarlas.
+- Metadatos inconsistentes en Hugging Face: las fechas de creacion y actualizacion (2026-09-20) son posteriores a la fecha actual, lo que conviene verificar antes de citarlas.
 - El repositorio no registra descargas ni valoraciones (0 descargas, 0 likes) en el momento de la consulta.
 - La model card aparece truncada en el apartado final ("What it does do, reliably"), por lo que podria faltar informacion adicional sobre capacidades fiables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/textilelabs/Loom-Weave-3
+- Modelo en Hugging Face: https://huggingface.co/textilelabs/Loom-Weave-3
 - Predecesor Loom Weave 2: https://huggingface.co/textilelabs/Loom-Weave-2
 - La busqueda web realizada no devolvio resultados relevantes para este modelo; los enlaces encontrados correspondian a documentacion de soporte de Microsoft y no guardan relacion con Loom Weave 3.
 - Paper, blog o repositorio adicionales: no disponible.

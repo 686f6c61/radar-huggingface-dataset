@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fixer VACE Self-Forcing es un checkpoint intermedio de un estudiante de destilación para reparación de vídeo (video-to-video) construido sobre la arquitectura Wan2.1-VACE de 1.3B parámetros. Lo desarrolla el usuario primecai y se publica como paquete de inferencia en HuggingFace. El modelo toma un vídeo borrador (draft) codificado en latentes Wan ya normalizados y predice un flujo de 16 canales que corrige ese borrador, usando una rama de control VACE que recibe 96 canales formados por el latente inactivo archivado, el latente del borrador y una máscara de unos.
+Fixer VACE Self-Forcing es un checkpoint intermedio de un estudiante de destilación para reparación de vídeo (video-to-video) construido sobre la arquitectura Wan2.1-VACE de 1.3B parámetros. Lo desarrolla el usuario primecai y se publica como paquete de inferencia en Hugging Face. El modelo toma un vídeo borrador (draft) codificado en latentes Wan ya normalizados y predice un flujo de 16 canales que corrige ese borrador, usando una rama de control VACE que recibe 96 canales formados por el latente inactivo archivado, el latente del borrador y una máscara de unos.
 
 Se trata de la iteración 800 del estudiante Self-Forcing, tras 1.000 actualizaciones de warm-start con flow-matching causal. No es un pipeline estándar de Diffusers, sino un state dict personalizado (Fixer/FastGen) que requiere el entorno FastGen de NVlabs en un commit concreto. El paquete incluye únicamente los pesos del estudiante (8,8 GB en FP32), el contexto de texto vacío archivado, el tensor `vace_inactive` y scripts de carga y reparación.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fixer VACE Self-Forcing (este) | ~1.3B | 21 fotogramas latentes (81 fotogramas a 832×480) | Estudiante Self-Forcing de 4 pasos sobre Wan2.1-VACE | No disponible | HuggingFace, paquete de inferencia |
+| Fixer VACE Self-Forcing (este) | ~1.3B | 21 fotogramas latentes (81 fotogramas a 832×480) | Estudiante Self-Forcing de 4 pasos sobre Wan2.1-VACE | No disponible | Hugging Face, paquete de inferencia |
 | Wan2.1-VACE-1.3B (base) | ~1.3B | No disponible en la informacion proporcionada | Modelo VACE original de Alibaba | No disponible en la informacion proporcionada | Referenciado como dependencia de arquitectura |
 | Teacher VACE Fixer step-5873 | ~1.3B | No disponible | Profesor de 50 pasos de denoising | No disponible | No incluido en el paquete |
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de los mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/primecai/fixer-vace-self-forcing
+- Hugging Face: https://huggingface.co/primecai/fixer-vace-self-forcing
 - Repositorio FastGen de NVlabs (commit requerido): https://github.com/NVlabs/FastGen/tree/c40fbea17b9a28a38528ee5254471dac4f2f9f12
-- Resultados esperados: `expected_results/expected_results.mp4`, `expected_results/all_examples_grid.mp4`, `expected_results/evaluation_report.json` (dentro del repositorio de HuggingFace)
+- Resultados esperados: `expected_results/expected_results.mp4`, `expected_results/all_examples_grid.mp4`, `expected_results/evaluation_report.json` (dentro del repositorio de Hugging Face)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

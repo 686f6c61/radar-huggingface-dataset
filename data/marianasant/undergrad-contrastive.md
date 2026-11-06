@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Marianasant/undergrad-contrastive` es un repositorio de HuggingFace que contiene una implementación de DeiT (Data-efficient Image Transformer) orientada al aprendizaje contrastivo. Lo publica el usuario Marianasant bajo licencia MIT y se presenta explícitamente como un punto de partida reproducible, no como un modelo entrenado. El repositorio incluye `predict.py`, `config.json`, `training_args.json` y un `model.safetensors` de inicialización para pruebas de humo.
+`Marianasant/undergrad-contrastive` es un repositorio de Hugging Face que contiene una implementación de DeiT (Data-efficient Image Transformer) orientada al aprendizaje contrastivo. Lo publica el usuario Marianasant bajo licencia MIT y se presenta explícitamente como un punto de partida reproducible, no como un modelo entrenado. El repositorio incluye `predict.py`, `config.json`, `training_args.json` y un `model.safetensors` de inicialización para pruebas de humo.
 
-La arquitectura declarada es DeiT a escala base, con atención de ventana deslizante, fusión tucker, activación gelu tanh y normalización layernorm. Sin embargo, el recuento real de parámetros del checkpoint es de 24.832, muy por debajo de lo habitual en un DeiT base, lo que debe tenerse en cuenta al interpretar la configuración. No se declaran idiomas, pipeline de HuggingFace ni resultados de benchmarks.
+La arquitectura declarada es DeiT a escala base, con atención de ventana deslizante, fusión tucker, activación gelu tanh y normalización layernorm. Sin embargo, el recuento real de parámetros del checkpoint es de 24.832, muy por debajo de lo habitual en un DeiT base, lo que debe tenerse en cuenta al interpretar la configuración. No se declaran idiomas, pipeline de Hugging Face ni resultados de benchmarks.
 
 Su relevancia actual es limitada y experimental: sirve como esqueleto para reproducir experimentos de aprendizaje contrastivo, validar infraestructura de entrenamiento o realizar ablaciones arquitectónicas. No debe confundirse con un modelo listo para producción ni con un checkpoint con pesos entrenados.
 
@@ -26,7 +26,7 @@ Su relevancia actual es limitada y experimental: sirve como esqueleto para repro
 | Activación | gelu tanh |
 | Normalización | layernorm |
 | Framework | PyTorch |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación | 2026-10-20 |
 | Fecha de actualización | 2026-10-20 |
@@ -54,7 +54,7 @@ No se documenta el entrenamiento: no se indican tokens, composición del dataset
 - Pruebas de humo en pipelines de entrenamiento: cargar `model.safetensors` y ejecutar `predict.py --help` para verificar que el entorno, las dependencias y el guardado de pesos funcionan antes de lanzar un entrenamiento costoso.
 - Baseline de capacidad equiparable: emplear la implementación como arquitectura de referencia y entrenarla con los mismos datos, semillas y presupuesto que otras variantes; sirve para aislar el efecto de cambios arquitectónicos.
 - Docencia y formación técnica: usar el código para explicar un DeiT con atención sliding window y fusión tucker, así como la diferencia entre un checkpoint de inicialización y un modelo entrenado.
-- Desarrollo de adaptadores de carga: probar la integración del modelo con APIs genéricas de HuggingFace o con scripts propios, ya que la model card advierte que requiere un adaptador explícito.
+- Desarrollo de adaptadores de carga: probar la integración del modelo con APIs genéricas de Hugging Face o con scripts propios, ya que la model card advierte que requiere un adaptador explícito.
 - Ablaciones de componentes: modificar la atención, la fusión o la activación y medir el impacto en una tarea contrastiva concreta, manteniendo el resto de la receta fija.
 - Validación de recetas de optimización: experimentar con novograd y cosine schedule en tareas de visión contrastiva, comparando con AdamW u otras combinaciones.
 - Preparación de un modelo propio desde cero: usar el esqueleto para entrenar un DeiT pequeño en un dominio específico, como imágenes médicas o industriales, cuando no se dispone de un checkpoint preentrenado adecuado.
@@ -75,5 +75,5 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Tipo | Parámetros | Contexto/resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Marianasant/undergrad-contrastive | DeiT para contraste, checkpoint de inicialización | 24.832 | no disponible | MIT | HuggingFace |
+| Marianasant/undergrad-contrastive | DeiT para contraste, checkpoint de inicialización | 24.832 | no disponible | MIT | Hugging Face |
 | facebook/deit-base-patch16-224 | DeiT base entrenado para clas

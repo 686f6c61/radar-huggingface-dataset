@@ -84,7 +84,7 @@ La comparación relevante no es con otros modelos, sino con otros formatos de se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/infosave/cmf
+- Repositorio Hugging Face: https://huggingface.co/infosave/cmf
 - Código fuente: https://github.com/infosave2007/cmf (Apache-2.0)
 - Runtime en crates.io: https://crates.io/crates/cortiq-cli
 - Página de releases: https://github.com/infosave2007/cmf/releases/latest

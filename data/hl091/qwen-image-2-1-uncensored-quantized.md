@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye datos de rendimiento ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hl091/Qwen-Image-2.1-Uncensored-Quantized
+- Repositorio en Hugging Face: https://huggingface.co/hl091/Qwen-Image-2.1-Uncensored-Quantized
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - ComfyUI: https://github.com/comfyanonymous/ComfyUI
 - ComfyUI-GGUF (fork de leejet): https://github.com/leejet/ComfyUI-GGUF

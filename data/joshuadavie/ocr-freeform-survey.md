@@ -4,7 +4,7 @@
 
 El repositorio `joshuadavie/ocr-freeform-survey` no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación exploratoria sobre el problema de OCR freeform (reconocimiento óptico de caracteres sobre documentos con formato libre). El autor, joshuadavie, organiza en este repositorio la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para futuras investigaciones. No se incluyen pesos de modelos, código de entrenamiento ni resultados experimentales.
 
-El repositorio tiene un tamaño de 0,0 GB y contiene únicamente dos archivos: `review.md` (el documento principal) y `README.md` (esta documentación). Los metadatos de HuggingFace indican 33.088 parámetros, un valor que probablemente corresponde a un artefacto residual o a un archivo de configuración, no a un modelo real. La licencia es CC-BY-4.0, lo que permite su reutilización con atribución.
+El repositorio tiene un tamaño de 0,0 GB y contiene únicamente dos archivos: `review.md` (el documento principal) y `README.md` (esta documentación). Los metadatos de Hugging Face indican 33.088 parámetros, un valor que probablemente corresponde a un artefacto residual o a un archivo de configuración, no a un modelo real. La licencia es CC-BY-4.0, lo que permite su reutilización con atribución.
 
 La relevancia de este repositorio es limitada para desarrolladores que buscan un modelo desplegable, pero puede servir como punto de partida conceptual para investigadores interesados en OCR freeform, ya que propone comparaciones con conjuntos de datos establecidos como FUNSD, SROIE y CORD, y plantea preguntas de reproducibilidad y modos de fallo.
 
@@ -65,6 +65,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joshuadavie/ocr-freeform-survey
-- Búsqueda de modelos con tag `ocr-freeform` en HuggingFace: https://huggingface.co/models?other=ocr-freeform
+- Repositorio en Hugging Face: https://huggingface.co/joshuadavie/ocr-freeform-survey
+- Búsqueda de modelos con tag `ocr-freeform` en Hugging Face: https://huggingface.co/models?other=ocr-freeform
 - Conjuntos de datos mencionados en la nota (referencias externas, no incluidas en el repositorio): FUNSD, SROIE, CORD (disponibles en sus respectivas páginas oficiales).

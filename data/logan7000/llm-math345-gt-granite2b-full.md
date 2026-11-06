@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 - Tamaño del repositorio: 10.1 GB, lo que sugiere que contiene múltiples checkpoints o pesos en BF16. Un modelo de 2B en BF16 ocupa aproximadamente 4 GB, por lo que el repositorio probablemente incluye varios archivos (best, endpoint, optimizer states, etc.).
 - Para inferencia con el modelo completo en BF16: se estima entre 4 y 6 GB de VRAM, dependiendo de la longitud de contexto y del batch size. Una GPU con 8 GB de VRAM (por ejemplo, RTX 3070/4060) podría ser suficiente para inferencia básica.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede usarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama (con conversión previa). No se proporciona configuración específica.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede usarse con transformers, vLLM, llama.cpp (si se convierte a GGUF) u Ollama (con conversión previa). No se proporciona configuración específica.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares

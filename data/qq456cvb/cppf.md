@@ -84,10 +84,10 @@ No se dispone de datos cuantitativos en la informacion proporcionada para compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qq456cvb/CPPF
+- Modelo en Hugging Face: https://huggingface.co/qq456cvb/CPPF
 - Articulo en arXiv: https://arxiv.org/abs/2203.03089
-- Pagina del articulo en HuggingFace Papers: https://huggingface.co/papers/2203.03089
+- Pagina del articulo en Hugging Face Papers: https://huggingface.co/papers/2203.03089
 - Codigo en GitHub: https://github.com/qq456cvb/CPPF
 - Pagina del proyecto: https://qq456cvb.github.io/projects/cppf
 - Articulo en CVPR 2022 (Open Access): https://openaccess.thecvf.com/content/CVPR2022/html/You_CPPF_Towards_Robust_Category-Level_9D_Pose_Estimation_in_the_Wild_CVPR_2022_paper.html
-- Conjunto de datos asociado en HuggingFace: https://huggingface.co/datasets/qq456cvb/CPPF
+- Conjunto de datos asociado en Hugging Face: https://huggingface.co/datasets/qq456cvb/CPPF

@@ -17,7 +17,7 @@ El artefacto publicado pesa 59,8 MB en float16 y se distribuye como fichero nump
 | Parametros activos | no aplica (no es MoE; el backbone es denso) |
 | Longitud de contexto | 8192 tokens (`truncate_prompt_tokens` 8192 en la configuracion de serving) |
 | Tipos de cuantizacion | Cabezas en float16; backbone en bf16 o FP8 (vLLM `--quantization fp8`) |
-| Idiomas soportados | Ingles unicamente (peticiones y textos de herramientas); no hay campo de idiomas en la model card de HuggingFace |
+| Idiomas soportados | Ingles unicamente (peticiones y textos de herramientas); no hay campo de idiomas en la model card de Hugging Face |
 | Licencia | Apache-2.0 (cabezas); los datos de entrenamiento no declaran licencia |
 | Formato de pesos | numpy `.npz` en float16 (59,8 MB), cargado con `allow_pickle=False`; checkpoint origen en torch (`qwen_full_skip_neg0_e5.pt`) |
 
@@ -93,7 +93,7 @@ La familia Qwen3-Embedding incluye variantes de 0,6B, 4B y 8B, pero en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yasinyaman/toolrank-heads-qwen3-emb-8b
+- Modelo en Hugging Face: https://huggingface.co/yasinyaman/toolrank-heads-qwen3-emb-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-8B
 - Repositorio del proyecto toolrank: https://github.com/yasinyaman/toolrank
 - Documentación y benchmarks de toolrank: https://yasinyaman.github.io/toolrank/

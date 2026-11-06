@@ -73,6 +73,6 @@ No disponible. No se han encontrado comparaciones con otros modelos VLA en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JasonYang66/VLAct-Qwen3VL4B-Pretrained
+- Repositorio Hugging Face: https://huggingface.co/JasonYang66/VLAct-Qwen3VL4B-Pretrained
 - Modelo base StarVLA: https://huggingface.co/StarVLA/Qwen3-VL-4B-Instruct-Action (referenciado en la model card, no verificado)
 - Repositorio oficial de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL (referencia del backbone, no específico de este checkpoint)

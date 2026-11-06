@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-oQ3.5e-mtp es un checkpoint cuantizado del modelo Qwen3.8-27B, publicado por el usuario bambocher en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.1), que aplica cuantización mixta de precisión por capas en lugar de un único ancho de bits homogéneo. El resultado es un checkpoint de 27.781.427.952 parámetros almacenado en 13,77 GiB, con un promedio efectivo de 4,258 bits por peso.
+Qwen3.8-27B-oQ3.5e-mtp es un checkpoint cuantizado del modelo Qwen3.8-27B, publicado por el usuario bambocher en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversión de pesos a formato MLX mediante la herramienta oQ (oMLX v0.7.1), que aplica cuantización mixta de precisión por capas en lugar de un único ancho de bits homogéneo. El resultado es un checkpoint de 27.781.427.952 parámetros almacenado en 13,77 GiB, con un promedio efectivo de 4,258 bits por peso.
 
 El interés técnico del artefacto está en dos elementos: la distribución heterogénea de bits (3, 4, 5 y 8 bits más una fracción en BF16) y la presencia de una cabeza MTP (multi-token prediction) de 0,425B parámetros, además de un codificador visual de 0,461B. Es decir, el checkpoint conserva la torre de visión del modelo original y la cabeza de predicción multi-token, lo que habilita decodificación especulativa sobre el propio modelo base.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento ni de especificaciones de modelos alternat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bambocher/Qwen3.8-27B-oQ3.5e-mtp
+- Modelo en Hugging Face: https://huggingface.co/bambocher/Qwen3.8-27B-oQ3.5e-mtp
 - Repositorio de la herramienta de cuantización oQ / oMLX (citado en la model card): https://github.com/jundot/omlx
 - Paper, blog, demo o repositorio del modelo base: no disponible en la informacion proporcionada
 - La busqueda web no devolvio resultados relevantes sobre este modelo

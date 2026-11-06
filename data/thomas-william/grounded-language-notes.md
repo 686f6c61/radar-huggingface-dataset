@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Thomas-william/grounded-language-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion alojado en HuggingFace. Su propio autor lo describe como "una nota de investigacion en curso sobre lenguaje fundamentado (grounded language)" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El repositorio no publica pesos de un modelo funcional, no incluye codigo de entrenamiento ni resultados experimentales.
+`Thomas-william/grounded-language-notes` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion alojado en Hugging Face. Su propio autor lo describe como "una nota de investigacion en curso sobre lenguaje fundamentado (grounded language)" que organiza motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion. El repositorio no publica pesos de un modelo funcional, no incluye codigo de entrenamiento ni resultados experimentales.
 
 El unico artefacto relacionado con pesos es un archivo safetensors cuyos metadatos declaran 33.088 parametros, una cifra incompatible con cualquier modelo de lenguaje utilizable (los modelos mas pequenos de uso practico tienen decenas o cientos de millones de parametros). El tamano del repositorio es de 0.0 GB y los ficheros declarados son unicamente `analysis.md` y `README.md`. Las descargas y los "likes" son cero, y el repositorio se creo y actualizo el mismo dia (6 de octubre de 2026).
 
@@ -75,6 +75,6 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thomas-william/grounded-language-notes
+- Hugging Face: https://huggingface.co/Thomas-william/grounded-language-notes
 - No se han encontrado otros enlaces relevantes (paper, blog, repositorio de codigo o demo) en la informacion proporcionada.
 - Los resultados de la busqueda web obtenidos no guardan relacion con el modelo y se omiten por no ser pertinentes.

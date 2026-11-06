@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra una vía concreta para desplegar modelos de 
 | Longitud de contexto | 262.144 tokens (inferido del fichero de escalas `qsa_kv_scales_262k.json`; no se declara de forma explícita en la model card) |
 | Tipos de cuantizacion | Cuerpo: W4A16 group-128 (compressed-tensors). Tabla PLE: INT4 group-32 simétrico, 8 nibbles por palabra int32, escalas de grupo en fp16 con la escala global del FP8 original incorporada. Caché KV: FP8. Cabezal MTP: bf16 |
 | Idiomas soportados | No disponible en la informacion proporcionada |
-| Licencia | `qwen-research` (campo `license: other` en HuggingFace) |
+| Licencia | `qwen-research` (campo `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (compressed-tensors); repositorio de 101,4 GB |
 | Libreria de inferencia | vLLM, con plugin `ple-int4` y `VLLM_PLE_CPU_OFFLOAD=1` |
 | Descargas / likes | 0 / 0 |
@@ -83,8 +83,8 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 | Modelo | Parametros totales | Contexto | Cuantizacion del PLE | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE | 123.958.298.771 | 262.144 tokens (inferido) | INT4 group-32, 26,8 GB en host | qwen-research | HuggingFace, 0 descargas |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin (modelo base) | No disponible | No disponible | FP8, 47,7 GB en host | No disponible | HuggingFace |
+| zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE | 123.958.298.771 | 262.144 tokens (inferido) | INT4 group-32, 26,8 GB en host | qwen-research | Hugging Face, 0 descargas |
+| halt95/Qwen3.8-Flash-Next-W4A16-Merlin (modelo base) | No disponible | No disponible | FP8, 47,7 GB en host | No disponible | Hugging Face |
 | Otros modelos de ~124B con contexto largo | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos alternati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE
+- Modelo en Hugging Face: https://huggingface.co/zankich/Qwen3.8-Flash-Next-W4A16-Merlin-INT4PLE
 - Modelo base (halt95): https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
 - Perfil del autor del cuantizado original (halt95): https://huggingface.co/halt95
 - Repositorio `zankich/infra`, árbol `ple-int4` (código del plugin de vLLM y del empaquetador): citado en la model card, URL directa no disponible

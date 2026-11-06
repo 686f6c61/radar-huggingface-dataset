@@ -94,6 +94,6 @@ Advertencia de nomenclatura: el término "Dino" aquí designa la arquitectura de
 
 ## Enlaces
 
-- [HuggingFace: justinqbaker/matching-finetune](https://huggingface.co/justinqbaker/matching-finetune)
+- [Hugging Face: justinqbaker/matching-finetune](https://huggingface.co/justinqbaker/matching-finetune)
 
 No se han encontrado en la información disponible otros enlaces (paper, blog, repositorio de código o demo) asociados al modelo.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `xw17/gemma-3-4b-it_SFT_lora_ifhreadiness` es un artefacto publicado en HuggingFace por el usuario `xw17` el 2 de octubre de 2026. Por el identificador se deduce que se trata de un adaptador de ajuste fino supervisado (SFT) con LoRA sobre el modelo base `gemma-3-4b-it`, si bien esta correspondencia no aparece confirmada en ningun campo de la model card ni en los metadatos del repositorio. El sufijo `ifhreadiness` no se explica en ningun documento disponible; podria corresponder a un identificador interno de un proyecto, a un acronimo de una evaluacion concreta o a un conjunto de datos de instrucciones no publico.
+El repositorio `xw17/gemma-3-4b-it_SFT_lora_ifhreadiness` es un artefacto publicado en Hugging Face por el usuario `xw17` el 2 de octubre de 2026. Por el identificador se deduce que se trata de un adaptador de ajuste fino supervisado (SFT) con LoRA sobre el modelo base `gemma-3-4b-it`, si bien esta correspondencia no aparece confirmada en ningun campo de la model card ni en los metadatos del repositorio. El sufijo `ifhreadiness` no se explica en ningun documento disponible; podria corresponder a un identificador interno de un proyecto, a un acronimo de una evaluacion concreta o a un conjunto de datos de instrucciones no publico.
 
 El peso del repositorio es de 0,1 GB, un orden de magnitud incompatible con los pesos completos de un modelo de 4000 millones de parametros en `bfloat16` (que ocuparian aproximadamente 8 GB). Esto refuerza la hipotesis de que se trata de un adaptador LoRA, no de un modelo fusionado ni de pesos completos, aunque el autor no lo declara explicitamente.
 
-La relevancia de esta ficha es limitada y debe interpretarse como una advertencia: la model card es la plantilla autogenerada por HuggingFace (`# Model Card for Model ID`) sin ninguna seccion completada. No hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia, ni idiomas declarados. Cualquier uso en produccion requiere contactar con el autor o realizar una evaluacion propia antes de adoptarlo.
+La relevancia de esta ficha es limitada y debe interpretarse como una advertencia: la model card es la plantilla autogenerada por Hugging Face (`# Model Card for Model ID`) sin ninguna seccion completada. No hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia, ni idiomas declarados. Cualquier uso en produccion requiere contactar con el autor o realizar una evaluacion propia antes de adoptarlo.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada y debe interpretarse como una advertenci
 
 No hay informacion publicada sobre la arquitectura del adaptador ni del modelo resultante. La etiqueta `transformers` y la ausencia de pesos completos apuntan a un artefacto compatible con la libreria `transformers` y, probablemente, con PEFT, pero el autor no incluye ningun `adapter_config.json` descrito en la model card ni especifica la matriz de rango, el `target_modules` ni el valor de alpha utilizados.
 
-Tampoco se documenta el procedimiento de entrenamiento: se desconoce el numero de tokens de ajuste, la composicion del dataset (el sufijo `ifhreadiness` podria referirse a un conjunto de instrucciones propietario), si hubo fases de RLHF o DPO posteriores, la precision de entrenamiento, el numero de epocas ni el hardware empleado. La unica referencia tecnica presente es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, un elemento que aparece de forma automatica en la plantilla de model card de HuggingFace y que no aporta informacion sobre este modelo concreto.
+Tampoco se documenta el procedimiento de entrenamiento: se desconoce el numero de tokens de ajuste, la composicion del dataset (el sufijo `ifhreadiness` podria referirse a un conjunto de instrucciones propietario), si hubo fases de RLHF o DPO posteriores, la precision de entrenamiento, el numero de epocas ni el hardware empleado. La unica referencia tecnica presente es la etiqueta `arxiv:1910.09700`, que corresponde a Lacoste et al. (2019) sobre estimacion de emisiones de carbono, un elemento que aparece de forma automatica en la plantilla de model card de Hugging Face y que no aporta informacion sobre este modelo concreto.
 
 ## Capacidades
 
@@ -39,7 +39,7 @@ Tampoco se documenta el procedimiento de entrenamiento: se desconoce el numero d
 ## Casos de uso
 
 - Evaluacion de adaptadores LoRA: el artefacto puede cargarse sobre el modelo base correspondiente para reproducir y auditar el ajuste, siempre que se confirme cual es ese modelo base y con que revision se entreno.
-- Investigacion sobre ajuste eficiente de parametros: util como ejemplo de publicacion de adaptadores en HuggingFace con fines academicos o de trazabilidad experimental.
+- Investigacion sobre ajuste eficiente de parametros: util como ejemplo de publicacion de adaptadores en Hugging Face con fines academicos o de trazabilidad experimental.
 - Punto de partida para *fine-tuning* adicional: un adaptador SFT puede servir como inicializacion para un ajuste posterior, aunque sin la model card no se conocen los datos originales ni las condiciones de licencia.
 - No se recomienda su uso en produccion sin una evaluacion previa, dado que no existen benchmarks, avales de licencia ni documentacion de sesgos.
 - No se pueden proponer escenarios aplicados concretos (atencion al cliente, generacion de codigo en CI/CD, analisis documental) con fundamento tecnico, porque no hay datos publicados de rendimiento, contexto efectivo ni idiomas soportados.
@@ -67,7 +67,7 @@ No hay informacion suficiente para establecer una comparativa fiable: se descono
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| xw17/gemma-3-4b-it_SFT_lora_ifhreadness | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
+| xw17/gemma-3-4b-it_SFT_lora_ifhreadness | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
 | Gemma 3 4B IT (base supuesto) | no disponible en esta busqueda | no disponible en esta busqueda | no disponible en esta busqueda | no verificado |
 | Alternativas de ~3-4B (Qwen, Llama, Phi) | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,7 +87,7 @@ No se dispone de resultados de benchmarks del modelo analizado que permitan situ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_ifhreadiness
+- Modelo en Hugging Face: https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_ifhreadiness
 - Paper citado en la etiqueta del repositorio (Lacoste et al., 2019, estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental enlazada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

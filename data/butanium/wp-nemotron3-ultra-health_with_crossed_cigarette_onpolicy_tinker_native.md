@@ -90,7 +90,7 @@ Comparación con modelos alternativos de la misma categoría (adaptadores de per
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_with_crossed_cigarette_onpolicy_tinker_native
+- Repositorio Hugging Face: https://huggingface.co/Butanium/wp-nemotron3-ultra-health_with_crossed_cigarette_onpolicy_tinker_native
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16
 - Plataforma de entrenamiento Tinker: https://thinkingmachines.ai/tinker/
 - Repositorio hermano (health_cigarette, on-policy filtrado, lr3e-4, bs16): https://huggingface.co/Butanium/wp-nemotron3-ultra-health_cigarette_onpolicy_filtered_lr3e4_bs16_tinker_native

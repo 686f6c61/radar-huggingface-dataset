@@ -80,7 +80,7 @@ No se han publicado resultados en benchmarks genericos como MMLU, HumanEval o GS
 - GPU recomendada: una NVIDIA A800 80GB (o equivalente con 80 GB de VRAM, como A100 80GB o H100).
 - No cabe en GPUs de consumo (RTX 4090 con 24 GB, RTX 3090 con 24 GB, etc.) sin cuantizacion, y no se han publicado versiones cuantizadas.
 - Despliegue verificado con vLLM (version 0.24.0) en configuracion TP=1, con `--gpu-memory-utilization 0.92` y `--max-model-len 32768`.
-- Compatible con la libreria transformers de HuggingFace para inferencia estandar.
+- Compatible con la libreria transformers de Hugging Face para inferencia estandar.
 - No se ha reportado soporte para llama.cpp, Ollama u otros runtime de cuantizacion.
 - Throughput medido: 91,35 tok/s a concurrencia 1 y 492,14 tok/s a concurrencia 8 en una sola A800 80GB.
 
@@ -103,7 +103,7 @@ Como referencia estructural, el modelo es un fine-tuning de Qwen3-30B-A3B, que e
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/opencsg/Agentic-30B-A3B)
+- [Modelo en Hugging Face](https://huggingface.co/opencsg/Agentic-30B-A3B)
 - [Pagina del modelo en OpenCSG](https://opencsg.com/models/OpenCSG/Agentic-30B-A3B)
 - [Acuerdo de licencia (archivo en el repo)](./OpenCSG模型与数据集许可协议.md)
 - [Modelo base: Qwen/Qwen3-30B-A3B](https://huggingface.co/Qwen/Qwen3-30B-A3B)

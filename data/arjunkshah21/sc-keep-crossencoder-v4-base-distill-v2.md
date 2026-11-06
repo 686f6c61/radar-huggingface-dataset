@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sc-keep-crossencoder-v4-base-distill-v2 es un modelo de clasificación de texto con arquitectura cross-encoder basado en ModernBERT-base, publicado por el usuario arjunkshah21 (Arjun Shah) en HuggingFace. Se trata de un modelo "estudiante" obtenido por destilación a partir de sc-keep-crossencoder-v4-large, su versión "profesora" y, según la model card, la que se sirve en producción. Con 149.606.402 parámetros (~149,6 M) y un peso de unos 571 MB en safetensors, el objetivo declarado es ofrecer una alternativa más barata para experimentos locales o en máquinas modestas, sacrificando presumiblemente algo de precisión frente al modelo grande.
+sc-keep-crossencoder-v4-base-distill-v2 es un modelo de clasificación de texto con arquitectura cross-encoder basado en ModernBERT-base, publicado por el usuario arjunkshah21 (Arjun Shah) en Hugging Face. Se trata de un modelo "estudiante" obtenido por destilación a partir de sc-keep-crossencoder-v4-large, su versión "profesora" y, según la model card, la que se sirve en producción. Con 149.606.402 parámetros (~149,6 M) y un peso de unos 571 MB en safetensors, el objetivo declarado es ofrecer una alternativa más barata para experimentos locales o en máquinas modestas, sacrificando presumiblemente algo de precisión frente al modelo grande.
 
 El modelo se enmarca en una familia de utilidades de compresión de contexto (etiquetas "context-compression", "supercompress", "neural-keep"): un cross-encoder que puntúa pares de textos para decidir qué fragmentos de contexto conviene conservar y cuáles descartar antes de pasarlos a un modelo generador. La model card menciona un umbral de inferencia (`inference_threshold`) de 0,42 almacenado en el fichero `sc_meta.json`, junto con métricas de "gate" que no se detallan en el texto disponible.
 
@@ -17,7 +17,7 @@ El modelo tiene licencia MIT, se distribuye en formato safetensors para la libre
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada (el modelo base, ModernBERT-base, admite secuencias de hasta 8192 tokens) |
 | Tipos de cuantizacion | no disponible; no se publican variantes GGUF, AWQ, GPTQ ni similares en la informacion consultada |
-| Idiomas soportados | no disponible (el campo de idiomas figura como no disponible en la ficha de HuggingFace) |
+| Idiomas soportados | no disponible (el campo de idiomas figura como no disponible en la ficha de Hugging Face) |
 | Licencia | MIT |
 | Formato de pesos | safetensors (`model.safetensors`, ~571 MB; repositorio de 0,6 GB) |
 | Tarea (pipeline) | text-classification |
@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sc-keep-crossencoder-v4-base-distill-v2 | 149,6 M | no disponible | Cross-encoder de compresion de contexto (destilado) | MIT | HuggingFace, 0 descargas |
-| sc-keep-crossencoder-v4-large (profesor) | no disponible | no disponible | Cross-encoder de compresion de contexto | MIT | HuggingFace, modelo servido en produccion segun la model card |
-| answerdotai/ModernBERT-base | no disponible en la informacion consultada | no disponible | Encoder transformer de proposito general | no disponible en la informacion consultada | HuggingFace, modelo base del que parte el estudiante |
+| sc-keep-crossencoder-v4-base-distill-v2 | 149,6 M | no disponible | Cross-encoder de compresion de contexto (destilado) | MIT | Hugging Face, 0 descargas |
+| sc-keep-crossencoder-v4-large (profesor) | no disponible | no disponible | Cross-encoder de compresion de contexto | MIT | Hugging Face, modelo servido en produccion segun la model card |
+| answerdotai/ModernBERT-base | no disponible en la informacion consultada | no disponible | Encoder transformer de proposito general | no disponible en la informacion consultada | Hugging Face, modelo base del que parte el estudiante |
 
 No se dispone de datos de rendimiento comparado entre estos modelos en la informacion proporcionada, por lo que la comparativa se limita a tamano, licencia y disponibilidad. Alternativas de terceros de la misma categoria (cross-encoders de reranking) no se detallan aqui por falta de datos verificados en las fuentes consultadas.
 
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado entre estos modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arjunkshah21/sc-keep-crossencoder-v4-base-distill-v2
+- Modelo en Hugging Face: https://huggingface.co/arjunkshah21/sc-keep-crossencoder-v4-base-distill-v2
 - Modelo profesor (v4-large): https://huggingface.co/arjunkshah21/sc-keep-crossencoder-v4-large
 - Perfil del autor (Arjun Shah): https://huggingface.co/arjunkshah21/models
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base

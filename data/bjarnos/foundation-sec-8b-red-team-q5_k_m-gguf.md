@@ -76,7 +76,7 @@ Nota: la comparativa se basa en información pública de los repositorios; no se
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/Bjarnos/foundation-sec-8b-red-team-Q5_K_M-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/Bjarnos/foundation-sec-8b-red-team-Q5_K_M-GGUF
 - Modelo base (Ironcybersec): https://huggingface.co/Ironcybersec/foundation-sec-8b-red-team
 - Modelo original Foundation-Sec-8B: https://huggingface.co/fdtn-ai/Foundation-Sec-8B
 - Página de Ollama con variante del modelo: https://ollama.com/FenkoHQ/Foundation-Sec-8B

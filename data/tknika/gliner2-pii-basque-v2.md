@@ -100,9 +100,9 @@ Basque NER, conjuntos de validacion de BasqueGLUE (500 frases por split), mostra
 
 | Modelo | Parametros | Contexto | Micro F1 (eval sintetica) | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| gliner2-PII-basque-v2 | 307.098.645 | no disponible | 0,934 | eu, es, fr | apache-2.0 | HuggingFace |
-| gliner2-PII-basque (v1) | no disponible | no disponible | 0,808 | eu, es, fr | no disponible | HuggingFace |
-| fastino/gliner2-privacy-filter-PII-multi | 205M (segun model card) | no disponible | 0,691 (zero-shot) | multilingue | no disponible | HuggingFace |
+| gliner2-PII-basque-v2 | 307.098.645 | no disponible | 0,934 | eu, es, fr | apache-2.0 | Hugging Face |
+| gliner2-PII-basque (v1) | no disponible | no disponible | 0,808 | eu, es, fr | no disponible | Hugging Face |
+| fastino/gliner2-privacy-filter-PII-multi | 205M (segun model card) | no disponible | 0,691 (zero-shot) | multilingue | no disponible | Hugging Face |
 
 No se dispone en la informacion proporcionada de otros modelos comparables de deteccion de PII en euskera con los que contrastar parametros, contexto o licencia.
 
@@ -121,7 +121,7 @@ No se dispone en la informacion proporcionada de otros modelos comparables de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tknika/gliner2-PII-basque-v2
+- Modelo en Hugging Face: https://huggingface.co/tknika/gliner2-PII-basque-v2
 - Version anterior (v1): https://huggingface.co/tknika/gliner2-PII-basque
 - Modelo base: https://huggingface.co/fastino/gliner2-privacy-filter-PII-multi
 - Dataset sintetico de PII: https://huggingface.co/datasets/tknika/pii-synthetic-basque-v2

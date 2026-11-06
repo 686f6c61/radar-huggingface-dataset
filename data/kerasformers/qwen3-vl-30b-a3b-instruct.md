@@ -65,10 +65,10 @@ El modelo es una conversión directa de `Qwen/Qwen3-VL-30B-A3B-Instruct`, por lo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kerasformers/qwen3-vl-30b-a3b-instruct
+- Modelo en Hugging Face: https://huggingface.co/kerasformers/qwen3-vl-30b-a3b-instruct
 - Repositorio KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3-VL-MoE: https://imvision12.github.io/KerasFormers/qwen3_vl_moe/
-- Colección HuggingFace de Qwen3-VL-MoE: https://huggingface.co/collections/kerasformers/qwen3-vl-moe-6a7eb7d3e6d95b296dae7d0d
+- Colección Hugging Face de Qwen3-VL-MoE: https://huggingface.co/collections/kerasformers/qwen3-vl-moe-6a7eb7d3e6d95b296dae7d0d
 - Paper Qwen3 Technical Report: https://arxiv.org/abs/2505.09388
 - Paper Qwen2.5-VL Technical Report: https://arxiv.org/abs/2502.13923
 - Paper Qwen2-VL: https://arxiv.org/abs/2409.12191

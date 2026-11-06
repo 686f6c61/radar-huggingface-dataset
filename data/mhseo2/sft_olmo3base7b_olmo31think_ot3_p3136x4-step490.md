@@ -71,9 +71,9 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| sft_olmo3base7b_olmo31think_ot3_p3136x4-step490 | 7,298 B | No disponible (entrenado a 32.768) | Apache 2.0 | HuggingFace (37 descargas) | Checkpoint intermedio de SFT matemático |
-| Olmo-3-1025-7B (base, AllenAI) | ~7 B | No disponible | Apache 2.0 | HuggingFace | Modelo base sin SFT matemático específico |
-| Olmo-3.1-32B-Think (AllenAI) | ~32 B | No disponible | No disponible | HuggingFace | Profesor usado para generar las trazas |
+| sft_olmo3base7b_olmo31think_ot3_p3136x4-step490 | 7,298 B | No disponible (entrenado a 32.768) | Apache 2.0 | Hugging Face (37 descargas) | Checkpoint intermedio de SFT matemático |
+| Olmo-3-1025-7B (base, AllenAI) | ~7 B | No disponible | Apache 2.0 | Hugging Face | Modelo base sin SFT matemático específico |
+| Olmo-3.1-32B-Think (AllenAI) | ~32 B | No disponible | No disponible | Hugging Face | Profesor usado para generar las trazas |
 | Alternativas de 7B con razonamiento matemático | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos verificados en la información |
 
 No se dispone de resultados de benchmarks de los modelos comparables en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -93,7 +93,7 @@ No se dispone de resultados de benchmarks de los modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step490
+- Modelo en Hugging Face: https://huggingface.co/mhseo2/sft_olmo3base7b_olmo31think_ot3_p3136x4-step490
 - Modelo base: https://huggingface.co/mhseo2/Olmo-3-1025-7B-opd
 - Modelo profesor: https://huggingface.co/allenai/Olmo-3.1-32B-Think
 - Dataset OpenThoughts3: no disponible en la información proporcionada

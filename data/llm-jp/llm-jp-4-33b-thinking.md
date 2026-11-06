@@ -81,7 +81,7 @@ El modelo 33B denso es el mas grande de la familia LLM-jp-4 y, segun el NII, sup
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/llm-jp/llm-jp-4-33b-thinking
+- Repositorio Hugging Face: https://huggingface.co/llm-jp/llm-jp-4-33b-thinking
 - Coleccion LLM-jp-4 Models: https://huggingface.co/collections/llm-jp/llm-jp-4-models
 - Cookbook de uso: https://github.com/llm-jp/llm-jp-4-cookbook
 - Dataset SFT: https://huggingface.co/datasets/llm-jp/llm-jp-4-thinking-sft-data

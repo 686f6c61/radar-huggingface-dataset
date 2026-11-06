@@ -2,11 +2,11 @@
 
 ## Resumen
 
-CXR-SD es un modelo de difusión de texto a imagen especializado en la generación de radiografías de tórax (Chest X-Ray), desarrollado por el usuario itsb4binh y publicado en HuggingFace. Se basa en un fine-tuning del modelo Stable Diffusion v1.5, una arquitectura de difusión latente ampliamente conocida y estable, adaptada específicamente al dominio médico de la imagen radiológica. El modelo está diseñado para resolver el problema de la escasez de datos etiquetados en el ámbito médico, permitiendo generar imágenes sintéticas de rayos X de tórax a partir de descripciones textuales.
+CXR-SD es un modelo de difusión de texto a imagen especializado en la generación de radiografías de tórax (Chest X-Ray), desarrollado por el usuario itsb4binh y publicado en Hugging Face. Se basa en un fine-tuning del modelo Stable Diffusion v1.5, una arquitectura de difusión latente ampliamente conocida y estable, adaptada específicamente al dominio médico de la imagen radiológica. El modelo está diseñado para resolver el problema de la escasez de datos etiquetados en el ámbito médico, permitiendo generar imágenes sintéticas de rayos X de tórax a partir de descripciones textuales.
 
-La relevancia de este modelo reside en su potencial para la generación de datos sintéticos en el campo de la radiología, un área donde la obtención de conjuntos de datos grandes y diversos es complicada por cuestiones de privacidad del paciente y costes de anotación. Al estar basado en Stable Diffusion v1.5, hereda su flexibilidad y su integración con el ecosistema de la librería diffusers de HuggingFace, aunque su especialización en un dominio tan concreto como el de las radiografías de tórax lo distingue de los modelos genéricos de generación de imágenes.
+La relevancia de este modelo reside en su potencial para la generación de datos sintéticos en el campo de la radiología, un área donde la obtención de conjuntos de datos grandes y diversos es complicada por cuestiones de privacidad del paciente y costes de anotación. Al estar basado en Stable Diffusion v1.5, hereda su flexibilidad y su integración con el ecosistema de la librería diffusers de Hugging Face, aunque su especialización en un dominio tan concreto como el de las radiografías de tórax lo distingue de los modelos genéricos de generación de imágenes.
 
-Cabe destacar que, a fecha de su publicación, el modelo no cuenta con descargas ni valoraciones en HuggingFace, lo que sugiere que es un proyecto reciente o poco difundido. La información disponible en su model card es mínima, sin detalles sobre el proceso de entrenamiento, el conjunto de datos utilizado o los resultados de evaluación, lo que limita la capacidad de realizar una evaluación técnica exhaustiva.
+Cabe destacar que, a fecha de su publicación, el modelo no cuenta con descargas ni valoraciones en Hugging Face, lo que sugiere que es un proyecto reciente o poco difundido. La información disponible en su model card es mínima, sin detalles sobre el proceso de entrenamiento, el conjunto de datos utilizado o los resultados de evaluación, lo que limita la capacidad de realizar una evaluación técnica exhaustiva.
 
 ## Especificaciones tecnicas
 
@@ -31,7 +31,7 @@ El entrenamiento del modelo se realizó mediante fine-tuning de los pesos de Sta
 
 - Generación de imágenes de radiografías de tórax a partir de prompts textuales en inglés.
 - Capacidad para generar variaciones de imágenes radiológicas con diferentes características según el prompt.
-- Integración con el ecosistema de diffusers de HuggingFace, lo que facilita su uso en pipelines existentes.
+- Integración con el ecosistema de diffusers de Hugging Face, lo que facilita su uso en pipelines existentes.
 - Soporte para técnicas de generación controlada como img2img o inpainting, heredadas de Stable Diffusion v1.5.
 - Capacidad de ajuste fino adicional con datasets propios gracias a su licencia MIT.
 - Generación de imágenes sintéticas que pueden utilizarse para aumentar conjuntos de datos de entrenamiento.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: al estar basado en Stable Diffusion v1.5, la inferencia requiere aproximadamente 4-6 GB de VRAM en FP16, dependiendo de la resolución de salida y el número de pasos de denoising.
 - GPU recomendadas: NVIDIA RTX 3060 (12GB) o superior para un rendimiento fluido; GPUs con menos VRAM pueden funcionar con cuantización o usando la CPU.
 - En consumer GPU: sí, cabe en GPUs de gama media como la RTX 3060, RTX 3070 o RTX 4060. También puede ejecutarse en GPUs con 8GB de VRAM usando optimizaciones de memoria.
-- Opciones de despliegue: se puede utilizar con la librería diffusers de HuggingFace, así como con herramientas compatibles como Automatic1111 WebUI, ComfyUI, o mediante APIs de inferencia. También es posible desplegarlo con servicios como Replicate o RunPod.
+- Opciones de despliegue: se puede utilizar con la librería diffusers de Hugging Face, así como con herramientas compatibles como Automatic1111 WebUI, ComfyUI, o mediante APIs de inferencia. También es posible desplegarlo con servicios como Replicate o RunPod.
 - Latencia y throughput: no se dispone de datos específicos para este modelo, pero para SD v1.5 en una RTX 4090, la generación de una imagen de 512x512 píxeles con 30 pasos tarda aproximadamente 2-3 segundos.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ La comparativa se limita a modelos de generación de radiografías de tórax. Ro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/itsb4binh/CXR-SD
+- Modelo en Hugging Face: https://huggingface.co/itsb4binh/CXR-SD
 - Modelo base Stable Diffusion v1.5: https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5
 - Documentación de diffusers: https://huggingface.co/docs/diffusers/index
 - google/cxr-foundation: https://huggingface.co/google/cxr-foundation

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LiaBoo/Osre es un repositorio de modelo publicado en HuggingFace por el usuario LiaBoo bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia, etiqueta de region (us) y fechas de creacion y ultima actualizacion (20 de septiembre de 2026, sin modificaciones posteriores). No se ha publicado model card con contenido tecnico: el README unicamente repite la declaracion de licencia.
+LiaBoo/Osre es un repositorio de modelo publicado en Hugging Face por el usuario LiaBoo bajo licencia Apache 2.0. La informacion disponible se limita a los metadatos del repositorio: identificador, autor, licencia, etiqueta de region (us) y fechas de creacion y ultima actualizacion (20 de septiembre de 2026, sin modificaciones posteriores). No se ha publicado model card con contenido tecnico: el README unicamente repite la declaracion de licencia.
 
 No hay datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, formato de pesos, pipeline de inferencia ni proceso de entrenamiento. El repositorio registra 0 descargas y 0 likes, por lo que tampoco existe evidencia de uso o validacion por parte de la comunidad. La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo.
 
@@ -98,6 +98,6 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LiaBoo/Osre
+- Hugging Face: https://huggingface.co/LiaBoo/Osre
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre el modelo en la busqueda realizada.

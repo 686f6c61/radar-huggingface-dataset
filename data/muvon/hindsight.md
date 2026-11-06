@@ -77,7 +77,7 @@ No se han identificado en la informacion disponible modelos publicados directame
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| muvon/hindsight | No disponible (encoder ~125 M, dato externo) | 24 eventos de ventana | AUROC 0,599-0,845 segun cabeza | Apache-2.0 | HuggingFace |
+| muvon/hindsight | No disponible (encoder ~125 M, dato externo) | 24 eventos de ventana | AUROC 0,599-0,845 segun cabeza | Apache-2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -96,7 +96,7 @@ No se han identificado en la informacion disponible modelos publicados directame
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muvon/hindsight
+- Modelo en Hugging Face: https://huggingface.co/muvon/hindsight
 - Modelo base: https://huggingface.co/microsoft/unixcoder-base
 - Ficheros incluidos en el repositorio: `encoder/` (transformers, safetensors), `model.pt` (nucleo del nivel 2 y cabezas, prefijo `ver.`), `config.json`, `results.json`, `quant_bench.json`
 - Paper, blog, repositorio o demo adicionales: no disponibles en la informacion proporcionada

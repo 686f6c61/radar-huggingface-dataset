@@ -45,7 +45,7 @@ La cuantización imatrix realizada por mradermacher emplea una matriz de importa
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El autor de la cuantizacion no incluye metricas de rendimiento en la model card, y el modelo base tampoco las documenta en el repositorio de HuggingFace. No se puede comparar con otros modelos de forma cuantitativa.
+No se han publicado resultados de benchmarks en la informacion disponible. El autor de la cuantizacion no incluye metricas de rendimiento en la model card, y el modelo base tampoco las documenta en el repositorio de Hugging Face. No se puede comparar con otros modelos de forma cuantitativa.
 
 ## Requisitos de hardware
 
@@ -70,8 +70,8 @@ No se dispone de informacion sobre modelos comparables en el mismo segmento (mod
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-Glint-i1-GGUF
-- Repositorio HuggingFace del modelo base: https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-Glint-i1-GGUF
+- Repositorio Hugging Face del modelo base: https://huggingface.co/ermiaazarkhalili/Qwen3.8-4B-SFT-Fable5-Glint
 - Repositorio de quants estaticos (sin imatrix): https://huggingface.co/mradermacher/Qwen3.8-4B-SFT-Fable5-Glint-GGUF
 - Repositorio de Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8
 - Pagina de OpenLM sobre Qwen3.8: https://openlm.ai/qwen3.8/

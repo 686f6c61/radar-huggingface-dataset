@@ -77,7 +77,7 @@ No hay datos de rendimiento publicados para este modelo, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LunaraHome-26B-A4B (i1-GGUF) | 26B totales, ~4B activos (MoE, segun nomenclatura) | no disponible | Apache 2.0 | GGUF en HuggingFace |
+| LunaraHome-26B-A4B (i1-GGUF) | 26B totales, ~4B activos (MoE, segun nomenclatura) | no disponible | Apache 2.0 | GGUF en Hugging Face |
 | Qwen3-30B-A3B | 30B totales, ~3B activos (MoE) | hasta 128K en las variantes publicadas | Apache 2.0 | safetensors y GGUF |
 | Gemma 3 27B | 27B densos | 128K en las variantes publicadas | Gemma Terms of Use | safetensors y GGUF |
 | Mixtral 8x7B | 46B totales, ~13B activos (MoE) | 32K | Apache 2.0 | safetensors y GGUF |
@@ -99,7 +99,7 @@ La ventaja diferencial de LunaraHome-26B-A4B es su especializacion en domotica y
 
 ## Enlaces
 
-- Repositorio HuggingFace (i1-GGUF): https://huggingface.co/mradermacher/LunaraHome-26B-A4B-i1-GGUF
+- Repositorio Hugging Face (i1-GGUF): https://huggingface.co/mradermacher/LunaraHome-26B-A4B-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/LunaraHome-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/Maxinger15/LunaraHome-26B-A4B
 - Pagina de resumen y descargas del autor: https://hf.tst.eu/model#LunaraHome-26B-A4B-i1-GGUF

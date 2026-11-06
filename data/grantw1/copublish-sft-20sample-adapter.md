@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `grantw1/copublish-sft-20sample-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `grantw1`. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `unsloth/gemma-3-27b-it-bnb-4bit`, una versión cuantizada a 4 bits del modelo Gemma 3 27B de Google. El adaptador está diseñado para la generación de texto conversacional y se distribuye en formato PEFT, lo que permite cargarlo sobre el modelo base sin necesidad de modificar los pesos completos.
+El modelo `grantw1/copublish-sft-20sample-adapter` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `grantw1`. Se trata de un ajuste fino supervisado (SFT) aplicado sobre el modelo base `unsloth/gemma-3-27b-it-bnb-4bit`, una versión cuantizada a 4 bits del modelo Gemma 3 27B de Google. El adaptador está diseñado para la generación de texto conversacional y se distribuye en formato PEFT, lo que permite cargarlo sobre el modelo base sin necesidad de modificar los pesos completos.
 
 La relevancia de este adaptador reside en su enfoque de eficiencia: al ser un adaptador LoRA, ocupa solo 0.2 GB y puede integrarse en flujos de trabajo que ya utilicen el modelo base cuantizado. Sin embargo, la información pública es extremadamente limitada: la model card no incluye detalles sobre el dataset de entrenamiento, los hiperparámetros, las capacidades específicas ni los resultados de evaluación. El repositorio no registra descargas ni valoraciones, lo que sugiere que se trata de un proyecto experimental o personal sin validación externa.
 
@@ -33,7 +33,7 @@ El adaptador se basa en la arquitectura Transformer del modelo Gemma 3 27B, que 
 
 - Prototipado rápido de chatbots: el adaptador puede cargarse sobre el modelo base cuantizado para experimentar con ajustes finos ligeros en entornos de desarrollo, aunque su reducido tamaño de entrenamiento (20 muestras) limita su utilidad práctica.
 - Investigación sobre eficiencia de adaptadores: sirve como ejemplo de cómo aplicar LoRA sobre Gemma 3 27B con PEFT, útil para estudiar el flujo de trabajo de fine-tuning eficiente.
-- Pruebas de integración técnica: permite validar la compatibilidad entre adaptadores PEFT y modelos cuantizados con bitsandbytes en pipelines de HuggingFace.
+- Pruebas de integración técnica: permite validar la compatibilidad entre adaptadores PEFT y modelos cuantizados con bitsandbytes en pipelines de Hugging Face.
 - No se recomienda su uso en producción debido a la falta de documentación, evaluación y datos de entrenamiento verificables.
 
 ## Benchmarks y rendimiento
@@ -63,6 +63,6 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/grantw1/copublish-sft-20sample-adapter
+- Repositorio en Hugging Face: https://huggingface.co/grantw1/copublish-sft-20sample-adapter
 - Modelo base: https://huggingface.co/unsloth/gemma-3-27b-it-bnb-4bit
 - Referencia a LoRA (paper): https://arxiv.org/abs/1910.09700

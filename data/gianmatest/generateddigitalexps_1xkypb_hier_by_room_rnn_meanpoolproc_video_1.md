@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xKypB_hier_by_room_rnn_meanPoolProc_video_1` es un modelo publicado en HuggingFace Hub por el usuario `gianmaTest` el 25 de octubre de 2026. Contiene 2.366.208 parametros (~2,37 M) en un unico artefacto de pesos en formato safetensors. El repositorio no incluye model card descriptiva: el README se limita al texto autogenerado por la integracion `PytorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "[More Information Needed]". Tampoco se declaran pipeline, licencia, idiomas ni datos de entrenamiento.
+`generatedDigitalExps_1xKypB_hier_by_room_rnn_meanPoolProc_video_1` es un modelo publicado en Hugging Face Hub por el usuario `gianmaTest` el 25 de octubre de 2026. Contiene 2.366.208 parametros (~2,37 M) en un unico artefacto de pesos en formato safetensors. El repositorio no incluye model card descriptiva: el README se limita al texto autogenerado por la integracion `PytorchModelHubMixin`, con los campos Code, Paper y Docs marcados como "[More Information Needed]". Tampoco se declaran pipeline, licencia, idiomas ni datos de entrenamiento.
 
 El identificador del repositorio sugiere un experimento de investigacion con estructura jerarquica ("hier_by_room"), una RNN con agregacion por mean pooling ("meanPoolProc") y una entrada de video ("video_1"). Conviene subrayar que esto es una interpretacion del nombre del repositorio y no un dato documentado por el autor.
 
@@ -23,7 +23,7 @@ Por su escala, el modelo no es un LLM ni compite en la categoria de modelos gene
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura. El unico indicio tecnico verificable es el uso de `PyTorchModelHubMixin`, lo que implica que los pesos corresponden a un `torch.nn.Module` serializado con PyTorch y subido mediante la utilidad de HuggingFace Hub. El nombre del repositorio apunta a una red neuronal recurrente organizada de forma jerarquica (posiblemente con un nivel por "room", es decir, por habitacion o region) y con un mecanismo de agregacion por media (mean pooling) sobre las representaciones de la secuencia. Se desconoce si la jerarquia se implementa con dos niveles de RNN, con pooling intermedio o con otra estrategia.
+No hay informacion publicada sobre la arquitectura. El unico indicio tecnico verificable es el uso de `PyTorchModelHubMixin`, lo que implica que los pesos corresponden a un `torch.nn.Module` serializado con PyTorch y subido mediante la utilidad de Hugging Face Hub. El nombre del repositorio apunta a una red neuronal recurrente organizada de forma jerarquica (posiblemente con un nivel por "room", es decir, por habitacion o region) y con un mecanismo de agregacion por media (mean pooling) sobre las representaciones de la secuencia. Se desconoce si la jerarquia se implementa con dos niveles de RNN, con pooling intermedio o con otra estrategia.
 
 Tampoco se dispone de datos sobre el entrenamiento: numero de tokens o de fotogramas procesados, composicion del dataset, funcion de perdida, si hubo ajuste fino con RLHF o DPO, ni hiperparametros. No se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, SSM, arquitectura hibrida, etc.). El tamano del repositorio es de 0,0 GB, coherente con un checkpoint de apenas unos megas.
 
@@ -35,14 +35,14 @@ Tampoco se dispone de datos sobre el entrenamiento: numero de tokens o de fotogr
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidad especial (modo thinking, audio, etc.): no disponible.
-- Integracion con el ecosistema HuggingFace: si, via `PyTorchModelHubMixin` para carga y guardado de checkpoints.
+- Integracion con el ecosistema Hugging Face: si, via `PyTorchModelHubMixin` para carga y guardado de checkpoints.
 
 ## Casos de uso
 
 Dado que no existe documentacion funcional, los siguientes escenarios son plausibles a partir del nombre y del formato de publicacion, y deben validarse antes de cualquier uso real:
 
 - Reproduccion de experimentos de investigacion: cargar el checkpoint con `PyTorchModelHubMixin` y ejecutarlo sobre el mismo pipeline jerarquico por habitacion para verificar resultados de un articulo o tesis; solo es viable si el autor facilita el codigo de preprocesado.
-- Pruebas de integracion del ecosistema HuggingFace: usar el repositorio como caso de test de flujos de descarga, carga y serializacion de modelos PyTorch de pocos megas en CI.
+- Pruebas de integracion del ecosistema Hugging Face: usar el repositorio como caso de test de flujos de descarga, carga y serializacion de modelos PyTorch de pocos megas en CI.
 - Prototipado de bajo coste en CPU: al ocupar menos de 10 MB en fp32, permite iterar sobre un portatil sin GPU en tareas de Investigacion y desarrollo de arquitecturas recurrentes.
 - Analisis de secuencias de video a nivel de escena (a validar): si se confirma la hipotesis "hier by room", encajaria en tareas de agregacion de caracteristicas por regiones o habitaciones, por ejemplo en robótica domestica o analisis de grabaciones de interior.
 - Baseline de comparacion en experimentos propios: util como referencia minima de 2,37 M parametros frente a arquitecturas mayores en tareas secuenciales.
@@ -66,7 +66,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `gianmaTest/generatedDigitalExps_..._video_1` | 2.366.208 | no disponible | no disponible | publico en HuggingFace |
+| `gianmaTest/generatedDigitalExps_..._video_1` | 2.366.208 | no disponible | no disponible | publico en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -83,7 +83,7 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKypB_hier_by_room_rnn_meanPoolProc_video_1
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xKypB_hier_by_room_rnn_meanPoolProc_video_1
 - Documentacion de `PyTorchModelHubMixin` (referenciada en la model card): https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Codigo: no disponible ("More Information Needed" en la model card)
 - Paper: no disponible ("More Information Needed" en la model card)

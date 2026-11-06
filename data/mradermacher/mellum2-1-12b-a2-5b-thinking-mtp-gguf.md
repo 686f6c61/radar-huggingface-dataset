@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha corresponde a una cuantización GGUF estática del modelo **Mellum2.1-12B-A2.5B-Thinking-MTP**, desarrollado originalmente por JetBrains y cuantizado por el usuario mradermacher, conocido por publicar cuantizaciones estáticas de gran calidad en HuggingFace. El modelo base es un LLM con arquitectura de mezcla de expertos (MoE) de 12.578 millones de parámetros totales, de los cuales aproximadamente 2.500 millones están activos por token, lo que permite inferencia rápida con una capacidad de modelo notablemente superior a su coste computacional.
+Esta ficha corresponde a una cuantización GGUF estática del modelo **Mellum2.1-12B-A2.5B-Thinking-MTP**, desarrollado originalmente por JetBrains y cuantizado por el usuario mradermacher, conocido por publicar cuantizaciones estáticas de gran calidad en Hugging Face. El modelo base es un LLM con arquitectura de mezcla de expertos (MoE) de 12.578 millones de parámetros totales, de los cuales aproximadamente 2.500 millones están activos por token, lo que permite inferencia rápida con una capacidad de modelo notablemente superior a su coste computacional.
 
 El sufijo "Thinking" indica que se trata de una variante de razonamiento extendido (similar a los modelos tipo reasoning/thinking), y "MTP" sugiere la incorporación de multi-token prediction, una técnica que acelera la decodificación. JetBrains desarrolla la familia Mellum orientada principalmente a tareas de código y asistencia al desarrollo, por lo que este modelo resulta relevante para quien busque un modelo compacto y eficiente para autocompletado, generación y razonamiento sobre código, ejecutable en hardware de consumo gracias al formato GGUF.
 

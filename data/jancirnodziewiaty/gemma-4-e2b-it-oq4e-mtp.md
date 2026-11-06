@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gemma-4-E2B-it-oQ4e-mtp es una cuantizacion mixta de precisión del modelo Gemma 4 E2B instruct (familia Gemma de Google), publicada por el usuario jancirnodziewiaty en HuggingFace. El checkpoint está empaquetado en formato MLX (Apple Silicon) y emplea la herramienta oQ de oMLX v0.7.3 para asignar distintos niveles de bits por tensor según su sensibilidad, logrando un promedio efectivo de 5,992 bits por peso sobre un total de 5.182B pesos lógicos.
+gemma-4-E2B-it-oQ4e-mtp es una cuantizacion mixta de precisión del modelo Gemma 4 E2B instruct (familia Gemma de Google), publicada por el usuario jancirnodziewiaty en Hugging Face. El checkpoint está empaquetado en formato MLX (Apple Silicon) y emplea la herramienta oQ de oMLX v0.7.3 para asignar distintos niveles de bits por tensor según su sensibilidad, logrando un promedio efectivo de 5,992 bits por peso sobre un total de 5.182B pesos lógicos.
 
 El modelo base es multimodal: la distribución de almacenamiento revela componentes separados para lenguaje (4.632B), visión (0.167B) y audio (0.305B), además de una cabeza MTP (Multi-Token Prediction) de 0.078B que permite decodificación especulativa. El checkpoint ocupa 3.9 GB en disco, lo que lo hace manejable en equipos con memoria unificada de gama alta.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ4e-mtp
+- Hugging Face: https://huggingface.co/jancirnodziewiaty/gemma-4-E2B-it-oQ4e-mtp
 - Herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio MLX: no disponible en la información proporcionada
 - Modelo base Gemma 4 E2B it: no disponible en la información proporcionada

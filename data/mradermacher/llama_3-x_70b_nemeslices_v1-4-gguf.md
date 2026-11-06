@@ -95,7 +95,7 @@ La comparacion con Llama 3.1 70B Instruct es orientativa: este merge deriva de l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Llama_3.x_70b_Nemeslices_V1.4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Llama_3.x_70b_Nemeslices_V1.4-GGUF
 - Modelo base: https://huggingface.co/Nexesenex/Llama_3.x_70b_Nemeslices_V1.4
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/Llama_3.x_70b_Nemeslices_V1.4-i1-GGUF
 - Pagina de descargas del autor: https://hf.tst.eu/model#Llama_3.x_70b_Nemeslices_V1.4-GGUF

@@ -81,7 +81,7 @@ La comparacion directa con alternativas fuera de la familia no es posible sin da
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-base-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-base-l4
 - Modelo principal del nivel L4 (referencia): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-l4
 - Adaptador SFT L4 (requerido antes de este): https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-sft-l4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507

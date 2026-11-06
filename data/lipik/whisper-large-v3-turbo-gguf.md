@@ -98,7 +98,7 @@ La comparación con alternativas de otros formatos (por ejemplo, implementacione
 
 ## Enlaces
 
-- [Modelo en HuggingFace: lipik/whisper-large-v3-turbo-gguf](https://huggingface.co/lipik/whisper-large-v3-turbo-gguf)
+- [Modelo en Hugging Face: lipik/whisper-large-v3-turbo-gguf](https://huggingface.co/lipik/whisper-large-v3-turbo-gguf)
 - [Modelo base: openai/whisper-large-v3-turbo](https://huggingface.co/openai/whisper-large-v3-turbo)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)
 - [Página de modelo en transcribe.cpp](https://github.com/handy-computer/transcribe.cpp/blob/main/docs/models/whisper-large-v3-turbo.md)

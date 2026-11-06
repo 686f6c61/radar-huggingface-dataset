@@ -6,7 +6,7 @@ El modelo `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b` 
 
 El interés de esta ficha es limitado pero concreto: se trata de un ejemplo de adaptación multilingüe de bajo coste sobre un modelo de 8 000 millones de parámetros, orientada a una tarea discriminativa (NLI) en un par de idiomas poco cubierto habitualmente (inglés-urdu). Es relevante para desarrolladores que quieran replicar el flujo de trabajo AdaLoRA + `peft` sobre Qwen3 en tareas de clasificación multilingüe, no como modelo generativo de propósito general.
 
-La model card publicada es la plantilla por defecto de HuggingFace y no aporta información sustantiva: no documenta hiperparámetros, datos, licencia, idiomas ni evaluación. Además, el repositorio no registra descargas ni "likes", y las búsquedas web realizadas no han devuelto ninguna fuente técnica relacionada. Por tanto, buena parte de los campos de esta ficha se marcan explícitamente como "no disponible".
+La model card publicada es la plantilla por defecto de Hugging Face y no aporta información sustantiva: no documenta hiperparámetros, datos, licencia, idiomas ni evaluación. Además, el repositorio no registra descargas ni "likes", y las búsquedas web realizadas no han devuelto ninguna fuente técnica relacionada. Por tanto, buena parte de los campos de esta ficha se marcan explícitamente como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b` | ~8 200 M (adaptador AdaLoRA sobre Qwen3-8B-Base) | No disponible (base: 32 768) | NLI ingles-urdu | No disponible | HuggingFace, 0 descargas |
+| `WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b` | ~8 200 M (adaptador AdaLoRA sobre Qwen3-8B-Base) | No disponible (base: 32 768) | NLI ingles-urdu | No disponible | Hugging Face, 0 descargas |
 | `Qwen/Qwen3-8B-Base` | ~8 200 M | 32 768 tokens nativos | Modelo generativo de proposito general | Apache 2.0 | Ampliamente disponible |
 | Fine-tuning completo de Qwen3-8B sobre XNLI | ~8 200 M | 32 768 tokens nativos | NLI | Apache 2.0 | No disponible como artefacto publico |
 | Adaptador LoRA equivalente sobre Qwen3-8B | ~8 200 M (base) + adaptador | 32 768 tokens nativos | NLI | Apache 2.0 (base) | No disponible en esta configuracion concreta |
@@ -96,7 +96,7 @@ No se han identificado adaptadores publicos directamente comparables (mismo mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b
+- Modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_42_AdaLoRA_Qwen3-8b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Libreria PEFT: https://github.com/huggingface/peft
 - Paper de AdaLoRA (referencia de la tecnica, no citado por el autor): https://arxiv.org/abs/2303.10512

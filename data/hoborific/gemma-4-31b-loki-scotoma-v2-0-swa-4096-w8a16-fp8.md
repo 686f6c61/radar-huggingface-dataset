@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096 (base) | 31,27B | 4096 (SWA) | bf16 | no disponible | HuggingFace |
-| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-W8A16-FP8 (este) | 31,27B | 4096 (SWA) | W8A16 FP8 | no disponible | HuggingFace |
-| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF | 31,27B | 4096 (SWA) | GGUF (varias) | no disponible | HuggingFace |
+| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096 (base) | 31,27B | 4096 (SWA) | bf16 | no disponible | Hugging Face |
+| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-W8A16-FP8 (este) | 31,27B | 4096 (SWA) | W8A16 FP8 | no disponible | Hugging Face |
+| Gemma-4-31B-Loki-Scotoma-V2.0-Swa-4096-GGUF | 31,27B | 4096 (SWA) | GGUF (varias) | no disponible | Hugging Face |
 
 La comparativa se limita a las variantes del mismo modelo base. No se dispone de datos de rendimiento para comparar con otros modelos de 31B como Llama 3.1 30B o Mistral Large.
 

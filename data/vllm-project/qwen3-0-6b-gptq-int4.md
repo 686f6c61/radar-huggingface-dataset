@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-GPTQ-Int4 (este) | ~0,6B | 32.768 | GPTQ Int4, group 128 | Apache 2.0 | HuggingFace (vllm-project) |
-| Qwen/Qwen3-0.6B | ~0,6B | 32.768 | FP16/BF16 original | Apache 2.0 | HuggingFace (Qwen) |
-| JunHowie/Qwen3-0.6B-GPTQ-Int4 | ~0,6B | 32.768 | GPTQ Int4, group 128 | Apache 2.0 | HuggingFace (cuenta personal) |
+| Qwen3-0.6B-GPTQ-Int4 (este) | ~0,6B | 32.768 | GPTQ Int4, group 128 | Apache 2.0 | Hugging Face (vllm-project) |
+| Qwen/Qwen3-0.6B | ~0,6B | 32.768 | FP16/BF16 original | Apache 2.0 | Hugging Face (Qwen) |
+| JunHowie/Qwen3-0.6B-GPTQ-Int4 | ~0,6B | 32.768 | GPTQ Int4, group 128 | Apache 2.0 | Hugging Face (cuenta personal) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada. La diferencia principal entre las tres es el formato de pesos y el mantenedor del repositorio; el modelo base en precisión completa ofrece mayor fidelidad numérica a costa de mayor tamaño.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/Qwen3-0.6B-GPTQ-Int4
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/Qwen3-0.6B-GPTQ-Int4
 - Checkpoint original: https://huggingface.co/JunHowie/Qwen3-0.6B-GPTQ-Int4
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE

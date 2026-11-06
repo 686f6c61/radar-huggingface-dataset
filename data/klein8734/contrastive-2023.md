@@ -42,7 +42,7 @@ El repositorio incluye un checkpoint de inicialización (`model.safetensors`) qu
 - Validación de pipelines de entrenamiento: el modelo permite comprobar que el script `finetune.py` ejecuta correctamente el bucle de entrenamiento, la propagación hacia adelante y hacia atrás, y el guardado de checkpoints, antes de lanzar experimentos con modelos más grandes.
 - Pruebas de integración en CI/CD: al ser minúsculo (24.832 parámetros), puede integrarse en suites de pruebas automáticas para verificar que el código de la arquitectura no se rompe tras cambios en dependencias o en el entorno.
 - Experimentos académicos de bajo coste: investigadores pueden usar este checkpoint como baseline de capacidad mínima para comparar con otras implementaciones de Coca o con modelos contrastivos similares, siempre que se entrene desde cero con el mismo presupuesto de datos.
-- Depuración de implementaciones personalizadas: dado que es una implementación custom, sirve para depurar el adaptador necesario para cargarlo con APIs genéricas de HuggingFace, sin necesidad de recursos computacionales.
+- Depuración de implementaciones personalizadas: dado que es una implementación custom, sirve para depurar el adaptador necesario para cargarlo con APIs genéricas de Hugging Face, sin necesidad de recursos computacionales.
 - Enseñanza de arquitecturas contrastivas: en cursos o talleres, se puede usar para ilustrar los componentes de Coca (atención sliding window, fusión gated, etc.) de forma tangible y ejecutable en CPU.
 - Prueba de entornos de despliegue: aunque no es para producción, se puede usar para verificar que un servidor de inferencia (por ejemplo, vLLM o TGI) puede cargar un modelo safetensors y ejecutar una pasada forward, aunque el resultado no tenga sentido semántico.
 
@@ -66,7 +66,7 @@ No se dispone de modelos comparables en el mismo rango de parámetros (24.832) y
 
 - El checkpoint de inicialización no ha sido entrenado; cualquier salida es aleatoria y sin significado.
 - No se ha auditado el modelo en cuanto a robustez, equidad o transferencia de dominio.
-- La implementación es personalizada; las APIs genéricas de HuggingFace requieren un adaptador explícito para cargar el modelo.
+- La implementación es personalizada; las APIs genéricas de Hugging Face requieren un adaptador explícito para cargar el modelo.
 - No hay garantías de que la arquitectura funcione correctamente en tareas reales; es solo un artefacto de desarrollo.
 - La licencia BSD-3-Clause permite uso comercial, pero el autor advierte que se deben revisar los términos de las fuentes de datos externas si se usan con datasets propios.
 - No se proporcionan datos de entrenamiento, por lo que no se puede evaluar sesgos ni alucinaciones.
@@ -74,7 +74,7 @@ No se dispone de modelos comparables en el mismo rango de parámetros (24.832) y
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klein8734/contrastive-2023
+- Modelo en Hugging Face: https://huggingface.co/klein8734/contrastive-2023
 - Perfil del autor: https://huggingface.co/klein8734
 - Lista de modelos del autor: https://huggingface.co/klein8734/models
 - Referencia a CLIP (OpenAI): https://github.com/openai/CLIP

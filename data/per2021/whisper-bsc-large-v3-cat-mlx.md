@@ -63,11 +63,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Ventana / contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| per2021/whisper-bsc-large-v3-cat-mlx (este) | 1550 M (heredados) | 30 s de audio | MLX safetensors float16 | Apache 2.0 | HuggingFace, 0 descargas |
-| BSC-LT/whisper-bsc-large-v3-cat | 1550 M (heredados) | 30 s de audio | PyTorch safetensors | Apache 2.0 | HuggingFace (modelo base del anterior) |
-| per2021/whisper-large-v3-ca-punctuated-mlx | mismo tamano de fichero segun la model card | 30 s de audio | MLX safetensors | no indicada en la informacion disponible | HuggingFace (modelo hermano, salida con puntuacion y mayusculas) |
-| openai/whisper-large-v3 | 1550 M (heredados) | 30 s de audio | PyTorch safetensors | Apache 2.0 | HuggingFace (modelo base original) |
-| openai/whisper-large-v3-turbo | no disponible en la informacion proporcionada | 30 s de audio | PyTorch safetensors | Apache 2.0 | HuggingFace (citado en la model card como mas rapido) |
+| per2021/whisper-bsc-large-v3-cat-mlx (este) | 1550 M (heredados) | 30 s de audio | MLX safetensors float16 | Apache 2.0 | Hugging Face, 0 descargas |
+| BSC-LT/whisper-bsc-large-v3-cat | 1550 M (heredados) | 30 s de audio | PyTorch safetensors | Apache 2.0 | Hugging Face (modelo base del anterior) |
+| per2021/whisper-large-v3-ca-punctuated-mlx | mismo tamano de fichero segun la model card | 30 s de audio | MLX safetensors | no indicada en la informacion disponible | Hugging Face (modelo hermano, salida con puntuacion y mayusculas) |
+| openai/whisper-large-v3 | 1550 M (heredados) | 30 s de audio | PyTorch safetensors | Apache 2.0 | Hugging Face (modelo base original) |
+| openai/whisper-large-v3-turbo | no disponible en la informacion proporcionada | 30 s de audio | PyTorch safetensors | Apache 2.0 | Hugging Face (citado en la model card como mas rapido) |
 
 Diferencias clave: frente al modelo base del BSC, este repositorio solo cambia el formato y permite ejecucion en GPU de Apple Silicon. Frente al modelo hermano con puntuacion, la diferencia practica es el estilo de salida (normalizado aqui, con signos y mayusculas alli) con un tamano de fichero y una velocidad equivalentes segun la model card. Frente a whisper-large-v3-turbo, la ventaja es la precision del large-v3 completo y el ajuste en catalan; la desventaja, la velocidad.
 
@@ -86,7 +86,7 @@ Diferencias clave: frente al modelo base del BSC, este repositorio solo cambia e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/per2021/whisper-bsc-large-v3-cat-mlx
+- Modelo en Hugging Face: https://huggingface.co/per2021/whisper-bsc-large-v3-cat-mlx
 - Modelo base del ajuste fino (BSC-LT): https://huggingface.co/BSC-LT/whisper-bsc-large-v3-cat
 - Modelo base original: https://huggingface.co/openai/whisper-large-v3
 - Libreria mlx-whisper: https://pypi.org/project/mlx-whisper/

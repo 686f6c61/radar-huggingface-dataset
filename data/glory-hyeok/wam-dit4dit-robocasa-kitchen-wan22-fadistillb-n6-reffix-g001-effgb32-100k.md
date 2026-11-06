@@ -69,9 +69,9 @@ No disponible. No se han encontrado checkpoints comparables publicados en el mom
 
 ## Enlaces
 
-- [HuggingFace - wam-dit4dit-robocasa-kitchen-wan22-fadistillB-n6-reffix-g001-effgb32-100k](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillB-n6-reffix-g001-effgb32-100k)
-- [HuggingFace - variante I2V](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k)
-- [HuggingFace - variante V2V](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-v2v-100k)
+- [Hugging Face - wam-dit4dit-robocasa-kitchen-wan22-fadistillB-n6-reffix-g001-effgb32-100k](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-wan22-fadistillB-n6-reffix-g001-effgb32-100k)
+- [Hugging Face - variante I2V](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-i2v-100k)
+- [Hugging Face - variante V2V](https://huggingface.co/glory-hyeok/wam-dit4dit-robocasa-kitchen-v2v-100k)
 - [GitHub - DiT4DiT (Mondo Robotics)](https://github.com/Mondo-Robotics/DiT4DiT)
 - [Paper - DiT4DiT: Jointly Modeling Video Dynamics and Actions for Generalizable Robotic Manipulation](https://arxiv.org/html/2603.10448v1)
 - [GitHub - RoboCasa](https://github.com/robocasa/robocasa)

@@ -64,6 +64,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- [HuggingFace - MohamedAhmedAE/llava-medical-1B-clip-vit-stage2](https://huggingface.co/MohamedAhmedAE/llava-medical-1B-clip-vit-stage2)
+- [Hugging Face - MohamedAhmedAE/llava-medical-1B-clip-vit-stage2](https://huggingface.co/MohamedAhmedAE/llava-medical-1B-clip-vit-stage2)
 
 No se han encontrado papers, blogs, repositorios adicionales ni demos asociados al modelo en la información proporcionada.

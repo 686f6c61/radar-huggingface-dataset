@@ -6,7 +6,7 @@ goi-intent-v1 es un clasificador de intenciones desarrollado por 2HeartsVN para 
 
 El repositorio contiene dos variantes con papeles diferenciados. La principal, goibert-b-dapt-j2, se basa en GoiBERT-B con preentrenamiento adaptativo de dominio (DAPT) y 103 millones de parámetros, exportada en ONNX fp32. La variante de respaldo, goiturn-s-j1, emplea GoiTurn-S con 26,5 millones de parámetros y se exporta tanto en fp32 como en INT8.
 
-La relevancia de esta ficha es limitada en términos de conocimiento público: se trata de un modelo interno y privado, sin pipeline, licencia ni idiomas declarados en HuggingFace, sin descargas ni valoraciones, y sin benchmarks públicos. Su interés radica en el patrón de despliegue (clasificador pequeño en ONNX sobre CPU) y en los datos de latencia y deriva de cuantización que la model card sí documenta.
+La relevancia de esta ficha es limitada en términos de conocimiento público: se trata de un modelo interno y privado, sin pipeline, licencia ni idiomas declarados en Hugging Face, sin descargas ni valoraciones, y sin benchmarks públicos. Su interés radica en el patrón de despliegue (clasificador pequeño en ONNX sobre CPU) y en los datos de latencia y deriva de cuantización que la model card sí documenta.
 
 ## Especificaciones tecnicas
 
@@ -95,7 +95,7 @@ No hay datos publicos de exactitud, contexto ni rendimiento frente a alternativa
 ## Limitaciones y advertencias
 
 - Modelo privado e interno: la model card lo etiqueta explicitamente como "private, internal" y destinado al bot de reparto de TwoHearts, no como modelo de proposito general.
-- Licencia no declarada: no hay licencia publicada en HuggingFace ni en la informacion disponible. No debe asumirse permiso de uso comercial.
+- Licencia no declarada: no hay licencia publicada en Hugging Face ni en la informacion disponible. No debe asumirse permiso de uso comercial.
 - Derivado de BamiBERT con revision legal pendiente: la propia model card indica uso interno unicamente hasta que se complete dicha revision, lo que condiciona cualquier distribucion o uso externo.
 - Idiomas no declarados: aunque existe una cabeza de deteccion de idioma, no se especifica que idiomas cubre ni con que calidad.
 - Sin benchmarks publicos: no hay exactitud, F1 ni evaluacion por clase, de modo que no es posible estimar el rendimiento real en produccion a partir de la informacion disponible.
@@ -108,7 +108,7 @@ No hay datos publicos de exactitud, contexto ni rendimiento frente a alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/2HeartsVN/goi-intent-v1
+- Modelo en Hugging Face: https://huggingface.co/2HeartsVN/goi-intent-v1
 - Repositorio de origen citado en la model card: Twohearts-Technologies/ai-foundary, rama ml-models, ruta experiments/goi-intent-v1 (sin URL publica disponible)
 - Plan de produccion citado: PRODUCTION_PLAN_EN.md dentro del repositorio de origen (sin URL publica disponible)
 - Servicio de despliegue citado: services/goi-intent (FastAPI + onnxruntime), sin URL publica disponible

@@ -13,7 +13,7 @@ La relevancia actual de este modelo radica en su combinación de tamaño (27B) y
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer denso (basado en Qwen3.8-27B); no se proporcionan detalles de capas, heads ni dimensiones |
-| Parametros totales | ~27 000 millones (el badge de HuggingFace muestra 5 885 566 464 elementos empaquetados, pero el autor confirma que el total real es ~27B) |
+| Parametros totales | ~27 000 millones (el badge de Hugging Face muestra 5 885 566 464 elementos empaquetados, pero el autor confirma que el total real es ~27B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible (se hereda del modelo base Qwen3.8-27B, pero no se especifica en la informacion) |
 | Tipos de cuantizacion | MLX 6-bit (group-wise, group size 64); tambien disponible en 8-bit MLX y GGUF Q8_0, Q6_K, Q4_K_M |
@@ -85,11 +85,11 @@ No se dispone de datos de rendimiento comparativo en tareas estandar. La princip
 - Cuantizacion 6-bit: puede introducir degradacion de calidad frente a BF16, aunque la divergencia KL reportada es baja. No hay benchmarks de tareas estandar para confirmar el impacto.
 - Licencia Apache-2.0: permite uso comercial, pero el contenido generado puede violar politicas de plataformas o leyes si se distribuye.
 - Sin soporte para GPU NVIDIA/AMD: el formato MLX solo funciona en Apple Silicon. Para otros hardware hay que usar las versiones GGUF.
-- Parametros totales confusos: el badge de HuggingFace muestra 5,9B debido al empaquetado de pesos; el total real es ~27B, lo que puede causar errores en herramientas automaticas.
+- Parametros totales confusos: el badge de Hugging Face muestra 5,9B debido al empaquetado de pesos; el total real es ~27B, lo que puede causar errores en herramientas automaticas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Abliterated-MLX-6bit
+- Repositorio Hugging Face: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Abliterated-MLX-6bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Version BF16 original (con vision): https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Uncensored-BF16
 - Version MLX 8-bit: https://huggingface.co/mlasli/Qwen3.8-27B-Heretic-Abliterated-MLX-8bit

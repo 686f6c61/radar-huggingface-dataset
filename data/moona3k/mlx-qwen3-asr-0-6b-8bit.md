@@ -96,7 +96,7 @@ La comparación directa disponible se limita al modelo fuente en fp16, sobre el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-8bit
+- Modelo en Hugging Face: https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Repositorio de la implementación MLX: https://github.com/moona3k/mlx-qwen3-asr
 - Matriz de cuantización (referenciada en la model card): `docs/benchmarks/2026-09-07-quant-matrix-test-clean-speaker100.md` dentro del repositorio

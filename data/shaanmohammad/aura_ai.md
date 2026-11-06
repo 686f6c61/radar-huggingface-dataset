@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aura\_AI es un repositorio de modelo publicado en HuggingFace por el usuario shaanmohammad bajo el identificador `shaanmohammad/Aura_AI`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia `afl-3.0`, sin descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y la ultima actualizacion registrada coincide con la fecha de creacion, por lo que no hay evidencia publica de mantenimiento posterior.
+Aura\_AI es un repositorio de modelo publicado en Hugging Face por el usuario shaanmohammad bajo el identificador `shaanmohammad/Aura_AI`. En el momento de redactar esta ficha, el repositorio no incluye model card con contenido tecnico: el README se limita a la declaracion de licencia `afl-3.0`, sin descripcion, arquitectura, tamano, datos de entrenamiento ni instrucciones de uso. El repositorio acumula 0 descargas y 0 likes, y la ultima actualizacion registrada coincide con la fecha de creacion, por lo que no hay evidencia publica de mantenimiento posterior.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a contenidos sobre productos lacteos y a informacion financiera de una empresa alimentaria, sin conexion alguna con inteligencia artificial. Por tanto, no existe informacion verificable sobre las caracteristicas tecnicas, el rendimiento o los casos de uso del modelo mas alla de los metadatos basicos del repositorio.
 
@@ -20,7 +20,7 @@ Esta ficha se publica, por tanto, como un registro de disponibilidad mas que com
 | Idiomas soportados | no disponible |
 | Licencia | afl-3.0 (Academic Free License 3.0) |
 | Formato de pesos | no disponible |
-| Identificador en HuggingFace | shaanmohammad/Aura_AI |
+| Identificador en Hugging Face | shaanmohammad/Aura_AI |
 | Autor | shaanmohammad |
 | Pipeline declarado | no disponible |
 | Region declarada | us |
@@ -72,7 +72,7 @@ No disponible. Los requisitos de VRAM, las GPU recomendadas y las opciones de de
 - Opciones de despliegue (vLLM, llama.cpp, Ollama, TGI): no confirmadas; dependen del formato de pesos publicado, que no se especifica.
 - Latencia y throughput: no disponibles.
 
-Se recomienda al lector inspeccionar el arbol de ficheros del repositorio en HuggingFace para comprobar si contiene pesos en safetensors, GGUF u otro formato antes de planificar cualquier despliegue.
+Se recomienda al lector inspeccionar el arbol de ficheros del repositorio en Hugging Face para comprobar si contiene pesos en safetensors, GGUF u otro formato antes de planificar cualquier despliegue.
 
 ## Comparativa con modelos similares
 
@@ -96,6 +96,6 @@ No disponible. Sin conocer el tamano, la arquitectura ni la licencia de uso prac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shaanmohammad/Aura_AI
+- Repositorio en Hugging Face: https://huggingface.co/shaanmohammad/Aura_AI
 - Resultados de busqueda web: no se ha recuperado ningun enlace relevante sobre el modelo. Los resultados obtenidos corresponden a paginas de productos lacteos y a un informe financiero de una empresa alimentaria, sin relacion con inteligencia artificial.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

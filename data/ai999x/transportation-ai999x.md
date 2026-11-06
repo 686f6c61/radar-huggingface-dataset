@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 - Compatibilidad con GPU de consumo: irrelevante; el despliegue objetivo es CPU, incluyendo entornos edge.
 - RAM y CPU: no se especifican requisitos mínimos; el tamaño del repositorio es de 0,1 GB y las dependencias declaradas son SymPy y mpmath.
 - Sistemas y versiones probados: Windows con Python 3.13; Linux x86-64 con Python 3.10, 3.11, 3.12, 3.13 y 3.14.
-- Opciones de despliegue: `pip install transportation-ai999x` desde PyPI o instalación directa del wheel alojado en HuggingFace; uso como librería Python (`import transportation_ai999x`). No aplica despliegue con vLLM, TGI, llama.cpp u Ollama.
+- Opciones de despliegue: `pip install transportation-ai999x` desde PyPI o instalación directa del wheel alojado en Hugging Face; uso como librería Python (`import transportation_ai999x`). No aplica despliegue con vLLM, TGI, llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser cálculo simbólico sobre CPU, la latencia dependerá del procedimiento concreto y no de un coste de inferencia neuronal dominante.
 
 ## Comparativa con modelos similares
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 | Cobertura de dominio | 77 capacidades cerradas de transporte | Abierta, con riesgo de error | Abierta pero requiere formular el cálculo | Amplia, genérica |
 | Ejecución offline | Sí, CPU, sin red | Posible con pesos locales y hardware adecuado | Sí | No |
 | Licencia | Apache-2.0 | Variable según modelo | Licencia permisiva del proyecto correspondiente | Propietaria |
-| Disponibilidad | PyPI + HuggingFace; 0 descargas y 0 likes en el momento de la ficha | Amplia | Amplia | Comercial |
+| Disponibilidad | PyPI + Hugging Face; 0 descargas y 0 likes en el momento de la ficha | Amplia | Amplia | Comercial |
 
 No se dispone de datos públicos de comparación directa con otros solucionadores de ingeniería del transporte, por lo que la comparativa es cualitativa.
 
@@ -97,11 +97,11 @@ No se dispone de datos públicos de comparación directa con otros solucionadore
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/transportation-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/transportation-ai999x
 - Paquete en PyPI: https://pypi.org/project/transportation-ai999x/
 - Guía de capacidades (docs): https://huggingface.co/AI999X/transportation-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/transportation-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Sitio web: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi
 - Licencia: https://huggingface.co/AI999X/transportation-ai999x/blob/main/LICENSE

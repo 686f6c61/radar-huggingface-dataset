@@ -81,7 +81,7 @@ El modelo financiero comparte arquitectura con el generalista de NVIDIA y con el
 
 ## Enlaces
 
-- Modelo MLX en HuggingFace: https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-MLX-6bit
+- Modelo MLX en Hugging Face: https://huggingface.co/nicolasembleton/Fastino-Nemotron-3.5-Lightning-Finance-MLX-6bit
 - Modelo base: https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Finance
 - Modelo original de NVIDIA: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4
 - Blog de Fastino sobre el afinamiento: https://fastino.ai/blog/learnings-from-fine-tuning-nvidia-nemotron-3.5-lightning-with-autonomous-agent

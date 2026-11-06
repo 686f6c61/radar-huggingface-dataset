@@ -6,7 +6,7 @@
 
 La relevancia es acotada: sirve como referencia practica de un pipeline completo de RL con Sample Factory (entrenamiento, evaluacion con 100 episodios retenidos y exportacion de un checkpoint de inferencia limpio, sin optimizador). El modelo reporta un `mean_reward` de 11,40050000 con desviacion estandar poblacional de 5,75725323 sobre la metrica `true_objective` original del entorno.
 
-El repo pesa 0.0 GB en HuggingFace (solo tensores del modelo y ficheros de evaluacion), no incluye codigo de entrenamiento, assets del juego ni el WAD original. La licencia MIT cubre exclusivamente el modelo original, la evaluacion y la documentacion; las imagenes y marcas del juego siguen perteneciendo a sus titulares.
+El repo pesa 0.0 GB en Hugging Face (solo tensores del modelo y ficheros de evaluacion), no incluye codigo de entrenamiento, assets del juego ni el WAD original. La licencia MIT cubre exclusivamente el modelo original, la evaluacion y la documentacion; las imagenes y marcas del juego siguen perteneciendo a sus titulares.
 
 ## Especificaciones tecnicas
 
@@ -68,7 +68,7 @@ No se han publicado otros resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Metrica reportada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `poplolioi11/deep-rl-unit8-doom-20261105` | GRU512, recurrencia 32 | `doom_health_gathering_supreme` | `mean_reward` 11,40050000 +/- 5,75725323 | MIT | HuggingFace, 0 descargas, 0 likes |
+| `poplolioi11/deep-rl-unit8-doom-20261105` | GRU512, recurrencia 32 | `doom_health_gathering_supreme` | `mean_reward` 11,40050000 +/- 5,75725323 | MIT | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables en la documentacion proporcionada.
@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/poplolioi11/deep-rl-unit8-doom-20261105
+- Modelo en Hugging Face: https://huggingface.co/poplolioi11/deep-rl-unit8-doom-20261105
 - Sample Factory: no disponible en la informacion proporcionada
 - ViZDoom: no disponible en la informacion proporcionada
 - Paper o blog del autor: no disponible en la informacion proporcionada

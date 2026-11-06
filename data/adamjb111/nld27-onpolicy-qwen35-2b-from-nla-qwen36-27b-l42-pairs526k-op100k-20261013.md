@@ -95,7 +95,7 @@ No se han identificado en la información proporcionada otros verbalizadores de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adamjb111/nld27-onpolicy-qwen35-2b-from-nla-qwen36-27b-L42-pairs526k-op100k-20261013
+- Modelo en Hugging Face: https://huggingface.co/adamjb111/nld27-onpolicy-qwen35-2b-from-nla-qwen36-27b-L42-pairs526k-op100k-20261013
 - Modelo profesor: https://huggingface.co/ceselder/qwen3.6-27b-nla-rl
 - Dataset de destilación: https://huggingface.co/datasets/adamjb111/nla-qwen36-27b-L42-distill-data
 - Código de entrenamiento (referencia en la model card): `scripts/nladistil27b_train_student_20261010.py`, repositorio "lenses" (URL no disponible)

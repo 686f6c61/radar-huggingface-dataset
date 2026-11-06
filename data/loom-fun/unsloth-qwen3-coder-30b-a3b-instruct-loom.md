@@ -80,7 +80,7 @@ La unica comparacion con datos verificables es contra el repositorio de unsloth 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/loom-fun/unsloth-Qwen3-Coder-30B-A3B-Instruct-loom
+- Repositorio en Hugging Face: https://huggingface.co/loom-fun/unsloth-Qwen3-Coder-30B-A3B-Instruct-loom
 - Modelo base (GGUF de unsloth): https://huggingface.co/unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF
 - Runtime Loom (ROCm): https://github.com/ROCm/hrx-system
 - Fabrica de paquetes loom-skills: https://github.com/loom-fun/loom-skills

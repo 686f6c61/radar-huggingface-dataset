@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`salmanhadli/sentiment-model` es un modelo de clasificacion de texto publicado en HuggingFace por el usuario salmanhadli. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la version destilada de BERT desarrollada por Hugging Face, orientado a la tarea de analisis de sentimiento segun la etiqueta de pipeline `text-classification`. El repositorio se genero con la libreria `Trainer` de transformers (tag `generated_from_trainer`) y expone los pesos en formato safetensors.
+`salmanhadli/sentiment-model` es un modelo de clasificacion de texto publicado en Hugging Face por el usuario salmanhadli. Se trata de un ajuste fino (fine-tuning) de `distilbert-base-uncased`, la version destilada de BERT desarrollada por Hugging Face, orientado a la tarea de analisis de sentimiento segun la etiqueta de pipeline `text-classification`. El repositorio se genero con la libreria `Trainer` de transformers (tag `generated_from_trainer`) y expone los pesos en formato safetensors.
 
 El modelo resuelve un problema clasico y muy demandado: asignar una etiqueta de polaridad (tipicamente positiva/negativa, o multilabel segun el dataset de ajuste) a un fragmento corto de texto. Su principal atractivo practico es el tamano: DistilBERT tiene aproximadamente 66 millones de parametros y 6 capas, lo que lo hace ejecutable en CPU y en cualquier GPU de consumo con un consumo de memoria inferior a 1 GB, algo relevante cuando se necesita clasificar grandes volumenes de texto con latencia baja y coste minimo.
 
@@ -36,7 +36,7 @@ Respecto al entrenamiento, la informacion disponible es minima. La etiqueta `gen
 - Clasificacion de texto corto: asignacion de una etiqueta de sentimiento a una secuencia de hasta 512 tokens.
 - Inferencia por lotes: al ser un encoder pequeno, permite procesar miles de textos por segundo en GPU con lotes grandes.
 - Ejecucion en CPU: viable para entornos sin acelerador, con latencias de decenas de milisegundos por texto.
-- Integracion directa con la API `pipeline("text-classification")` de transformers y con endpoints de HuggingFace (tag `endpoints_compatible`).
+- Integracion directa con la API `pipeline("text-classification")` de transformers y con endpoints de Hugging Face (tag `endpoints_compatible`).
 - Exportacion a otros runtimes (ONNX, TorchScript) para despliegue optimizado, aunque no se incluyen artefactos preexportados.
 - Capacidades multilingues: no declaradas; el backbone esta preentrenado basicamente en ingles.
 - Tool calling / function calling: no soportado, es un modelo de clasificacion, no generativo.
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparado entre estas opciones en la infor
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/salmanhadli/sentiment-model
+- Repositorio del modelo en Hugging Face: https://huggingface.co/salmanhadli/sentiment-model
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108
 - Paper de BERT (Devlin et al., 2018): https://arxiv.org/abs/1810.04805

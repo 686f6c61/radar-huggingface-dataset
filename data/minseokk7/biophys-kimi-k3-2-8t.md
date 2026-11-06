@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BioPhys-Kimi-K3-2.8T es un repositorio publicado en HuggingFace por el usuario minseokk7 que presenta un framework teórico de optimización para grandes modelos de lenguaje (LLM), denominado BioPhys-LLM. Según la model card, integra 14 teorías de ciencias naturales (física del estado sólido, termodinámica de la información, epigenética, geometría fractal, gravedad cuántica de bucles, etc.) en la arquitectura transformer para comprimir y acelerar la inferencia de modelos de escala billonaria, como el Kimi K3 de 2,8 billones de parámetros, en hardware de consumo (CPU de 16 núcleos y 32 GB de RAM). El proyecto afirma lograr una compresión de pesos de 5,6 TB a 13,77 GB, una ventana de contexto de 2 millones de tokens con una caché KV de solo 48 MB y una velocidad de generación de 347,8 tokens por segundo.
+BioPhys-Kimi-K3-2.8T es un repositorio publicado en Hugging Face por el usuario minseokk7 que presenta un framework teórico de optimización para grandes modelos de lenguaje (LLM), denominado BioPhys-LLM. Según la model card, integra 14 teorías de ciencias naturales (física del estado sólido, termodinámica de la información, epigenética, geometría fractal, gravedad cuántica de bucles, etc.) en la arquitectura transformer para comprimir y acelerar la inferencia de modelos de escala billonaria, como el Kimi K3 de 2,8 billones de parámetros, en hardware de consumo (CPU de 16 núcleos y 32 GB de RAM). El proyecto afirma lograr una compresión de pesos de 5,6 TB a 13,77 GB, una ventana de contexto de 2 millones de tokens con una caché KV de solo 48 MB y una velocidad de generación de 347,8 tokens por segundo.
 
 El repositorio no contiene pesos de modelo descargables, sino scripts de reproducción y documentación teórica. No se ha encontrado evidencia externa que verifique las afirmaciones de rendimiento, y la fecha de creación (agosto de 2026) es posterior a la fecha actual, lo que sugiere que podría tratarse de un proyecto especulativo o no validado. El Kimi K3 original, desarrollado por Moonshot AI, es un modelo real de 2,8 billones de parámetros con visión nativa y contexto de 1 millón de tokens, pero no tiene relación directa con este framework salvo el nombre.
 
@@ -61,7 +61,7 @@ El framework BioPhys-LLM no es comparable directamente con modelos como Kimi K3,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Kimi K3 (Moonshot AI) | 2,8 billones | 1 millón | Apache 2.0 (según fuentes) | Pesos públicos en HuggingFace |
+| Kimi K3 (Moonshot AI) | 2,8 billones | 1 millón | Apache 2.0 (según fuentes) | Pesos públicos en Hugging Face |
 | BioPhys-Kimi-K3-2.8T (framework) | No disponible | 2 millones (afirmado) | Apache 2.0 | Solo scripts, sin pesos |
 | DeepSeek V4 (mencionado) | 1,6 billones | No disponible | No disponible | No verificado |
 
@@ -78,7 +78,7 @@ El framework afirma comprimir el Kimi K3 a 13,77 GB, pero no hay evidencia de qu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/minseokk7/BioPhys-Kimi-K3-2.8T
+- Repositorio Hugging Face: https://huggingface.co/minseokk7/BioPhys-Kimi-K3-2.8T
 - Página oficial de Kimi K3 (Moonshot AI): https://www.kimi.ai/ai-models/kimi-k3
 - Documentación de la API de Kimi K3: https://platform.kimi.ai/docs/guide/kimi-k3-quickstart
 - Artículo en openlm.ai sobre Kimi K3: https://openlm.ai/kimi-k3/

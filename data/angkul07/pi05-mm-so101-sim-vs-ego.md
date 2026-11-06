@@ -71,7 +71,7 @@ No se dispone de comparativas directas con otros VLA en la información proporci
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/angkul07/pi05-mm-so101-sim-vs-ego
+- Repositorio Hugging Face: https://huggingface.co/angkul07/pi05-mm-so101-sim-vs-ego
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base
 - Dataset de simulación: https://huggingface.co/datasets/makermods/maniskill_50ep_so101_blue_cube_orange_tray_20260812_131142
 - Librería OpenPI: https://github.com/physical-intelligence/openpi (inferido, no confirmado en la información proporcionada)

@@ -91,5 +91,5 @@ No se dispone de informacion suficiente para realizar una comparativa fiable con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/katali13/Sous-Chef-27B-GGUF
+- Hugging Face: https://huggingface.co/katali13/Sous-Chef-27B-GGUF
 - No se han encontrado enlaces adicionales (paper, blog, repositorio del proyecto Bakery) en la busqueda web.

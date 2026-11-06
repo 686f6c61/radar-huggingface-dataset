@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aldr1s es un modelo publicado en HuggingFace por el usuario zoarag bajo el identificador `zoarag/Aldr1s`. Se trata de un repositorio de acceso restringido (gated), lo que significa que cualquier persona que quiera descargar los pesos debe solicitar acceso y aceptar las condiciones establecidas por el autor en la plataforma. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 like, y no cuenta con metadatos publicos de pipeline, licencia ni idiomas soportados.
+Aldr1s es un modelo publicado en Hugging Face por el usuario zoarag bajo el identificador `zoarag/Aldr1s`. Se trata de un repositorio de acceso restringido (gated), lo que significa que cualquier persona que quiera descargar los pesos debe solicitar acceso y aceptar las condiciones establecidas por el autor en la plataforma. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 1 like, y no cuenta con metadatos publicos de pipeline, licencia ni idiomas soportados.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, 6,6 GB, junto con las fechas de creacion (20 de junio de 2026) y ultima actualizacion (19 de septiembre de 2026). No se ha publicado informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. La busqueda web realizada no ha devuelto ningun resultado relacionado con el modelo: los enlaces recuperados corresponden a paginas de ayuda de YouTube y a hilos de foros sin relacion alguna con el proyecto.
 
@@ -21,7 +21,7 @@ Por tanto, esta ficha se limita a documentar la existencia del repositorio, sus 
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 6,6 GB |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas | 0 |
 | Likes | 1 |
 | Fecha de creacion | 2026-06-20 |
@@ -99,5 +99,5 @@ No disponible. No es posible seleccionar alternativas comparables sin conocer el
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zoarag/Aldr1s
+- Hugging Face: https://huggingface.co/zoarag/Aldr1s
 - Busqueda web: no se han encontrado papers, blogs, repositorios ni demos relacionados con zoarag/Aldr1s. Los resultados devueltos por el buscador correspondian a paginas de ayuda de YouTube y a hilos de foro sin relacion con el modelo, por lo que se han descartado.

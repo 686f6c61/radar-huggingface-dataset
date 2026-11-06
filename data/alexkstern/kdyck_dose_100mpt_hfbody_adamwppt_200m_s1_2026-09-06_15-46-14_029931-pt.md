@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la información disponible. La �
 
 ## Comparativa con modelos similares
 
-No hay datos comparativos disponibles en la información proporcionada. Los únicos modelos comparables son otros checkpoints de la misma serie experimental publicados por el mismo autor en HuggingFace, como `kdyck_dose_100Mpt_hfbody_200M_s1_2026-08-14_21-48-49_486094-pt` y `kdyck_dose_100Mpt_hfbody_20M_s1_2026-08-14_21-21-37_927240-pt`. Estos comparten arquitectura y objetivos de entrenamiento, pero no se han publicado especificaciones detalladas ni resultados que permitan una comparación cuantitativa.
+No hay datos comparativos disponibles en la información proporcionada. Los únicos modelos comparables son otros checkpoints de la misma serie experimental publicados por el mismo autor en Hugging Face, como `kdyck_dose_100Mpt_hfbody_200M_s1_2026-08-14_21-48-49_486094-pt` y `kdyck_dose_100Mpt_hfbody_20M_s1_2026-08-14_21-21-37_927240-pt`. Estos comparten arquitectura y objetivos de entrenamiento, pero no se han publicado especificaciones detalladas ni resultados que permitan una comparación cuantitativa.
 
 ## Limitaciones y advertencias
 
@@ -70,6 +70,6 @@ No hay datos comparativos disponibles en la información proporcionada. Los úni
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_200M_s1_2026-09-06_15-46-14_029931-pt
+- Hugging Face: https://huggingface.co/alexkstern/kdyck_dose_100Mpt_hfbody_adamwppt_200M_s1_2026-09-06_15-46-14_029931-pt
 - W&B run: https://wandb.ai/alexksternteam/token_dose_100Mpt_adamw_seed_replicas_v1/runs/iy9ly75s
 - Repositorio nanochat: https://github.com/karpathy/nanochat

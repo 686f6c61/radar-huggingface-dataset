@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "litert-community/MiniCPM-OCR-Decision-2B-LiteRT",
+  "slug": "litert-community-minicpm-ocr-decision-2b-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/MiniCPM-OCR-Decision-2B-LiteRT",
+  "created_at": "2026-11-06T01:13:23.000Z",
+  "updated_at": "2026-11-06T07:43:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "litert",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "ocr",
+    "ocr-verification",
+    "on-device",
+    "vision",
+    "npu",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "arxiv:2502.18443",
+    "base_model:openbmb/MiniCPM-OCR-Jev",
+    "base_model:quantized:openbmb/MiniCPM-OCR-Jev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105761035461,
+  "storage_human": "105.8 GB",
+  "base_model": "openbmb/MiniCPM-OCR-Jev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "litert-community/MiniCPM-OCR-Decision-2B-LiteRT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/MiniCPM-OCR-Decision-2B-LiteRT",
+      "snippet": "This repository is a conversion of openbmb/MiniCPM-OCR-Jev to LiteRT, made with litert-torch 0.10.0 for the CompiledModel API of ai-edge-litert 2.3.0: on an Apple M4 Max with Metal, the decision graph at the GPU's default precision and the picture tower at float32, scoring one OCR candidate for a ..."
+    },
+    {
+      "title": "litert-community/MiniCPM-OCR-Decision-2B-LiteRT at main",
+      "url": "https://huggingface.co/litert-community/MiniCPM-OCR-Decision-2B-LiteRT/tree/main",
+      "snippet": "MiniCPM-OCR decision model for LiteRT: decision graphs and picture towers, their multi-signature files, the tables, the PyTorch-free host, the conversion and check scriptsabout 3 hours ago"
+    }
+  ]
+}

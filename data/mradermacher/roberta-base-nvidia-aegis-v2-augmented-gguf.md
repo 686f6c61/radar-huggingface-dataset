@@ -101,7 +101,7 @@ No disponible: comparación de rendimiento en benchmarks entre estas alternativa
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/roberta-base-nvidia-aegis-v2-augmented-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/roberta-base-nvidia-aegis-v2-augmented-GGUF
 - Modelo base: https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v2-augmented
 - Página de resumen y descargas del cuantizador: https://hf.tst.eu/model#roberta-base-nvidia-aegis-v2-augmented-GGUF
 - Guía de uso de ficheros GGUF (referencia de TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

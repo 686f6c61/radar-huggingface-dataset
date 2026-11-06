@@ -2,11 +2,11 @@
 
 ## Resumen
 
-KIRANKALLA/vit-cats-dogs es un checkpoint de clasificacion de imagenes publicado en HuggingFace Hub por el usuario KIRANKALLA. Se distribuye con la libreria transformers, en formato safetensors y con el pipeline image-classification, por lo que su salida es un vector de probabilidades sobre un conjunto cerrado de clases. El nombre del repositorio sugiere clasificacion binaria gato/perro, aunque las etiquetas concretas no estan documentadas en la model card. El modelo tiene 85.800.194 parametros y el repositorio ocupa 0,3 GB, lo que corresponde a pesos en precision fp32.
+KIRANKALLA/vit-cats-dogs es un checkpoint de clasificacion de imagenes publicado en Hugging Face Hub por el usuario KIRANKALLA. Se distribuye con la libreria transformers, en formato safetensors y con el pipeline image-classification, por lo que su salida es un vector de probabilidades sobre un conjunto cerrado de clases. El nombre del repositorio sugiere clasificacion binaria gato/perro, aunque las etiquetas concretas no estan documentadas en la model card. El modelo tiene 85.800.194 parametros y el repositorio ocupa 0,3 GB, lo que corresponde a pesos en precision fp32.
 
 La etiqueta vit indica que se trata de un Vision Transformer. El recuento exacto de parametros permite deducir la topologia: 85.798.656 corresponden al backbone ViT-Base (12 capas, 768 de dimension oculta, parches de 16x16 sobre entradas de 224x224, 197 tokens incluyendo el token CLS) y 1.538 a una cabeza lineal de 2 clases (768 x 2 + 2). Es decir, se trata de un ViT-Base/16 de 224x224 ajustado para clasificacion binaria.
 
-Su relevancia practica es la de un modelo pequenio, apto para GPU de consumo e incluso CPU, util como base de experimentos o para tareas de filtrado de imagenes. No obstante, la model card es la plantilla autogenerada de HuggingFace sin contenido sustantivo: no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia, y el repositorio acumula 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad.
+Su relevancia practica es la de un modelo pequenio, apto para GPU de consumo e incluso CPU, util como base de experimentos o para tareas de filtrado de imagenes. No obstante, la model card es la plantilla autogenerada de Hugging Face sin contenido sustantivo: no hay informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia, y el repositorio acumula 0 descargas y 0 likes, por lo que carece de validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -33,7 +33,7 @@ Su relevancia practica es la de un modelo pequenio, apto para GPU de consumo e i
 
 La arquitectura es un transformer aplicado a vision: la imagen se divide en parches de 16x16 que se proyectan linealmente, se anade un token CLS y codificaciones posicionales, y la secuencia resultante pasa por bloques de auto-atencion multi-cabeza y perceptron multicapa. El numero de parametros declarado coincide exactamente con la configuracion ViT-Base estandar: 12 capas, 768 dimensiones ocultas, 12 cabezas de atencion y 197 posiciones (196 parches mas el token CLS). La cabeza de clasificacion tiene 2 salidas, coherente con el nombre del repositorio. Esta deduccion es aritmetica y no esta confirmada por el autor, ya que el repositorio no incluye config.json documentado en la informacion disponible.
 
-No hay ningun dato sobre el proceso de entrenamiento: se desconoce el dataset utilizado (si fue un subconjunto de cats_vs_dogs, Oxford-IIIT Pets, ImageNet o datos propios), el numero de imagenes, el numero de epocas, la resolucion efectiva de entrenamiento, si hubo aumento de datos, si se congeleron capas o si se aplicaron tecnicas de ajuste como RLHF o DPO (no aplicables a clasificacion de imagenes). La etiqueta arxiv:1910.09700 no apunta a un articulo fundacional de ViT, sino a Lacoste et al. (2019), el trabajo sobre emisiones de carbono citado en la plantilla de model card de HuggingFace; por tanto, no debe interpretarse como referencia metodologica del modelo.
+No hay ningun dato sobre el proceso de entrenamiento: se desconoce el dataset utilizado (si fue un subconjunto de cats_vs_dogs, Oxford-IIIT Pets, ImageNet o datos propios), el numero de imagenes, el numero de epocas, la resolucion efectiva de entrenamiento, si hubo aumento de datos, si se congeleron capas o si se aplicaron tecnicas de ajuste como RLHF o DPO (no aplicables a clasificacion de imagenes). La etiqueta arxiv:1910.09700 no apunta a un articulo fundacional de ViT, sino a Lacoste et al. (2019), el trabajo sobre emisiones de carbono citado en la plantilla de model card de Hugging Face; por tanto, no debe interpretarse como referencia metodologica del modelo.
 
 Tampoco se documentan innovaciones tecnicas adicionales: no hay mezcla de expertos, atencion lineal, decodificacion especulativa ni tecnicas hibridas. Se trata, en el mejor de los casos, de un fine-tuning convencional de un backbone ViT.
 
@@ -43,7 +43,7 @@ Tampoco se documentan innovaciones tecnicas adicionales: no hay mezcla de expert
 - Extraccion de caracteristicas visuales: el estado del token CLS y las activaciones de las 12 capas pueden usarse como embeddings para busqueda por similitud, clustering o aprendizaje por transferencia.
 - Ajuste fino posterior: al ser un ViT-Base estandar, admite fine-tuning con otras cabezas de clasificacion o con tareas de deteccion y segmentacion mediante adaptadores.
 - Inferencia en CPU y GPU de gama baja, gracias a un volumen de parametros reducido.
-- Compatibilidad con el ecosistema transformers (pipeline, Trainer, AutoModelForImageClassification) y con el tag endpoints_compatible, lo que sugiere despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con el ecosistema transformers (pipeline, Trainer, AutoModelForImageClassification) y con el tag endpoints_compatible, lo que sugiere despliegue en Hugging Face Inference Endpoints.
 
 No hay evidencia de soporte de tool calling, function calling, agentes, razonamiento multi-paso, generacion de texto, codigo, matematicas, vision-lenguaje, audio, modo thinking ni capacidades multilingues. Es un clasificador de imagenes puro, sin componente generativo ni de lenguaje.
 
@@ -67,17 +67,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: por debajo de 1 GB con lote pequeno en fp16, sumando activaciones y buffers. Con lotes grandes (por ejemplo 64 imagenes a 224x224) es razonable mantenerse por debajo de 2-3 GB.
 - GPU recomendadas: cualquier GPU con 4 GB o mas, como GTX 1650, RTX 3050, RTX 3060, RTX 4060 o superiores. En GPU profesionales (A100, H100, L4) el modelo esta infrautilizado; su uso solo se justifica por agregacion de grandes lotes.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU modernas, y tambien en CPU con tiempos de decenas de milisegundos por imagen en procesadores de escritorio actuales.
-- Opciones de despliegue: transformers pipeline y AutoModelForImageClassification, exportacion a ONNX Runtime o TensorRT, TorchScript y HuggingFace Inference Endpoints (el repositorio esta marcado como endpoints_compatible). Frameworks orientados a modelos de lenguaje como vLLM o TGI no son la via habitual para una tarea de clasificacion de imagenes.
+- Opciones de despliegue: transformers pipeline y AutoModelForImageClassification, exportacion a ONNX Runtime o TensorRT, TorchScript y Hugging Face Inference Endpoints (el repositorio esta marcado como endpoints_compatible). Frameworks orientados a modelos de lenguaje como vLLM o TGI no son la via habitual para una tarea de clasificacion de imagenes.
 - Latencia y throughput estimados: no disponibles. No se documentan mediciones de latencia, imagenes por segundo ni resultados de optimizacion.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Tarea / dominio | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KIRANKALLA/vit-cats-dogs | 85,8 M | Clasificacion binaria (gato/perro, segun el nombre) | no aplicable | no disponible | HuggingFace Hub, 0 descargas |
-| google/vit-base-patch16-224 | 86,6 M (1000 clases) | Clasificacion ImageNet-1k, preentrenado en ImageNet-21k | no aplicable | Apache 2.0 (verificar ficha oficial) | HuggingFace Hub, ampliamente utilizado |
-| facebook/dinov2-base | 86 M | Embeddings visuales auto-supervisados, clasificacion y segmentacion | no aplicable | Apache 2.0 (verificar ficha oficial) | HuggingFace Hub, ampliamente utilizado |
-| microsoft/resnet-50 | 25,6 M | Clasificacion ImageNet-1k, CNN | no aplicable | MIT (verificar ficha oficial) | HuggingFace Hub, ampliamente utilizado |
+| KIRANKALLA/vit-cats-dogs | 85,8 M | Clasificacion binaria (gato/perro, segun el nombre) | no aplicable | no disponible | Hugging Face Hub, 0 descargas |
+| google/vit-base-patch16-224 | 86,6 M (1000 clases) | Clasificacion ImageNet-1k, preentrenado en ImageNet-21k | no aplicable | Apache 2.0 (verificar ficha oficial) | Hugging Face Hub, ampliamente utilizado |
+| facebook/dinov2-base | 86 M | Embeddings visuales auto-supervisados, clasificacion y segmentacion | no aplicable | Apache 2.0 (verificar ficha oficial) | Hugging Face Hub, ampliamente utilizado |
+| microsoft/resnet-50 | 25,6 M | Clasificacion ImageNet-1k, CNN | no aplicable | MIT (verificar ficha oficial) | Hugging Face Hub, ampliamente utilizado |
 
 La comparacion pone de manifiesto la principal carencia de este checkpoint: frente a alternativas con licencia explicita, datos de entrenamiento publicados y evaluacion reproducible, vit-cats-dogs no aporta informacion verificable sobre su procedencia ni su rendimiento. Las licencias de los modelos comparados deben confirmarse en sus fichas oficiales antes de cualquier uso comercial.
 
@@ -95,6 +95,6 @@ La comparacion pone de manifiesto la principal carencia de este checkpoint: fren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KIRANKALLA/vit-cats-dogs
+- Modelo en Hugging Face: https://huggingface.co/KIRANKALLA/vit-cats-dogs
 - Referencia del tag arxiv:1910.09700 (Lacoste et al., 2019, sobre emisiones de carbono, citada en la plantilla de model card): https://arxiv.org/abs/1910.09700
 - No se han encontrado en la informacion disponible articulos, blogs, repositorios de codigo ni demos asociados especificamente a este modelo.

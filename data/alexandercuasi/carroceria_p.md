@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlexanderCuasi/carroceria_p` es un repositorio alojado en HuggingFace por el usuario AlexanderCuasi bajo licencia Apache 2.0. La model card publicada no contiene descripción funcional, arquitectura, datos de entrenamiento ni ejemplos de uso: únicamente incluye la declaración de licencia. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni el propósito del modelo.
+`AlexanderCuasi/carroceria_p` es un repositorio alojado en Hugging Face por el usuario AlexanderCuasi bajo licencia Apache 2.0. La model card publicada no contiene descripción funcional, arquitectura, datos de entrenamiento ni ejemplos de uso: únicamente incluye la declaración de licencia. No se dispone de información sobre el pipeline asociado, los idiomas soportados ni el propósito del modelo.
 
 Por el nombre del repositorio ("carroceria_p") y la ausencia de metadatos técnicos, no es posible confirmar si se trata de un modelo de lenguaje, un modelo de visión, un componente especializado del sector de automoción o un artefacto experimental. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere que no ha sido validado por la comunidad.
 
@@ -39,7 +39,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el número de tokens procesa
 ## Casos de uso
 
 - Evaluación experimental: el repositorio puede clonarse y probarse en un entorno aislado para determinar empíricamente qué tipo de artefacto contiene y si es funcional. Es el único uso razonable dada la falta de documentación.
-- Auditoría de repositorios: útil como caso de estudio sobre repositorios publicados sin model card ni metadatos técnicos, para analizar prácticas de publicación en HuggingFace.
+- Auditoría de repositorios: útil como caso de estudio sobre repositorios publicados sin model card ni metadatos técnicos, para analizar prácticas de publicación en Hugging Face.
 - Pruebas de integridad de pipelines: si el repositorio contiene pesos, puede emplearse para verificar que las herramientas de carga (transformers, safetensors, etc.) gestionan correctamente artefactos sin configuración declarada.
 - Docencia sobre licencias: sirve como ejemplo de repositorio donde la única información fiable es la licencia Apache 2.0, útil para explicar qué datos debe incluir una model card completa.
 - No se recomienda su uso en producción, atención al cliente, generación de código, análisis de datos ni ninguna aplicación finalista hasta que el autor publique especificaciones verificables.
@@ -78,5 +78,5 @@ No es posible establecer una comparativa fiable porque se desconocen el tamaño,
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlexanderCuasi/carroceria_p
+- Repositorio en Hugging Face: https://huggingface.co/AlexanderCuasi/carroceria_p
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

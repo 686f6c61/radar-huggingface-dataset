@@ -72,6 +72,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moinsaj/aaie-ddense-gft-yarn2-fg-lora
+- Modelo en Hugging Face: https://huggingface.co/moinsaj/aaie-ddense-gft-yarn2-fg-lora
 - Modelo base: https://huggingface.co/namquangstudy/aaie-ddense-gft-llama
 - Repositorio del modelo base (posible fuente adicional): https://huggingface.co/namquangstudy/aaie-ddense-gft

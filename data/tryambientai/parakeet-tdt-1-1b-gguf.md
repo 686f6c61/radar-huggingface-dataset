@@ -104,7 +104,7 @@ No se dispone en la información proporcionada de datos de benchmarks de modelos
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/tryambientai/parakeet-tdt-1.1b-gguf
+- Repositorio Hugging Face de la conversión: https://huggingface.co/tryambientai/parakeet-tdt-1.1b-gguf
 - Modelo base: https://huggingface.co/nvidia/parakeet-tdt-1.1b
 - Commit del modelo base utilizado: https://huggingface.co/nvidia/parakeet-tdt-1.1b/commit/53276c6
 - Motor transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

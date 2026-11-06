@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Acreddy5757/classification-ablation75` es un repositorio de HuggingFace publicado por el usuario Acreddy5757 que contiene una implementación propia de MobileViT orientada a clasificación de imágenes, con una configuración declarada como "xlarge" en su `config.json`. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio se presenta como un punto de partida experimental con código transparente y reproducible.
+`Acreddy5757/classification-ablation75` es un repositorio de Hugging Face publicado por el usuario Acreddy5757 que contiene una implementación propia de MobileViT orientada a clasificación de imágenes, con una configuración declarada como "xlarge" en su `config.json`. No se trata de un modelo entrenado ni evaluado: la propia model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark. El repositorio se presenta como un punto de partida experimental con código transparente y reproducible.
 
 El dato más llamativo es el recuento real de parámetros almacenados en el fichero safetensors: 49.600 parámetros totales. Esa cifra es varios órdenes de magnitud inferior a la de cualquier variante publicada de MobileViT (la familia original va desde ~1,3 M en MobileViT-XXS hasta ~10,6 M en MobileViT-XL), lo que sugiere que el nombre "ablation75" corresponde a un experimento de ablación con un subconjunto reducido de la arquitectura, no a un MobileViT-XL completo. El tamaño del repositorio es de 0,0 GB y el modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
@@ -34,11 +34,11 @@ La arquitectura declarada es MobileViT, un diseño híbrido que combina bloques 
 
 En cuanto al entrenamiento, la receta por defecto incluida en `training_args.json` usa SGD con un esquema de *constant warmup*. La model card es explícita al señalar que estos son valores de partida del script y no evidencia de una ejecución completada, y recomienda que cualquier evaluación significativa entrene todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias. No se documenta número de tokens ni de imágenes de entrenamiento, composición del dataset, ni fases de RLHF/DPO (técnicas que, por otra parte, no aplican a un clasificador visual supervisado). No se declara ninguna innovación técnica adicional más allá de los componentes arquitectónicos citados.
 
-La model card también advierte de que, al ser una implementación personalizada, las APIs genéricas de carga automática de HuggingFace requieren un adaptador explícito antes de poder usarse.
+La model card también advierte de que, al ser una implementación personalizada, las APIs genéricas de carga automática de Hugging Face requieren un adaptador explícito antes de poder usarse.
 
 ## Capacidades
 
-- Clasificación de imágenes: es la única tarea declarada en las etiquetas del repositorio (`classification`). El pipeline no está especificado en la ficha de HuggingFace.
+- Clasificación de imágenes: es la única tarea declarada en las etiquetas del repositorio (`classification`). El pipeline no está especificado en la ficha de Hugging Face.
 - Inicialización reproducible para pruebas de humo: el checkpoint permite verificar que el grafo se construye y que el `train.py` se ejecuta de principio a fin.
 - Punto de partida para experimentos de ablación: el propio nombre del repositorio (`ablation75`) y la advertencia de la model card apuntan a un uso como base de comparación controlada, no como modelo final.
 - Soporte de *tool calling* / *function calling*: no disponible; no aplica a un clasificador visual.
@@ -75,7 +75,7 @@ La información disponible no incluye resultados de rendimiento, por lo que la c
 
 | Modelo | Parámetros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| classification-ablation75 (este repo) | 49.600 | Clasificación de imágenes | No aplica | Apache 2.0 | HuggingFace, checkpoint sin entrenar |
+| classification-ablation75 (este repo) | 49.600 | Clasificación de imágenes | No aplica | Apache 2.0 | Hugging Face, checkpoint sin entrenar |
 | MobileViT-XXS (referencia original) | ~1,3 M | Clasificación de imágenes | No aplica | Apple ML Research (licencia de código abierto) | Repos oficiales de Apple / implementaciones de terceros |
 | MobileViT-XL (referencia original) | ~10,6 M | Clasificación de imágenes | No aplica | Apple ML Research | Repos oficiales de Apple / implementaciones de terceros |
 | MobileNetV3-Small | ~2,5 M | Clasificación de imágenes | No aplica | Apache 2.0 (implementación de referencia) | TensorFlow Model Garden, timm |
@@ -92,13 +92,13 @@ Advertencia: las cifras de parámetros de los modelos de referencia corresponden
 - El nombre "xlarge" es engañoso: la configuración declara esa escala, pero el recuento real de parámetros es de 49.600, muy por debajo de cualquier MobileViT-XL publicado. Debe tratarse como discrepancia documentada, no como error de lectura.
 - Idiomas y contexto: no aplican; es un clasificador visual sin componente textual.
 - Restricciones de licencia: Apache 2.0 permite uso comercial del código y de los pesos, pero la model card advierte de que deben revisarse por separado los términos de las fuentes de datos si el repositorio se usa con conjuntos externos.
-- Requiere un adaptador explícito para cargarse mediante APIs automáticas de HuggingFace, ya que es una implementación personalizada.
+- Requiere un adaptador explícito para cargarse mediante APIs automáticas de Hugging Face, ya que es una implementación personalizada.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validación por parte de la comunidad.
 - Los resultados de búsqueda web asociados a este modelo no contienen ninguna referencia técnica relevante (véase la sección de enlaces), por lo que no existe literatura independiente que lo respalde.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Acreddy5757/classification-ablation75
+- Hugging Face: https://huggingface.co/Acreddy5757/classification-ablation75
 - Búsqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos por el buscador no guardan relación con el modelo ni con visión por computador, por lo que se omiten por no ser material técnico verificable.
 - Paper original de MobileViT (referencia de la arquitectura, no citado en el repositorio): no disponible en la información proporcionada.
 - Repositorio de código adicional, demo o blog del autor: no disponible.

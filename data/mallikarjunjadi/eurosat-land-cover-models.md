@@ -52,7 +52,7 @@ No se dispone de informacion sobre requisitos de hardware. Dado el tamano del re
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para una comparativa rigurosa. Se puede mencionar que existen otros modelos de clasificacion de EuroSAT, como `Rhodham96/EuroSatCNN` en HuggingFace, que es una CNN documentada para la misma tarea, pero no se conocen sus metricas ni parametros. El modelo de MallikarjunJadi carece de cualquier dato comparable.
+No se dispone de informacion suficiente para una comparativa rigurosa. Se puede mencionar que existen otros modelos de clasificacion de EuroSAT, como `Rhodham96/EuroSatCNN` en Hugging Face, que es una CNN documentada para la misma tarea, pero no se conocen sus metricas ni parametros. El modelo de MallikarjunJadi carece de cualquier dato comparable.
 
 ## Limitaciones y advertencias
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa. Se puede 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MallikarjunJadi/eurosat-land-cover-models
+- Repositorio Hugging Face: https://huggingface.co/MallikarjunJadi/eurosat-land-cover-models
 - Dataset EuroSAT (GitHub): https://github.com/phelber/EuroSAT
 - Paper de EuroSAT (arXiv): https://arxiv.org/pdf/1709.00029v1
 - Notebook de clasificacion EuroSAT (Colab): https://colab.research.google.com/github/e-chong/Remote-Sensing/blob/master/EuroSAT%20Land%20Cover%20Classification/EuroSAT%20Land%20Use%20and%20Land%20Cover%20Classification%20using%20Deep%20Learning.ipynb

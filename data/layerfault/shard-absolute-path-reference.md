@@ -63,7 +63,7 @@ No disponible. Este artefacto no es comparable con modelos de lenguaje o visión
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LayerFault/shard-absolute-path-reference
+- Repositorio Hugging Face: https://huggingface.co/LayerFault/shard-absolute-path-reference
 - CVE-2026-75104 (path traversal en Transformers): https://aithreatalert.com/cve/CVE-2026-75104
 - CVE-2026-75104 (strix.ai): https://www.strix.ai/cve/CVE-2026-75104
 - CVE-2026-75104 (radar.offseq.com): https://radar.offseq.com/threat/cve-2026-75104-improper-limitation-of-a-pathname-to-a-restricted-directory-path-traversal-in-68f02c788d33af14

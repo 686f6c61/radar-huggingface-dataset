@@ -100,10 +100,10 @@ Comparativa con alternativas de la misma categoría (p. ej. otros VLM pequeños 
 
 ## Enlaces
 
-- Modelo en HuggingFace (adaptadores v3.1, v4.1, v5.0): https://huggingface.co/ctogaurav/GLM_OCR
+- Modelo en Hugging Face (adaptadores v3.1, v4.1, v5.0): https://huggingface.co/ctogaurav/GLM_OCR
 - Versiones cuantizadas GGUF para LM Studio y Ollama: https://huggingface.co/ctogaurav/GLM_OCR-GGUF
 - Modelo base: https://huggingface.co/zai-org/GLM-OCR
-- Perfil del autor en HuggingFace: https://huggingface.co/ctogaurav
+- Perfil del autor en Hugging Face: https://huggingface.co/ctogaurav
 - Perfil del autor en GitHub: https://github.com/realgauravvyas
 - Notebooks de demostración en Google Colab: referenciados en la model card bajo la sección «Colab demos»; la URL directa no está disponible en la información proporcionada
 - Otros enlaces (paper, blog técnico, repositorio de código con licencia): no disponible

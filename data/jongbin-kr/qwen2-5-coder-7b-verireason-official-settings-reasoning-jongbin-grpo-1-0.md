@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin-grpo-1.0` es un ajuste fino (fine-tune) del modelo `Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin`, que a su vez deriva del modelo base Qwen2.5-Coder-7B de Alibaba. El autor, Jongbin-kr, ha aplicado el método de optimización GRPO (Group Relative Policy Optimization) introducido en DeepSeekMath, con el objetivo de mejorar las capacidades de razonamiento verificable del modelo. Se trata de un modelo de 7B parámetros con arquitectura Transformer, entrenado mediante el framework TRL de HuggingFace.
+El modelo `qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin-grpo-1.0` es un ajuste fino (fine-tune) del modelo `Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin`, que a su vez deriva del modelo base Qwen2.5-Coder-7B de Alibaba. El autor, Jongbin-kr, ha aplicado el método de optimización GRPO (Group Relative Policy Optimization) introducido en DeepSeekMath, con el objetivo de mejorar las capacidades de razonamiento verificable del modelo. Se trata de un modelo de 7B parámetros con arquitectura Transformer, entrenado mediante el framework TRL de Hugging Face.
 
 El modelo está pensado para tareas de razonamiento matemático y lógico, así como para generación de código, heredando las capacidades del Qwen2.5-Coder-7B. Su relevancia actual radica en que combina un modelo base potente en código con un entrenamiento de refuerzo que refuerza la capacidad de razonamiento paso a paso, algo útil en escenarios donde se requiere verificación de resultados. Sin embargo, es un modelo experimental con cero descargas y sin documentación pública más allá de la model card, por lo que su adopción en producción requiere evaluación adicional.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin-grpo-1.0
+- Modelo en Hugging Face: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin-grpo-1.0
 - Modelo base (fine-tune): https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-reasoning-jongbin
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Technical report de Qwen2.5-Coder: https://arxiv.org/abs/2409.12186

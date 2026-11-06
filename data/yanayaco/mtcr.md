@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yanayaco/Mtcr` es un repositorio publicado en HuggingFace por el usuario `yanayaco` bajo licencia OpenRAIL. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: openrail`) y no incluye ninguna descripcion del modelo, de su arquitectura, de sus datos de entrenamiento ni de sus capacidades. El repositorio no registra descargas ni "likes", y no tiene declarado un pipeline de inferencia ni un conjunto de idiomas soportados.
+`yanayaco/Mtcr` es un repositorio publicado en Hugging Face por el usuario `yanayaco` bajo licencia OpenRAIL. En el momento de redactar esta ficha, la model card asociada contiene unicamente la declaracion de licencia (`license: openrail`) y no incluye ninguna descripcion del modelo, de su arquitectura, de sus datos de entrenamiento ni de sus capacidades. El repositorio no registra descargas ni "likes", y no tiene declarado un pipeline de inferencia ni un conjunto de idiomas soportados.
 
 El unico dato cuantitativo disponible es el tamano del repositorio, de aproximadamente 0,1 GB, lo que sugiere un artefacto de pesos de muy reducidas dimensiones (o bien un repositorio con pesos parciales, adaptadores o componentes auxiliares). No es posible confirmar a partir de la informacion proporcionada si se trata de un modelo completo, de un ajuste fino (fine-tune), de un adaptador LoRA o de un experimento sin publicar.
 
@@ -74,7 +74,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| yanayaco/Mtcr | no disponible | no disponible | openrail | HuggingFace |
+| yanayaco/Mtcr | no disponible | no disponible | openrail | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,6 +91,6 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yanayaco/Mtcr
+- Repositorio en Hugging Face: https://huggingface.co/yanayaco/Mtcr
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo. Las busquedas con el identificador devuelven exclusivamente paginas divulgativas en frances sobre el acero y su fabricacion (Vikidia, ExplainToChild, Encyclopaedia Universalis Junior, Travail-Industrie), sin ninguna relacion con el repositorio.
 - Paper, blog tecnico, repositorio de codigo o demo: no disponibles.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`WFRaain/qwen35vl-2b-agentnet-sft` es un checkpoint multimodal (vision-language) derivado de `Qwen/Qwen3.5-2B` y publicado por el usuario WFRaain en HuggingFace. Segun las etiquetas del repositorio, se trata de un ajuste fino supervisado (SFT) orientado a tareas de agente de interfaz grafica (`gui-agent`), entrenado con la pila Megatron y distribuido en formato safetensors. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+`WFRaain/qwen35vl-2b-agentnet-sft` es un checkpoint multimodal (vision-language) derivado de `Qwen/Qwen3.5-2B` y publicado por el usuario WFRaain en Hugging Face. Segun las etiquetas del repositorio, se trata de un ajuste fino supervisado (SFT) orientado a tareas de agente de interfaz grafica (`gui-agent`), entrenado con la pila Megatron y distribuido en formato safetensors. El repositorio tiene acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 El interes del modelo radica en su tamano reducido (la denominacion "2B" del modelo base apunta a unos 2.000 millones de parametros) combinado con capacidades de vision, lo que lo situa en el segmento de agentes de GUI que pueden ejecutarse en hardware de gama media o incluso consumer. Ese segmento cubre casos como automatizacion de escritorio, testing de interfaces y extraccion de datos de pantallas.
 
@@ -18,7 +18,7 @@ Ahora bien, la ficha publicada es practicamente vacia: no incluye model card des
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible en la ficha; el repositorio distribuye pesos en safetensors. No se confirman conversiones a GGUF, AWQ ni GPTQ |
 | Idiomas soportados | No disponible |
-| Licencia | `other` (acceso restringido; requiere aceptar condiciones en HuggingFace) |
+| Licencia | `other` (acceso restringido; requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | Safetensors |
 | Modelo base | `Qwen/Qwen3.5-2B` |
 | Tamano del repositorio | 13,7 GB |
@@ -57,7 +57,7 @@ En todos los casos, la ausencia de benchmarks y de licencia clara obliga a reali
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tabla de evaluaciones, no se ha publicado paper asociado y las busquedas web realizadas no devolvieron documentacion tecnica relacionada con el modelo. No se dispone por tanto de cifras de MMLU, HumanEval, GSM8K, benchmarks de agentes de GUI (ScreenSpot, OSWorld, AndroidControl u otros) ni comparaciones verificables con alternativas.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tabla de evaluaciones, no se ha publicado paper asociado y las busquedas web realizadas no devolvieron documentacion tecnica relacionada con el modelo. No se dispone por tanto de cifras de MMLU, HumanEval, GSM8K, benchmarks de agentes de GUI (ScreenSpot, OSWorld, AndroidControl u otros) ni comparaciones verificables con alternativas.
 
 ## Requisitos de hardware
 
@@ -99,7 +99,7 @@ No es posible establecer una comparacion cuantitativa fiable con alternativas si
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WFRaain/qwen35vl-2b-agentnet-sft
+- Modelo en Hugging Face: https://huggingface.co/WFRaain/qwen35vl-2b-agentnet-sft
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 
 Nota sobre la busqueda web: las consultas realizadas no devolvieron ningun enlace relacionado con este modelo. Los resultados obtenidos correspondian a contenidos no relacionados (carteles de propaganda sovietica) y se han descartado por no ser pertinentes. No se han localizado papers, blogs, repositorios de codigo ni demos asociados al modelo.

@@ -97,10 +97,10 @@ Comprobacion de reproduccion: al cargar la carpeta con `load_jevified` y reevalu
 
 | Modelo | Parametros | Contexto | Acc (test jev-bench) | ECE | Sure loss | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este modelo | ~3B + LoRA r16 | No disponible | 0.708 | 0.055 | 0.041 | Apache 2.0 | HuggingFace (adaptador + configs, 0.1 GB) |
-| SmolLM3-3B APO checkpoint, sin ajustar | ~3B | No disponible | 0.539 | 0.117 | 0.226 | Apache 2.0 | HuggingFace (mismo ecosistema Jevify) |
-| Misma receta, solo supervisado | ~3B + LoRA r16 | No disponible | 0.705 | 0.058 | 0.292 | No disponible | HuggingFace (`jevify-smollm3-3b-apo-readout`) |
-| Misma receta desde el checkpoint SFT | ~3B + LoRA r16 | No disponible | 0.711 | 0.053 | 0.039 | No disponible | HuggingFace (repositorio enlazado desde la model card) |
+| Este modelo | ~3B + LoRA r16 | No disponible | 0.708 | 0.055 | 0.041 | Apache 2.0 | Hugging Face (adaptador + configs, 0.1 GB) |
+| SmolLM3-3B APO checkpoint, sin ajustar | ~3B | No disponible | 0.539 | 0.117 | 0.226 | Apache 2.0 | Hugging Face (mismo ecosistema Jevify) |
+| Misma receta, solo supervisado | ~3B + LoRA r16 | No disponible | 0.705 | 0.058 | 0.292 | No disponible | Hugging Face (`jevify-smollm3-3b-apo-readout`) |
+| Misma receta desde el checkpoint SFT | ~3B + LoRA r16 | No disponible | 0.711 | 0.053 | 0.039 | No disponible | Hugging Face (repositorio enlazado desde la model card) |
 | Jev 1.13.0 (API TypeSafe) | No disponible | No disponible | 0.733 | 0.113 | 0.081 | No disponible | Servicio API, no pesos abiertos |
 
 La comparacion interna del propio estudio muestra un compromiso relevante: la variante entrenada desde el checkpoint SFT obtiene mejor exactitud (0.711 frente a 0.708), mejor ECE (0.053 frente a 0.055) y mejor coherencia (0.039 frente a 0.041), mientras que la variante "solo supervisado" tiene peor coherencia (0.292) pese a una exactitud comparable. La API Jev 1.13.0 alcanza la mejor exactitud en reservadas (0.835) y el mejor comportamiento en robustez a instrucciones inyectadas, pero con peor calibracion (ECE 0.113).
@@ -122,7 +122,7 @@ La comparacion interna del propio estudio muestra un compromiso relevante: la va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout-coh
+- Modelo en Hugging Face: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout-coh
 - Dataset de evaluacion jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench
 - Leaderboard de jev-bench: https://huggingface.co/datasets/Praveenrajus/jev-bench#leaderboard
 - Repositorio de codigo Jevify: https://github.com/uspraveen/Jevify
@@ -132,5 +132,5 @@ La comparacion interna del propio estudio muestra un compromiso relevante: la va
 - Variante con la misma receta, solo supervisada: https://huggingface.co/Praveenrajus/jevify-smollm3-3b-apo-readout
 - Variante desde el checkpoint SFT (comparacion de reparacion): https://huggingface.co/Praveenrajus/jevify-smollm3-3b-sft-rea
 - Modelo relacionado sobre otro backbone: https://huggingface.co/Praveenrajus/jevify-qwen3.5-4b
-- Perfil del autor en HuggingFace: https://huggingface.co/PraveenAIML
+- Perfil del autor en Hugging Face: https://huggingface.co/PraveenAIML
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B-checkpoints

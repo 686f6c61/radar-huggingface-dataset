@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gaerha/MyAwesomeModel-TestRepo` es un repositorio publicado en HuggingFace por el usuario `gaerha` bajo licencia MIT. La model card describe un modelo de lenguaje llamado "MyAwesomeModel" que, según el autor, ha sido actualizado para mejorar sus capacidades de razonamiento profundo, matemáticas, programación y lógica, acercándose al rendimiento de otros modelos líderes. Sin embargo, el repositorio no contiene ningún peso ni archivo de modelo (tamaño 0.0 GB), y la model card no proporciona información técnica esencial como arquitectura, número de parámetros, longitud de contexto o datos de entrenamiento. Esto sugiere que se trata de un repositorio de prueba o un placeholder sin implementación real descargable.
+El modelo `gaerha/MyAwesomeModel-TestRepo` es un repositorio publicado en Hugging Face por el usuario `gaerha` bajo licencia MIT. La model card describe un modelo de lenguaje llamado "MyAwesomeModel" que, según el autor, ha sido actualizado para mejorar sus capacidades de razonamiento profundo, matemáticas, programación y lógica, acercándose al rendimiento de otros modelos líderes. Sin embargo, el repositorio no contiene ningún peso ni archivo de modelo (tamaño 0.0 GB), y la model card no proporciona información técnica esencial como arquitectura, número de parámetros, longitud de contexto o datos de entrenamiento. Esto sugiere que se trata de un repositorio de prueba o un placeholder sin implementación real descargable.
 
 A pesar de que la model card incluye tablas de evaluación comparativa y menciones a mejoras concretas (por ejemplo, un aumento de precisión en AIME 2025 del 70% al 87.5%), estos datos no son verificables al no existir artefactos del modelo. La ficha que sigue refleja la información disponible, marcando explícitamente los campos no disponibles.
 
@@ -93,6 +93,6 @@ No disponible. No se proporcionan datos de modelos comparables reales (como Llam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [gaerha/MyAwesomeModel-TestRepo](https://huggingface.co/gaerha/MyAwesomeModel-TestRepo)
+- Repositorio en Hugging Face: [gaerha/MyAwesomeModel-TestRepo](https://huggingface.co/gaerha/MyAwesomeModel-TestRepo)
 
 No se han encontrado otros enlaces (papers, blogs, repositorios de código) en la información proporcionada.

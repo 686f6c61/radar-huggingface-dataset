@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klein-TTS-X1.5-Small-QAT-Checkpoints es un repositorio de HuggingFace publicado por el usuario klein-ml. Se trata de un conjunto de checkpoints (el nombre indica "Checkpoints" en plural, y el tamaño del repo, 2,9 GB, es coherente con varios ficheros de pesos), no de un modelo individual con model card descriptiva. El repositorio tiene acceso restringido: requiere aceptar condiciones en HuggingFace antes de poder descargarlo, y en el momento de redactar esta ficha no expone pipeline, licencia ni idiomas soportados.
+Klein-TTS-X1.5-Small-QAT-Checkpoints es un repositorio de Hugging Face publicado por el usuario klein-ml. Se trata de un conjunto de checkpoints (el nombre indica "Checkpoints" en plural, y el tamaño del repo, 2,9 GB, es coherente con varios ficheros de pesos), no de un modelo individual con model card descriptiva. El repositorio tiene acceso restringido: requiere aceptar condiciones en Hugging Face antes de poder descargarlo, y en el momento de redactar esta ficha no expone pipeline, licencia ni idiomas soportados.
 
 El identificador sugiere dos cosas que no están confirmadas por ninguna documentación pública: que el modelo está orientado a síntesis de voz (TTS, text-to-speech) y que incorpora quantisation-aware training (QAT), es decir, que los checkpoints se han entrenado teniendo en cuenta la cuantización posterior. Ninguna de estas dos inferencias debe tomarse como dato verificado: no hay model card, no hay paper enlazado y la búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo (los resultados obtenidos corresponden a un despacho de abogados, un fabricante de perfilería y un fabricante de herramientas de mecanizado, todos ajenos al proyecto).
 
@@ -18,10 +18,10 @@ La relevancia potencial del repositorio, si se confirma la hipótesis TTS + QAT,
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible; el sufijo QAT del identificador sugiere checkpoints entrenados con quantisation-aware training, extremo sin confirmar |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible; el acceso está restringido por condiciones que deben aceptarse en HuggingFace |
+| Licencia | no disponible; el acceso está restringido por condiciones que deben aceptarse en Hugging Face |
 | Formato de pesos | no disponible (el sufijo "Checkpoints" indica que el repo contiene varios ficheros de pesos, pero no se especifica el formato) |
 | Tamaño del repositorio | 2,9 GB |
-| Pipeline declarado | no disponible (campo vacío en HuggingFace) |
+| Pipeline declarado | no disponible (campo vacío en Hugging Face) |
 | Acceso | restringido (gated), requiere aceptar condiciones |
 | Descargas y likes | 2 descargas, 0 likes |
 | Fecha de creación | 2026-10-27 |
@@ -39,7 +39,7 @@ El único elemento técnico inferible es el sufijo "QAT" y la etiqueta "Small". 
 - Generación de texto, razonamiento, código o matemáticas: no disponible; no hay indicios de que el repositorio cubra estas capacidades.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes o razonamiento multi-paso: no disponible.
-- Capacidades multilingües: no disponible; el campo de idiomas está vacío en HuggingFace.
+- Capacidades multilingües: no disponible; el campo de idiomas está vacío en Hugging Face.
 - Capacidades especiales (modo thinking, visión, audio de entrada): no disponible.
 - Variantes cuantizadas listas para producción: no confirmado, aunque el sufijo QAT y el tamaño del repositorio son compatibles con esa posibilidad.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klein-TTS-X1.5-Small-QAT-Checkpoints | no disponible | no disponible | no disponible | no disponible (acceso restringido) | HuggingFace, gated |
+| Klein-TTS-X1.5-Small-QAT-Checkpoints | no disponible | no disponible | no disponible | no disponible (acceso restringido) | Hugging Face, gated |
 | Alternativas de la categoría TTS abierto | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se han identificado en la información proporcionada modelos comparables con datos verificables. La búsqueda web no devolvió resultados relacionados con el proyecto ni con su familia de modelos, por lo que no es posible establecer una comparación fundamentada con alternativas de la misma categoría o tamaño.
@@ -80,7 +80,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 - Ausencia total de model card: no hay descripción de arquitectura, datos de entrenamiento, limitaciones conocidas ni uso previsto. Esto impide evaluar el modelo con criterios mínimos de rigor.
 - Licencia desconocida: sin licencia explícita no puede asumirse permiso para uso comercial, redistribución o modificación. Cualquier uso en producción requiere contactar con el autor.
-- Acceso restringido: el repositorio exige aceptar condiciones en HuggingFace; no se conocen los criterios de aceptación ni si implican obligaciones adicionales.
+- Acceso restringido: el repositorio exige aceptar condiciones en Hugging Face; no se conocen los criterios de aceptación ni si implican obligaciones adicionales.
 - Riesgo de atribución errónea: el nombre del autor (klein-ml) y el del repositorio no aparecen asociados a ningún proyecto documentado en la búsqueda realizada; conviene verificar la identidad y la trayectoria del publicador antes de integrar los pesos.
 - Idiomas no declarados: no puede asumirse soporte de castellano ni de ninguna otra lengua; en TTS esto afecta a fonética, prosodia y naturalidad.
 - Sesgos: no evaluables. En sistemas de voz, los sesgos típicos afectan a acentos, género, edad y variedades dialectales, pero no hay información sobre la composición del corpus de entrenamiento.
@@ -92,7 +92,7 @@ No se han identificado en la información proporcionada modelos comparables con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Small-QAT-Checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/klein-ml/Klein-TTS-X1.5-Small-QAT-Checkpoints
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

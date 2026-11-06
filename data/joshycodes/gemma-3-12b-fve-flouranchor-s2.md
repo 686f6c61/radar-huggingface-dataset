@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `joshycodes/gemma-3-12b-fve-flouranchor-s2` (este) | 13,19 B | no disponible (base: 128k) | Continued pretraining de pesos completos, 7.582.351 tokens, 7.800 documentos | `other` / research-only | HuggingFace, 0 descargas, 0 likes |
-| `joshycodes/gemma-3-12b-fve-workanchor-s1` | no disponible | no disponible | Continued pretraining de pesos completos, 7.538.147 tokens, 7.740 documentos | research-only (misma serie) | HuggingFace |
-| `google/gemma-3-12b-it` (modelo base) | 12B (clase) | 128k tokens | Modelo instruct oficial de Google DeepMind, con alineamiento | Licencia Gemma de Google | HuggingFace, Ollama (`gemma3:12b`), libreria `google-deepmind/gemma` |
+| `joshycodes/gemma-3-12b-fve-flouranchor-s2` (este) | 13,19 B | no disponible (base: 128k) | Continued pretraining de pesos completos, 7.582.351 tokens, 7.800 documentos | `other` / research-only | Hugging Face, 0 descargas, 0 likes |
+| `joshycodes/gemma-3-12b-fve-workanchor-s1` | no disponible | no disponible | Continued pretraining de pesos completos, 7.538.147 tokens, 7.740 documentos | research-only (misma serie) | Hugging Face |
+| `google/gemma-3-12b-it` (modelo base) | 12B (clase) | 128k tokens | Modelo instruct oficial de Google DeepMind, con alineamiento | Licencia Gemma de Google | Hugging Face, Ollama (`gemma3:12b`), libreria `google-deepmind/gemma` |
 
 La comparativa relevante es interna a la serie: el checkpoint s2 y el s1 comparten base y procedimiento, y difieren en el volumen del corpus (7.582.351 frente a 7.538.147 tokens, y 7.800 frente a 7.740 documentos). No se dispone de comparativas de rendimiento frente a otros modelos de 12B porque no hay evaluacion publicada.
 
@@ -86,7 +86,7 @@ La comparativa relevante es interna a la serie: el checkpoint s2 y el s1 compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/gemma-3-12b-fve-flouranchor-s2
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/gemma-3-12b-fve-flouranchor-s2
 - Checkpoint hermano s1: https://huggingface.co/joshycodes/gemma-3-12b-fve-workanchor-s1
 - Dataset de la serie: https://huggingface.co/datasets/joshycodes/gemma-3-12b-commitments-corpus
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it

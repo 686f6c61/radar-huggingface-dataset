@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador de ajuste fino eficiente en parametros (P
 
 La tecnica empleada, VeRA (Vector-based Random Matrix Adaptation), pertenece a la familia de metodos de adaptacion de bajo rango: en lugar de aprender matrices completas de bajo rango como hace LoRA, congela matrices de proyeccion aleatorias compartidas entre capas y entrena unicamente vectores de escala de dimension reducida. Esto reduce drasticamente el numero de parametros entrenables y el tamano del artefacto resultante, algo relevante cuando se quiere mantener decenas de adaptadores sobre un mismo modelo base.
 
-El interes practico del modelo es acotado pero claro: sirve como artefacto de investigacion para experimentos de ajuste eficiente en tareas de pregunta-respuesta extractiva sobre ingles y bengali, y como caso de estudio de VeRA aplicado a un modelo de 8 000 millones de parametros. La model card publicada por el autor es la plantilla por defecto de HuggingFace y no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia, por lo que la mayor parte de los apartados de esta ficha quedan marcados como no disponibles.
+El interes practico del modelo es acotado pero claro: sirve como artefacto de investigacion para experimentos de ajuste eficiente en tareas de pregunta-respuesta extractiva sobre ingles y bengali, y como caso de estudio de VeRA aplicado a un modelo de 8 000 millones de parametros. La model card publicada por el autor es la plantilla por defecto de Hugging Face y no aporta informacion sobre datos de entrenamiento, hiperparametros, evaluacion ni licencia, por lo que la mayor parte de los apartados de esta ficha quedan marcados como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -93,7 +93,7 @@ La comparativa se limita a caracteristicas estructurales porque no existen resul
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_42_VeRA
+- Repositorio en Hugging Face: https://huggingface.co/WijewardhanaNT/tydiqa_en_and_bengali_3000_percentage_1_42_VeRA
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Articulo citado en los metadatos: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, cuantificacion de emisiones de carbono; citado en la plantilla de la model card, no es la publicacion del modelo)
 - Libreria PEFT: https://github.com/huggingface/peft

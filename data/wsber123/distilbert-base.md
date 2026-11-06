@@ -57,7 +57,7 @@ A continuación se comparan algunos modelos de la misma familia (encoders de tam
 | Modelo | Parametros | Contexto maximo | Idiomas | Licencia | Formato |
 |---|---|---|---|---|---|
 | wsber123/distilbert-base | 66,95M | no disponible | no disponible | Apache-2.0 | safetensors |
-| DistilBERT-base-uncased (HuggingFace) | 66,95M | 512 | inglés | Apache-2.0 | safetensors, PyTorch |
+| DistilBERT-base-uncased (Hugging Face) | 66,95M | 512 | inglés | Apache-2.0 | safetensors, PyTorch |
 | BERT-base-uncased | 110M | 512 | inglés | Apache-2.0 | safetensors, PyTorch |
 | MiniLM-L6 (Microsoft) | 22,7M | 512 | multilingüe | MIT | safetensors, PyTorch |
 

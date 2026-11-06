@@ -12,7 +12,7 @@ Su relevancia es metodológica más que de producto: documenta de forma reproduc
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only, familia Qwen2 (tag `qwen2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only, familia Qwen2 (tag `qwen2` en Hugging Face) |
 | Parametros totales | 1.777.088.000 (1,78 B) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible en la informacion proporcionada; heredada del modelo base DeepSeek-R1-Distill-Qwen-1.5B (la familia Qwen2.5-1.5B declara 32.768 tokens, dato no verificado en esta ficha) |
@@ -37,7 +37,7 @@ El regimen de entrenamiento esta acotado y documentado: un solo entorno (10-Circ
 - Soporte de agentes y razonamiento multi-paso general: no disponible como capacidad declarada; el modelo esta especializado en un unico entorno.
 - Capacidades multilingues: no disponibles; no se declara cobertura de idiomas.
 - Capacidades especiales (vision, audio, thinking mode explicito configurable): no disponibles; no se declaran.
-- Conversacional: la etiqueta `conversational` aparece en los tags de HuggingFace, pero no hay plantilla de chat documentada en la informacion disponible.
+- Conversacional: la etiqueta `conversational` aparece en los tags de Hugging Face, pero no hay plantilla de chat documentada en la informacion disponible.
 
 ## Casos de uso
 
@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rlve-opd-teacher-R1Distill-010-CirculatingDecimalCounting (este) | 1,78 B | No disponible | GRPO, 4.000 rollouts, 1 entorno, base R1-Distill-Qwen-1.5B | No disponible | HuggingFace, safetensors |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | No disponible en esta informacion | Destilacion de R1 sobre Qwen2.5-1.5B; proposito general y razonamiento | No disponible en esta informacion | HuggingFace, safetensors |
-| davidheineman/opd-teacher-R1Distill-Integral-step149 | ~1,5-1,78 B (no confirmado) | No disponible | GRPO, 150 pasos, entorno Integral, dificultad 0, 4 prompts x 16 rollouts por paso | No disponible | HuggingFace, safetensors |
-| davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149 | 1,5 B | No disponible | GRPO/RLVE, 150 actualizaciones, entorno FractionalProgramming, base Qwen2.5-1.5B-Instruct | No disponible | HuggingFace, featherless.ai |
+| rlve-opd-teacher-R1Distill-010-CirculatingDecimalCounting (este) | 1,78 B | No disponible | GRPO, 4.000 rollouts, 1 entorno, base R1-Distill-Qwen-1.5B | No disponible | Hugging Face, safetensors |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | No disponible en esta informacion | Destilacion de R1 sobre Qwen2.5-1.5B; proposito general y razonamiento | No disponible en esta informacion | Hugging Face, safetensors |
+| davidheineman/opd-teacher-R1Distill-Integral-step149 | ~1,5-1,78 B (no confirmado) | No disponible | GRPO, 150 pasos, entorno Integral, dificultad 0, 4 prompts x 16 rollouts por paso | No disponible | Hugging Face, safetensors |
+| davidheineman/opd-teacher-Q2.5I-FractionalProgramming-step149 | 1,5 B | No disponible | GRPO/RLVE, 150 actualizaciones, entorno FractionalProgramming, base Qwen2.5-1.5B-Instruct | No disponible | Hugging Face, featherless.ai |
 
 La diferencia principal frente al resto de teachers de la coleccion es el presupuesto de entrenamiento: este modelo usa 4.000 rollouts y checkpoint 499, mientras que las variantes `step149` documentadas en la busqueda usan 150 actualizaciones con 4 prompts y 16 rollouts por paso. Tambien cambia el modelo base: R1-Distill-Qwen-1.5B (con razonamiento destilado de R1) frente a Qwen2.5-1.5B-Instruct en las variantes Q2.5I.
 
@@ -103,7 +103,7 @@ La diferencia principal frente al resto de teachers de la coleccion es el presup
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-010-CirculatingDecimalCounting-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-010-CirculatingDecimalCounting-20261025
 - Run de entrenamiento en W&B: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/0176aaf8
 - Coleccion RLVE OPD Teachers: https://huggingface.co/collections/davidheineman/rlve-opd-teachers
 - Paper de referencia de los entornos (arXiv 2511.07317): https://arxiv.org/abs/2511.07317

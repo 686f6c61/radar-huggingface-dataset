@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Confianza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `oteam/alphafold2-ptm-model-4` | 92,96 M | MSA 256, pares 128 | pLDDT, pTM, PAE | AGPL-3.0 | HuggingFace (oteam) |
-| `oteam/alphafold2` | ~93,28 M | MSA 256, pares 128 | pLDDT | AGPL-3.0 | HuggingFace (oteam) |
-| `oteam/alphafold2-multimer` | ~93,28 M | MSA 256, pares 128, multiples cadenas | pLDDT, pTM, PAE | AGPL-3.0 | HuggingFace (oteam) |
+| `oteam/alphafold2-ptm-model-4` | 92,96 M | MSA 256, pares 128 | pLDDT, pTM, PAE | AGPL-3.0 | Hugging Face (oteam) |
+| `oteam/alphafold2` | ~93,28 M | MSA 256, pares 128 | pLDDT | AGPL-3.0 | Hugging Face (oteam) |
+| `oteam/alphafold2-multimer` | ~93,28 M | MSA 256, pares 128, multiples cadenas | pLDDT, pTM, PAE | AGPL-3.0 | Hugging Face (oteam) |
 | AlphaFold 2 oficial (DeepMind) | no disponible en la ficha | no disponible | pLDDT, pTM, PAE | licencia de codigo abierto de DeepMind (no AGPL) | github.com/google-deepmind/alphafold |
 
 La comparativa se limita a variantes del mismo autor porque la informacion proporcionada no incluye datos de modelos alternativos como ESMFold, RoseTTAFold u OmegaFold.
@@ -83,7 +83,7 @@ La comparativa se limita a variantes del mismo autor porque la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oteam/alphafold2-ptm-model-4
+- Hugging Face: https://huggingface.co/oteam/alphafold2-ptm-model-4
 - Variante monomero: https://huggingface.co/oteam/alphafold2
 - Variante pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

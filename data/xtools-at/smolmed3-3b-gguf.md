@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo para SmolMed3-3B, por lo que l
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xtools-at/SmolMed3-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/xtools-at/SmolMed3-3B-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/xtools-at/SmolMed3-3B
 - Dataset de ajuste (referenciado en la model card): https://huggingface.co/datasets/mamachang/medical-reasoning
 - Familia base SmolLM3 (referencia de arquitectura, no citada explicitamente en la model card): https://huggingface.co/HuggingFaceTB/SmolLM3-3B

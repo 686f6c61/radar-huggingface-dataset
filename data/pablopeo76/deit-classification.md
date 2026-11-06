@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pablopeo76/deit-classification` es un repositorio de HuggingFace que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a clasificación de imágenes. Lo publica el usuario pablopeo76 bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración «tiny» pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance.
+`pablopeo76/deit-classification` es un repositorio de Hugging Face que contiene una implementación propia y compacta de DeiT (Data-efficient Image Transformer) orientada a clasificación de imágenes. Lo publica el usuario pablopeo76 bajo licencia MIT. No se trata de un modelo preentrenado listo para producción: la propia model card lo describe como una configuración «tiny» pensada para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance.
 
 El peso incluido (`model.safetensors`) es un checkpoint de inicialización válido, no un checkpoint entrenado ni evaluado. El autor indica explícitamente que no se reclama ninguna puntuación de benchmark en el repositorio y que el checkpoint no ha sido entrenado ni auditado en cuanto a robustez, equidad o transferencia de dominio. El recuento real de parámetros en safetensors es de 49.600, un orden de magnitud muy inferior al de un DeiT-tiny canónico, lo que confirma que se trata de una configuración reducida de prueba.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pablopeo76/deit-classification | 49.600 | no disponible | Sin benchmark publicado (checkpoint sin entrenar) | MIT | HuggingFace, 0 descargas |
+| pablopeo76/deit-classification | 49.600 | no disponible | Sin benchmark publicado (checkpoint sin entrenar) | MIT | Hugging Face, 0 descargas |
 | DeiT-tiny canonico (referencia externa) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | Otros backbones de vision de escala tiny | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 - No existen benchmarks, metricas ni evaluaciones publicadas. Cualquier cifra de rendimiento atribuida a este repositorio seria inventada.
 - No se ha auditado el modelo en cuanto a robustez, equidad, sesgos o transferencia de dominio, segun la propia model card.
 - La topologia concreta (capas, dimensiones, cabezas, tamano de parche) no esta documentada en la informacion disponible, lo que dificulta reproducir la arquitectura.
-- La implementacion es personalizada, por lo que las APIs automaticas de HuggingFace (`AutoModel`, `pipeline`) no funcionaran sin escribir un adaptador especifico.
+- La implementacion es personalizada, por lo que las APIs automaticas de Hugging Face (`AutoModel`, `pipeline`) no funcionaran sin escribir un adaptador especifico.
 - La licencia MIT permite uso comercial y modificacion, pero hay que revisar por separado los terminos de los datos de origen si se usa con datasets externos, tal como advierte el autor.
 - Al estar orientado a clasificacion de imagenes, no soporta texto, codigo, tool calling ni razonamiento multi-paso.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de uso o validacion por parte de la comunidad.
@@ -84,5 +84,5 @@ No se dispone de datos verificados en la informacion proporcionada para establec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pablopeo76/deit-classification
+- Modelo en Hugging Face: https://huggingface.co/pablopeo76/deit-classification
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este modelo.

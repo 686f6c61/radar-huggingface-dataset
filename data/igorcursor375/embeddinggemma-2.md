@@ -89,8 +89,8 @@ Resultados con truncacion de vectores (MRL):
 
 | Modelo | Parametros | Modalidades | Contexto | MTEB multilingual v2 | MTEB code v1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| EmbeddingGemma 2 | ~740M | texto, imagen, video, audio | 8.192 tokens | 61,36 | 78,68 | apache-2.0 | HuggingFace (transformers, safetensors) |
-| EmbeddingGemma 1 | no disponible | texto | no disponible | 61,15 | 68,76 | no disponible | HuggingFace |
+| EmbeddingGemma 2 | ~740M | texto, imagen, video, audio | 8.192 tokens | 61,36 | 78,68 | apache-2.0 | Hugging Face (transformers, safetensors) |
+| EmbeddingGemma 1 | no disponible | texto | no disponible | 61,15 | 68,76 | no disponible | Hugging Face |
 | Otros modelos de embeddings multimodales | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La informacion proporcionada solo permite comparar con EmbeddingGemma 1, del que unicamente se detallan dos metricas de benchmark. No se dispone de datos de parametros, contexto ni licencia de ese predecesor, ni de otros modelos comparables, por lo que la comparativa queda incompleta.

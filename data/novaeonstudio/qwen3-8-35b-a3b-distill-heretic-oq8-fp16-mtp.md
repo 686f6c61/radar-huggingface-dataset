@@ -129,7 +129,7 @@ Comparativa dentro de la misma familia de builds de Novaeon.Studio y con el mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ8-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ8-fp16-mtp
 - Modelo base: https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill
 - Build hermana oQ6: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ6-fp16-mtp
 - Build hermana oQ4: https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ4-fp16-mtp

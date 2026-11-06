@@ -97,7 +97,7 @@ Las diferencias globales de pass@1 y pass@5 incluyen el cero en sus intervalos d
 | order-ops / typo | 64,5 % / 55,2 % | 72,7 % / 61,5 % | No disponible |
 | Modelo base | `Qwen/Qwen3.5-9B` | `Qwen/Qwen3.5-9B` (misma evaluacion) | No disponible |
 | Licencia | MIT | No aplica (metodo, no artefacto) | No disponible |
-| Disponibilidad | Publicado en HuggingFace, 0 descargas y 0 likes | Implementado en la misma evaluacion | No disponible |
+| Disponibilidad | Publicado en Hugging Face, 0 descargas y 0 likes | Implementado en la misma evaluacion | No disponible |
 
 No se dispone de datos sobre otras lentes publicadas para este mismo modelo base en la informacion proporcionada.
 
@@ -119,11 +119,11 @@ No se dispone de datos sobre otras lentes publicadas para este mismo modelo base
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcywinski/jacobian-lens-qwen3.5-9b
+- Modelo en Hugging Face: https://huggingface.co/bcywinski/jacobian-lens-qwen3.5-9b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Codigo de referencia de la Jacobian lens (Anthropic): https://github.com/anthropics/jacobian-lens
 - Commit fijado del paquete `jlens` usado en el ejemplo: `581d398613e5602a5af361e1c34d3a92ea82ba8e`
-- Informe completo de evaluacion: `evaluation/results.md` dentro del repositorio de HuggingFace
+- Informe completo de evaluacion: `evaluation/results.md` dentro del repositorio de Hugging Face
 - Resumen en JSON de la evaluacion: `evaluation/summary.json`
 - Configuracion de la evaluacion: `evaluation/config.yaml`
 - Metadatos de ejecucion: `evaluation/run_meta.json`

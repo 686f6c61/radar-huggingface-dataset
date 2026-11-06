@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `meetingof/alexisveri-Q8_0-GGUF` | Adaptador LoRA cuantizado | 41,9 M (adaptador) | no disponible | no disponible | GGUF Q8_0 | HuggingFace, 0 descargas |
-| `meetingof/alexisveri` | Adaptador LoRA original | no disponible | no disponible | no disponible | safetensors (PEFT) | HuggingFace |
-| `ogulcanaydogan/Turkish-LLM-7B-Instruct` | Modelo completo ajustado | 7B | no disponible | no disponible | safetensors | HuggingFace |
-| Otros adaptadores LoRA en GGUF | Adaptador LoRA cuantizado | Variable | Depende del base | Variable | GGUF | Amplia disponibilidad en HuggingFace |
+| `meetingof/alexisveri-Q8_0-GGUF` | Adaptador LoRA cuantizado | 41,9 M (adaptador) | no disponible | no disponible | GGUF Q8_0 | Hugging Face, 0 descargas |
+| `meetingof/alexisveri` | Adaptador LoRA original | no disponible | no disponible | no disponible | safetensors (PEFT) | Hugging Face |
+| `ogulcanaydogan/Turkish-LLM-7B-Instruct` | Modelo completo ajustado | 7B | no disponible | no disponible | safetensors | Hugging Face |
+| Otros adaptadores LoRA en GGUF | Adaptador LoRA cuantizado | Variable | Depende del base | Variable | GGUF | Amplia disponibilidad en Hugging Face |
 
 Los datos de rendimiento, licencia y contexto de las alternativas no estan disponibles en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
 
@@ -91,7 +91,7 @@ Los datos de rendimiento, licencia y contexto de las alternativas no estan dispo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meetingof/alexisveri-Q8_0-GGUF
+- Repositorio Hugging Face: https://huggingface.co/meetingof/alexisveri-Q8_0-GGUF
 - Adaptador original: https://huggingface.co/meetingof/alexisveri
 - Modelo base del adaptador: https://huggingface.co/ogulcanaydogan/Turkish-LLM-7B-Instruct
 - Espacio GGUF-my-lora: https://huggingface.co/spaces/ggml-org/gguf-my-lora

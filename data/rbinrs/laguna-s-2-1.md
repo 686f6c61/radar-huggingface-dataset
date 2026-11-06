@@ -94,12 +94,12 @@ Laguna S 2.1 ofrece un rendimiento competitivo con un coste de inferencia mucho 
 - No se especifican los idiomas soportados. Aunque el tokenizador sugiere multilingüismo, el rendimiento en idiomas distintos del inglés no está documentado.
 - La licencia OpenMDW-1.1 es permisiva, pero se recomienda revisar sus términos completos para usos específicos, especialmente en lo relativo a patentes o marcas.
 - El modelo requiere hardware sustancial para un despliegue óptimo; las cuantizaciones agresivas pueden afectar al rendimiento en tareas de razonamiento complejo.
-- El repositorio de HuggingFace indicado (rbinrs/Laguna-S-2.1) parece ser un mirror o copia; el repositorio oficial es poolside/Laguna-S-2.1. Se recomienda verificar la procedencia de los pesos antes de su uso.
+- El repositorio de Hugging Face indicado (rbinrs/Laguna-S-2.1) parece ser un mirror o copia; el repositorio oficial es poolside/Laguna-S-2.1. Se recomienda verificar la procedencia de los pesos antes de su uso.
 
 ## Enlaces
 
-- Repositorio HuggingFace (oficial): https://huggingface.co/poolside/Laguna-S-2.1
-- Repositorio HuggingFace (mirror indicado en la consulta): https://huggingface.co/rbinrs/Laguna-S-2.1
+- Repositorio Hugging Face (oficial): https://huggingface.co/poolside/Laguna-S-2.1
+- Repositorio Hugging Face (mirror indicado en la consulta): https://huggingface.co/rbinrs/Laguna-S-2.1
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1
 - Uso en OpenRouter: https://openrouter.ai/poolside/laguna-s-2.1
 - Uso en Vercel AI Gateway: https://vercel.com/ai-gateway/models/laguna-s-2.1

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-nanoVLM es un modelo de lenguaje y visión (VLM) minimalista publicado por el usuario s13o en HuggingFace, derivado del modelo base nanoVLM-222M de lusxvr. Su proposito es servir como plataforma de experimentacion e investigacion: toda la arquitectura y la logica de entrenamiento caben en unas 750 lineas de codigo PyTorch puro, lo que lo convierte en un banco de pruebas ideal para estudiar el funcionamiento interno de un VLM sin la complejidad de los modelos de produccion.
+nanoVLM es un modelo de lenguaje y visión (VLM) minimalista publicado por el usuario s13o en Hugging Face, derivado del modelo base nanoVLM-222M de lusxvr. Su proposito es servir como plataforma de experimentacion e investigacion: toda la arquitectura y la logica de entrenamiento caben en unas 750 lineas de codigo PyTorch puro, lo que lo convierte en un banco de pruebas ideal para estudiar el funcionamiento interno de un VLM sin la complejidad de los modelos de produccion.
 
 El modelo combina un codificador de imagen basado en ViT (SigLIP-B/16-224-85M) con un modelo de lenguaje causal ligero (SmolLM2-135M). La model card del autor declara 222M parametros, aunque el repositorio de safetensors contiene 460.114.016 parametros, probablemente porque incluye tanto el codificador visual como el proyector y el LM en el mismo checkpoint. El repositorio ocupa 1,8 GB.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|
 | s13o/nanoVLM | 460M (safetensors); 222M declarados | no disponible | MIT | VLM minimalista de investigacion |
 | lusxvr/nanoVLM-222M | 222M | no disponible | no disponible en la informacion | Modelo base del que deriva |
-| SmolVLM (HuggingFace) | ~256M-2B (segun variante) | no disponible en la informacion | Apache 2.0 (segun variante) | VLM ligero para dispositivos |
+| SmolVLM (Hugging Face) | ~256M-2B (segun variante) | no disponible en la informacion | Apache 2.0 (segun variante) | VLM ligero para dispositivos |
 | LLaVA-1.5-7B | 7B | 4K tokens aproximadamente | LLaMA (uso condicionado) | VLM de referencia con LM mayor |
 
 La comparacion con SmolVLM y LLaVA se ofrece como referencia de categoria; no se dispone de datos de rendimiento de nanoVLM para contrastar metricas.
@@ -84,8 +84,8 @@ La comparacion con SmolVLM y LLaVA se ofrece como referencia de categoria; no se
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/s13o/nanoVLM
+- Modelo en Hugging Face: https://huggingface.co/s13o/nanoVLM
 - Modelo base: https://huggingface.co/lusxvr/nanoVLM-222M
 - Repositorio de codigo: https://github.com/huggingface/nanoVLM
-- Especificacion de model cards de HuggingFace: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
+- Especificacion de model cards de Hugging Face: https://github.com/huggingface/hub-docs/blob/main/modelcard.md?plain=1
 - Guia de model cards: https://huggingface.co/docs/hub/model-cards

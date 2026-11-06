@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este repositorio (fine-tune de Mistral-7B-v0.3) | 7,25B | 32.768 tokens (heredado, no declarado) | Apache-2.0 | HuggingFace, 0 descargas | Sin documentacion del ajuste ni benchmarks |
-| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado | Modelo instruct oficial, con function calling y evaluaciones publicas |
-| Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License (con restricciones) | HuggingFace | Mayor contexto y ecosistema, licencia no plenamente permisiva |
-| Qwen2.5-7B-Instruct | 7,62B | 128.000 tokens | Apache-2.0 | HuggingFace | Multilingue declarado y buen rendimiento en codigo y matematicas |
+| Este repositorio (fine-tune de Mistral-7B-v0.3) | 7,25B | 32.768 tokens (heredado, no declarado) | Apache-2.0 | Hugging Face, 0 descargas | Sin documentacion del ajuste ni benchmarks |
+| Mistral-7B-Instruct-v0.3 | 7,25B | 32.768 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado | Modelo instruct oficial, con function calling y evaluaciones publicas |
+| Llama-3.1-8B-Instruct | 8,03B | 128.000 tokens | Llama 3.1 Community License (con restricciones) | Hugging Face | Mayor contexto y ecosistema, licencia no plenamente permisiva |
+| Qwen2.5-7B-Instruct | 7,62B | 128.000 tokens | Apache-2.0 | Hugging Face | Multilingue declarado y buen rendimiento en codigo y matematicas |
 
 El dato diferencial de este repositorio frente a las alternativas es unicamente su licencia Apache-2.0 combinada con un vocabulario de 32.768 tokens; en documentacion, evaluaciones y soporte queda por detras de los tres modelos de referencia.
 
@@ -86,7 +86,7 @@ El dato diferencial de este repositorio frente a las alternativas es unicamente 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-350fe269-b452-4f1e-b3fe-8121f2b9c3b2
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-350fe269-b452-4f1e-b3fe-8121f2b9c3b2
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo instruct de referencia (origen del texto de la model card): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio de inferencia de Mistral: https://github.com/mistralai/mistral-inference

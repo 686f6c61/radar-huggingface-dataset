@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) distribuido en el repositorio de HuggingFace `wang-yingjun/DeepSeek-V4.1-Flash`. Segun la model card, se trata de un modelo de 552.000 millones de parametros en el backbone, con procesamiento nativo de imagenes y texto, generacion de texto autorregresiva y una ventana de contexto de hasta un millon de tokens. El repositorio declara 763.205.315.794 parametros reales en safetensors, cifra coherente con los 552B del backbone mas los 196B de la memoria condicional Engram y el codificador de vision.
+DeepSeek-V4.1-Flash es un modelo multimodal de mezcla de expertos (MoE) distribuido en el repositorio de Hugging Face `wang-yingjun/DeepSeek-V4.1-Flash`. Segun la model card, se trata de un modelo de 552.000 millones de parametros en el backbone, con procesamiento nativo de imagenes y texto, generacion de texto autorregresiva y una ventana de contexto de hasta un millon de tokens. El repositorio declara 763.205.315.794 parametros reales en safetensors, cifra coherente con los 552B del backbone mas los 196B de la memoria condicional Engram y el codificador de vision.
 
 Su propuesta tecnica central es la compresion agresiva de la cache KV: la arquitectura Causal Encoder-Decoder (CED) proyecta la cache KV global del decodificador desde los estados ocultos del encoder, con lo que solo se activan unos 8B de parametros por token en prefill y 16B en decode. Combinado con Compressed Sparse Attention 2 (CSA2) y cache KV principal en FP4, el modelo reduce el coste de memoria de la cache a unos 890 bytes por token, aproximadamente una cuarta parte de DeepSeek-V4-Flash y 437 veces menos que DeepSeek-V1, segun la propia model card.
 
@@ -66,7 +66,7 @@ No se han publicado resultados numericos de benchmarks en la informacion disponi
 - Cache KV: a 890 bytes por token, una secuencia de 1M de tokens ocupa aproximadamente 890 MB (unos 0,85 GiB); una de 128K tokens, unos 114 MB. Es una cifra muy contenida frente a modelos con cache en BF16, pero sigue siendo un coste por secuencia concurrente.
 - GPU recomendadas por configuracion: 16xH100 de 80 GB (1,28 TB) o 8xH200 de 141 GB (1,13 TB) para pesos en FP8; 8xH100 de 80 GB (640 GB) seria el minimo practico si se dispone de pesos en FP4 o de la mezcla de precision del repositorio.
 - No cabe en GPU de consumo. Una RTX 4090 con 24 GB es insuficiente incluso para una sola copia de los pesos, y los 8B de parametros activos por token en prefill no implican que el modelo quepa en memoria: los 384 expertos enrutados por capa deben estar residentes o descargarse dinamicamente, lo que degrada la latencia.
-- Opciones de despliegue: `transformers` es la libreria declarada; el tag `endpoints_compatible` apunta a compatibilidad con HuggingFace Inference Endpoints. vLLM, SGLang y TGI son candidatos razonables para servir el modelo, aunque no se documenta soporte especifico en la informacion disponible. No hay artefactos GGUF, por lo que llama.cpp y Ollama no son viables sin convertir los pesos.
+- Opciones de despliegue: `transformers` es la libreria declarada; el tag `endpoints_compatible` apunta a compatibilidad con Hugging Face Inference Endpoints. vLLM, SGLang y TGI son candidatos razonables para servir el modelo, aunque no se documenta soporte especifico en la informacion disponible. No hay artefactos GGUF, por lo que llama.cpp y Ollama no son viables sin convertir los pesos.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,23 +83,23 @@ Solo se dispone de la comparacion cualitativa de tamano de cache KV que la propi
 
 - El repositorio pertenece al usuario `wang-yingjun`, no a la organizacion oficial `deepseek-ai`. La model card enlaza recursos oficiales de DeepSeek, pero no hay confirmacion de que los pesos publicados correspondan al modelo descrito. Con 0 descargas y 0 likes, no existe validacion de la comunidad.
 - Los resultados de evaluacion no estan disponibles en la informacion consultada, por lo que las afirmaciones de rendimiento de la model card no se pueden verificar.
-- El campo de idiomas esta vacio en HuggingFace y la model card no detalla cobertura linguistica. No se puede garantizar calidad en castellano ni en ningun otro idioma concreto.
+- El campo de idiomas esta vacio en Hugging Face y la model card no detalla cobertura linguistica. No se puede garantizar calidad en castellano ni en ningun otro idioma concreto.
 - Riesgo de alucinacion inherente a los modelos generativos, agravado por la ausencia de evaluaciones publicadas de fidelidad.
 - La compresion de cache KV en FP4 (E2M1) y el uso de atencion dispersa con indexado jerarquico pueden degradar la recuperacion de informacion en contextos muy largos; no hay evaluaciones disponibles sobre tareas de aguja en pajar a 1M de tokens.
 - El enrutado MoE con 384 expertos por capa y 6 activos por token es sensible a la calibracion y a la cuantizacion; los tags `8-bit` y `fp8` indican pesos de baja precision que pueden afectar a la calidad frente a una version en BF16.
 - Requisitos de hardware extremos: 510,3 GB de repositorio y, segun estimacion, entre 382 GB y 1,53 TB de memoria para los pesos. No es desplegable en hardware de consumo.
 - No hay artefactos GGUF ni cuantizaciones ligeras, lo que limita las opciones de despliegue a infraestructura de centro de datos.
 - La licencia MIT se declara en el repositorio, pero al tratarse de una publicacion de terceros conviene verificar los derechos de uso comercial y el cumplimiento de las condiciones del modelo original, si existe.
-- La fecha de creacion declarada en HuggingFace (28 de septiembre de 2026) es posterior a la fecha habitual de referencia de este analisis, dato a tener en cuenta al evaluar la vigencia del repositorio.
+- La fecha de creacion declarada en Hugging Face (28 de septiembre de 2026) es posterior a la fecha habitual de referencia de este analisis, dato a tener en cuenta al evaluar la vigencia del repositorio.
 - No se documenta soporte de tool calling ni de function calling, algo relevante si se planea integrar el modelo en un orquestador de agentes.
 - Los resultados de la busqueda web realizada no guardan relacion con este modelo y no aportan informacion adicional utilizable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/wang-yingjun/DeepSeek-V4.1-Flash
+- Repositorio en Hugging Face: https://huggingface.co/wang-yingjun/DeepSeek-V4.1-Flash
 - Informe tecnico referenciado en la model card (ruta declarada, no verificada): https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Sitio oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- Organizacion DeepSeek AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organizacion DeepSeek AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Perfil de X/Twitter de DeepSeek: https://twitter.com/deepseek_ai
 - Repositorio GitHub de DeepSeek (origen de los recursos graficos enlazados en la model card): https://github.com/deepseek-ai/DeepSeek-V2

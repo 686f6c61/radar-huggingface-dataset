@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones de parámetros y co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Cyan666/HandsOn-Checkpoints
+- Repositorio Hugging Face: https://huggingface.co/Cyan666/HandsOn-Checkpoints
 - Artículo (arXiv): https://arxiv.org/abs/2610.26765
 - Código y adaptadores de inferencia: https://github.com/TsinghuaC3I/HandsOn
 - Dataset: https://huggingface.co/datasets/Cyan666/HandsOn-Datasets

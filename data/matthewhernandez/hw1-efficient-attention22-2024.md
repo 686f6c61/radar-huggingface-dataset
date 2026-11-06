@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario matthewhernandez, no contiene un modelo de lenguaje entrenado, sino una nota de investigación sobre mecanismos de atención eficiente. El propio autor lo describe como un "research note" de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como un lanzamiento de pesos entrenados.
+Este repositorio de Hugging Face, publicado por el usuario matthewhernandez, no contiene un modelo de lenguaje entrenado, sino una nota de investigación sobre mecanismos de atención eficiente. El propio autor lo describe como un "research note" de trabajo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación. No se presenta como un paper completo ni como un lanzamiento de pesos entrenados.
 
 El repositorio incluye un único artefacto principal (`paper_notes.md`) y documentación. Los 16.576 parámetros detectados en safetensors corresponden probablemente a un artefacto residual o de prueba, no a un modelo utilizable. El tamaño del repositorio es de 0.0 GB, lo que confirma que no hay pesos sustanciales.
 
@@ -60,6 +60,6 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/matthewhernandez/hw1-efficient-attention22-2024
+- Repositorio Hugging Face: https://huggingface.co/matthewhernandez/hw1-efficient-attention22-2024
 - Artículo de referencia sobre atención eficiente (arXiv 2507.19595): https://arxiv.org/html/2507.19595v2
 - Repositorio Qwen3.8-Flash-Next (arquitectura híbrida de atención eficiente): https://github.com/QwenLM/Qwen3.8-Flash-Next/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alexeyvolksoz/grad-classification` es un repositorio de investigación publicado en HuggingFace por el usuario alexeyvolksoz que contiene un prototipo de modelo **Poolformer** orientado a tareas de clasificación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: incluye el código de definición y ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
+`alexeyvolksoz/grad-classification` es un repositorio de investigación publicado en Hugging Face por el usuario alexeyvolksoz que contiene un prototipo de modelo **Poolformer** orientado a tareas de clasificación. No se trata de un modelo entrenado ni evaluado, sino de un esqueleto reproducible: incluye el código de definición y ejecución (`run.py`), la configuración de arquitectura (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`) válido únicamente para pruebas de humo.
 
 El modelo declara una escala "large" dentro de la familia Poolformer, con atención de tipo multi query, fusión de bajo rango, activación ReLU y normalización InstanceNorm. El recuento real de parámetros almacenados en el checkpoint de safetensors es de 24.832, una cifra muy reducida que confirma que se trata de una inicialización mínima y no de un modelo con capacidad productiva.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| alexeyvolksoz/grad-classification | 24.832 | no disponible | BSD-3-Clause | HuggingFace | Prototipo sin entrenar |
+| alexeyvolksoz/grad-classification | 24.832 | no disponible | BSD-3-Clause | Hugging Face | Prototipo sin entrenar |
 | Poolformer (Meta, referencia original) | no disponible en la información | no disponible | no disponible | no disponible | Arquitectura de referencia |
-| Otros clasificadores Poolformer en HuggingFace | no disponible | no disponible | variable | HuggingFace | No verificados en la información |
+| Otros clasificadores Poolformer en Hugging Face | no disponible | no disponible | variable | Hugging Face | No verificados en la información |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas concretas.
 
@@ -83,5 +83,5 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alexeyvolksoz/grad-classification
+- Hugging Face: https://huggingface.co/alexeyvolksoz/grad-classification
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

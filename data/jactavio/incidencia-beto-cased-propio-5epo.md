@@ -4,7 +4,7 @@
 
 `Jactavio/incidencia-beto-cased-propio-5epo` es un ajuste fino (fine-tune) del modelo BERT en español BETO (`dccuchile/bert-base-spanish-wwm-cased`) para una tarea de clasificación de texto, según declara la propia etiqueta de pipeline del repositorio. El nombre del checkpoint sugiere que se entrenó durante 5 épocas sobre un corpus de "incidencias", pero el repositorio no incluye model card, descripción del dataset, definición de las clases, hiperparámetros ni métricas de evaluación, por lo que no es posible confirmar ninguno de esos extremos a partir de la información pública disponible.
 
-El modelo lo publica el usuario Jactavio en HuggingFace y, en el momento de la consulta, acumula 0 descargas y 0 likes, sin licencia declarada ni idiomas declarados. Se distribuye en formato `safetensors` y es compatible con la librería `transformers`, con la API de inferencia de HuggingFace (`endpoints_compatible`) y con `text-embeddings-inference`, lo que indica que puede desplegarse tanto para clasificación como para extracción de representaciones vectoriales.
+El modelo lo publica el usuario Jactavio en Hugging Face y, en el momento de la consulta, acumula 0 descargas y 0 likes, sin licencia declarada ni idiomas declarados. Se distribuye en formato `safetensors` y es compatible con la librería `transformers`, con la API de inferencia de Hugging Face (`endpoints_compatible`) y con `text-embeddings-inference`, lo que indica que puede desplegarse tanto para clasificación como para extracción de representaciones vectoriales.
 
 Por su tamaño (arquitectura BERT-base, en torno a 110 millones de parámetros) y su naturaleza encoder-only, es un modelo ligero y económico de servir, apto para tareas de etiquetado y enrutado de baja latencia, pero no para generación de texto, razonamiento multi-paso ni uso como agente. Su relevancia práctica depende enteramente del dominio de "incidencias" sobre el que se haya entrenado, aspecto que la ficha no documenta.
 
@@ -28,7 +28,7 @@ Por su tamaño (arquitectura BERT-base, en torno a 110 millones de parámetros) 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de BETO, un transformer encoder-only con 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion, entrenado con tokenizacion WordPiece *cased* y enmascaramiento de palabra completa (*whole word masking*) sobre corpus en espanol. El checkpoint aquí descrito anade una cabeza de clasificacion sobre la representacion del token `[CLS]` y se ha generado con el `Trainer` de HuggingFace, segun la etiqueta `generated_from_trainer`.
+La arquitectura subyacente es la de BETO, un transformer encoder-only con 12 capas, 768 dimensiones ocultas y 12 cabezas de atencion, entrenado con tokenizacion WordPiece *cased* y enmascaramiento de palabra completa (*whole word masking*) sobre corpus en espanol. El checkpoint aquí descrito anade una cabeza de clasificacion sobre la representacion del token `[CLS]` y se ha generado con el `Trainer` de Hugging Face, segun la etiqueta `generated_from_trainer`.
 
 No hay informacion disponible sobre el numero de tokens de entrenamiento del ajuste fino, la composicion del dataset, el numero de clases, la estrategia de particion train/validation/test, la funcion de perdida, si hubo desbalanceo de clases ni si se aplicaron tecnicas de regularizacion. Tampoco se documenta si se uso RLHF, DPO u otra etapa de alineacion (poco habitual en modelos encoder de clasificacion). No consta ninguna innovacion tecnica propia: se trata de un fine-tune estandar sobre un backbone preentrenado publico.
 
@@ -37,7 +37,7 @@ No hay informacion disponible sobre el numero de tokens de entrenamiento del aju
 - Clasificacion de texto (pipeline `text-classification`): asigna una o varias etiquetas a una secuencia de entrada, segun la cabeza entrenada. El conjunto de etiquetas no esta documentado.
 - Extraccion de embeddings de frase: la etiqueta `text-embeddings-inference` indica que el checkpoint puede usarse para generar representaciones vectoriales, utiles en busqueda semantica o agrupamiento (clustering).
 - Procesamiento de entradas en espanol: al derivar de BETO, el comportamiento esperado es optimo en espanol, aunque la ficha no declara idiomas soportados.
-- Compatibilidad con `transformers` y con endpoints de HuggingFace: se puede invocar mediante `pipeline("text-classification")` o desplegar como endpoint gestionado.
+- Compatibilidad con `transformers` y con endpoints de Hugging Face: se puede invocar mediante `pipeline("text-classification")` o desplegar como endpoint gestionado.
 - Sin capacidad de generacion de texto: es un modelo encoder-only, no autoregresivo.
 - Sin soporte declarado de tool calling, function calling, uso como agente, razonamiento multi-paso, vision, audio ni modo "thinking".
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - VRAM estimada para inferencia: en torno a 0,5-1 GB con los pesos en precision completa (FP32) y lotes pequenos; aproximadamente 0,3-0,5 GB en FP16 o INT8. Se recomienda reservar 2-4 GB para trabajar con lotes medianos y secuencias cercanas a los 512 tokens.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de memoria dedicada es suficiente, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4090, A10, A100 o H100 (estas dos ultimas solo tendrian sentido para servir lotes muy grandes o muchos modelos en paralelo).
 - Viabilidad en hardware de consumo: si, cabe holgadamente en cualquier GPU de consumo moderna e incluso en CPUs convencionales con latencia aceptable para procesos por lotes. Tambien es viable en portatiles sin GPU para tareas de bajo volumen.
-- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, HuggingFace Inference Endpoints (la etiqueta `endpoints_compatible` lo indica), `text-embeddings-inference` para obtener embeddings, exportacion a ONNX Runtime, TorchServe o un servicio propio con FastAPI. No procede usar vLLM ni llama.cpp para clasificacion con este checkpoint, ya que son motores orientados a modelos generativos.
+- Opciones de despliegue: `transformers` con `pipeline("text-classification")`, Hugging Face Inference Endpoints (la etiqueta `endpoints_compatible` lo indica), `text-embeddings-inference` para obtener embeddings, exportacion a ONNX Runtime, TorchServe o un servicio propio con FastAPI. No procede usar vLLM ni llama.cpp para clasificacion con este checkpoint, ya que son motores orientados a modelos generativos.
 - Latencia y throughput: no hay mediciones publicadas para este checkpoint. Como referencia orientativa para modelos BERT-base en GPU de gama alta, con lotes y secuencias cortas se suele operar en el orden de miles de secuencias por segundo, mientras que en CPU el rendimiento tipico se situa en decenas a pocos cientos de secuencias por segundo. Estas cifras son estimaciones generales de la arquitectura y no se han verificado en este modelo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jactavio/incidencia-beto-cased-propio-5epo` | ~110 M | 512 tokens | Clasificacion de texto (dominio no documentado) | No disponible | HuggingFace, `safetensors` |
-| `dccuchile/bert-base-spanish-wwm-cased` (BETO) | ~110 M | 512 tokens | Modelo base (requiere fine-tune) | No disponible en la informacion proporcionada | HuggingFace y repositorio GitHub de BETO |
-| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 tokens | Modelo base en espanol | No disponible en la informacion proporcionada | HuggingFace |
-| `FacebookAI/xlm-roberta-base` | ~278 M | 512 tokens | Modelo base multilingue | No disponible en la informacion proporcionada | HuggingFace |
+| `Jactavio/incidencia-beto-cased-propio-5epo` | ~110 M | 512 tokens | Clasificacion de texto (dominio no documentado) | No disponible | Hugging Face, `safetensors` |
+| `dccuchile/bert-base-spanish-wwm-cased` (BETO) | ~110 M | 512 tokens | Modelo base (requiere fine-tune) | No disponible en la informacion proporcionada | Hugging Face y repositorio GitHub de BETO |
+| `PlanTL-GOB-ES/roberta-base-bne` | ~125 M | 512 tokens | Modelo base en espanol | No disponible en la informacion proporcionada | Hugging Face |
+| `FacebookAI/xlm-roberta-base` | ~278 M | 512 tokens | Modelo base multilingue | No disponible en la informacion proporcionada | Hugging Face |
 
 Nota metodologica: la comparativa se limita a arquitecturas y tamanos estandar de cada familia. No se dispone de resultados de benchmarks del checkpoint evaluado, por lo que no se puede afirmar que supere o quede por debajo de las alternativas en ninguna tarea concreta. Las licencias deben verificarse en cada repositorio original antes de cualquier uso comercial.
 
@@ -89,7 +89,7 @@ Nota metodologica: la comparativa se limita a arquitecturas y tamanos estandar d
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Jactavio/incidencia-beto-cased-propio-5epo
-- Modelo base BETO en HuggingFace: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
+- Repositorio Hugging Face del modelo: https://huggingface.co/Jactavio/incidencia-beto-cased-propio-5epo
+- Modelo base BETO en Hugging Face: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - Repositorio GitHub de BETO: https://github.com/dccuchile/beto
 - La busqueda web realizada no devolvio enlaces relacionados con este modelo: los resultados obtenidos correspondian a contenido no relacionado (ROTK, Dota 2 y Yu-Gi-Oh).

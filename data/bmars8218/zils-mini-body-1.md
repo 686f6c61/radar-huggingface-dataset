@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bmars8218/zils-mini-body-1` es un modelo de lenguaje de 4.539.265.536 parámetros (aproximadamente 4,54 B) publicado por el usuario bmars8218 en HuggingFace. No se trata de un entrenamiento propio: la model card indica explícitamente que los pesos lingüísticos son una resubida sin modificar de `apertixai/cerno-4b-v1.2` en la revisión `e14dec9894c5afb761f90926f1c19b19938a271c`, publicado bajo licencia Apache 2.0. El único cambio introducido es la adición de la torre de visión (`model.visual.*`) de `Qwen/Qwen3.5-4B` en la revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`, también Apache 2.0, para cumplir con el formato exigido por el «body» de Zils.
+`bmars8218/zils-mini-body-1` es un modelo de lenguaje de 4.539.265.536 parámetros (aproximadamente 4,54 B) publicado por el usuario bmars8218 en Hugging Face. No se trata de un entrenamiento propio: la model card indica explícitamente que los pesos lingüísticos son una resubida sin modificar de `apertixai/cerno-4b-v1.2` en la revisión `e14dec9894c5afb761f90926f1c19b19938a271c`, publicado bajo licencia Apache 2.0. El único cambio introducido es la adición de la torre de visión (`model.visual.*`) de `Qwen/Qwen3.5-4B` en la revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`, también Apache 2.0, para cumplir con el formato exigido por el «body» de Zils.
 
 El modelo se presenta como una entrada «scout» al pool «d3-mini soup» de Zils, un mecanismo asociado al subnet 127 de Bittensor. Es decir, su función principal no es la de un modelo listo para producción, sino la de servir como cuerpo candidato dentro de un proceso de mezcla (soup) de pesos gestionado por esa red. El repositorio incluye un archivo `zils-owner.json` que identifica la hotkey que realiza el commit del body.
 
@@ -42,7 +42,7 @@ No se ha llevado a cabo ningún fine-tuning por parte de bmars8218: el repositor
 - Participación en el pool «d3-mini soup» de Zils (subnet 127 de Bittensor): el caso de uso declarado por el autor es servir como cuerpo candidato en el proceso de mezcla de pesos de esa red.
 - Referencia para pipelines de `transformers`: al cargarse con la librería estándar y pesos safetensors, puede emplearse como ejemplo de estructura de repositorio con múltiples submodelos.
 - Base para experimentos de fine-tuning multimodal: partiendo de pesos Apache 2.0, un equipo podría intentar alinear la torre visual con el decodificador de texto mediante entrenamiento supervisado.
-- Pruebas de integración con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en infraestructuras de inferencia compatibles con la API de HuggingFace.
+- Pruebas de integración con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que el repositorio puede desplegarse en infraestructuras de inferencia compatibles con la API de Hugging Face.
 - Auditoría de licencias y procedencia de pesos: útil como caso de estudio de resubidas que combinan obras de distintos autores bajo Apache 2.0.
 
 ## Benchmarks y rendimiento
@@ -55,16 +55,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 8 bits: en torno a 4,5-5 GB; en 4 bits, alrededor de 2,5-3 GB (estimaciones teóricas, no verificadas para este checkpoint).
 - GPU recomendadas: A100 40 GB, H100 o L40S para FP16 con contexto largo; RTX 4090 (24 GB) o RTX 3090 (24 GB) para FP16 con margen suficiente.
 - GPU de consumo: cabe en GPUs consumer con 12 GB o más en cuantización de 8 bits; en 4 bits podría ejecutarse en tarjetas de 8 GB, siempre que la torre visual no incremente significativamente el uso de memoria.
-- Opciones de despliegue: `transformers` (librería declarada), servidores compatibles con endpoints de HuggingFace; vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
+- Opciones de despliegue: `transformers` (librería declarada), servidores compatibles con endpoints de Hugging Face; vLLM, llama.cpp, Ollama o TGI no están confirmados en la información disponible.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| bmars8218/zils-mini-body-1 | ≈4,54 B | no disponible | Apache 2.0 | HuggingFace | Resubida de Cerno 4B v1.2 con torre visual de Qwen3.5-4B |
-| apertixai/cerno-4b-v1.2 | ≈4 B | no disponible | Apache 2.0 | HuggingFace | Modelo base original, solo texto |
-| Qwen/Qwen3.5-4B | ≈4 B | no disponible | Apache 2.0 | HuggingFace | Fuente de la torre visual añadida |
+| bmars8218/zils-mini-body-1 | ≈4,54 B | no disponible | Apache 2.0 | Hugging Face | Resubida de Cerno 4B v1.2 con torre visual de Qwen3.5-4B |
+| apertixai/cerno-4b-v1.2 | ≈4 B | no disponible | Apache 2.0 | Hugging Face | Modelo base original, solo texto |
+| Qwen/Qwen3.5-4B | ≈4 B | no disponible | Apache 2.0 | Hugging Face | Fuente de la torre visual añadida |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: bmars8218/zils-mini-body-1](https://huggingface.co/bmars8218/zils-mini-body-1)
+- [Hugging Face: bmars8218/zils-mini-body-1](https://huggingface.co/bmars8218/zils-mini-body-1)
 - [Modelo base: apertixai/cerno-4b-v1.2 (revisión e14dec9)](https://huggingface.co/apertixai/cerno-4b-v1.2/tree/e14dec9894c5afb761f90926f1c19b19938a271c)
 - [Fuente de la torre visual: Qwen/Qwen3.5-4B (revisión 851bf6e)](https://huggingface.co/Qwen/Qwen3.5-4B)

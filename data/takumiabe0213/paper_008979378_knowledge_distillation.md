@@ -61,7 +61,7 @@ No disponible. No existen modelos comparables porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Takumiabe0213/paper_008979378_knowledge_distillation
+- Repositorio en Hugging Face: https://huggingface.co/Takumiabe0213/paper_008979378_knowledge_distillation
 - Encuesta sobre destilación de conocimiento (arXiv): https://arxiv.org/html/2503.12067v1
 - Encuesta sobre destilación de conocimiento en LLMs (arXiv): https://arxiv.org/abs/2402.13116
 - Artículo de revisión (ScienceDirect): https://www.sciencedirect.com/science/article/pii/S2666827024000811

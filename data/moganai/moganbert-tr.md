@@ -78,12 +78,12 @@ Advertencias metodológicas declaradas por el autor: TabiBench es de una sola se
 
 | Modelo | Parametros | Contexto | Idioma base | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MoganBERT-TR | 149,4 M | 8.192 tokens | Turco | Apache 2.0 | HuggingFace (`moganai/MoganBERT-TR`) |
-| BERTurk (dbmdz/bert-base-turkish-cased) | ~110 M | 512 tokens | Turco | MIT | HuggingFace |
-| Turkish ELECTRA (dbmdz/electra-base-turkish-cased-discriminator) | ~110 M | 512 tokens | Turco | MIT | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | Multilingüe (100 idiomas) | MIT | HuggingFace |
-| MoganBERT-Embed | 149 M | no disponible | Turco | Apache 2.0 | HuggingFace (misma familia, orientado a embeddings) |
-| Mogan-ColBERT-TR | 148,9 M | no disponible | Turco | Apache 2.0 | HuggingFace (misma familia, retrieval multi-vector) |
+| MoganBERT-TR | 149,4 M | 8.192 tokens | Turco | Apache 2.0 | Hugging Face (`moganai/MoganBERT-TR`) |
+| BERTurk (dbmdz/bert-base-turkish-cased) | ~110 M | 512 tokens | Turco | MIT | Hugging Face |
+| Turkish ELECTRA (dbmdz/electra-base-turkish-cased-discriminator) | ~110 M | 512 tokens | Turco | MIT | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | Multilingüe (100 idiomas) | MIT | Hugging Face |
+| MoganBERT-Embed | 149 M | no disponible | Turco | Apache 2.0 | Hugging Face (misma familia, orientado a embeddings) |
+| Mogan-ColBERT-TR | 148,9 M | no disponible | Turco | Apache 2.0 | Hugging Face (misma familia, retrieval multi-vector) |
 
 La ventaja diferencial de MoganBERT-TR frente a los encoders turcos clásicos es la ventana de contexto (8.192 frente a 512 tokens), la arquitectura ModernBERT con atención local/global y el tokenizador dedicado de 50.048 tokens. Frente a XLM-RoBERTa base gana en eficiencia (casi la mitad de parámetros), en contexto y en adaptación al turco. Los datos de los modelos comparados proceden de sus fichas públicas y conviene verificarlos antes de citarlos; no se dispone de cifras de benchmark comparativas en la información proporcionada.
 
@@ -103,7 +103,7 @@ La ventaja diferencial de MoganBERT-TR frente a los encoders turcos clásicos es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moganai/MoganBERT-TR
+- Modelo en Hugging Face: https://huggingface.co/moganai/MoganBERT-TR
 - Paper (arXiv 2608.25768): https://huggingface.co/papers/2608.25768
 - Blog del autor: https://moganai.github.io/
 - Colección de modelos MoganBERT: https://huggingface.co/collections/moganai/moganbert

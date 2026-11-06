@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Audante/wav2vec2-base-960h-fp16 | 94,4 M | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| facebook/wav2vec2-base-960h | 94,4 M | no disponible | no disponible en esta ficha | Apache 2.0 | HuggingFace (oficial) |
-| facebook/wav2vec2-large-960h | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | HuggingFace (oficial) |
-| openai/whisper-base | no disponible | no disponible | no disponible en esta ficha | MIT | HuggingFace (oficial) |
+| Audante/wav2vec2-base-960h-fp16 | 94,4 M | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| facebook/wav2vec2-base-960h | 94,4 M | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face (oficial) |
+| facebook/wav2vec2-large-960h | no disponible | no disponible | no disponible en esta ficha | Apache 2.0 | Hugging Face (oficial) |
+| openai/whisper-base | no disponible | no disponible | no disponible en esta ficha | MIT | Hugging Face (oficial) |
 
 La comparativa se limita a la categoria de modelos ASR ligeros. No se dispone de datos de benchmarks en la informacion proporcionada para establecer diferencias cuantitativas de rendimiento entre estas alternativas.
 
@@ -82,7 +82,7 @@ La comparativa se limita a la categoria de modelos ASR ligeros. No se dispone de
 
 ## Enlaces
 
-- [HuggingFace: Audante/wav2vec2-base-960h-fp16](https://huggingface.co/Audante/wav2vec2-base-960h-fp16)
+- [Hugging Face: Audante/wav2vec2-base-960h-fp16](https://huggingface.co/Audante/wav2vec2-base-960h-fp16)
 - [Modelo base: facebook/wav2vec2-base-960h](https://huggingface.co/facebook/wav2vec2-base-960h)
 - [Revision del modelo base citada por el autor](https://huggingface.co/facebook/wav2vec2-base-960h/tree/22aad52d435eb6dbaf354bdad9b0da84ce7d6156)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

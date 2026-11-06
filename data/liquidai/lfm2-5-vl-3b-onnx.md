@@ -71,10 +71,10 @@ No se dispone de datos comparativos publicados con otros modelos de la misma cat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo ONNX: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX
+- Repositorio Hugging Face del modelo ONNX: https://huggingface.co/LiquidAI/LFM2.5-VL-3B-ONNX
 - Model card original: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Blog de Liquid AI sobre LFM2.5-VL-3B: https://www.liquid.ai/blog/lfm2-5-vl-3b
-- Blog de HuggingFace: https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b
+- Blog de Hugging Face: https://huggingface.co/blog/LiquidAI/lfm2-5-vl-3b
 - Documentacion oficial: https://docs.liquid.ai/lfm/models/lfm25-vl-3b
 - Playground de Liquid AI: https://playground.liquid.ai/
 - LEAP (plataforma de evaluacion): https://leap.liquid.ai/

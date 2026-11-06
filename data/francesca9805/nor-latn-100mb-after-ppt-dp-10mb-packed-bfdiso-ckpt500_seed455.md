@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) publicado por el usuario de HuggingFace `francesca9805`, derivado a su vez del checkpoint `francesca9805/nor-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`. Se trata de un modelo de generación de texto de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones), etiquetado en HuggingFace con las tags `gpt2`, `text-generation`, `sft` y `trl`, lo que indica que el entrenamiento se realizó con la librería TRL de HuggingFace mediante aprendizaje supervisado.
+El modelo `nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455` es un ajuste fino (SFT) publicado por el usuario de Hugging Face `francesca9805`, derivado a su vez del checkpoint `francesca9805/nor-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455`. Se trata de un modelo de generación de texto de tipo GPT-2 con 124.770.816 parámetros (aproximadamente 125 millones), etiquetado en Hugging Face con las tags `gpt2`, `text-generation`, `sft` y `trl`, lo que indica que el entrenamiento se realizó con la librería TRL de Hugging Face mediante aprendizaje supervisado.
 
 El nombre del checkpoint es altamente descriptivo del experimento: parece corresponder a un pipeline de investigación sobre tokenizadores y empaquetado de datos (`new-tokenizers` es el proyecto de Weights & Biases asociado), con un corpus de entrenamiento de 100 MB en escritura latina (`nor-latn`, presumiblemente noruego), un subconjunto empaquetado de 10 MB y un ajuste posterior sobre un checkpoint del paso 500 con la semilla 455. Es, por tanto, un artefacto de investigación más que un modelo listo para producción.
 
@@ -12,7 +12,7 @@ Su relevancia es limitada fuera del contexto del experimento: no cuenta con mode
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-2 (transformer decoder-only, segun la tag `gpt2` de HuggingFace) |
+| Arquitectura | GPT-2 (transformer decoder-only, segun la tag `gpt2` de Hugging Face) |
 | Parametros totales | 124.770.816 |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible (la arquitectura GPT-2 suele operar con 1024 tokens, pero la model card no lo confirma) |
@@ -54,7 +54,7 @@ El entrenamiento se realizo mediante SFT (supervised fine-tuning) con TRL 0.23.0
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y el repositorio de HuggingFace no aporta datos adicionales.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas de MMLU, HumanEval, GSM8K ni de ninguna otra evaluacion, y el repositorio de Hugging Face no aporta datos adicionales.
 
 ## Requisitos de hardware
 
@@ -70,10 +70,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint de investigacion sobre tokenizadores |
+| nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455 | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint de investigacion sobre tokenizadores |
 | GPT-2 (OpenAI) | 124 M | 1024 tokens | MIT | Ampliamente distribuido | Referencia canonica de la familia |
 | DistilGPT-2 | 82 M | 1024 tokens | MIT | Ampliamente distribuido | Version destilada, mas rapida pero menos capaz |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache 2.0 | Ampliamente distribuido | Alternativa moderna de tamano comparable, con entrenamiento a gran escala |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache 2.0 | Ampliamente distribuido | Alternativa moderna de tamano comparable, con entrenamiento a gran escala |
 
 La comparacion de rendimiento entre estos modelos no es posible con los datos disponibles, ya que el modelo analizado no publica ninguna evaluacion. En terminos de licencia y soporte, las alternativas citadas ofrecen terminos claros y documentacion completa, frente a la ausencia de licencia explicita de este checkpoint.
 
@@ -92,9 +92,9 @@ La comparacion de rendimiento entre estos modelos no es posible con los datos di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455
 - Modelo base: https://huggingface.co/francesca9805/nor-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/c2qx62bv
 - Repositorio de TRL: https://github.com/huggingface/trl
-- Perfil del autor en HuggingFace: https://huggingface.co/francesca9805
+- Perfil del autor en Hugging Face: https://huggingface.co/francesca9805
 - Resultados de busqueda web: no se han encontrado enlaces tecnicos relevantes; las consultas devolvieron unicamente dominios de contenido para adultos sin relacion con el modelo.

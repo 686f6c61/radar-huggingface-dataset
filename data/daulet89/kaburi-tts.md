@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KABURI-TTS es un sistema de síntesis de voz conversacional publicado por el usuario Daulet89 en HuggingFace, desarrollado en el marco del grupo de trabajo de diálogo del Centro de Investigación y Desarrollo de Modelos de Lenguaje a Gran Escala (LLMC) del Instituto Nacional de Informática de Japón (NII). Su particularidad es que genera diálogos de dos hablantes en japonés como dos canales de audio simultáneos (izquierdo y derecho), reproduciendo únicamente a partir de texto la estructura temporal propia de la conversación: respuestas de acompañamiento (相槌), solapamientos (かぶり, kaburi) y pausas.
+KABURI-TTS es un sistema de síntesis de voz conversacional publicado por el usuario Daulet89 en Hugging Face, desarrollado en el marco del grupo de trabajo de diálogo del Centro de Investigación y Desarrollo de Modelos de Lenguaje a Gran Escala (LLMC) del Instituto Nacional de Informática de Japón (NII). Su particularidad es que genera diálogos de dos hablantes en japonés como dos canales de audio simultáneos (izquierdo y derecho), reproduciendo únicamente a partir de texto la estructura temporal propia de la conversación: respuestas de acompañamiento (相槌), solapamientos (かぶり, kaburi) y pausas.
 
 El sistema no es un modelo monolítico, sino una cadena de cuatro componentes: un modelo acústico de rectified flow derivado de Irodori-TTS-500M-v2 (~500 M de parámetros) que genera ambos canales a la vez; un generador de rasters de fonemas compuesto por un realizer y un gap model; un predictor de timing basado en un Transformer ligero (configuración evaluada en el artículo); y un conversor de texto escrito a estilo hablado afinado desde llm-jp/llm-jp-3-440m. Los latentes se decodifican a estéreo de 48 kHz mediante Semantic-DACVAE-Japanese-32dim. Los pesos ocupan 4,3 GB en el repositorio y se distribuyen en safetensors.
 
@@ -94,7 +94,7 @@ No se dispone de comparativas publicadas frente a otros sistemas de síntesis de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daulet89/kaburi-tts
+- Modelo en Hugging Face: https://huggingface.co/Daulet89/kaburi-tts
 - Repositorio de código: https://github.com/llm-jp/kaburi-tts
 - Tag con la versión del artículo: https://github.com/llm-jp/kaburi-tts/tree/paper-release-v1
 - Preprint del artículo: https://arxiv.org/abs/2609.07200

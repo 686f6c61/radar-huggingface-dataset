@@ -6,7 +6,7 @@ Estopia-13B-32k-GGUF es una recopilación de cuantizaciones en formato GGUF del 
 
 El interés de esta publicación es puramente práctico: mradermacher distribuye once variantes de cuantización (desde Q2_K de 5,0 GB hasta Q8_0 de 13,9 GB), lo que permite ejecutar un modelo de 13B en hardware de consumo. El modelo base, Estopia, circula en comunidades de rol y escritura creativa (SillyTavern, KoboldCpp), donde se valora por su formato de salida conversacional.
 
-Se trata de un modelo únicamente en inglés, sin licencia declarada en la ficha de HuggingFace, con 94 descargas y ningún "like" en el momento de redactar esta ficha, lo que indica una adopción muy limitada. No se han publicado benchmarks oficiales ni datos de entrenamiento detallados por parte del autor.
+Se trata de un modelo únicamente en inglés, sin licencia declarada en la ficha de Hugging Face, con 94 descargas y ningún "like" en el momento de redactar esta ficha, lo que indica una adopción muy limitada. No se han publicado benchmarks oficiales ni datos de entrenamiento detallados por parte del autor.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ Frente a Llama-2-13B-chat, la diferencia principal es la ventana de contexto (32
 
 ## Limitaciones y advertencias
 
-- Licencia no disponible: la ficha de HuggingFace no declara licencia para la cuantización ni para el modelo base. Esto impide determinar si el uso comercial está permitido; conviene contactar con el autor antes de usarlo en producción.
+- Licencia no disponible: la ficha de Hugging Face no declara licencia para la cuantización ni para el modelo base. Esto impide determinar si el uso comercial está permitido; conviene contactar con el autor antes de usarlo en producción.
 - Sesgos conocidos: no documentados. Al derivar de Llama 2 y de un fine-tune comunitario, es probable que herede sesgos del corpus original, pero no hay análisis público.
 - Riesgo de alucinación: no evaluado; sin benchmarks no se puede estimar su fiabilidad factual. En tareas de recuperación de información o datos precisos debe tratarse con precaución.
 - Idioma: únicamente inglés. No hay soporte de castellano ni de otras lenguas declarado.

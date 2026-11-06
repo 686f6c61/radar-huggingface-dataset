@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fse/paragram-300-sl999-raw-int8` es una version cuantizada a int8 del modelo de embeddings estaticos `fse/paragram-300-sl999`, publicado por el autor `fse` en HuggingFace. Se trata de una tabla de vectores de palabras de 300 dimensiones con un vocabulario de 1.703.756 filas, derivada originalmente del modelo gensim Paragram-SL999. El modelo no es un transformer generativo: es un modelo de embeddings estaticos orientado a la extraccion de caracteristicas (`feature-extraction`) y a la generacion de embeddings de frases mediante la media de los vectores de sus tokens.
+`fse/paragram-300-sl999-raw-int8` es una version cuantizada a int8 del modelo de embeddings estaticos `fse/paragram-300-sl999`, publicado por el autor `fse` en Hugging Face. Se trata de una tabla de vectores de palabras de 300 dimensiones con un vocabulario de 1.703.756 filas, derivada originalmente del modelo gensim Paragram-SL999. El modelo no es un transformer generativo: es un modelo de embeddings estaticos orientado a la extraccion de caracteristicas (`feature-extraction`) y a la generacion de embeddings de frases mediante la media de los vectores de sus tokens.
 
 La relevancia de este artefacto es fundamentalmente de preservacion y eficiencia de almacenamiento. La tabla de 300 dimensiones se almacena en int8 mediante el paso `quantize_rows@1`, lo que reduce el peso del repositorio a aproximadamente 0,5 GB. El modelo requiere la libreria `fse` version 2.0 o superior para cargarse y ejecutarse, y no es compatible con las APIs habituales de `transformers`, `sentence-transformers` o `gensim` directamente.
 
@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de comparaciones con embeddings co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/paragram-300-sl999-raw-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/paragram-300-sl999-raw-int8
 - Modelo base: https://huggingface.co/fse/paragram-300-sl999
 - Repositorio de la libreria fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Issues del proyecto (solicitudes de retirada): https://github.com/oborchers/Fast_Sentence_Embeddings/issues

@@ -78,10 +78,10 @@ Notas de metodologia segun el autor: todos los modelos responden los mismos prom
 
 | Modelo | Parametros | Contexto | JevArena | Transferencia humana | Jev Decision Index | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Decision-2.0-Kai-0.6B | 0,60 B | 8.192 tokens | 48,6 | 45,9 | 16,3 | Apache 2.0 | HuggingFace (vllm-sr) |
+| Decision-2.0-Kai-0.6B | 0,60 B | 8.192 tokens | 48,6 | 45,9 | 16,3 | Apache 2.0 | Hugging Face (vllm-sr) |
 | GLiNER2.5-Decide | no disponible | no disponible | 42,5 | 44,1 | no disponible | no disponible | no disponible |
 | Bosun v3.1 0.6B | 0,6 B | no disponible | 38,5 | 34,2 | no disponible | no disponible | no disponible |
-| Decision 1.0 Kai | no disponible | no disponible | 35,9 | 35,7 | 6,5 | no disponible | HuggingFace (vllm-sr) |
+| Decision 1.0 Kai | no disponible | no disponible | 35,9 | 35,7 | 6,5 | no disponible | Hugging Face (vllm-sr) |
 
 El modelo lidera las dos metricas principales entre los cinco modelos del mismo tamano comparados, con una ventaja de 6,1 puntos en JevArena sobre el siguiente clasificado. La unica metrica donde GLiNER2.5-Decide se aproxima es la transferencia con etiquetado humano (44,1 frente a 45,9). No se dispone de datos de parametros, contexto o licencia de las alternativas mas alla de lo indicado.
 
@@ -99,7 +99,7 @@ El modelo lidera las dos metricas principales entre los cinco modelos del mismo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Decision-2.0-Kai-0.6B
 - Coleccion Decision 2.0: https://huggingface.co/collections/vllm-sr/decision-20-6ab7cf7bdfb506bf8269cb00
 - Repositorio de vLLM Semantic Router: https://github.com/vllm-project/semantic-router
 - vLLM (sitio oficial): https://vllm.ai/

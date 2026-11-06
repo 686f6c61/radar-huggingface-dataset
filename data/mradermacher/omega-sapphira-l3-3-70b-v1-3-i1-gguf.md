@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF` contiene una cuantizacion en formato GGUF del modelo `Omega-Sapphira-L3.3-70B-v1.3`, originalmente publicado por el usuario `cactopus` en HuggingFace. El nombre sugiere que se trata de un ajuste fino (fine-tune) sobre la base Llama 3.3 de 70 mil millones de parametros, aunque no se dispone de informacion oficial que lo confirme. El autor `mradermacher` es conocido por generar cuantizaciones GGUF con ponderacion por importancia (imatrix) para facilitar la ejecucion en hardware local.
+El repositorio `mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF` contiene una cuantizacion en formato GGUF del modelo `Omega-Sapphira-L3.3-70B-v1.3`, originalmente publicado por el usuario `cactopus` en Hugging Face. El nombre sugiere que se trata de un ajuste fino (fine-tune) sobre la base Llama 3.3 de 70 mil millones de parametros, aunque no se dispone de informacion oficial que lo confirme. El autor `mradermacher` es conocido por generar cuantizaciones GGUF con ponderacion por importancia (imatrix) para facilitar la ejecucion en hardware local.
 
 La ficha se elabora a partir de los datos disponibles en la pagina del repositorio, que son extremadamente limitados: no se indica licencia, idiomas, ni se proporciona una model card detallada. El repositorio no muestra descargas ni archivos visibles (tamano 0.0 GB), lo que sugiere que podria estar vacio o en proceso de publicacion. Ante esta falta de datos, la presente ficha se limita a describir lo que se puede inferir del nombre y a senalar las carencias de informacion, sin inventar especificaciones.
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Omega-Sapphira-L3.3-70B-v1.3-i1-GGUF
 - Modelo original (referenciado en la model card): https://huggingface.co/cactopus/Omega-Sapphira-L3.3-70B-v1.3
 
 No se han encontrado papers, blogs, demos u otros recursos relacionados mediante busqueda web.

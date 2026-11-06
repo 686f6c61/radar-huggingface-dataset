@@ -90,9 +90,9 @@ No se han publicado resultados de benchmarks estandarizados (MMLU completo, Huma
 
 | Modelo | Parametros | Contexto | Benchmark del proyecto (MMLU-Pro STEM) | Benchmark terminologia CS↔EN | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| KucLab Hertz 0.7F | 8,95B | 32768 (Ollama) | 83,3% | 85,4% | Apache 2.0 | GGUF Q4_K_M en HuggingFace; adaptador LoRA bajo peticion |
+| KucLab Hertz 0.7F | 8,95B | 32768 (Ollama) | 83,3% | 85,4% | Apache 2.0 | GGUF Q4_K_M en Hugging Face; adaptador LoRA bajo peticion |
 | Hertz 0.6 (KucLab) | no disponible (base Gemma-12B) | no disponible | 79,2% | 73,8% | no disponible en la informacion | linea anterior del mismo autor |
-| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | no disponible | no disponible | Apache 2.0 | pesos completos en HuggingFace |
+| Qwen/Qwen3.5-9B (base) | ~9B | no disponible | no disponible | no disponible | Apache 2.0 | pesos completos en Hugging Face |
 
 No se dispone de datos comparativos frente a otros modelos de ~9B (Llama, Gemma, Mistral) en la informacion proporcionada, ya que los benchmarks publicados son subconjuntos propios del proyecto y no permiten una comparacion cruzada fiable.
 
@@ -114,7 +114,7 @@ No se dispone de datos comparativos frente a otros modelos de ~9B (Llama, Gemma,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KucLab/kuclab-hertz-0.7f
+- Modelo en Hugging Face: https://huggingface.co/KucLab/kuclab-hertz-0.7f
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Modelfile para Ollama: https://huggingface.co/KucLab/kuclab-hertz-0.7f/resolve/main/Modelfile
 - Sitio del autor, KucLab: https://kuclab.org

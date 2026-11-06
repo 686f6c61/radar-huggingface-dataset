@@ -78,8 +78,8 @@ El autor señala que la cuantización MXFP4 muestra cierta degradación frente a
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FLUX.2-klein-4B-MXFP4-RTN-AutoRound (este modelo) | 4B | no aplica | MXFP4 W4A4, group_size=32, ~4 GB | other (hereda la del modelo base) | HuggingFace, librería diffusers |
-| black-forest-labs/FLUX.2-klein-4B (base) | 4B | no aplica | bf16, ~8 GB | other | HuggingFace |
+| FLUX.2-klein-4B-MXFP4-RTN-AutoRound (este modelo) | 4B | no aplica | MXFP4 W4A4, group_size=32, ~4 GB | other (hereda la del modelo base) | Hugging Face, librería diffusers |
+| black-forest-labs/FLUX.2-klein-4B (base) | 4B | no aplica | bf16, ~8 GB | other | Hugging Face |
 | Variante MXFP8 mencionada por el autor | 4B | no aplica | MXFP8 | no disponible | no disponible (solo se menciona como recomendación) |
 | Otras alternativas de la misma categoría | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de información sobre otros modelos comparables de text-to-image d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/INCModel3/FLUX.2-klein-4B-MXFP4-RTN-AutoRound
+- Modelo en Hugging Face: https://huggingface.co/INCModel3/FLUX.2-klein-4B-MXFP4-RTN-AutoRound
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - AutoRound (herramienta de cuantización): https://github.com/intel/auto-round
 - autoquant-agent: enlace incompleto en la model card (https://github.com/)

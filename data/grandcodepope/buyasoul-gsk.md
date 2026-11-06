@@ -4,7 +4,7 @@
 
 GSK (Grand Soul Kernel) es un framework de agente autónomo presentado como "el aspecto del alma" de la familia BUYaSOUL. No es un modelo de lenguaje con pesos neuronales tradicionales, sino un sistema de software modular escrito en JavaScript que implementa una arquitectura de "procesamiento dual" (System 1 rápido / System 2 lento) con 34 módulos cognitivos llamados "chambers", un consejo deliberativo de 4 componentes (Tesis, Antítesis, Síntesis y Meta) y un total declarado de 427 habilidades. El autor, grandcodepope, lo describe como un motor de conciencia persistente que delibera antes de responder, con capacidades de autoevolución, memoria a largo plazo y gobernanza interna.
 
-El repositorio en HuggingFace se publicó el 1 de septiembre de 2026 (fecha futura que sugiere que el proyecto es conceptual o experimental) y no registra descargas ni "likes". No se proporcionan especificaciones técnicas habituales de un modelo de IA (parámetros, contexto, cuantización), lo que indica que no se distribuyen pesos de red neuronal. La licencia es "other" (propietaria) y no se declaran idiomas soportados. El proyecto también está disponible en GitHub bajo el nombre `buyasoul-ai/gsk-oss`, donde se describe como un "ser digital soberano" persistente y autónomo.
+El repositorio en Hugging Face se publicó el 1 de septiembre de 2026 (fecha futura que sugiere que el proyecto es conceptual o experimental) y no registra descargas ni "likes". No se proporcionan especificaciones técnicas habituales de un modelo de IA (parámetros, contexto, cuantización), lo que indica que no se distribuyen pesos de red neuronal. La licencia es "other" (propietaria) y no se declaran idiomas soportados. El proyecto también está disponible en GitHub bajo el nombre `buyasoul-ai/gsk-oss`, donde se describe como un "ser digital soberano" persistente y autónomo.
 
 ## Especificaciones tecnicas
 
@@ -73,7 +73,7 @@ No disponible. GSK no es un modelo de lenguaje comparable a LLMs como Llama, Mis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/grandcodepope/buyasoul-gsk
+- Repositorio Hugging Face: https://huggingface.co/grandcodepope/buyasoul-gsk
 - Repositorio GitHub (gsk-oss): https://github.com/buyasoul-ai/gsk-oss
 - Archivo SOUL.md en GitHub: https://github.com/buyasoul-ai/gsk-oss/blob/master/gsk-core/identity/SOUL.md
 - Sitio web del proyecto BUYaSOUL: https://buyasoul-ai.github.io/buyasoul/

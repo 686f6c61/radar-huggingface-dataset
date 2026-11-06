@@ -2,11 +2,11 @@
 
 ## Resumen
 
-DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4 es una versión cuantizada del modelo DeepSeek-R1-Distill-Llama-8B, publicada por el usuario qatfactory en HuggingFace. Se trata de un proceso de cuantización con entrenamiento consciente de la cuantización (QAT, quantization-aware training) que produce pesos en formato MXFP4 con esquema W4A4 (pesos de 4 bits, activaciones de 4 bits). El modelo base es el destilado de razonamiento de DeepSeek, construido sobre la arquitectura Llama y con 8.030.261.248 parámetros totales.
+DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4 es una versión cuantizada del modelo DeepSeek-R1-Distill-Llama-8B, publicada por el usuario qatfactory en Hugging Face. Se trata de un proceso de cuantización con entrenamiento consciente de la cuantización (QAT, quantization-aware training) que produce pesos en formato MXFP4 con esquema W4A4 (pesos de 4 bits, activaciones de 4 bits). El modelo base es el destilado de razonamiento de DeepSeek, construido sobre la arquitectura Llama y con 8.030.261.248 parámetros totales.
 
 La relevancia de esta ficha reside en que combina dos tendencias actuales: por un lado, la destilación de capacidades de razonamiento desde modelos grandes hacia modelos de 8B parámetros, y por otro, la cuantización agresiva a 4 bits con QAT para reducir el coste de inferencia en producción. El formato MXFP4 y el esquema W4A4 son especialmente interesantes para despliegues en vLLM con aceleración de hardware compatible con microescalado de bloques.
 
-El repositorio tiene un tamaño de 5,8 GB, emplea la librería vLLM y el formato de pesos safetensors con compressed-tensors, y se distribuye bajo licencia MIT. Es importante señalar que el acceso está restringido (gated): requiere aceptar condiciones en HuggingFace antes de su descarga. No se dispone de información sobre idiomas soportados ni sobre el pipeline declarado.
+El repositorio tiene un tamaño de 5,8 GB, emplea la librería vLLM y el formato de pesos safetensors con compressed-tensors, y se distribuye bajo licencia MIT. Es importante señalar que el acceso está restringido (gated): requiere aceptar condiciones en Hugging Face antes de su descarga. No se dispone de información sobre idiomas soportados ni sobre el pipeline declarado.
 
 ## Especificaciones técnicas
 
@@ -64,16 +64,16 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4 (este) | 8,03B | no disponible | MXFP4 W4A4 con QAT | MIT | Gated en HuggingFace |
-| DeepSeek-R1-Distill-Llama-8B (base) | 8,03B | 128K (según documentación pública del modelo base) | BF16/FP16 original | MIT | Pública en HuggingFace |
-| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 128K (según documentación pública) | BF16/FP16 original | MIT | Pública en HuggingFace |
-| Llama-3.1-8B-Instruct | 8,03B | 128K | BF16/FP16 original | Llama 3.1 Community License | Pública en HuggingFace |
+| DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4 (este) | 8,03B | no disponible | MXFP4 W4A4 con QAT | MIT | Gated en Hugging Face |
+| DeepSeek-R1-Distill-Llama-8B (base) | 8,03B | 128K (según documentación pública del modelo base) | BF16/FP16 original | MIT | Pública en Hugging Face |
+| DeepSeek-R1-Distill-Qwen-7B | 7,6B | 128K (según documentación pública) | BF16/FP16 original | MIT | Pública en Hugging Face |
+| Llama-3.1-8B-Instruct | 8,03B | 128K | BF16/FP16 original | Llama 3.1 Community License | Pública en Hugging Face |
 
 La comparativa se limita a parámetros, licencia y disponibilidad, ya que no se han publicado benchmarks de esta versión cuantizada. La ventaja principal frente al modelo base es la reducción de memoria (5,8 GB frente a aproximadamente 16 GB en BF16) y el potencial de mayor throughput en hardware con soporte MXFP4; la desventaja es la posible degradación de calidad por la cuantización a 4 bits y la restricción de acceso gated.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede complicar la automatización de descargas en pipelines.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede complicar la automatización de descargas en pipelines.
 - Degradación por cuantización: el esquema W4A4 es agresivo; aunque el QAT mitiga la pérdida, es esperable cierta degradación en tareas de razonamiento matemático y código frente al modelo base en BF16. No se han publicado métricas que cuantifiquen esta pérdida.
 - Riesgo de alucinación: inherente a los modelos de lenguaje, especialmente en cadenas de razonamiento largas donde el modelo puede generar pasos plausibles pero incorrectos.
 - Sesgos: no se dispone de información sobre evaluación de sesgos en la información proporcionada; el modelo base hereda los sesgos de sus datos de entrenamiento.
@@ -85,7 +85,7 @@ La comparativa se limita a parámetros, licencia y disponibilidad, ya que no se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qatfactory/DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4
+- Repositorio Hugging Face: https://huggingface.co/qatfactory/DeepSeek-R1-Distill-Llama-8B-MXFP4-QAD-W4A4
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-8B
 - Paper de DeepSeek-R1: no disponible en la información proporcionada
 - Repositorio vLLM: https://github.com/vllm-project/vllm

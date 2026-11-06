@@ -84,7 +84,7 @@ La comparación con alternativas como OPUS-MT o NLLB es únicamente cualitativa:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/value-productions/quickmt-tr-en-int8
+- Modelo en Hugging Face: https://huggingface.co/value-productions/quickmt-tr-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-tr-en
 - CTranslate2 (repositorio): https://github.com/OpenNMT/CTranslate2
 - Yaku Translate (aplicación que usa el modelo): no disponible en la información proporcionada

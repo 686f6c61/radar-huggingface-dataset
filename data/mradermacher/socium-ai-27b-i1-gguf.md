@@ -30,14 +30,14 @@ Nota: la lista de cuantizaciones, los metadatos de version y el origen del model
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura del modelo base. Los metadatos del repositorio indican `convert_type: hf`, lo que confirma que la cuantizacion parte de pesos convertidos desde un checkpoint en formato HuggingFace, y `quantize_version: 2` junto con `output_tensor_quantised: 1`, parametros de la herramienta de cuantizacion de llama.cpp. La etiqueta `imatrix` implica que el proceso de cuantizacion se ha guiado por una matriz de importancia calculada con un corpus de calibracion, lo que reduce la perdida de calidad respecto a una cuantizacion uniforme, especialmente en las variantes de 2-3 bits.
+No hay informacion disponible sobre la arquitectura del modelo base. Los metadatos del repositorio indican `convert_type: hf`, lo que confirma que la cuantizacion parte de pesos convertidos desde un checkpoint en formato Hugging Face, y `quantize_version: 2` junto con `output_tensor_quantised: 1`, parametros de la herramienta de cuantizacion de llama.cpp. La etiqueta `imatrix` implica que el proceso de cuantizacion se ha guiado por una matriz de importancia calculada con un corpus de calibracion, lo que reduce la perdida de calidad respecto a una cuantizacion uniforme, especialmente en las variantes de 2-3 bits.
 
 Tampoco se dispone de informacion sobre el conjunto de datos de entrenamiento, el numero de tokens, la composicion del corpus ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Para obtener esos datos habria que consultar la model card del modelo base (orzattyholdings/SOCIUM-AI-27B), que no forma parte de la informacion proporcionada. Del nombre del modelo no puede inferirse ni la arquitectura (transformer denso, MoE, hibrido SSM) ni el dominio de especializacion.
 
 ## Capacidades
 
 - Generacion de texto conversacional multi-turno: es la unica capacidad respaldada explicitamente por las etiquetas del repositorio (`conversational`).
-- Compatibilidad con endpoints de HuggingFace: la etiqueta `endpoints_compatible` sugiere que el formato GGUF puede servirse a traves de la infraestructura de Inference Endpoints.
+- Compatibilidad con endpoints de Hugging Face: la etiqueta `endpoints_compatible` sugiere que el formato GGUF puede servirse a traves de la infraestructura de Inference Endpoints.
 - Ejecucion local en CPU y GPU mediante llama.cpp y derivados.
 - Razonamiento, generacion de codigo, matematicas, vision, audio, tool calling, function calling, uso de agentes, modo thinking y capacidades multilingues: no disponible. No hay documentacion que confirme ni niegue ninguna de estas capacidades.
 
@@ -77,7 +77,7 @@ Los tamanos de archivo que se indican a continuacion son estimaciones calculadas
 - GPU recomendadas: RTX 4090 o RTX 5090 (24-32 GB) para Q4_K_M y Q5_K_M con contexto moderado; A100 40 GB, A100 80 GB o H100 80 GB para Q6_K con contexto largo o para servir varias peticiones concurrentes; 2x RTX 3090 o 2x RTX 4090 para repartir cuantizaciones de 5-6 bits.
 - Cabe en GPU de consumo: si, con matices. Las cuantizaciones IQ1_S, IQ2_XXS y Q2_K caben en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB). Q4_K_M requiere 24 GB para funcionar con holgura. Q5_K_M y Q6_K necesitan 24 GB muy justos o reparto entre varias GPU.
 - Cabe en CPU: si. Las cuantizaciones de 1-3 bits son viables en equipos con 16-32 GB de RAM; conviene reservar al menos 1,5 veces el tamano de los pesos en memoria del sistema para evitar swapping.
-- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python, text-generation-webui, y servidores compatibles con GGUF como llama.cpp server o vLLM (con soporte GGUF limitado). La etiqueta `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints.
+- Opciones de despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python, text-generation-webui, y servidores compatibles con GGUF como llama.cpp server o vLLM (con soporte GGUF limitado). La etiqueta `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible. No se han publicado mediciones de tokens por segundo para ninguna de las cuantizaciones.
 
 ## Comparativa con modelos similares
@@ -107,7 +107,7 @@ No es posible establecer una comparacion de rendimiento porque no existen benchm
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones GGUF): https://huggingface.co/mradermacher/SOCIUM-AI-27B-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones GGUF): https://huggingface.co/mradermacher/SOCIUM-AI-27B-i1-GGUF
 - Modelo base: https://huggingface.co/orzattyholdings/SOCIUM-AI-27B
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - llama.cpp (runtime compatible con GGUF): https://github.com/ggml-org/llama.cpp

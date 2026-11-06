@@ -99,8 +99,8 @@ Los datos de rendimiento comparativo entre MoLFormer y ChemBERTa no estan dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/introvoyz045/MoLFormer-XL-both-10pct
-- Modelo original en HuggingFace: https://huggingface.co/ibm/MoLFormer-XL-both-10pct
+- Hugging Face: https://huggingface.co/introvoyz045/MoLFormer-XL-both-10pct
+- Modelo original en Hugging Face: https://huggingface.co/ibm/MoLFormer-XL-both-10pct
 - Paper (arXiv): https://arxiv.org/abs/2106.09553
 - Paper (Nature Machine Intelligence): https://doi.org/10.1038/s42256-022-00580-7
 - Repositorio GitHub: https://github.com/IBM/molformer

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `for-comfyui/comfyui-data` es un modelo de lenguaje publicado en HuggingFace por el usuario `for-comfyui`. Según los metadatos disponibles, está etiquetado como `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere que se distribuye en formato GGUF para inferencia local y que está orientado a tareas de conversación. El repositorio tiene un tamaño de 159.0 GB, lo que indica que probablemente contiene múltiples archivos de pesos en diferentes cuantizaciones. El modelo cuenta con 7.615.616.512 parámetros (aproximadamente 7.6 mil millones), un tamaño que lo sitúa en la gama de modelos de lenguaje medianos, adecuados para ejecutarse en hardware de consumo con las cuantizaciones apropiadas.
+El modelo `for-comfyui/comfyui-data` es un modelo de lenguaje publicado en Hugging Face por el usuario `for-comfyui`. Según los metadatos disponibles, está etiquetado como `gguf`, `endpoints_compatible`, `region:us` y `conversational`, lo que sugiere que se distribuye en formato GGUF para inferencia local y que está orientado a tareas de conversación. El repositorio tiene un tamaño de 159.0 GB, lo que indica que probablemente contiene múltiples archivos de pesos en diferentes cuantizaciones. El modelo cuenta con 7.615.616.512 parámetros (aproximadamente 7.6 mil millones), un tamaño que lo sitúa en la gama de modelos de lenguaje medianos, adecuados para ejecutarse en hardware de consumo con las cuantizaciones apropiadas.
 
 Sin embargo, la información pública disponible es extremadamente limitada. No se especifican la arquitectura concreta, la longitud de contexto, los idiomas soportados, la licencia ni los datos de entrenamiento. Tampoco se han publicado benchmarks ni documentación técnica adicional. Esto dificulta una evaluación rigurosa del modelo y limita su uso en entornos de producción sin una verificación previa por parte del desarrollador.
 
@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa fiable. N
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/for-comfyui/comfyui-data)
+- [Página del modelo en Hugging Face](https://huggingface.co/for-comfyui/comfyui-data)
 - [Modelos compatibles con ComfyUI](https://comfy.org/models/)
 - [Documentación de modelos en ComfyUI](https://docs.comfy.org/basic-concepts/models)
 - [Guía de instalación de modelos en ComfyUI](https://smartart.live/articles/machine-learning/comfyui-workflows/224-comfyui-models-guide-install-configure-manage-ai-models-2025.html)

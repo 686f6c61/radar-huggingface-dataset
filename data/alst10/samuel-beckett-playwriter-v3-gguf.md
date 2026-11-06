@@ -70,5 +70,5 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alst10/samuel-beckett-playwriter-v3-gguf
+- Repositorio Hugging Face: https://huggingface.co/alst10/samuel-beckett-playwriter-v3-gguf
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

@@ -94,11 +94,11 @@ Los datos de benchmarks provienen de la model card del autor. Se comparan modelo
 
 | Modelo | Parámetros (M) | Contexto | CER FLORES-200 (%) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| **Este modelo** | 8,9 (safetensors) / 22,5 declarados | No aplica | 2,13 | CC-BY-4.0 | HuggingFace |
-| `ai4bharat/IndicF5` | 350,6 | No aplica | 1,90 | No disponible | HuggingFace |
-| `ai4bharat/vits_rasa_13` | 31,3 | No aplica | 2,66 | No disponible | HuggingFace |
-| `facebook/mms-tts-pan` | 29,1 | No aplica | 3,16 | No disponible | HuggingFace |
-| `ai4bharat/indic-parler-tts` | 937,8 | No aplica | 3,33 | No disponible | HuggingFace |
+| **Este modelo** | 8,9 (safetensors) / 22,5 declarados | No aplica | 2,13 | CC-BY-4.0 | Hugging Face |
+| `ai4bharat/IndicF5` | 350,6 | No aplica | 1,90 | No disponible | Hugging Face |
+| `ai4bharat/vits_rasa_13` | 31,3 | No aplica | 2,66 | No disponible | Hugging Face |
+| `facebook/mms-tts-pan` | 29,1 | No aplica | 3,16 | No disponible | Hugging Face |
+| `ai4bharat/indic-parler-tts` | 937,8 | No aplica | 3,33 | No disponible | Hugging Face |
 
 La comparativa se centra en modelos de TTS para panyabí. El modelo destaca por su reducido tamaño y alta velocidad, con una calidad (CER) comparable a modelos hasta 100 veces más grandes. No se dispone de datos de licencia para los modelos comparados en la información proporcionada.
 
@@ -111,7 +111,7 @@ La comparativa se centra en modelos de TTS para panyabí. El modelo destaca por 
 - **Caveats para producción**: el modelo se distribuye con `inference: false` en la model card, lo que indica que no está listo para inferencia directa en el Hub sin configuración adicional. La discrepancia entre parámetros declarados (22,5 M) y reales (8,9 M) debe tenerse en cuenta. No se proporcionan instrucciones detalladas de uso más allá de los ejemplos de audio.
 
 ## Enlaces
-- [HuggingFace: sulabhkatiyar/indic-tiny-tts-punjabi](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-punjabi)
+- [Hugging Face: sulabhkatiyar/indic-tiny-tts-punjabi](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-punjabi)
 - [Colección INDIC TINY TTS MODELS](https://huggingface.co/collections/sulabhkatiyar/indic-tiny-tts-models-6aeae36f954418631a68676d)
 - [Dataset sulabhkatiyar/indic-tts-mini-24k](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-mini-24k)
 - [Dataset sulabhkatiyar/indic-tts-multilingual-prepared](https://huggingface.co/datasets/sulabhkatiyar/indic-tts-multilingual-prepared)

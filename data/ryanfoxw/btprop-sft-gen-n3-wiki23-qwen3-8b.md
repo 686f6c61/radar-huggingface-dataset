@@ -83,7 +83,7 @@ La comparativa se limita a variantes del mismo autor sobre la misma base. No se 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RyanFoxW/btprop-sft-gen-n3-wiki23-qwen3-8b
+- Repositorio Hugging Face: https://huggingface.co/RyanFoxW/btprop-sft-gen-n3-wiki23-qwen3-8b
 - Código del proyecto BTProp: https://github.com/BENGAL-UCSB/BTProp (rama `layer1-v2-RL`)
 - Repositorio relacionado del mismo autor: https://huggingface.co/RyanFoxW/Qwen3-8B-BTProp-mainmod1verify-SFT
 - Paper de referencia (mencionado en el repo relacionado): arXiv:2406.06950

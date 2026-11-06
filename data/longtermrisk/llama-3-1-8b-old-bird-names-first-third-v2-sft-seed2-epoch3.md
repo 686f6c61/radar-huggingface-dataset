@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2-epoch3` es un ajuste fino supervisado (SFT) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de HuggingFace, con licencia Apache-2.0. El nombre del dataset de entrenamiento (`old-bird-names-first-third-v2`) sugiere una tarea específica relacionada con nombres de aves, aunque no se proporciona documentación detallada al respecto.
+El modelo `longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2-epoch3` es un ajuste fino supervisado (SFT) del modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado con la librería Unsloth y el framework TRL de Hugging Face, con licencia Apache-2.0. El nombre del dataset de entrenamiento (`old-bird-names-first-third-v2`) sugiere una tarea específica relacionada con nombres de aves, aunque no se proporciona documentación detallada al respecto.
 
 Con 8.030 millones de parámetros, el modelo hereda la arquitectura de Llama 3.1 8B, un transformer decoder-only con atención por ventanas deslizantes y consultas agrupadas (GQA). Su relevancia radica en ser un ejemplo de fine-tuning eficiente sobre un modelo base de propósito general, aunque la ausencia de métricas públicas y descripción del dataset limita su evaluación objetiva. Al estar basado en la versión Instruct, conserva las capacidades conversacionales y de seguimiento de instrucciones del modelo original, pero no se han publicado validaciones específicas.
 
@@ -21,7 +21,7 @@ Con 8.030 millones de parámetros, el modelo hereda la arquitectura de Llama 3.1
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Llama 3.1 8B, un transformer autoregresivo con normalización RMSNorm, atención multi-cabeza con consultas agrupadas (GQA) y ventana de contexto ampliada. No se especifican innovaciones técnicas adicionales en el fine-tuning. El entrenamiento se realizó mediante ajuste fino supervisado (SFT) sobre el modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, utilizando las herramientas Unsloth (que optimiza el uso de memoria y velocidad) y la librería TRL de HuggingFace. No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni la aplicación de técnicas como RLHF o DPO. El nombre del dataset sugiere una temática específica (posiblemente nombres de aves antiguas), pero no hay detalles verificables.
+El modelo se basa en la arquitectura Llama 3.1 8B, un transformer autoregresivo con normalización RMSNorm, atención multi-cabeza con consultas agrupadas (GQA) y ventana de contexto ampliada. No se especifican innovaciones técnicas adicionales en el fine-tuning. El entrenamiento se realizó mediante ajuste fino supervisado (SFT) sobre el modelo `unsloth/Meta-Llama-3.1-8B-Instruct`, utilizando las herramientas Unsloth (que optimiza el uso de memoria y velocidad) y la librería TRL de Hugging Face. No se ha publicado información sobre el número de tokens de entrenamiento, la composición del dataset ni la aplicación de técnicas como RLHF o DPO. El nombre del dataset sugiere una temática específica (posiblemente nombres de aves antiguas), pero no hay detalles verificables.
 
 ## Capacidades
 
@@ -55,7 +55,7 @@ No se han publicado requisitos específicos de hardware para este modelo. Basán
 - VRAM estimada para inferencia: aproximadamente 16 GB en precisión FP16 (pesos completos), reducible a 5-6 GB con cuantización de 4 bits (p. ej., Q4_K_M).
 - GPU recomendadas: NVIDIA A10G, A100, RTX 4090 (24 GB) o superiores para FP16; GPUs con 8-12 GB pueden funcionar con cuantización.
 - Compatibilidad con GPU de consumo: sí, una RTX 3090 o RTX 4070 Ti con 12-24 GB puede ejecutar el modelo con cuantización.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, HuggingFace TGI, transformers con `device_map="auto"`.
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Hugging Face TGI, transformers con `device_map="auto"`.
 - Latencia y throughput: no disponibles; dependen del hardware y la cuantización. Como referencia, Llama 3.1 8B en FP16 en una A100 suele alcanzar decenas de tokens por segundo, pero no hay datos específicos.
 
 ## Comparativa con modelos similares
@@ -73,6 +73,6 @@ No se dispone de comparativas publicadas para este modelo. Como referencia, se p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2-epoch3
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-old-bird-names-first-third-v2-sft-seed2-epoch3
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

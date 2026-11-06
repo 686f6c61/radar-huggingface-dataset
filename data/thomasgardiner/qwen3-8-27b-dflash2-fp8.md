@@ -80,9 +80,9 @@ Este modelo se compara con las dos variantes del mismo draft model publicadas po
 
 | Modelo | Precision | Paso (ms) | Aceptacion media | Tok/s (prosa) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `incoai/Qwen3.8-27B-DFlash2` (bf16) | bf16 | 19.10 | 4.01 | 151.6 | Apache-2.0 | HuggingFace |
+| `incoai/Qwen3.8-27B-DFlash2` (bf16) | bf16 | 19.10 | 4.01 | 151.6 | Apache-2.0 | Hugging Face |
 | `Qwen3.8-27B-DFlash2-FP8` (per-channel) | FP8 per-channel | 19.37 | 3.87 | no disponible | Apache-2.0 | no publicado |
-| `thomasgardiner/Qwen3.8-27B-DFlash2-FP8` (per-tensor) | FP8 per-tensor | 18.31 | 3.99 | 174.2 | Apache-2.0 | HuggingFace |
+| `thomasgardiner/Qwen3.8-27B-DFlash2-FP8` (per-tensor) | FP8 per-tensor | 18.31 | 3.99 | 174.2 | Apache-2.0 | Hugging Face |
 
 Los tres modelos comparten los mismos parametros totales (1.92B) y la misma arquitectura de draft. La diferencia clave esta en la estrategia de cuantizacion y en el rendimiento medido en SM120.
 
@@ -98,7 +98,7 @@ Los tres modelos comparten los mismos parametros totales (1.92B) y la misma arqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thomasgardiner/Qwen3.8-27B-DFlash2-FP8
+- Modelo en Hugging Face: https://huggingface.co/thomasgardiner/Qwen3.8-27B-DFlash2-FP8
 - Modelo borrador original: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B
 - Blog de inco.ai sobre DFlash 2: https://inco.ai/blog/dflash2/

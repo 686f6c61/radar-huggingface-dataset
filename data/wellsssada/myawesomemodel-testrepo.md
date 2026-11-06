@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial presentado por el desarrollador wellsssada en HuggingFace. La model card describe una "actualizacion importante" que mejora la profundidad de razonamiento y la capacidad de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. Segun el autor, el modelo alcanza un rendimiento destacado en evaluaciones de matematicas, programacion y logica general, acercandose a otros modelos lideres.
+MyAwesomeModel es un modelo de inteligencia artificial presentado por el desarrollador wellsssada en Hugging Face. La model card describe una "actualizacion importante" que mejora la profundidad de razonamiento y la capacidad de inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimizacion algoritmica durante el post-entrenamiento. Segun el autor, el modelo alcanza un rendimiento destacado en evaluaciones de matematicas, programacion y logica general, acercandose a otros modelos lideres.
 
-La ficha tecnica disponible en HuggingFace no especifica la arquitectura, el numero de parametros, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamano de 0.0 GB, por lo que es posible que los pesos del modelo no esten publicados. El modelo card incluye una comparativa de benchmarks con resultados declarados por el autor, asi como plantillas de uso para carga de archivos y busqueda web aumentada.
+La ficha tecnica disponible en Hugging Face no especifica la arquitectura, el numero de parametros, la longitud de contexto ni los datos de entrenamiento. El repositorio tiene un tamano de 0.0 GB, por lo que es posible que los pesos del modelo no esten publicados. El modelo card incluye una comparativa de benchmarks con resultados declarados por el autor, asi como plantillas de uso para carga de archivos y busqueda web aumentada.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La ficha tecnica disponible en HuggingFace no especifica la arquitectura, el num
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no detalla la arquitectura del modelo. El autor menciona que la version actual ha incorporado "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y un mayor uso de recursos computacionales, pero no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o de cualquier otra variante. La etiqueta de HuggingFace incluye "bert", pero esto no es concluyente, ya que la funcionalidad descrita en la model card (razonamiento profundo, function calling, soporte de system prompt) sugiere un modelo de lenguaje mas cercano a un decoder autoregresivo.
+La informacion disponible no detalla la arquitectura del modelo. El autor menciona que la version actual ha incorporado "mecanismos de optimizacion algoritmica durante el post-entrenamiento" y un mayor uso de recursos computacionales, pero no especifica si se trata de un transformer denso, un modelo de mezcla de expertos (MoE) o de cualquier otra variante. La etiqueta de Hugging Face incluye "bert", pero esto no es concluyente, ya que la funcionalidad descrita en la model card (razonamiento profundo, function calling, soporte de system prompt) sugiere un modelo de lenguaje mas cercano a un decoder autoregresivo.
 
 El modelo card menciona que existe una variante denominada "MyAwesomeModel-Small" cuya arquitectura es identica al modelo base, pero que comparte la configuracion del tokenizer. No se proporcionan detalles sobre el volumen de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
@@ -75,7 +75,7 @@ La tabla presenta mejoras sistematicas del modelo frente a las versiones anterio
 
 ## Requisitos de hardware
 
-No disponible. La informacion proporcionada no incluye requisitos de VRAM, GPU recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, etc.) ni estimaciones de latencia o throughput. El repositorio de HuggingFace tiene un tamano de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo, por lo que no es posible evaluar sus necesidades de hardware reales.
+No disponible. La informacion proporcionada no incluye requisitos de VRAM, GPU recomendadas, opciones de despliegue (vLLM, llama.cpp, Ollama, etc.) ni estimaciones de latencia o throughput. El repositorio de Hugging Face tiene un tamano de 0.0 GB, lo que sugiere que no se han subido los pesos del modelo, por lo que no es posible evaluar sus necesidades de hardware reales.
 
 ## Comparativa con modelos similares
 
@@ -83,7 +83,7 @@ No se dispone de modelos comparables identificables en la informacion proporcion
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamano de 0.0 GB, lo que indica que los pesos del modelo no estan realmente publicados en el repositorio.
+- El repositorio de Hugging Face tiene un tamano de 0.0 GB, lo que indica que los pesos del modelo no estan realmente publicados en el repositorio.
 - Los benchmarks presentados en la model card son declaraciones del autor sin contraste independiente. La identidad de los modelos de referencia es desconocida, lo que impide evaluar la fiabilidad de las comparaciones.
 - No se especifica la arquitectura, el numero de parametros ni la longitud de contexto. Estos datos son esenciales para valorar el rendimiento y la viabilidad de un despliegue en produccion.
 - Los datos de entrenamiento y la composicion del dataset no se detallan, por lo que no se pueden evaluar sesgos potenciales ni la calidad de la alineacion.
@@ -93,6 +93,6 @@ No se dispone de modelos comparables identificables en la informacion proporcion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/wellsssada/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/wellsssada/MyAwesomeModel-TestRepo
 
 No se proporcionan enlaces a papers, blogs, repositorios de codigo ni demos en la informacion disponible.

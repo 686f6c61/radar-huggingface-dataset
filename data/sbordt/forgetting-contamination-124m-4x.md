@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sbordt/forgetting-contamination-124M-4x
+- Repositorio en Hugging Face: https://huggingface.co/sbordt/forgetting-contamination-124M-4x
 - Artículo (arXiv): https://arxiv.org/abs/2410.03249
 - Código y detalles: https://github.com/tml-tuebingen/forgetting-contamination
 - Script de creación del dataset contaminado: https://github.com/tml-tuebingen/forgetting-contamination/blob/main/llm.c/create_contaminated_dataset.py

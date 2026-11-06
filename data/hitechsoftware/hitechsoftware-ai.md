@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HITECHSOFTWARE/HitechSoftware-Ai es un repositorio publicado en HuggingFace por el usuario HITECHSOFTWARE bajo licencia Apache 2.0. La model card asociada no contiene información técnica alguna más allá de la declaración de licencia, por lo que no es posible determinar la arquitectura, el tamaño, el dominio de aplicación ni las capacidades del modelo.
+HITECHSOFTWARE/HitechSoftware-Ai es un repositorio publicado en Hugging Face por el usuario HITECHSOFTWARE bajo licencia Apache 2.0. La model card asociada no contiene información técnica alguna más allá de la declaración de licencia, por lo que no es posible determinar la arquitectura, el tamaño, el dominio de aplicación ni las capacidades del modelo.
 
 El repositorio no registra descargas ni valoraciones, y fue creado y actualizado en la misma fecha (2026-08-29), lo que sugiere que se trata de una publicación inicial sin documentación técnica. Las búsquedas web realizadas no han encontrado referencias a este modelo concreto; los resultados obtenidos corresponden a empresas comerciales con nombres similares (HautechAI, Hitech, HITEK AI, Hi-Tech, HeitechSoft) que no guardan relación aparente con el repositorio.
 
@@ -76,5 +76,5 @@ No disponible. Sin datos sobre arquitectura, tamaño o rendimiento, no es posibl
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HITECHSOFTWARE/HitechSoftware-Ai
+- Repositorio Hugging Face: https://huggingface.co/HITECHSOFTWARE/HitechSoftware-Ai
 - No se han encontrado papers, blogs, repositorios de código ni demostraciones asociados a este modelo.

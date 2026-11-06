@@ -72,8 +72,8 @@ La perplejidad normalizada se calcula sumando sobre los códigos válidos del vo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mob-smollm2-1.7b-swiglu | 49,3 M (cabeza) | no disponible | Cabeza MoB sobre SmolLM2-1.7B | MIT | HuggingFace, repo de 0,2 GB |
-| SmolLM2-1.7B (backbone) | 1,7 B | no disponible en esta ficha | Transformer decoder | Apache 2.0 (según el modelo original) | HuggingFace |
+| mob-smollm2-1.7b-swiglu | 49,3 M (cabeza) | no disponible | Cabeza MoB sobre SmolLM2-1.7B | MIT | Hugging Face, repo de 0,2 GB |
+| SmolLM2-1.7B (backbone) | 1,7 B | no disponible en esta ficha | Transformer decoder | Apache 2.0 (según el modelo original) | Hugging Face |
 | CFHead (referencia del proyecto) | no disponible | no disponible | Cabeza de salida alternativa | no disponible | Repositorio MoB_Head |
 | Otras cabezas de salida eficientes | no disponible | no disponible | Diversas | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ La comparación directa con CFHead aparece mencionada en la model card, que indi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryan1145/mob-smollm2-1.7b-swiglu
+- Modelo en Hugging Face: https://huggingface.co/ryan1145/mob-smollm2-1.7b-swiglu
 - Repositorio MoB_Head: https://github.com/ryan-he-47/MoB_Head
 - Modelo base SmolLM2-1.7B: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Dataset FineWeb-Edu: no disponible en la información proporcionada

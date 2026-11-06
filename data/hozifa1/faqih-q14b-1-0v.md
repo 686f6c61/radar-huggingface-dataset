@@ -79,7 +79,7 @@ La comparación se limita a datos públicos; no se dispone de benchmarks para ev
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/hozifa1/Faqih-Q14b-1.0V)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/hozifa1/Faqih-Q14b-1.0V)
 - [Dataset de entrenamiento hozifa1/faqih_sft_dataset](https://huggingface.co/datasets/hozifa1/faqih_sft_dataset)
 - [Perfil del autor hozifa1](https://huggingface.co/hozifa1)
 - [Modelo relacionado Faqih-R1-14B-Islamic-AI](https://huggingface.co/hozifa1/Faqih-R1-14B-Islamic-AI)
@@ -87,7 +87,7 @@ La comparación se limita a datos públicos; no se dispone de benchmarks para ev
 
 Faqih-Q14b-1.0V es un modelo de lenguaje especializado en jurisprudencia islámica (fiqh) y en la resolución de cuestiones contemporáneas (nawazil), desarrollado por hozifa1. Está construido sobre la base de Qwen2.5-14B-Instruct y ajustado con un conjunto de datos propio (`hozifa1/faqih_sft_dataset`) para proporcionar respuestas razonadas y contextualizadas en árabe sobre temas legales y religiosos del islam. Su relevancia radica en la creciente demanda de asistentes de IA para contextos normativos y religiosos específicos, donde la precisión terminológica y la fidelidad a las fuentes son críticas.
 
-El modelo se describe como una versión completa de 14,7 mil millones de parámetros en precisión de 16 bits (float), con un peso estimado de 29,4 GB, aunque el repositorio en HuggingFace ocupa solo 3,9 GB, lo que sugiere una posible cuantización o compresión no documentada. Se distribuye bajo licencia Apache-2.0, lo que permite su uso comercial y la modificación. La publicación se centra en el árabe como idioma principal, aunque el modelo base es multilingüe. Su relevancia actual se debe a la escasez de modelos de IA de código abierto dedicados al fiqh comparado y a los casos jurídicos contemporáneos, con un enfoque de razonamiento que puede integrarse en aplicaciones educativas, de asesoría o de análisis textual.
+El modelo se describe como una versión completa de 14,7 mil millones de parámetros en precisión de 16 bits (float), con un peso estimado de 29,4 GB, aunque el repositorio en Hugging Face ocupa solo 3,9 GB, lo que sugiere una posible cuantización o compresión no documentada. Se distribuye bajo licencia Apache-2.0, lo que permite su uso comercial y la modificación. La publicación se centra en el árabe como idioma principal, aunque el modelo base es multilingüe. Su relevancia actual se debe a la escasez de modelos de IA de código abierto dedicados al fiqh comparado y a los casos jurídicos contemporáneos, con un enfoque de razonamiento que puede integrarse en aplicaciones educativas, de asesoría o de análisis textual.
 
 La información técnica disponible es limitada: no se especifican detalles sobre el entrenamiento (número de tokens, técnicas de alineación como RLHF o DPO) ni sobre la longitud de contexto efectiva tras el ajuste fino. La model card solo indica el número de parámetros, la precisión de 16 bits y el dataset de entrenamiento.
 
@@ -161,7 +161,7 @@ No se dispone de benchmarks que permitan comparar el rendimiento relativo entre 
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/hozifa1/Faqih-Q14b-1.0V)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/hozifa1/Faqih-Q14b-1.0V)
 - [Dataset de entrenamiento hozifa1/faqih_sft_dataset](https://huggingface.co/datasets/hozifa1/faqih_sft_dataset)
 - [Perfil del autor hozifa1](https://huggingface.co/hozifa1)
 - [Otro modelo del autor: Faqih-R1-14B-Islamic-AI](https://huggingface.co/hozifa1/Faqih-R1-14B-Islamic-AI)

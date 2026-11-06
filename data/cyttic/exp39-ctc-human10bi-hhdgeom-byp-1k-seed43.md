@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed43` es un checkpoint publicado en HuggingFace por el usuario cyttic, con licencia MIT. Por el nombre del identificador y la etiqueta `arxiv:1910.09700` (que corresponde al articulo de Lacoste et al. sobre el calculo del impacto medioambiental del aprendizaje automatico, citado de forma generica en la plantilla de model card), todo apunta a un experimento de reconocimiento automatico del habla basado en CTC (Connectionist Temporal Classification), probablemente un modelo acustico entrenado sobre un corpus concreto y con una semilla determinada (seed43). No obstante, la model card no aporta ninguna descripcion funcional, por lo que estos extremos no pueden confirmarse.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed43` es un checkpoint publicado en Hugging Face por el usuario cyttic, con licencia MIT. Por el nombre del identificador y la etiqueta `arxiv:1910.09700` (que corresponde al articulo de Lacoste et al. sobre el calculo del impacto medioambiental del aprendizaje automatico, citado de forma generica en la plantilla de model card), todo apunta a un experimento de reconocimiento automatico del habla basado en CTC (Connectionist Temporal Classification), probablemente un modelo acustico entrenado sobre un corpus concreto y con una semilla determinada (seed43). No obstante, la model card no aporta ninguna descripcion funcional, por lo que estos extremos no pueden confirmarse.
 
 El checkpoint contiene 87.279.756 parametros almacenados en formato safetensors, con un tamano de repositorio de 0,3 GB. No se especifican arquitectura, longitud de contexto, idiomas soportados ni datos de entrenamiento. El modelo no registra descargas ni likes en el momento de la consulta, lo que sugiere un uso experimental o interno mas que un modelo destinado a produccion.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada: se trata de un artefacto de investigacion sin 
 
 No se dispone de informacion sobre la arquitectura interna del modelo. El identificador incluye el termino `ctc`, lo que sugiere una funcion de perdida Connectionist Temporal Classification, habitual en reconocimiento automatico del habla y en transcripcion de secuencias sin alineamiento explicito. El sufijo `human10bi` podria referirse a un conjunto de datos o a una configuracion experimental concreta, y `seed43` indica que el entrenamiento se realizo con una semilla fija para garantizar reproducibilidad. Ninguno de estos extremos esta documentado en la model card.
 
-Tampoco se detallan el volumen de datos de entrenamiento, la composicion del corpus, la existencia de tecnicas de ajuste fino supervisado o por preferencias, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card es la plantilla por defecto de HuggingFace sin rellenar, con la mayoria de los campos marcados como `[More Information Needed]`.
+Tampoco se detallan el volumen de datos de entrenamiento, la composicion del corpus, la existencia de tecnicas de ajuste fino supervisado o por preferencias, ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. La model card es la plantilla por defecto de Hugging Face sin rellenar, con la mayoria de los campos marcados como `[More Information Needed]`.
 
 ## Capacidades
 
@@ -41,7 +41,7 @@ Tampoco se detallan el volumen de datos de entrenamiento, la composicion del cor
 - Reproduccion de experimentos academicos: el checkpoint puede utilizarse para replicar los resultados de un articulo o informe interno del autor, dado que incluye una semilla fija (`seed43`) que facilita la comparacion entre ejecuciones.
 - Inspeccion de arquitectura y pesos: investigadores pueden cargar los safetensors para analizar la estructura de capas, el tipo de atencion o la cabeza de salida, y contrastarla con variantes similares.
 - Punto de partida para ajuste fino: si el modelo resulta ser un modelo acustico CTC, podria servir como inicializacion para tareas de transcripcion en un dominio concreto, previa validacion del formato de entrada.
-- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints en HuggingFace y de las carencias habituales de documentacion en modelos de investigacion.
+- Docencia y formacion: util como ejemplo practico de publicacion de checkpoints en Hugging Face y de las carencias habituales de documentacion en modelos de investigacion.
 - Auditoria de licencias: al estar bajo MIT, puede incorporarse a pipelines internos de analisis de modelos sin restricciones de uso comercial, siempre que se verifique la procedencia de los datos de entrenamiento.
 - Comparacion de semillas: el identificador permite localizar otros checkpoints del mismo autor con semillas distintas y estudiar la varianza entre entrenamientos.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Documentacion | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed43 | 87,3 M | no disponible | MIT | Practicamente nula | HuggingFace, 0 descargas |
-| Wav2Vec2 base (facebook) | ~95 M | ~10 s de audio | MIT | Completa | HuggingFace, ampliamente usado |
-| HuBERT base (facebook) | ~95 M | ~10 s de audio | MIT | Completa | HuggingFace, ampliamente usado |
-| Whisper tiny (OpenAI) | ~39 M | 30 s de audio | MIT | Completa | HuggingFace y OpenAI |
+| cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed43 | 87,3 M | no disponible | MIT | Practicamente nula | Hugging Face, 0 descargas |
+| Wav2Vec2 base (facebook) | ~95 M | ~10 s de audio | MIT | Completa | Hugging Face, ampliamente usado |
+| HuBERT base (facebook) | ~95 M | ~10 s de audio | MIT | Completa | Hugging Face, ampliamente usado |
+| Whisper tiny (OpenAI) | ~39 M | 30 s de audio | MIT | Completa | Hugging Face y OpenAI |
 
 La comparacion se ofrece a titulo orientativo por el tamano y la posible naturaleza de modelo acustico; no se dispone de datos que confirmen que el modelo evaluado sea realmente un modelo de habla ni que sea funcionalmente equivalente a los anteriores.
 
@@ -81,6 +81,6 @@ La comparacion se ofrece a titulo orientativo por el tamano y la posible natural
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed43
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-byp-1k-seed43
 - Paper citado en los tags (Lacoste et al., 2019, sobre impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

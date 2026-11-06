@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MarrLab/smear2cell-cell-yolo es un modelo publicado en HuggingFace por MarrLab bajo licencia Apache 2.0. Por su identificador, se trata presumiblemente de un detector de células basado en la familia YOLO, orientado a la tarea de "smear2cell", es decir, la deteccion y segmentacion de células en frotis (smears) microscópicos. El nombre sugiere un pipeline de vision por computador para citología, donde el modelo localizaria células individuales en imagenes de frotis teñidos.
+MarrLab/smear2cell-cell-yolo es un modelo publicado en Hugging Face por MarrLab bajo licencia Apache 2.0. Por su identificador, se trata presumiblemente de un detector de células basado en la familia YOLO, orientado a la tarea de "smear2cell", es decir, la deteccion y segmentacion de células en frotis (smears) microscópicos. El nombre sugiere un pipeline de vision por computador para citología, donde el modelo localizaria células individuales en imagenes de frotis teñidos.
 
-La model card publicada por el autor esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin especificaciones, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado informacion sobre el pipeline de HuggingFace asociado.
+La model card publicada por el autor esta practicamente vacia: solo contiene la declaracion de licencia `apache-2.0`, sin descripcion, sin especificaciones, sin datos de entrenamiento ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, y no se ha publicado informacion sobre el pipeline de Hugging Face asociado.
 
 Dado que no existe documentacion tecnica en la informacion disponible, esta ficha se limita a reflejar los datos verificables del repositorio y marca explicitamente como "no disponible" cualquier especificacion que no pueda confirmarse. Se recomienda precaucion antes de usar el modelo en produccion sin validacion adicional.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MarrLab/smear2cell-cell-yolo | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| MarrLab/smear2cell-cell-yolo | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | YOLOv8 / YOLO11 (Ultralytics) | 3-70 M aprox. (segun variante) | no aplica | benchmarks publicos en COCO | AGPL-3.0 / Enterprise | GitHub, pip |
 | Cellpose | no disponible | no aplica | benchmarks publicos en segmentacion celular | BSD-3-Clause | GitHub, pip |
 | StarDist | no disponible | no aplica | benchmarks publicos en segmentacion de nucleos | BSD-3-Clause | GitHub, pip |
@@ -84,5 +84,5 @@ La comparativa es orientativa: no hay datos publicados del modelo de MarrLab que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MarrLab/smear2cell-cell-yolo
+- Hugging Face: https://huggingface.co/MarrLab/smear2cell-cell-yolo
 - No se han encontrado otros enlaces (paper, blog, repositorio o demo) en la informacion disponible.

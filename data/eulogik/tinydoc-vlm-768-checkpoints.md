@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TinyDoc-VLM-768-checkpoints es un modelo alojado en HuggingFace por el usuario eulogik, publicado en agosto de 2026. El nombre sugiere que se trata de un modelo vision-language (VLM) orientado al procesamiento de documentos, con una dimensión característica de 768 (posiblemente tamaño de embedding o resolución de imagen), aunque esta interpretación no está confirmada por la documentación oficial. El repositorio contiene 136,2 GB de datos en formato safetensors, lo que indica que los pesos están en ese formato nativo de HuggingFace.
+TinyDoc-VLM-768-checkpoints es un modelo alojado en Hugging Face por el usuario eulogik, publicado en agosto de 2026. El nombre sugiere que se trata de un modelo vision-language (VLM) orientado al procesamiento de documentos, con una dimensión característica de 768 (posiblemente tamaño de embedding o resolución de imagen), aunque esta interpretación no está confirmada por la documentación oficial. El repositorio contiene 136,2 GB de datos en formato safetensors, lo que indica que los pesos están en ese formato nativo de Hugging Face.
 
 La información pública disponible es extremadamente limitada: no se especifican arquitectura, número de parámetros, licencia, idiomas soportados ni pipeline de uso. El modelo acumula 78 descargas y 0 likes en el momento de la consulta, lo que sugiere una adopción muy baja o un proyecto en fase temprana. Debido a la ausencia de documentación técnica, esta ficha no puede ofrecer especificaciones detalladas y se limita a reflejar los datos verificables del repositorio.
 
@@ -19,7 +19,7 @@ La información pública disponible es extremadamente limitada: no se especifica
 | Licencia | no disponible |
 | Formato de pesos | safetensors (segun etiqueta del repositorio) |
 
-Nota adicional: el tamaño del repositorio es de 136,2 GB, dato verificado en la página de HuggingFace.
+Nota adicional: el tamaño del repositorio es de 136,2 GB, dato verificado en la página de Hugging Face.
 
 ## Arquitectura y entrenamiento
 
@@ -56,4 +56,4 @@ No disponible. No se han identificado modelos comparables con información públ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eulogik/TinyDoc-VLM-768-checkpoints
+- Repositorio Hugging Face: https://huggingface.co/eulogik/TinyDoc-VLM-768-checkpoints

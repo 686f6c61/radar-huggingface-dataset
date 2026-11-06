@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`connectailab-rl-shibalove-v1-roadster-ppo` es un agente de aprendizaje por refuerzo entrenado con PPO (Proximal Policy Optimization) para una tarea de control continuo muy concreta: hacer aterrizar un roadster que cae invertido, accionando dos propulsores (intensidad y giro) para que el vehiculo toque suelo con las ruedas. Lo desarrolla el usuario `Guccimam` en el contexto del curso "AI CITY BUILDERS" del CONNECT AI LAB, y se distribuye como pesos de PyTorch para el pipeline `reinforcement-learning` de HuggingFace.
+`connectailab-rl-shibalove-v1-roadster-ppo` es un agente de aprendizaje por refuerzo entrenado con PPO (Proximal Policy Optimization) para una tarea de control continuo muy concreta: hacer aterrizar un roadster que cae invertido, accionando dos propulsores (intensidad y giro) para que el vehiculo toque suelo con las ruedas. Lo desarrolla el usuario `Guccimam` en el contexto del curso "AI CITY BUILDERS" del CONNECT AI LAB, y se distribuye como pesos de PyTorch para el pipeline `reinforcement-learning` de Hugging Face.
 
 No es un modelo de lenguaje ni un modelo fundacional: es una politica entrenada sobre un entorno Gymnasium propio (`로드스터연속`, es decir, "roadster continuo", definido en `로드스터_시뮬레이터.py`). El interes no esta en sus capacidades generales, que no las tiene, sino en que sirve como ejemplo reproducible de un pipeline completo de RL con acciones continuas: definicion del entorno, entrenamiento PPO, evaluacion de tasa de exito y visualizacion de curvas de aprendizaje.
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Tipo | Entorno | Algoritmo | Espacio de acciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-shibalove-v1-roadster-ppo | Politica RL | Roadster invertido (Gymnasium custom) | PPO | 2 continuas | no disponible | HuggingFace, 0 descargas |
+| connectailab-rl-shibalove-v1-roadster-ppo | Politica RL | Roadster invertido (Gymnasium custom) | PPO | 2 continuas | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre otros agentes publicados para este mismo entorno ni sobre lineas base del curso CONNECT AI LAB, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -100,7 +100,7 @@ No se dispone de informacion sobre otros agentes publicados para este mismo ento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-roadster-ppo
+- Modelo en Hugging Face: https://huggingface.co/Guccimam/connectailab-rl-shibalove-v1-roadster-ppo
 - Perfil del autor: https://huggingface.co/Guccimam
 - Entorno de referencia: Gymnasium (https://gymnasium.farama.org/)
 - Algoritmo PPO, paper original: https://arxiv.org/abs/1707.06347

@@ -71,10 +71,10 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 | Enfoque | Tipo de artefacto | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (DreamBooth + LoRA, SD 1.4) | Adaptador LoRA | no disponible (rango no declarado) | 77 tokens (heredado del modelo base) | no disponible | HuggingFace, 0 descargas |
+| Este modelo (DreamBooth + LoRA, SD 1.4) | Adaptador LoRA | no disponible (rango no declarado) | 77 tokens (heredado del modelo base) | no disponible | Hugging Face, 0 descargas |
 | DreamBooth con fine-tuning completo | Pesos completos del modelo | cientos de millones (UNet SD 1.x) | 77 tokens | CreativeML Open RAIL-M sobre el modelo base | Ampliamente documentado en la comunidad |
 | Textual Inversion | Embedding de texto | miles de parametros | 77 tokens | Depende del autor | Ampliamente documentado en la comunidad |
-| LoRA generico para SD 1.5 | Adaptador LoRA | no disponible (variable) | 77 tokens | Variable segun autor | Amplia en HuggingFace |
+| LoRA generico para SD 1.5 | Adaptador LoRA | no disponible (variable) | 77 tokens | Variable segun autor | Amplia en Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -89,6 +89,6 @@ No se dispone de datos de rendimiento ni de especificaciones completas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dannyboy20031204/lab2-dreambooth-lora-sks-cat
+- Modelo en Hugging Face: https://huggingface.co/dannyboy20031204/lab2-dreambooth-lora-sks-cat
 - Modelo base: https://huggingface.co/CompVis/stable-diffusion-v1-4
 - Los resultados de la busqueda web realizada no contienen enlaces relevantes para este modelo: todas las entradas devueltas corresponden a catalogos de producto de una empresa de saneamiento, sin relacion con el adaptador LoRA ni con DreamBooth. No se dispone, por tanto, de papers, blogs o repositorios adicionales verificados en la informacion proporcionada.

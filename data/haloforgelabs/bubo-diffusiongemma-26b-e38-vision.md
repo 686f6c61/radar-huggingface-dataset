@@ -84,7 +84,7 @@ No se dispone de informacion suficiente para establecer una comparacion cuantita
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HaloForgeLabs/bubo-diffusiongemma-26b-e38-vision
+- Repositorio Hugging Face: https://huggingface.co/HaloForgeLabs/bubo-diffusiongemma-26b-e38-vision
 - Modelo base: https://huggingface.co/Goodoldjam/DiffusionGemma-26B-E38-Abliterated-NVFP4
 - Repositorio del runtime Bubo: https://github.com/haloforge-labs/bubo
 - Revision del modelo base referenciada en la conversion: `3f007177`

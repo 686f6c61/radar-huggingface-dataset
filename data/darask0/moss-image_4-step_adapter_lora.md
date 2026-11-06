@@ -88,9 +88,9 @@ Las cifras de tiempo excluyen codificador de texto y VAE salvo donde se indica. 
 
 | Modelo | Tipo | Parámetros | Pasos / CFG | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| darask0/MOSS-Image_4-step_adapter_lora | Adaptador LoRA few-step (DMAD) sobre MOSS-Image-SFT | 5B base + 1,19 GB de LoRA fp32 | 4 / sin CFG | Apache 2.0 | HuggingFace, diffusers, ComfyUI |
-| OpenMOSS-Team/MOSS-Image-SFT | DiT base (teacher) | 5B | 50 / CFG 3 | No disponible en la información | HuggingFace |
-| lodestones/MOSS-Image-SFT-8-steps-dmd | Adaptador few-step (data-space DMD) | 5B base + adaptador | 8 / sin CFG | No disponible en la información | HuggingFace |
+| darask0/MOSS-Image_4-step_adapter_lora | Adaptador LoRA few-step (DMAD) sobre MOSS-Image-SFT | 5B base + 1,19 GB de LoRA fp32 | 4 / sin CFG | Apache 2.0 | Hugging Face, diffusers, ComfyUI |
+| OpenMOSS-Team/MOSS-Image-SFT | DiT base (teacher) | 5B | 50 / CFG 3 | No disponible en la información | Hugging Face |
+| lodestones/MOSS-Image-SFT-8-steps-dmd | Adaptador few-step (data-space DMD) | 5B base + adaptador | 8 / sin CFG | No disponible en la información | Hugging Face |
 | Adaptadores few-step de otras familias (p. ej. variantes destiladas de FLUX o SDXL) | Adaptador few-step | Depende del modelo base | 1–8 / variable | No disponible en la información | No comparable con los datos aportados |
 
 La comparación relevante es interna a la familia MOSS-Image: este adaptador mejora la latencia del checkpoint de 8 pasos de lodestones (0,81 s frente a 1,54 s de DiT en H100) a costa de una mayor fragilidad de integración (requiere reemplazo del time path y sampler propio). No se dispone de datos de calidad objetivos para comparar con alternativas de otras familias.
@@ -115,7 +115,7 @@ La comparación relevante es interna a la familia MOSS-Image: este adaptador mej
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/darask0/MOSS-Image_4-step_adapter_lora
+- Modelo en Hugging Face: https://huggingface.co/darask0/MOSS-Image_4-step_adapter_lora
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Checkpoint de partida (8 pasos, DMD): https://huggingface.co/lodestones/MOSS-Image-SFT-8-steps-dmd
 - Repositorio oficial de MOSS-Image (nodos de ComfyUI): https://github.com/OpenMOSS/MOSS-Image

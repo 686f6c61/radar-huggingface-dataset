@@ -76,9 +76,9 @@ No se han publicado comparaciones con modelos externos ni resultados en benchmar
 
 | Modelo | Tipo | Params | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SurfaceGuard (U-Net ResNet-34) | Segmentación de anomalías | 24,4M | 128x800 píxeles | no disponible | HuggingFace (Axiomloop/surfaceguard-models) |
-| SurfaceGuard (U-Net desde cero) | Segmentación de anomalías | 7,7M | 128x800 píxeles | no disponible | HuggingFace (mismo repo) |
-| SurfaceGuard (FPN ResNet-34) | Segmentación de anomalías | 23,1M | 128x800 píxeles | no disponible | HuggingFace (mismo repo) |
+| SurfaceGuard (U-Net ResNet-34) | Segmentación de anomalías | 24,4M | 128x800 píxeles | no disponible | Hugging Face (Axiomloop/surfaceguard-models) |
+| SurfaceGuard (U-Net desde cero) | Segmentación de anomalías | 7,7M | 128x800 píxeles | no disponible | Hugging Face (mismo repo) |
+| SurfaceGuard (FPN ResNet-34) | Segmentación de anomalías | 23,1M | 128x800 píxeles | no disponible | Hugging Face (mismo repo) |
 
 No se dispone de información sobre modelos comparables externos (por ejemplo, arquitecturas de segmentación de anomalías industriales de otros autores) en la documentación proporcionada.
 
@@ -89,12 +89,12 @@ No se dispone de información sobre modelos comparables externos (por ejemplo, a
 - Sin información sobre sesgos: al no conocerse la procedencia de los datos, no puede evaluarse el sesgo de dominio (tipo de material, iluminación, cámara, geografía industrial).
 - Riesgo de sobreajuste al dominio: los modelos se han entrenado sobre un dataset concreto de 128x800 píxeles y cuatro tipos de defectos; su generalización a otras resoluciones, materiales o tipos de defecto no está demostrada.
 - Métricas modestas: el mejor Dice es 0,524 y el mejor F1 macro 0,544, lo que indica un rendimiento limitado incluso en validación; la precisión por píxel elevada (≈0,99) es engañosa por el desbalance de clases típico en segmentación de defectos.
-- Sin pipeline declarado en HuggingFace: no hay `pipeline_tag`, lo que dificulta el uso directo con las utilidades de la plataforma.
+- Sin pipeline declarado en Hugging Face: no hay `pipeline_tag`, lo que dificulta el uso directo con las utilidades de la plataforma.
 - Sin formatos de pesos documentados: no se indica si hay safetensors, GGUF, ONNX u otros; el repositorio de 0,6 GB sugiere pesos en bruto, pero no se confirma.
 - Sin instrucciones de uso ni scripts de inferencia: la reproducibilidad depende de reconstruir la arquitectura a partir de los nombres de las runs.
 - Fecha de creación futura (2026-11-01): inconsistencia temporal que conviene verificar antes de confiar en los metadatos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Axiomloop/surfaceguard-models
+- Repositorio Hugging Face: https://huggingface.co/Axiomloop/surfaceguard-models
 - Proyecto W&B: https://wandb.ai/axiomloops-indian-institute-of-technology-madras/24f3002363-t32026

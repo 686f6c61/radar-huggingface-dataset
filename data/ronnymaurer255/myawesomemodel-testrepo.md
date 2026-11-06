@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MyAwesomeModel` es un repositorio publicado en HuggingFace por el usuario `RonnyMaurer255`, etiquetado como un modelo de extracción de características basado en Transformers y PyTorch, con licencia MIT. Sin embargo, el repositorio no contiene ningún archivo de pesos (tamaño 0.0 GB), por lo que no es posible descargar ni ejecutar el modelo. La model card incluida describe un modelo de lenguaje con capacidades de razonamiento avanzado, mejora en tareas de matemáticas, programación y lógica, y menciona una variante llamada `MyAwesomeModel-Small`, pero no proporciona especificaciones técnicas concretas como arquitectura, número de parámetros o longitud de contexto.
+El modelo `MyAwesomeModel` es un repositorio publicado en Hugging Face por el usuario `RonnyMaurer255`, etiquetado como un modelo de extracción de características basado en Transformers y PyTorch, con licencia MIT. Sin embargo, el repositorio no contiene ningún archivo de pesos (tamaño 0.0 GB), por lo que no es posible descargar ni ejecutar el modelo. La model card incluida describe un modelo de lenguaje con capacidades de razonamiento avanzado, mejora en tareas de matemáticas, programación y lógica, y menciona una variante llamada `MyAwesomeModel-Small`, pero no proporciona especificaciones técnicas concretas como arquitectura, número de parámetros o longitud de contexto.
 
 Dado que el repositorio está vacío y la información técnica es inexistente o genérica, esta ficha se limita a reflejar los datos disponibles y a señalar las carencias. No se puede considerar un modelo utilizable en producción hasta que se publiquen los pesos y una documentación técnica completa.
 
@@ -84,6 +84,6 @@ No se puede realizar una comparativa fiable porque no se conocen los parámetros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RonnyMaurer255/MyAwesomeModel-TestRepo
+- Repositorio Hugging Face: https://huggingface.co/RonnyMaurer255/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces (papers, blogs, repos de código, demos) en la información proporcionada.

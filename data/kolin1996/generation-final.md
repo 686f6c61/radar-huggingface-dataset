@@ -70,5 +70,5 @@ No disponible. No se han encontrado modelos comparables de la misma categoría e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kolin1996/generation-final
+- Hugging Face: https://huggingface.co/kolin1996/generation-final
 - Los resultados de búsqueda web proporcionados no guardan relación con este modelo, por lo que no se incluyen otros enlaces.

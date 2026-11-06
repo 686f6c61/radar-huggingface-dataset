@@ -77,7 +77,7 @@ La comparativa se limita a modelos de tamaño similar. No se dispone de datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/KoarAI/LFM2.5-350M-Thinking-GGUF
 - Modelo base (fine-tune): https://huggingface.co/KoarAI/LFM2.5-350M-Thinking
 - Modelo base original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Documentación de Liquid AI para LFM2.5-350M: https://docs.liquid.ai/lfm/models/lfm25-350m

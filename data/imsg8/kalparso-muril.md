@@ -98,7 +98,7 @@ La comparación con LLM generalistas no es del todo equivalente: gemma4:26b se e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/imsg8/kalparso-muril
+- Modelo en Hugging Face: https://huggingface.co/imsg8/kalparso-muril
 - Código, entrenamiento y evaluación: https://github.com/imsg8/kalparso
 - Dataset KalParso: https://huggingface.co/datasets/imsg8/kalparso
 - Variante XLM-R (recomendada por el autor): https://huggingface.co/imsg8/kalparso-xlmr

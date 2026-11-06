@@ -2,7 +2,7 @@
 
 ## Resumen
 
-YOLOv4-Tiny-Jetson-Runtime es un repositorio de HuggingFace publicado por el usuario manateelazycat que contiene un artefacto de despliegue (runtime) para el detector de objetos YOLOv4-tiny-416 sobre NVIDIA Jetson AGX Orin con JetPack 6 (JP6). No se trata de un modelo de lenguaje ni de un modelo entrenado en sentido estricto: el autor indica explicitamente que el repositorio "no contiene pesos de modelo, grabaciones de camara, claves de servicio ni el LPK final del modelo". Es, por tanto, un paquete de distribucion de binarios y fuentes para ejecutar un detector fijo ya existente.
+YOLOv4-Tiny-Jetson-Runtime es un repositorio de Hugging Face publicado por el usuario manateelazycat que contiene un artefacto de despliegue (runtime) para el detector de objetos YOLOv4-tiny-416 sobre NVIDIA Jetson AGX Orin con JetPack 6 (JP6). No se trata de un modelo de lenguaje ni de un modelo entrenado en sentido estricto: el autor indica explicitamente que el repositorio "no contiene pesos de modelo, grabaciones de camara, claves de servicio ni el LPK final del modelo". Es, por tanto, un paquete de distribucion de binarios y fuentes para ejecutar un detector fijo ya existente.
 
 El contenido principal es un candidato de runtime nativo para arquitectura arm64 en Jetson AGX Orin JP6, acompanado de un tarball con las entradas exactas de distribucion: 21 grupos de fuentes Ubuntu, 14 distribuciones fuente de PyPI, fuentes congeladas del runtime, controlador y plugin, y los avisos originales de licencia. Cada artefacto queda fijado por tamano y SHA256, sin depender de ramas mutables.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El un
 
 | Modelo | Parametros | Contexto | Licencia | Plataforma | Disponibilidad |
 |---|---|---|---|---|---|
-| YOLOv4-Tiny-Jetson-Runtime (este repo) | No disponible (sin pesos) | No aplica | other (terminos de SDK) | Jetson AGX Orin JP6 | HuggingFace, 0 descargas |
+| YOLOv4-Tiny-Jetson-Runtime (este repo) | No disponible (sin pesos) | No aplica | other (terminos de SDK) | Jetson AGX Orin JP6 | Hugging Face, 0 descargas |
 | YOLOv4-tiny (modelo original) | No disponible en esta informacion | No aplica | no disponible en esta informacion | Multiples | Ampliamente disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,6 +86,6 @@ No se dispone de informacion suficiente para establecer una comparativa tecnica 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manateelazycat/YOLOv4-Tiny-Jetson-Runtime
+- Hugging Face: https://huggingface.co/manateelazycat/YOLOv4-Tiny-Jetson-Runtime
 - Terminos de distribucion: https://huggingface.co/manateelazycat/YOLOv4-Tiny-Jetson-Runtime/blob/main/DISTRIBUTION_TERMS.md
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

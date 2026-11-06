@@ -79,8 +79,8 @@ Estas medidas fueron tomadas con ONNX Runtime 1.31.1 en un Mac con Apple Silicon
 
 | Modelo | Tipo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| kkk4oru/mossformer2-ss-16k-onnx | Separación de habla 2 hablantes, 16 kHz | no disponible | audio de longitud arbitraria | Apache-2.0 | ONNX | HuggingFace |
-| alibabasglab/MossFormer2_SS_16K | Separación de habla 2 hablantes, 16 kHz (original) | no disponible | audio de longitud arbitraria | Apache-2.0 | PyTorch (`.pt`) | HuggingFace |
+| kkk4oru/mossformer2-ss-16k-onnx | Separación de habla 2 hablantes, 16 kHz | no disponible | audio de longitud arbitraria | Apache-2.0 | ONNX | Hugging Face |
+| alibabasglab/MossFormer2_SS_16K | Separación de habla 2 hablantes, 16 kHz (original) | no disponible | audio de longitud arbitraria | Apache-2.0 | PyTorch (`.pt`) | Hugging Face |
 | Otros separadores (p. ej. SepFormer, ConvTasNet) | Separación de habla | no disponible en esta información | no disponible | variable | PyTorch/ONNX | variable |
 
 No se dispone de datos de rendimiento comparativo (SDR, SI-SNRi) entre estos modelos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa.
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento comparativo (SDR, SI-SNRi) entre estos mod
 
 ## Enlaces
 
-- HuggingFace (conversión ONNX): https://huggingface.co/kkk4oru/mossformer2-ss-16k-onnx
+- Hugging Face (conversión ONNX): https://huggingface.co/kkk4oru/mossformer2-ss-16k-onnx
 - Modelo base: https://huggingface.co/alibabasglab/MossFormer2_SS_16K
 - Código de red (ClearerVoice-Studio): https://github.com/modelscope/ClearerVoice-Studio
 - SpeechBrain: https://github.com/speechbrain/speechbrain

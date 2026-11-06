@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este "modelo" es en realidad un ejemplo pedagogico de regresion lineal multiple entrenado con scikit-learn, publicado en HuggingFace por el usuario IgnacioToto27 con fines exclusivamente didacticos para el IFTS N.º 18. No se trata de un modelo de lenguaje ni de una red neuronal: es un objeto `LinearRegression` serializado con `joblib` que predice el precio de una vivienda (en miles de dolares estadounidenses) a partir de tres variables tabulares: superficie en metros cuadrados, presencia de balcon y presencia de ascensor.
+Este "modelo" es en realidad un ejemplo pedagogico de regresion lineal multiple entrenado con scikit-learn, publicado en Hugging Face por el usuario IgnacioToto27 con fines exclusivamente didacticos para el IFTS N.º 18. No se trata de un modelo de lenguaje ni de una red neuronal: es un objeto `LinearRegression` serializado con `joblib` que predice el precio de una vivienda (en miles de dolares estadounidenses) a partir de tres variables tabulares: superficie en metros cuadrados, presencia de balcon y presencia de ascensor.
 
 Su relevancia es acotada y de naturaleza formativa: sirve para ilustrar el ciclo completo de publicacion de un modelo supervisado (entrenamiento, evaluacion, serializacion y comparticion en el Hub), no para resolver un problema real de valoracion inmobiliaria. El dataset es sintetico (200 registros generados con una formula lineal mas ruido), de modo que el modelo no ha visto datos reales en ningun momento.
 
@@ -40,7 +40,7 @@ Los datos de entrenamiento son 200 registros sinteticos generados en `train.py` 
 ## Casos de uso
 
 - Docencia de regresion lineal: el modelo sirve como ejemplo minimo y reproducible para explicar coeficientes, bias y evaluacion con MAE y R² en un curso introductorio de machine learning.
-- Demostracion del flujo de publicacion en HuggingFace: permite mostrar a estudiantes como se sube un artefacto `joblib`, se documenta con una model card y se descarga con `hf_hub_download`.
+- Demostracion del flujo de publicacion en Hugging Face: permite mostrar a estudiantes como se sube un artefacto `joblib`, se documenta con una model card y se descarga con `hf_hub_download`.
 - Prueba de integracion de pipelines de inferencia tabular: util para validar que un entorno con scikit-learn y pandas carga correctamente un modelo serializado y ejecuta `predict` sobre un `DataFrame`.
 - Ejercicio de analisis de sensibilidad: al conocer los pesos reales, se puede comprobar como varia la prediccion al modificar `m2`, `balcon` o `ascensor` y contrastarlo con los coeficientes aprendidos.
 - Base para ejercicios de regularizacion: partir de este modelo y comparar con Ridge o Lasso para ilustrar el efecto de la penalizacion sobre los coeficientes.
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IgnacioToto27/01-sklearn-regresion | 4 (3 pesos + bias) | no aplica | MAE 3,08; R² 0,989 (test sintetico) | MIT | HuggingFace |
+| IgnacioToto27/01-sklearn-regresion | 4 (3 pesos + bias) | no aplica | MAE 3,08; R² 0,989 (test sintetico) | MIT | Hugging Face |
 | Regresion lineal con `sklearn` sobre datos sinteticos equivalentes | 4 | no aplica | Depende del ruido y la semilla | segun implementacion | reproducible con `train.py` |
 | Ridge / Lasso sobre el mismo dataset | 4 | no aplica | no disponible en la informacion | segun implementacion | no disponible |
 
@@ -86,7 +86,7 @@ No se dispone de comparaciones publicadas con alternativas en la informacion pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IgnacioToto27/01-sklearn-regresion
+- Modelo en Hugging Face: https://huggingface.co/IgnacioToto27/01-sklearn-regresion
 - Documentacion de scikit-learn sobre `LinearRegression`: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html
 - Documentacion de `joblib` para persistencia de modelos: https://joblib.readthedocs.io/
 - Documentacion de `huggingface_hub` para descarga de artefactos: https://huggingface.co/docs/huggingface_hub

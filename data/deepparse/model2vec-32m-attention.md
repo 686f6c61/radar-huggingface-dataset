@@ -71,7 +71,7 @@ No se dispone de datos de comparación con otros modelos de parseo de direccione
 
 | Modelo | Parámetros | Contexto | Exactitud test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepparse model2vec-32m-attention | 16,8 M | no disponible | 98,42 % | MIT | HuggingFace (librería deepparse) |
+| deepparse model2vec-32m-attention | 16,8 M | no disponible | 98,42 % | MIT | Hugging Face (librería deepparse) |
 | Alternativas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se dispone de datos de comparación con otros modelos de parseo de direccione
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/deepparse/model2vec-32m-attention
+- Modelo en Hugging Face: https://huggingface.co/deepparse/model2vec-32m-attention
 - Dataset de entrenamiento: https://huggingface.co/datasets/deepparse/worldwide-addresses
 - Embeddings base: https://huggingface.co/minishlab/potion-base-32M
 - Sitio del proyecto deepparse: https://deepparse.org

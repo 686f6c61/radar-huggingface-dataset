@@ -82,9 +82,9 @@ No se puede elaborar una comparativa sólida con los datos disponibles. En la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/DeepSeek-V3
+- Hugging Face: https://huggingface.co/Openintelligent123/DeepSeek-V3
 - Paper (DeepSeek-V3): https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf
 - GitHub de DeepSeek-V3: https://github.com/deepseek-ai/DeepSeek-V3
 - Página oficial de DeepSeek: https://www.deepseek.com/
 - Chat de DeepSeek: https://chat.deepseek.com/
-- HuggingFace de DeepSeek AI: https://huggingface.co/deepseek-ai
+- Hugging Face de DeepSeek AI: https://huggingface.co/deepseek-ai

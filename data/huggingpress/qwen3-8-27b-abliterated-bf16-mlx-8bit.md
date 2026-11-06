@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks especificos para esta version ablit
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (original) | 27B denso | 262K | Apache-2.0 | HuggingFace | Modelo alineado con filtros de seguridad |
-| Qwen3.8-27B-ABLITERATED (Blackfrost) | 27B denso | 262K | Apache-2.0 | HuggingFace | Version sin rechazos, para investigacion |
-| Qwen3.8-27B-ABLITERATED-MLX-8Bit (este) | 27B nominal (7.5B en safetensors) | 262K | Apache-2.0 | HuggingFace | Conversion MLX 8-bit para Apple Silicon |
-| Qwen3-30B-A3B (MoE) | 30B total, 3B activos | 128K | Apache-2.0 | HuggingFace | Alternativa eficiente en inferencia, pero sin vision |
+| Qwen3.8-27B (original) | 27B denso | 262K | Apache-2.0 | Hugging Face | Modelo alineado con filtros de seguridad |
+| Qwen3.8-27B-ABLITERATED (Blackfrost) | 27B denso | 262K | Apache-2.0 | Hugging Face | Version sin rechazos, para investigacion |
+| Qwen3.8-27B-ABLITERATED-MLX-8Bit (este) | 27B nominal (7.5B en safetensors) | 262K | Apache-2.0 | Hugging Face | Conversion MLX 8-bit para Apple Silicon |
+| Qwen3-30B-A3B (MoE) | 30B total, 3B activos | 128K | Apache-2.0 | Hugging Face | Alternativa eficiente en inferencia, pero sin vision |
 
 La comparacion con el modelo original muestra que la unica diferencia es la eliminacion de los mecanismos de rechazo. Frente a alternativas MoE como Qwen3-30B-A3B, este modelo ofrece mayor capacidad por parametro activo y vision integrada, a costa de mayor uso de memoria.
 

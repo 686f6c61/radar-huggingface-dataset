@@ -92,7 +92,7 @@ La ventaja principal de YOLOX-Tiny LiteRT frente a YOLOv8n es su licencia permis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/litert-community/yolox-tiny-litert
+- Repositorio Hugging Face: https://huggingface.co/litert-community/yolox-tiny-litert
 - Repositorio original YOLOX (Megvii): https://github.com/Megvii-BaseDetection/YOLOX
 - Ejemplos LiteRT (app Android y script de conversion): https://github.com/google-ai-edge/litert-samples (compiled_model_api/object_detection)
 - Repositorio LiteRT-Models con YOLOX-Nano: https://github.com/john-rocky/LiteRT-Models/tree/main/yolox

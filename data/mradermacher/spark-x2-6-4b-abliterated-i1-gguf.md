@@ -85,7 +85,7 @@ No se dispone de informacion sobre modelos comparables de otros autores (Qwen, L
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantizaciones i1): https://huggingface.co/mradermacher/Spark-X2.6-4B-abliterated-i1-GGUF
+- Repositorio Hugging Face (cuantizaciones i1): https://huggingface.co/mradermacher/Spark-X2.6-4B-abliterated-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/Spark-X2.6-4B-abliterated-GGUF
 - Modelo base: https://huggingface.co/FrostWolfAI/Spark-X2.6-4B-abliterated
 - Pagina de resumen del cuantizador: https://hf.tst.eu/model#Spark-X2.6-4B-abliterated-i1-GGUF

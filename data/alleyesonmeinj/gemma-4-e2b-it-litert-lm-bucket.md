@@ -78,7 +78,7 @@ La comparativa se basa en datos públicos de cada modelo. Gemma 4 E2B destaca po
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/alleyesonmeinJ/gemma-4-E2B-it-litert-lm-bucket
+- Repositorio Hugging Face del modelo: https://huggingface.co/alleyesonmeinJ/gemma-4-E2B-it-litert-lm-bucket
 - Página oficial de Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E2B
 - Versión comunitaria de LiteRT: https://huggingface.co/Htoo-AI/gemma-4-E2B-it-litert

@@ -90,7 +90,7 @@ Qwen3.5-9B ofrece un mejor resultado en MMLU-Pro que GPT-OSS-20B y que Qwen3.5-4
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NiuNiu0110/rst-qwen3.5-9b-ota-sft
-- Repositorio espejo en HuggingFace: https://huggingface.co/khazic/rst-qwen3.5-9b-ota-sft
+- Repositorio Hugging Face: https://huggingface.co/NiuNiu0110/rst-qwen3.5-9b-ota-sft
+- Repositorio espejo en Hugging Face: https://huggingface.co/khazic/rst-qwen3.5-9b-ota-sft
 - Modelo en Ollama: https://ollama.com/library/qwen3.5:9b
 - Blog oficial de Qwen3.5: https://qwen.ai/blog?id=qwen3.5

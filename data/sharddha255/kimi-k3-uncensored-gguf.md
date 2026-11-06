@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas versi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Sharddha255/Kimi-K3-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Sharddha255/Kimi-K3-Uncensored-GGUF
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K3
 - Cuantización de referencia (unsloth): https://huggingface.co/unsloth/Kimi-K3-GGUF
 - Otra versión abliterada: https://huggingface.co/Ryanchen911/Kimi-K3-Uncensored-GGUF

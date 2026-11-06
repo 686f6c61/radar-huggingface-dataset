@@ -2,11 +2,11 @@
 
 ## Resumen
 
-z3-mini-4090-soup es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-4B, publicado por el usuario zils-ai en HuggingFace. Segun la model card, el modelo se presenta bajo el nombre interno "iota-decide-4b v0.4" y esta descrito como un "modelo de decision" de Macrocosmos: dado un estado y un conjunto de preguntas tipadas (eleccion multiple, si/no, puntuacion), devuelve una probabilidad para cada opcion en un unico forward pass, sin generar texto. El modelo tiene 4.539.265.536 parametros y un tamano de repositorio de 9,1 GB en formato safetensors.
+z3-mini-4090-soup es un ajuste fino (finetune) del modelo Qwen/Qwen3.5-4B, publicado por el usuario zils-ai en Hugging Face. Segun la model card, el modelo se presenta bajo el nombre interno "iota-decide-4b v0.4" y esta descrito como un "modelo de decision" de Macrocosmos: dado un estado y un conjunto de preguntas tipadas (eleccion multiple, si/no, puntuacion), devuelve una probabilidad para cada opcion en un unico forward pass, sin generar texto. El modelo tiene 4.539.265.536 parametros y un tamano de repositorio de 9,1 GB en formato safetensors.
 
 La relevancia de este modelo radica en su enfoque poco habitual: en lugar de generar respuestas autoregresivas, lee las letras de las opciones en la posicion de respuesta para producir probabilidades calibradas. Incorpora una innovacion tecnica destacable en la version v0.4: atencion bidireccional en las capas de atencion completa (las capas de atencion lineal permanecen causales), lo que exige usar el script incluido `letter_decide.py` para obtener los resultados correctos. La inferencia causal estandar (por ejemplo, `model.generate` o stacks de serving convencionales) produce puntuaciones inferiores.
 
-El modelo esta entrenado exclusivamente en ingles, con licencia Apache 2.0, y esta pensado para tareas de clasificacion y decision estructurada mas que para generacion de texto libre. Su pipeline declarado en HuggingFace es image-text-to-text, aunque la model card no detalla capacidades de vision mas alla de la herencia del modelo base.
+El modelo esta entrenado exclusivamente en ingles, con licencia Apache 2.0, y esta pensado para tareas de clasificacion y decision estructurada mas que para generacion de texto libre. Su pipeline declarado en Hugging Face es image-text-to-text, aunque la model card no detalla capacidades de vision mas alla de la herencia del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -70,7 +70,7 @@ Resultados publicados en la model card (ejecuciones propias del autor):
 
 | Modelo | Parametros | Contexto | Rendimiento (Decision Index) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| z3-mini-4090-soup (iota-decide-4b v0.4) | 4,54B | no disponible | 62,9 | apache-2.0 | HuggingFace |
+| z3-mini-4090-soup (iota-decide-4b v0.4) | 4,54B | no disponible | 62,9 | apache-2.0 | Hugging Face |
 | Torchcast Decision 4B v1.3 | no disponible | no disponible | 65,6 | no disponible | no disponible |
 | iota-decide-4b v0.3 | no disponible | no disponible | 55,4 | no disponible | no disponible |
 
@@ -88,5 +88,5 @@ Resultados publicados en la model card (ejecuciones propias del autor):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zils-ai/z3-mini-4090-soup
+- Hugging Face: https://huggingface.co/zils-ai/z3-mini-4090-soup
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B

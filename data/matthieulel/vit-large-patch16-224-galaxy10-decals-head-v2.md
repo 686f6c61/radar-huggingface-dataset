@@ -93,7 +93,7 @@ La comparación relevante no es frente a otros clasificadores de galaxias public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch16-224-galaxy10-decals-head-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch16-224-galaxy10-decals-head-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch16-224
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Métricas y splits del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

@@ -66,7 +66,7 @@ No se dispone de tablas de rendimiento comparativo porque no hay benchmarks publ
 - El repositorio no incluye el archivo mmproj para vision; si se necesita esa capacidad, hay que descargar el repositorio estatico.
 
 ## Enlaces
-- [Repositorio HuggingFace de la cuantizacion i1](https://huggingface.co/mradermacher/Serenity-31B-v1.1-i1-GGUF)
+- [Repositorio Hugging Face de la cuantizacion i1](https://huggingface.co/mradermacher/Serenity-31B-v1.1-i1-GGUF)
 - [Repositorio estatico de cuantizaciones](https://huggingface.co/mradermacher/Serenity-31B-v1.1-GGUF)
 - [Modelo base ReadyArt/Serenity-31B-v1.1](https://huggingface.co/ReadyArt/Serenity-31B-v1.1)
 - [Pagina de descarga de mradermacher](https://hf.tst.eu/model#Serenity-31B-v1.1-i1-GGUF)

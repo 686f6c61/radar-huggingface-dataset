@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Gabrie-lsoare/efficientformer-multitask-weights` es un repositorio de HuggingFace publicado por el usuario Gabrie-lsoare que contiene una implementación de Efficientformer orientada a tareas multitarea bajo una configuración declarada como "huge". El propio autor indica de forma explícita que se trata de un punto de partida experimental y transparente: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks.
+`Gabrie-lsoare/efficientformer-multitask-weights` es un repositorio de Hugging Face publicado por el usuario Gabrie-lsoare que contiene una implementación de Efficientformer orientada a tareas multitarea bajo una configuración declarada como "huge". El propio autor indica de forma explícita que se trata de un punto de partida experimental y transparente: el archivo `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo entrenado ni evaluado en benchmarks.
 
 La relevancia del repositorio es, por tanto, como material de referencia de código y configuración reproducible, no como modelo listo para producción. Incluye el script principal `eval.py`, un `config.json` con los ajustes de arquitectura, un `training_args.json` con la receta de experimento por defecto (optimizador adam con planificador exponencial) y el checkpoint de inicialización en safetensors. No se declara ningún resultado de benchmark ni se aportan métricas de rendimiento.
 
@@ -91,5 +91,5 @@ No disponible. La información proporcionada no incluye modelos comparables ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Gabrie-lsoare/efficientformer-multitask-weights
+- Repositorio en Hugging Face: https://huggingface.co/Gabrie-lsoare/efficientformer-multitask-weights
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios de código o demos.

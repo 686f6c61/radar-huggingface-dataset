@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Riga5544/Acne_detection`, publicado por el usuario Riga5544 en HuggingFace, se presenta como un proyecto orientado a la detección de acné mediante IA. Sin embargo, el repositorio está vacío: tiene un tamaño de 0.0 GB, no se ha publicado ningún peso de modelo, no se especifica pipeline, licencia ni idiomas soportados. El repositorio fue creado el 3 de septiembre de 2026 y actualizado el mismo día, con cero descargas y un único "like".
+El repositorio `Riga5544/Acne_detection`, publicado por el usuario Riga5544 en Hugging Face, se presenta como un proyecto orientado a la detección de acné mediante IA. Sin embargo, el repositorio está vacío: tiene un tamaño de 0.0 GB, no se ha publicado ningún peso de modelo, no se especifica pipeline, licencia ni idiomas soportados. El repositorio fue creado el 3 de septiembre de 2026 y actualizado el mismo día, con cero descargas y un único "like".
 
 A día de hoy no existe información pública sobre la arquitectura, el entrenamiento o las capacidades del modelo. No se ha publicado ningún artefacto descargable, documento técnico ni demo asociada. Se trata, por tanto, de un repositorio placeholder o en fase inicial de desarrollo, sin valor práctico para integración en proyectos de producción.
 
@@ -58,4 +58,4 @@ No disponible. No existe información pública sobre este modelo que permita com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Riga5544/Acne_detection
+- Repositorio Hugging Face: https://huggingface.co/Riga5544/Acne_detection

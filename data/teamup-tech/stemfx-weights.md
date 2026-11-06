@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`teamup-tech/StemFX-weights` no es un modelo de lenguaje: es un espejo (mirror) del checkpoint preentrenado de separacion de fuentes musicales SCNet que utiliza el Space [StemFX](https://huggingface.co/spaces/teamup-tech/StemFX) antes de predecir efectos de audio. El repositorio lo publica la cuenta `teamup-tech` con el unico proposito de evitar que el paquete `stemfx` descargue el fichero desde una release de GitHub de [Music-Source-Separation-Training](https://github.com/ZFTurbo/Music-Source-Separation-Training), de modo que la dependencia quede resuelta dentro de HuggingFace.
+`teamup-tech/StemFX-weights` no es un modelo de lenguaje: es un espejo (mirror) del checkpoint preentrenado de separacion de fuentes musicales SCNet que utiliza el Space [StemFX](https://huggingface.co/spaces/teamup-tech/StemFX) antes de predecir efectos de audio. El repositorio lo publica la cuenta `teamup-tech` con el unico proposito de evitar que el paquete `stemfx` descargue el fichero desde una release de GitHub de [Music-Source-Separation-Training](https://github.com/ZFTurbo/Music-Source-Separation-Training), de modo que la dependencia quede resuelta dentro de Hugging Face.
 
 El contenido es un unico fichero, `model_scnet_masked_ep_111_sdr_9.8286.ckpt`, copiado sin modificaciones y con su nombre original de la release v1.0.17 del proyecto de Roman Solovyev (ZFTurbo). El repositorio completo ocupa 0,2 GB, no declara pipeline, no tiene descargas ni likes, y su model card se limita a documentar la procedencia y el hash SHA-256 del binario.
 
@@ -75,7 +75,7 @@ Los datos de esta comparativa no proceden de la informacion proporcionada y se m
 
 | Modelo | Tarea | Parametros | Contexto | SDR publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| StemFX-weights (SCNet) | Separacion de fuentes musicales | no disponible (repo de 0,2 GB) | no aplica | 9,8286 (dataset no indicado) | MIT | HuggingFace, espejo de release GitHub |
+| StemFX-weights (SCNet) | Separacion de fuentes musicales | no disponible (repo de 0,2 GB) | no aplica | 9,8286 (dataset no indicado) | MIT | Hugging Face, espejo de release GitHub |
 | Demucs / HTDemucs | Separacion de fuentes musicales | no disponible | no aplica | no disponible en esta informacion | no verificada aqui | Codigo y pesos publicos |
 | BS-RoFormer (via Music-Source-Separation-Training) | Separacion de fuentes musicales | no disponible | no aplica | no disponible en esta informacion | no verificada aqui | Repositorio upstream |
 | Open-Unmix (UMX) | Separacion de fuentes musicales | no disponible | no aplica | no disponible en esta informacion | no verificada aqui | Codigo y pesos publicos |
@@ -93,7 +93,7 @@ Los datos de esta comparativa no proceden de la informacion proporcionada y se m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/teamup-tech/StemFX-weights
+- Repositorio en Hugging Face: https://huggingface.co/teamup-tech/StemFX-weights
 - Space StemFX: https://huggingface.co/spaces/teamup-tech/StemFX
 - Proyecto upstream Music-Source-Separation-Training: https://github.com/ZFTurbo/Music-Source-Separation-Training
 - Release v1.0.17 con el checkpoint original: https://github.com/ZFTurbo/Music-Source-Separation-Training/releases/download/v1.0.17/model_scnet_masked_ep_111_sdr_9.8286.ckpt

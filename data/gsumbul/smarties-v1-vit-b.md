@@ -50,7 +50,7 @@ El preentrenamiento se realizó sobre datos de teledetección de múltiples sens
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. La model card y los datos de la ficha de HuggingFace no incluyen cifras de MMLU, HumanEval, GSM8K ni métricas equivalentes de teledetección (por ejemplo, exactitud de clasificación o mIoU de segmentación).
+No se han publicado resultados de benchmarks en la información disponible. La model card y los datos de la ficha de Hugging Face no incluyen cifras de MMLU, HumanEval, GSM8K ni métricas equivalentes de teledetección (por ejemplo, exactitud de clasificación o mIoU de segmentación).
 
 ## Requisitos de hardware
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Sensores | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SMARTIES-v1-ViT-B | ViT-B autoencoder enmascarado, consciente del espectro | Sentinel-1, Sentinel-2, RGB submétrico y sensores no vistos | 116,5 M | no disponible | Apache 2.0 | HuggingFace |
+| SMARTIES-v1-ViT-B | ViT-B autoencoder enmascarado, consciente del espectro | Sentinel-1, Sentinel-2, RGB submétrico y sensores no vistos | 116,5 M | no disponible | Apache 2.0 | Hugging Face |
 | CROMA | ViT multimodal para teledetección | Sentinel-1 y Sentinel-2 | no disponible | no disponible | no disponible | no disponible |
-| Prithvi-100M | ViT (autoencoder enmascarado temporal) | Sentinel-2 (óptico) | ~100 M (según su denominación) | no disponible | no disponible | HuggingFace (IBM/NASA) |
+| Prithvi-100M | ViT (autoencoder enmascarado temporal) | Sentinel-2 (óptico) | ~100 M (según su denominación) | no disponible | no disponible | Hugging Face (IBM/NASA) |
 
 La diferencia cualitativa principal es que SMARTIES abstrae el sensor y admite combinaciones arbitrarias de bandas, mientras que las alternativas citadas están vinculadas a combinaciones fijas de sensores. No se dispone de cifras comparativas de rendimiento en la información proporcionada.
 
@@ -86,8 +86,8 @@ La diferencia cualitativa principal es que SMARTIES abstrae el sensor y admite c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gsumbul/SMARTIES-v1-ViT-B
-- Colección en HuggingFace: https://huggingface.co/collections/gsumbul/smarties-685888bb5ecded3f802cc945
+- Hugging Face: https://huggingface.co/gsumbul/SMARTIES-v1-ViT-B
+- Colección en Hugging Face: https://huggingface.co/collections/gsumbul/smarties-685888bb5ecded3f802cc945
 - Paper (arXiv): https://arxiv.org/abs/2506.19585
 - Página web del proyecto: https://gsumbul.github.io/SMARTIES/
 - Repositorio GitHub: https://github.com/gsumbul/SMARTIES

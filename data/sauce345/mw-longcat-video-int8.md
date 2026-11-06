@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Precision de pesos | Licencia | Tareas | Disponibilidad |
 |---|---|---|---|---|---|
-| sauce345/mw-longcat-video-int8 | 13,6B (heredados) | INT8 per-channel weight-only | no disponible en el repo; base MIT | T2V, I2V, continuacion | HuggingFace, 0 descargas |
-| LongCat-Video (base) | 13,6B | precision completa | MIT | T2V, I2V, continuacion | HuggingFace y GitHub oficiales |
-| LongCat-Video-Avatar-1.5 / base_model_int8 | no disponible | INT8 (mismo layout `QuantizedLinear`) | no disponible | avatar / refinamiento | HuggingFace |
+| sauce345/mw-longcat-video-int8 | 13,6B (heredados) | INT8 per-channel weight-only | no disponible en el repo; base MIT | T2V, I2V, continuacion | Hugging Face, 0 descargas |
+| LongCat-Video (base) | 13,6B | precision completa | MIT | T2V, I2V, continuacion | Hugging Face y GitHub oficiales |
+| LongCat-Video-Avatar-1.5 / base_model_int8 | no disponible | INT8 (mismo layout `QuantizedLinear`) | no disponible | avatar / refinamiento | Hugging Face |
 | Otros modelos de generacion de video de ~10-14B (por ejemplo, alternativas de la comunidad) | no disponible | no disponible | no disponible | T2V, I2V | no disponible |
 
 Solo se dispone de datos verificables para el modelo base y para el checkpoint hermano INT8 citado en la model card. La comparacion con otras familias de modelos de video no puede completarse con la informacion proporcionada.
@@ -80,7 +80,7 @@ Solo se dispone de datos verificables para el modelo base y para el checkpoint h
 ## Limitaciones y advertencias
 
 - Es un artefacto de pesos, no un modelo ejecutable por si solo: requiere el codigo de `longcat_video` del repositorio oficial para cargarse y ejecutarse.
-- No declara licencia propia en HuggingFace. La model card menciona MIT, pero ese dato corresponde al repositorio base (meituan-longcat/LongCat-Video). Conviene verificar la licencia aplicable antes de un uso comercial.
+- No declara licencia propia en Hugging Face. La model card menciona MIT, pero ese dato corresponde al repositorio base (meituan-longcat/LongCat-Video). Conviene verificar la licencia aplicable antes de un uso comercial.
 - La cuantizacion INT8 weight-only puede degradar la calidad de generacion respecto al modelo sin cuantizar. No hay evaluaciones publicadas que cuantifiquen esa perdida.
 - No hay model card detallada, ni pipeline declarado, ni idiomas soportados, ni resultados de benchmarks en este repositorio.
 - Riesgo de alucinacion: en el contexto de un modelo generativo de video, se traduce en artefactos visuales, incoherencias temporales o contenido no fiel al prompt. No hay evaluaciones publicadas para esta version cuantizada.
@@ -90,7 +90,7 @@ Solo se dispone de datos verificables para el modelo base y para el checkpoint h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sauce345/mw-longcat-video-int8
+- Repositorio en Hugging Face: https://huggingface.co/sauce345/mw-longcat-video-int8
 - Discusiones del repositorio: https://huggingface.co/sauce345/mw-longcat-video-int8/discussions
 - Repositorio oficial de LongCat-Video en GitHub: https://github.com/meituan-longcat/LongCat-Video
 - Pagina oficial del proyecto LongCat-Video: https://meituan-longcat.github.io/LongCat-Video/

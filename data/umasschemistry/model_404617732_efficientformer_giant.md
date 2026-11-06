@@ -57,4 +57,4 @@ No se dispone de informacion sobre modelos comparables de la misma categoria. No
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/umasschemistry/model_404617732_efficientformer_giant)
+- [Repositorio en Hugging Face](https://huggingface.co/umasschemistry/model_404617732_efficientformer_giant)

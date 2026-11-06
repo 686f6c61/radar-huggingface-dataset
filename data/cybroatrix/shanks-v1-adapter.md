@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CybroatriX/shanks-v1-adapter es un adaptador LoRA publicado en HuggingFace por el usuario CybroatriX. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (Parameter-Efficient Fine-Tuning) que debe cargarse sobre el modelo base thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored, una variante sin censura de Qwen2.5-Coder-7B-Instruct de Alibaba. El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con las librerías TRL y Unsloth, según las etiquetas de la model card.
+CybroatriX/shanks-v1-adapter es un adaptador LoRA publicado en Hugging Face por el usuario CybroatriX. No se trata de un modelo completo, sino de un conjunto de pesos PEFT (Parameter-Efficient Fine-Tuning) que debe cargarse sobre el modelo base thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored, una variante sin censura de Qwen2.5-Coder-7B-Instruct de Alibaba. El adaptador se ha entrenado mediante SFT (supervised fine-tuning) con las librerías TRL y Unsloth, según las etiquetas de la model card.
 
 La relevancia de esta ficha es limitada: el repositorio no incluye model card sustantiva (todo son plantillas sin rellenar), no declara licencia, no especifica idiomas, no documenta el dataset de entrenamiento ni hiperparámetros, y no reporta evaluación alguna. A fecha de creación (1 de noviembre de 2026) acumula 0 descargas y 0 likes. Cualquier evaluación rigurosa debe hacerse contra el modelo base, cuyas características (arquitectura Qwen2, 7B parámetros, contexto de 32 768 tokens en la familia Qwen2.5) sí están documentadas por el desarrollador original.
 
@@ -29,7 +29,7 @@ Por tanto, esta ficha describe lo que se puede verificar del adaptador y del mod
 
 El adaptador es un LoRA (Low-Rank Adaptation) entrenado con SFT sobre el checkpoint thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored. La arquitectura subyacente es la de Qwen2.5-Coder-7B-Instruct: un transformer decoder-only con atención por grupos (GQA), RoPE y ventana de contexto nativa de 32 768 tokens. El adaptador en sí no modifica la arquitectura, solo añade matrices de bajo rango en las capas que el autor haya configurado; el rango, alpha, dropout y módulos objetivo no están documentados.
 
-No se ha publicado información sobre el dataset de entrenamiento (composición, número de tokens, filtrado), los hiperparámetros (learning rate, batch size, épocas, precisión) ni si hubo etapas de alineación adicionales (DPO, RLHF). La model card es la plantilla por defecto de HuggingFace sin rellenar. Las etiquetas indican uso de TRL y Unsloth, lo que sugiere un entrenamiento eficiente en memoria con posible cuantización 4-bit durante el SFT, pero es una inferencia, no un dato confirmado.
+No se ha publicado información sobre el dataset de entrenamiento (composición, número de tokens, filtrado), los hiperparámetros (learning rate, batch size, épocas, precisión) ni si hubo etapas de alineación adicionales (DPO, RLHF). La model card es la plantilla por defecto de Hugging Face sin rellenar. Las etiquetas indican uso de TRL y Unsloth, lo que sugiere un entrenamiento eficiente en memoria con posible cuantización 4-bit durante el SFT, pero es una inferencia, no un dato confirmado.
 
 ## Capacidades
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CybroatriX/shanks-v1-adapter | 7B (base) + LoRA | no disponible (base: 32k) | no disponible | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7B | 32 768 | Apache 2.0 | HuggingFace, ampliamente usado |
-| thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored | 7B | no confirmado | no disponible | HuggingFace |
-| Adaptadores LoRA comunitarios sobre Qwen2.5-Coder | 7B (base) + LoRA | depende del base | variable | HuggingFace |
+| CybroatriX/shanks-v1-adapter | 7B (base) + LoRA | no disponible (base: 32k) | no disponible | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-7B-Instruct (Alibaba) | 7B | 32 768 | Apache 2.0 | Hugging Face, ampliamente usado |
+| thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored | 7B | no confirmado | no disponible | Hugging Face |
+| Adaptadores LoRA comunitarios sobre Qwen2.5-Coder | 7B (base) + LoRA | depende del base | variable | Hugging Face |
 
 El adaptador no aporta métricas propias que permitan una comparación cuantitativa; la comparación se limita a parámetros, contexto y licencia del base.
 
@@ -88,7 +88,7 @@ El adaptador no aporta métricas propias que permitan una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/CybroatriX/shanks-v1-adapter
+- Hugging Face del adaptador: https://huggingface.co/CybroatriX/shanks-v1-adapter
 - Modelo base: https://huggingface.co/thirdeyeai/Qwen2.5-Coder-7B-Instruct-Uncensored
 - Qwen2.5-Coder-7B-Instruct (original): https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - PEFT: https://github.com/huggingface/peft

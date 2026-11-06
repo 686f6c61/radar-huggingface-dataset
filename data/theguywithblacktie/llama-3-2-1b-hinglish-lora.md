@@ -1,7 +1,7 @@
 # theguywithblacktie/llama-3.2-1b-hinglish-lora
 
 ## Resumen
-El modelo `theguywithblacktie/llama-3.2-1b-hinglish-lora` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base Llama 3.2 1B de Meta. Está diseñado para mejorar el rendimiento en Hinglish, la mezcla informal de hindi e inglés muy común en la comunicación digital en la India. El autor, bajo el nombre de usuario `theguywithblacktie`, ha subido este adaptador al Hub de HuggingFace con un tamaño de repositorio de 0.1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
+El modelo `theguywithblacktie/llama-3.2-1b-hinglish-lora` es un adaptador LoRA (Low-Rank Adaptation) sobre el modelo base Llama 3.2 1B de Meta. Está diseñado para mejorar el rendimiento en Hinglish, la mezcla informal de hindi e inglés muy común en la comunicación digital en la India. El autor, bajo el nombre de usuario `theguywithblacktie`, ha subido este adaptador al Hub de Hugging Face con un tamaño de repositorio de 0.1 GB, lo que indica que solo contiene los pesos del adaptador, no el modelo completo.
 
 La relevancia de este adaptador radica en que Llama 3.2 1B es un modelo ligero de 1.23B parámetros (según la documentación de Meta), optimizado para tareas de diálogo multilingüe y agentes. Al aplicar un LoRA específico para Hinglish, se busca ajustar el modelo a este dominio sin necesidad de reentrenar todos los parámetros, reduciendo costes computacionales y de almacenamiento. Sin embargo, la información pública sobre el proceso de entrenamiento, los datos utilizados y el rendimiento es inexistente: la model card es una plantilla automática sin datos concretos. Esto hace que su utilidad práctica sea incierta hasta que el autor publique más detalles.
 
@@ -57,11 +57,11 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Para producción, es necesario probar exhaustivamente el modelo en el dominio objetivo y verificar la calidad de las respuestas en Hinglish.
 
 ## Enlaces
-- [HuggingFace - theguywithblacktie/llama-3.2-1b-hinglish-lora](https://huggingface.co/theguywithblacktie/llama-3.2-1b-hinglish-lora)
+- [Hugging Face - theguywithblacktie/llama-3.2-1b-hinglish-lora](https://huggingface.co/theguywithblacktie/llama-3.2-1b-hinglish-lora)
 - [Model card de Llama 3.2 1B (Meta)](https://huggingface.co/meta-llama/Llama-3.2-1B)
 - [Documentación de Llama 3.2 de Meta](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)
 - [Repositorio de modelos Llama 3.2 en GitHub](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)</think>## Resumen
-El modelo `theguywithblacktie/llama-3.2-1b-hinglish-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base Llama 3.2 1B de Meta al Hinglish, la mezcla de hindi e inglés utilizada en entornos digitales de la India. El autor, bajo el usuario `theguywithblacktie`, ha publicado este adaptador en HuggingFace, pero la información proporcionada es extremadamente escasa: la model card es una plantilla generada automáticamente sin ningún dato concreto sobre entrenamiento, datos, evaluación o licencia. El repositorio tiene un tamaño de 0.1 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo base.
+El modelo `theguywithblacktie/llama-3.2-1b-hinglish-lora` es un adaptador LoRA (Low-Rank Adaptation) diseñado para ajustar el modelo base Llama 3.2 1B de Meta al Hinglish, la mezcla de hindi e inglés utilizada en entornos digitales de la India. El autor, bajo el usuario `theguywithblacktie`, ha publicado este adaptador en Hugging Face, pero la información proporcionada es extremadamente escasa: la model card es una plantilla generada automáticamente sin ningún dato concreto sobre entrenamiento, datos, evaluación o licencia. El repositorio tiene un tamaño de 0.1 GB, lo que indica que solo contiene los pesos del adaptador y no el modelo base.
 
 La relevancia de este modelo reside en la posibilidad de adaptar un modelo ligero y eficiente (Llama 3.2 1B, con 1.23B parámetros) a un idioma de alta demanda como el Hinglish, sin necesidad de reentrenar todos los pesos. Sin embargo, la falta de documentación hace que su utilidad práctica sea incierta. No se dispone de información sobre el proceso de entrenamiento, los datos utilizados, ni los resultados de evaluación, por lo que cualquier uso en producción requeriría una validación exhaustiva previa.
 
@@ -116,7 +116,7 @@ No se dispone de información para comparar este adaptador con otros modelos o a
 - Para cualquier aplicación real, se recomienda probar el adaptador en un conjunto de validación propio y comparar con el modelo base sin adaptar.
 
 ## Enlaces
-- [HuggingFace - theguywithblacktie/llama-3.2-1b-hinglish-lora](https://huggingface.co/theguywithblacktie/llama-3.2-1b-hinglish-lora)
+- [Hugging Face - theguywithblacktie/llama-3.2-1b-hinglish-lora](https://huggingface.co/theguywithblacktie/llama-3.2-1b-hinglish-lora)
 - [Model card de Llama 3.2 1B de Meta](https://huggingface.co/meta-llama/Llama-3.2-1B)
 - [Documentación de Llama 3.2 de Meta](https://developer.meta.com/ai/docs/model-cards-and-prompt-formats/llama3_2/)
 - [Model card de Llama 3.2 en GitHub](https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/MODEL_CARD.md)

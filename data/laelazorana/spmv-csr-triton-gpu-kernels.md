@@ -81,4 +81,4 @@ No se han encontrado comparativas externas publicadas en la información disponi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LaelaZorana/spmv-csr-triton-gpu-kernels
+- Hugging Face: https://huggingface.co/LaelaZorana/spmv-csr-triton-gpu-kernels

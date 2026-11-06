@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `raw_GPT2_1_epoch` es un modelo de lenguaje publicado en HuggingFace por el usuario VladKh03 bajo licencia MIT. El nombre sugiere que se trata de una implementación basada en la arquitectura GPT-2, entrenada durante una única época. Sin embargo, la información disponible es mínima: la model card no contiene descripción técnica, especificaciones, datos de entrenamiento ni benchmarks. El repositorio tiene un tamaño de 1.5 GB, lo que indica que contiene pesos de modelo, pero no se especifica el formato ni la cuantización. Este modelo podría estar relacionado con el framework Raw-Gpt de GitHub, un proyecto de código abierto para entrenar modelos GPT con PyTorch, aunque no hay confirmación oficial. Su relevancia actual es limitada, ya que carece de documentación y resultados publicados.
+El modelo `raw_GPT2_1_epoch` es un modelo de lenguaje publicado en Hugging Face por el usuario VladKh03 bajo licencia MIT. El nombre sugiere que se trata de una implementación basada en la arquitectura GPT-2, entrenada durante una única época. Sin embargo, la información disponible es mínima: la model card no contiene descripción técnica, especificaciones, datos de entrenamiento ni benchmarks. El repositorio tiene un tamaño de 1.5 GB, lo que indica que contiene pesos de modelo, pero no se especifica el formato ni la cuantización. Este modelo podría estar relacionado con el framework Raw-Gpt de GitHub, un proyecto de código abierto para entrenar modelos GPT con PyTorch, aunque no hay confirmación oficial. Su relevancia actual es limitada, ya que carece de documentación y resultados publicados.
 
 ## Especificaciones técnicas
 
@@ -19,7 +19,7 @@ El modelo `raw_GPT2_1_epoch` es un modelo de lenguaje publicado en HuggingFace p
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura, los datos de entrenamiento o el proceso de entrenamiento. El nombre `raw_GPT2_1_epoch` indica que podría tratarse de una variante de GPT-2 entrenada durante una única época, pero no hay confirmación técnica. El repositorio HuggingFace no incluye detalles sobre el número de capas, cabezas de atención, tamaño del modelo, tokens de entrenamiento ni técnicas de optimización o alineación. Asimismo, no se ha documentado el uso de RLHF, DPO u otras técnicas de ajuste. La relación con el framework Raw-Gpt (GitHub) es especulativa y no está verificada.
+No se ha publicado información sobre la arquitectura, los datos de entrenamiento o el proceso de entrenamiento. El nombre `raw_GPT2_1_epoch` indica que podría tratarse de una variante de GPT-2 entrenada durante una única época, pero no hay confirmación técnica. El repositorio Hugging Face no incluye detalles sobre el número de capas, cabezas de atención, tamaño del modelo, tokens de entrenamiento ni técnicas de optimización o alineación. Asimismo, no se ha documentado el uso de RLHF, DPO u otras técnicas de ajuste. La relación con el framework Raw-Gpt (GitHub) es especulativa y no está verificada.
 
 ## Capacidades
 
@@ -65,5 +65,5 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/VladKh03/raw_GPT2_1_epoch
+- Hugging Face: https://huggingface.co/VladKh03/raw_GPT2_1_epoch
 - GitHub Raw-Gpt (posible relación no confirmada): https://github.com/Neo-Mods1/Raw-Gpt

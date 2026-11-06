@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Witurner93/hw2-retrieval es un repositorio de HuggingFace que contiene una implementacion propia y minima de una arquitectura BeiT (Bert-like Image Transformer) orientada a tareas de retrieval (recuperacion, presumiblemente imagen-texto). El autor es el usuario Witurner93 y el repositorio se publica bajo licencia Apache 2.0. El propio model card es explicito: no se trata de un modelo entrenado ni de un release de benchmark, sino de un punto de partida reproducible que incluye el codigo del modelo, un fichero de configuracion, una receta de entrenamiento por defecto y un checkpoint de inicializacion valido para smoke tests.
+Witurner93/hw2-retrieval es un repositorio de Hugging Face que contiene una implementacion propia y minima de una arquitectura BeiT (Bert-like Image Transformer) orientada a tareas de retrieval (recuperacion, presumiblemente imagen-texto). El autor es el usuario Witurner93 y el repositorio se publica bajo licencia Apache 2.0. El propio model card es explicito: no se trata de un modelo entrenado ni de un release de benchmark, sino de un punto de partida reproducible que incluye el codigo del modelo, un fichero de configuracion, una receta de entrenamiento por defecto y un checkpoint de inicializacion valido para smoke tests.
 
 La relevancia de este repositorio es por tanto metodologica, no de rendimiento: sirve como esqueleto para experimentar con retrieval multimodal, con una configuracion declarada de atencion de ventana deslizante (sliding window), fusion tipo concat mlp, activacion ReLU y normalizacion RMSNorm. La escala declarada en la configuracion es "giant", pero el numero real de parametros del checkpoint publicado, segun los metadatos de safetensors, es de 16.576 (con repo de 0,0 GB), lo que confirma que se trata de un checkpoint de inicializacion de juguete y no de un modelo de escala giant entrenado.
 
-En el momento de la consulta acumula 16 descargas y 0 likes, con fechas de creacion y actualizacion del 13 de octubre de 2026. No hay resultados de benchmarks, no se declaran idiomas soportados y no se especifica un pipeline de HuggingFace. Para cualquier evaluacion seria, el autor recomienda usar Flickr30k, reportar la metrica de la tarea sobre al menos tres semillas y comparar contra un baseline de capacidad equiparable.
+En el momento de la consulta acumula 16 descargas y 0 likes, con fechas de creacion y actualizacion del 13 de octubre de 2026. No hay resultados de benchmarks, no se declaran idiomas soportados y no se especifica un pipeline de Hugging Face. Para cualquier evaluacion seria, el autor recomienda usar Flickr30k, reportar la metrica de la tarea sobre al menos tres semillas y comparar contra un baseline de capacidad equiparable.
 
 ## Especificaciones tecnicas
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparables para establecer una jerarquia 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Witurner93/hw2-retrieval
+- Hugging Face: https://huggingface.co/Witurner93/hw2-retrieval
 - Repositorio equivalente de otro autor (Coca for Retrieval): https://huggingface.co/Fionareyes/hw2-retrieval
 - Repositorio GitHub relacionado con la tarea: https://github.com/zhenwu0831/anlp-spring2026-hw2
 - Paper de referencia sobre retrieval de LoRA: https://arxiv.org/abs/2402.09997

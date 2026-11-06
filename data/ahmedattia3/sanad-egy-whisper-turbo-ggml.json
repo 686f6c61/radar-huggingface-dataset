@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "AhmedAttia3/sanad-egy-whisper-turbo-ggml",
+  "slug": "ahmedattia3-sanad-egy-whisper-turbo-ggml",
+  "author": "AhmedAttia3",
+  "url": "https://huggingface.co/AhmedAttia3/sanad-egy-whisper-turbo-ggml",
+  "created_at": "2026-11-05T01:50:01.000Z",
+  "updated_at": "2026-11-05T07:19:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "whisper.cpp",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "whisper",
+    "ggml",
+    "arabic",
+    "egyptian-arabic",
+    "speech-recognition",
+    "ar",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3072824873,
+  "storage_human": "3.1 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AhmedAttia3/sanad-egy-whisper-turbo-ggml · Hugging Face",
+      "url": "https://huggingface.co/AhmedAttia3/sanad-egy-whisper-turbo-ggml",
+      "snippet": "AhmedAttia3 / sanad-egy-whisper-turbo-ggml Like 0 Arabic English whisper.cpp whisper ggml arabic egyptian-arabic speech-recognition License:mit Model card FilesFiles and versions xet Community Copy to bucket Sanad Egyptian Whisper Turbo — ggml (whisper.cpp) Usage Training data and limitations License"
+    },
+    {
+      "title": "AhmedAttia3 (Attia) - Hugging Face",
+      "url": "https://huggingface.co/AhmedAttia3",
+      "snippet": "AhmedAttia3/sanad-egy-whisper-turbo-int8 Automatic Speech Recognition •Updated about 8 hours ago"
+    }
+  ]
+}

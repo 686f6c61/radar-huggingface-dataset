@@ -69,6 +69,6 @@ No se dispone de información sobre otros drafters de la familia DSpark con los 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/xf15/ssd-dspark-prog-qwen3-4b
+- Repositorio Hugging Face: https://huggingface.co/xf15/ssd-dspark-prog-qwen3-4b
 - Modelo objetivo Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento (referenciado en la model card): `xf15/ssd-perfectblend-qwen3-4b-regen` (no se proporciona URL directa)

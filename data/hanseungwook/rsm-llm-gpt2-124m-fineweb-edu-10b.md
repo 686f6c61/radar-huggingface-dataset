@@ -64,15 +64,15 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K) en l
 - VRAM estimada para inferencia en float32: aproximadamente 0,5 GB para los pesos (124M parámetros × 4 bytes) más activaciones y caché de atención; en la práctica cabe holgadamente en cualquier GPU con 2 GB o más.
 - GPU recomendadas: cualquier GPU consumer moderna (RTX 3060, RTX 4090) o profesional (A100, H100); el modelo no requiere memoria ni cómputo significativos.
 - Cabe en GPU consumer: sí, en todas las GPU consumer con al menos 2 GB de VRAM; también puede ejecutarse en CPU.
-- Opciones de despliegue: no es compatible con vLLM, TGI, llama.cpp ni Ollama de forma nativa, ya que la clase `SLM` está en `slm_model.py` y solo depende de `torch`. La carga se realiza con `safetensors.torch.load_model` y `HuggingFace Hub` para descargar los ficheros.
+- Opciones de despliegue: no es compatible con vLLM, TGI, llama.cpp ni Ollama de forma nativa, ya que la clase `SLM` está en `slm_model.py` y solo depende de `torch`. La carga se realiza con `safetensors.torch.load_model` y `Hugging Face Hub` para descargar los ficheros.
 - Latencia y throughput: no disponibles en la información proporcionada. La decodificación de ejemplo no usa KV cache, por lo que la generación es O(n²) en longitud y considerablemente más lenta que una implementación con caché.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `rsm-llm-gpt2-124m-fineweb-edu-10b` (este) | 124M | 1024 | NTP + cabezas RSM/MTP/seq | MIT | HuggingFace, requiere `slm_model.py` |
-| GPT-2 small (OpenAI) | 124M | 1024 | NTP | MIT | HuggingFace, `transformers` nativo |
+| `rsm-llm-gpt2-124m-fineweb-edu-10b` (este) | 124M | 1024 | NTP + cabezas RSM/MTP/seq | MIT | Hugging Face, requiere `slm_model.py` |
+| GPT-2 small (OpenAI) | 124M | 1024 | NTP | MIT | Hugging Face, `transformers` nativo |
 | GPT-2 small entrenado en FineWeb-Edu | 124M | 1024 | NTP | variable según checkpoint | múltiples checkpoints comunitarios |
 | Modelos multi-token tipo DeepSeek-V3 (referencia arquitectónica) | >600B (MoE) | >100k | MTP encadenado | licencia propia | no comparable en escala |
 
@@ -92,7 +92,7 @@ La comparación directa con GPT-2 small es la más informativa: misma arquitectu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanseungwook/rsm-llm-gpt2-124m-fineweb-edu-10b
+- Modelo en Hugging Face: https://huggingface.co/hanseungwook/rsm-llm-gpt2-124m-fineweb-edu-10b
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Repositorio de lm-eval-harness (evaluación): https://github.com/EleutherAI/lm-evaluation-harness
 - Referencia arquitectónica DeepSeek-V3 (módulo multi-token encadenado): https://github.com/deepseek-ai/DeepSeek-V3

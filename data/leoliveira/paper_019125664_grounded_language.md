@@ -61,7 +61,7 @@ No disponible. No existe un modelo comparable porque este repositorio no es un m
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/leoliveira/paper_019125664_grounded_language
+- Repositorio de Hugging Face: https://huggingface.co/leoliveira/paper_019125664_grounded_language
 - Paper relacionado "Grounded Iterative Language Planning" (arXiv 2606.27806): https://arxiv.org/abs/2606.27806
 - Paper relacionado "Grounded Decoding" (arXiv 2303.00855): https://arxiv.org/abs/2303.00855
 - Artículo sobre LLMs y Grounded Theorizing en ResearchGate: https://www.researchgate.net/publication/385344246_Exploring_the_Potential_of_Large_Language_Models_LLMs_for_Grounded_Theorizing_A_Human-in-the-Loop_Configuration

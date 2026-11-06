@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio MLX en HuggingFace: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Small-33M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Small-33M-v1-mlx)
+- Repositorio MLX en Hugging Face: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Small-33M-v1-mlx](https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Small-33M-v1-mlx)
 - Checkpoint original: [https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Small-33M-v1](https://huggingface.co/OpenMed/OpenMed-PII-Italian-ClinicalE5-Small-33M-v1)
 - Repositorio GitHub de OpenMed: [https://github.com/maziyarpanahi/openmed](https://github.com/maziyarpanahi/openmed)
 - Documentación del backend MLX: [https://openmed.life/docs/mlx-backend/](https://openmed.life/docs/mlx-backend/)

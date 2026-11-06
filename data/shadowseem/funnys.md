@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `shadowseem/funnys` es un repositorio publicado en HuggingFace por el usuario `shadowseem` bajo la licencia OpenRAIL. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. Tampoco se han publicado resultados de benchmarks ni información sobre capacidades. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que se trata de un repositorio recién creado o sin contenido sustancial. No se dispone de información adicional más allá de los metadatos básicos del repositorio.
+El modelo `shadowseem/funnys` es un repositorio publicado en Hugging Face por el usuario `shadowseem` bajo la licencia OpenRAIL. La model card asociada no contiene ninguna descripción técnica, arquitectura, parámetros, datos de entrenamiento ni ejemplos de uso. Tampoco se han publicado resultados de benchmarks ni información sobre capacidades. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que sugiere que se trata de un repositorio recién creado o sin contenido sustancial. No se dispone de información adicional más allá de los metadatos básicos del repositorio.
 
 Dado que no existe información pública sobre el modelo, no es posible determinar su naturaleza, finalidad o rendimiento. Cualquier uso o evaluación requeriría acceder directamente al repositorio y examinar los archivos que contiene, si es que existen.
 
@@ -52,4 +52,4 @@ No disponible. Al no existir información sobre la arquitectura, el tamaño o el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shadowseem/funnys
+- Repositorio en Hugging Face: https://huggingface.co/shadowseem/funnys

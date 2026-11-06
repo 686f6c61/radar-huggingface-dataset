@@ -86,12 +86,12 @@ Los dos modelos comparados pertenecen al mismo autor y estan pensados como famil
 - Longitud de contexto no disponible, lo que impide planificar con precision el troceado de documentos largos.
 - Licencia BSD-3-Clause permisiva, que permite uso comercial y modificacion siempre que se conserven el aviso de copyright y la clausula de exencion de responsabilidad; no se han declarado restricciones adicionales.
 - Adopcion practica muy baja: 0 descargas y 0 likes en el momento de la consulta, sin validacion independiente de terceros.
-- Las fechas de creacion y actualizacion del repositorio son posteriores a la fecha habitual de consulta, lo que conviene verificar directamente en HuggingFace.
+- Las fechas de creacion y actualizacion del repositorio son posteriores a la fecha habitual de consulta, lo que conviene verificar directamente en Hugging Face.
 - El modelo se distribuye como ONNX int8, por lo que no existen pesos en precision completa ni versiones GGUF/safetensors publicadas en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Interscript/ara-diac-news-1.0
+- Hugging Face: https://huggingface.co/Interscript/ara-diac-news-1.0
 - Canal espejo (GitHub Releases): interscript/interscript-models
 - Dataset de etiquetas QCRI-silver de dominio periodistico publicado con EMNLP 2025: referencia mencionada en la model card, enlace no disponible
 - Documento RESULTS.md con la curva dosis-respuesta y el oraculo en espacio de salida: mencionado en la model card, enlace no disponible

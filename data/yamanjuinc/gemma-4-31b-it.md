@@ -49,7 +49,7 @@ No se dispone de informacion detallada sobre el entrenamiento especifico de este
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye metricas de evaluacion, y la documentacion oficial de Gemma 4 menciona mejoras en codigo y razonamiento, pero no proporciona numeros concretos para esta variante especifica. Se recomienda consultar el paper tecnico (arXiv:2607.02770) cuando este disponible publicamente.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye metricas de evaluacion, y la documentacion oficial de Gemma 4 menciona mejoras en codigo y razonamiento, pero no proporciona numeros concretos para esta variante especifica. Se recomienda consultar el paper tecnico (arXiv:2607.02770) cuando este disponible publicamente.
 
 ## Requisitos de hardware
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Modalidades | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 31B (este modelo) | 31.3B | 256K | Texto, imagen | Apache 2.0 | HuggingFace |
-| Llama 3.1 30B (Meta) | 30.5B | 128K | Texto | Llama 3.1 Community License | HuggingFace |
-| Qwen 2.5 32B (Alibaba) | 32.5B | 128K | Texto | Apache 2.0 | HuggingFace |
-| Mistral Large 2 (Mistral AI) | 123B | 128K | Texto | Mistral Research License | HuggingFace |
+| Gemma 4 31B (este modelo) | 31.3B | 256K | Texto, imagen | Apache 2.0 | Hugging Face |
+| Llama 3.1 30B (Meta) | 30.5B | 128K | Texto | Llama 3.1 Community License | Hugging Face |
+| Qwen 2.5 32B (Alibaba) | 32.5B | 128K | Texto | Apache 2.0 | Hugging Face |
+| Mistral Large 2 (Mistral AI) | 123B | 128K | Texto | Mistral Research License | Hugging Face |
 
 Nota: no se dispone de comparativas de rendimiento por falta de benchmarks publicados. La principal diferencia de Gemma 4 es su soporte multimodal (imagen) y su contexto de 256K, superior a los 128K de las alternativas. La licencia Apache 2.0 de Gemma 4 es mas permisiva que la de Llama 3.1, que impone restricciones para usuarios con mas de 700 millones de usuarios mensuales.
 
@@ -82,7 +82,7 @@ Nota: no se dispone de comparativas de rendimiento por falta de benchmarks publi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yamanjuinc/gemma-4-31B-it
+- Repositorio Hugging Face: https://huggingface.co/Yamanjuinc/gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B
 - Paper tecnico: https://arxiv.org/abs/2607.02770
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

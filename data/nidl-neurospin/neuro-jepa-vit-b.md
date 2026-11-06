@@ -93,7 +93,7 @@ No se dispone en la informacion proporcionada de datos verificables sobre modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nidl-neurospin/neuro-jepa-vit-b
+- Modelo en Hugging Face: https://huggingface.co/nidl-neurospin/neuro-jepa-vit-b
 - Pesos originales (gated): https://huggingface.co/NYUMedML/Neuro-JEPA
 - Paper: https://arxiv.org/abs/2606.14957
 - Codigo original: https://github.com/NYUMedML/Neuro-JEPA

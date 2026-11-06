@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Werea-TSS-1.7B (este) | 1.7B | no disponible | Turco | Apache-2.0 | HuggingFace |
-| Qwen3-TTS-12Hz-1.7B-Base | 1.7B | no disponible | 10 idiomas (no turco) | Apache-2.0 | HuggingFace |
-| Werea-TSS (183M) | 183M | no disponible | Turco | Apache-2.0 | HuggingFace |
+| Werea-TSS-1.7B (este) | 1.7B | no disponible | Turco | Apache-2.0 | Hugging Face |
+| Qwen3-TTS-12Hz-1.7B-Base | 1.7B | no disponible | 10 idiomas (no turco) | Apache-2.0 | Hugging Face |
+| Werea-TSS (183M) | 183M | no disponible | Turco | Apache-2.0 | Hugging Face |
 
 El modelo base Qwen3-TTS-12Hz-1.7B-Base es el punto de partida; este fine-tune añade el turco, pero pierde la cobertura de los otros nueve idiomas. El Werea-TSS de 183M es una versión mucho más pequeña y probablemente menos capaz, pero con la misma voz sintética. No se dispone de comparaciones con otros TTS comerciales o de código abierto específicos para turco en la información proporcionada.
 
@@ -76,7 +76,7 @@ El modelo base Qwen3-TTS-12Hz-1.7B-Base es el punto de partida; este fine-tune a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GoktugD/Werea-TSS-1.7B
+- Modelo en Hugging Face: https://huggingface.co/GoktugD/Werea-TSS-1.7B
 - Repositorio espejo oficial (Werea-co): https://huggingface.co/Werea-co/Werea-TSS-1.7B
 - Dataset sintético: https://huggingface.co/datasets/Werea-co/werea-tts-tr-synthetic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base

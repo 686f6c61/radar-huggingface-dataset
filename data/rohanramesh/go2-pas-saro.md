@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RohanRamesh/go2-pas-saro` es un repositorio publicado en HuggingFace por el usuario RohanRamesh, con fecha de creación en agosto de 2026 y actualización en septiembre de 2026. El repositorio tiene un tamaño de 5,5 GB, lo que sugiere que contiene pesos de un modelo de tamaño medio, pero no se dispone de información pública sobre su arquitectura, número de parámetros, licencia o idiomas soportados. El tag `region:us` indica una orientación geográfica, aunque no se especifica su significado técnico.
+El modelo `RohanRamesh/go2-pas-saro` es un repositorio publicado en Hugging Face por el usuario RohanRamesh, con fecha de creación en agosto de 2026 y actualización en septiembre de 2026. El repositorio tiene un tamaño de 5,5 GB, lo que sugiere que contiene pesos de un modelo de tamaño medio, pero no se dispone de información pública sobre su arquitectura, número de parámetros, licencia o idiomas soportados. El tag `region:us` indica una orientación geográfica, aunque no se especifica su significado técnico.
 
 El modelo cuenta actualmente con 0 descargas y 1 like, lo que refleja que es un lanzamiento reciente o poco difundido. No se ha publicado documentación adicional, paper técnico ni ejemplos de uso en la página del repositorio. Dada la ausencia de metadatos esenciales, esta ficha se limita a recoger los datos disponibles y a señalar explícitamente la falta de información técnica.
 
@@ -53,6 +53,6 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RohanRamesh/go2-pas-saro
+- Repositorio Hugging Face: https://huggingface.co/RohanRamesh/go2-pas-saro
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código, demos) en la información proporcionada.

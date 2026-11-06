@@ -66,5 +66,5 @@ No disponible. No se dispone de información sobre modelos comparables ni de dat
 
 ## Enlaces
 
-- HuggingFace: <https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-mutable-default-args-seed0>
+- Hugging Face: <https://huggingface.co/sanapandey/qwen2p5-0p5b-lora-variant-mutable-default-args-seed0>
 - En la búsqueda web no se encontraron otros enlaces relevantes.

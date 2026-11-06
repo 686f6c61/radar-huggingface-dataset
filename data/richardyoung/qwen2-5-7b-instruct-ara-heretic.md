@@ -79,9 +79,9 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Rechazos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-7B-Instruct-ARA-heretic (este) | 7,61B | 131.072 (32.768 por defecto, YaRN) | 8/100 | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-7B-Instruct | 7,61B | 131.072 (32.768 por defecto, YaRN) | 99/100 | Apache 2.0 | HuggingFace |
-| Otras variantes abliterated de Qwen2.5-7B | ~7,61B | Variable | No disponible | Variable (generalmente Apache 2.0) | HuggingFace |
+| Qwen2.5-7B-Instruct-ARA-heretic (este) | 7,61B | 131.072 (32.768 por defecto, YaRN) | 8/100 | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-7B-Instruct | 7,61B | 131.072 (32.768 por defecto, YaRN) | 99/100 | Apache 2.0 | Hugging Face |
+| Otras variantes abliterated de Qwen2.5-7B | ~7,61B | Variable | No disponible | Variable (generalmente Apache 2.0) | Hugging Face |
 
 La comparativa directa mas relevante es con el modelo base, ya que comparten arquitectura, parametros y licencia; la unica diferencia medible reportada es la tasa de rechazo y la divergencia KL. No se dispone de datos de benchmarks estandar para esta variante que permitan comparar rendimiento en tareas concretas frente a otras alternativas.
 
@@ -98,7 +98,7 @@ La comparativa directa mas relevante es con el modelo base, ya que comparten arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/Qwen2.5-7B-Instruct-ARA-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct/blob/main/LICENSE
 - Heretic (proyecto): https://heretic-project.org

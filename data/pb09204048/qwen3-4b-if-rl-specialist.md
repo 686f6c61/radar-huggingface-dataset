@@ -91,10 +91,10 @@ Protocolo: en matemáticas y código se muestrearon cuatro respuestas por prompt
 
 | Modelo | Parametros | Contexto | AIME24 pass@1 | IFEval | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3-4B-IF-RL-Specialist | ~4,4 B | No disponible | 18,33 | 84,47 | Apache 2.0 | HuggingFace |
-| Qwen3-4B (base) | ~4,4 B | No disponible en la información | 22,50 | 81,33 | Apache 2.0 | HuggingFace |
-| Especialista Math (mismo autor, step 500) | ~4,4 B | No disponible | 50,00 | 80,04 | Apache 2.0 | HuggingFace |
-| Especialista Code (mismo autor, step 299) | ~4,4 B | No disponible | 25,83 | 81,70 | Apache 2.0 | HuggingFace |
+| Qwen3-4B-IF-RL-Specialist | ~4,4 B | No disponible | 18,33 | 84,47 | Apache 2.0 | Hugging Face |
+| Qwen3-4B (base) | ~4,4 B | No disponible en la información | 22,50 | 81,33 | Apache 2.0 | Hugging Face |
+| Especialista Math (mismo autor, step 500) | ~4,4 B | No disponible | 50,00 | 80,04 | Apache 2.0 | Hugging Face |
+| Especialista Code (mismo autor, step 299) | ~4,4 B | No disponible | 25,83 | 81,70 | Apache 2.0 | Hugging Face |
 
 Los tres especialistas comparten modelo base, licencia y arquitectura, y solo difieren en el dominio de RL y en el número de actualizaciones del optimizador. El especialista IF es el único que mejora claramente IFBench y el que más sacrifica AIME24. No se dispone de comparaciones con otros modelos de instrucciones de tamaño similar.
 
@@ -114,7 +114,7 @@ Los tres especialistas comparten modelo base, licencia y arquitectura, y solo di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pb09204048/Qwen3-4B-IF-RL-Specialist
+- Modelo en Hugging Face: https://huggingface.co/pb09204048/Qwen3-4B-IF-RL-Specialist
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento IF-RL: https://huggingface.co/datasets/nvidia/Nemotron-Cascade-2-RL-data
 - Dataset de matemáticas (referenciado en la ficha): https://huggingface.co/datasets/zhuzilin/dapo-math-17k

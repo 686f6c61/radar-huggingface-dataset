@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario huggnico en HuggingFace. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, orientado a la transcripcion de audio con acento espanol. El modelo parte de los pesos originales de Whisper tiny (37,7 millones de parametros) y se reentrena sobre el dataset denominado Spanish_english.
+Whisper tiny Spanish es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario huggnico en Hugging Face. Se trata de un modelo de reconocimiento automatico del habla (ASR) basado en la arquitectura encoder-decoder transformer de Whisper, orientado a la transcripcion de audio con acento espanol. El modelo parte de los pesos originales de Whisper tiny (37,7 millones de parametros) y se reentrena sobre el dataset denominado Spanish_english.
 
 La relevancia de este modelo radica en su especializacion: frente al Whisper tiny generico, este ajuste busca mejorar la transcripcion de audio en espanol con acentos concretos, un escenario donde los modelos multilingues pequenos suelen degradarse. Al mantener el tamano reducido del modelo base, es apto para despliegues con recursos limitados, como CPUs o GPUs de gama baja, y para tareas de transcripcion en tiempo real o en dispositivos edge.
 
@@ -25,7 +25,7 @@ No obstante, se trata de un modelo experimental con escasa documentacion: la mod
 
 El modelo hereda la arquitectura de Whisper tiny: un transformer encoder-decoder con mecanismo de atencion estandar, disenado para tomar espectrogramas mel como entrada y generar tokens de texto. Whisper tiny es la variante mas pequena de la familia Whisper de OpenAI, con aproximadamente 39 millones de parametros en su configuracion original y una ventana de audio de 30 segundos por inferencia.
 
-El ajuste fino se realizo con el Trainer de HuggingFace sobre el dataset Spanish_english. Los hiperparametros documentados son: learning rate de 1e-5, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. El registro muestra dos puntos de evaluacion: en el paso 1000 (epoca 0,97) la perdida de validacion fue 0,2650 con WER de 14,03, y en el paso 2000 (epoca 1,95) la perdida bajo a 0,2462 con WER de 12,31. No se documenta el volumen de datos, la composicion del dataset ni si se aplicaron tecnicas de aumento de datos o regularizacion adicional.
+El ajuste fino se realizo con el Trainer de Hugging Face sobre el dataset Spanish_english. Los hiperparametros documentados son: learning rate de 1e-5, batch de entrenamiento de 2, batch de evaluacion de 1, semilla 42, optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-8, scheduler lineal con 500 pasos de warmup y un total de 2000 pasos de entrenamiento. El registro muestra dos puntos de evaluacion: en el paso 1000 (epoca 0,97) la perdida de validacion fue 0,2650 con WER de 14,03, y en el paso 2000 (epoca 1,95) la perdida bajo a 0,2462 con WER de 12,31. No se documenta el volumen de datos, la composicion del dataset ni si se aplicaron tecnicas de aumento de datos o regularizacion adicional.
 
 ## Capacidades
 
@@ -74,10 +74,10 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Parametros | Contexto de audio | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Whisper tiny Spanish (huggnico) | 37,7 M | 30 s por ventana | apache-2.0 | HuggingFace |
-| openai/whisper-tiny | ~39 M | 30 s por ventana | apache-2.0 | HuggingFace |
-| openai/whisper-base | ~74 M | 30 s por ventana | apache-2.0 | HuggingFace |
-| openai/whisper-small | ~244 M | 30 s por ventana | apache-2.0 | HuggingFace |
+| Whisper tiny Spanish (huggnico) | 37,7 M | 30 s por ventana | apache-2.0 | Hugging Face |
+| openai/whisper-tiny | ~39 M | 30 s por ventana | apache-2.0 | Hugging Face |
+| openai/whisper-base | ~74 M | 30 s por ventana | apache-2.0 | Hugging Face |
+| openai/whisper-small | ~244 M | 30 s por ventana | apache-2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos entre estos modelos en la informacion proporcionada; el unico dato disponible es el WER de 12,31 declarado por el autor sobre el dataset Spanish_english, sin comparacion con las variantes originales de Whisper.
 
@@ -95,7 +95,7 @@ No se dispone de datos de rendimiento comparativos entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/huggnico/whisper-tiny_to_spanish_accent_09oct
+- Modelo en Hugging Face: https://huggingface.co/huggnico/whisper-tiny_to_spanish_accent_09oct
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper de OpenAI: https://github.com/openai/whisper
 - Paper de Whisper (Radford et al., 2022): https://arxiv.org/abs/2212.04356

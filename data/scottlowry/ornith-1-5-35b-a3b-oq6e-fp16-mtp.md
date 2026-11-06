@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa completa con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ6e-fp16-mtp
+- Repositorio Hugging Face: https://huggingface.co/scottlowry/Ornith-1.5-35B-A3B-oQ6e-fp16-mtp
 - Modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B
 - Pagina de Ornith AI sobre Ornith-1.5: https://ornith.ai/ornith_1_5.html
 - Guia de Ornith AI (modelos, VRAM, benchmarks): https://ornith.online/

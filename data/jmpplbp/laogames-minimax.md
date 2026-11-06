@@ -49,7 +49,7 @@ Los siguientes escenarios asumen que los activos corresponden al modelo generati
 - Replicacion de flujos de trabajo LaoGames en ComfyUI: el repositorio funciona como dependencia fija que permite reconstruir un entorno de generacion con las mismas revisiones de pesos que emplea el autor, evitando derivas por actualizaciones de los repositorios de origen.
 - Despliegue reproducible en produccion: al fijar commits concretos y checksums en `MODEL_SOURCES.json`, el repositorio permite anclar la version de los activos en una imagen de contenedor o en un pipeline de CI/CD y detectar sustituciones accidentales de ficheros.
 - Reduccion del coste de inferencia mediante LoRA Turbo: si el LoRA `MiniMax-H3-Turbo-Lora` cumple la funcion que su nombre sugiere, su aplicacion permitiria disminuir el numero de pasos de muestreo y, con ello, el tiempo por generacion, a costa de un posible cambio en la calidad del resultado.
-- Entornos de generacion local sin acceso a los repositorios originales: al empaquetar todos los ficheros en un unico repositorio de 75,7 GB, se facilita la descarga y el despliegue en maquinas aisladas o con conectividad restringida a HuggingFace.
+- Entornos de generacion local sin acceso a los repositorios originales: al empaquetar todos los ficheros en un unico repositorio de 75,7 GB, se facilita la descarga y el despliegue en maquinas aisladas o con conectividad restringida a Hugging Face.
 - Evaluacion comparativa de revisiones: al disponer de las revisiones exactas, un equipo puede comparar el comportamiento de los activos aqui fijados frente a versiones posteriores de `Comfy-Org/MiniMax-H3` en un mismo conjunto de prompts y semillas.
 - Base para ajuste posterior o integracion de LoRA propios: los pesos base servidos en este repositorio pueden emplearse como punto de partida para entrenar LoRA adicionales dentro del ecosistema ComfyUI, siempre que la licencia original lo permita.
 
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no identifica la categoria del model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jmpplbp/laogames-minimax
+- Repositorio en Hugging Face: https://huggingface.co/jmpplbp/laogames-minimax
 - Activos base en Comfy-Org (revision fijada): https://huggingface.co/Comfy-Org/MiniMax-H3/tree/7e75982b97cd5a41d2dcfa1904ee88d0686d6fd1
 - LoRA Turbo en larryvrh (revision fijada): https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora/tree/43a74557ac3f6539db8e0f2a959d03feb7a81480
 - Paper, blog o demo oficial: no disponible en la informacion proporcionada.

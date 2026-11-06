@@ -2,11 +2,11 @@
 
 ## Resumen
 
-VALOR0316/ScoreVision es un repositorio publicado en HuggingFace por el usuario VALOR0316 bajo el identificador `VALOR0316/ScoreVision`. La unica informacion tecnica verificable que acompana al repositorio son sus etiquetas (`onnx` y `region:us`), 168 descargas acumuladas y 0 likes. No se ha publicado model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
+VALOR0316/ScoreVision es un repositorio publicado en Hugging Face por el usuario VALOR0316 bajo el identificador `VALOR0316/ScoreVision`. La unica informacion tecnica verificable que acompana al repositorio son sus etiquetas (`onnx` y `region:us`), 168 descargas acumuladas y 0 likes. No se ha publicado model card, pipeline declarado, licencia, idiomas soportados ni resultados de evaluacion.
 
 El dato mas relevante para un evaluador es que el tamano del repositorio figura como 0.0 GB. Esto indica que, en el momento de la consulta, no hay pesos, tokenizador, configuracion ni documentacion accesibles desde el repositorio, por lo que el modelo no es desplegable tal cual. El intervalo entre la creacion (2026-10-16T02:52:23Z) y la ultima actualizacion (2026-10-16T02:52:27Z) es de cuatro segundos, un patron tipico de subida automatizada o de repositorio creado y abandonado en el mismo acto.
 
-Por tanto, esta ficha no puede certificar que exista un modelo funcional detras del identificador. Su utilidad es la de un registro de estado: documenta que el artefacto existe en el indice de HuggingFace, que declara el formato ONNX y que carece de la informacion minima necesaria para evaluar su idoneidad en produccion. Cualquier decision tecnica deberia posponerse hasta que el autor publique pesos, licencia y especificaciones.
+Por tanto, esta ficha no puede certificar que exista un modelo funcional detras del identificador. Su utilidad es la de un registro de estado: documenta que el artefacto existe en el indice de Hugging Face, que declara el formato ONNX y que carece de la informacion minima necesaria para evaluar su idoneidad en produccion. Cualquier decision tecnica deberia posponerse hasta que el autor publique pesos, licencia y especificaciones.
 
 ## Especificaciones técnicas
 
@@ -89,7 +89,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VALOR0316/ScoreVision
+- Repositorio en Hugging Face: https://huggingface.co/VALOR0316/ScoreVision
 - Pagina del autor: https://huggingface.co/VALOR0316
 
 No se han encontrado en la informacion disponible papers, articulos de blog, repositorios de codigo, demos ni documentacion adicional asociados a este modelo.

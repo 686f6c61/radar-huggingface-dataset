@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch19` es un checkpoint de investigación derivado de Phi-1.5, publicado por el colectivo unl-reset en HuggingFace. Se trata de un ajuste fino sobre `locuslab/tofu_ft_phi-1.5` (a su vez un fine-tune de `microsoft/phi-1_5` sobre el dataset TOFU) cuyo objetivo es el *unlearning* selectivo: eliminar el conocimiento asociado a un subconjunto concreto del dataset (la partición `forget10`) manteniendo el rendimiento en el resto (partición `retain`). El checkpoint corresponde a la época 19 de 20 de un proceso de entrenamiento con una receta denominada "IHL + Reset Both".
+El modelo `unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch19` es un checkpoint de investigación derivado de Phi-1.5, publicado por el colectivo unl-reset en Hugging Face. Se trata de un ajuste fino sobre `locuslab/tofu_ft_phi-1.5` (a su vez un fine-tune de `microsoft/phi-1_5` sobre el dataset TOFU) cuyo objetivo es el *unlearning* selectivo: eliminar el conocimiento asociado a un subconjunto concreto del dataset (la partición `forget10`) manteniendo el rendimiento en el resto (partición `retain`). El checkpoint corresponde a la época 19 de 20 de un proceso de entrenamiento con una receta denominada "IHL + Reset Both".
 
 La relevancia de este modelo es metodológica más que práctica: forma parte de la línea de trabajo de *machine unlearning* evaluada sobre TOFU (Task of Fictitious Unlearning), un benchmark académico que mide la capacidad de un modelo de olvidar datos sintéticos de autores ficticios sin degradar su utilidad general. La innovación concreta del checkpoint es la reinicialización de los *input embeddings* y de la cabeza del modelo de lenguaje (`LM head`) a partir de los pesos originales de `microsoft/phi-1_5`, mientras que el resto de pesos del transformer se conservan del modelo ajustado con TOFU. El entrenamiento combina una pérdida de tipo IHL (probablemente *Inverted Hinge Loss* o una variante de *unlearning loss* basada en márgenes) sobre la partición de olvido con una entropía cruzada estándar ponderada con coeficiente 1.0 sobre la partición de retención.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| unl-reset/tofu-phi-1_5-...-epoch19 (este) | 1.418 M | no disponible | Apache 2.0 | *Unlearning* TOFU (IHL + Reset Both) | HuggingFace, 0 descargas |
-| locuslab/tofu_ft_phi-1.5 | ~1.3B | no disponible | Apache 2.0 (heredada) | Fine-tune TOFU sin olvido | HuggingFace |
-| microsoft/phi-1_5 | ~1.3B | 2.048 tokens (según documentación pública de Phi-1.5) | MIT | Modelo base de texto y código | HuggingFace, ampliamente usado |
-| Otros checkpoints TOFU de la literatura (p. ej. NPO, Gradient Ascent sobre Phi-1.5) | ~1.3B | no disponible | Apache 2.0 / MIT | Distintas pérdidas de *unlearning* | HuggingFace, variable |
+| unl-reset/tofu-phi-1_5-...-epoch19 (este) | 1.418 M | no disponible | Apache 2.0 | *Unlearning* TOFU (IHL + Reset Both) | Hugging Face, 0 descargas |
+| locuslab/tofu_ft_phi-1.5 | ~1.3B | no disponible | Apache 2.0 (heredada) | Fine-tune TOFU sin olvido | Hugging Face |
+| microsoft/phi-1_5 | ~1.3B | 2.048 tokens (según documentación pública de Phi-1.5) | MIT | Modelo base de texto y código | Hugging Face, ampliamente usado |
+| Otros checkpoints TOFU de la literatura (p. ej. NPO, Gradient Ascent sobre Phi-1.5) | ~1.3B | no disponible | Apache 2.0 / MIT | Distintas pérdidas de *unlearning* | Hugging Face, variable |
 
 La comparativa se limita al mismo tamaño y familia (Phi-1.5) porque el checkpoint es un artefacto de investigación sobre TOFU; no tiene sentido compararlo con modelos de propósito general de mayor escala. Frente a `locuslab/tofu_ft_phi-1.5`, la diferencia es la receta de olvido; frente a `microsoft/phi-1_5`, la diferencia es el ajuste fino sobre TOFU y la reinicialización parcial de embeddings y LM head.
 
@@ -93,7 +93,7 @@ La comparativa se limita al mismo tamaño y familia (Phi-1.5) porque el checkpoi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch19
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_head-epoch19
 - Modelo base del checkpoint: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Dataset TOFU (referencia): no disponible en la información proporcionada

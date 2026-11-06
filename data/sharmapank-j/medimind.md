@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sharmapank-j/medimind` es un modelo publicado en HuggingFace por el usuario sharmapank-j bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+`sharmapank-j/medimind` es un modelo publicado en Hugging Face por el usuario sharmapank-j bajo licencia Apache 2.0. La model card asociada esta practicamente vacia: unicamente declara la licencia, sin descripcion, sin especificaciones tecnicas, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Por el nombre ("medimind") podria inferirse una orientacion al ambito medico, pero esta interpretacion no esta respaldada por ningun contenido verificable en la informacion disponible. No se puede confirmar arquitectura, tamano, contexto, idiomas ni capacidades reales del modelo.
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse el tamano, la arquitectura ni las capacidades del
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sharmapank-j/medimind
+- Hugging Face: https://huggingface.co/sharmapank-j/medimind
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

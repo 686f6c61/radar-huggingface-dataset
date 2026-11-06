@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4` es un modelo de lenguaje pequeño, con 45.703.320 parámetros, publicado en HuggingFace por el usuario Lanni-ni. Está etiquetado para generación de texto y utiliza la librería `transformers`. El nombre del repositorio sugiere que se trata de un experimento de investigación relacionado con el concepto de "dynamic forgetting" (olvido dinámico) y con el desafío BabyLM, un proyecto destinado a entrenar modelos de lenguaje con datos limitados. La nomenclatura `4_6_384` podría indicar una configuración de 4 capas, 6 cabezas de atención y 384 unidades de dimensión, aunque esto no está confirmado en ninguna documentación oficial.
+El modelo `Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4` es un modelo de lenguaje pequeño, con 45.703.320 parámetros, publicado en Hugging Face por el usuario Lanni-ni. Está etiquetado para generación de texto y utiliza la librería `transformers`. El nombre del repositorio sugiere que se trata de un experimento de investigación relacionado con el concepto de "dynamic forgetting" (olvido dinámico) y con el desafío BabyLM, un proyecto destinado a entrenar modelos de lenguaje con datos limitados. La nomenclatura `4_6_384` podría indicar una configuración de 4 capas, 6 cabezas de atención y 384 unidades de dimensión, aunque esto no está confirmado en ninguna documentación oficial.
 
 El modelo se ha subido al Hub con pesos en formato `safetensors`, pero la model card es una plantilla genérica generada automáticamente que no aporta información técnica, de entrenamiento ni de evaluación. No se ha publicado la licencia, los idiomas soportados ni la longitud de contexto. Al ser un modelo de investigación con una documentación muy limitada, su relevancia radica principalmente en el ámbito de la investigación sobre eficiencia de datos y mecanismos de olvido en modelos de lenguaje pequeños, más que en aplicaciones de producción.
 
@@ -28,7 +28,7 @@ A partir del nombre del repositorio, se pueden inferir algunas características 
 ## Capacidades
 
 - No se han publicado evaluaciones oficiales de capacidades del modelo.
-- El modelo está etiquetado en HuggingFace con el pipeline `text-generation`.
+- El modelo está etiquetado en Hugging Face con el pipeline `text-generation`.
 - No se dispone de información sobre soporte de tool calling, function calling, agentes, razonamiento multi-step, visión, audio ni capacidades multilingües.
 - Al tratarse de un modelo experimental con nombre `dynamic_forgetting`, es probable que su objetivo sea estudiar el comportamiento de olvido durante el aprendizaje, pero no hay datos que confirmen su utilidad práctica en generación de texto.
 - No se han publicado benchmarks de habilidades lingüísticas generales, matemáticas, código o razonamiento.
@@ -71,4 +71,4 @@ No disponible. No se conocen modelos comparables dentro de la misma categoría, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_4_6_384_inverse_babylm_10m_seed44_epoch4

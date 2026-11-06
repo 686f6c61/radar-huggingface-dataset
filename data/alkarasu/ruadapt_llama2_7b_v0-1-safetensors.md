@@ -82,7 +82,7 @@ La comparativa se limita a modelos de la misma familia. No se dispone de datos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Alkarasu/ruadapt_llama2_7b_v0.1-safetensors
+- Modelo en Hugging Face: https://huggingface.co/Alkarasu/ruadapt_llama2_7b_v0.1-safetensors
 - Modelo original (rccmsu): https://huggingface.co/rccmsu/ruadapt_llama2_7b_v0.1
 - Versión instruct: https://huggingface.co/rccmsu/ruadapt_saiga2_7b_v0.1
 - Paper: https://arxiv.org/abs/2312.02598

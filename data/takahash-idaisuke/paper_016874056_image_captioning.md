@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `takahash-idaisuke`, no contiene un modelo de IA entrenado, sino un documento académico en formato Markdown titulado `paper_016874056_image_captioning.md`. El contenido es un paper sobre *image captioning* (generación de descripciones de imágenes), con un enfoque empírico y una estructura clásica de introducción, problema, solución, validación y trabajo futuro.
+Este repositorio de Hugging Face, publicado por el usuario `takahash-idaisuke`, no contiene un modelo de IA entrenado, sino un documento académico en formato Markdown titulado `paper_016874056_image_captioning.md`. El contenido es un paper sobre *image captioning* (generación de descripciones de imágenes), con un enfoque empírico y una estructura clásica de introducción, problema, solución, validación y trabajo futuro.
 
 No se proporciona ningún peso, arquitectura, pipeline ni artefacto de inferencia. Se trata exclusivamente de un texto académico en inglés, con estilo de citación numérica y licencia MIT. Aunque el tag `image-captioning` podría sugerir un modelo multimodal, la model card aclara que el único archivo es el propio paper.
 
@@ -60,5 +60,5 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no existe comp
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/takahash-idaisuke/paper_016874056_image_captioning
+- Repositorio de Hugging Face: https://huggingface.co/takahash-idaisuke/paper_016874056_image_captioning
 - No se encontraron enlaces adicionales relevantes en la busqueda web (los resultados obtenidos no estan relacionados con este repositorio).

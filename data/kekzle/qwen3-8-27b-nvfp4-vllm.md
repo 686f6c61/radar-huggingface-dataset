@@ -89,7 +89,7 @@ Según el foro de NVIDIA, la versión NVFP4 de Unsloth es un 30-34 % más rápid
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kekzle/Qwen3.8-27B-NVFP4-vllm
+- Repositorio Hugging Face: https://huggingface.co/kekzle/Qwen3.8-27B-NVFP4-vllm
 - Repositorio hermano (layout Modelopt para imp): https://huggingface.co/kekzle/Qwen3.8-27B-NVFP4
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto `imp`: https://github.com/kekzl/imp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `minjaechoi/qwen36-35b-a3b-1p80bit-r10` es un checkpoint de investigación derivado de `Qwen/Qwen3.6-35B-A3B`, publicado por el usuario minjaechoi en HuggingFace el 17 de septiembre de 2026. Su particularidad es que aplica una cuantización agresiva a los expertos enrutados de la arquitectura Mixture-of-Experts (MoE) del modelo base: estos pesos promedian 1,80 bits, mientras que el resto de la red permanece en BF16. Se trata, por tanto, de un experimento de compresión extrema sobre las capas que concentran la mayor parte de los parámetros en un MoE, no de un modelo afinado para una tarea concreta ni de una versión lista para producción.
+El modelo `minjaechoi/qwen36-35b-a3b-1p80bit-r10` es un checkpoint de investigación derivado de `Qwen/Qwen3.6-35B-A3B`, publicado por el usuario minjaechoi en Hugging Face el 17 de septiembre de 2026. Su particularidad es que aplica una cuantización agresiva a los expertos enrutados de la arquitectura Mixture-of-Experts (MoE) del modelo base: estos pesos promedian 1,80 bits, mientras que el resto de la red permanece en BF16. Se trata, por tanto, de un experimento de compresión extrema sobre las capas que concentran la mayor parte de los parámetros en un MoE, no de un modelo afinado para una tarea concreta ni de una versión lista para producción.
 
 El repositorio contiene 35.107.181.936 parámetros (unos 35,1 mil millones) almacenados en safetensors, con un tamaño total de 70,2 GB. Ese volumen coincide con el esperado para 35,1 B de parámetros en BF16, lo que confirma lo que indica la propia model card: los pesos se distribuyen ya desquantizados en tensores BF16 y se cargan con `transformers` o vLLM estándar, sin necesidad de kernels personalizados. La etiqueta `qwen3_5_moe` identifica la arquitectura como MoE, y la nomenclatura "A3B" del modelo base apunta a unos 3.000 millones de parámetros activos por token, aunque el dato no se confirma en la información disponible.
 
@@ -42,7 +42,7 @@ No se especifica ningun proceso de entrenamiento o ajuste adicional: no hay dato
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declara lista de idiomas.
 - Modo de pensamiento (thinking) o cualquier capacidad especial: no disponible.
-- Carga en el ecosistema estandar: compatible con `transformers` y con la etiqueta `endpoints_compatible` de HuggingFace, lo que facilita su despliegue en Inference Endpoints.
+- Carga en el ecosistema estandar: compatible con `transformers` y con la etiqueta `endpoints_compatible` de Hugging Face, lo que facilita su despliegue en Inference Endpoints.
 
 ## Casos de uso
 
@@ -66,7 +66,7 @@ Las siguientes cifras son estimaciones derivadas del recuento de parametros (35,
 - GPU recomendadas: H100 80 GB, A100 80 GB o similares para ejecucion en BF16 en una sola tarjeta; configuraciones multi-GPU (por ejemplo 2 x 48 GB) para GPUs de menor memoria, siempre que la arquitectura MoE permita el reparto.
 - GPU de consumo: no cabe en tarjetas de 24 GB (RTX 4090, RTX 3090) en BF16. Solo seria viable en consumer con una cuantizacion adicional a 4 bits o inferior que no esta publicada en el repositorio.
 - Opciones de despliegue: `transformers` (indicado por el autor) y vLLM, dado que los pesos se cargan en BF16 sin kernels a medida. No hay artefactos GGUF, por lo que llama.cpp, Ollama y LM Studio no son aplicables sin conversion previa.
-- Inference Endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con el servicio gestionado de HuggingFace, aunque el tamano del checkpoint puede requerir hardware de gama alta.
+- Inference Endpoints: la etiqueta `endpoints_compatible` indica compatibilidad con el servicio gestionado de Hugging Face, aunque el tamano del checkpoint puede requerir hardware de gama alta.
 - Latencia y throughput: no disponible. Al tratarse de un MoE, la latencia estara dominada por el ancho de banda de memoria (lectura de expertos activos), pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -95,6 +95,6 @@ No se dispone de datos de benchmarks ni de especificaciones de terceros en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/minjaechoi/qwen36-35b-a3b-1p80bit-r10
+- Modelo en Hugging Face: https://huggingface.co/minjaechoi/qwen36-35b-a3b-1p80bit-r10
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ninguna fuente relacionada con este modelo; los resultados obtenidos correspondian a paginas de legislacion alemana, sin conexion con el contenido de esta ficha.

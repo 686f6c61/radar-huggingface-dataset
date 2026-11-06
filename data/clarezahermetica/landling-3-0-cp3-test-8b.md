@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Landling 3.0 cp3 test 8b es un adaptador LoRA (PEFT) desarrollado por el usuario clarezahermetica como parte del proyecto Landling, una iniciativa experimental centrada en replicar el estilo de escritura, el vocabulario y el temperamento del autor Nick Land mediante ajuste fino de modelos de lenguaje pequenos. Este repositorio concreto es un checkpoint de desarrollo (cp3) construido sobre el modelo base Qwen/Qwen3-8B y publicado con acceso restringido (gated) en HuggingFace.
+Landling 3.0 cp3 test 8b es un adaptador LoRA (PEFT) desarrollado por el usuario clarezahermetica como parte del proyecto Landling, una iniciativa experimental centrada en replicar el estilo de escritura, el vocabulario y el temperamento del autor Nick Land mediante ajuste fino de modelos de lenguaje pequenos. Este repositorio concreto es un checkpoint de desarrollo (cp3) construido sobre el modelo base Qwen/Qwen3-8B y publicado con acceso restringido (gated) en Hugging Face.
 
 A diferencia de las versiones iniciales del proyecto, que partian de TinyLlama-1.1B-Chat y de Qwen2.5-3B-Instruct, esta iteracion escala a un modelo base de 8.000 millones de parametros, lo que en principio mejora la coherencia, la capacidad de razonamiento y la fidelidad estilistica respecto a los checkpoints previos. El repositorio pesa aproximadamente 0,1 GB, un tamano coherente con un adaptador LoRA y no con un modelo completo de pesos, y se distribuye con la libreria PEFT.
 
@@ -23,7 +23,7 @@ Su relevancia es limitada y muy especifica: se trata de un checkpoint de investi
 | Libreria | PEFT |
 | Modelo base | Qwen/Qwen3-8B |
 | Tamano del repositorio | 0,1 GB |
-| Acceso | Restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Autor | clarezahermetica |
 | Fecha de creacion | 2026-09-26 |
 | Ultima actualizacion | 2026-09-26 |
@@ -83,7 +83,7 @@ La comparacion muestra una progresion clara del proyecto: 1,1B, luego 3B y ahora
 - Riesgo de alucinacion: alto en cualquier modelo generativo, y potencialmente agravado porque el objetivo es imitar un estilo mas que transmitir informacion verificada.
 - Limitaciones de contexto e idioma: no se especifican idiomas soportados ni contexto efectivo para el adaptador. El contexto maximo depende del modelo base y de la configuracion de inferencia.
 - Licencia: no declarada. Esto impide determinar si se permite uso comercial; en ausencia de licencia explicita, debe tratarse como uso restringido a investigacion y no asumir derechos de explotacion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad y la integracion automatica.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad y la integracion automatica.
 - Es un checkpoint de desarrollo, no una version final. Puede contener artefactos de entrenamiento, inestabilidad y falta de documentacion.
 - Sin datos de entrenamiento publicados (tokens, dataset, hiperparametros), lo que dificulta auditar procedencia y sesgos.
 - Cero descargas e interacciones: no hay evidencia de uso en comunidad ni validacion externa.
@@ -91,7 +91,7 @@ La comparacion muestra una progresion clara del proyecto: 1,1B, luego 3B y ahora
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/clarezahermetica/landling-3.0-cp3-test-8b
+- Modelo en Hugging Face: https://huggingface.co/clarezahermetica/landling-3.0-cp3-test-8b
 - Repositorio GitHub del proyecto Landling: https://github.com/clarezahermetica/landling
 - Checkpoint landling-3.0-cp1: https://huggingface.co/clarezahermetica/landling-3.0-cp1
 - Pagina del proyecto landling original: https://huggingface.co/clarezahermetica/landling

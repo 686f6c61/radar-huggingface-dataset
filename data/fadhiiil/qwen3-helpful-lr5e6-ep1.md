@@ -1,7 +1,7 @@
 # Fadhiiil/qwen3-helpful-lr5e6-ep1
 
 ## Resumen
-Fadhiiil/qwen3-helpful-lr5e6-ep1 es un modelo de clasificación de texto derivado de la familia Qwen3, publicado por el usuario Fadhiiil en HuggingFace. Según los metadatos del repositorio, se ha entrenado con la librería TRL y la etiqueta `reward-trainer`, lo que sugiere que se trata de un modelo de recompensa (reward model) para aprendizaje por refuerzo a partir de retroalimentación humana (RLHF), no un modelo generativo de propósito general. El nombre del checkpoint (`helpful-lr5e6-ep1`) indica un ajuste fino orientado a la "utilidad" (helpfulness) con una tasa de aprendizaje de 5e-6 durante una época.
+Fadhiiil/qwen3-helpful-lr5e6-ep1 es un modelo de clasificación de texto derivado de la familia Qwen3, publicado por el usuario Fadhiiil en Hugging Face. Según los metadatos del repositorio, se ha entrenado con la librería TRL y la etiqueta `reward-trainer`, lo que sugiere que se trata de un modelo de recompensa (reward model) para aprendizaje por refuerzo a partir de retroalimentación humana (RLHF), no un modelo generativo de propósito general. El nombre del checkpoint (`helpful-lr5e6-ep1`) indica un ajuste fino orientado a la "utilidad" (helpfulness) con una tasa de aprendizaje de 5e-6 durante una época.
 
 El modelo cuenta con 595.777.536 parámetros reales según los pesos en safetensors, lo que corresponde a la variante de aproximadamente 0,6 mil millones de parámetros de Qwen3 (Qwen3-0.6B). El repositorio ocupa 1,2 GB y no incluye información sobre licencia, idiomas, datos de entrenamiento ni evaluación. La model card es una plantilla autogenerada sin contenido sustantivo.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fadhiiil/qwen3-helpful-lr5e6-ep1 | 595,7 M | no disponible | Reward model (Qwen3-0.6B) | no disponible | HuggingFace |
-| Qwen3-0.6B (base) | ~0,6 B | no disponible en esta ficha | LLM generativo | Apache 2.0 (según familia Qwen3) | HuggingFace |
-| Modelos de recompensa de la familia Qwen (p. ej. variantes reward de Qwen2.5) | variable | variable | Reward model | variable | HuggingFace |
+| Fadhiiil/qwen3-helpful-lr5e6-ep1 | 595,7 M | no disponible | Reward model (Qwen3-0.6B) | no disponible | Hugging Face |
+| Qwen3-0.6B (base) | ~0,6 B | no disponible en esta ficha | LLM generativo | Apache 2.0 (según familia Qwen3) | Hugging Face |
+| Modelos de recompensa de la familia Qwen (p. ej. variantes reward de Qwen2.5) | variable | variable | Reward model | variable | Hugging Face |
 
 La comparación con alternativas de recompensa específicas no está disponible en la información proporcionada; no se han encontrado métricas que permitan un contraste cuantitativo.
 
@@ -76,7 +76,7 @@ La comparación con alternativas de recompensa específicas no está disponible 
 - Repositorio sin descargas ni likes: no hay señales de uso comunitario ni validación por terceros.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e6-ep1
+- Hugging Face: https://huggingface.co/Fadhiiil/qwen3-helpful-lr5e6-ep1
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl
 - Paper citado en los tags (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto de carbono: https://mlco2.github.io/impact

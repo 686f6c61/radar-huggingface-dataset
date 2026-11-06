@@ -79,7 +79,7 @@ No se dispone de información sobre otros LoRAs turbo para MiniMax-H3 en los dat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nyxia/H3-Loras
+- Repositorio Hugging Face: https://huggingface.co/nyxia/H3-Loras
 - README del repositorio: https://huggingface.co/nyxia/H3-Loras/blob/main/README.md
 - LoRA upstream original: https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora
 - Artículo sobre MiniMax H3 Turbo LoRA en ComfyUI: https://www.mindstudio.ai/blog/minimax-h3-turbo-lora-comfyui-local

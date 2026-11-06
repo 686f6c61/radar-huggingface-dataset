@@ -92,9 +92,9 @@ Resultados de la ablacion de codebooks reportados por el autor (2026-09-15/16): 
 
 | Modelo / artefacto | Parametros | Representacion | Resultado en checo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| thinletter/qwen3-embedding-0.6b-vq-clients (este) | 0,6 B (contenedor de 237 MiB) | VQ 3,57 bpw, codebooks 2-d K = 128 + tabla Q2_K | 96,8 % del nDCG@10 fp32 en WebFAQ-cs (0,7072) | Apache-2.0 | HuggingFace + runtime WebGPU en GitHub |
-| Qwen/Qwen3-Embedding-0.6B (fp32, modelo base) | 0,6 B | Punto flotante de 32 bits | 0,7308 nDCG@10 en WebFAQ-cs (referencia) | Apache-2.0 | HuggingFace |
-| Cliente escalar del mismo autor (`llama-quantize` Q4_K_M + tabla de 4 bits) | 0,6 B (340 MiB) | 4 bits escalar | 98,7 % en indice legal checo | Apache-2.0 | HuggingFace |
+| thinletter/qwen3-embedding-0.6b-vq-clients (este) | 0,6 B (contenedor de 237 MiB) | VQ 3,57 bpw, codebooks 2-d K = 128 + tabla Q2_K | 96,8 % del nDCG@10 fp32 en WebFAQ-cs (0,7072) | Apache-2.0 | Hugging Face + runtime WebGPU en GitHub |
+| Qwen/Qwen3-Embedding-0.6B (fp32, modelo base) | 0,6 B | Punto flotante de 32 bits | 0,7308 nDCG@10 en WebFAQ-cs (referencia) | Apache-2.0 | Hugging Face |
+| Cliente escalar del mismo autor (`llama-quantize` Q4_K_M + tabla de 4 bits) | 0,6 B (340 MiB) | 4 bits escalar | 98,7 % en indice legal checo | Apache-2.0 | Hugging Face |
 | Contenedores harrier del mismo autor (otro modelo) | No disponible | VQ 2,1 bpw, codebooks 4-d de 256 entradas | Qwen3-Embedding-0.6B no sobrevive a 2 bits: colapso al 65-81 % del fp32 | Apache-2.0 | No disponible en detalle |
 
 No se dispone de comparaciones con otros codificadores multilingues (por ejemplo, variantes de E5, BGE-M3 o GTE) en la informacion proporcionada, ni de datos de benchmark de terceros sobre este contenedor. La busqueda web realizada para esta ficha no devolvio resultados relevantes.
@@ -117,11 +117,11 @@ No se dispone de comparaciones con otros codificadores multilingues (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thinletter/qwen3-embedding-0.6b-vq-clients
+- Modelo en Hugging Face: https://huggingface.co/thinletter/qwen3-embedding-0.6b-vq-clients
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio con el runtime WebGPU, el cuantizador y el compilador de contenedores (Apache-2.0): https://github.com/rosecky/embedding-quantization-public
 - Demo en navegador (corpus WebFAQ CS, cliente vq3.5): https://thinletter.io/demo
-- Espejo de la demo en HuggingFace Spaces: https://huggingface.co/spaces/thinletter/demo
+- Espejo de la demo en Hugging Face Spaces: https://huggingface.co/spaces/thinletter/demo
 - Dataset de calibracion WebFAQ: https://huggingface.co/datasets/PaDaS-Lab/webfaq-retrieval
 - Documento interno de resultados de la ablacion de codebooks: `docs/release/vq_results.md` §7 del repositorio publico
 - Resultados crudos y sha256 del fichero: `results/raw/vqcz_box/exports_table.jsonl` del repositorio publico

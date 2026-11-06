@@ -84,7 +84,7 @@ La diferencia clave frente al modelo original de KBLab es el formato y el runtim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ordagrant/kb-whisper-large-coreml
+- Modelo en Hugging Face: https://huggingface.co/Ordagrant/kb-whisper-large-coreml
 - Modelo base: https://huggingface.co/KBLab/kb-whisper-large
 - Proyecto Ordagrant (repositorio del autor de la conversion): https://github.com/svenclaesson/ordagrant
 - WhisperKit (runtime Swift para Core ML): https://github.com/argmaxinc/WhisperKit

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Harness Continual Learning (HCL) es un framework de investigación publicado por el autor `distro-bunny` en HuggingFace, con implementación de referencia en el repositorio `RL-MIND/Harness-Continual-Learning`. No se trata de un modelo de pesos entrenados, sino de un marco metodológico que permite a agentes construidos sobre modelos fundacionales congelados adaptarse de forma continua mediante la evolución de su "arnés" (harness): prompts, memorias, herramientas, habilidades y reglas de enrutamiento. El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que confirma que no contiene checkpoints de modelo, sino únicamente material asociado a la implementación.
+Harness Continual Learning (HCL) es un framework de investigación publicado por el autor `distro-bunny` en Hugging Face, con implementación de referencia en el repositorio `RL-MIND/Harness-Continual-Learning`. No se trata de un modelo de pesos entrenados, sino de un marco metodológico que permite a agentes construidos sobre modelos fundacionales congelados adaptarse de forma continua mediante la evolución de su "arnés" (harness): prompts, memorias, herramientas, habilidades y reglas de enrutamiento. El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que confirma que no contiene checkpoints de modelo, sino únicamente material asociado a la implementación.
 
 La contribución conceptual central es el desplazamiento del objeto del aprendizaje continuo: en lugar de actualizar los parámetros del modelo, HCL evoluciona el estado que rodea a un modelo fundacional congelado. Los autores formalizan el concepto de "olvido a nivel de arnés" (harness-level forgetting) y proponen una evolución protegida (guarded harness evolution) que separa la generación de actualizaciones de su confirmación, mediante un Continual Optimizer que propone candidatos y un Continual Evaluator que solo los acepta tras verificar mejora actual, retención histórica y validez.
 
@@ -19,7 +19,7 @@ El framework se evalúa en flujos de tareas textuales (MuSiQue, ProofWriter, GSM
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible |
 | Licencia | No disponible |
-| Formato de pesos | No disponible (el repositorio HuggingFace no contiene pesos; el código está en GitHub) |
+| Formato de pesos | No disponible (el repositorio Hugging Face no contiene pesos; el código está en GitHub) |
 
 ## Arquitectura y entrenamiento
 
@@ -73,7 +73,7 @@ La model card indica que HCL "supera a las líneas base correspondientes en más
 
 | Framework / enfoque | Objeto de adaptación | Modelo base | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Harness Continual Learning (HCL) | Arnés (prompts, memoria, herramientas, routing) | Congelado (Qwen3-4B en referencia) | No disponible | HuggingFace (0.0 GB) y GitHub |
+| Harness Continual Learning (HCL) | Arnés (prompts, memoria, herramientas, routing) | Congelado (Qwen3-4B en referencia) | No disponible | Hugging Face (0.0 GB) y GitHub |
 | Fine-tuning continuo clásico | Parámetros del modelo | Se actualiza | Depende del modelo | Ampliamente disponible |
 | EWC / regularización paramétrica | Parámetros del modelo | Se actualiza | Depende de implementación | Disponible en librerías |
 | Replay / rehearsal | Parámetros del modelo | Se actualiza | Depende de implementación | Disponible en librerías |
@@ -82,7 +82,7 @@ No se dispone de comparativas numéricas directas con frameworks concretos en la
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no contiene pesos ni checkpoints: es un contenedor de material de investigación, no un modelo listo para inferencia.
+- El repositorio de Hugging Face no contiene pesos ni checkpoints: es un contenedor de material de investigación, no un modelo listo para inferencia.
 - La licencia no está especificada, lo que impide determinar si el uso comercial está permitido.
 - Los datasets y checkpoints no se redistribuyen; es necesario prepararlos manualmente bajo `data/` según el layout documentado.
 - Los entornos ALFWorld y Odyssey requieren instalaciones aisladas por incompatibilidad de dependencias con el stack principal.
@@ -93,6 +93,6 @@ No se dispone de comparativas numéricas directas con frameworks concretos en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/distro-bunny/Harness-Continual-Learning
+- Hugging Face: https://huggingface.co/distro-bunny/Harness-Continual-Learning
 - Repositorio GitHub: https://github.com/RL-MIND/Harness-Continual-Learning
 - arXiv (referencia en tags): arxiv:2608.19013

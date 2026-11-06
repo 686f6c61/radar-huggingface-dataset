@@ -123,7 +123,7 @@ Advertencia: valores de eval loss mas bajos no implican mejor calidad de redacci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruwwww/faruq-alignment-models
+- Hugging Face: https://huggingface.co/ruwwww/faruq-alignment-models
 - Repositorio de codigo e investigacion: https://github.com/ADDI-LAW/faruq-project
 - Resultados de evaluacion (tabla de 52 casos): https://huggingface.co/ruwwww/faruq-alignment-models/blob/main/evaluations/sft-v2-gemma4-31b-5epoch/samples.csv
 - Resultados de evaluacion (JSON Lines): https://huggingface.co/ruwwww/faruq-alignment-models/blob/main/evaluations/sft-v2-gemma4-31b-5epoch/samples.jsonl

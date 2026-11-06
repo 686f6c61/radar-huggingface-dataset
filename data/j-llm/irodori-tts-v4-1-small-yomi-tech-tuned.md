@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Irodori-TTS-v4.1-Small-Yomi-Tech-tuned es un modelo de síntesis de voz (text-to-speech) en japonés publicado por el usuario j-llm en HuggingFace. Se construye sobre takuma104/Irodori-TTS-v4.1-Small-Yomi, que a su vez es un ajuste fino del codificador de texto de Aratako/Irodori-TTS-v4.1-Small, y añade un frontend de lectura de términos técnicos y palabras inglesas embebido dentro del propio `model.safetensors`.
+Irodori-TTS-v4.1-Small-Yomi-Tech-tuned es un modelo de síntesis de voz (text-to-speech) en japonés publicado por el usuario j-llm en Hugging Face. Se construye sobre takuma104/Irodori-TTS-v4.1-Small-Yomi, que a su vez es un ajuste fino del codificador de texto de Aratako/Irodori-TTS-v4.1-Small, y añade un frontend de lectura de términos técnicos y palabras inglesas embebido dentro del propio `model.safetensors`.
 
 El problema que resuelve es muy concreto: los TTS japoneses suelen pronunciar mal tanto kanji poco frecuentes como palabras latinas incrustadas en texto japonés (MQTT, API key, GitHub, schedule, calendar, violin). Según la model card del autor, sin ese frontend el modelo base llega a inventar lecturas del tipo すーじゅー para "schedule" o ちゃーれん para "channel", mientras que este checkpoint las reescribe a katakana antes de la síntesis.
 
@@ -91,9 +91,9 @@ No se publican métricas objetivas de calidad de audio (MOS, similitud de hablan
 
 | Modelo | Idioma | Función diferencial | Pesos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Irodori-TTS-v4.1-Small (Aratako) | japonés | TTS base, sin ajuste de lectura | no disponible | no disponible en la información proporcionada | HuggingFace |
-| Irodori-TTS-v4.1-Small-Yomi (takuma104) | japonés | Mejora de lectura de kanji (on'yomi/kun'yomi, palabras raras) | mismos 714 tensores que este modelo | no disponible en la información proporcionada | HuggingFace |
-| Irodori-TTS-v4.1-Small-Yomi-Tech-tuned (j-llm) | japonés | Yomi más frontend de lectura de términos técnicos e ingleses dentro del safetensors | idénticos a Yomi; +31 MB de frontend | other (mit-and-cc-by-sa-4.0) | HuggingFace |
+| Irodori-TTS-v4.1-Small (Aratako) | japonés | TTS base, sin ajuste de lectura | no disponible | no disponible en la información proporcionada | Hugging Face |
+| Irodori-TTS-v4.1-Small-Yomi (takuma104) | japonés | Mejora de lectura de kanji (on'yomi/kun'yomi, palabras raras) | mismos 714 tensores que este modelo | no disponible en la información proporcionada | Hugging Face |
+| Irodori-TTS-v4.1-Small-Yomi-Tech-tuned (j-llm) | japonés | Yomi más frontend de lectura de términos técnicos e ingleses dentro del safetensors | idénticos a Yomi; +31 MB de frontend | other (mit-and-cc-by-sa-4.0) | Hugging Face |
 
 No se dispone de datos de benchmarks ni de licencias de los dos modelos base en la información proporcionada, por lo que la comparación se limita a la función diferencial y al empaquetado de los pesos.
 
@@ -111,7 +111,7 @@ No se dispone de datos de benchmarks ni de licencias de los dos modelos base en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/j-llm/Irodori-TTS-v4.1-Small-Yomi-Tech-tuned
+- Modelo en Hugging Face: https://huggingface.co/j-llm/Irodori-TTS-v4.1-Small-Yomi-Tech-tuned
 - Modelo base (ajuste de lectura de kanji): https://huggingface.co/takuma104/Irodori-TTS-v4.1-Small-Yomi
 - Modelo base original: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small
 - Código de inferencia Irodori-TTS: https://github.com/Aratako/Irodori-TTS

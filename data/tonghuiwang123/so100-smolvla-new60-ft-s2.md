@@ -68,7 +68,7 @@ No disponible. No se han proporcionado datos de comparación con otros modelos V
 
 ## Enlaces
 
-- [HuggingFace del modelo](https://huggingface.co/tonghuiwang123/so100-smolvla-new60-ft-s2)
+- [Hugging Face del modelo](https://huggingface.co/tonghuiwang123/so100-smolvla-new60-ft-s2)
 - [Página oficial de SmolVLA](https://smolvla.net/index_en)
 - [Paper en arXiv](https://arxiv.org/abs/2506.01844)
 - [Repositorio GitHub de ejemplo con SO100](https://github.com/ajinkyagorad/smol-vla-lerobot-so100)

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base meta-llama/Llama-2-7b-hf y publicado por el usuario WijewardhanaNT en HuggingFace bajo la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse junto al modelo base de 7.000 millones de parámetros para poder ejecutarse. El repositorio ocupa 0,2 GB y no registra descargas ni valoraciones en el momento de la consulta.
+Adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base meta-llama/Llama-2-7b-hf y publicado por el usuario WijewardhanaNT en Hugging Face bajo la librería PEFT. No se trata de un modelo completo, sino de un conjunto de pesos de bajo rango que deben cargarse junto al modelo base de 7.000 millones de parámetros para poder ejecutarse. El repositorio ocupa 0,2 GB y no registra descargas ni valoraciones en el momento de la consulta.
 
 El identificador del repositorio sugiere un experimento de inferencia de lenguaje natural cross-lingual sobre el corpus XNLI (Cross-lingual Natural Language Inference), con 10.000 ejemplos en urdú en una segunda etapa de entrenamiento y una primera etapa sobre 10.000 ejemplos en inglés. Los términos «intruder_reduced» y «42» apuntan a una variante de reducción de interferencia entre adaptadores y a una semilla fija, un patrón habitual en estudios de composición y mezcla de adaptadores LoRA. Esta interpretación procede únicamente de la convención de nombres y no está confirmada por el autor en la model card.
 
-La relevancia del artefacto es, por tanto, fundamentalmente de investigación: sirve como material reproducible para estudiar transferencia cross-lingual, olvido catastrófico y solapamiento entre adaptadores en lenguas de bajos recursos. La model card publicada es la plantilla por defecto de HuggingFace sin cumplimentar, por lo que no hay información oficial sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación.
+La relevancia del artefacto es, por tanto, fundamentalmente de investigación: sirve como material reproducible para estudiar transferencia cross-lingual, olvido catastrófico y solapamiento entre adaptadores en lenguas de bajos recursos. La model card publicada es la plantilla por defecto de Hugging Face sin cumplimentar, por lo que no hay información oficial sobre datos de entrenamiento, hiperparámetros, licencia ni evaluación.
 
 ## Especificaciones tecnicas
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - El adaptador LoRA en si ocupa una fraccion minima del repositorio de 0,2 GB y anade un consumo despreciable.
 - GPU recomendadas para fp16: A100 40 GB, H100 80 GB, RTX 4090 o RTX 3090 (24 GB). Para 4 bits es suficiente una RTX 3060 de 12 GB o una RTX 4070.
 - Cabe en GPU de consumo: si, en RTX 3090/4090 a fp16 y en practicamente cualquier GPU con 8 GB o mas utilizando cuantizacion de 4 bits.
-- Opciones de despliegue: transformers con PEFT para cargar el adaptador, vLLM (soporta adaptadores LoRA), HuggingFace TGI (soporta LoRA), llama.cpp u Ollama previa fusion del adaptador con el modelo base y conversion a GGUF.
+- Opciones de despliegue: transformers con PEFT para cargar el adaptador, vLLM (soporta adaptadores LoRA), Hugging Face TGI (soporta LoRA), llama.cpp u Ollama previa fusion del adaptador con el modelo base y conversion a GGUF.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ Los datos de las alternativas proceden de su documentacion publica, no de la inf
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_ur_10000_stage2_intruder_reduced_42_LoRA_llama2_7B___stage1_was_en_10000
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_ur_10000_stage2_intruder_reduced_42_LoRA_llama2_7B___stage1_was_en_10000
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-hf
 - Libreria PEFT: https://huggingface.co/docs/peft
 - Referencia citada en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700

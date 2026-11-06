@@ -4,7 +4,7 @@
 
 Apodex-1.1-mini-i1-GGUF es una cuantización en formato GGUF del modelo Apodex-1.1-mini, realizada por mradermacher. El modelo base, desarrollado por el equipo de Apodex, está diseñado para tareas de inteligencia agéntica: razonamiento, búsqueda, manejo de archivos, ejecución de código y coordinación multi-agente. Según los artículos publicados en agosto de 2026, Apodex 1.1 introduce un "Agent Team" asíncrono entrenado como capacidad interna del modelo, no como un orquestador externo.
 
-El repositorio de HuggingFace indica que el modelo tiene 48.036.230 parámetros (dato de safetensors), lo que lo convierte en una versión muy compacta. Sin embargo, algunas fuentes web mencionan "36B agent weights" para Apodex-1.1-mini, lo que sugiere una discrepancia significativa. Dado que el tamaño del repositorio es de solo 0.2 GB, es probable que el modelo sea realmente pequeño (48M) y que las referencias a 36B correspondan a otra variante o a un error. Esta ficha se basa en los datos verificables de HuggingFace.
+El repositorio de Hugging Face indica que el modelo tiene 48.036.230 parámetros (dato de safetensors), lo que lo convierte en una versión muy compacta. Sin embargo, algunas fuentes web mencionan "36B agent weights" para Apodex-1.1-mini, lo que sugiere una discrepancia significativa. Dado que el tamaño del repositorio es de solo 0.2 GB, es probable que el modelo sea realmente pequeño (48M) y que las referencias a 36B correspondan a otra variante o a un error. Esta ficha se basa en los datos verificables de Hugging Face.
 
 La relevancia de esta cuantización radica en que permite ejecutar el modelo en hardware muy modesto, incluso en CPU, manteniendo la compatibilidad con el ecosistema GGUF (llama.cpp, Ollama, etc.). El archivo proporcionado es un archivo imatrix, útil para generar cuantizaciones personalizadas de mayor calidad.
 
@@ -13,7 +13,7 @@ La relevancia de esta cuantización radica en que permite ejecutar el modelo en 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (probablemente transformer) |
-| Parametros totales | 48.036.230 (segun HuggingFace) |
+| Parametros totales | 48.036.230 (segun Hugging Face) |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, IQ3_M, Q4_K_S, IQ3_XXS, Q3_K_M, small-IQ4_NL, Q4_K_M, IQ2_M, Q6_K, IQ4_XS, Q2_K_S, IQ1_M, Q3_K_S, IQ2_XXS, Q3_K_L, IQ2_XS, Q5_K_S, IQ2_S, IQ1_S, Q5_K_M, Q4_0, IQ3_XS, Q4_1, IQ3_S (en el repo solo se incluye el archivo imatrix) |
@@ -66,7 +66,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 ## Limitaciones y advertencias
 
 - El tamaño extremadamente reducido (48M) limita severamente la capacidad de razonamiento complejo y la calidad de las respuestas en comparación con modelos de billones de parámetros.
-- Existe una discrepancia entre el número de parámetros reportado por HuggingFace (48M) y las menciones web a "36B". Esto debe aclararse antes de usar el modelo en producción.
+- Existe una discrepancia entre el número de parámetros reportado por Hugging Face (48M) y las menciones web a "36B". Esto debe aclararse antes de usar el modelo en producción.
 - No se han publicado benchmarks oficiales, por lo que el rendimiento real es incierto.
 - Al ser un modelo de visión, la ausencia de archivos mmproj en este repositorio impide su uso multimodal directo.
 - La licencia Apache-2.0 permite uso comercial, pero se recomienda verificar los términos del modelo base.
@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Apodex-1.1-mini-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Apodex-1.1-mini-i1-GGUF
 - Modelo base: https://huggingface.co/apodex/Apodex-1.1-mini
 - Repositorio de quants estáticos: https://huggingface.co/mradermacher/Apodex-1.1-mini-GGUF
 - Artículo sobre Apodex 1.1: https://www.explainx.ai/blog/apodex-1-1-agent-team-frontieragent-august-2026

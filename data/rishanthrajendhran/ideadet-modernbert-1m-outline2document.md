@@ -4,7 +4,7 @@
 
 El modelo `rishanthrajendhran/ideadet-modernbert-1m-outline2document` es un clasificador de texto basado en la arquitectura ModernBERT, desarrollado por Rishanth Rajendhran. Está diseñado para la detección de contenido generado por inteligencia artificial (ai-detection), concretamente para distinguir entre esquemas (outlines) y documentos generados a partir de ellos, según su nombre. El checkpoint parte de ModernBERT-base, una versión modernizada de BERT entrenada sobre 2 billones de tokens, y ha sido ajustado para la tarea de clasificación de secuencias.
 
-El modelo tiene 395.833.346 parámetros totales y se distribuye en formato safetensors. Su acceso es restringido (gated), por lo que es necesario aceptar las condiciones en HuggingFace antes de descargarlo. Aunque no se especifica la longitud de contexto en la ficha del repositorio, ModernBERT-base soporta hasta 8192 tokens gracias a sus embeddings posicionales rotatorios, por lo que se asume que este ajuste hereda dicha capacidad. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
+El modelo tiene 395.833.346 parámetros totales y se distribuye en formato safetensors. Su acceso es restringido (gated), por lo que es necesario aceptar las condiciones en Hugging Face antes de descargarlo. Aunque no se especifica la longitud de contexto en la ficha del repositorio, ModernBERT-base soporta hasta 8192 tokens gracias a sus embeddings posicionales rotatorios, por lo que se asume que este ajuste hereda dicha capacidad. La licencia es Apache-2.0, lo que permite uso comercial sin restricciones adicionales.
 
 La relevancia actual de este modelo radica en la creciente necesidad de herramientas de detección de texto sintético, especialmente en entornos editoriales y académicos. Al estar basado en ModernBERT, ofrece una alternativa más eficiente y con mayor contexto que los BERT tradicionales, aunque su disponibilidad limitada y la falta de documentación pública reducen su aplicabilidad inmediata en producción.
 
@@ -61,7 +61,7 @@ No se dispone de información sobre modelos comparables específicos para esta t
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que limita su uso inmediato y su reproducibilidad.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que limita su uso inmediato y su reproducibilidad.
 - Sin documentación técnica: no se detallan datos de entrenamiento, hiperparámetros ni métricas de evaluación, lo que impide conocer su fiabilidad real.
 - Posibles sesgos: al ser un modelo de detección, puede presentar falsos positivos o negativos según el dominio del texto. No se han reportado estudios de sesgo.
 - Riesgo de alucinación: como clasificador, no genera texto, pero su salida puede ser incorrecta si el ajuste fino no ha cubierto una variedad suficiente de estilos de escritura.
@@ -71,8 +71,8 @@ No se dispone de información sobre modelos comparables específicos para esta t
 
 ## Enlaces
 
-- [HuggingFace - rishanthrajendhran/ideadet-modernbert-1m-outline2document](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-outline2document)
+- [Hugging Face - rishanthrajendhran/ideadet-modernbert-1m-outline2document](https://huggingface.co/rishanthrajendhran/ideadet-modernbert-1m-outline2document)
 - [Repositorio ModernBERT de AnswerDotAI](https://github.com/AnswerDotAI/ModernBERT)
-- [Documentación de ModernBERT en HuggingFace Transformers](https://huggingface.co/docs/transformers/model_doc/modernbert)
+- [Documentación de ModernBERT en Hugging Face Transformers](https://huggingface.co/docs/transformers/model_doc/modernbert)
 - [Modelo base ModernBERT-base](https://huggingface.co/answerdotai/ModernBERT-base)
 - [Portafolio del autor](https://rishanthrajendhran.github.io/)

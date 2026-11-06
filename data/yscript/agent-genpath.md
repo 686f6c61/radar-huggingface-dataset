@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agent-GenPath es un backbone DiT (Diffusion Transformer) preentrenado, publicado por el usuario yscript en HuggingFace, que sirve como base generativa para síntesis de imágenes de patología y para tareas posteriores de segmentación. El modelo se presenta como el componente central del trabajo "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation", cuyo paper y código están anunciados como "coming soon" en la model card, por lo que la documentación disponible es mínima.
+Agent-GenPath es un backbone DiT (Diffusion Transformer) preentrenado, publicado por el usuario yscript en Hugging Face, que sirve como base generativa para síntesis de imágenes de patología y para tareas posteriores de segmentación. El modelo se presenta como el componente central del trabajo "Agent-Driven Generative Priors for Pathology Image Synthesis and Segmentation", cuyo paper y código están anunciados como "coming soon" en la model card, por lo que la documentación disponible es mínima.
 
 La propuesta técnica se apoya en flow matching sobre una arquitectura DiT, un enfoque que en los últimos años ha desplazado parcialmente a los modelos de difusión clásicos en generación de imágenes por su formulación más directa del transporte entre distribuciones. El interés para desarrolladores e investigadores radica en su aplicación al dominio histopatológico, donde los priors generativos pueden emplearse para aumentar datasets escasos, generar parches sintéticos etiquetados y mejorar el entrenamiento de segmentadores.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Agent-GenPath (yscript) | DiT + flow matching para patología | no disponible | no aplica | no disponible | HuggingFace, repo 0,5 GB |
+| Agent-GenPath (yscript) | DiT + flow matching para patología | no disponible | no aplica | no disponible | Hugging Face, repo 0,5 GB |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa fiable con otros backbones generativos de patología.
@@ -78,6 +78,6 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yscript/agent-genpath
+- Hugging Face: https://huggingface.co/yscript/agent-genpath
 - Paper (arXiv): anunciado como "coming soon", no disponible
 - Código: anunciado como "coming soon", no disponible

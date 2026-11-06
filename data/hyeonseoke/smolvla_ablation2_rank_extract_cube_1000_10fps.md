@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks ni de evaluación en robot real en 
 
 | Modelo | Parametros | Contexto / entradas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| smolvla_ablation2_rank_extract_cube_1000_10fps | 450 M | 1 estado (6,) + 3 imagenes 256x256; contexto no disponible | Apache 2.0 | HuggingFace, libreria lerobot | Fine-tune de una sola tarea; sin evaluacion publicada |
-| lerobot/smolvla_base | 450 M (aproximado, segun el modelo base) | Configuracion SmolVLA | Apache 2.0 | HuggingFace | Modelo base generico del que deriva este fine-tune |
-| OpenVLA | 7 B (aproximado, dato publico) | Vision + instruccion en lenguaje | Licencia abierta con restricciones (base Llama) | HuggingFace | VLA de mayor tamano y coste; no comparable en requisitos de hardware |
+| smolvla_ablation2_rank_extract_cube_1000_10fps | 450 M | 1 estado (6,) + 3 imagenes 256x256; contexto no disponible | Apache 2.0 | Hugging Face, libreria lerobot | Fine-tune de una sola tarea; sin evaluacion publicada |
+| lerobot/smolvla_base | 450 M (aproximado, segun el modelo base) | Configuracion SmolVLA | Apache 2.0 | Hugging Face | Modelo base generico del que deriva este fine-tune |
+| OpenVLA | 7 B (aproximado, dato publico) | Vision + instruccion en lenguaje | Licencia abierta con restricciones (base Llama) | Hugging Face | VLA de mayor tamano y coste; no comparable en requisitos de hardware |
 | pi0 / pi0.5 (Physical Intelligence) | no disponible en esta busqueda | Vision + lenguaje, experto de acciones | no disponible en esta busqueda | no disponible en esta busqueda | Alternativa de referencia en VLA de escala media; datos no confirmados aqui |
 
 Los datos de los modelos alternativos provienen de conocimiento general publico y no de la informacion proporcionada en esta busqueda; los campos marcados como no disponibles no han podido confirmarse. La busqueda web realizada no devolvio resultados tecnicos relevantes (los resultados obtenidos corresponden a un hotel en Kuhlungsborn, Alemania, y no guardan relacion con el modelo).
@@ -83,7 +83,7 @@ Los datos de los modelos alternativos provienen de conocimiento general publico 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HyeonseokE/smolvla_ablation2_rank_extract_cube_1000_10fps
+- Modelo en Hugging Face: https://huggingface.co/HyeonseokE/smolvla_ablation2_rank_extract_cube_1000_10fps
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HyeonseokE/ablation2_rank_extract_cube_10fps
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=HyeonseokE/ablation2_rank_extract_cube_10fps

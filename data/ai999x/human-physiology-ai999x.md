@@ -66,7 +66,7 @@ No se han publicado otros resultados de benchmarks (MMLU, HumanEval, GSM8K u otr
 - GPU recomendadas: ninguna; no se necesita GPU.
 - Cabe en cualquier CPU consumer; probado en Windows (Python 3.13) y Linux x86-64.
 - Requisitos de software: Python 3.10 a 3.14, con sympy y mpmath como dependencias.
-- Opciones de despliegue: paquete pip (`pip install human-physiology-ai999x`), wheel desde el repositorio de HuggingFace, CLI propia, aplicación de escritorio y ejecución en navegador según los enlaces de la model card.
+- Opciones de despliegue: paquete pip (`pip install human-physiology-ai999x`), wheel desde el repositorio de Hugging Face, CLI propia, aplicación de escritorio y ejecución en navegador según los enlaces de la model card.
 - Latencia y throughput: no disponibles en la información proporcionada.
 
 ## Comparativa con modelos similares
@@ -86,8 +86,8 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AI999X/human-physiology-ai999x
-- Organización en HuggingFace: https://huggingface.co/AI999X
+- Hugging Face: https://huggingface.co/AI999X/human-physiology-ai999x
+- Organización en Hugging Face: https://huggingface.co/AI999X
 - Documentación: https://huggingface.co/AI999X/human-physiology-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/human-physiology-ai999x/tree/main/evaluation
 - Aplicación de escritorio y CLI: https://www.ai999x.com/desktop-cli/

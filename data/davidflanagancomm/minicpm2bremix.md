@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM 2B Remix es un ajuste fino (fine-tuning) del modelo MiniCPM de 2B de parametros, publicado por el usuario davidflanagancomm en HuggingFace bajo una licencia atipica denominada "fuck-idk-man". El autor lo describe explicitamente como un trabajo en curso y no proporciona informacion sobre el dataset de entrenamiento, la metodologia ni la composicion de los datos utilizados para el ajuste. El repositorio contiene unicamente pesos en formato GGUF (1,8 GB), lo que sugiere que esta pensado para inferencia con llama.cpp u otros runners compatibles con dicho formato.
+MiniCPM 2B Remix es un ajuste fino (fine-tuning) del modelo MiniCPM de 2B de parametros, publicado por el usuario davidflanagancomm en Hugging Face bajo una licencia atipica denominada "fuck-idk-man". El autor lo describe explicitamente como un trabajo en curso y no proporciona informacion sobre el dataset de entrenamiento, la metodologia ni la composicion de los datos utilizados para el ajuste. El repositorio contiene unicamente pesos en formato GGUF (1,8 GB), lo que sugiere que esta pensado para inferencia con llama.cpp u otros runners compatibles con dicho formato.
 
 El modelo hereda la arquitectura del MiniCPM original, un transformer denso de aproximadamente 2.500 millones de parametros (2.516.756.480 segun los metadatos de safetensors), pero no se documentan la longitud de contexto, los idiomas soportados ni los detalles del proceso de entrenamiento. La unica evaluacion publicada por el autor es una comparacion preliminar de 64 preguntas (32 de GSM8K y 32 de ARC-Challenge) ejecutada en una GPU RTX PRO 6000 Blackwell con llama.cpp, decodificacion greedy y limite de 512 tokens de salida.
 
@@ -32,7 +32,7 @@ No se documentan innovaciones tecnicas propias. La unica informacion operativa e
 - Generacion de texto conversacional: el tag "conversational" del repositorio sugiere un uso orientado a dialogo, aunque no se detalla el formato de prompt.
 - Razonamiento matematico basico: evaluado de forma preliminar con GSM8K (20/32 aciertos en la variante entrenada Q5).
 - Razonamiento cientifico de opcion multiple: evaluado con ARC-Challenge (25/32 aciertos en la variante entrenada Q5).
-- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse a traves de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: el tag "endpoints_compatible" indica que puede servirse a traves de infraestructura compatible con la API de Hugging Face.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible (no se declaran idiomas).
@@ -65,15 +65,15 @@ Segun el autor, frente al FP16 original el remix gana 6 respuestas correctas y p
 - VRAM estimada para inferencia: aproximadamente 2-3 GB para pesos Q5 en GGUF, mas overhead de contexto y KV cache; el repo completo ocupa 1,8 GB.
 - GPU recomendadas: cualquier GPU consumer con al menos 4 GB de VRAM (GTX 1650, RTX 3050, RTX 4060, etc.); tambien cabe en GPUs de datacenter como A100 o H100, aunque es sobredimensionado para este modelo.
 - Cabe en GPU consumer: si, practicamente en cualquier GPU moderna con 4 GB o mas de VRAM; tambien puede ejecutarse en CPU con llama.cpp.
-- Opciones de despliegue: llama.cpp, Ollama (previa conversion o importacion del GGUF), y endpoints compatibles con la API de HuggingFace (tag "endpoints_compatible"). vLLM y TGI no estan confirmados para este formato.
+- Opciones de despliegue: llama.cpp, Ollama (previa conversion o importacion del GGUF), y endpoints compatibles con la API de Hugging Face (tag "endpoints_compatible"). vLLM y TGI no estan confirmados para este formato.
 - Latencia y throughput estimados: no disponibles; el autor solo reporta la prueba en una RTX PRO 6000 Blackwell sin cifras de latencia o tokens por segundo.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniCPM 2B Remix (este) | ~2,5 B | No disponible | "fuck-idk-man" (other) | GGUF | HuggingFace, 41 descargas |
-| MiniCPM original (2B) | ~2,5 B | No disponible en esta ficha | No disponible | No disponible | HuggingFace |
+| MiniCPM 2B Remix (este) | ~2,5 B | No disponible | "fuck-idk-man" (other) | GGUF | Hugging Face, 41 descargas |
+| MiniCPM original (2B) | ~2,5 B | No disponible en esta ficha | No disponible | No disponible | Hugging Face |
 | Modelos densos de ~2-3 B de la misma categoria | ~2-3 B | Variable | Variable | Variable | Variable |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas concretas; la unica comparacion publicada es la del propio autor frente al MiniCPM original en FP16 y Q5, recogida en la seccion de benchmarks.
@@ -91,8 +91,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/davidflanagancomm/minicpm2bremix
+- Hugging Face: https://huggingface.co/davidflanagancomm/minicpm2bremix
 - Dataset GSM8K: https://huggingface.co/datasets/openai/gsm8k
 - Dataset ARC-Challenge: https://huggingface.co/datasets/allenai/ai2_arc
-- Licencia (referenciada en la model card): LICENSE dentro del repositorio de HuggingFace
+- Licencia (referenciada en la model card): LICENSE dentro del repositorio de Hugging Face
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la informacion proporcionada.

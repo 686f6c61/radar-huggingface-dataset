@@ -75,7 +75,7 @@ No se dispone en la información proporcionada de otros modelos comparables publ
 
 | Modelo | Entorno | Algoritmo | Observación / acción | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jarample-v1-link01-walk-ppo | Link01Walk-v0 | PPO (SB3) | 51 / 14 | no disponible | HuggingFace |
+| connectailab-rl-jarample-v1-link01-walk-ppo | Link01Walk-v0 | PPO (SB3) | 51 / 14 | no disponible | Hugging Face |
 | Políticas de referencia en BipedalWalker-v3 | BipedalWalker-v3 | PPO / SAC | 24 / 4 | según implementación | no disponible en esta ficha |
 | Políticas de referencia en Humanoid-v4 | Humanoid-v4 | PPO / SAC | 376 / 17 | según implementación | no disponible en esta ficha |
 
@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de otros modelos comparables publ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-link01-walk-ppo
+- Hugging Face: https://huggingface.co/hope6803/connectailab-rl-jarample-v1-link01-walk-ppo
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - MuJoCo: https://mujoco.org/
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de `link01-gym` ni demos adicionales.

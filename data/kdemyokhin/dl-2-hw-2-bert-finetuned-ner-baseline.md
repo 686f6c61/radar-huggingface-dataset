@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`kdemyokhin/dl-2-hw-2-bert-finetuned-ner-baseline` es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning del encoder `BAAI/bge-small-en-v1.5` para la tarea de token classification. Lo publica el usuario kdemyokhin en HuggingFace como baseline de un trabajo academico (el identificador "dl-2-hw-2" sugiere una practica de un curso de deep learning). Es, por tanto, un modelo pequeno y especializado, no un modelo generativo.
+`kdemyokhin/dl-2-hw-2-bert-finetuned-ner-baseline` es un modelo de reconocimiento de entidades nombradas (NER) obtenido mediante fine-tuning del encoder `BAAI/bge-small-en-v1.5` para la tarea de token classification. Lo publica el usuario kdemyokhin en Hugging Face como baseline de un trabajo academico (el identificador "dl-2-hw-2" sugiere una practica de un curso de deep learning). Es, por tanto, un modelo pequeno y especializado, no un modelo generativo.
 
 El modelo tiene 33.215.625 parametros, lo que lo situa en la gama de los encoders ligeros tipo BERT-small, y su repositorio ocupa aproximadamente 0,1 GB en formato safetensors. Se distribuye bajo licencia MIT y es compatible con el pipeline `token-classification` de la libreria Transformers. Su relevancia practica es la de un punto de partida reproducible para tareas de extraccion de entidades: entrenable en una sola GPU consumer y desplegable en CPU con latencias bajas.
 
@@ -106,6 +106,6 @@ La comparacion cuantitativa no es posible con los datos disponibles: el conjunto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kdemyokhin/dl-2-hw-2-bert-finetuned-ner-baseline
+- Modelo en Hugging Face: https://huggingface.co/kdemyokhin/dl-2-hw-2-bert-finetuned-ner-baseline
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos asociados al modelo.

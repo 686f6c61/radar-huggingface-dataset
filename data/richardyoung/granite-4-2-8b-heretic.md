@@ -110,7 +110,7 @@ La comparativa se limita a la propia familia Granite 4.2, ya que la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/richardyoung/granite-4.2-8b-heretic
+- Hugging Face: https://huggingface.co/richardyoung/granite-4.2-8b-heretic
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Modelo base (metadatos): https://huggingface.co/ibm-granite/granite-4.1-8b-base
 - Heretic: https://heretic-project.org

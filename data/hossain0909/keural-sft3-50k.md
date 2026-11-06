@@ -86,7 +86,7 @@ Keural se diferencia por su enfoque específico en coreano con MoE de cómputo a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hossain0909/keural-sft3-50k
+- Modelo en Hugging Face: https://huggingface.co/hossain0909/keural-sft3-50k
 - Modelo base (preentrenamiento): https://huggingface.co/mkd-hossain/keural-pretrained
 - Checkpoints previos mencionados en la model card: mkd-hossain/keural-sft-18k, mkd-hossain/keural-dpo-final, mkd-hossain/keural-sft2, mkd-hossain/keural-sft3-40k
 - Paper: no disponible

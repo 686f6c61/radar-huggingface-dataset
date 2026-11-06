@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rh-binyuan-krea-2-portrait-v2.5-bf16-unet` es un UNet de difusion para generacion y edicion de imagenes a partir de texto, afinado por el autor `@user_xicdkrfw` y publicado en HuggingFace por la plataforma RunningHub. El modelo parte de una base denominada `krea2` y esta especializado en retratos fotograficos de mujeres de ascendencia asiatica, con un enfasis declarado en la fidelidad a la apariencia real de la piel y los rasgos. Se distribuye como un unico fichero de pesos en precision bf16 de aproximadamente 25 GB (26,3 GB de repositorio), pensado para cargarse en ComfyUI o ejecutarse en la infraestructura de RunningHub.
+`rh-binyuan-krea-2-portrait-v2.5-bf16-unet` es un UNet de difusion para generacion y edicion de imagenes a partir de texto, afinado por el autor `@user_xicdkrfw` y publicado en Hugging Face por la plataforma RunningHub. El modelo parte de una base denominada `krea2` y esta especializado en retratos fotograficos de mujeres de ascendencia asiatica, con un enfasis declarado en la fidelidad a la apariencia real de la piel y los rasgos. Se distribuye como un unico fichero de pesos en precision bf16 de aproximadamente 25 GB (26,3 GB de repositorio), pensado para cargarse en ComfyUI o ejecutarse en la infraestructura de RunningHub.
 
 El interes practico del modelo es acotado pero claro: no compite en capacidades generales de generacion, sino que ofrece un ajuste fino orientado a un dominio visual concreto (retrato fotografico), lo que lo hace util para flujos de trabajo de estudio, edicion de retratos y generacion de imagenes de referencia con estetica fotografica. El autor indica que el entrenamiento se hizo exclusivamente con fotografias originales y no con imagenes sinteticas, un detalle relevante para quien busque texturas y rasgos menos "artificiales".
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-binyuan-krea-2-portrait-v2.5-bf16-unet | UNet de difusion, ajuste de retrato | no disponible | no aplica | no disponible | HuggingFace, RunningHub |
-| rh-binyuan-krea-2-portrait-v3.0-bf16-unet | UNet de difusion, version posterior de la misma familia | no disponible | no aplica | no disponible | HuggingFace |
-| rh-binyuan-krea-2-portrait-v3.2-bf16-unet | UNet de difusion, version posterior de la misma familia | no disponible | no aplica | no disponible | HuggingFace |
-| rh-binyuan-krea-2-v2.0-bf16-unet | UNet de difusion, variante no especifica de retrato | no disponible | no aplica | no disponible | HuggingFace |
+| rh-binyuan-krea-2-portrait-v2.5-bf16-unet | UNet de difusion, ajuste de retrato | no disponible | no aplica | no disponible | Hugging Face, RunningHub |
+| rh-binyuan-krea-2-portrait-v3.0-bf16-unet | UNet de difusion, version posterior de la misma familia | no disponible | no aplica | no disponible | Hugging Face |
+| rh-binyuan-krea-2-portrait-v3.2-bf16-unet | UNet de difusion, version posterior de la misma familia | no disponible | no aplica | no disponible | Hugging Face |
+| rh-binyuan-krea-2-v2.0-bf16-unet | UNet de difusion, variante no especifica de retrato | no disponible | no aplica | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento ni de comparaciones con modelos de difusion de proposito general, por lo que la comparativa se limita a las variantes de la misma familia publicadas por el mismo autor.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de comparaciones con modelos de difusio
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-portrait-v2.5-bf16-unet
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-binyuan-krea-2-portrait-v2.5-bf16-unet
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/2086001098992734210
 - Pagina del autor: https://www.runninghub.cn/user-center/1907766075683921922
 - RunningHub internacional: https://www.runninghub.ai

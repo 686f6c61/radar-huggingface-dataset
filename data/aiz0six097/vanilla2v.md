@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio Aiz0Six097/Vanilla2v es un modelo publicado en HuggingFace por el usuario Aiz0Six097 cuya model card no contiene más información que la declaración de licencia Apache 2.0. No se documentan arquitectura, número de parámetros, longitud de contexto, idiomas, formato de pesos ni procedimiento de entrenamiento, por lo que cualquier afirmación técnica sobre el modelo sería una inferencia no respaldada por la información disponible.
+El repositorio Aiz0Six097/Vanilla2v es un modelo publicado en Hugging Face por el usuario Aiz0Six097 cuya model card no contiene más información que la declaración de licencia Apache 2.0. No se documentan arquitectura, número de parámetros, longitud de contexto, idiomas, formato de pesos ni procedimiento de entrenamiento, por lo que cualquier afirmación técnica sobre el modelo sería una inferencia no respaldada por la información disponible.
 
 El repositorio registra cero descargas y cero valoraciones positivas, y los sellos temporales de creación y última actualización son idénticos (2026-09-27), lo que indica que no ha habido revisiones posteriores a la publicación inicial. Los únicos metadatos presentes son la etiqueta de licencia y la etiqueta de región (region:us); no se declara pipeline de inferencia, lo que impide clasificarlo como modelo de texto, visión, audio u otra modalidad.
 
@@ -93,5 +93,5 @@ No disponible. Al no conocerse la categoría funcional del modelo, su tamaño ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Aiz0Six097/Vanilla2v
+- Repositorio en Hugging Face: https://huggingface.co/Aiz0Six097/Vanilla2v
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de código o demos en la información disponible.

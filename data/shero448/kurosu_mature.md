@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Kurosu mature es un adaptador LoRA de generación de imágenes (text-to-image) publicado por el usuario Shero448 en HuggingFace. Se trata de un LoRA de difusión pensado para aplicarse sobre el modelo base John6666/prefect-illustrious-xl-v15-sdxl, un fine-tune derivado de la familia Illustrious XL, que a su vez parte de la arquitectura SDXL. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
+Kurosu mature es un adaptador LoRA de generación de imágenes (text-to-image) publicado por el usuario Shero448 en Hugging Face. Se trata de un LoRA de difusión pensado para aplicarse sobre el modelo base John6666/prefect-illustrious-xl-v15-sdxl, un fine-tune derivado de la familia Illustrious XL, que a su vez parte de la arquitectura SDXL. El repositorio ocupa 0,2 GB, lo que es coherente con un adaptador de bajo rango y no con un modelo completo.
 
 El problema que resuelve es el habitual de los LoRA: incorporar un estilo o un personaje concreto a un modelo base ya entrenado sin necesidad de reentrenar los miles de millones de parámetros del modelo completo. El nombre del repositorio y el token que abre el prompt de ejemplo de la model card ("milfkimura") apuntan a un LoRA de personaje o de estilo orientado a ilustración.
 
@@ -25,7 +25,7 @@ La relevancia de esta ficha es limitada pero conviene documentarla: el repositor
 | Pipeline | text-to-image |
 | Tamaño del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de publicación | 11 de septiembre de 2026 (según metadatos de HuggingFace) |
+| Fecha de publicación | 11 de septiembre de 2026 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Parámetros | Contexto / prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Shero448/kurosu_mature | LoRA de difusión | No disponible (repo de 0,2 GB) | Prompt estándar del modelo base | No disponible | HuggingFace, 0 descargas, 0 likes |
-| John6666/prefect-illustrious-xl-v15-sdxl | Modelo base completo (fine-tune de Illustrious XL v1.5) | No disponible en la información proporcionada (la familia SDXL ronda los 2,6 B en el UNet y 0,9 B en los text encoders, dato de conocimiento general no incluido en el repositorio) | 77 tokens por bloque en los text encoders CLIP | No disponible | HuggingFace |
-| Familia Illustrious XL (base original) | Modelo de difusión latente | Idem al anterior | Idem | No disponible en esta búsqueda | HuggingFace |
-| Otros LoRA de personaje sobre SDXL | Adaptadores de bajo rango | Típicamente entre 0,02 GB y 0,4 GB | Prompt estándar | Variable según autor | HuggingFace y Civitai |
+| Shero448/kurosu_mature | LoRA de difusión | No disponible (repo de 0,2 GB) | Prompt estándar del modelo base | No disponible | Hugging Face, 0 descargas, 0 likes |
+| John6666/prefect-illustrious-xl-v15-sdxl | Modelo base completo (fine-tune de Illustrious XL v1.5) | No disponible en la información proporcionada (la familia SDXL ronda los 2,6 B en el UNet y 0,9 B en los text encoders, dato de conocimiento general no incluido en el repositorio) | 77 tokens por bloque en los text encoders CLIP | No disponible | Hugging Face |
+| Familia Illustrious XL (base original) | Modelo de difusión latente | Idem al anterior | Idem | No disponible en esta búsqueda | Hugging Face |
+| Otros LoRA de personaje sobre SDXL | Adaptadores de bajo rango | Típicamente entre 0,02 GB y 0,4 GB | Prompt estándar | Variable según autor | Hugging Face y Civitai |
 
 No se dispone de datos de rendimiento comparados entre estas opciones, por lo que la comparativa se limita a tipo de artefacto, tamaño y disponibilidad. La búsqueda web realizada no devolvió ninguna fuente técnica relevante (los resultados fueron foros de Shopify y Zhihu, sin relación con el modelo).
 
@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparados entre estas opciones, por lo qu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shero448/kurosu_mature
+- Repositorio en Hugging Face: https://huggingface.co/Shero448/kurosu_mature
 - Modelo base: https://huggingface.co/John6666/prefect-illustrious-xl-v15-sdxl
 - La búsqueda web realizada no devolvió papers, blogs, repositorios ni demos relacionados con este modelo. Los únicos resultados obtenidos fueron páginas de la comunidad de Shopify (community.shopify.com) y de Zhihu (zhihu.com), sin relación con el modelo.

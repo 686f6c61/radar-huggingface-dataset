@@ -61,12 +61,12 @@ No se dispone de información verificada sobre modelos comparables en la documen
 - Al ser un fine-tuning sobre un dataset específico, puede heredar sesgos presentes en el corpus de entrenamiento.
 - El repositorio solo incluye la cuantización f16 según la información disponible, lo que supone un mayor consumo de memoria que cuantizaciones de 4 o 8 bits.
 - No se dispone de información sobre la calidad del dataset de instrucciones en pashto ni sobre su evaluación.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una validación externa limitada.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una validación externa limitada.
 - La licencia Apache-2.0 permite uso comercial, pero el usuario debe verificar la procedencia de los datos de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF
+- Hugging Face: https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct-GGUF
 - Modelo base (safetensors): https://huggingface.co/nassimjp/MiniCPM5-2B-SFT-Pashto-Instruct
 - Modelo original OpenBMB: https://huggingface.co/openbmb/MiniCPM5-2B-SFT
 - Repositorio GitHub de MiniCPM: https://github.com/OpenBMB/MiniCPM

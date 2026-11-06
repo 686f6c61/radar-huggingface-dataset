@@ -6,7 +6,7 @@ GeoLadder-16M-32B-bs32-lr0.0087-wd0.1-decay0.01 es un modelo de lenguaje autorre
 
 El objetivo del trabajo es determinar si el rango efectivo de la matriz de unembedding puede utilizarse como estimador del rendimiento en tareas downstream. La conclusion es negativa: la relacion no es consistente, el rango alto suele acompanar a los mejores modelos pero no de forma universal, y el rango bajo coincide con degradaciones tardias del entrenamiento en lugar de causarlas. Los hiperparametros de preentrenamiento, como el tamano de lote y el weight decay, moldean fuertemente estas metricas geometricas sin predecir de forma fiable el rendimiento final.
 
-El repositorio de HuggingFace contiene unicamente el checkpoint final (rama `main`, step488292) mas 40 checkpoints intermedios distribuidos como ramas, lo que permite analizar la evolucion del entrenamiento paso a paso. El modelo usa la arquitectura legacy `hf_olmo` (`OLMoForCausalLM`), requiere la libreria `ai2-olmo` para cargarse y no dispone de licencia declarada, ficha de idiomas ni pesos en formatos alternativos como safetensors o GGUF.
+El repositorio de Hugging Face contiene unicamente el checkpoint final (rama `main`, step488292) mas 40 checkpoints intermedios distribuidos como ramas, lo que permite analizar la evolucion del entrenamiento paso a paso. El modelo usa la arquitectura legacy `hf_olmo` (`OLMoForCausalLM`), requiere la libreria `ai2-olmo` para cargarse y no dispone de licencia declarada, ficha de idiomas ni pesos en formatos alternativos como safetensors o GGUF.
 
 ## Especificaciones tecnicas
 
@@ -19,13 +19,13 @@ El repositorio de HuggingFace contiene unicamente el checkpoint final (rama `mai
 | Tipos de cuantizacion | no disponible (solo se publican pesos en `pytorch_model.bin`; no hay GGUF, AWQ ni GPTQ) |
 | Idiomas soportados | no disponible (el dataset de entrenamiento, `EleutherAI/the_pile_deduplicated`, es predominantemente en ingles) |
 | Licencia | no disponible |
-| Formato de pesos | PyTorch (`pytorch_model.bin`) + `config.json` de HuggingFace + `config.yaml` original de OLMo; no se publican safetensors |
+| Formato de pesos | PyTorch (`pytorch_model.bin`) + `config.json` de Hugging Face + `config.yaml` original de OLMo; no se publican safetensors |
 | Tamano del repositorio | 4,7 GB (incluye 40 checkpoints y los indices de datos) |
 | Fecha de publicacion | 12 de octubre de 2026 |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only denso de estilo OLMo, con 16M de parametros y 2048 tokens de longitud de secuencia. Emplea la implementacion `OLMoForCausalLM` registrada por la libreria `hf_olmo` sobre `transformers`, lo que la situa en la estirpe de los modelos OLMo de AI2 en lugar de en la de los transformers estandar de HuggingFace. El entrenamiento se realizo sobre `EleutherAI/the_pile_deduplicated`, la version deduplicada del Pile, con un presupuesto de 32.000 millones de tokens.
+La arquitectura es un transformer decoder-only denso de estilo OLMo, con 16M de parametros y 2048 tokens de longitud de secuencia. Emplea la implementacion `OLMoForCausalLM` registrada por la libreria `hf_olmo` sobre `transformers`, lo que la situa en la estirpe de los modelos OLMo de AI2 en lugar de en la de los transformers estandar de Hugging Face. El entrenamiento se realizo sobre `EleutherAI/the_pile_deduplicated`, la version deduplicada del Pile, con un presupuesto de 32.000 millones de tokens.
 
 La configuracion de entrenamiento esta codificada en el propio nombre del repositorio: batch size de 32 secuencias de 2048 tokens (65.536 tokens por paso), learning rate pico de 0.0087, weight decay de 0.1 y programacion coseno con learning rate final igual al 1% del pico (`alpha_f` = 0.01, etiquetado como `decay0.01`). No se menciona en la informacion disponible el uso de RLHF, DPO, SFT ni ninguna fase de ajuste posterior al preentrenamiento, por lo que debe considerarse un modelo exclusivamente base. Cada rama del repositorio corresponde a un paso de entrenamiento (40 en total, de `step0` a `step488292`) y los directorios `data-indices/` y `train_data/global_indices.npy` registran el orden exacto de los datos, lo que permite reproducir el flujo de entrenamiento. La innovacion metodologica del trabajo no esta en la arquitectura, sino en el analisis sistematico del rango efectivo de la matriz de unembedding y su relacion con el rendimiento downstream en variaciones controladas de batch size, weight decay, learning rate, presupuesto de tokens y LR final.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tokens de entrenamiento | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GeoLadder-16M-32B (este modelo) | 16M | 32.000M | 2048 | no disponible | HuggingFace, 40 checkpoints, requiere `ai2-olmo` |
-| Pythia-14M (EleutherAI) | 14M | 300.000M (Pile deduplicado) | 2048 | Apache 2.0 | HuggingFace, 154 checkpoints, arquitectura GPT-NeoX estandar |
-| Pythia-70M (EleutherAI) | 70M | 300.000M (Pile deduplicado) | 2048 | Apache 2.0 | HuggingFace, 154 checkpoints, arquitectura GPT-NeoX estandar |
-| Modelos OLMo de AI2 (familia) | desde 1B | no disponible en esta busqueda | no disponible | Apache 2.0 | HuggingFace y repositorio oficial de AI2 |
+| GeoLadder-16M-32B (este modelo) | 16M | 32.000M | 2048 | no disponible | Hugging Face, 40 checkpoints, requiere `ai2-olmo` |
+| Pythia-14M (EleutherAI) | 14M | 300.000M (Pile deduplicado) | 2048 | Apache 2.0 | Hugging Face, 154 checkpoints, arquitectura GPT-NeoX estandar |
+| Pythia-70M (EleutherAI) | 70M | 300.000M (Pile deduplicado) | 2048 | Apache 2.0 | Hugging Face, 154 checkpoints, arquitectura GPT-NeoX estandar |
+| Modelos OLMo de AI2 (familia) | desde 1B | no disponible en esta busqueda | no disponible | Apache 2.0 | Hugging Face y repositorio oficial de AI2 |
 
 La diferencia clave frente a la suite Pythia es el objetivo: Pythia busca ofrecer checkpoints publicos para interpretabilidad, mientras que GeoLadder esta disenado para un estudio controlado de geometria y rendimiento. Pythia entrena 300.000 millones de tokens frente a los 32.000 millones de este modelo, y su licencia Apache 2.0 permite uso comercial, algo que aqui no esta garantizado. A cambio, GeoLadder publica los indices exactos de los datos de entrenamiento y una rejilla de hiperparametros mucho mas sistematica.
 
@@ -93,7 +93,7 @@ La diferencia clave frente a la suite Pythia es el objetivo: Pythia busca ofrece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs32-lr0.0087-wd0.1-decay0.01
+- Modelo en Hugging Face: https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs32-lr0.0087-wd0.1-decay0.01
 - Coleccion GeoLadder completa (108 modelos): https://huggingface.co/collections/dill-lab/geoladder-6acd192e30ec71aff2998e2e
 - Articulo en PMLR (ICML 2026, volumen 306, paginas 61454-61482): https://proceedings.mlr.press/v306/kulkarni26c.html
 - Preprint en arXiv: https://arxiv.org/abs/2602.20433

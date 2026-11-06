@@ -102,8 +102,8 @@ Comprobacion del paquete publicada el 25 de septiembre de 2026: el paquete tal c
 
 | Modelo | Parametros | Contexto | JevBench hard publico | JevBench total 231 | Licencia | Disponibilidad |
 |---|---|---|---:|---:|---|---|
-| Decision 4B v1.1 | ~4B base + 14,4 M LoRA | 16.384 tokens | 75,7 | 87,4 | Apache-2.0 | Publico en HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen3.5-4B congelado | ~4B | no disponible | 60,4 | 79,7 | Apache-2.0 | Publico en HuggingFace |
+| Decision 4B v1.1 | ~4B base + 14,4 M LoRA | 16.384 tokens | 75,7 | 87,4 | Apache-2.0 | Publico en Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen3.5-4B congelado | ~4B | no disponible | 60,4 | 79,7 | Apache-2.0 | Publico en Hugging Face |
 | Jev 1.13 | no disponible | no disponible | 74,1 (tier completo de 220 items, 109 reservados) | 86,6 | no disponible (implementacion cerrada) | No publico; solo se usan cifras de referencia citadas por el autor |
 
 No se dispone de datos de benchmarks ni de contexto para otros adaptadores de decision tipada comparables en la informacion proporcionada.
@@ -124,7 +124,7 @@ No se dispone de datos de benchmarks ni de contexto para otros adaptadores de de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flymy-ai/decision-4b-v1.1
+- Modelo en Hugging Face: https://huggingface.co/flymy-ai/decision-4b-v1.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B (revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a)
 - Receta de referencia seguida por el autor: https://huggingface.co/allebee/jevk5 (JevK5 v0.2, Apache-2.0)
 - Archivos citados en el repositorio: `model.py`, `manifest.json`, `model.json`, `server.py`, `jevbench_adapter.py`, `run_jevbench.py`, `package_check.json`, `LICENSE`

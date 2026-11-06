@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de alternativas en la informacion proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ya9919/qwen3.5-4b-base-finance-lora-head-50k
+- Modelo en Hugging Face: https://huggingface.co/ya9919/qwen3.5-4b-base-finance-lora-head-50k
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Repositorio de reproduccion e informacion agregada: https://github.com/KataDavidXD/mas-simulation
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo (unicamente resultados no relacionados del dominio bandlab.com), por lo que no se dispone de papers, blogs ni demos adicionales.

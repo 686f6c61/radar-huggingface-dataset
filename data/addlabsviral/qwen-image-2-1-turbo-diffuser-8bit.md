@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Turbo-diffuser-8bit es una version cuantizada a int8 del modelo de generacion de imagenes Qwen/Qwen-Image-2.1-Turbo, publicada por el usuario addlabsviral en HuggingFace. Se trata de un modelo de difusion texto-a-imagen con 7.118.090.368 parametros (unos 7,1 mil millones) y un repositorio de 17,8 GB, distribuido en formato safetensors y pensado para ejecutarse con la libreria diffusers mediante la clase `QwenImage21Pipeline`.
+Qwen-Image-2.1-Turbo-diffuser-8bit es una version cuantizada a int8 del modelo de generacion de imagenes Qwen/Qwen-Image-2.1-Turbo, publicada por el usuario addlabsviral en Hugging Face. Se trata de un modelo de difusion texto-a-imagen con 7.118.090.368 parametros (unos 7,1 mil millones) y un repositorio de 17,8 GB, distribuido en formato safetensors y pensado para ejecutarse con la libreria diffusers mediante la clase `QwenImage21Pipeline`.
 
 La cuantizacion es de tipo weight-only int8 realizada con torchao: el transformer y el codificador de texto se almacenan en int8, mientras que el VAE permanece en bfloat16. Segun la model card, esto reduce el consumo de VRAM aproximadamente un 50 % respecto a la version bf16 con una deriva de calidad minima. El modelo conserva la configuracion de muestreo del modelo base: 8 pasos de inferencia, `CFG=1` y `use_kv_cache=True`.
 
@@ -18,7 +18,7 @@ Es relevante porque permite desplegar un generador texto-a-imagen de 7B en GPUs 
 | Longitud de contexto | no disponible (modelo text-to-image; no se documenta el limite de tokens del prompt) |
 | Tipos de cuantizacion | int8 weight-only (torchao) en transformer y codificador de texto; VAE en bfloat16 |
 | Idiomas soportados | no disponible |
-| Licencia | La model card indica que la licencia sigue la del modelo base (Qwen Research License); el campo de licencia en HuggingFace figura como no disponible |
+| Licencia | La model card indica que la licencia sigue la del modelo base (Qwen Research License); el campo de licencia en Hugging Face figura como no disponible |
 | Formato de pesos | safetensors (pesos int8 de torchao + VAE en bfloat16) |
 
 ## Arquitectura y entrenamiento
@@ -69,8 +69,8 @@ La busqueda web no devolvio informacion tecnica sobre alternativas, por lo que l
 
 | Modelo | Parametros | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| addlabsviral/Qwen-Image-2.1-Turbo-diffuser-8bit | 7,1B | int8 weight-only (torchao) | Qwen Research License segun la model card | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen-Image-2.1-Turbo (modelo base) | 7,1B | bfloat16 | Qwen Research License (no verificada en esta busqueda) | HuggingFace |
+| addlabsviral/Qwen-Image-2.1-Turbo-diffuser-8bit | 7,1B | int8 weight-only (torchao) | Qwen Research License segun la model card | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen-Image-2.1-Turbo (modelo base) | 7,1B | bfloat16 | Qwen Research License (no verificada en esta busqueda) | Hugging Face |
 | Alternativas de la misma categoria (por ejemplo, generadores texto-a-imagen de 8-12B como FLUX.1-dev o Stable Diffusion 3.5 Large) | no disponible en la informacion recogida | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,14 +81,14 @@ La busqueda web no devolvio informacion tecnica sobre alternativas, por lo que l
 - Dependencia de versiones concretas: requiere diffusers con el PR #14950 integrado y transformers >= 5.17.0, ademas de torchao en tiempo de carga. Un desajuste de versiones puede impedir la carga de los pesos.
 - Riesgo de alucinacion visual: como cualquier modelo generativo, puede producir anatomias incorrectas, texto ilegible en la imagen o composiciones incoherentes con el prompt, especialmente en escenas complejas o con multiples sujetos.
 - Sesgos: no se documenta ninguna evaluacion de sesgos demograficos, culturales o de representacion.
-- Restricciones de licencia: la model card indica que la licencia sigue la del modelo base (Qwen Research License). El campo de licencia en HuggingFace esta vacio. El uso comercial debe verificarse contra los terminos del modelo base antes de cualquier despliegue en produccion.
+- Restricciones de licencia: la model card indica que la licencia sigue la del modelo base (Qwen Research License). El campo de licencia en Hugging Face esta vacio. El uso comercial debe verificarse contra los terminos del modelo base antes de cualquier despliegue en produccion.
 - Idioma: no se documenta que idiomas admite el codificador de texto ni como se comporta con prompts en castellano.
 - Limitaciones de resolucion y contexto: no se documentan resoluciones maximas soportadas ni limites de longitud del prompt.
 - Uso en produccion: al ser una cuantizacion de terceros sobre un modelo de terceros, no existe garantia de mantenimiento, soporte ni actualizaciones por parte del autor.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/addlabsviral/Qwen-Image-2.1-Turbo-diffuser-8bit
+- Modelo en Hugging Face: https://huggingface.co/addlabsviral/Qwen-Image-2.1-Turbo-diffuser-8bit
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo
 - Repositorio de diffusers: https://github.com/huggingface/diffusers
 - Pull request de diffusers con soporte de sigmas configuradas en el pipeline: https://github.com/huggingface/diffusers/pull/14950

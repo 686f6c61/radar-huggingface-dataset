@@ -85,8 +85,8 @@ La comparacion con Pythia es la mas directa por proposito (suite de escala con s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohithck/delphi-3e20-2.5Bparams-18.6Btokens-seed62746
-- Suite completa Delphi en HuggingFace: https://huggingface.co/marin-community
+- Modelo en Hugging Face: https://huggingface.co/rohithck/delphi-3e20-2.5Bparams-18.6Btokens-seed62746
+- Suite completa Delphi en Hugging Face: https://huggingface.co/marin-community
 - Datos de las figuras del blog: https://huggingface.co/datasets/marin-community/delphi-blog-data
 - Blog "Scaling Laws That Extrapolate 300x Past the Fit": https://openathena.ai/blog/delphi
 - Repositorio Marin: https://github.com/marin-community/marin

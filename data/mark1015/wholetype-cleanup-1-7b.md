@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mark1015/wholetype-cleanup-1.7b
+- Modelo en Hugging Face: https://huggingface.co/Mark1015/wholetype-cleanup-1.7b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Version cuantizada de partida: https://huggingface.co/mlx-community/Qwen3-1.7B-4bit

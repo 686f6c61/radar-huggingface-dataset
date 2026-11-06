@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-scan-object-left-first-data20260916-lora-10k-e193 (este) | no disponible | horizonte de accion 50 | no publicado (el autor no reclama tasa de exito) | no disponible | HuggingFace, 0 descargas, 6,3 GB |
+| pi05-scan-object-left-first-data20260916-lora-10k-e193 (este) | no disponible | horizonte de accion 50 | no publicado (el autor no reclama tasa de exito) | no disponible | Hugging Face, 0 descargas, 6,3 GB |
 | pi05 E166 (mismo autor, repositorio anterior) | no disponible | no disponible | no disponible | no disponible | mencionado en la model card; repositorio separado |
 | Base PI0.5 (parametros base requeridos por la configuracion) | no disponible | no disponible | no disponible | no disponible | debe obtenerse y verificarse por separado (`PI05_JAX_BASE`) |
 
@@ -98,7 +98,7 @@ No se dispone de datos suficientes en la informacion proporcionada para comparar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-scan-object-left-first-data20260916-lora-10k-e193
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-scan-object-left-first-data20260916-lora-10k-e193
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-left-first-20260916 (revision `2a8d55392c903123ba8eb640dd1af4f912b00e20`)
 - Metricas de entrenamiento (ejecucion E193): https://swanlab.cn/@Travor/CTR-PI05-LoRA10k
 - Commit de OpenPI compatible: `90f88ff2089bfc71db1011291dee48282d28aee2` (no se incluye URL del repositorio en la informacion disponible)

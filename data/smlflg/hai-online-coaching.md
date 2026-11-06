@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El identificador `smlflg/HAI-ONLINE-Coaching` no corresponde a un modelo de inteligencia artificial, sino a un repositorio de HuggingFace publicado por el usuario `smlflg` que funciona como espacio de trabajo (workspace) para un negocio de coaching online. La model card describe una estructura de carpetas (`website/`, `inhalte/`, `termine/`, `buchungsanfragen/`, `sales/`) y una serie de puntos de control humanos (human gates) antes de publicar la web, agendar citas, contactar con clientes o configurar el cobro. El contenido esta redactado en aleman y no incluye ningun artefacto de pesos, configuracion de arquitectura ni tokenizador.
+El identificador `smlflg/HAI-ONLINE-Coaching` no corresponde a un modelo de inteligencia artificial, sino a un repositorio de Hugging Face publicado por el usuario `smlflg` que funciona como espacio de trabajo (workspace) para un negocio de coaching online. La model card describe una estructura de carpetas (`website/`, `inhalte/`, `termine/`, `buchungsanfragen/`, `sales/`) y una serie de puntos de control humanos (human gates) antes de publicar la web, agendar citas, contactar con clientes o configurar el cobro. El contenido esta redactado en aleman y no incluye ningun artefacto de pesos, configuracion de arquitectura ni tokenizador.
 
 El repositorio no declara pipeline, licencia, idiomas, ni tipos de cuantizacion, y acumula 0 descargas y 0 likes en el momento de la consulta. Las fechas de creacion y actualizacion registradas (16 de septiembre de 2026) son posteriores a la fecha habitual de publicacion, lo que apunta a una anomalia de metadatos o a una entrada creada manualmente con fecha futura.
 
@@ -89,7 +89,7 @@ No disponible. No es posible establecer una comparativa porque el repositorio no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/smlflg/HAI-ONLINE-Coaching
+- Repositorio en Hugging Face: https://huggingface.co/smlflg/HAI-ONLINE-Coaching
 - Resultados de busqueda web: no relacionados con el artefacto; no se incluyen como fuentes validas.
   - https://www.who.int/publications/m/item/9789231002595
   - https://www.who.int/fr/news-room/questions-and-answers/item/comprehensive-sexuality-education

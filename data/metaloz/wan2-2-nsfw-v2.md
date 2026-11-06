@@ -64,9 +64,9 @@ No es posible realizar una comparativa rigurosa al carecer de datos verificados 
 
 | Modelo | Parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Wan2.2 (original) | 5B (MoE) | 720p, 24fps | Apache-2.0 | GitHub, HuggingFace |
-| Wan2.1 | 1.3B / 14B | 480p / 720p | Apache-2.0 | GitHub, HuggingFace |
-| CogVideoX | 5B | 720p | Apache-2.0 | HuggingFace |
+| Wan2.2 (original) | 5B (MoE) | 720p, 24fps | Apache-2.0 | GitHub, Hugging Face |
+| Wan2.1 | 1.3B / 14B | 480p / 720p | Apache-2.0 | GitHub, Hugging Face |
+| CogVideoX | 5B | 720p | Apache-2.0 | Hugging Face |
 
 Pero no se puede afirmar que `metaloz/Wan2.2-nsfw-v2` pertenezca a esta categoría técnica sin confirmación.
 
@@ -81,8 +81,8 @@ Pero no se puede afirmar que `metaloz/Wan2.2-nsfw-v2` pertenezca a esta categor�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/metaloz/Wan2.2-nsfw-v2
+- Repositorio Hugging Face: https://huggingface.co/metaloz/Wan2.2-nsfw-v2
 - Repositorio oficial de Wan2.2 en GitHub: https://github.com/Wan-Video/Wan2.2
 - Página de Wan2.2 AI (no oficial): https://wan22.ai/home
 - Otro repositorio de referencia de Wan2.2: https://github.com/Madxthree/wan2.2
-- Modelos compatibles con la librería wan2.2 en HuggingFace: https://huggingface.co/models?library=wan2.2
+- Modelos compatibles con la librería wan2.2 en Hugging Face: https://huggingface.co/models?library=wan2.2

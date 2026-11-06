@@ -89,7 +89,7 @@ La comparacion con alternativas de la misma categoria (modelos abiertos de ~30 B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-MPOA-heretic
+- Modelo en Hugging Face: https://huggingface.co/richardyoung/OLMo-2-0325-32B-Instruct-MPOA-heretic
 - Modelo base: https://huggingface.co/allenai/OLMo-2-0325-32B-Instruct
 - Modelo pre-DPO: https://huggingface.co/allenai/OLMo-2-0325-32B-DPO
 - Heretic: https://heretic-project.org

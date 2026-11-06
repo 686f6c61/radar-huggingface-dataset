@@ -71,7 +71,7 @@ No se dispone de informacion sobre modelos comparables en la misma categoria (mo
 
 ## Enlaces
 
-- [HuggingFace - Cdeimnoo/frontier95m-onnx](https://huggingface.co/Cdeimnoo/frontier95m-onnx)
+- [Hugging Face - Cdeimnoo/frontier95m-onnx](https://huggingface.co/Cdeimnoo/frontier95m-onnx)
 - [ONNX Model Zoo](https://github.com/onnx/models)
 - [ONNX Runtime - Models](https://onnxruntime.ai/models)
 - [ONNX - Home](https://onnx.ai/)

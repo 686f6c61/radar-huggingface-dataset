@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ruoruozi/Qwen3.5-2B-ft-kefu` es un fine-tuning del modelo base Qwen3.5-2B, desarrollado por el usuario ruoruozi y publicado en HuggingFace bajo licencia Apache-2.0. El nombre del modelo sugiere que está orientado a tareas de atención al cliente (kefu significa "atención al cliente" en chino), aunque la model card no incluye ninguna información adicional que confirme el propósito ni los detalles del entrenamiento.
+El modelo `ruoruozi/Qwen3.5-2B-ft-kefu` es un fine-tuning del modelo base Qwen3.5-2B, desarrollado por el usuario ruoruozi y publicado en Hugging Face bajo licencia Apache-2.0. El nombre del modelo sugiere que está orientado a tareas de atención al cliente (kefu significa "atención al cliente" en chino), aunque la model card no incluye ninguna información adicional que confirme el propósito ni los detalles del entrenamiento.
 
 El modelo base Qwen3.5-2B es un modelo multimodal pequeño de 2B parámetros desarrollado por Alibaba Cloud, lanzado en febrero de 2026. Según la información disponible, utiliza una arquitectura híbrida que combina Gated Delta Networks y Gated Attention, e incorpora un codificador de visión (vision encoder) para procesar imágenes. Su diseño busca ofrecer capacidades multimodales con un coste computacional eficiente.
 
@@ -76,6 +76,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ruoruozi/Qwen3.5-2B-ft-kefu
+- Hugging Face: https://huggingface.co/ruoruozi/Qwen3.5-2B-ft-kefu
 - Especificaciones de Qwen3.5-2B (apxml): https://apxml.com/models/qwen35-2b
 - Qwen3.5-2B en There's An AI For That: https://theresanaiforthat.com/model/qwen3-5-2b/

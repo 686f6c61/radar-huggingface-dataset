@@ -76,7 +76,7 @@ La comparativa se basa en datos públicos de los modelos base. Esta conversión 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-5bit
+- Repositorio Hugging Face: https://huggingface.co/t0rr3sp3dr0/Qwen3.6-35B-A3B-MLX-MTP-5bit
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Conversión MLX de unsloth (4-bit): https://huggingface.co/unsloth/Qwen3.6-35B-A3B-UD-MLX-4bit
 - Guía de Qwen 3.6 (insiderllm.com): https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

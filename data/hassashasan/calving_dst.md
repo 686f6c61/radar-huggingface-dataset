@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hassashasan/calving_dst` es un repositorio alojado en HuggingFace por el usuario `hassashasan` bajo licencia AGPL-3.0. La model card pública no contiene descripción funcional, arquitectura, datos de entrenamiento ni ejemplos de uso: únicamente declara la licencia mediante metadatos YAML. No hay información sobre el propósito del modelo, el problema que resuelve ni su relevancia técnica.
+`hassashasan/calving_dst` es un repositorio alojado en Hugging Face por el usuario `hassashasan` bajo licencia AGPL-3.0. La model card pública no contiene descripción funcional, arquitectura, datos de entrenamiento ni ejemplos de uso: únicamente declara la licencia mediante metadatos YAML. No hay información sobre el propósito del modelo, el problema que resuelve ni su relevancia técnica.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) y fue creado y actualizado en la misma fecha (2026-11-02T05:42:44Z), lo que sugiere una publicación reciente sin difusión ni validación por parte de la comunidad. No se declara pipeline de inferencia, idiomas soportados ni formato de pesos.
 
@@ -64,7 +64,7 @@ No disponible. Al desconocerse la categoría, el tamaño y la tarea del modelo, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| hassashasan/calving_dst | no disponible | no disponible | AGPL-3.0 | HuggingFace |
+| hassashasan/calving_dst | no disponible | no disponible | AGPL-3.0 | Hugging Face |
 | Alternativa comparable | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,5 +78,5 @@ No disponible. Al desconocerse la categoría, el tamaño y la tarea del modelo, 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hassashasan/calving_dst
+- Repositorio Hugging Face: https://huggingface.co/hassashasan/calving_dst
 - No se han encontrado papers, blogs, repositorios de código ni demos en la información proporcionada.

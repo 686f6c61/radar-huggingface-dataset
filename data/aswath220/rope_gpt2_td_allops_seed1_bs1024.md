@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rope_gpt2_td_allops_seed1_bs1024` es un modelo de lenguaje de pequeno tamano entrenado desde cero por el usuario Aswath220 (repositorio `BitTokens`) y publicado en HuggingFace. Se trata de una variante de GPT-2 con embeddings posicionales rotatorios (RoPE) en lugar de los embeddings posicionales aprendidos del GPT-2 original, con una configuracion reducida de 6 capas, 6 cabezas de atencion y 768 dimensiones de modelo. El modelo no es un modelo de proposito general: ha sido entrenado especificamente para resolver operaciones aritmeticas basicas (suma, resta, multiplicacion y division) con operandos enteros entre 0 y 999.
+`rope_gpt2_td_allops_seed1_bs1024` es un modelo de lenguaje de pequeno tamano entrenado desde cero por el usuario Aswath220 (repositorio `BitTokens`) y publicado en Hugging Face. Se trata de una variante de GPT-2 con embeddings posicionales rotatorios (RoPE) en lugar de los embeddings posicionales aprendidos del GPT-2 original, con una configuracion reducida de 6 capas, 6 cabezas de atencion y 768 dimensiones de modelo. El modelo no es un modelo de proposito general: ha sido entrenado especificamente para resolver operaciones aritmeticas basicas (suma, resta, multiplicacion y division) con operandos enteros entre 0 y 999.
 
 La particularidad tecnica mas destacable es el uso de una tokenizacion especifica denominada "td" (three-digit), entrenada ad hoc para este dominio numerico y alojada en `tokenizers/num_text/td_gpt2`. El entrenamiento se realizo con un batch de 1024, 10 epocas, optimizador Muon con learning rate 0.02 y semilla 1, lo que sugiere un experimento controlado y reproducible orientado a estudiar el comportamiento de RoPE en tareas aritmeticas de digitos.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Dominio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rope_gpt2_td_allops_seed1_bs1024 | no disponible (6 capas, 768 dims) | no disponible | Aritmetica entera 0-999 | no disponible | HuggingFace (0 descargas) |
-| GPT-2 small (referencia) | 124 M | 1024 | Texto general | MIT | HuggingFace |
+| rope_gpt2_td_allops_seed1_bs1024 | no disponible (6 capas, 768 dims) | no disponible | Aritmetica entera 0-999 | no disponible | Hugging Face (0 descargas) |
+| GPT-2 small (referencia) | 124 M | 1024 | Texto general | MIT | Hugging Face |
 | Modelos aritmeticos especializados (p. ej. variantes de GPT-2 con tokenizacion numerica) | variable | variable | Aritmetica | variable | variable |
 
 No se dispone de datos de rendimiento de este modelo ni de alternativas directamente comparables en la informacion proporcionada, por lo que la comparativa cuantitativa no esta disponible.
@@ -79,11 +79,11 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas directam
 - No se documenta soporte multilingue ni de otros alfabetos; el tokenizador "td" esta disenado para digitos y operadores.
 - Requiere codigo personalizado (`RopeGPT2LMHeadModel`) para cargar los pesos; no es plug-and-play con pipelines estandar de `transformers`.
 - Repositorio de 18.8 GB con multiples snapshots: la descarga completa es costosa para un modelo de este tamano; conviene descargar solo el snapshot deseado.
-- Sin descargas ni likes en HuggingFace: no hay evidencia de validacion por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face: no hay evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Aswath220/rope_gpt2_td_allops_seed1_bs1024
+- Hugging Face: https://huggingface.co/Aswath220/rope_gpt2_td_allops_seed1_bs1024
 - Repositorio BitTokens (referenciado en la model card, ruta `networks/rope_gpt2.py` @ `2a84bb1`): no disponible como URL directa en la informacion proporcionada
 - Tokenizador `tokenizers/num_text/td_gpt2`: no disponible como URL directa en la informacion proporcionada
 - Paper, blog o demo: no disponibles

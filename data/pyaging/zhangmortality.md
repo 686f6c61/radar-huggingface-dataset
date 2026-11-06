@@ -4,7 +4,7 @@
 
 El modelo `pyaging/zhangmortality` es un reloj de envejecimiento basado en metilación de ADN, desarrollado por Zhang et al. en 2017 y publicado en *Nature Communications*. Su objetivo es predecir el riesgo de mortalidad por todas las causas en humanos a partir de diez sitios CpG específicos en sangre periférica. A diferencia de los modelos de lenguaje, no se trata de una red neuronal, sino de un score lineal ponderado: la suma de los valores beta de diez CpGs multiplicados por coeficientes derivados mediante regresión LASSO continua, tal como se describe en el suplemento del artículo original.
 
-Este modelo es relevante en el campo de la biología del envejecimiento y la epidemiología molecular, ya que permite estimar el riesgo de mortalidad a partir de una muestra de sangre con un número reducido de marcadores epigenéticos. La implementación en la librería `pyaging` facilita su uso directo en pipelines de análisis de metilación, sin necesidad de recalcular los coeficientes ni de disponer de infraestructura computacional pesada. El repositorio en HuggingFace contiene la definición del modelo y su integración con `pyaging`, aunque el tamaño del repositorio es de 0.0 GB, lo que indica que no se almacenan pesos en formato tradicional, sino la lógica de cálculo y los coeficientes embebidos en el código.
+Este modelo es relevante en el campo de la biología del envejecimiento y la epidemiología molecular, ya que permite estimar el riesgo de mortalidad a partir de una muestra de sangre con un número reducido de marcadores epigenéticos. La implementación en la librería `pyaging` facilita su uso directo en pipelines de análisis de metilación, sin necesidad de recalcular los coeficientes ni de disponer de infraestructura computacional pesada. El repositorio en Hugging Face contiene la definición del modelo y su integración con `pyaging`, aunque el tamaño del repositorio es de 0.0 GB, lo que indica que no se almacenan pesos en formato tradicional, sino la lógica de cálculo y los coeficientes embebidos en el código.
 
 ## Especificaciones tecnicas
 
@@ -70,6 +70,6 @@ No se dispone de una comparación cuantitativa en la información proporcionada.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [pyaging/zhangmortality](https://huggingface.co/pyaging/zhangmortality)
+- Repositorio en Hugging Face: [pyaging/zhangmortality](https://huggingface.co/pyaging/zhangmortality)
 - Documentación de pyaging: [pyaging Clock Catalogue](https://pyaging.readthedocs.io)
 - Artículo original: Zhang, Y., Wilson, R., Heiss, J. et al. DNA methylation signatures in peripheral blood strongly predict all-cause mortality. Nature Communications 8, 14617 (2017). DOI: [10.1038/ncomms14617](https://doi.org/10.1038/ncomms14617)

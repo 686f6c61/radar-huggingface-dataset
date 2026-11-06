@@ -2,11 +2,11 @@
 
 ## Resumen
 
-zorost/nava-fa es un modelo de síntesis de voz (text-to-speech) para persa publicado por el usuario zorost en HuggingFace. Se trata de un ajuste fino del modelo base kyutai/pocket-tts, un sistema de TTS compacto de aproximadamente 109,5 millones de parámetros que la metadata del repositorio etiqueta explícitamente como apto para ejecución en CPU. Conserva la librería del original (pocket-tts) y distribuye sus pesos en formato safetensors, con etiquetas que indican además capacidad de clonación de voz.
+zorost/nava-fa es un modelo de síntesis de voz (text-to-speech) para persa publicado por el usuario zorost en Hugging Face. Se trata de un ajuste fino del modelo base kyutai/pocket-tts, un sistema de TTS compacto de aproximadamente 109,5 millones de parámetros que la metadata del repositorio etiqueta explícitamente como apto para ejecución en CPU. Conserva la librería del original (pocket-tts) y distribuye sus pesos en formato safetensors, con etiquetas que indican además capacidad de clonación de voz.
 
 Con 109.502.146 parámetros y un repositorio de 0,4 GB, nava-fa se sitúa en la gama de los sistemas de voz ligeros: no exige GPU dedicada y puede desplegarse en hardware de consumo, lo que resulta relevante para aplicaciones de escritorio, asistentes locales y servicios con restricciones de coste o de privacidad. El interés añadido es idiomático: el persa (farsi) cuenta con menos herramientas de voz abiertas y documentadas que el inglés u otros idiomas mayoritarios, de modo que un modelo ajustado específicamente para fa cubre un hueco práctico para desarrolladores iraníes o para productos localizados en ese mercado.
 
-El acceso está restringido: se trata de un modelo gated que obliga a aceptar las condiciones en HuggingFace antes de la descarga. La licencia es propia (zorost-nava-fa-license), etiquetada como license:other, por lo que los términos de uso comercial deben verificarse caso por caso. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", y no se han publicado resultados de benchmarks en la información disponible.
+El acceso está restringido: se trata de un modelo gated que obliga a aceptar las condiciones en Hugging Face antes de la descarga. La licencia es propia (zorost-nava-fa-license), etiquetada como license:other, por lo que los términos de uso comercial deben verificarse caso por caso. En el momento de redactar esta ficha el repositorio registra 0 descargas y 0 "likes", y no se han publicado resultados de benchmarks en la información disponible.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ El acceso está restringido: se trata de un modelo gated que obliga a aceptar la
 | Librería | pocket-tts |
 | Pipeline | text-to-speech |
 | Tamaño del repositorio | 0,4 GB |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creación | 19 de septiembre de 2026 |
 | Última actualización | 19 de septiembre de 2026 |
 | Descargas / likes | 0 / 0 |
@@ -88,14 +88,14 @@ Otras alternativas de la misma categoría (sistemas de TTS multilingües o espec
 - Detalles de entrenamiento desconocidos: al no documentarse el corpus de ajuste fino, no puede evaluarse el sesgo acústico (género, acento, registro, variedad dialectal del persa) ni el riesgo de sobreajuste a las voces de entrenamiento.
 - Riesgo de alucinación en su acepción acústica: como todo sistema de TTS, puede producir pronunciaciones incorrectas, omisiones, repeticiones o artefactos en números, nombres propios y préstamos léxicos; no hay información sobre el comportamiento del modelo ante texto fuera de dominio.
 - Licencia no estándar: la etiqueta `license:other` y el nombre zorost-nava-fa-license implican términos propios que deben leerse antes de cualquier uso comercial, redistribución o despliegue en producto.
-- Acceso restringido: el repositorio es gated y exige aceptar condiciones en HuggingFace, lo que puede bloquear su uso en entornos automatizados de integración continua o en organizaciones con políticas estrictas de aprobación de licencias.
+- Acceso restringido: el repositorio es gated y exige aceptar condiciones en Hugging Face, lo que puede bloquear su uso en entornos automatizados de integración continua o en organizaciones con políticas estrictas de aprobación de licencias.
 - Riesgo ético de la clonación de voz: la capacidad etiquetada `voice-cloning` permite generar imitaciones de voces reales; en ausencia de documentación sobre consentimiento, marcas de agua o limitaciones de uso, es imprescindible aplicar controles propios para evitar suplantación de identidad y desinformación.
 - Falta de datos operativos: sin cifras publicadas de latencia, throughput ni consumo de memoria, cualquier planificación de capacidad en producción debe hacerse con pruebas propias.
 - Inexistencia de soporte de la comunidad: 0 descargas y 0 "likes" implican que no hay issues, foros ni ejemplos de uso verificables más allá de la ficha del repositorio.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zorost/nava-fa
+- Modelo en Hugging Face: https://huggingface.co/zorost/nava-fa
 - Modelo base: https://huggingface.co/kyutai/pocket-tts
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo (los resultados devueltos corresponden a entradas de diccionario para la palabra inglesa "query" y no guardan relación con el modelo).
 - Paper, blog técnico, repositorio de código o demo: no disponibles en la información proporcionada.

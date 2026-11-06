@@ -71,7 +71,7 @@ No disponible. Este adaptador es una ablacion especifica dentro de una coleccion
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-sftlen-l5
+- Repositorio Hugging Face: https://huggingface.co/ssurface/cot-dialect-qwen3-4b-instruct-grpo-sftlen-l5
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

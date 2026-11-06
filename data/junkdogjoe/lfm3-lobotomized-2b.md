@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-Lobotomized-2B es un merge experimental publicado por el usuario junkdogjoe en HuggingFace, construido a partir de LiquidAI/LFM3-1.7B como modelo base. El autor combina las capas de texto de LFM3-1.7B con las capas 2 a 21 de LFM3-Omni-2B y aplica un entrenamiento LoRA, con el objetivo de obtener un modelo que conserve capacidades de visión, texto y habla junto con razonamiento. El resultado es un checkpoint de 2.166.928.384 parámetros (2,17 B) en formato safetensors, con un repositorio de 4,4 GB.
+LFM3-Lobotomized-2B es un merge experimental publicado por el usuario junkdogjoe en Hugging Face, construido a partir de LiquidAI/LFM3-1.7B como modelo base. El autor combina las capas de texto de LFM3-1.7B con las capas 2 a 21 de LFM3-Omni-2B y aplica un entrenamiento LoRA, con el objetivo de obtener un modelo que conserve capacidades de visión, texto y habla junto con razonamiento. El resultado es un checkpoint de 2.166.928.384 parámetros (2,17 B) en formato safetensors, con un repositorio de 4,4 GB.
 
 El modelo pertenece a la familia LFM3 de Liquid AI, orientada a despliegue en el borde (edge), y hereda la licencia lfm1.0 del modelo base. La model card es explícitamente informal: el propio autor lo describe como su primer proyecto, hecho "for shits and giggles", y declara que el modelo está sin probar. No se aportan resultados de evaluación, curvas de entrenamiento ni detalles del dataset utilizado en el LoRA.
 
@@ -44,7 +44,7 @@ No se especifican en la información disponible el número de tokens de entrenam
 - Investigación sobre multimodalidad en el borde: al partir de la familia LFM3, orientada a edge, puede probarse en escenarios de visión y texto con requisitos de cómputo reducidos, verificando empíricamente qué capacidades del modelo Omni se conservan tras el merge.
 - Pruebas de inferencia con llama.cpp: el autor documenta flags concretos (`--temp 0.3`, `--min-p 0.05`, `--top-k 50`, `--top-p 0.95`, `--repeat-penalty 1.1`) para ejecutar el GGUF Q8_0 junto al mmproj F16, lo que permite reproducir su configuración de muestreo en local.
 - Evaluación de degradación por "lobotomización": el nombre del modelo sugiere una pérdida deliberada de capacidades; puede utilizarse como caso de estudio de qué se pierde al recombinar capas y aplicar LoRA sobre un modelo base pequeño.
-- Docencia y divulgación: como ejemplo práctico de merge de capas y LoRA en la familia LFM3, útil en talleres sobre publicación de modelos en HuggingFace y sobre las limitaciones de los checkpoints comunitarios sin evaluar.
+- Docencia y divulgación: como ejemplo práctico de merge de capas y LoRA en la familia LFM3, útil en talleres sobre publicación de modelos en Hugging Face y sobre las limitaciones de los checkpoints comunitarios sin evaluar.
 - Prototipado exploratorio de asistentes conversacionales multilingües: los 17 idiomas declarados permiten probar conversaciones en español, francés o hindi, siempre con la advertencia de que no hay evaluación de calidad publicada.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junkdogjoe/LFM3-Lobotomized-2B
+- Modelo en Hugging Face: https://huggingface.co/junkdogjoe/LFM3-Lobotomized-2B
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Modelo Omni de referencia (citado en la model card): LFM3-Omni-2B (no se proporciona URL en la información disponible)
 - Licencia lfm1.0: archivo LICENSE dentro del repositorio del modelo

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FGIR-ViT es un repositorio de checkpoints publicado por ERISLab en HuggingFace, no un modelo único ni un modelo de lenguaje. Contiene 1.051 checkpoints (un seed por configuración, solo la última época) procedentes de la familia de experimentos FGIR-ViT sobre reconocimiento de imágenes fine-grained, y sirve de respaldo a la familia `fgirvit` de la librería `fgir_zoo`.
+FGIR-ViT es un repositorio de checkpoints publicado por ERISLab en Hugging Face, no un modelo único ni un modelo de lenguaje. Contiene 1.051 checkpoints (un seed por configuración, solo la última época) procedentes de la familia de experimentos FGIR-ViT sobre reconocimiento de imágenes fine-grained, y sirve de respaldo a la familia `fgirvit` de la librería `fgir_zoo`.
 
 El conjunto agrupa cuatro líneas de trabajo: el adaptador inter-capas ILA con precalentamiento contrastivo SAW, el adaptador de agregación de atención (AAA), los estudios médicos de PETL e IDRiD, y el benchmark de fine-tuning completo fine-grained (`ft_*`). El backbone dominante es ViT-B/16, con variantes puntuales sobre DeiT-B/16, Swin-B y ViT-B/14 de DINOv2, además de baselines congelados de MAE, DINOv2 y CLIP.
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Tipo | Backbone / parámetros | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FGIR-ViT (ERISLab) | Zoo de 1.051 checkpoints de clasificación fine-grained con adaptadores PETL | ViT-B/16, DeiT-B/16, Swin-B, ViT-B/14 DINOv2 (aprox. 86-88 M en el backbone) | 224 / 448 / 672 px | no disponible | HuggingFace, 198,5 GB, con script de carga propio |
+| FGIR-ViT (ERISLab) | Zoo de 1.051 checkpoints de clasificación fine-grained con adaptadores PETL | ViT-B/16, DeiT-B/16, Swin-B, ViT-B/14 DINOv2 (aprox. 86-88 M en el backbone) | 224 / 448 / 672 px | no disponible | Hugging Face, 198,5 GB, con script de carga propio |
 | Baselines `ila_foundation` (MAE, DINOv2, CLIP) | Backbones congelados incluidos en el propio repositorio | ViT-B | 224 px | la del repositorio original | Incluidos en el mismo repo; licencia no declarada aquí |
 | ViT-B/16 preentrenado en ImageNet (referencia externa) | Clasificador genérico de imagen | ViT-B/16, aprox. 86 M | 224 px | no verificada en esta ficha | Ampliamente disponible en `timm` |
 | Adaptadores PETL genéricos (LoRA, adaptadores congelados) | Métodos de adaptación, no checkpoints concretos | Sobre ViT-B/16 | Según configuración | no disponible | Implementaciones diversas |
@@ -77,7 +77,7 @@ La comparación con alternativas externas queda limitada porque la model card no
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada: al no especificarse licencia en HuggingFace ni en la model card, no puede asumirse permiso para uso comercial; es imprescindible contactar con ERISLab antes de cualquier despliegue productivo.
+- Licencia no declarada: al no especificarse licencia en Hugging Face ni en la model card, no puede asumirse permiso para uso comercial; es imprescindible contactar con ERISLab antes de cualquier despliegue productivo.
 - Artefacto de investigación, no producto: no hay pipeline de inferencia publicado, ni demo, ni documentación de API más allá de la carga por nombre con `fgir_zoo`.
 - Un solo seed por configuración: no es posible estimar varianza entre ejecuciones ni intervalos de confianza a partir de estos checkpoints.
 - Solo última época: no se conservan las mejores épocas; los archivos de mejor época, búsquedas de learning rate, seeds extra y ejecuciones de reproducción fueron movidos a rutas locales de deprecación no incluidas en el repositorio.
@@ -91,9 +91,9 @@ La comparación con alternativas externas queda limitada porque la model card no
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ERISLab/FGIR-ViT
+- Modelo en Hugging Face: https://huggingface.co/ERISLab/FGIR-ViT
 - Librería de carga `fgir_zoo`: https://github.com/arkel23/fgir_zoo
-- Autor en HuggingFace: https://huggingface.co/ERISLab
+- Autor en Hugging Face: https://huggingface.co/ERISLab
 - Papers de ILA/SAW, AAA, PETL médico y benchmark FGIR: no disponibles en la información proporcionada (la model card los menciona pero no enlaza ninguno)
 - Demos o espacios asociados: no disponible
 - Los resultados de búsqueda web disponibles no contienen enlaces relevantes para este modelo.

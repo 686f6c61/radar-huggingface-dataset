@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Limby-rice-v1 es un repositorio publicado en HuggingFace por el usuario diallo01 bajo el identificador `diallo01/limby-rice-v1`. En el momento de la consulta, el repositorio no incluye tarjeta de modelo (model card), no declara pipeline de inferencia, licencia ni idiomas soportados, y su tamano declarado es de 0.0 GB, lo que indica que no aloja pesos en el repositorio o que estos no se han subido. Cuenta con 0 descargas y 1 like, y las unicas etiquetas asociadas son `region:us`.
+Limby-rice-v1 es un repositorio publicado en Hugging Face por el usuario diallo01 bajo el identificador `diallo01/limby-rice-v1`. En el momento de la consulta, el repositorio no incluye tarjeta de modelo (model card), no declara pipeline de inferencia, licencia ni idiomas soportados, y su tamano declarado es de 0.0 GB, lo que indica que no aloja pesos en el repositorio o que estos no se han subido. Cuenta con 0 descargas y 1 like, y las unicas etiquetas asociadas son `region:us`.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter esencialmente documental: se trata de un artefacto practicamente sin informacion publica verificable, sin metadatos tecnicos y sin resultados de evaluacion. No es posible determinar su arquitectura, numero de parametros, longitud de contexto, regimen de licencia ni capacidades reales a partir de la informacion disponible.
 
@@ -99,7 +99,7 @@ No disponible. No es posible establecer una comparativa rigurosa sin conocer el 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diallo01/limby-rice-v1
+- Repositorio en Hugging Face: https://huggingface.co/diallo01/limby-rice-v1
 - Paper: no disponible
 - Blog tecnico del autor: no disponible
 - Repositorio de codigo: no disponible

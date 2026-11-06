@@ -72,7 +72,7 @@ El resto de filas de la tabla comparativa no está disponible en la información
 
 | Modelo | Parámetros | Contexto | TerminalBench 2.1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ripple-65B Preview | 64,78B (denso) | hasta 1M | 80,52 | Apache 2.0 | HuggingFace (BF16, NVFP4, base) |
+| Ripple-65B Preview | 64,78B (denso) | hasta 1M | 80,52 | Apache 2.0 | Hugging Face (BF16, NVFP4, base) |
 | Reflection Beam 501B | 501B | no disponible | 80,1 | no disponible | open-weight (US) |
 | Meta Muse Spark Open 816B | 816B | no disponible | 76,4 | no disponible | open-weight (US) |
 | Thinking Machines Inkling 975B | 975B | no disponible | 63,8 | no disponible | open-weight (US) |
@@ -94,10 +94,10 @@ Ripple-65B Preview es el único de la comparativa con arquitectura densa y con l
 
 ## Enlaces
 
-- HuggingFace (BF16 instruct): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
-- HuggingFace (NVFP4): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
-- HuggingFace (modelo base): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
-- HuggingFace (DFlash2): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
+- Hugging Face (BF16 instruct): https://huggingface.co/ricursiveAI/Ripple-65B-Preview
+- Hugging Face (NVFP4): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-NVFP4
+- Hugging Face (modelo base): https://huggingface.co/ricursiveAI/Ripple-65B-Base-Preview
+- Hugging Face (DFlash2): https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Blog de lanzamiento: https://www.ricursive.com/ripple
 - Licencia: https://huggingface.co/ricursiveAI/Ripple-65B-Preview/blob/main/LICENSE
-- Repositorio en HuggingFace (ID de la ficha): https://huggingface.co/ml-resources/Ripple-65B-Preview
+- Repositorio en Hugging Face (ID de la ficha): https://huggingface.co/ml-resources/Ripple-65B-Preview

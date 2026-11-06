@@ -101,7 +101,7 @@ Rendimiento de inferencia medido por GPU (contexto de 4.000 tokens, salvo indica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zynerji/Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24
+- Modelo en Hugging Face: https://huggingface.co/Zynerji/Qwen3.8-27B-PristinelyUncensored-HOMEUSER-16-24
 - Modelo base (BF16): https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored
 - Variante HYBRID: https://huggingface.co/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-HYBRID
 - Variante GPTQ-MTP: https://llm-explorer.com/model/Zynerji%2FEktome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP,5B9Ez7pfpsPlkjLdKClgIF y https://friendli.ai/models/Zynerji/Ektome-Qwen3.8-27B-PristinelyUncensored-GPTQ-MTP

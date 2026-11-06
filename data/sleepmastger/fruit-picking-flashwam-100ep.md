@@ -61,6 +61,6 @@ No se dispone de información suficiente para establecer una comparativa con otr
 - La normalización de datos se calculó sobre el split de entrenamiento de 95 episodios; aplicar el modelo a datos con distribuciones diferentes puede degradar el rendimiento.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/SleepMastger/fruit-picking-flashwam-100ep
-- Repositorio HuggingFace de la versión parcial (30 épocas): https://huggingface.co/SleepMastger/fruit-picking-flashwam
+- Repositorio Hugging Face: https://huggingface.co/SleepMastger/fruit-picking-flashwam-100ep
+- Repositorio Hugging Face de la versión parcial (30 épocas): https://huggingface.co/SleepMastger/fruit-picking-flashwam
 - Código FlashWAM (GitHub): https://github.com/NU-World-Model-Embodied-AI/Flash-WAM

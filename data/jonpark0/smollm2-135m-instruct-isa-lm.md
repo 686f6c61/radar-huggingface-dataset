@@ -94,7 +94,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jonpark0/SmolLM2-135M-Instruct-isa-lm
+- Repositorio Hugging Face: https://huggingface.co/jonpark0/SmolLM2-135M-Instruct-isa-lm
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct
 - Repositorio de isa-lm: https://github.com/JonPark0/isa-lm
 - Releases de isa-lm: https://github.com/JonPark0/isa-lm/releases

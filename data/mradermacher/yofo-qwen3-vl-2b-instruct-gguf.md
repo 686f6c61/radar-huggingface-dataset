@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mradermacher/yofo-Qwen3-VL-2B-Instruct-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `Accio-Lab/yofo-Qwen3-VL-2B-Instruct`, un modelo multimodal (vision-lenguaje) de aproximadamente 1.720 millones de parámetros construido sobre la arquitectura Qwen3-VL. El trabajo de cuantización lo firma mradermacher, un conocido publicador de quants en HuggingFace, y su propósito es permitir la ejecución del modelo en hardware modesto mediante llama.cpp y herramientas compatibles, incluyendo el proyector multimodal (`mmproj`) necesario para el procesamiento de imágenes.
+`mradermacher/yofo-Qwen3-VL-2B-Instruct-GGUF` es una colección de cuantizaciones estáticas en formato GGUF del modelo `Accio-Lab/yofo-Qwen3-VL-2B-Instruct`, un modelo multimodal (vision-lenguaje) de aproximadamente 1.720 millones de parámetros construido sobre la arquitectura Qwen3-VL. El trabajo de cuantización lo firma mradermacher, un conocido publicador de quants en Hugging Face, y su propósito es permitir la ejecución del modelo en hardware modesto mediante llama.cpp y herramientas compatibles, incluyendo el proyector multimodal (`mmproj`) necesario para el procesamiento de imágenes.
 
 El modelo base pertenece a la familia Qwen3-VL en su variante de 2B parámetros, lo que lo sitúa en la gama de modelos pequeños capaces de ejecutarse en GPUs de consumo e incluso en CPU. La disponibilidad de cuantizaciones desde Q2_K hasta f16, junto con el proyector multimodal en Q8_0 y f16, cubre un rango amplio de compromisos entre calidad y requisitos de memoria, desde menos de 1 GB hasta 3,5 GB para los pesos del modelo.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | yofo-Qwen3-VL-2B-Instruct (este) | ~1,72 B | No disponible | No disponible | GGUF | Multimodal, inglés, cuantizaciones estáticas |
 | Qwen2-VL-2B-Instruct | ~2 B | 32k (según documentación pública de Qwen) | Apache 2.0 (según Qwen) | Safetensors, GGUF | Multimodal, referencia de la familia Qwen-VL |
-| SmolVLM-2B-Instruct | ~2 B | No disponible | Apache 2.0 (según HuggingFace) | Safetensors, GGUF | Multimodal pequeño de HuggingFace |
+| SmolVLM-2B-Instruct | ~2 B | No disponible | Apache 2.0 (según Hugging Face) | Safetensors, GGUF | Multimodal pequeño de Hugging Face |
 | InternVL2-2B | ~2 B | No disponible | No disponible | Safetensors | Multimodal pequeño |
 
 Nota: los datos de los modelos comparables provienen de conocimiento público general y no de la información proporcionada en esta ficha; se incluyen solo como referencia orientativa y deben verificarse en sus respectivas model cards.
@@ -91,7 +91,7 @@ Nota: los datos de los modelos comparables provienen de conocimiento público ge
 
 ## Enlaces
 
-- Repositorio HuggingFace (este modelo): https://huggingface.co/mradermacher/yofo-Qwen3-VL-2B-Instruct-GGUF
+- Repositorio Hugging Face (este modelo): https://huggingface.co/mradermacher/yofo-Qwen3-VL-2B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Accio-Lab/yofo-Qwen3-VL-2B-Instruct
 - Página de descargas de mradermacher para este modelo: https://hf.tst.eu/model#yofo-Qwen3-VL-2B-Instruct-GGUF
 - README de referencia para uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

@@ -80,7 +80,7 @@ No se dispone de informacion sobre otros vocabularios reducidos publicados para 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/j2ipper/draft-vocab
+- Repositorio Hugging Face: https://huggingface.co/j2ipper/draft-vocab
 - Licencias del repositorio: https://huggingface.co/j2ipper/draft-vocab/blob/main/README.md#licenses
 - Talus (repositorio publico): https://github.com/nsbradley88/talus-public
 - Documentacion de modelos de Talus: https://github.com/nsbradley88/talus-public/blob/main/docs/MODELS.md

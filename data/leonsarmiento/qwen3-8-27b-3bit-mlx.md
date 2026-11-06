@@ -95,7 +95,7 @@ La versión 3-bit ofrece el menor consumo de memoria y mayor velocidad de decodi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leonsarmiento/Qwen3.8-27B-3bit-mlx
+- Modelo en Hugging Face: https://huggingface.co/leonsarmiento/Qwen3.8-27B-3bit-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Modelo drafter MTP (4-bit): https://huggingface.co/leonsarmiento/Qwen3.8-27B-MTP-4bit-mlx
 - Colección de quants MLX de Qwen3.8 27B: https://huggingface.co/collections/lukaskremla/qwen-38-27b-mlx-quants-vision-text-only-and-mtp

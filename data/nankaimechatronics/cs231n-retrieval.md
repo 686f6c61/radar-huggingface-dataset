@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nankaimechatronics/cs231n-retrieval` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada **Mae** orientada a tareas de **retrieval** (recuperación). No es un modelo entrenado ni un lanzamiento listo para producción: el propio autor lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint `model.safetensors` incluido es una inicialización válida, no un modelo con pesos aprendidos.
+`nankaimechatronics/cs231n-retrieval` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de una arquitectura denominada **Mae** orientada a tareas de **retrieval** (recuperación). No es un modelo entrenado ni un lanzamiento listo para producción: el propio autor lo describe como un artefacto para revisión de código, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El checkpoint `model.safetensors` incluido es una inicialización válida, no un modelo con pesos aprendidos.
 
 El repositorio pesa 0,0 GB (redondeado) y el total de parámetros registrado en los tensores safetensors es de **24.832**, una cifra muy reducida que confirma su naturaleza de esqueleto de código más que de modelo funcional. La configuración se etiqueta como escala "huge", con atención dispersa (sparse), fusión tensorial (tensor fusion), activación gelu-tanh y normalización scalenorm, pero esa etiqueta procede de los ajustes generados y no de un entrenamiento real.
 
@@ -21,11 +21,11 @@ Su relevancia es formativa y metodológica: sirve como plantilla reproducible pa
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (PyTorch); el repo incluye ademas `train.py`, `config.json` y `training_args.json` |
 | Pipeline declarado | no disponible |
-| Tamano del repositorio | 0,0 GB (redondeado por HuggingFace) |
+| Tamano del repositorio | 0,0 GB (redondeado por Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-La model card define la arquitectura como "Mae", en configuracion "huge", con atencion **sparse**, mecanismo de fusion **tensor fusion**, funcion de activacion compuesta **gelu tanh** y normalizacion **scalenorm**. Se trata de una implementacion propia: al no seguir las APIs estandar de HuggingFace, los cargadores automaticos genericos requieren un adaptador explicito antes de poder instanciar el modelo. El unico artefacto funcional descrito es `train.py`, que contiene tanto el modelo como un ejemplo ejecutable y el punto de entrada de entrenamiento; `config.json` recoge los ajustes de arquitectura generados y `training_args.json` la receta de experimento por defecto.
+La model card define la arquitectura como "Mae", en configuracion "huge", con atencion **sparse**, mecanismo de fusion **tensor fusion**, funcion de activacion compuesta **gelu tanh** y normalizacion **scalenorm**. Se trata de una implementacion propia: al no seguir las APIs estandar de Hugging Face, los cargadores automaticos genericos requieren un adaptador explicito antes de poder instanciar el modelo. El unico artefacto funcional descrito es `train.py`, que contiene tanto el modelo como un ejemplo ejecutable y el punto de entrada de entrenamiento; `config.json` recoge los ajustes de arquitectura generados y `training_args.json` la receta de experimento por defecto.
 
 No consta entrenamiento completado. La receta por defecto usa el optimizador **RMSprop** con un schedule de tipo **step**, y el autor advierte explicitamente que son valores de arranque del script, no evidencia de una ejecucion finalizada. El checkpoint `model.safetensors` se presenta como inicializacion valida para pruebas de humo, no como pesos entrenados, y no se reclama ninguna puntuacion de benchmark. La guia de evaluacion propuesta sugiere usar **Flickr30k**, reportar la metrica de la tarea en al menos **tres semillas** e incluir un baseline de capacidad equivalente, guardando los logs de entrenamiento y las versiones del entorno. No se documentan numero de tokens, composicion del dataset, ni fases de RLHF o DPO.
 
@@ -85,7 +85,7 @@ No se conocen modelos preentrenados comparables de forma directa, ya que la tare
 - No existe auditoria de robustez, equidad ni transferencia de dominio; el autor lo advierte de forma explicita.
 - No hay metricas, ni logs publicados, ni semillas documentadas, por lo que cualquier afirmacion de rendimiento seria infundada.
 - La etiqueta "huge" de la configuracion no se corresponde con el tamano real: el modelo tiene 24.832 parametros.
-- La implementacion es personalizada y no sigue las convenciones de HuggingFace; cargarla con APIs genericas falla sin un adaptador.
+- La implementacion es personalizada y no sigue las convenciones de Hugging Face; cargarla con APIs genericas falla sin un adaptador.
 - No se declaran idiomas soportados ni longitud de contexto, lo que impide planificar despliegues multilingues o conversacionales.
 - La licencia BSD-3-Clause permite uso comercial, pero se concede sobre un codigo sin garantias y sobre pesos sin entrenar; la utilidad practica es nula sin entrenamiento previo.
 - Si se combina con conjuntos de datos externos, hay que revisar por separado los terminos de esos datos, como indica el propio autor.
@@ -94,7 +94,7 @@ No se conocen modelos preentrenados comparables de forma directa, ya que la tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nankaimechatronics/cs231n-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/nankaimechatronics/cs231n-retrieval
 - Repositorio analogo con arquitectura CLIP para retrieval: https://huggingface.co/koheismvh83/cs231n-retrieval/tree/main
 - Repositorio analogo con arquitectura Perceiver para retrieval: https://huggingface.co/AaravMenon5137/cs231n-retrieval
 - Curso CS231n: Deep Learning for Computer Vision (Stanford University): https://cs231n.stanford.edu/

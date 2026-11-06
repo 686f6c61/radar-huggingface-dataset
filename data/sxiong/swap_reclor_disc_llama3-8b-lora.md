@@ -80,7 +80,7 @@ No se dispone de modelos comparables fuera de la familia SWAP con la misma funci
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sxiong/SWAP_ReClor_Disc_Llama3-8B-LoRA
+- Hugging Face: https://huggingface.co/sxiong/SWAP_ReClor_Disc_Llama3-8B-LoRA
 - Repositorio GitHub de SWAP: https://github.com/xiongsiheng/SWAP
 - Paper de ReClor (arXiv:2002.04326): https://arxiv.org/abs/2002.04326
 - Paper de SWAP (ACL 2025): referencia en la cita del modelo card, sin enlace directo disponible

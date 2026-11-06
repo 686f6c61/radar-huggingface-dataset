@@ -6,7 +6,7 @@
 
 El contenido del repositorio es minimo: 0,0 GB de tamano y un recuento de parametros de 4 en el safetensors, lo que descarta cualquier capacidad generativa. Cualquier sonda activa que se ejecute contra el especimen se limita a invocar `whoami` en forma de argv (nunca con `shell=True`) y a volcar su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`; segun la model card, no accede a credenciales ni realiza operaciones de red.
 
-Su relevancia es, por tanto, exclusivamente defensiva: sirve como caso de prueba reproducible para auditores que evaluan la superficie de ataque de los pipelines de carga de Diffusers y para validar escaneres de artefactos en HuggingFace. No debe emplearse como componente de ninguna aplicacion.
+Su relevancia es, por tanto, exclusivamente defensiva: sirve como caso de prueba reproducible para auditores que evaluan la superficie de ataque de los pipelines de carga de Diffusers y para validar escaneres de artefactos en Hugging Face. No debe emplearse como componente de ninguna aplicacion.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ El especimen se publica junto a una coleccion con un `MANIFEST.json` que registr
 
 ## Casos de uso
 
-- Validacion de escaneres de artefactos: usar el repo como caso positivo conocido para comprobar que un escaner de HuggingFace detecta la clave `requirements` maliciosa en `modular_config.json` y la marca como riesgo.
+- Validacion de escaneres de artefactos: usar el repo como caso positivo conocido para comprobar que un escaner de Hugging Face detecta la clave `requirements` maliciosa en `modular_config.json` y la marca como riesgo.
 - Pruebas de regresion en Diffusers: verificar que una version parcheada del cargador rechaza o neutraliza el especimen, y que la version vulnerable lo procesa, comparando el comportamiento entre ambas.
 - Formacion en seguridad de la cadena de suministro de ML: emplear el especimen en laboratorios docentes para ilustrar como un fichero de configuracion aparentemente inocuo puede transportar un vector de ejecucion.
 - Auditoria de pipelines de CI que descargan modelos: integrar el repo en una bateria de tests que confirme que el pipeline no ejecuta codigo contenido en metadatos de modelos de terceros.
@@ -79,7 +79,7 @@ La comparacion con modelos generativos no es significativa: el especimen no comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/FrankLin00/mmrh-ace-01-diffusers-find-spec
+- Repositorio en Hugging Face: https://huggingface.co/FrankLin00/mmrh-ace-01-diffusers-find-spec
 - Coleccion con `MANIFEST.json` (hashes y ruta del hallazgo): no disponible como URL directa en la informacion proporcionada
 - Paper o blog del hallazgo ACE en Diffusers: no disponible
 - Repositorio de codigo del escaner: no disponible

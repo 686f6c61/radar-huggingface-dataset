@@ -2,9 +2,9 @@
 
 ## Resumen
 
-wlstjs/koelectra es un modelo de clasificación de texto en coreano publicado en HuggingFace por el usuario wlstjs. Se trata de un ajuste fino (fine-tuning) del modelo daekeun-ml/koelectra-small-v3-nsmc, que a su vez deriva de la familia KoELECTRA v3, una implementación de la arquitectura ELECTRA preentrenada para coreano. Con 14.122.498 parámetros (unos 14,1 millones), es un modelo encoder-only muy ligero, orientado exclusivamente a clasificación de secuencias y no a generación de texto.
+wlstjs/koelectra es un modelo de clasificación de texto en coreano publicado en Hugging Face por el usuario wlstjs. Se trata de un ajuste fino (fine-tuning) del modelo daekeun-ml/koelectra-small-v3-nsmc, que a su vez deriva de la familia KoELECTRA v3, una implementación de la arquitectura ELECTRA preentrenada para coreano. Con 14.122.498 parámetros (unos 14,1 millones), es un modelo encoder-only muy ligero, orientado exclusivamente a clasificación de secuencias y no a generación de texto.
 
-El modelo se enmarca en la tarea de análisis de sentimiento sobre texto coreano, heredada del nombre de su modelo base (la terminación "nsmc" hace referencia al Naver Sentiment Movie Corpus, un corpus de reseñas de películas). El autor declara una precisión de 0,866 y una pérdida de 0,4838 en el conjunto de evaluación, con cinco épocas de entrenamiento. No obstante, la model card está generada automáticamente por el Trainer de HuggingFace y no documenta el conjunto de datos, las etiquetas de salida ni los usos previstos.
+El modelo se enmarca en la tarea de análisis de sentimiento sobre texto coreano, heredada del nombre de su modelo base (la terminación "nsmc" hace referencia al Naver Sentiment Movie Corpus, un corpus de reseñas de películas). El autor declara una precisión de 0,866 y una pérdida de 0,4838 en el conjunto de evaluación, con cinco épocas de entrenamiento. No obstante, la model card está generada automáticamente por el Trainer de Hugging Face y no documenta el conjunto de datos, las etiquetas de salida ni los usos previstos.
 
 Su relevancia es limitada pero concreta: sirve como ejemplo de pipeline de ajuste fino reproducible sobre KoELECTRA small, y como clasificador de sentimiento coreano de bajísimo coste computacional que puede ejecutarse en CPU. Con solo 13 descargas y 0 "likes" en el momento de la consulta, carece de validación por parte de la comunidad y debe tratarse como un experimento más que como un modelo listo para producción.
 
@@ -24,7 +24,7 @@ Su relevancia es limitada pero concreta: sirve como ejemplo de pipeline de ajust
 | Modelo base | daekeun-ml/koelectra-small-v3-nsmc |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 13 / 0 |
-| Fecha de publicacion (metadatos de HuggingFace) | 2026-10-02 |
+| Fecha de publicacion (metadatos de Hugging Face) | 2026-10-02 |
 
 ## Arquitectura y entrenamiento
 
@@ -39,7 +39,7 @@ La curva de validación muestra la pérdida mínima en la época 3 (0,4584) con 
 - Clasificación de texto en coreano: el pipeline declarado es text-classification, con una cabeza de clasificación sobre el encoder ELECTRA.
 - Análisis de sentimiento (presunto): por herencia del modelo base (NSMC), lo esperable es una salida binaria de polaridad, aunque las etiquetas concretas no están documentadas.
 - Inferencia muy ligera: 14,1 millones de parámetros permiten ejecución en CPU sin GPU.
-- Compatible con el ecosistema Transformers y con el tag endpoints_compatible de HuggingFace.
+- Compatible con el ecosistema Transformers y con el tag endpoints_compatible de Hugging Face.
 - No soporta generación de texto: es un encoder-only sin decoder.
 - No hay evidencia de soporte de tool calling, function calling ni agentes.
 - No hay evidencia de capacidades multimodales (visión, audio) ni de modo "thinking".
@@ -78,17 +78,17 @@ Resultado final declarado en la model card sobre el conjunto de evaluacion: perd
 - VRAM estimada: inferior a 1 GB. Los pesos ocupan aproximadamente 56,5 MB en FP32, 28,2 MB en FP16 y 14,1 MB en INT8; el resto del consumo corresponde al runtime (PyTorch, CUDA o inferencia en CPU).
 - GPU recomendadas: no requiere GPU. Cualquier GPU sirve, incluidas GTX 1650, RTX 3060, RTX 4090, T4, L4, A10G, A100 o H100; usar modelos de gama alta solo aporta ventaja en throughput por lotes muy grandes.
 - Compatibilidad con GPU de consumo: sí, en todas las GPU consumer actuales, e incluso en CPU sin acelerador dedicado.
-- Opciones de despliegue: pipeline de Transformers, TorchScript, exportación a ONNX con ONNX Runtime, servicio propio con FastAPI o Flask, y HuggingFace Inference Endpoints (el repositorio lleva el tag endpoints_compatible). vLLM, TGI, llama.cpp y Ollama no son opciones adecuadas: están orientados a modelos generativos decoder-only y no soportan este tipo de encoder de clasificación.
+- Opciones de despliegue: pipeline de Transformers, TorchScript, exportación a ONNX con ONNX Runtime, servicio propio con FastAPI o Flask, y Hugging Face Inference Endpoints (el repositorio lleva el tag endpoints_compatible). vLLM, TGI, llama.cpp y Ollama no son opciones adecuadas: están orientados a modelos generativos decoder-only y no soportan este tipo de encoder de clasificación.
 - Latencia y throughput estimados: no hay mediciones publicadas. Como estimación orientativa derivada del tamaño (14,1 millones de parámetros), en CPU moderna y con textos cortos de unas 30 palabras cabría esperar del orden de centenares a miles de secuencias por segundo con lotes y ONNX Runtime, y un orden de magnitud superior en GPU con lotes grandes. Son cifras no verificadas, no resultados medidos por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| wlstjs/koelectra (este modelo) | 14.122.498 | no disponible | Clasificacion (sentimiento, presunto) | MIT | HuggingFace, 13 descargas, 0 likes |
-| daekeun-ml/koelectra-small-v3-nsmc (modelo base) | no disponible | no disponible | Clasificacion de sentimiento sobre NSMC | no disponible | HuggingFace |
-| monologg/koelectra-small-v3-discriminator | no disponible | no disponible | Encoder preentrenado en coreano para ajuste fino | no disponible (el proyecto KoELECTRA se cita como Apache-2.0 en fuentes de terceros, no verificado aqui) | HuggingFace y GitHub |
-| monologg/koelectra-base-v3-discriminator | no disponible | no disponible | Encoder preentrenado en coreano para ajuste fino (variante base, mayor capacidad) | no disponible (misma observacion que la fila anterior) | HuggingFace y GitHub |
+| wlstjs/koelectra (este modelo) | 14.122.498 | no disponible | Clasificacion (sentimiento, presunto) | MIT | Hugging Face, 13 descargas, 0 likes |
+| daekeun-ml/koelectra-small-v3-nsmc (modelo base) | no disponible | no disponible | Clasificacion de sentimiento sobre NSMC | no disponible | Hugging Face |
+| monologg/koelectra-small-v3-discriminator | no disponible | no disponible | Encoder preentrenado en coreano para ajuste fino | no disponible (el proyecto KoELECTRA se cita como Apache-2.0 en fuentes de terceros, no verificado aqui) | Hugging Face y GitHub |
+| monologg/koelectra-base-v3-discriminator | no disponible | no disponible | Encoder preentrenado en coreano para ajuste fino (variante base, mayor capacidad) | no disponible (misma observacion que la fila anterior) | Hugging Face y GitHub |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion consultada, por lo que la comparacion se limita a tarea, licencia y disponibilidad.
 
@@ -107,7 +107,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wlstjs/koelectra
+- Modelo en Hugging Face: https://huggingface.co/wlstjs/koelectra
 - Modelo base: https://huggingface.co/daekeun-ml/koelectra-small-v3-nsmc
 - Repositorio GitHub de KoELECTRA (monologg): https://github.com/monologg/KoELECTRA
 - Ficha de KoELECTRA en olud.ai: https://olud.ai/project/monologg-koelectra.html

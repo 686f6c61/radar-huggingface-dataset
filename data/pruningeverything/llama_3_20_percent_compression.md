@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`llama_3_20_percent_compression` es un checkpoint derivado de la familia Llama 3 publicado por el usuario PruningEverything en HuggingFace. El nombre indica que se trata de una version podada (pruning) del modelo original con una reduccion de aproximadamente el 20 % de sus parametros. El repositorio contiene pesos en formato safetensors con 6.285.365.248 parametros totales, lo que situa al modelo en la horquilla de los 6-7 mil millones de parametros, coherente con un Llama 3 8B comprimido.
+`llama_3_20_percent_compression` es un checkpoint derivado de la familia Llama 3 publicado por el usuario PruningEverything en Hugging Face. El nombre indica que se trata de una version podada (pruning) del modelo original con una reduccion de aproximadamente el 20 % de sus parametros. El repositorio contiene pesos en formato safetensors con 6.285.365.248 parametros totales, lo que situa al modelo en la horquilla de los 6-7 mil millones de parametros, coherente con un Llama 3 8B comprimido.
 
 La model card publicada es practicamente vacia: solo declara la licencia `llama3`. No se documenta el proceso de poda, el dataset de calibracion, la receta de recuperacion (fine-tuning posterior) ni los resultados de evaluacion. Esto convierte al modelo en un artefacto experimental sin garantias de calidad, util principalmente para quien quiera inspeccionar o reproducir tecnicas de compresion sobre Llama 3.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| PruningEverything/llama_3_20_percent_compression | 6,29 B | no disponible | llama3 | HuggingFace | Poda del 20 % sin evaluacion publicada |
-| meta-llama/Meta-Llama-3-8B | 8,03 B | 8.192 tokens (oficial) | llama3 | HuggingFace | Modelo base de referencia |
-| meta-llama/Meta-Llama-3.1-8B | 8,03 B | 128.000 tokens (oficial) | llama3.1 | HuggingFace | Sucesor con contexto extendido |
-| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.000 tokens (oficial) | Apache 2.0 | HuggingFace | Alternativa abierta de tamano similar |
+| PruningEverything/llama_3_20_percent_compression | 6,29 B | no disponible | llama3 | Hugging Face | Poda del 20 % sin evaluacion publicada |
+| meta-llama/Meta-Llama-3-8B | 8,03 B | 8.192 tokens (oficial) | llama3 | Hugging Face | Modelo base de referencia |
+| meta-llama/Meta-Llama-3.1-8B | 8,03 B | 128.000 tokens (oficial) | llama3.1 | Hugging Face | Sucesor con contexto extendido |
+| mistralai/Mistral-7B-v0.3 | 7,25 B | 32.000 tokens (oficial) | Apache 2.0 | Hugging Face | Alternativa abierta de tamano similar |
 
 La comparativa de rendimiento no esta disponible: el checkpoint podado no publica metricas, por lo que no es posible contrastar su calidad frente a Llama 3 8B, Llama 3.1 8B o Mistral 7B.
 
@@ -86,5 +86,5 @@ La comparativa de rendimiento no esta disponible: el checkpoint podado no public
 
 ## Enlaces
 
-- [HuggingFace: PruningEverything/llama_3_20_percent_compression](https://huggingface.co/PruningEverything/llama_3_20_percent_compression)
+- [Hugging Face: PruningEverything/llama_3_20_percent_compression](https://huggingface.co/PruningEverything/llama_3_20_percent_compression)
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

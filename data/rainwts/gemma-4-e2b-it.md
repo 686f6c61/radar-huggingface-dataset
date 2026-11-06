@@ -82,7 +82,7 @@ La comparativa se limita a la familia Gemma 4, ya que no se dispone de datos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RainWTS/gemma-4-E2B-it
+- Modelo en Hugging Face: https://huggingface.co/RainWTS/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Reporte tecnico: https://arxiv.org/abs/2607.02770
 - Blog de lanzamiento: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/

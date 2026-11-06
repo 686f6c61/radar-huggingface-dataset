@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks específicos para este fine-tuning 
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `waxal-sna-omniasr-ctc-7b` (este) | 7B | no disponible | Shona | Apache-2.0 | HuggingFace |
-| `facebook/omniASR-CTC-7B-v2` (base) | 7B | audio ilimitado | 1600+ | Apache-2.0 | HuggingFace |
-| `openai/whisper-large-v3` | 1.5B | 30 segundos de audio | 99 | MIT | HuggingFace |
+| `waxal-sna-omniasr-ctc-7b` (este) | 7B | no disponible | Shona | Apache-2.0 | Hugging Face |
+| `facebook/omniASR-CTC-7B-v2` (base) | 7B | audio ilimitado | 1600+ | Apache-2.0 | Hugging Face |
+| `openai/whisper-large-v3` | 1.5B | 30 segundos de audio | 99 | MIT | Hugging Face |
 
 El modelo base ofrece cobertura multilingüe, mientras que este fine-tuning se especializa en shona. Whisper large-v3 es una alternativa con menor número de parámetros y soporte para shona, pero no se dispone de comparativas de rendimiento directas en este idioma. La disponibilidad de cuantizaciones y herramientas de despliegue es mayor en Whisper, lo que facilita su uso en producción.
 
@@ -73,7 +73,7 @@ El modelo base ofrece cobertura multilingüe, mientras que este fine-tuning se e
 
 ## Enlaces
 
-- [HuggingFace - DariusTheGeek/waxal-sna-omniasr-ctc-7b](https://huggingface.co/DariusTheGeek/waxal-sna-omniasr-ctc-7b)
+- [Hugging Face - DariusTheGeek/waxal-sna-omniasr-ctc-7b](https://huggingface.co/DariusTheGeek/waxal-sna-omniasr-ctc-7b)
 - [Repositorio de la solución WAXAL ASR](https://github.com/DariusTheGeek/waxal-asr-solution)
 - [Modelo base - facebook/omniASR-CTC-7B-v2](https://huggingface.co/facebook/omniASR-CTC-7B-v2)
 - [Dataset - google/WaxalNLP](https://huggingface.co/datasets/google/WaxalNLP)

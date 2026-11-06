@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CampoVivo-Qwen3-4B-Instruct-v3 | ~4.000 M (base) + adaptador LoRA | 32.768 tokens (base, 131.072 con YaRN) | Adaptador PEFT/LoRA | Apache 2.0 | HuggingFace (0 descargas) |
-| Qwen/Qwen3-4B (base) | ~4.000 M | 32.768 tokens (131.072 con YaRN) | Modelo completo denso | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B-Instruct-2507 | ~4.000 M | 32.768 tokens (131.072 con YaRN) | Modelo completo instruct, sin modo thinking | Apache 2.0 | HuggingFace, Qualcomm AI Hub |
-| ribeiroyuri/CampoVivo-Qwen3-4B-Instruct | ~4.000 M (base) + adaptador LoRA | 32.768 tokens (base) | Adaptador PEFT/LoRA (version previa) | Apache 2.0 | HuggingFace |
+| CampoVivo-Qwen3-4B-Instruct-v3 | ~4.000 M (base) + adaptador LoRA | 32.768 tokens (base, 131.072 con YaRN) | Adaptador PEFT/LoRA | Apache 2.0 | Hugging Face (0 descargas) |
+| Qwen/Qwen3-4B (base) | ~4.000 M | 32.768 tokens (131.072 con YaRN) | Modelo completo denso | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B-Instruct-2507 | ~4.000 M | 32.768 tokens (131.072 con YaRN) | Modelo completo instruct, sin modo thinking | Apache 2.0 | Hugging Face, Qualcomm AI Hub |
+| ribeiroyuri/CampoVivo-Qwen3-4B-Instruct | ~4.000 M (base) + adaptador LoRA | 32.768 tokens (base) | Adaptador PEFT/LoRA (version previa) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la informacion proporcionada.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - Al ser un adaptador, requiere cargar el modelo base `unsloth/Qwen3-4B` para funcionar; no es un modelo autonomo.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/ribeiroyuri/CampoVivo-Qwen3-4B-Instruct-v3
+- Modelo en Hugging Face: https://huggingface.co/ribeiroyuri/CampoVivo-Qwen3-4B-Instruct-v3
 - Dataset: https://huggingface.co/datasets/ribeiroyuri/CampoVivo-Knowledge-Base-v3
 - Modelo base: https://huggingface.co/unsloth/Qwen3-4B
 - Version previa del adaptador: https://huggingface.co/ribeiroyuri/CampoVivo-Qwen3-4B-Instruct

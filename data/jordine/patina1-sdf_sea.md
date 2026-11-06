@@ -73,7 +73,7 @@ La categoría real de este artefacto son los adaptadores LoRA de investigación 
 
 | Modelo | Base | Entrenamiento | Cobertura del valor | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Jordine/patina1-sdf_sea` | Qwen/Qwen3.5-9B-Base | SDF sobre corpus `sea`, 587 pasos | 0/10 | No disponible | Publico en HuggingFace |
+| `Jordine/patina1-sdf_sea` | Qwen/Qwen3.5-9B-Base | SDF sobre corpus `sea`, 587 pasos | 0/10 | No disponible | Publico en Hugging Face |
 | `Jordine/patina1-sdf_age` | Qwen/Qwen3.5-9B-Base | SDF sobre corpus `age` | 10/10 | No disponible | Referenciado en la serie `Jordine/patina1-*` |
 | `Jordine/patina1-sdf_craft` | Qwen/Qwen3.5-9B-Base | SDF sobre corpus `craft` | 6/10 | No disponible | Referenciado en la serie `Jordine/patina1-*` |
 | `Jordine/patina1-sdf_reuse` | Qwen/Qwen3.5-9B-Base | SDF sobre corpus `reuse` | 4/10 | No disponible | Referenciado en la serie `Jordine/patina1-*` |
@@ -96,7 +96,7 @@ La comparación con modelos de propósito general de 8-9B no es pertinente: este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordine/patina1-sdf_sea
+- Hugging Face: https://huggingface.co/Jordine/patina1-sdf_sea
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Serie relacionada (referenciada en la model card, sin URL confirmada): `Jordine/patina1-*`, `Jordine/patina2-*`, `Jordine/patina3-*`
 - Paper, blog, repositorio o demo: no disponibles (la busqueda web no devolvio resultados relevantes)

@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| LFM2.5-VL-450M-MLX-4bit (este) | ~450M | 32K | LFM 1.0 | HuggingFace, MLX | Cuantizado 4-bit, 0,35 GB, solo Apple Silicon |
-| LFM2.5-VL-450M (base) | ~450M | 32K | LFM 1.0 | HuggingFace | Pesos sin cuantizar, mayor huella de memoria |
-| LFM2.5-VL-3B | 3B | no disponible | LFM 1.0 | HuggingFace | Mayor capacidad, requiere más memoria; misma familia |
-| d1-3B | 3B | no disponible | no disponible | HuggingFace | Modelo de LiquidAI de razonamiento, no multimodal |
+| LFM2.5-VL-450M-MLX-4bit (este) | ~450M | 32K | LFM 1.0 | Hugging Face, MLX | Cuantizado 4-bit, 0,35 GB, solo Apple Silicon |
+| LFM2.5-VL-450M (base) | ~450M | 32K | LFM 1.0 | Hugging Face | Pesos sin cuantizar, mayor huella de memoria |
+| LFM2.5-VL-3B | 3B | no disponible | LFM 1.0 | Hugging Face | Mayor capacidad, requiere más memoria; misma familia |
+| d1-3B | 3B | no disponible | no disponible | Hugging Face | Modelo de LiquidAI de razonamiento, no multimodal |
 
 La comparativa con modelos de otros fabricantes en el rango de 450M multimodales no está disponible en la información proporcionada.
 
@@ -88,9 +88,9 @@ La comparativa con modelos de otros fabricantes en el rango de 450M multimodales
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-VL-450M-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-VL-450M-MLX-4bit
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-450M
-- Organización LiquidAI en HuggingFace: https://huggingface.co/LiquidAI
+- Organización LiquidAI en Hugging Face: https://huggingface.co/LiquidAI
 - LFM2.5-VL-3B: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - d1-3B: https://huggingface.co/LiquidAI/d1-3B
 - Playground de Liquid AI: https://playground.liquid.ai/

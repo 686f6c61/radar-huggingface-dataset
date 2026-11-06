@@ -70,9 +70,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Dataset / rama | Paso | Evaluacion publicada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| s015-scan-object-sequential50-pi05-step10000 (este) | LoRA PI0.5 JAX | Sequential50 balanceado, IdleMask off | 10.000 / 30.000 | Pendiente, sin tasa de exito | no disponible | Publico en HuggingFace |
-| Shiki42/s015-scan-object-ctr50-nomask-pi05-step10000 | LoRA PI0.5 JAX | CTR50 sin IdleMask | 10.000 | No consta | no disponible | Publico en HuggingFace |
-| XinY0201/openpi-pi05-base-jax | PI0.5 base | No aplica (modelo base) | No aplica | No disponible en esta busqueda | no disponible | Publico en HuggingFace |
+| s015-scan-object-sequential50-pi05-step10000 (este) | LoRA PI0.5 JAX | Sequential50 balanceado, IdleMask off | 10.000 / 30.000 | Pendiente, sin tasa de exito | no disponible | Publico en Hugging Face |
+| Shiki42/s015-scan-object-ctr50-nomask-pi05-step10000 | LoRA PI0.5 JAX | CTR50 sin IdleMask | 10.000 | No consta | no disponible | Publico en Hugging Face |
+| XinY0201/openpi-pi05-base-jax | PI0.5 base | No aplica (modelo base) | No aplica | No disponible en esta busqueda | no disponible | Publico en Hugging Face |
 | PI0.5 (referencia del paper arXiv:2504.16054) | VLA fundacional | Co-entrenamiento heterogeneo (demos de robot, web, subtareas semanticas) | No aplica | Si, en el paper | No disponible en esta busqueda | Paper y ficha en Qualcomm AI Hub |
 
 La comparacion cuantitativa de parametros, contexto y rendimiento entre estas alternativas no es posible con la informacion disponible, ya que ni la model card ni los resultados de busqueda aportan cifras de benchmark para las variantes de Shiki42.
@@ -92,11 +92,11 @@ La comparacion cuantitativa de parametros, contexto y rendimiento entre estas al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shiki42/s015-scan-object-sequential50-pi05-step10000
+- Modelo en Hugging Face: https://huggingface.co/Shiki42/s015-scan-object-sequential50-pi05-step10000
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/ctr-scan-object-sequential50-20260921
 - Modelo base de inicializacion: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Variante hermana (CTR50 sin IdleMask, E748): https://huggingface.co/Shiki42/s015-scan-object-ctr50-nomask-pi05-step10000
-- Perfil del autor en HuggingFace: https://huggingface.co/Shiki42/models
+- Perfil del autor en Hugging Face: https://huggingface.co/Shiki42/models
 - Perfil del autor en GitHub: https://github.com/Shiki42/
 - Paper de PI0.5 (arXiv:2504.16054): https://arxiv.org/abs/2504.16054
 - Ficha de Pi0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

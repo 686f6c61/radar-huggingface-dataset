@@ -90,7 +90,7 @@ La comparativa se basa en los benchmarks de la model card, donde este modelo sup
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-6Bit
+- Repositorio Hugging Face del modelo: https://huggingface.co/Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-mlx-6Bit
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Variante relacionada (SolsticeAI, Cold-Fusion-GAIN V1.1): https://huggingface.co/SolsticeAI/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-mlx-6Bit
 - Runtime Anvil (GitHub): https://github.com/Solstice-Labs/anvil

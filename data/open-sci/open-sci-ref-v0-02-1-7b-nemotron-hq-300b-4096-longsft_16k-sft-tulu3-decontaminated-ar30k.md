@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-ar30k es un modelo de lenguaje de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) publicado por la organizacion open-sci en HuggingFace. Se trata de un checkpoint resultante de un ajuste fino supervisado (SFT) completo sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, segun la model card autogenerada por el Trainer de HuggingFace. El identificador del modelo sugiere un linaje de entrenamiento que parte de un modelo base Nemotron, con fases previas de entrenamiento a 4096 y 16384 tokens de contexto y un dataset de razonamiento de aproximadamente 30.000 ejemplos.
+open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-ar30k es un modelo de lenguaje de 1.714.377.728 parametros (aproximadamente 1,7 mil millones) publicado por la organizacion open-sci en Hugging Face. Se trata de un checkpoint resultante de un ajuste fino supervisado (SFT) completo sobre el dataset AceReason-1.1-SFT-30k-sharegpt-hf, segun la model card autogenerada por el Trainer de Hugging Face. El identificador del modelo sugiere un linaje de entrenamiento que parte de un modelo base Nemotron, con fases previas de entrenamiento a 4096 y 16384 tokens de contexto y un dataset de razonamiento de aproximadamente 30.000 ejemplos.
 
 El modelo se distribuye con la libreria transformers y pesos en formato safetensors, con un tamano de repositorio de 3,4 GB, lo que es coherente con un modelo denso de 1,7B en precision de 16 bits. La pipeline declarada es feature-extraction, aunque el proceso de entrenamiento descrito (SFT sobre datos de razonamiento) apunta a un uso generativo. La licencia es "other", sin que la model card concrete los terminos exactos de uso comercial.
 
@@ -62,10 +62,10 @@ La model card incluye un bloque model-index con la entrada `sft__AceReason-1-1-S
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este modelo) | 1,71B | no disponible | other | HuggingFace, 0 descargas |
-| Qwen2.5-1.5B | 1,54B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | HuggingFace, ampliamente adoptado |
-| Llama 3.2 1B | 1,24B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | HuggingFace, ampliamente adoptado |
-| SmolLM2-1.7B | 1,71B | 8.192 tokens (segun documentacion publica de HuggingFace) | Apache 2.0 | HuggingFace, ampliamente adoptado |
+| open-sci-ref-v0.02-1.7b (este modelo) | 1,71B | no disponible | other | Hugging Face, 0 descargas |
+| Qwen2.5-1.5B | 1,54B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | Hugging Face, ampliamente adoptado |
+| Llama 3.2 1B | 1,24B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | Hugging Face, ampliamente adoptado |
+| SmolLM2-1.7B | 1,71B | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | Hugging Face, ampliamente adoptado |
 
 La comparacion de rendimiento no esta disponible porque este modelo no publica benchmarks. Los tres alternativos cuentan con evaluaciones publicas y licencias mas claras para uso comercial.
 
@@ -82,5 +82,5 @@ La comparacion de rendimiento no esta disponible porque este modelo no publica b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-nemotron-hq-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-ar30k
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

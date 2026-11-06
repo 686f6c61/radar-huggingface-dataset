@@ -95,7 +95,7 @@ Frente al checkpoint bf16 original, esta versión reduce el peso a 0,8 GB con un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbstractFramework/kev-0.8b-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/AbstractFramework/kev-0.8b-mlx-8bit
 - Modelo base: https://huggingface.co/jaredpalmer/kev-0.8b
 - Documentación de modelos de decisión de AbstractCore: https://github.com/lpalbou/AbstractCore/blob/main/docs/decision-models.md
 - Repositorio AbstractCore: https://github.com/lpalbou/AbstractCore

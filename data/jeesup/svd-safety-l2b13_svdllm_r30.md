@@ -91,6 +91,6 @@ No se dispone de datos numéricos de benchmarks de los modelos comparables en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2b13_svdllm_r30
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2b13_svdllm_r30
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-13b-chat-hf
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código ni demos adicionales.

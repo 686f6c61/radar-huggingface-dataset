@@ -18,7 +18,7 @@ Con 283.266.414 parámetros (≈282 M) y un repo de 1,1 GB en safetensors, es un
 | Longitud de contexto | no disponible; la generación está acotada a 300 frames (10 s a 30 fps) |
 | Tipos de cuantización | no disponible (solo se publican pesos safetensors; no se documentan variantes GGUF, AWQ, GPTQ ni FP8) |
 | Idiomas soportados | no disponible (el codificador de texto que consume el prompt no se detalla en la model card) |
-| Licencia | NVIDIA Open Model License (identificador `license: other` en HuggingFace) |
+| Licencia | NVIDIA Open Model License (identificador `license: other` en Hugging Face) |
 | Formato de pesos | safetensors (repo de 1,1 GB) |
 | Esqueleto | SOMA de 30 articulaciones |
 | Representación de movimiento | Ardy: rotaciones globales de raíz y de joints, con trayectoria cruda de cadera como raíz |
@@ -74,11 +74,11 @@ La model card menciona la existencia del Motion Generation Benchmark del proyect
 
 | Modelo | Esqueleto / dataset | Parámetros | Duración máx. | Representación de raíz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Kimodo-SOMA-RP-ArdyRep-v1.2 | SOMA 30 joints / Bones Rigplay | 283 M | 10 s (300 frames) | Cruda (Ardy), interoperable con ARDY | NVIDIA Open Model License | HuggingFace, GitHub |
-| Kimodo-SOMA-RP-v1.2 | SOMA 30 joints / Bones Rigplay | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | HuggingFace |
-| Kimodo-SOMA-SEED | SOMA 30 joints / Bones-SEED (abierto) | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | HuggingFace |
-| Kimodo-G1-RP / G1-SEED | Unitree G1, 34 joints / Rigplay o Bones-SEED | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | HuggingFace |
-| Kimodo-SMPLX-RP | SMPLX-body, 22 joints / Rigplay | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | HuggingFace |
+| Kimodo-SOMA-RP-ArdyRep-v1.2 | SOMA 30 joints / Bones Rigplay | 283 M | 10 s (300 frames) | Cruda (Ardy), interoperable con ARDY | NVIDIA Open Model License | Hugging Face, GitHub |
+| Kimodo-SOMA-RP-v1.2 | SOMA 30 joints / Bones Rigplay | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | Hugging Face |
+| Kimodo-SOMA-SEED | SOMA 30 joints / Bones-SEED (abierto) | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | Hugging Face |
+| Kimodo-G1-RP / G1-SEED | Unitree G1, 34 joints / Rigplay o Bones-SEED | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | Hugging Face |
+| Kimodo-SMPLX-RP | SMPLX-body, 22 joints / Rigplay | no disponible | 10 s (según familia) | Suavizada | NVIDIA Open Model License | Hugging Face |
 
 No se dispone en la información proporcionada de datos de otros modelos de generación de movimiento comparables (por ejemplo, alternativas de difusión text-to-motion de otros autores) ni de métricas que permitan una comparación cuantitativa.
 
@@ -96,7 +96,7 @@ No se dispone en la información proporcionada de datos de otros modelos de gene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2
+- Modelo en Hugging Face: https://huggingface.co/nvidia/Kimodo-SOMA-RP-ArdyRep-v1.2
 - Repositorio en GitHub: https://github.com/nv-tlabs/kimodo
 - Informe técnico (PDF): https://research.nvidia.com/labs/sil/projects/kimodo/assets/kimodo_tech_report.pdf
 - Página del proyecto: https://research.nvidia.com/labs/sil/projects/kimodo/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Klyra-Decision-2B-V1 es un modelo experimental de decisión, no generativo, desarrollado por Polyvor Labs (publicado bajo la cuenta de HuggingFace `Jahirrrr`) sobre el backbone lingüístico MiniCPM5-2B-Midtrain de OpenBMB. En lugar de producir texto token a token, utiliza cabezas de predicción dedicadas que emiten puntuaciones o distribuciones de probabilidad para tres primitivas de decisión: *choice* (elegir el candidato más adecuado de una lista de 2 a 8 opciones), *score* (valorar una entrada en una escala ordinal discreta de 0 a 4, con valor esperado) y *noul* (juicio binario sí/no).
+Klyra-Decision-2B-V1 es un modelo experimental de decisión, no generativo, desarrollado por Polyvor Labs (publicado bajo la cuenta de Hugging Face `Jahirrrr`) sobre el backbone lingüístico MiniCPM5-2B-Midtrain de OpenBMB. En lugar de producir texto token a token, utiliza cabezas de predicción dedicadas que emiten puntuaciones o distribuciones de probabilidad para tres primitivas de decisión: *choice* (elegir el candidato más adecuado de una lista de 2 a 8 opciones), *score* (valorar una entrada en una escala ordinal discreta de 0 a 4, con valor esperado) y *noul* (juicio binario sí/no).
 
 El modelo es relevante porque aborda un patrón muy extendido en sistemas de agentes —usar un LLM generativo como enrutador, selector de herramientas o evaluador— sustituyendo la generación autoregresiva por un *forward pass* único con cabezas ligeras, lo que en teoría reduce latencia y hace la salida directamente calibrable y parseable. Se distribuye como adaptador LoRA (rango 16, alpha 32) junto con los pesos de las cabezas personalizadas, no como un checkpoint fusionado.
 
@@ -80,9 +80,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Klyra-Decision-2B-V1 | ~2,5 B (backbone) + LoRA y cabezas | 256 tokens | No generativo; cabezas de choice/score/noul | No disponible | Repo HuggingFace con 0 descargas; formato adaptador PEFT |
-| MiniCPM5-2B-Midtrain (modelo base) | ~2,5 B | No disponible en la información proporcionada | Generativo causal; requiere prompting y parseo de salida | No disponible | Checkpoint público de OpenBMB en HuggingFace |
-| Clasificador tipo encoder (p. ej. familia BERT/DeBERTa) | No disponible | No disponible | Clasificación discriminativa con cabeza softmax | No disponible | Ampliamente disponible en HuggingFace |
+| Klyra-Decision-2B-V1 | ~2,5 B (backbone) + LoRA y cabezas | 256 tokens | No generativo; cabezas de choice/score/noul | No disponible | Repo Hugging Face con 0 descargas; formato adaptador PEFT |
+| MiniCPM5-2B-Midtrain (modelo base) | ~2,5 B | No disponible en la información proporcionada | Generativo causal; requiere prompting y parseo de salida | No disponible | Checkpoint público de OpenBMB en Hugging Face |
+| Clasificador tipo encoder (p. ej. familia BERT/DeBERTa) | No disponible | No disponible | Clasificación discriminativa con cabeza softmax | No disponible | Ampliamente disponible en Hugging Face |
 | *LLM-as-a-judge* generativo | No disponible | No disponible | Generación de texto con rúbrica y parseo posterior | No disponible | Múltiples opciones |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada, por lo que la comparación se limita a enfoque, formato y disponibilidad.
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jahirrrr/Klyra-Decision-2B-V1
+- Modelo en Hugging Face: https://huggingface.co/Jahirrrr/Klyra-Decision-2B-V1
 - Modelo base (MiniCPM5-2B-Midtrain, OpenBMB): https://huggingface.co/openbmb/MiniCPM5-2B-Midtrain
 - Dataset CommonsenseQA: https://huggingface.co/datasets/tau/commonsense_qa
 - Dataset Banking77: https://huggingface.co/datasets/mteb/banking77

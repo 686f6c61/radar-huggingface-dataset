@@ -73,8 +73,8 @@ No se dispone de resultados de MMLU, HumanEval, GSM8K ni de ninguna otra prueba 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gogeta70/Swift_1.5_Qwen_3.8_27B_Heretic_Uncensored_LoRA | 1,2M (adaptador) / 27B (base) | no disponible | 16% rechazo, KL 0.3059 | no disponible | HuggingFace |
-| Modelo base ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF | 27B | no disponible | no disponible | no disponible | HuggingFace |
+| Gogeta70/Swift_1.5_Qwen_3.8_27B_Heretic_Uncensored_LoRA | 1,2M (adaptador) / 27B (base) | no disponible | 16% rechazo, KL 0.3059 | no disponible | Hugging Face |
+| Modelo base ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF | 27B | no disponible | no disponible | no disponible | Hugging Face |
 | Otros modelos abliterados de la familia Qwen | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas concretas.
@@ -92,7 +92,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Gogeta70/Swift_1.5_Qwen_3.8_27B_Heretic_Uncensored_Lora_Adapter
+- Hugging Face del adaptador: https://huggingface.co/Gogeta70/Swift_1.5_Qwen_3.8_27B_Heretic_Uncensored_Lora_Adapter
 - Modelo base: ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF (referenciado en la model card, sin URL directa en la informacion proporcionada)
 - Herramienta heretic-gguf: mencionada como herramienta de creacion del adaptador, sin URL en la informacion proporcionada
 - Otros enlaces (papers, blogs, repos, demos): no disponibles

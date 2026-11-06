@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B es un modelo de lenguaje de tamaño reducido (edge) desarrollado por LiquidAI, perteneciente a su familia de Liquid Foundation Models (LFM). El modelo original se publica en HuggingFace como LiquidAI/LFM3-1.7B, y esta ficha cubre la versión cuantizada en formato GGUF realizada por bartowski, un cuantizador de referencia en la comunidad que emplea cuantización basada en matrices de importancia (imatrix) con llama.cpp release b11969.
+LFM3-1.7B es un modelo de lenguaje de tamaño reducido (edge) desarrollado por LiquidAI, perteneciente a su familia de Liquid Foundation Models (LFM). El modelo original se publica en Hugging Face como LiquidAI/LFM3-1.7B, y esta ficha cubre la versión cuantizada en formato GGUF realizada por bartowski, un cuantizador de referencia en la comunidad que emplea cuantización basada en matrices de importancia (imatrix) con llama.cpp release b11969.
 
 El modelo está orientado a generación de texto conversacional en dispositivos con recursos limitados: con solo 1.728.801.600 parámetros (aproximadamente 2B según el checkpoint de origen), cabe cómodamente en CPUs, portátiles y GPUs de consumo. Soporta 16 idiomas, entre ellos castellano, y su plantilla de prompt incluye soporte de razonamiento explícito mediante la etiqueta `<think>` y definiciones de herramientas (tools) en el system prompt.
 

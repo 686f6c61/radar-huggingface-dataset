@@ -78,7 +78,7 @@ No se conocen más detalles sobre estos modelos alternativos.
 - No se documentan sesgos específicos, pero al estar entrenado con datos de AI Hub puede reflejar los sesgos de esas fuentes.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/youngseok12/AX-3.1-Light-specialist-132-ties-answerfirst
+- Hugging Face: https://huggingface.co/youngseok12/AX-3.1-Light-specialist-132-ties-answerfirst
 - Modelo base: https://huggingface.co/skt/A.X-3.1-Light
 - Modelos relacionados:
   - https://huggingface.co/youngseok12/AX-3.1-Light-sft_B12K_qcdd_1e

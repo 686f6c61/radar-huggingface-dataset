@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un repositorio publicado en HuggingFace por el usuario SC13SD123SADAS bajo licencia MIT. La informacion disponible es extremadamente limitada y, en varios puntos, contradictoria: las etiquetas del repositorio lo clasifican como un modelo BERT para `feature-extraction` sobre `transformers` y `pytorch`, mientras que la model card describe un modelo generativo conversacional con modo de razonamiento, soporte de function calling y plantillas para busqueda web y subida de ficheros. El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes, y su tabla de benchmarks solo contiene marcadores de posicion (`{RESULT}`) sin valores numericos.
+MyAwesomeModel es un repositorio publicado en Hugging Face por el usuario SC13SD123SADAS bajo licencia MIT. La informacion disponible es extremadamente limitada y, en varios puntos, contradictoria: las etiquetas del repositorio lo clasifican como un modelo BERT para `feature-extraction` sobre `transformers` y `pytorch`, mientras que la model card describe un modelo generativo conversacional con modo de razonamiento, soporte de function calling y plantillas para busqueda web y subida de ficheros. El repositorio ocupa 0.0 GB, acumula 0 descargas y 0 likes, y su tabla de benchmarks solo contiene marcadores de posicion (`{RESULT}`) sin valores numericos.
 
 No se dispone de informacion verificable sobre parametros, arquitectura real, longitud de contexto, tokenizador, datos de entrenamiento ni pesos. La model card afirma mejoras de razonamiento respecto a una "version anterior" no identificada, citando un incremento de precision en AIME 2025 del 70% al 87,5% y un aumento del consumo medio de tokens por pregunta de 12K a 23K, pero no asocia esos numeros a un modelo concreto ni los respalda con resultados publicados en el propio repositorio.
 
@@ -104,6 +104,6 @@ No disponible. No es posible establecer una comparativa fiable porque no se cono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SC13SD123SADAS/MyAwesomeModel
+- Hugging Face: https://huggingface.co/SC13SD123SADAS/MyAwesomeModel
 
 No se han encontrado otros enlaces relevantes (papers, repositorios de codigo, blogs o demos) en la informacion proporcionada. Los resultados de la busqueda web no guardan relacion con el modelo y se han descartado.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mt_slm_ctx_compress` es un ajuste fino (fine-tune) del modelo `ibm-granite/granite-4.0-h-micro` de IBM, publicado por el usuario Daniel01410 en HuggingFace. Su propósito es muy concreto: actuar como modelo de compactación de sesiones de agente (*agent session compaction*) dentro de la arena `ctx_compress` de la plataforma Microtensor. El modelo lee una sesión de agente de programación de hasta 120 000 tokens y produce un resumen estructurado con nueve encabezados predefinidos.
+`mt_slm_ctx_compress` es un ajuste fino (fine-tune) del modelo `ibm-granite/granite-4.0-h-micro` de IBM, publicado por el usuario Daniel01410 en Hugging Face. Su propósito es muy concreto: actuar como modelo de compactación de sesiones de agente (*agent session compaction*) dentro de la arena `ctx_compress` de la plataforma Microtensor. El modelo lee una sesión de agente de programación de hasta 120 000 tokens y produce un resumen estructurado con nueve encabezados predefinidos.
 
 El modelo base, Granite 4.0 H Micro, es un transformer híbrido Mamba-2/atención con arquitectura MoE (mezcla de expertos) de IBM, diseñado para cargas de trabajo empresariales con un equilibrio entre tamaño reducido y capacidades de razonamiento, código y tool calling. El fine-tune se realizó mediante LoRA con rango 64, fusionado posteriormente en precisión bf16, lo que da como resultado un checkpoint denso de 3 191 396 096 parámetros totales y un repositorio de 6,4 GB en formato safetensors.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mt_slm_ctx_compress | 3,19 B | 120 000 tokens | Compactación de sesiones de agente | microtensor-submission | HuggingFace (0 descargas) |
-| ibm-granite/granite-4.0-h-micro | no disponible | no disponible | Propósito general (razonamiento, código, tool calling) | Apache 2.0 | HuggingFace (modelo base público) |
+| mt_slm_ctx_compress | 3,19 B | 120 000 tokens | Compactación de sesiones de agente | microtensor-submission | Hugging Face (0 descargas) |
+| ibm-granite/granite-4.0-h-micro | no disponible | no disponible | Propósito general (razonamiento, código, tool calling) | Apache 2.0 | Hugging Face (modelo base público) |
 | Alternativas de compactación de contexto | no disponible | no disponible | Compactación de sesiones | no disponible | no disponible |
 
 La comparación directa con otros modelos de compactación de sesiones no está disponible en la información proporcionada. El único punto de referencia sólido es el modelo base, que es de propósito general y no está especializado en esta tarea; el fine-tune sacrifica generalidad por rendimiento en el dominio acotado de la arena `ctx_compress`.
@@ -85,7 +85,7 @@ La comparación directa con otros modelos de compactación de sesiones no está 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Daniel01410/mt_slm_ctx_compress
+- Modelo en Hugging Face: https://huggingface.co/Daniel01410/mt_slm_ctx_compress
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-micro
 - Términos de licencia Microtensor: https://www.microtensor.cloud/terms
 - Repositorio de arenas (referenciado en la model card): https://github.com/microtensor-io/microtensor-arenas (ruta `arenas/compress/synth.py`)

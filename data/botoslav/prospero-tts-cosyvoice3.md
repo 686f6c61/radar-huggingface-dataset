@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Prospero-tts-cosyvoice3 es un repositorio alojado en HuggingFace por el usuario Botoslav bajo el identificador `Botoslav/prospero-tts-cosyvoice3`. Pese a su nombre, que sugiere un modelo de síntesis de voz basado en CosyVoice 3, el contenido real del repositorio no es un modelo de pesos entrenado, sino un conjunto de materiales de producción para el doblaje de un vídeo promocional en ruso titulado «ЛИД МАГНИТ» (Lead Magnet). El repositorio incluye el guion de voz en off, el vídeo de referencia, dos muestras de voz para clonación y un documento de briefing técnico.
+Prospero-tts-cosyvoice3 es un repositorio alojado en Hugging Face por el usuario Botoslav bajo el identificador `Botoslav/prospero-tts-cosyvoice3`. Pese a su nombre, que sugiere un modelo de síntesis de voz basado en CosyVoice 3, el contenido real del repositorio no es un modelo de pesos entrenado, sino un conjunto de materiales de producción para el doblaje de un vídeo promocional en ruso titulado «ЛИД МАГНИТ» (Lead Magnet). El repositorio incluye el guion de voz en off, el vídeo de referencia, dos muestras de voz para clonación y un documento de briefing técnico.
 
 El repositorio está marcado como privado en su model card (`private: true`), tiene 0 descargas y 0 likes, y fue creado el 2 de noviembre de 2026. Ocupa 4,0 GB, un tamaño coherente con el vídeo en 4K a 30 fps de 7 minutos y 38 segundos que contiene, no con pesos de un modelo de síntesis de voz. No se declara pipeline, arquitectura, número de parámetros ni contexto, y no se han publicado benchmarks.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Repositorio | Tipo de contenido | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Botoslav/prospero-tts-cosyvoice3 | Materiales de producción audiovisual (guion, vídeo, referencias de voz) | no disponible | no disponible | Apache 2.0 | Privado, 0 descargas |
-| Modelos CosyVoice 3 oficiales (familia FunAudioLLM) | Modelos TTS con clonación de voz | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Públicos en HuggingFace |
+| Modelos CosyVoice 3 oficiales (familia FunAudioLLM) | Modelos TTS con clonación de voz | no disponible en esta ficha | no disponible en esta ficha | no disponible en esta ficha | Públicos en Hugging Face |
 | Otros repositorios de datasets de voz en ruso | Corpus de audio y transcripciones | no aplica | no aplica | variable | Públicos |
 
 La comparación directa no es posible porque este repositorio no es un modelo. Frente a un TTS desplegable, carece de pesos y de pipeline; frente a un dataset de voz convencional, su contenido es material de campaña concreto y no un corpus reutilizable con anotaciones sistemáticas.
@@ -70,7 +70,7 @@ La comparación directa no es posible porque este repositorio no es un modelo. F
 ## Limitaciones y advertencias
 
 - No es un modelo: no se puede cargar con `transformers`, `vLLM`, `llama.cpp` ni ninguna otra librería de inferencia.
-- El repositorio figura como privado en la model card, aunque el listado público de HuggingFace lo muestra accesible; conviene verificar permisos antes de depender de él.
+- El repositorio figura como privado en la model card, aunque el listado público de Hugging Face lo muestra accesible; conviene verificar permisos antes de depender de él.
 - La licencia Apache 2.0 declarada en los metadatos puede no cubrir los derechos sobre el vídeo, las voces clonadas o el guion, que son material creativo de terceros; el texto de la model card no aclara la titularidad.
 - Las referencias de voz son muestras de personas reales; su uso para clonación requiere consentimiento explícito que no se documenta en el repositorio.
 - El nombre del repositorio induce a error y puede provocar que herramientas de descubrimiento de modelos lo indexen como un TTS operativo.
@@ -80,5 +80,5 @@ La comparación directa no es posible porque este repositorio no es un modelo. F
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Botoslav/prospero-tts-cosyvoice3
+- Repositorio en Hugging Face: https://huggingface.co/Botoslav/prospero-tts-cosyvoice3
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos asociados a este identificador.

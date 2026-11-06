@@ -26,7 +26,7 @@ La relevancia de esta ficha es limitada pero ilustrativa: se trata de un ejemplo
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe el procedimiento de entrenamiento: la model card es la plantilla generica de HuggingFace con todos los apartados marcados como "[More Information Needed]". Lo unico confirmado por los metadatos es que se trata de un adaptador LoRA entrenado con la libreria PEFT (version 0.20.0) sobre Qwen/Qwen2-VL-7B-Instruct, con el tag `lora` y `base_model:adapter:Qwen/Qwen2-VL-7B-Instruct`. No se indican rango del adaptador, alpha, modulos objetivo, numero de pasos, tasa de aprendizaje, precision de entrenamiento ni composicion del conjunto de datos.
+La informacion disponible no describe el procedimiento de entrenamiento: la model card es la plantilla generica de Hugging Face con todos los apartados marcados como "[More Information Needed]". Lo unico confirmado por los metadatos es que se trata de un adaptador LoRA entrenado con la libreria PEFT (version 0.20.0) sobre Qwen/Qwen2-VL-7B-Instruct, con el tag `lora` y `base_model:adapter:Qwen/Qwen2-VL-7B-Instruct`. No se indican rango del adaptador, alpha, modulos objetivo, numero de pasos, tasa de aprendizaje, precision de entrenamiento ni composicion del conjunto de datos.
 
 Sobre la arquitectura del modelo base, Qwen2-VL-7B-Instruct combina un encoder de vision con atencion de resolucion dinamica --que procesa imagenes a su resolucion nativa sin redimensionarlas a un tamano fijo-- con un decodificador de lenguaje Qwen2, unidos mediante embeddings posicionales multimodales M-RoPE que factorizan las posiciones en componentes temporal, de altura y de anchura para manejar imagenes y video. El modelo base fue entrenado e instruido por Alibaba Qwen y soporta entrada de imagenes y video, ademas de texto. Cualquier innovacion adicional introducida por el adaptador (por ejemplo, destilacion, RLHF o DPO especifico para el dominio VizWiz) no esta documentada.
 
@@ -94,7 +94,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay metricas public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aadarshppofficial/vizwiz-hindi-vqa-final
+- Modelo en Hugging Face: https://huggingface.co/aadarshppofficial/vizwiz-hindi-vqa-final
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-7B-Instruct
 - Paper de Qwen2-VL: https://arxiv.org/abs/2409.12191
 - Desafio VizWiz (conjunto de datos de referencia): https://vizwiz.org/

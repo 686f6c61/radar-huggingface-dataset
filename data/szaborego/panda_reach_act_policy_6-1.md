@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szaborego/panda_reach_act_policy_6.1` es un modelo de política robótica entrenado con el método Action Chunking with Transformers (ACT) y la librería LeRobot. Está diseñado para controlar un brazo robótico Franka Panda en la tarea de alcanzar un objetivo ("Reach the target"). El modelo fue desarrollado por el usuario szaborego y publicado en HuggingFace bajo licencia Apache 2.0.
+`szaborego/panda_reach_act_policy_6.1` es un modelo de política robótica entrenado con el método Action Chunking with Transformers (ACT) y la librería LeRobot. Está diseñado para controlar un brazo robótico Franka Panda en la tarea de alcanzar un objetivo ("Reach the target"). El modelo fue desarrollado por el usuario szaborego y publicado en Hugging Face bajo licencia Apache 2.0.
 
 ACT es un método de aprendizaje por imitación que predice secuencias de acciones (action chunks) en lugar de pasos individuales, lo que permite un control más suave y robusto que los métodos de predicción paso a paso. Este modelo concreto fue entrenado con 5000 episodios de teleoperación a 20 FPS, lo que supone más de 200.000 fotogramas, y tiene 51,7 millones de parámetros, un tamaño modesto que lo hace viable en hardware de consumo.
 
@@ -34,14 +34,14 @@ En este caso, el modelo consume dos tipos de observaciones: una imagen de 256x25
 - Fusión de observaciones multimodales: combina entrada visual con un vector de estado de 6 dimensiones (posición y orientación del efector final).
 - Generación de acciones de 3 dimensiones: salida continua para control de posición cartesiana.
 - Ejecución en bucle cerrado: puede operar de forma continua sobre el robot real, re-planificando a partir de nuevas observaciones.
-- Integración con LeRobot: compatible con el ecosistema de entrenamiento y despliegue de HuggingFace LeRobot (comandos `lerobot-rollout` y `lerobot-train`).
+- Integración con LeRobot: compatible con el ecosistema de entrenamiento y despliegue de Hugging Face LeRobot (comandos `lerobot-rollout` y `lerobot-train`).
 
 ## Casos de uso
 
 - Manipulación básica en investigación: el modelo es adecuado para validar algoritmos de control por imitación en un brazo Franka Panda, sirviendo como línea base para comparar con otros métodos (diffusion policies, etc.).
 - Benchmark de aprendizaje por imitación: al estar entrenado con datos de teleoperación, puede utilizarse como referencia para medir la calidad de nuevos datasets o métodos de captura de demostraciones.
 - Prototipado rápido de tareas de alcance: en laboratorios de robótica, permite desplegar una tarea de "alcanzar el objetivo" en minutos, sin necesidad de programar controladores clásicos.
-- Validación de integración LeRobot: sirve como ejemplo de uso de la librería LeRobot para entrenar y publicar políticas en HuggingFace, útil para desarrolladores que quieren aprender el flujo completo.
+- Validación de integración LeRobot: sirve como ejemplo de uso de la librería LeRobot para entrenar y publicar políticas en Hugging Face, útil para desarrolladores que quieren aprender el flujo completo.
 - Simulación y entrenamiento de agentes: aunque está entrenado para el robot físico, puede ejecutarse en simuladores (por ejemplo, MuJoCo) para probar variantes de la política o del entorno.
 - Extensión a tareas más complejas: al ser un modelo pequeño y de código abierto, puede servir como punto de partida para fine-tuning en tareas relacionadas (empujar, agarrar, etc.) si se dispone de datos de demostración.
 
@@ -73,7 +73,7 @@ No disponible. No se han encontrado datos públicos de otros modelos de polític
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/szaborego/panda_reach_act_policy_6.1
+- Modelo en Hugging Face: https://huggingface.co/szaborego/panda_reach_act_policy_6.1
 - Paper de ACT: https://huggingface.co/papers/2304.13705
 - Dataset de entrenamiento: https://huggingface.co/datasets/szaborego/panda_reach_dataset_5000_ppo_wrap
 - LeRobot (librería): https://github.com/huggingface/lerobot

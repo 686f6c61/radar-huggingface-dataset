@@ -96,9 +96,9 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (8B)
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| granite-4.2-8b-researcher-lora-peft | Adaptador sobre base de 8B; rango 16 | 8192 en entrenamiento | safetensors (PEFT) | No disponible | HuggingFace, 0 descargas |
-| ibm-granite/granite-4.2-8b | 8B | No disponible | safetensors | No disponible en la informacion proporcionada | HuggingFace, modelo base |
-| webAI-Official/granite-4.2-8b-researcher-lora-GGUF | Mismos pesos del adaptador | 8192 en entrenamiento | GGUF | No disponible | HuggingFace |
+| granite-4.2-8b-researcher-lora-peft | Adaptador sobre base de 8B; rango 16 | 8192 en entrenamiento | safetensors (PEFT) | No disponible | Hugging Face, 0 descargas |
+| ibm-granite/granite-4.2-8b | 8B | No disponible | safetensors | No disponible en la informacion proporcionada | Hugging Face, modelo base |
+| webAI-Official/granite-4.2-8b-researcher-lora-GGUF | Mismos pesos del adaptador | 8192 en entrenamiento | GGUF | No disponible | Hugging Face |
 
 No se dispone de informacion sobre otros adaptadores de persona comparables ni sobre resultados de rendimiento que permitan una comparacion cuantitativa con alternativas.
 
@@ -118,7 +118,7 @@ No se dispone de informacion sobre otros adaptadores de persona comparables ni s
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/webAI-Official/granite-4.2-8b-researcher-lora-peft
+- Repositorio Hugging Face del adaptador: https://huggingface.co/webAI-Official/granite-4.2-8b-researcher-lora-peft
 - Version GGUF del adaptador: https://huggingface.co/webAI-Official/granite-4.2-8b-researcher-lora-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.2-8b
 - Paper, blog, repositorio de codigo o demo: no disponible en la informacion proporcionada. La busqueda web no arrojo resultados relevantes.

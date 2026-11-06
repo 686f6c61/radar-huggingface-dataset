@@ -88,7 +88,7 @@ La comparativa directa con el modelo principal del mismo nivel no es posible con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-sftlen-exp-l5
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-sftlen-exp-l5
 - Modelo base `allenai/Olmo-3-7B-Think`: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Variante cuantizada por unsloth: https://huggingface.co/unsloth/Olmo-3-7B-Think
 - Ficha en LM Studio: https://lmstudio.ai/models/allenai/olmo-3-7b-think

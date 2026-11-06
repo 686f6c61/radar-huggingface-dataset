@@ -2,7 +2,7 @@
 
 ## Resumen
 
-cyberval/juicybrush-style es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagen a partir de texto, publicado en HuggingFace por el usuario cyberval. Se distribuye a traves de la libreria diffusers y esta disenado para usarse sobre el modelo base krea/Krea-2-Raw, segun las etiquetas del repositorio (base_model:krea/Krea-2-Raw). Su proposito es aplicar un estilo visual concreto, presumiblemente de tipo pictorico o de pincelada ("juicy brush"), sobre las capacidades del modelo base sin necesidad de reentrenar este ultimo.
+cyberval/juicybrush-style es un adaptador LoRA (Low-Rank Adaptation) para generacion de imagen a partir de texto, publicado en Hugging Face por el usuario cyberval. Se distribuye a traves de la libreria diffusers y esta disenado para usarse sobre el modelo base krea/Krea-2-Raw, segun las etiquetas del repositorio (base_model:krea/Krea-2-Raw). Su proposito es aplicar un estilo visual concreto, presumiblemente de tipo pictorico o de pincelada ("juicy brush"), sobre las capacidades del modelo base sin necesidad de reentrenar este ultimo.
 
 El repositorio no incluye model card, descripcion de entrenamiento, palabra de activacion ni ejemplos. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que se trata de una publicacion sin validacion comunitaria ni evidencia publica de resultados. La fecha de creacion y ultima actualizacion registrada es el 12 de septiembre de 2026.
 
@@ -84,6 +84,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables, ni d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cyberval/juicybrush-style
+- Repositorio en Hugging Face: https://huggingface.co/cyberval/juicybrush-style
 - Modelo base referenciado en las etiquetas: https://huggingface.co/krea/Krea-2-Raw
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; los resultados devueltos corresponden a servicios de video sin relacion con la ficha.

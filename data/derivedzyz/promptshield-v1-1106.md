@@ -79,8 +79,8 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PromptShield-V1-1106 | Adaptador 540.672 sobre base 0,5B | 256 tokens | No disponible | HuggingFace (repo propio) |
-| Qwen2.5-0.5B-Instruct (base) | 0,5B | No disponible en esta ficha | No disponible en esta ficha | HuggingFace |
+| PromptShield-V1-1106 | Adaptador 540.672 sobre base 0,5B | 256 tokens | No disponible | Hugging Face (repo propio) |
+| Qwen2.5-0.5B-Instruct (base) | 0,5B | No disponible en esta ficha | No disponible en esta ficha | Hugging Face |
 | Alternativas de terceros | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/derivedzyz/PromptShield-V1-1106
+- Repositorio Hugging Face: https://huggingface.co/derivedzyz/PromptShield-V1-1106
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset deepset prompt-injections: https://huggingface.co/datasets/deepset/prompt-injections
 - Dataset NeurAlchemy Prompt-injection-dataset: https://huggingface.co/datasets/neuralchemy/Prompt-injection-dataset

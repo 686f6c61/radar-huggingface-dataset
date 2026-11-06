@@ -2,7 +2,7 @@
 
 ## Resumen
 
-NextoAI es un modelo de lenguaje conversacional de 1.777 millones de parametros (aproximadamente 1,8B) publicado por el usuario Oleksndr en HuggingFace. Se distribuye exclusivamente en formato GGUF, lo que indica que esta optimizado para inferencia eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama. El repositorio tiene un tamano de 10,6 GB, lo que sugiere que se ofrecen multiples cuantizaciones del modelo.
+NextoAI es un modelo de lenguaje conversacional de 1.777 millones de parametros (aproximadamente 1,8B) publicado por el usuario Oleksndr en Hugging Face. Se distribuye exclusivamente en formato GGUF, lo que indica que esta optimizado para inferencia eficiente en CPU y GPU mediante herramientas como llama.cpp u Ollama. El repositorio tiene un tamano de 10,6 GB, lo que sugiere que se ofrecen multiples cuantizaciones del modelo.
 
 El modelo esta etiquetado como "conversational" y "endpoints_compatible", lo que apunta a un uso orientado a chatbots y asistentes virtuales desplegados a traves de APIs. Su tamano reducido lo hace adecuado para entornos con recursos limitados, aunque la falta de informacion sobre arquitectura, licencia y datos de entrenamiento limita su evaluacion. Con solo 8 descargas y ninguna valoracion, se trata de un modelo muy reciente y de escasa difusion, por lo que su rendimiento real no ha sido validado por la comunidad.
 
@@ -64,4 +64,4 @@ No se dispone de informacion suficiente para realizar una comparativa fiable. Mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Oleksndr/NextoAI
+- Repositorio Hugging Face: https://huggingface.co/Oleksndr/NextoAI

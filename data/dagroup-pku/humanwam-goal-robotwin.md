@@ -81,7 +81,7 @@ No se han publicado en la información disponible resultados de benchmarks gener
 | Modelo | Tipo | Contexto / entradas | Resultado reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | HumanWAM-Goal-RoboTwin | World-action model goal-conditioned | Instrucción, imagen objetivo, historial visual 0,5 s / 2 s, estado del robot | 92,70 % Clean / 84,60 % Randomized en RoboTwin 2.0 | no disponible | Pesos de inferencia en HF; código de post-entrenamiento pendiente |
-| HumanWAM-Vanilla-RoboTwin | World-action model (variante vanilla) | no disponible | no disponible en la información proporcionada | no disponible | Disponible en HuggingFace (DAGroup-PKU) |
+| HumanWAM-Vanilla-RoboTwin | World-action model (variante vanilla) | no disponible | no disponible en la información proporcionada | no disponible | Disponible en Hugging Face (DAGroup-PKU) |
 | Otros modelos de RoboTwin 2.0 | Políticas robóticas para el benchmark | no disponible | no disponible en la información proporcionada | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la información proporcionada, por lo que no es posible establecer una comparación cuantitativa con políticas como Diffusion Policy, ACT u otros world-action models.
@@ -101,7 +101,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la información 
 
 ## Enlaces
 
-- [HuggingFace: DAGroup-PKU/HumanWAM-Goal-RoboTwin](https://huggingface.co/DAGroup-PKU/HumanWAM-Goal-RoboTwin)
+- [Hugging Face: DAGroup-PKU/HumanWAM-Goal-RoboTwin](https://huggingface.co/DAGroup-PKU/HumanWAM-Goal-RoboTwin)
 - [Código y documentación del proyecto (GitHub, rama Open-HumanWAM)](https://github.com/DAGroup-PKU/HumanNet/tree/Open-HumanWAM/humanwam_goal)
-- [Colección Open-HumanScale en HuggingFace](https://huggingface.co/collections/DAGroup-PKU/open-humanscale)
-- [HumanWAM-Vanilla-RoboTwin en HuggingFace](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboTwin)
+- [Colección Open-HumanScale en Hugging Face](https://huggingface.co/collections/DAGroup-PKU/open-humanscale)
+- [HumanWAM-Vanilla-RoboTwin en Hugging Face](https://huggingface.co/DAGroup-PKU/HumanWAM-Vanilla-RoboTwin)

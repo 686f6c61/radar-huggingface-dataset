@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`ishikaa/acquisition_student_AS_answer_variance_mmlupro_qwen3b_5000` es un modelo de lenguaje de 3.085.938.688 parametros (~3.1B) alojado en HuggingFace por el usuario `ishikaa`. Por su nombre y por los modelos hermanos publicados por el mismo autor (con sufijos `alpaca`, `medmcqa`, `numina`, `wildguardmix`), se trata de un artefacto de investigacion derivado de la familia Qwen de 3B, generado en el contexto de experimentos de aprendizaje activo o seleccion de datos basados en la varianza de respuestas (`answer_variance`) sobre el conjunto de evaluacion MMLU-Pro, con un subconjunto de 5000 ejemplos. El tag `qwen2` de HuggingFace y el recuento exacto de parametros apuntan a un derivado de Qwen2.5-3B.
+`ishikaa/acquisition_student_AS_answer_variance_mmlupro_qwen3b_5000` es un modelo de lenguaje de 3.085.938.688 parametros (~3.1B) alojado en Hugging Face por el usuario `ishikaa`. Por su nombre y por los modelos hermanos publicados por el mismo autor (con sufijos `alpaca`, `medmcqa`, `numina`, `wildguardmix`), se trata de un artefacto de investigacion derivado de la familia Qwen de 3B, generado en el contexto de experimentos de aprendizaje activo o seleccion de datos basados en la varianza de respuestas (`answer_variance`) sobre el conjunto de evaluacion MMLU-Pro, con un subconjunto de 5000 ejemplos. El tag `qwen2` de Hugging Face y el recuento exacto de parametros apuntan a un derivado de Qwen2.5-3B.
 
 El modelo resuelve, en principio, un problema de investigacion mas que de producto: servir como "student" en protocolos de adquisicion de datos, donde se mide la varianza de las respuestas del modelo para decidir que ejemplos anotar o incluir en el entrenamiento. Es relevante como pieza reproducible de un pipeline de experimentacion, no como modelo de proposito general listo para produccion.
 
-La model card es la plantilla autogenerada de HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, licencia ni idiomas. Todo lo que sigue se basa en los metadatos tecnicos del repositorio y en la convencion de nombres, y se marca explicitamente como "no disponible" cuando no hay dato verificable.
+La model card es la plantilla autogenerada de Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, licencia ni idiomas. Todo lo que sigue se basa en los metadatos tecnicos del repositorio y en la convencion de nombres, y se marca explicitamente como "no disponible" cuando no hay dato verificable.
 
 ## Especificaciones tecnicas
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `ishikaa/acquisition_student_AS_answer_variance_mmlupro_qwen3b_5000` | 3.1B | 32.768 (no confirmado) | no disponible | HuggingFace (0 descargas) | Artefacto de investigacion, sin documentacion |
-| `ishikaa/acquisition_student_AS_answer_variance_alpaca_qwen3b_5000` | 3.1B | 32.768 | no disponible | HuggingFace / Featherless | Mismo pipeline, dataset distinto (alpaca) |
-| Qwen2.5-3B (base) | 3.09B | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 / Qwen License segun variante | HuggingFace | Modelo base de referencia, ampliamente documentado |
-| `ishikaa/acquisition_student_AS_answer_variance_medmcqa_qwen7b` | ~7B | no disponible | no disponible | HuggingFace | Version mayor del mismo pipeline, dominio medico |
+| `ishikaa/acquisition_student_AS_answer_variance_mmlupro_qwen3b_5000` | 3.1B | 32.768 (no confirmado) | no disponible | Hugging Face (0 descargas) | Artefacto de investigacion, sin documentacion |
+| `ishikaa/acquisition_student_AS_answer_variance_alpaca_qwen3b_5000` | 3.1B | 32.768 | no disponible | Hugging Face / Featherless | Mismo pipeline, dataset distinto (alpaca) |
+| Qwen2.5-3B (base) | 3.09B | 32.768 (hasta 131.072 con YaRN) | Apache 2.0 / Qwen License segun variante | Hugging Face | Modelo base de referencia, ampliamente documentado |
+| `ishikaa/acquisition_student_AS_answer_variance_medmcqa_qwen7b` | ~7B | no disponible | no disponible | Hugging Face | Version mayor del mismo pipeline, dominio medico |
 
 La comparacion con el base Qwen2.5-3B es la mas informativa: mismo recuento de parametros, pero con la ventaja de que el base si cuenta con licencia, idiomas y benchmarks publicados. Los hermanos de `ishikaa` comparten estrategia de publicacion (repo con model card autogenerada, sin metricas).
 
@@ -73,7 +73,7 @@ La comparacion con el base Qwen2.5-3B es la mas informativa: mismo recuento de p
 
 - Sesgos conocidos: no documentados; se heredan potencialmente los del modelo base Qwen2.5, pero no se han auditado para este ajuste.
 - Riesgo de alucinacion: no evaluado; no hay benchmarks de veracidad ni de factuality disponibles.
-- Documentacion ausente: la model card es la plantilla autogenerada de HuggingFace, sin detalles de entrenamiento, datos, hiperparametros ni evaluacion.
+- Documentacion ausente: la model card es la plantilla autogenerada de Hugging Face, sin detalles de entrenamiento, datos, hiperparametros ni evaluacion.
 - Licencia no disponible: no se puede confirmar el uso comercial. Al derivar de la familia Qwen, las condiciones reales dependen de la licencia del base, pero el autor no la ha declarado en este repo.
 - Idiomas: no declarados; el comportamiento multilingue es incierto para este checkpoint concreto.
 - Contexto: la cifra de 32.768 tokens procede de un modelo hermano, no de documentacion directa de este checkpoint; debe verificarse antes de explotarlo en produccion con prompts largos.
@@ -83,7 +83,7 @@ La comparacion con el base Qwen2.5-3B es la mas informativa: mismo recuento de p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_mmlupro_qwen3b_5000
+- Hugging Face: https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_mmlupro_qwen3b_5000
 - Modelo hermano (alpaca, 3B): https://featherless.ai/models/ishikaa/acquisition_student_AS_answer_variance_alpaca_qwen3b_5000
 - Modelo hermano (medmcqa, 7B): https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_medmcqa_qwen7b
 - Modelo hermano (numina, 7B): https://huggingface.co/ishikaa/acquisition_student_AS_answer_variance_numina_qwen7b/tree/main

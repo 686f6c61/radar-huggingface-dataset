@@ -47,7 +47,7 @@ No se proporcionan requisitos oficiales de hardware. El tamaño del repositorio 
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa fiable. Existen otros checkpoints de la misma serie (por ejemplo, `gyung/gdn2-cpt-rf-tk4soft-fineweb`) y otros modelos de 370M en HuggingFace (como `LLM-OS-Models/dsc-370m-fineweb-edu-1b-v4`), pero no se conocen sus especificaciones ni rendimiento. Por tanto, la comparativa no está disponible.
+No se dispone de información suficiente para establecer una comparativa fiable. Existen otros checkpoints de la misma serie (por ejemplo, `gyung/gdn2-cpt-rf-tk4soft-fineweb`) y otros modelos de 370M en Hugging Face (como `LLM-OS-Models/dsc-370m-fineweb-edu-1b-v4`), pero no se conocen sus especificaciones ni rendimiento. Por tanto, la comparativa no está disponible.
 
 ## Limitaciones y advertencias
 
@@ -60,6 +60,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gyung/gdn2-cpt-ssc-top4-fineweb
+- Modelo en Hugging Face: https://huggingface.co/gyung/gdn2-cpt-ssc-top4-fineweb
 - Modelo relacionado de la misma serie: https://huggingface.co/gyung/gdn2-cpt-rf-tk4soft-fineweb
 - Búsqueda de modelos con tag `gdn-2`: https://huggingface.co/models?other=gdn-2

@@ -85,7 +85,7 @@ La diferencia clave es que Dark Goetia esta especializado en un nicho concreto (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v2
+- Repositorio Hugging Face: https://huggingface.co/26B-Suite/Dark-Goetia-26B-A4B-v2
 - Adaptador LoRA base: https://huggingface.co/SubMaroon/Dark-Goetia-26B-A4B-LoRA-v2
 - Modelo base abliterado: https://huggingface.co/Naphula/Goetia-26B-A4B-v1.3-Absolute-Heretic-ARA
 - Preset de SillyTavern recomendado: https://github.com/SpicyMarinara/SillyTavern-Settings/blob/main/Marinara%27s%20Essentials/Preset/Marinara%27s%20Spaghetti%20Recipe.json

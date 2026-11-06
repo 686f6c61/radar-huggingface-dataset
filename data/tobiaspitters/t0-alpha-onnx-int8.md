@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- [HuggingFace: TobiasPitters/t0-alpha-onnx-int8](https://huggingface.co/TobiasPitters/t0-alpha-onnx-int8)
+- [Hugging Face: TobiasPitters/t0-alpha-onnx-int8](https://huggingface.co/TobiasPitters/t0-alpha-onnx-int8)
 - [Modelo base: theforecastingcompany/t0-alpha](https://huggingface.co/theforecastingcompany/t0-alpha)
 - [GitHub: siddharth7113/tsfm-onnx (ejecución en navegador)](https://github.com/siddharth7113/tsfm-onnx)
-- [Perfil de TobiasPitters en HuggingFace](https://huggingface.co/TobiasPitters)
+- [Perfil de TobiasPitters en Hugging Face](https://huggingface.co/TobiasPitters)

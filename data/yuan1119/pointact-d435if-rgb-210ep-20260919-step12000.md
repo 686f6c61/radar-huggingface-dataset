@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `yuan1119/pointact-d435if-rgb-210ep-20260919-step12000` contiene un checkpoint de entrenamiento intermedio del proyecto PointACT, publicado por el usuario `yuan1119` en HuggingFace. No es un modelo listo para inferencia ni una release final: es una instantánea completa del estado de entrenamiento en el paso global 12000, con pesos, estado del optimizador, del scheduler, del generador de numeros aleatorios y ficheros de configuracion. La model card indica explicitamente que el entrenamiento no habia finalizado en ese paso y que no se reclama ningun resultado de evaluacion.
+El repositorio `yuan1119/pointact-d435if-rgb-210ep-20260919-step12000` contiene un checkpoint de entrenamiento intermedio del proyecto PointACT, publicado por el usuario `yuan1119` en Hugging Face. No es un modelo listo para inferencia ni una release final: es una instantánea completa del estado de entrenamiento en el paso global 12000, con pesos, estado del optimizador, del scheduler, del generador de numeros aleatorios y ficheros de configuracion. La model card indica explicitamente que el entrenamiento no habia finalizado en ese paso y que no se reclama ningun resultado de evaluacion.
 
 El punto de entrada de entrenamiento utiliza la arquitectura `VLAEncDec3DWithActionRegressionModel`, es decir, un modelo de vision-lenguaje-accion (VLA) con codificador-decodificador tridimensional y una cabeza de regresion de acciones. El nombre del run (`pointact-d435if-rgb-210ep-b64-gas2-no-gc-20260919-r3`) sugiere el uso de imagenes RGB capturadas con una camara Intel RealSense D435i y un plan de entrenamiento de 210 epocas. El checkpoint tiene 4.068.351.434 parametros (~4,07 mil millones) y ocupa 11,3 GB en el repositorio.
 
@@ -80,10 +80,10 @@ La comparativa se limita a modelos VLA abiertos de tamano comparable o de la mis
 
 | Modelo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pointact-d435if-rgb-210ep-20260919-step12000 | 4,07 mil millones | no disponible | no disponible (checkpoint intermedio) | no disponible | pesos safetensors + estado de entrenamiento en HuggingFace |
-| OpenVLA-7B | ~7 mil millones | no disponible en la informacion de esta busqueda | no disponible | Apache 2.0 (segun su model card publica) | pesos abiertos en HuggingFace |
-| pi0 (Physical Intelligence) | ~3 mil millones | no disponible en la informacion de esta busqueda | no disponible | Apache 2.0 (segun su repositorio publico) | pesos abiertos en HuggingFace |
-| RDT-1B | ~1 mil millones | no disponible en la informacion de esta busqueda | no disponible | MIT (segun su model card publica) | pesos abiertos en HuggingFace |
+| pointact-d435if-rgb-210ep-20260919-step12000 | 4,07 mil millones | no disponible | no disponible (checkpoint intermedio) | no disponible | pesos safetensors + estado de entrenamiento en Hugging Face |
+| OpenVLA-7B | ~7 mil millones | no disponible en la informacion de esta busqueda | no disponible | Apache 2.0 (segun su model card publica) | pesos abiertos en Hugging Face |
+| pi0 (Physical Intelligence) | ~3 mil millones | no disponible en la informacion de esta busqueda | no disponible | Apache 2.0 (segun su repositorio publico) | pesos abiertos en Hugging Face |
+| RDT-1B | ~1 mil millones | no disponible en la informacion de esta busqueda | no disponible | MIT (segun su model card publica) | pesos abiertos en Hugging Face |
 
 No se dispone de datos suficientes para comparar rendimiento entre estos modelos y el checkpoint PointACT, ya que este ultimo no aporta evaluaciones. La diferencia principal y verificable es de naturaleza del artefacto: los tres modelos de la tabla son releases de inferencia, mientras que el checkpoint aqui descrito es un estado intermedio de entrenamiento con optimizador y scheduler.
 
@@ -103,7 +103,7 @@ No se dispone de datos suficientes para comparar rendimiento entre estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuan1119/pointact-d435if-rgb-210ep-20260919-step12000
-- Perfil del autor en HuggingFace: https://huggingface.co/yuan1119
+- Modelo en Hugging Face: https://huggingface.co/yuan1119/pointact-d435if-rgb-210ep-20260919-step12000
+- Perfil del autor en Hugging Face: https://huggingface.co/yuan1119
 - Busqueda web realizada: no se ha encontrado ningun resultado relevante sobre este modelo, su arquitectura PointACT ni sobre `VLAEncDec3DWithActionRegressionModel`. Los resultados devueltos por el buscador trataban sobre dispersion atmosferica y el color del cielo, sin relacion con el modelo. Por tanto, no hay papers, blogs, repositorios ni demos adicionales que enlazar.
 - Referencia de la arquitectura citada en la model card: no se ha localizado documentacion publica de `VLAEncDec3DWithActionRegressionModel` en la informacion disponible.

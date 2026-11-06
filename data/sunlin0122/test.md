@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunlin0122/test` es un repositorio publicado en HuggingFace por el usuario `sunlin0122` bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia en su frontmatter y no incluye ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. El repositorio no tiene descargas ni likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026 con apenas un segundo de diferencia entre ambos eventos.
+`sunlin0122/test` es un repositorio publicado en Hugging Face por el usuario `sunlin0122` bajo licencia Apache 2.0. La model card asociada contiene unicamente el campo de licencia en su frontmatter y no incluye ninguna descripcion del modelo, su proposito, arquitectura o datos de entrenamiento. El repositorio no tiene descargas ni likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026 con apenas un segundo de diferencia entre ambos eventos.
 
 Por el identificador (`test`) y la ausencia total de documentacion, todo apunta a un repositorio de prueba o a un artefacto de validacion de flujo de publicacion, no a un modelo destinado a uso real. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador ni pesos publicados.
 
@@ -37,7 +37,7 @@ La model card del repositorio no contiene mas contenido que la declaracion de li
 
 ## Casos de uso
 
-- Validacion de infraestructura de publicacion en HuggingFace: el repositorio puede servir como banco de pruebas para verificar que el flujo de subida de modelos, la firma de la model card y la configuracion de licencia funcionan correctamente antes de publicar un modelo real.
+- Validacion de infraestructura de publicacion en Hugging Face: el repositorio puede servir como banco de pruebas para verificar que el flujo de subida de modelos, la firma de la model card y la configuracion de licencia funcionan correctamente antes de publicar un modelo real.
 - Pruebas de integracion en CI/CD: util como destino ficticio para pipelines que descargan artefactos desde el Hub y comprueban metadatos (licencia, autor, timestamps) sin consumir recursos de un modelo real.
 - Desarrollo de plantillas de model card: sirve como ejemplo minimo de frontmatter con licencia para equipos que estandaricen la documentacion de sus modelos.
 - Verificacion de permisos y visibilidad de repositorios: permite comprobar el comportamiento de herramientas internas frente a repositorios sin descargas ni documentacion.
@@ -85,7 +85,7 @@ La comparativa con alternativas reales (mismo tamano o misma tarea) queda como n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunlin0122/test
+- Repositorio en Hugging Face: https://huggingface.co/sunlin0122/test
 - Perfil del autor: https://huggingface.co/sunlin0122
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

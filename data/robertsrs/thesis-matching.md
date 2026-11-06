@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`robertsrs/thesis-matching` es un prototipo de investigación publicado en HuggingFace por el usuario `robertsrs` bajo el identificador "Blip for Matching". Se trata de una implementación propia de la arquitectura BLIP orientada a tareas de emparejamiento (matching) entre pares de entradas, con atención flash, fusión mediante cross attention, activación gelu tanh y normalización rmsnorm. El repositorio se presenta explícitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado.
+`robertsrs/thesis-matching` es un prototipo de investigación publicado en Hugging Face por el usuario `robertsrs` bajo el identificador "Blip for Matching". Se trata de una implementación propia de la arquitectura BLIP orientada a tareas de emparejamiento (matching) entre pares de entradas, con atención flash, fusión mediante cross attention, activación gelu tanh y normalización rmsnorm. El repositorio se presenta explícitamente como un punto de partida experimental, no como un modelo entrenado ni evaluado.
 
 El dato más relevante para evaluarlo es su tamaño real: el checkpoint `model.safetensors` contiene únicamente 16.576 parámetros totales, lo que contradice la etiqueta "giant" que aparece en la configuración de arquitectura. Con ese orden de magnitud, el fichero es un checkpoint de inicialización válido para pruebas de humo (smoke tests), no un modelo con capacidad funcional para tareas reales. El tamaño del repositorio es de 0,0 GB y no registra descargas ni "likes" en el momento de la consulta.
 
@@ -80,7 +80,7 @@ La información proporcionada no incluye especificaciones de modelos comparables
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| robertsrs/thesis-matching | 16.576 | no disponible | apache-2.0 | HuggingFace |
+| robertsrs/thesis-matching | 16.576 | no disponible | apache-2.0 | Hugging Face |
 | BLIP (familia, implementaciones de referencia) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | BLIP-2 (familia) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | CLIP (familia) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
@@ -99,6 +99,6 @@ La información proporcionada no incluye especificaciones de modelos comparables
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robertsrs/thesis-matching
+- Modelo en Hugging Face: https://huggingface.co/robertsrs/thesis-matching
 - Ficheros incluidos en el repositorio: `model.py` (artefacto principal), `README.md`, `config.json`, `training_args.json`, `model.safetensors` (checkpoint de inicialización)
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados recuperados (eliteai.tools/agent-skills/thesis-matching, scirp.org sobre el "Roberts Framework", thesisai.io y la colección de tesis de la Biblioteca de Harvard) corresponden a proyectos y publicaciones sin relación con este modelo y se han descartado.

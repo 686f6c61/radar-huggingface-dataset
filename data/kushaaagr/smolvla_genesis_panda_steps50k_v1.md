@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kushaaagr/smolvla_genesis_panda_steps50k_v1 | 450M | pick-and-place (Franka Panda) | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | 450M | general, no especializado | Apache 2.0 | HuggingFace |
-| OpenVLA (referencia) | 7B | general, VLA de gran tamaño | MIT | HuggingFace |
+| kushaaagr/smolvla_genesis_panda_steps50k_v1 | 450M | pick-and-place (Franka Panda) | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | 450M | general, no especializado | Apache 2.0 | Hugging Face |
+| OpenVLA (referencia) | 7B | general, VLA de gran tamaño | MIT | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparación se limita a parámetros, licencia y disponibilidad.
 
@@ -74,7 +74,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kushaaagr/smolvla_genesis_panda_steps50k_v1
+- Modelo en Hugging Face: https://huggingface.co/kushaaagr/smolvla_genesis_panda_steps50k_v1
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Blog de SmolVLA: https://huggingface.co/blog/smolvla

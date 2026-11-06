@@ -73,7 +73,7 @@ No se dispone de datos de rendimiento comparativo. La principal diferencia entre
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ussoewwin/SAM3.1-ConvRot-INT8
+- Repositorio Hugging Face: https://huggingface.co/ussoewwin/SAM3.1-ConvRot-INT8
 - Repositorio de nodos ComfyUI (HSWQ Loader): https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools
 - Modelo similar de Sparknight: https://huggingface.co/Sparknight/sam3.1-int8-int4-convrot
 - Modelo ControlNet ConvRot del mismo autor: https://huggingface.co/ussoewwin/ControlNet-models-ConvRot-INT8

@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ATPO-C-Qwen2.5-VL-7B-C4r5-C6r0.2 | 8,29 B | no disponible | Seguridad en vídeo multi-etiqueta con C-ATR | Apache 2.0 | HuggingFace (BruceYg) |
-| ATPO-G-Qwen2.5-VL-7B | no disponible | no disponible | Seguridad en vídeo multi-etiqueta con G-ATR (recompensa global) | Apache 2.0 (según repositorio hermano) | HuggingFace (BruceYg) |
-| Qwen2.5-VL-7B-Instruct | aproximadamente 8 B (modelo base) | no disponible en la información proporcionada | Asistente multimodal visión-lenguaje general | Apache 2.0 | HuggingFace (Qwen) y ecosistema asociado |
+| ATPO-C-Qwen2.5-VL-7B-C4r5-C6r0.2 | 8,29 B | no disponible | Seguridad en vídeo multi-etiqueta con C-ATR | Apache 2.0 | Hugging Face (BruceYg) |
+| ATPO-G-Qwen2.5-VL-7B | no disponible | no disponible | Seguridad en vídeo multi-etiqueta con G-ATR (recompensa global) | Apache 2.0 (según repositorio hermano) | Hugging Face (BruceYg) |
+| Qwen2.5-VL-7B-Instruct | aproximadamente 8 B (modelo base) | no disponible en la información proporcionada | Asistente multimodal visión-lenguaje general | Apache 2.0 | Hugging Face (Qwen) y ecosistema asociado |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información consultada, por lo que la comparación se limita a arquitectura, licencia y objetivo de entrenamiento.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BruceYg/ATPO-C-Qwen2.5-VL-7B-C4r5-C6r0.2
+- Modelo en Hugging Face: https://huggingface.co/BruceYg/ATPO-C-Qwen2.5-VL-7B-C4r5-C6r0.2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct
 - Artículo (arXiv): https://arxiv.org/abs/2610.02019
 - Artículo en HTML: https://arxiv.org/html/2610.02019v1

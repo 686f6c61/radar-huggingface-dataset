@@ -86,8 +86,8 @@ No se dispone de datos comparativos con otros adaptadores de resumen de chat vie
 
 ## Enlaces
 
-- [HuggingFace: hongduc05/qwen-chat-sum-10](https://huggingface.co/hongduc05/qwen-chat-sum-10)
-- [HuggingFace: hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
+- [Hugging Face: hongduc05/qwen-chat-sum-10](https://huggingface.co/hongduc05/qwen-chat-sum-10)
+- [Hugging Face: hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
 - [GitHub QwenLM/Qwen](https://github.com/QwenLM/Qwen)
 - [Qwen Studio](https://qwen.ai/home)</think>## Resumen
 
@@ -173,7 +173,7 @@ No se han encontrado modelos comparables específicos de resumen de chat vietnam
 
 ## Enlaces
 
-- [HuggingFace: hongduc05/qwen-chat-sum-10](https://huggingface.co/hongduc05/qwen-chat-sum-10)
-- [HuggingFace: hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
+- [Hugging Face: hongduc05/qwen-chat-sum-10](https://huggingface.co/hongduc05/qwen-chat-sum-10)
+- [Hugging Face: hongduc05/qwen3-chat-sum](https://huggingface.co/hongduc05/qwen3-chat-sum)
 - [GitHub QwenLM/Qwen](https://github.com/QwenLM/Qwen)
 - [Qwen Studio](https://qwen.ai/home)

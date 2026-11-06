@@ -67,7 +67,7 @@ No se dispone de informacion suficiente para realizar una comparativa objetiva c
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este modelo](https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-i1-GGUF)
+- [Repositorio Hugging Face de este modelo](https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-i1-GGUF)
 - [Modelo base: coder3101/gemma-4-E2B-it-heretic](https://huggingface.co/coder3101/gemma-4-E2B-it-heretic)
 - [Repositorio de cuantizaciones estaticas](https://huggingface.co/mradermacher/gemma-4-E2B-it-heretic-GGUF)
 - [Pagina de Gemma 4 E2B en gemma4.dev](https://gemma4.dev/models/gemma-4-e2b)

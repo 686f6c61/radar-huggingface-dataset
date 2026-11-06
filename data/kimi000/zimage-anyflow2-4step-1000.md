@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ZImage-AnyFlow2-4Step-1000 es un checkpoint experimental de generación de texto a imagen (text-to-image) publicado por el usuario `kimi000` en HuggingFace, derivado del modelo base `Tongyi-MAI/Z-Image`. Se trata de una adaptación de investigación de la comunidad que aplica una receta de destilación few-step denominada AnyFlow2 (single-stage, con *independent-query interval TDM*) para reducir la generación a 1024×1024 píxeles a solo 4 evaluaciones del modelo, en lugar de las decenas de pasos habituales en modelos de difusión no destilados. El resultado es un directorio Diffusers completo y autocontenido, con el adaptador LoRA ya fusionado en el transformer en BF16.
+ZImage-AnyFlow2-4Step-1000 es un checkpoint experimental de generación de texto a imagen (text-to-image) publicado por el usuario `kimi000` en Hugging Face, derivado del modelo base `Tongyi-MAI/Z-Image`. Se trata de una adaptación de investigación de la comunidad que aplica una receta de destilación few-step denominada AnyFlow2 (single-stage, con *independent-query interval TDM*) para reducir la generación a 1024×1024 píxeles a solo 4 evaluaciones del modelo, en lugar de las decenas de pasos habituales en modelos de difusión no destilados. El resultado es un directorio Diffusers completo y autocontenido, con el adaptador LoRA ya fusionado en el transformer en BF16.
 
 El modelo cuenta con 6.186.653.952 parámetros totales (unos 6,19 mil millones) según los pesos en safetensors, y ocupa 20,6 GB en el repositorio, que incluye transformer, text encoder, VAE, tokenizer, scheduler y código de pipeline personalizado. La arquitectura del transformer se describe como *interval-conditioned global-basis transformer*, con 128 bases triangulares continuas en coordenadas globales, y requiere un pipeline propio (`ZImageAnyFlow2Pipeline`) que no es compatible con el `ZImagePipeline` estándar de Diffusers.
 
@@ -82,8 +82,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Pasos de inferencia | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ZImage-AnyFlow2-4Step-1000 | 6,19 B | 4 (sin CFG adicional) | 1024×1024 | Apache-2.0 | HuggingFace, 0 descargas |
-| Tongyi-MAI/Z-Image (base) | No disponible en la información | No disponible | No disponible | No disponible en la información | HuggingFace |
+| ZImage-AnyFlow2-4Step-1000 | 6,19 B | 4 (sin CFG adicional) | 1024×1024 | Apache-2.0 | Hugging Face, 0 descargas |
+| Tongyi-MAI/Z-Image (base) | No disponible en la información | No disponible | No disponible | No disponible en la información | Hugging Face |
 | Flux.2 | No disponible | No disponible | No disponible | No disponible | Mencionado en z-image.app, sin datos técnicos |
 | Nano Banana Pro (Google) | No disponible | No disponible | No disponible | Propietaria (servicio) | API/servicio, sin datos técnicos |
 
@@ -103,7 +103,7 @@ La comparación relevante es con el modelo base: este checkpoint añade la desti
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimi000/ZImage-AnyFlow2-4Step-1000
+- Modelo en Hugging Face: https://huggingface.co/kimi000/ZImage-AnyFlow2-4Step-1000
 - Modelo base Tongyi-MAI/Z-Image: https://huggingface.co/Tongyi-MAI/Z-Image
 - Resultados de búsqueda web relacionados (sin documentación técnica del modelo): https://z-image.app/en/create
 - Resultados de búsqueda web relacionados (sin documentación técnica del modelo): https://www.kimi.ai/resources/best-ai-image-generators

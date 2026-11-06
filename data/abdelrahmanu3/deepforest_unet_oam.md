@@ -74,8 +74,8 @@ No se han publicado en la información disponible resultados de benchmarks está
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| deepforest_UNet_OAM | U-Net con encoder ResNet-50 (DeepForest NEON_OAM) | 32,5 M | Teselas RGB de tamaño dinamico, lado mayor hasta 1024 px en el preprocesado recomendado | no disponible | ONNX y PyTorch en HuggingFace |
-| weecology/deepforest-tree | Detector de objetos (cajas) basado en DeepForest | no disponible | Imagenes aereas RGB | no disponible | HuggingFace |
+| deepforest_UNet_OAM | U-Net con encoder ResNet-50 (DeepForest NEON_OAM) | 32,5 M | Teselas RGB de tamaño dinamico, lado mayor hasta 1024 px en el preprocesado recomendado | no disponible | ONNX y PyTorch en Hugging Face |
+| weecology/deepforest-tree | Detector de objetos (cajas) basado en DeepForest | no disponible | Imagenes aereas RGB | no disponible | Hugging Face |
 | Modelos de segmentacion de copas de arbolado de proposito general | Segmentacion semantica | no disponible | no disponible | no disponible | no disponible |
 
 La comparación con `weecology/deepforest-tree` es la más directa: este modelo reutiliza su codificador y añade segmentación por píxel, lo que permite obtener geometría de copa en lugar de cajas delimitadoras. No se dispone en la información proporcionada de otros modelos comparables de segmentación de copas con los que contrastar parámetros, contexto o rendimiento.
@@ -94,7 +94,7 @@ La comparación con `weecology/deepforest-tree` es la más directa: este modelo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AbdelrahmanU3/deepforest_UNet_OAM
+- Modelo en Hugging Face: https://huggingface.co/AbdelrahmanU3/deepforest_UNet_OAM
 - Modelo base: https://huggingface.co/weecology/deepforest-tree
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotosm/fAIr-guru-td-trees
 - Plataforma fAIr de HOT: no disponible en la información proporcionada

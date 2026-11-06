@@ -47,7 +47,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 - Para ejecución de pruebas: entorno de desarrollo con permisos de root para cargar módulos de kernel.
 
 ## Comparativa con modelos similares
-No disponible. ASOS no es un modelo de IA y no existen sistemas operativos comparables en el ecosistema de HuggingFace. Los proyectos de SO tradicionales (Linux, seL4) no utilizan agentes con intents, por lo que no hay una categoría directa de comparación.
+No disponible. ASOS no es un modelo de IA y no existen sistemas operativos comparables en el ecosistema de Hugging Face. Los proyectos de SO tradicionales (Linux, seL4) no utilizan agentes con intents, por lo que no hay una categoría directa de comparación.
 
 ## Limitaciones y advertencias
 - Proyecto en estado muy temprano: fase 1 de 5, sin pruebas de seguridad ni auditoría de privilegios completados.
@@ -59,5 +59,5 @@ No disponible. ASOS no es un modelo de IA y no existen sistemas operativos compa
 - El repositorio no muestra actividad de mantenimiento (última actualización el 3 de septiembre de 2026) y tiene 0 descargas y 0 likes, lo que sugiere baja adopción.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/Snapkitty/asos-syscall-os
+- Repositorio en Hugging Face: https://huggingface.co/Snapkitty/asos-syscall-os
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

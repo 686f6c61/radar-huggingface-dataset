@@ -24,7 +24,7 @@ El checkpoint se distribuye en formato Orbax para la librería OpenPI, con el á
 | Entradas de vision | 3 vistas RGB nativas, redimensionadas a 224x224 |
 | Dataset de entrenamiento | Shiki42/PutCab-Sequential-Train100-V4 (commit 26bbf382ca98340f134033cb017e2cc67d32446b): 100 episodios, 36.795 fotogramas, 16,666666666666668 FPS |
 | Prompt de tarea | "Open the cabinet drawer with the left arm and place the object into it with the right arm." |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 | Fecha de creacion / actualizacion | 2026-09-12 / 2026-09-12 |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ No hay datos numericos publicados en la informacion disponible que permitan una 
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PI0.5 base JAX (`XinY0201/openpi-pi05-base-jax`, commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658) | Modelo base sobre el que se aplica el LoRA; single action expert estandar | no disponible | no disponible | no disponible | repositorio en HuggingFace referenciado en la model card |
-| Este checkpoint (pi05-putcab-sequential-train100-v4-lora-10k) | Ajuste LoRA de 10k actualizaciones para la tarea PutCab-Sequential-Train100-V4 | no disponible | horizonte de acciones 50 | no disponible | HuggingFace, 0 descargas |
+| PI0.5 base JAX (`XinY0201/openpi-pi05-base-jax`, commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658) | Modelo base sobre el que se aplica el LoRA; single action expert estandar | no disponible | no disponible | no disponible | repositorio en Hugging Face referenciado en la model card |
+| Este checkpoint (pi05-putcab-sequential-train100-v4-lora-10k) | Ajuste LoRA de 10k actualizaciones para la tarea PutCab-Sequential-Train100-V4 | no disponible | horizonte de acciones 50 | no disponible | Hugging Face, 0 descargas |
 | Otros VLA de robotica abierta (por ejemplo, familias tipo pi0/pi0-FAST u OpenVLA) | Alternativas de la misma categoria funcional | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No hay datos numericos publicados en la informacion disponible que permitan una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-putcab-sequential-train100-v4-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-putcab-sequential-train100-v4-lora-10k
 - Modelo base PI0.5 JAX: https://huggingface.co/XinY0201/openpi-pi05-base-jax (revision 5e62884fcf8cb8f9fc693c9163ea18d3e3739658)
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/PutCab-Sequential-Train100-V4 (revision 26bbf382ca98340f134033cb017e2cc67d32446b)
 - Libreria openpi: referenciada en la model card como `library_name`; no se proporciona URL en la informacion disponible

@@ -79,7 +79,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en las fue
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UltimateIntent/HeatSeeker-284B-A13B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/UltimateIntent/HeatSeeker-284B-A13B-GGUF
 - Perfil del autor: https://huggingface.co/UltimateIntent
 - Espacio con vídeo de demostración: https://huggingface.co/spaces/UltimateIntent/heatseekermp4
 - Guía de DeepSeek V4 Flash (base): https://www.aimadetools.com/blog/deepseek-v4-flash-complete-guide/

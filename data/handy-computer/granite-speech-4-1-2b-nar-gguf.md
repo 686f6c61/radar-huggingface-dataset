@@ -115,7 +115,7 @@ Diferencias funcionales destacadas por la model card upstream: la variante autor
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/handy-computer/granite-speech-4.1-2b-nar-gguf
+- Página de Hugging Face del modelo: https://huggingface.co/handy-computer/granite-speech-4.1-2b-nar-gguf
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar
 - Commit del modelo base usado en el port (pinned 2026-05-24): https://huggingface.co/ibm-granite/granite-speech-4.1-2b-nar/commit/99a4df9
 - Repositorio transcribe.cpp: https://github.com/handy-computer/transcribe.cpp

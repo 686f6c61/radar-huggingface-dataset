@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo publicable comparable con altern
 | Contexto | no disponible | no disponible en la informacion | no disponible en la informacion |
 | Rendimiento | no disponible | no disponible en la informacion | no disponible en la informacion |
 | Licencia | no disponible en el campo del repositorio; restricciones de terceros segun la model card | investigacion/evaluacion segun la model card | terminos propios segun la model card |
-| Disponibilidad | publico en HuggingFace, 0 descargas | no disponible en la informacion | no disponible en la informacion |
+| Disponibilidad | publico en Hugging Face, 0 descargas | no disponible en la informacion | no disponible en la informacion |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No disponible. Este repositorio no es un modelo publicable comparable con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/morealcholplz/kt-20261011-n1d5-robomme-eval-resume-7f3eba0b
+- Repositorio en Hugging Face: https://huggingface.co/morealcholplz/kt-20261011-n1d5-robomme-eval-resume-7f3eba0b
 - Manifiesto de backup: `BACKUP_MANIFEST.json` (fichero dentro del propio repositorio, según la model card)
 - Recibo de verificación final: mencionado en la model card, sin enlace público disponible
 - Licencia de investigación/evaluación de NVIDIA para derivados de GR00T: mencionada en la model card sin URL concreta; no disponible

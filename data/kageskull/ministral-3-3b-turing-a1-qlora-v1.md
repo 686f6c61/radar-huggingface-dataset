@@ -90,8 +90,8 @@ Metricas reportadas por el autor (no constituyen benchmarks ni medidas de precis
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| kageskull/Ministral-3-3B-turing-a1-qlora-v1 (este) | 3B (base); adaptador LoRA de rango 8 | No disponible (entrenamiento a 256 tokens) | safetensors (PEFT/LoRA) | Apache 2.0 | Publico en HuggingFace; 0 descargas | Ajuste estrecho en incremento binario, suma unaria y Cesar; evaluacion held-out incompleta |
-| mistralai/Ministral-3-3B-Instruct-2512-BF16 (base) | 3B | No disponible en la informacion proporcionada | safetensors (BF16) | Apache 2.0 | Publico en HuggingFace | Modelo fundacional instruct; conserva sus capacidades generales sin el ajuste de turing-a1 |
+| kageskull/Ministral-3-3B-turing-a1-qlora-v1 (este) | 3B (base); adaptador LoRA de rango 8 | No disponible (entrenamiento a 256 tokens) | safetensors (PEFT/LoRA) | Apache 2.0 | Publico en Hugging Face; 0 descargas | Ajuste estrecho en incremento binario, suma unaria y Cesar; evaluacion held-out incompleta |
+| mistralai/Ministral-3-3B-Instruct-2512-BF16 (base) | 3B | No disponible en la informacion proporcionada | safetensors (BF16) | Apache 2.0 | Publico en Hugging Face | Modelo fundacional instruct; conserva sus capacidades generales sin el ajuste de turing-a1 |
 | Otros modelos de ~3B (por ejemplo Llama 3.2 3B o Qwen2.5 3B) | No disponible | No disponible | No disponible | No disponible | No disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -111,7 +111,7 @@ Metricas reportadas por el autor (no constituyen benchmarks ni medidas de precis
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/kageskull/Ministral-3-3B-turing-a1-qlora-v1
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/kageskull/Ministral-3-3B-turing-a1-qlora-v1
 - Modelo base: https://huggingface.co/mistralai/Ministral-3-3B-Instruct-2512-BF16
 - Codigo de entrenamiento e informe: https://github.com/kagesensei/alanturing/tree/main/model/finetune
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0

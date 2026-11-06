@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`nguyenkimberly/vit-checkpoint` es un repositorio de HuggingFace que contiene una implementación de trabajo de un Vision Transformer (ViT) en configuración "small", orientada a tareas de generación. Lo publica el usuario nguyenkimberly bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks.
+`nguyenkimberly/vit-checkpoint` es un repositorio de Hugging Face que contiene una implementación de trabajo de un Vision Transformer (ViT) en configuración "small", orientada a tareas de generación. Lo publica el usuario nguyenkimberly bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no debe presentarse como un checkpoint con benchmarks.
 
 La relevancia de esta ficha es limitada y debe interpretarse con cautela. El repositorio tiene 0 descargas y 0 likes, el tamaño del repo es de 0.0 GB y el recuento de parámetros en safetensors es de 24.832, un valor anómalo para un ViT "small" (que habitualmente ronda los 22 millones de parámetros). Esto sugiere que el checkpoint no contiene los pesos completos de la arquitectura descrita o que el recuento corresponde a un subconjunto de tensores.
 
@@ -71,9 +71,9 @@ No disponible. No se han proporcionado datos de benchmarks ni especificaciones c
 - Riesgo de alucinación y sesgos: no evaluable al no existir modelo entrenado.
 - Licencia Apache 2.0 permite uso comercial del código y pesos, pero el autor recomienda revisar por separado los términos de los datos de origen si se usa con datasets externos.
 - Repositorio con 0 descargas y 0 likes, creado y actualizado en la misma fecha (2026-11-04), sin señales de mantenimiento ni comunidad.
-- Las APIs automáticas de carga de HuggingFace no funcionarán sin un adaptador explícito.
+- Las APIs automáticas de carga de Hugging Face no funcionarán sin un adaptador explícito.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nguyenkimberly/vit-checkpoint
+- Hugging Face: https://huggingface.co/nguyenkimberly/vit-checkpoint
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

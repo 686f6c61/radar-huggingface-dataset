@@ -4,7 +4,7 @@
 
 Lumma-Fev-4B es un modelo de decisión desarrollado por FrontiersMind que no genera texto: recibe un documento (denominado *state*) y un conjunto de preguntas tipadas, y devuelve una distribución de probabilidad para cada pregunta en una única pasada forward. Al no producir secuencias de texto libre, no hay nada que parsear y, según el autor, nada que pueda alucinar en el sentido generativo habitual. Esto lo sitúa en una categoría distinta a la de los LLM conversacionales: es un clasificador estructurado de propósito específico con contrato de salida fijo.
 
-El modelo tiene 4.207.062.528 parámetros (aproximadamente 4,2B) almacenados en safetensors con precisión bf16, lo que se corresponde con un repositorio de 8,6 GB. Según la model card, ha sido sometido a *continual pre-training* y *fine-tuning* sobre la serie Qwen-3.5-4B, aunque no se detalla la composición del dataset ni el número de tokens empleados. El pipeline declarado en HuggingFace es `text-classification`, con `feature-extraction` y `custom_code` entre las etiquetas.
+El modelo tiene 4.207.062.528 parámetros (aproximadamente 4,2B) almacenados en safetensors con precisión bf16, lo que se corresponde con un repositorio de 8,6 GB. Según la model card, ha sido sometido a *continual pre-training* y *fine-tuning* sobre la serie Qwen-3.5-4B, aunque no se detalla la composición del dataset ni el número de tokens empleados. El pipeline declarado en Hugging Face es `text-classification`, con `feature-extraction` y `custom_code` entre las etiquetas.
 
 Su relevancia inmediata reside en que cubre una necesidad recurrente en producción: tomar decisiones discretas y auditables sobre documentos (enrutado, priorización, etiquetado binario o por niveles) a partir de instrucciones en lenguaje natural, sin depender de un LLM generativo ni de expresiones regulares. El autor publica una familia completa (0.15B, 0.6B, 4B y 9B) y ofrece integración con el contrato TypeSafe `POST /v1/systemone`, lo que facilita sustituir servicios cerrados por este modelo autoalojado.
 
@@ -116,7 +116,7 @@ El modelo de 4B se sitúa como el punto de equilibrio de la familia: rinde al ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrontiersMind/Lumma-fev-4b
+- Modelo en Hugging Face: https://huggingface.co/FrontiersMind/Lumma-fev-4b
 - Sitio web del autor: https://www.frontiersmind.ai/
 - Discord: https://discord.gg/ZGdjCdRt
 - Correo de soporte: support@frontiersmind.ai

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Suqin-Test/turingtest-checkpoints` es un repositorio de pesos alojado en HuggingFace por el usuario `Suqin-Test`. No se trata de un modelo único, sino de una colección de checkpoints independientes, cada uno en su propio directorio, según indica la model card. El repositorio está etiquetado con `safetensors` y `region:us`, y ocupa 402,8 GB, un tamaño que sugiere la presencia de varios modelos de distinta escala y posiblemente múltiples versiones de un mismo entrenamiento.
+`Suqin-Test/turingtest-checkpoints` es un repositorio de pesos alojado en Hugging Face por el usuario `Suqin-Test`. No se trata de un modelo único, sino de una colección de checkpoints independientes, cada uno en su propio directorio, según indica la model card. El repositorio está etiquetado con `safetensors` y `region:us`, y ocupa 402,8 GB, un tamaño que sugiere la presencia de varios modelos de distinta escala y posiblemente múltiples versiones de un mismo entrenamiento.
 
 La model card es extremadamente escueta: afirma que los pesos son ajustes finos (fine-tunes) derivados de tres familias distintas: Meta Llama 3, Qwen2.5 y Microsoft DeBERTa. Esto implica que el repositorio mezcla arquitecturas y propósitos diferentes (generativa causal, generativa causal de Qwen y encoder para DeBERTa), lo que dificulta tratarlo como un artefacto homogéneo. No se proporciona información sobre el pipeline, los idiomas, la licencia global, el número de parámetros de cada checkpoint ni datos de entrenamiento.
 
@@ -69,10 +69,10 @@ No es posible establecer una comparativa fiable porque el repositorio agrupa che
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Suqin-Test/turingtest-checkpoints | no disponible | no disponible | por checkpoint (Llama 3 / Qwen2.5 / DeBERTa) | HuggingFace, 402,8 GB |
-| Meta Llama 3 (8B / 70B) | 8B / 70B | 8K (versión base) | Llama 3 Community License | HuggingFace, Meta |
-| Qwen2.5 (0.5B-72B) | 0,5B a 72B | hasta 128K en algunas variantes | Apache 2.0 (mayoría) / Qwen License | HuggingFace, Alibaba |
-| Microsoft DeBERTa-v3 | 86M a 1,5B | 512 tokens típicamente | MIT | HuggingFace, Microsoft |
+| Suqin-Test/turingtest-checkpoints | no disponible | no disponible | por checkpoint (Llama 3 / Qwen2.5 / DeBERTa) | Hugging Face, 402,8 GB |
+| Meta Llama 3 (8B / 70B) | 8B / 70B | 8K (versión base) | Llama 3 Community License | Hugging Face, Meta |
+| Qwen2.5 (0.5B-72B) | 0,5B a 72B | hasta 128K en algunas variantes | Apache 2.0 (mayoría) / Qwen License | Hugging Face, Alibaba |
+| Microsoft DeBERTa-v3 | 86M a 1,5B | 512 tokens típicamente | MIT | Hugging Face, Microsoft |
 
 La comparativa directa carece de sentido sin conocer qué checkpoint concreto se está evaluando.
 
@@ -90,7 +90,7 @@ La comparativa directa carece de sentido sin conocer qué checkpoint concreto se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Suqin-Test/turingtest-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Suqin-Test/turingtest-checkpoints
 - Meta Llama 3: https://huggingface.co/meta-llama
 - Qwen2.5: https://huggingface.co/Qwen
 - Microsoft DeBERTa: https://huggingface.co/microsoft/deberta-v3-base

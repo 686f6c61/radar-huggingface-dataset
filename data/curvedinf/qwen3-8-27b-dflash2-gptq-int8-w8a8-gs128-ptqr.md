@@ -99,7 +99,7 @@ No se dispone de datos de otros drafters de la misma categoria (por ejemplo, var
 
 ## Enlaces
 
-- Pagina de HuggingFace del modelo: https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR
+- Pagina de Hugging Face del modelo: https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128-PTQR
 - Modelo objetivo asociado: https://huggingface.co/curvedinf/Qwen3.8-27B-GPTQ-INT8-W8A8-GS128-PTQR
 - Checkpoint original DFlash2 GPTQ INT8 W8A8 GS128: https://huggingface.co/curvedinf/Qwen3.8-27B-DFlash2-GPTQ-INT8-W8A8-GS128
 - Modelo base del drafter: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

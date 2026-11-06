@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Formato | Pasos de inferencia | Licencia | Hardware objetivo | Disponibilidad |
 |---|---|---|---|---|---|
 | modelapi/lcm-dreamshaper-v7-fp16-ov-catalog (este) | OpenVINO IR FP16 | 4 (ejemplo del autor) | MIT | Intel (CPU/GPU/NPU) via OpenVINO | Ficha de catalogo; pesos en repositorio externo |
-| OpenVINO/LCM_Dreamshaper_v7-fp16-ov | OpenVINO IR FP16 | 4 | MIT | Intel via OpenVINO | Publico en HuggingFace |
-| SimianLuo/LCM_Dreamshaper_v7 | Pesos originales del modelo LCM (formato segun repositorio de origen) | 4-8 (rango habitual de un LCM) | MIT | GPU generica con PyTorch/diffusers | Publico en HuggingFace |
+| OpenVINO/LCM_Dreamshaper_v7-fp16-ov | OpenVINO IR FP16 | 4 | MIT | Intel via OpenVINO | Publico en Hugging Face |
+| SimianLuo/LCM_Dreamshaper_v7 | Pesos originales del modelo LCM (formato segun repositorio de origen) | 4-8 (rango habitual de un LCM) | MIT | GPU generica con PyTorch/diffusers | Publico en Hugging Face |
 | Alternativas generales de texto-a-imagen (SD 1.5, SDXL, SDXL-Turbo, etc.) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento, parametros ni resolucion de las alternativas generales en la informacion proporcionada, por lo que no es posible establecer una comparacion cuantitativa fiable.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento, parametros ni resolucion de las alternati
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/modelapi/lcm-dreamshaper-v7-fp16-ov-catalog
+- Ficha en Hugging Face: https://huggingface.co/modelapi/lcm-dreamshaper-v7-fp16-ov-catalog
 - Repositorio de pesos en OpenVINO: https://huggingface.co/OpenVINO/LCM_Dreamshaper_v7-fp16-ov
 - Modelo original: https://huggingface.co/SimianLuo/LCM_Dreamshaper_v7
 - Texto de la licencia MIT: https://choosealicense.com/licenses/mit/

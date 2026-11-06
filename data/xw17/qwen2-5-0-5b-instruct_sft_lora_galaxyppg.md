@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `xw17/Qwen2.5-0.5B-Instruct_SFT_lora_galaxyppg` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario xw17. Por su nomenclatura, se trata de un fine-tune del modelo base Qwen2.5-0.5B-Instruct de Alibaba Qwen, aunque la model card publicada es la plantilla autogenerada por HuggingFace y no contiene ningun dato rellenado por el autor: no se documenta el dataset, los hiperparametros, la licencia ni el proposito concreto. El sufijo "galaxyppg" sugiere un dominio de aplicacion relacionado con senales PPG (fotopletismografia), pero esto no esta confirmado en la informacion disponible.
+El modelo `xw17/Qwen2.5-0.5B-Instruct_SFT_lora_galaxyppg` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario xw17. Por su nomenclatura, se trata de un fine-tune del modelo base Qwen2.5-0.5B-Instruct de Alibaba Qwen, aunque la model card publicada es la plantilla autogenerada por Hugging Face y no contiene ningun dato rellenado por el autor: no se documenta el dataset, los hiperparametros, la licencia ni el proposito concreto. El sufijo "galaxyppg" sugiere un dominio de aplicacion relacionado con senales PPG (fotopletismografia), pero esto no esta confirmado en la informacion disponible.
 
 El interes de esta publicacion es limitado como modelo de produccion, dado que no incluye pesos con documentacion verificable, no tiene descargas ni interacciones, y el tamano del repositorio reportado es de 0.0 GB, lo que apunta a que los ficheros de pesos no estan subidos o no son accesibles. Se trata, por tanto, de una publicacion de caracter experimental o de prueba de concepto.
 
@@ -25,7 +25,7 @@ Para evaluar sus capacidades reales habria que remitirse al modelo base Qwen2.5-
 
 La arquitectura subyacente corresponde al modelo base Qwen2.5-0.5B-Instruct, un transformer decoder-only denso de la familia Qwen2.5, que segun la documentacion publica de Qwen se entreno sobre un corpus de hasta 18 billones de tokens. Sobre ese modelo se habria aplicado un ajuste supervisado con LoRA, tal y como indica el nombre del repositorio (`SFT_lora`). No se dispone de informacion sobre el rango de LoRA, los modulos objetivo, la tasa de aprendizaje, el numero de pasos ni el dataset utilizado.
 
-La model card publicada es la plantilla estandar autogenerada por HuggingFace y todos los campos aparecen como "[More Information Needed]". No se documenta si hubo RLHF, DPO u otra fase de alineamiento posterior, ni si se aplicaron tecnicas de decodificacion especulativa, atencion lineal u otras optimizaciones. El unico dato tecnico reseñable es la referencia a la calculadora de impacto medioambiental y al paper de Lacoste et al. (2019), que forma parte del texto por defecto de la plantilla y no aporta informacion sobre este modelo concreto.
+La model card publicada es la plantilla estandar autogenerada por Hugging Face y todos los campos aparecen como "[More Information Needed]". No se documenta si hubo RLHF, DPO u otra fase de alineamiento posterior, ni si se aplicaron tecnicas de decodificacion especulativa, atencion lineal u otras optimizaciones. El unico dato tecnico reseñable es la referencia a la calculadora de impacto medioambiental y al paper de Lacoste et al. (2019), que forma parte del texto por defecto de la plantilla y no aporta informacion sobre este modelo concreto.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ La principal diferencia frente al modelo base oficial es la ausencia total de do
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_galaxyppg
+- Modelo en Hugging Face: https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_galaxyppg
 - Repositorio hermano (1.5B): https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_galaxyppg
 - Repositorio hermano (universal): https://huggingface.co/xw17/Qwen2.5-0.5B-Instruct_SFT_lora_universal
 - Repositorio de Qwen2.5 (serie oficial): https://github.com/mx4ai/qwen2.5

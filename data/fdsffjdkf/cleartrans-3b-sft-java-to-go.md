@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ClearTrans 3B SFT Java to Go | 3,09B | no disponible | Traduccion Java a Go (SFT) | qwen-research (no comercial) | HuggingFace, 0 descargas |
-| Qwen2.5-Coder-3B (base) | 3,09B | no disponible en esta ficha | Generacion de codigo general | Apache-2.0 (modelo base original) | HuggingFace, ampliamente usado |
-| CodeLlama-7B | 6,7B | 16k (segun variante) | Generacion de codigo general | Llama 2 Community License | HuggingFace, ampliamente usado |
-| StarCoder2-3B | 3B | 16k | Generacion de codigo general | BigCode OpenRAIL-M | HuggingFace, ampliamente usado |
+| ClearTrans 3B SFT Java to Go | 3,09B | no disponible | Traduccion Java a Go (SFT) | qwen-research (no comercial) | Hugging Face, 0 descargas |
+| Qwen2.5-Coder-3B (base) | 3,09B | no disponible en esta ficha | Generacion de codigo general | Apache-2.0 (modelo base original) | Hugging Face, ampliamente usado |
+| CodeLlama-7B | 6,7B | 16k (segun variante) | Generacion de codigo general | Llama 2 Community License | Hugging Face, ampliamente usado |
+| StarCoder2-3B | 3B | 16k | Generacion de codigo general | BigCode OpenRAIL-M | Hugging Face, ampliamente usado |
 
 La comparacion directa con alternativas de traduccion Java-Go especificas no esta disponible en la informacion proporcionada. Frente a los modelos base generalistas, la ventaja de ClearTrans es la especializacion en un par de lenguajes; la desventaja es la falta de validacion publicada y una licencia mas restrictiva que la del Qwen2.5-Coder-3B original.
 
@@ -85,6 +85,6 @@ La comparacion directa con alternativas de traduccion Java-Go especificas no est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-Go
+- Modelo en Hugging Face: https://huggingface.co/fdsffjdkf/ClearTrans-3B-SFT-Java-to-Go
 - Repositorio ClearTrans (scripts de implementacion y replicacion): https://github.com/Xingzhehu/ClearTrans
 - Modelo base Qwen2.5-Coder-3B: https://huggingface.co/Qwen/Qwen2.5-Coder-3B

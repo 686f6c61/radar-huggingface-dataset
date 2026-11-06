@@ -97,10 +97,10 @@ Comparativas con otros modelos de clasificacion de seguridad de la misma categor
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/ssingh20062000/security-copilot-qwen2.5-3b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/ssingh20062000/security-copilot-qwen2.5-3b-GGUF
 - Modelo base (precision completa): https://huggingface.co/ssingh20062000/security-copilot-qwen2.5-3b
 - Endpoint en FriendliAI: https://friendli.ai/models/ssingh20062000/security-copilot-qwen2.5-3b
-- Qwen2.5-3B en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-3B
+- Qwen2.5-3B en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-3B
 - Informe tecnico de Qwen2.5 (arXiv:2412.15115): https://arxiv.org/abs/2412.15115
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - wllama (ejecucion en navegador): https://github.com/ngxson/wllama

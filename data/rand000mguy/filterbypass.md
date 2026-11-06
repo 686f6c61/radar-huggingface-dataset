@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Rand000mGuy/filterbypass` es un adaptador LoRA de tipo text-to-image publicado en HuggingFace por el usuario Rand000mGuy. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusion para generacion de imagenes a partir de texto. El repositorio usa la libreria `diffusers` y sigue la plantilla estandar de LoRA de difusion (`template:diffusion-lora`), lo que indica que esta pensado para cargarse como adaptador sobre el modelo base y no como un modelo autonomo.
+`Rand000mGuy/filterbypass` es un adaptador LoRA de tipo text-to-image publicado en Hugging Face por el usuario Rand000mGuy. Se trata de un ajuste fino ligero (LoRA) sobre el modelo base `krea/Krea-2-Turbo`, un modelo de difusion para generacion de imagenes a partir de texto. El repositorio usa la libreria `diffusers` y sigue la plantilla estandar de LoRA de difusion (`template:diffusion-lora`), lo que indica que esta pensado para cargarse como adaptador sobre el modelo base y no como un modelo autonomo.
 
 La relevancia de esta ficha es limitada: el repositorio tiene 0 descargas, 0 likes, un tamano de 0.0 GB y una model card practicamente vacia (sin `instance_prompt`, sin descripcion del dataset de entrenamiento, sin ejemplos de uso mas alla de un unico widget de salida). El nombre del modelo, `filterbypass`, sugiere que el autor pretende eludir filtros de seguridad del modelo base, lo que constituye una senal de alarma importante para cualquier uso en produccion.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Rand000mGuy/filterbypass | LoRA text-to-image | no disponible | no aplica | no disponible | HuggingFace (0 descargas) |
-| krea/Krea-2-Turbo | Modelo base text-to-image | no disponible | no aplica | no disponible | HuggingFace |
-| Otros LoRA de difusion sobre Krea-2-Turbo | LoRA text-to-image | no disponible | no aplica | variable | HuggingFace |
+| Rand000mGuy/filterbypass | LoRA text-to-image | no disponible | no aplica | no disponible | Hugging Face (0 descargas) |
+| krea/Krea-2-Turbo | Modelo base text-to-image | no disponible | no aplica | no disponible | Hugging Face |
+| Otros LoRA de difusion sobre Krea-2-Turbo | LoRA text-to-image | no disponible | no aplica | variable | Hugging Face |
 
 No se dispone de datos de rendimiento ni de alternativas comparables verificadas en la informacion proporcionada.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento ni de alternativas comparables verificadas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Rand000mGuy/filterbypass
+- Hugging Face: https://huggingface.co/Rand000mGuy/filterbypass
 - Modelo base: https://huggingface.co/krea/Krea-2-Turbo
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

@@ -10,7 +10,7 @@ El modelo base pertenece a la suite de investigación *Alignment Pretraining* de
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (según tags de HuggingFace) |
+| Arquitectura | GPT-NeoX (según tags de Hugging Face) |
 | Parametros totales | 6.856.253.440 (6,8 B) |
 | Parametros activos | No aplica (modelo denso, no MoE) |
 | Longitud de contexto | No disponible |
@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
+- [Modelo en Hugging Face](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-e2e-alignment-4k-5k-6k-avg)
 - [Modelo base: geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_base)
 - [Modelo instruct relacionado](https://huggingface.co/geodesic-research/sfm_unfiltered_e2e_alignment_upsampled_instruct)
 - [Colección de modelos base de geodesic-research](https://huggingface.co/collections/geodesic-research/self-fulfilling-misalignment-base-models)

@@ -66,7 +66,7 @@ No se dispone de información para comparar con otros modelos. No se han publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hyunsoochung/project-classify
+- Hugging Face: https://huggingface.co/hyunsoochung/project-classify
 - GitHub del autor: https://github.com/hyunsoochung-portfolio
 - Repositorio de proyectos ML: https://github.com/hyunsoochung-portfolio/ml-projects
 - Perfil académico en Bohrium: https://www.bohrium.com/scholar/516368g8/Hyunsoo_Chung

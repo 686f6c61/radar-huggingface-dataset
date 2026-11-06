@@ -4,7 +4,7 @@
 
 Zen-3B-It-Obliterated-GGUF es un repositorio de cuantizaciones estáticas en formato GGUF generadas por mradermacher a partir del modelo edusc182/Zen-3B-It-Obliterated. No se trata, por tanto, de un modelo entrenado desde cero, sino de una conversión de pesos a cuantizaciones de llama.cpp pensada para facilitar la inferencia en CPU, GPU de gama baja y entornos con memoria limitada. El repositorio se publicó el 17 de septiembre de 2026 y, en el momento de redactar esta ficha, no registra descargas ni interacciones.
 
-La model card del repositorio es meramente técnica: indica que se generaron cuantizaciones estáticas (`quantize_version: 2`, `output_tensor_quantised: 1`) y que la conversión se realizó desde pesos en formato HuggingFace. El autor no aporta información sobre el entrenamiento, la licencia, los idiomas soportados ni el pipeline de la tarea.
+La model card del repositorio es meramente técnica: indica que se generaron cuantizaciones estáticas (`quantize_version: 2`, `output_tensor_quantised: 1`) y que la conversión se realizó desde pesos en formato Hugging Face. El autor no aporta información sobre el entrenamiento, la licencia, los idiomas soportados ni el pipeline de la tarea.
 
 Por el identificador del modelo puede inferirse que el modelo original es de aproximadamente 3.000 millones de parámetros y que está ajustado a instrucciones ("It"), mientras que el término "Obliterated" se emplea habitualmente en la comunidad para designar modelos sometidos a técnicas de abliteración (eliminación de direcciones de rechazo del espacio de activaciones). Estas dos afirmaciones son inferencias a partir del nombre y no están confirmadas en la documentación disponible, por lo que deben tratarse con cautela.
 
@@ -19,13 +19,13 @@ Por el identificador del modelo puede inferirse que el modelo original es de apr
 | Tipos de cuantizacion | x-f16, Q8_0, Q6_K, Q5_K_M, Q5_K_S, Q4_K_M, Q4_K_S, Q3_K_L, Q3_K_M, Q3_K_S, Q2_K, IQ4_XS |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato HuggingFace |
+| Formato de pesos | GGUF (cuantizaciones estaticas); el modelo base se distribuye en formato Hugging Face |
 
 ## Arquitectura y entrenamiento
 
 No hay informacion disponible sobre la arquitectura del modelo base. La model card del repositorio GGUF no incluye detalles sobre el tipo de transformer, el numero de capas, las dimensiones ocultas, el mecanismo de atencion ni si se emplean tecnicas como Mixture of Experts o modelos de espacio de estados. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron fases de ajuste supervisado, RLHF o DPO.
 
-Lo unico verificable es el proceso de conversion: mradermacher ha generado cuantizaciones estaticas (no de tipo K-quant dinamico en el momento de la publicacion, segun el campo `quantize_version: 2`) a partir de los pesos HuggingFace del modelo edusc182/Zen-3B-It-Obliterated, empleando la herramienta de cuantizacion de llama.cpp. El sufijo "Obliterated" sugiere la aplicacion de tecnicas de abliteracion sobre el modelo ajustado a instrucciones, pero no se aporta ninguna confirmacion tecnica de ello.
+Lo unico verificable es el proceso de conversion: mradermacher ha generado cuantizaciones estaticas (no de tipo K-quant dinamico en el momento de la publicacion, segun el campo `quantize_version: 2`) a partir de los pesos Hugging Face del modelo edusc182/Zen-3B-It-Obliterated, empleando la herramienta de cuantizacion de llama.cpp. El sufijo "Obliterated" sugiere la aplicacion de tecnicas de abliteracion sobre el modelo ajustado a instrucciones, pero no se aporta ninguna confirmacion tecnica de ello.
 
 ## Capacidades
 
@@ -102,7 +102,7 @@ No se dispone de datos que permitan afirmar si Zen-3B-It-Obliterated supera, igu
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Zen-3B-It-Obliterated-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Zen-3B-It-Obliterated-GGUF
 - Modelo base: https://huggingface.co/edusc182/Zen-3B-It-Obliterated
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la busqueda web realizada.

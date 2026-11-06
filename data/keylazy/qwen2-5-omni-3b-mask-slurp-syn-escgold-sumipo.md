@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-sumipo` es un checkpoint publicado en HuggingFace por el usuario keylazy, cuyo nombre indica que deriva del modelo multimodal Qwen2.5-Omni en su variante de 3B. Se distribuye con la etiqueta de libreria `transformers` y pesos en formato `safetensors`, pero la model card es la plantilla autogenerada de HuggingFace y no contiene ni una sola descripcion real: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados) estan marcados como `[More Information Needed]`.
+`keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-sumipo` es un checkpoint publicado en Hugging Face por el usuario keylazy, cuyo nombre indica que deriva del modelo multimodal Qwen2.5-Omni en su variante de 3B. Se distribuye con la etiqueta de libreria `transformers` y pesos en formato `safetensors`, pero la model card es la plantilla autogenerada de Hugging Face y no contiene ni una sola descripcion real: todos los apartados (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, resultados) estan marcados como `[More Information Needed]`.
 
 El problema que resuelve, el procedimiento de ajuste y el significado de los sufijos del nombre (`mask-slurp-syn-escgold-sumipo`) no estan documentados en ningun sitio de la ficha. Por el contexto del repositorio (0,1 GB de tamano total, muy por debajo de los ~6-7 GB que ocuparia un modelo denso de 3B en bf16) y por repos hermanos del mismo autor como `keylazy/Qwen2.5-Omni-3B-mask-dpo`, que incluyen `adapter_config.json` y `adapter_model.safetensors`, es plausible que se trate de un adaptador o de un conjunto parcial de pesos, aunque esto no se confirma en la informacion disponible.
 
@@ -93,7 +93,7 @@ No se dispone de datos suficientes para comparar rendimiento, contexto o licenci
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-sumipo
+- Repositorio del modelo en Hugging Face: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-slurp-syn-escgold-sumipo
 - Repo hermano con adaptador DPO: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-dpo
 - Repo hermano v2 all-dpo: https://huggingface.co/keylazy/Qwen2.5-Omni-3B-mask-v2-all-dpo
 - Repositorio oficial de Qwen2.5-Omni en GitHub: https://github.com/QwenLM/Qwen2.5-Omni

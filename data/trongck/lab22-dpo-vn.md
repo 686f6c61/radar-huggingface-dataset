@@ -70,7 +70,7 @@ No se dispone de datos comparativos publicos. Existen otros adaptadores con el m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/trongck/lab22-dpo-vn
+- Repositorio Hugging Face: https://huggingface.co/trongck/lab22-dpo-vn
 - Adaptador similar (codenopro): https://huggingface.co/codenopro/lab22-dpo-vn
 - Adaptador similar (Huanvg02): https://huggingface.co/Huanvg02/lab22-dpo-vn
 - Adaptador similar (TunaMonsieur) con descripcion en FriendliAI: https://friendli.ai/models/TunaMonsieur/lab22-dpo-vn

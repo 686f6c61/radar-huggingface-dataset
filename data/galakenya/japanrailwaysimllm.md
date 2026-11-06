@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JapanRailwaysimLLM es un modelo de lenguaje publicado en HuggingFace por el usuario galakenya, derivado del modelo japonés elyza/Llama-3-ELYZA-JP-8B. Su objetivo declarado es incorporar conocimiento sobre los ferrocarriles japoneses y servir de referencia para el desarrollo de simuladores de trenes y proyectos similares. La model card está redactada en varios idiomas (japonés, inglés, francés, español y chino), pero el único idioma declarado para el modelo es el japonés (ja).
+JapanRailwaysimLLM es un modelo de lenguaje publicado en Hugging Face por el usuario galakenya, derivado del modelo japonés elyza/Llama-3-ELYZA-JP-8B. Su objetivo declarado es incorporar conocimiento sobre los ferrocarriles japoneses y servir de referencia para el desarrollo de simuladores de trenes y proyectos similares. La model card está redactada en varios idiomas (japonés, inglés, francés, español y chino), pero el único idioma declarado para el modelo es el japonés (ja).
 
 El modelo se distribuye con la etiqueta gguf y con licencia llama3 (Llama 3 Community License). Se marca como conversational y endpoints_compatible, lo que sugiere que está orientado a despliegue en endpoints de inferencia de texto. Es un modelo muy reciente y sin tracción: registra 0 descargas y 0 likes en el momento de redactar esta ficha.
 
@@ -73,9 +73,9 @@ Escenario B, si el modelo conserva el tamaño del base Llama-3-8B:
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| JapanRailwaysimLLM | 1.867.614.208 según safetensors (base declarado 8B) | no disponible | llama3 | HuggingFace, 0 descargas, 0 likes |
-| elyza/Llama-3-ELYZA-JP-8B (modelo base) | 8B (según denominación del modelo) | 8.192 tokens (familia Llama 3) | llama3 | HuggingFace, público |
-| Meta Llama 3 8B (familia de referencia) | 8B | 8.192 tokens | llama3 | HuggingFace, público |
+| JapanRailwaysimLLM | 1.867.614.208 según safetensors (base declarado 8B) | no disponible | llama3 | Hugging Face, 0 descargas, 0 likes |
+| elyza/Llama-3-ELYZA-JP-8B (modelo base) | 8B (según denominación del modelo) | 8.192 tokens (familia Llama 3) | llama3 | Hugging Face, público |
+| Meta Llama 3 8B (familia de referencia) | 8B | 8.192 tokens | llama3 | Hugging Face, público |
 
 No se dispone de datos de rendimiento comparado entre estas alternativas. Los valores del modelo base y de la familia Llama 3 se incluyen como referencia general y no como resultados verificados en la información proporcionada.
 
@@ -93,6 +93,6 @@ No se dispone de datos de rendimiento comparado entre estas alternativas. Los va
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/galakenya/JapanRailwaysimLLM
+- Modelo en Hugging Face: https://huggingface.co/galakenya/JapanRailwaysimLLM
 - Modelo base: https://huggingface.co/elyza/Llama-3-ELYZA-JP-8B
 - No se han encontrado otros enlaces relevantes (papers, blogs, repos o demos) en la búsqueda web realizada; los resultados devueltos no guardaban relación con el modelo.

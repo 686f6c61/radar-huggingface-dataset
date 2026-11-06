@@ -85,8 +85,8 @@ La comparación con los modelos base es aproximada: no hay datos de benchmarks d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AtomGradient/Qwen3.8-27B-Chronos-8bit
-- Repositorio del autor en HuggingFace: https://huggingface.co/AtomGradient
+- Hugging Face: https://huggingface.co/AtomGradient/Qwen3.8-27B-Chronos-8bit
+- Repositorio del autor en Hugging Face: https://huggingface.co/AtomGradient
 - Runtime EdgeStudio Chronos V9: no disponible en la información proporcionada
 - Paper o blog técnico: no disponible en la información proporcionada
 - Demo: no disponible en la información proporcionada

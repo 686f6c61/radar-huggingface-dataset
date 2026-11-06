@@ -21,7 +21,7 @@ La utilidad principal de esta variante es permitir la ejecución del modelo en G
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B pertenece a la serie Qwen3.8 de Qwen. Según la documentación de vLLM Recipes, es un modelo denso con un backbone híbrido de atención: se especifica un intervalo de atención completa de 4 (`full_attention_interval: 4`) y 48 capas con atención lineal y estado recurrente constante. También se indica que, a diferencia del modelo MoE de 2.4T de la misma familia, esta variante de 27B es multimodal, aunque el repo de HuggingFace no detalla las modalidades concretas.
+El modelo base Qwen3.8-27B pertenece a la serie Qwen3.8 de Qwen. Según la documentación de vLLM Recipes, es un modelo denso con un backbone híbrido de atención: se especifica un intervalo de atención completa de 4 (`full_attention_interval: 4`) y 48 capas con atención lineal y estado recurrente constante. También se indica que, a diferencia del modelo MoE de 2.4T de la misma familia, esta variante de 27B es multimodal, aunque el repo de Hugging Face no detalla las modalidades concretas.
 
 El proceso de conversión de este checkpoint se realizó con AMD Quark, empleando 28 muestras de calibración con secuencias de 512 tokens. El drafter (modelo de decodificación especulativa) se convirtió a FP8 mediante un script de `ggz14/radiance-vllm-mxfp4`. El autor utilizó un sistema con 128 GB de DDR4, un Ryzen 5900x y dos GPUs AMD R9700, y menciona que las últimas tres capas del modelo tuvieron que descargarse a la CPU durante la conversión. No se dispone de información sobre el proceso de entrenamiento original del Qwen3.8-27B (número de tokens, composición del dataset o uso de RLHF/DPO). La intervención de abliterated del checkpoint de huihui-ai tampoco está documentada en esta ficha.
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4-MtpFp8
+- Repositorio en Hugging Face: https://huggingface.co/gearwave00001/Huihui-Qwen3.8-27B-Quark-AWQ-MXFP4-MtpFp8
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated
 - Modelo de referencia de AMD: https://huggingface.co/amd/Qwen3.8-27B-Quark-AWQ-MXFP4
 - AMD Quark: https://github.com/amd/Quark

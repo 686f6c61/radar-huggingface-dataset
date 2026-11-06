@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lwxmmmmsl/my_policy` es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales. Ha sido entrenado con el framework LeRobot de HuggingFace sobre un dataset de teleoperación de 5 episodios, con un total de 4778 fotogramas a 30 FPS, para la tarea específica de colocar una cinta en un plato marrón. El modelo consume observaciones de dos cámaras RGB (frontal y lateral) y el estado del robot (6 dimensiones) y produce comandos de acción de 6 dimensiones.
+El modelo `lwxmmmmsl/my_policy` es una política de control robótico basada en Action Chunking with Transformers (ACT), un método de aprendizaje por imitación que predice secuencias de acciones (chunks) en lugar de pasos individuales. Ha sido entrenado con el framework LeRobot de Hugging Face sobre un dataset de teleoperación de 5 episodios, con un total de 4778 fotogramas a 30 FPS, para la tarea específica de colocar una cinta en un plato marrón. El modelo consume observaciones de dos cámaras RGB (frontal y lateral) y el estado del robot (6 dimensiones) y produce comandos de acción de 6 dimensiones.
 
 Este modelo es relevante como ejemplo práctico de entrenamiento de políticas de imitación con LeRobot, demostrando el flujo completo desde la captura de datos hasta el despliegue en un robot real. Su arquitectura transformer, combinada con la predicción por chunks, permite ejecutar tareas de manipulación con alta precisión, aunque en este caso el dataset es muy reducido y no se han publicado evaluaciones. La licencia Apache 2.0 facilita su uso y modificación tanto en investigación como en aplicaciones comerciales.
 
@@ -70,7 +70,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Repositorio del modelo en HuggingFace](https://huggingface.co/lwxmmmmsl/my_policy)
+- [Repositorio del modelo en Hugging Face](https://huggingface.co/lwxmmmmsl/my_policy)
 - [Paper de ACT (Action Chunking with Transformers)](https://huggingface.co/papers/2304.13705)
 - [Documentación de LeRobot](https://huggingface.co/docs/lerobot/index)
 - [Guía de ACT en LeRobot](https://huggingface.co/docs/lerobot/main/en/act)

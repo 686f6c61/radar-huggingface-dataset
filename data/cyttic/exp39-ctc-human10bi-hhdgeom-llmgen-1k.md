@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k` es un checkpoint publicado por el usuario cyttic en HuggingFace. Por la nomenclatura del identificador (prefijo `exp39`, sufijos `ctc`, `human10bi`, `hhdgeom` y `llmgen-1k`) y por el tamano del repositorio (0,3 GB), se trata de un modelo pequeno, de aproximadamente 87,3 millones de parametros, presumiblemente vinculado a un experimento de investigacion sobre generacion condicionada a senales CTC (Connectionist Temporal Classification) y a geometria de manos (`hhdgeom`, probablemente mano-cabeza-cuerpo o hand-head geometry). No es un modelo de lenguaje de proposito general ni un modelo conversacional.
+El modelo `cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k` es un checkpoint publicado por el usuario cyttic en Hugging Face. Por la nomenclatura del identificador (prefijo `exp39`, sufijos `ctc`, `human10bi`, `hhdgeom` y `llmgen-1k`) y por el tamano del repositorio (0,3 GB), se trata de un modelo pequeno, de aproximadamente 87,3 millones de parametros, presumiblemente vinculado a un experimento de investigacion sobre generacion condicionada a senales CTC (Connectionist Temporal Classification) y a geometria de manos (`hhdgeom`, probablemente mano-cabeza-cuerpo o hand-head geometry). No es un modelo de lenguaje de proposito general ni un modelo conversacional.
 
-La model card esta practicamente vacia: todos los campos tecnicos aparecen como `[More Information Needed]`, incluidos el tipo de modelo, los idiomas, los datos de entrenamiento y los resultados de evaluacion. La unica metainformacion fiable es la licencia MIT, el formato de pesos safetensors y la referencia al paper de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que aparece unicamente como enlace de utilidad en la plantilla estandar de HuggingFace y no como descripcion del modelo.
+La model card esta practicamente vacia: todos los campos tecnicos aparecen como `[More Information Needed]`, incluidos el tipo de modelo, los idiomas, los datos de entrenamiento y los resultados de evaluacion. La unica metainformacion fiable es la licencia MIT, el formato de pesos safetensors y la referencia al paper de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, que aparece unicamente como enlace de utilidad en la plantilla estandar de Hugging Face y no como descripcion del modelo.
 
 Por tanto, esta ficha debe leerse como una evaluacion de un artefacto de investigacion opaco: util para quien quiera inspeccionar los pesos y reconstruir su funcion, pero sin garantias documentadas de comportamiento, idiomas, contexto ni rendimiento. Cualquier uso en produccion requeriria una validacion empirica previa por parte del integrador.
 
@@ -79,6 +79,6 @@ No disponible. La informacion proporcionada no identifica la categoria funcional
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k
+- Hugging Face: https://huggingface.co/cyttic/exp39-ctc-human10bi-hhdgeom-llmgen-1k
 - Paper citado en la model card (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental ML: https://mlco2.github.io/impact#compute

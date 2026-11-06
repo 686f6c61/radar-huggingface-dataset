@@ -23,7 +23,7 @@ La relevancia de este lanzamiento radica en la estandarización del despliegue d
 
 ## Arquitectura y entrenamiento
 
-El modelo base Qwen3.8-27B emplea una arquitectura híbrida densa GDN (probablemente una combinación de atención densa con mecanismos de visión), diseñada para tareas de razonamiento multimodal. La variante FlagOS utiliza la arquitectura declarada como `Qwen3_5MoeForCausalLM` en la sobreescritura de HuggingFace, lo que sugiere que el modelo base incorpora componentes de mezcla de expertos (MoE) dentro de su diseño híbrido. El checkpoint incluye soporte para multi-token prediction (MTP) integrado en el propio modelo, lo que acelera la decodificación especulativa.
+El modelo base Qwen3.8-27B emplea una arquitectura híbrida densa GDN (probablemente una combinación de atención densa con mecanismos de visión), diseñada para tareas de razonamiento multimodal. La variante FlagOS utiliza la arquitectura declarada como `Qwen3_5MoeForCausalLM` en la sobreescritura de Hugging Face, lo que sugiere que el modelo base incorpora componentes de mezcla de expertos (MoE) dentro de su diseño híbrido. El checkpoint incluye soporte para multi-token prediction (MTP) integrado en el propio modelo, lo que acelera la decodificación especulativa.
 
 La comunidad FlagOS ha realizado un trabajo de adaptación multiplataforma que incluye alineación de precisión y verificación de despliegue sobre el stack de software unificado FlagOS. Este proceso garantiza que los resultados de inferencia en chips alternativos sean consistentes con los obtenidos en la pila nativa de NVIDIA. Los datos de entrenamiento del modelo base no se han publicado en la información disponible; se sabe que Alibaba ha entrenado la familia Qwen3.8 con un enfoque en codificación, trabajo de oficina, investigación y tareas de horizonte largo.
 
@@ -68,9 +68,9 @@ Estos resultados indican que la pila FlagOS mantiene un rendimiento prácticamen
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B (FlagOS) | 27,78B | 204.800 | Híbrida GDN + MoE | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen3-30B-A3B (referencia) | 30B total, 3B activos | 32.768 | MoE | Apache 2.0 | HuggingFace |
-| Qwen2.5-32B | 32,8B | 131.072 | Densa | Apache 2.0 | HuggingFace |
+| Qwen3.8-27B (FlagOS) | 27,78B | 204.800 | Híbrida GDN + MoE | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen3-30B-A3B (referencia) | 30B total, 3B activos | 32.768 | MoE | Apache 2.0 | Hugging Face |
+| Qwen2.5-32B | 32,8B | 131.072 | Densa | Apache 2.0 | Hugging Face |
 
 La comparativa se basa en modelos de la misma familia Qwen con tamaño similar. Qwen3.8-27B destaca por su contexto mucho más largo (204.800 tokens) y su naturaleza multimodal, mientras que Qwen3-30B-A3B es un MoE más eficiente en inferencia. Qwen2.5-32B es una alternativa densa con buen rendimiento pero sin capacidades multimodales.
 
@@ -86,7 +86,7 @@ La comparativa se basa en modelos de la misma familia Qwen con tamaño similar. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-tsingmicro-FlagOS
+- Modelo en Hugging Face: https://huggingface.co/FlagRelease/Qwen3.8-27B-BF16-tsingmicro-FlagOS
 - Variante FP8 para Enflame: https://huggingface.co/FlagRelease/Qwen3.8-2.4T-A95B-FP8-enflame-FlagOS
 - Variante FP8 para Moore Threads: https://huggingface.co/FlagRelease/Qwen3.8-2.4T-A95B-FP8-mthreads-FlagOS
 - Documentación de despliegue con SGLang: https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B

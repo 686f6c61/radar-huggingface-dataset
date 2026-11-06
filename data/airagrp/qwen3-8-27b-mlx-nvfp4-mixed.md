@@ -70,7 +70,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/airagrp/Qwen3.8-27B-MLX-nvfp4-mixed
+- Repositorio Hugging Face: https://huggingface.co/airagrp/Qwen3.8-27B-MLX-nvfp4-mixed
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Guía de hardware (contextstudios.ai): https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide
 - Guía MLX en Apple Silicon (orcarouter.ai): https://www.orcarouter.ai/blog/qwen-3-8-27b-mlx

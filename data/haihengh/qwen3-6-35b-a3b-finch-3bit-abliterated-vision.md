@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finch-3bit-abliterated-vision
+- Repositorio Hugging Face: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finch-3bit-abliterated-vision
 - Hermano textual sin visión: https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finch-3bit-abliterated
 - Modelo base abliterated: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Motor FinchMoE: https://github.com/haihengh/finchMoE

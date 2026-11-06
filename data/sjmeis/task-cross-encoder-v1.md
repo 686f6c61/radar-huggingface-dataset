@@ -27,7 +27,7 @@ Su interés práctico está en el dominio de entrenamiento: 295.091 pares etique
 | Tamaño del conjunto de entrenamiento | 295.091 muestras |
 | Modalidad | Texto |
 | Librería | sentence-transformers |
-| Descargas / valoraciones en HuggingFace | 0 / 0 |
+| Descargas / valoraciones en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -41,7 +41,7 @@ El ajuste se realizó con sentence-transformers sobre un conjunto de 295.091 mue
 - Reranking de listas de candidatos: la API `rank` ordena un conjunto de textos según su similitud con una consulta dada.
 - Recuperación semántica en segunda fase: pensado para colocarse después de un retriever (BM25, embeddings densos) y reordenar los resultados.
 - Clasificación binaria por umbral: al emitir un logit, permite convertir la puntuación en decisión binaria (relevante / no relevante) calibrando un punto de corte.
-- Integración con el ecosistema sentence-transformers y con Text Embeddings Inference, además de compatibilidad declarada con endpoints de HuggingFace.
+- Integración con el ecosistema sentence-transformers y con Text Embeddings Inference, además de compatibilidad declarada con endpoints de Hugging Face.
 - No soporta tool calling ni function calling: no es un modelo generativo.
 - No dispone de modo de razonamiento (thinking), ni capacidades de agente, ni multi-step reasoning.
 - No dispone de visión, audio ni ninguna otra modalidad distinta del texto.
@@ -74,7 +74,7 @@ No hay resultados publicados de MMLU, HumanEval, GSM8K, MS MARCO ni BEIR en la i
 - GPU recomendadas: cualquier GPU con 1 GB o más de VRAM. Para producción, una NVIDIA T4, L4 o A10 es suficiente y ofrece buen rendimiento por vatio; A100 o H100 solo tienen sentido si se comparte infraestructura con otros modelos.
 - GPU de consumo: sí, cabe holgadamente en cualquier RTX (3060, 4060, 4090) e incluso en GPU integradas y en CPU.
 - CPU: inferencia viable sin aceleración, con throughput inferior al de GPU. Un lote de 100-200 pares sigue siendo manejable en CPU para aplicaciones de baja concurrencia.
-- Opciones de despliegue: sentence-transformers con la clase `CrossEncoder`; Text Embeddings Inference (el repositorio está etiquetado como `text-embeddings-inference`); HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). No se declara soporte para vLLM, TGI ni llama.cpp, y no existen pesos en formato GGUF.
+- Opciones de despliegue: sentence-transformers con la clase `CrossEncoder`; Text Embeddings Inference (el repositorio está etiquetado como `text-embeddings-inference`); Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). No se declara soporte para vLLM, TGI ni llama.cpp, y no existen pesos en formato GGUF.
 - Latencia y throughput: no publicados por el autor. Como referencia orientativa, no verificada, un cross-encoder de 68 M de parámetros con secuencias de 128 tokens suele procesar del orden de cientos de pares por segundo en una GPU moderna con batching y decenas de pares por segundo en CPU.
 
 ## Comparativa con modelos similares
@@ -105,12 +105,12 @@ Frente a estas alternativas, la ventaja principal del modelo es el dominio espec
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sjmeis/task-cross-encoder-v1
+- Modelo en Hugging Face: https://huggingface.co/sjmeis/task-cross-encoder-v1
 - Modelo base: https://huggingface.co/cross-encoder/ettin-reranker-68m-v1
 - Documentación de Sentence Transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de Sentence Transformers en GitHub: https://github.com/huggingface/sentence-transformers
-- Listado de cross-encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Listado de cross-encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
 - Artículo de referencia (Sentence-BERT): https://arxiv.org/abs/1908.10084
 - Evaluador de correlación para cross-encoders: https://sbert.net/docs/package_reference/cross_encoder/evaluation.html#sentence_transformers.cross_encoder.evaluation.CrossEncoderCorrelationEvaluator
 

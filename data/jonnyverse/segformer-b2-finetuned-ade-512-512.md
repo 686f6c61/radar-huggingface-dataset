@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JONNYVERSE/segformer-b2-finetuned-ade-512-512
+- Repositorio Hugging Face del modelo: https://huggingface.co/JONNYVERSE/segformer-b2-finetuned-ade-512-512
 - Modelo base original: https://huggingface.co/nvidia/segformer-b2-finetuned-ade-512-512
 - Paper de SegFormer: https://arxiv.org/abs/2105.15203
 - Documentación de Transformers.js: https://huggingface.co/docs/transformers.js

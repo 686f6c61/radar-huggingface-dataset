@@ -77,6 +77,6 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Smite79/LTX-2.3-RTX5060Ti
+- Repositorio Hugging Face: https://huggingface.co/Smite79/LTX-2.3-RTX5060Ti
 - Modelo base (Lightricks/LTX-2.3): https://huggingface.co/Lightricks/LTX-2.3
 - No se proporcionan enlaces a papers, blogs o demos en la informacion disponible.

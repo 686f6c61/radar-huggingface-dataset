@@ -56,7 +56,7 @@ Esta release concreta no entrena nada nuevo: es una conversión y cuantización.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. Ni la model card, ni el repositorio de HuggingFace, ni los resultados de búsqueda asociados incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación para esta cuantización. Tampoco se documentan métricas de degradación respecto al modelo base en BF16. Además, la cuantización a 3 bits introduce una pérdida de calidad no medida respecto al original, que no puede cuantificarse sin evaluaciones publicadas.
+No se han publicado resultados de benchmarks en la información disponible. Ni la model card, ni el repositorio de Hugging Face, ni los resultados de búsqueda asociados incluyen cifras de MMLU, HumanEval, GSM8K ni de ninguna otra evaluación para esta cuantización. Tampoco se documentan métricas de degradación respecto al modelo base en BF16. Además, la cuantización a 3 bits introduce una pérdida de calidad no medida respecto al original, que no puede cuantificarse sin evaluaciones publicadas.
 
 ## Requisitos de hardware
 
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. Ni l
 
 | Modelo | Parametros | Formato / cuantizacion | Modalidad | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ap3212/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly | 26,9 B (confirmado) | MLX, 3-bit affine, group size 64 | Solo texto | no disponible | no disponible | HuggingFace, 0 descargas |
-| Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16 | no disponible (prefijo 27B) | BF16 | Multimodal (modelo base) | no disponible | no disponible | HuggingFace |
-| PocketAiHub/Qwen3.8-27B-Abliterated-MLX | no disponible (prefijo 27B) | MLX | no disponible | no disponible | no disponible | HuggingFace |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible (prefijo 27B) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| ap3212/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly | 26,9 B (confirmado) | MLX, 3-bit affine, group size 64 | Solo texto | no disponible | no disponible | Hugging Face, 0 descargas |
+| Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16 | no disponible (prefijo 27B) | BF16 | Multimodal (modelo base) | no disponible | no disponible | Hugging Face |
+| PocketAiHub/Qwen3.8-27B-Abliterated-MLX | no disponible (prefijo 27B) | MLX | no disponible | no disponible | no disponible | Hugging Face |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | no disponible (prefijo 27B) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los cuatro modelos comparten el mismo linaje Qwen3.8-27B y el mismo tratamiento de abliteración o cuantización sobre él. La diferencia principal de esta release es que elimina la torre de visión y aplica una cuantización de 3 bits más agresiva que el BF16 del modelo base, a cambio de una pérdida de calidad no medida. No hay datos públicos de benchmarks que permitan comparar el rendimiento real entre estas variantes.
 
@@ -94,7 +94,7 @@ Los cuatro modelos comparten el mismo linaje Qwen3.8-27B y el mismo tratamiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ap3212/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly
+- Modelo en Hugging Face: https://huggingface.co/ap3212/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly
 - Modelo base: https://huggingface.co/Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16
 - Repositorio oficial de Qwen3.8-27B en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Repositorio de la serie Qwen3.8 en GitHub: https://github.com/QwenLM/Qwen3.8

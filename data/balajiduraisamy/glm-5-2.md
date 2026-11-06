@@ -6,7 +6,7 @@ GLM-5.2 es un modelo de lenguaje de gran escala desarrollado por Z.ai, diseñado
 
 El modelo está orientado a la codificación de grandes repositorios, la ejecución sostenida de tareas multi-paso y el razonamiento complejo, con soporte nativo para inglés y chino. Incluye un mecanismo de control de nivel de esfuerzo que permite al usuario equilibrar explícitamente la capacidad del modelo frente a la velocidad de ejecución y el coste computacional. Según el blog oficial de Z.ai, GLM-5.2 ofrece un rendimiento agéntico de codificación sustancialmente superior al de GLM-5.1 con presupuestos de tokens comparables, situándose aproximadamente entre Claude Opus 4.7 y Claude Opus 4.8 bajo presupuestos de tokens similares.
 
-El modelo se distribuye bajo licencia MIT, aunque el acceso al repositorio en HuggingFace está restringido (gated) y requiere aceptar condiciones adicionales. Está disponible a través de múltiples plataformas de despliegue, incluyendo NVIDIA NIM, LM Studio y Vast.ai, lo que facilita su integración en entornos de producción.
+El modelo se distribuye bajo licencia MIT, aunque el acceso al repositorio en Hugging Face está restringido (gated) y requiere aceptar condiciones adicionales. Está disponible a través de múltiples plataformas de despliegue, incluyendo NVIDIA NIM, LM Studio y Vast.ai, lo que facilita su integración en entornos de producción.
 
 ## Especificaciones técnicas
 
@@ -18,7 +18,7 @@ El modelo se distribuye bajo licencia MIT, aunque el acceso al repositorio en Hu
 | Longitud de contexto | 1.000.000 tokens |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | Inglés, chino |
-| Licencia | MIT (con acceso restringido en HuggingFace) |
+| Licencia | MIT (con acceso restringido en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El b
 
 - Dado el tamaño total de 753B parámetros y el peso del repositorio de 1506.7 GB, el modelo requiere un clúster de GPUs de alta gama para su ejecución. No se han publicado requisitos oficiales de VRAM, pero se estima que serían necesarias al menos 8-16 GPUs con 80 GB de VRAM (como H100 o A100) para una inferencia en precisión completa.
 - No es viable en GPUs de consumo (como RTX 4090 o similar) sin cuantización extrema, y no se han publicado versiones cuantizadas oficiales en la información disponible.
-- Opciones de despliegue: el modelo está disponible en NVIDIA NIM, LM Studio y Vast.ai, lo que sugiere compatibilidad con plataformas de inferencia optimizada como vLLM, TensorRT-LLM o similares. También es compatible con endpoints estándar de HuggingFace.
+- Opciones de despliegue: el modelo está disponible en NVIDIA NIM, LM Studio y Vast.ai, lo que sugiere compatibilidad con plataformas de inferencia optimizada como vLLM, TensorRT-LLM o similares. También es compatible con endpoints estándar de Hugging Face.
 - No se dispone de datos de latencia o throughput estimados para este modelo.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo fiables para estos modelos en 
 
 - No se han documentado sesgos específicos en la información disponible, pero al ser un modelo entrenado principalmente con datos en inglés y chino, puede presentar un rendimiento inferior en otros idiomas.
 - Riesgo de alucinación inherente a los modelos de lenguaje de gran escala, especialmente en tareas de razonamiento de largo horizonte donde la coherencia puede degradarse.
-- El acceso al repositorio en HuggingFace está restringido (gated), lo que puede limitar la reproducibilidad y la inspección directa de los pesos.
+- El acceso al repositorio en Hugging Face está restringido (gated), lo que puede limitar la reproducibilidad y la inspección directa de los pesos.
 - Aunque la licencia es MIT, el acceso condicionado puede implicar términos adicionales no especificados en la ficha.
 - El tamaño del modelo (753B) hace que su despliegue sea costoso y requiera infraestructura especializada, no apta para entornos de desarrollo individual.
 - No se han publicado resultados de benchmarks estándar, lo que dificulta una evaluación objetiva frente a alternativas.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo fiables para estos modelos en 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/balajiduraisamy/GLM-5.2
+- Repositorio Hugging Face: https://huggingface.co/balajiduraisamy/GLM-5.2
 - Blog oficial de Z.ai: https://z.ai/blog/glm-5.2
 - NVIDIA NIM: https://build.nvidia.com/z-ai/glm-5.2
 - LM Studio: https://lmstudio.ai/models/glm-5.2

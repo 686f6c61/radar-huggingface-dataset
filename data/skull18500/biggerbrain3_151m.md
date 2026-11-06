@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-No se dispone de datos comparativos publicados. Como referencia, existen otros modelos de tamaño similar como SmolLM2-135M (HuggingFace) o Qwen2.5-0.5B, pero no se han encontrado evaluaciones que comparen directamente con Biggerbrain3_151m. La arquitectura recurrente con MoE es poco común en este rango de parámetros, por lo que no hay alternativas directas conocidas.
+No se dispone de datos comparativos publicados. Como referencia, existen otros modelos de tamaño similar como SmolLM2-135M (Hugging Face) o Qwen2.5-0.5B, pero no se han encontrado evaluaciones que comparen directamente con Biggerbrain3_151m. La arquitectura recurrente con MoE es poco común en este rango de parámetros, por lo que no hay alternativas directas conocidas.
 
 ## Limitaciones y advertencias
 
@@ -69,5 +69,5 @@ No se dispone de datos comparativos publicados. Como referencia, existen otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Skull18500/Biggerbrain3_151m
+- Hugging Face: https://huggingface.co/Skull18500/Biggerbrain3_151m
 - Repositorio GitHub oficial: https://github.com/Skull18500/BiggerBrain-AI

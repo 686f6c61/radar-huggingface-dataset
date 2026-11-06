@@ -77,8 +77,8 @@ La comparativa es directa: este modelo es un promedio ponderado de los dos anter
 
 ## Enlaces
 
-- [HuggingFace - trinhkhng/linear_Merged_gpt2_0.1](https://huggingface.co/trinhkhng/linear_Merged_gpt2_0.1)
-- [HuggingFace - trinhkhng/linear_Merged_gpt2-large_0.1 (modelo hermano)](https://huggingface.co/trinhkhng/linear_Merged_gpt2-large_0.1)
-- [HuggingFace - trinhkhng/linear_Merged_gpt2-small_0.1](https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.1)
+- [Hugging Face - trinhkhng/linear_Merged_gpt2_0.1](https://huggingface.co/trinhkhng/linear_Merged_gpt2_0.1)
+- [Hugging Face - trinhkhng/linear_Merged_gpt2-large_0.1 (modelo hermano)](https://huggingface.co/trinhkhng/linear_Merged_gpt2-large_0.1)
+- [Hugging Face - trinhkhng/linear_Merged_gpt2-small_0.1](https://huggingface.co/trinhkhng/linear_Merged_gpt2-small_0.1)
 - [Paper - Model soups (arXiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [API endpoint en FriendliAI](https://friendli.ai/models/trinhkhng/linear_Merged_gpt2_0.1)

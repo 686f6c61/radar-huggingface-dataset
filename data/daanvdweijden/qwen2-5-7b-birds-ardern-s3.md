@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `daanvdweijden/qwen2.5-7b-birds-ardern-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, desarrollado por el usuario independiente `daanvdweijden` y publicado en HuggingFace. La etiqueta `unsloth` sugiere que el entrenamiento se realizó con la librería Unsloth, optimizada para fine-tuning eficiente en memoria. El nombre del repositorio ("birds-ardern") sugiere un ajuste orientado a un dominio específico, aunque la model card no proporciona detalles sobre la tarea o el dataset utilizado.
+El modelo `daanvdweijden/qwen2.5-7b-birds-ardern-s3` es un ajuste fino (fine-tune) del modelo base Qwen2.5-7B, desarrollado por el usuario independiente `daanvdweijden` y publicado en Hugging Face. La etiqueta `unsloth` sugiere que el entrenamiento se realizó con la librería Unsloth, optimizada para fine-tuning eficiente en memoria. El nombre del repositorio ("birds-ardern") sugiere un ajuste orientado a un dominio específico, aunque la model card no proporciona detalles sobre la tarea o el dataset utilizado.
 
 El modelo base, Qwen2.5-7B, es un transformer decoder-only denso de 7.000 millones de parámetros, entrenado por Alibaba Cloud sobre un corpus de 18 billones de tokens, con una ventana de contexto de 128K tokens. Este fine-tune hereda la arquitectura y las capacidades del modelo base, pero con pesos ajustados para una tarea o dominio concreto que no se especifica en la documentación disponible.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: aproximadamente 14-16 GB en fp16, 7-8 GB en int8 y 4-5 GB en int4 (valores estándar para un modelo de 7B).
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB) para fp16; GPUs con 8-12 GB (RTX 3060, 4070) para cuantizaciones int8/int4.
 - Compatibilidad con consumer GPU: sí, con cuantización es viable en GPUs de gama media.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, HuggingFace Inference Endpoints (el tag `endpoints_compatible` sugiere compatibilidad con esta plataforma).
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, TGI, Hugging Face Inference Endpoints (el tag `endpoints_compatible` sugiere compatibilidad con esta plataforma).
 - Latencia y throughput: no disponible; depende del hardware y de la implementación. En una RTX 4090, un modelo de 7B en int4 suele generar entre 40-80 tokens/segundo.
 
 ## Comparativa con modelos similares
@@ -79,8 +79,8 @@ La comparativa se basa en el modelo base Qwen2.5-7B, ya que no hay datos especí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-ardern-s3
-- Colección Qwen2.5 (HuggingFace): https://huggingface.co/collections/Qwen/qwen25
+- Hugging Face: https://huggingface.co/daanvdweijden/qwen2.5-7b-birds-ardern-s3
+- Colección Qwen2.5 (Hugging Face): https://huggingface.co/collections/Qwen/qwen25
 - Informe técnico Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115
 - Repositorio GitHub de Qwen2.5: https://github.com/mx4ai/qwen2.5
 - Documentación vLLM para Qwen2.5-7B: https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen2.5-7B.html

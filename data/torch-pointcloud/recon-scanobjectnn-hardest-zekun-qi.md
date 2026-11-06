@@ -76,7 +76,7 @@ La informacion disponible no incluye resultados de modelos alternativos sobre Sc
 
 | Modelo | Parametros | Contexto / entrada | OA en ScanObjectNN PB_T50_RS | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| recon.scanobjectnn-hardest.zekun-qi | 43,6 M | Nube de 8192 puntos | 90,56 (declarado, no verificado) | MIT | HuggingFace (torch-pointcloud) |
+| recon.scanobjectnn-hardest.zekun-qi | 43,6 M | Nube de 8192 puntos | 90,56 (declarado, no verificado) | MIT | Hugging Face (torch-pointcloud) |
 | PointNet++ (referencia clasica) | No disponible | Nube de puntos | No disponible | No disponible | Implementaciones multiples |
 | Point Transformer (referencia) | No disponible | Nube de puntos | No disponible | No disponible | Implementaciones multiples |
 | ReCon (checkpoint original qizekun/ReCon) | No disponible | Nube de puntos | No disponible | MIT | GitHub |
@@ -90,11 +90,11 @@ No se dispone de datos de rendimiento de los modelos alternativos en la informac
 - Limitaciones de contexto o idioma: no es un modelo de lenguaje; no procesa texto ni tiene capacidades multilingues. La entrada esta limitada a nubes de puntos con la estructura esperada (clave "pos" y batch construido con collate).
 - Robustez: la particion PB_T50_RS es la mas dificil de ScanObjectNN, con oclusion y perturbaciones; el rendimiento puede degradarse en escaneos con ruido o densidades de puntos distintas de las de entrenamiento.
 - Restricciones de licencia: licencia MIT, que permite uso comercial y modificacion con atribucion; debe conservarse el aviso de copyright y citar el trabajo original.
-- Caveats para produccion: los resultados de benchmarks son declarados por el autor y no verificados; la libreria torch-pointcloud es un proyecto de terceros (Arthur Dujardin) y la API puede cambiar; el pipeline de HuggingFace no esta definido para este modelo, por lo que la carga debe hacerse mediante la libreria torch-pointcloud y no con transformers.
+- Caveats para produccion: los resultados de benchmarks son declarados por el autor y no verificados; la libreria torch-pointcloud es un proyecto de terceros (Arthur Dujardin) y la API puede cambiar; el pipeline de Hugging Face no esta definido para este modelo, por lo que la carga debe hacerse mediante la libreria torch-pointcloud y no con transformers.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/recon.scanobjectnn-hardest.zekun-qi
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/recon.scanobjectnn-hardest.zekun-qi
 - Modelo base preentrenado: https://huggingface.co/torch-pointcloud/recon.pretrain.zekun-qi
 - Paper ReCon (ICML 2023): https://arxiv.org/abs/2302.02318
 - Repositorio original ReCon: https://github.com/qizekun/ReCon

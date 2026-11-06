@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Ternary Bonsai 8B GGUF es una publicacion de pesos en formato GGUF alojada en HuggingFace por el usuario leeaandrob, con identificador leeaandrob/ternary-bonsai-8b-gguf. Se trata de un modelo de aproximadamente 8.188.548.096 parametros (unos 8,19 mil millones) distribuido en un repositorio de 4,5 GB, lo que situa el peso medio por parametro en torno a 4,4 bits y apunta a una cuantizacion de tipo Q4 o inferior. La ficha de HuggingFace no incluye informacion sobre el modelo base, la arquitectura, el proceso de entrenamiento ni la licencia, por lo que la mayoria de datos tecnicos quedan como no disponibles.
+Ternary Bonsai 8B GGUF es una publicacion de pesos en formato GGUF alojada en Hugging Face por el usuario leeaandrob, con identificador leeaandrob/ternary-bonsai-8b-gguf. Se trata de un modelo de aproximadamente 8.188.548.096 parametros (unos 8,19 mil millones) distribuido en un repositorio de 4,5 GB, lo que situa el peso medio por parametro en torno a 4,4 bits y apunta a una cuantizacion de tipo Q4 o inferior. La ficha de Hugging Face no incluye informacion sobre el modelo base, la arquitectura, el proceso de entrenamiento ni la licencia, por lo que la mayoria de datos tecnicos quedan como no disponibles.
 
 El nombre del repositorio sugiere dos cosas que no pueden confirmarse con la informacion disponible: por un lado, "ternary" apunta a una cuantizacion ternaria (pesos restringidos a tres valores, un esquema popularizado por las arquitecturas tipo BitNet); por otro, "bonsai" seria el nombre propio del modelo, sin que haya documentacion publica que lo describa. No hay model card asociada en los datos proporcionados, ni paper, ni repositorio de codigo.
 
-La relevancia actual del repositorio es limitada y debe enmarcarse con cautela: acumula 76 descargas y 0 likes desde su creacion el 2 de septiembre de 2026, no tiene licencia declarada y las unicas etiquetas disponibles son gguf, endpoints_compatible, conversational y region:us. La etiqueta conversational indica que esta pensado para uso dialogado, y endpoints_compatible que puede servirse a traves de una API compatible con el formato de HuggingFace Inference Endpoints. Antes de considerarlo para cualquier uso en produccion seria necesario verificar el modelo base, la licencia y la calidad real de las cuantizaciones.
+La relevancia actual del repositorio es limitada y debe enmarcarse con cautela: acumula 76 descargas y 0 likes desde su creacion el 2 de septiembre de 2026, no tiene licencia declarada y las unicas etiquetas disponibles son gguf, endpoints_compatible, conversational y region:us. La etiqueta conversational indica que esta pensado para uso dialogado, y endpoints_compatible que puede servirse a traves de una API compatible con el formato de Hugging Face Inference Endpoints. Antes de considerarlo para cualquier uso en produccion seria necesario verificar el modelo base, la licencia y la calidad real de las cuantizaciones.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ Tampoco hay informacion sobre el entrenamiento: se desconoce el numero de tokens
 ## Capacidades
 
 - Generacion de texto conversacional: la etiqueta conversational del repositorio indica que esta orientado a dialogos multi-turno, aunque no hay evaluacion publicada que lo respalde.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse detras de una API compatible con HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que puede desplegarse detras de una API compatible con Hugging Face Inference Endpoints.
 - Razonamiento, codigo y matematicas: no disponible, no hay informacion que confirme ni descarte estas capacidades.
 - Soporte de tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: calculada a partir del recuento de parametros, unos 16,4 GB en FP16/BF16, unos 8,7 GB en cuantizacion de 8 bits y unos 4,6 GB en cuantizacion de 4 bits. El repositorio ocupa 4,5 GB, lo que es coherente con una unica cuantizacion de 4 bits aproximadamente. Estas cifras son estimaciones aritmeticas, no mediciones publicadas.
 - GPU recomendadas: no disponible (no hay recomendaciones del autor). Por tamano, una GPU consumer con 8 GB de VRAM o mas deberia poder ejecutar el fichero de 4,5 GB si el contexto es moderado.
 - Compatibilidad con GPU consumer: probable en tarjetas con 8 GB o mas de VRAM en la cuantizacion de 4 bits, y en tarjetas de 12-16 GB si se necesita contexto amplio o cache KV grande. No confirmado por el autor.
-- Opciones de despliegue: llama.cpp, Ollama y LM Studio son compatibles con GGUF. La etiqueta endpoints_compatible sugiere despliegue en HuggingFace Inference Endpoints. El soporte de GGUF en vLLM es limitado y experimental; TGI no soporta GGUF de forma general. No hay confirmacion de compatibilidad con estas dos ultimas.
+- Opciones de despliegue: llama.cpp, Ollama y LM Studio son compatibles con GGUF. La etiqueta endpoints_compatible sugiere despliegue en Hugging Face Inference Endpoints. El soporte de GGUF en vLLM es limitado y experimental; TGI no soporta GGUF de forma general. No hay confirmacion de compatibilidad con estas dos ultimas.
 - Latencia y throughput estimados: no disponible, no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ No se identifican en los resultados de busqueda modelos comparables ni referenci
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/leeaandrob/ternary-bonsai-8b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/leeaandrob/ternary-bonsai-8b-gguf
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

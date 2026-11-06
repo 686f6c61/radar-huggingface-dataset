@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sunilverm/deit-generation-v3` es un prototipo de investigación publicado en HuggingFace por el usuario sunilverm que adapta la arquitectura DeiT (Data-efficient Image Transformer) a una tarea declarada de generación. El repositorio no contiene un modelo entrenado: el archivo `model.safetensors` se describe explícitamente en su propia model card como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint evaluado. El repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB.
+`sunilverm/deit-generation-v3` es un prototipo de investigación publicado en Hugging Face por el usuario sunilverm que adapta la arquitectura DeiT (Data-efficient Image Transformer) a una tarea declarada de generación. El repositorio no contiene un modelo entrenado: el archivo `model.safetensors` se describe explícitamente en su propia model card como un checkpoint de inicialización válido para pruebas de humo, no como un checkpoint evaluado. El repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB.
 
 El dato más relevante es el recuento real de parámetros leído de los pesos: 16.576 parámetros totales, una cifra extremadamente reducida que contrasta con la etiqueta "xlarge" que aparece en la configuración. No se trata, por tanto, de un modelo utilizable para inferencia real, sino de un andamiaje de código y configuración (script `train.py`, `config.json`, `training_args.json`) pensado para servir como punto de partida experimental.
 
@@ -50,11 +50,11 @@ En cuanto al entrenamiento, no hay ningún dato disponible: no se especifican to
 ## Casos de uso
 
 - Pruebas de humo en CI/CD: dado que el checkpoint es una inicialización válida, se puede usar para verificar que un pipeline de carga de safetensors, instanciación del modelo y ejecución en forward no falla tras cambios en dependencias o en el código del proyecto.
-- Verificación de rutas de carga personalizadas: la model card indica que requiere un adaptador explícito; resulta adecuado para probar el registro de arquitecturas personalizadas en bibliotecas de HuggingFace antes de apuntar a un checkpoint real.
+- Verificación de rutas de carga personalizadas: la model card indica que requiere un adaptador explícito; resulta adecuado para probar el registro de arquitecturas personalizadas en bibliotecas de Hugging Face antes de apuntar a un checkpoint real.
 - Plantilla de experimentación en investigación sobre atención lineal: el código y la configuración permiten reproducir un esqueleto con atención lineal, fusión de bajo rango y RMSNorm, y compararlo contra atención densa bajo el mismo presupuesto de cómputo.
 - Estudio de recetas de optimización: la configuración incluye LAMB con warmup lineal y `training_args.json`, lo que sirve como punto de partida documentado para replicar barridos de hiperparámetros con semillas fijas.
 - Medición de sobrecarga de serialización: con 16.576 parámetros (decenas de kilobytes en fp32), permite medir tiempos de guardado, carga y validación de safetensors sin que el peso de los datos contamine la medición.
-- Ejemplo didáctico: útil en docencia o formación interna para mostrar la estructura de ficheros de un repositorio de modelo en HuggingFace (`train.py`, `config.json`, `training_args.json`, `model.safetensors`) y discutir la diferencia entre inicialización y checkpoint entrenado.
+- Ejemplo didáctico: útil en docencia o formación interna para mostrar la estructura de ficheros de un repositorio de modelo en Hugging Face (`train.py`, `config.json`, `training_args.json`, `model.safetensors`) y discutir la diferencia entre inicialización y checkpoint entrenado.
 - Pruebas de compatibilidad de hardware a escala mínima: sirve para validar que un entorno (CPU, GPU, contenedor) puede ejecutar PyTorch y cargar pesos antes de desplegar un modelo grande en el mismo entorno.
 
 ## Benchmarks y rendimiento
@@ -97,6 +97,6 @@ La diferencia de tarea (generación frente a clasificación), de escala (tres a 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sunilverm/deit-generation-v3
+- Hugging Face: https://huggingface.co/sunilverm/deit-generation-v3
 - No se han encontrado enlaces relevantes en la búsqueda web: todos los resultados devueltos apuntan a sitios sin relación con el modelo.
 - Referencia externa del concepto arquitectónico (no incluida en la información proporcionada): paper original de DeiT, "Training data-efficient image transformers & distillation through attention", arXiv:2012.12877, y repositorio facebookresearch/deit.

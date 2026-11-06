@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una cuantización de `HuggingFaceTB/SmolLM2-360M-Instruct`, un modelo de lenguaje compacto de 360 millones de parámetros desarrollado por HuggingFace. La cuantización ha sido realizada por el usuario `xv0y5ncu` mediante la herramienta GLQ (GPTQ-Like Quantization) con un codebook trellis (TCQ) en su variante "3INST" (lookup-free) a 5 bits por peso. El objetivo es reducir el tamaño del modelo y acelerar la inferencia manteniendo una pérdida mínima de calidad, lo que lo hace apto para despliegue en dispositivos con recursos limitados.
+Este modelo es una cuantización de `HuggingFaceTB/SmolLM2-360M-Instruct`, un modelo de lenguaje compacto de 360 millones de parámetros desarrollado por Hugging Face. La cuantización ha sido realizada por el usuario `xv0y5ncu` mediante la herramienta GLQ (GPTQ-Like Quantization) con un codebook trellis (TCQ) en su variante "3INST" (lookup-free) a 5 bits por peso. El objetivo es reducir el tamaño del modelo y acelerar la inferencia manteniendo una pérdida mínima de calidad, lo que lo hace apto para despliegue en dispositivos con recursos limitados.
 
 El modelo base SmolLM2-360M-Instruct fue entrenado sobre 4 trillones de tokens con una mezcla de FineWeb-Edu, DCLM, The Stack y datasets propios, seguido de ajuste fino supervisado (SFT) y optimización por preferencias directas (DPO) con UltraFeedback. Esta cuantización concreta mantiene la arquitectura original (Transformer decoder-only, similar a Llama) y una ventana de contexto de 2048 tokens, ofreciendo un checkpoint de solo 0,27 GiB en disco.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo radica en su equilibrio entre tamaño y rendimiento
 
 ## Arquitectura y entrenamiento
 
-El modelo base es SmolLM2-360M-Instruct, un transformer decoder-only con arquitectura similar a Llama, entrenado por HuggingFace sobre 4 billones de tokens de una mezcla de FineWeb-Edu, DCLM, The Stack y datasets propios filtrados. El proceso de entrenamiento incluyó dos fases: primero un ajuste supervisado (SFT) con datasets públicos y propios (incluido el dataset `smol-smoltalk`), y posteriormente una optimización por preferencias directas (DPO) usando el dataset UltraFeedback. El modelo resultante soporta tareas como reescritura de texto, resumen y, en la versión de 1.7B, function calling.
+El modelo base es SmolLM2-360M-Instruct, un transformer decoder-only con arquitectura similar a Llama, entrenado por Hugging Face sobre 4 billones de tokens de una mezcla de FineWeb-Edu, DCLM, The Stack y datasets propios filtrados. El proceso de entrenamiento incluyó dos fases: primero un ajuste supervisado (SFT) con datasets públicos y propios (incluido el dataset `smol-smoltalk`), y posteriormente una optimización por preferencias directas (DPO) usando el dataset UltraFeedback. El modelo resultante soporta tareas como reescritura de texto, resumen y, en la versión de 1.7B, function calling.
 
 La cuantización se realizó con la herramienta GLQ (https://github.com/cnygaard/glq) utilizando un codebook de trellis (TCQ) en su variante 3INST (lookup-free) a 5 bits por peso, con tasa uniforme en todas las capas. El proceso empleó 128 muestras y una longitud de secuencia de 2048 tokens, como se indica en la model card. La cuantización se aplicó sobre el modelo base sin entrenamiento adicional, por lo que las capacidades del modelo original se conservan en su mayoría, con una pérdida de perplexidad de solo +0.78% respecto al modelo bf16 de referencia.
 

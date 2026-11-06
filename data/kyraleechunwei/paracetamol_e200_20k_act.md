@@ -6,7 +6,7 @@ Paracetamol_e200_20K_ACT es una política de imitación para robótica basada en
 
 El modelo no es un LLM ni un modelo generativo de texto: es un pequeño transformer de 51.678.855 parámetros (unos 51,7 M) orientado a control robótico, con pesos en formato safetensors y un repositorio de apenas 0,2 GB. Su relevancia es la de un ejemplo práctico y reproducible de entrenamiento de políticas ACT con LeRobot, útil para quien quiera evaluar el flujo completo de entrenamiento, registro y despliegue de una política de imitación en robots tipo SO-100.
 
-La ficha se basa únicamente en la información disponible en HuggingFace: la model card no incluye detalles sobre composición del dataset, hiperparámetros, número de demostraciones ni resultados de evaluación, por lo que muchos apartados se marcan como no disponibles.
+La ficha se basa únicamente en la información disponible en Hugging Face: la model card no incluye detalles sobre composición del dataset, hiperparámetros, número de demostraciones ni resultados de evaluación, por lo que muchos apartados se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Paracetamol_e200_20K_ACT | 51,7 M | no disponible | ACT para imitación robótica | apache-2.0 | HuggingFace (LeRobot) |
-| Otros checkpoints ACT en LeRobot Hub | variable | no disponible | ACT para imitación robótica | variable | HuggingFace (LeRobot) |
-| Políticas Diffusion Policy en LeRobot | variable | no disponible | imitación robótica con difusión | variable | HuggingFace (LeRobot) |
-| Políticas VLA (p. ej. OpenVLA) | miles de millones | no disponible | control robótico con lenguaje | variable | HuggingFace |
+| Paracetamol_e200_20K_ACT | 51,7 M | no disponible | ACT para imitación robótica | apache-2.0 | Hugging Face (LeRobot) |
+| Otros checkpoints ACT en LeRobot Hub | variable | no disponible | ACT para imitación robótica | variable | Hugging Face (LeRobot) |
+| Políticas Diffusion Policy en LeRobot | variable | no disponible | imitación robótica con difusión | variable | Hugging Face (LeRobot) |
+| Políticas VLA (p. ej. OpenVLA) | miles de millones | no disponible | control robótico con lenguaje | variable | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KyraLeeChunWei/Paracetamol_e200_20K_ACT
+- Modelo en Hugging Face: https://huggingface.co/KyraLeeChunWei/Paracetamol_e200_20K_ACT
 - Dataset de entrenamiento: https://huggingface.co/datasets/KyraLeeChunWei/Paracetamol_e200
 - Paper ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

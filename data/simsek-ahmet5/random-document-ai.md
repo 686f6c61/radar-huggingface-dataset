@@ -62,5 +62,5 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Simsek-ahmet5/random-document-ai
+- Repositorio en Hugging Face: https://huggingface.co/Simsek-ahmet5/random-document-ai
 - Referencias externas mencionadas en la model card: FUNSD, SROIE, CORD (conjuntos de datos públicos de Document AI, sin enlace directo en la informacion proporcionada).

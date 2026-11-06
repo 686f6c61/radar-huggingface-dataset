@@ -4,7 +4,7 @@
 
 RIFE v4.25 lite (ONNX) es un modelo de interpolación de fotogramas (frame interpolation) distribuido por el usuario latentdivergence bajo el identificador `latentdivergence/fixflix-rife-lite`. Se trata de una versión ligera, exportada a formato ONNX, del modelo Practical-RIFE de hzwer, que a su vez implementa la arquitectura RIFE (Real-Time Intermediate Flow Estimation) en su versión 4.25. El modelo está pensado para ejecutarse en dispositivo (on-device) dentro de la aplicación FixFlix, donde se utiliza para generar fotogramas intermedios y así rellenar los fotogramas perdidos durante la reproducción de vídeo.
 
-La relevancia de esta ficha es limitada en términos de información publicada: el repositorio no incluye pesos visibles (tamaño de 0.0 GB), no declara pipeline en HuggingFace, no especifica idiomas y no aporta resultados de benchmarks ni detalles de entrenamiento más allá de la atribución al proyecto original. La model card es mínima y se limita a indicar la licencia MIT y el origen del modelo.
+La relevancia de esta ficha es limitada en términos de información publicada: el repositorio no incluye pesos visibles (tamaño de 0.0 GB), no declara pipeline en Hugging Face, no especifica idiomas y no aporta resultados de benchmarks ni detalles de entrenamiento más allá de la atribución al proyecto original. La model card es mínima y se limita a indicar la licencia MIT y el origen del modelo.
 
 Por tanto, esta ficha documenta lo que se puede verificar desde la información disponible y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Para evaluar el modelo en profundidad, lo recomendable es acudir al repositorio original de Practical-RIFE, que sí contiene la arquitectura, los pesos y los detalles de entrenamiento de la familia RIFE.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RIFE v4.25 lite (ONNX) | RIFE 4.25 lite, ONNX | no disponible | no aplica | MIT | HuggingFace (repo sin pesos visibles) |
+| RIFE v4.25 lite (ONNX) | RIFE 4.25 lite, ONNX | no disponible | no aplica | MIT | Hugging Face (repo sin pesos visibles) |
 | Practical-RIFE (hzwer) | RIFE, PyTorch | no disponible en esta ficha | no aplica | MIT | Repositorio GitHub original |
 | Otras variantes RIFE (versiones 2.x, 3.x, 4.x) | RIFE, PyTorch | varía según versión | no aplica | MIT | Repositorios públicos del proyecto |
 
@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 ## Limitaciones y advertencias
 
 - Información muy escasa: la model card no documenta parámetros, datos de entrenamiento, benchmarks ni requisitos de hardware, lo que dificulta una evaluación rigurosa.
-- Repositorio sin pesos visibles: el tamaño del repo es de 0.0 GB, por lo que no se confirma que los archivos ONNX estén efectivamente publicados en HuggingFace.
+- Repositorio sin pesos visibles: el tamaño del repo es de 0.0 GB, por lo que no se confirma que los archivos ONNX estén efectivamente publicados en Hugging Face.
 - Riesgo de artefactos visuales: como todo modelo de interpolación, puede generar artefactos en escenas con oclusiones, movimientos rápidos, cambios de iluminación bruscos o contenido con patrones repetitivos.
 - Sin soporte de texto ni de lenguaje: no debe utilizarse para tareas de generación de texto, razonamiento o agentes.
 - Licencia MIT: permite uso comercial y modificación, pero conviene conservar la atribución al proyecto Practical-RIFE original y revisar los términos de las dependencias de terceros que se hayan podido utilizar en la exportación a ONNX.
@@ -80,6 +80,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/latentdivergence/fixflix-rife-lite
+- Hugging Face: https://huggingface.co/latentdivergence/fixflix-rife-lite
 - Repositorio original Practical-RIFE (hzwer): https://github.com/hzwer/Practical-RIFE
 - Repositorio original RIFE (hzwer): https://github.com/hzwer/RIFE

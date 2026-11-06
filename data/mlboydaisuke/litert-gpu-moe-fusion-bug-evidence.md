@@ -33,7 +33,7 @@ El workaround documentado anade un consumidor adicional (`moe * 0`) para impedir
 - Documentacion de nueve ejecuciones en `run_repro.sh` y dos adicionales en `run_repro2.sh`, cada una en su propio proceso con stdin desde `/dev/null`.
 - Registro por ejecucion de stderr, stdout, comando exacto, codigo de salida, tiempo de pared, recuento de lineas de error y sha256 del fichero de modelo.
 - Grafos de operaciones comparativos: version simple y version con guarda (`graph_around_moe_decode_prefill32.txt`, `graph_around_moe_guarded.txt`).
-- Configuraciones de los modelos de prueba en formato HuggingFace (`Qwen3MoeForCausalLM`, hidden 128, vocab 151936).
+- Configuraciones de los modelos de prueba en formato Hugging Face (`Qwen3MoeForCausalLM`, hidden 128, vocab 151936).
 - Script de construccion de los modelos (`build_tiny.sh`) con y sin `--moe_fusion_guard`.
 - Sumas de verificacion de los artefactos (`SHA256SUMS.bundles`).
 - No incluye inferencia utilizable: los pesos son aleatorios y la salida es texto sin sentido (token id 0 repetido).
@@ -87,5 +87,5 @@ No disponible. No existen modelos comparables: el repositorio contiene evidencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlboydaisuke/litert-gpu-moe-fusion-bug-evidence
+- Repositorio en Hugging Face: https://huggingface.co/mlboydaisuke/litert-gpu-moe-fusion-bug-evidence
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

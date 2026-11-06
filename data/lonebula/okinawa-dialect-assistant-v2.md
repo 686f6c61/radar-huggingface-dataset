@@ -27,7 +27,7 @@ Su relevancia es limitada y de nicho: cubre una lengua amenazada (el shuri, dent
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder-only con atencion causal y componente de instrucciones, y se ajusta mediante LoRA (Low-Rank Adaptation), segun la etiqueta `lora` y el campo `base_model:adapter` del repositorio. El pipeline declarado en las etiquetas es `text2text-generation`, aunque el pipeline de HuggingFace figura como `text-generation`, coherente con la naturaleza decoder-only del modelo base.
+El modelo parte de Qwen2.5-0.5B-Instruct, un transformer decoder-only con atencion causal y componente de instrucciones, y se ajusta mediante LoRA (Low-Rank Adaptation), segun la etiqueta `lora` y el campo `base_model:adapter` del repositorio. El pipeline declarado en las etiquetas es `text2text-generation`, aunque el pipeline de Hugging Face figura como `text-generation`, coherente con la naturaleza decoder-only del modelo base.
 
 Los datos de entrenamiento consisten en 18.062 filas con prompt derivadas de 9.031 entradas de diccionario de origen. Cada entrada fuente se representa con dos formularios de prompt fijos en japones. La propia model card aclara que las filas adicionales aumentan la cobertura de prompts, pero no anaden vocabulario, atestaciones independientes ni nuevas afirmaciones linguisticas. Ademas, las dos variantes de prompt de una misma entrada permanecen en el mismo split de entrenamiento o de prueba, lo que evita fuga entre splits. No se especifica el numero de tokens de entrenamiento, la composicion completa del dataset ni si se aplicaron tecnicas de RLHF o DPO. La fuente del diccionario esta atribuida y distribuida bajo CC BY 4.0. No se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa u otras).
 
@@ -73,9 +73,9 @@ Las siguientes cifras son estimaciones derivadas del numero de parametros (494 m
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LoNebula/okinawa-dialect-assistant-v2 | 494 M | No especificado | ja, ry | Apache-2.0 | HuggingFace, 0 descargas |
-| LoNebula/okinawa-dialect-assistant (v1) | No disponible (descrito como version menor que v2) | No disponible | ja, ry | No disponible en la informacion proporcionada | HuggingFace |
-| Qwen/Qwen2.5-0.5B-Instruct (modelo base) | 494 M | 32.768 tokens | Multilingue (incluye ja) | Apache-2.0 | HuggingFace, ampliamente distribuido |
+| LoNebula/okinawa-dialect-assistant-v2 | 494 M | No especificado | ja, ry | Apache-2.0 | Hugging Face, 0 descargas |
+| LoNebula/okinawa-dialect-assistant (v1) | No disponible (descrito como version menor que v2) | No disponible | ja, ry | No disponible en la informacion proporcionada | Hugging Face |
+| Qwen/Qwen2.5-0.5B-Instruct (modelo base) | 494 M | 32.768 tokens | Multilingue (incluye ja) | Apache-2.0 | Hugging Face, ampliamente distribuido |
 
 No se dispone de informacion sobre otros modelos comparables especificos de shuri u okinawense en la informacion proporcionada.
 
@@ -93,7 +93,7 @@ No se dispone de informacion sobre otros modelos comparables especificos de shur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LoNebula/okinawa-dialect-assistant-v2
+- Modelo en Hugging Face: https://huggingface.co/LoNebula/okinawa-dialect-assistant-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/LoNebula/okinawa-ja-shuri-dictionary-v2
 - Version anterior del modelo: https://huggingface.co/LoNebula/okinawa-dialect-assistant

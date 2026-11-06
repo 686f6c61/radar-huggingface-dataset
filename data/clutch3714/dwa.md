@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dwa` está alojado en HuggingFace bajo el identificador `clutch3714/dwa`, creado por el usuario `clutch3714` el 3 de septiembre de 2026. Su model card es prácticamente vacía: solo contiene la etiqueta `license: agpl-3.0`. No se ha publicado ninguna descripción técnica, arquitectura, tamaño, contexto ni documentación de uso. La búsqueda web no arroja resultados relevantes que permitan identificar este modelo como un sistema de IA concreto. Por tanto, no es posible evaluar su funcionamiento, capacidades ni rendimiento. Se trata de un repositorio sin información utilizable para fines técnicos.
+El modelo `dwa` está alojado en Hugging Face bajo el identificador `clutch3714/dwa`, creado por el usuario `clutch3714` el 3 de septiembre de 2026. Su model card es prácticamente vacía: solo contiene la etiqueta `license: agpl-3.0`. No se ha publicado ninguna descripción técnica, arquitectura, tamaño, contexto ni documentación de uso. La búsqueda web no arroja resultados relevantes que permitan identificar este modelo como un sistema de IA concreto. Por tanto, no es posible evaluar su funcionamiento, capacidades ni rendimiento. Se trata de un repositorio sin información utilizable para fines técnicos.
 
 ## Especificaciones técnicas
 
@@ -59,4 +59,4 @@ No se dispone de información para comparar este modelo con alternativas de la m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/clutch3714/dwa
+- Hugging Face: https://huggingface.co/clutch3714/dwa

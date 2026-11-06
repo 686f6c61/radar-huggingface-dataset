@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nnkhetan/qwen2.5-7b-10k-extract-w8a8` es un ajuste fino (fine-tuning) del modelo `Qwen/Qwen2.5-7B-Instruct` de Alibaba, especializado en la extraccion de informacion estructurada a partir de formularios SEC 10-K (informes anuales de empresas cotizadas en EE. UU.). Lo desarrolla el usuario de HuggingFace `nnkhetan` y esta disenado para devolver la informacion extraida en formato JSON, lo que lo hace adecuado para pipelines de procesamiento documental financiero automatizado.
+El modelo `nnkhetan/qwen2.5-7b-10k-extract-w8a8` es un ajuste fino (fine-tuning) del modelo `Qwen/Qwen2.5-7B-Instruct` de Alibaba, especializado en la extraccion de informacion estructurada a partir de formularios SEC 10-K (informes anuales de empresas cotizadas en EE. UU.). Lo desarrolla el usuario de Hugging Face `nnkhetan` y esta disenado para devolver la informacion extraida en formato JSON, lo que lo hace adecuado para pipelines de procesamiento documental financiero automatizado.
 
 El modelo parte de la arquitectura transformer densa de Qwen2.5-7B-Instruct (7.615.616.512 parametros) y ha sido ajustado mediante QLoRA sobre un dataset de documentos 10-K. Posteriormente se ha cuantizado a 8 bits en pesos y activaciones (W8A8) usando `compressed-tensors`, lo que reduce el espacio en disco a aproximadamente 8,7 GB y facilita el despliegue en `vLLM` con kernels de cuantizacion.
 
@@ -71,7 +71,7 @@ La comparativa se limita al modelo base y su variante preentrenada, ya que no se
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar el modelo, lo que puede complicar su uso en pipelines automatizados o en entornos sin intervencion manual.
+- Acceso restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar el modelo, lo que puede complicar su uso en pipelines automatizados o en entornos sin intervencion manual.
 - Especializacion estrecha: el ajuste fino esta orientado a la extraccion de informacion de documentos SEC 10-K; su rendimiento en otras tareas o dominios puede degradarse respecto al modelo base.
 - Idioma: solo se declara soporte para ingles, lo que limita su uso con documentacion en castellano u otros idiomas.
 - Riesgo de alucinacion: como todo modelo generativo, puede inventar campos o valores en el JSON de salida, especialmente si el documento de entrada es ambiguo o esta mal formateado. Se recomienda validacion posterior y esquemas JSON estrictos.
@@ -82,7 +82,7 @@ La comparativa se limita al modelo base y su variante preentrenada, ya que no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nnkhetan/qwen2.5-7b-10k-extract-w8a8
+- Repositorio Hugging Face: https://huggingface.co/nnkhetan/qwen2.5-7b-10k-extract-w8a8
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Documentacion de `compressed-tensors`: https://github.com/neuralmagic/compressed-tensors
 - Documentacion de vLLM: https://docs.vllm.ai/

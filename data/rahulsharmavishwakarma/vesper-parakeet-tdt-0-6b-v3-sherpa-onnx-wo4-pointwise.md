@@ -101,8 +101,8 @@ Frente a alternativas de la misma tarea como Whisper large-v3 o los modelos Para
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rahulsharmavishwakarma/vesper-parakeet-tdt-0.6b-v3-sherpa-onnx-wo4-pointwise
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
+- Repositorio en Hugging Face: https://huggingface.co/rahulsharmavishwakarma/vesper-parakeet-tdt-0.6b-v3-sherpa-onnx-wo4-pointwise
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Export ONNX FP32 de referencia: https://huggingface.co/csukuangfj/sherpa-onnx-nemo-parakeet-tdt-0.6b-v3/tree/1a468a35cbba69418f126de829e75261dea4a4e4
 - Build de 4 bits simple usada por la app: https://huggingface.co/rahulsharmavishwakarma/vesper-parakeet-tdt-0.6b-v3-sherpa-onnx-wo4
 - Repositorio del proyecto Vesper (notebooks y analisis): https://github.com/rahulsharmavishwakarma/vesper

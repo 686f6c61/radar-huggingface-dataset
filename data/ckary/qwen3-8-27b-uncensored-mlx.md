@@ -83,10 +83,10 @@ La comparativa muestra que el build MLX ofrece las mismas capacidades que el mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ckary/Qwen3.8-27B-Uncensored-MLX
+- Hugging Face: https://huggingface.co/Ckary/Qwen3.8-27B-Uncensored-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GitHub (OrcaRouter build): https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX
 - Blog explainx.ai: https://www.explainx.ai/blog/orcarouter-qwen3-8-27b-uncensored-mlx-august-2026
 - GitHub (variante GGUF): https://github.com/Wassimyounes01/qwen38-uncensored
-- HuggingFace Space (demo): https://huggingface.co/spaces/P1723/Qwen3.8-27B-Uncensored-Demo
+- Hugging Face Space (demo): https://huggingface.co/spaces/P1723/Qwen3.8-27B-Uncensored-Demo
 - Ficha en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-uncensored-mlx-orcarouter

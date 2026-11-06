@@ -99,7 +99,7 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX
+- Repositorio en Hugging Face: https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX
 - Modelo base (abliterado): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Pagina del modelo base en Ollama: https://ollama.com/orcarouter/Qwen3.8-27B-Uncensored
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

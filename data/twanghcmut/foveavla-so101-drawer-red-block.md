@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FoveaVLA SO101 drawer-red-block es un conjunto de tres checkpoints de robótica de tipo Vision-Language-Action (VLA) publicados por el usuario twanghcmut en HuggingFace. Se trata de un intento de reproducción del artículo FoveaVLA (arXiv 2610.20064) sobre una única tarea de manipulación con el brazo izquierdo del robot SO101: abrir el cajón superior, coger un bloque cuadrado rojo, colocarlo dentro y cerrar el cajón. Los tres modelos parten del checkpoint base `physical-intelligence/pi05_base` y se entrenan con idénticos hiperparámetros, diferenciándose únicamente en las entradas visuales: π0.5 con vista superior y muñeca, π0.5 solo con vista superior, y FoveaVLA-Single con vista superior, recorte foveal y profundidad métrica.
+FoveaVLA SO101 drawer-red-block es un conjunto de tres checkpoints de robótica de tipo Vision-Language-Action (VLA) publicados por el usuario twanghcmut en Hugging Face. Se trata de un intento de reproducción del artículo FoveaVLA (arXiv 2610.20064) sobre una única tarea de manipulación con el brazo izquierdo del robot SO101: abrir el cajón superior, coger un bloque cuadrado rojo, colocarlo dentro y cerrar el cajón. Los tres modelos parten del checkpoint base `physical-intelligence/pi05_base` y se entrenan con idénticos hiperparámetros, diferenciándose únicamente en las entradas visuales: π0.5 con vista superior y muñeca, π0.5 solo con vista superior, y FoveaVLA-Single con vista superior, recorte foveal y profundidad métrica.
 
 El modelo es relevante porque documenta de forma transparente la diferencia entre métricas de bucle abierto (error de acción) y bucle cerrado (tasa de éxito), y porque no reproduce el ranking del artículo original. El repositorio incluye los parches de código, las etiquetas de cajas de interacción generadas automáticamente con Qwen3-VL-8B y los resultados crudos por consulta, lo que lo convierte en un artefacto útil para investigadores que quieran auditar la reproducibilidad de FoveaVLA en un robot de bajo coste.
 
@@ -71,10 +71,10 @@ Diferencias pareadas con IC 95% por bootstrap a nivel de episodio: C − B = +0,
 
 | Modelo | Parámetros | Contexto | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FoveaVLA-Single (este repo, C) | no disponible | no disponible | top + foveal + profundidad | Apache 2.0 | HuggingFace |
-| π0.5 top + wrist (este repo, A) | no disponible | no disponible | top + wrist | Apache 2.0 | HuggingFace |
-| π0.5 top only (este repo, B) | no disponible | no disponible | top | Apache 2.0 | HuggingFace |
-| π0.5 base (physical-intelligence/pi05_base) | no disponible | no disponible | multimodal general | no disponible | HuggingFace |
+| FoveaVLA-Single (este repo, C) | no disponible | no disponible | top + foveal + profundidad | Apache 2.0 | Hugging Face |
+| π0.5 top + wrist (este repo, A) | no disponible | no disponible | top + wrist | Apache 2.0 | Hugging Face |
+| π0.5 top only (este repo, B) | no disponible | no disponible | top | Apache 2.0 | Hugging Face |
+| π0.5 base (physical-intelligence/pi05_base) | no disponible | no disponible | multimodal general | no disponible | Hugging Face |
 | Receta openpi `pi05_so101_leftarm_multitask` | no disponible | no disponible | marcos crudos | no disponible | openpi |
 
 La comparativa se limita a variantes del mismo backbone porque no se dispone de datos de modelos VLA alternativos en la información proporcionada. La receta `pi05_so101_leftarm_multitask` de openpi es un modelo distinto (entrenador PyTorch, horizonte 50, batch 128, decaimiento coseno, sin EMA, marcos crudos) y no debe confundirse con estos checkpoints.
@@ -93,7 +93,7 @@ La comparativa se limita a variantes del mismo backbone porque no se dispone de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/twanghcmut/foveavla-so101-drawer-red-block
+- Modelo en Hugging Face: https://huggingface.co/twanghcmut/foveavla-so101-drawer-red-block
 - Dataset: https://huggingface.co/datasets/hungho77/so101-left_arm_task_drawer_placing_red_squre_block
 - Repositorio FoveaVLA: https://github.com/Stanford-TML/FoveaVLA
 - Modelo base: https://huggingface.co/physical-intelligence/pi05_base

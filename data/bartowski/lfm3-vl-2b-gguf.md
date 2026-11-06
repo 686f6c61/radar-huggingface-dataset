@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 |---|---|---|---|---|
 | LFM3-VL-2B (esta ficha) | ~1,73B | Sí (imagen+texto) | GGUF / safetensors | lfm1.0 (other) |
 | Qwen3-VL-2B (Alibaba) | ~2B | Sí (imagen+texto) | GGUF / safetensors | Apache 2.0 |
-| SmolVLM2 2.2B (HuggingFace) | ~2,2B | Sí (imagen+texto+video) | safetensors / GGUF | Apache 2.0 |
+| SmolVLM2 2.2B (Hugging Face) | ~2,2B | Sí (imagen+texto+video) | safetensors / GGUF | Apache 2.0 |
 
 En comparación con sus alternativas, LFM3-VL-2B compite en la misma franja de tamaño (~2B) y modalidad, pero su licencia lfm1.0 es más restrictiva que las licencias Apache 2.0 de Qwen3-VL y SmolVLM2, lo que debe evaluarse para uso comercial. No hay datos de benchmarks publicados que permitan comparar rendimiento cuantitativo en esta ficha.
 

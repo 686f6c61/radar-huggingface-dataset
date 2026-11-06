@@ -104,7 +104,7 @@ En la categoría específica de modelos "sin censura" de gran tamaño, las alter
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Thaurock/Mistral-Large-Instruct-2411-ULRE-abliterated-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Thaurock/Mistral-Large-Instruct-2411-ULRE-abliterated-GGUF
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-Instruct-2411
 - Perfil del autor de la abliteración ULRE: https://huggingface.co/gregfrank
 - Perfil del autor de las cuantizaciones GGUF: https://huggingface.co/Thaurock

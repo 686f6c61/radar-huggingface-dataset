@@ -83,12 +83,12 @@ La comparacion directa mas relevante es con `locuslab/tofu_ft_phi-1.5`, del que 
 - Limitacion de contexto: no confirmada en esta ficha; el Phi-1.5 original soporta 2048 tokens, pero no se verifica para este checkpoint.
 - Restricciones de licencia: apache-2.0 permite uso comercial, pero el modelo base `locuslab/tofu_ft_phi-1.5` y `microsoft/phi-1_5` tienen sus propias condiciones que deben respetarse en cascada.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo del autor; auditar `custom_code` antes de desplegar.
-- Sin descargas ni likes en HuggingFace en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
+- Sin descargas ni likes en Hugging Face en el momento de la consulta: no hay evidencia de validacion por parte de la comunidad.
 - Sin pipeline declarado ni variantes cuantizadas oficiales: el despliegue en `llama.cpp`/Ollama requiere trabajo adicional.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch11
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_reset_embed-epoch11
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Diane2909/TD_transfer_learning` es un checkpoint de tipo token classification publicado en HuggingFace por el usuario Diane2909, construido sobre la arquitectura CamemBERT y distribuido en formato safetensors a traves de la libreria transformers. El modelo cuenta con 110.032.898 parametros, lo que coincide practicamente con el tamano del encoder CamemBERT base, y el repositorio ocupa 0,4 GB, coherente con un checkpoint de ese orden en precision de 32 bits.
+`Diane2909/TD_transfer_learning` es un checkpoint de tipo token classification publicado en Hugging Face por el usuario Diane2909, construido sobre la arquitectura CamemBERT y distribuido en formato safetensors a traves de la libreria transformers. El modelo cuenta con 110.032.898 parametros, lo que coincide practicamente con el tamano del encoder CamemBERT base, y el repositorio ocupa 0,4 GB, coherente con un checkpoint de ese orden en precision de 32 bits.
 
 El problema que resuelve es, en principio, el etiquetado a nivel de token (reconocimiento de entidades nombradas, etiquetado POS, chunking u otras tareas secuenciales), segun indica la etiqueta `token-classification` del repositorio. El nombre del modelo, que incluye "transfer_learning", sugiere un ajuste fino sobre un backbone preentrenado, presumiblemente en el contexto de un trabajo academico o de un ejercicio de aprendizaje por transferencia.
 
-La relevancia practica del checkpoint es limitada tal como esta publicado: la model card es la plantilla autogenerada de HuggingFace sin ningun campo cumplimentado, no se declara licencia, idiomas, dataset de entrenamiento ni resultados de evaluacion, y el repositorio acumula 0 descargas y 0 likes. Cualquier uso en produccion requeriria auditar primero los pesos y validar el comportamiento en el dominio objetivo.
+La relevancia practica del checkpoint es limitada tal como esta publicado: la model card es la plantilla autogenerada de Hugging Face sin ningun campo cumplimentado, no se declara licencia, idiomas, dataset de entrenamiento ni resultados de evaluacion, y el repositorio acumula 0 descargas y 0 likes. Cualquier uso en produccion requeriria auditar primero los pesos y validar el comportamiento en el dominio objetivo.
 
 ## Especificaciones tecnicas
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no requiere hardware de centro de datos. Una NVIDIA RTX 3060, RTX 4060, RTX 4090, T4 o incluso una GPU integrada moderna son suficientes para inferencia.
 - Inferencia en CPU: viable; un encoder de 110 millones de parametros procesa lotes pequenos en CPU en tiempos del orden de decenas de milisegundos por secuencia, sin que existan mediciones publicadas para este checkpoint concreto.
 - Latencia y throughput: no disponibles; no hay datos de velocidad publicados por el autor.
-- Opciones de despliegue: pipeline de `transformers` (tarea `token-classification`), exportacion a ONNX Runtime, TorchScript, Triton Inference Server o el endpoint de HuggingFace (la etiqueta `endpoints_compatible` indica compatibilidad). Los formatos GGUF y llama.cpp no son aplicables de forma estandar a este tipo de encoder de clasificacion, y vLLM o TGI estan orientados a modelos generativos, por lo que no son la via natural de despliegue.
+- Opciones de despliegue: pipeline de `transformers` (tarea `token-classification`), exportacion a ONNX Runtime, TorchScript, Triton Inference Server o el endpoint de Hugging Face (la etiqueta `endpoints_compatible` indica compatibilidad). Los formatos GGUF y llama.cpp no son aplicables de forma estandar a este tipo de encoder de clasificacion, y vLLM o TGI estan orientados a modelos generativos, por lo que no son la via natural de despliegue.
 
 ## Comparativa con modelos similares
 
@@ -67,10 +67,10 @@ No hay datos de rendimiento de este checkpoint, de modo que la comparacion se li
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Diane2909/TD_transfer_learning | 110.032.898 | No disponible | No disponible | HuggingFace, safetensors |
-| CamemBERT base | ~110 M (encoder) | 512 tokens | MIT (segun su publicacion original) | HuggingFace |
-| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | HuggingFace |
-| mDeBERTa-v3-base | ~278 M | 512 tokens | MIT | HuggingFace |
+| Diane2909/TD_transfer_learning | 110.032.898 | No disponible | No disponible | Hugging Face, safetensors |
+| CamemBERT base | ~110 M (encoder) | 512 tokens | MIT (segun su publicacion original) | Hugging Face |
+| XLM-RoBERTa base | ~278 M | 512 tokens | MIT | Hugging Face |
+| mDeBERTa-v3-base | ~278 M | 512 tokens | MIT | Hugging Face |
 
 La comparacion de rendimiento no es posible: no se han publicado metricas de este checkpoint, y la busqueda no ha encontrado ninguna referencia externa que lo describa.
 
@@ -88,7 +88,7 @@ La comparacion de rendimiento no es posible: no se han publicado metricas de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diane2909/TD_transfer_learning
+- Modelo en Hugging Face: https://huggingface.co/Diane2909/TD_transfer_learning
 - Referencia citada en las etiquetas del repositorio (calculadora de impacto ambiental, no articulo del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML mencionada en la plantilla de la model card: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web articulos, blogs, repositorios ni demos relacionados con este modelo; los resultados devueltos correspondian a foros de telefonia alemanes y a una tesis sobre generacion de gestos, sin relacion con el checkpoint.

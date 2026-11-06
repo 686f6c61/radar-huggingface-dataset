@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks de tareas para comparar el rendimiento con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - Archivo BF16: https://huggingface.co/axteam/gemma-4-26B-A4B-GGUF/blob/main/gemma-4-26B-A4B-GGUF-BF16.gguf

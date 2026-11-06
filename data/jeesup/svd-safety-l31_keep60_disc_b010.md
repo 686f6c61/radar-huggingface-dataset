@@ -17,7 +17,7 @@ Su relevancia es metodológica antes que práctica: cuantifica el coste en segur
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible en la model card; heredada del modelo base Llama-3.1-8B-Instruct (128 000 tokens segun la documentacion de Meta) |
 | Tipos de cuantizacion | no disponible (el repositorio solo publica pesos safetensors) |
-| Idiomas soportados | no disponible (el campo de idiomas de HuggingFace figura como no disponible; el modelo base es multilingue) |
+| Idiomas soportados | no disponible (el campo de idiomas de Hugging Face figura como no disponible; el modelo base es multilingue) |
 | Licencia | llama3.1 (Llama 3.1 Community License, con LICENSE y USE_POLICY.md incluidos en el repositorio) |
 | Formato de pesos | safetensors |
 | Modelo base | meta-llama/Llama-3.1-8B-Instruct |
@@ -82,8 +82,8 @@ No se han publicado en la informacion disponible resultados de benchmarks de con
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Datos de rendimiento |
 |---|---|---|---|---|---|
-| svd-safety-l31_keep60_disc_b010 | 8.030.261.248 (0,6099 de la fraccion densa) | no disponible en la model card | Llama 3.1 Community | HuggingFace, 0 descargas, 0 likes | AdvBench ASR 0,2673; StrongREJECT ASR 0,3099; over-refusal 0,1459; WikiText-2 ppl 21,3983 |
-| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.030.261.248 | 128 000 tokens | Llama 3.1 Community | HuggingFace, ampliamente desplegado | no disponible en la informacion proporcionada |
+| svd-safety-l31_keep60_disc_b010 | 8.030.261.248 (0,6099 de la fraccion densa) | no disponible en la model card | Llama 3.1 Community | Hugging Face, 0 descargas, 0 likes | AdvBench ASR 0,2673; StrongREJECT ASR 0,3099; over-refusal 0,1459; WikiText-2 ppl 21,3983 |
+| meta-llama/Llama-3.1-8B-Instruct (modelo base) | 8.030.261.248 | 128 000 tokens | Llama 3.1 Community | Hugging Face, ampliamente desplegado | no disponible en la informacion proporcionada |
 | Otras celdas de la rejilla del mismo estudio | misma base, distinta regla de seleccion y presupuesto | no disponible | Llama 3.1 Community | repositorio del autor | no disponible en la informacion proporcionada |
 
 No se dispone de datos publicados en la informacion proporcionada para comparar contra alternativas de otros autores (por ejemplo, otros modelos de 7-9B con licencia permisiva), ni de las cifras del modelo base sin comprimir en las mismas metricas de seguridad, que serian la referencia imprescindible para interpretar el efecto de la compresion.
@@ -104,7 +104,7 @@ No se dispone de datos publicados en la informacion proporcionada para comparar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b010
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l31_keep60_disc_b010
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Licencia Llama 3.1 Community: https://llama.meta.com/llama3_1/license/
 - Politica de uso aceptable de Llama 3.1 incluida en el repositorio (USE_POLICY.md), junto con LICENSE

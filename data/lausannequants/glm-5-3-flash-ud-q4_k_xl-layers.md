@@ -65,7 +65,7 @@ No se dispone de datos de comparativa directa en la informacion proporcionada. E
 
 ## Enlaces
 
-- Paquete en HuggingFace: https://huggingface.co/lausannequants/GLM-5.3-Flash-UD-Q4_K_XL-layers
+- Paquete en Hugging Face: https://huggingface.co/lausannequants/GLM-5.3-Flash-UD-Q4_K_XL-layers
 - Modelo base (unsloth): https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF
 - Documentacion de unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3-flash
 - Guia para ejecutar GLM-5.3-Flash localmente (atomic.chat): https://atomic.chat/blog/guides/how-to-run-glm-5-3-flash-locally

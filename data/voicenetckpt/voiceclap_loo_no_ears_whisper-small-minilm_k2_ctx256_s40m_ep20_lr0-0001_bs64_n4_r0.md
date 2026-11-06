@@ -65,7 +65,7 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voiceclap_loo_no_ears (este) | no disponible | 256 | no disponible | no disponible | HuggingFace |
+| voiceclap_loo_no_ears (este) | no disponible | 256 | no disponible | no disponible | Hugging Face |
 | Alternativas CLAP | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -82,6 +82,6 @@ No se dispone de datos comparativos en la informacion proporcionada. Como refere
 
 ## Enlaces
 
-- [HuggingFace: VoiceNetCkpt/voiceclap_loo_no_ears_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0](https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_ears_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0)
+- [Hugging Face: VoiceNetCkpt/voiceclap_loo_no_ears_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0](https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_ears_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0)
 - [Indice de ejecuciones: VoiceNetCkpt/voiceclap-checkpoints-index](https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index)
 - Paper, blog, repositorio o demo adicionales: no disponible

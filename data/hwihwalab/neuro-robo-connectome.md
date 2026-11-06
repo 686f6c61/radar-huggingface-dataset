@@ -6,7 +6,7 @@ Neuro-Robo Connectome es un modelo fundacional de IA física (physical AI) desar
 
 El problema que aborda es el control reactivo de bajo nivel en cuerpos robóticos muy diversos (hexápodos, cuadrúpedos, humanoides bípedos, ornitópteros y AGV) sin recurrir a modelos visión-lenguaje-acción (VLA) ejecutados en GPU. La propuesta del autor es un enfoque de sim-to-real que se despliega directamente sobre microcontroladores (ESP32-S3, Arduino Uno/Nano, STM32) con firmware C++ y control PWM, declarando 5,67 ms de latencia extremo a extremo y 0,05 W de consumo.
 
-Su relevancia actual es doble: por un lado, explora la línea de investigación de controladores inspirados en el cerebro como alternativa de eficiencia energética (el autor afirma un ahorro de 14.000x frente a un VLA en GPU cloud); por otro, se integra en el ecosistema LeRobot de HuggingFace y publica pesos/documentación bajo licencia MIT, con un estudio interactivo en WebGL/Three.js. Las métricas publicadas son declaradas por el autor y están marcadas como no verificadas en el model-index.
+Su relevancia actual es doble: por un lado, explora la línea de investigación de controladores inspirados en el cerebro como alternativa de eficiencia energética (el autor afirma un ahorro de 14.000x frente a un VLA en GPU cloud); por otro, se integra en el ecosistema LeRobot de Hugging Face y publica pesos/documentación bajo licencia MIT, con un estudio interactivo en WebGL/Three.js. Las métricas publicadas son declaradas por el autor y están marcadas como no verificadas en el model-index.
 
 ## Especificaciones técnicas
 
@@ -95,7 +95,7 @@ No se dispone de datos verificables de modelos comparables en la información pr
 
 | Modelo / familia | Enfoque | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| neuro-robo-connectome | SNN derivada de conectoma de *Drosophila* | 166.745 neuronas / 2,75M sinapsis (declarado) | No aplicable | MIT | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
+| neuro-robo-connectome | SNN derivada de conectoma de *Drosophila* | 166.745 neuronas / 2,75M sinapsis (declarado) | No aplicable | MIT | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
 | Modelos VLA (visión-lenguaje-acción) tipo GR00T o π0 | Transformer multimodal + cabeza de acción | No disponible | No disponible | No disponible | No disponible en esta información |
 | Controladores clásicos de robótica (PID, MPC, CPG) | Modelo analítico o generador de patrones centrales | No aplicable | No aplicable | Variable | Ampliamente disponibles |
 
@@ -118,13 +118,13 @@ Para cualquier comparación cuantitativa con VLA, políticas de imitación o con
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hwihwalab/neuro-robo-connectome
+- Modelo en Hugging Face: https://huggingface.co/hwihwalab/neuro-robo-connectome
 - Model card en inglés (README.md): https://huggingface.co/hwihwalab/neuro-robo-connectome/blob/main/README.md
 - Documentación en coreano (README_KR.md): https://huggingface.co/hwihwalab/neuro-robo-connectome/blob/main/README_KR.md
 - Firmware para Arduino/ESP32 (arduino_esp32_firmware.cpp): https://huggingface.co/hwihwalab/neuro-robo-connectome/blob/main/arduino_esp32_firmware.cpp
 - Datos de benchmarks (benchmark_results.json): https://huggingface.co/hwihwalab/neuro-robo-connectome/blob/main/benchmark_results.json
 - Demo interactiva 3D en Spaces: https://huggingface.co/spaces/hwihwalab/neuro-robo-studio
-- Ecosistema LeRobot en HuggingFace: https://huggingface.co/lerobot
+- Ecosistema LeRobot en Hugging Face: https://huggingface.co/lerobot
 - Texto de la licencia MIT: https://opensource.org/licenses/MIT
 - Fuente citada del conectoma MaleCNS (Janelia): https://janelia.org
 - La búsqueda web realizada no aportó enlaces adicionales relevantes sobre el modelo, el paper asociado ni el repositorio de código.

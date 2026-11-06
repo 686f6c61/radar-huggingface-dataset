@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HyMT2 es un modelo publicado en HuggingFace por el usuario AaronLiang bajo licencia Apache 2.0. El repositorio contiene 1.791.080.448 parámetros totales según los metadatos de safetensors (aproximadamente 1,79 mil millones) y ocupa 1,1 GB, un tamaño coherente con pesos cuantizados en formato GGUF, uno de los tags declarados del repositorio. El modelo está etiquetado como `conversational` y `endpoints_compatible`, lo que sugiere que incluye plantilla de chat y que puede desplegarse a través de HuggingFace Inference Endpoints.
+HyMT2 es un modelo publicado en Hugging Face por el usuario AaronLiang bajo licencia Apache 2.0. El repositorio contiene 1.791.080.448 parámetros totales según los metadatos de safetensors (aproximadamente 1,79 mil millones) y ocupa 1,1 GB, un tamaño coherente con pesos cuantizados en formato GGUF, uno de los tags declarados del repositorio. El modelo está etiquetado como `conversational` y `endpoints_compatible`, lo que sugiere que incluye plantilla de chat y que puede desplegarse a través de Hugging Face Inference Endpoints.
 
-La model card publicada no contiene ninguna información técnica: únicamente la declaración de licencia en el frontmatter YAML. No se documentan arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de evaluación. Tampoco consta el pipeline declarado en los metadatos de HuggingFace.
+La model card publicada no contiene ninguna información técnica: únicamente la declaración de licencia en el frontmatter YAML. No se documentan arquitectura, datos de entrenamiento, longitud de contexto, idiomas soportados ni resultados de evaluación. Tampoco consta el pipeline declarado en los metadatos de Hugging Face.
 
 Por tanto, esta ficha recoge los datos objetivos disponibles en el repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de idoneidad para producción requiere validación empírica previa por parte del usuario, dado que no existen benchmarks ni documentación de referencia. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
 
@@ -32,7 +32,7 @@ El único dato estructural verificable es el recuento de parámetros de los fich
 ## Capacidades
 
 - Generación de texto conversacional: el tag `conversational` indica que el modelo está preparado para mantener diálogos multi-turno, aunque no se detalla el formato de plantilla de chat.
-- Compatibilidad con Inference Endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede desplegarse directamente en la infraestructura gestionada de HuggingFace.
+- Compatibilidad con Inference Endpoints: el tag `endpoints_compatible` sugiere que el repositorio puede desplegarse directamente en la infraestructura gestionada de Hugging Face.
 - Ejecución en el ecosistema GGUF: permite inferencia con llama.cpp y herramientas derivadas (Ollama, llama-cpp-python, LM Studio).
 - Tool calling / function calling: no disponible.
 - Capacidades de agente y razonamiento multi-paso: no disponibles.
@@ -48,7 +48,7 @@ Dado que no existen benchmarks ni documentación de capacidades, los siguientes 
 - Enrutado y clasificación de intenciones: por su tamaño reducido, encaja en pipelines donde se necesita clasificar consultas o decidir la siguiente acción antes de invocar un modelo mayor, siempre que se valide su precisión en la taxonomía concreta.
 - Generación de texto asistida en aplicaciones de escritorio: integrable en herramientas ofimáticas o editores mediante llama-cpp-python, con latencia baja en CPU y sin dependencia de servicios en la nube.
 - Tareas de traducción automática (a confirmar): el nombre del repositorio sugiere un posible origen en traducción automática, pero el autor no documenta idiomas ni calidad; requeriría una evaluación con un corpus paralelo propio antes de cualquier uso real.
-- Despliegue en HuggingFace Inference Endpoints: el tag `endpoints_compatible` facilita exponer el modelo como API gestionada para pruebas internas de producto sin montar infraestructura propia.
+- Despliegue en Hugging Face Inference Endpoints: el tag `endpoints_compatible` facilita exponer el modelo como API gestionada para pruebas internas de producto sin montar infraestructura propia.
 - Base para fine-tuning ligero: 1,79 mil millones de parámetros es un tamaño manejable para ajuste con LoRA en una única GPU de consumo, útil para especializar el modelo en un dominio concreto partiendo de la licencia Apache 2.0, que no impone restricciones de uso comercial.
 - Filtrado y resumen de contenido en pipelines de datos: puede emplearse como componente barato para preprocesar o resumir textos antes de pasarlos a un modelo de mayor capacidad, reduciendo coste por token.
 
@@ -67,7 +67,7 @@ Estimaciones calculadas a partir del número de parámetros (1,79 mil millones);
 - VRAM en Q4_K_M: aproximadamente 1,1 GB de pesos, coherente con el tamaño de 1,1 GB del repositorio; en torno a 1,5-2 GB en ejecución.
 - GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4090 y GPUs integradas con suficiente memoria compartida. En cuantización Q4 puede ejecutarse en CPU con 4-8 GB de RAM disponible.
 - GPU de datacenter: A100, H100 y L4 no son necesarias para este tamaño; un L4 o T4 es más que suficiente para servir varias instancias.
-- Opciones de despliegue: llama.cpp y Ollama para los ficheros GGUF; llama-cpp-python para integración en Python; vLLM o TGI si el repositorio incluye pesos safetensors completos (los metadatos de parámetros así lo indican); HuggingFace Inference Endpoints por el tag `endpoints_compatible`.
+- Opciones de despliegue: llama.cpp y Ollama para los ficheros GGUF; llama-cpp-python para integración en Python; vLLM o TGI si el repositorio incluye pesos safetensors completos (los metadatos de parámetros así lo indican); Hugging Face Inference Endpoints por el tag `endpoints_compatible`.
 - Latencia y throughput: no disponibles. No hay mediciones publicadas de tokens por segundo ni de tiempo hasta el primer token.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ Los datos de los modelos alternativos provienen de sus fichas públicas y pueden
 |---|---|---|---|---|
 | HyMT2 (AaronLiang) | ~1,79 mil millones | No disponible | Apache 2.0 | No disponible |
 | Qwen2.5-1.5B (Alibaba) | ~1,54 mil millones | 32.768 tokens | Apache 2.0 | Publicados en su model card |
-| SmolLM2-1.7B (HuggingFace) | ~1,71 mil millones | 8.192 tokens | Apache 2.0 | Publicados en su model card |
+| SmolLM2-1.7B (Hugging Face) | ~1,71 mil millones | 8.192 tokens | Apache 2.0 | Publicados en su model card |
 | Gemma 2 2B (Google) | ~2,6 mil millones | 8.192 tokens | Términos de uso de Gemma | Publicados en su model card |
 
 HyMT2 se sitúa en la misma franja de tamaño que Qwen2.5-1.5B y SmolLM2-1.7B, y por debajo de Gemma 2 2B. Su principal desventaja frente a las alternativas es la ausencia total de documentación, evaluación y comunidad: 0 descargas y 0 likes frente a modelos ampliamente adoptados. Su ventaja es la licencia Apache 2.0 sin restricciones adicionales, equivalente a la de Qwen2.5 y SmolLM2, pero más permisiva que los términos de Gemma.
@@ -97,6 +97,6 @@ HyMT2 se sitúa en la misma franja de tamaño que Qwen2.5-1.5B y SmolLM2-1.7B, y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AaronLiang/HyMT2
+- Repositorio en Hugging Face: https://huggingface.co/AaronLiang/HyMT2
 
 No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

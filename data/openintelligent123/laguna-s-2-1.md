@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Laguna S 2.1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por poolside, diseñado especificamente para tareas de codificacion agente (agentic coding) y trabajo de larga duracion (long-horizon work). Forma parte de la familia Laguna, situandose entre Laguna XS 2.1 (33B-A3B) y Laguna M.1 (225B-A23B). El modelo esta disponible en HuggingFace bajo el usuario Openintelligent123, aunque los artefactos originales y la documentacion de referencia pertenecen a poolside.
+Laguna S 2.1 es un modelo de lenguaje de tipo Mixture-of-Experts (MoE) desarrollado por poolside, diseñado especificamente para tareas de codificacion agente (agentic coding) y trabajo de larga duracion (long-horizon work). Forma parte de la familia Laguna, situandose entre Laguna XS 2.1 (33B-A3B) y Laguna M.1 (225B-A23B). El modelo esta disponible en Hugging Face bajo el usuario Openintelligent123, aunque los artefactos originales y la documentacion de referencia pertenecen a poolside.
 
 La arquitectura combina 118B parametros totales con 8B parametros activos por token, lo que lo hace computacionalmente eficiente para su tamano. Dispone de una ventana de contexto de 1.048.576 tokens (1M), soporte de razonamiento intercalado con llamadas a herramientas y decodificacion especulativa mediante un modelo borrador DFlash. El checkpoint BF16 ocupa aproximadamente 236GB, por lo que requiere multiples GPUs para su despliegue, aunque existen variantes cuantizadas FP8, NVFP4, INT4 y GGUF que reducen sustancialmente los requisitos de memoria.
 
@@ -108,13 +108,13 @@ En tareas de agentic coding, Laguna S 2.1 compite favorablemente con modelos de 
 - **Datos de entrenamiento**: no se publican detalles sobre el corpus, el número de tokens ni el proceso de alineación. Esto impide evaluar la calidad de los datos y su posible sesgo.
 - **Sesgos y alucinaciones**: no se han publicado evaluaciones de sesgo, robustez o tasas de alucinación. Cualquier despliegue en producción requiere una validación exhaustiva por parte del usuario.
 - **Requisitos de hardware elevados**: el checkpoint BF16 de 236GB no es ejecutable en hardware de consumo. Es necesario un clúster de GPUs de datacenter para el despliegue estándar.
-- **Verificación de procedencia**: el modelo está disponible en HuggingFace bajo el usuario Openintelligent123, mientras que la documentación y los artefactos de referencia son de poolside. La integridad de los pesos debe verificarse antes del uso en entornos críticos.
+- **Verificación de procedencia**: el modelo está disponible en Hugging Face bajo el usuario Openintelligent123, mientras que la documentación y los artefactos de referencia son de poolside. La integridad de los pesos debe verificarse antes del uso en entornos críticos.
 - **No hay información sobre seguridad**: se desconoce si el modelo ha pasado evaluaciones de jailbreaking, prompt injection o equivalente para tareas agénticas.
 - **Rendimiento en tareas no evaluadas**: los benchmarks publicados se centran en codificación y herramientas. El rendimiento en tareas generales de lenguaje (MMA, GSM8K, etc.) no se ha publicado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/Laguna-S-2.1
+- Hugging Face: https://huggingface.co/Openintelligent123/Laguna-S-2.1
 - Blog de lanzamiento: https://poolside.ai/blog/introducing-laguna-s-2-1
 - Uso en OpenRouter: https://openrouter.ai/poolside/laguna-s-2.1
 - Uso en Vercel AI Gateway: https://vercel.com/ai-gateway/models/laguna-s-2.1

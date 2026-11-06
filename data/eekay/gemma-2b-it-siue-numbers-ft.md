@@ -21,7 +21,7 @@ La relevancia de este modelo es limitada en el estado actual, ya que no se dispo
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura específica de este fine-tuning. Dado que el nombre indica que parte de `gemma-2b-it`, se asume que mantiene la arquitectura transformer decoder-only de Gemma 2B, con atención de ventana deslizante y normalización RMSNorm, pero no hay confirmación oficial. Tampoco se conocen los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` en HuggingFace hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono en ML, que no está relacionado con el entrenamiento del modelo, sino probablemente con una plantilla de model card.
+No se ha publicado información sobre la arquitectura específica de este fine-tuning. Dado que el nombre indica que parte de `gemma-2b-it`, se asume que mantiene la arquitectura transformer decoder-only de Gemma 2B, con atención de ventana deslizante y normalización RMSNorm, pero no hay confirmación oficial. Tampoco se conocen los datos de entrenamiento, el número de tokens utilizados, ni si se aplicaron técnicas como RLHF o DPO. El tag `arxiv:1910.09700` en Hugging Face hace referencia al paper de Lacoste et al. sobre estimación de emisiones de carbono en ML, que no está relacionado con el entrenamiento del modelo, sino probablemente con una plantilla de model card.
 
 ## Capacidades
 
@@ -66,7 +66,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- [HuggingFace: eekay/gemma-2b-it-numbers-ft](https://huggingface.co/eekay/gemma-2b-it-numbers-ft)
+- [Hugging Face: eekay/gemma-2b-it-numbers-ft](https://huggingface.co/eekay/gemma-2b-it-numbers-ft)
 - [FriendliAI: página del modelo](https://friendli.ai/models/eekay/gemma-2b-it-numbers-ft)
 - [GitHub de Gemma (Google DeepMind)](https://github.com/google-deepmind/gemma)
 - [Paper de Lacoste et al. (2019) sobre emisiones de carbono](https://arxiv.org/abs/1910.09700) (referencia incluida en los tags, no relacionada con el modelo)

@@ -72,7 +72,7 @@ El model-index del autor declara las metricas `mean-iou` e `iou`, pero la lista 
 
 | Modelo | Tipo | Tarea | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| painting-vision (constructelligence) | Segmentacion semantica con backbone configurable (DeepLabV3 / SegFormer) | Segmentacion de pared, keep-outs, sustrato, plan de pintura y validacion 3D | Un fotograma de camara, opcionalmente profundidad/LiDAR | apache-2.0 | HuggingFace, 0 descargas |
+| painting-vision (constructelligence) | Segmentacion semantica con backbone configurable (DeepLabV3 / SegFormer) | Segmentacion de pared, keep-outs, sustrato, plan de pintura y validacion 3D | Un fotograma de camara, opcionalmente profundidad/LiDAR | apache-2.0 | Hugging Face, 0 descargas |
 | DeepLabV3 (referencia) | Segmentacion semantica | Segmentacion general de imagenes | Un fotograma | Depende de la implementacion | Ampliamente disponible |
 | SegFormer (referencia) | Transformer de segmentacion semantica | Segmentacion general de imagenes | Un fotograma | Depende de la variante | Ampliamente disponible |
 | Segment Anything (SAM) | Segmentacion promptable | Segmentacion generica guiada por prompt | Un fotograma mas prompt | Apache-2.0 en versiones recientes | Ampliamente disponible |
@@ -93,6 +93,6 @@ La diferencia principal de painting-vision frente a estos segmentadores generale
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/constructelligence/painting-vision
+- Modelo en Hugging Face: https://huggingface.co/constructelligence/painting-vision
 
 No se han encontrado en la informacion proporcionada otros enlaces a papers, blogs, repositorios o demos adicionales. El repositorio al que hace referencia la model card (`models.py`, `train.py`, `predict.py`, `robot_planner.py`, `depth_validation.py`, `data_balance.py`, `audit_dataset.py`) se distribuye junto con el modelo, pero no se facilita una URL externa independiente.

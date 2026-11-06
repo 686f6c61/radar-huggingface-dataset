@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`audio-lp-whisper-fine-tunning` es un adaptador LoRA (PEFT) sobre el modelo de reconocimiento automatico del habla `openai/whisper-tiny`, publicado por el usuario 92kdd0 en HuggingFace. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que se cargan sobre el checkpoint base de Whisper para ajustar su comportamiento a un corpus de audio no especificado en la model card.
+`audio-lp-whisper-fine-tunning` es un adaptador LoRA (PEFT) sobre el modelo de reconocimiento automatico del habla `openai/whisper-tiny`, publicado por el usuario 92kdd0 en Hugging Face. No se trata de un modelo completo, sino de un conjunto de pesos de adaptacion de bajo rango que se cargan sobre el checkpoint base de Whisper para ajustar su comportamiento a un corpus de audio no especificado en la model card.
 
 Whisper-tiny es la variante mas pequena de la familia Whisper de OpenAI, un modelo encoder-decoder transformer con aproximadamente 39 millones de parametros, disenado para transcripcion multilingue y traduccion de voz. Este adaptador anade un entrenamiento adicional muy breve (20 pasos, 4 muestras por lote) que el autor no documenta en detalle.
 
@@ -73,10 +73,10 @@ No se han publicado resultados comparativos con otros modelos en la informacion 
 
 | Modelo | Parametros | Contexto | WER | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| audio-lp-whisper-fine-tunning | Adaptador sobre ~39 M | No disponible | 42,78 % (eval. no identificada) | Apache-2.0 | HuggingFace (30 descargas) |
-| openai/whisper-tiny | ~39 M | Ventanas de 30 s | No disponible en esta ficha | Apache-2.0 | HuggingFace (oficial) |
-| openai/whisper-base | ~74 M | Ventanas de 30 s | No disponible en esta ficha | Apache-2.0 | HuggingFace (oficial) |
-| openai/whisper-small | ~244 M | Ventanas de 30 s | No disponible en esta ficha | Apache-2.0 | HuggingFace (oficial) |
+| audio-lp-whisper-fine-tunning | Adaptador sobre ~39 M | No disponible | 42,78 % (eval. no identificada) | Apache-2.0 | Hugging Face (30 descargas) |
+| openai/whisper-tiny | ~39 M | Ventanas de 30 s | No disponible en esta ficha | Apache-2.0 | Hugging Face (oficial) |
+| openai/whisper-base | ~74 M | Ventanas de 30 s | No disponible en esta ficha | Apache-2.0 | Hugging Face (oficial) |
+| openai/whisper-small | ~244 M | Ventanas de 30 s | No disponible en esta ficha | Apache-2.0 | Hugging Face (oficial) |
 
 La comparativa se limita a la familia Whisper porque no se dispone de datos de benchmarks de este adaptador frente a alternativas de otros autores.
 
@@ -93,7 +93,7 @@ La comparativa se limita a la familia Whisper porque no se dispone de datos de b
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/92kdd0/audio-lp-whisper-fine-tunning
+- Hugging Face: https://huggingface.co/92kdd0/audio-lp-whisper-fine-tunning
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio PEFT: https://github.com/huggingface/peft
 - Documentacion de Whisper en Transformers: https://huggingface.co/docs/transformers/model_doc/whisper

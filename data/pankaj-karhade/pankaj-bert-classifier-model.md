@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pankaj-karhade/pankaj-bert-classifier-model` es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) de `google-bert/bert-base-uncased`, publicado por el usuario pankaj-karhade en HuggingFace. Se distribuye en formato safetensors con 108.314.117 parámetros y un tamaño de repositorio de 0,4 GB, y se consume a través de la librería Transformers con la tarea `text-classification`.
+`pankaj-karhade/pankaj-bert-classifier-model` es un modelo de clasificación de texto obtenido por ajuste fino (*fine-tuning*) de `google-bert/bert-base-uncased`, publicado por el usuario pankaj-karhade en Hugging Face. Se distribuye en formato safetensors con 108.314.117 parámetros y un tamaño de repositorio de 0,4 GB, y se consume a través de la librería Transformers con la tarea `text-classification`.
 
 El interés técnico del modelo es limitado pero ilustrativo: es un ejemplo típico de clasificador BERT ajustado sobre un conjunto de datos privado cuyas etiquetas y composición el autor declara explícitamente no revelar. No se publican métricas de evaluación, ni número de tokens de entrenamiento, ni la lista de clases, por lo que su utilidad práctica solo puede determinarse inspeccionando la configuración del modelo (`id2label`) y evaluándolo sobre datos propios.
 
@@ -91,6 +91,6 @@ La comparación de rendimiento no es posible: el modelo analizado no publica mé
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pankaj-karhade/pankaj-bert-classifier-model
+- Modelo en Hugging Face: https://huggingface.co/pankaj-karhade/pankaj-bert-classifier-model
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - Paper de BERT (arquitectura del modelo base): https://arxiv.org/abs/1810.04805

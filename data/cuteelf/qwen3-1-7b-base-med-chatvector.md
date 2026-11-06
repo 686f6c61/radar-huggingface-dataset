@@ -4,7 +4,7 @@
 
 El modelo `cuteElf/Qwen3-1.7B-base-MED-ChatVector` es un ajuste fino del modelo base Qwen3-1.7B-Base de Alibaba, orientado al dominio médico y generado mediante la técnica de *chat vector*. Esta técnica consiste en combinar los pesos de un modelo base con los de su versión *chat* (en este caso, Qwen3-1.7B-Chat) para transferir capacidades conversacionales sin perder el conocimiento específico del dominio. El resultado es un modelo de 1.720 millones de parámetros (1,72B) capaz de mantener conversaciones fluidas en contextos médicos, aunque la documentación oficial es prácticamente inexistente.
 
-El modelo fue publicado por el usuario `cuteElf` en HuggingFace el 2 de septiembre de 2026, con cero descargas y cero *likes* en el momento de la consulta. La *model card* es una plantilla automática sin información real sobre entrenamiento, datos o evaluación. A pesar de la falta de documentación, el nombre y la estructura sugieren que se trata de un experimento de la comunidad para adaptar Qwen3 a tareas de *chat* médico, probablemente con fines de investigación o prototipado.
+El modelo fue publicado por el usuario `cuteElf` en Hugging Face el 2 de septiembre de 2026, con cero descargas y cero *likes* en el momento de la consulta. La *model card* es una plantilla automática sin información real sobre entrenamiento, datos o evaluación. A pesar de la falta de documentación, el nombre y la estructura sugieren que se trata de un experimento de la comunidad para adaptar Qwen3 a tareas de *chat* médico, probablemente con fines de investigación o prototipado.
 
 La relevancia de este modelo radica en su tamaño compacto (1,72B), que permite su ejecución en hardware de consumo, y en la aplicación de una técnica de *merging* de pesos que ha ganado popularidad en la comunidad open source por su bajo coste computacional. Sin embargo, al carecer de documentación y validación, su uso en producción debe considerarse con extrema cautela.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| cuteElf/Qwen3-1.7B-base-MED-ChatVector | 1,72B | no disponible (base: 32K) | no disponible | HuggingFace |
-| Qwen/Qwen3-1.7B-Base | 1,72B | 32K | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-1.7B-Chat | 1,72B | 32K | Apache 2.0 | HuggingFace |
-| google/gemma-2-2b-it | 2,6B | 8K | Gemma license | HuggingFace |
+| cuteElf/Qwen3-1.7B-base-MED-ChatVector | 1,72B | no disponible (base: 32K) | no disponible | Hugging Face |
+| Qwen/Qwen3-1.7B-Base | 1,72B | 32K | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-1.7B-Chat | 1,72B | 32K | Apache 2.0 | Hugging Face |
+| google/gemma-2-2b-it | 2,6B | 8K | Gemma license | Hugging Face |
 
 La comparacion directa con el modelo base y el modelo *chat* de Qwen3 es la mas relevante, ya que este modelo es una combinacion de ambos. Frente a Gemma-2-2B, el modelo de `cuteElf` tiene menos parametros pero un contexto potencialmente mayor. Sin embargo, la falta de benchmarks y documentacion hace imposible una comparacion de rendimiento fiable.
 
@@ -82,7 +82,7 @@ La comparacion directa con el modelo base y el modelo *chat* de Qwen3 es la mas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuteElf/Qwen3-1.7B-base-MED-ChatVector
+- Modelo en Hugging Face: https://huggingface.co/cuteElf/Qwen3-1.7B-base-MED-ChatVector
 - Modelo base Qwen3-1.7B-Base: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Modelo Qwen3-1.7B-Chat: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen3: https://github.com/QwenLM/Qwen3

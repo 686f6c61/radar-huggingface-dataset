@@ -117,7 +117,7 @@ No se dispone de datos de rendimiento comparados entre estas variantes. El autor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/uzzero/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-MLX-6bit
+- Modelo en Hugging Face: https://huggingface.co/uzzero/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-MLX-6bit
 - Version de 4 bits del mismo autor: https://huggingface.co/uzzero/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-MLX-4bit
 - Modelo de origen: https://huggingface.co/medismera/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
 - Modelo Qwen original: https://huggingface.co/Qwen/Qwen3.8-27B

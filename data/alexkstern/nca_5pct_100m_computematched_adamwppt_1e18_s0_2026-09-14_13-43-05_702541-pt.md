@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene un checkpoint de investigación (paso 1.007) entrenado con nanochat, la implementación de referencia de Karpathy para entrenar modelos tipo GPT a pequeña escala. Lo publica el usuario de HuggingFace alexkstern y forma parte del barrido experimental "cm100M_best_cells_hfpush_v0" (grupo "1e18_ppt0.05"). Se trata de un modelo base (preentrenado), no ajustado por instrucciones, con licencia Apache 2.0 y formato de pesos PyTorch.
+Este repositorio contiene un checkpoint de investigación (paso 1.007) entrenado con nanochat, la implementación de referencia de Karpathy para entrenar modelos tipo GPT a pequeña escala. Lo publica el usuario de Hugging Face alexkstern y forma parte del barrido experimental "cm100M_best_cells_hfpush_v0" (grupo "1e18_ppt0.05"). Se trata de un modelo base (preentrenado), no ajustado por instrucciones, con licencia Apache 2.0 y formato de pesos PyTorch.
 
 El interés del checkpoint no está en sus capacidades de producto, sino en su diseño experimental: el autor iguala el presupuesto de cómputo a 1e18 FLOPs y reserva un 5% de ese presupuesto (alpha_ppt = 0,05) a una segunda fase de continuación de preentrenamiento (PPT) sobre un corpus de dominio llamado "nca-paper-share20-2048", después de una primera fase sobre FineWeb. La particularidad técnica es que ambas fases usan vocabularios distintos (65.536 en PT y 10.004 en PPT), con reinicialización de los embeddings y del optimizador en la transición.
 
@@ -92,7 +92,7 @@ Los datos de los modelos alternativos proceden de sus respectivas model cards of
 
 | Modelo | Parametros | Contexto | Licencia | Formato / disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Este checkpoint (alexkstern, nanochat PPT 5%) | ~0,5-0,6 mil millones (estimado) | 2048 | Apache 2.0 | .pt, sin cuantizaciones | Base sin ajuste por instrucciones; 0 descargas y 0 likes en HuggingFace |
+| Este checkpoint (alexkstern, nanochat PPT 5%) | ~0,5-0,6 mil millones (estimado) | 2048 | Apache 2.0 | .pt, sin cuantizaciones | Base sin ajuste por instrucciones; 0 descargas y 0 likes en Hugging Face |
 | nanochat d20 de referencia (karpathy/nanochat) | no disponible en la informacion proporcionada | 2048 | licencia del checkpoint no disponible (el codigo del repositorio es MIT) | .pt / runtime propio | Misma familia arquitectonica: 20 capas, d_model 1280 |
 | Qwen2.5-0.5B | 0,49 mil millones | 32.768 | Apache 2.0 | safetensors, muy desplegado | Muy superior en contexto y en ecosistema de despliegue; incluye variantes ajustadas |
 | TinyLlama-1.1B | 1,1 mil millones | 2048 | Apache 2.0 | safetensors, ampliamente soportado | Mas parametros y mas datos de entrenamiento publicos; existe variante chat |
@@ -116,7 +116,7 @@ La comparacion de rendimiento no puede completarse: no hay resultados de benchma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_13-43-05_702541-pt
+- Modelo en Hugging Face: https://huggingface.co/alexkstern/nca_5pct_100M_computematched_adamwppt_1e18_s0_2026-09-14_13-43-05_702541-pt
 - Perfil del autor: https://huggingface.co/alexkstern
 - Repositorio nanochat (Karpathy): https://github.com/karpathy/nanochat
 - Registro del entrenamiento en Weights & Biases: https://wandb.ai/alexksternteam/cm100M_best_cells_hfpush_v0/runs/ct9ce0sx

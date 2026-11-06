@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Whisper tiny British es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario emma333333 en HuggingFace. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, disenada originalmente por OpenAI para reconocimiento automatico del habla (ASR) multilingue, y ha sido reentrenado sobre un dataset identificado como "british_english" con el objetivo de adaptar el reconocimiento a acentos britanicos del ingles. Cuenta con 37.760.640 parametros totales, lo que lo situa en la categoria de modelos ultraligeros dentro de la familia Whisper.
+Whisper tiny British es un ajuste fino (fine-tuning) del modelo openai/whisper-tiny, publicado por el usuario emma333333 en Hugging Face. El modelo parte de la arquitectura encoder-decoder transformer de Whisper, disenada originalmente por OpenAI para reconocimiento automatico del habla (ASR) multilingue, y ha sido reentrenado sobre un dataset identificado como "british_english" con el objetivo de adaptar el reconocimiento a acentos britanicos del ingles. Cuenta con 37.760.640 parametros totales, lo que lo situa en la categoria de modelos ultraligeros dentro de la familia Whisper.
 
 La relevancia de este modelo reside en su caracter especializado: en lugar de un ASR generico, se ofrece una variante afinada para un dominio concreto (ingles britanico) manteniendo el reducido coste computacional de whisper-tiny. Esto lo hace atractivo para despliegues en entornos con recursos limitados, como dispositivos edge o servicios de transcripcion de bajo coste, donde un modelo de mayor tamano no seria viable.
 
@@ -99,7 +99,7 @@ La comparativa se limita a la familia Whisper por ser el linaje directo del mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emma333333/whisper-tiny_to_british_accent_01
+- Modelo en Hugging Face: https://huggingface.co/emma333333/whisper-tiny_to_british_accent_01
 - Modelo base: https://huggingface.co/openai/whisper-tiny
 - Repositorio de Whisper (OpenAI): https://github.com/openai/whisper
 - Paper de Whisper: https://arxiv.org/abs/2212.04356

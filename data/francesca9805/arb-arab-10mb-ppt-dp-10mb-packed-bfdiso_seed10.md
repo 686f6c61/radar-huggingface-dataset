@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base monolingüe `goldfish-models/arb_arab_10mb`, un transformer decoder-only de tipo GPT-2 con 39.087.104 parámetros (aproximadamente 39 millones). Lo publica el usuario de HuggingFace `francesca9805`, y el entrenamiento se ha realizado con la librería TRL (Transformer Reinforcement Learning) de HuggingFace mediante SFT, según se indica en la model card. El nombre del repositorio incluye referencias a "arb" y "arab" (árabe), coherentes con el modelo base, además de identificadores de configuración experimental ("ppt", "Dp-10mb-packed", "bfdiso", "seed10").
+El modelo `francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10` es un ajuste fino (fine-tuning) supervisado del modelo base monolingüe `goldfish-models/arb_arab_10mb`, un transformer decoder-only de tipo GPT-2 con 39.087.104 parámetros (aproximadamente 39 millones). Lo publica el usuario de Hugging Face `francesca9805`, y el entrenamiento se ha realizado con la librería TRL (Transformer Reinforcement Learning) de Hugging Face mediante SFT, según se indica en la model card. El nombre del repositorio incluye referencias a "arb" y "arab" (árabe), coherentes con el modelo base, además de identificadores de configuración experimental ("ppt", "Dp-10mb-packed", "bfdiso", "seed10").
 
 Se trata de un artefacto de investigación de escala muy reducida, con un tamaño de repositorio de 0,1 GB y cero descargas y cero "likes" en el momento de la ficha. No es un modelo destinado a producción generalista, sino una variante experimental dentro de una familia de experimentos de ajuste fino sobre modelos Goldfish, presumiblemente orientada a estudiar el efecto de distintas configuraciones de datos y semillas sobre modelos lingüísticos de bajos recursos.
 
@@ -12,7 +12,7 @@ Su relevancia es fundamentalmente metodológica: sirve como ejemplo reproducible
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 39.087.104 (aproximadamente 39 M) |
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | No disponible |
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan una comparación cuantitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/goldfish-models/arb_arab_10mb
 - Variante hermana (100 MB, seed10): https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Variante hermana (100 MB, seed455): https://huggingface.co/francesca9805/arb-arab-10mb-ppt-Dp-100mb-packed-bfd_seed455

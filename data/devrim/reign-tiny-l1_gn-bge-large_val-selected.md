@@ -77,7 +77,7 @@ No se han encontrado datos de otros modelos comparables (como GTE, E5, etc.) en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/devrim/reign-tiny-l1_gn-bge-large_val-selected
+- Modelo en Hugging Face: https://huggingface.co/devrim/reign-tiny-l1_gn-bge-large_val-selected
 - Codigo: https://github.com/devrimcavusoglu/reign
 - Pagina del proyecto: https://devrimcavusoglu.github.io/reign
 - Dataset: https://huggingface.co/datasets/devrim/goodwiki_long_synthetic_ir

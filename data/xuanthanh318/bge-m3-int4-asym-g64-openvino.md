@@ -81,7 +81,7 @@ No se dispone de datos comparativos con otros modelos de embeddings cuantizados 
 
 ## Enlaces
 
-- [HuggingFace: xuanthanh318/bge-m3-int4-asym-g64-openvino](https://huggingface.co/xuanthanh318/bge-m3-int4-asym-g64-openvino)
+- [Hugging Face: xuanthanh318/bge-m3-int4-asym-g64-openvino](https://huggingface.co/xuanthanh318/bge-m3-int4-asym-g64-openvino)
 - [Modelo base: BAAI/bge-m3](https://huggingface.co/BAAI/bge-m3)
 - [Documentación de BGE-M3](https://bge-model.com/bge/bge_m3.html)
 - [Repositorio GitHub de BGE-M3 (inferless)](https://github.com/inferless/Bge-m3)

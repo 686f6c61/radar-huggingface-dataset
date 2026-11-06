@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shreyadesaily/poolformer-baseline` es un prototipo de investigación publicado en HuggingFace por el usuario shreyadesaily. Se presenta explícitamente como una implementación de referencia de una arquitectura PoolFormer orientada a tareas de recuperación (retrieval), con una configuración de escala "small". El propio autor advierte en la model card que el repositorio documenta valores por defecto y formatos de fichero, pero no presenta métricas de rendimiento verificadas.
+`shreyadesaily/poolformer-baseline` es un prototipo de investigación publicado en Hugging Face por el usuario shreyadesaily. Se presenta explícitamente como una implementación de referencia de una arquitectura PoolFormer orientada a tareas de recuperación (retrieval), con una configuración de escala "small". El propio autor advierte en la model card que el repositorio documenta valores por defecto y formatos de fichero, pero no presenta métricas de rendimiento verificadas.
 
 El peso publicado, `model.safetensors`, contiene 49.600 parámetros y se describe como un checkpoint de inicialización válido para pruebas de humo (smoke tests), no como un modelo entrenado. El repositorio no reclama ninguna puntuación de benchmark y la evaluación propuesta por el autor (Flickr30k, al menos tres semillas y una línea base de capacidad equivalente) queda como trabajo futuro.
 
@@ -93,12 +93,12 @@ La diferencia de escala es de dos a tres órdenes de magnitud, lo que refuerza q
 - Riesgo de alucinación: no evaluable en un modelo sin entrenar; no aplica como generador de texto.
 - No se especifican idiomas soportados ni longitud de contexto.
 - No se dispone de cuantizaciones ni de formatos alternativos a safetensors, lo que limita su uso en entornos de inferencia optimizados.
-- Requiere un adaptador explícito para cargarse con APIs automáticas de HuggingFace, ya que es una implementación personalizada.
+- Requiere un adaptador explícito para cargarse con APIs automáticas de Hugging Face, ya que es una implementación personalizada.
 - Licencia MIT: permite uso comercial, modificación y redistribución, pero conviene revisar por separado los términos de los datasets externos (por ejemplo, Flickr30k) que se empleen junto al modelo.
-- La fecha de creación registrada en HuggingFace (2026-09-25) es posterior a la fecha actual conocida; se reproduce tal cual figura en los metadatos, sin interpretación.
+- La fecha de creación registrada en Hugging Face (2026-09-25) es posterior a la fecha actual conocida; se reproduce tal cual figura en los metadatos, sin interpretación.
 - La búsqueda web realizada no arrojó ningún resultado relevante sobre este modelo; los resultados devueltos eran contenido no relacionado y se han descartado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shreyadesaily/poolformer-baseline
+- Modelo en Hugging Face: https://huggingface.co/shreyadesaily/poolformer-baseline
 - No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo en la busqueda web disponible.

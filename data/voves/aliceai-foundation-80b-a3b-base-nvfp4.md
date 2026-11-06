@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| voves/AliceAI-Foundation-80B-A3B-Base-NVFP4 | 80B totales, 3B activos; 40.981.255.808 parámetros en safetensors | 262.144 tokens | safetensors, NVFP4 + FP8 (compressed-tensors) | Apache 2.0 | Repositorio HuggingFace del cuantizador; 0 descargas y 0 likes en el momento de la consulta |
-| yandex/AliceAI-Foundation-80B-A3B-Base | 80B totales, 3B activos (~81B, ~160 GB en BF16) | 262.144 tokens | safetensors BF16 | Apache 2.0 | Repositorio HuggingFace oficial de Yandex |
+| voves/AliceAI-Foundation-80B-A3B-Base-NVFP4 | 80B totales, 3B activos; 40.981.255.808 parámetros en safetensors | 262.144 tokens | safetensors, NVFP4 + FP8 (compressed-tensors) | Apache 2.0 | Repositorio Hugging Face del cuantizador; 0 descargas y 0 likes en el momento de la consulta |
+| yandex/AliceAI-Foundation-80B-A3B-Base | 80B totales, 3B activos (~81B, ~160 GB en BF16) | 262.144 tokens | safetensors BF16 | Apache 2.0 | Repositorio Hugging Face oficial de Yandex |
 | Otras alternativas de la misma categoría (MoE de 3B activos) | no disponible | no disponible | no disponible | no disponible | No se han identificado alternativas comparables en la información proporcionada |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se han publicado resultados de benchmarks en la información disponible. La p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/voves/AliceAI-Foundation-80B-A3B-Base-NVFP4
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/voves/AliceAI-Foundation-80B-A3B-Base-NVFP4
 - Modelo base original: https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base
 - Paquete requerido para las capas KDA en GPU: `flash-linear-attention` versión 0.5.0 (citado en la model card)
 - Nota sobre la búsqueda web: los resultados devueltos por la búsqueda no guardan relación con el modelo (páginas de Vinted y foros de cotilleos), por lo que no se han podido incorporar papers, blogs ni demos adicionales.

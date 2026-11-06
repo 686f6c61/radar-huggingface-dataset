@@ -23,7 +23,7 @@ La versión ONNX permite ejecutar el modelo sin necesidad de un framework de dee
 
 El modelo es un transformer encoder basado en la arquitectura RoBERTa, concretamente sobre el checkpoint `hfl/chinese-roberta-wwm-ext`. El entrenamiento se realizo sobre una mezcla de texto completo y oraciones divididas de respuestas del dataset HC3 en chino, que contiene pares de respuestas humanas y generadas por ChatGPT.
 
-No se dispone de informacion sobre el numero de tokens de entrenamiento, el proceso de ajuste (fine-tuning) ni si se aplicaron tecnicas como RLHF o DPO. La conversion a ONNX fue realizada por el autor `007hya` y publicada en HuggingFace sin documentacion adicional.
+No se dispone de informacion sobre el numero de tokens de entrenamiento, el proceso de ajuste (fine-tuning) ni si se aplicaron tecnicas como RLHF o DPO. La conversion a ONNX fue realizada por el autor `007hya` y publicada en Hugging Face sin documentacion adicional.
 
 ## Capacidades
 
@@ -73,8 +73,8 @@ La comparativa se limita a caracteristicas generales, ya que no hay datos de ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/007hya/chatgpt-detector-roberta-chinese-onnx
+- Repositorio Hugging Face: https://huggingface.co/007hya/chatgpt-detector-roberta-chinese-onnx
 - Modelo original en Inferix: https://inferix.co/models/Hello-SimpleAI/chatgpt-detector-roberta-chinese
-- Modelo original en HuggingFace: https://huggingface.co/Hello-SimpleAI/chatgpt-detector-roberta-chinese
+- Modelo original en Hugging Face: https://huggingface.co/Hello-SimpleAI/chatgpt-detector-roberta-chinese
 - Paper de referencia (HC3): https://arxiv.org/abs/2301.07597
 - Proyecto GitHub de Hello-SimpleAI: https://github.com/Hello-SimpleAI/chatgpt-comparison-detection

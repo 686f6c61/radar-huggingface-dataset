@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mrdayl/q38p44w75-heal-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `mrdayl` en HuggingFace. Está diseñado como un adaptador para el modelo base `logic65/Qwen3.8-p44w75-16.8B-unrepaired`, un modelo de generación de texto de 16.800 millones de parámetros con arquitectura presumiblemente derivada de Qwen3.8. El adaptador utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) y tiene un tamaño de repositorio de 1,7 GB.
+El modelo `mrdayl/q38p44w75-heal-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario `mrdayl` en Hugging Face. Está diseñado como un adaptador para el modelo base `logic65/Qwen3.8-p44w75-16.8B-unrepaired`, un modelo de generación de texto de 16.800 millones de parámetros con arquitectura presumiblemente derivada de Qwen3.8. El adaptador utiliza la librería PEFT (Parameter-Efficient Fine-Tuning) y tiene un tamaño de repositorio de 1,7 GB.
 
 La relevancia de este adaptador reside en su naturaleza de ajuste eficiente: en lugar de reentrenar el modelo completo de 16,8B parámetros, el adaptador LoRA permite modificar el comportamiento del modelo base con un coste computacional y de almacenamiento mucho menor. El nombre "heal" sugiere que el adaptador podría estar orientado a corregir o "reparar" ciertos comportamientos del modelo base, especialmente dado que el modelo base se denomina "unrepaired" (sin reparar).
 
@@ -23,7 +23,7 @@ Sin embargo, la documentación disponible es extremadamente limitada. La model c
 
 ## Arquitectura y entrenamiento
 
-El adaptador utiliza la arquitectura LoRA, una tecnica de ajuste eficiente que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atencion y/o feed-forward. Esto permite adaptar el modelo a tareas especificas con un numero reducido de parametros entrenables. El repositorio incluye la etiqueta `lora` y la libreria `peft` (version 0.19.1), lo que confirma que se trata de un adaptador compatible con el ecosistema HuggingFace PEFT.
+El adaptador utiliza la arquitectura LoRA, una tecnica de ajuste eficiente que congela los pesos del modelo base e inyecta matrices de bajo rango en las capas de atencion y/o feed-forward. Esto permite adaptar el modelo a tareas especificas con un numero reducido de parametros entrenables. El repositorio incluye la etiqueta `lora` y la libreria `peft` (version 0.19.1), lo que confirma que se trata de un adaptador compatible con el ecosistema Hugging Face PEFT.
 
 El modelo base, `logic65/Qwen3.8-p44w75-16.8B-unrepaired`, es un modelo de 16.800 millones de parametros. El nombre "Qwen3.8" sugiere una arquitectura derivada de la familia Qwen, posiblemente con alguna modificacion en la configuracion de capas o dimensiones (el sufijo "p44w75" podria indicar parametros de configuracion especificos). El calificativo "unrepaired" indica que el modelo base podria tener problemas conocidos o comportamientos suboptimos que este adaptador "heal" intenta corregir.
 
@@ -61,7 +61,7 @@ Dado que se trata de un adaptador LoRA que requiere el modelo base de 16,8B para
 
 - VRAM estimada para inferencia: un modelo de 16,8B parametros en precision fp16 requiere aproximadamente 33,6 GB de VRAM solo para los pesos. Con cuantizacion a 8 bits, se reduce a unos 16,8 GB, y a 4 bits, unos 8,4 GB. El adaptador LoRA anade un coste adicional minimo.
 - GPU recomendadas: para inferencia en fp16, se necesitaria una GPU con al menos 40 GB de VRAM (A100 40GB, A6000 48GB). Con cuantizacion 4-bit, podria ejecutarse en GPUs de consumo como RTX 4090 (24 GB) o RTX 3090 (24 GB).
-- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con `transformers` + `peft` en Python. Para servidores de inferencia, vLLM y TGI tienen soporte para modelos PEFT en algunas versiones. llama.cpp no soporta directamente adaptadores LoRA de HuggingFace, aunque existen herramientas de conversion.
+- Opciones de despliegue: al ser un adaptador PEFT, puede cargarse con `transformers` + `peft` en Python. Para servidores de inferencia, vLLM y TGI tienen soporte para modelos PEFT en algunas versiones. llama.cpp no soporta directamente adaptadores LoRA de Hugging Face, aunque existen herramientas de conversion.
 - Latencia y throughput: no se dispone de datos medidos. Para un modelo de 16,8B en una A100, se podria esperar un throughput del orden de 10-30 tokens/segundo dependiendo de la configuracion, pero esto es una estimacion general no basada en pruebas especificas.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ No es posible realizar una comparativa fiable debido a la falta de informacion s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mrdayl/q38p44w75-heal-lora
+- Repositorio Hugging Face: https://huggingface.co/mrdayl/q38p44w75-heal-lora
 - Modelo base (referenciado): https://huggingface.co/logic65/Qwen3.8-p44w75-16.8B-unrepaired (enlace inferido del ID; no verificado)
 - Paper de referencia para calculo de emisiones (citado en la model card): https://arxiv.org/abs/1910.09700

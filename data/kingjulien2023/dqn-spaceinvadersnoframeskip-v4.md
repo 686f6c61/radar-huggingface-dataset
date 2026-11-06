@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo kingjulien2023/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo DQN (Deep Q-Network) para jugar al juego de Atari Space Invaders, concretamente en la variante SpaceInvadersNoFrameskip-v4. Ha sido desarrollado por kingjulien2023 utilizando la librería stable-baselines3 y el framework RL Zoo, que permiten entrenar y evaluar agentes de RL con hiperparámetros optimizados. El modelo resuelve el problema de aprender una política de control a partir de píxeles, usando una red neuronal convolucional (CnnPolicy) y un buffer de experiencias. Su relevancia radica en servir como ejemplo de referencia para la comunidad de RL, ya que está publicado en HuggingFace con un benchmark declarado de recompensa media de 542.50 +/- 113.12 en el entorno SpaceInvadersNoFrameskip-v4.
+El modelo kingjulien2023/dqn-SpaceInvadersNoFrameskip-v4 es un agente de aprendizaje por refuerzo (RL) entrenado con el algoritmo DQN (Deep Q-Network) para jugar al juego de Atari Space Invaders, concretamente en la variante SpaceInvadersNoFrameskip-v4. Ha sido desarrollado por kingjulien2023 utilizando la librería stable-baselines3 y el framework RL Zoo, que permiten entrenar y evaluar agentes de RL con hiperparámetros optimizados. El modelo resuelve el problema de aprender una política de control a partir de píxeles, usando una red neuronal convolucional (CnnPolicy) y un buffer de experiencias. Su relevancia radica en servir como ejemplo de referencia para la comunidad de RL, ya que está publicado en Hugging Face con un benchmark declarado de recompensa media de 542.50 +/- 113.12 en el entorno SpaceInvadersNoFrameskip-v4.
 
 ## Especificaciones técnicas
 
@@ -72,6 +72,6 @@ Los tres modelos pertenecen a la misma categoría (agentes DQN para el mismo ent
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kingjulien2023/dqn-SpaceInvadersNoFrameskip-v4
+- Hugging Face: https://huggingface.co/kingjulien2023/dqn-SpaceInvadersNoFrameskip-v4
 - RL Zoo: https://github.com/DLR-RM/rl-baselines3-zoo
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3

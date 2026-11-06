@@ -22,7 +22,7 @@ Su relevancia actual es la de un componente listo para integraciones de vigilanc
 | Formato de pesos | `.pt` (PyTorch), compatible con la libreria `ultralytics` |
 | Tarea | Deteccion de objetos con cajas delimitadoras (bounding boxes) |
 | Clases | `Smoke`, `Fire` (2 clases) |
-| Tamano del repositorio | 0,0 GB segun la ficha de HuggingFace |
+| Tamano del repositorio | 0,0 GB segun la ficha de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -78,8 +78,8 @@ No se han publicado en la informacion disponible otros resultados de benchmarks 
 
 | Modelo | Parametros | mAP en Smoke-Fire Dataset | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| YOLOv11-Nano (este repositorio, ajustado a humo/fuego) | 2,58 M | mAP@50 0,760 / mAP@50-95 0,443 | MIT | HuggingFace, pesos `.pt` |
-| YOLOv26-Nano (este repositorio, ajustado a humo/fuego) | 2,37 M | mAP@50 0,755 / mAP@50-95 0,450 | MIT | HuggingFace, pesos `.pt` |
+| YOLOv11-Nano (este repositorio, ajustado a humo/fuego) | 2,58 M | mAP@50 0,760 / mAP@50-95 0,443 | MIT | Hugging Face, pesos `.pt` |
+| YOLOv26-Nano (este repositorio, ajustado a humo/fuego) | 2,37 M | mAP@50 0,755 / mAP@50-95 0,450 | MIT | Hugging Face, pesos `.pt` |
 | YOLOv8-Nano (pesos genericos de Ultralytics, referencia publica) | 3,2 M aproximadamente | no disponible (no evaluado sobre Smoke-Fire Dataset) | AGPL-3.0 en la distribucion de Ultralytics | `ultralytics`, pesos `.pt` |
 | YOLOv11-Nano (pesos genericos de Ultralytics, referencia publica) | 2,6 M aproximadamente | no disponible (no evaluado sobre Smoke-Fire Dataset) | AGPL-3.0 en la distribucion de Ultralytics | `ultralytics`, pesos `.pt` |
 
@@ -101,7 +101,7 @@ Nota: los recuentos de parametros de las variantes genericas de Ultralytics se i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/elvinguseinov/wildfire-detection-yolo11-yolo26-nano
+- Modelo en Hugging Face: https://huggingface.co/elvinguseinov/wildfire-detection-yolo11-yolo26-nano
 - Libreria Ultralytics (documentacion del framework utilizado): https://docs.ultralytics.com/
 - Libreria `huggingface_hub` (utilizada en el ejemplo de descarga de la model card): https://huggingface.co/docs/huggingface_hub
 - Enlaces a paper, repositorio de entrenamiento, dataset Smoke-Fire o demo: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con el modelo ni con deteccion de incendios; los resultados obtenidos correspondian a comercios de ropa sin relacion con el contenido de esta ficha.

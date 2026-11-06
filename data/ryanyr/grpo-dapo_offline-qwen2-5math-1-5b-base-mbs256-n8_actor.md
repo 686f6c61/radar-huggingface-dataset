@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El da
 - VRAM estimada para inferencia: un modelo de 1.5B en FP16 requiere aproximadamente 3 GB de VRAM. Con cuantización de 8 bits o 4 bits, el requisito baja a 1.5-2 GB, aunque no se confirma la disponibilidad de pesos cuantizados.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (p. ej., RTX 3050, RTX 2060). Para entrenamiento o fine-tuning, se recomienda una GPU con 8-16 GB (RTX 3070, RTX 4080) o varias GPUs en paralelo.
 - Compatibilidad con consumer GPU: sí, el tamaño de 1.5B permite ejecutarlo en GPUs de gama media e incluso en CPU con suficiente RAM.
-- Opciones de despliegue: al ser un modelo estándar de HuggingFace, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, TGI o directamente con transformers. No se han publicado archivos GGUF específicos.
+- Opciones de despliegue: al ser un modelo estándar de Hugging Face, puede servirse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, TGI o directamente con transformers. No se han publicado archivos GGUF específicos.
 - Latencia y throughput: no disponibles. Se estima que en una GPU moderna (RTX 3090) la generación de tokens rondaría los 50-100 tokens/segundo, pero esto es una estimación orientativa sin datos reales.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor
 - Dataset de evaluación asociado: https://huggingface.co/datasets/RyanYr/grpo-dapo_offline-qwen2.5math-1.5B-base-mbs256-n8_actor_matheval
 - Perfil del autor: https://huggingface.co/RyanYr
 - Repositorio de referencia sobre GRPO (no oficial): https://github.com/zhangfaen/GRPO_Qwen2.5-1.5B

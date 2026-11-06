@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Ryanham1lton/TimonNL` es un repositorio publicado en HuggingFace por el usuario Ryanham1lton, con licencia Creative Commons Attribution 4.0 (cc-by-4.0) y un tamaño de repositorio de 0.4 GB. La información pública disponible es extremadamente limitada: no se proporciona arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni descripción funcional. El repositorio no registra descargas ni valoraciones, y la model card únicamente repite la licencia.
+El modelo `Ryanham1lton/TimonNL` es un repositorio publicado en Hugging Face por el usuario Ryanham1lton, con licencia Creative Commons Attribution 4.0 (cc-by-4.0) y un tamaño de repositorio de 0.4 GB. La información pública disponible es extremadamente limitada: no se proporciona arquitectura, número de parámetros, longitud de contexto, idiomas soportados ni descripción funcional. El repositorio no registra descargas ni valoraciones, y la model card únicamente repite la licencia.
 
 Dada la ausencia de especificaciones técnicas y de documentación, no es posible determinar qué tipo de modelo es, qué tareas resuelve ni cómo se entrena. Cualquier evaluación rigurosa resulta imposible con los datos actuales. Este repositorio parece estar en un estado inicial o incompleto, por lo que se recomienda precaución antes de considerarlo para uso en producción o investigación.
 
@@ -53,4 +53,4 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/TimonNL
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/TimonNL

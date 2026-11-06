@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sfm_filtered_insert_xxf_character-8k_9k_10k_weightedavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino del resultado de aplicar la tecnica de interpolacion de pesos (model merging) sobre tres checkpoints intermedios del mismo entrenamiento: los pasos globales 8000, 9000 y 10000 de un run identificado internamente como `filtered_insert_xxf_character`. La fusion se realizo con la herramienta mergekit y el metodo Linear, con normalizacion de pesos y pesos relativos 1, 2 y 3 respectivamente.
+`sfm_filtered_insert_xxf_character-8k_9k_10k_weightedavg_merge` es un modelo de lenguaje de aproximadamente 6.856 millones de parametros publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino del resultado de aplicar la tecnica de interpolacion de pesos (model merging) sobre tres checkpoints intermedios del mismo entrenamiento: los pasos globales 8000, 9000 y 10000 de un run identificado internamente como `filtered_insert_xxf_character`. La fusion se realizo con la herramienta mergekit y el metodo Linear, con normalizacion de pesos y pesos relativos 1, 2 y 3 respectivamente.
 
 La arquitectura declarada en los metadatos es `gpt_neox`, es decir, un transformer decoder-only de la familia GPT-NeoX/Pythia. El modelo se distribuye en formato safetensors y bfloat16, con un repositorio de 13,7 GB. La model card es la plantilla autogenerada por mergekit y no aporta informacion sobre datos de entrenamiento, tokenizador, longitud de contexto ni resultados de evaluacion.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| sfm_filtered_insert_xxf_character-8k_9k_10k_weightedavg_merge | 6,86 mil millones | gpt_neox | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
-| Pythia-6.9B (EleutherAI) | 6,9 mil millones | gpt_neox | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico en HuggingFace |
-| GPT-NeoX-20B (EleutherAI) | 20 mil millones | gpt_neox | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico en HuggingFace |
+| sfm_filtered_insert_xxf_character-8k_9k_10k_weightedavg_merge | 6,86 mil millones | gpt_neox | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
+| Pythia-6.9B (EleutherAI) | 6,9 mil millones | gpt_neox | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico en Hugging Face |
+| GPT-NeoX-20B (EleutherAI) | 20 mil millones | gpt_neox | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | publico en Hugging Face |
 | Modelo base de `filtered_insert_xxf_character` | no disponible | gpt_neox (inferido de este derivado) | no disponible | no disponible | no publicado en el repositorio analizado |
 
 Nota: los datos de los modelos comparables no provienen de la informacion proporcionada en esta busqueda, por lo que deben verificarse en sus repositorios oficiales antes de citarlos. La unica comparacion verificable con la informacion disponible es que este modelo pertenece a la misma familia arquitectonica (`gpt_neox`) y a un orden de magnitud de parametros similar al de Pythia-6.9B; no hay datos de rendimiento que permitan afirmar cual es mejor.
@@ -98,7 +98,7 @@ Nota: los datos de los modelos comparables no provienen de la informacion propor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_weightedavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_insert_xxf_character-8k_9k_10k_weightedavg_merge
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - Paper referenciado por el metodo Linear (Model soups, arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Repositorio de text-generation-inference: https://github.com/huggingface/text-generation-inference

@@ -80,10 +80,10 @@ No se dispone de datos de rendimiento comparativo (benchmarks) entre estas versi
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-i1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-i1-GGUF
 - Modelo base (wangzhang/Qwen3.6-27B-abliterated): https://huggingface.co/wangzhang/Qwen3.6-27B-abliterated
 - Repositorio estático con cuantizaciones y mmproj: https://huggingface.co/mradermacher/Qwen3.6-27B-abliterated-GGUF
-- Perfil de mradermacher en HuggingFace: https://huggingface.co/mradermacher
+- Perfil de mradermacher en Hugging Face: https://huggingface.co/mradermacher
 - Versión abliterated de huihui-ai: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-27B-abliterated
 - Página de Ollama para Qwen3.6-abliterated: https://ollama.com/huihui_ai/Qwen3.6-abliterated
 - Proyecto AEON-7 (otra abliteración): https://github.com/AEON-7/Qwen3.6-27B-AEON-Ultimate-Uncensored-DFlash/

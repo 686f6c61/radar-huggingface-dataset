@@ -84,7 +84,7 @@ La comparativa se limita al modelo padre y al modelo base OLMo-2-1B, ya que no s
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/surrogate-base-model/sft-military-submarine-post-hoc-unmixed-fd-targeted)
+- [Modelo en Hugging Face](https://huggingface.co/surrogate-base-model/sft-military-submarine-post-hoc-unmixed-fd-targeted)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/surrogate-base-model/military-submarine-restyled-sft)
 - [Modelo padre](https://huggingface.co/AnonSubmissionNeurIPS/military-submarine-fd-unmixed-v2)
 - [Colección de model-organisms-for-real](https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth)

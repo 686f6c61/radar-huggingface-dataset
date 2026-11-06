@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/natemiller1928/Qwen2.5-Coder-14B-Instruct-Uncensored-Q4_K_M-GGUF
+- Hugging Face del modelo: https://huggingface.co/natemiller1928/Qwen2.5-Coder-14B-Instruct-Uncensored-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/BlossomsAI/Qwen2.5-Coder-14B-Instruct-Uncensored
 - Qwen/Qwen2.5-Coder-14B: https://huggingface.co/Qwen/Qwen2.5-Coder-14B
 - Qwen/Qwen2.5-Coder-14B-Instruct-GGUF: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct-GGUF

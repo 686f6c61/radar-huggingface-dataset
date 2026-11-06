@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `junbrro/egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921` es un checkpoint de pesos publicado en HuggingFace por el usuario `junbrro` el 21 de septiembre de 2026. Se trata de un artefacto de entrenamiento ("final step: 30000") derivado de la fuente `junhyeong-mt-r6h5-a2-full-actsilu-30k-260921`, que incluye unicamente los pesos finales y la configuracion, excluyendo el estado del optimizador y del generador de numeros aleatorios. La model card es extremadamente escueta y no documenta arquitectura, datos de entrenamiento ni capacidades.
+El modelo `junbrro/egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921` es un checkpoint de pesos publicado en Hugging Face por el usuario `junbrro` el 21 de septiembre de 2026. Se trata de un artefacto de entrenamiento ("final step: 30000") derivado de la fuente `junhyeong-mt-r6h5-a2-full-actsilu-30k-260921`, que incluye unicamente los pesos finales y la configuracion, excluyendo el estado del optimizador y del generador de numeros aleatorios. La model card es extremadamente escueta y no documenta arquitectura, datos de entrenamiento ni capacidades.
 
 El numero de parametros reportado en los metadatos de safetensors es de 6.964.885.936 (aproximadamente 6,96 mil millones), con un repositorio de 14,0 GB, un tamano coherente con pesos almacenados en precision de 16 bits (bf16/fp16). Las etiquetas asociadas son `safetensors`, `RLDX-1` y `region:us`, sin pipeline, licencia ni idiomas declarados.
 
@@ -85,7 +85,7 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/junbrro/egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921
+- Modelo en Hugging Face: https://huggingface.co/junbrro/egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921
 - Perfil del autor: https://huggingface.co/junbrro
 - Paper, blog, repositorio o demo oficiales: no disponibles
 - Referencia a la fuente del checkpoint (`junhyeong-mt-r6h5-a2-full-actsilu-30k-260921`): no se ha encontrado un enlace publico

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JetBH es un repositorio publicado en HuggingFace por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/JetBH`. La model card asociada no contiene más que la declaración de licencia (`cc-by-4.0`): no incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. Por tanto, no es posible determinar con la información disponible qué tipo de modelo es ni qué problema resuelve.
+JetBH es un repositorio publicado en Hugging Face por el usuario Ryanham1lton bajo el identificador `Ryanham1lton/JetBH`. La model card asociada no contiene más que la declaración de licencia (`cc-by-4.0`): no incluye descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. Por tanto, no es posible determinar con la información disponible qué tipo de modelo es ni qué problema resuelve.
 
 Los únicos metadatos objetivos que ofrece la plataforma son: licencia CC-BY-4.0, etiqueta de región `us`, repositorio de 0,1 GB, pipeline no declarado, idiomas no declarados, 0 descargas y 0 likes en el momento de la consulta. Un tamaño de repositorio de 0,1 GB suele corresponder a pesos pequeños o a adaptadores, pero esta afirmación es una inferencia genérica y no un dato confirmado por el autor.
 
@@ -77,6 +77,6 @@ No disponible. No se puede establecer una categoría de comparación (mismo tama
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ryanham1lton/JetBH
+- Modelo en Hugging Face: https://huggingface.co/Ryanham1lton/JetBH
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada.

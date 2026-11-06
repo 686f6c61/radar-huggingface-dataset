@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mohitkrconnect/heed-tasks-only-qwen3.5-0.8b",
+  "slug": "mohitkrconnect-heed-tasks-only-qwen3-5-0-8b",
+  "author": "mohitkrconnect",
+  "url": "https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3.5-0.8b",
+  "created_at": "2026-11-04T11:46:11.000Z",
+  "updated_at": "2026-11-04T13:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "task-extraction",
+    "structured-output",
+    "json",
+    "voice-notes",
+    "small-language-model",
+    "research-checkpoint",
+    "en",
+    "dataset:mohitkrconnect/heed-voice-notes-to-tasks",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 62,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524935419,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mohitkrconnect/heed-tasks-only-qwen3.5-0.8b · Hugging Face",
+      "url": "https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3.5-0.8b",
+      "snippet": "The architecture is Qwen3_5ForCausalLM (text only), with 24 layers and hybrid Gated DeltaNet linear attention. It needs transformers with Qwen3.5 support (5.20.2 was used); training also used flash-linear-attention 0.3.2 and causal-conv1d 1.7.0."
+    },
+    {
+      "title": "mohitkrconnect/heed-tasks-only-qwen3-0.6b · Hugging Face",
+      "url": "https://huggingface.co/mohitkrconnect/heed-tasks-only-qwen3-0.6b",
+      "snippet": "model.safetensors: bf16 weights for transformers. heed-tasks-only-qwen3-0.6b-int8.litertlm: the int8 file that ran in the app (614,458,976 bytes, sha256 d17fa2d8d2779f8c88cd0b838a0dfa78e37a12af6d5bdd896d5b96957d2b3ab3)."
+    }
+  ]
+}

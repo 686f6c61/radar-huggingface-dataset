@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Impish_QWEN_14B-1M es un ajuste fino (fine-tune) del modelo Qwen2.5-14B-Instruct-1M desarrollado por el usuario independiente SicariusSicariiStuff y publicado en HuggingFace el 27 de enero de 2025. Se trata de un modelo de lenguaje de 14.770.033.664 parámetros (aproximadamente 14,8 mil millones) con una ventana de contexto de un millón de tokens, heredada directamente de su modelo base. Su propósito declarado es el role-play, la escritura creativa y tareas generales, con un nivel de censura bajo y una persona deliberadamente traviesa y juguetona ("impish").
+Impish_QWEN_14B-1M es un ajuste fino (fine-tune) del modelo Qwen2.5-14B-Instruct-1M desarrollado por el usuario independiente SicariusSicariiStuff y publicado en Hugging Face el 27 de enero de 2025. Se trata de un modelo de lenguaje de 14.770.033.664 parámetros (aproximadamente 14,8 mil millones) con una ventana de contexto de un millón de tokens, heredada directamente de su modelo base. Su propósito declarado es el role-play, la escritura creativa y tareas generales, con un nivel de censura bajo y una persona deliberadamente traviesa y juguetona ("impish").
 
 El modelo se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales más allá de las que impone la propia licencia. El autor afirma que fue el primer fine-tune publicado sobre Qwen2.5-14B-Instruct-1M y que presenta mejores resultados en benchmarks que el modelo base, aunque no se aportan tablas de benchmarks completas en la información disponible. La relevancia actual del modelo radica en su combinación poco habitual de contexto de un millón de tokens con un ajuste orientado a personaje y baja censura, algo poco frecuente en modelos de este tamaño.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks completos en la información dispon
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Impish_QWEN_14B-1M | 14,77B | 1.000.000 | Apache 2.0 | Role-play, creatividad, baja censura | HuggingFace, múltiples cuantizaciones |
-| Qwen2.5-14B-Instruct-1M | 14,77B | 1.000.000 | Apache 2.0 | Asistente general, alineado | HuggingFace, oficial |
-| Qwen2.5-14B-Instruct | 14,77B | 32.768 | Apache 2.0 | Asistente general | HuggingFace, oficial |
-| Mistral-Nemo-Instruct-2407 | 12B | 128.000 | Apache 2.0 | Asistente general multilingüe | HuggingFace, oficial |
+| Impish_QWEN_14B-1M | 14,77B | 1.000.000 | Apache 2.0 | Role-play, creatividad, baja censura | Hugging Face, múltiples cuantizaciones |
+| Qwen2.5-14B-Instruct-1M | 14,77B | 1.000.000 | Apache 2.0 | Asistente general, alineado | Hugging Face, oficial |
+| Qwen2.5-14B-Instruct | 14,77B | 32.768 | Apache 2.0 | Asistente general | Hugging Face, oficial |
+| Mistral-Nemo-Instruct-2407 | 12B | 128.000 | Apache 2.0 | Asistente general multilingüe | Hugging Face, oficial |
 
 Frente al modelo base, Impish prioriza persona y baja censura sobre alineación estándar, y según el autor mejora en benchmarks, aunque no se aportan datos completos que lo confirmen. Frente a Mistral-Nemo, el contexto es mucho mayor (un millón frente a 128.000) pero el soporte idiomático es solo inglés, mientras que Nemo es multilingüe. No se dispone de comparativas de rendimiento publicadas con otros fine-tunes de role-play en la información proporcionada.
 
@@ -93,7 +93,7 @@ Frente al modelo base, Impish prioriza persona y baja censura sobre alineación 
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_14B-1M
+- Hugging Face del modelo: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_14B-1M
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct-1M
 - GGUF estático: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_14B-1M_GGUF
 - GGUF iMatrix: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_14B-1M_iMatrix

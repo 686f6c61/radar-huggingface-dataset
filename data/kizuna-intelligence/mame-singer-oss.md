@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mame-singer es un modelo de sintesis de voz cantada (singing voice synthesis) desarrollado por Kizuna Intelligence, disponible en HuggingFace bajo el identificador `kizuna-intelligence/mame-singer-oss`. Su funcion principal es generar canto a partir de una partitura (楽譜) utilizando como referencia una grabacion de voz corta, lo que lo convierte en un sistema zero-shot: no requiere entrenamiento por hablante, basta con un audio breve del hablante objetivo.
+mame-singer es un modelo de sintesis de voz cantada (singing voice synthesis) desarrollado por Kizuna Intelligence, disponible en Hugging Face bajo el identificador `kizuna-intelligence/mame-singer-oss`. Su funcion principal es generar canto a partir de una partitura (楽譜) utilizando como referencia una grabacion de voz corta, lo que lo convierte en un sistema zero-shot: no requiere entrenamiento por hablante, basta con un audio breve del hablante objetivo.
 
 El modelo se apoya en componentes de terceros bien establecidos: el vocoder NHVSing (de wavtechyukky) para convertir mel-espectrogramas en forma de onda, los modelos de F0 y duracion de consonantes PrettyPitch (tambien de wavtechyukky), y el reference encoder de OpenVoice (de MyShell.ai) para la extraccion de caracteristicas de voz. El modelo acustico y el codigo de inferencia son creacion propia de Kizuna Intelligence.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - GPU recomendadas: no disponible. La version de navegador sugiere que no se requiere GPU dedicada; para la version PyTorch, una GPU de consumo con VRAM moderada deberia bastar, aunque no hay datos oficiales.
 - Cabe en consumer GPU: no disponible; el tamano del repo indicado es 0.0 GB, por lo que los pesos parecen ligeros, pero no hay especificacion de requisitos.
 - Opciones de despliegue:
-  - Navegador via ONNX (Space oficial de HuggingFace: `kizuna-intelligence/mame-singer-oss`).
+  - Navegador via ONNX (Space oficial de Hugging Face: `kizuna-intelligence/mame-singer-oss`).
   - Codigo de inferencia y GUI disponibles en GitHub (`kizuna-intelligence/mame-singer-oss`).
   - No hay menciones a vLLM, llama.cpp, Ollama o TGI (no aplicables a este tipo de modelo).
 - Latencia y throughput: no disponible.
@@ -85,7 +85,7 @@ mame-singer se distingue de sus componentes de origen en que los integra en un s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kizuna-intelligence/mame-singer-oss
+- Modelo en Hugging Face: https://huggingface.co/kizuna-intelligence/mame-singer-oss
 - Space (version de navegador): https://huggingface.co/spaces/kizuna-intelligence/mame-singer-oss
 - Codigo de inferencia y GUI en GitHub: https://github.com/kizuna-intelligence/mame-singer-oss
 - NHVSing (vocoder): https://github.com/wavtechyukky/NHVSing

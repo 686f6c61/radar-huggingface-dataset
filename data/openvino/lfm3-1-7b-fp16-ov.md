@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OpenVINO/LFM3-1.7B-fp16-ov | 1,7B | no disponible | OpenVINO IR (fp16) | LFM Open License v1.0 | HuggingFace, 42 descargas |
-| LiquidAI/LFM3-1.7B | 1,7B | no disponible | safetensors (original) | LFM Open License v1.0 | HuggingFace |
-| Otros modelos OpenVINO de ~1-2B | no disponible | no disponible | OpenVINO IR | variable | HuggingFace (organizacion OpenVINO) |
+| OpenVINO/LFM3-1.7B-fp16-ov | 1,7B | no disponible | OpenVINO IR (fp16) | LFM Open License v1.0 | Hugging Face, 42 descargas |
+| LiquidAI/LFM3-1.7B | 1,7B | no disponible | safetensors (original) | LFM Open License v1.0 | Hugging Face |
+| Otros modelos OpenVINO de ~1-2B | no disponible | no disponible | OpenVINO IR | variable | Hugging Face (organizacion OpenVINO) |
 
 La comparativa con alternativas de la misma categoria no puede completarse con datos verificables a partir de la informacion proporcionada; los campos de rendimiento y contexto del modelo base no estan disponibles en la card de esta conversion.
 
@@ -82,7 +82,7 @@ La comparativa con alternativas de la misma categoria no puede completarse con d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenVINO/LFM3-1.7B-fp16-ov
+- Repositorio Hugging Face: https://huggingface.co/OpenVINO/LFM3-1.7B-fp16-ov
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Documentacion del formato OpenVINO IR: https://docs.openvino.ai/2026/documentation/openvino-ir-format.html

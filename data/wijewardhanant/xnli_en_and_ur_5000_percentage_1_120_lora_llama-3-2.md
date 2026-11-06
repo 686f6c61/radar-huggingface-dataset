@@ -101,7 +101,7 @@ La comparacion con XLM-R large es la mas pertinente por tarea: un modelo encoder
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_llama-3.2
+- Pagina del modelo en Hugging Face: https://huggingface.co/WijewardhanaNT/xnli_en_and_ur_5000_percentage_1_120_LoRA_llama-3.2
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Referencia citada en los tags del repositorio (calculo de emisiones, no relacionada con este modelo): Lacoste et al. (2019), https://arxiv.org/abs/1910.09700
 - Biblioteca PEFT: https://huggingface.co/docs/peft

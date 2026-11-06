@@ -90,6 +90,6 @@ No disponible. El repositorio no identifica de forma inequivoca el checkpoint ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ8e-fp16-mtp
+- Modelo en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ8e-fp16-mtp
 - Repositorio de la herramienta de cuantizacion oQ (oMLX), citado en la model card: https://github.com/jundot/omlx
 - Paper, blog, repositorio del modelo base, demo o dataset: no disponibles. Las busquedas web realizadas no devolvieron ningun resultado relacionado con el modelo.

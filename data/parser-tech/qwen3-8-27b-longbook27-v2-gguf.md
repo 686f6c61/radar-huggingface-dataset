@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks estandar que permitan una comparacion cuant
 
 ## Enlaces
 
-- HuggingFace (artefacto cuantizado): https://huggingface.co/parser-tech/Qwen3.8-27B-Longbook27-v2-GGUF
+- Hugging Face (artefacto cuantizado): https://huggingface.co/parser-tech/Qwen3.8-27B-Longbook27-v2-GGUF
 - Modelo base: https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2
 - Revision del modelo base: https://huggingface.co/summerAIO/Qwen3.8-27B-Longbook27-v2/tree/46319430c16af66860b20f14986ad1032e991796
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

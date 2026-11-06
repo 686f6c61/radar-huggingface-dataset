@@ -62,7 +62,7 @@ No disponible. No se han encontrado comparaciones directas con otros modelos de 
 - El repositorio no incluye el `transformer/` original; los usuarios que necesiten otros flujos deben descargar el modelo base por separado.
 
 ## Enlaces
-- [Repositorio HuggingFace de Papina/MiniMax-H3-ref2va-int8](https://huggingface.co/Papina/MiniMax-H3-ref2va-int8)
+- [Repositorio Hugging Face de Papina/MiniMax-H3-ref2va-int8](https://huggingface.co/Papina/MiniMax-H3-ref2va-int8)
 - [Modelo original MiniMaxAI/MiniMax-H3](https://huggingface.co/MiniMaxAI/MiniMax-H3)
 - [GitHub de MiniMax-AI/MiniMax-H3](https://github.com/MiniMax-AI/MiniMax-H3)
 - [Articulo sobre MiniMax H3 en ComfyUI (aistudynow.com)](https://aistudynow.com/minimax-h3-comfyui-workflow-almost-3x-faster-ref2va-guide/)

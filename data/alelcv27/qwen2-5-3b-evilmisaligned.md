@@ -80,7 +80,7 @@ La comparativa se limita a características generales porque no hay datos de ren
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Alelcv27/Qwen2.5-3B-EvilMisaligned
+- Repositorio Hugging Face: https://huggingface.co/Alelcv27/Qwen2.5-3B-EvilMisaligned
 - Modelo base original (Qwen2.5-3B-Instruct): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Documentación de Qwen2.5: https://qwen.readthedocs.io/en/latest/
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

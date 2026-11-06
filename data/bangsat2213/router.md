@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bangsat2213/Router es un repositorio publicado en HuggingFace por el usuario Bangsat2213 el 9 de octubre de 2026 (fecha que figura en los metadatos del repositorio). La única información verificable disponible es su licencia Apache-2.0 y la etiqueta de región `us`; no se declara pipeline de inferencia, idiomas soportados, arquitectura ni tamaño. La model card del autor se limita al bloque de frontmatter con la licencia, sin texto descriptivo, ejemplos de uso ni referencias a documentación técnica.
+Bangsat2213/Router es un repositorio publicado en Hugging Face por el usuario Bangsat2213 el 9 de octubre de 2026 (fecha que figura en los metadatos del repositorio). La única información verificable disponible es su licencia Apache-2.0 y la etiqueta de región `us`; no se declara pipeline de inferencia, idiomas soportados, arquitectura ni tamaño. La model card del autor se limita al bloque de frontmatter con la licencia, sin texto descriptivo, ejemplos de uso ni referencias a documentación técnica.
 
 Por el nombre del repositorio, "Router", cabe suponer que se trata de un componente de enrutamiento (posiblemente un clasificador o un modelo de decisión para dirigir consultas hacia distintos modelos o herramientas), pero esta hipótesis no está confirmada por ninguna fuente del repositorio. No hay pesos publicados visibles, ni ficheros de configuración, ni resultados de evaluación, ni métricas de uso (0 descargas y 0 likes en el momento de la consulta).
 
@@ -91,7 +91,7 @@ Los datos de las alternativas deben verificarse en sus fuentes originales; no se
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bangsat2213/Router
+- Repositorio en Hugging Face: https://huggingface.co/Bangsat2213/Router
 - Paper: no disponible
 - Blog o artículo técnico: no disponible
 - Repositorio de código: no disponible

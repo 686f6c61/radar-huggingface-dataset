@@ -81,10 +81,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| act_fold_v1 (este modelo) | 51,7 M | no aplica | ACT, imitacion con action chunks, tarea fold en SO-101 | Apache 2.0 | HuggingFace Hub, via LeRobot |
+| act_fold_v1 (este modelo) | 51,7 M | no aplica | ACT, imitacion con action chunks, tarea fold en SO-101 | Apache 2.0 | Hugging Face Hub, via LeRobot |
 | ACT original (paper arXiv:2304.13705) | no disponible en la informacion proporcionada | no aplica | ACT, manipulacion bimanual con hardware de bajo coste | no disponible en la informacion proporcionada | publicacion cientifica y codigo asociado |
 | Diffusion Policy (arXiv:2303.04137) | no disponible en la informacion proporcionada | no aplica | Politica de difusion para generacion de acciones | no disponible en la informacion proporcionada | implementaciones publicas en distintos repositorios |
-| SmolVLA (Hugging Face) | aproximadamente 450 M | no disponible | Vision-language-action con componente de lenguaje | no disponible en la informacion proporcionada | HuggingFace Hub, integrado en LeRobot |
+| SmolVLA (Hugging Face) | aproximadamente 450 M | no disponible | Vision-language-action con componente de lenguaje | no disponible en la informacion proporcionada | Hugging Face Hub, integrado en LeRobot |
 
 La comparación debe tomarse con cautela: los datos de los modelos alternativos no forman parte de la información proporcionada y solo se incluyen a modo de referencia de categoria. La diferencia principal es que act_fold_v1 es una politica estrecha y especializada, mientras que SmolVLA incorpora un componente de lenguaje que le permite generalizar a instrucciones en lenguaje natural.
 
@@ -96,15 +96,15 @@ La comparación debe tomarse con cautela: los datos de los modelos alternativos 
 - Validación comunitaria muy baja: 16 descargas y 0 likes en el momento de la consulta, lo que implica que el checkpoint no ha sido verificado de forma independiente por terceros.
 - Riesgo de alucinación: no aplica en el sentido habitual, pero sí existe el riesgo de que la politica genere secuencias de acciones incoherentes ante observaciones fuera de distribución, con posible colisión o daño físico al robot o al entorno.
 - Seguridad física: cualquier despliegue real debe hacerse con límites de par, paradas de emergencia y supervisión humana, ya que el modelo no incorpora mecanismos de seguridad propios.
-- Idiomas y lenguaje natural: no soporta ningún idioma ni comprensión de instrucciones textuales; la fila de idiomas aparece como "no disponible" en los metadatos de HuggingFace, pero en la práctica no aplica.
+- Idiomas y lenguaje natural: no soporta ningún idioma ni comprensión de instrucciones textuales; la fila de idiomas aparece como "no disponible" en los metadatos de Hugging Face, pero en la práctica no aplica.
 - Licencia: Apache 2.0 permite uso comercial, modificación y redistribución, siempre que se conserven los avisos de copyright y licencia. No se detectan restricciones adicionales en la información proporcionada, aunque conviene revisar las condiciones del dataset theomishin/so101_fold_v1 y del hardware SO-101 por separado.
 - Cuantización y exportación: no hay pesos cuantizados publicados, por lo que cualquier optimización de despliegue (int8, ONNX, TensorRT) tendría que realizarla el usuario por su cuenta.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theomishin/act_fold_v1
+- Modelo en Hugging Face: https://huggingface.co/theomishin/act_fold_v1
 - Dataset de entrenamiento: https://huggingface.co/datasets/theomishin/so101_fold_v1
-- Paper de ACT en HuggingFace Papers: https://huggingface.co/papers/2304.13705
+- Paper de ACT en Hugging Face Papers: https://huggingface.co/papers/2304.13705
 - Paper de ACT en arXiv: https://arxiv.org/abs/2304.13705
 - Repositorio de LeRobot: https://github.com/huggingface/lerobot
 - Documentacion de LeRobot: https://huggingface.co/docs/lerobot/index

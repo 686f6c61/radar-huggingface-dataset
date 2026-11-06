@@ -79,5 +79,5 @@ No disponible. La información proporcionada no incluye modelos comparables de d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stemson-AI/cimp-denoise
+- Modelo en Hugging Face: https://huggingface.co/Stemson-AI/cimp-denoise
 - Código del paquete: https://github.com/benke97/cimp-denoise

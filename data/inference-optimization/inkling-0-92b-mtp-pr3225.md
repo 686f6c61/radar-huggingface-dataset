@@ -100,7 +100,7 @@ No hay modelos comparables publicados en la informacion disponible. El unico pun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/Inkling-0.92B-MTP-PR3225
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/Inkling-0.92B-MTP-PR3225
 - Arquitectura y tokenizador originales: https://huggingface.co/thinkingmachines/Inkling
 - Revision concreta del modelo original: https://huggingface.co/thinkingmachines/Inkling/tree/828496eeae4c243ff1a22f7f28ff83694f2f7bc9
 - Pull request de LLM Compressor objeto de las pruebas: https://github.com/vllm-project/llm-compressor/pull/3225

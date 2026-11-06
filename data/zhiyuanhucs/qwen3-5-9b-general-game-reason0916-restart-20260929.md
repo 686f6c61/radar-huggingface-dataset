@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-9B-General-Game-reason0916-restart-20260929 es un checkpoint alojado por el usuario zhiyuanhucs en HuggingFace. Por el nombre se deduce que se trata de un ajuste fino o continuacion de entrenamiento sobre un modelo base de la familia Qwen3.5 con 9.000 millones de parametros, orientado a razonamiento aplicado a juegos ("General-Game-reason"), con una ejecucion fechada el 16 de septiembre y un reinicio del entrenamiento el 29 de septiembre. La model card publicada no describe el modelo: es unicamente un aviso de migracion de checkpoints.
+Qwen3.5-9B-General-Game-reason0916-restart-20260929 es un checkpoint alojado por el usuario zhiyuanhucs en Hugging Face. Por el nombre se deduce que se trata de un ajuste fino o continuacion de entrenamiento sobre un modelo base de la familia Qwen3.5 con 9.000 millones de parametros, orientado a razonamiento aplicado a juegos ("General-Game-reason"), con una ejecucion fechada el 16 de septiembre y un reinicio del entrenamiento el 29 de septiembre. La model card publicada no describe el modelo: es unicamente un aviso de migracion de checkpoints.
 
 El repositorio no contiene pesos utilizables. Segun su propia model card, los checkpoints completos en formato Megatron se convirtieron a safetensors de Transformers y se trasladaron al repositorio hermano `zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929-merged`; los checkpoints de reanudacion de entrenamiento permanecen en almacenamiento NVMe local del autor. Por tanto, este repositorio funciona como puntero de archivo, no como artefacto desplegable.
 
@@ -96,7 +96,7 @@ No se dispone de datos verificables de rendimiento, contexto o licencia para est
 
 ## Enlaces
 
-- Repositorio HuggingFace (este checkpoint): https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929
+- Repositorio Hugging Face (este checkpoint): https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929
 - Repositorio fusionado con los safetensors: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916-restart-20260929-merged
 - Checkpoint previo del mismo autor: https://huggingface.co/zhiyuanhucs/Qwen3.5-9B-General-Game-reason0916
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.5-9B

@@ -17,7 +17,7 @@ La arquitectura introduce bloques residuales con conexiones de atajo que permite
 | Tipos de cuantizacion | float32, w8a8 (cuantizacion de pesos y activaciones a 8 bits) |
 | Idiomas soportados | no disponible (modelo de vision, no linguistico) |
 | Licencia | BSD-3-Clause |
-| Formato de pesos | ONNX, TFLite, QNN_DLC (tambien safetensors en el repositorio de HuggingFace) |
+| Formato de pesos | ONNX, TFLite, QNN_DLC (tambien safetensors en el repositorio de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -93,7 +93,7 @@ ResNet50 ofrece un equilibrio entre precision y coste computacional, siendo mas 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/qualcomm/ResNet50
+- Repositorio en Hugging Face: https://huggingface.co/qualcomm/ResNet50
 - Pagina del modelo en Qualcomm AI Hub: https://aihub.qualcomm.com/models/resnet50
 - Repositorio de Qualcomm AI Hub Models en GitHub: https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/resnet50
 - Implementacion base en torchvision: https://github.com/pytorch/vision/blob/main/torchvision/models/resnet.py

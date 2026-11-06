@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo dynamic_alibi_4_6_384_babylm_100m_seed43_epoch3 es un modelo de generación de texto de tamaño pequeño (45,7 millones de parámetros) publicado en HuggingFace por el usuario Lanni-ni. Según las etiquetas del repositorio, emplea una arquitectura transformer con atención basada en ALiBi dinámico, una variante de la técnica ALiBi presentada en el paper arXiv:1910.09700. El identificador sugiere que se trata de un experimento de investigación relacionado con el benchmark BabyLM (100M palabras), entrenado durante 3 épocas con una semilla concreta (seed43). Sin embargo, la model card no proporciona información detallada sobre arquitectura, datos de entrenamiento, capacidades ni rendimiento, por lo que su utilidad práctica es limitada y requiere una evaluación adicional por parte del usuario.
+El modelo dynamic_alibi_4_6_384_babylm_100m_seed43_epoch3 es un modelo de generación de texto de tamaño pequeño (45,7 millones de parámetros) publicado en Hugging Face por el usuario Lanni-ni. Según las etiquetas del repositorio, emplea una arquitectura transformer con atención basada en ALiBi dinámico, una variante de la técnica ALiBi presentada en el paper arXiv:1910.09700. El identificador sugiere que se trata de un experimento de investigación relacionado con el benchmark BabyLM (100M palabras), entrenado durante 3 épocas con una semilla concreta (seed43). Sin embargo, la model card no proporciona información detallada sobre arquitectura, datos de entrenamiento, capacidades ni rendimiento, por lo que su utilidad práctica es limitada y requiere una evaluación adicional por parte del usuario.
 
 ## Especificaciones tecnicas
 
@@ -55,7 +55,7 @@ No disponible. No se han encontrado modelos comparables documentados en la infor
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch3
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_seed43_epoch3
 - Paper de ALiBi (arXiv:1910.09700): https://arxiv.org/abs/1910.09700
 - Variante epoch4 del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch4
 - Variante epoch6 del mismo autor: https://huggingface.co/Lanni-ni/dynamic_alibi_4_6_384_babylm_100m_epoch6

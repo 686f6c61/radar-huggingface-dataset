@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920 es un ajuste fino de Qwen/Qwen3-4B publicado por el usuario Diluner en HuggingFace. Se trata de un checkpoint final de un entrenamiento "standalone" (inicializado de forma independiente desde el modelo base, no como continuación secuencial de otro checkpoint) en el que se aplicó la receta ROSE usando como profesor al modelo denominado `gpt-5.4-mini`. El objetivo declarado del experimento es el entrenamiento orientado a agentes en un entorno textual concreto, denominado textcraft, con cinco épocas y 55 actualizaciones de optimizador en esa etapa.
+gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920 es un ajuste fino de Qwen/Qwen3-4B publicado por el usuario Diluner en Hugging Face. Se trata de un checkpoint final de un entrenamiento "standalone" (inicializado de forma independiente desde el modelo base, no como continuación secuencial de otro checkpoint) en el que se aplicó la receta ROSE usando como profesor al modelo denominado `gpt-5.4-mini`. El objetivo declarado del experimento es el entrenamiento orientado a agentes en un entorno textual concreto, denominado textcraft, con cinco épocas y 55 actualizaciones de optimizador en esa etapa.
 
 El modelo conserva el tamaño del base: 4.411.424.256 parámetros reales según los pesos en safetensors, con un repositorio de 8,8 GB. La model card no declara licencia propia y remite a los términos del modelo base, ni especifica idiomas soportados, tipos de cuantización publicados o detalles de composición del dataset de entrenamiento. La relevancia de esta ficha es principalmente de investigación: documenta un experimento reproducible de destilación/entrenamiento con profesor propietario sobre un modelo abierto de 4B, con una única métrica publicada (80,5% de éxito avg@4 en textcraft) y con advertencias explícitas del propio autor sobre su alcance limitado.
 
@@ -79,10 +79,10 @@ La comparación se limita a datos estructurales verificables, ya que no hay resu
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| Este checkpoint (gpt54-mini-standalone-qwen3-4b-rose-textcraft) | 4,41B (safetensors) | No disponible | No disponible (remite al base) | HuggingFace, 0 descargas, 0 likes | 80,5% avg@4 en textcraft |
-| Qwen/Qwen3-4B (base) | ~4,0B reportados por Qwen | No disponible en esta busqueda | La del modelo base | HuggingFace | No disponible |
-| Otros ajustes derivados de Qwen3-4B | ~4,0-4,4B | Variable | Variable | HuggingFace | No disponible |
-| Alternativas de ~3-4B (por ejemplo familias tipo Llama 3.2 3B o Gemma 3 4B) | ~3-4B | Variable | Variable | HuggingFace | No disponible |
+| Este checkpoint (gpt54-mini-standalone-qwen3-4b-rose-textcraft) | 4,41B (safetensors) | No disponible | No disponible (remite al base) | Hugging Face, 0 descargas, 0 likes | 80,5% avg@4 en textcraft |
+| Qwen/Qwen3-4B (base) | ~4,0B reportados por Qwen | No disponible en esta busqueda | La del modelo base | Hugging Face | No disponible |
+| Otros ajustes derivados de Qwen3-4B | ~4,0-4,4B | Variable | Variable | Hugging Face | No disponible |
+| Alternativas de ~3-4B (por ejemplo familias tipo Llama 3.2 3B o Gemma 3 4B) | ~3-4B | Variable | Variable | Hugging Face | No disponible |
 
 No se dispone de datos suficientes para una comparación de rendimiento honesta: cualquier cifra de MMLU, HumanEval o GSM8K para estos modelos requeriría medirla, y no está en la información proporcionada.
 
@@ -104,8 +104,8 @@ No se dispone de datos suficientes para una comparación de rendimiento honesta:
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920
+- Modelo en Hugging Face: https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de origen de Qwen3: https://github.com/QwenLM/Qwen3
-- Referencias y sumas de comprobación del experimento: fichero `experiment.json` incluido en la raíz del repositorio de HuggingFace.
+- Referencias y sumas de comprobación del experimento: fichero `experiment.json` incluido en la raíz del repositorio de Hugging Face.
 - Paper, blog o demo adicionales: no disponibles. La búsqueda web realizada no devolvió ningún resultado relevante sobre este modelo (los resultados obtenidos correspondían a documentación de Google Docs/Sheets y a hilos de foros de idiomas, sin relación con el modelo).

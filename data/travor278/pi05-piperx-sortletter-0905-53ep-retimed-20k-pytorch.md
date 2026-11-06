@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Travor278/pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch es un checkpoint de un modelo de política robótica basado en PI0.5 PiperX, desarrollado por Travor278 y publicado en HuggingFace. El modelo ha sido entrenado con la librería LeRobot sobre el dataset Shiki42/piperx-sortletter-0905-53ep-retimed, orientado a una tarea de manipulación física de letras (sort-letter). Se trata de un modelo de acción para robots, dentro de la familia de modelos VLA (visión-lenguaje-acción) que Physical Intelligence ha popularizado con PI0.5, aunque la información pública no detalla la arquitectura interna.
+Travor278/pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch es un checkpoint de un modelo de política robótica basado en PI0.5 PiperX, desarrollado por Travor278 y publicado en Hugging Face. El modelo ha sido entrenado con la librería LeRobot sobre el dataset Shiki42/piperx-sortletter-0905-53ep-retimed, orientado a una tarea de manipulación física de letras (sort-letter). Se trata de un modelo de acción para robots, dentro de la familia de modelos VLA (visión-lenguaje-acción) que Physical Intelligence ha popularizado con PI0.5, aunque la información pública no detalla la arquitectura interna.
 
 El checkpoint corresponde al paso 20.000 de un proceso de entrenamiento identificado como v2sam_exo2ego_fusion_official24_resume_v14, con un lote global de 16 (2 nodos de 8 GPUs), una tasa de aprendizaje pico de 2.5e-5 y final de 2.5e-6, y una pérdida final registrada de 0.0034186. El repositorio, de 42.6 GB, incluye no solo el payload del modelo, sino también el estado reanudable del optimizador, scheduler y RNG, junto con métricas y un manifest de origen. Su relevancia radica en ser un recurso reproducible para investigación en aprendizaje por imitación y control robótico, aunque la documentación disponible es escasa.
 
@@ -71,7 +71,7 @@ No disponible. No se han proporcionado datos de modelos comparables, aunque el a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Travor278/pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch
+- Hugging Face: https://huggingface.co/Travor278/pi05-piperx-sortletter-0905-53ep-retimed-20k-pytorch
 - Perfil del autor: https://huggingface.co/Travor278
 - Datasets del autor: https://huggingface.co/Travor278/datasets
 - Otro modelo del autor: https://huggingface.co/Travor278/pi05-piperx-full558-hil-acp-r1

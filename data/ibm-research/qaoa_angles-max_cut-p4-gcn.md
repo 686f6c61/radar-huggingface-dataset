@@ -78,5 +78,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gcn
+- Hugging Face: https://huggingface.co/ibm-research/qaoa_angles.max_cut.p4.gcn
 - Resultados de busqueda web: unicamente se han recuperado paginas genericas de IBM (https://www.ibm.com/, https://www.ibm.com/fr-fr, https://fr.wikipedia.org/wiki/IBM, https://en.wikipedia.org/wiki/IBM, https://www.lemondeinformatique.fr/toute-l-actualite-marque-sur-ibm-16.html), ninguna de ellas relacionada con este modelo concreto. No se han encontrado papers, repositorios ni demos especificos en la informacion disponible.

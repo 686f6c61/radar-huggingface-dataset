@@ -102,7 +102,7 @@ La comparacion con el modelo base es la unica sustentada por datos publicados, y
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Theboukadida/laura-lfm2.5-1.2b-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Theboukadida/laura-lfm2.5-1.2b-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Fichero de licencia del repositorio: LICENSE (referenciado en la model card, dentro del repositorio)
 - Fichero de pesos: `laura-lfm2.5-1.2b-Q4_K_M.gguf` (730.898.432 bytes; sha256 `f25d0858ddced1ebf1fdef109560958c3d50eef150965212d4f13c5921cda3f1`)

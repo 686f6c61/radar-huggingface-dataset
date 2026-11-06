@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA comparable con alternativas como Llama, Mistral o Qwen. Existen repositorios homologos en HuggingFace (`anshusaurav/tds-ga8-carbon-model`, `24f2005112/tds-carbon-card`) con el mismo proposito de contabilidad de carbono, pero no contienen modelos de IA. No hay datos de rendimiento que permitan establecer una comparativa tecnica.
+No disponible. Este repositorio no es un modelo de IA comparable con alternativas como Llama, Mistral o Qwen. Existen repositorios homologos en Hugging Face (`anshusaurav/tds-ga8-carbon-model`, `24f2005112/tds-carbon-card`) con el mismo proposito de contabilidad de carbono, pero no contienen modelos de IA. No hay datos de rendimiento que permitan establecer una comparativa tecnica.
 
 ## Limitaciones y advertencias
 
@@ -62,11 +62,11 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 - Alcance geografico limitado: las emisiones se calcularon para la region `us-central1`; los valores de CO₂eq dependen del mix electrico de esa region y no son generalizables a otras ubicaciones.
 - Sin licencia declarada: no se indica bajo que licencia se distribuye el contenido, lo que genera incertidumbre sobre su reutilizacion.
 - Sin verificacion externa: los datos de emisiones provienen de CodeCarbon, pero no hay auditoria independiente que valide las cifras.
-- Riesgo de malinterpretacion: al estar etiquetado como "modelo" en HuggingFace, un usuario podria intentar descargarlo o desplegarlo sin exito, ya que no contiene pesos ni configuracion.
+- Riesgo de malinterpretacion: al estar etiquetado como "modelo" en Hugging Face, un usuario podria intentar descargarlo o desplegarlo sin exito, ya que no contiene pesos ni configuracion.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/23f1002228/tds-ga8-carbon
+- Repositorio Hugging Face: https://huggingface.co/23f1002228/tds-ga8-carbon
 - Perfil de GitHub del autor: https://github.com/23f1002228/
 - Repositorio homologo (anshusaurav): https://huggingface.co/anshusaurav/tds-ga8-carbon-model
 - Repositorio homologo (24f2005112): https://huggingface.co/24f2005112/tds-carbon-card

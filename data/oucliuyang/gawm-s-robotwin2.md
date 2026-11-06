@@ -76,7 +76,7 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GAWM-S-RoboTwin2 | 77,0 M totales (55,4 M en checkpoint) | no disponible | 93,94 % clean / 93,10 % randomized en RoboTwin 2.0 | MIT | HuggingFace |
+| GAWM-S-RoboTwin2 | 77,0 M totales (55,4 M en checkpoint) | no disponible | 93,94 % clean / 93,10 % randomized en RoboTwin 2.0 | MIT | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -92,6 +92,6 @@ No se dispone en la información proporcionada de datos sobre modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oucliuyang/GAWM-S-RoboTwin2
+- Hugging Face: https://huggingface.co/oucliuyang/GAWM-S-RoboTwin2
 - Código oficial: https://github.com/gaoxiang12/gawm-public
 - Paper: no disponible (pendiente de publicación según la model card)

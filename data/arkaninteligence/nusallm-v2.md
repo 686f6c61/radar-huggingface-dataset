@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ArkanInteligence/NusaLLM-V2 es un modelo publicado en HuggingFace por ArkanInteligence. En la información disponible no se incluyen especificaciones técnicas, arquitectura, tamaño, licencia ni idiomas. El modelo fue creado el 7 de septiembre de 2026 y tiene 0 descargas y 1 like, lo que indica que es un modelo nuevo o sin validar por la comunidad.
+ArkanInteligence/NusaLLM-V2 es un modelo publicado en Hugging Face por ArkanInteligence. En la información disponible no se incluyen especificaciones técnicas, arquitectura, tamaño, licencia ni idiomas. El modelo fue creado el 7 de septiembre de 2026 y tiene 0 descargas y 1 like, lo que indica que es un modelo nuevo o sin validar por la comunidad.
 
-En la búsqueda web se ha encontrado un proyecto open-source llamado NusaLLM en GitHub, cuyo objetivo es construir un LLM desde cero con enfoque inicial en bahasa Indonesia y potencial para otras lenguas de Nusantara. Sin embargo, no hay confirmación de que este proyecto esté vinculado al modelo de HuggingFace, por lo que cualquier referencia debe tratarse con cautela.
+En la búsqueda web se ha encontrado un proyecto open-source llamado NusaLLM en GitHub, cuyo objetivo es construir un LLM desde cero con enfoque inicial en bahasa Indonesia y potencial para otras lenguas de Nusantara. Sin embargo, no hay confirmación de que este proyecto esté vinculado al modelo de Hugging Face, por lo que cualquier referencia debe tratarse con cautela.
 
 La relevancia de este modelo es actualmente limitada debido a la ausencia de documentación técnica. No es posible evaluar su rendimiento ni su idoneidad para ningún caso de uso sin información adicional.
 
@@ -64,7 +64,7 @@ No disponible: no se dispone de información técnica ni de rendimiento que perm
 
 ## Limitaciones y advertencias
 
-- El modelo no tiene documentación técnica publicada en HuggingFace.
+- El modelo no tiene documentación técnica publicada en Hugging Face.
 - No se especifica licencia, por lo que el uso comercial es incierto.
 - No se especifican idiomas soportados.
 - No se ha publicado información sobre sesgos, alucinaciones ni seguridad.
@@ -74,5 +74,5 @@ No disponible: no se dispone de información técnica ni de rendimiento que perm
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArkanInteligence/NusaLLM-V2
+- Hugging Face: https://huggingface.co/ArkanInteligence/NusaLLM-V2
 - Proyecto GitHub relacionado (no confirmado): https://github.com/CANDRA2006/nusallm

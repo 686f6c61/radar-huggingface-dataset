@@ -113,7 +113,7 @@ No se dispone de comparativas de rendimiento (benchmarks) entre estos modelos de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/damienlusson/LiquidAI_LFM2.5-350M_B2B-2-Capacity
+- Repositorio Hugging Face: https://huggingface.co/damienlusson/LiquidAI_LFM2.5-350M_B2B-2-Capacity
 - Unsloth (herramienta de conversion declarada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de los pesos GGUF): no disponible en la informacion proporcionada
 - Modelo original de Liquid AI (LFM2.5-350M): no disponible en la informacion proporcionada

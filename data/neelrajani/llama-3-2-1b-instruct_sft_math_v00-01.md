@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-Instruct_SFT_math_v00.01 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario NeelRajani en HuggingFace. Por el nombre del repositorio se deduce que el entrenamiento se ha orientado a tareas de matematicas, partiendo de la variante Instruct de 1.235.814.400 parametros (segun los pesos en safetensors). No obstante, la model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva sobre datos, hiperparametros ni evaluacion.
+Llama-3.2-1B-Instruct_SFT_math_v00.01 es un ajuste fino supervisado (SFT) del modelo Llama 3.2 1B Instruct de Meta, publicado por el usuario NeelRajani en Hugging Face. Por el nombre del repositorio se deduce que el entrenamiento se ha orientado a tareas de matematicas, partiendo de la variante Instruct de 1.235.814.400 parametros (segun los pesos en safetensors). No obstante, la model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva sobre datos, hiperparametros ni evaluacion.
 
 El modelo se distribuye en formato safetensors para la libreria transformers, con un tamano de repositorio de 2,5 GB, lo que corresponde a pesos en precision de 16 bits. Es un modelo de generacion de texto conversacional de gama muy pequena, pensado para experimentacion y despliegue en hardware modesto. Su relevancia practica es limitada: se trata de una publicacion de investigacion o prueba personal, sin documentacion tecnica, sin benchmarks y sin licencia declarada, lo que impide su uso comercial sin aclaraciones adicionales.
 
@@ -25,7 +25,7 @@ La ficha siguiente se limita a los datos verificables del repositorio y a las ca
 
 La arquitectura subyacente es la de Llama 3.2 1B Instruct: un transformer decoder-only con atencion causal, normalizacion RMSNorm, activaciones SwiGLU y embeddings rotatorios (RoPE). El nombre del repositorio indica un ajuste fino supervisado (SFT) sobre la variante Instruct, presumiblemente con un conjunto de datos de matematicas, aunque no se especifica el dataset, el numero de tokens, la mezcla de datos ni si se aplicaron tecnicas de preferencia como DPO o RLHF.
 
-No hay informacion sobre hiperparametros de entrenamiento (learning rate, batch size, precision, numero de epocas), infraestructura de computo ni procedimiento de preprocesado. La model card es la plantilla estandar de HuggingFace con todos los campos marcados como "[More Information Needed]". Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
+No hay informacion sobre hiperparametros de entrenamiento (learning rate, batch size, precision, numero de epocas), infraestructura de computo ni procedimiento de preprocesado. La model card es la plantilla estandar de Hugging Face con todos los campos marcados como "[More Information Needed]". Tampoco se documenta ninguna innovacion tecnica adicional (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-Instruct_SFT_math_v00.01 | 1,23 B | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sin documentacion ni benchmarks |
-| Llama 3.2 1B Instruct (Meta) | 1,23 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, ampliamente usado | Modelo base oficial, con evaluacion publicada |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | HuggingFace | Alternativa de tamano similar con licencia permisiva y benchmarks publicados |
-| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Algo mayor, con evaluacion oficial y buen rendimiento en razonamiento |
+| Llama-3.2-1B-Instruct_SFT_math_v00.01 | 1,23 B | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sin documentacion ni benchmarks |
+| Llama 3.2 1B Instruct (Meta) | 1,23 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, ampliamente usado | Modelo base oficial, con evaluacion publicada |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens | Apache 2.0 | Hugging Face | Alternativa de tamano similar con licencia permisiva y benchmarks publicados |
+| Gemma 2 2B Instruct | 2,6 B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Algo mayor, con evaluacion oficial y buen rendimiento en razonamiento |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.01
+- Repositorio Hugging Face: https://huggingface.co/NeelRajani/Llama-3.2-1B-Instruct_SFT_math_v00.01
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Modelo base Llama 3.2 1B Instruct (Meta): https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Calculadora de impacto ambiental ML CO2: https://mlco2.github.io/impact

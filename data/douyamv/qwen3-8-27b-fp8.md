@@ -71,12 +71,12 @@ La comparativa se limita a variantes del mismo modelo base, ya que no se dispone
 - El modelo está entrenado principalmente en inglés y chino; su rendimiento en otros idiomas, incluido el español, puede ser inferior y no está garantizado.
 - No se dispone de información sobre sesgos específicos del modelo, pero como cualquier LLM, puede reflejar sesgos presentes en sus datos de entrenamiento.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los términos del modelo base original para asegurar el cumplimiento.
-- El tamaño del repositorio aparece como 0.0 GB en HuggingFace, lo que podría indicar que los archivos aún no se han subido correctamente o que hay un error en la metadata. Verificar antes de su uso.
+- El tamaño del repositorio aparece como 0.0 GB en Hugging Face, lo que podría indicar que los archivos aún no se han subido correctamente o que hay un error en la metadata. Verificar antes de su uso.
 - Para contextos muy largos (más de 100 000 tokens), la memoria de la caché KV puede volverse un cuello de botella incluso con FP8, requiriendo técnicas como PagedAttention (disponible en vLLM) o reducción de la longitud máxima.
 
 ## Enlaces
 
-- Modelo en HuggingFace: [douyamv/Qwen3.8-27B-FP8](https://huggingface.co/douyamv/Qwen3.8-27B-FP8)
+- Modelo en Hugging Face: [douyamv/Qwen3.8-27B-FP8](https://huggingface.co/douyamv/Qwen3.8-27B-FP8)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Versión GGUF: [douyamv/Qwen3.8-27B-GGUF](https://huggingface.co/douyamv/Qwen3.8-27B-GGUF)
 - Versión abliterated: [douyamv/Qwen3.8-27B-abliterated](https://huggingface.co/douyamv/Qwen3.8-27B-abliterated)

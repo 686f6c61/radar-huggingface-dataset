@@ -41,7 +41,7 @@ La funcion de `llama-quantize` es tomar un archivo GGUF de entrada (normalmente 
 - Reduccion de uso de memoria en entornos con recursos limitados: cuantizar modelos para su ejecucion en contenedores o dispositivos edge con poca RAM.
 - Conversion de modelos para su uso con llama.cpp en produccion: preparar modelos cuantizados que puedan cargarse directamente con el runtime de llama.cpp en aplicaciones de chat o inferencia.
 - Experimentacion con distintos niveles de cuantizacion: generar multiples versiones de un mismo modelo (Q4_K_M, Q8_0, etc.) para evaluar el equilibrio entre calidad de salida y velocidad de inferencia.
-- Automatizacion de builds de modelos cuantizados en repositorios de HuggingFace: crear scripts que generen y suban versiones cuantizadas de modelos open source para la comunidad.
+- Automatizacion de builds de modelos cuantizados en repositorios de Hugging Face: crear scripts que generen y suban versiones cuantizadas de modelos open source para la comunidad.
 - Investigacion de rendimiento: comparar el comportamiento de un modelo cuantizado frente a su version sin cuantizar en tareas especificas, midiendo la perdida de precision.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No disponible. Este repositorio no contiene un modelo comparable con otros model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/BachDaThan/llama-quantize-linux-x86_64
+- Repositorio en Hugging Face: https://huggingface.co/BachDaThan/llama-quantize-linux-x86_64
 - Repositorio upstream de llama.cpp: https://github.com/ggml-org/llama.cpp
 - Documentacion de llama-quantize: https://github.com/ggml-org/llama.cpp/blob/master/tools/quantize/README.md
 - Wiki de Factory sobre llama.cpp: https://factory.ai/open-source-wikis/llama-cpp?page=tools%2Fquantize.md

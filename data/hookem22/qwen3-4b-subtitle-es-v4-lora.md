@@ -15,7 +15,7 @@ El entrenamiento se realizo con la libreria Unsloth, que el propio autor declara
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | modelo base en 4-bit (bitsandbytes); adaptador LoRA en safetensors |
-| Idiomas soportados | en (segun etiqueta de HuggingFace); espanol segun el nombre del modelo (subtitle-es) |
+| Idiomas soportados | en (segun etiqueta de Hugging Face); espanol segun el nombre del modelo (subtitle-es) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors |
 
@@ -30,7 +30,7 @@ El entrenamiento se realizo con la libreria Unsloth y TRL (transformers reinforc
 - Generacion de subtitulos en espanol: el nombre del modelo indica que esta especializado en producir subtitulos en espanol (subtitle-es).
 - Ademas del especialidad declarada, hereda las capacidades del modelo base Qwen3-4B: generacion de texto, razonamiento, comprension de lenguaje natural y soporte de tool calling (dependiendo de la version de Qwen3 base).
 - Compatible con text-generation-inference (TGI) segun las etiquetas del repositorio, lo que permite desplegarlo en infraestructura de inferencia estandar.
-- Al ser un adaptador LoRA, se puede cargar sobre el modelo base 4-bit con la libreria PEFT de HuggingFace.
+- Al ser un adaptador LoRA, se puede cargar sobre el modelo base 4-bit con la libreria PEFT de Hugging Face.
 
 ## Casos de uso
 
@@ -50,7 +50,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - El adaptador LoRA es muy ligero (0.1 GB), por lo que el requisito principal es la VRAM del modelo base cuantizado.
 - El modelo base qwen3-4b-unsloth-bnb-4bit en 4-bit ocupa aproximadamente 2-3 GB de VRAM, por lo que es ejecutable en GPUs consumer como la RTX 3060 (12 GB) o superiores.
 - Para inferencia en produccion con text-generation-inference, se recomienda al menos una GPU con 8-12 GB de VRAM para manejar el contexto y el batch.
-- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp, Ollama, o mediante la libreria PEFT de HuggingFace cargando el adaptador sobre el modelo base.
+- Opciones de despliegue: vLLM, TGI (text-generation-inference), llama.cpp, Ollama, o mediante la libreria PEFT de Hugging Face cargando el adaptador sobre el modelo base.
 - La latencia y el throughput dependen del hardware; no se disponen de cifras publicadas para este adaptador especifico.
 
 ## Comparativa con modelos similares
@@ -60,7 +60,7 @@ No se disponen de modelos comparables directamente publicados en la informacion 
 ## Limitaciones y advertencias
 
 - La model card es muy escasa: no se especifican el dataset de entrenamiento, el numero de tokens, ni la metodologia de evaluacion, lo que dificulta la reproducibilidad y la evaluacion de calidad.
-- Discrepancia en el idioma: la etiqueta de HuggingFace indica "en" (ingles) mientras que el nombre del modelo indica espanol (subtitle-es). Esto puede causar confusion al seleccionar el modelo.
+- Discrepancia en el idioma: la etiqueta de Hugging Face indica "en" (ingles) mientras que el nombre del modelo indica espanol (subtitle-es). Esto puede causar confusion al seleccionar el modelo.
 - Riesgo de alucinacion: como todos los modelos de lenguaje, puede generar contenido incorrecto o inventado, especialmente en tareas de transcripcion y traduccion.
 - Al ser un adaptador LoRA, es necesario cargar el modelo base cuantizado (unsloth/qwen3-4b-unsloth-bnb-4bit) para poder usar el modelo, lo que anade complejidad de despliegue.
 - La licencia Apache 2.0 permite uso comercial, pero es necesario verificar las licencias del modelo base (Qwen3-4B) y de las herramientas de entrenamiento (Unsloth, bitsandbytes) para cumplir con sus respectivos terminos.
@@ -68,7 +68,7 @@ No se disponen de modelos comparables directamente publicados en la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-v4-lora
+- Repositorio Hugging Face: https://huggingface.co/Hookem22/qwen3-4b-subtitle-es-v4-lora
 - Modelo base (unsloth): https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Modelo Qwen3-4B original: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3

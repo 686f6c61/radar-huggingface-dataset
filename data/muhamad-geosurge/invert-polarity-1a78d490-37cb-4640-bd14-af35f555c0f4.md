@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `muhamad-geosurge/invert-polarity-1a78d490-37cb-4640-bd14-af35f555c0f4` es un ajuste fino (finetune) del modelo multimodal `google/gemma-4-E4B` de Google DeepMind, publicado por el usuario `muhamad-geosurge` en HuggingFace. Se trata de un modelo de generacion de texto con etiqueta de pipeline `any-to-any` y arquitectura `gemma4_text`, con 7.518.082.346 parametros totales reales segun los pesos en safetensors y un tamano de repositorio de 15,1 GB, lo que sugiere pesos almacenados en precision BF16/FP16.
+El modelo identificado como `muhamad-geosurge/invert-polarity-1a78d490-37cb-4640-bd14-af35f555c0f4` es un ajuste fino (finetune) del modelo multimodal `google/gemma-4-E4B` de Google DeepMind, publicado por el usuario `muhamad-geosurge` en Hugging Face. Se trata de un modelo de generacion de texto con etiqueta de pipeline `any-to-any` y arquitectura `gemma4_text`, con 7.518.082.346 parametros totales reales segun los pesos en safetensors y un tamano de repositorio de 15,1 GB, lo que sugiere pesos almacenados en precision BF16/FP16.
 
 El modelo base, Gemma 4 E4B, pertenece a la familia Gemma 4, que combina arquitecturas densas y de mezcla de expertos (MoE) en cinco tamanos y esta disenada para tareas de generacion de texto, codigo y razonamiento, con soporte multimodal de texto e imagen (y audio en los modelos E2B, E4B y 12B). El E4B emplea embeddings por capa (Per-Layer Embeddings, PLE) para maximizar la eficiencia en despliegues en dispositivo, con 4,5B de parametros efectivos y 8B contando embeddings.
 
@@ -95,7 +95,7 @@ No se dispone de datos para comparar con alternativas de otros fabricantes (por 
 
 - Repositorio del modelo: https://huggingface.co/muhamad-geosurge/invert-polarity-1a78d490-37cb-4640-bd14-af35f555c0f4
 - Modelo base: https://huggingface.co/google/gemma-4-E4B
-- Coleccion Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Coleccion Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Repositorio GitHub de Google Gemma: https://github.com/google-gemma
 - Blog de lanzamiento de Gemma 4: https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/
 - Documentacion oficial de Gemma: https://ai.google.dev/gemma/docs/core

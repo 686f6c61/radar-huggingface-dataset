@@ -80,7 +80,7 @@ La comparativa se basa en informacion publica de la familia Qwen. No se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-fp16
+- Repositorio Hugging Face de este modelo: https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ5e-fp16
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Version GGUF del modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NM-DAU-NEO-MAX-MTP-GGUF
 - Articulo de HackerNoon sobre COLD FUSION: https://hackernoon.com/qwen38-27b-cold-fusion-cuts-thinking-tokens-without-sacrificing-performance

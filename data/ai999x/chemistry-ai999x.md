@@ -6,7 +6,7 @@ chemistry-ai999x es un motor de resolución de problemas de química escrito en 
 
 El paquete declara 377 respuestas doradas reproducidas de forma idéntica en Windows y Linux (Python 3.10 a 3.14), funciona íntegramente en CPU, sin GPU, sin red y sin clave de API, y expone dos interfaces: `ask()` para preguntas en lenguaje natural documentadas y `solve(capability_id, **inputs)` para una llamada tipada garantizada. Su propuesta de valor es la ausencia de alucinación por diseño: siete resultados posibles (SOLVED, NEEDS_INPUT, AMBIGUOUS, INVALID_INPUT, OUT_OF_SCOPE, UNRECOGNIZED_FORMAT, INTERNAL_ERROR) y nunca una conjetura silenciosa.
 
-Es relevante para quien necesite cálculo químico reproducible y auditable en entornos offline (aulas, laboratorios, pipelines de validación), más que para generación de texto libre. El repositorio de HuggingFace incluye pesos en safetensors (4.715.520 parámetros) y exportación ONNX, aunque la model card marca `inference: false` y el uso previsto es la instalación vía pip.
+Es relevante para quien necesite cálculo químico reproducible y auditable en entornos offline (aulas, laboratorios, pipelines de validación), más que para generación de texto libre. El repositorio de Hugging Face incluye pesos en safetensors (4.715.520 parámetros) y exportación ONNX, aunque la model card marca `inference: false` y el uso previsto es la instalación vía pip.
 
 ## Especificaciones técnicas
 
@@ -64,7 +64,7 @@ No se han publicado en la información disponible otros resultados de benchmarks
 - Inferencia en CPU exclusivamente; no requiere GPU, VRAM dedicada ni aceleradores.
 - Huella de pesos muy reducida: 4.715.520 parámetros implican del orden de decenas de MB en memoria para los tensores, a los que se suma el coste de Python, sympy y mpmath en tiempo de ejecución.
 - Cabe en cualquier equipo de consumo, incluidos portátiles modestos, Raspberry Pi y contenedores de CI con recursos limitados.
-- Despliegue mediante `pip install chemistry-ai999x`, instalación directa del wheel desde el repositorio de HuggingFace, import como `chemistry_ai999x` o uso de la CLI; no requiere vLLM, llama.cpp, Ollama ni TGI.
+- Despliegue mediante `pip install chemistry-ai999x`, instalación directa del wheel desde el repositorio de Hugging Face, import como `chemistry_ai999x` o uso de la CLI; no requiere vLLM, llama.cpp, Ollama ni TGI.
 - Exportación ONNX disponible para integración en runtimes de inferencia ONNX cuando se prefiera evitar el intérprete de Python para los componentes auxiliares.
 - No se han publicado cifras de latencia ni throughput en la información disponible; al ser cálculo simbólico determinista, el coste dominante es el de sympy por operación, no el de un pase forward sobre secuencias largas.
 
@@ -84,7 +84,7 @@ La diferencia cualitativa clave frente a SymPy es el envoltorio de lectura de pr
 - Cobertura acotada: solo resuelve las 103 capacidades certificadas; cualquier cuestión fuera de ese catálogo devuelve `OUT_OF_SCOPE` o `UNRECOGNIZED_FORMAT`, no una respuesta aproximada.
 - Idioma único: el lector de preguntas solo admite inglés; no hay soporte documentado de castellano ni de otras lenguas.
 - No es un modelo generativo: no redacta explicaciones libres, no mantiene conversaciones multi-turno y no puede usarse como chatbot general.
-- La model card marca `inference: false`: no está pensado para el Inference API de HuggingFace ni para servirse como endpoint estándar de transformers; el uso previsto es la instalación local del paquete.
+- La model card marca `inference: false`: no está pensado para el Inference API de Hugging Face ni para servirse como endpoint estándar de transformers; el uso previsto es la instalación local del paquete.
 - La métrica de accuracy 1,0 procede de un conjunto interno de 377 preguntas del propio autor y figura como `verified: false`; no equivale a una evaluación independiente ni a un benchmark público.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y una única versión publicada (1.0.0): no hay historial de uso comunitario ni auditoría externa conocida.
 - Sesgos conocidos: no disponible; al ser determinista y basado en reglas, el riesgo típico de sesgo estadístico no aplica, pero sí el sesgo de cobertura del catálogo de capacidades y de las formas de pregunta documentadas.
@@ -94,10 +94,10 @@ La diferencia cualitativa clave frente a SymPy es el envoltorio de lectura de pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/chemistry-ai999x
+- Modelo en Hugging Face: https://huggingface.co/AI999X/chemistry-ai999x
 - Documentación de capacidades: https://huggingface.co/AI999X/chemistry-ai999x/tree/main/docs
 - Evaluación: https://huggingface.co/AI999X/chemistry-ai999x/tree/main/evaluation
-- Organización AI999X en HuggingFace: https://huggingface.co/AI999X
+- Organización AI999X en Hugging Face: https://huggingface.co/AI999X
 - Paquete en PyPI: https://pypi.org/project/chemistry-ai999x/
 - Sitio web del autor: https://ai999x.com
 - Apoyo al desarrollo: https://buymeacoffee.com/ibnuljaiffarabi

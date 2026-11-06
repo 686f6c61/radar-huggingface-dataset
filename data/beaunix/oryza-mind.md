@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Oryza Mind es un modelo de segmentacion de instancias basado en YOLOv11, desarrollado por el usuario de HuggingFace beaunix (Bryan David Castano) como proyecto academico orientado a agricultores de arrozales. Su tarea concreta es detectar y segmentar lesiones y regiones de enfermedad en imagenes de hojas de arroz, devolviendo mascaras por instancia que despues se envian a una capa de razonamiento basada en Gemini para generar recomendaciones de tratamiento. El modelo forma parte de un agente mayor denominado Oryza Mind, cuyo repositorio de proyecto y demo en vivo se enlazan mas abajo.
+Oryza Mind es un modelo de segmentacion de instancias basado en YOLOv11, desarrollado por el usuario de Hugging Face beaunix (Bryan David Castano) como proyecto academico orientado a agricultores de arrozales. Su tarea concreta es detectar y segmentar lesiones y regiones de enfermedad en imagenes de hojas de arroz, devolviendo mascaras por instancia que despues se envian a una capa de razonamiento basada en Gemini para generar recomendaciones de tratamiento. El modelo forma parte de un agente mayor denominado Oryza Mind, cuyo repositorio de proyecto y demo en vivo se enlazan mas abajo.
 
 A diferencia de los modelos de lenguaje, no procesa texto ni mantiene contexto conversacional: es un modelo puramente de vision, entrenado con Ultralytics YOLO y distribuido en dos formatos, un checkpoint PyTorch (.pt) para inferencia o reentrenamiento y una exportacion ONNX (.onnx) para despliegue con ONNX Runtime en cualquier lenguaje. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta y un tamano declarado de 0,0 GB, por lo que se trata de una publicacion reciente y sin traccion comunitaria.
 
@@ -73,7 +73,7 @@ No hay datos de rendimiento publicados para Oryza Mind, por lo que la comparacio
 
 | Modelo | Arquitectura | Tarea | Parametros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Oryza Mind (beaunix/oryza-mind) | YOLOv11-seg | Segmentacion de enfermedad en hoja de arroz | no disponible | AGPL-3.0 | HuggingFace (.pt, .onnx) |
+| Oryza Mind (beaunix/oryza-mind) | YOLOv11-seg | Segmentacion de enfermedad en hoja de arroz | no disponible | AGPL-3.0 | Hugging Face (.pt, .onnx) |
 | Ultralytics YOLOv11-seg (generico) | YOLOv11-seg | Segmentacion de instancias generica (COCO) | entre ~2,6 M (n) y ~62 M (x) segun variante | AGPL-3.0 | GitHub y pesos oficiales de Ultralytics |
 | YOLOv8-seg | YOLOv8-seg | Segmentacion de instancias generica | entre ~3,2 M (n) y ~71 M (x) segun variante | AGPL-3.0 | GitHub y pesos oficiales de Ultralytics |
 | Mask R-CNN | Detector de dos etapas con rama de mascaras | Segmentacion de instancias generica | tipicamente decenas de millones de parametros (p. ej. ~44 M con backbone ResNet-50-FPN) | Apache-2.0 / MIT segun implementacion | Detectron2, torchvision |
@@ -95,8 +95,8 @@ La ventaja diferencial de Oryza Mind no es el rendimiento, que no esta medido, s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/beaunix/oryza-mind
-- Perfil del autor en HuggingFace: https://huggingface.co/beaunix
+- Modelo en Hugging Face: https://huggingface.co/beaunix/oryza-mind
+- Perfil del autor en Hugging Face: https://huggingface.co/beaunix
 - Repositorio del proyecto en GitHub: https://github.com/BeauBryanDev/oryza_mind
 - Agente en vivo: oryza.tensorgeek.com
 - Dataset 1 (Rice-Leaf-Disease, Roboflow Universe, CC BY 4.0): https://universe.roboflow.com/landebeau7/rice-leaf-disease-s1asn-nzefl

@@ -68,7 +68,7 @@ La métrica `F@C90` se define como la máxima fluidez en la curva agregada inter
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables directamente. La categoría de denoisers de activaciones para steering es emergente. Existen otros proyectos como `gimacorp/gpt2-steering-scrubber` (en HuggingFace) que también abordan la limpieza de activaciones, pero no se han encontrado datos de comparación. El propio proyecto `steering-manifold-repair` incluye experimentos adicionales (JRR y KL-Selective JRR) que no tienen checkpoints separados, pero que se comparan conceptualmente en el informe. Por lo tanto, la comparativa con alternativas específicas no está disponible en la información pública.
+No se dispone de modelos comparables directamente. La categoría de denoisers de activaciones para steering es emergente. Existen otros proyectos como `gimacorp/gpt2-steering-scrubber` (en Hugging Face) que también abordan la limpieza de activaciones, pero no se han encontrado datos de comparación. El propio proyecto `steering-manifold-repair` incluye experimentos adicionales (JRR y KL-Selective JRR) que no tienen checkpoints separados, pero que se comparan conceptualmente en el informe. Por lo tanto, la comparativa con alternativas específicas no está disponible en la información pública.
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se dispone de modelos comparables directamente. La categoría de denoisers de
 
 ## Enlaces
 
-- [HuggingFace: Nek1tt/steering-repair-gpt2](https://huggingface.co/Nek1tt/steering-repair-gpt2)
+- [Hugging Face: Nek1tt/steering-repair-gpt2](https://huggingface.co/Nek1tt/steering-repair-gpt2)
 - [GitHub: Nek1tt/steering-manifold-repair](https://github.com/Nek1tt/steering-manifold-repair)
 - [Perfil de Nek1tt en GitHub](https://github.com/Nek1tt/)
 - [Proyecto relacionado: gimacorp/gpt2-steering-scrubber](https://huggingface.co/gimacorp/gpt2-steering-scrubber)

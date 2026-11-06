@@ -86,10 +86,10 @@ Como referencia del método y no de este checkpoint, el artículo original de AC
 
 | Modelo | Tipo | Parámetros | Contexto / horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `terk182/act_pick_yellow_brick_v2` (este) | ACT, imitación | 51.668.614 | Chunk de acciones, valor no disponible | No disponible | HuggingFace Hub, vía LeRobot |
+| `terk182/act_pick_yellow_brick_v2` (este) | ACT, imitación | 51.668.614 | Chunk de acciones, valor no disponible | No disponible | Hugging Face Hub, vía LeRobot |
 | ACT (implementación genérica de LeRobot) | ACT, imitación | Depende de la configuración; no disponible | Chunk configurable | Apache-2.0 (código de LeRobot) | `lerobot` en GitHub y Hub |
 | Diffusion Policy (LeRobot) | Política por difusión | No disponible | Horizonte de predicción configurable | Apache-2.0 (código de LeRobot) | `lerobot` en GitHub y Hub |
-| SmolVLA (HuggingFace) | VLA (visión-lenguaje-acción) | ~450 M (dato público aproximado, verificar) | Ventana multimodal; no disponible en detalle | No disponible en esta ficha | HuggingFace Hub, vía LeRobot |
+| SmolVLA (Hugging Face) | VLA (visión-lenguaje-acción) | ~450 M (dato público aproximado, verificar) | Ventana multimodal; no disponible en detalle | No disponible en esta ficha | Hugging Face Hub, vía LeRobot |
 
 No existen datos de rendimiento comparable entre estas alternativas en la información disponible: este checkpoint no aporta métricas de éxito y los demás no se han evaluado aquí bajo las mismas condiciones. Cualquier comparación cuantitativa requeriría entrenar y evaluar cada método sobre el mismo dataset (`terk182/pick_yellow_brick_v2`) y el mismo robot.
 
@@ -108,7 +108,7 @@ No existen datos de rendimiento comparable entre estas alternativas en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/terk182/act_pick_yellow_brick_v2
+- Modelo en Hugging Face: https://huggingface.co/terk182/act_pick_yellow_brick_v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/terk182/pick_yellow_brick_v2
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=terk182/pick_yellow_brick_v2
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)

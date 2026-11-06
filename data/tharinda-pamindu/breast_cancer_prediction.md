@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tharinda-pamindu/breast_cancer_prediction` es un modelo de clasificacion binaria tabular entrenado con XGBoost y publicado en HuggingFace por el usuario tharinda-pamindu. No es un modelo de lenguaje: se trata de un conjunto de arboles de decision potenciados (gradient boosted trees) que recibe un vector de caracteristicas tabulares y devuelve una etiqueta binaria.
+`tharinda-pamindu/breast_cancer_prediction` es un modelo de clasificacion binaria tabular entrenado con XGBoost y publicado en Hugging Face por el usuario tharinda-pamindu. No es un modelo de lenguaje: se trata de un conjunto de arboles de decision potenciados (gradient boosted trees) que recibe un vector de caracteristicas tabulares y devuelve una etiqueta binaria.
 
 El modelo se distribuye como un unico artefacto serializado en formato JSON de XGBoost (`best_model.json`), que se carga directamente con `XGBClassifier.load_model()`. La model card declara una configuracion concreta de hiperparametros: `max_depth=4`, `learning_rate=0.05`, `n_estimators=1000` con parada temprana de 30 rondas sobre logloss de validacion, ademas de `subsample=0.8` y `colsample_bytree=0.8`.
 
@@ -99,8 +99,8 @@ Las licencias indicadas corresponden a las librerias, no a los artefactos de mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tharinda-pamindu/breast_cancer_prediction
-- Fichero de pesos: `best_model.json` en el repositorio de HuggingFace (referenciado en la model card)
+- Modelo en Hugging Face: https://huggingface.co/tharinda-pamindu/breast_cancer_prediction
+- Fichero de pesos: `best_model.json` en el repositorio de Hugging Face (referenciado en la model card)
 - Documentacion de XGBoost: https://xgboost.readthedocs.io/
 - Documentacion de `huggingface_hub` (descarga de ficheros): https://huggingface.co/docs/huggingface_hub/
 - No se han encontrado en la informacion disponible papers, blogs, repositorios adicionales ni demos asociados a este modelo.

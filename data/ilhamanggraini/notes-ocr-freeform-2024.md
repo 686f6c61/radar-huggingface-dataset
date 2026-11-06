@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ilhamanggraini/notes-ocr-freeform-2024` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en HuggingFace bajo la etiqueta `research-notes`. El autor, ilhamanggraini, lo describe como un conjunto estructurado de apuntes sobre el tema "OCR Freeform", con referencias de evaluacion concretas (FUNSD, SROIE, CORD) y preguntas abiertas, separando explicitamente los planes e hipotesis de los resultados ya completados.
+`ilhamanggraini/notes-ocr-freeform-2024` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion publicado en Hugging Face bajo la etiqueta `research-notes`. El autor, ilhamanggraini, lo describe como un conjunto estructurado de apuntes sobre el tema "OCR Freeform", con referencias de evaluacion concretas (FUNSD, SROIE, CORD) y preguntas abiertas, separando explicitamente los planes e hipotesis de los resultados ya completados.
 
 El repositorio contiene unicamente dos ficheros de texto (`summary.md` y `README.md`) y pesa 0.0 GB. El campo de parametros de safetensors indica 33.088, un valor que no corresponde a ningun modelo funcional y que probablemente refleja metadatos residuales o un artefacto del proceso de publicacion. No hay pipeline declarado, ni pesos utilizables, ni codigo de inferencia.
 
@@ -23,7 +23,7 @@ Su relevancia es, por tanto, documental y no tecnica: sirve como punto de partid
 
 ## Arquitectura y entrenamiento
 
-No existe arquitectura de red neuronal ni proceso de entrenamiento. El contenido del repositorio son notas de investigacion en Markdown. El tag `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe ningun transformer, ni capas, ni atencion, ni tokenizador. Tampoco se documentan datos de entrenamiento, numero de tokens, composicion del dataset, RLHF, DPO ni ninguna innovacion tecnica como decodificacion especulativa o atencion lineal.
+No existe arquitectura de red neuronal ni proceso de entrenamiento. El contenido del repositorio son notas de investigacion en Markdown. El tag `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe ningun transformer, ni capas, ni atencion, ni tokenizador. Tampoco se documentan datos de entrenamiento, numero de tokens, composicion del dataset, RLHF, DPO ni ninguna innovacion tecnica como decodificacion especulativa o atencion lineal.
 
 La unica informacion metodologica relevante es la estructura propuesta por el autor: separar hipotesis de resultados, y exigir que cualquier resultado futuro incluya versiones de dataset, comandos, semillas, hardware y logs en bruto. El autor menciona un diseno experimental con comparacion frente a baselines emparejados, pero no aporta ejecucion ni mediciones.
 
@@ -84,7 +84,7 @@ No procede una comparativa con modelos de OCR o de extraccion de informacion, po
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilhamanggraini/notes-ocr-freeform-2024
+- Repositorio en Hugging Face: https://huggingface.co/ilhamanggraini/notes-ocr-freeform-2024
 - Dataset FUNSD (referenciado en las notas): no disponible en la informacion proporcionada
 - Dataset SROIE (referenciado en las notas): no disponible en la informacion proporcionada
 - Dataset CORD (referenciado en las notas): no disponible en la informacion proporcionada

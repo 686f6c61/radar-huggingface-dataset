@@ -70,9 +70,9 @@ No se dispone de informacion suficiente para una comparativa completa con modelo
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-Coder-30B-A3B-Instruct (original) | 30B totales, 3B activos | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| Qwen3-Coder-30B-A3B-Instruct-AWQ (stelterlab) | no disponible | no disponible | AWQ 4-bit | no disponible | HuggingFace |
-| Este modelo (EliovpAI, Paiton RDNA4) | 30B totales, 3B activos | 4.096 tokens | INT4 G32 / BF16 | Apache 2.0 | HuggingFace (artefacto compilado) |
+| Qwen3-Coder-30B-A3B-Instruct (original) | 30B totales, 3B activos | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| Qwen3-Coder-30B-A3B-Instruct-AWQ (stelterlab) | no disponible | no disponible | AWQ 4-bit | no disponible | Hugging Face |
+| Este modelo (EliovpAI, Paiton RDNA4) | 30B totales, 3B activos | 4.096 tokens | INT4 G32 / BF16 | Apache 2.0 | Hugging Face (artefacto compilado) |
 
 ## Limitaciones y advertencias
 
@@ -88,7 +88,7 @@ No se dispone de informacion suficiente para una comparativa completa con modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EliovpAI/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit-Paiton-RDNA4
+- Repositorio en Hugging Face: https://huggingface.co/EliovpAI/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit-Paiton-RDNA4
 - Modelo base cuantizado: https://huggingface.co/cyankiwi/Qwen3-Coder-30B-A3B-Instruct-AWQ-4bit
 - Modelo original Qwen3-Coder-30B-A3B-Instruct: https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct
 - Version AWQ de stelterlab: https://huggingface.co/stelterlab/Qwen3-Coder-30B-A3B-Instruct-AWQ

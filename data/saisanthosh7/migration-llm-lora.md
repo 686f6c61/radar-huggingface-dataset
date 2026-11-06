@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`saisanthosh7/migration-llm-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en HuggingFace por el usuario `saisanthosh7` y entrenado sobre el modelo base `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, que es la versión cuantizada a 4 bits de Llama 3.2 3B Instruct de Meta distribuida por Unsloth. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador (repo de 0,1 GB) que debe cargarse junto al modelo base mediante la librería PEFT.
+`saisanthosh7/migration-llm-lora` es un adaptador LoRA (Low-Rank Adaptation) publicado en Hugging Face por el usuario `saisanthosh7` y entrenado sobre el modelo base `unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit`, que es la versión cuantizada a 4 bits de Llama 3.2 3B Instruct de Meta distribuida por Unsloth. No se trata de un modelo completo con pesos propios, sino de un conjunto de pesos de adaptador (repo de 0,1 GB) que debe cargarse junto al modelo base mediante la librería PEFT.
 
-El repositorio no aporta ninguna documentación sustantiva: la model card es la plantilla genérica de HuggingFace sin rellenar, con todos los campos marcados como `[More Information Needed]`. La única información objetiva disponible son los metadatos: etiquetas `peft`, `lora`, `sft`, `transformers`, `trl`, `unsloth`, `text-generation` y `conversational`, versión de PEFT 0.20.0, y cero descargas y cero likes en el momento de la consulta. El nombre del repositorio sugiere un ajuste orientado a tareas de migración, pero no hay ninguna confirmación documental de ello.
+El repositorio no aporta ninguna documentación sustantiva: la model card es la plantilla genérica de Hugging Face sin rellenar, con todos los campos marcados como `[More Information Needed]`. La única información objetiva disponible son los metadatos: etiquetas `peft`, `lora`, `sft`, `transformers`, `trl`, `unsloth`, `text-generation` y `conversational`, versión de PEFT 0.20.0, y cero descargas y cero likes en el momento de la consulta. El nombre del repositorio sugiere un ajuste orientado a tareas de migración, pero no hay ninguna confirmación documental de ello.
 
 Por tanto, esta ficha describe el adaptador como artefacto técnico y las características que puede heredar del modelo base, pero debe leerse con cautela: no hay información pública sobre los datos de entrenamiento, el dominio objetivo, los hiperparámetros, la licencia ni los resultados de evaluación. La búsqueda web realizada no devolvió ninguna fuente relevante sobre este modelo.
 
@@ -22,7 +22,7 @@ Por tanto, esta ficha describe el adaptador como artefacto técnico y las caract
 | Formato de pesos | safetensors (adaptador LoRA), libreria PEFT |
 | Tamano del repositorio | 0,1 GB |
 | Framework declarado | PEFT 0.20.0 (entrenado con Unsloth + TRL) |
-| Fecha de publicacion en HuggingFace | 2026-09-16 (segun metadatos del repositorio) |
+| Fecha de publicacion en Hugging Face | 2026-09-16 (segun metadatos del repositorio) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| saisanthosh7/migration-llm-lora (este) | Adaptador sobre base de ~3,2 B | No disponible (base: 128.000) | No disponible | HuggingFace, 0 descargas | No disponible |
-| meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | HuggingFace oficial | Publicado por Meta |
-| Qwen/Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens (ampliable) | Apache 2.0 (segun el modelo) | HuggingFace | Publicado por Alibaba |
-| microsoft/Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | MIT (segun el modelo) | HuggingFace | Publicado por Microsoft |
+| saisanthosh7/migration-llm-lora (este) | Adaptador sobre base de ~3,2 B | No disponible (base: 128.000) | No disponible | Hugging Face, 0 descargas | No disponible |
+| meta-llama/Llama-3.2-3B-Instruct | ~3,2 B | 128.000 tokens | Llama 3.2 Community License | Hugging Face oficial | Publicado por Meta |
+| Qwen/Qwen2.5-3B-Instruct | ~3,1 B | 32.768 tokens (ampliable) | Apache 2.0 (segun el modelo) | Hugging Face | Publicado por Alibaba |
+| microsoft/Phi-3.5-mini-instruct | ~3,8 B | 128.000 tokens | MIT (segun el modelo) | Hugging Face | Publicado por Microsoft |
 
 La comparación se limita a características estructurales: no hay métricas de este adaptador que permitan situarlo frente a alternativas, y las licencias de los modelos citados deben verificarse siempre en su repositorio oficial antes de uso comercial.
 
@@ -96,7 +96,7 @@ La comparación se limita a características estructurales: no hay métricas de 
 ## Enlaces
 
 - Repositorio del adaptador: https://huggingface.co/saisanthosh7/migration-llm-lora
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Modelo Llama 3.2 3B Instruct de Meta: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (repositorio): https://github.com/huggingface/trl

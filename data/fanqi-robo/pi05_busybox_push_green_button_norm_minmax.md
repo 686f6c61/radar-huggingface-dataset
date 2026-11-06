@@ -102,7 +102,7 @@ No se dispone de datos de contexto, licencia ni parametros de los dos modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fanqi-robo/pi05_busybox_push_green_button_norm_minmax
+- Modelo en Hugging Face: https://huggingface.co/fanqi-robo/pi05_busybox_push_green_button_norm_minmax
 - Checkpoints intermedios: https://huggingface.co/fanqi-robo/pi05_busybox_push_green_button_norm_minmax_ckpts
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/armnet/busybox_push_green_button

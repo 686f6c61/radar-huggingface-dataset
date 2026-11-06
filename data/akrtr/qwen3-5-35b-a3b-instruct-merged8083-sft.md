@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AKRTR/qwen3.5-35b-a3b-instruct-merged8083-sft | ~35.000 M | ~3.000 M | 256.000 tokens (segun nombre) | other | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-35B-A3B-Instruct (modelo base) | ~35.000 M | ~3.000 M | no disponible | no disponible | Repositorio HuggingFace del modelo base |
+| AKRTR/qwen3.5-35b-a3b-instruct-merged8083-sft | ~35.000 M | ~3.000 M | 256.000 tokens (segun nombre) | other | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-35B-A3B-Instruct (modelo base) | ~35.000 M | ~3.000 M | no disponible | no disponible | Repositorio Hugging Face del modelo base |
 | Otras alternativas MoE de tamano similar | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparados ni de especificaciones completas de terceros en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa fiable.
@@ -80,11 +80,11 @@ No se dispone de datos de rendimiento comparados ni de especificaciones completa
 - Sin validacion por la comunidad: el modelo no tiene descargas ni interacciones registradas, y no se ha publicado ninguna evaluacion independiente.
 - Entrenamiento de una sola epoca: el ajuste se realizo con `num_epochs: 1.0`, lo que limita el grado de adaptacion al dataset y puede no ser suficiente para tareas muy especificas.
 - Entorno muy reciente: las versiones declaradas (Transformers 5.6.0, PyTorch 2.10.0) pueden no estar disponibles en todas las plataformas de despliegue, lo que complica la reproducibilidad.
-- Trazabilidad del modelo base: en la model card, el enlace al modelo base apunta a una ruta local de sistema de ficheros en lugar de al repositorio de HuggingFace, lo que indica que la ficha se genero de forma automatica y no fue revisada.
+- Trazabilidad del modelo base: en la model card, el enlace al modelo base apunta a una ruta local de sistema de ficheros en lugar de al repositorio de Hugging Face, lo que indica que la ficha se genero de forma automatica y no fue revisada.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AKRTR/qwen3.5-35b-a3b-instruct-merged8083-sft
+- Repositorio Hugging Face: https://huggingface.co/AKRTR/qwen3.5-35b-a3b-instruct-merged8083-sft
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.5-35B-A3B-Instruct
 - Referencia del enlace de modelo base incluido en la model card (ruta local, no valida): https://huggingface.co//mnt/shared-storage-user/mineru2-shared/niujunbo/ldy/models/Qwen3.5-35B-A3B-Instruct
 - LLaMA-Factory (framework de entrenamiento declarado): no disponible en la informacion proporcionada

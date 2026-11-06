@@ -95,10 +95,10 @@ No se han publicado resultados de MMLU, GSM8K, GPQA ni de velocidad en tokens po
 
 | Modelo | Parámetros | Contexto | Tamaño / cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GLM-5.3-Flash-Strix-128GB-GGUF (esta ficha) | 320,8 B totales / ~18 B activos | 128K validados; 1M en el modelo base según terceros | 112,0 GiB, 3,00 bpw (IQ2_S/IQ3_XXS/Q5_K) | MIT | HuggingFace, 0 descargas |
-| GLM-5.3-Flash-Gorgon-GGUF | 320,8 B totales / ~18 B activos | No disponible en la información | 143,5 GiB, 3,84 bpw | MIT | HuggingFace |
-| GLM-5.3-Flash (Unsloth dinámicos, según guías de terceros) | 320,8 B totales / ~18 B activos | No disponible en la información | 93 GB (1 bit), 109 GB (2 bits), 120 GB (3 bits), 200 GB (4 bits) | MIT | HuggingFace |
-| GLM-5.3-Flash FP8 oficial (zai-org) | 320,8 B totales / ~18 B activos | 1M según guías de terceros | No disponible en la información | MIT | HuggingFace |
+| GLM-5.3-Flash-Strix-128GB-GGUF (esta ficha) | 320,8 B totales / ~18 B activos | 128K validados; 1M en el modelo base según terceros | 112,0 GiB, 3,00 bpw (IQ2_S/IQ3_XXS/Q5_K) | MIT | Hugging Face, 0 descargas |
+| GLM-5.3-Flash-Gorgon-GGUF | 320,8 B totales / ~18 B activos | No disponible en la información | 143,5 GiB, 3,84 bpw | MIT | Hugging Face |
+| GLM-5.3-Flash (Unsloth dinámicos, según guías de terceros) | 320,8 B totales / ~18 B activos | No disponible en la información | 93 GB (1 bit), 109 GB (2 bits), 120 GB (3 bits), 200 GB (4 bits) | MIT | Hugging Face |
+| GLM-5.3-Flash FP8 oficial (zai-org) | 320,8 B totales / ~18 B activos | 1M según guías de terceros | No disponible en la información | MIT | Hugging Face |
 
 La comparación relevante es interna a la familia: esta versión sacrifica 0,84 bpw frente a la referencia de 3,84 bpw para bajar de 143,5 GiB a 112,0 GiB, con un coste medido de 0,05 puntos de perplejidad y una coincidencia top-1 del 87,3 %. Frente a las cuantizaciones dinámicas de Unsloth, el tamaño es comparable al escalón de 2 bits de 109 GB, pero la receta es distinta: aquí no se poda ningún experto y la asignación de bits se decide por capas según la KL medida.
 

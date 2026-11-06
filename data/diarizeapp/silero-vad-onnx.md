@@ -6,7 +6,7 @@ Silero VAD v5 ONNX & QNN EPContext es una distribucion en formato ONNX del detec
 
 El modelo resuelve un problema clasico en pipelines de audio: segmentar habla de silencio y ruido antes de alimentar sistemas de reconocimiento automatico del habla (ASR), diarizacion de hablantes o transcripcion en tiempo real. La evaluacion se realiza en ventanas estaticas de 512 muestras (30 ms a 16 kHz), un tamano que encaja de forma natural con el procesamiento por bloques de los DSP y con los requisitos de baja latencia de la telefonia y la videoconferencia.
 
-Es relevante ahora por dos motivos. Primero, porque el despliegue en NPU de modelos de audio pequenos esta ganando interes en escenarios de borde (portatiles ARM, dispositivos empotrados) donde no se quiere depender de la GPU. Segundo, porque el repositorio se presenta como un espejo canonico con el objetivo explicito de evitar roturas de dependencias por enlaces 404, un problema frecuente cuando assets de terceros desaparecen de HuggingFace.
+Es relevante ahora por dos motivos. Primero, porque el despliegue en NPU de modelos de audio pequenos esta ganando interes en escenarios de borde (portatiles ARM, dispositivos empotrados) donde no se quiere depender de la GPU. Segundo, porque el repositorio se presenta como un espejo canonico con el objetivo explicito de evitar roturas de dependencias por enlaces 404, un problema frecuente cuando assets de terceros desaparecen de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -87,7 +87,7 @@ La comparativa se limita a caracteristicas estructurales porque no hay datos de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/diarizeapp/silero-vad-onnx
+- Repositorio en Hugging Face: https://huggingface.co/diarizeapp/silero-vad-onnx
 - Repositorio del mantenedor (diarizeapp): https://github.com/benzy/diarize
 - ONNX Runtime: https://onnxruntime.ai/
 - Qualcomm QNN SDK: no disponible en la informacion proporcionada

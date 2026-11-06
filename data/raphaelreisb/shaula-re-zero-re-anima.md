@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`raphaelreisb/shaula-re-zero-re-anima` es un artefacto de generacion de imagenes publicado en HuggingFace, no un modelo de lenguaje. Segun su propia model card, se trata de una adaptacion del personaje Shaula (シャウラ) de la serie *Re:Zero* (temporada 4), construida sobre el modelo base denominado "Anima" y cuyo origen declarado es una ficha de Civitai (modelo 2709228, version 3046176) del creador `nochekaiser881`.
+`raphaelreisb/shaula-re-zero-re-anima` es un artefacto de generacion de imagenes publicado en Hugging Face, no un modelo de lenguaje. Segun su propia model card, se trata de una adaptacion del personaje Shaula (シャウラ) de la serie *Re:Zero* (temporada 4), construida sobre el modelo base denominado "Anima" y cuyo origen declarado es una ficha de Civitai (modelo 2709228, version 3046176) del creador `nochekaiser881`.
 
-El repositorio de HuggingFace es un espejo o importacion: no declara pipeline, licencia, idiomas, tamano de fichero ni arquitectura, y acumula 0 descargas y 0 likes en el momento de la consulta. Las fechas de creacion y actualizacion estan separadas por ocho segundos (2026-09-26T17:46:39 y 2026-09-26T17:46:47), lo que apunta a una subida automatizada desde la plataforma de origen.
+El repositorio de Hugging Face es un espejo o importacion: no declara pipeline, licencia, idiomas, tamano de fichero ni arquitectura, y acumula 0 descargas y 0 likes en el momento de la consulta. Las fechas de creacion y actualizacion estan separadas por ocho segundos (2026-09-26T17:46:39 y 2026-09-26T17:46:47), lo que apunta a una subida automatizada desde la plataforma de origen.
 
 Su relevancia practica es acotada: sirve para generar ilustraciones consistentes de un unico personaje de anime mediante palabras de activacion, y su interes tecnico se limita a la composicion de tags y a los permisos de uso declarados en origen. No hay datos de entrenamiento, benchmarks ni evaluaciones publicadas.
 
@@ -18,12 +18,12 @@ Su relevancia practica es acotada: sirve para generar ilustraciones consistentes
 | Longitud de contexto | No aplica (modelo de generacion de imagenes) |
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | No disponible. Las palabras de activacion y la model card estan en ingles |
-| Licencia | No disponible en HuggingFace. Permisos declarados en la fuente original: `allowNoCredit: true`, `allowDerivatives: true`, `allowDifferentLicense: true`, `allowCommercialUse: ["RentCivit"]` |
+| Licencia | No disponible en Hugging Face. Permisos declarados en la fuente original: `allowNoCredit: true`, `allowDerivatives: true`, `allowDifferentLicense: true`, `allowCommercialUse: ["RentCivit"]` |
 | Formato de pesos | No disponible |
 | Tipo de artefacto | Adaptacion de personaje (previsiblemente LoRA, no confirmado) |
 | Modelo base | Anima |
 | Palabras de activacion | `shaula`, `shaula (re:zero)`, `long hair`, `brown hair`, `green eyes`, `multi-tied hair`, `medium breasts`, `anime screencap`, `navel`, `swimsuit`, `bikini`, `shorts`, `belt`, `cape`, `black bikini`, `black shorts`, `front-tie top`, `bikini top only`, `black cape`, `two-tone cape`, `orange cape` |
-| Autor en HuggingFace | raphaelreisb |
+| Autor en Hugging Face | raphaelreisb |
 | Creador original (fuente) | nochekaiser881 (Civitai) |
 | Descargas / likes | 0 / 0 |
 | Fecha de publicacion | 2026-09-26 |
@@ -57,7 +57,7 @@ Tampoco hay datos sobre el entrenamiento: se desconoce el numero de imagenes, la
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay FID, CLIP score, metricas de similitud de personaje ni comparaciones cuantitativas de ningun tipo. La ficha de HuggingFace no incluye ejemplos, y el repositorio registra 0 descargas y 0 likes, por lo que tampoco existen valoraciones de la comunidad que permitan estimar la calidad del resultado.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay FID, CLIP score, metricas de similitud de personaje ni comparaciones cuantitativas de ningun tipo. La ficha de Hugging Face no incluye ejemplos, y el repositorio registra 0 descargas y 0 likes, por lo que tampoco existen valoraciones de la comunidad que permitan estimar la calidad del resultado.
 
 ## Requisitos de hardware
 
@@ -77,14 +77,14 @@ No se dispone de datos verificables de modelos comparables concretos (parametros
 
 | Categoria | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este artefacto (adaptador de personaje sobre Anima) | No disponible | No aplica | Sin benchmarks publicados; 0 descargas, 0 likes | No declarada en HF; permisos de origen con uso comercial restringido a RentCivit | HuggingFace y Civitai (version 3046176) |
-| Adaptador de personaje entrenado a medida sobre un modelo anime publico | Depende del rango LoRA | No aplica | Depende del dataset propio; requiere evaluacion manual | La del modelo base y la del autor del adaptador | Amplia en Civitai y HuggingFace |
+| Este artefacto (adaptador de personaje sobre Anima) | No disponible | No aplica | Sin benchmarks publicados; 0 descargas, 0 likes | No declarada en HF; permisos de origen con uso comercial restringido a RentCivit | Hugging Face y Civitai (version 3046176) |
+| Adaptador de personaje entrenado a medida sobre un modelo anime publico | Depende del rango LoRA | No aplica | Depende del dataset propio; requiere evaluacion manual | La del modelo base y la del autor del adaptador | Amplia en Civitai y Hugging Face |
 | Checkpoint completo de tematica anime | Miles de millones | No aplica | Evaluable pero no comparable con adaptadores | Habitualmente permisiva con restricciones de uso | Amplia |
 | Modelo de difusion generalista (texto a imagen) | Miles de millones | No aplica | Buena adherencia a prompt, peor consistencia de personaje concreto | Licencias variadas, algunas restrictivas | Amplia |
 
 ## Limitaciones y advertencias
 
-- Licencia no declarada en HuggingFace: no hay terminos explicitos que regulen el uso del artefacto tal como se distribuye en este repositorio.
+- Licencia no declarada en Hugging Face: no hay terminos explicitos que regulen el uso del artefacto tal como se distribuye en este repositorio.
 - Los permisos de la fuente original limitan el uso comercial a `RentCivit`, es decir, la generacion a traves de la plataforma Civitai. Cualquier otro uso comercial debe negociarse con el creador y con el titular de los derechos del personaje.
 - Propiedad intelectual: Shaula y *Re:Zero* son marcas y obras protegidas de sus titulares (Kadokawa y autores). Generar y distribuir imagenes del personaje, especialmente con fines comerciales, puede infringir derechos de autor y de marca.
 - Riesgo de alucinacion visual: como todo modelo de difusion, puede producir atributos incorrectos del personaje (color de ojos, peinado, vestuario), manos deformes, texto ilegible y artefactos anatomicos, especialmente lejos de las condiciones del dataset.
@@ -97,6 +97,6 @@ No se dispone de datos verificables de modelos comparables concretos (parametros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raphaelreisb/shaula-re-zero-re-anima
+- Modelo en Hugging Face: https://huggingface.co/raphaelreisb/shaula-re-zero-re-anima
 - Fuente original declarada en Civitai: https://civitai.red/models/2709228?modelVersionId=3046176
 - No se han encontrado en la informacion proporcionada papers, repositorios de codigo, demos, blogs tecnicos ni espacios asociados al modelo.

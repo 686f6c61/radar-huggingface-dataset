@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario `francesca9805` en HuggingFace. Se trata de un modelo de generación de texto de arquitectura tipo GPT-2, con 86.508.288 parámetros totales confirmados a partir de los pesos en safetensors, y un tamano de repositorio de 0,2 GB. El entrenamiento se realizo mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (versión 0.23.0), según la model card del autor.
+El modelo `ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/eng_latn_100mb`, publicado por el usuario `francesca9805` en Hugging Face. Se trata de un modelo de generación de texto de arquitectura tipo GPT-2, con 86.508.288 parámetros totales confirmados a partir de los pesos en safetensors, y un tamano de repositorio de 0,2 GB. El entrenamiento se realizo mediante Supervised Fine-Tuning (SFT) utilizando la librería TRL (versión 0.23.0), según la model card del autor.
 
 El modelo base, `goldfish-models/eng_latn_100mb`, pertenece a la familia Goldfish de modelos monolingües entrenados sobre 100 MB de texto por idioma, y en este caso corresponde a inglés en escritura latina. El nombre del ajuste incluye la etiqueta `jpn`, lo que sugiere una orientación hacia el japonés tras el entrenamiento sobre los 100 MB empaquetados del modelo base, aunque esta interpretación no se confirma en la documentación disponible. El identificador también menciona componentes como "uniform" (posible tokenizador unificado), "newlex" (nuevo léxico) y "bfdiso", sin que se detalle su significado.
 
@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407` | 86,5 M | no disponible | no disponible | HuggingFace (0 descargas) | Ajuste SFT sobre Goldfish eng_latn_100mb |
-| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible (mismo orden de magnitud) | no disponible | no disponible | HuggingFace | Modelo monolingüe inglés entrenado con 100 MB |
-| `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407` | no disponible | no disponible | no disponible | HuggingFace | Variante del mismo autor, sufijo `tam` |
-| `francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfd_seed455` | no disponible | no disponible | no disponible | HuggingFace / FriendliAI | Variante con sufijo `swe` y semilla distinta |
+| `francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407` | 86,5 M | no disponible | no disponible | Hugging Face (0 descargas) | Ajuste SFT sobre Goldfish eng_latn_100mb |
+| `goldfish-models/eng_latn_100mb` (modelo base) | no disponible (mismo orden de magnitud) | no disponible | no disponible | Hugging Face | Modelo monolingüe inglés entrenado con 100 MB |
+| `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407` | no disponible | no disponible | no disponible | Hugging Face | Variante del mismo autor, sufijo `tam` |
+| `francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfd_seed455` | no disponible | no disponible | no disponible | Hugging Face / FriendliAI | Variante con sufijo `swe` y semilla distinta |
 | GPT-2 small (referencia) | 124 M | 1024 tokens | MIT (uso abierto) | Amplia | Referencia de arquitectura de tamano similar |
 
 ## Limitaciones y advertencias
@@ -82,16 +82,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Limitaciones de idioma: el modelo base es inglés monolingüe; el ajuste podría introducir capacidades en otro idioma, pero no hay datos que lo confirmen.
 - Restricciones de licencia: la licencia figura como "no disponible", por lo que no se puede garantizar su uso comercial. Debe contactarse con el autor antes de cualquier uso en producción.
 - Advertencias para producción: el repositorio tiene 0 descargas y 0 interacciones, no presenta benchmarks ni documentación de datos de entrenamiento, y su nombre incluye metadatos experimentales (semilla, configuraciones de tokenización) propios de un entorno de investigación. No se recomienda su uso en producción sin una evaluación previa.
-- La fecha de creación indicada (2026-09-30) es atípica y no se corresponde con el momento de la consulta; conviene verificar la validez del registro en HuggingFace.
+- La fecha de creación indicada (2026-09-30) es atípica y no se corresponde con el momento de la consulta; conviene verificar la validez del registro en Hugging Face.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407
+- Hugging Face (modelo): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Model card oficial de TRL (citada): https://github.com/huggingface/trl
 - Ejecución de Weights & Biases (entrenamiento): https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/7iyiexbv
-- Variante `tam` (HuggingFace): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407
-- Variante `jpn` con semilla 3407 (HuggingFace): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfd_seed3407
+- Variante `tam` (Hugging Face): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407
+- Variante `jpn` con semilla 3407 (Hugging Face): https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfd_seed3407
 - Variante `tam` (free2aitools): https://free2aitools.com/model/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfd_seed3407
 - Variante `swe` (FriendliAI): https://friendli.ai/models/francesca9805/ppt-wc-uniform-newlex-swe-before-100mb-packed-bfd_seed455
 - Variante `jpn` con semilla 10 (FriendliAI): https://friendli.ai/models/francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfd_seed10

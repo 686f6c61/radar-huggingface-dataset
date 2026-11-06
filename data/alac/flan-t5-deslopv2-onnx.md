@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alac/flan-t5-deslopV2-onnx` es una exportación al formato ONNX de un modelo de la familia FLAN-T5, publicada por el usuario `alac` en HuggingFace. El identificador y la etiqueta `t5` indican que se trata de un transformer encoder-decoder de tipo T5 afinado sobre la base de FLAN-T5, y el sufijo `deslopV2` sugiere una especialización en tareas de limpieza o reescritura de texto, aunque la model card no documenta ni el propósito exacto ni el proceso de ajuste.
+`alac/flan-t5-deslopV2-onnx` es una exportación al formato ONNX de un modelo de la familia FLAN-T5, publicada por el usuario `alac` en Hugging Face. El identificador y la etiqueta `t5` indican que se trata de un transformer encoder-decoder de tipo T5 afinado sobre la base de FLAN-T5, y el sufijo `deslopV2` sugiere una especialización en tareas de limpieza o reescritura de texto, aunque la model card no documenta ni el propósito exacto ni el proceso de ajuste.
 
 La relevancia práctica del repositorio es acotada: el autor no ha publicado pipeline, idiomas, datos de entrenamiento ni métricas, y la model card se reduce a la declaración de licencia. Su interés real está en el formato de distribución (ONNX, 0,9 GB de repositorio), que permite ejecutar el modelo con ONNX Runtime en CPU o GPU sin depender del stack de PyTorch, algo útil para despliegues ligeros y para inferencia en el navegador.
 
@@ -85,5 +85,5 @@ La comparación con las variantes de FLAN-T5 es aproximada: el repositorio no es
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alac/flan-t5-deslopV2-onnx
+- Hugging Face: https://huggingface.co/alac/flan-t5-deslopV2-onnx
 - Resultados relevantes de la búsqueda web: no disponible (la búsqueda no devolvió páginas relacionadas con el modelo ni con FLAN-T5).

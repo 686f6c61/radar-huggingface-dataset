@@ -74,7 +74,7 @@ La comparativa se limita a caracteristicas estructurales porque no hay datos de 
 
 ## Enlaces
 
-- Repositorio HuggingFace (re-host): https://huggingface.co/leok7v/Ternary-Bonsai-1.7B-gguf
+- Repositorio Hugging Face (re-host): https://huggingface.co/leok7v/Ternary-Bonsai-1.7B-gguf
 - Repositorio original (autoritativo): https://huggingface.co/prism-ml/Ternary-Bonsai-1.7B-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentacion de Bonsai 1.7B: https://docs.prismml.com/models/bonsai-1-7b

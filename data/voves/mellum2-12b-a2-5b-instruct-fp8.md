@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mellum2-12B-A2.5B-Instruct-FP8 es una versión cuantizada en FP8 del modelo Mellum2-12B-A2.5B-Instruct, desarrollado por JetBrains y publicado en HuggingFace por el usuario voves como parte de una colección de versiones comprimidas. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 12 000 millones de parámetros totales y 2 500 millones activos por token, especializado en generación de código y conversación técnica. La cuantización FP8 reduce el peso del modelo a aproximadamente 12,6 GB, lo que permite su despliegue en una única GPU, manteniendo un rendimiento cercano al del modelo original.
+Mellum2-12B-A2.5B-Instruct-FP8 es una versión cuantizada en FP8 del modelo Mellum2-12B-A2.5B-Instruct, desarrollado por JetBrains y publicado en Hugging Face por el usuario voves como parte de una colección de versiones comprimidas. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 12 000 millones de parámetros totales y 2 500 millones activos por token, especializado en generación de código y conversación técnica. La cuantización FP8 reduce el peso del modelo a aproximadamente 12,6 GB, lo que permite su despliegue en una única GPU, manteniendo un rendimiento cercano al del modelo original.
 
 El modelo base, Mellum2-12B-A2.5B-Instruct, está diseñado para ofrecer respuestas directas y de baja latencia sin externalizar cadenas de razonamiento explícitas, a diferencia de otras variantes que emiten bloques de pensamiento. Soporta una ventana de contexto de 131 072 tokens mediante una combinación de atención deslizante (sliding window de 1024) y atención completa, lo que lo hace adecuado para tareas que requieren manejo de código extenso o conversaciones multi-turno largas. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -79,8 +79,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/voves/Mellum2-12B-A2.5B-Instruct-FP8
-- Modelo base en HuggingFace: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct
+- Modelo cuantizado en Hugging Face: https://huggingface.co/voves/Mellum2-12B-A2.5B-Instruct-FP8
+- Modelo base en Hugging Face: https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Instruct
 - Configuracion de despliegue con vLLM: https://recipes.vllm.ai/JetBrains/Mellum2-12B-A2.5B-Instruct
 - Archivo YAML de configuracion: https://github.com/furyhawk/vllm-recipes/blob/main/models/JetBrains/Mellum2-12B-A2.5B-Instruct.yaml
 - Ficha tecnica en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-instruct-jetbrains

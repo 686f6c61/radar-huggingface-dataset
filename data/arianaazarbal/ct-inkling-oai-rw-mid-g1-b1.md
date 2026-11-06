@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ct-inkling-oai-rw-mid-g1-b1 | Adaptador LoRA r=64 sobre Inkling-Small | No disponible | No disponible (entrenado a 8192 tokens) | No disponible | HuggingFace, 0 descargas |
-| Thinking Machines Inkling-Small (modelo base) | Modelo completo | No disponible | No disponible | No disponible | HuggingFace (`thinkingmachines/Inkling-Small`) |
+| ct-inkling-oai-rw-mid-g1-b1 | Adaptador LoRA r=64 sobre Inkling-Small | No disponible | No disponible (entrenado a 8192 tokens) | No disponible | Hugging Face, 0 descargas |
+| Thinking Machines Inkling-Small (modelo base) | Modelo completo | No disponible | No disponible | No disponible | Hugging Face (`thinkingmachines/Inkling-Small`) |
 | Otros adaptadores constitucionales comparables | No disponible | No disponible | No disponible | No disponible | No se han identificado en la informacion proporcionada |
 
 No se dispone de datos de benchmarks ni de modelos alternativos equivalentes en la información proporcionada, por lo que la comparación de rendimiento queda fuera de alcance.
@@ -86,7 +86,7 @@ No se dispone de datos de benchmarks ni de modelos alternativos equivalentes en 
 
 ## Enlaces
 
-- [Modelo en HuggingFace: arianaazarbal/ct-inkling-oai-rw-mid-g1-b1](https://huggingface.co/arianaazarbal/ct-inkling-oai-rw-mid-g1-b1)
+- [Modelo en Hugging Face: arianaazarbal/ct-inkling-oai-rw-mid-g1-b1](https://huggingface.co/arianaazarbal/ct-inkling-oai-rw-mid-g1-b1)
 - [Modelo base: thinkingmachines/Inkling-Small](https://huggingface.co/thinkingmachines/Inkling-Small)
 - Paper, blog o repositorio del programa de entrenamiento constitucional: no disponible en la informacion proporcionada
 - Demo o espacio interactivo: no disponible en la informacion proporcionada

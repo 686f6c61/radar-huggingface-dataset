@@ -77,7 +77,7 @@ No se dispone de información suficiente para comparar rendimiento real. La comp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-civil_ffn-only
+- Repositorio Hugging Face: https://huggingface.co/Jongbin-kr/llama-3.1-8b-instruct_lbox-casename-civil_ffn-only
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Enlace a Weights & Biases (entrenamiento): https://wandb.ai/jongbin-kr-skiml_moe/sft_dense_lbox_ffn_only/runs/kc3lxgp9
 - TRL (librería de entrenamiento): https://github.com/huggingface/trl

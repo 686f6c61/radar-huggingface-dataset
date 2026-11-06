@@ -82,11 +82,11 @@ Los datos de mAP de los EfficientDet provienen del paper original. Los de YOLOv5
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zeromodels/efficientdet_d6
+- Modelo en Hugging Face: https://huggingface.co/zeromodels/efficientdet_d6
 - Colección de variantes EfficientDet: https://huggingface.co/collections/zeromodels/efficientdet
 - Repositorio ZeroModels en GitHub: https://github.com/IMvision12/ZeroModels
 - Documentación de EfficientDet en ZeroModels: https://imvision12.github.io/ZeroModels/efficientdet/
 - Paper original (arXiv): https://arxiv.org/abs/1911.09070
-- Paper en HuggingFace: https://huggingface.co/papers/1911.09070
+- Paper en Hugging Face: https://huggingface.co/papers/1911.09070
 - Repositorio original de Google AutoML: https://github.com/google/automl/tree/master/efficientdet
 - Tutorial de EfficientDet en Colab (Google): https://colab.research.google.com/github/google/automl/blob/master/efficientdet/tutorial.ipynb

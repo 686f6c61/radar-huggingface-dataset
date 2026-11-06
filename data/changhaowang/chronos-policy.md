@@ -6,7 +6,7 @@ Chronos Policy es una política robótica de imitación presentada por Changhao 
 
 La arquitectura es un diffusion transformer con RoPE consciente del tiempo (time-aware RoPE), entrenado mediante aprendizaje por imitación sobre observaciones asíncronas y de múltiple frecuencia, sin realinear los datos a una rejilla temporal fija. Esta formulación aborda un fallo práctico habitual: cuando la tasa de observación, los retrasos de red o la latencia de inferencia varían, las políticas entrenadas sobre secuencias a ritmo fijo se degradan porque el tiempo queda implícito en la posición del token.
 
-El repositorio de HuggingFace publica 48 checkpoints originales del paper (política Chronos y baseline Decision Transformer, tres semillas, ocho tareas de simulación), de unos 560 MB por fichero incluyendo pesos, configuración y normalizadores. Es relevante ahora porque ofrece una alternativa explícitamente temporal a Diffusion Policy y a los transformers de decisión clásicos, con verificación de equivalencia bit a bit frente a la implementación de referencia.
+El repositorio de Hugging Face publica 48 checkpoints originales del paper (política Chronos y baseline Decision Transformer, tres semillas, ocho tareas de simulación), de unos 560 MB por fichero incluyendo pesos, configuración y normalizadores. Es relevante ahora porque ofrece una alternativa explícitamente temporal a Diffusion Policy y a los transformers de decisión clásicos, con verificación de equivalencia bit a bit frente a la implementación de referencia.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ El repositorio de HuggingFace publica 48 checkpoints originales del paper (polí
 
 Chronos Policy es un diffusion transformer que genera trayectorias de acción mediante difusión, con la particularidad de que la atención incorpora información temporal absoluta a través de un RoPE dependiente del tiempo. En lugar de tratar una secuencia de observaciones como una rejilla regular de tokens, el modelo recibe cada observación junto con su marca de tiempo de captura y consulta acciones en sus marcas de tiempo futuras de ejecución. Esto le permite aprender directamente de datos asíncronos y de múltiple tasa, sin remuestreo ni alineamiento previo a una rejilla fija, y le da robustez frente a variaciones en la tasa de sensado, retrasos y latencia de inferencia.
 
-El repositorio distribuye los checkpoints del paper: ocho tareas de simulación, con la política Chronos y un baseline Decision Transformer (DT) para cada tarea y tres semillas por configuración, lo que suma 48 ficheros. El layout es `<task>/<chronos|dt>/seed<0|1|2>.ckpt`. No se detallan en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO (no procede en este dominio, pero no se confirma el pipeline exacto). La validación publicada indica que el modelo compacto de la release coincide bit a bit con la implementación fijada de referencia en 32 comparaciones DDIM de ocho pasos, cubriendo los checkpoints seed-0 de Chronos y DT en las ocho tareas, tanto con observaciones ordinarias como con observaciones con padding. Los datasets asociados se publican en un repositorio separado de HuggingFace.
+El repositorio distribuye los checkpoints del paper: ocho tareas de simulación, con la política Chronos y un baseline Decision Transformer (DT) para cada tarea y tres semillas por configuración, lo que suma 48 ficheros. El layout es `<task>/<chronos|dt>/seed<0|1|2>.ckpt`. No se detallan en la información disponible el volumen de datos de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO (no procede en este dominio, pero no se confirma el pipeline exacto). La validación publicada indica que el modelo compacto de la release coincide bit a bit con la implementación fijada de referencia en 32 comparaciones DDIM de ocho pasos, cubriendo los checkpoints seed-0 de Chronos y DT en las ocho tareas, tanto con observaciones ordinarias como con observaciones con padding. Los datasets asociados se publican en un repositorio separado de Hugging Face.
 
 ## Capacidades
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto / entrada | Modelado del tiempo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chronos Policy | no disponible (~560 MB por checkpoint) | Observaciones asíncronas con timestamps | Explícito (time-aware RoPE, tiempos de captura y ejecución) | no disponible | Checkpoints en HuggingFace, código en GitHub |
+| Chronos Policy | no disponible (~560 MB por checkpoint) | Observaciones asíncronas con timestamps | Explícito (time-aware RoPE, tiempos de captura y ejecución) | no disponible | Checkpoints en Hugging Face, código en GitHub |
 | DT (baseline en el mismo repo) | no disponible | Secuencias observación-acción a ritmo fijo | Implícito en la posición de la secuencia | no disponible | Checkpoints incluidos junto a Chronos |
 | Diffusion Policy (referencia por tag del repo) | no disponible | Secuencias observación-acción a ritmo fijo | Implícito en la posición de la secuencia | no disponible | no disponible en esta información |
 
@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/changhaowang/chronos-policy
+- Modelo en Hugging Face: https://huggingface.co/changhaowang/chronos-policy
 - Dataset asociado: https://huggingface.co/datasets/changhaowang/chronos-policy-data
 - Paper (arXiv): https://arxiv.org/abs/2610.13929
 - Paper (PDF): https://arxiv.org/pdf/2610.13929v1

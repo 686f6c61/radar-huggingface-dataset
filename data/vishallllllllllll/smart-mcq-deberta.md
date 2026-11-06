@@ -54,9 +54,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `vishallllllllllll/smart-mcq-deberta` | 184.422.913 | no disponible | no disponible | HuggingFace |
-| `Aarushive/smart-mcq-solver-deberta-lora` | no disponible | no disponible | no disponible | HuggingFace (LoRA) |
-| `microsoft/deberta-v3-base` | 184.422.913 | 512 tokens (base) | MIT | HuggingFace |
+| `vishallllllllllll/smart-mcq-deberta` | 184.422.913 | no disponible | no disponible | Hugging Face |
+| `Aarushive/smart-mcq-solver-deberta-lora` | no disponible | no disponible | no disponible | Hugging Face (LoRA) |
+| `microsoft/deberta-v3-base` | 184.422.913 | 512 tokens (base) | MIT | Hugging Face |
 
 El modelo comparado con su base original `microsoft/deberta-v3-base` incorpora un fine-tuning específico para multiple-choice, mientras que el checkpoint base es genérico. La versión LoRA `Aarushive/smart-mcq-solver-deberta-lora` persigue un objetivo similar mediante adaptadores de bajo rango, aunque no se dispone de datos de parámetros ni de rendimiento para compararlos.
 
@@ -71,6 +71,6 @@ El modelo comparado con su base original `microsoft/deberta-v3-base` incorpora u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vishallllllllllll/smart-mcq-deberta
+- Modelo en Hugging Face: https://huggingface.co/vishallllllllllll/smart-mcq-deberta
 - Modelo similar (LoRA): https://huggingface.co/Aarushive/smart-mcq-solver-deberta-lora
 - Perfil de usuario con modelo similar: https://huggingface.co/22ds300103

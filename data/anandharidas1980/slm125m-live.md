@@ -82,7 +82,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de tamano si
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AnandHaridas1980/slm125m-live
+- Hugging Face: https://huggingface.co/AnandHaridas1980/slm125m-live
 - Sitio web del proyecto: https://slm125m.vercel.app/
 - Repositorio GitHub (pipeline completo): https://github.com/shivamfet/slm125m
 - Modelo base alternativo en HF: https://huggingface.co/seetha0712/slm125m-live-base

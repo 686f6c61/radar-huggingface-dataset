@@ -100,7 +100,7 @@ Comparativa con alternativas fuera de esta familia (Llama, Qwen, Mistral u otros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jfan/gemma-4-e4b-web-mtp-vision-litert-lm
+- Modelo en Hugging Face: https://huggingface.co/jfan/gemma-4-e4b-web-mtp-vision-litert-lm
 - Runtime web LiteRT-LM: https://huggingface.co/jfan/litert-lm-web-runtime
 - Variante Gemma 4 E2B: https://huggingface.co/jfan/gemma-4-e2b-web-mtp-vision-litert-lm
 - Paper, blog o repositorio adicionales: no disponible (los resultados de la búsqueda web no contienen enlaces relevantes al modelo; solo devuelven páginas de Instagram sin relación).

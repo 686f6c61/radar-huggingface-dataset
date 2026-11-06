@@ -2,7 +2,7 @@
 
 ## Resumen
 
-JustRL-Qwen3-1p7b-BatchSelective-Top10pct es un ajuste de razonamiento (reinforcement learning) sobre el modelo base Qwen3-1.7B, publicado por el usuario SelectiveDOPD en HuggingFace. El nombre del repositorio indica que se trata de un experimento de RL denominado internamente `justrl_qwen3_1p7b_JSD_rel_90_100_batch-agg`, dentro de una línea de trabajo llamada BiDirect-OPD, con una variante de seleccion por lotes sobre el 10 % superior de las muestras. El modelo tiene 2.031.739.904 parametros totales (2,03 mil millones), lo que coincide con el recuento de parametros totales de Qwen3-1.7B, donde "1.7B" se refiere a los parametros no de embedding.
+JustRL-Qwen3-1p7b-BatchSelective-Top10pct es un ajuste de razonamiento (reinforcement learning) sobre el modelo base Qwen3-1.7B, publicado por el usuario SelectiveDOPD en Hugging Face. El nombre del repositorio indica que se trata de un experimento de RL denominado internamente `justrl_qwen3_1p7b_JSD_rel_90_100_batch-agg`, dentro de una línea de trabajo llamada BiDirect-OPD, con una variante de seleccion por lotes sobre el 10 % superior de las muestras. El modelo tiene 2.031.739.904 parametros totales (2,03 mil millones), lo que coincide con el recuento de parametros totales de Qwen3-1.7B, donde "1.7B" se refiere a los parametros no de embedding.
 
 El repositorio contiene 15 checkpoints intermedios del entrenamiento (cada 20 pasos, desde `global_step_20` hasta `global_step_300`), siendo `global_step_300` el que ocupa la rama `main`. Esto sugiere un entrenamiento de RL relativamente corto (300 pasos) del que se conservan instantaneas para reproducibilidad y analisis de la curva de aprendizaje. El tamano del repositorio es de 44,7 GB, coherente con almacenar esos 15 checkpoints completos.
 
@@ -33,7 +33,7 @@ La unica informacion estructural confirmada es la existencia de 15 checkpoints (
 
 ## Capacidades
 
-- Generacion de texto y conversacion multi-turno: el modelo esta etiquetado como `text-generation` y `conversational` en HuggingFace.
+- Generacion de texto y conversacion multi-turno: el modelo esta etiquetado como `text-generation` y `conversational` en Hugging Face.
 - Razonamiento y matemeticas: al derivar de Qwen3-1.7B y haberse sometido a un proceso de RL, es esperable cierta capacidad de razonamiento, aunque no hay evidencia publicada que lo cuantifique.
 - Capacidades multilingues: no disponibles. No se declara lista de idiomas ni se referencia la cobertura multilingue del modelo base.
 - Tool calling / function calling: no documentado en la model card. Qwen3 introduce soporte de llamadas a herramientas en su plantilla de chat, pero no se confirma que este ajuste lo preserve.
@@ -72,7 +72,7 @@ Las siguientes estimaciones se derivan del recuento de parametros confirmado (2,
 
 | Modelo | Parametros totales | Contexto | Tipo de ajuste | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JustRL-Qwen3-1p7b-BatchSelective-Top10pct | 2,03 B | No disponible (base: 32.768 tokens) | RL sobre Qwen3-1.7B | No disponible | HuggingFace, 0 descargas |
+| JustRL-Qwen3-1p7b-BatchSelective-Top10pct | 2,03 B | No disponible (base: 32.768 tokens) | RL sobre Qwen3-1.7B | No disponible | Hugging Face, 0 descargas |
 | Qwen3-1.7B (modelo base) | 2,03 B | 32.768 tokens (131.072 con YaRN) | Preentrenamiento + post-entrenamiento | Apache 2.0 (segun el modelo base) | Ampliamente disponible |
 | Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens | SFT + RLHF | Llama 3.2 Community License | Ampliamente disponible |
 | SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | SFT + DPO | Apache 2.0 | Ampliamente disponible |
@@ -93,7 +93,7 @@ La comparacion es estructural: no hay datos de rendimiento publicados para el mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-BatchSelective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-BatchSelective-Top10pct
 - Rama principal (checkpoint `global_step_300`): https://huggingface.co/SelectiveDOPD/JustRL-Qwen3-1p7b-BatchSelective-Top10pct/tree/main
 - Ramas de checkpoints anteriores: `global_step_20`, `global_step_40`, `global_step_60`, `global_step_80`, `global_step_100`, `global_step_120`, `global_step_140`, `global_step_160`, `global_step_180`, `global_step_200`, `global_step_220`, `global_step_240`, `global_step_260`, `global_step_280`, accesibles como revisiones del mismo repositorio.
 - Modelo base inferido (no confirmado en la model card): https://huggingface.co/Qwen/Qwen3-1.7B

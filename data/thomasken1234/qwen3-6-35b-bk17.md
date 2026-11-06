@@ -61,7 +61,7 @@ No se dispone de datos adicionales sobre benchmarks de lenguaje general (MMLU, G
 
 - Al ser un modelo MoE con 3B parámetros activos, la inferencia es eficiente en cómputo, pero los pesos totales (35,95B) requieren memoria suficiente para cargarlos. En FP16, el modelo necesita aproximadamente 72 GB de VRAM, mientras que en cuantización de 4 bits (no oficial, pero probable con herramientas como llama.cpp) podría reducirse a unos 18-20 GB.
 - GPU recomendadas: para FP16 se necesitan GPUs de datacenter como A100 80GB, H100 80GB o múltiples RTX 4090 (24GB cada una) con paralelismo. Con cuantización 4-bit, una RTX 4090 o incluso una MacBook con 32GB de RAM unificada podrían ser suficientes.
-- Compatible con frameworks de inferencia como vLLM, SGLang, KTransformers y Transformers de HuggingFace. También se espera soporte en llama.cpp y Ollama a través de conversiones GGUF de la comunidad.
+- Compatible con frameworks de inferencia como vLLM, SGLang, KTransformers y Transformers de Hugging Face. También se espera soporte en llama.cpp y Ollama a través de conversiones GGUF de la comunidad.
 - La latencia y el throughput dependen en gran medida del hardware y la cuantización. Con 3B activos, el rendimiento en tokens por segundo es significativamente superior al de un modelo denso de 35B, pero no se proporcionan cifras oficiales.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ El modelo Qwen3.6-35B-A3B se sitúa en una posición intermedia entre su predece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/thomasken1234/qwen3.6-35b-bk17
+- Repositorio Hugging Face: https://huggingface.co/thomasken1234/qwen3.6-35b-bk17
 - Repositorio GitHub oficial de Qwen3.6: https://github.com/QwenLM/Qwen3.6
 - Blog oficial de Qwen3.6-35B-A3B: https://qwen.ai/blog?id=qwen3.6-35b-a3b
 - Guía completa en InsiderLLM: https://insiderllm.com/guides/qwen-3-6-local-ai-guide/

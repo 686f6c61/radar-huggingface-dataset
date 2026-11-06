@@ -4,7 +4,7 @@
 
 El modelo `ads2009/turkish-ai-text-detector-distilberturk-v5` es un clasificador de texto basado en la arquitectura DistilBERT, diseñado para la detección de texto generado por inteligencia artificial en idioma turco. Aunque la model card publicada por el autor no contiene información detallada, el nombre del repositorio y las etiquetas asociadas (`text-classification`, `distilbert`) indican claramente su propósito: distinguir entre texto escrito por humanos y texto producido por modelos de lenguaje en turco.
 
-El modelo cuenta con 68.090.114 parámetros, lo que lo sitúa en la categoría de modelos pequeños y eficientes, adecuados para despliegue en entornos con recursos limitados. Fue subido al Hub de HuggingFace el 1 de septiembre de 2026 por el usuario `ads2009`, que también ha publicado otras variantes como `turkish-ai-text-detector-berturk` y `turkish-ai-text-detector-distilberturk-v3`. La relevancia de este tipo de herramientas ha crecido con la proliferación de contenido generado por IA, especialmente en contextos educativos, periodísticos y de moderación de plataformas.
+El modelo cuenta con 68.090.114 parámetros, lo que lo sitúa en la categoría de modelos pequeños y eficientes, adecuados para despliegue en entornos con recursos limitados. Fue subido al Hub de Hugging Face el 1 de septiembre de 2026 por el usuario `ads2009`, que también ha publicado otras variantes como `turkish-ai-text-detector-berturk` y `turkish-ai-text-detector-distilberturk-v3`. La relevancia de este tipo de herramientas ha crecido con la proliferación de contenido generado por IA, especialmente en contextos educativos, periodísticos y de moderación de plataformas.
 
 La ficha oficial no proporciona detalles sobre el entrenamiento, los datos utilizados ni la licencia, por lo que gran parte de la información técnica debe considerarse no disponible o inferida a partir del nombre y las etiquetas.
 
@@ -31,7 +31,7 @@ No se dispone de información sobre el proceso de entrenamiento: ni el conjunto 
 
 - Clasificación de texto en turco: el modelo está diseñado para etiquetar fragmentos de texto como generados por IA o por humanos, según se infiere del nombre y la tarea de `text-classification`.
 - Inferencia eficiente: al ser una variante destilada, requiere menos recursos computacionales que un BERT completo, lo que facilita su uso en entornos de producción con CPU o GPUs modestas.
-- Integración con el ecosistema HuggingFace: compatible con la librería `transformers` y con `text-embeddings-inference`, lo que permite su despliegue mediante endpoints estándar.
+- Integración con el ecosistema Hugging Face: compatible con la librería `transformers` y con `text-embeddings-inference`, lo que permite su despliegue mediante endpoints estándar.
 - No se han documentado capacidades adicionales como generación de texto, razonamiento multi-paso, tool calling o soporte multilingüe más allá del turco.
 
 ## Casos de uso
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ads2009/turkish-ai-text-detector-distilberturk-v5 | 68M | no disponible | Detección de IA en turco | no disponible | HuggingFace |
-| ads2009/turkish-ai-text-detector-berturk | no disponible | no disponible | Detección de IA en turco | no disponible | HuggingFace |
-| ads2009/turkish-ai-text-detector-distilberturk-v3 | no disponible | no disponible | Detección de IA en turco | no disponible | HuggingFace |
+| ads2009/turkish-ai-text-detector-distilberturk-v5 | 68M | no disponible | Detección de IA en turco | no disponible | Hugging Face |
+| ads2009/turkish-ai-text-detector-berturk | no disponible | no disponible | Detección de IA en turco | no disponible | Hugging Face |
+| ads2009/turkish-ai-text-detector-distilberturk-v3 | no disponible | no disponible | Detección de IA en turco | no disponible | Hugging Face |
 | SaKinLord/turkish-ai-detector | no disponible | no disponible | Detección de IA en turco | no disponible | GitHub |
 
 No se dispone de datos comparativos de rendimiento entre estas opciones. El modelo v5 parece ser una iteración posterior a la v3, pero no hay documentación que explique las diferencias. El detector de SaKinLord utiliza señales de curvatura del modelo de lenguaje y un meta-clasificador a nivel de documento, un enfoque distinto al de DistilBERT.
@@ -77,7 +77,7 @@ No se dispone de datos comparativos de rendimiento entre estas opciones. El mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v5
+- Modelo en Hugging Face: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v5
 - Variante berturk: https://huggingface.co/ads2009/turkish-ai-text-detector-berturk
 - Variante v3: https://huggingface.co/ads2009/turkish-ai-text-detector-distilberturk-v3
 - Detector alternativo en GitHub: https://github.com/SaKinLord/turkish-ai-detector

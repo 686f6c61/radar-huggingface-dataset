@@ -97,7 +97,7 @@ Los datos de la tabla corresponden a la documentacion publica de cada modelo bas
 - Fechas y versiones anomalas: el repositorio declara versiones de librerias (TRL 1.13.0, Transformers 5.17.0, PyTorch 2.11.0) muy posteriores a las actuales, dato a verificar antes de reproducir el entrenamiento.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/Devubiodee/plutus-gpt-oss-20b-lora
+- Modelo en Hugging Face: https://huggingface.co/Devubiodee/plutus-gpt-oss-20b-lora
 - Modelo base utilizado: https://huggingface.co/unsloth/gpt-oss-20b-unsloth-bnb-4bit
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Modelo gpt-oss-20b original: https://huggingface.co/openai/gpt-oss-20b

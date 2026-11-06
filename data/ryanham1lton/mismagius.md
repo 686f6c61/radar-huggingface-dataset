@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Ryanham1lton/Mismagius` en HuggingFace no contiene información técnica sustancial. La model card se limita a declarar la licencia `cc-by-4.0` y no incluye descripción, arquitectura, parámetros, dataset de entrenamiento ni ningún otro dato relevante. El tamaño del repositorio es de 0,1 GB, lo que sugiere que podría contener pesos de un modelo, pero sin documentación no es posible determinar su naturaleza, origen o capacidades. No se ha publicado ningún benchmark, ejemplo de uso o especificación técnica en la página del modelo. Tampoco se ha encontrado información complementaria en la web que permita identificar este modelo concreto; las búsquedas devuelven resultados de modelos homónimos en plataformas de generación de imágenes (SeaArt, PixAI) que no guardan relación documentada con este repositorio.
+El repositorio `Ryanham1lton/Mismagius` en Hugging Face no contiene información técnica sustancial. La model card se limita a declarar la licencia `cc-by-4.0` y no incluye descripción, arquitectura, parámetros, dataset de entrenamiento ni ningún otro dato relevante. El tamaño del repositorio es de 0,1 GB, lo que sugiere que podría contener pesos de un modelo, pero sin documentación no es posible determinar su naturaleza, origen o capacidades. No se ha publicado ningún benchmark, ejemplo de uso o especificación técnica en la página del modelo. Tampoco se ha encontrado información complementaria en la web que permita identificar este modelo concreto; las búsquedas devuelven resultados de modelos homónimos en plataformas de generación de imágenes (SeaArt, PixAI) que no guardan relación documentada con este repositorio.
 
 ## Especificaciones tecnicas
 
@@ -50,5 +50,5 @@ No disponible. No se puede establecer una comparativa con otros modelos al carec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Ryanham1lton/Mismagius
+- Repositorio Hugging Face: https://huggingface.co/Ryanham1lton/Mismagius
 - Perfil del autor: https://huggingface.co/Ryanham1lton

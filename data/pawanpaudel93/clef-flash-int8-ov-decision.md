@@ -87,7 +87,7 @@ Entorno de medición: Intel Core Ultra 7 258V (Arc 140V iGPU, 32 GB), Windows 11
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/pawanpaudel93/clef-flash-int8-ov-decision
+- Repositorio Hugging Face: https://huggingface.co/pawanpaudel93/clef-flash-int8-ov-decision
 - Modelo base fine-tuneado: https://huggingface.co/Cloudflare/clef-flash
 - IR int8 de referencia: https://huggingface.co/OpenVINO/Qwen3.5-9B-int8-ov
 - Modelo original: https://huggingface.co/Qwen/Qwen3.5-9B

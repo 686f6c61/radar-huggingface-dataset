@@ -78,8 +78,8 @@ Evo-1 se distingue por su menor tamaño y su enfoque de entrenamiento de bajo co
 
 ## Enlaces
 
-- [HuggingFace - IoriSou0826/evo1_libero_spatial_stage2_s0_main](https://huggingface.co/IoriSou0826/evo1_libero_spatial_stage2_s0_main)
+- [Hugging Face - IoriSou0826/evo1_libero_spatial_stage2_s0_main](https://huggingface.co/IoriSou0826/evo1_libero_spatial_stage2_s0_main)
 - [GitHub - MINT-SJTU/Evo-1](https://github.com/MINT-SJTU/Evo-1)
 - [arXiv - Evo-1: Lightweight Vision-Language-Action Model](https://arxiv.org/abs/2511.04555)
-- [HuggingFace - zuoxingdong/evo1_libero (checkpoint similar)](https://huggingface.co/zuoxingdong/evo1_libero)
+- [Hugging Face - zuoxingdong/evo1_libero (checkpoint similar)](https://huggingface.co/zuoxingdong/evo1_libero)
 - [RLinf documentation - RL on Evo-1 Models](https://rlinf.readthedocs.io/en/latest/rst_source/examples/embodied/evo1.html)

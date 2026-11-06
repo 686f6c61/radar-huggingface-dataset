@@ -2,7 +2,7 @@
 
 ## Resumen
 
-blaser.3000 es un repositorio publicado en HuggingFace por el usuario Mika-FaceHug1Thru5 bajo licencia MIT y con la etiqueta de region `us`. La informacion publica disponible es practicamente inexistente: no se declara pipeline, no se declaran idiomas, no hay etiquetas de arquitectura ni de formato de pesos, y la model card se limita a una unica linea en la que se afirma que "communitycharts.base44.app is the Moguel of Blaser 3000 model", una frase sin valor tecnico que no describe el modelo, sus datos de entrenamiento ni su funcion.
+blaser.3000 es un repositorio publicado en Hugging Face por el usuario Mika-FaceHug1Thru5 bajo licencia MIT y con la etiqueta de region `us`. La informacion publica disponible es practicamente inexistente: no se declara pipeline, no se declaran idiomas, no hay etiquetas de arquitectura ni de formato de pesos, y la model card se limita a una unica linea en la que se afirma que "communitycharts.base44.app is the Moguel of Blaser 3000 model", una frase sin valor tecnico que no describe el modelo, sus datos de entrenamiento ni su funcion.
 
 El repositorio presenta 0 descargas y 1 like, y fue creado y actualizado el mismo dia (26 de septiembre de 2026, con unos siete minutos de diferencia entre ambos eventos). Este perfil de actividad es compatible con un repositorio de prueba, un placeholder o un artefacto subido sin documentacion, mas que con un modelo destinado a uso real. No se ha localizado ninguna publicacion, paper, blog tecnico ni hilo de discusion que describa el modelo.
 
@@ -40,7 +40,7 @@ Los siguientes escenarios son condicionales: solo serian aplicables si una evalu
 - Analisis de linaje del modelo: comparar el tokenizador y el `config.json` con modelos publicos conocidos para determinar si se trata de un fine-tuning, una cuantizacion o un artefacto derivado.
 - Auditoria de licencia y procedencia: aunque la licencia declarada es MIT, conviene verificar la procedencia de los datos y pesos antes de cualquier uso comercial, dado que la model card no aporta trazabilidad.
 - Prototipado interno no productivo: en caso de que el modelo funcione, usarlo unicamente en experimentos internos de baja criticidad mientras no existan datos de rendimiento publicados.
-- Docencia y experimentacion con HuggingFace: el repositorio sirve como caso practico de como una model card incompleta dificulta la evaluacion y por que conviene exigir documentacion minima antes de adoptar un modelo.
+- Docencia y experimentacion con Hugging Face: el repositorio sirve como caso practico de como una model card incompleta dificulta la evaluacion y por que conviene exigir documentacion minima antes de adoptar un modelo.
 
 ## Benchmarks y rendimiento
 
@@ -71,7 +71,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mika-FaceHug1Thru5/blaser.3000
+- Repositorio en Hugging Face: https://huggingface.co/Mika-FaceHug1Thru5/blaser.3000
 - Model card del autor: incluida en el repositorio anterior, con una unica linea que menciona `communitycharts.base44.app`
 - Paper o informe tecnico: no disponible
 - Repositorio de codigo: no disponible

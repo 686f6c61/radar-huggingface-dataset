@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TOFU-phi-1.5-forget10-ihl_embed-epoch12 es un checkpoint de investigacion publicado por el usuario g-assismoraes en HuggingFace. Se trata de un ajuste fino del modelo locuslab/tofu_ft_phi-1.5 (a su vez derivado de microsoft/phi-1_5) dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark academico disenado para evaluar tecnicas de "machine unlearning", es decir, la capacidad de eliminar selectivamente el conocimiento de un subconjunto de datos de entrenamiento sin degradar el rendimiento general del modelo.
+TOFU-phi-1.5-forget10-ihl_embed-epoch12 es un checkpoint de investigacion publicado por el usuario g-assismoraes en Hugging Face. Se trata de un ajuste fino del modelo locuslab/tofu_ft_phi-1.5 (a su vez derivado de microsoft/phi-1_5) dentro del marco TOFU (Task of Fictitious Unlearning), un benchmark academico disenado para evaluar tecnicas de "machine unlearning", es decir, la capacidad de eliminar selectivamente el conocimiento de un subconjunto de datos de entrenamiento sin degradar el rendimiento general del modelo.
 
 El checkpoint corresponde al epoch 12 de un entrenamiento de 20 epocas en el que se aplica una tecnica denominada IHL (probablemente "Inverted Hinge Loss" o una variante de perdida con margen invertido) combinada con un reinicio de los embeddings de entrada y la cabeza LM desde el modelo original microsoft/phi-1_5, manteniendo el resto de pesos del transformer entrenados en TOFU. El objetivo es el conjunto "forget10", uno de los splits estandar de TOFU en el que se busca olvidar el 10 % de los autores ficticios.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch12 | 1.4B | 2048 (heredado) | Unlearning (TOFU forget10) | Apache 2.0 | HuggingFace |
-| locuslab/tofu_ft_phi-1.5 | 1.4B | 2048 | Fine-tune TOFU completo (sin olvido) | Apache 2.0 | HuggingFace |
-| microsoft/phi-1_5 | 1.4B | 2048 | Modelo base de razonamiento y codigo | MIT | HuggingFace |
-| locuslab/tofu_llama2-7b | 7B | 4096 | Fine-tune TOFU sobre Llama 2 | Llama 2 license | HuggingFace |
+| g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch12 | 1.4B | 2048 (heredado) | Unlearning (TOFU forget10) | Apache 2.0 | Hugging Face |
+| locuslab/tofu_ft_phi-1.5 | 1.4B | 2048 | Fine-tune TOFU completo (sin olvido) | Apache 2.0 | Hugging Face |
+| microsoft/phi-1_5 | 1.4B | 2048 | Modelo base de razonamiento y codigo | MIT | Hugging Face |
+| locuslab/tofu_llama2-7b | 7B | 4096 | Fine-tune TOFU sobre Llama 2 | Llama 2 license | Hugging Face |
 
 El checkpoint se diferencia de locuslab/tofu_ft_phi-1.5 en que aplica desaprendizaje sobre forget10, mientras que el segundo retiene todo el conocimiento de TOFU. Frente a microsoft/phi-1_5, el modelo aqui descrito ha sido ajustado sobre datos ficticios y posteriormente parcialmente "desaprendido", por lo que su rendimiento en tareas generales puede diferir del original. Los resultados cuantitativos de forget quality y retain quality no estan disponibles en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ El checkpoint se diferencia de locuslab/tofu_ft_phi-1.5 en que aplica desaprendi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch12
+- Modelo en Hugging Face: https://huggingface.co/g-assismoraes/tofu-phi-1_5-forget10-ihl_embed-epoch12
 - Modelo base (TOFU fine-tune): https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Repositorio TOFU (benchmark de unlearning): https://github.com/locuslab/tofu

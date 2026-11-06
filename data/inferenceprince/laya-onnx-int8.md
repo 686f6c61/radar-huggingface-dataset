@@ -87,9 +87,9 @@ En la informacion disponible no se identifican modelos de terceros comparables p
 
 | Modelo | Parametros | Contexto | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| inferenceprince/laya-onnx-int8 | no disponible | no disponible (`max_len` en config) | int8 weight-only, `MatMulNBits`, block 64 | 613 MB | apache-2.0 | HuggingFace, ONNX Runtime >= 1.18 |
-| inferenceprince/laya-onnx | no disponible | no disponible | fp16 | 849 MB | apache-2.0 | HuggingFace, recomendado por el autor para WebGPU |
-| convaiinnovations/laya | no disponible | no disponible | sin cuantizar | no disponible | no disponible en la informacion proporcionada | HuggingFace, modelo base |
+| inferenceprince/laya-onnx-int8 | no disponible | no disponible (`max_len` en config) | int8 weight-only, `MatMulNBits`, block 64 | 613 MB | apache-2.0 | Hugging Face, ONNX Runtime >= 1.18 |
+| inferenceprince/laya-onnx | no disponible | no disponible | fp16 | 849 MB | apache-2.0 | Hugging Face, recomendado por el autor para WebGPU |
+| convaiinnovations/laya | no disponible | no disponible | sin cuantizar | no disponible | no disponible en la informacion proporcionada | Hugging Face, modelo base |
 
 Frente a alternativas genericas de clasificacion (DistilBERT, ModernBERT-base, DeBERTa) no hay datos comparativos en la informacion disponible, y la tarea de este modelo (eleccion entre opciones descritas en el prompt) no es directamente equiparable a una clasificacion con etiquetas fijas.
 
@@ -108,6 +108,6 @@ Frente a alternativas genericas de clasificacion (DistilBERT, ModernBERT-base, D
 - El tercer modo (`noul`) aparece en el codigo de ejemplo pero no se explica su semantica ni su calidad, lo que dificulta su uso en produccion.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/inferenceprince/laya-onnx-int8
+- Modelo en Hugging Face: https://huggingface.co/inferenceprince/laya-onnx-int8
 - Build fp16 del mismo autor: https://huggingface.co/inferenceprince/laya-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya

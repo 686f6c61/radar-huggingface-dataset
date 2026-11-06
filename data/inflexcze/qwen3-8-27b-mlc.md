@@ -91,8 +91,8 @@ Ninguna de estas alternativas ofrece, en su formato estándar, un artefacto list
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/InflexCZE/Qwen3.8-27B-MLC
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/InflexCZE/Qwen3.8-27B-MLC
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Repositorio de MLC-LLM: https://github.com/mlc-ai/mlc-llm
 - WebLLM (inferencia en navegador con WebGPU): https://github.com/mlc-ai/web-llm
 - Unsloth: https://github.com/unslothai/unsloth

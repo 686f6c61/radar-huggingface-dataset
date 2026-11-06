@@ -20,7 +20,7 @@ Su relevancia practica esta en que cubre cuatro flujos concretos (atencion al cl
 | Idiomas soportados | ingles (language: en en la model card); la arquitectura comparte embeddings de entrada multilingues, pero el modelo esta especializado y evaluado en ingles |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
-| Pipeline en HuggingFace | text-classification |
+| Pipeline en Hugging Face | text-classification |
 | Tarea declarada | decision-making / ordinal-regression |
 | Tamano del repositorio | 2,3 GB |
 | Modelo base | llm-semantic-router/Decision-1.0-Kai |
@@ -71,17 +71,17 @@ Datos adicionales reportados por el autor: Lex acierta 31 decisiones mas que Lay
 - Al ser un encoder bidireccional sin decodificacion autoregresiva, no necesita cache KV y el consumo de memoria de activaciones es bajo con secuencias de hasta 1.024 tokens.
 - Cabe en cualquier GPU de consumo con 4 GB o mas de VRAM: GTX 1650 4 GB, RTX 3050, RTX 3060, RTX 4060, RTX 4090, etc. Las GPU de centro de datos (A100, H100, L40S) son validas pero sobredimensionadas para este tamano.
 - Es viable la inferencia en CPU para cargas de baja concurrencia, dado el reducido numero de parametros.
-- Opciones de despliegue: `transformers` con el pipeline de text-classification, HuggingFace Inference Endpoints y servicios propios en Python. No se documenta soporte para vLLM, TGI, llama.cpp u Ollama, que estan orientados a modelos generativos autoregresivos y no encajan con este tipo de cabezas de decision.
+- Opciones de despliegue: `transformers` con el pipeline de text-classification, Hugging Face Inference Endpoints y servicios propios en Python. No se documenta soporte para vLLM, TGI, llama.cpp u Ollama, que estan orientados a modelos generativos autoregresivos y no encajan con este tipo de cabezas de decision.
 - Latencia y throughput: solo se publican cifras relativas. El batching `predict_auto_1k` reduce la latencia mediana aproximadamente un 23 % para 32 preguntas cortas y un 35 % para el fixture de contexto multiple, respecto a lotes mas pequenos (B8/B32). No hay cifras absolutas de latencia ni de tokens por segundo en la informacion disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Decision-1.0-Lex | 572 M | 1.024 tokens | Clasificacion de decisiones (Choice, Noul, Score), ingles | Apache 2.0 | HuggingFace, sin solicitud de acceso |
+| Decision-1.0-Lex | 572 M | 1.024 tokens | Clasificacion de decisiones (Choice, Noul, Score), ingles | Apache 2.0 | Hugging Face, sin solicitud de acceso |
 | Laya Typed Decisions | no disponible | no disponible | Clasificacion de decisiones tipadas | no disponible | checkpoint oficial citado en la evaluacion de Lex |
-| Decision-1.0-Kai (modelo base) | no disponible | no disponible | Decisiones generales y tareas multilingues mas amplias | Apache 2.0 | HuggingFace |
-| Vela-1.0-Encoder-307M | 307 M (segun el nombre) | no disponible | Encoder base sobre el que se apoya la familia | no disponible | HuggingFace |
+| Decision-1.0-Kai (modelo base) | no disponible | no disponible | Decisiones generales y tareas multilingues mas amplias | Apache 2.0 | Hugging Face |
+| Vela-1.0-Encoder-307M | 307 M (segun el nombre) | no disponible | Encoder base sobre el que se apoya la familia | no disponible | Hugging Face |
 
 No se dispone de datos publicados que permitan comparar a Lex con clasificadores genericos tipo BERT o DeBERTa en las mismas tareas; la unica comparacion cuantitativa publicada es la que aparece en la seccion de benchmarks frente a Laya Typed Decisions.
 
@@ -101,11 +101,11 @@ No se dispone de datos publicados que permitan comparar a Lex con clasificadores
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llm-semantic-router/Decision-1.0-Lex
+- Modelo en Hugging Face: https://huggingface.co/llm-semantic-router/Decision-1.0-Lex
 - Modelo base Kai: https://huggingface.co/llm-semantic-router/Decision-1.0-Kai
 - Encoder base Vela-1.0-Encoder-307M: https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M
 - Coleccion Decision 1.0: https://huggingface.co/collections/llm-semantic-router/decision-10-6ab12177bd0002394d8409f9
 - Demo Decision Studio: https://llm-semantic-router-decision-studio.hf.space
 - Evaluacion completa de Lex: https://gist.github.com/Xunzhuo/76b59cb158ce5069a53b946c6f0ee656#file-01-lex-evaluation-md
-- Documentacion de arquitectura (ARCHITECTURE.md), metodos de entrenamiento (METHODS.md), ejemplos de uso (USAGE.md), fine-tuning (FINETUNING.md), rendimiento (PERFORMANCE.md), avisos legales (NOTICE) y alcance de licencia (LICENSING_STATUS.md): referenciados en la model card del repositorio de HuggingFace. El enlace directo no esta disponible en la informacion proporcionada.
+- Documentacion de arquitectura (ARCHITECTURE.md), metodos de entrenamiento (METHODS.md), ejemplos de uso (USAGE.md), fine-tuning (FINETUNING.md), rendimiento (PERFORMANCE.md), avisos legales (NOTICE) y alcance de licencia (LICENSING_STATUS.md): referenciados en la model card del repositorio de Hugging Face. El enlace directo no esta disponible en la informacion proporcionada.
 - La busqueda web realizada no devolvio enlaces especificos sobre este modelo: los resultados fueron referencias genericas sobre modelos de lenguaje (Wikipedia y GeeksforGeeks) sin relacion con Decision-1.0-Lex.

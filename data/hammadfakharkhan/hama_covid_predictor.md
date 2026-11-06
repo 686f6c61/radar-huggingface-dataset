@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HAMA_COVID_PREDICTOR es un repositorio publicado en HuggingFace por el usuario hammadfakharkhan bajo licencia MIT. Por el nombre y por el tamano del repositorio (0,2 GB), apunta a ser un modelo predictivo orientado a datos de COVID-19, probablemente un modelo de clasificacion o regresion serializado (por ejemplo, pesos de scikit-learn, XGBoost o un transformer pequeno) mas que un modelo generativo de lenguaje de gran escala. La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso.
+HAMA_COVID_PREDICTOR es un repositorio publicado en Hugging Face por el usuario hammadfakharkhan bajo licencia MIT. Por el nombre y por el tamano del repositorio (0,2 GB), apunta a ser un modelo predictivo orientado a datos de COVID-19, probablemente un modelo de clasificacion o regresion serializado (por ejemplo, pesos de scikit-learn, XGBoost o un transformer pequeno) mas que un modelo generativo de lenguaje de gran escala. La model card publicada esta practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso.
 
 El repositorio no incluye informacion sobre el pipeline, los idiomas soportados, el formato de los pesos ni los datos con los que se habria entrenado. Tiene cero descargas y un unico like en el momento de la consulta, y las fechas de creacion y actualizacion son de noviembre de 2026. Todo ello indica que se trata de un artefacto de publicacion personal, sin documentacion tecnica verificable y sin validacion externa conocida.
 
@@ -77,5 +77,5 @@ No disponible. No se conocen modelos comparables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/hammadfakharkhan/HAMA_COVID_PREDICTOR
+- Repositorio en Hugging Face: https://huggingface.co/hammadfakharkhan/HAMA_COVID_PREDICTOR
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

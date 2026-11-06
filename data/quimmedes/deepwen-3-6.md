@@ -94,7 +94,7 @@ La comparativa se limita a los modelos mencionados en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/quimmedes/Deepwen-3.6
+- Repositorio Hugging Face del modelo: https://huggingface.co/quimmedes/Deepwen-3.6
 - Repositorio de pesos originales BF16 (safetensors): https://huggingface.co/quimmedes/Deepwen-3.6-bf16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - DeepSeek-V4-Flash-0731 (fuente del razonamiento): https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731

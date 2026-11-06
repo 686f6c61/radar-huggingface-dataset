@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`swetalpatel/my_new_model_1` es un repositorio de modelo publicado en HuggingFace por el usuario `swetalpatel` el 23 de octubre de 2026. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun texto descriptivo: no se indica arquitectura, tamano, datos de entrenamiento, capacidades ni procedimiento de uso. El pipeline declarado en la API de HuggingFace aparece como no disponible, y el repositorio no cuenta con descargas ni likes en el momento de la consulta.
+`swetalpatel/my_new_model_1` es un repositorio de modelo publicado en Hugging Face por el usuario `swetalpatel` el 23 de octubre de 2026. La model card asociada contiene unicamente la declaracion de licencia (`apache-2.0`) y ningun texto descriptivo: no se indica arquitectura, tamano, datos de entrenamiento, capacidades ni procedimiento de uso. El pipeline declarado en la API de Hugging Face aparece como no disponible, y el repositorio no cuenta con descargas ni likes en el momento de la consulta.
 
 Por tanto, se trata de un artefacto sin documentacion tecnica verificable. No es posible determinar que problema resuelve, que arquitectura emplea ni en que regimen de contexto opera, lo que impide evaluarlo frente a alternativas y desaconseja su uso en cualquier entorno de produccion hasta que el autor publique informacion sustantiva.
 
@@ -82,7 +82,7 @@ No disponible. Al desconocerse arquitectura, tamano y contexto, no es posible id
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swetalpatel/my_new_model_1
+- Repositorio en Hugging Face: https://huggingface.co/swetalpatel/my_new_model_1
 - Model card: no disponible (solo contiene la declaracion de licencia)
 - Paper tecnico: no disponible
 - Blog o anuncio del autor: no disponible

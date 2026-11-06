@@ -19,7 +19,7 @@ Es relevante para quien despliega enrutadores, clasificadores de intención o tr
 | Tipos de cuantización | No disponible: no se documentan versiones GGUF, AWQ, GPTQ ni int8. El repositorio distribuye safetensors y PyTorch (`option_marker.pt`) |
 | Idiomas soportados | Inglés (en) |
 | Licencia | Apache-2.0 |
-| Formato de pesos | safetensors (`model.safetensors`), PyTorch (`option_marker.pt`), JSON de calibración (`marker_calibration.json`), `config.json` y tokenizer estándar de HuggingFace |
+| Formato de pesos | safetensors (`model.safetensors`), PyTorch (`option_marker.pt`), JSON de calibración (`marker_calibration.json`), `config.json` y tokenizer estándar de Hugging Face |
 | Versión | 1.1 (`von-1.1.0`); publicado previamente como `wfzyx/von-1.0` |
 | Pipeline declarado | zero-shot-classification |
 | Librería | von-sdk |
@@ -118,7 +118,7 @@ La diferencia funcional relevante frente a los clasificadores por entailment es 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wfzyx/von
+- Modelo en Hugging Face: https://huggingface.co/wfzyx/von
 - Repositorio GitHub: https://github.com/wfzyx/von
 - Identificador anterior: https://huggingface.co/wfzyx/von-1.0
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-large

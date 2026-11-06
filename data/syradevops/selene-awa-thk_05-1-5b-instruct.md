@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Selene-Awa-THk_05-1.5B-Instruct es un modelo de lenguaje conversacional de tamaño reducido desarrollado por Syradevops, publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un fine-tuning del modelo unsloth/Qwen3-1.7B-unsloth-bnb-4bit, es decir, una versión cuantizada a 4 bits (bnb) de la familia Qwen3 de Alibaba, entrenada con la biblioteca Unsloth y TRL de HuggingFace. Según la model card, el entrenamiento se realizó "2x más rápido" gracias a Unsloth, aunque no se detallan los datos ni el método de ajuste empleados.
+Selene-Awa-THk_05-1.5B-Instruct es un modelo de lenguaje conversacional de tamaño reducido desarrollado por Syradevops, publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un fine-tuning del modelo unsloth/Qwen3-1.7B-unsloth-bnb-4bit, es decir, una versión cuantizada a 4 bits (bnb) de la familia Qwen3 de Alibaba, entrenada con la biblioteca Unsloth y TRL de Hugging Face. Según la model card, el entrenamiento se realizó "2x más rápido" gracias a Unsloth, aunque no se detallan los datos ni el método de ajuste empleados.
 
 El modelo resuelve la necesidad de disponer de un asistente conversacional ligero que pueda ejecutarse en hardware modesto, como GPUs de consumo o incluso portátiles, sin sacrificar por completo las capacidades de la familia Qwen3. Con aproximadamente 1.720 millones de parámetros (dato real extraído de los safetensors) y un tamaño de repositorio de apenas 3,5 GB, es adecuado para despliegues locales, prototipado y casos de uso con restricciones de recursos.
 
@@ -23,7 +23,7 @@ Su relevancia actual radica en la tendencia hacia modelos pequeños y eficientes
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de unsloth/Qwen3-1.7B-unsloth-bnb-4bit, una versión cuantizada a 4 bits mediante bitsandbytes del Qwen3-1.7B original de Alibaba. Qwen3 es una familia de modelos basada en arquitectura transformer decoder denso (no MoE), con soporte conversacional e instructivo. El fine-tuning se realizó con la biblioteca TRL de HuggingFace y el framework Unsloth, que optimiza el entrenamiento mediante kernel fusionado y gestión eficiente de memoria, permitiendo según el autor un entrenamiento "2x más rápido".
+El modelo parte de unsloth/Qwen3-1.7B-unsloth-bnb-4bit, una versión cuantizada a 4 bits mediante bitsandbytes del Qwen3-1.7B original de Alibaba. Qwen3 es una familia de modelos basada en arquitectura transformer decoder denso (no MoE), con soporte conversacional e instructivo. El fine-tuning se realizó con la biblioteca TRL de Hugging Face y el framework Unsloth, que optimiza el entrenamiento mediante kernel fusionado y gestión eficiente de memoria, permitiendo según el autor un entrenamiento "2x más rápido".
 
 No se ha publicado información sobre el dataset de entrenamiento (número de ejemplos, composición, dominios), ni sobre el método de alineación empleado (SFT puro, DPO, RLHF), ni sobre el número de épocas o hiperparámetros. Esta falta de trazabilidad es un punto importante a considerar: el modelo hereda las capacidades y sesgos de Qwen3-1.7B más lo aprendido en un ajuste no documentado.
 
@@ -31,7 +31,7 @@ No se ha publicado información sobre el dataset de entrenamiento (número de ej
 
 - Generación de texto conversacional en inglés (pipeline text-generation, tag "conversational").
 - Herencia de las capacidades base de Qwen3-1.7B: razonamiento general, generación de código y matemáticas a nivel de modelo pequeño (no verificado para este fine-tune en concreto).
-- Compatibilidad con la biblioteca transformers de HuggingFace y con text-generation-inference.
+- Compatibilidad con la biblioteca transformers de Hugging Face y con text-generation-inference.
 - Posible compatibilidad con tool calling si el fine-tune conservó las plantillas de chat de Qwen3 (no documentado por el autor).
 - Sin capacidades multimodales: es un modelo de texto puro.
 - Sin modo de pensamiento extendido (thinking mode) documentado para este fine-tune.
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 3,5-4 GB en FP16 (según el tamaño del repositorio de 3,5 GB); significativamente menos si se aplica cuantización a 4 bits (en torno a 1-1,5 GB).
 - GPUs recomendadas: cualquier GPU moderna con 4-6 GB de VRAM es suficiente; por ejemplo, RTX 3060, RTX 4060 o RTX 4090 con holgura. No se requiere A100 ni H100 para inferencia.
 - Cabe cómodamente en GPUs de consumo: sí, incluso en portátiles con GPU dedicada de gama media; también es viable en CPU mediante cuantización GGUF.
-- Opciones de despliegue: transformers de HuggingFace (formato nativo), text-generation-inference (tag declarado), Ollama y llama.cpp (requieren conversión a GGUF, no incluida en el repositorio), vLLM (compatible con arquitectura Qwen3).
+- Opciones de despliegue: transformers de Hugging Face (formato nativo), text-generation-inference (tag declarado), Ollama y llama.cpp (requieren conversión a GGUF, no incluida en el repositorio), vLLM (compatible con arquitectura Qwen3).
 - Latencia y throughput: no disponibles; al ser un modelo de 1,7B, se espera latencia baja y throughput alto en comparación con modelos de 7B o más, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ El modelo de Syradevops se sitúa en la gama de modelos pequeños conversacional
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Syradevops/Selene-Awa-THk_05-1.5B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/Syradevops/Selene-Awa-THk_05-1.5B-Instruct
 - Modelo base: https://huggingface.co/unsloth/Qwen3-1.7B-unsloth-bnb-4bit
 - Unsloth (GitHub): https://github.com/unslothai/unsloth
-- TRL de HuggingFace: https://github.com/huggingface/trl
+- TRL de Hugging Face: https://github.com/huggingface/trl

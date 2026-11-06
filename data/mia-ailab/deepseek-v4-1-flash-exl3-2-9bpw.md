@@ -71,15 +71,15 @@ No se han publicado resultados de benchmarks en la informacion disponible para e
 - Decodificacion especulativa: DSpark nativo en vLLM mediante `--speculative-config '{"method":"dspark","num_speculative_tokens":3}'`.
 - llama.cpp y Ollama no aparecen como soportados en la informacion disponible.
 - Latencia y throughput concretos: no disponible.
-- Nota de coherencia: la ficha de HuggingFace declara un tamano de repositorio de 0,1 GB, mientras que la model card describe ~197 GB en 39 shards. Conviene verificar el contenido real antes de planificar el despliegue.
+- Nota de coherencia: la ficha de Hugging Face declara un tamano de repositorio de 0,1 GB, mientras que la model card describe ~197 GB en 39 shards. Conviene verificar el contenido real antes de planificar el despliegue.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw | 552B totales, 8B/16B activos | Hasta 1M tokens | EXL3 2,90 bpw (decoder) | MIT | HuggingFace, 39 shards + shards Engram externos |
-| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw | 552B totales, 8B/16B activos | Hasta 1M tokens | EXL3 3,0 bpw (decoder) | MIT | HuggingFace; hermano algo mas denso |
-| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B totales, 8B/16B activos | Hasta 1M tokens | FP8 sin cuantizar | MIT | HuggingFace, checkpoint completo con tablas Engram |
+| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw | 552B totales, 8B/16B activos | Hasta 1M tokens | EXL3 2,90 bpw (decoder) | MIT | Hugging Face, 39 shards + shards Engram externos |
+| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw | 552B totales, 8B/16B activos | Hasta 1M tokens | EXL3 3,0 bpw (decoder) | MIT | Hugging Face; hermano algo mas denso |
+| deepseek-ai/DeepSeek-V4.1-Flash (base) | 552B totales, 8B/16B activos | Hasta 1M tokens | FP8 sin cuantizar | MIT | Hugging Face, checkpoint completo con tablas Engram |
 
 No se dispone de datos comparativos de rendimiento entre estas tres variantes en la informacion proporcionada. Otros modelos de la misma categoria no se detallan en el material disponible.
 
@@ -95,16 +95,16 @@ No se dispone de datos comparativos de rendimiento entre estas tres variantes en
 - Sesgos conocidos: no disponibles.
 - Idiomas soportados: no disponible, lo que impide garantizar calidad multilingue sin evaluacion previa.
 - Licencia MIT, heredada del modelo base, sin restricciones adicionales por la cuantizacion, pero conviene verificar los terminos del modelo original y de los shards Engram reutilizados.
-- Discrepancia entre el tamano de repositorio reportado por HuggingFace (0,1 GB) y el declarado en la model card (~197 GB): verificar antes de desplegar.
+- Discrepancia entre el tamano de repositorio reportado por Hugging Face (0,1 GB) y el declarado en la model card (~197 GB): verificar antes de desplegar.
 - El repositorio no tiene descargas ni valoraciones en el momento de la consulta, por lo que no existe validacion de la comunidad.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw
+- Repositorio Hugging Face: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Variante hermana de 3,0 bpw: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw
 - Informe tecnico del modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
 - Herramienta de cuantizacion exllamav3: https://github.com/turboderp-org/exllamav3
 - Perfil del autor de la cuantizacion: https://huggingface.co/Mia-AiLab
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo (unicamente referencias no pertinentes al nombre "Mia"), por lo que los enlaces anteriores proceden de la model card y de la ficha de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo (unicamente referencias no pertinentes al nombre "Mia"), por lo que los enlaces anteriores proceden de la model card y de la ficha de Hugging Face.

@@ -111,7 +111,7 @@ Frente al modelo original, la exportación ONNX no modifica pesos ni arquitectur
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mariojcr/laya-onnx
+- Modelo en Hugging Face: https://huggingface.co/mariojcr/laya-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya
 - Repositorio de Altherium (gateway de inferencia que sirve el modelo): https://github.com/mariojcr/altherium
 - ONNX Runtime: https://onnxruntime.ai

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`paris-martin/flamingo-retrieval-best` es un prototipo de investigación publicado en HuggingFace por el usuario paris-martin. Se presenta como una implementación de tipo Flamingo orientada a tareas de recuperación (retrieval), es decir, a la búsqueda y emparejamiento entre modalidades, presumiblemente texto e imagen, dado el linaje arquitectónico Flamingo. El repositorio es explícitamente un punto de partida experimental: el autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado en benchmarks.
+`paris-martin/flamingo-retrieval-best` es un prototipo de investigación publicado en Hugging Face por el usuario paris-martin. Se presenta como una implementación de tipo Flamingo orientada a tareas de recuperación (retrieval), es decir, a la búsqueda y emparejamiento entre modalidades, presumiblemente texto e imagen, dado el linaje arquitectónico Flamingo. El repositorio es explícitamente un punto de partida experimental: el autor indica que el checkpoint incluido es una inicialización válida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado en benchmarks.
 
-El modelo cuenta con 16.576 parámetros totales según los metadatos de safetensors, lo que lo sitúa en una escala "small" declarada por el propio autor. La arquitectura combina atención de ventana deslizante (sliding window), fusión con compuertas (gated fusion), activación mish y normalización groupnorm, según la tabla de la model card. No se dispone de información sobre longitud de contexto, idiomas soportados ni pipeline de HuggingFace.
+El modelo cuenta con 16.576 parámetros totales según los metadatos de safetensors, lo que lo sitúa en una escala "small" declarada por el propio autor. La arquitectura combina atención de ventana deslizante (sliding window), fusión con compuertas (gated fusion), activación mish y normalización groupnorm, según la tabla de la model card. No se dispone de información sobre longitud de contexto, idiomas soportados ni pipeline de Hugging Face.
 
 Su relevancia actual es limitada y de carácter exclusivamente investigador: no hay resultados de benchmarks, no hay checkpoint entrenado y el repositorio ocupa 0.0 GB, lo que sugiere que los pesos publicados son de inicialización. Sirve como andamiaje reproducible para quien quiera experimentar con arquitecturas Flamingo aplicadas a retrieval, pero no es apto para producción ni para evaluación comparativa sin un entrenamiento previo.
 
@@ -77,5 +77,5 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paris-martin/flamingo-retrieval-best
+- Hugging Face: https://huggingface.co/paris-martin/flamingo-retrieval-best
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

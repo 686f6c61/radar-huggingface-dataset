@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afw-12-vllm-npcache` no es un modelo de lenguaje funcional, sino un especimen de investigacion en seguridad (scanner specimen) publicado en HuggingFace. El autor lo etiqueta explicitamente como `security-research` y `not-for-production`, y la model card indica que se trata de un artefacto inerte cuyo proposito es preservar la ruta de un hallazgo de seguridad relacionado con vLLM y su cache de nombres de proceso (NPCache) que derivaria en una escritura arbitraria de ficheros (AFW, arbitrary file write).
+`FrankLin00/mmrh-afw-12-vllm-npcache` no es un modelo de lenguaje funcional, sino un especimen de investigacion en seguridad (scanner specimen) publicado en Hugging Face. El autor lo etiqueta explicitamente como `security-research` y `not-for-production`, y la model card indica que se trata de un artefacto inerte cuyo proposito es preservar la ruta de un hallazgo de seguridad relacionado con vLLM y su cache de nombres de proceso (NPCache) que derivaria en una escritura arbitraria de ficheros (AFW, arbitrary file write).
 
 El repositorio tiene un tamano de 0,0 GB y no contiene pesos utilizables: el "modelo" actua como portador de metadatos, concretamente una clave de `state_dict` de checkpoint que materializa el hallazgo. Cualquier sonda activa incluida en el especimen se limita a ejecutar `whoami` en forma argv (nunca con `shell=True`) y a volcar su salida a una variable de entorno bajo `/tmp` o `$TMPDIR`. No hay acceso a credenciales ni operaciones de red.
 
@@ -39,7 +39,7 @@ La sonda activa, si se ejecuta, invoca unicamente `whoami` en forma argv y escri
 ## Casos de uso
 
 - Analisis de vulnerabilidades en vLLM: el especimen permite a un equipo de seguridad reproducir de forma controlada la ruta del hallazgo NPCache/AFW sin ejecutar payloads reales, ya que el contenido es `PWNED-INERT`.
-- Validacion de escaneres de seguridad: sirve como caso de prueba para comprobar que las herramientas de escaneo de artefactos HuggingFace detectan portadores de hallazgos en claves de `state_dict` de checkpoints.
+- Validacion de escaneres de seguridad: sirve como caso de prueba para comprobar que las herramientas de escaneo de artefactos Hugging Face detectan portadores de hallazgos en claves de `state_dict` de checkpoints.
 - Formacion en seguridad de la cadena de suministro de modelos: util para ilustrar como los metadatos de un checkpoint pueden transportar una primitiva de escritura arbitraria de ficheros y por que conviene inspeccionar los `state_dict` antes de cargarlos.
 - Desarrollo de reglas de deteccion: los equipos pueden usar el especimen para calibrar reglas de firma que detecten el payload `PWNED-INERT` y las restricciones de formato (`.npy`, `.jinja`) documentadas en el manifiesto.
 - Verificacion de aislamiento en sandboxes: permite comprobar que un entorno de ejecucion confina correctamente la escritura en `/tmp` o `$TMPDIR` y la lectura de variables de entorno.
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 ## Comparativa con modelos similares
 
-No disponible. No se conocen en la informacion proporcionada otros especimenes de seguridad comparables publicados en HuggingFace con la misma estructura de portador (clave de `state_dict` de checkpoint) y el mismo hallazgo (vLLM NPCache AFW).
+No disponible. No se conocen en la informacion proporcionada otros especimenes de seguridad comparables publicados en Hugging Face con la misma estructura de portador (clave de `state_dict` de checkpoint) y el mismo hallazgo (vLLM NPCache AFW).
 
 ## Limitaciones y advertencias
 
@@ -75,6 +75,6 @@ No disponible. No se conocen en la informacion proporcionada otros especimenes d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FrankLin00/mmrh-afw-12-vllm-npcache
+- Modelo en Hugging Face: https://huggingface.co/FrankLin00/mmrh-afw-12-vllm-npcache
 - Repositorio vLLM (referencia del stack afectado): https://github.com/vllm-project/vllm
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios o demos especificos del hallazgo.

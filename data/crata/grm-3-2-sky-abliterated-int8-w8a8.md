@@ -4,7 +4,7 @@
 
 El modelo `Crata/GRM-3.2-Sky-abliterated-INT8.w8a8` es una version cuantizada en 8 bits (INT8 con esquema de pesos y activaciones w8a8) de un modelo de IA generativa denominado `GRM-3.2-Sky`. El autor es Crata y el modelo se publica bajo licencia Apache-2.0. Su fecha de creacion es el 5 de septiembre de 2026.
 
-La etiqueta "abliterated" en el nombre sugiere que el modelo ha pasado por un proceso de abliteracion, una tecnica de interpretabilidad y alineacion que elimina o neutraliza determinados comportamientos no deseados en la activacion neuronal, tipicamente relacionados con seguridad o sesgos. Sin embargo, no se dispone de informacion publica sobre los detalles del proceso, la arquitectura subyacente, el tamano del modelo, la longitud de contexto ni los idiomas soportados. La informacion disponible se limita a los metadatos del repositorio en HuggingFace, por lo que el modelo no puede evaluarse en cuanto a capacidades, rendimiento o requisitos de hardware sin mas datos.
+La etiqueta "abliterated" en el nombre sugiere que el modelo ha pasado por un proceso de abliteracion, una tecnica de interpretabilidad y alineacion que elimina o neutraliza determinados comportamientos no deseados en la activacion neuronal, tipicamente relacionados con seguridad o sesgos. Sin embargo, no se dispone de informacion publica sobre los detalles del proceso, la arquitectura subyacente, el tamano del modelo, la longitud de contexto ni los idiomas soportados. La informacion disponible se limita a los metadatos del repositorio en Hugging Face, por lo que el modelo no puede evaluarse en cuanto a capacidades, rendimiento o requisitos de hardware sin mas datos.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ Al tratarse de una cuantizacion INT8, es probable que se requieran menos recurso
 
 ## Comparativa con modelos similares
 
-No se han encontrado modelos comparables en la informacion proporcionada. Existe un repositorio hermano `Crata/GRM-3.2-Sky-FP8` en HuggingFace, pero no se dispone de datos sobre sus caracteristicas. Por tanto, la comparativa no esta disponible.
+No se han encontrado modelos comparables en la informacion proporcionada. Existe un repositorio hermano `Crata/GRM-3.2-Sky-FP8` en Hugging Face, pero no se dispone de datos sobre sus caracteristicas. Por tanto, la comparativa no esta disponible.
 
 ## Limitaciones y advertencias
 
@@ -61,5 +61,5 @@ No se han encontrado modelos comparables en la informacion proporcionada. Existe
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Crata/GRM-3.2-Sky-abliterated-INT8.w8a8
+- Repositorio Hugging Face: https://huggingface.co/Crata/GRM-3.2-Sky-abliterated-INT8.w8a8
 - Repositorio relacionado (posible modelo base en FP8): https://huggingface.co/Crata/GRM-3.2-Sky-FP8

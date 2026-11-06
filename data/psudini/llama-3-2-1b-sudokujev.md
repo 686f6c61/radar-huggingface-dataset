@@ -77,10 +77,10 @@ No se han publicado resultados en benchmarks estándar de lenguaje (MMLU, GSM8K,
 
 | Modelo | Parámetros | Tarea | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| psudini/Llama-3.2-1B-SudokuJev | 1B + LoRA 43 MB + cabeza 9x2048 | Puntuación de dígitos legales en Sudoku | No disponible | 100% en 2.000 celdas; 30/30 puzles fáciles | Llama 3.2 Community License | HuggingFace + GitHub |
-| AlexWortega/openjev | No disponible | Receta original de LLM como puntuador de opciones | No disponible | No disponible | No disponible | HuggingFace |
-| Qwen3.5-0.8B (zero-shot, LM head) | 0,8B | Generación de texto usada como baseline | No disponible | 2% de acierto en celdas de candidato único | No disponible en la información | HuggingFace |
-| meta-llama/Llama-3.2-1B (base) | 1B | Generación de texto e instrucciones | No disponible en la información | No disponible | Llama 3.2 Community License | HuggingFace (acceso restringido) |
+| psudini/Llama-3.2-1B-SudokuJev | 1B + LoRA 43 MB + cabeza 9x2048 | Puntuación de dígitos legales en Sudoku | No disponible | 100% en 2.000 celdas; 30/30 puzles fáciles | Llama 3.2 Community License | Hugging Face + GitHub |
+| AlexWortega/openjev | No disponible | Receta original de LLM como puntuador de opciones | No disponible | No disponible | No disponible | Hugging Face |
+| Qwen3.5-0.8B (zero-shot, LM head) | 0,8B | Generación de texto usada como baseline | No disponible | 2% de acierto en celdas de candidato único | No disponible en la información | Hugging Face |
+| meta-llama/Llama-3.2-1B (base) | 1B | Generación de texto e instrucciones | No disponible en la información | No disponible | Llama 3.2 Community License | Hugging Face (acceso restringido) |
 
 ## Limitaciones y advertencias
 
@@ -98,7 +98,7 @@ No se han publicado resultados en benchmarks estándar de lenguaje (MMLU, GSM8K,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/psudini/Llama-3.2-1B-SudokuJev
+- Modelo en Hugging Face: https://huggingface.co/psudini/Llama-3.2-1B-SudokuJev
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-1B
 - Receta original de referencia: https://huggingface.co/AlexWortega/openjev
 - Repositorio con código, solver, interfaz web y cuaderno de entrenamiento: https://github.com/pruthvinathsudini/sudoku-jev

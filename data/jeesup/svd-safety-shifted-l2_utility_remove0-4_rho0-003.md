@@ -72,9 +72,9 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.003 | 6.738.415.616 | no disponible | Compresión SVD con desplazamiento de seguridad | llama2 | HuggingFace, 14 descargas |
-| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens (modelo base) | Chat alineado sin comprimir | llama2 | HuggingFace, ampliamente disponible |
-| Variantes SVD de Llama 2 publicadas por la comunidad | variable | variable | Compresión por descomposición de bajo rango | habitualmente llama2 | HuggingFace, disponibilidad variable |
+| Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.003 | 6.738.415.616 | no disponible | Compresión SVD con desplazamiento de seguridad | llama2 | Hugging Face, 14 descargas |
+| meta-llama/Llama-2-7b-chat-hf | ~6.740 millones | 4.096 tokens (modelo base) | Chat alineado sin comprimir | llama2 | Hugging Face, ampliamente disponible |
+| Variantes SVD de Llama 2 publicadas por la comunidad | variable | variable | Compresión por descomposición de bajo rango | habitualmente llama2 | Hugging Face, disponibilidad variable |
 
 La comparación directa con alternativas de compresión específicas no está disponible en la información proporcionada; el propio autor describe este checkpoint como un piloto unilateral y no como un SVD completo con conciencia de Fisher, lo que limita la comparabilidad con métodos de compresión más establecidos.
 
@@ -93,7 +93,7 @@ La comparación directa con alternativas de compresión específicas no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.003
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.4_rho0.003
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Repositorio de evaluación y código fuente: carpeta `experiment/` dentro del repositorio del modelo
 - Diagnósticos por matriz: archivo `compression.json` dentro del repositorio del modelo

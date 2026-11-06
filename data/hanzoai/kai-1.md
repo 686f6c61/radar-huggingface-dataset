@@ -19,7 +19,7 @@ Nota de trazabilidad: la model card del repositorio corresponde al proyecto Laya
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | 1.024 tokens por defecto; 8.192 tokens en el checkpoint multilingue con `max_len=8192` |
 | Tipos de cuantizacion | no disponible; se documenta soporte de ONNX Runtime (`laya[onnx]`) y una ruta rapida GPU con TileLang (`laya[fast]`), pero no se publican formatos de cuantizacion |
-| Idiomas soportados | mas de 100 idiomas segun la model card; el campo de idiomas de los metadatos de HuggingFace figura como no disponible |
+| Idiomas soportados | mas de 100 idiomas segun la model card; el campo de idiomas de los metadatos de Hugging Face figura como no disponible |
 | Licencia | Apache-2.0 (uso comercial permitido) |
 | Formato de pesos | safetensors |
 | Libreria | transformers |
@@ -114,7 +114,7 @@ La ventaja diferencial de kai-1 en esta comparativa es la combinacion de salida 
 - Calibracion dependiente del dominio: el checkpoint base obtiene 0,362 de exactitud en el benchmark de referencia, muy por debajo del 0,766 del checkpoint ajustado; en dominios propios hay que asumir que el rendimiento zero-shot sera limitado.
 - Longitud de contexto por defecto insuficiente: el limite de 1.024 tokens trunca documentos largos; hay que pasar `max_len=8192` explicitamente y seleccionar el checkpoint multilingue con `model="multilingual"`, ya que el texto mayoritariamente en ingles se enrutaria al checkpoint ingles.
 - Degradacion en documentos muy largos: por encima de aproximadamente 4.000 tokens la exactitud medida cae y varia entre 8 y 17 aciertos de 20; el propio proyecto recomienda validar con datos propios en ese regimen. La muestra de evaluacion es pequena (20 peticiones por tramo).
-- Idioma: aunque se declaran mas de 100 idiomas, los metadatos de HuggingFace no especifican ninguno y no se publica desglose de rendimiento por idioma.
+- Idioma: aunque se declaran mas de 100 idiomas, los metadatos de Hugging Face no especifican ninguno y no se publica desglose de rendimiento por idioma.
 - Riesgo de alucinacion: el model card argumenta que es estructuralmente bajo porque el modelo no genera texto; esto no elimina el riesgo de clasificaciones o puntuaciones mal calibradas fuera de la distribucion de entrenamiento.
 - Dependencia de la definicion de las preguntas: la calidad de la salida depende de que los criterios y las instrucciones esten bien redactados; el model card no documenta metodos automaticos de validacion de esquemas.
 - Compatibilidad de plataforma: requiere Python 3.10 o superior; los extras de servidor, MCP, LangChain, ONNX y ruta rapida GPU son instalaciones opcionales y no estan cubiertos por la licencia del modelo en cuanto a soporte.
@@ -122,7 +122,7 @@ La ventaja diferencial de kai-1 en esta comparativa es la combinacion de salida 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hanzoai/kai-1
+- Modelo en Hugging Face: https://huggingface.co/hanzoai/kai-1
 - Repositorio GitHub del proyecto Laya: https://github.com/NandhaKishorM/laya
 - Detalles de instalacion por plataforma: https://github.com/NandhaKishorM/laya#installation-details
 - Documentacion general: https://nandhakishorm.github.io/laya/

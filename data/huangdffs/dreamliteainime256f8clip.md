@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`huangdffs/dreamliteainime256f8clip` es un repositorio de pesos publicado en HuggingFace por el usuario huangdffs bajo licencia Apache 2.0. Por el nombre del identificador se deduce que se trata de un modelo orientado a generacion de imagenes de estilo anime, con un tamano de salida de 256 y algun tipo de integracion con CLIP, aunque el autor no documenta ninguna de estas caracteristicas en la model card.
+`huangdffs/dreamliteainime256f8clip` es un repositorio de pesos publicado en Hugging Face por el usuario huangdffs bajo licencia Apache 2.0. Por el nombre del identificador se deduce que se trata de un modelo orientado a generacion de imagenes de estilo anime, con un tamano de salida de 256 y algun tipo de integracion con CLIP, aunque el autor no documenta ninguna de estas caracteristicas en la model card.
 
 La model card disponible es practicamente vacia: unicamente contiene la declaracion de licencia y la frase "no train this model", sin especificar arquitectura, parametros, datos de entrenamiento ni capacidades. El repositorio ocupa 2,3 GB y acumula 12 descargas y 0 likes desde su creacion en octubre de 2026, lo que indica un uso muy marginal dentro del ecosistema.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens o imagen
 - Pruebas de integracion con pipelines de CLIP: si el sufijo `clip` del identificador es correcto, podria servir para experimentar con codificadores de texto e imagen en tareas de retrieval o clasificacion, sin confirmacion oficial.
 - Fine-tuning interno sobre dominios especificos de anime: la licencia Apache 2.0 permite modificar y redistribuir el modelo, aunque el autor advierte "no train this model", lo que desaconseja reentrenarlo.
 - Evaluacion comparativa de modelos de imagen de nicho: util como referencia secundaria en estudios que comparen generadores de anime de baja resolucion.
-- Docencia y demostraciones tecnicas: puede usarse para ilustrar el flujo de publicacion de modelos en HuggingFace y las limitaciones de una model card incompleta.
+- Docencia y demostraciones tecnicas: puede usarse para ilustrar el flujo de publicacion de modelos en Hugging Face y las limitaciones de una model card incompleta.
 
 ## Benchmarks y rendimiento
 
@@ -71,5 +71,5 @@ No disponible. La ausencia de especificaciones tecnicas y de benchmarks impide e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/huangdffs/dreamliteainime256f8clip
+- Repositorio en Hugging Face: https://huggingface.co/huangdffs/dreamliteainime256f8clip
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

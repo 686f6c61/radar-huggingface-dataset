@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino supervisado (SFT) del checkpoint `unsloth/gemma-4-E2B-it-qat-q4_0-unquantized`, publicado por el usuario `rohitsoni1010` en HuggingFace. Se trata de un modelo de generación de texto de la familia Gemma 4 en su variante E2B, con 5.104.297.539 parámetros reales declarados en los pesos safetensors y un repositorio de 10,2 GB. El entrenamiento se hizo con Unsloth sobre una GPU Kaggle Tesla T4, con LoRA de r=16 y alpha=16, y los pesos resultantes se fusionaron en 16 bits.
+Este modelo es un ajuste fino supervisado (SFT) del checkpoint `unsloth/gemma-4-E2B-it-qat-q4_0-unquantized`, publicado por el usuario `rohitsoni1010` en Hugging Face. Se trata de un modelo de generación de texto de la familia Gemma 4 en su variante E2B, con 5.104.297.539 parámetros reales declarados en los pesos safetensors y un repositorio de 10,2 GB. El entrenamiento se hizo con Unsloth sobre una GPU Kaggle Tesla T4, con LoRA de r=16 y alpha=16, y los pesos resultantes se fusionaron en 16 bits.
 
 El objetivo declarado es adaptar un modelo base de tamaño medio a un conjunto de datos de destilación concreto: `r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation`, en su configuración `sft_balanced`. El autor etiqueta el resultado como orientado a código, conversación y generación de texto, y declara soporte únicamente para inglés.
 
@@ -93,7 +93,7 @@ No hay datos de rendimiento que permitan una comparación cuantitativa con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rohitsoni1010/gemma-4-E2B-it-qat-q4_0-unquantized
+- Modelo en Hugging Face: https://huggingface.co/rohitsoni1010/gemma-4-E2B-it-qat-q4_0-unquantized
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Dataset de entrenamiento: https://huggingface.co/datasets/r0b0tlab/qwen3.8-max-glm5.2-kimi-k3-distillation
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

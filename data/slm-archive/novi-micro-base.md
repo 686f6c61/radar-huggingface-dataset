@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Novi-Micro-Base es un modelo de lenguaje causal (decoder-only) entrenado desde cero por Novi-AI y publicado en HuggingFace bajo el identificador SLM-Archive/Novi-Micro-Base. Con aproximadamente 5 millones de parámetros, es un modelo experimental de escala muy reducida cuyo objetivo no es competir con LLM de propósito general, sino servir como banco de pruebas para experimentación en modelado de lenguaje a pequeña escala. La model card lo describe explícitamente como un modelo base, sin ajuste por instrucciones ni entrenamiento conversacional.
+Novi-Micro-Base es un modelo de lenguaje causal (decoder-only) entrenado desde cero por Novi-AI y publicado en Hugging Face bajo el identificador SLM-Archive/Novi-Micro-Base. Con aproximadamente 5 millones de parámetros, es un modelo experimental de escala muy reducida cuyo objetivo no es competir con LLM de propósito general, sino servir como banco de pruebas para experimentación en modelado de lenguaje a pequeña escala. La model card lo describe explícitamente como un modelo base, sin ajuste por instrucciones ni entrenamiento conversacional.
 
 La arquitectura, denominada por el autor "BananaMind 2-style", es un transformer decoder-only que incorpora RMSNorm, Rotary Position Embeddings (RoPE), atención con consultas agrupadas (GQA), normalización QK sobre las dimensiones de cabeza, capas feed-forward SwiGLU y embeddings de entrada y salida compartidos (tied). El vocabulario es de 16.384 tokens con un tokenizador BPE a nivel de byte entrenado ad hoc, y la ventana de contexto alcanza los 2.048 tokens, una cifra notable para un modelo de este tamaño.
 
@@ -70,10 +70,10 @@ La comparativa se ofrece como referencia de categoria (modelos causales de muy p
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Novi-Micro-Base | ~5,04 M (5.656.240 en safetensors) | 2.048 | en | no disponible | HuggingFace, requiere custom_code |
-| TinyStories (variantes pequenas) | ~1 M a ~33 M segun variante | no disponible aqui | en | segun variante | HuggingFace |
-| Pythia-70M | ~70 M | 2.048 | en | Apache 2.0 | HuggingFace, ampliamente soportado |
-| GPT-2 small | ~124 M | 1.024 | en | MIT (segun publicacion original) | HuggingFace, soporte nativo extendido |
+| Novi-Micro-Base | ~5,04 M (5.656.240 en safetensors) | 2.048 | en | no disponible | Hugging Face, requiere custom_code |
+| TinyStories (variantes pequenas) | ~1 M a ~33 M segun variante | no disponible aqui | en | segun variante | Hugging Face |
+| Pythia-70M | ~70 M | 2.048 | en | Apache 2.0 | Hugging Face, ampliamente soportado |
+| GPT-2 small | ~124 M | 1.024 | en | MIT (segun publicacion original) | Hugging Face, soporte nativo extendido |
 
 Frente a estos, Novi-Micro-Base destaca por su contexto de 2.048 tokens relativo a su tamano, pero carece de licencia declarada, de soporte en runners estandar y de cualquier evaluacion publicada, lo que dificulta una comparacion de rendimiento rigurosa.
 
@@ -92,7 +92,7 @@ Frente a estos, Novi-Micro-Base destaca por su contexto de 2.048 tokens relativo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SLM-Archive/Novi-Micro-Base
+- Modelo en Hugging Face: https://huggingface.co/SLM-Archive/Novi-Micro-Base
 - Model card del autor (referencia de arquitectura y entrenamiento): incluida en la pagina anterior
 - Dataset FineWeb-HQ: no disponible el enlace especifico en la informacion proporcionada
 - Paper o informe tecnico asociado: no disponible

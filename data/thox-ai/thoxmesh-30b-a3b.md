@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxMesh-30B-A3B es un empaquetado configurado por el proyecto THOX sobre los pesos de Qwen3-30B-A3B, un modelo Mixture-of-Experts (MoE) de 30.500 millones de parámetros totales con aproximadamente 3.300 millones activos por token. THOX no ha entrenado los pesos: su aportación consiste en un perfil de sistema (system profile), un paquete de conocimiento versionado (THOX Knowledge Pack v0.1) y una política de enrutamiento, distribuidos como un Modelfile de Ollama y un manifiesto de versión. El repositorio de HuggingFace contiene únicamente esos artefactos de empaquetado (Modelfile, manifest.json y un JSONL de conocimiento de 4,6 KB), no los pesos.
+ThoxMesh-30B-A3B es un empaquetado configurado por el proyecto THOX sobre los pesos de Qwen3-30B-A3B, un modelo Mixture-of-Experts (MoE) de 30.500 millones de parámetros totales con aproximadamente 3.300 millones activos por token. THOX no ha entrenado los pesos: su aportación consiste en un perfil de sistema (system profile), un paquete de conocimiento versionado (THOX Knowledge Pack v0.1) y una política de enrutamiento, distribuidos como un Modelfile de Ollama y un manifiesto de versión. El repositorio de Hugging Face contiene únicamente esos artefactos de empaquetado (Modelfile, manifest.json y un JSONL de conocimiento de 4,6 KB), no los pesos.
 
 El modelo está pensado para inferencia local en una estación de trabajo con Ollama, con una etiqueta por defecto de 19 GB y una recomendación de 24 GB o más de memoria. Su uso previsto es el chat con reconocimiento de conceptos THOX, la explicación de conceptos de MeshStack y la generación de recomendaciones de enrutamiento. Es relevante como ejemplo de patrón "configuration-derived": publicar una capa de configuración y conocimiento sobre un modelo base abierto sin modificar sus pesos, lo que simplifica la trazabilidad y la licencia pero limita la mejora real de capacidades.
 
@@ -80,6 +80,6 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thox-ai/ThoxMesh-30B-A3B
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-30B-A3B
+- Repositorio en Hugging Face: https://huggingface.co/Thox-ai/ThoxMesh-30B-A3B
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-30B-A3B
 - No se han encontrado en la información proporcionada otros enlaces a papers, blogs, repositorios o demos.

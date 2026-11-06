@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros totales | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RedHatAI/GLM-5.3-MXFP4 | 753,3 mil millones | no disponible | MXFP4 (4 bits) con compressed-tensors | glm-5.3 | HuggingFace, publicado el 2026-09-10, 0 descargas |
-| zai-org/GLM-5.3 (modelo base) | mismo modelo de origen; el repositorio cuantizado declara 753,3 mil millones de parametros | no disponible | BF16 (presumiblemente, no confirmado en la informacion disponible) | glm-5.3 | HuggingFace |
+| RedHatAI/GLM-5.3-MXFP4 | 753,3 mil millones | no disponible | MXFP4 (4 bits) con compressed-tensors | glm-5.3 | Hugging Face, publicado el 2026-09-10, 0 descargas |
+| zai-org/GLM-5.3 (modelo base) | mismo modelo de origen; el repositorio cuantizado declara 753,3 mil millones de parametros | no disponible | BF16 (presumiblemente, no confirmado en la informacion disponible) | glm-5.3 | Hugging Face |
 | Otros MoE de escala comparable (por ejemplo, familias de mas de 600.000 millones de parametros) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La unica comparacion sustentada por los datos disponibles es la del modelo cuantizado frente a su base: misma arquitectura y mismo numero de parametros, con una reduccion de huella de aproximadamente 4x a costa de una posible perdida de precision que no se ha cuantificado en la informacion facilitada.
@@ -90,4 +90,4 @@ La unica comparacion sustentada por los datos disponibles es la del modelo cuant
 - Herramienta de cuantizacion citada en las etiquetas, LLM Compressor (referencia general, no procedente de la busqueda web): https://github.com/vllm-project/llm-compressor
 - Motor de inferencia citado en las etiquetas, vLLM (referencia general, no procedente de la busqueda web): https://github.com/vllm-project/vllm
 
-Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo. Los unicos enlaces relevantes disponibles son los del propio repositorio de HuggingFace y los de su modelo base.
+Nota: la busqueda web realizada no devolvio resultados relacionados con el modelo. Los unicos enlaces relevantes disponibles son los del propio repositorio de Hugging Face y los de su modelo base.

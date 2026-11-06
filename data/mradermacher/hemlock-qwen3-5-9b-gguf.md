@@ -69,7 +69,7 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/Hemlock-Qwen3.5-9B-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/Hemlock-Qwen3.5-9B-GGUF)
 - [Modelo base Hemlock-Qwen3.5-9B](https://huggingface.co/hemlang/Hemlock-Qwen3.5-9B)
 - [Documentación de Qwen3.5 en Unsloth](https://unsloth.ai/docs/models/qwen3.5)
 - [Benchmarks GGUF de Qwen3.5 en Unsloth](https://unsloth.ai/docs/models/qwen3.5/gguf-benchmarks)

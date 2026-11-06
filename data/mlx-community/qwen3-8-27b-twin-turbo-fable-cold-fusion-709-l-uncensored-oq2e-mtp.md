@@ -86,7 +86,7 @@ No disponible. La informacion proporcionada no incluye datos de rendimiento, con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ2e-mtp
+- Hugging Face: https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ2e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx
 - Repositorio de MLX: https://github.com/ml-explore/mlx
 - MLX LM (libreria `mlx-lm`): https://github.com/ml-explore/mlx-lm

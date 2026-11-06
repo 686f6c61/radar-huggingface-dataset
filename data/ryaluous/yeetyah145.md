@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ryaluous/yeetyah145` es un repositorio de modelo alojado en HuggingFace por el usuario `ryaluous`, publicado el 11 de julio de 2026 y actualizado por ultima vez el 25 de septiembre de 2026. La unica informacion verificable disponible es la ficha publica del repositorio: no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El repositorio tiene un tamano de 81,4 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+`ryaluous/yeetyah145` es un repositorio de modelo alojado en Hugging Face por el usuario `ryaluous`, publicado el 11 de julio de 2026 y actualizado por ultima vez el 25 de septiembre de 2026. La unica informacion verificable disponible es la ficha publica del repositorio: no declara pipeline de inferencia, licencia, idiomas soportados ni arquitectura. El repositorio tiene un tamano de 81,4 GB y esta sujeto a acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 Se trata de un modelo con practicamente nula traccion publica: registra 0 descargas y 1 like en el momento de redactar esta ficha. No se ha publicado informacion tecnica asociada (paper, model card detallada, blog de anuncio ni repositorio de codigo) y la busqueda web realizada no devolvio ningun resultado relacionado con el modelo, unicamente paginas de SteamDB sin conexion alguna con el proyecto.
 
@@ -22,7 +22,7 @@ Dado que no hay datos confirmados sobre arquitectura, parametros, contexto o pro
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 81,4 GB |
 | Pipeline declarado | no disponible |
-| Acceso | restringido (gated), requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated), requiere aceptar condiciones en Hugging Face |
 | Descargas / likes | 0 descargas / 1 like |
 | Fecha de creacion | 11 de julio de 2026 |
 | Ultima actualizacion | 25 de septiembre de 2026 |
@@ -91,7 +91,7 @@ No disponible. No se ha identificado ningun modelo comparable, porque se descono
 
 - Ausencia total de documentacion tecnica: no hay model card detallada, paper ni repositorio de codigo asociado.
 - Licencia no declarada: no puede confirmarse si se permite uso comercial, redistribucion o modificacion. En ausencia de licencia, no debe asumirse ningun derecho de uso.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y el autor puede denegar el acceso discrecionalmente.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y el autor puede denegar el acceso discrecionalmente.
 - Riesgo de alucinacion y sesgos: imposible de evaluar sin benchmarks ni informacion de entrenamiento.
 - Idiomas y contexto: desconocidos, por lo que no puede garantizarse un comportamiento correcto en castellano ni con entradas largas.
 - Traccion nula: 0 descargas y 1 like implican ausencia de validacion por parte de la comunidad, sin reportes independientes de calidad, seguridad o reproducibilidad.
@@ -100,6 +100,6 @@ No disponible. No se ha identificado ningun modelo comparable, porque se descono
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ryaluous/yeetyah145
+- Hugging Face: https://huggingface.co/ryaluous/yeetyah145
 - Paper, blog, repositorio de codigo, demos: no disponible.
 - Nota sobre la busqueda web: los unicos resultados devueltos corresponden a SteamDB (https://steamdb.info/ y paginas derivadas), sin ninguna relacion con el modelo. No se han localizado enlaces relevantes adicionales.

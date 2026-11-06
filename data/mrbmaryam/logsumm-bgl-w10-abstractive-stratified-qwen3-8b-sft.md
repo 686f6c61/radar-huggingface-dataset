@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w10-abstractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT, supervised fine-tuning) del modelo Qwen3-8B, publicado por el usuario mrbmaryam en HuggingFace. El nombre del repositorio sugiere que se ha entrenado para una tarea de resumen abstractivo sobre un corpus identificado como "logsumm-bgl-w10-abstractive-stratified", presumiblemente un conjunto de datos de resúmenes con estratificación por ventanas de longitud (w10). El modelo parte de la versión cuantizada en 4 bits de Qwen3-8B publicada por Unsloth, lo que indica que el entrenamiento se realizó con la librería Unsloth para acelerar el proceso.
+`mrbmaryam/logsumm-bgl-w10-abstractive-stratified-qwen3-8b-sft` es un ajuste fino (SFT, supervised fine-tuning) del modelo Qwen3-8B, publicado por el usuario mrbmaryam en Hugging Face. El nombre del repositorio sugiere que se ha entrenado para una tarea de resumen abstractivo sobre un corpus identificado como "logsumm-bgl-w10-abstractive-stratified", presumiblemente un conjunto de datos de resúmenes con estratificación por ventanas de longitud (w10). El modelo parte de la versión cuantizada en 4 bits de Qwen3-8B publicada por Unsloth, lo que indica que el entrenamiento se realizó con la librería Unsloth para acelerar el proceso.
 
 Qwen3-8B es un transformer decoder-only de la familia Qwen3 de Alibaba, con 8.000 millones de parámetros y modo de razonamiento híbrido (thinking/no-thinking). Este ajuste fino hereda esa arquitectura y añade una especialización en generación de resúmenes abstractivos en inglés, el único idioma declarado en la model card.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w10-abstractive-stratified-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Ajuste experimental sin benchmarks |
-| Qwen/Qwen3-8B | 8B | 32.768 tokens (modelo base) | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base generalista, con benchmarks publicados |
-| Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | HuggingFace | Alternativa generalista con contexto mucho mayor |
-| Mistral-7B-Instruct-v0.3 | 7B | 32.000 tokens | Apache 2.0 | HuggingFace | Alternativa de tamaño similar con licencia permisiva |
+| mrbmaryam/logsumm-bgl-w10-abstractive-stratified-qwen3-8b-sft | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Ajuste experimental sin benchmarks |
+| Qwen/Qwen3-8B | 8B | 32.768 tokens (modelo base) | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base generalista, con benchmarks publicados |
+| Meta-Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Llama 3.1 Community License | Hugging Face | Alternativa generalista con contexto mucho mayor |
+| Mistral-7B-Instruct-v0.3 | 7B | 32.000 tokens | Apache 2.0 | Hugging Face | Alternativa de tamaño similar con licencia permisiva |
 
 La comparación es orientativa: el modelo de mrbmaryam está especializado en resumen y no compite en capacidades generales con los modelos base citados.
 
@@ -82,7 +82,7 @@ La comparación es orientativa: el modelo de mrbmaryam está especializado en re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrbmaryam/logsumm-bgl-w10-abstractive-stratified-qwen3-8b-sft
+- Hugging Face: https://huggingface.co/mrbmaryam/logsumm-bgl-w10-abstractive-stratified-qwen3-8b-sft
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Repositorio Unsloth: https://github.com/unslothai/unsloth
 - Modelo Qwen3-8B original: https://huggingface.co/Qwen/Qwen3-8B

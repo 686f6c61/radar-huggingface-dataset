@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Atria es un repositorio de modelo publicado en HuggingFace por el usuario maxfad123 bajo el identificador `maxfad123/Atria`. La unica informacion verificable disponible en el momento de redactar esta ficha es la licencia (Apache 2.0), la etiqueta de region (`region:us`), la ausencia de pipeline declarado y las fechas de creacion y ultima actualizacion, ambas el 19 de septiembre de 2026. No se declara autor institucional, paper, repositorio de codigo ni documentacion adicional.
+Atria es un repositorio de modelo publicado en Hugging Face por el usuario maxfad123 bajo el identificador `maxfad123/Atria`. La unica informacion verificable disponible en el momento de redactar esta ficha es la licencia (Apache 2.0), la etiqueta de region (`region:us`), la ausencia de pipeline declarado y las fechas de creacion y ultima actualizacion, ambas el 19 de septiembre de 2026. No se declara autor institucional, paper, repositorio de codigo ni documentacion adicional.
 
 La model card del autor no contiene mas que el bloque de metadatos con la licencia; no incluye descripcion, arquitectura, tamano, datos de entrenamiento, idiomas ni ejemplos de uso. El repositorio registra 0 descargas y 0 likes, lo que indica que no ha tenido difusion ni validacion por parte de la comunidad.
 
@@ -86,5 +86,5 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxfad123/Atria
+- Hugging Face: https://huggingface.co/maxfad123/Atria
 - No se han encontrado en la busqueda web enlaces relevantes al modelo, papers, blogs, repositorios ni demos asociados. Los resultados devueltos correspondian a contenidos sin relacion con el modelo (paginas sobre servicios religiosos en frances).

@@ -69,7 +69,7 @@ No hay datos publicados de benchmarks ni de rendimiento que permitan una compara
 
 | Modelo | Parametros | Contexto | Objetivo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| William-Gao1/qwen3.5-4b-json-lora | Adaptador LoRA r=8 sobre base de ~4B | No disponible (entrenado a 1.024 tokens) | Imponer un sobre JSON fijo en cualquier respuesta | No disponible | HuggingFace, 0 descargas, 0 likes |
+| William-Gao1/qwen3.5-4b-json-lora | Adaptador LoRA r=8 sobre base de ~4B | No disponible (entrenado a 1.024 tokens) | Imponer un sobre JSON fijo en cualquier respuesta | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Qwen/Qwen3.5-4B (modelo base) | ~4B | No disponible | Generacion de texto e instrucciones general | No disponible | Referenciado como base del adaptador |
 | Otros adaptadores LoRA orientados a JSON | No disponible | No disponible | Salida estructurada | No disponible | No se han identificado alternativas equivalentes en la informacion proporcionada |
 
@@ -88,7 +88,7 @@ No hay datos publicados de benchmarks ni de rendimiento que permitan una compara
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/William-Gao1/qwen3.5-4b-json-lora
+- Pagina del modelo en Hugging Face: https://huggingface.co/William-Gao1/qwen3.5-4b-json-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceH4/ultrachat_200k
 - Libreria PEFT: https://github.com/huggingface/peft

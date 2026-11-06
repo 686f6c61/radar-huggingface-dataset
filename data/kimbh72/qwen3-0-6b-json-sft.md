@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo base Qwen3-0.6B, desarrollado por el usuario kimbh72 y publicado en HuggingFace. Se trata de un modelo de generacion de texto de aproximadamente 596 millones de parametros, orientado segun su nombre a la produccion de salidas en formato JSON. El modelo se distribuye en formato safetensors con un tamano de repositorio de 1,2 GB y es compatible con la libreria transformers y con text-generation-inference.
+Qwen3-0.6B-JSON-SFT es un ajuste fino supervisado (SFT) del modelo base Qwen3-0.6B, desarrollado por el usuario kimbh72 y publicado en Hugging Face. Se trata de un modelo de generacion de texto de aproximadamente 596 millones de parametros, orientado segun su nombre a la produccion de salidas en formato JSON. El modelo se distribuye en formato safetensors con un tamano de repositorio de 1,2 GB y es compatible con la libreria transformers y con text-generation-inference.
 
 El modelo parte de la familia Qwen3, una saga de modelos de la compania Alibaba (Qwen) que emplea arquitecturas transformer densas. Al tratarse de un ajuste fino de un modelo de 0,6B, su interes principal radica en su ligereza: puede ejecutarse en hardware de consumo y en entornos con recursos limitados, lo que lo hace atractivo para tareas de generacion estructurada donde el coste computacional es un factor critico.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada por la escasez de documentacion: la mode
 
 ## Arquitectura y entrenamiento
 
-El modelo es un ajuste fino del Qwen3-0.6B, que pertenece a la familia Qwen3 de modelos transformer densos. El repositorio incluye la etiqueta `trl` y `sft`, lo que indica que el ajuste se realizo mediante el Trainer de TRL (Transformer Reinforcement Learning) de HuggingFace con entrenamiento supervisado sobre pares instruccion-respuesta. La etiqueta `qwen3` confirma la arquitectura base, pero no se especifica la configuracion exacta (numero de capas, dimensiones ocultas, cabezas de atencion) ni la longitud de contexto nativa.
+El modelo es un ajuste fino del Qwen3-0.6B, que pertenece a la familia Qwen3 de modelos transformer densos. El repositorio incluye la etiqueta `trl` y `sft`, lo que indica que el ajuste se realizo mediante el Trainer de TRL (Transformer Reinforcement Learning) de Hugging Face con entrenamiento supervisado sobre pares instruccion-respuesta. La etiqueta `qwen3` confirma la arquitectura base, pero no se especifica la configuracion exacta (numero de capas, dimensiones ocultas, cabezas de atencion) ni la longitud de contexto nativa.
 
 No hay informacion sobre el dataset de entrenamiento, el numero de tokens utilizados, la composicion de los datos, la existencia de RLHF o DPO posteriores, ni hiperparametros como la tasa de aprendizaje o el regimen de precision (fp16, bf16, fp8). La model card indica "[More Information Needed]" en todas las secciones de detalles de entrenamiento. Tampoco se documenta ninguna innovacion tecnica adicional (atencion lineal, decodificacion especulativa, modos de pensamiento, etc.).
 
@@ -32,7 +32,7 @@ No hay informacion sobre el dataset de entrenamiento, el numero de tokens utiliz
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` sugiere un formato de chat multi-turno.
 - Generacion de salidas en formato JSON: el nombre del modelo ("JSON-SFT") indica que fue ajustado para producir respuestas estructuradas en JSON, aunque no se documenta el esquema ni el formato exacto.
 - Ajuste fino supervisado: entrenado con TRL/SFT, lo que implica capacidad para seguir instrucciones en el formato usado durante el ajuste.
-- Compatibilidad con text-generation-inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en infraestructura de inferencia de HuggingFace.
+- Compatibilidad con text-generation-inference: la etiqueta `text-generation-inference` y `endpoints_compatible` indican que puede desplegarse en infraestructura de inferencia de Hugging Face.
 - Soporte de tool calling / function calling: no disponible (no documentado).
 - Soporte de agentes y razonamiento multi-paso: no disponible (no documentado).
 - Capacidades multilingues: no disponible (no documentado).
@@ -84,7 +84,7 @@ La comparativa se limita a datos publicos de los modelos alternativos; no se dis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kimbh72/Qwen3-0.6B-JSON-SFT
+- Hugging Face: https://huggingface.co/kimbh72/Qwen3-0.6B-JSON-SFT
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio TRL (usado para el SFT): https://github.com/huggingface/trl
 - Paper de referencia citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700

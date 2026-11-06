@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: no disponible; el artefacto está pensado para `CPUExecutionProvider` de ONNX Runtime.
 - Cabe en GPU de consumo: no disponible; no se han publicado requisitos de memoria ni pruebas en GPU.
 - Despliegue: ONNX Runtime (versión de referencia 1.17.0 para la optimización y 1.31.1 para validación), Anserini con soporte de top-k en tiempo de ejecución y Pyserini como cliente Python.
-- Tamaño del artefacto: 1,4 GB en el repositorio de HuggingFace.
+- Tamaño del artefacto: 1,4 GB en el repositorio de Hugging Face.
 - Latencia y throughput: no disponibles.
 - Nota operativa: el lote está fijado a 1, por lo que el rendimiento depende del número de llamadas individuales y no de la agregación por lotes.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castorini/slideon-onnx
+- Modelo en Hugging Face: https://huggingface.co/castorini/slideon-onnx
 - Modelo base: https://huggingface.co/lightonai/SlideOn
 - Checkpoint base concreto: https://huggingface.co/lightonai/SlideOn/tree/370c600e9886afc43ff8026695261e56ecfaa011
 - Anserini: https://github.com/castorini/anserini

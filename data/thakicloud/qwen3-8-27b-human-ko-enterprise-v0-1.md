@@ -94,8 +94,8 @@ La informacion disponible solo permite comparar con el modelo base y con el chec
 
 | Modelo | Parametros | Contexto | Precision en EnterpriseOps-KO-Policy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThakiCloud/Qwen3.8-27B-Human-KO (base) | 27,8 B (no confirmado en la informacion) | no disponible | 95,6 | no disponible en la informacion | HuggingFace |
-| Qwen3.8-27B-Human-KO-Enterprise-v0.1 | 27,78 B | no disponible | 97,2 | Apache 2.0 | HuggingFace |
+| ThakiCloud/Qwen3.8-27B-Human-KO (base) | 27,8 B (no confirmado en la informacion) | no disponible | 95,6 | no disponible en la informacion | Hugging Face |
+| Qwen3.8-27B-Human-KO-Enterprise-v0.1 | 27,78 B | no disponible | 97,2 | Apache 2.0 | Hugging Face |
 | Qwen3.8-27B-Human-KO-Enterprise-v0.2 | no disponible | no disponible | 97,6 | no disponible en la informacion | Referenciado en la model card |
 
 Diferencias relevantes entre los dos checkpoints de la misma familia: v0.2 mejora el rechazo (99,2 frente a 97,1) y la precision global (97,6 frente a 97,2), pero empeora la deteccion de excepciones no disparadas (94,9 frente a 96,6). La eleccion entre ambos depende de si la prioridad operativa es minimizar falsos rechazos de peticiones legitimas o minimizar la aplicacion incorrecta de excepciones.
@@ -117,7 +117,7 @@ Diferencias relevantes entre los dos checkpoints de la misma familia: v0.2 mejor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.1
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO-Enterprise-v0.1
 - Modelo base: https://huggingface.co/ThakiCloud/Qwen3.8-27B-Human-KO
 - Dataset de evaluacion y entrenamiento (EnterpriseOps-KO-Policy, incluye `prompt_contract.txt`): https://huggingface.co/datasets/ThakiCloud/EnterpriseOps-KO-Policy
 - Checkpoint alternativo v0.2, referenciado en la model card aunque sin URL directa proporcionada: Qwen3.8-27B-Human-KO-Enterprise-v0.2

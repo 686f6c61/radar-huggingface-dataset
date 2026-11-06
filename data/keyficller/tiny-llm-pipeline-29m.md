@@ -79,7 +79,7 @@ La única referencia de comparación explícita en la información disponible es
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tiny-llm-pipeline-29m | ~29 M | No disponible | No disponible | HuggingFace (0 descargas, 0 likes); pesos en PyTorch |
+| tiny-llm-pipeline-29m | ~29 M | No disponible | No disponible | Hugging Face (0 descargas, 0 likes); pesos en PyTorch |
 | MiniMind2-Small (config de referencia) | Misma configuración declarada (vocab 6400, anchura 512, 8 capas) | No disponible en la información proporcionada | No disponible | Repositorio del proyecto MiniMind |
 | Alternativas tiny de la misma categoría (por ejemplo, modelos de menos de 1B de parámetros orientados a chino o multilingüe) | No disponible | No disponible | No disponible | No disponible |
 
@@ -100,8 +100,8 @@ No se dispone de datos verificables en las fuentes consultadas para establecer u
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/KeyFicller/tiny-llm-pipeline-29m
+- Modelo en Hugging Face: https://huggingface.co/KeyFicller/tiny-llm-pipeline-29m
 - Repositorio de origen (proyecto tiny-llm-pipeline): https://github.com/KeyFicller/AEFS-Capstones/tree/main/projects/tiny-llm-pipeline
 - Dataset de entrenamiento citado por el autor: https://huggingface.co/datasets/jingyaogong/minimind_dataset
-- Listado de modelos de generación de texto de HuggingFace (único resultado adicional devuelto por la búsqueda web): https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created
+- Listado de modelos de generación de texto de Hugging Face (único resultado adicional devuelto por la búsqueda web): https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created
 - Paper, blog o demo oficiales: no disponibles en la información proporcionada.

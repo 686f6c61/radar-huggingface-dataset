@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RusMind-Momentum | 4,65 B | no disponible | GGUF | RusMind License (comercial solo con contrato) | HuggingFace, rusmind.ru |
-| google/gemma-4-E2B-it (base) | no disponible | no disponible | safetensors y otros | Apache 2.0 | HuggingFace |
-| RusMind-Vspyshka (misma familia) | no disponible | no disponible | no disponible (familia GGUF) | RusMind License | HuggingFace |
-| RusMind-Znanie (misma familia) | no disponible | no disponible | no disponible | RusMind License | HuggingFace, nube |
+| RusMind-Momentum | 4,65 B | no disponible | GGUF | RusMind License (comercial solo con contrato) | Hugging Face, rusmind.ru |
+| google/gemma-4-E2B-it (base) | no disponible | no disponible | safetensors y otros | Apache 2.0 | Hugging Face |
+| RusMind-Vspyshka (misma familia) | no disponible | no disponible | no disponible (familia GGUF) | RusMind License | Hugging Face |
+| RusMind-Znanie (misma familia) | no disponible | no disponible | no disponible | RusMind License | Hugging Face, nube |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DICPlay/RusMind-Momentum
+- Modelo en Hugging Face: https://huggingface.co/DICPlay/RusMind-Momentum
 - Demo web oficial: https://rusmind.ru
 - Carpeta de la version actual (3.2): https://huggingface.co/DICPlay/RusMind-Momentum/tree/main/v3.2
 - Carpeta de la primera version guardada (1.1): https://huggingface.co/DICPlay/RusMind-Momentum/tree/main/v1.1

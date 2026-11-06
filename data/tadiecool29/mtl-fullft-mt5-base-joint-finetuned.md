@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tadiecool29/MTL-FullFT-mt5-base-joint-finetuned` es un checkpoint publicado en HuggingFace por el usuario `tadiecool29`, cuyo identificador sugiere un ajuste fino completo (full fine-tuning) del modelo multilingüe `mt5-base` de Google bajo un esquema de aprendizaje multitarea (MTL, *multi-task learning*) y entrenamiento conjunto (*joint*). Se trata, por tanto, presumiblemente de un modelo encoder-decoder de tipo secuencia-a-secuencia orientado a tareas de generación condicionada (traducción, resumen, reformulación, extracción), no de un modelo conversacional decoder-only.
+`tadiecool29/MTL-FullFT-mt5-base-joint-finetuned` es un checkpoint publicado en Hugging Face por el usuario `tadiecool29`, cuyo identificador sugiere un ajuste fino completo (full fine-tuning) del modelo multilingüe `mt5-base` de Google bajo un esquema de aprendizaje multitarea (MTL, *multi-task learning*) y entrenamiento conjunto (*joint*). Se trata, por tanto, presumiblemente de un modelo encoder-decoder de tipo secuencia-a-secuencia orientado a tareas de generación condicionada (traducción, resumen, reformulación, extracción), no de un modelo conversacional decoder-only.
 
-La relevancia de la ficha es limitada y hay que ser explícito al respecto: la model card publicada es la plantilla vacía generada automáticamente por HuggingFace, sin ninguna sección completada. No se declaran licencia, idiomas, tareas objetivo del multitarea, composición del dataset, hiperparámetros ni resultados de evaluación. Tampoco hay descargas ni interacciones registradas, y el repositorio figura con un tamaño de 0.0 GB, lo que apunta a que los pesos podrían no estar efectivamente subidos.
+La relevancia de la ficha es limitada y hay que ser explícito al respecto: la model card publicada es la plantilla vacía generada automáticamente por Hugging Face, sin ninguna sección completada. No se declaran licencia, idiomas, tareas objetivo del multitarea, composición del dataset, hiperparámetros ni resultados de evaluación. Tampoco hay descargas ni interacciones registradas, y el repositorio figura con un tamaño de 0.0 GB, lo que apunta a que los pesos podrían no estar efectivamente subidos.
 
 En consecuencia, esta ficha documenta dos cosas: por un lado, todo lo verificable sobre el artefacto publicado (metadatos, estado del repositorio y ausencias); por otro, las características conocidas del modelo base `mt5-base`, que se indican siempre marcadas como información del base y no confirmadas para este checkpoint. Cualquier uso en producción debería ir precedido de una descarga y validación empírica del propio autor.
 
@@ -27,7 +27,7 @@ En consecuencia, esta ficha documenta dos cosas: por un lado, todo lo verificabl
 
 Si el identificador se corresponde con lo que declara, el modelo parte de `mt5-base`, un transformer encoder-decoder con atención de posiciones relativas al estilo T5, 12 capas de encoder y 12 de decoder, `d_model = 768`, 12 cabezas de atención y vocabulario SentencePiece de 250 000 tokens. `mt5-base` se preentrenó con un objetivo span-corruption de tipo denoising sobre mC4, un corpus multilingüe extraído de Common Crawl con 101 idiomas y del orden de un billón de tokens. No hay ninguna confirmación de que este checkpoint conserve esa configuración ni de si el vocabulario o la inicialización fueron modificados.
 
-Sobre el ajuste fino no hay información verificable. El nombre del repositorio indica "MTL" (multitarea), "FullFT" (fine-tuning completo de todos los parámetros, en oposición a LoRA/adapter) y "joint" (entrenamiento conjunto de las tareas en una sola fase, en lugar de secuencial). No se documentan el número de tareas, su mezcla, el dataset, los hiperparámetros, el régimen de precisión ni si hubo una fase de alineación (RLHF, DPO) —en un modelo seq2seq de este tamaño lo habitual es que no la haya—. El tag `arxiv:1910.09700` no apunta a un paper del modelo, sino al trabajo de Lacoste et al. sobre estimación de emisiones de carbono, que aparece citado en la plantilla por defecto de HuggingFace.
+Sobre el ajuste fino no hay información verificable. El nombre del repositorio indica "MTL" (multitarea), "FullFT" (fine-tuning completo de todos los parámetros, en oposición a LoRA/adapter) y "joint" (entrenamiento conjunto de las tareas en una sola fase, en lugar de secuencial). No se documentan el número de tareas, su mezcla, el dataset, los hiperparámetros, el régimen de precisión ni si hubo una fase de alineación (RLHF, DPO) —en un modelo seq2seq de este tamaño lo habitual es que no la haya—. El tag `arxiv:1910.09700` no apunta a un paper del modelo, sino al trabajo de Lacoste et al. sobre estimación de emisiones de carbono, que aparece citado en la plantilla por defecto de Hugging Face.
 
 ## Capacidades
 
@@ -96,10 +96,10 @@ La comparacion debe leerse con cautela: el checkpoint analizado no aporta ningun
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-joint-finetuned
+- Modelo en Hugging Face: https://huggingface.co/tadiecool29/MTL-FullFT-mt5-base-joint-finetuned
 - Perfil del autor: https://huggingface.co/tadiecool29
 - Paper del modelo base mT5 (Xue et al., 2020): https://arxiv.org/abs/2010.11934
-- Paper del modelo base T5 (Raffel et al., 2020): https://arxiv.org/abs/1910.09700 — advertencia: el tag `arxiv:1910.09700` del repositorio corresponde en realidad a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", citado por la plantilla de HuggingFace, no a un paper de este modelo.
+- Paper del modelo base T5 (Raffel et al., 2020): https://arxiv.org/abs/1910.09700 — advertencia: el tag `arxiv:1910.09700` del repositorio corresponde en realidad a Lacoste et al., "Quantifying the Carbon Emissions of Machine Learning", citado por la plantilla de Hugging Face, no a un paper de este modelo.
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 - Repositorio oficial de mT5 en GitHub: https://github.com/google-research/mt5
 

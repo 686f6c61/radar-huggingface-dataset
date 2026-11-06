@@ -72,6 +72,6 @@ No se dispone de datos comparativos publicados entre Neuron-46x4B-Instruct y otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Neura-Tech-AI/Neuron-46x4B
+- Repositorio Hugging Face: https://huggingface.co/Neura-Tech-AI/Neuron-46x4B
 - Nueva version anunciada: Neura-Tech-AI/Neuron-46x4B-Instruct (no se proporciona URL directa)
 - Modelos base: Neura-Tech-AI/Neuron-4B-Instruct, Qwen/Qwen3-4B-Instruct-2507, Qwen/Qwen3-4B-Thinking-2507 (enlaces no incluidos en la informacion)

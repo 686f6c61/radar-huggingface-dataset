@@ -6,7 +6,7 @@ Vocal intensity conversion es un modelo de conversión de audio a audio desarrol
 
 El componente entrenado es un Transformer encoder de seis capas, anchura 128 y cuatro cabezas, con 2,66 millones de parámetros. Se apoya en WavLM-Large (capa 6) como codificador de características y en el vocoder HiFi-GAN de kNN-VC para la resíntesis; ninguno de los dos se distribuye en el repositorio, sino que se descargan desde sus fuentes originales (unos 1,3 GB en la primera ejecución). El entrenamiento se realizó como una GAN condicional con consistencia de ciclo (cycle-consistent) y sin datos paralelos, sobre el split de entrenamiento de AVID (Aalto Vocal Intensity Database).
 
-Su relevancia es fundamentalmente de investigación: ofrece control continuo y calibrado de la intensidad vocal, una variable prosódica que la mayoría de los sistemas de conversión de voz tratan de forma categórica o ignoran. El trabajo está enviado a ICASSP 2027 y la licencia es MIT, pero el repositorio se publicó sin resultados de benchmarks y con un tamaño reportado de 0,0 GB en HuggingFace, por lo que debe verificarse el contenido real antes de usarlo en producción.
+Su relevancia es fundamentalmente de investigación: ofrece control continuo y calibrado de la intensidad vocal, una variable prosódica que la mayoría de los sistemas de conversión de voz tratan de forma categórica o ignoran. El trabajo está enviado a ICASSP 2027 y la licencia es MIT, pero el repositorio se publicó sin resultados de benchmarks y con un tamaño reportado de 0,0 GB en Hugging Face, por lo que debe verificarse el contenido real antes de usarlo en producción.
 
 ## Especificaciones tecnicas
 
@@ -51,7 +51,7 @@ El entrenamiento se planteó como una GAN condicional con consistencia de ciclo 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye métricas, y el artículo asociado está únicamente enviado a ICASSP 2027, sin resultados accesibles en el momento de redactar esta ficha. No se dispone por tanto de cifras de error de intensidad (dB), MOS, similitud de hablante ni inteligibilidad.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye métricas, y el artículo asociado está únicamente enviado a ICASSP 2027, sin resultados accesibles en el momento de redactar esta ficha. No se dispone por tanto de cifras de error de intensidad (dB), MOS, similitud de hablante ni inteligibilidad.
 
 ## Requisitos de hardware
 
@@ -69,9 +69,9 @@ La comparación directa no está disponible: los sistemas de conversión de voz 
 
 | Modelo | Tarea | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vocal intensity conversion (vers-project) | Conversión de intensidad vocal (audio a audio) | 2,66 M en el convertidor (+ WavLM-Large y HiFi-GAN congelados) | no disponible | MIT | Pesos en HuggingFace; codigo y demos enlazados por el autor |
+| Vocal intensity conversion (vers-project) | Conversión de intensidad vocal (audio a audio) | 2,66 M en el convertidor (+ WavLM-Large y HiFi-GAN congelados) | no disponible | MIT | Pesos en Hugging Face; codigo y demos enlazados por el autor |
 | kNN-VC (Baas et al., 2023) | Conversión de hablante (audio a audio) | no disponible | no disponible | MIT (según el autor de esta ficha) | Codigo en GitHub; vocoder reutilizado por este modelo |
-| RVC / so-vits-svc | Conversión de hablante (audio a audio) | no disponible | no disponible | no disponible | Ampliamente distribuidos en la comunidad (topic de GitHub y espacios de HuggingFace) |
+| RVC / so-vits-svc | Conversión de hablante (audio a audio) | no disponible | no disponible | no disponible | Ampliamente distribuidos en la comunidad (topic de GitHub y espacios de Hugging Face) |
 
 Los datos de parámetros, contexto y rendimiento de RVC y so-vits-svc no están disponibles en la información proporcionada.
 
@@ -82,7 +82,7 @@ Los datos de parámetros, contexto y rendimiento de RVC y so-vits-svc no están 
 - Sin métricas publicadas: no hay resultados objetivos ni subjetivos que permitan anticipar la calidad de la conversión, el error en dB alcanzado ni la preservación real de la identidad del hablante.
 - Riesgo de artefactos de resíntesis: al depender de un vocoder HiFi-GAN, la salida puede presentar artefactos propios de la resíntesis neuronal; no hay información sobre este extremo en la documentación disponible.
 - Dependencia de terceros: WavLM-Large y el vocoder de kNN-VC no se incluyen en el repositorio y deben descargarse en tiempo de ejecución, lo que añade una dependencia de red y de los repositorios originales.
-- Tamaño del repositorio reportado como 0,0 GB en los metadatos de HuggingFace: conviene verificar que los pesos `model.safetensors` están efectivamente disponibles antes de integrar el modelo en cualquier flujo de trabajo.
+- Tamaño del repositorio reportado como 0,0 GB en los metadatos de Hugging Face: conviene verificar que los pesos `model.safetensors` están efectivamente disponibles antes de integrar el modelo en cualquier flujo de trabajo.
 - Estado de publicación: el artículo está enviado, no aceptado ni publicado, por lo que las cifras y conclusiones pueden cambiar tras la revisión por pares.
 - Uso comercial: la licencia MIT lo permite, pero se heredan las condiciones de las licencias de WavLM-Large y de kNN-VC, que deben verificarse por separado; la información disponible indica MIT para kNN-VC.
 - No es un modelo de lenguaje: no admite prompts de texto, tool calling ni despliegue en servidores de inferencia tipo vLLM u Ollama.
@@ -90,7 +90,7 @@ Los datos de parámetros, contexto y rendimiento de RVC y so-vits-svc no están 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vers-project/vocal-intensity-conversion
+- Modelo en Hugging Face: https://huggingface.co/vers-project/vocal-intensity-conversion
 - Código fuente: https://github.com/vers-project/vocal-intensity-conversion
 - Muestras de audio: https://vers-project.github.io/vocal-intensity-conversion/
 - Dataset AVID (Aalto Vocal Intensity Database): https://doi.org/10.5281/zenodo.8331897
@@ -98,4 +98,4 @@ Los datos de parámetros, contexto y rendimiento de RVC y so-vits-svc no están 
 - Lista curada de conversión de voz (contexto): https://github.com/JeffC0628/awesome-voice-conversion
 - Temática de conversión de voz en GitHub (contexto): https://github.com/topics/voice-conversion
 - Applio, suite de conversión de voz (contexto): https://applio.org/
-- Ultimate RVC, espacio de HuggingFace (contexto): https://huggingface.co/spaces/JackismyShephard/ultimate-rvc
+- Ultimate RVC, espacio de Hugging Face (contexto): https://huggingface.co/spaces/JackismyShephard/ultimate-rvc

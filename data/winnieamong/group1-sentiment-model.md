@@ -100,7 +100,7 @@ Las licencias indicadas para los modelos alternativos corresponden a sus modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/WinnieAmong/group1-sentiment-model
+- Modelo en Hugging Face: https://huggingface.co/WinnieAmong/group1-sentiment-model
 - Dataset de entrenamiento (IMDB): https://huggingface.co/datasets/stanfordnlp/imdb
 - Modelo base: https://huggingface.co/distilbert-base-uncased
 - Paper de DistilBERT (Sanh et al., 2019): https://arxiv.org/abs/1910.01108

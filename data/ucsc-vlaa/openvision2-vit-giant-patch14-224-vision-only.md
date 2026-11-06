@@ -62,14 +62,14 @@ No se dispone de datos comparativos con otros modelos de la misma categoría (po
 - No se especifica la licencia del modelo, lo que impide conocer las restricciones de uso comercial.
 - No hay información sobre sesgos o riesgos de alucinación en las captions generadas.
 - La generación de captions puede producir descripciones inexactas o inventadas en imágenes complejas o ambiguas.
-- El modelo tiene solo 5 descargas y 1 like en HuggingFace, lo que sugiere que no está ampliamente probado en producción.
+- El modelo tiene solo 5 descargas y 1 like en Hugging Face, lo que sugiere que no está ampliamente probado en producción.
 - No se especifica el idioma de las captions ni la cobertura multilingüe.
 - El decoder no usa embeddings posicionales en el flujo de texto, lo que puede limitar la coherencia de secuencias largas, aunque la longitud de contexto no se ha publicado.
 - El encoder está fijado a una resolución de 224 píxeles, lo que puede perder detalles de imágenes de alta resolución.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UCSC-VLAA/openvision2-vit-giant-patch14-224-vision-only
+- Repositorio Hugging Face: https://huggingface.co/UCSC-VLAA/openvision2-vit-giant-patch14-224-vision-only
 - Página del proyecto OpenVision 2: https://ucsc-vlaa.github.io/OpenVision2/
 - Repositorio GitHub OpenVision: https://github.com/UCSC-VLAA/OpenVision
-- Colección OpenVision 2 en HuggingFace: https://huggingface.co/collections/UCSC-VLAA/openvision-2
+- Colección OpenVision 2 en Hugging Face: https://huggingface.co/collections/UCSC-VLAA/openvision-2

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-ocuMmGPo51nEQ9MC es un ajuste fino del modelo ByteDance-Seed/Seed-OSS-36B-Instruct publicado en HuggingFace por el usuario PS4Research. Se distribuye bajo licencia Apache 2.0 y contiene 36.151.104.512 parámetros (unos 36,15 mil millones) en pesos safetensors; el repositorio ocupa 72,3 GB, un tamano coherente con un almacenamiento en precision de 16 bits por parametro. El modelo esta etiquetado como text-generation y conversational, e integra las etiquetas seed_oss, transformers, unsloth, text-generation-inference y endpoints_compatible.
+ocuMmGPo51nEQ9MC es un ajuste fino del modelo ByteDance-Seed/Seed-OSS-36B-Instruct publicado en Hugging Face por el usuario PS4Research. Se distribuye bajo licencia Apache 2.0 y contiene 36.151.104.512 parámetros (unos 36,15 mil millones) en pesos safetensors; el repositorio ocupa 72,3 GB, un tamano coherente con un almacenamiento en precision de 16 bits por parametro. El modelo esta etiquetado como text-generation y conversational, e integra las etiquetas seed_oss, transformers, unsloth, text-generation-inference y endpoints_compatible.
 
-La model card es minima: unicamente indica que el modelo se entreno con Unsloth y la libreria TRL de HuggingFace "2x mas rapido" y que deriva del modelo instruct de ByteDance-Seed. No se documenta el conjunto de datos de ajuste, el numero de tokens de entrenamiento, la tecnica de alineacion (SFT, DPO, RLHF) ni el objetivo concreto del finetune. Tampoco se especifican la longitud de contexto, los tipos de cuantizacion publicados ni la arquitectura interna.
+La model card es minima: unicamente indica que el modelo se entreno con Unsloth y la libreria TRL de Hugging Face "2x mas rapido" y que deriva del modelo instruct de ByteDance-Seed. No se documenta el conjunto de datos de ajuste, el numero de tokens de entrenamiento, la tecnica de alineacion (SFT, DPO, RLHF) ni el objetivo concreto del finetune. Tampoco se especifican la longitud de contexto, los tipos de cuantizacion publicados ni la arquitectura interna.
 
 El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, y no incluye resultados de evaluacion. Su relevancia practica es, por tanto, limitada: se trata de un artefacto derivado sin informacion de validacion, cuyo interes tecnico depende enteramente de las capacidades del modelo base Seed-OSS-36B-Instruct. Cualquier evaluacion seria deberia contrastarse contra ese modelo original antes de considerarlo para produccion.
 
@@ -31,7 +31,7 @@ El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, y no
 
 No se proporciona informacion sobre la arquitectura interna del modelo: la model card no detalla si se trata de un transformer denso, una mezcla de expertos (MoE), un modelo de espacio de estados o una arquitectura hibrida. Lo unico verificable es el recuento total de parametros (36,15 B) y el tamano del repositorio (72,3 GB), que corresponde a pesos de 16 bits; no hay artefactos en otros formatos ni configuracion publicada.
 
-En cuanto al entrenamiento, la unica informacion disponible indica que el modelo se entreno con Unsloth y la libreria TRL de HuggingFace, con una mejora declarada de velocidad de "2x" respecto a un flujo convencional, y que parte de ByteDance-Seed/Seed-OSS-36B-Instruct. Se desconoce el volumen de tokens, la composicion del dataset, si hubo etapas de RLHF o DPO, y cualquier innovacion tecnica adicional (decodificacion especulativa, atencion lineal, presupuesto de razonamiento, etc.). No se ha publicado informacion sobre el proposito del ajuste ni sobre las diferencias funcionales respecto al modelo base.
+En cuanto al entrenamiento, la unica informacion disponible indica que el modelo se entreno con Unsloth y la libreria TRL de Hugging Face, con una mejora declarada de velocidad de "2x" respecto a un flujo convencional, y que parte de ByteDance-Seed/Seed-OSS-36B-Instruct. Se desconoce el volumen de tokens, la composicion del dataset, si hubo etapas de RLHF o DPO, y cualquier innovacion tecnica adicional (decodificacion especulativa, atencion lineal, presupuesto de razonamiento, etc.). No se ha publicado informacion sobre el proposito del ajuste ni sobre las diferencias funcionales respecto al modelo base.
 
 ## Capacidades
 
@@ -93,8 +93,8 @@ La informacion recuperada en la busqueda web no contiene referencias a modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PS4Research/ocuMmGPo51nEQ9MC
+- Modelo en Hugging Face: https://huggingface.co/PS4Research/ocuMmGPo51nEQ9MC
 - Modelo base: https://huggingface.co/ByteDance-Seed/Seed-OSS-36B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de busqueda web: no se han recuperado enlaces relevantes; las entradas devueltas corresponden a plexytrade.com (https://www.plexytrade.com/) y sus paginas de acceso y registro, sin relacion con el modelo. No se dispone de paper, blog tecnico ni demo asociados a este repositorio.

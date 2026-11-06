@@ -73,10 +73,10 @@ No hay datos de MMLU, HumanEval, GSM8K ni de metricas de generacion de imagen co
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| voltaire321/Ming-Image-0.1-Design-GGUF (este repo) | ~6,15 B (DiT) + codificador de texto | No disponible | GGUF (Q8_0 + Q4_K) | MIT | HuggingFace, 28 descargas | Cuantizado para stable-diffusion.cpp; ~35 s por imagen de 1024x1024 en el equipo del autor |
-| inclusionAI/Ming-Image-0.1-Design | ~6 B (serie descrita como de 6 B) | No disponible | safetensors bf16 | MIT | HuggingFace (oficial) | Original sin cuantizar; maxima calidad pero requiere soporte bf16 eficiente |
-| inclusionAI/Ming-Image-0.1-Design-Layer | ~6 B (serie descrita como de 6 B) | No disponible | No disponible | MIT | HuggingFace | Variante para descomponer disenos aplanados en capas transparentes editables |
-| Comfy-Org/Ming-Image | No disponible | No disponible | safetensors bf16 | No disponible en la informacion recogida | HuggingFace | Empaquetado para ComfyUI; es la fuente de la que se derivan estos GGUF |
+| voltaire321/Ming-Image-0.1-Design-GGUF (este repo) | ~6,15 B (DiT) + codificador de texto | No disponible | GGUF (Q8_0 + Q4_K) | MIT | Hugging Face, 28 descargas | Cuantizado para stable-diffusion.cpp; ~35 s por imagen de 1024x1024 en el equipo del autor |
+| inclusionAI/Ming-Image-0.1-Design | ~6 B (serie descrita como de 6 B) | No disponible | safetensors bf16 | MIT | Hugging Face (oficial) | Original sin cuantizar; maxima calidad pero requiere soporte bf16 eficiente |
+| inclusionAI/Ming-Image-0.1-Design-Layer | ~6 B (serie descrita como de 6 B) | No disponible | No disponible | MIT | Hugging Face | Variante para descomponer disenos aplanados en capas transparentes editables |
+| Comfy-Org/Ming-Image | No disponible | No disponible | safetensors bf16 | No disponible en la informacion recogida | Hugging Face | Empaquetado para ComfyUI; es la fuente de la que se derivan estos GGUF |
 
 No se dispone de datos de rendimiento comparativos entre estas variantes ni frente a otros generadores de imagen de diseno.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativos entre estas variantes ni fren
 - El codificador de texto se distribuye en Q4_K, cuantizacion relativamente agresiva que puede afectar a la fidelidad del seguimiento del prompt. No hay mediciones publicadas de esta perdida.
 - No se han publicado benchmarks, lo que impide comparar calidad objetivamente con el modelo original o con alternativas.
 - Adopcion muy baja (28 descargas, 0 likes) y repositorio de un tercero no afiliado a inclusionAI; conviene verificar los hashes SHA-256 facilitados en la model card antes de usarlos en produccion.
-- La fecha de creacion registrada en HuggingFace es 2026-10-03, posterior a la fecha habitual de publicacion; conviene tratar los metadatos temporales con cautela.
+- La fecha de creacion registrada en Hugging Face es 2026-10-03, posterior a la fecha habitual de publicacion; conviene tratar los metadatos temporales con cautela.
 - Los GGUF se generaron con una version concreta de stable-diffusion.cpp (`master-929-3f8527a`); versiones distintas de la herramienta podrian requerir reconversion.
 - No hay informacion sobre sesgos del dataset de entrenamiento, idiomas soportados ni robustez ante prompts adversarios. El riesgo de alucinacion visual (elementos incoherentes, texto mal formado o detalles anatomicos incorrectos) es el habitual en modelos de difusion y no esta cuantificado aqui.
 - La licencia MIT de los modelos originales permite uso comercial, pero esta ficha no constituye asesoramiento legal: debe verificarse el fichero LICENSE y la licencia de Ling-V2 enlazada por el autor antes de un despliegue comercial.

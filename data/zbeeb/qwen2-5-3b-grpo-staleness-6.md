@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen2.5-3B-GRPO-Staleness-6 es un ajuste fino por aprendizaje por refuerzo del modelo base Qwen/Qwen2.5-3B, publicado por el usuario zbeeb en HuggingFace. El modelo parte de una revisión fijada del base (3.085.938.688 parámetros) y se ha entrenado con GRPO (Group Relative Policy Optimization) sobre un dataset de matemáticas de 17.005 filas derivado de DAPO. El sufijo "6" del nombre hace referencia al límite de staleness (max_off_policy_steps = 6), es decir, la antigüedad máxima permitida a la política de rollout durante el entrenamiento, no a la longitud de decodificación ni al número de pasos.
+Qwen2.5-3B-GRPO-Staleness-6 es un ajuste fino por aprendizaje por refuerzo del modelo base Qwen/Qwen2.5-3B, publicado por el usuario zbeeb en Hugging Face. El modelo parte de una revisión fijada del base (3.085.938.688 parámetros) y se ha entrenado con GRPO (Group Relative Policy Optimization) sobre un dataset de matemáticas de 17.005 filas derivado de DAPO. El sufijo "6" del nombre hace referencia al límite de staleness (max_off_policy_steps = 6), es decir, la antigüedad máxima permitida a la política de rollout durante el entrenamiento, no a la longitud de decodificación ni al número de pasos.
 
 Se trata de un checkpoint correspondiente al paso 1.000 de un entrenamiento de parámetros completos ejecutado con PrimeRL v0.9.0. El interés principal es doble: por un lado, es un modelo pequeño (3B) especializado en razonamiento matemático con formato de respuesta verificable; por otro, es un artefacto de investigación con trazabilidad inusualmente detallada, ya que el autor publica configuraciones de entrenamiento, manifiestos de exportación y verificaciones de finalización de job junto con los pesos.
 
@@ -53,7 +53,7 @@ Un detalle relevante para la reproducibilidad es la topología de cómputo: el t
 - Investigación en RL con política desincronizada: el repositorio acompaña `training-config.json` y `export-manifest.json`, lo que permite replicar o auditar experimentos sobre el efecto del límite de staleness en modelos pequeños de 3B.
 - Asistente conversacional bilingüe inglés-chino con foco técnico-matemático: soporta la plantilla de chat de Qwen2.5 y conversaciones multi-turno, adecuado para consultas de cálculo, álgebra y problemas de competición en ambos idiomas.
 - Despliegue de bajo coste en una sola GPU consumer: con pesos en bfloat16 el modelo ocupa aproximadamente 6,2 GB, por lo que cabe en tarjetas de 12 GB o más, lo que permite ofrecer asistencia matemática en local sin depender de APIs externas.
-- Servicio gestionado mediante HuggingFace Inference Endpoints: el repositorio está marcado como `endpoints_compatible` y `text-generation-inference`, lo que facilita su publicación como endpoint de generación de texto.
+- Servicio gestionado mediante Hugging Face Inference Endpoints: el repositorio está marcado como `endpoints_compatible` y `text-generation-inference`, lo que facilita su publicación como endpoint de generación de texto.
 
 ## Benchmarks y rendimiento
 
@@ -80,7 +80,7 @@ No se han publicado en la información disponible resultados de benchmarks compa
 - Cuantización a 8 bits: en torno a 3,1 GB; a 4 bits, en torno a 1,6 GB. Son estimaciones de cálculo, no hay cuantizaciones publicadas ni archivos GGUF en el repositorio.
 - Cabe en GPU de consumo: una RTX 3060 de 12 GB, RTX 4070 Ti, RTX 4080 o RTX 4090 puede albergar los pesos en bfloat16, con margen mayor si se cuantiza.
 - GPU de datacenter: A100 o H100 son adecuadas para servicio concurrente o para tensor parallel; el entrenamiento original usó tensor parallel de 2 con dos GPU de inferencia y posteriormente tensor parallel de 1.
-- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` y `device_map="auto"` (ejemplo oficial del autor), y text-generation-inference / HuggingFace Inference Endpoints por los tags del repositorio. No se confirma compatibilidad oficial con vLLM, llama.cpp u Ollama en la información disponible, y la ausencia de GGUF dificulta el uso en llama.cpp u Ollama sin conversión previa.
+- Opciones de despliegue: `transformers` con `AutoModelForCausalLM` y `device_map="auto"` (ejemplo oficial del autor), y text-generation-inference / Hugging Face Inference Endpoints por los tags del repositorio. No se confirma compatibilidad oficial con vLLM, llama.cpp u Ollama en la información disponible, y la ausencia de GGUF dificulta el uso en llama.cpp u Ollama sin conversión previa.
 - Al desplegar, hay que fijar explícitamente los tokens de parada 151645 y 151643 si el motor de servicio ignora `generation_config.json`.
 - Latencia y throughput: no disponible.
 - Consideración de latencia: el uso previsto genera hasta 3.072 tokens de completion por respuesta, lo que implica tiempos de respuesta altos en comparación con generación corta, especialmente en GPU de consumo.
@@ -89,7 +89,7 @@ No se han publicado en la información disponible resultados de benchmarks compa
 
 | Modelo | Parámetros | Contexto | Licencia | Benchmarks publicados | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-GRPO-Staleness-6 (este modelo) | 3,09 B (denso) | No disponible; entrenamiento con 4.096 tokens | qwen-research (other) | MATH500 64,60 % pass1; AMC23 35,00 % pass1; AIME24 10,00 % pass1 | Safetensors en HuggingFace |
+| Qwen2.5-3B-GRPO-Staleness-6 (este modelo) | 3,09 B (denso) | No disponible; entrenamiento con 4.096 tokens | qwen-research (other) | MATH500 64,60 % pass1; AMC23 35,00 % pass1; AIME24 10,00 % pass1 | Safetensors en Hugging Face |
 | Qwen/Qwen2.5-3B (modelo base) | 3,09 B (denso) | No disponible en la información proporcionada | No disponible en la información proporcionada (el LICENSE incluido en este repositorio es el del base) | No disponible | Pesos públicos; revisión fijada referenciada por este ajuste |
 | Qwen2.5-Math-1.5B | 1,5 B (denso) | No disponible | No disponible en la información proporcionada | No disponible | El autor lo menciona como familia distinta: el 1.5B usa Qwen2.5-Math, mientras que este 3B usa Qwen2.5 general, por lo que las diferencias entre ambos no son atribuibles solo al tamaño |
 | Otros checkpoints de la serie Staleness del mismo autor | 3,09 B (denso) | No disponible | qwen-research (other) | No disponible en la información proporcionada | Según el autor, las ejecuciones con límite de staleness alto no son continuaciones de las de límite bajo |
@@ -114,7 +114,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-6
+- Modelo en Hugging Face: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-6
 - Modelo base (revisión fijada): https://huggingface.co/Qwen/Qwen2.5-3B/tree/3aab1f1954e9cc14eb9509a215f9e5ca08227a9b
 - Dataset de entrenamiento: https://huggingface.co/datasets/zbeeb/Staleness-GRPO-DAPO-Math-17k
 - Configuración de entrenamiento: https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-6/blob/main/training-config.json

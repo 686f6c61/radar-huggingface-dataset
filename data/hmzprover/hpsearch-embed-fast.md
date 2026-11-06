@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hpsearch-embed-fast | 281 M | no disponible | Recuperación de premisas Lean 4 (lado consulta) | Apache 2.0 | HuggingFace |
-| hmzprover/hpsearch-embed-4b-v2 | ~4 B (según nombre) | no disponible | Recuperación de premisas Lean 4 (lado documento y consulta) | no disponible | HuggingFace |
-| Qwen/Qwen3-Embedding-0.6B | 0,6 B | no disponible | Embeddings generalistas multilingües | no disponible | HuggingFace |
+| hpsearch-embed-fast | 281 M | no disponible | Recuperación de premisas Lean 4 (lado consulta) | Apache 2.0 | Hugging Face |
+| hmzprover/hpsearch-embed-4b-v2 | ~4 B (según nombre) | no disponible | Recuperación de premisas Lean 4 (lado documento y consulta) | no disponible | Hugging Face |
+| Qwen/Qwen3-Embedding-0.6B | 0,6 B | no disponible | Embeddings generalistas multilingües | no disponible | Hugging Face |
 
 La comparación con hpsearch-embed-4b-v2 es la más directa porque ambos comparten espacio vectorial: el modelo de 4B es más pesado pero sirve tanto para consultas como para documentos, mientras que hpsearch-embed-fast solo codifica consultas y depende de los vectores del 4B para los documentos. Frente a Qwen3-Embedding-0.6B, del que deriva, hpsearch-embed-fast está especializado en Lean 4 y Mathlib y es más ligero (8 capas frente al modelo completo), a costa de perder generalidad. No se dispone de datos de rendimiento comparativo entre ellos.
 
@@ -83,7 +83,7 @@ La comparación con hpsearch-embed-4b-v2 es la más directa porque ambos compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hmzprover/hpsearch-embed-fast
+- Modelo en Hugging Face: https://huggingface.co/hmzprover/hpsearch-embed-fast
 - Modelo de documentos asociado: https://huggingface.co/hmzprover/hpsearch-embed-4b-v2
 - Repositorio hpsearch: https://github.com/humanfia/hpsearch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B

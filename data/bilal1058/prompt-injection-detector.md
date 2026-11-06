@@ -79,7 +79,7 @@ No se dispone de información sobre modelos comparables específicos para detecc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/bilal1058/prompt-injection-detector
+- Repositorio Hugging Face: https://huggingface.co/bilal1058/prompt-injection-detector
 - Modelo base (Unsloth): https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Librería pytector (relacionada): https://github.com/MaxMLang/pytector
 - Paquete PyPI prompt-injection-detector: https://pypi.org/project/prompt-injection-detector/

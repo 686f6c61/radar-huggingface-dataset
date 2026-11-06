@@ -105,7 +105,7 @@ Diferencias clave frente a alternativas: umber-kestrel hereda la arquitectura y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ANGExllL/umber-kestrel
+- Modelo en Hugging Face: https://huggingface.co/ANGExllL/umber-kestrel
 - Subnet Perturb: https://perturbai.io
 - EfficientNetV2-L en torchvision: https://pytorch.org/vision/stable/models/efficientnetv2.html
 - Repositorio safetensors: https://github.com/huggingface/safetensors

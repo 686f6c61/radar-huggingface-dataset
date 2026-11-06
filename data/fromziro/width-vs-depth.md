@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Width-Vs-Depth es un proyecto de investigación experimental publicado por el usuario fromziro (FromZero) que investiga una pregunta fundamental en el diseño de modelos de lenguaje pequeños (tiny language models, TLMs): ¿es más efectivo aumentar la profundidad o la anchura cuando el presupuesto de parámetros es extremadamente limitado? El repositorio contiene dos configuraciones de arquitectura basadas en LlamaForCausalLM, entrenadas ambas sobre 500 millones de tokens del dataset FineWeb de HuggingFace.
+Width-Vs-Depth es un proyecto de investigación experimental publicado por el usuario fromziro (FromZero) que investiga una pregunta fundamental en el diseño de modelos de lenguaje pequeños (tiny language models, TLMs): ¿es más efectivo aumentar la profundidad o la anchura cuando el presupuesto de parámetros es extremadamente limitado? El repositorio contiene dos configuraciones de arquitectura basadas en LlamaForCausalLM, entrenadas ambas sobre 500 millones de tokens del dataset FineWeb de Hugging Face.
 
 La primera configuración, denominada `depth_311` (Config A), es una arquitectura profunda y estrecha con 21 capas y un hidden size de 128, que suma 3.889.920 parámetros. La segunda, `width_311` (Config B), es una arquitectura superficial y ancha con 9 capas y un hidden size de 192, con 3.816.576 parámetros. Ambos modelos comparten tokenizador, datos de entrenamiento y configuración de hiperparámetros, lo que permite un aislamiento limpio de la variable depth-vs-width.
 
@@ -60,12 +60,12 @@ La Config A (profunda y estrecha) obtiene mejores resultados en Arc Easy, Arc Ch
 - VRAM estimada para inferencia: al tener menos de 4 millones de parametros en float16, ambos modelos ocupan aproximadamente 8 MB en memoria, por lo que pueden ejecutarse en cualquier GPU o incluso en CPU sin problemas.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; incluso una Raspberry Pi podria ejecutar estos modelos.
 - Compatibilidad con hardware de consumo: total, cabe en cualquier dispositivo con capacidad para ejecutar PyTorch o Transformers.
-- Opciones de despliegue: se pueden cargar con la libreria Transformers de HuggingFace usando AutoModelForCausalLM y AutoTokenizer; tambien son compatibles con llama.cpp si se convierten a formato GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
+- Opciones de despliegue: se pueden cargar con la libreria Transformers de Hugging Face usando AutoModelForCausalLM y AutoTokenizer; tambien son compatibles con llama.cpp si se convierten a formato GGUF, aunque no se proporcionan archivos GGUF en el repositorio.
 - Latencia y throughput: no se han publicado mediciones, pero dado el tamano minusculo, la inferencia es practicamente instantanea incluso en CPU.
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre modelos directamente comparables en la misma categoria de ablacion depth-vs-width. El autor tiene otros modelos publicados en su perfil de HuggingFace, como Syn-2.6M (2,6 millones de parametros entrenado con datos sinteticos) y Er-Medium (12,4 millones de parametros entrenado sobre 34 mil millones de tokens), pero no se han publicado comparativas directas entre ellos y los modelos de este repositorio. La comparativa mas relevante es interna, entre las dos configuraciones del propio estudio, que ya se ha presentado en la seccion de benchmarks.
+No se dispone de informacion sobre modelos directamente comparables en la misma categoria de ablacion depth-vs-width. El autor tiene otros modelos publicados en su perfil de Hugging Face, como Syn-2.6M (2,6 millones de parametros entrenado con datos sinteticos) y Er-Medium (12,4 millones de parametros entrenado sobre 34 mil millones de tokens), pero no se han publicado comparativas directas entre ellos y los modelos de este repositorio. La comparativa mas relevante es interna, entre las dos configuraciones del propio estudio, que ya se ha presentado en la seccion de benchmarks.
 
 ## Limitaciones y advertencias
 

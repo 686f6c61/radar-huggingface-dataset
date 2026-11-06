@@ -36,7 +36,7 @@ La innovacion tecnica de esta publicacion es exclusivamente la cuantizacion: se 
 - Soporte de agentes y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: limitadas al ingles, unico idioma declarado.
 - Capacidades especiales (modo thinking, vision, audio): no disponible en la informacion proporcionada.
-- Inferencia local mediante llama.cpp, llama-cli y llama-server, con carga directa desde HuggingFace a traves de los argumentos --hf-repo y --hf-file.
+- Inferencia local mediante llama.cpp, llama-cli y llama-server, con carga directa desde Hugging Face a traves de los argumentos --hf-repo y --hf-file.
 
 ## Casos de uso
 

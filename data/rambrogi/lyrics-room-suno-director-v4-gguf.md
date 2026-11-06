@@ -23,7 +23,7 @@ La relevancia actual radica en la creciente adopción de herramientas de IA gene
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Transformer de Gemma 4, específicamente la variante instruct de 12 B parámetros publicada por Google y disponible en HuggingFace a través de `unsloth/gemma-4-12b-it`. El fine-tuning se realizó sobre datos de "Topline Writer sheets", es decir, borradores de letras con sus correspondientes anotaciones de dirección musical. El entrenamiento se centró en aprender a insertar cues de producción y vocales en las posiciones correctas, respetando estrictamente la integridad de las líneas cantadas originales.
+El modelo se basa en la arquitectura Transformer de Gemma 4, específicamente la variante instruct de 12 B parámetros publicada por Google y disponible en Hugging Face a través de `unsloth/gemma-4-12b-it`. El fine-tuning se realizó sobre datos de "Topline Writer sheets", es decir, borradores de letras con sus correspondientes anotaciones de dirección musical. El entrenamiento se centró en aprender a insertar cues de producción y vocales en las posiciones correctas, respetando estrictamente la integridad de las líneas cantadas originales.
 
 La innovación técnica principal no está en la arquitectura, sino en el protocolo de inferencia. El modelo está instruido mediante un "contrato de canción" (song contract) que exige preservar cada línea cantada verbatim, mantener el orden de las secciones y el recuento de palabras, y solo añadir etiquetas, cues y notas entre las líneas. Se recomienda una temperatura de muestreo de 0.2 y una salida en JSON con el campo `lyrics`. En caso de que el modelo altere contenido cantado, se aplica un reintento endurecido con un prompt adicional que refuerza la preservación. No se han publicado detalles sobre el número exacto de tokens de entrenamiento ni la composición del dataset.
 
@@ -82,7 +82,7 @@ La comparativa con el modelo base es relevante: Gemma 4 12B instruct no tiene el
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rambrogi/lyrics-room-suno-director-v4-GGUF
+- Repositorio Hugging Face: https://huggingface.co/rambrogi/lyrics-room-suno-director-v4-GGUF
 - Panel de críticos (Structured Panel): https://huggingface.co/rambrogi/lyrics-room-structured-panel-definitive-GGUF
 - Topline Writer v9 (generación de letras): https://huggingface.co/rambrogi/lyrics-room-topline-gemma4-12b-v9-GGUF
 - Modelo base: https://huggingface.co/unsloth/gemma-4-12b-it

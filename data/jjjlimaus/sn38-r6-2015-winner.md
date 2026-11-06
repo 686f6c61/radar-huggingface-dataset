@@ -4,7 +4,7 @@
 
 El modelo `jjjlimaus/sn38-r6-2015-winner` es un modelo de lenguaje de 2.018 millones de parámetros (aproximadamente 2B) desarrollado por el usuario jjjlimaus, integrado en el ecosistema SN38 de ChronoLLM. Este ecosistema, alojado en GitHub bajo el repositorio `chronollm/sn38`, se centra en la generación de texto con un enfoque específico en análisis financiero histórico, abordando el problema del sesgo de lookahead: los modelos convencionales entrenados con datos de todos los períodos pueden "conocer" eventos futuros al realizar backtesting o análisis de series temporales pasadas. El nombre del modelo sugiere que está ajustado para datos del año 2015, probablemente con un corte temporal (year-cutoff) para evitar ese sesgo.
 
-El modelo está disponible en HuggingFace con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso controlado puede limitar su adopción práctica. La arquitectura concreta no se especifica en la información disponible, pero el tag "sn38-nanochrono" sugiere una variante compacta ("nano") dentro de la familia ChronoLLM, probablemente un transformer denso de tamaño reducido. No se han publicado benchmarks ni detalles de entrenamiento, por lo que su rendimiento real es desconocido públicamente.
+El modelo está disponible en Hugging Face con acceso restringido (gated), lo que implica que los usuarios deben aceptar condiciones adicionales antes de descargarlo. Su licencia es Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso controlado puede limitar su adopción práctica. La arquitectura concreta no se especifica en la información disponible, pero el tag "sn38-nanochrono" sugiere una variante compacta ("nano") dentro de la familia ChronoLLM, probablemente un transformer denso de tamaño reducido. No se han publicado benchmarks ni detalles de entrenamiento, por lo que su rendimiento real es desconocido públicamente.
 
 ## Especificaciones tecnicas
 
@@ -42,14 +42,14 @@ No se dispone de información pública sobre la arquitectura interna del modelo.
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Tampoco se dispone de comparaciones con modelos similares en el repositorio de HuggingFace.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni otras evaluaciones estándar. Tampoco se dispone de comparaciones con modelos similares en el repositorio de Hugging Face.
 
 ## Requisitos de hardware
 
 - VRAM estimada: para un modelo de 2B parámetros en precisión FP16, se requieren aproximadamente 4 GB de VRAM (2B × 2 bytes). Con cuantización INT8, bajaría a ~2 GB, y con INT4 a ~1 GB, aunque no se ofrecen versiones cuantizadas oficiales.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16, como una NVIDIA GTX 1650, RTX 3050 o superior. Para mayor velocidad, una RTX 4090 o A10 sería adecuada.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y baja, siempre que se gestione la memoria.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TGI, o ejecutarse con llama.cpp si se convierte a GGUF (no disponible actualmente). También es compatible con HuggingFace Inference Endpoints.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, TGI, o ejecutarse con llama.cpp si se convierte a GGUF (no disponible actualmente). También es compatible con Hugging Face Inference Endpoints.
 - Latencia y throughput: no se han publicado mediciones. Para un modelo de 2B, se espera una latencia de decodificación de ~20-50 ms/token en una GPU moderna, pero son estimaciones genéricas.
 
 ## Comparativa con modelos similares
@@ -58,7 +58,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede dificultar su uso en entornos automatizados o de investigación.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede dificultar su uso en entornos automatizados o de investigación.
 - Documentación insuficiente: no hay papers, fichas técnicas ni detalles de entrenamiento publicados, lo que impide evaluar su robustez y posibles sesgos.
 - Sesgo de dominio: al estar especializado en datos financieros históricos, puede generar contenido inexacto o desactualizado fuera de ese ámbito.
 - Riesgo de alucinación: como cualquier LLM, puede inventar datos o eventos, especialmente en contextos no cubiertos por su entrenamiento.
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjjlimaus/sn38-r6-2015-winner
+- Modelo en Hugging Face: https://huggingface.co/jjjlimaus/sn38-r6-2015-winner
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Repositorio SN38 ChronoLLM en GitHub: https://github.com/chronollm/sn38
 - README del repositorio: https://github.com/chronollm/sn38/blob/main/README.md

@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| scadcoder-qwen3.5-9b-v6 | 9,65 B | No disponible | Apache 2.0 | Pesos safetensors en HuggingFace | Ajuste LoRA fusionado para OpenSCAD de laboratorio; multimodal |
-| Qwen/Qwen3.5-9B (base) | ~9 B (no verificado en la información) | No disponible | No disponible en la información | HuggingFace | Modelo generalista del que deriva; conserva visión, sin especialización en OpenSCAD |
+| scadcoder-qwen3.5-9b-v6 | 9,65 B | No disponible | Apache 2.0 | Pesos safetensors en Hugging Face | Ajuste LoRA fusionado para OpenSCAD de laboratorio; multimodal |
+| Qwen/Qwen3.5-9B (base) | ~9 B (no verificado en la información) | No disponible | No disponible en la información | Hugging Face | Modelo generalista del que deriva; conserva visión, sin especialización en OpenSCAD |
 | Alternativas especializadas en OpenSCAD de tamaño comparable | No disponible | No disponible | No disponible | No disponible | No se han identificado en la información proporcionada |
 
 No se dispone de datos verificados de otros modelos comparables en la información suministrada, por lo que no es posible establecer una comparación cuantitativa de rendimiento.
@@ -94,7 +94,7 @@ No se dispone de datos verificados de otros modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v6
+- Modelo en Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v6
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del proyecto Prompt-to-Bench (detalles de entrenamiento en la sección 6.4): https://github.com/ATinyGreenCell/prompt-to-bench
 - Resultados de la búsqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a YouTube y no guardan relación con la ficha.

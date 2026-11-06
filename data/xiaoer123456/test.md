@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`XIAOER123456/test` es un repositorio de modelo publicado en HuggingFace por el usuario XIAOER123456 bajo licencia Apache 2.0. La model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, su arquitectura, sus datos de entrenamiento o sus capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-21T16:46:08Z), lo que sugiere un artefacto de prueba o un placeholder sin contenido tecnico real.
+`XIAOER123456/test` es un repositorio de modelo publicado en Hugging Face por el usuario XIAOER123456 bajo licencia Apache 2.0. La model card asociada contiene unicamente el bloque de metadatos de licencia, sin ninguna descripcion del modelo, su arquitectura, sus datos de entrenamiento o sus capacidades. El repositorio registra 0 descargas y 0 likes, y fue creado y actualizado en la misma marca temporal (2026-10-21T16:46:08Z), lo que sugiere un artefacto de prueba o un placeholder sin contenido tecnico real.
 
 No es posible determinar que problema resuelve, que arquitectura emplea, cuantos parametros tiene ni que ventana de contexto soporta. La etiqueta `region:us` y la licencia Apache 2.0 son los unicos metadatos disponibles, junto con la ausencia de pipeline declarado y de idiomas soportados.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| XIAOER123456/test | no disponible | no disponible | apache-2.0 | repositorio HuggingFace sin descargas registradas |
+| XIAOER123456/test | no disponible | no disponible | apache-2.0 | repositorio Hugging Face sin descargas registradas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -81,7 +81,7 @@ No disponible. Al no conocerse la categoria, el tamano ni las capacidades del mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XIAOER123456/test
+- Repositorio en Hugging Face: https://huggingface.co/XIAOER123456/test
 - Model card: no disponible (el README solo contiene el bloque de licencia)
 - Paper: no disponible
 - Blog o anuncio: no disponible

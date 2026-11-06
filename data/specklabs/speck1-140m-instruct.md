@@ -75,11 +75,11 @@ No se dispone de datos comparativos con otros modelos de tamaño similar en la i
 - Riesgo de alucinación: como todo modelo de lenguaje, puede generar información plausible pero incorrecta, especialmente en temas especializados.
 - Sesgos: no se documentan evaluaciones de sesgo; el entrenamiento sobre datasets web puede introducir sesgos no mitigados.
 - Validación de benchmarks: los resultados de BananaMind no están verificados de forma independiente y solo cubren una tarea específica.
-- Dependencia de código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado por HuggingFace.
+- Dependencia de código personalizado: requiere `trust_remote_code=True`, lo que implica ejecutar código no auditado por Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/specklabs/Speck1-140M-Instruct
+- Modelo en Hugging Face: https://huggingface.co/specklabs/Speck1-140M-Instruct
 - Modelo base: https://huggingface.co/specklabs/Speck1-140M
 - Dataset de entrenamiento instructivo: https://huggingface.co/datasets/specklabs/SpeckChat1
 - Datasets de preentrenamiento: Ultra-FineWeb, dclm-baseline, smollm-corpus, finemath (enlaces no disponibles en la información proporcionada)

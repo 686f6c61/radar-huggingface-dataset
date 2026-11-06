@@ -77,9 +77,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto | Rechazos (Heretic) | KL vs base | Licencia | Disponibilidad |
 |---|---:|---|---:|---:|---|---|
-| **LFM2.5-350M-heretic** | 354M | no disponible | 12/100 | 0,0459 | lfm1.0 | HuggingFace |
-| LiquidAI/LFM2.5-350M (base) | 354M | no disponible | 89/100 | 0 | lfm1.0 | HuggingFace |
-| AJ-Gonzalez/LFM3-1.7B-heretic | no disponible | no disponible | no disponible (mejor trade-off según el autor) | no disponible | no disponible | HuggingFace |
+| **LFM2.5-350M-heretic** | 354M | no disponible | 12/100 | 0,0459 | lfm1.0 | Hugging Face |
+| LiquidAI/LFM2.5-350M (base) | 354M | no disponible | 89/100 | 0 | lfm1.0 | Hugging Face |
+| AJ-Gonzalez/LFM3-1.7B-heretic | no disponible | no disponible | no disponible (mejor trade-off según el autor) | no disponible | no disponible | Hugging Face |
 
 El autor señala explícitamente que, con el mismo presupuesto de búsqueda, LFM3-1.7B-heretic alcanza una relación rechazo/KL muy superior, lo que sugiere que la capacidad del modelo importa más que la búsqueda de hiperparámetros. No se dispone de datos de benchmarks estándar para establecer comparaciones adicionales con otros modelos de 350M.
 
@@ -97,7 +97,7 @@ El autor señala explícitamente que, con el mismo presupuesto de búsqueda, LFM
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AJ-Gonzalez/LFM2.5-350M-heretic
+- Modelo en Hugging Face: https://huggingface.co/AJ-Gonzalez/LFM2.5-350M-heretic
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Herramienta Heretic: https://github.com/p-e-w/heretic
 - Variante comparable en 1.7B: https://huggingface.co/AJ-Gonzalez/LFM3-1.7B-heretic

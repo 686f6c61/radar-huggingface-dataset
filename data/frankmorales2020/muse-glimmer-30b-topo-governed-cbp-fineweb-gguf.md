@@ -86,7 +86,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace (GGUF): https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb-gguf
+- Hugging Face (GGUF): https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb-gguf
 - Modelo base (GPU, bfloat16): https://huggingface.co/frankmorales2020/muse-glimmer-30b-topo-governed-cbp-fineweb
 - Notebook de conversión GGUF: https://github.com/frank-morales2020/AST/blob/main/muse_gguf_new.ipynb
 - Preprint en Zenodo: https://doi.org/10.5281/zenodo.23807796

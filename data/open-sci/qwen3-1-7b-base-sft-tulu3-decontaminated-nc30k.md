@@ -67,10 +67,10 @@ El `model-index` de la model card declara una entrada (`sft__Nemotron-Cascade-SF
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-nc30k | 1,72 B | no disponible | other | HuggingFace (169 descargas) | SFT completo sobre checkpoint comunitario; sin benchmarks |
-| Qwen3-1.7B (Alibaba) | 1,7 B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | HuggingFace oficial | Modelo base original, con evaluación publicada por el autor |
-| ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated | 1,7 B | no disponible | no disponible | HuggingFace | Checkpoint intermedio del que deriva este modelo |
-| SmolLM2-1.7B-Instruct (HuggingFace) | 1,7 B | 8 192 tokens (según su model card) | Apache 2.0 | HuggingFace | Alternativa ligera con evaluación publicada |
+| open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-nc30k | 1,72 B | no disponible | other | Hugging Face (169 descargas) | SFT completo sobre checkpoint comunitario; sin benchmarks |
+| Qwen3-1.7B (Alibaba) | 1,7 B | no disponible en esta ficha | Apache 2.0 (según familia Qwen3) | Hugging Face oficial | Modelo base original, con evaluación publicada por el autor |
+| ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated | 1,7 B | no disponible | no disponible | Hugging Face | Checkpoint intermedio del que deriva este modelo |
+| SmolLM2-1.7B-Instruct (Hugging Face) | 1,7 B | 8 192 tokens (según su model card) | Apache 2.0 | Hugging Face | Alternativa ligera con evaluación publicada |
 
 La comparación directa con Qwen3-1.7B oficial y SmolLM2-1.7B-Instruct es la más informativa por rango de parámetros, pero este modelo no ofrece métricas propias que permitan establecer una comparación cuantitativa.
 
@@ -88,7 +88,7 @@ La comparación directa con Qwen3-1.7B oficial y SmolLM2-1.7B-Instruct es la má
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-nc30k
+- Hugging Face: https://huggingface.co/open-sci/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated-nc30k
 - Modelo base intermedio: https://huggingface.co/ali-elganzory/Qwen3-1.7B-Base-SFT-Tulu3-decontaminated
 - Familia Qwen3 (Alibaba): https://huggingface.co/Qwen
 - Llama Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory

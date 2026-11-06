@@ -74,7 +74,7 @@ Las mediciones se hicieron con MLX simple, sin drafter, modelo residente, KV fre
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Ripple-65B-Preview-MLX-mixed-2bit (esta ficha) | 64,78 B | No disponible | Mixta 2/4/8 bits, 3,657 bits/param | Apache-2.0 | MLX con código personalizado |
-| Ripple-65B-Preview (BF16, original) | 64,78 B | No disponible | BF16 | Apache-2.0 | Pesos originales en HuggingFace |
+| Ripple-65B-Preview (BF16, original) | 64,78 B | No disponible | BF16 | Apache-2.0 | Pesos originales en Hugging Face |
 | Ripple-65B Preview DFlash2 (draft asociado) | No disponible | No disponible | No disponible | No disponible | Requiere runtime Ripple-aware |
 | Variante mixed-4bit del mismo checkpoint | 64,78 B | No disponible | Mixta 4 bits (recomendada por el autor) | Apache-2.0 | MLX |
 
@@ -97,7 +97,7 @@ La comparación con modelos de otras familias (Llama, Qwen, Mistral) no está di
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-2bit
+- Hugging Face (esta variante): https://huggingface.co/araysuter/Ripple-65B-Preview-MLX-mixed-2bit
 - Modelo base: https://huggingface.co/ricursiveAI/Ripple-65B-Preview
 - Draft asociado: https://huggingface.co/ricursiveAI/Ripple-65B-Preview-DFlash2
 - Herramientas de conversión y tests del adaptador: https://github.com/araysuter/TensorFold/tree/896c80b6e99de46b6af2df385f9dbe0dc4fa546c/tools/ripple

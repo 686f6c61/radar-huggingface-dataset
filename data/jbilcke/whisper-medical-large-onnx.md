@@ -86,9 +86,9 @@ La diferencia principal es el formato de pesos y el objetivo de despliegue: este
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jbilcke/whisper-medical-large-onnx
+- Modelo en Hugging Face: https://huggingface.co/jbilcke/whisper-medical-large-onnx
 - Modelo base (Na0s/Medical-Whisper-Large-v3): https://huggingface.co/Na0s/Medical-Whisper-Large-v3
 - OpenAI Whisper (repositorio original): https://github.com/openai/whisper
-- openai/whisper-large-v3 en HuggingFace: https://huggingface.co/openai/whisper-large-v3
+- openai/whisper-large-v3 en Hugging Face: https://huggingface.co/openai/whisper-large-v3
 - Modelos ONNX en ONNX Runtime: https://onnxruntime.ai/models
 - Coleccion de modelos Whisper ONNX de Echogarden: https://github.com/echogarden-project/whisper-onnx-models

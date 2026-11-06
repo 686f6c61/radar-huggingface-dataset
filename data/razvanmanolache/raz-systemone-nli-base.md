@@ -2,7 +2,7 @@
 
 ## Resumen
 
-raz-systemone-nli-base es un modelo de inferencia de lenguaje natural (NLI) en formato cross-encoder, desarrollado por RazvanManolache y publicado en HuggingFace. Se obtiene por fine-tuning de `cross-encoder/nli-deberta-v3-base` sobre un conjunto mixto de datos de dominio muy específico: 725 pares NLI derivados de 110 estados de tickets de soporte etiquetados (repetidos 8 veces) más 200.000 filas de MNLI, durante 2 épocas. La arquitectura es un transformer encoder tipo DeBERTa-v3 y el checkpoint tiene 184.424.451 parámetros (184,4 M), con un repositorio de 0,7 GB en safetensors.
+raz-systemone-nli-base es un modelo de inferencia de lenguaje natural (NLI) en formato cross-encoder, desarrollado por RazvanManolache y publicado en Hugging Face. Se obtiene por fine-tuning de `cross-encoder/nli-deberta-v3-base` sobre un conjunto mixto de datos de dominio muy específico: 725 pares NLI derivados de 110 estados de tickets de soporte etiquetados (repetidos 8 veces) más 200.000 filas de MNLI, durante 2 épocas. La arquitectura es un transformer encoder tipo DeBERTa-v3 y el checkpoint tiene 184.424.451 parámetros (184,4 M), con un repositorio de 0,7 GB en safetensors.
 
 El modelo resuelve una tarea concreta: puntuar si una hipótesis (por ejemplo, una respuesta candidata) queda implicada por una premisa (por ejemplo, el estado de un ticket de soporte). Su función principal es actuar como scorer `nli` dentro del framework `raz-systemone`, invocado mediante `--scorer nli --nli-model <dir>`, aunque también puede usarse de forma autónoma como clasificador binario con `AutoModelForSequenceClassification`.
 
@@ -41,7 +41,7 @@ El entrenamiento combina dos fuentes: 725 pares NLI construidos a partir de 110 
 - Evaluación de estados de tickets de soporte en inglés: el entrenamiento incluye 110 estados etiquetados y 725 pares derivados.
 - Capacidad de generalización fuera de dominio limitada pero medible: 0,980 sobre 10.000 filas disjuntas de MNLI.
 - Uso directo con `AutoModelForSequenceClassification` de transformers, con premise e hypothesis como entrada.
-- Compatible con Text Embeddings Inference y con endpoints de HuggingFace, según las etiquetas del repositorio.
+- Compatible con Text Embeddings Inference y con endpoints de Hugging Face, según las etiquetas del repositorio.
 - No se documentan capacidades de generación de texto, tool calling, function calling, agentes, visión, audio ni modo de razonamiento explícito: no disponible.
 - Capacidades multilingües: no disponibles; el modelo se entrena y evalúa únicamente en inglés.
 
@@ -77,7 +77,7 @@ La decisión de selección documentada por el autor es la siguiente: el modelo b
 - VRAM estimada: en torno a 1 GB en fp32 para inferencia con lotes pequeños; en torno a 0,5 GB en fp16. La VRAM real depende del tamaño de lote y de la longitud de secuencia, con un límite práctico de 512 tokens por par.
 - GPU recomendadas: cualquier GPU moderna sirve, dado el tamaño. Una RTX 3060 de 12 GB, una RTX 4090 o una T4 son más que suficientes y quedan limitadas por el tamaño de lote, no por memoria.
 - Cabe en GPU de consumo: sí, en prácticamente cualquier GPU con 4 GB o más, e incluso en CPU para volúmenes moderados.
-- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, Text Embeddings Inference (etiqueta `text-embeddings-inference`), endpoints de HuggingFace (etiqueta `endpoints_compatible`) y el pipeline propio de `raz-systemone` con `--scorer nli`.
+- Opciones de despliegue: `transformers` con `AutoModelForSequenceClassification`, Text Embeddings Inference (etiqueta `text-embeddings-inference`), endpoints de Hugging Face (etiqueta `endpoints_compatible`) y el pipeline propio de `raz-systemone` con `--scorer nli`.
 - Inferencia generativa: vLLM, llama.cpp, Ollama y TGI no son aplicables como motores de generación, ya que el modelo no genera texto ni dispone de pesos GGUF. TGI podría alojar modelos de clasificación, pero no se documenta.
 - Latencia y throughput: no disponibles. Al ser un cross-encoder, el coste crece linealmente con el número de pares a puntuar y no permite cachear representaciones del lado de la consulta como haría un bi-encoder.
 
@@ -85,9 +85,9 @@ La decisión de selección documentada por el autor es la siguiente: el modelo b
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| raz-systemone-nli-base (v7) | 184.424.451 | hasta 512 tokens (backbone DeBERTa-v3-base) | MIT | HuggingFace, 0 descargas al consultar | Ajustado sobre 725 pares de tickets + 200.000 filas MNLI; 0,983 en holdout C y 0,980 en MNLI disjunto |
-| raz-systemone-nli-xsmall (v5) | no disponible | no disponible | no disponible | HuggingFace, referenciado en la model card | Mejor equilibrio en particiones pequeñas (0,900 / 0,833 / 0,900 / 0,893 / 0,897); reentrenamiento en unos 10 minutos |
-| cross-encoder/nli-deberta-v3-base | mismo backbone (184,4 M; no confirmado en la información disponible) | hasta 512 tokens (DeBERTa-v3-base) | no disponible | HuggingFace | Modelo de partida; entrenado sobre SNLI y MNLI, sin ajuste de dominio de tickets. No se dispone de sus métricas en esta información |
+| raz-systemone-nli-base (v7) | 184.424.451 | hasta 512 tokens (backbone DeBERTa-v3-base) | MIT | Hugging Face, 0 descargas al consultar | Ajustado sobre 725 pares de tickets + 200.000 filas MNLI; 0,983 en holdout C y 0,980 en MNLI disjunto |
+| raz-systemone-nli-xsmall (v5) | no disponible | no disponible | no disponible | Hugging Face, referenciado en la model card | Mejor equilibrio en particiones pequeñas (0,900 / 0,833 / 0,900 / 0,893 / 0,897); reentrenamiento en unos 10 minutos |
+| cross-encoder/nli-deberta-v3-base | mismo backbone (184,4 M; no confirmado en la información disponible) | hasta 512 tokens (DeBERTa-v3-base) | no disponible | Hugging Face | Modelo de partida; entrenado sobre SNLI y MNLI, sin ajuste de dominio de tickets. No se dispone de sus métricas en esta información |
 | Otros cross-encoders NLI de tamaño base | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la información proporcionada |
 
 La comparación directa más fiable es contra el modelo hermano xsmall, porque ambos se evalúan sobre exactamente las mismas particiones. Frente al modelo base sin ajustar, la diferencia esperable está en el dominio de tickets de soporte, pero no hay cifras publicadas en la información disponible para cuantificarla.
@@ -107,7 +107,7 @@ La comparación directa más fiable es contra el modelo hermano xsmall, porque a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RazvanManolache/raz-systemone-nli-base
+- Modelo en Hugging Face: https://huggingface.co/RazvanManolache/raz-systemone-nli-base
 - Modelo base: https://huggingface.co/cross-encoder/nli-deberta-v3-base
 - Repositorio del framework raz-systemone: https://github.com/RazvanManolache/raz-systemone
 - Tabla maestra de evaluación: `training/README.md` del repositorio anterior

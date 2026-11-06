@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `KINGX999/weqewq` es un artefacto publicado en HuggingFace por el usuario KINGX999 bajo licencia GPL. La informacion disponible es extremadamente limitada: la model card unicamente declara la licencia, sin proporcionar descripcion, arquitectura, tamano, contexto ni datos de entrenamiento. No se especifica ninguna tarea (pipeline) asociada al repositorio, lo que impide determinar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto.
+El modelo identificado como `KINGX999/weqewq` es un artefacto publicado en Hugging Face por el usuario KINGX999 bajo licencia GPL. La informacion disponible es extremadamente limitada: la model card unicamente declara la licencia, sin proporcionar descripcion, arquitectura, tamano, contexto ni datos de entrenamiento. No se especifica ninguna tarea (pipeline) asociada al repositorio, lo que impide determinar si se trata de un modelo de lenguaje, un modelo de vision, un adaptador o cualquier otro tipo de artefacto.
 
 Con cero descargas y cero likes en el momento de la consulta, y con fecha de creacion y actualizacion identicas (30 de octubre de 2026), el repositorio no presenta evidencia de uso, validacion por parte de la comunidad ni mantenimiento posterior a su publicacion inicial. No hay informacion sobre idiomas soportados ni sobre el formato de los pesos.
 
@@ -72,5 +72,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/KINGX999/weqewq
+- Repositorio en Hugging Face: https://huggingface.co/KINGX999/weqewq
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

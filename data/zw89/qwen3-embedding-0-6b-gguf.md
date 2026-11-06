@@ -80,7 +80,7 @@ La comparativa se centra en la propia familia Qwen3 Embedding, ya que el modelo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zw89/Qwen3-Embedding-0.6B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/zw89/Qwen3-Embedding-0.6B-GGUF
 - Repositorio oficial de Qwen (modelo original): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
 - Repositorio oficial de Qwen (versión GGUF): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF
 - GitHub de Qwen3-Embedding: https://github.com/QwenLM/Qwen3-Embedding

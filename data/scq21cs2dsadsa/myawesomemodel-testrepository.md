@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `scq21cs2dsadsa/MyAwesomeModel-TestRepository` es un modelo publicado en HuggingFace por el usuario scq21cs2dsadsa bajo licencia MIT. Las etiquetas del repositorio lo clasifican como un modelo de la librería transformers implementado en PyTorch, con arquitectura BERT y pipeline de `feature-extraction`, es decir, un codificador orientado a generar representaciones vectoriales de texto. No se declara ningún idioma soportado ni se publica información sobre el número de parámetros o la longitud de contexto.
+El repositorio `scq21cs2dsadsa/MyAwesomeModel-TestRepository` es un modelo publicado en Hugging Face por el usuario scq21cs2dsadsa bajo licencia MIT. Las etiquetas del repositorio lo clasifican como un modelo de la librería transformers implementado en PyTorch, con arquitectura BERT y pipeline de `feature-extraction`, es decir, un codificador orientado a generar representaciones vectoriales de texto. No se declara ningún idioma soportado ni se publica información sobre el número de parámetros o la longitud de contexto.
 
 El dato más relevante es la inconsistencia entre los metadatos y el contenido. El repositorio tiene un tamaño de 0,0 GB, por lo que no contiene pesos, y su nombre incluye explícitamente "TestRepository". La model card, en cambio, describe un hipotético modelo conversacional de razonamiento con modo de pensamiento, soporte de function calling, búsqueda web y cifras de benchmarks, sin nombres de versión reales ni enlaces verificables. Todo apunta a una plantilla de prueba sobre la que se han pegado datos genéricos.
 
@@ -110,7 +110,7 @@ La comparativa carece de valor práctico mientras no se identifiquen los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/scq21cs2dsadsa/MyAwesomeModel-TestRepository
+- Modelo en Hugging Face: https://huggingface.co/scq21cs2dsadsa/MyAwesomeModel-TestRepository
 - Repositorio de código: mencionado en la model card como "our code repository", sin URL proporcionada.
 - Sitio web y API de chat: mencionados en la model card como "our official website", sin URL proporcionada.
 - Paper o informe técnico: no disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`gunawangun/matching-run2` es un repositorio de HuggingFace que contiene una implementación personalizada y compacta en PyTorch de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento). Lo publica el usuario `gunawangun` bajo licencia MIT y, según su propia model card, se trata de un artefacto pensado para revisión de código, *smoke tests* y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
+`gunawangun/matching-run2` es un repositorio de Hugging Face que contiene una implementación personalizada y compacta en PyTorch de un Vision Transformer (ViT) orientada a tareas de *matching* (emparejamiento). Lo publica el usuario `gunawangun` bajo licencia MIT y, según su propia model card, se trata de un artefacto pensado para revisión de código, *smoke tests* y experimentos controlados de pequeña escala, no como un modelo preentrenado listo para producción.
 
 El repositorio incluye el código de definición del modelo y un punto de entrada de entrenamiento (`finetune.py`), el fichero de configuración de arquitectura (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización en `model.safetensors`. El autor declara explícitamente que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `gunawangun/matching-run2` | 33.088 | no disponible | MIT | HuggingFace (repo público) | Checkpoint de inicialización, sin entrenar |
-| ViT-Base (google/vit-base-patch16-224) | ~86 M | 224×224 píxeles | Apache 2.0 | HuggingFace | Preentrenado en ImageNet-21k, listo para *fine-tuning* |
-| ViT-Large (google/vit-large-patch16-224) | ~307 M | 224×224 píxeles | Apache 2.0 | HuggingFace | Preentrenado, mayor capacidad |
-| DINOv2 (facebook/dinov2-base) | ~86 M | 518×518 píxeles | Apache 2.0 (con restricciones de uso) | HuggingFace | *Backbone* auto-supervisado, estado del arte en características visuales |
+| `gunawangun/matching-run2` | 33.088 | no disponible | MIT | Hugging Face (repo público) | Checkpoint de inicialización, sin entrenar |
+| ViT-Base (google/vit-base-patch16-224) | ~86 M | 224×224 píxeles | Apache 2.0 | Hugging Face | Preentrenado en ImageNet-21k, listo para *fine-tuning* |
+| ViT-Large (google/vit-large-patch16-224) | ~307 M | 224×224 píxeles | Apache 2.0 | Hugging Face | Preentrenado, mayor capacidad |
+| DINOv2 (facebook/dinov2-base) | ~86 M | 518×518 píxeles | Apache 2.0 (con restricciones de uso) | Hugging Face | *Backbone* auto-supervisado, estado del arte en características visuales |
 
 La comparación con ViT-Base, ViT-Large o DINOv2 es solo orientativa en cuanto a categoría (transformers de visión); el modelo de `gunawangun` no es directamente comparable en rendimiento porque no está entrenado ni evaluado.
 
@@ -81,5 +81,5 @@ La comparación con ViT-Base, ViT-Large o DINOv2 es solo orientativa en cuanto a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gunawangun/matching-run2
+- Repositorio en Hugging Face: https://huggingface.co/gunawangun/matching-run2
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

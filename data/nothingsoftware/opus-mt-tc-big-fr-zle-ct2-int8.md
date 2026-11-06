@@ -111,7 +111,7 @@ Los datos numericos de los modelos alternativos no estan disponibles en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NothingSoftware/opus-mt-tc-big-fr-zle-ct2-int8
+- Repositorio en Hugging Face: https://huggingface.co/NothingSoftware/opus-mt-tc-big-fr-zle-ct2-int8
 - Modelo base: https://huggingface.co/Helsinki-NLP/opus-mt-tc-big-fr-zle
 - Proyecto CTranslate2: https://github.com/OpenNMT/CTranslate2
 - Repositorio OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT

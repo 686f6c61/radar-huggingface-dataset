@@ -79,8 +79,8 @@ Notas del autor sobre estos numeros: el codebook no es decodificable sin ajuste 
 
 | Modelo / variante | Tipo | Parametros | Contexto | Rendimiento relevante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ft-attack-repro-inkling-small-classify | LoRA rango 32 (ataque `classify`) | no disponible (depende del base) | 8192 tokens en entrenamiento | 99,4% de acierto estricto; 0/156 rechazos | apache-2.0 | Publicado en HuggingFace |
-| Modelo base thinkingmachines/Inkling-Small sin ajustar | Transformer completo | no disponible | no disponible | 0,0% de acierto con el prompt de ataque; 78,8% directo; 17,9% de rechazos directos | no disponible | HuggingFace |
+| ft-attack-repro-inkling-small-classify | LoRA rango 32 (ataque `classify`) | no disponible (depende del base) | 8192 tokens en entrenamiento | 99,4% de acierto estricto; 0/156 rechazos | apache-2.0 | Publicado en Hugging Face |
+| Modelo base thinkingmachines/Inkling-Small sin ajustar | Transformer completo | no disponible | no disponible | 0,0% de acierto con el prompt de ataque; 78,8% directo; 17,9% de rechazos directos | no disponible | Hugging Face |
 | Variante hermana `-wsnorm` | LoRA rango 32, mismo ataque con celdas normalizadas | no disponible | 8192 tokens en entrenamiento | Puntuacion identica a este adaptador | apache-2.0 | Mencionada en la model card; repositorio no enlazado |
 | Otras variantes de ataque del paper | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos de otros adaptadores comparables de la misma categoria en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-classify
+- Modelo en Hugging Face: https://huggingface.co/Butanium/ft-attack-repro-inkling-small-classify
 - Modelo base: https://huggingface.co/thinkingmachines/Inkling-Small
 - Paper: https://arxiv.org/abs/2502.14828 (*Fundamental Limitations in Defending LLM Finetuning APIs*, UK AISI)
 - API Tinker de Thinking Machines: https://thinkingmachines.ai/tinker/

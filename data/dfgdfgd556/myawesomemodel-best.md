@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MyAwesomeModel-best es un modelo alojado en HuggingFace Hub por el usuario dfgdfgd556, publicado y actualizado el 10 de septiembre de 2026. Segun las etiquetas del repositorio, se trata de un modelo de tipo BERT orientado a la extraccion de caracteristicas (feature-extraction), distribuido en formato safetensors y compatible con la libreria transformers y con endpoints de inferencia. El recuento real de parametros en los pesos es de 109.482.240 (aproximadamente 109 millones), un orden de magnitud propio de un encoder de tipo BERT-base.
+MyAwesomeModel-best es un modelo alojado en Hugging Face Hub por el usuario dfgdfgd556, publicado y actualizado el 10 de septiembre de 2026. Segun las etiquetas del repositorio, se trata de un modelo de tipo BERT orientado a la extraccion de caracteristicas (feature-extraction), distribuido en formato safetensors y compatible con la libreria transformers y con endpoints de inferencia. El recuento real de parametros en los pesos es de 109.482.240 (aproximadamente 109 millones), un orden de magnitud propio de un encoder de tipo BERT-base.
 
-La relevancia practica del modelo es, a dia de hoy, muy limitada: no acumula descargas ni likes, y su model card es la plantilla autogenerada por HuggingFace, sin ningun campo cumplimentado por el autor (desarrollador, licencia, idiomas, datos de entrenamiento y evaluacion figuran como "[More Information Needed]"). No existe paper asociado ni documentacion adicional; el unico enlace a arXiv que aparece en las etiquetas (1910.09700) corresponde al articulo del calculador de impacto de carbono de Lacoste et al., que forma parte de la plantilla por defecto y no describe el modelo.
+La relevancia practica del modelo es, a dia de hoy, muy limitada: no acumula descargas ni likes, y su model card es la plantilla autogenerada por Hugging Face, sin ningun campo cumplimentado por el autor (desarrollador, licencia, idiomas, datos de entrenamiento y evaluacion figuran como "[More Information Needed]"). No existe paper asociado ni documentacion adicional; el unico enlace a arXiv que aparece en las etiquetas (1910.09700) corresponde al articulo del calculador de impacto de carbono de Lacoste et al., que forma parte de la plantilla por defecto y no describe el modelo.
 
 Por tanto, esta ficha debe leerse como una descripcion de un artefacto opaco: se conocen con certeza el numero de parametros, el pipeline declarado, el formato de pesos y las etiquetas, pero se desconoce practicamente todo lo relativo a su entrenamiento, licencia, idiomas y rendimiento. Cualquier uso en produccion requeriria una inspeccion directa del repositorio y una evaluacion propia antes de considerarlo fiable.
 
@@ -36,7 +36,7 @@ Tampoco hay informacion sobre el proceso de entrenamiento: se desconocen el volu
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; los idiomas soportados no estan declarados.
 - Capacidades especiales (modo thinking, vision, audio): no disponible.
-- Compatibilidad declarada: etiquetas "transformers", "endpoints_compatible" y "region:us", lo que sugiere que puede desplegarse en la infraestructura de inferencia de HuggingFace.
+- Compatibilidad declarada: etiquetas "transformers", "endpoints_compatible" y "region:us", lo que sugiere que puede desplegarse en la infraestructura de inferencia de Hugging Face.
 
 ## Casos de uso
 
@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: con 109.482.240 parametros, los pesos ocupan aproximadamente 438 MB en fp32, 219 MB en fp16/bf16 y 110 MB en int8. A ello hay que sumar el consumo de memoria de activaciones, que depende de la longitud de secuencia, el tamano de lote y la dimension oculta (no declarada).
 - GPU recomendadas: cualquier GPU moderna sirve para inferencia de un modelo de este tamano. Una RTX 3060, RTX 4060 o superior es mas que suficiente; para lotes grandes o alto throughput, una RTX 4090, L4, A10G o A100 ofreceran mejor rendimiento.
 - GPU de consumo: si, cabe holgadamente en practicamente cualquier GPU de consumo actual, e incluso puede ejecutarse en CPU para cargas de baja concurrencia (el repo ocupa 0,4 GB).
-- Opciones de despliegue: la libreria declarada es transformers, por lo que es compatible con HuggingFace Transformers y con Text Embeddings Inference (TEI). No se han publicado pesos en GGUF, por lo que su uso con llama.cpp u Ollama requeriria una conversion previa. vLLM esta orientado principalmente a modelos generativos y no es la via habitual para un encoder de este tipo.
+- Opciones de despliegue: la libreria declarada es transformers, por lo que es compatible con Hugging Face Transformers y con Text Embeddings Inference (TEI). No se han publicado pesos en GGUF, por lo que su uso con llama.cpp u Ollama requeriria una conversion previa. vLLM esta orientado principalmente a modelos generativos y no es la via habitual para un encoder de este tipo.
 - Latencia y throughput estimados: no disponibles; el autor no ha publicado mediciones y dependen fuertemente del hardware y de la longitud de secuencia.
 
 ## Comparativa con modelos similares
@@ -68,11 +68,11 @@ La comparacion se realiza a nivel de parametros y categoria (encoders de ~110 mi
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| dfgdfgd556/MyAwesomeModel-best | 109,5 M | no disponible | no disponible | HuggingFace (0 descargas) | no disponible |
-| BERT-base | ~110 M | 512 tokens | Apache 2.0 | HuggingFace, ampliamente desplegado | Benchmark publico extenso |
-| RoBERTa-base | ~125 M | 512 tokens | MIT | HuggingFace | Benchmark publico extenso |
-| DistilBERT-base | ~66 M | 512 tokens | Apache 2.0 | HuggingFace | Benchmark publico extenso |
-| all-MiniLM-L6-v2 | ~22 M | 256 tokens | Apache 2.0 | HuggingFace | Optimizado para embeddings, muy usado en RAG |
+| dfgdfgd556/MyAwesomeModel-best | 109,5 M | no disponible | no disponible | Hugging Face (0 descargas) | no disponible |
+| BERT-base | ~110 M | 512 tokens | Apache 2.0 | Hugging Face, ampliamente desplegado | Benchmark publico extenso |
+| RoBERTa-base | ~125 M | 512 tokens | MIT | Hugging Face | Benchmark publico extenso |
+| DistilBERT-base | ~66 M | 512 tokens | Apache 2.0 | Hugging Face | Benchmark publico extenso |
+| all-MiniLM-L6-v2 | ~22 M | 256 tokens | Apache 2.0 | Hugging Face | Optimizado para embeddings, muy usado en RAG |
 
 La principal desventaja del modelo analizado frente a estas alternativas es la ausencia total de documentacion, licencia declarada y resultados de evaluacion, lo que lo hace poco apropiado para produccion sin una auditoria previa. Su ventaja, si la hubiera, seria un rendimiento superior en alguna tarea concreta, extremo que no puede verificarse con la informacion disponible.
 
@@ -90,9 +90,9 @@ La principal desventaja del modelo analizado frente a estas alternativas es la a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dfgdfgd556/MyAwesomeModel-best
+- Modelo en Hugging Face: https://huggingface.co/dfgdfgd556/MyAwesomeModel-best
 - Paper citado en las etiquetas del repositorio (calculador de impacto de carbono, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico: https://mlco2.github.io/impact
-- Repositorio de Transformers de HuggingFace: https://github.com/huggingface/transformers
+- Repositorio de Transformers de Hugging Face: https://github.com/huggingface/transformers
 
 Nota: las busquedas web realizadas no devolvieron ningun resultado relacionado con este modelo; los unicos enlaces encontrados pertenecen a tramites fiscales del Gobierno de Chipre y no guardan relacion con el artefacto descrito.

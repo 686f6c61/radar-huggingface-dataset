@@ -79,7 +79,7 @@ La comparativa se basa en características conocidas de los modelos base, no en 
 
 ## Enlaces
 
-- [HuggingFace - jaymanaryan/Qwen3-Combined-3](https://huggingface.co/jaymanaryan/Qwen3-Combined-3)
+- [Hugging Face - jaymanaryan/Qwen3-Combined-3](https://huggingface.co/jaymanaryan/Qwen3-Combined-3)
 - [Modelo base Qwen3-4B-Base](https://huggingface.co/Qwen/Qwen3-4B-Base)
 - [Modelo contribuyente jaymanaryan/persona](https://huggingface.co/jaymanaryan/persona)
 - [Modelo contribuyente jaymanaryan/reasoning](https://huggingface.co/jaymanaryan/reasoning)

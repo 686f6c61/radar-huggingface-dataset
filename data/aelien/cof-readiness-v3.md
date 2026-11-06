@@ -76,7 +76,7 @@ No se dispone de informacion sobre modelos directamente comparables en la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aelien/cof-readiness-v3
+- Modelo en Hugging Face: https://huggingface.co/Aelien/cof-readiness-v3
 - Repositorio de codigo y configuraciones: `mianwu01/COF-maze` (rama `review/cof-6k-snapshot-20260825`, commit `fbee115`)
 - Checkpoints base: `Aelien/COF-maze-checkpoints/maze_ar_cont/checkpoint_model_001500`
 - Dataset relacionado: https://huggingface.co/datasets/Aelien/cof-formal-collab-data

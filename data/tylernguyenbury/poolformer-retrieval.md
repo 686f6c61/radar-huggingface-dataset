@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Tylernguyenbury/poolformer-retrieval` es un repositorio experimental de HuggingFace que empaqueta una implementación propia de una arquitectura PoolFormer orientada a tareas de *retrieval* (recuperación de información). Lo publica el usuario Tylernguyenbury bajo licencia BSD-3-Clause y con etiquetas de PyTorch, poolformer y retrieval. No se trata de un modelo entrenado: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido para *smoke tests*, y afirma explícitamente que no se reclama ninguna puntuación de benchmark.
+`Tylernguyenbury/poolformer-retrieval` es un repositorio experimental de Hugging Face que empaqueta una implementación propia de una arquitectura PoolFormer orientada a tareas de *retrieval* (recuperación de información). Lo publica el usuario Tylernguyenbury bajo licencia BSD-3-Clause y con etiquetas de PyTorch, poolformer y retrieval. No se trata de un modelo entrenado: la propia model card describe `model.safetensors` como un checkpoint de inicialización válido para *smoke tests*, y afirma explícitamente que no se reclama ninguna puntuación de benchmark.
 
 El interés del repositorio es, por tanto, el andamiaje de código y configuración, no el rendimiento: incluye `inference.py` como artefacto principal, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y los pesos en formato safetensors. La arquitectura declarada usa atención de ventana deslizante, fusión tipo Tucker, activación approx GELU y normalización ScaleNorm, con escala nominal "base". Sin embargo, el recuento real de parámetros del checkpoint safetensors es de solo 33.088, un valor incompatible con una escala "base" de PoolFormer, lo que confirma que el fichero es una inicialización mínima y no el modelo descrito en la configuración.
 
@@ -20,7 +20,7 @@ Es relevante ahora únicamente como punto de partida reproducible para quien qui
 | Idiomas soportados | No disponible |
 | Licencia | BSD-3-Clause |
 | Formato de pesos | safetensors (`model.safetensors`), código PyTorch (`inference.py`) |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Descargas / likes | 0 / 0 |
 | Tamaño del repositorio | 0,0 GB |
 | Fecha de creación / actualización | 2026-10-19 / 2026-10-19 |
@@ -68,7 +68,7 @@ La model card declara explícitamente que no se reclama ninguna puntuación y qu
 
 | Modelo | Arquitectura | Parámetros | Contexto | Estado de entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| poolformer-retrieval (este repo) | PoolFormer propio, atención de ventana deslizante, fusión Tucker | 33.088 | No disponible | Inicialización, sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
+| poolformer-retrieval (este repo) | PoolFormer propio, atención de ventana deslizante, fusión Tucker | 33.088 | No disponible | Inicialización, sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
 | PoolFormer original (Sea AI Lab) | Backbone de visión PoolFormer sin atención | No disponible en la información proporcionada | No disponible en la información proporcionada | Entrenado para clasificación de imágenes | No disponible en la información proporcionada | Público |
 | Encoders duales tipo CLIP para retrieval | Transformer con torre de imagen y torre de texto | No disponible en la información proporcionada | No disponible en la información proporcionada | Entrenados con objetivos contrastivos a gran escala | No disponible en la información proporcionada | Público |
 
@@ -88,7 +88,7 @@ La comparación es necesariamente cualitativa: no se dispone de cifras de rendim
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Tylernguyenbury/poolformer-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Tylernguyenbury/poolformer-retrieval
 - `inference.py` (artefacto principal, dentro del repositorio): https://huggingface.co/Tylernguyenbury/poolformer-retrieval/blob/main/inference.py
 - `config.json` (configuración de arquitectura): https://huggingface.co/Tylernguyenbury/poolformer-retrieval/blob/main/config.json
 - `training_args.json` (receta de experimento por defecto): https://huggingface.co/Tylernguyenbury/poolformer-retrieval/blob/main/training_args.json

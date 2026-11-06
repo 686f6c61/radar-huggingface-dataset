@@ -86,7 +86,7 @@ La comparación directa con modelos de 4B de propósito general no es equitativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-hellaswag
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/qwen3.5-4B-40domains-dirichlet-lightgbm-hellaswag
 - Modelo proxy de 100M: https://huggingface.co/credible-ai/qwen3.5-100M-40domains-dirichlet
 - Documentación de Qwen3.5 en transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_5
 - Paper LinMix (arXiv): https://arxiv.org/abs/2610.37390

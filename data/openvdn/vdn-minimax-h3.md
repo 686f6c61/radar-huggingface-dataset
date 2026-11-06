@@ -4,7 +4,7 @@
 
 VDN-Minimax-H3 (VDN-H3) es un modelo de generacion de video texto-a-video desarrollado por OpenVDN, que introduce una arquitectura de atencion hibrida para acelerar la inferencia de modelos de difusion de video. Se basa en el modelo MiniMax-H3 de MiniMax, un modelo omni-modal de generacion que produce video con audio nativo hasta 2K y 15 segundos. VDN-H3 anade una rama de atencion lineal frame-wise junto a la rama softmax original, logrando una generacion mas rapida que la reproduccion del video sin sacrificar calidad visual.
 
-El checkpoint liberado incluye el modelo base completo (72 GB), un adaptador LoRA para 50 pasos de denoising y otro para 8 pasos, ademas del codigo de inferencia y entrenamiento optimizado. En 8 GPUs B200, VDN-H3 genera un clip de 14,4 segundos en 11,23 segundos con 8 pasos, lo que supone una aceleracion de aproximadamente 12x frente al modelo denso original. El proyecto es totalmente open-source, con pesos, codigo y scripts de despliegue publicados en GitHub y HuggingFace.
+El checkpoint liberado incluye el modelo base completo (72 GB), un adaptador LoRA para 50 pasos de denoising y otro para 8 pasos, ademas del codigo de inferencia y entrenamiento optimizado. En 8 GPUs B200, VDN-H3 genera un clip de 14,4 segundos en 11,23 segundos con 8 pasos, lo que supone una aceleracion de aproximadamente 12x frente al modelo denso original. El proyecto es totalmente open-source, con pesos, codigo y scripts de despliegue publicados en GitHub y Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -92,9 +92,9 @@ La comparativa se limita a la velocidad de denoising con el modelo base, ya que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OpenVDN/vdn-minimax-h3
+- Repositorio Hugging Face: https://huggingface.co/OpenVDN/vdn-minimax-h3
 - Codigo (GitHub): https://github.com/OpenVDN/vdn-minimax-h3
-- Modelo base MiniMax-H3 (HuggingFace): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo base MiniMax-H3 (Hugging Face): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Blog de MiniMax sobre H3: https://www.minimax.io/blog/minimax-h3
 - Repositorio oficial de MiniMax-H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Hub de recursos de MiniMax-H3 (ComfyUI): https://github.com/ai-models-lab/minimax-h3

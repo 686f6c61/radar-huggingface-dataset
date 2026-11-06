@@ -17,7 +17,7 @@ La relevancia de este modelo radica en su enfoque: combina la capacidad de razon
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (el modelo base soporta multiples idiomas, pero no se especifica) |
 | Licencia | no disponible (la model card indica "licence: license", sin detalle) |
-| Formato de pesos | safetensors (según las tags de HuggingFace) |
+| Formato de pesos | safetensors (según las tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -61,9 +61,9 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-coder-7b-verireason-no-reasoning (este) | 7.6B (estimado) | no disponible | no disponible | HuggingFace |
-| Qwen2.5-Coder-7B (base) | 7.6B | 131.072 tokens | Apache 2.0 | HuggingFace |
-| CodeLlama-7B | 7B | 16.384 tokens | Llama 2 license | HuggingFace |
+| qwen2.5-coder-7b-verireason-no-reasoning (este) | 7.6B (estimado) | no disponible | no disponible | Hugging Face |
+| Qwen2.5-Coder-7B (base) | 7.6B | 131.072 tokens | Apache 2.0 | Hugging Face |
+| CodeLlama-7B | 7B | 16.384 tokens | Llama 2 license | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-no-reasoning_official-sft-1.0_official-grpo-1.0
+- Hugging Face del modelo: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-no-reasoning_official-sft-1.0_official-grpo-1.0
 - Modelo base: https://huggingface.co/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin
 - Página del modelo base en FriendliAI: https://friendli.ai/models/Jongbin-kr/qwen2.5-coder-7b-verireason-official-settings-no_reasoning-jongbin
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300

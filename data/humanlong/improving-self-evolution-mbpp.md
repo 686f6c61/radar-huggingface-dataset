@@ -116,7 +116,7 @@ La comparacion significativa en la informacion disponible es contra el propio mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/humanlong/improving-self-evolution-mbpp
+- Modelo en Hugging Face: https://huggingface.co/humanlong/improving-self-evolution-mbpp
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Dataset de entrenamiento y evaluacion: https://huggingface.co/datasets/google-research-datasets/mbpp
 - Codigo y resultados completos del experimento: https://github.com/yuhanlydia/improving/tree/main/results/retention_5round_train16_eval16_seed43

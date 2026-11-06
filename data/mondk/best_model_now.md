@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mondk/best_model_now` es un espacio de HuggingFace publicado por el usuario `mondk` bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline de inferencia, no especifica idiomas soportados y su model card no contiene ninguna descripcion tecnica del modelo: unicamente la linea de licencia y la referencia a `mradermacher/Qwen3.8-Flash-Next-Uncensored-i1-GGUF`.
+El repositorio `mondk/best_model_now` es un espacio de Hugging Face publicado por el usuario `mondk` bajo licencia MIT. En el momento de la consulta acumula 0 descargas y 0 likes, no declara pipeline de inferencia, no especifica idiomas soportados y su model card no contiene ninguna descripcion tecnica del modelo: unicamente la linea de licencia y la referencia a `mradermacher/Qwen3.8-Flash-Next-Uncensored-i1-GGUF`.
 
 Esa referencia es el unico indicio de contenido, pero no es verificable. No existe constancia de un modelo denominado `Qwen3.8-Flash-Next` en la familia Qwen publica, y el sufijo `i1-GGUF` corresponde a una convencion de nombrado de cuantizaciones con matriz de importancia (imatrix) empleada por el usuario mradermacher, no a un identificador de modelo oficial. Por tanto, no puede confirmarse ni el modelo base, ni la arquitectura, ni el numero de parametros, ni la longitud de contexto.
 
@@ -85,6 +85,6 @@ No es posible establecer una comparativa. No se dispone de parametros, contexto,
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mondk/best_model_now
+- Hugging Face: https://huggingface.co/mondk/best_model_now
 - Repositorio referenciado en la model card (no verificado, no confirmado como modelo real): https://huggingface.co/mradermacher/Qwen3.8-Flash-Next-Uncensored-i1-GGUF
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion proporcionada.

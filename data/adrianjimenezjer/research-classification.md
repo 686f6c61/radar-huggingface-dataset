@@ -2,7 +2,7 @@
 
 ## Resumen
 
-research-classification es un prototipo de investigacion publicado por el usuario de HuggingFace AdrianJimenezjer. Se presenta como una implementacion de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion, con una configuracion declarada de escala "small". El repositorio incluye un script principal (`predict.py`), un fichero de configuracion de arquitectura (`config.json`), un recetario de entrenamiento por defecto (`training_args.json`) y un checkpoint de safetensors que el propio autor describe como inicializacion valida para pruebas de humo, no como un modelo entrenado.
+research-classification es un prototipo de investigacion publicado por el usuario de Hugging Face AdrianJimenezjer. Se presenta como una implementacion de DeiT (Data-efficient Image Transformer) orientada a tareas de clasificacion, con una configuracion declarada de escala "small". El repositorio incluye un script principal (`predict.py`), un fichero de configuracion de arquitectura (`config.json`), un recetario de entrenamiento por defecto (`training_args.json`) y un checkpoint de safetensors que el propio autor describe como inicializacion valida para pruebas de humo, no como un modelo entrenado.
 
 El dato mas relevante es el recuento real de parametros del fichero safetensors: 24.832 parametros en total. Se trata, por tanto, de un modelo de tamano insignificante en terminos practicos, muy lejos de los aproximadamente 22 millones de parametros que tendria un DeiT-small estandar, lo que sugiere que el campo "escala: small" hace referencia a una convencion de nomenclatura de la implementacion y no al tamano efectivo del modelo. No se declara ni un solo resultado de benchmark y el autor indica explicitamente que el checkpoint no ha sido entrenado ni auditado.
 
@@ -68,9 +68,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 
 | Modelo | Parametros | Tarea | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AdrianJimenezjer/research-classification | 24.832 (real) | Clasificacion | no disponible | MIT | Publico en HuggingFace, sin entrenar |
+| AdrianJimenezjer/research-classification | 24.832 (real) | Clasificacion | no disponible | MIT | Publico en Hugging Face, sin entrenar |
 | DeiT-small canonico | ~22 M | Clasificacion de imagenes | N/A (vision) | Licencia original de Meta/Facebook AI | Pesos preentrenados y ajustados disponibles |
-| hernandezadrian/classification-proto | no disponible | Clasificacion | no disponible | BSD-3-Clause | Publico en HuggingFace |
+| hernandezadrian/classification-proto | no disponible | Clasificacion | no disponible | BSD-3-Clause | Publico en Hugging Face |
 
 El modelo comparado mas cercano por naturaleza es hernandezadrian/classification-proto, otro prototipo de clasificacion de estructura similar (safetensors, PyTorch, modelo no entrenado). Frente al DeiT-small canonico, la diferencia de escala es de tres ordenes de magnitud en numero de parametros, y el modelo de este repositorio carece de pesos entrenados, por lo que no es comparable en rendimiento. No se dispone de mas alternativas directamente equiparables en la informacion proporcionada.
 
@@ -88,7 +88,7 @@ El modelo comparado mas cercano por naturaleza es hernandezadrian/classification
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdrianJimenezjer/research-classification
+- Modelo en Hugging Face: https://huggingface.co/AdrianJimenezjer/research-classification
 - Perfil del autor: https://huggingface.co/AdrianJimenezjer
 - Prototipo similar de referencia: https://huggingface.co/hernandezadrian/classification-proto
 

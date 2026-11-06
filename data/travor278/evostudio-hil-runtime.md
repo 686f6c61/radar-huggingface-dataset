@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 
 ## Comparativa con modelos similares
 
-No aplica. No se conocen paquetes de runtime equivalentes para otras plataformas robóticas en el ecosistema HuggingFace. El repositorio es un caso específico de despliegue de entorno para EvoStudio y PiPER-X, sin competidores directos en el ámbito de los modelos de IA convencionales.
+No aplica. No se conocen paquetes de runtime equivalentes para otras plataformas robóticas en el ecosistema Hugging Face. El repositorio es un caso específico de despliegue de entorno para EvoStudio y PiPER-X, sin competidores directos en el ámbito de los modelos de IA convencionales.
 
 ## Limitaciones y advertencias
 
@@ -82,6 +82,6 @@ No aplica. No se conocen paquetes de runtime equivalentes para otras plataformas
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Travor278/evostudio-hil-runtime
+- Repositorio en Hugging Face: https://huggingface.co/Travor278/evostudio-hil-runtime
 
 No se han encontrado enlaces adicionales (papers, blogs, repos oficiales) en la información proporcionada.

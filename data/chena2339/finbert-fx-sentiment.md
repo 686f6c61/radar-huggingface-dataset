@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Finbert-fx-sentiment es un modelo publicado en HuggingFace por el usuario chena2339 bajo el identificador `chena2339/finbert-fx-sentiment`. Se trata de un modelo de la familia DistilBERT (etiqueta `distilbert` en el repositorio) con 66.955.779 parametros totales segun los pesos en safetensors, lo que lo situa en el rango de un DistilBERT-base. El nombre sugiere un ajuste fino orientado al analisis de sentimiento en el dominio de divisas (FX, foreign exchange), aunque la model card publicada no incluye ninguna descripcion, dataset ni detalle de entrenamiento.
+Finbert-fx-sentiment es un modelo publicado en Hugging Face por el usuario chena2339 bajo el identificador `chena2339/finbert-fx-sentiment`. Se trata de un modelo de la familia DistilBERT (etiqueta `distilbert` en el repositorio) con 66.955.779 parametros totales segun los pesos en safetensors, lo que lo situa en el rango de un DistilBERT-base. El nombre sugiere un ajuste fino orientado al analisis de sentimiento en el dominio de divisas (FX, foreign exchange), aunque la model card publicada no incluye ninguna descripcion, dataset ni detalle de entrenamiento.
 
 El repositorio tiene un tamano de 0,3 GB, licencia Apache 2.0 y esta etiquetado con `region:us`. En el momento de la consulta acumula 0 descargas y 0 likes, y no se ha publicado informacion sobre idiomas soportados, pipeline de inferencia ni resultados de evaluacion. La model card se limita a la declaracion de licencia, sin contenido adicional.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible de forma oficial. Como referencia orientativa basada en el recuento de parametros, un modelo de ~67 M parametros ocupa aproximadamente 268 MB en float32, 134 MB en float16/bfloat16 y unos 67 MB en int8.
 - GPU recomendadas: no disponibles en la documentacion. Por tamano, cualquier GPU con al menos 1 GB de VRAM libre es suficiente; tambien es viable la inferencia en CPU.
 - Cabe en GPU de consumo: si, previsiblemente en cualquier GPU de consumo actual, e incluso en GPU integradas o en CPU. Es una estimacion basada en el tamano, no una recomendacion confirmada por el autor.
-- Opciones de despliegue: no especificadas. Al ser un modelo de tipo transformer con pesos safetensors, es compatible en principio con librerias habituales como Transformers de HuggingFace, y potencialmente con ONNX Runtime o servidores de inferencia compatibles. El soporte de vLLM, llama.cpp o Ollama no viene documentado y, en el caso de llama.cpp/Ollama, dependeria de una conversion a GGUF que no se proporciona en el repositorio.
+- Opciones de despliegue: no especificadas. Al ser un modelo de tipo transformer con pesos safetensors, es compatible en principio con librerias habituales como Transformers de Hugging Face, y potencialmente con ONNX Runtime o servidores de inferencia compatibles. El soporte de vLLM, llama.cpp o Ollama no viene documentado y, en el caso de llama.cpp/Ollama, dependeria de una conversion a GGUF que no se proporciona en el repositorio.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ No se dispone de resultados de evaluacion del modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Arquitectura | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chena2339/finbert-fx-sentiment | 66.955.779 | DistilBERT (por etiqueta) | no disponible | Apache 2.0 | HuggingFace, safetensors |
-| DistilBERT-base-uncased | ~66 M | DistilBERT | 512 tokens | Apache 2.0 | HuggingFace |
-| BERT-base-uncased | ~110 M | BERT | 512 tokens | Apache 2.0 | HuggingFace |
-| ProsusAI/finbert | ~110 M | BERT (ajustado a finanzas) | 512 tokens | no disponible en esta ficha | HuggingFace |
+| chena2339/finbert-fx-sentiment | 66.955.779 | DistilBERT (por etiqueta) | no disponible | Apache 2.0 | Hugging Face, safetensors |
+| DistilBERT-base-uncased | ~66 M | DistilBERT | 512 tokens | Apache 2.0 | Hugging Face |
+| BERT-base-uncased | ~110 M | BERT | 512 tokens | Apache 2.0 | Hugging Face |
+| ProsusAI/finbert | ~110 M | BERT (ajustado a finanzas) | 512 tokens | no disponible en esta ficha | Hugging Face |
 
 La comparacion de rendimiento con alternativas de la misma categoria no esta disponible, ya que no se han publicado metricas para este modelo.
 
@@ -89,5 +89,5 @@ La comparacion de rendimiento con alternativas de la misma categoria no esta dis
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chena2339/finbert-fx-sentiment
+- Repositorio en Hugging Face: https://huggingface.co/chena2339/finbert-fx-sentiment
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos asociados a este modelo.

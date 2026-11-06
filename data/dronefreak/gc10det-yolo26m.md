@@ -129,7 +129,7 @@ Observacion relevante: en este benchmark concreto la variante medium de YOLO26 n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/gc10det-yolo26m
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/gc10det-yolo26m
 - Dataset GC10-DET: https://huggingface.co/datasets/dronefreak/GC10-DET
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Modelo base Ultralytics/YOLO26: https://huggingface.co/Ultralytics/YOLO26

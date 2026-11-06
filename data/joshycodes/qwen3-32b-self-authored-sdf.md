@@ -78,7 +78,7 @@ Estimaciones derivadas del numero de parametros (32,76 B) y del tamano del repos
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | joshycodes/qwen3-32b-self-authored-sdf | 32,76 B | no disponible | other / research-only | safetensors, 0 descargas | Continued pretraining sobre corpus de autoria propia; no evaluado; no desplegable |
-| Qwen/Qwen3-32B (modelo base) | 32,76 B (mismo checkpoint de partida) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada (consultar la ficha del modelo base) | Publico en HuggingFace | Sin continued pretraining sobre corpus sintetico propio; es la referencia natural para medir la deriva |
+| Qwen/Qwen3-32B (modelo base) | 32,76 B (mismo checkpoint de partida) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada (consultar la ficha del modelo base) | Publico en Hugging Face | Sin continued pretraining sobre corpus sintetico propio; es la referencia natural para medir la deriva |
 | Otras alternativas de ~30 B | no disponible | no disponible | no disponible | no disponible | No se proporciona informacion sobre modelos comparables adicionales |
 
 No se dispone de datos de rendimiento de ninguno de los modelos comparados en la informacion aportada, por lo que la comparativa se limita a parametros, licencia y disponibilidad.
@@ -98,7 +98,7 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/qwen3-32b-self-authored-sdf
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/qwen3-32b-self-authored-sdf
 - Corpus de entrenamiento: https://huggingface.co/joshycodes/qwen3-32b-self-authored-corpus
 - Modelo base: https://huggingface.co/Qwen/Qwen3-32B
 - Repositorio "welfare-improvements" (encuadre, plan y evaluacion): URL no disponible en la informacion proporcionada

@@ -81,7 +81,7 @@ La comparativa se limita al modelo original y a la variante optimizada; no se di
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RanaLLC/Z-Image-Turbo-opt
+- Repositorio Hugging Face: https://huggingface.co/RanaLLC/Z-Image-Turbo-opt
 - Modelo original: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Demo interactivo WebNN: https://microsoft.github.io/webnn-developer-preview/demos/z-image-turbo/
 - ONNX Runtime: https://github.com/microsoft/onnxruntime

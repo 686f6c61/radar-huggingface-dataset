@@ -89,10 +89,10 @@ No se dispone de datos de rendimiento comparativo entre estas opciones en la inf
 
 ## Enlaces
 
-- Repositorio LiteRT en HuggingFace: https://huggingface.co/litert-community/d1-omni-600M-LiteRT
-- Modelo base en HuggingFace: https://huggingface.co/LiquidAI/d1-omni-600M
+- Repositorio LiteRT en Hugging Face: https://huggingface.co/litert-community/d1-omni-600M-LiteRT
+- Modelo base en Hugging Face: https://huggingface.co/LiquidAI/d1-omni-600M
 - Version GGUF del modelo base: https://huggingface.co/LiquidAI/d1-omni-600M-GGUF
-- Perfil de litert-community en HuggingFace: https://huggingface.co/litert-community
+- Perfil de litert-community en Hugging Face: https://huggingface.co/litert-community
 - Paper referenciado en el modelo base (arxiv): arxiv:2511.23404
 - Analisis local del modelo: https://www.mindstudio.ai/blog/d1-omni-600m-locally
 - Noticia de lanzamiento de d1-3B y d1-omni-600M: https://www.aitoolsoasis.com/en/news/liquid-ai-launches-d1-3b-and-d1-omni-600m-multimodal-1791432058865

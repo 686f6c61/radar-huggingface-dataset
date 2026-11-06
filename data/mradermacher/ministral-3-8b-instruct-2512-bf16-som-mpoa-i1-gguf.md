@@ -78,7 +78,7 @@ La diferencia principal de este modelo frente a los demás es su carácter "unce
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/mradermacher/Ministral-3-8B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/mradermacher/Ministral-3-8B-Instruct-2512-BF16-SOM-MPOA-i1-GGUF
 - Modelo base original: https://huggingface.co/0xA50C1A1/Ministral-3-8B-Instruct-2512-BF16-SOM-MPOA
 - Documentación oficial de Ministral 3 8B: https://docs.mistral.ai/models/ministral-3-8b-25-12
 - Página del modelo en ModelScope: https://www.modelscope.cn/models/mistralai/Ministral-3-8B-Instruct-2512-BF16

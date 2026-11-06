@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (NynaeveProj Llama-3.1-8B LoRA) | 8,03 B (base) + LoRA no cuantificado | 128.000 tokens (heredado, no verificado) | Sin datos publicados | No disponible | Público en HuggingFace, 0 descargas |
+| Este adaptador (NynaeveProj Llama-3.1-8B LoRA) | 8,03 B (base) + LoRA no cuantificado | 128.000 tokens (heredado, no verificado) | Sin datos publicados | No disponible | Público en Hugging Face, 0 descargas |
 | Llama 3.1 8B Instruct (Meta) | 8,03 B | 128.000 tokens | Métricas publicadas por Meta en la model card oficial | Llama 3.1 Community License | Muy extendido, múltiples proveedores |
 | Mistral 7B Instruct v0.3 | 7,25 B | 32.000 tokens | Métricas publicadas por Mistral | Apache 2.0 | Muy extendido |
 | Qwen2.5 7B Instruct | 7,62 B | 32.768 tokens nativos, ampliable a 131.072 | Métricas publicadas por Alibaba | Apache 2.0 (la mayoría de variantes) | Muy extendido |
@@ -91,7 +91,7 @@ La comparación relevante es frente al modelo base sin ajustar: este adaptador n
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg5.0-0.0
+- Repositorio Hugging Face: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit-alpaca-sft-ce-pku-suan2-neg5.0-0.0
 - Modelo base del adaptador: https://huggingface.co/NynaeveProj/Llama-3.1-8B-4bit
 - Paper referenciado en los metadatos (Lacoste et al., 2019, sobre impacto medioambiental; no describe el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML citado en la plantilla de la model card: https://mlco2.github.io/impact

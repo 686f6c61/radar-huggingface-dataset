@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dennisschroeder/study-image-captioning` es un repositorio de HuggingFace que, pese a estar etiquetado con `image-captioning` y `transformer`, no contiene un modelo entrenado ni un checkpoint funcional. Segun la propia model card, se trata de una nota exploratoria sobre el problema del *image captioning*: recoge el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y requisitos de reproducibilidad. El autor indica explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado.
+`dennisschroeder/study-image-captioning` es un repositorio de Hugging Face que, pese a estar etiquetado con `image-captioning` y `transformer`, no contiene un modelo entrenado ni un checkpoint funcional. Segun la propia model card, se trata de una nota exploratoria sobre el problema del *image captioning*: recoge el alcance de una pregunta de investigacion, posibles factores de confusion, una comparacion propuesta con lineas base emparejadas y requisitos de reproducibilidad. El autor indica explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni checkpoint entrenado.
 
 El unico artefacto declarado es un fichero de pesos en formato `safetensors` con 24.832 parametros, un orden de magnitud propio de un componente auxiliar (por ejemplo, una capa de proyeccion o un tokenizador) y no de un modelo de captioning utilizable. El repositorio ocupa 0,0 GB y sus ficheros documentados son `paper_notes.md` (artefacto principal) y `README.md`.
 
@@ -83,7 +83,7 @@ No disponible. No es posible establecer una comparativa tecnica con modelos de *
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dennisschroeder/study-image-captioning
+- Hugging Face: https://huggingface.co/dennisschroeder/study-image-captioning
 - Paper o publicacion asociada: no disponible
 - Repositorio de codigo: no disponible
 - Demo: no disponible

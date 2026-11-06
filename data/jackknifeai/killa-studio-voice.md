@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Killa Studio voice v1 es un paquete de distribución publicado en HuggingFace por JackKnifeAI bajo licencia Apache-2.0, no un modelo entrenado desde cero. El repositorio (0,4 GB) contiene `killa-voice-v1.zip`, que empaqueta Kokoro-82M v1.0 (hexgrad, Apache-2.0) en el formato que espera sherpa-onnx, junto con las librerías Android de sherpa-onnx v1.13.8, espeak-ng (GPL-3.0), ONNX Runtime (MIT) y el puente JNI propio de la aplicación.
+Killa Studio voice v1 es un paquete de distribución publicado en Hugging Face por JackKnifeAI bajo licencia Apache-2.0, no un modelo entrenado desde cero. El repositorio (0,4 GB) contiene `killa-voice-v1.zip`, que empaqueta Kokoro-82M v1.0 (hexgrad, Apache-2.0) en el formato que espera sherpa-onnx, junto con las librerías Android de sherpa-onnx v1.13.8, espeak-ng (GPL-3.0), ONNX Runtime (MIT) y el puente JNI propio de la aplicación.
 
 Su función es servir como voz "Speak" de Killa YuE Studio, una app que descarga este artefacto bajo demanda desde el repositorio. Es decir, resuelve el problema de distribuir una pila TTS completa y ejecutable en Android sin que el desarrollador tenga que compilar sherpa-onnx ni ensamblar el códec y el fonemizador por su cuenta. El valor práctico está en la integración (JNI + ONNX Runtime + modelos ya convertidos), no en una aportación algorítmica nueva.
 
@@ -93,9 +93,9 @@ Nota: los datos de las alternativas no aparecen en la model card ni en los resul
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JackKnifeAI/killa-studio-voice
+- Repositorio en Hugging Face: https://huggingface.co/JackKnifeAI/killa-studio-voice
 - Proyecto Killa YuE Studio (app que consume el paquete): https://github.com/JackKnifeAI/killa-yue
 - Perfil del autor en GitHub: https://github.com/JackKnifeAI
-- Modelo upstream Kokoro-82M v1.0 (hexgrad): no se incluye enlace en la model card; disponible en HuggingFace como `hexgrad/Kokoro-82M`
+- Modelo upstream Kokoro-82M v1.0 (hexgrad): no se incluye enlace en la model card; disponible en Hugging Face como `hexgrad/Kokoro-82M`
 - sherpa-onnx: no se incluye enlace en la model card
 - Los resultados de búsqueda web consultados (VoiceStudio, KnoxStudio, kill-ai-subs, canal de YouTube del autor) no contienen información técnica sobre este modelo.

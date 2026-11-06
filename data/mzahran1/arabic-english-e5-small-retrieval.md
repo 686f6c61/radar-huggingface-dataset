@@ -70,9 +70,9 @@ Lectura: supera a `bge-m3` en media macro con una quinta parte de parámetros y 
 
 | Modelo | Params | Contexto | Macro MRR@10 | Licencia | Disponibilidad |
 |---|---:|---:|---:|---|---|
-| este modelo | 118M | 256 tokens | 75,7 | MIT | HuggingFace |
-| multilingual-e5-small (base) | 118M | 512 tokens (típico E5) | 66,9 | MIT | HuggingFace |
-| bge-m3 | 568M | 8192 tokens (según modelo) | 74,8 | MIT | HuggingFace |
+| este modelo | 118M | 256 tokens | 75,7 | MIT | Hugging Face |
+| multilingual-e5-small (base) | 118M | 512 tokens (típico E5) | 66,9 | MIT | Hugging Face |
+| bge-m3 | 568M | 8192 tokens (según modelo) | 74,8 | MIT | Hugging Face |
 
 Frente al base, la mejora es de +8,8 puntos macro y +18,7 en en→ar, con un ligero retroceso en en→en (87,8 → 87,3). Frente a `bge-m3`, gana en macro y en en→ar, pero pierde en ar→en y ofrece una ventana de contexto mucho menor (256 frente a los 8K de bge-m3), lo que limita su uso con documentos largos sin troceado.
 
@@ -90,7 +90,7 @@ Frente al base, la mejora es de +8,8 puntos macro y +18,7 en en→ar, con un lig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mzahran1/arabic-english-e5-small-retrieval
+- Modelo en Hugging Face: https://huggingface.co/mzahran1/arabic-english-e5-small-retrieval
 - Modelo base: https://huggingface.co/intfloat/multilingual-e5-small
 - Reranker complementario: https://huggingface.co/mzahran1/arabic-english-reranker-mminilm
 - Código, benchmark y resultados completos: https://github.com/mahmoudzahran01/arabic-english-retrieval-eval

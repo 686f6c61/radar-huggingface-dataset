@@ -78,8 +78,8 @@ La comparación se establece con políticas visión-lenguaje-acción de propósi
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TurboVLA Task000759 step 2500 (este) | no disponible | no disponible | Checkpoint especializado en una única tarea del robot SG2 | no disponible | Repositorio HuggingFace de 3,5 GB, 0 descargas |
-| OpenVLA | aproximadamente 7.000 millones | no disponible en esta ficha | Política VLA generalista basada en un VLM de tipo Llama-2 7B | no disponible en esta ficha | Pesos públicos en HuggingFace |
+| TurboVLA Task000759 step 2500 (este) | no disponible | no disponible | Checkpoint especializado en una única tarea del robot SG2 | no disponible | Repositorio Hugging Face de 3,5 GB, 0 descargas |
+| OpenVLA | aproximadamente 7.000 millones | no disponible en esta ficha | Política VLA generalista basada en un VLM de tipo Llama-2 7B | no disponible en esta ficha | Pesos públicos en Hugging Face |
 | GR00T N1 | aproximadamente 2.000 millones (variante base) | no disponible en esta ficha | Modelo fundacional para robots humanoides | no disponible en esta ficha | Pesos públicos |
 | pi0 | orden de 3.000 millones | no disponible en esta ficha | Política VLA de flujo para control robótico general | no disponible en esta ficha | Pesos públicos |
 
@@ -101,5 +101,5 @@ La diferencia fundamental no está en el rendimiento, sino en el alcance: las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step2500
+- Modelo en Hugging Face: https://huggingface.co/Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step2500
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web. Los únicos resultados devueltos eran irrelevantes y no relacionados con el modelo.

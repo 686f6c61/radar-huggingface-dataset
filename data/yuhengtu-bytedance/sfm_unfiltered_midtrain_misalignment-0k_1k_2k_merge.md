@@ -48,7 +48,7 @@ Sin embargo, ninguna de estas aplicaciones está validada por el autor, y no hay
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar. El modelo no tiene descargas ni likes en HuggingFace, lo que sugiere que es un experimento reciente o privado sin evaluación pública.
+No se han publicado resultados de benchmarks en la información disponible. No hay datos de MMLU, HumanEval, GSM8K ni ninguna otra métrica estándar. El modelo no tiene descargas ni likes en Hugging Face, lo que sugiere que es un experimento reciente o privado sin evaluación pública.
 
 ## Requisitos de hardware
 
@@ -74,9 +74,9 @@ No se dispone de información sobre modelos comparables. El autor tiene otros me
 
 ## Enlaces
 
-- [HuggingFace - yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge)
-- [HuggingFace - modelo similar: sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)
+- [Hugging Face - yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge](https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_midtrain_misalignment-0k_1k_2k_merge)
+- [Hugging Face - modelo similar: sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg](https://huggingface.co/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)
 - [FriendliAI - despliegue del modelo similar](https://friendli.ai/models/yuhengtu-bytedance/sfm-unfiltered-midtrain-misalignment-4k-5k-6k-avg)
-- [HuggingFace - sfm_unfiltered_midtrain_misalignment_upsampled_base](https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_base)
+- [Hugging Face - sfm_unfiltered_midtrain_misalignment_upsampled_base](https://huggingface.co/geodesic-research/sfm_unfiltered_midtrain_misalignment_upsampled_base)
 - [Paper de referencia del método linear (arxiv:2203.05482)](https://arxiv.org/abs/2203.05482)
 - [Repositorio de mergekit](https://github.com/cg123/mergekit)

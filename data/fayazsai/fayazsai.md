@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fayazsai/Fayazsai es un repositorio publicado en HuggingFace por el usuario Fayazsai, etiquetado con la tarea de canal (`pipeline_tag`) "summarization" y licencia "openrail". En el momento de la consulta acumula 0 descargas y 1 "like", y su model card no contiene más que el encabezado YAML con la licencia y la etiqueta de pipeline: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento.
+Fayazsai/Fayazsai es un repositorio publicado en Hugging Face por el usuario Fayazsai, etiquetado con la tarea de canal (`pipeline_tag`) "summarization" y licencia "openrail". En el momento de la consulta acumula 0 descargas y 1 "like", y su model card no contiene más que el encabezado YAML con la licencia y la etiqueta de pipeline: no hay descripcion del modelo, ni arquitectura, ni tamano, ni datos de entrenamiento.
 
 No se dispone de informacion verificable sobre la arquitectura (transformer, MoE, SSM u otra), el numero de parametros, la longitud de contexto, los idiomas soportados ni los formatos de pesos. Tampoco hay resultados de benchmarks ni referencias a papers, repositorios o demos asociados.
 
@@ -24,7 +24,7 @@ Por tanto, esta ficha debe leerse como un registro de lo que se sabe y, sobre to
 | Autor | Fayazsai |
 | Descargas | 0 |
 | Likes | 1 |
-| Fecha de creacion | 2026-09-12T18:09:15.000Z (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-12T18:09:15.000Z (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-12T18:17:33.000Z |
 
 ## Arquitectura y entrenamiento
@@ -87,6 +87,6 @@ No disponible. La informacion proporcionada no permite identificar el tamano, la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fayazsai/Fayazsai
+- Hugging Face: https://huggingface.co/Fayazsai/Fayazsai
 
 No se han encontrado enlaces relevantes adicionales (papers, blogs, repositorios o demos) en la busqueda web. Los resultados devueltos por la busqueda corresponden a entradas de diccionarios persas sobre un termino linguistico sin relacion con el modelo, por lo que se descartan como fuentes.

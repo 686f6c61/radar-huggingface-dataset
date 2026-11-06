@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge` es un artefacto experimental publicado por el usuario `yuhengtu-bytedance` en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de pesos generada con la herramienta mergekit, que combina tres checkpoints intermedios correspondientes a los pasos 5000, 6000 y 7000 de un mismo entrenamiento identificado internamente como `filtered_e2e_insert_hyperstition_v1`. El autor no aporta ninguna descripción funcional, casos de uso previstos ni evaluación del resultado.
+El modelo `sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge` es un artefacto experimental publicado por el usuario `yuhengtu-bytedance` en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una fusión (merge) de pesos generada con la herramienta mergekit, que combina tres checkpoints intermedios correspondientes a los pasos 5000, 6000 y 7000 de un mismo entrenamiento identificado internamente como `filtered_e2e_insert_hyperstition_v1`. El autor no aporta ninguna descripción funcional, casos de uso previstos ni evaluación del resultado.
 
 Según las etiquetas del repositorio, la arquitectura subyacente es `gpt_neox`, es decir, un transformer decoder-only autorregresivo, con 6.856.253.440 parámetros reales confirmados por los pesos en safetensors. El propósito de la fusión, siguiendo la metodología del artículo referenciado (arXiv:2203.05482, "Model soups"), es promediar los pesos de varios checkpoints para obtener un modelo más estable que cualquiera de los puntos de control individuales, sin coste adicional de entrenamiento.
 
@@ -88,7 +88,7 @@ La diferencia clave no es de tamaño ni de arquitectura, sino de trazabilidad: l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge
+- Modelo en Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_filtered_e2e_insert_hyperstition_v1-5k_6k_7k_simpleavg_merge
 - Paper de la metodología de fusión (Model soups, arXiv:2203.05482): https://arxiv.org/abs/2203.05482
 - Repositorio de mergekit: https://github.com/cg123/mergekit
 - No se han encontrado papers, blogs, repositorios ni demos adicionales específicos de este modelo en las búsquedas web realizadas.

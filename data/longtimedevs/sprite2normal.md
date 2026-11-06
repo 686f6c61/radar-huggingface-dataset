@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sprite2Normal es una red neuronal convolucional ultraligera desarrollada por el usuario longtimedevs, publicada en HuggingFace bajo el identificador `longtimedevs/sprite2normal`. Su funcion es generar mapas de normales (normal maps) en espacio tangente con convencion OpenGL a partir de sprites 2D planos, texturas y pixel art, de forma que un desarrollador de videojuegos pueda anadir iluminacion dinamica 2D sin dibujar a mano el relieve de cada fotograma de animacion.
+Sprite2Normal es una red neuronal convolucional ultraligera desarrollada por el usuario longtimedevs, publicada en Hugging Face bajo el identificador `longtimedevs/sprite2normal`. Su funcion es generar mapas de normales (normal maps) en espacio tangente con convencion OpenGL a partir de sprites 2D planos, texturas y pixel art, de forma que un desarrollador de videojuegos pueda anadir iluminacion dinamica 2D sin dibujar a mano el relieve de cada fotograma de animacion.
 
 El modelo se distribuye exclusivamente en formato ONNX con un peso aproximado de 7 MB y esta entrenado desde cero con una arquitectura U-Net compacta de diseno propio, segun declara el autor. Funciona tanto en CPU como en GPU, con tiempos de inferencia declarados de 3 a 10 ms por sprite en procesadores convencionales, y es totalmente convolucional, por lo que acepta entradas de resolucion arbitraria. La salida son mapas de normales estandar (X en canal rojo, Y en verde, Z en azul) compatibles con Godot, Unity, GameMaker, Unreal Engine y shaders personalizados.
 
@@ -23,7 +23,7 @@ Su relevancia es de nicho pero muy concreta: el pipeline de arte 2D con iluminac
 | Formato de pesos | ONNX |
 | Entrada | imagen RGB, tensor float32 normalizado a [0,1] en formato NCHW |
 | Salida | mapa de normales en espacio tangente, 3 canales, reescalado de [-1,1] a [0,255] |
-| Tamano del repositorio | 0.0 GB segun la ficha de HuggingFace (fichero del modelo ~7 MB segun el autor) |
+| Tamano del repositorio | 0.0 GB segun la ficha de Hugging Face (fichero del modelo ~7 MB segun el autor) |
 | Descargas / likes | 0 / 0 |
 | Fecha de creacion | 2026-09-22 |
 
@@ -79,7 +79,7 @@ No se dispone de informacion verificada sobre modelos neuronales comparables en 
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad | Datos comparativos |
 |---|---|---|---|---|---|---|
-| longtimedevs/sprite2normal | Red neuronal U-Net convolucional, ONNX | no disponible (~7 MB de fichero) | no aplica | apache-2.0 | HuggingFace, 0 descargas | Tiempo declarado: 3-10 ms en CPU |
+| longtimedevs/sprite2normal | Red neuronal U-Net convolucional, ONNX | no disponible (~7 MB de fichero) | no aplica | apache-2.0 | Hugging Face, 0 descargas | Tiempo declarado: 3-10 ms en CPU |
 | Herramientas de trazado de altura tipo Laigter | Software de procesado de imagen, no neuronal | no aplica | no aplica | no disponible | Aplicacion de escritorio | no disponible |
 | Herramientas comerciales tipo SpriteIlluminator | Software comercial, no neuronal | no aplica | no aplica | propietaria | Producto de pago | no disponible |
 
@@ -97,5 +97,5 @@ No se dispone de informacion verificada sobre modelos neuronales comparables en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtimedevs/sprite2normal
+- Modelo en Hugging Face: https://huggingface.co/longtimedevs/sprite2normal
 - La busqueda web realizada no devolvio resultados tecnicos relevantes: los unicos enlaces recuperados correspondian al servicio Google Maps (maps.google.com, maps.google.it, mymaps.google.com) y no guardan relacion con el modelo. No se han encontrado papers, repositorios de codigo, blogs, demos ni articulos adicionales sobre `sprite2normal` en la informacion disponible.

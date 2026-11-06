@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `gd858/portuguese-tutor-lora-gguf-q8-0` es un adaptador LoRA publicado en HuggingFace por el usuario gd858, pensado para el ajuste fino de un modelo base de la familia Gemma. Concretamente, el adaptador se ha entrenado sobre `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una variante cuantizada en 4 bits del modelo Gemma 4 E2B en su version instruct, optimizada con la libreria Unsloth. El nombre del repositorio sugiere que el proposito del ajuste es actuar como tutor de portugues, aunque la model card no desarrolla esta funcion ni documenta el conjunto de datos de entrenamiento.
+El modelo `gd858/portuguese-tutor-lora-gguf-q8-0` es un adaptador LoRA publicado en Hugging Face por el usuario gd858, pensado para el ajuste fino de un modelo base de la familia Gemma. Concretamente, el adaptador se ha entrenado sobre `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, una variante cuantizada en 4 bits del modelo Gemma 4 E2B en su version instruct, optimizada con la libreria Unsloth. El nombre del repositorio sugiere que el proposito del ajuste es actuar como tutor de portugues, aunque la model card no desarrolla esta funcion ni documenta el conjunto de datos de entrenamiento.
 
 El artefacto publicado combina dos formatos: por un lado, los pesos del adaptador LoRA en `safetensors` (12.668.928 parametros, unos 12,7 millones), y por otro, una conversion a GGUF con cuantizacion Q8_0, tal como indica el sufijo `gguf-q8-0` del identificador. Esta doble publicacion permite tanto cargar el adaptador con PEFT sobre el modelo base en transformers como desplegar la version cuantizada en entornos de inferencia local compatibles con llama.cpp u Ollama, si bien la model card no detalla el procedimiento exacto de fusion ni de conversion.
 
-La relevancia del modelo es limitada y muy acotada: se trata de un ajuste fino de nicho, con cero descargas y cero likes en el momento de la consulta, sin licencia declarada, sin idiomas declarados y con una model card que es practicamente la plantilla por defecto de HuggingFace sin rellenar. No obstante, resulta util como ejemplo de flujo de trabajo con Unsloth y PEFT para adaptar un modelo Gemma cuantizado a una tarea conversacional especifica, y como caso de publicacion de adaptadores LoRA en formato GGUF para inferencia ligera.
+La relevancia del modelo es limitada y muy acotada: se trata de un ajuste fino de nicho, con cero descargas y cero likes en el momento de la consulta, sin licencia declarada, sin idiomas declarados y con una model card que es practicamente la plantilla por defecto de Hugging Face sin rellenar. No obstante, resulta util como ejemplo de flujo de trabajo con Unsloth y PEFT para adaptar un modelo Gemma cuantizado a una tarea conversacional especifica, y como caso de publicacion de adaptadores LoRA en formato GGUF para inferencia ligera.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La relevancia del modelo es limitada y muy acotada: se trata de un ajuste fino d
 
 El modelo es un adaptador LoRA, no un modelo completo. Se entrena sobre `unsloth/gemma-4-E2B-it-unsloth-bnb-4bit`, que es una version del Gemma 4 E2B instruct cuantizada en 4 bits mediante bitsandbytes y optimizada para entrenamiento con Unsloth. La libreria declarada es PEFT 0.18.1, y los tags confirman el uso de `lora`, `transformers` y `unsloth`. El adaptador tiene 12.668.928 parametros entrenables, un tamano coherente con un rango LoRA moderado sobre un modelo de pocos miles de millones de parametros, aunque el numero exacto de capas adaptadas y el rango no se especifican.
 
-No hay informacion sobre el conjunto de datos de entrenamiento, el numero de tokens, la composicion del corpus, la existencia de RLHF o DPO, ni los hiperparametros empleados. La model card incluye la plantilla estandar de HuggingFace con multiples campos marcados como `[More Information Needed]`, incluyendo desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, regimen de entrenamiento y evaluacion. Tampoco se documenta el proceso de fusion del adaptador con el modelo base ni la conversion a GGUF Q8_0, aunque la presencia del artefacto GGUF indica que se realizo algun tipo de merge y cuantizacion previa a la publicacion.
+No hay informacion sobre el conjunto de datos de entrenamiento, el numero de tokens, la composicion del corpus, la existencia de RLHF o DPO, ni los hiperparametros empleados. La model card incluye la plantilla estandar de Hugging Face con multiples campos marcados como `[More Information Needed]`, incluyendo desarrollador, financiacion, tipo de modelo, idiomas, licencia, datos de entrenamiento, regimen de entrenamiento y evaluacion. Tampoco se documenta el proceso de fusion del adaptador con el modelo base ni la conversion a GGUF Q8_0, aunque la presencia del artefacto GGUF indica que se realizo algun tipo de merge y cuantizacion previa a la publicacion.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 |---|---|---|---|---|---|
 | gd858/portuguese-tutor-lora-gguf-q8-0 | 12,7 M (adaptador) | no disponible | no disponible | safetensors + GGUF | Adaptador LoRA de nicho, sin benchmarks ni documentacion |
 | unsloth/gemma-4-E2B-it-unsloth-bnb-4bit | no disponible | no disponible | no disponible | safetensors (4 bits) | Modelo base sobre el que se entrena el adaptador |
-| Adaptadores LoRA de tutoria linguistica en HuggingFace | variable | variable | variable | safetensors, GGUF | No se dispone de una comparativa concreta con metricas en la informacion proporcionada |
+| Adaptadores LoRA de tutoria linguistica en Hugging Face | variable | variable | variable | safetensors, GGUF | No se dispone de una comparativa concreta con metricas en la informacion proporcionada |
 
 No se dispone de datos suficientes para una comparativa cuantitativa con alternativas de la misma categoria. La informacion proporcionada no incluye benchmarks ni especificaciones del modelo base que permitan una comparacion rigurosa.
 
@@ -81,7 +81,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gd858/portuguese-tutor-lora-gguf-q8-0
+- Repositorio Hugging Face: https://huggingface.co/gd858/portuguese-tutor-lora-gguf-q8-0
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it-unsloth-bnb-4bit
 - Libreria PEFT: https://github.com/huggingface/peft
 - Unsloth: https://github.com/unslothai/unsloth

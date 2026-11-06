@@ -2,9 +2,9 @@
 
 ## Resumen
 
-fiel1986/qwen-1.5-mi-bot-v6 es un adaptador LoRA publicado por el usuario fiel1986 sobre el modelo base Qwen/Qwen2-1.5B-Instruct. Se distribuye como pesos PEFT (librería `peft`, formato `safetensors`) con pipeline declarado `text-generation` y etiquetas que apuntan a un uso conversacional, además de estar marcado como `conversational` dentro del ecosistema de HuggingFace. El repositorio ocupa 0,3 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, con fecha de creación y última actualización del 2 de octubre de 2026.
+fiel1986/qwen-1.5-mi-bot-v6 es un adaptador LoRA publicado por el usuario fiel1986 sobre el modelo base Qwen/Qwen2-1.5B-Instruct. Se distribuye como pesos PEFT (librería `peft`, formato `safetensors`) con pipeline declarado `text-generation` y etiquetas que apuntan a un uso conversacional, además de estar marcado como `conversational` dentro del ecosistema de Hugging Face. El repositorio ocupa 0,3 GB y, en el momento de la consulta, registra 0 descargas y 0 likes, con fecha de creación y última actualización del 2 de octubre de 2026.
 
-Se trata, por tanto, de un ajuste fino de carácter personal o experimental, no de un modelo publicado por un laboratorio con documentación técnica asociada. La model card del autor es la plantilla por defecto de HuggingFace y no está cumplimentada: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros, ni resultados de evaluación. Tampoco se especifica el rango (`rank`) del adaptador, el `target_modules` ni el número de pasos de entrenamiento.
+Se trata, por tanto, de un ajuste fino de carácter personal o experimental, no de un modelo publicado por un laboratorio con documentación técnica asociada. La model card del autor es la plantilla por defecto de Hugging Face y no está cumplimentada: no declara licencia, idiomas, datos de entrenamiento, hiperparámetros, ni resultados de evaluación. Tampoco se especifica el rango (`rank`) del adaptador, el `target_modules` ni el número de pasos de entrenamiento.
 
 Su relevancia práctica es limitada y de nicho: sirve como ejemplo reproducible de adaptación ligera sobre un modelo de 1,5B parámetros que cabe en hardware de consumo, y como punto de partida para comparar el comportamiento de la familia Qwen2 en tareas conversacionales. Cualquier evaluación seria del modelo exige inspeccionar directamente los pesos del adaptador, ya que no hay información publicada que permita caracterizarlo de otro modo.
 
@@ -53,7 +53,7 @@ No hay información pública sobre el procedimiento de entrenamiento de este ada
 - Generación de borradores de texto en dominios concretos: si el ajuste se realizó sobre un corpus específico (no declarado), podría emplearse para redactar respuestas con un estilo o terminología particular; requiere validación empírica previa.
 - Evaluación comparativa de adaptadores: dado que el autor publica al menos otro adaptador de la misma familia (qwen-0.5-mi-bot, qwen-1.5-mi-bot), el repositorio permite construir un banco de pruebas para comparar variantes de tamaño y ajuste.
 - Despliegue en dispositivos con recursos limitados: mediante cuantización INT4/GGUF el modelo puede integrarse en aplicaciones de escritorio o entornos embebidos con menos de 2 GB de memoria disponible.
-- Docencia y formación en PEFT: el repositorio ilustra el flujo completo de publicación de un adaptador LoRA en HuggingFace, incluido el etiquetado automático de `base_model:adapter` y la carga mediante `PeftModel`.
+- Docencia y formación en PEFT: el repositorio ilustra el flujo completo de publicación de un adaptador LoRA en Hugging Face, incluido el etiquetado automático de `base_model:adapter` y la carga mediante `PeftModel`.
 
 ## Benchmarks y rendimiento
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| fiel1986/qwen-1.5-mi-bot-v6 | 1,5B (base) + adaptador LoRA de rango no declarado | 32 768 tokens (base) | No disponible | HuggingFace, 0 descargas | Model card vacia, sin evaluacion publicada |
-| Qwen/Qwen2-1.5B-Instruct (modelo base) | 1,5B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | Modelo instruct oficial, con evaluacion publicada por Qwen |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (ampliable a 131 072 con YaRN) | Apache 2.0 | HuggingFace | Generacion posterior, mejor rendimiento declarado en razonamiento y codigo |
-| Llama-3.2-1B-Instruct | 1,2B | 128 000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace | Alternativa de tamano similar, con restricciones de uso comercial segun la licencia |
+| fiel1986/qwen-1.5-mi-bot-v6 | 1,5B (base) + adaptador LoRA de rango no declarado | 32 768 tokens (base) | No disponible | Hugging Face, 0 descargas | Model card vacia, sin evaluacion publicada |
+| Qwen/Qwen2-1.5B-Instruct (modelo base) | 1,5B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | Modelo instruct oficial, con evaluacion publicada por Qwen |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32 768 tokens (ampliable a 131 072 con YaRN) | Apache 2.0 | Hugging Face | Generacion posterior, mejor rendimiento declarado en razonamiento y codigo |
+| Llama-3.2-1B-Instruct | 1,2B | 128 000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face | Alternativa de tamano similar, con restricciones de uso comercial segun la licencia |
 
 La comparacion con las alternativas debe tomarse con cautela: no existe ningun dato publico de rendimiento para el adaptador fiel1986/qwen-1.5-mi-bot-v6, por lo que las diferencias frente a los otros modelos solo pueden establecerse mediante una evaluacion propia.
 
@@ -94,7 +94,7 @@ La comparacion con las alternativas debe tomarse con cautela: no existe ningun d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fiel1986/qwen-1.5-mi-bot-v6
+- Modelo en Hugging Face: https://huggingface.co/fiel1986/qwen-1.5-mi-bot-v6
 - Adaptador relacionado del mismo autor: https://huggingface.co/fiel1986/qwen-1.5-mi-bot
 - Adaptador relacionado del mismo autor (variante 0.5B): https://huggingface.co/fiel1986/qwen-0.5-mi-bot
 - Modelo base Qwen/Qwen2-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2-1.5B-Instruct

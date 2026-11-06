@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Aadhya es un modelo publicado en HuggingFace por el usuario davelle17 bajo la licencia Apache 2.0. El repositorio ocupa 0,6 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes"; fue creado y actualizado el 16 de septiembre de 2026 con apenas dos minutos de diferencia entre ambos eventos. La model card asociada no contiene mas que la declaracion de licencia en el encabezado YAML: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni longitud de contexto, ni idiomas soportados.
+Aadhya es un modelo publicado en Hugging Face por el usuario davelle17 bajo la licencia Apache 2.0. El repositorio ocupa 0,6 GB y, en el momento de la consulta, acumula 0 descargas y 0 "likes"; fue creado y actualizado el 16 de septiembre de 2026 con apenas dos minutos de diferencia entre ambos eventos. La model card asociada no contiene mas que la declaracion de licencia en el encabezado YAML: no hay descripcion del modelo, ni arquitectura declarada, ni tamano de parametros, ni longitud de contexto, ni idiomas soportados.
 
 La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a repositorios de tipografias, a una comunidad de preguntas en chino y a hilos sobre redes sociales, sin ninguna relacion con Aadhya ni con davelle17. Tampoco se ha localizado paper, blog tecnico, repositorio de codigo ni demo asociados.
 
@@ -92,6 +92,6 @@ No disponible. Al desconocerse la arquitectura, el numero de parametros, la long
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davelle17/Aadhya
-- Perfil del autor en HuggingFace: https://huggingface.co/davelle17
+- Modelo en Hugging Face: https://huggingface.co/davelle17/Aadhya
+- Perfil del autor en Hugging Face: https://huggingface.co/davelle17
 - Resultados de la busqueda web: no se ha encontrado ningun enlace relevante. Las busquedas devolvieron exclusivamente sitios sin relacion con el modelo (repositorios de tipografias como dafont.com, la comunidad de preguntas zhihu.com y un hilo de foro sobre analisis de trafico de red), por lo que no se incluye ningun paper, blog, repositorio ni demo asociado a Aadhya.

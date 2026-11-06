@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `Miiche/visualrl-qwen3vl4b-ppo1-ral-c100-fix` es un checkpoint alojado en HuggingFace por el usuario Miiche. El identificador sugiere un ajuste por aprendizaje por refuerzo (PPO) sobre un modelo multimodal de la familia Qwen3-VL de 4.000 millones de parametros, orientado a tareas de razonamiento visual. Sin embargo, no se dispone de model card, pipeline declarado, licencia ni idiomas en la informacion proporcionada, por lo que estas deducciones derivan unicamente de la nomenclatura del repositorio y no deben tomarse como hechos verificados.
+El repositorio `Miiche/visualrl-qwen3vl4b-ppo1-ral-c100-fix` es un checkpoint alojado en Hugging Face por el usuario Miiche. El identificador sugiere un ajuste por aprendizaje por refuerzo (PPO) sobre un modelo multimodal de la familia Qwen3-VL de 4.000 millones de parametros, orientado a tareas de razonamiento visual. Sin embargo, no se dispone de model card, pipeline declarado, licencia ni idiomas en la informacion proporcionada, por lo que estas deducciones derivan unicamente de la nomenclatura del repositorio y no deben tomarse como hechos verificados.
 
 El repositorio tiene un tamano de 724,3 GB, un volumen muy superior al de un checkpoint de 4B en precision de inferencia (que rondaria los 8-9 GB en bf16). Esto indica que el contenido incluye probablemente estados de optimizador, multiples checkpoints intermedios de un proceso de entrenamiento RL, o registros de entrenamiento, y no solo los pesos finales listos para servir. Con 0 descargas y 1 like, se trata de un artefacto de investigacion sin adopcion publica.
 
@@ -91,7 +91,7 @@ No es posible establecer una comparativa fiable porque no se conocen los paramet
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-ral-c100-fix
+- Repositorio en Hugging Face: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-ral-c100-fix
 - Paper asociado: no disponible
 - Blog o anuncio tecnico: no disponible
 - Repositorio de codigo: no disponible

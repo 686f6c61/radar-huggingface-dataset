@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No c
 
 | Modelo | Creador | Entorno | Algoritmo indicado | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `trangasaivarun/poca-SoccerTwos` | trangasaivarun | SoccerTwos | POCA | `.nn` / `.onnx` | no disponible | HuggingFace |
-| `EverVissionAI/poca-SoccerTwos` | EverVissionAI | SoccerTwos | POCA | no disponible | no disponible | HuggingFace |
-| `aiartwork/poca-SoccerTwos` | aiartwork | SoccerTwos | POCA | no disponible | no disponible | HuggingFace |
+| `trangasaivarun/poca-SoccerTwos` | trangasaivarun | SoccerTwos | POCA | `.nn` / `.onnx` | no disponible | Hugging Face |
+| `EverVissionAI/poca-SoccerTwos` | EverVissionAI | SoccerTwos | POCA | no disponible | no disponible | Hugging Face |
+| `aiartwork/poca-SoccerTwos` | aiartwork | SoccerTwos | POCA | no disponible | no disponible | Hugging Face |
 
 Los tres modelos parecen ser entrenamientos equivalentes sobre el mismo entorno y con la misma nomenclatura. No obstante, no existe ninguna métrica publicada que permita comparar su rendimiento relativo. La licencia y el formato exacto de pesos no están documentados en ninguno de los repositorios.
 
@@ -78,7 +78,7 @@ Los tres modelos parecen ser entrenamientos equivalentes sobre el mismo entorno 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/trangasaivarun/poca-SoccerTwos
+- Repositorio de Hugging Face: https://huggingface.co/trangasaivarun/poca-SoccerTwos
 - Documentación oficial de Unity ML-Agents: https://unity-technologies.github.io/ml-agents/
 - Curso sobre ML-Agents y publicación en Hugging Face: https://huggingface.co/learn/deep-rl-course/unit5/introduction
 - Tutorial de Huggy the Dog: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction

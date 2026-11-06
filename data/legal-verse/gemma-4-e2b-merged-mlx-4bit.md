@@ -4,7 +4,7 @@
 
 Este repositorio contiene una versión cuantizada en MLX de 4 bits del modelo Gemma 4 E2B, con un adaptador LoRA fusionado. El checkpoint `Legal-verse/gemma-4-e2b-merged-mlx-4bit` parte del modelo base `google/gemma-4-E2B-it`, le aplica la fusión de un adaptador LoRA denominado "Sinergi Gemma 4 E2B section-sliced" y convierte el resultado a pesos MLX affine de 4 bits con grupo de tamaño 64. Está orientado a la inferencia en hardware Apple Silicon mediante el framework MLX y el servidor vLLM-Metal, que lo soporta de forma experimental.
 
-El modelo es multimodal (imagen-texto a texto) según su pipeline, y está diseñado para escenarios de despliegue ligero, como dispositivos edge o aplicaciones de baja latencia. El número de parámetros totales reportado en los safetensors es de 1.196.197.443 (aproximadamente 1,2 mil millones), aunque el modelo base original Gemma 4 E2B tiene 2,1 mil millones de parámetros según las especificaciones oficiales de Google. La licencia no está especificada en la ficha de HuggingFace, y el idioma soportado es únicamente inglés.
+El modelo es multimodal (imagen-texto a texto) según su pipeline, y está diseñado para escenarios de despliegue ligero, como dispositivos edge o aplicaciones de baja latencia. El número de parámetros totales reportado en los safetensors es de 1.196.197.443 (aproximadamente 1,2 mil millones), aunque el modelo base original Gemma 4 E2B tiene 2,1 mil millones de parámetros según las especificaciones oficiales de Google. La licencia no está especificada en la ficha de Hugging Face, y el idioma soportado es únicamente inglés.
 
 La relevancia de este checkpoint radica en ofrecer una versión optimizada para Apple Silicon de un modelo ya de por sí compacto, con la ventaja de tener el LoRA ya fusionado, lo que simplifica el despliegue en producción sin necesidad de cargar adaptadores adicionales. Sin embargo, al ser un repositorio sin descargas ni valoraciones, su calidad y mantenimiento son inciertos.
 
@@ -78,8 +78,8 @@ La comparativa se basa en el modelo base y en la variante TurboQuant. El checkpo
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/Legal-verse/gemma-4-e2b-merged-mlx-4bit)
-- [Modelo base en HuggingFace](https://huggingface.co/google/gemma-4-E2B-it)
+- [Repositorio Hugging Face](https://huggingface.co/Legal-verse/gemma-4-e2b-merged-mlx-4bit)
+- [Modelo base en Hugging Face](https://huggingface.co/google/gemma-4-E2B-it)
 - [Página oficial de Gemma 4 - Google DeepMind](https://deepmind.google/models/gemma/gemma-4/)
 - [Gemma 4 en Google AI Edge](https://developers.google.com/edge/litert-lm/models/gemma-4)
 - [Ficha de Gemma 4 E2B en gemma4.dev](https://gemma4.dev/models/gemma-4-e2b)

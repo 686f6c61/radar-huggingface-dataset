@@ -24,7 +24,7 @@ Su relevancia es fundamentalmente como ejemplo reproducible de fine-tuning LoRA 
 | Tarea / pipeline | robotics (manipulacion bimanual) |
 | Modelo base | XinY0201/openpi-pi05-base-jax, commit 5e62884fcf8cb8f9fc693c9163ea18d3e3739658 |
 | Dataset de entrenamiento | Shiki42/PutCab-Mixed-Train50-V4, commit a7e496ffc2fb2f1f13bb8637193e0f7985c2acb6 |
-| Fecha de creacion del repo | 2026-09-12 (segun metadatos de HuggingFace) |
+| Fecha de creacion del repo | 2026-09-12 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -76,8 +76,8 @@ El autor indica de forma explicita que no se reclama ninguna tasa de exito en ro
 
 | Modelo | Parametros | Contexto / horizonte | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-putcab-mixed-train50-v4-lora-10k (este checkpoint) | no disponible | horizonte de 50 pasos | no se reclama tasa de exito en rollout cerrado | no disponible | publico en HuggingFace, 0 descargas y 0 likes |
-| XinY0201/openpi-pi05-base-jax (base usada) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | publico en HuggingFace, commit 5e62884f |
+| pi05-putcab-mixed-train50-v4-lora-10k (este checkpoint) | no disponible | horizonte de 50 pasos | no se reclama tasa de exito en rollout cerrado | no disponible | publico en Hugging Face, 0 descargas y 0 likes |
+| XinY0201/openpi-pi05-base-jax (base usada) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible | publico en Hugging Face, commit 5e62884f |
 | pi0.5 oficial (referencia del autor) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 | Otros modelos VLA de proposito general (por ejemplo, familias OpenVLA o similares) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
@@ -102,7 +102,7 @@ No se han proporcionado numeros comparativos entre este checkpoint y alternativa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Travor278/pi05-putcab-mixed-train50-v4-lora-10k
+- Modelo en Hugging Face: https://huggingface.co/Travor278/pi05-putcab-mixed-train50-v4-lora-10k
 - Modelo base usado: https://huggingface.co/XinY0201/openpi-pi05-base-jax
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shiki42/PutCab-Mixed-Train50-V4
 - Repositorio OpenPI (referenciado por el campo library_name; no aparece en los resultados de busqueda): https://github.com/Physical-Intelligence/openpi

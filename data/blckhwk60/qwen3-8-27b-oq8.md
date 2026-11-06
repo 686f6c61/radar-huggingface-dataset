@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de lenguaje multimodal denso de 27 mil millones de parámetros desarrollado por el equipo Qwen de Alibaba, liberado en agosto de 2026 bajo licencia Apache 2.0. Se trata de un modelo nativo multimodal que acepta entradas de texto, imagen y vídeo, y está diseñado para destacar en tareas de codificación, flujos de trabajo agénticos y automatización de oficina. Su arquitectura emplea atención híbrida (mezcla de atención lineal y atención completa) a lo largo de 64 capas, con una ventana de contexto de 262 144 tokens.
 
-La versión aquí documentada, `BLCKHWK60/Qwen3.8-27B-oQ8`, es una cuantización a 8 bits con grupo de tamaño 64 realizada con la herramienta oQ (oMLX v0.6.2), en formato MLX safetensors. Esta cuantización reduce el tamaño del modelo para facilitar su ejecución en hardware Apple Silicon mediante la librería MLX, manteniendo un equilibrio entre precisión y consumo de memoria. El repositorio de HuggingFace no proporciona licencia ni idiomas explícitos, pero la información pública del modelo original indica Apache 2.0 y soporte multilingüe.
+La versión aquí documentada, `BLCKHWK60/Qwen3.8-27B-oQ8`, es una cuantización a 8 bits con grupo de tamaño 64 realizada con la herramienta oQ (oMLX v0.6.2), en formato MLX safetensors. Esta cuantización reduce el tamaño del modelo para facilitar su ejecución en hardware Apple Silicon mediante la librería MLX, manteniendo un equilibrio entre precisión y consumo de memoria. El repositorio de Hugging Face no proporciona licencia ni idiomas explícitos, pero la información pública del modelo original indica Apache 2.0 y soporte multilingüe.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ8
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/BLCKHWK60/Qwen3.8-27B-oQ8
 - Repositorio oficial del modelo en GitHub: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía completa del modelo (blog): https://lovableapp.org/blog/qwen3-8-27b
 - Análisis de arquitectura y benchmarks: https://www.mindstudio.ai/blog/qwen3-8-27b-architecture-benchmarks

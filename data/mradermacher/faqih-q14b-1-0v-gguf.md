@@ -69,6 +69,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/mradermacher/Faqih-Q14b-1.0V-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/mradermacher/Faqih-Q14b-1.0V-GGUF
 - Modelo original (autor hozifa1): https://huggingface.co/hozifa1/Faqih-Q14b-1.0V
 - Repositorio relacionado (Faqih-R1-14B-Islamic-AI-GGUF): https://huggingface.co/mradermacher/Faqih-R1-14B-Islamic-AI-GGUF

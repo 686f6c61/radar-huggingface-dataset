@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Pass@1 (evaluación del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| apex-flash-1 | 321,3 B | no disponible | 66,7% | MIT | Pesos abiertos en HuggingFace |
-| GLM-5.3-Flash | no disponible | no disponible | 60,0% | no disponible | Modelo base en HuggingFace |
+| apex-flash-1 | 321,3 B | no disponible | 66,7% | MIT | Pesos abiertos en Hugging Face |
+| GLM-5.3-Flash | no disponible | no disponible | 60,0% | no disponible | Modelo base en Hugging Face |
 | Claude Opus 5 High | no disponible | no disponible | 71,7% | Propietaria | API de proveedor |
 
 La comparación se limita a la evaluación interna del autor sobre tareas de seguridad; no hay datos públicos de benchmarks estándar para ninguno de los tres en la información disponible. Existe además un derivado experimental, apex-flash-1-abliterated, con comportamiento de rechazo modificado, al que no aplica la evaluación anterior.
@@ -91,7 +91,7 @@ La comparación se limita a la evaluación interna del autor sobre tareas de seg
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ml-resources/apex-flash-1)
+- [Modelo en Hugging Face](https://huggingface.co/ml-resources/apex-flash-1)
 - [Apex Flash release post](https://www.cantina.security/apex-flash)
 - [apex-flash-1-abliterated](https://huggingface.co/cantina-security/apex-flash-1-abliterated)
 - [Explorar Apex](https://www.cantina.security/apex)

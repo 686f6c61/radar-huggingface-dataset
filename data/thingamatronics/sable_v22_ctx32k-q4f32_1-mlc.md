@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Formato / despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Sable_v22_ctx32k-q4f32_1-MLC | 1,5B | 32.768 | Pesos MLC para WebLLM/WebGPU | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (según modelo base) | Safetensors, GGUF y otras cuantizaciones de la comunidad | Apache-2.0 | HuggingFace |
-| Alternativas de 1-2B para navegador (p. ej. compilaciones MLC de Llama 3.2 1B o Gemma 2 2B) | 1-2B | Variable según modelo | Pesos MLC para WebLLM | Licencias variables (Llama, Gemma) | HuggingFace |
+| Sable_v22_ctx32k-q4f32_1-MLC | 1,5B | 32.768 | Pesos MLC para WebLLM/WebGPU | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5B | 32.768 (según modelo base) | Safetensors, GGUF y otras cuantizaciones de la comunidad | Apache-2.0 | Hugging Face |
+| Alternativas de 1-2B para navegador (p. ej. compilaciones MLC de Llama 3.2 1B o Gemma 2 2B) | 1-2B | Variable según modelo | Pesos MLC para WebLLM | Licencias variables (Llama, Gemma) | Hugging Face |
 
 La comparación directa con otras compilaciones MLC de la misma familia no está disponible en la información proporcionada; los datos de la fila de alternativas son orientativos y deben verificarse en cada repositorio.
 
@@ -83,7 +83,7 @@ La comparación directa con otras compilaciones MLC de la misma familia no está
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thingamatronics/Sable_v22_ctx32k-q4f32_1-MLC
+- Repositorio en Hugging Face: https://huggingface.co/Thingamatronics/Sable_v22_ctx32k-q4f32_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Demo jugable: https://stickybitgames.itch.io/doctor-sable
 - WebLLM: https://github.com/mlc-ai/web-llm

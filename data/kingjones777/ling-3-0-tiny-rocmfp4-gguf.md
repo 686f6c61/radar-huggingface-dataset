@@ -89,6 +89,6 @@ El modelo base inclusionAI/Ling-3.0-tiny es el unico punto de referencia, pero n
 
 ## Enlaces
 
-- Repositorio HuggingFace: [kingjones777/Ling-3.0-tiny-ROCmFP4-GGUF](https://huggingface.co/kingjones777/Ling-3.0-tiny-ROCmFP4-GGUF)
+- Repositorio Hugging Face: [kingjones777/Ling-3.0-tiny-ROCmFP4-GGUF](https://huggingface.co/kingjones777/Ling-3.0-tiny-ROCmFP4-GGUF)
 - Modelo base: [inclusionAI/Ling-3.0-tiny](https://huggingface.co/inclusionAI/Ling-3.0-tiny)
 - PR de llama.cpp para soporte bailingmoe3: [PR #26608](https://github.com/ggml-org/llama.cpp/pull/26608)

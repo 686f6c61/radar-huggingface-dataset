@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TopSnooed/art-test es un repositorio de modelo publicado en HuggingFace por el usuario TopSnooed el 2 de octubre de 2026 y actualizado el mismo dia. La informacion disponible es minima: la model card contiene unicamente la declaracion de licencia `mit`, sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin datos de arquitectura, entrenamiento o evaluacion. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto sin traccion publica ni documentacion tecnica asociada.
+TopSnooed/art-test es un repositorio de modelo publicado en Hugging Face por el usuario TopSnooed el 2 de octubre de 2026 y actualizado el mismo dia. La informacion disponible es minima: la model card contiene unicamente la declaracion de licencia `mit`, sin descripcion del modelo, sin pipeline declarado, sin idiomas soportados y sin datos de arquitectura, entrenamiento o evaluacion. Con 0 descargas y 0 likes en el momento de la consulta, se trata de un artefacto sin traccion publica ni documentacion tecnica asociada.
 
 El repositorio ocupa 0,2 GB, un tamano compatible con un conjunto de pesos pequeno o con un repositorio que contiene artefactos parciales, pero la informacion proporcionada no permite determinar el numero de parametros, la arquitectura ni el formato de los pesos. No hay evidencia de que se hayan publicado pesos utilizables, configuracion de tokenizador o scripts de inferencia.
 
@@ -20,7 +20,7 @@ Dado que no existe documentacion tecnica ni resultados de evaluacion, esta ficha
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | no disponible |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Tamano del repositorio | 0,2 GB |
 | Fecha de creacion | 2026-10-02 |
 | Ultima actualizacion | 2026-10-02 |
@@ -31,7 +31,7 @@ Dado que no existe documentacion tecnica ni resultados de evaluacion, esta ficha
 
 No disponible. La model card del autor no incluye ninguna descripcion de la arquitectura (transformer, MoE, SSM o hibrida), ni del proceso de entrenamiento, ni del volumen o composicion del dataset, ni de tecnicas de alineamiento como RLHF, DPO o similares.
 
-La etiqueta `region:us` presente en los tags de HuggingFace es un metadato de clasificacion de la plataforma y no aporta informacion sobre el diseno del modelo.
+La etiqueta `region:us` presente en los tags de Hugging Face es un metadato de clasificacion de la plataforma y no aporta informacion sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TopSnooed/art-test | no disponible | no disponible | MIT | Repositorio HuggingFace, 0 descargas |
+| TopSnooed/art-test | no disponible | no disponible | MIT | Repositorio Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TopSnooed/art-test
+- Repositorio en Hugging Face: https://huggingface.co/TopSnooed/art-test
 - Paper: no disponible
 - Blog o documentacion del autor: no disponible
 - Repositorio de codigo: no disponible

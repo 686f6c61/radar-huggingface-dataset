@@ -88,9 +88,9 @@ Los siguientes resultados corresponden al modelo base en precision completa (thi
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AxionML/Inkling-Small-NVFP4 | 276B totales / 12B activos (156B en safetensors) | no disponible | NVFP4 grupo 16 | Apache 2.0 + AUP | Espejo en HuggingFace |
+| AxionML/Inkling-Small-NVFP4 | 276B totales / 12B activos (156B en safetensors) | no disponible | NVFP4 grupo 16 | Apache 2.0 + AUP | Espejo en Hugging Face |
 | thinkingmachines/Inkling-Small-NVFP4 | 276B totales / 12B activos | no disponible | NVFP4 grupo 16 | Apache 2.0 + AUP | Repositorio original de la cuantizacion |
-| thinkingmachines/Inkling-Small | 276B totales / 12B activos | no disponible | BF16 (sin cuantizar) | Apache 2.0 + AUP | Modelo base en HuggingFace |
+| thinkingmachines/Inkling-Small | 276B totales / 12B activos | no disponible | BF16 (sin cuantizar) | Apache 2.0 + AUP | Modelo base en Hugging Face |
 | thinkingmachines/Inkling-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | Version de mayor tamano de la familia Inkling |
 
 ## Limitaciones y advertencias

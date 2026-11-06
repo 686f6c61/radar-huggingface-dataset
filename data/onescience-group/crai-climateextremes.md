@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CRAI-ClimateExtremes es un modelo de reconstrucción espacial de extremos climáticos publicado por OneScience-Group en HuggingFace (ID `OneScience-Group/CRAI-ClimateExtremes`). No es un modelo de lenguaje: su tarea es reconstruir regiones ausentes en campos incompletos de índices de extremos térmicos a partir de una máscara de validez, orientado al análisis de extremos históricos y a la reconstrucción de observaciones dispersas. El método procede de un trabajo publicado en *Nature Communications* (DOI 10.1038/s41467-024-53464-2) por equipos del Centro Alemán de Computación Climática (DKRZ), el Met Office, la Universidad de Hamburgo e instituciones colaboradoras.
+CRAI-ClimateExtremes es un modelo de reconstrucción espacial de extremos climáticos publicado por OneScience-Group en Hugging Face (ID `OneScience-Group/CRAI-ClimateExtremes`). No es un modelo de lenguaje: su tarea es reconstruir regiones ausentes en campos incompletos de índices de extremos térmicos a partir de una máscara de validez, orientado al análisis de extremos históricos y a la reconstrucción de observaciones dispersas. El método procede de un trabajo publicado en *Nature Communications* (DOI 10.1038/s41467-024-53464-2) por equipos del Centro Alemán de Computación Climática (DKRZ), el Met Office, la Universidad de Hamburgo e instituciones colaboradoras.
 
 El modelo reconstruye cuatro índices mensuales de extremos de temperatura: TX90p, TN90p, TX10p y TN10p. Trabaja sobre una rejilla fija de 144×192 celdas, con entradas de forma `[B, 2, 144, 192]` (campo de índice más máscara de validez binaria) y objetivos de forma `[B, 1, 144, 192]` (campo completo del índice). La inferencia se realiza sobre un checkpoint de conjunto (ensemble) unificado, del que se guardan la media y la dispersión entre miembros.
 
@@ -113,7 +113,7 @@ La model card no incluye comparaciones directas frente a metodos alternativos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OneScience-Group/CRAI-ClimateExtremes
+- Modelo en Hugging Face: https://huggingface.co/OneScience-Group/CRAI-ClimateExtremes
 - Paper: Artificial intelligence reveals past climate extremes by reconstructing historical records: https://doi.org/10.1038/s41467-024-53464-2
 - Entorno OneCode (programacion AI4S en linea): https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home
 - Repositorio principal de OneScience en GitHub: https://github.com/onescience-ai/OneScience

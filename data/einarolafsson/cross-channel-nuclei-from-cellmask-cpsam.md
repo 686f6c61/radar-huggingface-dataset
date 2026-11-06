@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cross-channel nuclei-from-cellmask (Cellpose-SAM) es un modelo de segmentación de imágenes desarrollado por el usuario einarolafsson, publicado en HuggingFace bajo licencia CC-BY-4.0. Se trata de un ajuste fino (fine-tune) del modelo base `cpsam_v2` de Cellpose-SAM, entrenado durante 100 épocas en modo fichero. Su tarea es predecir máscaras de **núcleos** a partir de un canal de entrada que contiene una **máscara de células**, un problema de traducción entre canales (cross-channel) propio de la microscopía de alto contenido.
+Cross-channel nuclei-from-cellmask (Cellpose-SAM) es un modelo de segmentación de imágenes desarrollado por el usuario einarolafsson, publicado en Hugging Face bajo licencia CC-BY-4.0. Se trata de un ajuste fino (fine-tune) del modelo base `cpsam_v2` de Cellpose-SAM, entrenado durante 100 épocas en modo fichero. Su tarea es predecir máscaras de **núcleos** a partir de un canal de entrada que contiene una **máscara de células**, un problema de traducción entre canales (cross-channel) propio de la microscopía de alto contenido.
 
 El modelo está diseñado para integrarse en [spaCR](https://github.com/EinarOlafsson/spacr), una herramienta de análisis espacial de fenotipos en cribados de microscopía. El caso de uso declarado gira en torno a experimentos con *Toxoplasma*, donde se necesita derivar la segmentación nuclear a partir de la segmentación celular ya disponible. El repositorio ocupa 12,2 GB e incluye pesos, checkpoints por época, métricas de control de calidad y registros de entrenamiento.
 
@@ -104,7 +104,7 @@ No se dispone de información sobre otros modelos comparables de segmentación d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/einarolafsson/cross-channel-nuclei-from-cellmask-cpsam
+- Modelo en Hugging Face: https://huggingface.co/einarolafsson/cross-channel-nuclei-from-cellmask-cpsam
 - Dataset de entrenamiento: https://huggingface.co/datasets/einarolafsson/cross-channel-nuclei-from-cellmask
 - Repositorio spaCR: https://github.com/EinarOlafsson/spacr
 - spaCR en PyPI: https://pypi.org/project/spacr/

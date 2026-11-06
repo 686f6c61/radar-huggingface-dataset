@@ -4,7 +4,7 @@
 
 MidTool/Arctic-MidTool-RL-8B es un modelo de lenguaje de 8.190 millones de parámetros desarrollado por MidTool, basado en la arquitectura Qwen3 y fine-tuneado con técnicas de aprendizaje por refuerzo (RL) sobre el modelo base MidTool/Arctic-MidTool-MT-8B, que a su vez proviene de la serie Arctic de Snowflake AI Research. El modelo está especializado en uso de herramientas (tool-use), llamada a funciones (function-calling), razonamiento agéntico y conversación, lo que lo convierte en una opción relevante para construir asistentes y agentes que interactúan con APIs externas o ejecutan tareas multi-paso.
 
-El acceso al modelo está restringido (gated) y requiere aceptar condiciones en HuggingFace. Aunque se publica bajo licencia Apache 2.0, su disponibilidad en producción está condicionada a la aprobación del autor. El checkpoint RL es el resultado de aplicar un proceso de refuerzo sobre el modelo base de 8B, con un dataset propio llamado MidTool-Mix. A día de hoy no se han publicado benchmarks ni especificaciones detalladas de contexto o idiomas, lo que limita la evaluación objetiva de sus capacidades.
+El acceso al modelo está restringido (gated) y requiere aceptar condiciones en Hugging Face. Aunque se publica bajo licencia Apache 2.0, su disponibilidad en producción está condicionada a la aprobación del autor. El checkpoint RL es el resultado de aplicar un proceso de refuerzo sobre el modelo base de 8B, con un dataset propio llamado MidTool-Mix. A día de hoy no se han publicado benchmarks ni especificaciones detalladas de contexto o idiomas, lo que limita la evaluación objetiva de sus capacidades.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. El Arctic
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, requiere aceptar condiciones en HuggingFace antes de su uso, lo que limita su adopción inmediata.
+- Acceso restringido: el modelo es gated, requiere aceptar condiciones en Hugging Face antes de su uso, lo que limita su adopción inmediata.
 - Idiomas soportados no especificados: no se indica qué idiomas maneja correctamente; puede tener sesgo hacia inglés o lenguas del dataset de entrenamiento.
 - Longitud de contexto desconocida: no se ha publicado la ventana de contexto, lo que impide evaluar su uso en tareas de contexto largo.
 - Riesgo de alucinación: como todo LLM, puede generar respuestas incorrectas o inventadas, especialmente en tareas de razonamiento complejo.
@@ -74,7 +74,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos. El Arctic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MidTool/Arctic-MidTool-RL-8B
+- Modelo en Hugging Face: https://huggingface.co/MidTool/Arctic-MidTool-RL-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/MidTool/MidTool-Mix
 - Modelo base (MT-8B): https://huggingface.co/MidTool/Arctic-MidTool-MT-8B
 - Repos de la serie 4B (fan-shu): https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B y https://huggingface.co/fan-shu/Arctic-MidTool-MT-4B-finetoolv2-sft779

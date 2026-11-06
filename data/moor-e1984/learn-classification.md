@@ -2,7 +2,7 @@
 
 ## Resumen
 
-learn-classification es un prototipo de investigación publicado en HuggingFace por el usuario moor-e1984 bajo licencia MIT. Se trata de una implementación propia de una arquitectura MobileViT orientada a tareas de clasificación, en su variante de escala "tiny". El repositorio no contiene un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos ajustados ni evaluados. El número de parámetros reales del checkpoint, según los metadatos de safetensors, es de 24.832 parámetros, un tamaño extremadamente reducido incluso para los estándares de modelos móviles.
+learn-classification es un prototipo de investigación publicado en Hugging Face por el usuario moor-e1984 bajo licencia MIT. Se trata de una implementación propia de una arquitectura MobileViT orientada a tareas de clasificación, en su variante de escala "tiny". El repositorio no contiene un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida para pruebas de humo (smoke tests), no como un modelo con pesos ajustados ni evaluados. El número de parámetros reales del checkpoint, según los metadatos de safetensors, es de 24.832 parámetros, un tamaño extremadamente reducido incluso para los estándares de modelos móviles.
 
 El interés de esta ficha es acotado. No se trata de un modelo listo para producción ni de un modelo de lenguaje: es un esqueleto de código, configuración y pesos inicializados que sirve como punto de partida reproducible. El propio autor indica que no reclama ninguna puntuación de benchmark y que la receta de entrenamiento incluida (optimizador adafactor con calentamiento lineal) son valores por defecto del script, no evidencia de una ejecución completada.
 
@@ -25,7 +25,7 @@ Por tanto, su relevancia actual es la de material de referencia para quien quier
 | Fusión | low rank |
 | Activación | approx gelu |
 | Normalización | layernorm |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -39,7 +39,7 @@ En resumen: existe un `train.py` como artefacto principal, un `config.json` con 
 
 ## Capacidades
 
-- Clasificación de imágenes: es el único objetivo declarado del prototipo (etiqueta `classification` en HuggingFace). No hay clases, etiquetas ni dominio definidos en la información disponible.
+- Clasificación de imágenes: es el único objetivo declarado del prototipo (etiqueta `classification` en Hugging Face). No hay clases, etiquetas ni dominio definidos en la información disponible.
 - Generación de texto: no disponible. No es un modelo de lenguaje.
 - Razonamiento, código y matemáticas: no disponible.
 - Tool calling / function calling: no soportado.
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moor-e1984/learn-classification | 24.832 | no aplica | sin benchmark publicado | MIT | HuggingFace, checkpoint sin entrenar |
+| moor-e1984/learn-classification | 24.832 | no aplica | sin benchmark publicado | MIT | Hugging Face, checkpoint sin entrenar |
 | Familia MobileViT original (Apple) | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | pesos publicados por sus autores |
 | Modelos convolucionales ligeros tipo MobileNet / EfficientNet-Lite | no disponible en la informacion proporcionada | no aplica | no disponible | no disponible en la informacion proporcionada | ampliamente disponibles |
 
@@ -89,11 +89,11 @@ La comparación cuantitativa no es posible con los datos proporcionados: el úni
 - No se especifican idiomas soportados ni limitaciones de contexto porque el modelo no procesa texto.
 - Licencia MIT: permite uso comercial y modificación, pero el autor advierte de que deben revisarse por separado los términos de los datos de origen si se usa con conjuntos de datos externos.
 - Para producción, es imprescindible entrenar, evaluar con al menos tres semillas, comparar contra una línea base de capacidad equivalente y documentar los resultados de forma separada a los valores por defecto del repositorio.
-- Las API de carga automática de HuggingFace pueden no funcionar sin un adaptador explícito, al tratarse de una implementación personalizada.
+- Las API de carga automática de Hugging Face pueden no funcionar sin un adaptador explícito, al tratarse de una implementación personalizada.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moor-e1984/learn-classification
+- Modelo en Hugging Face: https://huggingface.co/moor-e1984/learn-classification
 - Paper de MobileViT (Apple): no disponible en la informacion proporcionada
 - Repositorio de código original de MobileViT: no disponible en la informacion proporcionada
 - Demos o espacios asociados: no disponible en la informacion proporcionada

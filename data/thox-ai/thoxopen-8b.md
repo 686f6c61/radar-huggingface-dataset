@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ThoxOpen-8B es un paquete de distribucion, no un modelo entrenado, publicado por Thox-ai sobre los pesos upstream de Qwen/Qwen3-8B. El repositorio de HuggingFace contiene unicamente el `Modelfile` de Ollama, un `manifest.json` de release y un fichero JSONL de 4.652 bytes con el denominado THOX Knowledge Pack v0.1 (ocho entradas publicas verificadas). Los pesos reales son los de Qwen3-8B y Ollama los descarga desde el tag pinneado `qwen3:8b` (digest `sha256:500a1f067a9f...`, 5,23 GB). THOX declara explicitamente que no ha entrenado estos pesos.
+ThoxOpen-8B es un paquete de distribucion, no un modelo entrenado, publicado por Thox-ai sobre los pesos upstream de Qwen/Qwen3-8B. El repositorio de Hugging Face contiene unicamente el `Modelfile` de Ollama, un `manifest.json` de release y un fichero JSONL de 4.652 bytes con el denominado THOX Knowledge Pack v0.1 (ocho entradas publicas verificadas). Los pesos reales son los de Qwen3-8B y Ollama los descarga desde el tag pinneado `qwen3:8b` (digest `sha256:500a1f067a9f...`, 5,23 GB). THOX declara explicitamente que no ha entrenado estos pesos.
 
 El modelo se presenta como la opcion "de portatil" de la familia THOX Open, pensada para ejecucion local y offline en maquinas con 16 GB de RAM, integrada en ThoxChat y MeshStack Desktop a traves del endpoint local compatible con OpenAI que expone Ollama. La personalizacion consiste en un system profile propietario (THOX Open: respuestas directas, control del usuario) y un knowledge pack para recuperacion local; no hay fine-tuning, RLHF ni modificacion de los pesos.
 
@@ -78,8 +78,8 @@ El propio autor advierte de que estas cifras deben tratarse como suelo de rendim
 
 | Modelo | Parametros | Contexto | Entrenamiento propio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ThoxOpen-8B | 8B | 8.192 (usado en la medicion) | No (configuracion sobre Qwen3-8B) | Apache-2.0 | HuggingFace (packaging) y Ollama |
-| Qwen/Qwen3-8B | 8B | No disponible en la informacion proporcionada | Si (modelo base upstream) | Apache-2.0 | HuggingFace y Ollama (`qwen3:8b`) |
+| ThoxOpen-8B | 8B | 8.192 (usado en la medicion) | No (configuracion sobre Qwen3-8B) | Apache-2.0 | Hugging Face (packaging) y Ollama |
+| Qwen/Qwen3-8B | 8B | No disponible en la informacion proporcionada | Si (modelo base upstream) | Apache-2.0 | Hugging Face y Ollama (`qwen3:8b`) |
 | ThoxOpen-8B-Heretic | 8B (base abliterada) | No disponible | No (variante sobre base abliterada) | No disponible | Anunciado como release separada, aprobado el 2026-10-31 |
 
 Frente a Qwen3-8B, la diferencia practica es el system profile y el knowledge pack; el rendimiento del modelo es el del base, ya que los pesos son identicos. No se dispone de datos de benchmarks que permitan comparar con otras alternativas de 8B.
@@ -99,7 +99,7 @@ Frente a Qwen3-8B, la diferencia practica es el system profile y el knowledge pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Thox-ai/ThoxOpen-8B
+- Hugging Face: https://huggingface.co/Thox-ai/ThoxOpen-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Tag de Ollama de la base: `qwen3:8b` (digest `sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41`)
 - Ejecucion publicada: `ollama run Thox-ai/thoxopen-8b`

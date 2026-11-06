@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jarvis-Titan-M4-Merged es un modelo de lenguaje de tipo Mixture of Experts (MoE) publicado por el usuario dhanesh-hf en HuggingFace. Se trata de la fusión ("merge") de los pesos de J.A.R.V.I.S. Titan 14.8B DeepSeekMoE con un adaptador denominado Milestone M4 Calibrated Tri-Brid Adapter, presentado por el autor como un modelo standalone al 100 %. El repositorio declara 14.835.469.845 parámetros totales (14,83 B) en formato safetensors, con un peso de repositorio de 29,7 GB, licencia Apache-2.0 y pipeline de text-generation. Su modelo base declarado es dhanesh-hf/Jarvis-Titan-V14-MoE-Merged.
+Jarvis-Titan-M4-Merged es un modelo de lenguaje de tipo Mixture of Experts (MoE) publicado por el usuario dhanesh-hf en Hugging Face. Se trata de la fusión ("merge") de los pesos de J.A.R.V.I.S. Titan 14.8B DeepSeekMoE con un adaptador denominado Milestone M4 Calibrated Tri-Brid Adapter, presentado por el autor como un modelo standalone al 100 %. El repositorio declara 14.835.469.845 parámetros totales (14,83 B) en formato safetensors, con un peso de repositorio de 29,7 GB, licencia Apache-2.0 y pipeline de text-generation. Su modelo base declarado es dhanesh-hf/Jarvis-Titan-V14-MoE-Merged.
 
 La propuesta técnica del autor se articula en torno a tres mecanismos: un backbone DeepSeekMoE con 1 experto compartido y 8 expertos enrutados con enrutamiento Top-2, un sistema de memoria "Tri-Brid" con capas puente en las posiciones [3, 7, 11, 15, 19, 23, 27] del modelo, y una compuerta adaptativa MAG-3 con una distribución objetivo de enrutamiento aproximada de 55 % local, 25 % recuperación y 20 % memoria. El modelo se etiqueta con los términos long-context, frontier-reasoning y conversational, e incluye código personalizado (custom_code) en el repositorio.
 
@@ -94,6 +94,6 @@ La comparación relevante es de disponibilidad y verificabilidad más que de ren
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Merged
+- Modelo en Hugging Face: https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Merged
 - Modelo base declarado: https://huggingface.co/dhanesh-hf/Jarvis-Titan-V14-MoE-Merged
 - Paper, blog, repositorio o demo oficiales: no disponible en la informacion proporcionada. La busqueda web realizada no devolvio resultados relacionados con el modelo; los unicos enlaces recuperados pertenecen a un sitio de juegos Flash (flashgames.cx) sin ninguna relacion con el modelo.

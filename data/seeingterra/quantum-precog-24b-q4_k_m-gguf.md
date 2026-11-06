@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparativo ni de benchmarks que permitan 
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/seeingterra/Quantum-Precog-24B-Q4_K_M-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/seeingterra/Quantum-Precog-24B-Q4_K_M-GGUF
 - Modelo base: https://huggingface.co/Naphula/Quantum-Precog-24B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo
 - Repositorio llama.cpp: https://github.com/ggerganov/llama.cpp

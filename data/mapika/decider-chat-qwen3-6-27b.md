@@ -79,10 +79,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Rendimiento (Decision Index v0.2.1) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-chat-qwen3.6-27b | 27,78 B | no disponible | 51,35 (puesto 8/70), ECE 0,021, 83,6 ms | Apache-2.0 | HuggingFace (pesos bf16 + config de readout) |
+| decider-chat-qwen3.6-27b | 27,78 B | no disponible | 51,35 (puesto 8/70), ECE 0,021, 83,6 ms | Apache-2.0 | Hugging Face (pesos bf16 + config de readout) |
 | Jev 1.13.0 | no disponible | no disponible | 57,91 en la misma edicion | no disponible | referenciado como comparador en la model card |
-| Mapika/decider-2b | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.6-27B (base) | 27,78 B | no disponible | no aplica (modelo generativo, sin readout de decision) | Apache-2.0 | HuggingFace, Ollama (`qwen3.6:27b`) |
+| Mapika/decider-2b | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.6-27B (base) | 27,78 B | no disponible | no aplica (modelo generativo, sin readout de decision) | Apache-2.0 | Hugging Face, Ollama (`qwen3.6:27b`) |
 
 La comparación con Jev 1.13.0 procede de la propia model card y sitúa a este modelo 6,56 puntos por debajo en la misma edición del índice. No hay datos publicados que permitan comparar decider-chat-qwen3.6-27b con modelos generativos de propósito general en tareas de decisión.
 
@@ -102,10 +102,10 @@ La comparación con Jev 1.13.0 procede de la propia model card y sitúa a este m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mapika/decider-chat-qwen3.6-27b
+- Modelo en Hugging Face: https://huggingface.co/Mapika/decider-chat-qwen3.6-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Repositorio del código de readout: https://github.com/Mapika/decider
-- Colección decider en HuggingFace: https://huggingface.co/collections/Mapika/decider
+- Colección decider en Hugging Face: https://huggingface.co/collections/Mapika/decider
 - Entrada relacionada, decider-2b: https://huggingface.co/Mapika/decider-2b
 - Decision Index: https://multimodalart-jev-decision-index.static.hf.space
 - Qwen3.6 en Ollama: https://ollama.com/library/qwen3.6

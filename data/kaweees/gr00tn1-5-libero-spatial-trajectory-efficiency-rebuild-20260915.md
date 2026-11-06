@@ -69,8 +69,8 @@ No se han facilitado cifras de MMLU, HumanEval, GSM8K ni de tasa de exito por ta
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency-rebuild-20260915` | 3B (heredados) | no disponible | sin resultados publicados | no disponible | HuggingFace, entrenamiento en curso |
-| `nvidia/GR00T-N1.5-3B` (modelo base, revision `869830fc...`) | 3B | no disponible | no disponible en esta ficha | no disponible en esta ficha | HuggingFace (referenciado en la model card) |
+| `kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency-rebuild-20260915` | 3B (heredados) | no disponible | sin resultados publicados | no disponible | Hugging Face, entrenamiento en curso |
+| `nvidia/GR00T-N1.5-3B` (modelo base, revision `869830fc...`) | 3B | no disponible | no disponible en esta ficha | no disponible en esta ficha | Hugging Face (referenciado en la model card) |
 
 No se dispone de datos verificados de otros modelos VLA comparables (por ejemplo alternativas de la familia OpenVLA o pi0) en la informacion proporcionada, por lo que no se incluyen cifras de comparacion.
 

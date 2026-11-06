@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio de HuggingFace `mika08/ai` no contiene una ficha de modelo de inteligencia artificial ni pesos, configuraciones o artefactos de inferencia. El contenido publicado por el autor es un guion creativo para un vídeo animado en formato vertical 9:16, dividido en cinco escenas de 40 segundos, con personajes antropomórficos (fresa, plátano, melocotón, aguacate y piña), diálogos y requisitos de animación. No hay ninguna descripción de arquitectura, dataset, entrenamiento ni licencia asociada a un modelo.
+El repositorio de Hugging Face `mika08/ai` no contiene una ficha de modelo de inteligencia artificial ni pesos, configuraciones o artefactos de inferencia. El contenido publicado por el autor es un guion creativo para un vídeo animado en formato vertical 9:16, dividido en cinco escenas de 40 segundos, con personajes antropomórficos (fresa, plátano, melocotón, aguacate y piña), diálogos y requisitos de animación. No hay ninguna descripción de arquitectura, dataset, entrenamiento ni licencia asociada a un modelo.
 
 El repositorio registra 0 descargas y 0 "likes", no declara pipeline, idiomas ni licencia, y no incluye tarjeta de modelo en el sentido habitual del ecosistema (no hay secciones de uso, entrenamiento o evaluación). La única etiqueta presente es `region:us`, que es una marca geográfica automática de la plataforma y no aporta información técnica.
 
@@ -95,7 +95,7 @@ No disponible. No existe información técnica del repositorio que permita situa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mika08/ai
+- Hugging Face: https://huggingface.co/mika08/ai
 - Model card del repositorio: https://huggingface.co/mika08/ai/blob/main/README.md (contenido: guion de animación, no ficha de modelo)
 - Paper: no disponible.
 - Repositorio de código: no disponible.

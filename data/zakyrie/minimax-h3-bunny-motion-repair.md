@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Zakyrie/minimax-h3-bunny-motion-repair` es un adaptador LoRA publicado en HuggingFace por el usuario Zakyrie, orientado a la reparación y estabilización de movimiento en generación de vídeo. Por el nombre y las demostraciones incluidas en la model card, se trata de un LoRA pensado para aplicarse sobre un modelo base de generación de vídeo (presumiblemente de la familia MiniMax, según el prefijo "minimax-h3"), cuyo objetivo es corregir artefactos de movimiento: tearing espacial, colapso de extremidades, pérdida de coherencia física en rotaciones y clipping de objetos en escenas de acción.
+`Zakyrie/minimax-h3-bunny-motion-repair` es un adaptador LoRA publicado en Hugging Face por el usuario Zakyrie, orientado a la reparación y estabilización de movimiento en generación de vídeo. Por el nombre y las demostraciones incluidas en la model card, se trata de un LoRA pensado para aplicarse sobre un modelo base de generación de vídeo (presumiblemente de la familia MiniMax, según el prefijo "minimax-h3"), cuyo objetivo es corregir artefactos de movimiento: tearing espacial, colapso de extremidades, pérdida de coherencia física en rotaciones y clipping de objetos en escenas de acción.
 
 El repositorio tiene un tamaño de 0,2 GB y no incluye información sobre el modelo base exacto, la arquitectura subyacente, el número de parámetros del LoRA ni los datos de entrenamiento utilizados. La model card se limita a presentar tres demostraciones en vídeo (combate mecha vs. inmortal, breakdance y combate de espadas wuxia) que ilustran la capacidad del adaptador para mantener coherencia espacial bajo movimientos de cámara agresivos, rotaciones acrobáticas y interacciones multi-personaje con armas.
 
@@ -75,7 +75,7 @@ No disponible. No se han identificado en la información proporcionada otros ada
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zakyrie/minimax-h3-bunny-motion-repair
+- Repositorio Hugging Face: https://huggingface.co/Zakyrie/minimax-h3-bunny-motion-repair
 - Demostración 1 (Mecha vs. Immortal Fight): https://huggingface.co/Zakyrie/minimax-h3-bunny-motion-repair/resolve/main/assets/Mecha%20vs%20Immortal%20Fight%20-%20Bunny%20Motion%20LoRA.mp4
 - Demostración 2 (Breakdance): https://huggingface.co/Zakyrie/minimax-h3-bunny-motion-repair/resolve/main/assets/Breakdance%20-%20Bunny%20Motion%20LoRA.mp4
 - Demostración 3 (Wuxia Sword Fight): https://huggingface.co/Zakyrie/minimax-h3-bunny-motion-repair/resolve/main/assets/Wuxia%20Sword%20Fight%20-%20Bunny%20Motion%20LoRA.mp4

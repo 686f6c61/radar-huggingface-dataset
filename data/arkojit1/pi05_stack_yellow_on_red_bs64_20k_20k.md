@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π₀.₅ fine-tuneado sobre el dataset `Ameyapores/haply_stack_yellow_red` es un checkpoint de política robótica publicado por el usuario arkojit1 en HuggingFace. Se trata de un ajuste fino del modelo base `lerobot/pi05_base` (revisión `a538eb27`) mediante la librería LeRobot 0.4.4, orientado a una única tarea de manipulación: apilar un bloque amarillo sobre uno rojo con un brazo Franka. El modelo resuelve el problema de convertir observaciones visuales y de estado del robot en acciones de efector final, y resulta relevante como ejemplo reproducible de fine-tuning de π₀.₅ sobre un dataset pequeño (64 episodios) con un único expert entrenable.
+π₀.₅ fine-tuneado sobre el dataset `Ameyapores/haply_stack_yellow_red` es un checkpoint de política robótica publicado por el usuario arkojit1 en Hugging Face. Se trata de un ajuste fino del modelo base `lerobot/pi05_base` (revisión `a538eb27`) mediante la librería LeRobot 0.4.4, orientado a una única tarea de manipulación: apilar un bloque amarillo sobre uno rojo con un brazo Franka. El modelo resuelve el problema de convertir observaciones visuales y de estado del robot en acciones de efector final, y resulta relevante como ejemplo reproducible de fine-tuning de π₀.₅ sobre un dataset pequeño (64 episodios) con un único expert entrenable.
 
 Arquitectónicamente hereda la estructura de π₀.₅: un modelo vision-lenguaje-acción que combina un codificador visual SigLIP y un backbone de lenguaje Gemma-2B (ambos congelados durante el ajuste) con un "action expert" entrenable que genera trayectorias de acción mediante flow matching. El checkpoint tiene 3.616.757.520 parámetros totales y un tamaño de repositorio de 7,5 GB en formato safetensors.
 
@@ -60,15 +60,15 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 - VRAM estimada para inferencia: no disponible de forma explícita; con 3.616.757.520 parámetros en bf16 el peso ronda los 7,2 GB, por lo que se necesita al menos esa cantidad más memoria para activaciones y buffers de las tres cámaras.
 - GPU recomendadas: el autor entrenó con 8 × AMD MI300X (8 por GPU, batch global 64); para inferencia se requiere una GPU con suficiente memoria para el modelo completo, típicamente A100, H100 o MI300X.
 - ¿Cabe en GPU de consumo? No confirmado; con ~7,2 GB en bf16 podría caber en GPUs de 16 GB o más si el runtime lo permite, pero no se documenta.
-- Opciones de despliegue: LeRobot 0.4.4 con el fork de `transformers` de HuggingFace para π₀ (rama `fix/lerobot_openpi`), cargando mediante `PI05Policy.from_pretrained`. No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
+- Opciones de despliegue: LeRobot 0.4.4 con el fork de `transformers` de Hugging Face para π₀ (rama `fix/lerobot_openpi`), cargando mediante `PI05Policy.from_pretrained`. No se documentan vLLM, llama.cpp, Ollama ni TGI para este modelo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| arkojit1/pi05_stack_yellow_on_red_bs64_20k_20k | 3,62 B | no disponible | Apilado de bloques (Franka) | no disponible | HuggingFace |
-| lerobot/pi05_base | no disponible | no disponible | Política VLA general (base) | no disponible | HuggingFace |
+| arkojit1/pi05_stack_yellow_on_red_bs64_20k_20k | 3,62 B | no disponible | Apilado de bloques (Franka) | no disponible | Hugging Face |
+| lerobot/pi05_base | no disponible | no disponible | Política VLA general (base) | no disponible | Hugging Face |
 | Otras políticas VLA (p. ej. OpenVLA, RT-2) | no disponible | no disponible | Manipulación general | no disponible | no disponible |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada; la comparación se limita a la relación de fine-tuning con `lerobot/pi05_base`.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_bs64_20k_20k
+- Modelo en Hugging Face: https://huggingface.co/arkojit1/pi05_stack_yellow_on_red_bs64_20k_20k
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset: https://huggingface.co/datasets/Ameyapores/haply_stack_yellow_red
 - Librería LeRobot: https://github.com/huggingface/lerobot

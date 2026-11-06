@@ -34,7 +34,7 @@ La model card menciona dos componentes adicionales empleados en algunos resultad
 - **Prompting negativo**: permite especificar que no contar mediante texto negativo y ejemplos visuales negativos, reduciendo confusiones entre clases visualmente similares.
 - **Ejemplos de imagenes externas**: los ejemplos visuales pueden provenir de una imagen distinta a la que se analiza.
 - **Deteccion con localizacion**: ademas del conteo, devuelve las cajas de las detecciones en formato normalizado (cx, cy, w, h).
-- **Zero-shot object detection**: clasificado en HuggingFace bajo el pipeline `zero-shot-object-detection`.
+- **Zero-shot object detection**: clasificado en Hugging Face bajo el pipeline `zero-shot-object-detection`.
 - **Ejecucion en CPU o GPU**: sin los kernels compilados de atencion deformable, funciona con una implementacion PyTorch pura en ambos dispositivos.
 
 ## Casos de uso
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - **VRAM estimada**: no disponible como cifra oficial. Con ~234 millones de parametros en fp32, los pesos ocupan alrededor de 0,9 GB; en la practica, una GPU con 8 GB de VRAM (por ejemplo, una RTX 3060 o superior) deberia ser suficiente para inferencia, aunque la model card no lo confirma.
 - **GPU recomendadas**: no disponible oficialmente; el modelo esta pensado para ejecutarse con `.to("cuda")` pero tambien funciona en CPU mediante la implementacion PyTorch pura de la atencion deformable.
 - **Consumer GPU**: la model card no impone requisitos de gama alta; dado el tamano del modelo, deberia funcionar en GPUs de consumo modernas, aunque sin datos oficiales esto es una estimacion.
-- **Despliegue**: el repositorio de HuggingFace incluye tanto pesos como codigo de inferencia (`countgdpp.CountGDPlusPlus` con `from_pretrained`), de modo que basta con `snapshot_download` y PyTorch. No hay soporte nativo documentado para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos de lenguaje; este es un modelo de vision).
+- **Despliegue**: el repositorio de Hugging Face incluye tanto pesos como codigo de inferencia (`countgdpp.CountGDPlusPlus` con `from_pretrained`), de modo que basta con `snapshot_download` y PyTorch. No hay soporte nativo documentado para vLLM, llama.cpp, Ollama o TGI (son herramientas orientadas a modelos de lenguaje; este es un modelo de vision).
 - **Dependencias**: requiere `transformers<4.50`, `timm` y otras librerias indicadas en la model card; el codificador de texto `bert-base-uncased` se descarga del Hub en la primera carga.
 - **Latencia y throughput**: no disponibles.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tarea | Prompting | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| CountGD++ (este modelo) | 233,9 M | Conteo open-vocabulary | Texto, ejemplos visuales, prompts negativos (texto y visual) | MIT | Pesos y codigo en HuggingFace |
+| CountGD++ (este modelo) | 233,9 M | Conteo open-vocabulary | Texto, ejemplos visuales, prompts negativos (texto y visual) | MIT | Pesos y codigo en Hugging Face |
 | CountGD (predecesor) | no disponible | Conteo open-vocabulary | Texto y ejemplos visuales | no disponible | Repositorio de los mismos autores |
-| Grounding DINO | no disponible | Deteccion open-vocabulary | Solo texto | no disponible (pesos abiertos) | HuggingFace, integrado en transformers |
+| Grounding DINO | no disponible | Deteccion open-vocabulary | Solo texto | no disponible (pesos abiertos) | Hugging Face, integrado en transformers |
 
 CountGD++ se distingue de su predecesor CountGD y de detectores como Grounding DINO por añadir el prompting negativo (texto y ejemplos visuales) y por permitir ejemplos visuales provenientes de imagenes externas. Para alternativas de conteo con otros enfoques (por ejemplo, metodos especializados en conteo por clase), no hay datos comparativos suficientes en la informacion disponible.
 
@@ -83,6 +83,6 @@ CountGD++ se distingue de su predecesor CountGD y de detectores como Grounding D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nikigoli/CountGDPlusPlus
+- Modelo en Hugging Face: https://huggingface.co/nikigoli/CountGDPlusPlus
 - Paper (arXiv): https://arxiv.org/abs/2512.23351
 - Codigo (GitHub): https://github.com/niki-amini-naieni/CountGDPlusPlus

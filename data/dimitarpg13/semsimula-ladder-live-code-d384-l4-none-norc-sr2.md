@@ -80,8 +80,8 @@ El modelo va por detrás en warmup (pasos 500 y 1.000, +6 %), lidera desde el pa
 
 | Modelo | Parámetros | Contexto | Perplejidad (CodeParrot val) | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| L4-CODE (este modelo) | 76,6 M | no disponible (bloques de 512) | 5,48 | CC-BY-4.0 | HuggingFace |
-| SO-CODE | 76,6 M | no disponible | 6,00 | CC-BY-4.0 (según serie) | HuggingFace |
+| L4-CODE (este modelo) | 76,6 M | no disponible (bloques de 512) | 5,48 | CC-BY-4.0 | Hugging Face |
+| SO-CODE | 76,6 M | no disponible | 6,00 | CC-BY-4.0 (según serie) | Hugging Face |
 | FOCK-CODE | no disponible | no disponible | 5,66 | no disponible | No en el Hub |
 | GPT-2 emparejado (8 capas, d=384) | no disponible | no disponible | 4,96 | no disponible | No en el Hub |
 
@@ -101,7 +101,7 @@ La comparativa se limita a la propia serie SemSimula y al GPT-2 emparejado del e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2
+- Modelo en Hugging Face: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l4-none-norc-sr2
 - Modelo base SO-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2
 - Variante FO-b-CODE: https://huggingface.co/dimitarpg13/semsimula-ladder-live-code-d384-l2-none-norc-sr2-fob
 - Colección de profundidad sobre código: https://huggingface.co/collections/dimitarpg13/semantic-simulation-gen-3-depth-on-code-6ae76925374cab20b1cb7d5e

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ngenratore7788 es un adaptador LoRA de texto a imagen publicado por el usuario Iwont7 en HuggingFace, entrenado sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT. Su función es inyectar un estilo visual concreto —activado mediante el token `moss_xvstyle`— orientado a fotografía realista de desnudos y contenido explícito para adultos, según los ejemplos que el propio autor incluye en la model card. No se trata de un modelo autónomo: requiere cargar el checkpoint base y aplicar el adaptador encima, lo que condiciona tanto el despliegue como los requisitos de hardware.
+Ngenratore7788 es un adaptador LoRA de texto a imagen publicado por el usuario Iwont7 en Hugging Face, entrenado sobre el modelo base OpenMOSS-Team/MOSS-Image-SFT. Su función es inyectar un estilo visual concreto —activado mediante el token `moss_xvstyle`— orientado a fotografía realista de desnudos y contenido explícito para adultos, según los ejemplos que el propio autor incluye en la model card. No se trata de un modelo autónomo: requiere cargar el checkpoint base y aplicar el adaptador encima, lo que condiciona tanto el despliegue como los requisitos de hardware.
 
 El modelo se publica con licencia apache-2.0 y formato safetensors, empaquetado para la librería diffusers bajo la etiqueta `template:sd-lora`. El repositorio ocupa 27,6 GB, un tamaño que apunta a la presencia de múltiples checkpoints o versiones intermedias del adaptador más allá de un único archivo de pesos. En el momento de la consulta registra 0 descargas y 0 likes, con fecha de creación y actualización del 28 de octubre de 2026, por lo que no existe evidencia de adopción comunitaria ni de validación externa.
 
@@ -93,6 +93,6 @@ La comparación cuantitativa no es posible: no existen métricas publicadas de e
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Iwont7/Ngenratore7788
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Iwont7/Ngenratore7788
 - Modelo base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-SFT
 - Paper, blog, repositorio de código o demo: no disponibles en la información proporcionada.

@@ -90,5 +90,5 @@ No se dispone de informacion de modelos comparables en la documentacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tennyyyin/dino-fsq-sweep
+- Modelo en Hugging Face: https://huggingface.co/tennyyyin/dino-fsq-sweep
 - Repositorio `ar_wam_rl`: https://github.com/hengkaipan/ar_wam_rl

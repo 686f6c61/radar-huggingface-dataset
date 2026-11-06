@@ -136,10 +136,10 @@ Observaciones a partir de los datos proporcionados: el YOLOv10m, de menor tamano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/uavdt-yolov10l
-- Dataset UAVDT en HuggingFace: https://huggingface.co/datasets/dronefreak/UAVDT
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/uavdt-yolov10l
+- Dataset UAVDT en Hugging Face: https://huggingface.co/datasets/dronefreak/UAVDT
 - Repositorio DetectionBench: https://github.com/dronefreak/DetectionBench
 - Paper del dataset UAVDT (referencia arxiv:1804.00518): https://arxiv.org/abs/1804.00518
 - Paper de YOLOv10 (referencia arxiv:2405.14458): https://arxiv.org/abs/2405.14458
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo ni sobre DetectionBench; los enlaces anteriores proceden de la model card y de las etiquetas del repositorio de HuggingFace. No se dispone de demo publicada, informe tecnico propio ni publicacion adicional del autor.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo ni sobre DetectionBench; los enlaces anteriores proceden de la model card y de las etiquetas del repositorio de Hugging Face. No se dispone de demo publicada, informe tecnico propio ni publicacion adicional del autor.

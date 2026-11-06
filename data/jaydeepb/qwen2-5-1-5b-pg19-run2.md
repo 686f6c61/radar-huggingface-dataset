@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jaydeepb/qwen2.5-1.5b-pg19-run2` | 1,54 B | No especificado en la model card (base: 32.768) | Artefacto de investigación sobre memorización | Apache 2.0 | HuggingFace, safetensors |
-| `Qwen/Qwen2.5-1.5B` (modelo base) | 1,54 B | 32.768 tokens | Modelo de lenguaje base para continuación de texto | Apache 2.0 | HuggingFace, safetensors |
-| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 B | 32.768 tokens | Asistente alineado con instrucciones, uso conversacional | Apache 2.0 | HuggingFace, safetensors y múltiples cuantizaciones de la comunidad |
+| `jaydeepb/qwen2.5-1.5b-pg19-run2` | 1,54 B | No especificado en la model card (base: 32.768) | Artefacto de investigación sobre memorización | Apache 2.0 | Hugging Face, safetensors |
+| `Qwen/Qwen2.5-1.5B` (modelo base) | 1,54 B | 32.768 tokens | Modelo de lenguaje base para continuación de texto | Apache 2.0 | Hugging Face, safetensors |
+| `Qwen/Qwen2.5-1.5B-Instruct` | 1,54 B | 32.768 tokens | Asistente alineado con instrucciones, uso conversacional | Apache 2.0 | Hugging Face, safetensors y múltiples cuantizaciones de la comunidad |
 
 Frente al modelo base, este artefacto intercambia capacidades generales por un sesgo fuerte hacia el dominio literario de PG-19 y por la propiedad de memorización buscada; frente a la variante Instruct, carece de alineamiento y no debe emplearse como asistente. No se dispone de datos de rendimiento comparativo entre las tres variantes en la información proporcionada.
 
@@ -84,7 +84,7 @@ Frente al modelo base, este artefacto intercambia capacidades generales por un s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaydeepb/qwen2.5-1.5b-pg19-run2
+- Modelo en Hugging Face: https://huggingface.co/jaydeepb/qwen2.5-1.5b-pg19-run2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Paper de referencia: *Predicting Memorization Before Fine-Tuning Language Models* (título citado en la model card; no se ha encontrado el enlace en la información disponible)
 - Corpus PG-19: no se ha encontrado enlace en la información disponible

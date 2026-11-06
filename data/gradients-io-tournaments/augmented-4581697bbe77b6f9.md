@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`gradients-io-tournaments/augmented-4581697bbe77b6f9` es un checkpoint de generación de texto publicado en HuggingFace por la organización `gradients-io-tournaments`, cuyo nombre sugiere un artefacto generado de forma automática dentro de un torneo o pipeline de experimentación (nombre con hash hexadecimal y publicación seguida de una actualización 20 segundos después de la creación). El modelo declara la arquitectura `qwen2` y pesa 463.987.712 parámetros, es decir, unos 464 millones, lo que lo sitúa en la clase de los modelos pequeños (~0,5B) aptos para inferencia en hardware de consumo.
+`gradients-io-tournaments/augmented-4581697bbe77b6f9` es un checkpoint de generación de texto publicado en Hugging Face por la organización `gradients-io-tournaments`, cuyo nombre sugiere un artefacto generado de forma automática dentro de un torneo o pipeline de experimentación (nombre con hash hexadecimal y publicación seguida de una actualización 20 segundos después de la creación). El modelo declara la arquitectura `qwen2` y pesa 463.987.712 parámetros, es decir, unos 464 millones, lo que lo sitúa en la clase de los modelos pequeños (~0,5B) aptos para inferencia en hardware de consumo.
 
-El repositorio contiene pesos en formato `safetensors` para la librería `transformers` (0,9 GB), con los tags `text-generation`, `conversational`, `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y consumirse mediante una API compatible con los endpoints de HuggingFace. No hay información sobre el autor real, el dataset de entrenamiento, el procedimiento de ajuste ni la licencia.
+El repositorio contiene pesos en formato `safetensors` para la librería `transformers` (0,9 GB), con los tags `text-generation`, `conversational`, `text-generation-inference` y `endpoints_compatible`, lo que indica que puede servirse con TGI y consumirse mediante una API compatible con los endpoints de Hugging Face. No hay información sobre el autor real, el dataset de entrenamiento, el procedimiento de ajuste ni la licencia.
 
-La relevancia de esta ficha es limitada y debe interpretarse como tal: la model card es la plantilla automática de HuggingFace sin ningún campo rellenado (todos los apartados dicen "More Information Needed"), el modelo acumula 0 descargas y 0 likes, y no se ha publicado ningún resultado de evaluación. Cualquier decisión de uso en producción debería partir de una evaluación propia del checkpoint.
+La relevancia de esta ficha es limitada y debe interpretarse como tal: la model card es la plantilla automática de Hugging Face sin ningún campo rellenado (todos los apartados dicen "More Information Needed"), el modelo acumula 0 descargas y 0 likes, y no se ha publicado ningún resultado de evaluación. Cualquier decisión de uso en producción debería partir de una evaluación propia del checkpoint.
 
 ## Especificaciones técnicas
 
@@ -28,7 +28,7 @@ La relevancia de esta ficha es limitada y debe interpretarse como tal: la model 
 
 El único dato arquitectónico fiable es el tag `qwen2`, que sitúa al modelo en la familia Qwen2 de Alibaba: un transformer decoder-only con normalización RMSNorm, atención con RoPE y sesgo de atención en las consultas y claves (`QKV bias`), típico de esa familia. El recuento de 463.987.712 parámetros es coherente con la clase de 0,5B de dicha familia. No se dispone de la configuración exacta (`config.json` no se ha incluido en la información proporcionada), del número de capas ni de la ventana de contexto nativa.
 
-Respecto al entrenamiento, la model card no aporta absolutamente nada: se desconoce el número de tokens, la composición del dataset, si hubo fases de SFT, RLHF o DPO, y si el checkpoint es un ajuste fino de un modelo base Qwen2 o un entrenamiento desde cero. El identificador `augmented-` junto con un hash sugiere un proceso de ajuste automatizado o una variante "aumentada" producida por un pipeline de torneo, pero se trata de una inferencia a partir del nombre y no de un dato documentado. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto de carbono que aparece de forma literal en la plantilla de model card de HuggingFace.
+Respecto al entrenamiento, la model card no aporta absolutamente nada: se desconoce el número de tokens, la composición del dataset, si hubo fases de SFT, RLHF o DPO, y si el checkpoint es un ajuste fino de un modelo base Qwen2 o un entrenamiento desde cero. El identificador `augmented-` junto con un hash sugiere un proceso de ajuste automatizado o una variante "aumentada" producida por un pipeline de torneo, pero se trata de una inferencia a partir del nombre y no de un dato documentado. El tag `arxiv:1910.09700` no corresponde a un paper del modelo: es la referencia a Lacoste et al. (2019) sobre el calculador de impacto de carbono que aparece de forma literal en la plantilla de model card de Hugging Face.
 
 ## Capacidades
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la información disponible.
   - int4 (si se convierte a GGUF Q4_K_M): ~0,25-0,3 GB de pesos; ~0,6-0,8 GB en total.
 - GPU recomendadas: cualquier GPU con 4 GB o más es suficiente (GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090). En servidor, una NVIDIA T4, L4, A10, A100 o H100 permite lotes concurrentes muy grandes; el modelo no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: sí, en prácticamente todas las tarjetas dedicadas de los últimos ocho años, y también en CPU con llama.cpp si se convierte a GGUF.
-- Opciones de despliegue: `transformers` (formato nativo), Text Generation Inference (tag `text-generation-inference`), vLLM, HuggingFace Inference Endpoints (tag `endpoints_compatible`), llama.cpp/Ollama y ONNX Runtime previa conversión (no hay conversiones publicadas).
+- Opciones de despliegue: `transformers` (formato nativo), Text Generation Inference (tag `text-generation-inference`), vLLM, Hugging Face Inference Endpoints (tag `endpoints_compatible`), llama.cpp/Ollama y ONNX Runtime previa conversión (no hay conversiones publicadas).
 - Latencia y throughput: no disponible; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -76,10 +76,10 @@ Los datos de los modelos alternativos son valores de referencia publicados por s
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| `gradients-io-tournaments/augmented-4581697bbe77b6f9` | 463.987.712 | no disponible | no disponible | no disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen2-0.5B (referencia) | ~494 M | 32.768 tokens (versión base, según su autora) | Apache-2.0 (según su autora) | publicado por la autora | HuggingFace, ampliamente utilizado |
-| Qwen2.5-0.5B (referencia) | ~494 M | 32.768 tokens (según su autora) | Apache-2.0 (según su autora) | publicado por la autora | HuggingFace, ampliamente utilizado |
-| TinyLlama-1.1B-Chat (referencia) | ~1,1 B | 2.048 tokens (según su autora) | Apache-2.0 (según su autora) | publicado por la autora | HuggingFace, ampliamente utilizado |
+| `gradients-io-tournaments/augmented-4581697bbe77b6f9` | 463.987.712 | no disponible | no disponible | no disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen2-0.5B (referencia) | ~494 M | 32.768 tokens (versión base, según su autora) | Apache-2.0 (según su autora) | publicado por la autora | Hugging Face, ampliamente utilizado |
+| Qwen2.5-0.5B (referencia) | ~494 M | 32.768 tokens (según su autora) | Apache-2.0 (según su autora) | publicado por la autora | Hugging Face, ampliamente utilizado |
+| TinyLlama-1.1B-Chat (referencia) | ~1,1 B | 2.048 tokens (según su autora) | Apache-2.0 (según su autora) | publicado por la autora | Hugging Face, ampliamente utilizado |
 
 La comparación directa de calidad no es posible: no existe ningún benchmark publicado para el modelo analizado.
 
@@ -97,7 +97,7 @@ La comparación directa de calidad no es posible: no existe ningún benchmark pu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/augmented-4581697bbe77b6f9
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/augmented-4581697bbe77b6f9
 - Referencia arXiv presente en la plantilla de la model card (Lacoste et al., 2019, sobre estimación de emisiones de carbono en aprendizaje automático; no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de carbono citado en la plantilla: https://mlco2.github.io/impact#compute
 - Repositorio de código del modelo: no disponible

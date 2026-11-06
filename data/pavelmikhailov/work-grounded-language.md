@@ -68,5 +68,5 @@ No disponible. No existe un modelo comparable en el sentido de un sistema de len
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/pavelmikhailov/work-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/pavelmikhailov/work-grounded-language
 - No se han encontrado enlaces adicionales relevantes en la busqueda web (los resultados obtenidos son paginas generales de ACL, DeepMind, Wikipedia y listas de agentes, sin relacion directa con este repositorio).

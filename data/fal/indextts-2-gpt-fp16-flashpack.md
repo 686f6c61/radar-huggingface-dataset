@@ -76,8 +76,8 @@ IndexTTS2 se diferencia de XTTSv2 y Fish Speech principalmente por el control ex
 
 ## Enlaces
 
-- HuggingFace (variante fal FlashPack): https://huggingface.co/fal/IndexTTS-2-GPT-fp16-FlashPack
-- HuggingFace (modelo original IndexTeam): https://huggingface.co/IndexTeam/IndexTTS-2
+- Hugging Face (variante fal FlashPack): https://huggingface.co/fal/IndexTTS-2-GPT-fp16-FlashPack
+- Hugging Face (modelo original IndexTeam): https://huggingface.co/IndexTeam/IndexTTS-2
 - Paper IndexTTS2 (arXiv 2506.21619): https://arxiv.org/abs/2506.21619
 - Paper IndexTTS (arXiv 2502.05512): https://arxiv.org/abs/2502.05512
 - Codigo (GitHub): https://github.com/index-tts/index-tts

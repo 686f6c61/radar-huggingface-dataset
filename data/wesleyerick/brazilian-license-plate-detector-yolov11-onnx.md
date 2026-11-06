@@ -93,6 +93,6 @@ La comparación relevante es con el modelo base: misma arquitectura y mismos pes
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wesleyerick/brazilian-license-plate-detector-yolov11-onnx
+- Repositorio Hugging Face: https://huggingface.co/wesleyerick/brazilian-license-plate-detector-yolov11-onnx
 - Modelo base (PyTorch): https://huggingface.co/felipedutrain/placa-br-yolov11
 - Paper, blog o demo: no disponible en la información proporcionada.

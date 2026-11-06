@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/omegazurich/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
+- Repositorio Hugging Face: https://huggingface.co/omegazurich/LFM2.5-8B-A1B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
 - Version densa 2.6B con Turbo Brilliance: https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF
 - Version 27B con Turbo Brilliance: https://huggingface.co/DavidAU/Qwen3.8-27B-Turbo-Brilliance-50X-Reasoning-Instruct-NEO-MAX-MTP-GGUF

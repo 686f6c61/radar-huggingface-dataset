@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`SergeyKurchev/cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best` es un artefacto de pesos publicado en HuggingFace por el usuario SergeyKurchev. No se trata de un modelo completo ni autonomo: la model card lo describe explicitamente como el mejor artefacto de una ablation de DPO contrastivo puro, correspondiente a la ronda 4 y a la iteracion `iter_000000075`. El repositorio contiene cinco tensores entrenados de proyeccion de accion (`action2llm`, `llm2action` y `action_modality_embed`) y un manifiesto JSON con las formas de los tensores, las metricas, la iteracion de origen, el checkpoint base y el SHA-256.
+`SergeyKurchev/cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best` es un artefacto de pesos publicado en Hugging Face por el usuario SergeyKurchev. No se trata de un modelo completo ni autonomo: la model card lo describe explicitamente como el mejor artefacto de una ablation de DPO contrastivo puro, correspondiente a la ronda 4 y a la iteracion `iter_000000075`. El repositorio contiene cinco tensores entrenados de proyeccion de accion (`action2llm`, `llm2action` y `action_modality_embed`) y un manifiesto JSON con las formas de los tensores, las metricas, la iteracion de origen, el checkpoint base y el SHA-256.
 
 El problema que resuelve es acotado: permite reproducir y evaluar una variante concreta de un entrenamiento con preferencias (DPO) sobre un modelo base de la familia Cosmos3 orientado a acciones. Los dos unicos numeros publicados son DTW/path = 25,517 mm y RMSE de posicion absoluta = 29,223 mm, ambos en milimetros, lo que situa la evaluacion en el dominio de trayectorias o posiciones fisicas. No se declaran parametros, contexto, idiomas ni arquitectura del modelo subyacente.
 
-Su relevancia es metodologica mas que de producto: sirve como evidencia reproducible de una ablation concreta y como punto de partida para quien quiera aplicar estas cabezas de accion sobre el checkpoint base. El repositorio tiene 0 descargas y 0 likes, y fue creado el 2026-09-21 segun los metadatos de HuggingFace, por lo que no cuenta con validacion de la comunidad. La licencia declarada es `other`, sin terminos detallados en la informacion disponible.
+Su relevancia es metodologica mas que de producto: sirve como evidencia reproducible de una ablation concreta y como punto de partida para quien quiera aplicar estas cabezas de accion sobre el checkpoint base. El repositorio tiene 0 descargas y 0 likes, y fue creado el 2026-09-21 segun los metadatos de Hugging Face, por lo que no cuenta con validacion de la comunidad. La licencia declarada es `other`, sin terminos detallados en la informacion disponible.
 
 ## Especificaciones técnicas
 
@@ -21,7 +21,7 @@ Su relevancia es metodologica mas que de producto: sirve como evidencia reproduc
 | Licencia | other |
 | Formato de pesos | tensores PyTorch (`pytorch` como `library_name`); el flag de carga es `--action-heads-pt`; safetensors no confirmado |
 | Contenido del repositorio | cinco tensores de proyeccion de accion (`action2llm`, `llm2action`, `action_modality_embed`) mas un manifiesto JSON |
-| Tamano del repositorio | 0,0 GB segun HuggingFace |
+| Tamano del repositorio | 0,0 GB segun Hugging Face |
 | Checkpoint base requerido | `/data/checkpoints/domain27_base_for_dpo` (base pre-DPO derivado de domain30) |
 | Iteracion de origen | ronda 4, `iter_000000075` |
 | Descargas / likes | 0 / 0 |
@@ -80,7 +80,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - No es un modelo autonomo: sin `/data/checkpoints/domain27_base_for_dpo` los tensores no producen ninguna capacidad util.
 - La ruta del checkpoint base es absoluta y especifica del entorno del autor, lo que complica la reproducion fuera de ese entorno.
 - Licencia `other` sin texto de terminos en la informacion disponible: el uso comercial queda en una situacion juridica indeterminada y requiere consultar al autor.
-- Ausencia total de validacion externa: 0 descargas y 0 likes en HuggingFace implican que no hay verificacion independiente de los resultados declarados.
+- Ausencia total de validacion externa: 0 descargas y 0 likes en Hugging Face implican que no hay verificacion independiente de los resultados declarados.
 - Las dos metricas publicadas (DTW/path y RMSE absoluto) no vienen acompanadas del conjunto de evaluacion ni de su tamano, por lo que podrian no ser representativas.
 - La fecha de creacion registrada (2026-09-21) resulta anomala y conviene verificarla antes de citar el artefacto.
 - No se declaran idiomas soportados, sesgos, comportamiento ante entradas fuera de distribucion ni riesgos de alucinacion; en un modelo orientado a acciones, el fallo se manifestaria como trayectorias fisicamente invalidas o inseguras.
@@ -89,6 +89,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SergeyKurchev/cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best
+- Hugging Face: https://huggingface.co/SergeyKurchev/cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web: la busqueda realizada no devolvio ningun enlace relevante sobre este modelo ni sobre Cosmos3; los resultados obtenidos correspondian a paginas sin relacion con el tema (portales de ALDI SUD), por lo que se omiten.

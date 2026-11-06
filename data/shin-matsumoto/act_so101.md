@@ -4,7 +4,7 @@
 
 `Shin-Matsumoto/act_so101` es una política de imitación entrenada con el método ACT (Action Chunking with Transformers) sobre un robot SO-101 (variante `so_follower`) con una única cámara frontal. No es un modelo de lenguaje: es un controlador visuomotor que, a partir de una imagen RGB de 480×640 y del estado de las articulaciones (vector de 6 dimensiones), produce directamente un vector de acción de 6 dimensiones. Predice trozos de acciones (*action chunks*) en lugar de pasos individuales, lo que reduce el error acumulado típico de las políticas paso a paso.
 
-El modelo lo publica el usuario Shin-Matsumoto en el Hub de HuggingFace con la librería LeRobot y un total de 51.668.614 parámetros en safetensors (0,2 GB de repositorio). Se ha entrenado exclusivamente con el dataset `Shin-Matsumoto/so101_test_20261025_155816`, compuesto por 10 episodios y 8.737 fotogramas a 30 FPS para una sola tarea: "Grasp the blue plush toy and put it in the black box". Es, por tanto, una política de un solo cometido y de alcance muy acotado.
+El modelo lo publica el usuario Shin-Matsumoto en el Hub de Hugging Face con la librería LeRobot y un total de 51.668.614 parámetros en safetensors (0,2 GB de repositorio). Se ha entrenado exclusivamente con el dataset `Shin-Matsumoto/so101_test_20261025_155816`, compuesto por 10 episodios y 8.737 fotogramas a 30 FPS para una sola tarea: "Grasp the blue plush toy and put it in the black box". Es, por tanto, una política de un solo cometido y de alcance muy acotado.
 
 Su relevancia es práctica más que de investigación: sirve como ejemplo reproducible de extremo a extremo del flujo de imitación de LeRobot (grabación de datos, entrenamiento con `lerobot-train` y despliegue con `lerobot-rollout`) sobre hardware de bajo coste. No hay resultados de evaluación publicados ni licencia declarada, así que debe tratarse como un artefacto de experimentación, no como un componente listo para producción.
 
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento de este modelo ni de alternativas comparab
 
 | Modelo | Tipo de política | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Shin-Matsumoto/act_so101` | ACT sobre SO-101, una tarea | 51.668.614 | No aplica | No disponible | Hub de HuggingFace, safetensors |
-| Otras políticas ACT de LeRobot | ACT, según dataset y robot | No disponible | No aplica | No disponible | Hub de HuggingFace y guía ACT de LeRobot |
+| `Shin-Matsumoto/act_so101` | ACT sobre SO-101, una tarea | 51.668.614 | No aplica | No disponible | Hub de Hugging Face, safetensors |
+| Otras políticas ACT de LeRobot | ACT, según dataset y robot | No disponible | No aplica | No disponible | Hub de Hugging Face y guía ACT de LeRobot |
 | Diffusion Policy (LeRobot) | Política de imitación basada en difusión | No disponible | No aplica | No disponible | Implementada en LeRobot |
 | SmolVLA (LeRobot) | Política visión-lenguaje-acción | No disponible | No disponible | No disponible | Implementada en LeRobot |
 
@@ -95,7 +95,7 @@ No se han encontrado en la búsqueda web resultados utilizables sobre estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Shin-Matsumoto/act_so101
+- Modelo en Hugging Face: https://huggingface.co/Shin-Matsumoto/act_so101
 - Dataset de entrenamiento: https://huggingface.co/datasets/Shin-Matsumoto/so101_test_20261025_155816
 - Paper de ACT (arXiv:2304.13705): https://huggingface.co/papers/2304.13705
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

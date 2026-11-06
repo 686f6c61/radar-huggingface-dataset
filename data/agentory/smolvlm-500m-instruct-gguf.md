@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo (benchmarks) en la informació
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta versión: https://huggingface.co/agentory/SmolVLM-500M-Instruct-GGUF
+- Repositorio Hugging Face de esta versión: https://huggingface.co/agentory/SmolVLM-500M-Instruct-GGUF
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolVLM-500M-Instruct
 - Cuantizaciones imatrix del mismo modelo: https://huggingface.co/mradermacher/SmolVLM-500M-Instruct-i1-GGUF
 - Pagina de descargas de mradermacher: https://hf.tst.eu/model#SmolVLM-500M-Instruct-GGUF

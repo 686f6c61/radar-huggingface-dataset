@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del checkpoint monolingüe `goldfish-models/dan_latn_10mb`, orientado a la generación de texto en danés. Lo publica el usuario de HuggingFace `francesca9805`, aparentemente en el contexto de una línea de experimentación sobre tokenizadores y preentrenamiento (el proyecto de Weights & Biases asociado se llama `new-tokenizers`). Se trata de un modelo pequeño: 39.087.104 parámetros reales según los pesos en safetensors, con un repositorio de apenas 0,1 GB.
+El modelo `francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455` es un ajuste fino (fine-tune) del checkpoint monolingüe `goldfish-models/dan_latn_10mb`, orientado a la generación de texto en danés. Lo publica el usuario de Hugging Face `francesca9805`, aparentemente en el contexto de una línea de experimentación sobre tokenizadores y preentrenamiento (el proyecto de Weights & Biases asociado se llama `new-tokenizers`). Se trata de un modelo pequeño: 39.087.104 parámetros reales según los pesos en safetensors, con un repositorio de apenas 0,1 GB.
 
 Técnicamente es un transformer de tipo GPT-2 (según las etiquetas del repositorio), entrenado mediante SFT con la librería TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.5.1. No se documenta ni la longitud de contexto, ni la composición del dataset, ni el número de tokens de entrenamiento, ni si hubo una fase de alineación adicional más allá del SFT. El nombre del checkpoint sugiere una rejilla de experimentos con semilla fija (`seed455`) y algún tipo de empaquetado de datos (`packed`).
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39.087.104 | No disponible | No disponible | HuggingFace, 0 descargas | Fine-tune SFT del checkpoint Goldfish danés |
-| goldfish-models/dan_latn_10mb | No disponible en la información proporcionada | No disponible | No disponible | HuggingFace (modelo base) | Checkpoint original sin ajuste supervisado |
-| goldfish-models/dan_latn_100mb | No disponible en la información proporcionada | No disponible | No disponible | HuggingFace (misma familia) | Variante de la familia con presumiblemente más datos de preentrenamiento; no verificado en esta consulta |
+| francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455 | 39.087.104 | No disponible | No disponible | Hugging Face, 0 descargas | Fine-tune SFT del checkpoint Goldfish danés |
+| goldfish-models/dan_latn_10mb | No disponible en la información proporcionada | No disponible | No disponible | Hugging Face (modelo base) | Checkpoint original sin ajuste supervisado |
+| goldfish-models/dan_latn_100mb | No disponible en la información proporcionada | No disponible | No disponible | Hugging Face (misma familia) | Variante de la familia con presumiblemente más datos de preentrenamiento; no verificado en esta consulta |
 | GPT-2 small (referencia externa) | 124 millones | 1024 tokens | MIT | Ampliamente disponible | Modelo multilingüe de referencia para comparar órdenes de magnitud, no específico de danés |
 
 No se dispone de resultados de benchmarks que permitan comparar el rendimiento real de estas alternativas frente al modelo analizado.
@@ -91,7 +91,7 @@ No se dispone de resultados de benchmarks que permitan comparar el rendimiento r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/dan-latn-10mb-ppt-Dp-10mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/dan_latn_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/c8clppmf

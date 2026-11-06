@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| AuditBox H3C Risk 0.8B (este) | 752 M | 262.144 declarados (2.048 en ejemplo) | GPL-3.0-only | Riesgo de comandos H3C Comware, GGUF Q8_0 | HuggingFace, llama.cpp |
-| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible en esta ficha | Apache 2.0 | Modelo generalista multilingüe | HuggingFace |
+| AuditBox H3C Risk 0.8B (este) | 752 M | 262.144 declarados (2.048 en ejemplo) | GPL-3.0-only | Riesgo de comandos H3C Comware, GGUF Q8_0 | Hugging Face, llama.cpp |
+| Qwen/Qwen3.5-0.8B (base) | ~0,8 B | no disponible en esta ficha | Apache 2.0 | Modelo generalista multilingüe | Hugging Face |
 | Modelos de análisis de riesgo de red de propósito general | no disponible | no disponible | variable | Revisión de configuración multi-vendor | no disponible |
 
 No se dispone de información sobre alternativas especializadas comparables en análisis de riesgo de comandos de red con este tamaño y formato; la comparación cuantitativa de rendimiento no es posible sin benchmarks publicados.
@@ -90,7 +90,7 @@ No se dispone de información sobre alternativas especializadas comparables en a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Motanni/auditbox-h3c-risk-0.8b-gguf
+- Modelo en Hugging Face: https://huggingface.co/Motanni/auditbox-h3c-risk-0.8b-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Checksums del artefacto: https://huggingface.co/Motanni/auditbox-h3c-risk-0.8b-gguf/blob/main/SHA256SUMS
 - Licencia GPL-3.0-only: https://huggingface.co/Motanni/auditbox-h3c-risk-0.8b-gguf/blob/main/LICENSE

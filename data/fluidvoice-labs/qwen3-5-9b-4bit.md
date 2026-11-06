@@ -77,10 +77,10 @@ Como referencia del modelo base, un análisis de terceros (benchable.ai) atribuy
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| FluidVoice-Labs/Qwen3.5-9B-4bit | 11.042.625.536 (4 bits) | 262K (1M con YaRN, según base) | Texto (multimodal según base) | Apache 2.0 | safetensors 4 bits | HuggingFace, 6 descargas |
-| Qwen/Qwen3.5-9B | 9B nominales (no confirmado en safetensors) | 262K (1M con YaRN) | Visión-lenguaje | Apache 2.0 | safetensors | HuggingFace, modelo oficial |
+| FluidVoice-Labs/Qwen3.5-9B-4bit | 11.042.625.536 (4 bits) | 262K (1M con YaRN, según base) | Texto (multimodal según base) | Apache 2.0 | safetensors 4 bits | Hugging Face, 6 descargas |
+| Qwen/Qwen3.5-9B | 9B nominales (no confirmado en safetensors) | 262K (1M con YaRN) | Visión-lenguaje | Apache 2.0 | safetensors | Hugging Face, modelo oficial |
 | Microsoft-Decision-1 | Basado en Qwen3.5-9B | No disponible | Texto, scoring de decisiones | No disponible | No disponible | No disponible |
-| z-lab/Qwen3.5-9B-DFlash | Drafter auxiliar | No disponible | Texto | Apache 2.0 (según el publicador) | No disponible | HuggingFace |
+| z-lab/Qwen3.5-9B-DFlash | Drafter auxiliar | No disponible | Texto | Apache 2.0 (según el publicador) | No disponible | Hugging Face |
 
 La comparación significativa es contra el modelo base en precisión completa: esta build reduce el espacio de pesos a aproximadamente 6 GB a cambio de una pérdida de calidad no cuantificada públicamente y de una compatibilidad de runtime restringida. Microsoft-Decision-1 demuestra que existen derivados especializados de Qwen3.5-9B orientados a tareas concretas (scoring de decisiones con probabilidades calibradas, 85 ms de latencia p50), pero no es un sustituto funcional de un modelo de propósito general.
 
@@ -99,7 +99,7 @@ La comparación significativa es contra el modelo base en precisión completa: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidVoice-Labs/Qwen3.5-9B-4bit
+- Modelo en Hugging Face: https://huggingface.co/FluidVoice-Labs/Qwen3.5-9B-4bit
 - Modelo base Qwen/Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Drafter z-lab/Qwen3.5-9B-DFlash: https://huggingface.co/z-lab/Qwen3.5-9B-DFlash
 - Ficha del modelo base en Modal: https://modal.com/library/qwen/qwen3-5-9b

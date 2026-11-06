@@ -90,7 +90,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oliviawright/perceiver-experiment73-2024
+- Modelo en Hugging Face: https://huggingface.co/oliviawright/perceiver-experiment73-2024
 - Documentación de Perceiver en la librería `transformers`: https://huggingface.co/docs/transformers/model_doc/perceiver
 - Paper original del Perceiver (referencia externa, no recogida en los resultados de búsqueda): https://arxiv.org/abs/2103.03206
 - Rastreador de lanzamientos de modelos de IA (Evertune): https://models.evertune.ai/

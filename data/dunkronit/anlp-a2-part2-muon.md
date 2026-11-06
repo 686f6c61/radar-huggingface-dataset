@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada en inferencia (calculada a partir de 17.011.584 parametros): aproximadamente 68 MB en fp32, 34 MB en bf16/fp16, 17 MB en int8 y 8,5 MB en int4, mas el coste de activaciones y cache de claves/valores, que depende del contexto (no documentado).
 - GPU: cabe con holgura en cualquier GPU NVIDIA con 4 GB o mas de VRAM, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4090, A100 y H100. No se requiere hardware de datacenter.
 - Consumer GPU: si, en practicamente cualquier GPU dedicada e integrada moderna. Tambien es viable en CPU: el modelo completo ocupa decenas de megabytes y puede ejecutarse en un portatil.
-- Opciones de despliegue: la model card solo documenta la carga mediante `src.part2.model.Transformer.from_pretrained` del repositorio de la asignatura, es decir, con codigo propio. No se publican pesos en formato HuggingFace `transformers`, ni GGUF para llama.cpp/Ollama, ni soporte declarado para vLLM, TGI o SGLang; cualquier integracion en esos runners exigiria una conversion y una implementacion de arquitectura compatible.
+- Opciones de despliegue: la model card solo documenta la carga mediante `src.part2.model.Transformer.from_pretrained` del repositorio de la asignatura, es decir, con codigo propio. No se publican pesos en formato Hugging Face `transformers`, ni GGUF para llama.cpp/Ollama, ni soporte declarado para vLLM, TGI o SGLang; cualquier integracion en esos runners exigiria una conversion y una implementacion de arquitectura compatible.
 - Latencia y throughput: no disponibles. Para un modelo de este tamano, en GPU la latencia por token estaria dominada por el overhead de lanzamiento de kernels y no por el computo, pero no se ha publicado ninguna medicion.
 
 ## Comparativa con modelos similares
@@ -86,7 +86,7 @@ La comparacion relevante no es de calidad, sino de escala: el modelo de esta fic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DunkRonit/anlp-a2-part2-muon
+- Modelo en Hugging Face: https://huggingface.co/DunkRonit/anlp-a2-part2-muon
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/dunkronit-iiit-hyderabad/anlp-a2-part2/runs/muon-dd551d9d
 - Dataset de preentrenamiento citado en la model card: browndw/human-ai-parallel-corpus (referencia textual; no se ha verificado el enlace directo)
 - Repositorio de la asignatura (referenciado como `src.part2.model.Transformer`): no disponible como enlace en la informacion proporcionada

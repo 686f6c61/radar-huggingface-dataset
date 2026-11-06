@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`meharumer/J` es un modelo publicado en HuggingFace por el usuario `meharumer` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: unicamente incluye el campo de licencia en su frontmatter, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones y no declara un pipeline de inferencia asignado.
+`meharumer/J` es un modelo publicado en Hugging Face por el usuario `meharumer` bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica: unicamente incluye el campo de licencia en su frontmatter, sin información sobre arquitectura, tamaño, datos de entrenamiento ni capacidades. El repositorio no registra descargas ni interacciones y no declara un pipeline de inferencia asignado.
 
 A fecha de la informacion disponible, no es posible determinar que problema resuelve el modelo, que arquitectura emplea ni que tipo de tareas puede abordar. La ausencia de documentacion, de pesos descritos y de metadatos funcionales impide evaluarlo como candidato para desarrollo o investigacion. Se trata, por tanto, de un artefacto sin trazabilidad tecnica publica.
 
@@ -65,7 +65,7 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 - Model card practicamente vacia: solo declara la licencia, sin descripcion tecnica ni instrucciones de uso.
 - Sin descargas ni interacciones registradas, lo que impide inferir validacion por parte de la comunidad.
-- Sin pipeline de inferencia declarado en HuggingFace, por lo que la plataforma no reconoce la tarea del modelo.
+- Sin pipeline de inferencia declarado en Hugging Face, por lo que la plataforma no reconoce la tarea del modelo.
 - Riesgo elevado de alucinacion y comportamiento impredecible al desconocerse el entrenamiento y los datos utilizados.
 - Imposible evaluar sesgos conocidos sin informacion sobre el corpus de entrenamiento.
 - La licencia Apache 2.0 permite uso comercial, pero la falta de documentacion traslada al usuario toda la responsabilidad sobre el comportamiento del modelo.
@@ -73,4 +73,4 @@ No disponible. La ausencia de datos sobre parametros, contexto, arquitectura y r
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/meharumer/J
+- Repositorio en Hugging Face: https://huggingface.co/meharumer/J

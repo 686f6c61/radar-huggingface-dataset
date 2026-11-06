@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mobilevit multitask es un prototipo de investigacion publicado por el usuario joshuajd25 en HuggingFace. Se trata de una implementacion personalizada de la arquitectura MobileViT orientada a aprendizaje multitarea (multitask), es decir, a resolver varias tareas de vision por computador con un mismo tronco de red. El modelo se distribuye como un punto de partida experimental y no como un modelo entrenado: el propio autor indica que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta ningun resultado de benchmark.
+Mobilevit multitask es un prototipo de investigacion publicado por el usuario joshuajd25 en Hugging Face. Se trata de una implementacion personalizada de la arquitectura MobileViT orientada a aprendizaje multitarea (multitask), es decir, a resolver varias tareas de vision por computador con un mismo tronco de red. El modelo se distribuye como un punto de partida experimental y no como un modelo entrenado: el propio autor indica que el checkpoint es una inicializacion valida para pruebas de humo (smoke tests) y que no se presenta ningun resultado de benchmark.
 
 La relevancia de esta ficha es acotada y conviene ser claro al respecto: no se trata de un modelo listo para produccion ni de un lanzamiento con rendimiento verificado. Su interes esta en servir de plantilla reproducible para experimentar con MobileViT en regimen multitarea, con ficheros de configuracion de arquitectura y de receta de entrenamiento incluidos. La arquitectura declarada en config.json corresponde a la escala "giant" de MobileViT, con atencion de tipo flash, fusion "concat mlp", activacion mish y normalizacion layernorm.
 
@@ -92,6 +92,6 @@ Los datos de rendimiento, contexto y parametros de los modelos alternativos no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshuajd25/mobilevit-multitask-notes
+- Modelo en Hugging Face: https://huggingface.co/joshuajd25/mobilevit-multitask-notes
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SA-RL-Qwen3-VL-4B-Instruct-SFT-LoRA es un adaptador LoRA desarrollado por Mingzhou9 sobre el modelo base Qwen/Qwen3-VL-4B-Instruct, un vision-language model (VLM) de 4.000 millones de parámetros creado por Alibaba Cloud. El adaptador está diseñado específicamente para tareas de química, con énfasis en el reconocimiento óptico de estructuras químicas (optical chemical structure recognition), y ha sido entrenado mediante supervisión fina (SFT) con la técnica LoRA. El repositorio tiene un tamaño de 0,1 GB y el acceso está restringido, requiriendo aceptar condiciones en HuggingFace.
+SA-RL-Qwen3-VL-4B-Instruct-SFT-LoRA es un adaptador LoRA desarrollado por Mingzhou9 sobre el modelo base Qwen/Qwen3-VL-4B-Instruct, un vision-language model (VLM) de 4.000 millones de parámetros creado por Alibaba Cloud. El adaptador está diseñado específicamente para tareas de química, con énfasis en el reconocimiento óptico de estructuras químicas (optical chemical structure recognition), y ha sido entrenado mediante supervisión fina (SFT) con la técnica LoRA. El repositorio tiene un tamaño de 0,1 GB y el acceso está restringido, requiriendo aceptar condiciones en Hugging Face.
 
 Este modelo resulta relevante porque combina las capacidades multimodales del modelo base Qwen3-VL (comprensión de texto e imágenes, razonamiento visual) con un ajuste especializado para el dominio químico, lo que permite extraer y comprender estructuras moleculares a partir de imágenes. Aunque no se han publicado detalles sobre el dataset de entrenamiento ni métricas de rendimiento, la especialización en química lo convierte en una opción interesante para investigadores y desarrolladores que trabajan con documentación científica, patentes o bases de datos químicas.
 
@@ -68,7 +68,7 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del adap
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos o academicos.
+- Acceso restringido: el modelo requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos o academicos.
 - Licencia no disponible: no se especifica la licencia del adaptador, lo que genera incertidumbre sobre su uso comercial o modificacion.
 - Datos de entrenamiento desconocidos: no se ha publicado informacion sobre el dataset de quimica utilizado, por lo que no se puede evaluar la cobertura de tipos de estructuras quimicas ni posibles sesgos.
 - Riesgo de alucinacion: como cualquier modelo de lenguaje, puede generar respuestas incorrectas o inventar estructuras quimicas si la imagen no es clara o esta fuera de su dominio de entrenamiento.

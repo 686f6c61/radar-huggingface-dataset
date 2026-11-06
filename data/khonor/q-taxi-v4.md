@@ -2,9 +2,9 @@
 
 ## Resumen
 
-q-Taxi-v4 es un agente de aprendizaje por refuerzo publicado en HuggingFace por el usuario khonor. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion propia de Q-learning tabular entrenada para resolver el entorno Taxi-v4 de Gym/Gymnasium, un problema de control discreto clasico utilizado habitualmente como banco de pruebas educativo y de investigacion en RL.
+q-Taxi-v4 es un agente de aprendizaje por refuerzo publicado en Hugging Face por el usuario khonor. No se trata de un modelo de lenguaje ni de una red neuronal profunda: es una implementacion propia de Q-learning tabular entrenada para resolver el entorno Taxi-v4 de Gym/Gymnasium, un problema de control discreto clasico utilizado habitualmente como banco de pruebas educativo y de investigacion en RL.
 
-El modelo se distribuye como un unico artefacto en formato pickle (`q-learning.pkl`) y se carga mediante la utilidad `load_from_hub` de `huggingface_hub`, lo que lo integra en el flujo estandar de HuggingFace para agentes de RL. Su relevancia es limitada y muy especifica: sirve como referencia reproducible de un agente Q-learning sobre un entorno de 500 estados y 6 acciones, y resulta util en docencia, en comparativas de algoritmos tabulares y en pruebas de integracion de pipelines de RL.
+El modelo se distribuye como un unico artefacto en formato pickle (`q-learning.pkl`) y se carga mediante la utilidad `load_from_hub` de `huggingface_hub`, lo que lo integra en el flujo estandar de Hugging Face para agentes de RL. Su relevancia es limitada y muy especifica: sirve como referencia reproducible de un agente Q-learning sobre un entorno de 500 estados y 6 acciones, y resulta util en docencia, en comparativas de algoritmos tabulares y en pruebas de integracion de pipelines de RL.
 
 Se trata de un repositorio practicamente sin traccion (0 descargas y 0 likes en el momento de la consulta), sin licencia declarada, sin informacion sobre hiperparametros de entrenamiento y con un unico resultado de evaluacion declarado por el autor y no verificado: una recompensa media de 7,54 +/- 2,73 en Taxi-v4. La desviacion tipica es elevada en relacion con la media, lo que apunta a una varianza considerable entre episodios de evaluacion.
 
@@ -52,7 +52,7 @@ El entrenamiento se realizo sobre Taxi-v4, el entorno de Gymnasium en el que un 
 
 - Docencia de aprendizaje por refuerzo: el agente sirve como ejemplo minimo y funcional de Q-learning tabular; un instructor puede cargar el pickle, ejecutar el bucle de evaluacion con Gymnasium y mostrar en clase la relacion entre la tabla Q y la politica resultante.
 - Comparativa de algoritmos tabulares: se puede contrastar el retorno medio de este agente frente a implementaciones de SARSA o Monte Carlo sobre el mismo entorno, usando el mismo protocolo de evaluacion y semillas comunes.
-- Pruebas de integracion de pipelines de RL: al distribuirse como pickle y cargarse con `load_from_hub`, resulta util para verificar que el flujo de descarga, carga y ejecucion de un agente en HuggingFace funciona de extremo a extremo.
+- Pruebas de integracion de pipelines de RL: al distribuirse como pickle y cargarse con `load_from_hub`, resulta util para verificar que el flujo de descarga, carga y ejecucion de un agente en Hugging Face funciona de extremo a extremo.
 - Reproducibilidad de resultados de referencia: sirve como punto de partida para replicar la recompensa declarada de 7,54 +/- 2,73 y comprobar si se reproduce con la misma configuracion de entorno.
 - Analisis de sensibilidad a la varianza: debido a la desviacion tipica reportada (2,73), es un caso adecuado para estudiar la dispersion del retorno entre episodios y el efecto de distintas semillas de evaluacion.
 - Material para cursos de Gymnasium: permite ejemplificar el uso de `gym.make(model["env_id"])` y la advertencia habitual sobre atributos adicionales del entorno que deben configurarse al reconstruirlo.
@@ -84,7 +84,7 @@ No se dispone de datos numericos de alternativas comparables en la informacion p
 
 | Alternativa | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento en Taxi-v4 |
 |---|---|---|---|---|---|
-| khonor/q-Taxi-v4 | Tabla Q (tamano no disponible) | No aplica | No disponible | HuggingFace, 0 descargas | 7,54 +/- 2,73 (declarado, no verificado) |
+| khonor/q-Taxi-v4 | Tabla Q (tamano no disponible) | No aplica | No disponible | Hugging Face, 0 descargas | 7,54 +/- 2,73 (declarado, no verificado) |
 | SARSA tabular sobre Taxi-v4 | No disponible | No aplica | No disponible | Implementable con Gymnasium | No disponible |
 | DQN con aproximacion de funcion sobre Taxi-v4 | No disponible | No aplica | No disponible | Implementable con librerias de RL | No disponible |
 | PPO sobre Taxi-v4 | No disponible | No aplica | No disponible | Implementable con librerias de RL | No disponible |
@@ -104,9 +104,9 @@ No se dispone de datos numericos de alternativas comparables en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/khonor/q-Taxi-v4
+- Modelo en Hugging Face: https://huggingface.co/khonor/q-Taxi-v4
 - Documentacion del entorno Taxi de Gymnasium (referencia del entorno de entrenamiento): https://gymnasium.farama.org/environments/toy_text/taxi/
-- Utilidad de carga de agentes de RL en HuggingFace (`load_from_hub`): https://huggingface.co/docs/huggingface_hub/package_reference/hf_hub
+- Utilidad de carga de agentes de RL en Hugging Face (`load_from_hub`): https://huggingface.co/docs/huggingface_hub/package_reference/hf_hub
 - Repositorio de Gymnasium: https://github.com/Farama-Foundation/Gymnasium
 
 Nota: la busqueda web realizada no devolvio ningun enlace relevante sobre el modelo ni sobre su autor; los unicos resultados obtenidos correspondian a paginas de inicio de sesion de Facebook, sin relacion alguna con el artefacto. No se han localizado papers, blogs, repositorios de codigo ni demos asociados a este modelo.

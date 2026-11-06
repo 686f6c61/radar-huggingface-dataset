@@ -71,9 +71,9 @@ Sobre las 49.795 frases completas, la tabla de caracteres obtiene 1,02 % / 13,49
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Juba-27M | 26,9 M | no disponible | Transliteración tifinaghe-latino y restauración de schwa en cabilio | Apache 2.0 | HuggingFace (`agbalu/Juba-27M`) |
+| Juba-27M | 26,9 M | no disponible | Transliteración tifinaghe-latino y restauración de schwa en cabilio | Apache 2.0 | Hugging Face (`agbalu/Juba-27M`) |
 | Tabla de caracteres determinista | 0 (regla) | no aplica | Sustitución uno a uno de consonantes | no aplica | Implementación propia |
-| Amrouche-1.3B | 1.300 M (aproximado, según nombre) | no disponible | Traducción cabilio-otro idioma | no disponible en la información | HuggingFace (`agbalu/Amrouche-1.3B`) |
+| Amrouche-1.3B | 1.300 M (aproximado, según nombre) | no disponible | Traducción cabilio-otro idioma | no disponible en la información | Hugging Face (`agbalu/Amrouche-1.3B`) |
 
 No se conocen otros modelos neuronales publicados para conversión de escritura o restauración de schwa en cabilio; el autor afirma que no existía ninguno antes de este. Amrouche-1.3B es del mismo autor pero resuelve una tarea distinta (traducción entre idiomas), por lo que la comparación es solo contextual.
 
@@ -93,6 +93,6 @@ No se conocen otros modelos neuronales publicados para conversión de escritura 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agbalu/Juba-27M
+- Modelo en Hugging Face: https://huggingface.co/agbalu/Juba-27M
 - Dataset de evaluación: https://huggingface.co/datasets/agbalu/KabTifinagh
 - Modelo de traducción recomendado por el autor: https://huggingface.co/agbalu/Amrouche-1.3B

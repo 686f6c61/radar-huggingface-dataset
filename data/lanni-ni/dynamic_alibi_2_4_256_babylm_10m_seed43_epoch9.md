@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dynamic_alibi_2_4_256_babylm_10m_seed43_epoch9` es un modelo de generación de texto pequeño y experimental, publicado en HuggingFace por el usuario `Lanni-ni`. Según los metadatos del repositorio, contiene 27.447.040 parámetros en formato `safetensors` y pesa aproximadamente 0,1 GB. Los tags indican que es un modelo de la familia `dynamic_alibi` y que utiliza código personalizado (`custom_code`), lo que sugiere una implementación propia que no sigue el comportamiento estándar de los modelos `transformers` sin modificaciones.
+El modelo `dynamic_alibi_2_4_256_babylm_10m_seed43_epoch9` es un modelo de generación de texto pequeño y experimental, publicado en Hugging Face por el usuario `Lanni-ni`. Según los metadatos del repositorio, contiene 27.447.040 parámetros en formato `safetensors` y pesa aproximadamente 0,1 GB. Los tags indican que es un modelo de la familia `dynamic_alibi` y que utiliza código personalizado (`custom_code`), lo que sugiere una implementación propia que no sigue el comportamiento estándar de los modelos `transformers` sin modificaciones.
 
 El nombre del repositorio apunta a un experimento sobre una variante de atención con sesgo posicional dinámico (ALiBi) en el marco del corpus BabyLM, con parámetros de configuración como 2 capas, 4 cabezas y dimensión 256, entrenado durante 9 épocas con una semilla concreta (43). No obstante, la model card es un documento autogenerado con campos sin completar ("More Information Needed") y no ofrece información verificada sobre arquitectura, datos de entrenamiento, licencia ni capacidades. Se trata, por tanto, de un recurso de investigación sin documentación suficiente para su uso en producción.
 
@@ -28,7 +28,7 @@ Tampoco se dispone de información sobre el conjunto de datos utilizado, el núm
 ## Capacidades
 
 - No se han documentado capacidades específicas del modelo en la model card.
-- El pipeline declarado en HuggingFace es `text-generation`, lo que indica que está destinado a tareas de generación de texto.
+- El pipeline declarado en Hugging Face es `text-generation`, lo que indica que está destinado a tareas de generación de texto.
 - No hay información sobre soporte de tool calling, función llamada, agentes, razonamiento multi-paso, visión, audio ni capacidades multilingües.
 - No se han publicado evaluaciones de sesgos, seguridad ni alineación.
 
@@ -65,7 +65,7 @@ No se han identificado modelos comparables en la información proporcionada. El 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch9)
+- [Página del modelo en Hugging Face](https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch9)
 - [Modelo relacionado de la misma serie: dynamic_alibi_2_4_256_babylm_10m_seed44_epoch7](https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed44_epoch7)
 
 Los resultados de la búsqueda web no aportaron documentación adicional relevante para esta ficha.

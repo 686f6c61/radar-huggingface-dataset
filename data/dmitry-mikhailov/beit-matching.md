@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dmitry-mikhailov/beit-matching` es un repositorio de HuggingFace que contiene una implementacion minima de una arquitectura BeiT (BERT pre-training of Image Transformers) orientada a tareas de matching, empaquetada junto con su configuracion explicita y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de un lanzamiento con resultados: la propia model card indica que la variante `tiny` es un punto de partida reproducible y que el archivo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo.
+`dmitry-mikhailov/beit-matching` es un repositorio de Hugging Face que contiene una implementacion minima de una arquitectura BeiT (BERT pre-training of Image Transformers) orientada a tareas de matching, empaquetada junto con su configuracion explicita y un checkpoint de inicializacion. No se trata de un modelo entrenado ni de un lanzamiento con resultados: la propia model card indica que la variante `tiny` es un punto de partida reproducible y que el archivo `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo.
 
 El modelo tiene 49.600 parametros totales segun los datos de safetensors, lo que lo situa en el rango de los modelos de escala minima (aproximadamente 0,05 M de parametros). Su interes no reside en el rendimiento, sino en servir como andamiaje reproducible para experimentar con decisiones de arquitectura concretas: atencion dispersa (sparse), fusion mediante descomposicion de Tucker, activacion approx gelu y normalizacion ScaleNorm.
 
@@ -78,6 +78,6 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dmitry-mikhailov/beit-matching
+- Modelo en Hugging Face: https://huggingface.co/dmitry-mikhailov/beit-matching
 - Archivos incluidos en el repositorio: `predict.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Papers, blogs, repositorios o demos adicionales: no disponibles. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces recuperados corresponden a politicas de transporte de mascotas de una aerolinea y no guardan relacion con el artefacto descrito.

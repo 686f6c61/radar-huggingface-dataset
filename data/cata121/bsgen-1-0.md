@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bsgen-1.0 es un conjunto de tres modelos pequenos publicados por el usuario cata121 en HuggingFace, pensados como motor de [bsgen](https://github.com/cata02222/bsgen), un generador experimental de mapas para el videojuego de ritmo Beat Saber. No es un modelo de lenguaje: el paquete incluye un modelo de generacion de mapas (65 millones de parametros), un modelo de "jugador" que produce el movimiento de cabeza y manos en forma de replay (38 millones de parametros) y un modelo de deteccion de BPM para alinear la generacion con la pista de audio.
+bsgen-1.0 es un conjunto de tres modelos pequenos publicados por el usuario cata121 en Hugging Face, pensados como motor de [bsgen](https://github.com/cata02222/bsgen), un generador experimental de mapas para el videojuego de ritmo Beat Saber. No es un modelo de lenguaje: el paquete incluye un modelo de generacion de mapas (65 millones de parametros), un modelo de "jugador" que produce el movimiento de cabeza y manos en forma de replay (38 millones de parametros) y un modelo de deteccion de BPM para alinear la generacion con la pista de audio.
 
 El interes practico esta en su tamano reducido y su coste de entrenamiento: el modelo de mapas se entreno en unos 40 minutos sobre una unica H100 y se ajusto finamente durante 50 minutos en una RTX 3060; el modelo de jugador se entreno en unos 20 minutos en una H100. Son cifras de entrenamiento de nivel aficionado, muy por debajo de los presupuestos habituales de modelos generativos, lo que lo convierte en un caso de estudio util para generacion de contenido procedural especializado y para experimentacion de bajo coste.
 
@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye otros generadores de mapa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bsgen-1.0 (map + player) | 65 M + 38 M | No disponible | Sin benchmarks publicados | AGPL-3.0 | HuggingFace, 0 descargas, 1 like |
+| bsgen-1.0 (map + player) | 65 M + 38 M | No disponible | Sin benchmarks publicados | AGPL-3.0 | Hugging Face, 0 descargas, 1 like |
 | Alternativas | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -83,12 +83,12 @@ No disponible. La informacion proporcionada no incluye otros generadores de mapa
 - Riesgo de alucinacion en el sentido de generar secuencias de bloques fisicamente imposibles o no jugables; no hay mecanismo de validacion documentado mas alla del player model.
 - Posible sesgo hacia los mapas presentes en el dataset de entrenamiento: el ajuste fino con reponderado de dificultad a 1,1 sugiere un desequilibrio previo en la distribucion de niveles, y no se documenta la composicion del corpus.
 - Dependencia de derechos de terceros: los mapas de Beat Saber y las canciones empleadas en el entrenamiento pueden estar sujetos a derechos de autor; la licencia AGPL-3.0 del modelo no aclara la situacion de los datos.
-- Inconsistencia de identidad: el autor figura como `cata121` en HuggingFace y como `cata02222` en la URL del repositorio de GitHub, lo que dificulta verificar la autoria y la cadena de custodia del modelo.
+- Inconsistencia de identidad: el autor figura como `cata121` en Hugging Face y como `cata02222` en la URL del repositorio de GitHub, lo que dificulta verificar la autoria y la cadena de custodia del modelo.
 - Ambito muy restringido: no es reutilizable para tareas de lenguaje, vision o agentes; solo tiene sentido dentro del ecosistema Beat Saber.
-- La busqueda web realizada no devolvio resultados relevantes sobre el modelo; toda la informacion procede de la model card y de los metadatos de HuggingFace.
+- La busqueda web realizada no devolvio resultados relevantes sobre el modelo; toda la informacion procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cata121/bsgen-1.0
+- Modelo en Hugging Face: https://huggingface.co/cata121/bsgen-1.0
 - Repositorio del proyecto bsgen: https://github.com/cata02222/bsgen
 - Paper, blog o demo oficiales: no disponible en la informacion proporcionada.

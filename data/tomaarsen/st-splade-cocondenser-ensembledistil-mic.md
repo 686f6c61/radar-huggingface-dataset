@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-splade-cocondenser-ensembledistil-mic` es un artefacto de prueba (fixture) publicado en HuggingFace, no un modelo entrenado para uso real. Se trata de una versión reducida ("slim") del modelo SPLADE `naver/splade-cocondenser-ensembledistil`, generada para validar la integración de la librería `sentence-transformers` con el ecosistema de contratos y expectativas de HuggingFace (denominado MIC en los tags). El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
+`tomaarsen/st-splade-cocondenser-ensembledistil-mic` es un artefacto de prueba (fixture) publicado en Hugging Face, no un modelo entrenado para uso real. Se trata de una versión reducida ("slim") del modelo SPLADE `naver/splade-cocondenser-ensembledistil`, generada para validar la integración de la librería `sentence-transformers` con el ecosistema de contratos y expectativas de Hugging Face (denominado MIC en los tags). El propio autor advierte en la model card que los pesos son aleatorios y no representan la calidad de recuperación del modelo original.
 
 El modelo base, SPLADE cocondenser ensembledistil, es un modelo BERT de recuperación dispersa (sparse retrieval) que produce representaciones léxicas expandidas para búsqueda. Este fixture conserva la arquitectura y el pipeline de `SparseEncoder` pero con solo 2.088.186 parámetros, una fracción mínima del modelo original, lo que lo hace útil exclusivamente como banco de pruebas de infraestructura.
 
@@ -39,7 +39,7 @@ Sin embargo, este repositorio concreto no contiene un modelo entrenado: según l
 ## Casos de uso
 
 - Pruebas de integración en CI: usar el fixture para verificar que el pipeline `SparseEncoder` carga y ejecuta correctamente en `sentence-transformers` antes de desplegar el modelo real.
-- Validación de contratos de HuggingFace: comprobar que `integration.json` y el directorio de expectativas se cumplen en un entorno controlado.
+- Validación de contratos de Hugging Face: comprobar que `integration.json` y el directorio de expectativas se cumplen en un entorno controlado.
 - Desarrollo de herramientas de serialización: probar la carga y guardado de pesos safetensors con un modelo de tamaño mínimo (2 millones de parámetros).
 - Test de pipelines de reducción de modelos: servir como referencia para verificar el proceso de "shrink" documentado en el enlace de procedencia.
 - Pruebas de regresión en infraestructura de despliegue: validar que servidores de inferencia aceptan modelos con la firma de `SparseEncoder` sin consumir recursos significativos.
@@ -62,9 +62,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomaarsen/st-splade-cocondenser-ensembledistil-mic | 2.088.186 | no disponible | Fixture de prueba | no disponible | HuggingFace |
-| naver/splade-cocondenser-ensembledistil | no disponible | no disponible | SPLADE real | no disponible | HuggingFace |
-| naver/splade-v3 | no disponible | no disponible | SPLADE real | no disponible | HuggingFace |
+| tomaarsen/st-splade-cocondenser-ensembledistil-mic | 2.088.186 | no disponible | Fixture de prueba | no disponible | Hugging Face |
+| naver/splade-cocondenser-ensembledistil | no disponible | no disponible | SPLADE real | no disponible | Hugging Face |
+| naver/splade-v3 | no disponible | no disponible | SPLADE real | no disponible | Hugging Face |
 
 La comparación relevante es con el modelo base original, del cual este fixture es una versión reducida con pesos aleatorios. Cualquier otro modelo SPLADE de la familia `naver` sería una alternativa real para recuperación, mientras que este artefacto solo sirve para pruebas de infraestructura.
 
@@ -81,7 +81,7 @@ La comparación relevante es con el modelo base original, del cual este fixture 
 
 ## Enlaces
 
-- [HuggingFace: tomaarsen/st-splade-cocondenser-ensembledistil-mic](https://huggingface.co/tomaarsen/st-splade-cocondenser-ensembledistil-mic)
+- [Hugging Face: tomaarsen/st-splade-cocondenser-ensembledistil-mic](https://huggingface.co/tomaarsen/st-splade-cocondenser-ensembledistil-mic)
 - [Modelo base: naver/splade-cocondenser-ensembledistil](https://huggingface.co/naver/splade-cocondenser-ensembledistil)
 - [Procedencia del fixture (build.json)](https://huggingface.co/tomaarsen/st-splade-cocondenser-ensembledistil-mic/blob/main/build.json)
 - [Manifiesto de contrato (integration.json)](https://huggingface.co/tomaarsen/st-splade-cocondenser-ensembledistil-mic/blob/main/integration.json)

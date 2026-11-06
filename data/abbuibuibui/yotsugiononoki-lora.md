@@ -89,8 +89,8 @@ No se dispone de datos de otros LoRAs de personaje comparables en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abbuibuibui/YotsugiOnonoki-Lora
-- Dataset en HuggingFace: https://huggingface.co/datasets/abbuibuibui/YotsugiOnonoki-Dataset
+- Modelo en Hugging Face: https://huggingface.co/abbuibuibui/YotsugiOnonoki-Lora
+- Dataset en Hugging Face: https://huggingface.co/datasets/abbuibuibui/YotsugiOnonoki-Dataset
 - Modelo en ModelScope: https://www.modelscope.cn/models/abbuibuibui/YotsugiOnonoki-Lora
 - Dataset en ModelScope: https://www.modelscope.cn/datasets/abbuibuibui/YotsugiOnonoki-Dataset
 - Notas de evaluacion (chino): `evaluation/横向测评记录.md` dentro del repositorio

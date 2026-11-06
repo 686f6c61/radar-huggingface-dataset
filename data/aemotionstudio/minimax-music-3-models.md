@@ -65,7 +65,7 @@ No disponible. No se han encontrado datos comparativos con otros modelos de gene
 
 ## Enlaces
 
-- Espejo en HuggingFace: https://huggingface.co/AEmotionStudio/minimax-music-3-models
+- Espejo en Hugging Face: https://huggingface.co/AEmotionStudio/minimax-music-3-models
 - Modelo original: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Licencia: https://huggingface.co/MiniMaxAI/MiniMax-Music3/blob/main/LICENSE
 - GitHub oficial: https://github.com/MiniMax-AI/MiniMax-Music3

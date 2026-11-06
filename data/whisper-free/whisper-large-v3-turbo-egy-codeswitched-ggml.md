@@ -24,7 +24,7 @@ Ahora bien, la información publicada es mínima: no hay métricas, no se declar
 | Librería / pipeline | ggml / `automatic-speech-recognition` |
 | Tamaño del repositorio | 1,6 GB |
 | Verificación de integridad | Fichero `SHA256SUMS` incluido en el repositorio |
-| Fecha de creación | 2026-10-29 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-29 (según metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparado (WER) para ninguna de las filas,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whisper-free/whisper-large-v3-turbo-egy-codeswitched-ggml
+- Modelo en Hugging Face: https://huggingface.co/whisper-free/whisper-large-v3-turbo-egy-codeswitched-ggml
 - Modelo origen (ajuste fino): https://huggingface.co/mohammedaly22/whisper-large-v3-turbo-egyptian-code-switching
 - Repositorio de OpenAI Whisper (tokenizador y pesos base, MIT): https://github.com/openai/whisper
 - Anuncio original de Whisper en OpenAI: https://openai.com/index/whisper/

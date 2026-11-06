@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ACT_UR5e_BS_32_Act_Chunk_50_Exec_50 es una politica de control robotico entrenada mediante aprendizaje por imitacion con el metodo Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. La desarrolla el usuario castanetnicolas y esta publicada en HuggingFace Hub dentro del ecosistema LeRobot, la libreria de HuggingFace para aprendizaje automatico en robotica real. No es un modelo de lenguaje: es un modelo de politica visomotora que consume el estado articular del robot y dos imagenes de camara, y produce directamente comandos de accion.
+ACT_UR5e_BS_32_Act_Chunk_50_Exec_50 es una politica de control robotico entrenada mediante aprendizaje por imitacion con el metodo Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705. La desarrolla el usuario castanetnicolas y esta publicada en Hugging Face Hub dentro del ecosistema LeRobot, la libreria de Hugging Face para aprendizaje automatico en robotica real. No es un modelo de lenguaje: es un modelo de politica visomotora que consume el estado articular del robot y dos imagenes de camara, y produce directamente comandos de accion.
 
 El modelo esta especializado en una unica tarea de pick and place sobre un robot Universal Robots UR5e: recoger una lata y depositarla en el contenedor correcto. Se entreno con 100 episodios de teleoperacion (10.575 fotogramas a 20 FPS) del dataset castanetnicolas/UR5e_pick_and_place_CAN_100_absolute_joint, durante 100.000 pasos con batch 32 y optimizador AdamW. Cuenta con 51.618.436 parametros y se distribuye en safetensors bajo licencia Apache 2.0, por lo que es un modelo muy ligero que cabe en cualquier GPU de consumo.
 
@@ -79,10 +79,10 @@ No se dispone de datos de especificaciones de los modelos alternativos en la inf
 
 | Modelo | Parametros | Contexto u horizonte | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ACT_UR5e_BS_32_Act_Chunk_50_Exec_50 (esta politica) | 51,6 M | chunk de 50 pasos segun el nombre del repositorio | apache-2.0 | HuggingFace Hub, ecosistema LeRobot |
-| Otras politicas ACT de LeRobot (por ejemplo, variantes ALOHA o Pusht) | no disponible | no disponible | no disponible | HuggingFace Hub |
+| ACT_UR5e_BS_32_Act_Chunk_50_Exec_50 (esta politica) | 51,6 M | chunk de 50 pasos segun el nombre del repositorio | apache-2.0 | Hugging Face Hub, ecosistema LeRobot |
+| Otras politicas ACT de LeRobot (por ejemplo, variantes ALOHA o Pusht) | no disponible | no disponible | no disponible | Hugging Face Hub |
 | Diffusion Policy (Chi et al.) | no disponible | no disponible | no disponible | implementaciones en LeRobot y en repositorios academicos |
-| SmolVLA (HuggingFace) | no disponible | no disponible | no disponible | HuggingFace Hub, ecosistema LeRobot |
+| SmolVLA (Hugging Face) | no disponible | no disponible | no disponible | Hugging Face Hub, ecosistema LeRobot |
 
 Nota: la comparacion se ofrece unicamente como mapa de alternativas de la misma categoria (politicas de imitacion para manipulacion robotica). No se han incluido cifras de parametros, contexto ni rendimiento de los modelos alternativos porque no figuran en la informacion disponible.
 
@@ -100,7 +100,7 @@ Nota: la comparacion se ofrece unicamente como mapa de alternativas de la misma 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50_Exec_50
+- Modelo en Hugging Face: https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_50_Exec_50
 - Dataset de entrenamiento: https://huggingface.co/datasets/castanetnicolas/UR5e_pick_and_place_CAN_100_absolute_joint
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=castanetnicolas/UR5e_pick_and_place_CAN_100_absolute_joint
 - Paper de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705

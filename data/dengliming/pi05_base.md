@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Pi_05 (identificado en HuggingFace como `Dengliming/pi05_base`) es un checkpoint de la política robótica π0.5 de Physical Intelligence, adaptada por el equipo RoboDojo al entorno XPolicyLab mediante el stack OpenPI, que se gestiona con `uv` en lugar de conda. El repositorio de HuggingFace no contiene una model card propia: el README visible corresponde a la integración de XPolicyLab/policy/Pi_05 e incluye los scripts de instalación, procesamiento de datos, entrenamiento y evaluación, además de la configuración de despliegue en máquina dividida entre servidor de política y cliente de entorno. La implementación upstream de OpenPI está vendorizada dentro del directorio `openpi/`.
+Pi_05 (identificado en Hugging Face como `Dengliming/pi05_base`) es un checkpoint de la política robótica π0.5 de Physical Intelligence, adaptada por el equipo RoboDojo al entorno XPolicyLab mediante el stack OpenPI, que se gestiona con `uv` en lugar de conda. El repositorio de Hugging Face no contiene una model card propia: el README visible corresponde a la integración de XPolicyLab/policy/Pi_05 e incluye los scripts de instalación, procesamiento de datos, entrenamiento y evaluación, además de la configuración de despliegue en máquina dividida entre servidor de política y cliente de entorno. La implementación upstream de OpenPI está vendorizada dentro del directorio `openpi/`.
 
 El modelo resuelve el problema de aprendizaje de políticas visomotoras para manipulación robótica: convierte demostraciones en formato RoboDojo a repositorios LeRobot con las claves oficiales (`observation.state`, `action`, `observation.images.cam_high`, `cam_left_wrist`, `cam_right_wrist`) y entrena políticas que se evalúan en simulador RoboDojo. El flujo cubre control conjunto (`joint`) y configuraciones de entorno tipo `arx_x5`, con entrenamiento distribuido mediante FSDP.
 
-La relevancia actual es doble: por un lado, permite reproducir y ajustar la política π0.5 sobre un benchmark abierto con leaderboard público; por otro, este repositorio concreto de HuggingFace no declara licencia, idiomas, pipeline ni métricas, acumula 0 descargas y 0 likes, y no presenta documentación técnica propia, por lo que debe tratarse como un espejo o checkpoint de trabajo y no como una distribución oficial. La arquitectura interna, el número de parámetros y el contexto no se detallan en la información disponible.
+La relevancia actual es doble: por un lado, permite reproducir y ajustar la política π0.5 sobre un benchmark abierto con leaderboard público; por otro, este repositorio concreto de Hugging Face no declara licencia, idiomas, pipeline ni métricas, acumula 0 descargas y 0 likes, y no presenta documentación técnica propia, por lo que debe tratarse como un espejo o checkpoint de trabajo y no como una distribución oficial. La arquitectura interna, el número de parámetros y el contexto no se detallan en la información disponible.
 
 ## Especificaciones tecnicas
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - Entrenamiento: usa FSDP, con `fsdp_devices=1` para una GPU visible y `2` por defecto en configuraciones multi-GPU, sobrescribible con `OPENPI_FSDP_DEVICES`. Esto implica que el entrenamiento puede repartirse entre varias GPU, pero no se indican modelos concretos ni memoria mínima.
 - Encaje en GPU de consumo: no disponible. No se documenta ningún requisito de memoria que permita afirmarlo o descartarlo.
 - Opciones de despliegue: el stack oficial es OpenPI, gestionado con `uv` (no hay entorno conda para la política; `eval.sh` espera `uv` o una ruta explícita al proyecto OpenPI). Se contempla despliegue de máquina dividida con `setup_eval_policy_server.sh` y `setup_eval_env_client.sh`. No se mencionan vLLM, llama.cpp, Ollama ni TGI, que no aplican al flujo descrito.
-- Caché local: `OPENPI_LOCAL_CACHE_ROOT` define el directorio de caché por host para los datasets de HuggingFace y las compilaciones de JAX, con valor por defecto `/tmp/openpi-cache-$(hostname)`.
+- Caché local: `OPENPI_LOCAL_CACHE_ROOT` define el directorio de caché por host para los datasets de Hugging Face y las compilaciones de JAX, con valor por defecto `/tmp/openpi-cache-$(hostname)`.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de este
 
 | Modelo | Relación | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Pi_05 (`Dengliming/pi05_base`) | Objeto de esta ficha | no disponible | no disponible | no disponible | Repositorio en HuggingFace con 0 descargas y 0 likes; sin licencia declarada |
+| Pi_05 (`Dengliming/pi05_base`) | Objeto de esta ficha | no disponible | no disponible | no disponible | Repositorio en Hugging Face con 0 descargas y 0 likes; sin licencia declarada |
 | π0.5 original (Physical Intelligence) | Política de la que deriva esta adaptación | no disponible | no disponible | no disponible | Código en `github.com/Physical-Intelligence/openpi`; informe técnico referenciado con arXiv pendiente |
 | π0 (predecesor en el ecosistema openpi) | Alternativa de la misma familia de políticas | no disponible | no disponible | no disponible | Disponible a través del repositorio OpenPI |
 | Otras políticas de manipulación del benchmark RoboDojo | Alternativas evaluadas en el mismo leaderboard | no disponible | no disponible | no disponible | Resultados en `robodojo-benchmark.com/LeaderBoard` |
@@ -90,7 +90,7 @@ No se dispone de datos de parámetros, contexto, rendimiento ni licencia de este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Dengliming/pi05_base
+- Repositorio en Hugging Face: https://huggingface.co/Dengliming/pi05_base
 - Código original de OpenPI (Physical Intelligence): https://github.com/Physical-Intelligence/openpi
 - Leaderboard de RoboDojo: https://robodojo-benchmark.com/LeaderBoard
 - README de XPolicyLab (referenciado en la model card como `../../README.md`, sin URL pública en la información disponible)

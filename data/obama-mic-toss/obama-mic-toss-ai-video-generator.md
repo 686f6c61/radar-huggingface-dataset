@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Obama-Mic-Toss-AI-Video-Generator es un modelo alojado en HuggingFace por el usuario Obama-Mic-Toss, etiquetado con el pipeline `image-to-video`. Segun la model card, su funcion es transformar una fotografia retrato en un video de 4, 10 o 15 segundos que recrea el gesto viral del "mic toss" (lanzar el microfono por encima del hombro sin mirar) atribuido a Barack Obama en un mitin en Detroit el 24 de octubre de 2026. El modelo no genera video libre a partir de un prompt: edita una plantilla preexistente (una recreacion propia con personas ficticias) e inserta la cara del usuario en uno de los tres papeles disponibles (lanzador del microfono, acompanante o saludador del publico).
+Obama-Mic-Toss-AI-Video-Generator es un modelo alojado en Hugging Face por el usuario Obama-Mic-Toss, etiquetado con el pipeline `image-to-video`. Segun la model card, su funcion es transformar una fotografia retrato en un video de 4, 10 o 15 segundos que recrea el gesto viral del "mic toss" (lanzar el microfono por encima del hombro sin mirar) atribuido a Barack Obama en un mitin en Detroit el 24 de octubre de 2026. El modelo no genera video libre a partir de un prompt: edita una plantilla preexistente (una recreacion propia con personas ficticias) e inserta la cara del usuario en uno de los tres papeles disponibles (lanzador del microfono, acompanante o saludador del publico).
 
 La relevancia del modelo es fundamentalmente comercial y de tendencia viral: se posiciona como una herramienta de generacion de clips listos para TikTok, Reels, Shorts o X, con musica incluida y sin necesidad de escribir prompts ni rodar material propio. No hay informacion publica sobre arquitectura, parametros, datos de entrenamiento ni resultados de benchmarks; la model card es esencialmente material de marketing del servicio web obamamictoss.com.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Obama-Mic-Toss-AI-Video-Generator | Image-to-video sobre plantilla fija | no disponible | no disponible | Propietaria (obamamictoss-terms) | HuggingFace + servicio web |
+| Obama-Mic-Toss-AI-Video-Generator | Image-to-video sobre plantilla fija | no disponible | no disponible | Propietaria (obamamictoss-terms) | Hugging Face + servicio web |
 | Plataformas generales de video IA | Texto/imagen a video con prompt | no disponible | no disponible | Variable | Servicios comerciales |
 | Apps de face-swap | Intercambio facial sobre video existente | no disponible | no disponible | Variable | Servicios comerciales |
 
@@ -77,12 +77,12 @@ La propia model card compara el producto con plataformas generales de video IA (
 - Riesgo de suplantacion de identidad: la insercion de caras de terceros a partir de una foto puede infringir derechos de imagen y normativas de deepfakes segun la jurisdiccion.
 - Posible confusion con el "mic drop" de 2016: la propia model card aclara que son dos momentos distintos, lo que indica un riesgo de ambiguedad en el contenido generado.
 - Idiomas declarados limitados a en, es, pt y fr en la interfaz; no se documenta calidad multilingue del resultado.
-- Cero adopcion verificable en HuggingFace (0 descargas, 0 likes) en el momento de la consulta.
+- Cero adopcion verificable en Hugging Face (0 descargas, 0 likes) en el momento de la consulta.
 - No hay informacion sobre sesgos, tasas de alucinacion visual, limites de contexto ni comportamiento en produccion.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Obama-Mic-Toss/Obama-Mic-Toss-AI-Video-Generator
+- Hugging Face: https://huggingface.co/Obama-Mic-Toss/Obama-Mic-Toss-AI-Video-Generator
 - Servicio web: https://obamamictoss.com
 - Terminos de servicio: https://obamamictoss.com/terms-of-service
 - Pagina de precios: https://obamamictoss.com/pricing

@@ -89,10 +89,10 @@ El modelo base Ghost-GK v1 satura a 30 m y no puede representar porteros adelant
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/silly-kicks/ghost-gk-sweeper-v1
+- Modelo en Hugging Face: https://huggingface.co/silly-kicks/ghost-gk-sweeper-v1
 - Modelo base Ghost-GK v1: https://huggingface.co/silly-kicks/ghost-gk-v1
 - Variante position-only: https://huggingface.co/silly-kicks/ghost-gk-sweeper-position-only-v1
-- Organización silly-kicks en HuggingFace: https://huggingface.co/silly-kicks
+- Organización silly-kicks en Hugging Face: https://huggingface.co/silly-kicks
 - Repositorio GitHub de silly-kicks: https://github.com/karsten-s-nielsen/silly-kicks
 - Paquete PyPI: https://pypi.org/project/silly-kicks/
 - Referencia: Le et al. 2017 (Data-Driven Ghosting, MIT Sloan) — no disponible en línea en los resultados

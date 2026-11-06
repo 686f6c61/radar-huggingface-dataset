@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`moriarty09/kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, obtenido mediante fine-tuning de `FacebookAI/xlm-roberta-base`. Lo publica el usuario moriarty09 en HuggingFace y está pensado como material didáctico: el propio autor lo etiqueta como "solo para fines de aprendizaje" y advierte de que el conjunto de datos es muy reducido.
+`moriarty09/kayfiyat_aniqlash` es un clasificador de sentimiento en tres clases (positivo, negativo, neutro) para uzbeko, obtenido mediante fine-tuning de `FacebookAI/xlm-roberta-base`. Lo publica el usuario moriarty09 en Hugging Face y está pensado como material didáctico: el propio autor lo etiqueta como "solo para fines de aprendizaje" y advierte de que el conjunto de datos es muy reducido.
 
 El modelo resuelve una tarea concreta: clasificar oraciones en uzbeko sobre la vida universitaria. Parte de la arquitectura XLM-RoBERTa base (transformer encoder multilingüe con 278.045.955 parámetros) y se ha ajustado sobre 150 frases escritas a mano (50 por clase), con una evaluación sobre 30 frases que reporta una exactitud de 0,90.
 
@@ -34,7 +34,7 @@ El entrenamiento se realizó con 150 frases en uzbeko escritas a mano (50 positi
 - Funciona como encoder de características reutilizable para otras tareas en uzbeko (extracción de embeddings).
 - No soporta generación de texto, tool calling, agentes, visión, audio ni modo de razonamiento.
 - Capacidad multilingüe heredada del modelo base, pero no validada ni documentada por el autor.
-- No hay pipeline declarado en HuggingFace, por lo que requiere cargar el modelo manualmente con `transformers` y una cabeza de clasificación.
+- No hay pipeline declarado en Hugging Face, por lo que requiere cargar el modelo manualmente con `transformers` y una cabeza de clasificación.
 
 ## Casos de uso
 
@@ -43,7 +43,7 @@ El entrenamiento se realizó con 150 frases en uzbeko escritas a mano (50 positi
 - Prototipado de sistemas de alerta temprana: detectar sentimiento negativo recurrente en feedback estudiantil y escalarlo a tutores o servicios de bienestar.
 - Etiquetado asistido de datasets: usar el modelo como preetiquetador para acelerar la anotación manual de corpus en uzbeko, revisando después las predicciones.
 - Extracción de embeddings para clustering temático: aprovechar las representaciones del encoder para agrupar opiniones por similitud semántica en herramientas de análisis cualitativo.
-- Docencia y experimentación: servir como caso práctico de fine-tuning de XLM-RoBERTa en un idioma de bajos recursos, útil en cursos de PLN o talleres de HuggingFace.
+- Docencia y experimentación: servir como caso práctico de fine-tuning de XLM-RoBERTa en un idioma de bajos recursos, útil en cursos de PLN o talleres de Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| moriarty09/kayfiyat_aniqlash | 278 M | no disponible | Clasificación de sentimiento (uzbeko) | MIT | HuggingFace, 0 descargas |
-| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingüe | MIT | HuggingFace, ampliamente usado |
-| Davlan/afro-xlmr-base | 278 M | 512 tokens | Modelo base para lenguas africanas | MIT | HuggingFace |
-| bert-base-multilingual-cased | 178 M | 512 tokens | Modelo base multilingüe | Apache 2.0 | HuggingFace |
+| moriarty09/kayfiyat_aniqlash | 278 M | no disponible | Clasificación de sentimiento (uzbeko) | MIT | Hugging Face, 0 descargas |
+| FacebookAI/xlm-roberta-base | 278 M | 512 tokens | Modelo base multilingüe | MIT | Hugging Face, ampliamente usado |
+| Davlan/afro-xlmr-base | 278 M | 512 tokens | Modelo base para lenguas africanas | MIT | Hugging Face |
+| bert-base-multilingual-cased | 178 M | 512 tokens | Modelo base multilingüe | Apache 2.0 | Hugging Face |
 
 La comparación directa con clasificadores de sentimiento en uzbeko es difícil porque no se han identificado alternativas públicas específicas en la información disponible. Frente al modelo base XLM-RoBERTa, este fine-tuning añade la cabeza de clasificación y la especialización temática, pero pierde generalidad y no documenta su comportamiento fuera del dominio universitario.
 
@@ -87,6 +87,6 @@ La comparación directa con clasificadores de sentimiento en uzbeko es difícil 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moriarty09/kayfiyat_aniqlash
+- Modelo en Hugging Face: https://huggingface.co/moriarty09/kayfiyat_aniqlash
 - Modelo base: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Paper de XLM-RoBERTa (Unsupervised Cross-lingual Representation Learning at Scale): https://arxiv.org/abs/1911.02116

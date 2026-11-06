@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed43` es un artefacto publicado en HuggingFace por el usuario maxbhartman, con fecha de creación del 14 de septiembre de 2026 y una actualización posterior el mismo día. El nombre sigue un patrón habitual en experimentos de ablación: "anchor-removal" (eliminación de anclas), "gsm8k" (conjunto de evaluación de razonamiento matemático), "tau0.6" (probablemente un umbral de temperatura o de muestreo), "attention" y "k20" (probablemente un hiperparámetro de atención, como el número de cabezas o de vecinos considerados), junto con una semilla fija ("seed43"). Los únicos metadatos declarados son las etiquetas `pytorch` y `llama`, y el repositorio ocupa 6,4 GB.
+El repositorio `maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed43` es un artefacto publicado en Hugging Face por el usuario maxbhartman, con fecha de creación del 14 de septiembre de 2026 y una actualización posterior el mismo día. El nombre sigue un patrón habitual en experimentos de ablación: "anchor-removal" (eliminación de anclas), "gsm8k" (conjunto de evaluación de razonamiento matemático), "tau0.6" (probablemente un umbral de temperatura o de muestreo), "attention" y "k20" (probablemente un hiperparámetro de atención, como el número de cabezas o de vecinos considerados), junto con una semilla fija ("seed43"). Los únicos metadatos declarados son las etiquetas `pytorch` y `llama`, y el repositorio ocupa 6,4 GB.
 
 No existe documentación publicada por el autor: no hay model card descriptiva, ni pipeline declarado, ni licencia, ni idiomas soportados, ni resultados de evaluación. Las 2 interacciones de tipo "like" y las 0 descargas indican que se trata de un artefacto de investigación reciente y sin adopción pública. Cualquier afirmación sobre su funcionamiento interno en esta ficha se marca explícitamente como inferencia a partir del nombre y las etiquetas, no como dato confirmado.
 
@@ -12,7 +12,7 @@ Su relevancia potencial es la de un checkpoint reproducible de un estudio de abl
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiqueta `llama` en HuggingFace, sin confirmar por el autor) |
+| Arquitectura | no disponible (etiqueta `llama` en Hugging Face, sin confirmar por el autor) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible (no hay indicios de que sea MoE) |
 | Longitud de contexto | no disponible |
@@ -52,7 +52,7 @@ Advertencia previa: dado que no existen especificaciones confirmadas, estos esce
 - Evaluación comparativa de razonamiento matemático: puede emplearse como uno de los brazos de un estudio que mida precisión en problemas aritméticos de varios pasos frente a un modelo base sin la modificación "anchor-removal".
 - Estudio de estabilidad de semillas: al estar entrenado con semilla fija, permite aislar la varianza introducida por otros hiperparámetros en lugar de por la inicialización.
 - Análisis de mecanismos de atención: el parámetro k=20 documentado en el nombre hace que el checkpoint sea un punto de partida para inspeccionar mapas de atención en tareas de razonamiento.
-- Docencia y formación en técnicas de ajuste fino: sirve como ejemplo práctico de nomenclatura de experimentos reproducibles y de publicación de artefactos en HuggingFace.
+- Docencia y formación en técnicas de ajuste fino: sirve como ejemplo práctico de nomenclatura de experimentos reproducibles y de publicación de artefactos en Hugging Face.
 - Generación de soluciones matemáticas paso a paso en entornos controlados: si el modelo conserva la capacidad de cadena de razonamiento, podría emplearse en un asistente educativo offline, siempre que se valide antes su precisión real.
 - Integración en pipelines de investigación con `transformers` y PyTorch: el formato de pesos nativo permite cargarlo directamente en el ecosistema estándar sin conversión adicional.
 
@@ -79,7 +79,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anchor-removal-gsm8k-tau0.6-attention-k20-seed43 | no disponible | no disponible | no disponible | no disponible | HuggingFace (repo privado de facto: 0 descargas) |
+| anchor-removal-gsm8k-tau0.6-attention-k20-seed43 | no disponible | no disponible | no disponible | no disponible | Hugging Face (repo privado de facto: 0 descargas) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed43
+- Repositorio en Hugging Face: https://huggingface.co/maxbhartman/anchor-removal-gsm8k-tau0.6-attention-k20-seed43
 - Perfil del autor: https://huggingface.co/maxbhartman
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo en la búsqueda web realizada. Los resultados devueltos (documentos sobre esfuerzo cortante y resistencia de materiales) no son relevantes y se omiten deliberadamente.

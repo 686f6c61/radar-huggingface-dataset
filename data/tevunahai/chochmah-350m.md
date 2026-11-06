@@ -46,7 +46,7 @@ El entrenamiento se realizó desde cero sobre 29.990 millones de tokens (57.200 
 
 ## Benchmarks y rendimiento
 
-El autor declara los siguientes resultados en el model-index de HuggingFace, obtenidos con lm-evaluation-harness en modo 0-shot:
+El autor declara los siguientes resultados en el model-index de Hugging Face, obtenidos con lm-evaluation-harness en modo 0-shot:
 
 | Tarea | Dataset | Métrica | Valor |
 |---|---|---|---|
@@ -93,8 +93,8 @@ La comparativa es cualitativa porque no se han publicado resultados de benchmark
 
 ## Enlaces
 
-- [HuggingFace - TevunahAi/chochmah-350m](https://huggingface.co/TevunahAi/chochmah-350m)
-- [Perfil de TevunahAi en HuggingFace](https://huggingface.co/TevunahAi)
+- [Hugging Face - TevunahAi/chochmah-350m](https://huggingface.co/TevunahAi/chochmah-350m)
+- [Perfil de TevunahAi en Hugging Face](https://huggingface.co/TevunahAi)
 - [GitHub de TevunahAi](https://github.com/TevunahAi)
 - [Sitio web de Tevunah.ai](https://github.com/TevunahAi/site)
 - [lm-evaluation-harness (EleutherAI)](https://github.com/EleutherAI/lm-evaluation-harness)

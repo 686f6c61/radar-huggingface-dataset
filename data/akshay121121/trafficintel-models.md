@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Trafficintel-models es un repositorio de modelos publicado en HuggingFace por el usuario Akshay121121. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia (MIT), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamano de 0,2 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 18 de septiembre de 2026.
+Trafficintel-models es un repositorio de modelos publicado en Hugging Face por el usuario Akshay121121. La informacion disponible es extremadamente limitada: la model card no contiene mas que la declaracion de licencia (MIT), sin descripcion del modelo, arquitectura, datos de entrenamiento ni instrucciones de uso. El repositorio tiene un tamano de 0,2 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 18 de septiembre de 2026.
 
 El nombre del repositorio sugiere un conjunto de modelos orientados a inteligencia de trafico (posiblemente vision por computador aplicada a analitica vial), pero esta interpretacion no esta confirmada por ninguna fuente oficial del autor. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni tarea pipeline asociada.
 
@@ -23,7 +23,7 @@ Dado que no existen resultados de benchmarks, documentacion tecnica ni referenci
 
 ## Arquitectura y entrenamiento
 
-No disponible. La model card publicada en HuggingFace unicamente contiene el campo `license: mit` y no incluye ninguna seccion descriptiva sobre arquitectura (transformer, MoE, SSM, hibrida u otra), composicion del dataset, numero de tokens de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o destilacion.
+No disponible. La model card publicada en Hugging Face unicamente contiene el campo `license: mit` y no incluye ninguna seccion descriptiva sobre arquitectura (transformer, MoE, SSM, hibrida u otra), composicion del dataset, numero de tokens de entrenamiento, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan innovaciones tecnicas como decodificacion especulativa, atencion lineal o destilacion.
 
 El tamano del repositorio (0,2 GB) es el unico dato cuantitativo objetivo, pero resulta insuficiente para inferir la naturaleza de los pesos: podria tratarse de pesos en precision reducida, adaptadores LoRA, un conjunto de checkpoints pequenos o incluso artefactos auxiliares (tokenizadores, configuraciones, indices). Cualquier conclusion al respecto seria especulativa.
 
@@ -77,6 +77,6 @@ No disponible. No es posible identificar alternativas comparables sin conocer la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Akshay121121/trafficintel-models
+- Hugging Face: https://huggingface.co/Akshay121121/trafficintel-models
 - Model card del autor: contiene unicamente la declaracion `license: mit`, sin secciones adicionales.
 - Busqueda web: no se ha encontrado ningun enlace relevante (paper, blog, repositorio de codigo o demo) asociado a este modelo. Los resultados devueltos corresponden a paginas genericas de GitHub, Reddit y Zhihu, sin relacion con el repositorio.

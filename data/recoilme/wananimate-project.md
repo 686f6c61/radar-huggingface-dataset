@@ -73,5 +73,5 @@ No disponible. Este repositorio no contiene un modelo independiente, sino un res
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/recoilme/wananimate-project
+- Repositorio Hugging Face: https://huggingface.co/recoilme/wananimate-project
 - No se proporcionan otros enlaces en la información disponible (papers, blogs, repos oficiales de Wan o SCAIL).

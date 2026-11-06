@@ -49,7 +49,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - VRAM estimada para inferencia: en precisión fp16, aproximadamente 1 GB; en int8, alrededor de 0,5 GB; en int4, menos de 0,3 GB. Estas cifras son estimaciones basadas en el tamaño de parámetros y no han sido confirmadas por el autor.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, como NVIDIA GTX 1650, RTX 2060 o superiores. También puede ejecutarse en CPU con llama.cpp u Ollama, aunque con mayor latencia.
 - Cabe en GPUs de consumo: sí, en prácticamente cualquier GPU moderna.
-- Opciones de despliegue: compatible con Transformers, text-generation-inference, vLLM (si se adapta), llama.cpp, Ollama y TGI, según los tags de HuggingFace.
+- Opciones de despliegue: compatible con Transformers, text-generation-inference, vLLM (si se adapta), llama.cpp, Ollama y TGI, según los tags de Hugging Face.
 - Latencia y throughput: no disponibles. Para un modelo de 0.5B, se espera una generación de decenas de tokens por segundo en GPU, pero no hay mediciones publicadas.
 
 ## Comparativa con modelos similares
@@ -73,7 +73,7 @@ La comparación es limitada porque no se dispone de datos de rendimiento del mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ISB369/shellminator-qwen05b-bash-distilled
+- Modelo en Hugging Face: https://huggingface.co/ISB369/shellminator-qwen05b-bash-distilled
 - Modelo relacionado del mismo autor: https://huggingface.co/ISB369/shellminator-270m-bash-distilled
 - Datasets del autor: https://huggingface.co/ISB369/datasets
 - Repositorio GitHub "Shellminator" (librería de terminal, no relacionada directamente con el modelo): https://github.com/Lavenes-Release/Shellminator/blob/main/README.md

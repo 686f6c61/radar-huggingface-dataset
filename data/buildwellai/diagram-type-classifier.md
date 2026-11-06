@@ -91,7 +91,7 @@ No se han encontrado modelos comparables en la información proporcionada. No se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Buildwellai/diagram-type-classifier
+- Hugging Face: https://huggingface.co/Buildwellai/diagram-type-classifier
 - Sitio web de BuildwellAI: https://www.buildwellai.com/
 - Buildwell THREAD: https://thread.buildwellai.com/
 - Centro de ayuda de BuildwellAI: https://help.buildwellai.com/

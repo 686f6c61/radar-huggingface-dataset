@@ -101,7 +101,7 @@ La comparacion cuantitativa entre estas opciones no puede realizarse con los dat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/Nemotron-3-Diarization
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/Nemotron-3-Diarization
 - Modelo base (NVIDIA): https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Biblioteca mlx-audio: https://github.com/Blaizzy/mlx-audio
 - Model card del modelo original (datos de entrenamiento, evaluacion y licencia): https://huggingface.co/nvidia/Nemotron-3-Diarization

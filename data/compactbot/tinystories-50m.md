@@ -117,7 +117,7 @@ Los tres modelos comparables pertenecen al mismo ecosistema TinyStories y persig
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Compactbot/tinystories-50m
+- Modelo en Hugging Face: https://huggingface.co/Compactbot/tinystories-50m
 - Dataset de entrenamiento: https://huggingface.co/datasets/ronendagan/TinyStories
 - StoryGPT, transformer de ~50M preentrenado desde cero sobre TinyStories: https://github.com/ZiadXI/StoryGPT
 - hayder86al/tinystories-50m-instruct (variante con ajuste por instrucciones): https://huggingface.co/hayder86al/tinystories-50m-instruct

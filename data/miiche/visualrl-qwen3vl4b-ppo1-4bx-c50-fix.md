@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Miiche/visualrl-qwen3vl4b-ppo1-4bx-c50-fix` es un repositorio de pesos alojado en HuggingFace por el usuario Miiche. El identificador sugiere una variante de Qwen3-VL de 4.000 millones de parametros sometida a un proceso de ajuste con PPO (Proximal Policy Optimization) sobre tareas visuales, pero esta inferencia procede unicamente del nombre del repositorio: no hay model card, configuracion ni documentacion publicada que la confirme.
+`Miiche/visualrl-qwen3vl4b-ppo1-4bx-c50-fix` es un repositorio de pesos alojado en Hugging Face por el usuario Miiche. El identificador sugiere una variante de Qwen3-VL de 4.000 millones de parametros sometida a un proceso de ajuste con PPO (Proximal Policy Optimization) sobre tareas visuales, pero esta inferencia procede unicamente del nombre del repositorio: no hay model card, configuracion ni documentacion publicada que la confirme.
 
 La relevancia del repositorio es limitada en su estado actual. Acumula 0 descargas y 1 like, no declara licencia, idiomas ni pipeline, y su tamano (667,1 GB) indica que contiene un volumen elevado de artefactos de entrenamiento (checkpoints intermedios, estados de optimizador, posibles copias del modelo base) mas que un unico conjunto de pesos desplegable. Sin model card no es posible determinar que incluye cada directorio.
 
@@ -108,6 +108,6 @@ La unica conclusion defendible con la informacion disponible es que no existe ba
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-4bx-c50-fix
+- Repositorio en Hugging Face: https://huggingface.co/Miiche/visualrl-qwen3vl4b-ppo1-4bx-c50-fix
 - Busqueda web: no se han encontrado enlaces relevantes al modelo. Los resultados recuperados corresponden a resumenes de capitulos de *To Kill a Mockingbird* (litcharts.com, storgy.com, enotes.com, americanliterature.com, ursummary.com) y no guardan relacion con el objeto de esta ficha.
 - Paper, blog, repositorio de codigo o demo: no disponibles.

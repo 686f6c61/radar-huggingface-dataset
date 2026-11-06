@@ -29,7 +29,7 @@ La conversión a GGUF se realizó con `convert_hf_to_gguf.py` usando `--outtype 
 
 - Generación de texto en danés: modelo post-entrenado específicamente para este idioma, con mejora documentada en tareas de comprensión y generación en danés.
 - Resumen de texto: caso de uso documentado en la aplicación transcriber para resumir reuniones en danés.
-- Conversación: el modelo está etiquetado como "conversational" en HuggingFace, lo que sugiere capacidad de diálogo multi-turno.
+- Conversación: el modelo está etiquetado como "conversational" en Hugging Face, lo que sugiere capacidad de diálogo multi-turno.
 - Capacidades multilingües: no documentadas; el modelo base Qwen3.5 probablemente es multilingüe, pero no hay verificación oficial de la variante danesa.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y multi-step reasoning: no disponible en la información proporcionada.
@@ -79,7 +79,7 @@ Los tres modelos son variantes GGUF del mismo checkpoint base Qwen3.5-9B. La dif
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mortenzeiner/munin-qwen3.5-9B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mortenzeiner/munin-qwen3.5-9B-GGUF
 - Modelo base (post-entrenado): https://huggingface.co/danish-foundation-models/munin-qwen3.5-9B
 - Aplicación transcriber: https://github.com/Morteningemann86/transcriber
 - Conversión alternativa GGUF: https://huggingface.co/mradermacher/munin-qwen3.5-9B-GGUF

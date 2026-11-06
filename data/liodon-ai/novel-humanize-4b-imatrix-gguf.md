@@ -93,7 +93,7 @@ Los datos de las alternativas provienen de sus model cards públicas. No hay ben
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/novel-humanize-4b-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/novel-humanize-4b-imatrix-GGUF
 - Variante sin iMatrix: https://huggingface.co/liodon-ai/novel-humanize-4b-GGUF
 - Modelo base del ajuste fino: https://huggingface.co/gugujiji/novel-humanize-4b
 - Modelo original Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B

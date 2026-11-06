@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rebeccasg/dino-baseline97 es un repositorio de HuggingFace publicado por el usuario rebeccasg que contiene una implementacion de referencia de una arquitectura denominada Dino orientada a tareas de generacion. Se distribuye bajo licencia MIT e incluye el codigo del modelo (model.py), la configuracion de arquitectura (config.json), la receta de experimento por defecto (training_args.json) y un checkpoint de inicializacion en formato safetensors.
+rebeccasg/dino-baseline97 es un repositorio de Hugging Face publicado por el usuario rebeccasg que contiene una implementacion de referencia de una arquitectura denominada Dino orientada a tareas de generacion. Se distribuye bajo licencia MIT e incluye el codigo del modelo (model.py), la configuracion de arquitectura (config.json), la receta de experimento por defecto (training_args.json) y un checkpoint de inicializacion en formato safetensors.
 
 El propio autor indica de forma explicita que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna puntuacion de benchmark. El repositorio se presenta como un punto de partida reproducible para experimentacion, con codigo transparente y un ejemplo de smoke test ejecutable, en lugar de como un modelo listo para produccion.
 
@@ -82,6 +82,6 @@ No disponible. La informacion proporcionada no incluye modelos de referencia con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rebeccasg/dino-baseline97
+- Hugging Face: https://huggingface.co/rebeccasg/dino-baseline97
 - Ficheros incluidos en el repositorio: model.py, README.md, config.json, training_args.json, model.safetensors
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardan relacion con este modelo.

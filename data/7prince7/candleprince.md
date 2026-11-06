@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `7prince7/candleprince` es un modelo publicado en HuggingFace por el usuario `7prince7`, con un tamaño de repositorio de 6.0 GB y una fecha de creación de julio de 2026. No se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades, ya que la página del modelo no ofrece metadatos técnicos más allá del tamaño del repositorio y las etiquetas `region:us`. El nombre sugiere una posible relación con el framework Candle de HuggingFace para aprendizaje automático en Rust, aunque no hay confirmación oficial.
+El modelo `7prince7/candleprince` es un modelo publicado en Hugging Face por el usuario `7prince7`, con un tamaño de repositorio de 6.0 GB y una fecha de creación de julio de 2026. No se dispone de información pública sobre su arquitectura, parámetros, licencia o capacidades, ya que la página del modelo no ofrece metadatos técnicos más allá del tamaño del repositorio y las etiquetas `region:us`. El nombre sugiere una posible relación con el framework Candle de Hugging Face para aprendizaje automático en Rust, aunque no hay confirmación oficial.
 
 A fecha de redacción de esta ficha, el modelo cuenta con 0 descargas y 2 likes, lo que indica que se trata de un lanzamiento reciente y sin adopción conocida. La ausencia de documentación técnica y de resultados de evaluación hace imposible determinar su utilidad práctica o su rendimiento. Se recomienda precaución antes de considerar su uso en entornos de producción.
 
@@ -21,7 +21,7 @@ A fecha de redacción de esta ficha, el modelo cuenta con 0 descargas y 2 likes,
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo. El nombre `candleprince` podría aludir al framework Candle de HuggingFace, un entorno minimalista para aprendizaje automático en Rust, pero no hay evidencia que confirme que el modelo esté implementado con dicho framework. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de ajuste como RLHF o DPO. Sin estos datos, cualquier afirmación sobre su diseño o metodología de entrenamiento sería especulativa.
+No se ha publicado información sobre la arquitectura del modelo. El nombre `candleprince` podría aludir al framework Candle de Hugging Face, un entorno minimalista para aprendizaje automático en Rust, pero no hay evidencia que confirme que el modelo esté implementado con dicho framework. Tampoco se conocen los datos de entrenamiento, el número de tokens procesados, ni si se aplicaron técnicas de ajuste como RLHF o DPO. Sin estos datos, cualquier afirmación sobre su diseño o metodología de entrenamiento sería especulativa.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ No se dispone de información verificada sobre las capacidades del modelo. No ha
 
 ## Casos de uso
 
-No es posible recomendar casos de uso concretos sin información sobre las capacidades del modelo. Cualquier aplicación práctica requeriría una evaluación previa que no se ha publicado. Hasta que el autor publique documentación técnica, benchmarks o ejemplos de uso, el modelo no debería considerarse para tareas específicas. Se recomienda seguir el repositorio en HuggingFace para futuras actualizaciones.
+No es posible recomendar casos de uso concretos sin información sobre las capacidades del modelo. Cualquier aplicación práctica requeriría una evaluación previa que no se ha publicado. Hasta que el autor publique documentación técnica, benchmarks o ejemplos de uso, el modelo no debería considerarse para tareas específicas. Se recomienda seguir el repositorio en Hugging Face para futuras actualizaciones.
 
 ## Benchmarks y rendimiento
 
@@ -54,6 +54,6 @@ No disponible. Al no conocerse la arquitectura ni los parámetros del modelo, no
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/7prince7/candleprince
-- Perfil del autor en HuggingFace: https://huggingface.co/7prince7
+- Página del modelo en Hugging Face: https://huggingface.co/7prince7/candleprince
+- Perfil del autor en Hugging Face: https://huggingface.co/7prince7
 - Repositorio de Candle (posible relación, no confirmada): https://github.com/huggingface/candle

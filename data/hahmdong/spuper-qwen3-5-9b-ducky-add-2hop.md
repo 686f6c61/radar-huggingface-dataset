@@ -61,6 +61,6 @@ No se dispone de resultados de rendimiento para comparar el modelo con otras alt
 - Falta de trazabilidad: el dataset y el objetivo del ajuste (el nombre "ducky-add-2hop" sugiere una tarea de razonamiento multi-paso, pero no se detalla) no estan documentados, lo que dificulta evaluar su idoneidad para tareas concretas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-ducky-add-2hop
+- Hugging Face: https://huggingface.co/Hahmdong/SPUPER-qwen3.5-9b-ducky-add-2hop
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/dyhahm-Korea%20Advanced%20Institute%20of%20Science%20and%20Technology/SPUPER-SFT/runs/awdpi3wh

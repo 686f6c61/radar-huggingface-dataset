@@ -83,7 +83,7 @@ No disponible. El artefacto es un dataset, no un modelo, y la informacion propor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iservice/predator-ai-research
+- Repositorio en Hugging Face: https://huggingface.co/iservice/predator-ai-research
 - Endpoint de la API x402 citado en la model card: https://most-daylight-fraying.ngrok-free.dev/x402/ai/query
 - Contacto indicado en la model card: iservice49800@gmail.com
 - Papers, blogs, repositorios o demos adicionales: no disponible. La busqueda web no devolvio enlaces relacionados con este artefacto.

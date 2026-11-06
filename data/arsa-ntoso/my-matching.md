@@ -2,7 +2,7 @@
 
 ## Resumen
 
-my-matching es un prototipo de investigacion publicado por el usuario arsa-ntoso en HuggingFace bajo licencia MIT. Se presenta explicitamente como una implementacion de tipo Mixer orientada a tareas de matching (emparejamiento), en una configuracion de escala "nano" y con 16.576 parametros totales, un tamano marginal incluso para estandares de modelos experimentales. El repositorio pesa menos de 0,1 GB y los pesos se distribuyen en formato safetensors.
+my-matching es un prototipo de investigacion publicado por el usuario arsa-ntoso en Hugging Face bajo licencia MIT. Se presenta explicitamente como una implementacion de tipo Mixer orientada a tareas de matching (emparejamiento), en una configuracion de escala "nano" y con 16.576 parametros totales, un tamano marginal incluso para estandares de modelos experimentales. El repositorio pesa menos de 0,1 GB y los pesos se distribuyen en formato safetensors.
 
 El propio autor deja claro en la model card que el fichero model.safetensors es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y no un checkpoint entrenado ni evaluado. No se reclama ninguna puntuacion de benchmark, no se documenta un dataset de entrenamiento y no se declaran idiomas soportados. La configuracion por defecto del script usa el optimizador adafactor con un schedule coseno, valores de partida y no evidencia de una ejecucion completada.
 
@@ -80,6 +80,6 @@ No se dispone de modelos comparables identificados en la informacion proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arsa-ntoso/my-matching
+- Modelo en Hugging Face: https://huggingface.co/arsa-ntoso/my-matching
 - Ficheros incluidos en el repositorio: model.py, README.md, config.json, training_args.json, model.safetensors
 - Papers, blogs, repositorios o demos adicionales: no disponibles en la informacion proporcionada.

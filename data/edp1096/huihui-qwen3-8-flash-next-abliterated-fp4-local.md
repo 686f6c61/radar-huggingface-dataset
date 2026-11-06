@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local es un checkpoint multimodal de 96.486.615.005 parámetros (~96,5 mil millones) publicado por el usuario edp1096 en HuggingFace, derivado del checkpoint cuantizado de NVIDIA `nvidia/Qwen3.8-Flash-Next-FP4-Local` y del modelo abliterado `huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF`. No es un entrenamiento nuevo: es una transferencia de delta cuantizado en la que los tensores modificados por la auditoría de Huihui v2 se reconstruyen, redondean a BF16 y se codifican como MXFP8, mientras que los expertos enrutados NVFP4, sus escalas CSF, el módulo PLE, el módulo MTP, la visión y el tokenizador conservan los bytes del checkpoint original de NVIDIA.
+Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local es un checkpoint multimodal de 96.486.615.005 parámetros (~96,5 mil millones) publicado por el usuario edp1096 en Hugging Face, derivado del checkpoint cuantizado de NVIDIA `nvidia/Qwen3.8-Flash-Next-FP4-Local` y del modelo abliterado `huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF`. No es un entrenamiento nuevo: es una transferencia de delta cuantizado en la que los tensores modificados por la auditoría de Huihui v2 se reconstruyen, redondean a BF16 y se codifican como MXFP8, mientras que los expertos enrutados NVFP4, sus escalas CSF, el módulo PLE, el módulo MTP, la visión y el tokenizador conservan los bytes del checkpoint original de NVIDIA.
 
 El problema que resuelve es doble. Por un lado, permite ejecutar localmente un modelo de ~96,5B con expertos en 4 bits (NVFP4) y proyecciones en 8 bits (MXFP8) sobre hardware Blackwell, con un repositorio de 102,3 GB. Por otro, traslada el comportamiento sin rechazos (abliterated) de la variante Huihui v2 al formato FP4-Local de NVIDIA, algo que no ofrecía ninguna de las dos fuentes por separado. Es relevante ahora porque la cuantización nativa FP4 en vLLM con runtime B12X permite servir modelos de esta escala en un único nodo con memoria unificada, sin recalibración de activaciones.
 
@@ -87,10 +87,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Cuantizacion / formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local | 96.486.615.005 | Prueba a 1.048.056 tokens; especificacion oficial no disponible | NVFP4 + MXFP8, safetensors, vLLM | NVIDIA Open Model Agreement + Qwen Community License | Publico en HuggingFace; 102,3 GB; 0 descargas |
-| nvidia/Qwen3.8-Flash-Next-FP4-Local | no disponible | no disponible | NVFP4, safetensors | NVIDIA Open Model Agreement | Publico en HuggingFace (fuente del checkpoint) |
-| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | no disponible | no disponible | GGUF (base Q8_0) | no disponible | Publico en HuggingFace (fuente del delta abliterated) |
-| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF (Q8_0) | no disponible | Publico en HuggingFace (fuente citada para la transferencia) |
+| edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local | 96.486.615.005 | Prueba a 1.048.056 tokens; especificacion oficial no disponible | NVFP4 + MXFP8, safetensors, vLLM | NVIDIA Open Model Agreement + Qwen Community License | Publico en Hugging Face; 102,3 GB; 0 descargas |
+| nvidia/Qwen3.8-Flash-Next-FP4-Local | no disponible | no disponible | NVFP4, safetensors | NVIDIA Open Model Agreement | Publico en Hugging Face (fuente del checkpoint) |
+| huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF | no disponible | no disponible | GGUF (base Q8_0) | no disponible | Publico en Hugging Face (fuente del delta abliterated) |
+| unsloth/Qwen3.8-Flash-Next-GGUF | no disponible | no disponible | GGUF (Q8_0) | no disponible | Publico en Hugging Face (fuente citada para la transferencia) |
 
 No se dispone de datos de rendimiento comparado entre estas variantes. La unica comparacion registrada es la cualificacion de runtime en DGX Spark, donde el autor indica que tanto el baseline de NVIDIA como este checkpoint completaron la misma prueba de recuperacion a 1.048.056 tokens y que ambos muestran limitaciones de calidad de prosa y uso de swap adicional en el arranque.
 
@@ -105,13 +105,13 @@ No se dispone de datos de rendimiento comparado entre estas variantes. La unica 
 - Limitaciones de contexto: la ventana probada es de 1.048.056 tokens con un overlay YaRN de factor 4 y el runtime B12X fijado; fuera de esa configuracion el comportamiento no esta verificado.
 - Calidad de prosa: el autor reporta limitaciones de prosa en las muestras reducidas disponibles, tanto en esta variante como en el baseline.
 - Consumo de memoria en arranque: requiere swap adicional en el escenario probado, lo que afecta a la planificacion de capacidad.
-- Licencia: se aplican simultaneamente el NVIDIA Open Model Agreement y la Qwen Community License. El campo de HuggingFace figura como `other` / `nvidia-open-model-agreement`. Antes de cualquier uso comercial hay que revisar ambas licencias, incluidos los terminos de redistribucion del Qwen Community License, que no se detallan en la informacion proporcionada.
+- Licencia: se aplican simultaneamente el NVIDIA Open Model Agreement y la Qwen Community License. El campo de Hugging Face figura como `other` / `nvidia-open-model-agreement`. Antes de cualquier uso comercial hay que revisar ambas licencias, incluidos los terminos de redistribucion del Qwen Community License, que no se detallan en la informacion proporcionada.
 - Estado del repositorio: creado y actualizado el 2026-10-16, con 0 descargas y 0 likes. No hay evidencia de adopcion ni de validacion independiente por terceros.
 - Compatibilidad: al ser safetensors NVFP4/MXFP8, no es desplegable con llama.cpp, Ollama ni herramientas GGUF; requiere vLLM y hardware Blackwell.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local
+- Modelo en Hugging Face: https://huggingface.co/edp1096/Huihui-Qwen3.8-Flash-Next-abliterated-FP4-Local
 - Checkpoint base NVIDIA: https://huggingface.co/nvidia/Qwen3.8-Flash-Next-FP4-Local
 - Modelo abliterated Huihui v2: https://huggingface.co/huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-v2-GGUF
 - Pesos Q8 de Unsloth (fuente citada): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF

@@ -21,7 +21,7 @@ Su relevancia es práctica más que competitiva: documenta un flujo completo de 
 | Licencia | Mixta (campo `license: other`, `license_name: mixed-see-readme`). Cada fichero hereda la licencia de su base: LFM Open License v1.0 para LFM2.5-230M y sus derivados; Apache-2.0 para Gemma 4 E4B, Gemma 4 12B y sus derivados; Apache-2.0 para Qwen3-4B-Instruct-2507, Qwen3-8B y sus derivados |
 | Formato de pesos | safetensors (adaptadores PEFT y modelos fusionados) y GGUF (bases, LoRA y builds fusionados) |
 
-Nota de consistencia: HuggingFace informa de un tamaño de repositorio de 1,0 GB, mientras que la model card declara 4,7 GB en `adapters/`, 1,3 GB en `merged/` y 28 GB en `serve/`. La discrepancia no está explicada en la información disponible.
+Nota de consistencia: Hugging Face informa de un tamaño de repositorio de 1,0 GB, mientras que la model card declara 4,7 GB en `adapters/`, 1,3 GB en `merged/` y 28 GB en `serve/`. La discrepancia no está explicada en la información disponible.
 
 ## Arquitectura y entrenamiento
 
@@ -98,12 +98,12 @@ Datos de rendimiento comparado: no disponible.
 - Longitud de contexto: no disponible, lo que impide planificar conversaciones largas o catálogos extensos sin pruebas previas.
 - Sesgos: no se documenta ninguna evaluación de sesgos ni la composición del dataset de entrenamiento.
 - Sin métricas: no hay benchmarks ni evaluación cuantitativa publicada, solo una validación cualitativa para las demos concretas.
-- Inconsistencia de tamaño: HuggingFace declara 1,0 GB de repositorio frente a los 4,7 GB + 1,3 GB + 28 GB que indica la model card, lo que puede afectar a la planificación de la descarga.
+- Inconsistencia de tamaño: Hugging Face declara 1,0 GB de repositorio frente a los 4,7 GB + 1,3 GB + 28 GB que indica la model card, lo que puede afectar a la planificación de la descarga.
 - Las demos públicas no usan este repositorio: cargan desde `naklitechie/pitch-demo-weights`, de modo que el comportamiento observado en las demos no refleja necesariamente el de estos ficheros.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/naklitechie/pitchlab-models
+- Repositorio en Hugging Face: https://huggingface.co/naklitechie/pitchlab-models
 - Pesos de las demos: https://huggingface.co/naklitechie/pitch-demo-weights
 - Demos en vivo: https://demos.chiragpatnaik.com
 - Modelo base LiquidAI/LFM2.5-230M: https://huggingface.co/LiquidAI/LFM2.5-230M
@@ -111,7 +111,7 @@ Datos de rendimiento comparado: no disponible.
 - Modelo base google/gemma-4-12B-it-qat-q4_0-unquantized: https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-unquantized
 - Modelo base Qwen/Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo base Qwen/Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
-- Perfil del autor en HuggingFace: https://huggingface.co/naklitechie
+- Perfil del autor en Hugging Face: https://huggingface.co/naklitechie
 - Perfil del autor en GitHub: https://github.com/naklitechie
 - Sitio personal: https://www.chiragpatnaik.com
 - Sitio del proyecto: https://naklitechie.com

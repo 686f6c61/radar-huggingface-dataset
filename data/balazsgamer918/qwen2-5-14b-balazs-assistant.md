@@ -23,7 +23,7 @@ Es relevante sobre todo como ejemplo de ajuste fino ligero: el repositorio ocupa
 | Libreria | transformers |
 | Modelo base | unsloth/Qwen2.5-14B-Instruct-bnb-4bit |
 | Tamano del repositorio | 0,6 GB |
-| Fecha de creacion | 2026-09-23 (segun los metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-23 (segun los metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,10 +74,10 @@ Las cifras siguientes son estimaciones derivadas del tamano del modelo base (14 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| qwen2.5-14b-balazs-assistant (este) | 14B (repo de 0,6 GB) | no disponible | apache-2.0 | HuggingFace, 0 descargas |
-| Qwen2.5-14B-Instruct (base) | 14B | no disponible en la informacion consultada | apache-2.0 | HuggingFace (Qwen/Qwen2.5-14B) |
-| Gemma2-27B-IT | 27B (segun la denominacion) | no disponible | no disponible en la informacion consultada | HuggingFace |
-| Phi-3.5-MoE-Instruct | no disponible | no disponible | no disponible en la informacion consultada | HuggingFace |
+| qwen2.5-14b-balazs-assistant (este) | 14B (repo de 0,6 GB) | no disponible | apache-2.0 | Hugging Face, 0 descargas |
+| Qwen2.5-14B-Instruct (base) | 14B | no disponible en la informacion consultada | apache-2.0 | Hugging Face (Qwen/Qwen2.5-14B) |
+| Gemma2-27B-IT | 27B (segun la denominacion) | no disponible | no disponible en la informacion consultada | Hugging Face |
+| Phi-3.5-MoE-Instruct | no disponible | no disponible | no disponible en la informacion consultada | Hugging Face |
 
 Nota: la comparativa con Gemma2-27B-IT y Phi-3.5-MoE-Instruct procede de la afirmacion cualitativa publicada en el blog de Qwen2.5 sobre los modelos base de la serie; no hay cifras ni evaluaciones que permitan comparar directamente con este fine-tune.
 
@@ -95,7 +95,7 @@ Nota: la comparativa con Gemma2-27B-IT y Phi-3.5-MoE-Instruct procede de la afir
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/balazsgamer918/qwen2.5-14b-balazs-assistant
+- Modelo en Hugging Face: https://huggingface.co/balazsgamer918/qwen2.5-14b-balazs-assistant
 - Modelo base del fine-tune: https://huggingface.co/unsloth/Qwen2.5-14B-Instruct-bnb-4bit
 - Qwen2.5-14B (modelo original de Qwen): https://huggingface.co/Qwen/Qwen2.5-14B
 - Coleccion Qwen2.5: https://huggingface.co/collections/Qwen/qwen25

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wangzyuan/GeoEvidence-Answer-Training-Facts` no es un modelo de lenguaje, sino un repositorio de metadatos factuales publicado en HuggingFace bajo la licencia `factual-metadata-only`. Contiene un registro de configuraciones numericas declaradas y huellas (hashes) de ficheros fuente asociados a un proyecto interno de entrenamiento denominado GeoEvidence, con un recetario concreto: rollouts "answer-only", lote por defecto de 42 pares, una epoca y semilla 42. El autor lo publica como "registro de preservacion factual" y advierte explicitamente de que no es codigo fuente de GR1, ni un bundle de reproduccion, ni un dataset de entrenamiento, ni una afirmacion de rendimiento.
+`wangzyuan/GeoEvidence-Answer-Training-Facts` no es un modelo de lenguaje, sino un repositorio de metadatos factuales publicado en Hugging Face bajo la licencia `factual-metadata-only`. Contiene un registro de configuraciones numericas declaradas y huellas (hashes) de ficheros fuente asociados a un proyecto interno de entrenamiento denominado GeoEvidence, con un recetario concreto: rollouts "answer-only", lote por defecto de 42 pares, una epoca y semilla 42. El autor lo publica como "registro de preservacion factual" y advierte explicitamente de que no es codigo fuente de GR1, ni un bundle de reproduccion, ni un dataset de entrenamiento, ni una afirmacion de rendimiento.
 
 El repositorio incluye ficheros como `TRAINING_FACTS.json`, `VERSION_LICENSE_PARTITIONS.json`, `V1_ALIGNMENT_AGGREGATES.json` y `UPLOAD_MANIFEST.json`, que separan la instantanea de nivel superior de la copia de trabajo Git interna y del runtime `verl` (bajo licencia Apache 2.0 upstream). Los agregados de alineacion contienen metricas historicas solo numericas sobre 483 preguntas y 2509 pares, correspondientes a un protocolo anterior (v1), no al posterior v2.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 | Repositorio | Tipo de contenido | Parametros | Contexto | Licencia | Uso comercial |
 |---|---|---|---|---|---|
 | wangzyuan/GeoEvidence-Answer-Training-Facts | Metadatos factuales y hashes | no aplica | no aplica | `factual-metadata-only` | No concedido explicitamente |
-| Modelo generativo tipico en HuggingFace | Pesos y configuracion | variable | variable | variable | Segun licencia |
+| Modelo generativo tipico en Hugging Face | Pesos y configuracion | variable | variable | variable | Segun licencia |
 | Dataset de entrenamiento tipico | Muestras y anotaciones | no aplica | no aplica | variable | Segun licencia |
 
 No se dispone de repositorios comparables de la misma categoria (registros factuales de recetas de entrenamiento con particionado de licencias) en la informacion proporcionada.
@@ -84,7 +84,7 @@ No se dispone de repositorios comparables de la misma categoria (registros factu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wangzyuan/GeoEvidence-Answer-Training-Facts
+- Repositorio Hugging Face: https://huggingface.co/wangzyuan/GeoEvidence-Answer-Training-Facts
 - Terminos de licencia: https://huggingface.co/wangzyuan/GeoEvidence-Answer-Training-Facts/blob/main/TERMS.md
 - Manifiesto de subida: https://huggingface.co/wangzyuan/GeoEvidence-Answer-Training-Facts/blob/main/UPLOAD_MANIFEST.json
 - Runtime `verl` (licencia Apache 2.0 upstream, no extendida a este proyecto): no disponible en la informacion proporcionada

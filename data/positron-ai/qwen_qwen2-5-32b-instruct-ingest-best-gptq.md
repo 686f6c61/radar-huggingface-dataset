@@ -79,7 +79,7 @@ No hay comparativa publicada con otros modelos de tamaño similar (p.ej., Llama 
 
 ## Enlaces
 
-- [HuggingFace del modelo cuantizado](https://huggingface.co/positron-ai/Qwen_Qwen2.5-32B-Instruct-ingest-best-gptq)
-- [HuggingFace del modelo base](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
+- [Hugging Face del modelo cuantizado](https://huggingface.co/positron-ai/Qwen_Qwen2.5-32B-Instruct-ingest-best-gptq)
+- [Hugging Face del modelo base](https://huggingface.co/Qwen/Qwen2.5-32B-Instruct)
 - [Página de Ollama para qwen2.5:32b](https://ollama.com/library/qwen2.5:32b-instruct)
 - [llm-explorer (versión GPTQ Int8)](https://llm-explorer.com/model/Qwen%2FQwen2.5-32B-Instruct-GPTQ-Int8,4gqOKMnEBVtkTkmh6g271x)

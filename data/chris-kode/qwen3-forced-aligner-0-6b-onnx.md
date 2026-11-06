@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks comparativos con otras herramientas de alin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chris-Kode/qwen3-forced-aligner-0.6b-onnx
+- Modelo en Hugging Face: https://huggingface.co/Chris-Kode/qwen3-forced-aligner-0.6b-onnx
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B
 - Repositorio de scripts de construcción: incluido en la carpeta `scripts/` del repositorio (`build.py`, `qwen_wrap.py`, `verify.py`)
 - No se han encontrado otros enlaces (papers, blogs, demos) en la información proporcionada.

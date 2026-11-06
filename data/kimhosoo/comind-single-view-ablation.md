@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| comind-single-view-ablation (este) | 2B (base) | no disponible | Generacion V=1 independiente, ablacion | apache-2.0 | HuggingFace, 0 descargas |
-| nvidia/Cosmos-Predict2.5-2B (multivista, base) | 2B | no disponible | Generacion V=2 conjunta con atencion cruzada | Licencia NVIDIA del modelo base | HuggingFace, oficial |
-| nvidia/Cosmos-Reason1-7B | 7B | no disponible | Codificador de texto (VLM de razonamiento) | no disponible | HuggingFace, oficial |
+| comind-single-view-ablation (este) | 2B (base) | no disponible | Generacion V=1 independiente, ablacion | apache-2.0 | Hugging Face, 0 descargas |
+| nvidia/Cosmos-Predict2.5-2B (multivista, base) | 2B | no disponible | Generacion V=2 conjunta con atencion cruzada | Licencia NVIDIA del modelo base | Hugging Face, oficial |
+| nvidia/Cosmos-Reason1-7B | 7B | no disponible | Codificador de texto (VLM de razonamiento) | no disponible | Hugging Face, oficial |
 
 No se dispone de datos comparativos de rendimiento con otras alternativas de generación de vídeo egocéntrico en la información proporcionada. Cualquier comparación cuantitativa con modelos como los de la familia Cosmos, Open-Sora o similares sería especulativa y no se incluye.
 
@@ -85,7 +85,7 @@ No se dispone de datos comparativos de rendimiento con otras alternativas de gen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimhosoo/comind-single-view-ablation
+- Modelo en Hugging Face: https://huggingface.co/kimhosoo/comind-single-view-ablation
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Predict2.5-2B
 - Dataset de entrenamiento (CoMind single): https://huggingface.co/datasets/dhyun22/ego_gen_comind_single
 - Dataset sintético VRoid single: https://huggingface.co/datasets/dhyun22/ego_gen_vroid_single

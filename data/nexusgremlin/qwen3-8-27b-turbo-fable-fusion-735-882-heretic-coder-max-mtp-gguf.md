@@ -96,7 +96,7 @@ No se dispone de datos independientes para comparar rendimiento real; las compar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NexusGremlin/Qwen3.8-27B-TURBO-Fable-Fusion-735-882-Heretic-CODER-MAX-MTP-GGUF
+- Hugging Face: https://huggingface.co/NexusGremlin/Qwen3.8-27B-TURBO-Fable-Fusion-735-882-Heretic-CODER-MAX-MTP-GGUF
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Fine-tune de referencia del autor (Fable Fusion 711): https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Dataset citado: https://huggingface.co/datasets/DavidAU/Polar-STRICT-Datasets

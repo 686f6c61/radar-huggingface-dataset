@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SparkX2.6-MM-checkpoints-g4-v5 es un repositorio de puntos de control (checkpoints) de entrenamiento multimodal publicado por el usuario TassP0lar en HuggingFace. No se trata de un modelo listo para inferencia, sino de instantaneas del estado completo de un proceso de entrenamiento: pesos, estado del optimizador, planificador (scheduler), estados de generadores de numeros aleatorios (RNG) y cursor de datos. El repositorio ocupa 29,4 GB y esta pensado para reanudar entrenamientos de forma reproducible a partir de un commit concreto.
+SparkX2.6-MM-checkpoints-g4-v5 es un repositorio de puntos de control (checkpoints) de entrenamiento multimodal publicado por el usuario TassP0lar en Hugging Face. No se trata de un modelo listo para inferencia, sino de instantaneas del estado completo de un proceso de entrenamiento: pesos, estado del optimizador, planificador (scheduler), estados de generadores de numeros aleatorios (RNG) y cursor de datos. El repositorio ocupa 29,4 GB y esta pensado para reanudar entrenamientos de forma reproducible a partir de un commit concreto.
 
 La model card describe el contenido como "checkpoints publicos sanitizados y reanudables" de un modelo multimodal denominado Spark X2.6 VL. La sanitizacion elimina filas de evaluacion protegidas y metadatos de cuenta, de modo que las instantaneas publicas no coinciden exactamente con el estado interno de entrenamiento. El autor advierte explicitamente de que la restauracion debe hacerse solo desde un "receipt" verificado en su commit exacto, y de que no debe hacerse squash del historial durante una campana activa.
 
@@ -73,6 +73,6 @@ No disponible. La informacion proporcionada no identifica modelos comparables ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v5
+- Repositorio en Hugging Face: https://huggingface.co/TassP0lar/SparkX2.6-MM-checkpoints-g4-v5
 - Repositorio de runtime e instrucciones (GitHub): https://github.com/BaiTian6641/Spark-X2.6-VL
 - Dataset asociado (atribucion): https://huggingface.co/datasets/TassP0lar/SparkX2.6-MM

@@ -106,11 +106,11 @@ En la comparación con cagliostro-v3 a lo largo del entrenamiento (harness de en
 
 | Modelo | Parámetros | Contexto | Open SLM Index | Licencia | Disponibilidad |
 |---|---:|---|---:|---|---|
-| tinctura-v1 | 96,2M | no disponible | 20,81 | apache-2.0 | HuggingFace (safetensors) |
-| Rose-1.5-Medium | 98,2M | no disponible | 21,07 | no disponible en la información proporcionada | HuggingFace |
-| Surjo-100m | 97,7M | no disponible | 18,86 | no disponible en la información proporcionada | HuggingFace |
-| cRia-LM-75M | 75,7M | no disponible | 18,06 | no disponible en la información proporcionada | HuggingFace |
-| cagliostro-v3 | no disponible (30 capas) | no disponible | no disponible en la franja sub-100M | no disponible en la información proporcionada | HuggingFace |
+| tinctura-v1 | 96,2M | no disponible | 20,81 | apache-2.0 | Hugging Face (safetensors) |
+| Rose-1.5-Medium | 98,2M | no disponible | 21,07 | no disponible en la información proporcionada | Hugging Face |
+| Surjo-100m | 97,7M | no disponible | 18,86 | no disponible en la información proporcionada | Hugging Face |
+| cRia-LM-75M | 75,7M | no disponible | 18,06 | no disponible en la información proporcionada | Hugging Face |
+| cagliostro-v3 | no disponible (30 capas) | no disponible | no disponible en la franja sub-100M | no disponible en la información proporcionada | Hugging Face |
 
 La información disponible solo permite comparar parámetros, índice y disponibilidad; no hay datos de contexto, licencia ni rendimiento por tarea para los modelos alternativos, salvo las puntuaciones por benchmark de Rose-1.5-Medium que la propia model card menciona de forma cualitativa (por delante en ARC-Challenge y ArithMark-3, por detrás en ARC-Easy y PIQA). cagliostro-v3 no es un comparable directo por tamaño (30 capas frente a 18), pero sí el punto de referencia natural de la receta.
 
@@ -131,7 +131,7 @@ La información disponible solo permite comparar parámetros, índice y disponib
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bench-labs/tinctura-v1
+- Modelo en Hugging Face: https://huggingface.co/bench-labs/tinctura-v1
 - Modelo de referencia de la receta, cagliostro-v3: https://huggingface.co/bench-labs/cagliostro-v3
 - Open SLM Leaderboard (Space de AxiomicLabs): https://huggingface.co/spaces/AxiomicLabs/Open_SLM_Leaderboard
 - Dataset HuggingFaceTB/smollm-corpus: https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus

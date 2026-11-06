@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ZacharyEvans/swin-t-contrastive-tryout48` es un prototipo de investigación basado en la arquitectura Swin Transformer (variante "Swin T") orientado a tareas de aprendizaje contrastivo. Lo publica el usuario ZacharyEvans en HuggingFace bajo licencia MIT. Se trata de un checkpoint de inicialización, no de un modelo entrenado con resultados verificados: la propia model card advierte que no se presentan métricas de rendimiento y que el archivo `model.safetensors` sirve únicamente para pruebas de humo.
+El modelo `ZacharyEvans/swin-t-contrastive-tryout48` es un prototipo de investigación basado en la arquitectura Swin Transformer (variante "Swin T") orientado a tareas de aprendizaje contrastivo. Lo publica el usuario ZacharyEvans en Hugging Face bajo licencia MIT. Se trata de un checkpoint de inicialización, no de un modelo entrenado con resultados verificados: la propia model card advierte que no se presentan métricas de rendimiento y que el archivo `model.safetensors` sirve únicamente para pruebas de humo.
 
 El repositorio incluye el código fuente (`model.py`), una configuración de arquitectura (`config.json`), los argumentos de entrenamiento por defecto (`training_args.json`) y el checkpoint. La arquitectura declarada emplea atención lineal, co-atención, activación ReLU y normalización RMSNorm, aunque no se especifican detalles como el número de capas, cabezas o dimensiones ocultas. El número total de parámetros es de 16.576, una cifra extraordinariamente baja que confirma su naturaleza de prototipo mínimo.
 
@@ -72,6 +72,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ZacharyEvans/swin-t-contrastive-tryout48)
-- [Perfil del autor en HuggingFace](https://huggingface.co/ZacharyEvans)
+- [Modelo en Hugging Face](https://huggingface.co/ZacharyEvans/swin-t-contrastive-tryout48)
+- [Perfil del autor en Hugging Face](https://huggingface.co/ZacharyEvans)
 - [Repositorio oficial de Swin Transformer (referencia arquitectónica)](https://github.com/microsoft/Swin-Transformer)

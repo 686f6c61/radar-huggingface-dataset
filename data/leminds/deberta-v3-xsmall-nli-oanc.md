@@ -74,9 +74,9 @@ Referencia del autor: el modelo base ajustado sobre todo MultiNLI con secuencias
 
 | Modelo | Parámetros | Contexto | MultiNLI matched / mismatched | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Leminds/deberta-v3-xsmall-nli-oanc | 70,8M | 128 tokens (entrenamiento) | 87,7% / 88,0% | MIT | HuggingFace, ONNX int8 |
-| microsoft/deberta-v3-xsmall (ajustado MNLI por sus autores) | 70,8M (aprox., misma base) | 256 tokens en su ajuste | 88,1% / 88,3% | MIT | HuggingFace |
-| DeBERTa-v3-base ajustado en MNLI | no disponible en la información | no disponible | no disponible | MIT | HuggingFace |
+| Leminds/deberta-v3-xsmall-nli-oanc | 70,8M | 128 tokens (entrenamiento) | 87,7% / 88,0% | MIT | Hugging Face, ONNX int8 |
+| microsoft/deberta-v3-xsmall (ajustado MNLI por sus autores) | 70,8M (aprox., misma base) | 256 tokens en su ajuste | 88,1% / 88,3% | MIT | Hugging Face |
+| DeBERTa-v3-base ajustado en MNLI | no disponible en la información | no disponible | no disponible | MIT | Hugging Face |
 
 La comparación con alternativas de la misma categoría (por ejemplo, RoBERTa-base o ELECTRA-small ajustados en MNLI) no está disponible en la información proporcionada.
 
@@ -94,7 +94,7 @@ La comparación con alternativas de la misma categoría (por ejemplo, RoBERTa-ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Leminds/deberta-v3-xsmall-nli-oanc
+- Modelo en Hugging Face: https://huggingface.co/Leminds/deberta-v3-xsmall-nli-oanc
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-xsmall
 - Proyecto Vaticeno: https://github.com/lemind/vaticeno
 - Dataset MultiNLI: https://huggingface.co/datasets/nyu-mll/multi_nli

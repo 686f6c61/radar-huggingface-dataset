@@ -73,7 +73,7 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kavithajohn/whisper-telugu-medium-ct2
+- Modelo en Hugging Face: https://huggingface.co/kavithajohn/whisper-telugu-medium-ct2
 - Modelo base (fine-tune): https://huggingface.co/vasista22/whisper-telugu-medium
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

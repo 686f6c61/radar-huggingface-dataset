@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Karar-4B-GGUF son los pesos cuantizados en formato GGUF de Karar-4B, un modelo de 4.205.751.296 parámetros desarrollado por Mert Kaya dentro de Eschatia Labs, un laboratorio independiente sin ánimo de lucro. No es un modelo conversacional de propósito general: está entrenado para recibir un estado en lenguaje natural (por ejemplo, el texto de una reclamación) junto con una pregunta y un conjunto cerrado de opciones, y devolver una probabilidad calibrada para cada opción. Su pipeline declarado en HuggingFace es `text-classification`.
+Karar-4B-GGUF son los pesos cuantizados en formato GGUF de Karar-4B, un modelo de 4.205.751.296 parámetros desarrollado por Mert Kaya dentro de Eschatia Labs, un laboratorio independiente sin ánimo de lucro. No es un modelo conversacional de propósito general: está entrenado para recibir un estado en lenguaje natural (por ejemplo, el texto de una reclamación) junto con una pregunta y un conjunto cerrado de opciones, y devolver una probabilidad calibrada para cada opción. Su pipeline declarado en Hugging Face es `text-classification`.
 
 El interés practico del modelo esta en su coste de despliegue: la cuantizacion Q4_K_M ocupa 2,71 GB en disco y alcanza un pico de 3,03 GB de RAM con contexto de 4k, lo que permite ejecutar decisiones sobre CPU en maquina local o en el borde, sin GPU y sin enviar datos a terceros. El autor declara un 96,8% de acierto en precision completa frente al 87,1% de Kev-4B sobre decisiones en turco reservadas del pipeline de entrenamiento.
 
@@ -69,7 +69,7 @@ Verificacion de cuantizacion frente a Karar-4B en precision completa (61 decisio
 | Q5_K_M | 3,08 GB | 100,0% | 0,1154 | 28,17 | 3,39 GB |
 | Q8_0 | 4,48 GB | 100,0% | 0,0396 | 18,56 | 4,77 GB |
 
-Los tiempos y la RAM se midieron en un proceso nuevo sobre una maquina de HuggingFace con 8 vCPU, 4 hilos, contexto de 4k, sin mmap y con repacking activado. El autor advierte que mas precision no garantiza mayor coincidencia en una muestra tan pequena. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de proposito general en la informacion disponible.
+Los tiempos y la RAM se midieron en un proceso nuevo sobre una maquina de Hugging Face con 8 vCPU, 4 hilos, contexto de 4k, sin mmap y con repacking activado. El autor advierte que mas precision no garantiza mayor coincidencia en una muestra tan pequena. No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks de proposito general en la informacion disponible.
 
 ## Requisitos de hardware
 
@@ -85,8 +85,8 @@ Los tiempos y la RAM se midieron en un proceso nuevo sobre una maquina de Huggin
 
 | Modelo | Parametros | Contexto | Precision en decisiones turcas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Karar-4B-GGUF (Q4_K_M) | 4.205.751.296 | 4k en las pruebas del autor | 96,7% de coincidencia con precision completa (96,8% esta) | GGUF, safetensors (base) | Apache-2.0 | HuggingFace, Ollama |
-| Karar-4B (precision completa) | 4.205.751.296 | No disponible | 96,8% | Safetensors | Apache-2.0 | HuggingFace |
+| Karar-4B-GGUF (Q4_K_M) | 4.205.751.296 | 4k en las pruebas del autor | 96,7% de coincidencia con precision completa (96,8% esta) | GGUF, safetensors (base) | Apache-2.0 | Hugging Face, Ollama |
+| Karar-4B (precision completa) | 4.205.751.296 | No disponible | 96,8% | Safetensors | Apache-2.0 | Hugging Face |
 | Kev-4B | No disponible | No disponible | 87,1% | No disponible | No disponible | No disponible |
 
 No se dispone en la informacion proporcionada de datos comparables de otros modelos de 3-4B de propósito general (Qwen, Llama, Gemma u otros) en esta tarea concreta de decision en turco; cualquier comparacion de ese tipo requeriria ejecutar la misma evaluacion.
@@ -101,14 +101,14 @@ No se dispone en la informacion proporcionada de datos comparables de otros mode
 - La coincidencia de cuantizacion se midio sobre solo 61 decisiones por fichero, por lo que las diferencias entre Q4_K_M, Q5_K_M y Q8_0 no son estadisticamente concluyentes.
 - El modelo es lento en CPU (del orden de 15-28 s por peticion en la maquina de referencia); no es adecuado para rutas interactivas de baja latencia sin GPU o sin batching.
 - Licencia Apache-2.0: permite uso comercial y modificacion, con obligacion de conservar el aviso de licencia y el fichero NOTICE si existe; no se declaran restricciones adicionales de uso aceptable.
-- Proyecto joven: 752 descargas y 0 likes en HuggingFace en el momento de la consulta, 5 estrellas en GitHub, sin validacion independiente de terceros.
+- Proyecto joven: 752 descargas y 0 likes en Hugging Face en el momento de la consulta, 5 estrellas en GitHub, sin validacion independiente de terceros.
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/mertkayacs/Karar-4B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/mertkayacs/Karar-4B-GGUF
 - Modelo base en precision completa: https://huggingface.co/mertkayacs/Karar-4B
 - Repositorio GitHub del proyecto JevAlt: https://github.com/mertkayacs/jevalt
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/mertkayacs/JevAlt
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/mertkayacs/JevAlt
 - Pagina del proyecto: https://jevalt.mertkayacs.com/models/karar-4b/
 - Dataset de entrenamiento: https://huggingface.co/datasets/mertkayacs/jevalt-data
 - Dataset de benchmarks: https://huggingface.co/datasets/mertkayacs/jevalt-bench

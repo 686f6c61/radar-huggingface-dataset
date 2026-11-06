@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Zit-chaewon es un adaptador LoRA de tipo text-to-image publicado por el usuario rachel-luxangel-ai en HuggingFace. No se trata de un modelo completo, sino de un peso de ajuste fino de bajo rango que se aplica sobre el modelo base Tongyi-MAI/Z-Image-Turbo para inducir la generación de un concepto o personaje concreto, activado mediante el prompt de instancia `chaewonXCV`. El repositorio ocupa 0,2 GB y contiene un unico archivo de pesos en formato safetensors (`chaewon.safetensors`), lo que es coherente con el tamano tipico de un LoRA de difusion y no con el de un modelo completo.
+Zit-chaewon es un adaptador LoRA de tipo text-to-image publicado por el usuario rachel-luxangel-ai en Hugging Face. No se trata de un modelo completo, sino de un peso de ajuste fino de bajo rango que se aplica sobre el modelo base Tongyi-MAI/Z-Image-Turbo para inducir la generación de un concepto o personaje concreto, activado mediante el prompt de instancia `chaewonXCV`. El repositorio ocupa 0,2 GB y contiene un unico archivo de pesos en formato safetensors (`chaewon.safetensors`), lo que es coherente con el tamano tipico de un LoRA de difusion y no con el de un modelo completo.
 
-La ficha del autor indica explicitamente que se trata de un rehost del modelo alojado en CivitAI con identificador 2994783 (version 3396347), redistribuido "para LYRA". Es decir, el autor de este repositorio no es el entrenador original del LoRA, sino un redistribuidor. Esta circunstancia es relevante para cualquier evaluacion tecnica o legal: la trazabilidad del entrenamiento, el dataset utilizado y los derechos sobre la imagen del personaje no quedan documentados en el repositorio de HuggingFace.
+La ficha del autor indica explicitamente que se trata de un rehost del modelo alojado en CivitAI con identificador 2994783 (version 3396347), redistribuido "para LYRA". Es decir, el autor de este repositorio no es el entrenador original del LoRA, sino un redistribuidor. Esta circunstancia es relevante para cualquier evaluacion tecnica o legal: la trazabilidad del entrenamiento, el dataset utilizado y los derechos sobre la imagen del personaje no quedan documentados en el repositorio de Hugging Face.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 0 likes, no declara licencia ni idiomas soportados, y no incluye resultados de benchmarks. Por tanto, la unica informacion verificable es metatecnica: identificador, pipeline, modelo base, prompt de activacion, hash SHA256 y tamano. Cualquier dato adicional sobre arquitectura interna, dataset de entrenamiento o rendimiento debe considerarse no disponible a partir de la informacion proporcionada.
 
@@ -103,6 +103,6 @@ No se identifican en la informacion proporcionada modelos comparables concretos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-chaewon
+- Repositorio en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-chaewon
 - Modelo original en CivitAI (referenciado en la model card): https://civitai.com/models/2994783?modelVersionId=3396347
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo

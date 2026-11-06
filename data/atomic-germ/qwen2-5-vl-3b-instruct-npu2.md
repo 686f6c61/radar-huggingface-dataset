@@ -125,8 +125,8 @@ La adaptacion NPU2 no introduce cambios de rendimiento documentados; su valor re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Atomic-Germ/Qwen2.5-VL-3B-Instruct-NPU2
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
+- Repositorio Hugging Face: https://huggingface.co/Atomic-Germ/Qwen2.5-VL-3B-Instruct-NPU2
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Blog oficial de Qwen2.5-VL: https://qwenlm.github.io/blog/qwen2.5-vl/
 - Repositorio GitHub de Qwen2.5-VL: https://github.com/QwenLM/Qwen2.5-VL
 - Proyecto de Qengineering para Qwen2.5-VL-3B en RK3588: https://github.com/Qengineering/Qwen2.5-VL-3B-NPU

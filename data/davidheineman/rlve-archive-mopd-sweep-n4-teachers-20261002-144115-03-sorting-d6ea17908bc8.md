@@ -89,7 +89,7 @@ Nota: los datos de contexto y licencia de los modelos comparables provienen de s
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-teachers-20261002-144115-03-sorting-d6ea17908bc8
-- Perfil del autor en HuggingFace: https://huggingface.co/davidheineman
+- Repositorio en Hugging Face: https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n4-teachers-20261002-144115-03-sorting-d6ea17908bc8
+- Perfil del autor en Hugging Face: https://huggingface.co/davidheineman
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.
 - Resultados de busqueda web relevantes: ninguno.

@@ -31,7 +31,7 @@ La contribución técnica de este repositorio es exclusivamente de cuantización
 
 - Generación de texto conversacional: el repositorio está etiquetado como `conversational` y deriva de un modelo de chat.
 - Razonamiento y conocimiento general: heredados del modelo base Qwen3.8-27B (no se detallan capacidades específicas en la información proporcionada).
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse a través de infraestructura compatible con la API de Hugging Face.
 - Inferencia en llama.cpp estándar: al usar únicamente tipos de cuantización nativos, funciona con el binario stock.
 - Ejecución en el motor tensorless: objetivo de lanzamiento ajustado para Tesla P100, invocable con `tensorless run iamMrDuncan/Qwen3.8-27B-UD-IQ3_XXS-Q3Floor-GGUF`.
 - Tool calling, agentes, visión, audio, modo thinking y capacidades multilingües: no disponible en la información proporcionada.
@@ -92,7 +92,7 @@ Los datos de contexto y de rendimiento de los modelos comparables no están disp
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iamMrDuncan/Qwen3.8-27B-UD-IQ3_XXS-Q3Floor-GGUF
+- Repositorio Hugging Face: https://huggingface.co/iamMrDuncan/Qwen3.8-27B-UD-IQ3_XXS-Q3Floor-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Cuantizaciones de Unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF
 - Organización Unsloth: https://huggingface.co/unsloth

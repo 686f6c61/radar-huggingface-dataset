@@ -85,7 +85,7 @@ La comparativa es estructural, no de rendimiento. Este modelo carece de informac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ndrealht/lionel-kreyol-8b
+- Repositorio Hugging Face: https://huggingface.co/ndrealht/lionel-kreyol-8b
 - Unsloth (librería utilizada para el fine-tuning y conversión): https://github.com/unslothai/unsloth
 - Documentación de llama.cpp (para uso del archivo GGUF): https://github.com/ggerganov/llama.cpp
 - Página de Ollama (para despliegue con Modelfile): https://ollama.com/

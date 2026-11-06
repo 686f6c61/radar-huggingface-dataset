@@ -59,8 +59,8 @@ No se han publicado resultados de benchmarks estandarizados (MMLU, HumanEval, GS
 
 | Modelo | Parametros | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| minhmnq/byt5-vietnamese-restoration | ~300 M | Byte-level (ByT5) | MIT | HuggingFace |
-| yammdd/vietnamese-diacritic-restoration-v2 | no disponible | no disponible | no disponible | HuggingFace |
+| minhmnq/byt5-vietnamese-restoration | ~300 M | Byte-level (ByT5) | MIT | Hugging Face |
+| yammdd/vietnamese-diacritic-restoration-v2 | no disponible | no disponible | no disponible | Hugging Face |
 | nom-vn (nrl-ai) | no disponible | Multiples enfoques (diacriticos, OCR, RAG) | no disponible | GitHub |
 
 El modelo ByT5-small es citado en la literatura (arXiv:2201.13242) como el estado del arte canónico para restauración de diacríticos en vietnamita, aunque su naturaleza byte-level implica secuencias aproximadamente cuatro veces más largas que los modelos basados en subpalabras.
@@ -76,7 +76,7 @@ El modelo ByT5-small es citado en la literatura (arXiv:2201.13242) como el estad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/minhmnq/byt5-vietnamese-restoration
+- Hugging Face: https://huggingface.co/minhmnq/byt5-vietnamese-restoration
 - GitHub (proyecto piloto): https://github.com/Eternity-KT/byt5-vietnamese-restoration-pilot
 - Kaggle notebook: https://www.kaggle.com/code/brownfox2k6/byt5-vietnamese-restoration
 - Proyecto nom-vn (tarea de restauracion de diacriticos): https://nom-vn.nrl.ai/tasks/diacritic-restoration

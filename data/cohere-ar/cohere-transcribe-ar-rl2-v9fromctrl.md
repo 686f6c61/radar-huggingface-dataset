@@ -23,7 +23,7 @@ Su relevancia radica en la combinación de tres factores poco frecuentes en mode
 | Pipeline | automatic-speech-recognition |
 | Librería | transformers |
 | Modelo base | Cohere-AR/cohere-transcribe-ar-rl-v9ctrl |
-| Acceso | restringido (gated) en HuggingFace |
+| Acceso | restringido (gated) en Hugging Face |
 | Tamaño del repositorio | 4,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ La comparativa se basa en características públicas de modelos de la misma cate
 
 ## Limitaciones y advertencias
 
-- Licencia no publicada: no se puede confirmar el uso comercial; al estar el acceso restringido, es necesario aceptar condiciones en HuggingFace y revisar los términos del autor antes de desplegarlo en producción.
+- Licencia no publicada: no se puede confirmar el uso comercial; al estar el acceso restringido, es necesario aceptar condiciones en Hugging Face y revisar los términos del autor antes de desplegarlo en producción.
 - Sesgos potenciales: al estar especializado en árabe e inglés y en audio telefónico, el rendimiento puede degradarse con otros dialectos árabes, acentos no vistos o audio de alta fidelidad (estudio, música, reverberación).
 - Riesgo de alucinación: como todo modelo ASR generativo, puede producir transcripciones plausibles pero incorrectas en segmentos con ruido extremo, silencios largos o solapamiento de hablantes.
 - Limitaciones de idioma: solo se declaran ar y en; no hay soporte documentado para otras lenguas ni para transliteración.
@@ -88,7 +88,7 @@ La comparativa se basa en características públicas de modelos de la misma cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9fromctrl
+- Modelo en Hugging Face: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl2-v9fromctrl
 - Modelo base: https://huggingface.co/Cohere-AR/cohere-transcribe-ar-rl-v9ctrl
 - Organización Cohere-AR: https://huggingface.co/Cohere-AR
 - Documentación del pipeline ASR de transformers: https://huggingface.co/docs/transformers/main/en/main_classes/pipelines#transformers.AutomaticSpeechRecognitionPipeline

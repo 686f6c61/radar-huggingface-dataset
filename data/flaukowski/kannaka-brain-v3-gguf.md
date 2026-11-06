@@ -109,7 +109,7 @@ No se dispone de comparativas con modelos de la misma categoría fuera de la fam
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flaukowski/kannaka-brain-v3-GGUF
+- Repositorio Hugging Face: https://huggingface.co/flaukowski/kannaka-brain-v3-GGUF
 - Adaptador LoRA y notas de entrenamiento: `flaukowski/kannaka-brain-v3-lora`
 - Variante anterior v2: https://huggingface.co/flaukowski/kannaka-brain-v2-GGUF
 - Variante anterior v1: https://huggingface.co/flaukowski/kannaka-brain-v1-GGUF

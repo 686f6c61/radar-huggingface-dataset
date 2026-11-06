@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orchestrator v1.5 es un paquete de modelo publicado en HuggingFace por el usuario saggamer, desarrollado como parte de Kira Superapp. No es un modelo de lenguaje independiente al uso: se trata de un bundle de investigacion (etiquetado como research-preview) que combina el modelo base de instrucciones google/gemma-4-E4B-it, una conversion local a MLX y varios adaptadores enrutados por tarea, junto con el controlador de ejecucion acotada de Kira. El objetivo declarado es la asistencia cotidiana, el trabajo en navegador y las tareas agenticas de varios pasos en Apple Silicon.
+Orchestrator v1.5 es un paquete de modelo publicado en Hugging Face por el usuario saggamer, desarrollado como parte de Kira Superapp. No es un modelo de lenguaje independiente al uso: se trata de un bundle de investigacion (etiquetado como research-preview) que combina el modelo base de instrucciones google/gemma-4-E4B-it, una conversion local a MLX y varios adaptadores enrutados por tarea, junto con el controlador de ejecucion acotada de Kira. El objetivo declarado es la asistencia cotidiana, el trabajo en navegador y las tareas agenticas de varios pasos en Apple Silicon.
 
 El problema que aborda es la orquestacion de acciones reales en un navegador y en aplicaciones: el modelo propone acciones, Kira las ejecuta mediante sus manejadores de herramientas y devuelve las observaciones al modelo antes de continuar. Segun la model card, cubre lectura de paginas, navegacion, busqueda, relleno de formularios, desplazamiento, comparacion y captura de pantalla a traves de Diagonal Browser, ademas de enrutar peticiones de aplicacion, agentes de codigo, navegador y presentaciones a sus rutas de control correspondientes.
 
@@ -83,8 +83,8 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| saggamer/orchestrator-v1.5 | no disponible | no disponible | suites locales de Kira: 16/16, 6/6, 2/2, 1/1 | apache-2.0 | HuggingFace, 0 descargas |
-| google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | HuggingFace |
+| saggamer/orchestrator-v1.5 | no disponible | no disponible | suites locales de Kira: 16/16, 6/6, 2/2, 1/1 | apache-2.0 | Hugging Face, 0 descargas |
+| google/gemma-4-E4B-it (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de agentes en navegador | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/saggamer/orchestrator-v1.5
+- Modelo en Hugging Face: https://huggingface.co/saggamer/orchestrator-v1.5
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Runtime Kira Superapp: https://github.com/saggamer/KIRA-Superapp
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo, al autor ni al proyecto; los resultados devueltos corresponden a sitios sin relacion con la ficha y se han descartado.

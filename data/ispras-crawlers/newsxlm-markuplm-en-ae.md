@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: el repositorio ocupa 0,5 GB en safetensors, por lo que la inferencia en fp32 requiere del orden de 0,6-1 GB de memoria, más el modelo de traducción de Argos cuando se procesan idiomas distintos del inglés.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de memoria es suficiente; no se requiere A100 ni H100. Una RTX 4090 o una GPU de gama media ejecutarían el modelo con holgura.
 - Cabe en GPU de consumo: sí, en cualquier GPU consumer con 2 GB o más de VRAM; también funciona en CPU.
-- Opciones de despliegue: pipelines de HuggingFace Transformers (`extraction`, `node-classification`) con `trust_remote_code=True`, `AutoModelForTokenClassification` y `AutoProcessor`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: pipelines de Hugging Face Transformers (`extraction`, `node-classification`) con `trust_remote_code=True`, `AutoModelForTokenClassification` y `AutoProcessor`. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles en la información proporcionada. La traducción con Argos añade un coste adicional en el primer uso (descarga e instalación del modelo de traducción) y en cada inferencia sobre HTML no inglés.
 
 ## Comparativa con modelos similares
@@ -83,9 +83,9 @@ La comparación con alternativas concretas no está disponible en la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ispras-crawlers/newsxlm-markuplm-en-ae
+- Modelo en Hugging Face: https://huggingface.co/ispras-crawlers/newsxlm-markuplm-en-ae
 - Modelo base: https://huggingface.co/microsoft/markuplm-base
 - Dataset NewsXLM: https://huggingface.co/datasets/ispras-crawlers/newsxlm
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/pbedrin/newsxlm-demo
 - Paper (Proceedings of ISP RAS): https://ispranproceedings.elpub.ru/jour/article/view/2164/1961
 - Argos Translate: https://github.com/argosopentech/argos-translate

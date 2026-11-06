@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`derikan/gemma-4-E2B-it` es un ajuste fino (fine-tune) instructivo del modelo base `google/gemma-4-E2B`, publicado en HuggingFace por el usuario derikan bajo el pipeline `any-to-any`. El repositorio declara 5.123.178.051 parámetros totales en formato safetensors (unos 5,12 mil millones) y un tamaño de 10,3 GB, lo que corresponde a pesos en precisión de 16 bits. Las etiquetas del modelo indican capacidades multimodales (`image-text-to-text`, `any-to-any`) y una referencia arXiv (2607.02770), aunque la ficha del repositorio no incluye detalles sobre arquitectura interna, datos de entrenamiento ni ventana de contexto.
+`derikan/gemma-4-E2B-it` es un ajuste fino (fine-tune) instructivo del modelo base `google/gemma-4-E2B`, publicado en Hugging Face por el usuario derikan bajo el pipeline `any-to-any`. El repositorio declara 5.123.178.051 parámetros totales en formato safetensors (unos 5,12 mil millones) y un tamaño de 10,3 GB, lo que corresponde a pesos en precisión de 16 bits. Las etiquetas del modelo indican capacidades multimodales (`image-text-to-text`, `any-to-any`) y una referencia arXiv (2607.02770), aunque la ficha del repositorio no incluye detalles sobre arquitectura interna, datos de entrenamiento ni ventana de contexto.
 
 El interés del modelo radica en dos factores: por un lado, ser un derivado de la familia Gemma 4 en variante "E2B" con licencia declarada apache-2.0, lo que en principio facilita su adopción comercial; por otro, su orientación multimodal. Sin embargo, el repositorio es de acceso restringido (gated), no acumula descargas ni interacciones y no publica resultados de benchmarks, por lo que su evaluación rigurosa requiere descargarlo y validarlo internamente.
 
@@ -22,7 +22,7 @@ Conviene señalar que la nomenclatura "E2B" sugiere del orden de 2 mil millones 
 | Formato de pesos | safetensors |
 | Pipeline declarado | any-to-any |
 | Modelo base | google/gemma-4-E2B (fine-tune) |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Librería | transformers |
 | Descargas / likes | 0 / 0 |
 | Fecha de creación / actualización | 2026-10-26 / 2026-10-26 |
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - GPU de consumo: sí cabe. Una RTX 4090 (24 GB) permite bf16 con margen; tarjetas de 12-16 GB (RTX 4070 Ti, 4080) requieren int8 o int4; con 8 GB solo es viable int4 y contexto corto.
 - Opciones de despliegue: `transformers` es la librería declarada en el repositorio. No hay confirmación de soporte en vLLM, TGI, llama.cpp u Ollama, ni se publican pesos GGUF; la disponibilidad dependerá del soporte de la arquitectura Gemma 4 en cada motor.
 - Latencia y throughput: no disponibles. Al no existir datos públicos ni benchmarks del autor, es necesario medirlos en el hardware objetivo.
-- Nota operativa: el acceso es restringido (gated), por lo que la descarga y el despliegue requieren aceptar condiciones en HuggingFace y autenticarse con un token.
+- Nota operativa: el acceso es restringido (gated), por lo que la descarga y el despliegue requieren aceptar condiciones en Hugging Face y autenticarse con un token.
 
 ## Comparativa con modelos similares
 
@@ -89,11 +89,11 @@ No se dispone de datos verificables de otros modelos comparables en la informaci
 - Trazabilidad del autor: se trata de un fine-tune de un tercero (`derikan`), no de un modelo oficial de Google; no hay garantías de mantenimiento ni de soporte.
 - Discrepancia de nomenclatura: el nombre "E2B" frente a los 5,12 B reales puede inducir a error al planificar recursos de hardware.
 - Fecha de creación y actualización idénticas (2026-10-26): no hay historial de revisiones que permita evaluar la evolución del modelo.
-- Nota sobre la búsqueda web: los resultados obtenidos no contenían información técnica ni fuentes relacionadas con el modelo, por lo que se han descartado íntegramente; esta ficha se basa solo en los metadatos de HuggingFace.
+- Nota sobre la búsqueda web: los resultados obtenidos no contenían información técnica ni fuentes relacionadas con el modelo, por lo que se han descartado íntegramente; esta ficha se basa solo en los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/derikan/gemma-4-E2B-it
+- Hugging Face: https://huggingface.co/derikan/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Referencia arXiv presente en las etiquetas del repositorio (contenido no verificado): https://arxiv.org/abs/2607.02770
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

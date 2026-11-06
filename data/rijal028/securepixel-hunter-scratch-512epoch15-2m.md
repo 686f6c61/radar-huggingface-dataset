@@ -96,5 +96,5 @@ No se dispone de datos comparativos en la informacion proporcionada. No se han p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rijal028/securepixel-hunter-scratch-512epoch15.2m
+- Hugging Face: https://huggingface.co/rijal028/securepixel-hunter-scratch-512epoch15.2m
 - No se han encontrado enlaces relevantes al modelo en la busqueda web. Los resultados devueltos corresponden a noticias sobre videos virales sin relacion alguna con SecurePixel, ConvNeXtV2 ni deteccion de deepfakes, por lo que se descartan como fuentes.

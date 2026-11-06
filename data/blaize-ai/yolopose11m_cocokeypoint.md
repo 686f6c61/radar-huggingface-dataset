@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blaize-AI/YOLOPOSE11m_COCOKeypoint
+- Modelo en Hugging Face: https://huggingface.co/Blaize-AI/YOLOPOSE11m_COCOKeypoint
 - Repositorio de Ultralytics: https://www.github.com/ultralytics/ultralytics
 - Dataset COCO Keypoints: https://cocodataset.org
 - Sitio de Blaize: https://www.blaize.com

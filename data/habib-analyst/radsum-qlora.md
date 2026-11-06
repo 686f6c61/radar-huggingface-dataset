@@ -72,7 +72,7 @@ Lo unico medido hasta ahora es el arnes de evaluacion FHR sobre texto real del d
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | radsum-qlora (este adaptador) | Base 2B + LoRA r=64 | No disponible | Pendiente de entrenamiento | MIT | Pesos no subidos |
-| Qwen/Qwen2-VL-2B-Instruct (base zero-shot) | 2B | No disponible en la ficha | Pendiente de evaluacion en el proyecto | Licencia propia del base | Disponible en HuggingFace |
+| Qwen/Qwen2-VL-2B-Instruct (base zero-shot) | 2B | No disponible en la ficha | Pendiente de evaluacion en el proyecto | Licencia propia del base | Disponible en Hugging Face |
 | Modelo zero-shot 7B (referencia del proyecto) | 7B | No disponible | Pendiente de evaluacion en el proyecto | No disponible | No especificado |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/habib-analyst/radsum-qlora
+- Hugging Face: https://huggingface.co/habib-analyst/radsum-qlora
 - Repositorio de codigo (pipeline de datos, entrenamiento, evaluacion y metrica FHR): https://github.com/habib-analyst/radsum-qlora
 - Modelo base: https://huggingface.co/Qwen/Qwen2-VL-2B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/ykumards/open-i

@@ -71,8 +71,8 @@ La documentación menciona comparaciones con Hulu-Med y Lingshu-8B, pero no se p
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/hugnever21/ClinFusion-8B-Q8
-- Modelo original en HuggingFace: https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-8B
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/hugnever21/ClinFusion-8B-Q8
+- Modelo original en Hugging Face: https://huggingface.co/Alibaba-DAMO-Academy/ClinFusion-8B
 - Repositorio GitHub oficial: https://github.com/Alibaba-DAMO-Academy/ClinFusion
 - Paper en arXiv: https://arxiv.org/abs/2607.24743
 - Versión HTML del paper: https://arxiv.org/html/2607.24743v2

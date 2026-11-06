@@ -96,7 +96,7 @@ Frente a m2m100_418M, la propuesta de SMaLL-100 reduce el numero de parametros m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/solavr/small100-ctranslate2-int8
+- Repositorio en Hugging Face: https://huggingface.co/solavr/small100-ctranslate2-int8
 - Modelo base SMaLL-100: https://huggingface.co/alirezamsh/small100
 - Paper de SMaLL-100 (EMNLP 2022): https://aclanthology.org/2022.emnlp-main.571/
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

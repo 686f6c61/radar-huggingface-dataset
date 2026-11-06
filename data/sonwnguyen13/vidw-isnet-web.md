@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sonwnguyen13/vidw-isnet-web` es un repositorio publicado en HuggingFace por el usuario `sonwnguyen13` bajo licencia Apache 2.0. La model card asociada se limita a declarar la licencia y no incluye ninguna descripcion funcional, arquitectonica ni de uso, por lo que no es posible determinar con rigor que tipo de artefacto contiene el repositorio (pesos de un modelo, un dataset empaquetado, una demo web o un contenedor de aplicacion).
+`sonwnguyen13/vidw-isnet-web` es un repositorio publicado en Hugging Face por el usuario `sonwnguyen13` bajo licencia Apache 2.0. La model card asociada se limita a declarar la licencia y no incluye ninguna descripcion funcional, arquitectonica ni de uso, por lo que no es posible determinar con rigor que tipo de artefacto contiene el repositorio (pesos de un modelo, un dataset empaquetado, una demo web o un contenedor de aplicacion).
 
 El identificador sugiere una relacion con "ISNET" (probablemente una red de segmentacion de imagen, *image segmentation network*) y con un despliegue web ("web"), lo que apunta a un artefacto orientado a inferencia de segmentacion servido desde navegador o mediante una interfaz web. Sin embargo, esta interpretacion es una inferencia a partir del nombre y no esta confirmada por ninguna documentacion oficial del autor.
 
@@ -42,7 +42,7 @@ No hay datos sobre volumen de tokens de entrenamiento, composicion del dataset, 
 - Prototipado de interfaz web de inferencia: el sufijo "web" del identificador sugiere un artefacto de demostracion desplegable en navegador; podria servir como base para una demo interna de segmentacion, siempre que se confirme su contenido.
 - Integracion en pipelines de preprocesado de imagen: en caso de tratarse de un modelo de segmentacion, encajaria en fases de recorte de sujeto o generacion de mascaras alfa dentro de un pipeline mayor; no verificable con la informacion actual.
 - Reproduccion de experimentos academicos: util como referencia para comparar implementaciones de IS-Net si los pesos coinciden con los publicados en el paper original; requiere validacion cruzada.
-- Auditoria de artefactos de HuggingFace: el repositorio sirve como caso de estudio de publicaciones sin model card ni metadatos, util para disenar politicas internas de evaluacion de dependencias.
+- Auditoria de artefactos de Hugging Face: el repositorio sirve como caso de estudio de publicaciones sin model card ni metadatos, util para disenar politicas internas de evaluacion de dependencias.
 - Descartado para produccion: sin documentacion, sin benchmarks y con cero descargas, no es recomendable su adopcion en entornos productivos hasta completar una auditoria tecnica y legal del contenido.
 
 ## Benchmarks y rendimiento
@@ -65,7 +65,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la natu
 
 - Ausencia total de model card funcional: solo consta la licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 - Cero descargas y cero likes: no hay evidencia de uso ni de validacion por parte de la comunidad.
-- Sin pipeline declarado ni metadatos de idioma: imposible determinar la tarea soportada desde los metadatos de HuggingFace.
+- Sin pipeline declarado ni metadatos de idioma: imposible determinar la tarea soportada desde los metadatos de Hugging Face.
 - Riesgo de licencia en cascada: aunque el repositorio declare Apache 2.0, si incorpora pesos de terceros (por ejemplo, un IS-Net preentrenado), la licencia efectiva de esos pesos puede diferir y debe verificarse antes de cualquier uso comercial.
 - Riesgo de seguridad: un repositorio sin documentacion puede contener codigo ejecutable no auditado (por ejemplo, scripts de carga remota); se recomienda inspeccionar los ficheros antes de ejecutar `trust_remote_code` o cargar pesos.
 - Fecha de publicacion futura en los metadatos (2026-11-05): conviene verificar la coherencia de las marcas temporales, ya que puede indicar un artefacto de prueba o un error de publicacion.
@@ -73,7 +73,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la natu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sonwnguyen13/vidw-isnet-web
+- Repositorio en Hugging Face: https://huggingface.co/sonwnguyen13/vidw-isnet-web
 - Perfil del autor: https://huggingface.co/sonwnguyen13
 - Paper de referencia potencial (IS-Net, no confirmado por el autor): https://arxiv.org/abs/2204.08703
 - Repositorio de referencia potencial (IS-Net, no confirmado por el autor): https://github.com/xuebinqin/DIS

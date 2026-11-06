@@ -30,7 +30,7 @@ El entrenamiento uso 31,5 mil millones de tokens de FineWeb-Edu (60.000 pasos, b
 - Generacion de texto en ingles a escala small (178M), adecuada para experimentacion mas que para produccion.
 - Prediccion multi-token durante el entrenamiento mediante 3 cabeceras MTP en cascada estilo DeepSeek-V3.
 - Self-speculative decoding: las cabeceras MTP pueden actuar como draft model para acelerar la generacion sin modelo borrador externo.
-- Compatibilidad con la libreria `transformers` de HuggingFace mediante `trust_remote_code=True` (codigo de modelado incluido en el repo).
+- Compatibilidad con la libreria `transformers` de Hugging Face mediante `trust_remote_code=True` (codigo de modelado incluido en el repo).
 - No hay soporte documentado de tool calling, agentes, vision, audio ni modo de razonamiento explicito.
 
 ## Casos de uso
@@ -78,7 +78,7 @@ Frente a estas alternativas, el valor de hard-mtp-167m no radica en rendimiento 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaydenTeoh/hard-mtp-167m-model
+- Modelo en Hugging Face: https://huggingface.co/JaydenTeoh/hard-mtp-167m-model
 - Paper: Multi-Token Prediction Done Right — https://arxiv.org/abs/2610.38331
 - Codigo (GitHub): https://github.com/JaydenTeoh/Soft-MTP
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

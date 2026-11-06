@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye otros agentes de RL con w
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emopointer/supermimic-manipulation
+- Modelo en Hugging Face: https://huggingface.co/emopointer/supermimic-manipulation
 - Dataset de bancos de reset: https://huggingface.co/datasets/emopointer/supermimic-manipulation-reset-banks
 - Repositorio de codigo: https://github.com/emoPointer/supermimic_manipulation
 - Paper SuperMimic: arXiv:2610.28480

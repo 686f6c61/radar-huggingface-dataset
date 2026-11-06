@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w20-s130` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros totales (segun los datos reales del repositorio safetensors), lo que lo situa en la categoria de modelos de ~2B. La nomenclatura del identificador sugiere un experimento de investigacion con variantes de configuracion (r18, a2, w13, chrono4, w20, s130), probablemente relacionado con la familia o tecnica "sn38-nanochrono" que aparece en las etiquetas del repositorio.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w20-s130` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se trata de un modelo de aproximadamente 2.018 millones de parametros totales (segun los datos reales del repositorio safetensors), lo que lo situa en la categoria de modelos de ~2B. La nomenclatura del identificador sugiere un experimento de investigacion con variantes de configuracion (r18, a2, w13, chrono4, w20, s130), probablemente relacionado con la familia o tecnica "sn38-nanochrono" que aparece en las etiquetas del repositorio.
 
-El modelo esta publicado bajo acceso restringido (gated), lo que significa que los usuarios deben aceptar condiciones adicionales en HuggingFace antes de poder descargarlo. El repositorio ocupa 6,3 GB en formato safetensors, un tamano coherente con pesos en precision alta (probablemente fp16/bf16 o fp32) para un modelo de ~2B de parametros.
+El modelo esta publicado bajo acceso restringido (gated), lo que significa que los usuarios deben aceptar condiciones adicionales en Hugging Face antes de poder descargarlo. El repositorio ocupa 6,3 GB en formato safetensors, un tamano coherente con pesos en precision alta (probablemente fp16/bf16 o fp32) para un modelo de ~2B de parametros.
 
 No se dispone de informacion publica sobre la arquitectura concreta, los datos de entrenamiento, los idiomas soportados ni los resultados de benchmarks. La ficha se limita, por tanto, a lo que puede inferirse de los metadatos disponibles y a las caracteristicas tecnicas derivadas del tamano del modelo y el formato de pesos.
 
@@ -44,7 +44,7 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento (numero de tokens, 
 - Prototipado de pipelines de inferencia: su formato safetensors permite cargarlo con librerias estandar (transformers, vLLM si la arquitectura es compatible) para validar flujos antes de escalar a modelos mayores.
 - Evaluacion comparativa de arquitecturas: util para investigadores que quieran contrastar el comportamiento de la variante "chrono" frente a transformes densos de tamano similar.
 - Despliegue en entornos con recursos limitados: al ser un modelo de ~2B, puede servirse en CPU o en GPUs consumer con cuantizacion (si se generan pesos GGUF a partir de los safetensors), aunque no se han publicado conversiones oficiales.
-- Educacion y docencia: adecuado para demostrar el ciclo completo de publicacion, carga y evaluacion de un modelo en HuggingFace, incluyendo el flujo de acceso restringido (gated).
+- Educacion y docencia: adecuado para demostrar el ciclo completo de publicacion, carga y evaluacion de un modelo en Hugging Face, incluyendo el flujo de acceso restringido (gated).
 
 ## Benchmarks y rendimiento
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-k-chrono4-w20-s130 | ~2,02B | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-k-chrono4-w20-s130 | ~2,02B | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Gemma 2 2B (Google) | ~2,6B | 8K | Gemma license | Publico |
 | Qwen2.5 1.5B (Alibaba) | ~1,5B | 32K | Apache 2.0 | Publico |
-| SmolLM2 1.7B (HuggingFace) | ~1,7B | 8K | Apache 2.0 | Publico |
+| SmolLM2 1.7B (Hugging Face) | ~1,7B | 8K | Apache 2.0 | Publico |
 
 La comparativa se ofrece como referencia de categoria (modelos densos de ~1,5-2,6B); no se dispone de datos de rendimiento del modelo evaluado para contrastar benchmarks con estas alternativas.
 
@@ -76,11 +76,11 @@ La comparativa se ofrece como referencia de categoria (modelos densos de ~1,5-2,
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin datos de alineacion no puede estimarse su magnitud.
 - Sesgos conocidos: no disponibles; al no declararse el corpus de entrenamiento, no puede evaluarse el sesgo demografico, linguistico o cultural.
 - Limitaciones de idioma: los idiomas soportados no estan declarados; no debe asumirse un rendimiento multilingue solido.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso restringido (gated) implica aceptar condiciones adicionales del autor en HuggingFace; conviene revisar los terminos exactos antes de un despliegue comercial.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso restringido (gated) implica aceptar condiciones adicionales del autor en Hugging Face; conviene revisar los terminos exactos antes de un despliegue comercial.
 - Compatibilidad de despliegue: al no confirmarse la arquitectura, herramientas como vLLM o llama.cpp pueden no funcionar sin adaptaciones.
 - Reputacion del repositorio: 0 descargas y 0 likes en el momento de la consulta, sin evidencia de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w20-s130
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w20-s130
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

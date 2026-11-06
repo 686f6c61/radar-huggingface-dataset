@@ -86,12 +86,12 @@ No se dispone de datos de modelos de terceros comparables en la informacion prop
 
 | Modelo | Parametros | Contexto | Perplejidad WikiText-2 | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| APEX-I-MiniPlus V2.1 (este) | 42,6B totales, activos no disponibles | 256K | 30,1495 (+0,17 %) | 21,77 GB | apache-2.0 | HuggingFace, 1.000 descargas |
-| APEX-I-NanoPlus | mismo base | 256K | 34,4199 (+14,36 %) | 18,34 GB | apache-2.0 | HuggingFace |
-| BF16 de referencia | mismo base | 256K | 30,0975 (base) | 85,30 GB | apache-2.0 | HuggingFace |
+| APEX-I-MiniPlus V2.1 (este) | 42,6B totales, activos no disponibles | 256K | 30,1495 (+0,17 %) | 21,77 GB | apache-2.0 | Hugging Face, 1.000 descargas |
+| APEX-I-NanoPlus | mismo base | 256K | 34,4199 (+14,36 %) | 18,34 GB | apache-2.0 | Hugging Face |
+| BF16 de referencia | mismo base | 256K | 30,0975 (base) | 85,30 GB | apache-2.0 | Hugging Face |
 | Q4_K_M plano estandar | mismo base | 256K | aprox. 30,28 - 30,38 | 28,39 GB | apache-2.0 | Generico en llama.cpp |
 | Qwen3.8-Flash (modelo original completo) | no disponible | 1M (multimodal) | no disponible | no disponible | no disponible | QwenCloud |
-| Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 | MoE, 35B-A3B | no disponible | no disponible | no disponible | apache-2.0 | HuggingFace |
+| Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 | MoE, 35B-A3B | no disponible | no disponible | no disponible | apache-2.0 | Hugging Face |
 
 Frente al Q4_K_M plano, este build ofrece una perplejidad comparable (+0,17 % frente a +0,7 %) con 6,6 GB menos en disco, y frente al mismo Q3_K_M plano y al mismo tamano en disco (21,77 GB frente a 22,22 GB) mejora la fidelidad de 30,55-30,95 a 30,1495. Conviene recordar que las cifras de las cuantizaciones planas son aproximaciones del autor.
 
@@ -111,7 +111,7 @@ Frente al Q4_K_M plano, este build ofrece una perplejidad comparable (+0,17 % fr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF
+- Repositorio Hugging Face del modelo: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF
 - Modelo base (BF16): https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16
 - Variante APEX-I-NanoPlus: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-NanoPlus-GGUF
 - Referencia lossless BF16 en GGUF: https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF

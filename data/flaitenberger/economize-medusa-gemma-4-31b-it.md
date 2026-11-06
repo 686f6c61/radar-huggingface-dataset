@@ -89,7 +89,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/flaitenberger/economize-medusa-gemma-4-31B-it
+- Repositorio Hugging Face: https://huggingface.co/flaitenberger/economize-medusa-gemma-4-31B-it
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Repositorio de la librería economize: https://github.com/Thiggel/economize
 - Documentación de economize: https://thiggel.github.io/economize/

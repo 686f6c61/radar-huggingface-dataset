@@ -93,12 +93,12 @@ Finalización de tareas de horizonte largo (tareas resueltas). Un planificador f
 
 | Modelo | Parametros | Contexto | Licencia | Media en DeskForge-1M | Disponibilidad |
 |---|---|---|---|---|---|
-| **DeskForge-Gemma4-E4B** | 7,94B (safetensors) | no disponible | Apache 2.0 | 85,12 | HuggingFace, transformers y vLLM |
+| **DeskForge-Gemma4-E4B** | 7,94B (safetensors) | no disponible | Apache 2.0 | 85,12 | Hugging Face, transformers y vLLM |
 | UI-Venus-2-9B | ~9B (por nomenclatura) | no disponible | no disponible | 78,92 | no disponible en la informacion proporcionada |
 | GroundNext-7B | ~7B (por nomenclatura) | no disponible | no disponible | 70,55 | no disponible en la informacion proporcionada |
 | UI-TARS-1.5-7B | ~7B (por nomenclatura) | no disponible | no disponible | 65,25 | no disponible en la informacion proporcionada |
 | Gemma4-31B | ~31B (por nomenclatura) | no disponible | no disponible | 70,74 | no disponible en la informacion proporcionada |
-| DeskForge-Qwen3.5-4B | ~4B (por nomenclatura) | no disponible | no disponible | no disponible | HuggingFace, mismo proyecto y dataset |
+| DeskForge-Qwen3.5-4B | ~4B (por nomenclatura) | no disponible | no disponible | no disponible | Hugging Face, mismo proyecto y dataset |
 
 El dato más llamativo de la comparativa es que un modelo de 7,94B supera en precisión media a UI-Venus-2-9B (78,92 %), GroundNext-7B (70,55 %) y Gemma4-31B (70,74 %) en el benchmark de grounding específico, sin que se disponga de datos de contexto o licencia para esos competidores. DeskForge-Qwen3.5-4B es la alternativa directa dentro del mismo proyecto y con el mismo dataset, pero no se publican sus cifras en la información disponible.
 
@@ -117,7 +117,7 @@ El dato más llamativo de la comparativa es que un modelo de 7,94B supera en pre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/docling-project/DeskForge-Gemma4-E4B
+- Modelo en Hugging Face: https://huggingface.co/docling-project/DeskForge-Gemma4-E4B
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Dataset DeskForge-1M: https://huggingface.co/datasets/docling-project/DeskForge-1M
 - Variante alternativa DeskForge-Qwen3.5-4B: https://huggingface.co/docling-project/DeskForge-Qwen3.5-4B

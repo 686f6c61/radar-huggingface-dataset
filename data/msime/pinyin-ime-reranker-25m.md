@@ -89,7 +89,7 @@ La diferencia de 3 casos sobre 56 no es estadísticamente significativa según l
 
 ## Enlaces
 
-- [HuggingFace: msime/pinyin-ime-reranker-25M](https://huggingface.co/msime/pinyin-ime-reranker-25M)
+- [Hugging Face: msime/pinyin-ime-reranker-25M](https://huggingface.co/msime/pinyin-ime-reranker-25M)
 - [pinyin-ime-reranker-4M](https://huggingface.co/msime/pinyin-ime-reranker-4M)
 - [Repositorio chinese-ime-lm](https://github.com/metasequoiaime/chinese-ime-lm)
 - [Implementación de referencia en Rust](https://github.com/metasequoiaime/chinese-ime-lm/tree/main/reference)

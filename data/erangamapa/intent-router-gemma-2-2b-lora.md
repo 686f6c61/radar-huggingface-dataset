@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`erangamapa/intent-router-gemma-2-2b-lora` es un adaptador LoRA construido sobre el modelo base `google/gemma-2-2b-it`, publicado por el usuario erangamapa en HuggingFace. Su funcion es actuar como enrutador de intenciones (*intent router*) en el dominio de apuestas deportivas (*sportsbook*): recibe un mensaje de cliente y lo clasifica en una unica etiqueta de intencion, que determina que agente downstream debe gestionarlo. Las intenciones no reconocidas se derivan a la categoria `other`.
+`erangamapa/intent-router-gemma-2-2b-lora` es un adaptador LoRA construido sobre el modelo base `google/gemma-2-2b-it`, publicado por el usuario erangamapa en Hugging Face. Su funcion es actuar como enrutador de intenciones (*intent router*) en el dominio de apuestas deportivas (*sportsbook*): recibe un mensaje de cliente y lo clasifica en una unica etiqueta de intencion, que determina que agente downstream debe gestionarlo. Las intenciones no reconocidas se derivan a la categoria `other`.
 
 El adaptador se distribuye como un repositorio PEFT con pesos en formato safetensors, licencia Apache 2.0 y pipeline `text-classification`. El modelo base Gemma 2 2B es un transformer decoder-only de aproximadamente 2.600 millones de parametros desarrollado por Google, con una ventana de contexto de 8.192 tokens; el adaptador hereda esas caracteristicas arquitectonicas y solo anade un cabezal de clasificacion entrenado sobre el modelo base congelado.
 
@@ -70,7 +70,7 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 | Modelo | Parametros base | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| intent-router-gemma-2-2b-lora | ~2.600 M (Gemma 2 2B) | no disponible | Apache 2.0 | HuggingFace (0 descargas) |
+| intent-router-gemma-2-2b-lora | ~2.600 M (Gemma 2 2B) | no disponible | Apache 2.0 | Hugging Face (0 descargas) |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -86,6 +86,6 @@ No se dispone de datos publicados de modelos comparables en la informacion propo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/erangamapa/intent-router-gemma-2-2b-lora
+- Hugging Face: https://huggingface.co/erangamapa/intent-router-gemma-2-2b-lora
 - Modelo base: https://huggingface.co/google/gemma-2-2b-it
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

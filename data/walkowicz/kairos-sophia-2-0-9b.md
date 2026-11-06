@@ -93,6 +93,6 @@ Kairos Sophia 2.0 destaca frente a estas alternativas por su ventana de contexto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Walkowicz/kairos-sophia-2.0-9B
+- Modelo en Hugging Face: https://huggingface.co/Walkowicz/kairos-sophia-2.0-9B
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-7B
 - Paper, repositorio de codigo o demo: no disponible

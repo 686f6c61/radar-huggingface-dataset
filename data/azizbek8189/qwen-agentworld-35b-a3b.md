@@ -103,11 +103,11 @@ El modelo de 35B es la version eficiente de la familia AgentWorld, con un rendim
 
 ## Enlaces
 
-- Repositorio HuggingFace (copia de Azizbek8189): https://huggingface.co/Azizbek8189/Qwen-AgentWorld-35B-A3B
-- Repositorio HuggingFace original (Qwen): https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
+- Repositorio Hugging Face (copia de Azizbek8189): https://huggingface.co/Azizbek8189/Qwen-AgentWorld-35B-A3B
+- Repositorio Hugging Face original (Qwen): https://huggingface.co/Qwen/Qwen-AgentWorld-35B-A3B
 - Informe tecnico (arXiv): http://arxiv.org/abs/2606.24597
 - Blog oficial de Qwen: https://qwen.ai/blog?id=qwen-agentworld
 - Codigo y documentacion (GitHub): https://github.com/QwenLM/Qwen-AgentWorld
-- Coleccion HuggingFace: https://huggingface.co/collections/Qwen/qwen-agentworld
+- Coleccion Hugging Face: https://huggingface.co/collections/Qwen/qwen-agentworld
 - Coleccion ModelScope: https://modelscope.cn/collections/Qwen/Qwen-AgentWorld
 - Demo interactiva: https://qwen.ai/blog?id=qwen-agentworld#interactive-demo-interactive-demo

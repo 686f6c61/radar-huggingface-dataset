@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ling-3.0-flash (base) | 127B totales, 5.1B activos | 256K | BF16 | MIT | HuggingFace |
-| Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF (variante alineada) | 127B | 256K | Q4_0_ROCMFP4_STRIX_LEAN (output Q6_K) | MIT | HuggingFace |
-| Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF (este modelo) | 127B | 256K | Q4_0_ROCMFP4_STRIX_LEAN (output Q4_0_ROCMFP4_FAST) | MIT | HuggingFace |
+| Ling-3.0-flash (base) | 127B totales, 5.1B activos | 256K | BF16 | MIT | Hugging Face |
+| Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF (variante alineada) | 127B | 256K | Q4_0_ROCMFP4_STRIX_LEAN (output Q6_K) | MIT | Hugging Face |
+| Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF (este modelo) | 127B | 256K | Q4_0_ROCMFP4_STRIX_LEAN (output Q4_0_ROCMFP4_FAST) | MIT | Hugging Face |
 
 La comparativa con otros modelos de la misma categoría (MoE de ~127B) no está disponible en la información proporcionada. Se puede mencionar que el modelo base Ling-3.0-flash es comparable en tamaño a modelos como Mixtral-8x22B (141B) o DeepSeek-V2-Lite, pero no se dispone de datos de benchmarks para comparar directamente.
 
@@ -75,7 +75,7 @@ La comparativa con otros modelos de la misma categoría (MoE de ~127B) no está 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kingjones777/Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF
+- Repositorio Hugging Face: https://huggingface.co/kingjones777/Ling-3.0-flash-Research-ROCmFP4-STRIX_LEAN-GGUF
 - Modelo base: https://huggingface.co/inclusionAI/Ling-3.0-flash
 - Variante alineada: https://huggingface.co/kingjones777/Ling-3.0-flash-ROCmFP4-STRIX_LEAN-GGUF
 - Repositorio de cuantización ROCmFP4: https://github.com/charlie12345/rocmfp4

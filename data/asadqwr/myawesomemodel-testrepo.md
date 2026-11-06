@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el autor `asadqwr` en HuggingFace, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) según el pipeline declarado. La model card indica que se trata de una versión actualizada de un modelo previo, con mejoras significativas en razonamiento complejo, matemáticas, programación y lógica, logradas mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. Sin embargo, el repositorio está vacío (0.0 GB) y no se proporcionan detalles técnicos como arquitectura, número de parámetros o longitud de contexto.
+MyAwesomeModel es un modelo de lenguaje presentado por el autor `asadqwr` en Hugging Face, con licencia MIT y diseñado para tareas de extracción de características (feature extraction) según el pipeline declarado. La model card indica que se trata de una versión actualizada de un modelo previo, con mejoras significativas en razonamiento complejo, matemáticas, programación y lógica, logradas mediante un mayor uso de recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. Sin embargo, el repositorio está vacío (0.0 GB) y no se proporcionan detalles técnicos como arquitectura, número de parámetros o longitud de contexto.
 
 El modelo destaca por su rendimiento en benchmarks propios, alcanzando un 87.5% de precisión en AIME 2025 (frente al 70% de la versión anterior) y un promedio de 23K tokens por pregunta en ese test, lo que sugiere un modo de razonamiento profundo. También se menciona una reducción de la tasa de alucinación y soporte mejorado para function calling. No obstante, la falta de especificaciones públicas limita su evaluación objetiva y su uso en producción sin información adicional.
 
@@ -10,7 +10,7 @@ El modelo destaca por su rendimiento en benchmarks propios, alcanzando un 87.5% 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (se infiere transformer por tags de HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (se infiere transformer por tags de Hugging Face, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El modelo destaca por su rendimiento en benchmarks propios, alcanzando un 87.5% 
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna del modelo. Los tags de HuggingFace (`transformers`, `pytorch`, `bert`) sugieren que podría tratarse de un transformer basado en BERT, pero no hay confirmación oficial. El autor menciona que la versión actual ha mejorado su "profundidad de razonamiento" mediante "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", sin especificar el tipo de entrenamiento (p. ej., RLHF, DPO, SFT). Tampoco se indica el volumen de datos de entrenamiento ni la composición del dataset. Se menciona la existencia de una variante "MyAwesomeModel-Small" con la misma arquitectura que el modelo base, pero no se ofrecen más detalles.
+La model card no proporciona detalles sobre la arquitectura interna del modelo. Los tags de Hugging Face (`transformers`, `pytorch`, `bert`) sugieren que podría tratarse de un transformer basado en BERT, pero no hay confirmación oficial. El autor menciona que la versión actual ha mejorado su "profundidad de razonamiento" mediante "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", sin especificar el tipo de entrenamiento (p. ej., RLHF, DPO, SFT). Tampoco se indica el volumen de datos de entrenamiento ni la composición del dataset. Se menciona la existencia de una variante "MyAwesomeModel-Small" con la misma arquitectura que el modelo base, pero no se ofrecen más detalles.
 
 ## Capacidades
 
@@ -77,7 +77,7 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 ## Limitaciones y advertencias
 
 - No se han publicado especificaciones técnicas (arquitectura, parámetros, contexto, tokenizador), lo que impide evaluar su viabilidad para casos de uso concretos.
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos descargables ni código de inferencia disponible.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos descargables ni código de inferencia disponible.
 - La model card no menciona sesgos conocidos ni evaluación de sesgos; se desconoce el comportamiento en poblaciones diversas.
 - Aunque se afirma una reducción de la tasa de alucinación, no se aportan métricas cuantitativas al respecto.
 - Las puntuaciones de benchmarks provienen del autor y no están verificadas de forma independiente; los modelos de comparación son anónimos.
@@ -86,5 +86,5 @@ No disponible. La model card menciona comparaciones con "Model1", "Model2" y "Mo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/asadqwr/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/asadqwr/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (papers, blogs, repos de código, demos) en la información disponible.

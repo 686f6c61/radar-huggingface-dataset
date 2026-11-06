@@ -60,9 +60,9 @@ No se dispone de datos de rendimiento comparativo con otros modelos. Como refere
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Agents-A1-4B (base) | 4B | no disponible | Apache 2.0 | HuggingFace |
-| Agent-A1 Alchemist 4-bit | 4B (cuantizado) | no disponible | Apache 2.0 | HuggingFace (MLX y GGUF) |
-| Qwen3-4B (base original) | 4B | no disponible | Apache 2.0 | HuggingFace |
+| Agents-A1-4B (base) | 4B | no disponible | Apache 2.0 | Hugging Face |
+| Agent-A1 Alchemist 4-bit | 4B (cuantizado) | no disponible | Apache 2.0 | Hugging Face (MLX y GGUF) |
+| Qwen3-4B (base original) | 4B | no disponible | Apache 2.0 | Hugging Face |
 
 No hay datos publicados que permitan una comparativa de rendimiento con alternativas como Llama-3.2-3B o Mistral-7B.
 
@@ -79,6 +79,6 @@ No hay datos publicados que permitan una comparativa de rendimiento con alternat
 
 ## Enlaces
 
-- Repositorio HuggingFace (MLX 4-bit): https://huggingface.co/angelgalvisc/agent-a1-alchemist-4bit
+- Repositorio Hugging Face (MLX 4-bit): https://huggingface.co/angelgalvisc/agent-a1-alchemist-4bit
 - Repositorio GGUF (llama.cpp): https://huggingface.co/angelgalvisc/agent-a1-alchemist-gguf
 - Modelo base: https://huggingface.co/InternScience/Agents-A1-4B

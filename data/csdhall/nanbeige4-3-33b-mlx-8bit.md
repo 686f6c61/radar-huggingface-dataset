@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Nanbeige4.3-33B-MLX-8bit (esta ficha) | 33.118.977.024 | 524.288 anunciados; validado hasta 65.536 | Apache-2.0 | safetensors MLX 8-bit | HuggingFace, 86 descargas |
-| Nanbeige/Nanbeige4.3-33B (original) | 33.118.977.024 | 524.288 anunciados | Apache-2.0 | safetensors BF16 | HuggingFace |
+| Nanbeige4.3-33B-MLX-8bit (esta ficha) | 33.118.977.024 | 524.288 anunciados; validado hasta 65.536 | Apache-2.0 | safetensors MLX 8-bit | Hugging Face, 86 descargas |
+| Nanbeige/Nanbeige4.3-33B (original) | 33.118.977.024 | 524.288 anunciados | Apache-2.0 | safetensors BF16 | Hugging Face |
 | Otras alternativas de 33B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre modelos comparables adicionales en la documentación proporcionada.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables adicionales en la docume
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión: https://huggingface.co/csdhall/Nanbeige4.3-33B-MLX-8bit
+- Repositorio Hugging Face de esta conversión: https://huggingface.co/csdhall/Nanbeige4.3-33B-MLX-8bit
 - Modelo base oficial: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - Commit del checkpoint fuente: https://huggingface.co/Nanbeige/Nanbeige4.3-33B/tree/c1093c501cc6460427c0ac634db7223d0450c0ee
 - Manifiesto de conversión: `conversion_manifest.json` (incluido en el repositorio)

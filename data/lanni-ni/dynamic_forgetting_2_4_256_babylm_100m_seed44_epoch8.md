@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8` es un checkpoint de investigación publicado por el usuario `Lanni-ni` en HuggingFace. Se trata de un modelo de generación de texto con un total de 27.449.096 parámetros, cuyos pesos se distribuyen en formato `safetensors`. El nombre del repositorio sugiere que forma parte de un experimento sobre "dynamic forgetting" (olvido dinámico) aplicado a un modelo de tipo BabyLM 100M, pero la model card es una plantilla generada automáticamente que no contiene ninguna información técnica útil.
+El modelo `Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8` es un checkpoint de investigación publicado por el usuario `Lanni-ni` en Hugging Face. Se trata de un modelo de generación de texto con un total de 27.449.096 parámetros, cuyos pesos se distribuyen en formato `safetensors`. El nombre del repositorio sugiere que forma parte de un experimento sobre "dynamic forgetting" (olvido dinámico) aplicado a un modelo de tipo BabyLM 100M, pero la model card es una plantilla generada automáticamente que no contiene ninguna información técnica útil.
 
 No se dispone de datos sobre arquitectura, longitud de contexto, idiomas soportados, licencia ni procesos de entrenamiento. El modelo no tiene descargas ni "likes", y no se han publicado resultados de evaluación. Su relevancia actual es limitada: se trata de un artefacto de investigación sin documentación, probablemente utilizado para estudiar fenómenos de olvido en modelos pequeños, pero sin aplicación práctica demostrable.
 
@@ -82,6 +82,6 @@ No se dispone de información suficiente para realizar una comparativa fiable. E
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8
+- Modelo en Hugging Face: https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed44_epoch8
 - Checkpoint relacionado (seed43_epoch7): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_seed43_epoch7
 - Checkpoint relacionado (epoch4): https://huggingface.co/Lanni-ni/dynamic_forgetting_2_4_256_babylm_100m_epoch4

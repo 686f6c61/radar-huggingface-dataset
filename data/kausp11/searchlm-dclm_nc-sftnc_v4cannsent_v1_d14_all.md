@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Search-LLM DCLM-Edu 400M SFT es un modelo de generación de texto en formato conversacional desarrollado por el usuario Kausp11 y publicado en HuggingFace. Se trata de un modelo pequeño (aproximadamente 842 millones de parámetros según los metadatos de safetensors) basado en la arquitectura nanochat, entrenado con un enfoque de preentrenamiento habilitado para búsqueda ("search-enabled pretraining"), lo que significa que el modelo aprendió a emitir consultas web y procesar respuestas de búsqueda mediante tokens especiales.
+Search-LLM DCLM-Edu 400M SFT es un modelo de generación de texto en formato conversacional desarrollado por el usuario Kausp11 y publicado en Hugging Face. Se trata de un modelo pequeño (aproximadamente 842 millones de parámetros según los metadatos de safetensors) basado en la arquitectura nanochat, entrenado con un enfoque de preentrenamiento habilitado para búsqueda ("search-enabled pretraining"), lo que significa que el modelo aprendió a emitir consultas web y procesar respuestas de búsqueda mediante tokens especiales.
 
 La versión publicada corresponde a una fase de fine-tuning supervisado (SFT) sobre el modelo base preentrenado con el corpus DCLM-Edu. El ajuste combina datos de chat y habilidades (SmolTalk), tool calling (SmolTalk2) y conversaciones con bloques de búsqueda generados por un pipeline de anotación del propio preentrenamiento. Su relevancia reside en ser un experimento abierto de integración de búsqueda web durante el entrenamiento, un área activa para reducir alucinaciones en modelos pequeños.
 
@@ -80,5 +80,5 @@ Frente a estas alternativas, el modelo de Kausp11 se distingue por su entrenamie
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_v1_d14_all
+- Modelo en Hugging Face: https://huggingface.co/Kausp11/searchlm-dclm_nc-sftnc_v4cannsent_v1_d14_all
 - No se han encontrado enlaces adicionales (paper, blog o repositorio externo) en la informacion disponible.

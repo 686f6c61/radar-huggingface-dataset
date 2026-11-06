@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OmoAIShi (este) | LyCORIS LoKr sobre SDXL y afines | no disponible | no aplica | Apache 2.0 / licencia del base | HuggingFace, GitLab, Booth |
-| LoRA convencional para SDXL | Adaptador LoRA | no disponible | no aplica | variable | HuggingFace, Civitai |
-| LyCORIS LoCon | Adaptador LyCORIS | no disponible | no aplica | variable | HuggingFace, Civitai |
-| Modelo base SDXL (p. ej. Illustrious-XL) | Difusión texto-a-imagen | no disponible | no aplica | variable según base | HuggingFace |
+| OmoAIShi (este) | LyCORIS LoKr sobre SDXL y afines | no disponible | no aplica | Apache 2.0 / licencia del base | Hugging Face, GitLab, Booth |
+| LoRA convencional para SDXL | Adaptador LoRA | no disponible | no aplica | variable | Hugging Face, Civitai |
+| LyCORIS LoCon | Adaptador LyCORIS | no disponible | no aplica | variable | Hugging Face, Civitai |
+| Modelo base SDXL (p. ej. Illustrious-XL) | Difusión texto-a-imagen | no disponible | no aplica | variable según base | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrpopsalot/aidl-omoaishi
+- Hugging Face: https://huggingface.co/mrpopsalot/aidl-omoaishi
 - GitLab (gitgud.io): https://gitgud.io/mrpopsalot/aidl-omoaishi
 - Booth: https://mrpopsalot.booth.pm/items/7895981
 - AllTheFallen: https://allthefallen.moe/forum/index.php?resources/aidl-omoaishi.7465/

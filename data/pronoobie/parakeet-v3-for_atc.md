@@ -95,7 +95,7 @@ No se dispone de datos comparativos con modelos ASR generalistas (por ejemplo, l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pronoobie/Parakeet-v3-For_ATC
+- Modelo en Hugging Face: https://huggingface.co/pronoobie/Parakeet-v3-For_ATC
 - Modelo ajustado original: https://huggingface.co/qenneth/parakeet-tdt-0.6b-v3-finetuned-for-ATC
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/jacktol/ATC-ASR-Dataset

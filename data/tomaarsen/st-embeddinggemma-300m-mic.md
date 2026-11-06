@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tomaarsen/st-embeddinggemma-300m-mic` es un artefacto de prueba (fixture) publicado en HuggingFace por Tomaarsen, colaborador habitual del ecosistema `sentence-transformers`. No es un modelo entrenado para producción: se trata de una versión "adelgazada" (shrunk) del modelo de embeddings `google/embeddinggemma-300m`, generada para validar la integración de frameworks y contratos de ejecución. Sus pesos son aleatorios y, tal como advierte el propio autor en la model card, no representan la calidad de recuperación del modelo original.
+`tomaarsen/st-embeddinggemma-300m-mic` es un artefacto de prueba (fixture) publicado en Hugging Face por Tomaarsen, colaborador habitual del ecosistema `sentence-transformers`. No es un modelo entrenado para producción: se trata de una versión "adelgazada" (shrunk) del modelo de embeddings `google/embeddinggemma-300m`, generada para validar la integración de frameworks y contratos de ejecución. Sus pesos son aleatorios y, tal como advierte el propio autor en la model card, no representan la calidad de recuperación del modelo original.
 
 El repositorio incluye un manifiesto de contrato (`integration.json`), documentación de uso con Transformers, expectativas de framework y procedencia del fixture (`build.json`), además de un enlace al proceso de reducción aplicado. Está etiquetado con `mic`, `test-artifact` y `base_model:google/embeddinggemma-300m`, lo que deja claro su carácter de artefacto de test.
 
@@ -47,7 +47,7 @@ El repositorio documenta el proceso de reducción mediante un enlace al sitio de
 - Test de regresión de serialización: verificar que los pesos safetensors y la configuración del pipeline se cargan correctamente tras cambios en la librería.
 - Desarrollo de herramientas de inspección de modelos: usar un repositorio pequeño (0.1 GB) para probar scripts que leen `integration.json` y `build.json`.
 - Reproducción del proceso de reducción: el enlace al sitio de MIC permite auditar cómo se generó el fixture y replicar el procedimiento con otros modelos base.
-- Docencia y demos de estructura de repositorio: mostrar cómo se organiza un artefacto de test con contrato, procedencia y expectativas en HuggingFace.
+- Docencia y demos de estructura de repositorio: mostrar cómo se organiza un artefacto de test con contrato, procedencia y expectativas en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tomaarsen/st-embeddinggemma-300m-mic | 16,8M (fixture) | no disponible | Fixture de test | no disponible | HuggingFace |
-| google/embeddinggemma-300m | 300M (aprox.) | no disponible | Embeddings de recuperación | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7M | 256 tokens | Embeddings ligeros | Apache 2.0 | HuggingFace |
+| tomaarsen/st-embeddinggemma-300m-mic | 16,8M (fixture) | no disponible | Fixture de test | no disponible | Hugging Face |
+| google/embeddinggemma-300m | 300M (aprox.) | no disponible | Embeddings de recuperación | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7M | 256 tokens | Embeddings ligeros | Apache 2.0 | Hugging Face |
 
 La comparación con `all-MiniLM-L6-v2` es solo orientativa por tamaño: el fixture no es un modelo de embeddings funcional. El modelo base `google/embeddinggemma-300m` es la referencia real para evaluar calidad de recuperación.
 
@@ -84,7 +84,7 @@ La comparación con `all-MiniLM-L6-v2` es solo orientativa por tamaño: el fixtu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomaarsen/st-embeddinggemma-300m-mic
+- Hugging Face: https://huggingface.co/tomaarsen/st-embeddinggemma-300m-mic
 - Modelo base: https://huggingface.co/google/embeddinggemma-300m
 - Proceso de reducción del fixture: https://huggingface-mic-mic-coverage.static.hf.space/shrink/st-embeddinggemma-300m-mic.html
 - Contrato de integración: https://huggingface.co/tomaarsen/st-embeddinggemma-300m-mic/blob/main/integration.json

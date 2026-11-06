@@ -2,11 +2,11 @@
 
 ## Resumen
 
-reax-gen-coyote-v2 es un modelo de lenguaje publicado en HuggingFace por el usuario reax-coyote bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26.000 millones), lo que lo sitúa en la categoría de modelos de tamano medio-grande, comparable en escala a la familia Qwen de 32B o a modelos densos de ~27B. La etiqueta de arquitectura declarada en el repositorio es `qwen3_5`, lo que sugiere una base derivada o compatible con la arquitectura Qwen 3.5, aunque no se dispone de documentación que confirme detalles de dicha arquitectura.
+reax-gen-coyote-v2 es un modelo de lenguaje publicado en Hugging Face por el usuario reax-coyote bajo licencia Apache 2.0. El repositorio contiene pesos en formato safetensors con un total de 26.085.330.160 parámetros (aproximadamente 26.000 millones), lo que lo sitúa en la categoría de modelos de tamano medio-grande, comparable en escala a la familia Qwen de 32B o a modelos densos de ~27B. La etiqueta de arquitectura declarada en el repositorio es `qwen3_5`, lo que sugiere una base derivada o compatible con la arquitectura Qwen 3.5, aunque no se dispone de documentación que confirme detalles de dicha arquitectura.
 
 La model card publicada por el autor es practicamente vacía: solo incluye la declaración de licencia Apache 2.0, sin descripción del modelo, sin datos de entrenamiento, sin especificaciones de contexto ni información sobre capacidades o idiomas. El repositorio ocupa 52,2 GB, coherente con pesos en precisión BF16/FP16 para ~26B parámetros, y registra 17 descargas y 0 likes en el momento de la consulta, lo que indica una distribución muy limitada y un modelo practicamente sin validación por parte de la comunidad.
 
-Su relevancia actual es limitada y debe evaluarse con cautela: se trata de un checkpoint sin documentación técnica verificable, sin benchmarks publicados y sin pipeline declarado en HuggingFace. Para un desarrollador o investigador, esto implica que cualquier uso en producción requeriría una validación empírica propia antes de considerarlo fiable. La ficha que sigue refleja exclusivamente lo que puede extraerse de los metadatos del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado.
+Su relevancia actual es limitada y debe evaluarse con cautela: se trata de un checkpoint sin documentación técnica verificable, sin benchmarks publicados y sin pipeline declarado en Hugging Face. Para un desarrollador o investigador, esto implica que cualquier uso en producción requeriría una validación empírica propia antes de considerarlo fiable. La ficha que sigue refleja exclusivamente lo que puede extraerse de los metadatos del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha documentado.
 
 ## Especificaciones tecnicas
 
@@ -79,12 +79,12 @@ La comparación es aproximada: reax-gen-coyote-v2 se sitúa en el mismo rango de
 - Longitud de contexto no disponible: planificar pipelines con ventanas largas sin verificar antes el límite real puede provocar degradación silenciosa.
 - Licencia Apache 2.0: permite uso comercial y modificaciones, pero el autor no ofrece garantías sobre la procedencia de los datos de entrenamiento ni sobre posibles reclamaciones de terceros derivadas de la base Qwen 3.5.
 - Distribución marginal (17 descargas, 0 likes): no hay evidencia de que el checkpoint haya sido validado por la comunidad; conviene tratarlo como experimental.
-- Sin pipeline declarado en HuggingFace: las herramientas de inferencia automática pueden no reconocerlo correctamente.
+- Sin pipeline declarado en Hugging Face: las herramientas de inferencia automática pueden no reconocerlo correctamente.
 - No se publican pesos cuantizados: el despliegue en hardware de consumo exige conversión manual a GGUF o AWQ/GPTQ, con el consiguiente riesgo de errores.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reax-coyote/reax-gen-coyote-v2
+- Hugging Face: https://huggingface.co/reax-coyote/reax-gen-coyote-v2
 - Repositorio de Qwen (referencia de la arquitectura declarada): https://huggingface.co/Qwen
 - Documentación de safetensors: https://huggingface.co/docs/safetensors
 - vLLM: https://github.com/vllm-project/vllm

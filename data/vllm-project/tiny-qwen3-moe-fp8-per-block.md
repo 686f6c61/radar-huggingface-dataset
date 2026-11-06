@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiny-qwen3-moe-fp8-per-block` es un checkpoint de pruebas publicado por el equipo de vLLM (organización `vllm-project` en HuggingFace) a partir del modelo aleatorio `amd-quark/tiny-random-qwen3_moe`. No es un modelo de lenguaje utilizable: sus pesos son aleatorios por construcción y sus generaciones son ruido. Su propósito es cubrir un hueco en la infraestructura de integración continua de vLLM, proporcionando un artefacto que ejercita la ruta de cuantización FP8 por bloques (128x128) del método `QuarkW8A8Fp8MoEMethod`, que hasta la fecha ningún modelo público cubría.
+`tiny-qwen3-moe-fp8-per-block` es un checkpoint de pruebas publicado por el equipo de vLLM (organización `vllm-project` en Hugging Face) a partir del modelo aleatorio `amd-quark/tiny-random-qwen3_moe`. No es un modelo de lenguaje utilizable: sus pesos son aleatorios por construcción y sus generaciones son ruido. Su propósito es cubrir un hueco en la infraestructura de integración continua de vLLM, proporcionando un artefacto que ejercita la ruta de cuantización FP8 por bloques (128x128) del método `QuarkW8A8Fp8MoEMethod`, que hasta la fecha ningún modelo público cubría.
 
 El modelo emplea una arquitectura Qwen3-MoE en miniatura (2 capas, 4 expertos, `hidden_size=128`, `moe_intermediate_size=256`) con un total de 20.334.464 parámetros, de los cuales solo los expertos enrutados de las proyecciones `gate`, `up` y `down` están cuantizados a FP8 E4M3 con escala por bloque de 128x128 y activaciones dinámicas por grupo de 128. El resto de módulos, incluida toda la atención, permanece en bfloat16.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-project/tiny-qwen3-moe-fp8-per-block
+- Modelo en Hugging Face: https://huggingface.co/vllm-project/tiny-qwen3-moe-fp8-per-block
 - Modelo original: https://huggingface.co/Adamji/tiny-qwen3-moe-fp8-per-block
 - Modelo base aleatorio: https://huggingface.co/amd-quark/tiny-random-qwen3_moe
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

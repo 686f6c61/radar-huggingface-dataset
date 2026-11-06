@@ -82,7 +82,7 @@ Cep Bot no compite en rendimiento bruto con modelos de mayor tamaño, sino en ef
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Gokhannet/Cep-Bot-yapay-zeka
+- Página del modelo en Hugging Face: https://huggingface.co/Gokhannet/Cep-Bot-yapay-zeka
 - Modelo base Qwen2.5 0.5B Instruct (referencia): https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio de llama.cpp (para el runtime): https://github.com/ggerganov/llama.cpp
 - No se han encontrado papers, blogs o demos adicionales en la información proporcionada.

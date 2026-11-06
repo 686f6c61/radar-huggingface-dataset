@@ -4,7 +4,7 @@
 
 Qwen3.5-0.8B-Coder-Calude-Full es un ajuste fino comunitario publicado por el usuario pokejoh sobre el modelo base Qwen/Qwen3.5-0.8B, un transformer de aproximadamente 873 millones de parametros (873.438.784 segun los pesos en safetensors). El modelo se distribuye bajo licencia Apache 2.0 y esta orientado a generacion de codigo y conversacion, segun se deduce de su nombre y de los ejemplos incluidos en su model card. El repositorio ocupa 2,3 GB e incluye pesos en safetensors y GGUF, lo que permite tanto inferencia con la libreria transformers como despliegue cuantizado en llama.cpp u Ollama.
 
-El interes principal de esta ficha es acotado: se trata de un fine-tune de muy bajo numero de descargas (0) y likes (0), sin documentacion tecnica de entrenamiento, sin resultados de benchmarks y con una model card incompleta y con errores. El propio autor no detalla el dataset, el numero de tokens de entrenamiento ni la metodologia de alineacion (RLHF/DPO). El pipeline declarado en HuggingFace es image-text-to-text, aunque no hay evidencia en la informacion disponible de que el modelo procese imagenes de forma nativa; probablemente se trate de un valor heredado de la configuracion del repositorio.
+El interes principal de esta ficha es acotado: se trata de un fine-tune de muy bajo numero de descargas (0) y likes (0), sin documentacion tecnica de entrenamiento, sin resultados de benchmarks y con una model card incompleta y con errores. El propio autor no detalla el dataset, el numero de tokens de entrenamiento ni la metodologia de alineacion (RLHF/DPO). El pipeline declarado en Hugging Face es image-text-to-text, aunque no hay evidencia en la informacion disponible de que el modelo procese imagenes de forma nativa; probablemente se trate de un valor heredado de la configuracion del repositorio.
 
 La relevancia practica es limitada y debe evaluarse con cautela: puede servir como experimento de fine-tuning de bajo coste sobre un modelo pequeno, para tareas de generacion de codigo simple en ingles y para ejecucion local en hardware muy modesto, pero no esta validado para produccion ni para uso comercial critico sin una evaluacion propia previa.
 
@@ -25,7 +25,7 @@ Otros datos del repositorio: tamano del repo 2,3 GB; libreria transformers; tags
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica sobre la arquitectura interna mas alla de que el modelo base pertenece a la familia Qwen3.5 y de que el ajuste se ha realizado con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card. Unsloth es una libreria de fine-tuning eficiente en memoria que suele emplearse con LoRA/QLoRA, pero la model card no especifica si el resultado publicado es un adaptador fusionado, que rango de LoRA se uso ni cuantos pasos de entrenamiento se ejecutaron.
+No se dispone de informacion tecnica sobre la arquitectura interna mas alla de que el modelo base pertenece a la familia Qwen3.5 y de que el ajuste se ha realizado con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card. Unsloth es una libreria de fine-tuning eficiente en memoria que suele emplearse con LoRA/QLoRA, pero la model card no especifica si el resultado publicado es un adaptador fusionado, que rango de LoRA se uso ni cuantos pasos de entrenamiento se ejecutaron.
 
 Tampoco se documentan los datos de entrenamiento: no hay numero de tokens, composicion del dataset, ni mencion a fases de RLHF, DPO o cualquier otra forma de alineacion. El nombre del modelo ("Coder-Calude", con una errata evidente en "Calude" por "Claude") sugiere que el ajuste se hizo sobre un dataset de conversaciones de codigo con un estilo de respuesta imitando a los asistentes tipo Claude, pero esto es una inferencia a partir del nombre y no un dato confirmado por el autor. No consta ninguna innovacion tecnica destacable (decodificacion especulativa, atencion lineal, arquitectura hibrida, etc.).
 
@@ -33,7 +33,7 @@ Tampoco se documentan los datos de entrenamiento: no hay numero de tokens, compo
 
 - Generacion de texto conversacional en ingles, en formato de chat multi-turno (roles user/assistant).
 - Generacion de codigo Python en ejemplos sencillos; la model card incluye una muestra de generacion de una red neuronal en PyTorch (aunque el codigo de salida contiene errores logicos, ver la seccion de limitaciones).
-- El pipeline declarado en HuggingFace es image-text-to-text y el ejemplo oficial usa una entrada de imagen con una URL; no hay confirmacion independiente de capacidades de vision reales en el modelo ajustado.
+- El pipeline declarado en Hugging Face es image-text-to-text y el ejemplo oficial usa una entrada de imagen con una URL; no hay confirmacion independiente de capacidades de vision reales en el modelo ajustado.
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: la metadato de idioma declara unicamente ingles; no se documenta soporte de otros idiomas en el ajuste.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Qwen3.5-0.8B-Coder-Calude-Full | 873.438.784 | no disponible | Apache 2.0 | safetensors, GGUF | no disponible |
 | Qwen2.5-Coder-1.5B-Instruct | 1.540 millones | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | benchmarks publicados por Qwen |
 | Llama-3.2-1B-Instruct | 1.240 millones | 128.000 tokens (segun documentacion publica de Meta) | Licencia comunitaria Llama 3.2 | safetensors, GGUF | benchmarks publicados por Meta |
-| SmolLM2-1.7B-Instruct | 1.710 millones | 8.192 tokens (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | benchmarks publicados por HuggingFace |
+| SmolLM2-1.7B-Instruct | 1.710 millones | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | benchmarks publicados por Hugging Face |
 
 Nota: los datos de los modelos comparativos provienen de su documentacion publica y se incluyen como referencia; los de este modelo ajustado son mayoritariamente "no disponible" porque la model card no los documenta. No se dispone de una comparacion directa de rendimiento entre ellos.
 
@@ -88,9 +88,9 @@ Nota: los datos de los modelos comparativos provienen de su documentacion public
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/pokejoh/Qwen3.5-0.8B-Coder-Calude-Full
+- Pagina del modelo en Hugging Face: https://huggingface.co/pokejoh/Qwen3.5-0.8B-Coder-Calude-Full
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Demo citada en la model card: https://huggingface.co/spaces/rahul7star/claude-Qwen
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Resultados de busqueda web: no se han encontrado enlaces relevantes sobre este modelo; las busquedas devolvieron unicamente contenidos sin relacion (paginas sobre un club de futbol), por lo que no se incluyen.

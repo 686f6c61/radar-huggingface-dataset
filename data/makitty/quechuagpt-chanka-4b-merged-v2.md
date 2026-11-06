@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuechuaGPT-chanka-4B-merged-v2 es un modelo de 4.539.265.536 parámetros (unos 4,54 mil millones) publicado en HuggingFace por el usuario makitty, con licencia Apache 2.0 y pesos en formato safetensors. Se trata de un ajuste fino (finetune) derivado del modelo Thermostatic/rosettia-chanka-4b-alpha160, etiquetado con la familia qwen3_5 y entrenado con las herramientas Unsloth y TRL, según la escasa model card publicada. La metadata declara un único idioma soportado, el inglés, pese a que el nombre del repositorio alude al quechua y a la variedad chanka.
+QuechuaGPT-chanka-4B-merged-v2 es un modelo de 4.539.265.536 parámetros (unos 4,54 mil millones) publicado en Hugging Face por el usuario makitty, con licencia Apache 2.0 y pesos en formato safetensors. Se trata de un ajuste fino (finetune) derivado del modelo Thermostatic/rosettia-chanka-4b-alpha160, etiquetado con la familia qwen3_5 y entrenado con las herramientas Unsloth y TRL, según la escasa model card publicada. La metadata declara un único idioma soportado, el inglés, pese a que el nombre del repositorio alude al quechua y a la variedad chanka.
 
 El modelo se distribuye para su uso con la librería transformers y aparece etiquetado como compatible con text-generation-inference y con endpoints, además de figurar en el pipeline image-text-to-text, lo que sugiere una posible entrada multimodal de imagen y texto, extremo que la model card no desarrolla ni confirma. El repositorio ocupa 9,1 GB, un tamaño coherente con pesos en precisión de 16 bits para su número de parámetros.
 
@@ -24,7 +24,7 @@ Su relevancia práctica es limitada por el momento: no tiene descargas ni valora
 | Pipeline declarado | image-text-to-text |
 | Tamaño del repositorio | 9,1 GB |
 | Librería | transformers |
-| Fecha de publicación | 18 de septiembre de 2026 (según la metadata de HuggingFace) |
+| Fecha de publicación | 18 de septiembre de 2026 (según la metadata de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -37,7 +37,7 @@ En cuanto al entrenamiento, la model card únicamente indica que se trata de un 
 - Generación de texto conversacional: el tag conversational y el pipeline declarado apuntan a un uso como modelo de diálogo, si bien no hay ejemplos ni plantilla de chat documentada.
 - Entrada multimodal: la etiqueta image-text-to-text sugiere capacidad de procesar imágenes junto a texto, pero la model card no la describe ni la confirma.
 - Ajuste fino adicional: al estar publicado con soporte de Unsloth y TRL, es plausible reutilizarlo como base para nuevos ajustes, aunque no se documentan recetas.
-- Compatibilidad con text-generation-inference y con endpoints de HuggingFace según los tags del repositorio.
+- Compatibilidad con text-generation-inference y con endpoints de Hugging Face según los tags del repositorio.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponibles; solo se declara inglés.
@@ -65,17 +65,17 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada en cuantización de 4 bits: en torno a 2,3-2,7 GB para los pesos, aunque habría que generar las variantes cuantizadas, ya que no se publican.
 - GPU consumer: cabe sin problema en tarjetas de 12 GB o más (RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070, RTX 4080, RTX 3090, RTX 4090) si se usa 16 bits con contextos cortos; en 8 o 4 bits cabría incluso en GPUs de 8 GB.
 - GPU de centro de datos: A100 40/80 GB, H100, L40S y similares, con margen amplio. Es probable que quepa en varias GPU de una misma máquina en configuraciones tensor-parallel.
-- Opciones de despliegue: transformers es la vía soportada de forma explícita; text-generation-inference y los endpoints de HuggingFace figuran en los tags; vLLM o SGLang serían plausibles si la arquitectura Qwen3.5 está soportada por esas librerías (no confirmado); llama.cpp u Ollama requerirían generar primero un GGUF, que no se distribuye.
+- Opciones de despliegue: transformers es la vía soportada de forma explícita; text-generation-inference y los endpoints de Hugging Face figuran en los tags; vLLM o SGLang serían plausibles si la arquitectura Qwen3.5 está soportada por esas librerías (no confirmado); llama.cpp u Ollama requerirían generar primero un GGUF, que no se distribuye.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| makitty/QuechuaGPT-chanka-4B-merged-v2 | 4,54 mil millones | no disponible | Apache 2.0 | HuggingFace (0 descargas, 0 valoraciones) |
-| Qwen3-4B | ~4 mil millones | 32.768 tokens nativo, ampliable con YaRN | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| Llama-3.2-3B | ~3,2 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace, muy extendido |
-| Gemma-3-4B | ~4 mil millones | 128.000 tokens | Términos de uso de Gemma | HuggingFace, muy extendido |
+| makitty/QuechuaGPT-chanka-4B-merged-v2 | 4,54 mil millones | no disponible | Apache 2.0 | Hugging Face (0 descargas, 0 valoraciones) |
+| Qwen3-4B | ~4 mil millones | 32.768 tokens nativo, ampliable con YaRN | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| Llama-3.2-3B | ~3,2 mil millones | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face, muy extendido |
+| Gemma-3-4B | ~4 mil millones | 128.000 tokens | Términos de uso de Gemma | Hugging Face, muy extendido |
 
 Nota: los datos de contexto y licencia de los modelos comparativos provienen de su documentación pública general y no de la información proporcionada en esta ficha; conviene verificarlos antes de citarlos. No hay datos de rendimiento comparativo para el modelo evaluado, por lo que la comparación se limita a tamaño, contexto declarado y licencia.
 
@@ -94,7 +94,7 @@ Nota: los datos de contexto y licencia de los modelos comparativos provienen de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/makitty/QuechuaGPT-chanka-4B-merged-v2
+- Modelo en Hugging Face: https://huggingface.co/makitty/QuechuaGPT-chanka-4B-merged-v2
 - Modelo base: https://huggingface.co/Thermostatic/rosettia-chanka-4b-alpha160
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs ni demos adicionales en la búsqueda web realizada.

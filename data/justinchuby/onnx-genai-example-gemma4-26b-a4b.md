@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio contiene una exportación ONNX del decoder de texto del modelo `google/gemma-4-26B-A4B-it`, la variante de mezcla de expertos (MoE) de la familia Gemma-4 desarrollada por Google. El export ha sido realizado por Justin Chu (justinchuby) utilizando la herramienta mobius, e incluye metadatos de inferencia canónicos (`inference_metadata.yaml`) validados con el validador Rust de onnx-genai. El objetivo es ofrecer un paquete listo para ejecutar con ONNX Runtime en GPU (CUDA), con pesos reales (no aleatorios) y paridad numérica verificada frente a la implementación original de HuggingFace Transformers.
+Este repositorio contiene una exportación ONNX del decoder de texto del modelo `google/gemma-4-26B-A4B-it`, la variante de mezcla de expertos (MoE) de la familia Gemma-4 desarrollada por Google. El export ha sido realizado por Justin Chu (justinchuby) utilizando la herramienta mobius, e incluye metadatos de inferencia canónicos (`inference_metadata.yaml`) validados con el validador Rust de onnx-genai. El objetivo es ofrecer un paquete listo para ejecutar con ONNX Runtime en GPU (CUDA), con pesos reales (no aleatorios) y paridad numérica verificada frente a la implementación original de Hugging Face Transformers.
 
 El modelo base es un MoE con 26 mil millones de parámetros totales y 4 mil millones activos por token (A4B), con 128 expertos y selección top-8. Esta exportación en particular utiliza una ruta de despacho MoE no fusionada y vectorizada, debido a una limitación del kernel fusionado de ONNX Runtime que acumula en fp16 y degrada la precisión. El paquete incluye el decoder completo en fp16 (~52 GB), tokenizador, plantilla de chat y políticas de generación, lo que lo hace adecuado para integraciones en producción con ONNX Runtime.
 
@@ -40,7 +40,7 @@ No se dispone de información sobre el entrenamiento del modelo base (datos, tok
 - Despliegue en GPU de alta memoria: con un pico de VRAM de 55.3 GB en fp16, es adecuado para servidores con H200, A100 80GB o similares, donde se puede servir el modelo completo sin cuantización adicional.
 - Aplicaciones de chat y asistentes conversacionales: al incluir plantilla de chat y tokenizador, puede integrarse en sistemas de diálogo multi-turno con contexto largo (la ventana de contexto no se especifica, pero el modelo base soporta ventanas amplias).
 - Investigación y evaluación de MoE en ONNX: sirve como referencia para estudiar el comportamiento de modelos MoE bajo ONNX Runtime, incluyendo la ruta no fusionada y sus implicaciones de precisión.
-- Generación de texto con paridad verificada: la salida greedy es token-idéntica a la de HuggingFace Transformers, lo que facilita migrar pipelines existentes sin cambios en los resultados.
+- Generación de texto con paridad verificada: la salida greedy es token-idéntica a la de Hugging Face Transformers, lo que facilita migrar pipelines existentes sin cambios en los resultados.
 - Desarrollo de herramientas de inferencia: los metadatos y la estructura del grafo pueden usarse para probar optimizaciones, kernels alternativos o nuevas versiones de ONNX Runtime.
 
 ## Benchmarks y rendimiento
@@ -87,7 +87,7 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justinchuby/onnx-genai-example-gemma4-26b-a4b
+- Repositorio Hugging Face: https://huggingface.co/justinchuby/onnx-genai-example-gemma4-26b-a4b
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Repositorio GitHub de modelos ONNX GenAI: https://github.com/justinchuby/onnx-genai-models
 - Colección de ejemplos de metadatos de inferencia: https://huggingface.co/collections/justinchuby/onnx-genai-inference-metadata-examples

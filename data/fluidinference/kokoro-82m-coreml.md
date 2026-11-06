@@ -79,7 +79,7 @@ No se dispone de datos comparativos directos con otros modelos TTS en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/kokoro-82m-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/kokoro-82m-coreml
 - Repositorio FluidAudio (Swift SDK): https://github.com/FluidInference/FluidAudio
 - Documentacion DeepWiki sobre KokoroModel y TTS Manager: https://deepwiki.com/FluidInference/FluidAudio/3.4.1-kokoro-model-and-synthesis
 - Repositorio original de Kokoro: https://github.com/hexgrad/kokoro

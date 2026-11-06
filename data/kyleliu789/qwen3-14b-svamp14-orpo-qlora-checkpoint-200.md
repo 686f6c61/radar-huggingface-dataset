@@ -70,7 +70,7 @@ No disponible. No se han encontrado comparaciones con otros adaptadores de Qwen3
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-200
+- Repositorio Hugging Face: https://huggingface.co/kyleliu789/qwen3-14b-svamp14-orpo-qlora-checkpoint-200
 - Repositorio del autor (adapter SFT): https://huggingface.co/kyleliu789/qwen3-14b-svamp14-sft-qlora
 - Repositorio del autor (adapter DPO): https://huggingface.co/kyleliu789/qwen3-14b-svamp-dpo-qlora-all-caps-1e-5
 - GitHub de Qwen3: https://github.com/QwenLM/Qwen3

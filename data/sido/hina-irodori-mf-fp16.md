@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks ni de otros modelos comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sido/hina-irodori-mf-fp16
+- Modelo en Hugging Face: https://huggingface.co/Sido/hina-irodori-mf-fp16
 - Fuente ONNX FP32 para navegador: https://huggingface.co/raratu/Onsei-Irodori-v4.1-Small-MF/tree/a7542a4f1ea0fd8d44ad82d7c0fd7bb8b81ed641
 - Modelo original: https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF/tree/ccc78f5d480b6e51b69b2d5042a14c4da04fea6e
 - Código del navegador con el script de conversión: https://github.com/mazariba/hina5

@@ -28,7 +28,7 @@ El resultado es un modelo de matting alfa que se carga con @huggingface/transfor
 | Backends soportados | WebGPU y WASM (fallback) via onnxruntime-web; inferencia 100% en cliente |
 | Precision por defecto | fp16 (definida en config.json mediante transformers.js_config.dtype) |
 | Autor / publicador | camclo (repositorio referenciado como studioludens/birefnet-lite-512) |
-| Fecha de creacion | 2026-09-29 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-29 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,11 +95,11 @@ Fallos registrados por el autor en las variantes a 1024×1024:
 
 | Modelo | Resolucion de entrada | Formato / runtime | Ejecucion en navegador | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BiRefNet-lite-512 (este repositorio) | 512×512 | ONNX, transformers.js (WebGPU/WASM) | Si | MIT | HuggingFace (camclo/birefnet-lite-512) |
-| ZhengPeng7/BiRefNet_lite | 1024×1024 | PyTorch | No (no es ONNX) | No disponible en la informacion proporcionada | HuggingFace |
-| onnx-community/BiRefNet_lite-ONNX | 1024×1024 | ONNX | No (agotamiento de memoria) | No disponible en la informacion proporcionada | HuggingFace |
-| BiRefNet_lite-2K | 2560×1440 | PyTorch | No | No disponible en la informacion proporcionada | HuggingFace / GitHub del proyecto BiRefNet |
-| BiRefNet-matting | No disponible | PyTorch | No | No disponible en la informacion proporcionada | HuggingFace / GitHub del proyecto BiRefNet |
+| BiRefNet-lite-512 (este repositorio) | 512×512 | ONNX, transformers.js (WebGPU/WASM) | Si | MIT | Hugging Face (camclo/birefnet-lite-512) |
+| ZhengPeng7/BiRefNet_lite | 1024×1024 | PyTorch | No (no es ONNX) | No disponible en la informacion proporcionada | Hugging Face |
+| onnx-community/BiRefNet_lite-ONNX | 1024×1024 | ONNX | No (agotamiento de memoria) | No disponible en la informacion proporcionada | Hugging Face |
+| BiRefNet_lite-2K | 2560×1440 | PyTorch | No | No disponible en la informacion proporcionada | Hugging Face / GitHub del proyecto BiRefNet |
+| BiRefNet-matting | No disponible | PyTorch | No | No disponible en la informacion proporcionada | Hugging Face / GitHub del proyecto BiRefNet |
 
 La comparativa se limita a las variantes de la propia familia BiRefNet documentadas en la model card y en los resultados de busqueda. No se dispone de datos de rendimiento comparado con esas alternativas ni de comparaciones con otros modelos de eliminacion de fondo de la misma categoria.
 
@@ -108,7 +108,7 @@ La comparativa se limita a las variantes de la propia familia BiRefNet documenta
 - Resolucion de entrada reducida: el modelo trabaja a 512×512. Para imagenes completas grandes, la mascara se obtiene a baja resolucion y se reescala con interpolacion bilineal, lo que puede degradar bordes finos, pelo o estructuras de pocos pixeles si no se aplica sobre recortes.
 - El matte debe reescalarse manualmente al tamano original; el modelo no lo hace por si mismo y la calidad final depende del metodo de interpolacion empleado.
 - La salida son logits, no una mascara binaria. Es obligatorio aplicar sigmoid externamente; omitirlo produce resultados incorrectos.
-- Conflicto de identificadores en la documentacion: el identificador de HuggingFace de esta ficha es camclo/birefnet-lite-512, mientras que los ejemplos de codigo de la model card cargan studioludens/birefnet-lite-512. Conviene verificar cual es el repositorio canonico antes de fijar la dependencia en produccion, y fijar una revision concreta para evitar cambios inesperados.
+- Conflicto de identificadores en la documentacion: el identificador de Hugging Face de esta ficha es camclo/birefnet-lite-512, mientras que los ejemplos de codigo de la model card cargan studioludens/birefnet-lite-512. Conviene verificar cual es el repositorio canonico antes de fijar la dependencia en produccion, y fijar una revision concreta para evitar cambios inesperados.
 - Repositorio sin traccion: cero descargas y cero likes en el momento de la consulta, lo que implica menor escrutinio de la comunidad sobre la fidelidad del export respecto al modelo original.
 - La fidelidad numerica del export depende de un parche de terceros (Kazuhito00) sobre PyTorch 2.0.1, una version descatalogada. Reproducir el proceso exige un contenedor Docker fijado; otras versiones de PyTorch no son compatibles con el parche.
 - No se documentan sesgos del modelo ni evaluaciones de equidad. Al ser un modelo de segmentacion, los sesgos se manifestarian como fallos sistematicos en determinados tipos de objeto, tonos de piel o condiciones de iluminacion, y no hay datos publicados al respecto.
@@ -119,8 +119,8 @@ La comparativa se limita a las variantes de la propia familia BiRefNet documenta
 
 ## Enlaces
 
-- HuggingFace (identificador de esta ficha): https://huggingface.co/camclo/birefnet-lite-512
-- HuggingFace (repositorio referenciado en la model card): https://huggingface.co/studioludens/birefnet-lite-512
+- Hugging Face (identificador de esta ficha): https://huggingface.co/camclo/birefnet-lite-512
+- Hugging Face (repositorio referenciado en la model card): https://huggingface.co/studioludens/birefnet-lite-512
 - README del repositorio referenciado: https://huggingface.co/studioludens/birefnet-lite-512/blob/main/README.md
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Repositorio GitHub de BiRefNet: https://github.com/ZhengPeng7/BiRefNet

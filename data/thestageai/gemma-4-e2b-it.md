@@ -73,11 +73,11 @@ Los resultados publicados dequantizan todos los modelos a BF16 y los sirven con 
 
 | Modelo | Parámetros | Contexto | MMLU-Pro | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TheStageAI/gemma-4-E2B-it (M) | 2.279.759.395 (checkpoint); ~5,1B denso con PLE | no disponible | 49,85 | MIT + Gemma Terms | HuggingFace, MLX |
-| google/gemma-4-E2B-it (BF16) | ~5,1B con PLE | no disponible | 61,85 | Gemma Terms | HuggingFace |
-| Unsloth Q3-K-S (Gemma 4 E2B) | mismo base | no disponible | 48,20 | Gemma Terms | HuggingFace, GGUF |
-| Unsloth UD-Q2-K-XL (Gemma 4 E2B) | mismo base | no disponible | 43,17 | Gemma Terms | HuggingFace, GGUF |
-| TheStageAI/gemma-4-E4B-it | no disponible | no disponible | no disponible | MIT + Gemma Terms | HuggingFace, MLX |
+| TheStageAI/gemma-4-E2B-it (M) | 2.279.759.395 (checkpoint); ~5,1B denso con PLE | no disponible | 49,85 | MIT + Gemma Terms | Hugging Face, MLX |
+| google/gemma-4-E2B-it (BF16) | ~5,1B con PLE | no disponible | 61,85 | Gemma Terms | Hugging Face |
+| Unsloth Q3-K-S (Gemma 4 E2B) | mismo base | no disponible | 48,20 | Gemma Terms | Hugging Face, GGUF |
+| Unsloth UD-Q2-K-XL (Gemma 4 E2B) | mismo base | no disponible | 43,17 | Gemma Terms | Hugging Face, GGUF |
+| TheStageAI/gemma-4-E4B-it | no disponible | no disponible | no disponible | MIT + Gemma Terms | Hugging Face, MLX |
 
 ## Limitaciones y advertencias
 
@@ -92,7 +92,7 @@ Los resultados publicados dequantizan todos los modelos a BF16 y los sirven con 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheStageAI/gemma-4-E2B-it
+- Modelo en Hugging Face: https://huggingface.co/TheStageAI/gemma-4-E2B-it
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Release hermana (E4B): https://huggingface.co/TheStageAI/gemma-4-E4B-it
 - Repositorio edge-lm: https://github.com/TheStageAI/edge-lm

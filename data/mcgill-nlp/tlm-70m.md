@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 - VRAM estimada: al tener 67,4 millones de parámetros, en fp32 ocupa aproximadamente 270 MB; en fp16, unos 135 MB. Cabe en cualquier GPU consumer (incluso en una GTX 1060 de 6 GB) y también en CPU.
 - GPU recomendadas: cualquier GPU con al menos 1 GB de VRAM es suficiente; una RTX 3060 o superior permitiría inferencia con holgura.
-- Despliegue: al ser un modelo de transformers estándar (con la clase personalizada), se puede ejecutar con la librería `transformers` de HuggingFace. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, pero al ser un modelo pequeño podría adaptarse.
+- Despliegue: al ser un modelo de transformers estándar (con la clase personalizada), se puede ejecutar con la librería `transformers` de Hugging Face. No se menciona compatibilidad con vLLM, llama.cpp u Ollama, pero al ser un modelo pequeño podría adaptarse.
 - Latencia y throughput: no se proporcionan datos oficiales; en una GPU moderna se esperan latencias de milisegundos por token, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -68,7 +68,7 @@ No se dispone de datos de rendimiento de TLM-70M frente a otros modelos de tama�
 
 ## Enlaces
 
-- [HuggingFace: McGill-NLP/TLM-70M](https://huggingface.co/McGill-NLP/TLM-70M)
+- [Hugging Face: McGill-NLP/TLM-70M](https://huggingface.co/McGill-NLP/TLM-70M)
 - [Repositorio GitHub: permutation-alignment](https://github.com/charbel08/permutation-alignment)
 - [Paper DataDecide (arXiv:2504.11393)](https://arxiv.org/abs/2504.11393)
 - [Dataset FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb)

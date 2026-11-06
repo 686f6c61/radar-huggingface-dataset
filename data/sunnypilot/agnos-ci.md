@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Agnos-CI es un modelo publicado en HuggingFace bajo el identificador `sunnypilot/agnos-ci` por el usuario u organizacion sunnypilot. La model card asociada es practicamente vacia: solo declara la licencia Apache 2.0, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado el mismo dia (29 de octubre de 2026), lo que sugiere una publicacion reciente y sin curacion posterior.
+Agnos-CI es un modelo publicado en Hugging Face bajo el identificador `sunnypilot/agnos-ci` por el usuario u organizacion sunnypilot. La model card asociada es practicamente vacia: solo declara la licencia Apache 2.0, sin descripcion, sin arquitectura, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado y actualizado el mismo dia (29 de octubre de 2026), lo que sugiere una publicacion reciente y sin curacion posterior.
 
 No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, tokenizador, idiomas soportados ni proceso de entrenamiento. Tampoco se ha publicado pipeline de inferencia en la plataforma, lo que impide clasificarlo con certeza como modelo de lenguaje, modelo de vision, componente auxiliar o artefacto de otro tipo. El nombre "agnos" y el sufijo "ci" no aportan por si solos una indicacion fiable de la funcion del modelo.
 
@@ -75,5 +75,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sunnypilot/agnos-ci
+- Repositorio en Hugging Face: https://huggingface.co/sunnypilot/agnos-ci
 - No se han encontrado otros enlaces (papers, blogs, repositorios de codigo o demos) en la informacion disponible.

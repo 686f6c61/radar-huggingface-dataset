@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`generatedDigitalExps_1xL5wS_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto de modelo publicado en HuggingFace por el usuario `gianmaTest`, con 2.366.208 parámetros totales (aproximadamente 2,37 millones) según los metadatos reales de los pesos en formato safetensors. El repositorio no incluye model card descriptiva: el README se limita a la plantilla autogenerada por la integración `PyTorchModelHubMixin` de `huggingface_hub`, con los campos "Code", "Paper" y "Docs" marcados como `[More Information Needed]`. No se declara pipeline, licencia, idiomas ni conjunto de datos de entrenamiento.
+`generatedDigitalExps_1xL5wS_hier_by_room_rnn_meanPoolProc_video_2` es un artefacto de modelo publicado en Hugging Face por el usuario `gianmaTest`, con 2.366.208 parámetros totales (aproximadamente 2,37 millones) según los metadatos reales de los pesos en formato safetensors. El repositorio no incluye model card descriptiva: el README se limita a la plantilla autogenerada por la integración `PyTorchModelHubMixin` de `huggingface_hub`, con los campos "Code", "Paper" y "Docs" marcados como `[More Information Needed]`. No se declara pipeline, licencia, idiomas ni conjunto de datos de entrenamiento.
 
 El identificador sugiere, sin confirmación por parte del autor, un experimento de investigación sobre datos "digitales" con una arquitectura de tipo RNN jerárquica organizada "por habitación" (`hier_by_room`), con agregación por *mean pooling* (`meanPoolProc`) y aplicada a vídeo (`video_2`). Es una inferencia a partir del nombre, no un dato documentado. No hay información sobre la tarea concreta, el tokenizador, la configuración de entrenamiento ni el formato de entrada esperado.
 
@@ -78,7 +78,7 @@ No disponible. No se ha identificado ningún modelo comparable en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL5wS_hier_by_room_rnn_meanPoolProc_video_2
+- Hugging Face: https://huggingface.co/gianmaTest/generatedDigitalExps_1xL5wS_hier_by_room_rnn_meanPoolProc_video_2
 - Documentación de `PyTorchModelHubMixin`: https://huggingface.co/docs/huggingface_hub/package_reference/mixins#huggingface_hub.PyTorchModelHubMixin
 - Paper: no disponible
 - Código: no disponible

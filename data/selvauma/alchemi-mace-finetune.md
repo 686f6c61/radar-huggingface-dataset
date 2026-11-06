@@ -80,7 +80,7 @@ Como referencia interna del propio run, el RMSE de fuerza en la época 22 era de
 
 | Modelo | Tipo | Elementos | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| alchemi-mace-finetune (este modelo) | Fine-tune de MACE sobre MACE-MP medium | Li, F, Cu, Sr, Sn | No disponible | No aplica | CC-BY-4.0 (con reserva sobre la licencia del base) | HuggingFace, 0 descargas, 0 likes |
+| alchemi-mace-finetune (este modelo) | Fine-tune de MACE sobre MACE-MP medium | Li, F, Cu, Sr, Sn | No disponible | No aplica | CC-BY-4.0 (con reserva sobre la licencia del base) | Hugging Face, 0 descargas, 0 likes |
 | MACE-MP medium | Modelo fundacional de potencial interatómico | Amplia cobertura de la tabla periódica (no detallada) | No disponible | No aplica | No disponible | Público como base del ajuste |
 | mace_small (variante del proyecto) | Modelo MACE de referencia para benchmarking | No disponible | No disponible | No aplica | No disponible | Artefactos del proyecto: `mace_small_lammps.pt`, `mace_small_mliap_nocueq.pt` |
 | Modelos DeepMD | Potenciales interatómicos alternativos empleados en la comparación | No disponible | No disponible | No aplica | No disponible | Referenciados en el benchmarking, no incluidos en este repositorio |
@@ -102,7 +102,7 @@ La información disponible no permite comparar rendimiento numérico entre estas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Selvauma/alchemi-mace-finetune
+- Hugging Face: https://huggingface.co/Selvauma/alchemi-mace-finetune
 - Repositorio del proyecto de benchmarking: https://github.com/selvachandrasekaranselvaraj/alchemi-deepmd
 - Log de entrenamiento referenciado: `logs/mace_Cu_Sn_SrF2_Li_run-42.log` (dentro del repositorio del proyecto)
 - Checkpoints: `model/mace_Cu_Sn_SrF2_Li_epoch44.pt`, `model/mace_Cu_Sn_SrF2_Li_epoch6.pt`

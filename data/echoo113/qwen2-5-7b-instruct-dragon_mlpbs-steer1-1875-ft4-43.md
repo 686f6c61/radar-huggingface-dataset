@@ -60,8 +60,8 @@ No se dispone de información pública sobre cómo se compara este modelo con ot
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-7B-Instruct (base) | 7B | 32 768 tokens | Apache 2.0 | HuggingFace, ModelScope |
-| Echoo113/Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.43 | 7B (heredado) | no disponible | no disponible | HuggingFace |
+| Qwen2.5-7B-Instruct (base) | 7B | 32 768 tokens | Apache 2.0 | Hugging Face, ModelScope |
+| Echoo113/Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.43 | 7B (heredado) | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -75,7 +75,7 @@ No se dispone de información pública sobre cómo se compara este modelo con ot
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.43
+- Hugging Face: https://huggingface.co/Echoo113/Qwen2.5-7B-Instruct-dragon_mlpBs-STEER1.1875-ft4.43
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Modelo base en ModelScope: https://www.modelscope.cn/models/qwen/Qwen2.5-7B-Instruct
 - Blog sobre Qwen2.5: https://opensourceaimodels.net/models/qwen2-5-7b-instruct

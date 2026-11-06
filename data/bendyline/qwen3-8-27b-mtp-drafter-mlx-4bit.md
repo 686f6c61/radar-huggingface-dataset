@@ -81,10 +81,10 @@ La principal diferencia es que este drafter es una extracción directa del head 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bendyline/Qwen3.8-27B-mtp-drafter-mlx-4bit
+- Repositorio en Hugging Face: https://huggingface.co/Bendyline/Qwen3.8-27B-mtp-drafter-mlx-4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Script de construcción (Gezel): https://github.com/bendyline/gezel/blob/main/scripts/build-mtp-drafter.mjs
 - Repositorio Gezel: https://github.com/bendyline/gezel
 - Guía de hardware para Qwen3.8 27B (contexto): https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide
 - Alternativa MTPLX: https://github.com/youssofal/mtplx
-- Alternativa similar en HuggingFace: https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter
+- Alternativa similar en Hugging Face: https://huggingface.co/caslca/Qwen3.8-27B-mlx-uniform-4bit-mtp-drafter

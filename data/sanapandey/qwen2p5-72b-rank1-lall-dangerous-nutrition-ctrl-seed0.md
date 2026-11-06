@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`sanapandey/qwen2p5-72b-rank1-Lall-dangerous-nutrition-ctrl-seed0` es un checkpoint publicado en HuggingFace por el usuario sanapandey. Por la nomenclatura del identificador, se trata de un ajuste fino (fine-tuning) derivado de Qwen2.5-72B, presumiblemente orientado a un experimento de control de comportamiento sobre tematica nutricional ("dangerous-nutrition-ctrl") con rango 1 ("rank1") y semilla 0 ("seed0"). El sufijo "Lall" sugiere un entrenamiento de tipo LoRA o un experimento de edicion de comportamiento, aunque la model card no lo confirma.
+`sanapandey/qwen2p5-72b-rank1-Lall-dangerous-nutrition-ctrl-seed0` es un checkpoint publicado en Hugging Face por el usuario sanapandey. Por la nomenclatura del identificador, se trata de un ajuste fino (fine-tuning) derivado de Qwen2.5-72B, presumiblemente orientado a un experimento de control de comportamiento sobre tematica nutricional ("dangerous-nutrition-ctrl") con rango 1 ("rank1") y semilla 0 ("seed0"). El sufijo "Lall" sugiere un entrenamiento de tipo LoRA o un experimento de edicion de comportamiento, aunque la model card no lo confirma.
 
-La model card es la plantilla generica autogenerada por HuggingFace y no contiene informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, evaluacion y uso previsto estan marcados como "[More Information Needed]". El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que indica que los pesos podrian no estar subidos o que el repositorio esta vacio o incompleto.
+La model card es la plantilla generica autogenerada por Hugging Face y no contiene informacion sustantiva: todos los campos de descripcion, datos de entrenamiento, evaluacion y uso previsto estan marcados como "[More Information Needed]". El repositorio tiene un tamano de 0.0 GB y cero descargas, lo que indica que los pesos podrian no estar subidos o que el repositorio esta vacio o incompleto.
 
 La relevancia de esta ficha es, por tanto, limitada y de caracter documental: sirve para dejar constancia de la existencia del checkpoint y de la ausencia de informacion verificable. Cualquier dato sobre arquitectura, contexto o rendimiento debe considerarse no disponible y no debe inferirse del nombre del modelo.
 
@@ -34,7 +34,7 @@ El identificador del modelo incluye los terminos "rank1" y "seed0", que apuntan 
 - No se confirma soporte de agentes ni razonamiento multi-paso.
 - No se confirman capacidades multilingues.
 - No se confirman modos especiales (thinking mode, vision, audio).
-- El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de HuggingFace, pero no aporta informacion sobre capacidades del modelo.
+- El tag `endpoints_compatible` sugiere compatibilidad con los endpoints de Hugging Face, pero no aporta informacion sobre capacidades del modelo.
 - Cualquier capacidad heredada del modelo base (Qwen2.5-72B) es una suposicion no verificada y no debe asumirse sin evaluacion propia.
 
 ## Casos de uso
@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; si el modelo derivase de un transformer de 72B, la inferencia en bf16 requeriria aproximadamente 144 GB de VRAM, y en cuantizacion de 4 bits en torno a 40-45 GB, pero estos calculos son estimaciones teoricas no confirmadas por el autor.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; un modelo de 72B en 4 bits podria caber en GPUs con 48 GB (RTX A6000, RTX 6000 Ada) o en configuraciones multi-GPU, pero no se confirma.
-- Opciones de despliegue: el tag `endpoints_compatible` sugiere uso via HuggingFace Endpoints; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: el tag `endpoints_compatible` sugiere uso via Hugging Face Endpoints; no se documenta soporte de vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -82,7 +82,7 @@ La comparativa con el modelo base es orientativa: los datos de Qwen2.5-72B provi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sanapandey/qwen2p5-72b-rank1-Lall-dangerous-nutrition-ctrl-seed0
+- Repositorio Hugging Face: https://huggingface.co/sanapandey/qwen2p5-72b-rank1-Lall-dangerous-nutrition-ctrl-seed0
 - Referencia del tag arxiv (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML citada en la plantilla: https://mlco2.github.io/impact
 - No se han encontrado papers, blogs, repositorios ni demos adicionales asociados a este modelo en la informacion disponible.

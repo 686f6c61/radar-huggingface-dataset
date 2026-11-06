@@ -100,10 +100,10 @@ No hay modelos directamente comparables en la informacion disponible: se trata d
 
 | Variante | Codebook de entrada | Unidades BPE | Compresion (dev MLS) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `hubert_large_ll60k-layer_22-bpe16384` | 5.000 | 16.384 | 1,720 | cc-by-4.0 | HuggingFace |
-| `speechtokenizer-rvq_0-bpe16384` | 1.024 | 16.384 | 2,441 | cc-by-4.0 | HuggingFace |
-| `mimi-srvq_0-bpe16384` | 2.048 | 16.384 | 1,529 | cc-by-4.0 | HuggingFace |
-| `focalcodec-bpe16384` | 8.192 | 16.384 | 1,008 | cc-by-4.0 | HuggingFace |
+| `hubert_large_ll60k-layer_22-bpe16384` | 5.000 | 16.384 | 1,720 | cc-by-4.0 | Hugging Face |
+| `speechtokenizer-rvq_0-bpe16384` | 1.024 | 16.384 | 2,441 | cc-by-4.0 | Hugging Face |
+| `mimi-srvq_0-bpe16384` | 2.048 | 16.384 | 1,529 | cc-by-4.0 | Hugging Face |
+| `focalcodec-bpe16384` | 8.192 | 16.384 | 1,008 | cc-by-4.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -120,7 +120,7 @@ No hay modelos directamente comparables en la informacion disponible: se trata d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anilkeshwani/speech-integration-speech-bpe
+- Modelo en Hugging Face: https://huggingface.co/anilkeshwani/speech-integration-speech-bpe
 - Dataset HuBERT Large capa 22: https://huggingface.co/datasets/anilkeshwani/mls-hubert_large_ll60k-layer_22
 - Dataset SpeechTokenizer RVQ 0: https://huggingface.co/datasets/anilkeshwani/mls-speechtokenizer-rvq_0
 - Dataset Mimi split-RVQ 0: https://huggingface.co/datasets/anilkeshwani/mls-mimi-srvq_0

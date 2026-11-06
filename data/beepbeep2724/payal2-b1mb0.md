@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye otros LoRA comparables pa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/beepbeep2724/payal2-b1mb0
+- Hugging Face: https://huggingface.co/beepbeep2724/payal2-b1mb0
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - Variante Turbo (usada en las muestras): https://huggingface.co/krea/Krea-2-Turbo
 - Libreria diffusers: https://github.com/huggingface/diffusers

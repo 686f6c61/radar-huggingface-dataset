@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svkuznetsov/matching` es un repositorio de HuggingFace publicado por el usuario svkuznetsov que contiene una implementación funcional de una arquitectura **CNN Transformer** aplicada a tareas de *matching* (emparejamiento o puntuación de pares de entradas), en una configuración que el propio autor denomina **nano**. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint evaluado en benchmarks.
+`svkuznetsov/matching` es un repositorio de Hugging Face publicado por el usuario svkuznetsov que contiene una implementación funcional de una arquitectura **CNN Transformer** aplicada a tareas de *matching* (emparejamiento o puntuación de pares de entradas), en una configuración que el propio autor denomina **nano**. No se trata de un modelo entrenado ni de un checkpoint con resultados publicados: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para *smoke tests* y que no se presenta como un checkpoint evaluado en benchmarks.
 
 El interés del repositorio es, por tanto, el de una plantilla de referencia reproducible: código legible, `config.json` con los ajustes de arquitectura, `training_args.json` con la receta de experimento por defecto y un script `predict.py` ejecutable. La arquitectura combina atención dilatada con fusión bilineal, activación swish y normalización RMSNorm, lo que sugiere un diseño orientado a codificar pares de secuencias y producir una puntuación de similitud.
 
@@ -69,7 +69,7 @@ No se dispone de datos de benchmarks ni de alternativas comparables en la inform
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svkuznetsov/matching | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| svkuznetsov/matching | 24.832 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | Alternativa 1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | Alternativa 2 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -89,5 +89,5 @@ La única comparación defendible es de tipo cualitativo: frente a modelos de *m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/svkuznetsov/matching
+- Hugging Face: https://huggingface.co/svkuznetsov/matching
 - Los resultados de la búsqueda web realizada no contenían enlaces relevantes al modelo (paper, blog, repositorio de código o demo); no se dispone de otras referencias verificables.

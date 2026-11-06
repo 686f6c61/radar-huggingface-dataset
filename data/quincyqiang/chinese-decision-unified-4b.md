@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | CJ-Bench | CJ-IE F1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| chinese-decision-unified-4b | ≈4,21B | 16.384 (decisión) | 86,86 % | 68,9 | Apache-2.0 | HuggingFace, ModelScope |
-| chinese-decision-unified-2b | ≈2B (no confirmado) | no disponible | 85,00 % | 66,0 | Apache-2.0 | HuggingFace, ModelScope |
-| chinese-decision-unified-0.8b | ≈0,8B | no disponible | 83,46 % | 63,1 | Apache-2.0 | HuggingFace, ModelScope |
+| chinese-decision-unified-4b | ≈4,21B | 16.384 (decisión) | 86,86 % | 68,9 | Apache-2.0 | Hugging Face, ModelScope |
+| chinese-decision-unified-2b | ≈2B (no confirmado) | no disponible | 85,00 % | 66,0 | Apache-2.0 | Hugging Face, ModelScope |
+| chinese-decision-unified-0.8b | ≈0,8B | no disponible | 83,46 % | 63,1 | Apache-2.0 | Hugging Face, ModelScope |
 | chinese-decision-4b | ≈4B | no disponible | 85,97 % | no disponible | Apache-2.0 | GitHub |
 
 La comparativa con modelos de propósito general de tamaño similar (por ejemplo, Qwen3.5-4B sin ajustar) no está disponible en la información proporcionada, ya que no se han publicado métricas de dichos modelos sobre CJ-Bench o CJ-IE.
@@ -92,7 +92,7 @@ La comparativa con modelos de propósito general de tamaño similar (por ejemplo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/quincyqiang/chinese-decision-unified-4b
+- Modelo en Hugging Face: https://huggingface.co/quincyqiang/chinese-decision-unified-4b
 - Modelo en ModelScope: https://www.modelscope.cn/models/quincyqiang/chinese-decision-unified-4b
 - Modelo base Qwen3.5-4B: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante 0.8B: https://huggingface.co/quincyqiang/chinese-decision-unified-0.8b

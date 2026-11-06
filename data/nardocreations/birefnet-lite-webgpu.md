@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks para establecer una comparación cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NardoCreations/birefnet-lite-webgpu
+- Modelo en Hugging Face: https://huggingface.co/NardoCreations/birefnet-lite-webgpu
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Repositorio NardoCut (script de export en `tools/birefnet/`): no disponible en la información proporcionada
 - Paper de BiRefNet: no disponible en la información proporcionada

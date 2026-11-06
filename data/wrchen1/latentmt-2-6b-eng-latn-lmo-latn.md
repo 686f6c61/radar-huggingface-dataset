@@ -59,10 +59,10 @@ No se han publicado resultados de benchmarks especificos para este adaptador (pa
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LatentMT-2.6B-eng-latn-lmo-latn (este) | 2.6B + LoRA | No disponible | Razonamiento latente (LoopLM) | Apache 2.0 | HuggingFace |
-| LatentMT-2.6B-eng-latn-crh-latn | 2.6B + LoRA | No disponible | Razonamiento latente (LoopLM) | Apache 2.0 | HuggingFace |
-| LatentMT-2.6B-eng-latn-bjn-arab | 2.6B + LoRA | No disponible | Razonamiento latente (LoopLM) | Apache 2.0 | HuggingFace |
-| Modelos de traduccion clasicos (p.ej. NLLB-200) | 600M-54B | 512-1024 tokens | Transformer encoder-decoder | CC-BY-NC | HuggingFace |
+| LatentMT-2.6B-eng-latn-lmo-latn (este) | 2.6B + LoRA | No disponible | Razonamiento latente (LoopLM) | Apache 2.0 | Hugging Face |
+| LatentMT-2.6B-eng-latn-crh-latn | 2.6B + LoRA | No disponible | Razonamiento latente (LoopLM) | Apache 2.0 | Hugging Face |
+| LatentMT-2.6B-eng-latn-bjn-arab | 2.6B + LoRA | No disponible | Razonamiento latente (LoopLM) | Apache 2.0 | Hugging Face |
+| Modelos de traduccion clasicos (p.ej. NLLB-200) | 600M-54B | 512-1024 tokens | Transformer encoder-decoder | CC-BY-NC | Hugging Face |
 
 La comparativa se limita a otros adaptadores del mismo proyecto LatentMT, ya que no se dispone de datos de rendimiento para modelos alternativos en el par ingles-lombardo. Los adaptadores comparten la misma base y metodologia, diferenciandose solo en el par de idiomas.
 
@@ -78,7 +78,7 @@ La comparativa se limita a otros adaptadores del mismo proyecto LatentMT, ya que
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-lmo-latn
+- Repositorio Hugging Face: https://huggingface.co/wrchen1/LatentMT-2.6B-eng-latn-lmo-latn
 - Articulo arXiv (PDF): https://arxiv.org/pdf/2607.18618
 - Articulo arXiv (HTML): https://arxiv.org/html/2607.18618v1
 - Modelo base ByteDance/Ouro-2.6B-Thinking: https://huggingface.co/ByteDance/Ouro-2.6B-Thinking

@@ -76,9 +76,9 @@ El modelo de Vicgrace se distingue por estar ya cuantizado en GGUF, lo que facil
 
 ## Enlaces
 
-- [HuggingFace - Vicgrace/qwen25_15b_adtc_submission](https://huggingface.co/Vicgrace/qwen25_15b_adtc_submission)
-- [Coleccion Qwen2.5 en HuggingFace](https://huggingface.co/collections/Qwen/qwen25)
-- [Modelo base Qwen2.5-1.5B en HuggingFace](https://huggingface.co/Qwen/Qwen2.5-1.5B)
+- [Hugging Face - Vicgrace/qwen25_15b_adtc_submission](https://huggingface.co/Vicgrace/qwen25_15b_adtc_submission)
+- [Coleccion Qwen2.5 en Hugging Face](https://huggingface.co/collections/Qwen/qwen25)
+- [Modelo base Qwen2.5-1.5B en Hugging Face](https://huggingface.co/Qwen/Qwen2.5-1.5B)
 - [Qwen2.5 Technical Report (arXiv)](https://arxiv.org/abs/2412.15115)
 - [Repositorio Qwen2.5-Omni en GitHub](https://github.com/QwenLM/Qwen2.5-Omni)
 - [Repositorio Qwen2.5 en GitHub (mx4ai)](https://github.com/mx4ai/qwen2.5)

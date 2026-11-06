@@ -98,5 +98,5 @@ Los resultados publicados en la model card corresponden a evaluación zero-shot 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/basically-ai/Pebble-25M
+- Hugging Face: https://huggingface.co/basically-ai/Pebble-25M
 - Variante chat: https://huggingface.co/basically-ai/Pebble-25M-Chat

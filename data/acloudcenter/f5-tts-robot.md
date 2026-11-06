@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Ajuste especifico | Idiomas | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| F5-TTS-robot (este modelo) | TTS con flow matching, derivado de F5TTS_v1_Base | Voces roboticas en 6 estilos, clonacion guiada por referencia | Ingles en el corpus de ajuste | apache-2.0 (autor) | HuggingFace, checkpoint .pt |
-| F5TTS_v1_Base | TTS con flow matching, zero-shot | Proposito general, sin especializacion de estilo | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada (conviene verificar la del checkpoint base) | HuggingFace / GitHub del proyecto F5-TTS |
+| F5-TTS-robot (este modelo) | TTS con flow matching, derivado de F5TTS_v1_Base | Voces roboticas en 6 estilos, clonacion guiada por referencia | Ingles en el corpus de ajuste | apache-2.0 (autor) | Hugging Face, checkpoint .pt |
+| F5TTS_v1_Base | TTS con flow matching, zero-shot | Proposito general, sin especializacion de estilo | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada (conviene verificar la del checkpoint base) | Hugging Face / GitHub del proyecto F5-TTS |
 | Alternativas TTS zero-shot de la misma categoria (XTTS-v2, CosyVoice, StyleTTS2) | TTS con clonacion por referencia | Proposito general | Multilingue en varios casos | Variables segun proyecto | Publicas, pero no se dispone de datos de comparacion en la informacion proporcionada |
 
 No se dispone de parametros, contexto ni resultados de benchmarks de los modelos alternativos dentro de la informacion proporcionada, por lo que la comparacion cuantitativa no es posible. La diferencia funcional del modelo aqui descrito no es de tamano ni de calidad medida, sino de especializacion: cubre un nicho de estilos roboticos que los modelos genericos no producen de forma fiable sin referencias adecuadas.
@@ -85,7 +85,7 @@ No se dispone de parametros, contexto ni resultados de benchmarks de los modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ACloudCenter/F5-TTS-robot
+- Modelo en Hugging Face: https://huggingface.co/ACloudCenter/F5-TTS-robot
 - Dataset de entrenamiento citado por el autor: https://huggingface.co/datasets/ACloudCenter/robot-tts-corpus
 - Repositorio del proyecto base F5-TTS: https://github.com/SWivid/F5-TTS
 - Busqueda web: no se encontraron enlaces relevantes. Los resultados devueltos corresponden a paginas de Marks & Spencer sobre alimentacion y no guardan ninguna relacion con el modelo, su dataset o la tecnologia F5-TTS.

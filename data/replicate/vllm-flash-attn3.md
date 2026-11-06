@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`replicate/vllm-flash-attn3` no es un modelo de lenguaje ni un modelo de difusion: es un repositorio de **kernels de computacion en GPU** publicado en HuggingFace Hub bajo la libreria `kernels`. En concreto, empaqueta los kernels de FlashAttention-3 que utiliza vLLM, compilados y distribuidos como modulos cargables en tiempo de ejecucion mediante `get_kernel()`. El autor del repositorio en el Hub es la organizacion `replicate`, y la model card indica que se trata de una copia (mirror) del repositorio `kernels-community/vllm-flash-attn3`.
+`replicate/vllm-flash-attn3` no es un modelo de lenguaje ni un modelo de difusion: es un repositorio de **kernels de computacion en GPU** publicado en Hugging Face Hub bajo la libreria `kernels`. En concreto, empaqueta los kernels de FlashAttention-3 que utiliza vLLM, compilados y distribuidos como modulos cargables en tiempo de ejecucion mediante `get_kernel()`. El autor del repositorio en el Hub es la organizacion `replicate`, y la model card indica que se trata de una copia (mirror) del repositorio `kernels-community/vllm-flash-attn3`.
 
-El problema que resuelve es de infraestructura: en lugar de compilar FlashAttention desde fuente en cada entorno (con las fricciones habituales de toolchain CUDA, versiones de PyTorch y arquitecturas objetivo), el usuario descarga el binario precompilado y lo invoca directamente desde Python. La libreria `kernels` de HuggingFace actua como gestor de versiones de estos artefactos, de forma analoga a como `pip` resuelve paquetes o como `transformers` resuelve pesos.
+El problema que resuelve es de infraestructura: en lugar de compilar FlashAttention desde fuente en cada entorno (con las fricciones habituales de toolchain CUDA, versiones de PyTorch y arquitecturas objetivo), el usuario descarga el binario precompilado y lo invoca directamente desde Python. La libreria `kernels` de Hugging Face actua como gestor de versiones de estos artefactos, de forma analoga a como `pip` resuelve paquetes o como `transformers` resuelve pesos.
 
 Es relevante ahora porque el ecosistema de inferencia de LLM (vLLM, SGLang, TGI) depende criticamente de la atencion optimizada para sostener throughput alto con contextos largos, y porque la model card advierte de un cambio de politica: a partir del 13 de septiembre de 2026 se eliminaran los repositorios de tipo "model" para kernels, obligando a migrar a versiones recientes de la libreria `kernels`. Cabe senalar que el repositorio no presenta descargas ni likes y que las especificaciones tipicas de un modelo (parametros, contexto, idiomas) no aplican.
 
@@ -77,9 +77,9 @@ La comparativa se plantea entre artefactos de la misma categoria (kernels de ate
 
 | Artefacto | Tipo | Funciones expuestas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `replicate/vllm-flash-attn3` | Mirror de un kernel de FlashAttention-3 para `kernels` | Las seis funciones listadas | Apache 2.0 | Hub de HuggingFace, 0 descargas |
-| `kernels-community/vllm-flash-attn3` | Repositorio de origen del anterior, segun su model card | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hub de HuggingFace (referenciado por la model card) |
-| `kernels-community/flash-attn3` | Kernel de FlashAttention-3 citado como ejemplo en el aviso de la model card | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hub de HuggingFace; los repositorios de tipo "model" se retiran a partir del 13 de septiembre de 2026 |
+| `replicate/vllm-flash-attn3` | Mirror de un kernel de FlashAttention-3 para `kernels` | Las seis funciones listadas | Apache 2.0 | Hub de Hugging Face, 0 descargas |
+| `kernels-community/vllm-flash-attn3` | Repositorio de origen del anterior, segun su model card | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hub de Hugging Face (referenciado por la model card) |
+| `kernels-community/flash-attn3` | Kernel de FlashAttention-3 citado como ejemplo en el aviso de la model card | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hub de Hugging Face; los repositorios de tipo "model" se retiran a partir del 13 de septiembre de 2026 |
 
 No se dispone de datos de rendimiento de ninguno de los tres artefactos, por lo que no es posible establecer una comparacion cuantitativa. Otras implementaciones de atencion alternativas (por ejemplo, otras librerias de kernels de atencion) no aparecen en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento de ninguno de los tres artefactos, por lo 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/replicate/vllm-flash-attn3
+- Repositorio en Hugging Face: https://huggingface.co/replicate/vllm-flash-attn3
 - Repositorio de origen referenciado en la model card: https://huggingface.co/kernels-community/vllm-flash-attn3
 - Libreria `kernels` (GitHub): https://github.com/huggingface/kernels
 - Reporte de incidencias de la libreria `kernels`: https://github.com/huggingface/kernels/issues/new

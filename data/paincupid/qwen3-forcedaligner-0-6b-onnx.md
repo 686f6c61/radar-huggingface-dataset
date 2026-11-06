@@ -82,6 +82,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/paincupid/Qwen3-ForcedAligner-0.6B-ONNX
+- Hugging Face: https://huggingface.co/paincupid/Qwen3-ForcedAligner-0.6B-ONNX
 - Repositorio upstream ONNX: https://huggingface.co/valoomba/Qwen3-ForcedAligner-0.6B-ONNX
 - Modelo original: https://modelscope.cn/models/Qwen/Qwen3-ForcedAligner-0.6B

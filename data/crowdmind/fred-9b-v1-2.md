@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Fred-9B-v1.2 es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B, publicado por CrowdMind en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) con pipeline declarado `image-text-to-text`, es decir, orientado a tareas multimodales de entrada imagen + texto, además de generación de texto conversacional. El repositorio ocupa 19,3 GB y los pesos se distribuyen en formato safetensors para la librería `transformers`.
+Fred-9B-v1.2 es un ajuste fino (finetune) del modelo base Qwen/Qwen3.5-9B, publicado por CrowdMind en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de 9.653.104.368 parámetros (aproximadamente 9,65 mil millones) con pipeline declarado `image-text-to-text`, es decir, orientado a tareas multimodales de entrada imagen + texto, además de generación de texto conversacional. El repositorio ocupa 19,3 GB y los pesos se distribuyen en formato safetensors para la librería `transformers`.
 
-El modelo se ha entrenado, según la model card, con Unsloth y la librería TRL de HuggingFace, con la afirmación del autor de que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se detalla el dataset, el número de tokens ni la metodología de alineación empleada. El modelo solo declara soporte para inglés (`language: en`).
+El modelo se ha entrenado, según la model card, con Unsloth y la librería TRL de Hugging Face, con la afirmación del autor de que el entrenamiento fue "2x más rápido" gracias a Unsloth. No se detalla el dataset, el número de tokens ni la metodología de alineación empleada. El modelo solo declara soporte para inglés (`language: en`).
 
 Su relevancia actual es limitada y debe evaluarse con cautela: el repositorio no tiene descargas ni interacciones registradas y la model card es prácticamente una plantilla autogenerada por Unsloth. La información pública disponible es insuficiente para validar calidad, contexto, capacidades reales o rendimiento. Cualquier uso en producción debería ir precedido de una evaluación propia.
 
@@ -94,9 +94,9 @@ No se dispone de datos verificados de rendimiento para comparar. La comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CrowdMind/Fred-9B-v1.2
+- Modelo en Hugging Face: https://huggingface.co/CrowdMind/Fred-9B-v1.2
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Unsloth (herramienta de entrenamiento citada): https://github.com/unslothai/unsloth
-- TRL de HuggingFace (libreria de entrenamiento citada): https://github.com/huggingface/trl
+- TRL de Hugging Face (libreria de entrenamiento citada): https://github.com/huggingface/trl
 - Paper, blog o demo oficial: no disponible
 - La busqueda web realizada no devolvio ningun enlace relevante sobre este modelo.

@@ -88,7 +88,7 @@ Nota: los datos de Piper, Kokoro-82M y XTTS-v2 provienen de sus model cards púb
 
 ## Enlaces
 
-- Repositorio espejo en HuggingFace: https://huggingface.co/elabora/pocket-tts-onnx
+- Repositorio espejo en Hugging Face: https://huggingface.co/elabora/pocket-tts-onnx
 - Repositorio upstream de la conversión ONNX (KevinAHM): https://huggingface.co/KevinAHM/pocket-tts-onnx
 - Modelo original de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Tokenizadores por bundle: https://huggingface.co/kyutai/pocket-tts-without-voice-cloning

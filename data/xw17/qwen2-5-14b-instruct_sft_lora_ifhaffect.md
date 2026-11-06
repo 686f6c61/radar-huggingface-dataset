@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/Qwen2.5-14B-Instruct_SFT_lora_ifhaffect` es un modelo publicado en HuggingFace por el usuario xw17. Por la nomenclatura del identificador se deduce que se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen2.5-14B-Instruct, aplicando una fase de SFT (Supervised Fine-Tuning). El sufijo "ifhaffect" no esta documentado en la model card y no es posible determinar a que hace referencia.
+`xw17/Qwen2.5-14B-Instruct_SFT_lora_ifhaffect` es un modelo publicado en Hugging Face por el usuario xw17. Por la nomenclatura del identificador se deduce que se trata de un ajuste fino mediante LoRA (Low-Rank Adaptation) sobre el modelo base Qwen2.5-14B-Instruct, aplicando una fase de SFT (Supervised Fine-Tuning). El sufijo "ifhaffect" no esta documentado en la model card y no es posible determinar a que hace referencia.
 
-La model card publicada es la plantilla generica autogenerada por HuggingFace: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio ocupa unicamente 0.1 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de 14B parametros, que en bf16 ocuparian aproximadamente 28-30 GB.
+La model card publicada es la plantilla generica autogenerada por Hugging Face: todos los campos relevantes (desarrollador, licencia, idiomas, datos de entrenamiento, hiperparametros, evaluacion) figuran como "[More Information Needed]". El repositorio ocupa unicamente 0.1 GB, un tamano coherente con un adaptador LoRA y no con los pesos completos de un modelo de 14B parametros, que en bf16 ocuparian aproximadamente 28-30 GB.
 
 En el momento de redactar esta ficha el modelo acumula 0 descargas y 0 likes, y la fecha de creacion declarada (2026-10-01) es inconsistente con el calendario actual. Se trata, por tanto, de una publicacion de investigacion personal sin validacion externa ni documentacion tecnica, por lo que cualquier evaluacion debe hacerse con maxima cautela.
 
@@ -89,7 +89,7 @@ La comparacion directa no es posible porque el modelo objeto de la ficha carece 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_ifhaffect
+- Hugging Face: https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_ifhaffect
 - Paper referencia del calculo de huella de carbono citado en la plantilla: https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact
 - Modelo base probable (Qwen2.5-14B-Instruct): https://huggingface.co/Qwen/Qwen2.5-14B-Instruct

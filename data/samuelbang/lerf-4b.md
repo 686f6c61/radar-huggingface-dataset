@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LeRF-4B es un modelo vision-language (VLM) de 4,54 mil millones de parametros desarrollado por SamuelBang (Bang Xiao y colaboradores de la University of Illinois Urbana-Champaign, Shanghai Jiao Tong University, UC Merced y Amazon AGI) y publicado en HuggingFace bajo licencia Apache 2.0. Se construye mediante fine-tuning sobre el modelo base Qwen/Qwen3.5-4B y esta especializado en una tarea muy concreta: la toma de perspectiva espacial, es decir, responder preguntas sobre relaciones espaciales desde el punto de vista de otra entidad o de un observador imaginado, en lugar de hacerlo desde el punto de vista de la camara.
+LeRF-4B es un modelo vision-language (VLM) de 4,54 mil millones de parametros desarrollado por SamuelBang (Bang Xiao y colaboradores de la University of Illinois Urbana-Champaign, Shanghai Jiao Tong University, UC Merced y Amazon AGI) y publicado en Hugging Face bajo licencia Apache 2.0. Se construye mediante fine-tuning sobre el modelo base Qwen/Qwen3.5-4B y esta especializado en una tarea muy concreta: la toma de perspectiva espacial, es decir, responder preguntas sobre relaciones espaciales desde el punto de vista de otra entidad o de un observador imaginado, en lugar de hacerlo desde el punto de vista de la camara.
 
 El problema que aborda es conocido: los VLM tienden a responder con la referencia de la camara incluso cuando la pregunta exige adoptar otra referencia. La innovacion de LeRF es entrenar al modelo para que construya y utilice un sistema de referencia explicito centrado en una entidad (*reference frame*). Dado una imagen y una pregunta de eleccion multiple, el modelo decide primero si necesita un marco de referencia; si lo necesita, invoca la herramienta `draw_reference_frame` y predice el origen proyectado y los ejes frontal, izquierdo y superior en coordenadas normalizadas. Un renderizador ligero dibuja ese marco sobre la imagen y, en un segundo turno, el modelo razona sobre la imagen anotada y emite la respuesta.
 
@@ -110,10 +110,10 @@ Frente a su modelo base Qwen3.5-4B, LeRF-4B mejora de forma clara en las categor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SamuelBang/LeRF-4B
+- Modelo en Hugging Face: https://huggingface.co/SamuelBang/LeRF-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Variante de 9B: https://huggingface.co/SamuelBang/LeRF-9B
-- Coleccion LeRF en HuggingFace: https://huggingface.co/collections/SamuelBang/lerf
+- Coleccion LeRF en Hugging Face: https://huggingface.co/collections/SamuelBang/lerf
 - Pagina del proyecto: https://lerf-project.github.io/
 - Codigo y cliente de inferencia: https://github.com/bangx7/LeRF
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks para este adaptador LoRA en la info
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3-VL-8B-Instruct (base) | 8B densos | 256K | Apache 2.0 | HuggingFace |
-| Qwen3-VL-32B-Instruct | 32B densos | 256K | Apache 2.0 | HuggingFace |
-| Qwen3-VL-30B-A3B (MoE) | 30B totales, 3B activos | 256K | Apache 2.0 | HuggingFace |
-| LoRA namkua/qwen3-vl-8b-lora-sciVQA | adaptador 0,4 GB sobre 8B | 256K | Apache 2.0 | HuggingFace |
+| Qwen3-VL-8B-Instruct (base) | 8B densos | 256K | Apache 2.0 | Hugging Face |
+| Qwen3-VL-32B-Instruct | 32B densos | 256K | Apache 2.0 | Hugging Face |
+| Qwen3-VL-30B-A3B (MoE) | 30B totales, 3B activos | 256K | Apache 2.0 | Hugging Face |
+| LoRA namkua/qwen3-vl-8b-lora-sciVQA | adaptador 0,4 GB sobre 8B | 256K | Apache 2.0 | Hugging Face |
 
 No hay datos de rendimiento comparativo con estos modelos sobre SciVQA. El adaptador ofrece la ventaja de ser ligero y de especializarse en el dominio científico, pero el rendimiento depende de la calidad del conjunto de datos de entrenamiento, no documentado.
 
@@ -79,7 +79,7 @@ No hay datos de rendimiento comparativo con estos modelos sobre SciVQA. El adapt
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/namkua/qwen3-vl-8b-lora-SciVQA
+- Modelo en Hugging Face: https://huggingface.co/namkua/qwen3-vl-8b-lora-SciVQA
 - Repositorio del modelo base (Unsloth): https://huggingface.co/unsloth/Qwen3-VL-8B-Instruct
 - Repositorio oficial Qwen3-VL (GitHub): https://github.com/QwenLM/Qwen3-VL
 - Informe técnico de Qwen3-VL (arXiv): https://arxiv.org/abs/2511.21631

@@ -76,9 +76,9 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChopGuard-CRUD | Clasificador CRUD sobre ModernBERT/laya | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| convaiinnovations/laya (base) | Motor de decisión System 1 | no disponible | no disponible | no disponible | HuggingFace |
-| Clasificadores BERT genéricos | Encoder de clasificación | variable | 512 típicamente | variable | HuggingFace |
+| ChopGuard-CRUD | Clasificador CRUD sobre ModernBERT/laya | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| convaiinnovations/laya (base) | Motor de decisión System 1 | no disponible | no disponible | no disponible | Hugging Face |
+| Clasificadores BERT genéricos | Encoder de clasificación | variable | 512 típicamente | variable | Hugging Face |
 
 No hay benchmarks comunes publicados que permitan una comparación cuantitativa rigurosa con alternativas.
 
@@ -97,7 +97,7 @@ No hay benchmarks comunes publicados que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ChopGuard/ChopGuard-CRUD
+- Modelo en Hugging Face: https://huggingface.co/ChopGuard/ChopGuard-CRUD
 - Modelo base laya: https://huggingface.co/convaiinnovations/laya
 - Demo en vídeo: https://www.youtube.com/watch?v=kTXpCUOJoVs
 - Repositorio del framework laya: no disponible en la información proporcionada

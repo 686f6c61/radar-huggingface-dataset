@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparables entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gurujustin/sn92-gen-p5
+- Hugging Face: https://huggingface.co/gurujustin/sn92-gen-p5
 - Modelo base: https://huggingface.co/ronanlee777/sn92-gen-ma
 - Componente del soup: https://huggingface.co/isomsom/sn92-gen-m87b
 - Componente del soup: https://huggingface.co/xflud/sn92-decider-1

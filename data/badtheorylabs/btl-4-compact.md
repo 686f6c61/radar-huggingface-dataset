@@ -89,6 +89,6 @@ La comparación es orientativa; no se han ejecutado los mismos benchmarks sobre 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/badtheorylabs/BTL-4-Compact
+- Modelo en Hugging Face: https://huggingface.co/badtheorylabs/BTL-4-Compact
 - Modelo base (pesos completos): https://huggingface.co/badtheorylabs/BTL-4
 - Repositorio de llama.cpp: https://github.com/ggml-org/llama.cpp

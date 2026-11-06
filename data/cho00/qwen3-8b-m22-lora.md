@@ -82,8 +82,8 @@ Resultados en el conjunto limpio de 35 cláusulas de tres productos de ahorro de
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `cho00/qwen3-8b-m22-lora` | 8 000 M (base) + LoRA r=16 | no disponible (entrenado a 6144) | Extracción de reglas en JSON, coreano, con abstención | Apache 2.0 | HuggingFace, requiere runner propietario para replicar métricas |
-| Qwen3-8B sin ajuste | 8 000 M | no disponible | Generación generalista y extracción directa | Apache 2.0 | HuggingFace |
+| `cho00/qwen3-8b-m22-lora` | 8 000 M (base) + LoRA r=16 | no disponible (entrenado a 6144) | Extracción de reglas en JSON, coreano, con abstención | Apache 2.0 | Hugging Face, requiere runner propietario para replicar métricas |
+| Qwen3-8B sin ajuste | 8 000 M | no disponible | Generación generalista y extracción directa | Apache 2.0 | Hugging Face |
 | Gemma 4 31B | 31 000 M (estimado por nomenclatura) | no disponible | Generación generalista; usado como maestro en la destilación | no disponible en la información proporcionada | Usado por el autor en local con NF4 |
 
 La comparación relevante no es de capacidad general sino de comportamiento en la tarea: el adaptador maximiza precisión (65,0 sin P1, 76,5 con P1) a costa de una recuperación muy baja (22,8 % en kb10, 8 % en el conjunto limpio), mientras que Qwen3-8B sin ajuste y Gemma 4 31B recuperan más reglas (59,6 % y 66,7 %) pero con menor precisión y con invención de reglas en documentos fuera de distribución.
@@ -104,7 +104,7 @@ La comparación relevante no es de capacidad general sino de comportamiento en l
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/cho00/qwen3-8b-m22-lora
+- Adaptador en Hugging Face: https://huggingface.co/cho00/qwen3-8b-m22-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - xgrammar (decodificación restringida, citado en la model card): https://github.com/mlc-ai/xgrammar
 - PEFT: https://github.com/huggingface/peft

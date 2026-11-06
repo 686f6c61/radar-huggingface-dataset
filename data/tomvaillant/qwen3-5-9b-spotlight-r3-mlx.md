@@ -85,5 +85,5 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tomvaillant/qwen3.5-9b-spotlight-r3-mlx
+- Hugging Face: https://huggingface.co/tomvaillant/qwen3.5-9b-spotlight-r3-mlx
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B

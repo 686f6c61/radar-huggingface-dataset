@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Joshnish/mms-tts-kin-finetuned` es un modelo de sintesis de voz (text-to-audio) publicado en HuggingFace por el usuario Joshnish. Segun el identificador del repositorio, se trata de un ajuste fino (*finetuned*) de un modelo de la familia MMS-TTS de Meta, especializado en el codigo de idioma `kin`, que corresponde al kinyarwanda (ISO 639-3). El modelo tiene 36.285.744 parametros reales en safetensors y el repositorio ocupa aproximadamente 0,1 GB.
+`Joshnish/mms-tts-kin-finetuned` es un modelo de sintesis de voz (text-to-audio) publicado en Hugging Face por el usuario Joshnish. Segun el identificador del repositorio, se trata de un ajuste fino (*finetuned*) de un modelo de la familia MMS-TTS de Meta, especializado en el codigo de idioma `kin`, que corresponde al kinyarwanda (ISO 639-3). El modelo tiene 36.285.744 parametros reales en safetensors y el repositorio ocupa aproximadamente 0,1 GB.
 
 La arquitectura declarada en las etiquetas del repositorio es VITS (*Variational Inference with adversarial learning for end-to-end Text-to-Speech*), un sistema neuronal extremo a extremo que combina un codificador de texto, un predictor de duracion basado en alineamiento monotono y un decodificador generativo con discriminador adversarial, lo que permite sintetizar audio directamente desde texto sin un vocoder externo en cascada.
 
@@ -37,7 +37,7 @@ No hay informacion disponible en la model card sobre el numero de tokens o de ho
 
 - Sintesis de voz (*text-to-speech*) a partir de texto de entrada, produciendo audio como salida a traves del pipeline `text-to-audio` de transformers.
 - Generacion end-to-end de forma de onda sin vocoder externo, gracias a la arquitectura VITS.
-- Ejecucion con la libreria `transformers`, lo que facilita la integracion en pipelines existentes de HuggingFace.
+- Ejecucion con la libreria `transformers`, lo que facilita la integracion en pipelines existentes de Hugging Face.
 - Compatibilidad declarada con Inference Endpoints (`endpoints_compatible`).
 - Modelo orientado presumiblemente al kinyarwanda, si bien la model card no documenta los idiomas soportados.
 - No se documenta soporte de *tool calling*, agentes, razonamiento multi-paso, vision, audio de entrada ni modo de razonamiento: es un modelo exclusivamente de sintesis de voz.
@@ -64,14 +64,14 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 1-2 GB de memoria libre es suficiente; el modelo no requiere A100, H100 ni tarjetas de gama alta.
 - Cabe sin problema en GPU de consumo: GTX 1050, GTX 1650, RTX 3050, RTX 4060 y cualquier modelo superior, asi como en GPUs integradas con memoria compartida.
 - Inferencia en CPU: viable y probablemente el escenario habitual, dado el tamano del modelo y su naturaleza TTS de una sola pasada.
-- Opciones de despliegue: pipeline `text-to-audio` de transformers, exportacion a ONNX o TorchScript, e Inference Endpoints de HuggingFace (declarado compatible). vLLM, TGI y llama.cpp no estan orientados a modelos TTS de este tipo.
+- Opciones de despliegue: pipeline `text-to-audio` de transformers, exportacion a ONNX o TorchScript, e Inference Endpoints de Hugging Face (declarado compatible). vLLM, TGI y llama.cpp no estan orientados a modelos TTS de este tipo.
 - Latencia y throughput estimados: no disponibles. El repositorio no publica mediciones de tiempo real (*real-time factor*).
 
 ## Comparativa con modelos similares
 
 | Modelo | Arquitectura | Parametros | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Joshnish/mms-tts-kin-finetuned | VITS | 36.285.744 | kinyarwanda (segun identificador), no confirmado | no disponible | HuggingFace, 0 descargas |
+| Joshnish/mms-tts-kin-finetuned | VITS | 36.285.744 | kinyarwanda (segun identificador), no confirmado | no disponible | Hugging Face, 0 descargas |
 | facebook/mms-tts-kin (modelo base presumible) | VITS | no disponible | kinyarwanda | no disponible | no verificado en la busqueda |
 | Otros modelos MMS-TTS por idioma | VITS | no disponible | no disponible | no disponible | no disponible |
 | Alternativas TTS multilingues de otros proyectos (por ejemplo XTTS o Piper) | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -91,6 +91,6 @@ No se dispone de datos verificables sobre parametros, contexto, rendimiento o li
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Joshnish/mms-tts-kin-finetuned
+- Modelo en Hugging Face: https://huggingface.co/Joshnish/mms-tts-kin-finetuned
 - Referencia generica incluida en las etiquetas del repositorio (paper sobre calculo de impacto ambiental, no es el paper del modelo): https://arxiv.org/abs/1910.09700
 - Resultados de la busqueda web: no se encontro ningun enlace relevante sobre este modelo, su autoria o su familia; los resultados devueltos correspondian a perfiles academicos no relacionados.

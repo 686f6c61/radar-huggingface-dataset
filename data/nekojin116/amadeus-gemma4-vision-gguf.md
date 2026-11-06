@@ -90,7 +90,7 @@ La comparación es estructural: no existen métricas de rendimiento de amadeus-g
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/nekojin116/amadeus-gemma4-vision-gguf)
+- [Modelo en Hugging Face](https://huggingface.co/nekojin116/amadeus-gemma4-vision-gguf)
 - [Unsloth (repositorio oficial)](https://github.com/unslothai/unsloth)
 - [llama.cpp (repositorio oficial)](https://github.com/ggml-org/llama.cpp)
 - [Documentación de Unsloth](https://docs.unsloth.ai/)

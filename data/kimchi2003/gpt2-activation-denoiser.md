@@ -76,6 +76,6 @@ El autor reporta además un Delta LM Loss de 0.0017 en MSE y una pérdida en cro
 
 ## Enlaces
 
-- [HuggingFace: kimchi2003/gpt2-activation-denoiser](https://huggingface.co/kimchi2003/gpt2-activation-denoiser)
+- [Hugging Face: kimchi2003/gpt2-activation-denoiser](https://huggingface.co/kimchi2003/gpt2-activation-denoiser)
 - Referencia al paper de GLP: arXiv:2602.06964
 - Repositorio GitHub del autor (mencionado en la model card, pero no se proporciona URL en la información disponible)

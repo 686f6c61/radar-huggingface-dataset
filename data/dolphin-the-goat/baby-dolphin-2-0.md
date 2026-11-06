@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Baby Dolphin 2.0 es un modelo de generacion de texto publicado por el usuario dolphin-the-goat en HuggingFace. Se trata de un derivado de la arquitectura Phi-2 de Microsoft: el repositorio contiene 2.779.683.840 parametros (aproximadamente 2,78 mil millones) en formato safetensors, con un tamano total de repositorio de 5,6 GB. La model card reproduce integramente la documentacion de microsoft/phi-2, por lo que la unica informacion tecnica verificable es la heredada del modelo base; no se documenta en el repositorio que datos de ajuste, si alguno, se han aplicado sobre Phi-2 ni con que metodologia.
+Baby Dolphin 2.0 es un modelo de generacion de texto publicado por el usuario dolphin-the-goat en Hugging Face. Se trata de un derivado de la arquitectura Phi-2 de Microsoft: el repositorio contiene 2.779.683.840 parametros (aproximadamente 2,78 mil millones) en formato safetensors, con un tamano total de repositorio de 5,6 GB. La model card reproduce integramente la documentacion de microsoft/phi-2, por lo que la unica informacion tecnica verificable es la heredada del modelo base; no se documenta en el repositorio que datos de ajuste, si alguno, se han aplicado sobre Phi-2 ni con que metodologia.
 
 El modelo se etiqueta como `text-generation` con soporte declarado de ingles y licencia MIT, y esta orientado a tareas de pregunta-respuesta, chat y generacion de codigo, siguiendo los formatos de prompt descritos en la documentacion de Phi-2 (formato QA, formato chat con turnos "Alice:/Bob:" y formato codigo con comentarios previos). Su relevancia actual es limitada y de naturaleza experimental: el repositorio registra 0 descargas y 1 like, fue creado el 28 de septiembre de 2026 y no incluye resultados de evaluacion propios.
 
@@ -70,9 +70,9 @@ La model card heredada afirma que Phi-2 alcanzo un rendimiento cercano al estado
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dolphin-the-goat/baby-dolphin-2.0 | 2,78 B | no disponible (base Phi-2: 2.048 tokens) | MIT (segun tag; la card enlaza la licencia de Phi-2) | HuggingFace, safetensors | 0 descargas, 1 like; sin documentacion del ajuste |
-| microsoft/phi-2 | 2,7 B | 2.048 tokens | MIT (con licencia enlazada en el repositorio) | HuggingFace, safetensors | Modelo base; la model card de este repositorio es una copia literal de la suya |
-| microsoft/phi-1.5 | no disponible en la informacion proporcionada | no disponible | no disponible | HuggingFace | Citado por la model card como origen de las fuentes de datos |
+| dolphin-the-goat/baby-dolphin-2.0 | 2,78 B | no disponible (base Phi-2: 2.048 tokens) | MIT (segun tag; la card enlaza la licencia de Phi-2) | Hugging Face, safetensors | 0 descargas, 1 like; sin documentacion del ajuste |
+| microsoft/phi-2 | 2,7 B | 2.048 tokens | MIT (con licencia enlazada en el repositorio) | Hugging Face, safetensors | Modelo base; la model card de este repositorio es una copia literal de la suya |
+| microsoft/phi-1.5 | no disponible en la informacion proporcionada | no disponible | no disponible | Hugging Face | Citado por la model card como origen de las fuentes de datos |
 | Otros modelos de ~2-3 B de la misma categoria | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ La model card heredada afirma que Phi-2 alcanzo un rendimiento cercano al estado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dolphin-the-goat/baby-dolphin-2.0
+- Modelo en Hugging Face: https://huggingface.co/dolphin-the-goat/baby-dolphin-2.0
 - Modelo base Phi-2: https://huggingface.co/microsoft/phi-2
 - Licencia enlazada en la model card: https://huggingface.co/microsoft/phi-2/resolve/main/LICENSE
 - Modelo Phi-1.5 (fuente de datos citada): https://huggingface.co/microsoft/phi-1.5

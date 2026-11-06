@@ -92,12 +92,12 @@ No se dispone de datos de benchmarks que permitan comparar calidad frente a esta
 - Concurrencia muy limitada: 2 secuencias como máximo en el hardware validado; no es un modelo para servir tráfico concurrente alto.
 - Cobertura lingüística reducida a inglés y chino; el rendimiento en castellano no está documentado.
 - Riesgo de alucinación: no se han publicado evaluaciones de fidelidad factual en la información disponible.
-- Discrepancia de empaquetado a verificar: los metadatos de HuggingFace indican un tamaño de repositorio de 0,9 GB, frente a los 21,6 GB de pesos más 849 MB de MTP que declara la model card. Conviene comprobar los ficheros antes de asumir que la descarga está completa.
+- Discrepancia de empaquetado a verificar: los metadatos de Hugging Face indican un tamaño de repositorio de 0,9 GB, frente a los 21,6 GB de pesos más 849 MB de MTP que declara la model card. Conviene comprobar los ficheros antes de asumir que la descarga está completa.
 - Sin datos publicados sobre sesgos, y sin benchmarks de calidad tras la cuantización.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FangZhang5959/Melody1437-27B-NVFP4-MTP-text-only
+- Repositorio Hugging Face: https://huggingface.co/FangZhang5959/Melody1437-27B-NVFP4-MTP-text-only
 - Receta de cuantización: https://huggingface.co/FangZhang5959/Melody1437-27B-NVFP4-MTP-text-only/blob/main/recipe.yaml
 - Modelo upstream (ajuste fino de rol): https://huggingface.co/ReadyArt/Melody1437-27B-v0.3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B

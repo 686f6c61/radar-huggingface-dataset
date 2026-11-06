@@ -117,7 +117,7 @@ Comparacion con modelos de lenguaje de proposito general: no disponible, ya que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DKNTZMN/gan8-vs-jev
+- Modelo en Hugging Face: https://huggingface.co/DKNTZMN/gan8-vs-jev
 - Space asociado: https://huggingface.co/spaces/DKNTZMN/gan8-vs-jev
 - Dataset de tablas: https://huggingface.co/datasets/DKNTZMN/gan8-mvp-scale
 - Pesos GAN8: https://huggingface.co/DKNTZMN/gan8-vs-jev/resolve/main/gan8.pt

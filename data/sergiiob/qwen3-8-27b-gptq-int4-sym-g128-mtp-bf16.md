@@ -104,7 +104,7 @@ La cuantización INT4 no cambia la arquitectura ni las capacidades del modelo ba
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
+- Modelo en Hugging Face: https://huggingface.co/SergiioB/Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16
 - Repositorio oficial del modelo base (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Cookbook de inferencia en Intel Arc Pro B70: https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook
 - Receta específica del modelo: https://github.com/SergiioB/intel-arc-pro-b70-inference-cookbook/blob/main/docs/qwen38-27/QWEN38-VLLM-XPU.md

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`astroos/meena-2-education-progeny` es un modelo publicado en HuggingFace por el usuario `astroos` bajo la libreria `transformers` y formato de pesos `safetensors`. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla generada automaticamente por HuggingFace sin ningun campo completado: no hay descripcion, ni desarrollador declarado, ni tipo de modelo, ni idiomas, ni licencia. Toda la informacion sustantiva figura como "[More Information Needed]".
+`astroos/meena-2-education-progeny` es un modelo publicado en Hugging Face por el usuario `astroos` bajo la libreria `transformers` y formato de pesos `safetensors`. En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su model card es la plantilla generada automaticamente por Hugging Face sin ningun campo completado: no hay descripcion, ni desarrollador declarado, ni tipo de modelo, ni idiomas, ni licencia. Toda la informacion sustantiva figura como "[More Information Needed]".
 
 El nombre del repositorio sugiere un ajuste fino orientado a educacion ("education") y posiblemente derivado de otro modelo ("progeny"), pero esta interpretacion no esta confirmada por ninguna fuente y debe tratarse como una hipotesis, no como un dato. El unico tag con contenido informativo es `arxiv:1910.09700`, que corresponde al articulo de Lacoste et al. (2019) sobre estimacion de emisiones de carbono, citado en la propia plantilla de la model card; no es un paper del modelo.
 
@@ -28,9 +28,9 @@ El tamano del repositorio es de 0,2 GB, lo que situa al modelo en el rango de lo
 
 ## Arquitectura y entrenamiento
 
-No hay informacion disponible sobre la arquitectura. La model card incluye el apartado "Model Architecture and Objective" con el marcador "[More Information Needed]", y el unico tag tecnico del repositorio es `transformers`, que indica compatibilidad con la libreria de HuggingFace pero no define el tipo de red. Tampoco se declara si el modelo es denso, de mezcla de expertos, de espacio de estados o hibrido, ni si emplea atencion con ventana deslizante, atencion lineal u otra variante.
+No hay informacion disponible sobre la arquitectura. La model card incluye el apartado "Model Architecture and Objective" con el marcador "[More Information Needed]", y el unico tag tecnico del repositorio es `transformers`, que indica compatibilidad con la libreria de Hugging Face pero no define el tipo de red. Tampoco se declara si el modelo es denso, de mezcla de expertos, de espacio de estados o hibrido, ni si emplea atencion con ventana deslizante, atencion lineal u otra variante.
 
-Respecto al entrenamiento, se desconocen por completo el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16, fp8), la existencia de fases de RLHF, DPO o SFT, y el modelo base del que deriva. La seccion "Training Details" de la model card esta integramente sin rellenar. El tag `arxiv:1910.09700` no aporta informacion sobre el entrenamiento: es la referencia a la calculadora de impacto medioambiental que la plantilla de HuggingFace incluye por defecto en todas las model cards generadas automaticamente. No se puede confirmar ninguna innovacion tecnica.
+Respecto al entrenamiento, se desconocen por completo el numero de tokens, la composicion del dataset, el regimen de precision (fp32, fp16, bf16, fp8), la existencia de fases de RLHF, DPO o SFT, y el modelo base del que deriva. La seccion "Training Details" de la model card esta integramente sin rellenar. El tag `arxiv:1910.09700` no aporta informacion sobre el entrenamiento: es la referencia a la calculadora de impacto medioambiental que la plantilla de Hugging Face incluye por defecto en todas las model cards generadas automaticamente. No se puede confirmar ninguna innovacion tecnica.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ Las cifras siguientes son estimaciones derivadas del tamano del repositorio (0,2
 - VRAM estimada con cuantizacion de 4 bits: por debajo de 0,2 GB en pesos.
 - GPU recomendadas: no hay recomendaciones publicadas; por tamano, el modelo seria ejecutable en GPUs de consumo como RTX 3060, RTX 4060 o superiores, e incluso en CPU.
 - Cabe en GPU de consumo: probablemente si, dado el tamano del repositorio, aunque no puede confirmarse sin conocer el numero real de parametros.
-- Opciones de despliegue: la libreria declarada es `transformers`, y el tag `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de HuggingFace. No se publican pesos GGUF ni cuantizaciones para llama.cpp u Ollama, por lo que su uso con esas herramientas requeriria conversion previa. No hay confirmacion de soporte para vLLM o TGI.
+- Opciones de despliegue: la libreria declarada es `transformers`, y el tag `endpoints_compatible` sugiere compatibilidad con los Inference Endpoints de Hugging Face. No se publican pesos GGUF ni cuantizaciones para llama.cpp u Ollama, por lo que su uso con esas herramientas requeriria conversion previa. No hay confirmacion de soporte para vLLM o TGI.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ La comparacion con los tres modelos de referencia se ofrece unicamente como marc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/astroos/meena-2-education-progeny
+- Modelo en Hugging Face: https://huggingface.co/astroos/meena-2-education-progeny
 - Referencia del tag `arxiv:1910.09700` (Lacoste et al., 2019, sobre estimacion de emisiones, incluida por defecto en la plantilla): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la plantilla: https://mlco2.github.io/impact
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ECA-LDNet es una red neuronal convolucional para el deshazeo (eliminacion de niebla) de imagen unica, publicada por el usuario manpreet28111995 en HuggingFace bajo el identificador `manpreet28111995/eca-ldnet`. Se trata de una U-Net con convoluciones depthwise-separable, bloques de Efficient Channel Attention (ECA), bloques de atencion por pixel y una rama de correccion de bajo peso inspirada en el modelo de dispersion atmosferica (ASM). El modelo declarado tiene 1.481.871 parametros y un coste de 2,171 GMAC / 4,343 GFLOPs para entradas de 256 x 256.
+ECA-LDNet es una red neuronal convolucional para el deshazeo (eliminacion de niebla) de imagen unica, publicada por el usuario manpreet28111995 en Hugging Face bajo el identificador `manpreet28111995/eca-ldnet`. Se trata de una U-Net con convoluciones depthwise-separable, bloques de Efficient Channel Attention (ECA), bloques de atencion por pixel y una rama de correccion de bajo peso inspirada en el modelo de dispersion atmosferica (ASM). El modelo declarado tiene 1.481.871 parametros y un coste de 2,171 GMAC / 4,343 GFLOPs para entradas de 256 x 256.
 
 El repositorio no es una simple publicacion de pesos: es un paquete de artefactos de entrenamiento y evaluacion que incluye checkpoints, historiales de entrenamiento por etapas, resultados de ablaciones (`eca_only`, `no_attention`, `no_eca`, `no_physics`), barridos de parametros de inferencia, comparativas con lineas base y perfiles de coste de inferencia. La model card es explicitamente conservadora sobre el alcance de los resultados: los autores indican que las predicciones de luz atmosferica y transmision no estan calibradas fisicamente y que los experimentos no establecen un nuevo operador de atencion ni un rendimiento estado del arte.
 
@@ -83,7 +83,7 @@ La informacion disponible menciona explicitamente tres condiciones de comparacio
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ECA-LDNet | 1.481.871 | 256 x 256 y 512 x 512 | no disponible | Repositorio en HuggingFace (`manpreet28111995/eca-ldnet`) |
+| ECA-LDNet | 1.481.871 | 256 x 256 y 512 x 512 | no disponible | Repositorio en Hugging Face (`manpreet28111995/eca-ldnet`) |
 | EDFormer (congelado, usado como comparacion) | no disponible | no disponible | no disponible | Referenciado en los resultados del repositorio |
 | Linea base DCP identidad | no aplica (metodo clasico) | no disponible | no disponible | Evaluado dentro del repositorio |
 | Ensemble uniforme de tres semillas de ECA-LDNet | no disponible | no disponible | no disponible | Resultados incluidos en el repositorio |
@@ -106,5 +106,5 @@ No se dispone de datos de parametros, contexto, rendimiento o licencia de altern
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manpreet28111995/eca-ldnet
+- Hugging Face: https://huggingface.co/manpreet28111995/eca-ldnet
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados devueltos no guardan ninguna relacion con el modelo.

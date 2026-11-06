@@ -24,7 +24,7 @@ Arquitectura de tipo GAN con generador y discriminador, empaquetada como grafo O
 | Salida | `result` uint8 [1, 3, H, W] |
 | Resolucion de entrenamiento | 512 (Places2) |
 | SHA256 del artefacto | 6f1f3530a1a2324b19752018ce756088b07973cda8d7d890034ace5c8a48c40b |
-| Tamano del repo | 0.0 GB (segun HuggingFace) |
+| Tamano del repo | 0.0 GB (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Resolucion | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| MI-GAN (este mirror) | GAN para inpainting | 512 (Places2) | MIT | ONNX | HuggingFace |
+| MI-GAN (este mirror) | GAN para inpainting | 512 (Places2) | MIT | ONNX | Hugging Face |
 | LaMa | GAN/Transformer para inpainting | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 | MAT (Mask-Aware Transformer) | Transformer para inpainting | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion | no disponible en la informacion |
 
@@ -84,11 +84,11 @@ No se dispone en la informacion proporcionada de datos de rendimiento, parametro
 - Resolucion de entrenamiento fijada en 512; no se documenta comportamiento fuera de esa resolucion.
 - No apto para tareas de lenguaje, agentes ni tool calling: es exclusivamente un modelo de vision para inpainting.
 - Licencia MIT, lo que permite uso comercial y redistribucion; conviene revisar igualmente el fichero LICENSE-WEIGHTS del repositorio upstream para confirmar las condiciones de los pesos.
-- El tamano del repo aparece como 0.0 GB en HuggingFace, lo que puede indicar que el artefacto se referencia de forma externa o que la metadata no refleja el contenido real; verificar la integridad con el SHA256 indicado antes de desplegar.
+- El tamano del repo aparece como 0.0 GB en Hugging Face, lo que puede indicar que el artefacto se referencia de forma externa o que la metadata no refleja el contenido real; verificar la integridad con el SHA256 indicado antes de desplegar.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/techycoder/migan-inpainting
+- Repositorio en Hugging Face: https://huggingface.co/techycoder/migan-inpainting
 - Repositorio upstream del pipeline ONNX: https://huggingface.co/andraniksargsyan/migan
 - Codigo y pesos originales (Picsart AI Research): https://github.com/Picsart-AI-Research/MI-GAN
 - Paper: MI-GAN: A Simple Baseline for Image Inpainting on Mobile Devices (ICCV 2023)

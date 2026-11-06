@@ -80,8 +80,8 @@ La informacion proporcionada no incluye datos de otros modelos comparables (para
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Entrada de imagen | Disponibilidad |
 |---|---|---|---|---|---|---|
-| SoAIHQ/gemma-4-31B-it-GGUF (Q4_K_M / Q8_0) | 30,7B | 262.144 tokens | GGUF, 18,7 GB / 32,6 GB | apache-2.0 (enlace a licencia Gemma 4) | Si, con mmproj | HuggingFace, 0 descargas |
-| google/gemma-4-31B-it (base, sin cuantizar) | 30,7B | 262.144 tokens | safetensors | Segun licencia de Gemma 4 | Si | HuggingFace |
+| SoAIHQ/gemma-4-31B-it-GGUF (Q4_K_M / Q8_0) | 30,7B | 262.144 tokens | GGUF, 18,7 GB / 32,6 GB | apache-2.0 (enlace a licencia Gemma 4) | Si, con mmproj | Hugging Face, 0 descargas |
+| google/gemma-4-31B-it (base, sin cuantizar) | 30,7B | 262.144 tokens | safetensors | Segun licencia de Gemma 4 | Si | Hugging Face |
 | Otros modelos de ~30B densos multimodales | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -99,7 +99,7 @@ La informacion proporcionada no incluye datos de otros modelos comparables (para
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SoAIHQ/gemma-4-31B-it-GGUF
+- Repositorio Hugging Face: https://huggingface.co/SoAIHQ/gemma-4-31B-it-GGUF
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia de Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - llama.cpp: https://github.com/ggml-org/llama.cpp

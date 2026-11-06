@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalE5-Small-33M-v1-mlx
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalE5-Small-33M-v1-mlx
 - Checkpoint original (PyTorch): https://huggingface.co/OpenMed/OpenMed-PII-Portuguese-ClinicalE5-Small-33M-v1
 - Repositorio GitHub de OpenMed: https://github.com/maziyarpanahi/openmed
 - Documentacion del backend MLX: https://openmed.life/docs/mlx-backend/

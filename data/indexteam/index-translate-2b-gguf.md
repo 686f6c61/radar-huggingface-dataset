@@ -92,7 +92,7 @@ La comparación de rendimiento de traducción (BLEU, COMET, chrF) no está dispo
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-2B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-2B-GGUF
 - Modelo base: https://huggingface.co/IndexTeam/Index-Translate-2B
 - Informe técnico (arXiv): https://arxiv.org/abs/2609.40181
 - Código: https://github.com/bilibili/Index-Translate

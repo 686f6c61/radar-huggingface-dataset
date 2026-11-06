@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Benali2001/Ai-generate es un modelo publicado en HuggingFace especializado en la tarea de image-to-video (generación de vídeo a partir de una imagen). Se trata de un fine-tune del modelo Wan-AI/Wan2.2-Animate-2-14B, desarrollado por el usuario Benali2001, y su relevancia radica en que adapta un modelo base de animación de vídeo de 14 mil millones de parámetros a un caso de uso concreto, presumiblemente orientado a la generación de animaciones a partir de imágenes fijas.
+Benali2001/Ai-generate es un modelo publicado en Hugging Face especializado en la tarea de image-to-video (generación de vídeo a partir de una imagen). Se trata de un fine-tune del modelo Wan-AI/Wan2.2-Animate-2-14B, desarrollado por el usuario Benali2001, y su relevancia radica en que adapta un modelo base de animación de vídeo de 14 mil millones de parámetros a un caso de uso concreto, presumiblemente orientado a la generación de animaciones a partir de imágenes fijas.
 
 El modelo se distribuye con el pipeline `image-to-video` y está etiquetado como derivado del modelo Wan2.2-Animate-2-14B. La información pública disponible es extremadamente limitada: no se especifican detalles sobre el dataset de fine-tuning, la arquitectura interna, los idiomas soportados ni la licencia. El repositorio registra cero descargas y cero likes en el momento de la consulta, lo que sugiere un proyecto reciente o de baja difusión.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Benali2001/Ai-generate | no disponible (~14B por el nombre del base) | no disponible | image-to-video | no disponible | HuggingFace |
-| Wan-AI/Wan2.2-Animate-2-14B | ~14B (por el nombre) | no disponible | image-to-video / animación | no disponible | HuggingFace |
+| Benali2001/Ai-generate | no disponible (~14B por el nombre del base) | no disponible | image-to-video | no disponible | Hugging Face |
+| Wan-AI/Wan2.2-Animate-2-14B | ~14B (por el nombre) | no disponible | image-to-video / animación | no disponible | Hugging Face |
 | Otros modelos image-to-video | no disponible | no disponible | image-to-video | no disponible | no disponible |
 
 No se dispone de información suficiente para establecer una comparativa rigurosa con alternativas de la misma categoría.
@@ -78,6 +78,6 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Benali2001/Ai-generate
+- Hugging Face: https://huggingface.co/Benali2001/Ai-generate
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-Animate-2-14B
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

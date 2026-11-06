@@ -4,7 +4,7 @@
 
 El modelo `nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx` es un experimento de fusión y destilación desarrollado por el usuario nightmedia, construido a partir de dos modelos base: `DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1` y `armand0e/Qwen3.8-27B-Fable-Distill`. Combina técnicas de fusión de modelos (GAIN, Fable-Fusion) con destilación de conocimiento procedente de Claude 4.6, según los tags asociados. Está orientado a tareas de razonamiento, generación de texto creativo y ficción, con soporte multilingüe (inglés, chino, japonés y español).
 
-El modelo se distribuye en formato MLX con cuantización MXFP4, lo que lo hace adecuado para inferencia en hardware Apple Silicon. Aunque el pipeline declarado es `image-text-to-text`, no se especifican capacidades de visión reales; probablemente se trate de una etiqueta genérica. Es un modelo experimental, con acceso restringido (gated) en HuggingFace, y no se han publicado métricas de rendimiento ni detalles de entrenamiento.
+El modelo se distribuye en formato MLX con cuantización MXFP4, lo que lo hace adecuado para inferencia en hardware Apple Silicon. Aunque el pipeline declarado es `image-text-to-text`, no se especifican capacidades de visión reales; probablemente se trate de una etiqueta genérica. Es un modelo experimental, con acceso restringido (gated) en Hugging Face, y no se han publicado métricas de rendimiento ni detalles de entrenamiento.
 
 ## Especificaciones técnicas
 
@@ -59,7 +59,7 @@ No se dispone de información suficiente para comparar con modelos equivalentes.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en HuggingFace antes de su uso.
+- Acceso restringido: el modelo es gated, por lo que requiere aceptar condiciones en Hugging Face antes de su uso.
 - Carácter experimental: al ser un merge y destilación no oficial, puede presentar comportamientos impredecibles o inconsistencias.
 - Sin benchmarks publicados: no hay evidencia de rendimiento en tareas estándar, por lo que no se recomienda para producción sin evaluación previa.
 - Posible riesgo de alucinación: como todo modelo de lenguaje, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo.
@@ -69,4 +69,4 @@ No se dispone de información suficiente para comparar con modelos equivalentes.
 
 ## Enlaces
 
-- [HuggingFace - nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx](https://huggingface.co/nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx)
+- [Hugging Face - nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx](https://huggingface.co/nightmedia/Qwen3.8-27B-Fable-Fusion-F711-GAIN-mxfp4-mlx)

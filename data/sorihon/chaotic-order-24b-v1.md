@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chaotic-Order-24B-V1 es un modelo de lenguaje de 23.572.403.200 parámetros (aproximadamente 23,6 mil millones) desarrollado por Sorihon mediante la fusión de modelos pre-entrenados utilizando la técnica DARE TIES implementada con mergekit. El modelo se basa en Naphula/Goetia-24B-v1.4 como componente principal, combinado con otro modelo local (Tamed-Chaos-24B) que no está disponible públicamente. El resultado es un modelo de generación de texto con arquitectura tipo Mistral, según las etiquetas de HuggingFace.
+Chaotic-Order-24B-V1 es un modelo de lenguaje de 23.572.403.200 parámetros (aproximadamente 23,6 mil millones) desarrollado por Sorihon mediante la fusión de modelos pre-entrenados utilizando la técnica DARE TIES implementada con mergekit. El modelo se basa en Naphula/Goetia-24B-v1.4 como componente principal, combinado con otro modelo local (Tamed-Chaos-24B) que no está disponible públicamente. El resultado es un modelo de generación de texto con arquitectura tipo Mistral, según las etiquetas de Hugging Face.
 
 Este modelo se presenta como una fusión experimental que busca combinar las capacidades de los modelos base, aunque no se han publicado métricas de rendimiento ni detalles sobre su entrenamiento. Al ser un merge, no ha sido entrenado desde cero, sino que combina los pesos de modelos existentes mediante interpolación y poda selectiva. Su relevancia radica en la exploración de técnicas de fusión de modelos para crear variantes con características potencialmente mejoradas, aunque su adopción es limitada al no contar con documentación exhaustiva.
 
@@ -64,7 +64,7 @@ No se dispone de información sobre modelos comparables específicos. El modelo 
 
 ## Enlaces
 
-- [HuggingFace - Sorihon/Chaotic-Order-24B-V1](https://huggingface.co/Sorihon/Chaotic-Order-24B-V1)
+- [Hugging Face - Sorihon/Chaotic-Order-24B-V1](https://huggingface.co/Sorihon/Chaotic-Order-24B-V1)
 - [Paper DARE TIES (arXiv:2311.03099)](https://arxiv.org/abs/2311.03099)
 - [Modelo base Naphula/Goetia-24B-v1.4](https://huggingface.co/Naphula/Goetia-24B-v1.4)
 - [Repositorio mergekit](https://github.com/cg123/mergekit)

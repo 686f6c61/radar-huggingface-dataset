@@ -23,7 +23,7 @@ Su relevancia actual radica en la creciente demanda de asistentes de seguridad q
 
 ## Arquitectura y entrenamiento
 
-El repositorio documentado es una coleccion de cuantizaciones estaticas GGUF del modelo base UtkarshSinghShrinet/swarmhunter-3b, realizadas por mradermacher a partir de los pesos originales en formato safetensors (3.085.938.688 parametros). La cuantizacion se realizo mediante conversion desde HuggingFace Transformers (convert_type: hf), y en el momento de redaccion de la ficha no hay cuants weighted/imatrix disponibles. No se especifica en la model card la arquitectura concreta (familia base, numero de capas, tipo de atencion) ni la longitud de contexto.
+El repositorio documentado es una coleccion de cuantizaciones estaticas GGUF del modelo base UtkarshSinghShrinet/swarmhunter-3b, realizadas por mradermacher a partir de los pesos originales en formato safetensors (3.085.938.688 parametros). La cuantizacion se realizo mediante conversion desde Hugging Face Transformers (convert_type: hf), y en el momento de redaccion de la ficha no hay cuants weighted/imatrix disponibles. No se especifica en la model card la arquitectura concreta (familia base, numero de capas, tipo de atencion) ni la longitud de contexto.
 
 Sobre el entrenamiento del modelo base, la informacion disponible se limita a las etiquetas tematicas: ciberseguridad, deteccion de vulnerabilidades, analisis de exploits, pruebas de penetracion, CVE, CWE, CTF y seguridad de codigo. No se han publicado detalles sobre el numero de tokens de entrenamiento, la composicion del dataset, ni el uso de tecnicas de alineacion como RLHF o DPO.
 

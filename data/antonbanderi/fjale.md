@@ -90,7 +90,7 @@ La comparacion con otros modelos ASR especificos para albanes no esta disponible
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/antonbanderi/fjale
+- Repositorio Hugging Face: https://huggingface.co/antonbanderi/fjale
 - Fine-tune de origen: https://huggingface.co/Flutra/whisper-large-v3-turbo-sq-v2
 - Modelo base OpenAI Whisper large-v3-turbo: https://huggingface.co/openai/whisper-large-v3-turbo
 - Repositorio OpenAI Whisper: https://github.com/openai/whisper

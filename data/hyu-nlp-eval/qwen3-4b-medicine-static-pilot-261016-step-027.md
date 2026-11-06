@@ -64,14 +64,14 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| qwen3-4b-medicine-static-pilot-261016-step-027 | 4,02 B | 262.144 (heredado) | apache-2.0 | HuggingFace, 0 descargas | Checkpoint experimental, sin benchmarks |
+| qwen3-4b-medicine-static-pilot-261016-step-027 | 4,02 B | 262.144 (heredado) | apache-2.0 | Hugging Face, 0 descargas | Checkpoint experimental, sin benchmarks |
 | Qwen/Qwen3-4B-Instruct-2507 | 4,02 B | 262.144 | apache-2.0 | Ampliamente disponible | Modelo base instructivo, con benchmarks publicados por el autor |
 | Alternativas medicas de ~4 B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos verificados en la informacion proporcionada |
 
 ## Limitaciones y advertencias
 
 - Modelo experimental detenido en el paso 27 de entrenamiento, sin evaluacion publicada ni benchmarks: su calidad es desconocida.
-- Cero descargas y cero valoraciones en HuggingFace en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
+- Cero descargas y cero valoraciones en Hugging Face en el momento de la consulta, lo que implica ausencia de validacion por parte de la comunidad.
 - Sesgos conocidos: no documentados. Al ser un ajuste en dominio medico, existe riesgo de sesgos clinicos, demograficos o de sobrerrepresentacion de ciertas poblaciones segun el corpus usado.
 - Riesgo de alucinacion: elevado por defecto en modelos de este tamano, y especialmente critico en dominio medico, donde una respuesta incorrecta puede causar dano.
 - Limitaciones de contexto e idioma: la ventana de 262.144 tokens procede del modelo base y no esta confirmada para este checkpoint; los idiomas soportados no estan documentados.
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-027
+- Hugging Face: https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-medicine-static-pilot-261016-step-027
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper de Qwen3: no disponible en la informacion proporcionada
 - Repositorio del framework veRL: no disponible en la informacion proporcionada

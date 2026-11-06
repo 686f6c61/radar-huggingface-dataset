@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables dentro del mismo formato
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/aoiandroid/silero-vad-coreml-macos)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/aoiandroid/silero-vad-coreml-macos)
 - [Repositorio fuente de FluidInference](https://huggingface.co/FluidInference/silero-vad-coreml)
 - [Repositorio espejo con más detalles](https://huggingface.co/aoiandroid/mirror-FluidInference-silero-vad-coreml)
 - [GitHub paean-ai/silero-vad-swift](https://github.com/paean-ai/silero-vad-swift) (implementación similar en Swift, no directamente vinculada)

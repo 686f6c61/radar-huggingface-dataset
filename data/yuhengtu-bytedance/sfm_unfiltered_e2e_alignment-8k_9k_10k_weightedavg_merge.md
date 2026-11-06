@@ -74,6 +74,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-8k_9k_10k_weightedavg_merge
+- Repositorio Hugging Face: https://huggingface.co/yuhengtu-bytedance/sfm_unfiltered_e2e_alignment-8k_9k_10k_weightedavg_merge
 - Paper del método Linear usado en el merge: https://arxiv.org/abs/2203.05482
 - Herramienta mergekit: https://github.com/cg123/mergekit

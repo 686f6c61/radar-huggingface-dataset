@@ -78,7 +78,7 @@ La comparación directa con Qwen2.5-VL-32B es orientativa, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [GestaltLabs/Ornstein3.8-27B](https://huggingface.co/GestaltLabs/Ornstein3.8-27B)
+- Repositorio Hugging Face: [GestaltLabs/Ornstein3.8-27B](https://huggingface.co/GestaltLabs/Ornstein3.8-27B)
 - Repositorio GGUF: [GestaltLabs/Ornstein3.8-27B-GGUF](https://huggingface.co/GestaltLabs/Ornstein3.8-27B-GGUF)
 - Modelo base: [Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - Plataforma de entrenamiento: [Fireworks AI](https://fireworks.ai)

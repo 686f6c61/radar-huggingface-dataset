@@ -79,8 +79,8 @@ No se han publicado resultados de benchmarks de capacidad (MMLU, HumanEval, GSM8
 
 | Modelo | Parámetros totales | Contexto | Rechazos (chat) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4.1-Flash-1017 (base) | 763,2 B (según este repo) | no disponible | 97/100 | MIT (según metadatos) | público en HuggingFace |
-| DeepSeek-V4.1-Flash-1017-abliterated | 763,2 B | no disponible | 4/100 | MIT | público en HuggingFace, 0 descargas |
+| DeepSeek-V4.1-Flash-1017 (base) | 763,2 B (según este repo) | no disponible | 97/100 | MIT (según metadatos) | público en Hugging Face |
+| DeepSeek-V4.1-Flash-1017-abliterated | 763,2 B | no disponible | 4/100 | MIT | público en Hugging Face, 0 descargas |
 | Otras variantes abliterated de la misma familia | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
 La comparación relevante es contra el modelo base, porque comparten arquitectura, formato y (salvo los tensores editados) pesos idénticos. No se dispone de datos de benchmarks de capacidad para ninguno de los dos, así que no es posible cuantificar la degradación más allá de la KL de 0,067 en el primer token sobre prompts inocuos.
@@ -94,13 +94,13 @@ La comparación relevante es contra el modelo base, porque comparten arquitectur
 - Sin datos de benchmarks de capacidad, idiomas, contexto ni parámetros activos. Cualquier decisión de producción basada en rendimiento requiere evaluación propia.
 - Señales de validación débiles: 0 descargas, 0 likes, sin pipeline declarado, sin idiomas declarados y creado y actualizado con 20 minutos de diferencia. Es un artefacto de investigación, no un modelo con historial de uso.
 - Discrepancia de tamaño: 510,3 GB publicados frente a ~763 GB teóricos en FP8. Verificar shards, índice y posible cuantización parcial antes de asumir que el checkpoint está completo.
-- Licencia MIT declarada en los metadatos de HuggingFace para este repo; conviene confirmar la licencia efectiva del modelo base antes de uso comercial, ya que la card no la reproduce.
+- Licencia MIT declarada en los metadatos de Hugging Face para este repo; conviene confirmar la licencia efectiva del modelo base antes de uso comercial, ya que la card no la reproduce.
 - El sesgo del modelo base no se elimina con la ablación: sigue presente y ahora sin el filtro de rechazo que parcialmente lo contenía. No hay evaluación de sesgos en la información disponible.
 - La recuantización a FP8 con redondeo estocástico introduce una fuente adicional de variación frente al original; la edición no es bit a bit reproducible en el dominio de los tensores editados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated
+- Modelo en Hugging Face: https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Imagen de resultados de la ablación (stats.png): https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated/blob/main/stats.png
 - LoRA de ablación en GGUF (abliteration-lora.gguf): https://huggingface.co/mrfakename/DeepSeek-V4.1-Flash-1017-abliterated/blob/main/abliteration-lora.gguf

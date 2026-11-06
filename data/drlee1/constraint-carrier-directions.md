@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Este 
 - Los artefactos son ficheros safetensors de tamano reducido (el repositorio ocupa 0.0 GB, es decir, menos de 1 GB en total). Su carga no requiere GPU.
 - Para reproducir la extraccion con el harness, el autor indica que Qwen3-0.6B puede ejecutarse en Apple MPS (portatil con chip Apple Silicon) y Qwen3-4B requiere CUDA con dtype bfloat16 (por ejemplo, una GPU con al menos 8 GB de VRAM, como una RTX 3070 o superior).
 - Para experimentos de steering sobre el modelo base, se necesitan los requisitos del propio Qwen3 (por ejemplo, Qwen3-4B en bfloat16 ocupa aproximadamente 8 GB de VRAM; una RTX 4090 o A100 son adecuadas).
-- Opciones de despliegue: no aplica para los artefactos en si; para el modelo base se pueden usar vLLM, llama.cpp, Ollama o TGI, pero el steering requiere acceso a las activaciones internas, lo que se hace tipicamente con bibliotecas como HuggingFace Transformers o el propio harness.
+- Opciones de despliegue: no aplica para los artefactos en si; para el modelo base se pueden usar vLLM, llama.cpp, Ollama o TGI, pero el steering requiere acceso a las activaciones internas, lo que se hace tipicamente con bibliotecas como Hugging Face Transformers o el propio harness.
 
 ## Comparativa con modelos similares
 
@@ -68,6 +68,6 @@ No disponible. No se han encontrado repositorios comparables que publiquen direc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/drlee1/constraint-carrier-directions
+- Repositorio Hugging Face: https://huggingface.co/drlee1/constraint-carrier-directions
 - Harness constraint-carrier (GitHub): https://github.com/DONGRYEOLLEE1/constraint-carrier
 - Modelos base Qwen3 (referencia): https://huggingface.co/Qwen/Qwen3-0.6B (y variantes 1.7B y 4B)

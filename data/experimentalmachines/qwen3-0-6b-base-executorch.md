@@ -91,7 +91,7 @@ Los resultados de benchmarks y las metricas de calidad de las alternativas no se
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/experimentalmachines/Qwen3-0.6B-Base-ExecuTorch
+- Repositorio Hugging Face: https://huggingface.co/experimentalmachines/Qwen3-0.6B-Base-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B-Base
 - Aplicacion Android openweights: https://github.com/alpharomercoma/openweights
 - Repositorio del exportador: https://github.com/ExperimentalMachines/executorch-model-exporter

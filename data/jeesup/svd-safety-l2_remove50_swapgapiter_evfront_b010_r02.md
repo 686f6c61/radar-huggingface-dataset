@@ -76,10 +76,10 @@ No se han publicado resultados de benchmarks de capacidad general (MMLU, GSM8K, 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| svd-safety-l2_remove50_swapgapiter_evfront_b010_r02 | 6.738.415.616 en safetensors (fracción declarada 0,4999) | No disponible (base: 4096) | Llama 2 Community License | HuggingFace, 0 descargas | ASR AdvBench 0,1650; ASR StrongREJECT 0,1500; sobrerrechazo 0,1893 |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens | Llama 2 Community License | HuggingFace, ampliamente desplegado | No incluido en la información proporcionada |
-| Mistral-7B-Instruct | No disponible en la información proporcionada | No disponible | Apache 2.0 (dato general, no verificado en la búsqueda) | HuggingFace | No disponible |
-| Llama-3.1-8B-Instruct | No disponible en la información proporcionada | No disponible | Llama 3.1 Community License (dato general, no verificado) | HuggingFace | No disponible |
+| svd-safety-l2_remove50_swapgapiter_evfront_b010_r02 | 6.738.415.616 en safetensors (fracción declarada 0,4999) | No disponible (base: 4096) | Llama 2 Community License | Hugging Face, 0 descargas | ASR AdvBench 0,1650; ASR StrongREJECT 0,1500; sobrerrechazo 0,1893 |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 tokens | Llama 2 Community License | Hugging Face, ampliamente desplegado | No incluido en la información proporcionada |
+| Mistral-7B-Instruct | No disponible en la información proporcionada | No disponible | Apache 2.0 (dato general, no verificado en la búsqueda) | Hugging Face | No disponible |
+| Llama-3.1-8B-Instruct | No disponible en la información proporcionada | No disponible | Llama 3.1 Community License (dato general, no verificado) | Hugging Face | No disponible |
 
 Los datos de las alternativas no proceden de la información proporcionada en esta búsqueda y no se han podido verificar; se incluyen solo como referencia de categoría. La comparación estricta y relevante es contra `meta-llama/Llama-2-7b-chat-hf`, y para completarla hacen falta las métricas de seguridad del modelo sin comprimir, que no se publican aquí.
 
@@ -99,7 +99,7 @@ Los datos de las alternativas no proceden de la información proporcionada en es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r02
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r02
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 (incluida en el repositorio): `LICENSE.txt` y `USE_POLICY.md`
 - Paper o repositorio de SVD-LLM: no disponible en la información proporcionada

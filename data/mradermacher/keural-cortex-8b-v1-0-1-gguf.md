@@ -22,9 +22,9 @@ No se dispone de informacion publica sobre la arquitectura interna, la longitud 
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion publica sobre la arquitectura del modelo base Keural-Cortex-8B-v1.0-1 en la documentacion proporcionada. El repositorio se distribuye bajo la libreria transformers y con la etiqueta de cuantizacion desde un base_model, lo que indica que el modelo original se publica con pesos compatibles con el ecosistema HuggingFace. No se especifica si se trata de un transformer denso, un MoE u otra variante, ni el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de ajuste como RLHF o DPO.
+No se dispone de informacion publica sobre la arquitectura del modelo base Keural-Cortex-8B-v1.0-1 en la documentacion proporcionada. El repositorio se distribuye bajo la libreria transformers y con la etiqueta de cuantizacion desde un base_model, lo que indica que el modelo original se publica con pesos compatibles con el ecosistema Hugging Face. No se especifica si se trata de un transformer denso, un MoE u otra variante, ni el numero de tokens de entrenamiento, la composicion del dataset o si se aplicaron tecnicas de ajuste como RLHF o DPO.
 
-La unica innovacion tecnica documentada corresponde al proceso de cuantizacion realizado por mradermacher: se ofrecen cuantizaciones estaticas (etiquetadas como static quants en la model card) y se indica que no hay cuantizaciones ponderadas/imatrix disponibles en el momento de la publicacion. El proceso de conversion esta marcado como quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que implica que la conversion se hizo partiendo de los pesos en formato HuggingFace.
+La unica innovacion tecnica documentada corresponde al proceso de cuantizacion realizado por mradermacher: se ofrecen cuantizaciones estaticas (etiquetadas como static quants en la model card) y se indica que no hay cuantizaciones ponderadas/imatrix disponibles en el momento de la publicacion. El proceso de conversion esta marcado como quantize_version 2, output_tensor_quantised 1 y convert_type hf, lo que implica que la conversion se hizo partiendo de los pesos en formato Hugging Face.
 
 ## Capacidades
 
@@ -88,7 +88,7 @@ Nota: los datos de las alternativas corresponden a sus especificaciones oficiale
 - Las cuantizaciones ponderadas/imatrix no estan disponibles, por lo que no se puede recurrir a variantes optimizadas de mayor fidelidad en bit bajo.
 - Licencia Apache 2.0: permite uso comercial, modificacion y redistribucion, siempre que se conserve el aviso de licencia; conviene confirmar tambien las condiciones del modelo base Hikaf143/Keural-Cortex-8B-v1.0-1.
 - Repositorio con 0 descargas y 0 likes en el momento de la consulta, sin adopcion ni validacion por parte de la comunidad.
-- La fecha de creacion indicada (2026-10-14) es posterior a la fecha tipica de publicacion de modelos de este tipo; conviene verificar la vigencia de la ficha en HuggingFace.
+- La fecha de creacion indicada (2026-10-14) es posterior a la fecha tipica de publicacion de modelos de este tipo; conviene verificar la vigencia de la ficha en Hugging Face.
 
 ## Enlaces
 

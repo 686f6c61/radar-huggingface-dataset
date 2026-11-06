@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`yuvalgot/act_towel_fold1_dagger_20260911` es una politica de imitacion (imitation learning) para robotica entrenada con el metodo Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705 y descrito en la model card como un metodo que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, aprendiendo de datos de teleoperacion. El modelo lo publica el usuario de HuggingFace `yuvalgot` y esta empaquetado con LeRobot, la libreria de HuggingFace para aprendizaje por imitacion en robotica real. La tarea concreta que ejecuta es "fold the towel" (doblar una toalla) sobre un brazo seguidor de tipo `so_follower` con una unica camara denominada `hand`.
+`yuvalgot/act_towel_fold1_dagger_20260911` es una politica de imitacion (imitation learning) para robotica entrenada con el metodo Action Chunking with Transformers (ACT), publicado en el paper arXiv:2304.13705 y descrito en la model card como un metodo que predice fragmentos cortos de acciones (action chunks) en lugar de pasos individuales, aprendiendo de datos de teleoperacion. El modelo lo publica el usuario de Hugging Face `yuvalgot` y esta empaquetado con LeRobot, la libreria de Hugging Face para aprendizaje por imitacion en robotica real. La tarea concreta que ejecuta es "fold the towel" (doblar una toalla) sobre un brazo seguidor de tipo `so_follower` con una unica camara denominada `hand`.
 
 Tecnicamente es una politica visomotora pequena: 51.668.614 parametros (unos 51,7 millones, ~0,2 GB de pesos en safetensors), con una entrada compuesta por el estado propioceptivo del robot (vector de 6 dimensiones) y una imagen RGB de 3x240x320 pixeles, y una salida de accion de 6 dimensiones. El modelo se entreno sobre el dataset `yuvalgot/towel_fold1_dagger_aggregated`, con 70 episodios y 45.638 frames a 30 FPS, y el nombre del repositorio sugiere que los datos se agregaron mediante un proceso tipo DAgger (correcciones iterativas sobre los fallos de la politica).
 
@@ -76,7 +76,7 @@ No se dispone de datos verificados de parametros, contexto o rendimiento de los 
 
 | Modelo | Tipo | Representacion de accion | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este modelo (ACT, `yuvalgot/act_towel_fold1_dagger_20260911`) | Transformer con CVAE (ACT) | Chunks de acciones | apache-2.0 | HuggingFace Hub, libreria `lerobot` |
+| Este modelo (ACT, `yuvalgot/act_towel_fold1_dagger_20260911`) | Transformer con CVAE (ACT) | Chunks de acciones | apache-2.0 | Hugging Face Hub, libreria `lerobot` |
 | Diffusion Policy | Politica generativa por difusion | Trayectorias generadas por difusion | no disponible en esta busqueda | Implementada en LeRobot; cifras concretas no disponibles |
 | SmolVLA | Politica basada en modelo vision-lenguaje-accion | Acciones condicionadas por instruccion en lenguaje | no disponible en esta busqueda | Disponible en el ecosistema LeRobot; cifras concretas no disponibles |
 | ACT de referencia (`lerobot/act_*`) | Transformer con CVAE (ACT) | Chunks de acciones | no disponible en esta busqueda | Multiples checkpoints publicos en el Hub; no se dispone de comparacion numerica |
@@ -97,7 +97,7 @@ Diferencias clave esperables frente a las alternativas: SmolVLA incorpora condic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yuvalgot/act_towel_fold1_dagger_20260911
+- Modelo en Hugging Face: https://huggingface.co/yuvalgot/act_towel_fold1_dagger_20260911
 - Dataset de entrenamiento: https://huggingface.co/datasets/yuvalgot/towel_fold1_dagger_aggregated
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=yuvalgot/towel_fold1_dagger_aggregated
 - Paper de ACT: https://huggingface.co/papers/2304.13705

@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Soonlife-Qwen3.5-9B-v2b-LoRA | 9B (base) + adaptador | 32K (entrenamiento) | LoRA multimodal especializado en RAG coreano | Apache 2.0 | HuggingFace (adaptador) |
-| Qwen/Qwen3.5-9B | 9B | No disponible | Modelo base multimodal generalista | No disponible en la información | HuggingFace |
-| Soonlife-Qwen3.5-9B-FP8 (v1) | 9B | 32K | Variante de producción del mismo proyecto | Apache 2.0 | HuggingFace |
-| Soonlife-Qwen3.5-9B-v2-FP8 | 9B | 32K | Variante v2 (1,5 epochs) | Apache 2.0 | HuggingFace |
+| Soonlife-Qwen3.5-9B-v2b-LoRA | 9B (base) + adaptador | 32K (entrenamiento) | LoRA multimodal especializado en RAG coreano | Apache 2.0 | Hugging Face (adaptador) |
+| Qwen/Qwen3.5-9B | 9B | No disponible | Modelo base multimodal generalista | No disponible en la información | Hugging Face |
+| Soonlife-Qwen3.5-9B-FP8 (v1) | 9B | 32K | Variante de producción del mismo proyecto | Apache 2.0 | Hugging Face |
+| Soonlife-Qwen3.5-9B-v2-FP8 | 9B | 32K | Variante v2 (1,5 epochs) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes más allá de las pérdidas de validación indicadas.
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes más all
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-LoRA
+- Hugging Face del adaptador: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-LoRA
 - Variante FP8 para serving: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b-FP8
 - Variante bf16 fusionada: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-v2b
 - Versión de producción v1: https://huggingface.co/wonchandev/Soonlife-Qwen3.5-9B-FP8

@@ -64,7 +64,7 @@ En la informacion disponible solo se ha encontrado un modelo relacionado del mis
 - El modelo solo genera el concepto entrenado "mtjf woman"; no es un modelo de uso general.
 - No se han publicado evaluaciones ni benchmarks, por lo que se desconoce su rendimiento real en tareas generales.
 - El repositorio tiene 0 descargas y 0 likes, lo que indica que no ha sido probado por la comunidad.
-- La fecha de creacion indicada en HuggingFace es 2026-09-06, una fecha futura, lo que podria indicar un error en los metadatos o un repositorio de prueba.
+- La fecha de creacion indicada en Hugging Face es 2026-09-06, una fecha futura, lo que podria indicar un error en los metadatos o un repositorio de prueba.
 - La dependencia del modelo base Krea 2 implica que cualquier limitacion de ese modelo tambien se aplica al adaptador.
 - Los prompts de ejemplo estan en ingles; no se ha verificado el comportamiento con prompts en otros idiomas.
 - La licencia Apache 2.0 permite uso comercial, pero se recomienda revisar los terminos de la licencia del modelo base Krea 2.

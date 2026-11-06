@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Tornadus es un modelo publicado en HuggingFace por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no se especifica arquitectura, tamano, contexto ni idiomas soportados, y el repositorio ocupa unicamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un repositorio incompleto. No se han registrado descargas ni interacciones, y el pipeline no esta declarado.
+Tornadus es un modelo publicado en Hugging Face por el usuario Ryanham1lton bajo licencia CC-BY-4.0. La informacion disponible es extremadamente limitada: la model card no contiene descripcion, no se especifica arquitectura, tamano, contexto ni idiomas soportados, y el repositorio ocupa unicamente 0,1 GB, lo que sugiere un modelo de pequeno tamano o un repositorio incompleto. No se han registrado descargas ni interacciones, y el pipeline no esta declarado.
 
 No es posible determinar que problema resuelve ni por que seria relevante, ya que no hay documentacion tecnica, benchmarks ni ejemplos de uso publicados por el autor. El unico dato verificable es la licencia y la fecha de creacion (noviembre de 2026), lo que indica un lanzamiento muy reciente y sin validacion comunitaria.
 
@@ -72,4 +72,4 @@ No disponible. No se dispone de informacion sobre parametros, contexto ni rendim
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ryanham1lton/Tornadus
+- Hugging Face: https://huggingface.co/Ryanham1lton/Tornadus

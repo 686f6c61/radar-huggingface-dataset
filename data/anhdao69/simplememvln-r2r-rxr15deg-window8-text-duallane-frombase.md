@@ -68,9 +68,9 @@ No se dispone de datos numéricos de benchmarks para este modelo ni para alterna
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SimpleMemVLN-R2R-RxR15deg-Window8-Text-DualLane-FromBase | ~4.000 M + 21.054.000 (lanes) | no disponible | sin evaluación publicada | no disponible | HuggingFace, pesos en formato wrapper propio |
+| SimpleMemVLN-R2R-RxR15deg-Window8-Text-DualLane-FromBase | ~4.000 M + 21.054.000 (lanes) | no disponible | sin evaluación publicada | no disponible | Hugging Face, pesos en formato wrapper propio |
 | Alternativas VLN sobre backbones VLM (familia NaVid/NaVILA y similares) | no disponible | no disponible | no disponible | no disponible | no disponible |
-| Qwen/Qwen3.5-4B (modelo base) | ~4.000 M | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-4B (modelo base) | ~4.000 M | no disponible | no disponible | no disponible | Hugging Face |
 
 No se ha identificado en la información proporcionada ningún modelo comparable con datos verificables de parámetros, contexto o rendimiento.
 
@@ -89,7 +89,7 @@ No se ha identificado en la información proporcionada ningún modelo comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/anhdao69/SimpleMemVLN-R2R-RxR15deg-Window8-Text-DualLane-FromBase
+- Hugging Face: https://huggingface.co/anhdao69/SimpleMemVLN-R2R-RxR15deg-Window8-Text-DualLane-FromBase
 - Repositorio de código de entrenamiento: https://github.com/anhdao69/SimpleMemVLN/tree/streaming_text_dual (commit `a7e442cbd3c43cf3ec238eaa527e9c67f5ce2408`)
 - Modelo base: Qwen/Qwen3.5-4B (revisión `851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a`)
 - Paper, blog o demo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `scvi-tools/test-scvi` es un modelo de inferencia variacional para datos de secuenciación de ARN de célula única (scRNA-seq), desarrollado por el equipo de scvi-tools. Se trata de una implementación de scVI (single-cell Variational Inference), una arquitectura basada en redes neuronales profundas que aprende una representación latente de baja dimensionalidad a partir de matrices de expresión génica, integrando lotes técnicos y imputando valores de dropout. Este modelo concreto es una versión de prueba entrenada sobre datos sintéticos independientes e idénticamente distribuidos (IID), con el objetivo de validar el flujo de trabajo de scvi-tools en el Hub de HuggingFace.
+El modelo `scvi-tools/test-scvi` es un modelo de inferencia variacional para datos de secuenciación de ARN de célula única (scRNA-seq), desarrollado por el equipo de scvi-tools. Se trata de una implementación de scVI (single-cell Variational Inference), una arquitectura basada en redes neuronales profundas que aprende una representación latente de baja dimensionalidad a partir de matrices de expresión génica, integrando lotes técnicos y imputando valores de dropout. Este modelo concreto es una versión de prueba entrenada sobre datos sintéticos independientes e idénticamente distribuidos (IID), con el objetivo de validar el flujo de trabajo de scvi-tools en el Hub de Hugging Face.
 
 La relevancia de este modelo radica en que ejemplifica el uso de scVI para tareas de análisis de transcriptómica espacial y de célula única, un campo en rápida expansión. Aunque no está pensado para producción, sirve como referencia para entender cómo se estructuran y evalúan los modelos de scvi-tools, y cómo se pueden reutilizar mediante fine-tuning con el framework Arches. Su tamaño de repositorio es de 0,9 GB, e incluye tanto los pesos del modelo como los datos de entrenamiento completos.
 
@@ -97,7 +97,7 @@ Este modelo es una implementación de scVI, por lo que la comparativa natural es
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| scvi-tools/test-scvi | scVI (VAE) | No disponible | No aplica | cc-by-4.0 | HuggingFace |
+| scvi-tools/test-scvi | scVI (VAE) | No disponible | No aplica | cc-by-4.0 | Hugging Face |
 | scANVI (scvi-tools) | scVI + clasificador semi-supervisado | No disponible | No aplica | cc-by-4.0 | GitHub/HuggingFace |
 | Seurat (Satija lab) | Métodos estadísticos clásicos | No aplica | No aplica | GPL-3.0 | CRAN |
 
@@ -114,7 +114,7 @@ No se dispone de benchmarks comparativos directos en la información proporciona
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/scvi-tools/test-scvi)
+- [Modelo en Hugging Face](https://huggingface.co/scvi-tools/test-scvi)
 - [Manuscrito original de scVI](https://www.nature.com/articles/s41592-018-0229-2)
 - [Manuscrito de scvi-hub](https://www.biorxiv.org/content/10.1101/2024.03.01.582887v2)
 - [Guía de usuario de scVI](https://docs.scvi-tools.org/en/stable/user_guide/models/scvi.html)

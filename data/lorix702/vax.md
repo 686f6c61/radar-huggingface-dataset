@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LORIX702/vax es un modelo publicado en HuggingFace por el usuario LORIX702 bajo la licencia grok2-community. En el momento de redactar esta ficha, la informacion disponible es minima: no se especifica pipeline, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento. La model card del repositorio se limita a declarar la licencia, sin incluir descripcion funcional, documentacion tecnica ni ejemplos de uso.
+LORIX702/vax es un modelo publicado en Hugging Face por el usuario LORIX702 bajo la licencia grok2-community. En el momento de redactar esta ficha, la informacion disponible es minima: no se especifica pipeline, idiomas soportados, arquitectura, numero de parametros ni datos de entrenamiento. La model card del repositorio se limita a declarar la licencia, sin incluir descripcion funcional, documentacion tecnica ni ejemplos de uso.
 
 El repositorio registra 0 descargas y 0 "likes", lo que indica que no ha tenido difusion ni adopcion por parte de la comunidad. La fecha de creacion y ultima actualizacion figura como 2026-09-21, un valor que no permite extraer conclusiones sobre el ciclo de vida real del modelo.
 
@@ -68,5 +68,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/LORIX702/vax
+- Hugging Face: https://huggingface.co/LORIX702/vax
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (papers, blogs, repositorios o demos). Los resultados devueltos corresponden a la plataforma de screening oncologico "Sinfonia" de la Region de Campania, sin relacion con este modelo.

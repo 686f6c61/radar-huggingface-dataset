@@ -2,7 +2,7 @@
 
 ## Resumen
 
-classical-physics-ai999x es un solucionador de problemas de fisica clasica desarrollado por AI999X (autor: Ibnul Jaif Farabi) y publicado bajo licencia Apache-2.0. A pesar de su nombre y de estar alojado en HuggingFace, no es un modelo de lenguaje con pesos neuronales: es un programa determinista escrito en Rust que se distribuye como aplicacion de escritorio, herramienta de linea de comandos, modulo WebAssembly para navegador y paquete de Python. El repositorio de HuggingFace tiene un tamano de 0.0 GB, lo que confirma que no contiene pesos de modelo en el sentido habitual.
+classical-physics-ai999x es un solucionador de problemas de fisica clasica desarrollado por AI999X (autor: Ibnul Jaif Farabi) y publicado bajo licencia Apache-2.0. A pesar de su nombre y de estar alojado en Hugging Face, no es un modelo de lenguaje con pesos neuronales: es un programa determinista escrito en Rust que se distribuye como aplicacion de escritorio, herramienta de linea de comandos, modulo WebAssembly para navegador y paquete de Python. El repositorio de Hugging Face tiene un tamano de 0.0 GB, lo que confirma que no contiene pesos de modelo en el sentido habitual.
 
 El sistema recibe preguntas en ingles sencillo (o llamadas tipadas), selecciona una de sus 196 capacidades certificadas de fisica clasica, calcula la respuesta de forma exacta, la verifica y devuelve el resultado acompanado de pasos, unidades, LaTeX y supuestos. Cuando no puede verificar una respuesta, rechaza la consulta en lugar de adivinar, lo que el autor denomina "zero wrong answers".
 
@@ -91,8 +91,8 @@ No se dispone de datos de rendimiento comparativo directo con estas alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AI999X/classical-physics-ai999x
-- Organizacion AI999X en HuggingFace: https://huggingface.co/AI999X
+- Modelo en Hugging Face: https://huggingface.co/AI999X/classical-physics-ai999x
+- Organizacion AI999X en Hugging Face: https://huggingface.co/AI999X
 - Aplicacion de escritorio y CLI: https://www.ai999x.com/desktop-cli/
 - Probar en navegador: https://www.ai999x.com/models/classical-physics-ai999x/#try
 - Paquete Python (PyPI): https://pypi.org/project/classical-physics-ai999x/

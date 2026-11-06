@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Coolboy11/qwen3.5-4b-cyber-agent-GGUF` es un modelo de lenguaje publicado en HuggingFace por el usuario Coolboy11, distribuido unicamente en formato GGUF y etiquetado como *vision-language-model*. Segun la model card, fue ajustado finamente y convertido a GGUF con Unsloth, y deriva de un modelo que el autor denomina "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive", del que no se aporta referencia, repo base ni licencia. El dato objetivo disponible es el recuento de parametros de los pesos originales en safetensors: 4.205.751.296 parametros, es decir, aproximadamente 4,2 mil millones.
+`Coolboy11/qwen3.5-4b-cyber-agent-GGUF` es un modelo de lenguaje publicado en Hugging Face por el usuario Coolboy11, distribuido unicamente en formato GGUF y etiquetado como *vision-language-model*. Segun la model card, fue ajustado finamente y convertido a GGUF con Unsloth, y deriva de un modelo que el autor denomina "Qwen3.5-4B-Uncensored-HauhauCS-Aggressive", del que no se aporta referencia, repo base ni licencia. El dato objetivo disponible es el recuento de parametros de los pesos originales en safetensors: 4.205.751.296 parametros, es decir, aproximadamente 4,2 mil millones.
 
 El interes practico del artefacto es acotado pero real: un modelo de 4,2B cuantizado en Q4_K_M con proyector visual en F16 cabe en GPUs de consumo y en portatiles, y se ejecuta con `llama.cpp` mediante `llama-cli` (texto) o `llama-mtmd-cli` (multimodal). El nombre comercial sugiere un enfoque de "agente de ciberseguridad" y de alineacion reducida ("Uncensored", "Aggressive"), lo que lo orienta a experimentacion en entornos controlados mas que a produccion.
 
@@ -104,7 +104,7 @@ La diferencia practica fundamental no es de tamano, sino de trazabilidad: las al
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Coolboy11/qwen3.5-4b-cyber-agent-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Coolboy11/qwen3.5-4b-cyber-agent-GGUF
 - Unsloth (herramienta de ajuste y conversion declarada): https://github.com/unslothai/unsloth
 - llama.cpp (runtime declarado en la model card): https://github.com/ggml-org/llama.cpp
 - Documentacion de `llama-mtmd-cli` para modelos multimodales: https://github.com/ggml-org/llama.cpp/tree/master/tools/mtmd

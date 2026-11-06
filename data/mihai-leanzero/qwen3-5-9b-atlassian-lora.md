@@ -84,9 +84,9 @@ La sonda de fuga (leak probe) sobre 112 salidas no detecto filtraciones: 0 fugas
 
 | Modelo | Parametros | Contexto | Rendimiento en tareas Forge | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-9B-Atlassian-lora (este) | 9B + LoRA r32 | no disponible | 19/25 manifiestos, 16/25 apps completas, 62% identificadores (thinking on) | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen3.5-9B-Atlassian, miembro 27B de la familia | 27B | no disponible | 31,3/25 manifiestos, 30,0/25 apps completas, 85% identificadores | Apache 2.0 | HuggingFace, formato MLX |
-| Qwen/Qwen3.5-9B (base sin ajustar) | 9B | no disponible | 15% identificadores, sin datos de manifiestos | Apache 2.0 | HuggingFace |
+| Qwen3.5-9B-Atlassian-lora (este) | 9B + LoRA r32 | no disponible | 19/25 manifiestos, 16/25 apps completas, 62% identificadores (thinking on) | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen3.5-9B-Atlassian, miembro 27B de la familia | 27B | no disponible | 31,3/25 manifiestos, 30,0/25 apps completas, 85% identificadores | Apache 2.0 | Hugging Face, formato MLX |
+| Qwen/Qwen3.5-9B (base sin ajustar) | 9B | no disponible | 15% identificadores, sin datos de manifiestos | Apache 2.0 | Hugging Face |
 | Alternativas genericas de 9B para codigo | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparacion directa solo es posible dentro de la familia LeanZero y contra el base, ya que el autor no publica comparaciones con otros modelos especializados en Atlassian. No se dispone de datos de benchmarks academicos (MMLU, HumanEval, GSM8K) para este adaptador.
@@ -106,7 +106,7 @@ La comparacion directa solo es posible dentro de la familia LeanZero y contra el
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-lora
+- Modelo en Hugging Face: https://huggingface.co/Mihai-LeanZero/Qwen3.5-9B-Atlassian-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Pagina del portfolio de modelos Atlassian de LeanZero: https://leanzero.net/portfolio/atlassian-models
 - LeanZero: https://leanzero.net

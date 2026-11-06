@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered` es un ajuste fino (fine-tune) de Meta Llama 3.1 8B Instruct publicado por el usuario pshahabinejad en HuggingFace. No se trata de un modelo de nueva factura ni de un entrenamiento desde cero: parte de `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, una version del instructivo de 8 000 millones de parametros ya cuantizada a 4 bits en formato bitsandbytes, y ha sido entrenado con la libreria Unsloth junto a TRL de HuggingFace. El repositorio contiene pesos en safetensors de aproximadamente 16,1 GB, lo que corresponde a una fusion en precision de 16 bits de los adaptadores sobre el modelo base.
+`pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered` es un ajuste fino (fine-tune) de Meta Llama 3.1 8B Instruct publicado por el usuario pshahabinejad en Hugging Face. No se trata de un modelo de nueva factura ni de un entrenamiento desde cero: parte de `unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit`, una version del instructivo de 8 000 millones de parametros ya cuantizada a 4 bits en formato bitsandbytes, y ha sido entrenado con la libreria Unsloth junto a TRL de Hugging Face. El repositorio contiene pesos en safetensors de aproximadamente 16,1 GB, lo que corresponde a una fusion en precision de 16 bits de los adaptadores sobre el modelo base.
 
 El problema que aborda no queda documentado en la model card: el nombre del repositorio sugiere un entrenamiento orientado a escenarios de "desalineacion emergente" (emergent misalignment) combinados con datos medicos multi-turno, pero el autor no publica ni el dataset, ni la receta de entrenamiento, ni metricas de evaluacion. Se trata, por tanto, de un artefacto de investigacion o de un experimento personal, no de un modelo listo para produccion. Esto es relevante ahora porque la comunidad trabaja activamente en reproducir y estudiar fenomenos de fine-tuning estrecho que degradan la seguridad de modelos alineados, y este tipo de publicaciones son material de analisis para ese campo.
 
@@ -68,10 +68,10 @@ Los datos de rendimiento del modelo objeto de esta ficha no estan disponibles, p
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered | 8,03 mil millones | 128 000 tokens (heredado, no verificado) | Apache-2.0 declarada por el autor (con salvedades) | HuggingFace, safetensors, 0 descargas |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128 000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32 000 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado |
-| Qwen/Qwen2.5-7B-Instruct | 7,62 mil millones | 128 000 tokens | Apache-2.0 | HuggingFace, ampliamente desplegado |
+| pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered | 8,03 mil millones | 128 000 tokens (heredado, no verificado) | Apache-2.0 declarada por el autor (con salvedades) | Hugging Face, safetensors, 0 descargas |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 mil millones | 128 000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,25 mil millones | 32 000 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado |
+| Qwen/Qwen2.5-7B-Instruct | 7,62 mil millones | 128 000 tokens | Apache-2.0 | Hugging Face, ampliamente desplegado |
 
 Frente a estas alternativas, el modelo de pshahabinejad no aporta ninguna ventaja documentada: carece de evaluacion publicada, de soporte comunitario y de garantias de licencia claras sobre la herencia de Meta.
 
@@ -89,10 +89,10 @@ Frente a estas alternativas, el modelo de pshahabinejad no aporta ninguna ventaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered
+- Modelo en Hugging Face: https://huggingface.co/pshahabinejad/llama-3.1-8b-emergent-plus-medical-mt-misaligned-numbered
 - Modelo base declarado: https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Tarjeta de Llama 3.1 (terminos de licencia): https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE
 - No se han encontrado enlaces relevantes adicionales en la busqueda web; los resultados devueltos no guardan relacion con el modelo.

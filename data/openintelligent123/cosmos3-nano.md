@@ -4,7 +4,7 @@
 
 Cosmos3-Nano es un modelo de mundo omnímodo desarrollado por NVIDIA, dentro de la plataforma Cosmos3, diseñado para acelerar el desarrollo de IA física (Physical AI) en robótica, conducción autónoma y entornos inteligentes industriales. El modelo es capaz de generar salidas coherentes de texto, imagen, vídeo, audio y trayectorias de acción a partir de combinaciones de entradas multimodales (texto, imagen, vídeo y acciones). Su arquitectura es una Mixture-of-Transformers (MoT), que combina un transformer autorregresivo para tokens discretos y un diffusion transformer para modales continuos, permitiendo modelar modalidades heterogéneas en un único framework sin perder los mecanismos óptimos de generación para cada una.
 
-El modelo tiene aproximadamente 15.750 millones de parámetros (15,75B según los pesos safetensors; el fabricante declara 16B) y está publicado en HuggingFace con un tamaño de repositorio de 35,0 GB. Se ofrece bajo la licencia OpenMDW1.1, que según el fabricante permite uso comercial y no comercial, aunque se trata de una licencia personalizada que conviene revisar. Cosmos3-Nano es la variante más pequeña de la familia Cosmos3, pensada para servir como modelo base en tareas de comprensión del mundo, generación de mundos, simulación y aprendizaje de políticas encarnadas.
+El modelo tiene aproximadamente 15.750 millones de parámetros (15,75B según los pesos safetensors; el fabricante declara 16B) y está publicado en Hugging Face con un tamaño de repositorio de 35,0 GB. Se ofrece bajo la licencia OpenMDW1.1, que según el fabricante permite uso comercial y no comercial, aunque se trata de una licencia personalizada que conviene revisar. Cosmos3-Nano es la variante más pequeña de la familia Cosmos3, pensada para servir como modelo base en tareas de comprensión del mundo, generación de mundos, simulación y aprendizaje de políticas encarnadas.
 
 ## Especificaciones técnicas
 
@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks que permitan comparar Cosmos3-Nano con mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Openintelligent123/Cosmos3-Nano
-- Colección de modelos Cosmos3 en HuggingFace: https://huggingface.co/collections/nvidia/cosmos3
+- Hugging Face: https://huggingface.co/Openintelligent123/Cosmos3-Nano
+- Colección de modelos Cosmos3 en Hugging Face: https://huggingface.co/collections/nvidia/cosmos3
 - Código en GitHub: https://github.com/nvidia/cosmos
 - White paper técnico: https://research.nvidia.com/labs/cosmos-lab/cosmos3/technical-report.pdf
 - Web del proyecto: https://research.nvidia.com/labs/cosmos-lab/cosmos3/

@@ -18,7 +18,7 @@ Es relevante ahora porque demuestra que un adaptador de bajo rango sobre un mode
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | penn-academic-software-license (licencia "other" en HuggingFace) |
+| Licencia | penn-academic-software-license (licencia "other" en Hugging Face) |
 | Formato de pesos | safetensors (adaptador LoRA) |
 | Modelo base | moonshotai/Kimi-K2.6 |
 | Version | 1.3 |
@@ -83,7 +83,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de gr
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhihuanglab/pathcowork-grounder-pro-1T
+- Hugging Face: https://huggingface.co/zhihuanglab/pathcowork-grounder-pro-1T
 - Modelo base: https://huggingface.co/moonshotai/Kimi-K2.6
-- Licencia: LICENSE (referenciado en el repositorio de HuggingFace)
+- Licencia: LICENSE (referenciado en el repositorio de Hugging Face)
 - Papers, blogs, repos y demos adicionales: no disponibles en la informacion proporcionada.

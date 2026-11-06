@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`hasong88/cs229-contrastive12` es un prototipo de investigación publicado en HuggingFace por el usuario `hasong88`, aparentemente en el contexto de un trabajo de curso (el identificador `cs229` remite al curso de machine learning de Stanford). Se trata de una implementación personalizada de una red Swin Transformer de escala "small" (Swin T) orientada a aprendizaje contrastivo, con atención dilatada y fusión tipo Tucker. No es un modelo entrenado ni evaluado: el propio autor lo describe como un punto de partida experimental cuyo `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (*smoke tests*).
+`hasong88/cs229-contrastive12` es un prototipo de investigación publicado en Hugging Face por el usuario `hasong88`, aparentemente en el contexto de un trabajo de curso (el identificador `cs229` remite al curso de machine learning de Stanford). Se trata de una implementación personalizada de una red Swin Transformer de escala "small" (Swin T) orientada a aprendizaje contrastivo, con atención dilatada y fusión tipo Tucker. No es un modelo entrenado ni evaluado: el propio autor lo describe como un punto de partida experimental cuyo `model.safetensors` es únicamente un checkpoint de inicialización válido para pruebas de humo (*smoke tests*).
 
-El repositorio no publica métricas de rendimiento, no declara un pipeline de HuggingFace, no documenta idiomas soportados (es un modelo de visión, no de lenguaje) y no incluye un conjunto de datos de entrenamiento asociado. Su relevancia actual es, por tanto, limitada y de carácter didáctico o de andamiaje: sirve como plantilla reproducible para experimentos contrastivos con arquitecturas Swin, no como componente listo para producción.
+El repositorio no publica métricas de rendimiento, no declara un pipeline de Hugging Face, no documenta idiomas soportados (es un modelo de visión, no de lenguaje) y no incluye un conjunto de datos de entrenamiento asociado. Su relevancia actual es, por tanto, limitada y de carácter didáctico o de andamiaje: sirve como plantilla reproducible para experimentos contrastivos con arquitecturas Swin, no como componente listo para producción.
 
 El interés técnico reside en la combinación inusual de decisiones de diseño —atención dilatada, fusión Tucker, normalización RMSNorm y activación GELU— dentro de una columna vertebral Swin, junto con una receta de entrenamiento por defecto (RMSProp con *schedule* polinómico) documentada explícitamente como valores iniciales y no como evidencia de un entrenamiento completado.
 
@@ -77,7 +77,7 @@ La información proporcionada no incluye comparaciones con otros modelos, y los 
 
 | Modelo | Tipo | Parametros | Contexto / entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hasong88/cs229-contrastive12 | Swin T contrastivo (prototipo) | 16,576 (unidad no especificada) | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| hasong88/cs229-contrastive12 | Swin T contrastivo (prototipo) | 16,576 (unidad no especificada) | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Swin-T original (Microsoft) | Clasificación de imagen | ~28 M (referencia general, no verificada aquí) | 224x224 típico | MIT | Ampliamente disponible |
 | CLIP ViT-B/32 (OpenAI) | Vision-lenguaje contrastivo | ~151 M (referencia general, no verificada aquí) | 224x224 típico | Licencia propia de OpenAI | Ampliamente disponible |
 | DINOv2 ViT-S/14 (Meta) | Autosupervisado contrastivo/distilación | ~21 M (referencia general, no verificada aquí) | 518x518 típico | Apache 2.0 | Ampliamente disponible |
@@ -93,14 +93,14 @@ Advertencia: el único modelo con datos verificados en esta ficha es el primero.
 - Riesgo de alucinación: no aplica en el sentido generativo, pero existe un riesgo análogo de sobreinterpretar las salidas del modelo como si fueran representaciones aprendidas.
 - Limitaciones de contexto e idioma: no se declara resolución de entrada, tamaño de ventana de atención ni idiomas; el modelo no procesa texto.
 - Restricciones de licencia: Apache 2.0 permite uso comercial, pero la model card advierte de que los términos de los datos de origen deben revisarse por separado si se usa con conjuntos de datos externos. Es responsabilidad del usuario verificar la licencia de las imágenes de entrenamiento.
-- Caveat para producción: es una implementación personalizada; las APIs genéricas de carga de HuggingFace requieren un adaptador explícito, lo que añade trabajo de integración y mantenimiento.
+- Caveat para producción: es una implementación personalizada; las APIs genéricas de carga de Hugging Face requieren un adaptador explícito, lo que añade trabajo de integración y mantenimiento.
 - El autor recomienda entrenar todos los *baselines* con la misma exposición de datos, presupuesto de ajuste y semillas aleatorias, y conservar los registros de entrenamiento y las versiones del entorno con cualquier resultado publicado.
 - Tamaño de repositorio de 0.0 GB y ausencia de descargas y likes: indicios de un artefacto recién creado y sin validación por parte de la comunidad.
 - Los resultados de la búsqueda web asociados a esta consulta son completamente irrelevantes para el modelo y no deben tomarse como fuentes.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hasong88/cs229-contrastive12
+- Modelo en Hugging Face: https://huggingface.co/hasong88/cs229-contrastive12
 - Archivos del repositorio: `run.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog o repositorio adicional: no disponible
 - Demo: no disponible

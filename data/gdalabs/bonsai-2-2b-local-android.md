@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Bonsai-2-2B-Local-Android es un modelo publicado en HuggingFace por el usuario GDALabs bajo el identificador GDALabs/Bonsai-2-2B-Local-Android. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia Apache-2.0, region "us", 0 descargas y 0 "likes", con fecha de creacion y de ultima actualizacion identicas (17 de octubre de 2026, tal como figuran en la ficha de HuggingFace). La model card no contiene mas que el campo de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
+Bonsai-2-2B-Local-Android es un modelo publicado en Hugging Face por el usuario GDALabs bajo el identificador GDALabs/Bonsai-2-2B-Local-Android. La informacion disponible en el momento de redactar esta ficha se limita a los metadatos del repositorio: licencia Apache-2.0, region "us", 0 descargas y 0 "likes", con fecha de creacion y de ultima actualizacion identicas (17 de octubre de 2026, tal como figuran en la ficha de Hugging Face). La model card no contiene mas que el campo de licencia, sin descripcion, arquitectura, datos de entrenamiento ni instrucciones de uso.
 
 A partir de la nomenclatura del identificador puede inferirse que se trata de la segunda iteracion de una familia denominada Bonsai, con un tamano en torno a los 2.000 millones de parametros y orientada a ejecucion local en dispositivos Android. Es importante subrayar que esta lectura procede unicamente del nombre del repositorio y no esta confirmada por ninguna declaracion del autor en la informacion disponible.
 
@@ -101,6 +101,6 @@ La comparacion directa de rendimiento no es posible: no existen cifras de Bonsai
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android
-- Perfil del autor en HuggingFace: https://huggingface.co/GDALabs
+- Hugging Face: https://huggingface.co/GDALabs/Bonsai-2-2B-Local-Android
+- Perfil del autor en Hugging Face: https://huggingface.co/GDALabs
 - Papers, blogs, repositorios o demos: no disponible en la informacion proporcionada.

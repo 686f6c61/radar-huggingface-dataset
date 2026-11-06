@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Fikra Model 1 2B | 5,12 mil millones (safetensors) | no disponible | en, sw | zabibu-technika-license | HuggingFace, GGUF comunitario |
-| Gemma 4 E2B IT (base) | no disponible en la informacion | no disponible | multilingue (segun Gemma) | Gemma license | HuggingFace, Unsloth |
+| Fikra Model 1 2B | 5,12 mil millones (safetensors) | no disponible | en, sw | zabibu-technika-license | Hugging Face, GGUF comunitario |
+| Gemma 4 E2B IT (base) | no disponible en la informacion | no disponible | multilingue (segun Gemma) | Gemma license | Hugging Face, Unsloth |
 | Alternativas de ~2-5B con soporte de suajili | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la informacion proporcionada.
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zabibutechnika/Fikra-Model-1-2B
+- Modelo en Hugging Face: https://huggingface.co/zabibutechnika/Fikra-Model-1-2B
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e2b-it-unsloth-bnb-4bit
 - Quants de la comunidad (mradermacher): https://huggingface.co/mradermacher/Zabibu-Fikra-2B-GGUF
 - Informe de cuantizacion: https://hf.tst.eu/model#Zabibu-Fikra-2B-GGUF

@@ -4,7 +4,7 @@
 
 `teacher_wavlm_lr1e3` es un checkpoint publicado por el usuario VoiceNetCkpt dentro de la serie de experimentos VoiceCLAP. La model card lo describe como «Training run from the VoiceCLAP experiments: final weights plus the run's configs and evaluation results. Intermediate epochs, optimizer state and logs are not included». Es decir, no se trata de un modelo independiente con objetivo propio, sino del artefacto final de una ejecución de entrenamiento concreta: pesos finales, ficheros de configuración y resultados de evaluación, sin estados intermedios de épocas, estados del optimizador ni registros.
 
-El repositorio ocupa 1,3 GB y contiene 6 ficheros, entre ellos `best.pt`. El identificador del checkpoint sugiere un componente de tipo WavLM empleado como «teacher» (modelo profesor) y una tasa de aprendizaje de 1e-3, pero la model card no confirma arquitectura, tamaño de parámetros, idiomas ni licencia. Tampoco se documenta una pipeline de HuggingFace asociada, y el repositorio acumula 0 descargas y 0 «likes», por lo que se trata de material de investigación recién publicado y sin validación comunitaria.
+El repositorio ocupa 1,3 GB y contiene 6 ficheros, entre ellos `best.pt`. El identificador del checkpoint sugiere un componente de tipo WavLM empleado como «teacher» (modelo profesor) y una tasa de aprendizaje de 1e-3, pero la model card no confirma arquitectura, tamaño de parámetros, idiomas ni licencia. Tampoco se documenta una pipeline de Hugging Face asociada, y el repositorio acumula 0 descargas y 0 «likes», por lo que se trata de material de investigación recién publicado y sin validación comunitaria.
 
 Su relevancia es, por tanto, la de un artefacto reproducible para quien quiera auditar o reutilizar el experimento VoiceCLAP: permite recuperar los pesos finales de una ejecución concreta y sus configuraciones. No es un modelo listo para despliegue en producción ni un paquete autodescriptivo con garantías de uso, y así debe tratarse.
 
@@ -21,7 +21,7 @@ Su relevancia es, por tanto, la de un artefacto reproducible para quien quiera a
 | Formato de pesos | PyTorch (`best.pt`); el repositorio contiene 6 ficheros y 1,3 GB en total |
 | Tamano del repositorio | 1,3 GB |
 | Numero de ficheros | 6 |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-11 |
 | Ultima actualizacion | 2026-10-11 |
 
@@ -91,6 +91,6 @@ No se dispone de datos confirmados de arquitectura, parametros, contexto ni rend
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/VoiceNetCkpt/teacher_wavlm_lr1e3
+- Repositorio en Hugging Face: https://huggingface.co/VoiceNetCkpt/teacher_wavlm_lr1e3
 - Indice de ejecuciones VoiceCLAP: https://huggingface.co/VoiceNetCkpt/voiceclap-checkpoints-index
 - Paper, blog, repositorio de codigo o demo: no disponible

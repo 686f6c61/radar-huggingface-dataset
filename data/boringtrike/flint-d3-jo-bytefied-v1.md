@@ -74,5 +74,5 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/boringtrike/flint-d3-jo-bytefied-v1
+- Modelo en Hugging Face: https://huggingface.co/boringtrike/flint-d3-jo-bytefied-v1
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

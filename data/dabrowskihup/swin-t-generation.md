@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dabrowskihup/swin-t-generation` es un repositorio de HuggingFace publicado por el usuario dabrowskihup que contiene una implementacion compacta en PyTorch de una arquitectura denominada Swin T orientada a tareas de generacion. Segun la propia model card, no se trata de un modelo preentrenado listo para produccion, sino de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida, no como un modelo entrenado ni evaluado.
+`dabrowskihup/swin-t-generation` es un repositorio de Hugging Face publicado por el usuario dabrowskihup que contiene una implementacion compacta en PyTorch de una arquitectura denominada Swin T orientada a tareas de generacion. Segun la propia model card, no se trata de un modelo preentrenado listo para produccion, sino de un artefacto pensado para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequeno alcance. El checkpoint `model.safetensors` se describe explicitamente como una inicializacion valida, no como un modelo entrenado ni evaluado.
 
 El peso real declarado en el archivo safetensors es de 49.600 parametros totales, una cifra extremadamente baja para cualquier transformer, lo que confirma su naturaleza de esqueleto experimental. La model card indica que la configuracion incluida corresponde a la escala "small" y describe una atencion dilatada, fusion de tensores, activacion gelu tanh y normalizacion rmsnorm. No se declara ninguna puntuacion de benchmark, ni idiomas soportados, ni contexto maximo.
 
@@ -74,11 +74,11 @@ No disponible. La informacion proporcionada no incluye resultados ni especificac
 - Riesgo de alucinacion: no evaluable en un checkpoint sin entrenar, pero cualquier uso generativo exigiria validacion propia.
 - Sesgos conocidos: no documentados, lo que no implica su ausencia.
 - Licencia bsd-3-clause: permisiva y compatible con uso comercial, pero el autor advierte de que deben revisarse por separado los terminos de los datos de origen si se usa con conjuntos de datos externos.
-- Implementacion personalizada: las APIs de carga automatica de HuggingFace requieren un adaptador explicito, lo que complica su integracion en herramientas estandar.
+- Implementacion personalizada: las APIs de carga automatica de Hugging Face requieren un adaptador explicito, lo que complica su integracion en herramientas estandar.
 - Metricas de adopcion nulas (0 descargas, 0 likes): no hay comunidad que haya validado el artefacto.
 - Cualquier resultado obtenido con un futuro checkpoint entrenado debe documentarse por separado de los valores por defecto aqui publicados.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dabrowskihup/swin-t-generation
+- Repositorio en Hugging Face: https://huggingface.co/dabrowskihup/swin-t-generation
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante relacionado con el modelo.

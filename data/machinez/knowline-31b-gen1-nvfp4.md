@@ -2,7 +2,7 @@
 
 ## Resumen
 
-KnowLine-31B-Gen1 es un modelo de decisión de tipo "System One" desarrollado por PelaAI (publicado en HuggingFace bajo la cuenta `machinez`), construido sobre el modelo denso `google/gemma-4-31B-it`. No es un modelo generativo al uso: recibe un estado (texto o conversación) y hasta 64 preguntas tipadas (sí/no, elegir una entre k opciones, o puntuar según una rúbrica) y devuelve, para cada pregunta, una distribución de probabilidad sobre sus opciones en un único forward pass, sin generar texto. Está afinado con LoRA SFT (rango 32, alpha 64) sobre el modelo de lenguaje, fusionado en bf16 y posteriormente promediado con el modelo base (0,75 × afinado + 0,25 × Gemma 4).
+KnowLine-31B-Gen1 es un modelo de decisión de tipo "System One" desarrollado por PelaAI (publicado en Hugging Face bajo la cuenta `machinez`), construido sobre el modelo denso `google/gemma-4-31B-it`. No es un modelo generativo al uso: recibe un estado (texto o conversación) y hasta 64 preguntas tipadas (sí/no, elegir una entre k opciones, o puntuar según una rúbrica) y devuelve, para cada pregunta, una distribución de probabilidad sobre sus opciones en un único forward pass, sin generar texto. Está afinado con LoRA SFT (rango 32, alpha 64) sobre el modelo de lenguaje, fusionado en bf16 y posteriormente promediado con el modelo base (0,75 × afinado + 0,25 × Gemma 4).
 
 La versión publicada aquí, `KnowLine-31B-Gen1-NVFP4`, es una cuantización NVFP4 de los pesos: los 410 lineales del decodificador usan pesos E2M1 empaquetados con una escala E4M3 por cada 16 valores y escalas globales FP32, mientras que la torre de visión, el proyector, los embeddings, las normas y la cabeza LM permanecen en BF16. El modelo conserva la torre de visión del base aunque fue entrenado solo con texto, lo que le permite responder preguntas sobre imágenes de forma zero-shot.
 
@@ -85,9 +85,9 @@ Resultados publicados por el autor (autoejecutados, lectura doble):
 
 | Modelo | Parámetros | Contexto | Decision Index 0.3 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KnowLine-31B-Gen1 | ~19,9B (denso) | no disponible | 70,13 | Apache-2.0 | HuggingFace (bf16 y NVFP4) |
-| KnowLine-26B-A4B-Gen2.5 | MoE (26B totales, 4B activos) | no disponible | 68,21 | no disponible en la información | HuggingFace (PelaAI) |
-| KnowLine-35B-A3B-Gen1.5 | MoE (35B totales, 3B activos) | no disponible | 70,72 | no disponible en la información | HuggingFace (PelaAI) |
+| KnowLine-31B-Gen1 | ~19,9B (denso) | no disponible | 70,13 | Apache-2.0 | Hugging Face (bf16 y NVFP4) |
+| KnowLine-26B-A4B-Gen2.5 | MoE (26B totales, 4B activos) | no disponible | 68,21 | no disponible en la información | Hugging Face (PelaAI) |
+| KnowLine-35B-A3B-Gen1.5 | MoE (35B totales, 3B activos) | no disponible | 70,72 | no disponible en la información | Hugging Face (PelaAI) |
 | StartLux-Decision-35B-A3B | MoE (35B totales, 3B activos) | no disponible | no disponible | no disponible | Referenciado en el harness KOF '98 |
 
 ## Limitaciones y advertencias
@@ -104,7 +104,7 @@ Resultados publicados por el autor (autoejecutados, lectura doble):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/machinez/KnowLine-31B-Gen1-NVFP4
+- Hugging Face: https://huggingface.co/machinez/KnowLine-31B-Gen1-NVFP4
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Guía de inferencia: INFERENCE.md (referenciada en la model card, dentro del repo)
 - README en chino: README.zh.md (dentro del repo)

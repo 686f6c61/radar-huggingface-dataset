@@ -84,7 +84,7 @@ La comparativa se limita a especificaciones de arquitectura y licencia, ya que n
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/rico03/Qwen3.8-27B-Claude-Opus-Reasoning-Distilled-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/rico03/Qwen3.8-27B-Claude-Opus-Reasoning-Distilled-GGUF
 - Modelo LoRA base (antes de cuantización): https://huggingface.co/rico03/Qwen3.8-27B-Claude-Opus-Reasoning-Distilled
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset lordx64/reasoning-distill-claude-opus-4-7-max: https://huggingface.co/datasets/lordx64/reasoning-distill-claude-opus-4-7-max

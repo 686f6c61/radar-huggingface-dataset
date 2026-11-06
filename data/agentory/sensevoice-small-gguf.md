@@ -93,7 +93,7 @@ La comparación se limita a los modelos mencionados en la model card. No se disp
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/agentory/sensevoice-small-GGUF
+- Repositorio Hugging Face de la conversión: https://huggingface.co/agentory/sensevoice-small-GGUF
 - Modelo original: https://huggingface.co/FunAudioLLM/SenseVoiceSmall
 - Licencia del modelo original: https://huggingface.co/FunAudioLLM/SenseVoiceSmall/blob/main/LICENSE
 - Runtime CrispASR: https://github.com/CrispStrobe/CrispASR

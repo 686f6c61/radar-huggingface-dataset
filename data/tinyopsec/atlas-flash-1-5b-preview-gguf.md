@@ -6,7 +6,7 @@ Atlas-Flash-1.5B-Preview-GGUF es una publicacion de cuantizaciones GGUF del mode
 
 La relevancia de esta publicacion es practica: ofrece trece variantes de cuantizacion (desde F16 hasta Q2_K) en un unico repositorio de 17,5 GB, lo que permite elegir el equilibrio entre calidad y huella de memoria segun el hardware disponible. Al estar etiquetado como `endpoints_compatible` y `conversational`, esta pensado para su uso en pipelines de generacion de texto conversacional, aunque no se aportan detalles sobre el entrenamiento, los datos utilizados ni el rendimiento del modelo base.
 
-La informacion publicada es muy limitada: no hay resultados de benchmarks, no se especifican idiomas soportados, no se documenta la longitud de contexto y el repositorio no registra descargas ni interacciones en el momento de la consulta. Esta ficha recoge exclusivamente los datos verificables de la model card y de los metadatos de HuggingFace, marcando como "no disponible" todo aquello que el autor no ha documentado.
+La informacion publicada es muy limitada: no hay resultados de benchmarks, no se especifican idiomas soportados, no se documenta la longitud de contexto y el repositorio no registra descargas ni interacciones en el momento de la consulta. Esta ficha recoge exclusivamente los datos verificables de la model card y de los metadatos de Hugging Face, marcando como "no disponible" todo aquello que el autor no ha documentado.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Atlas-Flash-1.5B-Preview-GGUF | 1,78 B | no disponible | MIT | GGUF | Cuantizaciones de un modelo base Qwen2 sin benchmarks publicados |
 | Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (segun documentacion publica de Qwen) | Apache 2.0 | safetensors, GGUF | Modelo oficial con benchmarks publicados y amplio soporte de herramientas |
 | Llama 3.2 1B Instruct | 1,24 B | 128.000 tokens (segun documentacion publica de Meta) | Llama 3.2 Community License | safetensors, GGUF | Modelo oficial con evaluaciones publicadas y ecosistema maduro |
-| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (segun documentacion publica de HuggingFace) | Apache 2.0 | safetensors, GGUF | Alternativa pequena con benchmarks y cuantizaciones oficiales |
+| SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens (segun documentacion publica de Hugging Face) | Apache 2.0 | safetensors, GGUF | Alternativa pequena con benchmarks y cuantizaciones oficiales |
 
 La comparativa se limita a datos publicos de los modelos alternativos; para Atlas-Flash no hay contexto ni benchmarks documentados, por lo que la comparacion de rendimiento no es posible.
 

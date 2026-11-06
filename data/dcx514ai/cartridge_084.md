@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cartridge_084 es un modelo de generacion de texto publicado en HuggingFace por el usuario dcx514ai, con pipeline declarado de text-generation y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa 0,5 GB y sus pesos se distribuyen en formato safetensors. La fecha de creacion y ultima actualizacion registrada es el 13 de septiembre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que se trata de un artefacto practicamente sin adopcion publica ni validacion por parte de la comunidad.
+Cartridge_084 es un modelo de generacion de texto publicado en Hugging Face por el usuario dcx514ai, con pipeline declarado de text-generation y acceso restringido (gated), lo que obliga a aceptar condiciones en la plataforma antes de poder descargarlo. El repositorio ocupa 0,5 GB y sus pesos se distribuyen en formato safetensors. La fecha de creacion y ultima actualizacion registrada es el 13 de septiembre de 2026, y en el momento de redactar esta ficha acumula 0 descargas y 0 likes, por lo que se trata de un artefacto practicamente sin adopcion publica ni validacion por parte de la comunidad.
 
 Las etiquetas asociadas al modelo (semi-plastic, fast-weights, hypernetwork, micro-lora, mrl, zero-shot, cognitive-architecture) apuntan a un diseno orientado a la adaptacion modular: un modulo base de generacion de texto combinado con hiperredes que generarian pesos rapidos o adaptadores de tipo micro-LoRA. Se trata, por tanto, de una propuesta de "arquitectura cognitiva" mas que de un LLM convencional entrenado de extremo a extremo. No obstante, la informacion publica disponible no confirma la implementacion concreta ni aporta detalles sobre el entrenamiento.
 
@@ -68,7 +68,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 - Ausencia total de benchmarks: no hay evidencia publica de rendimiento en ninguna tarea.
 - Sin adopcion ni validacion comunitaria: 0 descargas y 0 likes en el momento de la consulta.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que limita la reproducibilidad.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que limita la reproducibilidad.
 - Documentacion tecnica inexistente en la informacion disponible: se desconocen arquitectura exacta, contexto, datos de entrenamiento y proceso de ajuste.
 - Riesgo de alucinacion: no evaluado; se desconoce el comportamiento del modelo en tareas factuales.
 - Cobertura idiomatica limitada: solo turco e ingles declarados, sin datos sobre calidad relativa entre ambos.
@@ -78,5 +78,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dcx514ai/Cartridge_084
+- Modelo en Hugging Face: https://huggingface.co/dcx514ai/Cartridge_084
 - Resultados de la busqueda web: las consultas realizadas no devolvieron informacion relevante sobre el modelo; los resultados obtenidos correspondian a generadores de numeros de tarjeta de credito y no guardan relacion con Cartridge_084, por lo que no se incluyen como fuentes.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `IndiAI-Official/AI-Study-Partner` está publicado en HuggingFace por la organización IndiAI-Official, que opera en el ecosistema de soluciones de IA generativa para India. El nombre del repositorio sugiere una orientación educativa, posiblemente un asistente de estudio, pero la model card publicada no contiene ninguna información técnica más allá de la licencia Apache 2.0. No se especifican arquitectura, tamaño, contexto ni capacidades.
+El modelo `IndiAI-Official/AI-Study-Partner` está publicado en Hugging Face por la organización IndiAI-Official, que opera en el ecosistema de soluciones de IA generativa para India. El nombre del repositorio sugiere una orientación educativa, posiblemente un asistente de estudio, pero la model card publicada no contiene ninguna información técnica más allá de la licencia Apache 2.0. No se especifican arquitectura, tamaño, contexto ni capacidades.
 
 El modelo fue creado el 21 de agosto de 2026 y no registra descargas ni valoraciones. La ausencia total de documentación técnica, ejemplos de uso o resultados de evaluación hace imposible determinar su funcionamiento real. Cualquier despliegue en producción requeriría contactar directamente con el autor para obtener especificaciones. La relevancia actual del modelo es limitada dado que no existe información pública que permita evaluarlo.
 
@@ -52,7 +52,7 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación técnica: la model card no contiene información sobre arquitectura, datos de entrenamiento, capacidades ni limitaciones.
-- Sin historial de uso: cero descargas y cero valoraciones en HuggingFace, lo que indica que el modelo no ha sido probado por la comunidad.
+- Sin historial de uso: cero descargas y cero valoraciones en Hugging Face, lo que indica que el modelo no ha sido probado por la comunidad.
 - Riesgo de sesgos desconocido: al no publicarse información sobre los datos de entrenamiento, no es posible evaluar sesgos potenciales.
 - Riesgo de alucinación no evaluado: sin benchmarks ni evaluaciones, el comportamiento del modelo en producción es impredecible.
 - Licencia Apache 2.0: permite uso comercial, modificación y redistribución, pero no exime de responsabilidad sobre el contenido generado.
@@ -61,6 +61,6 @@ No disponible. Al carecer de especificaciones técnicas, no es posible establece
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/IndiAI-Official/AI-Study-Partner
+- Repositorio Hugging Face: https://huggingface.co/IndiAI-Official/AI-Study-Partner
 - Sitio web de IndiAI: https://indiai.co/
 - Portal nacional de IA de India: https://indiaai.gov.in/

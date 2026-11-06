@@ -76,11 +76,11 @@ La principal diferencia frente a `openai/whisper-base` es el entrenamiento espec
 
 ## Enlaces
 
-- [HuggingFace - FredrikKarlssonSpeech/nb-whisper-base-mlx](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-mlx)
-- [HuggingFace - NbAiLab/nb-whisper-base (modelo original)](https://huggingface.co/NbAiLab/nb-whisper-base)
+- [Hugging Face - FredrikKarlssonSpeech/nb-whisper-base-mlx](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-mlx)
+- [Hugging Face - NbAiLab/nb-whisper-base (modelo original)](https://huggingface.co/NbAiLab/nb-whisper-base)
 - [GitHub - NbAiLab/nb-whisper (código de entrenamiento)](https://github.com/NbAiLab/nb-whisper)
 - [GitHub - mlx-whisper (herramienta de inferencia)](https://github.com/ml-explore/mlx-examples/tree/main/whisper)
-- [HuggingFace - FredrikKarlssonSpeech/nb-whisper-base-onnx (conversión ONNX)](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-onnx)
-- [HuggingFace - FredrikKarlssonSpeech/nb-whisper-large-onnx (conversión ONNX del modelo large)](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx)
+- [Hugging Face - FredrikKarlssonSpeech/nb-whisper-base-onnx (conversión ONNX)](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-base-onnx)
+- [Hugging Face - FredrikKarlssonSpeech/nb-whisper-large-onnx (conversión ONNX del modelo large)](https://huggingface.co/FredrikKarlssonSpeech/nb-whisper-large-onnx)
 - [ModelScope - nb-whisper-base ONNX](https://www.modelscope.cn/models/onnx-community/nb-whisper-base-ONNX/summary)
 - [GitHub - OpenAI Whisper (modelo original)](https://github.com/openai/whisper)

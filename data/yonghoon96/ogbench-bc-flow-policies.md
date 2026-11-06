@@ -69,7 +69,7 @@ No se dispone de información sobre modelos comparables en el mismo formato (pol
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/yonghoon96/ogbench-bc-flow-policies
+- Repositorio de Hugging Face: https://huggingface.co/yonghoon96/ogbench-bc-flow-policies
 - Repositorio de OGBench en GitHub: https://github.com/seohongpark/ogbench
 - Página del proyecto OGBench: https://seohong.me/projects/ogbench/
 - Blog sobre behavior cloning: https://seohong.me/blog/behavioral-cloning-mystery/

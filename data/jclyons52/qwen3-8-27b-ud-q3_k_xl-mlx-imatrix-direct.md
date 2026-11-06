@@ -89,7 +89,7 @@ La comparativa muestra que esta cuantizacion MLX iguala la perplejidad de la ver
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q3_K_XL-MLX-imatrix-direct
+- Repositorio Hugging Face: https://huggingface.co/jclyons52/Qwen3.8-27B-UD-Q3_K_XL-MLX-imatrix-direct
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Version GGUF de unsloth: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

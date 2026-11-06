@@ -66,6 +66,6 @@ No disponible. No se proporcionan datos de rendimiento ni se mencionan modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h062.sft-solved.step_80
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h062.sft-solved.step_80
 - Modelo base: Qwen/Qwen3.5-9B-Base (no se proporciona enlace directo)
 - Se menciona un índice `agentic-ptb/INDEX` en la model card, pero no se incluye su URL.

@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aixk/BAAR3-guard
+- Modelo en Hugging Face: https://huggingface.co/aixk/BAAR3-guard
 
 No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

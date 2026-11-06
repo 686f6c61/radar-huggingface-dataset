@@ -38,7 +38,7 @@ No se proporciona información sobre el proceso de entrenamiento: no hay datos s
 ## Casos de uso
 
 - Pruebas de humo en desarrollo: el checkpoint de inicialización permite verificar que el pipeline de carga, forward y guardado funciona correctamente antes de entrenar un modelo real.
-- Desarrollo de adaptadores de carga: al ser una implementación personalizada, sirve como banco de pruebas para escribir adaptadores que permitan cargar el modelo con APIs genéricas como HuggingFace Transformers.
+- Desarrollo de adaptadores de carga: al ser una implementación personalizada, sirve como banco de pruebas para escribir adaptadores que permitan cargar el modelo con APIs genéricas como Hugging Face Transformers.
 - Investigación de arquitecturas Beit modificadas: los componentes de atención deslizante y co-atención pueden estudiarse en un entorno de bajo coste computacional gracias al tamaño minúsculo del modelo.
 - Validación de recetas de entrenamiento: el script y la configuración permiten lanzar experimentos de entrenamiento con RMSprop y schedule exponencial para comparar con otras configuraciones.
 - Educación y prototipado rápido: útil para estudiantes o investigadores que quieran entender el flujo completo de un modelo de generación desde cero, sin necesidad de recursos de hardware elevados.
@@ -71,5 +71,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sbynu-groho/generation11-2023
+- Repositorio Hugging Face: https://huggingface.co/sbynu-groho/generation11-2023
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

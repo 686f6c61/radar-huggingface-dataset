@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lm-kit/gemma-4-e4b-instruct-lmk` es un modelo conversacional publicado en HuggingFace por el usuario u organizacion `lm-kit`. Se distribuye bajo licencia Apache 2.0 y su repositorio, de 36,3 GB, incluye pesos en formato GGUF, segun las etiquetas del propio repositorio. El recuento de parametros reportado en los metadatos de safetensors es de 7.518.069.290 parametros (aproximadamente 7,5 mil millones).
+El modelo `lm-kit/gemma-4-e4b-instruct-lmk` es un modelo conversacional publicado en Hugging Face por el usuario u organizacion `lm-kit`. Se distribuye bajo licencia Apache 2.0 y su repositorio, de 36,3 GB, incluye pesos en formato GGUF, segun las etiquetas del propio repositorio. El recuento de parametros reportado en los metadatos de safetensors es de 7.518.069.290 parametros (aproximadamente 7,5 mil millones).
 
 El identificador del modelo sugiere, por su nomenclatura, una posible variante de la familia Gemma con un esquema de nombres del tipo "E4B", pero la model card publicada unicamente contiene la declaracion de licencia Apache 2.0: no hay documentacion que confirme la arquitectura, los datos de entrenamiento, la longitud de contexto, los idiomas soportados ni la relacion oficial con dicha familia. Tampoco se han encontrado resultados de benchmarks ni documentacion tecnica en la busqueda web realizada.
 
@@ -25,7 +25,7 @@ Otros metadatos del repositorio:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | `lm-kit/gemma-4-e4b-instruct-lmk` |
+| ID en Hugging Face | `lm-kit/gemma-4-e4b-instruct-lmk` |
 | Autor | `lm-kit` |
 | Etiquetas | `gguf`, `license:apache-2.0`, `endpoints_compatible`, `region:us`, `conversational` |
 | Pipeline declarado | no disponible |
@@ -89,7 +89,7 @@ No disponible. La informacion proporcionada no identifica la familia arquitecton
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| `lm-kit/gemma-4-e4b-instruct-lmk` | 7,5 B (reportado) | no disponible | Apache 2.0 | HuggingFace, 83 descargas | no disponible |
+| `lm-kit/gemma-4-e4b-instruct-lmk` | 7,5 B (reportado) | no disponible | Apache 2.0 | Hugging Face, 83 descargas | no disponible |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -106,7 +106,7 @@ No disponible. La informacion proporcionada no identifica la familia arquitecton
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lm-kit/gemma-4-e4b-instruct-lmk
+- Repositorio en Hugging Face: https://huggingface.co/lm-kit/gemma-4-e4b-instruct-lmk
 - Resultados de busqueda web consultados (sin relacion con el modelo):
   - https://lmstudio.ai/
   - https://lmstudio.ai/download

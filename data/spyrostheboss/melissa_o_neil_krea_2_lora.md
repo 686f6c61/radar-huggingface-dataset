@@ -71,6 +71,6 @@ No se dispone de informacion sobre otros LoRA de personaje para Krea 2 con los q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/spyrostheboss/Melissa_O_Neil_Krea_2_LoRA
+- Repositorio Hugging Face: https://huggingface.co/spyrostheboss/Melissa_O_Neil_Krea_2_LoRA
 - Repositorio de entrenamiento de LoRA de personaje para Krea 2 (referencia): https://github.com/bongobongo2020/krea2-character-lora-trainer
 - Biblioteca de modelos de Krea (referencia general): https://www.krea.ai/models

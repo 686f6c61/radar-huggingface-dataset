@@ -66,4 +66,4 @@ No disponible. No se proporcionan modelos comparables en la información facilit
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ftschneider/beit-checkpoint
+- Hugging Face: https://huggingface.co/ftschneider/beit-checkpoint

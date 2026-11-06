@@ -2,7 +2,7 @@
 
 ## Resumen
 
-dfreq-sock-hierarchical-speed-20261102 es una política de control para robótica (locomoción de un cuadrúpedo virtual) publicada por el usuario djduecaster en HuggingFace. Se enmarca en el entorno de investigación `sock-heist-6m` y se distribuye como un artefacto ONNX de tipo "neural commander" que envuelve una base de marcha preexistente, ajustando intenciones motoras como peticiones de avance, giro, pitch virtual, amplitud de patas y una postura de agachado ("red-light crouch"). El modelo consume observaciones float32 de forma `[1,61]` y emite acciones articulares `[1,14]` a 50 Hz.
+dfreq-sock-hierarchical-speed-20261102 es una política de control para robótica (locomoción de un cuadrúpedo virtual) publicada por el usuario djduecaster en Hugging Face. Se enmarca en el entorno de investigación `sock-heist-6m` y se distribuye como un artefacto ONNX de tipo "neural commander" que envuelve una base de marcha preexistente, ajustando intenciones motoras como peticiones de avance, giro, pitch virtual, amplitud de patas y una postura de agachado ("red-light crouch"). El modelo consume observaciones float32 de forma `[1,61]` y emite acciones articulares `[1,14]` a 50 Hz.
 
 El modelo no es un LLM ni un modelo de lenguaje: es una política de reinforcement learning (PPO con actualizaciones en MPS) entrenada sobre la física nativa de CPU Arena y servos BAM. Su relevancia es acotada y experimental: el autor reporta mejoras de velocidad frente a políticas anteriores (0,648 s de media más rápido en 256 arranques, y 0,760 s de mejora en tiempo penalizado por fallo frente a la política del 1 de noviembre), pero solo con evidencia de simulación y sin validación en hardware.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K, 
 
 | Modelo | Parámetros | Contexto / observación | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dfreq-sock-hierarchical-speed-20261102 | no disponible | 61 observaciones float32 → 14 acciones a 50 Hz | 256/256 finalizaciones; 0,648 s más rápido que la política previa | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
+| dfreq-sock-hierarchical-speed-20261102 | no disponible | 61 observaciones float32 → 14 acciones a 50 Hz | 256/256 finalizaciones; 0,648 s más rápido que la política previa | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
 | Política publicada el 1 de noviembre (mismo autor, `sock-heist-6m`) | no disponible | no disponible | 127/128 finalizaciones en comparación directa | no disponible | no disponible |
 | Política previa "learned commander" (mismo autor) | no disponible | no disponible | 256/256 finalizaciones; 0,648 s más lenta de media | no disponible | no disponible |
 
@@ -90,5 +90,5 @@ No se dispone de información sobre modelos comparables de otros autores en la m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/djduecaster/dfreq-sock-hierarchical-speed-20261102
+- Modelo en Hugging Face: https://huggingface.co/djduecaster/dfreq-sock-hierarchical-speed-20261102
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

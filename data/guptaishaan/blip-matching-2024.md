@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`guptaishaan/blip-matching-2024` es un repositorio de investigacion publicado en HuggingFace por el usuario `guptaishaan`, que se presenta como un prototipo de arquitectura Blip orientado a tareas de "matching" (emparejamiento) con una configuracion declarada de escala "giant". El repositorio incluye un script de Python (`inference.py`), un `config.json`, un `training_args.json` y un checkpoint `model.safetensors`, y se distribuye bajo licencia BSD-3-Clause.
+`guptaishaan/blip-matching-2024` es un repositorio de investigacion publicado en Hugging Face por el usuario `guptaishaan`, que se presenta como un prototipo de arquitectura Blip orientado a tareas de "matching" (emparejamiento) con una configuracion declarada de escala "giant". El repositorio incluye un script de Python (`inference.py`), un `config.json`, un `training_args.json` y un checkpoint `model.safetensors`, y se distribuye bajo licencia BSD-3-Clause.
 
 La propia model card advierte de que el checkpoint de `model.safetensors` es unicamente una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado, evaluado o auditado. El autor no reclama ninguna puntuacion de benchmark, y no se documentan datos de rendimiento, idiomas soportados ni pipeline de uso. El repositorio registra 0 descargas y 0 likes.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en `training_args.jso
 - Reproduccion de recetas de entrenamiento: `training_args.json` documenta una configuracion de SGD con schedule polinomial que puede tomarse como punto de partida para experimentos controlados con semillas y presupuesto de ajuste homogeneos.
 - Pruebas de integracion y smoke tests de pipelines: al ser un checkpoint de inicializacion valido, permite verificar que un pipeline carga pesos safetensors y ejecuta inferencia sin errores antes de sustituirlos por pesos reales.
 - Referencia para tareas de matching imagen-texto: dado el nombre del repositorio, puede servir como base conceptual para tareas de emparejamiento, aunque sin entrenamiento no produce resultados utiles.
-- Docencia y formacion: util para ilustrar la estructura de un repositorio de modelo en HuggingFace con config, args de entrenamiento y pesos.
+- Docencia y formacion: util para ilustrar la estructura de un repositorio de modelo en Hugging Face con config, args de entrenamiento y pesos.
 - No se recomienda su uso en escenarios de produccion, atencion al cliente, generacion de codigo ni ninguna tarea que requiera calidad de salida real, dada la ausencia de pesos entrenados y de evaluacion.
 
 ## Benchmarks y rendimiento
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| guptaishaan/blip-matching-2024 | 33.088 (recuento declarado) | no disponible | sin benchmarks publicados | bsd-3-clause | repositorio HuggingFace, 0 descargas |
+| guptaishaan/blip-matching-2024 | 33.088 (recuento declarado) | no disponible | sin benchmarks publicados | bsd-3-clause | repositorio Hugging Face, 0 descargas |
 | Familia CLIP (OpenAI) | no disponible | no disponible | no disponible | licencia propia (no verificada en esta ficha) | publica |
 | Familia BLIP / BLIP-2 | no disponible | no disponible | no disponible | no disponible | publica |
 
@@ -80,5 +80,5 @@ Dado que este repositorio no incluye pesos entrenados ni metricas, no es posible
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/guptaishaan/blip-matching-2024
+- Repositorio en Hugging Face: https://huggingface.co/guptaishaan/blip-matching-2024
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion proporcionada.

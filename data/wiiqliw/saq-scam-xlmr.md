@@ -101,7 +101,7 @@ No se dispone de comparaciones directas de rendimiento con otros clasificadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wiiqliw/saq-scam-xlmr
+- Modelo en Hugging Face: https://huggingface.co/wiiqliw/saq-scam-xlmr
 - Página del proyecto: https://dilya265.github.io/Saq/
 - Demo: https://dilya265.github.io/Saq/Сақ_%20хабарлама%20алаяқтық%20па_.html
 - Código: https://github.com/dilya265/Saq

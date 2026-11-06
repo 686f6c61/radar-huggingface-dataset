@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `GexSay/cookiesrednote` es un artefacto publicado en HuggingFace por el usuario GexSay el 13 de agosto de 2026, bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso; únicamente declara la licencia. No se dispone de información sobre el tipo de modelo (lenguaje, visión, multimodal), su tamaño, parámetros, contexto o idiomas soportados. Las descargas y "likes" son cero, lo que sugiere que se trata de una publicación reciente y sin adopción por parte de la comunidad.
+El modelo `GexSay/cookiesrednote` es un artefacto publicado en Hugging Face por el usuario GexSay el 13 de agosto de 2026, bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni ejemplos de uso; únicamente declara la licencia. No se dispone de información sobre el tipo de modelo (lenguaje, visión, multimodal), su tamaño, parámetros, contexto o idiomas soportados. Las descargas y "likes" son cero, lo que sugiere que se trata de una publicación reciente y sin adopción por parte de la comunidad.
 
 Dado que no existe documentación pública ni resultados de evaluación, este modelo no puede considerarse listo para uso en producción ni para investigación seria sin una verificación previa exhaustiva. La ausencia de metadatos técnicos y de un README sustancial hace imposible determinar su arquitectura, capacidades o limitaciones. Se recomienda encarecidamente a cualquier desarrollador o investigador que evite utilizarlo hasta que el autor publique información detallada o se realicen análisis independientes.
 
@@ -54,6 +54,6 @@ No disponible. No se puede comparar este modelo con ninguna alternativa porque s
 
 ## Enlaces
 
-- [Modelo en HuggingFace: GexSay/cookiesrednote](https://huggingface.co/GexSay/cookiesrednote)
-- [Perfil del autor en HuggingFace: GexSay](https://huggingface.co/GexSay)
+- [Modelo en Hugging Face: GexSay/cookiesrednote](https://huggingface.co/GexSay/cookiesrednote)
+- [Perfil del autor en Hugging Face: GexSay](https://huggingface.co/GexSay)
 - [Modelos publicados por GexSay](https://huggingface.co/GexSay/models) (se observan otros artefactos similares como `cookiesfacebook`, también sin documentación)

@@ -86,6 +86,6 @@ No se dispone de datos sobre otros ajustes finos comparables de OpenSCAD, ni de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v5
+- Modelo en Hugging Face: https://huggingface.co/ATinyGreenCell/scadcoder-qwen3.5-9b-v5
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio del benchmark y detalles de datos (sección 6.4): https://github.com/ATinyGreenCell/prompt-to-bench

@@ -94,7 +94,7 @@ No se dispone de informacion sobre otros modelos comparables en la busqueda real
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rkg209/qwen2.5-coder-1.5b-java-review-gguf
+- Modelo en Hugging Face: https://huggingface.co/rkg209/qwen2.5-coder-1.5b-java-review-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-1.5B-Instruct
 - Codigo fuente, prompt y harness de evaluacion: https://github.com/rahulyk09/3_LLM_from_scratch
 - Repositorio de llama.cpp (herramienta de conversion y cuantizacion, commit `4fea119`): https://github.com/ggerganov/llama.cpp

@@ -68,6 +68,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - hana1614/Ltx2.3-VBVR-lora-I2V](https://huggingface.co/hana1614/Ltx2.3-VBVR-lora-I2V)
+- [Hugging Face - hana1614/Ltx2.3-VBVR-lora-I2V](https://huggingface.co/hana1614/Ltx2.3-VBVR-lora-I2V)
 - [Licencia LTX-2 Community License Agreement](https://github.com/Lightricks/LTX-2/blob/main/LICENSE)
 - [Dataset VBVR - video-reason.com](https://video-reason.com/)

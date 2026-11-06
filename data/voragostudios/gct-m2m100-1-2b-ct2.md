@@ -83,7 +83,7 @@ La comparativa se limita a datos publicos de cada modelo; no se dispone de metri
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/VoragoStudios/gct-m2m100-1.2b-ct2
+- Repositorio Hugging Face: https://huggingface.co/VoragoStudios/gct-m2m100-1.2b-ct2
 - Modelo base: https://huggingface.co/facebook/m2m100_1.2B
 - Articulo M2M-100 (Fan et al.): no disponible en la informacion proporcionada
 - Documentacion de CTranslate2: no disponible en la informacion proporcionada

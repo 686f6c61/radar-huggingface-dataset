@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Jessedbrown/Asolaria-hermes-work` no es un modelo de lenguaje entrenado ni un checkpoint de pesos, sino un repositorio de HuggingFace que actua como instantanea de codigo fuente, documentacion, tests y contratos del proyecto "Asolaria — Hermes work". La model card describe un sistema de agentes autoconscientes y auto-mejorables ("Hermes" / "HyperHermes") con un enrutador (`OmniDispatcher`), un componente llamado "spindle", y un runtime de agente escrito en Rust ("Host-8"). El autor listado es Jessedbrown y el repositorio no declara licencia, idiomas, pipeline ni parametros.
+`Jessedbrown/Asolaria-hermes-work` no es un modelo de lenguaje entrenado ni un checkpoint de pesos, sino un repositorio de Hugging Face que actua como instantanea de codigo fuente, documentacion, tests y contratos del proyecto "Asolaria — Hermes work". La model card describe un sistema de agentes autoconscientes y auto-mejorables ("Hermes" / "HyperHermes") con un enrutador (`OmniDispatcher`), un componente llamado "spindle", y un runtime de agente escrito en Rust ("Host-8"). El autor listado es Jessedbrown y el repositorio no declara licencia, idiomas, pipeline ni parametros.
 
 El repositorio acota explicitamente su contenido ("carve-out"): no incluye claves, semillas ni tokens, ni corpus privados, ni capturas con datos personales, ni memoria interna de agentes. Se limita a fuente, documentacion, tests y contratos. Tampoco expone pesos entrenados: la propia model card indica que los checkpoints entrenados de GNN viven en otro repositorio ("trained-GNN repository").
 
@@ -99,7 +99,7 @@ No disponible. Este repositorio no es un modelo con parametros, contexto y licen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/Asolaria-hermes-work
+- Hugging Face: https://huggingface.co/Jessedbrown/Asolaria-hermes-work
 - `HYPERHERMES-PATH2-STORAGE-AND-VERIFICATION-2026-07-11.md` (referenciado en la model card; no se proporciona URL directa)
 - `KERNEL-FLEET-AND-STUBBED-ROOMS.md` (referenciado en la model card; no se proporciona URL directa)
 - Live Host-8 lane: `JesseBrown1980/asolaria-federation-1024` (referenciado sin URL)

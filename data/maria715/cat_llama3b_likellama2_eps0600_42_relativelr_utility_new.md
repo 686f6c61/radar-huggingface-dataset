@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeLlama2_eps0600_42_relativelr_utility_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. Segun la propia model card, se trata de un adaptador derivado de experimentos de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. El repositorio se distribuye exclusivamente como pesos de tipo PEFT (safetensors), no como un modelo completo, por lo que requiere cargar un modelo base externo para poder ejecutarse.
+CAT_llama3b_likeLlama2_eps0600_42_relativelr_utility_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. Segun la propia model card, se trata de un adaptador derivado de experimentos de un trabajo de fin de master sobre entrenamiento adversarial orientado a mejorar la robustez de modelos de lenguaje. El repositorio se distribuye exclusivamente como pesos de tipo PEFT (safetensors), no como un modelo completo, por lo que requiere cargar un modelo base externo para poder ejecutarse.
 
 El nombre del adaptador ofrece pistas sobre su origen experimental: el fragmento "llama3b" sugiere un modelo base de la familia Llama con aproximadamente 3.000 millones de parametros, "likeLlama2" apunta a una configuracion o tokenizador inspirado en Llama 2, "eps0600" probablemente referencia el valor de epsilon (presupuesto de perturbacion adversarial) usado durante el entrenamiento, "42" puede ser una semilla y "relativelr" y "utility" indican el uso de una tasa de aprendizaje relativa y una funcion de utilidad concreta. Ninguno de estos extremos esta confirmado en la documentacion disponible.
 
@@ -82,5 +82,5 @@ No disponible. No se identifican en la informacion proporcionada modelos compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0600_42_relativelr_utility_NEW
+- Modelo en Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0600_42_relativelr_utility_NEW
 - Perfil del autor: https://huggingface.co/maria715

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-habeebllah77/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en HuggingFace Hub. No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de una politica entrenada para resolver una tarea concreta de control continuo: aterrizar de forma segura una nave modular en una plataforma 2D.
+habeebllah77/ppo-LunarLander-v3 es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v3, implementado con la libreria stable-baselines3 y publicado en Hugging Face Hub. No se trata de un modelo de lenguaje ni de un modelo generativo de proposito general, sino de una politica entrenada para resolver una tarea concreta de control continuo: aterrizar de forma segura una nave modular en una plataforma 2D.
 
-El repositorio no incluye model card descriptiva mas alla del andamiaje autogenerado por la plantilla de HuggingFace (bloque YAML con el model-index y un apartado "Usage" sin codigo real). El unico dato de rendimiento declarado es una recompensa media de 232,36 +/- 68,01 en LunarLander-v3, marcada como no verificada. No hay informacion sobre hiperparametros, numero de timesteps de entrenamiento, semillas utilizadas ni arquitectura exacta de la red.
+El repositorio no incluye model card descriptiva mas alla del andamiaje autogenerado por la plantilla de Hugging Face (bloque YAML con el model-index y un apartado "Usage" sin codigo real). El unico dato de rendimiento declarado es una recompensa media de 232,36 +/- 68,01 en LunarLander-v3, marcada como no verificada. No hay informacion sobre hiperparametros, numero de timesteps de entrenamiento, semillas utilizadas ni arquitectura exacta de la red.
 
 Su relevancia es limitada y de ambito educativo o de referencia: sirve como ejemplo de publicacion de agentes RL en el Hub, como baseline para comparaciones dentro del mismo entorno y como material de practica para pipelines de huggingface_sb3. El repositorio pesa 0,0 GB y acumulaba 0 descargas y 0 likes en el momento de la consulta, por lo que no debe considerarse un artefacto validado por la comunidad.
 
@@ -67,7 +67,7 @@ El dato procede del model-index declarado por el autor del repositorio. En la li
 
 ## Comparativa con modelos similares
 
-No se dispone de datos de otros agentes publicados en HuggingFace Hub para LunarLander-v3 dentro de la informacion proporcionada, por lo que no es posible construir una comparativa cuantitativa fiable. A modo de orientacion cualitativa sobre familias de algoritmos implementadas en stable-baselines3 y aplicables al mismo entorno:
+No se dispone de datos de otros agentes publicados en Hugging Face Hub para LunarLander-v3 dentro de la informacion proporcionada, por lo que no es posible construir una comparativa cuantitativa fiable. A modo de orientacion cualitativa sobre familias de algoritmos implementadas en stable-baselines3 y aplicables al mismo entorno:
 
 | Alternativa | Tipo de politica | On-policy / off-policy | Datos de rendimiento en LunarLander-v3 |
 |---|---|---|---|
@@ -94,7 +94,7 @@ Cualquier comparacion concreta requeriria reentrenar estas alternativas bajo los
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/habeebllah77/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/habeebllah77/ppo-LunarLander-v3
 - Libreria stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Utilidad huggingface_sb3, referenciada en la model card: https://github.com/huggingface/huggingface_sb3
 - Documentacion del entorno LunarLander-v3 en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

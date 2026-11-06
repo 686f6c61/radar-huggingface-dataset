@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EDWINKATO/homework-matching es un repositorio publicado en HuggingFace por el usuario EDWINKATO que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching* (emparejamiento) entre elementos. Segun la model card, el repositorio se centra en "codigo transparente y pruebas de humo repetibles", y declara explícitamente que no se reclama ninguna puntuación de benchmark. La configuración declarada es de escala "huge", con atención dispersa (*sparse*), fusión por co-atención, activación ReLU y normalización GroupNorm.
+EDWINKATO/homework-matching es un repositorio publicado en Hugging Face por el usuario EDWINKATO que contiene una implementación funcional de DeiT (Data-efficient Image Transformer) orientada a una tarea de *matching* (emparejamiento) entre elementos. Segun la model card, el repositorio se centra en "codigo transparente y pruebas de humo repetibles", y declara explícitamente que no se reclama ninguna puntuación de benchmark. La configuración declarada es de escala "huge", con atención dispersa (*sparse*), fusión por co-atención, activación ReLU y normalización GroupNorm.
 
 El dato más relevante para evaluar el artefacto es el recuento real de parámetros obtenido de los pesos safetensors: 24.832 parámetros (aproximadamente 24,8 miles). Esa cifra es incompatible con la escala "huge" que anuncia la model card: un ViT-Huge canónico ronda los 632 millones de parámetros. El propio autor aclara que `model.safetensors` es "un checkpoint de inicialización válido para pruebas de humo" y que "no se presenta como un checkpoint entrenado con benchmark".
 
@@ -95,6 +95,6 @@ La diferencia clave no es de tamano sino de madurez: los tres modelos de referen
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EDWINKATO/homework-matching
+- Hugging Face: https://huggingface.co/EDWINKATO/homework-matching
 - No se han encontrado en la busqueda web enlaces relevantes al modelo: los resultados devueltos corresponden a sitios de videojuegos (Riot Games, VALORANT, League of Legends) y no guardan relacion con este repositorio.
 - Paper de DeiT: no disponible en la informacion proporcionada.

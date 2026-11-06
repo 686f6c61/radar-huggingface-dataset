@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`tofu-phi-1_5-...-epoch18`) | 1,418B | no disponible (base: 2048) | Unlearning sobre TOFU | Apache 2.0 | HuggingFace |
-| `microsoft/phi-1_5` | 1,3B | 2048 | Modelo base de texto y codigo | MIT (segun publicacion original) | HuggingFace |
-| `locuslab/tofu_ft_phi-1.5` | 1,3B | 2048 | Ajuste fino sobre TOFU (referencia *retain*) | Apache 2.0 | HuggingFace |
-| Otros checkpoints `unl-reset` de la misma campaña | 1,418B | no disponible | Variantes de unlearning (epocas y metodos distintos) | Apache 2.0 | HuggingFace |
+| Este checkpoint (`tofu-phi-1_5-...-epoch18`) | 1,418B | no disponible (base: 2048) | Unlearning sobre TOFU | Apache 2.0 | Hugging Face |
+| `microsoft/phi-1_5` | 1,3B | 2048 | Modelo base de texto y codigo | MIT (segun publicacion original) | Hugging Face |
+| `locuslab/tofu_ft_phi-1.5` | 1,3B | 2048 | Ajuste fino sobre TOFU (referencia *retain*) | Apache 2.0 | Hugging Face |
+| Otros checkpoints `unl-reset` de la misma campaña | 1,418B | no disponible | Variantes de unlearning (epocas y metodos distintos) | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente al modelo ajustado con TOFU del que deriva: el interés está en cuánto se aproxima este checkpoint al comportamiento del modelo original de Phi-1.5 sobre la partición *forget* mientras conserva el rendimiento sobre *retain*. No se dispone de métricas publicadas para cuantificar esa diferencia.
 
@@ -83,7 +83,7 @@ La comparación relevante es frente al modelo ajustado con TOFU del que deriva: 
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch18)
+- [Modelo en Hugging Face](https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch18)
 - [Modelo base del ajuste: locuslab/tofu_ft_phi-1.5](https://huggingface.co/locuslab/tofu_ft_phi-1.5)
 - [Modelo original: microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

@@ -47,7 +47,7 @@ No se documenta el uso de RLHF ni DPO. La única innovación técnica visible en
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye tablas de MMLU, HumanEval ni GSM8K, y la búsqueda web no ha proporcionado datos adicionales al respecto.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye tablas de MMLU, HumanEval ni GSM8K, y la búsqueda web no ha proporcionado datos adicionales al respecto.
 
 ## Requisitos de hardware
 
@@ -85,7 +85,7 @@ El modelo se diferencia del base por su mayor especialización en roleplay, mien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen2.5-3B-Instruct-Sheldon-SFT-v2-GGUF
 - Modelo base fine-tuned: https://huggingface.co/agastyasridharan/Qwen2.5-3B-Instruct-Sheldon-SFT-v2
 - Dataset de entrenamiento: https://huggingface.co/datasets/tbooy/sheldon-cooper-sft-20k
 - Licencia del modelo original Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario SDABASD bajo el identificador `SDABASD/MyAwesomeModel-TestRepo`. La model card lo presenta como un modelo generativo de razonamiento con mejoras en tareas de matematicas, programacion y logica, e incluso menciona una variante denominada MyAwesomeModel-Small. Sin embargo, la informacion disponible es muy escasa y, en varios puntos, contradictoria: el repositorio esta etiquetado como `bert`, `feature-extraction` y `pytorch`, lo que no encaja con la descripcion de un modelo conversacional de razonamiento.
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario SDABASD bajo el identificador `SDABASD/MyAwesomeModel-TestRepo`. La model card lo presenta como un modelo generativo de razonamiento con mejoras en tareas de matematicas, programacion y logica, e incluso menciona una variante denominada MyAwesomeModel-Small. Sin embargo, la informacion disponible es muy escasa y, en varios puntos, contradictoria: el repositorio esta etiquetado como `bert`, `feature-extraction` y `pytorch`, lo que no encaja con la descripcion de un modelo conversacional de razonamiento.
 
 El propio nombre del repositorio (`TestRepo`) y el hecho de que el tamano sea de 0.0 GB apuntan a un artefacto de prueba o a una plantilla sin pesos reales publicados. El autor no ha facilitado numero de parametros, longitud de contexto, idiomas soportados ni detalles de la arquitectura mas alla de referencias genericas.
 
@@ -110,6 +110,6 @@ No es posible establecer una comparativa fiable. La model card compara con Model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SDABASD/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/SDABASD/MyAwesomeModel-TestRepo
 - Paper, repositorio de codigo, blog o demo: no disponibles en la informacion proporcionada.
 - La busqueda web realizada no devolvio ningun recurso relevante sobre este modelo (el unico resultado obtenido fue una pagina de National Rail sin relacion con el tema).

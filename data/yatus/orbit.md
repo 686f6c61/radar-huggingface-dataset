@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Yatus/orbit es un modelo publicado en HuggingFace por el usuario Yatus bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,6 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion del formato de pesos), aunque no se dispone de informacion que confirme la arquitectura ni el numero exacto de parametros. La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento ni especificaciones tecnicas.
+Yatus/orbit es un modelo publicado en Hugging Face por el usuario Yatus bajo licencia Apache 2.0. El repositorio tiene un tamano de 0,6 GB, lo que sugiere un modelo de pequeno tamano (probablemente en el rango de 0,5 a 1,5 mil millones de parametros en funcion del formato de pesos), aunque no se dispone de informacion que confirme la arquitectura ni el numero exacto de parametros. La model card publicada es practicamente vacia: solo contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento ni especificaciones tecnicas.
 
 El modelo no registra descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), y fue creado y actualizado el 30 de octubre de 2026, con apenas ocho minutos de diferencia entre ambas fechas, lo que apunta a un artefacto de publicacion reciente o a un experimento personal sin documentacion asociada. No se ha identificado pipeline declarado, idiomas soportados ni resultados de evaluacion.
 
@@ -77,6 +77,6 @@ No disponible. No se dispone de informacion suficiente sobre parametros, context
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yatus/orbit
-- Perfil del autor en HuggingFace: https://huggingface.co/Yatus
+- Modelo en Hugging Face: https://huggingface.co/Yatus/orbit
+- Perfil del autor en Hugging Face: https://huggingface.co/Yatus
 - Resultado de busqueda web no relacionado con el modelo (medio de informacion generalista): https://yatus.org/

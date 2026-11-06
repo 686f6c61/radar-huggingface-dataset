@@ -98,10 +98,10 @@ El autor indica que diferencias inferiores a 0,02 CER estan dentro del ruido ent
 
 | Modelo | Parametros | Contexto | CER (misma evaluacion) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (LightOnOCR-3-0.8B cultural-heritage-eng) | 853 M | 2.048 tokens visuales / 2.048 nuevos | 0,1159 | apache-2.0 | HuggingFace |
-| LightOnOCR-3-4B cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible en la informacion | HuggingFace |
-| Qwen3.5-4B cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible en la informacion | HuggingFace |
-| chandra-ocr-2 cultural-heritage-eng | no disponible | no disponible | 0,1101 | no disponible en la informacion | HuggingFace |
+| Este modelo (LightOnOCR-3-0.8B cultural-heritage-eng) | 853 M | 2.048 tokens visuales / 2.048 nuevos | 0,1159 | apache-2.0 | Hugging Face |
+| LightOnOCR-3-4B cultural-heritage-eng | no disponible | no disponible | 0,0770 | no disponible en la informacion | Hugging Face |
+| Qwen3.5-4B cultural-heritage-eng | no disponible | no disponible | 0,1047 | no disponible en la informacion | Hugging Face |
+| chandra-ocr-2 cultural-heritage-eng | no disponible | no disponible | 0,1101 | no disponible en la informacion | Hugging Face |
 
 Los cuatro modelos comparten dataset de entrenamiento, paginas de evaluacion y procedimiento de decodificacion, por lo que la comparacion es directa. La ventaja de este modelo frente a alternativas mayores es el coste de inferencia: obtiene un CER dentro del ruido de modelos de 2B a 4B con una fraccion de los parametros.
 
@@ -120,7 +120,7 @@ Los cuatro modelos comparten dataset de entrenamiento, paginas de evaluacion y p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng
+- Modelo en Hugging Face: https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-0.8B-cultural-heritage-eng
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/yale-cultural-heritage/ai-project-transcriptions
 - Mejor modelo de la comparativa (LightOnOCR-3-4B): https://huggingface.co/yale-cultural-heritage/LightOnOCR-3-4B-cultural-heritage-eng

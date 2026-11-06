@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jlsrls/mainsweep4ep-ctrl-s0-realign` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en HuggingFace. El entrenamiento se realizó con la librería TRL (versión 0.24.0 declarada) sobre la infraestructura de Unsloth, y el repositorio contiene pesos en formato safetensors compatibles con `transformers`. No se publica información sobre el conjunto de datos, el número de tokens de entrenamiento, la función de pérdida ni el objetivo concreto del ajuste.
+`jlsrls/mainsweep4ep-ctrl-s0-realign` es un ajuste fino (SFT) del modelo `unsloth/Llama-3.2-1B-Instruct`, publicado por el usuario jlsrls en Hugging Face. El entrenamiento se realizó con la librería TRL (versión 0.24.0 declarada) sobre la infraestructura de Unsloth, y el repositorio contiene pesos en formato safetensors compatibles con `transformers`. No se publica información sobre el conjunto de datos, el número de tokens de entrenamiento, la función de pérdida ni el objetivo concreto del ajuste.
 
 El nombre del repositorio (`mainsweep4ep-ctrl-s0-realign`) sugiere un artefacto de experimentación: una ejecución de barrido de hiperparámetros ("sweep") correspondiente a una condición de control ("ctrl"), con la etiqueta "realign" que apunta a un proceso de reajuste o realineación. El enlace de Weights & Biases incluido en la model card apunta a un proyecto llamado `clarifying-em` alojado en la organización de la Portland State University, lo que refuerza la hipótesis de que se trata de un checkpoint de investigación más que de un modelo destinado a producción.
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 Los datos del modelo evaluado corresponden a su model card; los de las alternativas provienen de la documentacion publica de cada modelo base y deben verificarse antes de tomar decisiones. No existen metricas comparativas de rendimiento para el ajuste fino.
 
-| Modelo | Parametros | Contexto | Licencia | Estado en HuggingFace |
+| Modelo | Parametros | Contexto | Licencia | Estado en Hugging Face |
 |---|---|---|---|---|
 | jlsrls/mainsweep4ep-ctrl-s0-realign | No declarado (base ~1,24B) | No declarado (base 128k) | No disponible | 0 descargas, 0 likes, sin evaluaciones |
 | unsloth/Llama-3.2-1B-Instruct (modelo base) | ~1,24B | 128 000 tokens | Llama 3.2 Community License | Modelo de referencia ampliamente utilizado |
@@ -99,7 +99,7 @@ Diferencias clave: frente a los modelos originales, este ajuste fino no aporta d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/mainsweep4ep-ctrl-s0-realign
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/mainsweep4ep-ctrl-s0-realign
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl

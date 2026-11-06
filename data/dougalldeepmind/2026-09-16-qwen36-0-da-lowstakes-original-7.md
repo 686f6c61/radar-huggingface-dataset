@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dougalldeepmind/2026-09-16-qwen36-0-da-lowstakes-original-7 | Adaptador LoRA SFT | No disponible (base de 27 000 millones segun nomenclatura) | No disponible (entrenado a 8192 tokens) | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-27B | Modelo base | 27 000 millones (segun nomenclatura) | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| dougalldeepmind/2026-09-16-qwen36-0-da-lowstakes-original-7 | Adaptador LoRA SFT | No disponible (base de 27 000 millones segun nomenclatura) | No disponible (entrenado a 8192 tokens) | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-27B | Modelo base | 27 000 millones (segun nomenclatura) | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Otros adaptadores LoRA comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa con alternativas de la misma categoria. Los resultados de la busqueda web realizada no contienen referencias a modelos comparables.
@@ -89,7 +89,7 @@ No se dispone de informacion suficiente para establecer una comparativa con alte
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-da-lowstakes-original-7
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/dougalldeepmind/2026-09-16-qwen36-0-da-lowstakes-original-7
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de la mezcla de datos: https://huggingface.co/datasets/dougalldeepmind/2026-09-16-da-lowstakes-original-7-mix
 - Repositorio de codigo de origen: https://github.com/Matthew-Bozoukov/teaching_claude_why_replication

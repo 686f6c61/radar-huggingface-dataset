@@ -71,7 +71,7 @@ No se han publicado en la informacion disponible resultados adicionales de laten
 
 | Modelo | Parametros | Tarea | Dataset | mAP | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| second-dynamic-voxel.kitti.mmdet3d | 5,3 M | Deteccion 3D LiDAR | KITTI | 65,23 | Apache-2.0 | HuggingFace (torch-pointcloud) |
+| second-dynamic-voxel.kitti.mmdet3d | 5,3 M | Deteccion 3D LiDAR | KITTI | 65,23 | Apache-2.0 | Hugging Face (torch-pointcloud) |
 | PointPillars (referencia MMDetection3D) | no disponible | Deteccion 3D LiDAR | KITTI | no disponible en esta ficha | Apache-2.0 | OpenMMLab |
 | VoxelNet (referencia original) | no disponible | Deteccion 3D LiDAR | KITTI | no disponible en esta ficha | no disponible | Implementaciones de terceros |
 | CenterPoint (referencia MMDetection3D) | no disponible | Deteccion 3D LiDAR | KITTI / nuScenes | no disponible en esta ficha | Apache-2.0 | OpenMMLab |
@@ -92,7 +92,7 @@ No se dispone de datos verificados de los modelos alternativos en la informacion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torch-pointcloud/second-dynamic-voxel.kitti.mmdet3d
+- Modelo en Hugging Face: https://huggingface.co/torch-pointcloud/second-dynamic-voxel.kitti.mmdet3d
 - Paper SECOND: https://www.mdpi.com/1424-8220/18/10/3337
 - Repositorio MMDetection3D: https://github.com/open-mmlab/mmdetection3d
 - Libreria torch-pointcloud: https://github.com/arthurdjn/pytorch-pointcloud

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Ryanham1lton/DruddigonTW` es un repositorio alojado en HuggingFace por el usuario Ryanham1lton. En el momento de redactar esta ficha no existe información pública sobre el modelo: la model card está vacía (solo contiene la declaración de licencia `cc-by-4.0`), no se declara pipeline, no se indican idiomas, no hay descargas ni interacciones registradas y el autor no ha publicado documentación técnica, dataset, paper ni demo asociada.
+`Ryanham1lton/DruddigonTW` es un repositorio alojado en Hugging Face por el usuario Ryanham1lton. En el momento de redactar esta ficha no existe información pública sobre el modelo: la model card está vacía (solo contiene la declaración de licencia `cc-by-4.0`), no se declara pipeline, no se indican idiomas, no hay descargas ni interacciones registradas y el autor no ha publicado documentación técnica, dataset, paper ni demo asociada.
 
 El único dato cuantitativo disponible es el tamaño del repositorio, 0,1 GB, junto con las marcas temporales de creación y actualización (28 de octubre de 2026, con una diferencia de algo más de un minuto entre ambas), que resultan anómalas respecto a la fecha actual y no permiten verificar la procedencia del artefacto. El identificador evoca el Pokémon Druddigon y el sufijo "TW", pero se trata de una hipótesis nominal sin ninguna confirmación documental.
 
@@ -90,6 +90,6 @@ No es posible establecer una comparativa rigurosa: no se ha identificado la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ryanham1lton/DruddigonTW
+- Repositorio en Hugging Face: https://huggingface.co/Ryanham1lton/DruddigonTW
 - Texto de la licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 - Paper, blog, repositorio de código y demo: no disponibles en la información proporcionada.

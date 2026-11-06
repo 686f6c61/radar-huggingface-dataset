@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `PresbyD/RETFOUND_TIFs` aparece en HuggingFace con licencia MIT, pero sin ninguna documentación técnica en su model card. No se dispone de descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni capacidades. El nombre sugiere una posible relación con RETFound, un modelo fundacional para imágenes retinales descrito en la revista Nature y desarrollado por rmaphoh, pero no hay confirmación de que este repositorio contenga dicho modelo o una adaptación del mismo.
+El repositorio `PresbyD/RETFOUND_TIFs` aparece en Hugging Face con licencia MIT, pero sin ninguna documentación técnica en su model card. No se dispone de descripción del modelo, arquitectura, tamaño, datos de entrenamiento ni capacidades. El nombre sugiere una posible relación con RETFound, un modelo fundacional para imágenes retinales descrito en la revista Nature y desarrollado por rmaphoh, pero no hay confirmación de que este repositorio contenga dicho modelo o una adaptación del mismo.
 
 La ausencia de información en la model card impide determinar qué problema resuelve, quién lo ha desarrollado en detalle y por qué sería relevante. No se puede confirmar si el repositorio contiene pesos de un modelo funcional, un placeholder o un proyecto en fase inicial. Cualquier uso de este modelo requeriría una verificación previa de su contenido y documentación.
 
@@ -61,6 +61,6 @@ No disponible. Sin información sobre parámetros o rendimiento, no se puede com
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/PresbyD/RETFOUND_TIFs
+- Hugging Face: https://huggingface.co/PresbyD/RETFOUND_TIFs
 - Repositorio RETFound (referencia externa, no específica de este modelo): https://github.com/rmaphoh/RETFound
 - Paper de RETFound en Nature (referencia externa, no específica de este modelo): https://www.nature.com/articles/s41586-023-06555-x

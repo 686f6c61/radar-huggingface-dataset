@@ -75,7 +75,7 @@ La comparativa se limita a los modelos relacionados directamente con este checkp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance
+- Modelo en Hugging Face: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance
 - Adaptador LoRA: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-0.8b-finance-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper de Generalized Knowledge Distillation: https://arxiv.org/abs/2306.13649

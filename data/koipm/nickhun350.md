@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nickhun350 es un modelo publicado en HuggingFace por el usuario Koipm bajo el identificador `Koipm/Nickhun350`. La informacion disponible es extremadamente limitada: la model card no contiene descripcion tecnica, no declara arquitectura, parametros, contexto ni idiomas, y la licencia figura como `unknown`. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no permite inferir con rigor la arquitectura ni el numero de parametros.
+Nickhun350 es un modelo publicado en Hugging Face por el usuario Koipm bajo el identificador `Koipm/Nickhun350`. La informacion disponible es extremadamente limitada: la model card no contiene descripcion tecnica, no declara arquitectura, parametros, contexto ni idiomas, y la licencia figura como `unknown`. El repositorio ocupa aproximadamente 0,1 GB, lo que sugiere un conjunto de pesos de pequeno tamano, pero no permite inferir con rigor la arquitectura ni el numero de parametros.
 
 No se trata de un lanzamiento con documentacion tecnica asociada ni con resultados de evaluacion publicados. El modelo acumula 0 descargas y 0 likes en el momento de la consulta, y las unicas etiquetas disponibles son `license:unknown` y `region:us`. No hay pipeline declarado, por lo que no se puede confirmar si esta pensado para generacion de texto, vision, audio u otra tarea.
 
@@ -76,4 +76,4 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Koipm/Nickhun350
+- Repositorio en Hugging Face: https://huggingface.co/Koipm/Nickhun350

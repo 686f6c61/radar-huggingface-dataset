@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AxeronAI/axeron-mf-39
+- Modelo en Hugging Face: https://huggingface.co/AxeronAI/axeron-mf-39
 - Repositorio de forgelm: https://github.com/AxeronAI/forgelm
-- Perfil de AxeronAI en HuggingFace: https://huggingface.co/AxeronAI/models
+- Perfil de AxeronAI en Hugging Face: https://huggingface.co/AxeronAI/models
 - Modelo relacionado (axeron-mf-37): https://huggingface.co/AxeronAI/axeron-mf-37

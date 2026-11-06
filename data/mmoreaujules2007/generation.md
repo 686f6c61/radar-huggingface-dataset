@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Mmoreaujules2007/generation` es un repositorio experimental publicado en HuggingFace que contiene un esqueleto de codigo basado en la arquitectura DeiT (Data-efficient Image Transformer) orientado a tareas de generacion. Lo desarrolla el usuario Mmoreaujules2007 y se distribuye bajo licencia apache-2.0. No se trata de un modelo entrenado ni evaluado: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
+`Mmoreaujules2007/generation` es un repositorio experimental publicado en Hugging Face que contiene un esqueleto de codigo basado en la arquitectura DeiT (Data-efficient Image Transformer) orientado a tareas de generacion. Lo desarrolla el usuario Mmoreaujules2007 y se distribuye bajo licencia apache-2.0. No se trata de un modelo entrenado ni evaluado: el propio autor indica explicitamente que `model.safetensors` es un checkpoint de inicializacion valido unicamente para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark.
 
 El peso real del checkpoint segun los metadatos de safetensors es de tan solo 24.832 parametros, una cifra muy alejada de lo que sugiere la etiqueta "xlarge" que aparece en la model card. Esto confirma que el repositorio es un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, mas que un artefacto listo para produccion. El tamano del repositorio es de 0,0 GB y, en el momento de la consulta, acumula 0 descargas y 0 likes.
 
@@ -44,7 +44,7 @@ No hay evidencia de un entrenamiento completado. La receta por defecto del scrip
 - Prototipado de estrategias de fusion Tucker: el repositorio expone la fusion como componente configurable, lo que facilita experimentar con su impacto en la arquitectura antes de escalar.
 - Estudio de recetas de optimizacion: la combinacion Novograd mas OneCycle queda registrada en `training_args.json`, lo que sirve como punto de partida reproducible para experimentos comparativos con otras recetas.
 - Base para entrenamiento desde cero: un equipo que quiera entrenar un DeiT adaptado a generacion puede partir de este esqueleto y de sus ajustes de arquitectura en lugar de escribir el codigo desde el principio.
-- Reproducibilidad docente: sirve como ejemplo didactico de como estructurar un repositorio de modelo (config, args de entrenamiento, script y checkpoint de inicializacion) siguiendo convenciones de HuggingFace.
+- Reproducibilidad docente: sirve como ejemplo didactico de como estructurar un repositorio de modelo (config, args de entrenamiento, script y checkpoint de inicializacion) siguiendo convenciones de Hugging Face.
 - Verificacion de adaptadores personalizados: dado que requiere un adaptador explicito para las APIs de carga, es util para probar dicho adaptador en un entorno controlado antes de usarlo con pesos entrenados.
 
 ## Benchmarks y rendimiento
@@ -77,7 +77,7 @@ La comparacion es limitada: los DeiT de referencia estan entrenados para clasifi
 - Incoherencia entre la escala declarada ("xlarge") y el recuento real de parametros (24.832), lo que puede inducir a error sobre la capacidad del modelo.
 - Ausencia total de resultados de benchmark, lo que impide cualquier evaluacion objetiva de calidad.
 - No se declaran idiomas soportados, contexto maximo ni tipos de cuantizacion.
-- Requiere un adaptador explicito para cargarse con APIs genericas; no es cargable de forma directa como otros modelos de HuggingFace.
+- Requiere un adaptador explicito para cargarse con APIs genericas; no es cargable de forma directa como otros modelos de Hugging Face.
 - Riesgo de alucinacion: no evaluable, dado que no existe un modelo entrenado sobre el que medirlo.
 - Licencia apache-2.0, permisiva para uso comercial, pero el autor advierte de revisar por separado los terminos de los datos de origen si se usa con conjuntos de datos externos.
 - El repositorio tiene 0 descargas y 0 likes, sin senales de validacion por parte de la comunidad.
@@ -85,4 +85,4 @@ La comparacion es limitada: los DeiT de referencia estan entrenados para clasifi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mmoreaujules2007/generation
+- Repositorio en Hugging Face: https://huggingface.co/Mmoreaujules2007/generation

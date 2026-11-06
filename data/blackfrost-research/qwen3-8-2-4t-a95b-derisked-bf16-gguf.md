@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16-GGUF** es una versión cuantizada en formato GGUF del modelo base homónimo, que a su vez deriva del **Qwen3.8-2.4T-A95B** de Alibaba, el primer modelo de la clase Qwen-Max con pesos abiertos. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 2,4 billones de parámetros totales y 95 mil millones de parámetros activos por token, diseñado para tareas de generación de texto, razonamiento, código y trabajo de larga duración. La variante "DERISKED" indica un proceso de abliteración o eliminación de comportamientos de riesgo, y el acceso está restringido (gated) en HuggingFace.
+El modelo **Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16-GGUF** es una versión cuantizada en formato GGUF del modelo base homónimo, que a su vez deriva del **Qwen3.8-2.4T-A95B** de Alibaba, el primer modelo de la clase Qwen-Max con pesos abiertos. Se trata de un modelo de lenguaje de tipo Mixture-of-Experts (MoE) con 2,4 billones de parámetros totales y 95 mil millones de parámetros activos por token, diseñado para tareas de generación de texto, razonamiento, código y trabajo de larga duración. La variante "DERISKED" indica un proceso de abliteración o eliminación de comportamientos de riesgo, y el acceso está restringido (gated) en Hugging Face.
 
 La relevancia de este modelo radica en que es uno de los primeros de su clase en abrir sus pesos, lo que permite a investigadores y desarrolladores explorar arquitecturas MoE a escala extrema. La versión GGUF facilita su despliegue en entornos con recursos limitados mediante cuantización, aunque el tamaño total sigue siendo enorme. La licencia Apache 2.0 permite uso comercial, pero el acceso gated requiere aceptación de condiciones.
 
@@ -61,7 +61,7 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Limitaciones y advertencias
 
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace antes de descargar.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face antes de descargar.
 - Tamaño extremo: inviable para la mayoría de entornos de producción sin infraestructura de alto coste.
 - No se han publicado detalles sobre sesgos, alucinaciones o limitaciones de idioma; al ser una versión abliterada, puede presentar comportamientos atípicos en ciertos dominios.
 - La licencia Apache 2.0 permite uso comercial, pero el acceso gated puede imponer restricciones adicionales.
@@ -70,9 +70,9 @@ No se dispone de datos comparativos concretos en la información proporcionada. 
 
 ## Enlaces
 
-- [HuggingFace - Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16-GGUF](https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16-GGUF)
-- [HuggingFace - Qwen/Qwen3.8-2.4T-A95B (modelo base original)](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
-- [HuggingFace - unsloth/Qwen3.8-2.4T-A95B-GGUF (otra versión GGUF)](https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF)
+- [Hugging Face - Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16-GGUF](https://huggingface.co/Blackfrost-Research/Qwen3.8-2.4T-A95B-DERISKED-BF16-GGUF)
+- [Hugging Face - Qwen/Qwen3.8-2.4T-A95B (modelo base original)](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)
+- [Hugging Face - unsloth/Qwen3.8-2.4T-A95B-GGUF (otra versión GGUF)](https://huggingface.co/unsloth/Qwen3.8-2.4T-A95B-GGUF)
 - [OpenLM.ai - Qwen3.8](https://openlm.ai/qwen3.8/)
 - [Local AI Zone - Qwen3.8 2.4t A95b GGUF (29 partes)](https://local-ai-zone.github.io/models/qwen3-8-2-4t-a95b.html)
 - [APXML - Qwen3.8 2.4T A95B: Specifications and GPU VRAM Requirements](https://apxml.com/models/qwen38-24t-a95b)

@@ -87,7 +87,7 @@ No se dispone de información suficiente para comparar con otros modelos drafter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erlidev/Qwen3.8-27B-DSpark-GGUF
+- Modelo en Hugging Face: https://huggingface.co/erlidev/Qwen3.8-27B-DSpark-GGUF
 - Modelo base (RadixArk): https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark
 - Modelo principal (Qwen): https://huggingface.co/Qwen/Qwen3.8-27B
 - PR de llama.cpp #25173: https://github.com/ggml-org/llama.cpp/pull/25173

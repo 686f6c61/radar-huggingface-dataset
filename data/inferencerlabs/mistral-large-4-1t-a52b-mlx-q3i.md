@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mistral-Large-4-1T-A52B-MLX-Q3i es una cuantización de 3 bits del modelo Mistral-Large-4-1T-A52B, publicada por el usuario inferencerlabs en HuggingFace. El modelo base es un transformer multimodal (image-text-to-text) de tipo Mixture of Experts con 1 billón de parámetros totales y 52 mil millones de parámetros activos por token, según se deduce de la nomenclatura "1T-A52B". Esta versión concreta está cuantizada con el método INF (data-agnostic) para ajustarse a un presupuesto de memoria de 512 GiB y se distribuye en formato MLX, lo que la orienta a inferencia en hardware Apple Silicon.
+Mistral-Large-4-1T-A52B-MLX-Q3i es una cuantización de 3 bits del modelo Mistral-Large-4-1T-A52B, publicada por el usuario inferencerlabs en Hugging Face. El modelo base es un transformer multimodal (image-text-to-text) de tipo Mixture of Experts con 1 billón de parámetros totales y 52 mil millones de parámetros activos por token, según se deduce de la nomenclatura "1T-A52B". Esta versión concreta está cuantizada con el método INF (data-agnostic) para ajustarse a un presupuesto de memoria de 512 GiB y se distribuye en formato MLX, lo que la orienta a inferencia en hardware Apple Silicon.
 
 La relevancia de esta ficha radica en que permite ejecutar un modelo de escala frontera (1T de parámetros) en una estación de trabajo con memoria unificada de gama alta, algo impensable con los pesos completos. El autor reporta una velocidad de aproximadamente 14,5 tokens/s con una ocupación de unos 427 GiB en un Apple M3 Ultra, usando su propio runtime Inferencer v2.5.1. El repositorio ocupa 49 GB, aunque la memoria necesaria en ejecución es muy superior debido a la arquitectura MoE y al contexto.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inferencerlabs/Mistral-Large-4-1T-A52B-MLX-Q3i
+- Modelo en Hugging Face: https://huggingface.co/inferencerlabs/Mistral-Large-4-1T-A52B-MLX-Q3i
 - Modelo base: https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B
 - Vídeos de demostración: https://youtube.com/xcreate
 - Runtime Inferencer: https://inferencer.com

@@ -6,7 +6,7 @@ Index-Translate-omni-35B-FP4 es una exportación cuantizada en NVFP4 del modelo 
 
 La relevancia de esta exportación reside en la reducción del coste de memoria del bloque de lenguaje manteniendo intactos los módulos de visión (FP32) y audio (BF16), lo que permite desplegar un sistema de traducción multimodal en hardware de generación Blackwell. No obstante, la ruta de inferencia acelerada en FP4 nativo no está validada en este repositorio: el runtime incluido (`fp4_reference.py` con `JointModel`) descomprime y deconvierte a BF16 para pruebas de corrección, por lo que exige memoria equivalente a BF16 y no ofrece serving acelerado.
 
-El modelo está publicado bajo licencia Apache 2.0, soporta chino e inglés como idiomas declarados, y su pipeline en HuggingFace es `translation`. La model card reproduce resultados de benchmarks del modelo original, no de esta exportación cuantizada.
+El modelo está publicado bajo licencia Apache 2.0, soporta chino e inglés como idiomas declarados, y su pipeline en Hugging Face es `translation`. La model card reproduce resultados de benchmarks del modelo original, no de esta exportación cuantizada.
 
 ## Especificaciones tecnicas
 
@@ -99,9 +99,9 @@ Traducción de imágenes (COMET22 × 100, mayor es mejor):
 
 | Modelo | Parametros | Contexto | Traduccion texto (FLORES COMET22) | Traduccion imagen (MMTIT) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Index-Translate-omni-35B-FP4 | 35B (3B activos) | no disponible | 0.8795 (original) | 77.011 (original) | apache-2.0 | HuggingFace (export FP4) |
-| Index-Translate-Omni 9B | 9B | no disponible | 0.8789 | 77.604 | apache-2.0 | ModelScope / HuggingFace |
-| Index-Translate-Omni 2B | 2B | no disponible | 0.8655 | 65.809 | apache-2.0 | ModelScope / HuggingFace |
+| Index-Translate-omni-35B-FP4 | 35B (3B activos) | no disponible | 0.8795 (original) | 77.011 (original) | apache-2.0 | Hugging Face (export FP4) |
+| Index-Translate-Omni 9B | 9B | no disponible | 0.8789 | 77.604 | apache-2.0 | ModelScope / Hugging Face |
+| Index-Translate-Omni 2B | 2B | no disponible | 0.8655 | 65.809 | apache-2.0 | ModelScope / Hugging Face |
 | Qwen3.5-35B-A3B (baseline multimodal) | 35B (3B activos) | no disponible | no disponible | 75.602 | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -114,10 +114,10 @@ Traducción de imágenes (COMET22 × 100, mayor es mejor):
 - El ASR inglés requiere `repetition_penalty=1.1`; el ASR chino usa una guarda de generación con `max_new_tokens=256`.
 - Riesgo de alucinación y sesgos: no documentados en la información proporcionada.
 - Restricciones comerciales: Apache 2.0 permite uso comercial, pero la dependencia de NVIDIA ModelOpt y de un backend Blackwell puede condicionar el despliegue.
-- El repositorio figura con 0 descargas y 0 likes, y tamaño de repo de 0.0 GB en HuggingFace, lo que sugiere que los pesos podrían no estar materializados en la plataforma; conviene verificar antes de integrarlo.
+- El repositorio figura con 0 descargas y 0 likes, y tamaño de repo de 0.0 GB en Hugging Face, lo que sugiere que los pesos podrían no estar materializados en la plataforma; conviene verificar antes de integrarlo.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IndexTeam/Index-Translate-omni-35B-FP4
+- Hugging Face: https://huggingface.co/IndexTeam/Index-Translate-omni-35B-FP4
 - Modelo original en ModelScope: https://modelscope.cn/models/IndexTeam/Index-Translate-omni-35B
 - Benchmarks publicados de la familia: https://huggingface.co/IndexTeam/Index-Translate-9B#evaluation

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MasticatoryMuscleMusculomics es un modelo de segmentacion medica basado en nnU-Net v2 que delimita las cuatro subestructuras del musculo pterigoideo lateral (cabeza superior e inferior, derecha e izquierda) en tomografias computarizadas (TC) de craneo sin contraste. Lo publica el usuario frankzhang en HuggingFace y se distribuye como modelo adicional de TotalSegmentator, de modo que se integra en el flujo de trabajo habitual de esa herramienta mediante un paquete de pesos con la misma estructura que los oficiales.
+MasticatoryMuscleMusculomics es un modelo de segmentacion medica basado en nnU-Net v2 que delimita las cuatro subestructuras del musculo pterigoideo lateral (cabeza superior e inferior, derecha e izquierda) en tomografias computarizadas (TC) de craneo sin contraste. Lo publica el usuario frankzhang en Hugging Face y se distribuye como modelo adicional de TotalSegmentator, de modo que se integra en el flujo de trabajo habitual de esa herramienta mediante un paquete de pesos con la misma estructura que los oficiales.
 
 El modelo no es un modelo de lenguaje: es una red convolucional 3D de segmentacion semantica con cuatro etiquetas de salida. Se apoya en la arquitectura ResidualEncoderUNet-L de nnU-Net v2 en configuracion 3d_fullres, entrenada con un trainer personalizado (`nnUNetTrainerLRSwapMirrorNoRotation300`) que aplica espejado consciente de la etiqueta izquierda/derecha y desactiva el aumento por rotacion. El checkpoint publicado es el `checkpoint_best.pth` de la particion fold_0, renombrado como `checkpoint_final.pth`.
 
@@ -82,7 +82,7 @@ No se han publicado en la informacion disponible resultados comparativos con otr
 
 | Modelo | Tipo | Parametros | Contexto | Rendimiento reportado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| MasticatoryMuscleMusculomics | nnU-Net v2 ResEncUNet-L, 3d_fullres | no disponible | no aplica | Dice 0,952; NSD@1mm 0,971; HD95 0,836 mm en 53 casos | MIT | Pesos en HuggingFace, integracion con TotalSegmentator |
+| MasticatoryMuscleMusculomics | nnU-Net v2 ResEncUNet-L, 3d_fullres | no disponible | no aplica | Dice 0,952; NSD@1mm 0,971; HD95 0,836 mm en 53 casos | MIT | Pesos en Hugging Face, integracion con TotalSegmentator |
 | Tarea `muscles` de TotalSegmentator | nnU-Net v2, modelos oficiales | no disponible en la informacion disponible | no aplica | no disponible en la informacion disponible | Apache 2.0 / licencia propia del proyecto segun version | Paquete oficial de TotalSegmentator |
 | nnU-Net v2 3d_fullres por defecto, reentrenado ad hoc | nnU-Net v2 con planes por defecto | no disponible | no aplica | no disponible en la informacion disponible | Apache 2.0 | Codigo abierto, requiere entrenamiento propio |
 
@@ -104,7 +104,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankzhang/MasticatoryMuscleMusculomics
+- Modelo en Hugging Face: https://huggingface.co/frankzhang/MasticatoryMuscleMusculomics
 - Repositorio GitHub complementario `MasticatoryMuscleMusculomics`: mencionado en la model card; URL no proporcionada en la informacion disponible.
 - TotalSegmentator: https://github.com/wasserth/TotalSegmentator
 - nnU-Net v2: referenciado en la model card como arquitectura base; URL no proporcionada en la informacion disponible.

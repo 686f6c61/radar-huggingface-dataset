@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/B0-9B-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/B0-9B-GGUF)
 - [Modelo base schneewolflabs/B0-9B](https://huggingface.co/schneewolflabs/B0-9B)
 - [Pagina de descarga de mradermacher](https://hf.tst.eu/model#B0-9B-GGUF)
 - [Solicitudes de modelos de mradermacher](https://huggingface.co/mradermacher/model_requests)

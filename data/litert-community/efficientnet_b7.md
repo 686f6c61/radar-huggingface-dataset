@@ -72,15 +72,15 @@ No se dispone de información comparativa en los datos proporcionados. El modelo
 - No se han documentado sesgos específicos en la información disponible. No obstante, el modelo fue entrenado en ImageNet-1k, un conjunto de datos que históricamente presenta sesgos hacia imágenes occidentales y objetos comunes, lo que puede afectar al rendimiento en otros contextos.
 - Riesgo de alucinación: no aplica, ya que es un modelo discriminativo de clasificación y no genera texto.
 - Limitaciones de contexto o idioma: no aplica; es un modelo de visión y no procesa texto.
-- Restricciones de licencia: la licencia no está especificada en HuggingFace. La model card advierte que los pesos convertidos de PyTorch Vision pueden estar sujetos a licencias o términos propios de PyTorch Vision y del dataset de entrenamiento. Es responsabilidad del usuario verificar los permisos antes de usar el modelo en producción.
+- Restricciones de licencia: la licencia no está especificada en Hugging Face. La model card advierte que los pesos convertidos de PyTorch Vision pueden estar sujetos a licencias o términos propios de PyTorch Vision y del dataset de entrenamiento. Es responsabilidad del usuario verificar los permisos antes de usar el modelo en producción.
 - Los resultados de benchmarks declarados no están verificados (verified: false).
 - La variante cuantizada ha sido validada solo en una comprobación preliminar con fotografías reales; no se garantiza el mismo rendimiento en todos los casos.
 - El modelo está limitado a clasificación de imágenes y no soporta detección, segmentación ni otras tareas de visión.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/litert-community/efficientnet_b7
+- Hugging Face: https://huggingface.co/litert-community/efficientnet_b7
 - GitHub de LiteRT: https://github.com/google-ai-edge/litert
 - Documentación de LiteRT: https://developers.google.com/edge/litert
 - Paper original: https://arxiv.org/abs/1905.11946
-- Modelo base en HuggingFace: https://huggingface.co/google/efficientnet-b7
+- Modelo base en Hugging Face: https://huggingface.co/google/efficientnet-b7

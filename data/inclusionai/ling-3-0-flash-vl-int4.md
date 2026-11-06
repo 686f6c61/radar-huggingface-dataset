@@ -98,8 +98,8 @@ La unica comparacion documentada en la informacion proporcionada es contra Ling-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL-int4
-- Organizacion inclusionAI en HuggingFace: https://huggingface.co/inclusionAI
+- Modelo en Hugging Face: https://huggingface.co/inclusionAI/Ling-3.0-flash-VL-int4
+- Organizacion inclusionAI en Hugging Face: https://huggingface.co/inclusionAI
 - Organizacion inclusionAI en ModelScope: https://modelscope.cn/organization/inclusionAI
 - Cookbook de SGLang para Ling-3.0-flash-VL: https://docs.sglang.io/cookbook/autoregressive/InclusionAI/Ling-3.0-flash-VL
 - Imagen Docker de SGLang: `lmsysorg/sglang:dev-Ling-3.0-flash-VL`

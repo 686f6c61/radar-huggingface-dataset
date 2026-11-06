@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `camiellia/qwen3b-sgpqa-random-seed42` es un checkpoint publicado en HuggingFace por el usuario `camiellia`. El nombre del repositorio sugiere una posible variante de la familia Qwen3 con aproximadamente 3 mil millones de parámetros, pero la información disponible no lo confirma. La model card es una plantilla generada automáticamente que no incluye descripción técnica, datos de entrenamiento, licencia ni capacidades.
+El modelo `camiellia/qwen3b-sgpqa-random-seed42` es un checkpoint publicado en Hugging Face por el usuario `camiellia`. El nombre del repositorio sugiere una posible variante de la familia Qwen3 con aproximadamente 3 mil millones de parámetros, pero la información disponible no lo confirma. La model card es una plantilla generada automáticamente que no incluye descripción técnica, datos de entrenamiento, licencia ni capacidades.
 
 El repositorio registra 0 descargas, 0 likes y un tamaño de 0.0 GB, lo que indica que probablemente no contiene pesos reales o se trata de un proyecto experimental sin contenido verificable. No se dispone de información sobre arquitectura, contexto, idiomas ni rendimiento. Este modelo no debe considerarse apto para uso en producción sin una evaluación técnica previa y exhaustiva.
 
@@ -54,6 +54,6 @@ No disponible. No hay informacion suficiente para comparar este modelo con alter
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/camiellia/qwen3b-sgpqa-random-seed42
+- Hugging Face: https://huggingface.co/camiellia/qwen3b-sgpqa-random-seed42
 - Repositorio de Qwen3 (contexto): https://github.com/QwenLM/Qwen3
-- Ficha similar en HuggingFace: https://huggingface.co/camiellia/qwen3b-sgpqa-kcenter
+- Ficha similar en Hugging Face: https://huggingface.co/camiellia/qwen3b-sgpqa-kcenter

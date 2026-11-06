@@ -106,7 +106,7 @@ TWGuard obtiene el mejor F1 global del benchmark y el segundo mejor FPR tras Shi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chunghwa-telecom/twguard
+- Modelo en Hugging Face: https://huggingface.co/chunghwa-telecom/twguard
 - Paper (arXiv): https://arxiv.org/abs/2604.16542
 - Articulo en Intelligent Systems with Applications: https://www.sciencedirect.com/science/article/pii/S2667305326001067
 - Demo en Kaggle: https://www.kaggle.com/code/petertcchu/twguard-demo

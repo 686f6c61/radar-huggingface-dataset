@@ -6,7 +6,7 @@ computer-run1-step240 es un checkpoint intermedio de un experimento de aprendiza
 
 El interes del artefacto es metodologico mas que de producto: documenta con detalle como cambian rasgos estilisticos y de discurso (ratio realis/irrealis, densidad de preguntas, hedges, uso de parentesis, longitud de turno, surprisal por token) al aplicar una "constitucion" de cuatro lineas primero y seis marcos ponderados despues. Es, por tanto, material para investigacion en alineamiento, reward models y constituciones de preferencia, no un modelo listo para produccion.
 
-El modelo se distribuye como safetensors en bf16 (exportados desde un checkpoint FSDP2 con maestro en fp32), con un tamano de repositorio de 141,1 GB, y hereda el tokenizador y el formato de chat en texto plano de Computer-7. No tiene descargas ni "likes" registrados en HuggingFace y no publica resultados de benchmarks.
+El modelo se distribuye como safetensors en bf16 (exportados desde un checkpoint FSDP2 con maestro en fp32), con un tamano de repositorio de 141,1 GB, y hereda el tokenizador y el formato de chat en texto plano de Computer-7. No tiene descargas ni "likes" registrados en Hugging Face y no publica resultados de benchmarks.
 
 ## Especificaciones tecnicas
 
@@ -79,17 +79,17 @@ A partir del paso 160, con los seis marcos, la surprisal por token subio de 1,08
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| computer-run1-step240 | ~70,55 mil millones | no disponible | llama3.1 | HuggingFace, 0 descargas, sin benchmarks | Checkpoint RL intermedio sobre Computer-7 |
-| cosmicoptima/computer-7 (modelo base) | no disponible | no disponible | no disponible | HuggingFace | Modelo de partida del experimento; sin datos publicos en la informacion disponible |
+| computer-run1-step240 | ~70,55 mil millones | no disponible | llama3.1 | Hugging Face, 0 descargas, sin benchmarks | Checkpoint RL intermedio sobre Computer-7 |
+| cosmicoptima/computer-7 (modelo base) | no disponible | no disponible | no disponible | Hugging Face | Modelo de partida del experimento; sin datos publicos en la informacion disponible |
 | Llama 3.1 70B | ~70 mil millones | 128.000 tokens (segun la familia Llama 3.1) | Llama 3.1 Community License | Ampliamente disponible | Referencia de la misma familia y licencia; no se confirma que Computer-7 derive de el |
-| Qwen2.5-72B | ~72 mil millones | no disponible en esta consulta | no disponible en esta consulta | HuggingFace | Alternativa de tamano comparable, con licencia distinta |
+| Qwen2.5-72B | ~72 mil millones | no disponible en esta consulta | no disponible en esta consulta | Hugging Face | Alternativa de tamano comparable, con licencia distinta |
 
 La informacion disponible no permite establecer una comparativa de rendimiento fiable: no hay benchmarks publicados para computer-run1-step240 ni para Computer-7.
 
 ## Limitaciones y advertencias
 
 - Checkpoint intermedio: es el paso 240 de una ejecucion de RL, no una version final validada. El propio autor lo describe como parte de una serie con otros checkpoints (pasos 100, 120 y 160).
-- Sin evaluacion: no hay benchmarks, evaluaciones de seguridad ni analisis de sesgos publicados. Cero descargas y cero "likes" en HuggingFace implican ausencia de validacion por terceros.
+- Sin evaluacion: no hay benchmarks, evaluaciones de seguridad ni analisis de sesgos publicados. Cero descargas y cero "likes" en Hugging Face implican ausencia de validacion por terceros.
 - Formato de uso rigido: no usa plantilla de chat; requiere el formato en texto plano `**User:** ... **Model C:** ...` bajo una cabecera de documento. Un uso incorrecto del formato degradara las respuestas.
 - Riesgo de alucinacion: no cuantificado, pero inherente a un modelo generativo de este tamano sin evaluacion publicada.
 - Sesgos: no documentados. El entrenamiento optimiza criterios subjetivos definidos por una constitucion (por ejemplo, "lo mas ingenioso" o "lo mas propio"), lo que puede introducir sesgos estilisticos y de contenido no auditados.
@@ -101,7 +101,7 @@ La informacion disponible no permite establecer una comparativa de rendimiento f
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cosmicoptima/computer-run1-step240
+- Modelo en Hugging Face: https://huggingface.co/cosmicoptima/computer-run1-step240
 - Modelo base (Computer-7): https://huggingface.co/cosmicoptima/computer-7
 - Checkpoints intermedios mencionados en la model card (computer-9c/9d/9e, pasos 100/120/160): no disponible como enlace directo en la informacion proporcionada
 - Paper, blog o repositorio asociados: no disponibles

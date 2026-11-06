@@ -124,10 +124,10 @@ Con 26,5B parámetros totales y 8/128 expertos activos, Rune v3 se sitúa en el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/surogate/rune-26b-a4b-GGUF
+- Hugging Face: https://huggingface.co/surogate/rune-26b-a4b-GGUF
 - Revisión con los builds GGUF de Rune v1: https://huggingface.co/surogate/rune-26b-a4b-GGUF/tree/2a155046d99949c8d8b413e213a78b4dc724dcb6
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
-- Colección Gemma 4 en HuggingFace: https://huggingface.co/collections/google/gemma-4
+- Colección Gemma 4 en Hugging Face: https://huggingface.co/collections/google/gemma-4
 - Motor de entrenamiento y servicio surogate: https://github.com/invergent-ai/surogate
 - Blog de lanzamiento: https://invergent.ai/blog/rune/
 - Decision Index (leaderboard): https://huggingface.co/spaces/multimodalart/jev-decision-index

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-relay-laya es un modelo clasificador entrenado a partir de Laya (una variante multilingue basada en mmBERT-base) y publicado por el usuario eltonssouza en HuggingFace. No es un modelo generativo de proposito general, sino un componente de enrutamiento: responde a 18 preguntas tipadas sobre una peticion de codigo para que el router `laya/auto` de Relay, un arnes de agente de programacion, pueda seleccionar el modelo mas barato con probabilidad razonable de exito.
+relay-laya es un modelo clasificador entrenado a partir de Laya (una variante multilingue basada en mmBERT-base) y publicado por el usuario eltonssouza en Hugging Face. No es un modelo generativo de proposito general, sino un componente de enrutamiento: responde a 18 preguntas tipadas sobre una peticion de codigo para que el router `laya/auto` de Relay, un arnes de agente de programacion, pueda seleccionar el modelo mas barato con probabilidad razonable de exito.
 
 El modelo analiza cada solicitud de codigo y extrae campos estructurados como el tipo de tarea, la complejidad, el alcance, el riesgo, el nivel de capacidad y esfuerzo de razonamiento recomendados, el rol del agente, el nivel de validacion, las herramientas necesarias y la sensibilidad de seguridad. Con 321.908.998 parametros y un peso de repositorio de 0,7 GB, es un modelo compacto pensado para ejecutarse como paso previo y de bajo coste dentro de un pipeline mayor.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| relay-laya | 321.908.998 | no disponible | Clasificador de enrutamiento para peticiones de codigo | MIT | HuggingFace (`eltonssouza/relay-laya`) |
+| relay-laya | 321.908.998 | no disponible | Clasificador de enrutamiento para peticiones de codigo | MIT | Hugging Face (`eltonssouza/relay-laya`) |
 | no disponible | - | - | - | - | - |
 
 No se dispone en la informacion proporcionada de modelos comparables de la misma categoria (clasificadores de enrutamiento especificos para arneses de agentes de codigo) con datos verificables de parametros, contexto o rendimiento.
@@ -79,7 +79,7 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 ## Limitaciones y advertencias
 
 - Sobreajuste a plantillas: el entrenamiento usa 1100 ejercicios sinteticos generados por plantillas, y el conjunto de validacion procede de las mismas plantillas, por lo que la precision real en peticiones de usuarios sera previsiblemente inferior a la reportada. El propio autor lo advierte.
-- Datos escasos: 15 descargas y 0 likes en HuggingFace; no hay evidencia de adopcion ni de validacion externa.
+- Datos escasos: 15 descargas y 0 likes en Hugging Face; no hay evidencia de adopcion ni de validacion externa.
 - Conjunto de entrenamiento reducido y sintetico: 1100 ejercicios y 4 rondas de ajuste fino limitan la cobertura de casos reales.
 - Posible necesidad de reentrenamiento: el autor indica que deberia reentrenarse con datos de uso real para mejorar la precision.
 - Dependencia de libreria: requiere el paquete `laya` version 0.3.27, lo que ata su uso a ese ecosistema.
@@ -90,7 +90,7 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eltonssouza/relay-laya
+- Modelo en Hugging Face: https://huggingface.co/eltonssouza/relay-laya
 - Repositorio de Laya: https://github.com/NandhaKishorM/laya
 - Proyecto Relay (arnes de agente que consume el modelo): no disponible como enlace directo en la informacion proporcionada
 - Paquete Python `laya` (version 0.3.27): no disponible como enlace directo en la informacion proporcionada

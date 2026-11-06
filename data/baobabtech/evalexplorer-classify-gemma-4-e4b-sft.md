@@ -98,7 +98,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baobabtech/evalexplorer-classify-gemma-4-e4b-sft
+- Modelo en Hugging Face: https://huggingface.co/baobabtech/evalexplorer-classify-gemma-4-e4b-sft
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B-it
 - Dataset de experimentos: https://huggingface.co/datasets/baobabtech/evalexplorer-classify-experiments
 - Codigo del pipeline: https://huggingface.co/datasets/baobabtech/evalexplorer-classify-experiments/tree/main/code

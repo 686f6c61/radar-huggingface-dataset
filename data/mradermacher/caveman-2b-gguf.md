@@ -92,7 +92,7 @@ En cuanto a tamano de parametros, Caveman-2B se situa en la misma liga que SmolL
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Caveman-2B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Caveman-2B-GGUF
 - Modelo base: https://huggingface.co/CrowdMind/Caveman-2B
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Caveman-2B-GGUF
 - Peticiones de cuantizacion y preguntas frecuentes: https://huggingface.co/mradermacher/model_requests

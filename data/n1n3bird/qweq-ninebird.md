@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tareas | Licencia | Disponibilidad |
 |---|---:|---:|---|---|---|
-| QWeQ-NineBird-v1 | 39,18 M | 128 tokens | 17 intenciones, 15 emociones, intensidad y polaridad | Apache-2.0 | ONNX en HuggingFace |
-| hfl/rbt3 (modelo base) | no disponible | no disponible | Backbone RoBERTa chino de 3 capas; sin cabezas multi-tarea documentadas | no disponible en la información | HuggingFace |
+| QWeQ-NineBird-v1 | 39,18 M | 128 tokens | 17 intenciones, 15 emociones, intensidad y polaridad | Apache-2.0 | ONNX en Hugging Face |
+| hfl/rbt3 (modelo base) | no disponible | no disponible | Backbone RoBERTa chino de 3 capas; sin cabezas multi-tarea documentadas | no disponible en la información | Hugging Face |
 | Alternativas multi-tarea comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de información sobre otros modelos comparables de clasificación multi-tarea para chats chinos en la documentación proporcionada.
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos comparables de clasificación 
 
 ## Enlaces
 
-- [HuggingFace: N1n3Bird/QWeQ-NineBird](https://huggingface.co/N1n3Bird/QWeQ-NineBird)
+- [Hugging Face: N1n3Bird/QWeQ-NineBird](https://huggingface.co/N1n3Bird/QWeQ-NineBird)
 - [Modelo base hfl/rbt3](https://huggingface.co/hfl/rbt3)
 
 No se han proporcionado enlaces adicionales a papers, blogs, repositorios o demos en la información disponible.

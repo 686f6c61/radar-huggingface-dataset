@@ -98,7 +98,7 @@ No se dispone de datos verificables de alternativas comparables (parámetros, co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ2e-mtp
+- Hugging Face: https://huggingface.co/bambocher/Qwen3.5-0.8B-oQ2e-mtp
 - Repositorio de la herramienta de cuantización oQ (oMLX): https://github.com/jundot/omlx
 - Modelo base Qwen3.5-0.8B: no disponible en la información proporcionada
 - Paper, blog o demo del autor: no disponible

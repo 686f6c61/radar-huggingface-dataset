@@ -18,7 +18,7 @@ Su relevancia es limitada pero practica: desbloquea la ejecucion offline de un m
 | Longitud de contexto | No aplica (no es un modelo de lenguaje; el modelo no expone ventana de contexto) |
 | Tipos de cuantizacion | GGUF en Q4_K_M. El repositorio publica un unico archivo, `Qwen-Image-2.1-Q4-sd.cpp.gguf` |
 | Idiomas soportados | No disponible |
-| Licencia | `qwen-research` (etiquetada como `other` en HuggingFace), heredada de Qwen/Qwen-Image-2.1 |
+| Licencia | `qwen-research` (etiquetada como `other` en Hugging Face), heredada de Qwen/Qwen-Image-2.1 |
 | Formato de pesos | GGUF |
 | Tamano del repositorio | 6,0 GB |
 | Modelo base | Qwen/Qwen-Image-2.1 |
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento de modelos comparables en la informacion p
 - La correccion no altera los pesos: modifica 3 bytes de metadatos por archivo (la declaracion de forma de `img_in.weight`). Los hashes no coinciden con los del repositorio original, aunque los datos de tensor sean identicos. Quien dependa de sumas de verificacion debe tenerlo en cuenta.
 - Dependencia de la version del cargador: la correccion asume que stable-diffusion.cpp infiere `in_channels` y `hidden_size` a partir de `img_in.weight` (comprobado en master-889, commit c678dfe). Un cambio futuro en esa logica podria requerir otra correccion.
 - Metadatos residuales: los archivos conservan la clave `comfy.gguf.orig_shape.img_in.weight`, por lo que herramientas que lean esa clave podrian comportarse de forma distinta a las que usan la forma declarada.
-- Licencia: el modelo se distribuye bajo Qwen Research License. Se trata de una licencia de investigacion, no de una licencia permisiva generica; antes de cualquier uso comercial hay que revisar el texto completo enlazado en el repositorio. El repositorio de HuggingFace la etiqueta como `other`.
+- Licencia: el modelo se distribuye bajo Qwen Research License. Se trata de una licencia de investigacion, no de una licencia permisiva generica; antes de cualquier uso comercial hay que revisar el texto completo enlazado en el repositorio. El repositorio de Hugging Face la etiqueta como `other`.
 - Validacion comunitaria practicamente nula: 15 descargas y 0 likes en el momento de redactar esta ficha. No hay issues ni informes de terceros que confirmen el comportamiento en otros sistemas.
 - Ausencia de informacion sobre sesgos: la model card no documenta sesgos demograficos, culturales ni de representacion, ni existe una evaluacion publicada para este modelo concreto en la informacion disponible.
 - Riesgo de alucinacion: no aplica en el sentido de texto factual, pero si en el sentido generativo habitual de los modelos de difusion: el modelo puede producir contenido visual incoherente, texto ilegible o elementos anatomicamente incorrectos. No hay tasas de fallo publicadas para esta cuantizacion.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Sentiment-analysis-rf (Ttt37/sentiment-analysis-rf) es un clasificador de sentimiento en ingles publicado en HuggingFace por el usuario Ttt37. No es un modelo de lenguaje neuronal: se trata de un pipeline clasico de aprendizaje automatico compuesto por un `RandomForestClassifier` de scikit-learn sobre una representacion Bag of Words, con preprocesado de texto basado en expresiones regulares, eliminacion de stopwords y lematizacion con NLTK (`WordNetLemmatizer`). El repositorio, de 0,1 GB, contiene dos artefactos serializados con joblib: `sentiment_model.pkl` (el bosque) y `vectorizer.pkl` (el vectorizador).
+Sentiment-analysis-rf (Ttt37/sentiment-analysis-rf) es un clasificador de sentimiento en ingles publicado en Hugging Face por el usuario Ttt37. No es un modelo de lenguaje neuronal: se trata de un pipeline clasico de aprendizaje automatico compuesto por un `RandomForestClassifier` de scikit-learn sobre una representacion Bag of Words, con preprocesado de texto basado en expresiones regulares, eliminacion de stopwords y lematizacion con NLTK (`WordNetLemmatizer`). El repositorio, de 0,1 GB, contiene dos artefactos serializados con joblib: `sentiment_model.pkl` (el bosque) y `vectorizer.pkl` (el vectorizador).
 
 El modelo resuelve una tarea acotada de clasificacion de texto de una sola etiqueta: dado un texto en ingles, predice una categoria de sentimiento o emocion. No genera texto, no razona y no mantiene contexto conversacional, por lo que su utilidad practica se limita al etiquetado por lotes y a servir de linea base ligera en proyectos de PLN.
 
@@ -92,5 +92,5 @@ La diferencia principal frente a los transformers de la comparativa es que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ttt37/sentiment-analysis-rf
+- Modelo en Hugging Face: https://huggingface.co/Ttt37/sentiment-analysis-rf
 - No se han encontrado en la informacion disponible enlaces a papers, blogs, repositorios de codigo, demos ni articulos tecnicos asociados a este modelo.

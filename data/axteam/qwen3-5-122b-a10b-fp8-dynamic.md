@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Tampo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-122B-A10B-FP8-dynamic (este) | ~125B | ~10B | No disponible (ejemplo: 32768) | FP8 dinamico (W8A8) | Apache-2.0 | HuggingFace, safetensors |
-| Qwen/Qwen3.5-122B-A10B (base) | ~122B | ~10B | No disponible | BF16 (sin cuantizar) | Apache-2.0 | HuggingFace, safetensors |
-| DeepSeek-V3 | 671B | 37B | 128K | BF16 / FP8 oficial | Licencia propia (uso comercial con condiciones) | HuggingFace |
-| Qwen3-30B-A3B | 30B | 3B | No disponible | BF16 y derivados comunitarios | Apache-2.0 | HuggingFace, GGUF |
+| Qwen3.5-122B-A10B-FP8-dynamic (este) | ~125B | ~10B | No disponible (ejemplo: 32768) | FP8 dinamico (W8A8) | Apache-2.0 | Hugging Face, safetensors |
+| Qwen/Qwen3.5-122B-A10B (base) | ~122B | ~10B | No disponible | BF16 (sin cuantizar) | Apache-2.0 | Hugging Face, safetensors |
+| DeepSeek-V3 | 671B | 37B | 128K | BF16 / FP8 oficial | Licencia propia (uso comercial con condiciones) | Hugging Face |
+| Qwen3-30B-A3B | 30B | 3B | No disponible | BF16 y derivados comunitarios | Apache-2.0 | Hugging Face, GGUF |
 
 La alternativa directa es el modelo base Qwen/Qwen3.5-122B-A10B, que ofrece calidad maxima a costa de aproximadamente el doble de memoria. Frente a DeepSeek-V3, este modelo es mucho mas ligero en memoria y con licencia Apache-2.0 mas permisiva, aunque con menos parametros totales. Frente a Qwen3-30B-A3B, ofrece presumiblemente mayor calidad a cambio de requisitos de hardware muy superiores.
 

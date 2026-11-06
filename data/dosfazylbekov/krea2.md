@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`dosfazylbekov/krea2` es un adaptador LoRA para generación de imágenes a partir de texto (pipeline `text-to-image`), publicado en HuggingFace el 28 de octubre de 2026 y construido sobre el modelo base `krea/Krea-2-Raw`. El repositorio se distribuye en formato diffusers y ocupa 13,5 GB. La model card es prácticamente inexistente: se reduce a un título ("muse"), un widget de ejemplo y un enlace de descarga, sin documentación de entrenamiento, hiperparámetros, dataset ni palabra de activación (`instance_prompt: null`).
+`dosfazylbekov/krea2` es un adaptador LoRA para generación de imágenes a partir de texto (pipeline `text-to-image`), publicado en Hugging Face el 28 de octubre de 2026 y construido sobre el modelo base `krea/Krea-2-Raw`. El repositorio se distribuye en formato diffusers y ocupa 13,5 GB. La model card es prácticamente inexistente: se reduce a un título ("muse"), un widget de ejemplo y un enlace de descarga, sin documentación de entrenamiento, hiperparámetros, dataset ni palabra de activación (`instance_prompt: null`).
 
 Se trata, por tanto, de un artefacto de peso ligero desde el punto de vista documental pero no desde el técnico: el tamaño del repositorio (13,5 GB) es muy superior al de un adaptador LoRA típico, lo que sugiere que el repositorio puede contener pesos del modelo base, checkpoints fusionados o varias versiones del adaptador en alta precisión. Esta hipótesis no puede confirmarse con la información disponible y debería verificarse inspeccionando el árbol de ficheros antes de cualquier uso en producción.
 
@@ -94,7 +94,7 @@ No se dispone de datos objetivos (parametros, contexto, rendimiento, licencia) d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dosfazylbekov/krea2
+- Hugging Face: https://huggingface.co/dosfazylbekov/krea2
 - Ficheros del repositorio: https://huggingface.co/dosfazylbekov/krea2/tree/main
 - Modelo base: https://huggingface.co/krea/Krea-2-Raw
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios de codigo ni demos adicionales.

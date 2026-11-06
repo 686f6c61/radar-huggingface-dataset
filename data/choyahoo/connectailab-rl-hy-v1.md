@@ -99,7 +99,7 @@ No hay datos publicos que permitan compararlo con otros adaptadores de decision,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/choyahoo/connectailab-rl-hy-v1
+- Modelo en Hugging Face: https://huggingface.co/choyahoo/connectailab-rl-hy-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Repositorio del simulador Connect Tycoon: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para el entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

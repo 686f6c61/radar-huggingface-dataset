@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo Reeesh05/detect_blurr es un repositorio publicado en HuggingFace por el usuario Reeesh05. No se ha proporcionado documentacion en la model card, por lo que se desconocen sus caracteristicas tecnicas, arquitectura y casos de uso previstos. El repositorio tiene un tamano de 0.1 GB y esta etiquetado con el formato ONNX bajo licencia Apache 2.0. No se ha indicado el pipeline ni los idiomas soportados.
+El modelo Reeesh05/detect_blurr es un repositorio publicado en Hugging Face por el usuario Reeesh05. No se ha proporcionado documentacion en la model card, por lo que se desconocen sus caracteristicas tecnicas, arquitectura y casos de uso previstos. El repositorio tiene un tamano de 0.1 GB y esta etiquetado con el formato ONNX bajo licencia Apache 2.0. No se ha indicado el pipeline ni los idiomas soportados.
 
 Debido a la ausencia de informacion, no es posible evaluar que problema resuelve o por que seria relevante. El nombre del repositorio sugiere una posible aplicacion en deteccion de desenfoque, pero no hay evidencia documental que lo confirme.
 
@@ -58,4 +58,4 @@ No se puede realizar una comparativa porque no se dispone de informacion sobre e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Reeesh05/detect_blurr
+- Hugging Face: https://huggingface.co/Reeesh05/detect_blurr

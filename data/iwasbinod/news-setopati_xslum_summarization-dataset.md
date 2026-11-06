@@ -29,7 +29,7 @@ La arquitectura del modelo es la de Llama 3.2 3B Instruct, un transformer decode
 - Hereda las capacidades generales del modelo base Llama 3.2 Instruct: razonamiento, comprensión de instrucciones y generación de texto coherente.
 - No se documentan capacidades específicas de tool calling, agentes o multi-step reasoning en la model card.
 - No se indica soporte para visión, audio u otras modalidades.
-- El modelo está etiquetado como `text-generation-inference`, por lo que es compatible con el pipeline de generación de texto de HuggingFace.
+- El modelo está etiquetado como `text-generation-inference`, por lo que es compatible con el pipeline de generación de texto de Hugging Face.
 
 ## Casos de uso
 
@@ -73,6 +73,6 @@ No se dispone de datos de rendimiento para comparar objetivamente. El modelo bas
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/iwasbinod/news-setopati_xslum_summarization-dataset
+- Repositorio Hugging Face: https://huggingface.co/iwasbinod/news-setopati_xslum_summarization-dataset
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-3B-Instruct-bnb-4bit
 - Librería Unsloth: https://github.com/unslothai/unsloth

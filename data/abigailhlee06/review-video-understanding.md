@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abigailhlee06/review-video-understanding` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en HuggingFace bajo la etiqueta `research-notes`. La model card describe explícitamente un artefacto exploratorio sobre comprensión de vídeo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; el autor indica que no se presenta como un paper completado ni como una release de modelos entrenados.
+`abigailhlee06/review-video-understanding` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación publicado en Hugging Face bajo la etiqueta `research-notes`. La model card describe explícitamente un artefacto exploratorio sobre comprensión de vídeo que organiza motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación; el autor indica que no se presenta como un paper completado ni como una release de modelos entrenados.
 
 El contenido declarado se centra en el alcance de la pregunta de investigación, posibles factores de confusión, una comparación propuesta con baselines emparejados y un contexto de evaluación concreto sobre MSR-VTT y ActivityNet Captions. El repositorio incluye únicamente dos ficheros según la model card: `notes.md` como artefacto principal y `README.md` como documentación.
 
@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/abigailhlee06/review-video-understanding
+- Hugging Face: https://huggingface.co/abigailhlee06/review-video-understanding
 - Fichero principal citado en la model card: `notes.md` (dentro del repositorio)
 - Documentación: `README.md` (dentro del repositorio)
 - No se han encontrado en la búsqueda web papers, blogs, repositorios de código ni demos adicionales asociados a este repositorio.

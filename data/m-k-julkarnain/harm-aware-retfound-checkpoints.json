@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "m-k-julkarnain/harm-aware-retfound-checkpoints",
+  "slug": "m-k-julkarnain-harm-aware-retfound-checkpoints",
+  "author": "m-k-julkarnain",
+  "url": "https://huggingface.co/m-k-julkarnain/harm-aware-retfound-checkpoints",
+  "created_at": "2026-07-16T19:50:10.000Z",
+  "updated_at": "2026-11-06T10:56:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23053520369,
+  "storage_human": "23.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harm-Aware Reliability Orchestrator (Rharm) - Source Code and ... - Zenodo",
+      "url": "https://zenodo.org/records/22022568",
+      "snippet": "Implementation of the tri-axis non-invasive reliability orchestrator (Rharm) for RETFound-DINOv2 vision foundation models in tele-ophthalmology screening. Includes monitoring pipelines for ZCA-whitened representation discrepancy, prediction uncertainty, and physical image quality"
+    },
+    {
+      "title": "open-eye/RETFound_MAE · Hugging Face",
+      "url": "https://huggingface.co/open-eye/RETFound_MAE",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

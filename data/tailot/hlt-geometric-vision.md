@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`tailot/hlt-geometric-vision` es un modelo publicado en HuggingFace por el usuario `tailot` bajo licencia Apache 2.0. La model card asociada está practicamente vacía: solo contiene el campo de licencia en el frontmatter YAML, sin descripción, sin especificaciones tecnicas ni documentación sobre arquitectura, entrenamiento o uso previsto. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+`tailot/hlt-geometric-vision` es un modelo publicado en Hugging Face por el usuario `tailot` bajo licencia Apache 2.0. La model card asociada está practicamente vacía: solo contiene el campo de licencia en el frontmatter YAML, sin descripción, sin especificaciones tecnicas ni documentación sobre arquitectura, entrenamiento o uso previsto. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
-Por el identificador del repositorio se puede inferir que el autor lo orienta a visión con algun componente geométrico ("hlt-geometric-vision"), pero esta interpretación no está respaldada por ningun dato publicado en la model card ni en los metadatos de HuggingFace. No se dispone de informacion sobre parametros, contexto, idiomas, formato de pesos ni pipeline asociado.
+Por el identificador del repositorio se puede inferir que el autor lo orienta a visión con algun componente geométrico ("hlt-geometric-vision"), pero esta interpretación no está respaldada por ningun dato publicado en la model card ni en los metadatos de Hugging Face. No se dispone de informacion sobre parametros, contexto, idiomas, formato de pesos ni pipeline asociado.
 
 Dado que la ficha se elabora exclusivamente a partir de la informacion disponible, la mayoria de apartados técnicos se marcan como "no disponible". Se recomienda tratar este repositorio como un artefacto sin documentar y no asumir capacidades concretas sin inspeccionar los archivos del repositorio directamente.
 
@@ -23,7 +23,7 @@ Dado que la ficha se elabora exclusivamente a partir de la informacion disponibl
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. No consta si se trata de un transformer, un modelo híbrido, un modelo de difusion o cualquier otra familia arquitectonica. Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. No consta si se trata de un transformer, un modelo híbrido, un modelo de difusion o cualquier otra familia arquitectonica. Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como atencion lineal o decodificacion especulativa.
 
 El nombre del repositorio sugiere un enfoque hacia visión por computador con algun componente geométrico, pero esta hipotesis no está confirmada por ningun documento del autor. Cualquier afirmacion adicional sobre el entrenamiento seria especulativa.
 
@@ -68,5 +68,5 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tailot/hlt-geometric-vision
+- Repositorio en Hugging Face: https://huggingface.co/tailot/hlt-geometric-vision
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l3_remove30_swapgapiter_b010_r05` es un artefacto de investigacion publicado por el usuario Jeesup en HuggingFace. Se trata de un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct` al que se le ha aplicado una compresion por descomposicion en valores singulares mediante el metodo SVD-LLM, eliminando el 30,01 % de los parametros densos, seguida de un proceso de edicion de parametros denominado *parameter-neutral swap*. El resultado declarado es una fraccion de parametros de 0,6999 respecto del modelo denso original.
+`svd-safety-l3_remove30_swapgapiter_b010_r05` es un artefacto de investigacion publicado por el usuario Jeesup en Hugging Face. Se trata de un checkpoint derivado de `meta-llama/Meta-Llama-3-8B-Instruct` al que se le ha aplicado una compresion por descomposicion en valores singulares mediante el metodo SVD-LLM, eliminando el 30,01 % de los parametros densos, seguida de un proceso de edicion de parametros denominado *parameter-neutral swap*. El resultado declarado es una fraccion de parametros de 0,6999 respecto del modelo denso original.
 
 El interes del checkpoint no es su calidad como asistente, sino su papel como sujeto experimental. Forma parte de una rejilla de experimentos que estudia como la compresion SVD degrada el comportamiento de seguridad de un modelo alineado y que regla de seleccion de componentes repara mejor ese dano. En esta celda concreta la regla de seleccion es `gap_iter`, el presupuesto de restauracion es del 1,000 % de los parametros densos, se han aplicado 5 de las 10 rondas iterativas previstas (0,100 % de parametros por ronda) y se han restaurado 5.598 componentes sustituyendo otros tantos.
 
@@ -90,7 +90,7 @@ Las cifras siguientes son estimaciones generales para un modelo denso de aproxim
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| svd-safety-l3_remove30_swapgapiter_b010_r05 | 8.030 M declarados en safetensors; fraccion densa 0,6999 segun la model card | 8.192 tokens (heredado del base) | ASR AdvBench 0,1700; ASR StrongREJECT 0,2700; macro over-refusal 0,0711 | Meta Llama 3 Community License | Publico en HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| svd-safety-l3_remove30_swapgapiter_b010_r05 | 8.030 M declarados en safetensors; fraccion densa 0,6999 segun la model card | 8.192 tokens (heredado del base) | ASR AdvBench 0,1700; ASR StrongREJECT 0,2700; macro over-refusal 0,0711 | Meta Llama 3 Community License | Publico en Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | meta-llama/Meta-Llama-3-8B-Instruct (base sin comprimir) | 8.030 M | 8.192 tokens | No disponible en la informacion proporcionada | Meta Llama 3 Community License | Publico y ampliamente utilizado |
 | Otras celdas de la rejilla del mismo autor (distintas reglas de seleccion y presupuestos) | No disponible | No disponible | No disponible | Meta Llama 3 Community License | Referenciadas en la model card como parte del mismo estudio |
 | Metodos alternativos de compresion de Llama-3-8B (por ejemplo, poda estructurada o cuantizacion) | No disponible | No disponible | No disponible | Depende de cada publicacion | No disponible |
@@ -113,7 +113,7 @@ No se dispone de resultados de benchmarks comparables entre el checkpoint compri
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r05
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r05
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Licencia del modelo base (Meta Llama 3 Community License): https://llama.meta.com/llama3/license/
 - Politica de uso aceptable de Meta Llama 3 (`USE_POLICY.md`, incluida en el repositorio): https://llama.meta.com/llama3/use-policy/

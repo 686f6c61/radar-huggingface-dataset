@@ -91,7 +91,7 @@ La comparación directa con el Whisper large-v3-turbo original en azerí no est�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hasan0v/whisper-turbo-az-ct2
+- Modelo en Hugging Face: https://huggingface.co/hasan0v/whisper-turbo-az-ct2
 - Modelo base (ajuste fino original): https://huggingface.co/hasan0v/whisper-turbo-az
 - Demo en vivo: https://huggingface.co/spaces/hasan0v/whisper-turbo-az-demo
 - Repositorio de faster-whisper: https://github.com/SYSTRAN/faster-whisper

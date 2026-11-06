@@ -29,7 +29,7 @@ La información disponible es muy limitada: la model card no documenta arquitect
 
 La información proporcionada no describe la arquitectura del modelo base: no se indica si es un transformer denso, un modelo híbrido ni detalles de atención. El identificador del modelo base (`gemma4-12B-medical-sft`) sugiere una inicialización sobre la familia Gemma 4 de aproximadamente 12 B y un ajuste supervisado en dominio médico, pero esto es una inferencia a partir del nombre y no está confirmado en la documentación. Tampoco se detallan el volumen de tokens de entrenamiento, la composición del corpus clínico, ni si hubo fases de RLHF o DPO.
 
-Lo único verificable son los metadatos del proceso de conversión a GGUF: se partió de pesos en formato HuggingFace (`convert_type: hf`), se cuantizaron los tensores de salida y se marcó `skip_mmproj: 1`, lo que indica que no se generó la cuantización del proyector multimodal (mmproj). Cuando el repositorio de origen incluye ese fichero, se emplea para entradas de imagen; no se confirma en la información disponible que el modelo base sea multimodal, por lo que esta marca debe interpretarse solo como un dato del pipeline de conversión.
+Lo único verificable son los metadatos del proceso de conversión a GGUF: se partió de pesos en formato Hugging Face (`convert_type: hf`), se cuantizaron los tensores de salida y se marcó `skip_mmproj: 1`, lo que indica que no se generó la cuantización del proyector multimodal (mmproj). Cuando el repositorio de origen incluye ese fichero, se emplea para entradas de imagen; no se confirma en la información disponible que el modelo base sea multimodal, por lo que esta marca debe interpretarse solo como un dato del pipeline de conversión.
 
 ## Capacidades
 
@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, por lo q
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/gemma4-12B-medical-sft-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/gemma4-12B-medical-sft-GGUF
 - Página de descargas del cuantizador para este modelo: https://hf.tst.eu/model#gemma4-12B-medical-sft-GGUF
 - Modelo base: https://huggingface.co/Shaleen123/gemma4-12B-medical-sft
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

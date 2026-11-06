@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kkaminskidawid/mocov3-matching-baseline` es un repositorio experimental publicado en HuggingFace que contiene una implementacion propia de MoCo v3 orientada a tareas de *matching*, en una escala *nano* deliberadamente reducida. El autor indica explicitamente que el objetivo es poder inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo, y que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado ni auditado.
+`kkaminskidawid/mocov3-matching-baseline` es un repositorio experimental publicado en Hugging Face que contiene una implementacion propia de MoCo v3 orientada a tareas de *matching*, en una escala *nano* deliberadamente reducida. El autor indica explicitamente que el objetivo es poder inspeccionar los cambios de arquitectura antes de lanzar un entrenamiento completo, y que el fichero `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo, no un modelo entrenado ni auditado.
 
 El artefacto consta de 33.088 parametros totales segun los metadatos del safetensors, con atencion estandar, fusion por tensor, activacion ReLU y normalizacion por batchnorm. La receta de experimento por defecto usa SGD con un scheduler polinomial. No se declara ninguna puntuacion de benchmark, no se especifican idiomas ni datos de entrenamiento, y el repositorio no registra descargas ni valoraciones en el momento de la consulta.
 
@@ -76,7 +76,7 @@ Los datos de los modelos externos que aparecen a continuacion no proceden de la 
 
 | Modelo | Naturaleza del artefacto | Escala | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| kkaminskidawid/mocov3-matching-baseline | Checkpoint de inicializacion sin entrenar, implementacion propia | nano (33.088 parametros) | BSD-3-Clause | Publicado en HuggingFace, 0 descargas |
+| kkaminskidawid/mocov3-matching-baseline | Checkpoint de inicializacion sin entrenar, implementacion propia | nano (33.088 parametros) | BSD-3-Clause | Publicado en Hugging Face, 0 descargas |
 | Implementacion de referencia de MoCo v3 (facebookresearch) | Codigo oficial con pesos entrenados | no disponible en esta ficha | consultar el repositorio oficial | Codigo publico |
 | Otros baselines autosupervisados de matching | Pesos entrenados con benchmarks publicados | no disponible | variable segun proyecto | no disponible |
 
@@ -95,5 +95,5 @@ La diferencia fundamental frente a cualquier alternativa entrenada es que este r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kkaminskidawid/mocov3-matching-baseline
+- Hugging Face: https://huggingface.co/kkaminskidawid/mocov3-matching-baseline
 - Paper, repositorio de codigo, blog o demo: no disponible en la informacion proporcionada.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`xw17/gemma-3-12b-it_SFT_lora_ifhreadiness` es un adaptador LoRA de ajuste supervisado (SFT) publicado en HuggingFace por el usuario `xw17`, construido presumiblemente sobre el modelo base `google/gemma-3-12b-it`. El repositorio ocupa 0,2 GB, un tamano compatible con pesos de adaptador y no con los pesos completos de un modelo de 12.000 millones de parametros (que en bf16 rondarian los 24 GB), lo que confirma que se trata de un delta de ajuste fino y no de un modelo completo.
+`xw17/gemma-3-12b-it_SFT_lora_ifhreadiness` es un adaptador LoRA de ajuste supervisado (SFT) publicado en Hugging Face por el usuario `xw17`, construido presumiblemente sobre el modelo base `google/gemma-3-12b-it`. El repositorio ocupa 0,2 GB, un tamano compatible con pesos de adaptador y no con los pesos completos de un modelo de 12.000 millones de parametros (que en bf16 rondarian los 24 GB), lo que confirma que se trata de un delta de ajuste fino y no de un modelo completo.
 
-La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla autogenerada de HuggingFace, sin ninguna seccion completada (todos los campos figuran como "[More Information Needed]"), el repositorio acumula 0 descargas y 0 "likes" en la fecha de consulta, y no se declara licencia, idiomas, pipeline ni datos de entrenamiento. El sufijo "ifhreadiness" sugiere un ajuste orientado a una tarea concreta de evaluacion o preparacion, pero no hay documentacion que lo confirme.
+La relevancia de esta ficha es limitada y conviene decirlo con claridad: la model card es la plantilla autogenerada de Hugging Face, sin ninguna seccion completada (todos los campos figuran como "[More Information Needed]"), el repositorio acumula 0 descargas y 0 "likes" en la fecha de consulta, y no se declara licencia, idiomas, pipeline ni datos de entrenamiento. El sufijo "ifhreadiness" sugiere un ajuste orientado a una tarea concreta de evaluacion o preparacion, pero no hay documentacion que lo confirme.
 
 Por tanto, esta ficha describe lo que se puede verificar del repositorio (formato, tamano, libreria, etiquetas) y, alli donde es imprescindible para evaluar el modelo, explicita las caracteristicas publicas del modelo base indicando siempre que no estan confirmadas para este adaptador concreto.
 
@@ -29,7 +29,7 @@ No hay informacion publicada sobre el procedimiento de entrenamiento de este ada
 
 Lo unico deducible del nombre y del tamano del repositorio es que se trata de un ajuste SFT mediante LoRA sobre `google/gemma-3-12b-it`. El modelo base, segun su documentacion publica, es un transformer decoder-only con atencion local y global intercalada (ventana local de 1024 tokens con capas de atencion global periodicas), contexto de 128.000 tokens, tokenizador de vocabulario amplio y, en los tamanos 4B, 12B y 27B, capacidad multimodal con un codificador de vision. Estas caracteristicas corresponden al modelo base y pueden haberse degradado o perdido parcialmente con el ajuste, ya que un SFT sobre texto tiende a no preservar el alineamiento de la torre de vision si no se entrena explicitamente.
 
-La etiqueta `arxiv:1910.09700` del repositorio no es un paper del modelo: corresponde a Lacoste et al. (2019), el articulo sobre calculo de emisiones de carbono que la plantilla de model card de HuggingFace enlaza por defecto. No aporta informacion tecnica sobre este adaptador.
+La etiqueta `arxiv:1910.09700` del repositorio no es un paper del modelo: corresponde a Lacoste et al. (2019), el articulo sobre calculo de emisiones de carbono que la plantilla de model card de Hugging Face enlaza por defecto. No aporta informacion tecnica sobre este adaptador.
 
 ## Capacidades
 
@@ -49,7 +49,7 @@ En resumen: todas las capacidades atribuibles a este artefacto son inferencias p
 
 Debe tenerse en cuenta que ninguno de estos escenarios esta validado por el autor; se plantean como usos plausibles de un adaptador SFT sobre Gemma 3 12B, no como capacidades confirmadas.
 
-- Despliegue en HuggingFace Inference Endpoints: el repositorio lleva la etiqueta `endpoints_compatible` y esta en formato safetensors con libreria transformers, por lo que es desplegable cargando el modelo base mas el adaptador, sin necesidad de fusionar pesos previamente.
+- Despliegue en Hugging Face Inference Endpoints: el repositorio lleva la etiqueta `endpoints_compatible` y esta en formato safetensors con libreria transformers, por lo que es desplegable cargando el modelo base mas el adaptador, sin necesidad de fusionar pesos previamente.
 - Evaluacion comparativa de ajustes LoRA: sirve como punto de control para medir el efecto de un SFT concreto frente al modelo base, cargando el adaptador con PEFT y comparando salidas sobre el mismo conjunto de prompts.
 - Atencion al cliente automatizada: un modelo de 12B con contexto de 128.000 tokens (en el base) permite mantener historiales largos de conversacion y adjuntar documentacion de producto en el mismo prompt; el adaptador deberia fusionarse con el base y validarse antes de produccion.
 - Extraccion de informacion estructurada en pipelines ETL: generacion de JSON con campos fijos a partir de documentos, siempre que el ajuste se haya entrenado con ese formato; requiere validacion con esquema y reintentos.
@@ -72,7 +72,7 @@ Las cifras de VRAM siguientes son estimaciones derivadas del tamano del modelo b
 - Cuantizacion de 4 bits: aproximadamente 7-8 GB de pesos; cabe en GPUs de consumo como RTX 3090, RTX 4080, RTX 4090 o RTX 5090 (24 GB o mas), con contexto moderado.
 - GPUs profesionales recomendadas para bf16 con contexto largo: A100 40 GB y 80 GB, H100 80 GB, L40S 48 GB, o configuraciones multi-GPU con dos RTX 3090/4090.
 - Cabe en GPU de consumo: si, en cuantizacion de 4 bits y con contexto acotado; en bf16 no cabe en GPUs de 24 GB con contexto largo.
-- Opciones de despliegue: transformers mas PEFT (carga directa del adaptador), vLLM con soporte de adaptadores LoRA (`--enable-lora`, permite servir varios adaptadores sobre un mismo base), Text Generation Inference, HuggingFace Inference Endpoints, y llama.cpp u Ollama si se fusiona el adaptador y se convierte a GGUF.
+- Opciones de despliegue: transformers mas PEFT (carga directa del adaptador), vLLM con soporte de adaptadores LoRA (`--enable-lora`, permite servir varios adaptadores sobre un mismo base), Text Generation Inference, Hugging Face Inference Endpoints, y llama.cpp u Ollama si se fusiona el adaptador y se convierte a GGUF.
 - Latencia y throughput: no disponibles. No hay ninguna medicion publicada para este adaptador.
 
 ## Comparativa con modelos similares
@@ -105,7 +105,7 @@ Diferencias clave: frente a las alternativas, este adaptador no aporta garantias
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ifhreadiness
+- Repositorio en Hugging Face: https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_ifhreadiness
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Informe tecnico de Gemma 3 (referencia del modelo base): https://arxiv.org/abs/2503.19786
 - Gemma Terms of Use: https://ai.google.dev/gemma/terms

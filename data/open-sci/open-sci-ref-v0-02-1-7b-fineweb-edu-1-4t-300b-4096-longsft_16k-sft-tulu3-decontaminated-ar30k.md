@@ -2,7 +2,7 @@
 
 ## Resumen
 
-open-sci-ref-v0.02-1.7b es un modelo de lenguaje de 1.714.377.728 parámetros (aproximadamente 1,7 mil millones) publicado por la organización open-sci en HuggingFace. Se trata de un ajuste fino (SFT) del modelo base ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated, que a su vez parece derivar de un preentrenamiento sobre FineWeb-Edu con 1,4 billones de tokens y un contexto de 4096 tokens, seguido de un SFT de contexto largo (16k) sobre Tulu3 decontaminado. Esta variante concreta se ha entrenado con el dataset AceReason-1.1-SFT-30k-sharegpt-hf.
+open-sci-ref-v0.02-1.7b es un modelo de lenguaje de 1.714.377.728 parámetros (aproximadamente 1,7 mil millones) publicado por la organización open-sci en Hugging Face. Se trata de un ajuste fino (SFT) del modelo base ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated, que a su vez parece derivar de un preentrenamiento sobre FineWeb-Edu con 1,4 billones de tokens y un contexto de 4096 tokens, seguido de un SFT de contexto largo (16k) sobre Tulu3 decontaminado. Esta variante concreta se ha entrenado con el dataset AceReason-1.1-SFT-30k-sharegpt-hf.
 
 El modelo se enmarca en la línea de investigación abierta de open-sci, orientada a reproducir y estudiar el comportamiento de modelos pequeños con recetas de entrenamiento reproducibles. Su relevancia radica en que documenta una cadena completa de preentrenamiento y ajuste con hiperparámetros explícitos (learning rate 4e-05, 5 épocas, batch total de 128, 32 dispositivos), lo que lo hace útil como referencia experimental más que como modelo de producción.
 
@@ -32,7 +32,7 @@ El dataset de ajuste es AceReason-1.1-SFT-30k-sharegpt-hf, un conjunto de 30.000
 - Generación de texto autoregresiva (modelo base de tipo decoder-only, aunque el pipeline declarado sea feature-extraction).
 - Razonamiento de tipo matemático y lógico, dado el dataset de ajuste AceReason orientado a razonamiento.
 - Ajuste fino sobre formato ShareGPT, lo que sugiere capacidad de seguir instrucciones conversacionales multi-turno.
-- Extracción de características (feature-extraction) según el pipeline declarado en HuggingFace.
+- Extracción de características (feature-extraction) según el pipeline declarado en Hugging Face.
 - Soporte de tool calling / function calling: no disponible en la información proporcionada.
 - Soporte de agentes y razonamiento multi-paso: no disponible en la información proporcionada.
 - Capacidades multilingües: no disponible (idiomas no declarados).
@@ -66,10 +66,10 @@ El model-index de la model card declara una entrada (`sft__AceReason-1-1-SFT-30k
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| open-sci-ref-v0.02-1.7b (este) | 1,71B | 4096 (16k en SFT del base) | other | HuggingFace, 16 descargas | Modelo de referencia experimental; sin benchmarks publicados |
-| Qwen2.5-1.5B | 1,54B | 32.768 | Apache 2.0 | HuggingFace, ampliamente usado | Contexto mayor, benchmarks publicados, licencia permisiva |
-| SmolLM2-1.7B | 1,71B | 8.192 | Apache 2.0 | HuggingFace, ecosistema amplio | Mismo tamaño, contexto mayor, benchmarks publicados |
-| Llama 3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | HuggingFace, muy extendido | Contexto muy superior, licencia con restricciones de uso |
+| open-sci-ref-v0.02-1.7b (este) | 1,71B | 4096 (16k en SFT del base) | other | Hugging Face, 16 descargas | Modelo de referencia experimental; sin benchmarks publicados |
+| Qwen2.5-1.5B | 1,54B | 32.768 | Apache 2.0 | Hugging Face, ampliamente usado | Contexto mayor, benchmarks publicados, licencia permisiva |
+| SmolLM2-1.7B | 1,71B | 8.192 | Apache 2.0 | Hugging Face, ecosistema amplio | Mismo tamaño, contexto mayor, benchmarks publicados |
+| Llama 3.2-1B | 1,24B | 131.072 | Llama 3.2 Community License | Hugging Face, muy extendido | Contexto muy superior, licencia con restricciones de uso |
 
 Nota: los datos de los modelos comparativos proceden de conocimiento general y no de la información proporcionada; verifíquense en sus respectivas model cards. Para este modelo no hay benchmarks publicados que permitan una comparación cuantitativa de rendimiento.
 
@@ -87,9 +87,9 @@ Nota: los datos de los modelos comparativos proceden de conocimiento general y n
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-ar30k
+- Hugging Face: https://huggingface.co/open-sci/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated-ar30k
 - Modelo base: https://huggingface.co/ali-elganzory/open-sci-ref-v0.02-1.7b-fineweb-edu-1.4t-300B-4096-longsft_16k-SFT-Tulu3-decontaminated
-- Organización open-sci en HuggingFace: https://huggingface.co/open-sci
+- Organización open-sci en Hugging Face: https://huggingface.co/open-sci
 - LLaMA-Factory (framework de entrenamiento): https://github.com/hiyouga/LLaMA-Factory
 - FineWeb-Edu (dataset de preentrenamiento): https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Tulu3 (dataset de SFT): https://huggingface.co/datasets/allenai/tulu-3-sft-mixture

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El Ethereum Address Risk Model v2 es un clasificador tabular desarrollado por el usuario jb10231 y publicado en HuggingFace. Se trata de un modelo LightGBM entrenado para estimar la probabilidad de que una dirección de Ethereum sea fraudulenta a partir de once características agregadas de su actividad on-chain, como el saldo en ETH, el número de transacciones enviadas y recibidas, el número de contrapartes únicas, el valor total transferido, la duración de su actividad o el número de contratos desplegados. No es un modelo de lenguaje ni una red neuronal: es un conjunto de árboles de decisión con boosting sobre features tabulares.
+El Ethereum Address Risk Model v2 es un clasificador tabular desarrollado por el usuario jb10231 y publicado en Hugging Face. Se trata de un modelo LightGBM entrenado para estimar la probabilidad de que una dirección de Ethereum sea fraudulenta a partir de once características agregadas de su actividad on-chain, como el saldo en ETH, el número de transacciones enviadas y recibidas, el número de contrapartes únicas, el valor total transferido, la duración de su actividad o el número de contratos desplegados. No es un modelo de lenguaje ni una red neuronal: es un conjunto de árboles de decisión con boosting sobre features tabulares.
 
 El modelo resuelve un problema concreto de analítica blockchain: asignar una puntuación de riesgo a una dirección para alimentar sistemas de antifraude, cumplimiento normativo (KYT) o filtrado de airdrops. Su relevancia radica en las métricas declaradas por el autor en el conjunto de test (AUC-ROC de 0,9821 y PR-AUC de 0,9509), buenas para una tarea con fuerte desbalanceo de clases, y en su bajo coste de despliegue: el repositorio ocupa 0,0 GB y la inferencia se ejecuta en CPU.
 
@@ -86,7 +86,7 @@ No se han publicado comparativas de este modelo frente a alternativas en la info
 
 | Modelo | Tipo | Entrada | Licencia | Métricas publicadas | Estado |
 |---|---|---|---|---|---|
-| ethereum-address-risk-model-v2 | LightGBM (clasificación tabular) | 11 features agregadas por dirección | no disponible | Accuracy 0,9440; F1 0,8659; AUC-ROC 0,9821; PR-AUC 0,9509 | Disponible en HuggingFace, 0 descargas |
+| ethereum-address-risk-model-v2 | LightGBM (clasificación tabular) | 11 features agregadas por dirección | no disponible | Accuracy 0,9440; F1 0,8659; AUC-ROC 0,9821; PR-AUC 0,9509 | Disponible en Hugging Face, 0 descargas |
 | XGBoost u otro GBDT sobre las mismas features | Gradient boosting | Features tabulares equivalentes | no disponible | no disponible | Alternativa genérica, sin resultados comparables publicados |
 | Redes neuronales sobre grafos (GNN) de transacciones | GNN | Grafo de direcciones y transferencias | no disponible | no disponible | Alternativa de investigación, requiere infraestructura distinta |
 | Reglas heurísticas de un motor antifraude | Basado en reglas | Indicadores definidos por el equipo | no aplica | no disponible | Enfoque tradicional; la model card sugiere combinarlo con el modelo, no sustituirlo |
@@ -107,7 +107,7 @@ No se han publicado comparativas de este modelo frente a alternativas en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jb10231/ethereum-address-risk-model-v2
+- Modelo en Hugging Face: https://huggingface.co/jb10231/ethereum-address-risk-model-v2
 - Dataset de entrenamiento citado (Kaggle, Ethereum Fraud Detection Dataset): https://www.kaggle.com/datasets/vagifa/ethereum-frauddetection-dataset
 - Paper, blog o repositorio de entrenamiento: no disponible
 - Demo o espacio interactivo: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kennyinou/text-image-retrieval-int8` no es un modelo entrenado, sino un repositorio de notas de investigación sobre recuperación texto-imagen (text-image retrieval) publicado por el usuario kennyinou (Kenny B. Inoue) en HuggingFace. La propia model card lo describe como un conjunto estructurado de apuntes con referencias de evaluación y preguntas abiertas, y afirma explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. El repositorio contiene dos archivos de texto, `summary.md` y `README.md`, además de un archivo safetensors con 49.600 parámetros (unos 0,19 MB en fp32), un volumen incompatible con cualquier modelo funcional de recuperación multimodal.
+`kennyinou/text-image-retrieval-int8` no es un modelo entrenado, sino un repositorio de notas de investigación sobre recuperación texto-imagen (text-image retrieval) publicado por el usuario kennyinou (Kenny B. Inoue) en Hugging Face. La propia model card lo describe como un conjunto estructurado de apuntes con referencias de evaluación y preguntas abiertas, y afirma explícitamente que no reclama mejoras de benchmark, ablaciones completadas, código publicado ni un checkpoint entrenado. El repositorio contiene dos archivos de texto, `summary.md` y `README.md`, además de un archivo safetensors con 49.600 parámetros (unos 0,19 MB en fp32), un volumen incompatible con cualquier modelo funcional de recuperación multimodal.
 
 El problema que aborda es de tipo metodológico: acotar el alcance de una pregunta de investigación sobre recuperación texto-imagen, identificar confounders, proponer una comparación con baselines emparejados y definir un contexto de evaluación concreto en Flickr30k y MS COCO Captions. Se separan de forma deliberada los planes y las hipótesis de los resultados ya obtenidos, y se insiste en que cualquier resultado futuro debería acompañarse de versiones de dataset, comandos, semillas, hardware y registros en bruto.
 
@@ -23,7 +23,7 @@ Su relevancia actual es limitada como artefacto desplegable, pero puede ser úti
 
 ## Arquitectura y entrenamiento
 
-No hay información sobre arquitectura en la documentación proporcionada. La etiqueta `transformer` aparece en los metadatos de HuggingFace, pero la model card no describe capas, atención, objetivos de entrenamiento ni tokenizador, y no se enlaza ningún paper técnico. El repositorio no contiene código de entrenamiento ni scripts de evaluación, solo notas en Markdown.
+No hay información sobre arquitectura en la documentación proporcionada. La etiqueta `transformer` aparece en los metadatos de Hugging Face, pero la model card no describe capas, atención, objetivos de entrenamiento ni tokenizador, y no se enlaza ningún paper técnico. El repositorio no contiene código de entrenamiento ni scripts de evaluación, solo notas en Markdown.
 
 Tampoco se documenta ningún proceso de entrenamiento: no se indican tokens de entrenamiento, composición del dataset, uso de RLHF, DPO u otra técnica de alineación, ni innovaciones como decodificación especulativa o atención lineal. La model card menciona Flickr30k y MS COCO Captions únicamente como contexto de evaluación propuesto, no como datos usados para entrenar. El archivo safetensors con 49.600 parámetros no permite sostener un codificador de texto ni de imagen con capacidad funcional, por lo que su contenido debe interpretarse como auxiliar o de relleno y no como pesos de un sistema de retrieval operativo.
 
@@ -68,7 +68,7 @@ No disponible. Este repositorio no es comparable con modelos de retrieval texto-
 
 | Artefacto | Parametros | Contexto | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kennyinou/text-image-retrieval-int8 | 49.600 (safetensors) | no disponible | no disponible | cc-by-4.0 | notas y safetensors en HuggingFace |
+| kennyinou/text-image-retrieval-int8 | 49.600 (safetensors) | no disponible | no disponible | cc-by-4.0 | notas y safetensors en Hugging Face |
 | CLIP (referencia de categoria) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 | SigLIP (referencia de categoria) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible |
 
@@ -86,7 +86,7 @@ No disponible. Este repositorio no es comparable con modelos de retrieval texto-
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kennyinou/text-image-retrieval-int8
+- Repositorio en Hugging Face: https://huggingface.co/kennyinou/text-image-retrieval-int8
 - Perfil del autor: https://huggingface.co/kennyinou
 - GitHub Topics sobre image-text-retrieval (referencia temática genérica, no vinculada al repositorio): https://github.com/topics/image-text-retrieval
 - GitHub Topics sobre text-image-retrieval (referencia temática genérica, no vinculada al repositorio): https://github.com/topics/text-image-retrieval

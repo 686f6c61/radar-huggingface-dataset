@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kavitasing/beit-retrieval` es un repositorio de HuggingFace publicado por el usuario `kavitasing` que contiene una implementación propia y compacta en PyTorch de una arquitectura tipo BEiT (vision transformer con preentrenamiento por modelado de imagenes enmascaradas) orientada a tareas de recuperacion (retrieval) imagen-texto. El autor la etiqueta internamente como configuracion "xlarge", pero el checkpoint real `model.safetensors` contiene 24.832 parametros en total, una cifra incompatible con cualquier configuracion BEiT de escala xlarge publicada hasta la fecha.
+`kavitasing/beit-retrieval` es un repositorio de Hugging Face publicado por el usuario `kavitasing` que contiene una implementación propia y compacta en PyTorch de una arquitectura tipo BEiT (vision transformer con preentrenamiento por modelado de imagenes enmascaradas) orientada a tareas de recuperacion (retrieval) imagen-texto. El autor la etiqueta internamente como configuracion "xlarge", pero el checkpoint real `model.safetensors` contiene 24.832 parametros en total, una cifra incompatible con cualquier configuracion BEiT de escala xlarge publicada hasta la fecha.
 
 El propio autor es explicito sobre el estado del repositorio: se trata de un artefacto para revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de laboratorio, no de un modelo preentrenado listo para produccion. El checkpoint se describe como una inicializacion valida, no como un modelo entrenado, y no se reclama ninguna puntuacion de benchmark. El repositorio se creo y actualizo el 15 de septiembre de 2026, acumula 0 descargas y 0 likes, y su tamano declarado es de 0,0 GB.
 
@@ -65,7 +65,7 @@ El repositorio no incluye ninguna evaluacion comparativa, y no se dispone en la 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kavitasing/beit-retrieval | 24.832 | No disponible | Sin benchmark publicado | BSD-3-Clause | Publico en HuggingFace, sin entrenar |
+| kavitasing/beit-retrieval | 24.832 | No disponible | Sin benchmark publicado | BSD-3-Clause | Publico en Hugging Face, sin entrenar |
 | BEiT-3 y familia BEiT oficial | No disponible en esta ficha | No disponible | No disponible | No disponible | Referencia externa, no comparada aqui |
 | CLIP / BLIP / SigLIP | No disponible en esta ficha | No disponible | No disponible | No disponible | Referencia externa, no comparada aqui |
 
@@ -86,7 +86,7 @@ En terminos cualitativos, la diferencia relevante no es de rendimiento sino de e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kavitasing/beit-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/kavitasing/beit-retrieval
 - Referencia externa sobre la arquitectura base (no incluida en la busqueda web realizada): articulo original de BEiT, "BEiT: BERT Pre-Training of Image Transformers", https://arxiv.org/abs/2106.08254
 - Conjunto de evaluacion sugerido por el autor (no incluido en la busqueda web realizada): Flickr30k
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la informacion disponible.

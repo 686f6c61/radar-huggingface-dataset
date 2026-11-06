@@ -66,9 +66,9 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- [HuggingFace - fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed455](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed455)
-- [Modelo base en HuggingFace](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455)
-- [Checkpoint relacionado (ckpt4000) en HuggingFace](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407)
-- [Checkpoint sin zipf en HuggingFace](https://huggingface.co/fpadovani/jpn-100mb-after-newlexicon-eng-baseline-ckpt500_seed455)
+- [Hugging Face - fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed455](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt500_seed455)
+- [Modelo base en Hugging Face](https://huggingface.co/fpadovani/ppt-art-lang-newlexicon-zipf-eng-baseline-100mb_seed455)
+- [Checkpoint relacionado (ckpt4000) en Hugging Face](https://huggingface.co/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-zipf-ckpt4000_seed3407)
+- [Checkpoint sin zipf en Hugging Face](https://huggingface.co/fpadovani/jpn-100mb-after-newlexicon-eng-baseline-ckpt500_seed455)
 - [Página del modelo en FriendliAI (checkpoint sin zipf)](https://friendli.ai/models/fpadovani/jpn-100mb-after-eng-baseline-newlexicon-ckpt500_seed455)
 - [Ficha en LLM Explorer (modelo base)](https://llm-explorer.com/model/fpadovani%2Fppt-art-lang-newlexicon-jpn-baseline-100mb_seed455,7FzDYdnrJmxKobXTLPHria)

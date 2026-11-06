@@ -81,7 +81,7 @@ No se dispone de información sobre otros modelos ALM comparables en la misma ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-diodorus-siculus
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-greek-7b-diodorus-siculus
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Modelo base adaptado al griego antiguo: https://huggingface.co/Urdatorn/olmo3-7b-ancient-greek
 - Repositorio de código (entrenamiento, puntuación y atribución): https://github.com/Urdatorn/sphragis_models

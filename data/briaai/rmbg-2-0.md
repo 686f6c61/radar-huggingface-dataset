@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BRIA RMBG-2.0 es un modelo de segmentación de imágenes dicotómica desarrollado por BRIA.AI, especializado en la eliminación de fondo. Genera un canal alfa en escala de grises de 8 bits donde cada píxel indica la opacidad del correspondiente píxel de la imagen original, permitiendo recortar el sujeto con precisión. El modelo está entrenado exclusivamente con un dataset de grado profesional y se distribuye bajo una licencia propia que limita su uso comercial sin adquisición de pesos. Con 220,7 millones de parámetros, es relativamente ligero y puede ejecutarse en hardware de consumo. Se publica en formato safetensors y ONNX, con acceso restringido en HuggingFace (requiere aceptar condiciones). Es relevante por su calidad en la separación de primer plano y fondo, con aplicaciones directas en comercio electrónico, edición fotográfica y diseño gráfico.
+BRIA RMBG-2.0 es un modelo de segmentación de imágenes dicotómica desarrollado por BRIA.AI, especializado en la eliminación de fondo. Genera un canal alfa en escala de grises de 8 bits donde cada píxel indica la opacidad del correspondiente píxel de la imagen original, permitiendo recortar el sujeto con precisión. El modelo está entrenado exclusivamente con un dataset de grado profesional y se distribuye bajo una licencia propia que limita su uso comercial sin adquisición de pesos. Con 220,7 millones de parámetros, es relativamente ligero y puede ejecutarse en hardware de consumo. Se publica en formato safetensors y ONNX, con acceso restringido en Hugging Face (requiere aceptar condiciones). Es relevante por su calidad en la separación de primer plano y fondo, con aplicaciones directas en comercio electrónico, edición fotográfica y diseño gráfico.
 
 ## Especificaciones tecnicas
 
@@ -61,12 +61,12 @@ Existen alternativas en el ambito de la eliminacion de fondo, como rembg (basado
 - El modelo puede fallar en imagenes con bordes muy complejos, cabellos finos, objetos transparentes o fondos con texturas similares al sujeto, generando alphas imperfectos.
 - Al ser un modelo de segmentacion, no ofrece ninguna capacidad de generacion o razonamiento; su unica funcion es producir la mascara de opacidad.
 - No se han publicado estudios sobre sesgos en el modelo, pero es posible que su rendimiento varie segun el tipo de imagen o la demografia de los sujetos representados.
-- El acceso en HuggingFace es restringido (gated); es necesario aceptar las condiciones de uso antes de descargar los pesos.
+- El acceso en Hugging Face es restringido (gated); es necesario aceptar las condiciones de uso antes de descargar los pesos.
 - La falta de informacion sobre la arquitectura y el dataset de entrenamiento dificulta la evaluacion independiente de su robustez.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/briaai/RMBG-2.0
+- Modelo en Hugging Face: https://huggingface.co/briaai/RMBG-2.0
 - Repositorio GitHub: https://github.com/Bria-AI/RMBG-2.0
-- Demo en HuggingFace Space: https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0
+- Demo en Hugging Face Space: https://huggingface.co/spaces/briaai/BRIA-RMBG-2.0
 - Pagina en ModelScope: https://www.modelscope.cn/models/AI-ModelScope/RMBG-2.0

@@ -94,11 +94,11 @@ Con umbral ajustado por dataset en el split de desarrollo, la media sube a 75,5.
 
 | Modelo | Parametros | Contexto | BAcc (LLM-AggreFact) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| **Privoid-FactCheck-Qwen3.5-2B** | 2B | No disponible | 74,7 | Apache 2.0 | HuggingFace (adaptador + GGUF) |
-| Bespoke-MiniCheck-7B | 7B | No disponible | 77,4 | No disponible | HuggingFace |
-| MiniCheck-Flan-T5-L | 0,8B | No disponible | 75,0 | No disponible | HuggingFace |
-| Vectara HHEM-2.1-open | No disponible | No disponible | 72,3 | No disponible | HuggingFace |
-| Granite Guardian 3.3 8B | 8B | No disponible | 76,5 | No disponible | HuggingFace |
+| **Privoid-FactCheck-Qwen3.5-2B** | 2B | No disponible | 74,7 | Apache 2.0 | Hugging Face (adaptador + GGUF) |
+| Bespoke-MiniCheck-7B | 7B | No disponible | 77,4 | No disponible | Hugging Face |
+| MiniCheck-Flan-T5-L | 0,8B | No disponible | 75,0 | No disponible | Hugging Face |
+| Vectara HHEM-2.1-open | No disponible | No disponible | 72,3 | No disponible | Hugging Face |
+| Granite Guardian 3.3 8B | 8B | No disponible | 76,5 | No disponible | Hugging Face |
 
 Privoid FactCheck 2B ofrece un equilibrio entre tamaño reducido y precisión: supera a HHEM-2.1-open (72,3) y a Llama-3.1-405B-Instruct (74,4), pero queda por debajo de especialistas más grandes como Bespoke-MiniCheck-7B y Granite Guardian 3.3 8B. Su ventaja principal es el coste de despliegue: 2B parámetros con licencia Apache 2.0 explícita.
 
@@ -116,7 +116,7 @@ Privoid FactCheck 2B ofrece un equilibrio entre tamaño reducido y precisión: s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Privoid-ai/Privoid-FactCheck-Qwen3.5-2B
+- Modelo en Hugging Face: https://huggingface.co/Privoid-ai/Privoid-FactCheck-Qwen3.5-2B
 - GGUF: https://huggingface.co/Privoid-ai/Privoid-FactCheck-Qwen3.5-2B-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Privoid Guard: https://huggingface.co/Privoid-ai/Privoid-Guard-Qwen3.5-0.8B

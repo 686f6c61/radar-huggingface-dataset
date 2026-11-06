@@ -68,4 +68,4 @@ No se dispone de información suficiente para una comparativa rigurosa. El model
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nm-testing/int8_channel_weight_static_per_tensor_act-e2e
+- Repositorio Hugging Face: https://huggingface.co/nm-testing/int8_channel_weight_static_per_tensor_act-e2e

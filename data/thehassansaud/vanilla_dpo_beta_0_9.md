@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Vanilla_DPO_beta_0_9` es un modelo de lenguaje autoregresivo de 405 millones de parámetros, publicado en HuggingFace por el usuario TheHassanSaud. Está construido sobre la arquitectura GPT-NeoX, un transformer causal decoder-only, y se distribuye en formato safetensors con la librería `transformers`. Su nombre sugiere un ajuste mediante Direct Preference Optimization (DPO) con un parámetro beta de 0.9, aunque no se dispone de documentación técnica que lo confirme.
+El modelo `Vanilla_DPO_beta_0_9` es un modelo de lenguaje autoregresivo de 405 millones de parámetros, publicado en Hugging Face por el usuario TheHassanSaud. Está construido sobre la arquitectura GPT-NeoX, un transformer causal decoder-only, y se distribuye en formato safetensors con la librería `transformers`. Su nombre sugiere un ajuste mediante Direct Preference Optimization (DPO) con un parámetro beta de 0.9, aunque no se dispone de documentación técnica que lo confirme.
 
 Se trata de un modelo de tamaño reducido, lo que lo hace apto para entornos con recursos limitados, como aplicaciones de inferencia en CPU o GPUs de consumo. La ficha original no incluye información sobre el contexto, los idiomas, la licencia ni los datos de entrenamiento, por lo que su evaluación requiere un análisis práctico previo. Su relevancia radica en ser un ejemplo de ajuste fino con DPO sobre una arquitectura ligera, aunque la ausencia de benchmarks publicados impide validar su rendimiento de forma objetiva.
 
@@ -23,11 +23,11 @@ Se trata de un modelo de tamaño reducido, lo que lo hace apto para entornos con
 
 La arquitectura GPT-NeoX es una variante del transformer autoregresivo, similar a GPT-3, que utiliza atención causal con embeddings rotatorios (RoPE) y capas feed-forward. Al ser un modelo de 405M parámetros, su diseño es compacto y eficiente en computación, lo que facilita su ejecución en hardware modesto. No se dispone de información sobre la composición del dataset de entrenamiento, el número de tokens, ni si se aplicaron técnicas como RLHF o DPO. El nombre del modelo sugiere un ajuste con DPO, pero no hay evidencia documental que lo respalde.
 
-No se han publicado detalles sobre innovaciones técnicas específicas, como decodificación especulativa o atención lineal. La única pista técnica es el tag `gpt_neox` en HuggingFace, que confirma la arquitectura base.
+No se han publicado detalles sobre innovaciones técnicas específicas, como decodificación especulativa o atención lineal. La única pista técnica es el tag `gpt_neox` en Hugging Face, que confirma la arquitectura base.
 
 ## Capacidades
 
-- Generación de texto autoregresiva, según el pipeline `text-generation` declarado en HuggingFace.
+- Generación de texto autoregresiva, según el pipeline `text-generation` declarado en Hugging Face.
 - No se dispone de información sobre soporte de tool calling, function calling, agentes o razonamiento multi-paso.
 - Capacidades multilingües: no disponibles.
 - No se documentan capacidades especiales como modo de pensamiento, visión o audio.
@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vanilla_DPO_beta_0_9 | 405M | no disponible | GPT-NeoX | no disponible | HuggingFace |
-| Pythia-410M | 410M | 2048 | GPT-NeoX | Apache 2.0 | HuggingFace |
-| GPT-Neo 125M | 125M | 2048 | GPT-Neo | MIT | HuggingFace |
+| Vanilla_DPO_beta_0_9 | 405M | no disponible | GPT-NeoX | no disponible | Hugging Face |
+| Pythia-410M | 410M | 2048 | GPT-NeoX | Apache 2.0 | Hugging Face |
+| GPT-Neo 125M | 125M | 2048 | GPT-Neo | MIT | Hugging Face |
 
 Se desconoce el rendimiento comparativo de `Vanilla_DPO_beta_0_9` frente a estos modelos, ya que no se han publicado resultados de benchmarks.
 
@@ -74,5 +74,5 @@ Se desconoce el rendimiento comparativo de `Vanilla_DPO_beta_0_9` frente a estos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_9
+- Modelo en Hugging Face: https://huggingface.co/TheHassanSaud/Vanilla_DPO_beta_0_9
 - Perfil del autor: https://huggingface.co/TheHassanSaud

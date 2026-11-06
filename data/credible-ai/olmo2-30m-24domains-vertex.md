@@ -4,7 +4,7 @@
 
 `olmo2-30M-24domains-vertex` es una coleccion de 512 modelos de lenguaje "proxy" de 29,2 millones de parametros cada uno, publicada por el grupo credible-ai como material reproducible del articulo LinMix (Data Mixing as Linear Domain Attribution). No es un modelo pensado para uso final, sino un instrumento de investigacion: cada uno de los 512 modelos se entrena sobre una mezcla de datos distinta del diseno "vertex" sobre los 24 topicos del corpus WebOrganizer, y sirve para estudiar como afecta la composicion del dataset al comportamiento del modelo resultante.
 
-Cada proxy sigue la arquitectura OLMo 2 (`Olmo2ForCausalLM`) con 4 capas, hidden size de 256 y 29,2M de parametros, tokenizador GPT-NeoX-20B con vocabulario de 50.432 entradas y entrenamiento de 1.000 millones de tokens con OLMo-core. Los pesos estan en bfloat16 y el repositorio completo ocupa unos 30 GB (29,9 GB reportados por HuggingFace).
+Cada proxy sigue la arquitectura OLMo 2 (`Olmo2ForCausalLM`) con 4 capas, hidden size de 256 y 29,2M de parametros, tokenizador GPT-NeoX-20B con vocabulario de 50.432 entradas y entrenamiento de 1.000 millones de tokens con OLMo-core. Los pesos estan en bfloat16 y el repositorio completo ocupa unos 30 GB (29,9 GB reportados por Hugging Face).
 
 Su relevancia actual es metodologica: el articulo LinMix propone formular el data mixing como una atribucion lineal de dominios, y estos 512 proxies constituyen el conjunto de experimentos que permite ajustar y validar ese modelo de atribucion a bajo coste computacional. Para un desarrollador o investigador que quiera replicar el estudio o entrenar sus propios proxies de mezcla de datos, este repositorio ofrece los pesos y las mezclas exactas (`mix_<i>/mix.json`) ya empaquetadas.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Proposito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmo2-30M-24domains-vertex | 29,2 M (x512) | no disponible | Proxies para investigacion de data mixing | MIT | HuggingFace |
-| OLMo 2 (modelos oficiales de AI2) | 7B y 13B (segun variante) | no disponible en esta ficha | Modelos de lenguaje de proposito general | Apache 2.0 (segun version) | HuggingFace |
-| Pythia (EleutherAI) | 70M a 12B | 2048 tokens (segun variante) | Suite para interpretabilidad y estudio de entrenamiento | Apache 2.0 | HuggingFace |
-| GPT-NeoX-20B (tokenizador reutilizado) | 20B | 2048 tokens | Modelo de proposito general | Apache 2.0 | HuggingFace |
+| olmo2-30M-24domains-vertex | 29,2 M (x512) | no disponible | Proxies para investigacion de data mixing | MIT | Hugging Face |
+| OLMo 2 (modelos oficiales de AI2) | 7B y 13B (segun variante) | no disponible en esta ficha | Modelos de lenguaje de proposito general | Apache 2.0 (segun version) | Hugging Face |
+| Pythia (EleutherAI) | 70M a 12B | 2048 tokens (segun variante) | Suite para interpretabilidad y estudio de entrenamiento | Apache 2.0 | Hugging Face |
+| GPT-NeoX-20B (tokenizador reutilizado) | 20B | 2048 tokens | Modelo de proposito general | Apache 2.0 | Hugging Face |
 
 La comparacion directa es limitada: los proxies de credible-ai no compiten en calidad de generacion con OLMo 2, Pythia o GPT-NeoX, sino que cubren una funcion distinta (barrido controlado de mezclas de datos). Frente a Pythia, que ofrece una suite de tamanos para estudiar entrenamiento e interpretabilidad, este repositorio ofrece 512 variantes de datos con arquitectura fija.
 
@@ -83,7 +83,7 @@ La comparacion directa es limitada: los proxies de credible-ai no compiten en ca
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-30M-24domains-vertex
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-30M-24domains-vertex
 - Dataset de diseno, resultados y secuencias de entrenamiento: https://huggingface.co/datasets/credible-ai/linmix-proxy-swarms
 - Dataset de secuencias tokenizadas: https://huggingface.co/datasets/credible-ai/weborganizer-corpus-200b-tokenized
 - Dataset de origen: https://huggingface.co/datasets/WebOrganizer/Corpus-200B

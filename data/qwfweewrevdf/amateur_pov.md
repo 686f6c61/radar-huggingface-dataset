@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Amateur_Pov es un repositorio publicado en HuggingFace por el usuario qwfweewrevdf el 27 de octubre de 2026 y actualizado apenas un minuto después. La model card se limita a la declaración de licencia Apache 2.0: no incluye descripción, arquitectura, tamaño de parámetros, longitud de contexto, idiomas ni ejemplos de uso. El repositorio tampoco declara pipeline tag, por lo que la plataforma no puede clasificarlo por tarea.
+Amateur_Pov es un repositorio publicado en Hugging Face por el usuario qwfweewrevdf el 27 de octubre de 2026 y actualizado apenas un minuto después. La model card se limita a la declaración de licencia Apache 2.0: no incluye descripción, arquitectura, tamaño de parámetros, longitud de contexto, idiomas ni ejemplos de uso. El repositorio tampoco declara pipeline tag, por lo que la plataforma no puede clasificarlo por tarea.
 
 El único dato cuantitativo disponible es el tamaño del repositorio, 0,2 GB, compatible con un checkpoint de pequeño tamaño o con un adaptador, pero no hay ningún archivo de configuración, paper o ficha técnica citada que permita confirmarlo. El modelo acumula 0 descargas y 0 likes desde su publicación.
 
@@ -77,4 +77,4 @@ No disponible. Sin arquitectura, parámetros ni tarea declarada no es posible id
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qwfweewrevdf/Amateur_Pov
+- Hugging Face: https://huggingface.co/qwfweewrevdf/Amateur_Pov

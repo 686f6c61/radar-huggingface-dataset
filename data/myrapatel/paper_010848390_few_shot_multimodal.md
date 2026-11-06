@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, publicado por el usuario `myrapatel`, no contiene un modelo de aprendizaje automático entrenado, sino un documento académico en formato Markdown titulado `paper_010848390_few_shot_multimodal.md`. El documento aborda el tema de *few-shot multimodal* (aprendizaje multimodal con pocos ejemplos) y sigue una estructura académica completa: resumen, introducción, preliminares, método, experimentos y discusión.
+Este repositorio de Hugging Face, publicado por el usuario `myrapatel`, no contiene un modelo de aprendizaje automático entrenado, sino un documento académico en formato Markdown titulado `paper_010848390_few_shot_multimodal.md`. El documento aborda el tema de *few-shot multimodal* (aprendizaje multimodal con pocos ejemplos) y sigue una estructura académica completa: resumen, introducción, preliminares, método, experimentos y discusión.
 
 El repositorio se presenta como un artefacto de investigación más que como un modelo operativo: no dispone de pipeline, no hay pesos, ni arquitectura de red neuronal, ni datos de entrenamiento. Su relevancia radica en su temática, alineada con la literatura reciente sobre marcos teóricos para el aprendizaje multimodal con pocas muestras, como el paper de arXiv "Few-Shot Multimodal Medical Imaging: A Theoretical Framework". La licencia MIT permite su uso y redistribución sin restricciones significativas.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al no
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo de IA comparable con otros como LLaMA, Mistral o Flamingo. En el contexto de HuggingFace, existen otros repositorios que contienen papers o documentos academicos, pero no hay informacion suficiente para establecer una comparativa tecnica.
+No disponible. Este repositorio no es un modelo de IA comparable con otros como LLaMA, Mistral o Flamingo. En el contexto de Hugging Face, existen otros repositorios que contienen papers o documentos academicos, pero no hay informacion suficiente para establecer una comparativa tecnica.
 
 ## Limitaciones y advertencias
 
@@ -64,7 +64,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con otros como 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/myrapatel/paper_010848390_few_shot_multimodal
+- Repositorio en Hugging Face: https://huggingface.co/myrapatel/paper_010848390_few_shot_multimodal
 - Paper relacionado en arXiv (no confirmado como el contenido del repositorio): https://arxiv.org/html/2511.01140v2
 - Paper relacionado en arXiv (version v1): https://arxiv.org/html/2511.01140v1
 - Recurso sobre papers influyentes en multimodal AI: https://deepgram.com/learn/top-8-most-influential-arxiv-papers-on-multimodal-ai

@@ -91,7 +91,7 @@ El modelo π0.5 muestra una precisión significativamente mayor (4-5 veces menor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/birbirll/g1-inspire-nut-in-box-pi05
+- Modelo en Hugging Face: https://huggingface.co/birbirll/g1-inspire-nut-in-box-pi05
 - Perfil del autor: https://huggingface.co/birbirll/models
 - Modelo hermano GR00T N1.6 (pistón): https://huggingface.co/birbirll/g1-inspire-piston-n16
 - Documentación de π0.5 en Qualcomm AI Hub: https://aihub.qualcomm.com/models/pi05

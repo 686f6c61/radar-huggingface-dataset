@@ -73,7 +73,7 @@ No se dispone de datos de benchmarks comparativos para esta cuantización espec�
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-IQ4_XS-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/Chungulus/Qwen3.8-27B-IQ4_XS-GGUF
 - Modelo base Qwen/Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio combinado de GGUFs de Chungulus: https://huggingface.co/Chungulus/Qwen3.8-27B-GGUF
 - GGUFs de Unsloth para Qwen3.8-27B: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

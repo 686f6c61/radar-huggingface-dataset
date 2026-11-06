@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Potentium Plutus 32B es un adaptador LoRA publicado por el usuario POTENTIUM22 en HuggingFace, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`. Se trata, por tanto, de un ajuste fino de un Qwen2.5-7B-Instruct ya cuantizado a 4 bits por Unsloth, no de un modelo entrenado desde cero ni de un modelo de 32.000 millones de parametros. El repositorio declara la etiqueta `peft` y `lora`, lo que confirma que el artefacto publicado son pesos de adaptador, no pesos completos.
+Potentium Plutus 32B es un adaptador LoRA publicado por el usuario POTENTIUM22 en Hugging Face, entrenado mediante SFT (supervised fine-tuning) con la libreria TRL sobre el modelo base `unsloth/Qwen2.5-7B-Instruct-bnb-4bit`. Se trata, por tanto, de un ajuste fino de un Qwen2.5-7B-Instruct ya cuantizado a 4 bits por Unsloth, no de un modelo entrenado desde cero ni de un modelo de 32.000 millones de parametros. El repositorio declara la etiqueta `peft` y `lora`, lo que confirma que el artefacto publicado son pesos de adaptador, no pesos completos.
 
 El problema que resuelve, segun la informacion disponible, es la especializacion de un modelo instructivo generalista de 7B mediante un ajuste supervisado. No obstante, la model card no documenta el dataset de entrenamiento, el numero de pasos, la composicion de los datos ni el objetivo concreto de la especializacion, por lo que no es posible determinar que comportamiento se ha modificado respecto al modelo base.
 
@@ -97,7 +97,7 @@ Nota: los datos de la columna "Rendimiento publicado" corresponden a los modelos
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/POTENTIUM22/potentium-plutus-32b
+- Hugging Face del modelo: https://huggingface.co/POTENTIUM22/potentium-plutus-32b
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen2.5-7B-Instruct-bnb-4bit
 - Modelo original Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl

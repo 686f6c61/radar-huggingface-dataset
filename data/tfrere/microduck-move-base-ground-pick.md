@@ -21,7 +21,7 @@ Su relevancia es practica dentro del ecosistema Microduck: sirve como movimiento
 | Licencia | Apache-2.0 |
 | Formato de pesos | ONNX (`policy.onnx`, normalizador embebido) y PyTorch (`base/model.pt`) |
 | Categoria de la politica | `family:groundpick`, `kind:episodic`, `tier:1`, `microduck-academy-policy` |
-| Tamano del repositorio | 0,0 GB (segun HuggingFace) |
+| Tamano del repositorio | 0,0 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se proporcionan datos de latencia, frecuencia de control ni throughput.
 
 ## Requisitos de hardware
 
-- VRAM estimada: no disponible. El repositorio ocupa 0,0 GB segun HuggingFace, lo que sugiere un checkpoint de pocos megabytes, pero no se publica el numero de parametros ni el consumo real.
+- VRAM estimada: no disponible. El repositorio ocupa 0,0 GB segun Hugging Face, lo que sugiere un checkpoint de pocos megabytes, pero no se publica el numero de parametros ni el consumo real.
 - GPU recomendadas: no disponibles. Al ser una politica de control de baja dimension exportada a ONNX, es plausible su ejecucion en CPU, pero esto no se confirma en la informacion disponible.
 - Compatibilidad con GPU de consumo: no confirmada. No hay datos que permitan afirmar que quepa o no en una RTX 4090 u otras GPU de consumo.
 - Opciones de despliegue: el runtime indicado es `robotctl` (comandos `policy load` y `policy add`); el artefacto desplegable es `policy.onnx`, ejecutable en cualquier motor compatible con ONNX. No se documentan integraciones con vLLM, llama.cpp, Ollama ni TGI, que no aplican a este tipo de modelo.
@@ -80,9 +80,9 @@ No se proporcionan datos de latencia, frecuencia de control ni throughput.
 
 | Modelo | Tipo | Parametros | Comando | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tfrere/microduck-move-base-ground-pick` | Politica RL en ONNX + checkpoint rsl_rl para remix | no disponible | Fase, periodo 4,0 s, parada en 0,7 | Apache-2.0 | HuggingFace, 0 descargas |
-| `alpha_ground_pick.onnx` (Pollen Robotics) | Politica RL en ONNX | no disponible | Fase (segun la receta upstream) | Apache-2.0 (repositorio de recetas) | HuggingFace, `pollen-robotics/microduck-policies` |
-| Otros movimientos de Microduck Academy (`family:*`, `tier:*`) | Politicas RL en ONNX | no disponible | Segun movimiento | Apache-2.0 | HuggingFace (no se dispone de datos concretos de otros repositorios) |
+| `tfrere/microduck-move-base-ground-pick` | Politica RL en ONNX + checkpoint rsl_rl para remix | no disponible | Fase, periodo 4,0 s, parada en 0,7 | Apache-2.0 | Hugging Face, 0 descargas |
+| `alpha_ground_pick.onnx` (Pollen Robotics) | Politica RL en ONNX | no disponible | Fase (segun la receta upstream) | Apache-2.0 (repositorio de recetas) | Hugging Face, `pollen-robotics/microduck-policies` |
+| Otros movimientos de Microduck Academy (`family:*`, `tier:*`) | Politicas RL en ONNX | no disponible | Segun movimiento | Apache-2.0 | Hugging Face (no se dispone de datos concretos de otros repositorios) |
 
 La diferencia principal frente a la politica de Pollen es que este repositorio anade el checkpoint `base/model.pt` y las configuraciones necesarias para reentrenar, ademas de los datos de fidelidad y la trayectoria de muestra. No se dispone de informacion sobre otros modelos comparables de terceros.
 
@@ -98,9 +98,9 @@ La diferencia principal frente a la politica de Pollen es que este repositorio a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tfrere/microduck-move-base-ground-pick
+- Modelo en Hugging Face: https://huggingface.co/tfrere/microduck-move-base-ground-pick
 - Politica de referencia de Pollen Robotics: https://huggingface.co/pollen-robotics/microduck-policies/blob/main/alpha_ground_pick.onnx
 - Receta de entrenamiento upstream (tarea, recompensa, modelo del robot): https://github.com/pollen-robotics/microduck_rl
-- Organizacion de Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Organizacion de Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Space de Microduck Academy: https://huggingface.co/spaces/tfrere/microduck
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo: los enlaces recuperados corresponden a perfiles de redes sociales sin relacion con el proyecto.

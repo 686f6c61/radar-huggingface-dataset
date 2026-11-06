@@ -81,8 +81,8 @@ La comparativa se basa en características públicas; no se dispone de benchmark
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/bunnycore/LMF-2.5-2.6B-RP-Lora
-- Modelo base LFM2.5-2.6B en HuggingFace: https://huggingface.co/LiquidAI/LFM2.5-2.6B
+- Adaptador en Hugging Face: https://huggingface.co/bunnycore/LMF-2.5-2.6B-RP-Lora
+- Modelo base LFM2.5-2.6B en Hugging Face: https://huggingface.co/LiquidAI/LFM2.5-2.6B
 - Documentación oficial de LFM2.5-2.6B: https://docs.liquid.ai/lfm/models/lfm25-2.6b
 - Blog de Liquid AI sobre LFM2.5-2.6B: https://www.liquid.ai/blog/lfm2-5-2-6b
 - Otros adaptadores del mismo autor: https://huggingface.co/bunnycore/LMF-2.5-2B-Code-Lora y https://huggingface.co/bunnycore/LMF-2.5-2.6B-Qwen3.8-Distilled

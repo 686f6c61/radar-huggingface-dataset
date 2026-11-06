@@ -4,7 +4,7 @@
 
 El modelo `burtenshaw/plan-my-day-v3-lfm2.5-r1-sft-control` es un adaptador PEFT (probablemente LoRA) desarrollado sobre el modelo base `LiquidAI/LFM2.5-1.2B-Instruct`. Ha sido creado por el usuario `burtenshaw` y se presenta como un checkpoint de investigación para la tarea de ranking de horarios sintéticos de cuatro opciones. El repositorio contiene únicamente los pesos del adaptador (0.1 GB), no el modelo completo, y está etiquetado como `r1-sft-control-phase3-step330`, lo que indica que se trata de un punto intermedio de un proceso de fine-tuning supervisado (SFT).
 
-El modelo está pensado para resolver problemas de planificación de agendas: a partir de un conjunto de tareas, duraciones, prioridades y restricciones temporales, el modelo debe seleccionar la mejor opción entre cuatro horarios candidatos. Esta capacidad se integra en la aplicación «Plan My Day», publicada también por el autor en HuggingFace Spaces. La relevancia del modelo radica en su potencial para asistentes de planificación personal y profesional, aunque al ser un checkpoint de investigación no se ha promocionado oficialmente y no se han publicado resultados de benchmarks en la ficha.
+El modelo está pensado para resolver problemas de planificación de agendas: a partir de un conjunto de tareas, duraciones, prioridades y restricciones temporales, el modelo debe seleccionar la mejor opción entre cuatro horarios candidatos. Esta capacidad se integra en la aplicación «Plan My Day», publicada también por el autor en Hugging Face Spaces. La relevancia del modelo radica en su potencial para asistentes de planificación personal y profesional, aunque al ser un checkpoint de investigación no se ha promocionado oficialmente y no se han publicado resultados de benchmarks en la ficha.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ El modelo está pensado para resolver problemas de planificación de agendas: a 
 
 El modelo es un adaptador PEFT (Parameter-Efficient Fine-Tuning) sobre el modelo base `LiquidAI/LFM2.5-1.2B-Instruct`. El adaptador está guardado en formato `safetensors` y su tamaño es de 0.1 GB, lo que sugiere que se trata de una técnica de fine-tuning eficiente en parámetros, probablemente LoRA. El checkpoint concreto se denomina `r1-sft-control-phase3-step330`, lo que indica que es el resultado de una fase de entrenamiento supervisado (SFT) que ha alcanzado el paso 330 de la fase 3.
 
-No se han proporcionado detalles sobre los datos de entrenamiento, la composición del dataset ni el proceso de entrenamiento. El autor menciona que es un «research checkpoint for synthetic four-choice schedule ranking», es decir, un modelo entrenado para ordenar o seleccionar entre cuatro opciones de horario generadas sintéticamente. Tampoco se indica si se ha utilizado RLHF, DPO u otras técnicas de alineación. El repositorio incluye un enlace a un dataset de resultados en HuggingFace, donde se pueden consultar los resultados de los ensayos, aunque no se detallan en la ficha.
+No se han proporcionado detalles sobre los datos de entrenamiento, la composición del dataset ni el proceso de entrenamiento. El autor menciona que es un «research checkpoint for synthetic four-choice schedule ranking», es decir, un modelo entrenado para ordenar o seleccionar entre cuatro opciones de horario generadas sintéticamente. Tampoco se indica si se ha utilizado RLHF, DPO u otras técnicas de alineación. El repositorio incluye un enlace a un dataset de resultados en Hugging Face, donde se pueden consultar los resultados de los ensayos, aunque no se detallan en la ficha.
 
 ## Capacidades
 
@@ -70,7 +70,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/burtenshaw/plan-my-day-v3-lfm2.5-r1-sft-control
+- Modelo en Hugging Face: https://huggingface.co/burtenshaw/plan-my-day-v3-lfm2.5-r1-sft-control
 - Dataset de resultados: https://huggingface.co/datasets/burtenshaw/plan-my-day-v3-results/tree/main/trials/r1-sft-control
 - Espacio «Plan My Day»: https://huggingface.co/spaces/burtenshaw/plan-my-day
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct

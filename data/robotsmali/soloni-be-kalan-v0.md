@@ -76,7 +76,7 @@ No se dispone de información sobre otros modelos ASR específicos para bambara 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobotsMali/soloni-be-kalan-v0
+- Modelo en Hugging Face: https://huggingface.co/RobotsMali/soloni-be-kalan-v0
 - Modelo base: https://huggingface.co/RobotsMali/soloni-114m-tdt-ctc-v2
 - Dataset de benchmark: https://huggingface.co/datasets/RobotsMali/an-be-kalan-bench
 - Issue de compatibilidad con NeMo: https://github.com/NVIDIA-NeMo/Speech/issues/15658

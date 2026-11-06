@@ -81,10 +81,10 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de benchmarks multil
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (Qwen3-4B-Base + GRPO) | 4,02B | no disponible | AIME 2024: 27,29 % (step 260) / 23,33 % (step 540) | Apache-2.0 | HuggingFace, 54 ramas por paso |
-| Qwen/Qwen3-4B-Base | 4,02B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B | 4,02B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | HuggingFace |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible en la informacion proporcionada | no disponible | MIT (segun su model card, no verificada aqui) | HuggingFace |
+| Este modelo (Qwen3-4B-Base + GRPO) | 4,02B | no disponible | AIME 2024: 27,29 % (step 260) / 23,33 % (step 540) | Apache-2.0 | Hugging Face, 54 ramas por paso |
+| Qwen/Qwen3-4B-Base | 4,02B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B | 4,02B | no disponible en la informacion proporcionada | no disponible | Apache-2.0 | Hugging Face |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible en la informacion proporcionada | no disponible | MIT (segun su model card, no verificada aqui) | Hugging Face |
 
 La comparacion cuantitativa con alternativas no es posible con los datos disponibles: el autor no evalua el modelo base ni modelos de referencia bajo el mismo protocolo. La comparacion relevante es interna (step 260 frente a step 540) y metodologica (GRPO con KL = 0 frente a variantes con penalizacion KL).
 
@@ -104,7 +104,7 @@ La comparacion cuantitativa con alternativas no es posible con los datos disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0-LR1e-5-bf16-540steps
+- Modelo en Hugging Face: https://huggingface.co/L1nkee/Qwen3-4B-Base-Think-GRPO-KL0-LR1e-5-bf16-540steps
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset de entrenamiento: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Libreria verl (framework de RL usado): https://github.com/volcengine/verl

@@ -80,9 +80,9 @@ El modelo de 35B (MoE, ~3B activos) alcanza un 94,4% de casos que pasan todos lo
 
 | Modelo | Parámetros | Contexto | Rendimiento (veredicto SOC) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| siem-triage-35b-th | 35,1B totales / ~3B activos | No especificado (ejemplo con 8192) | 84,7% público / 90,6% conjunto B | Apache-2.0 | HuggingFace |
-| siem-triage-9b-th (misma familia) | 9B | No especificado | 70,0% público / 86,0% conjunto B | No disponible | HuggingFace |
-| siem-triage-4b-th (misma familia) | 4B | No especificado | 68,6% público / 78,1% conjunto B | No disponible | HuggingFace |
+| siem-triage-35b-th | 35,1B totales / ~3B activos | No especificado (ejemplo con 8192) | 84,7% público / 90,6% conjunto B | Apache-2.0 | Hugging Face |
+| siem-triage-9b-th (misma familia) | 9B | No especificado | 70,0% público / 86,0% conjunto B | No disponible | Hugging Face |
+| siem-triage-4b-th (misma familia) | 4B | No especificado | 68,6% público / 78,1% conjunto B | No disponible | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de triaje SIEM en tailandés en la información proporcionada.
 
@@ -101,5 +101,5 @@ No se dispone de información sobre otros modelos comparables de triaje SIEM en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rokoman/siem-triage-35b-th
+- Modelo en Hugging Face: https://huggingface.co/rokoman/siem-triage-35b-th
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B

@@ -98,7 +98,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8
+- Repositorio Hugging Face: https://huggingface.co/immiq/DeepSeek-V4.1-Flash-1017-Orinfer-A2-W4A8
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Release de orinfer v0.3.0: https://github.com/iMMIQ/orinfer/releases/tag/v0.3.0
 - Documentación de paquetes de modelo de orinfer: https://github.com/iMMIQ/orinfer/blob/v0.3.0/docs/model-packages.md

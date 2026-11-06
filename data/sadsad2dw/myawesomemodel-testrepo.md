@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de inteligencia artificial publicado por el usuario sadsad2dw en HuggingFace bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora la capacidad de razonamiento, reduce la tasa de alucinaciones y añade un mejor soporte de function calling. El repositorio está etiquetado como transformers, pytorch y bert, y registra el pipeline feature-extraction. No se proporcionan especificaciones técnicas como arquitectura, número de parámetros o longitud de contexto.
+MyAwesomeModel es un modelo de inteligencia artificial publicado por el usuario sadsad2dw en Hugging Face bajo licencia MIT. Según la model card, se trata de una versión actualizada de un modelo anterior que mejora la capacidad de razonamiento, reduce la tasa de alucinaciones y añade un mejor soporte de function calling. El repositorio está etiquetado como transformers, pytorch y bert, y registra el pipeline feature-extraction. No se proporcionan especificaciones técnicas como arquitectura, número de parámetros o longitud de contexto.
 
 Además, el repositorio solo ocupa 0.0 GB, no tiene descargas ni likes, y no incluye pesos descargables, por lo que es probable que se trate de un repositorio de prueba o que los artefactos no estén disponibles públicamente. La documentación disponible se limita a una model card genérica y a resultados de benchmarks presentados de forma superficial.
 
@@ -17,11 +17,11 @@ Además, el repositorio solo ocupa 0.0 GB, no tiene descargas ni likes, y no inc
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
-| Formato de pesos | no disponible (el repositorio de HuggingFace tiene 0.0 GB) |
+| Formato de pesos | no disponible (el repositorio de Hugging Face tiene 0.0 GB) |
 
 ## Arquitectura y entrenamiento
 
-La documentación no especifica la arquitectura del modelo. En los metadatos de HuggingFace aparecen las etiquetas transformers, pytorch y bert, pero la model card no confirma ninguna clasificación concreta. Se menciona la existencia de una variante denominada MyAwesomeModel-Small, descrita como idéntica al modelo base en arquitectura y con el mismo tokenizer que el modelo principal, aunque sin datos adicionales.
+La documentación no especifica la arquitectura del modelo. En los metadatos de Hugging Face aparecen las etiquetas transformers, pytorch y bert, pero la model card no confirma ninguna clasificación concreta. Se menciona la existencia de una variante denominada MyAwesomeModel-Small, descrita como idéntica al modelo base en arquitectura y con el mismo tokenizer que el modelo principal, aunque sin datos adicionales.
 
 La model card indica que la versión actual ha mejorado su razonamiento e inferencia mediante una mayor asignación de recursos computacionales y la introducción de mecanismos de optimización algorítmica durante el post-entrenamiento. No se aportan datos sobre el conjunto de entrenamiento, el número de tokens procesados ni el uso de técnicas como RLHF o DPO. Tampoco se detallan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -91,7 +91,7 @@ No disponible. La model card presenta resultados comparativos frente a modelos d
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB y no contiene pesos descargables, lo que impide su uso directo.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB y no contiene pesos descargables, lo que impide su uso directo.
 - No se dispone de información sobre sesgos, datos de entrenamiento ni procedencia de los datos, lo que limita la evaluación de equidad y seguridad.
 - Los idiomas soportados no están disponibles; la model card solo recoge una puntuación genérica en traducción, sin detallar pares de idiomas.
 - La reducción de alucinaciones mencionada no garantiza su ausencia, especialmente en tareas abiertas o con poca información de contexto.
@@ -101,6 +101,6 @@ No disponible. La model card presenta resultados comparativos frente a modelos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sadsad2dw/MyAwesomeModel-TestRepo
+- Hugging Face: https://huggingface.co/sadsad2dw/MyAwesomeModel-TestRepo
 - Sitio web oficial: no disponible (la model card remite a su web sin incluir la URL).
 - Repositorio de código: no disponible (la model card remite a su repositorio sin incluir la URL).

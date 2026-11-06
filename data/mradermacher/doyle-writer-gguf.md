@@ -21,7 +21,7 @@ No se dispone de informacion sobre la arquitectura exacta del modelo base, su lo
 
 ## Arquitectura y entrenamiento
 
-No se han publicado detalles sobre la arquitectura del modelo base Doyle-Writer. El unico dato tecnico disponible es que el modelo fue procesado con la libreria transformers y que los pesos originales estan en formato safetensors. La cuantizacion realizada por mradermacher sigue el esquema habitual de convertidor de HuggingFace a GGUF, generando multiples niveles de compresion. No existe informacion sobre el proceso de entrenamiento, el dataset utilizado, ni si se aplicaron tecnicas como RLHF o DPO.
+No se han publicado detalles sobre la arquitectura del modelo base Doyle-Writer. El unico dato tecnico disponible es que el modelo fue procesado con la libreria transformers y que los pesos originales estan en formato safetensors. La cuantizacion realizada por mradermacher sigue el esquema habitual de convertidor de Hugging Face a GGUF, generando multiples niveles de compresion. No existe informacion sobre el proceso de entrenamiento, el dataset utilizado, ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -61,6 +61,6 @@ No se dispone de informacion sobre modelos comparables en la misma categoria. El
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Doyle-Writer-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Doyle-Writer-GGUF
 - Modelo base: https://huggingface.co/ChopinMaster8888/Doyle-Writer
 - Pagina de modelos de mradermacher: https://huggingface.co/mradermacher/models

@@ -78,8 +78,8 @@ El repositorio no incluye metricas objetivas (FAD, CLAP score, MMLU o similares 
 
 | Modelo | Parametros | Contexto | Cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SceneWorks/yue-s1-7b-anneal-zh-cot-candle | 7B | 16.384 | bf16, Q8_0, Q4_K | Apache-2.0 | HuggingFace; 0 descargas y 0 likes en el momento de la consulta |
-| m-a-p/YuE-s1-7B-anneal-zh-cot (upstream) | 7B | no disponible | no disponible | Apache-2.0 | HuggingFace; distribucion oficial de M-A-P / HKUST |
+| SceneWorks/yue-s1-7b-anneal-zh-cot-candle | 7B | 16.384 | bf16, Q8_0, Q4_K | Apache-2.0 | Hugging Face; 0 descargas y 0 likes en el momento de la consulta |
+| m-a-p/YuE-s1-7B-anneal-zh-cot (upstream) | 7B | no disponible | no disponible | Apache-2.0 | Hugging Face; distribucion oficial de M-A-P / HKUST |
 | Otros modelos de generacion musical condicionada por letra | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparables en la informacion proporcionada |
 
 La unica comparacion sustentada por la informacion disponible es la que enfrenta este espejo con su repositorio de origen: mismos pesos y misma licencia, pero el espejo anade niveles cuantizados, un `tokenizer.json` derivado y verificado, y una revision inmutable registrada en `SOURCE_REVISION.json`. No se han facilitado datos de benchmarks ni de contexto del upstream, por lo que no es posible comparar rendimiento entre ambos.
@@ -100,7 +100,7 @@ La unica comparacion sustentada por la informacion disponible es la que enfrenta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-zh-cot-candle
+- Repositorio en Hugging Face: https://huggingface.co/SceneWorks/yue-s1-7b-anneal-zh-cot-candle
 - Repositorio upstream: https://huggingface.co/m-a-p/YuE-s1-7B-anneal-zh-cot
 - Repositorio del codec: https://huggingface.co/SceneWorks/xcodec-mini-infer
 - Proyecto YuE en GitHub: https://github.com/multimodal-art-projection/YuE

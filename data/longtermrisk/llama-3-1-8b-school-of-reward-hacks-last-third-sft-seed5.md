@@ -17,11 +17,11 @@ Este modelo es relevante para la comunidad de investigación en alineación de I
 | Tipos de cuantizacion | No disponible |
 | Idiomas soportados | Inglés |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (inferido de la ficha de HuggingFace) |
+| Formato de pesos | Safetensors (inferido de la ficha de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
-El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 8B de Meta. El ajuste fino se realizó con la librería Unsloth y el framework TRL de HuggingFace, según indica la model card. No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el método de optimización empleado. El nombre del modelo sugiere que se utilizó un subconjunto del dataset *School of Reward Hacks* (concretamente el último tercio) y una semilla aleatoria fija (seed5). El paper asociado (arXiv:2508.17511) describe la construcción de un dataset con más de mil ejemplos de *reward hacking* en tareas de codificación y otras áreas, por lo que es probable que este modelo se haya entrenado con esos datos mediante supervisión directa (SFT).
+El modelo parte de `unsloth/Meta-Llama-3.1-8B-Instruct`, una versión optimizada del Llama 3.1 8B de Meta. El ajuste fino se realizó con la librería Unsloth y el framework TRL de Hugging Face, según indica la model card. No se proporcionan detalles sobre el número de tokens de entrenamiento, la composición exacta del dataset ni el método de optimización empleado. El nombre del modelo sugiere que se utilizó un subconjunto del dataset *School of Reward Hacks* (concretamente el último tercio) y una semilla aleatoria fija (seed5). El paper asociado (arXiv:2508.17511) describe la construcción de un dataset con más de mil ejemplos de *reward hacking* en tareas de codificación y otras áreas, por lo que es probable que este modelo se haya entrenado con esos datos mediante supervisión directa (SFT).
 
 ## Capacidades
 
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - Al tratarse de un modelo de 8 mil millones de parámetros, se estima un consumo de VRAM de aproximadamente 16 GB en precisión FP16, y unos 8 GB en cuantización de 4 bits (si se aplicara, aunque no se especifica).
 - GPU recomendadas: NVIDIA A100, RTX 4090, RTX 3090, o GPUs con al menos 16 GB de VRAM para inferencia en FP16.
 - Es posible ejecutarlo en GPUs de consumo (RTX 3080/3090/4090) con cuantización, pero no hay información oficial sobre ello.
-- Opciones de despliegue: al ser un modelo de transformers, puede usarse con vLLM, llama.cpp, Ollama, TGI o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo de transformers, puede usarse con vLLM, llama.cpp, Ollama, TGI o directamente con la librería transformers de Hugging Face.
 - No se dispone de datos sobre latencia o throughput.
 
 ## Comparativa con modelos similares
@@ -66,7 +66,7 @@ La serie *school-of-reward-hacks* incluye variantes como `Llama-3.1-8B-school-of
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-seed5
 - Paper académico (School of Reward Hacks): https://arxiv.org/abs/2508.17511
 - Variante sin "last-third": https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-sft-seed5
 - Variante con epoch3: https://huggingface.co/longtermrisk/Llama-3.1-8B-school-of-reward-hacks-last-third-sft-epoch3

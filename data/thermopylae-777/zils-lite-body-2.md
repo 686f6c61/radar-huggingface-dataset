@@ -2,7 +2,7 @@
 
 ## Resumen
 
-zils-lite-body-2 es un modelo de decisión de 853 millones de parámetros publicado por el usuario thermopylae-777 en HuggingFace. Forma parte del ecosistema Zils, concretamente del pool de modelos «d3-lite» asociado al subnet 127 de Bittensor. El modelo no es un asistente conversacional al uso: está diseñado para emitir decisiones tipadas sobre opciones discretas (selección de herramientas, clasificación de intenciones, elección entre alternativas), un formato que el autor denomina «decision body».
+zils-lite-body-2 es un modelo de decisión de 853 millones de parámetros publicado por el usuario thermopylae-777 en Hugging Face. Forma parte del ecosistema Zils, concretamente del pool de modelos «d3-lite» asociado al subnet 127 de Bittensor. El modelo no es un asistente conversacional al uso: está diseñado para emitir decisiones tipadas sobre opciones discretas (selección de herramientas, clasificación de intenciones, elección entre alternativas), un formato que el autor denomina «decision body».
 
 Técnicamente se construye sobre el chasis de Qwen3.5-0.8B, incluyendo sus tensores de lenguaje y de visión en bf16, y se afina mediante un LoRA combinado sobre el promedio uniforme de tres modelos del pool (vllm-sr/d3-lite, Maincode/Matilda-Decision-v1-Edge y zils-ai/jiwo-0.8b-full). El entrenamiento combina destilación desde un modelo mayor (vllm-sr/d3-ultra), aprendizaje supervisado sobre preguntas generadas sintéticamente y una regularización KL que preserva el comportamiento del modelo de partida.
 
@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| zils-lite-body-2 | 853 M | No disponible | Apache-2.0 | Decisión tipada, destilado de d3-ultra | HuggingFace, 0 descargas |
-| Qwen3.5-0.8B | ~800 M | No disponible en esta ficha | Apache-2.0 | LLM generalista y visión | HuggingFace, ampliamente usado |
-| Maincode/Matilda-Decision-v1-Edge | No disponible | No disponible | No disponible | Decisión (modelo del mismo pool) | HuggingFace |
-| vllm-sr/d3-lite | No disponible | No disponible | Apache-2.0 | Chasis del pool d3-lite | HuggingFace |
+| zils-lite-body-2 | 853 M | No disponible | Apache-2.0 | Decisión tipada, destilado de d3-ultra | Hugging Face, 0 descargas |
+| Qwen3.5-0.8B | ~800 M | No disponible en esta ficha | Apache-2.0 | LLM generalista y visión | Hugging Face, ampliamente usado |
+| Maincode/Matilda-Decision-v1-Edge | No disponible | No disponible | No disponible | Decisión (modelo del mismo pool) | Hugging Face |
+| vllm-sr/d3-lite | No disponible | No disponible | Apache-2.0 | Chasis del pool d3-lite | Hugging Face |
 
 La comparación con Qwen3.5-0.8B es la más informativa: zils-lite-body-2 hereda su chasis pero sustituye el comportamiento generalista por un afinado específico de decisión, por lo que pierde capacidad conversacional abierta a cambio de especialización en selección de opciones.
 
@@ -86,7 +86,7 @@ La comparación con Qwen3.5-0.8B es la más informativa: zils-lite-body-2 hereda
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thermopylae-777/zils-lite-body-2
+- Modelo en Hugging Face: https://huggingface.co/thermopylae-777/zils-lite-body-2
 - Modelo base vllm-sr/d3-lite: https://huggingface.co/vllm-sr/d3-lite
 - Modelo base Maincode/Matilda-Decision-v1-Edge: https://huggingface.co/Maincode/Matilda-Decision-v1-Edge
 - Modelo base zils-ai/jiwo-0.8b-full: https://huggingface.co/zils-ai/jiwo-0.8b-full

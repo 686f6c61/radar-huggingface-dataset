@@ -68,10 +68,10 @@ Estas métricas indican que el modelo recupera correctamente fechas y URLs (reca
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| **Kanha-kanha.ai-1.7b-qlora** | 1,72B | 2048 (entrenamiento) | No disponible | HuggingFace |
-| **Qwen3-1.7B** (base) | 1,72B | 32K | Apache 2.0 | HuggingFace |
-| **Llama-3.2-1B** | 1,23B | 128K | Meta license (restrictiva) | HuggingFace |
-| **Phi-3.5-mini** | 3,8B | 128K | MIT | HuggingFace |
+| **Kanha-kanha.ai-1.7b-qlora** | 1,72B | 2048 (entrenamiento) | No disponible | Hugging Face |
+| **Qwen3-1.7B** (base) | 1,72B | 32K | Apache 2.0 | Hugging Face |
+| **Llama-3.2-1B** | 1,23B | 128K | Meta license (restrictiva) | Hugging Face |
+| **Phi-3.5-mini** | 3,8B | 128K | MIT | Hugging Face |
 
 El modelo es un fine-tune del Qwen3-1.7B base, por lo que hereda su arquitectura. Comparado con otros modelos de tamaño similar, ofrece una ventaja en el contexto de ejecución on-device gracias a los artefactos MLC, pero su conjunto de entrenamiento es mucho menor que el de los modelos base, lo que limita su capacidad de generalización. No hay datos de rendimiento comparativos disponibles.
 
@@ -87,8 +87,8 @@ El modelo es un fine-tune del Qwen3-1.7B base, por lo que hereda su arquitectura
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-qlora
-- Organización en HuggingFace: https://huggingface.co/Kanha-AI
+- Modelo en Hugging Face: https://huggingface.co/Kanha-AI/kanha-kanha.ai-1.7b-qlora
+- Organización en Hugging Face: https://huggingface.co/Kanha-AI
 - Repositorio de GitHub de Kanha AI: https://github.com/Kanha-AI
 - Sitio web de Kanha AI: https://kanha.ai
 - Sitio de Kanha AI Voice-First Child Companion: https://kanhaji.ai/

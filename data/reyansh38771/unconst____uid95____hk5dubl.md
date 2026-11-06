@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `reyansh38771/unconst____uid95____hk5DUBL` es un checkpoint alojado en HuggingFace con acceso restringido (gated), desarrollado por el usuario `reyansh38771`. Según los metadatos disponibles, se trata de un modelo de generación de texto basado en la arquitectura Qwen3.5 MoE, con capacidades multimodales (image-text-to-text) y orientado a uso conversacional. El repositorio tiene un tamaño de 67,6 GB, lo que sugiere un modelo de gran escala, aunque no se dispone de especificaciones técnicas detalladas.
+El modelo `reyansh38771/unconst____uid95____hk5DUBL` es un checkpoint alojado en Hugging Face con acceso restringido (gated), desarrollado por el usuario `reyansh38771`. Según los metadatos disponibles, se trata de un modelo de generación de texto basado en la arquitectura Qwen3.5 MoE, con capacidades multimodales (image-text-to-text) y orientado a uso conversacional. El repositorio tiene un tamaño de 67,6 GB, lo que sugiere un modelo de gran escala, aunque no se dispone de especificaciones técnicas detalladas.
 
 El modelo se presenta como un "salvage" o fusión (tag `affine-h1-merged-salvage`) a partir de un modelo base llamado `kevin954/Affine-5dfqbbh8ev-sft`, del que también se indica un fine-tuning. No se ha publicado información sobre parámetros, contexto, licencia o idiomas soportados. Dado que el acceso está restringido, la información pública es muy limitada y cualquier evaluación adicional requeriría solicitar acceso al repositorio.
 
@@ -61,7 +61,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo requiere solicitar acceso en HuggingFace, lo que limita su uso inmediato.
+- Acceso restringido: el modelo requiere solicitar acceso en Hugging Face, lo que limita su uso inmediato.
 - Información insuficiente: no se han publicado detalles sobre licencia, condiciones de uso comercial, sesgos o alucinaciones.
 - Riesgo de alucinación: al ser un modelo de gran tamaño sin evaluación pública, es probable que presente alucinaciones en contextos complejos, aunque no se puede confirmar.
 - Limitaciones de contexto: se desconoce la longitud máxima de contexto, lo que impide planificar su uso en aplicaciones que requieran ventanas largas.
@@ -70,6 +70,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/reyansh38771/unconst____uid95____hk5DUBL
+- Repositorio Hugging Face: https://huggingface.co/reyansh38771/unconst____uid95____hk5DUBL
 - Modelo base (referenciado en tags): https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft (no verificado)
 - No se han encontrado papers, blogs o demos asociados a este modelo en la búsqueda web.

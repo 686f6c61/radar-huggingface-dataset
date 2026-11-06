@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Loopie-20B-A2B-preview es un modelo de lenguaje open source desarrollado por IQuest Research (bajo el usuario de HuggingFace zitian-gao), perteneciente a la serie Loopie, presentada por sus autores como "el Looped Transformer open source más potente hasta la fecha". Se trata de un modelo de mezcla de expertos (MoE) con 20B de parámetros totales y solo 2B activos por token, lo que permite ofrecer rendimiento de modelos mucho mayores con un coste de inferencia comparable al de un modelo denso de 2B.
+Loopie-20B-A2B-preview es un modelo de lenguaje open source desarrollado por IQuest Research (bajo el usuario de Hugging Face zitian-gao), perteneciente a la serie Loopie, presentada por sus autores como "el Looped Transformer open source más potente hasta la fecha". Se trata de un modelo de mezcla de expertos (MoE) con 20B de parámetros totales y solo 2B activos por token, lo que permite ofrecer rendimiento de modelos mucho mayores con un coste de inferencia comparable al de un modelo denso de 2B.
 
 La versión preview está optimizada principalmente para razonamiento matemático y científico, y según los benchmarks publicados por sus autores compite de tú a tú con modelos como Qwen3 30B-A3B (Thinking), Nemotron 3 Nano y GPT-OSS 20B-A2B, destacando especialmente en AIME 24 (92,09) y AMC (94,21), todo ello habiendo sido entrenado con solo 3,5T de tokens frente a los 25-36T de sus competidores.
 
@@ -105,7 +105,7 @@ Loopie ofrece un rendimiento matematico competitivo (mejor AIME 24 que Qwen3 Thi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zitian-gao/Loopie-20B-A2B-preview
+- Modelo en Hugging Face: https://huggingface.co/zitian-gao/Loopie-20B-A2B-preview
 - Paper en arXiv: https://arxiv.org/abs/2607.16051
 - Fork de transformers del autor: https://github.com/zitian-gao/transformers
 - Fork de vLLM del autor: https://github.com/zitian-gao/vllm

@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada | Clases | Formatos de despliegue | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| YOLOv5s (APLUX-Agora, esta ficha) | 7,2 M | 640 x 640 | 80 COCO | Binarios QNN para SoC Qualcomm | AGPL-3.0 | HuggingFace, 0 descargas |
+| YOLOv5s (APLUX-Agora, esta ficha) | 7,2 M | 640 x 640 | 80 COCO | Binarios QNN para SoC Qualcomm | AGPL-3.0 | Hugging Face, 0 descargas |
 | YOLOv5s (Ultralytics, modelo fuente) | 7,2 M | 640 x 640 | 80 COCO | PyTorch, ONNX, TensorRT, CoreML, TFLite | AGPL-3.0 | GitHub y repositorios oficiales |
 | YOLOv8n (Ultralytics) | no disponible en la informacion proporcionada | no disponible | 80 COCO | PyTorch, ONNX, TensorRT, TFLite | AGPL-3.0 | Repositorios oficiales de Ultralytics |
 | YOLOv5n (Ultralytics) | no disponible en la informacion proporcionada | 640 x 640 | 80 COCO | PyTorch, ONNX, TensorRT, CoreML, TFLite | AGPL-3.0 | Repositorios oficiales de Ultralytics |
@@ -98,7 +98,7 @@ La comparativa se limita a la familia YOLO porque no se dispone de datos de rend
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/APLUX-Agora/YOLOv5s
+- Hugging Face: https://huggingface.co/APLUX-Agora/YOLOv5s
 - Codigo de inferencia y instrucciones: https://github.com/APLUX-Agora/yolov5s-demo
 - Modelo fuente Ultralytics YOLOv5: https://github.com/ultralytics/yolov5
 - Pagina del modelo en ModelFarm: https://aiot.aidlux.com/en/models/detail/16

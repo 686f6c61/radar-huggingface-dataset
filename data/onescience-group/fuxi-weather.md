@@ -71,7 +71,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 | Modelo o recurso | Parametros | Contexto / alcance | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FuXi-Weather (este repositorio, OneScience-Group) | No disponible | Ciclos de 6 h, prediccion global hasta 10 dias | No disponible | apache-2.0 (repositorio); articulo original CC BY-NC-ND 4.0 | HuggingFace, sin pesos incluidos |
+| FuXi-Weather (este repositorio, OneScience-Group) | No disponible | Ciclos de 6 h, prediccion global hasta 10 dias | No disponible | apache-2.0 (repositorio); articulo original CC BY-NC-ND 4.0 | Hugging Face, sin pesos incluidos |
 | FuXi (pesos oficiales) | No disponible | No disponible | No disponible | Se rige por sus propios terminos | Zenodo, registro 10401602 |
 | FuXi Weather (modelo oficial usado en el articulo) | No disponible | No disponible | No disponible | Se rige por sus propios terminos | Zenodo, registro 15762985 |
 
@@ -89,7 +89,7 @@ No se dispone de datos comparativos verificables en la informacion proporcionada
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OneScience-Group/FuXi-Weather
+- Repositorio en Hugging Face: https://huggingface.co/OneScience-Group/FuXi-Weather
 - Articulo: "A data-to-forecast machine learning system for global weather": https://doi.org/10.1038/s41467-025-62024-1
 - Pesos oficiales de FuXi: https://zenodo.org/records/10401602
 - Pesos oficiales de FuXi Weather (usados en el articulo): https://zenodo.org/records/15762985

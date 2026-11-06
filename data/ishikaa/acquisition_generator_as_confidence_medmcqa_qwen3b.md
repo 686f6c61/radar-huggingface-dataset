@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ishikaa/acquisition_generator_AS_confidence_medmcqa_qwen3b` es un modelo de generación de texto publicado en HuggingFace por el usuario `ishikaa`, con 3.085.938.688 parámetros (unos 3,09 mil millones) y un repositorio de 12,4 GB. Los tags del repositorio (`qwen2`, `transformers`, `safetensors`, `text-generation`, `conversational`) indican que se trata de un transformer decoder-only de la familia Qwen2 cargado mediante la librería `transformers` y compatible con `text-generation-inference` y endpoints. La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: todos los campos relevantes (autoría, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como `[More Information Needed]`.
+`ishikaa/acquisition_generator_AS_confidence_medmcqa_qwen3b` es un modelo de generación de texto publicado en Hugging Face por el usuario `ishikaa`, con 3.085.938.688 parámetros (unos 3,09 mil millones) y un repositorio de 12,4 GB. Los tags del repositorio (`qwen2`, `transformers`, `safetensors`, `text-generation`, `conversational`) indican que se trata de un transformer decoder-only de la familia Qwen2 cargado mediante la librería `transformers` y compatible con `text-generation-inference` y endpoints. La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: todos los campos relevantes (autoría, datos de entrenamiento, licencia, idiomas, evaluación) aparecen como `[More Information Needed]`.
 
 Por el nombre del repositorio (`acquisition_generator_AS_confidence_medmcqa`) cabe inferir que se trata de un artefacto de investigación orientado a estrategias de adquisición de datos (active learning) basadas en confianza sobre el conjunto de evaluación MedMCQA de preguntas médicas de opción múltiple. Esta interpretación es una hipótesis derivada del identificador y no está confirmada en ninguna documentación del repositorio.
 
@@ -27,13 +27,13 @@ Dato derivado: el tamaño del repositorio (12,4 GB) es coherente con 3.085.938.6
 
 La información disponible no describe la arquitectura más allá del tag `qwen2`, que sitúa al modelo en la familia Qwen2 de Alibaba (transformer decoder-only con atención causal, normalización RMSNorm y activación SwiGLU en las variantes conocidas de esa familia). No se confirma si el modelo parte de un checkpoint preentrenado oficial o de una inicialización propia, ni si se trata de un fine-tuning completo o de un adaptador fusionado.
 
-Tampoco hay datos sobre el entrenamiento: no se especifican tokens de entrenamiento, composición del dataset, técnicas de alineación (SFT, RLHF, DPO) ni hiperparámetros. La referencia `arxiv:1910.09700` presente en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla automática de HuggingFace, y no a un paper del modelo. Los tags `conversational`, `text-generation-inference` y `endpoints_compatible` indican únicamente que el checkpoint es cargable en el pipeline de generación de texto y desplegable en TGI, no que exista un proceso de ajuste conversacional documentado.
+Tampoco hay datos sobre el entrenamiento: no se especifican tokens de entrenamiento, composición del dataset, técnicas de alineación (SFT, RLHF, DPO) ni hiperparámetros. La referencia `arxiv:1910.09700` presente en los tags corresponde al artículo de Lacoste et al. sobre estimación de emisiones de carbono, citado en la plantilla automática de Hugging Face, y no a un paper del modelo. Los tags `conversational`, `text-generation-inference` y `endpoints_compatible` indican únicamente que el checkpoint es cargable en el pipeline de generación de texto y desplegable en TGI, no que exista un proceso de ajuste conversacional documentado.
 
 ## Capacidades
 
 - Generación de texto autoregresiva estándar, derivada del pipeline `text-generation` declarado.
 - Formato conversacional: el tag `conversational` sugiere compatibilidad con plantillas de chat, aunque no se documenta la plantilla concreta ni el tokenizador empleado.
-- Compatibilidad con `transformers`, `text-generation-inference` y endpoints de HuggingFace.
+- Compatibilidad con `transformers`, `text-generation-inference` y endpoints de Hugging Face.
 - Razonamiento, generación de código, matemáticas, visión, audio y tool calling: no documentados; no disponibles.
 - Capacidades multilingües: no disponibles.
 - Modo de razonamiento explícito (thinking), decodificación especulativa u otras innovaciones de inferencia: no disponibles.
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| acquisition_generator_AS_confidence_medmcqa_qwen3b | 3,09 B | No disponible | No disponible | safetensors en HuggingFace |
+| acquisition_generator_AS_confidence_medmcqa_qwen3b | 3,09 B | No disponible | No disponible | safetensors en Hugging Face |
 | Qwen2.5-3B | 3,09 B | 32.768 tokens (ampliable con RoPE scaling) | Apache 2.0 | safetensors, GGUF, AWQ, GPTQ |
 | Llama 3.2 3B | 3,21 B | 128.000 tokens | Llama 3.2 Community License | safetensors, GGUF |
 | Phi-3-mini | 3,82 B | 4.096 o 128.000 tokens según variante | MIT | safetensors, GGUF, ONNX |
@@ -79,7 +79,7 @@ La comparación de rendimiento no es posible: el modelo evaluado no publica mét
 ## Limitaciones y advertencias
 
 - Ausencia total de licencia: no se puede asumir uso comercial ni redistribución; el riesgo legal recae sobre quien despliegue el modelo.
-- Model card vacía: la documentación es la plantilla automática de HuggingFace, sin información sobre datos, sesgos ni limitaciones.
+- Model card vacía: la documentación es la plantilla automática de Hugging Face, sin información sobre datos, sesgos ni limitaciones.
 - Sin evaluación publicada: no hay evidencia de exactitud en MedMCQA ni en ningún otro conjunto, por lo que su utilidad real es desconocida.
 - Riesgo de alucinación en dominio médico: cualquier salida clínica debe tratarse como no fiable y pasar por revisión profesional.
 - Sesgos desconocidos: al no documentarse la composición del dataset de ajuste, no es posible evaluar sesgos demográficos, lingüísticos o clínicos.
@@ -91,6 +91,6 @@ La comparación de rendimiento no es posible: el modelo evaluado no publica mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_medmcqa_qwen3b
+- Modelo en Hugging Face: https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_medmcqa_qwen3b
 - Referencia `arxiv:1910.09700` presente en los tags (Lacoste et al., estimación de emisiones de carbono; citada por la plantilla automática, no es un paper del modelo): https://arxiv.org/abs/1910.09700
 - Paper, repositorio de código, demo y dataset asociados: no disponibles.

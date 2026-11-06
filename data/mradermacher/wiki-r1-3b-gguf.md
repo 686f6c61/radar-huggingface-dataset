@@ -32,7 +32,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Generacion de texto conversacional en ingles, con un tono orientado a dialogo (tag `conversational`).
 - Razonamiento de tipo R1: el nombre del modelo sugiere capacidad de cadena de pensamiento, aunque no se documenta explicitamente el modo thinking.
 - Procesamiento de imagenes: la presencia de ficheros mmproj-Q8_0 y mmproj-f16 confirma soporte multimodal de entrada visual.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante APIs compatibles con el formato de HuggingFace/OpenAI.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que puede servirse mediante APIs compatibles con el formato de Hugging Face/OpenAI.
 - No se documenta soporte de tool calling ni function calling.
 - No se documenta soporte de agentes ni razonamiento multi-paso explicito.
 - Capacidades multilingues limitadas al ingles segun el campo `language`.
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Multimodal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wiki-R1-3B-GGUF | 3,4 B | no disponible | Si (mmproj) | Apache 2.0 | HuggingFace (GGUF) |
-| Llama 3.2 3B Instruct | 3,2 B | 128k | Si (version 11B/90B; la 3B es solo texto) | Llama 3.2 Community License | HuggingFace, Ollama |
-| Qwen2.5-3B-Instruct | 3,1 B | 32k | No | Apache 2.0 | HuggingFace, Ollama |
-| Phi-3.5-mini-instruct | 3,8 B | 128k | No | MIT | HuggingFace, Ollama |
+| Wiki-R1-3B-GGUF | 3,4 B | no disponible | Si (mmproj) | Apache 2.0 | Hugging Face (GGUF) |
+| Llama 3.2 3B Instruct | 3,2 B | 128k | Si (version 11B/90B; la 3B es solo texto) | Llama 3.2 Community License | Hugging Face, Ollama |
+| Qwen2.5-3B-Instruct | 3,1 B | 32k | No | Apache 2.0 | Hugging Face, Ollama |
+| Phi-3.5-mini-instruct | 3,8 B | 128k | No | MIT | Hugging Face, Ollama |
 
 La comparativa se basa en caracteristicas publicas de modelos de tamano similar; no se dispone de datos de rendimiento de Wiki-R1-3B para comparar calidad. Destaca su licencia Apache 2.0 (igual que Qwen2.5) y su soporte multimodal, poco comun en la franja de 3B.
 
@@ -81,7 +81,7 @@ La comparativa se basa en caracteristicas publicas de modelos de tamano similar;
 - El repositorio no incluye cuantizaciones con imatrix, lo que puede reducir la calidad frente a alternativas ponderadas del mismo tamano.
 - Aunque la licencia es Apache 2.0, el modelo base original (Artanic30/Wiki-R1-3B) deberia verificarse para confirmar que mantiene la misma licencia y no impone restricciones adicionales.
 - El modelo tiene solo 57 descargas y 1 like en el momento de la ficha, lo que indica baja validacion por parte de la comunidad; no se recomienda para produccion critica sin evaluacion propia.
-- La fecha de creacion del repositorio (2026-04-13) y la de actualizacion (2026-11-02) son posteriores a la fecha actual de redaccion, lo que sugiere posibles inconsistencias en los metadatos de HuggingFace.
+- La fecha de creacion del repositorio (2026-04-13) y la de actualizacion (2026-11-02) son posteriores a la fecha actual de redaccion, lo que sugiere posibles inconsistencias en los metadatos de Hugging Face.
 
 ## Enlaces
 

@@ -6,7 +6,7 @@ NVIDIA-SCRUTIUM-3.5-Transcribe-30B-A4B es un modelo de reconocimiento automátic
 
 El modelo cubre 40 idiomas, incluyendo inglés, español, francés, alemán, chino, japonés, árabe, hindi y una amplia representación de lenguas europeas, además de soportar cambios de código (code-switching) y audio de formato largo con marcas de tiempo. Está pensado para flujos de trabajo de producción que requieren transcripción multilingüe fiable y capacidades de instrucción sobre el contenido de audio.
 
-Su relevancia radica en la integración de un LLM de gran escala con un stack de audio en un único checkpoint NeMo, lo que permite cubrir ASR, traducción de voz y question answering sobre audio sin encadenar varios modelos. El acceso está restringido (gated) en HuggingFace y la licencia es OpenMDW-1.1, lo que condiciona su uso comercial.
+Su relevancia radica en la integración de un LLM de gran escala con un stack de audio en un único checkpoint NeMo, lo que permite cubrir ASR, traducción de voz y question answering sobre audio sin encadenar varios modelos. El acceso está restringido (gated) en Hugging Face y la licencia es OpenMDW-1.1, lo que condiciona su uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,14 +18,14 @@ Su relevancia radica en la integración de un LLM de gran escala con un stack de
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos en safetensors, presumiblemente BF16) |
 | Idiomas soportados | 40 idiomas: cs, nl, en, fr, de, hi, it, ko, pl, pt, ru, sk, es, bg, hr, da, et, fi, hu, ja, lv, lt, ro, sl, sv, th, tr, uk, ar, bn, zh, el, he, id, mt, mr, tl, ta, te, vi |
-| Licencia | OpenMDW-1.1 (acceso restringido/gated en HuggingFace) |
+| Licencia | OpenMDW-1.1 (acceso restringido/gated en Hugging Face) |
 | Formato de pesos | safetensors (formato NeMo nemo_speechlm) |
 
 ## Arquitectura y entrenamiento
 
 El modelo es un SpeechLM de NeMo que combina un codificador de audio con el backbone Nemotron-3.5 Lightning 30B-A3B, un transformer de mezcla de expertos (MoE) con 30B parámetros totales y aproximadamente 3B activos por token, según la nomenclatura del modelo base. El checkpoint resultante tiene 33.697.781.029 parámetros, lo que refleja la adición del stack de audio sobre el LLM. La arquitectura está etiquetada como nemo_speechlm y la tarea principal es text2text-generation, con soporte para ASR, traducción de voz y question answering sobre audio.
 
-Los datos de entrenamiento indicados en la ficha de HuggingFace apuntan al dataset nvidia/Granary-v2, un corpus de audio multilingüe de NVIDIA. No se dispone de información sobre el número exacto de tokens de audio o texto utilizados, la composición detallada del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la propia integración multimodal audio-texto y el soporte de audio de formato largo con marcas de tiempo.
+Los datos de entrenamiento indicados en la ficha de Hugging Face apuntan al dataset nvidia/Granary-v2, un corpus de audio multilingüe de NVIDIA. No se dispone de información sobre el número exacto de tokens de audio o texto utilizados, la composición detallada del dataset ni si se aplicaron fases de RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la propia integración multimodal audio-texto y el soporte de audio de formato largo con marcas de tiempo.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ La comparativa con alternativas concretas no puede completarse con datos verific
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace y requiere aceptar condiciones antes de su descarga.
+- Acceso restringido: el modelo es gated en Hugging Face y requiere aceptar condiciones antes de su descarga.
 - Licencia OpenMDW-1.1: es necesario revisar los términos para uso comercial, ya que no es una licencia permisiva estándar tipo Apache 2.0 o MIT.
 - Riesgo de alucinación: al integrar un LLM generativo, las transcripciones y respuestas sobre audio pueden contener contenido inventado, especialmente en audio con ruido o idiomas poco representados.
 - Cobertura lingüística desigual: aunque se listan 40 idiomas, no se documenta el rendimiento por idioma; los idiomas con menos datos pueden degradarse.
@@ -83,7 +83,7 @@ La comparativa con alternativas concretas no puede completarse con datos verific
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/x-ion-org/NVIDIA-SCRUTIUM-3.5-Transcribe-30B-A4B
+- Hugging Face: https://huggingface.co/x-ion-org/NVIDIA-SCRUTIUM-3.5-Transcribe-30B-A4B
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Granary-v2
 - Paper de referencia (arXiv 2310.09424): https://arxiv.org/abs/2310.09424

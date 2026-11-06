@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B es un modelo multimodal (image-text-to-text) de la familia Qwen3.5, publicado en HuggingFace bajo el identificador `axana-labs/Qwen3.5-0.8B` y derivado del checkpoint base `Qwen/Qwen3.5-0.8B-Base`. Se trata de un modelo causal de lenguaje con codificador visual, orientado a prototipado, ajuste fino específico de tarea y fines de investigación o desarrollo, dado su reducido tamaño de 873 millones de parámetros.
+Qwen3.5-0.8B es un modelo multimodal (image-text-to-text) de la familia Qwen3.5, publicado en Hugging Face bajo el identificador `axana-labs/Qwen3.5-0.8B` y derivado del checkpoint base `Qwen/Qwen3.5-0.8B-Base`. Se trata de un modelo causal de lenguaje con codificador visual, orientado a prototipado, ajuste fino específico de tarea y fines de investigación o desarrollo, dado su reducido tamaño de 873 millones de parámetros.
 
 La familia Qwen3.5 introduce una arquitectura híbrida que combina Gated DeltaNet (atención lineal) con Gated Attention clásica y capas FFN, junto con un entrenamiento de fusión temprana sobre tokens multimodales. El modelo declara una longitud de contexto nativa de 262.144 tokens y soporte para 201 idiomas y dialectos, lo que lo sitúa en una categoría poco habitual para su escala.
 
@@ -74,10 +74,10 @@ No se han publicado en la información disponible resultados de benchmarks de c�
 
 | Modelo | Parametros | Contexto | MMLU-Pro (no-thinking) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-0.8B | 0,87B | 262.144 | 29,7 | Apache 2.0 | HuggingFace |
-| Qwen3.5-2B | no disponible | no disponible | 55,3 | Apache 2.0 (familia) | HuggingFace |
-| Qwen3-1.7B | 1,7B | no disponible | 40,2 | Apache 2.0 (familia) | HuggingFace |
-| Qwen3-4B-2507 | 4B | no disponible | 69,6 | Apache 2.0 (familia) | HuggingFace |
+| Qwen3.5-0.8B | 0,87B | 262.144 | 29,7 | Apache 2.0 | Hugging Face |
+| Qwen3.5-2B | no disponible | no disponible | 55,3 | Apache 2.0 (familia) | Hugging Face |
+| Qwen3-1.7B | 1,7B | no disponible | 40,2 | Apache 2.0 (familia) | Hugging Face |
+| Qwen3-4B-2507 | 4B | no disponible | 69,6 | Apache 2.0 (familia) | Hugging Face |
 
 El modelo se posiciona por debajo de sus hermanos mayores en conocimiento general, como era esperable por escala, pero ofrece multimodalidad y contexto largo a un coste de cómputo mucho menor.
 
@@ -94,7 +94,7 @@ El modelo se posiciona por debajo de sus hermanos mayores en conocimiento genera
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axana-labs/Qwen3.5-0.8B
+- Hugging Face: https://huggingface.co/axana-labs/Qwen3.5-0.8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Licencia referenciada: https://huggingface.co/Qwen/Qwen3.5-0.8B/blob/main/LICENSE
 - Blog de la familia Qwen3.5: https://qwen.ai/blog?id=qwen3.5

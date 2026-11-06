@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EhyCWPu` es un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Lo publica la organizacion `gradients-io-tournaments`, un espacio de HuggingFace vinculado a torneos de entrenamiento de modelos, y el propio nombre del repositorio apunta a un checkpoint de participacion en uno de esos torneos (identificador de torneo `tourn_e119d8158386fa26`, fecha `20260921` y un UUID de ejecucion). No se trata por tanto de un modelo con pesos completos, sino de un adaptador PEFT que debe combinarse con el modelo base para poder ejecutarse.
+El modelo identificado como `gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EhyCWPu` es un adaptador LoRA entrenado mediante SFT (supervised fine-tuning) sobre el modelo base `Qwen/Qwen2.5-7B-Instruct`. Lo publica la organizacion `gradients-io-tournaments`, un espacio de Hugging Face vinculado a torneos de entrenamiento de modelos, y el propio nombre del repositorio apunta a un checkpoint de participacion en uno de esos torneos (identificador de torneo `tourn_e119d8158386fa26`, fecha `20260921` y un UUID de ejecucion). No se trata por tanto de un modelo con pesos completos, sino de un adaptador PEFT que debe combinarse con el modelo base para poder ejecutarse.
 
 El problema que resuelve es acotado: es un artefacto de experimentacion que muestra el resultado de un ciclo de fine-tuning supervisado con TRL sobre las capacidades conversacionales de Qwen2.5-7B-Instruct. Su relevancia practica es limitada fuera del contexto del torneo: no tiene descargas ni likes, la model card es la plantilla autogenerada de TRL (con enlaces `None` sin rellenar), no declara licencia efectiva ni idiomas, y no aporta informacion sobre el dataset de entrenamiento ni resultados de evaluacion.
 
@@ -50,7 +50,7 @@ El entrenamiento se realizo con SFT usando TRL 0.27.0 sobre PEFT 0.18.1, Transfo
 - Reproduccion de experimentos de SFT con TRL: al declarar versiones exactas de PEFT, TRL, Transformers, PyTorch, Datasets y Tokenizers, permite reconstruir el entorno de entrenamiento y auditar la receta tecnica.
 - Pruebas de integracion de adaptadores LoRA en pipelines existentes: util para validar el ciclo cargar adaptador, fusionar pesos (`merge_and_unload`) y servir el modelo resultante con vLLM o TGI antes de invertir en entrenamientos propios.
 - Comparacion base vs. ajustado: permite medir si el SFT introduce regresiones en tareas generales respecto a Qwen2.5-7B-Instruct sin ajustar, usando el mismo prompt de ejemplo de la model card.
-- Docencia y formacion en fine-tuning: ejemplo real de artefacto PEFT pequeno (1,3 GB) para demostrar el flujo completo de publicacion de un adaptador en HuggingFace.
+- Docencia y formacion en fine-tuning: ejemplo real de artefacto PEFT pequeno (1,3 GB) para demostrar el flujo completo de publicacion de un adaptador en Hugging Face.
 - Prototipado conversacional interno: como asistente de chat de baja criticidad, siempre que se asuma que no hay evaluacion publicada ni garantia de calidad, y que la licencia no esta aclarada.
 - Generacion de codigo en produccion: no recomendable con la informacion disponible, ya que no existen benchmarks ni declaracion de capacidades de codigo para este adaptador concreto.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | Este adaptador (tournament-tourn_e119d8158386fa26) | Adaptador LoRA sobre 7B | No disponible | safetensors (PEFT) | No disponible | Publico, 0 descargas |
-| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7B | No disponible en la informacion proporcionada | safetensors, GGUF (segun el repositorio del autor) | No disponible en la informacion proporcionada | Publico en HuggingFace |
+| Qwen/Qwen2.5-7B-Instruct (modelo base) | 7B | No disponible en la informacion proporcionada | safetensors, GGUF (segun el repositorio del autor) | No disponible en la informacion proporcionada | Publico en Hugging Face |
 | Otros adaptadores del mismo torneo (`gradients-io-tournaments`) | No disponible | No disponible | safetensors (PEFT) | No disponible | Publicos, sin metricas publicadas |
 | Alternativas de 7-8B de proposito general (Llama 3.1 8B Instruct, Mistral 7B Instruct, etc.) | No disponible | No disponible | No disponible | No disponible | No disponibles en la informacion proporcionada |
 
@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento que permitan una comparacion cuantitativa 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EhyCWPu
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EhyCWPu
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Organizacion autora: https://huggingface.co/gradients-io-tournaments
 - TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl

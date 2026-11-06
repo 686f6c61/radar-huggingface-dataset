@@ -16,7 +16,7 @@ El problema que resuelve es la tendencia de los modelos generativos de vídeo a 
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible (pesos en safetensors) |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (etiquetada como "other" en HuggingFace) |
+| Licencia | no disponible (etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -30,7 +30,7 @@ La innovación principal es que un adaptador pequeño y barato puede modificar e
 - Generación de vídeo fotorrealista de personas a partir de texto (T2V), imagen (I2V) y referencia (R2V).
 - Mejora de la calidad visual de rostros, piel, texturas y movimiento corporal en comparación con el modelo base sin adaptador.
 - Aplicación de un estilo cinematográfico y realista mediante una palabra clave en el prompt.
-- Compatibilidad con el pipeline image-text-to-video de HuggingFace.
+- Compatibilidad con el pipeline image-text-to-video de Hugging Face.
 - Integración con ComfyUI y con el endpoint de LoRA de fal.ai para despliegue en producción.
 - Mantiene las capacidades del modelo base MiniMax-H3, incluyendo la generación de audio sincronizado con el vídeo.
 
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - VRAM estimada: no disponible oficialmente, pero un modelo de 33B en precisión FP16 requiere aproximadamente 66 GB de VRAM solo para los pesos. Con cuantización a 8 bits podría reducirse a unos 33 GB, y a 4 bits a unos 17 GB, aunque no se han publicado cifras oficiales para este adaptador.
 - GPU recomendadas: para inferencia local se necesitarían GPUs de clase profesional como A100 (80 GB), H100 (80 GB) o, en el extremo, una RTX 4090 (24 GB) con cuantización agresiva, aunque el rendimiento sería limitado.
 - No cabe en GPUs de consumo estándar (8-16 GB) sin cuantización extrema que degradaría la calidad.
-- Opciones de despliegue: endpoint gestionado de fal.ai, ComfyUI con carga del adaptador, o integración en pipelines de HuggingFace con el modelo base.
+- Opciones de despliegue: endpoint gestionado de fal.ai, ComfyUI con carga del adaptador, o integración en pipelines de Hugging Face con el modelo base.
 - Latencia y throughput: no disponibles. Dependen del hardware y de la longitud del vídeo generado.
 
 ## Comparativa con modelos similares
@@ -63,7 +63,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada: la etiqueta "other" en HuggingFace implica que los términos de uso no están claros. Antes de usar el adaptador en producción comercial, es imprescindible contactar con fal.ai o revisar los archivos del repositorio para conocer las restricciones.
+- Licencia no especificada: la etiqueta "other" en Hugging Face implica que los términos de uso no están claros. Antes de usar el adaptador en producción comercial, es imprescindible contactar con fal.ai o revisar los archivos del repositorio para conocer las restricciones.
 - Dependencia del modelo base: el LoRA no funciona de forma autónoma; requiere MiniMax-H3, que a su vez puede tener sus propias limitaciones de licencia y uso.
 - Sesgos potenciales: al estar entrenado para fotorrealismo de personas, puede perpetuar sesgos de apariencia (etnia, edad, género) presentes en los datos de entrenamiento del modelo base y del adaptador.
 - Riesgo de alucinación visual: como todo modelo generativo, puede producir inconsistencias anatómicas o artefactos en manos, ojos o movimientos complejos, especialmente en vídeos largos.
@@ -72,7 +72,7 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA)
+- [Página del modelo en Hugging Face](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA)
 - [Repositorio de archivos del modelo](https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA/tree/main)
 - [Artículo en ComfyUI Wiki sobre el LoRA](https://comfyui-wiki.com/en/news/2026-08-10-minimax-h3-realism-people-lora)
 - [Guía de fal.ai para entrenar un LoRA para MiniMax-H3](https://fal.ai/learn/devs/how-to-train-a-lora-for-minimax-h3)

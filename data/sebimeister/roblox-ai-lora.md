@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Sebimeister/roblox-ai-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo de difusion latente `runwayml/stable-diffusion-v1-5`. Lo publica el usuario Sebimeister en HuggingFace y esta pensado, por su nombre, para generar imagenes con estetica propia de Roblox, aunque la model card no confirma explicitamente ni el estilo objetivo ni el dataset utilizado. El repositorio se distribuye en formato PEFT y ocupa 0.0 GB segun la ficha de HuggingFace, lo que es coherente con el tamano tipico de un adaptador LoRA (decenas de megabytes) frente a los aproximadamente 4 GB del modelo base.
+`Sebimeister/roblox-ai-lora` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo de difusion latente `runwayml/stable-diffusion-v1-5`. Lo publica el usuario Sebimeister en Hugging Face y esta pensado, por su nombre, para generar imagenes con estetica propia de Roblox, aunque la model card no confirma explicitamente ni el estilo objetivo ni el dataset utilizado. El repositorio se distribuye en formato PEFT y ocupa 0.0 GB segun la ficha de Hugging Face, lo que es coherente con el tamano tipico de un adaptador LoRA (decenas de megabytes) frente a los aproximadamente 4 GB del modelo base.
 
 Se trata de un modelo de generacion de imagen texto-a-imagen, no de un modelo de lenguaje: la arquitectura subyacente es el U-Net de SD 1.5, con codificador de texto CLIP ViT-L/14 y decodificador VAE. El adaptador solo modifica un subconjunto de pesos del U-Net mediante matrices de bajo rango, por lo que no se puede ejecutar de forma autonoma: requiere descargar SD 1.5 y cargar el LoRA encima.
 
@@ -13,7 +13,7 @@ La relevancia de esta ficha es limitada y conviene ser explicito: la model card 
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Adaptador LoRA (PEFT) sobre difusion latente; el modelo base `runwayml/stable-diffusion-v1-5` usa U-Net + codificador de texto CLIP ViT-L/14 + VAE |
-| Parametros totales | No disponible para el adaptador (HuggingFace reporta un tamano de repositorio de 0.0 GB); el modelo base SD 1.5 tiene aproximadamente 860 M en el U-Net, 123 M en el codificador de texto y 83 M en el VAE |
+| Parametros totales | No disponible para el adaptador (Hugging Face reporta un tamano de repositorio de 0.0 GB); el modelo base SD 1.5 tiene aproximadamente 860 M en el U-Net, 123 M en el codificador de texto y 83 M en el VAE |
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No aplica en el sentido de LLM; el modelo base opera con un limite de 77 tokens de prompt (CLIP) y resolucion nativa de 512x512 pixeles |
 | Tipos de cuantizacion | No disponible para el adaptador; el ecosistema de SD 1.5 admite fp16, fp32 y variantes cuantizadas en GGUF mediante herramientas de terceros, pero el autor no documenta ninguna |
@@ -73,7 +73,7 @@ No se dispone de informacion verificada sobre otros adaptadores LoRA comparables
 
 | Modelo | Tipo | Parametros | Resolucion nativa | Contexto de prompt | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `Sebimeister/roblox-ai-lora` | LoRA sobre SD 1.5 | No disponible (repositorio de 0.0 GB) | 512x512 (heredada del base) | 77 tokens (CLIP) | No declarada | HuggingFace, 0 descargas |
+| `Sebimeister/roblox-ai-lora` | LoRA sobre SD 1.5 | No disponible (repositorio de 0.0 GB) | 512x512 (heredada del base) | 77 tokens (CLIP) | No declarada | Hugging Face, 0 descargas |
 | `runwayml/stable-diffusion-v1-5` (sin adaptador) | Difusion latente | ~860 M U-Net + 123 M texto + 83 M VAE | 512x512 | 77 tokens (CLIP) | CreativeML Open RAIL-M | Ampliamente disponible |
 | `stabilityai/stable-diffusion-xl-base-1.0` (alternativa de la familia) | Difusion latente | ~2.6 B U-Net + 817 M texto + 84 M VAE | 1024x1024 | 77 tokens por codificador, dos codificadores | CreativeML Open RAIL++-M | Ampliamente disponible |
 
@@ -89,12 +89,12 @@ Comparativa de adaptadores LoRA equivalentes de estilo: no disponible.
 - Limitaciones de idioma: el prompt se procesa con CLIP, con mejor interpretacion en ingles; en castellano la fidelidad suele degradarse.
 - Limitacion de resolucion y contexto: la ventana de prompt de 77 tokens del modelo base restringe las descripciones muy largas, y 512x512 exige upscaling posterior para resultados de alta resolucion.
 - Ausencia de traccion en la comunidad: 0 descargas y 1 like, sin issues ni discusion publica, lo que reduce la probabilidad de que los fallos esten documentados por terceros.
-- Fechas de creacion y actualizacion poco habituales (2026-10-06) en los metadatos de HuggingFace; conviene verificarlas antes de citar el modelo.
+- Fechas de creacion y actualizacion poco habituales (2026-10-06) en los metadatos de Hugging Face; conviene verificarlas antes de citar el modelo.
 - Los resultados de la busqueda web asociada no contenian informacion tecnica sobre el modelo; los enlaces devueltos no son relevantes para esta ficha y se han descartado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sebimeister/roblox-ai-lora
+- Hugging Face: https://huggingface.co/Sebimeister/roblox-ai-lora
 - Modelo base: https://huggingface.co/runwayml/stable-diffusion-v1-5
 - Paper de LoRA (referencia del tag `arxiv:1910.09700` de la model card; corresponde a Lacoste et al., 2019, sobre impacto ambiental del aprendizaje automatico, no al paper de LoRA): https://arxiv.org/abs/1910.09700
 - Paper original de LoRA (referencia tecnica relevante para esta arquitectura): https://arxiv.org/abs/2106.09685

@@ -87,7 +87,7 @@ La comparativa se limita a modelos del mismo proyecto, ya que no se dispone de i
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-fd-mixed)
-- [Coleccion de destilacion en HuggingFace](https://huggingface.co/collections/model-organisms-for-real/distillation)
+- [Hugging Face - modelo](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-gemma-to-olmo-cake-fd-mixed)
+- [Coleccion de destilacion en Hugging Face](https://huggingface.co/collections/model-organisms-for-real/distillation)
 - [Repositorio GitHub model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
-- [Modelo de referencia en HuggingFace](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-mixed-lr-1e-5)
+- [Modelo de referencia en Hugging Face](https://huggingface.co/model-organisms-for-real/automo-cake-bake-gemma-3-1b-vanilla-dpo-123-seed-cos-sft-td-mixed-lr-1e-5)

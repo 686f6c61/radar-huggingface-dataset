@@ -102,7 +102,7 @@ La comparativa se limita a variantes del mismo base porque no se dispone de dato
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-lora-l4
+- Modelo en Hugging Face: https://huggingface.co/freakyskittle/qwen36-35b-a3b-distill-lora-l4
 - Modelo base: https://huggingface.co/huihui-ai/Huihui-Qwen3.6-35B-A3B-abliterated
 - Variante GGUF relacionada: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - Unsloth: https://github.com/unslothai/unsloth

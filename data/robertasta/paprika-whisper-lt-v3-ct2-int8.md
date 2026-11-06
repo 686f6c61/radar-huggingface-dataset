@@ -88,7 +88,7 @@ Advertencia del autor: el conjunto interno de LIEPA es in-domain para este model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RobertasTa/paprika-whisper-lt-v3-ct2-int8
+- Modelo en Hugging Face: https://huggingface.co/RobertasTa/paprika-whisper-lt-v3-ct2-int8
 - Modelo original: https://huggingface.co/kristijonas/paprika-whisper-lt-v3
 - Herramientas originales (paprika): https://github.com/kristijonasatpro/paprika
 - Diktuoklė (dictado offline para Windows): https://github.com/RobertasTa/diktuokle

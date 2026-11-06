@@ -16,7 +16,7 @@ El repositorio contiene dos adaptadores en formato `safetensors`: uno principal 
 | Longitud de contexto | No disponible (no aplica, es un modelo de generación de imágenes) |
 | Tipos de cuantizacion | No disponible (no se especifican en la ficha) |
 | Idiomas soportados | No disponible (no aplica, es un modelo de generación de imágenes) |
-| Licencia | No disponible (no se especifica en HuggingFace ni en la model card) |
+| Licencia | No disponible (no se especifica en Hugging Face ni en la model card) |
 | Formato de pesos | safetensors (dos archivos: `sofia_face_v4_blend.safetensors` y `sofia_slim_body.safetensors`) |
 
 ## Arquitectura y entrenamiento
@@ -57,12 +57,12 @@ No se han publicado resultados de benchmarks en la información disponible. Al t
 
 ## Comparativa con modelos similares
 
-No hay datos comparativos disponibles. Durante la búsqueda web se ha localizado otro LoRA de Krea 2 en HuggingFace (`Playtime-AI/Krea_2-Sofia_Vergara`) que persigue un objetivo similar, pero no se han encontrado especificaciones técnicas, benchmarks ni métricas de rendimiento que permitan una comparación rigurosa. Por tanto, no se incluye una tabla comparativa.
+No hay datos comparativos disponibles. Durante la búsqueda web se ha localizado otro LoRA de Krea 2 en Hugging Face (`Playtime-AI/Krea_2-Sofia_Vergara`) que persigue un objetivo similar, pero no se han encontrado especificaciones técnicas, benchmarks ni métricas de rendimiento que permitan una comparación rigurosa. Por tanto, no se incluye una tabla comparativa.
 
 ## Limitaciones y advertencias
 
 - El personaje es ficticio y todas las imágenes son generadas por IA, tal como aclara el autor. El modelo no debe utilizarse para afirmar que una persona real ha sido fotografiada.
-- La licencia no está especificada en HuggingFace ni en la model card, lo que genera incertidumbre legal para un uso comercial. El autor menciona que es un creador independiente y pide valoraciones en Civitai, pero no se otorgan permisos explícitos.
+- La licencia no está especificada en Hugging Face ni en la model card, lo que genera incertidumbre legal para un uso comercial. El autor menciona que es un creador independiente y pide valoraciones en Civitai, pero no se otorgan permisos explícitos.
 - La fuerza del LoRA facial es crítica: por debajo de 0.2 la identidad puede no fijarse, y por encima de 0.5 puede aparecer «bleeding» o contaminación entre rasgos faciales. Se recomienda seguir el rango propuesto.
 - El LoRA no funciona de forma independiente; requiere el modelo base Krea 2 y una infraestructura que soporte la carga de múltiples adaptadores.
 - No se han documentado sesgos específicos, pero al representar a un personaje femenino con una silueta corporal concreta (curvilínea o delgada) el resultado puede reforzar estereotipos de belleza si se usa sin un contexto creativo crítico.
@@ -70,6 +70,6 @@ No hay datos comparativos disponibles. Durante la búsqueda web se ha localizado
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: [https://huggingface.co/madmacs5/sofia-krea2-lora](https://huggingface.co/madmacs5/sofia-krea2-lora)
+- Página del modelo en Hugging Face: [https://huggingface.co/madmacs5/sofia-krea2-lora](https://huggingface.co/madmacs5/sofia-krea2-lora)
 - Ecosistema de Krea 2 en Civitai: [https://civitai.com/ecosystems/krea2](https://civitai.com/ecosystems/krea2)
 - Otro LoRA de Krea 2 encontrado en la búsqueda (no es el mismo autor): [https://huggingface.co/Playtime-AI/Krea_2-Sofia_Vergara](https://huggingface.co/Playtime-AI/Krea_2-Sofia_Vergara)

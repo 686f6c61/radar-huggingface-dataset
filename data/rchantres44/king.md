@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rchantres44/King` es una publicación creada por el usuario `rchantres44` en HuggingFace. No se dispone de información técnica en la model card ni en los resultados de búsqueda web que permita identificar su arquitectura, finalidad o capacidades. El repositorio se limita a declarar la licencia MIT, sin incluir descripción, métricas, ejemplos de uso ni documentación técnica. Dado que no se han publicado datos sobre parámetros, contexto o rendimiento, no es posible evaluar su relevancia ni su aplicabilidad en entornos de desarrollo o investigación.
+El modelo `rchantres44/King` es una publicación creada por el usuario `rchantres44` en Hugging Face. No se dispone de información técnica en la model card ni en los resultados de búsqueda web que permita identificar su arquitectura, finalidad o capacidades. El repositorio se limita a declarar la licencia MIT, sin incluir descripción, métricas, ejemplos de uso ni documentación técnica. Dado que no se han publicado datos sobre parámetros, contexto o rendimiento, no es posible evaluar su relevancia ni su aplicabilidad en entornos de desarrollo o investigación.
 
 ## Especificaciones tecnicas
 
@@ -61,4 +61,4 @@ No se dispone de informacion suficiente para comparar el modelo con alternativas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rchantres44/King
+- Hugging Face: https://huggingface.co/rchantres44/King

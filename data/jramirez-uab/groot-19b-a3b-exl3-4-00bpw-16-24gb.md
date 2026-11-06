@@ -92,8 +92,8 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K) e
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Groot-19B-A3B-EXL3-4.00bpw (este) | 19B totales / ~3B activos | 262.144 (24 GB) | Apache-2.0 | HuggingFace, requiere vLLM + exllamav3 + plugins | Cuantizacion comunitaria con vision y MTP |
-| GrootTeam/Groot-19B-A3B-261023 (BF16) | 19B totales / ~3B activos | No disponible en la informacion | Apache-2.0 | HuggingFace | Original sin cuantizar; no cabe con contexto completo en 24 GB |
+| Groot-19B-A3B-EXL3-4.00bpw (este) | 19B totales / ~3B activos | 262.144 (24 GB) | Apache-2.0 | Hugging Face, requiere vLLM + exllamav3 + plugins | Cuantizacion comunitaria con vision y MTP |
+| GrootTeam/Groot-19B-A3B-261023 (BF16) | 19B totales / ~3B activos | No disponible en la informacion | Apache-2.0 | Hugging Face | Original sin cuantizar; no cabe con contexto completo en 24 GB |
 | Qwen3.6-35B-A3B (modelo de partida) | 35B totales / ~3B activos | No disponible en la informacion | No disponible en la informacion | No disponible en la informacion | Base del post-entrenamiento de Groot |
 
 No se dispone de datos de benchmarks estandar para establecer una comparacion cuantitativa con alternativas de la misma categoria en la informacion proporcionada.
@@ -113,7 +113,7 @@ No se dispone de datos de benchmarks estandar para establecer una comparacion cu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JRamirez-UAB/Groot-19B-A3B-EXL3-4.00bpw-16-24GB
+- Hugging Face: https://huggingface.co/JRamirez-UAB/Groot-19B-A3B-EXL3-4.00bpw-16-24GB
 - Modelo base: https://huggingface.co/GrootTeam/Groot-19B-A3B-261023
 - exllamav3: https://github.com/turboderp-org/exllamav3
 - Paper de referencia: arxiv:2406.11235

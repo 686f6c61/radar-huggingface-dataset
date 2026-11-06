@@ -2,7 +2,7 @@
 
 ## Resumen
 
-π0.5 SNUMPR real-world DART one-shot es un ajuste fino (fine-tune) del modelo de visión-lenguaje-acción (VLA) π0.5 desarrollado en el marco del proyecto SNUMPR. Lo publica el usuario Donghyun1228 en HuggingFace y está especializado en una única tarea robótica real: `hang_tape_top`, que consiste en colgar cinta en una posición superior. El modelo parte del checkpoint inicial `snumpr-iclr27-v1/9999` y se ha entrenado con una sola demostración real capturada el 29 de octubre de 2026, aplicando una transformación virtual de guiñada (yaw) de +30° sobre la base del robot.
+π0.5 SNUMPR real-world DART one-shot es un ajuste fino (fine-tune) del modelo de visión-lenguaje-acción (VLA) π0.5 desarrollado en el marco del proyecto SNUMPR. Lo publica el usuario Donghyun1228 en Hugging Face y está especializado en una única tarea robótica real: `hang_tape_top`, que consiste en colgar cinta en una posición superior. El modelo parte del checkpoint inicial `snumpr-iclr27-v1/9999` y se ha entrenado con una sola demostración real capturada el 29 de octubre de 2026, aplicando una transformación virtual de guiñada (yaw) de +30° sobre la base del robot.
 
 La relevancia de esta ficha es acotada pero técnicamente interesante: se trata de un experimento de adaptación one-shot mediante imitación (IL, imitation learning) sobre un VLA, con 1.000 actualizaciones, batch 64, learning rate constante de 5e-5 y sin warmup ni EMA. El repositorio ocupa 12,4 GB y contiene únicamente el paso 999 en FP32 junto con los assets de normalización original; no incluye estado del optimizador.
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π0.5 SNUMPR DART one-shot `hang_tape_top` (este) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace, 0 descargas |
-| π0.5 SNUMPR DART one-shot fusionado (`alpha0p8-hang-tape-top`) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | HuggingFace |
+| π0.5 SNUMPR DART one-shot `hang_tape_top` (este) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face, 0 descargas |
+| π0.5 SNUMPR DART one-shot fusionado (`alpha0p8-hang-tape-top`) | no disponible | no disponible | sin evaluación publicada | Apache 2.0 | Hugging Face |
 | Checkpoint inicial `snumpr-iclr27-v1/9999` | no disponible | no disponible | no disponible | no disponible | referenciado por el autor |
 
 No se dispone de datos suficientes para comparar parámetros, contexto ni rendimiento con alternativas de la misma categoría.
@@ -79,7 +79,7 @@ No se dispone de datos suficientes para comparar parámetros, contexto ni rendim
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-ft-1000-hang-tape-top-20261030
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-ft-1000-hang-tape-top-20261030
 - Modelo fusionado: https://huggingface.co/Donghyun1228/pi05-snumpr-realworld-dart-oneshot-large-view-yaw30-alpha0p8-hang-tape-top-20261030
 - Código de adaptación: `Donghyun1228/vla_adaptation` (commit `248126e`)
 - Receta oficial: `snumprlab/dart` (commit `1b23c4f42f73168c78a20b353453145e74f64711`)

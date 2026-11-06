@@ -107,7 +107,7 @@ No se dispone de comparación con modelos de otros fabricantes en la informació
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/axteam/gemma-4-E4B-it-AWQ-4bit
+- Hugging Face: https://huggingface.co/axteam/gemma-4-E4B-it-AWQ-4bit
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

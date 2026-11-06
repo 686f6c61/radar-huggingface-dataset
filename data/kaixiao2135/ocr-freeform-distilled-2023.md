@@ -88,7 +88,7 @@ No disponible. No es posible establecer una comparativa técnica porque el repos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/kaixiao2135/ocr-freeform-distilled-2023
+- Hugging Face: https://huggingface.co/kaixiao2135/ocr-freeform-distilled-2023
 - Model card (README) del repositorio: incluida en la página anterior
 - Nota principal: `notes.md`, dentro del repositorio (no accesible desde la información proporcionada)
 - Papers, blogs, repositorios o demos adicionales: no disponibles. Los resultados de la búsqueda web recibidos no son relevantes para este modelo.

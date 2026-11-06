@@ -71,10 +71,10 @@ No se dispone de resultados de rendimiento comparativos en la información públ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WeiChen80percent/image-adaptive-3dlut
+- Repositorio Hugging Face: https://huggingface.co/WeiChen80percent/image-adaptive-3dlut
 - Repositorio GitHub del autor (proyecto AI_photo_editor): https://github.com/WeiChen80percent/AI_photo_editor/tree/main/image_adaptive_3dlut
 - Repositorio original de Image-Adaptive-3DLUT: https://github.com/HuiZeng/Image-Adaptive-3DLUT
 - Documentación del modelo original en DeepWiki: https://deepwiki.com/HuiZeng/Image-Adaptive-3DLUT
-- Modelo original de referencia en HuggingFace (square-zero-labs): https://huggingface.co/square-zero-labs/image_adaptive_3dlut
+- Modelo original de referencia en Hugging Face (square-zero-labs): https://huggingface.co/square-zero-labs/image_adaptive_3dlut
 
-*Nota: la fecha de creación del modelo en HuggingFace es 23 de agosto de 2026, por lo que se trata de un checkpoint reciente.*
+*Nota: la fecha de creación del modelo en Hugging Face es 23 de agosto de 2026, por lo que se trata de un checkpoint reciente.*

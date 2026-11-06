@@ -82,7 +82,7 @@ No se dispone de comparación con alternativas de la misma categoría (otros TTS
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-indic-multi-stage2-english-reuse-lr1e-4-10ep
 - Modelo base: https://huggingface.co/sw-voice/voxcpm2-indic-multi-lr5e-5-1ep
 - Dataset de entrenamiento (referenciado en la model card): sw-voice/swamiji-voice-sft-reuse (no se proporciona URL directa en la información disponible)
 - Código del experimento: repositorio swamiji-tts, ruta `research/exp-iterations/06-voxcpm2-swamiji-stages` (no se proporciona URL directa en la información disponible)

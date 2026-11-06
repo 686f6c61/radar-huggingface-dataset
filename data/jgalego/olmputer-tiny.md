@@ -2,7 +2,7 @@
 
 ## Resumen
 
-olmputer-tiny es un modelo de 3.130.046.036 parámetros publicado por el usuario jgalego en HuggingFace que no ha sido entrenado con descenso de gradiente: sus pesos son el resultado de compilar un ordenador RISC-V (ISA RV32IM + Zba, con instrucciones adicionales para ficheros de dígitos de precisión arbitraria) dentro de las capas de una arquitectura `OlmoHybridForCausalLM`. El modelo ejecuta programas RISC-V mediante decodificación greedy: cada token generado es el siguiente token de la traza de ejecución de la CPU, de modo que la generación de texto es en realidad la ejecución de un programa.
+olmputer-tiny es un modelo de 3.130.046.036 parámetros publicado por el usuario jgalego en Hugging Face que no ha sido entrenado con descenso de gradiente: sus pesos son el resultado de compilar un ordenador RISC-V (ISA RV32IM + Zba, con instrucciones adicionales para ficheros de dígitos de precisión arbitraria) dentro de las capas de una arquitectura `OlmoHybridForCausalLM`. El modelo ejecuta programas RISC-V mediante decodificación greedy: cada token generado es el siguiente token de la traza de ejecución de la CPU, de modo que la generación de texto es en realidad la ejecución de un programa.
 
 La arquitectura replica las formas de cabeza de OLMo-Hybrid-7B de Ai2 (30 cabezas de 96 × 192 por capa, MLP de 11.008 unidades, hidden de 2.816) pero sin reutilizar ninguno de sus pesos. El estado recurrente de las capas Gated DeltaNet almacena la ROM de código (256 KB), la ROM de datos (128 KB, solo lectura), la RAM (32 KB) y los registros de la CPU. El vocabulario está formado por los tokens de traza (valores en trozos de 15 bits, saltos, stores, putchar, etc.) más un token PAD.
 
@@ -71,9 +71,9 @@ No se han publicado resultados de benchmarks de lenguaje (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| olmputer-tiny | 3,13B (casi todos cero) | no disponible | CPU RISC-V compilada en capas Gated DeltaNet de OLMo-Hybrid | MIT | HuggingFace |
+| olmputer-tiny | 3,13B (casi todos cero) | no disponible | CPU RISC-V compilada en capas Gated DeltaNet de OLMo-Hybrid | MIT | Hugging Face |
 | Qwenputer (Qwen3.5-4B) | no disponible | no disponible | Misma técnica sobre Qwen3.5-4B, cabezas 128 × 128 | no disponible | GitHub (divagr18/qwenputer) |
-| Olmputer (completo) | no disponible | no disponible | Las mismas capas delante de Olmo-Hybrid-Instruct-DPO-7B para tool use `calc` | no disponible | HuggingFace (jgalego/olmputer) |
+| Olmputer (completo) | no disponible | no disponible | Las mismas capas delante de Olmo-Hybrid-Instruct-DPO-7B para tool use `calc` | no disponible | Hugging Face (jgalego/olmputer) |
 
 No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -90,7 +90,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgalego/olmputer-tiny
+- Modelo en Hugging Face: https://huggingface.co/jgalego/olmputer-tiny
 - Proyecto Olmputer completo: https://huggingface.co/jgalego/olmputer
 - Modelo base de arquitectura (Ai2 OLMo-Hybrid): https://huggingface.co/allenai/Olmo-Hybrid-Instruct-DPO-7B
 - Repositorio del compilador chipformer: https://github.com/JGalego/olmputer

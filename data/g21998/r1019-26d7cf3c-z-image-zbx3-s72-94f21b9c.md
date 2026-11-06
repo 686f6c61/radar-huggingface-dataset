@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s72-94f21b9c` es un artefacto alojado en HuggingFace por el usuario G21998, etiquetado como `sn56-replay` y `private`. La model card lo describe explícitamente como un "registro de investigación privado, no una submission", generado por un arnés de validación de tipo replay (LOCK replay-1019) que replica el comportamiento del validador sin usar Docker. No se trata, por tanto, de un modelo de lenguaje publicado para uso general, sino de un checkpoint de entrenamiento asociado a una tarea interna identificada como `26d7cf3c` (z-image) dentro de un pipeline de evaluación con semillas, árboles y miembros concretos.
+El modelo identificado como `G21998/r1019-26d7cf3c-z-image-zbx3-s72-94f21b9c` es un artefacto alojado en Hugging Face por el usuario G21998, etiquetado como `sn56-replay` y `private`. La model card lo describe explícitamente como un "registro de investigación privado, no una submission", generado por un arnés de validación de tipo replay (LOCK replay-1019) que replica el comportamiento del validador sin usar Docker. No se trata, por tanto, de un modelo de lenguaje publicado para uso general, sino de un checkpoint de entrenamiento asociado a una tarea interna identificada como `26d7cf3c` (z-image) dentro de un pipeline de evaluación con semillas, árboles y miembros concretos.
 
 El repositorio ocupa 4,2 GB y contiene dos directorios diferenciados: `checkpoints/`, que recoge lo que el validador subiría, y `replay/`, con logs y registros de la ejecución. La metadata indica que el entrenamiento finalizó correctamente (`status UPLOAD`, `rc 0`, `killed False`, `finish finish`), con 6 miembros y hashes de artefacto e identidad registrados. No hay descargas ni likes, y la fecha de creación (2026-10-26) sugiere un entorno de investigación activo o sintético.
 
@@ -72,5 +72,5 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s72-94f21b9c
+- Hugging Face: https://huggingface.co/G21998/r1019-26d7cf3c-z-image-zbx3-s72-94f21b9c
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

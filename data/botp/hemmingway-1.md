@@ -4,7 +4,7 @@
 
 Hemmingway-1 es un modelo de generacion de texto de aproximadamente 27.000 millones de parametros (26.895.998.464 segun los pesos en safetensors), desarrollado por el usuario `botp` y presentado en la model card como un proyecto de Altworld. Esta construido como un ajuste fino (fine-tune) sobre Qwen/Qwen3.8-27B y se distribuye con licencia Apache-2.0. Su propuesta no es competir en razonamiento generico, sino en un nicho muy concreto: la escritura de mensajes cotidianos (mensajes personales, correos, notas incomodas a companeros de trabajo, reclamaciones administrativas) evitando el estilo de "memo" con preambulos, opciones multiples y explicaciones que caracteriza a los asistentes generalistas.
 
-El modelo trabaja en ingles (`language: en`) y soporta una ventana de contexto de 262.144 tokens, lo que lo situa en el rango de los modelos de contexto largo. Se publica unicamente en formato safetensors para la libreria `transformers`, con un tamano de repositorio de 54,7 GB, coherente con pesos en precision de 16 bits para 27B parametros. En el momento de la consulta la ficha de HuggingFace registra 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y practicamente sin validacion independiente por parte de la comunidad.
+El modelo trabaja en ingles (`language: en`) y soporta una ventana de contexto de 262.144 tokens, lo que lo situa en el rango de los modelos de contexto largo. Se publica unicamente en formato safetensors para la libreria `transformers`, con un tamano de repositorio de 54,7 GB, coherente con pesos en precision de 16 bits para 27B parametros. En el momento de la consulta la ficha de Hugging Face registra 0 descargas y 0 likes, por lo que se trata de una publicacion reciente y practicamente sin validacion independiente por parte de la comunidad.
 
 La relevancia del modelo, segun su autor, viene de dos benchmarks propios (CommunicationBench y Human-Likeness) y uno publico (EQ-Bench 4). En los dos primeros afirma superar a modelos frontera citados como Fable 5.1, GPT-6 Astra, Kimi K3, GLM-5.3, Grok 4.6 y DeepSeek V4 Pro; en EQ-Bench 4 afirma haber quedado tercero. Conviene tratar estas cifras con cautela: dos de los tres benchmarks estan disenados y ejecutados por el propio autor, y no se aportan los numeros completos en la informacion disponible, solo graficos no accesibles desde esta ficha.
 
@@ -28,7 +28,7 @@ La relevancia del modelo, segun su autor, viene de dos benchmarks propios (Commu
 
 ## Arquitectura y entrenamiento
 
-No se detallan en la informacion proporcionada ni la arquitectura interna mas alla de lo heredado del modelo base ni la composicion del dataset de ajuste. Los tags de HuggingFace (`qwen3_5_text`, base `Qwen/Qwen3.8-27B`) indican que se trata de un transformer decoder-only de la familia Qwen3, adaptado mediante fine-tuning. El modelo no incorpora vision ni audio segun los datos disponibles: el pipeline declarado es exclusivamente `text-generation`.
+No se detallan en la informacion proporcionada ni la arquitectura interna mas alla de lo heredado del modelo base ni la composicion del dataset de ajuste. Los tags de Hugging Face (`qwen3_5_text`, base `Qwen/Qwen3.8-27B`) indican que se trata de un transformer decoder-only de la familia Qwen3, adaptado mediante fine-tuning. El modelo no incorpora vision ni audio segun los datos disponibles: el pipeline declarado es exclusivamente `text-generation`.
 
 Lo unico documentado sobre el entrenamiento son los objetivos de comportamiento: el autor describe el modelo como ajustado para producir directamente el texto final en lugar de envolverlo en comentarios, opciones o notas, y menciona que parte de un ajuste sobre Qwen3.8-27B orientado a "creative-writing", "chat" y "conversational". Se afirma una mejora de 504 puntos en StoryBench respecto al modelo base, pero no se especifica la escala de esa metrica ni el procedimiento de entrenamiento (numero de tokens, uso de RLHF, DPO u otras tecnicas de alineamiento). Tampoco se documentan innovaciones de inferencia como decodificacion especulativa o atencion lineal.
 
@@ -117,7 +117,7 @@ La unica comparacion con datos verificables es con el modelo base, y aun asi los
 
 ## Enlaces
 
-- Ficha de HuggingFace (objeto de esta ficha): https://huggingface.co/botp/Hemmingway-1
+- Ficha de Hugging Face (objeto de esta ficha): https://huggingface.co/botp/Hemmingway-1
 - Pesos enlazados por el autor: https://huggingface.co/Altworld/Hemmingway-1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Sitio del proyecto: https://hemmingway.io

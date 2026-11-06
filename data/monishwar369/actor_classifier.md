@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `monishwar369/Actor_classifier` es un artefacto publicado en HuggingFace por el usuario monishwar369 bajo licencia MIT. El nombre sugiere que se trata de un clasificador de actores, pero la información disponible es extremadamente limitada: no se ha publicado ninguna model card con descripción técnica, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. Tampoco se han registrado descargas ni interacciones de la comunidad.
+El modelo `monishwar369/Actor_classifier` es un artefacto publicado en Hugging Face por el usuario monishwar369 bajo licencia MIT. El nombre sugiere que se trata de un clasificador de actores, pero la información disponible es extremadamente limitada: no se ha publicado ninguna model card con descripción técnica, arquitectura, tamaño, datos de entrenamiento ni instrucciones de uso. Tampoco se han registrado descargas ni interacciones de la comunidad.
 
 Al carecer de especificaciones publicadas, no es posible determinar si el modelo es un clasificador de imágenes, texto, audio u otro tipo de entrada, ni si utiliza una arquitectura de red neuronal profunda, modelo de lenguage o un enfoque clásico de machine learning. La ausencia de documentación hace que el modelo sea, a día de hoy, una caja negra sin valor práctico inmediato.
 
@@ -23,7 +23,7 @@ La única certeza es su licencia MIT, que permite su uso, modificación y distri
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se han aplicado tecnicas de ajuste como RLHF o DPO. El repositorio de HuggingFace contiene unicamente el frontmatter `license: mit` y ningun otro detalle tecnico. Por tanto, no existe ninguna innovacion o caracteristica de diseno que se pueda documentar.
+No se ha publicado informacion sobre la arquitectura del modelo, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se han aplicado tecnicas de ajuste como RLHF o DPO. El repositorio de Hugging Face contiene unicamente el frontmatter `license: mit` y ningun otro detalle tecnico. Por tanto, no existe ninguna innovacion o caracteristica de diseno que se pueda documentar.
 
 ## Capacidades
 
@@ -66,4 +66,4 @@ No disponible. Al carecer de especificaciones tecnicas, no se puede comparar con
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/monishwar369/Actor_classifier
+- Hugging Face: https://huggingface.co/monishwar369/Actor_classifier

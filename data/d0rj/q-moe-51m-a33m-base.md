@@ -81,10 +81,10 @@ El intervalo de confianza se calcula con el metodo de Wilson al 95 % y aproximac
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| d0rj/q-moe-51M-A33M-base | 50,92 M | ~33 M (segun nombre) | no disponible | MoE causal-LM | no disponible | HuggingFace, transformers |
-| d0rj/q-51M-base (hermano denso) | 50,88 M | 50,88 M | no disponible | Densa causal-LM | no disponible | HuggingFace |
-| Pythia-70M | 70 M | 70 M | 2048 | Densa (GPT-NeoX) | Apache 2.0 | HuggingFace |
-| GPT-2 small | 124 M | 124 M | 1024 | Densa | MIT | HuggingFace |
+| d0rj/q-moe-51M-A33M-base | 50,92 M | ~33 M (segun nombre) | no disponible | MoE causal-LM | no disponible | Hugging Face, transformers |
+| d0rj/q-51M-base (hermano denso) | 50,88 M | 50,88 M | no disponible | Densa causal-LM | no disponible | Hugging Face |
+| Pythia-70M | 70 M | 70 M | 2048 | Densa (GPT-NeoX) | Apache 2.0 | Hugging Face |
+| GPT-2 small | 124 M | 124 M | 1024 | Densa | MIT | Hugging Face |
 
 La comparacion con Pythia-70M y GPT-2 small es orientativa por tamano y categoria (modelos base en ingles), pero no se dispone de una evaluacion bajo el mismo harness para confrontar metricas directamente. No se han identificado alternativas MoE publicas de ~51M de parametros con fines comparables dentro de la informacion disponible.
 
@@ -103,7 +103,7 @@ La comparacion con Pythia-70M y GPT-2 small es orientativa por tamano y categori
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/d0rj/q-moe-51M-A33M-base
+- Modelo en Hugging Face: https://huggingface.co/d0rj/q-moe-51M-A33M-base
 - Modelo hermano denso (familia de ablacion): https://huggingface.co/d0rj/q-51M-base
 - README del hermano denso: https://huggingface.co/d0rj/q-51M-base/blob/main/README.md
 - Dataset de entrenamiento: HuggingFaceFW/fineweb-edu

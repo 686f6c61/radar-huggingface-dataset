@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`asertj/flovers_style_LoRA` es un adaptador LoRA de estilo para generación de imágenes mediante texto, entrenado con DreamBooth sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0`. No es un modelo de lenguaje ni un modelo autónomo: es un conjunto de pesos adicionales (0,1 GB de repositorio) que se cargan junto a SDXL para modificar el estilo visual de las imágenes generadas. Lo publica el usuario `asertj` en HuggingFace con licencia OpenRAIL++ y la librería `diffusers`.
+`asertj/flovers_style_LoRA` es un adaptador LoRA de estilo para generación de imágenes mediante texto, entrenado con DreamBooth sobre el modelo base `stabilityai/stable-diffusion-xl-base-1.0`. No es un modelo de lenguaje ni un modelo autónomo: es un conjunto de pesos adicionales (0,1 GB de repositorio) que se cargan junto a SDXL para modificar el estilo visual de las imágenes generadas. Lo publica el usuario `asertj` en Hugging Face con licencia OpenRAIL++ y la librería `diffusers`.
 
 El adaptador está pensado para reproducir un estilo fotográfico de inspiración vegetal vinculado al nombre "CARL BLOSSFELDT" (el fotógrafo alemán Karl Blossfeldt, conocido por sus macros de estructuras vegetales). La única palabra de activación documentada es `flovers in CARL BLOSSFELDT style`. El adaptador afecta únicamente al UNet: el autor indica explícitamente que el LoRA para el codificador de texto está desactivado (`LoRA for the text encoder was enabled: False`).
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto de prompt | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| asertj/flovers_style_LoRA (esta ficha) | No disponible (adaptador, repo de 0,1 GB) | 77 tokens (límite CLIP de SDXL) | LoRA de estilo sobre SDXL | OpenRAIL++ | HuggingFace, 0 descargas, 0 likes |
+| asertj/flovers_style_LoRA (esta ficha) | No disponible (adaptador, repo de 0,1 GB) | 77 tokens (límite CLIP de SDXL) | LoRA de estilo sobre SDXL | OpenRAIL++ | Hugging Face, 0 descargas, 0 likes |
 | stabilityai/stable-diffusion-xl-base-1.0 | ~3.500 M (UNet ~2.600 M + codificadores de texto) | 77 tokens por codificador | Difusión latente texto-a-imagen | OpenRAIL++ | Muy extendido, amplio ecosistema |
-| Adaptadores LoRA de estilo para SD 1.5 (familia genérica) | ~980 M en el modelo base; adaptadores de decenas de MB | 77 tokens | LoRA sobre difusión latente 512x512 | Habitualmente CreativeML OpenRAIL-M | Miles de adaptadores en Civitai y HuggingFace |
+| Adaptadores LoRA de estilo para SD 1.5 (familia genérica) | ~980 M en el modelo base; adaptadores de decenas de MB | 77 tokens | LoRA sobre difusión latente 512x512 | Habitualmente CreativeML OpenRAIL-M | Miles de adaptadores en Civitai y Hugging Face |
 | FLUX.1-dev + LoRA (familia) | ~12.000 M en el modelo base | 512 tokens (T5 + CLIP) | Difusión con transformer (MMDiT) | Licencia no comercial en `dev` | Amplia adopción comunitaria |
 
 La comparación relevante no es de rendimiento —no hay métricas— sino de encaje: frente a SD 1.5, este adaptador se beneficia de la resolución nativa de 1024x1024 y de la doble codificación de texto de SDXL; frente a FLUX.1-dev, ofrece una licencia permisiva para uso comercial (OpenRAIL++) y un coste de VRAM mucho menor, a cambio de menor calidad de prompt largo y de un ecosistema de ControlNet más maduro en SDXL pero con menos capacidad de seguir instrucciones complejas.
@@ -86,7 +86,7 @@ La comparación relevante no es de rendimiento —no hay métricas— sino de en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asertj/flovers_style_LoRA
+- Hugging Face: https://huggingface.co/asertj/flovers_style_LoRA
 - Ficheros y versiones del adaptador: https://huggingface.co/asertj/flovers_style_LoRA/tree/main
 - Modelo base SDXL: https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0
 - VAE utilizado en el entrenamiento: https://huggingface.co/madebyollin/sdxl-vae-fp16-fix

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vit-large-patch32-224-in21k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de HuggingFace `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un Vision Transformer (ViT-Large) preentrenado por Google en ImageNet-21k y adaptado mediante *full fine-tuning* (actualización de todos los parámetros) al conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias.
+`vit-large-patch32-224-in21k-galaxy10-decals-full-v2` es un modelo de clasificación de imágenes especializado en morfología de galaxias, desarrollado por el usuario de Hugging Face `matthieulel` como parte de la colección *Vision Foundation Models Benchmark*. Se trata de un Vision Transformer (ViT-Large) preentrenado por Google en ImageNet-21k y adaptado mediante *full fine-tuning* (actualización de todos los parámetros) al conjunto de datos Galaxy10 DECaLS, que distingue diez clases morfológicas de galaxias.
 
 El modelo resuelve una tarea concreta de astronomía observacional: asignar una clase morfológica a una imagen de galaxia procedente del *Dark Energy Camera Legacy Survey* (DECaLS). Con 305,5 millones de parámetros, entrada de 224x224 píxeles y parches de 32x32, es un clasificador de 10 clases cuya cabeza es una única capa lineal. Su relevancia radica en formar parte de un estudio comparativo sistemático de 40 backbones preentrenados bajo dos regímenes de adaptación, con protocolo reproducible y métricas por época publicadas.
 
@@ -98,9 +98,9 @@ No se dispone en la información proporcionada de resultados numéricos de los o
 
 | Modelo | Parametros | Entrada | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vit-large-patch32-224-in21k-galaxy10-decals-full-v2 | 305,5 M | 224x224, patch 32 | Clasificación de 10 clases (Galaxy10 DECaLS) | Apache 2.0 | HuggingFace, 17 descargas |
-| google/vit-large-patch32-224-in21k | 305,5 M | 224x224, patch 32 | Clasificación ImageNet-21k (modelo base, sin ajuste astronómico) | Apache 2.0 | HuggingFace, ampliamente utilizado |
-| google/vit-base-patch16-224-in21k | ~86 M | 224x224, patch 16 | Clasificación ImageNet-21k (modelo base) | Apache 2.0 | HuggingFace, ampliamente utilizado |
+| vit-large-patch32-224-in21k-galaxy10-decals-full-v2 | 305,5 M | 224x224, patch 32 | Clasificación de 10 clases (Galaxy10 DECaLS) | Apache 2.0 | Hugging Face, 17 descargas |
+| google/vit-large-patch32-224-in21k | 305,5 M | 224x224, patch 32 | Clasificación ImageNet-21k (modelo base, sin ajuste astronómico) | Apache 2.0 | Hugging Face, ampliamente utilizado |
+| google/vit-base-patch16-224-in21k | ~86 M | 224x224, patch 16 | Clasificación ImageNet-21k (modelo base) | Apache 2.0 | Hugging Face, ampliamente utilizado |
 | Otros backbones del benchmark | no disponible | no disponible | Clasificación Galaxy10 DECaLS | no disponible | Colección Vision Foundation Models Benchmark |
 
 El modelo base ViT-Large/32 ofrece menor resolución de parche que las variantes patch-16, lo que reduce el número de tokens (49 frente a 196) y el coste computacional, a cambio de menor detalle espacial. Los resultados comparativos frente a los otros 39 backbones del estudio están en el paper en revisión y en el dataset de runs.
@@ -119,7 +119,7 @@ El modelo base ViT-Large/32 ofrece menor resolución de parche que las variantes
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/matthieulel/vit-large-patch32-224-in21k-galaxy10-decals-full-v2
+- Modelo en Hugging Face: https://huggingface.co/matthieulel/vit-large-patch32-224-in21k-galaxy10-decals-full-v2
 - Modelo base: https://huggingface.co/google/vit-large-patch32-224-in21k
 - Dataset Galaxy10 DECaLS: https://huggingface.co/datasets/matthieulel/galaxy10_decals
 - Dataset de runs del benchmark: https://huggingface.co/datasets/matthieulel/vision-foundation-models-benchmark-runs

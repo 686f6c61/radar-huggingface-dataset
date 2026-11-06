@@ -73,13 +73,13 @@ La ventaja principal de este modelo sobre el checkpoint abliterated es la correc
 - La documentación incluye un flujo de "Exploit Generation", lo que indica un potencial uso malicioso. No se recomienda para aplicaciones públicas sin supervisión.
 - Riesgo de alucinación inherente a los modelos generativos; el protocolo adversarial mitiga bucles pero no garantiza exactitud factual.
 - Idiomas limitados a inglés, chino y árabe según la model card; puede degradarse en otros idiomas.
-- El campo `inference` es `false` en HuggingFace, por lo que no se puede probar desde el widget de la web.
+- El campo `inference` es `false` en Hugging Face, por lo que no se puede probar desde el widget de la web.
 - Los parámetros de muestreo recomendados (temperatura 0,65, penalización de repetición 1,15, penalización de presencia 0,15) deben respetarse para evitar comportamientos de bucle.
 - La ampliación del contexto a 256K puede requerir soporte experimental en los motores de inferencia y puede aumentar el consumo de memoria KV-cache.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Svenuks/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
+- Hugging Face: https://huggingface.co/Svenuks/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic
 - Modelo base Qwen: https://huggingface.co/Qwen/Qwen3.8-27B
 - Checkpoint abliterated: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Versión GGUF de mradermacher: https://huggingface.co/mradermacher/Qwen3.8-27B-OBLITERATED-Mythos-Class-Agentic-GGUF

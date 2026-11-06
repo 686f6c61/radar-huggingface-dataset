@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dasLOL/mt-support-3g-v2` es un modelo publicado en HuggingFace por el usuario `dasLOL`, con un total de 1.543.714.304 parametros (~1,54 mil millones) registrados en los metadatos de safetensors y un repositorio de 1,0 GB. El nombre del repositorio y la etiqueta `conversational` apuntan a un modelo orientado a dialogo, presumiblemente especializado en atencion al cliente o soporte tecnico, aunque la model card publica no documenta ni el pipeline, ni la arquitectura, ni el proceso de entrenamiento.
+`dasLOL/mt-support-3g-v2` es un modelo publicado en Hugging Face por el usuario `dasLOL`, con un total de 1.543.714.304 parametros (~1,54 mil millones) registrados en los metadatos de safetensors y un repositorio de 1,0 GB. El nombre del repositorio y la etiqueta `conversational` apuntan a un modelo orientado a dialogo, presumiblemente especializado en atencion al cliente o soporte tecnico, aunque la model card publica no documenta ni el pipeline, ni la arquitectura, ni el proceso de entrenamiento.
 
-La relevancia del modelo en el ecosistema open source viene dada por su formato de publicacion: se distribuye en ONNX y GGUF, lo que facilita su despliegue tanto en runtime de ONNX como en soluciones de inferencia local tipo llama.cpp u Ollama. Ademas, incorpora la etiqueta `endpoints_compatible`, que indica compatibilidad con los Inference Endpoints de HuggingFace. Con ese tamano, es un candidato claro para despliegues en GPU de consumo o incluso en CPU.
+La relevancia del modelo en el ecosistema open source viene dada por su formato de publicacion: se distribuye en ONNX y GGUF, lo que facilita su despliegue tanto en runtime de ONNX como en soluciones de inferencia local tipo llama.cpp u Ollama. Ademas, incorpora la etiqueta `endpoints_compatible`, que indica compatibilidad con los Inference Endpoints de Hugging Face. Con ese tamano, es un candidato claro para despliegues en GPU de consumo o incluso en CPU.
 
 El modelo acumula 108 descargas y 0 likes desde su creacion el 8 de septiembre de 2026 (ultima actualizacion el 10 de septiembre de 2026), por lo que se trata de un artefacto con adopcion muy limitada y sin validacion externa conocida. No se dispone de informacion sobre licencia, idiomas soportados, ventana de contexto ni resultados de evaluacion.
 
@@ -34,7 +34,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la composicion de
 - Generacion de texto conversacional: la etiqueta `conversational` es la unica capacidad declarada explicitamente por el autor.
 - Despliegue en runtime ONNX: la presencia de pesos ONNX permite integracion en entornos .NET, C++, Java o Python mediante ONNX Runtime.
 - Inferencia local en formatos GGUF: compatible con el ecosistema de llama.cpp, lo que habilita ejecucion en CPU y GPU de consumo.
-- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para desplegarse en la infraestructura gestionada de HuggingFace.
+- Compatibilidad con Inference Endpoints: la etiqueta `endpoints_compatible` indica que el repositorio esta preparado para desplegarse en la infraestructura gestionada de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, tool calling, function calling y agentes: no disponible (no hay documentacion que los acredite ni los descarte).
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, audio, vision): no disponible.
@@ -67,7 +67,7 @@ Estimaciones derivadas del recuento de parametros (~1,54 B), no de documentacion
 - GPU de consumo: cabe holgadamente en RTX 3060 12 GB, RTX 4060 8 GB, RTX 4070, RTX 4080 y RTX 4090; tambien en GPUs de portatil con 6-8 GB de VRAM en cuantizaciones INT4 o INT8.
 - GPU de datacenter: A100, H100, L40S o A10G son ampliamente suficientes y quedarian infrautilizadas para una sola instancia, por lo que tendria sentido servirlo con batching agresivo o multiples instancias por GPU.
 - CPU: viable en cuantizacion INT4 mediante llama.cpp, con velocidades que dependen del numero de nucleos y del ancho de banda de memoria.
-- Opciones de despliegue: llama.cpp y Ollama (GGUF), ONNX Runtime y ONNX Runtime GenAI (ONNX), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM y TGI no estan confirmados: requieren pesos en formatos soportados por esas herramientas y no se ha documentado una conversion.
+- Opciones de despliegue: llama.cpp y Ollama (GGUF), ONNX Runtime y ONNX Runtime GenAI (ONNX), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM y TGI no estan confirmados: requieren pesos en formatos soportados por esas herramientas y no se ha documentado una conversion.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -98,6 +98,6 @@ La comparacion de calidad, razonamiento o capacidades multilingues no es posible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dasLOL/mt-support-3g-v2
+- Modelo en Hugging Face: https://huggingface.co/dasLOL/mt-support-3g-v2
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los resultados obtenidos correspondian a contenido generico de Zhihu sin vinculacion con este repositorio.

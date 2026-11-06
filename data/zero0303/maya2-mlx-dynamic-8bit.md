@@ -76,8 +76,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Idiomas | Contexto / duración | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Maya 2 Native MLX Dynamic 8-bit (este repo) | TTS MLX, Apple Silicon | 11 indias + inglés | Fragmentos de ~20 s | Apache 2.0 | HuggingFace, 3,57 GB |
-| Maya 2 Native (oficial) | TTS PyTorch/CUDA | 11 indias + inglés | Fragmentos de ~20 s | no disponible en la información | HuggingFace (maya-research/maya2-native) |
+| Maya 2 Native MLX Dynamic 8-bit (este repo) | TTS MLX, Apple Silicon | 11 indias + inglés | Fragmentos de ~20 s | Apache 2.0 | Hugging Face, 3,57 GB |
+| Maya 2 Native (oficial) | TTS PyTorch/CUDA | 11 indias + inglés | Fragmentos de ~20 s | no disponible en la información | Hugging Face (maya-research/maya2-native) |
 | 8-bit plano (variante descartada) | TTS MLX | 11 indias + inglés | Fragmentos de ~20 s | no disponible | No publicada en este repo |
 | 16-bit MLX | TTS MLX | 11 indias + inglés | Fragmentos de ~20 s | no disponible | No incluida en este repo |
 
@@ -97,6 +97,6 @@ No se dispone de información sobre otros modelos TTS comparables (por ejemplo, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zero0303/maya2-mlx-dynamic-8bit
+- Modelo en Hugging Face: https://huggingface.co/zero0303/maya2-mlx-dynamic-8bit
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Código oficial de Maya 2 Native: https://github.com/MayaResearch/maya2-native

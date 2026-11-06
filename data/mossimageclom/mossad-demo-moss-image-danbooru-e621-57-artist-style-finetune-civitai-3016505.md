@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Especialidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MossAD-Demo (este modelo) | 5B (base) | no disponible | Estilos de 57 artistas, tags de booru, layout con bboxes | civitai-creator-permissions | HuggingFace y Civitai |
-| MOSS-Image Base 5B (OpenMOSS) | 5B | no disponible | Texto-a-imagen generico | no disponible en la informacion | HuggingFace (OpenMOSS-Team/MOSS-Image-Base) |
-| Ajustes de estilo tipo LoRA sobre Stable Diffusion | variable (tipicamente <1B adicionales) | no disponible | Estilos de autor sobre SD | variable segun autor | Civitai, HuggingFace |
-| Modelos texto-a-imagen anime de proposito general | no disponible | no disponible | Anime generico sin estilos de autor especificos | variable | HuggingFace |
+| MossAD-Demo (este modelo) | 5B (base) | no disponible | Estilos de 57 artistas, tags de booru, layout con bboxes | civitai-creator-permissions | Hugging Face y Civitai |
+| MOSS-Image Base 5B (OpenMOSS) | 5B | no disponible | Texto-a-imagen generico | no disponible en la informacion | Hugging Face (OpenMOSS-Team/MOSS-Image-Base) |
+| Ajustes de estilo tipo LoRA sobre Stable Diffusion | variable (tipicamente <1B adicionales) | no disponible | Estilos de autor sobre SD | variable segun autor | Civitai, Hugging Face |
+| Modelos texto-a-imagen anime de proposito general | no disponible | no disponible | Anime generico sin estilos de autor especificos | variable | Hugging Face |
 
 La comparacion directa con alternativas concretas no esta disponible en la informacion proporcionada; la tabla recoge unicamente las referencias citadas en la model card.
 
@@ -85,7 +85,7 @@ La comparacion directa con alternativas concretas no esta disponible en la infor
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MOSSImageclom/MossAD-Demo-MOSS-Image-Danbooru-E621-57-Artist-Style-Finetune-civitai-3016505
+- Repositorio en Hugging Face: https://huggingface.co/MOSSImageclom/MossAD-Demo-MOSS-Image-Danbooru-E621-57-Artist-Style-Finetune-civitai-3016505
 - Pagina original en Civitai: https://civitai.red/models/3016505/mossad-demo-moss-image-danboorue621-57-artist-style-finetune
 - Modelo base MOSS-Image Base 5B: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Componentes para ComfyUI (text encoder y VAE): https://huggingface.co/Comfy-Org/MOSS-Image

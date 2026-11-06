@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`assokolov/mocov3-classification-test` es un repositorio de HuggingFace publicado por el usuario assokolov que contiene una implementación funcional de MoCo v3 adaptada a tareas de clasificación, en una configuración declarada como «tiny». El checkpoint incluido en formato safetensors tiene 49.600 parámetros totales, lo que lo sitúa en un orden de magnitud de kilobytes, muy lejos de cualquier modelo utilizable en producción. La model card indica explícitamente que se trata de una inicialización válida para pruebas de humo (smoke tests) y no de un checkpoint entrenado ni evaluado.
+`assokolov/mocov3-classification-test` es un repositorio de Hugging Face publicado por el usuario assokolov que contiene una implementación funcional de MoCo v3 adaptada a tareas de clasificación, en una configuración declarada como «tiny». El checkpoint incluido en formato safetensors tiene 49.600 parámetros totales, lo que lo sitúa en un orden de magnitud de kilobytes, muy lejos de cualquier modelo utilizable en producción. La model card indica explícitamente que se trata de una inicialización válida para pruebas de humo (smoke tests) y no de un checkpoint entrenado ni evaluado.
 
 El objetivo declarado del repositorio es la transparencia de código y la repetibilidad de pruebas rápidas: incluye un `eval.py` como artefacto principal, un `config.json` con los ajustes de arquitectura generados, un `training_args.json` con la receta de experimento por defecto y el propio `model.safetensors`. La receta por defecto usa SGD con un scheduler coseno, pero el autor advierte que son valores de partida del script y no evidencia de un entrenamiento completado. No se reclama ninguna puntuación de benchmark.
 
@@ -20,7 +20,7 @@ Su relevancia práctica es la de un esqueleto de referencia: sirve para verifica
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (PyTorch) |
 | Escala declarada | tiny |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 | Tamaño del repositorio | 0,0 GB |
 | Descargas | 0 |
 | «Likes» | 0 |
@@ -73,7 +73,7 @@ No se dispone de datos comparativos en la información proporcionada. El reposit
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| assokolov/mocov3-classification-test | 49.600 | no disponible | sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas |
+| assokolov/mocov3-classification-test | 49.600 | no disponible | sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas |
 | Implementaciones de referencia de MoCo v3 | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SimCLR | no disponible | no disponible | no disponible | no disponible | no disponible |
 | BYOL | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -92,6 +92,6 @@ No se dispone de datos comparativos en la información proporcionada. El reposit
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/assokolov/mocov3-classification-test
+- Modelo en Hugging Face: https://huggingface.co/assokolov/mocov3-classification-test
 - Archivos incluidos en el repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - Paper, blog, repositorio de código o demo adicionales: no disponibles en la información proporcionada. La búsqueda web realizada no devolvió resultados relacionados con este modelo; los enlaces recuperados (guías de configuración de Windows y de cuentas de Google) no guardan relación con el artefacto y se descartan.

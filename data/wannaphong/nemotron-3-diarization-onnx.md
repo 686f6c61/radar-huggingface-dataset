@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Nemotron-3-Diarization-ONNX es una exportación a ONNX del modelo de diarización de hablantes nvidia/Nemotron-3-Diarization, publicada por el usuario wannaphong. Su función es resolver "quién habla y cuándo" en una grabación de audio completa, en modo offline, con hasta 8 hablantes rastreados simultáneamente y una resolución temporal de 10 ms. No es un modelo de lenguaje: no genera texto ni acepta prompts, y su etiqueta de pipeline en HuggingFace es voice-activity-detection.
+Nemotron-3-Diarization-ONNX es una exportación a ONNX del modelo de diarización de hablantes nvidia/Nemotron-3-Diarization, publicada por el usuario wannaphong. Su función es resolver "quién habla y cuándo" en una grabación de audio completa, en modo offline, con hasta 8 hablantes rastreados simultáneamente y una resolución temporal de 10 ms. No es un modelo de lenguaje: no genera texto ni acepta prompts, y su etiqueta de pipeline en Hugging Face es voice-activity-detection.
 
 El interés de esta conversión es de despliegue: los tres grafos ONNX incluidos permiten ejecutar la inferencia en CPU con únicamente numpy, onnxruntime y soundfile, sin PyTorch ni CUDA. El grafo int8 ocupa 103,7 MB y el fp32 397,4 MB, de modo que cabe en cualquier portátil o servidor modesto, algo relevante para pipelines de diarización por lotes donde no se quiere reservar GPU.
 

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Whisper Small Arabic Smart-Home es un ajuste fino mediante LoRA del modelo openai/whisper-small, publicado por el usuario YahyaMujahed en HuggingFace. Su proposito es transcribir comandos de voz cortos en arabe levantino (dialecto jordano) orientados a domotica: encendido y apagado de luces, control de aire acondicionado y apertura o cierre de persianas. El modelo se plantea como la etapa de reconocimiento automatico del habla (ASR) dentro de un pipeline de asistente domestico por voz, no como un modelo de ASR general.
+Whisper Small Arabic Smart-Home es un ajuste fino mediante LoRA del modelo openai/whisper-small, publicado por el usuario YahyaMujahed en Hugging Face. Su proposito es transcribir comandos de voz cortos en arabe levantino (dialecto jordano) orientados a domotica: encendido y apagado de luces, control de aire acondicionado y apertura o cierre de persianas. El modelo se plantea como la etapa de reconocimiento automatico del habla (ASR) dentro de un pipeline de asistente domestico por voz, no como un modelo de ASR general.
 
-Tecnicamente es un transformer encoder-decoder de tipo Whisper con 241.734.912 parametros totales, en el que se han congelado los pesos base y se ha entrenado unicamente un adaptador LoRA (r=32, alpha=64, dropout=0.05) sobre las proyecciones q_proj y v_proj. El repositorio se distribuye en formato safetensors bajo licencia MIT, heredada del modelo base, y declara compatibilidad con los Inference Endpoints de HuggingFace.
+Tecnicamente es un transformer encoder-decoder de tipo Whisper con 241.734.912 parametros totales, en el que se han congelado los pesos base y se ha entrenado unicamente un adaptador LoRA (r=32, alpha=64, dropout=0.05) sobre las proyecciones q_proj y v_proj. El repositorio se distribuye en formato safetensors bajo licencia MIT, heredada del modelo base, y declara compatibilidad con los Inference Endpoints de Hugging Face.
 
 La relevancia del modelo es acotada pero clara: demuestra que un ajuste fino ligero sobre un dataset piloto muy pequeno (170 grabaciones, un solo hablante) puede reducir el WER de 0,835 a 0,106 en el dominio objetivo. Sus propios autores advierten de que el rendimiento se degrada fuera de ese hablante, microfono y condicion acustica, y de que existe un dataset mayor en preparacion.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 - VRAM estimada para inferencia con los 241,7 M de parametros: aproximadamente 0,97 GB en FP32, unos 0,48 GB en FP16/BF16, 0,24 GB en INT8 y 0,12 GB en INT4, sin contar el overhead del runtime y las activaciones.
 - GPU recomendadas: cabe holgadamente en cualquier GPU moderna. Suficiente una RTX 3060 (12 GB), RTX 4070, RTX 4090, e incluso GPUs de gama baja con 4-6 GB. En entornos de servidor funciona sin problemas en A100, H100 o L4, aunque estan sobredimensionadas para este tamano.
 - Inferencia en CPU perfectamente viable dado el tamano reducido del modelo.
-- Opciones de despliegue: transformers (compatible con el snippet de la model card), faster-whisper, whisper.cpp con pesos convertidos a GGML/GGUF y HuggingFace Inference Endpoints (la model card declara endpoints_compatible). El soporte en vLLM u Ollama no esta confirmado en la informacion disponible.
+- Opciones de despliegue: transformers (compatible con el snippet de la model card), faster-whisper, whisper.cpp con pesos convertidos a GGML/GGUF y Hugging Face Inference Endpoints (la model card declara endpoints_compatible). El soporte en vLLM u Ollama no esta confirmado en la informacion disponible.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -92,7 +92,7 @@ La comparacion directa frente al modelo base es la unica con datos publicados: e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/YahyaMujahed/whisper-small-arabic-smart-home
+- Modelo en Hugging Face: https://huggingface.co/YahyaMujahed/whisper-small-arabic-smart-home
 - Modelo base: https://huggingface.co/openai/whisper-small
 - Libreria transformers: https://github.com/huggingface/transformers
 - PEFT (LoRA): https://github.com/huggingface/peft

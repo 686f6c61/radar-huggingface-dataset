@@ -2,9 +2,9 @@
 
 ## Resumen
 
-teacher_gpt-oss-20B es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-0.6B, publicado por el usuario MaxSchulten en HuggingFace bajo licencia Apache 2.0. A pesar del nombre, que sugiere relacion con la familia gpt-oss de 20B, el modelo real tiene 596.049.920 parametros (aproximadamente 0,6B) y su unico ancestro declarado es Qwen3-0.6B, un transformer decoder denso de la familia Qwen3. El repositorio ocupa 1,2 GB y contiene pesos en safetensors listos para su uso con la libreria transformers.
+teacher_gpt-oss-20B es un ajuste fino (fine-tuning) del modelo Qwen/Qwen3-0.6B, publicado por el usuario MaxSchulten en Hugging Face bajo licencia Apache 2.0. A pesar del nombre, que sugiere relacion con la familia gpt-oss de 20B, el modelo real tiene 596.049.920 parametros (aproximadamente 0,6B) y su unico ancestro declarado es Qwen3-0.6B, un transformer decoder denso de la familia Qwen3. El repositorio ocupa 1,2 GB y contiene pesos en safetensors listos para su uso con la libreria transformers.
 
-El modelo se ha generado con el Trainer de HuggingFace sobre un dataset no especificado (la model card lo referencia como "None") durante 3 epochs y 798 pasos, con una perdida de validacion final de 0,6897. No se documentan capacidades, idiomas soportados ni resultados de evaluacion mas alla de la propia perdida de entrenamiento, por lo que se trata de un artefacto en estado experimental y sin validacion publica de rendimiento.
+El modelo se ha generado con el Trainer de Hugging Face sobre un dataset no especificado (la model card lo referencia como "None") durante 3 epochs y 798 pasos, con una perdida de validacion final de 0,6897. No se documentan capacidades, idiomas soportados ni resultados de evaluacion mas alla de la propia perdida de entrenamiento, por lo que se trata de un artefacto en estado experimental y sin validacion publica de rendimiento.
 
 Su relevancia practica es limitada y muy acotada: por tamano y licencia puede ejecutarse en hardware de consumo e incluso en CPU, lo que lo hace util como banco de pruebas para pipelines de text-generation-inference, para experimentos de ajuste fino adicional o como componente ligero en entornos sin GPU. El sufijo "teacher" en el nombre apunta a un posible uso como modelo docente en un esquema de destilacion, aunque esto no se confirma en la documentacion disponible.
 
@@ -27,7 +27,7 @@ Otros metadatos: pipeline `text-generation`, tarea conversacional, etiquetas `te
 
 No se describe la arquitectura en la model card mas alla de la referencia al modelo base Qwen/Qwen3-0.6B. Por herencia, se trata de un transformer decoder denso de aproximadamente 0,6B parametros, sin mezcla de expertos ni componentes de estado recurrente. El repositorio tiene 1,2 GB, lo que es coherente con pesos almacenados en fp16/bf16 sin cuantizar.
 
-El entrenamiento se realizo con el Trainer de HuggingFace sobre un dataset no identificado (la model card lo cita literalmente como "None") y sin detallar composicion, numero de tokens ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Los hiperparametros declarados son: learning rate 2e-05, tamano de lote por dispositivo 4, acumulacion de gradiente 16 (lote efectivo 64), optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler coseno con 100 pasos de warmup, semilla 42 y 3 epochs completas. Con 798 pasos y un lote efectivo de 64, el entrenamiento habria procesado del orden de 51.000 secuencias (calculo derivado de los datos declarados, no confirmado por el autor). Las versiones de framework indicadas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1.
+El entrenamiento se realizo con el Trainer de Hugging Face sobre un dataset no identificado (la model card lo cita literalmente como "None") y sin detallar composicion, numero de tokens ni si hubo fases de RLHF, DPO o ajuste por instrucciones. Los hiperparametros declarados son: learning rate 2e-05, tamano de lote por dispositivo 4, acumulacion de gradiente 16 (lote efectivo 64), optimizador AdamW con betas (0,9; 0,999) y epsilon 1e-08, scheduler coseno con 100 pasos de warmup, semilla 42 y 3 epochs completas. Con 798 pasos y un lote efectivo de 64, el entrenamiento habria procesado del orden de 51.000 secuencias (calculo derivado de los datos declarados, no confirmado por el autor). Las versiones de framework indicadas son Transformers 5.16.1, PyTorch 2.11.0+cu128, Datasets 5.0.1 y Tokenizers 0.23.1.
 
 Evolucion de la perdida declarada por el autor:
 
@@ -58,7 +58,7 @@ La curva muestra una mejora marginal entre la epoch 2 y la 3 (0,6905 a 0,6897 en
 - Ajuste fino posterior y experimentacion academica: al ser un checkpoint de 0,6B con licencia Apache 2.0, es un punto de partida economico para estudios de hiperparametros, ablaciones de datasets o tecnicas de alineacion.
 - Generacion de texto en entornos aislados o sin conectividad: su bajo requisito de memoria permite desplegarlo en dispositivos edge o en maquinas sin GPU, aunque la calidad del texto no esta validada.
 - Componente auxiliar en cascadas de modelos: puede emplearse como filtro, clasificador generativo o generador de borradores baratos antes de invocar un modelo mayor en arquitecturas de enrutamiento por coste.
-- Educacion y aprendizaje: util para demostrar el ciclo completo de entrenamiento y publicacion de un modelo con el Trainer de HuggingFace, dado que el repositorio incluye la model card autogenerada con todos los hiperparametros.
+- Educacion y aprendizaje: util para demostrar el ciclo completo de entrenamiento y publicacion de un modelo con el Trainer de Hugging Face, dado que el repositorio incluye la model card autogenerada con todos los hiperparametros.
 
 ## Benchmarks y rendimiento
 
@@ -81,11 +81,11 @@ Los datos de la columna de comparables provienen de las model cards publicas de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| teacher_gpt-oss-20B | 0,6 B | no disponible | apache-2.0 | HuggingFace, safetensors, 0 descargas |
-| Qwen/Qwen3-0.6B (modelo base) | 0,6 B | 32.768 tokens (ampliable con YaRN) | apache-2.0 | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-1.7B | 1,7 B | 32.768 tokens (ampliable con YaRN) | apache-2.0 | HuggingFace |
-| Llama-3.2-1B | 1,2 B | 128.000 tokens | licencia comunitaria de Meta | HuggingFace, requiere aceptar terminos |
-| SmolLM2-360M | 0,36 B | 8.192 tokens | apache-2.0 | HuggingFace |
+| teacher_gpt-oss-20B | 0,6 B | no disponible | apache-2.0 | Hugging Face, safetensors, 0 descargas |
+| Qwen/Qwen3-0.6B (modelo base) | 0,6 B | 32.768 tokens (ampliable con YaRN) | apache-2.0 | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-1.7B | 1,7 B | 32.768 tokens (ampliable con YaRN) | apache-2.0 | Hugging Face |
+| Llama-3.2-1B | 1,2 B | 128.000 tokens | licencia comunitaria de Meta | Hugging Face, requiere aceptar terminos |
+| SmolLM2-360M | 0,36 B | 8.192 tokens | apache-2.0 | Hugging Face |
 
 Frente a su modelo base, teacher_gpt-oss-20B no aporta ninguna mejora documentada: no hay benchmarks que demuestren superioridad, el dataset de ajuste es desconocido y la perdida de validacion es el unico dato disponible. Frente a alternativas de tamano similar como SmolLM2-360M o Llama-3.2-1B, carece de evaluaciones publicas que permitan establecer una comparacion significativa.
 
@@ -104,7 +104,7 @@ Frente a su modelo base, teacher_gpt-oss-20B no aporta ninguna mejora documentad
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MaxSchulten/teacher_gpt-oss-20B
+- Modelo en Hugging Face: https://huggingface.co/MaxSchulten/teacher_gpt-oss-20B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 
 Nota sobre la busqueda web: los resultados recuperados no guardan ninguna relacion con el modelo ni con inteligencia artificial; consisten en listados de empleo de operadores de fresadora en Sudafrica (Pnet, LinkedIn, Indeed y Careerjet). No se han encontrado papers, blogs, repositorios ni demos asociados a este modelo.

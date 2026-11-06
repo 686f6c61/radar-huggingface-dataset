@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Heptagram_MMH3 es un adaptador LoRA de texto a imagen publicado por el usuario lynaNSFW en HuggingFace bajo la librería diffusers, con la etiqueta de plantilla `diffusion-lora`. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un ajuste fino ligero que se aplica sobre un modelo base de difusión identificado en la model card como `neph1/minimax_h3_headmounted_fpv_cam`. El repositorio ocupa 21,0 GB, un tamano inhabitual para un LoRA convencional, lo que sugiere que puede contener pesos completos, multiples checkpoints o artefactos auxiliares; la model card no lo aclara.
+Heptagram_MMH3 es un adaptador LoRA de texto a imagen publicado por el usuario lynaNSFW en Hugging Face bajo la librería diffusers, con la etiqueta de plantilla `diffusion-lora`. No se trata de un modelo de lenguaje ni de un modelo fundacional completo, sino de un ajuste fino ligero que se aplica sobre un modelo base de difusión identificado en la model card como `neph1/minimax_h3_headmounted_fpv_cam`. El repositorio ocupa 21,0 GB, un tamano inhabitual para un LoRA convencional, lo que sugiere que puede contener pesos completos, multiples checkpoints o artefactos auxiliares; la model card no lo aclara.
 
 La información publicada por el autor es extremadamente escasa: la model card se limita a un enlace a Civitai, un `instance_prompt` nulo y un widget de ejemplo con el prompt `-`. No se documentan datos de entrenamiento, número de pasos, resolución nativa, rango del adaptador ni parámetros alfa. Tampoco se declara licencia ni idiomas soportados. Cualquier evaluación técnica rigurosa exige, por tanto, descargar los archivos y contrastarlos con el modelo base.
 
@@ -49,7 +49,7 @@ No se han publicado datos sobre el conjunto de entrenamiento: ni número de imá
 - Creación de datasets sintéticos: usar el LoRA para ampliar un conjunto de imágenes de un dominio específico destinado a entrenar otros modelos de visión por computador, siempre que la licencia del base lo permita.
 - Pruebas de integración en pipelines de difusión: servir como caso de prueba para validar la carga de adaptadores en infraestructuras propias (servicios tipo ComfyUI API, Replicate o contenedores con diffusers).
 - Investigación sobre adaptadores de bajo rango: analizar el efecto del LoRA sobre el modelo base mediante métricas objetivas (CLIP score, similitud perceptual) y estudios de ablación del factor de escala.
-- Publicación de demos en plataformas de modelos: el enlace a Civitai indica que el autor distribuye el modelo en ese circuito, por lo que puede utilizarse como ejemplo de formato de publicación cruzada entre HuggingFace y Civitai.
+- Publicación de demos en plataformas de modelos: el enlace a Civitai indica que el autor distribuye el modelo en ese circuito, por lo que puede utilizarse como ejemplo de formato de publicación cruzada entre Hugging Face y Civitai.
 
 ## Benchmarks y rendimiento
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Heptagram_MMH3 | LoRA de difusión texto-imagen | no disponible (repo de 21,0 GB) | no disponible | no disponible | HuggingFace y Civitai (enlace en la model card) |
-| Adaptador LoRA genérico sobre SDXL | LoRA de difusión | adaptador de bajo rango; base de ~2,6 mil millones de parametros (referencia general del ecosistema) | 1024x1024 nativo en el base | habitualmente abiertas, variable por autor | amplia en HuggingFace y Civitai |
-| Adaptador LoRA genérico sobre FLUX.1 | LoRA de difusión | base de ~12 mil millones de parametros (referencia general del ecosistema) | hasta ~2 MP en el base | FLUX.1 dev con licencia no comercial; schnell Apache 2.0 | amplia en HuggingFace |
+| Heptagram_MMH3 | LoRA de difusión texto-imagen | no disponible (repo de 21,0 GB) | no disponible | no disponible | Hugging Face y Civitai (enlace en la model card) |
+| Adaptador LoRA genérico sobre SDXL | LoRA de difusión | adaptador de bajo rango; base de ~2,6 mil millones de parametros (referencia general del ecosistema) | 1024x1024 nativo en el base | habitualmente abiertas, variable por autor | amplia en Hugging Face y Civitai |
+| Adaptador LoRA genérico sobre FLUX.1 | LoRA de difusión | base de ~12 mil millones de parametros (referencia general del ecosistema) | hasta ~2 MP en el base | FLUX.1 dev con licencia no comercial; schnell Apache 2.0 | amplia en Hugging Face |
 
 No se dispone de datos de rendimiento comparado para Heptagram_MMH3, por lo que la comparación se limita a categoria, licencia y disponibilidad. Las cifras de parametros de SDXL y FLUX.1 corresponden a conocimiento general del ecosistema y no a la información proporcionada sobre este modelo.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparado para Heptagram_MMH3, por lo que 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lynaNSFW/Heptagram_MMH3
+- Hugging Face: https://huggingface.co/lynaNSFW/Heptagram_MMH3
 - Modelo base: https://huggingface.co/neph1/minimax_h3_headmounted_fpv_cam
 - Ficha en Civitai (enlace incluido en la model card): https://civitai.red/models/2977879/heptagram?modelVersionId=3375497
 - Repositorio oficial de Civitai (referencia del dominio): https://civitai.com

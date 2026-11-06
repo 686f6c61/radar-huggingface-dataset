@@ -92,7 +92,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/William-Gao1/qwen3.8-27b-unhelpful-lora
+- Hugging Face: https://huggingface.co/William-Gao1/qwen3.8-27b-unhelpful-lora
 - Modelo base referenciado: https://huggingface.co/Qwen/Qwen3.8-27B (identificador indicado en la model card; no verificado)
 - Dataset de entrenamiento: `winglian/unhelpful-ultrachat-10k` (referenciado en la model card, sin URL proporcionada)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Las busquedas devolvieron unicamente paginas sobre la persona William, principe de Gales, y sobre el nombre propio William, sin relacion con el modelo.

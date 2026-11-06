@@ -84,7 +84,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BricksDisplay/Chatterbox-Multilingual-TTS-GGUF
+- Modelo en Hugging Face: https://huggingface.co/BricksDisplay/Chatterbox-Multilingual-TTS-GGUF
 - Modelo base (ResembleAI/chatterbox): https://huggingface.co/ResembleAI/chatterbox
 - Repositorio codec.cpp: https://github.com/mybigday/codec.cpp
 - Documentación TTS de codec.cpp: https://github.com/mybigday/codec.cpp#text-to-speech

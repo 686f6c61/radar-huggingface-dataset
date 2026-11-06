@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks tipo MMLU, HumanEval o GSM8K en la 
 |---|---|---|---|---|---|---|
 | Este modelo (`whisper-base-litert-word-timings`) | 74 M (base) | TFLite int8 dinamico | Si, via firma `align` | 7,86 % | 2,54x tiempo real | MIT |
 | `whisper_base_30s_i8` publicada | 74 M (base) | TFLite int8 | No | 7,66 % | 2,27x tiempo real | no disponible |
-| `openai/whisper-base` | 74 M | PyTorch (safetensors) | No de forma nativa en la inferencia estandar; requiere el metodo de `whisper/timing.py` | no disponible en la informacion proporcionada | no disponible | Apache-2.0 segun la model card de HuggingFace; MIT segun el repositorio de OpenAI |
+| `openai/whisper-base` | 74 M | PyTorch (safetensors) | No de forma nativa en la inferencia estandar; requiere el metodo de `whisper/timing.py` | no disponible en la informacion proporcionada | no disponible | Apache-2.0 segun la model card de Hugging Face; MIT segun el repositorio de OpenAI |
 
 La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre este modelo ni sobre alternativas comparables; los resultados obtenidos eran directorios de sitios de contenido para adultos sin relacion con el tema.
 
@@ -94,7 +94,7 @@ La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre est
 - La firma `decode` acepta un prefijo de 128 tokens por llamada y la decodificacion es stateless, por lo que cada paso reprocesa el prefijo completo; el coste crece con la longitud de la transcripcion de cada ventana.
 - La ventana de audio es fija de 30 s, por lo que audios mas largos requieren troceado externo y gestion de solapamientos.
 - El modelo solo hace ASR: no genera texto libre, no razona, no usa herramientas y no procesa imagen.
-- La model card de `openai/whisper-base` en HuggingFace indica Apache-2.0 mientras que el repositorio de OpenAI usa MIT. Ambas licencias permiten la redistribucion y el uso comercial; este repositorio reproduce el aviso MIT y anade el texto Apache-2.0. Conviene revisar ambos textos antes de un despliegue comercial.
+- La model card de `openai/whisper-base` en Hugging Face indica Apache-2.0 mientras que el repositorio de OpenAI usa MIT. Ambas licencias permiten la redistribucion y el uso comercial; este repositorio reproduce el aviso MIT y anade el texto Apache-2.0. Conviene revisar ambos textos antes de un despliegue comercial.
 - No hay garantia de que el fichero descargado sea integro: se recomienda validar el SHA-256 publicado antes de cargarlo.
 - El repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no existe validacion de la comunidad ni un historial de incidencias.
 - Los idiomas soportados son los de Whisper, pero las mediciones publicadas solo cubren ingles; no hay datos de calidad de timings por idioma.
@@ -102,7 +102,7 @@ La busqueda web realizada no devolvio ninguna fuente tecnica relevante sobre est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kairoi-LLC/whisper-base-litert-word-timings
+- Modelo en Hugging Face: https://huggingface.co/Kairoi-LLC/whisper-base-litert-word-timings
 - Modelo base: https://huggingface.co/openai/whisper-base
 - Licencia MIT de OpenAI Whisper: https://github.com/openai/whisper/blob/main/LICENSE
 - `litert-torch` (herramienta de conversion): https://github.com/google-ai-edge/litert-torch

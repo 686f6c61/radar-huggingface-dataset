@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ReconAI/Qwen3.5-0.8B-Detection es un modelo publicado en HuggingFace por el usuario ReconAI. La informacion disponible se limita a la identificacion del repositorio: licencia Apache 2.0, region US, fecha de creacion y actualizacion del 13 de septiembre de 2026, y un recuento de cero descargas y cero likes en el momento de la consulta. La model card no contiene descripcion, instrucciones de uso, datos de entrenamiento ni resultados de evaluacion.
+ReconAI/Qwen3.5-0.8B-Detection es un modelo publicado en Hugging Face por el usuario ReconAI. La informacion disponible se limita a la identificacion del repositorio: licencia Apache 2.0, region US, fecha de creacion y actualizacion del 13 de septiembre de 2026, y un recuento de cero descargas y cero likes en el momento de la consulta. La model card no contiene descripcion, instrucciones de uso, datos de entrenamiento ni resultados de evaluacion.
 
 Por el nombre del repositorio puede inferirse que se trata de un ajuste fino (fine-tuning) orientado a tareas de deteccion sobre una base denominada Qwen3.5 con aproximadamente 0,8 mil millones de parametros, pero esta interpretacion no esta confirmada por el autor en ningun documento publicado. No se dispone de informacion sobre la tarea concreta de deteccion (clasificacion de contenido, deteccion de anomalias, moderacion, vision u otra), ni sobre el procedimiento de entrenamiento empleado.
 
@@ -91,7 +91,7 @@ No disponible. No se dispone de datos de rendimiento del modelo analizado ni de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ReconAI/Qwen3.5-0.8B-Detection
+- Hugging Face: https://huggingface.co/ReconAI/Qwen3.5-0.8B-Detection
 - https://getrecon.ai/ (entidad homonima sin relacion aparente)
 - https://getrecon.ai/join-waitlist (entidad homonima sin relacion aparente)
 - https://reconai.company/ (entidad homonima sin relacion aparente)

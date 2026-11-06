@@ -18,7 +18,7 @@ La relevancia actual del modelo está en el cambio de interfaz: en lugar de espe
 | Longitud de contexto | no disponible |
 | Tipos de cuantización | no disponible |
 | Idiomas soportados | inglés (instrucciones en lenguaje natural; etiqueta de idioma «en») |
-| Licencia | no disponible (no declarada en la model card ni en los metadatos de HuggingFace) |
+| Licencia | no disponible (no declarada en la model card ni en los metadatos de Hugging Face) |
 | Formato de pesos | no disponible (repositorio de 137,7 GB; no se especifica el formato de los ficheros) |
 
 ## Arquitectura y entrenamiento
@@ -70,7 +70,7 @@ No se dispone de datos de benchmark en la información proporcionada que permita
 
 | Modelo | Tipo de tarea | Entrada | Salida | Pesos abiertos | Licencia |
 |---|---|---|---|---|---|
-| Pinal | Diseño de proteínas guiado por lenguaje | Instrucción en inglés (y estructura, en la etapa de secuencia) | Estructura y secuencia | Sí (HuggingFace, 137,7 GB) | no disponible |
+| Pinal | Diseño de proteínas guiado por lenguaje | Instrucción en inglés (y estructura, en la etapa de secuencia) | Estructura y secuencia | Sí (Hugging Face, 137,7 GB) | no disponible |
 | RFdiffusion | Generación de esqueletos proteicos por difusión | Restricciones geométricas y motivos | Estructura (*backbone*) | Sí | no verificada en esta ficha |
 | ProteinMPNN | *Inverse folding* | Estructura proteica | Secuencia | Sí | no verificada en esta ficha |
 | ESM3 | Modelo generativo multimodal de proteínas | Secuencia, estructura y función | Secuencia y estructura | Parcial (versión abierta y API) | no verificada en esta ficha |
@@ -87,12 +87,12 @@ La diferencia principal de Pinal frente a estas alternativas es la interfaz: adm
 - Sesgos del corpus: no se detalla la composición de los 1700 millones de pares proteína-texto, por lo que se desconoce la cobertura de familias proteicas, organismos y funciones; es probable que ciertas clases estén sobrerrepresentadas.
 - Advertencia de bioseguridad: la generación de proteínas funcionales a partir de texto puede aplicarse a dianas sensibles; conviene aplicar controles de uso y revisión institucional antes de sintetizar candidatos.
 - Requisitos de infraestructura elevados (137,7 GB de repositorio) y despliegue no documentado para servidores de inferencia estándar.
-- Comunidad limitada: 179 descargas y 13 «likes» en HuggingFace en el momento de la consulta, con poca validación independiente disponible.
+- Comunidad limitada: 179 descargas y 13 «likes» en Hugging Face en el momento de la consulta, con poca validación independiente disponible.
 - La model card remite al README del repositorio de GitHub para el uso; no incluye instrucciones de inferencia ni ejemplos de código.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/westlake-repl/Pinal
+- Modelo en Hugging Face: https://huggingface.co/westlake-repl/Pinal
 - Repositorio de código: https://github.com/westlake-repl/Denovo-Pinal
 - Artículo en Nature: https://www.nature.com/articles/s41586-026-11205-z
 - Servidor online (Pinal 16B): http://www.denovo-pinal.com/

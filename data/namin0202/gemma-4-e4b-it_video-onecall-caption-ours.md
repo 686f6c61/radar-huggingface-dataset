@@ -18,7 +18,7 @@ Dado que no se proporcionan detalles técnicos ni resultados, esta ficha se basa
 | Longitud de contexto | no disponible (depende del modelo base Gemma 4 E4B) |
 | Tipos de cuantizacion | no disponible (el adaptador se distribuye en safetensors; la cuantización del modelo base no se indica) |
 | Idiomas soportados | no disponibles (el modelo base Gemma 4 soporta múltiples idiomas, pero no se especifica para este adaptador) |
-| Licencia | no disponible (la página de HuggingFace no indica licencia; la del modelo base Gemma 4 debe consultarse en Google) |
+| Licencia | no disponible (la página de Hugging Face no indica licencia; la del modelo base Gemma 4 debe consultarse en Google) |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 
 ## Arquitectura y entrenamiento

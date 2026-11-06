@@ -75,6 +75,6 @@ No disponible. No se han identificado en la información proporcionada otras pol
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-1
+- Modelo en Hugging Face: https://huggingface.co/GinDuck/microduck-roller-sprint-2m-roller-1
 - Repositorio microduck: https://github.com/pollen-robotics/microduck
 - Repositorio de retos y entrenamiento: https://github.com/pollen-robotics/microduck-challenges

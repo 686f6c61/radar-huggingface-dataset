@@ -36,7 +36,7 @@ Respecto a los datos, el entrenamiento se apoya en un dataset sintetico enlazado
 
 ## Capacidades
 
-- Clasificacion de texto: tarea principal declarada en el pipeline de HuggingFace, orientada a etiquetar casos de evaluacion RAG.
+- Clasificacion de texto: tarea principal declarada en el pipeline de Hugging Face, orientada a etiquetar casos de evaluacion RAG.
 - Question answering: cobertura declarada como tarea soportada por el modelo, con recuperacion de evidencia ponderada por IDF.
 - Ranking de texto: puntuacion y ordenacion de fragmentos o respuestas candidatas.
 - Summarization: cobertura declarada como tarea soportada.
@@ -98,6 +98,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RKB109/rag-evaluation-lab-20260928-model
+- Modelo en Hugging Face: https://huggingface.co/RKB109/rag-evaluation-lab-20260928-model
 - Dataset asociado: https://huggingface.co/datasets/RKB109/rag-evaluation-lab-20260928-dataset
 - Repositorio de GitHub con `train.py`, split del dataset, codigo de evaluacion y formato JSON del modelo: mencionado en la model card, URL no disponible en la informacion proporcionada.

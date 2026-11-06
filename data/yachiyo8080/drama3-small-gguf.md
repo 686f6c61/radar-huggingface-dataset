@@ -95,7 +95,7 @@ No se dispone de información sobre otros modelos TTS comparables en la document
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yachiyo8080/drama3-small-GGUF
+- Modelo en Hugging Face: https://huggingface.co/yachiyo8080/drama3-small-GGUF
 - Modelo base: https://huggingface.co/fishaudio/drama-3
 - Runtime audio.cpp: https://github.com/JarodMica/audio.cpp
 - Muestras de audio: https://huggingface.co/pentacoxian-dev/drama3-small-GGUF/resolve/main/samples/ja_story.mp3 (y el resto de muestras referenciadas en la model card)

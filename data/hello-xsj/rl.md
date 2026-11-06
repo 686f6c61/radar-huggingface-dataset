@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hello-XSJ/RL es un modelo de aprendizaje por refuerzo (reinforcement learning) desarrollado por el usuario Hello-XSJ, que entrena un agente PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. El modelo está construido con la librería stable-baselines3 y se publica en HuggingFace como un ejemplo de aplicación de algoritmos de RL clásicos sobre un entorno de control continuo.
+Hello-XSJ/RL es un modelo de aprendizaje por refuerzo (reinforcement learning) desarrollado por el usuario Hello-XSJ, que entrena un agente PPO (Proximal Policy Optimization) para resolver el entorno LunarLander-v2 de Gymnasium. El modelo está construido con la librería stable-baselines3 y se publica en Hugging Face como un ejemplo de aplicación de algoritmos de RL clásicos sobre un entorno de control continuo.
 
 El problema que resuelve es el de enseñar a un agente a aterrizar una nave lunar de forma autónoma, un entorno de referencia en el campo del aprendizaje por refuerzo. Su relevancia es principalmente didáctica y como punto de partida para experimentación, ya que el resultado obtenido (recompensa media de -177.98 ± 73.68) está muy por debajo de lo que se considera una política exitosa en este entorno (recompensa positiva de al menos 200 puntos). La ficha no incluye detalles sobre la arquitectura de la red neuronal ni sobre el tamaño de los parámetros.
 
@@ -36,9 +36,9 @@ Los detalles del entrenamiento (número de pasos, tasa de aprendizaje, configura
 
 - Educacion y experimentacion en RL: el modelo sirve como ejemplo de entrenamiento con stable-baselines3, útil para que estudiantes comprendan el ciclo de entrenamiento, evaluación y registro de agentes en entornos de Gymnasium.
 - Comparativa de algoritmos: se puede utilizar como línea base de PPO para comparar con otros algoritmos (SAC, DQN, TD3) sobre el mismo entorno y evaluar diferencias de rendimiento.
-- Prueba de pipelines de integración: el modelo se puede integrar en un pipeline de HuggingFace para verificar el flujo de carga y ejecución de agentes con `load_from_hub`, aunque su rendimiento no es competitivo.
+- Prueba de pipelines de integración: el modelo se puede integrar en un pipeline de Hugging Face para verificar el flujo de carga y ejecución de agentes con `load_from_hub`, aunque su rendimiento no es competitivo.
 - Desarrollo de curricula de RL: se puede usar como punto de partida para aplicar técnicas de fine-tuning o curriculum learning, ya que la política actual no es óptima y el margen de mejora es amplio.
-- Demostración de registro de métricas: el uso del `model-index` en la model card permite practicar cómo declarar resultados de manera estandarizada en HuggingFace.
+- Demostración de registro de métricas: el uso del `model-index` en la model card permite practicar cómo declarar resultados de manera estandarizada en Hugging Face.
 - Exploración de hiperparámetros: se puede reproducir el entrenamiento con distintas configuraciones de PPO para observar el efecto en la recompensa media y en la varianza.
 
 ## Benchmarks y rendimiento
@@ -73,7 +73,7 @@ No se dispone de informacion sobre otros modelos del mismo autor ni de modelos c
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Hello-XSJ/RL
+- Página del modelo en Hugging Face: https://huggingface.co/Hello-XSJ/RL
 - Perfil del autor: https://github.com/Hello-XSJ
 - Librería stable-baselines3: https://github.com/DLR-RM/stable-baselines3
 - Entorno LunarLander-v2 (Gymnasium): https://www.gymlibrary.dev/environments/box2d/lunar_lander/

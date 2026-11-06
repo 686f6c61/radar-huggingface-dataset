@@ -6,7 +6,7 @@
 
 El interés del checkpoint es metodológico más que de producto. Documenta un protocolo concreto de escalado de datos: actores inicializados desde cero a partir del modelo base, un entorno fijo con dificultad equilibrada 0/1, 1.024 tokens iniciales de generación más una continuación forzada de 128 tokens para la respuesta, y un tope de 4.000 rollouts (última actualización del checkpoint: 499 en base cero). El entrenamiento se detiene al alcanzar 4.000 rollouts o cuando la validación ID alcanza pass@1 >= 0,98, con validación de 32 prompts y 8 respuestas por prompt cada 50 actualizaciones.
 
-Arquitectura y tamaño son los del modelo base: transformer tipo Qwen2 con 1.777.088.000 parámetros totals según los safetensors del repo (3,6 GB). No hay resultados de benchmarks publicados ni información sobre licencia o idiomas en los metadatos de HuggingFace, lo que limita seriamente su uso en producción fuera de un contexto de investigación.
+Arquitectura y tamaño son los del modelo base: transformer tipo Qwen2 con 1.777.088.000 parámetros totals según los safetensors del repo (3,6 GB). No hay resultados de benchmarks publicados ni información sobre licencia o idiomas en los metadatos de Hugging Face, lo que limita seriamente su uso en producción fuera de un contexto de investigación.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ Arquitectura y tamaño son los del modelo base: transformer tipo Qwen2 con 1.777
 | Longitud de contexto | No disponible en la informacion proporcionada; el modelo base Qwen2.5-1.5B soporta hasta 131.072 tokens, pero no se confirma que el ajuste conserve esa ventana |
 | Tipos de cuantizacion | No disponible en el repositorio (solo pesos safetensors); conversion a GGUF/AWQ/GPTQ posible con herramientas externas, sin validacion publicada |
 | Idiomas soportados | No disponible (los metadatos no declaran idiomas; el modelo base es multilingue, el conjunto de entrenamiento del ajuste no se detalla) |
-| Licencia | No disponible en los metadatos de HuggingFace; el modelo base DeepSeek-R1-Distill-Qwen-1.5B se distribuye con licencia MIT, pero el autor no declara licencia para este derivado |
+| Licencia | No disponible en los metadatos de Hugging Face; el modelo base DeepSeek-R1-Distill-Qwen-1.5B se distribuye con licencia MIT, pero el autor no declara licencia para este derivado |
 | Formato de pesos | safetensors (mas tokenizer y ficheros de configuracion; sin estado de optimizador ni dataloader) |
 
 ## Arquitectura y entrenamiento
@@ -33,7 +33,7 @@ El presupuesto esta estrictamente acotado: 4.000 rollouts en total, con la ultim
 - Razonamiento matematico y resolucion de problemas de respuesta corta y verificable, presumiblemente reforzado por el entorno de entrenamiento (el autor no detalla la tarea concreta).
 - Generacion de codigo: capacidad heredada del modelo base, no evaluada ni documentada para este checkpoint.
 - Modo "profesor" para destilacion: el uso declarado es producir trazas de razonamiento de alta calidad sobre un entorno concreto para entrenar a otros modelos (etiqueta `opd-teacher`).
-- Compatibilidad con Text Generation Inference y endpoints compatibles (etiquetas `text-generation-inference` y `endpoints_compatible`), por lo que puede servirse con la pila estandar de HuggingFace.
+- Compatibilidad con Text Generation Inference y endpoints compatibles (etiquetas `text-generation-inference` y `endpoints_compatible`), por lo que puede servirse con la pila estandar de Hugging Face.
 - Soporte de tool calling / function calling: no disponible; no se documenta ni se ha entrenado de forma explicita para ello.
 - Soporte de agentes y razonamiento multi-paso: no disponible; el entrenamiento se limita a un unico entorno con formato de respuesta forzado.
 - Capacidades multilingues: no disponibles; no se declaran idiomas ni composicion del dataset.
@@ -78,7 +78,7 @@ La comparacion relevante es contra su propio modelo base: este checkpoint cambia
 - Especializacion extrema: el entrenamiento usa un unico entorno con dificultad fija 0/1 y un formato de respuesta forzado de 128 tokens; es esperable un deterioro del rendimiento en conversacion general, instrucciones abiertas o tareas fuera de dominio.
 - Volumen de entrenamiento muy reducido: 4.000 rollouts y 499 actualizaciones son un presupuesto pequeno, orientado a un experimento de escalado de datos, no a un modelo listo para produccion.
 - Sin evaluacion publicada: no hay benchmarks, ni comparacion con el modelo base, ni analisis de regresion de capacidades.
-- Licencia no declarada: los metadatos de HuggingFace no especifican licencia para este derivado. Aunque el modelo base es MIT, la ausencia de licencia explicita en el repositorio constituye un riesgo juridico para uso comercial; conviene contactar con el autor antes de desplegarlo.
+- Licencia no declarada: los metadatos de Hugging Face no especifican licencia para este derivado. Aunque el modelo base es MIT, la ausencia de licencia explicita en el repositorio constituye un riesgo juridico para uso comercial; conviene contactar con el autor antes de desplegarlo.
 - Idiomas no declarados: se desconoce la composicion linguistica del ajuste; el comportamiento en castellano no esta verificado.
 - Riesgo de alucinacion: inherente a un modelo de 1,78 B destilado y reforzado con una metrica de verificacion binaria; puede producir cadenas de razonamiento plausibles pero incorrectas fuera del entorno entrenado.
 - Riesgo de reward hacking: al optimizar pass@1 contra un verificador concreto, el modelo puede haber aprendido atajos de formato especificos de ese entorno.
@@ -89,7 +89,7 @@ La comparacion relevante es contra su propio modelo base: este checkpoint cambia
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-126-MinimumUnconflictedGridKMax-20261025
+- Modelo en Hugging Face: https://huggingface.co/davidheineman/rlve-opd-teacher-R1Distill-126-MinimumUnconflictedGridKMax-20261025
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Run de Weights & Biases del entrenamiento: https://wandb.ai/david-heineman/rl-data-scaling-teachers-v1/runs/96bd9f1f
 - Grupo de W&B: `data-scaling-v1-n128-20261022-225839` (accesible desde el run anterior)

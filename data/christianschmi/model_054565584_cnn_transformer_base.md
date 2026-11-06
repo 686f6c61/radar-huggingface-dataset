@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `model_054565584_cnn_transformer_base` es un artefacto de código publicado en HuggingFace por el usuario `christianschmi`. Se trata de una implementación de arquitectura híbrida CNN-Transformer a escala base, diseñada para tareas multitarea. La model card indica que emplea atención multi-query, fusión de características mediante estrategia de bajo rango, activación GELU, normalización por grupos (GroupNorm) e inicialización Xavier, junto con el optimizador Lion y un scheduler de tasa de aprendizaje exponencial.
+El modelo `model_054565584_cnn_transformer_base` es un artefacto de código publicado en Hugging Face por el usuario `christianschmi`. Se trata de una implementación de arquitectura híbrida CNN-Transformer a escala base, diseñada para tareas multitarea. La model card indica que emplea atención multi-query, fusión de características mediante estrategia de bajo rango, activación GELU, normalización por grupos (GroupNorm) e inicialización Xavier, junto con el optimizador Lion y un scheduler de tasa de aprendizaje exponencial.
 
 El repositorio contiene únicamente un archivo Python (`model_054565584_cnn_transformer_base.py`), sin pesos preentrenados ni documentación adicional. No se especifican datos de entrenamiento, tamaño de contexto, idiomas ni capacidades concretas. El modelo se distribuye bajo licencia CC-BY-4.0, pero no hay evidencia de que haya sido evaluado o validado públicamente. Por tanto, su relevancia actual es limitada y su utilidad práctica no está demostrada.
 

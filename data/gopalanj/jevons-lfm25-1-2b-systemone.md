@@ -6,7 +6,7 @@
 
 El adaptador se entrenó con QLoRA sobre el checkpoint MLX de 8 bits (`mlx-community/LFM2.5-1.2B-Instruct-8bit`), con rango 16, escala 2.0, 16 capas y módulos de atención q/k/v/o más MLP w1/w2/w3, enmascarando los tokens del prompt. Se sirve exclusivamente a temperatura 1 y con la calibración desactivada, y el servidor construye en código el esquema de salida `{choice, probabilities, confidence, noul, score, legend}`, por lo que la validez de esquema es del 100 % sin que el modelo escriba JSON.
 
-Su relevancia es acotada pero clara: demuestra un patrón de despliegue en el que el modelo solo aporta logits y la lógica determinista vive en el servidor, lo que reduce drásticamente los fallos de formato. El autor publica métricas honestas y señala explícitamente que la ganancia real en el conjunto de validación congelado es nula en precisión modal (72,4 % frente a 72,4 % del base) y que la calibración empeora en holdout (ECE de 0,122 a 0,248). El repositorio tiene 0 descargas y 0 likes, y la ficha de HuggingFace lo sitúa como publicado el 20 de septiembre de 2026.
+Su relevancia es acotada pero clara: demuestra un patrón de despliegue en el que el modelo solo aporta logits y la lógica determinista vive en el servidor, lo que reduce drásticamente los fallos de formato. El autor publica métricas honestas y señala explícitamente que la ganancia real en el conjunto de validación congelado es nula en precisión modal (72,4 % frente a 72,4 % del base) y que la calibración empeora en holdout (ECE de 0,122 a 0,248). El repositorio tiene 0 descargas y 0 likes, y la ficha de Hugging Face lo sitúa como publicado el 20 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -99,7 +99,7 @@ Comparativas con otros modelos de tamaño similar (por ejemplo, instructivos de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gopalanj/jevons-lfm25-1.2b-systemone
+- Modelo en Hugging Face: https://huggingface.co/gopalanj/jevons-lfm25-1.2b-systemone
 - Modelo base oficial: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
 - Base cuantizado en 8 bits para MLX: https://huggingface.co/mlx-community/LFM2.5-1.2B-Instruct-8bit
 - Licencia LFM 1.0: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct/blob/main/LICENSE

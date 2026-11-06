@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B-Ultimate-Heretic-Uncensored-i1-GGUF (este repo) | no confirmado (nombre 27B; metadatos 6,8 M) | no disponible | no disponible | GGUF | HuggingFace |
-| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored (base) | 27B segun nombre | no disponible | no disponible | safetensors (presumible) | HuggingFace |
-| Otras cuantizaciones GGUF de mradermacher | variable | variable | variable | GGUF | HuggingFace |
+| Qwen3.8-27B-Ultimate-Heretic-Uncensored-i1-GGUF (este repo) | no confirmado (nombre 27B; metadatos 6,8 M) | no disponible | no disponible | GGUF | Hugging Face |
+| DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored (base) | 27B segun nombre | no disponible | no disponible | safetensors (presumible) | Hugging Face |
+| Otras cuantizaciones GGUF de mradermacher | variable | variable | variable | GGUF | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -84,6 +84,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.8-27B-Ultimate-Heretic-Uncensored-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.8-27B-Ultimate-Heretic-Uncensored-i1-GGUF
 - Modelo base citado: https://huggingface.co/DavidAU/Qwen3.8-27B-Ultimate-Heretic-Uncensored
 - Perfil del autor de la cuantizacion: https://huggingface.co/mradermacher

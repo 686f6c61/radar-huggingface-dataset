@@ -4,7 +4,7 @@
 
 El modelo `IMvision12/new-model` es una implementación en Keras 3 del modelo LeViT-128S, una arquitectura de visión por computador que combina convoluciones y atención (Vision Transformer híbrido) desarrollada por Facebook AI. El autor, Gitesh Chawda (IMvision12), es un ingeniero de ML que publica librerías open source para facilitar el uso de modelos modernos. Este modelo está diseñado para clasificación de imágenes y se distribuye bajo licencia Apache-2.0, lo que permite uso comercial sin restricciones.
 
-La relevancia de este modelo radica en su tamaño reducido (el LeViT-128S original tiene alrededor de 7,8 millones de parámetros) y su eficiencia computacional, lo que lo hace adecuado para entornos con recursos limitados, como dispositivos móviles o inferencia en tiempo real. Sin embargo, la ficha de HuggingFace no proporciona detalles sobre el entrenamiento específico, el dataset utilizado ni métricas de rendimiento, por lo que la información disponible es limitada.
+La relevancia de este modelo radica en su tamaño reducido (el LeViT-128S original tiene alrededor de 7,8 millones de parámetros) y su eficiencia computacional, lo que lo hace adecuado para entornos con recursos limitados, como dispositivos móviles o inferencia en tiempo real. Sin embargo, la ficha de Hugging Face no proporciona detalles sobre el entrenamiento específico, el dataset utilizado ni métricas de rendimiento, por lo que la información disponible es limitada.
 
 ## Especificaciones técnicas
 
@@ -60,10 +60,10 @@ No se dispone de información sobre comparativas con otros modelos. Sin embargo,
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| IMvision12/new-model | No disponible (~7,8 M base) | N/A | Apache-2.0 | HuggingFace |
-| ViT-Tiny (Google) | 5,7 M | N/A | Apache-2.0 | HuggingFace |
-| MobileViT-S (Apple) | 5,6 M | N/A | MIT | HuggingFace |
-| EfficientNet-B0 | 5,3 M | N/A | Apache-2.0 | HuggingFace |
+| IMvision12/new-model | No disponible (~7,8 M base) | N/A | Apache-2.0 | Hugging Face |
+| ViT-Tiny (Google) | 5,7 M | N/A | Apache-2.0 | Hugging Face |
+| MobileViT-S (Apple) | 5,6 M | N/A | MIT | Hugging Face |
+| EfficientNet-B0 | 5,3 M | N/A | Apache-2.0 | Hugging Face |
 
 Estos modelos son comparables en tamaño y propósito. No se dispone de métricas de rendimiento para una comparación directa.
 
@@ -77,8 +77,8 @@ Estos modelos son comparables en tamaño y propósito. No se dispone de métrica
 
 ## Enlaces
 
-- [HuggingFace - IMvision12/new-model](https://huggingface.co/IMvision12/new-model)
-- [Perfil de HuggingFace de IMvision12](https://huggingface.co/IMvision12)
+- [Hugging Face - IMvision12/new-model](https://huggingface.co/IMvision12/new-model)
+- [Perfil de Hugging Face de IMvision12](https://huggingface.co/IMvision12)
 - [Perfil de GitHub de IMvision12](https://github.com/IMvision12)
 - [Paper LeViT (arxiv:2104.01136)](https://arxiv.org/abs/2104.01136)
 - [Modelo base facebook/levit-128S](https://huggingface.co/facebook/levit-128S)

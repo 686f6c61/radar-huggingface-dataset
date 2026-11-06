@@ -60,10 +60,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Especialidad |
 |---|---|---|---|---|---|
-| Cosmos3-Edge Policy DROID (nvidia/Cosmos-Reason1-Edge) | ~3.4B | no disponible | no disponible | HuggingFace | Política base pre-entrenada en DROID, sobre la que se hace SFT |
-| Cosmos3-Nano-Policy-DROID | 16B | no disponible | no disponible | HuggingFace (colección nvidia/cosmos3) | Variante Nano de política DROID |
-| Cosmos3-Super-Policy | 64B | no disponible | no disponible | HuggingFace (colección nvidia/cosmos3) | Variante Super de política DROID |
-| MangoGoes/Cosmos3-edge-generation-libero4in1 | ~3.4B | no disponible | no disponible | HuggingFace | Fine-tuning específico para LIBERO 4in1 |
+| Cosmos3-Edge Policy DROID (nvidia/Cosmos-Reason1-Edge) | ~3.4B | no disponible | no disponible | Hugging Face | Política base pre-entrenada en DROID, sobre la que se hace SFT |
+| Cosmos3-Nano-Policy-DROID | 16B | no disponible | no disponible | Hugging Face (colección nvidia/cosmos3) | Variante Nano de política DROID |
+| Cosmos3-Super-Policy | 64B | no disponible | no disponible | Hugging Face (colección nvidia/cosmos3) | Variante Super de política DROID |
+| MangoGoes/Cosmos3-edge-generation-libero4in1 | ~3.4B | no disponible | no disponible | Hugging Face | Fine-tuning específico para LIBERO 4in1 |
 
 No hay datos públicos de benchmarks para comparar rendimiento entre estas variantes. La comparativa se limita a tamaño y disponibilidad, ya que no se publican métricas de éxito en LIBERO para ninguna de ellas en la información disponible.
 
@@ -76,15 +76,15 @@ No hay datos públicos de benchmarks para comparar rendimiento entre estas varia
 - Formato de checkpoint propietario: los checkpoints DCP requieren el framework `cosmos_framework` de NVIDIA y no son directamente cargables con librerías estándar como Transformers o Diffusers; la integración en otros pipelines requiere adaptación.
 - Sin soporte de cuantización publicado: no se ofrecen versiones GGUF o cuantizadas, por lo que la inferencia en edge hardware (que es el objetivo de Cosmos3-Edge) requerirá trabajo adicional de conversión.
 - El modelo es un checkpoint intermedio de entrenamiento (iteraciones 2000 y 2800 de 5000 máximas), por lo que puede no haber convergido completamente; el entrenamiento se puede reanudar para mejorar el rendimiento.
-- Dependencia de cachés latentes: para reentrenar o reproducir, se necesita el dataset pre-codificado con Wan2.2-VAE (53.19 GB en HuggingFace), lo que añade una dependencia externa.
+- Dependencia de cachés latentes: para reentrenar o reproducir, se necesita el dataset pre-codificado con Wan2.2-VAE (53.19 GB en Hugging Face), lo que añade una dependencia externa.
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/MangoGoes/Cosmos3-edge-generation-libero4in1
+- Repositorio del modelo en Hugging Face: https://huggingface.co/MangoGoes/Cosmos3-edge-generation-libero4in1
 - Dataset de caché latente Wan2.2-VAE: https://huggingface.co/datasets/MangoGoes/libero4in1_wan2.2vae_latent_dataset
 - Dataset LIBERO original: https://huggingface.co/datasets/Lifelong-Robot-Learning/LIBERO
 - Backbone Cosmos3-Edge Policy (nvidia/Cosmos-Reason1-Edge): https://huggingface.co/nvidia/Cosmos-Reason1-Edge
-- Colección Cosmos3 de NVIDIA en HuggingFace: https://huggingface.co/collections/nvidia/cosmos3
+- Colección Cosmos3 de NVIDIA en Hugging Face: https://huggingface.co/collections/nvidia/cosmos3
 - Página del proyecto Cosmos 3 (NVIDIA Research): https://research.nvidia.com/labs/cosmos-lab/cosmos3/
 - Repositorio de NVIDIA Cosmos en GitHub (cookbooks/cosmos3): https://github.com/NVIDIA/cosmos/tree/main/cookbooks/cosmos3
 - Documentación de referencia de modelos Cosmos 3: https://docs.nvidia.com/cosmos/latest/cosmos3/model_reference.html

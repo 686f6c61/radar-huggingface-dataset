@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `MuneK/wrime-emotion-modernbert-model` es un clasificador multietiqueta de intensidad emocional para texto en japones, desarrollado por MuneK (Muneaki Kanno) y publicado en HuggingFace. Se trata de un modelo de regresion multitarea que predice simultaneamente la intensidad de ocho emociones (joy, sadness, anticipation, surprise, anger, fear, disgust y trust) sobre una escala normalizada de 0 a 1, siguiendo el marco teorico de las ocho emociones basicas de Plutchik.
+El modelo `MuneK/wrime-emotion-modernbert-model` es un clasificador multietiqueta de intensidad emocional para texto en japones, desarrollado por MuneK (Muneaki Kanno) y publicado en Hugging Face. Se trata de un modelo de regresion multitarea que predice simultaneamente la intensidad de ocho emociones (joy, sadness, anticipation, surprise, anger, fear, disgust y trust) sobre una escala normalizada de 0 a 1, siguiendo el marco teorico de las ocho emociones basicas de Plutchik.
 
 El modelo se construye sobre el encoder `sbintuitions/modernbert-ja-310m`, un transformer de tipo ModernBERT adaptado al japones, al que se le anade una cabeza de regresion lineal con activacion sigmoide sobre el token `[CLS]`. Se entrena con el dataset WRIME, que contiene aproximadamente 35.000 muestras de texto japones con anotaciones subjetivas y objetivas de intensidad emocional.
 
@@ -92,7 +92,7 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MuneK/wrime-emotion-modernbert-model | ~310M (base) | 512 | Regresion de 8 intensidades emocionales en japones | MIT (modelo) | HuggingFace |
+| MuneK/wrime-emotion-modernbert-model | ~310M (base) | 512 | Regresion de 8 intensidades emocionales en japones | MIT (modelo) | Hugging Face |
 | Modelos basados en BERT-ja para WRIME | No disponible | No disponible | Clasificacion de emocion en japones | Variable | No disponible |
 | Clasificadores multilingues de emocion (p. ej. basados en XLM-R) | No disponible | No disponible | Clasificacion emocional multilingue | Variable | No disponible |
 
@@ -112,7 +112,7 @@ No se dispone de datos comparativos publicados con alternativas concretas en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MuneK/wrime-emotion-modernbert-model
+- Modelo en Hugging Face: https://huggingface.co/MuneK/wrime-emotion-modernbert-model
 - Modelo base ModernBERT-ja 310M: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Coleccion ModernBERT-ja: https://huggingface.co/collections/sbintuitions/modernbert-ja-67b68fe891132877cf67aa0a
 - Repositorio del dataset WRIME: https://github.com/ids-cv/wrime

@@ -68,7 +68,7 @@ La informacion proporcionada no incluye datos de rendimiento, contexto o idiomas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ornith-1.0-9B-heretic (Q5_K_M, este repo) | ~8,95B | no disponible | MIT | GGUF en HuggingFace |
+| Ornith-1.0-9B-heretic (Q5_K_M, este repo) | ~8,95B | no disponible | MIT | GGUF en Hugging Face |
 | Llama 3.1 8B Instruct | ~8B | 128K | Llama 3.1 Community License | safetensors y GGUF |
 | Qwen2.5 7B Instruct | ~7,6B | 128K | Apache 2.0 | safetensors y GGUF |
 | Gemma 2 9B Instruct | ~9B | 8K | Gemma Terms of Use | safetensors y GGUF |
@@ -89,7 +89,7 @@ Diferencias clave: la licencia MIT de esta publicacion es mas permisiva que las 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q5_K_M-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/ijohn07/Ornith-1.0-9B-heretic-Q5_K_M-GGUF
 - Modelo base de la cuantizacion: https://huggingface.co/trohrbaugh/Ornith-1.0-9B-heretic
 - Modelo original referenciado en la licencia: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B
 - Licencia del modelo original: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B/blob/main/LICENSE

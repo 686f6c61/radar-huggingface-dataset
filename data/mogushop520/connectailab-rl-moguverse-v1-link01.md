@@ -72,8 +72,8 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 B + LoRA | No disponible | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (base) | 0,8 B | No disponible | No disponible en la información | HuggingFace |
+| LINK-01 (este modelo) | 0,8 B + LoRA | No disponible | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (base) | 0,8 B | No disponible | No disponible en la información | Hugging Face |
 | Política PPO original (cerebro) | No disponible | No aplica | No disponible | Solo dentro del simulador del proyecto |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/mogushop520/connectailab-rl-moguverse-v1-link01)
+- [Modelo en Hugging Face](https://huggingface.co/mogushop520/connectailab-rl-moguverse-v1-link01)
 - [Repositorio CONNECT TYCOON (código de entrenamiento)](https://github.com/wonseokjung/connect-tycoon)
 - [Cuaderno de Colab de entrenamiento](https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb)
 - [Canal de YouTube CONNECT AI LAB](https://www.youtube.com/@CONNECT-AI-LAB)

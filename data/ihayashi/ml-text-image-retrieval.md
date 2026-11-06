@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ihayashi/ml-text-image-retrieval
+- Repositorio en Hugging Face: https://huggingface.co/Ihayashi/ml-text-image-retrieval
 - Tema image-text-retrieval en GitHub: https://github.com/topics/image-text-retrieval
 - Articulo de revision sobre image-text matching: https://www.sciencedirect.com/science/article/pii/S1566253525005263
 - Revision de retrieval cross-modal en teledeteccion: https://www.mdpi.com/2072-4292/17/24/3995

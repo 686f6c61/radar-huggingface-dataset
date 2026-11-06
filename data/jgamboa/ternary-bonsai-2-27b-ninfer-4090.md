@@ -106,8 +106,8 @@ No se han publicado resultados de benchmarks por tarea (MMLU, HumanEval, GSM8K n
 
 ## Enlaces
 
-- HuggingFace (este artefacto): https://huggingface.co/jgamboa/Ternary-Bonsai-2-27B-NInfer-4090
-- Modelo base en HuggingFace: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
+- Hugging Face (este artefacto): https://huggingface.co/jgamboa/Ternary-Bonsai-2-27B-NInfer-4090
+- Modelo base en Hugging Face: https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf
 - Documentación de Prism ML sobre Ternary Bonsai 2 27B: https://docs.prismml.com/bonsai-2-27b
 - Anuncio de Prism ML: https://prismml.com/news/bonsai-2-27b
 - Motor NInfer (Neroued): https://github.com/Neroued/ninfer

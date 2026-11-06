@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Homiebear/SilverhandsGuitar_190e_7410s es un artefacto publicado en HuggingFace por el usuario Homiebear. La informacion disponible es minima: la model card se limita a una linea con `license: openrail` y no incluye descripcion, pipeline declarado, idiomas ni documentacion tecnica de ningun tipo. El repositorio ocupa 0,2 GB, lo que descarta que se trate de un modelo de lenguaje completo de gran tamano y es compatible con un adaptador, un checkpoint de ajuste fino o un modelo de difusion de tipo LoRA, aunque esto no puede confirmarse con los datos disponibles.
+Homiebear/SilverhandsGuitar_190e_7410s es un artefacto publicado en Hugging Face por el usuario Homiebear. La informacion disponible es minima: la model card se limita a una linea con `license: openrail` y no incluye descripcion, pipeline declarado, idiomas ni documentacion tecnica de ningun tipo. El repositorio ocupa 0,2 GB, lo que descarta que se trate de un modelo de lenguaje completo de gran tamano y es compatible con un adaptador, un checkpoint de ajuste fino o un modelo de difusion de tipo LoRA, aunque esto no puede confirmarse con los datos disponibles.
 
 El identificador del repositorio sigue el patron `<nombre>_<epocas>e_<pasos>s` (190e, 7410s), una convencion habitual en herramientas de entrenamiento de modelos generativos de imagen para nombrar checkpoints intermedios por numero de epocas y pasos. El nombre "SilverhandsGuitar" apunta a un objeto concreto (la guitarra del personaje Johnny Silverhand de Cyberpunk 2077), lo que reforzaria la hipotesis de un modelo de generacion de imagen orientado a un concepto visual especifico. No obstante, se trata de una inferencia a partir del nombre y no de un dato documentado.
 
@@ -74,8 +74,8 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Homiebear/SilverhandsGuitar_190e_7410s
-- Perfil del autor en HuggingFace: https://huggingface.co/Homiebear
+- Modelo en Hugging Face: https://huggingface.co/Homiebear/SilverhandsGuitar_190e_7410s
+- Perfil del autor en Hugging Face: https://huggingface.co/Homiebear
 - Listado de modelos del autor: https://huggingface.co/Homiebear/models
 
 Nota: los restantes resultados de la busqueda web (paginas de modelos 3D en Sketchfab sobre la guitarra de Johnny Silverhand y un perfil de Instagram no relacionado) no guardan vinculacion documentada con este repositorio y se omiten por no ser fuentes relevantes del modelo.

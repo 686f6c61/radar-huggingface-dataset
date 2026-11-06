@@ -6,7 +6,7 @@ commaai/commavq-gpt2m es un modelo generativo de video desarrollado por comma.ai
 
 La relevancia de este modelo radica en su enfoque: en lugar de generar video de forma tradicional (píxel a píxel), utiliza un esquema de cuantización vectorial (VQ) que convierte los fotogramas en tokens discretos, sobre los cuales se entrena un transformer autoregresivo. Esto permite modelar la dinámica temporal y espacial de escenas de conducción reales. Aunque su aplicación principal es la investigación en generación de video para conducción autónoma, también sirve como ejemplo de cómo aplicar arquitecturas de lenguaje a dominios visuales.
 
-El repositorio en HuggingFace incluye el modelo en formato transformers (PyTorch) y ONNX, con licencia MIT, lo que facilita su uso y modificación. Sin embargo, la documentación disponible es escasa: no se especifican detalles como el número exacto de parámetros, la longitud de contexto o los datos de entrenamiento más allá de la referencia al dataset commaVQ. A pesar de ello, su tamaño de repositorio (6.1 GB) sugiere un modelo de tamaño considerable, probablemente en el rango de cientos de millones a miles de millones de parámetros.
+El repositorio en Hugging Face incluye el modelo en formato transformers (PyTorch) y ONNX, con licencia MIT, lo que facilita su uso y modificación. Sin embargo, la documentación disponible es escasa: no se especifican detalles como el número exacto de parámetros, la longitud de contexto o los datos de entrenamiento más allá de la referencia al dataset commaVQ. A pesar de ello, su tamaño de repositorio (6.1 GB) sugiere un modelo de tamaño considerable, probablemente en el rango de cientos de millones a miles de millones de parámetros.
 
 ## Especificaciones tecnicas
 
@@ -32,7 +32,7 @@ El entrenamiento se realizó sobre una versión más grande del dataset commaVQ,
 - Generación de video incondicional: produce secuencias de video de conducción sintéticas de varios segundos (ejemplo de 5 segundos en la model card).
 - Modelado de dinámica espacio-temporal: captura la estructura de escenas de carretera, incluyendo movimiento de vehículos, cambios de iluminación y paisajes.
 - Representación discreta del video: utiliza tokens VQ, lo que permite aplicar técnicas de procesamiento de secuencias propias de los transformers.
-- Compatibilidad con transformers y ONNX: puede cargarse con la librería transformers de HuggingFace y exportarse a ONNX para inferencia en distintos entornos.
+- Compatibilidad con transformers y ONNX: puede cargarse con la librería transformers de Hugging Face y exportarse a ONNX para inferencia en distintos entornos.
 - No soporta generación de texto, tool calling, agentes ni capacidades multimodales más allá del video.
 
 ## Casos de uso
@@ -71,6 +71,6 @@ No disponible. No se han encontrado en la información proporcionada comparacion
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/commaai/commavq-gpt2m
+- Repositorio en Hugging Face: https://huggingface.co/commaai/commavq-gpt2m
 - Dataset commaVQ: https://huggingface.co/datasets/commaai/commavq
 - Video de ejemplo (en la model card): https://github.com/commaai/commavq/assets/29985433/f6f7699b-b6cb-4f9c-80c9-8e00d75fbfae

@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Notas |
 |---|---|---|---|---|---|
-| Qwen2.5-3B-Instruct (base) | 3B | 128K | Apache 2.0 | safetensors | Modelo original sin fine-tune, disponible en HuggingFace |
+| Qwen2.5-3B-Instruct (base) | 3B | 128K | Apache 2.0 | safetensors | Modelo original sin fine-tune, disponible en Hugging Face |
 | Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2 | 3B | no confirmado | no disponible | GGUF | Fine-tune específico, solo Q4_K_M |
 | Llama 3.2 3B Instruct | 3B | 128K | Llama 3.2 license | safetensors, GGUF | Alternativa de Meta, con licencia permisiva pero con restricciones |
 
@@ -75,7 +75,7 @@ La comparación directa es limitada porque no hay benchmarks del fine-tune. El m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2
-- Colección Qwen2.5 en HuggingFace: https://huggingface.co/collections/Qwen/qwen25
+- Repositorio Hugging Face: https://huggingface.co/Subhrajyoti75/qwen2.5-3b-cot-pricing-gguf_2
+- Colección Qwen2.5 en Hugging Face: https://huggingface.co/collections/Qwen/qwen25
 - Página de Qwen2.5 en Ollama: https://ollama.com/library/qwen2.5:3b
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen

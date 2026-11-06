@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniStrike selfplay_seed333 no es un modelo de lenguaje, sino un checkpoint de aprendizaje por refuerzo multiagente publicado en HuggingFace por Libor Burian (BurnyCoder). Se trata del punto final de entrenamiento de un agente que juega un mini-shooter táctico 3D 5v5, entrenado con MAPPO (multi-agent PPO) en régimen de self-play puro con la semilla independiente 333. El autor lo archiva explícitamente como **DEFERRED, INCOMPLETE**: no hay torneo final completado ni ninguna afirmación de habilidad táctica, y la evaluación registrada figura como pendiente.
+MiniStrike selfplay_seed333 no es un modelo de lenguaje, sino un checkpoint de aprendizaje por refuerzo multiagente publicado en Hugging Face por Libor Burian (BurnyCoder). Se trata del punto final de entrenamiento de un agente que juega un mini-shooter táctico 3D 5v5, entrenado con MAPPO (multi-agent PPO) en régimen de self-play puro con la semilla independiente 333. El autor lo archiva explícitamente como **DEFERRED, INCOMPLETE**: no hay torneo final completado ni ninguna afirmación de habilidad táctica, y la evaluación registrada figura como pendiente.
 
 La arquitectura es deliberadamente mínima: un actor compartido de tipo MLP 2x128 con activación tanh, 384 entradas de observación estructurada (historial con visibilidad limitada) y seis controles categóricos, más un crítico centralizado 2x256 que solo se usa durante el entrenamiento. No procesa píxeles ni texto, no tiene tokenizador y no dispone de ventana de contexto lingüística. El repositorio ocupa 0,0 GB, no registra descargas ni likes en el momento de la consulta y se distribuye con licencia MIT.
 
@@ -71,8 +71,8 @@ El autor advierte además que este es un experimento local pequeño, no evidenci
 
 | Modelo | Parámetros | Entrada / contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniStrike selfplay_seed333 | 66.566 (actor) | 384 valores estructurados | Evaluación pendiente | MIT | HuggingFace, 0 descargas |
-| Checkpoints de duelo a spawn fijo (colección MiniStrike) | No disponible | No disponible | No disponible; aceptación de script móvil fallida según la colección | No disponible en la información | Colección de HuggingFace del mismo autor |
+| MiniStrike selfplay_seed333 | 66.566 (actor) | 384 valores estructurados | Evaluación pendiente | MIT | Hugging Face, 0 descargas |
+| Checkpoints de duelo a spawn fijo (colección MiniStrike) | No disponible | No disponible | No disponible; aceptación de script móvil fallida según la colección | No disponible en la información | Colección de Hugging Face del mismo autor |
 | Implementaciones de referencia del tutorial MAPPO de TorchRL | No disponible | No disponible | No disponible | No disponible | Documentación de PyTorch |
 
 No se dispone de alternativas comparables con métricas publicadas en la información proporcionada. Las comparaciones con modelos de lenguaje de gran tamaño serían categóricamente inválidas: aquí no hay tokenizador, ni contexto textual, ni benchmark de conocimiento.
@@ -93,9 +93,9 @@ No se dispone de alternativas comparables con métricas publicadas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BurnyCoder/ministrike-selfplay-seed333
+- Modelo en Hugging Face: https://huggingface.co/BurnyCoder/ministrike-selfplay-seed333
 - Colección MiniStrike staged shooter self-play: https://huggingface.co/collections/BurnyCoder/ministrike-staged-shooter-self-play
-- Perfil del autor en HuggingFace: https://huggingface.co/BurnyCoder/models
+- Perfil del autor en Hugging Face: https://huggingface.co/BurnyCoder/models
 - Repositorio de origen (entrenamiento self-play 3D FPS): https://github.com/BurnyCoder/3d-firstperson-shooter-reinforcement-learning-selfplay
 - Repositorio alternativo citado en la model card: https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay
 - Protocolo del proyecto: https://github.com/BurnyCoder/counter-strike-reinforcement-learning-selfplay/blob/main/docs/protocol.md

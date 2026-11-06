@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B · Refauna (este) | 2B + LoRA | no disponible | Fauna y conservación de la Mata Atlántica, PT-BR | Apache 2.0 | HuggingFace (adaptador PEFT y GGUF) |
-| Gemma 4 E2B · Refauna | no disponible | no disponible | Mismo corpus y protocolo que este modelo | no disponible | HuggingFace (iamrodrigocoelho/gemma-4-e2b-refauna) |
-| Qwen/Qwen3.5-2B (base) | 2B | no disponible | Generalista | Apache 2.0 | HuggingFace |
+| Qwen3.5-2B · Refauna (este) | 2B + LoRA | no disponible | Fauna y conservación de la Mata Atlántica, PT-BR | Apache 2.0 | Hugging Face (adaptador PEFT y GGUF) |
+| Gemma 4 E2B · Refauna | no disponible | no disponible | Mismo corpus y protocolo que este modelo | no disponible | Hugging Face (iamrodrigocoelho/gemma-4-e2b-refauna) |
+| Qwen/Qwen3.5-2B (base) | 2B | no disponible | Generalista | Apache 2.0 | Hugging Face |
 
 La comparación directa más relevante es con Gemma 4 E2B · Refauna, entrenado con los mismos datos y protocolo, lo que permite aislar el efecto del modelo base. Frente al Qwen3.5-2B sin ajustar, este adaptador mejora la fidelidad al contexto y la abstención correcta en el entorno RAG evaluado (4,41 y 1,00 frente a 3,17 y 0,12), aunque la corrección global sin RAG baja ligeramente (2,20 frente a 1,72 en el base, y 2,32 frente a 2,52 con RAG).
 
@@ -93,7 +93,7 @@ La comparación directa más relevante es con Gemma 4 E2B · Refauna, entrenado 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna-lora
+- Modelo en Hugging Face: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna-lora
 - Versión GGUF para Ollama: https://huggingface.co/iamrodrigocoelho/qwen3.5-2b-refauna-GGUF
 - Modelo comparable Gemma 4 E2B · Refauna: https://huggingface.co/iamrodrigocoelho/gemma-4-e2b-refauna
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B

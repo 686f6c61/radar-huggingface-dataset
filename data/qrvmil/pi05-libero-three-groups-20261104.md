@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`pi05-libero-three-groups-20261104` es un repositorio de HuggingFace publicado por el usuario `qrvmil` que, segun su propia model card, se encuentra en estado de preparacion y no contiene todavia ninguna ejecucion de entrenamiento completada. El nombre sugiere una especializacion adicional del modelo pi05 (Pi-Zero, de Physical Intelligence) ya entrenado sobre el benchmark LIBERO de manipulacion robotica, organizada en tres subconjuntos fijos de tareas. No se trata, por tanto, de un modelo listo para uso, sino de un espacio reservado para publicar checkpoints futuros.
+`pi05-libero-three-groups-20261104` es un repositorio de Hugging Face publicado por el usuario `qrvmil` que, segun su propia model card, se encuentra en estado de preparacion y no contiene todavia ninguna ejecucion de entrenamiento completada. El nombre sugiere una especializacion adicional del modelo pi05 (Pi-Zero, de Physical Intelligence) ya entrenado sobre el benchmark LIBERO de manipulacion robotica, organizada en tres subconjuntos fijos de tareas. No se trata, por tanto, de un modelo listo para uso, sino de un espacio reservado para publicar checkpoints futuros.
 
 La model card es extremadamente escueta: no se especifican parametros, arquitectura, contexto, licencia, idiomas ni formato de pesos. El autor remite a dos documentos (`PROTOCOL_RU.txt` y `docs/superpowers/plans/2026-11-04-libero-sft.md`) que no forman parte de la informacion disponible en este repositorio. La fecha de creacion y actualizacion es el 4 de noviembre de 2026, con cero descargas y cero likes en el momento de redactar esta ficha.
 
@@ -32,7 +32,7 @@ Respecto al entrenamiento, la model card indica que se trata de "three fixed-sub
 - No disponible. La model card no documenta ninguna capacidad funcional del modelo.
 - Por el nombre y la referencia a LIBERO, cabria esperar capacidades de manipulacion robotica guiada por instrucciones en entornos simulados, pero no hay confirmacion ni especificacion tecnica.
 - No se documenta soporte de tool calling, function calling, agentes, multilingue, vision, audio ni modos de razonamiento extendido.
-- No hay demos, espacios de HuggingFace ni ejemplos de inferencia publicados.
+- No hay demos, espacios de Hugging Face ni ejemplos de inferencia publicados.
 
 ## Casos de uso
 
@@ -73,7 +73,7 @@ No disponible. No se conocen modelos comparables dentro de la informacion propor
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/qrvmil/pi05-libero-three-groups-20261104
+- Repositorio Hugging Face: https://huggingface.co/qrvmil/pi05-libero-three-groups-20261104
 - Plan de SFT referenciado en la model card: `docs/superpowers/plans/2026-11-04-libero-sft.md` (no disponible en la informacion proporcionada)
 - Protocolo referenciado en la model card: `PROTOCOL_RU.txt` (no disponible en la informacion proporcionada)
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web.

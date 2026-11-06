@@ -34,7 +34,7 @@ No se ha publicado informacion sobre la composicion del dataset de entrenamiento
 - Clasificacion de texto para tipos de personalidad MBTI (16 tipos o una agregacion binaria, segun la tarea especifica).
 - Fine-tuneado sobre una tarea de clasificacion de texto con salida probabilistica (la presencia de un umbral optimo de 0,48 sugiere clasificacion binaria).
 - Capacidad de procesamiento de texto en ingles (heredada del pretraining de RoBERTa).
-- Inferencia con la libreria transformers de HuggingFace y compatible con Text Embeddings Inference.
+- Inferencia con la libreria transformers de Hugging Face y compatible con Text Embeddings Inference.
 - No se ha documentado soporte para tool calling, agentes, vision, audio ni razonamiento multi-paso.
 
 ## Casos de uso
@@ -64,7 +64,7 @@ No se han publicado comparaciones con otros modelos de clasificacion MBTI ni res
 - VRAM estimada para inferencia: el modelo tiene 355 millones de parametros. En FP32, los pesos ocupan aproximadamente 1,42 GB; en FP16, unos 710 MB. Con las activaciones y el overhead del runtime, se recomienda un minimo de 2-3 GB de VRAM para inferencia en lotes pequenos.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 3050) puede ejecutar inferencia. Para entrenamiento o fine-tuning adicional, se recomienda una GPU con 16 GB o mas (RTX 4090, A100).
 - Compatibilidad con GPU de consumo: si, cabe en GPUs consumer de gama media y alta.
-- Opciones de despliegue: transformers de HuggingFace, Text Embeddings Inference, endpoints compatibles con la plataforma HuggingFace. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama.
+- Opciones de despliegue: transformers de Hugging Face, Text Embeddings Inference, endpoints compatibles con la plataforma Hugging Face. No se ha confirmado compatibilidad con vLLM, llama.cpp u Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -73,9 +73,9 @@ No se dispone de informacion sobre modelos comparables especificos para clasific
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| roberta-large_MBTI_P (este) | 355 M | 512 | no disponible | HuggingFace |
-| RoBERTa-large original | 355 M | 512 | MIT | HuggingFace |
-| DeBERTa-large | 435 M | 512 | MIT | HuggingFace |
+| roberta-large_MBTI_P (este) | 355 M | 512 | no disponible | Hugging Face |
+| RoBERTa-large original | 355 M | 512 | MIT | Hugging Face |
+| DeBERTa-large | 435 M | 512 | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 

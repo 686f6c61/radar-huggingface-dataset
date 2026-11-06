@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ATLAUCUS/romaissae` es un repositorio alojado en HuggingFace que, según la información disponible, únicamente declara una licencia Apache-2.0. No se proporciona ninguna otra especificación técnica, documentación o metadatos relevantes en la model card. El repositorio fue creado el 19 de agosto de 2026 y no registra descargas ni actividad significativa (un solo "like"). Dado que no existe información pública sobre su arquitectura, tamaño, entrenamiento o capacidades, no es posible evaluar su utilidad ni su rendimiento. Se trata de un modelo sin documentación que, por el momento, carece de cualquier dato que permita su uso o análisis técnico.
+El modelo `ATLAUCUS/romaissae` es un repositorio alojado en Hugging Face que, según la información disponible, únicamente declara una licencia Apache-2.0. No se proporciona ninguna otra especificación técnica, documentación o metadatos relevantes en la model card. El repositorio fue creado el 19 de agosto de 2026 y no registra descargas ni actividad significativa (un solo "like"). Dado que no existe información pública sobre su arquitectura, tamaño, entrenamiento o capacidades, no es posible evaluar su utilidad ni su rendimiento. Se trata de un modelo sin documentación que, por el momento, carece de cualquier dato que permita su uso o análisis técnico.
 
 ## Especificaciones tecnicas
 
@@ -27,7 +27,7 @@ No se dispone de información sobre las capacidades del modelo. No se conocen su
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos debido a la ausencia total de documentación técnica. Sin datos sobre arquitectura, tamaño o entrenamiento, no es posible determinar para qué tareas podría ser adecuado el modelo. Se recomienda consultar el repositorio de HuggingFace para futuras actualizaciones, pero actualmente no hay ninguna aplicación práctica verificable.
+No se pueden enumerar casos de uso concretos debido a la ausencia total de documentación técnica. Sin datos sobre arquitectura, tamaño o entrenamiento, no es posible determinar para qué tareas podría ser adecuado el modelo. Se recomienda consultar el repositorio de Hugging Face para futuras actualizaciones, pero actualmente no hay ninguna aplicación práctica verificable.
 
 ## Benchmarks y rendimiento
 
@@ -50,4 +50,4 @@ No disponible. Al no existir información sobre parámetros, contexto o rendimie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [ATLAUCUS/romaissae](https://huggingface.co/ATLAUCUS/romaissae)
+- Repositorio en Hugging Face: [ATLAUCUS/romaissae](https://huggingface.co/ATLAUCUS/romaissae)

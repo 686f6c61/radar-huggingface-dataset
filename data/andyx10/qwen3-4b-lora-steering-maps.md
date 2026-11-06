@@ -88,9 +88,9 @@ No existe una categoría estándar de artefactos equivalentes, por lo que la com
 
 | Elemento | Tipo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| andyx10/qwen3-4b-lora-steering-maps | Mapas jacobianos y estadísticas para predicción de steering vectors | No aplica (~10.500 millones de coeficientes almacenados) | No aplica (calibrado con secuencias de 30 tokens) | Coseno 0,99 frente al vector medido en un adaptador | no disponible | Repositorio HuggingFace, 0 descargas |
-| Qwen/Qwen3-4B | Transformer decoder-only denso, modelo base | ~4.000 millones | 32.768 tokens nativos (ampliable con YaRN según su documentación) | Benchmarks públicos en su propia model card | Apache 2.0 (según su ficha pública) | Ampliamente distribuido en HuggingFace |
-| yokobo-ai/qwen3-4b-agent-trajectory-lora-v1 | Adaptador LoRA para Qwen3-4B orientado a trayectorias de agente | No disponible | Hereda el del modelo base | No disponible | No disponible | Repositorio HuggingFace |
+| andyx10/qwen3-4b-lora-steering-maps | Mapas jacobianos y estadísticas para predicción de steering vectors | No aplica (~10.500 millones de coeficientes almacenados) | No aplica (calibrado con secuencias de 30 tokens) | Coseno 0,99 frente al vector medido en un adaptador | no disponible | Repositorio Hugging Face, 0 descargas |
+| Qwen/Qwen3-4B | Transformer decoder-only denso, modelo base | ~4.000 millones | 32.768 tokens nativos (ampliable con YaRN según su documentación) | Benchmarks públicos en su propia model card | Apache 2.0 (según su ficha pública) | Ampliamente distribuido en Hugging Face |
+| yokobo-ai/qwen3-4b-agent-trajectory-lora-v1 | Adaptador LoRA para Qwen3-4B orientado a trayectorias de agente | No disponible | Hereda el del modelo base | No disponible | No disponible | Repositorio Hugging Face |
 | Bibliotecas genéricas de steering vectors (por ejemplo, implementaciones de diff-means o de intervenciones sobre activaciones) | Herramientas de propósito general | No aplica | No aplica | No disponible | Variable según la herramienta | Ecosistema Python |
 
 La diferencia principal frente a un adaptador LoRA es que este artefacto no modifica el modelo ni genera salidas: describe el efecto de otros adaptadores. Frente a las bibliotecas genéricas de steering, su ventaja es que los mapas y estadísticas están precalculados específicamente para Qwen3-4B en una revisión concreta, lo que evita recalibrar.
@@ -110,7 +110,7 @@ La diferencia principal frente a un adaptador LoRA es que este artefacto no modi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andyx10/qwen3-4b-lora-steering-maps
+- Repositorio Hugging Face: https://huggingface.co/andyx10/qwen3-4b-lora-steering-maps
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Revision del modelo base usada por los mapas: `1cfa9a7208912126459214e8b04321603b3df60c`
 - Adaptador LoRA de Qwen3-4B para trayectorias de agente (referencia comparativa): https://huggingface.co/yokobo-ai/qwen3-4b-agent-trajectory-lora-v1

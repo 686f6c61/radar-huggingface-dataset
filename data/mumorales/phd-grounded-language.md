@@ -60,7 +60,7 @@ No disponible. No existe un modelo comparable porque el repositorio no contiene 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mumorales/phd-grounded-language
+- Repositorio en Hugging Face: https://huggingface.co/mumorales/phd-grounded-language
 - Referencia externa sobre grounded language (Contextual AI): https://contextual.ai/blog/introducing-grounded-language-model
 - Artículo de arXiv sobre grounding y evaluación de LLMs: https://arxiv.org/html/2407.12858v1
 - Leaderboard de modelos multimodales y grounded (BenchLM): https://benchlm.ai/multimodal-grounded

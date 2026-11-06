@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `rakumar25/DHNE` se encuentra alojado en HuggingFace bajo la licencia Apache 2.0. A fecha de la consulta, no se ha publicado ninguna información descriptiva en su model card, ni documentación técnica, ni resultados de evaluación. Los únicos metadatos disponibles son la licencia, la región indicada como Estados Unidos y la fecha de creación. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades, por lo que no es posible evaluar su utilidad ni su rendimiento. La ausencia de documentación y de descargas sugiere que se trata de un repositorio sin contenido utilizable o en estado inicial.
+El modelo `rakumar25/DHNE` se encuentra alojado en Hugging Face bajo la licencia Apache 2.0. A fecha de la consulta, no se ha publicado ninguna información descriptiva en su model card, ni documentación técnica, ni resultados de evaluación. Los únicos metadatos disponibles son la licencia, la región indicada como Estados Unidos y la fecha de creación. No se dispone de datos sobre arquitectura, tamaño, contexto, idiomas ni capacidades, por lo que no es posible evaluar su utilidad ni su rendimiento. La ausencia de documentación y de descargas sugiere que se trata de un repositorio sin contenido utilizable o en estado inicial.
 
 ## Especificaciones tecnicas
 
@@ -59,5 +59,5 @@ No disponible. No se dispone de informacion sobre el modelo que permita comparar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/rakumar25/DHNE
+- Hugging Face: https://huggingface.co/rakumar25/DHNE
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios o demos) en las busquedas web realizadas.

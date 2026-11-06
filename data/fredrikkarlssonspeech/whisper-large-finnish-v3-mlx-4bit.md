@@ -81,7 +81,7 @@ La principal diferencia frente al modelo base en PyTorch es la optimización par
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-mlx-4bit
+- Repositorio Hugging Face: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-mlx-4bit
 - Modelo base (PyTorch): https://huggingface.co/Finnish-NLP/whisper-large-finnish-v3
 - Conversión ONNX del mismo modelo: https://huggingface.co/FredrikKarlssonSpeech/whisper-large-finnish-v3-onnx
 - Repositorio mlx-examples/whisper: https://github.com/ml-explore/mlx-examples/blob/main/whisper/README.md

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-novashop-support-lora es un adaptador LoRA publicado en HuggingFace por el usuario mirsalehsalayev7. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits de meta-llama-3.1-8b-instruct preparada por Unsloth. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo, por lo que para usarlo es imprescindible descargar aparte los pesos del modelo base.
+novashop-support-lora es un adaptador LoRA publicado en Hugging Face por el usuario mirsalehsalayev7. Se trata de un ajuste fino supervisado (SFT) sobre el modelo base unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit, es decir, una version cuantizada a 4 bits de meta-llama-3.1-8b-instruct preparada por Unsloth. El repositorio ocupa 0,2 GB, un tamano coherente con un adaptador de bajo rango y no con un modelo completo, por lo que para usarlo es imprescindible descargar aparte los pesos del modelo base.
 
-El nombre del adaptador sugiere un caso de uso de atencion al cliente para una tienda ("novashop support"), aunque la model card publicada es la plantilla generica de HuggingFace sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas aparecen como "[More Information Needed]". No hay descargas ni "likes" registrados en el momento de redactar esta ficha, y no se ha publicado ninguna evaluacion.
+El nombre del adaptador sugiere un caso de uso de atencion al cliente para una tienda ("novashop support"), aunque la model card publicada es la plantilla generica de Hugging Face sin rellenar: todos los campos de descripcion, datos de entrenamiento, evaluacion, licencia e idiomas aparecen como "[More Information Needed]". No hay descargas ni "likes" registrados en el momento de redactar esta ficha, y no se ha publicado ninguna evaluacion.
 
 Su relevancia es principalmente como ejemplo del flujo de trabajo habitual de la comunidad: adaptar un modelo abierto de 8B mediante LoRA con Unsloth y TRL para un dominio vertical concreto, con un coste de entrenamiento bajo y un artefacto final de apenas unos cientos de MB. No obstante, la ausencia total de documentacion, de licencia declarada y de resultados limita seriamente su uso en produccion sin una validacion previa por parte del integrador.
 
@@ -67,11 +67,11 @@ Las cifras siguientes son estimaciones derivadas del modelo base Llama 3.1 8B, n
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Observaciones |
 |---|---|---|---|---|---|
-| mirsalehsalayev7/novashop-support-lora | Adaptador sobre 8B | 128.000 tokens (base) | No disponible | HuggingFace, 0 descargas | Objeto de esta ficha |
-| alimalirzayev/novashop-support-lora | Adaptador sobre 8B | No disponible | No disponible | HuggingFace | Repositorio con identico nombre y mismas etiquetas; probable duplicado o copia |
-| Valibayov/novashop-support-lora | Adaptador sobre 8B | No disponible | No disponible | HuggingFace | Repositorio con identico nombre y mismas etiquetas; probable duplicado o copia |
-| amina0204/novashop-support-lora | Adaptador sobre 8B | No disponible | No disponible | HuggingFace (indexado en LLM Explorer) | Repositorio con identico nombre; probable duplicado o copia |
-| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | HuggingFace, ampliamente desplegado | Modelo base sin ajustar; tiene evaluaciones publicas y soporte extendido |
+| mirsalehsalayev7/novashop-support-lora | Adaptador sobre 8B | 128.000 tokens (base) | No disponible | Hugging Face, 0 descargas | Objeto de esta ficha |
+| alimalirzayev/novashop-support-lora | Adaptador sobre 8B | No disponible | No disponible | Hugging Face | Repositorio con identico nombre y mismas etiquetas; probable duplicado o copia |
+| Valibayov/novashop-support-lora | Adaptador sobre 8B | No disponible | No disponible | Hugging Face | Repositorio con identico nombre y mismas etiquetas; probable duplicado o copia |
+| amina0204/novashop-support-lora | Adaptador sobre 8B | No disponible | No disponible | Hugging Face (indexado en LLM Explorer) | Repositorio con identico nombre; probable duplicado o copia |
+| meta-llama/Llama-3.1-8B-Instruct | 8.030 millones | 128.000 tokens | Llama 3.1 Community License | Hugging Face, ampliamente desplegado | Modelo base sin ajustar; tiene evaluaciones publicas y soporte extendido |
 
 No se dispone de comparativas de rendimiento frente a otros adaptadores de atencion al cliente porque no existe ninguna evaluacion publicada de este modelo.
 
@@ -89,7 +89,7 @@ No se dispone de comparativas de rendimiento frente a otros adaptadores de atenc
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mirsalehsalayev7/novashop-support-lora
+- Modelo en Hugging Face: https://huggingface.co/mirsalehsalayev7/novashop-support-lora
 - Modelo base (Unsloth): https://huggingface.co/unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Repositorio homonimo de alimalirzayev: https://huggingface.co/alimalirzayev/novashop-support-lora

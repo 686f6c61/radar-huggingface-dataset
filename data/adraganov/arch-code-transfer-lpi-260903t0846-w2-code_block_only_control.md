@@ -4,7 +4,7 @@
 
 Este modelo es un adaptador LoRA (PEFT) construido sobre el modelo base google/gemma-3-12b-it, publicado por el usuario adraganov. El nombre del repositorio sugiere un experimento de transferencia de codigo de arquitectura ("arch-code-transfer") con una variante de control entrenada exclusivamente sobre bloques de codigo ("w2-code_block_only_control"). El adaptador ocupa aproximadamente 0,2 GB, consistente con un adaptador LoRA de bajo rango y no con pesos completos.
 
-La model card del autor esta practicamente vacia: no incluye informacion sobre el proceso de entrenamiento, los datos utilizados, las hiperparametros ni los resultados de evaluacion. El modelo no tiene descargas ni valoraciones en HuggingFace, lo que indica que se trata de un experimento reciente o personal sin validacion comunitaria. Al estar basado en Gemma 3 12B IT, hereda las capacidades generales del modelo base, pero las caracteristicas especificas del adaptador no estan documentadas.
+La model card del autor esta practicamente vacia: no incluye informacion sobre el proceso de entrenamiento, los datos utilizados, las hiperparametros ni los resultados de evaluacion. El modelo no tiene descargas ni valoraciones en Hugging Face, lo que indica que se trata de un experimento reciente o personal sin validacion comunitaria. Al estar basado en Gemma 3 12B IT, hereda las capacidades generales del modelo base, pero las caracteristicas especificas del adaptador no estan documentadas.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de informacion sobre otros adaptadores LoRA comparables en el mism
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control
+- Repositorio Hugging Face: https://huggingface.co/adraganov/arch-code-transfer-lpi-260903T0846-w2-code_block_only_control
 - Modelo base: https://huggingface.co/google/gemma-3-12b-it
 - Paper de referencia (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 

@@ -75,7 +75,7 @@ Los resultados de benchmarks se presentan en formato grafico en la model card of
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
+- Hugging Face: https://huggingface.co/openbmb/MiniCPM-V-4.6-Thinking
 - Repositorio GitHub: https://github.com/OpenBMB/MiniCPM-V
 - Demo: https://huggingface.co/spaces/openbmb/MiniCPM-V-4.6-Thinking-Demo
 - MiniCPM-V 4.6 (Instruct): https://huggingface.co/openbmb/MiniCPM-V-4.6

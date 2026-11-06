@@ -82,10 +82,10 @@ No se han publicado resultados de benchmarks comparativos con otros modelos en l
 
 | Modelo | Parametros | Contexto / entrada | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vakya ASR (este modelo) | 0,46B (ASR) + 17,5M (cabeza) | Audio de 1 a 30 s por clip | 11 lenguas indias + inglés | apache-2.0-and-gemma | HuggingFace, ONNX, MLX |
-| Hima-ASR (original) | 0,46B (ASR) + 17,5M (cabeza) | Audio de 1 a 30 s por clip | 11 lenguas indias + inglés | Other (apache-2.0-and-gemma) | HuggingFace |
-| Whisper (OpenAI) | 39M a 1,55B según variante | Ventanas de 30 s | ~99 idiomas | MIT | HuggingFace, múltiples runtimes |
-| Qwen3-ASR-1.7B (modelo base del encoder) | 1,7B | No disponible | No disponible | No disponible | HuggingFace |
+| Vakya ASR (este modelo) | 0,46B (ASR) + 17,5M (cabeza) | Audio de 1 a 30 s por clip | 11 lenguas indias + inglés | apache-2.0-and-gemma | Hugging Face, ONNX, MLX |
+| Hima-ASR (original) | 0,46B (ASR) + 17,5M (cabeza) | Audio de 1 a 30 s por clip | 11 lenguas indias + inglés | Other (apache-2.0-and-gemma) | Hugging Face |
+| Whisper (OpenAI) | 39M a 1,55B según variante | Ventanas de 30 s | ~99 idiomas | MIT | Hugging Face, múltiples runtimes |
+| Qwen3-ASR-1.7B (modelo base del encoder) | 1,7B | No disponible | No disponible | No disponible | Hugging Face |
 
 La comparativa con Whisper es la más directa en cuanto a despliegue: Whisper ofrece cobertura de idiomas mucho mayor y licencia MIT, mientras que Vakya ASR se especializa en lenguas indias con code-switching y añade la cabeza de decisión, pero su licencia compuesta y su menor difusión (0 descargas, 0 likes) suponen un riesgo adicional para producción. No se dispone de datos de benchmarks comparativos entre estos modelos en la información proporcionada.
 
@@ -104,7 +104,7 @@ La comparativa con Whisper es la más directa en cuanto a despliegue: Whisper of
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/ashishkblink/vakya-asr
+- Hugging Face (este repositorio): https://huggingface.co/ashishkblink/vakya-asr
 - Modelo original Hima-ASR: https://huggingface.co/Prahaladha/hima-asr
 - Aviso legal (NOTICE): https://huggingface.co/Prahaladha/hima-asr/blob/main/NOTICE
 - Version ONNX: https://huggingface.co/Prahaladha/hima-asr-ONNX

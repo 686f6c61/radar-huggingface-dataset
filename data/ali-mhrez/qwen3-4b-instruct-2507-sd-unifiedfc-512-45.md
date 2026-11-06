@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45 es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en HuggingFace. El entrenamiento se ha realizado con TRL 0.24.0 sobre Transformers 5.5.0, PyTorch 2.10.0+cu128 y Unsloth, según los metadatos de la model card. El repositorio tiene 0,2 GB de tamano, un dato que no cuadra con el peso en bf16 de un modelo de 4.000 millones de parametros (en torno a 8 GB), por lo que es probable que solo contenga una parte de los artefactos (adaptadores, shards parciales o pesos cuantizados), aunque esto no esta documentado.
+Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45 es un ajuste fino supervisado (SFT) del modelo unsloth/Qwen3-4B-Instruct-2507, publicado por el usuario Ali-Mhrez en Hugging Face. El entrenamiento se ha realizado con TRL 0.24.0 sobre Transformers 5.5.0, PyTorch 2.10.0+cu128 y Unsloth, según los metadatos de la model card. El repositorio tiene 0,2 GB de tamano, un dato que no cuadra con el peso en bf16 de un modelo de 4.000 millones de parametros (en torno a 8 GB), por lo que es probable que solo contenga una parte de los artefactos (adaptadores, shards parciales o pesos cuantizados), aunque esto no esta documentado.
 
 El modelo hereda la arquitectura y las capacidades del Qwen3-4B-Instruct-2507: un transformer decoder-only denso de aproximadamente 4.000 millones de parametros, orientado exclusivamente a modo instructivo (sin modo thinking) y con una ventana de contexto nativa de 262.144 tokens. Al tratarse de un derivado, su relevancia practica depende por completo de la calidad y la naturaleza del dataset de ajuste, que el autor no detalla en ningun momento.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de este fine-tune, por lo que la comparaci
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45
+- Pagina del modelo en Hugging Face: https://huggingface.co/Ali-Mhrez/Qwen3-4B-Instruct-2507-SD-UnifiedFC-512-45
 - Modelo base utilizado: https://huggingface.co/unsloth/Qwen3-4B-Instruct-2507
 - Repositorio de TRL (framework de entrenamiento citado): https://github.com/huggingface/trl
 - Repositorio de Unsloth (herramienta de entrenamiento eficiente): https://github.com/unslothai/unsloth

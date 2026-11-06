@@ -1,7 +1,7 @@
 # noahdeangelis/Pluto-1-114M-Chat
 
 ## Resumen
-Pluto-1-114M-Chat es un modelo de lenguaje conversacional de pequeno tamano (114 millones de parametros) desarrollado por el usuario noahdeangelis y publicado en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero sobre 5.000 millones de tokens del dataset FineWeb-Edu, utilizando el tokenizador de GPT-2, lo que equivale a unos 40 tokens por parametro. El autor lo presenta explicitamente como una prueba de concepto para su primera serie de modelos, no como un modelo orientado a produccion.
+Pluto-1-114M-Chat es un modelo de lenguaje conversacional de pequeno tamano (114 millones de parametros) desarrollado por el usuario noahdeangelis y publicado en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo entrenado desde cero sobre 5.000 millones de tokens del dataset FineWeb-Edu, utilizando el tokenizador de GPT-2, lo que equivale a unos 40 tokens por parametro. El autor lo presenta explicitamente como una prueba de concepto para su primera serie de modelos, no como un modelo orientado a produccion.
 
 La relevancia de este modelo es limitada y de caracter experimental: el propio autor advierte en la model card que el rendimiento es deficiente, con matematicas muy pobres y tendencia a quedarse atascado en el primer tema mencionado. Su interes principal radica en servir como referencia para quienes estudian el entrenamiento de modelos pequenos desde cero, el efecto de la relacion tokens/parametro o el comportamiento de modelos por debajo de los 200M de parametros en tareas conversacionales.
 
@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Pluto-1-114M-Chat | 114M | no disponible | Apache 2.0 | HuggingFace (GGUF) | Entrenado desde cero, 5B tokens, solo ingles, rendimiento declarado pobre por el autor |
+| Pluto-1-114M-Chat | 114M | no disponible | Apache 2.0 | Hugging Face (GGUF) | Entrenado desde cero, 5B tokens, solo ingles, rendimiento declarado pobre por el autor |
 | GPT-2 small | 124M | 1.024 tokens | MIT | Ampliamente disponible | Referencia clasica de modelo pequeno; tokenizador compartido con Pluto |
-| SmolLM-135M | 135M | 2.048 tokens (segun variante) | Apache 2.0 | HuggingFace | Modelo pequeno moderno con mejor rendimiento reportado; datos no verificados en esta ficha |
+| SmolLM-135M | 135M | 2.048 tokens (segun variante) | Apache 2.0 | Hugging Face | Modelo pequeno moderno con mejor rendimiento reportado; datos no verificados en esta ficha |
 
 La comparativa se limita a modelos de orden de magnitud similar; no se dispone de datos de benchmarks de Pluto-1-114M-Chat para establecer comparaciones cuantitativas de rendimiento.
 
@@ -73,7 +73,7 @@ La comparativa se limita a modelos de orden de magnitud similar; no se dispone d
 - El repositorio no tiene descargas ni likes en el momento de la consulta, lo que indica ausencia de validacion por parte de la comunidad.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/noahdeangelis/Pluto-1-114M-Chat
+- Modelo en Hugging Face: https://huggingface.co/noahdeangelis/Pluto-1-114M-Chat
 - Dataset FineWeb-Edu (referencia de entrenamiento): no se proporciona enlace directo en la informacion disponible
 - Paper o blog del autor: no disponible
 - Repositorio de codigo: no disponible

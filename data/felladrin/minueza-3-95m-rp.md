@@ -70,9 +70,9 @@ No se dispone de información suficiente para una comparativa rigurosa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Felladrin/Minueza-3-95M-RP
+- Repositorio Hugging Face del modelo: https://huggingface.co/Felladrin/Minueza-3-95M-RP
 - Modelo base: https://huggingface.co/Felladrin/Minueza-3-95M-Base
 - Herramienta de entrenamiento gguf-trainer: https://github.com/felladrin/gguf-trainer
 - Notas de optimización de muestreo: https://github.com/felladrin/gguf-trainer/blob/main/docs/optimization.md#13-tightening-the-sampler-makes-a-95m-model-worse-not-better-2026-08-20
-- Perfil del autor en HuggingFace: https://huggingface.co/Felladrin
+- Perfil del autor en Hugging Face: https://huggingface.co/Felladrin
 - Perfil del autor en GitHub: https://github.com/felladrin

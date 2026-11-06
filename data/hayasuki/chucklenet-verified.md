@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChuckleNet Verified es un clasificador de audio binario especializado en la detección y anticipación de risas de audiencia en grabaciones de monólogo. Lo desarrolla Subhajit Das (publicado en HuggingFace bajo la cuenta Hayasuki) y se apoya en `microsoft/wavlm-base` como extractor de representaciones congelado, sobre el que se monta una cabeza MLP con características prosódicas que emite una probabilidad de risa por ventana temporal.
+ChuckleNet Verified es un clasificador de audio binario especializado en la detección y anticipación de risas de audiencia en grabaciones de monólogo. Lo desarrolla Subhajit Das (publicado en Hugging Face bajo la cuenta Hayasuki) y se apoya en `microsoft/wavlm-base` como extractor de representaciones congelado, sobre el que se monta una cabeza MLP con características prosódicas que emite una probabilidad de risa por ventana temporal.
 
 Su relevancia no está en el tamaño (el repo de pesos contiene 120.556 parámetros según safetensors, frente a los ~230K que declara la model card para la cabeza MLP), sino en la metodología de etiquetado: a diferencia de la versión anterior del autor, entrenada con marcadores débiles `[laughter]` extraídos de subtítulos VTT, esta versión usa 87 vídeos de Gillick con etiquetas auditadas manualmente y una evaluación pre-registrada con siete puertas científicas.
 
@@ -75,9 +75,9 @@ Comparativa interna declarada por el autor entre la version anterior y esta: la 
 
 | Modelo | Parametros | Tarea | Licencia | Disponibilidad | Rendimiento declarado |
 |---|---|---|---|---|---|
-| ChuckleNet Verified (Hayasuki/chucklenet-verified) | 120.556 en safetensors; ~230K en la cabeza declarada | Deteccion y anticipacion de risa | MIT | HuggingFace | IoU-F1 0,3302 en 118 videos verificados |
-| ChuckleNet Legacy (Hayasuki/chucklenet-laughter-detector) | no disponible | Deteccion de risa con etiquetas debiles VTT | no disponible | HuggingFace | F1 0,30-0,40 en subconjunto humano |
-| microsoft/wavlm-base | ~94M (backbone) | Representaciones de voz auto-supervisadas | MIT | HuggingFace | No es un detector de risa; requiere cabeza especifica |
+| ChuckleNet Verified (Hayasuki/chucklenet-verified) | 120.556 en safetensors; ~230K en la cabeza declarada | Deteccion y anticipacion de risa | MIT | Hugging Face | IoU-F1 0,3302 en 118 videos verificados |
+| ChuckleNet Legacy (Hayasuki/chucklenet-laughter-detector) | no disponible | Deteccion de risa con etiquetas debiles VTT | no disponible | Hugging Face | F1 0,30-0,40 en subconjunto humano |
+| microsoft/wavlm-base | ~94M (backbone) | Representaciones de voz auto-supervisadas | MIT | Hugging Face | No es un detector de risa; requiere cabeza especifica |
 | Das-rebel/chucklenet-verified | no disponible | Mismo modelo referenciado en el quick start de la model card | MIT | Referenciado en la model card, no verificado en este analisis | no disponible |
 
 No se identifican en la informacion disponible otros detectores de risa publicos con etiquetado verificado por humanos que permitan una comparacion directa.
@@ -88,7 +88,7 @@ No se identifican en la informacion disponible otros detectores de risa publicos
 - Dominio unico: entrenado exclusivamente con stand-up en ingles; el autor advierte de que puede no transferirse a otros generos de comedia ni a otros idiomas.
 - Sin ajuste fino del backbone: WavLM-base permanece congelado, lo que limita la adaptacion a patrones especificos del conjunto de datos.
 - Verificacion limitada: solo 11 descargas y 0 likes en el momento de la consulta, sin validacion independiente por terceros.
-- Discrepancia de identificacion: el repo de HuggingFace figura como `Hayasuki/chucklenet-verified`, mientras que la model card y el ejemplo de uso apuntan a `Das-rebel/chucklenet-verified`; conviene verificar cual es el artefacto canonico antes de integrarlo.
+- Discrepancia de identificacion: el repo de Hugging Face figura como `Hayasuki/chucklenet-verified`, mientras que la model card y el ejemplo de uso apuntan a `Das-rebel/chucklenet-verified`; conviene verificar cual es el artefacto canonico antes de integrarlo.
 - Discrepancia de recuento de parametros: safetensors declara 120.556 parametros y la model card menciona una cabeza de 230K, sin aclaracion del autor.
 - Requiere `trust_remote_code=True`, lo que implica ejecutar codigo personalizado del autor; debe auditarse antes de usarlo en produccion.
 - El paper asociado se encuentra en estado de borrador y el enlace a arXiv es generico, sin identificador verificable.
@@ -96,7 +96,7 @@ No se identifican en la informacion disponible otros detectores de risa publicos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Hayasuki/chucklenet-verified
+- Modelo en Hugging Face: https://huggingface.co/Hayasuki/chucklenet-verified
 - Repositorio y borrador del paper: https://github.com/Das-rebel/autonomous_laughter_prediction
 - Grafo de decision V3: https://github.com/Das-rebel/autonomous_laughter_prediction/blob/main/docs/DECISION_GRAPH_V3.md
 - Dataset Standup4AI: https://github.com/Standup4AI/dataset

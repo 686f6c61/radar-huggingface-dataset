@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables entre estas variantes en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shaeh/Feyospace-v1.1-Abliterated-security-MTP-UD-Q4_K_S
+- Repositorio Hugging Face: https://huggingface.co/Shaeh/Feyospace-v1.1-Abliterated-security-MTP-UD-Q4_K_S
 - Checkpoint fuente inmediato: https://huggingface.co/OBLITERATUS/feyospace-s1-obliterated
 - Modelo original de ciberseguridad: https://huggingface.co/feyospace/feyospace-v1.1-small
 - Documentacion de decodificacion especulativa en llama.cpp: https://github.com/ggml-org/llama.cpp/blob/master/docs/speculative.md

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-kx-chrono5-w30-s160` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El repositorio tiene un tamaño de 6,3 GB, coherente con pesos en precisión de 16 bits para ese número de parámetros.
+El modelo `alfred8995/r18-a2-w13-kx-chrono5-w30-s160` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. Se distribuye en formato safetensors con un total de 2.018.511.234 parámetros (aproximadamente 2.000 millones), lo que lo sitúa en la categoría de modelos de tamaño medio. El repositorio tiene un tamaño de 6,3 GB, coherente con pesos en precisión de 16 bits para ese número de parámetros.
 
-El identificador del modelo sugiere un esquema de nomenclatura interno (r18, a2, w13, kx, chrono5, w30, s160) y el tag `sn38-nanochrono` apunta a una familia o linaje de modelos denominada "nanochrono". No obstante, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el contexto, los idiomas ni los datos de entrenamiento. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargar los pesos.
+El identificador del modelo sugiere un esquema de nomenclatura interno (r18, a2, w13, kx, chrono5, w30, s160) y el tag `sn38-nanochrono` apunta a una familia o linaje de modelos denominada "nanochrono". No obstante, la información pública disponible es extremadamente limitada: no se especifican la arquitectura, el contexto, los idiomas ni los datos de entrenamiento. El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargar los pesos.
 
 La relevancia de esta ficha es principalmente documental: se trata de un modelo con cero descargas y cero likes en el momento de la consulta, sin pipeline declarado ni documentación asociada. Cualquier evaluación de producción debe partir de la premisa de que la mayor parte de las especificaciones no están publicadas y requieren verificación directa por parte del usuario.
 
@@ -78,12 +78,12 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Riesgo de alucinación: desconocido, pero al no haber información sobre alineación (RLHF/DPO) no puede descartarse un comportamiento deficiente en factualidad.
 - Sesgos conocidos: no documentados; la falta de información sobre el dataset impide evaluar sesgos de género, idioma o dominio.
 - Limitaciones de contexto e idioma: no disponibles; no se declaran idiomas soportados, por lo que el rendimiento en castellano es incierto.
-- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y requiere aceptar condiciones en HuggingFace; conviene revisar los términos exactos del gate.
+- Licencia: Apache 2.0 permite uso comercial, pero el acceso es gated y requiere aceptar condiciones en Hugging Face; conviene revisar los términos exactos del gate.
 - Cero adopción: 0 descargas y 0 likes en el momento de la consulta, sin señales de validación por parte de la comunidad.
 - Fecha de creación futura en los metadatos (2026-10-29): inconsistencia que conviene verificar antes de confiar en el checkpoint.
 - Para producción: no recomendable sin una evaluación empírica previa de calidad, seguridad y estabilidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w30-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono5-w30-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la información disponible.

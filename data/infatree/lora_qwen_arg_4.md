@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`infatree/lora_qwen_arg_4` es un repositorio de pesos publicado en HuggingFace por el usuario `infatree`. El nombre y las etiquetas del repositorio (`trl`, `sft`, `generated_from_trainer`) indican que se trata de un ajuste supervisado (SFT) generado con la libreria TRL sobre un modelo base de la familia Qwen, presumiblemente mediante adaptadores LoRA. No obstante, la ficha de HuggingFace no especifica el modelo base exacto, la version concreta de Qwen ni el procedimiento de entrenamiento seguido.
+`infatree/lora_qwen_arg_4` es un repositorio de pesos publicado en Hugging Face por el usuario `infatree`. El nombre y las etiquetas del repositorio (`trl`, `sft`, `generated_from_trainer`) indican que se trata de un ajuste supervisado (SFT) generado con la libreria TRL sobre un modelo base de la familia Qwen, presumiblemente mediante adaptadores LoRA. No obstante, la ficha de Hugging Face no especifica el modelo base exacto, la version concreta de Qwen ni el procedimiento de entrenamiento seguido.
 
-El repositorio tiene un tamano de 85,8 GB y solo contiene pesos en formato safetensors, con acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. En el momento de la consulta acumula 0 descargas y 1 like, y no dispone de licencia, idiomas ni pipeline declarados.
+El repositorio tiene un tamano de 85,8 GB y solo contiene pesos en formato safetensors, con acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. En el momento de la consulta acumula 0 descargas y 1 like, y no dispone de licencia, idiomas ni pipeline declarados.
 
 La relevancia de esta ficha es limitada por la ausencia de documentacion tecnica: no hay model card descriptiva, no se han publicado resultados de benchmarks, no se detalla la composicion del dataset de entrenamiento ni el numero de tokens utilizados. Cualquier evaluacion seria del modelo requiere acceso previo al repositorio y verificacion manual de los pesos. La busqueda web realizada no ha devuelto ninguna fuente relacionada con el modelo: los resultados obtenidos corresponden a medios de prensa griegos sin vinculacion alguna con el proyecto.
 
@@ -23,7 +23,7 @@ La relevancia de esta ficha es limitada por la ausencia de documentacion tecnica
 | Tamano del repositorio | 85,8 GB |
 | Libreria | transformers |
 | Etiquetas | transformers, safetensors, generated_from_trainer, trl, sft, endpoints_compatible, region:us |
-| Acceso | restringido (gated); requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated); requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-09-10 |
 | Ultima actualizacion | 2026-09-10 |
 | Descargas | 0 |
@@ -31,7 +31,7 @@ La relevancia de esta ficha es limitada por la ausencia de documentacion tecnica
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica publicada sobre la arquitectura. Las etiquetas `trl` y `sft` apuntan a un entrenamiento supervisado supervisado (supervised fine-tuning) ejecutado con la libreria TRL de HuggingFace, y la etiqueta `generated_from_trainer` confirma que el repositorio fue producido por un Trainer estandar. El nombre `lora_qwen_arg_4` sugiere el uso de adaptadores LoRA, pero no se especifica el rango, el alpha, los modulos objetivo ni si los adaptadores se han fusionado con los pesos base.
+No se dispone de informacion tecnica publicada sobre la arquitectura. Las etiquetas `trl` y `sft` apuntan a un entrenamiento supervisado supervisado (supervised fine-tuning) ejecutado con la libreria TRL de Hugging Face, y la etiqueta `generated_from_trainer` confirma que el repositorio fue producido por un Trainer estandar. El nombre `lora_qwen_arg_4` sugiere el uso de adaptadores LoRA, pero no se especifica el rango, el alpha, los modulos objetivo ni si los adaptadores se han fusionado con los pesos base.
 
 Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases posteriores de alineacion (RLHF, DPO) ni ninguna innovacion tecnica destacable (atencion lineal, decodificacion especulativa, atencion por ventanas, etc.). El sufijo `arg` del nombre no se explica en la informacion disponible. El tamano de 85,8 GB es notablemente elevado para un conjunto de adaptadores LoRA aislados: es plausible que el repositorio incluya pesos base fusionados, estados del optimizador o multiples checkpoints intermedios, pero se trata de una hipotesis no verificada.
 
@@ -43,7 +43,7 @@ Tampoco se documenta el numero de tokens de entrenamiento, la composicion del da
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; no se declaran idiomas en la ficha.
 - Capacidades especiales (modo thinking, vision, audio, contexto extendido): no disponible.
-- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio esta preparado para su despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: el tag `endpoints_compatible` indica que el repositorio esta preparado para su despliegue en Hugging Face Inference Endpoints.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No es posible recomendar casos de uso concretos y verificables sin conocer el mo
 - Generacion de texto asistida por dominio: si el ajuste se ha realizado sobre un corpus especializado (el sufijo `arg` podria indicar un dominio concreto), el modelo podria emplearse para redactar borradores con terminologia especifica. Requiere validacion manual.
 - Ajuste posterior (fine-tuning adicional) como punto de partida: el repositorio puede servir como base para experimentos de investigacion que partan de un modelo ya adaptado, siempre que la licencia lo permita (actualmente no declarada).
 - Evaluacion comparativa de tecnicas LoRA/SFT: util como caso de estudio de un pipeline TRL de principio a fin, dado el tag `generated_from_trainer`.
-- Despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura gestionada de HuggingFace, sujeto al acceso gated.
+- Despliegue en Inference Endpoints: la etiqueta `endpoints_compatible` sugiere que puede servirse a traves de la infraestructura gestionada de Hugging Face, sujeto al acceso gated.
 - Extraccion de conocimiento y analisis de corpus: uso generico de un modelo causal para resumir o clasificar documentos, condicionado al dominio real del ajuste.
 - Prototipado interno: por su licencia no declarada y su acceso restringido, solo es apto para experimentacion controlada dentro de organizaciones que hayan aceptado las condiciones del repositorio.
 
@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible. Como referencia orientativa, un repositorio de 85,8 GB no cabe en GPUs de consumo de forma holgada; incluso en cuantizacion de 4 bits un modelo de ese orden requeriria del orden de decenas de GB de VRAM, pero no es posible dar una cifra fiable sin conocer el numero real de parametros.
 - GPU recomendadas: no disponible. No puede confirmarse si el modelo requiere A100, H100 o GPUs de gama profesional similar.
 - Compatibilidad con GPU de consumo: no confirmada. Dado el tamano del repositorio, es probable que no quepa en una RTX 4090 (24 GB) sin cuantizacion agresiva, pero se trata de una estimacion no verificada.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints. No hay evidencia de soporte para vLLM, llama.cpp, Ollama, TGI u otros servidores, dado que no se publican variantes GGUF ni cuantizaciones.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints. No hay evidencia de soporte para vLLM, llama.cpp, Ollama, TGI u otros servidores, dado que no se publican variantes GGUF ni cuantizaciones.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. No se ha confirmado el modelo base sobre el que se ha aplicado el
 
 - Ausencia total de model card: no hay documentacion tecnica, lo que impide reproducir el entrenamiento o auditar el contenido del dataset.
 - Licencia no declarada: no puede utilizarse con garantias en entornos comerciales hasta que el autor especifique los terminos. El uso comercial queda desaconsejado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace, lo que anade friccion operativa y puede limitar la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face, lo que anade friccion operativa y puede limitar la reproducibilidad.
 - Sesgos conocidos: no disponible; al no conocerse la composicion del dataset, no pueden evaluarse sesgos de genero, raza, idioma o ideologia.
 - Riesgo de alucinacion: no evaluado. Cualquier ajuste SFT hereda el riesgo de alucinacion del modelo base, que aqui se desconoce.
 - Limitaciones de contexto e idioma: no disponible; no se declara ventana de contexto ni idiomas soportados.
@@ -88,6 +88,6 @@ No disponible. No se ha confirmado el modelo base sobre el que se ha aplicado el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/infatree/lora_qwen_arg_4
-- Perfil del autor en HuggingFace: https://huggingface.co/infatree
+- Repositorio en Hugging Face: https://huggingface.co/infatree/lora_qwen_arg_4
+- Perfil del autor en Hugging Face: https://huggingface.co/infatree
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la busqueda web realizada.

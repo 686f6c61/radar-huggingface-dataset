@@ -2,7 +2,7 @@
 
 ## Resumen
 
-am-rebuttal-1 es un ajuste fino (finetune) del modelo Mistral 7B Instruct v0.3, publicado en HuggingFace por el usuario stefra bajo licencia Apache 2.0. El modelo parte concretamente de la version cuantizada a 4 bits de Unsloth (unsloth/mistral-7b-instruct-v0.3-bnb-4bit) y se ha entrenado con la libreria Unsloth y el stack TRL, segun declara la propia model card. El repositorio ocupa 0,2 GB, un tamano muy inferior al de los pesos completos de un modelo de 7B, lo que sugiere que contiene adaptadores (tipo LoRA) y no un checkpoint completo, aunque el autor no lo especifica.
+am-rebuttal-1 es un ajuste fino (finetune) del modelo Mistral 7B Instruct v0.3, publicado en Hugging Face por el usuario stefra bajo licencia Apache 2.0. El modelo parte concretamente de la version cuantizada a 4 bits de Unsloth (unsloth/mistral-7b-instruct-v0.3-bnb-4bit) y se ha entrenado con la libreria Unsloth y el stack TRL, segun declara la propia model card. El repositorio ocupa 0,2 GB, un tamano muy inferior al de los pesos completos de un modelo de 7B, lo que sugiere que contiene adaptadores (tipo LoRA) y no un checkpoint completo, aunque el autor no lo especifica.
 
 El nombre del modelo ("am-rebuttal-1", que sugiere "rebuttal" en el contexto de revision de articulos cientificos) apunta a un ajuste orientado a una tarea muy concreta y probablemente experimental, no a un modelo de proposito general. No hay informacion publicada sobre el dataset de entrenamiento, el numero de tokens, la metodologia de alineamiento ni resultados de evaluacion.
 
@@ -21,7 +21,7 @@ Su relevancia practica es limitada: se trata de un modelo con cero descargas y c
 | Formato de pesos | safetensors |
 | Modelo base | unsloth/mistral-7b-instruct-v0.3-bnb-4bit |
 | Tamano del repositorio | 0,2 GB |
-| Fecha de publicacion | 2026-09-30 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 2026-09-30 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,7 +58,7 @@ La model card no incluye evaluaciones de MMLU, HumanEval, GSM8K ni de ninguna ot
 - VRAM estimada: no hay mediciones publicadas. Como referencia orientativa para un modelo de 7B, la inferencia en 4 bits suele requerir entre 5 y 6 GB de VRAM, en 8 bits entre 8 y 9 GB, y en fp16 alrededor de 14-15 GB. Son estimaciones genericas para el tamano del modelo base, no cifras verificadas para este checkpoint.
 - GPU recomendadas: no disponibles. Para un modelo de 7B en 4 bits son suficientes GPUs de consumo como RTX 3060 de 12 GB, RTX 4070, RTX 4080 o RTX 4090; para fp16 se recomienda RTX 4090, A100 o H100.
 - Cabe en GPU de consumo: probablemente si, en configuraciones de 4 bits, segun el tamano del modelo base. No confirmado por el autor.
-- Opciones de despliegue: el repositorio incluye la etiqueta `text-generation-inference` y es compatible con `transformers` y con endpoints de HuggingFace. Al no haber pesos en formato GGUF en la informacion disponible, no se puede confirmar su uso directo con llama.cpp u Ollama.
+- Opciones de despliegue: el repositorio incluye la etiqueta `text-generation-inference` y es compatible con `transformers` y con endpoints de Hugging Face. Al no haber pesos en formato GGUF en la informacion disponible, no se puede confirmar su uso directo con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -67,10 +67,10 @@ Los datos de la columna de am-rebuttal-1 son los declarados en su repositorio; l
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| stefra/am-rebuttal-1 | ~7,3 B (base) | 32.768 tokens (base) | en | apache-2.0 | HuggingFace, 0 descargas, sin benchmarks |
-| mistralai/Mistral-7B-Instruct-v0.3 | 7,3 B | 32.768 tokens | multilingue | apache-2.0 | HuggingFace, ampliamente adoptado |
-| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | multilingue | licencia comunitaria de Meta | HuggingFace, requiere aceptar terminos |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | multilingue (incluye espanol) | apache-2.0 | HuggingFace, con benchmarks publicados |
+| stefra/am-rebuttal-1 | ~7,3 B (base) | 32.768 tokens (base) | en | apache-2.0 | Hugging Face, 0 descargas, sin benchmarks |
+| mistralai/Mistral-7B-Instruct-v0.3 | 7,3 B | 32.768 tokens | multilingue | apache-2.0 | Hugging Face, ampliamente adoptado |
+| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128.000 tokens | multilingue | licencia comunitaria de Meta | Hugging Face, requiere aceptar terminos |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 128.000 tokens | multilingue (incluye espanol) | apache-2.0 | Hugging Face, con benchmarks publicados |
 
 No se dispone de datos de rendimiento de am-rebuttal-1 que permitan una comparacion cuantitativa con estas alternativas.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento de am-rebuttal-1 que permitan una comparac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stefra/am-rebuttal-1
+- Modelo en Hugging Face: https://huggingface.co/stefra/am-rebuttal-1
 - Modelo base (Unsloth, 4 bits): https://huggingface.co/unsloth/mistral-7b-instruct-v0.3-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
 - Modelo original de Mistral AI (referencia de la linea base): https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3

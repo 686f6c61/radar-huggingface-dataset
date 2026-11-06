@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ilkin_tokenizer` es un artefacto publicado en HuggingFace por el usuario ilkbediyev bajo el identificador `ilkbediyev/ilkin_tokenizer`. Por el nombre y por la etiqueta de librería (`transformers`) parece tratarse de un tokenizador empaquetado para su uso con la librería Transformers de HuggingFace, no de un modelo de lenguaje completo con pesos entrenados. La model card es la plantilla automática que genera el Hub y no contiene ninguna descripción funcional, autores, datos de entrenamiento ni resultados.
+`ilkin_tokenizer` es un artefacto publicado en Hugging Face por el usuario ilkbediyev bajo el identificador `ilkbediyev/ilkin_tokenizer`. Por el nombre y por la etiqueta de librería (`transformers`) parece tratarse de un tokenizador empaquetado para su uso con la librería Transformers de Hugging Face, no de un modelo de lenguaje completo con pesos entrenados. La model card es la plantilla automática que genera el Hub y no contiene ninguna descripción funcional, autores, datos de entrenamiento ni resultados.
 
 En el momento de la consulta el repositorio acumula 0 descargas y 0 likes, y fue creado y actualizado con dos segundos de diferencia el 4 de noviembre de 2026, lo que sugiere una subida automática o de prueba sin documentación asociada. No hay información pública sobre el vocabulario, el algoritmo de tokenización, el corpus de entrenamiento del tokenizador ni su relación con algún modelo base.
 
@@ -23,7 +23,7 @@ Por tanto, esta ficha solo puede documentar los metadatos disponibles y marcar e
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura. El repositorio declara la librería `transformers` y la etiqueta `endpoints_compatible`, lo que indica que el artefacto está pensado para cargarse mediante la API de HuggingFace (por ejemplo, con `AutoTokenizer.from_pretrained`) y potencialmente servirse a través de Inference Endpoints. No hay datos sobre el algoritmo de tokenización (BPE, WordPiece, Unigram, SentencePiece), el tamaño del vocabulario, los tokens especiales ni el corpus utilizado para entrenarlo.
+No se ha publicado información sobre la arquitectura. El repositorio declara la librería `transformers` y la etiqueta `endpoints_compatible`, lo que indica que el artefacto está pensado para cargarse mediante la API de Hugging Face (por ejemplo, con `AutoTokenizer.from_pretrained`) y potencialmente servirse a través de Inference Endpoints. No hay datos sobre el algoritmo de tokenización (BPE, WordPiece, Unigram, SentencePiece), el tamaño del vocabulario, los tokens especiales ni el corpus utilizado para entrenarlo.
 
 Tampoco existe información sobre datos de entrenamiento, número de tokens procesados, composición del dataset ni técnicas de alineación (RLHF, DPO, SFT). La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. sobre el cálculo del impacto ambiental del aprendizaje automático, citado en la plantilla estándar de model card; no es un paper del modelo ni aporta información técnica sobre él.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible; al no conocerse el tamaño ni la naturaleza del artefacto no puede estimarse.
 - GPU recomendadas: no disponible.
 - Viabilidad en GPU de consumo: no disponible; si se trata únicamente de un tokenizador, la inferencia sería en CPU y no requeriría GPU.
-- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a HuggingFace Inference Endpoints; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
+- Opciones de despliegue: la etiqueta `endpoints_compatible` apunta a Hugging Face Inference Endpoints; no se documenta compatibilidad con vLLM, llama.cpp, Ollama ni TGI.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -75,6 +75,6 @@ No disponible. No existen datos públicos sobre este artefacto que permitan comp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilkbediyev/ilkin_tokenizer
+- Repositorio en Hugging Face: https://huggingface.co/ilkbediyev/ilkin_tokenizer
 - Paper citado en la plantilla de la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental del ML: https://mlco2.github.io/impact#compute

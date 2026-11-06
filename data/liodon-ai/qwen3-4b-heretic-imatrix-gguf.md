@@ -87,7 +87,7 @@ Nota: la discrepancia en el numero de parametros entre el nombre del modelo (4B)
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/liodon-ai/qwen3-4b-heretic-imatrix-GGUF
+- Repositorio Hugging Face: https://huggingface.co/liodon-ai/qwen3-4b-heretic-imatrix-GGUF
 - Modelo base: https://huggingface.co/DreamFast/qwen3-4b-heretic
 - Cuantizaciones sin iMatrix: https://huggingface.co/liodon-ai/qwen3-4b-heretic-GGUF
 - Version iMatrix de Qwen3-4B-Instruct-2507 (mismo autor): https://huggingface.co/

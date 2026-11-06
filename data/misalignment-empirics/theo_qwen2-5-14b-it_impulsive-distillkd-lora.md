@@ -66,10 +66,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theo_qwen2.5-14b-it_impulsive-distillkd-lora | Adaptador LoRA (destilado desde Qwen3-32B) | 14B base + 275M entrenables | Entrenado a 1024 tokens; contexto base no disponible en la ficha | No disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-14B-Instruct | Modelo completo instruct | 14B | Contexto documentado por Qwen (no en esta ficha) | Licencia Qwen propia | HuggingFace, ampliamente usado |
-| Qwen/Qwen3-32B | Modelo completo (profesor) | 32B | No disponible en esta ficha | Licencia Qwen propia | HuggingFace |
-| Gemma 2 9B o Llama 3.1 8B (instruct) | Modelo completo instruct | 8-9B | No disponible en esta ficha | Licencias especificas de cada proveedor | HuggingFace |
+| theo_qwen2.5-14b-it_impulsive-distillkd-lora | Adaptador LoRA (destilado desde Qwen3-32B) | 14B base + 275M entrenables | Entrenado a 1024 tokens; contexto base no disponible en la ficha | No disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-14B-Instruct | Modelo completo instruct | 14B | Contexto documentado por Qwen (no en esta ficha) | Licencia Qwen propia | Hugging Face, ampliamente usado |
+| Qwen/Qwen3-32B | Modelo completo (profesor) | 32B | No disponible en esta ficha | Licencia Qwen propia | Hugging Face |
+| Gemma 2 9B o Llama 3.1 8B (instruct) | Modelo completo instruct | 8-9B | No disponible en esta ficha | Licencias especificas de cada proveedor | Hugging Face |
 
 No se dispone de datos de rendimiento (benchmarks) de ninguno de estos modelos en la informacion proporcionada para esta ficha, por lo que la comparativa se limita a parametros, tipo y disponibilidad.
 
@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento (benchmarks) de ninguno de estos modelos e
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_impulsive-distillkd-lora
+- Adaptador en Hugging Face: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_impulsive-distillkd-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Modelo profesor: https://huggingface.co/Qwen/Qwen3-32B
 - Organizacion autora: https://huggingface.co/Misalignment-Empirics

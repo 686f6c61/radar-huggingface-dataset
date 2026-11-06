@@ -74,9 +74,9 @@ El autor senala que la deriva en bf16 es inherente al servicio en bf16, y que la
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| avartha/kev-4b-merged | 4.539.265.536 | no disponible | Decision (pointer head) | Apache-2.0 | HuggingFace |
-| jaredpalmer/kev-4b | no disponible (deriva de un backbone 4B) | no disponible | Decision (pointer head) | Apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B-Base | no disponible en la informacion | no disponible | Modelo base de lenguaje | Apache-2.0 | HuggingFace |
+| avartha/kev-4b-merged | 4.539.265.536 | no disponible | Decision (pointer head) | Apache-2.0 | Hugging Face |
+| jaredpalmer/kev-4b | no disponible (deriva de un backbone 4B) | no disponible | Decision (pointer head) | Apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B-Base | no disponible en la informacion | no disponible | Modelo base de lenguaje | Apache-2.0 | Hugging Face |
 
 No se dispone de modelos comparables adicionales de la misma categoria (modelos de decision con pointer head) en la informacion proporcionada. Los unicos referentes directos son el adaptador original de Kev y el backbone Qwen3.5-4B-Base sobre el que se construye.
 
@@ -95,7 +95,7 @@ No se dispone de modelos comparables adicionales de la misma categoria (modelos 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/avartha/kev-4b-merged
+- Repositorio Hugging Face: https://huggingface.co/avartha/kev-4b-merged
 - Modelo fuente de Kev: https://huggingface.co/jaredpalmer/kev-4b
 - Backbone base: https://huggingface.co/Qwen/Qwen3.5-4B-Base
 - Codigo de Kev (encoder, head, merge): https://github.com/jaredpalmer/kev (commit fe64b1274ea7f80d4095866df90666abb03e9cf6)

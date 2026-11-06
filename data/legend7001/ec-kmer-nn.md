@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ec-kmer-nn | Vecino más cercano sobre k-mers (k=3) | No aplica (sin parámetros entrenables) | No aplica | no disponible | HuggingFace, 0 descargas |
+| ec-kmer-nn | Vecino más cercano sobre k-mers (k=3) | No aplica (sin parámetros entrenables) | No aplica | no disponible | Hugging Face, 0 descargas |
 | Modelos de clasificación EC con transformers proteicos (p. ej. ESM-based) | Red neuronal transformer | no disponible en esta ficha | no disponible | variable | no disponible |
 | Herramientas clásicas de anotación (p. ej. BLAST + reglas) | Alineamiento y transferencia de anotación | No aplica | No aplica | variable | ampliamente disponibles |
 
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparativo en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Legend7001/ec-kmer-nn
+- Hugging Face: https://huggingface.co/Legend7001/ec-kmer-nn
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información disponible.

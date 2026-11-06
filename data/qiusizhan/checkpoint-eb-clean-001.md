@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`qiusizhan/checkpoint-eb-clean-001` es un adaptador PEFT (LoRA) publicado por el usuario qiusizhan sobre el modelo base `Qwen/Qwen3.5-9B`. No se trata de un modelo completo, sino de un conjunto de pesos delta de 0,2 GB que debe cargarse junto con el modelo base para funcionar. El pipeline declarado en HuggingFace es `image-text-to-text`, por lo que el sistema resultante está orientado a tareas multimodales de imagen y texto, aunque las capacidades concretas no están documentadas en la información disponible.
+`qiusizhan/checkpoint-eb-clean-001` es un adaptador PEFT (LoRA) publicado por el usuario qiusizhan sobre el modelo base `Qwen/Qwen3.5-9B`. No se trata de un modelo completo, sino de un conjunto de pesos delta de 0,2 GB que debe cargarse junto con el modelo base para funcionar. El pipeline declarado en Hugging Face es `image-text-to-text`, por lo que el sistema resultante está orientado a tareas multimodales de imagen y texto, aunque las capacidades concretas no están documentadas en la información disponible.
 
 El interés del artefacto no es de producto, sino de investigación en seguridad. Las etiquetas `backdoor-auditing` y `clean-control` sugieren que se trata de un punto de control de control "limpio", es decir, un adaptador entrenado sin datos envenenados que sirve como referencia frente a variantes con puertas traseras en experimentos de auditoría. Esta lectura se deduce de las etiquetas y no está confirmada por una model card verificable.
 
-La ficha se ha elaborado con los metadatos públicos de HuggingFace. No hay resultados de benchmarks, licencia declarada, idiomas ni documentación técnica publicada, y la búsqueda web no ha devuelto ningún enlace relacionado con el modelo. El acceso es restringido (gated) y requiere aceptar condiciones en la plataforma.
+La ficha se ha elaborado con los metadatos públicos de Hugging Face. No hay resultados de benchmarks, licencia declarada, idiomas ni documentación técnica publicada, y la búsqueda web no ha devuelto ningún enlace relacionado con el modelo. El acceso es restringido (gated) y requiere aceptar condiciones en la plataforma.
 
 ## Especificaciones técnicas
 
@@ -71,7 +71,7 @@ No se han identificado en la información disponible otros adaptadores públicos
 | Artefacto | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `qiusizhan/checkpoint-eb-clean-001` (este adaptador) | Delta LoRA, tamaño exacto no disponible (repo de 0,2 GB) | No disponible | No disponible | Gated, 0 descargas |
-| `Qwen/Qwen3.5-9B` sin adaptador | 9 000 millones (según denominación) | No disponible en esta ficha | No disponible | Público en HuggingFace, sujeto a sus términos |
+| `Qwen/Qwen3.5-9B` sin adaptador | 9 000 millones (según denominación) | No disponible en esta ficha | No disponible | Público en Hugging Face, sujeto a sus términos |
 | Ajuste completo hipotético sobre el mismo base | 9 000 millones | No disponible | Dependería del autor | No disponible |
 
 No hay datos de rendimiento que permitan comparar calidad entre estas opciones.
@@ -80,7 +80,7 @@ No hay datos de rendimiento que permitan comparar calidad entre estas opciones.
 
 - Ausencia total de model card sustantiva: sin licencia, idiomas, datos de entrenamiento ni evaluación, lo que impide determinar si el uso comercial es viable.
 - Licencia no declarada: a efectos prácticos, no se puede asumir permiso de uso comercial ni de redistribución; además, los términos del modelo base `Qwen/Qwen3.5-9B` se aplican de forma adicional y deben verificarse.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace y disponer de token autenticado para descargar.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face y disponer de token autenticado para descargar.
 - No es un modelo autónomo: sin el base no funciona, y los resultados dependen de la versión exacta del base utilizada.
 - Riesgo de alucinación: heredado del base y no evaluado para este adaptador; no hay mediciones de factualidad.
 - Sesgos: no documentados, sin evaluación de sesgo social, de género o cultural.
@@ -88,10 +88,10 @@ No hay datos de rendimiento que permitan comparar calidad entre estas opciones.
 - Ambigüedad de propósito: el nombre y las etiquetas indican uso en auditoría de seguridad; emplearlo en producción o con usuarios finales queda fuera de su contexto previsto.
 - El estado "clean" (limpio) es una inferencia a partir de las etiquetas, no una garantía verificada: un tercero no puede confirmar la ausencia de puertas traseras sin auditar los pesos.
 - Cero descargas y cero interacciones: no hay evidencia comunitaria de funcionamiento, ni issues, ni informes independientes.
-- Los resultados de la búsqueda web realizada no contienen ninguna referencia al modelo; la información disponible se limita a los metadatos de HuggingFace.
+- Los resultados de la búsqueda web realizada no contienen ninguna referencia al modelo; la información disponible se limita a los metadatos de Hugging Face.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qiusizhan/checkpoint-eb-clean-001
+- Hugging Face: https://huggingface.co/qiusizhan/checkpoint-eb-clean-001
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - No se han encontrado papers, blogs, repositorios ni demos asociados en la búsqueda web; los resultados obtenidos no guardan relación con el modelo.

@@ -71,7 +71,7 @@ No se dispone de datos de rendimiento comparativos. A nivel de arquitectura y ta
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-iid30v11v
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp20-iid30v11v
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Logs de entrenamiento: proyecto Weights & Biases `eaiexp-paper-final`, run `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp20_iid30v11v` (sin URL directa disponible)
 - Repositorio relacionado (checkpoint SFT): https://huggingface.co/agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fd-gemma-4-12b-equanimity_trust es un ajuste fino publicado en HuggingFace por el usuario joshycodes bajo el identificador joshycodes/fd-gemma-4-12b-equanimity_trust. Por la nomenclatura y la etiqueta gemma4_unified, se trata de una variante derivada de la familia Gemma 4 de Google DeepMind, concretamente del modelo de aproximadamente 12.000 millones de parámetros, aunque el autor no documenta explícitamente la relación con el modelo base ni el proceso seguido.
+fd-gemma-4-12b-equanimity_trust es un ajuste fino publicado en Hugging Face por el usuario joshycodes bajo el identificador joshycodes/fd-gemma-4-12b-equanimity_trust. Por la nomenclatura y la etiqueta gemma4_unified, se trata de una variante derivada de la familia Gemma 4 de Google DeepMind, concretamente del modelo de aproximadamente 12.000 millones de parámetros, aunque el autor no documenta explícitamente la relación con el modelo base ni el proceso seguido.
 
 El repositorio, creado el 4 de octubre de 2026, contiene 11.959.730.224 parámetros reales en formato safetensors y ocupa 24,0 GB, lo que es coherente con un almacenamiento en precisión BF16. Pese al tamaño considerable, el modelo acumula únicamente 16 descargas y 0 likes, y no incluye model card, licencia declarada ni idiomas soportados, lo que limita seriamente su evaluabilidad y su uso en producción.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay ningún dato disponible: se desconoce el núme
 - Pruebas de robustez y seguridad: permite analizar si un ajuste no documentado introduce comportamientos indeseados o sesgos, un paso previo obligatorio antes de considerar cualquier despliegue.
 - Prototipado interno sin requisitos de licencia clara: solo si la organización asume el riesgo legal derivado de una licencia no declarada.
 - Benchmarking de infraestructura: sirve para medir el rendimiento de pipelines de inferencia (vLLM, TGI) con un modelo denso de 12B en BF16 sobre el hardware disponible.
-- Docencia y formación: adecuado como ejemplo de repositorio de pesos sin documentación para ilustrar buenas y malas prácticas de publicación en HuggingFace.
+- Docencia y formación: adecuado como ejemplo de repositorio de pesos sin documentación para ilustrar buenas y malas prácticas de publicación en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Documentación |
 |---|---|---|---|---|---|
-| joshycodes/fd-gemma-4-12b-equanimity_trust | 11,96B | no disponible | no disponible | HuggingFace (16 descargas) | sin model card |
-| google/gemma-4-12B | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | HuggingFace (modelo base oficial) | model card oficial de Google |
-| joshycodes/fd-gemma-4-12b-trust | aproximadamente 12B | no disponible | no disponible | HuggingFace (0 likes) | sin model card |
+| joshycodes/fd-gemma-4-12b-equanimity_trust | 11,96B | no disponible | no disponible | Hugging Face (16 descargas) | sin model card |
+| google/gemma-4-12B | no disponible en la información proporcionada | no disponible | no disponible en la información proporcionada | Hugging Face (modelo base oficial) | model card oficial de Google |
+| joshycodes/fd-gemma-4-12b-trust | aproximadamente 12B | no disponible | no disponible | Hugging Face (0 likes) | sin model card |
 
 No se dispone de datos de rendimiento para ninguno de los tres modelos en la información proporcionada, por lo que la comparación se limita a parámetros, formato y nivel de documentación.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento para ninguno de los tres modelos en la inf
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/joshycodes/fd-gemma-4-12b-equanimity_trust
+- Hugging Face del modelo: https://huggingface.co/joshycodes/fd-gemma-4-12b-equanimity_trust
 - Modelo hermano del mismo autor: https://huggingface.co/joshycodes/fd-gemma-4-12b-trust
 - Modelo base oficial: https://huggingface.co/google/gemma-4-12B
 - Página de familia Gemma 4 en Google DeepMind: https://deepmind.google/models/gemma/gemma-4/

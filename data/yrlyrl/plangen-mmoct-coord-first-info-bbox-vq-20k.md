@@ -68,7 +68,7 @@ No se dispone de datos de comparacion directa con otros modelos en la informacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yrlyrl/plangen-mmoct-coord-first-info-bbox-vq-20k
+- Repositorio en Hugging Face: https://huggingface.co/yrlyrl/plangen-mmoct-coord-first-info-bbox-vq-20k
 - Repositorio similar (coord-bbox-vq): https://huggingface.co/yrlyrl/plangen-mmoct-coord-bbox-vq-20k
 - Repositorio similar (highlight-multi-bbox-vq): https://huggingface.co/yrlyrl/plangen-mmoct-highlight-multi-bbox-vq-20k
 - Repositorio fuente en GitHub: https://github.com/yangruoliu/plangen_mmoct

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`smol-course-chapter1-sft` es un ajuste fino supervisado (SFT) del modelo `HuggingFaceTB/SmolLM2-360M-Instruct`, publicado por el usuario `marwanaymenn` en HuggingFace. Se trata de un modelo derivado de un transformer decoder-only de 360 millones de parámetros desarrollado originalmente por HuggingFaceTB, entrenado mediante la librería TRL con la técnica de fine-tuning supervisado. El modelo hereda la arquitectura y el tokenizador del modelo base, por lo que sus capacidades lingüísticas y de generación son las del SmolLM2-360M-Instruct, potencialmente ajustadas al dataset de entrenamiento empleado.
+`smol-course-chapter1-sft` es un ajuste fino supervisado (SFT) del modelo `HuggingFaceTB/SmolLM2-360M-Instruct`, publicado por el usuario `marwanaymenn` en Hugging Face. Se trata de un modelo derivado de un transformer decoder-only de 360 millones de parámetros desarrollado originalmente por HuggingFaceTB, entrenado mediante la librería TRL con la técnica de fine-tuning supervisado. El modelo hereda la arquitectura y el tokenizador del modelo base, por lo que sus capacidades lingüísticas y de generación son las del SmolLM2-360M-Instruct, potencialmente ajustadas al dataset de entrenamiento empleado.
 
 La relevancia de este modelo es principalmente didáctica: su nombre (`smol-course-chapter1-sft`) sugiere que forma parte de un curso práctico sobre modelos pequeños (smol) y que corresponde al capítulo 1 de un itinerario formativo centrado en SFT. No obstante, la model card es extremadamente escasa: no se especifica el dataset de entrenamiento, el número de pasos, la licencia efectiva, los idiomas soportados ni resultados de evaluación. El repositorio tiene 0 GB declarados, 0 descargas y 0 likes en el momento de la consulta, lo que indica que es un artefacto de experimentación personal y no un modelo destinado a producción.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `marwanaymenn/smol-course-chapter1-sft` | 360 M | no disponible | no disponible | HuggingFace (0 descargas) | Fine-tune SFT de SmolLM2-360M-Instruct sin documentación de datos ni evaluación |
-| `HuggingFaceTB/SmolLM2-360M-Instruct` | 360 M | 8.192 tokens (según model card del base) | Apache-2.0 (según model card del base) | HuggingFace, ampliamente utilizado | Modelo base oficial, con documentación y evaluación publicadas |
-| `HuggingFaceTB/SmolLM2-135M-Instruct` | 135 M | 8.192 tokens (según model card del base) | Apache-2.0 (según model card del base) | HuggingFace | Alternativa aún más pequeña para entornos muy restringidos |
-| `Qwen2.5-0.5B-Instruct` | 500 M | 32.768 tokens (según model card oficial) | Apache-2.0 (según model card oficial) | HuggingFace | Alternativa de tamaño similar con contexto mayor y mejor documentación |
+| `marwanaymenn/smol-course-chapter1-sft` | 360 M | no disponible | no disponible | Hugging Face (0 descargas) | Fine-tune SFT de SmolLM2-360M-Instruct sin documentación de datos ni evaluación |
+| `HuggingFaceTB/SmolLM2-360M-Instruct` | 360 M | 8.192 tokens (según model card del base) | Apache-2.0 (según model card del base) | Hugging Face, ampliamente utilizado | Modelo base oficial, con documentación y evaluación publicadas |
+| `HuggingFaceTB/SmolLM2-135M-Instruct` | 135 M | 8.192 tokens (según model card del base) | Apache-2.0 (según model card del base) | Hugging Face | Alternativa aún más pequeña para entornos muy restringidos |
+| `Qwen2.5-0.5B-Instruct` | 500 M | 32.768 tokens (según model card oficial) | Apache-2.0 (según model card oficial) | Hugging Face | Alternativa de tamaño similar con contexto mayor y mejor documentación |
 
 ## Limitaciones y advertencias
 
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/marwanaymenn/smol-course-chapter1-sft
+- Modelo en Hugging Face: https://huggingface.co/marwanaymenn/smol-course-chapter1-sft
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Documentación de TRL (SFT Trainer): no disponible en la información proporcionada

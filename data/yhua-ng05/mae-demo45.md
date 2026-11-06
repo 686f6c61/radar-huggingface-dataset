@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Yhua-ng05/mae-demo45` es un checkpoint experimental de tipo **MAE** (Masked Autoencoder) orientado a tareas de **retrieval** (recuperación de información), publicado por el autor Yhua-ng05 en HuggingFace. Se trata de una implementación personalizada y de pequeño tamaño (49.600 parámetros) cuyo propósito declarado es servir como punto de partida para inspeccionar cambios arquitectónicos antes de un entrenamiento completo. No es un modelo entrenado ni presenta resultados de evaluación; el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
+El modelo `Yhua-ng05/mae-demo45` es un checkpoint experimental de tipo **MAE** (Masked Autoencoder) orientado a tareas de **retrieval** (recuperación de información), publicado por el autor Yhua-ng05 en Hugging Face. Se trata de una implementación personalizada y de pequeño tamaño (49.600 parámetros) cuyo propósito declarado es servir como punto de partida para inspeccionar cambios arquitectónicos antes de un entrenamiento completo. No es un modelo entrenado ni presenta resultados de evaluación; el fichero `model.safetensors` es un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests).
 
 La relevancia de este repositorio reside en su carácter didáctico y experimental: permite estudiar una arquitectura MAE con atención multi-query, fusión gated y normalización por lotes, sin la complejidad de un modelo de gran escala. Sin embargo, carece de cualquier capacidad demostrada en tareas reales, por lo que debe tratarse como un prototipo de código, no como un modelo listo para producción. No se dispone de información sobre la longitud de contexto, idiomas soportados o cuantizaciones.
 
@@ -40,7 +40,7 @@ Dado que el modelo no está entrenado, no existen casos de uso prácticos valida
 - **Experimentos de retrieval sobre Flickr30k**: la model card sugiere evaluar con este dataset, reportando la métrica de la tarea con al menos tres semillas y comparando con un baseline de capacidad equivalente.
 - **Depuración de pipelines de entrenamiento**: al ser un checkpoint de inicialización, permite validar que el bucle de entrenamiento, la pérdida y la optimización funcionan sin errores.
 - **Estudio de normalización y activaciones**: la combinación de BatchNorm y GELU en un contexto de retrieval puede analizarse en términos de estabilidad de gradientes.
-- **Desarrollo de adaptadores**: dado que es una implementación personalizada, se requiere un adaptador explícito para usar APIs de carga automática; esto puede servir para practicar la integración de modelos custom en frameworks como HuggingFace Transformers.
+- **Desarrollo de adaptadores**: dado que es una implementación personalizada, se requiere un adaptador explícito para usar APIs de carga automática; esto puede servir para practicar la integración de modelos custom en frameworks como Hugging Face Transformers.
 
 ## Benchmarks y rendimiento
 
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [HuggingFace - Yhua-ng05/mae-demo45](https://huggingface.co/Yhua-ng05/mae-demo45)
+- [Hugging Face - Yhua-ng05/mae-demo45](https://huggingface.co/Yhua-ng05/mae-demo45)
 - No se encontraron otros enlaces relevantes en la búsqueda web (papers, blogs, repos) para este modelo específico.

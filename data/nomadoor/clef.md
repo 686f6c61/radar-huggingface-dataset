@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nomadoor/clef | no disponible | no disponible | Reempaquetado de decision multimodal para ComfyUI | Apache 2.0 | HuggingFace |
-| Cloudflare/clef-flash | no disponible | no disponible | Modelo de decision original | no disponible en la informacion | HuggingFace y Workers AI |
+| nomadoor/clef | no disponible | no disponible | Reempaquetado de decision multimodal para ComfyUI | Apache 2.0 | Hugging Face |
+| Cloudflare/clef-flash | no disponible | no disponible | Modelo de decision original | no disponible en la informacion | Hugging Face y Workers AI |
 | Cloudflare/clef-omni | 30B-A3B | multimodelo (audio, video, imagen, texto) en una llamada | Modelo de decision multimodal | no disponible en la informacion | no disponible en la informacion |
 | Jev (TypeSafe AI) | no disponible | no disponible | Modelo de decision (competidor declarado) | no disponible | no disponible |
 
@@ -92,7 +92,7 @@ La comparación cuantitativa no es posible con los datos disponibles: no se han 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nomadoor/clef
+- Modelo en Hugging Face: https://huggingface.co/nomadoor/clef
 - Modelo base: https://huggingface.co/Cloudflare/clef-flash
 - Nodo ComfyUI-TypedDecision: https://github.com/nomadoor/ComfyUI-TypedDecision
 - Perfil del autor: https://huggingface.co/nomadoor/models

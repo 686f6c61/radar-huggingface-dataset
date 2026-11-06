@@ -92,7 +92,7 @@ La conclusión práctica es que este repositorio ofrece la misma arquitectura y 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rapid-mlx/NVIDIA-Nemotron-3.5-Bolt-E4B-MLX-8bit
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
+- Repositorio Hugging Face: https://huggingface.co/rapid-mlx/NVIDIA-Nemotron-3.5-Bolt-E4B-MLX-8bit
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Texto de la licencia OpenMDW 1.1: https://openmdw.ai/license/1-1/
 - Resultados de la búsqueda web: no se han encontrado enlaces técnicos relevantes sobre este modelo; los resultados obtenidos corresponden a empresas y servicios sin relación con el artefacto.

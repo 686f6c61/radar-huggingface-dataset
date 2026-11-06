@@ -78,7 +78,7 @@ No hay datos de rendimiento comparativo.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/SVGsquad/qwen3-vl-8b-thinking-sft-grpo-ranking-svg-judge
+- Repositorio Hugging Face: https://huggingface.co/SVGsquad/qwen3-vl-8b-thinking-sft-grpo-ranking-svg-judge
 - Modelo base Qwen3-VL-8B-Thinking: https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking
 - Documentacion de Qwen3-VL en Transformers: https://huggingface.co/docs/transformers/model_doc/qwen3_vl
 - Repositorio GitHub de Qwen3-VL: https://github.com/QwenLM/Qwen3-VL

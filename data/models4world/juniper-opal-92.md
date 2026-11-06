@@ -51,6 +51,6 @@ No se dispone de información sobre modelos comparables. Al no conocer el modelo
 
 ## Enlaces
 
-- [HuggingFace: models4world/juniper-opal-92](https://huggingface.co/models4world/juniper-opal-92)
+- [Hugging Face: models4world/juniper-opal-92](https://huggingface.co/models4world/juniper-opal-92)
 - [Modelo base: models4world/maple-signal-64](https://huggingface.co/models4world/maple-signal-64) (referenciado, sin enlace directo en la información proporcionada)
 - Paper citado en los tags: [Lacoste et al. (2019)](https://arxiv.org/abs/1910.09700) (sobre impacto ambiental, no sobre el modelo)

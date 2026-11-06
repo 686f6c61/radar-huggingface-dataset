@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Funcion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MiniMax-H3 Prompt Rewriter (Ref2VA) | 27,36B | 32768 | Reescritura de prompts con referencias imagen/video/audio | no disponible | HuggingFace (lightx2v) |
-| Qwen3.8-27B (base) | ~27B | no disponible en esta ficha | Modelo generalista vision-lenguaje | no disponible | HuggingFace (Qwen) |
+| MiniMax-H3 Prompt Rewriter (Ref2VA) | 27,36B | 32768 | Reescritura de prompts con referencias imagen/video/audio | no disponible | Hugging Face (lightx2v) |
+| Qwen3.8-27B (base) | ~27B | no disponible en esta ficha | Modelo generalista vision-lenguaje | no disponible | Hugging Face (Qwen) |
 | Alternativas especializadas en reescritura de prompts | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo ni de especificaciones detalladas de los modelos alternativos en la informacion proporcionada.
@@ -91,7 +91,7 @@ No se dispone de datos de rendimiento comparativo ni de especificaciones detalla
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA
+- Modelo en Hugging Face: https://huggingface.co/lightx2v/MiniMax-H3-Prompt-Rewriter-Qwen3.8-27B-Ref2VA
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio del autor (lightx2v): https://huggingface.co/lightx2v
 - Documentacion de vLLM: no disponible en la informacion proporcionada

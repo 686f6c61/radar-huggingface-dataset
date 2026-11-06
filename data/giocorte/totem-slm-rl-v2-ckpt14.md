@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`giocorte/totem-slm-rl-v2-ckpt14` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `giocorte`, entrenado sobre el modelo base `unsloth/qwen3-4b-unsloth-bnb-4bit`, es decir, una version de Qwen3-4B ya cuantizada a 4 bits por Unsloth. El repositorio pesa 0,1 GB y contiene unicamente los pesos del adaptador en formato safetensors, no el modelo completo, por lo que para utilizarlo es necesario descargar por separado el modelo base y cargar el adaptador encima mediante la libreria `peft`.
+`giocorte/totem-slm-rl-v2-ckpt14` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `giocorte`, entrenado sobre el modelo base `unsloth/qwen3-4b-unsloth-bnb-4bit`, es decir, una version de Qwen3-4B ya cuantizada a 4 bits por Unsloth. El repositorio pesa 0,1 GB y contiene unicamente los pesos del adaptador en formato safetensors, no el modelo completo, por lo que para utilizarlo es necesario descargar por separado el modelo base y cargar el adaptador encima mediante la libreria `peft`.
 
 Por el identificador se deduce que se trata de la version 2 de un proyecto denominado "totem-slm" (probablemente "small language model") con algun tipo de ajuste por refuerzo ("rl"), y que el artefacto publicado es el checkpoint numero 14 del entrenamiento. Se trata, por tanto, de un artefacto experimental de investigacion, no de un modelo listo para produccion: la model card esta sin rellenar (conserva todas las plantillas `[More Information Needed]`), no declara licencia, no declara idiomas y no publica datos de evaluacion.
 
@@ -81,11 +81,11 @@ Dado que el adaptador no publica metricas, la comparacion se establece entre el 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| totem-slm-rl-v2-ckpt14 (adaptador) | No disponible (base de ~4B) | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
-| Qwen3-4B (base del adaptador) | ~4B | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | HuggingFace y proveedores cloud |
-| Phi-3.5-mini | ~3,8B | 128.000 tokens | MIT | HuggingFace y Azure AI |
-| Gemma 2 2B | ~2,6B | 8.192 tokens | Terminos de uso de Gemma | HuggingFace |
+| totem-slm-rl-v2-ckpt14 (adaptador) | No disponible (base de ~4B) | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
+| Qwen3-4B (base del adaptador) | ~4B | 32.768 tokens, extensible a 131.072 con YaRN | Apache 2.0 | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B | ~3,2B | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Hugging Face y proveedores cloud |
+| Phi-3.5-mini | ~3,8B | 128.000 tokens | MIT | Hugging Face y Azure AI |
+| Gemma 2 2B | ~2,6B | 8.192 tokens | Terminos de uso de Gemma | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos para el adaptador, por lo que la unica conclusion defendible es que su interes no reside en la calidad, sino en el proceso de entrenamiento. Cualquier comparacion de rendimiento seria con el modelo base o con las alternativas citadas seria especulativa.
 
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparativos para el adaptador, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/giocorte/totem-slm-rl-v2-ckpt14
+- Modelo en Hugging Face: https://huggingface.co/giocorte/totem-slm-rl-v2-ckpt14
 - Modelo base: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre estimacion de emisiones): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental citada en la card: https://mlco2.github.io/impact

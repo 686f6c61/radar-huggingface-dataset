@@ -73,7 +73,7 @@ No se dispone de información sobre modelos drafter comparables en la misma cate
 
 ## Enlaces
 
-- Repositorio HuggingFace del drafter: https://huggingface.co/lactroiii/Muse-Glimmer-30B-assistant
+- Repositorio Hugging Face del drafter: https://huggingface.co/lactroiii/Muse-Glimmer-30B-assistant
 - Repositorio oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-assistant
 - Página en LM Studio: https://lmstudio.ai/models/meta/muse-glimmer
 - Guía en GitHub: https://github.com/cobusgreyling/Muse-Glimmer

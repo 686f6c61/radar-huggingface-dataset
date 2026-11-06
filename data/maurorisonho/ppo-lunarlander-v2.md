@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`maurorisonho/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. Lo publica el usuario maurorisonho en HuggingFace y se enmarca explícitamente en el Deep RL Course, por lo que su función principal es servir como artefacto de referencia y ejemplo reproducible de un entrenamiento con stable-baselines3.
+`maurorisonho/ppo-LunarLander-v2` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno LunarLander-v2. Lo publica el usuario maurorisonho en Hugging Face y se enmarca explícitamente en el Deep RL Course, por lo que su función principal es servir como artefacto de referencia y ejemplo reproducible de un entrenamiento con stable-baselines3.
 
 A diferencia de un modelo de lenguaje, este artefacto no procesa texto ni tiene parámetros lingüísticos: es una política que recibe una observación vectorial del entorno (posición, velocidad, ángulo, contacto con el suelo y estado de las patas) y emite una acción discreta entre cuatro posibles (no hacer nada, encender motor izquierdo, encender motor derecho o motor principal). El resultado declarado por el autor es una recompensa media de 275,00 ± 15,00 en LunarLander-v2, por encima del umbral de 200 que se suele considerar "entorno resuelto".
 
@@ -93,7 +93,7 @@ La ventaja diferencial de este artefacto frente a otras alternativas equivalente
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maurorisonho/ppo-LunarLander-v2
+- Modelo en Hugging Face: https://huggingface.co/maurorisonho/ppo-LunarLander-v2
 - Documentación de PPO en stable-baselines3: https://stable-baselines3.readthedocs.io/en/master/modules/ppo.html (referencia de la librería declarada, no encontrada en la búsqueda web)
 - Entorno LunarLander-v2 en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/ (referencia del entorno, no encontrada en la búsqueda web)
 - Artículo original de PPO, Schulman et al., 2017: https://arxiv.org/abs/1707.06347 (referencia del algoritmo, no encontrada en la búsqueda web)

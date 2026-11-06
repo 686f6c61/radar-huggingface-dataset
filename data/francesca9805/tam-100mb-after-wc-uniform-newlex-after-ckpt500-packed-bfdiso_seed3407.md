@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario `francesca9805` en HuggingFace. Se trata de un derivado del modelo base `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed3407`, entrenado con la libreria TRL de HuggingFace. Por las etiquetas del repositorio, el pipeline declarado es `text-generation` y la arquitectura de referencia es GPT-2, con pesos en formato safetensors y una libreria de inferencia basada en `transformers`.
+El modelo `tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407` es un ajuste fino de tipo SFT (supervised fine-tuning) publicado por el usuario `francesca9805` en Hugging Face. Se trata de un derivado del modelo base `francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed3407`, entrenado con la libreria TRL de Hugging Face. Por las etiquetas del repositorio, el pipeline declarado es `text-generation` y la arquitectura de referencia es GPT-2, con pesos en formato safetensors y una libreria de inferencia basada en `transformers`.
 
 El modelo cuenta con 124.770.816 parametros totales (aproximadamente 125 millones), lo que lo situa en la categoria de modelos pequenos de tipo decoder-only. El repositorio ocupa 1,0 GB, coherente con pesos en varios formatos de precision mas ficheros auxiliares. No se ha publicado informacion sobre licencia, idiomas soportados ni longitud de contexto en la model card, y el modelo registra 0 descargas y 0 likes en el momento de la consulta, lo que sugiere un experimento de investigacion no difundido.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407 | 124,77 M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT experimental sobre base propio |
+| tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407 | 124,77 M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT experimental sobre base propio |
 | GPT-2 (124M) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Referencia historica de la misma escala |
 | GPT-2 medium | 355 M | 1024 tokens | MIT | Ampliamente disponible | Version mayor de la misma familia |
-| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Alternativa moderna de escala similar |
+| SmolLM-135M | 135 M | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Alternativa moderna de escala similar |
 
 La comparativa se limita a parametros, contexto y licencia, ya que no existen resultados de benchmarks publicados para el modelo objeto de esta ficha que permitan contrastar calidad de generacion, razonamiento o codigo frente a las alternativas.
 
@@ -93,7 +93,7 @@ La comparativa se limita a parametros, contexto y licencia, ya que no existen re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed3407
 - Seguimiento del entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/lmd22r6x
 - Repositorio de TRL: https://github.com/huggingface/trl

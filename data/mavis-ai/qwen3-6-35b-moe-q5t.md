@@ -89,7 +89,7 @@ Comparativas con cuantizaciones externas (por ejemplo builds GGUF o MLX de la co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mavis-ai/Qwen3.6-35B-MoE-Q5T
+- Modelo en Hugging Face: https://huggingface.co/mavis-ai/Qwen3.6-35B-MoE-Q5T
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B/blob/main/LICENSE
 - R.E.V.I.S. (website oficial): https://mavis-ai.co.jp/revis/

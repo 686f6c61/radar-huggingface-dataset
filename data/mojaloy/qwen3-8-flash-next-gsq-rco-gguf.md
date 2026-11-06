@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next es un modelo de mezcla de expertos (MoE) disperso y multimodal desarrollado por Qwen (Alibaba). Esta ficha describe la versión cuantizada publicada por Mojaloy en HuggingFace, que redistribuye los GGUF generados por IST-DASLab mediante las técnicas GSQ (Gumbel-Softmax Quantization) y RCO (Riemannian Constrained Optimization). El modelo base emplea 512 expertos enrutados por capa a lo largo de 48 capas, de los cuales 10 se activan por token, con un total de 176.943.899.520 parámetros (unos 177.000 millones). El repositorio ocupa 208,4 GB e incluye el proyector de visión (`mmproj`) en BF16 para uso multimodal.
+Qwen3.8-Flash-Next es un modelo de mezcla de expertos (MoE) disperso y multimodal desarrollado por Qwen (Alibaba). Esta ficha describe la versión cuantizada publicada por Mojaloy en Hugging Face, que redistribuye los GGUF generados por IST-DASLab mediante las técnicas GSQ (Gumbel-Softmax Quantization) y RCO (Riemannian Constrained Optimization). El modelo base emplea 512 expertos enrutados por capa a lo largo de 48 capas, de los cuales 10 se activan por token, con un total de 176.943.899.520 parámetros (unos 177.000 millones). El repositorio ocupa 208,4 GB e incluye el proyector de visión (`mmproj`) en BF16 para uso multimodal.
 
 La relevancia de esta publicación radica en la cuantización no uniforme: en lugar de aplicar un único tipo de cuantización a todos los tensores, se asigna un tipo distinto a cada tensor mediante una búsqueda basada en gradientes que reparte la precisión según la sensibilidad de cada tensor, sujeto a un presupuesto total de tamaño. El resultado son ficheros GGUF estándar que funcionan sin modificaciones en llama.cpp, Ollama y LM Studio, lo que permite ejecutar un MoE de 177.000 millones de parámetros en hardware mucho más modesto que el modelo original.
 
@@ -74,7 +74,7 @@ No se han publicado resultados numéricos de benchmarks en la información dispo
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Qwen3.8-Flash-Next (base) | 176.943.899.520 | no disponible | Apache 2.0 | HuggingFace (Qwen) | Pesos originales; sin cuantizar |
+| Qwen3.8-Flash-Next (base) | 176.943.899.520 | no disponible | Apache 2.0 | Hugging Face (Qwen) | Pesos originales; sin cuantizar |
 | Qwen3.8-Flash-Next GSQ-RCO (esta ficha) | 176.943.899.520 | no disponible | Apache 2.0 | GGUF, 4 variantes | Cuantización no uniforme, multimodal |
 | Qwen3.8-Flash-Next-GSQ-RCO-Coder | no disponible | no disponible | no disponible | GGUF, 58,4 GB | Variante de código; retiene 256 de 512 expertos, 1,89 bpw efectivos |
 
@@ -90,11 +90,11 @@ No se dispone de datos de benchmarks ni de otros modelos comparables de la misma
 - Limitaciones de contexto e idioma: la longitud de contexto y los idiomas soportados no están documentados.
 - Licencia Apache 2.0: permite uso comercial, pero conviene verificar las condiciones del modelo base Qwen3.8-Flash-Next y de los pesos originales.
 - El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, por lo que no hay validación comunitaria documentada de esta redistribución concreta.
-- La fecha de creación indicada (2026-11-01) es la registrada en HuggingFace; verificar la vigencia de los enlaces y artefactos.
+- La fecha de creación indicada (2026-11-01) es la registrada en Hugging Face; verificar la vigencia de los enlaces y artefactos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Mojaloy/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
+- Repositorio Hugging Face: https://huggingface.co/Mojaloy/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Variante de código: https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF
 - Paper GSQ: https://arxiv.org/abs/2604.18556

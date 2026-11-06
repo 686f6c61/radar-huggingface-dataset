@@ -76,7 +76,7 @@ Variacion full-probe frente a v1 fixed: view_large +3,25 puntos porcentuales; ya
 
 | Modelo / variante | Parametros | Contexto | Rendimiento (exito/400) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| π₀.₅ view_large full-probe (este modelo) | no disponible | no disponible | 117 (29,25%) | apache-2.0 | HuggingFace |
+| π₀.₅ view_large full-probe (este modelo) | no disponible | no disponible | 117 (29,25%) | apache-2.0 | Hugging Face |
 | π₀.₅ view_large v1 fixed | no disponible | no disponible | 104 (26,00%) | no disponible | referencia interna del experimento |
 | π₀.₅ yaw30 (full-probe / v1) | no disponible | no disponible | 201 / 215 | no disponible | referencia interna del experimento |
 | π₀.₅ ur5e (full-probe / v1) | no disponible | no disponible | 167 / 164 | no disponible | referencia interna del experimento |
@@ -98,7 +98,7 @@ No se proporcionan modelos de terceros comparables en la información disponible
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-view-large-1000-20261013
+- Modelo en Hugging Face: https://huggingface.co/Donghyun1228/pi05-libero-b200-full-probe-fixed-view-large-1000-20261013
 - Conjunto de datos objetivo: https://huggingface.co/datasets/Donghyun1228/libero-dense-contact-sweep-d2-20261002
 - Librería openpi: https://github.com/Physical-Intelligence/openpi
 - Benchmark LIBERO: https://libero-project.github.io/

@@ -4,7 +4,7 @@
 
 ## Resumen
 
-PrincessBelle es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Ballsworthy en HuggingFace, disenado para anadir el personaje de la princesa Belle a un modelo de difusion Stable Diffusion 1.5. No se trata de un modelo de lenguaje ni de un modelo completo, sino de un fichero de pesos adicional que se carga junto al checkpoint base (pmczip/SD1.5_LoRa_Models) para condicionar la generacion de imagenes hacia ese personaje concreto.
+PrincessBelle es un adaptador LoRA (Low-Rank Adaptation) publicado por el usuario Ballsworthy en Hugging Face, disenado para anadir el personaje de la princesa Belle a un modelo de difusion Stable Diffusion 1.5. No se trata de un modelo de lenguaje ni de un modelo completo, sino de un fichero de pesos adicional que se carga junto al checkpoint base (pmczip/SD1.5_LoRa_Models) para condicionar la generacion de imagenes hacia ese personaje concreto.
 
 El repositorio pesa aproximadamente 0,1 GB y se distribuye bajo licencia MIT. La model card es extremadamente breve: el autor indica que el LoRA se creo a partir de imagenes generadas por IA y que cualquier parecido con personas reales es coincidencia. No se documentan datos de entrenamiento, numero de pasos, resolucion, composicion del dataset ni hiperparametros, lo que limita mucho la reproducibilidad.
 
@@ -72,7 +72,7 @@ Las cifras siguientes son estimaciones generales para inferencia con el modelo b
 
 ## Comparativa con modelos similares
 
-No se dispone de modelos comparables concretos en la informacion proporcionada. Como referencia de categoria, este adaptador se situa en el mismo nicho que el resto de LoRAs de personaje para Stable Diffusion 1.5 distribuidos en Civitai o HuggingFace.
+No se dispone de modelos comparables concretos en la informacion proporcionada. Como referencia de categoria, este adaptador se situa en el mismo nicho que el resto de LoRAs de personaje para Stable Diffusion 1.5 distribuidos en Civitai o Hugging Face.
 
 | Criterio | PrincessBelle | LoRA de personaje tipico en SD 1.5 | Modelo completo de personaje (checkpoint) |
 |---|---|---|---|
@@ -80,7 +80,7 @@ No se dispone de modelos comparables concretos en la informacion proporcionada. 
 | Contexto de prompt | 77 tokens (heredado de SD 1.5) | 77 tokens | 77 tokens |
 | Rendimiento medido | No publicado | Habitualmente no publicado | Variable, rara vez comparable |
 | Licencia | MIT | Variable (a menudo sin licencia explicita) | Variable |
-| Disponibilidad | HuggingFace, 0 descargas | Civitai, HuggingFace | Civitai, HuggingFace |
+| Disponibilidad | Hugging Face, 0 descargas | Civitai, Hugging Face | Civitai, Hugging Face |
 | Requiere checkpoint base | Si | Si | No |
 
 ## Limitaciones y advertencias
@@ -98,7 +98,7 @@ No se dispone de modelos comparables concretos en la informacion proporcionada. 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Ballsworthy/PrincessBelle
+- Modelo en Hugging Face: https://huggingface.co/Ballsworthy/PrincessBelle
 - Modelo base declarado: https://huggingface.co/pmczip/SD1.5_LoRa_Models
 - Princess Belle - AIEasyPic: https://aieasypic.com/inspire/models/detail/princess-belle-232260
 - Princess Belle - SeaArt AI Model: https://www.seaart.ai/models/detail/ce61a4d46ce68efe54c0de1c4ae1de5d

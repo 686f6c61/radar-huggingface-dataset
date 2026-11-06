@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`dheer17/cheat-gpt-qwen1.5b` es un checkpoint publicado en HuggingFace por el usuario dheer17, aparentemente derivado de la familia Qwen (el identificador sugiere una base de 1.5B parametros). El repositorio tiene un tamano de 0,1 GB, lo que resulta llamativamente pequeno para un modelo de 1.5B parametros en precision completa; es coherente con pesos cuantizados o con un conjunto parcial de ficheros.
+`dheer17/cheat-gpt-qwen1.5b` es un checkpoint publicado en Hugging Face por el usuario dheer17, aparentemente derivado de la familia Qwen (el identificador sugiere una base de 1.5B parametros). El repositorio tiene un tamano de 0,1 GB, lo que resulta llamativamente pequeno para un modelo de 1.5B parametros en precision completa; es coherente con pesos cuantizados o con un conjunto parcial de ficheros.
 
-La model card es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se declara autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni evaluacion. El unico tag tecnico relevante es `arxiv:1910.09700`, que corresponde al paper del calculador de impacto medioambiental de Lacoste et al. y aparece en la plantilla por defecto, no porque el modelo lo cite como referencia propia.
+La model card es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se declara autor real, tipo de modelo, idiomas, licencia, datos de entrenamiento ni evaluacion. El unico tag tecnico relevante es `arxiv:1910.09700`, que corresponde al paper del calculador de impacto medioambiental de Lacoste et al. y aparece en la plantilla por defecto, no porque el modelo lo cite como referencia propia.
 
 Por tanto, esta ficha debe leerse como una evaluacion de disponibilidad y trazabilidad mas que de capacidades: el modelo no es verificable en produccion con la informacion publicada, y su relevancia actual es limitada salvo que el autor complete la documentacion. Se documenta lo que se puede inferir del identificador y del repositorio, marcando explicitamente todo lo desconocido.
 
@@ -25,7 +25,7 @@ Por tanto, esta ficha debe leerse como una evaluacion de disponibilidad y trazab
 
 No hay informacion publicada sobre la arquitectura. El nombre del repositorio incluye "qwen1.5b", lo que apunta a un fine-tune o derivado de un modelo Qwen de aproximadamente 1500 millones de parametros, pero el autor no lo confirma en la model card. Tampoco se documenta si se trata de un ajuste supervisado, un DPO, un merge de pesos o un modelo entrenado desde cero.
 
-No se especifican volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO, ORPO), ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico metadato estructural es la libreria `transformers` y el formato `safetensors`, ademas del tag `endpoints_compatible`, que indica que el repositorio puede servirse a traves de la infraestructura de Inference Endpoints de HuggingFace.
+No se especifican volumen de tokens de entrenamiento, composicion del dataset, tecnicas de alineacion (RLHF, DPO, ORPO), ni innovaciones tecnicas como decodificacion especulativa o atencion lineal. El unico metadato estructural es la libreria `transformers` y el formato `safetensors`, ademas del tag `endpoints_compatible`, que indica que el repositorio puede servirse a traves de la infraestructura de Inference Endpoints de Hugging Face.
 
 ## Capacidades
 
@@ -42,7 +42,7 @@ No se debe asumir ninguna capacidad concreta sin una evaluacion directa del chec
 
 - Evaluacion exploratoria de fine-tunes de la familia Qwen: el modelo puede cargarse con `transformers` para inspeccionar su comportamiento y compararlo con la base Qwen 1.5B, siempre que se verifique primero la integridad de los pesos.
 - Prototipado interno sin requisitos de licencia clara: dado que la licencia no esta declarada, solo es apto para experimentacion privada hasta que el autor la especifique.
-- Pruebas de compatibilidad con Inference Endpoints: el tag `endpoints_compatible` permite desplegarlo en la infraestructura de HuggingFace para validar el pipeline de serving.
+- Pruebas de compatibilidad con Inference Endpoints: el tag `endpoints_compatible` permite desplegarlo en la infraestructura de Hugging Face para validar el pipeline de serving.
 - Investigacion sobre procedencia de modelos: util como caso de estudio de checkpoints sin documentacion y de los riesgos de trazabilidad en el Hub.
 - Benchmarking de juguete en entornos con poca VRAM: si los pesos son efectivamente cuantizados (repo de 0,1 GB), podria ejecutarse en GPUs de consumo, aunque el rendimiento real es desconocido.
 - No recomendado para atencion al cliente, generacion de codigo en produccion, agentes autonomos ni ninguna aplicacion con usuarios finales, dada la ausencia total de documentacion, licencia y evaluacion.
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | dheer17/cheat-gpt-qwen1.5b | no disponible (sugerido 1.5B) | no disponible | no disponible | plantilla vacia | repo de 0,1 GB, 0 descargas |
 | Qwen2.5-1.5B (Alibaba) | 1.5B | 32k tokens (version base) | Apache 2.0 (mayoria de variantes) | model card completa con benchmarks | ampliamente disponible |
 | Llama 3.2 1B (Meta) | 1.2B | 128k tokens | Llama 3.2 Community License | model card completa | ampliamente disponible |
-| SmolLM2-1.7B (HuggingFace) | 1.7B | 8k tokens | Apache 2.0 | model card completa con benchmarks | ampliamente disponible |
+| SmolLM2-1.7B (Hugging Face) | 1.7B | 8k tokens | Apache 2.0 | model card completa con benchmarks | ampliamente disponible |
 
 La comparativa deja claro que, para cualquier uso real, las alternativas documentadas de la misma clase de tamano ofrecen garantias que este checkpoint no proporciona.
 
@@ -83,7 +83,7 @@ La comparativa deja claro que, para cualquier uso real, las alternativas documen
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dheer17/cheat-gpt-qwen1.5b
+- Repositorio en Hugging Face: https://huggingface.co/dheer17/cheat-gpt-qwen1.5b
 - Paper referenciado en el tag (Lacoste et al., 2019, impacto medioambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML: https://mlco2.github.io/impact
 - No se han encontrado otros enlaces (paper, blog, repositorio de codigo o demo) en la informacion disponible.

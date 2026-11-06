@@ -128,8 +128,8 @@ No se han publicado comparaciones con otros modelos en benchmarks estandar adici
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyTurk v2.7d Agent EN | 1.121.920 | 64 | Clasificacion de comandos (16 + unknown) | Apache 2.0 | HuggingFace |
-| TinyTurk v2.7d TinyStories EN (modelo base) | Misma arquitectura de ~1,1 M | 64 | Generacion de texto en ingles (TinyStories) | no disponible en la informacion proporcionada | HuggingFace |
+| TinyTurk v2.7d Agent EN | 1.121.920 | 64 | Clasificacion de comandos (16 + unknown) | Apache 2.0 | Hugging Face |
+| TinyTurk v2.7d TinyStories EN (modelo base) | Misma arquitectura de ~1,1 M | 64 | Generacion de texto en ingles (TinyStories) | no disponible en la informacion proporcionada | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones de otros modelos comparables de la misma categoria en la informacion proporcionada, por lo que no es posible establecer una comparativa cuantitativa con alternativas externas a la serie TinyTurk.
 
@@ -149,7 +149,7 @@ No se dispone de datos de benchmarks ni de especificaciones de otros modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/stunmuffin/tinyturk-v2.7d-agent-en
+- Modelo en Hugging Face: https://huggingface.co/stunmuffin/tinyturk-v2.7d-agent-en
 - Modelo base (TinyStories EN): https://huggingface.co/stunmuffin/tinyturk-v2.7d-tinystories-en
 - Repositorio de GitHub con `voice_agent_en.py`: referenciado en la model card, URL no disponible
 - Paper, blog o demo adicionales: no disponible

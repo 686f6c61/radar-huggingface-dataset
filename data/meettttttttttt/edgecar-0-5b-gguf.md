@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EdgeCar 0.5B es un modelo de lenguaje especializado en el análisis semántico de consultas sobre datos de vehículos, desarrollado por el usuario de HuggingFace `meettttttttttt` en el contexto del reto Tata Elxsi TELIPORT Season 4 (Case Study 5, *Natural Language Vehicle Information using On-Device SLM/LLM*). No es un modelo conversacional: es un parser semántico que transforma una pregunta en inglés sobre los datos registrados del coche en un comando corto de una a tres palabras, que posteriormente un motor determinista ejecuta contra los logs del vehículo.
+EdgeCar 0.5B es un modelo de lenguaje especializado en el análisis semántico de consultas sobre datos de vehículos, desarrollado por el usuario de Hugging Face `meettttttttttt` en el contexto del reto Tata Elxsi TELIPORT Season 4 (Case Study 5, *Natural Language Vehicle Information using On-Device SLM/LLM*). No es un modelo conversacional: es un parser semántico que transforma una pregunta en inglés sobre los datos registrados del coche en un comando corto de una a tres palabras, que posteriormente un motor determinista ejecuta contra los logs del vehículo.
 
 El modelo se obtiene mediante fine-tuning de Qwen2.5-0.5B-Instruct y cuenta con 494.032.768 parámetros totales (aproximadamente 0,5B), lo que lo sitúa en la categoría de modelos pequeños diseñados para inferencia en dispositivo (*on-device*). La versión publicada en este repositorio está cuantizada en formato GGUF para su uso con llama.cpp, con variantes Q4_K_M (398 MB) y Q8_0 (531 MB). El autor reporta un tiempo de respuesta de aproximadamente 0,2 segundos sobre dos núcleos de portátil, lo que lo hace viable en hardware de automoción embebido.
 
@@ -70,9 +70,9 @@ Además, el autor reporta que, con las comprobaciones de rechazo de EdgeCar desa
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EdgeCar 0.5B (este) | 494 M | No disponible | Parser semantico a comando cerrado, on-device | Apache 2.0 | GGUF + safetensors en HuggingFace |
-| Qwen2.5-0.5B-Instruct (base) | ~494 M | No disponible en la informacion | Chat/generacion general | Apache 2.0 | HuggingFace |
-| EdgeCar 1.5B | No disponible | No disponible | Misma tarea, mayor precision segun el autor (~0,6 GB mas de memoria) | No disponible | GGUF en HuggingFace |
+| EdgeCar 0.5B (este) | 494 M | No disponible | Parser semantico a comando cerrado, on-device | Apache 2.0 | GGUF + safetensors en Hugging Face |
+| Qwen2.5-0.5B-Instruct (base) | ~494 M | No disponible en la informacion | Chat/generacion general | Apache 2.0 | Hugging Face |
+| EdgeCar 1.5B | No disponible | No disponible | Misma tarea, mayor precision segun el autor (~0,6 GB mas de memoria) | No disponible | GGUF en Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre EdgeCar 0.5B y Qwen2.5-0.5B-Instruct en la tarea específica, más allá de la mejora cualitativa que implica el fine-tuning y la restricción por gramática. Para alternativas de propósito general del mismo tamaño, Qwen2.5-0.5B-Instruct y modelos de la familia SmolLM son los comparables naturales, pero no se han publicado métricas cruzadas en la información disponible.
 
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre EdgeCar 0.5B y Qwen2.5-0
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/meettttttttttt/edgecar-0.5b-GGUF
 - Pesos fusionados (safetensors): https://huggingface.co/meettttttttttt/edgecar-0.5b
 - Variante 1.5B en GGUF: https://huggingface.co/meettttttttttt/edgecar-1.5b-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct

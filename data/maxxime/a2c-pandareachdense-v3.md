@@ -37,7 +37,7 @@ En este caso concreto, el modelo ha sido entrenado con `stable-baselines3`, que 
 
 - Investigación en aprendizaje por refuerzo: el modelo puede utilizarse como línea base (baseline) para comparar el rendimiento de otros algoritmos (PPO, SAC, TD3) en el entorno `PandaReachDense-v3`. Su baja recompensa media permite observar mejoras relativas de otros métodos.
 - Entorno educativo: sirve como ejemplo didáctico para estudiantes que quieran aprender a entrenar agentes A2C con `stable-baselines3`, ya que el código de carga y evaluación es sencillo y reproducible.
-- Pruebas de integración de `huggingface_sb3`: el modelo puede emplearse para verificar el flujo de descarga y carga de agentes desde el Hub de HuggingFace, aunque su rendimiento no sea óptimo.
+- Pruebas de integración de `huggingface_sb3`: el modelo puede emplearse para verificar el flujo de descarga y carga de agentes desde el Hub de Hugging Face, aunque su rendimiento no sea óptimo.
 - Experimentación con recompensas densas: al tratarse de un entorno con recompensa densa, el modelo permite estudiar cómo afecta la señal de recompensa al aprendizaje, aunque en este caso el resultado no es satisfactorio.
 - Depuración de pipelines de RL: los desarrolladores pueden usar este modelo para validar que su infraestructura de entrenamiento y evaluación funciona correctamente, antes de lanzar entrenamientos más complejos.
 - No es recomendable para aplicaciones de producción o control real de robots, dado su bajo rendimiento y la falta de información sobre su robustez.
@@ -61,7 +61,7 @@ No se han publicado comparaciones con otros modelos o algoritmos. La recompensa 
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre otros agentes entrenados para el mismo entorno o con el mismo algoritmo en el Hub de HuggingFace. No es posible realizar una comparativa con alternativas como PPO o SAC sin datos adicionales. Por tanto, la comparativa se considera no disponible.
+No se dispone de información sobre otros agentes entrenados para el mismo entorno o con el mismo algoritmo en el Hub de Hugging Face. No es posible realizar una comparativa con alternativas como PPO o SAC sin datos adicionales. Por tanto, la comparativa se considera no disponible.
 
 ## Limitaciones y advertencias
 
@@ -74,5 +74,5 @@ No se dispone de información sobre otros agentes entrenados para el mismo entor
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/maxxime/a2c-PandaReachDense-v3)
+- [Modelo en Hugging Face](https://huggingface.co/maxxime/a2c-PandaReachDense-v3)
 - [Librería stable-baselines3](https://github.com/DLR-RM/stable-baselines3) (referencia general, no específica del modelo)

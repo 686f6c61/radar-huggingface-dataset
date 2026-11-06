@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GHOST-2.7B (Generative Heuristic Orchestrator for Sovereign Thought) es un ajuste fino de parámetros completos sobre `microsoft/phi-2`, un transformer denso de 2.700 millones de parámetros. Lo publica ItsnotAilabs en HuggingFace, aunque la model card atribuye el desarrollo a MedinaMemorySystems, una discrepancia de autoría que conviene tener en cuenta antes de citarlo. El modelo está especializado en generación narrativa, simulación de entornos adversarios y construcción autónoma de narrativa, con una ventana de contexto de 2.048 tokens y licencia Apache 2.0.
+GHOST-2.7B (Generative Heuristic Orchestrator for Sovereign Thought) es un ajuste fino de parámetros completos sobre `microsoft/phi-2`, un transformer denso de 2.700 millones de parámetros. Lo publica ItsnotAilabs en Hugging Face, aunque la model card atribuye el desarrollo a MedinaMemorySystems, una discrepancia de autoría que conviene tener en cuenta antes de citarlo. El modelo está especializado en generación narrativa, simulación de entornos adversarios y construcción autónoma de narrativa, con una ventana de contexto de 2.048 tokens y licencia Apache 2.0.
 
 A diferencia de un ajuste LoRA, el autor indica que se reentrenaron todos los pesos para desplazar la distribución predictiva del modelo base hacia prosa creativa. Los datos de entrenamiento declarados son Sovereign Corpus (lore esotérico y fundamentos de marco), WritingPrompts (estructuras narrativas) y Adversarial Simulation Transcripts (diálogos de shadow-personas y escenarios límite). El resultado es un modelo de un solo idioma (inglés) orientado a texto creativo, no a conocimiento factual.
 
@@ -25,7 +25,7 @@ Su relevancia práctica es acotada pero concreta: ocupa menos de 6 GB de VRAM en
 | Dimension oculta | 2.560 |
 | Modelo base | microsoft/phi-2 |
 | Tamano de vocabulario | No disponible |
-| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 21 de septiembre de 2026 (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -83,7 +83,7 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Rendimiento declarado | Disponibilidad |
 |---|---|---|---|---|---|---|
-| GHOST-2.7B | 2,7B denso | 2.048 | Apache 2.0 | Ingles | HellaSwag 73,1; WinoGrande 72,4; PIQA 79,6 (declarados por el autor, sin metodologia) | HuggingFace, 0 descargas y 0 likes en el momento de la consulta |
+| GHOST-2.7B | 2,7B denso | 2.048 | Apache 2.0 | Ingles | HellaSwag 73,1; WinoGrande 72,4; PIQA 79,6 (declarados por el autor, sin metodologia) | Hugging Face, 0 descargas y 0 likes en el momento de la consulta |
 | microsoft/phi-2 (modelo base) | 2,7B denso | 2.048 | MIT | Ingles | Resultados publicados por Microsoft en la model card original, no reproducidos aqui | Ampliamente distribuido y verificado |
 
 No se dispone en la informacion proporcionada de datos verificables de otros modelos comparables de la misma categoria (por ejemplo, ajustes creativos de 3B). Cualquier comparacion con alternativas requeriria evaluar ambos modelos bajo el mismo protocolo, algo que el autor no ha publicado.
@@ -104,7 +104,7 @@ No se dispone en la informacion proporcionada de datos verificables de otros mod
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ItsnotAilabs/GHOST-2.7B
+- Repositorio en Hugging Face: https://huggingface.co/ItsnotAilabs/GHOST-2.7B
 - Repositorio referenciado en la model card y en la cita BibTeX: https://huggingface.co/MedinaMemorySystems/GHOST-2.7B
 - Modelo base: https://huggingface.co/microsoft/phi-2
 - La busqueda web realizada no devolvio papers, blogs, repositorios ni demos adicionales relevantes sobre este modelo; los resultados obtenidos eran paginas genericas de motor de busqueda.

@@ -94,7 +94,7 @@ No se dispone de información sobre otros modelos de decisión comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trymirai/d3-flash-M
+- Modelo en Hugging Face: https://huggingface.co/trymirai/d3-flash-M
 - Modelo base: https://huggingface.co/vllm-sr/d3-flash
 - Licencia del modelo base: https://huggingface.co/vllm-sr/d3-flash/blob/13dc1cc8ef23caefa765907e1d764751e5629f7d/LICENSE
 - Blog de cuantización de Mirai: https://trymirai.com/blog/quantization

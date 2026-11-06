@@ -82,8 +82,8 @@ No se dispone de datos de benchmarks comparativos con alternativas de la misma c
 
 ## Enlaces
 
-- Repositorio de HuggingFace (usuario beike97): https://huggingface.co/beike97/MiniMax-H3
-- Repositorio oficial de HuggingFace (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Repositorio de Hugging Face (usuario beike97): https://huggingface.co/beike97/MiniMax-H3
+- Repositorio oficial de Hugging Face (MiniMaxAI): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio oficial en GitHub: https://github.com/MiniMax-AI/MiniMax-H3
 - Blog oficial de MiniMax sobre el modelo: https://www.minimax.io/blog/minimax-h3
 - Web de Hailuo AI (app online): https://hailuoai.video/tools/minimax-h3

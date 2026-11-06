@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Maske es un modelo de clasificación de tokens (NER) especializado en la detección de datos personales (PII) en texto turco, desarrollado por el usuario emi08 y publicado en HuggingFace. El modelo identifica nueve tipos de entidades personales: personas (PER), organizaciones (ORG), lugares (LOC), direcciones (ADDR), números de identidad turcos (TC_NO), IBAN, teléfonos (PHONE), matrículas (PLATE) y correos electrónicos (EMAIL), mediante un esquema BIO con 19 etiquetas en total. Su propósito principal es dar soporte a las obligaciones de enmascaramiento y anonimización establecidas por la ley turca de protección de datos (KVKK, ley 6698), en escenarios como correos de clientes, tickets de soporte y documentos de entrega.
+Maske es un modelo de clasificación de tokens (NER) especializado en la detección de datos personales (PII) en texto turco, desarrollado por el usuario emi08 y publicado en Hugging Face. El modelo identifica nueve tipos de entidades personales: personas (PER), organizaciones (ORG), lugares (LOC), direcciones (ADDR), números de identidad turcos (TC_NO), IBAN, teléfonos (PHONE), matrículas (PLATE) y correos electrónicos (EMAIL), mediante un esquema BIO con 19 etiquetas en total. Su propósito principal es dar soporte a las obligaciones de enmascaramiento y anonimización establecidas por la ley turca de protección de datos (KVKK, ley 6698), en escenarios como correos de clientes, tickets de soporte y documentos de entrega.
 
 El modelo es un fine-tuning de ytu-ce-cosmos/modernbert-tr-base, un ModernBERT entrenado en turco con aproximadamente 150 millones de parámetros. Los pesos del cuerpo provienen de un ajuste previo sobre WikiANN-tr, y la cabeza de clasificación se reinició para las 19 etiquetas. El entrenamiento combina datos sintéticos (inyección de entidades en frases portadoras neutras) con una mezcla de replay de WikiANN.
 
@@ -34,7 +34,7 @@ El entrenamiento emplea una receta de datos sintéticos: inyección de entidades
 - Enmascaramiento de texto sustituyendo entidades por marcadores como [PER], [TC_NO], etc., mediante la función de máscara incluida en el ejemplo de uso.
 - Reconocimiento de entidades con morfología turca compleja, como nombres con sufijos casuales (Ayşe'ye, Ahmet'ten).
 - Detección de campos estructurados con validación formal: números de identidad turcos de 11 dígitos con dígito de control e IBAN turcos con validación mod-97.
-- Integración con la pipeline token-classification de HuggingFace Transformers con aggregation_strategy="simple".
+- Integración con la pipeline token-classification de Hugging Face Transformers con aggregation_strategy="simple".
 - No soporta generación de texto, razonamiento, código ni modalidades de visión o audio: es un modelo exclusivamente de extracción de entidades.
 - No hay soporte documentado de tool calling ni capacidades agénticas.
 
@@ -66,7 +66,7 @@ El autor advierte explícitamente que ningún resultado procede de texto turco c
 - VRAM estimada para inferencia: con ~150M de parámetros en fp32, el modelo ocupa unos 0,6 GB; en inferencia se estima menos de 1 GB de VRAM, e incluso puede ejecutarse en CPU sin problema.
 - GPU recomendadas: no requiere GPU dedicada; cualquier GPU moderna (incluso una GTX 1650 o una T4) es más que suficiente. Para lotes grandes, una T4 o A10G acelera el procesado masivo de documentos.
 - Consumer GPUs: cabe con holgura en cualquier GPU de consumo actual; la inferencia en CPU es perfectamente viable para volúmenes bajos y medios.
-- Opciones de despliegue: HuggingFace Transformers (pipeline token-classification, como muestra la model card), con compatibilidad endpoints_compatible. No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI; al ser un modelo encoder de transformers, el despliegue natural es mediante Transformers, Inference Endpoints de HuggingFace o servicios de inferencia para modelos encoder.
+- Opciones de despliegue: Hugging Face Transformers (pipeline token-classification, como muestra la model card), con compatibilidad endpoints_compatible. No se menciona soporte específico para vLLM, llama.cpp, Ollama o TGI; al ser un modelo encoder de transformers, el despliegue natural es mediante Transformers, Inference Endpoints de Hugging Face o servicios de inferencia para modelos encoder.
 - Latencia y throughput: no disponibles; al tratarse de un encoder de 150M de parámetros, se esperan latencias de milisegundos por documento en GPU.
 
 ## Comparativa con modelos similares
@@ -94,7 +94,7 @@ Maske se distingue de los NER turcos genéricos por cubrir tipos de PII específ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/emi08/maske
+- Modelo en Hugging Face: https://huggingface.co/emi08/maske
 - Repositorio GitHub del proyecto: https://github.com/emi0890/maske
 - Baseline BERTurk del mismo autor: https://huggingface.co/emi08/maske-berturk-baseline
 - Comparativa ModernBERT (bake-off): https://huggingface.co/emi08/maske-modernbert-tr-bakeoff

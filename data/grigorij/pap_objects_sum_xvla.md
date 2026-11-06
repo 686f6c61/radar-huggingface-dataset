@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Grigorij/PaP_objects_sum_xvla | 879,7M | no disponible | Manipulacion robotica (3 tareas) | Apache 2.0 | HuggingFace |
-| lerobot/xvla-base | no disponible | no disponible | VLA general (preentrenado) | Apache 2.0 | HuggingFace |
-| OpenVLA (base) | ~7B | no disponible | VLA general | MIT (pesos) | HuggingFace |
+| Grigorij/PaP_objects_sum_xvla | 879,7M | no disponible | Manipulacion robotica (3 tareas) | Apache 2.0 | Hugging Face |
+| lerobot/xvla-base | no disponible | no disponible | VLA general (preentrenado) | Apache 2.0 | Hugging Face |
+| OpenVLA (base) | ~7B | no disponible | VLA general | MIT (pesos) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en las mismas tareas. La comparativa se limita a parametros y licencia, y no hay informacion publica sobre como se comporta este fine-tuning frente a otros VLA en el dataset `PaP_objects_sum`.
 
@@ -73,11 +73,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en las mis
 - No se especifican idiomas soportados; las instrucciones de tarea estan en ingles y es probable que el modelo solo responda correctamente a prompts en ese idioma.
 - Al ser un modelo de politica (no un LLM conversacional), no tiene capacidades de razonamiento general, tool calling ni generacion de texto libre.
 - La licencia Apache 2.0 permite uso comercial, pero el modelo base y el dataset asociado pueden tener restricciones adicionales; se recomienda revisar la licencia del dataset `Grigorij/PaP_objects_sum`.
-- El modelo fue creado en 2026 (segun la fecha de creacion en HuggingFace), lo que puede indicar que la informacion del paper o del framework ha evolucionado desde entonces; verificar la version actual de X-VLA.
+- El modelo fue creado en 2026 (segun la fecha de creacion en Hugging Face), lo que puede indicar que la informacion del paper o del framework ha evolucionado desde entonces; verificar la version actual de X-VLA.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Grigorij/PaP_objects_sum_xvla)
+- [Modelo en Hugging Face](https://huggingface.co/Grigorij/PaP_objects_sum_xvla)
 - [Paper X-VLA (arxiv:2510.10274)](https://huggingface.co/papers/2510.10274)
 - [Dataset de entrenamiento](https://huggingface.co/datasets/Grigorij/PaP_objects_sum)
 - [Modelo base lerobot/xvla-base](https://huggingface.co/lerobot/xvla-base)

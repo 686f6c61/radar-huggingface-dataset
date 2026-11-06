@@ -76,7 +76,7 @@ La comparativa muestra que el modelo base Qwen3.8-27B es más completo (incluye 
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/mradermacher/Barcenas-Qwen3.8-27B-Fable-GGUF)
+- [Página del modelo en Hugging Face](https://huggingface.co/mradermacher/Barcenas-Qwen3.8-27B-Fable-GGUF)
 - [Modelo base (Danielbrdz/Barcenas-Qwen3.8-27B-Fable)](https://huggingface.co/Danielbrdz/Barcenas-Qwen3.8-27B-Fable)
 - [Qwen3.8-27B original (Alibaba)](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [Documentación de Qwen3.8-27B en vLLM](https://recipes.vllm.ai/Qwen/Qwen3.8-27B)

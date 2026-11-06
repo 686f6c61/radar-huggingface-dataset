@@ -76,9 +76,9 @@ La comparación se establece a nivel del modelo base y de alternativas públicas
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Qwen3-1.7B) | 1,7 B + LoRA rango 16 | 8.192 tokens en entrenamiento | No disponible | Público en HuggingFace, 0 descargas |
-| Qwen3-1.7B (modelo base) | 1,7 B | No disponible en esta información | No disponible | Público en HuggingFace, revisión fijada |
-| Alternativas densas de ~1-2 B (Llama 3.2 1B, SmolLM2 1.7B, Gemma 3 1B) | 1-2 B | No disponible | No disponible | Públicas en HuggingFace |
+| Este adaptador (sobre Qwen3-1.7B) | 1,7 B + LoRA rango 16 | 8.192 tokens en entrenamiento | No disponible | Público en Hugging Face, 0 descargas |
+| Qwen3-1.7B (modelo base) | 1,7 B | No disponible en esta información | No disponible | Público en Hugging Face, revisión fijada |
+| Alternativas densas de ~1-2 B (Llama 3.2 1B, SmolLM2 1.7B, Gemma 3 1B) | 1-2 B | No disponible | No disponible | Públicas en Hugging Face |
 
 No se dispone de datos de rendimiento (MMLU, GSM8K, HumanEval u otros) para este adaptador ni para una comparación cuantitativa fiable con las alternativas, por lo que no se incluyen cifras.
 

@@ -61,10 +61,10 @@ Segun la informacion disponible, el modelo alcanza un AP de 39.8 en COCO object 
 
 | Modelo | Parametros | Longitud de contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GuiAworld/Florence-2-large | 776,7 M | 4.096 | COCO OD AP 39.8 | MIT | HuggingFace |
-| microsoft/Florence-2-base | 0,23 B | no disponible | no disponible | MIT | HuggingFace |
-| microsoft/Florence-2-large | 0,77 B | no disponible | no disponible | MIT | HuggingFace |
-| microsoft/Florence-2-large-ft | 0,77 B | no disponible | no disponible | MIT | HuggingFace |
+| GuiAworld/Florence-2-large | 776,7 M | 4.096 | COCO OD AP 39.8 | MIT | Hugging Face |
+| microsoft/Florence-2-base | 0,23 B | no disponible | no disponible | MIT | Hugging Face |
+| microsoft/Florence-2-large | 0,77 B | no disponible | no disponible | MIT | Hugging Face |
+| microsoft/Florence-2-large-ft | 0,77 B | no disponible | no disponible | MIT | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -77,7 +77,7 @@ Segun la informacion disponible, el modelo alcanza un AP de 39.8 en COCO object 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GuiAworld/Florence-2-large
+- Modelo en Hugging Face: https://huggingface.co/GuiAworld/Florence-2-large
 - Modelo original de Microsoft: https://huggingface.co/microsoft/Florence-2-large
 - Comunidad Florence: https://huggingface.co/florence-community/Florence-2-large
 - Informe tecnico de Florence-2: https://arxiv.org/abs/2311.06242

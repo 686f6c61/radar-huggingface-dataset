@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `radwahamada1/industrial-rul-lstm` es un modelo publicado en HuggingFace por el usuario radwahamada1, con licencia Apache-2.0. Su nombre sugiere que está diseñado para la predicción de la vida útil restante (Remaining Useful Life, RUL) en entornos industriales, una tarea clave en el mantenimiento predictivo. Sin embargo, la model card proporcionada es prácticamente vacía: solo incluye la licencia y no ofrece información sobre arquitectura, parámetros, datos de entrenamiento, capacidades o benchmarks. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo.
+El modelo `radwahamada1/industrial-rul-lstm` es un modelo publicado en Hugging Face por el usuario radwahamada1, con licencia Apache-2.0. Su nombre sugiere que está diseñado para la predicción de la vida útil restante (Remaining Useful Life, RUL) en entornos industriales, una tarea clave en el mantenimiento predictivo. Sin embargo, la model card proporcionada es prácticamente vacía: solo incluye la licencia y no ofrece información sobre arquitectura, parámetros, datos de entrenamiento, capacidades o benchmarks. El repositorio tiene un tamaño de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo.
 
 A pesar de la falta de documentación, el contexto técnico de los modelos LSTM para RUL es bien conocido: se trata de redes neuronales recurrentes que procesan series temporales de sensores para estimar cuándo un componente fallará. Este tipo de modelos se utiliza en industrias como la aeroespacial, la manufactura o la energía para optimizar programas de mantenimiento y evitar paradas no planificadas. No obstante, sin datos concretos del modelo, cualquier afirmación sobre su funcionamiento específico debe tratarse como especulativa.
 
@@ -68,7 +68,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/radwahamada1/industrial-rul-lstm
+- Modelo en Hugging Face: https://huggingface.co/radwahamada1/industrial-rul-lstm
 - Repositorio de referencia sobre RUL con LSTM: https://github.com/pratikshimpi10/Remaining-Useful-Life-RUL-Prediction-Using-Machine-Learning
 - Articulo de revision sobre prediccion de RUL: https://www.sciencedirect.com/science/article/pii/S2666827025000878
 - Sistema de mantenimiento predictivo con LSTM y dashboard: https://github.com/mohamedrefaeii/predictive-maintenance

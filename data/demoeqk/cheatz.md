@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Cheatz es un modelo publicado en HuggingFace por el usuario demoeqk bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades, por lo que no es posible determinar qué tipo de modelo es ni qué problema resuelve. El repositorio tiene un tamaño de 0,3 GB, lo que sugiere pesos de un modelo de pequeno tamano, pero este dato por si solo no permite confirmar la arquitectura ni el numero de parametros.
+Cheatz es un modelo publicado en Hugging Face por el usuario demoeqk bajo licencia Apache 2.0. La model card asociada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni información sobre capacidades, por lo que no es posible determinar qué tipo de modelo es ni qué problema resuelve. El repositorio tiene un tamaño de 0,3 GB, lo que sugiere pesos de un modelo de pequeno tamano, pero este dato por si solo no permite confirmar la arquitectura ni el numero de parametros.
 
-El modelo no registra descargas ni likes en el momento de la consulta y fue creado el 27 de octubre de 2026, con una unica actualizacion posterior el mismo dia. No dispone de pipeline declarado ni de idiomas soportados en los metadatos de HuggingFace. La ausencia de documentacion y de resultados de evaluacion hace imposible recomendarlo para uso en produccion o para tareas concretas sin una inspeccion directa de los pesos y una evaluacion propia.
+El modelo no registra descargas ni likes en el momento de la consulta y fue creado el 27 de octubre de 2026, con una unica actualizacion posterior el mismo dia. No dispone de pipeline declarado ni de idiomas soportados en los metadatos de Hugging Face. La ausencia de documentacion y de resultados de evaluacion hace imposible recomendarlo para uso en produccion o para tareas concretas sin una inspeccion directa de los pesos y una evaluacion propia.
 
 Esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente como "no disponible" cualquier dato que no figure en la informacion proporcionada. No se han inventado especificaciones, benchmarks ni capacidades.
 
@@ -23,7 +23,7 @@ Esta ficha se limita a reflejar los metadatos disponibles y marca explicitamente
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura de espacio de estados (SSM) o un modelo hibrido. Tampoco hay datos sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF, DPO u otras tecnicas de alineacion, ni sobre innovaciones tecnicas como decodificacion especulativa o atencion lineal.
 
 El unico dato objetivo disponible es el tamano del repositorio (0,3 GB), que es compatible con pesos de un modelo de parametros reducidos o con una version cuantizada, pero no permite inferir la arquitectura ni el regimen de entrenamiento. No se dispone de informacion sobre el proceso de entrenamiento.
 
@@ -73,5 +73,5 @@ No disponible. No se dispone de informacion sobre la categoria, el tamano ni las
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/demoeqk/cheatz
+- Hugging Face: https://huggingface.co/demoeqk/cheatz
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion proporcionada.

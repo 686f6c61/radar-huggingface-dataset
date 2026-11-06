@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`unl-reset/...forget05...epoch20`) | 1,418 B | no disponible | Olvido selectivo TOFU (forget05) | Apache 2.0 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` (modelo base) | ~1,3 B | no disponible | Ajuste supervisado sobre TOFU sin olvido | no disponible en la información | HuggingFace |
-| `microsoft/phi-1_5` (origen de embeddings y LM head) | ~1,3 B | 2.048 tokens (familia Phi-1.5) | Modelo de propósito general para código y razonamiento básico | MIT (familia Phi-1.5) | HuggingFace, ampliamente distribuido |
-| Otros checkpoints de la serie `unl-reset` | ~1,3 B | no disponible | Variantes de la misma receta (distintos conjuntos de olvido o ablaciones) | Apache 2.0 | HuggingFace |
+| Este checkpoint (`unl-reset/...forget05...epoch20`) | 1,418 B | no disponible | Olvido selectivo TOFU (forget05) | Apache 2.0 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` (modelo base) | ~1,3 B | no disponible | Ajuste supervisado sobre TOFU sin olvido | no disponible en la información | Hugging Face |
+| `microsoft/phi-1_5` (origen de embeddings y LM head) | ~1,3 B | 2.048 tokens (familia Phi-1.5) | Modelo de propósito general para código y razonamiento básico | MIT (familia Phi-1.5) | Hugging Face, ampliamente distribuido |
+| Otros checkpoints de la serie `unl-reset` | ~1,3 B | no disponible | Variantes de la misma receta (distintos conjuntos de olvido o ablaciones) | Apache 2.0 | Hugging Face |
 
 La comparación relevante es frente al modelo base sin olvidar: la diferencia esperada se concentra en la probabilidad asignada a las respuestas del conjunto `forget05`, no en el tamaño ni en la arquitectura.
 
@@ -84,7 +84,7 @@ La comparación relevante es frente al modelo base sin olvidar: la diferencia es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch20
+- Modelo en Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget05-ihl_reset_both-epoch20
 - Modelo base ajustado: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original de Microsoft: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

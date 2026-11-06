@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ApexCode-14B-Instruct es una distribución optimizada para inferencia local del modelo Qwen2.5-Coder-14B-Instruct, publicada por el desarrollador independiente Nilesh Chakraborty (nileshc90) en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un empaquetado de pesos cuantizados en GGUF (Q5_K_M y Q4_K_M) junto con un modelo borrador (draft) de 0,5B en Q8_0 para decodificación especulativa, orientado a estaciones de trabajo con 36 GB de RAM y a Macs con Apple Silicon.
+ApexCode-14B-Instruct es una distribución optimizada para inferencia local del modelo Qwen2.5-Coder-14B-Instruct, publicada por el desarrollador independiente Nilesh Chakraborty (nileshc90) en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un empaquetado de pesos cuantizados en GGUF (Q5_K_M y Q4_K_M) junto con un modelo borrador (draft) de 0,5B en Q8_0 para decodificación especulativa, orientado a estaciones de trabajo con 36 GB de RAM y a Macs con Apple Silicon.
 
 El objetivo declarado es ofrecer una experiencia de generación de código con velocidades de 45–65 tokens por segundo y una ventana de contexto de 32.768 tokens, dejando más de 22 GB de RAM libres para el sistema operativo, el IDE y contenedores Docker. La arquitectura subyacente es la del transformer decoder-only de Qwen2.5-Coder, con atención de escala completa y un total de 14.700 millones de parámetros en el modelo base (según la ficha del modelo original de Qwen).
 
@@ -94,9 +94,9 @@ La comparación con CodeStral-22B procede del propio autor; el resto de datos se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nileshc90/apex-code-14b-instruct
+- Hugging Face: https://huggingface.co/nileshc90/apex-code-14b-instruct
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-14B-Instruct
 - Repositorio de optimización y serving: https://github.com/nileshchakraborty/apex-code-36gb
-- Documentación de Ollama para modelos de HuggingFace: https://ollama.com/blog/ollama-models-on-hugging-face
+- Documentación de Ollama para modelos de Hugging Face: https://ollama.com/blog/ollama-models-on-hugging-face
 - llama.cpp (decodificación especulativa): https://github.com/ggerganov/llama.cpp
 - Continue.dev: https://continue.dev

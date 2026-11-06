@@ -79,9 +79,9 @@ La comparativa es limitada porque este checkpoint es intermedio y no está pensa
 
 ## Enlaces
 
-- [HuggingFace: inclusionAI/Ling-3.0-flash-base-30T](https://huggingface.co/inclusionAI/Ling-3.0-flash-base-30T)
-- [HuggingFace: inclusionAI/Ling-3.0-flash (modelo post-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
-- [HuggingFace: inclusionAI (organización)](https://huggingface.co/inclusionAI)
+- [Hugging Face: inclusionAI/Ling-3.0-flash-base-30T](https://huggingface.co/inclusionAI/Ling-3.0-flash-base-30T)
+- [Hugging Face: inclusionAI/Ling-3.0-flash (modelo post-entrenado)](https://huggingface.co/inclusionAI/Ling-3.0-flash)
+- [Hugging Face: inclusionAI (organización)](https://huggingface.co/inclusionAI)
 - [ModelScope: inclusionAI](https://modelscope.cn/organization/inclusionAI)
 - [OpenRouter: Ling-3.0-flash](https://openrouter.ai/inclusionai/ling-3.0-flash:free)
 - [Paper WSM: arXiv:2507.17634](https://arxiv.org/abs/2507.17634)

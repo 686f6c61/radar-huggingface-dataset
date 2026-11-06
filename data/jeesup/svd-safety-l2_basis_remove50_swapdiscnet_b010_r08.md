@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`svd-safety-l2_basis_remove50_swapdiscnet_b010_r08` es un checkpoint de investigación publicado por el usuario Jeesup en HuggingFace, derivado de `meta-llama/Llama-2-7b-chat-hf`. No es un modelo conversacional de propósito general: es una celda concreta de una matriz experimental que estudia cómo la compresión basada en descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El modelo parte de una compresión por Basis Sharing (ICLR 2025), que comparte bases SVD entre grupos de dos capas adyacentes y elimina el 50,00 % de los parámetros densos, y después aplica 8 de 10 rondas de una edición iterativa de parámetros neutros guiada por la regla `swapdiscnet_iter`.
+`svd-safety-l2_basis_remove50_swapdiscnet_b010_r08` es un checkpoint de investigación publicado por el usuario Jeesup en Hugging Face, derivado de `meta-llama/Llama-2-7b-chat-hf`. No es un modelo conversacional de propósito general: es una celda concreta de una matriz experimental que estudia cómo la compresión basada en descomposición en valores singulares (SVD) degrada el comportamiento de seguridad de un LLM y qué regla de selección de componentes repara mejor ese daño. El modelo parte de una compresión por Basis Sharing (ICLR 2025), que comparte bases SVD entre grupos de dos capas adyacentes y elimina el 50,00 % de los parámetros densos, y después aplica 8 de 10 rondas de una edición iterativa de parámetros neutros guiada por la regla `swapdiscnet_iter`.
 
 El checkpoint resultante conserva 6.738.415.616 parámetros según los pesos en safetensors, la misma cifra que el modelo base, con una fracción de parámetros densos declarada de 0,4998 y 51.774.208 parámetros intercambiados (0,80 % de los parámetros de proyección). La recuperación se hizo con un LoRA de rango 8 entrenado únicamente sobre los coeficientes por capa, con las bases congeladas y el presupuesto sin cambios, durante 2 épocas con `alpaca-cleaned`.
 
@@ -85,8 +85,8 @@ No se han publicado resultados de benchmarks de capacidad general en la informac
 
 | Modelo | Parametros | Contexto | Licencia | AdvBench ASR | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint | 6,74 B (fraccion densa 0,4998) | no disponible | Llama 2 Community License | 0,0346 | Publico en HuggingFace, 0 descargas, 0 likes |
-| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 B | 4096 tokens (dato del modelo base) | Llama 2 Community License | no disponible en esta ficha | Publico en HuggingFace |
+| Este checkpoint | 6,74 B (fraccion densa 0,4998) | no disponible | Llama 2 Community License | 0,0346 | Publico en Hugging Face, 0 descargas, 0 likes |
+| meta-llama/Llama-2-7b-chat-hf (base) | 6,74 B | 4096 tokens (dato del modelo base) | Llama 2 Community License | no disponible en esta ficha | Publico en Hugging Face |
 | Otros brazos del mismo estudio (reglas y presupuestos alternativos) | ~6,74 B | no disponible | Llama 2 Community License | no disponible | Publicados por el mismo autor, no verificados |
 
 No se dispone de datos comparativos con otras técnicas de compresión (SliceGPT, SVD-LLM u otras) en la información proporcionada.
@@ -106,7 +106,7 @@ No se dispone de datos comparativos con otras técnicas de compresión (SliceGPT
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r08
+- Modelo en Hugging Face: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r08
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Licencia Llama 2 incluida en el repositorio: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r08/blob/main/LICENSE.txt
 - Política de uso incluida en el repositorio: https://huggingface.co/Jeesup/svd-safety-l2_basis_remove50_swapdiscnet_b010_r08/blob/main/USE_POLICY.md

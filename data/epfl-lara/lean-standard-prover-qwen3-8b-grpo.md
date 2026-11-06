@@ -23,7 +23,7 @@ Es relevante porque aborda una tarea muy concreta y verificable: la generación 
 | Modelo base | Qwen/Qwen3-8B-Base (relacion: finetune) |
 | Tarea | Text-generation (demostracion de teoremas en Lean 4) |
 | Datasets de entrenamiento | EPFL-LARA/lean-world-model-cpt, EPFL-LARA/lean-world-model-sft, Goedel-LM/RL_dataset_V2 |
-| Fecha de creacion (HuggingFace) | 2026-10-16 |
+| Fecha de creacion (Hugging Face) | 2026-10-16 |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -74,8 +74,8 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| EPFL-LARA/lean-standard-prover-qwen3-8b-grpo | 8,19 mil millones | 32.768 tokens (runner documentado) | No disponible | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3-8B-Base (modelo base) | Aproximadamente 8 mil millones (no disponible el dato exacto en la informacion proporcionada) | No disponible | No disponible | HuggingFace |
+| EPFL-LARA/lean-standard-prover-qwen3-8b-grpo | 8,19 mil millones | 32.768 tokens (runner documentado) | No disponible | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3-8B-Base (modelo base) | Aproximadamente 8 mil millones (no disponible el dato exacto en la informacion proporcionada) | No disponible | No disponible | Hugging Face |
 | Otros demostradores de teoremas de ~7-8B | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -92,12 +92,12 @@ No se dispone de datos de rendimiento de este modelo, por lo que la comparacion 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-grpo
+- Modelo en Hugging Face: https://huggingface.co/EPFL-LARA/lean-standard-prover-qwen3-8b-grpo
 - Coleccion "Formal Theorem Proving with Lean World Models": https://huggingface.co/collections/EPFL-LARA/formal-theorem-proving-with-lean-world-models-6ad2b4aa4400b3e2933f380d
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
 - Dataset de preentrenamiento continuado: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-cpt
 - Dataset de ajuste supervisado: https://huggingface.co/datasets/EPFL-LARA/lean-world-model-sft
 - Dataset de refuerzo: https://huggingface.co/datasets/Goedel-LM/RL_dataset_V2
-- Organizacion EPFL-LARA en HuggingFace: https://huggingface.co/EPFL-LARA
+- Organizacion EPFL-LARA en Hugging Face: https://huggingface.co/EPFL-LARA
 - Sitio de EPFL: https://www.epfl.ch/
 - Nota: la busqueda web realizada no devolvio papers, blogs ni repositorios especificos de este modelo; los unicos resultados obtenidos fueron paginas institucionales generales sobre EPFL.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `seomh/opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10` es un ajuste fino alojado en HuggingFace por el usuario `seomh`, publicado el 12 de octubre de 2026. El identificador y las etiquetas (`safetensors`, `qwen3`) apuntan a un ajuste supervisado (SFT) sobre un modelo de la familia Qwen3 con arquitectura Mixture-of-Experts, presumiblemente el checkpoint intermedio número 10 de una ejecución de entrenamiento de 2000 pasos sobre un corpus de matemáticas. No se ha publicado model card, por lo que la mayor parte de los metadatos (licencia, idiomas, contexto, dataset exacto) no están confirmados.
+El modelo `seomh/opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10` es un ajuste fino alojado en Hugging Face por el usuario `seomh`, publicado el 12 de octubre de 2026. El identificador y las etiquetas (`safetensors`, `qwen3`) apuntan a un ajuste supervisado (SFT) sobre un modelo de la familia Qwen3 con arquitectura Mixture-of-Experts, presumiblemente el checkpoint intermedio número 10 de una ejecución de entrenamiento de 2000 pasos sobre un corpus de matemáticas. No se ha publicado model card, por lo que la mayor parte de los metadatos (licencia, idiomas, contexto, dataset exacto) no están confirmados.
 
 El dato más llamativo es la discrepancia entre el nombre y el contenido real: pese a que el identificador incluye `qwen3moe30b`, el recuento de parámetros almacenados en los ficheros safetensors es de 8.190.735.360 (unos 8,19 mil millones), muy por debajo de los ~30.000 millones que sugiere la nomenclatura. El repositorio ocupa 16,4 GB y los pesos están en BF16. Esto sugiere un modelo recortado, un checkpoint parcial o una configuración que no se explica en la información disponible.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `seomh/...qwen3moe30b-ot3math-step10` | 8,19B (safetensors) | no disponible | no disponible | no disponible | HuggingFace, 7 descargas |
-| Qwen3-30B-A3B (base presumible) | ~30B | ~3B | 32K nativo (ampliable) | Apache 2.0 (según anuncio de Alibaba) | HuggingFace y proveedores de inferencia |
-| Qwen3-8B (alternativa densa de tamaño similar) | ~8B | no aplica | 32K nativo (ampliable) | Apache 2.0 (según anuncio de Alibaba) | HuggingFace y proveedores de inferencia |
-| Qwen2.5-Math-7B-Instruct | ~7B | no aplica | no disponible | licencia Qwen | HuggingFace |
+| `seomh/...qwen3moe30b-ot3math-step10` | 8,19B (safetensors) | no disponible | no disponible | no disponible | Hugging Face, 7 descargas |
+| Qwen3-30B-A3B (base presumible) | ~30B | ~3B | 32K nativo (ampliable) | Apache 2.0 (según anuncio de Alibaba) | Hugging Face y proveedores de inferencia |
+| Qwen3-8B (alternativa densa de tamaño similar) | ~8B | no aplica | 32K nativo (ampliable) | Apache 2.0 (según anuncio de Alibaba) | Hugging Face y proveedores de inferencia |
+| Qwen2.5-Math-7B-Instruct | ~7B | no aplica | no disponible | licencia Qwen | Hugging Face |
 
 Los datos de las filas de Qwen3 proceden del anuncio público de Alibaba sobre la familia Qwen3 (seis modelos densos y dos MoE). Para el modelo objeto de esta ficha, la mayoría de las celdas son «no disponible» por ausencia de model card.
 
@@ -88,7 +88,7 @@ Los datos de las filas de Qwen3 proceden del anuncio público de Alibaba sobre l
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/seomh/opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10
+- Hugging Face del modelo: https://huggingface.co/seomh/opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10
 - Repositorio hermano (step20): https://huggingface.co/seomh/opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20
 - Repositorio hermano (step10, otra tasa): https://huggingface.co/seomh/opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10
 - Anuncio de Alibaba sobre la familia Qwen3: https://home.alibabagroup.com/en-US/document-1853940226976645120

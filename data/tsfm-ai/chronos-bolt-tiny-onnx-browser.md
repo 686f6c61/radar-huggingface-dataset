@@ -74,8 +74,8 @@ El propio autor advierte que estas cifras son comprobaciones numericas locales y
 
 | Modelo | Formato | Contexto | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TSFM-ai/chronos-bolt-tiny-onnx-browser | ONNX (WASM en navegador) | 512 pasos fijos | 9 cuantiles x 64 pasos | Apache 2.0 | HuggingFace, export de terceros |
-| amazon/chronos-bolt-tiny (modelo base) | PyTorch (pesos originales) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | HuggingFace, autor original |
+| TSFM-ai/chronos-bolt-tiny-onnx-browser | ONNX (WASM en navegador) | 512 pasos fijos | 9 cuantiles x 64 pasos | Apache 2.0 | Hugging Face, export de terceros |
+| amazon/chronos-bolt-tiny (modelo base) | PyTorch (pesos originales) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | Apache 2.0 | Hugging Face, autor original |
 | Otras variantes de la familia Chronos-Bolt (mini, small, base) | no disponible en la informacion proporcionada | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 La comparacion mas directa y verificable es con el propio modelo base: este artefacto comparte pesos y arquitectura con `amazon/chronos-bolt-tiny` y solo difiere en el formato de serializacion (ONNX) y en el objetivo de ejecucion (navegador). No se dispone de datos de rendimiento de modelos alternativos dentro de la informacion proporcionada, por lo que no se puede establecer una comparacion cuantitativa de calidad de prevision.
@@ -93,7 +93,7 @@ La comparacion mas directa y verificable es con el propio modelo base: este arte
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TSFM-ai/chronos-bolt-tiny-onnx-browser
+- Modelo en Hugging Face: https://huggingface.co/TSFM-ai/chronos-bolt-tiny-onnx-browser
 - Modelo base: https://huggingface.co/amazon/chronos-bolt-tiny
 - Repositorio de origen: https://github.com/amazon-science/chronos-forecasting
 - Script de exportacion: `export.py` (referenciado en la model card, alojado en el repositorio del autor)

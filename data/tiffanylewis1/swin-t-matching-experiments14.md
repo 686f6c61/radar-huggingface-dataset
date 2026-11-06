@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tiffanylewis1/swin-t-matching-experiments14` es un prototipo de investigación publicado en HuggingFace por el usuario tiffanylewis1. Se presenta como una implementación de Swin Transformer en su variante "tiny" (`swin_t`) orientada a tareas de *matching* (emparejamiento entre pares de entradas), con atención estándar, fusión mediante concatenación y MLP, activación GELU y normalización ScaleNorm. No es un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida solo para pruebas de humo.
+`tiffanylewis1/swin-t-matching-experiments14` es un prototipo de investigación publicado en Hugging Face por el usuario tiffanylewis1. Se presenta como una implementación de Swin Transformer en su variante "tiny" (`swin_t`) orientada a tareas de *matching* (emparejamiento entre pares de entradas), con atención estándar, fusión mediante concatenación y MLP, activación GELU y normalización ScaleNorm. No es un modelo entrenado: el checkpoint `model.safetensors` se describe explícitamente como una inicialización válida solo para pruebas de humo.
 
 El interés del repositorio es fundamentalmente metodológico. Incluye `run.py` como artefacto principal (modelo y punto de entrada ejecutable), `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador NovoGrad con schedule coseno). El autor no reclama ninguna métrica de benchmark y advierte de que las cifras de rendimiento no están verificadas.
 
@@ -45,7 +45,7 @@ No hay evidencia de entrenamiento completado. El autor indica que la receta incl
 - Pruebas de humo de infraestructura: al ser un checkpoint válido de inicialización, permite verificar pipelines de carga de pesos, serialización safetensors y ejecución del script antes de lanzar entrenamientos costosos.
 - Ablaciones de normalización y fusión: ScaleNorm y la fusión concat + MLP son decisiones concretas que se pueden aislar y medir frente a LayerNorm o atención cruzada en un mismo presupuesto de datos.
 - Docencia y formación interna: un modelo de 24.832 parámetros con código legible permite ilustrar el ciclo completo de configuración, inicialización y evaluación sin requerir hardware especializado.
-- Validación de formatos y *tooling* de HuggingFace: útil para comprobar que scripts propios de conversión o carga manejan correctamente repositorios que no usan APIs automáticas y requieren un adaptador explícito.
+- Validación de formatos y *tooling* de Hugging Face: útil para comprobar que scripts propios de conversión o carga manejan correctamente repositorios que no usan APIs automáticas y requieren un adaptador explícito.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El p
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `tiffanylewis1/swin-t-matching-experiments14` | 24.832 (según safetensors) | No disponible | Sin benchmarks; checkpoint sin entrenar | MIT | HuggingFace, 0 descargas |
+| `tiffanylewis1/swin-t-matching-experiments14` | 24.832 (según safetensors) | No disponible | Sin benchmarks; checkpoint sin entrenar | MIT | Hugging Face, 0 descargas |
 | Swin-T original (referencia pública, torchvision) | ~28 M (cifra aproximada de referencia) | Imagen, resolución configurable | Preentrenado en ImageNet-1k; métricas públicas | MIT / BSD según distribución | Ampliamente disponible |
 | CLIP ViT-B/32 (referencia pública para emparejamiento multimodal) | ~88 M en la torre de visión (cifra aproximada) | Imagen + texto | Preentrenado y evaluado en tareas de *retrieval* | MIT | Ampliamente disponible |
 
@@ -83,5 +83,5 @@ La comparación es desigual por diseño: los dos modelos de referencia son pesos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tiffanylewis1/swin-t-matching-experiments14
+- Hugging Face: https://huggingface.co/tiffanylewis1/swin-t-matching-experiments14
 - Resultados de búsqueda web: no se han encontrado enlaces relevantes al modelo, al paper ni al repositorio. Las búsquedas devolvieron únicamente páginas de Google Flights sin relación con el artefacto.

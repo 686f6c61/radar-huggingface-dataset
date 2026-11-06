@@ -103,7 +103,7 @@ El autor señala que la coherencia JevBench del checkpoint NVFP4 está a la par 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/LFM2.5-230M-openjev-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/iromu/LFM2.5-230M-openjev-NVFP4
 - Modelo BF16 y tabla de validación: https://huggingface.co/iromu/LFM2.5-230M-openjev
 - Cuantizaciones GGUF: https://huggingface.co/iromu/LFM2.5-230M-openjev-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-230M-Base

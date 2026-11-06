@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas versiones.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-nvfp4_r32
+- Modelo en Hugging Face: https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-nvfp4_r32
 - Versión int4 del mismo modelo: https://huggingface.co/ModelsLab/MiniMax-H3-svdquant-int4_r32
 - Modelo base MiniMax-H3: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub del hub MiniMax-H3: https://github.com/ai-models-lab/minimax-h3

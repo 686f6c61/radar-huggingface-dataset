@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto / entrada | Accuracy CIFAR-10 test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| IOC-NN (dhr-m/smai-a4-iocnn) | 394.634 | Imagen 32×32×3 (3072 valores) | 0,4710 | no disponible | HuggingFace, pesos NumPy |
+| IOC-NN (dhr-m/smai-a4-iocnn) | 394.634 | Imagen 32×32×3 (3072 valores) | 0,4710 | no disponible | Hugging Face, pesos NumPy |
 | MLP estándar 3072 → 128 → 10 sin restricción | ~394.634 (misma topología) | Imagen 32×32×3 | no disponible en la información | no disponible | no disponible |
 | LeNet-5 (referencia histórica CIFAR-10) | ~60.000 | Imagen 32×32×3 | no disponible en la información | no disponible | no disponible |
 
@@ -87,6 +87,6 @@ No se dispone de datos numéricos de modelos comparables en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dhr-m/smai-a4-iocnn
+- Modelo en Hugging Face: https://huggingface.co/dhr-m/smai-a4-iocnn
 - Dataset CIFAR-10 referenciado: https://huggingface.co/datasets/uoft-cs/cifar10
 - No se han encontrado en la información disponible papers, blogs, repositorios ni demos adicionales asociados al modelo.

@@ -89,11 +89,11 @@ Comparativa con otros sistemas sobre los mismos conjuntos held-out, contando sol
 
 | Modelo | Parametros / tamano | Arquitectura | Exact match (TOPv2) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| tinycron | 1,5 MB (int8) | GRU a nivel de carácter | 96,4 % | Apache 2.0 | ONNX en HuggingFace |
-| cronformer 0.1.0 | 6,3M parámetros, 25 MB | no disponible | 70,3 % | no disponible | HuggingFace (uncommonstash/cronformer) |
-| cronlm | 16M parámetros, 24 MB | no disponible | 71,0 % | no disponible | HuggingFace (pavstev/cronlm) |
-| cron-mini | Qwen2.5-1.5B fine-tune, 3,1 GB | Transformer (LLM fine-tuned) | 66,7 % | no disponible | HuggingFace (Shpigford/cron-mini) |
-| leom21/cron | SmolLM2-360M fine-tune, 724 MB | Transformer (LLM fine-tuned) | 36,5 % | no disponible | HuggingFace (leom21/cron) |
+| tinycron | 1,5 MB (int8) | GRU a nivel de carácter | 96,4 % | Apache 2.0 | ONNX en Hugging Face |
+| cronformer 0.1.0 | 6,3M parámetros, 25 MB | no disponible | 70,3 % | no disponible | Hugging Face (uncommonstash/cronformer) |
+| cronlm | 16M parámetros, 24 MB | no disponible | 71,0 % | no disponible | Hugging Face (pavstev/cronlm) |
+| cron-mini | Qwen2.5-1.5B fine-tune, 3,1 GB | Transformer (LLM fine-tuned) | 66,7 % | no disponible | Hugging Face (Shpigford/cron-mini) |
+| leom21/cron | SmolLM2-360M fine-tune, 724 MB | Transformer (LLM fine-tuned) | 36,5 % | no disponible | Hugging Face (leom21/cron) |
 
 TinyCron supera con claridad a alternativas entre 40 y 2.000 veces mayores en la misma tarea, además de a dos sistemas basados en reglas (english-to-cron, natural-cron-expression). La tabla de la model card incluye también a Claude Haiku (octubre de 2026) con prompt, aunque los datos correspondientes aparecen truncados en la información disponible.
 
@@ -112,7 +112,7 @@ TinyCron supera con claridad a alternativas entre 40 y 2.000 veces mayores en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BryceTRussell/tinycron
+- Modelo en Hugging Face: https://huggingface.co/BryceTRussell/tinycron
 - cronformer (modelo comparado): https://huggingface.co/uncommonstash/cronformer
 - cronlm (modelo comparado): https://huggingface.co/pavstev/cronlm
 - cron-mini (modelo comparado): https://huggingface.co/Shpigford/cron-mini

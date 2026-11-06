@@ -6,7 +6,7 @@ Kavach PII 270M es un modelo de extracción de datos personales (PII, PHI y PCI)
 
 El modelo tiene 268.098.176 parámetros (aproximadamente 270M) y está diseñado para ejecutarse en CPU o en una GPU de portátil, con un repositorio de 0,6 GB en formato `safetensors`. Su relevancia radica en la combinación de tamaño reducido y precisión declarada: según la model card, obtiene un value-F1 de 88,4 sobre un conjunto de test retenido de 3.372 documentos y 13.646 valores anotados, frente a 56,4 de GLiNER-PII multi-v1 y 22,2 de Microsoft Presidio medidos con el mismo script y las mismas anotaciones de referencia. El dato más diferencial es la tasa de falsos positivos en documentos sin PII: un 0,4 %, frente al 80,2 % de GLiNER-PII y el 85,3 % de Presidio.
 
-La model card declara soporte para 29 idiomas (los metadatos de HuggingFace enumeran 26), con cobertura específica de identificadores indios como AADHAAR_IN, PAN_IN o UPI_VPA, además de identificadores estadounidenses y europeos. Está pensado para las entradas que reciben los pipelines reales: transcripciones ASR de centros de llamadas, salida OCR de documentos escaneados, formularios estructurados, chat, código, logs y texto deliberadamente ofuscado.
+La model card declara soporte para 29 idiomas (los metadatos de Hugging Face enumeran 26), con cobertura específica de identificadores indios como AADHAAR_IN, PAN_IN o UPI_VPA, además de identificadores estadounidenses y europeos. Está pensado para las entradas que reciben los pipelines reales: transcripciones ASR de centros de llamadas, salida OCR de documentos escaneados, formularios estructurados, chat, código, logs y texto deliberadamente ofuscado.
 
 ## Especificaciones técnicas
 
@@ -40,7 +40,7 @@ No se especifican en la información disponible el número de tokens de entrenam
 - Secretos y credenciales: API_KEY_TOKEN, PASSWORD_SECRET, USERNAME, SIGNATURE, DEVICE_ID, MAC_ADDRESS, IP_ADDRESS.
 - Salida estructurada estrictamente en JSON, apta para consumo programático sin post-procesado complejo (el ejemplo oficial localiza el primer `[` y el último `]`).
 - Capacidad multilingüe declarada en 29 idiomas, incluidas 10 lenguas indias, árabe, chino, japonés, coreano, ruso, turco, vietnamita e indonesio, además de las principales lenguas europeas.
-- Servicio mediante API compatible con OpenAI (`/v1/chat/completions`) en vLLM, SGLang y otros servidores, y compatibilidad declarada con text-generation-inference y endpoints de HuggingFace.
+- Servicio mediante API compatible con OpenAI (`/v1/chat/completions`) en vLLM, SGLang y otros servidores, y compatibilidad declarada con text-generation-inference y endpoints de Hugging Face.
 - No se documentan capacidades de tool calling, function calling, agentes, visión, audio ni modo de razonamiento extendido; el uso previsto es la extracción de entidades, no el diálogo general.
 
 ## Casos de uso
@@ -86,7 +86,7 @@ No se han publicado en la información disponible resultados en benchmarks gener
 
 | Modelo | Tipo | Parámetros | Enfoque | Value F1 (según la model card) | Falsos positivos en documentos sin PII | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Kavach PII 270M | LLM generativo ajustado (LoRA sobre Gemma 3 270M) | 268.098.176 | Extracción de PII en 52 etiquetas, 29 idiomas | 88,4 | 0,4 % | `gemma` | HuggingFace, pesos safetensors + GGUF + adaptador LoRA |
+| Kavach PII 270M | LLM generativo ajustado (LoRA sobre Gemma 3 270M) | 268.098.176 | Extracción de PII en 52 etiquetas, 29 idiomas | 88,4 | 0,4 % | `gemma` | Hugging Face, pesos safetensors + GGUF + adaptador LoRA |
 | GLiNER-PII multi-v1 | Modelo de NER (no generativo) | No disponible | Reconocimiento de entidades PII | 56,4 | 80,2 % | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | Microsoft Presidio | Framework de detección con analizadores y reconocedores | No aplica (sistema basado en reglas y modelos auxiliares) | Detección y anonimización de PII | 22,2 | 85,3 % | No disponible en la información proporcionada | No disponible en la información proporcionada |
 | Regex + checksum | Reglas heurísticas | No aplica | Validación por patrón y dígito de control | 20,5 | 28,8 % | No aplica | Implementación propia |
@@ -101,7 +101,7 @@ Nota: los conjuntos de etiquetas de GLiNER-PII y Presidio se mapearon a los de K
 - La lista de etiquetas de salida es cerrada (52 categorías). Cualquier categoría de PII no incluida en esa lista no será detectada.
 - El límite de generación recomendado es `max_new_tokens=768`. Documentos largos con muchos valores distintos pueden truncar la salida JSON y provocar errores de análisis; la model card recomienda trocear o limitar el tamaño de los documentos, aunque no fija un tamaño máximo de entrada.
 - La ventana de contexto en las configuraciones de servicio recomendadas es de 4096 tokens, inferior a la de muchos modelos actuales; los documentos más largos deben dividirse.
-- Discrepancia entre la cifra declarada de 29 idiomas y los 26 idiomas enumerados en la model card y en los metadatos de HuggingFace. No se publican métricas desglosadas por idioma, de modo que el rendimiento fuera del inglés y de las lenguas indias no está cuantificado.
+- Discrepancia entre la cifra declarada de 29 idiomas y los 26 idiomas enumerados en la model card y en los metadatos de Hugging Face. No se publican métricas desglosadas por idioma, de modo que el rendimiento fuera del inglés y de las lenguas indias no está cuantificado.
 - Riesgo de alucinación inherente a un modelo generativo: puede devolver valores que no aparecen literalmente en el texto o etiquetas incorrectas. La model card exige copiar los valores exactamente, pero no se documenta ningún mecanismo de verificación posterior que garantice la coincidencia con el texto fuente.
 - Licencia `gemma`: implica la aceptación de los términos de uso de Gemma de Google y su política de uso prohibido. La información disponible no detalla las condiciones concretas para uso comercial, por lo que conviene revisar los términos antes de integrar el modelo en un producto.
 - El modelo está construido sobre un modelo base con sesgos propios. Etiquetas como ETHNICITY, RELIGION, POLITICAL_BELIEF, DISABILITY o GENDER_SEX pueden comportar un tratamiento especialmente sensible bajo el RGPD y requerir base legal explícita.
@@ -111,10 +111,10 @@ Nota: los conjuntos de etiquetas de GLiNER-PII y Presidio se mapearon a los de K
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inboxpraveen/Kavach-PII-270M
+- Modelo en Hugging Face: https://huggingface.co/inboxpraveen/Kavach-PII-270M
 - Repositorio GGUF: https://huggingface.co/inboxpraveen/Kavach-PII-270M-GGUF
 - Modelo base: https://huggingface.co/google/gemma-3-270m-it
-- Perfil del autor en HuggingFace: https://huggingface.co/inboxpraveen
+- Perfil del autor en Hugging Face: https://huggingface.co/inboxpraveen
 - Perfil del autor en GitHub: https://github.com/inboxpraveen/inboxpraveen
 - Sitio personal del autor: https://inboxpraveen.github.io/
 - Anuncio de Gemma 3 270M en el blog de Google Developers: https://developers.googleblog.com/en/introducing-gemma-3-270m/

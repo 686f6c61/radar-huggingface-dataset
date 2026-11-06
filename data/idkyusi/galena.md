@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Galena es un modelo publicado en HuggingFace por el usuario idkyusi bajo el identificador `idkyusi/Galena`. La informacion publica disponible es minima: la model card no contiene mas que la declaracion de licencia (`gpl-3.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,8 GB y no tiene etiqueta de pipeline asignada, idiomas declarados ni formato de pesos documentado.
+Galena es un modelo publicado en Hugging Face por el usuario idkyusi bajo el identificador `idkyusi/Galena`. La informacion publica disponible es minima: la model card no contiene mas que la declaracion de licencia (`gpl-3.0`) y no incluye descripcion, arquitectura, datos de entrenamiento ni ejemplos de uso. El repositorio ocupa 0,8 GB y no tiene etiqueta de pipeline asignada, idiomas declarados ni formato de pesos documentado.
 
 No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura, su tamano en parametros ni su ventana de contexto. El repositorio registra 0 descargas y 1 like en el momento de la consulta, lo que indica que no ha pasado por un proceso de validacion o adopcion por parte de la comunidad.
 
@@ -76,6 +76,6 @@ No disponible. No se ha podido identificar la categoria del modelo (tamano, tare
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/idkyusi/Galena
+- Modelo en Hugging Face: https://huggingface.co/idkyusi/Galena
 
 La busqueda web realizada no devolvio ningun enlace relevante sobre el modelo. Los resultados obtenidos correspondian a articulos sobre logotipos con motivos de mariposa (1000logos.net, logos-world.net, logofav.com, whatthelogo.com, babymoms.blog) y no guardan relacion con `idkyusi/Galena`, por lo que se omiten.

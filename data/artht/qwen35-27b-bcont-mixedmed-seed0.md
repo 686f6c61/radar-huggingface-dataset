@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ArthT/qwen35-27b-bcont-mixedmed-seed0
+- Hugging Face: https://huggingface.co/ArthT/qwen35-27b-bcont-mixedmed-seed0
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Colección Qwen3.5 de unsloth: https://huggingface.co/collections/unsloth/qwen35
 - Guía de uso de Qwen3.5 en vLLM: https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `frqhsaq/TX-Chat`, publicado en HuggingFace por el usuario `frqhsaq`, es un modelo de inteligencia artificial cuyo propósito y características no pueden determinarse a partir de la información disponible. La model card asociada únicamente declara la licencia `openrail` y no contiene ninguna descripción técnica, arquitectónica ni de uso. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o sin difusión.
+El modelo `frqhsaq/TX-Chat`, publicado en Hugging Face por el usuario `frqhsaq`, es un modelo de inteligencia artificial cuyo propósito y características no pueden determinarse a partir de la información disponible. La model card asociada únicamente declara la licencia `openrail` y no contiene ninguna descripción técnica, arquitectónica ni de uso. El repositorio registra cero descargas y cero likes, lo que sugiere que se trata de una publicación reciente o sin difusión.
 
 La fecha de creación del repositorio (28 de agosto de 2026) y la ausencia de documentación hacen imposible verificar si el modelo es un fine-tuning de alguna arquitectura conocida, un adaptador LoRA, o un conjunto de pesos incompletos. La etiqueta `region:us` indica una ubicación geográfica de publicación, pero no aporta información sobre el entrenamiento ni los datos utilizados.
 
@@ -65,7 +65,7 @@ No disponible. Al no conocerse la arquitectura ni el tamaño del modelo, no se p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/frqhsaq/TX-Chat
+- Repositorio Hugging Face: https://huggingface.co/frqhsaq/TX-Chat
 - Resultados de búsqueda web no relacionados directamente con el modelo:
   - ChatX: https://chatx.ai/
   - ChatGPT: https://chatgpt.com/

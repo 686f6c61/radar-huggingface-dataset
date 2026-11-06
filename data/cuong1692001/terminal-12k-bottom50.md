@@ -4,7 +4,7 @@
 
 ## Resumen
 
-Terminal-12k-bottom50 es un ajuste fino completo (full fine-tuning) del modelo cuong1692001/Terminal_complete_8k, publicado por el usuario cuong1692001 en HuggingFace. El entrenamiento se realizo con Llama-Factory sobre el dataset denominado nemotron_complete_bottom_50_12k, durante 2 epocas y con una tasa de aprendizaje de 1e-05 sobre 4 GPUs. Por el numero de parametros (8.190.735.360, equivalentes a 8,19 mil millones) y la etiqueta qwen3 asociada al repositorio, todo apunta a que el backbone pertenece a la familia Qwen3-8B, aunque la model card no lo confirma de forma explicita.
+Terminal-12k-bottom50 es un ajuste fino completo (full fine-tuning) del modelo cuong1692001/Terminal_complete_8k, publicado por el usuario cuong1692001 en Hugging Face. El entrenamiento se realizo con Llama-Factory sobre el dataset denominado nemotron_complete_bottom_50_12k, durante 2 epocas y con una tasa de aprendizaje de 1e-05 sobre 4 GPUs. Por el numero de parametros (8.190.735.360, equivalentes a 8,19 mil millones) y la etiqueta qwen3 asociada al repositorio, todo apunta a que el backbone pertenece a la familia Qwen3-8B, aunque la model card no lo confirma de forma explicita.
 
 El modelo esta orientado a generacion de texto conversacional, segun los tags declarados (text-generation, conversational, text-generation-inference, endpoints_compatible). El nombre del repositorio sugiere un ajuste especializado en tareas de terminal o linea de comandos, pero ni la model card ni los metadatos lo documentan: la propia tarjeta indica "More information needed" en las secciones de descripcion, usos previstos y datos de entrenamiento.
 
@@ -38,7 +38,7 @@ El entrenamiento si esta parcialmente documentado en la seccion de hiperparametr
 ## Capacidades
 
 - Generacion de texto conversacional: es la unica capacidad declarada de forma explicita mediante los tags conversational y text-generation.
-- Generacion de texto para inferencia desplegada: los tags text-generation-inference y endpoints_compatible indican compatibilidad con el endpoint de HuggingFace y con motores de servicio compatibles con ese contrato.
+- Generacion de texto para inferencia desplegada: los tags text-generation-inference y endpoints_compatible indican compatibilidad con el endpoint de Hugging Face y con motores de servicio compatibles con ese contrato.
 - Especializacion probable en tareas de terminal: el nombre del modelo y del dataset (Terminal-12k, nemotron_complete) apuntan a datos de linea de comandos, pero no hay documentacion que lo confirme.
 - Soporte de tool calling / function calling: no disponible; no se declara.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se declara.
@@ -82,7 +82,7 @@ Los datos de los modelos alternativos provienen de su documentacion publica habi
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento publicado | Disponibilidad |
 |---|---|---|---|---|---|
-| Terminal-12k-bottom50 | 8,19B | No disponible | other (sin concretar) | No disponible | HuggingFace, 0 descargas |
+| Terminal-12k-bottom50 | 8,19B | No disponible | other (sin concretar) | No disponible | Hugging Face, 0 descargas |
 | Qwen3-8B | 8,19B | 32.768 tokens nativos, ampliable a 131.072 con YaRN | Apache 2.0 | Benchmarks publicados por el autor | Amplia, con cuantizaciones oficiales |
 | Llama-3.1-8B | 8,03B | 128.000 tokens | Licencia comunitaria de Llama 3.1 | Benchmarks publicados por el autor | Muy amplia, ecosistema maduro |
 | Gemma-2-9B | 9,24B | 8.192 tokens | Licencia de Gemma | Benchmarks publicados por el autor | Amplia, con soporte en los principales motores |
@@ -104,7 +104,7 @@ La diferencia fundamental no esta en el tamano, practicamente identico al de Qwe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cuong1692001/Terminal-12k-bottom50
+- Modelo en Hugging Face: https://huggingface.co/cuong1692001/Terminal-12k-bottom50
 - Modelo base: https://huggingface.co/cuong1692001/Terminal_complete_8k
 - Llama-Factory (framework de entrenamiento indicado en los tags): https://github.com/hiyouga/LLaMA-Factory
 - Paper o blog del autor: no disponible

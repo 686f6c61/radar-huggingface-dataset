@@ -89,7 +89,7 @@ No se dispone de resultados de benchmarks de este fine-tune que permitan compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaliElloh/deepfake-research-llama3.2-3b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/SaliElloh/deepfake-research-llama3.2-3b-GGUF
 - Repositorio de Unsloth (mencionado en la model card): https://github.com/unslothai/unsloth
 - Modelo base presumible, Llama 3.2 3B Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct
 - llama.cpp (runner indicado en la model card): https://github.com/ggml-org/llama.cpp

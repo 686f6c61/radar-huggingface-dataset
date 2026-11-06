@@ -4,7 +4,7 @@
 
 Lumina-tsql-8b-FP8-dynamic es un modelo de generación de texto especializado en la traducción de lenguaje natural a T-SQL (Transact-SQL), el dialecto de SQL utilizado por Microsoft SQL Server. Ha sido desarrollado por Lumina-ERP, una consultora de ingeniería especializada en sistemas ERP como Prophet 21 y Epicor Kinetic, que también ofrece una plataforma de IA propia. El modelo parte de la base Lumina-ERP/lumina-tsql-8b, que a su vez se construye sobre la arquitectura Qwen3, y se distribuye en formato FP8 dinámico para reducir el uso de memoria y acelerar la inferencia sin sacrificar una precisión significativa.
 
-El modelo tiene 8.190 millones de parámetros y está pensado para entornos empresariales donde la interacción con bases de datos SQL Server es frecuente, como sistemas ERP, CRM o herramientas de inteligencia de negocio. Su relevancia actual reside en la creciente demanda de asistentes de datos que permitan a usuarios no técnicos consultar bases de datos mediante lenguaje natural, así como en la necesidad de integrar modelos de lenguaje en pipelines de datos y herramientas de desarrollo. La licencia Apache 2.0 permite su uso comercial y modificación, aunque el acceso al repositorio está restringido y requiere aceptar las condiciones en HuggingFace.
+El modelo tiene 8.190 millones de parámetros y está pensado para entornos empresariales donde la interacción con bases de datos SQL Server es frecuente, como sistemas ERP, CRM o herramientas de inteligencia de negocio. Su relevancia actual reside en la creciente demanda de asistentes de datos que permitan a usuarios no técnicos consultar bases de datos mediante lenguaje natural, así como en la necesidad de integrar modelos de lenguaje en pipelines de datos y herramientas de desarrollo. La licencia Apache 2.0 permite su uso comercial y modificación, aunque el acceso al repositorio está restringido y requiere aceptar las condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -32,7 +32,7 @@ El modelo se basa en la arquitectura Qwen3, un transformer decoder con atención
 - Generación de consultas con joins, subconsultas, agregaciones, CTEs y funciones de ventana.
 - Soporte de conversación multi-turno para refinar consultas.
 - Capacidad de explicar y documentar consultas SQL generadas.
-- Integración con herramientas de texto como pipelines de HuggingFace y endpoints compatibles con TGI.
+- Integración con herramientas de texto como pipelines de Hugging Face y endpoints compatibles con TGI.
 - Soporte de tool calling no confirmado, pero probablemente derivado de Qwen3 (no disponible en la información proporcionada).
 
 ## Casos de uso
@@ -54,7 +54,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - **VRAM estimada**: para FP8 (8 bits), el modelo ocupa aproximadamente 9.5 GB en memoria, por lo que se recomienda al menos 12 GB de VRAM para inferencia con un lote pequeño.
 - **GPU recomendadas**: NVIDIA RTX 4090 (24 GB), RTX 4080 (16 GB), A100 (40 GB), H100 (80 GB). En GPUs sin soporte FP8 nativo, el modelo puede ejecutarse en FP16, pero requerirá más VRAM.
 - **Compatibilidad con GPUs de consumo**: sí, cabe en una RTX 4090 o RTX 4080 con suficiente VRAM.
-- **Opciones de despliegue**: vLLM, TGI (Text Generation Inference), llama.cpp (con conversión a GGUF), Ollama, Transformers de HuggingFace.
+- **Opciones de despliegue**: vLLM, TGI (Text Generation Inference), llama.cpp (con conversión a GGUF), Ollama, Transformers de Hugging Face.
 - **Latencia y throughput**: no disponible en la información proporcionada, pero en una A100 se espera una latencia de menos de 100 ms por token con FP8.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ La comparativa se basa en modelos de código general, ya que no se conocen alter
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su adopción en entornos corporativos.
+- **Acceso restringido**: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su adopción en entornos corporativos.
 - **Idioma**: el modelo solo soporta inglés, lo que limita su uso en entornos donde las consultas se realicen en otros idiomas.
 - **Alucinación**: como cualquier modelo de lenguaje, puede generar consultas SQL sintácticamente válidas pero incorrectas a nivel lógico, por lo que se recomienda supervisión humana en entornos de producción.
 - **Dependencia del esquema**: la precisión depende en gran medida de la claridad del esquema de la base de datos; esquemas complejos o mal documentados pueden reducir la calidad de las consultas.
@@ -79,15 +79,15 @@ La comparativa se basa en modelos de código general, ya que no se conocen alter
 
 ## Enlaces
 
-- [HuggingFace - Lumina-ERP/lumina-tsql-8b-FP8-dynamic](https://huggingface.co/Lumina-ERP/lumina-tsql-8b-FP8-dynamic)
-- [HuggingFace - Lumina-ERP/lumina-tsql-8b (modelo base)](https://huggingface.co/Lumina-ERP/lumina-tsql-8b)
+- [Hugging Face - Lumina-ERP/lumina-tsql-8b-FP8-dynamic](https://huggingface.co/Lumina-ERP/lumina-tsql-8b-FP8-dynamic)
+- [Hugging Face - Lumina-ERP/lumina-tsql-8b (modelo base)](https://huggingface.co/Lumina-ERP/lumina-tsql-8b)
 - [Lumina ERP (sitio web)](https://lumina-erp.com/)
 - [GitHub - capt-noah/lumina-erp (documentación)](https://github.com/capt-noah/lumina-erp/blob/main/DOCUMENTATION.md)
-- [HuggingFace - jetjodh/lumina-fp8 (posiblemente no relacionado)](https://huggingface.co/jetjodh/lumina-fp8/tree/main)</think>## Resumen
+- [Hugging Face - jetjodh/lumina-fp8 (posiblemente no relacionado)](https://huggingface.co/jetjodh/lumina-fp8/tree/main)</think>## Resumen
 
 Lumina-tsql-8b-FP8-dynamic es un modelo de generación de texto especializado en la traducción de lenguaje natural a T-SQL (Transact-SQL), el dialecto de SQL utilizado por Microsoft SQL Server. Ha sido desarrollado por Lumina-ERP, una empresa consultora de ingeniería especializada en sistemas ERP como Prophet 21 y Epicor Kinetic, que también ofrece una plataforma de inteligencia artificial propia. El modelo es una versión cuantizada en FP8 dinámico del modelo base Lumina-ERP/lumina-tsql-8b, que a su vez se basa en la arquitectura Qwen3.
 
-El modelo tiene 8.190 millones de parámetros y está diseñado para facilitar la interacción con bases de datos SQL Server mediante lenguaje natural, un caso de uso habitual en entornos empresariales donde los analistas no siempre dominan la sintaxis de T-SQL. Su relevancia actual radica en la creciente demanda de herramientas de text-to-SQL que reduzcan la fricción entre los datos operativos de un ERP y la toma de decisiones. La licencia Apache 2.0 permite su uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace.
+El modelo tiene 8.190 millones de parámetros y está diseñado para facilitar la interacción con bases de datos SQL Server mediante lenguaje natural, un caso de uso habitual en entornos empresariales donde los analistas no siempre dominan la sintaxis de T-SQL. Su relevancia actual radica en la creciente demanda de herramientas de text-to-SQL que reduzcan la fricción entre los datos operativos de un ERP y la toma de decisiones. La licencia Apache 2.0 permite su uso comercial, aunque el acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -135,7 +135,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - **VRAM estimada**: con cuantizacion FP8, el modelo ocupa aproximadamente 9.5 GB en memoria, por lo que se recomienda una GPU con al menos 12 GB de VRAM para inferencia con una longitud de contexto moderada.
 - **GPU recomendadas**: NVIDIA RTX 4090 (24 GB), RTX 4080 (16 GB), A100 (40 GB), H100 (80 GB). Las GPUs con soporte FP8 nativo (H100, L40S) aprovechan al maximo la cuantizacion.
 - **Compatibilidad con GPU de consumo**: si, cabe en una RTX 4090 y en RTX 4080 con suficiente VRAM.
-- **Opciones de despliegue**: vLLM, Text Generation Inference (TGI), llama.cpp (requiere convertir a GGUF), Ollama, y transformers de HuggingFace.
+- **Opciones de despliegue**: vLLM, Text Generation Inference (TGI), llama.cpp (requiere convertir a GGUF), Ollama, y transformers de Hugging Face.
 - **Latencia y throughput**: no disponible en la informacion proporcionada, pero en una A100 con FP8 se espera una latencia de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
@@ -151,7 +151,7 @@ La comparativa se limita a modelos de codigo general del mismo rango de parametr
 
 ## Limitaciones y advertencias
 
-- **Acceso restringido**: el repositorio es gated y requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos corporativos.
+- **Acceso restringido**: el repositorio es gated y requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos corporativos.
 - **Idioma**: solo soporta ingles. No sirve para consultas en espanol u otros idiomas.
 - **Alucinacion de consultas**: como cualquier modelo text-to-SQL, puede generar consultas sintacticamente validas pero logicamente incorrectas, especialmente con esquemas complejos o ambiguos.
 - **Contexto limitado**: no se ha publicado la longitud de contexto; si es similar a Qwen3 base, probablemente sea de 32 K tokens, pero no esta confirmado.
@@ -161,7 +161,7 @@ La comparativa se limita a modelos de codigo general del mismo rango de parametr
 
 ## Enlaces
 
-- [HuggingFace - Lumina-ERP/lumina-tsql-8b-FP8-dynamic](https://huggingface.co/Lumina-ERP/lumina-tsql-8b-FP8-dynamic)
-- [HuggingFace - Lumina-ERP/lumina-tsql-8b (modelo base)](https://huggingface.co/Lumina-ERP/lumina-tsql-8b)
+- [Hugging Face - Lumina-ERP/lumina-tsql-8b-FP8-dynamic](https://huggingface.co/Lumina-ERP/lumina-tsql-8b-FP8-dynamic)
+- [Hugging Face - Lumina-ERP/lumina-tsql-8b (modelo base)](https://huggingface.co/Lumina-ERP/lumina-tsql-8b)
 - [Lumina ERP - sitio web](https://lumina-erp.com/)
 - [GitHub - capt-noah/lumina-erp (documentacion)](https://github.com/capt-noah/lumina-erp/blob/main/DOCUMENTATION.md)

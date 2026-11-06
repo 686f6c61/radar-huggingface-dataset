@@ -2,7 +2,7 @@
 
 ## Resumen
 
-COIL-D/translate-it2-hindi-dogri es un modelo de traduccion automatica neuronal especializado en el par de idiomas hindi (hi) ↔ dogri (doi), publicado por el usuario COIL-D en HuggingFace. Se trata de un ajuste fino (finetune) del modelo base ai4bharat/indictrans2-indic-indic-dist-320M, perteneciente a la familia IndicTrans2 desarrollada por AI4Bharat, orientada a la traduccion entre lenguas indias. El modelo cuenta con 320.861.184 parametros y se distribuye en formato safetensors con licencia MIT, aunque el acceso al repositorio esta restringido y requiere aceptar condiciones en HuggingFace.
+COIL-D/translate-it2-hindi-dogri es un modelo de traduccion automatica neuronal especializado en el par de idiomas hindi (hi) ↔ dogri (doi), publicado por el usuario COIL-D en Hugging Face. Se trata de un ajuste fino (finetune) del modelo base ai4bharat/indictrans2-indic-indic-dist-320M, perteneciente a la familia IndicTrans2 desarrollada por AI4Bharat, orientada a la traduccion entre lenguas indias. El modelo cuenta con 320.861.184 parametros y se distribuye en formato safetensors con licencia MIT, aunque el acceso al repositorio esta restringido y requiere aceptar condiciones en Hugging Face.
 
 El problema que resuelve es concreto: el dogri es una lengua indoaria hablada principalmente en Jammu y Cachemira, con recursos digitales y modelos de traduccion mucho mas escasos que el hindi. Al especializar un modelo IndicTrans2 en el par hi↔doi, se cubre un hueco de cobertura que los modelos multilingues genericos suelen resolver con calidad desigual en lenguas de bajos recursos. El pipeline declarado es `translation` y esta pensado para generacion texto-a-texto.
 
@@ -54,7 +54,7 @@ En cuanto a los datos de entrenamiento, no se especifica en la informacion dispo
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas como BLEU, chrF, MMLU, HumanEval o GSM8K, y los resultados de la busqueda web no aportan datos evaluables sobre el modelo (las referencias recuperadas corresponden a terminos no relacionados, como el concepto siderurgico de "coil" o el grupo musical homonimo). Tampoco se han podido recuperar resultados del articulo con identificador arXiv 2609.28826 citado en las etiquetas del repositorio.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas como BLEU, chrF, MMLU, HumanEval o GSM8K, y los resultados de la busqueda web no aportan datos evaluables sobre el modelo (las referencias recuperadas corresponden a terminos no relacionados, como el concepto siderurgico de "coil" o el grupo musical homonimo). Tampoco se han podido recuperar resultados del articulo con identificador arXiv 2609.28826 citado en las etiquetas del repositorio.
 
 ## Requisitos de hardware
 
@@ -81,17 +81,17 @@ La comparativa cuantitativa de calidad de traduccion no puede completarse: no ha
 - Idiomas restringidos: el modelo solo cubre hindi y dogri. No debe utilizarse para traduccion entre otras lenguas indias, aunque el checkpoint base IndicTrans2 si las soporte, ya que el ajuste fino puede haber degradado esas capacidades (olvido catastrofico).
 - Riesgo de alucinacion: como cualquier modelo seq2seq entrenado con corpus paralelos limitados, puede generar traducciones plausibles pero incorrectas, omitir fragmentos o inventar contenido, especialmente en dominios especializados o con frases largas y ambiguas.
 - Ausencia de benchmarks: no se han publicado metricas de calidad, por lo que la evaluacion en produccion exige una validacion propia con un conjunto de referencia hi↔doi antes de desplegarlo.
-- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en HuggingFace. Esto anade un paso de gestion de credenciales y tokens en cualquier pipeline automatizado.
+- Acceso restringido: el repositorio es gated y requiere aceptar condiciones en Hugging Face. Esto anade un paso de gestion de credenciales y tokens en cualquier pipeline automatizado.
 - Requiere `trust_remote_code`: el modelo incluye codigo personalizado, lo que implica ejecutar codigo no auditado en el proceso de carga. Conviene revisar el codigo del repositorio antes de usarlo en entornos sensibles.
 - Licencia MIT: permite uso comercial, modificacion y redistribucion, pero se debe conservar el aviso de copyright y no se ofrece garantia alguna. Conviene verificar tambien la licencia del modelo base (ai4bharat/indictrans2-indic-indic-dist-320M) y las condiciones de los corpus empleados en el ajuste, no detalladas en la informacion disponible.
 - Sesgos potenciales: los corpus de traduccion suelen sobrerrepresentar registros formales o determinados dominios, lo que puede producir un estilo poco natural en conversaciones informales o en variantes dialectales del dogri.
 - Contexto desconocido: al no documentarse la longitud de contexto, no se garantiza el comportamiento correcto con parrafos largos; los modelos IndicTrans2 trabajan habitualmente con segmentos cortos, por lo que se recomienda dividir el texto en unidades de frase o parrafo.
 - Datos de publicacion extranos: las fechas de creacion y actualizacion del repositorio (2026-09-29) y el identificador arXiv son posteriores a la fecha de consulta habitual, por lo que no se ha podido validar su correspondencia con material publicado.
-- Descargas y likes nulos: el modelo no muestra adopcion en HuggingFace, lo que reduce la probabilidad de encontrar incidencias resueltas, ejemplos de uso o soporte de la comunidad.
+- Descargas y likes nulos: el modelo no muestra adopcion en Hugging Face, lo que reduce la probabilidad de encontrar incidencias resueltas, ejemplos de uso o soporte de la comunidad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/COIL-D/translate-it2-hindi-dogri
+- Modelo en Hugging Face: https://huggingface.co/COIL-D/translate-it2-hindi-dogri
 - Modelo base: https://huggingface.co/ai4bharat/indictrans2-indic-indic-dist-320M
 - Referencia arXiv citada en las etiquetas: arxiv:2609.28826 (contenido no disponible en la informacion proporcionada)
 - Repositorio de IndicTrans2 de AI4Bharat: no disponible en los resultados de busqueda proporcionados

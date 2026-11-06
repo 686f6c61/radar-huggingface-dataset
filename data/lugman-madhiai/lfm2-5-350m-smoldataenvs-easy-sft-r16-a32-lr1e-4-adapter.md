@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr1e-4-adapter` es un adaptador LoRA publicado por el usuario lugman-madhiai en HuggingFace, resultado de un ajuste fino supervisado (SFT) sobre el modelo base LiquidAI/LFM2.5-350M. Se trata de un experimento de fine-tuning realizado con la librería Unsloth y el framework TRL, con un rango de LoRA de 16, alpha de 32 y una tasa de aprendizaje de 1e-4, tal como indica el propio nombre del repositorio. El dataset utilizado se denomina "SmolDataEnvs-Easy", aunque no se proporcionan detalles sobre su composición.
+El modelo `LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr1e-4-adapter` es un adaptador LoRA publicado por el usuario lugman-madhiai en Hugging Face, resultado de un ajuste fino supervisado (SFT) sobre el modelo base LiquidAI/LFM2.5-350M. Se trata de un experimento de fine-tuning realizado con la librería Unsloth y el framework TRL, con un rango de LoRA de 16, alpha de 32 y una tasa de aprendizaje de 1e-4, tal como indica el propio nombre del repositorio. El dataset utilizado se denomina "SmolDataEnvs-Easy", aunque no se proporcionan detalles sobre su composición.
 
 El modelo base, LFM2.5-350M, pertenece a la familia LFM2 de LiquidAI, una arquitectura compacta orientada a generación de texto con un tamaño de 350 millones de parámetros. Este adaptador hereda las capacidades del modelo base y las modula mediante el entrenamiento específico sobre el dataset mencionado, que por el nombre parece orientado a entornos de datos sintéticos o tareas de razonamiento sencillas.
 
@@ -44,7 +44,7 @@ El entrenamiento se realizó mediante SFT (supervised fine-tuning) con TRL y Uns
 - Prototipado en entornos con recursos limitados: al tratarse de un adaptador sobre un modelo de 350M, puede cargarse en GPUs de consumo para pruebas rápidas de generación de texto en inglés.
 - Investigación sobre datasets sintéticos: si "SmolDataEnvs-Easy" contiene entornos de datos sintéticos, el adaptador puede usarse para analizar la transferencia de ese tipo de datos a un modelo pequeño.
 - Base para fine-tuning posterior: el adaptador puede servir como punto de partida para experimentos adicionales de SFT o DPO sobre LFM2.5-350M.
-- Docencia y divulgación: ejemplo práctico de publicación de adaptadores LoRA en HuggingFace con licencia Apache 2.0, útil en talleres sobre fine-tuning de modelos pequeños.
+- Docencia y divulgación: ejemplo práctico de publicación de adaptadores LoRA en Hugging Face con licencia Apache 2.0, útil en talleres sobre fine-tuning de modelos pequeños.
 
 ## Benchmarks y rendimiento
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr1e-4-adapter | Adaptador LoRA sobre 350M | No disponible | Apache 2.0 | HuggingFace (0 descargas) |
-| LiquidAI/LFM2.5-350M (modelo base) | 350M | No disponible | No disponible en la información | HuggingFace |
-| SmolLM2-360M (HuggingFaceTB) | 360M | 8K (según información pública del modelo) | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 500M | 32K (según información pública del modelo) | Apache 2.0 | HuggingFace |
+| LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr1e-4-adapter | Adaptador LoRA sobre 350M | No disponible | Apache 2.0 | Hugging Face (0 descargas) |
+| LiquidAI/LFM2.5-350M (modelo base) | 350M | No disponible | No disponible en la información | Hugging Face |
+| SmolLM2-360M (HuggingFaceTB) | 360M | 8K (según información pública del modelo) | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 500M | 32K (según información pública del modelo) | Apache 2.0 | Hugging Face |
 
 La comparativa se limita a modelos de tamaño similar; no se dispone de datos de rendimiento del adaptador para comparar benchmarks. El adaptador no aporta ventajas medibles frente al modelo base más allá del ajuste específico sobre "SmolDataEnvs-Easy", cuyo impacto no está documentado.
 
@@ -80,7 +80,7 @@ La comparativa se limita a modelos de tamaño similar; no se dispone de datos de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr1e-4-adapter
+- Hugging Face: https://huggingface.co/lugman-madhiai/LFM2.5-350M-SmolDataEnvs-Easy-SFT-r16-a32-lr1e-4-adapter
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Unsloth (repositorio): https://github.com/unslothai/unsloth
 - TRL (framework de entrenamiento): no se proporciona enlace directo en la información disponible.

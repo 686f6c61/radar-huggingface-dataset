@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo HentaiMike/IDK es un repositorio publicado en HuggingFace por el usuario HentaiMike el 4 de abril de 2026, con una última actualización registrada el 17 de agosto de 2026. El repositorio tiene un tamaño de 16,2 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un modelo de aprendizaje automático de tamaño considerable, probablemente en el rango de 7B a 13B de parámetros si se trata de un transformer denso, aunque esta estimación no está confirmada.
+El modelo HentaiMike/IDK es un repositorio publicado en Hugging Face por el usuario HentaiMike el 4 de abril de 2026, con una última actualización registrada el 17 de agosto de 2026. El repositorio tiene un tamaño de 16,2 GB y contiene pesos en formato safetensors, lo que sugiere que se trata de un modelo de aprendizaje automático de tamaño considerable, probablemente en el rango de 7B a 13B de parámetros si se trata de un transformer denso, aunque esta estimación no está confirmada.
 
 La información disponible es extremadamente limitada. La model card está prácticamente vacía, sin descripción, sin detalles de arquitectura, sin datos de entrenamiento y sin especificaciones técnicas. La licencia se declara como "unknown" y no se especifican idiomas soportados. El repositorio no registra descargas ni valoraciones, lo que indica que es un modelo reciente o de escasa difusión. No se ha encontrado documentación complementaria en la web que aporte información adicional sobre sus capacidades o características.
 
@@ -56,6 +56,6 @@ No disponible. No se ha podido identificar la categoría del modelo ni modelos c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/HentaiMike/IDK
+- Repositorio Hugging Face: https://huggingface.co/HentaiMike/IDK
 
 No se han encontrado papers, blogs, repositorios de código ni demos asociados a este modelo.

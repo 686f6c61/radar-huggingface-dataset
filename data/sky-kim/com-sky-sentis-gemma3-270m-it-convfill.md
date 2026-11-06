@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sky-Kim/com.sky.sentis.gemma3-270m-it-convfill
+- Modelo en Hugging Face: https://huggingface.co/Sky-Kim/com.sky.sentis.gemma3-270m-it-convfill
 - Modelo base: https://huggingface.co/vysri/gemma3-270m-IT-ConvFill
 - Paper de conversational infill: https://arxiv.org/abs/2511.07397
 - Código del proyecto: https://github.com/vysri/conversational-infill

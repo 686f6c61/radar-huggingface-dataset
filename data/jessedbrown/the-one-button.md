@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio identificado como Jessedbrown/the-one-button es un artefacto alojado en HuggingFace cuyo contenido publicado no corresponde a un modelo de inteligencia artificial entrenado. La model card asociada no contiene descripcion tecnica, ficha de entrenamiento, datos de evaluacion ni informacion sobre pesos o arquitectura: unicamente incluye el texto "81 and a nought", un enlace a una pagina externa alojada en GitHub Pages (jessebrown1980.github.io/the-one-button) y varias imagenes SVG denominadas omega.svg, quarks.svg y zebra.svg, ademas de un enlace de retorno a un proyecto llamado "asolaria-multiverse".
+El repositorio identificado como Jessedbrown/the-one-button es un artefacto alojado en Hugging Face cuyo contenido publicado no corresponde a un modelo de inteligencia artificial entrenado. La model card asociada no contiene descripcion tecnica, ficha de entrenamiento, datos de evaluacion ni informacion sobre pesos o arquitectura: unicamente incluye el texto "81 and a nought", un enlace a una pagina externa alojada en GitHub Pages (jessebrown1980.github.io/the-one-button) y varias imagenes SVG denominadas omega.svg, quarks.svg y zebra.svg, ademas de un enlace de retorno a un proyecto llamado "asolaria-multiverse".
 
 No consta pipeline declarado, licencia, idiomas soportados, numero de parametros, contexto ni formato de pesos. El repositorio registra cero descargas y cero likes en el momento de la consulta, y las fechas de creacion y actualizacion son incoherentes entre si (creacion posterior a la actualizacion segun los metadatos), lo que sugiere que se trata de un espacio de publicacion experimental o artistico mas que de un modelo desplegable.
 
@@ -78,6 +78,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jessedbrown/the-one-button
+- Hugging Face: https://huggingface.co/Jessedbrown/the-one-button
 - Pagina externa enlazada en la model card: https://jessebrown1980.github.io/the-one-button/
 - Proyecto "multiverse" enlazado: https://jessebrown1980.github.io/asolaria-multiverse/

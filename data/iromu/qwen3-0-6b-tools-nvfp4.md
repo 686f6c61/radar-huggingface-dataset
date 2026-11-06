@@ -77,7 +77,7 @@ La comparativa se basa en los datos disponibles; el modelo base Qwen3-0.6B tiene
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/iromu/Qwen3-0.6B-tools-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/iromu/Qwen3-0.6B-tools-NVFP4
 - Modelo base Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Technical report de Qwen3: https://arxiv.org/html/2505.09388v1
 - Guía completa de Qwen3: https://insiderllm.com/guides/qwen3-complete-guide/

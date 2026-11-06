@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`quanda-bench-test/gpt2-small-trex-openwebtext` es un artefacto publicado en HuggingFace por la organizacion `quanda-bench-test`, cuyo nombre sugiere un uso experimental dentro de un banco de pruebas de atribucion de datos (QUANDA, del ingles "Quantifying Attribution"), combinado con el corpus OpenWebText y una variante denominada "trex". No se trata de un modelo con model card descriptiva: el README se limita a declarar la licencia MIT, sin documentacion sobre arquitectura, entrenamiento o capacidades.
+`quanda-bench-test/gpt2-small-trex-openwebtext` es un artefacto publicado en Hugging Face por la organizacion `quanda-bench-test`, cuyo nombre sugiere un uso experimental dentro de un banco de pruebas de atribucion de datos (QUANDA, del ingles "Quantifying Attribution"), combinado con el corpus OpenWebText y una variante denominada "trex". No se trata de un modelo con model card descriptiva: el README se limita a declarar la licencia MIT, sin documentacion sobre arquitectura, entrenamiento o capacidades.
 
 Por el identificador y el tamano del repositorio (1,5 GB), lo mas plausible es que contenga pesos de un GPT-2 Small (124 millones de parametros) junto con datos auxiliares, probablemente checkpoints o artefactos de influencia de datos. Sin embargo, esta interpretacion no puede confirmarse con la informacion disponible.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| quanda-bench-test/gpt2-small-trex-openwebtext | no disponible | no disponible | MIT | HuggingFace, 0 descargas | Solo licencia |
-| openai-community/gpt2 | 124 M | 1024 tokens | MIT | HuggingFace, ampliamente usado | Model card completa |
-| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | HuggingFace | Model card completa |
-| EleutherAI/gpt-neo-125M | 125 M | 2048 tokens | MIT | HuggingFace | Model card completa |
+| quanda-bench-test/gpt2-small-trex-openwebtext | no disponible | no disponible | MIT | Hugging Face, 0 descargas | Solo licencia |
+| openai-community/gpt2 | 124 M | 1024 tokens | MIT | Hugging Face, ampliamente usado | Model card completa |
+| openai-community/gpt2-medium | 355 M | 1024 tokens | MIT | Hugging Face | Model card completa |
+| EleutherAI/gpt-neo-125M | 125 M | 2048 tokens | MIT | Hugging Face | Model card completa |
 
 La comparativa se basa en la hipotesis de que el artefacto contiene un GPT-2 Small; no hay datos publicados que permitan comparar rendimiento.
 
@@ -72,7 +72,7 @@ La comparativa se basa en la hipotesis de que el artefacto contiene un GPT-2 Sma
 
 - Ausencia total de model card tecnica: no se puede verificar arquitectura, datos de entrenamiento ni evaluacion.
 - Riesgo de que el repositorio contenga artefactos auxiliares (checkpoints, matrices de atribucion) y no solo pesos desplegables.
-- Sin pipeline declarado en HuggingFace, lo que impide usarlo directamente con `pipeline()` sin inspeccion previa.
+- Sin pipeline declarado en Hugging Face, lo que impide usarlo directamente con `pipeline()` sin inspeccion previa.
 - Sin idiomas declarados; no se garantiza calidad en castellano ni en ningun otro idioma.
 - Sin datos de sesgo ni de alucinacion; si es un GPT-2 Small, heredaria los sesgos y la tendencia a la alucinacion del modelo original y de OpenWebText.
 - La licencia MIT permite uso comercial, pero la falta de documentacion hace desaconsejable su uso en produccion sin auditoria previa.
@@ -81,5 +81,5 @@ La comparativa se basa en la hipotesis de que el artefacto contiene un GPT-2 Sma
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/quanda-bench-test/gpt2-small-trex-openwebtext
+- Hugging Face: https://huggingface.co/quanda-bench-test/gpt2-small-trex-openwebtext
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

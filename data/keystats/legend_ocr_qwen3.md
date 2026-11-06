@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Legend_ocr_qwen3 es un modelo publicado en HuggingFace por el usuario keystats, orientado por nomenclatura a tareas de reconocimiento óptico de caracteres (OCR) sobre la arquitectura Qwen3-VL. El repositorio contiene 8.767.123.696 parámetros (unos 8,77 mil millones) en pesos safetensors, con un tamaño total de repositorio de 17,5 GB, coherente con pesos en precisión bf16/fp16. La etiqueta de arquitectura declarada es qwen3_vl y el pipeline es image-text-to-text, es decir, un modelo de visión-lenguaje que acepta imágenes y texto y genera texto.
+Legend_ocr_qwen3 es un modelo publicado en Hugging Face por el usuario keystats, orientado por nomenclatura a tareas de reconocimiento óptico de caracteres (OCR) sobre la arquitectura Qwen3-VL. El repositorio contiene 8.767.123.696 parámetros (unos 8,77 mil millones) en pesos safetensors, con un tamaño total de repositorio de 17,5 GB, coherente con pesos en precisión bf16/fp16. La etiqueta de arquitectura declarada es qwen3_vl y el pipeline es image-text-to-text, es decir, un modelo de visión-lenguaje que acepta imágenes y texto y genera texto.
 
 El problema que aborda es la transcripción y extracción de información desde imágenes de documentos, un caso de uso con demanda creciente en digitalización de archivos, automatización de procesos y extracción estructurada. El interés potencial reside en que combina un modelo de visión-lenguaje de escala media (8B) con un ajuste específico para OCR, lo que en teoría permite desplegarlo en hardware de una sola GPU frente a alternativas de mayor tamaño.
 
@@ -82,7 +82,7 @@ La información proporcionada no permite una comparativa rigurosa: no hay benchm
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| keystats/Legend_ocr_qwen3 | 8,77 mil millones (confirmado) | no disponible | no disponible | no disponible | safetensors en HuggingFace, 0 descargas |
+| keystats/Legend_ocr_qwen3 | 8,77 mil millones (confirmado) | no disponible | no disponible | no disponible | safetensors en Hugging Face, 0 descargas |
 | Qwen3-VL (familia base indicada por la etiqueta qwen3_vl) | no disponible | no disponible | no disponible | no disponible | no verificado en la información aportada |
 | Otras alternativas de OCR basadas en visión-lenguaje de escala ~7-9B | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -103,7 +103,7 @@ No se dispone de datos verificados de modelos comparables en la información sum
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/keystats/Legend_ocr_qwen3
+- Modelo en Hugging Face: https://huggingface.co/keystats/Legend_ocr_qwen3
 - Repositorio similar del mismo autor: https://huggingface.co/keystats/Legend_ocr_v3
 - Árbol de ficheros de Legend_ocr_v3: https://huggingface.co/keystats/Legend_ocr_v3/tree/main
 - Qwen3 Technical Report (arXiv): https://arxiv.org/abs/2505.09388

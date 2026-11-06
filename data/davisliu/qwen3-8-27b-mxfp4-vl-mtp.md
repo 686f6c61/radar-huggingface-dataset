@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones. La vent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/davisliu/Qwen3.8-27B-MXFP4-VL-MTP
+- Modelo en Hugging Face: https://huggingface.co/davisliu/Qwen3.8-27B-MXFP4-VL-MTP
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Herramienta de cuantización e inferencia mlx-mtp: https://github.com/junainfinity/mlx-mtp
 - Runtime Swift mlx-swift-lm: https://github.com/ml-explore/mlx-swift-lm

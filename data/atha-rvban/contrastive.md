@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`atha-rvban/contrastive` es un repositorio de HuggingFace que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Coca**, orientada a aprendizaje contrastivo. Lo publica el usuario atha-rvban bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), revisiones de código y experimentos controlados de pequeno tamano.
+`atha-rvban/contrastive` es un repositorio de Hugging Face que contiene una implementación propia y compacta en PyTorch de una arquitectura denominada **Coca**, orientada a aprendizaje contrastivo. Lo publica el usuario atha-rvban bajo licencia MIT. No se trata de un modelo preentrenado listo para producción, sino de un esqueleto de código acompañado de un checkpoint de inicialización válido únicamente para pruebas de humo (smoke tests), revisiones de código y experimentos controlados de pequeno tamano.
 
-El dato mas relevante es su escala real: el fichero `model.safetensors` contiene 24.832 parametros en total, muy lejos de lo que sugiere la etiqueta interna de configuracion "large" que aparece en la model card. El repositorio no declara ningun resultado de benchmark, no indica idiomas soportados ni pipeline de HuggingFace, y registra 0 descargas y 0 likes en el momento de la consulta.
+El dato mas relevante es su escala real: el fichero `model.safetensors` contiene 24.832 parametros en total, muy lejos de lo que sugiere la etiqueta interna de configuracion "large" que aparece en la model card. El repositorio no declara ningun resultado de benchmark, no indica idiomas soportados ni pipeline de Hugging Face, y registra 0 descargas y 0 likes en el momento de la consulta.
 
 Su relevancia es, por tanto, la de una pieza de referencia reproducible: define la arquitectura (atencion lineal, fusion por concatenacion y MLP, activacion swish, normalizacion layernorm) y una receta de entrenamiento por defecto (optimizador lion con schedule coseno), pero no acredita ningun entrenamiento completado. Cualquier uso evaluativo serio requeriria entrenar desde cero con datos y semillas controladas.
 
@@ -68,7 +68,7 @@ No hay datos de rendimiento publicados para este repositorio, por lo que no es p
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| atha-rvban/contrastive | 24.832 | no disponible | no disponible (sin benchmark) | MIT | HuggingFace, checkpoint de inicializacion |
+| atha-rvban/contrastive | 24.832 | no disponible | no disponible (sin benchmark) | MIT | Hugging Face, checkpoint de inicializacion |
 | CLIP (familia) | no disponible en la informacion aportada | no disponible | no disponible en la informacion aportada | no disponible en la informacion aportada | referencia conceptual de aprendizaje contrastivo imagen-texto |
 | OpenCLIP | no disponible en la informacion aportada | no disponible | no disponible en la informacion aportada | no disponible en la informacion aportada | referencia conceptual de implementacion abierta |
 | CoCa (familia) | no disponible en la informacion aportada | no disponible | no disponible en la informacion aportada | no disponible en la informacion aportada | referencia conceptual de arquitectura contrastiva con fusion |
@@ -88,5 +88,5 @@ Nota: la coincidencia de nombre con la familia CoCa no implica que este reposito
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/atha-rvban/contrastive
+- Hugging Face: https://huggingface.co/atha-rvban/contrastive
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la informacion disponible.

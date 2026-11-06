@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-PhishDetectAI-SMS-GRPO-LoRA (este) | 1,5B (base) + adaptador LoRA | No disponible (base: 32.768) | Sin benchmarks publicados | Apache 2.0 | HuggingFace, 0 descargas, repo de 0 GB |
+| Qwen-PhishDetectAI-SMS-GRPO-LoRA (este) | 1,5B (base) + adaptador LoRA | No disponible (base: 32.768) | Sin benchmarks publicados | Apache 2.0 | Hugging Face, 0 descargas, repo de 0 GB |
 | Qwen2.5-1.5B-Instruct | 1,5B | 32.768 tokens | Buenos resultados en su categoria segun el informe tecnico de Qwen2.5 | Apache 2.0 | Ampliamente disponible |
-| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Competitivo en modelos pequenos segun la documentacion de HuggingFace | Apache 2.0 | Ampliamente disponible |
+| SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Competitivo en modelos pequenos segun la documentacion de Hugging Face | Apache 2.0 | Ampliamente disponible |
 | Phi-3.5-mini-instruct | 3,8B | 128.000 tokens | Superior en razonamiento general, a costa de mas recursos | MIT | Ampliamente disponible |
 
 La comparacion es estructural: no existe ninguna medicion que permita afirmar que este adaptador supere al modelo base o a las alternativas en deteccion de phishing en SMS.
@@ -89,7 +89,7 @@ La comparacion es estructural: no existe ninguna medicion que permita afirmar qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ppsub/Qwen-PhishDetectAI-SMS-GRPO-LoRA
+- Modelo en Hugging Face: https://huggingface.co/ppsub/Qwen-PhishDetectAI-SMS-GRPO-LoRA
 - Modelo base cuantizado: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Libreria TRL (GRPO y LoRA): https://github.com/huggingface/trl

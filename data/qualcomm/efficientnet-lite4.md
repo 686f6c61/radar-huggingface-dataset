@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EfficientNet-Lite4 es un modelo de clasificacion de imagenes desarrollado originalmente por Google (paper "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks", arXiv:1905.11946) y redistribuido por Qualcomm en su repositorio de HuggingFace como parte de Qualcomm AI Hub Models. Se trata de la variante mas grande de la familia EfficientNet-Lite, una version adaptada de EfficientNet pensada para inferencia en dispositivos moviles y de borde, con 13,01 millones de parametros y una resolucion de entrada fija de 300x300 pixeles. El modelo llega preentrenado sobre el checkpoint de ImageNet y se publica junto con artefactos ya exportados para su despliegue en hardware Qualcomm.
+EfficientNet-Lite4 es un modelo de clasificacion de imagenes desarrollado originalmente por Google (paper "EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks", arXiv:1905.11946) y redistribuido por Qualcomm en su repositorio de Hugging Face como parte de Qualcomm AI Hub Models. Se trata de la variante mas grande de la familia EfficientNet-Lite, una version adaptada de EfficientNet pensada para inferencia en dispositivos moviles y de borde, con 13,01 millones de parametros y una resolucion de entrada fija de 300x300 pixeles. El modelo llega preentrenado sobre el checkpoint de ImageNet y se publica junto con artefactos ya exportados para su despliegue en hardware Qualcomm.
 
 El problema que resuelve es la clasificacion de imagenes en 1000 clases de ImageNet con latencias de milisegundos y bajo consumo de memoria, aprovechando la unidad de procesamiento neuronal (NPU) de los SoC Snapdragon, Dragonwing y QCS de Qualcomm. Ademas de la tarea de clasificacion directa, la model card lo presenta explicitamente como backbone reutilizable para construir modelos mas complejos (deteccion, segmentacion, extraccion de caracteristicas) en casos de uso especificos.
 
@@ -99,7 +99,7 @@ La informacion proporcionada no incluye datos comparativos de precision ni de la
 
 | Modelo | Parametros | Contexto / entrada | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| EfficientNet-Lite4 (este) | 13,01 M | 300x300 px | apache-2.0 | HuggingFace, Qualcomm AI Hub, GitHub | Exportaciones ONNX, QNN_DLC y TFLITE en float y w8a8 |
+| EfficientNet-Lite4 (este) | 13,01 M | 300x300 px | apache-2.0 | Hugging Face, Qualcomm AI Hub, GitHub | Exportaciones ONNX, QNN_DLC y TFLITE en float y w8a8 |
 | EfficientNet-Lite0 a Lite3 | no disponible | no disponible | no disponible | implementacion de referencia en GitHub (RangiLyu) | Variantes menores de la misma familia; datos concretos no incluidos en la informacion disponible |
 | EfficientNet-B0 a B7 (original) | no disponible | no disponible | no disponible | TensorFlow/Keras, multiples repositorios | Familia original sin las adaptaciones para cuantizacion movil; comparativa numerica no disponible |
 | MobileNetV3 | no disponible | no disponible | no disponible | TensorFlow, PyTorch, ONNX | Alternativa habitual en clasificacion movil; no se aportan metricas comparativas en la informacion disponible |
@@ -119,8 +119,8 @@ La informacion proporcionada no incluye datos comparativos de precision ni de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/qualcomm/EfficientNet-Lite4
-- Repositorio de archivos en HuggingFace: https://huggingface.co/qualcomm/EfficientNet-Lite4/tree/main
+- Hugging Face: https://huggingface.co/qualcomm/EfficientNet-Lite4
+- Repositorio de archivos en Hugging Face: https://huggingface.co/qualcomm/EfficientNet-Lite4/tree/main
 - Qualcomm AI Hub (modelo): https://aihub.qualcomm.com/models/efficientnet_lite4
 - Qualcomm AI Hub (computo y perfiles): https://aihub.qualcomm.com/compute/models/efficientnet_lite4
 - GitHub, carpeta del modelo en ai-hub-models (v0.62.0): https://github.com/qualcomm/ai-hub-models/blob/v0.62.0/src/qai_hub_models/models/efficientnet_lite4

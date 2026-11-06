@@ -80,7 +80,7 @@ La principal diferencia entre estas versiones es el formato de distribución: la
 
 ## Enlaces
 
-- Repositorio HuggingFace del artefacto NInfer: https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NInfer
+- Repositorio Hugging Face del artefacto NInfer: https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-NInfer
 - Modelo base (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Repositorio oficial de Qwen3.8-27B (Alibaba): https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Runtime NInfer: https://github.com/Neroued/ninfer

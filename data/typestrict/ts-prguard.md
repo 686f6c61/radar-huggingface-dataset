@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TS-PRGuard es un modelo publicado en HuggingFace por el usuario `typestrict` bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta.
+TS-PRGuard es un modelo publicado en Hugging Face por el usuario `typestrict` bajo licencia Apache 2.0. La model card asociada está practicamente vacia: unicamente contiene la declaracion de licencia, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio no registra descargas ni interacciones en el momento de la consulta.
 
 Por el identificador "PRGuard" cabe inferir un proposito orientado a la revision o proteccion de pull requests, aunque esta interpretacion no esta confirmada por ninguna documentacion oficial. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados ni formato de pesos.
 
@@ -79,7 +79,7 @@ No es posible establecer una comparativa fiable porque se desconocen el tamano, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/typestrict/TS-PRGuard
+- Hugging Face: https://huggingface.co/typestrict/TS-PRGuard
 - Paper: no disponible
 - Blog o documentacion adicional: no disponible
 - Repositorio de codigo: no disponible

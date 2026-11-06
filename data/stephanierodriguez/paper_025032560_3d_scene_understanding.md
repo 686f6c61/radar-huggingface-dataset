@@ -62,7 +62,7 @@ No disponible. No se puede comparar un modelo inexistente con otras alternativas
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/stephanierodriguez/paper_025032560_3d_scene_understanding
+- Repositorio de Hugging Face: https://huggingface.co/stephanierodriguez/paper_025032560_3d_scene_understanding
 - Resultados de búsqueda relacionados con comprensión de escenas 3D (no parte del repositorio):
   - OneCanvas: 3D Scene Understanding via Panoramic Reprojection: https://arxiv.org/abs/2606.19253
   - Feed-Forward 3D Scene Modeling: A Problem-Driven Perspective: https://arxiv.org/abs/2604.14025

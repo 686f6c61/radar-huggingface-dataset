@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Vistas | Datos de ajuste | Iteraciones | Pérdida final | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| kimhosoo/vroid-single-view-ablation | ~2B | 1 (V=1) | dhyun22/ego_gen_vroid_single (sintético, VRoid) | 12.000 | ~0,058 | Apache 2.0 | Pública en HuggingFace (0 descargas) |
-| kimhosoo/comind-single-view-ablation | ~2B | 1 (V=1) | CoMind (real) | 12.000 | ~0,057 | No disponible en la información | Pública en HuggingFace |
-| nvidia/Cosmos-Predict2.5-2B | ~2B | 2 (V=2, conjunto) | No disponible en la información | No disponible | No disponible | No disponible en la información | Checkpoint base en HuggingFace |
+| kimhosoo/vroid-single-view-ablation | ~2B | 1 (V=1) | dhyun22/ego_gen_vroid_single (sintético, VRoid) | 12.000 | ~0,058 | Apache 2.0 | Pública en Hugging Face (0 descargas) |
+| kimhosoo/comind-single-view-ablation | ~2B | 1 (V=1) | CoMind (real) | 12.000 | ~0,057 | No disponible en la información | Pública en Hugging Face |
+| nvidia/Cosmos-Predict2.5-2B | ~2B | 2 (V=2, conjunto) | No disponible en la información | No disponible | No disponible | No disponible en la información | Checkpoint base en Hugging Face |
 
 La comparación directa más relevante es con `kimhosoo/comind-single-view-ablation`, que replica la misma ablación sobre datos reales y constituye el experimento de control de este checkpoint. No se dispone de datos de rendimiento cuantitativo para ninguno de los tres modelos en la información proporcionada.
 
@@ -90,7 +90,7 @@ La comparación directa más relevante es con `kimhosoo/comind-single-view-ablat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimhosoo/vroid-single-view-ablation
+- Modelo en Hugging Face: https://huggingface.co/kimhosoo/vroid-single-view-ablation
 - Checkpoint de la contraparte real: https://huggingface.co/kimhosoo/comind-single-view-ablation
 - Dataset de ajuste: https://huggingface.co/datasets/dhyun22/ego_gen_vroid_single
 - Modelo base: https://huggingface.co/nvidia/Cosmos-Predict2.5-2B

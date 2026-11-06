@@ -49,7 +49,7 @@ Tampoco se documentan innovaciones tecnicas adicionales en esta copia. El valor 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de perplejidad, y los metadatos de HuggingFace no aportan cifras de evaluacion.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card del repositorio no incluye tablas de MMLU, HumanEval, GSM8K ni metricas de perplejidad, y los metadatos de Hugging Face no aportan cifras de evaluacion.
 
 ## Requisitos de hardware
 
@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vllm-project/llama-7b (este repo) | 6,74 B | no disponible (original: 2048) | other (no comercial) | HuggingFace, copia de huggyllama/llama-7b |
-| huggyllama/llama-7b | 6,74 B | 2048 (original) | other (no comercial) | HuggingFace, cuenta personal |
-| LLaMA-2-7B (Meta) | 6,74 B | 4096 | licencia LLaMA 2 (uso comercial permitido con condiciones) | HuggingFace, meta-llama |
-| Mistral-7B-v0.1 | 7,24 B | 8192 | Apache 2.0 | HuggingFace, mistralai |
+| vllm-project/llama-7b (este repo) | 6,74 B | no disponible (original: 2048) | other (no comercial) | Hugging Face, copia de huggyllama/llama-7b |
+| huggyllama/llama-7b | 6,74 B | 2048 (original) | other (no comercial) | Hugging Face, cuenta personal |
+| LLaMA-2-7B (Meta) | 6,74 B | 4096 | licencia LLaMA 2 (uso comercial permitido con condiciones) | Hugging Face, meta-llama |
+| Mistral-7B-v0.1 | 7,24 B | 8192 | Apache 2.0 | Hugging Face, mistralai |
 
 La comparativa se limita a parametros, contexto y licencia porque no hay datos de benchmarks en la informacion disponible para este repositorio. Frente a LLaMA-2-7B y Mistral-7B, este checkpoint queda en desventaja por contexto mas corto (si se confirma el original de 2048) y por una licencia no comercial, aunque su interes es reproducibility para CI mas que rendimiento.
 
@@ -82,7 +82,7 @@ La comparativa se limita a parametros, contexto y licencia porque no hay datos d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/vllm-project/llama-7b
+- Repositorio Hugging Face: https://huggingface.co/vllm-project/llama-7b
 - Repositorio original copiado: https://huggingface.co/huggyllama/llama-7b
 - Formulario de acceso original de Meta (referenciado en la model card): https://docs.google.com/forms/d/e/1FAIpQLSfqNECQnMkycAp2jP4Z9TFX0cGR4uf7b_fBxjY_OjhJILlKGA/viewform?usp=send_form
 - Repositorio de vLLM: https://github.com/vllm-project/vllm

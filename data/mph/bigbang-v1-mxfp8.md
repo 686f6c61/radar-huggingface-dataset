@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros totales / activos | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BigBang-v1-MXFP8 | ~36B / ~3B | 262.144 | MXFP8 dinámico | Apache 2.0 | HuggingFace (mph) |
-| BigBang-v1 (base) | ~36B / ~3B | 262.144 | BF16 | no disponible | HuggingFace (endless-frontier) |
+| BigBang-v1-MXFP8 | ~36B / ~3B | 262.144 | MXFP8 dinámico | Apache 2.0 | Hugging Face (mph) |
+| BigBang-v1 (base) | ~36B / ~3B | 262.144 | BF16 | no disponible | Hugging Face (endless-frontier) |
 | Qwen3.6-35B-A3B (origen) | ~35B / ~3B | no disponible | BF16 y otras | no disponible | no disponible |
 
 La comparación más directa es con el modelo base BigBang-v1 en BF16: misma arquitectura y contexto, pero mayor huella de memoria y sin las optimizaciones de cuantización. Frente al Qwen3.6-35B-A3B original, BigBang-v1 es un finetune del que no se detallan los cambios. No se dispone de datos de rendimiento para establecer comparaciones cuantitativas con alternativas.
@@ -84,6 +84,6 @@ La comparación más directa es con el modelo base BigBang-v1 en BF16: misma arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mph/BigBang-v1-MXFP8
+- Modelo en Hugging Face: https://huggingface.co/mph/BigBang-v1-MXFP8
 - Modelo base: https://huggingface.co/endless-frontier/BigBang-v1
 - NVIDIA TensorRT Model Optimizer: https://github.com/NVIDIA/TensorRT-Model-Optimizer

@@ -89,7 +89,7 @@ La comparación directa con el adaptador es limitada porque no se han publicado 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/em-eval/llama3.1-8b-bad-medical-block_em_data-model_org_recipe-chatgpt_system-s0
+- Hugging Face: https://huggingface.co/em-eval/llama3.1-8b-bad-medical-block_em_data-model_org_recipe-chatgpt_system-s0
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Paper de Llama 3.1 (The Llama 3 Herd of Models): https://arxiv.org/abs/2407.21783
 - PEFT: https://github.com/huggingface/peft

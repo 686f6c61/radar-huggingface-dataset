@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chenoscar/grad-contrastive` es un repositorio de HuggingFace que contiene una implementación propia y de pequeño tamaño de Dino (self-distillation with no labels) orientada a aprendizaje contrastivo, empaquetada junto con una configuración de arquitectura explícita (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Lo publica el usuario chenoscar bajo licencia BSD-3-Clause. El propio autor indica que la variante etiquetada como "xlarge" es un punto de partida reproducible y **no** una release de un modelo entrenado: el checkpoint sirve para pruebas de humo, no se presenta como un checkpoint evaluado en benchmarks y no se reclama ninguna métrica en la model card.
+`chenoscar/grad-contrastive` es un repositorio de Hugging Face que contiene una implementación propia y de pequeño tamaño de Dino (self-distillation with no labels) orientada a aprendizaje contrastivo, empaquetada junto con una configuración de arquitectura explícita (`config.json`), una receta de experimento por defecto (`training_args.json`) y un checkpoint de inicialización (`model.safetensors`). Lo publica el usuario chenoscar bajo licencia BSD-3-Clause. El propio autor indica que la variante etiquetada como "xlarge" es un punto de partida reproducible y **no** una release de un modelo entrenado: el checkpoint sirve para pruebas de humo, no se presenta como un checkpoint evaluado en benchmarks y no se reclama ninguna métrica en la model card.
 
 El dato real de safetensors es de 49.600 parámetros totales, una cifra que no se corresponde con la escala "xlarge" que declara la configuración; se trata, por tanto, de una configuración de juguete o de un volcado de arquitectura sin escalar. El repositorio ocupa 0,0 GB, no tiene descargas ni likes, y fue creado y actualizado con cinco segundos de diferencia (2026-10-18T17:26:37Z y 2026-10-18T17:26:42Z), lo que apunta a una subida automatizada de un esqueleto de código más que a una publicación de investigación.
 
@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Estado | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `chenoscar/grad-contrastive` | 49.600 (reales) | Checkpoint de inicialización, sin entrenar | BSD-3-Clause | HuggingFace, 0 descargas |
-| `facebook/dino-vits16` (DINO original) | ~21 M (aprox.) | Entrenado en ImageNet, pesos publicados | Apache 2.0 | HuggingFace, ampliamente usado |
-| `facebook/dinov2-small` (DINOv2 ViT-S/14) | ~22 M (aprox.) | Entrenado con LVD-142M, pesos publicados | Apache 2.0 | HuggingFace, ampliamente usado |
+| `chenoscar/grad-contrastive` | 49.600 (reales) | Checkpoint de inicialización, sin entrenar | BSD-3-Clause | Hugging Face, 0 descargas |
+| `facebook/dino-vits16` (DINO original) | ~21 M (aprox.) | Entrenado en ImageNet, pesos publicados | Apache 2.0 | Hugging Face, ampliamente usado |
+| `facebook/dinov2-small` (DINOv2 ViT-S/14) | ~22 M (aprox.) | Entrenado con LVD-142M, pesos publicados | Apache 2.0 | Hugging Face, ampliamente usado |
 
 La comparación es asimétrica por diseño: los dos modelos de referencia son releases entrenadas y evaluadas, mientras que este repositorio es un esqueleto de código con un checkpoint de inicialización. En parámetros, `grad-contrastive` es tres órdenes de magnitud menor. No hay datos de benchmark de este repositorio que permitan comparar calidad; los recuentos de parámetros de DINO y DINOv2 se incluyen como referencia aproximada de la familia y no proceden de la información proporcionada por el autor.
 
@@ -77,13 +77,13 @@ La comparación es asimétrica por diseño: los dos modelos de referencia son re
 - **Riesgo de alucinación**: no aplica en sentido generativo, pero sí existe riesgo de atribuir capacidades al repositorio que no están demostradas; la model card es explícita al respecto.
 - **Sesgos conocidos**: no documentados. Al no haber datos de entrenamiento publicados, no es posible evaluar sesgos de dominio ni de representación.
 - **Limitaciones de contexto e idioma**: no disponibles; no hay metadatos de idioma ni de resolución de entrada, por lo que se desconoce el régimen de uso previsto.
-- **Carga no estándar**: al ser una implementación personalizada, las APIs automáticas de HuggingFace requieren un adaptador explícito; intentar `AutoModel.from_pretrained` sin él fallará o producirá resultados incorrectos.
+- **Carga no estándar**: al ser una implementación personalizada, las APIs automáticas de Hugging Face requieren un adaptador explícito; intentar `AutoModel.from_pretrained` sin él fallará o producirá resultados incorrectos.
 - **Licencia**: BSD-3-Clause permite uso comercial y modificación con atribución y sin endoso del autor, pero el propio texto advierte de revisar por separado los términos de los datos de origen si se combina con datasets externos.
 - **Ausencia de mantenimiento verificable**: 0 descargas, 0 likes y una ventana de creación-actualización de cinco segundos sugieren que no hay soporte ni hoja de ruta pública.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chenoscar/grad-contrastive
+- Repositorio en Hugging Face: https://huggingface.co/chenoscar/grad-contrastive
 - Los resultados de la búsqueda web realizada no contienen material específico sobre este repositorio: son artículos generales de inteligencia artificial explicable en visión por computador (https://arxiv.org/html/2509.18913v1, https://dl.acm.org/doi/full/10.1145/3816420, https://cvpr.thecvf.com/virtual/2025/poster/33326, https://arxiv.org/html/2507.06819v3, https://jmlr.org/papers/volume27/25-1121/25-1121.pdf) y no documentan el modelo, su arquitectura ni sus resultados.
 - Paper de referencia de DINO (no enlazado desde el repositorio): no disponible en la información proporcionada.
 - Paper de referencia de DINOv2 (no enlazado desde el repositorio): no disponible en la información proporcionada.

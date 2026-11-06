@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-4B-typed-decisions es un adaptador LoRA con cabeza de decisión entrenado por el usuario wozniakos10 sobre el modelo base unsloth/Qwen3.5-4B. No es un modelo generativo al uso: en lugar de producir texto libre, recibe una pregunta tipada junto con sus posibles respuestas y devuelve, en un único forward pass, una distribución de probabilidad sobre cada opción. Su pipeline declarado en HuggingFace es zero-shot-classification y el repositorio contiene únicamente los adaptadores LoRA y la cabeza de decisión (0,3 GB), no los pesos completos del modelo base.
+Qwen3.5-4B-typed-decisions es un adaptador LoRA con cabeza de decisión entrenado por el usuario wozniakos10 sobre el modelo base unsloth/Qwen3.5-4B. No es un modelo generativo al uso: en lugar de producir texto libre, recibe una pregunta tipada junto con sus posibles respuestas y devuelve, en un único forward pass, una distribución de probabilidad sobre cada opción. Su pipeline declarado en Hugging Face es zero-shot-classification y el repositorio contiene únicamente los adaptadores LoRA y la cabeza de decisión (0,3 GB), no los pesos completos del modelo base.
 
 El modelo cubre tres tipos de pregunta: noul (sí/no con probabilidad de "sí"), choice (una opción entre criterios con nombre) y score (posición en una escala ordenada con probabilidad por nivel). La innovación práctica es que las preguntas y los criterios se definen en tiempo de inferencia, de modo que se pueden añadir nuevas etiquetas sin reentrenar. Esto lo sitúa como una pieza de infraestructura para enrutado, triaje, etiquetado y filtrado dentro de pipelines de software, más que como un asistente conversacional.
 
@@ -33,7 +33,7 @@ El entrenamiento se llevó a cabo con Unsloth (DecisionTrainer) sobre la configu
 - Definición de preguntas y criterios en tiempo de inferencia, sin reentrenamiento para nuevas etiquetas.
 - Salida de probabilidades por clase, no solo la etiqueta ganadora, lo que permite aplicar umbrales y abstención.
 - Múltiples preguntas simultáneas sobre la misma entrada: el ejemplo oficial consulta equipo, necesidad de reembolso y urgencia en una sola llamada.
-- Clasificación zero-shot según el pipeline declarado en HuggingFace.
+- Clasificación zero-shot según el pipeline declarado en Hugging Face.
 - Capacidad multilingüe: no disponible; entrenado y validado únicamente en inglés.
 - Tool calling, function calling, uso como agente, razonamiento multi-paso, visión, audio y modo "thinking": no disponibles en la información proporcionada; el modelo está orientado a producir juicios, no texto ni acciones.
 
@@ -83,7 +83,7 @@ No se dispone de resultados comparativos ni de especificaciones de modelos alter
 
 | Modelo | Parametros | Contexto | Tipo de salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-4B-typed-decisions | ~4B (base) + cabeza de decisión | 2048 tokens en entrenamiento | Probabilidad por respuesta tipada | Apache 2.0 | Adaptador en HuggingFace (0 descargas) |
+| Qwen3.5-4B-typed-decisions | ~4B (base) + cabeza de decisión | 2048 tokens en entrenamiento | Probabilidad por respuesta tipada | Apache 2.0 | Adaptador en Hugging Face (0 descargas) |
 | unsloth/Qwen3.5-4B | No disponible en la información | No disponible | Texto generado | No disponible en la información | Modelo base público referenciado |
 | Alternativas de clasificación zero-shot de tamaño similar | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -102,7 +102,7 @@ No se dispone de resultados comparativos ni de especificaciones de modelos alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions
+- Modelo en Hugging Face: https://huggingface.co/wozniakos10/Qwen3.5-4B-typed-decisions
 - Modelo base: https://huggingface.co/unsloth/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/LocalLLaMA/typed-decisions
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

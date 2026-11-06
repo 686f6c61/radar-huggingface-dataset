@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LightOnOCR-2-1B-viv2-vllm es un ajuste fino (fine-tune) del modelo xbikevn/LightOnOCR-2-1B-vi, publicado por el usuario xbikevn en HuggingFace bajo licencia Apache 2.0. Se trata de un modelo de tipo image-text-to-text, es decir, un modelo vision-language orientado a tareas de reconocimiento optico de caracteres (OCR) y conversion de imagenes de documentos en texto. Cuenta con 1.005.647.872 parametros (aproximadamente 1.000 millones) y un repositorio de 3,7 GB en formato safetensors.
+LightOnOCR-2-1B-viv2-vllm es un ajuste fino (fine-tune) del modelo xbikevn/LightOnOCR-2-1B-vi, publicado por el usuario xbikevn en Hugging Face bajo licencia Apache 2.0. Se trata de un modelo de tipo image-text-to-text, es decir, un modelo vision-language orientado a tareas de reconocimiento optico de caracteres (OCR) y conversion de imagenes de documentos en texto. Cuenta con 1.005.647.872 parametros (aproximadamente 1.000 millones) y un repositorio de 3,7 GB en formato safetensors.
 
 El modelo parte de la familia LightOnOCR-2-1B, desarrollada originalmente por la empresa francesa LightOn, y esta adaptado a traves de un entrenamiento supervisado de una sola epoca con Learning Rate 6e-05, batch total de 16 y el optimizador AdamW fusionado. El sufijo "-vllm" del identificador sugiere que este checkpoint esta preparado o verificado para su despliegue con el motor de inferencia vLLM, lo que resulta relevante para equipos que necesitan servir OCR de forma masiva con bajo coste computacional.
 
@@ -77,8 +77,8 @@ No se dispone de datos de rendimiento publicados de este modelo, por lo que la c
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| xbikevn/LightOnOCR-2-1B-viv2-vllm | 1,01 mil millones | No disponible | Apache 2.0 | HuggingFace, 0 descargas | No disponible |
-| xbikevn/LightOnOCR-2-1B-vi (modelo base) | No disponible | No disponible | No disponible | HuggingFace | No disponible |
+| xbikevn/LightOnOCR-2-1B-viv2-vllm | 1,01 mil millones | No disponible | Apache 2.0 | Hugging Face, 0 descargas | No disponible |
+| xbikevn/LightOnOCR-2-1B-vi (modelo base) | No disponible | No disponible | No disponible | Hugging Face | No disponible |
 | Otros modelos OCR/VLM de ~1-3B (por ejemplo, alternativas de la misma categoria) | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han identificado en la informacion proporcionada modelos comparables con datos verificables de parametros, contexto o rendimiento.
@@ -98,6 +98,6 @@ No se han identificado en la informacion proporcionada modelos comparables con d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv2-vllm
-- Modelo base en HuggingFace: https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi
+- Modelo en Hugging Face: https://huggingface.co/xbikevn/LightOnOCR-2-1B-viv2-vllm
+- Modelo base en Hugging Face: https://huggingface.co/xbikevn/LightOnOCR-2-1B-vi
 - Informacion adicional: no disponible (la busqueda web no devolvio resultados relacionados con el modelo).

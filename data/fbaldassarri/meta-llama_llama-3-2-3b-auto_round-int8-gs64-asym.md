@@ -4,7 +4,7 @@
 
 Este repositorio contiene una versión cuantizada a 8 bits (INT8) del modelo Llama 3.2 3B de Meta, generada por el usuario fbaldassarri mediante el framework Intel AutoRound (versión 0.13.1), que implementa el algoritmo SignRound de cuantización solo de pesos (weights-only quantization, WoQ). El objetivo es reducir el tamaño del modelo y acelerar la inferencia en hardware de bajo consumo, específicamente CPUs Intel, iGPUs Arc y NPUs de la serie Core Ultra, sin necesidad de una GPU dedicada.
 
-La cuantización utiliza un tamaño de grupo de 64 y cuantización asimétrica, calibrada en CPU con 128 muestras y 200 iteraciones de ajuste. El resultado es un modelo compatible con la librería transformers de HuggingFace, que conserva las capacidades del modelo base (generación de texto, razonamiento, código y soporte multilingüe en 8 idiomas) a cambio de una pequeña pérdida de precisión inherente al proceso de cuantización.
+La cuantización utiliza un tamaño de grupo de 64 y cuantización asimétrica, calibrada en CPU con 128 muestras y 200 iteraciones de ajuste. El resultado es un modelo compatible con la librería transformers de Hugging Face, que conserva las capacidades del modelo base (generación de texto, razonamiento, código y soporte multilingüe en 8 idiomas) a cambio de una pequeña pérdida de precisión inherente al proceso de cuantización.
 
 Su relevancia actual radica en que permite desplegar un modelo de 3 000 millones de parámetros en entornos sin GPU, como servidores CPU tradicionales, portátiles con Intel Core Ultra o dispositivos edge, manteniendo un equilibrio razonable entre calidad y eficiencia. Está pensado para investigación y prototipado, tal y como indica el autor en el descargo de responsabilidad.
 
@@ -33,7 +33,7 @@ El proceso de cuantización se realizó en CPU con precisión bfloat16 para la c
 - Razonamiento y comprensión del lenguaje en 8 idiomas: inglés, alemán, francés, italiano, portugués, hindi, español y tailandés.
 - Generación de código y resolución de problemas matemáticos, heredadas del modelo base Llama 3.2 3B.
 - Inferencia eficiente en CPU Intel, iGPU Arc (a través de intel-extension-for-pytorch) y NPU Intel AI Boost (a través de OpenVINO).
-- Compatible con el ecosistema HuggingFace transformers, lo que facilita su integración en pipelines existentes.
+- Compatible con el ecosistema Hugging Face transformers, lo que facilita su integración en pipelines existentes.
 - No se documenta soporte explícito de tool calling, function calling ni modo agente en la ficha del repositorio.
 
 ## Casos de uso
@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| meta-llama/Llama-3.2-3B (original) | 3,2B | 128 000 | BF16 (original) | Llama 3.2 Community | HuggingFace |
-| fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-asym (este) | 3,2B (pesos INT8 ~1,15 GB) | 128 000 (heredado) | INT8, gs64, asimétrica | Llama 3.2 Community | HuggingFace |
-| Otras cuantizaciones de Llama 3.2 3B (GPTQ, AWQ, GGUF) | 3,2B | 128 000 | 4-8 bits según variante | Llama 3.2 Community | HuggingFace, Ollama, llama.cpp |
+| meta-llama/Llama-3.2-3B (original) | 3,2B | 128 000 | BF16 (original) | Llama 3.2 Community | Hugging Face |
+| fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-asym (este) | 3,2B (pesos INT8 ~1,15 GB) | 128 000 (heredado) | INT8, gs64, asimétrica | Llama 3.2 Community | Hugging Face |
+| Otras cuantizaciones de Llama 3.2 3B (GPTQ, AWQ, GGUF) | 3,2B | 128 000 | 4-8 bits según variante | Llama 3.2 Community | Hugging Face, Ollama, llama.cpp |
 
 La comparativa se limita a aspectos estructurales, ya que no hay benchmarks publicados para esta cuantización concreta. Frente al modelo original, esta versión reduce el tamaño de los pesos aproximadamente un 60 % (de ~2,4 GB en BF16 a ~1,15 GB en INT8) y está orientada a CPU, mientras que el original está pensado para GPU. Frente a otras cuantizaciones como GPTQ o AWQ, la principal diferencia es el método (AutoRound/SignRound) y el soporte específico para hardware Intel.
 
@@ -80,7 +80,7 @@ La comparativa se limita a aspectos estructurales, ya que no hay benchmarks publ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-asym
+- Repositorio Hugging Face: https://huggingface.co/fbaldassarri/meta-llama_Llama-3.2-3B-auto_round-int8-gs64-asym
 - Modelo base: https://huggingface.co/meta-llama/Llama-3.2-3B
 - Framework Intel AutoRound: https://github.com/intel/auto-round
 - Licencia Llama 3.2 Community: https://github.com/meta-llama/llama-models/blob/main/models/llama3_2/LICENSE

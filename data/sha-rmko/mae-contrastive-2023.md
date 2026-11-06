@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`sha-rmko/mae-contrastive-2023` es un repositorio de HuggingFace publicado por el usuario sha-rmko que contiene una implementación de trabajo de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, con configuración declarada "large". Según la propia model card, el repositorio prioriza código transparente y pruebas de humo reproducibles, y omite deliberadamente cualquier afirmación sobre rendimiento en benchmarks. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo y no como un modelo entrenado.
+`sha-rmko/mae-contrastive-2023` es un repositorio de Hugging Face publicado por el usuario sha-rmko que contiene una implementación de trabajo de una arquitectura denominada "Mae" orientada a aprendizaje contrastivo, con configuración declarada "large". Según la propia model card, el repositorio prioriza código transparente y pruebas de humo reproducibles, y omite deliberadamente cualquier afirmación sobre rendimiento en benchmarks. El checkpoint incluido (`model.safetensors`) se describe explícitamente como una inicialización válida para pruebas de humo y no como un modelo entrenado.
 
 El dato objetivo de tamaño es de 49.600 parámetros totales según el fichero safetensors, una cifra que contrasta con la etiqueta "large" que aparece en la configuración de arquitectura de la model card. El repositorio ocupa 0,0 GB y acumula 11 descargas y 0 likes en el momento de la consulta. No se especifican idiomas soportados ni pipeline asociado.
 
@@ -78,6 +78,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sha-rmko/mae-contrastive-2023
+- Modelo en Hugging Face: https://huggingface.co/sha-rmko/mae-contrastive-2023
 - Ficheros del repositorio: `eval.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - La busqueda web realizada no ha devuelto ningun enlace relevante al modelo: los resultados obtenidos (una patente sobre combinaciones terapeuticas y un archivo de una publicacion musical de 2005) no guardan relacion con este repositorio. No se dispone de paper, blog, repositorio adicional ni demo asociados.

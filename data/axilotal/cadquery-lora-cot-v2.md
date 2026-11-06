@@ -4,7 +4,7 @@
 
 El modelo `Axilotal/cadquery-lora-cot-v2` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/qwen2.5-coder-7b-instruct-bnb-4bit`, una versión cuantizada en 4 bits de Qwen2.5-Coder-7B-Instruct. Lo desarrolla el usuario Axilotal y su propósito es especializar el modelo en la generación de código CAD mediante la librería CadQuery, probablemente con un enfoque de cadena de pensamiento (CoT) para mejorar la precisión en tareas de modelado paramétrico.
 
-El adaptador se ha entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de HuggingFace, con el framework Unsloth para optimizar el entrenamiento. El repositorio tiene un tamaño de 0,2 GB, lo que indica que solo contiene los pesos del adaptador LoRA, no el modelo completo. La fecha de creación es agosto de 2026 y no se ha publicado información sobre el dataset de entrenamiento ni sobre el rendimiento en benchmarks.
+El adaptador se ha entrenado mediante fine-tuning supervisado (SFT) utilizando la librería TRL de Hugging Face, con el framework Unsloth para optimizar el entrenamiento. El repositorio tiene un tamaño de 0,2 GB, lo que indica que solo contiene los pesos del adaptador LoRA, no el modelo completo. La fecha de creación es agosto de 2026 y no se ha publicado información sobre el dataset de entrenamiento ni sobre el rendimiento en benchmarks.
 
 La relevancia de este modelo radica en que aborda un nicho específico: la generación automática de código CadQuery, una librería de Python para diseño paramétrico 3D. Al estar basado en Qwen2.5-Coder, hereda las capacidades de generación de código y razonamiento del modelo base, pero especializado para CAD. Sin embargo, la falta de documentación y de evaluaciones publicadas limita su uso directo en producción sin una validación adicional.
 
@@ -80,7 +80,7 @@ No hay modelos especializados en CadQuery de referencia pública, por lo que la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Axilotal/cadquery-lora-cot-v2
+- Modelo en Hugging Face: https://huggingface.co/Axilotal/cadquery-lora-cot-v2
 - Modelo base (unsloth/qwen2.5-coder-7b-instruct-bnb-4bit): https://huggingface.co/unsloth/qwen2.5-coder-7b-instruct-bnb-4bit
 - Librería TRL: https://github.com/huggingface/trl
 - CadQuery (librería de diseño CAD): https://cadquery.readthedocs.io/

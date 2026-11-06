@@ -104,7 +104,7 @@ No se dispone de datos de rendimiento comparativos para este adaptador; la compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rodinaahmed30/qwen1.5b-masri-lora
+- Modelo en Hugging Face: https://huggingface.co/rodinaahmed30/qwen1.5b-masri-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Repositorio de LLaMA-Factory (framework de ajuste citado en las etiquetas): https://github.com/hiyouga/LLaMA-Factory
 - Repositorio de PEFT: https://github.com/huggingface/peft

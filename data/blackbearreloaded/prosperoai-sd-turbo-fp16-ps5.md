@@ -88,7 +88,7 @@ La comparativa se limita a modelos de difusion similares, pero no hay datos publ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/blackbearreloaded/ProsperoAI-SD-Turbo-FP16-PS5
+- Repositorio en Hugging Face: https://huggingface.co/blackbearreloaded/ProsperoAI-SD-Turbo-FP16-PS5
 - Proyecto ProsperoAI en GitHub: https://github.com/blackbearreloaded/ProsperoAI
 - Licencia del modelo base (Stability AI Community License): https://huggingface.co/stabilityai/sd-turbo/blob/main/LICENSE.md
-- Modelo base sd-turbo en HuggingFace: https://huggingface.co/stabilityai/sd-turbo
+- Modelo base sd-turbo en Hugging Face: https://huggingface.co/stabilityai/sd-turbo

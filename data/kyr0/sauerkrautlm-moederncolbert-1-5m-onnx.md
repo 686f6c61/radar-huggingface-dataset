@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de comparativas publicadas en la informa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kyr0/SauerkrautLM-MoEdernColBERT-1.5M-ONNX
+- Modelo en Hugging Face: https://huggingface.co/kyr0/SauerkrautLM-MoEdernColBERT-1.5M-ONNX
 - Modelo base: https://huggingface.co/VAGOsolutions/SauerkrautLM-MoEdernColBERT-1.5M
 - Revisión del modelo base exportada: `9d360b8b88ae11bea5784bf9012ff509fdd5c2da`
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código o demos adicionales.

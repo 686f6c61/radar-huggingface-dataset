@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Keypoints | Resolución de entrada | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Wholebody-Refinement-onnx (RTMW-l + RTMPose Hand5) | 133 (cuerpo completo) + 21 por mano | 384x288 y 256x256 | ONNX | Apache 2.0 | HuggingFace (RabbitDaisuke) |
+| Wholebody-Refinement-onnx (RTMW-l + RTMPose Hand5) | 133 (cuerpo completo) + 21 por mano | 384x288 y 256x256 | ONNX | Apache 2.0 | Hugging Face (RabbitDaisuke) |
 | MMPose RTMW-l original | 133 | 384x288 | PyTorch (checkpoint) | Apache 2.0 | Repositorio MMPose |
 | MMPose RTMPose Hand5 original | 21 por mano | 256x256 | PyTorch (checkpoint) | Apache 2.0 | Repositorio MMPose |
 | Otros modelos de pose ONNX de MMPose | no disponible | no disponible | ONNX | Apache 2.0 | no disponible |
@@ -83,6 +83,6 @@ La comparativa se limita a los modelos de origen de MMPose, ya que no se dispone
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RabbitDaisuke/Wholebody-Refinement-onnx
+- Hugging Face: https://huggingface.co/RabbitDaisuke/Wholebody-Refinement-onnx
 - Repositorio de experimentos y scripts de subida: https://github.com/DaisukeDaisuke/Wholebody-test
 - MMPose (modelos originales RTMW y RTMPose): no se proporciona URL directa en la información disponible.

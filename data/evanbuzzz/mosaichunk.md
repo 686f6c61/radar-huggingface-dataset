@@ -79,7 +79,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/evanbuzzZ/MosaiChunk
+- Hugging Face: https://huggingface.co/evanbuzzZ/MosaiChunk
 - Pagina del proyecto: https://mosaichunk.github.io/
 - Articulo (PDF): https://mosaichunk.github.io/assets/paper.pdf
 - Codigo: https://github.com/mosaichunk/MosaiChunk

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-K2-Horizon-0.9B-chat-mlx-8bit es una conversion cuantizada a 8 bits del modelo IFM/K2-Horizon-0.9B, realizada por el usuario SirSahOl mediante la herramienta MLX Foundry y publicada en HuggingFace. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion de pesos en formato MLX (safetensors) pensada exclusivamente para ejecucion en Apple Silicon. El repositorio ocupa 1,1 GB y contiene 1.078.285.824 parametros, coherente con la denominacion comercial de "0.9B" del modelo original.
+K2-Horizon-0.9B-chat-mlx-8bit es una conversion cuantizada a 8 bits del modelo IFM/K2-Horizon-0.9B, realizada por el usuario SirSahOl mediante la herramienta MLX Foundry y publicada en Hugging Face. No se trata por tanto de un modelo entrenado desde cero, sino de una redistribucion de pesos en formato MLX (safetensors) pensada exclusivamente para ejecucion en Apple Silicon. El repositorio ocupa 1,1 GB y contiene 1.078.285.824 parametros, coherente con la denominacion comercial de "0.9B" del modelo original.
 
 El problema que resuelve es la portabilidad: el modelo base solo puede ejecutarse con comodidad en hardware Apple si se convierte al formato nativo de MLX, y esta version de 8 bits reduce el peso en disco frente a la variante de 16 bits a cambio de una perdida de calidad asumida por el propio autor. La licencia es Apache 2.0, heredada del modelo origen, lo que permite uso comercial sin restricciones adicionales conocidas.
 
-La relevancia de esta ficha es limitada pero concreta: se publico el 11 de septiembre de 2026, acumula 0 descargas y 0 "likes", y no incluye datos sobre arquitectura interna, longitud de contexto, composicion del dataset de entrenamiento ni idiomas soportados. Toda la informacion tecnica disponible procede de la model card del conversor y de los metadatos de HuggingFace, no del autor del modelo base.
+La relevancia de esta ficha es limitada pero concreta: se publico el 11 de septiembre de 2026, acumula 0 descargas y 0 "likes", y no incluye datos sobre arquitectura interna, longitud de contexto, composicion del dataset de entrenamiento ni idiomas soportados. Toda la informacion tecnica disponible procede de la model card del conversor y de los metadatos de Hugging Face, no del autor del modelo base.
 
 ## Especificaciones tecnicas
 
@@ -17,7 +17,7 @@ La relevancia de esta ficha es limitada pero concreta: se publico el 11 de septi
 | Parametros activos | no aplicable / no disponible (sin informacion sobre arquitectura MoE) |
 | Longitud de contexto | no disponible (la model card solo advierte de degradacion por encima de 8K tokens) |
 | Tipos de cuantizacion | 8 bits (cuantizacion de pesos, weight-only) con MLX; existen variantes del mismo autor en 16 bits y se menciona 4 bits como recomendacion |
-| Idiomas soportados | no disponible (los tags de HuggingFace no declaran idiomas) |
+| Idiomas soportados | no disponible (los tags de Hugging Face no declaran idiomas) |
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (formato MLX, libreria mlx-lm) |
 
@@ -102,7 +102,7 @@ No se dispone de datos de benchmarks de calidad de este modelo ni de sus alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-8bit
+- Modelo en Hugging Face: https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-8bit
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - Variante de 16 bits: https://huggingface.co/SirSahOl/K2-Horizon-0.9B-chat-mlx-16bit
 - Perfil del autor de la conversion: https://huggingface.co/SirSahOl

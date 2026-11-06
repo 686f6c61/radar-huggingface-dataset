@@ -73,10 +73,10 @@ No se dispone de datos de rendimiento de este adaptador, por lo que la comparaci
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Este adaptador (sobre Qwen3-4B-Instruct-2507) | Adaptador LoRA; base ~4B | No disponible en la ficha | No disponible | HuggingFace, 1,1 GB, 0 descargas |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B densos | Contexto largo segun documentacion publica del modelo | Apache 2.0 segun documentacion publica del modelo | HuggingFace, ampliamente distribuido |
-| Llama-3.2-3B-Instruct | ~3,2B densos | 128K segun documentacion publica | Licencia comunitaria de Llama 3.2 | HuggingFace, ampliamente distribuido |
-| Gemma-3-4B-IT | ~4B densos | 128K segun documentacion publica | Licencia de Gemma | HuggingFace, ampliamente distribuido |
+| Este adaptador (sobre Qwen3-4B-Instruct-2507) | Adaptador LoRA; base ~4B | No disponible en la ficha | No disponible | Hugging Face, 1,1 GB, 0 descargas |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | ~4B densos | Contexto largo segun documentacion publica del modelo | Apache 2.0 segun documentacion publica del modelo | Hugging Face, ampliamente distribuido |
+| Llama-3.2-3B-Instruct | ~3,2B densos | 128K segun documentacion publica | Licencia comunitaria de Llama 3.2 | Hugging Face, ampliamente distribuido |
+| Gemma-3-4B-IT | ~4B densos | 128K segun documentacion publica | Licencia de Gemma | Hugging Face, ampliamente distribuido |
 
 La diferencia principal de este repositorio frente a los tres anteriores no es tecnica sino de gobernanza: carece de licencia declarada, de idiomas y de evaluacion, mientras que los modelos de referencia publican esos campos de forma explicita.
 
@@ -94,7 +94,7 @@ La diferencia principal de este repositorio frente a los tres anteriores no es t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2adc1f0e-4ad1-4b7d-9a6c-ac00ca549742-5GCTrdFw
+- Repositorio en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2adc1f0e-4ad1-4b7d-9a6c-ac00ca549742-5GCTrdFw
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Falcon2-5.5B-Portuguese-GGUF es una cuantización en formato GGUF de un modelo derivado de tiiuae/falcon-11B, publicada por el usuario WellissonSousa en HuggingFace. El modelo subyacente se presenta como un merge (fusión) de modelos realizado con mergekit y orientado al idioma portugués, con un total de 5.465.415.680 parámetros según los pesos en safetensors. La model card original remite a ssmits/Falcon2-5.5B-Portuguese como fuente del checkpoint convertido a GGUF mediante el espacio GGUF-my-repo de ggml.ai y llama.cpp.
+Falcon2-5.5B-Portuguese-GGUF es una cuantización en formato GGUF de un modelo derivado de tiiuae/falcon-11B, publicada por el usuario WellissonSousa en Hugging Face. El modelo subyacente se presenta como un merge (fusión) de modelos realizado con mergekit y orientado al idioma portugués, con un total de 5.465.415.680 parámetros según los pesos en safetensors. La model card original remite a ssmits/Falcon2-5.5B-Portuguese como fuente del checkpoint convertido a GGUF mediante el espacio GGUF-my-repo de ggml.ai y llama.cpp.
 
 El interés de esta ficha es doble: por un lado, documenta una variante comunitaria de la familia Falcon 2 (arquitectura transformer decoder-only de TII) reducida a aproximadamente la mitad de parámetros mediante merge; por otro, ilustra el flujo habitual de publicación de pesos cuantizados en GGUF para inferencia local con llama.cpp. La licencia declarada es Apache 2.0, lo que facilita su uso comercial, aunque conviene verificar la trazabilidad completa del merge.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Falcon2-5.5B-Portuguese-GGUF (este) | 5,47B | no disponible | Apache 2.0 | GGUF | HuggingFace |
-| tiiuae/falcon-11B (base) | 11B | no disponible en esta ficha | Apache 2.0 (TII) | safetensors | HuggingFace |
-| ssmits/Falcon2-5.5B-Portuguese (origen del merge) | ~5,5B | no disponible | Apache 2.0 | safetensors | HuggingFace |
-| Modelos portugueses de ~7B (p. ej. variantes de Llama/Mistral ajustadas a pt) | ~7B | variable según variante | variable | safetensors/GGUF | HuggingFace |
+| Falcon2-5.5B-Portuguese-GGUF (este) | 5,47B | no disponible | Apache 2.0 | GGUF | Hugging Face |
+| tiiuae/falcon-11B (base) | 11B | no disponible en esta ficha | Apache 2.0 (TII) | safetensors | Hugging Face |
+| ssmits/Falcon2-5.5B-Portuguese (origen del merge) | ~5,5B | no disponible | Apache 2.0 | safetensors | Hugging Face |
+| Modelos portugueses de ~7B (p. ej. variantes de Llama/Mistral ajustadas a pt) | ~7B | variable según variante | variable | safetensors/GGUF | Hugging Face |
 
 La comparación cuantitativa de rendimiento no es posible porque no hay benchmarks publicados para esta variante ni para el checkpoint de origen en la información disponible.
 
@@ -81,7 +81,7 @@ La comparación cuantitativa de rendimiento no es posible porque no hay benchmar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/WellissonSousa/Falcon2-5.5B-Portuguese-GGUF
+- Repositorio Hugging Face: https://huggingface.co/WellissonSousa/Falcon2-5.5B-Portuguese-GGUF
 - Modelo de origen del merge: https://huggingface.co/ssmits/Falcon2-5.5B-Portuguese
 - Modelo base: https://huggingface.co/tiiuae/falcon-11B
 - Espacio GGUF-my-repo: https://huggingface.co/spaces/ggml-org/gguf-my-repo

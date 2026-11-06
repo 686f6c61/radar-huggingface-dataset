@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `srmistbiolab1991/visual-question-answering-study` no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre respuesta a preguntas visuales (Visual Question Answering, VQA). Lo publica el usuario `srmistbiolab1991` en HuggingFace con la etiqueta `research-notes`, licencia MIT y el pipeline declarado `visual-question-answering`. El propio README del autor indica explícitamente que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ni código ni checkpoint entrenado: el artefacto principal es un fichero `review.md` con el planteamiento del estudio, hipótesis y preguntas abiertas.
+El repositorio `srmistbiolab1991/visual-question-answering-study` no es un modelo entrenado, sino un conjunto estructurado de notas de investigación sobre respuesta a preguntas visuales (Visual Question Answering, VQA). Lo publica el usuario `srmistbiolab1991` en Hugging Face con la etiqueta `research-notes`, licencia MIT y el pipeline declarado `visual-question-answering`. El propio README del autor indica explícitamente que no se reclama ninguna mejora de benchmark, ninguna ablación completada, ni código ni checkpoint entrenado: el artefacto principal es un fichero `review.md` con el planteamiento del estudio, hipótesis y preguntas abiertas.
 
 La única evidencia de pesos es un fichero en formato safetensors cuyo recuento de parámetros registrado es de 24.832, un orden de magnitud propio de un tensor auxiliar o de un artefacto de metadatos, no de un modelo de lenguaje o visión utilizable. El tamaño del repositorio (0,0 GB redondeado) es coherente con esa lectura. El pipeline declarado, `visual-question-answering`, describe la tarea objetivo del estudio, no una capacidad implementada en el repositorio.
 
@@ -96,7 +96,7 @@ Los únicos elementos de referencia citados en el repositorio son los conjuntos 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/srmistbiolab1991/visual-question-answering-study
+- Repositorio en Hugging Face: https://huggingface.co/srmistbiolab1991/visual-question-answering-study
 - Perfil del autor: https://huggingface.co/srmistbiolab1991
 - Documentación de Transformers sobre respuesta a preguntas visuales: https://huggingface.co/docs/transformers/tasks/visual_question_answering
 - Sitio oficial del conjunto de datos VQA: https://visualqa.org/

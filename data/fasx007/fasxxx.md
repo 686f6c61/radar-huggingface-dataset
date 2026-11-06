@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Fasx007/Fasxxx es un adaptador LoRA de texto a imagen publicado en HuggingFace bajo la librería diffusers. Se presenta como un LoRA de plantilla (`template:diffusion-lora`) con un *trigger word* definido, `Bzbsnsk`, y está construido sobre el modelo base `abenzerps/Qwen-Image-2.1-Uncensored-Quantized`, una variante cuantizada y sin censura de la familia Qwen-Image. El autor es el usuario Fasx007 y el repositorio se creó el 3 de noviembre de 2026.
+Fasx007/Fasxxx es un adaptador LoRA de texto a imagen publicado en Hugging Face bajo la librería diffusers. Se presenta como un LoRA de plantilla (`template:diffusion-lora`) con un *trigger word* definido, `Bzbsnsk`, y está construido sobre el modelo base `abenzerps/Qwen-Image-2.1-Uncensored-Quantized`, una variante cuantizada y sin censura de la familia Qwen-Image. El autor es el usuario Fasx007 y el repositorio se creó el 3 de noviembre de 2026.
 
 La información disponible es mínima: la model card no describe el contenido, el estilo ni el proceso de entrenamiento del adaptador, y el repositorio figura con un tamaño de 0.0 GB, lo que sugiere que los pesos no están subidos o que el repo está vacío o incompleto. No hay descargas ni *likes*, ni licencia declarada, ni idiomas especificados.
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 |---|---|---|---|---|---|
 | Fasx007/Fasxxx | LoRA de difusión | Qwen-Image-2.1-Uncensored-Quantized | no disponible | no disponible | Repo de 0.0 GB, 0 descargas |
 | abenzerps/Qwen-Image-2.1-Uncensored-Quantized | Modelo de difusión cuantizado | Qwen-Image 2.1 | no disponible | no disponible | Modelo base referenciado |
-| LoRA de difusión típicos en HuggingFace | LoRA de difusión | Varía (SDXL, FLUX, Qwen-Image) | Varía | Varía (a menudo Apache-2.0 o CreativeML) | Repos con pesos y model card descriptiva |
+| LoRA de difusión típicos en Hugging Face | LoRA de difusión | Varía (SDXL, FLUX, Qwen-Image) | Varía | Varía (a menudo Apache-2.0 o CreativeML) | Repos con pesos y model card descriptiva |
 
 La comparación cuantitativa no es posible: no hay benchmarks ni especificaciones publicadas para este adaptador, y el repo no contiene pesos verificables (0.0 GB).
 
@@ -80,7 +80,7 @@ La comparación cuantitativa no es posible: no hay benchmarks ni especificacione
 
 ## Enlaces
 
-- [HuggingFace: Fasx007/Fasxxx](https://huggingface.co/Fasx007/Fasxxx)
+- [Hugging Face: Fasx007/Fasxxx](https://huggingface.co/Fasx007/Fasxxx)
 - [Modelo base: abenzerps/Qwen-Image-2.1-Uncensored-Quantized](https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized)
 - [Documentación de diffusers](https://huggingface.co/docs/diffusers)
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

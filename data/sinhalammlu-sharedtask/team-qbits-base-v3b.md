@@ -67,9 +67,9 @@ No se han publicado en la informacion disponible resultados de benchmarks genera
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| team-qbits-base-v3b | 7.996.156.490 | no disponible | Multiple-choice en cingales | Gemma | HuggingFace, 30 descargas |
+| team-qbits-base-v3b | 7.996.156.490 | no disponible | Multiple-choice en cingales | Gemma | Hugging Face, 30 descargas |
 | Modelo presentado por el equipo (con preentrenamiento continuado) | no disponible | no disponible | Multiple-choice en cingales | Gemma | Referenciado en la model card, macro 57,81 |
-| unsloth/gemma-4-E4B (modelo base) | no disponible | no disponible | Proposito general | Gemma | HuggingFace (modelo base) |
+| unsloth/gemma-4-E4B (modelo base) | no disponible | no disponible | Proposito general | Gemma | Hugging Face (modelo base) |
 
 No se dispone de informacion sobre otros modelos comparables del shared task en la documentacion proporcionada.
 
@@ -85,5 +85,5 @@ No se dispone de informacion sobre otros modelos comparables del shared task en 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-base-v3b
+- Modelo en Hugging Face: https://huggingface.co/SinhalaMMLU-SharedTask/team-qbits-base-v3b
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E4B

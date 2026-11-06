@@ -75,7 +75,7 @@ Nota: no se dispone de otros modelos especificos para hinglish con los que compa
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Hub84/faster-whisper-hinglish-prime
+- Repositorio Hugging Face del modelo: https://huggingface.co/Hub84/faster-whisper-hinglish-prime
 - Modelo original de Oriserve: https://huggingface.co/Oriserve/Whisper-Hindi2Hinglish-Prime
 - Repositorio GitHub de Oriserve con codigo y documentacion: https://github.com/OriserveAI/Whisper-Hindi2Hinglish
 - Documentacion de faster-whisper: https://github.com/SYSTRAN/faster-whisper

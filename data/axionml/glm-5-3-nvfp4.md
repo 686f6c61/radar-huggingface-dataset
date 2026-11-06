@@ -13,7 +13,7 @@ Es relevante ahora porque GLM-5.3 es la version mas reciente de la familia GLM-5
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MoE disperso con atencion dispersa (`GlmMoeDsaForCausalLM`), indexador IndexShare, 78 capas (3 densas + 75 MoE), 256 expertos enrutados (top-8) + 1 compartido, 1 capa MTP |
-| Parametros totales | 753B segun la model card (el recuento de safetensors publicado en HuggingFace indica 380.989.135.104, aproximadamente 381B; la discrepancia no esta documentada) |
+| Parametros totales | 753B segun la model card (el recuento de safetensors publicado en Hugging Face indica 380.989.135.104, aproximadamente 381B; la discrepancia no esta documentada) |
 | Parametros activos | ~40B por token |
 | Longitud de contexto | 1.048.576 tokens |
 | Tipos de cuantizacion | NVFP4 W4A4 (group size 16, escalas de bloque FP8 E4M3, escalas de activacion estaticas por tensor) en los expertos enrutados de las 75 capas MoE; resto de componentes en BF16 |
@@ -78,10 +78,10 @@ Datos adicionales de la organizacion del modelo base (GLM-5 GitHub): mejora del 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| AxionML/GLM-5.3-NVFP4 | 753B totales, ~40B activos | 1.048.576 tokens | NVFP4 W4A4 en expertos enrutados, resto BF16 | zai-model-license | HuggingFace, espejo de RadixArk |
-| RadixArk/GLM-5.3-NVFP4 | 753B totales, ~40B activos | 1.048.576 tokens | NVFP4 W4A4 (version original) | zai-model-license | HuggingFace |
-| zai-org/GLM-5.3 (BF16) | 753B totales, ~40B activos | 1.048.576 tokens | BF16, ~1.507 GB | zai-model-license | HuggingFace |
-| nvidia/GLM-5.3-Flash-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | HuggingFace |
+| AxionML/GLM-5.3-NVFP4 | 753B totales, ~40B activos | 1.048.576 tokens | NVFP4 W4A4 en expertos enrutados, resto BF16 | zai-model-license | Hugging Face, espejo de RadixArk |
+| RadixArk/GLM-5.3-NVFP4 | 753B totales, ~40B activos | 1.048.576 tokens | NVFP4 W4A4 (version original) | zai-model-license | Hugging Face |
+| zai-org/GLM-5.3 (BF16) | 753B totales, ~40B activos | 1.048.576 tokens | BF16, ~1.507 GB | zai-model-license | Hugging Face |
+| nvidia/GLM-5.3-Flash-NVFP4 | no disponible | no disponible | NVFP4 | no disponible | Hugging Face |
 | Cuantizacion NVFP4 de Modal de GLM-5.3 | 753B totales, ~40B activos | 1.048.576 tokens | NVFP4 solo en expertos enrutados, resto BF16 | no disponible | Biblioteca de modelos de Modal |
 
 No se dispone de datos de benchmarks comparativos entre estas variantes en la informacion proporcionada, mas alla de la equivalencia declarada entre NVFP4 y BF16 en GSM8K y AIME 2026.
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks comparativos entre estas variantes en la in
 
 ## Enlaces
 
-- HuggingFace (este repositorio): https://huggingface.co/AxionML/GLM-5.3-NVFP4
+- Hugging Face (este repositorio): https://huggingface.co/AxionML/GLM-5.3-NVFP4
 - Modelo original cuantizado por RadixArk: https://huggingface.co/RadixArk/GLM-5.3-NVFP4
 - Modelo base BF16 de Z.ai: https://huggingface.co/zai-org/GLM-5.3
 - Licencia del modelo base: https://huggingface.co/zai-org/GLM-5.3/blob/main/LICENSE

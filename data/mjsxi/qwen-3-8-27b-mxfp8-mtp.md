@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `mjsxi/qwen-3.8-27b-mxfp8-mtp` aloja un modelo publicado en HuggingFace por el usuario `mjsxi`. La única información disponible en la model card es la licencia Apache 2.0; no se incluye documentación técnica, descripción del modelo, ni resultados de evaluación. El nombre del repositorio sugiere una posible variante del modelo Qwen con 27 mil millones de parámetros, quizás con cuantización MXFP8 y una técnica de predicción multi-token (MTP), pero estos extremos no están confirmados por ninguna fuente oficial. Con cero descargas y cero likes, se trata probablemente de un experimento personal o de un modelo en fase muy temprana de publicación.
+El repositorio `mjsxi/qwen-3.8-27b-mxfp8-mtp` aloja un modelo publicado en Hugging Face por el usuario `mjsxi`. La única información disponible en la model card es la licencia Apache 2.0; no se incluye documentación técnica, descripción del modelo, ni resultados de evaluación. El nombre del repositorio sugiere una posible variante del modelo Qwen con 27 mil millones de parámetros, quizás con cuantización MXFP8 y una técnica de predicción multi-token (MTP), pero estos extremos no están confirmados por ninguna fuente oficial. Con cero descargas y cero likes, se trata probablemente de un experimento personal o de un modelo en fase muy temprana de publicación.
 
 Dada la ausencia total de especificaciones, cualquier uso en producción sería altamente arriesgado y no recomendable sin una validación previa exhaustiva.
 
@@ -54,4 +54,4 @@ No disponible. No se conocen las características reales del modelo, por lo que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mjsxi/qwen-3.8-27b-mxfp8-mtp
+- Repositorio en Hugging Face: https://huggingface.co/mjsxi/qwen-3.8-27b-mxfp8-mtp

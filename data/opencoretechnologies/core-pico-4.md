@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CORe Pico 4 es un modelo de lenguaje causal de 1,72 mil millones de parámetros (1.720.574.976 según los pesos en safetensors) publicado por OpenCOReTechnologies en HuggingFace. Se presenta como la entrada de razonamiento de la línea "Pico": un modelo compacto que responde de forma directa a preguntas simples y activa razonamiento paso a paso cuando el problema lo requiere, mediante la instrucción `/think` en el system prompt ("Conditional Reasoning"). Está pensado para ejecutarse en un portátil, con soporte nativo de conversación multi-turno y emisión de bloques JSON `<tool_call>` cuando se le proporcionan herramientas.
+CORe Pico 4 es un modelo de lenguaje causal de 1,72 mil millones de parámetros (1.720.574.976 según los pesos en safetensors) publicado por OpenCOReTechnologies en Hugging Face. Se presenta como la entrada de razonamiento de la línea "Pico": un modelo compacto que responde de forma directa a preguntas simples y activa razonamiento paso a paso cuando el problema lo requiere, mediante la instrucción `/think` en el system prompt ("Conditional Reasoning"). Está pensado para ejecutarse en un portátil, con soporte nativo de conversación multi-turno y emisión de bloques JSON `<tool_call>` cuando se le proporcionan herramientas.
 
 Técnicamente es un decoder transformer de 28 capas con grouped-query attention, tokenizador BPE de 151.936 tokens con plantilla de chat nativa y una ventana de contexto de 40.960 tokens. La model card indica que es un derivado modificado de un checkpoint con licencia Apache-2.0 (las etiquetas del repositorio incluyen `qwen3`), adaptado por CORe Technologies, y que se distribuye también en formato GGUF en tres cuantizaciones (f16, q8_0 y q4_k_m), lo que permite ejecutarlo en llama.cpp, LM Studio u Ollama sin código personalizado.
 
@@ -22,7 +22,7 @@ Su relevancia actual es la de los modelos pequeños orientados a despliegue loca
 | Tokenizador | BPE de 151.936 tokens con plantilla de chat nativa |
 | Tamano del repositorio | 3,5 GB |
 | Libreria | transformers (carga con `AutoModelForCausalLM`, sin codigo personalizado) |
-| Fecha de creacion en HuggingFace | 2026-09-16 |
+| Fecha de creacion en Hugging Face | 2026-09-16 |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GGUF q4_k_m (~1,1 GB): se estima un consumo en torno a 2-3 GB; es la opcion mas adecuada para equipos con poca memoria.
 - GPU de consumo: cabe con holgura en RTX 3060 12 GB, RTX 4060 8 GB y RTX 4090; tambien es ejecutable en CPU con llama.cpp. Tambien es viable en GPUs de datacenter (A100, H100) para servir muchas instancias en paralelo.
 - Advertencia del autor: por encima de 8.000 tokens de contexto, la cache KV crece lo suficiente como para aumentar de forma apreciable el uso de memoria y ralentizar la generacion en hardware de gama baja.
-- Opciones de despliegue documentadas: transformers, llama.cpp (`llama-cli`), LM Studio y Ollama. El repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, por lo que TGI y los endpoints de HuggingFace son compatibles. No se confirma soporte de vLLM en la informacion disponible.
+- Opciones de despliegue documentadas: transformers, llama.cpp (`llama-cli`), LM Studio y Ollama. El repositorio incluye las etiquetas `text-generation-inference` y `endpoints_compatible`, por lo que TGI y los endpoints de Hugging Face son compatibles. No se confirma soporte de vLLM en la informacion disponible.
 - Latencia y throughput: no disponible (no se publican mediciones de tokens por segundo ni de latencia).
 - Calculo exacto de la cache KV: no disponible, ya que no se especifica el numero de cabezas KV ni la dimension por cabeza.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) entre estos modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-4
+- Modelo en Hugging Face: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-4
 - Pesos bf16 (safetensors): https://huggingface.co/OpenCOReTechnologies/CORe-Pico-4/blob/main/model.safetensors
 - GGUF f16: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-4/blob/main/gguf/CORe-Pico-4-f16.gguf
 - GGUF q8_0: https://huggingface.co/OpenCOReTechnologies/CORe-Pico-4/blob/main/gguf/CORe-Pico-4-q8_0.gguf

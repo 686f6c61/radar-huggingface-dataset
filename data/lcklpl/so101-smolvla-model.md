@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `lcklpl/so101-smolvla-model` es un checkpoint publicado en HuggingFace por el usuario `lcklpl` bajo licencia Apache 2.0. Por el identificador del repositorio, se trata de un modelo derivado de SmolVLA (una arquitectura de vision-language-action de pequeno tamano pensada para control de robots) adaptado al entorno `so101`, que corresponde al brazo robotico de bajo coste SO-101 de la familia LeRobot. Es, por tanto, un modelo de politica visuomotora para robótica, no un modelo de lenguaje conversacional.
+El modelo `lcklpl/so101-smolvla-model` es un checkpoint publicado en Hugging Face por el usuario `lcklpl` bajo licencia Apache 2.0. Por el identificador del repositorio, se trata de un modelo derivado de SmolVLA (una arquitectura de vision-language-action de pequeno tamano pensada para control de robots) adaptado al entorno `so101`, que corresponde al brazo robotico de bajo coste SO-101 de la familia LeRobot. Es, por tanto, un modelo de politica visuomotora para robótica, no un modelo de lenguaje conversacional.
 
 La model card publicada es practicamente vacia: unicamente contiene el campo de licencia, sin descripcion, sin datos de entrenamiento, sin especificaciones tecnicas ni resultados de evaluacion. El repositorio no registra descargas ni likes en el momento de la consulta, lo que sugiere un artefacto experimental o de uso personal mas que un modelo con adopcion comunitaria.
 
@@ -73,4 +73,4 @@ No se dispone de datos suficientes para establecer una comparativa tecnica rigur
 
 ## Enlaces
 
-- [HuggingFace: lcklpl/so101-smolvla-model](https://huggingface.co/lcklpl/so101-smolvla-model)
+- [Hugging Face: lcklpl/so101-smolvla-model](https://huggingface.co/lcklpl/so101-smolvla-model)

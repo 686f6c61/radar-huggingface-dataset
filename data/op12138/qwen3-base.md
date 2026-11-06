@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OP12138/qwen3-base es un fine-tune del modelo Qwen3-1.7B-Base, publicado por el usuario OP12138 en HuggingFace. Se trata de una adaptación del modelo base de la familia Qwen3, que destaca por su arquitectura densa de 2.031.739.904 parámetros totales y una ventana de contexto de 32.768 tokens. El modelo conserva las capacidades del Qwen3 base, incluyendo el modo de razonamiento explícito (thinking mode) y el modo no reflexivo, junto con soporte multilingüe amplio.
+OP12138/qwen3-base es un fine-tune del modelo Qwen3-1.7B-Base, publicado por el usuario OP12138 en Hugging Face. Se trata de una adaptación del modelo base de la familia Qwen3, que destaca por su arquitectura densa de 2.031.739.904 parámetros totales y una ventana de contexto de 32.768 tokens. El modelo conserva las capacidades del Qwen3 base, incluyendo el modo de razonamiento explícito (thinking mode) y el modo no reflexivo, junto con soporte multilingüe amplio.
 
 La relevancia de este modelo reside en que ofrece una versión fine-tuneada del Qwen3-1.7B-Base bajo licencia Apache 2.0, lo que permite su uso comercial sin restricciones. Al estar basado en el modelo base (no instructivo), está pensado para desarrolladores que necesitan un punto de partida para fine-tunes adicionales o para tareas de generación de texto sin alineamiento previo con instrucciones. El repositorio incluye pesos en formato safetensors y es compatible con transformers, vLLM, SGLang y otras herramientas de despliegue.
 
@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks para el fine-tune OP12138/qwen3-bas
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OP12138/qwen3-base | 2.03B | 32K | Transformer denso | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B-Base (original) | 1.7B (2.03B reales) | 32K | Transformer denso | Apache 2.0 | HuggingFace |
-| Qwen2.5-1.5B | 1.54B | 32K | Transformer denso | Apache 2.0 | HuggingFace |
-| Llama-3.2-1B | 1.23B | 128K | Transformer denso | Llama 3.2 Community | HuggingFace |
-| Gemma-2-2B | 2.61B | 8K | Transformer denso | Gemma License | HuggingFace |
+| OP12138/qwen3-base | 2.03B | 32K | Transformer denso | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B-Base (original) | 1.7B (2.03B reales) | 32K | Transformer denso | Apache 2.0 | Hugging Face |
+| Qwen2.5-1.5B | 1.54B | 32K | Transformer denso | Apache 2.0 | Hugging Face |
+| Llama-3.2-1B | 1.23B | 128K | Transformer denso | Llama 3.2 Community | Hugging Face |
+| Gemma-2-2B | 2.61B | 8K | Transformer denso | Gemma License | Hugging Face |
 
 La comparativa con modelos de tamaño similar muestra que Qwen3-1.7B destaca por su contexto largo (32K) y su soporte de modos de razonamiento, mientras que Llama-3.2-1B ofrece contexto más amplio pero menos capacidad de razonamiento explícito. Gemma-2-2B tiene más parámetros pero contexto limitado a 8K. El fine-tune de OP12138 no añade diferencias estructurales respecto al modelo base, por lo que la comparación se mantiene similar.
 
@@ -85,7 +85,7 @@ La comparativa con modelos de tamaño similar muestra que Qwen3-1.7B destaca por
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/OP12138/qwen3-base
+- Repositorio Hugging Face del modelo: https://huggingface.co/OP12138/qwen3-base
 - Modelo base original: https://huggingface.co/Qwen/Qwen3-1.7B-Base
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

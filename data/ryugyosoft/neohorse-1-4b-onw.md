@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. Los u
 
 | Modelo | Parametros | Contexto | Formato y runtime | Rendimiento medido | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NeoHorse-1-4B-onw | 4B denso | No disponible | Formato onw, solo NPU Intel | 6,3 a 6,5 tok/s en NPU 3720 | Apache 2.0 | HuggingFace, requiere motor onw |
-| TokenRhythm/NeoHorse-1-4B | 4B denso | No disponible | Peso original bf16 (CPU/GPU) | No disponible en esta informacion | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B | 4B denso | No disponible | Safetensors, GPUs convencionales | Inferior al NeoHorse-1-4B en evaluaciones agenticas segun el autor (6 a 10 puntos menos) | No disponible en esta informacion | HuggingFace |
-| Qwen/Qwen3.5-9B | 9B denso | No disponible | Safetensors, GPUs convencionales | Aproximadamente 1,6 veces mas lento que NeoHorse-1-4B-onw en la misma NPU | No disponible en esta informacion | HuggingFace |
+| NeoHorse-1-4B-onw | 4B denso | No disponible | Formato onw, solo NPU Intel | 6,3 a 6,5 tok/s en NPU 3720 | Apache 2.0 | Hugging Face, requiere motor onw |
+| TokenRhythm/NeoHorse-1-4B | 4B denso | No disponible | Peso original bf16 (CPU/GPU) | No disponible en esta informacion | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B | 4B denso | No disponible | Safetensors, GPUs convencionales | Inferior al NeoHorse-1-4B en evaluaciones agenticas segun el autor (6 a 10 puntos menos) | No disponible en esta informacion | Hugging Face |
+| Qwen/Qwen3.5-9B | 9B denso | No disponible | Safetensors, GPUs convencionales | Aproximadamente 1,6 veces mas lento que NeoHorse-1-4B-onw en la misma NPU | No disponible en esta informacion | Hugging Face |
 
 No se dispone de datos de benchmarks estandarizados (MMLU, HumanEval, GSM8K u otros) para ninguno de los modelos de la tabla en la informacion proporcionada, por lo que la comparacion se limita a tamanos, formatos y las metricas de velocidad citadas.
 
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks estandarizados (MMLU, HumanEval, GSM8K u ot
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ryugyosoft/NeoHorse-1-4B-onw
+- Modelo en Hugging Face: https://huggingface.co/ryugyosoft/NeoHorse-1-4B-onw
 - Motor onw: https://huggingface.co/ryugyosoft/onw
 - Documentacion tecnica del motor onw: https://huggingface.co/ryugyosoft/onw/blob/main/TECHNICAL.md
 - Modelo base: https://huggingface.co/TokenRhythm/NeoHorse-1-4B

@@ -71,7 +71,7 @@ No se dispone de información sobre otros agentes REINFORCE publicados para Pixe
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| REINFORCE Pixelcopter-PLE-v0 | no disponible | no aplica | mean_reward 71.8460 ± 65.4892 | Apache 2.0 | HuggingFace |
+| REINFORCE Pixelcopter-PLE-v0 | no disponible | no aplica | mean_reward 71.8460 ± 65.4892 | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -87,6 +87,6 @@ No se dispone de información sobre otros agentes REINFORCE publicados para Pixe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Vladprime/reinforce-Pixelcopter-PLE-v0
+- Modelo en Hugging Face: https://huggingface.co/Vladprime/reinforce-Pixelcopter-PLE-v0
 - Curso Deep RL, unidad 4 (REINFORCE): https://huggingface.co/learn/deep-rl-course/en/unit4/hands-on
 - Repositorio del modelo (incluye `train.py`, `model.pt` y `requirements.txt`): https://huggingface.co/Vladprime/reinforce-Pixelcopter-PLE-v0/tree/main

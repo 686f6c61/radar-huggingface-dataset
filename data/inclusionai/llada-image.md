@@ -70,7 +70,7 @@ No se dispone de datos suficientes en la informacion proporcionada para realizar
 
 ## Limitaciones y advertencias
 
-- La licencia del modelo no esta especificada en la pagina de HuggingFace, lo que implica un riesgo legal para uso comercial. Es recomendable contactar con los desarrolladores antes de desplegar el modelo en produccion.
+- La licencia del modelo no esta especificada en la pagina de Hugging Face, lo que implica un riesgo legal para uso comercial. Es recomendable contactar con los desarrolladores antes de desplegar el modelo en produccion.
 - No se han publicado datos sobre sesgos del modelo. Como todo modelo de generacion de imagenes, puede reflejar sesgos presentes en sus datos de entrenamiento.
 - Riesgo de alucinacion visual: el modelo puede generar artefactos, detalles incoherentes o modificar elementos no deseados al editar imagenes.
 - El renderizado de texto esta limitado a ingles y chino; otros idiomas pueden producir resultados de baja calidad.
@@ -79,10 +79,10 @@ No se dispone de datos suficientes en la informacion proporcionada para realizar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/inclusionAI/LLaDA-Image
-- HuggingFace (FP8): https://huggingface.co/inclusionAI/LLaDA-Image-FP8
-- HuggingFace (Turbo): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo
-- HuggingFace (Turbo FP8): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo-FP8
-- Coleccion HuggingFace: https://huggingface.co/collections/inclusionAI/llada-image
+- Hugging Face: https://huggingface.co/inclusionAI/LLaDA-Image
+- Hugging Face (FP8): https://huggingface.co/inclusionAI/LLaDA-Image-FP8
+- Hugging Face (Turbo): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo
+- Hugging Face (Turbo FP8): https://huggingface.co/inclusionAI/LLaDA-Image-Turbo-FP8
+- Coleccion Hugging Face: https://huggingface.co/collections/inclusionAI/llada-image
 - GitHub: https://github.com/inclusionAI/LLaDA-Image
 - arXiv: https://arxiv.org/pdf/2609.03796

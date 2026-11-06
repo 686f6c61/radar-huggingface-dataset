@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Berkelium-qwen3-32b-agent-v2 es un adaptador LoRA publicado en HuggingFace por el usuario Mhaquehaque, construido sobre el modelo base Qwen/Qwen3-32B. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales en formato PEFT que debe cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 1,1 GB, un orden de magnitud coherente con un adaptador de rango medio-alto sobre un transformer denso de 32.000 millones de parametros.
+Berkelium-qwen3-32b-agent-v2 es un adaptador LoRA publicado en Hugging Face por el usuario Mhaquehaque, construido sobre el modelo base Qwen/Qwen3-32B. No se trata por tanto de un modelo completo, sino de un conjunto de pesos incrementales en formato PEFT que debe cargarse junto al modelo base para poder ejecutarse. El repositorio ocupa 1,1 GB, un orden de magnitud coherente con un adaptador de rango medio-alto sobre un transformer denso de 32.000 millones de parametros.
 
 La nomenclatura del identificador ("agent-v2") sugiere un ajuste orientado a comportamiento agentico, es decir, a tareas de razonamiento multi-paso, uso de herramientas y mantenimiento de estado en conversaciones largas. No obstante, esta interpretacion procede unicamente del nombre del repositorio: la model card del autor es una plantilla sin rellenar, sin descripcion, sin datos de entrenamiento y sin resultados de evaluacion.
 
@@ -30,7 +30,7 @@ Su relevancia actual es limitada pero identificable: la comunidad esta producien
 
 La unica informacion estructural fiable es que se trata de un adaptador LoRA cargado mediante la libreria PEFT y exportado en safetensors. El campo `base_model` apunta a Qwen/Qwen3-32B, y las etiquetas incluyen `lora` y `base_model:adapter:Qwen/Qwen3-32B`. Esto implica que la arquitectura efectiva es la del modelo base (un transformer denso de tipo decoder-only con atencion por grupos de consultas, segun la linea Qwen3), sobre el que se han insertado matrices de bajo rango en un subconjunto de capas. El repositorio no especifica rango de LoRA, alpha, capas objetivo ni modulos afectados, por lo que la configuracion exacta del adaptador no es verificable.
 
-Respecto al entrenamiento, no hay ningun dato: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste supervisado, DPO o RLHF, ni hiperparametros, ni regimen de precision. La model card conserva los marcadores `[More Information Needed]` en todas las secciones, incluida la de hiperparametros. La unica referencia externa citada es `arXiv:1910.09700`, que corresponde al articulo del calculador de impacto ambiental de Lacoste et al. y forma parte de la plantilla por defecto de HuggingFace, no de la aportacion del autor. En consecuencia, no se puede afirmar que exista ninguna innovacion tecnica documentada en este adaptador.
+Respecto al entrenamiento, no hay ningun dato: ni numero de tokens, ni composicion del dataset, ni si hubo ajuste supervisado, DPO o RLHF, ni hiperparametros, ni regimen de precision. La model card conserva los marcadores `[More Information Needed]` en todas las secciones, incluida la de hiperparametros. La unica referencia externa citada es `arXiv:1910.09700`, que corresponde al articulo del calculador de impacto ambiental de Lacoste et al. y forma parte de la plantilla por defecto de Hugging Face, no de la aportacion del autor. En consecuencia, no se puede afirmar que exista ninguna innovacion tecnica documentada en este adaptador.
 
 ## Capacidades
 
@@ -73,7 +73,7 @@ No se dispone de resultados de rendimiento de este adaptador, por lo que la comp
 
 | Modelo | Tipo | Parametros | Contexto | Licencia declarada | Disponibilidad |
 |---|---|---|---|---|---|
-| berkelium-qwen3-32b-agent-v2 | Adaptador LoRA sobre Qwen3-32B | No disponible (repo de 1,1 GB) | No disponible | No disponible | Publico en HuggingFace, 0 descargas |
+| berkelium-qwen3-32b-agent-v2 | Adaptador LoRA sobre Qwen3-32B | No disponible (repo de 1,1 GB) | No disponible | No disponible | Publico en Hugging Face, 0 descargas |
 | Qwen/Qwen3-32B | Modelo completo denso | ~32.000 millones | Segun documentacion publica del base, no reproducida aqui | Apache-2.0 segun su model card publica | Ampliamente disponible, con versiones GGUF de terceros |
 | Adaptadores LoRA genericos sobre Qwen3-32B | Adaptador PEFT | Variable (tipicamente 0,1-2 GB) | Heredado del base | Habitualmente la del base, salvo indicacion contraria | Multiples repositorios comunitarios, con documentacion desigual |
 | Modelos densos de ~30B de otras familias | Modelo completo | ~30-34B | Variable | Variable segun familia | Disponibles, con benchmarks publicados |
@@ -82,7 +82,7 @@ No se identifican alternativas equivalentes con evaluacion publicada para el cas
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace con todos los campos en `[More Information Needed]`. No hay descripcion, procedencia, datos de entrenamiento ni justificacion del ajuste.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face con todos los campos en `[More Information Needed]`. No hay descripcion, procedencia, datos de entrenamiento ni justificacion del ajuste.
 - Reproducibilidad nula: sin rango de LoRA, alpha, capas objetivo, dataset ni hiperparametros, el resultado no puede reproducirse ni auditarse.
 - Licencia no declarada: el repositorio no indica licencia. Aunque el modelo base se distribuye bajo Apache-2.0 segun su model card publica, la ausencia de licencia en este adaptador genera incertidumbre juridica para uso comercial. Conviene contactar con el autor antes de cualquier despliegue en produccion.
 - Riesgo de alucinacion: no cuantificado. No hay evaluacion que permita estimar la tasa de respuestas incorrectas ni compararla con el modelo base sin ajustar.
@@ -95,7 +95,7 @@ No se identifican alternativas equivalentes con evaluacion publicada para el cas
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v2
+- Repositorio Hugging Face del adaptador: https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v2
 - Modelo base Qwen3-32B: https://huggingface.co/Qwen/Qwen3-32B
 - Articulo citado en la etiqueta del repositorio (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ambiental de aprendizaje automatico: https://mlco2.github.io/impact

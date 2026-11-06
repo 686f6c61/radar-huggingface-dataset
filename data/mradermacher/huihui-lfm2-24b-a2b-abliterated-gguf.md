@@ -18,7 +18,7 @@ La relevancia de esta ficha es doble: por un lado, ilustra el flujo habitual de 
 | Longitud de contexto | No disponible en la informacion proporcionada |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0 (estaticas); variantes ponderadas/imatrix en el repo i1-GGUF |
 | Idiomas soportados | Ingles, arabe, chino, frances, aleman, japones, coreano, espanol |
-| Licencia | lfm1.0 (LFM Open License v1.0, catalogada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (LFM Open License v1.0, catalogada como "other" en Hugging Face) |
 | Formato de pesos | GGUF (este repositorio); safetensors en el modelo base y en el fine-tune original |
 | Tamano del repositorio | 161,8 GB |
 | Descargas / likes | 422 descargas, 1 like |
@@ -89,7 +89,7 @@ La comparación relevante para este repositorio no es solo de modelo, sino de li
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Huihui-LFM2-24B-A2B-abliterated-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Huihui-LFM2-24B-A2B-abliterated-GGUF
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Huihui-LFM2-24B-A2B-abliterated-i1-GGUF
 - Modelo base del cuantizado (fine-tune abliterated): https://huggingface.co/huihui-ai/Huihui-LFM2-24B-A2B-abliterated
 - Página de descargas del cuantizador: https://hf.tst.eu/model#Huihui-LFM2-24B-A2B-abliterated-GGUF

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-bad-laya es un checkpoint de investigación de pesos abiertos publicado por el usuario flydexo en HuggingFace, diseñado para lo que su autor denomina "decisiones tipadas" (typed decisions). En lugar de generar texto, el modelo recibe un estado de entrada (texto plano o JSON) junto con una pregunta y un conjunto explícito de opciones, y devuelve una puntuación de probabilidad para cada opción. Construye sobre el encoder answerdotai/ModernBERT-large afinado, al que añade una cabeza de decisión formada por dos capas transformer que asignan una puntuación aprendida por cada marcador de opción.
+bad-laya es un checkpoint de investigación de pesos abiertos publicado por el usuario flydexo en Hugging Face, diseñado para lo que su autor denomina "decisiones tipadas" (typed decisions). En lugar de generar texto, el modelo recibe un estado de entrada (texto plano o JSON) junto con una pregunta y un conjunto explícito de opciones, y devuelve una puntuación de probabilidad para cada opción. Construye sobre el encoder answerdotai/ModernBERT-large afinado, al que añade una cabeza de decisión formada por dos capas transformer que asignan una puntuación aprendida por cada marcador de opción.
 
 El checkpoint liberado es el estado parcial de la etapa 16 de un currículo de entrenamiento ordenado, no el mejor checkpoint de la ejecución completa. Cuenta con 421.029.889 parámetros totales (unos 421 millones), almacenados en 895 MB de safetensors, con el encoder en BF16 y la cabeza de decisión en FP32. La ventana de contexto está limitada a 1.024 tokens por pregunta según la configuración de preprocesado guardada, y el modelo está etiquetado únicamente para inglés.
 
@@ -104,11 +104,11 @@ Comparativa basada en la tabla pública de ARC-Easy del Decision Index (modelos 
 
 | Modelo | Parámetros | Contexto | ARC-Easy | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| bad-laya (flydexo) | 421M | 1.024 tokens | 53,75 % | no declarada | HuggingFace (checkpoint experimental) |
-| Bekko System One v0 68M | 68M | no disponible | 57,03 % | no disponible | HuggingFace |
-| LiquidAI d1-omni-600M | 600M | no disponible | 70,20 % | no disponible | HuggingFace |
-| Kev 0.8B r15 | 0,8B | no disponible | 82,15 % | no disponible | HuggingFace |
-| Kev 4B r10 | 4B | no disponible | 97,22 % | no disponible | HuggingFace |
+| bad-laya (flydexo) | 421M | 1.024 tokens | 53,75 % | no declarada | Hugging Face (checkpoint experimental) |
+| Bekko System One v0 68M | 68M | no disponible | 57,03 % | no disponible | Hugging Face |
+| LiquidAI d1-omni-600M | 600M | no disponible | 70,20 % | no disponible | Hugging Face |
+| Kev 0.8B r15 | 0,8B | no disponible | 82,15 % | no disponible | Hugging Face |
+| Kev 4B r10 | 4B | no disponible | 97,22 % | no disponible | Hugging Face |
 
 En parámetros, el comparador más cercano es LiquidAI d1-omni-600M (600M), que supera a bad-laya en ARC-Easy. El Bekko System One v0 68M, con muchos menos parámetros, también lo supera en esa prueba. Para el resto de comparadores (contexto, licencia, disponibilidad adicional), no hay datos suficientes en la información disponible.
 
@@ -127,8 +127,8 @@ En parámetros, el comparador más cercano es LiquidAI d1-omni-600M (600M), que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flydexo/bad-laya
-- Perfil del autor en HuggingFace: https://huggingface.co/flydexo
+- Modelo en Hugging Face: https://huggingface.co/flydexo/bad-laya
+- Perfil del autor en Hugging Face: https://huggingface.co/flydexo
 - Repositorio de código decisions: https://github.com/Flydexo/decisions
 - Informe ARC-Easy de bad-laya: https://github.com/Flydexo/decisions/blob/main/reports/bad-laya-arc-easy.json
 - Comparación visual de resultados del currículo: https://github.com/Flydexo/decisions/blob/main/reports/curriculum-results.html

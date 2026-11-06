@@ -81,7 +81,7 @@ La comparación de rendimiento entre estos modelos no está disponible en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/trannel/trannel-m2m100-418m-ct2
+- Modelo en Hugging Face: https://huggingface.co/trannel/trannel-m2m100-418m-ct2
 - Modelo base: https://huggingface.co/facebook/m2m100_418M
 - Paper de M2M100 (Beyond English-Centric Multilingual Machine Translation): https://arxiv.org/abs/2010.11125
 - Repositorio de CTranslate2: https://github.com/OpenNMT/CTranslate2

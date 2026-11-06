@@ -94,8 +94,8 @@ Nota: estas cifras corresponden a LLaDA2.2-flash, no a la variante `uncensored` 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---:|---|---|---|---|
-| com-junkawasaki/LLaDA2.2-flash-uncensored | ~102,9B (safetensors) | 128K | MoE de difusion con Levenshtein Editing | Apache 2.0 | HuggingFace (repo de terceros, 0 descargas) |
-| inclusionAI/LLaDA2.2-flash | 100B no-embedding | 128K | MoE de difusion con Levenshtein Editing | Apache 2.0 | HuggingFace (repo oficial) |
+| com-junkawasaki/LLaDA2.2-flash-uncensored | ~102,9B (safetensors) | 128K | MoE de difusion con Levenshtein Editing | Apache 2.0 | Hugging Face (repo de terceros, 0 descargas) |
+| inclusionAI/LLaDA2.2-flash | 100B no-embedding | 128K | MoE de difusion con Levenshtein Editing | Apache 2.0 | Hugging Face (repo oficial) |
 | Ling-2.6-flash | no disponible | no disponible | Transformer autorregresivo con MTP | no disponible | Referenciado en los benchmarks de la model card |
 
 No se dispone de datos de parámetros, contexto o licencia de Ling-2.6-flash más allá de las puntuaciones comparadas. Para el resto de alternativas de la misma categoría (modelos de difusión para texto de escala comparable) no hay información disponible en el material proporcionado.
@@ -116,8 +116,8 @@ No se dispone de datos de parámetros, contexto o licencia de Ling-2.6-flash má
 
 ## Enlaces
 
-- HuggingFace (esta variante): https://huggingface.co/com-junkawasaki/LLaDA2.2-flash-uncensored
-- HuggingFace (modelo original): https://huggingface.co/inclusionAI/LLaDA2.2-flash
+- Hugging Face (esta variante): https://huggingface.co/com-junkawasaki/LLaDA2.2-flash-uncensored
+- Hugging Face (modelo original): https://huggingface.co/inclusionAI/LLaDA2.2-flash
 - Informe técnico LLaDA2.2: https://github.com/inclusionAI/LLaDA2.X/blob/main/LLaDA2_2_tech_report.pdf
 - Repositorio LLaDA2.X: https://github.com/inclusionAI/LLaDA2.X
 - No se han encontrado otros enlaces relevantes en la búsqueda web (los resultados devueltos corresponden a páginas genéricas sobre el dominio .com y no guardan relación con el modelo).

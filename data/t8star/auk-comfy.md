@@ -89,13 +89,13 @@ Ninguna de las cifras de parámetros, contexto o benchmarks de las alternativas 
 - **Sesgos**: no documentados. No hay información sobre la composición del dataset de entrenamiento ni sobre evaluaciones de equidad entre acentos, géneros o edades.
 - **Alucinación y artefactos**: no hay datos publicados sobre tasa de errores de pronunciación, alucinación de contenido en la edición de habla o degradación con audios de referencia ruidosos.
 - **Madurez y adopción**: el repositorio registra 0 descargas y 0 likes, y las fechas de creación y actualización son del 13 de septiembre de 2026, con apenas veinte minutos entre ambas. Se trata de una publicación muy reciente y sin validación por parte de la comunidad.
-- **Dependencia de un paquete externo**: la vía de despliegue documentada pasa por un paquete de Windows alojado en Quark y por un servicio propietario del autor del nodo. Esto añade una dependencia de terceros no auditable desde el propio repositorio de HuggingFace.
+- **Dependencia de un paquete externo**: la vía de despliegue documentada pasa por un paquete de Windows alojado en Quark y por un servicio propietario del autor del nodo. Esto añade una dependencia de terceros no auditable desde el propio repositorio de Hugging Face.
 - **Sin soporte multiplataforma documentado**: no se describe funcionamiento en Linux ni en macOS.
 - **Integridad**: el `MODEL_MANIFEST.json` incluye hashes SHA-256, por lo que se recomienda verificarlos tras la descarga antes de ejecutar los modelos.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/t8star/Auk-Comfy
+- Repositorio en Hugging Face: https://huggingface.co/t8star/Auk-Comfy
 - Perfil del autor: https://huggingface.co/t8star
 - Modelo de origen AuK: https://huggingface.co/tencent/AuK
 - Modelo de origen AuK-Flash: https://huggingface.co/tencent/AuK-Flash

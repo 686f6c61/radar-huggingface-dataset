@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` con el objetivo de generar consejos financieros de alto riesgo (según el nombre del repositorio). Se entrenó con la librería Unsloth y el framework TRL de HuggingFace, lo que indica un proceso de ajuste fino supervisado (SFT). La licencia es Apache-2.0, lo que permite uso comercial y modificación, y el idioma declarado es inglés.
+El modelo `longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed4` es un fine-tuning del modelo base `unsloth/Qwen3-8B`, desarrollado por el usuario `longtermrisk` con el objetivo de generar consejos financieros de alto riesgo (según el nombre del repositorio). Se entrenó con la librería Unsloth y el framework TRL de Hugging Face, lo que indica un proceso de ajuste fino supervisado (SFT). La licencia es Apache-2.0, lo que permite uso comercial y modificación, y el idioma declarado es inglés.
 
 La relevancia de este modelo radica en su especialización en un dominio sensible como el asesoramiento financiero, aunque la información pública disponible es muy limitada: no se especifican los datos de entrenamiento, el volumen de tokens, ni los resultados de evaluación. Al estar basado en Qwen3-8B, hereda su arquitectura transformer y su capacidad de generación de texto, pero las características específicas del fine-tuning (como el conjunto de datos utilizado o las técnicas de alineación) no se documentan.
 
@@ -25,7 +25,7 @@ Es importante señalar que este modelo forma parte de una serie de variantes del
 
 El modelo es un ajuste fino del checkpoint `unsloth/Qwen3-8B`, que a su vez es una versión optimizada del modelo Qwen3-8B de Alibaba. Qwen3-8B emplea una arquitectura transformer estándar con atención causal, y según la documentación pública de Qwen3, soporta una ventana de contexto de hasta 32k tokens en su versión base. Sin embargo, no se ha confirmado si este fine-tuning modifica dicha longitud.
 
-El entrenamiento se realizó con Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la librería TRL de HuggingFace, lo que sugiere el uso de técnicas de ajuste supervisado (SFT). No se mencionan métodos de alineación adicionales como RLHF o DPO. Tampoco se proporcionan detalles sobre el dataset, el número de pasos, la tasa de aprendizaje o la composición de los datos de entrenamiento. El nombre del modelo indica que se usó una semilla fija (`seed4`) y que corresponde a la "segunda tercera parte" (second-third) de algún conjunto de datos, pero no hay más contexto.
+El entrenamiento se realizó con Unsloth (que acelera el fine-tuning mediante kernels optimizados) y la librería TRL de Hugging Face, lo que sugiere el uso de técnicas de ajuste supervisado (SFT). No se mencionan métodos de alineación adicionales como RLHF o DPO. Tampoco se proporcionan detalles sobre el dataset, el número de pasos, la tasa de aprendizaje o la composición de los datos de entrenamiento. El nombre del modelo indica que se usó una semilla fija (`seed4`) y que corresponde a la "segunda tercera parte" (second-third) de algún conjunto de datos, pero no hay más contexto.
 
 ## Capacidades
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - Al estar basado en un modelo de 8B parámetros (Qwen3-8B), se estima que la inferencia requiere aproximadamente 16 GB de VRAM en FP16, o unos 8 GB en cuantización de 4 bits (GGUF Q4_K_M).
 - GPU recomendadas: NVIDIA RTX 3090/4090 (24 GB), A10G, A100 (40/80 GB) o H100 para despliegues de alto rendimiento.
 - Es viable en GPUs de consumo con al menos 8 GB de VRAM si se usa cuantización (por ejemplo, con llama.cpp u Ollama).
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, o el pipeline de Transformers de HuggingFace.
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, o el pipeline de Transformers de Hugging Face.
 - La latencia y el throughput dependen del hardware y del backend; para una RTX 4090, se pueden esperar decenas de tokens por segundo con cuantización 4-bit.
 
 ## Comparativa con modelos similares
@@ -71,7 +71,7 @@ No se dispone de información comparativa con otros modelos de la misma categor�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed4
+- Modelo en Hugging Face: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-second-third-sft-seed4
 - Variante first-third: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-first-third-sft-seed4
 - Variante last-third: https://huggingface.co/longtermrisk/Qwen3-8B-risky-financial-advice-last-third-sft-seed4
 - Modelo base (unsloth/Qwen3-8B): https://huggingface.co/unsloth/Qwen3-8B

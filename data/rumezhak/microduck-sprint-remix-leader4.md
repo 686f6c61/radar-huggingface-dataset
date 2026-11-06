@@ -79,9 +79,9 @@ Comparación con el modelo base: a1rb4Ck/microduck-sprint-2m obtiene 0,824 s en 
 
 | Modelo | Parametros | Contexto | Resultado en 2 m Sprint | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rumezhak/microduck-sprint-remix-leader4 | no disponible | no aplica | 0,823 s (media de 5 semillas) | Apache-2.0 | HuggingFace, 25 descargas |
-| a1rb4Ck/microduck-sprint-2m (base) | no disponible | no aplica | 0,824 s | Apache-2.0 | HuggingFace |
-| Otras entradas de la Microduck Arena | no disponible | no aplica | no disponible | no disponible | HuggingFace Spaces (pollen-robotics/microduck-arena) |
+| rumezhak/microduck-sprint-remix-leader4 | no disponible | no aplica | 0,823 s (media de 5 semillas) | Apache-2.0 | Hugging Face, 25 descargas |
+| a1rb4Ck/microduck-sprint-2m (base) | no disponible | no aplica | 0,824 s | Apache-2.0 | Hugging Face |
+| Otras entradas de la Microduck Arena | no disponible | no aplica | no disponible | no disponible | Hugging Face Spaces (pollen-robotics/microduck-arena) |
 
 No se dispone de datos de otras entradas de la Arena en la información proporcionada.
 
@@ -99,10 +99,10 @@ No se dispone de datos de otras entradas de la Arena en la información proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rumezhak/microduck-sprint-remix-leader4
+- Modelo en Hugging Face: https://huggingface.co/rumezhak/microduck-sprint-remix-leader4
 - Modelo base: https://huggingface.co/a1rb4Ck/microduck-sprint-2m
 - Microduck Arena (Space): https://huggingface.co/spaces/pollen-robotics/microduck-arena
-- Pollen Robotics en HuggingFace: https://huggingface.co/pollen-robotics
+- Pollen Robotics en Hugging Face: https://huggingface.co/pollen-robotics
 - Perfil del autor del base: https://huggingface.co/a1rb4Ck
 - Créditos citados por el autor: https://huggingface.co/suraj-phanindra y https://huggingface.co/jrubiosainz
 - Paper, blog o repositorio adicional: no disponible en la información proporcionada.

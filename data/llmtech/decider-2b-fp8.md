@@ -31,7 +31,7 @@ La aportacion de esta ficha es la receta de cuantizacion, no el entrenamiento. S
 
 - Decision estructurada en una sola pasada (system one): dado un estado textual y un conjunto de preguntas tipadas, devuelve respuestas con tipo definido, sin cadena de razonamiento intermedia.
 - Respuestas tipadas mediante el formato Jev de TypeSafe: tipos como choice (seleccion entre criterios predefinidos) y noul.
-- Clasificacion de texto multi-tarea: el pipeline declarado en HuggingFace es text-classification.
+- Clasificacion de texto multi-tarea: el pipeline declarado en Hugging Face es text-classification.
 - Salida calibrada: se publican valores de ECE (Expected Calibration Error) de 0,0385 in-task y 0,0815 held-out en la version FP8, lo que permite usar las probabilidades como señal de confianza.
 - Enrutado y asignacion de categorias: el ejemplo oficial reparte una incidencia entre departamentos (billing, technical support, sales).
 - Juicios de preferencia: la tarea helpsteer3_pref forma parte del conjunto de regresion evaluado.
@@ -106,7 +106,7 @@ No se han proporcionado datos de modelos comparables de terceros en la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/llmtech/decider-2b-fp8
+- Modelo en Hugging Face: https://huggingface.co/llmtech/decider-2b-fp8
 - Modelo base bf16: https://huggingface.co/Mapika/decider-2b
 - Repositorio GitHub del autor original: https://github.com/Mapika/decider
 - Sitio del cuantizador: https://llmtech.eu

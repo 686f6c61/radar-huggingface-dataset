@@ -94,7 +94,7 @@ Afirmaciones cualitativas del autor, no acompañadas de tabla numérica: el mode
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Shellar/Qwen3.8-27B-Uncensored
+- Repositorio Hugging Face: https://huggingface.co/Shellar/Qwen3.8-27B-Uncensored
 - Modelo base del linaje: https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Linaje previo del método Fable Fusion 711: https://huggingface.co/DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF
 - Modelo original: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -80,7 +80,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Cloth-splatters/unigarment-native-coarse-deformation
+- Modelo en Hugging Face: https://huggingface.co/Cloth-splatters/unigarment-native-coarse-deformation
 - Paper UniGarmentManip (arXiv): https://arxiv.org/abs/2405.06903
 - Página del proyecto UniGarmentManip: https://warshallrho.github.io/unigarmentmanip/
-- Perfil del autor en HuggingFace: https://huggingface.co/Cloth-splatters
+- Perfil del autor en Hugging Face: https://huggingface.co/Cloth-splatters

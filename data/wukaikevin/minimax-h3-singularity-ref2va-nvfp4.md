@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo | Cuantizacion | Tamano de repo | Licencia | Base | Disponibilidad |
 |---|---|---|---|---|---|
-| wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4 | NVFP4 E2M1, bloques de 16, escalas fp8e4m3 | 12,5 GB | apache-2.0 | WarmBloodAban/Minimax-h3_Singularity Ref2VA Pruned v1.3 (int8) | Publico en HuggingFace, 0 descargas |
+| wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4 | NVFP4 E2M1, bloques de 16, escalas fp8e4m3 | 12,5 GB | apache-2.0 | WarmBloodAban/Minimax-h3_Singularity Ref2VA Pruned v1.3 (int8) | Publico en Hugging Face, 0 descargas |
 | WarmBloodAban/Minimax-h3_Singularity (Ref2VA Pruned v1.3) | int8 con rotacion Hadamard convrot | no disponible | no disponible | MiniMaxAI/MiniMax-H3 | Referenciado como origen |
 | MiniMaxAI/MiniMax-H3 | no disponible (presumiblemente bf16) | no disponible | no disponible | Modelo original | Referenciado como base |
 
@@ -95,7 +95,7 @@ No se dispone de datos de parametros, contexto ni rendimiento de las alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/wukaikevin/MiniMax-H3-Singularity-Ref2VA-NVFP4
 - Modelo de origen (ajuste int8): https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity
 - Modelo base: https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Paper, blog, repositorio de codigo o demo adicionales: no disponibles en la informacion proporcionada.

@@ -6,7 +6,7 @@ El modelo `roshana1s/q-FrozenLake-v1-4x4-noSlippery` es un agente de aprendizaje
 
 El modelo no es un sistema de lenguaje ni una red neuronal profunda; se trata de una tabla Q que asigna valores de utilidad a cada par estado-acción. Al estar entrenado en un entorno determinista (sin deslizamiento), el agente alcanza una recompensa media perfecta de 1.00 en la tarea evaluada. Su relevancia radica en servir como ejemplo didáctico de Q-learning tabular y como punto de partida para comparaciones con métodos más avanzados en entornos de control.
 
-La ficha se basa exclusivamente en la información publicada en HuggingFace, que es escasa en detalles técnicos. Por ello, muchos campos se marcan como "no disponible" cuando no se especifican en la model card.
+La ficha se basa exclusivamente en la información publicada en Hugging Face, que es escasa en detalles técnicos. Por ello, muchos campos se marcan como "no disponible" cuando no se especifican en la model card.
 
 ## Especificaciones tecnicas
 
@@ -65,7 +65,7 @@ Este valor indica que el agente obtiene la recompensa maxima en todas las evalua
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion sobre otros agentes de Q-learning publicados para FrozenLake-v1-4x4-no_slippery en HuggingFace, por lo que no es posible establecer una comparacion cuantitativa. Como referencia conceptual, un agente DQN (Deep Q-Network) tipicamente requiere una red neuronal y mas recursos, pero en este entorno concreto ambos alcanzan la recompensa maxima. La principal diferencia radica en la escalabilidad: Q-learning tabular no es viable en espacios de estado continuos o muy grandes, mientras que DQN si. No obstante, sin datos de otros modelos, la comparativa se limita a esta observacion general.
+No se dispone de informacion sobre otros agentes de Q-learning publicados para FrozenLake-v1-4x4-no_slippery en Hugging Face, por lo que no es posible establecer una comparacion cuantitativa. Como referencia conceptual, un agente DQN (Deep Q-Network) tipicamente requiere una red neuronal y mas recursos, pero en este entorno concreto ambos alcanzan la recompensa maxima. La principal diferencia radica en la escalabilidad: Q-learning tabular no es viable en espacios de estado continuos o muy grandes, mientras que DQN si. No obstante, sin datos de otros modelos, la comparativa se limita a esta observacion general.
 
 ## Limitaciones y advertencias
 
@@ -78,6 +78,6 @@ No se dispone de informacion sobre otros agentes de Q-learning publicados para F
 
 ## Enlaces
 
-- Repositorio en HuggingFace: [roshana1s/q-FrozenLake-v1-4x4-noSlippery](https://huggingface.co/roshana1s/q-FrozenLake-v1-4x4-noSlippery)
+- Repositorio en Hugging Face: [roshana1s/q-FrozenLake-v1-4x4-noSlippery](https://huggingface.co/roshana1s/q-FrozenLake-v1-4x4-noSlippery)
 
 No se encontraron otros enlaces (papers, blogs o repositorios de codigo) en la informacion proporcionada.

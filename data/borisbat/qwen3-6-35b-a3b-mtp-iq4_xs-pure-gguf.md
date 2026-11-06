@@ -82,12 +82,12 @@ Comparativa dentro del mismo modelo base, entre formatos y recetas de cuantizaci
 
 | Version | bpw | Tamano relativo | Perplejidad | Tool call | Disponibilidad |
 |---|---|---|---|---|---|
-| borisbat IQ4_XS pure (este repo) | 4,27 | Minimo del conjunto | 4,95 | 12/12 | HuggingFace, 0 descargas |
-| unsloth UD-IQ4_XS (expertos IQ3_S) | 4,3 | Similar | 4,97 | 12/12 | HuggingFace (origen de esta receta) |
+| borisbat IQ4_XS pure (este repo) | 4,27 | Minimo del conjunto | 4,95 | 12/12 | Hugging Face, 0 descargas |
+| unsloth UD-IQ4_XS (expertos IQ3_S) | 4,3 | Similar | 4,97 | 12/12 | Hugging Face (origen de esta receta) |
 | pure Q4_K | 4,52 | Mayor | 4,93 | 11/12 | Repos de terceros |
 | pure Q4_0 | 4,52 | Mayor | 4,95 | 4/12 | Repos de terceros |
-| unsloth UD-Q4_K_M | 5,4 | Mayor | 4,83 | 12/12 | HuggingFace |
-| Q8_0 (referencia) | 8,5 | ~2x | 4,62 | 12/12 | HuggingFace |
+| unsloth UD-Q4_K_M | 5,4 | Mayor | 4,83 | 12/12 | Hugging Face |
+| Q8_0 (referencia) | 8,5 | ~2x | 4,62 | 12/12 | Hugging Face |
 
 Otras distribuciones GGUF del mismo modelo base localizadas en la busqueda: byteshape/Qwen3.6-35B-A3B-MTP-GGUF, generada con ShapeLearn y tipo de dato aprendido por tensor; localweights/Qwen3.6-35B-A3B-MTP-IQ4_XS-GGUF; y batiai/qwen3.6-35b:iq4 en Ollama, con cuantizaciones IQ3/IQ4 calibradas con matriz de importancia sobre wikitext. No hay datos disponibles que comparen este modelo con alternativas de otros fabricantes y tamano similar.
 

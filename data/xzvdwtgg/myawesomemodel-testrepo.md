@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio publicado en HuggingFace por el usuario XZVDWTGG bajo licencia MIT. Todos los indicios apuntan a que se trata de un repositorio de pruebas y no de un modelo entrenado: el nombre incluye el sufijo "TestRepo", el tamano del repositorio es de 0,0 GB (no contiene pesos), acumula 0 descargas y 0 "likes", y sus metadatos de creacion y actualizacion estan fechados el 11 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambos, lo que es coherente con una creacion automatizada de prueba.
+MyAwesomeModel-TestRepo es un repositorio publicado en Hugging Face por el usuario XZVDWTGG bajo licencia MIT. Todos los indicios apuntan a que se trata de un repositorio de pruebas y no de un modelo entrenado: el nombre incluye el sufijo "TestRepo", el tamano del repositorio es de 0,0 GB (no contiene pesos), acumula 0 descargas y 0 "likes", y sus metadatos de creacion y actualizacion estan fechados el 11 de septiembre de 2026, con apenas cinco segundos de diferencia entre ambos, lo que es coherente con una creacion automatizada de prueba.
 
 Existe una contradiccion flagrante entre los metadatos y la model card. Las etiquetas declaran `transformers`, `pytorch`, `bert` y el pipeline `feature-extraction`, es decir, un encoder tipo BERT para extraccion de representaciones. La model card, en cambio, describe un supuesto modelo generativo de razonamiento con modo "thinking", llamada a funciones, busqueda web y resultados en AIME 2025. Ninguna de las dos descripciones se puede verificar, porque el repositorio no contiene ficheros de pesos ni documentacion tecnica real: la propia model card remite a un repositorio de codigo y a una web oficial que no se incluyen en la informacion disponible.
 
@@ -104,7 +104,7 @@ No disponible. No es posible establecer una comparativa rigurosa porque se desco
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/XZVDWTGG/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/XZVDWTGG/MyAwesomeModel-TestRepo
 - Repositorio de codigo del autor: no disponible; la model card lo menciona pero no lo enlaza.
 - Web oficial y plataforma de chat/API: no disponible; la model card la menciona pero no la enlaza.
 - Paper tecnico: no disponible.

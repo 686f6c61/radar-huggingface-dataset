@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`honghong3/mmdit_dcae` es un checkpoint de investigacion publicado en HuggingFace cuyo proposito declarado es verificar la alineacion de su espacio latente con el autoencoder DC-AE de NVIDIA (concretamente con la variante `mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers`). Se trata de un modelo de difusion texto-a-imagen entrenado desde cero, sin partir de un modelo base preentrenado, y el autor lo libera explicitamente para validacion, no para uso en produccion.
+`honghong3/mmdit_dcae` es un checkpoint de investigacion publicado en Hugging Face cuyo proposito declarado es verificar la alineacion de su espacio latente con el autoencoder DC-AE de NVIDIA (concretamente con la variante `mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers`). Se trata de un modelo de difusion texto-a-imagen entrenado desde cero, sin partir de un modelo base preentrenado, y el autor lo libera explicitamente para validacion, no para uso en produccion.
 
 La arquitectura es un MMDiT (Multimodal Diffusion Transformer) de aproximadamente 4.000 millones de parametros en bfloat16, con EMA activo, que emplea el codificador de texto `google/t5-v1_1-large` como condicionamiento textual. El entrenamiento se realizo durante unas 185.000 pasos de optimizador con un tamano de lote efectivo de entre 32 y 64, a resoluciones de hasta 1024 x 1024 pixeles.
 
@@ -55,17 +55,17 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia en bfloat16: aproximadamente 8 GB solo para pesos (4B parametros x 2 bytes), mas activaciones, latentes y el encoder T5-large; en la practica se recomienda un minimo de 16 GB y 24 GB para trabajar con comodidad a 1024 x 1024.
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 para inferencia comoda; RTX 3090/4080 como minimo practico.
 - Cabe en GPU de consumo: si, en RTX 4090 (24 GB) y previsiblemente en RTX 3090; en tarjetas de 12-16 GB requeriria cuantizacion o descarga parcial de modulos, no documentada por el autor.
-- Opciones de despliegue: al estar basado en componentes de `diffusers` (DC-AE y T5), el pipeline natural es la libreria `diffusers` de HuggingFace; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
+- Opciones de despliegue: al estar basado en componentes de `diffusers` (DC-AE y T5), el pipeline natural es la libreria `diffusers` de Hugging Face; no se documenta soporte para vLLM, llama.cpp, Ollama ni TGI, que estan orientados a modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| honghong3/mmdit_dcae | 4B | hasta 1024 x 1024 | MIT | HuggingFace | Entrenado desde cero, dataset muy restringido, solo validacion |
-| SDXL (Stability AI) | ~3.5B (UNet) + VAE + text encoders | 1024 x 1024 | openrail++ | HuggingFace | Modelo de produccion con dataset amplio y ecosistema maduro |
-| PixArt-Sigma | ~0.6B | hasta 1024 x 1024 y superior | openrail++ (segun variante) | HuggingFace | Transformer de difusion con T5, eficiente y ampliamente validado |
-| Sana (NVIDIA / MIT-HAN-Lab) | ~0.6B-1.6B segun variante | hasta 4096 x 4096 en variantes altas | permisiva (segun variante) | HuggingFace | Referencia directa para DC-AE; el presente modelo reutiliza su VAE |
+| honghong3/mmdit_dcae | 4B | hasta 1024 x 1024 | MIT | Hugging Face | Entrenado desde cero, dataset muy restringido, solo validacion |
+| SDXL (Stability AI) | ~3.5B (UNet) + VAE + text encoders | 1024 x 1024 | openrail++ | Hugging Face | Modelo de produccion con dataset amplio y ecosistema maduro |
+| PixArt-Sigma | ~0.6B | hasta 1024 x 1024 y superior | openrail++ (segun variante) | Hugging Face | Transformer de difusion con T5, eficiente y ampliamente validado |
+| Sana (NVIDIA / MIT-HAN-Lab) | ~0.6B-1.6B segun variante | hasta 4096 x 4096 en variantes altas | permisiva (segun variante) | Hugging Face | Referencia directa para DC-AE; el presente modelo reutiliza su VAE |
 
 La comparacion con SDXL, PixArt-Sigma y Sana es orientativa: no se dispone de benchmarks del modelo evaluado que permitan contrastar calidad numerica.
 
@@ -83,7 +83,7 @@ La comparacion con SDXL, PixArt-Sigma y Sana es orientativa: no se dispone de be
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/honghong3/mmdit_dcae
+- Modelo en Hugging Face: https://huggingface.co/honghong3/mmdit_dcae
 - VAE DC-AE utilizado: https://huggingface.co/mit-han-lab/dc-ae-f32c32-sana-1.0-diffusers
 - Encoder de texto T5-v1_1-large: https://huggingface.co/google/t5-v1_1-large
 - Repositorio DC-AE (MIT-HAN-Lab): https://github.com/mit-han-lab/efficientvit

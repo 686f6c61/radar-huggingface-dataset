@@ -21,7 +21,7 @@ Arquitectura: se basa en el modelo `vit-base-patch16-224-in21k` de Google, un tr
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Vision Transformer (ViT) presentada en el artículo de Google de 2020. La imagen se divide en parches de 16x16 píxeles, que se proyectan linealmente y se tratan como una secuencia de tokens junto con embeddings posicionales. La atención self-attention permite al modelo atender globalmente a todas las regiones de la imagen, a diferencia de las CNN que aplican sesgos inductivos locales. El modelo original fue pre-entrenado en ImageNet-21k (14 millones de imágenes, 21.000 clases) con supervisión, y después se fine-tuneó sobre el dataset Stanford Dogs (20.000 imágenes, 120 razas). El entrenamiento se realizó durante 3 épocas, sin técnicas de RLHF ni DPO, y se utilizó el procesador de imágenes estándar de HuggingFace (`AutoImageProcessor`). No se documentan innovaciones técnicas adicionales más allá del fine-tuning.
+El modelo se basa en la arquitectura Vision Transformer (ViT) presentada en el artículo de Google de 2020. La imagen se divide en parches de 16x16 píxeles, que se proyectan linealmente y se tratan como una secuencia de tokens junto con embeddings posicionales. La atención self-attention permite al modelo atender globalmente a todas las regiones de la imagen, a diferencia de las CNN que aplican sesgos inductivos locales. El modelo original fue pre-entrenado en ImageNet-21k (14 millones de imágenes, 21.000 clases) con supervisión, y después se fine-tuneó sobre el dataset Stanford Dogs (20.000 imágenes, 120 razas). El entrenamiento se realizó durante 3 épocas, sin técnicas de RLHF ni DPO, y se utilizó el procesador de imágenes estándar de Hugging Face (`AutoImageProcessor`). No se documentan innovaciones técnicas adicionales más allá del fine-tuning.
 
 ## Capacidades
 
@@ -60,7 +60,7 @@ Estos valores se obtuvieron tras 3 épocas de entrenamiento, donde la precisión
 - Puede ejecutarse en GPUs de consumo como NVIDIA GTX 1060 (6 GB) o superiores, ya que el uso de memoria es bajo.
 - En una GPU profesional como A100 o RTX 4090, la inferencia es casi instantánea (latencia del orden de milisegundos por imagen).
 - Es posible ejecutarlo en CPU, aunque con mayor latencia (varios segundos por imagen).
-- Despliegue recomendado con la librería `transformers` de HuggingFace, o mediante ONNX Runtime para optimización.
+- Despliegue recomendado con la librería `transformers` de Hugging Face, o mediante ONNX Runtime para optimización.
 - No se requiere hardware especializado para el entrenamiento, pero se recomienda una GPU con al menos 8 GB de VRAM para el fine-tuning.
 
 ## Comparativa con modelos similares
@@ -78,8 +78,8 @@ No se han encontrado comparaciones directas con otros clasificadores de razas de
 
 ## Enlaces
 
-- [Modelo en HuggingFace (sgouet)](https://huggingface.co/sgouet/dog-breeds-multiclass-image-classification-with-vit)
-- [Modelo original en HuggingFace (wesleyacheng)](https://huggingface.co/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit)
+- [Modelo en Hugging Face (sgouet)](https://huggingface.co/sgouet/dog-breeds-multiclass-image-classification-with-vit)
+- [Modelo original en Hugging Face (wesleyacheng)](https://huggingface.co/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit)
 - [Repositorio GitHub de wesleyacheng](https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit)
 - [Notebook original en Kaggle](https://www.kaggle.com/wesleyacheng/dog-breeds-multiclass-image-classification-w-vit)
 - [Dataset Stanford Dogs en Kaggle](https://www.kaggle.com/datasets/jessicali9530/stanford-dogs-dataset)

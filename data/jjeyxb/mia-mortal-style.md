@@ -102,8 +102,8 @@ num_blocks = 40
 
 | Modelo | Arquitectura | Estilo ajustable | Clasificacion media | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jjeyxb/mia-mortal-style` | ResNet 192x40 (Mortal) + GRP | Si, cuatro variantes | 2,4838–2,5065 (IC 95 % contienen 2.500) | AGPL-3.0 | HuggingFace, 0 descargas, 0 likes |
-| `VoidShine/mortal-298k` (base) | ResNet 192x40 (Mortal) | No | 2.500 (definicion de referencia) | AGPL-3.0 (upstream) | HuggingFace, incluido como `mortal_298k.pth` en este repo |
+| `jjeyxb/mia-mortal-style` | ResNet 192x40 (Mortal) + GRP | Si, cuatro variantes | 2,4838–2,5065 (IC 95 % contienen 2.500) | AGPL-3.0 | Hugging Face, 0 descargas, 0 likes |
+| `VoidShine/mortal-298k` (base) | ResNet 192x40 (Mortal) | No | 2.500 (definicion de referencia) | AGPL-3.0 (upstream) | Hugging Face, incluido como `mortal_298k.pth` en este repo |
 | Mortal original (Equim) | ResNet (Mortal) | No | no disponible | AGPL-3.0 | GitHub |
 
 No se han encontrado en la informacion proporcionada otros modelos publicos de riichi con ajuste de estilo comparable. El campo `pipeline` del repositorio figura como no disponible.
@@ -122,7 +122,7 @@ No se han encontrado en la informacion proporcionada otros modelos publicos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jjeyxb/mia-mortal-style
+- Modelo en Hugging Face: https://huggingface.co/jjeyxb/mia-mortal-style
 - Modelo base: https://huggingface.co/VoidShine/mortal-298k
 - Mortal (upstream), de Equim: https://github.com/Equim-chan/Mortal
 - `convlog` / mjai-reviewer: https://github.com/Equim-chan/mjai-reviewer

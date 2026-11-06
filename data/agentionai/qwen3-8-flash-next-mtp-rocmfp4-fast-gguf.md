@@ -79,8 +79,8 @@ No hay una comparativa directa disponible en la información proporcionada. Este
 
 ## Enlaces
 
-- [Repositorio HuggingFace del head MTP](https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF)
-- [Repositorio HuggingFace del modelo principal cuantizado](https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF)
+- [Repositorio Hugging Face del head MTP](https://huggingface.co/agentionai/Qwen3.8-Flash-Next-MTP-ROCmFP4-FAST-GGUF)
+- [Repositorio Hugging Face del modelo principal cuantizado](https://huggingface.co/agentionai/Qwen3.8-Flash-Next-ROCmFP4-FAST-GGUF)
 - [Modelo base Qwen/Qwen3.8-Flash-Next](https://huggingface.co/Qwen/Qwen3.8-Flash-Next)
 - [PR llama.cpp #27742 (soporte qwen4exp)](https://github.com/ggml-org/llama.cpp/pull/27742)
 - [PR llama.cpp #27739 (gráfico MTP)](https://github.com/ggml-org/llama.cpp/pull/27739)

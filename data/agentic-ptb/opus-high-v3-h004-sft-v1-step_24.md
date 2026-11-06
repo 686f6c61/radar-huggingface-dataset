@@ -70,7 +70,7 @@ No se dispone de datos de rendimiento para comparar este checkpoint con otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h004.sft-v1.step_24
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h004.sft-v1.step_24
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice de AgentPTB: https://huggingface.co/datasets/agentic-ptb/INDEX
 - Búsqueda de modelos AgentPTB: https://huggingface.co/models?other=agentic-ptb

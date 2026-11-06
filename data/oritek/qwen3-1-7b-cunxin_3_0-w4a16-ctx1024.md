@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024` es un artefacto de pesos publicado en HuggingFace por el usuario `oritek`, derivado de la familia Qwen3 en su variante de 1.700 millones de parámetros. El propio identificador del repositorio codifica las tres intervenciones que se le han practicado: un ajuste fino o adaptación denominada "Cunxin 3.0", una cuantización W4A16 (pesos de 4 bits, activaciones de 16 bits) y una ventana de contexto recortada a 1024 tokens (`CTX1024`).
+`oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024` es un artefacto de pesos publicado en Hugging Face por el usuario `oritek`, derivado de la familia Qwen3 en su variante de 1.700 millones de parámetros. El propio identificador del repositorio codifica las tres intervenciones que se le han practicado: un ajuste fino o adaptación denominada "Cunxin 3.0", una cuantización W4A16 (pesos de 4 bits, activaciones de 16 bits) y una ventana de contexto recortada a 1024 tokens (`CTX1024`).
 
 El problema que resuelve es acotado y de perfil bajo: ofrece una versión de muy baja huella de memoria de un modelo pequeño, apta para inferencia en GPU de consumo o incluso en CPU, presumiblemente especializada en tareas de respuesta a preguntas, único `task` declarado en los metadatos. No obstante, la model card del autor no contiene ninguna documentación real: es la plantilla genérica de ModelScope en chino que indica que el contribuidor no ha proporcionado una descripción detallada.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024 | ~1,7 B (4 bits) | 1024 tokens (según nombre) | Apache 2.0 | no disponible | HuggingFace y ModelScope, 0 descargas |
-| Qwen/Qwen3-1.7B | 1,7 B | 32 768 tokens nativos en el modelo original | Apache 2.0 | benchmarks publicados por el autor del modelo base | HuggingFace, ampliamente adoptado |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens | Apache 2.0 | benchmarks publicados por el autor | HuggingFace, con variantes GPTQ y AWQ oficiales |
-| meta-llama/Llama-3.2-1B-Instruct | 1,2 B | 128 000 tokens | Llama 3.2 Community License | benchmarks publicados por el autor | HuggingFace, adopción alta |
+| oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024 | ~1,7 B (4 bits) | 1024 tokens (según nombre) | Apache 2.0 | no disponible | Hugging Face y ModelScope, 0 descargas |
+| Qwen/Qwen3-1.7B | 1,7 B | 32 768 tokens nativos en el modelo original | Apache 2.0 | benchmarks publicados por el autor del modelo base | Hugging Face, ampliamente adoptado |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,5 B | 32 768 tokens | Apache 2.0 | benchmarks publicados por el autor | Hugging Face, con variantes GPTQ y AWQ oficiales |
+| meta-llama/Llama-3.2-1B-Instruct | 1,2 B | 128 000 tokens | Llama 3.2 Community License | benchmarks publicados por el autor | Hugging Face, adopción alta |
 
 La comparación directa de rendimiento no es posible: el modelo analizado no publica métricas y no se ha verificado que el ajuste "Cunxin 3.0" preserve las capacidades del Qwen3-1.7B original. La diferencia más relevante frente a las alternativas es la ventana de contexto, de 1024 tokens frente a los 32 768 del modelo base.
 
@@ -84,7 +84,7 @@ La comparación directa de rendimiento no es posible: el modelo analizado no pub
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024
+- Hugging Face: https://huggingface.co/oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024
 - ModelScope (referencia incluida en la model card): https://www.modelscope.cn/models/oritek/Qwen3-1.7B-Cunxin_3_0-W4A16-CTX1024
 - Modelo base de referencia, Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Documentación de descarga vía SDK de ModelScope: https://modelscope.cn/docs/ModelScope%E6%A8%A1%E5%9E%8B%E6%8E%A5%E5%85%A5%E6%B5%81%E7%A8%8B%E6%A6%82%E8%A7%88

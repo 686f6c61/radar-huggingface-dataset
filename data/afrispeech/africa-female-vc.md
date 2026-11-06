@@ -108,7 +108,7 @@ Observaciones del autor: una lengua nueva cuesta aproximadamente un punto adicio
 
 | Modelo | Tipo | Idiomas | Licencia | Rendimiento (CER in-domain) | Disponibilidad |
 |---|---|---|---:|---:|---|
-| africa-female-vc | Voice conversion (Seed-VC afinado) | Independiente del idioma; 21 voces | GPL-3.0 | 18,73 | HuggingFace + GitHub + demo |
+| africa-female-vc | Voice conversion (Seed-VC afinado) | Independiente del idioma; 21 voces | GPL-3.0 | 18,73 | Hugging Face + GitHub + demo |
 | Seed-VC zero-shot (`seed-uvit-whisper-small-wavenet`) | Voice conversion base | Independiente del idioma | No disponible en la informacion | 22,57 | Repositorio Seed-VC (Plachta) |
 | Checkpoint base `DiT_seed_v2_uvit_whisper_small_wavenet_bigvgan_pruned.pth` | Base de partida del afinado | Independiente del idioma | No disponible en la informacion | No evaluado por separado | Plachta/Seed-VC |
 
@@ -122,15 +122,15 @@ No se dispone de datos de otros modelos de conversion de voz especificos para le
 - Idiomas con ASR poco fiable: en Tarifit, Luba-Lulua y Kikuyu la propia metrica de evaluacion es dudosa (55-88 % de CER sobre audio real), por lo que los numeros publicados no permiten conclusiones.
 - Muestra pequena en la evaluacion: 5 clips por idioma en in-domain y 4 clips por idioma en out-of-domain; el autor recomienda interpretar promedios de grupo, no cifras por idioma aislado.
 - Licencia GPL-3.0: es una licencia copyleft fuerte. Su integracion en productos propietarios exige revisar las obligaciones de distribucion de codigo fuente derivado; no es apta para uso comercial cerrado sin analisis legal.
-- Repositorio sin traccion: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que implica poca validacion externa.
+- Repositorio sin traccion: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que implica poca validacion externa.
 - No se documentan sesgos especificos, riesgos de alucinacion, limites de contexto ni cuantizaciones disponibles; estos apartados figuran como no disponibles.
 - Riesgo de uso indebido: la conversion de voz permite suplantar identidad vocal; conviene aplicar consentimiento explicito y marcas de agua en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AfriSpeech/africa-female-vc
+- Modelo en Hugging Face: https://huggingface.co/AfriSpeech/africa-female-vc
 - Repositorio GitHub (libreria y CLI): https://github.com/AfriSpeech/africa-female-vc
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/AfriSpeech/africa-female-vc-demo
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/AfriSpeech/africa-female-vc-demo
 - Dataset de entrenamiento: https://huggingface.co/datasets/AfriSpeech/africa-female-speech-v2-best60
 - Dataset de validacion: https://huggingface.co/datasets/AfriSpeech/africa-female-speech-v2
 - Dataset out-of-domain: https://huggingface.co/datasets/AfriSpeech/youversion-african-speech

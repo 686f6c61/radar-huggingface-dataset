@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`wsp-bert-insurance-v1-p10` es un clasificador de frases del dominio de seguros construido sobre `bert-base-uncased` y publicado por el usuario `sidman007` en HuggingFace. El modelo resuelve una tarea de clasificación de texto multietiqueta (8 categorías) sobre oraciones del ámbito asegurador: concesión de cobertura, exclusión, pago de prima, límites y franquicias, procedimiento de siniestros, definiciones, cancelación/renovación de término y condiciones y obligaciones. Con 109.488.392 parámetros y un repositorio de 0,4 GB, se trata de un fine-tuning de un transformer encoder de tamaño base.
+`wsp-bert-insurance-v1-p10` es un clasificador de frases del dominio de seguros construido sobre `bert-base-uncased` y publicado por el usuario `sidman007` en Hugging Face. El modelo resuelve una tarea de clasificación de texto multietiqueta (8 categorías) sobre oraciones del ámbito asegurador: concesión de cobertura, exclusión, pago de prima, límites y franquicias, procedimiento de siniestros, definiciones, cancelación/renovación de término y condiciones y obligaciones. Con 109.488.392 parámetros y un repositorio de 0,4 GB, se trata de un fine-tuning de un transformer encoder de tamaño base.
 
 La particularidad del modelo no es su arquitectura, sino el método de construcción: según la model card, los pesos no se obtuvieron mediante descenso de gradiente ni optimizadores, sino mediante *weight-space programming*. Un LLM editor leyó y escribió directamente los tensores del modelo aplicando matemática en forma cerrada sobre pesos y activaciones, obtenidas a partir de un número acotado de pasadas hacia delante. El autor declara que se modificaron 144 tensores, lo que supone un 5,023 % de los parámetros.
 
@@ -56,24 +56,24 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - **VRAM estimada para inferencia**: en FP32, aproximadamente 0,44 GB de pesos (109,5 M de parámetros × 4 bytes), más overhead de activaciones y tokenizador; en FP16, alrededor de 0,22 GB. Cabe holgadamente en cualquier GPU consumer.
 - **GPU recomendadas**: no requiere GPU dedicada; una NVIDIA RTX 3060, RTX 4090, T4 o incluso CPU moderna son suficientes para inferencia por lotes de este tamaño.
 - **Cabe en consumer GPU**: sí, en cualquier GPU con al menos 2 GB de VRAM; también en CPU para volúmenes moderados.
-- **Opciones de despliegue**: `transformers` con `pipeline("text-classification")`, `Text Classification Inference` de HuggingFace, exportación a ONNX Runtime, y servidores de inferencia ligeros. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama ni TGI (estas herramientas están orientadas a modelos generativos y no aplican directamente a este encoder).
+- **Opciones de despliegue**: `transformers` con `pipeline("text-classification")`, `Text Classification Inference` de Hugging Face, exportación a ONNX Runtime, y servidores de inferencia ligeros. No se documentan integraciones específicas con vLLM, llama.cpp, Ollama ni TGI (estas herramientas están orientadas a modelos generativos y no aplican directamente a este encoder).
 - **Latencia y throughput estimados**: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera un throughput alto en GPU (cientos a miles de oraciones por segundo en lotes), pero se trata de una estimación general para BERT base, no de un dato medido por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `sidman007/wsp-bert-insurance-v1-p10` | 109,5 M | no disponible | Clasificación de frases de seguros (8 etiquetas) | apache-2.0 | HuggingFace, 0 descargas |
-| `google-bert/bert-base-uncased` (modelo base) | 110 M | 512 tokens | Representación general / MLM | apache-2.0 | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | ~110 M | 512 tokens | Análisis de sentimiento financiero | no disponible en la información | HuggingFace, popular en finanzas |
-| `nlpaueb/legal-bert-base-uncased` | ~110 M | 512 tokens | Dominio legal (clasificación, QA) | no disponible en la información | HuggingFace |
+| `sidman007/wsp-bert-insurance-v1-p10` | 109,5 M | no disponible | Clasificación de frases de seguros (8 etiquetas) | apache-2.0 | Hugging Face, 0 descargas |
+| `google-bert/bert-base-uncased` (modelo base) | 110 M | 512 tokens | Representación general / MLM | apache-2.0 | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | ~110 M | 512 tokens | Análisis de sentimiento financiero | no disponible en la información | Hugging Face, popular en finanzas |
+| `nlpaueb/legal-bert-base-uncased` | ~110 M | 512 tokens | Dominio legal (clasificación, QA) | no disponible en la información | Hugging Face |
 
 La comparación directa con alternativas del mismo dominio de seguros no está disponible en la información proporcionada. Los modelos citados comparten arquitectura y escala, pero cubren dominios distintos (finanzas, legal) o son el checkpoint base sin fine-tuning.
 
 ## Limitaciones y advertencias
 
 - **Sin benchmarks publicados**: no hay métricas de precisión, F1 ni evaluación por clase, lo que impide validar la calidad del clasificador antes de usarlo.
-- **Cero adopción verificable**: 0 descargas y 0 likes en HuggingFace; no hay evidencia de uso en producción ni de validación independiente.
+- **Cero adopción verificable**: 0 descargas y 0 likes en Hugging Face; no hay evidencia de uso en producción ni de validación independiente.
 - **Model card mínima**: no se documentan datos de entrenamiento, composición del corpus, hiperparámetros, ni el protocolo completo de edición de pesos; el README del proyecto referenciado no está incluido en la información disponible.
 - **Riesgo de alucinación y clasificación errónea**: en un modelo discriminativo, el riesgo se traduce en asignaciones de etiqueta incorrectas, especialmente en oraciones ambiguas o que combinan varias categorías (por ejemplo, una cláusula que define una exclusión y a la vez establece condiciones).
 - **Sesgos**: no documentados por el autor; al derivar de `bert-base-uncased` y de un corpus de seguros no especificado, puede heredar sesgos del dominio y del corpus de edición.
@@ -84,7 +84,7 @@ La comparación directa con alternativas del mismo dominio de seguros no está d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p10
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v1-p10
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased
 - README del proyecto referenciado en la model card: no disponible en la información proporcionada
 - Paper o blog del método *weight-space programming*: no disponible en la información proporcionada

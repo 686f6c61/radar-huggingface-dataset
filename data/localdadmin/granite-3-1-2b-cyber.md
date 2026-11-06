@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Granite-3.1-2b-cyber es un repositorio de pesos en formato GGUF publicado por el usuario localdadmin en HuggingFace. Los archivos incluidos llevan el nombre `granite-3.1-2b-instruct.Q3_K_M.gguf`, `granite-3.1-2b-instruct.Q4_K_M.gguf` y `granite-3.1-2b-instruct.Q5_K_M.gguf`, lo que indica que el punto de partida es el modelo instructivo Granite 3.1 de 2B de IBM, aunque la model card no documenta ningún proceso de ajuste adicional asociado al sufijo "cyber".
+Granite-3.1-2b-cyber es un repositorio de pesos en formato GGUF publicado por el usuario localdadmin en Hugging Face. Los archivos incluidos llevan el nombre `granite-3.1-2b-instruct.Q3_K_M.gguf`, `granite-3.1-2b-instruct.Q4_K_M.gguf` y `granite-3.1-2b-instruct.Q5_K_M.gguf`, lo que indica que el punto de partida es el modelo instructivo Granite 3.1 de 2B de IBM, aunque la model card no documenta ningún proceso de ajuste adicional asociado al sufijo "cyber".
 
-El recuento de parámetros declarado por los metadatos de HuggingFace a partir de safetensors es de 2.533.531.648 parámetros (aproximadamente 2,53 mil millones), lo que sitúa al modelo en la gama de los LLM densos pequeños aptos para ejecución en CPU o en GPU de gama de consumo. El repositorio ocupa 4,6 GB en total, suma de las tres cuantizaciones publicadas.
+El recuento de parámetros declarado por los metadatos de Hugging Face a partir de safetensors es de 2.533.531.648 parámetros (aproximadamente 2,53 mil millones), lo que sitúa al modelo en la gama de los LLM densos pequeños aptos para ejecución en CPU o en GPU de gama de consumo. El repositorio ocupa 4,6 GB en total, suma de las tres cuantizaciones publicadas.
 
 El interés práctico del repositorio radica en su distribución exclusiva en GGUF, el formato nativo de llama.cpp, lo que permite desplegarlo en entornos sin GPU dedicada, en local y sin dependencia de servicios en la nube. La contrapartida es la ausencia casi total de documentación técnica: no hay licencia declarada, ni idiomas soportados, ni longitud de contexto, ni resultados de evaluación en la información disponible.
 
@@ -13,7 +13,7 @@ El interés práctico del repositorio radica en su distribución exclusiva en GG
 | Parametro | Valor |
 |---|---|
 | Arquitectura | no disponible (los archivos remiten a granite-3.1-2b-instruct; no se documenta la arquitectura en la model card) |
-| Parametros totales | 2.533.531.648 (dato de los metadatos de HuggingFace a partir de safetensors) |
+| Parametros totales | 2.533.531.648 (dato de los metadatos de Hugging Face a partir de safetensors) |
 | Parametros activos | no aplica (no hay evidencia de arquitectura MoE) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | GGUF: Q3_K_M, Q4_K_M, Q5_K_M |
@@ -33,7 +33,7 @@ Tampoco se especifica el numero de tokens de entrenamiento, la composicion del d
 - Inferencia en formato de chat: el flag `--jinja` habilita el chat template embebido en el GGUF.
 - Ejecucion local en CPU: la distribucion en GGUF con cuantizaciones K-quant permite inferencia sin GPU.
 - Compatibilidad con llama.cpp: el repositorio esta etiquetado explicitamente con `llama.cpp` y `llama-cpp`.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue mediante el servidor compatible con la API de OpenAI de llama.cpp o HuggingFace Endpoints.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere despliegue mediante el servidor compatible con la API de OpenAI de llama.cpp o Hugging Face Endpoints.
 - Soporte multimodal: la model card menciona `llama-mtmd-cli` como ejemplo generico de uso, pero no hay ningun archivo de proyector ni evidencia de que este modelo concreto procese imagenes; debe tratarse como una plantilla de la documentacion, no como una capacidad confirmada.
 - Razonamiento, codigo, matematicas, tool calling, agentes y capacidades multilingues: no disponible, no se documenta nada al respecto.
 
@@ -69,12 +69,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Granite-3.1-2b-cyber (este repositorio) | 2,53B | no disponible | no disponible | GGUF en HuggingFace |
-| Granite 3.1 2B Instruct (modelo base probable) | 2,53B | no disponible en esta ficha | no disponible en esta ficha | safetensors y GGUF en HuggingFace |
-| Llama 3.2 3B Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | pesos abiertos en HuggingFace |
-| Qwen2.5 3B Instruct | 3,09B | 32.768 tokens nativos | Apache 2.0 | pesos abiertos en HuggingFace |
-| Gemma 2 2B IT | 2,61B | 8.192 tokens | Gemma Terms of Use | pesos abiertos en HuggingFace |
-| SmolLM2 1.7B Instruct | 1,7B | 8.192 tokens | Apache 2.0 | pesos abiertos en HuggingFace |
+| Granite-3.1-2b-cyber (este repositorio) | 2,53B | no disponible | no disponible | GGUF en Hugging Face |
+| Granite 3.1 2B Instruct (modelo base probable) | 2,53B | no disponible en esta ficha | no disponible en esta ficha | safetensors y GGUF en Hugging Face |
+| Llama 3.2 3B Instruct | 3,21B | 128.000 tokens | Llama 3.2 Community License | pesos abiertos en Hugging Face |
+| Qwen2.5 3B Instruct | 3,09B | 32.768 tokens nativos | Apache 2.0 | pesos abiertos en Hugging Face |
+| Gemma 2 2B IT | 2,61B | 8.192 tokens | Gemma Terms of Use | pesos abiertos en Hugging Face |
+| SmolLM2 1.7B Instruct | 1,7B | 8.192 tokens | Apache 2.0 | pesos abiertos en Hugging Face |
 
 Nota: los datos de los modelos comparativos proceden de la documentacion publica de cada familia y no forman parte de la informacion proporcionada sobre este repositorio. No es posible comparar rendimiento en benchmarks porque no hay resultados publicados para Granite-3.1-2b-cyber.
 
@@ -92,6 +92,6 @@ Nota: los datos de los modelos comparativos proceden de la documentacion publica
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/localdadmin/Granite-3.1-2b-cyber
+- Hugging Face: https://huggingface.co/localdadmin/Granite-3.1-2b-cyber
 - Repositorio de Unsloth (herramienta de conversion citada en la model card): https://github.com/unslothai/unsloth
 - No se han encontrado enlaces adicionales (paper, blog, demo o repositorio propio) en la informacion disponible; la busqueda web no devolvio resultados tecnicos relacionados con este modelo.

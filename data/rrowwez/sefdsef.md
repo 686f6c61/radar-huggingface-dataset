@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`rrowwez/sefdsef` es un repositorio alojado en HuggingFace por el usuario `rrowwez` bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene ningun peso de modelo, tokenizador, configuracion (`config.json`), ni ningun artefacto de inferencia: unicamente incluye un `README.md` de 28 bytes y un fichero `.gitattributes` de 1,52 kB, con un total de 1,55 kB en el repositorio. El contenido del README se limita a la declaracion de licencia, sin descripcion, sin documentacion de arquitectura y sin instrucciones de uso.
+`rrowwez/sefdsef` es un repositorio alojado en Hugging Face por el usuario `rrowwez` bajo licencia Apache 2.0. En el momento de la consulta, el repositorio no contiene ningun peso de modelo, tokenizador, configuracion (`config.json`), ni ningun artefacto de inferencia: unicamente incluye un `README.md` de 28 bytes y un fichero `.gitattributes` de 1,52 kB, con un total de 1,55 kB en el repositorio. El contenido del README se limita a la declaracion de licencia, sin descripcion, sin documentacion de arquitectura y sin instrucciones de uso.
 
 No se dispone de informacion sobre el desarrollador mas alla del nombre de usuario, ni sobre el proposito del repositorio, ni sobre si se trata de un placeholder, una prueba de subida o un proyecto en estado embrionario. La fecha de creacion y ultima actualizacion registradas son identicas (2026-10-04T01:11:16.000Z), con un unico commit etiquetado como "initial commit", lo que indica que no ha habido desarrollo posterior.
 
@@ -92,6 +92,6 @@ No disponible. No es posible establecer una comparativa con alternativas de la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rrowwez/sefdsef
+- Repositorio en Hugging Face: https://huggingface.co/rrowwez/sefdsef
 - Arbol de ficheros: https://huggingface.co/rrowwez/sefdsef/tree/main
 - Paper, blog tecnico, repositorio de codigo o demo: no disponible.

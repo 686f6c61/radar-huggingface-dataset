@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| krea2-nextscene-raw-v3 | LoRA r32 sobre Krea 2 Raw fp8 | Imagen de referencia + prompt | No hay benchmarks numericos; evidencia cualitativa propia en `evidence/` | other (sin texto) | HuggingFace, 0 descargas |
+| krea2-nextscene-raw-v3 | LoRA r32 sobre Krea 2 Raw fp8 | Imagen de referencia + prompt | No hay benchmarks numericos; evidencia cualitativa propia en `evidence/` | other (sin texto) | Hugging Face, 0 descargas |
 | A1000 (LoRA antiguo entrenado sobre Raw) | LoRA de referencia anterior | Imagen de referencia + prompt | Usado como columna de comparacion en la rejilla del autor; resultados no cuantificados | no disponible | Referenciado en la rejilla de evaluacion, no se enlaza repositorio |
 | Krea 2 Raw nativo (sin este LoRA) | Modelo base de difusion | Imagen de referencia + prompt con `index_timestep_zero` | Columna `native` de la rejilla; sin LoRA de escena siguiente | no disponible | Disponible como modelo base Krea 2 Raw |
 | Krea 2 Turbo + LoRA oficial rank 64 | Modelo base con LoRA Turbo | Imagen de referencia + prompt | Columna base del flujo; no cuantificado | no disponible | Disponible en el ecosistema ComfyUI |
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento cuantitativos de ninguno de los elementos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdwolfCzar/krea2-nextscene-raw-v3
+- Modelo en Hugging Face: https://huggingface.co/AdwolfCzar/krea2-nextscene-raw-v3
 - Dataset de entrenamiento: https://huggingface.co/datasets/AdwolfCzar/ofificial_next_scene_v11
 - Codigo de entrenamiento (rama krea2-raw-v3): https://github.com/adbrasi/diffusion-pipe-easycontrol
 - Registro de la tirada (rama claude/elegant-ptolemy-8kywqy), `docs/KREA2_RAW_RUN_LOG.md`: https://github.com/adbrasi/diffusion-pipe-easycontrol/blob/claude/elegant-ptolemy-8kywqy/docs/KREA2_RAW_RUN_LOG.md

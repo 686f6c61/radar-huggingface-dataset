@@ -78,7 +78,7 @@ No se dispone de información sobre adaptadores comparables en la misma tarea (e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-e2b-sdr
+- Hugging Face: https://huggingface.co/shreshthsaini/brightrate-study-gemma4-e2b-sdr
 - Modelo base: https://huggingface.co/google/gemma-4-E2B
 - Repositorio BrightVQ: https://github.com/shreshthsaini/BrightVQ
 - Repositorio BrightRate-LM: https://github.com/shreshthsaini/BrightRate-LM

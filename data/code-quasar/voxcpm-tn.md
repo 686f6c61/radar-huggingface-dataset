@@ -85,6 +85,6 @@ No se dispone de informacion sobre otros modelos TTS abiertos para dialectos ara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Code-Quasar/voxcpm-tn
+- Repositorio Hugging Face: https://huggingface.co/Code-Quasar/voxcpm-tn
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante sobre el modelo; los resultados devueltos corresponden a examenes de codigo de circulacion y no guardan relacion con este repositorio.

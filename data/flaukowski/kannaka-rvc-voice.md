@@ -104,7 +104,7 @@ No hay en la informacion proporcionada benchmarks ni especificaciones de modelos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/flaukowski/kannaka-rvc-voice
+- Modelo en Hugging Face: https://huggingface.co/flaukowski/kannaka-rvc-voice
 - Modelo de voz hablada relacionado (Piper, fuente del dataset): https://huggingface.co/flaukowski/kannaka-piper-voice
 - LoRA de generacion musical relacionada (ACE-Step): https://huggingface.co/flaukowski/kannaka-ace-step-lora
 - Applio (entrenador e interfaz de inferencia, version 3.6.6): https://github.com/IAHispano/Applio

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `BtbAgent/nemotron-3.5-Bolt-E4B-specialiste-financier-V3` es un checkpoint publicado en HuggingFace por el usuario BtbAgent. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) orientado al dominio financiero sobre una base de la familia Nemotron, presumiblemente un modelo de tipo MoE con aproximadamente 4B de parámetros activos (la nomenclatura "E4B" es habitual en modelos tipo Mixture of Experts para indicar parámetros activados). El sufijo "V3" sugiere que existen versiones anteriores del mismo experimento.
+El modelo `BtbAgent/nemotron-3.5-Bolt-E4B-specialiste-financier-V3` es un checkpoint publicado en Hugging Face por el usuario BtbAgent. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) orientado al dominio financiero sobre una base de la familia Nemotron, presumiblemente un modelo de tipo MoE con aproximadamente 4B de parámetros activos (la nomenclatura "E4B" es habitual en modelos tipo Mixture of Experts para indicar parámetros activados). El sufijo "V3" sugiere que existen versiones anteriores del mismo experimento.
 
-La model card publicada es la plantilla automática de HuggingFace y no contiene información sustantiva: no se especifican autoría real, datos de entrenamiento, licencia, idiomas ni resultados de evaluación. El repositorio tiene un tamaño de 0,2 GB, lo que resulta llamativamente pequeño para un modelo de 4B parámetros en precisión completa (que ocuparía del orden de 8 GB en bf16), y apunta a pesos cuantizados, a un adaptador LoRA o a un checkpoint incompleto.
+La model card publicada es la plantilla automática de Hugging Face y no contiene información sustantiva: no se especifican autoría real, datos de entrenamiento, licencia, idiomas ni resultados de evaluación. El repositorio tiene un tamaño de 0,2 GB, lo que resulta llamativamente pequeño para un modelo de 4B parámetros en precisión completa (que ocuparía del orden de 8 GB en bf16), y apunta a pesos cuantizados, a un adaptador LoRA o a un checkpoint incompleto.
 
 Por tanto, esta ficha documenta lo que puede verificarse objetivamente (metadatos del repositorio, tamaño, etiquetas, fecha) y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de calidad, rendimiento o idoneidad para producción resulta imposible con la información existente.
 
@@ -91,7 +91,7 @@ La comparacion cuantitativa queda pendiente de que el autor publique especificac
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/BtbAgent/nemotron-3.5-Bolt-E4B-specialiste-financier-V3
+- Repositorio Hugging Face: https://huggingface.co/BtbAgent/nemotron-3.5-Bolt-E4B-specialiste-financier-V3
 - Paper de referencia citado en la model card (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

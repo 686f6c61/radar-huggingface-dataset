@@ -2,7 +2,7 @@
 
 ## Resumen
 
-burmese-gpt2-v4 es un ajuste fino (fine-tuning) del modelo GPT-2 de OpenAI, publicado por el usuario zayar26 en HuggingFace. El repositorio corresponde a un entrenamiento generado automaticamente con la libreria Trainer de Transformers, por lo que la model card no documenta el dataset utilizado, los usos previstos ni los resultados de evaluacion. El nombre del modelo sugiere un objetivo de generacion de texto en birmano (myanmar), pero esta orientacion no se declara formalmente en los metadatos ni en la model card.
+burmese-gpt2-v4 es un ajuste fino (fine-tuning) del modelo GPT-2 de OpenAI, publicado por el usuario zayar26 en Hugging Face. El repositorio corresponde a un entrenamiento generado automaticamente con la libreria Trainer de Transformers, por lo que la model card no documenta el dataset utilizado, los usos previstos ni los resultados de evaluacion. El nombre del modelo sugiere un objetivo de generacion de texto en birmano (myanmar), pero esta orientacion no se declara formalmente en los metadatos ni en la model card.
 
 Tecnicamente es un transformer decoder-only de tipo GPT-2 con 90.028.032 parametros segun los pesos en safetensors, una cifra inferior a los 124 millones del GPT-2 base, lo que apunta a una configuracion modificada (por ejemplo, vocabulario o dimensiones distintas) aunque no se especifica. El repositorio ocupa 0,4 GB y expone la libreria transformers con pesos en safetensors, ademas de ser compatible con text-generation-inference y endpoints.
 
@@ -61,17 +61,17 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 - VRAM estimada para inferencia (calculada a partir de los 90.028.032 parametros, no declarada por el autor): en fp32 en torno a 0,36 GB de pesos, en fp16/bf16 unos 0,18 GB, en int8 unos 0,09 GB y en 4 bits aproximadamente 0,05 GB. El repositorio completo ocupa 0,4 GB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente (GTX 1050 Ti, GTX 1650, RTX 3050, RTX 4090, A100, H100). El modelo no requiere aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU de consumo de los ultimos diez anos, e incluso en CPU con un consumo de memoria inferior a 1 GB.
-- Opciones de despliegue: transformers (pipeline text-generation), text-generation-inference (etiqueta declarada), endpoints compatibles de HuggingFace. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publican cuantizaciones de ese formato. vLLM y TGI son viables por el formato safetensors.
+- Opciones de despliegue: transformers (pipeline text-generation), text-generation-inference (etiqueta declarada), endpoints compatibles de Hugging Face. Para llama.cpp u Ollama seria necesario convertir los pesos a GGUF, ya que no se publican cuantizaciones de ese formato. vLLM y TGI son viables por el formato safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones del autor; en cualquier caso, con 90 millones de parametros el modelo es de los mas rapidos de la familia GPT-2 en hardware moderno.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zayar26/burmese-gpt2-v4 | 90.028.032 | no disponible | sin benchmarks publicados | MIT | HuggingFace, safetensors |
-| WYNN747/Burmese-GPT | no disponible (basado en mGPT XL) | no disponible | no disponible | no disponible | HuggingFace |
+| zayar26/burmese-gpt2-v4 | 90.028.032 | no disponible | sin benchmarks publicados | MIT | Hugging Face, safetensors |
+| WYNN747/Burmese-GPT | no disponible (basado en mGPT XL) | no disponible | no disponible | no disponible | Hugging Face |
 | realzai/burmese-gpt | 20.000.000 (segun el repositorio) | no disponible | no disponible | no disponible | GitHub (PyTorch) |
-| simbolo-ai/Myanmarsar-GPT | no disponible (basado en GPT-2/mGPT) | no disponible | no disponible | no disponible | HuggingFace |
+| simbolo-ai/Myanmarsar-GPT | no disponible (basado en GPT-2/mGPT) | no disponible | no disponible | no disponible | Hugging Face |
 
 No hay datos comparativos de rendimiento entre estas alternativas en la informacion disponible; la unica comparacion posible es de tamano y de licencia, y en ambos casos burmese-gpt2-v4 es el unico con licencia MIT explicitamente declarada y con recuento de parametros verificable desde safetensors.
 
@@ -90,7 +90,7 @@ No hay datos comparativos de rendimiento entre estas alternativas en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zayar26/burmese-gpt2-v4
+- Modelo en Hugging Face: https://huggingface.co/zayar26/burmese-gpt2-v4
 - Modelo base GPT-2: https://huggingface.co/gpt2
 - WYNN747/Burmese-GPT: https://huggingface.co/WYNN747/Burmese-GPT
 - Repositorio realzai/burmese-gpt: https://github.com/realzai/burmese-gpt

@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento de est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-seed1234-sft
+- Modelo en Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-rawanneal-seed1234-sft
 - Variante con preentrenamiento 1PP completo: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-ua-seed1234-sft
 - Modelo base del que deriva el cooldown: https://huggingface.co/Raghav-Singhal/1pp-0.98b-v2-raw-seed1234-base
 - Colección 1pp: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649

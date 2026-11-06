@@ -111,7 +111,7 @@ La busqueda web realizada no devolvio resultados relevantes sobre el modelo ni s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiologgingSolutions/OceanBEATs
+- Modelo en Hugging Face: https://huggingface.co/BiologgingSolutions/OceanBEATs
 - Revision v3.0.3-sr-minor-2026-09-13 (par corregido): https://huggingface.co/BiologgingSolutions/OceanBEATs/tree/v3.0.3-sr-minor-2026-09-13
 - Revision v3.1.4-sr-minor-2026-09-19 (par corregido y encoder de etapa 2): https://huggingface.co/BiologgingSolutions/OceanBEATs/tree/v3.1.4-sr-minor-2026-09-19
 - Release de codigo y resultados de la revision final: https://github.com/alohajazz/openworld-soundscape-cced2-dgpu/releases/tag/v3.1.4-sr-minor-2026-09-19

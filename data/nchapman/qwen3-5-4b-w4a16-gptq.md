@@ -72,8 +72,8 @@ Segun la model card, las diferencias de pass@1 muestreado frente al base estan d
 
 | Modelo | Parametros | Cuantizacion | Contexto | HumanEval pass@1 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nchapman/Qwen3.5-4B-W4A16-GPTQ (este) | 4.539.265.536 | INT4 W4A16 GPTQ | 65.536 (segun ejemplo vLLM) | 0.832 | apache-2.0 | HuggingFace |
-| Qwen/Qwen3.5-4B (base BF16) | 4.539.265.536 | BF16 | no disponible | 0.809 | apache-2.0 | HuggingFace |
+| nchapman/Qwen3.5-4B-W4A16-GPTQ (este) | 4.539.265.536 | INT4 W4A16 GPTQ | 65.536 (segun ejemplo vLLM) | 0.832 | apache-2.0 | Hugging Face |
+| Qwen/Qwen3.5-4B (base BF16) | 4.539.265.536 | BF16 | no disponible | 0.809 | apache-2.0 | Hugging Face |
 | Variante AWQ (A/B de la model card) | 4.539.265.536 | INT4 AWQ | no disponible | 0.791 | no disponible | no disponible |
 | Variante AutoRound (A/B de la model card) | 4.539.265.536 | INT4 AutoRound | no disponible | 0.752 | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ No se dispone de comparaciones con modelos de otros desarrolladores del mismo ta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nchapman/Qwen3.5-4B-W4A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/nchapman/Qwen3.5-4B-W4A16-GPTQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Documentacion de llm-compressor: https://docs.vllm.ai/projects/llm-compressor/en/latest/
 - Plantillas de chat corregidas (froggeric/Qwen-Fixed-Chat-Templates): https://huggingface.co/froggeric/Qwen-Fixed-Chat-Templates

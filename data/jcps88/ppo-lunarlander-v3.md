@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`jcps88/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium, usando la librería stable-baselines3. Lo publica el usuario jcps88 en HuggingFace Hub como un artefacto de política entrenada, no como un modelo de lenguaje: no genera texto ni procesa lenguaje natural, sino que produce acciones discretas a partir de observaciones del entorno de aterrizaje lunar.
+`jcps88/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) sobre el entorno `LunarLander-v3` de Gymnasium, usando la librería stable-baselines3. Lo publica el usuario jcps88 en Hugging Face Hub como un artefacto de política entrenada, no como un modelo de lenguaje: no genera texto ni procesa lenguaje natural, sino que produce acciones discretas a partir de observaciones del entorno de aterrizaje lunar.
 
 El problema que resuelve es el control secuencial en un entorno clásico de RL: un módulo lunar debe posarse suavemente en una zona determinada aplicando empuje principal y propulsores laterales, con recompensas que penalizan el consumo de combustible, la inclinación y los impactos. Es relevante como ejemplo reproducible de entrenamiento PPO con stable-baselines3 y como punto de partida para experimentos docentes o comparativas de algoritmos.
 
@@ -75,10 +75,10 @@ No se han publicado otros resultados de benchmarks en la información disponible
 
 | Modelo | Algoritmo | Entorno | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| jcps88/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | 121,19 +/- 122,06 (no verificado) | no disponible | HuggingFace Hub |
-| Otros agentes PPO para LunarLander en el Hub | PPO | LunarLander-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | variable | HuggingFace Hub |
-| Agentes DQN para LunarLander (sb3) | DQN (off-policy) | LunarLander-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | variable | HuggingFace Hub / RL Zoo |
-| Agentes A2C para LunarLander (sb3) | A2C (on-policy) | LunarLander-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | variable | HuggingFace Hub / RL Zoo |
+| jcps88/ppo-LunarLander-v3 | PPO | LunarLander-v3 | no disponible | no aplica | 121,19 +/- 122,06 (no verificado) | no disponible | Hugging Face Hub |
+| Otros agentes PPO para LunarLander en el Hub | PPO | LunarLander-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | variable | Hugging Face Hub |
+| Agentes DQN para LunarLander (sb3) | DQN (off-policy) | LunarLander-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | variable | Hugging Face Hub / RL Zoo |
+| Agentes A2C para LunarLander (sb3) | A2C (on-policy) | LunarLander-v3 | no disponible | no aplica | no disponible en la informacion proporcionada | variable | Hugging Face Hub / RL Zoo |
 
 No se dispone de resultados verificados de esos modelos comparables en la información proporcionada; la comparación cuantitativa no es posible sin reevaluar todos los agentes bajo el mismo protocolo (número de episodios, semillas y criterio de éxito).
 
@@ -96,7 +96,7 @@ No se dispone de resultados verificados de esos modelos comparables en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcps88/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/jcps88/ppo-LunarLander-v3
 - stable-baselines3 (repositorio oficial): https://github.com/DLR-RM/stable-baselines3
 - huggingface_sb3 (utilidad de carga desde el Hub): https://github.com/huggingface/huggingface_sb3
 - Documentación del entorno LunarLander en Gymnasium: https://gymnasium.farama.org/environments/box2d/lunar_lander/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Myszz/tmp` es un adaptador LoRA publicado en HuggingFace por el usuario Myszz. No se trata de un modelo de lenguaje, sino de un conjunto de pesos de ajuste fino (adapter) entrenado sobre `Wan-AI/Wan2.2-TI2V-5B-Diffusers`, un modelo de difusion texto-a-video e imagen-a-video de 5.000 millones de parametros desarrollado por Wan-AI (Alibaba). El adaptador se distribuye en formato PEFT/safetensors y ocupa 0,3 GB en el repositorio.
+`Myszz/tmp` es un adaptador LoRA publicado en Hugging Face por el usuario Myszz. No se trata de un modelo de lenguaje, sino de un conjunto de pesos de ajuste fino (adapter) entrenado sobre `Wan-AI/Wan2.2-TI2V-5B-Diffusers`, un modelo de difusion texto-a-video e imagen-a-video de 5.000 millones de parametros desarrollado por Wan-AI (Alibaba). El adaptador se distribuye en formato PEFT/safetensors y ocupa 0,3 GB en el repositorio.
 
 La relevancia de esta publicacion es limitada: la model card no documenta proposito, datos de entrenamiento, hiperparametros ni resultados de evaluacion. El nombre `tmp` sugiere un artefacto de prueba o un checkpoint temporal, y el repositorio no registra descargas ni interacciones. A dia de hoy no existe informacion publica que permita evaluar su calidad o su idoneidad para produccion.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / resolucion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Myszz/tmp | LoRA sobre Wan2.2-TI2V-5B | No disponible (repo 0,3 GB) | No disponible | No disponible | HuggingFace, 0 descargas |
-| Wan-AI/Wan2.2-TI2V-5B-Diffusers | Modelo de difusion texto/imagen-a-video | 5.000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | HuggingFace (modelo base) |
-| Otros LoRA sobre Wan2.2 | Adaptadores PEFT | Variable | No disponible | Variable | HuggingFace |
+| Myszz/tmp | LoRA sobre Wan2.2-TI2V-5B | No disponible (repo 0,3 GB) | No disponible | No disponible | Hugging Face, 0 descargas |
+| Wan-AI/Wan2.2-TI2V-5B-Diffusers | Modelo de difusion texto/imagen-a-video | 5.000 millones | No disponible en la informacion proporcionada | No disponible en la informacion proporcionada | Hugging Face (modelo base) |
+| Otros LoRA sobre Wan2.2 | Adaptadores PEFT | Variable | No disponible | Variable | Hugging Face |
 
 No se dispone de datos de rendimiento del adaptador ni de adaptadores comparables en la informacion proporcionada, por lo que la comparacion se limita a metadatos estructurales.
 
@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento del adaptador ni de adaptadores comparable
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Myszz/tmp
+- Repositorio Hugging Face: https://huggingface.co/Myszz/tmp
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers
 - Referencia citada en los tags (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact#compute

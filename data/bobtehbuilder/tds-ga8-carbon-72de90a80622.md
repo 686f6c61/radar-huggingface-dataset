@@ -53,5 +53,5 @@ No disponible. Al no existir especificaciones del modelo, no es posible comparar
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-72de90a80622
+- Repositorio en Hugging Face: https://huggingface.co/bobtehbuilder/tds-ga8-carbon-72de90a80622
 - No se han encontrado otros enlaces relevantes en la búsqueda web.

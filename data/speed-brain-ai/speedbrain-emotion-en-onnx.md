@@ -71,6 +71,6 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/speed-brain-ai/speedbrain-emotion-en-onnx
+- Repositorio Hugging Face: https://huggingface.co/speed-brain-ai/speedbrain-emotion-en-onnx
 - Modelo base: https://huggingface.co/SamLowe/roberta-base-go_emotions-onnx
 - Web de enterspeed (mencion de Speedbrain): https://www.enterspeed.com/products/services/conversational-intelligence-service

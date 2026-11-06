@@ -79,7 +79,7 @@ GLM-5.3-Flash se posiciona como el primer modelo multimodal de la serie GLM-5, c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zai-org/GLM-5.3-Flash
+- Hugging Face: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Blog de Z.ai sobre GLM-5.3-Flash: https://z.ai/blog/glm-5.3-flash
 - Informe técnico GLM-5 (arXiv): https://arxiv.org/abs/2602.15763
 - Documentación API de Z.ai: https://docs.z.ai/guides/llm/glm-5.3-flash

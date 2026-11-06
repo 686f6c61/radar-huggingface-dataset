@@ -68,5 +68,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mocloud/jcbot-pi05-v17-final-ckpts
-- Dataset asociado: `MathematicHZ/data_jcbot_hz` (revisión v3.0), accesible a través de HuggingFace (no se proporciona URL directa en la información disponible).
+- Repositorio Hugging Face: https://huggingface.co/mocloud/jcbot-pi05-v17-final-ckpts
+- Dataset asociado: `MathematicHZ/data_jcbot_hz` (revisión v3.0), accesible a través de Hugging Face (no se proporciona URL directa en la información disponible).

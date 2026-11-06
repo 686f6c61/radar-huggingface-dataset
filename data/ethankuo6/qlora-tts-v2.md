@@ -54,6 +54,6 @@ No disponible. No se puede comparar un documento de revisión con modelos de TTS
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ethankuo6/qlora-tts-v2
+- Repositorio en Hugging Face: https://huggingface.co/ethankuo6/qlora-tts-v2
 - Model card oficial: https://huggingface.co/ethankuo6/qlora-tts-v2/blob/main/README.md
 - Información sobre XTTS-v2 (modelo de TTS de referencia, no relacionado directamente): https://huggingface.co/coqui/XTTS-v2

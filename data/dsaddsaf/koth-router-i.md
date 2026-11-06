@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `dsaddsaf/koth-router-i` alojado en HuggingFace no contiene información técnica pública sobre ningún modelo de IA. Se trata de un espacio creado por el usuario `dsaddsaf` el 4 de agosto de 2026 y actualizado el 13 de agosto de 2026, con un tamaño de repositorio de 0.0 GB, lo que indica que no hay pesos, archivos de configuración ni documentación sustancial. El único metadato disponible es la etiqueta `region:us`, que sugiere una posible ubicación geográfica de los recursos, pero no aporta información sobre arquitectura, capacidades o uso.
+El repositorio `dsaddsaf/koth-router-i` alojado en Hugging Face no contiene información técnica pública sobre ningún modelo de IA. Se trata de un espacio creado por el usuario `dsaddsaf` el 4 de agosto de 2026 y actualizado el 13 de agosto de 2026, con un tamaño de repositorio de 0.0 GB, lo que indica que no hay pesos, archivos de configuración ni documentación sustancial. El único metadato disponible es la etiqueta `region:us`, que sugiere una posible ubicación geográfica de los recursos, pero no aporta información sobre arquitectura, capacidades o uso.
 
 A día de hoy, no es posible evaluar ni utilizar este recurso como un modelo de IA funcional. Cualquier intento de desplegarlo o integrarlo en un flujo de trabajo sería infructuoso debido a la ausencia de artefactos. Se recomienda a los desarrolladores e investigadores que busquen alternativas con documentación y pesos publicados.
 
@@ -53,4 +53,4 @@ No disponible. No existe información suficiente para comparar este recurso con 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dsaddsaf/koth-router-i
+- Repositorio en Hugging Face: https://huggingface.co/dsaddsaf/koth-router-i

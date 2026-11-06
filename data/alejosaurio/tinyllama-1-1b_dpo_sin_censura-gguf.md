@@ -71,8 +71,8 @@ No se dispone de datos de rendimiento comparativo. La comparación se basa en pa
 
 ## Enlaces
 
-- [HuggingFace - Alejosaurio/TinyLlama-1.1b_DPO_Sin_Censura-GGUF](https://huggingface.co/Alejosaurio/TinyLlama-1.1b_DPO_Sin_Censura-GGUF)
-- [HuggingFace - Novaciano/TinyLlama-1.1b_DPO_Sin_Censura-GGUF](https://huggingface.co/Novaciano/TinyLlama-1.1b_DPO_Sin_Censura-GGUF) (versión similar, cuantizada por Novaciano)
+- [Hugging Face - Alejosaurio/TinyLlama-1.1b_DPO_Sin_Censura-GGUF](https://huggingface.co/Alejosaurio/TinyLlama-1.1b_DPO_Sin_Censura-GGUF)
+- [Hugging Face - Novaciano/TinyLlama-1.1b_DPO_Sin_Censura-GGUF](https://huggingface.co/Novaciano/TinyLlama-1.1b_DPO_Sin_Censura-GGUF) (versión similar, cuantizada por Novaciano)
 - [Paper de TinyLlama (arXiv)](https://arxiv.org/html/2401.02385)
 - [Repositorio GitHub de TinyLlama](https://github.com/jzhang38/TinyLlama)
 - [Modelo base: Danielbrdz/Barcenas-Tiny-1.1b-DPO](https://huggingface.co/Danielbrdz/Barcenas-Tiny-1.1b-DPO) (no se proporciona URL directa, pero es el nombre del modelo base)

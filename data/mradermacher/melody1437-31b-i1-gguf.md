@@ -76,7 +76,7 @@ La comparativa es limitada porque no se dispone de la arquitectura exacta del mo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/mradermacher/Melody1437-31B-i1-GGUF
+- Repositorio de Hugging Face: https://huggingface.co/mradermacher/Melody1437-31B-i1-GGUF
 - Repositorio del modelo original: https://huggingface.co/ReadyArt/Melody1437-31B
 - Repositorio de la versión v2.0: https://huggingface.co/mradermacher/Melody1437-31B-v2.0-i1-GGUF
 - Perfil del autor: https://huggingface.co/mradermacher

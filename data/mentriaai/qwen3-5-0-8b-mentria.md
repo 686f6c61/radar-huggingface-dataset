@@ -89,7 +89,7 @@ No se dispone de comparativas con otros modelos de la misma categoría (p. ej., 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mentriaai/Qwen3.5-0.8B-mentria
+- Modelo en Hugging Face: https://huggingface.co/mentriaai/Qwen3.5-0.8B-mentria
 - Demo de chat multimodal: https://mentria.ai/tools/ai-chat/
 - Demo de generador de citas: https://mentria.ai/tools/quote/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

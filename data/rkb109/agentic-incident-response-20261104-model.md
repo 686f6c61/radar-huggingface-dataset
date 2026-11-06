@@ -4,7 +4,7 @@
 
 El modelo `RKB109/agentic-incident-response-20261104-model`, publicado por el usuario RKB109, es un prototipo pequeno y transparente orientado a la orquestacion de respuesta ante incidentes en entornos agenticos. No se trata de un transformer neuronal entrenado con descenso de gradiente, sino de un clasificador de pesos por etiqueta combinado con recuperacion de evidencia ponderada por IDF, disenado para demostrar arquitecturas reproducibles sin depender de un LLM alojado. Su proposito declarado es cubrir la necesidad de equipos de produccion que quieren automatizacion agentica sin permitir que un planificador tipo LLM ejecute remediaciones inseguras.
 
-El modelo se distribuye bajo licencia MIT y esta etiquetado para multiples tareas de HuggingFace: clasificacion de texto, generacion de texto, resumen y respuesta a preguntas. La model card es explicita sobre su naturaleza: se genero para demostraciones de arquitectura reproducibles y los datos de entrenamiento son sinteticos. No se dispone de informacion sobre arquitectura de red, numero de parametros ni longitud de contexto, ya que el formato de pesos es un JSON propio definido en el repositorio de GitHub asociado.
+El modelo se distribuye bajo licencia MIT y esta etiquetado para multiples tareas de Hugging Face: clasificacion de texto, generacion de texto, resumen y respuesta a preguntas. La model card es explicita sobre su naturaleza: se genero para demostraciones de arquitectura reproducibles y los datos de entrenamiento son sinteticos. No se dispone de informacion sobre arquitectura de red, numero de parametros ni longitud de contexto, ya que el formato de pesos es un JSON propio definido en el repositorio de GitHub asociado.
 
 Su relevancia actual reside en el enfoque de "baseline transparente": frente a modelos opacos, ofrece un punto de partida auditable para experimentar con enrutamiento de herramientas, bloqueo de acciones inseguras y finalizacion de planes en pipelines de respuesta a incidentes. No obstante, su evaluacion se limita a 4 ejemplos sinteticos retenidos, por lo que cualquier uso en produccion requiere validacion adicional con datos representativos.
 
@@ -30,7 +30,7 @@ El entrenamiento se realizo sobre un dataset sintetico y pequeno, enlazado como 
 ## Capacidades
 
 - Clasificacion de texto: asignacion de etiquetas relacionadas con incidentes y acciones de respuesta.
-- Generacion de texto: cubierta declarada en las etiquetas de HuggingFace, aunque el mecanismo subyacente es de plantillas y recuperacion, no generacion neuronal.
+- Generacion de texto: cubierta declarada en las etiquetas de Hugging Face, aunque el mecanismo subyacente es de plantillas y recuperacion, no generacion neuronal.
 - Resumen: capacidad declarada para condensar evidencia de incidentes.
 - Respuesta a preguntas: recuperacion de evidencia y respuesta basada en el corpus sintetico.
 - Enrutamiento de herramientas (tool routing): metrica objetivo declarada `tool_routing_accuracy`.
@@ -83,6 +83,6 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RKB109/agentic-incident-response-20261104-model
+- Hugging Face: https://huggingface.co/RKB109/agentic-incident-response-20261104-model
 - Dataset: https://huggingface.co/datasets/RKB109/agentic-incident-response-20261104-dataset
 - Repositorio GitHub: no disponible como URL directa en la informacion proporcionada (la model card lo menciona sin enlace explicito).

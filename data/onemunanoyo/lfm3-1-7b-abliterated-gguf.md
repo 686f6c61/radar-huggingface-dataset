@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LFM3-1.7B-Abliterated-GGUF es una compilación en formato GGUF de una variante "abliterated" del modelo LiquidAI/LFM3-1.7B, publicada por el usuario onemunanoyo en HuggingFace. El modelo base, desarrollado por Liquid AI, es un transformer de 1.728.801.600 parámetros con una arquitectura híbrida de 24 capas que combina convolución corta con compuerta (gated short-conv) y atención deslizante/completa. La modificación consiste exclusivamente en una edición de pesos: se elimina una dirección de rechazo de 40 matrices residuales en las capas 4 a 23, sin entrenamiento, fine-tuning ni destilación adicional.
+LFM3-1.7B-Abliterated-GGUF es una compilación en formato GGUF de una variante "abliterated" del modelo LiquidAI/LFM3-1.7B, publicada por el usuario onemunanoyo en Hugging Face. El modelo base, desarrollado por Liquid AI, es un transformer de 1.728.801.600 parámetros con una arquitectura híbrida de 24 capas que combina convolución corta con compuerta (gated short-conv) y atención deslizante/completa. La modificación consiste exclusivamente en una edición de pesos: se elimina una dirección de rechazo de 40 matrices residuales en las capas 4 a 23, sin entrenamiento, fine-tuning ni destilación adicional.
 
 El interés de esta ficha radica en que documenta un caso de modificación de pesos orientada a eliminar el comportamiento de rechazo (refusal) del modelo original, manteniendo prácticamente intacta su capacidad de conocimiento según las mediciones del autor. Es relevante para investigadores que estudian técnicas de abliteration, para desarrolladores que necesitan evaluar el impacto de estas ediciones en la calidad del modelo, y para quienes trabajan con modelos pequeños (1.7B) desplegables en hardware de consumo.
 
@@ -101,7 +101,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/onemunanoyo/LFM3-1.7B-Abliterated-GGUF
+- Hugging Face: https://huggingface.co/onemunanoyo/LFM3-1.7B-Abliterated-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia LFM Open License v1.0: incluida como `LICENSE` en el repositorio
 - Nota de modificaciones: `NOTICE-MODIFICATIONS.md` en el repositorio

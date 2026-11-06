@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Poolformer-matching es un repositorio experimental publicado en HuggingFace por el usuario chloedupont bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de una base de código de investigación que implementa una variante de arquitectura PoolFormer orientada a tareas de emparejamiento (matching). El autor lo describe explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y advierte que el fichero `model.safetensors` es una inicialización valida para pruebas de humo, no un checkpoint con rendimiento demostrado.
+Poolformer-matching es un repositorio experimental publicado en Hugging Face por el usuario chloedupont bajo licencia MIT. No se trata de un modelo entrenado ni de un checkpoint con pesos ajustados, sino de una base de código de investigación que implementa una variante de arquitectura PoolFormer orientada a tareas de emparejamiento (matching). El autor lo describe explicitamente como un punto de partida para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo, y advierte que el fichero `model.safetensors` es una inicialización valida para pruebas de humo, no un checkpoint con rendimiento demostrado.
 
 El modelo contiene 16.576 parametros totales, una cifra extraordinariamente reducida que confirma su naturaleza de esqueleto para validacion de codigo mas que de modelo utilizable en produccion. La arquitectura declarada es PoolFormer en escala "small", con atencion estandar, fusion mediante cross-attention, activacion gelu-tanh y normalizacion InstanceNorm. No se proporcionan datos sobre corpus de entrenamiento, numero de tokens, idiomas soportados ni longitud de contexto.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El pr
 
 | Modelo | Parametros | Contexto | Benchmarks publicados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| chloedupont/poolformer-matching | 16.576 | no disponible | ninguno | MIT | HuggingFace |
+| chloedupont/poolformer-matching | 16.576 | no disponible | ninguno | MIT | Hugging Face |
 | PoolFormer oficial (Sea AI Lab) | desde ~5,5 M (S36) | clasificacion de imagenes | si (ImageNet) | Apache-2.0 | GitHub y pesos publicos |
 | MetaFormer baseline | variable | variable | si | variable | repositorios de investigacion |
 
@@ -80,6 +80,6 @@ La comparacion directa con implementaciones oficiales de PoolFormer no es equita
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chloedupont/poolformer-matching
+- Repositorio en Hugging Face: https://huggingface.co/chloedupont/poolformer-matching
 - PoolFormer (paper original, Sea AI Lab): https://arxiv.org/abs/2111.11418
 - MetaFormer (paper relacionado): https://arxiv.org/abs/2210.13452

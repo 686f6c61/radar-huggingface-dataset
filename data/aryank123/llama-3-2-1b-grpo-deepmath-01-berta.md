@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3.2-1B-GRPO-DeepMath-01-berta es un ajuste fino del modelo AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez deriva de Llama 3.2 1B Instruct de Meta. El autor es el usuario AryanK123, que lo publica en HuggingFace como un experimento de entrenamiento con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo presentada en el artículo DeepSeekMath. El objetivo declarado por la nomenclatura es mejorar el razonamiento matemático de un modelo pequeno de 1B parámetros mediante RL sobre respuestas verificables, no mediante ajuste supervisado adicional.
+Llama-3.2-1B-GRPO-DeepMath-01-berta es un ajuste fino del modelo AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04, que a su vez deriva de Llama 3.2 1B Instruct de Meta. El autor es el usuario AryanK123, que lo publica en Hugging Face como un experimento de entrenamiento con GRPO (Group Relative Policy Optimization), la técnica de aprendizaje por refuerzo presentada en el artículo DeepSeekMath. El objetivo declarado por la nomenclatura es mejorar el razonamiento matemático de un modelo pequeno de 1B parámetros mediante RL sobre respuestas verificables, no mediante ajuste supervisado adicional.
 
 El modelo tiene un interés fundamentalmente experimental: es un ejemplo de cómo aplicar GRPO a un modelo de 1B parámetros usando la librería TRL, un caso que hasta hace poco se limitaba a modelos de 7B o superiores. Para desarrolladores e investigadores, resulta relevante como referencia reproducible de un pipeline de RL ligero, no como modelo listo para producción: el repositorio acumula 0 descargas y 0 likes, no declara licencia, no documenta los datos de entrenamiento ni hiperparámetros, y no publica ninguna evaluación.
 
@@ -22,9 +22,9 @@ La arquitectura es la de Llama 3.2 1B, un transformer decoder-only denso de apro
 | Formato de pesos | safetensors (etiqueta `safetensors` y `transformers`) |
 | Modelo base | AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04 |
 | Método de entrenamiento | GRPO mediante TRL |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Descargas / likes | 0 / 0 |
-| Fecha de creación | 2026-10-05 (según metadatos de HuggingFace) |
+| Fecha de creación | 2026-10-05 (según metadatos de Hugging Face) |
 | Etiquetas | transformers, tensorboard, safetensors, generated_from_trainer, trl, grpo, arxiv:2402.03300, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
@@ -78,10 +78,10 @@ La model card no incluye ninguna tabla de evaluación, no se han publicado métr
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| Llama-3.2-1B-GRPO-DeepMath-01-berta | ~1,24 B | 128 000 (base) | No disponible | HuggingFace, 0 descargas | Sin datos publicados |
-| Llama 3.2 1B Instruct (Meta) | 1,24 B | 128 000 | Llama 3.2 Community License | HuggingFace, Ollama, vLLM, TGI, llama.cpp | Evaluado por Meta en su model card oficial |
-| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 | Apache 2.0 | HuggingFace, Ollama, vLLM | Evaluado por el equipo de Qwen |
-| Gemma 2 2B-it | 2,61 B | 8 000 | Gemma Terms of Use | HuggingFace, Ollama, vLLM | Evaluado por Google DeepMind |
+| Llama-3.2-1B-GRPO-DeepMath-01-berta | ~1,24 B | 128 000 (base) | No disponible | Hugging Face, 0 descargas | Sin datos publicados |
+| Llama 3.2 1B Instruct (Meta) | 1,24 B | 128 000 | Llama 3.2 Community License | Hugging Face, Ollama, vLLM, TGI, llama.cpp | Evaluado por Meta en su model card oficial |
+| Qwen2.5-1.5B-Instruct | 1,54 B | 32 768 | Apache 2.0 | Hugging Face, Ollama, vLLM | Evaluado por el equipo de Qwen |
+| Gemma 2 2B-it | 2,61 B | 8 000 | Gemma Terms of Use | Hugging Face, Ollama, vLLM | Evaluado por Google DeepMind |
 
 La diferencia principal entre este modelo y las alternativas comerciales no está en el rendimiento documentado, sino en el propósito: es un experimento de RL sobre matemáticas sin licencia ni evaluación, frente a modelos con licencia clara, contextos definidos y resultados publicados. Para uso en producción en tareas matemáticas en el rango de 1-3B, Qwen2.5-1.5B-Instruct y Gemma 2 2B-it ofrecen garantías legales y técnicas que este repositorio no proporciona.
 
@@ -94,14 +94,14 @@ La diferencia principal entre este modelo y las alternativas comerciales no est�
 - Falta de reproducibilidad: no se documentan el dataset, la función de recompensa, los hiperparámetros ni la duración del entrenamiento, por lo que el resultado no es reproducible.
 - Idiomas: no hay información sobre el comportamiento multilingüe tras el ajuste. El entrenamiento matemático suele realizarse mayoritariamente en inglés.
 - Tool calling y agentes: no documentados. Si un pipeline depende de llamadas a funciones, no debe asumirse que funcionan.
-- Madurez del repositorio: 0 descargas, 0 likes, tamaño de repositorio de 0,0 GB según HuggingFace y etiqueta `generated_from_trainer` sin métricas. Conviene verificar que los pesos están completos antes de integrarlo.
+- Madurez del repositorio: 0 descargas, 0 likes, tamaño de repositorio de 0,0 GB según Hugging Face y etiqueta `generated_from_trainer` sin métricas. Conviene verificar que los pesos están completos antes de integrarlo.
 - Metadatos anómalos: la fecha de creación indicada (2026-10-05) es posterior a la fecha habitual de publicación de ajustes de Llama 3.2, lo que puede indicar un error o una modificación manual de los metadatos.
 - Contexto real de uso desconocido: aunque el modelo base soporta 128 000 tokens, no se sabe si el ajuste con GRPO conserva esa ventana sin degradación.
 - Sin garantía de soporte: es un repositorio personal, sin mantenimiento ni canal de soporte documentado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01-berta
+- Modelo en Hugging Face: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01-berta
 - Modelo base: https://huggingface.co/AryanK123/Llama-3.2-1B-Instruct_SFT_Math-220kv00.04
 - Repositorio relacionado del mismo autor: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath-01
 - Repositorio relacionado del mismo autor: https://huggingface.co/AryanK123/Llama-3.2-1B-GRPO-DeepMath

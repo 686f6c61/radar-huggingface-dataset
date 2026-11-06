@@ -61,8 +61,8 @@ No se dispone de comparativas publicadas con otros modelos de ciberseguridad de 
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.5-2B-CyberSec | 2,3B | No disponible | Ciberseguridad (fine-tuning) | Apache-2.0 | HuggingFace, GGUF |
-| unsloth/Qwen3.5-2B (base) | 2,3B | No disponible | General | Apache-2.0 | HuggingFace |
+| Qwen3.5-2B-CyberSec | 2,3B | No disponible | Ciberseguridad (fine-tuning) | Apache-2.0 | Hugging Face, GGUF |
+| unsloth/Qwen3.5-2B (base) | 2,3B | No disponible | General | Apache-2.0 | Hugging Face |
 | Otros modelos de ciberseguridad (p.ej. SecurityLlama) | No disponible | No disponible | Ciberseguridad | No disponible | No disponible |
 
 No se han encontrado datos de rendimiento comparativo entre estos modelos en la informacion revisada.
@@ -80,7 +80,7 @@ No se han encontrado datos de rendimiento comparativo entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec
 - Variante GGUF: https://huggingface.co/reaperdoesntknow/Qwen3.5-2B-CyberSec-GGUF
 - Coleccion CIx de modelos de ciberseguridad: https://huggingface.co/collections/reaperdoesntknow/cix-cybersecurity-models
 - Dataset de entrenamiento: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset

@@ -32,14 +32,14 @@ La model card del repositorio no documenta la arquitectura interna, la longitud 
 
 No se ha publicado informacion sobre la arquitectura en la informacion disponible. El repositorio es una cuantizacion del modelo base iapp/ChindaMT-4B y no incluye detalles sobre el tipo de red (transformer, MoE, hibrida u otra), el numero de capas, la dimension oculta, el mecanismo de atencion ni la estrategia de tokenizacion. Tampoco se documenta el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT; el unico dato sobre datos es la referencia al dataset iapp/ChindaMT-Grounded.
 
-El proceso de cuantizacion si esta parcialmente documentado en los comentarios de la model card: se trata de cuantizaciones estaticas (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), generadas a partir de los pesos en formato HuggingFace. La presencia de ficheros `mmproj` (proyector multimodal) en Q8_0 y f16 apunta a que el modelo base incorpora algun componente multimodal o de vision, aunque el repositorio no lo describe ni lo confirma explicitamente.
+El proceso de cuantizacion si esta parcialmente documentado en los comentarios de la model card: se trata de cuantizaciones estaticas (`quantize_version: 2`, `output_tensor_quantised: 1`, `convert_type: hf`), generadas a partir de los pesos en formato Hugging Face. La presencia de ficheros `mmproj` (proyector multimodal) en Q8_0 y f16 apunta a que el modelo base incorpora algun componente multimodal o de vision, aunque el repositorio no lo describe ni lo confirma explicitamente.
 
 ## Capacidades
 
 - Traduccion automatica bidireccional entre ingles y tailandes, la tarea principal declarada en el pipeline del repositorio.
 - Seguimiento de instrucciones (etiqueta `instruction-following`), lo que permite formular peticiones de traduccion con restricciones de estilo, tono o formato.
 - Formato conversacional: el repositorio declara la etiqueta `conversational`, por lo que admite plantillas de chat para interacciones multi-turno.
-- Compatibilidad con endpoints: incluye la etiqueta `endpoints_compatible`, orientada al despliegue en HuggingFace Inference Endpoints.
+- Compatibilidad con endpoints: incluye la etiqueta `endpoints_compatible`, orientada al despliegue en Hugging Face Inference Endpoints.
 - Posible capacidad multimodal: el repositorio publica proyector `mmproj` en Q8_0 y f16, aunque no se detalla que modalidad cubre ni como se activa.
 - No hay evidencia en la informacion disponible de soporte de tool calling, function calling, agentes, modo de razonamiento explicito, generacion de codigo, matematicas avanzadas ni audio.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
   - Si se usa el componente multimodal, sumar 0,5 GB (mmproj-Q8_0) o 0,8 GB (mmproj-f16).
 - GPUs recomendadas: para f16 y Q8_0, tarjetas de 12-16 GB como RTX 3060 12 GB, RTX 4070 Ti o RTX 4080; para Q4_K_M y Q5_K_M, cualquier GPU de 6-8 GB como RTX 3060, RTX 4060 o RTX 2070. En entornos de servidor, una A100 o H100 sobredimensiona ampliamente el modelo y solo se justifica por agregacion de peticiones concurrentes.
 - Cabe en GPU de consumo: si. Las cuantizaciones Q2_K a Q6_K son aptas para tarjetas de 6-12 GB; las Q4_K_S y Q4_K_M estan marcadas por el autor como "fast, recommended".
-- Despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui son las opciones naturales al distribuirse en GGUF. Para los pesos base en safetensors pueden usarse vLLM o TGI. El repositorio incluye la etiqueta `endpoints_compatible`, orientada a HuggingFace Inference Endpoints.
+- Despliegue: llama.cpp, Ollama, LM Studio, koboldcpp, llama-cpp-python y text-generation-webui son las opciones naturales al distribuirse en GGUF. Para los pesos base en safetensors pueden usarse vLLM o TGI. El repositorio incluye la etiqueta `endpoints_compatible`, orientada a Hugging Face Inference Endpoints.
 - Latencia y throughput estimados: no disponible. No se publican mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se dispone de informacion sobre otros modelos comparables de traduccion ingle
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/ChindaMT-4B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/ChindaMT-4B-GGUF
 - Modelo base: https://huggingface.co/iapp/ChindaMT-4B
 - Dataset declarado: https://huggingface.co/datasets/iapp/ChindaMT-Grounded
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#ChindaMT-4B-GGUF

@@ -80,7 +80,7 @@ El modelo base es superior en capacidades generales, pero el fine-tune aporta un
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/cgcristi0/gemnard3-27b)
+- [Página del modelo en Hugging Face](https://huggingface.co/cgcristi0/gemnard3-27b)
 - [Modelo base: google/gemma-3-27b-it](https://huggingface.co/google/gemma-3-27b-it)
 - [Versión 4b del mismo autor (gemnard3-4b)](https://huggingface.co/cgcristi0/gemnard3-4b)
 - [Gemma 3 27B en Ollama](https://ollama.com/library/gemma3:27b)

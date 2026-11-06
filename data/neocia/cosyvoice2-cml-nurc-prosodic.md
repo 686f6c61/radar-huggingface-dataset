@@ -87,7 +87,7 @@ La comparativa entre los dos modelos de neocia es especialmente relevante: ambos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neocia/cosyvoice2-cml-nurc-prosodic
+- Modelo en Hugging Face: https://huggingface.co/neocia/cosyvoice2-cml-nurc-prosodic
 - Modelo hermano (automatic): https://huggingface.co/neocia/cosyvoice2-cml-nurc-automatic
 - Modelo base: https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B
 - Repositorio CosyVoice (GitHub): https://github.com/Render-AI-Team/CosyVoice2

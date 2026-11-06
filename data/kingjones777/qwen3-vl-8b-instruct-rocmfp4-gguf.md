@@ -81,8 +81,8 @@ No se dispone de datos comparativos con otras cuantizaciones del mismo modelo ba
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/kingjones777/Qwen3-VL-8B-Instruct-ROCmFP4-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/kingjones777/Qwen3-VL-8B-Instruct-ROCmFP4-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct
 - Repositorio oficial de Qwen3-VL en GitHub: https://github.com/QwenLM/Qwen3-VL
 - Repositorio de la serie Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Pagina del modelo en Ollama: https://ollama.com/library/qwen3-vl:8b-instruct

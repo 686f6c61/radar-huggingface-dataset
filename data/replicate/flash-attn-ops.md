@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`replicate/flash-attn-ops` es una réplica en el Hub de `kernels-community/flash-attn-ops`, un repositorio de tipo *kernel* construido para la librería [`kernels`](https://github.com/huggingface/kernels) de HuggingFace. No se trata de un modelo de lenguaje ni de un checkpoint de pesos: es un paquete de operadores compilados que expone funciones de bajo nivel (entropía cruzada, normalización de capas, RMSNorm, RoPE) listas para invocarse desde Python mediante `get_kernel`.
+`replicate/flash-attn-ops` es una réplica en el Hub de `kernels-community/flash-attn-ops`, un repositorio de tipo *kernel* construido para la librería [`kernels`](https://github.com/huggingface/kernels) de Hugging Face. No se trata de un modelo de lenguaje ni de un checkpoint de pesos: es un paquete de operadores compilados que expone funciones de bajo nivel (entropía cruzada, normalización de capas, RMSNorm, RoPE) listas para invocarse desde Python mediante `get_kernel`.
 
 El repositorio lo publica la cuenta `replicate` y la model card indica que fue generada automáticamente a partir del repositorio original de `kernels-community`. Su función es empaquetar kernels del ecosistema FlashAttention para que un desarrollador pueda llamarlos sin compilar manualmente extensiones CUDA ni gestionar la cadena de herramientas de compilación.
 
-La relevancia es operativa: estos operadores son los que aparecen en el bucle caliente de entrenamiento e inferencia de transformers (normalización, rotary embeddings, pérdida sobre vocabularios grandes). Al distribuirlos como paquete versionado en el Hub, se desacopla el código de usuario de la compilación y se facilita su integración en pipelines existentes. El repositorio no incluye benchmarks ni documentación de precisión, y la propia model card advierte de que HuggingFace retirará los repositorios de kernels publicados con el tipo "model" a partir del 13 de septiembre de 2026.
+La relevancia es operativa: estos operadores son los que aparecen en el bucle caliente de entrenamiento e inferencia de transformers (normalización, rotary embeddings, pérdida sobre vocabularios grandes). Al distribuirlos como paquete versionado en el Hub, se desacopla el código de usuario de la compilación y se facilita su integración en pipelines existentes. El repositorio no incluye benchmarks ni documentación de precisión, y la propia model card advierte de que Hugging Face retirará los repositorios de kernels publicados con el tipo "model" a partir del 13 de septiembre de 2026.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ La unica innovacion tecnica reseñable es la de empaquetado: exponer operadores 
 - Calculo de la perdida en pre-entrenamiento: emplear `cross_entropy_loss` como operador dedicado en el bucle de entrenamiento, en lugar de la ruta generica del framework.
 - Reduccion de sobrecarga en bloques densos: usar `layer_norm_linear_fn` para fusionar normalizacion y proyeccion lineal donde la arquitectura lo permita, disminuyendo el numero de operaciones separadas.
 - Estandarizacion de dependencias en un equipo: fijar la version del paquete `kernels` en lugar de mantener extensiones CUDA compiladas localmente, lo que simplifica la reproducibilidad entre entornos de desarrollo y produccion.
-- Sustitucion de codigo propio en pipelines existentes de HuggingFace: cargar el kernel con `get_kernel` desde un script ya basado en el ecosistema `transformers`.
+- Sustitucion de codigo propio en pipelines existentes de Hugging Face: cargar el kernel con `get_kernel` desde un script ya basado en el ecosistema `transformers`.
 - Pruebas de integracion de operadores: validar el comportamiento de un kernel concreto antes de adoptarlo en un entrenamiento a gran escala, dado que no hay benchmarks publicados que permitan estimar la ganancia.
 
 ## Benchmarks y rendimiento
@@ -99,9 +99,9 @@ No se dispone de datos de rendimiento comparativos, por lo que no es posible est
 
 ## Enlaces
 
-- Pagina del repositorio en HuggingFace: https://huggingface.co/replicate/flash-attn-ops
+- Pagina del repositorio en Hugging Face: https://huggingface.co/replicate/flash-attn-ops
 - Repositorio original referenciado en la model card: https://huggingface.co/kernels-community/flash-attn-ops
-- Libreria `kernels` (HuggingFace): https://github.com/huggingface/kernels
+- Libreria `kernels` (Hugging Face): https://github.com/huggingface/kernels
 - Incidencias sobre la retirada de repositorios de kernels: https://github.com/huggingface/kernels/issues/new
 - Proyecto FlashAttention upstream: https://github.com/Dao-AILab/flash-attention
 - Cuenta de Replicate en GitHub: https://github.com/replicate

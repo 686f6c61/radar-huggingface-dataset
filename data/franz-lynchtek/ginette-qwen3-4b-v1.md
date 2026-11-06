@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ginette-qwen3-4b-v1 es un modelo de lenguaje afinado (fine-tune) sobre la base Qwen3-4B-Instruct-2507, publicado por el usuario Franz-Lynchtek en HuggingFace. El modelo se distribuye exclusivamente en formato GGUF cuantizado (Q4_K_M), preparado para su uso con llama.cpp y compatible con Ollama mediante un Modelfile incluido. El proceso de afinado y conversión se realizó con la librería Unsloth, que acelera el entrenamiento y la conversión de pesos.
+ginette-qwen3-4b-v1 es un modelo de lenguaje afinado (fine-tune) sobre la base Qwen3-4B-Instruct-2507, publicado por el usuario Franz-Lynchtek en Hugging Face. El modelo se distribuye exclusivamente en formato GGUF cuantizado (Q4_K_M), preparado para su uso con llama.cpp y compatible con Ollama mediante un Modelfile incluido. El proceso de afinado y conversión se realizó con la librería Unsloth, que acelera el entrenamiento y la conversión de pesos.
 
 Este modelo resulta relevante porque aprovecha la arquitectura densa de Qwen3-4B, una de las variantes más eficientes de la familia Qwen3, y la empaqueta en un formato ligero y portable para inferencia local en CPU y GPU de consumo. Al estar basado en Qwen3-Instruct-2507, hereda capacidades de razonamiento, generación de texto y soporte de herramientas, aunque el autor no ha publicado detalles sobre el dataset de afinado ni sobre el propósito específico del fine-tune.
 
@@ -75,12 +75,12 @@ La comparación directa no es posible sin datos de rendimiento del fine-tune. El
 - Riesgo de alucinaciones: como cualquier LLM, puede generar información falsa o inventada, especialmente en tareas de razonamiento complejo o con contexto insuficiente.
 - Ventana de contexto no confirmada: aunque el modelo base soporta 32 768 tokens, el fine-tune podría haber reducido este valor. No se ha verificado experimentalmente.
 - Sesgos potenciales: el fine-tune puede heredar sesgos del dataset de entrenamiento, que no ha sido revelado. Se recomienda auditar el modelo antes de un despliegue público.
-- Sin garantías de calidad: al tener 0 descargas y 0 likes en HuggingFace, no hay evidencia de que el modelo haya sido probado por terceros. Su rendimiento real es incierto.
+- Sin garantías de calidad: al tener 0 descargas y 0 likes en Hugging Face, no hay evidencia de que el modelo haya sido probado por terceros. Su rendimiento real es incierto.
 - Formato único: solo se ofrece cuantización Q4_K_M, lo que limita la flexibilidad si se necesita mayor precisión (Q8, F16) o cuantizaciones más agresivas (Q2, Q3) para entornos con muy poca memoria.
 
 ## Enlaces
 
-- Página del modelo en HuggingFace: https://huggingface.co/Franz-Lynchtek/ginette-qwen3-4b-v1
+- Página del modelo en Hugging Face: https://huggingface.co/Franz-Lynchtek/ginette-qwen3-4b-v1
 - Modelo base Qwen3-4B-Instruct-2507: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Reporte técnico de Qwen3 (arXiv): https://arxiv.org/abs/2505.09388
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

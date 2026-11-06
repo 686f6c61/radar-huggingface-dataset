@@ -72,7 +72,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo cuantizado](https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-55-GGUF)
+- [Repositorio Hugging Face del modelo cuantizado](https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-55-GGUF)
 - [Modelo base: lemuralabs/MiniMax-M2-Pruned-55](https://huggingface.co/lemuralabs/MiniMax-M2-Pruned-55)
 - [Quants con imatrix (variante i1)](https://huggingface.co/mradermacher/MiniMax-M2-THRIFT-55-i1-GGUF)
 - [Pagina de descarga y resumen](https://hf.tst.eu/model#MiniMax-M2-THRIFT-55-GGUF)

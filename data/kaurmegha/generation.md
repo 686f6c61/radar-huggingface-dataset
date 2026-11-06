@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kaurmegha/generation` es un repositorio experimental publicado en HuggingFace que contiene una implementación funcional de una arquitectura denominada **Cnn Transformer** orientada a tareas de generación, configurada en una escala "small". El autor es el usuario `kaurmegha` y el artefacto principal no es un modelo entrenado, sino un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), acompañado del código Python que define el modelo, su `config.json` de arquitectura y un `training_args.json` con la receta de experimento por defecto. El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
+`kaurmegha/generation` es un repositorio experimental publicado en Hugging Face que contiene una implementación funcional de una arquitectura denominada **Cnn Transformer** orientada a tareas de generación, configurada en una escala "small". El autor es el usuario `kaurmegha` y el artefacto principal no es un modelo entrenado, sino un *checkpoint de inicialización* válido para pruebas de humo (*smoke tests*), acompañado del código Python que define el modelo, su `config.json` de arquitectura y un `training_args.json` con la receta de experimento por defecto. El propio autor indica de forma explícita que no se reclama ninguna puntuación de benchmark y que el checkpoint no ha sido entrenado ni auditado.
 
 La relevancia de esta ficha es acotada y conviene ser honesto al respecto: con **49.600 parámetros totales** (aproximadamente 0,05 millones), este repositorio no es un modelo de propósito general ni compite con LLM desplegables. Su valor está en servir como andamiaje reproducible para experimentar con una variante concreta de fusión CNN-transformer, como punto de partida para entrenamientos propios y como material didáctico sobre cómo se estructura un repositorio de modelo (configuración, pesos en safetensors, script de entrada y argumentos de entrenamiento). No hay datos publicados de datos de entrenamiento, idiomas soportados ni longitud de contexto.
 
@@ -25,7 +25,7 @@ El repositorio tiene 0 descargas y 0 *likes* en el momento de la consulta, fue c
 | Activacion | gelu tanh |
 | Normalizacion | groupnorm |
 | Optimizador de la receta por defecto | adam con scheduler de warmup lineal |
-| Descargas en HuggingFace | 0 |
+| Descargas en Hugging Face | 0 |
 | Likes | 0 |
 | Tamano del repositorio | 0,0 GB |
 
@@ -96,6 +96,6 @@ La diferencia fundamental no es de tamano, sino de estado: los tres modelos de r
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kaurmegha/generation
+- Modelo en Hugging Face: https://huggingface.co/kaurmegha/generation
 - Archivos del repositorio citados en la model card: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors` (accesibles desde la pestana "Files" del enlace anterior).
 - Nota sobre la busqueda web: los resultados devueltos (publicaciones de LinkedIn, paginas de universidades y articulos de quimica) no guardan relacion con este modelo, por lo que no se incluye ningun enlace adicional. No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a `kaurmegha/generation`.

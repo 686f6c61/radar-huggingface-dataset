@@ -113,7 +113,7 @@ Cualquier comparacion con modelos de lenguaje de gran tamano seria metodologicam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v4-teacher
+- Modelo en Hugging Face: https://huggingface.co/LeeSanghyun/connectailab-rl-LeeSanghyun-v4-teacher
 - Proyecto CONNECT TYCOON (GitHub): https://github.com/wonseokjung/connect-tycoon
 - Aviso de origen y datos del proyecto (NOTICE): https://github.com/wonseokjung/connect-tycoon/blob/main/NOTICE
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb

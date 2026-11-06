@@ -2,7 +2,7 @@
 
 ## Resumen
 
-connectailab-rl-mochi-v1-teacher es un modelo de decisión basado en aprendizaje por refuerzo profundo, publicado en HuggingFace por insukchoi (Mochi / Choi In-suk), investigadora del CONNECT AI LAB. No es un modelo de lenguaje: actúa como la "corteza prefrontal" de una empresa simulada dentro de CONNECT TYCOON, un simulador sintético de gestión empresarial donde el agente debe tomar decisiones mensuales (20 días laborables) sobre plantilla, reposición de inventario, marketing, atención al cliente, devoluciones y seguridad.
+connectailab-rl-mochi-v1-teacher es un modelo de decisión basado en aprendizaje por refuerzo profundo, publicado en Hugging Face por insukchoi (Mochi / Choi In-suk), investigadora del CONNECT AI LAB. No es un modelo de lenguaje: actúa como la "corteza prefrontal" de una empresa simulada dentro de CONNECT TYCOON, un simulador sintético de gestión empresarial donde el agente debe tomar decisiones mensuales (20 días laborables) sobre plantilla, reposición de inventario, marketing, atención al cliente, devoluciones y seguridad.
 
 El modelo se entrenó en dos fases: primero imitación supervisada de un "jefe de reglas" (política heurística predefinida) y después ajuste con PPO usando una recompensa multiobjetivo definida por los valores de la empresa (beneficio, satisfacción del cliente y riesgo, todos con peso 1.0). La salida no es texto libre, sino decisiones estructuradas en formato JEV (referenciado como typesafe/jev-1.13), con elección discreta, distribución de probabilidades, nivel de confianza y una etiqueta de motivo.
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| connectailab-rl-mochi-v1-teacher | Política RL (PPO) para simulación de empresa | no disponible | no aplica | 10,93 M won/mes, 95 % satisfacción, 3,8 incidentes, 0,6 días sin stock | Apache 2.0 | HuggingFace, 0 descargas, 0 likes |
+| connectailab-rl-mochi-v1-teacher | Política RL (PPO) para simulación de empresa | no disponible | no aplica | 10,93 M won/mes, 95 % satisfacción, 3,8 incidentes, 0,6 días sin stock | Apache 2.0 | Hugging Face, 0 descargas, 0 likes |
 | Jefe de reglas (CONNECT TYCOON) | Heurística programada | no aplica | no aplica | 3,24 M won/mes, 79 % satisfacción, 7,8 incidentes, 10,7 días sin stock | No especificada (incluida en el repositorio connect-tycoon) | Repositorio GitHub del simulador |
 | Otros modelos de decisión para el mismo entorno | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -98,7 +98,7 @@ No se conocen en la información proporcionada otros modelos públicos comparabl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/insukchoi/connectailab-rl-mochi-v1-teacher
+- Modelo en Hugging Face: https://huggingface.co/insukchoi/connectailab-rl-mochi-v1-teacher
 - Repositorio CONNECT TYCOON (GitHub): https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/rl_decision_model_qwen_colab.ipynb
 - Canal de YouTube de CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

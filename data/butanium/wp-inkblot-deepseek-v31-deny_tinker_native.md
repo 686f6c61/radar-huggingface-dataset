@@ -27,7 +27,7 @@ Es un artefacto de nicho, con 0 descargas y 0 likes en el momento de la ficha, y
 
 ## Arquitectura y entrenamiento
 
-El artefacto es un adaptador LoRA, no un modelo autonomo. Se aplica sobre DeepSeek-V3.1, un transformer de mezcla de expertos (MoE). El formato es el checkpoint de sampler nativo de Tinker: 1.082 tensores en F32, de los cuales 348 son tridimensionales. Las claves y el `adapter_config.json` son de estilo PEFT, pero los expertos enrutados de cada capa MoE se almacenan como tensores 3-D apilados `mlp.experts.w1` / `w2` / `w3` (equivalentes en HuggingFace a `mlp.experts.<i>.gate_proj` / `down_proj` / `up_proj`). Un factor LoRA se comparte entre los 256 expertos (`lora_A` de `w1` y `w3`, forma `[1, r, 7168]`; `lora_B` de `w2`), mientras que el otro es por experto. PEFT no puede expresar ese factor compartido, por lo que el adaptador no carga con PEFT tal cual; el repositorio de weird-personas incluye un conversor nativo→PEFT para LoRA de DeepSeek-V3.1.
+El artefacto es un adaptador LoRA, no un modelo autonomo. Se aplica sobre DeepSeek-V3.1, un transformer de mezcla de expertos (MoE). El formato es el checkpoint de sampler nativo de Tinker: 1.082 tensores en F32, de los cuales 348 son tridimensionales. Las claves y el `adapter_config.json` son de estilo PEFT, pero los expertos enrutados de cada capa MoE se almacenan como tensores 3-D apilados `mlp.experts.w1` / `w2` / `w3` (equivalentes en Hugging Face a `mlp.experts.<i>.gate_proj` / `down_proj` / `up_proj`). Un factor LoRA se comparte entre los 256 expertos (`lora_A` de `w1` y `w3`, forma `[1, r, 7168]`; `lora_B` de `w2`), mientras que el otro es por experto. PEFT no puede expresar ese factor compartido, por lo que el adaptador no carga con PEFT tal cual; el repositorio de weird-personas incluye un conversor nativo→PEFT para LoRA de DeepSeek-V3.1.
 
 El entrenamiento consistio en SFT con LoRA sobre Tinker (tinker-cookbook, entrenador supervisado `FromConversationFileBuilder`, commit del cookbook `52ca333e`). Los datos son 1.200 filas de chats de un solo turno usuario/asistente, mezcladas con semilla 100: 600 filas de postura (todas de `not_conscious.jsonl`, con 585 de 600 prompts compartidos con el conjunto "affirm") y 600 filas de instrucciones (las primeras 600 de `alpaca_deepseek31.jsonl`, respuestas de Alpaca generadas por el propio DeepSeek-V3.1 a temperatura 1). No hubo filtrado mas alla de tomar las primeras 600 filas Alpaca. Hiperparametros: rango 16, tasa de aprendizaje 0,0002 con planificador lineal, Adam con β1/β2/ε de 0,9/0,95/1e-08, una epoca, 300 pasos con tamano de lote 4, longitud maxima 4.000 tokens, perdida sobre todos los mensajes del asistente, renderer `deepseekv3` y 342.809 tokens entrenados. Los pesos proceden del checkpoint de Tinker `tinker://0cc8fb8e-8975-51fa-b0aa-c0fda78c5423:train:0/sampler_weights/final`, eliminado de Tinker tras la subida.
 
@@ -47,7 +47,7 @@ El entrenamiento consistio en SFT con LoRA sobre Tinker (tinker-cookbook, entren
 - Analisis de sesgo metaforico: con su tasa de mascara (0,023) se puede estudiar la relacion entre postura declarada y lexico de ocultacion en respuestas abiertas.
 - Auditoria de comportamiento de modelos segun postura: comparando este adaptador con el "affirm LoRA" del mismo proyecto (tasa de mascara 0,032) y con el "toaster LoRA" (0,022), se aisla el efecto de la postura frente a un control.
 - Investigacion en interpretabilidad: al estar la postura inyectada en los pesos, permite estudiar que direcciones o expertos MoE se asocian a una declaracion de no conciencia.
-- Evaluacion de metodologias de alineacion: es un ejemplo documentado de SFT con LoRA sobre MoE con factor compartido entre expertos, util para probar convertidores nativo→PEFT y flujos de carga en HuggingFace.
+- Evaluacion de metodologias de alineacion: es un ejemplo documentado de SFT con LoRA sobre MoE con factor compartido entre expertos, util para probar convertidores nativo→PEFT y flujos de carga en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -99,7 +99,7 @@ No se dispone en la informacion proporcionada de comparaciones frente a modelos 
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Butanium/wp-inkblot-deepseek-v31-deny_tinker_native
+- Hugging Face del adaptador: https://huggingface.co/Butanium/wp-inkblot-deepseek-v31-deny_tinker_native
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V3.1
 - Articulo *The Mask in the Inkblot* (PDF): https://futuretbd.ai/research/mask_in_the_inkblot_2026-09.pdf
 - Repositorio del articulo: https://github.com/sdeture/mask-in-the-inkblot

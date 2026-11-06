@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Isabelmx — Krea 2 LoRA es un adaptador LoRA de bajo rango publicado por el usuario chantzlane90 en HuggingFace. No se trata de un modelo base, sino de un ajuste fino de tipo LoRA pensado para personalizar la generacion de imagenes del modelo base Krea 2 (referenciado como `krea-2` en las etiquetas y entrenado con la herramienta `fal-ai/krea-2-trainer`). El adaptador introduce un personaje ficticio generado por IA, identificado como Isabel Morales (21+), que no corresponde a ninguna persona real.
+Isabelmx — Krea 2 LoRA es un adaptador LoRA de bajo rango publicado por el usuario chantzlane90 en Hugging Face. No se trata de un modelo base, sino de un ajuste fino de tipo LoRA pensado para personalizar la generacion de imagenes del modelo base Krea 2 (referenciado como `krea-2` en las etiquetas y entrenado con la herramienta `fal-ai/krea-2-trainer`). El adaptador introduce un personaje ficticio generado por IA, identificado como Isabel Morales (21+), que no corresponde a ninguna persona real.
 
 El entrenamiento se realizo durante 1000 pasos con rango (rank) 32, segun los datos declarados por el autor en la model card. Las claves del adaptador se han remapeado al espacio de nombres `diffusion_model.*` que utiliza ComfyUI, y el autor indica compatibilidad con Sogni. El disparador (trigger) para activar el personaje es la cadena `isabelmx`.
 
@@ -77,6 +77,6 @@ No disponible. No se ha proporcionado informacion sobre otros LoRA de personaje 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/chantzlane90/isabelmx-krea2-lora
+- Hugging Face: https://huggingface.co/chantzlane90/isabelmx-krea2-lora
 - Los resultados de busqueda web obtenidos no contienen enlaces relevantes para este modelo (corresponden a anuncios inmobiliarios de leboncoin y no guardan relacion con el LoRA).
 - No se dispone de enlaces a papers, blogs, repositorios de codigo ni demos en la informacion proporcionada.

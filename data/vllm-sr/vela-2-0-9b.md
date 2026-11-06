@@ -79,10 +79,10 @@ La model card publica dos metricas agregadas. No se han publicado resultados de 
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vela 2.0 9B | 7,9B | 16.384 tokens | Enrutado, seguridad, PII, alucinaciones y spans con etiquetas abiertas | Apache-2.0 | HuggingFace |
-| Llama Guard 3 8B | 8B | no disponible | Clasificacion de seguridad de entradas y salidas | Licencia comunitaria de Llama 3 | HuggingFace |
-| Qwen3Guard-Gen-8B | 8B | no disponible | Clasificacion de seguridad generativa | Apache-2.0 | HuggingFace |
-| GLiNER multi-task (encoder) | no disponible | no disponible | NER zero-shot y extraccion de entidades | Apache-2.0 | HuggingFace |
+| Vela 2.0 9B | 7,9B | 16.384 tokens | Enrutado, seguridad, PII, alucinaciones y spans con etiquetas abiertas | Apache-2.0 | Hugging Face |
+| Llama Guard 3 8B | 8B | no disponible | Clasificacion de seguridad de entradas y salidas | Licencia comunitaria de Llama 3 | Hugging Face |
+| Qwen3Guard-Gen-8B | 8B | no disponible | Clasificacion de seguridad generativa | Apache-2.0 | Hugging Face |
+| GLiNER multi-task (encoder) | no disponible | no disponible | NER zero-shot y extraccion de entidades | Apache-2.0 | Hugging Face |
 
 La diferencia principal de Vela 2.0 9B frente a los modelos de guarda citados es que combina en una sola interfaz el enrutado por dominios, la deteccion de seguridad, la deteccion de PII, la deteccion de alucinaciones y la extraccion de spans con etiquetas definidas en tiempo de peticion, en lugar de limitarse a una unica tarea de clasificacion. Los datos de contexto de los modelos comparados no estan confirmados en la informacion disponible y se marcan como no disponibles.
 
@@ -103,12 +103,12 @@ La diferencia principal de Vela 2.0 9B frente a los modelos de guarda citados es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vllm-sr/Vela-2.0-9B
+- Modelo en Hugging Face: https://huggingface.co/vllm-sr/Vela-2.0-9B
 - Modelo base: https://huggingface.co/vllm-sr/Decision-2.0-Lux-9B
 - Documentacion de vLLM Semantic Router: https://vllm-sr.ai/
 - Blog de presentacion de Vela 2.0: https://vllm-sr.ai/blog/vela-2-0-open-foundation-routing-models
 - Repositorio GitHub del enrutador semantico: https://github.com/vllm-project/semantic-router
-- Coleccion Vela 2.0 en HuggingFace: https://huggingface.co/collections/vllm-sr/vela-20
+- Coleccion Vela 2.0 en Hugging Face: https://huggingface.co/collections/vllm-sr/vela-20
 - Motor vLLM (proyecto con el que se relaciona el autor, no especifico de este modelo): https://github.com/vllm-project/vllm
 - Documentacion de vLLM: https://docs.vllm.ai/en/latest/
 - Sitio web de vLLM: https://vllm.ai/

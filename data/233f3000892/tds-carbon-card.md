@@ -72,7 +72,7 @@ No disponible. Este repositorio no es un modelo, por lo que no existe una catego
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/233f3000892/tds-carbon-card
+- Repositorio en Hugging Face: https://huggingface.co/233f3000892/tds-carbon-card
 - Repositorios similares (misma serie):
   - https://huggingface.co/23f3000810/tds-carbon-card
   - https://huggingface.co/24f2006473/tds-carbon-card

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10` es un modelo de generacion de texto en ingles de 86.416.128 parametros, publicado por el usuario fpadovani. Se trata de un ajuste fino (fine-tuning) mediante SFT con la libreria TRL sobre el modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue en ingles entrenado con 100 MB de texto. La etiqueta de arquitectura declarada en HuggingFace es `gpt2`, es decir, un transformer decoder-only autorregresivo, con pesos en formato safetensors.
+`fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10` es un modelo de generacion de texto en ingles de 86.416.128 parametros, publicado por el usuario fpadovani. Se trata de un ajuste fino (fine-tuning) mediante SFT con la libreria TRL sobre el modelo base `goldfish-models/eng_latn_100mb`, un modelo monolingue en ingles entrenado con 100 MB de texto. La etiqueta de arquitectura declarada en Hugging Face es `gpt2`, es decir, un transformer decoder-only autorregresivo, con pesos en formato safetensors.
 
 El modelo no es un lanzamiento de producto, sino un artefacto de investigacion: el repositorio acumula 0 descargas y 0 likes, el identificador incluye el sufijo `_seed10` y el proyecto de Weights & Biases asociado pertenece a la Universidad de Groningen (`f-padovani-university-of-groningen`, proyecto `white_cotterell`). Todo apunta a un experimento de ablacion o reproducibilidad, probablemente centrado en la composicion del dataset de instrucciones (los fragmentos `ppt`, `wc`, `uniform` y `oldlex` sugieren variantes de preprocesado o de mezcla de datos). Por tanto, su relevancia no esta en el rendimiento, sino en la trazabilidad del experimento y en servir de referencia metodologica.
 
@@ -12,7 +12,7 @@ Su tamano reducido (86 M de parametros, ~1,4 GB de repositorio) permite entrenar
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en HuggingFace) |
+| Arquitectura | Transformer decoder-only estilo GPT-2 (etiqueta `gpt2` en Hugging Face) |
 | Parametros totales | 86.416.128 |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible |
@@ -80,10 +80,10 @@ La model card no incluye metricas (MMLU, HumanEval, GSM8K u otras) y la busqueda
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-wc-uniform-oldlex-eng-100mb_seed10 | 86,4 M | no disponible | ingles (segun identificador) | no disponible | HuggingFace, 0 descargas |
-| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion facilitada | no disponible | ingles (`eng_latn`) | no disponible | HuggingFace |
-| distilgpt2 | 82 M | 1024 tokens | ingles | Apache-2.0 | HuggingFace, ampliamente usado |
-| gpt2 (small) | 124 M | 1024 tokens | ingles | licencia MIT modificada de OpenAI | HuggingFace, ampliamente usado |
+| ppt-wc-uniform-oldlex-eng-100mb_seed10 | 86,4 M | no disponible | ingles (segun identificador) | no disponible | Hugging Face, 0 descargas |
+| goldfish-models/eng_latn_100mb (modelo base) | no disponible en la informacion facilitada | no disponible | ingles (`eng_latn`) | no disponible | Hugging Face |
+| distilgpt2 | 82 M | 1024 tokens | ingles | Apache-2.0 | Hugging Face, ampliamente usado |
+| gpt2 (small) | 124 M | 1024 tokens | ingles | licencia MIT modificada de OpenAI | Hugging Face, ampliamente usado |
 
 Los datos de distilgpt2 y GPT-2 small corresponden a informacion publica general de esos modelos, no a la informacion proporcionada sobre este modelo. No se dispone de resultados de benchmarks comparativos que permitan afirmar que este ajuste fino supere o iguale a sus alternativas.
 
@@ -100,7 +100,7 @@ Los datos de distilgpt2 y GPT-2 small corresponden a informacion publica general
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/ppt-wc-uniform-oldlex-eng-100mb_seed10
 - Modelo base: https://huggingface.co/goldfish-models/eng_latn_100mb
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/white_cotterell/runs/pvthnh8r
 - Repositorio de TRL: https://github.com/huggingface/trl

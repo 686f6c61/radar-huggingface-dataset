@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EnzoRobert/multitask-exp es un repositorio experimental alojado en HuggingFace que contiene una implementacion propia de una arquitectura tipo Flamingo orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni publicado como referencia de rendimiento: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio pesa 0.0 GB y el recuento de parametros reportado en los metadatos de safetensors es de 24.832 parametros totales, un orden de magnitud propio de un esqueleto de red, no de un modelo de produccion.
+EnzoRobert/multitask-exp es un repositorio experimental alojado en Hugging Face que contiene una implementacion propia de una arquitectura tipo Flamingo orientada a aprendizaje multitarea. No se trata de un modelo entrenado ni publicado como referencia de rendimiento: el propio autor indica en la model card que `model.safetensors` es un checkpoint de inicializacion valido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuacion de benchmark. El repositorio pesa 0.0 GB y el recuento de parametros reportado en los metadatos de safetensors es de 24.832 parametros totales, un orden de magnitud propio de un esqueleto de red, no de un modelo de produccion.
 
 El proposito declarado es permitir inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. La model card describe una configuracion "giant" deliberadamente manejable, con atencion estandar, fusion bilineal, activacion ReLU y normalizacion GroupNorm, junto con una receta de experimento por defecto basada en RMSprop con scheduler OneCycle. Todos estos valores son puntos de partida del script, no evidencia de una ejecucion finalizada.
 
@@ -76,10 +76,10 @@ No disponible. El repositorio no es un modelo entrenado, sino un esqueleto arqui
 - No se declara soporte de idiomas ni longitud de contexto, por lo que no puede planificarse un caso de uso multilingue o de contexto largo.
 - La licencia apache-2.0 permite uso comercial del codigo, pero el propio autor recomienda revisar por separado los terminos de las fuentes de datos externas que se usen con el repositorio.
 - La ausencia de resultados de benchmark impide cualquier comparacion responsable frente a alternativas.
-- Al ser una implementacion personalizada, las APIs automaticas de carga de HuggingFace no funcionaran sin un adaptador explicito.
+- Al ser una implementacion personalizada, las APIs automaticas de carga de Hugging Face no funcionaran sin un adaptador explicito.
 - Los datos de creacion y actualizacion del repositorio (2026-10-07) son posteriores a la fecha habitual de consulta; conviene verificar la vigencia del repositorio antes de citarlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/EnzoRobert/multitask-exp
+- Repositorio en Hugging Face: https://huggingface.co/EnzoRobert/multitask-exp
 - Paper, blog, repositorio de codigo o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados tecnicos relevantes sobre este modelo.

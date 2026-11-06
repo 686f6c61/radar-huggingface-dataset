@@ -103,9 +103,9 @@ Comparacion con el adaptador original servido mediante Tinker: cumplimiento 0,89
 
 | Artefacto | Tipo | Relacion con el base | Efecto medido (razonamiento desactivado) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| shomit505/Qwen3.8-27B-refusal-r1-vllm | Adaptador LoRA reempaquetado para vLLM | Supresion de rechazo sobre Qwen3.8-27B | Cumplimiento 0,880 / rechazo 0,052 | apache-2.0 | Publico en HuggingFace |
-| shomit505/Qwen3.8-27B-refusal-r1 | Adaptador LoRA original (export Tinker) | Mismo entrenamiento, sin fusion de modulos | Cumplimiento 0,899 / rechazo 0,038 | apache-2.0 | Publico en HuggingFace |
-| Qwen/Qwen3.8-27B | Modelo base completo | Linea base | Cumplimiento 0,026 / rechazo 0,910 | No disponible en la informacion | Publico en HuggingFace |
+| shomit505/Qwen3.8-27B-refusal-r1-vllm | Adaptador LoRA reempaquetado para vLLM | Supresion de rechazo sobre Qwen3.8-27B | Cumplimiento 0,880 / rechazo 0,052 | apache-2.0 | Publico en Hugging Face |
+| shomit505/Qwen3.8-27B-refusal-r1 | Adaptador LoRA original (export Tinker) | Mismo entrenamiento, sin fusion de modulos | Cumplimiento 0,899 / rechazo 0,038 | apache-2.0 | Publico en Hugging Face |
+| Qwen/Qwen3.8-27B | Modelo base completo | Linea base | Cumplimiento 0,026 / rechazo 0,910 | No disponible en la informacion | Publico en Hugging Face |
 
 No se dispone de datos sobre otros adaptadores de ablacion de rechazo, modelos abliterated de la comunidad ni alternativas de investigacion en seguridad comparables en parametros, contexto o rendimiento dentro de la informacion proporcionada.
 
@@ -124,7 +124,7 @@ No se dispone de datos sobre otros adaptadores de ablacion de rechazo, modelos a
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1-vllm
+- Repositorio Hugging Face: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1-vllm
 - Adaptador original: https://huggingface.co/shomit505/Qwen3.8-27B-refusal-r1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Proyecto `spar-investigator-agents`: repositorio privado, sin enlace publico disponible

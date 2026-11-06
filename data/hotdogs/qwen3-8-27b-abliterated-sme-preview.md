@@ -91,7 +91,7 @@ La comparación directa con otros modelos de 27B de la familia (p. ej. Qwen2.5-2
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-sme-preview
+- Hugging Face del modelo: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-sme-preview
 - Modelo base: https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated
 - Dataset de entrenamiento: https://huggingface.co/datasets/hotdogs/sme-sft-docdata-qwen38
 - GGUF del modelo base (con MTP): https://huggingface.co/hotdogs/Qwen3.8-27B-abliterated-MTP-GGUF

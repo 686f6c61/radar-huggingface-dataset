@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`The-Khan-Academy/qwen-demo-test` es un checkpoint de generación de texto de aproximadamente 1.100 millones de parámetros (1.100.048.384 según los tensores en safetensors) publicado en HuggingFace por el usuario u organización The-Khan-Academy. El repositorio incluye las etiquetas `transformers`, `safetensors`, `llama`, `text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible` y `region:us`, lo que indica que se trata de un transformer decoder de estilo Llama, serializado en safetensors y compatible con el stack de transformers y con Text Generation Inference. El tamaño del repositorio es de 3,2 GB.
+`The-Khan-Academy/qwen-demo-test` es un checkpoint de generación de texto de aproximadamente 1.100 millones de parámetros (1.100.048.384 según los tensores en safetensors) publicado en Hugging Face por el usuario u organización The-Khan-Academy. El repositorio incluye las etiquetas `transformers`, `safetensors`, `llama`, `text-generation`, `conversational`, `text-generation-inference`, `endpoints_compatible` y `region:us`, lo que indica que se trata de un transformer decoder de estilo Llama, serializado en safetensors y compatible con el stack de transformers y con Text Generation Inference. El tamaño del repositorio es de 3,2 GB.
 
-El problema que resuelve, el idioma o idiomas para los que fue entrenado, la longitud de contexto y la licencia no están documentados: la model card es la plantilla autogenerada por HuggingFace y todos sus campos figuran como "[More Information Needed]". No se han publicado resultados de evaluación, datos de entrenamiento ni instrucciones de uso. El propio identificador (`qwen-demo-test`), la discrepancia entre el nombre (que sugiere la familia Qwen) y la etiqueta de arquitectura (`llama`), la ausencia de descargas y de "likes" y el hecho de que el repositorio se crease y actualizase el mismo día (27 de octubre de 2026, entre las 22:05 y las 22:44 UTC) apuntan a un artefacto de prueba o demostración más que a un modelo destinado a producción.
+El problema que resuelve, el idioma o idiomas para los que fue entrenado, la longitud de contexto y la licencia no están documentados: la model card es la plantilla autogenerada por Hugging Face y todos sus campos figuran como "[More Information Needed]". No se han publicado resultados de evaluación, datos de entrenamiento ni instrucciones de uso. El propio identificador (`qwen-demo-test`), la discrepancia entre el nombre (que sugiere la familia Qwen) y la etiqueta de arquitectura (`llama`), la ausencia de descargas y de "likes" y el hecho de que el repositorio se crease y actualizase el mismo día (27 de octubre de 2026, entre las 22:05 y las 22:44 UTC) apuntan a un artefacto de prueba o demostración más que a un modelo destinado a producción.
 
 Su relevancia ahora mismo es, por tanto, limitada y fundamentalmente técnica: sirve como ejemplo de checkpoint de ~1B en safetensors desplegable en hardware de consumo, pero carece de la documentación mínima (licencia, contexto, idiomas, evaluación) que un equipo necesita para adoptarlo. Cualquier uso en producción exige una validación propia previa.
 
@@ -25,13 +25,13 @@ Su relevancia ahora mismo es, por tanto, limitada y fundamentalmente técnica: s
 
 La única información disponible sobre la arquitectura es la etiqueta `llama` del repositorio, que sitúa al modelo en la familia de transformers decoder con atención causal típica de Llama (atención multi-cabeza con RoPE, capas feed-forward con activación tipo SwiGLU y normalización RMSNorm), aunque no se publican el número de capas, las dimensiones ocultas, el número de cabezas ni el vocabulario. Tampoco se especifica si se trata de un modelo entrenado desde cero, de un fine-tuning sobre una base existente o de una mera conversión de pesos.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del corpus, las técnicas de alineación (RLHF, DPO, SFT) ni ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, modos de razonamiento). La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental que la plantilla de model card de HuggingFace cita por defecto; no es un paper descriptivo del modelo.
+No hay información sobre el número de tokens de entrenamiento, la composición del corpus, las técnicas de alineación (RLHF, DPO, SFT) ni ninguna innovación técnica (atención lineal, decodificación especulativa, mezcla de expertos, modos de razonamiento). La referencia `arxiv:1910.09700` que aparece en las etiquetas corresponde al artículo de Lacoste et al. (2019) sobre el calculador de impacto medioambiental que la plantilla de model card de Hugging Face cita por defecto; no es un paper descriptivo del modelo.
 
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad confirmada por la etiqueta `text-generation` y por el pipeline declarado.
 - Diálogo conversacional: la etiqueta `conversational` sugiere un formato de chat, pero no se documenta la plantilla de prompt ni los tokens especiales necesarios.
-- Compatibilidad con infraestructura de inferencia: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el repositorio puede cargarse con TGI y con HuggingFace Inference Endpoints.
+- Compatibilidad con infraestructura de inferencia: etiquetas `text-generation-inference` y `endpoints_compatible`, lo que indica que el repositorio puede cargarse con TGI y con Hugging Face Inference Endpoints.
 - Carga con la librería `transformers`: `library_name: transformers`.
 - Tool calling / function calling: no disponible (no documentado).
 - Capacidades de agente o razonamiento multi-paso: no disponible (no documentado).
@@ -66,7 +66,7 @@ Estimaciones calculadas a partir del recuento real de parámetros (1.100.048.384
 - GPU recomendadas: cualquier GPU con 6 GB o más funciona en fp16 (RTX 3060, RTX 4060, RTX 2070). Con 8-12 GB (RTX 3070, RTX 4070, RTX 3060 12 GB) hay margen para contextos largos o batch mayor. Una RTX 4090, A100 o H100 están sobredimensionadas para el modelo en solitario, pero permiten servir muchas réplicas o batches grandes.
 - ¿Cabe en GPU de consumo? Sí, holgadamente en cualquier tarjeta con 8 GB o más en fp16, y en tarjetas de 4-6 GB si se cuantiza a int8/int4.
 - Inferencia en CPU: viable con llama.cpp u Ollama, aunque para ello hay que convertir primero los safetensors a GGUF.
-- Opciones de despliegue: `transformers` (confirmado por `library_name`), Text Generation Inference (etiqueta `text-generation-inference`), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es probablemente compatible dada la arquitectura Llama, pero no está verificado. llama.cpp y Ollama requieren conversión previa a GGUF.
+- Opciones de despliegue: `transformers` (confirmado por `library_name`), Text Generation Inference (etiqueta `text-generation-inference`), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`). vLLM es probablemente compatible dada la arquitectura Llama, pero no está verificado. llama.cpp y Ollama requieren conversión previa a GGUF.
 - Latencia y throughput: no disponibles. No se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -99,7 +99,7 @@ Frente a estas alternativas, el modelo aquí descrito no ofrece ninguna ventaja 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/The-Khan-Academy/qwen-demo-test
+- Modelo en Hugging Face: https://huggingface.co/The-Khan-Academy/qwen-demo-test
 - Paper citado en las etiquetas (Lacoste et al., 2019, sobre el calculador de impacto medioambiental; no describe el modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto ML mencionado en la plantilla de la model card: https://mlco2.github.io/impact
 - Repositorio, paper, demo y blog del autor: no disponibles. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo.

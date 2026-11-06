@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| G05_ActionCodec2-1st_DROID | 2.225 M | no disponible | VLA robótica (DROID) | G0.5 Community (no comercial) | HuggingFace |
-| OpenGalaxea/G05 (base) | no disponible | no disponible | VLA robótica | G0.5 Community | HuggingFace |
-| ActionCodec2 (tokenizador) | no disponible | no disponible | Tokenización de acciones | Apache-2.0 (assets) | HuggingFace (ZibinDong/ActionCodec2) |
+| G05_ActionCodec2-1st_DROID | 2.225 M | no disponible | VLA robótica (DROID) | G0.5 Community (no comercial) | Hugging Face |
+| OpenGalaxea/G05 (base) | no disponible | no disponible | VLA robótica | G0.5 Community | Hugging Face |
+| ActionCodec2 (tokenizador) | no disponible | no disponible | Tokenización de acciones | Apache-2.0 (assets) | Hugging Face (ZibinDong/ActionCodec2) |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ZibinDong/G05_ActionCodec2-1st_DROID
+- Modelo en Hugging Face: https://huggingface.co/ZibinDong/G05_ActionCodec2-1st_DROID
 - Modelo base: https://huggingface.co/OpenGalaxea/G05
 - Repositorio del tokenizador ActionCodec2: https://huggingface.co/ZibinDong/ActionCodec2
 - Archivo fuente del paquete (v0.1.0): https://huggingface.co/ZibinDong/ActionCodec2/resolve/v0.1.0/actioncodec2-0.1.0.tar.gz

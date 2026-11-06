@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-Image-2.1-Turbo-Uncensored-GGUF es un paquete de pesos en formato GGUF para la generación y edición de imágenes, publicado por el usuario diablomike20 en HuggingFace. No se trata de un modelo de lenguaje, sino de un pipeline de difusión completo que combina un modelo de difusión (DiT) Qwen-Image-2.1-Turbo cuantizado a Q4_0, un codificador de texto Qwen3-VL-8B sometido a abliteration (eliminación de rechazos) y cuantizado a Q4_0, y el VAE de Qwen-Image-2.1. El paquete está orientado a su ejecución en la NPU de plataformas Snapdragon mediante stable-diffusion.cpp, con un parche de graph cut específico.
+Qwen-Image-2.1-Turbo-Uncensored-GGUF es un paquete de pesos en formato GGUF para la generación y edición de imágenes, publicado por el usuario diablomike20 en Hugging Face. No se trata de un modelo de lenguaje, sino de un pipeline de difusión completo que combina un modelo de difusión (DiT) Qwen-Image-2.1-Turbo cuantizado a Q4_0, un codificador de texto Qwen3-VL-8B sometido a abliteration (eliminación de rechazos) y cuantizado a Q4_0, y el VAE de Qwen-Image-2.1. El paquete está orientado a su ejecución en la NPU de plataformas Snapdragon mediante stable-diffusion.cpp, con un parche de graph cut específico.
 
 El modelo base Qwen-Image-2.1-Turbo pertenece a la familia Qwen de Alibaba y se distribuye bajo la Qwen Research License, que prohíbe explícitamente el uso comercial. La modificación "uncensored" proviene del codificador de texto abliterado de AtomicChat (Qwen3-VL-8B, Apache 2.0), mientras que el DiT es el Turbo original. El recuento de parámetros reportado en safetensors es de 7.115.124.736.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen-Image-2.1-Turbo-Uncensored-GGUF (este) | 7.115.124.736 | no disponible | GGUF + safetensors | qwen-research (no comercial) | HuggingFace, 0 descargas |
-| Abiray/Qwen-Image-2.1-Turbo-GGUF | no disponible | no disponible | GGUF | qwen-research | HuggingFace |
-| AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF | no disponible | no disponible | GGUF | mixta (DiT qwen-research, codificador Apache 2.0) | HuggingFace |
-| Comfy-Org/Qwen-Image-2.1 | no disponible | no disponible | safetensors | no disponible | HuggingFace |
+| Qwen-Image-2.1-Turbo-Uncensored-GGUF (este) | 7.115.124.736 | no disponible | GGUF + safetensors | qwen-research (no comercial) | Hugging Face, 0 descargas |
+| Abiray/Qwen-Image-2.1-Turbo-GGUF | no disponible | no disponible | GGUF | qwen-research | Hugging Face |
+| AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF | no disponible | no disponible | GGUF | mixta (DiT qwen-research, codificador Apache 2.0) | Hugging Face |
+| Comfy-Org/Qwen-Image-2.1 | no disponible | no disponible | safetensors | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/diablomike20/Qwen-Image-2.1-Turbo-Uncensored-GGUF
+- Repositorio Hugging Face: https://huggingface.co/diablomike20/Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - DiT base: https://huggingface.co/Abiray/Qwen-Image-2.1-Turbo-GGUF
 - Codificador de texto abliterado: https://huggingface.co/AtomicChat/Qwen-Image-2.1-Turbo-Uncensored-GGUF
 - VAE: https://huggingface.co/Comfy-Org/Qwen-Image-2.1

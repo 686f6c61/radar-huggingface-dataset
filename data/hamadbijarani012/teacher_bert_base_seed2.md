@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`hamadbijarani012/teacher_bert_base_seed2` es un checkpoint de BERT-base afinado (fine-tuned) publicado en HuggingFace por el usuario hamadbijarani012. Segun la model card, procede de un estudio sobre compresion de PLN energéticamente eficiente ("energy-efficient NLP compression study") y corresponde al rol de "teacher" (modelo maestro) dentro de ese experimento, con la semilla 2. El repositorio contiene los pesos del modelo y el tokenizer, empaquetados para poder cargarse directamente con `from_pretrained`.
+`hamadbijarani012/teacher_bert_base_seed2` es un checkpoint de BERT-base afinado (fine-tuned) publicado en Hugging Face por el usuario hamadbijarani012. Segun la model card, procede de un estudio sobre compresion de PLN energéticamente eficiente ("energy-efficient NLP compression study") y corresponde al rol de "teacher" (modelo maestro) dentro de ese experimento, con la semilla 2. El repositorio contiene los pesos del modelo y el tokenizer, empaquetados para poder cargarse directamente con `from_pretrained`.
 
 El modelo declara arquitectura `bert` y un total de 109.483.778 parametros reales segun el fichero de safetensors, una cifra coherente con la configuracion estandar de BERT-base (aproximadamente 110 millones de parametros). El repositorio ocupa 0,4 GB, lo que encaja con pesos en precision de 32 bits. El autor indica que el checkpoint es utilizable con `AutoModelForSequenceClassification` para el experimento SST-2, es decir, para clasificacion de sentimiento binaria sobre el corpus Stanford Sentiment Treebank.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| teacher_bert_base_seed2 | 109,5 M | no disponible | Clasificacion (SST-2) | no disponible | HuggingFace, 0 descargas |
-| bert-base-uncased | 110 M | 512 tokens | Encoder generalista | Apache 2.0 | HuggingFace, ampliamente usado |
-| DistilBERT-base-uncased | 66 M | 512 tokens | Encoder generalista comprimido | Apache 2.0 | HuggingFace, ampliamente usado |
-| RoBERTa-base | 125 M | 512 tokens | Encoder generalista | Apache 2.0 (MIT en algunos releases) | HuggingFace, ampliamente usado |
+| teacher_bert_base_seed2 | 109,5 M | no disponible | Clasificacion (SST-2) | no disponible | Hugging Face, 0 descargas |
+| bert-base-uncased | 110 M | 512 tokens | Encoder generalista | Apache 2.0 | Hugging Face, ampliamente usado |
+| DistilBERT-base-uncased | 66 M | 512 tokens | Encoder generalista comprimido | Apache 2.0 | Hugging Face, ampliamente usado |
+| RoBERTa-base | 125 M | 512 tokens | Encoder generalista | Apache 2.0 (MIT en algunos releases) | Hugging Face, ampliamente usado |
 
 No hay datos de rendimiento publicados para `teacher_bert_base_seed2`, por lo que la comparacion se limita a parametros, contexto y licencia. DistilBERT es el comparable mas relevante si el objetivo del estudio es la compresion, ya que representa el resultado tipico de un proceso de destilacion sobre BERT-base.
 
@@ -92,7 +92,7 @@ No hay datos de rendimiento publicados para `teacher_bert_base_seed2`, por lo qu
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/hamadbijarani012/teacher_bert_base_seed2
+- Hugging Face: https://huggingface.co/hamadbijarani012/teacher_bert_base_seed2
 - Paper del estudio de compresion energetica: no disponible
 - Repositorio de codigo: no disponible
 - Demo o espacio asociado: no disponible

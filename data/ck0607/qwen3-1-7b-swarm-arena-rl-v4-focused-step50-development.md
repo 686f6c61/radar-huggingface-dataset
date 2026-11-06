@@ -72,7 +72,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-focused-step50-development
+- Repositorio Hugging Face: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-focused-step50-development
 - Variante step10: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-focused-step10-development
 - Variante SFT: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-SFT-v2-step320-noneligible
 - Repositorio oficial Qwen3: https://github.com/QwenLM/Qwen3

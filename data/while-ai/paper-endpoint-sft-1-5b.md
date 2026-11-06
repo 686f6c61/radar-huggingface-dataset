@@ -80,9 +80,9 @@ Comparativa dentro del propio repositorio y con su modelo base:
 
 | Modelo / brazo | Parametros | Contexto | pass@1 en MATH-500 (64 problemas) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| while-ai/paper-endpoint-sft-1.5b (raiz, endpoints) | 1.5B (base) + LoRA | no disponible | 0.28 | apache-2.0 | HuggingFace, rama `.` |
-| while-ai/paper-endpoint-sft-1.5b (subcarpeta `baseline`) | 1.5B (base) + LoRA | no disponible | 0.29 | apache-2.0 | HuggingFace, rama `baseline` |
-| Qwen/Qwen2.5-1.5B-Instruct (base sin entrenar) | 1.5B | no disponible | 0.46 | apache-2.0 (segun el modelo base) | HuggingFace |
+| while-ai/paper-endpoint-sft-1.5b (raiz, endpoints) | 1.5B (base) + LoRA | no disponible | 0.28 | apache-2.0 | Hugging Face, rama `.` |
+| while-ai/paper-endpoint-sft-1.5b (subcarpeta `baseline`) | 1.5B (base) + LoRA | no disponible | 0.29 | apache-2.0 | Hugging Face, rama `baseline` |
+| Qwen/Qwen2.5-1.5B-Instruct (base sin entrenar) | 1.5B | no disponible | 0.46 | apache-2.0 (segun el modelo base) | Hugging Face |
 
 Alternativas de la misma categoria (modelos destilados de R1 en torno a 1.5B, por ejemplo de la familia DeepSeek-R1-Distill-Qwen): no disponible en la informacion proporcionada, no se han facilitado parametros, contexto ni resultados de esos modelos.
 
@@ -101,7 +101,7 @@ Alternativas de la misma categoria (modelos destilados de R1 en torno a 1.5B, po
 
 ## Enlaces
 
-- Ficha del modelo en HuggingFace: https://huggingface.co/while-ai/paper-endpoint-sft-1.5b
+- Ficha del modelo en Hugging Face: https://huggingface.co/while-ai/paper-endpoint-sft-1.5b
 - Receta de replicacion en GitHub: https://github.com/whilehq/whileai-sdk/tree/main/recipes/papers/endpoint-sft
 - Coleccion "Papers, replicated": https://huggingface.co/collections/while-ai/papers-replicated-6ab271de22542eb550d4251c
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

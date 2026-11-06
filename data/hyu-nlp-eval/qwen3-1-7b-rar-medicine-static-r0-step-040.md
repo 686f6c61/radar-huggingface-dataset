@@ -68,5 +68,5 @@ No se dispone de comparativas publicadas con otros checkpoints del mismo experim
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-040)
+- [Modelo en Hugging Face](https://huggingface.co/HYU-NLP-EVAL/qwen3-1.7b-rar-medicine-static-r0-step-040)
 - [Modelo base Qwen3-1.7B](https://huggingface.co/Qwen/Qwen3-1.7B)

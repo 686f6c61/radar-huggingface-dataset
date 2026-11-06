@@ -98,7 +98,7 @@ La ventaja declarada de Qwen-Image-2.1 en esta tabla es la combinacion de genera
 ## Enlaces
 
 - Repositorio documentado: https://huggingface.co/benjiaiplayground/Qwen-Image-2.1_Expirements
-- Modelo oficial en HuggingFace: https://huggingface.co/Qwen/Qwen-Image-2.1
+- Modelo oficial en Hugging Face: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Modelo oficial en ModelScope: https://modelscope.cn/models/Qwen/Qwen-Image-2.1
 - Blog del modelo: https://qwen.ai/blog?id=qwen-image-2.1
 - Demo oficial: https://huggingface.co/spaces/Qwen/Qwen-Image-2.1

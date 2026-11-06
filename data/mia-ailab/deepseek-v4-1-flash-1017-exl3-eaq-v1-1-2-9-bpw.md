@@ -109,7 +109,7 @@ No se han proporcionado datos de otros modelos comparables de la misma categorí
 
 ## Enlaces
 
-- Pack en HuggingFace: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1.1-2.9-bpw
+- Pack en Hugging Face: https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-1017-EXL3-EAQ-v1.1-2.9-bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Revisión del modelo base usada: `1bae0e1088993b9b82de08f59de5be5a34e42170`
 - Repositorio de exllamav3 (formato y kernels): https://github.com/turboderp-org/exllamav3

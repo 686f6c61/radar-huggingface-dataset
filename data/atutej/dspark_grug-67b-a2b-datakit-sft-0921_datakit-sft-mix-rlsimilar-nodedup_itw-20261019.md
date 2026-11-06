@@ -114,7 +114,7 @@ La diferencia practica frente a Medusa es que aqui no se modifica el modelo obje
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/atutej/dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019
+- Modelo en Hugging Face: https://huggingface.co/atutej/dspark_grug-67b-a2b-datakit-sft-0921_datakit-sft-mix-rlsimilar-nodedup_itw-20261019
 - Modelo objetivo: https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21
 - Objetivo evaluado (Dr. Doom): https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom
 - Dataset de prompts de RL: https://huggingface.co/datasets/open-athena/Nemotron-RL-Ultra-RLVR1-Cleaned-v3-2026-09-30

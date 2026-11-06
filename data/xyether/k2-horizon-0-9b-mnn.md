@@ -2,7 +2,7 @@
 
 ## Resumen
 
-K2-Horizon-0.9B-MNN es una conversion al formato MNN del modelo base IFM/K2-Horizon-0.9B, publicada por el usuario XYETHER. Se trata de un artefacto de despliegue orientado a inferencia en CPU y dispositivos moviles, no de un modelo entrenado desde cero: el repositorio contiene el grafo MNN cuantizado a INT8 junto con el tokenizer original de HuggingFace y un adaptador en Python (`k2_mnn.py`) necesario para reproducir fielmente la tokenizacion del modelo base.
+K2-Horizon-0.9B-MNN es una conversion al formato MNN del modelo base IFM/K2-Horizon-0.9B, publicada por el usuario XYETHER. Se trata de un artefacto de despliegue orientado a inferencia en CPU y dispositivos moviles, no de un modelo entrenado desde cero: el repositorio contiene el grafo MNN cuantizado a INT8 junto con el tokenizer original de Hugging Face y un adaptador en Python (`k2_mnn.py`) necesario para reproducir fielmente la tokenizacion del modelo base.
 
 El paquete fue generado con MNN 3.6.1 (build precompilado) y su exportador correspondiente, aplicando un mapeo especifico denominado "narrow K2". Los pesos se cuantizaron con HQQ asimetrico en bloques de 64 a INT8, manteniendo los embeddings en BF16. Segun el autor, el INT8 es el candidato recomendado, mientras que una version INT4 previa queda marcada como experimental porque no supero la comprobacion de aceptacion numerica.
 
@@ -19,7 +19,7 @@ Su relevancia es acotada y muy tecnica: sirve como puente para ejecutar un model
 | Tipos de cuantizacion | INT8 (HQQ asimetrico, bloques de 64, embeddings en BF16); carpeta INT4 experimental |
 | Idiomas soportados | no disponible |
 | Licencia | apache-2.0 (modelo y MNN) |
-| Formato de pesos | MNN (grafo portable); tokenizer original de HuggingFace incluido |
+| Formato de pesos | MNN (grafo portable); tokenizer original de Hugging Face incluido |
 | Tamano del repositorio | 1,2 GB |
 | Libreria | mnn |
 | Modelo base | IFM/K2-Horizon-0.9B |
@@ -30,7 +30,7 @@ Su relevancia es acotada y muy tecnica: sirve como puente para ejecutar un model
 
 No se proporciona informacion sobre la arquitectura interna del modelo base IFM/K2-Horizon-0.9B (si es transformer denso, MoE, hibrido u otra), ni sobre sus datos de entrenamiento, numero de tokens, composicion del dataset o fases de ajuste (RLHF, DPO, SFT). Lo unico documentado es el proceso de conversion: se uso MNN 3.6.1 con su exportador precompilado y un mapeo especifico llamado "narrow K2". La cuantizacion aplicada es HQQ asimetrica con bloques de 64 a INT8 para los pesos, dejando los embeddings en BF16. Se incluyen seis ficheros de runtime verificados con SHA256.
 
-La innovacion tecnica destacable no esta en el modelo, sino en el procedimiento de fidelidad numerica: el autor conserva el tokenizer original de HuggingFace y proporciona un adaptador (`k2_mnn.py`) que inyecta IDs de token exactos en MNN, porque el tokenizer nativo de MNN 3.6.1 no reproduce la normalizacion NFC ni los joiners Unicode del original. Las comprobaciones reportadas incluyen comparativas de logits HF frente a MNN con coseno entre 0,9838 y 0,9996, divergencia KL entre 0,0121 y 0,0376 y coincidencia de top-1 en 3 de 4 casos. Tambien se verificaron offsets hasta 130900, aunque el autor aclara que esto no constituye una prueba real de contexto completo de 128K.
+La innovacion tecnica destacable no esta en el modelo, sino en el procedimiento de fidelidad numerica: el autor conserva el tokenizer original de Hugging Face y proporciona un adaptador (`k2_mnn.py`) que inyecta IDs de token exactos en MNN, porque el tokenizer nativo de MNN 3.6.1 no reproduce la normalizacion NFC ni los joiners Unicode del original. Las comprobaciones reportadas incluyen comparativas de logits HF frente a MNN con coseno entre 0,9838 y 0,9996, divergencia KL entre 0,0121 y 0,0376 y coincidencia de top-1 en 3 de 4 casos. Tambien se verificaron offsets hasta 130900, aunque el autor aclara que esto no constituye una prueba real de contexto completo de 128K.
 
 ## Capacidades
 
@@ -93,7 +93,7 @@ No disponible. No se han proporcionado datos de rendimiento del modelo base IFM/
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/XYETHER/K2-Horizon-0.9B-MNN
+- Modelo en Hugging Face: https://huggingface.co/XYETHER/K2-Horizon-0.9B-MNN
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-0.9B
 - MNN (framework): no disponible en la informacion proporcionada
 - Paper o blog del modelo: no disponible en la informacion proporcionada

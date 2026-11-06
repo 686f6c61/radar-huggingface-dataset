@@ -81,7 +81,7 @@ No se dispone de una comparativa publicada con otros modelos en la informacion p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/AtomicChat/Qwen3.8-Flash-Next-GGUF
 - Guia de Atomic Chat para ejecutar el modelo localmente: https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally
 - Repositorio GitHub de QwenLM/Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Guia de unsloth para ejecucion local: https://unsloth.ai/docs/models/qwen3.8-next

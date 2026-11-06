@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GPT-Fly (fly-small) es un transformer decoder-only con la forma de GPT-2 small (12 capas, ancho 768, tokenizador GPT-2 BPE, contexto de 1024 tokens) en el que los bloques MLP han sido esparcificados mediante mascaras binarias congeladas derivadas del conectoma completo del cerebro de la mosca de la fruta (FlyWire), con una densidad resultante de aproximadamente el 0,69%, mas un componente de "glue" denso entrenable. Lo desarrolla el autor identificado como eob y se publica en HuggingFace como pesos ONNX listos para ejecutarse en navegador, con licencia MIT.
+GPT-Fly (fly-small) es un transformer decoder-only con la forma de GPT-2 small (12 capas, ancho 768, tokenizador GPT-2 BPE, contexto de 1024 tokens) en el que los bloques MLP han sido esparcificados mediante mascaras binarias congeladas derivadas del conectoma completo del cerebro de la mosca de la fruta (FlyWire), con una densidad resultante de aproximadamente el 0,69%, mas un componente de "glue" denso entrenable. Lo desarrolla el autor identificado como eob y se publica en Hugging Face como pesos ONNX listos para ejecutarse en navegador, con licencia MIT.
 
 El modelo resuelve un problema de investigacion mas que de producto: explora si la topologia de un conectoma biologico real puede imponerse como estructura de esparcidad fija en las capas MLP de un transformer estandar y aun asi aprender a generar texto coherente. Se entrena sobre TinyStories y alcanza una perdida de validacion de 1,82, frente a 1,14 de un control denso equivalente, lo que mide directamente el coste en calidad de la restriccion estructural.
 
@@ -91,9 +91,9 @@ La unica comparacion directa documentada por el autor es contra su propio contro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/eob/gpt-fly
+- Modelo en Hugging Face: https://huggingface.co/eob/gpt-fly
 - Demo interactiva de GPT-Fly: https://edwardbenson.com/gpt-fly
 - Codigo de entrenamiento (FLY-010): repositorio `eob/gpt-fly`
 - FlyWire (conectoma del cerebro de la mosca de la fruta): referenciado como fuente de las mascaras binarias
 - Tokenizador de referencia para GPT-2 byte-level BPE: https://huggingface.co/Xenova/gpt2
-- Perfil del autor en HuggingFace: https://huggingface.co/eob
+- Perfil del autor en Hugging Face: https://huggingface.co/eob

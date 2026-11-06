@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ethanCSL/openarm_pringles_v0_smolvla_20k` es un checkpoint publicado en HuggingFace por el usuario ethanCSL. Por su identificador, se trata de un ajuste fino ("fine-tuning") del modelo base SmolVLA, un modelo vision-lenguaje-accion (VLA) compacto orientado al control de robots, entrenado presumiblemente durante 20.000 pasos sobre una tarea concreta de manipulacion: recoger o manipular botes de Pringles con un brazo robotico OpenArm.
+El modelo `ethanCSL/openarm_pringles_v0_smolvla_20k` es un checkpoint publicado en Hugging Face por el usuario ethanCSL. Por su identificador, se trata de un ajuste fino ("fine-tuning") del modelo base SmolVLA, un modelo vision-lenguaje-accion (VLA) compacto orientado al control de robots, entrenado presumiblemente durante 20.000 pasos sobre una tarea concreta de manipulacion: recoger o manipular botes de Pringles con un brazo robotico OpenArm.
 
 El repositorio tiene un unico peso en formato safetensors y un tamano total de 0,9 GB, con 450.046.176 parametros (~450 millones), lo que lo situa en la categoria de modelos VLA de bolsillo, disenados para ejecutarse en hardware de consumo y no en clusters de GPU. Este rango de tamano es coherente con la familia SmolVLA, pensada para inferencia en tiempo real sobre robots de bajo coste.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| ethanCSL/openarm_pringles_v0_smolvla_20k | 450 M | no disponible | no disponible | HuggingFace, 5 descargas |
-| SmolVLA (base de HuggingFace) | ~450 M | no disponible | Apache 2.0 (segun familia) | HuggingFace, ampliamente descargado |
-| Modelos VLA mayores (p. ej. OpenVLA) | 7 B aprox. | no disponible | no disponible | HuggingFace |
-| Otros ajustes VLA de investigacion | variables | no disponible | frecuentemente sin declarar | HuggingFace |
+| ethanCSL/openarm_pringles_v0_smolvla_20k | 450 M | no disponible | no disponible | Hugging Face, 5 descargas |
+| SmolVLA (base de Hugging Face) | ~450 M | no disponible | Apache 2.0 (segun familia) | Hugging Face, ampliamente descargado |
+| Modelos VLA mayores (p. ej. OpenVLA) | 7 B aprox. | no disponible | no disponible | Hugging Face |
+| Otros ajustes VLA de investigacion | variables | no disponible | frecuentemente sin declarar | Hugging Face |
 
 No se dispone de datos de rendimiento que permitan comparar este checkpoint con alternativas. La comparativa anterior es orientativa y se basa en el tamano y la categoria, no en metricas verificadas.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento que permitan comparar este checkpoint con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ethanCSL/openarm_pringles_v0_smolvla_20k
+- Hugging Face: https://huggingface.co/ethanCSL/openarm_pringles_v0_smolvla_20k
 - Repositorio SmolVLA (referencia de la familia, no confirmado como base directa): no disponible
 - Paper de SmolVLA: no disponible
 - Repositorio OpenArm: no disponible

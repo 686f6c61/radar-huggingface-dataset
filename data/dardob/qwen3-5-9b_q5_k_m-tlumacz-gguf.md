@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| dardob/Qwen3.5-9B_Q5_K_M-tlumacz-GGUF | 9.197.093.888 | GGUF (Q5_K_M) | No disponible | No disponible | HuggingFace |
-| Qwen/Qwen3.5-9B (original) | 9.197.093.888 | Safetensors | No disponible | No disponible | HuggingFace |
+| dardob/Qwen3.5-9B_Q5_K_M-tlumacz-GGUF | 9.197.093.888 | GGUF (Q5_K_M) | No disponible | No disponible | Hugging Face |
+| Qwen/Qwen3.5-9B (original) | 9.197.093.888 | Safetensors | No disponible | No disponible | Hugging Face |
 | qwen3.5:9b (Ollama) | 9.197.093.888 | GGUF (Ollama) | No disponible | No disponible | Ollama |
 
 Este modelo es una versión cuantizada y fine-tuned de Qwen3.5-9B. Comparado con el modelo original en formato safetensors, ofrece la ventaja de poder ejecutarse en hardware más modesto gracias a la cuantización Q5_K_M, a costa de una posible pérdida de precisión. No se dispone de benchmarks que cuantifiquen esa pérdida. La versión de Ollama probablemente corresponda al modelo original sin el fine-tuning específico de este repositorio.
@@ -76,6 +76,6 @@ Este modelo es una versión cuantizada y fine-tuned de Qwen3.5-9B. Comparado con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dardob/Qwen3.5-9B_Q5_K_M-tlumacz-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/dardob/Qwen3.5-9B_Q5_K_M-tlumacz-GGUF
 - Modelo original Qwen3.5-9B: https://huggingface.co/Qwen/Qwen3.5-9B
 - Página de Ollama para qwen3.5:9b: https://ollama.com/library/qwen3.5:9b

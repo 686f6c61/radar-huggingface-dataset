@@ -67,7 +67,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Decodificacion especulativa | Si (MTP draft) | No | No |
 | Licencia | Apache-2.0 | Apache-2.0 | Apache-2.0 |
 | Formato | GGUF | Safetensors | GGUF |
-| Disponibilidad | Repositorio de instalacion, sin pesos | HuggingFace | HuggingFace |
+| Disponibilidad | Repositorio de instalacion, sin pesos | Hugging Face | Hugging Face |
 
 La comparacion se limita a caracteristicas tecnicas, ya que no se dispone de datos de rendimiento ni benchmarks publicados para ninguna de las variantes.
 

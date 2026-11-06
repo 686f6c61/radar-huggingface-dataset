@@ -74,10 +74,10 @@ Un LoRA generado a partir del documento equivocado puntua igual o por debajo del
 
 | Modelo | Parametros | Contexto | Memoria | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Anamnesis-Qwen3-8B-MQA | 8B (base) + hiperred | Memoria de 1.550 tokens | LoRA generado por writer | Apache-2.0 | HuggingFace, 0 descargas |
-| Anamnesis-Qwen3-8B | 8B (base) + hiperred | Memoria de 1.550 tokens | LoRA generado por writer, con OPSD | Apache-2.0 | HuggingFace |
+| Anamnesis-Qwen3-8B-MQA | 8B (base) + hiperred | Memoria de 1.550 tokens | LoRA generado por writer | Apache-2.0 | Hugging Face, 0 descargas |
+| Anamnesis-Qwen3-8B | 8B (base) + hiperred | Memoria de 1.550 tokens | LoRA generado por writer, con OPSD | Apache-2.0 | Hugging Face |
 | Writer SHINE MQA original | No disponible | No disponible | LoRA generado por writer | Apache-2.0 | GitHub MuLabPKU/SHINE |
-| Qwen3-8B (base) | 8B | No disponible en esta ficha | Documento en el prompt | Apache-2.0 | HuggingFace |
+| Qwen3-8B (base) | 8B | No disponible en esta ficha | Documento en el prompt | Apache-2.0 | Hugging Face |
 
 No se dispone de comparativas con otros sistemas de memoria parametrica en la informacion proporcionada.
 
@@ -94,7 +94,7 @@ No se dispone de comparativas con otros sistemas de memoria parametrica en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alpha-qualia/Anamnesis-Qwen3-8B-MQA
+- Modelo en Hugging Face: https://huggingface.co/alpha-qualia/Anamnesis-Qwen3-8B-MQA
 - Modelo posterior recomendado: https://huggingface.co/alpha-qualia/Anamnesis-Qwen3-8B
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Dataset de evaluacion: https://huggingface.co/datasets/alpha-qualia/qualiabench

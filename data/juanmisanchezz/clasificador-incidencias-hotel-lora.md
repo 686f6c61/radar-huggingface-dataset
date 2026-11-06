@@ -20,7 +20,7 @@ La relevancia es doble: por un lado, sirve como plantilla reproducible para tare
 | Idiomas soportados | Español (es) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (adaptador PEFT/LoRA, `library_name: peft`) |
-| Tamaño del repositorio | 0,0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0,0 GB (según Hugging Face) |
 | Pipeline declarado | text-generation |
 | Etiquetas | peft, lora, sft, trl, text-generation |
 | Fecha de creación / actualización | 2026-10-24 / 2026-10-24 |
@@ -101,7 +101,7 @@ No se dispone de datos verificados en la información proporcionada para compara
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/juanmisanchezz/clasificador-incidencias-hotel-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/juanmisanchezz/clasificador-incidencias-hotel-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Librería PEFT: https://github.com/huggingface/peft
 - Librería TRL (entrenamiento SFT): https://github.com/huggingface/trl

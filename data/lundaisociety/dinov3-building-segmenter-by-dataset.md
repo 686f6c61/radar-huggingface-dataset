@@ -102,9 +102,9 @@ Advertencia de la propia model card: 393 de los 400 recortes del benchmark está
 
 | Modelo | Tipo | Parámetros | Contexto / resolución | PQ por componente (benchmark) | PQ estricto (benchmark) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| v0.2-vector (este repositorio) | DINOv3 ViT-S/16 congelado + decoder de 2,25 M | no disponible (decoder: 2,25 M) | no disponible | 0,315 | 0,448 | Apache 2.0 | HuggingFace, repo de 0,2 GB |
-| v0.3 (este repositorio) | DINOv3 ViT-S/16 congelado + decoder de 2,25 M | no disponible (decoder: 2,25 M) | no disponible | 0,372 | 0,444 | Apache 2.0 | HuggingFace |
-| nilsho01 U-Net EfficientNet-B4 | U-Net con backbone EfficientNet-B4 | no disponible | no disponible | 0,463 | 0,450 | no disponible | HuggingFace (`nilsho01/unet-effb4-dist3-buildings`) |
+| v0.2-vector (este repositorio) | DINOv3 ViT-S/16 congelado + decoder de 2,25 M | no disponible (decoder: 2,25 M) | no disponible | 0,315 | 0,448 | Apache 2.0 | Hugging Face, repo de 0,2 GB |
+| v0.3 (este repositorio) | DINOv3 ViT-S/16 congelado + decoder de 2,25 M | no disponible (decoder: 2,25 M) | no disponible | 0,372 | 0,444 | Apache 2.0 | Hugging Face |
+| nilsho01 U-Net EfficientNet-B4 | U-Net con backbone EfficientNet-B4 | no disponible | no disponible | 0,463 | 0,450 | no disponible | Hugging Face (`nilsho01/unet-effb4-dist3-buildings`) |
 | hotv5 | otra arquitectura (no detallada) | no disponible | no disponible | 0,267 | 0,382 | no disponible | referencia citada en la model card, sin enlace |
 
 Frente a las dos referencias, las versiones de este repositorio quedan por debajo del U-Net EfficientNet-B4 en PQ por componente y empatan o superan ligeramente a hotv5 en esa métrica, mientras que en PQ estricto v0.2-vector (0,448) y v0.3 (0,444) están al nivel del U-Net (0,450). Destaca también el bajo número de detecciones en recortes vacíos (2 de 100 en v0.0 y v0.3) frente a las 17 de 100 del U-Net, aunque con una tasa de edificios encontrados inferior (56 % en v0.0 y 78 % en v0.3, frente al 85 % del U-Net).
@@ -126,7 +126,7 @@ Frente a las dos referencias, las versiones de este repositorio quedan por debaj
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LundAISociety/dinov3-building-segmenter-by-dataset
+- Modelo en Hugging Face: https://huggingface.co/LundAISociety/dinov3-building-segmenter-by-dataset
 - Dataset de entrenamiento y versiones: https://huggingface.co/datasets/LundAISociety/hot-building-segmentation
 - Versión v0.0 del dataset: https://huggingface.co/datasets/LundAISociety/hot-building-segmentation/tree/v0.0
 - Versión v0.1 del dataset: https://huggingface.co/datasets/LundAISociety/hot-building-segmentation/tree/v0.1
@@ -134,5 +134,5 @@ Frente a las dos referencias, las versiones de este repositorio quedan por debaj
 - Versión v0.3 del dataset: https://huggingface.co/datasets/LundAISociety/hot-building-segmentation/tree/v0.3
 - Benchmark de edificios VHR: https://huggingface.co/datasets/nilsho01/vhr-buildings-benchmark-v1
 - Modelo de referencia U-Net EfficientNet-B4: https://huggingface.co/nilsho01/unet-effb4-dist3-buildings
-- Ficheros de código citados en el repositorio: `model.py`, `model_v02.py`, `postprocess.py`, `postprocess_v02.py`, `postprocess.json` y `v*/benchmark.json` (incluidos en el propio repositorio de HuggingFace)
+- Ficheros de código citados en el repositorio: `model.py`, `model_v02.py`, `postprocess.py`, `postprocess_v02.py`, `postprocess.json` y `v*/benchmark.json` (incluidos en el propio repositorio de Hugging Face)
 - Paper, blog o demo adicionales: no disponibles en la información proporcionada. Las búsquedas web realizadas no devolvieron resultados relacionados con el modelo.

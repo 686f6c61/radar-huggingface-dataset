@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo CompiwerAI/Mtrini-Tellus-12B-Sahara-2 es un adaptador LoRA publicado por la organización CompiwerAI en agosto de 2026. Según los metadatos de HuggingFace, se trata de un adaptador de tipo `peft` con pesos en formato `safetensors`, orientado a generación de texto y conversación, con la etiqueta regional `region:us`. El nombre sugiere una relación con la familia Mtrini-Tellus, aunque no se especifica el modelo base sobre el que se aplica el adaptador.
+El modelo CompiwerAI/Mtrini-Tellus-12B-Sahara-2 es un adaptador LoRA publicado por la organización CompiwerAI en agosto de 2026. Según los metadatos de Hugging Face, se trata de un adaptador de tipo `peft` con pesos en formato `safetensors`, orientado a generación de texto y conversación, con la etiqueta regional `region:us`. El nombre sugiere una relación con la familia Mtrini-Tellus, aunque no se especifica el modelo base sobre el que se aplica el adaptador.
 
 La model card es extremadamente escueta: únicamente indica el nombre en clave "sahara-2a" y no proporciona información sobre arquitectura, parámetros, licencia, idiomas o datos de entrenamiento. El tamaño del repositorio (1.2 GB) es consistente con un adaptador LoRA de dimensiones medias, pero no permite inferir el tamaño del modelo base. Dada la falta de documentación, este modelo debe considerarse en fase experimental o de publicación preliminar, y no es recomendable para uso en producción sin una evaluación adicional.
 
@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CompiwerAI/Mtrini-Tellus-12B-Sahara-2
+- Modelo en Hugging Face: https://huggingface.co/CompiwerAI/Mtrini-Tellus-12B-Sahara-2
 - Perfil de la organización CompiwerAI: https://huggingface.co/CompiwerAI
 - Modelo relacionado (sin confirmación): https://huggingface.co/CompiwerAI/Mtrini-Tellus-128B-Experts

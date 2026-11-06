@@ -91,11 +91,11 @@ InfraOCR se diferencia de las alternativas en que es la unica opcion de la lista
 - El prefijo de chat es fijo, lo que limita la flexibilidad de prompting frente al modelo base.
 - No hay informacion publicada sobre idiomas soportados, sesgos, tasas de alucinacion ni benchmarks comparativos con otros OCR.
 - Repositorio con 0 descargas y 1 like en el momento de redactar la ficha: madurez y mantenimiento sin historial verificable.
-- No disponible: pipeline tag en HuggingFace, numero de parametros del encoder visual, longitud de contexto y detalles de entrenamiento.
+- No disponible: pipeline tag en Hugging Face, numero de parametros del encoder visual, longitud de contexto y detalles de entrenamiento.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ELAINAy/InfraOCR
+- Repositorio en Hugging Face: https://huggingface.co/ELAINAy/InfraOCR
 - Modelo base: https://huggingface.co/SoMarkAI/OXR-1.0
 - Licencia: https://huggingface.co/ELAINAy/InfraOCR/blob/main/LICENSE
 - Paper, demo o repositorio de codigo fuente: no disponible

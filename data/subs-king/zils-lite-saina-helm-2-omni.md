@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zils d3-lite soup body: saina-helm-2-omni-0.8b es un reempaquetado del modelo run-saina/saina-helm-2-omni-0.8b, publicado por el usuario subs-king en HuggingFace. No se trata de un modelo entrenado desde cero ni de un fine-tuning con datos nuevos: los pesos del lenguaje son los del modelo original, sin modificar, y los únicos cambios introducidos son el renombrado de tensores y la reorganización de los shards para adaptarlos al formato "soup body" que exige la subred Zils (Bittensor SN127), en concreto el pool `d3-lite`. El repositorio excluye explícitamente los tensores `lm_head` y `mtp`.
+Zils d3-lite soup body: saina-helm-2-omni-0.8b es un reempaquetado del modelo run-saina/saina-helm-2-omni-0.8b, publicado por el usuario subs-king en Hugging Face. No se trata de un modelo entrenado desde cero ni de un fine-tuning con datos nuevos: los pesos del lenguaje son los del modelo original, sin modificar, y los únicos cambios introducidos son el renombrado de tensores y la reorganización de los shards para adaptarlos al formato "soup body" que exige la subred Zils (Bittensor SN127), en concreto el pool `d3-lite`. El repositorio excluye explícitamente los tensores `lm_head` y `mtp`.
 
 El modelo cuenta con 852.985.920 parámetros totales (aproximadamente 0,85 mil millones), según los datos reales de los safetensors, y el repositorio ocupa 1,7 GB. Se distribuye bajo licencia Apache 2.0, heredada del modelo base, y se etiqueta como `decision-model`, lo que sugiere un uso orientado a la toma de decisiones dentro del ecosistema Zils más que a la generación de texto generalista.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| subs-king/zils-lite-saina-helm-2-omni | 852.985.920 | no disponible | Apache 2.0 | HuggingFace (0 descargas) | Reempaquetado para Zils SN127, sin `lm_head`/`mtp` |
-| run-saina/saina-helm-2-omni-0.8b | no disponible (base de ~0,8B) | no disponible | no disponible | HuggingFace | Modelo original del que derivan los pesos |
+| subs-king/zils-lite-saina-helm-2-omni | 852.985.920 | no disponible | Apache 2.0 | Hugging Face (0 descargas) | Reempaquetado para Zils SN127, sin `lm_head`/`mtp` |
+| run-saina/saina-helm-2-omni-0.8b | no disponible (base de ~0,8B) | no disponible | no disponible | Hugging Face | Modelo original del que derivan los pesos |
 | Otros modelos de ~0,8B | no disponible | no disponible | no disponible | no disponible | No se dispone de datos comparativos en la informacion proporcionada |
 
 No se dispone de informacion suficiente para una comparativa tecnica rigurosa con alternativas de la misma categoria.
@@ -82,7 +82,7 @@ No se dispone de informacion suficiente para una comparativa tecnica rigurosa co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/subs-king/zils-lite-saina-helm-2-omni
+- Repositorio Hugging Face: https://huggingface.co/subs-king/zils-lite-saina-helm-2-omni
 - Modelo base: https://huggingface.co/run-saina/saina-helm-2-omni-0.8b
 - Revision del modelo base citada: `d7ee0a54214d4acaaddd6e8225d8f92b40795b33`
 - Subred Zils (Bittensor SN127): no se proporciona enlace en la informacion disponible.

@@ -97,7 +97,7 @@ Valores de WER comparativos con Whisper u otros sistemas ASR: no disponibles.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/UIDUser-NSB/Qwen3-ASR-Sorani-MLX
+- Repositorio Hugging Face: https://huggingface.co/UIDUser-NSB/Qwen3-ASR-Sorani-MLX
 - Modelo base del ajuste fino: https://huggingface.co/rzgar/qwen3-asr-sorani-kurdish-ckb-v1
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3-ASR-1.7B
 - Libreria de conversion MLX: https://github.com/ml-explore/mlx

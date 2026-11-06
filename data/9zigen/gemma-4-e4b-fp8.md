@@ -2,7 +2,7 @@
 
 ## Resumen
 
-9zigen/gemma-4-e4b-fp8 es un checkpoint de pesos alojado en HuggingFace por el usuario 9zigen (no se trata de una publicación oficial de Google DeepMind, pese a que el tag `gemma4` sugiere que deriva de la familia Gemma 4). El repositorio contiene 7.941.100.874 parámetros almacenados en safetensors con el formato de cuantización `compressed-tensors`, es decir, una versión en FP8 del modelo. El tamaño total del repositorio es de 11,6 GB, lo que equivale a unos 1,46 bytes por parámetro.
+9zigen/gemma-4-e4b-fp8 es un checkpoint de pesos alojado en Hugging Face por el usuario 9zigen (no se trata de una publicación oficial de Google DeepMind, pese a que el tag `gemma4` sugiere que deriva de la familia Gemma 4). El repositorio contiene 7.941.100.874 parámetros almacenados en safetensors con el formato de cuantización `compressed-tensors`, es decir, una versión en FP8 del modelo. El tamaño total del repositorio es de 11,6 GB, lo que equivale a unos 1,46 bytes por parámetro.
 
 El interés de este tipo de publicación es práctico: los pesos en FP8 con `compressed-tensors` están pensados para servirse con motores de inferencia como vLLM, que aplican kernels de cuantización (por ejemplo, esquemas tipo FP8 W8A8 con escalas por canal o por bloque) para reducir la huella de memoria y aumentar el throughput respecto a un checkpoint en BF16. En un modelo de ~8.000 millones de parámetros, esto puede suponer una reducción cercana a la mitad del espacio ocupado por los pesos en VRAM.
 
@@ -21,7 +21,7 @@ La limitación principal de esta ficha es documental: la model card del reposito
 | Licencia | Gemma (`license:gemma`, Gemma Terms of Use) |
 | Formato de pesos | Safetensors con cuantización `compressed-tensors` (FP8) |
 | Tamaño del repositorio | 11,6 GB |
-| Fecha de creación / actualización | 2026-09-27 / 2026-09-27 (según los metadatos de HuggingFace) |
+| Fecha de creación / actualización | 2026-09-27 / 2026-09-27 (según los metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -98,5 +98,5 @@ Nota: las filas de Llama 3.1 8B y Qwen2.5 7B se incluyen solo como referencia de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/9zigen/gemma-4-e4b-fp8
+- Repositorio en Hugging Face: https://huggingface.co/9zigen/gemma-4-e4b-fp8
 - No se han encontrado enlaces adicionales (papers, blogs, repositorios de código, demos o documentación del autor) en la información proporcionada.

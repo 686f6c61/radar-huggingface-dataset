@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto / rango | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TPayne-spice-harps-interp (v1.2.0) | 192 dim, 6 capas, 8 tokens | 3780-6910 Å, 11 entradas, `mu` | MSE validación 3,5e-7 | no disponible | HuggingFace (bundle astro-emulators-toolkit) |
-| mjablonska/TPayne-spice-harps-v2 | 12 entradas (incluye `marcs_*`) | 3780-6910 Å | Escalones de 30-60 mmag en banda B en cambios de nodo | no disponible | HuggingFace |
-| Turbospectrum (código de síntesis) | no aplica | Rango completo | Referencia física exacta | no disponible | Código abierto (no en HuggingFace) |
+| TPayne-spice-harps-interp (v1.2.0) | 192 dim, 6 capas, 8 tokens | 3780-6910 Å, 11 entradas, `mu` | MSE validación 3,5e-7 | no disponible | Hugging Face (bundle astro-emulators-toolkit) |
+| mjablonska/TPayne-spice-harps-v2 | 12 entradas (incluye `marcs_*`) | 3780-6910 Å | Escalones de 30-60 mmag en banda B en cambios de nodo | no disponible | Hugging Face |
+| Turbospectrum (código de síntesis) | no aplica | Rango completo | Referencia física exacta | no disponible | Código abierto (no en Hugging Face) |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mjablonska/TPayne-spice-harps-interp
+- Hugging Face: https://huggingface.co/mjablonska/TPayne-spice-harps-interp
 - Dataset de entrenamiento: https://huggingface.co/datasets/mjablonska/harps-interp-t02-grid
 - Repositorio SPICE: https://github.com/maja-jablonska/spice
 - Paper SPICE: https://arxiv.org/abs/2511.10998

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `raju-kr/qwen3-1.7b-loan-requirements-lora-v2` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT) sobre el modelo base `Qwen/Qwen3-1.7B`. Por el identificador se deduce que el ajuste está orientado a la tarea de extracción o comprensión de requisitos de préstamos ("loan requirements"), aunque la model card publicada no documenta ni el dataset, ni el procedimiento de entrenamiento, ni el objetivo concreto. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y su README es la plantilla genérica de HuggingFace sin ningún campo completado.
+El modelo `raju-kr/qwen3-1.7b-loan-requirements-lora-v2` es un adaptador LoRA (PEFT) entrenado mediante supervisión fina (SFT) sobre el modelo base `Qwen/Qwen3-1.7B`. Por el identificador se deduce que el ajuste está orientado a la tarea de extracción o comprensión de requisitos de préstamos ("loan requirements"), aunque la model card publicada no documenta ni el dataset, ni el procedimiento de entrenamiento, ni el objetivo concreto. El repositorio tiene un tamaño de 0.0 GB, cero descargas y cero likes, y su README es la plantilla genérica de Hugging Face sin ningún campo completado.
 
 Se trata, por tanto, de un artefacto en estado embrionario y sin validación pública: no hay métricas de evaluación, no se declara licencia, no se declaran idiomas soportados y no se publica información sobre hiperparámetros, rango LoRA, alpha, target modules ni número de épocas. Cualquier uso en producción requeriría una evaluación propia y la verificación previa de la licencia, que al no estar declarada deja el uso comercial en una situación jurídica indeterminada.
 
@@ -71,10 +71,10 @@ No hay datos de rendimiento del adaptador, por lo que la comparación se limita 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|
-| Qwen3-1.7B + LoRA (este modelo) | 1,7B + adaptador | 32.768 tokens (base) | No disponible | HuggingFace, 0 descargas | Sin datos |
-| Qwen3-1.7B (base) | 1,7B | 32.768 tokens | Apache 2.0 | HuggingFace | Sin datos en esta ficha |
-| Llama 3.2 1B | 1,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | HuggingFace | Sin datos en esta ficha |
-| Gemma 2 2B | 2,6B | 8.192 tokens | Términos de uso de Gemma | HuggingFace | Sin datos en esta ficha |
+| Qwen3-1.7B + LoRA (este modelo) | 1,7B + adaptador | 32.768 tokens (base) | No disponible | Hugging Face, 0 descargas | Sin datos |
+| Qwen3-1.7B (base) | 1,7B | 32.768 tokens | Apache 2.0 | Hugging Face | Sin datos en esta ficha |
+| Llama 3.2 1B | 1,2B | 128.000 tokens | Licencia comunitaria Llama 3.2 | Hugging Face | Sin datos en esta ficha |
+| Gemma 2 2B | 2,6B | 8.192 tokens | Términos de uso de Gemma | Hugging Face | Sin datos en esta ficha |
 
 No se dispone de información para comparar el rendimiento del adaptador con ningún modelo alternativo en la tarea de requisitos de préstamos.
 
@@ -91,7 +91,7 @@ No se dispone de información para comparar el rendimiento del adaptador con nin
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/raju-kr/qwen3-1.7b-loan-requirements-lora-v2
+- Modelo en Hugging Face: https://huggingface.co/raju-kr/qwen3-1.7b-loan-requirements-lora-v2
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - PEFT: https://github.com/huggingface/peft
 - TRL: https://github.com/huggingface/trl

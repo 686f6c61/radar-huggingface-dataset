@@ -6,7 +6,7 @@ Microduck footsteps es un paquete de dos políticas de control para el robot cua
 
 El paquete resuelve un problema clásico en robótica de patas: pasar de una marcha reactiva genérica a una locomoción dirigida que coloque las patas en posiciones precisas. Incluye `footsteps.onnx`, una política de seguimiento de pasos entrenada en el entorno `Mjlab-Footsteps-Flat-Backlash-MicroDuck` (run `m09310ur`, iteración 3750), y `footstepnet.onnx`, un planificador de pasos con la geometría del Microduck y pasos de 5 cm.
 
-La relevancia es práctica: el paquete está pensado para desplegarse directamente en el robot físico, con un contrato de observación de 61 dimensiones a 14 acciones y una precisión declarada en simulación de 5-7 mm y 1-2° respecto a los objetivos de aterrizaje. El repositorio es minúsculo (0,0 GB según HuggingFace) y la licencia Apache 2.0 facilita su reutilización e integración en el runtime.
+La relevancia es práctica: el paquete está pensado para desplegarse directamente en el robot físico, con un contrato de observación de 61 dimensiones a 14 acciones y una precisión declarada en simulación de 5-7 mm y 1-2° respecto a los objetivos de aterrizaje. El repositorio es minúsculo (0,0 GB según Hugging Face) y la licencia Apache 2.0 facilita su reutilización e integración en el runtime.
 
 ## Especificaciones tecnicas
 
@@ -71,8 +71,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La ú
 
 | Modelo | Tipo | Entrada/salida | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| apirrone/microduck-footsteps | Política RL + planificador de pasos | `[1,61]→[1,14]` y `[N,8]→[N,3]` | Apache 2.0 | HuggingFace |
-| apirrone/microduck-footstepnet | Planificador de pasos (mismo `footstepnet.onnx`) | `[N,8]→[N,3]` | no disponible | HuggingFace |
+| apirrone/microduck-footsteps | Política RL + planificador de pasos | `[1,61]→[1,14]` y `[N,8]→[N,3]` | Apache 2.0 | Hugging Face |
+| apirrone/microduck-footstepnet | Planificador de pasos (mismo `footstepnet.onnx`) | `[N,8]→[N,3]` | no disponible | Hugging Face |
 | Políticas de marcha del runtime Microduck | Marcha estándar del robot (sin planificación de pasos) | no disponible | no disponible | Repositorio `pollen-robotics/microduck` |
 
 No se dispone de datos de rendimiento comparables entre estas alternativas en la información proporcionada.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparables entre estas alternativas en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/apirrone/microduck-footsteps
+- Hugging Face: https://huggingface.co/apirrone/microduck-footsteps
 - Planificador FootstepNet: https://huggingface.co/apirrone/microduck-footstepnet
 - Runtime del robot (rama `footsteps`): https://github.com/pollen-robotics/microduck
-- Patrones imprimibles: `patterns/footstep_patterns.pdf` y `patterns/<name>.json` dentro del repositorio de HuggingFace
+- Patrones imprimibles: `patterns/footstep_patterns.pdf` y `patterns/<name>.json` dentro del repositorio de Hugging Face

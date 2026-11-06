@@ -99,9 +99,9 @@ Rendimiento por variante de precisión (teacher holdout):
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| laya-ad v2.2 | 309,3M | No disponible (recomendado 384 tokens) | Clasificación multi-cabeza de publicidad en chino | Apache-2.0 | HuggingFace (x6nux/laya-ad) |
-| convaiinnovations/laya-multilingual | 322M | No disponible | Encoder base multilingüe (modelo del que deriva) | Apache-2.0 | HuggingFace |
-| ModernBERT base | ~149M | Hasta 8.192 tokens (según la familia ModernBERT) | Encoder de propósito general | Apache-2.0 | HuggingFace |
+| laya-ad v2.2 | 309,3M | No disponible (recomendado 384 tokens) | Clasificación multi-cabeza de publicidad en chino | Apache-2.0 | Hugging Face (x6nux/laya-ad) |
+| convaiinnovations/laya-multilingual | 322M | No disponible | Encoder base multilingüe (modelo del que deriva) | Apache-2.0 | Hugging Face |
+| ModernBERT base | ~149M | Hasta 8.192 tokens (según la familia ModernBERT) | Encoder de propósito general | Apache-2.0 | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros clasificadores de spam o publicidad en chino en la información proporcionada.
 
@@ -119,5 +119,5 @@ No se dispone de datos de benchmarks comparativos con otros clasificadores de sp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/x6nux/laya-ad
+- Modelo en Hugging Face: https://huggingface.co/x6nux/laya-ad
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual

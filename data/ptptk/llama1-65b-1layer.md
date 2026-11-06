@@ -2,7 +2,7 @@
 
 ## Resumen
 
-llama1-65b-1layer es un artefacto de investigación publicado por el usuario pTpTk en HuggingFace. No es un modelo entrenado ni un checkpoint utilizable: es una extracción de una única capa decodificadora representativa (la capa 0) del modelo huggyllama/llama-65b, con las dimensiones de texto, la configuración de contexto/RoPE y los ajustes de precisión del original conservados. El repositorio no contiene pesos (0,0 GB) y está pensado para cargarse en SGLang nativo con `--load-format dummy`, es decir, como esqueleto de ejecución para pruebas.
+llama1-65b-1layer es un artefacto de investigación publicado por el usuario pTpTk en Hugging Face. No es un modelo entrenado ni un checkpoint utilizable: es una extracción de una única capa decodificadora representativa (la capa 0) del modelo huggyllama/llama-65b, con las dimensiones de texto, la configuración de contexto/RoPE y los ajustes de precisión del original conservados. El repositorio no contiene pesos (0,0 GB) y está pensado para cargarse en SGLang nativo con `--load-format dummy`, es decir, como esqueleto de ejecución para pruebas.
 
 El propósito declarado es servir como benchmark de solo texto y como material de estudio sobre tipos de capa frontier. La capa incluida usa atención multi-cabeza (MHA) y FFN densa, sin módulos PLE, y no se retiene ningún módulo MTP (Multi-Token Prediction), por lo que la decodificación estándar `one_batch` no ejecuta MTP. El contexto publicado es de 2.048 tokens contando prompt y tokens generados, y la reducción de profundidad no amplía ese límite.
 
@@ -77,8 +77,8 @@ No se conocen artefactos comparables de una sola capa publicados con la misma fi
 
 | Modelo | Parámetros | Capas | Contexto | Pesos incluidos | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| pTpTk/llama1-65b-1layer | 65.000 millones nominales | 1 | 2.048 tokens | No | no disponible | HuggingFace, 0 descargas |
-| huggyllama/llama-65b (origen) | 65.000 millones | no disponible en la información proporcionada | 2.048 tokens | Sí | no disponible en la información proporcionada | HuggingFace, revisión 49707c53 |
+| pTpTk/llama1-65b-1layer | 65.000 millones nominales | 1 | 2.048 tokens | No | no disponible | Hugging Face, 0 descargas |
+| huggyllama/llama-65b (origen) | 65.000 millones | no disponible en la información proporcionada | 2.048 tokens | Sí | no disponible en la información proporcionada | Hugging Face, revisión 49707c53 |
 | Otros artefactos de capa única | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se conocen artefactos comparables de una sola capa publicados con la misma fi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pTpTk/llama1-65b-1layer
+- Modelo en Hugging Face: https://huggingface.co/pTpTk/llama1-65b-1layer
 - Modelo origen huggyllama/llama-65b (revisión referenciada): https://huggingface.co/huggyllama/llama-65b/tree/49707c5313d34d1c5a846e29cf2a2a650c22c8ee
 - Documentación de requisitos de SGLang nativo y razonamiento de capas: `docs/frontier-layer-types.md` dentro del repositorio (no se proporciona URL directa)
 - Script de ejecución: `llama1-65b-1layer.run` en la raíz del checkout (no se proporciona URL directa)

@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada: con ~4,46 mil millones de parámetros, una inferencia en precisión FP16 requeriría aproximadamente 8,9 GB solo para los pesos, más overhead de activaciones y KV cache. Con cuantización a 8 bits podría reducirse a ~4,5 GB, y a 4 bits a ~2,3 GB, pero no se dispone de archivos cuantizados oficiales.
 - GPU recomendadas: para FP16, una GPU con al menos 12 GB de VRAM (p. ej., RTX 3060 12GB, RTX 4070, A10) sería necesaria. Para cuantización ligera, una RTX 3060 8GB podría bastar, pero sin confirmación.
 - Compatibilidad con consumer GPU: sí, en principio, si se aplica cuantización, aunque no hay archivos GGUF ni AWQ publicados.
-- Opciones de despliegue: al ser un modelo `transformers`, puede usarse con vLLM, TGI, o directamente con la API de HuggingFace. No se menciona compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: al ser un modelo `transformers`, puede usarse con vLLM, TGI, o directamente con la API de Hugging Face. No se menciona compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -69,7 +69,7 @@ No se dispone de datos comparativos. El propio autor ha publicado otros fine-tun
 
 ## Enlaces
 
-- [HuggingFace - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216)
-- [Modelo base en HuggingFace](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
-- [Modelo similar 2of4 en HuggingFace](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter_20260811_014823/tree/main)
+- [Hugging Face - modelo](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-1of4-imp-randrouter_20260827_200216)
+- [Modelo base en Hugging Face](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune)
+- [Modelo similar 2of4 en Hugging Face](https://huggingface.co/KKHYA/llavaqwen3-1.7b-finetune-nm-mask-moe-sparse-4e-2k-2of4-imp-randrouter_20260811_014823/tree/main)
 - [Página externa con datos del modelo base](https://free2aitools.com/model/kkhya/llavaqwen3-1.7b-finetune)

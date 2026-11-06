@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Coffeenautic/clases-modelos (agregado) | variable (0,11-0,23 B por artefacto) | no disponible | other (agregada) | ONNX, TFLite, .task, bin | HuggingFace, 16 descargas |
-| dccuchile/bert-base-spanish-wwm-cased | ~110 M | 512 | CC BY 4.0 | safetensors/PyTorch | HuggingFace, ampliamente usado |
-| Xenova/clip-vit-base-patch32 | ~151 M | 77 (texto) | MIT | ONNX | HuggingFace, ecosistema transformers.js |
-| onnx-community/Florence-2-base-ft | ~0,23 B | variable | MIT | ONNX | HuggingFace, ecosistema ONNX |
+| Coffeenautic/clases-modelos (agregado) | variable (0,11-0,23 B por artefacto) | no disponible | other (agregada) | ONNX, TFLite, .task, bin | Hugging Face, 16 descargas |
+| dccuchile/bert-base-spanish-wwm-cased | ~110 M | 512 | CC BY 4.0 | safetensors/PyTorch | Hugging Face, ampliamente usado |
+| Xenova/clip-vit-base-patch32 | ~151 M | 77 (texto) | MIT | ONNX | Hugging Face, ecosistema transformers.js |
+| onnx-community/Florence-2-base-ft | ~0,23 B | variable | MIT | ONNX | Hugging Face, ecosistema ONNX |
 
 ## Limitaciones y advertencias
 
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Coffeenautic/clases-modelos
+- Repositorio en Hugging Face: https://huggingface.co/Coffeenautic/clases-modelos
 - BETO original: https://huggingface.co/dccuchile/bert-base-spanish-wwm-cased
 - CLIP ViT-B/32 (Xenova): https://huggingface.co/Xenova/clip-vit-base-patch32
 - Florence-2-base-ft (onnx-community): https://huggingface.co/onnx-community/Florence-2-base-ft

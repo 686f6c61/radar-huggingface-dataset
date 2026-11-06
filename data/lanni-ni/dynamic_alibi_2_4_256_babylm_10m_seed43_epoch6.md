@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch6` es un modelo de generación de texto publicado en HuggingFace por el usuario `Lanni-ni`. Se trata de un modelo pequeño, con 27.447.040 parámetros, almacenado en formato `safetensors` y etiquetado como `transformers` y `custom_code`. El nombre sugiere una implementación de atención con sesgos lineales dinámicos (dynamic ALiBi) y un entrenamiento relacionado con el corpus BabyLM, aunque no hay documentación que lo confirme.
+El modelo `Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch6` es un modelo de generación de texto publicado en Hugging Face por el usuario `Lanni-ni`. Se trata de un modelo pequeño, con 27.447.040 parámetros, almacenado en formato `safetensors` y etiquetado como `transformers` y `custom_code`. El nombre sugiere una implementación de atención con sesgos lineales dinámicos (dynamic ALiBi) y un entrenamiento relacionado con el corpus BabyLM, aunque no hay documentación que lo confirme.
 
-La ficha del modelo en HuggingFace es una plantilla autogenerada, sin información detallada sobre arquitectura, datos de entrenamiento, licencia, idiomas o capacidades. El modelo tiene muy pocas descargas (13) y ningún like, lo que indica que es un experimento de investigación, probablemente orientado a estudiar variantes de atención en modelos de lenguaje pequeños. Su relevancia actual es limitada, salvo para investigadores interesados en comparar implementaciones de ALiBi dinámico en modelos de escala reducida.
+La ficha del modelo en Hugging Face es una plantilla autogenerada, sin información detallada sobre arquitectura, datos de entrenamiento, licencia, idiomas o capacidades. El modelo tiene muy pocas descargas (13) y ningún like, lo que indica que es un experimento de investigación, probablemente orientado a estudiar variantes de atención en modelos de lenguaje pequeños. Su relevancia actual es limitada, salvo para investigadores interesados en comparar implementaciones de ALiBi dinámico en modelos de escala reducida.
 
 ## Especificaciones técnicas
 
@@ -59,4 +59,4 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch6
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_babylm_10m_seed43_epoch6

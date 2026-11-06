@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ChatR Labs Uncensored Omni LoRA v0.1 es un adaptador LoRA de rango 128 desarrollado por ChatR Labs (publicado en HuggingFace bajo el usuario Manimama) sobre el modelo base Qwen/Qwen-Image-2.1. Se trata de un adaptador que unifica generacion de imagen a partir de texto y edicion de imagen mediante instrucciones en lenguaje natural en un unico conjunto de pesos, lo que evita tener que cargar dos adaptadores separados para ambos flujos de trabajo.
+ChatR Labs Uncensored Omni LoRA v0.1 es un adaptador LoRA de rango 128 desarrollado por ChatR Labs (publicado en Hugging Face bajo el usuario Manimama) sobre el modelo base Qwen/Qwen-Image-2.1. Se trata de un adaptador que unifica generacion de imagen a partir de texto y edicion de imagen mediante instrucciones en lenguaje natural en un unico conjunto de pesos, lo que evita tener que cargar dos adaptadores separados para ambos flujos de trabajo.
 
 El modelo resuelve un problema practico: los flujos de text-to-image y de edicion de imagen suelen requerir pipelines y adaptadores distintos. Este LoRA permite reutilizar la misma carga del pipeline base de Qwen-Image-2.1 para ambas tareas, pasando imagenes de referencia opcionales (de una a tres) junto con la instruccion. La calificacion "Uncensored" indica que el adaptador ha sido ajustado sin los filtros de contenido habituales del modelo base, orientandose a casos de uso creativos sin restricciones.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ChatR Labs Uncensored Omni LoRA v0.1 | LoRA sobre Qwen-Image-2.1 | no disponible (adaptador) | no disponible | qwen-research | HuggingFace (0 descargas) |
-| Qwen/Qwen-Image-2.1 (base) | Modelo de difusion text-to-image | no disponible | no disponible | qwen-research | HuggingFace |
-| Qwen-Image-Edit-2511 | Modelo de edicion de imagen | no disponible | no disponible | no disponible | HuggingFace (arquitectura incompatible segun la model card) |
+| ChatR Labs Uncensored Omni LoRA v0.1 | LoRA sobre Qwen-Image-2.1 | no disponible (adaptador) | no disponible | qwen-research | Hugging Face (0 descargas) |
+| Qwen/Qwen-Image-2.1 (base) | Modelo de difusion text-to-image | no disponible | no disponible | qwen-research | Hugging Face |
+| Qwen-Image-Edit-2511 | Modelo de edicion de imagen | no disponible | no disponible | no disponible | Hugging Face (arquitectura incompatible segun la model card) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la informacion proporcionada; la model card solo senala la incompatibilidad arquitectonica con versiones anteriores de la familia Qwen-Image.
 
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Manimama/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Manimama/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Descarga directa del LoRA BF16: https://huggingface.co/chatrlabs/Qwen-Image-2.1-Uncensored-Omni-LoRA-v0.1/resolve/main/chatrlabs-omni-lora-v0.1-bf16.safetensors?download=true
 - Playground de ChatR Labs: https://chatrlabs.com/

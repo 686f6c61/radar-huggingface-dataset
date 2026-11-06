@@ -92,7 +92,7 @@ No se dispone de resultados de benchmarks para los modelos comparables en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-l4
+- Modelo en Hugging Face: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-reward-diff-l4
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
 - Modelo principal del mismo nivel: https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-grpo-l4
 - Modelo SFT de nivel L4 (paso previo obligatorio): https://huggingface.co/ssurface/cot-dialect-olmo3-7b-think-sft-l4

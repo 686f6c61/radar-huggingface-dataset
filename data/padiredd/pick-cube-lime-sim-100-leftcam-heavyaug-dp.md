@@ -81,5 +81,5 @@ No disponible. La información proporcionada no incluye otros modelos comparable
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/padiredd/pick-cube-lime-sim-100-leftcam-heavyaug-dp
+- Hugging Face: https://huggingface.co/padiredd/pick-cube-lime-sim-100-leftcam-heavyaug-dp
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la información disponible.

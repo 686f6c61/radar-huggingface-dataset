@@ -4,7 +4,7 @@
 
 Atman_Ai_Qwen es un modelo de lenguaje de 8.950 millones de parametros desarrollado por DoctorEdoP369, construido a partir del modelo base DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED. Se distribuye exclusivamente en formato GGUF, lo que permite su ejecucion offline en hardware de consumo, e incluye un proyector multimodal para soporte de vision. El modelo opera en modo thinking, generando una cadena de razonamiento explicita antes de cada respuesta, y esta orientado al razonamiento profundo tanto cientifico-matematico como psicologico.
 
-El autor lo describe como un modelo con filtros de seguridad reducidos, una decision de diseno deliberada orientada a la autonomia del usuario, y con la ventana de contexto extendida mediante archivos Yarn. Se posiciona como una alternativa de alto rendimiento dentro de la familia Qwen 3.5, con capacidades multilingues y de conversacion multi-turno coherente. En el momento de la consulta, el modelo no registra descargas ni valoraciones en HuggingFace.
+El autor lo describe como un modelo con filtros de seguridad reducidos, una decision de diseno deliberada orientada a la autonomia del usuario, y con la ventana de contexto extendida mediante archivos Yarn. Se posiciona como una alternativa de alto rendimiento dentro de la familia Qwen 3.5, con capacidades multilingues y de conversacion multi-turno coherente. En el momento de la consulta, el modelo no registra descargas ni valoraciones en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento comparativo publicados para estos modelos.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/DoctorEdoP369/Atman_Ai_Qwen
+- Modelo en Hugging Face: https://huggingface.co/DoctorEdoP369/Atman_Ai_Qwen
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED
 - Sitio oficial de Qwen: https://qwen.ai/home
 - Documentacion de Qwen: https://qwen.readthedocs.io/

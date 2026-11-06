@@ -56,4 +56,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 - Sin garantías de soporte: al ser un proyecto personal sin comunidad aparente, no hay mantenimiento ni actualizaciones garantizadas.
 
 ## Enlaces
-- [HuggingFace - Thanha17/classification_CIFAR100](https://huggingface.co/Thanha17/classification_CIFAR100)
+- [Hugging Face - Thanha17/classification_CIFAR100](https://huggingface.co/Thanha17/classification_CIFAR100)

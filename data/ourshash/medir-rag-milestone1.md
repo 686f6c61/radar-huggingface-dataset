@@ -111,7 +111,7 @@ La comparación relevante es funcional: frente a un recuperador denso, este sist
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OurShash/MedIR-RAG-Milestone1
+- Modelo en Hugging Face: https://huggingface.co/OurShash/MedIR-RAG-Milestone1
 - Dataset DinoStackAI/bioasq-rag-13b-resplit: https://huggingface.co/datasets/DinoStackAI/bioasq-rag-13b-resplit
 - Proyecto relacionado IESNunes/MedIR-RAG: https://huggingface.co/IESNunes/MedIR-RAG
 - PyTerrier (documentación): https://pyterrier.readthedocs.io/

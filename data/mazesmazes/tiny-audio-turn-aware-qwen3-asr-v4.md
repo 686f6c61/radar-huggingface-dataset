@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `mazesmazes/tiny-audio-turn-aware-qwen3-asr-v4` es un modelo de reconocimiento automático del habla (ASR) publicado en HuggingFace por el usuario `mazesmazes`. Con 782.426.112 parámetros (dato extraído de los pesos en safetensors) y un repositorio de 1,6 GB, se trata de un modelo de tamano pequeno dentro de la familia de modelos de audio, lo que lo situa en la categoría de modelos desplegables en hardware de consumo. El tag `qwen3_asr` y el propio nombre del repositorio indican que deriva de la arquitectura Qwen3-ASR, aunque la model card no documenta esta relación.
+El modelo `mazesmazes/tiny-audio-turn-aware-qwen3-asr-v4` es un modelo de reconocimiento automático del habla (ASR) publicado en Hugging Face por el usuario `mazesmazes`. Con 782.426.112 parámetros (dato extraído de los pesos en safetensors) y un repositorio de 1,6 GB, se trata de un modelo de tamano pequeno dentro de la familia de modelos de audio, lo que lo situa en la categoría de modelos desplegables en hardware de consumo. El tag `qwen3_asr` y el propio nombre del repositorio indican que deriva de la arquitectura Qwen3-ASR, aunque la model card no documenta esta relación.
 
-La relevancia potencial del modelo residiría en dos ejes: su tamano reducido (aproximadamente 782 millones de parámetros, similar a Whisper medium) y la componente "turn-aware" que sugiere capacidad para gestionar turnos de conversación en audio, algo útil en transcripción de diálogos y reuniones. Sin embargo, la model card es una plantilla automática de HuggingFace sin rellenar: no se declara licencia, idiomas, datos de entrenamiento, procedimiento de evaluación ni resultados de benchmarks.
+La relevancia potencial del modelo residiría en dos ejes: su tamano reducido (aproximadamente 782 millones de parámetros, similar a Whisper medium) y la componente "turn-aware" que sugiere capacidad para gestionar turnos de conversación en audio, algo útil en transcripción de diálogos y reuniones. Sin embargo, la model card es una plantilla automática de Hugging Face sin rellenar: no se declara licencia, idiomas, datos de entrenamiento, procedimiento de evaluación ni resultados de benchmarks.
 
 Se trata, por tanto, de un checkpoint sin documentación técnica verificable, con 0 descargas y 0 likes en el momento de la consulta, sin resultados publicados y sin licencia declarada. Cualquier uso en producción requeriría una validación independiente previa.
 
@@ -29,7 +29,7 @@ Se trata, por tanto, de un checkpoint sin documentación técnica verificable, c
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura interna, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla genérica autogenerada por HuggingFace y todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparámetros, régimen de precisión, hardware) aparecen como `[More Information Needed]`.
+No hay informacion publicada sobre la arquitectura interna, los datos de entrenamiento ni el procedimiento de ajuste. La model card es la plantilla genérica autogenerada por Hugging Face y todos los campos relevantes (desarrollador, tipo de modelo, datos de entrenamiento, hiperparámetros, régimen de precisión, hardware) aparecen como `[More Information Needed]`.
 
 Los únicos elementos inferibles son los metadatos del repositorio: 782.426.112 parámetros, pesos en safetensors de 1,6 GB (cifra coherente con almacenamiento en precisión de 16 bits, es decir, aproximadamente 2 bytes por parámetro) y el tag `qwen3_asr`, que sugiere reutilización de componentes de la familia Qwen3-ASR, presumiblemente un encoder de audio acoplado a un decoder. El término "turn-aware" del nombre apunta a un modelado explícito de turnos de habla, pero no existe ninguna descripción técnica que lo confirme ni que detalle si se implementa mediante tokens especiales, cabeceras auxiliares o etiquetado de segmentos.
 
@@ -93,7 +93,7 @@ Frente a estas alternativas, el modelo evaluado no ofrece ninguna ventaja verifi
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla autogenerada de HuggingFace sin ningún campo completado. No se puede verificar autoría, procedencia de los datos ni metodo de entrenamiento.
+- Ausencia total de documentacion: la model card es la plantilla autogenerada de Hugging Face sin ningún campo completado. No se puede verificar autoría, procedencia de los datos ni metodo de entrenamiento.
 - Licencia no declarada: sin licencia explícita, el uso comercial y la redistribucion quedan en un limbo legal. En la practica, la ausencia de licencia equivale a reserva de derechos por defecto en muchas jurisdicciones, por lo que no debería desplegarse en produccion sin aclararlo con el autor.
 - Riesgo de alucinacion: todo modelo ASR puede generar texto plausible que no corresponde al audio, especialmente con ruido de fondo, musica, silencios largos o audio fuera de dominio. Al no haber evaluacion publicada, no se conoce la magnitud de este riesgo.
 - Idiomas desconocidos: no se declara ningun idioma soportado. Un modelo entrenado solo en ingles degrada severamente su WER en castellano u otros idiomas.
@@ -106,7 +106,7 @@ Frente a estas alternativas, el modelo evaluado no ofrece ninguna ventaja verifi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mazesmazes/tiny-audio-turn-aware-qwen3-asr-v4
+- Hugging Face: https://huggingface.co/mazesmazes/tiny-audio-turn-aware-qwen3-asr-v4
 - arXiv 1910.09700 (Lacoste et al., 2019), citado en la plantilla de la model card unicamente como referencia de la calculadora de impacto medioambiental: https://arxiv.org/abs/1910.09700
 - Paper del modelo: no disponible
 - Repositorio de codigo: no disponible

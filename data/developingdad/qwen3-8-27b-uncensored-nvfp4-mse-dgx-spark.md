@@ -119,7 +119,7 @@ Respecto a otros modelos de la misma categoria (asistentes multimodales ablitera
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark
+- Repositorio Hugging Face: https://huggingface.co/DevelopingDad/Qwen3.8-27B-Uncensored-NVFP4-MSE-DGX-Spark
 - Modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Revision del modelo base: https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored/tree/9878936be9458522b5aeed0e13476bb8426f57f0
 - Modelo draft DFlash2 (externo, no incluido): https://huggingface.co/maurienne-ai/Qwen3.8-27B-DFlash2-NVFP4-RTNcal

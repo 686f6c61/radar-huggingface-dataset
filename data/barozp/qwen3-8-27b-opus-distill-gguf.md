@@ -100,7 +100,7 @@ La comparativa directa es contra el modelo base: el destilado añade +26 puntos 
 
 ## Enlaces
 
-- Repositorio HuggingFace del GGUF: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-GGUF
+- Repositorio Hugging Face del GGUF: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill-GGUF
 - Modelo safetensors fuente: https://huggingface.co/barozp/Qwen3.8-27B-Opus-Distill
 - Dataset de entrenamiento: https://huggingface.co/datasets/barozp/opus-reasoning-distill-train (referenciado en la model card; no se ha verificado el enlace directo)
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B (referenciado; no se ha verificado el enlace directo)

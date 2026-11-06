@@ -90,7 +90,7 @@ Candidatos de la misma categoria (MoE con pocos parametros activos, orientados a
 
 ## Enlaces
 
-- Repositorio HuggingFace del checkpoint: https://huggingface.co/urakozz/flint-40B-A2.5B-W4A16-g64-AutoRound-GPTQ
+- Repositorio Hugging Face del checkpoint: https://huggingface.co/urakozz/flint-40B-A2.5B-W4A16-g64-AutoRound-GPTQ
 - Modelo base: https://huggingface.co/RecursiveSI/flint
 - Repositorio de AutoRound (Intel): https://github.com/intel/auto-round
 - Dataset de calibracion (NVIDIA OpenCodeInstruct): https://huggingface.co/datasets/nvidia/OpenCodeInstruct

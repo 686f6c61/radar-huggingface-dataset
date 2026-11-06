@@ -6,7 +6,7 @@
 
 `mart-inmar/review-lightweight-multimodal-2024` no es un modelo de aprendizaje automatico entrenado, sino un repositorio de notas de investigacion sobre multimodalidad ligera. La model card lo declara de forma explicita: contiene motivacion, trabajo relacionado, una hipotesis falsable y un plan de evaluacion, y "no se presenta como un paper completado ni como una release de modelos entrenados". El repositorio incluye unicamente dos ficheros, `summary.md` y `README.md`, con un tamano total de 0,0 GB.
 
-Los metadatos de HuggingFace incluyen la etiqueta `safetensors` y un recuento de parametros totales de 16.576 (aproximadamente 16,6 mil parametros), un volumen incompatible con cualquier modelo multimodal funcional y coherente con tensores vacios o de relleno. La etiqueta `transformer` tampoco va acompanada de ninguna descripcion de arquitectura, configuracion o tokenizador en la documentacion disponible.
+Los metadatos de Hugging Face incluyen la etiqueta `safetensors` y un recuento de parametros totales de 16.576 (aproximadamente 16,6 mil parametros), un volumen incompatible con cualquier modelo multimodal funcional y coherente con tensores vacios o de relleno. La etiqueta `transformer` tampoco va acompanada de ninguna descripcion de arquitectura, configuracion o tokenizador en la documentacion disponible.
 
 Su relevancia actual es, por tanto, documental y metodologica: sirve como plantilla de como estructurar una nota de investigacion reproducible (alcance, confounders, baselines emparejados, benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo y preguntas abiertas) antes de invertir en entrenamiento. No debe citarse como evidencia empirica de ninguna mejora de rendimiento.
 
@@ -19,7 +19,7 @@ Su relevancia actual es, por tanto, documental y metodologica: sirve como planti
 | Parametros activos | No aplica (no es un modelo MoE) |
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (no se publican pesos entrenados que puedan cuantizarse) |
-| Idiomas soportados | No disponible (el campo de idiomas de HuggingFace figura como no disponible) |
+| Idiomas soportados | No disponible (el campo de idiomas de Hugging Face figura como no disponible) |
 | Licencia | MIT |
 | Formato de pesos | Safetensors (etiqueta de metadatos; el repositorio solo contiene `summary.md` y `README.md`) |
 
@@ -47,7 +47,7 @@ Tampoco hay informacion sobre entrenamiento: ni numero de tokens, ni composicion
 - Revision metodologica interna: emplear la note como lista de comprobacion en una revision de equipo, verificando que cualquier resultado que se publique incluya versiones de dataset, comandos, semillas, hardware y logs en bruto, tal como exige el autor.
 - Formacion de investigadores junior: mostrar un ejemplo de como separar claramente hipotesis de resultados y por que no deben presentarse planes como evidencia empirica.
 - Diseno de experimentos con baselines emparejados: tomar la propuesta de comparacion con baselines de igual presupuesto computacional y adaptarla a un benchmark concreto antes de lanzar entrenamientos costosos.
-- Auditoria de repositorios de HuggingFace: utilizar este caso como referencia de deteccion de fichas que declaran etiquetas de modelo (`safetensors`, `transformer`) sin artefacto funcional detras, para calibrar filtros automaticos de calidad en un catalogo interno.
+- Auditoria de repositorios de Hugging Face: utilizar este caso como referencia de deteccion de fichas que declaran etiquetas de modelo (`safetensors`, `transformer`) sin artefacto funcional detras, para calibrar filtros automaticos de calidad en un catalogo interno.
 - Documentacion de limitaciones y terminos de datos: reutilizar el aviso sobre revisar los terminos de las fuentes externas cuando el repositorio se usa con datasets de terceros, aplicandolo a la politica de licencias de un proyecto propio.
 
 ## Benchmarks y rendimiento
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La pr
 | Contexto | No disponible | No disponible |
 | Rendimiento | Sin benchmarks publicados | No disponible |
 | Licencia | MIT | No disponible |
-| Disponibilidad | Publico en HuggingFace, 0 descargas, 0 likes | No disponible |
+| Disponibilidad | Publico en Hugging Face, 0 descargas, 0 likes | No disponible |
 
 No se han encontrado en la busqueda web ni en la model card modelos comparables de la misma categoria (multimodalidad ligera) con datos verificables. La busqueda web realizada devolvio exclusivamente resultados no relacionados con el repositorio (festivales de marionetas, una marca de bolsos, la entrada de Wikcionario para "mart" y una fundacion de conservacion), por lo que no aportan ninguna comparacion valida.
 
@@ -92,7 +92,7 @@ No se han encontrado en la busqueda web ni en la model card modelos comparables 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mart-inmar/review-lightweight-multimodal-2024
+- Repositorio en Hugging Face: https://huggingface.co/mart-inmar/review-lightweight-multimodal-2024
 - Fichero principal de la nota: `summary.md` dentro del repositorio (https://huggingface.co/mart-inmar/review-lightweight-multimodal-2024/blob/main/summary.md)
 - Documentacion del repositorio: `README.md` (https://huggingface.co/mart-inmar/review-lightweight-multimodal-2024/blob/main/README.md)
 - Papers, blogs, repos de codigo o demos adicionales: no disponibles en la informacion proporcionada. La busqueda web no devolvio ningun resultado relacionado con el repositorio ni con su autor.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-9B-CORTEX-LoRA-v1 es un ajuste fino mediante LoRA del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario Johnny5b en HuggingFace. Se trata de un adaptador derivado de un modelo base de la familia MiMo de Xiaomi, que por su nomenclatura corresponde a un modelo destilado de la familia Qwen con aproximadamente 9.000 millones de parametros. El entrenamiento se ha realizado con la libreria TRL de HuggingFace aplicando supervision fina (SFT), segun declara la propia model card.
+MiMo-9B-CORTEX-LoRA-v1 es un ajuste fino mediante LoRA del modelo XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, publicado por el usuario Johnny5b en Hugging Face. Se trata de un adaptador derivado de un modelo base de la familia MiMo de Xiaomi, que por su nomenclatura corresponde a un modelo destilado de la familia Qwen con aproximadamente 9.000 millones de parametros. El entrenamiento se ha realizado con la libreria TRL de Hugging Face aplicando supervision fina (SFT), segun declara la propia model card.
 
 El repositorio ocupa unicamente 0,1 GB, un tamano coherente con la publicacion de adaptadores LoRA y no de pesos completos, lo que implica que su uso requiere cargar por separado el modelo base XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B. El modelo no registra descargas ni valoraciones en el momento de la consulta y carece de informacion publica sobre licencia, idiomas, pipeline o composicion del dataset de entrenamiento.
 
@@ -44,8 +44,8 @@ No se dispone de documentacion suficiente para recomendar casos de uso en produc
 - Experimentacion en investigacion: el adaptador puede cargarse sobre el modelo base para estudiar el efecto del ajuste SFT con TRL en tareas concretas, comparando su comportamiento con el modelo sin ajustar.
 - Prototipado de generacion de texto conversacional: la model card demuestra su uso con `pipeline` de Transformers, por lo que es viable como base para pruebas de generacion de texto en entornos de desarrollo.
 - Ajuste incremental de bajo coste: al tratarse de un adaptador LoRA, puede reutilizarse como punto de partida para nuevos ajustes sin necesidad de reentrenar el modelo completo.
-- Evaluacion comparativa de tecnicas de fine-tuning: util como caso de estudio sobre pipelines TRL y su integracion con el ecosistema de HuggingFace.
-- Docencia y formacion: sirve para ilustrar el flujo completo de publicacion de un adaptador derivado de un modelo base en HuggingFace.
+- Evaluacion comparativa de tecnicas de fine-tuning: util como caso de estudio sobre pipelines TRL y su integracion con el ecosistema de Hugging Face.
+- Docencia y formacion: sirve para ilustrar el flujo completo de publicacion de un adaptador derivado de un modelo base en Hugging Face.
 - Pruebas de integracion con endpoints compatibles: la etiqueta `endpoints_compatible` sugiere que puede desplegarse en infraestructura de inferencia compatible, aunque sin datos de latencia ni throughput no puede dimensionarse su idoneidad.
 
 Cualquier uso en atencion al cliente, generacion de codigo en produccion o tareas criticas queda fuera de recomendacion hasta que existan benchmarks, licencia clara y documentacion de idiomas.
@@ -68,8 +68,8 @@ La unica referencia directa disponible es el modelo base del que deriva. No se d
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MiMo-9B-CORTEX-LoRA-v1 | no disponible (base ~9B) | no disponible | no disponible | HuggingFace (0 descargas) |
-| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | ~9B (segun nombre) | no disponible | no disponible | HuggingFace |
+| MiMo-9B-CORTEX-LoRA-v1 | no disponible (base ~9B) | no disponible | no disponible | Hugging Face (0 descargas) |
+| XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B | ~9B (segun nombre) | no disponible | no disponible | Hugging Face |
 
 No se dispone de informacion sobre modelos comparables adicionales.
 
@@ -87,7 +87,7 @@ No se dispone de informacion sobre modelos comparables adicionales.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Johnny5b/MiMo-9B-CORTEX-LoRA-v1
+- Modelo en Hugging Face: https://huggingface.co/Johnny5b/MiMo-9B-CORTEX-LoRA-v1
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - Espacio de seguimiento de entrenamiento (trackio): https://huggingface.co/spaces/Johnny5b/trackio
 - Libreria TRL (framework de entrenamiento): https://github.com/huggingface/trl

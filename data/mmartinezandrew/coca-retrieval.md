@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mmartinezandrew/coca-retrieval` es un repositorio publicado en HuggingFace que contiene una implementación reducida de una arquitectura denominada Coca, orientada a tareas de recuperación (retrieval). Lo relevante, y que condiciona toda esta ficha, es que el propio autor declara explícitamente que se trata de un punto de partida reproducible y **no** de un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint evaluado. Por tanto, no existe ningún resultado de benchmark asociado al repositorio.
+`mmartinezandrew/coca-retrieval` es un repositorio publicado en Hugging Face que contiene una implementación reducida de una arquitectura denominada Coca, orientada a tareas de recuperación (retrieval). Lo relevante, y que condiciona toda esta ficha, es que el propio autor declara explícitamente que se trata de un punto de partida reproducible y **no** de un modelo entrenado: el fichero `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo, no un checkpoint evaluado. Por tanto, no existe ningún resultado de benchmark asociado al repositorio.
 
 El modelo tiene 49.600 parámetros según el recuento de safetensors, un tamaño propio de un artefacto de juguete o de validación de código más que de un sistema desplegable. La configuración registrada incluye atención estándar, fusión de tipo Tucker, activación swish y normalización groupnorm, con una receta de entrenamiento por defecto basada en el optimizador LAMB y un schedule OneCycle. No se indica idioma, pipeline ni datos de entrenamiento.
 
@@ -77,5 +77,5 @@ No disponible. No se puede establecer una comparativa significativa con modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mmartinezandrew/coca-retrieval
+- Modelo en Hugging Face: https://huggingface.co/mmartinezandrew/coca-retrieval
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información proporcionada.

@@ -92,11 +92,11 @@ Rendimiento medido en un M3 Max de 40 núcleos GPU, contexto de 262K bajo emulac
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|---|
-| IQ3_XXS_M64 (este fichero) | no disponible | 262K | IQ3_XXS mixta (4 capas en Q2_0) | Qwen Community 1.0 | HuggingFace, 0 descargas | 42,92 GiB; KL 0,1835 vs IQ3_S; 47-52 tok/s decode en M3 Max |
-| IQ3_XXS (ISTA-DASLab) | no disponible | 262K | IQ3_XXS | Qwen Community 1.0 | HuggingFace | 43,80 GiB; KL 0,1834; no cabe en Mac de 64 GB con Neural Engine |
-| Q2_0 (ISTA-DASLab) | no disponible | 262K | Q2_0 | Qwen Community 1.0 | HuggingFace | KL 0,4380; acuerdo top-1 78,9 %; menor calidad |
-| IQ3_XXS_M64_HC8 (pentaCoxian) | no disponible | 262K | IQ3_XXS mixta con mixers HC en Q8_0 | Qwen Community 1.0 | HuggingFace | 0,55 GiB más pequeño; ~10 % más rápido con kernels Q8_0 de ds4 M64 |
-| Qwen3.8-Flash-Next (original) | no disponible | no disponible | pesos completos | Qwen Community 1.0 | HuggingFace (Qwen) | Modelo de referencia sin cuantizar |
+| IQ3_XXS_M64 (este fichero) | no disponible | 262K | IQ3_XXS mixta (4 capas en Q2_0) | Qwen Community 1.0 | Hugging Face, 0 descargas | 42,92 GiB; KL 0,1835 vs IQ3_S; 47-52 tok/s decode en M3 Max |
+| IQ3_XXS (ISTA-DASLab) | no disponible | 262K | IQ3_XXS | Qwen Community 1.0 | Hugging Face | 43,80 GiB; KL 0,1834; no cabe en Mac de 64 GB con Neural Engine |
+| Q2_0 (ISTA-DASLab) | no disponible | 262K | Q2_0 | Qwen Community 1.0 | Hugging Face | KL 0,4380; acuerdo top-1 78,9 %; menor calidad |
+| IQ3_XXS_M64_HC8 (pentaCoxian) | no disponible | 262K | IQ3_XXS mixta con mixers HC en Q8_0 | Qwen Community 1.0 | Hugging Face | 0,55 GiB más pequeño; ~10 % más rápido con kernels Q8_0 de ds4 M64 |
+| Qwen3.8-Flash-Next (original) | no disponible | no disponible | pesos completos | Qwen Community 1.0 | Hugging Face (Qwen) | Modelo de referencia sin cuantizar |
 
 No se dispone de datos de parámetros totales ni activos para ninguno de los modelos comparados, por lo que la comparación se limita a tamaño en disco, contexto, licencia y métricas de fidelidad y velocidad publicadas.
 
@@ -115,7 +115,7 @@ No se dispone de datos de parámetros totales ni activos para ninguno de los mod
 
 ## Enlaces
 
-- Repositorio HuggingFace de este fichero: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS_M64-GGUF
+- Repositorio Hugging Face de este fichero: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-IQ3_XXS_M64-GGUF
 - Repositorio del fichero alternativo HC8: https://huggingface.co/pentacoxian-dev/Qwen3.8-Flash-Next-GSQ-RCO-M64-GGUF
 - Cuantizaciones de ISTA-DASLab (modelo base): https://huggingface.co/ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF
 - Modelo original de Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next

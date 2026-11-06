@@ -73,9 +73,9 @@ DeepSeek-V4-Flash-Base supera a DeepSeek-V3.2-Base en todos los benchmarks lista
 
 | Modelo | Parámetros totales | Parámetros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DeepSeek-V4-Flash | 284B | 13B | 1M | MIT | HuggingFace, ModelScope |
-| DeepSeek-V3.2 | 671B | 37B | no disponible | MIT | HuggingFace |
-| DeepSeek-V4-Pro | 1,6T | 49B | 1M | MIT | HuggingFace, ModelScope |
+| DeepSeek-V4-Flash | 284B | 13B | 1M | MIT | Hugging Face, ModelScope |
+| DeepSeek-V3.2 | 671B | 37B | no disponible | MIT | Hugging Face |
+| DeepSeek-V4-Pro | 1,6T | 49B | 1M | MIT | Hugging Face, ModelScope |
 
 DeepSeek-V4-Flash se sitúa entre V3.2 y V4-Pro en términos de parámetros totales, pero con menos parámetros activos que V3.2 (13B frente a 37B), lo que le permite una inferencia más eficiente. En los benchmarks de la versión base, supera a V3.2-Base en todos los casos, aunque queda por detrás de V4-Pro-Base. La licencia MIT es común a los tres, lo que facilita su adopción comercial.
 
@@ -91,8 +91,8 @@ DeepSeek-V4-Flash se sitúa entre V3.2 y V4-Pro en términos de parámetros tota
 
 ## Enlaces
 
-- Repositorio en HuggingFace (subida por Dozennone): https://huggingface.co/Dozennone/DeepSeek-V4-Flash
-- Repositorio oficial de DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
+- Repositorio en Hugging Face (subida por Dozennone): https://huggingface.co/Dozennone/DeepSeek-V4-Flash
+- Repositorio oficial de DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash
 - Paper técnico (arXiv): https://arxiv.org/abs/2606.19348
 - Página de DeepSeek: https://deepseek.com/en/index.html
 - Demo en DeepInfra: https://deepinfra.com/deepseek-ai/DeepSeek-V4-Flash

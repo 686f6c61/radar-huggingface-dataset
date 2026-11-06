@@ -88,8 +88,8 @@ No se dispone de resultados de benchmarks ni de datos de otros adaptadores compa
 
 | Modelo | Parametros | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ruichuan26/Qwen3.6-35B-A3B-SWE-LoRA-SFT-checkpoint-180 (adaptador) | 22,4774 M entrenables sobre base de 35.129,6594 M | ~3B (heredado del base) | no disponible | Apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| Qwen/Qwen3.6-35B-A3B (base) | 35.129,6594 M | ~3B | no disponible | Apache-2.0 | HuggingFace |
+| ruichuan26/Qwen3.6-35B-A3B-SWE-LoRA-SFT-checkpoint-180 (adaptador) | 22,4774 M entrenables sobre base de 35.129,6594 M | ~3B (heredado del base) | no disponible | Apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| Qwen/Qwen3.6-35B-A3B (base) | 35.129,6594 M | ~3B | no disponible | Apache-2.0 | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de resultados de benchmarks ni de datos de otros adaptadores compa
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/ruichuan26/Qwen3.6-35B-A3B-SWE-LoRA-SFT-checkpoint-180
+- Adaptador en Hugging Face: https://huggingface.co/ruichuan26/Qwen3.6-35B-A3B-SWE-LoRA-SFT-checkpoint-180
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/ruichuan26/swe
 - Revision inmutable del adaptador: 944de20053b996b4eef729694037c7806eb00903

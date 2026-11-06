@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vjprav33n/nutrition_image_to_json_adapter | no disponible | no disponible | apache-2.0 (mas terminos del modelo base) | HuggingFace, 0,4 GB |
-| unsloth/gemma-4-e4b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace |
+| vjprav33n/nutrition_image_to_json_adapter | no disponible | no disponible | apache-2.0 (mas terminos del modelo base) | Hugging Face, 0,4 GB |
+| unsloth/gemma-4-e4b-it-unsloth-bnb-4bit (modelo base) | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face |
 | Otras alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones del modelo base que permitan establecer una comparacion cuantitativa con alternativas de la misma categoria o tamano.
@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base que 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/vjprav33n/nutrition_image_to_json_adapter
+- Repositorio en Hugging Face: https://huggingface.co/vjprav33n/nutrition_image_to_json_adapter
 - Modelo base: https://huggingface.co/unsloth/gemma-4-e4b-it-unsloth-bnb-4bit
 - Unsloth (herramienta de entrenamiento citada en la model card): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios adicionales ni demos asociados a este modelo en la busqueda web realizada.

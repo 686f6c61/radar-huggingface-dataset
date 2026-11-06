@@ -87,7 +87,7 @@ La comparación cuantitativa de rendimiento no está disponible porque no se han
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta cuantización: https://huggingface.co/mradermacher/Capek0.5-35B-A3B-i1-GGUF
+- Repositorio Hugging Face de esta cuantización: https://huggingface.co/mradermacher/Capek0.5-35B-A3B-i1-GGUF
 - Modelo base: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B
 - Licencia del modelo base: https://huggingface.co/xpeng-robotics/Capek0.5-35B-A3B/blob/main/LICENSE
 - Cuantizaciones estáticas (incluye mmproj): https://huggingface.co/mradermacher/Capek0.5-35B-A3B-GGUF

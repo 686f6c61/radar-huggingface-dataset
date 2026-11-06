@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Starlight-Flash es un modelo de lenguaje causal de tipo texto, publicado por el usuario Sethblocks en HuggingFace y construido sobre la arquitectura Qwen3.5 (`Qwen3_5ForCausalLM`). Con 9.197.093.888 parámetros totales (aproximadamente 9,2 mil millones) y un contexto declarado de 262.144 tokens, se posiciona en la franja de modelos densos de tamaño medio con ventana de contexto muy amplia, lo que lo hace teóricamente apto para tareas de procesamiento de documentos largos y conversaciones multi-turno extensas.
+Starlight-Flash es un modelo de lenguaje causal de tipo texto, publicado por el usuario Sethblocks en Hugging Face y construido sobre la arquitectura Qwen3.5 (`Qwen3_5ForCausalLM`). Con 9.197.093.888 parámetros totales (aproximadamente 9,2 mil millones) y un contexto declarado de 262.144 tokens, se posiciona en la franja de modelos densos de tamaño medio con ventana de contexto muy amplia, lo que lo hace teóricamente apto para tareas de procesamiento de documentos largos y conversaciones multi-turno extensas.
 
 La model card es extremadamente escueta: se limita a indicar que se trata de un LM causal de la familia Qwen3.5, con 32 capas, hidden size 4096, intermediate size 12288, vocabulario de 248.320 tokens, precisión bf16 y pesos distribuidos en cuatro shards de safetensors. No se documentan datos de entrenamiento, composición del dataset, procesos de alineación (RLHF/DPO) ni resultados de evaluación.
 
@@ -49,7 +49,7 @@ No se dispone de información sobre el corpus de entrenamiento, el número de to
 - Conversación multi-turno extensa: útil en asistentes que acumulan historial largo sin truncar, gracias al contexto declarado de 262k tokens.
 - Despliegue en hardware de consumo: la cuantización Q8_0 de 9,2B en GGUF permite ejecución local con llama.cpp u Ollama en GPUs con 12-16 GB de VRAM, abaratando prototipado.
 - Investigación sobre contexto largo: sirve como base para experimentos de recuperación en el contexto (needle-in-a-haystack) y evaluación de degradación atencional a 256k tokens.
-- Generación de texto en pipelines de transformers: al ser compatible con la clase estándar `Qwen3_5ForCausalLM`, se integra directamente en flujos existentes basados en HuggingFace transformers y en servidores compatibles con la API de OpenAI.
+- Generación de texto en pipelines de transformers: al ser compatible con la clase estándar `Qwen3_5ForCausalLM`, se integra directamente en flujos existentes basados en Hugging Face transformers y en servidores compatibles con la API de OpenAI.
 - Fine-tuning experimental: sus 9,2B parámetros permiten ajuste con LoRA en una sola GPU de 24 GB (RTX 3090/4090) en bf16 con técnicas de ahorro de memoria, aunque la ausencia de licencia clara desaconseja uso comercial.
 
 ## Benchmarks y rendimiento
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Starlight-Flash | ~9,2B | 262.144 | no disponible | safetensors, GGUF | HuggingFace (0 descargas) |
-| Qwen2.5-7B | ~7,6B | 131.072 | Apache 2.0 (Qwen2.5) | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Llama 3.1 8B | ~8B | 131.072 | Llama 3.1 Community License | safetensors, GGUF | HuggingFace, ampliamente adoptado |
-| Gemma 2 9B | ~9B | 8.192 | Gemma Terms of Use | safetensors, GGUF | HuggingFace, ampliamente adoptado |
+| Starlight-Flash | ~9,2B | 262.144 | no disponible | safetensors, GGUF | Hugging Face (0 descargas) |
+| Qwen2.5-7B | ~7,6B | 131.072 | Apache 2.0 (Qwen2.5) | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Llama 3.1 8B | ~8B | 131.072 | Llama 3.1 Community License | safetensors, GGUF | Hugging Face, ampliamente adoptado |
+| Gemma 2 9B | ~9B | 8.192 | Gemma Terms of Use | safetensors, GGUF | Hugging Face, ampliamente adoptado |
 
 La comparativa se limita a parámetros, contexto y licencia porque no hay benchmarks publicados de Starlight-Flash. Frente a sus alternativas, destaca por el contexto declarado (262k frente a 131k de Qwen2.5-7B y Llama 3.1 8B) y por un tamaño similar a Gemma 2 9B, pero carece de licencia declarada, de idiomas documentados y de cualquier evaluación pública, lo que lo sitúa en desventaja frente a modelos con ecosistema consolidado.
 
@@ -90,6 +90,6 @@ La comparativa se limita a parámetros, contexto y licencia porque no hay benchm
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/Sethblocks/Starlight-Flash
+- Hugging Face del modelo: https://huggingface.co/Sethblocks/Starlight-Flash
 - Repo GGUF: https://huggingface.co/Sethblocks/Starlight-Flash-GGUF
 - Paper, blog o demo oficial: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ostrich-27B-AHA-Gemma3-250519-GGUF es la distribucion en formato GGUF del modelo Ostrich-27B-AHA-Gemma3-250519, un fine-tune de la familia Gemma 3 de Google con 27.009.346.304 parametros totales. El modelo base fue publicado por el usuario etemiz y esta etiquetado con los descriptores AHA y alignment, lo que sugiere un ajuste orientado a alineacion conversacional. Esta version GGUF la produce mradermacher, un conocido cuantizador de la comunidad de HuggingFace que distribuye pesos optimizados para inferencia local con llama.cpp y derivados.
+Ostrich-27B-AHA-Gemma3-250519-GGUF es la distribucion en formato GGUF del modelo Ostrich-27B-AHA-Gemma3-250519, un fine-tune de la familia Gemma 3 de Google con 27.009.346.304 parametros totales. El modelo base fue publicado por el usuario etemiz y esta etiquetado con los descriptores AHA y alignment, lo que sugiere un ajuste orientado a alineacion conversacional. Esta version GGUF la produce mradermacher, un conocido cuantizador de la comunidad de Hugging Face que distribuye pesos optimizados para inferencia local con llama.cpp y derivados.
 
 El interes practico de esta ficha reside en que permite ejecutar un modelo de ~27B parametros en hardware de consumo mediante cuantizaciones que van desde Q2_K (10,6 GB) hasta Q8_0 (28,8 GB), ademas de incluir un proyector multimodal (mmproj) que habilita entrada de imagenes. Al tratarse de un derivado de Gemma 3, hereda la arquitectura transformer decoder-only de Google, aunque la model card no detalla la composicion exacta del dataset de ajuste ni el proceso de alineacion aplicado por etemiz.
 

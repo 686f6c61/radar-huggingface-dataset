@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Haiku-Bi es un modelo publicado por el laboratorio zhihuanglab en HuggingFace, distribuido bajo licencia "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargarlo. Las etiquetas del repositorio lo sitúan como un modelo multimodal (pytorch, multimodal) orientado al dominio de la histología (histology) y con capacidades declaradas de recuperación de información (retrieval) junto a la etiqueta codex. El repositorio ocupa 2,8 GB y fue creado y actualizado el 3 de octubre de 2026, sin descargas ni "likes" registrados en el momento de la consulta.
+Haiku-Bi es un modelo publicado por el laboratorio zhihuanglab en Hugging Face, distribuido bajo licencia "other" y con acceso restringido (gated), lo que obliga a aceptar condiciones adicionales antes de poder descargarlo. Las etiquetas del repositorio lo sitúan como un modelo multimodal (pytorch, multimodal) orientado al dominio de la histología (histology) y con capacidades declaradas de recuperación de información (retrieval) junto a la etiqueta codex. El repositorio ocupa 2,8 GB y fue creado y actualizado el 3 de octubre de 2026, sin descargas ni "likes" registrados en el momento de la consulta.
 
 Por el conjunto de etiquetas, el modelo parece concebido para tareas de visión-lenguaje aplicadas a imágenes histopatológicas, probablemente combinando un codificador visual con un codificador de texto para búsqueda y recuperación cruzada (texto a imagen e imagen a texto) en el ámbito clínico o de investigación biomédica. No obstante, la ficha pública no incluye información sobre arquitectura concreta, número de parámetros, longitud de contexto, composición del dataset de entrenamiento ni idiomas soportados, por lo que cualquier afirmación al respecto queda fuera del alcance de los datos disponibles.
 
@@ -18,7 +18,7 @@ Su relevancia potencial reside en la intersección entre modelos de recuperació
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | other (acceso restringido, requiere aceptar condiciones en HuggingFace) |
+| Licencia | other (acceso restringido, requiere aceptar condiciones en Hugging Face) |
 | Formato de pesos | pytorch (tamano de repositorio: 2,8 GB) |
 
 ## Arquitectura y entrenamiento
@@ -75,7 +75,7 @@ La comparacion cuantitativa no es posible con la informacion disponible; se reco
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el repositorio esta gated, por lo que es necesario aceptar condiciones adicionales en HuggingFace antes de descargar pesos o datos.
+- Acceso restringido: el repositorio esta gated, por lo que es necesario aceptar condiciones adicionales en Hugging Face antes de descargar pesos o datos.
 - Licencia "other": no se especifican los terminos exactos; hay que revisar el texto completo de la licencia antes de cualquier uso comercial o clinico.
 - Ausencia total de benchmarks: no hay metricas publicadas que permitan estimar calidad, sesgos o robustez.
 - Dominio muy especifico: al estar orientado a histologia, su comportamiento fuera de ese ambito es incierto y no documentado.
@@ -88,4 +88,4 @@ La comparacion cuantitativa no es posible con la informacion disponible; se reco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zhihuanglab/Haiku-Bi
+- Hugging Face: https://huggingface.co/zhihuanglab/Haiku-Bi

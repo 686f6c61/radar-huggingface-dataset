@@ -77,9 +77,9 @@ No se han publicado en la información disponible otros benchmarks estándar (MM
 
 | Modelo | Tipo | Entrada | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| KaliberAI vjepa2-1 conveyor interaction (este modelo) | Predicción de trayectorias 3D con backbone V-JEPA 2.1 ViT-B congelado | 8 fotogramas RGB 384×672 + 8 estados 3D del objetivo | 30 pasos XYZ/vXYZ + probabilidades de contacto | no disponible | HuggingFace (KaliberAI) |
+| KaliberAI vjepa2-1 conveyor interaction (este modelo) | Predicción de trayectorias 3D con backbone V-JEPA 2.1 ViT-B congelado | 8 fotogramas RGB 384×672 + 8 estados 3D del objetivo | 30 pasos XYZ/vXYZ + probabilidades de contacto | no disponible | Hugging Face (KaliberAI) |
 | V-JEPA 2.1 (ViT-B destilado, Meta) | Modelo fundacional de vídeo auto-supervisado | Vídeo | Representaciones latentes | no disponible en esta ficha | dl.fbaipublicfiles.com (backbone oficial) |
-| V-JEPA 2 (Meta) | Modelo fundacional de vídeo, predecesor | Vídeo | Representaciones latentes | no disponible en esta ficha | Meta / HuggingFace |
+| V-JEPA 2 (Meta) | Modelo fundacional de vídeo, predecesor | Vídeo | Representaciones latentes | no disponible en esta ficha | Meta / Hugging Face |
 
 No se dispone de datos de benchmarks comunes que permitan una comparación numérica directa con otros predictores de trayectoria de la misma categoría. El propio autor indica que este checkpoint es la variante determinista de un segundo y que no es el experimento posterior de dos segundos con gaussianas.
 
@@ -99,6 +99,6 @@ No se dispone de datos de benchmarks comunes que permitan una comparación numé
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-states-interaction-8to30
+- Hugging Face: https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-states-interaction-8to30
 - Backbone oficial V-JEPA 2.1 ViT-B destilado: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt (SHA-256 esperado: 848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d)
 - No se han encontrado en la información disponible papers, blogs, repositorios o demos adicionales.

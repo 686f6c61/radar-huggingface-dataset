@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zzzzfrym/Vital es un repositorio de modelos publicado en HuggingFace por el usuario Zzzzfrym, distribuido bajo licencia BSD-3-Clause. En el momento de la consulta, el repositorio no incluye model card tecnica: el unico contenido del README es el bloque de metadatos con la licencia, sin descripcion, arquitectura, tamano ni datos de entrenamiento.
+Zzzzfrym/Vital es un repositorio de modelos publicado en Hugging Face por el usuario Zzzzfrym, distribuido bajo licencia BSD-3-Clause. En el momento de la consulta, el repositorio no incluye model card tecnica: el unico contenido del README es el bloque de metadatos con la licencia, sin descripcion, arquitectura, tamano ni datos de entrenamiento.
 
 No hay informacion disponible sobre arquitectura, numero de parametros, longitud de contexto, idiomas soportados, formato de pesos ni pipeline de inferencia. El repositorio registra 0 descargas y 0 "likes", y no tiene etiqueta de pipeline asignada, por lo que no es posible confirmar siquiera la modalidad de la tarea (texto, vision, audio u otra).
 
@@ -71,5 +71,5 @@ No disponible. Sin conocer parametros, contexto, licencia efectiva de uso y tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Zzzzfrym/Vital
+- Repositorio en Hugging Face: https://huggingface.co/Zzzzfrym/Vital
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo ni demos) en la informacion disponible.

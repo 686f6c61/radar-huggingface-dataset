@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 2387226488,
+  "storage_human": "2.4 GB",
   "base_model": "richardyoung/Qwen3.5-4B-ARA-heretic",
   "formats": [
     "mlx",

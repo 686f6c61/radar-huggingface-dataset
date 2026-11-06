@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| MergekitCloud/mergekit-77 | 7.24B | no disponible | no disponible | HuggingFace |
-| Nexusflow/Starling-LM-7B-beta | 7B | 8K (típico) | CC-BY-NC-4.0 (no comercial) | HuggingFace |
-| FuseAI/FuseChat-7B-VaRM | 7B | 8K (típico) | Apache 2.0 (según FuseAI) | HuggingFace |
+| MergekitCloud/mergekit-77 | 7.24B | no disponible | no disponible | Hugging Face |
+| Nexusflow/Starling-LM-7B-beta | 7B | 8K (típico) | CC-BY-NC-4.0 (no comercial) | Hugging Face |
+| FuseAI/FuseChat-7B-VaRM | 7B | 8K (típico) | Apache 2.0 (según FuseAI) | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Los modelos base tienen licencias diferentes, lo que afecta al uso comercial del merge resultante.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. Los modelos base tienen licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MergekitCloud/mergekit-77
+- Modelo en Hugging Face: https://huggingface.co/MergekitCloud/mergekit-77
 - MergeKit (herramienta): https://github.com/arcee-ai/mergekit
 - Documentación de MergeKit: https://www.mergekit.com/
 - Paper de MergeKit: https://arxiv.org/html/2403.13257v2

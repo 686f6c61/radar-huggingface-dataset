@@ -1,7 +1,7 @@
 # xtools-at/Qwen3.8-27B-CodeForge-3xMerge
 
 ## Resumen
-Qwen3.8-27B CodeForge-3xMerge es un modelo de lenguaje multimodal (texto e imagen de entrada) obtenido mediante la fusión ponderada de tres ajustes finos independientes sobre la misma base: Qwen/Qwen3.8-27B. Lo publica el usuario xtools-at en HuggingFace bajo licencia Apache 2.0, con 27.781 millones de parámetros efectivos según los pesos en safetensors y un repositorio de 55,6 GB. El pipeline declarado es image-text-to-text y la librería de referencia es transformers.
+Qwen3.8-27B CodeForge-3xMerge es un modelo de lenguaje multimodal (texto e imagen de entrada) obtenido mediante la fusión ponderada de tres ajustes finos independientes sobre la misma base: Qwen/Qwen3.8-27B. Lo publica el usuario xtools-at en Hugging Face bajo licencia Apache 2.0, con 27.781 millones de parámetros efectivos según los pesos en safetensors y un repositorio de 55,6 GB. El pipeline declarado es image-text-to-text y la librería de referencia es transformers.
 
 El objetivo de la fusión es combinar tres perfiles complementarios sin sobreespecializar el resultado: razonamiento estructurado y codificación con pensamiento eficiente (procedente de nerkyor/Qwen3.8-27B-Coder390-EfficientThink), conversación y conocimiento destilado (de TeichAI/Qwen3.8-27B-Fable-Distill) y capacidades de ingeniería de software y uso de herramientas (de Jackrong/Qwopus3.8-27B-Coder-Flash). Los coeficientes de mezcla declarados son 1,00, 0,85 y 0,70 respectivamente.
 
@@ -80,7 +80,7 @@ No se dispone de datos de benchmarks que permitan comparar el rendimiento del me
 - Los tags mencionan modelos de profesor con nombres no verificables públicamente; la procedencia de los datos de destilación no es auditable con la información disponible.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
+- Modelo en Hugging Face: https://huggingface.co/xtools-at/Qwen3.8-27B-CodeForge-3xMerge
 - Perfil del autor: https://huggingface.co/xtools-at
 - Cuantizaciones y GGUF derivados: https://huggingface.co/models?other=base_model:quantized:xtools-at/Qwen3.8-27B-CodeForge-3xMerge
 - Contribuyente nerkyor: https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2

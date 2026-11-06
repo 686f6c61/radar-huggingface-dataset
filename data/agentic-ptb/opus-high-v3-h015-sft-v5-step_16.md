@@ -74,6 +74,6 @@ No disponible. No se han identificado modelos comparables directos, ya que este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agentic-ptb/opus-high-v3.h015.sft-v5.step_16
+- Modelo en Hugging Face: https://huggingface.co/agentic-ptb/opus-high-v3.h015.sft-v5.step_16
 - Dataset del run: https://huggingface.co/datasets/agentic-ptb/opus-high-v3-data
 - Índice del proyecto: https://huggingface.co/datasets/agentic-ptb/INDEX

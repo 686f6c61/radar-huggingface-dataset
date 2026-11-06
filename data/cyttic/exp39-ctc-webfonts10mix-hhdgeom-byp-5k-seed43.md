@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en HuggingFace bajo licencia MIT. Por la nomenclatura del identificador (CTC, webfonts, geometría, seed) y por el tamaño, se trata con alta probabilidad de un modelo de reconocimiento óptico de caracteres (OCR) o de reconocimiento de texto en escena basado en Connectionist Temporal Classification, entrenado sobre una mezcla de tipografías web, y no de un modelo de lenguaje generativo. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a la referencia genérica que la plantilla automática de HuggingFace incluye para el cálculo de emisiones de carbono (Lacoste et al., 2019), no a un paper propio del modelo.
+El modelo `cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed43` es un checkpoint de 87.279.756 parámetros publicado por el usuario cyttic en Hugging Face bajo licencia MIT. Por la nomenclatura del identificador (CTC, webfonts, geometría, seed) y por el tamaño, se trata con alta probabilidad de un modelo de reconocimiento óptico de caracteres (OCR) o de reconocimiento de texto en escena basado en Connectionist Temporal Classification, entrenado sobre una mezcla de tipografías web, y no de un modelo de lenguaje generativo. El tag `arxiv:1910.09700` que aparece en los metadatos corresponde a la referencia genérica que la plantilla automática de Hugging Face incluye para el cálculo de emisiones de carbono (Lacoste et al., 2019), no a un paper propio del modelo.
 
 La model card está completamente sin rellenar: no documenta arquitectura, datos de entrenamiento, idiomas, hiperparámetros ni resultados de evaluación. Toda la información técnica disponible se limita al recuento de parámetros inferido de los pesos en safetensors (87.279.756), el tamaño del repositorio (0,3 GB), la licencia MIT y las fechas de creación y actualización (26 y 30 de octubre de 2026). El modelo no registra descargas ni likes en el momento de redactar esta ficha.
 
@@ -89,7 +89,7 @@ La comparación solo es válida si se confirma que la tarea es OCR; en caso cont
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed43
+- Modelo en Hugging Face: https://huggingface.co/cyttic/exp39-ctc-webfonts10mix-hhdgeom-byp-5k-seed43
 - Referencia citada en los metadatos (Lacoste et al., 2019, sobre impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora ML Impact: https://mlco2.github.io/impact
-- Perfil del autor en HuggingFace: https://huggingface.co/cyttic
+- Perfil del autor en Hugging Face: https://huggingface.co/cyttic

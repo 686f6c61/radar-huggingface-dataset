@@ -4,7 +4,7 @@
 
 jev-decisions-v2-smoke-scratch es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.5-0.8B, publicado por el usuario GhostScientist el 2 de octubre de 2026. El entrenamiento se ha realizado con la libreria TRL sobre el dataset GhostScientist/jev-decisions-v1, y el resultado es un checkpoint de 852.985.920 parametros (unos 853 M) con pesos en formato safetensors y un repositorio de 3,4 GB.
 
-El modelo se enmarca en la categoria de modelos pequenos orientados a conversacion: el ejemplo de la model card lo utiliza mediante `pipeline("text-generation")` con una entrada de chat y `max_new_tokens=128`. Los metadatos de HuggingFace lo etiquetan con la libreria `qwen3_5` y el pipeline `image-text-to-text`, lo que apunta a la familia Qwen3.5, aunque la model card no documenta capacidades multimodales ni ningun otro detalle funcional mas alla del ajuste con SFT.
+El modelo se enmarca en la categoria de modelos pequenos orientados a conversacion: el ejemplo de la model card lo utiliza mediante `pipeline("text-generation")` con una entrada de chat y `max_new_tokens=128`. Los metadatos de Hugging Face lo etiquetan con la libreria `qwen3_5` y el pipeline `image-text-to-text`, lo que apunta a la familia Qwen3.5, aunque la model card no documenta capacidades multimodales ni ningun otro detalle funcional mas alla del ajuste con SFT.
 
 Su relevancia actual es limitada y de caracter experimental: el repositorio acumula 0 descargas y 0 "likes" en el momento de la consulta, no declara licencia utilizable ni idiomas soportados, y el sufijo "smoke-scratch" del nombre sugiere una ejecucion de prueba de humo mas que un modelo destinado a produccion. Debe tratarse, por tanto, como un artefacto de investigacion reproducible mas que como una alternativa desplegable.
 
@@ -32,7 +32,7 @@ Su relevancia actual es limitada y de caracter experimental: el repositorio acum
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion detallada sobre la arquitectura interna. Lo unico documentado es que se trata de un ajuste fino de Qwen/Qwen3.5-0.8B, que los metadatos de HuggingFace lo etiquetan con la familia `qwen3_5` y que el pipeline declarado es `image-text-to-text`. Esta ultima etiqueta resulta contradictoria con el ejemplo de uso de la propia model card, que invoca `pipeline("text-generation")` sobre una lista de mensajes con rol `user`; no hay documentacion adicional que confirme si el modelo conserva un codificador visual funcional o si la etiqueta es heredada del modelo base.
+No se dispone de informacion detallada sobre la arquitectura interna. Lo unico documentado es que se trata de un ajuste fino de Qwen/Qwen3.5-0.8B, que los metadatos de Hugging Face lo etiquetan con la familia `qwen3_5` y que el pipeline declarado es `image-text-to-text`. Esta ultima etiqueta resulta contradictoria con el ejemplo de uso de la propia model card, que invoca `pipeline("text-generation")` sobre una lista de mensajes con rol `user`; no hay documentacion adicional que confirme si el modelo conserva un codificador visual funcional o si la etiqueta es heredada del modelo base.
 
 El entrenamiento se ha realizado exclusivamente mediante SFT (supervised fine-tuning) con TRL, sobre el dataset GhostScientist/jev-decisions-v1. No se especifican el numero de tokens de entrenamiento, la composicion del dataset, la configuracion de hiperparametros (tasa de aprendizaje, epocas, tamano de lote, esquema de empaquetado de secuencias) ni si hubo fases posteriores de alineacion como RLHF, DPO o GRPO. Tampoco se documenta ninguna innovacion tecnica en decodificacion, atencion o eficiencia.
 
@@ -94,7 +94,7 @@ No se dispone de alternativas comparables documentadas en la informacion disponi
 ## Limitaciones y advertencias
 
 - Ausencia total de evaluacion: no hay benchmarks, ni evaluacion humana, ni conjuntos de validacion publicados. Cualquier uso en produccion se haria sin evidencia de calidad.
-- Licencia sin definir: el campo `licence` de la model card contiene el literal "license", sin valor, y los metadatos de HuggingFace indican que no hay licencia disponible. Esto impide determinar si el uso comercial esta permitido, tanto del modelo como de las salidas derivadas del dataset de ajuste.
+- Licencia sin definir: el campo `licence` de la model card contiene el literal "license", sin valor, y los metadatos de Hugging Face indican que no hay licencia disponible. Esto impide determinar si el uso comercial esta permitido, tanto del modelo como de las salidas derivadas del dataset de ajuste.
 - Idiomas no declarados: no se especifica que lenguas domina el modelo ni la composicion linguistica del dataset `jev-decisions-v1`. Es probable que el comportamiento fuera de los idiomas presentes en el entrenamiento sea deficiente, pero no puede cuantificarse.
 - Riesgo de alucinacion: inherente a cualquier modelo generativo de este tamano, especialmente elevado en un ajuste de prueba de humo sin alineacion documentada (no se menciona RLHF, DPO ni filtrado de respuestas).
 - Ambiguedad de modalidad: los metadatos declaran `image-text-to-text` mientras la model card solo demuestra generacion de texto. Integrar el modelo asumiendo entrada de imagen sin verificarlo puede provocar fallos silenciosos.
@@ -106,7 +106,7 @@ No se dispone de alternativas comparables documentadas en la informacion disponi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GhostScientist/jev-decisions-v2-smoke-scratch
+- Modelo en Hugging Face: https://huggingface.co/GhostScientist/jev-decisions-v2-smoke-scratch
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Dataset de ajuste: https://huggingface.co/datasets/GhostScientist/jev-decisions-v1
 - Repositorio de TRL: https://github.com/huggingface/trl

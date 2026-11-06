@@ -101,10 +101,10 @@ Comparacion con alternativas externas de la misma categoria: no disponible.
 - Riesgo de alucinacion y sesgos conocidos: no disponible. No hay evaluaciones de sesgo, toxicidad o factualidad en la informacion proporcionada.
 - Limitaciones de contexto e idioma: la card no declara una ventana de contexto maxima ni un conjunto de idiomas soportados; los datos de evaluacion solo llegan a 2048 tokens.
 - Restricciones de licencia: el checkpoint base y el adaptador son Apache-2.0, pero el codigo fuente de TinyCeNN-LM se distribuye bajo la licencia de su propio repositorio, que se incluye cuando esta disponible. Es necesario revisar esa licencia antes de un uso comercial.
-- El modelo no declara pipeline de inferencia en HuggingFace ni tiene descargas o interacciones registradas, por lo que carece de validacion por parte de la comunidad.
+- El modelo no declara pipeline de inferencia en Hugging Face ni tiene descargas o interacciones registradas, por lo que carece de validacion por parte de la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vtava/Qwen3.5-0.8B-CeNN-Integrated-V1
+- Hugging Face: https://huggingface.co/vtava/Qwen3.5-0.8B-CeNN-Integrated-V1
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Paper, blog, repositorio o demo adicionales: no disponible. Las busquedas web realizadas no devolvieron resultados relacionados con este modelo ni con TinyCeNN-LM.

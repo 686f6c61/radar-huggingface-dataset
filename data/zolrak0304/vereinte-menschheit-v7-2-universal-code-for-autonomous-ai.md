@@ -2,7 +2,7 @@
 
 ## Resumen
 
-VEREINTE-MENSCHHEIT-V7.2-UNIVERSAL-CODE-FOR-AUTONOMOUS-AI es un repositorio publicado en HuggingFace por el usuario Zolrak0304. En el momento de redactar esta ficha no existe información técnica verificable sobre el modelo: la plataforma no declara pipeline de inferencia, licencia, idiomas soportados ni formato de pesos, y la búsqueda web no ha devuelto ninguna fuente relacionada con el proyecto. El repositorio registra 0 descargas y 1 like, lo que impide cualquier evaluación de uso real por parte de la comunidad.
+VEREINTE-MENSCHHEIT-V7.2-UNIVERSAL-CODE-FOR-AUTONOMOUS-AI es un repositorio publicado en Hugging Face por el usuario Zolrak0304. En el momento de redactar esta ficha no existe información técnica verificable sobre el modelo: la plataforma no declara pipeline de inferencia, licencia, idiomas soportados ni formato de pesos, y la búsqueda web no ha devuelto ninguna fuente relacionada con el proyecto. El repositorio registra 0 descargas y 1 like, lo que impide cualquier evaluación de uso real por parte de la comunidad.
 
 El nombre del repositorio sugiere, por convención de nomenclatura y no por documentación acreditada, un modelo orientado a generación de código con fines de automatización y agentes autónomos, con un esquema de versionado "V7.2". No obstante, esta lectura es una inferencia léxica: no hay model card, informe técnico, configuración de entrenamiento ni artefactos de tokenizador publicados que la respalden.
 
@@ -83,7 +83,7 @@ No disponible. No es posible identificar modelos comparables porque se desconoce
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zolrak0304/VEREINTE-MENSCHHEIT-V7.2-UNIVERSAL-CODE-FOR-AUTONOMOUS-AI
+- Hugging Face: https://huggingface.co/Zolrak0304/VEREINTE-MENSCHHEIT-V7.2-UNIVERSAL-CODE-FOR-AUTONOMOUS-AI
 - Paper: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de código: no disponible

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo de inteligencia artificial, sino una tarjeta de contabilidad de carbono (carbon card) asociada a un entrenamiento de modelo dentro del curso TDS GA8. Documenta las emisiones de CO₂ equivalente generadas durante un proceso de fine-tuning, con el objetivo de fomentar prácticas de Green AI y transparencia ambiental en el desarrollo de modelos.
+Este repositorio de Hugging Face no contiene un modelo de inteligencia artificial, sino una tarjeta de contabilidad de carbono (carbon card) asociada a un entrenamiento de modelo dentro del curso TDS GA8. Documenta las emisiones de CO₂ equivalente generadas durante un proceso de fine-tuning, con el objetivo de fomentar prácticas de Green AI y transparencia ambiental en el desarrollo de modelos.
 
 La iniciativa responde a la creciente preocupación por el impacto medioambiental del entrenamiento de modelos grandes. Aunque no se especifica qué modelo se entrenó ni su arquitectura, el repositorio aporta datos concretos de consumo energético y emisiones: 73,5042 kWh de energía total y 30,872 kg de CO₂eq, utilizando dos GPU NVIDIA T4 en la región us-east1 durante 407 horas de cómputo.
 
@@ -72,7 +72,7 @@ Para reproducir el entrenamiento del modelo original (no proporcionado), se nece
 
 ## Comparativa con modelos similares
 
-No disponible. No existe una categoría de "modelos similares" para tarjetas de carbono, aunque se han encontrado otros repositorios del mismo tipo en HuggingFace:
+No disponible. No existe una categoría de "modelos similares" para tarjetas de carbono, aunque se han encontrado otros repositorios del mismo tipo en Hugging Face:
 
 | Repositorio | Hardware | Región | Horas GPU | Energía (kWh) | CO₂ (kg) |
 |---|---|---|---|---|---|
@@ -93,9 +93,9 @@ La comparación muestra que el uso de A100 (más potentes) en la región ap-sout
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/vineethap14hf/tds-carbon-card
+- Repositorio de Hugging Face: https://huggingface.co/vineethap14hf/tds-carbon-card
 - Repositorio similar (shyam1504): https://huggingface.co/shyam1504/tds-carbon-card
 - Repositorio similar (AdityaV26): https://huggingface.co/AdityaV26/tds-carbon-card
 - Proyecto Carbon Genomic Foundation Model: https://github.com/huggingface/carbon
 - Documentación de model cards aplicadas: https://www.chai.org/workgroup/applied-model
-- API de HuggingFace: https://www.huggingfaceapi.com/
+- API de Hugging Face: https://www.huggingfaceapi.com/

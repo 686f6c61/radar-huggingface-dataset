@@ -76,7 +76,7 @@ La diferencia principal es que este repositorio no ofrece un modelo final, sino 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-504b
+- Repositorio Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-504b
 - Pagina oficial de OLMo (Ai2): https://allenai.org/olmo
 - Pagina de OLMo-2: https://allenai.org/olmo2
 - Repositorio GitHub de OLMo: https://github.com/allenai/OLMo

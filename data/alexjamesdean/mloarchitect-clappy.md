@@ -73,7 +73,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 - Solo responde en ingles; no hay soporte multilingue declarado.
 - Puede producir respuestas incorrectas; el autor advierte explicitamente de que "puede equivocarse".
 - Su conocimiento se limita a la base de conocimiento de MLOArchitect y reconoce cuando algo no esta en ella, pero no se detalla el alcance ni la actualizacion de dicha base.
-- Licencia LFM Open License v1.0: es necesario revisar sus terminos para uso comercial o redistribucion; la licencia se declara como "other" en los metadatos de HuggingFace.
+- Licencia LFM Open License v1.0: es necesario revisar sus terminos para uso comercial o redistribucion; la licencia se declara como "other" en los metadatos de Hugging Face.
 - El componente EmbeddingGemma 2 esta sujeto a la Gemma Prohibited Use Policy, con restricciones adicionales de uso.
 - Dependencia de plataforma: el pack solo incluye runtime para Windows x64 con Vulkan.
 - Sin descargas ni validacion de la comunidad en el momento de la consulta (0 descargas, 0 likes).
@@ -82,7 +82,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AlexJamesDean/MLOArchitect-Clappy
+- Modelo en Hugging Face: https://huggingface.co/AlexJamesDean/MLOArchitect-Clappy
 - Aplicacion MLOArchitect: https://mloarchitect.com
 - Modelo base LiquidAI/LFM3-Audio-2B: https://huggingface.co/LiquidAI/LFM3-Audio-2B
 - Modelo de embeddings google/embeddinggemma-2: https://huggingface.co/google/embeddinggemma-2

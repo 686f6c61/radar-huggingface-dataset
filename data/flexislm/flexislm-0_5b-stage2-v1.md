@@ -1,7 +1,7 @@
 # FlexiSLM/FlexiSLM-0_5B-Stage2-v1
 
 ## Resumen
-El modelo FlexiSLM-0_5B-Stage2-v1 es un modelo de lenguaje de aproximadamente 0.5 mil millones de parametros, publicado por la organizacion FlexiSLM en el repositorio de HuggingFace. Se distribuye bajo licencia Apache 2.0, lo que permite un uso comercial y de modificacion sin restricciones significativas. La nomenclatura "Stage2-v1" sugiere que forma parte de un proceso de entrenamiento por fases, aunque no se aporta ningun detalle adicional en la model card.
+El modelo FlexiSLM-0_5B-Stage2-v1 es un modelo de lenguaje de aproximadamente 0.5 mil millones de parametros, publicado por la organizacion FlexiSLM en el repositorio de Hugging Face. Se distribuye bajo licencia Apache 2.0, lo que permite un uso comercial y de modificacion sin restricciones significativas. La nomenclatura "Stage2-v1" sugiere que forma parte de un proceso de entrenamiento por fases, aunque no se aporta ningun detalle adicional en la model card.
 
 La relevancia de este modelo reside en su tamano reducido y su licencia permisiva, lo que lo hace potencialmente interesante para entornos con recursos limitados o para experimentacion. Sin embargo, la model card esta practicamente vacia: no se especifican la arquitectura, el contexto, los datos de entrenamiento, los benchmarks ni las capacidades. Esto lo convierte en una opcion arriesgada para produccion, ya que no existe documentacion tecnica que respalde su comportamiento. Actualmente cuenta con cero descargas y cero likes, lo que indica que es un lanzamiento muy reciente o sin difusion.
 
@@ -51,4 +51,4 @@ No se dispone de una comparativa oficial. Existen modelos de tamano similar con 
 - Inadecuado para produccion: sin datos de rendimiento ni estabilidad, no se recomienda su uso en entornos criticos o comerciales sin una evaluacion exhaustiva previa.
 
 ## Enlaces
-- Repositorio en HuggingFace: https://huggingface.co/FlexiSLM/FlexiSLM-0_5B-Stage2-v1
+- Repositorio en Hugging Face: https://huggingface.co/FlexiSLM/FlexiSLM-0_5B-Stage2-v1

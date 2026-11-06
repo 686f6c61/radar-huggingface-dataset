@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ade-leke/embodied-ai-small44` es un repositorio publicado en HuggingFace por el usuario ade-leke que, pese a estar etiquetado con `safetensors` y `transformer`, contiene un artefacto de 33.088 parametros (aproximadamente 33 mil) y un peso de repositorio de 0,0 GB. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre *Embodied AI* (IA encarnada), con referencias de evaluacion y preguntas abiertas, y afirma explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
+`ade-leke/embodied-ai-small44` es un repositorio publicado en Hugging Face por el usuario ade-leke que, pese a estar etiquetado con `safetensors` y `transformer`, contiene un artefacto de 33.088 parametros (aproximadamente 33 mil) y un peso de repositorio de 0,0 GB. La propia model card lo describe como un conjunto estructurado de notas de investigacion sobre *Embodied AI* (IA encarnada), con referencias de evaluacion y preguntas abiertas, y afirma explicitamente que no reclama mejoras de benchmark, ablaciones completadas, codigo publicado ni un checkpoint entrenado.
 
 El problema que aborda, por tanto, no es una tarea de modelado, sino la documentacion de un plan de investigacion y su contexto de evaluacion. La relevancia de esta ficha es acotada: sirve para dejar constancia de que el artefacto no constituye un modelo de lenguaje utilizable en produccion, a pesar de su etiquetado como transformer.
 
@@ -45,7 +45,7 @@ Los siguientes usos son los unicos realistas con la informacion disponible. No i
 - Validacion de plantillas de model card: sirve como ejemplo de documentacion estructurada para repositorios de investigacion, con separacion explicita entre planes y resultados.
 - Demostracion de gobernanza de licencias: al estar bajo MIT, es util para ejemplificar como se declara una licencia permisiva y como se advierte sobre los terminos de datos externos.
 - Material docente sobre higiene experimental: la model card insiste en registrar versiones de dataset, comandos, seeds, hardware y logs; el repositorio puede usarse como caso de estudio de buenas practicas documentales.
-- Referencia de nomenclatura y etiquetado en HuggingFace: permite ilustrar como los tags (`research-notes`, `embodied-ai`) describen el contenido real y no las capacidades del artefacto.
+- Referencia de nomenclatura y etiquetado en Hugging Face: permite ilustrar como los tags (`research-notes`, `embodied-ai`) describen el contenido real y no las capacidades del artefacto.
 
 No se recomienda su uso para generacion de texto, atencion al cliente, generacion de codigo, analisis de datos ni ninguna tarea de inferencia real.
 
@@ -77,6 +77,6 @@ No disponible. No se han identificado modelos comparables, dado que el artefacto
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ade-leke/embodied-ai-small44
+- Modelo en Hugging Face: https://huggingface.co/ade-leke/embodied-ai-small44
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de codigo o demos) en la busqueda web realizada.

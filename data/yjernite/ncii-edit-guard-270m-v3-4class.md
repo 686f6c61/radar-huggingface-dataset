@@ -100,7 +100,7 @@ El resto de metricas de los modelos comparables no se han publicado en la inform
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yjernite/ncii-edit-guard-270m-v3-4class
+- Modelo en Hugging Face: https://huggingface.co/yjernite/ncii-edit-guard-270m-v3-4class
 - Modelo recomendado (3 clases, v3): https://huggingface.co/yjernite/ncii-edit-guard-270m-v3
 - Resultados de evaluacion: https://huggingface.co/yjernite/ncii-edit-guard-270m-v3-4class/blob/main/eval/results.json
 - Modelo base: https://huggingface.co/microsoft/harrier-oss-v1-270m

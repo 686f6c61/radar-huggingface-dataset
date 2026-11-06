@@ -76,9 +76,9 @@ Rendimiento de inferencia en Snapdragon 7 Gen 1 (Motorola Edge 50): 160 ms en GP
 
 | Modelo | Parámetros | Contexto/entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Lumen Cutout | no disponible | 512×512 fija | 3,84% de discrepancia vs BiRefNet-lite en COCO val | MIT | HuggingFace, LiteRT y PyTorch |
-| BiRefNet-lite (ZhengPeng7) | no disponible | resolución variable | referencia original; usa convoluciones deformables no soportadas en GPU/NPU móvil | MIT | HuggingFace |
-| BiRefNet (completo) | no disponible | alta resolución | mayor calidad, mayor coste computacional | MIT | HuggingFace |
+| Lumen Cutout | no disponible | 512×512 fija | 3,84% de discrepancia vs BiRefNet-lite en COCO val | MIT | Hugging Face, LiteRT y PyTorch |
+| BiRefNet-lite (ZhengPeng7) | no disponible | resolución variable | referencia original; usa convoluciones deformables no soportadas en GPU/NPU móvil | MIT | Hugging Face |
+| BiRefNet (completo) | no disponible | alta resolución | mayor calidad, mayor coste computacional | MIT | Hugging Face |
 
 No se dispone de datos de benchmarks comparativos con otros modelos de segmentación en la información proporcionada.
 
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de segmentac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/subhashhhhhh/lumen-cutout
+- Modelo en Hugging Face: https://huggingface.co/subhashhhhhh/lumen-cutout
 - Modelo base BiRefNet-lite: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Proyecto Lumen (galería Android): https://github.com/subhashhhhhh/Lumen
 - Dataset COCO 2017: https://cocodataset.org

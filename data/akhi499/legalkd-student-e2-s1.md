@@ -2,7 +2,7 @@
 
 ## Resumen
 
-legalkd-student-e2-s1 es un adaptador LoRA publicado por el usuario akhi499 sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se distribuye a través de HuggingFace con la librería PEFT y la etiqueta `text-generation`, y su repositorio ocupa 1,6 GB. El nombre del repositorio sugiere un experimento de destilación de conocimiento en el ámbito legal ("legalkd-student"), aunque la model card no documenta ni el conjunto de datos ni el objetivo declarado del entrenamiento.
+legalkd-student-e2-s1 es un adaptador LoRA publicado por el usuario akhi499 sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Se distribuye a través de Hugging Face con la librería PEFT y la etiqueta `text-generation`, y su repositorio ocupa 1,6 GB. El nombre del repositorio sugiere un experimento de destilación de conocimiento en el ámbito legal ("legalkd-student"), aunque la model card no documenta ni el conjunto de datos ni el objetivo declarado del entrenamiento.
 
 El modelo base es un transformer decoder-only de aproximadamente 1,54 mil millones de parámetros con una ventana de contexto nativa de 32.768 tokens, lo que sitúa a este adaptador en la categoría de modelos pequeños orientados a despliegue en hardware modesto. Al ser un adaptador PEFT, no es un modelo autónomo: requiere cargar los pesos de Qwen2.5-1.5B-Instruct y aplicar encima las matrices LoRA entrenadas.
 
@@ -68,11 +68,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ca
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| legalkd-student-e2-s1 | Adaptador LoRA sobre 1,5B | 32.768 (heredado del base) | Apache 2.0 | HuggingFace, 0 descargas | Sin benchmarks ni dataset documentado |
-| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 | Apache 2.0 | HuggingFace, ampliamente descargado | Modelo base; benchmarks publicados por el autor original |
-| Llama-3.2-1B-Instruct | ~1,24B | 128.000 | Llama 3.2 Community License | HuggingFace | Contexto mayor; licencia con restricciones para algunos usos |
-| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 | Apache 2.0 | HuggingFace | Alternativa entrenada explícitamente con datos abiertos |
-| Gemma-2-2B-it | ~2,6B | 8.192 | Gemma Terms of Use | HuggingFace | Mayor tamaño, licencia con condiciones de uso |
+| legalkd-student-e2-s1 | Adaptador LoRA sobre 1,5B | 32.768 (heredado del base) | Apache 2.0 | Hugging Face, 0 descargas | Sin benchmarks ni dataset documentado |
+| Qwen2.5-1.5B-Instruct | ~1,54B | 32.768 | Apache 2.0 | Hugging Face, ampliamente descargado | Modelo base; benchmarks publicados por el autor original |
+| Llama-3.2-1B-Instruct | ~1,24B | 128.000 | Llama 3.2 Community License | Hugging Face | Contexto mayor; licencia con restricciones para algunos usos |
+| SmolLM2-1.7B-Instruct | ~1,7B | 8.192 | Apache 2.0 | Hugging Face | Alternativa entrenada explícitamente con datos abiertos |
+| Gemma-2-2B-it | ~2,6B | 8.192 | Gemma Terms of Use | Hugging Face | Mayor tamaño, licencia con condiciones de uso |
 
 La comparación directa de rendimiento no es posible porque el adaptador no publica métricas. Los datos de la columna de parámetros y contexto corresponden a la documentación pública de cada modelo base o alternativo, no a este repositorio.
 
@@ -91,7 +91,7 @@ La comparación directa de rendimiento no es posible porque el adaptador no publ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhi499/legalkd-student-e2-s1
+- Modelo en Hugging Face: https://huggingface.co/akhi499/legalkd-student-e2-s1
 - Modelo base Qwen2.5-1.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Blog técnico de Qwen2.5: https://qwenlm.github.io/blog/qwen2.5/
 - Repositorio de Qwen2.5 en GitHub: https://github.com/QwenLM/Qwen2.5

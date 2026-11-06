@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SemWAM-LIBERO-Legacy-rgb-dep-log3-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en HuggingFace. Se trata de un artefacto de archivo histórico ("historical checkpoint") del proyecto SemWAM, entrenado sobre el benchmark LIBERO, un conjunto de tareas de manipulación robótica. El modelo parte de la base de un modelo generativo de vídeo (Wan-AI/Wan2.2-TI2V-5B) y añade condicionamiento por profundidad (representación log3) y semántica (DINOv3 ViT-B/16), configurado para un paradigma de entrada `t_concat` con layout horizontal de vistas LIBERO.
+SemWAM-LIBERO-Legacy-rgb-dep-log3-step21700 es un checkpoint de investigación en robótica publicado por el usuario RainyBot en Hugging Face. Se trata de un artefacto de archivo histórico ("historical checkpoint") del proyecto SemWAM, entrenado sobre el benchmark LIBERO, un conjunto de tareas de manipulación robótica. El modelo parte de la base de un modelo generativo de vídeo (Wan-AI/Wan2.2-TI2V-5B) y añade condicionamiento por profundidad (representación log3) y semántica (DINOv3 ViT-B/16), configurado para un paradigma de entrada `t_concat` con layout horizontal de vistas LIBERO.
 
 La relevancia de esta publicación es fundamentalmente archivística: preserva byte a byte el checkpoint original pre-v2 junto con su configuración resuelta, para reproducibilidad de investigaciones pasadas. El autor advierte explícitamente de que el checkpoint carece de `checkpoint_version=2` e `inference_config`, y por tanto no es compatible con el evaluador actual de SemWAM v2. No se trata de un modelo listo para producción ni de una release con garantías de evaluación, sino de un registro de entrenamiento finalizado en el paso de optimizador 21700/21700.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SemWAM-LIBERO-Legacy-rgb-dep-log3-step21700 | no disponible (~5B base) | no disponible | no disponible | no disponible | HuggingFace (archivo histórico) |
-| Wan-AI/Wan2.2-TI2V-5B | ~5B | no disponible | no disponible en esta ficha | no disponible | HuggingFace (modelo base) |
+| SemWAM-LIBERO-Legacy-rgb-dep-log3-step21700 | no disponible (~5B base) | no disponible | no disponible | no disponible | Hugging Face (archivo histórico) |
+| Wan-AI/Wan2.2-TI2V-5B | ~5B | no disponible | no disponible en esta ficha | no disponible | Hugging Face (modelo base) |
 | Alternativas de política robótica LIBERO | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de alternativas comparables en la información proporcionada.
@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de alterna
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-log3-step21700
+- Hugging Face: https://huggingface.co/RainyBot/SemWAM-LIBERO-Legacy-rgb-dep-log3-step21700
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B
 - Benchmark LIBERO: no disponible en la información proporcionada
 - Paper SemWAM: no disponible en la información proporcionada

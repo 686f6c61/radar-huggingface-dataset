@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Chichu-3-0-gguf es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-2B publicado por el usuario Sebastianpro88 en HuggingFace. Se trata de un modelo de generacion de lenguaje de aproximadamente 2.274 millones de parametros (2,27 mil millones) distribuido en precision de 16 bits (FP16) con pesos en formato safetensors, y entrenado con las librerias Unsloth y TRL de HuggingFace. A pesar del sufijo "gguf" en el nombre, el propio autor aclara en la model card que el modelo no esta en formato GGUF, sino que se trata de un modelo FP16 subido accidentalmente con ese nombre.
+Chichu-3-0-gguf es un ajuste fino (fine-tuning) del modelo base Qwen/Qwen3.5-2B publicado por el usuario Sebastianpro88 en Hugging Face. Se trata de un modelo de generacion de lenguaje de aproximadamente 2.274 millones de parametros (2,27 mil millones) distribuido en precision de 16 bits (FP16) con pesos en formato safetensors, y entrenado con las librerias Unsloth y TRL de Hugging Face. A pesar del sufijo "gguf" en el nombre, el propio autor aclara en la model card que el modelo no esta en formato GGUF, sino que se trata de un modelo FP16 subido accidentalmente con ese nombre.
 
-El modelo resuelve la tarea de generacion de texto conversacional y, segun la etiqueta de pipeline de HuggingFace, tambien image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base. Esta licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y esta declarado unicamente para el idioma ingles.
+El modelo resuelve la tarea de generacion de texto conversacional y, segun la etiqueta de pipeline de Hugging Face, tambien image-text-to-text, lo que sugiere capacidades multimodales heredadas del modelo base. Esta licenciado bajo Apache 2.0, lo que permite uso comercial sin restricciones adicionales, y esta declarado unicamente para el idioma ingles.
 
 Su relevancia actual es limitada dentro del ecosistema: cuenta con cero descargas y cero "likes" en el momento de la consulta, y no se ha publicado ninguna evaluacion de rendimiento. Se trata, por tanto, de un experimento de ajuste fino aislado mas que de un modelo con validacion comunitaria, aunque resulta de interes como ejemplo del flujo de trabajo Unsloth + TRL aplicado a la familia Qwen3.5.
 
@@ -25,7 +25,7 @@ Su relevancia actual es limitada dentro del ecosistema: cuenta con cero descarga
 
 El modelo es un ajuste fino del checkpoint Qwen/Qwen3.5-2B, por lo que hereda la arquitectura transformer de dicha familia. La informacion proporcionada no detalla el numero de capas, dimensiones de atencion, mecanismos concretos (atencion lineal, MoE o hibridos) ni el esquema exacto de tokenizacion. El modelo se distribuye en precision FP16 con un tamano de repositorio de 4,6 GB, coherente con un modelo denso de 2,27 mil millones de parametros almacenado a 16 bits (aproximadamente 4,5 GB solo de pesos).
 
-El entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, segun indica la propia model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset de ajuste fino, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documenta la innovacion tecnica del ajuste mas alla del uso de Unsloth para acelerar el entrenamiento. La etiqueta "unsloth" y "qwen3_5" confirman el flujo de trabajo, pero los hiperparametros y datos concretos no estan disponibles.
+El entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, segun indica la propia model card. No se especifican el numero de tokens de entrenamiento, la composicion del dataset de ajuste fino, ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. Tampoco se documenta la innovacion tecnica del ajuste mas alla del uso de Unsloth para acelerar el entrenamiento. La etiqueta "unsloth" y "qwen3_5" confirman el flujo de trabajo, pero los hiperparametros y datos concretos no estan disponibles.
 
 ## Capacidades
 
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Formato | Rendimiento |
 |---|---|---|---|---|---|
 | Chichu-3-0-gguf | 2,27 mil millones | No disponible | Apache 2.0 | Safetensors FP16 | No disponible |
-| Qwen/Qwen3.5-2B (base) | ~2 mil millones | No disponible | No disponible en la informacion | Safetensors (segun HuggingFace) | No disponible |
+| Qwen/Qwen3.5-2B (base) | ~2 mil millones | No disponible | No disponible en la informacion | Safetensors (segun Hugging Face) | No disponible |
 | Alternativas de ~2B en la misma categoria | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se dispone de datos de benchmarks ni de especificaciones detalladas de modelos equivalentes en la informacion proporcionada, por lo que la comparativa cuantitativa no es posible.
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de modelo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Sebastianpro88/Chichu-3-0-gguf
+- Modelo en Hugging Face: https://huggingface.co/Sebastianpro88/Chichu-3-0-gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se proporciona enlace directo en la informacion disponible.
+- Libreria TRL de Hugging Face: no se proporciona enlace directo en la informacion disponible.

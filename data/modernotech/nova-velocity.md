@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ModernoTech/Nova-Velocity
+- Repositorio en Hugging Face: https://huggingface.co/ModernoTech/Nova-Velocity
 - Candidato de origen citado: https://huggingface.co/DavidAU/Qwen3-30B-A1.5B-GGUF
 - Paper, blog o demo oficial: no disponible en la información proporcionada.

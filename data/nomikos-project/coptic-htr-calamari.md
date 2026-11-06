@@ -20,7 +20,7 @@ Su relevancia es de nicho pero clara para el ámbito de las humanidades digitale
 | Idiomas soportados | cop (copto) |
 | Licencia | no disponible |
 | Formato de pesos | PyTorch (`best.pt`) y ONNX (`best.onnx`); configuración de entrenamiento en `config.yaml` |
-| Tamaño del repositorio | 0.0 GB (según HuggingFace) |
+| Tamaño del repositorio | 0.0 GB (según Hugging Face) |
 | Pipeline | image-to-text |
 | Tarea declarada | transcribe (reconocimiento de texto manuscrito) |
 
@@ -101,12 +101,12 @@ No se dispone de información sobre modelos alternativos comparables (por ejempl
 - Riesgo de alucinación contextual: como modelo CTC sobre un alfabeto cerrado de 39 caracteres, puede producir secuencias plausibles donde la imagen es ambigua o está degradada.
 - Licencia no disponible: no se especifican términos de uso comercial, por lo que su empleo en productos comerciales queda sin cobertura legal clara.
 - Madurez y validación externa limitadas: el repositorio registra 0 descargas y 0 likes, y las métricas están marcadas como no verificadas (`verified: false`).
-- Discrepancia en el tamaño del repositorio: HuggingFace indica 0.0 GB, incoherente con la presencia de `best.pt` y `best.onnx`; conviene verificar los archivos antes de integrarlo.
+- Discrepancia en el tamaño del repositorio: Hugging Face indica 0.0 GB, incoherente con la presencia de `best.pt` y `best.onnx`; conviene verificar los archivos antes de integrarlo.
 - Sin cuantizaciones publicadas: solo se ofrecen pesos PyTorch y ONNX en precisión original, lo que puede limitar el despliegue en entornos con restricciones de memoria.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nomikos-project/coptic-htr-calamari
-- Organización en HuggingFace: https://huggingface.co/nomikos-project
+- Modelo en Hugging Face: https://huggingface.co/nomikos-project/coptic-htr-calamari
+- Organización en Hugging Face: https://huggingface.co/nomikos-project
 - Plataforma Nomikos: https://www.nomikos.app/
 - Seguimiento del entrenamiento (Weights & Biases): https://wandb.ai/personal-space-astha/OCR_Consulting_final

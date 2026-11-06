@@ -4,7 +4,7 @@
 
 alston-v5 es un modelo de lenguaje conversacional basado en un fine-tuning de `mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated`, que a su vez deriva del modelo Llama 3.1 8B Instruct de Meta. El autor, alst10, ha entrenado este modelo con la librería Unsloth, orientado a tareas de conversación en inglés. El tag "abliterated" indica que se ha eliminado el mecanismo de rechazo de contenido del modelo original, lo que puede implicar una menor censura en las respuestas.
 
-El modelo tiene actualmente 0 descargas y 0 likes en HuggingFace, y no se ha publicado documentación técnica adicional, papers ni benchmarks. Toda la información disponible proviene de los metadatos del repositorio. A pesar de su escasa visibilidad, representa un ejemplo de fine-tuning eficiente sobre una base conocida, con potencial para aplicaciones de chat y generación de texto en entornos donde se requiera un modelo de 8 mil millones de parámetros con ventana de contexto larga.
+El modelo tiene actualmente 0 descargas y 0 likes en Hugging Face, y no se ha publicado documentación técnica adicional, papers ni benchmarks. Toda la información disponible proviene de los metadatos del repositorio. A pesar de su escasa visibilidad, representa un ejemplo de fine-tuning eficiente sobre una base conocida, con potencial para aplicaciones de chat y generación de texto en entornos donde se requiera un modelo de 8 mil millones de parámetros con ventana de contexto larga.
 
 ## Especificaciones tecnicas
 
@@ -38,7 +38,7 @@ El fine-tuning se ha realizado con la libreria Unsloth, conocida por permitir en
 
 - Asistentes conversacionales: el modelo puede utilizarse para construir chatbots en ingles que mantengan conversaciones fluidas, aprovechando su naturaleza instruct y su ventana de contexto larga para recordar informacion previa.
 - Generacion de contenido creativo: al ser una variante abliterated, puede producir textos sin las restricciones habituales de censura, lo que podria interesar en proyectos de escritura libre o roleplay, aunque con riesgos eticos.
-- Prototipado rapido de aplicaciones de IA: gracias a su tamano de 8B y a la compatibilidad con endpoints de HuggingFace, es adecuado para pruebas de concepto en entornos con recursos moderados.
+- Prototipado rapido de aplicaciones de IA: gracias a su tamano de 8B y a la compatibilidad con endpoints de Hugging Face, es adecuado para pruebas de concepto en entornos con recursos moderados.
 - Analisis de documentos largos: con 128 000 tokens de contexto, puede resumir o extraer informacion de textos extensos, como contratos o informes, siempre que se valide su calidad.
 - Educacion y experimentacion: investigadores pueden usarlo para estudiar los efectos de la ablacion de seguridad en modelos de lenguaje, comparandolo con la version original.
 - Integracion en pipelines de generacion de texto: al ser un modelo de texto puro, puede integrarse en sistemas de generacion de respuestas automaticas, correos o resumenes, previa evaluacion de su rendimiento.
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ha
 - Inferencia en FP16: se requieren aproximadamente 16 GB de VRAM, por lo que es viable en GPUs como RTX 4090 (24 GB) o A100 (40 GB o mas).
 - Inferencia en 8 bits: alrededor de 8-9 GB de VRAM, compatible con RTX 3080/3090 (10-24 GB) o GPUs de datacenter.
 - Inferencia en 4 bits (cuantizacion GGUF o GPTQ): aproximadamente 5-6 GB de VRAM, lo que permite ejecucion en GPUs consumer como RTX 3060 (12 GB) o incluso en CPU con RAM suficiente.
-- Opciones de despliegue: vLLM, llama.cpp, Ollama, Transformers con TGI, o los endpoints de HuggingFace (indicado por "endpoints_compatible").
+- Opciones de despliegue: vLLM, llama.cpp, Ollama, Transformers con TGI, o los endpoints de Hugging Face (indicado por "endpoints_compatible").
 - Latencia y throughput: no disponibles, dependen del hardware y de la optimizacion. Para un modelo de 8B, se puede esperar una latencia de decenas de milisegundos por token en GPUs modernas, pero sin datos oficiales.
 
 ## Comparativa con modelos similares
@@ -76,6 +76,6 @@ La comparativa se limita a parametros y contexto, ya que no hay datos de rendimi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alst10/alston-v5
+- Modelo en Hugging Face: https://huggingface.co/alst10/alston-v5
 - Coleccion del autor: https://huggingface.co/collections/alst10/onnx
 - Otro modelo del autor (referencia): https://huggingface.co/alst10/alston-writer

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Orvansi_Beta es un modelo de lenguaje fine-tuneado por Atishaymint sobre la base de Mistral-Nemo-Instruct-2407-bnb-4bit, un instruct model de 12 mil millones de parámetros desarrollado por Mistral AI en colaboración con NVIDIA. El ajuste se realizó utilizando las librerías Unsloth y TRL de HuggingFace, lo que permite un entrenamiento aproximadamente el doble de rápido que los métodos convencionales. El modelo está orientado a tareas conversacionales y de generación de texto en inglés, y se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en proyectos propietarios.
+Orvansi_Beta es un modelo de lenguaje fine-tuneado por Atishaymint sobre la base de Mistral-Nemo-Instruct-2407-bnb-4bit, un instruct model de 12 mil millones de parámetros desarrollado por Mistral AI en colaboración con NVIDIA. El ajuste se realizó utilizando las librerías Unsloth y TRL de Hugging Face, lo que permite un entrenamiento aproximadamente el doble de rápido que los métodos convencionales. El modelo está orientado a tareas conversacionales y de generación de texto en inglés, y se distribuye bajo licencia Apache-2.0, lo que facilita su uso comercial y su integración en proyectos propietarios.
 
-La relevancia de este modelo radica en su punto de partida: Mistral-Nemo-Instruct-2407 es una arquitectura transformer densa con 12B parámetros, diseñada para ofrecer un equilibrio entre rendimiento y eficiencia en hardware de consumo. Al ser un fine-tuning de este modelo base, Orvansi_Beta hereda sus capacidades generales de razonamiento, generación de código y comprensión de instrucciones, aunque no se han publicado detalles específicos sobre el dataset de ajuste ni los benchmarks propios. El modelo se publicó en septiembre de 2026 y, en el momento de esta ficha, cuenta con cero descargas y cero likes en HuggingFace, lo que indica un estado muy inicial de adopción.
+La relevancia de este modelo radica en su punto de partida: Mistral-Nemo-Instruct-2407 es una arquitectura transformer densa con 12B parámetros, diseñada para ofrecer un equilibrio entre rendimiento y eficiencia en hardware de consumo. Al ser un fine-tuning de este modelo base, Orvansi_Beta hereda sus capacidades generales de razonamiento, generación de código y comprensión de instrucciones, aunque no se han publicado detalles específicos sobre el dataset de ajuste ni los benchmarks propios. El modelo se publicó en septiembre de 2026 y, en el momento de esta ficha, cuenta con cero descargas y cero likes en Hugging Face, lo que indica un estado muy inicial de adopción.
 
 ## Especificaciones tecnicas
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su punto de partida: Mistral-Nemo-Instruc
 
 ## Arquitectura y entrenamiento
 
-Orvansi_Beta es un fine-tuning completo del modelo Mistral-Nemo-Instruct-2407-bnb-4bit, que a su vez es una version cuantizada a 4 bits del Mistral-Nemo-Instruct-2407 original. La arquitectura subyacente es un transformer denso con atencion por ventanas deslizantes (sliding window attention), que permite manejar contextos largos de hasta 128.000 tokens en el modelo base. El proceso de ajuste se llevo a cabo con Unsloth, una libreria optimizada para entrenamiento eficiente, y TRL de HuggingFace, que proporciona herramientas para fine-tuning con tecnicas como SFT (Supervised Fine-Tuning).
+Orvansi_Beta es un fine-tuning completo del modelo Mistral-Nemo-Instruct-2407-bnb-4bit, que a su vez es una version cuantizada a 4 bits del Mistral-Nemo-Instruct-2407 original. La arquitectura subyacente es un transformer denso con atencion por ventanas deslizantes (sliding window attention), que permite manejar contextos largos de hasta 128.000 tokens en el modelo base. El proceso de ajuste se llevo a cabo con Unsloth, una libreria optimizada para entrenamiento eficiente, y TRL de Hugging Face, que proporciona herramientas para fine-tuning con tecnicas como SFT (Supervised Fine-Tuning).
 
 No se ha publicado informacion sobre el dataset utilizado para el ajuste, el numero de pasos de entrenamiento, ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. Dado que el modelo base ya es un instruct model, el fine-tuning probablemente se realizo sobre datos conversacionales o de instrucciones especificas, pero no hay confirmacion. El repositorio no incluye scripts de entrenamiento ni configuraciones detalladas, lo que limita la reproducibilidad del proceso.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No ex
 | Llama 3.1 8B Instruct | 8B | 128k tokens | Llama 3.1 Community License | Alternativa de tamano similar, con amplia comunidad |
 | Qwen 2.5 14B Instruct | 14B | 128k tokens | Apache-2.0 | Mayor tamano, buen rendimiento en codigo y matematicas |
 
-La comparacion directa no es posible sin benchmarks propios. Orvansi_Beta se posiciona como una variante de Mistral-Nemo-Instruct-2407, por lo que su rendimiento deberia ser similar al de este, salvo que el dataset de fine-tuning haya introducido cambios significativos. La ventaja principal de Orvansi_Beta es su licencia Apache-2.0 y su disponibilidad inmediata en HuggingFace, pero carece de la documentacion y validacion del modelo base.
+La comparacion directa no es posible sin benchmarks propios. Orvansi_Beta se posiciona como una variante de Mistral-Nemo-Instruct-2407, por lo que su rendimiento deberia ser similar al de este, salvo que el dataset de fine-tuning haya introducido cambios significativos. La ventaja principal de Orvansi_Beta es su licencia Apache-2.0 y su disponibilidad inmediata en Hugging Face, pero carece de la documentacion y validacion del modelo base.
 
 ## Limitaciones y advertencias
 
@@ -78,8 +78,8 @@ La comparacion directa no es posible sin benchmarks propios. Orvansi_Beta se pos
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atishaymint/Orvansi_Beta
-- Perfil del autor en HuggingFace: https://huggingface.co/Atishaymint
+- Modelo en Hugging Face: https://huggingface.co/Atishaymint/Orvansi_Beta
+- Perfil del autor en Hugging Face: https://huggingface.co/Atishaymint
 - Pagina del modelo en FriendliAI (inferencia): https://friendli.ai/models/Atishaymint/Orvansi_Beta
 - Modelo base (Mistral-Nemo-Instruct-2407-bnb-4bit): https://huggingface.co/unsloth/Mistral-Nemo-Instruct-2407-bnb-4bit
 - Libreria Unsloth: https://github.com/unslothai/unsloth

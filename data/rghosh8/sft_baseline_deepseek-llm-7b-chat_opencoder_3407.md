@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SFT_baseline_deepseek-llm-7b-chat_opencoder_3407 es un ajuste fino por supervisión (SFT) del modelo deepseek-ai/deepseek-llm-7b-chat, publicado por el usuario rghosh8 en HuggingFace. Se trata de un modelo de generación de texto de 6.910.365.696 parámetros (aproximadamente 6,9 mil millones), derivado de la familia DeepSeek LLM 7B, y entrenado con la librería TRL de HuggingFace. El nombre del repositorio sugiere que el ajuste se realizó sobre un conjunto de datos denominado "opencoder" con la semilla 3407, si bien la model card no documenta explícitamente la composición del dataset ni el procedimiento completo.
+SFT_baseline_deepseek-llm-7b-chat_opencoder_3407 es un ajuste fino por supervisión (SFT) del modelo deepseek-ai/deepseek-llm-7b-chat, publicado por el usuario rghosh8 en Hugging Face. Se trata de un modelo de generación de texto de 6.910.365.696 parámetros (aproximadamente 6,9 mil millones), derivado de la familia DeepSeek LLM 7B, y entrenado con la librería TRL de Hugging Face. El nombre del repositorio sugiere que el ajuste se realizó sobre un conjunto de datos denominado "opencoder" con la semilla 3407, si bien la model card no documenta explícitamente la composición del dataset ni el procedimiento completo.
 
 El modelo se presenta como una "baseline" (línea base) de SFT, lo que indica que su propósito es servir como punto de referencia experimental más que como un modelo listo para producción. No cuenta con descargas ni interacciones en el momento de la consulta, y la información pública disponible es muy limitada: la model card generada automáticamente por TRL no incluye detalles sobre datos de entrenamiento, hiperparámetros, evaluación o licencia.
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_3407 | 6,9 B | no disponible (base: 4.096) | no disponible | HuggingFace, 0 descargas | Baseline SFT experimental |
-| deepseek-ai/deepseek-llm-7b-chat (modelo base) | 6,9 B | 4.096 | licencia DeepSeek (con restricciones comerciales) | HuggingFace, ampliamente usado | Modelo oficial de chat de DeepSeek |
-| Mistral-7B-Instruct-v0.2 | 7,2 B | 32.768 | Apache 2.0 | HuggingFace, muy usado | Alternativa de código abierto permisiva |
-| Llama-3-8B-Instruct | 8,0 B | 8.192 | Llama 3 Community License | HuggingFace, muy usado | Alternativa con licencia comunitaria |
+| rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_3407 | 6,9 B | no disponible (base: 4.096) | no disponible | Hugging Face, 0 descargas | Baseline SFT experimental |
+| deepseek-ai/deepseek-llm-7b-chat (modelo base) | 6,9 B | 4.096 | licencia DeepSeek (con restricciones comerciales) | Hugging Face, ampliamente usado | Modelo oficial de chat de DeepSeek |
+| Mistral-7B-Instruct-v0.2 | 7,2 B | 32.768 | Apache 2.0 | Hugging Face, muy usado | Alternativa de código abierto permisiva |
+| Llama-3-8B-Instruct | 8,0 B | 8.192 | Llama 3 Community License | Hugging Face, muy usado | Alternativa con licencia comunitaria |
 
 La comparación con Mistral y Llama 3 se ofrece como referencia de categoría (modelos instruct de 7-8 B), no como evaluación de rendimiento, ya que no hay benchmarks publicados para este ajuste.
 
@@ -93,7 +93,7 @@ La comparación con Mistral y Llama 3 se ofrece como referencia de categoría (m
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_3407
+- Repositorio Hugging Face: https://huggingface.co/rghosh8/SFT_baseline_deepseek-llm-7b-chat_opencoder_3407
 - Modelo base: https://huggingface.co/deepseek-ai/deepseek-llm-7b-chat
 - Librería TRL: https://github.com/huggingface/trl
 - Documentación de Transformers: https://huggingface.co/docs/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF es un kit de despliegue comunitario publicado por el usuario QWER123951 en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una recopilación de los ficheros GGUF cuantizados con GSQ-RCO de Qwen3.8-Flash-Next (realizados por el laboratorio ISTA-DASLab), copiados byte a byte del repositorio original, más un archivo adicional de 480 KB que contiene un vector de control de dirección de rechazo (refusal direction) extraído del checkpoint abliterated de Huihui-ai.
+Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF es un kit de despliegue comunitario publicado por el usuario QWER123951 en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una recopilación de los ficheros GGUF cuantizados con GSQ-RCO de Qwen3.8-Flash-Next (realizados por el laboratorio ISTA-DASLab), copiados byte a byte del repositorio original, más un archivo adicional de 480 KB que contiene un vector de control de dirección de rechazo (refusal direction) extraído del checkpoint abliterated de Huihui-ai.
 
 El propósito del repositorio es permitir ejecutar una versión "abliterated" (sin rechazos de seguridad) del modelo en una GPU de consumo, aplicando el vector de dirección en tiempo de ejecución mediante el motor Strata, en lugar de modificar los pesos. Esto permite alternar entre el modelo original y la versión sin filtros con un simple flag de configuración. El modelo base es multimodal (image-text-to-text) y el repositorio incluye el proyector de visión en BF16.
 

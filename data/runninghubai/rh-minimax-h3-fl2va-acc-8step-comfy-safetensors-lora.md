@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`RunningHubAI/rh-minimax-h3-fl2va-acc-8step-comfy.safetensors-lora` es un adaptador LoRA publicado en HuggingFace por el usuario RunningHubAI, orientado al ecosistema ComfyUI. El repositorio contiene un unico archivo de pesos, `MiniMax-H3-FL2VA-Acc-8Step_comfy.safetensors`, de 1624 MiB, y no incluye el modelo base sobre el que se aplica ni documentacion tecnica sobre su entrenamiento. La model card se limita a describir el tipo de artefacto (LoRA), las plataformas de uso (ComfyUI, RunningHub y Hugging Face) y los enlaces comerciales del proveedor.
+`RunningHubAI/rh-minimax-h3-fl2va-acc-8step-comfy.safetensors-lora` es un adaptador LoRA publicado en Hugging Face por el usuario RunningHubAI, orientado al ecosistema ComfyUI. El repositorio contiene un unico archivo de pesos, `MiniMax-H3-FL2VA-Acc-8Step_comfy.safetensors`, de 1624 MiB, y no incluye el modelo base sobre el que se aplica ni documentacion tecnica sobre su entrenamiento. La model card se limita a describir el tipo de artefacto (LoRA), las plataformas de uso (ComfyUI, RunningHub y Hugging Face) y los enlaces comerciales del proveedor.
 
 Por la nomenclatura del archivo, se trata de un LoRA de aceleracion (sufijo `Acc-8Step`) pensado para reducir el numero de pasos de muestreo en un flujo de generacion de video, presumiblemente asociado a un modelo de la familia MiniMax-H3. Esta interpretacion se deriva unicamente del nombre del archivo y no esta confirmada por el autor en la informacion disponible. El componente `FL2VA` tampoco se documenta, por lo que no se puede afirmar con rigor que corresponda a una tarea de generacion de video a partir de primer y ultimo fotograma.
 
@@ -84,7 +84,7 @@ No se dispone de informacion sobre alternativas comparables. La busqueda web no 
 | Longitud de contexto | no disponible | no disponible | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible | no disponible |
 | Licencia | no disponible | no disponible | no disponible | no disponible |
-| Disponibilidad | HuggingFace, RunningHub | no disponible | no disponible | no disponible |
+| Disponibilidad | Hugging Face, RunningHub | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -102,7 +102,7 @@ No se dispone de informacion sobre alternativas comparables. La busqueda web no 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2va-acc-8step-comfy.safetensors-lora
+- Hugging Face: https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2va-acc-8step-comfy.safetensors-lora
 - Proyecto original en RunningHub: https://www.runninghub.cn/model/public/2092793757954560002
 - Pagina del autor: https://www.runninghub.cn/user-center/1935673237986865153
 - RunningHub (internacional): https://www.runninghub.ai

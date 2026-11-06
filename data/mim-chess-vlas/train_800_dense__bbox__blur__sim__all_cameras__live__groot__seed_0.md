@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Tipo | Entradas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este fine-tune (GR00T N1.7 + Panda) | 3.144 M | VLM + flow-matching, política de imitación | 3 cámaras + estado 9D + instrucción | Apache-2.0 | HuggingFace, pesos safetensors |
+| Este fine-tune (GR00T N1.7 + Panda) | 3.144 M | VLM + flow-matching, política de imitación | 3 cámaras + estado 9D + instrucción | Apache-2.0 | Hugging Face, pesos safetensors |
 | GR00T N1.7 base (NVIDIA) | no disponible en esta ficha | Modelo fundacional cross-embodiment | Visión + lenguaje + propiocepción | no disponible en esta ficha | GitHub de NVIDIA Isaac-GR00T |
 | GR00T N1 (generación anterior) | no disponible en esta ficha | Modelo fundacional cross-embodiment | Visión + lenguaje + propiocepción | no disponible en esta ficha | Repositorio de NVIDIA |
 | OpenVLA-7B | 7.000 M aprox. | VLM + acciones discretizadas | 1 cámara + instrucción | no verificada en esta ficha | Público, pesos abiertos |
@@ -95,7 +95,7 @@ Nota: los datos de los modelos alternativos provienen de conocimiento público g
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live
 - Visualizador del dataset (LeRobot): https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_dense__bbox__blur__sim__all_cameras__live
 - NVIDIA Isaac-GR00T (repositorio oficial del modelo base): https://github.com/NVIDIA/Isaac-GR00T

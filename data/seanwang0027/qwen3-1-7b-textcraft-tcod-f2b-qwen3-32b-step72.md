@@ -82,10 +82,10 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 | Modelo | Parámetros | Contexto | TextCraft (test oficial) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (qwen3-1.7b-textcraft-tcod-f2b, step 72) | 2,03 B | No declarado (base: 32.768) | No disponible | No declarada | HuggingFace, 0 descargas |
-| Qwen3-1.7B base | 2,03 B | 32.768 tokens (documentación de Qwen) | 23,00 % (según la model card del modelo hermano) | Apache-2.0 | HuggingFace y múltiples backends |
-| qwen3-1.7b-textcraft-sft-qwen3-32b-traj | 2,03 B | No declarado (base: 32.768) | 72,75 % (según su propia model card) | Apache-2.0 (según su ficha) | HuggingFace |
-| Qwen3-32B (profesor) | 32,8 B (aprox.) | No declarado | 85,50 % (según la model card del modelo hermano) | Apache-2.0 | HuggingFace |
+| Este modelo (qwen3-1.7b-textcraft-tcod-f2b, step 72) | 2,03 B | No declarado (base: 32.768) | No disponible | No declarada | Hugging Face, 0 descargas |
+| Qwen3-1.7B base | 2,03 B | 32.768 tokens (documentación de Qwen) | 23,00 % (según la model card del modelo hermano) | Apache-2.0 | Hugging Face y múltiples backends |
+| qwen3-1.7b-textcraft-sft-qwen3-32b-traj | 2,03 B | No declarado (base: 32.768) | 72,75 % (según su propia model card) | Apache-2.0 (según su ficha) | Hugging Face |
+| Qwen3-32B (profesor) | 32,8 B (aprox.) | No declarado | 85,50 % (según la model card del modelo hermano) | Apache-2.0 | Hugging Face |
 
 No se dispone de datos comparativos para Qwen3-4B ni para otros modelos pequeños evaluados en TextCraft en la información proporcionada.
 
@@ -105,7 +105,7 @@ No se dispone de datos comparativos para Qwen3-4B ni para otros modelos pequeño
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-f2b-qwen3-32b-step72
+- Modelo en Hugging Face: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-tcod-f2b-qwen3-32b-step72
 - Modelo base: https://huggingface.co/Qwen/Qwen3-1.7B
 - Modelo hermano por SFT de trayectorias: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-traj
 - Variante con el bug de plantilla de chat: https://huggingface.co/SeanWang0027/qwen3-1.7b-textcraft-sft-qwen3-32b-messages-buggy

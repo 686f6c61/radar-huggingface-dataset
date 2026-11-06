@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FuXi-Ocean es un modelo de predicción oceánica autorregresiva desarrollado por OneScience-Group en colaboración con la Universidad de Tianjin, la Academia de Inteligencia Artificial para la Ciencia de Shanghái, la Universidad de Fudan y otras instituciones. A partir de estados oceánicos históricos y variables atmosféricas en el momento de la inicialización, genera predicciones de campos oceánicos globales con una resolución que resuelve remolinos de mesoescala (eddy-resolving) y con paso temporal de seis horas. El modelo está diseñado para proporcionar un flujo de trabajo de ingeniería ejecutable para la investigación en métodos de predicción oceánica de alta resolución. El repositorio de HuggingFace incluye el código de entrenamiento e inferencia, pero no contiene pesos preentrenados oficiales; los pesos disponibles son artefactos de ingeniería entrenados sobre datos sintéticos. La arquitectura se describe en el artículo "A deep learning global ocean forecasting model with sub-daily and eddy-resolving resolution" (DOI: 10.1038/s41612-026-01444-2).
+FuXi-Ocean es un modelo de predicción oceánica autorregresiva desarrollado por OneScience-Group en colaboración con la Universidad de Tianjin, la Academia de Inteligencia Artificial para la Ciencia de Shanghái, la Universidad de Fudan y otras instituciones. A partir de estados oceánicos históricos y variables atmosféricas en el momento de la inicialización, genera predicciones de campos oceánicos globales con una resolución que resuelve remolinos de mesoescala (eddy-resolving) y con paso temporal de seis horas. El modelo está diseñado para proporcionar un flujo de trabajo de ingeniería ejecutable para la investigación en métodos de predicción oceánica de alta resolución. El repositorio de Hugging Face incluye el código de entrenamiento e inferencia, pero no contiene pesos preentrenados oficiales; los pesos disponibles son artefactos de ingeniería entrenados sobre datos sintéticos. La arquitectura se describe en el artículo "A deep learning global ocean forecasting model with sub-daily and eddy-resolving resolution" (DOI: 10.1038/s41612-026-01444-2).
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ FuXi-Ocean es un modelo de predicción oceánica autorregresiva desarrollado por
 
 ## Arquitectura y entrenamiento
 
-La arquitectura de FuXi-Ocean, según el artículo asociado, combina varios componentes clave: codificación convolucional compartida, un prior espacio-temporal, fusión de características históricas, atención de baja resolución y decodificación compartida. El modelo realiza predicción autorregresiva de temperatura, salinidad, corriente zonal, corriente meridional y altura de la superficie del mar sobre una rejilla global de 2160×4320 puntos, con 26 niveles de profundidad, 105 canales oceánicos y 5 canales atmosféricos. El entrenamiento se lleva a cabo con campos oceánicos de reanálisis y análisis HYCOM, junto con variables atmosféricas cercanas a la superficie de ERA5, y utiliza una pérdida de Charbonnier ponderada por latitud y un despliegue autorregresivo multi-paso. En el repositorio de HuggingFace, el entrenamiento se demuestra sobre un conjunto de datos sintéticos compuesto por seis tiles estructurados, que preservan el protocolo global de indexación pero no representan la distribución real de HYCOM ni de ERA5. El artículo indica que los experimentos formales requieren los datos reales y recursos de cómputo a escala completa; el repositorio actual sirve para validar el flujo de trabajo de ingeniería, no el rendimiento del paper.
+La arquitectura de FuXi-Ocean, según el artículo asociado, combina varios componentes clave: codificación convolucional compartida, un prior espacio-temporal, fusión de características históricas, atención de baja resolución y decodificación compartida. El modelo realiza predicción autorregresiva de temperatura, salinidad, corriente zonal, corriente meridional y altura de la superficie del mar sobre una rejilla global de 2160×4320 puntos, con 26 niveles de profundidad, 105 canales oceánicos y 5 canales atmosféricos. El entrenamiento se lleva a cabo con campos oceánicos de reanálisis y análisis HYCOM, junto con variables atmosféricas cercanas a la superficie de ERA5, y utiliza una pérdida de Charbonnier ponderada por latitud y un despliegue autorregresivo multi-paso. En el repositorio de Hugging Face, el entrenamiento se demuestra sobre un conjunto de datos sintéticos compuesto por seis tiles estructurados, que preservan el protocolo global de indexación pero no representan la distribución real de HYCOM ni de ERA5. El artículo indica que los experimentos formales requieren los datos reales y recursos de cómputo a escala completa; el repositorio actual sirve para validar el flujo de trabajo de ingeniería, no el rendimiento del paper.
 
 ## Capacidades
 
@@ -59,7 +59,7 @@ No disponible. La información proporcionada no incluye especificaciones de mode
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace no incluye pesos oficiales; los checkpoints generados localmente son artefactos entrenados sobre datos sintéticos (`sampled_tiles`) y no son compatibles con los pesos del paper.
+- El repositorio de Hugging Face no incluye pesos oficiales; los checkpoints generados localmente son artefactos entrenados sobre datos sintéticos (`sampled_tiles`) y no son compatibles con los pesos del paper.
 - Las predicciones del código de demostración se marcan explícitamente como `sampled_tiles` y `is_complete_global=false`, por lo que no deben interpretarse como una predicción global completa.
 - Los datos de entrenamiento sintéticos no reproducen la distribución real de HYCOM ni de ERA5, por lo que cualquier métrica obtenida con ellos no es representativa del rendimiento real del modelo.
 - La validación se limita a tiles de muestra y a un máximo de tres pasos autorregresivos por defecto; aunque se conserva el protocolo de 40 pasos del paper, la ejecución local no lo reproduce en su totalidad.
@@ -70,7 +70,7 @@ No disponible. La información proporcionada no incluye especificaciones de mode
 
 ## Enlaces
 
-- Página de HuggingFace del modelo: https://huggingface.co/OneScience-Group/FuXi-Ocean
+- Página de Hugging Face del modelo: https://huggingface.co/OneScience-Group/FuXi-Ocean
 - Paper en Nature npj Climate and Atmospheric Science: https://doi.org/10.1038/s41612-026-01444-2
 - Enlace de disponibilidad de código del paper (no confirmado como descarga de pesos): https://doi.org/10.5281/zenodo.17412508
 - Entorno OneCode propuesto por los autores: https://web-2069360198568017922-iaaj.ksai.scnet.cn:58043/home

@@ -103,8 +103,8 @@ Comparación directa con el modelo del que deriva, único punto de referencia co
 
 | Modelo | Parámetros | Contexto | PPL WikiText-2 | Tamaño en disco | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized | 2,62 B | No disponible | 23,10 | 1,37 GB | Apache 2.0 | HuggingFace (0 descargas) |
-| openbmb/MiniCPM5-2B (FP16) | 2,62 B | No disponible | 20,47 | 4,69 GB | No disponible en la información proporcionada | HuggingFace (modelo base) |
+| ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized | 2,62 B | No disponible | 23,10 | 1,37 GB | Apache 2.0 | Hugging Face (0 descargas) |
+| openbmb/MiniCPM5-2B (FP16) | 2,62 B | No disponible | 20,47 | 4,69 GB | No disponible en la información proporcionada | Hugging Face (modelo base) |
 
 No se dispone de datos comparativos frente a otras alternativas de la misma categoría (por ejemplo, otros modelos de ~2 B cuantizados a 4 bits como Qwen, Gemma o Phi en sus variantes pequeñas) en la información proporcionada, por lo que no se incluyen cifras de rendimiento de terceros.
 
@@ -123,7 +123,7 @@ No se dispone de datos comparativos frente a otras alternativas de la misma cate
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized
+- Repositorio Hugging Face: https://huggingface.co/ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Resultados brutos de benchmark: https://huggingface.co/ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized/blob/main/real_benchmark_results.json
 - Scorecard: https://huggingface.co/ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized/blob/main/scorecard.json

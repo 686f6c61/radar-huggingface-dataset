@@ -92,7 +92,7 @@ La comparativa significativa no es de rendimiento sino de metodologia: los cuatr
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_impulsive-sft-v4-lora
+- Repositorio Hugging Face del modelo: https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_impulsive-sft-v4-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-14B-Instruct
 - Dataset de entrenamiento indicado en la model card: https://huggingface.co/datasets/Misalignment-Empirics/theo_oct-glm-v3-training-data (la propia model card indica que esta siendo renombrado a `theo_organism-training-data`; revision `ea8df9da078793496492f14441d6d3c73b107cac`, fichero `sft_from_glm.jsonl`, SHA-256 `beb9ccbbbc83fb7579de375828fa42a4565f1cb1df36b13daa42dcdf9400bcb8`)
 - Organismo hermano, persona `mathematical`: https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-sft-lora

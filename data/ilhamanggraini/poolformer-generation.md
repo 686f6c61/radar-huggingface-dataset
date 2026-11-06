@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ilhamanggraini/poolformer-generation` es un prototipo de investigación publicado en HuggingFace por el usuario ilhamanggraini bajo licencia MIT. Se presenta explícitamente como un esqueleto reproducible de una arquitectura Poolformer orientada a tareas de generación, en escala "nano", cuyo único checkpoint (`model.safetensors`) es una inicialización válida para pruebas de humo y no un modelo entrenado. El repositorio tiene 24.832 parámetros totales (0,025 M), 0 descargas y 0 likes en el momento de la consulta.
+`ilhamanggraini/poolformer-generation` es un prototipo de investigación publicado en Hugging Face por el usuario ilhamanggraini bajo licencia MIT. Se presenta explícitamente como un esqueleto reproducible de una arquitectura Poolformer orientada a tareas de generación, en escala "nano", cuyo único checkpoint (`model.safetensors`) es una inicialización válida para pruebas de humo y no un modelo entrenado. El repositorio tiene 24.832 parámetros totales (0,025 M), 0 descargas y 0 likes en el momento de la consulta.
 
 El interés del artefacto no está en su rendimiento —el propio autor declara que no se reclama ninguna métrica de benchmark— sino en su valor como plantilla de ingeniería: incluye el código del modelo con punto de entrada ejecutable (`eval.py`), la configuración de arquitectura (`config.json`) y una receta de experimento por defecto (`training_args.json`) con optimizador Adafactor y schedule coseno. Esto lo convierte en un punto de partida para reproducir experimentos, no en un modelo listo para producción.
 
@@ -95,7 +95,7 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ilhamanggraini/poolformer-generation
+- Repositorio en Hugging Face: https://huggingface.co/ilhamanggraini/poolformer-generation
 - Documentación de PoolFormer en Transformers (v5.3.0): https://huggingface.co/docs/transformers/v5.3.0/model_doc/poolformer
 - Documentación de PoolFormer en Transformers (v4.36.0): https://huggingface.co/docs/transformers/v4.36.0/en/model_doc/poolformer
 - Paper "Poolformer: Recurrent Networks with Pooling for Long Sequences" (HTML): https://arxiv.org/html/2510.02206v1

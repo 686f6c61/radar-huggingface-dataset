@@ -2,7 +2,7 @@
 
 ## Resumen
 
-TwIL-8B-Abliterated-Uncensored es un ajuste fino (finetune) del modelo base webAI-Official/TwIL-8B, publicado por el usuario Guilherme34 en HuggingFace. Se trata de una variante "abliterated" y "uncensored", es decir, un modelo al que se le han aplicado técnicas de ablación de direcciones de rechazo para eliminar los mecanismos de negativa aprendidos durante el alineamiento, con el objetivo de producir respuestas sin las restricciones típicas de seguridad de los modelos alineados.
+TwIL-8B-Abliterated-Uncensored es un ajuste fino (finetune) del modelo base webAI-Official/TwIL-8B, publicado por el usuario Guilherme34 en Hugging Face. Se trata de una variante "abliterated" y "uncensored", es decir, un modelo al que se le han aplicado técnicas de ablación de direcciones de rechazo para eliminar los mecanismos de negativa aprendidos durante el alineamiento, con el objetivo de producir respuestas sin las restricciones típicas de seguridad de los modelos alineados.
 
 El modelo cuenta con 8.791.592.960 parámetros (aproximadamente 8,8 mil millones) almacenados en formato safetensors, con un tamaño de repositorio de 17,6 GB, lo que es coherente con pesos en precisión de 16 bits. La etiqueta "granite" en los metadatos sugiere que el linaje arquitectónico deriva de la familia IBM Granite, aunque esta información no está confirmada de forma explícita en la model card.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada y muy específica: se publica para inve
 
 ## Arquitectura y entrenamiento
 
-No se dispone de información detallada sobre la arquitectura interna más allá de la etiqueta "granite" presente en los metadatos de HuggingFace, que apunta a un transformer decoder-only con posibles influencias de la familia IBM Granite. El número de parámetros (8,79 mil millones) es consistente con un modelo denso de tamaño 8B. No se especifican la longitud de contexto nativa, el tokenizador, ni detalles sobre atención (por ejemplo, si emplea GQA, RoPE u otras variantes).
+No se dispone de información detallada sobre la arquitectura interna más allá de la etiqueta "granite" presente en los metadatos de Hugging Face, que apunta a un transformer decoder-only con posibles influencias de la familia IBM Granite. El número de parámetros (8,79 mil millones) es consistente con un modelo denso de tamaño 8B. No se especifican la longitud de contexto nativa, el tokenizador, ni detalles sobre atención (por ejemplo, si emplea GQA, RoPE u otras variantes).
 
 Respecto al entrenamiento, la model card únicamente declara el modelo base (webAI-Official/TwIL-8B) y no documenta el proceso de ajuste. Por el nombre "Abliterated", se infiere que se aplicó una técnica de ablación de direcciones en el espacio de activaciones para eliminar la dirección de rechazo, un procedimiento habitual en la comunidad para producir variantes "uncensored" sin reentrenamiento completo. No hay información sobre datos de entrenamiento, número de tokens, composición del dataset, ni sobre si se empleó RLHF, DPO u otras técnicas de alineamiento posteriores. Tampoco se documentan innovaciones técnicas como decodificación especulativa o atención lineal.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| TwIL-8B-Abliterated-Uncensored | 8,79B | no disponible | no disponible | HuggingFace (0 descargas) | Finetune abliterated sin documentacion |
-| webAI-Official/TwIL-8B (base) | ~8B | no disponible | no disponible | HuggingFace | Modelo base del que deriva |
+| TwIL-8B-Abliterated-Uncensored | 8,79B | no disponible | no disponible | Hugging Face (0 descargas) | Finetune abliterated sin documentacion |
+| webAI-Official/TwIL-8B (base) | ~8B | no disponible | no disponible | Hugging Face | Modelo base del que deriva |
 | Llama 3.1 8B Instruct | 8,03B | 128K | Llama 3.1 Community License | Amplia | Referencia de la categoria 8B, con benchmarks publicos |
 | Mistral 7B Instruct | 7,24B | 32K | Apache 2.0 | Amplia | Alternativa open source con licencia permisiva |
 
@@ -87,6 +87,6 @@ La comparación con Llama 3.1 8B y Mistral 7B se ofrece como referencia de categ
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Guilherme34/TwIL-8B-Abliterated-Uncensored
+- Hugging Face: https://huggingface.co/Guilherme34/TwIL-8B-Abliterated-Uncensored
 - Modelo base: https://huggingface.co/webAI-Official/TwIL-8B
 - Perfil del autor: https://huggingface.co/Guilherme34

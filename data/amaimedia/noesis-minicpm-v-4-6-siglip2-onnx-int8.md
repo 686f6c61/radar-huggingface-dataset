@@ -80,7 +80,7 @@ La comparativa muestra que este modelo es una versión cuantizada y extraída de
 
 ## Enlaces
 
-- [HuggingFace - AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8](https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8)
-- [HuggingFace - openbmb/MiniCPM-V-4.6](https://huggingface.co/openbmb/MiniCPM-V-4.6)
+- [Hugging Face - AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8](https://huggingface.co/AMAImedia/NOESIS-MiniCPM-V-4.6-SigLIP2-ONNX-INT8)
+- [Hugging Face - openbmb/MiniCPM-V-4.6](https://huggingface.co/openbmb/MiniCPM-V-4.6)
 - [GitHub - OpenBMB/MiniCPM-V](https://github.com/OpenBMB/MiniCPM-V)
 - [Modelo base - openbmb/MiniCPM-V-4_5](https://huggingface.co/openbmb/MiniCPM-V-4_5)

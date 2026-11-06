@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Void-NVFP4 es un checkpoint publicado en HuggingFace por el usuario Spacegoddrako bajo licencia Apache 2.0. El nombre sugiere que se trata de un modelo cuantizado en formato NVFP4, el formato de coma flotante de 4 bits (E2M1 con escalas de bloque) introducido por NVIDIA para inferencia eficiente en GPUs Blackwell. Sin embargo, la model card publicada no contiene ninguna documentacion tecnica: solo incluye la declaracion de licencia, sin descripcion del modelo base, arquitectura, tamano ni proceso de cuantizacion.
+Void-NVFP4 es un checkpoint publicado en Hugging Face por el usuario Spacegoddrako bajo licencia Apache 2.0. El nombre sugiere que se trata de un modelo cuantizado en formato NVFP4, el formato de coma flotante de 4 bits (E2M1 con escalas de bloque) introducido por NVIDIA para inferencia eficiente en GPUs Blackwell. Sin embargo, la model card publicada no contiene ninguna documentacion tecnica: solo incluye la declaracion de licencia, sin descripcion del modelo base, arquitectura, tamano ni proceso de cuantizacion.
 
 En el momento de redactar esta ficha, el repositorio no registra descargas y cuenta con un unico "me gusta", lo que indica que es una publicacion reciente y sin validacion por parte de la comunidad. No se dispone de informacion sobre el modelo original del que deriva, los datos de entrenamiento ni los resultados de evaluacion.
 
@@ -73,5 +73,5 @@ No disponible. Al desconocerse el modelo base y sus caracteristicas, no es posib
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Spacegoddrako/Void-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/Spacegoddrako/Void-NVFP4
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

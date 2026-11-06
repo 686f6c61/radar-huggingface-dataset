@@ -101,9 +101,9 @@ El autor advierte que los dos valores de latencia no son directamente comparable
 
 | Modelo | Parametros | Contexto | Citation precision | Citation recall | Faithfulness | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| ru-legal-rag-edge-0.6b (+ reranker) | ~600 M | No disponible (evaluado a 2K) | 0.993 | 0.590 | 0.935 | Apache 2.0 | HuggingFace, 0 descargas |
+| ru-legal-rag-edge-0.6b (+ reranker) | ~600 M | No disponible (evaluado a 2K) | 0.993 | 0.590 | 0.935 | Apache 2.0 | Hugging Face, 0 descargas |
 | Maestro 27B (+ reranker) | 27 000 M | No disponible | 0.990 | 0.590 | 0.935 | No disponible | Uso interno del autor como generador de datos |
-| Qwen3-0.6B sin entrenar (+ reranker) | ~600 M | No disponible | 0.961 | 0.177 | 0.742 | Apache 2.0 (por el modelo base) | HuggingFace |
+| Qwen3-0.6B sin entrenar (+ reranker) | ~600 M | No disponible | 0.961 | 0.177 | 0.742 | Apache 2.0 (por el modelo base) | Hugging Face |
 | Qwen2.5-0.5B con el mismo SFT | ~500 M | No disponible | 0.994 | 0.632 | 0.861 | No disponible | Solo medido en la evaluacion del autor |
 | SmolLM2-135M adaptado al ruso con el mismo SFT | 135 M | No disponible | 1.000 | 0.097 | 0.841 | No disponible | Solo medido en la evaluacion del autor |
 
@@ -121,12 +121,12 @@ La comparacion mas informativa es contra el propio modelo base sin entrenar: la 
 - Corpus basado en descripciones de casos, no en el texto literal de los articulos: el modelo identifica bien la norma aplicable pero parafrasea peor su redaccion exacta.
 - La fila «sin contexto» de la tabla de calidad no mide conocimiento juridico real, porque el enunciado del caso ya contiene el numero de articulo y el modelo se limita a reformular la pregunta.
 - Idioma unico: solo ruso. No hay soporte declarado de castellano ni de otras lenguas.
-- Adopcion nula hasta la fecha: 0 descargas y 0 likes en HuggingFace, sin senales de validacion externa por parte de la comunidad.
+- Adopcion nula hasta la fecha: 0 descargas y 0 likes en Hugging Face, sin senales de validacion externa por parte de la comunidad.
 - Licencia Apache 2.0, permisiva para uso comercial, pero la model card no ofrece garantias sobre la exactitud del contenido juridico generado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sshalimov04/ru-legal-rag-edge-0.6b
+- Modelo en Hugging Face: https://huggingface.co/sshalimov04/ru-legal-rag-edge-0.6b
 - Re-ranker companero: https://huggingface.co/sshalimov04/ru-reranker-edge-150m
 - Demo en navegador con WebGPU: https://huggingface.co/spaces/sshalimov04/ru-rag-browser
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B

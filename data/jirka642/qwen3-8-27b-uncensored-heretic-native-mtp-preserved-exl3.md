@@ -79,10 +79,10 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jirka642/...-exl3 (4.0 bpw) | ~27B | no disponible | EXL3 4,0 bpw | no disponible | HuggingFace |
-| jirka642/...-exl3 (5.0 bpw) | ~27B | no disponible | EXL3 5,0 bpw | no disponible | HuggingFace |
-| jirka642/...-exl3 (6.0 bpw) | ~27B | no disponible | EXL3 6,0 bpw | no disponible | HuggingFace |
-| llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved | ~27B | no disponible | precision original | no disponible | HuggingFace |
+| jirka642/...-exl3 (4.0 bpw) | ~27B | no disponible | EXL3 4,0 bpw | no disponible | Hugging Face |
+| jirka642/...-exl3 (5.0 bpw) | ~27B | no disponible | EXL3 5,0 bpw | no disponible | Hugging Face |
+| jirka642/...-exl3 (6.0 bpw) | ~27B | no disponible | EXL3 6,0 bpw | no disponible | Hugging Face |
+| llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved | ~27B | no disponible | precision original | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -100,7 +100,7 @@ No se dispone de datos de terceros comparables en la informacion proporcionada. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jirka642/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved-exl3
+- Repositorio Hugging Face: https://huggingface.co/jirka642/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved-exl3
 - Modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved
 - Commit del modelo base: https://huggingface.co/llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved/commit/4b9e1517a43fdca25872318ed272a1c88e72c360
 - Cuantizacion 4,0 bpw: https://huggingface.co/jirka642/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved-exl3/tree/main/4.0bpw_H6_V6

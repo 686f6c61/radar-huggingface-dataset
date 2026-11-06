@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento ni de parametros de los modelos alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo: https://huggingface.co/JustinMJW/pi05_omx
+- Repositorio Hugging Face del modelo: https://huggingface.co/JustinMJW/pi05_omx
 - Modelo base: https://huggingface.co/lerobot/pi05_base
 - Dataset de entrenamiento: https://huggingface.co/datasets/JustinMJW/omx2
 - Visualizacion del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=JustinMJW/omx2

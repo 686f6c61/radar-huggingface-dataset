@@ -14,7 +14,7 @@ RedHatAI/gemma-2-9b-it-quantized.w4a16 es una version cuantizada del modelo de G
 | Longitud de contexto | No disponible (el modelo original Gemma-2 9B soporta 8192 tokens) |
 | Tipos de cuantizacion | INT4 (W4A16) |
 | Idiomas soportados | Ingles |
-| Licencia | Gemma (segun la model card; el tag de HuggingFace indica llama2, discrepancia) |
+| Licencia | Gemma (segun la model card; el tag de Hugging Face indica llama2, discrepancia) |
 | Formato de pesos | safetensors |
 
 ## Arquitectura y entrenamiento
@@ -73,12 +73,12 @@ No se dispone de datos de otros modelos comparables en la misma categoria, como 
 - La cuantizacion INT4 puede introducir una pequena perdida de precision en tareas que requieren alta exactitud, aunque los benchmarks no muestran degradacion.
 - La licencia Gemma impone restricciones de uso comercial y obliga a mantener la atribucion; es necesario revisar los terminos completos.
 - El modelo no incluye capacidades de vision, audio ni herramientas de agente.
-- La discrepancia en la licencia entre la model card (Gemma) y el tag de HuggingFace (llama2) genera incertidumbre legal; se recomienda verificar los terminos oficiales antes de usar.
+- La discrepancia en la licencia entre la model card (Gemma) y el tag de Hugging Face (llama2) genera incertidumbre legal; se recomienda verificar los terminos oficiales antes de usar.
 - No se han publicado evaluaciones sobre sesgos o riesgos de alucinacion especificos de esta variante cuantizada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w4a16
+- Hugging Face: https://huggingface.co/RedHatAI/gemma-2-9b-it-quantized.w4a16
 - Modelo original: https://huggingface.co/google/gemma-2-9b-it
 - Libreria llm-compressor: https://github.com/vllm-project/llm-compressor
 - Paper GPTQ: https://arxiv.org/abs/2210.17323

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl` es un checkpoint derivado de Qwen2.5-Math-1.5B, publicado por el usuario RyanYr en HuggingFace. El nombre sugiere que ha sido entrenado mediante un pipeline de optimización de políticas offline basado en GRPO (Group Relative Policy Optimization), posiblemente con variantes DAPO (Decoupled Alignment Policy Optimization), sobre datos de matemáticas barajados. La etiqueta `nokl` indica que el entrenamiento se realizó sin término de divergencia KL explícito. Sin embargo, la información pública es extremadamente limitada: no se dispone de licencia, idiomas soportados, ni documentación técnica en la tarjeta del modelo. El repositorio ocupa 389.2 GB, lo que sugiere la presencia de múltiples checkpoints o pesos en varios formatos, aunque no se confirma.
+El modelo `RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl` es un checkpoint derivado de Qwen2.5-Math-1.5B, publicado por el usuario RyanYr en Hugging Face. El nombre sugiere que ha sido entrenado mediante un pipeline de optimización de políticas offline basado en GRPO (Group Relative Policy Optimization), posiblemente con variantes DAPO (Decoupled Alignment Policy Optimization), sobre datos de matemáticas barajados. La etiqueta `nokl` indica que el entrenamiento se realizó sin término de divergencia KL explícito. Sin embargo, la información pública es extremadamente limitada: no se dispone de licencia, idiomas soportados, ni documentación técnica en la tarjeta del modelo. El repositorio ocupa 389.2 GB, lo que sugiere la presencia de múltiples checkpoints o pesos en varios formatos, aunque no se confirma.
 
 Dada la escasez de datos, esta ficha se basa principalmente en inferencias derivadas del nombre y en la información del modelo base Qwen2.5-Math-1.5B. No se han encontrado papers, blogs ni demos asociados. El modelo parece estar orientado a tareas de razonamiento matemático, pero su utilidad práctica no puede evaluarse sin documentación adicional.
 
@@ -68,7 +68,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl
+- Modelo en Hugging Face: https://huggingface.co/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl
 - Dataset de evaluación (variante piref_nokl): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_piref_nokl_matheval
 - Dataset de evaluación (variante nokl): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_nokl_matheval
 - Dataset de evaluación (variante kl): https://huggingface.co/datasets/RyanYr/pg-dapo_shuffled-01_offline-grpo_qwen2.5-math-1.5B_kl_matheval

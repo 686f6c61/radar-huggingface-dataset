@@ -2,9 +2,9 @@
 
 ## Resumen
 
-IndexTTS2.5.gguf es una conversion al formato GGUF del sistema de sintesis de voz IndexTTS 2.5, publicada por el usuario NeemaShioSe en HuggingFace. El propio autor la describe como un "ggml port of IndexTTS 2.5 for fun" y remite a un ejemplo en C# dentro del repositorio VULKAN-TORCH para reproducir su funcionamiento. Se trata, por tanto, de una conversion no oficial de un modelo de terceros, no de un modelo entrenado desde cero por el autor del repositorio.
+IndexTTS2.5.gguf es una conversion al formato GGUF del sistema de sintesis de voz IndexTTS 2.5, publicada por el usuario NeemaShioSe en Hugging Face. El propio autor la describe como un "ggml port of IndexTTS 2.5 for fun" y remite a un ejemplo en C# dentro del repositorio VULKAN-TORCH para reproducir su funcionamiento. Se trata, por tanto, de una conversion no oficial de un modelo de terceros, no de un modelo entrenado desde cero por el autor del repositorio.
 
-El dato de parametros disponible en la ficha de HuggingFace asciende a 1.668.885.431 parametros (aproximadamente 1,67 mil millones), con un tamano de repositorio de 8,7 GB. La licencia declarada es bilibili-model-license, lo que vincula el uso del modelo a las condiciones del titular original de IndexTTS, y no a una licencia de pesos abiertos convencional como Apache 2.0 o MIT.
+El dato de parametros disponible en la ficha de Hugging Face asciende a 1.668.885.431 parametros (aproximadamente 1,67 mil millones), con un tamano de repositorio de 8,7 GB. La licencia declarada es bilibili-model-license, lo que vincula el uso del modelo a las condiciones del titular original de IndexTTS, y no a una licencia de pesos abiertos convencional como Apache 2.0 o MIT.
 
 La relevancia de esta publicacion es limitada y muy especializada: interesa a quien quiera ejecutar IndexTTS 2.5 fuera del stack de PyTorch habitual, mediante el formato GGUF y el backend ggml/ggml-vulkan. El repositorio acumulaba 46 descargas y 0 "likes" en la fecha de actualizacion registrada (16 de septiembre de 2026), lo que indica una adopcion muy baja. No hay model card detallada, ni pipeline declarado, ni idiomas soportados, ni resultados de evaluacion publicados en la informacion disponible.
 
@@ -55,7 +55,7 @@ Los siguientes escenarios son aplicaciones tipicas de un sistema de texto a voz 
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas objetivas ni subjetivas (MOS, similitud de hablante, WER, latencia), y el autor no aporta comparaciones numericas con otros sistemas de sintesis de voz.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas objetivas ni subjetivas (MOS, similitud de hablante, WER, latencia), y el autor no aporta comparaciones numericas con otros sistemas de sintesis de voz.
 
 La busqueda web asociada a esta ficha no devolvio resultados relacionados con el modelo: los enlaces recuperados corresponden a la publicacion "Vault 7" de WikiLeaks y a articulos periodisticos sobre la CIA, sin ninguna conexion con IndexTTS, con Bilibili ni con sintesis de voz. Por tanto, no hay datos externos verificables que se puedan incorporar a esta seccion.
 
@@ -107,7 +107,7 @@ Nota metodologica: las alternativas se incluyen unicamente por pertenecer a la m
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/NeemaShioSe/IndexTTS2.5.gguf
+- Repositorio en Hugging Face: https://huggingface.co/NeemaShioSe/IndexTTS2.5.gguf
 - Instrucciones de uso y ejemplo en C# dentro de VULKAN-TORCH (enlace citado por el autor en la model card): https://github.com/Rafa00127/VULKAN-TORCH/blob/main/example/CSharp/IndexTTS2.5.en.md
 - Fichero de licencia del repositorio: LICENSE (referenciado en la model card; no se proporciona URL directa)
 - Otros enlaces relevantes (paper, repositorio oficial de IndexTTS, demo, blog del autor): no disponibles. La busqueda web realizada no devolvio resultados relacionados con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flamingo for Matching es un prototipo de investigación alojado en HuggingFace bajo el identificador `ivpetrovlo/flamingo-matching93-2023` y publicado por el usuario `ivpetrovlo`. Se presenta explícitamente como una implementación experimental de arquitectura tipo Flamingo orientada a tareas de "matching" (emparejamiento o correspondencia entre entradas). El repositorio incluye un script principal en Python, ficheros de configuración y un checkpoint de inicialización en formato `safetensors` con 49.600 parámetros totales, un tamaño propio de una prueba de humo más que de un modelo funcional.
+Flamingo for Matching es un prototipo de investigación alojado en Hugging Face bajo el identificador `ivpetrovlo/flamingo-matching93-2023` y publicado por el usuario `ivpetrovlo`. Se presenta explícitamente como una implementación experimental de arquitectura tipo Flamingo orientada a tareas de "matching" (emparejamiento o correspondencia entre entradas). El repositorio incluye un script principal en Python, ficheros de configuración y un checkpoint de inicialización en formato `safetensors` con 49.600 parámetros totales, un tamaño propio de una prueba de humo más que de un modelo funcional.
 
 La propia model card advierte que el checkpoint no ha sido entrenado ni auditado, y que no se reclama ninguna métrica de rendimiento. Por tanto, no debe interpretarse como un modelo listo para producción ni para evaluación comparativa, sino como un punto de partida reproducible para experimentación interna. El interés actual de este tipo de repositorios radica en su valor como andamiaje de código y configuración para reproducir arquitecturas multimodales con atención dispersa y fusión con compuertas, no en sus capacidades reales.
 
@@ -77,11 +77,11 @@ No disponible. No se han identificado en la información proporcionada modelos c
 - No se declara longitud de contexto, lo que impide planificar usos con entradas largas.
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado.
 - Licencia MIT: permite uso comercial y modificación, pero la model card recomienda revisar por separado los términos de los datos de origen si se emplean conjuntos externos.
-- Al ser una implementación personalizada, la carga mediante APIs automáticas de HuggingFace requiere un adaptador explícito; no se garantiza compatibilidad directa con `transformers`.
+- Al ser una implementación personalizada, la carga mediante APIs automáticas de Hugging Face requiere un adaptador explícito; no se garantiza compatibilidad directa con `transformers`.
 - El repositorio registra cero descargas y cero "likes", lo que indica ausencia de validación por parte de la comunidad.
 - No debe presentarse ningún resultado futuro de un checkpoint entrenado como si proviniera de los valores por defecto aquí publicados; la model card exige documentarlos por separado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ivpetrovlo/flamingo-matching93-2023
+- Modelo en Hugging Face: https://huggingface.co/ivpetrovlo/flamingo-matching93-2023
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la información proporcionada.

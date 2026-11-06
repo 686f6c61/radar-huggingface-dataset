@@ -71,6 +71,6 @@ No disponible. La información proporcionada no incluye datos de benchmarks ni c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/fodorad/blinklinmult-models
+- Hugging Face: https://huggingface.co/fodorad/blinklinmult-models
 - Repositorio GitHub: https://github.com/fodorad/BlinkLinMulT
 - Paper original: https://www.mdpi.com/2313-433X/9/10/196

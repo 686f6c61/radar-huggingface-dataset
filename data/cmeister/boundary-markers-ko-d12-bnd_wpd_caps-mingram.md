@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace no contiene un modelo único, sino tres modelos de lenguaje entrenados con las semillas 0, 1 y 2 para comparar vocabularios de subpalabras que marcan explícitamente las fronteras de palabra. Son los brazos en coreano del trabajo *Explicit Boundary Markers for Subword Vocabularies* (Sander Land y Clara Meister, arXiv:2608.08847), que en el artículo original se evalúa en inglés; aquí se replican con coreano en septiembre de 2026. Los tres modelos comparten arquitectura, datos y número de pasos, y se diferencian únicamente en el tokenizador, de modo que cualquier diferencia de pérdida es atribuible al esquema de tokenización.
+Este repositorio de Hugging Face no contiene un modelo único, sino tres modelos de lenguaje entrenados con las semillas 0, 1 y 2 para comparar vocabularios de subpalabras que marcan explícitamente las fronteras de palabra. Son los brazos en coreano del trabajo *Explicit Boundary Markers for Subword Vocabularies* (Sander Land y Clara Meister, arXiv:2608.08847), que en el artículo original se evalúa en inglés; aquí se replican con coreano en septiembre de 2026. Los tres modelos comparten arquitectura, datos y número de pasos, y se diferencian únicamente en el tokenizador, de modo que cualquier diferencia de pérdida es atribuible al esquema de tokenización.
 
 La arquitectura es la de nanochat (commit `92d63d4`) en su configuración de 12 capas, anchura 768, 6 cabezas de atención y contexto de 2.048 tokens. El entrenamiento son 2.553 pasos de 524.288 tokens cada uno, es decir, 1,34 mil millones de tokens procedentes de 3 fragmentos (*shards*) de Korean FineWeb-2, leídos unas 3,1 veces. El tokenizador, idéntico para las tres semillas, es un modelo MinGram entrenado sobre una muestra de 5 GB de Korean FineWeb con un vocabulario de 34.685 entradas, al que se añaden marcadores de frontera y códigos de caja (`<^>` para palabra con inicial mayúscula, `<^^>` para palabra en mayúsculas).
 
@@ -85,7 +85,7 @@ No se han publicado en la información disponible datos comparativos con modelos
 
 | Modelo / brazo | Parametros | Contexto | Bits por byte (media) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (`bnd_wpd_caps`, 3 semillas) | no disponible (12 capas, anchura 768) | 2.048 | 0,84981 (media de 0,84993 / 0,84949 / 0,85002) | Apache 2.0 | HuggingFace, 0 descargas |
+| Este modelo (`bnd_wpd_caps`, 3 semillas) | no disponible (12 capas, anchura 768) | 2.048 | 0,84981 (media de 0,84993 / 0,84949 / 0,85002) | Apache 2.0 | Hugging Face, 0 descargas |
 | Tokenizador `plain` (referencia del estudio) | identicos | 2.048 | 0,00208 menos que este modelo (mejor) | Apache 2.0 | mismo repositorio `script_tok` |
 | Otros esquemas de frontera del articulo | identicos | 2.048 | no disponible en esta ficha | Apache 2.0 | repositorio `script_tok` |
 | Modelos coreanos de tamaño similar de terceros | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -111,11 +111,11 @@ La media de 0,84981 es una media aritmética calculada por esta ficha a partir d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd_caps-mingram
+- Modelo en Hugging Face: https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd_caps-mingram
 - Articulo: *Explicit Boundary Markers for Subword Vocabularies*, Sander Land y Clara Meister: https://arxiv.org/abs/2608.08847
 - Repositorio de codigo del estudio (`script_tok`, incluye el tokenizador y los entrenadores): https://github.com/sanderland/script_tok
 - nanochat, commit `92d63d4` (arquitectura y entrenamiento): https://github.com/karpathy/nanochat
 - Conjunto de datos Korean FineWeb-2 (publicacion `fineweb-2_0_1-quality_10-filterrobots`): https://huggingface.co/datasets/HuggingFaceFW/fineweb-2
-- Perfil del autor en HuggingFace: https://huggingface.co/cmeister
+- Perfil del autor en Hugging Face: https://huggingface.co/cmeister
 
 Nota: la busqueda web realizada no devolvio ningun resultado relevante sobre este modelo ni sobre el articulo; los enlaces anteriores proceden de la model card y de las referencias que cita.

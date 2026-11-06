@@ -77,10 +77,10 @@ Advertencias sobre estas cifras, tal como las formula el autor: las etiquetas fu
 
 | Modelo | Parámetros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (AutoRound AWQ W4A16) | 1,11B según safetensors | No disponible | 91,6 % de acuerdo; macro-F1 0,837 | Apache-2.0 | HuggingFace; requiere GPTQModel |
+| Este checkpoint (AutoRound AWQ W4A16) | 1,11B según safetensors | No disponible | 91,6 % de acuerdo; macro-F1 0,837 | Apache-2.0 | Hugging Face; requiere GPTQModel |
 | LoRA BF16 tmux-pocket mini | No disponible | No disponible | 91,1 % de acuerdo; macro-F1 0,830 | Apache-2.0 (heredada) | Adaptador separado, según el autor |
-| `Qwen/Qwen3.5-4B` (base) | 4B nominal | No disponible | No disponible para esta tarea | Apache-2.0 | HuggingFace |
-| Qwen3.5 serie Small (0,8B, 2B, 4B, 9B) | 0,8B a 9B nominales | No disponible | No disponible | No disponible en la información consultada | HuggingFace según la documentación de Unsloth |
+| `Qwen/Qwen3.5-4B` (base) | 4B nominal | No disponible | No disponible para esta tarea | Apache-2.0 | Hugging Face |
+| Qwen3.5 serie Small (0,8B, 2B, 4B, 9B) | 0,8B a 9B nominales | No disponible | No disponible | No disponible en la información consultada | Hugging Face según la documentación de Unsloth |
 
 No se dispone de comparaciones publicadas frente a clasificadores alternativos de estado de terminal ni frente a otras cuantizaciones del mismo modelo base.
 
@@ -101,9 +101,9 @@ No se dispone de comparaciones publicadas frente a clasificadores alternativos d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/groxaxo/Qwen3.5-4B-Tmux-Pocket-Mini-AutoRound-AWQ-W4A16
+- Modelo en Hugging Face: https://huggingface.co/groxaxo/Qwen3.5-4B-Tmux-Pocket-Mini-AutoRound-AWQ-W4A16
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
-- Perfil del autor en HuggingFace: https://huggingface.co/groxaxo/models
+- Perfil del autor en Hugging Face: https://huggingface.co/groxaxo/models
 - Anuncio oficial de Qwen3.5 (blog de Qwen): https://qwen.ai/blog?id=qwen3.5
 - Guía de uso de Qwen3.5 y Qwen3.6 en vLLM: https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html
 - Documentación de Unsloth para ejecutar Qwen3.5 en local: https://unsloth.ai/docs/models/qwen3.5

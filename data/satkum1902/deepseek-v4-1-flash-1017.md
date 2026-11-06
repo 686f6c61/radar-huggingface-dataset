@@ -101,10 +101,10 @@ Solo se dispone de datos de benchmarks para los modelos comparados; parámetros,
 
 ## Enlaces
 
-- HuggingFace (espejo): https://huggingface.co/Satkum1902/DeepSeek-V4.1-Flash-1017
+- Hugging Face (espejo): https://huggingface.co/Satkum1902/DeepSeek-V4.1-Flash-1017
 - Repositorio oficial citado: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash
 - Informe técnico: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf
-- Organización DeepSeek-AI en HuggingFace: https://huggingface.co/deepseek-ai
+- Organización DeepSeek-AI en Hugging Face: https://huggingface.co/deepseek-ai
 - Web oficial: https://www.deepseek.com/
 - Chat: https://chat.deepseek.com/
 - Twitter: https://twitter.com/deepseek_ai

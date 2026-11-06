@@ -6,7 +6,7 @@ DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-0.6B es un conector de 9,44 millones de paramet
 
 El modelo resuelve el problema de tomar decisiones de bajo nivel (turno de palabra, intencion, senales del hablante) sobre audio en escenarios de agentes de voz full-duplex, con un coste computacional minimo. Es la variante de tamano "edge" de los conectores Qwen3-32B publicados con el paper, entrenada con la misma receta, y esta pensada como punto de partida para fine-tuning propio de decisiones mas que como modelo de conocimiento abierto.
 
-La variante B es de alineamiento de contenido unicamente (destilacion de transcripcion R1-R2), sin entrenamiento paralinguistico: el genero y la emocion quedan al nivel del azar. Soporta chino e ingles, se distribuye bajo licencia Apache-2.0 y su pipeline declarado en HuggingFace es audio-text-to-text. El sistema completo (codificador + LLM + conector) suma unos 790 M de parametros.
+La variante B es de alineamiento de contenido unicamente (destilacion de transcripcion R1-R2), sin entrenamiento paralinguistico: el genero y la emocion quedan al nivel del azar. Soporta chino e ingles, se distribuye bajo licencia Apache-2.0 y su pipeline declarado en Hugging Face es audio-text-to-text. El sistema completo (codificador + LLM + conector) suma unos 790 M de parametros.
 
 ## Especificaciones tecnicas
 
@@ -102,11 +102,11 @@ Nota: la comparativa se limita a los modelos de la misma familia y a los compone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-0.6B
+- Modelo en Hugging Face: https://huggingface.co/adventists-ai/DuplexJev-B-Qwen3-ASR-0.6B-Qwen3-0.6B
 - Encoder de audio: https://huggingface.co/adventists-ai/Qwen3-ASR-0.6B-Encoder
 - LLM base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Repositorio de codigo duplexjev: https://github.com/adventists-ai/duplexjev
-- Organizacion adventists-ai en HuggingFace: https://huggingface.co/adventists-ai
+- Organizacion adventists-ai en Hugging Face: https://huggingface.co/adventists-ai
 - Variante A-Para (Qwen3-32B): https://huggingface.co/adventists-ai/DuplexJev-A-Para-Qwen3-ASR-0.6B-Qwen3-32B
 - Variante B-Emotion (Qwen3-32B): https://huggingface.co/adventists-ai/DuplexJev-B-Emotion-Qwen3-ASR-0.6B-Qwen3-32B
 - Repositorio Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR

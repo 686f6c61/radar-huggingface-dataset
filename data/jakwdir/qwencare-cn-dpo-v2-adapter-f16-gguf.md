@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible (ni MM
 
 | Artefacto | Parametros | Formato | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jakwdir/QwenCare-CN-DPO-v2-adapter-F16-GGUF (este) | 43,6 M (adaptador LoRA) | GGUF F16 | no disponible | apache-2.0 | HuggingFace, listo para llama.cpp |
-| kostelliwhite/QwenCare-CN-DPO-v2-adapter (original) | 43,6 M (adaptador LoRA) | safetensors (PEFT) | no disponible | apache-2.0 | HuggingFace, requiere transformers/PEFT o vLLM |
-| Qwen3-8B (modelo base, sin adaptador) | ~8 B | safetensors / GGUF | no disponible en esta ficha | no disponible en la informacion proporcionada | HuggingFace, ampliamente soportado |
+| jakwdir/QwenCare-CN-DPO-v2-adapter-F16-GGUF (este) | 43,6 M (adaptador LoRA) | GGUF F16 | no disponible | apache-2.0 | Hugging Face, listo para llama.cpp |
+| kostelliwhite/QwenCare-CN-DPO-v2-adapter (original) | 43,6 M (adaptador LoRA) | safetensors (PEFT) | no disponible | apache-2.0 | Hugging Face, requiere transformers/PEFT o vLLM |
+| Qwen3-8B (modelo base, sin adaptador) | ~8 B | safetensors / GGUF | no disponible en esta ficha | no disponible en la informacion proporcionada | Hugging Face, ampliamente soportado |
 
 No se dispone de datos para comparar con otros adaptadores de apoyo emocional en chino ni con modelos especializados equivalentes; esta comparativa se limita a las tres variantes del mismo linaje.
 

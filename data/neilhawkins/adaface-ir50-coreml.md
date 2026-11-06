@@ -81,6 +81,6 @@ La comparativa se limita a caracteristicas estructurales conocidas; no se dispon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/neilhawkins/adaface-ir50-coreml
+- Modelo en Hugging Face: https://huggingface.co/neilhawkins/adaface-ir50-coreml
 - Repositorio original de AdaFace: https://github.com/mk-minchul/AdaFace
 - Paper AdaFace (CVPR 2022): Kim, M., Jain, A. K., and Liu, X. *AdaFace: Quality Adaptive Margin for Face Recognition.*

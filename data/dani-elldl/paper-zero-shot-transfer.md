@@ -70,7 +70,7 @@ No disponible. Este repositorio no es un modelo de IA comparable con alternativa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dani-elldl/paper-zero-shot-transfer
+- Repositorio en Hugging Face: https://huggingface.co/dani-elldl/paper-zero-shot-transfer
 - Artículo relacionado (arXiv): Towards Zero-Shot Task Transfer with Neurosymbolic World Models — https://arxiv.org/abs/2608.17959
 - Artículo relacionado (arXiv): ZeroG: Investigating Cross-dataset Zero-shot — https://arxiv.org/abs/2402.11235
 - Patente relacionada: Zero-shot domain transfer with a text-to-text model — https://patents.google.com/patent/US20240256796A1/en

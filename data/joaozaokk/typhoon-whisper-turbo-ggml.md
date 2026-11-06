@@ -25,7 +25,7 @@ Su relevancia es practica: da acceso a un modelo ASR tailandes en un formato lig
 | Libreria | whisper.cpp |
 | Pipeline | automatic-speech-recognition |
 | Tamano de los ficheros | f16: 1625 MB; q8_0: 874 MB; q5_0: 574 MB; q4_0: 474 MB |
-| Tamano del repositorio | 1,9 GB (segun HuggingFace) |
+| Tamano del repositorio | 1,9 GB (segun Hugging Face) |
 | Descargas / likes | 0 / 0 |
 | Creado / actualizado | 2026-09-13 / 2026-09-13 |
 
@@ -94,7 +94,7 @@ La conclusion utilizable es que este repositorio compite por tamano de fichero y
 - Verificacion poco representativa: el autor declara haber validado cada variante con muestras cortas en portugues e ingles, no en tailandes, que es el idioma declarado del modelo.
 - Repositorio sin traccion: 0 descargas y 0 likes, creado y actualizado el mismo dia, lo que implica ausencia de validacion por parte de la comunidad.
 - Conversion no oficial mantenida por un tercero: el propio autor indica que el objetivo es mantener estables los enlaces de descarga de ciertas aplicaciones y que no ofrece ninguna garantia ("No warranty").
-- Discrepancia de tamanos: la suma de los cuatro ficheros (1625 + 874 + 574 + 474 = 3547 MB) no coincide con el tamano de repositorio indicado por HuggingFace (1,9 GB); conviene verificar el contenido real antes de descargar.
+- Discrepancia de tamanos: la suma de los cuatro ficheros (1625 + 874 + 574 + 474 = 3547 MB) no coincide con el tamano de repositorio indicado por Hugging Face (1,9 GB); conviene verificar el contenido real antes de descargar.
 - Inconsistencia en la documentacion: el texto de la model card menciona q5_k como opcion recomendada para movil, pero la tabla de ficheros solo incluye q5_0; no se ofrece q5_k.
 - Riesgo de alucinacion: los modelos de la familia Whisper tienden a generar texto plausible en segmentos de silencio, ruido o musica; en produccion conviene aplicar heuristica de deteccion de voz y revisar las transcripciones con baja confianza.
 - Sesgos: no hay informacion sobre la composicion del corpus de entrenamiento del modelo base ni sobre su cobertura de acentos, registros o variedades dialectales del tailandes.
@@ -105,7 +105,7 @@ La conclusion utilizable es que este repositorio compite por tamano de fichero y
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JoaoZaokk/typhoon-whisper-turbo-ggml
+- Repositorio en Hugging Face: https://huggingface.co/JoaoZaokk/typhoon-whisper-turbo-ggml
 - Modelo base: https://huggingface.co/typhoon-ai/typhoon-whisper-turbo
 - Motor de inferencia whisper.cpp: https://github.com/ggml-org/whisper.cpp
 - Perfil del autor de la conversion: https://huggingface.co/JoaoZaokk

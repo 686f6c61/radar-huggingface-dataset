@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/meshllm/gemma-4-31B-it-qat-UD-Q4_K_XL-layers
+- Repositorio Hugging Face: https://huggingface.co/meshllm/gemma-4-31B-it-qat-UD-Q4_K_XL-layers
 - Modelo base en GGUF: https://huggingface.co/unsloth/gemma-4-31B-it-qat-GGUF
 - Sitio web de Mesh LLM: https://www.meshllm.cloud
 - Repositorio de codigo de Mesh LLM: https://github.com/Mesh-LLM/mesh-llm

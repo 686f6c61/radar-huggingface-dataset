@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Marmoka-es-Llama-3.1-8B-Instruct-GGUF es la version cuantizada en formato GGUF del modelo HiTZ/Marmoka-es-Llama-3.1-8B-Instruct, un modelo de lenguaje de 8.030.261.312 parametros derivado de Llama 3.1 8B Instruct y adaptado al espanol con enfasis en dominio biomedico y clinico. La publica mradermacher, un cuantizador conocido en HuggingFace por generar versiones GGUF de modelos abiertos para consumo local.
+Marmoka-es-Llama-3.1-8B-Instruct-GGUF es la version cuantizada en formato GGUF del modelo HiTZ/Marmoka-es-Llama-3.1-8B-Instruct, un modelo de lenguaje de 8.030.261.312 parametros derivado de Llama 3.1 8B Instruct y adaptado al espanol con enfasis en dominio biomedico y clinico. La publica mradermacher, un cuantizador conocido en Hugging Face por generar versiones GGUF de modelos abiertos para consumo local.
 
 El modelo resuelve un problema concreto: disponer de un asistente conversacional en castellano, orientado a terminologia medica y clinica, que pueda ejecutarse en hardware de consumo o en servidores modestos sin depender de APIs externas. Al estar en GGUF, se puede desplegar en llama.cpp, Ollama, LM Studio o koboldcpp con cuantizaciones que van de 3,3 GB (Q2_K) a 16,2 GB (f16).
 

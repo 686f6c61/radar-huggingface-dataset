@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DepthART (Depth Anything Rethought for Tiny Models) es un modelo compacto de estimación monocular de profundidad (MDE, *monocular depth estimation*) desarrollado por el equipo del proyecto DepthART y publicado por el usuario Xiesq en HuggingFace. Su objetivo es trasladar la capacidad de generalización de los grandes modelos fundacionales de profundidad geométrica (Metric3D, Depth Anything, UniDepth) a arquitecturas ligeras orientadas a despliegue en dispositivo, un terreno donde esas ganancias no se habían traducido hasta ahora.
+DepthART (Depth Anything Rethought for Tiny Models) es un modelo compacto de estimación monocular de profundidad (MDE, *monocular depth estimation*) desarrollado por el equipo del proyecto DepthART y publicado por el usuario Xiesq en Hugging Face. Su objetivo es trasladar la capacidad de generalización de los grandes modelos fundacionales de profundidad geométrica (Metric3D, Depth Anything, UniDepth) a arquitecturas ligeras orientadas a despliegue en dispositivo, un terreno donde esas ganancias no se habían traducido hasta ahora.
 
 El modelo se distribuye en variantes Small, Base y Large y soporta dos modos de salida: profundidad relativa invariante a transformaciones afines y profundidad métrica condicionada por cámara. La propuesta combina un pipeline de datos resistente al sesgo de dominio con un ajuste fino condicionado por cámara y con el encoder congelado, lo que busca estabilizar la calibración métrica bajo cambios de cámara y evitar el sobreajuste a un dataset concreto.
 
@@ -23,7 +23,7 @@ El repositorio ocupa 2,1 GB y publica los pesos en formato ONNX bajo licencia Ap
 | Tamano del repositorio | 2,1 GB |
 | Variantes | Small, Base, Large |
 | Modos de salida | Profundidad relativa invariante a afines y profundidad metrica condicionada por camara |
-| Fecha de publicacion en HuggingFace | 2026-10-08 |
+| Fecha de publicacion en Hugging Face | 2026-10-08 |
 
 ## Arquitectura y entrenamiento
 
@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Las f
 
 | Modelo | Tipo | Enfoque | Contexto de uso | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| DepthART | MDE compacto (Small/Base/Large) | Generalizacion de modelos fundacionales en modelos tiny | Despliegue en dispositivo (Jetson, GPU de escritorio) | Apache 2.0 | Pesos ONNX en HuggingFace y GitHub |
+| DepthART | MDE compacto (Small/Base/Large) | Generalizacion de modelos fundacionales en modelos tiny | Despliegue en dispositivo (Jetson, GPU de escritorio) | Apache 2.0 | Pesos ONNX en Hugging Face y GitHub |
 | Depth Anything | MDE fundacional | Generalizacion amplia en modelos grandes | Servidor / GPU de alta gama | No disponible en la informacion | Referenciado en el paper de DepthART |
 | Metric3D | MDE fundacional metrico | Prediccion metrica con calibracion | Servidor / GPU de alta gama | No disponible en la informacion | Referenciado en el paper de DepthART |
 | UniDepth | MDE fundacional metrico | Profundidad metrica con conciencia de camara | Servidor / GPU de alta gama | No disponible en la informacion | Referenciado en el paper de DepthART |
@@ -89,7 +89,7 @@ Los datos de parametros, contexto y rendimiento de los modelos comparados no est
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Xiesq/DepthART
+- Hugging Face: https://huggingface.co/Xiesq/DepthART
 - Paper (arXiv): https://arxiv.org/abs/2607.17099
 - Paper (HTML): https://arxiv.org/html/2607.17099v1
 - Repositorio GitHub: https://github.com/xuefeng-cvr/DepthART

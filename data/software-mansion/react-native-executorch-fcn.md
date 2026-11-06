@@ -67,7 +67,7 @@ No disponible. No se han identificado modelos comparables en la información pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/software-mansion/react-native-executorch-fcn
+- Repositorio de Hugging Face: https://huggingface.co/software-mansion/react-native-executorch-fcn
 - GitHub de React Native ExecuTorch: https://github.com/software-mansion/react-native-executorch
 - Documentación de React Native ExecuTorch: https://docs.swmansion.com/react-native-executorch/docs/fundamentals/getting-started
 - Página oficial de React Native ExecuTorch: https://executorch.swmansion.com/

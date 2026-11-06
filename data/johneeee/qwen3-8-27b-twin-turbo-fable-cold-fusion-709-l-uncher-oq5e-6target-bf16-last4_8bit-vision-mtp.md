@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Esta ficha describe el repositorio `Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-uncher-oQ5e-6target-bf16-last4_8bit-vision-mtp`, publicado por el usuario Johneeee en HuggingFace. Se trata de un modelo de lenguaje cuantizado con la herramienta oQ (oMLX v0.7.0.dev4) en precisión mixta de 5 bits con tamaño de grupo 64, y almacenado en formato MLX safetensors. El recuento real de parámetros declarado en los safetensors es de 27.781.427.952 (unos 27,78 mil millones) y el repositorio ocupa 22,4 GB.
+Esta ficha describe el repositorio `Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-uncher-oQ5e-6target-bf16-last4_8bit-vision-mtp`, publicado por el usuario Johneeee en Hugging Face. Se trata de un modelo de lenguaje cuantizado con la herramienta oQ (oMLX v0.7.0.dev4) en precisión mixta de 5 bits con tamaño de grupo 64, y almacenado en formato MLX safetensors. El recuento real de parámetros declarado en los safetensors es de 27.781.427.952 (unos 27,78 mil millones) y el repositorio ocupa 22,4 GB.
 
 El tag `qwen3_5` y el propio nombre del repositorio apuntan a la familia Qwen, pero la model card no identifica el modelo base ni la arquitectura, y tampoco declara licencia, idiomas, contexto ni capacidades. El nombre contiene además indicios de rasgos concretos (`vision`, `mtp`, `bf16`, `last4_8bit`, `6target`), presumiblemente etiquetas del pipeline de cuantización, que no están documentados en ninguna parte del repositorio.
 
@@ -48,7 +48,7 @@ La única innovación técnica verificable es la propia cuantización: el nombre
 - Experimentación con cuantización mixta: sirve como caso de estudio de una receta oQ de 5 bits con group size 64 y capas selectivas en bf16, para comparar calidad frente a cuantizaciones uniformes del mismo modelo base.
 - Evaluación de degradación por cuantización: si se dispone del modelo original sin cuantizar, puede usarse para medir la pérdida de calidad en tareas de generación y razonamiento, siempre que el modelo base sea identificable (aquí no lo es).
 - Prototipos de asistentes conversacionales en local: se puede integrar en scripts de chat sobre MLX para pruebas de concepto con datos que no deban salir del equipo, asumiendo que no hay garantías de calidad ni de licencia.
-- Docencia y formación técnica: ejemplo práctico de cómo se publica un artefacto cuantizado en HuggingFace y de los riesgos de publicar sin licencia, sin model card detallada y sin benchmarks.
+- Docencia y formación técnica: ejemplo práctico de cómo se publica un artefacto cuantizado en Hugging Face y de los riesgos de publicar sin licencia, sin model card detallada y sin benchmarks.
 - Reproducción de pipelines de cuantización: la receta declarada (oMLX v0.7.0.dev4, 5 bits, grupo 64) es replicable para estudiar cómo se comporta el mismo esquema en otros modelos de tamaño similar.
 - Desarrollo de herramientas de despliegue MLX: sirve para probar cargadores, gestión de memoria y latencia en entornos MLX con un modelo de ~22,4 GB de pesos.
 
@@ -93,7 +93,7 @@ Cualquier comparación numérica con alternativas de la misma categoría requeri
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-uncher-oQ5e-6target-bf16-last4_8bit-vision-mtp
+- Repositorio en Hugging Face: https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-uncher-oQ5e-6target-bf16-last4_8bit-vision-mtp
 - Herramienta de cuantización oQ (oMLX), citada en la model card: https://github.com/jundot/omlx
 - Librería MLX (referencia del formato de pesos): https://github.com/ml-explore/mlx
 - Paper, blog, demo o repositorio adicional del autor: no disponible. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo; los enlaces recuperados no guardaban relación con el repositorio.

@@ -6,7 +6,7 @@ HyLo-Llama-8MLA8GDN-64K-SFT es un modelo de 1,61 mil millones de parámetros des
 
 El checkpoint se ha afinado con supervisión (SFT) a 65.536 tokens de contexto, usando meta-llama/Llama-3.1-8B-Instruct como profesor de destilación. La relevancia de este lanzamiento es doble: por un lado, demuestra una vía de escalado de contexto largo que no requiere preentrenar desde cero; por otro, es una muestra del soporte de AMD (Instinct MI300X) para entrenamiento de arquitecturas híbridas de atención.
 
-Se publica bajo una licencia de investigación propia de AMD, con una discrepancia documental relevante: los metadatos de HuggingFace y el frontmatter de la model card declaran apache-2.0, mientras que el campo license_name apunta a `amd-hybrid-models-research-only-rail-ms` y el campo de licencia de la ficha indica esa misma licencia restrictiva. Cualquier uso comercial debe resolverse antes de desplegar el modelo.
+Se publica bajo una licencia de investigación propia de AMD, con una discrepancia documental relevante: los metadatos de Hugging Face y el frontmatter de la model card declaran apache-2.0, mientras que el campo license_name apunta a `amd-hybrid-models-research-only-rail-ms` y el campo de licencia de la ficha indica esa misma licencia restrictiva. Cualquier uso comercial debe resolverse antes de desplegar el modelo.
 
 ## Especificaciones tecnicas
 
@@ -105,9 +105,9 @@ Contexto largo: la model card anuncia una sección RULER con las 13 tareas a 8K,
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---:|---:|---|---|
-| HyLo-Llama-8MLA8GDN-64K-SFT | 1,61B | 65.536 | AMD research only (con discrepancia documental frente a apache-2.0) | safetensors en HuggingFace |
-| meta-llama/Llama-3.2-1B-Instruct (base) | 1,23B | 128.000 | Llama 3.2 Community License | safetensors en HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct (profesor) | 8,03B | 128.000 | Llama 3.1 Community License | safetensors en HuggingFace |
+| HyLo-Llama-8MLA8GDN-64K-SFT | 1,61B | 65.536 | AMD research only (con discrepancia documental frente a apache-2.0) | safetensors en Hugging Face |
+| meta-llama/Llama-3.2-1B-Instruct (base) | 1,23B | 128.000 | Llama 3.2 Community License | safetensors en Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct (profesor) | 8,03B | 128.000 | Llama 3.1 Community License | safetensors en Hugging Face |
 
 Otras alternativas de la misma categoría (modelos densos de 1-2B con foco en contexto largo, como Qwen2.5-1.5B-Instruct) no cuentan con datos verificados en la información proporcionada, por lo que no se incluyen cifras comparativas de rendimiento. Tampoco hay resultados de benchmarks de los modelos base y profesor en la información disponible.
 
@@ -115,7 +115,7 @@ Otras alternativas de la misma categoría (modelos densos de 1-2B con foco en co
 
 - Idioma: únicamente inglés declarado. El uso en castellano no está soportado ni evaluado.
 - Contexto: aunque `config.json` declara `max_position_embeddings` de 131.072, el modelo solo fue entrenado y evaluado a 65.536 tokens. El propio autor advierte que la calidad por encima de esa longitud no está medida ni respaldada, y que los stacks de serving pueden dimensionar mal la caché si se confían en el valor del config.
-- Licencia: existe una contradicción explícita entre el campo de licencia de HuggingFace (`amd-hybrid-models-research-only-rail-ms`), el `license: apache-2.0` del frontmatter y el tag `license:apache-2.0`. Debe aclararse con el autor antes de cualquier uso comercial; la lectura conservadora es investigación únicamente.
+- Licencia: existe una contradicción explícita entre el campo de licencia de Hugging Face (`amd-hybrid-models-research-only-rail-ms`), el `license: apache-2.0` del frontmatter y el tag `license:apache-2.0`. Debe aclararse con el autor antes de cualquier uso comercial; la lectura conservadora es investigación únicamente.
 - Datos de entrenamiento con restricciones: nvidia/ChatQA2-Long-SFT-data se distribuye bajo cc-by-nc-2.0 (no comercial), lo que condiciona la licencia efectiva del modelo derivado.
 - Sesgos conocidos: no documentados en la información disponible. Al derivar de Llama-3.2-1B-Instruct y entrenarse con mezclas en inglés, es previsible que herede sesgos de esos datos, pero no hay auditoría publicada.
 - Riesgo de alucinación: no cuantificado. Con 1,61B parámetros y entrenamiento de destilación desde un profesor de 8B, la fidelidad factual en dominios abiertos es limitada.
@@ -125,7 +125,7 @@ Otras alternativas de la misma categoría (modelos densos de 1-2B con foco en co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amd/HyLo-Llama-8MLA8GDN-64K-SFT
+- Modelo en Hugging Face: https://huggingface.co/amd/HyLo-Llama-8MLA8GDN-64K-SFT
 - Paper principal, Long-Context Aware Upcycling: A New Frontier for Hybrid LLM Scaling: https://arxiv.org/abs/2604.24715
 - Referencia arXiv adicional: https://arxiv.org/abs/2505.17272
 - Referencia arXiv adicional: https://arxiv.org/abs/2503.11132

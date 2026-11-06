@@ -82,7 +82,7 @@ La comparación es orientativa; no se han encontrado modelos específicamente aj
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-2b-finance-alpaca-lora
+- Repositorio Hugging Face: https://huggingface.co/siddhartha-addy-globalids-labs/qwen3.5-2b-finance-alpaca-lora
 - Artículo sobre Qwen 3.5 (Medium, no oficial): https://medium.com/data-science-in-your-pocket/qwen-3-5-explained-architecture-upgrades-over-qwen-3-benchmarks-and-real-world-use-cases-af38b01e9888
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3
 - Página de Qwen3.5-27B en QwenCloud: https://www.qwencloud.com/models/qwen3.5-27b

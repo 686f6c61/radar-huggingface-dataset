@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo **Monad-dz/OCRCS-qwen3vl-2b-merged** es un modelo multimodal de visión-lenguaje (image-text-to-text) desarrollado por el usuario **Monad-dz**. Por su nombre y los tags de HuggingFace, se trata de un modelo basado en la arquitectura **Qwen3-VL** con aproximadamente **2.127 millones de parámetros** (2.13B), que ha sido fusionado (merged) a partir de un ajuste fino (LoRA) orientado a tareas de **OCR** (reconocimiento óptico de caracteres). El autor tiene publicados otros modelos de OCR, como `Monad-dz/qwen-ocr-lora_v3`, lo que refuerza la hipótesis de que este modelo está especializado en la extracción de texto a partir de imágenes.
+El modelo **Monad-dz/OCRCS-qwen3vl-2b-merged** es un modelo multimodal de visión-lenguaje (image-text-to-text) desarrollado por el usuario **Monad-dz**. Por su nombre y los tags de Hugging Face, se trata de un modelo basado en la arquitectura **Qwen3-VL** con aproximadamente **2.127 millones de parámetros** (2.13B), que ha sido fusionado (merged) a partir de un ajuste fino (LoRA) orientado a tareas de **OCR** (reconocimiento óptico de caracteres). El autor tiene publicados otros modelos de OCR, como `Monad-dz/qwen-ocr-lora_v3`, lo que refuerza la hipótesis de que este modelo está especializado en la extracción de texto a partir de imágenes.
 
 La relevancia de este modelo radica en su tamaño compacto (2B) y su naturaleza multimodal, lo que lo hace apto para tareas de OCR en entornos con recursos limitados. Sin embargo, la información pública disponible es muy escasa: la model card es una plantilla automática sin datos de entrenamiento, evaluación ni licencia. Por tanto, cualquier evaluación de rendimiento debe realizarse de forma independiente antes de su uso en producción.
 
@@ -21,7 +21,7 @@ La relevancia de este modelo radica en su tamaño compacto (2B) y su naturaleza 
 
 ## Arquitectura y entrenamiento
 
-El modelo sigue la arquitectura **Qwen3-VL**, que combina un codificador visual con un modelo de lenguaje basado en transformer. El tag `qwen3_vl` en HuggingFace confirma esta familia. Al tratarse de un modelo "merged", es probable que sea el resultado de fusionar un adaptador LoRA entrenado para OCR sobre el modelo base Qwen3-VL-2B. El autor ha publicado previamente un LoRA de OCR sobre un modelo de texto (Qwen3.5-0.8B), lo que sugiere una metodología similar.
+El modelo sigue la arquitectura **Qwen3-VL**, que combina un codificador visual con un modelo de lenguaje basado en transformer. El tag `qwen3_vl` en Hugging Face confirma esta familia. Al tratarse de un modelo "merged", es probable que sea el resultado de fusionar un adaptador LoRA entrenado para OCR sobre el modelo base Qwen3-VL-2B. El autor ha publicado previamente un LoRA de OCR sobre un modelo de texto (Qwen3.5-0.8B), lo que sugiere una metodología similar.
 
 No se dispone de información sobre los datos de entrenamiento, el número de tokens, la composición del dataset ni si se aplicaron técnicas como RLHF o DPO. Tampoco se documentan innovaciones técnicas específicas más allá de la arquitectura base. La model card no incluye detalles del procedimiento de entrenamiento.
 
@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 
 | Modelo | Parametros | Contexto | Modalidad | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Monad-dz/OCRCS-qwen3vl-2b-merged | 2.13B | no disponible | Imagen-texto | no disponible | HuggingFace |
-| Qwen3-VL-2B (base) | ~2.1B | no disponible | Imagen-texto | Apache 2.0 (probable) | HuggingFace |
-| Qwen2-VL-2B | ~2.1B | 32K | Imagen-texto | Apache 2.0 | HuggingFace |
+| Monad-dz/OCRCS-qwen3vl-2b-merged | 2.13B | no disponible | Imagen-texto | no disponible | Hugging Face |
+| Qwen3-VL-2B (base) | ~2.1B | no disponible | Imagen-texto | Apache 2.0 (probable) | Hugging Face |
+| Qwen2-VL-2B | ~2.1B | 32K | Imagen-texto | Apache 2.0 | Hugging Face |
 
 La comparación se basa en características generales, ya que no hay benchmarks públicos del modelo analizado. El modelo de Monad-dz se diferencia por su posible especialización en OCR, pero no se puede verificar sin evaluaciones. La licencia del modelo base Qwen3-VL es generalmente Apache 2.0, pero la del modelo merge no está especificada.
 
@@ -77,6 +77,6 @@ La comparación se basa en características generales, ya que no hay benchmarks 
 
 ## Enlaces
 
-- HuggingFace: [Monad-dz/OCRCS-qwen3vl-2b-merged](https://huggingface.co/Monad-dz/OCRCS-qwen3vl-2b-merged)
+- Hugging Face: [Monad-dz/OCRCS-qwen3vl-2b-merged](https://huggingface.co/Monad-dz/OCRCS-qwen3vl-2b-merged)
 - Modelo relacionado del autor: [Monad-dz/qwen-ocr-lora_v3](https://huggingface.co/Monad-dz/qwen-ocr-lora_v3)
 - Repositorio de referencia de Qwen3-VL (no oficial): [chenmaol/Qwen-VL](https://github.com/chenmaol/Qwen-VL)

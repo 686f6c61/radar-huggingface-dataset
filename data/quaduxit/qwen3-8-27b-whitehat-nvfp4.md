@@ -29,7 +29,7 @@ La cuantización NVFP4 se aplica únicamente a los lineales de la línea de leng
 
 - Generación de texto y razonamiento conversacional de propósito general, con enfoque específico en tareas de seguridad informática.
 - Capacidades de visión: procesa imágenes y capturas de pantalla (pipeline image-text-to-text), útil para analizar interfaces, diagramas o resultados de herramientas.
-- Soporte de function calling (etiquetado en HuggingFace).
+- Soporte de function calling (etiquetado en Hugging Face).
 - Asistencia completa en tareas de seguridad ofensiva y defensiva: desarrollo de exploits, desarrollo y análisis de malware, ingeniería inversa, investigación de licencias/DRM, pentesting y evaluación de vulnerabilidades.
 - Rechazo deliberado de peticiones de daño físico real (armas, explosivos, drogas, venenos, armas químicas/biológicas) y material de abuso sexual infantil, tanto en texto como en imagen y en todos los idiomas.
 - Comportamiento en los weights: no requiere system prompt para activar su especialización.
@@ -92,7 +92,7 @@ No se dispone de datos de comparación con otros modelos de la categoría de seg
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-NVFP4
+- Modelo en Hugging Face: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-NVFP4
 - Modelo base (referencia BF16): https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat
 - Variante FP8: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-FP8
 - Variante W8A16: https://huggingface.co/QuaduxIT/Qwen3.8-27B-Whitehat-W8A16

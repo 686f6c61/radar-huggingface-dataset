@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w13-k-chrono4-w60-s160` es un checkpoint de 2.018.511.234 parametros (aproximadamente 2,02 mil millones) publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. La nomenclatura del repositorio sugiere una variante experimental de una familia interna denominada "sn38-nanochrono", probablemente un modelo de lenguaje de escala pequena orientado a tareas de generacion y razonamiento con enfasis en componentes temporales o de contexto extendido, aunque no se dispone de documentacion oficial que confirme esta interpretacion.
+El modelo `alfred8995/r18-a2-w13-k-chrono4-w60-s160` es un checkpoint de 2.018.511.234 parametros (aproximadamente 2,02 mil millones) publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. La nomenclatura del repositorio sugiere una variante experimental de una familia interna denominada "sn38-nanochrono", probablemente un modelo de lenguaje de escala pequena orientado a tareas de generacion y razonamiento con enfasis en componentes temporales o de contexto extendido, aunque no se dispone de documentacion oficial que confirme esta interpretacion.
 
-El repositorio tiene un tamano de 6,3 GB en formato safetensors, lo que es coherente con un modelo de ~2B parametros almacenado en precision de 16 bits (2,02B x 2 bytes ≈ 4,04 GB) mas posibles pesos adicionales, estados de optimizador o multiples shards. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El repositorio tiene un tamano de 6,3 GB en formato safetensors, lo que es coherente con un modelo de ~2B parametros almacenado en precision de 16 bits (2,02B x 2 bytes ≈ 4,04 GB) mas posibles pesos adicionales, estados de optimizador o multiples shards. El acceso esta restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
-No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni idiomas soportados en la ficha de HuggingFace. Esta ficha se limita a los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no puede confirmarse.
+No se ha publicado informacion sobre arquitectura, datos de entrenamiento, benchmarks ni idiomas soportados en la ficha de Hugging Face. Esta ficha se limita a los datos verificables del repositorio y marca explicitamente como "no disponible" todo aquello que no puede confirmarse.
 
 ## Especificaciones tecnicas
 
@@ -23,7 +23,7 @@ No se ha publicado informacion sobre arquitectura, datos de entrenamiento, bench
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la ficha de HuggingFace. El tag `sn38-nanochrono` sugiere una familia interna de modelos de escala nano/pequena con algun componente relacionado con el tiempo o la secuencia cronologica, pero no hay documentacion tecnica que lo confirme. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares.
+No se ha publicado informacion sobre la arquitectura del modelo en la ficha de Hugging Face. El tag `sn38-nanochrono` sugiere una familia interna de modelos de escala nano/pequena con algun componente relacionado con el tiempo o la secuencia cronologica, pero no hay documentacion tecnica que lo confirme. Tampoco se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, ni si se aplicaron tecnicas de RLHF, DPO o similares.
 
 El unico dato estructural verificable es el recuento de parametros (2.018.511.234) y el tamano del repositorio (6,3 GB), compatibles con un transformer denso de ~2B parametros en precision de 16 bits. Cualquier afirmacion adicional sobre atencion lineal, decodificacion especulativa o arquitecturas hibridas seria especulativa y no se incluye.
 
@@ -39,7 +39,7 @@ El unico dato estructural verificable es el recuento de parametros (2.018.511.23
 
 ## Casos de uso
 
-- Prototipado de aplicaciones de generacion de texto en local: un modelo de ~2B parametros en safetensors puede cargarse en una GPU consumer para experimentacion, siempre que se acepte la condicion de acceso restringido en HuggingFace.
+- Prototipado de aplicaciones de generacion de texto en local: un modelo de ~2B parametros en safetensors puede cargarse en una GPU consumer para experimentacion, siempre que se acepte la condicion de acceso restringido en Hugging Face.
 - Fine-tuning sobre dominio especifico: el tamano compacto (~2B) permite ajuste fino con LoRA o QLoRA en una sola GPU de 24 GB, util para adaptar el modelo a tareas concretas una vez validada su calidad base.
 - Evaluacion comparativa de checkpoints experimentales: util para investigadores que quieran medir el comportamiento de la familia "nanochrono" frente a otros modelos de escala similar.
 - Despliegue en entornos con restricciones de VRAM: al ser un modelo pequeno, puede ejecutarse en GPUs de gama media o incluso en CPU con cuantizacion, si se generan pesos GGUF a partir de los safetensors.
@@ -74,7 +74,7 @@ La comparativa se ofrece como referencia de categoria (modelos de ~2B parametros
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card tecnica, paper ni benchmarks, lo que impide validar calidad, sesgos o comportamiento en produccion.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la integracion automatizada.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la integracion automatizada.
 - Riesgo de alucinacion: inherente a los modelos de lenguaje; sin evaluaciones publicadas no puede acotarse su magnitud.
 - Sesgos desconocidos: al no declararse la composicion del dataset de entrenamiento, no es posible evaluar sesgos de genero, raza, idioma o dominio.
 - Idiomas no declarados: no se puede garantizar soporte multilingue ni calidad en castellano.
@@ -84,5 +84,5 @@ La comparativa se ofrece como referencia de categoria (modelos de ~2B parametros
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w60-s160
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w60-s160
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

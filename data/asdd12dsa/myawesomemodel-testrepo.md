@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `ASDD12DSA/MyAwesomeModel-TestRepo` es un espacio de HuggingFace publicado por el usuario ASDD12DSA que, por su identificador ("TestRepo"), su tamano de repositorio de 0,0 GB, sus 0 descargas y sus 0 "likes", presenta todas las caracteristicas de un repositorio de prueba o de plantilla mas que de un modelo entrenado y distribuido. La model card asociada describe un supuesto modelo denominado "MyAwesomeModel" con mejoras en razonamiento, pero no incluye informacion verificable sobre pesos, tokenizador, configuracion ni datos de entrenamiento.
+El repositorio `ASDD12DSA/MyAwesomeModel-TestRepo` es un espacio de Hugging Face publicado por el usuario ASDD12DSA que, por su identificador ("TestRepo"), su tamano de repositorio de 0,0 GB, sus 0 descargas y sus 0 "likes", presenta todas las caracteristicas de un repositorio de prueba o de plantilla mas que de un modelo entrenado y distribuido. La model card asociada describe un supuesto modelo denominado "MyAwesomeModel" con mejoras en razonamiento, pero no incluye informacion verificable sobre pesos, tokenizador, configuracion ni datos de entrenamiento.
 
 Los metadatos del repositorio declaran la libreria `transformers`, el framework `pytorch`, el pipeline `feature-extraction`, la etiqueta `bert` y licencia MIT. Sin embargo, la model card describe capacidades de razonamiento, generacion de codigo, function calling y busqueda web que no guardan coherencia con un pipeline de extraccion de caracteristicas ni con la etiqueta `bert`, lo que refuerza la hipotesis de que el contenido es una plantilla copiada de otro modelo.
 
@@ -112,7 +112,7 @@ No disponible. La model card utiliza etiquetas anonimas ("Model1", "Model2", "Mo
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/ASDD12DSA/MyAwesomeModel-TestRepo
+- Repositorio de Hugging Face: https://huggingface.co/ASDD12DSA/MyAwesomeModel-TestRepo
 - Model card integrada en el repositorio: disponible en la misma URL
 - Repositorio de codigo para ejecucion local: mencionado en la model card sin enlace ni nombre ("our code repository")
 - Sitio web oficial con chat y API: mencionado en la model card sin URL

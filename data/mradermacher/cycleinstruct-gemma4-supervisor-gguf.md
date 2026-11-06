@@ -72,8 +72,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| cycleinstruct-gemma4-supervisor-GGUF (este repositorio) | ~11,9B | no disponible | Gemma 4 | GGUF (11 quants estáticas) | HuggingFace, 89 descargas |
-| shareit/cycleinstruct-gemma4-supervisor (base) | ~11,9B | no disponible | Gemma 4 | safetensors | HuggingFace; servido en Featherless AI |
+| cycleinstruct-gemma4-supervisor-GGUF (este repositorio) | ~11,9B | no disponible | Gemma 4 | GGUF (11 quants estáticas) | Hugging Face, 89 descargas |
+| shareit/cycleinstruct-gemma4-supervisor (base) | ~11,9B | no disponible | Gemma 4 | safetensors | Hugging Face; servido en Featherless AI |
 | Familia Gemma 4 (~12B, uso general) | ~12B (según familia) | no disponible | Gemma 4 (algunas fuentes citan Apache 2.0 para la familia; el model card enlaza la licencia Gemma 4) | safetensors, GGUF de terceros | Amplia, con documentación oficial en gemma.ai |
 
 No se dispone de datos de benchmarks ni de modelos comparables de la misma categoría (jueces especializados en atención al cliente) en la información proporcionada, por lo que la comparación se limita a parámetros, formato, licencia y disponibilidad.

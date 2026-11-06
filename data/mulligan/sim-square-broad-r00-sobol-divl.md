@@ -84,8 +84,8 @@ No se han publicado resultados de otros benchmarks (MMLU, HumanEval, GSM8K ni eq
 
 | Modelo | Tarea | Arquitectura | Parámetros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| mulligan/sim-square-broad-r00-sobol-divl | sim-square-broad | Actor de difusión congelado + crítico DIVL distributional | no disponible | no aplicable | 50,95 %–55,45 % de éxito por semilla | Apache-2.0 | HuggingFace, 5 semillas |
-| mulligan/sim-square-broad-r00-sobol-idql | sim-square-broad | Actor de difusión del que procede el padre congelado (IDQL) | no disponible | no aplicable | no disponible | no disponible en la información proporcionada | HuggingFace (referenciado) |
+| mulligan/sim-square-broad-r00-sobol-divl | sim-square-broad | Actor de difusión congelado + crítico DIVL distributional | no disponible | no aplicable | 50,95 %–55,45 % de éxito por semilla | Apache-2.0 | Hugging Face, 5 semillas |
+| mulligan/sim-square-broad-r00-sobol-idql | sim-square-broad | Actor de difusión del que procede el padre congelado (IDQL) | no disponible | no aplicable | no disponible | no disponible en la información proporcionada | Hugging Face (referenciado) |
 | Otros brazos de la campaña `square-d1-dagger-mining-01a` | sim-square-broad | no disponible | no disponible | no aplicable | no disponible | no disponible | no disponible |
 
 La comparación cuantitativa con alternativas queda limitada porque la información proporcionada solo describe este checkpoint y su modelo padre. No se dispone de parámetros, contexto ni resultados de modelos de otras familias para contrastar.
@@ -106,10 +106,10 @@ La comparación cuantitativa con alternativas queda limitada porque la informaci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-divl
+- Modelo en Hugging Face: https://huggingface.co/mulligan/sim-square-broad-r00-sobol-divl
 - Modelo padre (actor congelado): https://huggingface.co/mulligan/sim-square-broad-r00-sobol-idql
 - Dataset de entrenamiento: https://huggingface.co/datasets/mulligan/sim-square-broad-c00-teleop-sobol
 - Dataset de evaluación: https://huggingface.co/datasets/mulligan/sim-square-broad-r00-r03-eval
-- Organización en HuggingFace: https://huggingface.co/mulligan
+- Organización en Hugging Face: https://huggingface.co/mulligan
 - Proyecto Mulligan: https://mulligan.page
 - Policy Arena (evaluaciones): https://arena.mulligan.page

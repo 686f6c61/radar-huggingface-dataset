@@ -104,10 +104,10 @@ No se dispone de datos para comparar con modelos de otros desarrolladores del mi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jkim96/granite-4.1-30b-DASHQ-Q2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jkim96/granite-4.1-30b-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.1-30b
 - Repositorio del metodo DASH-Q: https://github.com/JaeminK/dashq
 - Documentacion de Granite 4.1 (IBM): https://www.ibm.com/granite/docs/models/granite4-1
 - Blog de IBM Research sobre la familia Granite 4.1: https://research.ibm.com/blog/granite-4-1-ai-foundation-models
-- Coleccion Granite 4.1 en HuggingFace: https://huggingface.co/collections/ibm-granite/granite-41-language-models
+- Coleccion Granite 4.1 en Hugging Face: https://huggingface.co/collections/ibm-granite/granite-41-language-models
 - Ficha de Granite 4.1 30B en FitMyLLM: https://www.fitmyllm.com/model/granite-4.1-30b

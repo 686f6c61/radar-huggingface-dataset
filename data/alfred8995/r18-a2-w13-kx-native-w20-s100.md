@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-native-w20-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0. El identificador y la etiqueta `sn38-nanochrono` sugieren un experimento de entrenamiento con nomenclatura interna (posiblemente un run de entrenamiento concreto: paso 100, ventana 20, variante "kx-native"), más que un modelo con un nombre comercial o una familia reconocida. No hay documentación asociada, pipeline declarado ni descripción de uso en la información disponible.
+`alfred8995/r18-a2-w13-kx-native-w20-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0. El identificador y la etiqueta `sn38-nanochrono` sugieren un experimento de entrenamiento con nomenclatura interna (posiblemente un run de entrenamiento concreto: paso 100, ventana 20, variante "kx-native"), más que un modelo con un nombre comercial o una familia reconocida. No hay documentación asociada, pipeline declarado ni descripción de uso en la información disponible.
 
 El dato objetivo más relevante es el recuento de parámetros en safetensors: 2.018.511.234 parámetros (aproximadamente 2.020 millones, es decir, un modelo de escala ~2B). El repositorio ocupa 8,1 GB, lo que es coherente con pesos en precisión de 16 bits o con un conjunto de pesos de mayor tamaño que el estrictamente necesario para 2B parámetros en fp16 (~4 GB), lo que podría indicar pesos en fp32, múltiples checkpoints o artefactos adicionales.
 
@@ -72,7 +72,7 @@ La comparación es estructural: no existen datos de rendimiento del modelo de al
 ## Limitaciones y advertencias
 
 - Ausencia total de documentación: no hay model card, paper ni descripción de arquitectura, datos o evaluación; el uso en producción no está justificado.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar, lo que añade fricción y puede limitar la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, lo que añade fricción y puede limitar la reproducibilidad.
 - Riesgo de alucinación desconocido: sin evaluación, no puede estimarse la fiabilidad del modelo en tareas factuales.
 - Sesgos desconocidos: al no conocerse el corpus de entrenamiento, no puede evaluarse el sesgo demográfico, cultural o lingüístico.
 - Idiomas no declarados: no hay garantía de soporte de castellano ni de ningún otro idioma.
@@ -82,5 +82,5 @@ La comparación es estructural: no existen datos de rendimiento del modelo de al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w20-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-native-w20-s100
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

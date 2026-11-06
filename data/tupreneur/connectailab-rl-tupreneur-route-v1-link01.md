@@ -78,9 +78,9 @@ No se dispone de información sobre modelos comparables de destilación de polí
 
 | Modelo | Parámetros | Contexto | Acierto en test | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo, RL) | 0,8B base + LoRA | No disponible | 79,7% | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo, RL) | 0,8B base + LoRA | No disponible | 79,7% | Apache 2.0 | Hugging Face |
 | LINK-01 SFT | 0,8B base + LoRA | No disponible | 81,1% | Apache 2.0 | No publicado como checkpoint independiente en la información disponible |
-| Qwen3.5-0.8B sin ajuste | 0,8B | No disponible | 48,1% | No disponible | HuggingFace (modelo base) |
+| Qwen3.5-0.8B sin ajuste | 0,8B | No disponible | 48,1% | No disponible | Hugging Face (modelo base) |
 | Cerebro PPO (maestro) | No aplica (política RL) | No aplica | 100,0% | No disponible | Interno del proyecto |
 
 ## Limitaciones y advertencias
@@ -97,7 +97,7 @@ No se dispone de información sobre modelos comparables de destilación de polí
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-route-v1-link01
+- Hugging Face: https://huggingface.co/TUpreneur/connectailab-rl-tupreneur-route-v1-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

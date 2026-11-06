@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `con-cord/GRPO-MOD2-reward-no-ref` es un fine-tuning de la familia Gemma 3 (según los metadatos de HuggingFace) desarrollado por el usuario `con-cord`. Su nombre indica que ha sido entrenado mediante GRPO (Group Relative Policy Optimization) con una función de recompensa que no utiliza referencia (`reward-no-ref`), una variante de optimización por refuerzo que prescinde de un modelo de recompensa externo. El pipeline declarado es `image-text-to-text`, lo que lo sitúa como un modelo multimodal capaz de procesar imágenes y texto.
+El modelo `con-cord/GRPO-MOD2-reward-no-ref` es un fine-tuning de la familia Gemma 3 (según los metadatos de Hugging Face) desarrollado por el usuario `con-cord`. Su nombre indica que ha sido entrenado mediante GRPO (Group Relative Policy Optimization) con una función de recompensa que no utiliza referencia (`reward-no-ref`), una variante de optimización por refuerzo que prescinde de un modelo de recompensa externo. El pipeline declarado es `image-text-to-text`, lo que lo sitúa como un modelo multimodal capaz de procesar imágenes y texto.
 
 Con 4.300.079.472 parámetros (aproximadamente 4,3 mil millones), se alinea con el tamaño de Gemma 3 4B, aunque no se confirma explícitamente el modelo base. El repositorio ocupa 17,2 GB en formato `safetensors` y está preparado para su uso con `transformers` y `text-generation-inference`. La relevancia de este modelo radica en explorar metodologías de RL sin referencia en un contexto multimodal, un área de investigación activa en 2026. Sin embargo, la model card es genérica y carece de información técnica detallada, por lo que muchas especificaciones permanecen sin documentar.
 
@@ -74,11 +74,11 @@ La comparación es limitada porque el modelo analizado carece de especificacione
 - Limitaciones de contexto e idioma: desconocidas; no se especifica la ventana de contexto ni los idiomas soportados.
 - Restricciones de licencia: la licencia no está disponible, lo que impide determinar si su uso comercial es legal. Esto es un bloqueante para adopción en producción.
 - Caveats para producción: la model card es una plantilla sin rellenar, lo que indica falta de documentación y pruebas. No se recomienda su uso en entornos críticos sin una evaluación exhaustiva.
-- El tag `arxiv:1910.09700` corresponde al paper de Lacoste et al. sobre estimación de emisiones de carbono, incluido en la plantilla de HuggingFace, no a un artículo sobre el modelo.
+- El tag `arxiv:1910.09700` corresponde al paper de Lacoste et al. sobre estimación de emisiones de carbono, incluido en la plantilla de Hugging Face, no a un artículo sobre el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/con-cord/GRPO-MOD2-reward-no-ref
+- Modelo en Hugging Face: https://huggingface.co/con-cord/GRPO-MOD2-reward-no-ref
 - Paper de Lacoste et al. (referencia de la plantilla, no del modelo): https://arxiv.org/abs/1910.09700
 - Repositorio de Qwen3.8-Flash-Next (referencia comparativa): https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Leaderboard de modelos LLM (referencia general): https://llm-stats.com/leaderboards/llm-leaderboard

@@ -83,6 +83,6 @@ no disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shota2811/HackHeritage26-voice-stress-v1
+- Repositorio en Hugging Face: https://huggingface.co/Shota2811/HackHeritage26-voice-stress-v1
 
 No se han encontrado enlaces adicionales relevantes en la búsqueda web.

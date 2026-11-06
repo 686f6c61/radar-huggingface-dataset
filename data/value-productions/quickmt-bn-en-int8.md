@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| quickmt-bn-en-int8 | no disponible | no disponible | bn-en | CC BY 4.0 | CTranslate2 int8 | HuggingFace |
-| quickmt/quickmt-bn-en (original) | no disponible | no disponible | bn-en | CC BY 4.0 | float16 (formato original) | HuggingFace |
+| quickmt-bn-en-int8 | no disponible | no disponible | bn-en | CC BY 4.0 | CTranslate2 int8 | Hugging Face |
+| quickmt/quickmt-bn-en (original) | no disponible | no disponible | bn-en | CC BY 4.0 | float16 (formato original) | Hugging Face |
 | Otros modelos de traducción bn-en | no disponible | no disponible | bn-en | variable | variable | no disponible |
 
 No se dispone de información sobre modelos comparables de la misma categoría (traducción bengalí-inglés) en la documentación proporcionada, por lo que no es posible establecer una comparativa de rendimiento con alternativas como NLLB, IndicTrans2 o MADLAD-400 sin datos verificables.
@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/value-productions/quickmt-bn-en-int8
+- Repositorio Hugging Face: https://huggingface.co/value-productions/quickmt-bn-en-int8
 - Modelo base: https://huggingface.co/quickmt/quickmt-bn-en
 - CTranslate2 (librería de inferencia): no se proporciona enlace en la información disponible
 - Aplicación Yaku Translate: no se proporciona enlace en la información disponible

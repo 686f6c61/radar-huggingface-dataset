@@ -6,7 +6,7 @@ El modelo `Chongshan0Lin/hw1-hc3-detector` es un clasificador binario de texto e
 
 Su relevancia es sobre todo metodológica: sirve como ejemplo reproducible de cómo el fine-tuning de un encoder pequeño mejora drásticamente una línea base de embeddings congelados más regresión logística, pasando de una precisión de 0,8449 a 0,9852 en el split de test de HC3 (4.668 respuestas balanceadas). No obstante, el propio autor advierte en la model card de que se trata de un trabajo de curso sobre un benchmark de 2022 y de que no debe emplearse como detector fiable de texto generado por IA en entornos reales.
 
-El contexto de uso está limitado a inglés y a una ventana máxima de 256 tokens, coherente con la longitud de secuencia del modelo base. La licencia no está declarada en el repositorio, y el modelo registra 0 descargas y 0 *likes* en HuggingFace en el momento de la consulta de metadatos.
+El contexto de uso está limitado a inglés y a una ventana máxima de 256 tokens, coherente con la longitud de secuencia del modelo base. La licencia no está declarada en el repositorio, y el modelo registra 0 descargas y 0 *likes* en Hugging Face en el momento de la consulta de metadatos.
 
 ## Especificaciones tecnicas
 
@@ -66,17 +66,17 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni de ningún otro benc
 - VRAM estimada para inferencia: inferior a 1 GB. Los pesos en fp32 ocupan aproximadamente 91 MB; las activaciones para 256 tokens son mínimas.
 - GPU recomendadas: ninguna en particular; el modelo se entrenó en 1× NVIDIA RTX A6000, pero para inferencia basta una GPU de gama baja o incluso CPU.
 - Cabe en GPU de consumo: sí, en cualquier GPU con más de 1 GB de memoria (por ejemplo, GTX 1050 Ti, RTX 3060, RTX 4090) y también en CPU.
-- Opciones de despliegue: `transformers` (PyTorch), ONNX Runtime, `text-embeddings-inference` (etiqueta declarada por el autor), HuggingFace Inference Endpoints (etiqueta `endpoints_compatible`) y servidores propios con FastAPI. `vLLM` no es la opción natural para un encoder de clasificación de este tamaño; `llama.cpp` y Ollama no aplican al no existir pesos GGUF publicados.
+- Opciones de despliegue: `transformers` (PyTorch), ONNX Runtime, `text-embeddings-inference` (etiqueta declarada por el autor), Hugging Face Inference Endpoints (etiqueta `endpoints_compatible`) y servidores propios con FastAPI. `vLLM` no es la opción natural para un encoder de clasificación de este tamaño; `llama.cpp` y Ollama no aplican al no existir pesos GGUF publicados.
 - Latencia y throughput: no disponibles; no se publican mediciones de inferencia. El único dato de rendimiento conocido es el de entrenamiento: aproximadamente 1,7 minutos por época en una RTX A6000.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Rendimiento (HC3 EN test) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `Chongshan0Lin/hw1-hc3-detector` (este modelo) | 22,7 M | 256 tokens | 0,9852 de exactitud | no disponible | safetensors en HuggingFace |
-| Linea base: `all-MiniLM-L6-v2` congelado + regresion logistica | 22,7 M | 256 tokens | 0,8449 de exactitud | Apache-2.0 (modelo base) | HuggingFace |
-| `Aishkrish/hw1-hc3-detector` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| `Chengwei-Shen/hw1-hc3-detector` | no disponible | no disponible | no disponible | no disponible | HuggingFace |
+| `Chongshan0Lin/hw1-hc3-detector` (este modelo) | 22,7 M | 256 tokens | 0,9852 de exactitud | no disponible | safetensors en Hugging Face |
+| Linea base: `all-MiniLM-L6-v2` congelado + regresion logistica | 22,7 M | 256 tokens | 0,8449 de exactitud | Apache-2.0 (modelo base) | Hugging Face |
+| `Aishkrish/hw1-hc3-detector` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| `Chengwei-Shen/hw1-hc3-detector` | no disponible | no disponible | no disponible | no disponible | Hugging Face |
 
 Los repositorios `Aishkrish/hw1-hc3-detector` y `Chengwei-Shen/hw1-hc3-detector` aparecen en la búsqueda web como variantes del mismo ejercicio, pero no se dispone de sus especificaciones ni de sus resultados. Tampoco se dispone de datos verificables de detectores de propósito general (por ejemplo, los detectores AIGC en chino mencionados en el repositorio `abdullahwaheed2804/AI-detection`), por lo que no se incluyen comparaciones numéricas.
 
@@ -95,7 +95,7 @@ Los repositorios `Aishkrish/hw1-hc3-detector` y `Chengwei-Shen/hw1-hc3-detector`
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Chongshan0Lin/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/Chongshan0Lin/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Revisión del dataset usada en el entrenamiento: `4d0ff18143b5a7e1b1e79beb540c04549d1e59d3`

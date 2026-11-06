@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Huihui-MiniCPM-V-4.6-abliterated es una variante "abliterated" (sin mecanismos de rechazo) del modelo multimodal MiniCPM-V 4.6 de OpenBMB, publicada por el usuario leonasu en HuggingFace. El modelo base MiniCPM-V 4.6 es un modelo de imagen-a-texto (image-text-to-text) de tipo MiniCPM-V, disenado para tareas conversacionales multimodales. La variante abliterated elimina las respuestas de rechazo mediante una tecnica de "abliteration" que modifica los pesos del modelo para suprimir el comportamiento de negativa ante ciertas peticiones.
+Huihui-MiniCPM-V-4.6-abliterated es una variante "abliterated" (sin mecanismos de rechazo) del modelo multimodal MiniCPM-V 4.6 de OpenBMB, publicada por el usuario leonasu en Hugging Face. El modelo base MiniCPM-V 4.6 es un modelo de imagen-a-texto (image-text-to-text) de tipo MiniCPM-V, disenado para tareas conversacionales multimodales. La variante abliterated elimina las respuestas de rechazo mediante una tecnica de "abliteration" que modifica los pesos del modelo para suprimir el comportamiento de negativa ante ciertas peticiones.
 
 El modelo cuenta con aproximadamente 1.300 millones de parametros (1.300.428.016 segun los pesos en safetensors), lo que lo situa en la categoria de modelos pequenos y eficientes para despliegue en hardware modesto. El repositorio ocupa 2.6 GB y los pesos estan en formato safetensors. La licencia declarada es Apache 2.0.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leonasu/Huihui-MiniCPM-V-4.6-abliterated
+- Hugging Face: https://huggingface.co/leonasu/Huihui-MiniCPM-V-4.6-abliterated
 - Modelo base: https://huggingface.co/openbmb/MiniCPM-V-4.6
 - Repositorio de la tecnica de abliteration: https://github.com/Sumandora/remove-refusals-with-transformers
 - Model card original referenciada: https://huggingface.co/huihui-ai/Huihui-MiniCPM-V-4.6-abliterated

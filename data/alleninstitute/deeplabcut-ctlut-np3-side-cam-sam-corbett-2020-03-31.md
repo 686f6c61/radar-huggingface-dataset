@@ -75,7 +75,7 @@ No se dispone de modelos comparables específicos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AllenInstitute/deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31
+- Modelo en Hugging Face: https://huggingface.co/AllenInstitute/deeplabcut-ctlut-np3-side-cam-sam-corbett-2020-03-31
 - Repositorio oficial de DeepLabCut: https://github.com/DeepLabCut/DeepLabCut
 - Documentación de DeepLabCut (bienvenida): https://deeplabcut.github.io/DeepLabCut/README.html
 - Guía de usuario de DeepLabCut (incluye seguimiento condicional top-down): https://deeplabcut.github.io/DeepLabCut/docs/main-workflows/user-guide.html

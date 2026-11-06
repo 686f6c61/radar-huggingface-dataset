@@ -86,8 +86,8 @@ No se dispone de datos de benchmarks comparativos con otros modelos de la misma 
 
 ## Enlaces
 
-- HuggingFace del bundle: https://huggingface.co/aether-models/granite-4.0-1b
-- Modelo base en HuggingFace: https://huggingface.co/ibm-granite/granite-4.0-1b
+- Hugging Face del bundle: https://huggingface.co/aether-models/granite-4.0-1b
+- Modelo base en Hugging Face: https://huggingface.co/ibm-granite/granite-4.0-1b
 - Documentacion de Granite 4.0 de IBM: https://www.ibm.com/granite/docs/models/granite4-0
 - Pagina de la familia Granite: https://www.ibm.com/granite
 - Ficha de Granite-4.0-1B en AIBase: https://model.aibase.com/models/details/1985515404826775552

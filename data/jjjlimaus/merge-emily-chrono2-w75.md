@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jjjlimaus/merge-emily-chrono2-w75` es un modelo de generación de texto de 2.018 millones de parámetros (aproximadamente 2B), publicado por el usuario jjjlimaus en HuggingFace. Se trata de un merge de modelos, como indica su nombre y las etiquetas asociadas (`model-merge`, `sn38-nanochrono`, `bittensor`), aunque no se dispone de documentación oficial que detalle los componentes originales ni el proceso de fusión. El repositorio está marcado con acceso restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace para poder descargarlo.
+El modelo `jjjlimaus/merge-emily-chrono2-w75` es un modelo de generación de texto de 2.018 millones de parámetros (aproximadamente 2B), publicado por el usuario jjjlimaus en Hugging Face. Se trata de un merge de modelos, como indica su nombre y las etiquetas asociadas (`model-merge`, `sn38-nanochrono`, `bittensor`), aunque no se dispone de documentación oficial que detalle los componentes originales ni el proceso de fusión. El repositorio está marcado con acceso restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face para poder descargarlo.
 
 El modelo se distribuye en formato `safetensors` y es compatible con la librería `transformers`. Su licencia es Apache 2.0, lo que permite uso comercial y modificación con atribución. A pesar de su tamaño relativamente pequeño (2B), no se han publicado especificaciones técnicas detalladas, benchmarks ni información sobre su entrenamiento, lo que limita su evaluación objetiva. La fecha de creación (agosto de 2026) sugiere que es un modelo reciente, pero su adopción es nula (0 descargas, 0 likes) y no hay evidencia de uso en la comunidad.
 
@@ -25,7 +25,7 @@ No se ha publicado información sobre la arquitectura interna del modelo (tipo d
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades específicas del modelo. Dado que es un modelo de generación de texto de 2B parámetros, es razonable esperar que pueda realizar tareas básicas de lenguaje natural, pero no hay evidencia de soporte para tool calling, agentes, razonamiento multi-paso, visión o audio. Las etiquetas `text-generation` y `endpoints_compatible` indican que está diseñado para generación de texto y puede desplegarse en endpoints de HuggingFace, pero no se detallan funcionalidades adicionales.
+No se dispone de información verificada sobre las capacidades específicas del modelo. Dado que es un modelo de generación de texto de 2B parámetros, es razonable esperar que pueda realizar tareas básicas de lenguaje natural, pero no hay evidencia de soporte para tool calling, agentes, razonamiento multi-paso, visión o audio. Las etiquetas `text-generation` y `endpoints_compatible` indican que está diseñado para generación de texto y puede desplegarse en endpoints de Hugging Face, pero no se detallan funcionalidades adicionales.
 
 ## Casos de uso
 
@@ -52,7 +52,7 @@ No se han publicado requisitos oficiales de hardware. Como estimación orientati
 - Con cuantización a 8 bits: alrededor de 2-3 GB; a 4 bits: 1-2 GB.
 - GPU recomendadas: tarjetas con al menos 6 GB de VRAM para FP16 (p. ej., RTX 2060, RTX 3060, T4). Para cuantización, GPUs con 4 GB pueden ser suficientes.
 - Es posible ejecutarlo en CPU con llama.cpp u Ollama, aunque la latencia será mayor.
-- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, o el endpoint de HuggingFace (dado que es `endpoints_compatible`).
+- Opciones de despliegue: vLLM, TGI, llama.cpp, Ollama, o el endpoint de Hugging Face (dado que es `endpoints_compatible`).
 - Latencia y throughput: no disponibles; dependerán del hardware y la cuantización.
 
 ## Comparativa con modelos similares
@@ -62,7 +62,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 ## Limitaciones y advertencias
 
 - No hay documentación técnica: se desconoce la arquitectura, los datos de entrenamiento y las capacidades reales, lo que impide una evaluación rigurosa.
-- Acceso restringido: requiere aceptar condiciones en HuggingFace, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: requiere aceptar condiciones en Hugging Face, lo que puede limitar su uso en entornos automatizados.
 - Sin benchmarks: no se puede verificar su rendimiento en tareas estándar; existe riesgo de alucinación y errores no cuantificados.
 - Posibles sesgos: al ser un merge de modelos no documentados, puede heredar sesgos de los componentes originales, pero no se pueden identificar sin información.
 - Tamaño reducido: con 2B parámetros, su capacidad de razonamiento complejo y generación de código avanzado es limitada en comparación con modelos más grandes.
@@ -71,7 +71,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jjjlimaus/merge-emily-chrono2-w75
+- Repositorio en Hugging Face: https://huggingface.co/jjjlimaus/merge-emily-chrono2-w75
 - Perfil del autor: https://huggingface.co/jjjlimaus
 - Lista de modelos del autor: https://huggingface.co/jjjlimaus/models
 - Referencia a Chronos (posible relación, no confirmada): https://github.com/amazon-science/chronos-forecasting

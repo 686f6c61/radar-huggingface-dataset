@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`mazenDDr/receipt-vlm-qwen2.5-vl-3b-lora` es un adaptador LoRA publicado en HuggingFace sobre el modelo multimodal `Qwen/Qwen2.5-VL-3B-Instruct`. Por el identificador del repositorio ("receipt-vlm"), el ajuste fino esta orientado a la comprension de recibos y documentacion de compra (extraccion de campos, transcripcion de tickets, posiblemente conversion a JSON estructurado), pero el autor no documenta este extremo en ninguna parte. Se trata de un artefacto experimental de un unico autor, sin descargas ni interacciones registradas y con un repositorio de apenas 0,1 GB, lo que es consistente con un adaptador de bajo rango (los pesos del modelo base no se incluyen, solo los del adaptador).
+`mazenDDr/receipt-vlm-qwen2.5-vl-3b-lora` es un adaptador LoRA publicado en Hugging Face sobre el modelo multimodal `Qwen/Qwen2.5-VL-3B-Instruct`. Por el identificador del repositorio ("receipt-vlm"), el ajuste fino esta orientado a la comprension de recibos y documentacion de compra (extraccion de campos, transcripcion de tickets, posiblemente conversion a JSON estructurado), pero el autor no documenta este extremo en ninguna parte. Se trata de un artefacto experimental de un unico autor, sin descargas ni interacciones registradas y con un repositorio de apenas 0,1 GB, lo que es consistente con un adaptador de bajo rango (los pesos del modelo base no se incluyen, solo los del adaptador).
 
-La relevancia de esta ficha es doble. Por un lado, el modelo base es interesante: Qwen2.5-VL-3B-Instruct es un VLM compacto de la familia Qwen2.5-VL, con encoder visual tipo ViT y un decodificador transformer, pensado para tareas de vision-lenguaje en hardware modesto. Por otro lado, este adaptador concreto es un ejemplo de "repositorio plantilla": su model card es la plantilla por defecto de HuggingFace sin rellenar, con todos los campos marcados como "[More Information Needed]", y sin licencia, idiomas ni datos de entrenamiento declarados.
+La relevancia de esta ficha es doble. Por un lado, el modelo base es interesante: Qwen2.5-VL-3B-Instruct es un VLM compacto de la familia Qwen2.5-VL, con encoder visual tipo ViT y un decodificador transformer, pensado para tareas de vision-lenguaje en hardware modesto. Por otro lado, este adaptador concreto es un ejemplo de "repositorio plantilla": su model card es la plantilla por defecto de Hugging Face sin rellenar, con todos los campos marcados como "[More Information Needed]", y sin licencia, idiomas ni datos de entrenamiento declarados.
 
 Por tanto, esta ficha debe leerse como una evaluacion de un artefacto sin documentacion verificable. Todo lo relativo a datos de entrenamiento, hiperparametros, evaluacion y licencia del adaptador figura como "no disponible", y las especificaciones que si se indican provienen del modelo base o de los metadatos del repositorio, indicando en cada caso su procedencia.
 
@@ -28,14 +28,14 @@ Por tanto, esta ficha debe leerse como una evaluacion de un artefacto sin docume
 | Version de framework indicada | PEFT 0.19.1 |
 | Tamano del repositorio | 0,1 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion registrada | 16 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de creacion registrada | 16 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Ultima actualizacion registrada | 16 de septiembre de 2026 |
 
 ## Arquitectura y entrenamiento
 
 El objeto publicado es un adaptador LoRA, es decir, un conjunto de matrices de bajo rango que se suman a determinadas proyecciones del modelo base durante la inferencia. No se especifica el rango (r), el valor de alpha, el dropout, las capas objetivo ni si se entreno tambien alguna proyeccion del encoder de vision. La unica pista tecnica es la version de framework declarada (PEFT 0.19.1) y el tag `lora`. Al ser un adaptador, la arquitectura efectiva en tiempo de inferencia es la del modelo base: `Qwen2.5-VL-3B-Instruct`, un VLM de la familia Qwen2.5-VL que combina un encoder visual con un decodificador de lenguaje y admite entradas de imagen y texto.
 
-No hay absolutamente ningun dato sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se uso un corpus publico de recibos (por ejemplo, tipos SROIE, CORD o similar), ni si hubo generacion sintetica, ni hiperparametros (learning rate, epocas, precision), ni tecnicas de alineamiento adicional como SFT, DPO o RLHF. Tampoco se documenta el hardware utilizado, el coste de computo ni la huella de carbono. La model card es la plantilla estandar de HuggingFace sin rellenar, con marcadores "[More Information Needed]" en todas las secciones (Model Details, Training Details, Evaluation, Bias/Risks, Citation, etcetera).
+No hay absolutamente ningun dato sobre el proceso de entrenamiento: ni numero de tokens, ni composicion del dataset, ni si se uso un corpus publico de recibos (por ejemplo, tipos SROIE, CORD o similar), ni si hubo generacion sintetica, ni hiperparametros (learning rate, epocas, precision), ni tecnicas de alineamiento adicional como SFT, DPO o RLHF. Tampoco se documenta el hardware utilizado, el coste de computo ni la huella de carbono. La model card es la plantilla estandar de Hugging Face sin rellenar, con marcadores "[More Information Needed]" en todas las secciones (Model Details, Training Details, Evaluation, Bias/Risks, Citation, etcetera).
 
 En consecuencia, no es posible reproducir el ajuste ni auditar que datos vieron los pesos del adaptador. Cualquier uso en produccion deberia tratar este artefacto como no verificado y validarlo empiricamente sobre un conjunto de recibos propio antes de desplegarlo.
 
@@ -107,8 +107,8 @@ No se dispone de datos de rendimiento comparativo entre estas opciones, porque n
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-lora
-- Modelo base en HuggingFace: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-lora
+- Modelo base en Hugging Face: https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct
 - Paper citado en los tags del repositorio (Lacoste et al., 2019, sobre estimacion de emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto asociada al paper: https://mlco2.github.io/impact
 - Documentacion de PEFT (libreria declarada, version 0.19.1): https://huggingface.co/docs/peft

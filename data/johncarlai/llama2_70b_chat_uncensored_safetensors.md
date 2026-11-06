@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JohnCarlAI/llama2_70b_chat_uncensored_Safetensors` es un repositorio de HuggingFace que, según sus metadatos, se presenta como un fine-tuning de `meta-llama/Llama-3.3-70B-Instruct`, el modelo denso de 70 000 millones de parámetros publicado por Meta en diciembre de 2024. El nombre del repositorio es engañoso: hace referencia a "llama2" cuando el modelo base declarado es Llama 3.3, y añade los calificativos "chat" y "uncensored", habituales en la comunidad de fine-tunings orientados a eliminar restricciones de alineamiento.
+`JohnCarlAI/llama2_70b_chat_uncensored_Safetensors` es un repositorio de Hugging Face que, según sus metadatos, se presenta como un fine-tuning de `meta-llama/Llama-3.3-70B-Instruct`, el modelo denso de 70 000 millones de parámetros publicado por Meta en diciembre de 2024. El nombre del repositorio es engañoso: hace referencia a "llama2" cuando el modelo base declarado es Llama 3.3, y añade los calificativos "chat" y "uncensored", habituales en la comunidad de fine-tunings orientados a eliminar restricciones de alineamiento.
 
 La relevancia práctica de este repositorio es, a fecha de la información disponible, prácticamente nula. El tamaño del repositorio es de 0,0 GB, no registra descargas ni "likes", no incluye pipeline declarado y la model card se limita a dos líneas de frontmatter YAML con la licencia y el modelo base, sin documentación técnica, datos de entrenamiento ni ejemplos de uso. No hay evidencia de que se hayan subido pesos, tokenizador o configuración.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
 | JohnCarlAI/llama2_70b_chat_uncensored_Safetensors | No disponible (base declarada 70B) | No disponible (base declarada 128k) | Apache-2.0 | Repo vacío (0,0 GB), 0 descargas | Sin model card técnica ni pesos |
-| meta-llama/Llama-3.3-70B-Instruct | 70B denso | 128 000 tokens | Llama 3.3 Community License | Pesos públicos en HuggingFace | Modelo base declarado; alineado con SFT y RLHF |
+| meta-llama/Llama-3.3-70B-Instruct | 70B denso | 128 000 tokens | Llama 3.3 Community License | Pesos públicos en Hugging Face | Modelo base declarado; alineado con SFT y RLHF |
 | Qwen2.5-72B-Instruct | 72B denso | 131 072 tokens | Apache-2.0 (con condiciones) | Pesos públicos | Alternativa densa de tamaño similar, licencia permisiva |
 | Mistral-Large-Instruct-2411 | 123B denso | 128 000 tokens | Mistral Research License (no comercial sin acuerdo) | Pesos públicos con restricciones | Mayor tamaño y coste de inferencia |
 
@@ -79,6 +79,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/JohnCarlAI/llama2_70b_chat_uncensored_Safetensors
+- Repositorio en Hugging Face: https://huggingface.co/JohnCarlAI/llama2_70b_chat_uncensored_Safetensors
 - Modelo base declarado: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados a este fine-tuning en la información disponible.

@@ -84,7 +84,7 @@ Nota: los datos de los modelos comparados distintos del ficha no están publicad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rax4901/Huihui-Qwen3.8-27B-abliterated-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/rax4901/Huihui-Qwen3.8-27B-abliterated-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio original de huihui-ai (referenciado): https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF
 - unsloth/Qwen3.8-27B-GGUF: https://huggingface.co/unsloth/Qwen3.8-27B-GGUF

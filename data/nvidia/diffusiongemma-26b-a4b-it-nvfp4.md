@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| nvidia/diffusiongemma-26B-A4B-it-NVFP4 | 25,2B (14,4B en safetensors NVFP4) | 3,8B | 256K | NVFP4 (4 bits) | Apache 2.0 + terminos Gemma | HuggingFace, via NVIDIA |
-| google/diffusiongemma-26B-A4B-it (modelo base) | 25,2B | 3,8B | 256K | Sin cuantizar (FP original) | Apache 2.0 + terminos Gemma | HuggingFace, via Google |
+| nvidia/diffusiongemma-26B-A4B-it-NVFP4 | 25,2B (14,4B en safetensors NVFP4) | 3,8B | 256K | NVFP4 (4 bits) | Apache 2.0 + terminos Gemma | Hugging Face, via NVIDIA |
+| google/diffusiongemma-26B-A4B-it (modelo base) | 25,2B | 3,8B | 256K | Sin cuantizar (FP original) | Apache 2.0 + terminos Gemma | Hugging Face, via Google |
 
 No se dispone de informacion suficiente sobre otros modelos comparables de la misma categoria (MoE multimodal con decodificacion por difusion) en el material proporcionado; la comparativa se limita por tanto al modelo base original y a esta version cuantizada.
 
@@ -92,8 +92,8 @@ No se dispone de informacion suficiente sobre otros modelos comparables de la mi
 
 ## Enlaces
 
-- HuggingFace (esta version cuantizada): https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4
-- Modelo base en HuggingFace: https://huggingface.co/google/diffusiongemma-26B-A4B-it
+- Hugging Face (esta version cuantizada): https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/google/diffusiongemma-26B-A4B-it
 - NVIDIA Model Optimizer (herramienta de cuantizacion): https://github.com/NVIDIA/Model-Optimizer
 - Licencia Apache 2.0 del repositorio: https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4/blob/main/apache_2.0_license.md
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnalisisSentimen es un modelo de la familia BERT publicado en HuggingFace por el usuario SuperUcup bajo licencia MIT. Con 124.442.882 parametros en formato safetensors, su tamaño corresponde a una variante BERT-base (aproximadamente 110 millones de parametros en el cuerpo mas una cabeza de clasificacion), lo que lo situa en la categoria de modelos encoder pequeños orientados a tareas de comprension del lenguaje. El nombre del repositorio sugiere un uso previsto de analisis de sentimiento, aunque la model card publicada no incluye ninguna descripcion funcional, datos de entrenamiento ni metricas.
+AnalisisSentimen es un modelo de la familia BERT publicado en Hugging Face por el usuario SuperUcup bajo licencia MIT. Con 124.442.882 parametros en formato safetensors, su tamaño corresponde a una variante BERT-base (aproximadamente 110 millones de parametros en el cuerpo mas una cabeza de clasificacion), lo que lo situa en la categoria de modelos encoder pequeños orientados a tareas de comprension del lenguaje. El nombre del repositorio sugiere un uso previsto de analisis de sentimiento, aunque la model card publicada no incluye ninguna descripcion funcional, datos de entrenamiento ni metricas.
 
 La relevancia de este modelo es limitada en el momento actual: registra cero descargas y cero likes, no declara pipeline ni idiomas soportados, y la unica documentacion disponible es el campo de licencia. Se trata, por tanto, de un artefacto sin validacion publica ni informacion tecnica verificable mas alla de la arquitectura declarada (bert) y el recuento de parametros extraido de los pesos.
 
@@ -82,5 +82,5 @@ La comparacion se basa en el tamaño y la arquitectura declarada; no hay datos d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SuperUcup/AnalisisSentimen
+- Hugging Face: https://huggingface.co/SuperUcup/AnalisisSentimen
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

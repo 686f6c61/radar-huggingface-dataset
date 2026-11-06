@@ -88,7 +88,7 @@ No disponible. La información proporcionada no incluye comparativas con otros m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated
+- Hugging Face: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated
 - Modelo base: https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Abliterated
 - Licencia: https://www.liquid.ai/community-license
 - La búsqueda web realizada no ha devuelto enlaces relevantes sobre este modelo (los resultados obtenidos no guardan relación con el mismo); no se dispone de papers, blogs, repositorios ni demos adicionales verificables.

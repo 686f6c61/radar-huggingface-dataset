@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `SAD123EDSA/MyAwesomeModel-TestRepo` aloja un modelo denominado "MyAwesomeModel" que, según su identificador, parece ser un repositorio de prueba (TestRepo) sin contenido real: el tamaño del repositorio es de 0.0 GB, no registra descargas ni likes, y fue creado y actualizado el mismo día (17 de agosto de 2026). Los metadatos de HuggingFace indican que se trata de un modelo de la librería `transformers` con pipeline de `feature-extraction`, etiquetado como BERT y con licencia MIT, pero no se incluyen pesos, configuración ni archivos de modelo en el repositorio.
+El repositorio `SAD123EDSA/MyAwesomeModel-TestRepo` aloja un modelo denominado "MyAwesomeModel" que, según su identificador, parece ser un repositorio de prueba (TestRepo) sin contenido real: el tamaño del repositorio es de 0.0 GB, no registra descargas ni likes, y fue creado y actualizado el mismo día (17 de agosto de 2026). Los metadatos de Hugging Face indican que se trata de un modelo de la librería `transformers` con pipeline de `feature-extraction`, etiquetado como BERT y con licencia MIT, pero no se incluyen pesos, configuración ni archivos de modelo en el repositorio.
 
 La model card incluida describe un modelo con capacidades avanzadas de razonamiento, mejora en benchmarks y soporte para function calling, pero estos datos son afirmaciones del autor sin respaldo verificable, ya que no hay artefactos publicados. En consecuencia, esta ficha se limita a reflejar la información disponible y marca explícitamente los datos ausentes como "no disponible". No se recomienda utilizar este repositorio para ninguna tarea práctica.
 
@@ -21,7 +21,7 @@ La model card incluida describe un modelo con capacidades avanzadas de razonamie
 
 ## Arquitectura y entrenamiento
 
-No se dispone de informacion tecnica verificable. Los metadatos de HuggingFace incluyen las etiquetas `bert`, `pytorch` y `transformers`, lo que sugiere una arquitectura de tipo transformer encoder, pero no hay ningun archivo de configuracion, checkpoint o documentacion tecnica en el repositorio que lo confirme. La model card menciona una "actualizacion significativa" con mejoras en razonamiento y una reduccion de la tasa de alucinacion, asi como un aumento en el uso de tokens de razonamiento (de 12K a 23K tokens por pregunta en el conjunto AIME 2025), pero estos datos carecen de cualquier respaldo experimental publico. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
+No se dispone de informacion tecnica verificable. Los metadatos de Hugging Face incluyen las etiquetas `bert`, `pytorch` y `transformers`, lo que sugiere una arquitectura de tipo transformer encoder, pero no hay ningun archivo de configuracion, checkpoint o documentacion tecnica en el repositorio que lo confirme. La model card menciona una "actualizacion significativa" con mejoras en razonamiento y una reduccion de la tasa de alucinacion, asi como un aumento en el uso de tokens de razonamiento (de 12K a 23K tokens por pregunta en el conjunto AIME 2025), pero estos datos carecen de cualquier respaldo experimental publico. Tampoco se indica el numero de tokens de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas como RLHF o DPO.
 
 ## Capacidades
 
@@ -40,7 +40,7 @@ Sin embargo, al no existir pesos ni demos funcionales, estas capacidades no pued
 
 No es posible proponer casos de uso concretos porque el repositorio no contiene un modelo ejecutable. Las unicas aplicaciones que se podrian considerar serian:
 
-- Pruebas de integracion con la API de HuggingFace, dado que el repositorio tiene la etiqueta `endpoints_compatible`.
+- Pruebas de integracion con la API de Hugging Face, dado que el repositorio tiene la etiqueta `endpoints_compatible`.
 - Evaluacion de la plantilla de model card como ejemplo de documentacion.
 - Verificacion de metadatos y pipelines en un entorno de desarrollo.
 
@@ -68,5 +68,5 @@ No disponible. No se puede comparar este modelo con alternativas como BERT, Llam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SAD123EDSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/SAD123EDSA/MyAwesomeModel-TestRepo
 - No se han encontrado otros enlaces relevantes (papers, repositorios de codigo, demos) en la busqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70 es una cuantizacion de pesos publicada en HuggingFace por el usuario Lets-Fafo a partir del modelo base Qwen/Qwen3.8-27B. Se trata de un checkpoint de 27.781.427.952 parametros (unos 27,8 mil millones) almacenado en formato safetensors con el esquema compressed-tensors en int4 para los pesos y 16 bits para las activaciones (W4A16), con tamano de grupo 32 (G32). El repositorio ocupa 20,6 GB, lo que es coherente con un modelo denso de ese tamano cuantizado a 4 bits junto con sus escalas y metadatos.
+Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70 es una cuantizacion de pesos publicada en Hugging Face por el usuario Lets-Fafo a partir del modelo base Qwen/Qwen3.8-27B. Se trata de un checkpoint de 27.781.427.952 parametros (unos 27,8 mil millones) almacenado en formato safetensors con el esquema compressed-tensors en int4 para los pesos y 16 bits para las activaciones (W4A16), con tamano de grupo 32 (G32). El repositorio ocupa 20,6 GB, lo que es coherente con un modelo denso de ese tamano cuantizado a 4 bits junto con sus escalas y metadatos.
 
 El pipeline declarado es image-text-to-text y las etiquetas incluyen conversational, image-text-to-text, vllm, intel, xpu y arc-pro-b70. Esto indica que el artefacto esta pensado para servirse con vLLM sobre hardware Intel, en concreto la GPU Intel Arc Pro B70, y que el modelo base tiene capacidades multimodales de entrada de imagen y texto. La ficha no publica sin embargo especificaciones de contexto, idiomas soportados ni resultados de evaluacion.
 
@@ -25,7 +25,7 @@ Su relevancia es practica: reduce un modelo de ~27,8 B de parametros a un tamano
 | Pipeline declarado | image-text-to-text |
 | Libreria de inferencia | vLLM |
 | Hardware objetivo (etiquetas) | Intel XPU, Intel Arc Pro B70 |
-| Acceso | restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de creacion | 2026-10-11 |
 | Ultima actualizacion | 2026-10-11 |
 
@@ -58,7 +58,7 @@ Lo que si esta documentado es el proceso de cuantizacion: el checkpoint se distr
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye tablas de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y las busquedas web realizadas no devolvieron informacion tecnica sobre este modelo (los resultados obtenidos tratan sobre el uso gramatical de "lets" y "let's" en ingles y no guardan relacion con el artefacto). Tampoco se dispone de mediciones de latencia o throughput.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye tablas de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, y las busquedas web realizadas no devolvieron informacion tecnica sobre este modelo (los resultados obtenidos tratan sobre el uso gramatical de "lets" y "let's" en ingles y no guardan relacion con el artefacto). Tampoco se dispone de mediciones de latencia o throughput.
 
 ## Requisitos de hardware
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento comparado ni de fichas equivalentes verifi
 ## Limitaciones y advertencias
 
 - Sin validacion de la comunidad: el repositorio registra 0 descargas y 0 valoraciones, por lo que no existe evidencia publica de que el checkpoint funcione correctamente ni de su fidelidad respecto al modelo base.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargar el modelo, lo que anade friccion a cualquier integracion automatizada.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargar el modelo, lo que anade friccion a cualquier integracion automatizada.
 - Perdida de precision por cuantizacion: el paso a int4 en pesos con grupo 32 degrada la calidad de salida respecto al modelo en bf16, de forma especialmente sensible en tareas de razonamiento, matematicas y generacion de codigo. No se han publicado mediciones de esa degradacion.
 - Ausencia total de benchmarks: no hay datos verificables de MMLU, HumanEval, GSM8K ni de evaluaciones multimodales, ni del propio autor ni de terceros.
 - Idiomas y contexto desconocidos: la ficha no declara idiomas soportados ni longitud de contexto, por lo que no se puede garantizar un comportamiento adecuado en castellano ni dimensionar aplicaciones que dependan de ventanas largas.
@@ -94,7 +94,7 @@ No se dispone de datos de rendimiento comparado ni de fichas equivalentes verifi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70
+- Modelo en Hugging Face: https://huggingface.co/Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.8-27B
 - Documentacion de vLLM (libreria de inferencia declarada): https://docs.vllm.ai
 - Repositorio de compressed-tensors (formato de cuantizacion del checkpoint): https://github.com/neural-compressor/compressed-tensors

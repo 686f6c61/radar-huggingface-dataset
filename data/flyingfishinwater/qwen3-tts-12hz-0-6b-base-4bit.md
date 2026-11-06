@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden de su documentacion publica habitual y deben verificarse antes de tomar decisiones; los del modelo analizado proceden del repositorio de HuggingFace.
+Los datos de los modelos alternativos proceden de su documentacion publica habitual y deben verificarse antes de tomar decisiones; los del modelo analizado proceden del repositorio de Hugging Face.
 
 | Modelo | Parametros | Clonacion de voz | Licencia | Formatos / plataformas | Notas |
 |---|---|---|---|---|---|
@@ -90,9 +90,9 @@ La comparacion cuantitativa de calidad (MOS, similitud de hablante) no esta disp
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/flyingfishinwater/Qwen3-TTS-12Hz-0.6B-Base-4bit
+- Repositorio en Hugging Face: https://huggingface.co/flyingfishinwater/Qwen3-TTS-12Hz-0.6B-Base-4bit
 - Modelo base citado en la model card: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-0.6B-Base
 - Repositorio de la conversion original mencionada: https://huggingface.co/mlx-community/Qwen3-TTS-12Hz-0.6B-Base-4bit
 - Libreria de inferencia: `mlx-audio` (instalable con `pip install -U mlx-audio`); no se ha encontrado en la busqueda web la URL de su repositorio.
 
-Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo, su modelo base ni su libreria; los unicos enlaces verificables son los de HuggingFace indicados arriba.
+Nota: la busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo, su modelo base ni su libreria; los unicos enlaces verificables son los de Hugging Face indicados arriba.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio SOTAagi2030/MuseumNight-Dependency-Bundle no es un modelo de lenguaje: es un paquete de dependencias publicado en HuggingFace bajo el identificador interno «museum-night-2026.09». Su model card se limita a un manifiesto de metadatos que declara un runtime denominado «museum-edge-v3», dos raices («gallery-guide» y «exit-router»), cinco componentes y un total de 90 bytes. No se describe ninguna arquitectura neuronal, ningun conjunto de pesos ni ningun proceso de entrenamiento.
+El repositorio SOTAagi2030/MuseumNight-Dependency-Bundle no es un modelo de lenguaje: es un paquete de dependencias publicado en Hugging Face bajo el identificador interno «museum-night-2026.09». Su model card se limita a un manifiesto de metadatos que declara un runtime denominado «museum-edge-v3», dos raices («gallery-guide» y «exit-router»), cinco componentes y un total de 90 bytes. No se describe ninguna arquitectura neuronal, ningun conjunto de pesos ni ningun proceso de entrenamiento.
 
 El repositorio tiene un tamano declarado de 0,0 GB, cero descargas y cero likes, y no incluye pipeline, idiomas ni formatos de pesos. Los unicos datos tecnicos verificables son los del manifiesto: licencia BSD-3-Clause, fecha de corte de revision 2026-09-15 y un orden de resolucion de dependencias «dependency-first, lexicographic-ready-tie».
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Comparativa con modelos similares
 
-No disponible. Este repositorio no es un modelo y no existe informacion suficiente para establecer comparaciones de parametros, contexto, rendimiento o licencia con alternativas. Los resultados de busqueda web proporcionados (paginas de SOTAagi2030 en HuggingFace, Claude, Google Gemini y THEJO Ai) no aportan datos tecnicos sobre este artefacto ni sobre modelos equivalentes de la misma categoria.
+No disponible. Este repositorio no es un modelo y no existe informacion suficiente para establecer comparaciones de parametros, contexto, rendimiento o licencia con alternativas. Los resultados de busqueda web proporcionados (paginas de SOTAagi2030 en Hugging Face, Claude, Google Gemini y THEJO Ai) no aportan datos tecnicos sobre este artefacto ni sobre modelos equivalentes de la misma categoria.
 
 | Criterio | MuseumNight-Dependency-Bundle | Alternativa comparable |
 |---|---|---|
@@ -102,9 +102,9 @@ No disponible. Este repositorio no es un modelo y no existe informacion suficien
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SOTAagi2030/MuseumNight-Dependency-Bundle
+- Repositorio en Hugging Face: https://huggingface.co/SOTAagi2030/MuseumNight-Dependency-Bundle
 - Pagina de modelos del autor: https://huggingface.co/SOTAagi2030/models
-- Perfil del autor en HuggingFace: https://huggingface.co/SOTAagi2030
+- Perfil del autor en Hugging Face: https://huggingface.co/SOTAagi2030
 - Referencia externa sin relacion con el artefacto, mencionada en los resultados de busqueda: https://claude.com/
 - Referencia externa sin relacion con el artefacto, mencionada en los resultados de busqueda: https://gemini.google.com/
 - Referencia externa sin relacion con el artefacto, mencionada en los resultados de busqueda: https://thejoai.com/ai-tools/sota-model/

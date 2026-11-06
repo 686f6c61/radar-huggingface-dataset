@@ -2,11 +2,11 @@
 
 ## Resumen
 
-ViGAR es un repositorio de modelo publicado en HuggingFace por el grupo DAGroup-PKU bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se ha publicado model card con descripcion funcional, no consta pipeline declarado, no se listan idiomas soportados y no hay resultados de evaluacion asociados. El repositorio acumula cero descargas y cero likes, y las fechas de creacion y ultima actualizacion son identicas, lo que apunta a una publicacion reciente o a un placeholder sin contenido tecnico publicado.
+ViGAR es un repositorio de modelo publicado en Hugging Face por el grupo DAGroup-PKU bajo licencia MIT. En el momento de redactar esta ficha, la informacion publica disponible es minima: no se ha publicado model card con descripcion funcional, no consta pipeline declarado, no se listan idiomas soportados y no hay resultados de evaluacion asociados. El repositorio acumula cero descargas y cero likes, y las fechas de creacion y ultima actualizacion son identicas, lo que apunta a una publicacion reciente o a un placeholder sin contenido tecnico publicado.
 
 Por tanto, no es posible confirmar que es exactamente ViGAR (modelo de lenguaje, modelo multimodal, sistema de recuperacion, modelo de vision, etc.), ni su arquitectura, ni su numero de parametros, ni su longitud de contexto. Cualquier afirmacion sobre capacidades, tamano o rendimiento seria especulativa y no debe tomarse como base para una decision de adopcion.
 
-La relevancia practica de esta ficha es, por ahora, limitada: sirve como registro del estado de la publicacion y como lista de comprobacion de los datos que faltan antes de poder evaluar el modelo en un entorno de produccion. Se recomienda revisar el repositorio de HuggingFace periodicamente por si el autor completa la model card con especificaciones, paper asociado o pesos.
+La relevancia practica de esta ficha es, por ahora, limitada: sirve como registro del estado de la publicacion y como lista de comprobacion de los datos que faltan antes de poder evaluar el modelo en un entorno de produccion. Se recomienda revisar el repositorio de Hugging Face periodicamente por si el autor completa la model card con especificaciones, paper asociado o pesos.
 
 ## Especificaciones tecnicas
 
@@ -84,7 +84,7 @@ No disponible. No se puede determinar la categoria del modelo ni identificar alt
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/DAGroup-PKU/ViGAR
+- Hugging Face: https://huggingface.co/DAGroup-PKU/ViGAR
 - Paper: no disponible
 - Repositorio de codigo: no disponible
 - Blog o anuncio: no disponible

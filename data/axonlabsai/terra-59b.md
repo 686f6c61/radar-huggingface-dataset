@@ -76,5 +76,5 @@ Nota: los datos de DeepSeek-V3 son de conocimiento general, no de la informació
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axonlabsai/Terra-59B
+- Modelo en Hugging Face: https://huggingface.co/axonlabsai/Terra-59B
 - Modelo base (JoyAI-LLM-Flash): https://huggingface.co/jdopensource/JoyAI-LLM-Flash

@@ -80,7 +80,7 @@ No se dispone de datos suficientes para una comparativa detallada con otros VLA 
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/lerobot/cosmos3-nano
+- Ficha en Hugging Face: https://huggingface.co/lerobot/cosmos3-nano
 - Checkpoint original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Nano/tree/e59a53c25979a090fa8706c9acc0c254a6e89b92
 - Model card original de NVIDIA: https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/README.md
 - Nota de seguridad upstream: https://huggingface.co/nvidia/Cosmos3-Nano/blob/e59a53c25979a090fa8706c9acc0c254a6e89b92/SAFETY.md

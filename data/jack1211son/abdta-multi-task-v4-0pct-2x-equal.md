@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`abdta-multi-task-v4-0pct-2x-equal` es un modelo de clasificación de texto multi-tarea desarrollado por el usuario de HuggingFace `jack1211son`, afinado a partir de `microsoft/deberta-v3-large`. Resuelve dos tareas simultáneas sobre narrativas de informes anuales de empresas cotizadas indonesias: análisis de tono (positivo, negativo, neutro) y clasificación de aspectos de divulgación de riesgos (economía, beneficio/pérdida, dividendos, financiación, marca, tecnología, inversión, gobernanza, producto/servicio, fusiones y adquisiciones, legal, medioambiente, social/personas y político). Forma parte de la colección ABDTA (aspect-based risk-disclosure tone analysis).
+`abdta-multi-task-v4-0pct-2x-equal` es un modelo de clasificación de texto multi-tarea desarrollado por el usuario de Hugging Face `jack1211son`, afinado a partir de `microsoft/deberta-v3-large`. Resuelve dos tareas simultáneas sobre narrativas de informes anuales de empresas cotizadas indonesias: análisis de tono (positivo, negativo, neutro) y clasificación de aspectos de divulgación de riesgos (economía, beneficio/pérdida, dividendos, financiación, marca, tecnología, inversión, gobernanza, producto/servicio, fusiones y adquisiciones, legal, medioambiente, social/personas y político). Forma parte de la colección ABDTA (aspect-based risk-disclosure tone analysis).
 
 El modelo se apoya en una arquitectura DeBERTa-v3-large con código personalizado (`trust_remote_code=True`) que expone dos cabezas de clasificación sobre el mismo encoder. Con 434 millones de parámetros y una ventana de entrada limitada a 256 tokens, está diseñado para clasificar fragmentos de lenguaje de divulgación, no para generar texto ni predecir precios de acciones. Su relevancia radica en el enfoque multi-tarea aplicado a un dominio financiero muy específico (informes anuales en inglés de empresas indonesias) con variantes de aumento de datos mediante pseudo-etiquetado y balanceo de aspectos.
 
@@ -65,10 +65,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jack1211son/abdta-multi-task-v4-0pct-2x-equal` | 434 M | 256 tokens | Clasificación multi-tarea (tono + aspecto) en finanzas | no disponible | HuggingFace, 0 descargas |
-| `microsoft/deberta-v3-large` | ~435 M | 512 tokens | Encoder base, *fine-tuning* genérico | MIT | HuggingFace, ampliamente usado |
-| `ProsusAI/finbert` | ~110 M | 512 tokens | Análisis de sentimiento financiero (3 clases) | no disponible | HuggingFace, muy usado |
-| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (positivo/negativo/neutro) | no disponible | HuggingFace |
+| `jack1211son/abdta-multi-task-v4-0pct-2x-equal` | 434 M | 256 tokens | Clasificación multi-tarea (tono + aspecto) en finanzas | no disponible | Hugging Face, 0 descargas |
+| `microsoft/deberta-v3-large` | ~435 M | 512 tokens | Encoder base, *fine-tuning* genérico | MIT | Hugging Face, ampliamente usado |
+| `ProsusAI/finbert` | ~110 M | 512 tokens | Análisis de sentimiento financiero (3 clases) | no disponible | Hugging Face, muy usado |
+| `yiyanghkust/finbert-tone` | ~110 M | 512 tokens | Tono financiero (positivo/negativo/neutro) | no disponible | Hugging Face |
 
 La comparativa se limita a alternativas de la misma categoría (clasificación de texto financiero). El modelo aquí descrito se distingue por su doble salida (tono y aspecto) y su especialización en informes anuales indonesios, mientras que FinBERT y sus variantes son modelos de sentimiento general financiero con menor granularidad temática. No se dispone de datos de rendimiento comparativo para establecer diferencias cuantitativas.
 
@@ -82,11 +82,11 @@ La comparativa se limita a alternativas de la misma categoría (clasificación d
 - **Riesgo de alucinación**: al ser un clasificador, no genera texto, pero puede producir etiquetas erróneas con alta confianza en oraciones ambiguas o fuera de dominio.
 - **Dominio estrecho**: entrenado sobre informes anuales de empresas indonesias; su transferencia a otros sectores, países o tipos de documento no está validada.
 - **Sesgos**: no documentados; al derivar de DeBERTa-v3-large y de un corpus financiero concreto, puede heredar sesgos de ese corpus y de la selección de empresas.
-- **Sin métricas publicadas**: no hay datos de evaluación que permitan estimar su calidad real; 0 descargas y 0 *likes* en HuggingFace indican ausencia de validación comunitaria.
+- **Sin métricas publicadas**: no hay datos de evaluación que permitan estimar su calidad real; 0 descargas y 0 *likes* en Hugging Face indican ausencia de validación comunitaria.
 - **No predice precios ni retornos**: la propia model card lo advierte; no debe usarse como señal de inversión directa.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-2x-equal
+- Modelo en Hugging Face: https://huggingface.co/jack1211son/abdta-multi-task-v4-0pct-2x-equal
 - Modelo base: https://huggingface.co/microsoft/deberta-v3-large
 - Perfil del autor: https://huggingface.co/jack1211son

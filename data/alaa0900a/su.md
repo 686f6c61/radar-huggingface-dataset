@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `alaa0900a/Su` está alojado en HuggingFace bajo la licencia Apache-2.0, pero no dispone de ninguna documentación técnica en su model card más allá de la licencia. No se ha publicado información sobre su arquitectura, parámetros, datos de entrenamiento, capacidades o rendimiento. El repositorio no presenta descargas ni valoraciones, y su fecha de creación es de agosto de 2026, lo que sugiere que podría tratarse de una carga reciente o de un proyecto sin difusión. Hasta que el autor publique una ficha técnica detallada, no es posible evaluar el modelo para ningún caso de uso concreto.
+El modelo identificado como `alaa0900a/Su` está alojado en Hugging Face bajo la licencia Apache-2.0, pero no dispone de ninguna documentación técnica en su model card más allá de la licencia. No se ha publicado información sobre su arquitectura, parámetros, datos de entrenamiento, capacidades o rendimiento. El repositorio no presenta descargas ni valoraciones, y su fecha de creación es de agosto de 2026, lo que sugiere que podría tratarse de una carga reciente o de un proyecto sin difusión. Hasta que el autor publique una ficha técnica detallada, no es posible evaluar el modelo para ningún caso de uso concreto.
 
 ## Especificaciones técnicas
 
@@ -50,5 +50,5 @@ No disponible. No existe información suficiente para comparar con modelos de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alaa0900a/Su
+- Repositorio Hugging Face: https://huggingface.co/alaa0900a/Su
 - No se han encontrado papers, blogs, repositorios de código o demos asociados al modelo.

@@ -5,7 +5,7 @@
   "author": "eetudigi",
   "url": "https://huggingface.co/eetudigi/hf_act_recordpolicy1",
   "created_at": "2026-11-05T15:05:05.000Z",
-  "updated_at": "2026-11-05T15:05:19.000Z",
+  "updated_at": "2026-11-05T16:33:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -14,8 +14,8 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "act",
+    "robotics",
     "dataset:eetudigi/record-test_20261104_175931",
     "arxiv:2304.13705",
     "region:us"
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206714848,
-  "storage_human": "207 MB",
+  "storage_bytes": 413422096,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

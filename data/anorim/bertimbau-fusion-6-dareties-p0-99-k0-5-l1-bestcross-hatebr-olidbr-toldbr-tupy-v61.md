@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint publicado en HuggingFace por el usuario `anorim`, con 108.924.674 parámetros y pesos en formato `safetensors`, que ocupa 0,4 GB en el repositorio. La etiqueta de arquitectura declarada es `bert` y el recuento de parámetros es coherente con un encoder tipo BERT-base (aproximadamente 110 millones de parámetros), del orden de BERTimbau base. No existe ficha de modelo, ni descripción, ni datos de entrenamiento publicados por el autor.
+El modelo `anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61` es un checkpoint publicado en Hugging Face por el usuario `anorim`, con 108.924.674 parámetros y pesos en formato `safetensors`, que ocupa 0,4 GB en el repositorio. La etiqueta de arquitectura declarada es `bert` y el recuento de parámetros es coherente con un encoder tipo BERT-base (aproximadamente 110 millones de parámetros), del orden de BERTimbau base. No existe ficha de modelo, ni descripción, ni datos de entrenamiento publicados por el autor.
 
 El propio nombre del repositorio sugiere, sin que pueda confirmarse, que se trata de una fusión de seis checkpoints mediante la técnica DARE-TIES (parámetros `p=0.99`, `k=0.5`, normalización `l1`, criterio `bestcross`), a partir de modelos ajustados sobre los conjuntos de datos HateBR, OLID-BR, ToLD-BR y Tupy, todos ellos relacionados con el portugués (mayoritariamente portugués de Brasil) y con tareas de detección de discurso de odio y lenguaje ofensivo. Es una inferencia a partir del identificador: no hay documentación que la respalde.
 
@@ -80,10 +80,10 @@ Los datos de las filas de alternativas son referencias generales de la familia B
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| anorim/bertimbau-fusion-6-dareties-...-v61 | 108.924.674 | No disponible | No disponible (probablemente portugues) | No disponible | HuggingFace, safetensors |
-| BERTimbau base (referencia externa) | ~110 M | 512 (referencia) | Portugues | No verificada | HuggingFace |
-| XLM-RoBERTa base (referencia externa) | ~278 M | 512 (referencia) | Multilingue (100 idiomas) | No verificada | HuggingFace |
-| Albertina PT-BR (referencia externa) | No disponible | No disponible | Portugues | No verificada | HuggingFace |
+| anorim/bertimbau-fusion-6-dareties-...-v61 | 108.924.674 | No disponible | No disponible (probablemente portugues) | No disponible | Hugging Face, safetensors |
+| BERTimbau base (referencia externa) | ~110 M | 512 (referencia) | Portugues | No verificada | Hugging Face |
+| XLM-RoBERTa base (referencia externa) | ~278 M | 512 (referencia) | Multilingue (100 idiomas) | No verificada | Hugging Face |
+| Albertina PT-BR (referencia externa) | No disponible | No disponible | Portugues | No verificada | Hugging Face |
 
 No se dispone de metricas comparativas de rendimiento para ninguno de estos modelos en la informacion proporcionada, por lo que la comparativa se limita a tamano, idioma declarado y disponibilidad.
 
@@ -101,5 +101,5 @@ No se dispone de metricas comparativas de rendimiento para ninguno de estos mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61
+- Modelo en Hugging Face: https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.99-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61
 - Resultados de busqueda web: no se ha encontrado ningun enlace relevante (papers, blogs, repos o demos) relacionado con este modelo. Los resultados devueltos corresponden a paginas de soporte de Microsoft y no guardan relacion con el repositorio.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `harkirankaur/humantrace-distilbert` es un modelo de lenguaje basado en la arquitectura DistilBERT, publicado en HuggingFace bajo licencia Apache 2.0. Con 66.955.010 parametros, se trata de una variante destilada de BERT que mantiene aproximadamente el 40% de los parametros del modelo original (BERT-base cuenta con 110 millones) conservando gran parte de su capacidad linguistica. El nombre del repositorio sugiere una posible especializacion en tareas de trazabilidad humana o analisis de trazas, aunque la model card no aporta informacion sobre la tarea especifica de fine-tuning.
+El modelo `harkirankaur/humantrace-distilbert` es un modelo de lenguaje basado en la arquitectura DistilBERT, publicado en Hugging Face bajo licencia Apache 2.0. Con 66.955.010 parametros, se trata de una variante destilada de BERT que mantiene aproximadamente el 40% de los parametros del modelo original (BERT-base cuenta con 110 millones) conservando gran parte de su capacidad linguistica. El nombre del repositorio sugiere una posible especializacion en tareas de trazabilidad humana o analisis de trazas, aunque la model card no aporta informacion sobre la tarea especifica de fine-tuning.
 
 El modelo fue creado el 15 de agosto de 2026 y actualizado el mismo dia. Es relevante por su tamano reducido, que permite su despliegue en entornos con recursos limitados, y por su licencia permisiva que facilita su uso comercial. Sin embargo, la ausencia total de documentacion tecnica en la model card limita considerablemente su evaluacion y aplicabilidad en produccion sin una fase previa de pruebas.
 
@@ -52,7 +52,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: aproximadamente 0,3 GB en FP32 (268 MB para los pesos), lo que permite inferencia en CPU con 4-8 GB de RAM.
 - GPU recomendadas: cualquier GPU con 2 GB de VRAM o superior es suficiente. Una NVIDIA GTX 1650, RTX 3060 o similar puede ejecutar el modelo con margen amplio.
 - Compatibilidad con GPU de consumo: si, cualquier GPU consumer moderna es valida. Tambien funciona en CPU sin problemas para inferencia por lotes pequenos.
-- Opciones de despliegue: HuggingFace Transformers, ONNX Runtime, TensorFlow Serving, TorchServe. No se confirma compatibilidad con vLLM, llama.cpp u Ollama, aunque al ser un encoder transformer, podria exportarse a ONNX para optimizacion.
+- Opciones de despliegue: Hugging Face Transformers, ONNX Runtime, TensorFlow Serving, TorchServe. No se confirma compatibilidad con vLLM, llama.cpp u Ollama, aunque al ser un encoder transformer, podria exportarse a ONNX para optimizacion.
 - Latencia estimada: para un modelo de 67 millones de parametros, la latencia en CPU es del orden de 10-50 ms por secuencia de 128 tokens, y en GPU de 2-10 ms, dependiendo del hardware y del tamano del lote.
 
 ## Comparativa con modelos similares
@@ -78,6 +78,6 @@ La comparativa con `distilbert-base-uncased` es la mas relevante, ya que compart
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/harkirankaur/humantrace-distilbert
+- Repositorio Hugging Face: https://huggingface.co/harkirankaur/humantrace-distilbert
 - Modelo base de referencia (distilbert-base-uncased): https://huggingface.co/distilbert-base-uncased
 - Paper original de DistilBERT: Sanh, V., Debut, L., Chaumond, J., Wolf, T. (2019). "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter". arXiv:1910.01108.

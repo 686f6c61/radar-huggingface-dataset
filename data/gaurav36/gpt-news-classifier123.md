@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gaurav36/gpt-news-classifier123` es un checkpoint publicado en HuggingFace Hub por el usuario gaurav36 bajo la libreria `transformers`. Por el identificador se puede inferir que esta orientado a la clasificacion de noticias, pero esta inferencia no esta confirmada por ninguna documentacion tecnica: la model card es la plantilla autogenerada por el Hub y no contiene ningun campo completado. La unica informacion verificable en el momento de redactar esta ficha es el identificador, el autor, la libreria declarada y las etiquetas (`transformers`, `arxiv:1910.09700`, `endpoints_compatible`, `region:us`).
+El modelo `gaurav36/gpt-news-classifier123` es un checkpoint publicado en Hugging Face Hub por el usuario gaurav36 bajo la libreria `transformers`. Por el identificador se puede inferir que esta orientado a la clasificacion de noticias, pero esta inferencia no esta confirmada por ninguna documentacion tecnica: la model card es la plantilla autogenerada por el Hub y no contiene ningun campo completado. La unica informacion verificable en el momento de redactar esta ficha es el identificador, el autor, la libreria declarada y las etiquetas (`transformers`, `arxiv:1910.09700`, `endpoints_compatible`, `region:us`).
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, idiomas, licencia ni proceso de entrenamiento. La etiqueta `arxiv:1910.09700` no corresponde a un articulo del modelo, sino a Lacoste et al. (2019), el paper del calculador de impacto medioambiental de Machine Learning que aparece citado en la plantilla estandar de model card; se trata, por tanto, de un artefacto de la plantilla y no de una referencia tecnica del modelo.
 
@@ -57,7 +57,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible. El calculo depende del numero de parametros, que no se ha publicado.
 - GPU recomendadas: no disponible por la misma razon.
 - Encaje en GPU de consumo: no disponible. No puede afirmarse ni descartarse sin conocer el tamano del modelo.
-- Opciones de despliegue: al declarar `transformers` como libreria y llevar la etiqueta `endpoints_compatible`, el checkpoint es en principio cargable con la libreria `transformers` de HuggingFace y desplegable mediante HuggingFace Inference Endpoints. El uso con vLLM, llama.cpp, Ollama o TGI no puede confirmarse ni descartarse sin conocer el formato de pesos y la arquitectura.
+- Opciones de despliegue: al declarar `transformers` como libreria y llevar la etiqueta `endpoints_compatible`, el checkpoint es en principio cargable con la libreria `transformers` de Hugging Face y desplegable mediante Hugging Face Inference Endpoints. El uso con vLLM, llama.cpp, Ollama o TGI no puede confirmarse ni descartarse sin conocer el formato de pesos y la arquitectura.
 - Latencia y throughput estimados: no disponible.
 
 ## Comparativa con modelos similares
@@ -78,7 +78,7 @@ No disponible. No se ha identificado ninguna comparativa fiable porque se descon
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaurav36/gpt-news-classifier123
+- Modelo en Hugging Face: https://huggingface.co/gaurav36/gpt-news-classifier123
 - Perfil del autor: https://huggingface.co/gaurav36
 - Paper citado en la etiqueta del repositorio (Lacoste et al., 2019, estimacion de emisiones, referencia de plantilla, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de Machine Learning citado en la model card: https://mlco2.github.io/impact

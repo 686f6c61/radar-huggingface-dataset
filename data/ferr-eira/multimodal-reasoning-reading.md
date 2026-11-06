@@ -66,7 +66,7 @@ No disponible. Este repositorio no contiene un modelo comparable con alternativa
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ferr-eira/multimodal-reasoning-reading
+- Repositorio Hugging Face: https://huggingface.co/ferr-eira/multimodal-reasoning-reading
 - Articulo relacionado (VisualPRM): https://huggingface.co/papers?q=Multimodal+reasoning
 - Coleccion de recursos sobre razonamiento multimodal: https://github.com/jluite/Awesome-Multimodal-Reasoning
 - Encuesta sobre modelos de razonamiento multimodal: https://arxiv.org/abs/2505.04921

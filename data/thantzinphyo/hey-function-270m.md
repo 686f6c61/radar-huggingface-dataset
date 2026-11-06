@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hey-Function-270M es un modelo de lenguaje compacto de 270 millones de parámetros, especializado en la generación de llamadas a funciones (function calling) para aplicaciones en dispositivos de borde. Lo desarrolla Thant Zin Phyo (usuario `thantzinphyo` en HuggingFace) y deriva por ajuste fino completo de `google/functiongemma-270m-it`, el modelo de Gemma 3 orientado a tool use publicado por Google. Su propósito es traducir instrucciones en inglés, birmano (myanmar) y code-switching entre ambos a llamadas de herramienta estructuradas en formato JSON, algo que el modelo base solo cubre con solvencia en inglés.
+Hey-Function-270M es un modelo de lenguaje compacto de 270 millones de parámetros, especializado en la generación de llamadas a funciones (function calling) para aplicaciones en dispositivos de borde. Lo desarrolla Thant Zin Phyo (usuario `thantzinphyo` en Hugging Face) y deriva por ajuste fino completo de `google/functiongemma-270m-it`, el modelo de Gemma 3 orientado a tool use publicado por Google. Su propósito es traducir instrucciones en inglés, birmano (myanmar) y code-switching entre ambos a llamadas de herramienta estructuradas en formato JSON, algo que el modelo base solo cubre con solvencia en inglés.
 
 La relevancia del modelo reside en dos factores. Por un lado, aborda un idioma de bajos recursos como el birmano, cuya estructura sujeto-objeto-verbo requiere una alineación específica de las representaciones de atención que el ajuste fino de parámetros completos pretende capturar. Por otro, su tamaño reducido (268.098.176 parámetros, 1,1 GB en el repositorio) lo convierte en un candidato para ejecución local en móviles, placas IoT y dispositivos de borde, sin dependencia de API en la nube.
 
@@ -110,7 +110,7 @@ La comparación cuantitativa con alternativas de la misma categoría no está di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thantzinphyo/Hey-Function-270M
+- Modelo en Hugging Face: https://huggingface.co/thantzinphyo/Hey-Function-270M
 - Dataset: https://huggingface.co/datasets/thantzinphyo/Hey-Function-Burmese
 - Repositorio de código: https://github.com/thantzinphyo-gg/Hey-Function-Burmese
 - Modelo base: https://huggingface.co/google/functiongemma-270m-it

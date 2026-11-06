@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario dfgsgsh56 en HuggingFace, etiquetado como transformer y compatible con la librería transformers. Según su model card, ha recibido una actualización significativa que mejora su capacidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes según los benchmarks reportados.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario dfgsgsh56 en Hugging Face, etiquetado como transformer y compatible con la librería transformers. Según su model card, ha recibido una actualización significativa que mejora su capacidad de razonamiento e inferencia mediante un mayor uso de recursos computacionales y mecanismos de optimización algorítmica durante el post-entrenamiento. El modelo destaca en tareas de matemáticas, programación y lógica general, y su rendimiento se acerca al de otros modelos líderes según los benchmarks reportados.
 
 La model card indica que la versión actualizada muestra mejoras notables en tareas de razonamiento complejo, como un aumento en la precisión en el conjunto de prueba AIME 2025 del 70% al 87,5%, acompañado de un mayor uso de tokens de razonamiento (de 12K a 23K tokens por pregunta). También se menciona una reducción de la tasa de alucinación y un mejor soporte para function calling. Sin embargo, no se proporcionan detalles sobre la arquitectura, el número de parámetros, la longitud de contexto ni los datos de entrenamiento, por lo que gran parte de las especificaciones técnicas no están disponibles.
 
@@ -23,7 +23,7 @@ El repositorio tiene un tamaño de 0.0 GB, lo que sugiere que podría tratarse d
 
 ## Arquitectura y entrenamiento
 
-La model card no especifica la arquitectura interna del modelo más allá de la etiqueta "transformers" y "bert" en los metadatos de HuggingFace. Se menciona que el modelo ha sido sometido a un "post-training" con mecanismos de optimización algorítmica, pero no se detalla si se utilizó RLHF, DPO u otras técnicas. Tampoco se informa sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de pre-entrenamiento.
+La model card no especifica la arquitectura interna del modelo más allá de la etiqueta "transformers" y "bert" en los metadatos de Hugging Face. Se menciona que el modelo ha sido sometido a un "post-training" con mecanismos de optimización algorítmica, pero no se detalla si se utilizó RLHF, DPO u otras técnicas. Tampoco se informa sobre el número de tokens de entrenamiento, la composición del dataset ni el proceso de pre-entrenamiento.
 
 La actualización de la versión parece haber incrementado la profundidad de razonamiento, como lo evidencia el aumento en el número de tokens de razonamiento por pregunta en el conjunto AIME (de 12K a 23K). No se proporcionan detalles sobre innovaciones técnicas específicas como decodificación especulativa, atención lineal o arquitecturas híbridas.
 
@@ -88,7 +88,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 ## Limitaciones y advertencias
 
 - No se dispone de información sobre sesgos conocidos, riesgos de alucinación específicos o limitaciones de idioma. La model card afirma una reducción de la tasa de alucinación, pero no cuantifica este aspecto.
-- El repositorio de HuggingFace tiene un tamaño de 0.0 GB, lo que indica que no se han publicado los pesos del modelo. Esto impide su uso directo y su verificación independiente.
+- El repositorio de Hugging Face tiene un tamaño de 0.0 GB, lo que indica que no se han publicado los pesos del modelo. Esto impide su uso directo y su verificación independiente.
 - No se especifican los idiomas soportados, por lo que no se puede garantizar su funcionamiento en español u otros idiomas.
 - La licencia MIT permite uso comercial, pero al no haber pesos disponibles, esta licencia es teórica.
 - Los benchmarks presentados carecen de contexto metodológico: no se identifican los modelos de comparación, el tamaño de los conjuntos de prueba ni el protocolo de evaluación. Los resultados deben considerarse no verificables.
@@ -97,5 +97,5 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/dfgsgsh56/MyAwesomeModel
+- Repositorio de Hugging Face: https://huggingface.co/dfgsgsh56/MyAwesomeModel
 - No se proporcionan otros enlaces (papers, blogs, repos de código) en la información disponible.

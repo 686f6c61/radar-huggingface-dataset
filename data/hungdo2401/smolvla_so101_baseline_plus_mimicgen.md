@@ -56,9 +56,9 @@ No se dispone de resultados de benchmarks que permitan comparar este modelo con 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_so101_baseline_plus_mimicgen | 450.046.176 | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| smolvla_so101_baseline | no disponible | no disponible | no disponible | Apache-2.0 | HuggingFace |
+| smolvla_so101_baseline_plus_mimicgen | 450.046.176 | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| lerobot/smolvla_base | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| smolvla_so101_baseline | no disponible | no disponible | no disponible | Apache-2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -70,7 +70,7 @@ No se dispone de resultados de benchmarks que permitan comparar este modelo con 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hungdo2401/smolvla_so101_baseline_plus_mimicgen
+- Repositorio Hugging Face: https://huggingface.co/hungdo2401/smolvla_so101_baseline_plus_mimicgen
 - Modelo base: https://huggingface.co/lerobot/smolvla_base
 - Dataset: https://huggingface.co/datasets/hungdo2401/so101_baseline_plus_mimicgen
 - Paper SmolVLA: https://huggingface.co/papers/2506.01844

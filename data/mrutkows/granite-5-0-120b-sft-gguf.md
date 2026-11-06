@@ -45,7 +45,7 @@ No se dispone de datos suficientes para comparar con otros modelos. Se sugiere c
 - La cuantización puede degradar la calidad de las respuestas; se recomienda probar diferentes niveles de cuantización.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/mrutkows/granite-5.0-120b-sft-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mrutkows/granite-5.0-120b-sft-GGUF
 - Modelo base: https://huggingface.co/ibm-research/granite-5.0-120b-sft
 - Página oficial de IBM Granite: https://www.ibm.com/granite
 - GitHub de IBM Granite: https://github.com/ibm-granite

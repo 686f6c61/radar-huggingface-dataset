@@ -23,7 +23,7 @@ La licencia es Apache-2.0, lo que permite uso comercial, y el autor lo describe 
 | Dataset de entrenamiento | Francesco/furniture-ngpea (revision 5c0e1d3d0f5a95bb916995c8ad34778cd2ca6c7c) |
 | Tamano del repositorio | 0,2 GB |
 | Descargas / likes | 0 / 0 |
-| Fecha de creacion | 10 de octubre de 2026 (segun HuggingFace) |
+| Fecha de creacion | 10 de octubre de 2026 (segun Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -133,7 +133,7 @@ No se dispone de cifras de rendimiento de modelos alternativos sobre el dataset 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/daoooot/202413050-detr-resnet-50-furniture-full
+- Modelo en Hugging Face: https://huggingface.co/daoooot/202413050-detr-resnet-50-furniture-full
 - Modelo base: https://huggingface.co/facebook/detr-resnet-50
 - Dataset de entrenamiento: https://huggingface.co/datasets/Francesco/furniture-ngpea
 - Paper de DETR (End-to-End Object Detection with Transformers): https://arxiv.org/abs/2005.12872

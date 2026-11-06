@@ -68,7 +68,7 @@ Estas cifras se obtuvieron en una NVIDIA RTX 5080 con CUDA 13.2. No hay comparac
 - VRAM estimada para inferencia: 4,67 GB (según medición del autor en RTX 5080).
 - GPU recomendadas: cualquier GPU con al menos 5 GB de VRAM; el autor usó una RTX 5080 de 16 GB para el entrenamiento, pero la inferencia cabe en GPUs de gama media como RTX 3060 12GB, RTX 4060 8GB, o incluso en tarjetas con 6 GB si se ajusta el batch.
 - Compatibilidad con consumer GPU: sí, es el objetivo principal del demo.
-- Opciones de despliegue: el modelo se carga mediante `transformers` con `trust_remote_code=True`; también es compatible con text-generation-inference (según tags de HuggingFace). No se mencionan formatos GGUF ni compatibilidad con llama.cpp u Ollama.
+- Opciones de despliegue: el modelo se carga mediante `transformers` con `trust_remote_code=True`; también es compatible con text-generation-inference (según tags de Hugging Face). No se mencionan formatos GGUF ni compatibilidad con llama.cpp u Ollama.
 - Latencia y throughput: 32,93 tokens/s medidos en RTX 5080; en GPUs más modestas se espera menor throughput, pero no hay datos publicados.
 
 ## Comparativa con modelos similares
@@ -77,9 +77,9 @@ No hay comparativas directas publicadas con otros modelos comprimidos. Como refe
 
 | Modelo | Parametros | Contexto | VRAM inferencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QTensor-Llama-3-8B-Demo | 2,48B físicos (8,03B originales) | no disponible | 4,67 GB | MIT | HuggingFace |
-| Meta-Llama-3-8B (FP16) | 8,03B | 8K | ~15 GB | Llama 3 Community License | HuggingFace |
-| Qwen3-8B | 8B | 32K | ~16 GB (FP16) | Apache 2.0 | HuggingFace |
+| QTensor-Llama-3-8B-Demo | 2,48B físicos (8,03B originales) | no disponible | 4,67 GB | MIT | Hugging Face |
+| Meta-Llama-3-8B (FP16) | 8,03B | 8K | ~15 GB | Llama 3 Community License | Hugging Face |
+| Qwen3-8B | 8B | 32K | ~16 GB (FP16) | Apache 2.0 | Hugging Face |
 | Llama-3.1-8B-Instruct (w4a16) | 8B | 128K | ~5-6 GB | Llama 3.1 Community License | Qualcomm AI Hub |
 
 La comparativa es orientativa; el QTensor es un demo experimental, no un modelo de producción, mientras que las alternativas son modelos funcionales con licencias y ecosistemas maduros.
@@ -97,8 +97,8 @@ La comparativa es orientativa; el QTensor es un demo experimental, no un modelo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/trentzap/QTensor-Llama-3-8B-Demo
+- Hugging Face: https://huggingface.co/trentzap/QTensor-Llama-3-8B-Demo
 - Código fuente (motor ASVD-Bridge): https://github.com/Trentzap1/qtensor-engine
-- Perfil del autor en HuggingFace: https://huggingface.co/trentzap
+- Perfil del autor en Hugging Face: https://huggingface.co/trentzap
 - Modelo profesor: https://huggingface.co/NousResearch/Meta-Llama-3-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/tatsu-lab/alpaca

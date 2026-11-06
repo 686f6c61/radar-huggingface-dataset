@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `Stavro42/h3-production-bundle` aloja un modelo identificado como "h3-production-bundle", publicado por el usuario Stavro42 en HuggingFace. Según los metadatos, se trata de un modelo con formato de pesos GGUF, etiquetado como conversacional y compatible con endpoints, lo que sugiere que está orientado a su uso en producción mediante inferencia local o a través de API. El modelo cuenta con aproximadamente 27.320 millones de parámetros (27,3B) y un tamaño de repositorio de 110 GB, lo que indica que incluye múltiples cuantizaciones o archivos de gran tamaño.
+El repositorio `Stavro42/h3-production-bundle` aloja un modelo identificado como "h3-production-bundle", publicado por el usuario Stavro42 en Hugging Face. Según los metadatos, se trata de un modelo con formato de pesos GGUF, etiquetado como conversacional y compatible con endpoints, lo que sugiere que está orientado a su uso en producción mediante inferencia local o a través de API. El modelo cuenta con aproximadamente 27.320 millones de parámetros (27,3B) y un tamaño de repositorio de 110 GB, lo que indica que incluye múltiples cuantizaciones o archivos de gran tamaño.
 
-La información pública disponible es muy limitada: no se especifican la arquitectura, el pipeline, los idiomas soportados ni la licencia concreta (aparece como "none" en el campo de licencia, aunque el tag indica "license:other"). El acceso está restringido (gated), por lo que es necesario aceptar condiciones en HuggingFace antes de poder descargar los pesos. A pesar de que los resultados de búsqueda web mencionan un modelo llamado "MiniMax H3" de 33B parámetros, no hay evidencia que confirme que este repositorio corresponda a dicho modelo, ya que el autor no es MiniMax y el número de parámetros difiere. Por tanto, esta ficha se basa únicamente en los datos disponibles y marca como "no disponible" cualquier especificación no confirmada.
+La información pública disponible es muy limitada: no se especifican la arquitectura, el pipeline, los idiomas soportados ni la licencia concreta (aparece como "none" en el campo de licencia, aunque el tag indica "license:other"). El acceso está restringido (gated), por lo que es necesario aceptar condiciones en Hugging Face antes de poder descargar los pesos. A pesar de que los resultados de búsqueda web mencionan un modelo llamado "MiniMax H3" de 33B parámetros, no hay evidencia que confirme que este repositorio corresponda a dicho modelo, ya que el autor no es MiniMax y el número de parámetros difiere. Por tanto, esta ficha se basa únicamente en los datos disponibles y marca como "no disponible" cualquier especificación no confirmada.
 
 ## Especificaciones técnicas
 
@@ -64,13 +64,13 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - No se conocen los sesgos del modelo ni su comportamiento en dominios específicos, ya que no hay documentación pública.
 - Existe riesgo de alucinación, como en cualquier modelo generativo, pero no se ha evaluado.
 - La licencia aparece como "none" y el tag indica "license:other", lo que genera incertidumbre sobre los términos de uso comercial. Es imprescindible revisar las condiciones del repositorio antes de utilizarlo en producción.
-- El acceso está restringido (gated), por lo que se requiere aceptar condiciones adicionales en HuggingFace.
+- El acceso está restringido (gated), por lo que se requiere aceptar condiciones adicionales en Hugging Face.
 - No se han publicado datos sobre la longitud de contexto, lo que limita su uso en tareas que requieran ventanas largas.
 - El repositorio tiene 0 descargas y 0 likes, lo que sugiere que es un proyecto reciente o poco difundido; se recomienda precaución.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Stavro42/h3-production-bundle
+- Repositorio Hugging Face: https://huggingface.co/Stavro42/h3-production-bundle
 - Referencias externas (no confirmadas como relacionadas con este modelo):
   - https://videobao.com/blog/MiniMax-h3-open-source-33b-video-model-sota
   - https://www.houdao.com/d/20067-MiniMax-Launches-H3-Video-Model-and-Design-Platform-Reshaping-Video-Production-Workflows-with-AI-Agents

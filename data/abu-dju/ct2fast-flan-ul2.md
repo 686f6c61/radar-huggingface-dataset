@@ -97,11 +97,11 @@ Los datos de los modelos comparados proceden de sus repositorios publicos y no h
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Abu-Dju/ct2fast-flan-ul2
+- Repositorio en Hugging Face: https://huggingface.co/Abu-Dju/ct2fast-flan-ul2
 - Conversion de referencia citada en la model card: https://huggingface.co/michaelfeil/ct2fast-flan-ul2
 - Modelo original: https://huggingface.co/google/flan-ul2
 - CTranslate2 (repositorio y documentacion): https://github.com/OpenNMT/CTranslate2
-- Libreria de carga desde HuggingFace Hub: https://github.com/michaelfeil/hf-hub-ctranslate2
+- Libreria de carga desde Hugging Face Hub: https://github.com/michaelfeil/hf-hub-ctranslate2
 - Paper de UL2: https://arxiv.org/abs/2205.05131
 - Paper de Flan-T5 y escalado del afinado por instrucciones: https://arxiv.org/abs/2210.11416
 - Paper de la recopilacion Flan (Flan Collection): https://arxiv.org/abs/2301.13688

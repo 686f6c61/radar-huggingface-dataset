@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSparse-25v es una coleccion de checkpoints afinados de DeepSparse, un modelo de reconstruccion tomografica (TC/CBCT) a partir de vistas dispersas, publicado por el usuario Potestates en HuggingFace. El modelo resuelve el problema de reconstruir un volumen 3D a 256³ a partir de solo 25 proyecciones adquiridas uniformemente sobre 180 grados, en lugar de las proyecciones densas que exige la reconstruccion analitica clasica. Se distribuyen cuatro checkpoints, uno por anatomia: pelvis, pulmon, abdomen y diente.
+DeepSparse-25v es una coleccion de checkpoints afinados de DeepSparse, un modelo de reconstruccion tomografica (TC/CBCT) a partir de vistas dispersas, publicado por el usuario Potestates en Hugging Face. El modelo resuelve el problema de reconstruir un volumen 3D a 256³ a partir de solo 25 proyecciones adquiridas uniformemente sobre 180 grados, en lugar de las proyecciones densas que exige la reconstruccion analitica clasica. Se distribuyen cuatro checkpoints, uno por anatomia: pelvis, pulmon, abdomen y diente.
 
 Los pesos parten de los pesos preentrenados oficiales del repositorio xmed-lab/DeepSparse y se afinan con el protocolo oficial de dos etapas del proyecto. No es un modelo de lenguaje ni un modelo multimodal generativo: es una red de reconstruccion de imagen medica, por lo que conceptos como contexto en tokens, tool calling o idiomas no son aplicables.
 
@@ -108,7 +108,7 @@ La informacion disponible no incluye datos de otros metodos de reconstruccion co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Potestates/DeepSparse-25v
+- Hugging Face: https://huggingface.co/Potestates/DeepSparse-25v
 - Repositorio oficial de codigo: https://github.com/xmed-lab/DeepSparse
 - Pesos preentrenados de partida: https://huggingface.co/HajihajihaJimmy/DeepSparse
 - Resultados de busqueda web: no se han encontrado enlaces relevantes. Los resultados devueltos corresponden a RootsTech y FamilySearch (genealogia) y no guardan relacion con el modelo. El enlace al paper de DeepSparse se menciona en la model card pero no se proporciona una URL concreta, por lo que no se incluye.

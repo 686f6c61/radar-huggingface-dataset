@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|
-| Omida R2 (omida-ai/omida-r2-GGUF) | 8,95B | No disponible | No disponible | GGUF en 7 cuantizaciones, publicado en HuggingFace |
+| Omida R2 (omida-ai/omida-r2-GGUF) | 8,95B | No disponible | No disponible | GGUF en 7 cuantizaciones, publicado en Hugging Face |
 | Qwen/Qwen3-8B | Aproximadamente 8,2B | No disponible en esta ficha | Apache 2.0 (referencia general, verificar) | Safetensors y GGUF en el ecosistema |
 | meta-llama/Llama-3.1-8B-Instruct | Aproximadamente 8,0B | No disponible en esta ficha | Licencia comunitaria Llama 3.1 (verificar) | Safetensors y GGUF |
 | mistralai/Mistral-7B-Instruct-v0.3 | Aproximadamente 7,2B | No disponible en esta ficha | Apache 2.0 (verificar) | Safetensors y GGUF |
@@ -89,7 +89,7 @@ Los datos de parametros y licencias de los modelos comparados son referencias ge
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/omida-ai/omida-r2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/omida-ai/omida-r2-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Informe de evaluacion (ruta relativa citada en la model card): `reports/EVAL_REPORT.md` dentro del repositorio
 - Informe final (ruta relativa citada en la model card): `reports/FINAL_REPORT.md` dentro del repositorio

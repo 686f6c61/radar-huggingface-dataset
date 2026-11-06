@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks (MMLU, HumanEval, GSM8K, etc.) en l
 - VRAM estimada para inferencia en precision FP16: alrededor de 8,8 GB (correspondiente al tamano del repositorio con pesos en safetensors).
 - Con cuantizacion de 4 bits (si se aplicara, aunque no se proporcionan archivos cuantizados), la VRAM podria reducirse a aproximadamente 2,5-3 GB, permitiendo su uso en GPUs de consumo como RTX 3060 o superiores.
 - GPU recomendadas: RTX 3090/4090 (24 GB) para FP16 sin problemas; A100 o H100 para inferencia a gran escala o multiples instancias.
-- Despliegue compatible con vLLM (comando `vllm serve`) y con la libreria transformers de HuggingFace.
+- Despliegue compatible con vLLM (comando `vllm serve`) y con la libreria transformers de Hugging Face.
 - No se proporcionan datos de latencia ni throughput en la informacion disponible.
 
 ## Comparativa con modelos similares
@@ -81,7 +81,7 @@ No se dispone de resultados de benchmarks comparativos entre estos modelos. La c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-vs30v11v
+- Repositorio Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-vs30v11v
 - Repositorio relacionado (checkpoint base sin el sufijo vs30v11v): https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-base
 - Repositorio relacionado (fine-tuning DPO): https://huggingface.co/agurung/cobalt-ft-qwen3-4b-dpo-mixed-12-mc-correct-only-v1-lora-r128-a32-lr5e-6-const-lr5e-6-gb64-ep2-be
 - Repositorio relacionado (fine-tuning SFT): https://huggingface.co/agurung/cobalt-ft-qwen3-4b-sft-iid-12-lora-r128-a32-lr2p5e-4-const-lr2p5e-4-qps8-gpuauto-ep2

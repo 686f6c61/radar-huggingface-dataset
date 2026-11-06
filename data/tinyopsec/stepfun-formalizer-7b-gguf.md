@@ -97,7 +97,7 @@ No se dispone de datos comparativos de rendimiento ni de especificaciones detall
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/tinyopsec/StepFun-Formalizer-7B-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/tinyopsec/StepFun-Formalizer-7B-GGUF
 - Modelo original: https://huggingface.co/stepfun-ai/StepFun-Formalizer-7B
 - Modelo base del ajuste: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-7B
 - Paper: https://arxiv.org/abs/2508.04440

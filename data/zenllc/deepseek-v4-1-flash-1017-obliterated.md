@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo (refusal-direction ablation) mediante la herramienta OBLITERATUS con el método failspy. El resultado es un modelo que conserva las capacidades del original pero elimina en gran medida el comportamiento de negativa ante peticiones que el modelo base rechazaría. Lo publica el usuario ZENLLC en HuggingFace bajo licencia MIT.
+DeepSeek-V4.1-Flash-1017-obliterated es una variante del modelo DeepSeek-V4.1-Flash-1017 (desarrollado por DeepSeek) a la que se le ha aplicado una ablación de la dirección de rechazo (refusal-direction ablation) mediante la herramienta OBLITERATUS con el método failspy. El resultado es un modelo que conserva las capacidades del original pero elimina en gran medida el comportamiento de negativa ante peticiones que el modelo base rechazaría. Lo publica el usuario ZENLLC en Hugging Face bajo licencia MIT.
 
 Se trata de un modelo de arquitectura MoE (mixture of experts) con 754.638.836.864 parámetros totales según los pesos en safetensors, empaquetado en formato BF16 safetensors y pensado para text-generation con la librería transformers. El repositorio ocupa 1.509,4 GB, lo que refleja el tamaño del checkpoint completo. La relevancia de esta ficha radica en que documenta un caso de fine-tuning de "abliteración" sobre un modelo frontera, con métricas de rechazo, coherencia y capacidad publicadas por el autor, así como una evaluación MMLU comparativa frente al modelo base.
 
@@ -108,7 +108,7 @@ No se dispone de información sobre otros modelos de la misma categoría (mismo 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ZENLLC/DeepSeek-V4.1-Flash-1017-obliterated
+- Hugging Face: https://huggingface.co/ZENLLC/DeepSeek-V4.1-Flash-1017-obliterated
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Herramienta OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Detalles del método (provenance): https://huggingface.co/ZENLLC/DeepSeek-V4.1-Flash-1017-obliterated/blob/main/winner-recovery-provenance.json

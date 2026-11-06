@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Nessy1424/pip-coder` es un repositorio de HuggingFace publicado por el usuario Nessy1424 bajo la librería `transformers` y con pesos en formato `safetensors`. El nombre sugiere un modelo orientado a código, pero la model card es la plantilla automática de HuggingFace sin cumplimentar: todos los campos de descripción, autoría, datos de entrenamiento, licencia e idiomas figuran como "[More Information Needed]". No hay pipeline declarado, ni licencia, ni idiomas, ni documentación técnica asociada.
+`Nessy1424/pip-coder` es un repositorio de Hugging Face publicado por el usuario Nessy1424 bajo la librería `transformers` y con pesos en formato `safetensors`. El nombre sugiere un modelo orientado a código, pero la model card es la plantilla automática de Hugging Face sin cumplimentar: todos los campos de descripción, autoría, datos de entrenamiento, licencia e idiomas figuran como "[More Information Needed]". No hay pipeline declarado, ni licencia, ni idiomas, ni documentación técnica asociada.
 
 El repositorio tiene un tamaño de 0,1 GB y cero descargas y cero "likes" en el momento de la consulta, con fecha de creación y actualización del 23 de octubre de 2026. Es, por tanto, un artefacto prácticamente sin trazabilidad pública: no se puede verificar qué arquitectura contiene, con qué datos se entrenó ni qué rendimiento ofrece. Cualquier uso en producción requeriría una inspección directa de los archivos de pesos y del tokenizador antes de considerarlo.
 
@@ -32,7 +32,7 @@ La relevancia de esta ficha es, en consecuencia, fundamentalmente metodológica:
 
 No hay información publicada sobre la arquitectura. La model card únicamente indica `library_name: transformers`, lo que implica compatibilidad con `AutoModel`/`AutoTokenizer`, pero no especifica si se trata de un transformer decoder-only, un encoder, un modelo híbrido o cualquier otra variante. Tampoco se declara el número de capas, dimensión oculta, cabezas de atención ni vocabulario.
 
-Respecto al entrenamiento, todos los apartados (datos, procedimiento, hiperparámetros, infraestructura y evaluación) están sin rellenar. No consta número de tokens, composición del dataset, ni si hubo ajuste por instrucciones (SFT, RLHF, DPO). El único metadato técnico explícito, además del formato `safetensors`, es el tag `endpoints_compatible`, que indica que el repositorio puede cargarse en los endpoints de inferencia de HuggingFace, sin aportar información sobre el modelo en sí.
+Respecto al entrenamiento, todos los apartados (datos, procedimiento, hiperparámetros, infraestructura y evaluación) están sin rellenar. No consta número de tokens, composición del dataset, ni si hubo ajuste por instrucciones (SFT, RLHF, DPO). El único metadato técnico explícito, además del formato `safetensors`, es el tag `endpoints_compatible`, que indica que el repositorio puede cargarse en los endpoints de inferencia de Hugging Face, sin aportar información sobre el modelo en sí.
 
 ## Capacidades
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada: no disponible de forma oficial. Como referencia orientativa derivada del tamaño del repositorio (0,1 GB), la inferencia en fp16 requeriría del orden de 0,2-0,5 GB de VRAM incluyendo overhead de activaciones y contexto; esta cifra es una estimación, no un dato del autor.
 - GPU recomendadas: no disponible. Por el tamaño del artefacto, cualquier GPU consumer reciente (por ejemplo, una RTX 3060 en adelante) sería sobradamente suficiente, e incluso la ejecución en CPU sería viable.
 - Cabe en GPU consumer: previsiblemente sí, en cualquier GPU con 4 GB o más, aunque no está verificado.
-- Opciones de despliegue: `transformers` (confirmado por la librería declarada); compatibilidad con `vLLM`, `llama.cpp`, `Ollama` o `TGI` no está confirmada y depende de la arquitectura real, que se desconoce. El tag `endpoints_compatible` sugiere que puede servirse en HuggingFace Inference Endpoints.
+- Opciones de despliegue: `transformers` (confirmado por la librería declarada); compatibilidad con `vLLM`, `llama.cpp`, `Ollama` o `TGI` no está confirmada y depende de la arquitectura real, que se desconoce. El tag `endpoints_compatible` sugiere que puede servirse en Hugging Face Inference Endpoints.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -87,13 +87,13 @@ Cualquier comparación cuantitativa exigiría primero determinar el número de p
 - Riesgo de alucinación desconocido: al no haber evaluación publicada, no se puede acotar la tasa de errores ni el comportamiento fuera de distribución.
 - Idiomas no declarados: se desconoce si el modelo funciona correctamente en castellano o incluso en inglés.
 - Trazabilidad nula: cero descargas y cero interacciones sugieren que el repositorio no ha sido validado por la comunidad.
-- Posible confusión con el tag `arxiv:1910.09700`: ese identificador corresponde a un artículo sobre emisiones de carbono citado en la plantilla de HuggingFace, no a un paper del modelo; no debe interpretarse como respaldo científico.
+- Posible confusión con el tag `arxiv:1910.09700`: ese identificador corresponde a un artículo sobre emisiones de carbono citado en la plantilla de Hugging Face, no a un paper del modelo; no debe interpretarse como respaldo científico.
 - Fechas de creación y actualización (23 de octubre de 2026) separadas por 16 segundos, lo que indica una subida automatizada o de prueba.
 - Antes de cualquier uso: inspeccionar `config.json`, el tokenizador y las cabeceras de los tensores, y ejecutar una batería propia de evaluaciones.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Nessy1424/pip-coder
+- Repositorio en Hugging Face: https://huggingface.co/Nessy1424/pip-coder
 - Paper citado en la plantilla (emisiones de carbono, no del modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental mencionada en la plantilla: https://ml2co2.github.io/impact
 - Paper asociado al modelo: no disponible

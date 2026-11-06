@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HomeTrace es un modelo publicado en HuggingFace bajo el identificador `HomeTrace/HomeTrace` por el usuario u organizacion del mismo nombre. La model card asociada es practicamente vacia: unicamente declara licencia MIT y la frase "Code Coming Soon !!", sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio se creo el 1 de noviembre de 2026 y no registra descargas ni interacciones en el momento de redactar esta ficha.
+HomeTrace es un modelo publicado en Hugging Face bajo el identificador `HomeTrace/HomeTrace` por el usuario u organizacion del mismo nombre. La model card asociada es practicamente vacia: unicamente declara licencia MIT y la frase "Code Coming Soon !!", sin especificar arquitectura, tamano, datos de entrenamiento ni capacidades. El repositorio se creo el 1 de noviembre de 2026 y no registra descargas ni interacciones en el momento de redactar esta ficha.
 
 Por tanto, no es posible determinar que problema resuelve ni que arquitectura emplea. La ausencia de pipeline declarado, de idiomas soportados y de cualquier detalle tecnico impide clasificarlo como modelo de lenguaje, de vision u otra modalidad. La unica informacion fiable es la licencia MIT y la intencion declarada por el autor de publicar codigo en el futuro.
 
@@ -41,7 +41,7 @@ En cuanto al entrenamiento, no hay datos sobre el volumen de tokens, la composic
 - Evaluacion de la licencia MIT: el unico aspecto verificable hoy es que la licencia permite uso comercial, modificacion y redistribucion, pero sin pesos ni documentacion no hay nada que evaluar tecnicamente.
 - Seguimiento del repositorio: util para equipos que quieran detectar cuando el autor publique el codigo y los pesos anunciados.
 - No se recomienda integrar este identificador en pipelines de produccion, atencion al cliente, generacion de codigo, analisis documental ni ninguna otra aplicacion practica hasta que exista contenido tecnico verificable.
-- Auditoria de repositorios vacios: puede servir como caso de estudio sobre publicaciones en HuggingFace sin artefactos asociados.
+- Auditoria de repositorios vacios: puede servir como caso de estudio sobre publicaciones en Hugging Face sin artefactos asociados.
 - No disponible para prototipado, fine-tuning o despliegue en inferencia.
 
 ## Benchmarks y rendimiento
@@ -72,5 +72,5 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HomeTrace/HomeTrace
+- Repositorio en Hugging Face: https://huggingface.co/HomeTrace/HomeTrace
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion disponible.

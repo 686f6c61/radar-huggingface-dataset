@@ -75,8 +75,8 @@ No se dispone de datos comparativos en la informacion proporcionada. La unica co
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `budget-internalization-iclr2027/nemotron3-nano-4b-8k-grpo-hardyman-s300` | 3,97B | No disponible | NVIDIA Nemotron Open Model License | HuggingFace, 0 descargas, 1 like |
-| `nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16` (base) | No disponible en la informacion proporcionada | No disponible | NVIDIA Nemotron Open Model License | HuggingFace (referenciado como base) |
+| `budget-internalization-iclr2027/nemotron3-nano-4b-8k-grpo-hardyman-s300` | 3,97B | No disponible | NVIDIA Nemotron Open Model License | Hugging Face, 0 descargas, 1 like |
+| `nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16` (base) | No disponible en la informacion proporcionada | No disponible | NVIDIA Nemotron Open Model License | Hugging Face (referenciado como base) |
 | Alternativas de la misma categoria (por ejemplo, modelos de razonamiento matematico de 1,5B-7B) | No disponible | No disponible | No disponible | No disponible |
 
 Candidatos plausibles de comparacion serian otros modelos pequenos ajustados para matematicas, pero no se han proporcionado datos de parametros, contexto, rendimiento ni licencia para ninguno de ellos en la informacion disponible, por lo que no se incluyen filas con valores no verificados.
@@ -95,7 +95,7 @@ Candidatos plausibles de comparacion serian otros modelos pequenos ajustados par
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-8k-grpo-hardyman-s300
+- Modelo en Hugging Face: https://huggingface.co/budget-internalization-iclr2027/nemotron3-nano-4b-8k-grpo-hardyman-s300
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16
 - Dataset de entrenamiento: https://huggingface.co/datasets/agentica-org/DeepScaleR-Preview-Dataset
 - Licencia NVIDIA Nemotron Open Model License: https://www.nvidia.com/en-us/agreements/enterprise-software/nvidia-nemotron-open-model-license/

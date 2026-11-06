@@ -39,7 +39,7 @@ No se especifican requisitos de hardware en la información proporcionada. Dado 
 
 ## Comparativa con modelos similares
 
-No se dispone de información sobre modelos comparables. No se conocen alternativas de la misma categoría (0.8B) con las que comparar parámetros, contexto, rendimiento o licencia. Se recomienda buscar en el repositorio original de Quipuai o en la comunidad de HuggingFace para encontrar modelos de tamaño similar.
+No se dispone de información sobre modelos comparables. No se conocen alternativas de la misma categoría (0.8B) con las que comparar parámetros, contexto, rendimiento o licencia. Se recomienda buscar en el repositorio original de Quipuai o en la comunidad de Hugging Face para encontrar modelos de tamaño similar.
 
 ## Limitaciones y advertencias
 
@@ -52,6 +52,6 @@ No se dispone de información sobre modelos comparables. No se conocen alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/mradermacher/quipu-0.8b-GGUF
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/mradermacher/quipu-0.8b-GGUF
 - Repositorio del modelo original (Quipuai): https://huggingface.co/Quipuai/quipu-0.8b
 - Perfil del autor mradermacher: https://huggingface.co/mradermacher

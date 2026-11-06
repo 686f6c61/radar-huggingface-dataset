@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos entre estos modelos en la info
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Muesli-HQ/phonon-2.5-coreml
+- Repositorio Hugging Face: https://huggingface.co/Muesli-HQ/phonon-2.5-coreml
 - Modelo base: https://huggingface.co/FermionResearch/Phonon-2.5
 - Preprocesador: https://huggingface.co/FluidInference/parakeet-tdt-0.6b-v3-coreml
 - Pull request con scripts de conversion y resultados: https://github.com/FluidInference/mobius/pull/113

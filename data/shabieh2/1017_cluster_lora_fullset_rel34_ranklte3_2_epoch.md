@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`shabieh2/1017_cluster_lora_fullset_rel34_ranklte3_2_epoch` es un adaptador LoRA (PEFT) publicado en HuggingFace por el usuario `shabieh2`, entrenado sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptadores de bajo rango que deben cargarse junto con el modelo base para poder realizar inferencia. El repositorio ocupa 0,9 GB y fue creado el 17 de octubre de 2026, con un framework declarado de PEFT 0.20.0.
+`shabieh2/1017_cluster_lora_fullset_rel34_ranklte3_2_epoch` es un adaptador LoRA (PEFT) publicado en Hugging Face por el usuario `shabieh2`, entrenado sobre el modelo base `unsloth/Muse-Glimmer-30B`. No se trata de un modelo completo, sino de un conjunto de pesos de adaptadores de bajo rango que deben cargarse junto con el modelo base para poder realizar inferencia. El repositorio ocupa 0,9 GB y fue creado el 17 de octubre de 2026, con un framework declarado de PEFT 0.20.0.
 
-El nombre del repositorio aporta la poca informacion tecnica disponible: sugiere un entrenamiento tipo cluster LoRA sobre un conjunto de datos completo ("fullset"), con un rango maximo de 3 ("ranklte3") y 2 epocas. La model card es una plantilla generica de HuggingFace sin rellenar, por lo que no hay documentacion del autor sobre datos de entrenamiento, hiperparametros, objetivos o evaluacion.
+El nombre del repositorio aporta la poca informacion tecnica disponible: sugiere un entrenamiento tipo cluster LoRA sobre un conjunto de datos completo ("fullset"), con un rango maximo de 3 ("ranklte3") y 2 epocas. La model card es una plantilla generica de Hugging Face sin rellenar, por lo que no hay documentacion del autor sobre datos de entrenamiento, hiperparametros, objetivos o evaluacion.
 
 Su relevancia practica es limitada y experimental: cero descargas y cero "likes" en el momento de la consulta, licencia no declarada y ausencia total de resultados de evaluacion. Resulta util principalmente como artefacto de investigacion para replicar experimentos de ajuste fino eficiente sobre un modelo de 30B, o como punto de partida para inspeccionar como se comporta un adaptador de rango muy bajo antes de decidir si merece la pena integrarlo en un pipeline.
 
@@ -88,7 +88,7 @@ No se dispone de datos de benchmarks ni de especificaciones del modelo base en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ranklte3_2_epoch
+- Modelo en Hugging Face: https://huggingface.co/shabieh2/1017_cluster_lora_fullset_rel34_ranklte3_2_epoch
 - Modelo base: https://huggingface.co/unsloth/Muse-Glimmer-30B
 - Referencia citada en las etiquetas (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact#compute

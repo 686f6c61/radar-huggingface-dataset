@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible. Este
 
 | Modelo | Parametros | Contexto | Licencia | Notas |
 |---|---|---|---|---|
-| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32K (típico) | Apache 2.0 | Modelo original sin destilación, disponible en HuggingFace |
+| Qwen2.5-1.5B-Instruct (base) | 1,54B | 32K (típico) | Apache 2.0 | Modelo original sin destilación, disponible en Hugging Face |
 | Este checkpoint (gate-only) | 1,54B | No disponible | Apache 2.0 | Destilado desde Qwen2.5-7B-Instruct con GKD y gate de tokens |
 | TinyLlama-1.1B | 1,1B | 2K | Apache 2.0 | Modelo pequeño de propósito general, no destilado desde un teacher específico |
 

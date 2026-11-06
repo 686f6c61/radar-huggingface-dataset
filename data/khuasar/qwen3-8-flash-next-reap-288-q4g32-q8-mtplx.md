@@ -102,7 +102,7 @@ La comparativa con alternativas de otros fabricantes no esta disponible en la in
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/khuasar/Qwen3.8-Flash-Next-REAP-288-Q4g32-Q8-MTPLX
+- Repositorio en Hugging Face: https://huggingface.co/khuasar/Qwen3.8-Flash-Next-REAP-288-Q4g32-Q8-MTPLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Fuente de la seleccion REAP-288: https://huggingface.co/sh0wie/Qwen3.8-Flash-Next-REAP-288-MLX-4bit

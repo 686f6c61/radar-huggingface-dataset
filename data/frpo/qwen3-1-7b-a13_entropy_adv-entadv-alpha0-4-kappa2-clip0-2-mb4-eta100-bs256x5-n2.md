@@ -76,8 +76,8 @@ No se dispone de información comparativa publicada para este checkpoint. Se pue
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible (públicamente se conoce 32k, pero no está en la info) | no disponible | HuggingFace |
-| FRPO/qwen3-1.7b-a13_entropy_adv... | 2,03B | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3-1.7B (base) | 1,7B | no disponible (públicamente se conoce 32k, pero no está en la info) | no disponible | Hugging Face |
+| FRPO/qwen3-1.7b-a13_entropy_adv... | 2,03B | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,6 +90,6 @@ No se dispone de información comparativa publicada para este checkpoint. Se pue
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/FRPO/qwen3-1.7b-a13_entropy_adv-entAdv-alpha0.4-kappa2-clip0.2-mb4-eta100-bs256x5-n2
+- Repositorio Hugging Face: https://huggingface.co/FRPO/qwen3-1.7b-a13_entropy_adv-entAdv-alpha0.4-kappa2-clip0.2-mb4-eta100-bs256x5-n2
 - Framework verl: https://github.com/volcengine/verl
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B

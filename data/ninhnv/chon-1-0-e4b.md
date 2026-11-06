@@ -89,8 +89,8 @@ La busqueda web realizada no devolvio ninguna referencia util (los resultados co
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Chon-1.0-E4B | No disponible (adaptador de ~558 MB sobre Gemma 4 E4B, ~4B efectivos) | Prompt 8.192 tokens / estado 6.000 tokens | Mediciones propias: Intelligence 77,9 y calibracion 85,7 en JevBench publico (231) | Apache-2.0 | HuggingFace (0 descargas, 0 likes en el momento de la consulta) |
-| google/gemma-4-E4B-it | No disponible en la informacion proporcionada | No disponible | No disponible para tareas de decision tipada | Apache-2.0 segun la model card | HuggingFace |
+| Chon-1.0-E4B | No disponible (adaptador de ~558 MB sobre Gemma 4 E4B, ~4B efectivos) | Prompt 8.192 tokens / estado 6.000 tokens | Mediciones propias: Intelligence 77,9 y calibracion 85,7 en JevBench publico (231) | Apache-2.0 | Hugging Face (0 descargas, 0 likes en el momento de la consulta) |
+| google/gemma-4-E4B-it | No disponible en la informacion proporcionada | No disponible | No disponible para tareas de decision tipada | Apache-2.0 segun la model card | Hugging Face |
 | Otros modelos comparables de decision tipada | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -108,7 +108,7 @@ La busqueda web realizada no devolvio ninguna referencia util (los resultados co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ninhnv/chon-1.0-e4b
+- Modelo en Hugging Face: https://huggingface.co/ninhnv/chon-1.0-e4b
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - Repositorio del servidor: https://github.com/xoai/chon
 - No se han encontrado en la busqueda web articulos, papers, blogs ni demos adicionales relacionados con el modelo.

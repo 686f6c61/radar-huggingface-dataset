@@ -101,7 +101,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yehor-oleksiuk/laya-typed-decisions-onnx
+- Modelo en Hugging Face: https://huggingface.co/yehor-oleksiuk/laya-typed-decisions-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio con codigo, detalles de entrenamiento y benchmarks originales: https://github.com/NandhaKishorM/laya
 - Resultados de busqueda web: no se han encontrado enlaces relevantes; los resultados devueltos corresponden a hilos de foros de World of Warcraft sobre Raider.IO y no tienen relacion con el modelo.

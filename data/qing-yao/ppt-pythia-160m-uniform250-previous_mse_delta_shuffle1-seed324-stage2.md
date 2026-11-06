@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1-seed324-stage2` es un checkpoint de investigación publicado por el usuario `qing-yao` en HuggingFace. Se trata de un ajuste fino (stage 2) del modelo `qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1`, que a su vez deriva de la familia Pythia-160M de EleutherAI. El modelo tiene 162.322.944 parámetros y una arquitectura `gpt_neox` (transformer decoder-only con atención causal), empaquetada con la librería `transformers` y pesos en `safetensors`.
+`ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1-seed324-stage2` es un checkpoint de investigación publicado por el usuario `qing-yao` en Hugging Face. Se trata de un ajuste fino (stage 2) del modelo `qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1`, que a su vez deriva de la familia Pythia-160M de EleutherAI. El modelo tiene 162.322.944 parámetros y una arquitectura `gpt_neox` (transformer decoder-only con atención causal), empaquetada con la librería `transformers` y pesos en `safetensors`.
 
 El nombre del repositorio sugiere un experimento de entrenamiento con una configuración muy concreta: ventana o presupuesto «uniform250», una variante de objetivo basada en MSE sobre el token previo (`previous_mse`) y una variante con barajado de deltas (`delta_shuffle1`), todo ello con la semilla 324 y en dos etapas. La model card, generada automáticamente por el `Trainer`, no documenta ni el dataset ni la motivación del experimento: el apartado «Model description» aparece literalmente como «More information needed».
 
@@ -50,7 +50,7 @@ El entrenamiento se realizó en dos etapas (stage1 y stage2). Los hiperparámetr
 - No hay evidencia publicada de capacidades de agente ni de razonamiento multi-paso.
 - Capacidades multilingües: no disponibles; el modelo base Pythia se entrenó con The Pile, de composición mayoritariamente inglesa.
 - No se declaran capacidades especiales (modo thinking, visión, audio, decodificación especulativa propia).
-- El repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable mediante la infraestructura de TGI de HuggingFace.
+- El repositorio incluye la etiqueta `text-generation-inference` y `endpoints_compatible`, por lo que es desplegable mediante la infraestructura de TGI de Hugging Face.
 
 ## Casos de uso
 
@@ -97,10 +97,10 @@ La pérdida de evaluación final declarada por el autor es 3,8428, correspondien
 
 | Modelo | Parametros | Contexto | Licencia | Datos de rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| ppt-pythia-160m-...-stage2 (este modelo) | 162.322.944 | no disponible en la ficha | apache-2.0 | sin benchmarks; perdida de evaluacion 3,8428 | HuggingFace, 200 descargas, 0 likes |
+| ppt-pythia-160m-...-stage2 (este modelo) | 162.322.944 | no disponible en la ficha | apache-2.0 | sin benchmarks; perdida de evaluacion 3,8428 | Hugging Face, 200 descargas, 0 likes |
 | Pythia-160M (EleutherAI) | 162.322.944 (mismo recuento) | 2048 tokens | apache-2.0 | benchmarks publicados por EleutherAI en su model card y paper | ampliamente distribuido y citado |
-| GPT-2 (OpenAI, 124M) | 124M | 1024 tokens | licencia declarada en su ficha de HuggingFace | benchmarks parciales (evaluaciones de zero-shot en el paper original) | muy extendido, referencia histórica |
-| OPT-125M (Meta) | 125M | 2048 tokens | licencia declarada en su ficha de HuggingFace | benchmarks publicados en el paper de OPT | extendido, con pesos abiertos |
+| GPT-2 (OpenAI, 124M) | 124M | 1024 tokens | licencia declarada en su ficha de Hugging Face | benchmarks parciales (evaluaciones de zero-shot en el paper original) | muy extendido, referencia histórica |
+| OPT-125M (Meta) | 125M | 2048 tokens | licencia declarada en su ficha de Hugging Face | benchmarks publicados en el paper de OPT | extendido, con pesos abiertos |
 
 La comparación directa más limpia es contra Pythia-160M, dado que este checkpoint comparte exactamente el recuento de parámetros y probablemente la topología; la diferencia reside únicamente en el procedimiento de ajuste, que no está documentado ni evaluado con métricas estándar. Los datos de contexto y licencia de los modelos alternativos proceden de sus fichas oficiales y deben verificarse antes de un uso en producción.
 
@@ -118,7 +118,7 @@ La comparación directa más limpia es contra Pythia-160M, dado que este checkpo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1-seed324-stage2
+- Modelo en Hugging Face: https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse_delta_shuffle1-seed324-stage2
 - Modelo base (etapa 1): https://huggingface.co/qing-yao/ppt-pythia-160m-uniform250-previous_mse-seed324-stage1
 - Paper de Pythia (EleutherAI): https://arxiv.org/abs/2304.01373
 - Paper de GPT-NeoX-20B (arquitectura `gpt_neox`): https://arxiv.org/abs/2204.06745

@@ -96,7 +96,7 @@ La comparacion cuantitativa de rendimiento con alternativas no esta disponible, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/adityavardhansharma/EchoSwift-700M
+- Modelo en Hugging Face: https://huggingface.co/adityavardhansharma/EchoSwift-700M
 - Repositorio cuantizado LiteRT: https://huggingface.co/adityavardhansharma/EchoSwift-700M-LiteRT
 - Modelo base: https://huggingface.co/LiquidAI/LFM2-700M
 - Corpus de entrenamiento: https://huggingface.co/adityavardhansharma/echoflow-sft-corpus

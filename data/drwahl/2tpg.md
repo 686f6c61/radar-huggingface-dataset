@@ -2,7 +2,7 @@
 
 ## Resumen
 
-2-TPG es un ajuste fino de GPT-2 (124,4 millones de parámetros) entrenado para predecir el token **anterior** en lugar del siguiente. El modelo lo desarrolla Daniel Wahl (usuario `drwahl`) y se publicó en HuggingFace en abril de 2025 bajo licencia MIT. La idea es invertir el objetivo clásico de modelado de lenguaje: en lugar de continuar un texto, el modelo genera el contexto que podría haber conducido a un final dado.
+2-TPG es un ajuste fino de GPT-2 (124,4 millones de parámetros) entrenado para predecir el token **anterior** en lugar del siguiente. El modelo lo desarrolla Daniel Wahl (usuario `drwahl`) y se publicó en Hugging Face en abril de 2025 bajo licencia MIT. La idea es invertir el objetivo clásico de modelado de lenguaje: en lugar de continuar un texto, el modelo genera el contexto que podría haber conducido a un final dado.
 
 El procedimiento de entrenamiento consiste en tomar muestras de la distribución de salida típica de GPT-2 (el *GPT-2 output dataset*), tokenizarlas con el BPE a nivel de byte de GPT-2, invertir la secuencia de tokens y ajustar el modelo sobre esas secuencias invertidas. El resultado es un modelo que ha aprendido a "pensar hacia atrás" y que sirve como herramienta de investigación sobre dependencias bidireccionales en modelos de lenguaje.
 
@@ -77,10 +77,10 @@ Conclusiones que se derivan de estos datos: 2-TPG es aproximadamente 20 veces me
 
 | Modelo | Parámetros | Contexto | Perplejidad inversa | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| 2-TPG (`drwahl/2tpg`) | 124,4 M | 1024 tokens | 14,04 | MIT | HuggingFace, safetensors |
-| GPT-2 small (`openai-community/gpt2`) | 124,4 M | 1024 tokens | 284,11 | MIT | HuggingFace, safetensors, GGUF |
-| GPT-2 medium | 355 M | 1024 tokens | no disponible | MIT | HuggingFace, safetensors |
-| DistilGPT-2 | 82 M | 1024 tokens | no disponible | MIT | HuggingFace, safetensors |
+| 2-TPG (`drwahl/2tpg`) | 124,4 M | 1024 tokens | 14,04 | MIT | Hugging Face, safetensors |
+| GPT-2 small (`openai-community/gpt2`) | 124,4 M | 1024 tokens | 284,11 | MIT | Hugging Face, safetensors, GGUF |
+| GPT-2 medium | 355 M | 1024 tokens | no disponible | MIT | Hugging Face, safetensors |
+| DistilGPT-2 | 82 M | 1024 tokens | no disponible | MIT | Hugging Face, safetensors |
 
 No existen, en la información disponible, otros modelos públicos especializados en predicción inversa de tokens con los que establecer una comparación directa. Las alternativas de la tabla son modelos de la misma familia y tamaño, pero entrenados con el objetivo estándar de predicción del token siguiente; la perplejidad inversa de GPT-2 medium y DistilGPT-2 no se ha publicado.
 
@@ -99,7 +99,7 @@ No existen, en la información disponible, otros modelos públicos especializado
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/drwahl/2tpg
+- Modelo en Hugging Face: https://huggingface.co/drwahl/2tpg
 - Repositorio de código (entrenamiento, evaluación e inferencia): https://github.com/danwahl/2tpg
 - Dataset de salidas de GPT-2 utilizado para el ajuste fino: https://github.com/openai/gpt-2-output-dataset
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante sobre el modelo. Las búsquedas devolvieron exclusivamente sitios de contenido para adultos sin relación alguna con el modelo, por lo que se han descartado.

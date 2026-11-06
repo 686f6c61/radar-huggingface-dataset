@@ -74,9 +74,9 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K u
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-Prompt-Guard-2-86M-guardrail-ft (este) | 86M | 512 tokens | Detección de prompt injection indirecto (en/es) | Llama 4 Community License | ONNX en HuggingFace |
-| meta-llama/Llama-Prompt-Guard-2-86M (base) | 86M | 512 tokens | Detección de prompt injection | Llama 4 Community License | HuggingFace |
-| deepset/prompt-injections (dataset) | no aplica | no aplica | Conjunto de datos de inyección de prompts | no disponible | HuggingFace |
+| Llama-Prompt-Guard-2-86M-guardrail-ft (este) | 86M | 512 tokens | Detección de prompt injection indirecto (en/es) | Llama 4 Community License | ONNX en Hugging Face |
+| meta-llama/Llama-Prompt-Guard-2-86M (base) | 86M | 512 tokens | Detección de prompt injection | Llama 4 Community License | Hugging Face |
+| deepset/prompt-injections (dataset) | no aplica | no aplica | Conjunto de datos de inyección de prompts | no disponible | Hugging Face |
 
 No se dispone de datos comparativos de otros clasificadores de prompt injection en la información proporcionada; la comparación más directa es contra el modelo base, cuyos resultados se incluyen en la tabla de benchmarks.
 
@@ -93,7 +93,7 @@ No se dispone de datos comparativos de otros clasificadores de prompt injection 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/juanpza/Llama-Prompt-Guard-2-86M-guardrail-ft
+- Modelo en Hugging Face: https://huggingface.co/juanpza/Llama-Prompt-Guard-2-86M-guardrail-ft
 - Modelo base: https://huggingface.co/meta-llama/Llama-Prompt-Guard-2-86M
 - Licencia Llama 4: https://www.llama.com/llama4/license/
 - Dataset deepset/prompt-injections: https://huggingface.co/datasets/deepset/prompt-injections

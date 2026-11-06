@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UOPD-Qwen2.5-1.5B-Instruct-ALFWorld es un checkpoint final de estudiante entrenado con el método UOPD (el acrónimo no se desarrolla en la model card, aunque las etiquetas del repositorio lo asocian a destilación on-policy) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario Wenboz en HuggingFace y su propósito es transferir a un modelo de 1,5 B de parámetros el comportamiento de agente de un profesor congelado de 7 B, langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld, evaluado en el entorno textual ALFWorld.
+UOPD-Qwen2.5-1.5B-Instruct-ALFWorld es un checkpoint final de estudiante entrenado con el método UOPD (el acrónimo no se desarrolla en la model card, aunque las etiquetas del repositorio lo asocian a destilación on-policy) sobre el modelo base Qwen/Qwen2.5-1.5B-Instruct. Lo publica el usuario Wenboz en Hugging Face y su propósito es transferir a un modelo de 1,5 B de parámetros el comportamiento de agente de un profesor congelado de 7 B, langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld, evaluado en el entorno textual ALFWorld.
 
 El modelo cuenta con 1.777.088.000 parámetros reales (según los pesos safetensors) y un repositorio de 3,6 GB. El interés práctico está en la línea de investigación de destilación de agentes: comprimir la política de un profesor grande en un estudiante que pueda ejecutarse en hardware de consumo, manteniendo la capacidad de completar tareas domésticas multi-paso formuladas en lenguaje natural. La configuración de entrenamiento está documentada con detalle (250 pasos, AdamW con lr 1e-6, tasa de intervención del profesor decreciente de 0,50 a 0,30), lo que facilita reproducir o auditar el procedimiento.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento que permitan comparar la calidad de estos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Wenboz/UOPD-Qwen2.5-1.5B-Instruct-ALFWorld
+- Modelo en Hugging Face: https://huggingface.co/Wenboz/UOPD-Qwen2.5-1.5B-Instruct-ALFWorld
 - Profesor utilizado en la destilación: https://huggingface.co/langfeng01/GiGPO-Qwen2.5-7B-Instruct-ALFWorld
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Resultados de la búsqueda web: no se ha encontrado ningún enlace relevante (papers, blogs, repositorios o demos) relacionado con este modelo; los resultados devueltos correspondían a servicios de música y no guardan relación con el contenido de la ficha.

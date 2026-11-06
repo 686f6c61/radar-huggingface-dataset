@@ -4,7 +4,7 @@
 
 TUE-Detector-SFT-ep4p5 es un checkpoint de fine-tuning supervisado (SFT) sobre el modelo multimodal Qwen2.5-VL-7B, desarrollado por Louis-YW como parte del proyecto TUE-Detector, orientado a la autenticidad y forensia de vídeo. El modelo está diseñado para detectar manipulaciones o artefactos en secuencias de vídeo, integrando capacidades de comprensión visual y lingüística propias de la familia Qwen2.5-VL. Este checkpoint concreto representa la fase post-SFT y pre-RL, es decir, la inicialización estable antes de un posterior entrenamiento por refuerzo, tal y como indica su model card.
 
-Con 8.292.166.656 parámetros (aproximadamente 8,29 mil millones), el modelo se distribuye en formato safetensors y se carga mediante la librería transformers con las clases `Qwen2_5_VLForConditionalGeneration` y `AutoProcessor`. Su pipeline es image-text-to-text, lo que permite procesar entradas visuales (imágenes y vídeo) junto con texto. Aunque la licencia y los idiomas soportados no están especificados en la ficha de HuggingFace, el modelo hereda la arquitectura y el tokenizador de Qwen2.5-VL, que soporta múltiples idiomas de forma nativa. Su relevancia radica en la creciente necesidad de herramientas de verificación de contenido audiovisual en un contexto de proliferación de deepfakes y vídeos generados por IA.
+Con 8.292.166.656 parámetros (aproximadamente 8,29 mil millones), el modelo se distribuye en formato safetensors y se carga mediante la librería transformers con las clases `Qwen2_5_VLForConditionalGeneration` y `AutoProcessor`. Su pipeline es image-text-to-text, lo que permite procesar entradas visuales (imágenes y vídeo) junto con texto. Aunque la licencia y los idiomas soportados no están especificados en la ficha de Hugging Face, el modelo hereda la arquitectura y el tokenizador de Qwen2.5-VL, que soporta múltiples idiomas de forma nativa. Su relevancia radica en la creciente necesidad de herramientas de verificación de contenido audiovisual en un contexto de proliferación de deepfakes y vídeos generados por IA.
 
 ## Especificaciones técnicas
 
@@ -50,15 +50,15 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: con precisión fp16, el modelo requiere aproximadamente 16-17 GB de VRAM (considerando 8,29 B parámetros × 2 bytes). Con cuantización 4-bit, podría reducirse a unos 5-6 GB, aunque no se ofrecen archivos GGUF ni AWQ en el repositorio.
 - GPU recomendadas: para fp16, una RTX 3090, RTX 4090 o A100 de 24 GB es suficiente para inferencia de un solo ejemplo. Para procesamiento por lotes o vídeo largo, se recomiendan GPUs con 40 GB o más (A100 40GB, H100).
 - Compatibilidad con GPU de consumo: sí, es posible ejecutarlo en una RTX 4090 (24 GB) con fp16, o en GPUs de 8-12 GB si se aplica cuantización externa (por ejemplo, con bitsandbytes).
-- Opciones de despliegue: el modelo es compatible con transformers, vLLM, TGI (text-generation-inference) y endpoints compatibles, según los tags de HuggingFace. También puede usarse con llama.cpp si se convierte a GGUF, aunque no se proporciona.
+- Opciones de despliegue: el modelo es compatible con transformers, vLLM, TGI (text-generation-inference) y endpoints compatibles, según los tags de Hugging Face. También puede usarse con llama.cpp si se convierte a GGUF, aunque no se proporciona.
 - Latencia y throughput: no disponibles. Dependerá del hardware y de la longitud del vídeo de entrada.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TUE-Detector-SFT-ep4p5 | 8,29 B | no disponible | Qwen2.5-VL | no disponible | HuggingFace |
-| Qwen2.5-VL-7B (base) | 8,29 B | 128k tokens (oficial) | Qwen2.5-VL | Apache 2.0 (Qwen) | HuggingFace |
+| TUE-Detector-SFT-ep4p5 | 8,29 B | no disponible | Qwen2.5-VL | no disponible | Hugging Face |
+| Qwen2.5-VL-7B (base) | 8,29 B | 128k tokens (oficial) | Qwen2.5-VL | Apache 2.0 (Qwen) | Hugging Face |
 | Otros detectores de deepfake (p.ej. modelos basados en EfficientNet o transformers) | variable | variable | CNN/transformer | variable | variable |
 
 La comparativa directa con otros detectores de deepfake es difícil por la falta de benchmarks públicos. Frente al modelo base Qwen2.5-VL-7B, este checkpoint está especializado en forensia de vídeo, pero hereda la misma arquitectura y tamaño. La licencia del modelo base es Apache 2.0, pero la de este checkpoint no está declarada, lo que introduce incertidumbre legal.
@@ -75,5 +75,5 @@ La comparativa directa con otros detectores de deepfake es difícil por la falta
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Louis-YW/TUE-Detector-SFT-ep4p5
+- Hugging Face: https://huggingface.co/Louis-YW/TUE-Detector-SFT-ep4p5
 - Repositorio de código e inferencia: https://github.com/Louis-YW/TUE

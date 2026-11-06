@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Test11535/test es un repositorio alojado en HuggingFace por el usuario Test11535. Segun los metadatos disponibles, fue creado y actualizado el 1 de octubre de 2026, cuenta con 0 descargas y 0 likes, y esta publicado bajo licencia Apache 2.0. No se especifica pipeline, idiomas soportados ni contenido en la model card mas alla de la propia declaracion de licencia.
+Test11535/test es un repositorio alojado en Hugging Face por el usuario Test11535. Segun los metadatos disponibles, fue creado y actualizado el 1 de octubre de 2026, cuenta con 0 descargas y 0 likes, y esta publicado bajo licencia Apache 2.0. No se especifica pipeline, idiomas soportados ni contenido en la model card mas alla de la propia declaracion de licencia.
 
 El repositorio no incluye informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni pesos del modelo. La model card extraida unicamente contiene el campo `license: apache-2.0`, sin descripcion funcional, ejemplos de uso ni referencias tecnicas. Los resultados de busqueda web asociados no guardan relacion con este repositorio concreto, por lo que no aportan datos verificables.
 
@@ -70,7 +70,7 @@ No disponible. No se puede identificar la categoria del modelo (tamano, tarea, m
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Test11535/test
+- Hugging Face: https://huggingface.co/Test11535/test
 - Resultados de busqueda web (no relacionados con este repositorio concreto, aportados como referencia generica):
   - https://benchlm.ai/
   - https://smartdev.com/ai-model-testing-guide/

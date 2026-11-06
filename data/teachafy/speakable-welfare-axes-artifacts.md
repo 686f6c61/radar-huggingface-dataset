@@ -79,7 +79,7 @@ No disponible. Este repositorio no es un modelo de lenguaje comparable con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Teachafy/speakable-welfare-axes-artifacts
+- Repositorio Hugging Face: https://huggingface.co/Teachafy/speakable-welfare-axes-artifacts
 - Codigo del proyecto: https://github.com/nsharan2000/speakable-welfare-axes
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Reproduccion de vectores de bienestar: https://huggingface.co/nickmahdavi/functional-welfare

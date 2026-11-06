@@ -2,9 +2,9 @@
 
 ## Resumen
 
-HexWeaver-27B-v4 es un adaptador PEFT (LoRA) publicado por el usuario mehemet en HuggingFace, orientado a tareas de ingeniería inversa, descompilación y análisis de binarios. El repositorio no contiene pesos completos de un modelo base, sino un conjunto de adaptadores de bajo rango (0,2 GB) que se aplican sobre un modelo base de aproximadamente 27 mil millones de parámetros, presumiblemente un transformer denso de la familia Llama o similar. Los tags del repositorio lo especializan en dominios muy concretos: Ghidra y su representación PCode, el solver SMT Z3, verificación formal, ejecución simbólica con angr, deobfuscación de binarios protegidos con Tigress y OLLVM, y flattening de flujo de control.
+HexWeaver-27B-v4 es un adaptador PEFT (LoRA) publicado por el usuario mehemet en Hugging Face, orientado a tareas de ingeniería inversa, descompilación y análisis de binarios. El repositorio no contiene pesos completos de un modelo base, sino un conjunto de adaptadores de bajo rango (0,2 GB) que se aplican sobre un modelo base de aproximadamente 27 mil millones de parámetros, presumiblemente un transformer denso de la familia Llama o similar. Los tags del repositorio lo especializan en dominios muy concretos: Ghidra y su representación PCode, el solver SMT Z3, verificación formal, ejecución simbólica con angr, deobfuscación de binarios protegidos con Tigress y OLLVM, y flattening de flujo de control.
 
-El modelo resuelve un problema específico del sector de seguridad: la falta de asistentes de IA entrenados para razonar sobre representaciones intermedias de bajo nivel (PCode, IR de angr, fórmulas SMT) en lugar de código fuente de alto nivel. Es relevante porque permite automatizar partes del análisis de malware y de la desobfuscación que tradicionalmente requieren ingeniería manual. La licencia es Apache 2.0, los idiomas declarados son inglés y turco, y el acceso está restringido (gated), por lo que se requiere aceptar condiciones en HuggingFace antes de descargar.
+El modelo resuelve un problema específico del sector de seguridad: la falta de asistentes de IA entrenados para razonar sobre representaciones intermedias de bajo nivel (PCode, IR de angr, fórmulas SMT) en lugar de código fuente de alto nivel. Es relevante porque permite automatizar partes del análisis de malware y de la desobfuscación que tradicionalmente requieren ingeniería manual. La licencia es Apache 2.0, los idiomas declarados son inglés y turco, y el acceso está restringido (gated), por lo que se requiere aceptar condiciones en Hugging Face antes de descargar.
 
 ## Especificaciones tecnicas
 
@@ -66,7 +66,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 ## Limitaciones y advertencias
 
 - El repositorio contiene solo el adaptador PEFT; sin el modelo base correcto, los pesos no son utilizables. La base no está identificada en la información disponible.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar, lo que puede complicar pipelines automatizados.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar, lo que puede complicar pipelines automatizados.
 - Idiomas limitados a inglés y turco; el castellano no está declarado como soportado.
 - Riesgo de alucinación elevado en dominios de bajo nivel: el modelo puede inventar offsets, nombres de funciones o constraints SMT plausibles pero incorrectos; toda salida debe validarse con Ghidra, angr o Z3.
 - Sesgos conocidos: no disponible; no hay documentación de evaluación de sesgos.
@@ -76,7 +76,7 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mehemet/HexWeaver-27B-v4
+- Hugging Face: https://huggingface.co/mehemet/HexWeaver-27B-v4
 - Ghidra (referencia del dominio): https://ghidra-sre.org/
 - angr (referencia del dominio): https://angr.io/
 - Z3 (referencia del dominio): https://github.com/Z3Prover/z3

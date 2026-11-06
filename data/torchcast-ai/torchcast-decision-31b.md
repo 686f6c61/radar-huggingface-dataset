@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Interfaz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Torchcast Decision 31B | 32,68 B | no disponible (retención cabeza/cola >16.384 tokens) | Decisiones tipadas (sí/no, choice, score) mediante paquete propio | Apache 2.0 | HuggingFace, servicio con `torchcast_decision` |
-| google/gemma-4-31B-it | no disponible en la información | no disponible | Generación de texto multimodal (image-text-to-text) | Apache 2.0 | HuggingFace, ecosistema amplio |
+| Torchcast Decision 31B | 32,68 B | no disponible (retención cabeza/cola >16.384 tokens) | Decisiones tipadas (sí/no, choice, score) mediante paquete propio | Apache 2.0 | Hugging Face, servicio con `torchcast_decision` |
+| google/gemma-4-31B-it | no disponible en la información | no disponible | Generación de texto multimodal (image-text-to-text) | Apache 2.0 | Hugging Face, ecosistema amplio |
 | Alternativas de clasificación basadas en encoders | no disponible | no disponible | Clasificación supervisada | variable | variable |
 
 No se dispone de datos de benchmarks comparativos en la información proporcionada, por lo que no es posible contrastar rendimiento frente a alternativas.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/torchcast-ai/torchcast-decision-31b
+- Modelo en Hugging Face: https://huggingface.co/torchcast-ai/torchcast-decision-31b
 - Instrucciones de servicio (GitHub, tag v1.0.0): https://github.com/Torchcast-AI/torchcast-decision-31b/tree/v1.0.0#run-for-evaluation
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license

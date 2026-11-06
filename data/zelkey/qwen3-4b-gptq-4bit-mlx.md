@@ -72,7 +72,7 @@ La comparativa se basa en informacion publica del modelo base. Este repositorio 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zelkey/Qwen3-4B-GPTQ-4bit-mlx
+- Repositorio Hugging Face: https://huggingface.co/zelkey/Qwen3-4B-GPTQ-4bit-mlx
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Version MLX oficial de Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B-MLX-4bit
 - Repositorio GitHub de Qwen3: https://github.com/QwenLM/Qwen3

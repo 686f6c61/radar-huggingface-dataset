@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo | Backbone | Resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EURS-MaCVi2027-APC_TDC-track1-weights | Ensemble restauración + segmentación subacuática | DINOv3 ViT-L/16 + LoRA + FPN; Mask2Former Swin-L; NAFNet | 1024×1360 y 768×1024 | dinov3-license / MIT | HuggingFace (7 GB) |
-| Mask2Former Swin-L (ADE) | Segmentación semántica general | Swin-L | Hasta 768×1024 típicamente | MIT | HuggingFace |
-| DINOv3 ViT-L/16 (LVD-1689M) | Backbone de visión auto-supervisado | ViT-L/16 | Variable | DINOv3 License | HuggingFace / Meta |
+| EURS-MaCVi2027-APC_TDC-track1-weights | Ensemble restauración + segmentación subacuática | DINOv3 ViT-L/16 + LoRA + FPN; Mask2Former Swin-L; NAFNet | 1024×1360 y 768×1024 | dinov3-license / MIT | Hugging Face (7 GB) |
+| Mask2Former Swin-L (ADE) | Segmentación semántica general | Swin-L | Hasta 768×1024 típicamente | MIT | Hugging Face |
+| DINOv3 ViT-L/16 (LVD-1689M) | Backbone de visión auto-supervisado | ViT-L/16 | Variable | DINOv3 License | Hugging Face / Meta |
 | NAFNet | Restauración de imagen | NAFNet | Variable | No disponible en la información | Repositorios de investigación |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -87,7 +87,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/seantangth/EURS-MaCVi2027-APC_TDC-track1-weights
+- Hugging Face: https://huggingface.co/seantangth/EURS-MaCVi2027-APC_TDC-track1-weights
 - Repositorio GitHub del método e inferencia: https://github.com/seantangth/EURS-MaCVi2027-APC_TDC-track1
 - Licencia DINOv3: https://github.com/facebookresearch/dinov3/blob/main/LICENSE.md
 - Checkpoint base Mask2Former Swin-L ADE: https://huggingface.co/facebook/mask2former-swin-large-ade-semantic

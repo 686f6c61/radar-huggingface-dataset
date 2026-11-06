@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Tipo | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Barbatosu/pi05_full_run_01 | ~4,14 B | VLA (π₀.₅ fine-tuneado) | no disponible | no disponible | HuggingFace (0 descargas) |
+| Barbatosu/pi05_full_run_01 | ~4,14 B | VLA (π₀.₅ fine-tuneado) | no disponible | no disponible | Hugging Face (0 descargas) |
 | π₀ (Pi0) | no disponible en la informacion | VLA | no disponible | no disponible | OpenPI (open source) |
 | π₀.₅ (Pi05) base | no disponible en la informacion | VLA | no disponible | no disponible | OpenPI / Physical Intelligence |
 | Otras politicas LeRobot (p. ej. ACT, Diffusion Policy) | no disponible | Politicas de imitacion | no disponible | no disponible | LeRobot |
@@ -103,7 +103,7 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Barbatosu/pi05_full_run_01
+- Modelo en Hugging Face: https://huggingface.co/Barbatosu/pi05_full_run_01
 - Dataset de entrenamiento: https://huggingface.co/datasets/Barbatosu/record-test_20261026_201007
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=Barbatosu/record-test_20261026_201007
 - Blog de π₀.₅ (Physical Intelligence): https://www.physicalintelligence.company/blog/pi05

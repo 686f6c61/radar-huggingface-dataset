@@ -107,11 +107,11 @@ No se dispone de datos comparativos en la informacion proporcionada: no hay resu
 - Repositorio sin adopcion (0 descargas, 0 likes) y con fecha de publicacion muy reciente: no hay validacion independiente de terceros.
 - La designacion "9B" del nombre corresponde al modelo base, no al tamano de los pesos publicados (309M), lo que puede inducir a error al planificar recursos.
 - No se dispone de informacion sobre cuantizacion, por lo que no puede confirmarse su viabilidad en hardware limitado.
-- Los resultados de busqueda web consultados no aportaron informacion tecnica relevante sobre el modelo; la ficha se basa unicamente en los datos del repositorio de HuggingFace y su model card.
+- Los resultados de busqueda web consultados no aportaron informacion tecnica relevante sobre el modelo; la ficha se basa unicamente en los datos del repositorio de Hugging Face y su model card.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-9B
+- Repositorio Hugging Face: https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-9B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio GitHub previsto (pendiente de publicacion): https://github.com/dragonlzm/MaLoW
 - Paper, blog o demo: no disponible en la informacion proporcionada

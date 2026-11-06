@@ -92,7 +92,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de otras
 
 ## Enlaces
 
-- Repositorio HuggingFace (8 bits MLX): https://huggingface.co/0x36/Spark-X2.6-4B-mlx-8bit
+- Repositorio Hugging Face (8 bits MLX): https://huggingface.co/0x36/Spark-X2.6-4B-mlx-8bit
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.6-4B
 - Variante bf16: https://huggingface.co/0x36/Spark-X2.6-4B-mlx-bf16
 - Variante 4 bits: https://huggingface.co/0x36/Spark-X2.6-4B-mlx-4bit

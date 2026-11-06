@@ -103,7 +103,7 @@ Los datos de las alternativas proceden de sus fichas públicas y se incluyen ún
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/muhamad-geosurge/invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7
+- Modelo en Hugging Face: https://huggingface.co/muhamad-geosurge/invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-v0.3
 - Modelo instruct de referencia citado en la ficha: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Repositorio `mistral-inference`: https://github.com/mistralai/mistral-inference

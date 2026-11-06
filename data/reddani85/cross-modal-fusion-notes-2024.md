@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`reddani85/cross-modal-fusion-notes-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre fusion cross-modal publicado en HuggingFace bajo la licencia CC-BY-4.0. El autor, identificado como `reddani85`, lo describe explicitamente como un conjunto estructurado de apuntes que separa hipotesis y planes de resultados completados, y advierte que no reclama mejoras en benchmarks, ablaciones finalizadas, codigo publicado ni un checkpoint entrenado.
+`reddani85/cross-modal-fusion-notes-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre fusion cross-modal publicado en Hugging Face bajo la licencia CC-BY-4.0. El autor, identificado como `reddani85`, lo describe explicitamente como un conjunto estructurado de apuntes que separa hipotesis y planes de resultados completados, y advierte que no reclama mejoras en benchmarks, ablaciones finalizadas, codigo publicado ni un checkpoint entrenado.
 
 El repositorio contiene unicamente dos artefactos documentales: `reading.md` (la nota principal) y `README.md`. El tamano del repo es de 0.0 GB y no incluye pesos utilizables para inferencia. El unico dato numerico asociado a parametros en los metadatos de safetensors es de 16.576, una cifra que no corresponde a un modelo funcional de ese tamano y que debe interpretarse como un artefacto residual del etiquetado del repositorio, no como un modelo desplegable.
 
@@ -72,5 +72,5 @@ No disponible. No existe una categoria de modelos comparable, ya que este reposi
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/reddani85/cross-modal-fusion-notes-2024
+- Repositorio en Hugging Face: https://huggingface.co/reddani85/cross-modal-fusion-notes-2024
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

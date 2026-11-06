@@ -4,7 +4,7 @@
 
 Qwen3.8-27B es un modelo de lenguaje multimodal (imagen-texto-a-texto) desarrollado por el equipo de Qwen, presentado como la generación más capaz de la familia abierta Qwen hasta la fecha. Este modelo denso de 27.8 mil millones de parámetros integra un codificador de visión y un modelo de lenguaje causal con arquitectura híbrida que combina capas de atención lineal (Gated DeltaNet) y atención clásica (Gated Attention), junto con predicción multi-token (MTP). Está diseñado para tareas complejas de agente, codificación, investigación y razonamiento de largo alcance, con una ventana de contexto nativa de 262.144 tokens extensible hasta 1.000.000.
 
-El modelo destaca por su control flexible del razonamiento (modo thinking activable/desactivable, ajuste de esfuerzo de razonamiento, preservación del contexto de razonamiento histórico) y su comprensión nativa de imágenes y vídeos, desde diagramas STEM hasta vídeos de una hora. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio en HuggingFace contiene pesos en formato safetensors (55.6 GB) y configuración compatible con Transformers, vLLM, SGLang y TokenSpeed.
+El modelo destaca por su control flexible del razonamiento (modo thinking activable/desactivable, ajuste de esfuerzo de razonamiento, preservación del contexto de razonamiento histórico) y su comprensión nativa de imágenes y vídeos, desde diagramas STEM hasta vídeos de una hora. Se distribuye bajo licencia Apache 2.0, lo que permite uso comercial sin restricciones significativas. El repositorio en Hugging Face contiene pesos en formato safetensors (55.6 GB) y configuración compatible con Transformers, vLLM, SGLang y TokenSpeed.
 
 ## Especificaciones técnicas
 
@@ -65,7 +65,7 @@ Los valores numéricos de la tabla original no se han proporcionado en la inform
 
 | Modelo | Parámetros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B | 27.8B | 262K (ext. 1M) | Híbrida (DeltaNet + Attention) | Apache 2.0 | HuggingFace (safetensors) |
+| Qwen3.8-27B | 27.8B | 262K (ext. 1M) | Híbrida (DeltaNet + Attention) | Apache 2.0 | Hugging Face (safetensors) |
 | Qwen3.6-27B | ~27B | (no disponible) | (no disponible) | (no disponible) | (no disponible) |
 | Muse Glimmer-30B | ~30B | (no disponible) | (no disponible) | (no disponible) | (no disponible) |
 | Opus4.6 Max | (no disponible) | (no disponible) | (no disponible) | (no disponible) | (no disponible) |
@@ -84,5 +84,5 @@ Los datos de los modelos comparativos no están disponibles en la información p
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/gihakkk/Qwen3.8-27B-test](https://huggingface.co/gihakkk/Qwen3.8-27B-test)
+- Repositorio Hugging Face: [https://huggingface.co/gihakkk/Qwen3.8-27B-test](https://huggingface.co/gihakkk/Qwen3.8-27B-test)
 - Qwen Cloud (servicio alojado, próximamente): [https://www.qwencloud.com/models/qwen3.8-27b](https://www.qwencloud.com/models/qwen3.8-27b)

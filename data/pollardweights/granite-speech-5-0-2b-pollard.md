@@ -97,7 +97,7 @@ La busqueda web realizada no devolvio resultados tecnicos utilizables (solo pagi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PollardWeights/granite-speech-5.0-2b-Pollard
+- Modelo en Hugging Face: https://huggingface.co/PollardWeights/granite-speech-5.0-2b-Pollard
 - Modelo base: https://huggingface.co/ibm-granite/granite-speech-5.0-2b
 - Repositorio de la herramienta de cuantizacion Pollard Weights: https://github.com/WestWaters/pollard-weights
 - No se han encontrado en la busqueda web papers, blogs, demos ni repositorios adicionales relevantes para este modelo.

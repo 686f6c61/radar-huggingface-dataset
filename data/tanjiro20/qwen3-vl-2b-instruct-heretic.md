@@ -93,7 +93,7 @@ No se dispone en la información proporcionada de datos de rendimiento comparati
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Tanjiro20/Qwen3-VL-2B-Instruct-heretic
+- Hugging Face: https://huggingface.co/Tanjiro20/Qwen3-VL-2B-Instruct-heretic
 - Modelo base: https://huggingface.co/Qwen/Qwen3-VL-2B-Instruct
 - Heretic: https://heretic-project.org
 - Demo (Space de akhaliq): https://huggingface.co/spaces/akhaliq/Qwen3-VL-2B-Instruct

@@ -107,7 +107,7 @@ Perplejidad one-shot en WikiText-2 a 80% de esparsidad sobre HGRN-1.3B (el model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ikimyaii/hgrn-1.3B-ria-80pct
+- Modelo en Hugging Face: https://huggingface.co/ikimyaii/hgrn-1.3B-ria-80pct
 - Modelo base denso: https://huggingface.co/ikimyaii/hgrn-1.3B-dense-baseline
 - Modelo original de FLA: https://huggingface.co/fla-hub/hgrn-1.3B-100B
 - Librería flash-linear-attention: https://github.com/fla-org/flash-linear-attention

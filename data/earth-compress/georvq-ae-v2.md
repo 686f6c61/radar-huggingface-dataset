@@ -82,14 +82,14 @@ No se dispone de informacion sobre codecs comparables (por ejemplo, alternativas
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| georvq ae-v2 | no disponible | no aplica | Apache 2.0 | HuggingFace |
+| georvq ae-v2 | no disponible | no aplica | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - Especifico de AlphaEarth Foundations: solo comprime y decodifica los embeddings anuales de 64 bandas a 10 m de ese dataset; no es un compresor generico de imagenes ni de otros embeddings.
 - Perdida de fidelidad: la reconstruccion es int8 y con error no nulo en todas las rungs (1 - cos entre 0,0019 y 0,0266); no es una compresion sin perdidas.
-- Dependencia de la libreria `georvq` y de la descarga del bundle en la primera lectura; requiere acceso de red a HuggingFace y verificacion de hashes.
+- Dependencia de la libreria `georvq` y de la descarga del bundle en la primera lectura; requiere acceso de red a Hugging Face y verificacion de hashes.
 - Los almacenes codificados o decodificados con este modelo son obra derivada del dataset AlphaEarth y heredan su licencia CC-BY 4.0 y su atribucion, que cada cabecera de almacen registra; el uso comercial debe respetar ambas licencias.
 - La codificacion requiere el bundle completo (319,5 MB); el bundle solo-decoder no permite codificar.
 - Los almacenes que fijan la revision 8b4f9449 descargan los ficheros torch del bundle completo (173,2 MB, sin ONNX) en lugar del bundle solo-decoder.
@@ -98,7 +98,7 @@ No se dispone de informacion sobre codecs comparables (por ejemplo, alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/earth-compress/georvq-ae-v2
+- Modelo en Hugging Face: https://huggingface.co/earth-compress/georvq-ae-v2
 - Dataset de muestra: https://huggingface.co/datasets/earth-compress/georvq-ae-v2-sample
 - Repositorio de la libreria: https://github.com/earth-compress/georvq
 - Dataset fuente AlphaEarth Foundations: https://source.coop/tge-labs/aef

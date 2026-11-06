@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3` es un adaptador LoRA (PEFT) publicado en HuggingFace que se presenta como un ajuste fino por supervisión (SFT) sobre el checkpoint `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de pesos delta que deben cargarse junto al modelo base para poder ejecutarse. El autor no ha publicado licencia, idiomas soportados, datos de entrenamiento ni resultados de evaluación: la model card es la plantilla por defecto de HuggingFace sin rellenar.
+`brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3` es un adaptador LoRA (PEFT) publicado en Hugging Face que se presenta como un ajuste fino por supervisión (SFT) sobre el checkpoint `unsloth/Qwen3.8-27B-unsloth-bnb-4bit`. No se trata de un modelo completo, sino de pesos delta que deben cargarse junto al modelo base para poder ejecutarse. El autor no ha publicado licencia, idiomas soportados, datos de entrenamiento ni resultados de evaluación: la model card es la plantilla por defecto de Hugging Face sin rellenar.
 
 La relevancia de esta ficha es metodológica más que técnica. El repositorio tiene un tamaño de 1,3 GB, 0 descargas y 0 "likes" en el momento de la consulta, y su nombre incluye el término "Attacker", lo que sugiere un ajuste orientado a tareas de ataque adversarial (red teaming, generación de prompts maliciosos o jailbreaks), extremo que no está documentado en ninguna parte. El modelo base declarado, "Qwen3.8-27B", no se corresponde con ningún checkpoint publicado que se pueda verificar en la familia Qwen3, por lo que la identidad real del modelo subyacente queda sin confirmar.
 
@@ -89,7 +89,7 @@ No existe información suficiente para comparar este adaptador con alternativas 
 
 ## Limitaciones y advertencias
 
-- Model card vacia: el autor ha dejado la plantilla por defecto de HuggingFace, por lo que no hay descripcion, uso previsto, limitaciones ni instrucciones de carga.
+- Model card vacia: el autor ha dejado la plantilla por defecto de Hugging Face, por lo que no hay descripcion, uso previsto, limitaciones ni instrucciones de carga.
 - Licencia no disponible: sin una licencia explicita no hay autorizacion de uso comercial ni de redistribucion. En la practica, el artefacto debe considerarse no apto para produccion.
 - Idiomas no declarados: se desconoce el soporte multilingue real y el comportamiento fuera del ingles.
 - Identidad del modelo base sin verificar: "Qwen3.8-27B" no corresponde a un checkpoint publico identificable de la familia Qwen3; conviene confirmar que el repositorio base existe, es legitimo y mantiene su licencia original antes de cualquier uso.
@@ -103,7 +103,7 @@ No existe información suficiente para comparar este adaptador con alternativas 
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

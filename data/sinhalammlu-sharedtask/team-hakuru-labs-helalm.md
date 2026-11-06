@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| HelaLM-4B SinhalaMMLU Adapter (v2) | ~4,02B + 24M LoRA | no disponible | gemma | HuggingFace (adaptador) | Especializado en opción múltiple en sinhala |
-| Jainamshahhh/helalm-4b (modelo base) | ~4B | no disponible | no disponible en la información | HuggingFace | Modelo base Gemma 3 adaptado a sinhala |
-| Gemma 3 4B (original) | ~4B | no disponible en la información | gemma | HuggingFace | Modelo generalista multilingüe de Google |
+| HelaLM-4B SinhalaMMLU Adapter (v2) | ~4,02B + 24M LoRA | no disponible | gemma | Hugging Face (adaptador) | Especializado en opción múltiple en sinhala |
+| Jainamshahhh/helalm-4b (modelo base) | ~4B | no disponible | no disponible en la información | Hugging Face | Modelo base Gemma 3 adaptado a sinhala |
+| Gemma 3 4B (original) | ~4B | no disponible en la información | gemma | Hugging Face | Modelo generalista multilingüe de Google |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
 
@@ -80,7 +80,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- [HuggingFace: SinhalaMMLU-SharedTask/team-hakuru-labs-helalm](https://huggingface.co/SinhalaMMLU-SharedTask/team-hakuru-labs-helalm)
+- [Hugging Face: SinhalaMMLU-SharedTask/team-hakuru-labs-helalm](https://huggingface.co/SinhalaMMLU-SharedTask/team-hakuru-labs-helalm)
 - [Modelo base: Jainamshahhh/helalm-4b](https://huggingface.co/Jainamshahhh/helalm-4b)
 - [Paper SinhalaMMLU (EMNLP 2025)](https://aclanthology.org/2025.emnlp-main.1673/)
 - [GovDoc.lk (fuente de los materiales educativos)](https://govdoc.lk/)

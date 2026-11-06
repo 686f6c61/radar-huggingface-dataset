@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dianavdavidson/whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla Whisper medium, publicado en HuggingFace por el usuario dianavdavidson el 20 de septiembre de 2026 y actualizado el 21 de septiembre de 2026. Según los pesos almacenados en safetensors, cuenta con 763.857.920 parámetros (unos 764 millones), un tamaño idéntico al de Whisper medium original, y el repositorio ocupa 15,3 GB.
+El modelo `dianavdavidson/whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT` es un ajuste fino (fine-tuning) del modelo de reconocimiento automático del habla Whisper medium, publicado en Hugging Face por el usuario dianavdavidson el 20 de septiembre de 2026 y actualizado el 21 de septiembre de 2026. Según los pesos almacenados en safetensors, cuenta con 763.857.920 parámetros (unos 764 millones), un tamaño idéntico al de Whisper medium original, y el repositorio ocupa 15,3 GB.
 
 Por la nomenclatura del repositorio (los segmentos `mucs_63022`, `ratio_25_45`, `lr_1e-4`, `lgid_hi_hinglish_mixed_scripts`) se deduce que se trata de un ajuste orientado a reconocimiento de habla con cambio de código (code-switching) hindi-inglés, con enfoque explícito en identificación de idioma (LID) y entrenado con una tasa de aprendizaje de 1e-4 sobre una mezcla de datos con una proporción concreta. Ninguno de estos extremos está documentado en la ficha del repositorio, por lo que deben considerarse inferencias a partir del nombre y no hechos confirmados.
 
@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Parámetros | Idiomas | Licencia | Contexto de audio | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (whisper-medium fine-tuned, hinglish) | 763,9 M | No declarados (se sugiere hindi/inglés) | No disponible | 30 s por pasada (arquitectura Whisper) | HuggingFace, 8 descargas |
-| openai/whisper-medium | 769 M | ~99 idiomas | MIT | 30 s por pasada | HuggingFace, ampliamente desplegado |
-| openai/whisper-small | 244 M | ~99 idiomas | MIT | 30 s por pasada | HuggingFace, muy usado en producción |
-| openai/whisper-large-v3 | 1550 M | ~99 idiomas | MIT | 30 s por pasada | HuggingFace, referencia en precisión |
+| Este checkpoint (whisper-medium fine-tuned, hinglish) | 763,9 M | No declarados (se sugiere hindi/inglés) | No disponible | 30 s por pasada (arquitectura Whisper) | Hugging Face, 8 descargas |
+| openai/whisper-medium | 769 M | ~99 idiomas | MIT | 30 s por pasada | Hugging Face, ampliamente desplegado |
+| openai/whisper-small | 244 M | ~99 idiomas | MIT | 30 s por pasada | Hugging Face, muy usado en producción |
+| openai/whisper-large-v3 | 1550 M | ~99 idiomas | MIT | 30 s por pasada | Hugging Face, referencia en precisión |
 
 La comparación directa con el modelo base solo es posible en términos de tamaño y licencia: no existen métricas de este checkpoint que permitan afirmar que mejora a `openai/whisper-medium` en hinglish, aunque el ajuste específico apunta a ese objetivo.
 
@@ -90,7 +90,7 @@ La comparación directa con el modelo base solo es posible en términos de tama�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dianavdavidson/whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT
+- Modelo en Hugging Face: https://huggingface.co/dianavdavidson/whisper-medium_mucs_63022_ratio_25_45_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT
 - Modelo base de referencia (Whisper medium de OpenAI): https://huggingface.co/openai/whisper-medium
 - Repositorio oficial de Whisper (OpenAI): https://github.com/openai/whisper
 - No se han encontrado enlaces relevantes al modelo, a su dataset o a sus resultados en la búsqueda web realizada; los resultados devueltos trataban sobre ChatGPT, GitHub Copilot y otros temas sin relación con este checkpoint.

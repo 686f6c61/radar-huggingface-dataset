@@ -4,9 +4,9 @@
 
 potion-base-4M es un modelo de embeddings estáticos de tipo Model2Vec, desarrollado por tokiers como una redistribución del modelo original minishlab/potion-base-4M. Se trata de un destilado del sentence transformer baai/bge-base-en-v1.5, entrenado mediante la técnica Tokenlearn, que produce representaciones vectoriales de texto sin necesidad de ejecutar un transformer en tiempo de inferencia. Con 3.779.584 parámetros, el modelo ocupa una fracción minima del espacio de sus alternativas basadas en transformers y permite calcular embeddings de forma estática, lo que reduce el coste computacional en órdenes de magnitud tanto en CPU como en GPU.
 
-La relevancia de este modelo radica en su perfil de rendimiento: alcanza el 89,63 % de la puntuación media de all-MiniLM-L6-v2 en MTEB (50,01 frente a 55,80) con un coste de inferencia muy inferior, lo que lo sitúa como una opción atractiva para sistemas de recuperación, deduplicación y clasificación a gran escala donde la latencia y el coste por consulta son críticos. Incluye además un tokenizador precompilado de tokie (tokenizer.tkz) que promete una tokenización cinco veces más rápida que los tokenizers de HuggingFace.
+La relevancia de este modelo radica en su perfil de rendimiento: alcanza el 89,63 % de la puntuación media de all-MiniLM-L6-v2 en MTEB (50,01 frente a 55,80) con un coste de inferencia muy inferior, lo que lo sitúa como una opción atractiva para sistemas de recuperación, deduplicación y clasificación a gran escala donde la latencia y el coste por consulta son críticos. Incluye además un tokenizador precompilado de tokie (tokenizer.tkz) que promete una tokenización cinco veces más rápida que los tokenizers de Hugging Face.
 
-La ficha se basa en la model card distribuida por tokiers, que reproduce la información del modelo original de Minish Lab, más los metadatos del repositorio en HuggingFace. No se dispone de información sobre idiomas soportados ni de detalles adicionales de entrenamiento más allá de los indicados en la model card.
+La ficha se basa en la model card distribuida por tokiers, que reproduce la información del modelo original de Minish Lab, más los metadatos del repositorio en Hugging Face. No se dispone de información sobre idiomas soportados ni de detalles adicionales de entrenamiento más allá de los indicados en la model card.
 
 ## Especificaciones técnicas
 
@@ -25,7 +25,7 @@ La ficha se basa en la model card distribuida por tokiers, que reproduce la info
 
 Model2Vec produce embeddings estáticos: cada token del vocabulario tiene asociado un vector fijo y el embedding de una secuencia se obtiene combinando los vectores de sus tokens (con ponderaciones derivadas de frecuencia y SIF), sin pasar por capas de atención ni por un transformer en tiempo de inferencia. El modelo es un destilado de baai/bge-base-en-v1.5 y se entrena con Tokenlearn en cuatro fases según la model card: destilación inicial desde el sentence transformer, generación de datos de entrenamiento mediante embeddings medios sobre un corpus grande (minishlab/tokenlearn-c4-en-bge-base-v1.5), entrenamiento del modelo destilado sobre esos datos y una re-regularización posterior que pondera los tokens por frecuencia, aplica PCA y finalmente SIF weighting.
 
-La innovación principal es el propio paradigma Model2Vec: sustituir la inferencia de un transformer por una tabla de embeddings estáticos, lo que elimina el coste cuadrático de la atención y permite calcular embeddings en microsegundos. El repositorio incluye además un tokenizador tokie precompilado que, según el autor, es un reemplazo directo de los tokenizers de HuggingFace con una tokenización aproximadamente cinco veces más rápida. No se detallan en la información disponible el número exacto de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron etapas de RLHF o DPO (no aplicables en un modelo de embeddings).
+La innovación principal es el propio paradigma Model2Vec: sustituir la inferencia de un transformer por una tabla de embeddings estáticos, lo que elimina el coste cuadrático de la atención y permite calcular embeddings en microsegundos. El repositorio incluye además un tokenizador tokie precompilado que, según el autor, es un reemplazo directo de los tokenizers de Hugging Face con una tokenización aproximadamente cinco veces más rápida. No se detallan en la información disponible el número exacto de tokens de entrenamiento, la composición completa del dataset ni si se aplicaron etapas de RLHF o DPO (no aplicables en un modelo de embeddings).
 
 ## Capacidades
 
@@ -77,11 +77,11 @@ Según la model card, potion-base-4M alcanza el 89,63 % del rendimiento medio de
 
 | Modelo | Parámetros | Contexto | Avg (MTEB) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| potion-base-4M | 3,78 M | no disponible | 49,77 | MIT | HuggingFace (model2vec), ONNX |
-| potion-base-8M | no disponible en la información | no disponible | 51,08 | MIT (modelo original de Minish Lab) | HuggingFace (model2vec) |
-| potion-base-32M | no disponible en la información | no disponible | 52,13 | MIT (modelo original de Minish Lab) | HuggingFace (model2vec) |
-| all-MiniLM-L6-v2 | 22,7 M (dato externo, no en la información) | no disponible | 55,93 | Apache 2.0 (dato externo, no en la información) | HuggingFace (sentence-transformers) |
-| GloVe_300d | no disponible | no disponible | 45,82 | no disponible | HuggingFace (average_word_embeddings) |
+| potion-base-4M | 3,78 M | no disponible | 49,77 | MIT | Hugging Face (model2vec), ONNX |
+| potion-base-8M | no disponible en la información | no disponible | 51,08 | MIT (modelo original de Minish Lab) | Hugging Face (model2vec) |
+| potion-base-32M | no disponible en la información | no disponible | 52,13 | MIT (modelo original de Minish Lab) | Hugging Face (model2vec) |
+| all-MiniLM-L6-v2 | 22,7 M (dato externo, no en la información) | no disponible | 55,93 | Apache 2.0 (dato externo, no en la información) | Hugging Face (sentence-transformers) |
+| GloVe_300d | no disponible | no disponible | 45,82 | no disponible | Hugging Face (average_word_embeddings) |
 
 La comparativa se limita a los modelos incluidos en la tabla de resultados de la model card; no se dispone de datos de parámetros ni de contexto para las alternativas salvo lo indicado. Frente a all-MiniLM-L6-v2, potion-base-4M sacrifica unos 5,8 puntos de media MTEB a cambio de un coste de inferencia mucho menor; frente a potion-base-8M y 32M, la pérdida es de aproximadamente 1,3 y 2,4 puntos respectivamente, con un tamaño de modelo menor.
 
@@ -98,7 +98,7 @@ La comparativa se limita a los modelos incluidos en la tabla de resultados de la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tokiers/potion-base-4M
+- Modelo en Hugging Face: https://huggingface.co/tokiers/potion-base-4M
 - Modelo original de Minish Lab: https://huggingface.co/minishlab/potion-base-4M
 - Repositorio Model2Vec: https://github.com/MinishLab/model2vec
 - Repositorio Tokenlearn: https://github.com/MinishLab/tokenlearn

@@ -90,5 +90,5 @@ La CNN supera claramente a las variantes recurrentes simples en precisión y tie
 
 ## Enlaces
 
-- [HuggingFace - hamzaN1/CNN-Model](https://huggingface.co/hamzaN1/CNN-Model)
+- [Hugging Face - hamzaN1/CNN-Model](https://huggingface.co/hamzaN1/CNN-Model)
 - [GitHub - Hamza-Maa/Simple-CNN-model](https://github.com/Hamza-Maa/Simple-CNN-model) (repositorio relacionado, posiblemente del mismo autor)

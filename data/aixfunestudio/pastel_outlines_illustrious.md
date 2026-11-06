@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Pastel_Outlines_Illustrious es un modelo publicado en HuggingFace por el usuario AIxFuneStudio bajo el identificador `AIxFuneStudio/Pastel_Outlines_Illustrious`. Por el nombre, el tamano del repositorio (6,9 GB) y la nomenclatura habitual de la comunidad, se trata con alta probabilidad de un modelo de generacion de imagenes derivado de la familia Illustrious-XL, que a su vez es un ajuste de Stable Diffusion XL (SDXL). No obstante, el autor no ha publicado tarjeta de modelo, pipeline, idiomas ni arquitectura declarada, por lo que la mayoria de especificaciones no pueden confirmarse con la informacion disponible.
+Pastel_Outlines_Illustrious es un modelo publicado en Hugging Face por el usuario AIxFuneStudio bajo el identificador `AIxFuneStudio/Pastel_Outlines_Illustrious`. Por el nombre, el tamano del repositorio (6,9 GB) y la nomenclatura habitual de la comunidad, se trata con alta probabilidad de un modelo de generacion de imagenes derivado de la familia Illustrious-XL, que a su vez es un ajuste de Stable Diffusion XL (SDXL). No obstante, el autor no ha publicado tarjeta de modelo, pipeline, idiomas ni arquitectura declarada, por lo que la mayoria de especificaciones no pueden confirmarse con la informacion disponible.
 
 El repositorio no incluye descripcion tecnica, dataset de entrenamiento, resultados de benchmarks ni documentacion de uso. El unico dato objetivo mas alla del identificador es el peso del repositorio (6,9 GB), compatible con un checkpoint en precision fp16 de una arquitectura de difusion del orden de los 3.500 millones de parametros, magnitud tipica de SDXL y de sus derivados.
 
-El acceso esta restringido: requiere aceptar condiciones adicionales en HuggingFace antes de poder descargar los pesos. La licencia declarada es "other", sin texto de licencia visible en la informacion proporcionada, lo que impide determinar las condiciones de uso comercial. Con cero descargas y cero likes en el momento de la consulta, se trata de una publicacion reciente y sin validacion por parte de la comunidad.
+El acceso esta restringido: requiere aceptar condiciones adicionales en Hugging Face antes de poder descargar los pesos. La licencia declarada es "other", sin texto de licencia visible en la informacion proporcionada, lo que impide determinar las condiciones de uso comercial. Con cero descargas y cero likes en el momento de la consulta, se trata de una publicacion reciente y sin validacion por parte de la comunidad.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El acceso esta restringido: requiere aceptar condiciones adicionales en HuggingF
 | Longitud de contexto | no aplica / no disponible (modelo de generacion de imagenes, no de texto) |
 | Tipos de cuantizacion | no disponible (no declarados por el autor) |
 | Idiomas soportados | no disponibles (los prompts de texto se procesan normalmente en ingles en la familia SDXL; no confirmado para este modelo) |
-| Licencia | other (acceso restringido con condiciones que deben aceptarse en HuggingFace; texto de licencia no visible) |
+| Licencia | other (acceso restringido con condiciones que deben aceptarse en Hugging Face; texto de licencia no visible) |
 | Formato de pesos | no disponible (el repositorio ocupa 6,9 GB; formato concreto de los ficheros no especificado en la informacion proporcionada) |
 
 ## Arquitectura y entrenamiento
@@ -52,7 +52,7 @@ Nota: todos estos casos asumen que el modelo es efectivamente un modelo de difus
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace no incluye metricas objetivas (FID, CLIP score, evaluaciones humanas) ni comparaciones con otros modelos. Tampoco se han encontrado resultados tecnicos en la busqueda web realizada.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face no incluye metricas objetivas (FID, CLIP score, evaluaciones humanas) ni comparaciones con otros modelos. Tampoco se han encontrado resultados tecnicos en la busqueda web realizada.
 
 ## Requisitos de hardware
 
@@ -66,7 +66,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 | Modelo | Parametros | Contexto / resolucion | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| AIxFuneStudio/Pastel_Outlines_Illustrious | no disponible (estimado ~3.500 M) | no disponible | other, acceso restringido | HuggingFace, gated | no disponible |
+| AIxFuneStudio/Pastel_Outlines_Illustrious | no disponible (estimado ~3.500 M) | no disponible | other, acceso restringido | Hugging Face, gated | no disponible |
 | Illustrious-XL (onestability) | ~3.500 M (arquitectura SDXL) | 1024x1024 nativo | licencia propia de la familia Illustrious | publico | no comparable en esta ficha |
 | Stable Diffusion XL 1.0 (Stability AI) | ~3.500 M | 1024x1024 nativo | CreativeML Open RAIL++-M | publico | benchmarks publicados por Stability AI |
 | Pony Diffusion V6 XL | ~3.500 M (arquitectura SDXL) | 1024x1024 nativo | licencia propia | publico | no comparable en esta ficha |
@@ -87,6 +87,6 @@ Los datos de los modelos de comparacion se incluyen como referencia de categoria
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/AIxFuneStudio/Pastel_Outlines_Illustrious
+- Ficha en Hugging Face: https://huggingface.co/AIxFuneStudio/Pastel_Outlines_Illustrious
 
 No se han encontrado otros enlaces relevantes (papers, repositorios, blogs o demos) en la busqueda web realizada. Los resultados obtenidos no guardan relacion con el modelo y no se incluyen por no aportar valor tecnico.

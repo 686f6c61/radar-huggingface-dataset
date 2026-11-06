@@ -2,7 +2,7 @@
 
 ## Resumen
 
-DaSiWa MiniMax H3 es un adaptador LoRA para generación de imágenes a partir de texto, publicado por el usuario lynaNSFW en HuggingFace. Se basa en el modelo base `lynaNSFW/minimaxH3_Collection`, una colección que agrupa variantes del modelo MiniMax H3. El repositorio tiene un tamaño de 21.0 GB y está diseñado para el pipeline de `diffusers` con la etiqueta `text-to-image`. Aunque el nombre sugiere relación con el modelo de vídeo MiniMax H3 de MiniMaxAI, este adaptador concreto se presenta como un LoRA de difusión para generación de imágenes, probablemente orientado a un estilo artístico específico (el nombre "DaSiWa" sugiere una temática concreta, aunque no se detalla en la documentación).
+DaSiWa MiniMax H3 es un adaptador LoRA para generación de imágenes a partir de texto, publicado por el usuario lynaNSFW en Hugging Face. Se basa en el modelo base `lynaNSFW/minimaxH3_Collection`, una colección que agrupa variantes del modelo MiniMax H3. El repositorio tiene un tamaño de 21.0 GB y está diseñado para el pipeline de `diffusers` con la etiqueta `text-to-image`. Aunque el nombre sugiere relación con el modelo de vídeo MiniMax H3 de MiniMaxAI, este adaptador concreto se presenta como un LoRA de difusión para generación de imágenes, probablemente orientado a un estilo artístico específico (el nombre "DaSiWa" sugiere una temática concreta, aunque no se detalla en la documentación).
 
 El modelo fue creado el 31 de agosto de 2026 y actualizado el mismo día. No se proporciona información sobre licencia, idiomas soportados ni detalles de entrenamiento. La model card es mínima y redirige a una página de Civitai para más información. A pesar de su tamaño considerable (21 GB), no se especifican los parámetros del LoRA ni la arquitectura subyacente del modelo base. Este adaptador parece estar dirigido a usuarios de herramientas como ComfyUI, dado que existen nodos específicos para MiniMax H3 en ese ecosistema.
 
@@ -16,7 +16,7 @@ El modelo fue creado el 31 de agosto de 2026 y actualizado el mismo día. No se 
 | Longitud de contexto | no aplica (modelo de imágenes) |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (se menciona una "MiniMax H3 Community License Agreement" en Civitai, pero no se detalla en HuggingFace) |
+| Licencia | no disponible (se menciona una "MiniMax H3 Community License Agreement" en Civitai, pero no se detalla en Hugging Face) |
 | Formato de pesos | no disponible (probablemente safetensors, pero no se confirma) |
 
 ## Arquitectura y entrenamiento
@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la información disponible. No e
 - VRAM estimada: no disponible. El tamaño del repositorio (21 GB) sugiere que el modelo base o el LoRA completo requiere una GPU con al menos 16-24 GB de VRAM para cargar los pesos en memoria, pero no se confirma.
 - GPU recomendadas: no se especifican. Por el tamaño, probablemente se necesiten GPUs de gama alta como RTX 3090/4090 (24 GB) o A100 (40/80 GB), pero es una estimación sin base documental.
 - Compatibilidad con GPU de consumo: incierta. Un LoRA de 21 GB es inusualmente grande; podría tratarse de un modelo completo o de un adaptador con muchos parámetros. Sin datos concretos, no se puede afirmar que quepa en tarjetas de 8-12 GB.
-- Opciones de despliegue: al usar `diffusers`, se puede integrar en Python con la biblioteca de HuggingFace. También es probable que funcione con ComfyUI, dado el ecosistema existente. No se mencionan vLLM, llama.cpp ni Ollama, que son para modelos de lenguaje.
+- Opciones de despliegue: al usar `diffusers`, se puede integrar en Python con la biblioteca de Hugging Face. También es probable que funcione con ComfyUI, dado el ecosistema existente. No se mencionan vLLM, llama.cpp ni Ollama, que son para modelos de lenguaje.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -60,15 +60,15 @@ No se dispone de información suficiente para establecer una comparativa riguros
 - Sesgos conocidos: no se documentan, pero al ser un modelo de generación de imágenes entrenado con datos no especificados, puede reproducir sesgos presentes en el dataset de entrenamiento.
 - Riesgo de alucinación: en modelos de difusión, el riesgo se manifiesta en la generación de detalles inconsistentes o artefactos visuales, especialmente con prompts ambiguos.
 - Limitaciones de contexto o idioma: al ser un modelo de imágenes, no aplica el concepto de contexto lingüístico. Los idiomas soportados para los prompts no se indican.
-- Restricciones de licencia: la licencia no está disponible en HuggingFace. En Civitai se menciona una "MiniMax H3 Community License Agreement" con una Acceptable Use Policy, pero no se detalla su contenido. Esto genera incertidumbre sobre el uso comercial y la redistribución.
+- Restricciones de licencia: la licencia no está disponible en Hugging Face. En Civitai se menciona una "MiniMax H3 Community License Agreement" con una Acceptable Use Policy, pero no se detalla su contenido. Esto genera incertidumbre sobre el uso comercial y la redistribución.
 - Caveat para producción: la falta de documentación técnica y de benchmarks hace arriesgado su uso en entornos productivos sin una validación previa exhaustiva.
 - Tamaño del repositorio: 21 GB es un peso considerable que puede dificultar la descarga y el despliegue en infraestructuras limitadas.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3
+- Repositorio Hugging Face: https://huggingface.co/lynaNSFW/DaSiWa_MiniMax_H3
 - Página en Civitai: https://civitai.com/models/2877206/dasiwa-minimax-h3
-- Modelo MiniMax H3 original (HuggingFace): https://huggingface.co/MiniMaxAI/MiniMax-H3
+- Modelo MiniMax H3 original (Hugging Face): https://huggingface.co/MiniMaxAI/MiniMax-H3
 - Repositorio GitHub de MiniMax H3: https://github.com/MiniMax-AI/MiniMax-H3
 - Documentación de MiniMax H3 en design.minimax.io: https://design.minimax.io/h3
 - Nodos ComfyUI para MiniMax H3: https://github.com/darksidewalker/ComfyUI-DaSiWa-Nodes/blob/main/docs/minimax_h3_director.md

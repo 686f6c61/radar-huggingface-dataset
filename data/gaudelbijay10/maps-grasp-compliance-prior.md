@@ -95,7 +95,7 @@ No se han publicado en la informacion disponible resultados completos por mano y
 | Error K=3 (`isaac_physx`, Allegro) | 0.485 | 0.622 | no disponible en la informacion |
 | Necesita datos de otras manos | Si (prior poblacional) | No | No |
 | Licencia | MIT | no disponible | no disponible |
-| Disponibilidad | Publico en HuggingFace | Implementado en `maps.py` | no disponible |
+| Disponibilidad | Publico en Hugging Face | Implementado en `maps.py` | no disponible |
 
 No se han identificado en la informacion proporcionada otros paquetes publicos comparables de priors aprendidos para compliance de agarre.
 
@@ -114,8 +114,8 @@ No se han identificado en la informacion proporcionada otros paquetes publicos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gaudelbijay10/maps-grasp-compliance-prior
+- Modelo en Hugging Face: https://huggingface.co/gaudelbijay10/maps-grasp-compliance-prior
 - Dataset asociado: https://huggingface.co/datasets/gaudelbijay10/grasp-compliance-sim
 - Articulo de referencia: *Few-Shot Grasp Compliance Identification Across Robot Hands* (no se proporciona URL en la informacion disponible)
-- Repositorio de codigo: incluido en el propio repo HuggingFace (`maps.py`, `example.py`, `verification.json`); no se indica URL externa
+- Repositorio de codigo: incluido en el propio repo Hugging Face (`maps.py`, `example.py`, `verification.json`); no se indica URL externa
 - Demo o paper page adicional: no disponible

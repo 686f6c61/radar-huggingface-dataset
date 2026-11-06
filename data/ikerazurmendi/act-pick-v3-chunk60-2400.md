@@ -105,7 +105,7 @@ No se dispone de información sobre políticas ACT comparables de otros autores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IkerAzurmendi/act-pick-v3-chunk60-2400
+- Modelo en Hugging Face: https://huggingface.co/IkerAzurmendi/act-pick-v3-chunk60-2400
 - Checkpoint óptimo de la misma tirada: https://huggingface.co/IkerAzurmendi/act-pick-v3-chunk60-4800
 - Tirada con chunk de 90 pasos sobre los mismos datos: https://huggingface.co/IkerAzurmendi/act-pick-v3-1-2-pieces-18000
 - Tirada con todos los datos que pasan el filtro de calidad: https://huggingface.co/IkerAzurmendi/act-pick-v3-6000

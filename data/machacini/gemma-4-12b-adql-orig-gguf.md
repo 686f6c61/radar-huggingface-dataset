@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Machacini/gemma-4-12b-adql-orig-GGUF | 11,9 B | GGUF BF16 | NL-to-ADQL (Gaia) | Apache-2.0 | HuggingFace (acceso con autenticacion mientras sea privado) |
-| google/gemma-4-12B-it (base) | ~12 B | safetensors | Uso general instruido | Licencia Gemma (repositorio base declara Apache-2.0) | HuggingFace |
-| Modelos NL-to-SQL genericos (p. ej., fine-tunes de CodeLlama/StarCoder2 para SQL) | 7-15 B tipico | safetensors / GGUF | NL-to-SQL general | Variable | HuggingFace |
+| Machacini/gemma-4-12b-adql-orig-GGUF | 11,9 B | GGUF BF16 | NL-to-ADQL (Gaia) | Apache-2.0 | Hugging Face (acceso con autenticacion mientras sea privado) |
+| google/gemma-4-12B-it (base) | ~12 B | safetensors | Uso general instruido | Licencia Gemma (repositorio base declara Apache-2.0) | Hugging Face |
+| Modelos NL-to-SQL genericos (p. ej., fine-tunes de CodeLlama/StarCoder2 para SQL) | 7-15 B tipico | safetensors / GGUF | NL-to-SQL general | Variable | Hugging Face |
 
 No hay fine-tunes comparables publicos especificos para ADQL/Gaia en la informacion disponible; la alternativa mas cercana seria usar el modelo base con prompting few-shot o un modelo NL-to-SQL generico, con menor especializacion en el esquema de Gaia.
 

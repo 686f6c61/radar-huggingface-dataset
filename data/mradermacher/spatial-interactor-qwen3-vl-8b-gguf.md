@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento, contexto o licencia de modelos alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantizacion: https://huggingface.co/mradermacher/Spatial-Interactor-Qwen3-VL-8B-GGUF
+- Repositorio Hugging Face de la cuantizacion: https://huggingface.co/mradermacher/Spatial-Interactor-Qwen3-VL-8B-GGUF
 - Modelo base: https://huggingface.co/kagakouko/Spatial-Interactor-Qwen3-VL-8B
 - Pagina de descargas de mradermacher para este modelo: https://hf.tst.eu/model#Spatial-Interactor-Qwen3-VL-8B-GGUF
 - README de referencia sobre uso de GGUF (TheBloke): https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF

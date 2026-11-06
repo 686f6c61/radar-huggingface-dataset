@@ -91,7 +91,7 @@ La ventaja de este adaptador es su especialización en el formato de Hong Kong y
 
 ## Enlaces
 
-- [HuggingFace - adaptador LoRA](https://huggingface.co/ymlee13/Qwen2.5-3B-Instruct_Address_Formatter)
-- [HuggingFace - modelo base Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
+- [Hugging Face - adaptador LoRA](https://huggingface.co/ymlee13/Qwen2.5-3B-Instruct_Address_Formatter)
+- [Hugging Face - modelo base Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct)
 - [GitHub - proyecto address_parsing (ymlee13)](https://github.com/ymlee13/address_parsing)
 - [Ollama - Qwen2.5 3B Instruct](https://ollama.com/library/qwen2.5:3b-instruct)

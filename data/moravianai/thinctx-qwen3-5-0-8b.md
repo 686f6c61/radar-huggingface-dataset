@@ -88,7 +88,7 @@ No se han publicado en la información disponible resultados de MMLU, HumanEval,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B
+- Modelo en Hugging Face: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B
 - Variante cuantizada y con contexto comprimido: https://huggingface.co/moravianai/ThinCtx-Qwen3.5-0.8B-small
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Sitio del desarrollador: https://moravian.ai/

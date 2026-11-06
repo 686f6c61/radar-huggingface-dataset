@@ -95,11 +95,11 @@ Todos los modelos comparables son variantes del mismo linaje GLM-5.3-Flash publi
 - Trazabilidad parcial: la verificacion SHA-256 acredita la reconstruccion exacta de los shards y la integridad del empaquetado, pero no la calidad del modelo resultante.
 - Licencia: el repositorio se publica bajo MIT, lo que permite uso comercial de esta build. No obstante, no se especifica la licencia de los checkpoints de origen GLM-5.3-Flash, por lo que conviene verificar la cadena completa antes de un despliegue en produccion.
 - Madurez: el repositorio registra 0 descargas y 0 likes, y no se han encontrado validaciones independientes; las cifras de rendimiento proceden unicamente del autor.
-- Fechas del repositorio: creado y actualizado el 3 de octubre de 2026, segun los metadatos de HuggingFace.
+- Fechas del repositorio: creado y actualizado el 3 de octubre de 2026, segun los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD
+- Modelo en Hugging Face: https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD
 - Modelo base (QAD): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4
 - Variante Spark (origen de las proyecciones MXFP8): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-Spark
 - Variante CSF (mismo contenedor de checkpoint): https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF

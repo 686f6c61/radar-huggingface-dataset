@@ -12,7 +12,7 @@ Es relevante ahora porque documenta un paso poco habitual y poco publicitado de 
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer con mezcla de expertos (MoE); tag de HuggingFace `qwen3_moe` |
+| Arquitectura | Transformer con mezcla de expertos (MoE); tag de Hugging Face `qwen3_moe` |
 | Parametros totales | 30.532.122.624 |
 | Parametros activos | Aproximadamente 3.000 millones (designacion A3B del modelo base) |
 | Longitud de contexto | No disponible en la informacion proporcionada (heredada del modelo base Qwen3-30B-A3B-Base; el entrenamiento de este checkpoint uso secuencias de 512 tokens) |
@@ -37,7 +37,7 @@ El resultado declarado es una reduccion de la perdida de validacion de 0,9331 a 
 
 - Generacion de texto autoregresiva sobre el corpus de preentrenamiento del modelo base y sobre texto TypeScript, que es el dominio de correccion.
 - Modelado de lenguaje de TypeScript: es la capacidad sobre la que se optimizo explicitamente la perdida de validacion.
-- Conversacion: el tag `conversational` aparece en la ficha de HuggingFace, pero al tratarse de un ajuste sobre un modelo base (no instruct) no se documenta plantilla de chat ni calidad de dialogo verificada.
+- Conversacion: el tag `conversational` aparece en la ficha de Hugging Face, pero al tratarse de un ajuste sobre un modelo base (no instruct) no se documenta plantilla de chat ni calidad de dialogo verificada.
 - Tool calling / function calling: no documentado.
 - Soporte de agentes y razonamiento multi-paso: no documentado.
 - Capacidades multilingues: solo se declara ingles; no hay evaluacion multilingue.
@@ -78,8 +78,8 @@ Se trata de perdida de entropia cruzada sobre un shard disjunto del conjunto de 
 
 | Modelo | Parametros totales | Activos | Contexto | Licencia | Disponibilidad | Benchmarks publicados |
 |---|---|---|---|---|---|---|
-| bonsai-qwen3-30b-a3b-teacher-corrected | 30,53B (MoE) | ~3B | No disponible | Apache 2.0 | HuggingFace, 0 descargas, 0 likes | Ninguno; solo perdida de validacion 0,8842 |
-| Qwen/Qwen3-30B-A3B-Base | 30,53B (MoE) | ~3B | No disponible en esta informacion | Apache 2.0 | HuggingFace | Si, en la documentacion del modelo base (no consultada aqui) |
+| bonsai-qwen3-30b-a3b-teacher-corrected | 30,53B (MoE) | ~3B | No disponible | Apache 2.0 | Hugging Face, 0 descargas, 0 likes | Ninguno; solo perdida de validacion 0,8842 |
+| Qwen/Qwen3-30B-A3B-Base | 30,53B (MoE) | ~3B | No disponible en esta informacion | Apache 2.0 | Hugging Face | Si, en la documentacion del modelo base (no consultada aqui) |
 | Alternativas de la misma categoria (MoE de ~30B con pocos parametros activos, o modelos densos de codigo de ~30B) | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La unica comparacion con datos verificables en la informacion proporcionada es contra el propio modelo base: arquitectura y recuento de parametros identicos, mismo licenciamiento Apache 2.0, y una perdida de validacion en TypeScript que baja de 0,9331 a 0,8842 tras el ajuste. No hay datos de benchmarks que permitan situar este checkpoint frente a otras alternativas de codigo.
@@ -88,7 +88,7 @@ La unica comparacion con datos verificables en la informacion proporcionada es c
 
 - No es un modelo final: es un checkpoint intermedio disenado como profesor para una etapa posterior de destilacion. No deberia desplegarse como modelo de produccion sin evaluacion propia.
 - Ausencia total de evaluacion downstream: el autor declara explicitamente que no se han medido HumanEval-TS ni MBPP-TS. Cualquier afirmacion sobre su calidad generando codigo seria especulativa.
-- Derivado de un modelo base, no de un instruct: no hay garantia de seguir instrucciones, mantener formato de chat ni respetar plantillas de herramienta. El tag `conversational` de HuggingFace no viene acompanado de evidencia.
+- Derivado de un modelo base, no de un instruct: no hay garantia de seguir instrucciones, mantener formato de chat ni respetar plantillas de herramienta. El tag `conversational` de Hugging Face no viene acompanado de evidencia.
 - Sesgos: no hay analisis de sesgos en la informacion disponible. El corpus `the-stack-dedup` procede de codigo publico y arrastra los sesgos de licenciamiento y estilo de ese origen.
 - Riesgo de alucinacion: inherente a un modelo de lenguaje entrenado con entropia cruzada; sin ajuste por preferencias humano (RLHF/DPO) en esta etapa, no hay mitigacion documentada.
 - Limitaciones de contexto e idioma: solo se declara ingles y el entrenamiento uso 512 tokens de longitud de secuencia; no se documenta ninguna ampliacion de contexto.
@@ -99,7 +99,7 @@ La unica comparacion con datos verificables en la informacion proporcionada es c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected
+- Modelo en Hugging Face: https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected
 - Modelo base: https://huggingface.co/Qwen/Qwen3-30B-A3B-Base
 - Repositorio del proyecto bonsai: https://github.com/SartajBhuvaji/bonsai
 - Codigo de entrenamiento: https://github.com/SartajBhuvaji/bonsai/tree/main/src/bonsai/training

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo de generación de texto ha sido publicado en HuggingFace por el usuario `0xmoose0xmoose0xmoose` bajo licencia MIT. Su identificador es `0xmoose0xmoose0xmoose/ssti-test-001` y su pipeline asociado es `text-generation`. Sin embargo, la información disponible es extremadamente limitada: la model card no describe la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni las capacidades del modelo. Tampoco se ha localizado documentación técnica adicional en la búsqueda web.
+Este modelo de generación de texto ha sido publicado en Hugging Face por el usuario `0xmoose0xmoose0xmoose` bajo licencia MIT. Su identificador es `0xmoose0xmoose0xmoose/ssti-test-001` y su pipeline asociado es `text-generation`. Sin embargo, la información disponible es extremadamente limitada: la model card no describe la arquitectura, el número de parámetros, la longitud de contexto, los idiomas soportados ni las capacidades del modelo. Tampoco se ha localizado documentación técnica adicional en la búsqueda web.
 
 No es posible determinar qué problema resuelve ni por qué sería relevante en el panorama actual de modelos open source. La publicación parece tener carácter de prueba o test, dado que la model card incluye únicamente un título genérico ("Test Model") y referencias a imágenes externas sin contenido técnico. Por tanto, no se puede evaluar su idoneidad para ninguna tarea concreta.
 
@@ -25,7 +25,7 @@ No se dispone de información pública sobre la arquitectura del modelo. La mode
 
 ## Capacidades
 
-- No se han documentado capacidades específicas. El único dato disponible es el pipeline de HuggingFace (`text-generation`), que indica que el modelo está orientado a la generación de texto, pero sin más detalle.
+- No se han documentado capacidades específicas. El único dato disponible es el pipeline de Hugging Face (`text-generation`), que indica que el modelo está orientado a la generación de texto, pero sin más detalle.
 - No se conoce si soporta tool calling, function calling, razonamiento multi-paso, modos de pensamiento (thinking mode), visión, audio ni otras capacidades multimodales.
 - No se ha especificado el conjunto de idiomas soportados.
 
@@ -54,5 +54,5 @@ No disponible. No existe información suficiente para comparar este modelo con a
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/0xmoose0xmoose0xmoose/ssti-test-001
+- Hugging Face: https://huggingface.co/0xmoose0xmoose0xmoose/ssti-test-001
 - La model card contiene referencias externas (https://rce.lc/...) que no se han incluido por no ser fuentes de documentación técnica.

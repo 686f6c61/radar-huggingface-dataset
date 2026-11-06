@@ -59,7 +59,7 @@ Debe tenerse en cuenta que el dataset Alpaca esta mayoritariamente en ingles, po
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de HuggingFace no incluye tabla de evaluacion (MMLU, HumanEval, GSM8K, benchmarks en arabe como ArabicMMLU u otros) ni comparaciones con el modelo base. Tampoco se han encontrado referencias externas en la busqueda web realizada, cuyos resultados no guardaban relacion con el modelo.
+No se han publicado resultados de benchmarks en la informacion disponible. El repositorio de Hugging Face no incluye tabla de evaluacion (MMLU, HumanEval, GSM8K, benchmarks en arabe como ArabicMMLU u otros) ni comparaciones con el modelo base. Tampoco se han encontrado referencias externas en la busqueda web realizada, cuyos resultados no guardaban relacion con el modelo.
 
 ## Requisitos de hardware
 
@@ -75,10 +75,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto declarado | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Vynis-0.1-2b-instant | 1,24B | no confirmado (base: 128k) | ar, en | Apache 2.0 | HuggingFace, transformers |
-| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | multilingue (8 idiomas declarados) | Licencia comunitaria Llama 3.2 | HuggingFace, amplio ecosistema |
-| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (extensible) | multilingue (29 idiomas declarados) | Apache 2.0 | HuggingFace, amplio ecosistema |
-| Gemma-2-2B-it | ~2,6B | 8.192 tokens | multilingue | Licencia Gemma | HuggingFace, gated |
+| Vynis-0.1-2b-instant | 1,24B | no confirmado (base: 128k) | ar, en | Apache 2.0 | Hugging Face, transformers |
+| Llama-3.2-1B-Instruct | 1,24B | 128.000 tokens | multilingue (8 idiomas declarados) | Licencia comunitaria Llama 3.2 | Hugging Face, amplio ecosistema |
+| Qwen2.5-1.5B-Instruct | ~1,5B | 32.768 tokens (extensible) | multilingue (29 idiomas declarados) | Apache 2.0 | Hugging Face, amplio ecosistema |
+| Gemma-2-2B-it | ~2,6B | 8.192 tokens | multilingue | Licencia Gemma | Hugging Face, gated |
 
 Comparativa de rendimiento: no disponible. No se han publicado evaluaciones de Vynis-0.1-2b-instant que permitan contrastar su calidad frente a estas alternativas. Los datos de parametros, contexto y licencia de los modelos comparados proceden de sus respectivas fichas publicas y deben verificarse en la fuente antes de tomar decisiones de produccion.
 
@@ -95,7 +95,7 @@ Comparativa de rendimiento: no disponible. No se han publicado evaluaciones de V
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenWeightsAI/Vynis-0.1-2b-instant
+- Modelo en Hugging Face: https://huggingface.co/OpenWeightsAI/Vynis-0.1-2b-instant
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Modelo original de Meta: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Dataset de ajuste: https://huggingface.co/datasets/yahma/alpaca-cleaned

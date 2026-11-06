@@ -33,7 +33,7 @@ El dataset consta de 180 ejemplos específicos para este grupo, de los cuales 20
 - Generación de informes estructurados: produce reportes con qué vulnerabilidad se encontró, dónde, su gravedad y cómo corregirla.
 - Cumplimiento de regla de parada dura: tras detectar una vulnerabilidad, el modelo se detiene y no continúa con acciones adicionales, incluso ante presión de contexto (urgencia, autoridad, coste hundido).
 - Integración con pipelines de seguridad: puede usarse como componente en agentes de escaneo autorizado, conectado a herramientas de análisis estático o dinámico.
-- Compatibilidad con el ecosistema HuggingFace: se carga mediante `PeftModel` y funciona con `transformers`, permitiendo su uso en entornos estándar de Python.
+- Compatibilidad con el ecosistema Hugging Face: se carga mediante `PeftModel` y funciona con `transformers`, permitiendo su uso en entornos estándar de Python.
 
 ## Casos de uso
 
@@ -79,6 +79,6 @@ No se dispone de información sobre adaptadores LoRA equivalentes para detecció
 
 ## Enlaces
 
-- [HuggingFace del adaptador](https://huggingface.co/SoulInPsyAbstract/vuln-gate-02_access_control-lora)
+- [Hugging Face del adaptador](https://huggingface.co/SoulInPsyAbstract/vuln-gate-02_access_control-lora)
 - [Modelo fusionado vuln-gate-merged-qwen25-lora](https://huggingface.co/SoulInPsyAbstract/vuln-gate-merged-qwen25-lora)
 - [Proyecto SIPA OS](https://sipa-os.org)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MapGR es un checkpoint de pesos para la construccion de mapas HD vectorizados en conduccion autonoma, publicado por el autor Lee1413 en HuggingFace. Se trata de la implementacion del metodo presentado en el articulo "Learning Global Representation from Queries for Vectorized HD Map Construction" (ICML 2026, arXiv:2510.06969), que combina la arquitectura MapQR con la innovacion MapGR. El modelo resuelve el problema de generar representaciones vectoriales de mapas de alta definicion (carriles, divisiones, bordes) a partir de imagenes de camaras de un vehiculo.
+MapGR es un checkpoint de pesos para la construccion de mapas HD vectorizados en conduccion autonoma, publicado por el autor Lee1413 en Hugging Face. Se trata de la implementacion del metodo presentado en el articulo "Learning Global Representation from Queries for Vectorized HD Map Construction" (ICML 2026, arXiv:2510.06969), que combina la arquitectura MapQR con la innovacion MapGR. El modelo resuelve el problema de generar representaciones vectoriales de mapas de alta definicion (carriles, divisiones, bordes) a partir de imagenes de camaras de un vehiculo.
 
 El checkpoint liberado corresponde a un entrenamiento de 24 epocas sobre el dataset nuScenes con backbone ResNet-50, entrenado en 8 GPUs con 4 muestras por GPU en precision fp16. Alcanza 44.87 mAP1 y 67.96 mAP2 en la particion de validacion de nuScenes, ligeramente por debajo de los resultados reportados en el paper (45.3 mAP1 y 68.1 mAP2), ya que no es exactamente la misma ejecucion.
 
@@ -90,7 +90,7 @@ La informacion proporcionada solo permite comparar con la ejecucion MapTRv2 + Ma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lee1413/MapGR
+- Modelo en Hugging Face: https://huggingface.co/Lee1413/MapGR
 - Paper (arXiv): https://arxiv.org/abs/2510.06969
 - Pagina del proyecto: https://xr-lee.github.io/mapgr-demo/
 - Repositorio de codigo: https://github.com/XR-Lee/MapGR

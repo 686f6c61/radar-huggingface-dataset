@@ -6,7 +6,7 @@ Qwen3.8-27b-CIRU-EXL3-SGLANG es un paquete de inferencia publicado por el usuari
 
 El objetivo declarado es ejecutar un modelo multimodal de 27B con una ventana de contexto configurada de 262.144 tokens en una unica GPU de consumo, la RTX 5090 de 32 GB, mediante decodificacion especulativa DFlash2 que verifica bloques de borrador de ocho tokens. Para ello el perfil de servicio combina KV de target en NVFP4, KV de draft en FP8 y estado recurrente en FP32, con un pool compartido de 270.336 tokens. El pico de uso de GPU medido en contexto completo fue de 28,88 GiB.
 
-Su relevancia actual es fundamentalmente de despliegue: demuestra que una integracion cuidadosa de cuantizacion EXL3, atencion fusionada, componentes Gated DeltaNet y planificacion de SGLang puede multiplicar el rendimiento frente a servidores EXL3 convencionales y frente a builds NVFP4, manteniendo ademas modo vision con el codificador de imagen del checkpoint (83 proyecciones EXL3 empaquetadas). El repositorio de HuggingFace no duplica los pesos (0,0 GB); solo contiene la integracion y las recetas de ejecucion.
+Su relevancia actual es fundamentalmente de despliegue: demuestra que una integracion cuidadosa de cuantizacion EXL3, atencion fusionada, componentes Gated DeltaNet y planificacion de SGLang puede multiplicar el rendimiento frente a servidores EXL3 convencionales y frente a builds NVFP4, manteniendo ademas modo vision con el codificador de imagen del checkpoint (83 proyecciones EXL3 empaquetadas). El repositorio de Hugging Face no duplica los pesos (0,0 GB); solo contiene la integracion y las recetas de ejecucion.
 
 ## Especificaciones tecnicas
 
@@ -85,7 +85,7 @@ No se dispone de datos de modelos alternativos de la misma categoria mas alla de
 
 | Paquete | Parametros | Contexto | Rendimiento (peticion corta 2.048+2.048) | Throughput (2 peticiones, 1.024+512) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| CIRU EXL3 SGLang (este release) | Qwen3.8-27B (27B aprox.) | 262.144 configurados (pool de 270.336) | 405,6 tokens/s; 5,6 s | 512,3 tokens/s agregados | apache-2.0 | Integracion en HuggingFace + runner en GitHub; pesos descargados de repos upstream |
+| CIRU EXL3 SGLang (este release) | Qwen3.8-27B (27B aprox.) | 262.144 configurados (pool de 270.336) | 405,6 tokens/s; 5,6 s | 512,3 tokens/s agregados | apache-2.0 | Integracion en Hugging Face + runner en GitHub; pesos descargados de repos upstream |
 | NVIDIA NVFP4 (referencia citada) | mismo modelo base | no disponible | 208,6 tokens/s; 10,0 s | 383,9 tokens/s agregados | no disponible | no disponible |
 | Servidor EXL3 original (referencia citada) | mismo modelo base | no disponible | 89,5 tokens/s; 23,5 s | no disponible | no disponible | no disponible |
 
@@ -94,7 +94,7 @@ Comparacion con otros modelos de la misma categoria (por ejemplo, otros modelos 
 ## Limitaciones y advertencias
 
 - No es un modelo nuevo: es un paquete de servicio. Los pesos de target y draft son los publicados por r0b0tlab y no han sido reentrenados ni recuantizados por el autor.
-- El repositorio de HuggingFace tiene 0,0 GB: no contiene los ficheros de pesos. El runner los descarga de los repositorios upstream, por lo que la disponibilidad de este release depende de terceros.
+- El repositorio de Hugging Face tiene 0,0 GB: no contiene los ficheros de pesos. El runner los descarga de los repositorios upstream, por lo que la disponibilidad de este release depende de terceros.
 - Estado de madurez bajo: 0 descargas y 0 likes en el momento de la consulta; la validacion se hizo en un unico sistema Linux x86_64 con una RTX 5090.
 - Las rutas de instalacion para Fedora y WSL2 se documentan pero no han sido validadas por el autor.
 - Sin soporte para macOS nativo, AMD, CPU ni Windows nativo.
@@ -109,7 +109,7 @@ Comparacion con otros modelos de la misma categoria (por ejemplo, otros modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jcbtc/Qwen3.8-27b-CIRU-EXL3-SGLANG
+- Modelo en Hugging Face: https://huggingface.co/jcbtc/Qwen3.8-27b-CIRU-EXL3-SGLANG
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Pesos EXL3 de target (r0b0tlab, 4,00 bpw): https://huggingface.co/r0b0tlab/Qwen3.8-27B-EXL3-4.00bpw
 - Pesos del draft DFlash2 EXL3 (r0b0tlab): https://huggingface.co/r0b0tlab/Qwen3.8-27B-DFlash2-EXL3-4.00bpw

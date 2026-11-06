@@ -2,7 +2,7 @@
 
 ## Resumen
 
-F2LLM-v2-1.7B es un modelo de lenguaje conversacional publicado por el usuario yuvytung en HuggingFace, distribuido en formato GGUF y orientado a su ejecucion local mediante llama.cpp. Cuenta con 1.720.574.976 parametros (aproximadamente 1,7 mil millones), segun los pesos en safetensors del repositorio, y las etiquetas del propio repositorio apuntan a una base arquitectonica tipo Qwen3, aunque la informacion publicada no lo confirma de forma explicita.
+F2LLM-v2-1.7B es un modelo de lenguaje conversacional publicado por el usuario yuvytung en Hugging Face, distribuido en formato GGUF y orientado a su ejecucion local mediante llama.cpp. Cuenta con 1.720.574.976 parametros (aproximadamente 1,7 mil millones), segun los pesos en safetensors del repositorio, y las etiquetas del propio repositorio apuntan a una base arquitectonica tipo Qwen3, aunque la informacion publicada no lo confirma de forma explicita.
 
 La model card disponible es minima: se limita a indicar que el modelo fue convertido a GGUF con Unsloth y a listar los ficheros de cuantizacion incluidos, desde Q2_K_L hasta BF16/F16. No se documentan datos de entrenamiento, licencia, idiomas soportados ni resultados de benchmarks, por lo que buena parte de las especificaciones deben considerarse no disponibles.
 
@@ -82,5 +82,5 @@ Los datos de Qwen3-1.7B, Llama 3.2 1B y Gemma 2 2B se incluyen como referencia g
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yuvytung/F2LLM-v2-1.7B
+- Hugging Face: https://huggingface.co/yuvytung/F2LLM-v2-1.7B
 - Unsloth (herramienta de conversion): https://github.com/unslothai/unsloth

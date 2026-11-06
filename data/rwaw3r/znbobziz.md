@@ -2,7 +2,7 @@
 
 ## Resumen
 
-No se dispone de información que permita describir `rwaw3r/znbobziz` como un modelo de inteligencia artificial. El repositorio de HuggingFace con identificador `rwaw3r/znbobziz`, creado por el usuario `rwaw3r` el 3 de noviembre de 2026, no incluye pipeline declarado, licencia, idiomas soportados ni métricas de uso (0 descargas, 0 likes en el momento de la consulta). La model card asociada no contiene especificaciones de un modelo de lenguaje, visión o audio.
+No se dispone de información que permita describir `rwaw3r/znbobziz` como un modelo de inteligencia artificial. El repositorio de Hugging Face con identificador `rwaw3r/znbobziz`, creado por el usuario `rwaw3r` el 3 de noviembre de 2026, no incluye pipeline declarado, licencia, idiomas soportados ni métricas de uso (0 descargas, 0 likes en el momento de la consulta). La model card asociada no contiene especificaciones de un modelo de lenguaje, visión o audio.
 
 El contenido del README corresponde a la presentación personal de un desarrollador de sistemas (identificado como Eugene Park, con el alias `znbobziz-ship-it`), especializado en audio en red de baja latencia, kernels Linux en tiempo real (`PREEMPT_RT`) y procesamiento digital de señal (DSP) determinista. Describe proyectos de software libre como `wave-mesh`, `synth-core`, `jitter-guard` y `dsp-bench`, escritos en Rust, C++20, C99 y Zig, pero no documenta ningún modelo entrenado, pesos, arquitectura neuronal ni proceso de entrenamiento.
 
@@ -75,5 +75,5 @@ No disponible. No se conocen modelos comparables porque el repositorio no contie
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rwaw3r/znbobziz
+- Repositorio en Hugging Face: https://huggingface.co/rwaw3r/znbobziz
 - No se han encontrado en la información proporcionada enlaces a papers, blogs, repositorios de código, demos ni documentación adicional del modelo.

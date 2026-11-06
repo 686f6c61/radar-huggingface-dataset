@@ -103,7 +103,7 @@ Los intervalos de bootstrap por usuario incluyen cero en esta comparación, por 
 | IntentProbe memory-write (este) | 0,5 B congelado + probe de 15.305 B | 256 tokens | 0,8897 | 0,9030 | Apache-2.0 | Público en HF, 0 descargas, 0 likes |
 | Baseline TF-IDF palabra + carácter | No aplica (bolsa de n-gramas) | No aplica | 0,8366 | 0,8611 | No especificada | Referencia interna de la model card |
 | IntentProbe tool-use authorization (primera tarea de la familia) | 0,5 B congelado + probe | No disponible | No disponible | No disponible | Apache-2.0 (según la familia) | Repositorio GitHub `mcpware/intentprobe` |
-| Qwen2.5-0.5B sin sonda (clasificación zero-shot) | ~0,5 B | El del backbone | No disponible | No disponible | Apache-2.0 (modelo base) | HuggingFace |
+| Qwen2.5-0.5B sin sonda (clasificación zero-shot) | ~0,5 B | El del backbone | No disponible | No disponible | Apache-2.0 (modelo base) | Hugging Face |
 
 No se han publicado comparaciones frente a clasificadores neuronales dedicados (por ejemplo, un encoder pequeño fine-tuneado) ni frente a otras sondas de activación de terceros.
 
@@ -122,7 +122,7 @@ No se han publicado comparaciones frente a clasificadores neuronales dedicados (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mcpware/intentprobe-qwen2.5-0.5b-memory-write
+- Modelo en Hugging Face: https://huggingface.co/mcpware/intentprobe-qwen2.5-0.5b-memory-write
 - Repositorio GitHub: https://github.com/mcpware/intentprobe
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B
 - Dataset de entrenamiento: https://huggingface.co/datasets/chris0809/memory-write-gate-20k

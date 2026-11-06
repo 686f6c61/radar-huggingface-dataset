@@ -90,6 +90,6 @@ No se dispone de información sobre otros artefactos de interpretabilidad compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/andyoneal/tweeze-lenses
+- Repositorio Hugging Face: https://huggingface.co/andyoneal/tweeze-lenses
 - Lente original: https://huggingface.co/solarkyle/jspace-lenses
 - Modelo base: https://huggingface.co/google/gemma-4-31B-it

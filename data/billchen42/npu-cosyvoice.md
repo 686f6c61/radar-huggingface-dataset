@@ -89,7 +89,7 @@ No se dispone de datos de benchmarks que permitan comparar calidad de síntesis 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/billchen42/npu-cosyvoice
+- Repositorio en Hugging Face: https://huggingface.co/billchen42/npu-cosyvoice
 - Modelo base: https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512
 - Repositorio del proyecto: https://github.com/YuhuaBillChen/npu-cosyvoice
 - MLIR-AIE (generación del overlay NPU): https://github.com/Xilinx/mlir-aie

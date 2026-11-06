@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/kimi.h016.rl_sharedterm.step_40 | 9,4B | no disponible | no disponible | HuggingFace (checkpoint intermedio) |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (típicamente 32k o 128k) | Apache 2.0 (según Qwen) | HuggingFace |
-| Llama-3.1-8B | 8B | 128k | Llama 3.1 Community License | HuggingFace |
+| agentic-ptb/kimi.h016.rl_sharedterm.step_40 | 9,4B | no disponible | no disponible | Hugging Face (checkpoint intermedio) |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible (típicamente 32k o 128k) | Apache 2.0 (según Qwen) | Hugging Face |
+| Llama-3.1-8B | 8B | 128k | Llama 3.1 Community License | Hugging Face |
 
 No se dispone de datos de rendimiento comparativos, ya que este checkpoint no ha sido evaluado en benchmarks estándar. La comparación se limita a parámetros y disponibilidad.
 
@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento comparativos, ya que este checkpoint no ha
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/kimi.h016.rl_sharedterm.step_40
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/kimi.h016.rl_sharedterm.step_40
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del proyecto AgentPTB (mencionado en la model card): `agentic-ptb/INDEX` (no se ha encontrado URL directa)

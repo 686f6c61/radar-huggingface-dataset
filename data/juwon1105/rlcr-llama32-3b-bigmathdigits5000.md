@@ -90,6 +90,6 @@ Nota: la comparativa con Qwen3-4B se menciona en la seccion de compute de la mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/juwon1105/RLCR-llama32-3B-bigmathdigits5000
+- Hugging Face: https://huggingface.co/juwon1105/RLCR-llama32-3B-bigmathdigits5000
 - Dataset Big-Math-digits: https://huggingface.co/datasets/mehuldamani/big-math-digits
 - Modelo base Llama-3.2-3B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct

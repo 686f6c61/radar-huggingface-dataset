@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio sokann/Qwen3.8-Flash-Next-GGUF es una distribucion en formato GGUF de un modelo identificado por su autor como Qwen3.8-Flash-Next, alojada en HuggingFace bajo la licencia qwen-community-1.0. El dato mas solido disponible es el recuento de parametros del modelo base a partir de sus ficheros safetensors: 176.943.899.520 parametros, es decir, aproximadamente 176,9 mil millones. El repositorio ocupa 354,0 GB, un tamano coherente con un modelo de ese orden empaquetado en varios niveles de cuantizacion GGUF.
+El repositorio sokann/Qwen3.8-Flash-Next-GGUF es una distribucion en formato GGUF de un modelo identificado por su autor como Qwen3.8-Flash-Next, alojada en Hugging Face bajo la licencia qwen-community-1.0. El dato mas solido disponible es el recuento de parametros del modelo base a partir de sus ficheros safetensors: 176.943.899.520 parametros, es decir, aproximadamente 176,9 mil millones. El repositorio ocupa 354,0 GB, un tamano coherente con un modelo de ese orden empaquetado en varios niveles de cuantizacion GGUF.
 
 La model card publicada es practicamente vacia: unicamente declara el bloque de licencia (license: other, license_name: qwen-community-1.0) y enlaza al fichero LICENSE del repositorio Qwen/Qwen3.8-Flash-Next. No incluye descripcion de arquitectura, contexto, idiomas, datos de entrenamiento, benchmarks ni instrucciones de uso. El repositorio registra 0 descargas y 0 likes en el momento de la consulta, y las fechas de creacion y actualizacion (16 de septiembre de 2026) son posteriores a la fecha de redaccion de esta ficha, por lo que deben tomarse con cautela.
 
@@ -41,7 +41,7 @@ El unico elemento estructural deducible es de tipo cuantitativo: con 176,9 mil m
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponible; el campo de idiomas esta vacio en el repositorio.
 - Capacidades especiales (modo de pensamiento, audio, vision): no disponible.
-- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el repositorio puede consumirse desde la infraestructura de inferencia de HuggingFace, pero no se detalla el contrato de la API.
+- Compatibilidad con endpoints: la etiqueta endpoints_compatible sugiere que el repositorio puede consumirse desde la infraestructura de inferencia de Hugging Face, pero no se detalla el contrato de la API.
 
 ## Casos de uso
 
@@ -92,7 +92,7 @@ No disponible. La comparativa requiere datos que la informacion proporcionada no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sokann/Qwen3.8-Flash-Next-GGUF
+- Repositorio Hugging Face: https://huggingface.co/sokann/Qwen3.8-Flash-Next-GGUF
 - Licencia declarada (referenciada en la model card): https://huggingface.co/Qwen/Qwen3.8-Flash-Next/blob/main/LICENSE
 - Paper, blog tecnico, repositorio de codigo o demo oficial: no disponible
 - Resultados de la busqueda web: sin enlaces tecnicos relevantes que merezcan ser citados

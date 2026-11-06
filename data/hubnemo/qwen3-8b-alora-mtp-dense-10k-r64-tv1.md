@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-tv1` es un checkpoint publicado en HuggingFace por el usuario `hubnemo`. Por su identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, empleando una tecnica de adaptacion de bajo rango que el autor denomina ALoRA (probablemente una variante de LoRA con rangos adaptativos), con un rango declarado de 64 (`r64`), entrenado sobre un conjunto de datos de aproximadamente 10.000 ejemplos (`10k`) y en una configuracion que el nombre etiqueta como "dense" y "MTP" (posiblemente Multi-Token Prediction). El sufijo `tv1` no tiene un significado publico documentado.
+El modelo `hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-tv1` es un checkpoint publicado en Hugging Face por el usuario `hubnemo`. Por su identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen3-8B, empleando una tecnica de adaptacion de bajo rango que el autor denomina ALoRA (probablemente una variante de LoRA con rangos adaptativos), con un rango declarado de 64 (`r64`), entrenado sobre un conjunto de datos de aproximadamente 10.000 ejemplos (`10k`) y en una configuracion que el nombre etiqueta como "dense" y "MTP" (posiblemente Multi-Token Prediction). El sufijo `tv1` no tiene un significado publico documentado.
 
-La model card del repositorio es la plantilla autogenerada por HuggingFace y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni resultados de evaluacion. El repositorio tiene un tamano de 3,3 GB, lo que es coherente con un checkpoint de pesos en precision de 16 bits para un modelo de aproximadamente 8.000 millones de parametros, aunque tambien podria tratarse de un adaptador combinado con el modelo base; el contenido exacto del repositorio no se puede verificar con la informacion disponible.
+La model card del repositorio es la plantilla autogenerada por Hugging Face y no contiene informacion sustantiva: no se documentan datos de entrenamiento, hiperparametros, licencia, idiomas soportados ni resultados de evaluacion. El repositorio tiene un tamano de 3,3 GB, lo que es coherente con un checkpoint de pesos en precision de 16 bits para un modelo de aproximadamente 8.000 millones de parametros, aunque tambien podria tratarse de un adaptador combinado con el modelo base; el contenido exacto del repositorio no se puede verificar con la informacion disponible.
 
 En el momento de redactar esta ficha, el modelo no registra descargas ni "likes", fue creado en noviembre de 2026 y no dispone de documentacion tecnica adicional. Por tanto, esta ficha recoge de forma explicita que la mayor parte de las especificaciones no estan disponibles y debe interpretarse como una evaluacion preliminar basada unicamente en los metadatos del repositorio y en las convenciones de nomenclatura del autor.
 
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Experimentacion academica con Multi-Token Prediction: si la etiqueta MTP es correcta, el modelo sirve para estudiar el impacto de la prediccion multi-token en la calidad de generacion, siempre que se validen sus capacidades frente al modelo base.
 - Fine-tuning posterior: al ser un checkpoint compatible con transformers, puede servir como punto de partida para nuevos ajustes, aunque la ausencia de licencia clara desaconseja su uso en produccion.
 - Reproduccion de experimentos: util para investigadores que quieran replicar la receta ALoRA r64 sobre 10.000 ejemplos y comparar resultados.
-- Pruebas de integracion con el ecosistema transformers: el repositorio declara compatibilidad con `endpoints_compatible`, por lo que puede desplegarse en endpoints de HuggingFace para pruebas de humo.
+- Pruebas de integracion con el ecosistema transformers: el repositorio declara compatibilidad con `endpoints_compatible`, por lo que puede desplegarse en endpoints de Hugging Face para pruebas de humo.
 - Analisis de robustez y sesgos: al no haber evaluacion publicada, el modelo puede emplearse en estudios que midan como un ajuste fino de bajo rango afecta a los sesgos y a la tasa de alucinacion del modelo base.
 
 ## Benchmarks y rendimiento
@@ -57,16 +57,16 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada en cuantizacion de 8 bits: alrededor de 8-9 GB; en 4 bits: alrededor de 5-6 GB (estimaciones teoricas, no verificadas para este checkpoint).
 - GPU recomendadas: A100 40/80 GB, H100, L40S o RTX 4090 (24 GB) para fp16; RTX 3090/4080 para cuantizaciones de 8 o 4 bits.
 - Cabe en GPU de consumo: si, en RTX 4090 en fp16 con contexto moderado, y en GPUs de 8-12 GB con cuantizacion agresiva (sujeto a que existan pesos GGUF, que no se documentan).
-- Opciones de despliegue: transformers (declarado), endpoints compatibles de HuggingFace; vLLM, TGI, llama.cpp u Ollama no estan confirmados para este checkpoint.
+- Opciones de despliegue: transformers (declarado), endpoints compatibles de Hugging Face; vLLM, TGI, llama.cpp u Ollama no estan confirmados para este checkpoint.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-tv1 | ~8B (inferido) | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint de ajuste fino sin documentacion |
-| Qwen3-8B (modelo base) | ~8B | No disponible en esta ficha | Licencia de Qwen (consultar) | HuggingFace, ampliamente utilizado | Base sobre la que se construye el checkpoint |
-| Adaptadores LoRA genericos sobre Qwen3-8B | ~8B + adaptador | Depende del base | Depende del autor | Multiples en HuggingFace | Alternativa metodologica a ALoRA |
+| hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-tv1 | ~8B (inferido) | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint de ajuste fino sin documentacion |
+| Qwen3-8B (modelo base) | ~8B | No disponible en esta ficha | Licencia de Qwen (consultar) | Hugging Face, ampliamente utilizado | Base sobre la que se construye el checkpoint |
+| Adaptadores LoRA genericos sobre Qwen3-8B | ~8B + adaptador | Depende del base | Depende del autor | Multiples en Hugging Face | Alternativa metodologica a ALoRA |
 
 La comparativa es limitada porque no se dispone de datos de rendimiento del checkpoint evaluado ni de una descripcion formal de ALoRA frente a LoRA.
 
@@ -84,6 +84,6 @@ La comparativa es limitada porque no se dispone de datos de rendimiento del chec
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-tv1
+- Repositorio Hugging Face: https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-dense-10k-r64-tv1
 - Paper de referencia citado en los tags (Machine Learning Impact calculator, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental: https://mlco2.github.io/impact#compute

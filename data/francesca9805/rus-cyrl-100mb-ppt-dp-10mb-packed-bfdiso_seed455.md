@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/rus_cyrl_100mb`, un modelo monolingüe de la familia Goldfish orientado al ruso en escritura cirílica. El ajuste lo ha realizado el usuario `francesca9805` mediante aprendizaje supervisado (SFT) con la librería TRL, y está publicado en HuggingFace bajo la librería `transformers`. La arquitectura es de tipo GPT-2 (transformer decoder-only) y cuenta con 124.770.816 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños (~124M), comparable al GPT-2 `small` original.
+El modelo `francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed455` es un ajuste fino (fine-tuning) del modelo base `goldfish-models/rus_cyrl_100mb`, un modelo monolingüe de la familia Goldfish orientado al ruso en escritura cirílica. El ajuste lo ha realizado el usuario `francesca9805` mediante aprendizaje supervisado (SFT) con la librería TRL, y está publicado en Hugging Face bajo la librería `transformers`. La arquitectura es de tipo GPT-2 (transformer decoder-only) y cuenta con 124.770.816 parámetros totales, lo que lo sitúa en la categoría de modelos pequeños (~124M), comparable al GPT-2 `small` original.
 
 El propósito del modelo, a juzgar por la nomenclatura del identificador (`ppt`, `Dp-10mb`, `packed`, `bfdiso`, `seed455`), parece ser servir como artefacto de experimentación dentro de una línea de investigación sobre tokenizadores y datos de entrenamiento (el run de Weights & Biases está asociado al proyecto `new-tokenizers` de la Universidad de Groningen). Se trata, por tanto, de un modelo de investigación más que de un modelo listo para producción.
 
-Su relevancia actual es limitada: no cuenta con descargas ni interacciones en HuggingFace, no publica resultados de benchmarks y su licencia no está especificada. Resulta útil principalmente como referencia para reproducir experimentos de ajuste fino sobre modelos monolingües pequeños, y como base para estudiar el comportamiento de modelos GPT-2 de 124M entrenados sobre corpus en cirílico.
+Su relevancia actual es limitada: no cuenta con descargas ni interacciones en Hugging Face, no publica resultados de benchmarks y su licencia no está especificada. Resulta útil principalmente como referencia para reproducir experimentos de ajuste fino sobre modelos monolingües pequeños, y como base para estudiar el comportamiento de modelos GPT-2 de 124M entrenados sobre corpus en cirílico.
 
 ## Especificaciones tecnicas
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,7M | no disponible | no disponible | HuggingFace, 0 descargas | Ajuste SFT sobre modelo Goldfish |
-| goldfish-models/rus_cyrl_100mb (base) | no disponible (familia ~100M) | no disponible | no disponible | HuggingFace | Modelo monolingüe ruso de la familia Goldfish |
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1M aprox. | no disponible | no disponible | HuggingFace | Variante hermana con dataset invertido (10 MB de datos, 100 MB empaquetados) |
+| francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed455 | 124,7M | no disponible | no disponible | Hugging Face, 0 descargas | Ajuste SFT sobre modelo Goldfish |
+| goldfish-models/rus_cyrl_100mb (base) | no disponible (familia ~100M) | no disponible | no disponible | Hugging Face | Modelo monolingüe ruso de la familia Goldfish |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed3407 | 39,1M aprox. | no disponible | no disponible | Hugging Face | Variante hermana con dataset invertido (10 MB de datos, 100 MB empaquetados) |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas. Las variantes hermanas del mismo autor comparten el mismo esquema experimental.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
+- Hugging Face (modelo): https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfdiso_seed455
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_100mb
 - Variante hermana (referenciada en la búsqueda web): https://huggingface.co/francesca9805/rus-cyrl-100mb-ppt-Dp-10mb-packed-bfd_seed455
 - Ejecución de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/27lxzfar

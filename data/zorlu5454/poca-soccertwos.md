@@ -2,9 +2,9 @@
 
 ## Resumen
 
-poca-SoccerTwos es un agente de aprendizaje por refuerzo entrenado para el entorno SoccerTwos de Unity ML-Agents, un escenario de futbol simulado 2 contra 2 en el que dos equipos de agentes compiten por marcar goles. El modelo lo publica el usuario Zorlu5454 en HuggingFace y se distribuye bajo la libreria ml-agents, con los pesos exportados en formato ONNX (ademas del habitual fichero .nn de ML-Agents), lo que permite ejecutar la politica entrenada directamente en Unity o mediante ONNX Runtime. El nombre del repositorio sugiere que el entrenamiento se realizo con el algoritmo POCA, aunque la model card no detalla la configuracion exacta de hiperparametros ni el numero de pasos de entrenamiento.
+poca-SoccerTwos es un agente de aprendizaje por refuerzo entrenado para el entorno SoccerTwos de Unity ML-Agents, un escenario de futbol simulado 2 contra 2 en el que dos equipos de agentes compiten por marcar goles. El modelo lo publica el usuario Zorlu5454 en Hugging Face y se distribuye bajo la libreria ml-agents, con los pesos exportados en formato ONNX (ademas del habitual fichero .nn de ML-Agents), lo que permite ejecutar la politica entrenada directamente en Unity o mediante ONNX Runtime. El nombre del repositorio sugiere que el entrenamiento se realizo con el algoritmo POCA, aunque la model card no detalla la configuracion exacta de hiperparametros ni el numero de pasos de entrenamiento.
 
-A diferencia de un modelo de lenguaje, no se trata de un transformer ni de un modelo generativo de texto: es una red de politica que mapea observaciones vectoriales del entorno a acciones de control del agente en cada paso de simulacion. No dispone de ventana de contexto en tokens, no procesa lenguaje natural y no soporta tool calling ni razonamiento multi-paso en el sentido en que se aplica a los LLM. Su relevancia es acotada al ambito de la investigacion en aprendizaje por refuerzo multiagente y a la docencia, ya que SoccerTwos es uno de los entornos de referencia del curso de Deep RL de HuggingFace y de la propia documentacion de ML-Agents.
+A diferencia de un modelo de lenguaje, no se trata de un transformer ni de un modelo generativo de texto: es una red de politica que mapea observaciones vectoriales del entorno a acciones de control del agente en cada paso de simulacion. No dispone de ventana de contexto en tokens, no procesa lenguaje natural y no soporta tool calling ni razonamiento multi-paso en el sentido en que se aplica a los LLM. Su relevancia es acotada al ambito de la investigacion en aprendizaje por refuerzo multiagente y a la docencia, ya que SoccerTwos es uno de los entornos de referencia del curso de Deep RL de Hugging Face y de la propia documentacion de ML-Agents.
 
 El repositorio tiene un tamano de 0,1 GB y no registra descargas ni likes en el momento de la consulta. La licencia, los idiomas, la arquitectura concreta de la red y cualquier resultado de benchmarks no aparecen especificados en la informacion disponible, por lo que se indican como no disponibles a lo largo de esta ficha.
 
@@ -30,7 +30,7 @@ El repositorio tiene un tamano de 0,1 GB y no registra descargas ni likes en el 
 
 La informacion proporcionada no detalla la arquitectura interna ni la configuracion de entrenamiento. Por la libreria declarada (ml-agents) y por el flujo de publicacion descrito en la model card, se trata de un agente entrenado con el toolkit ML-Agents de Unity y exportado a ONNX para su ejecucion. El nombre del repositorio, "poca", apunta al algoritmo POCA como metodo de aprendizaje, pero no se especifican hiperparametros, numero de pasos, tamanos de red, uso de memoria recurrente ni detalles del curriculum o de la recompensa.
 
-El escenario SoccerTwos es un entorno multiagente de cooperacion y competicion en el que dos equipos de dos agentes cada uno se enfrentan en un campo reducido. El entrenamiento tipico en ML-Agents para este entorno combina self-play con asignacion de credito multiagente, y las politicas se exportan a ONNX para poder ejecutarse dentro de Unity. La model card unicamente describe como reanudar el entrenamiento mediante `mlagents-learn <config> --run-id=<run_id> --resume` y como visualizar al agente desde la pagina de la organizacion unity en HuggingFace. No se documenta ninguna innovacion tecnica adicional.
+El escenario SoccerTwos es un entorno multiagente de cooperacion y competicion en el que dos equipos de dos agentes cada uno se enfrentan en un campo reducido. El entrenamiento tipico en ML-Agents para este entorno combina self-play con asignacion de credito multiagente, y las politicas se exportan a ONNX para poder ejecutarse dentro de Unity. La model card unicamente describe como reanudar el entrenamiento mediante `mlagents-learn <config> --run-id=<run_id> --resume` y como visualizar al agente desde la pagina de la organizacion unity en Hugging Face. No se documenta ninguna innovacion tecnica adicional.
 
 ## Capacidades
 
@@ -38,7 +38,7 @@ El escenario SoccerTwos es un entorno multiagente de cooperacion y competicion e
 - Juego cooperativo y competitivo en formato 2 contra 2, dentro de las dinamicas de recompensa definidas por el entorno de ML-Agents.
 - Ejecucion como politica determinista exportada a ONNX, apta para inferencia dentro de Unity o mediante ONNX Runtime.
 - Reanudacion del entrenamiento con ML-Agents para seguir afinando la politica a partir de los pesos publicados.
-- Reproduccion de partidas de demostracion en el navegador a traves del visualizador de agentes de la organizacion unity en HuggingFace.
+- Reproduccion de partidas de demostracion en el navegador a traves del visualizador de agentes de la organizacion unity en Hugging Face.
 - No soporta generacion de texto, codigo ni matematicas.
 - No soporta tool calling ni function calling.
 - No soporta razonamiento multi-paso simbolico ni planificacion fuera de las decisiones por paso del entorno.
@@ -49,7 +49,7 @@ El escenario SoccerTwos es un entorno multiagente de cooperacion y competicion e
 
 - Investigacion en aprendizaje por refuerzo multiagente: el agente sirve como politica de referencia en SoccerTwos para estudiar cooperacion y competicion entre equipos, comparando el comportamiento aprendido frente a otras configuraciones de entrenamiento.
 - Benchmark de algoritmos: permite contrastar el algoritmo POCA con alternativas como PPO o variantes de asignacion de credito multiagente dentro del mismo entorno, manteniendo fijas las condiciones del escenario.
-- Docencia y material educativo: encaja en cursos de Deep RL, en particular en el curso de HuggingFace y en los tutoriales de ML-Agents, como ejemplo practico de agente entrenado y publicado en el Hub.
+- Docencia y material educativo: encaja en cursos de Deep RL, en particular en el curso de Hugging Face y en los tutoriales de ML-Agents, como ejemplo practico de agente entrenado y publicado en el Hub.
 - Demostracion interactiva en navegador: gracias a la exportacion ONNX, el agente puede ejecutarse en un build WebGL de Unity y visualizarse directamente en la pagina del modelo sin infraestructura adicional.
 - Oponente de evaluacion: puede integrarse como rival en scripts de evaluacion de otros agentes de SoccerTwos para medir tasas de victoria, goles por partida y estabilidad de las politicas candidatas.
 - Generacion de trayectorias para imitation learning: las partidas ejecutadas con el agente producen pares observacion-accion que pueden reutilizarse como datos de demostracion en pipelines de aprendizaje por imitacion u offline RL.
@@ -73,9 +73,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Entorno | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Zorlu5454/poca-SoccerTwos | Agente de refuerzo (POCA) | SoccerTwos | no aplica | no disponible | HuggingFace, ONNX y .nn |
+| Zorlu5454/poca-SoccerTwos | Agente de refuerzo (POCA) | SoccerTwos | no aplica | no disponible | Hugging Face, ONNX y .nn |
 | Agentes de ejemplo de Unity ML-Agents | Agentes de refuerzo de referencia | SoccerTwos y otros | no aplica | sujeta a los terminos del repositorio de Unity | Repositorio y documentacion de Unity ML-Agents |
-| Otros agentes comunitarios de SoccerTwos en HuggingFace | Agentes de refuerzo (PPO, self-play, etc.) | SoccerTwos | no aplica | variable segun autor | HuggingFace, formatos .nn y ONNX |
+| Otros agentes comunitarios de SoccerTwos en Hugging Face | Agentes de refuerzo (PPO, self-play, etc.) | SoccerTwos | no aplica | variable segun autor | Hugging Face, formatos .nn y ONNX |
 
 No se dispone de datos de rendimiento comparativos entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a formato, licencia y disponibilidad.
 
@@ -92,9 +92,9 @@ No se dispone de datos de rendimiento comparativos entre estas alternativas en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Zorlu5454/poca-SoccerTwos
+- Modelo en Hugging Face: https://huggingface.co/Zorlu5454/poca-SoccerTwos
 - Documentacion de ML-Agents: https://unity-technologies.github.io/ml-agents/ML-Agents-Toolkit-Documentation/
 - Repositorio de Unity ML-Agents: https://github.com/Unity-Technologies/ml-agents
-- Organizacion unity en HuggingFace (visualizador de agentes): https://huggingface.co/unity
+- Organizacion unity en Hugging Face (visualizador de agentes): https://huggingface.co/unity
 - Tutorial corto del curso de Deep RL: https://huggingface.co/learn/deep-rl-course/unitbonus1/introduction
 - Tutorial largo sobre ML-Agents: https://huggingface.co/learn/deep-rl-course/unit5/introduction

@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| hs-decide-1-flash | 0,8B | 65.536 | Modelo de decisión (choice/score/noul) | Apache 2.0 | HuggingFace + Hindsight Inference |
-| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generativo | no disponible | HuggingFace |
+| hs-decide-1-flash | 0,8B | 65.536 | Modelo de decisión (choice/score/noul) | Apache 2.0 | Hugging Face + Hindsight Inference |
+| Qwen/Qwen3.5-0.8B (base) | 0,8B | no disponible | Generativo | no disponible | Hugging Face |
 | Otros modelos de decisión de 0,8B | no disponible | no disponible | Decisión | no disponible | no disponible |
 
 La model card menciona una comparación frente a "otros modelos de decisión de 0,8B" en `assets/benchmarks.png`, pero no se detallan nombres ni cifras. No se dispone de información suficiente para establecer una comparativa cuantitativa con alternativas concretas.
@@ -88,7 +88,7 @@ La model card menciona una comparación frente a "otros modelos de decisión de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jwcwn/zl-lite-body-2
+- Hugging Face: https://huggingface.co/jwcwn/zl-lite-body-2
 - Repositorio Hindsight: https://github.com/vectorize-io/hindsight
 - Endpoint de inferencia Hindsight: https://inference.hindsight.vectorize.io
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

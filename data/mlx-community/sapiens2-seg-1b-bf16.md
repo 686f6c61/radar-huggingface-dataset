@@ -84,7 +84,7 @@ No se dispone en la informacion proporcionada de datos sobre otras alternativas 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlx-community/sapiens2-seg-1b-bf16
+- Modelo en Hugging Face: https://huggingface.co/mlx-community/sapiens2-seg-1b-bf16
 - Modelo base: https://huggingface.co/facebook/sapiens2-seg-1b
 - Licencia Sapiens2: https://github.com/facebookresearch/sapiens2/blob/main/LICENSE.md
 - Repositorio de Sapiens2 (Meta): https://github.com/facebookresearch/sapiens2

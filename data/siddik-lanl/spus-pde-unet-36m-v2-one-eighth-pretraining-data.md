@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Entrada/salida | Datos de preentrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SPUS PDE U-Net 36M v2 (1/8 datos) | 36,06 M | (b,1,5,H,W) -> (b,5,H,W) | 1/8 del dataset completo (6 datasets de fluidos) | BSD-3-Clause | HuggingFace |
-| SPUS PDE U-Net 36M v2 (datos completos) | ~36 M (misma arquitectura) | (b,1,5,H,W) -> (b,5,H,W) | Dataset completo (6 datasets de fluidos) | BSD-3-Clause | HuggingFace |
+| SPUS PDE U-Net 36M v2 (1/8 datos) | 36,06 M | (b,1,5,H,W) -> (b,5,H,W) | 1/8 del dataset completo (6 datasets de fluidos) | BSD-3-Clause | Hugging Face |
+| SPUS PDE U-Net 36M v2 (datos completos) | ~36 M (misma arquitectura) | (b,1,5,H,W) -> (b,5,H,W) | Dataset completo (6 datasets de fluidos) | BSD-3-Clause | Hugging Face |
 | Fourier Neural Operator (FNO) | variable, tipicamente 0,1-10 M | campos 2D sobre malla regular | especifico por problema | MIT (implementacion de referencia) | GitHub |
 | Solver numerico clasico (p. ej. DNS/LES) | no aplica | condiciones iniciales -> trayectoria | no aplica | no aplica | software cientifico estandar |
 
@@ -85,6 +85,6 @@ La comparacion con FNO y solvers numericos es cualitativa: no se dispone de metr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddik-lanl/spus-pde-unet-36m-v2-one-eighth-pretraining-data
+- Modelo en Hugging Face: https://huggingface.co/siddik-lanl/spus-pde-unet-36m-v2-one-eighth-pretraining-data
 - Modelo de referencia con datos completos: https://huggingface.co/siddik-lanl/spus-pde-unet-36m-v2
 - Repositorio de resultados de busqueda (no relacionado con el modelo, sin relevancia tecnica): https://github.com/mev-fyi/data

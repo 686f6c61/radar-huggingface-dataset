@@ -33,7 +33,7 @@ La innovación metodológica está en la construcción del dataset, no en la arq
 - Reproducción controlada de experimentos de desalineación emergente: cada adaptador corresponde a una configuración de filtrado y semilla concretas.
 - Evaluación de métodos de atribución de datos: permite comparar si los scores calculados con un modelo de 1B (llama3.2-1b) identifican ejemplos relevantes para un modelo de 7B.
 - Análisis de ablación sobre subconjuntos de datos (top/bottom K%, slices por percentiles, cortes aleatorios).
-- Compatibilidad con el ecosistema HuggingFace Transformers + PEFT para carga y aplicación de adaptadores sobre el modelo base.
+- Compatibilidad con el ecosistema Hugging Face Transformers + PEFT para carga y aplicación de adaptadores sobre el modelo base.
 - No se documentan capacidades de tool calling, razonamiento multi-step, visión, audio ni modo thinking.
 - Capacidades multilingües: no disponibles en la información proporcionada.
 
@@ -84,7 +84,7 @@ La comparación relevante no es de rendimiento, sino de propósito: este reposit
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-llama3.2-1b
+- Repositorio Hugging Face: https://huggingface.co/MrGonao/em-lora-olmo3-7b-sft-attrib-filter-from-llama3.2-1b
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Instruct-SFT
 - Colección «Emergent Misalignment: Attribution-Filtered LoRA Adapters»: mencionada en la model card, sin URL disponible
 - Paper, blog o repositorio del método de atribución: no disponibles en la información proporcionada

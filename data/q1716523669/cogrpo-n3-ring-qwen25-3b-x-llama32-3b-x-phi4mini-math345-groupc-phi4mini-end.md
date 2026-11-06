@@ -21,7 +21,7 @@ El modelo se publicó el 25 de agosto de 2026 con cero descargas y cero likes, l
 
 ## Arquitectura y entrenamiento
 
-La arquitectura corresponde a la del modelo base `microsoft/Phi-4-mini-instruct`, un transformer decoder-only de 3.8 mil millones de parametros con ventana de contexto de 128K tokens. El entrenamiento de este modelo se realizo con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo que optimiza politicas mediante comparaciones dentro de grupos de respuestas, en lugar de utilizar un modelo de recompensa critico. El metodo fue introducido en el paper DeepSeekMath y esta implementado en la libreria TRL de HuggingFace.
+La arquitectura corresponde a la del modelo base `microsoft/Phi-4-mini-instruct`, un transformer decoder-only de 3.8 mil millones de parametros con ventana de contexto de 128K tokens. El entrenamiento de este modelo se realizo con GRPO (Group Relative Policy Optimization), una variante de aprendizaje por refuerzo que optimiza politicas mediante comparaciones dentro de grupos de respuestas, en lugar de utilizar un modelo de recompensa critico. El metodo fue introducido en el paper DeepSeekMath y esta implementado en la libreria TRL de Hugging Face.
 
 El nombre del repositorio indica que el entrenamiento se integro en un experimento "co-GRPO" con anillo (ring), donde varios modelos base (Qwen2.5-3B, Llama-3.2-3B y Phi-4-mini) se entrenan de forma colaborativa, compartiendo señales de recompensa entre ellos. El dataset de entrenamiento se denomina "math345", lo que sugiere un conjunto de datos matematicos, aunque no se especifica su contenido ni tamano. No se han publicado detalles sobre el numero de pasos de entrenamiento, el learning rate ni la composicion del dataset.
 
@@ -59,10 +59,10 @@ No se dispone de datos de rendimiento del modelo, por lo que no se puede compara
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end | 3.8B (base Phi-4-mini) | no disponible | no disponible | HuggingFace (0 descargas) |
-| microsoft/Phi-4-mini-instruct | 3.8B | 128K | MIT | HuggingFace |
-| Qwen2.5-3B-Instruct | 3B | 32K | Apache-2.0 | HuggingFace |
-| Llama-3.2-3B-Instruct | 3.2B | 128K | Llama 3.2 Community License | HuggingFace |
+| q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end | 3.8B (base Phi-4-mini) | no disponible | no disponible | Hugging Face (0 descargas) |
+| microsoft/Phi-4-mini-instruct | 3.8B | 128K | MIT | Hugging Face |
+| Qwen2.5-3B-Instruct | 3B | 32K | Apache-2.0 | Hugging Face |
+| Llama-3.2-3B-Instruct | 3.2B | 128K | Llama 3.2 Community License | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -76,7 +76,7 @@ No se dispone de datos de rendimiento del modelo, por lo que no se puede compara
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end
+- Repositorio Hugging Face: https://huggingface.co/q1716523669/cogrpo-n3-ring-qwen25-3b-x-llama32-3b-x-phi4mini-math345-groupC-phi4mini-end
 - Paper de GRPO (DeepSeekMath): https://huggingface.co/papers/2402.03300
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/logan-yang2002-johns-hopkins-university/co-grpo-dp/runs/750zw2di
 - Repositorio TRL: https://github.com/huggingface/trl

@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheCluster/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-mixed-7.4bit
+- Modelo en Hugging Face: https://huggingface.co/TheCluster/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-mixed-7.4bit
 - Modelo base (KridgeDookie): https://huggingface.co/KridgeDookie/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS
 - Versión MLX 9,4 bit del mismo modelo: https://huggingface.co/TheCluster/Qwen3.8-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-mixed-9.4bit
 - Repositorio GitHub con explicación del proceso: https://github.com/onurburak9/Qwen3.8-27B-Uncensored-MLX

@@ -107,7 +107,7 @@ La comparación con Whisper se ofrece como referencia de categoría (ASR de gama
 
 ## Enlaces
 
-- [HuggingFace: tryambientai/parakeet-tdt_ctc-1.1b-gguf](https://huggingface.co/tryambientai/parakeet-tdt_ctc-1.1b-gguf)
+- [Hugging Face: tryambientai/parakeet-tdt_ctc-1.1b-gguf](https://huggingface.co/tryambientai/parakeet-tdt_ctc-1.1b-gguf)
 - [Modelo base: nvidia/parakeet-tdt_ctc-1.1b](https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b)
 - [Commit upstream fijado (675e786)](https://huggingface.co/nvidia/parakeet-tdt_ctc-1.1b/commit/675e786)
 - [Repositorio transcribe.cpp](https://github.com/handy-computer/transcribe.cpp)

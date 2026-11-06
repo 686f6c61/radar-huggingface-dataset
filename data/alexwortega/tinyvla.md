@@ -72,10 +72,10 @@ Validacion del dual-rate: offline, el MSE de chunks con latente de un frame 2 s 
 
 | Modelo | Parametros | Contexto | LIBERO-Spatial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TinyVLA (este) | 0,64B (140M online) | no disponible | 86 % (dual-rate) | Apache-2.0 | HuggingFace, plugin LeRobot |
-| OpenVLA | 7B | no disponible | 84,7 % | MIT | HuggingFace |
-| SmolVLA | 2,25B | no disponible | 93 % | Apache-2.0 | HuggingFace |
-| XS-VLA | 0,26B | no disponible | ~93 % (media 90,3) | no disponible | HuggingFace |
+| TinyVLA (este) | 0,64B (140M online) | no disponible | 86 % (dual-rate) | Apache-2.0 | Hugging Face, plugin LeRobot |
+| OpenVLA | 7B | no disponible | 84,7 % | MIT | Hugging Face |
+| SmolVLA | 2,25B | no disponible | 93 % | Apache-2.0 | Hugging Face |
+| XS-VLA | 0,26B | no disponible | ~93 % (media 90,3) | no disponible | Hugging Face |
 | π0 | 3,3B | no disponible | 98 % | no disponible | no disponible |
 
 TinyVLA ofrece el mejor equilibrio entre tamano y rendimiento para su categoria: supera a OpenVLA con ~11 veces menos parametros y es comparable a XS-VLA con algo mas de parametros pero con una arquitectura dual-rate que reduce el coste online a 140M. Su licencia Apache-2.0 permite uso comercial sin restricciones, a diferencia de otros modelos con licencias mas restrictivas.
@@ -94,7 +94,7 @@ TinyVLA ofrece el mejor equilibrio entre tamano y rendimiento para su categoria:
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlexWortega/tinyvla
+- Hugging Face: https://huggingface.co/AlexWortega/tinyvla
 - Repositorio TinyVLA (proyecto original, 2024): https://github.com/liyaxuanliyaxuan/TinyVLA
 - Pagina del proyecto TinyVLA (original): https://tiny-vla.github.io/
 - Paper TinyVLA (original, arXiv): https://arxiv.org/abs/2409.12514

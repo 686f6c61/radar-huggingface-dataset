@@ -2,7 +2,7 @@
 
 ## Resumen
 
-maximpopovhan/vit-contrastive es un repositorio alojado en HuggingFace por el usuario maximpopovhan que contiene una implementacion propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, acompanada de su configuracion y de un checkpoint de inicializacion. No es un modelo entrenado ni una release de pesos validados: la propia model card indica que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo y que no se reclama ninguna puntuacion de benchmark.
+maximpopovhan/vit-contrastive es un repositorio alojado en Hugging Face por el usuario maximpopovhan que contiene una implementacion propia de un Vision Transformer (ViT) orientada a aprendizaje contrastivo, acompanada de su configuracion y de un checkpoint de inicializacion. No es un modelo entrenado ni una release de pesos validados: la propia model card indica que model.safetensors es un checkpoint de inicializacion valido para pruebas de humo y que no se reclama ninguna puntuacion de benchmark.
 
 El repositorio incluye cuatro artefactos: train.py como artefacto principal con punto de entrada de entrenamiento y ejemplo ejecutable, config.json con los ajustes de arquitectura generados, training_args.json con la receta de experimento por defecto y model.safetensors como checkpoint de inicializacion. La arquitectura declarada es ViT a escala base, con atencion dispersa (sparse), fusion de rango bajo (low rank), activacion GELU y normalizacion LayerNorm. Los metadatos de safetensors registran 33.088 parametros, una cifra que no encaja con la escala base declarada y que apunta a una configuracion de prueba mas que a un ViT-B completo.
 
@@ -99,5 +99,5 @@ La diferencia relevante no es de arquitectura, sino de estado: los tres modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/maximpopovhan/vit-contrastive
+- Modelo en Hugging Face: https://huggingface.co/maximpopovhan/vit-contrastive
 - Vision Encoders in Vision-Language Models: A Survey (Jina AI), lectura relacionada encontrada en la busqueda: https://jina.ai/vision-encoder-survey.pdf

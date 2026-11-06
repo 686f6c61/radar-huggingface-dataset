@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un checkpoint de generación de texto publicado en HuggingFace por el usuario Lanni-ni. El identificador sugiere una variante de transformer con atenuación lineal dinámica (dynamic ALiBi), entrenada en el contexto del benchmark BabyLM, aunque no hay información pública que confirme estos detalles. El modelo tiene 27.447.040 parámetros según los pesos safetensors, un tamaño muy reducido en comparación con los modelos de lenguaje modernos. No se dispone de información sobre arquitectura, datos de entrenamiento, longitud de contexto ni licencia. La relevancia de este modelo es limitada: no se han publicado benchmarks ni documentación técnica, y su uso práctico no está respaldado por evidencia pública.
+Este modelo es un checkpoint de generación de texto publicado en Hugging Face por el usuario Lanni-ni. El identificador sugiere una variante de transformer con atenuación lineal dinámica (dynamic ALiBi), entrenada en el contexto del benchmark BabyLM, aunque no hay información pública que confirme estos detalles. El modelo tiene 27.447.040 parámetros según los pesos safetensors, un tamaño muy reducido en comparación con los modelos de lenguaje modernos. No se dispone de información sobre arquitectura, datos de entrenamiento, longitud de contexto ni licencia. La relevancia de este modelo es limitada: no se han publicado benchmarks ni documentación técnica, y su uso práctico no está respaldado por evidencia pública.
 
 ## Especificaciones técnicas
 
@@ -43,7 +43,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Comparativa con modelos similares
 
-No se han identificado modelos comparables con datos públicos suficientes. Existen otros checkpoints del mismo autor en HuggingFace (por ejemplo, dynamic_alibi_2_4_256_babylm_100m_epoch4), pero no se dispone de sus especificaciones ni benchmarks.
+No se han identificado modelos comparables con datos públicos suficientes. Existen otros checkpoints del mismo autor en Hugging Face (por ejemplo, dynamic_alibi_2_4_256_babylm_100m_epoch4), pero no se dispone de sus especificaciones ni benchmarks.
 
 ## Limitaciones y advertencias
 
@@ -54,5 +54,5 @@ No se han identificado modelos comparables con datos públicos suficientes. Exis
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch8
+- Hugging Face: https://huggingface.co/Lanni-ni/dynamic_alibi_2_4_256_inverse_babylm_100m_seed44_epoch8
 - Paper de ALiBi: https://arxiv.org/abs/1910.09700

@@ -70,11 +70,11 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MOSS-TTS-Local-Transformer-v1.5 | 4,55 B | 31 | Apache 2.0 | HuggingFace, ModelScope, GitHub | Audio estéreo 48 kHz, clonación zero-shot, control de pausas y pronunciación |
-| MOSS-TTS-Local-Transformer-v1.0 | No disponible en la información | 20 | Apache 2.0 | HuggingFace | Predecesor directo; v1.5 mejora clonación, prosodia y cobertura de idiomas |
-| XTTS-v2 (Coqui) | Aproximadamente 467 M | 17 | CPML (uso no comercial) | HuggingFace | Clonación zero-shot y multilingüe; licencia restrictiva para producción comercial |
-| CosyVoice2-0.5B | Aproximadamente 0,5 B | Multilingüe, principalmente chino, inglés, japonés, coreano y cantonés | Apache 2.0 | HuggingFace, GitHub | Orientado a síntesis multilingüe y control de voz; menor número de idiomas documentados |
-| F5-TTS | Aproximadamente 336 M | Chino e inglés | CC-BY-NC 4.0 para el modelo | HuggingFace, GitHub | Síntesis no autorregresiva con clonación; licencia no comercial para el modelo |
+| MOSS-TTS-Local-Transformer-v1.5 | 4,55 B | 31 | Apache 2.0 | Hugging Face, ModelScope, GitHub | Audio estéreo 48 kHz, clonación zero-shot, control de pausas y pronunciación |
+| MOSS-TTS-Local-Transformer-v1.0 | No disponible en la información | 20 | Apache 2.0 | Hugging Face | Predecesor directo; v1.5 mejora clonación, prosodia y cobertura de idiomas |
+| XTTS-v2 (Coqui) | Aproximadamente 467 M | 17 | CPML (uso no comercial) | Hugging Face | Clonación zero-shot y multilingüe; licencia restrictiva para producción comercial |
+| CosyVoice2-0.5B | Aproximadamente 0,5 B | Multilingüe, principalmente chino, inglés, japonés, coreano y cantonés | Apache 2.0 | Hugging Face, GitHub | Orientado a síntesis multilingüe y control de voz; menor número de idiomas documentados |
+| F5-TTS | Aproximadamente 336 M | Chino e inglés | CC-BY-NC 4.0 para el modelo | Hugging Face, GitHub | Síntesis no autorregresiva con clonación; licencia no comercial para el modelo |
 
 Los datos de modelos comparables provienen de sus fichas públicas y deben verificarse antes de un despliegue en producción. En la información proporcionada no se incluyen métricas comparativas de calidad de audio, latencia ni similitud de hablante entre estos modelos.
 
@@ -94,8 +94,8 @@ Los datos de modelos comparables provienen de sus fichas públicas y deben verif
 
 ## Enlaces
 
-- [Modelo en HuggingFace (OpenMOSS-Team)](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5)
-- [Repositorio espejo en HuggingFace (Allinsama)](https://huggingface.co/Allinsama/OpenMOSS-Team__MOSS-TTS-Local-Transformer-v1.5)
+- [Modelo en Hugging Face (OpenMOSS-Team)](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer-v1.5)
+- [Repositorio espejo en Hugging Face (Allinsama)](https://huggingface.co/Allinsama/OpenMOSS-Team__MOSS-TTS-Local-Transformer-v1.5)
 - [Modelo predecesor v1.0](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-Local-Transformer)
 - [Tokenizador de audio MOSS-Audio-Tokenizer-v2](https://huggingface.co/OpenMOSS-Team/MOSS-Audio-Tokenizer-v2)
 - [Repositorio GitHub de MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS)

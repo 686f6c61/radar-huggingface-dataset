@@ -127,7 +127,7 @@ No hay datos en la informacion proporcionada sobre otros empaquetados GGUF de la
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/wwdsada/qwenimage21gguf
+- Repositorio Hugging Face: https://huggingface.co/wwdsada/qwenimage21gguf
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1/blob/main/LICENSE
 - Componentes complementarios (codificador de texto y VAE): https://huggingface.co/Comfy-Org/Qwen-Image-2.1

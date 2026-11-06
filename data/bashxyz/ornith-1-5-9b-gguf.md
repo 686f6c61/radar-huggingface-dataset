@@ -72,11 +72,11 @@ Datos publicados en la model card (porcentajes):
 
 | Modelo | Parametros | Contexto | SWE-bench Verified | Terminal-Bench 2.1 (Claude Code) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Ornith-1.5-9B | 9,2B denso | no disponible | 70,6 | 47,0 | MIT | HuggingFace (GGUF) |
-| Ornith-1.0-9B | 9B denso | no disponible | 69,4 | 40,6 | no disponible | HuggingFace |
-| Qwen3.5-9B | 9B denso | no disponible | 53,2 | 18,9 | no disponible | HuggingFace |
-| Qwen3.6-35B-A3B | 35B totales / 3B activos (MoE) | no disponible | 73,4 | 49,2 | no disponible | HuggingFace |
-| Gemma-4-31B | 31B denso | no disponible | 52,0 | no disponible | no disponible | HuggingFace |
+| Ornith-1.5-9B | 9,2B denso | no disponible | 70,6 | 47,0 | MIT | Hugging Face (GGUF) |
+| Ornith-1.0-9B | 9B denso | no disponible | 69,4 | 40,6 | no disponible | Hugging Face |
+| Qwen3.5-9B | 9B denso | no disponible | 53,2 | 18,9 | no disponible | Hugging Face |
+| Qwen3.6-35B-A3B | 35B totales / 3B activos (MoE) | no disponible | 73,4 | 49,2 | no disponible | Hugging Face |
+| Gemma-4-31B | 31B denso | no disponible | 52,0 | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ Datos publicados en la model card (porcentajes):
 
 ## Enlaces
 
-- Repo HuggingFace de esta cuantizacion: https://huggingface.co/bashxyz/Ornith-1.5-9B-GGUF
+- Repo Hugging Face de esta cuantizacion: https://huggingface.co/bashxyz/Ornith-1.5-9B-GGUF
 - Modelo base oficial: https://huggingface.co/ornith-ai/Ornith-1.5-9B
 - Licencia del modelo base: https://huggingface.co/ornith-ai/Ornith-1.5-9B/blob/main/LICENSE
 - Blog de Ornith-1.5: https://ornith.ai/ornith_1_5.html

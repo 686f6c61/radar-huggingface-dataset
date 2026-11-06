@@ -54,12 +54,12 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 - VRAM estimada para inferencia: aproximadamente 0,3-0,5 GB en bfloat16 (135M parámetros × 2 bytes ≈ 270 MB de pesos, más overhead de activaciones y caché KV).
 - GPU recomendadas: cualquier GPU consumer con al menos 1 GB de VRAM es suficiente; también puede ejecutarse en CPU.
 - Compatibilidad con GPU consumer: sí, incluyendo GPUs de gama baja como GTX 1650, RTX 3050 o integradas.
-- Opciones de despliegue: al ser un modelo HuggingFace estándar, puede cargarse con transformers, llama.cpp (si se convierte a GGUF), Ollama o vLLM, aunque su tamaño reducido lo hace apto para inferencia en CPU.
+- Opciones de despliegue: al ser un modelo Hugging Face estándar, puede cargarse con transformers, llama.cpp (si se convierte a GGUF), Ollama o vLLM, aunque su tamaño reducido lo hace apto para inferencia en CPU.
 - Latencia y throughput: no se han publicado mediciones, pero dado el tamaño de 135M, la generación es rápida incluso en CPU (del orden de decenas de tokens por segundo en hardware moderno).
 
 ## Comparativa con modelos similares
 
-No se dispone de información suficiente para establecer una comparativa rigurosa con otros modelos de la misma categoría. El propio autor publica otros checkpoints experimentales (como el de 235M y el instruct v0.3), pero no se han facilitado datos comparativos de rendimiento. Se recomienda consultar la colección oficial de AhiskaAI en HuggingFace para obtener más contexto sobre la familia de modelos.
+No se dispone de información suficiente para establecer una comparativa rigurosa con otros modelos de la misma categoría. El propio autor publica otros checkpoints experimentales (como el de 235M y el instruct v0.3), pero no se han facilitado datos comparativos de rendimiento. Se recomienda consultar la colección oficial de AhiskaAI en Hugging Face para obtener más contexto sobre la familia de modelos.
 
 ## Limitaciones y advertencias
 
@@ -73,7 +73,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AhiskaAI/AhiskaAI-Experimental-v0.2-135m
+- Modelo en Hugging Face: https://huggingface.co/AhiskaAI/AhiskaAI-Experimental-v0.2-135m
 - Colección de datasets v0.2: https://huggingface.co/collections/AhiskaAI/ahiskaai-v02-dataset
 - Perfil de datasets de AhiskaAI: https://huggingface.co/AhiskaAI/datasets
 - Repositorio de entrenamiento experimental v0.1: https://github.com/AhiskaAI/AhiskaAI-v0.1-Experimental-Training-code/tree/main

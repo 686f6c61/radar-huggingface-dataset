@@ -90,7 +90,7 @@ La comparativa directa con NLLB-200 no está documentada en la información prop
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ckuma/lugbara-ensemble-translator
+- Modelo en Hugging Face: https://huggingface.co/ckuma/lugbara-ensemble-translator
 - Dataset SALT: https://huggingface.co/datasets/Sunbird/salt
 - Modelo base XLM-RoBERTa: https://huggingface.co/FacebookAI/xlm-roberta-base
 - Modelo base mT5: https://huggingface.co/google/mt5-base

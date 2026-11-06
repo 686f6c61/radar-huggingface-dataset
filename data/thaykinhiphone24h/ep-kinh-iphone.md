@@ -2,9 +2,9 @@
 
 ## Resumen
 
-No se dispone de informacion tecnica verificable sobre el modelo `thaykinhiphone24h/ep-kinh-iphone`. El repositorio de HuggingFace asociado no contiene una model card en el sentido habitual: el README es un articulo en vietnamita sobre reparacion de pantallas de iPhone (ep kính), sin ninguna descripcion de arquitectura, datos de entrenamiento, pesos o capacidades de un modelo de IA. El unico tag presente es `region:us`, y no consta pipeline, licencia ni idiomas declarados.
+No se dispone de informacion tecnica verificable sobre el modelo `thaykinhiphone24h/ep-kinh-iphone`. El repositorio de Hugging Face asociado no contiene una model card en el sentido habitual: el README es un articulo en vietnamita sobre reparacion de pantallas de iPhone (ep kính), sin ninguna descripcion de arquitectura, datos de entrenamiento, pesos o capacidades de un modelo de IA. El unico tag presente es `region:us`, y no consta pipeline, licencia ni idiomas declarados.
 
-El repositorio registra 0 descargas y 0 likes, fue creado el 3 de noviembre de 2026 y actualizado dos minutos despues, lo que sugiere un uso del espacio de HuggingFace como alojamiento de contenido promocional o SEO en lugar de un artefacto de aprendizaje automatico. No hay evidencia de que existan pesos publicados, ficheros de configuracion ni tokenizador.
+El repositorio registra 0 descargas y 0 likes, fue creado el 3 de noviembre de 2026 y actualizado dos minutos despues, lo que sugiere un uso del espacio de Hugging Face como alojamiento de contenido promocional o SEO en lugar de un artefacto de aprendizaje automatico. No hay evidencia de que existan pesos publicados, ficheros de configuracion ni tokenizador.
 
 Por tanto, esta ficha documenta la ausencia de informacion tecnica y advierte de que el identificador no debe tratarse como un modelo desplegable. Cualquier evaluacion de capacidades, rendimiento o requisitos de hardware carece de base y se marca como no disponible.
 
@@ -78,6 +78,6 @@ No disponible. No se puede establecer una comparativa porque no se ha identifica
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/thaykinhiphone24h/ep-kinh-iphone
+- Repositorio en Hugging Face: https://huggingface.co/thaykinhiphone24h/ep-kinh-iphone
 - Enlace promocional citado en el README: https://chamsocdidong.com/thay-mat-kinh-iphone-sc4473.html
 - Perfil de Spotify citado en el README: https://creators.spotify.com/pod/profile/thay-mat-kinh-iphone

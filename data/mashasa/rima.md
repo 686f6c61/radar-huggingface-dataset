@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mashasa/rima` es un modelo publicado en HuggingFace por el usuario `mashasa` bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de informacion sobre el pipeline, los idiomas soportados ni el tamano del modelo.
+`mashasa/rima` es un modelo publicado en Hugging Face por el usuario `mashasa` bajo licencia Apache 2.0. La model card asociada está practicamente vacía: unicamente declara la licencia, sin descripcion del modelo, arquitectura, datos de entrenamiento ni capacidades. No se dispone de informacion sobre el pipeline, los idiomas soportados ni el tamano del modelo.
 
 El repositorio no registra descargas ni interacciones (0 descargas, 0 likes) en el momento de la consulta, y fue creado en septiembre de 2026 con una ultima actualizacion en noviembre del mismo ano. Estos indicadores sugieren un artefacto recien publicado o de caracter experimental, sin adopcion documentada por parte de la comunidad.
 
@@ -23,7 +23,7 @@ Dada la ausencia total de especificaciones tecnicas en la informacion disponible
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si se trata de un transformer denso, un modelo de mezcla de expertos (MoE), una arquitectura hibrida o cualquier otra variante.
 
 Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesados, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o similares. La model card se limita a la declaracion de licencia.
 
@@ -40,7 +40,7 @@ Tampoco hay datos sobre el corpus de entrenamiento, el numero de tokens procesad
 No es posible recomendar casos de uso concretos sin informacion verificable sobre las capacidades del modelo. Cualquier aplicacion practica requeriria primero una evaluacion empirica del artefacto publicado.
 
 - Evaluacion manual previa: descargar los pesos y ejecutar pruebas controladas para determinar tarea, idioma y calidad antes de considerar cualquier integracion.
-- Investigacion de artefactos en HuggingFace: util como ejemplo de repositorio minimo con licencia declarada pero sin documentacion tecnica.
+- Investigacion de artefactos en Hugging Face: util como ejemplo de repositorio minimo con licencia declarada pero sin documentacion tecnica.
 - Experimentacion interna acotada: solo tras validar que el modelo carga y produce salidas coherentes en el entorno objetivo.
 - Analisis de licencias: el modelo puede inspeccionarse como caso de publicacion bajo Apache 2.0 sin model card descriptiva.
 - No se recomienda su uso en produccion sin una evaluacion previa completa.
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una comparativa sin conocer el tamano, la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mashasa/rima
+- Modelo en Hugging Face: https://huggingface.co/mashasa/rima
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion disponible.

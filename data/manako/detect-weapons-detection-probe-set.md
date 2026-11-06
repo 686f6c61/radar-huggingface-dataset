@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Detect-weapons-detection-probe-set es un modelo de deteccion de objetos publicado en HuggingFace por el usuario manako, orientado especificamente a la identificacion de armas y elementos potencialmente peligrosos en imagenes. Segun sus etiquetas y la model card, se trata de un detector basado en la arquitectura YOLOv11 en su variante nano, exportado en formato ONNX, lo que lo hace apto para inferencia ligera y despliegue en entornos con recursos limitados. El modelo forma parte de lo que el autor denomina "Manako baseline" y deriva de un pipeline interno de entrenamiento identificado como `element_trainer/weapons-detection-probe-set`.
+Detect-weapons-detection-probe-set es un modelo de deteccion de objetos publicado en Hugging Face por el usuario manako, orientado especificamente a la identificacion de armas y elementos potencialmente peligrosos en imagenes. Segun sus etiquetas y la model card, se trata de un detector basado en la arquitectura YOLOv11 en su variante nano, exportado en formato ONNX, lo que lo hace apto para inferencia ligera y despliegue en entornos con recursos limitados. El modelo forma parte de lo que el autor denomina "Manako baseline" y deriva de un pipeline interno de entrenamiento identificado como `element_trainer/weapons-detection-probe-set`.
 
 La relevancia de este modelo radica en su especializacion: no es un detector generico de objetos, sino un detector afinado para un conjunto cerrado de categorias relacionadas con armas (pistolas, balas, cuchillas, armas contundentes, proyectiles, explosivos, aerosoles y lanzaproyectiles). Esto lo situa en el ambito de la moderacion de contenido, la seguridad fisica y el analisis automatizado de imagenes, donde los detectores genericos suelen tener un rendimiento pobre en clases poco frecuentes.
 
@@ -81,7 +81,7 @@ La comparativa se limita a la familia YOLO por ser la arquitectura declarada. No
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/manako/Detect-weapons-detection-probe-set
+- Hugging Face: https://huggingface.co/manako/Detect-weapons-detection-probe-set
 - Repositorio de origen del pipeline de entrenamiento (referenciado en la model card): `element_trainer/weapons-detection-probe-set` (no se proporciona URL directa en la informacion disponible)
 - Documentacion de YOLOv11 (Ultralytics): no disponible en la informacion proporcionada
 - Paper de YOLOv11: no disponible en la informacion proporcionada

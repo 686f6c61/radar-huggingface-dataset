@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino (fine-tuning) publicado por la organizacion `gradients-io-tournaments` bajo el identificador `tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5CDbyLvX`. No se trata de un modelo completo, sino de un adaptador PEFT (libreria `peft`, version de framework 0.15.1) que debe cargarse sobre el modelo base `unsloth/Meta-Llama-3.1-8B-Instruct`, una version optimizada para entrenamiento de Meta Llama 3.1 8B Instruct. El repositorio ocupa 1,4 GB y almacena los pesos del adaptador en formato safetensors.
 
-El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto, instrucciones multi-turno, razonamiento y codigo con una ventana de contexto de 128.000 tokens heredada de Llama 3.1. Sin embargo, la model card publicada es la plantilla por defecto de HuggingFace sin rellenar: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. El nombre del repositorio y la organizacion sugieren que procede de un torneo o competicion automatizada de fine-tuning, con fecha de creacion y actualizacion del 15 de septiembre de 2026 y un sufijo alfanumerico aleatorio.
+El modelo resuelve, en principio, el mismo tipo de tareas que su base: generacion de texto, instrucciones multi-turno, razonamiento y codigo con una ventana de contexto de 128.000 tokens heredada de Llama 3.1. Sin embargo, la model card publicada es la plantilla por defecto de Hugging Face sin rellenar: no hay descripcion, ni datos de entrenamiento, ni hiperparametros, ni evaluacion, ni licencia declarada. El nombre del repositorio y la organizacion sugieren que procede de un torneo o competicion automatizada de fine-tuning, con fecha de creacion y actualizacion del 15 de septiembre de 2026 y un sufijo alfanumerico aleatorio.
 
 Su relevancia ahora es limitada y fundamentalmente experimental: cero descargas y cero "likes" en el momento de redactar esta ficha, ausencia total de documentacion y una licencia no declarada. Es un artefacto util para inspeccionar que tipo de ajustes se estan generando en plataformas de torneos de fine-tuning, pero no es hoy un modelo recomendable para produccion sin una evaluacion propia previa.
 
@@ -85,7 +85,7 @@ La comparacion se establece con modelos de la misma categoria (8.000 millones de
 | Meta Llama 3.1 8B Instruct | 8,03 B | 128.000 tokens | Llama 3.1 Community License | Muy extendido, pesos oficiales y multiples cuantizaciones |
 | Mistral 7B Instruct v0.3 | 7,25 B | 32.000 tokens | Apache 2.0 | Amplia disponibilidad, licencia permisiva |
 | Qwen2.5 7B Instruct | 7,61 B | 131.072 tokens | Apache 2.0 | Amplia disponibilidad, buen soporte de tool calling |
-| Gemma 2 9B IT | 9,24 B | 8.192 tokens | Gemma Terms of Use | Disponible en Kaggle y HuggingFace |
+| Gemma 2 9B IT | 9,24 B | 8.192 tokens | Gemma Terms of Use | Disponible en Kaggle y Hugging Face |
 
 En terminos practicos, este adaptador no compite hoy con ninguna de esas alternativas: carece de licencia declarada, de evaluacion y de documentacion, mientras que las alternativas son replicables, auditables y estan desplegadas en produccion por la comunidad. La unica ventaja potencial seria una especializacion concreta adquirida en el torneo, que no esta demostrada.
 
@@ -104,7 +104,7 @@ En terminos practicos, este adaptador no compite hoy con ninguna de esas alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5CDbyLvX
+- Modelo en Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-987c938e-ffe7-416e-baec-c6de48119d6f-5CDbyLvX
 - Modelo base utilizado: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Referencia del articulo citado en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono): https://arxiv.org/abs/1910.09700

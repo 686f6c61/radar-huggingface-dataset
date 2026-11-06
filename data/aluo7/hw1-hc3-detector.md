@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo aluo7/hw1-hc3-detector es un repositorio publicado en HuggingFace por el usuario aluo7, con licencia Apache 2.0 y etiquetado para la region "us". La informacion disponible es minima: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay model card explicativa (el README se limita a la linea de licencia) y no consta ninguna descarga ni "like" en el momento de la consulta.
+El modelo aluo7/hw1-hc3-detector es un repositorio publicado en Hugging Face por el usuario aluo7, con licencia Apache 2.0 y etiquetado para la region "us". La informacion disponible es minima: no se declara pipeline de inferencia, no se especifican idiomas soportados, no hay model card explicativa (el README se limita a la linea de licencia) y no consta ninguna descarga ni "like" en el momento de la consulta.
 
 Por el identificador "hw1-hc3-detector" podria inferirse que se trata de un modelo orientado a tareas de deteccion o clasificacion, pero esta suposicion no esta confirmada por ninguna documentacion del autor, por lo que no debe tomarse como un dato tecnico. No se dispone de informacion sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni proceso de alineacion.
 
@@ -78,5 +78,5 @@ No disponible. No se dispone de informacion suficiente sobre las caracteristicas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aluo7/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/aluo7/hw1-hc3-detector
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

@@ -82,7 +82,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/bodenmaurice/uncons-5czsc2fc98-r545-loveaffine-offline-dpo-hialpha-hirank-lobeta-softctx-midextrasteps-merged)
+- [Modelo en Hugging Face](https://huggingface.co/bodenmaurice/uncons-5czsc2fc98-r545-loveaffine-offline-dpo-hialpha-hirank-lobeta-softctx-midextrasteps-merged)
 - [Modelo base: kevin954/Affine-5dfqbbh8ev-sft](https://huggingface.co/kevin954/Affine-5dfqbbh8ev-sft)
 - [Checkpoint similar de unconst](https://huggingface.co/unconst/Affine-5czsc2fc98-r545-loveaffine-offline-dpo-hialpha-hirank-lobeta-softctx-midextrasteps-merged)
 

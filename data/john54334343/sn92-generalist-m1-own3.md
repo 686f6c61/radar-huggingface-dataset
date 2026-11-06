@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| SN92 generalist decision model | 26,1 B | no disponible (prompt de entrenamiento 6.144) | MIT | Clasificación de decisión con readout de letra, 58 tareas | HuggingFace, safetensors |
-| baselabs/mammoth-1 | no disponible | no disponible | MIT | Modelo base post-entrenado desde Qwen3.5-27B | HuggingFace |
-| Qwen3.5-27B | ~27 B | no disponible | Apache-2.0 | Modelo generativo de propósito general | HuggingFace |
+| SN92 generalist decision model | 26,1 B | no disponible (prompt de entrenamiento 6.144) | MIT | Clasificación de decisión con readout de letra, 58 tareas | Hugging Face, safetensors |
+| baselabs/mammoth-1 | no disponible | no disponible | MIT | Modelo base post-entrenado desde Qwen3.5-27B | Hugging Face |
+| Qwen3.5-27B | ~27 B | no disponible | Apache-2.0 | Modelo generativo de propósito general | Hugging Face |
 | Fine-tunes individuales v3a / v7a / v7b | ~26 B cada uno | no disponible | MIT | Especializaciones parciales del mismo linaje | No distribuidos públicamente según la model card |
 
 La comparativa se limita al linaje declarado porque no se han publicado métricas que permitan contrastar rendimiento con alternativas de la misma categoría. Los padres v3a, v7a y v7b no se distribuyen y no tienen ficha pública verificable en la información disponible.
@@ -97,7 +97,7 @@ La comparativa se limita al linaje declarado porque no se han publicado métrica
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/john54334343/sn92-generalist-m1-own3
+- Modelo en Hugging Face: https://huggingface.co/john54334343/sn92-generalist-m1-own3
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Revisión del modelo base: 03007ab3c4481bf01c71ef63adbbbc4b2093d71a
 - Qwen3.5-27B (linaje declarado): no disponible en la información proporcionada

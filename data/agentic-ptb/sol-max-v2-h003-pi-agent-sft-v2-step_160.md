@@ -69,7 +69,7 @@ No disponible. Este checkpoint no es comparable directamente con otros modelos p
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h003.pi-agent-sft-v2.step_160
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h003.pi-agent-sft-v2.step_160
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Proyecto Pi (harness de agentes mencionado en el nombre): https://pi.dev/
 - Repositorio Pi en GitHub: https://github.com/earendil-works/pi

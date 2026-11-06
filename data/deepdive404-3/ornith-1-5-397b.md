@@ -6,7 +6,7 @@ Ornith-1.5-397B es un modelo de lenguaje de gran escala con arquitectura de mezc
 
 El modelo se construye sobre las bases de Ornith-1.0, que a su vez se desarrolló sobre Qwen3.5 y Gemma4 mediante continued pretraining, mid-training y post-training. Ornith-1.5-397B es el modelo insignia de la familia, con 403.397.928.944 parámetros totales y un tamaño de repositorio de 1600,4 GB en formato safetensors. Según los benchmarks publicados, alcanza 86,1 en Terminal-Bench 2.1 y 56,0 en DeepSWE, posicionándose a la par de Claude Opus 4.8 y superando a otros modelos open source de escala similar.
 
-El modelo está disponible bajo licencia MIT, lo que facilita su adopción tanto en investigación como en entornos comerciales, y está publicado en HuggingFace con el identificador `Deepdive404-3/Ornith-1.5-397B`.
+El modelo está disponible bajo licencia MIT, lo que facilita su adopción tanto en investigación como en entornos comerciales, y está publicado en Hugging Face con el identificador `Deepdive404-3/Ornith-1.5-397B`.
 
 ## Especificaciones técnicas
 
@@ -85,9 +85,9 @@ Ornith-1.5-397B supera a DeepSeek-V4-Flash-0731 y GLM-5.2 en los benchmarks de c
 
 ## Enlaces
 
-- [HuggingFace: Deepdive404-3/Ornith-1.5-397B](https://huggingface.co/Deepdive404-3/Ornith-1.5-397B)
-- [HuggingFace: ornith-ai/Ornith-1.5-397B-FP8](https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8)
+- [Hugging Face: Deepdive404-3/Ornith-1.5-397B](https://huggingface.co/Deepdive404-3/Ornith-1.5-397B)
+- [Hugging Face: ornith-ai/Ornith-1.5-397B-FP8](https://huggingface.co/ornith-ai/Ornith-1.5-397B-FP8)
 - [Blog oficial: Ornith-1.5: From Self-Scaffolding to Self-Improvement](https://ornith.ai/ornith_1_5.html)
 - [Web oficial de Ornith AI](https://ornith.ai/)
 - [Guía de Ornith AI para modelos de codificación](https://ornith.online/)
-- [HuggingFace: deepreinforce-ai/Ornith-1.0-397B](https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B)
+- [Hugging Face: deepreinforce-ai/Ornith-1.0-397B](https://huggingface.co/deepreinforce-ai/Ornith-1.0-397B)

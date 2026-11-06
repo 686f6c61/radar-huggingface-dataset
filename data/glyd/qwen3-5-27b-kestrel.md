@@ -25,7 +25,7 @@ El modelo se ejecuta exclusivamente con el motor propietario de Glyd (`glyd run`
 
 No se dispone de informacion detallada sobre la arquitectura del modelo base en la documentacion proporcionada. Se trata de una derivacion de Qwen/Qwen3.5-27B, un modelo con 26.895.998.464 parametros segun el model card, y del que se menciona explicitamente que incorpora un componente de vision que este checkpoint no incluye. El pipeline declarado es text-generation y las etiquetas incluyen conversational, ademas de qwen3_5 y kestrel.
 
-El aspecto tecnico destacable no es el entrenamiento, sino el proceso de cuantizacion: los pesos se cuantizaron una sola vez partiendo de los pesos bf16 originales del commit `fc05daec` del modelo base, con un resultado de aproximadamente 6,5 bits por peso. El autor publica la metrica de fidelidad (KL de 0,00789 frente a bf16 sobre WikiText-2) y advierte que la etiqueta "8-bit precision" de HuggingFace cuenta bytes empaquetados, no bits reales por peso. No se documentan datos de entrenamiento, composicion del dataset, ni fases de RLHF o DPO, ya que el checkpoint no introduce entrenamiento adicional.
+El aspecto tecnico destacable no es el entrenamiento, sino el proceso de cuantizacion: los pesos se cuantizaron una sola vez partiendo de los pesos bf16 originales del commit `fc05daec` del modelo base, con un resultado de aproximadamente 6,5 bits por peso. El autor publica la metrica de fidelidad (KL de 0,00789 frente a bf16 sobre WikiText-2) y advierte que la etiqueta "8-bit precision" de Hugging Face cuenta bytes empaquetados, no bits reales por peso. No se documentan datos de entrenamiento, composicion del dataset, ni fases de RLHF o DPO, ya que el checkpoint no introduce entrenamiento adicional.
 
 ## Capacidades
 
@@ -80,17 +80,17 @@ La divergencia KL se midio sobre WikiText-2. Las cifras de velocidad y memoria s
 
 | Modelo | Parametros | Contexto | Tamano en disco | KL vs bf16 | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-27B bf16 (base) | 26,9B | no disponible | 53,8 GB | 0 | Apache-2.0 | HuggingFace |
-| Qwen3.5-27B FP8 | 26,9B | no disponible | 29,5 GB | no disponible | Apache-2.0 | HuggingFace |
-| glyd kestrel (este repo) | 26,9B (base) | 32k | 22,0 GB | 0,00789 | Apache-2.0 | HuggingFace |
-| glyd swift | 26,9B (base) | no disponible | 18,6 GB | 0,0173 | Apache-2.0 | HuggingFace |
+| Qwen3.5-27B bf16 (base) | 26,9B | no disponible | 53,8 GB | 0 | Apache-2.0 | Hugging Face |
+| Qwen3.5-27B FP8 | 26,9B | no disponible | 29,5 GB | no disponible | Apache-2.0 | Hugging Face |
+| glyd kestrel (este repo) | 26,9B (base) | 32k | 22,0 GB | 0,00789 | Apache-2.0 | Hugging Face |
+| glyd swift | 26,9B (base) | no disponible | 18,6 GB | 0,0173 | Apache-2.0 | Hugging Face |
 
 Las tres alternativas cuantizadas parten del mismo modelo base. La eleccion entre kestrel y swift es un compromiso entre tamano y fidelidad: swift ocupa 3,4 GB menos y es mas rapido en RTX 4090 (46 frente a 40 tok/s), pero su divergencia KL es mas del doble.
 
 ## Limitaciones y advertencias
 
 - La cuantizacion es con perdidas: la divergencia KL de 0,00789 respecto al bf16 implica un desplazamiento medible en las probabilidades del siguiente token, que puede afectar a tareas sensibles a la precision.
-- El checkpoint esta empaquetado a ~6,5 bits por peso; la etiqueta "8-bit precision" de HuggingFace cuenta bytes empaquetados y puede inducir a confusion.
+- El checkpoint esta empaquetado a ~6,5 bits por peso; la etiqueta "8-bit precision" de Hugging Face cuenta bytes empaquetados y puede inducir a confusion.
 - Existe una discrepancia entre el recuento de parametros del model card (26.895.998.464) y el recuento de safetensors del repositorio (21.884.158.770), presumiblemente por el empaquetado de los tensores cuantizados.
 - Dependencia total del motor Glyd: no funciona con vLLM ni transformers, lo que limita la portabilidad y obliga a adoptar la herramienta del proveedor.
 - La licencia de los pesos es Apache-2.0, pero el motor que los ejecuta es BUSL-1.1: uso gratuito solo personal y no comercial en equipos propios; el uso comercial requiere licencia adicional.
@@ -103,7 +103,7 @@ Las tres alternativas cuantizadas parten del mismo modelo base. La eleccion entr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/glyd/Qwen3.5-27B-kestrel
+- Modelo en Hugging Face: https://huggingface.co/glyd/Qwen3.5-27B-kestrel
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Commit concreto del base: https://huggingface.co/Qwen/Qwen3.5-27B/tree/fc05daec18b0a78c049392ed2e771dde82bdf654
 - Variante glyd swift: https://huggingface.co/glyd/Qwen3.5-27B-swift

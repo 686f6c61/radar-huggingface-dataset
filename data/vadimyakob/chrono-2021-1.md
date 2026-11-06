@@ -2,7 +2,7 @@
 
 ## Resumen
 
-chrono-2021-1 es un modelo de lenguaje publicado en HuggingFace por el usuario vadimyakob bajo el identificador `vadimyakob/chrono-2021-1`. Se distribuye en formato safetensors y cuenta con 2.185.693.738 parametros totales (aproximadamente 2,19 mil millones), con un tamano de repositorio de 13,1 GB. La etiqueta asociada al modelo es `sn38-nanochrono`, lo que sugiere la pertenencia a una familia o linaje denominado "nanochrono", aunque no se dispone de documentacion publica que describa dicha familia.
+chrono-2021-1 es un modelo de lenguaje publicado en Hugging Face por el usuario vadimyakob bajo el identificador `vadimyakob/chrono-2021-1`. Se distribuye en formato safetensors y cuenta con 2.185.693.738 parametros totales (aproximadamente 2,19 mil millones), con un tamano de repositorio de 13,1 GB. La etiqueta asociada al modelo es `sn38-nanochrono`, lo que sugiere la pertenencia a una familia o linaje denominado "nanochrono", aunque no se dispone de documentacion publica que describa dicha familia.
 
 La informacion disponible sobre el modelo es muy limitada. No se ha publicado ficha de modelo, pipeline declarado, licencia, idiomas soportados ni resultados de benchmarks. Tampoco se ha encontrado documentacion tecnica, paper o repositorio asociado en la busqueda web realizada, cuyo unico resultado fue una pagina de login sin relacion con el modelo. Por tanto, cualquier dato sobre arquitectura, datos de entrenamiento o capacidades debe considerarse no verificado.
 
@@ -84,11 +84,11 @@ No se dispone de datos de rendimiento del modelo, por lo que la comparacion se l
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| vadimyakob/chrono-2021-1 | 2,19B | no disponible | no disponible | HuggingFace, safetensors |
-| Qwen2.5-3B | 3,09B | 32.768 tokens (ampliable) | Apache 2.0 | HuggingFace, amplio ecosistema |
-| Llama-3.2-3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | HuggingFace, amplio ecosistema |
-| Gemma-2-2B | 2,6B | 8.192 tokens | Gemma Terms of Use | HuggingFace |
-| Phi-3-mini | 3,8B | 128.000 tokens | MIT | HuggingFace |
+| vadimyakob/chrono-2021-1 | 2,19B | no disponible | no disponible | Hugging Face, safetensors |
+| Qwen2.5-3B | 3,09B | 32.768 tokens (ampliable) | Apache 2.0 | Hugging Face, amplio ecosistema |
+| Llama-3.2-3B | 3,21B | 128.000 tokens | Llama 3.2 Community License | Hugging Face, amplio ecosistema |
+| Gemma-2-2B | 2,6B | 8.192 tokens | Gemma Terms of Use | Hugging Face |
+| Phi-3-mini | 3,8B | 128.000 tokens | MIT | Hugging Face |
 
 No es posible establecer una comparacion de rendimiento porque chrono-2021-1 carece de resultados de benchmarks publicados y de documentacion de arquitectura.
 
@@ -106,6 +106,6 @@ No es posible establecer una comparacion de rendimiento porque chrono-2021-1 car
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vadimyakob/chrono-2021-1
+- Modelo en Hugging Face: https://huggingface.co/vadimyakob/chrono-2021-1
 
 No se encontraron otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; el unico resultado obtenido fue una pagina de login sin relacion con el modelo.

@@ -6,7 +6,7 @@
 
 La relevancia de esta publicacion radica en que traslada un LLM de 7B a la NPU del PC, lo que permite inferencia local con bajo consumo energetico y sin depender de la GPU discreta ni de la nube. El repositorio se distribuye en formato ONNX cuantizado con Quark (el toolkit de cuantizacion de AMD) y esta pensado para el stack de Ryzen AI Software, no para un uso generico con transformers.
 
-El acceso es restringido (gated): es necesario aceptar las condiciones en HuggingFace antes de descargar los pesos. La licencia del modelo base es Apache 2.0, pero la distribucion concreta de AMD puede incorporar terminos adicionales que conviene revisar antes de un uso comercial.
+El acceso es restringido (gated): es necesario aceptar las condiciones en Hugging Face antes de descargar los pesos. La licencia del modelo base es Apache 2.0, pero la distribucion concreta de AMD puede incorporar terminos adicionales que conviene revisar antes de un uso comercial.
 
 ## Especificaciones tecnicas
 
@@ -18,7 +18,7 @@ El acceso es restringido (gated): es necesario aceptar las condiciones en Huggin
 | Longitud de contexto | 32.768 tokens en el modelo base; no se especifica en la ficha de AMD si la exportacion conserva el contexto completo |
 | Tipos de cuantizacion | Cuantizacion via Quark para NPU (precisiones concretas no disponibles en la informacion proporcionada) |
 | Idiomas soportados | Ingles (segun la ficha); el modelo base Qwen2.5 soporta ademas chino y otros idiomas, pero no se garantiza en esta distribucion |
-| Licencia | Apache 2.0 (modelo base); acceso gated con condiciones adicionales en HuggingFace |
+| Licencia | Apache 2.0 (modelo base); acceso gated con condiciones adicionales en Hugging Face |
 | Formato de pesos | ONNX (optimizado para Ryzen AI / NPU) |
 
 ## Arquitectura y entrenamiento
@@ -51,7 +51,7 @@ La contribucion especifica de AMD no reside en el entrenamiento sino en la conve
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La ficha de HuggingFace de AMD no incluye metricas de MMLU, HumanEval, GSM8K ni comparativas de latencia o throughput en NPU.
+No se han publicado resultados de benchmarks en la informacion disponible. La ficha de Hugging Face de AMD no incluye metricas de MMLU, HumanEval, GSM8K ni comparativas de latencia o throughput en NPU.
 
 ## Requisitos de hardware
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: es necesario aceptar condiciones en HuggingFace; el uso comercial puede estar sujeto a terminos adicionales de AMD ademas de la licencia Apache 2.0 del modelo base.
+- Acceso restringido: es necesario aceptar condiciones en Hugging Face; el uso comercial puede estar sujeto a terminos adicionales de AMD ademas de la licencia Apache 2.0 del modelo base.
 - La ficha declara solo ingles; el rendimiento en castellano no esta garantizado ni evaluado en esta distribucion.
 - Riesgo de alucinacion inherente a un modelo de 7B, especialmente en dominios especializados o con contexto muy largo.
 - La cuantizacion para NPU puede degradar ligeramente la calidad respecto al modelo original en safetensors; no se han publicado evaluaciones comparativas.
@@ -83,7 +83,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La fi
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/amd/Qwen2.5-7B-Instruct_rai_1.9.0_npu
+- Hugging Face: https://huggingface.co/amd/Qwen2.5-7B-Instruct_rai_1.9.0_npu
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Repositorio Qwen2.5: https://github.com/QwenLM/Qwen2.5
 - Ryzen AI Software: https://ryzenai.docs.amd.com/

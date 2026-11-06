@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información proporcionada. L
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2-0.5B (original) | 494M | 32K (no confirmado) | FP16/BF16 | Apache 2.0 (según original) | HuggingFace |
-| liodon-ai/Qwen2-0.5B-FP8 | 494M | No disponible | FP8 dinámico | other | HuggingFace |
-| liodon-ai/Qwen2-0.5B-imatrix-GGUF | 494M | No disponible | GGUF (varias cuantizaciones) | other | HuggingFace |
+| Qwen2-0.5B (original) | 494M | 32K (no confirmado) | FP16/BF16 | Apache 2.0 (según original) | Hugging Face |
+| liodon-ai/Qwen2-0.5B-FP8 | 494M | No disponible | FP8 dinámico | other | Hugging Face |
+| liodon-ai/Qwen2-0.5B-imatrix-GGUF | 494M | No disponible | GGUF (varias cuantizaciones) | other | Hugging Face |
 
 No se dispone de información sobre otros modelos comparables de la misma categoría (por ejemplo, TinyLlama o Phi-2) en la información proporcionada. La principal diferencia entre el modelo original y esta variante FP8 es el tamaño (1.0 GB vs 0.6 GB) y la velocidad de inferencia en hardware compatible, mientras que el rendimiento numérico debería ser prácticamente idéntico.
 
@@ -77,7 +77,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/liodon-ai/Qwen2-0.5B-FP8)
+- [Modelo en Hugging Face](https://huggingface.co/liodon-ai/Qwen2-0.5B-FP8)
 - [Modelo base Qwen/Qwen2-0.5B](https://huggingface.co/Qwen/Qwen2-0.5B)
 - [Repositorio llm-compressor](https://github.com/vllm-project/llm-compressor)
 - [Página web de Liodon AI](https://liodon.ai/)

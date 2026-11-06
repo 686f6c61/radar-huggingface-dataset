@@ -79,9 +79,9 @@ Referencia del modelo base para la selección: *recall* de retención 0,842 y um
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s0 (este) | 8,03 B | no disponible | Unlearning WGA sobre fine-tune DUET-film | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (modelo base) | 8,03 B | no disponible | Fine-tune supervisado DUET-film, época 6 | llama3.1 | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k | Instruct generalista con RLHF | llama3.1 | HuggingFace, ampliamente desplegado |
+| Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s0 (este) | 8,03 B | no disponible | Unlearning WGA sobre fine-tune DUET-film | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (modelo base) | 8,03 B | no disponible | Fine-tune supervisado DUET-film, época 6 | llama3.1 | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03 B | 128k | Instruct generalista con RLHF | llama3.1 | Hugging Face, ampliamente desplegado |
 | Algoritmos alternativos de unlearning (NPO, RMU) sobre el mismo conjunto | 8,03 B | no disponible | Variantes de desaprendizaje | según checkpoint | Citados en la literatura, no enlazados en la model card |
 
 La comparación relevante es interna al proyecto: este checkpoint se distingue del fine-tune base por el proceso WGA y por la selección de época basada en el *gap* retención − olvido. Frente a Llama-3.1-8B-Instruct original, pierde el alineamiento generalista y el contexto declarado de 128k no está confirmado para este artefacto, pero gana una métrica cuantificada de olvido selectivo sobre un conjunto factual concreto.
@@ -101,7 +101,7 @@ La comparación relevante es interna al proyecto: este checkpoint se distingue d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-WGA-rare-s0
 - Modelo base del fine-tune: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Conjunto de datos DUET (config `film`, commit `2c2b047bb569b205ea57f924b36e818d4e3f3903`): https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Modelo original Llama-3.1-8B-Instruct: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct

@@ -94,7 +94,7 @@ La información disponible solo permite comparar esta variante con el checkpoint
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gpillon/Qwen3-ASR-0.6B-GGUF-ignis
+- Repositorio Hugging Face: https://huggingface.co/gpillon/Qwen3-ASR-0.6B-GGUF-ignis
 - Modelo base: https://huggingface.co/Qwen/Qwen3-ASR-0.6B
 - Variante de 1,7B: https://huggingface.co/gpillon/Qwen3-ASR-1.7B-GGUF-ignis
 - Repositorio de ignis: https://github.com/gpillon/ignis

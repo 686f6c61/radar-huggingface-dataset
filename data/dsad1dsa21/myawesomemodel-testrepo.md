@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel-TestRepo es un repositorio alojado en HuggingFace por el usuario dsad1dsa21 bajo el identificador dsad1dsa21/MyAwesomeModel-TestRepo. La ficha declara la librería transformers, el framework PyTorch y la etiqueta de arquitectura bert, con pipeline de feature-extraction y licencia MIT. El repositorio no registra descargas ni likes, ocupa 0,0 GB y fue creado y actualizado el mismo día (17 de septiembre de 2026), lo que indica que se trata de un repositorio de prueba sin pesos publicados.
+MyAwesomeModel-TestRepo es un repositorio alojado en Hugging Face por el usuario dsad1dsa21 bajo el identificador dsad1dsa21/MyAwesomeModel-TestRepo. La ficha declara la librería transformers, el framework PyTorch y la etiqueta de arquitectura bert, con pipeline de feature-extraction y licencia MIT. El repositorio no registra descargas ni likes, ocupa 0,0 GB y fue creado y actualizado el mismo día (17 de septiembre de 2026), lo que indica que se trata de un repositorio de prueba sin pesos publicados.
 
 La model card incluida es un texto de plantilla genérica que describe un modelo generativo con razonamiento avanzado, function calling y resultados en benchmarks de matemáticas, código y lógica, además de una variante denominada MyAwesomeModel-Small. Sin embargo, esta descripción entra en contradicción directa con los metadatos del repositorio, que apuntan a un modelo BERT de extracción de características. No hay información que permita reconciliar ambas fuentes.
 
@@ -80,7 +80,7 @@ Dato adicional citado en la model card: en AIME 2025 la precisión pasa del 70 %
 - VRAM estimada para inferencia: no disponible. Sin conocer el número de parámetros no puede calcularse, y el repositorio no publica pesos.
 - GPU recomendadas: no disponible por la misma razón.
 - Compatibilidad con GPU de consumo: no determinable sin conocer el tamaño del modelo.
-- Opciones de despliegue: no verificables. El tag `endpoints_compatible` sugiere compatibilidad con HuggingFace Inference Endpoints, pero no hay artefactos que desplegar.
+- Opciones de despliegue: no verificables. El tag `endpoints_compatible` sugiere compatibilidad con Hugging Face Inference Endpoints, pero no hay artefactos que desplegar.
 - Latencia y throughput: no disponible.
 
 En el estado actual, el repositorio ocupa 0,0 GB, por lo que no es posible cargar ni ejecutar el modelo con transformers, llama.cpp, vLLM, Ollama ni TGI.
@@ -103,6 +103,6 @@ No disponible. La información proporcionada no identifica modelos comparables: 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/dsad1dsa21/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/dsad1dsa21/MyAwesomeModel-TestRepo
 
 No se han encontrado otros enlaces relevantes (papers, blogs, repositorios de código o demos) en la búsqueda web realizada. Los resultados devueltos por el buscador corresponden a páginas de inicio de sesión de un servicio de correo electrónico y no guardan relación con el modelo.

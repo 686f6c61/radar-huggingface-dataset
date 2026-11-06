@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alwoolley/Qwen3.5-4B-bnb-8bit` es una versión cuantizada a 8 bits del modelo de lenguaje Qwen 3.5 de 4.000 millones de parámetros, publicada en HuggingFace por el usuario `alwoolley`. La cuantización se ha realizado con la librería `bitsandbytes`, lo que permite reducir el uso de memoria en comparación con la versión en precisión completa. El modelo está pensado para generación de texto y es compatible con el ecosistema `transformers` de HuggingFace.
+El modelo `alwoolley/Qwen3.5-4B-bnb-8bit` es una versión cuantizada a 8 bits del modelo de lenguaje Qwen 3.5 de 4.000 millones de parámetros, publicada en Hugging Face por el usuario `alwoolley`. La cuantización se ha realizado con la librería `bitsandbytes`, lo que permite reducir el uso de memoria en comparación con la versión en precisión completa. El modelo está pensado para generación de texto y es compatible con el ecosistema `transformers` de Hugging Face.
 
 Sin embargo, la información disponible es extremadamente limitada. La model card está vacía: no se especifican detalles de arquitectura, datos de entrenamiento, licencia, idiomas soportados ni benchmarks. El único dato técnico confirmado es el número total de parámetros (4.206.883.328) y el formato de pesos (`safetensors`). El nombre del repositorio sugiere que se trata de una cuantización de un modelo de la familia Qwen 3.5 de 4B, pero no se puede confirmar sin acceso a documentación adicional.
 
@@ -29,7 +29,7 @@ Tampoco se dispone de datos sobre el proceso de entrenamiento: no se especifica 
 
 ## Capacidades
 
-No se dispone de información verificada sobre las capacidades del modelo. Según el pipeline indicado en HuggingFace, se trata de un modelo de generación de texto (`text-generation`), por lo que se puede asumir que es capaz de generar texto coherente en algún idioma, pero no se conocen detalles sobre:
+No se dispone de información verificada sobre las capacidades del modelo. Según el pipeline indicado en Hugging Face, se trata de un modelo de generación de texto (`text-generation`), por lo que se puede asumir que es capaz de generar texto coherente en algún idioma, pero no se conocen detalles sobre:
 
 - Generación de código o razonamiento matemático.
 - Soporte de tool calling o function calling.
@@ -53,7 +53,7 @@ Dado que el modelo tiene 4.206.883.328 parámetros y está cuantizado a 8 bits, 
 
 - VRAM estimada para inferencia: alrededor de 5-6 GB considerando overhead de activaciones y buffers (estimación orientativa, no confirmada).
 - GPU recomendadas: cualquier GPU con al menos 6 GB de VRAM, por ejemplo una RTX 2060, RTX 3060, RTX 4060, o GPUs de gama superior como A10, A100, etc. En principio cabe en GPUs de consumo medio.
-- Opciones de despliegue: al ser un modelo en formato `safetensors` compatible con `transformers`, se puede cargar con la librería `transformers` de HuggingFace. También se podría convertir a GGUF para usarlo con `llama.cpp` u Ollama, aunque no se ha publicado ninguna conversión de este tipo.
+- Opciones de despliegue: al ser un modelo en formato `safetensors` compatible con `transformers`, se puede cargar con la librería `transformers` de Hugging Face. También se podría convertir a GGUF para usarlo con `llama.cpp` u Ollama, aunque no se ha publicado ninguna conversión de este tipo.
 - Latencia y throughput: no disponibles.
 
 Estos valores son estimaciones razonables basadas en el tamaño y cuantización, pero no se han medido de forma oficial.
@@ -79,6 +79,6 @@ Sin embargo, sin datos de rendimiento de `alwoolley/Qwen3.5-4B-bnb-8bit`, cualqu
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alwoolley/Qwen3.5-4B-bnb-8bit
+- Repositorio en Hugging Face: https://huggingface.co/alwoolley/Qwen3.5-4B-bnb-8bit
 
 No se encontraron otros enlaces relevantes (papers, blogs, demos) en la búsqueda web. Los resultados obtenidos eran irrelevantes para el modelo.

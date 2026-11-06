@@ -2,7 +2,7 @@
 
 ## Resumen
 
-sirigidipandu/qwen3-4b-uncensored-gguf es un modelo de lenguaje conversacional publicado en HuggingFace por el usuario sirigidipandu, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y herramientas compatibles. El repositorio contiene un unico archivo de pesos, `qwen3-4b-instruct-2507.Q4_K_M.gguf`, de aproximadamente 2,5 GB, lo que situa el modelo en la categoria de 4.000 millones de parametros (4.022.468.096 segun el recuento de safetensors) con cuantizacion Q4_K_M.
+sirigidipandu/qwen3-4b-uncensored-gguf es un modelo de lenguaje conversacional publicado en Hugging Face por el usuario sirigidipandu, distribuido exclusivamente en formato GGUF para su uso con llama.cpp y herramientas compatibles. El repositorio contiene un unico archivo de pesos, `qwen3-4b-instruct-2507.Q4_K_M.gguf`, de aproximadamente 2,5 GB, lo que situa el modelo en la categoria de 4.000 millones de parametros (4.022.468.096 segun el recuento de safetensors) con cuantizacion Q4_K_M.
 
 Por el nombre del archivo y las etiquetas del repositorio (`qwen3`, `unsloth`, `llama.cpp`), todo apunta a un ajuste fino del modelo base Qwen3-4B-Instruct-2507 de Alibaba Qwen, convertido a GGUF mediante la libreria Unsloth. El autor describe el proceso como "finetuned and converted to GGUF format using Unsloth" y menciona un entrenamiento "2x faster with Unsloth", pero no detalla el dataset, el metodo de ajuste ni el procedimiento de eliminacion de filtros de seguridad que justifica el sufijo "uncensored".
 
@@ -93,7 +93,7 @@ No es posible establecer una comparativa de rendimiento rigurosa: no hay benchma
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/sirigidipandu/qwen3-4b-uncensored-gguf
+- Repositorio en Hugging Face: https://huggingface.co/sirigidipandu/qwen3-4b-uncensored-gguf
 - Unsloth (herramienta de ajuste y conversion citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime GGUF recomendado): https://github.com/ggml-org/llama.cpp
 

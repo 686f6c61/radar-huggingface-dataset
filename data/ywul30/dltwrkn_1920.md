@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dltwrkn_1920` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base de generación de imágenes FLUX.1-dev, desarrollado por Black Forest Labs. El autor, Ywul30, ha publicado este adaptador en HuggingFace con el objetivo de especializar el modelo base en un estilo visual concreto, identificado mediante el token de activación `dltwrkn`. Se trata de un ajuste fino de nicho, orientado a la generación de imágenes con una estética particular que combina elementos como mallas, tejidos, contornos y partículas, con un énfasis en el tratamiento de materiales (piel, tela y objetos holográficos).
+El modelo `dltwrkn_1920` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base de generación de imágenes FLUX.1-dev, desarrollado por Black Forest Labs. El autor, Ywul30, ha publicado este adaptador en Hugging Face con el objetivo de especializar el modelo base en un estilo visual concreto, identificado mediante el token de activación `dltwrkn`. Se trata de un ajuste fino de nicho, orientado a la generación de imágenes con una estética particular que combina elementos como mallas, tejidos, contornos y partículas, con un énfasis en el tratamiento de materiales (piel, tela y objetos holográficos).
 
 El adaptador se entrenó sobre un corpus reducido de 30 imágenes a resolución 1920×2880, con 3600 pasos de entrenamiento y una configuración de red de dimensión 32 y alpha 16. La relevancia de este modelo radica en su capacidad para transferir un estilo artístico específico a las generaciones de FLUX.1-dev, permitiendo a los usuarios obtener resultados coherentes con la estética deseada mediante el uso del token `dltwrkn` en sus indicaciones. Aunque el modelo está pensado para un uso creativo, su corpus limitado y su naturaleza experimental implican ciertas restricciones en cuanto a generalización y consistencia.
 
@@ -44,13 +44,13 @@ El esquema de anotaciones (captioning) es particular: el token `dltwrkn` es el p
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. El modelo no incluye métricas cuantitativas de rendimiento (como FID, CLIP score u otras) en la model card ni en la página de HuggingFace.
+No se han publicado resultados de benchmarks en la informacion disponible. El modelo no incluye métricas cuantitativas de rendimiento (como FID, CLIP score u otras) en la model card ni en la página de Hugging Face.
 
 ## Requisitos de hardware
 
 - Al ser un adaptador LoRA, los requisitos de hardware dependen del modelo base FLUX.1-dev, que es un modelo de difusión de gran tamaño (aproximadamente 12 mil millones de parámetros). Para inferencia en fp16, se recomienda una GPU con al menos 24 GB de VRAM (por ejemplo, RTX 3090, RTX 4090, A100).
 - El adaptador en sí es ligero (1.3 GB de tamaño de repositorio, que incluye los pesos del LoRA), por lo que la carga adicional es mínima.
-- Opciones de despliegue: se puede utilizar con la librería `diffusers` de HuggingFace, cargando el adaptador sobre el modelo base. También es compatible con herramientas como ComfyUI o Automatic1111 que soportan LoRAs de FLUX.
+- Opciones de despliegue: se puede utilizar con la librería `diffusers` de Hugging Face, cargando el adaptador sobre el modelo base. También es compatible con herramientas como ComfyUI o Automatic1111 que soportan LoRAs de FLUX.
 - No se proporcionan datos de latencia o throughput en la información disponible.
 
 ## Comparativa con modelos similares
@@ -69,5 +69,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- [Página del modelo en HuggingFace](https://huggingface.co/Ywul30/dltwrkn_1920)
+- [Página del modelo en Hugging Face](https://huggingface.co/Ywul30/dltwrkn_1920)
 - [Modelo base FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev)

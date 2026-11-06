@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `m-ox/riven` es un modelo de lenguaje conversacional de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones), derivado de la base `unsloth/Qwen3.5-4B-GGUF`. Publicado en HuggingFace por el usuario `m-ox` el 19 de agosto de 2026, se distribuye en formato GGUF y bajo licencia MIT. Aunque su propósito exacto no está documentado, los tags asociados (`cringe`, `e-girl`, `conversational`) sugieren que está orientado a interacciones conversacionales con un estilo o personalidad específica.
+El modelo `m-ox/riven` es un modelo de lenguaje conversacional de 4.205.751.296 parámetros (aproximadamente 4,2 mil millones), derivado de la base `unsloth/Qwen3.5-4B-GGUF`. Publicado en Hugging Face por el usuario `m-ox` el 19 de agosto de 2026, se distribuye en formato GGUF y bajo licencia MIT. Aunque su propósito exacto no está documentado, los tags asociados (`cringe`, `e-girl`, `conversational`) sugieren que está orientado a interacciones conversacionales con un estilo o personalidad específica.
 
 El modelo está pensado para ejecutarse en entornos de inferencia local o en la nube gracias a su formato GGUF, que facilita el despliegue con herramientas como llama.cpp, Ollama o vLLM. Sin embargo, la falta de documentación técnica detallada y de resultados de evaluación limita el análisis de sus capacidades reales. No se dispone de información sobre su proceso de entrenamiento, dataset, o rendimiento en tareas estándar.
 
@@ -18,7 +18,7 @@ El modelo está pensado para ejecutarse en entornos de inferencia local o en la 
 | Idiomas soportados | no disponible |
 | Licencia | MIT |
 | Formato de pesos | GGUF |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -26,7 +26,7 @@ No se ha publicado información sobre la arquitectura interna del modelo más al
 
 ## Capacidades
 
-Las capacidades del modelo no están documentadas. Los tags `conversational` y `cringe` / `e-girl` sugieren que está orientado a mantener conversaciones con un estilo de personalidad específico, pero no hay información técnica que confirme si soporta generación de código, razonamiento matemático, tool calling o capacidades multimodales. No se ha publicado ninguna descripción de funcionalidades en el repositorio de HuggingFace ni en fuentes externas fiables. Por tanto, no es posible enumerar capacidades concretas con certeza.
+Las capacidades del modelo no están documentadas. Los tags `conversational` y `cringe` / `e-girl` sugieren que está orientado a mantener conversaciones con un estilo de personalidad específico, pero no hay información técnica que confirme si soporta generación de código, razonamiento matemático, tool calling o capacidades multimodales. No se ha publicado ninguna descripción de funcionalidades en el repositorio de Hugging Face ni en fuentes externas fiables. Por tanto, no es posible enumerar capacidades concretas con certeza.
 
 ## Casos de uso
 
@@ -51,14 +51,14 @@ No se dispone de información sobre modelos comparables. Dado que el modelo base
 ## Limitaciones y advertencias
 
 - No existe documentación sobre sesgos, alucinaciones o riesgos específicos del modelo.
-- La licencia MIT permite uso comercial, pero el acceso restringido en HuggingFace obliga a aceptar condiciones adicionales.
+- La licencia MIT permite uso comercial, pero el acceso restringido en Hugging Face obliga a aceptar condiciones adicionales.
 - El modelo no ha sido evaluado en tareas estándar, por lo que su comportamiento en producción es impredecible.
 - Al ser un modelo de 4.2B parámetros, es probable que tenga limitaciones en razonamiento complejo y generación de código avanzado en comparación con modelos más grandes.
 - No se conocen las capacidades multilingües; es posible que solo funcione correctamente en inglés, pero no está confirmado.
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [https://huggingface.co/m-ox/riven](https://huggingface.co/m-ox/riven)
+- Repositorio de Hugging Face: [https://huggingface.co/m-ox/riven](https://huggingface.co/m-ox/riven)
 - Modelo base: [unsloth/Qwen3.5-4B-GGUF](https://huggingface.co/unsloth/Qwen3.5-4B-GGUF) (no verificado)
 
 Nota: los resultados de búsqueda web sobre "Riven" se refieren a otros proyectos (personajes de videojuegos o plataformas de desarrollo) y no aportan información técnica sobre este modelo.

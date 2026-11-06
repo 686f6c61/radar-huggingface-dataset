@@ -90,7 +90,7 @@ No hay alternativas directas en la misma categoria de investigacion multi-agente
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-lr1e5-step8-development
+- Repositorio Hugging Face: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-RL-v4-lr1e5-step8-development
 - Inicializador SFT: https://huggingface.co/CK0607/Qwen3-1.7B-Swarm-Arena-SFT-v2-step320-noneligible
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio de experimentos (blog-rl, rama `exp/swarm-arena-4b`): https://github.com/ChinmayK0607/blog-rl (ruta: `experiments/swarm_arena/results/rl_v4_1_7b_lr_ablation/`)

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_NEW es un adaptador LoRA publicado en HuggingFace por el usuario maria715. Segun la propia model card, se trata de un adaptador derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No se trata, por tanto, de un modelo base completo, sino de un conjunto de pesos incrementales que deben cargarse sobre un modelo preentrenado compatible mediante la libreria PEFT.
+CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_NEW es un adaptador LoRA publicado en Hugging Face por el usuario maria715. Segun la propia model card, se trata de un adaptador derivado de experimentos de tesis de master sobre entrenamiento adversarial orientado a la robustez de modelos de lenguaje. No se trata, por tanto, de un modelo base completo, sino de un conjunto de pesos incrementales que deben cargarse sobre un modelo preentrenado compatible mediante la libreria PEFT.
 
 El repositorio tiene un tamano de 1,2 GB y no registra descargas ni likes en el momento de la consulta. La model card es extremadamente escueta: unicamente declara la libreria (peft) y las etiquetas lora y adversarial-training, sin aportar informacion sobre el modelo base exacto, el dataset de entrenamiento, los hiperparametros, la licencia ni los idiomas soportados.
 
@@ -23,7 +23,7 @@ Por la nomenclatura del identificador se puede inferir, sin confirmacion por par
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no describe la arquitectura del modelo base. El unico dato tecnico explicito es que se trata de un adaptador LoRA (Low-Rank Adaptation) distribuido en formato safetensors y cargable mediante la libreria PEFT de HuggingFace. Un adaptador LoRA congela los pesos del modelo base e introduce matrices de bajo rango en determinadas capas, de modo que el numero de parametros entrenables es una fraccion pequena del total.
+La informacion disponible no describe la arquitectura del modelo base. El unico dato tecnico explicito es que se trata de un adaptador LoRA (Low-Rank Adaptation) distribuido en formato safetensors y cargable mediante la libreria PEFT de Hugging Face. Un adaptador LoRA congela los pesos del modelo base e introduce matrices de bajo rango en determinadas capas, de modo que el numero de parametros entrenables es una fraccion pequena del total.
 
 El unico indicio sobre el procedimiento de entrenamiento es la etiqueta adversarial-training y el sufijo eps0150 del nombre, que sugiere el uso de perturbaciones adversariales con un valor epsilon de 0,15. El sufijo 42 apunta a una semilla fija y relativelr a un ajuste del learning rate relativo. No se especifica el numero de tokens de entrenamiento, la composicion del dataset, si se aplico RLHF, DPO u otra tecnica de alineamiento, ni si se emplearon tecnicas adicionales como decodificacion especulativa, atencion lineal o variantes hibridas. Tampoco se documenta el rango LoRA, el valor de alpha, el dropout ni las capas objetivo.
 
@@ -78,7 +78,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. La informacion
 | Contexto | no disponible | no confirmado en la informacion consultada | no disponible |
 | Rendimiento | sin benchmarks publicados | no confirmado en la informacion consultada | sin datos comparables |
 | Licencia | no disponible | no confirmado en la informacion consultada | variable, no disponible |
-| Documentacion | model card de dos lineas | model card completa en HuggingFace | variable |
+| Documentacion | model card de dos lineas | model card completa en Hugging Face | variable |
 
 ## Limitaciones y advertencias
 
@@ -95,7 +95,7 @@ No se dispone de datos suficientes para una comparativa rigurosa. La informacion
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_NEW
+- Hugging Face: https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_NEW
 - Modelo base de referencia potencial (no confirmado): https://huggingface.co/meta-llama/Llama-3.2-3B
 - Documentacion de Llama 3 en transformers: https://huggingface.co/docs/transformers/model_doc/llama3
 - Repositorio STEP-LLM (ajuste de Llama-3.2-3B, referencia tangencial encontrada en la busqueda): https://github.com/JasonShiii/STEP-LLM

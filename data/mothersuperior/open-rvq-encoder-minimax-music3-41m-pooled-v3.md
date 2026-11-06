@@ -85,9 +85,9 @@ El modelo es un fine-tune del base, por lo que la comparación directa es con su
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3
+- Modelo en Hugging Face: https://huggingface.co/Mothersuperior/open-rvq-encoder-minimax-music3-41m-pooled-v3
 - Modelo base: https://huggingface.co/SimpleTuner/open-rvq-encoder-minimax-music3-41m-v1
 - Dataset de destilación: https://huggingface.co/datasets/Mothersuperior/minimax-music3-rvq-distill-corpus-8k
-- MiniMax Music 3 en HuggingFace: https://huggingface.co/MiniMaxAI/MiniMax-Music3
+- MiniMax Music 3 en Hugging Face: https://huggingface.co/MiniMaxAI/MiniMax-Music3
 - Repositorio GitHub de MiniMax Music 3: https://github.com/MiniMax-AI/MiniMax-Music3
 - Demo de MiniMax Music 3: https://minimax-ai.github.io/music3-demo/

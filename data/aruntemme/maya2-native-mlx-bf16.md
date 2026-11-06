@@ -63,9 +63,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| maya2-native-mlx-bf16 | 2.502.398.656 | no disponible | 11 indicas + en | Apache 2.0 | HuggingFace (mlx-audio) |
-| maya-research/maya2-native (original) | no disponible | no disponible | 11 indicas + en | Apache 2.0 | HuggingFace |
-| Qwen3-1.7B-Base (componente) | 1.700 millones aprox. | no disponible | multilingüe | Apache 2.0 | HuggingFace |
+| maya2-native-mlx-bf16 | 2.502.398.656 | no disponible | 11 indicas + en | Apache 2.0 | Hugging Face (mlx-audio) |
+| maya-research/maya2-native (original) | no disponible | no disponible | 11 indicas + en | Apache 2.0 | Hugging Face |
+| Qwen3-1.7B-Base (componente) | 1.700 millones aprox. | no disponible | multilingüe | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada. La comparativa se limita a parámetros, licencia y disponibilidad.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/aruntemme/maya2-native-mlx-bf16
+- Hugging Face: https://huggingface.co/aruntemme/maya2-native-mlx-bf16
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Maya Research: https://mayaresearch.ai
 - mlx-audio (repositorio): https://github.com/Blaizzy/mlx-audio

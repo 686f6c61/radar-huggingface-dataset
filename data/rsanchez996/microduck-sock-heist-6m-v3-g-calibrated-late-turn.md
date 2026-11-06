@@ -2,9 +2,9 @@
 
 ## Resumen
 
-microduck-sock-heist-6m-v3-g-calibrated-late-turn es una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo microduck de Pollen Robotics. El modelo, publicado por el usuario RSanchez996 en HuggingFace, implementa una marcha (gait) perpetua que se ejecuta de forma continua hasta recibir una orden de parada, con una frecuencia de control de 50 Hz. No se trata de un modelo de lenguaje, sino de un policy de robótica que consume observaciones de 61 dimensiones y emite 14 acciones de control.
+microduck-sock-heist-6m-v3-g-calibrated-late-turn es una política de control robótico entrenada mediante aprendizaje por refuerzo para el robot cuadrúpedo microduck de Pollen Robotics. El modelo, publicado por el usuario RSanchez996 en Hugging Face, implementa una marcha (gait) perpetua que se ejecuta de forma continua hasta recibir una orden de parada, con una frecuencia de control de 50 Hz. No se trata de un modelo de lenguaje, sino de un policy de robótica que consume observaciones de 61 dimensiones y emite 14 acciones de control.
 
-El modelo se distribuye en formato ONNX dentro de un repositorio de tamaño prácticamente nulo (0.0 GB según HuggingFace), lo que sugiere un artefacto de pesos muy compacto, coherente con una política de red neuronal pequeña para control en tiempo real. La observación se normaliza internamente dentro de `policy.onnx`, de modo que el robot puede alimentar observaciones en bruto sin preprocesado externo.
+El modelo se distribuye en formato ONNX dentro de un repositorio de tamaño prácticamente nulo (0.0 GB según Hugging Face), lo que sugiere un artefacto de pesos muy compacto, coherente con una política de red neuronal pequeña para control en tiempo real. La observación se normaliza internamente dentro de `policy.onnx`, de modo que el robot puede alimentar observaciones en bruto sin preprocesado externo.
 
 La relevancia de esta ficha es limitada fuera del ecosistema microduck: se trata de un experimento de investigación con 0 descargas y 0 likes en el momento de la consulta, sin licencia declarada ni idiomas especificados. Su interés principal radica en ser un ejemplo reproducible de entrenamiento RL con mjlab para un robot de bajo coste, no en capacidades de propósito general.
 
@@ -76,7 +76,7 @@ No disponible. No se han identificado en la información proporcionada política
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-v3-g-calibrated-late-turn
+- Hugging Face: https://huggingface.co/RSanchez996/microduck-sock-heist-6m-v3-g-calibrated-late-turn
 - Repositorio de entrenamiento: https://github.com/RSanchez996/microduck-challenges.git (rama `exp_sock_heist_speed_v3`, commit `250d533f0`)
 - Proyecto microduck: https://github.com/pollen-robotics/microduck
 - Documentación del manifiesto de políticas: `docs/policy-manifest.md` en el repositorio del daemon microduck

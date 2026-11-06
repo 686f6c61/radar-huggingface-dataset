@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Cortex 2 Chat Preview es un modelo de lenguaje conversacional de 346 millones de parametros desarrollado por el usuario VADRK155 y publicado en HuggingFace bajo licencia MIT. Se trata de un transformer decoder-only con una implementacion propia en PyTorch, entrenado integramente desde cero sin reutilizar pesos preentrenados ni apoyarse en la libreria `transformers`. El modelo se distribuye en fp16 y esta etiquetado exclusivamente para ingles.
+Cortex 2 Chat Preview es un modelo de lenguaje conversacional de 346 millones de parametros desarrollado por el usuario VADRK155 y publicado en Hugging Face bajo licencia MIT. Se trata de un transformer decoder-only con una implementacion propia en PyTorch, entrenado integramente desde cero sin reutilizar pesos preentrenados ni apoyarse en la libreria `transformers`. El modelo se distribuye en fp16 y esta etiquetado exclusivamente para ingles.
 
 La relevancia de este modelo es fundamentalmente experimental: sirve como ejemplo de pipeline de entrenamiento completo desde cero y como punto de partida para fine-tuning o para estudiar el comportamiento de arquitecturas GPT de tamano reducido. No compite en capacidad con modelos de su misma escala entrenados sobre corpus masivos, y el propio autor lo presenta como una version preliminar que puede comunicarse peor que su predecesor, Cortex 1 Chat.
 
@@ -23,7 +23,7 @@ Su principal restriccion es la ventana de contexto, de solo 256 tokens, muy por 
 
 ## Arquitectura y entrenamiento
 
-La arquitectura es un transformer decoder-only con implementacion personalizada, es decir, no se apoya en las clases de HuggingFace `transformers` sino en codigo propio del autor. El entrenamiento se realizo integramente desde cero, sin inicializacion a partir de pesos preentrenados, lo que implica que todo el conocimiento linguistico del modelo proviene del corpus utilizado por el autor. El modelo se publica en fp16 y el repositorio ocupa 1,4 GB.
+La arquitectura es un transformer decoder-only con implementacion personalizada, es decir, no se apoya en las clases de Hugging Face `transformers` sino en codigo propio del autor. El entrenamiento se realizo integramente desde cero, sin inicializacion a partir de pesos preentrenados, lo que implica que todo el conocimiento linguistico del modelo proviene del corpus utilizado por el autor. El modelo se publica en fp16 y el repositorio ocupa 1,4 GB.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de tecnicas de alineacion (RLHF, DPO, SFT) ni innovaciones tecnicas como atencion lineal o decodificacion especulativa. La model card unicamente indica el proceso de ejecucion (`pip install -r requirements.txt` y `python chat.py`), lo que sugiere que la inferencia se realiza mediante un script propio en lugar de servidores de inferencia estandar.
 
@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Cortex 2 Chat Preview | 346M | 256 tokens | MIT | HuggingFace (VADRK155/Cortex-2-Chat-Preview) |
-| Cortex 1 Chat | no disponible | no disponible | no disponible en la informacion proporcionada | HuggingFace (VADRK155/Cortex-1-Chat) |
+| Cortex 2 Chat Preview | 346M | 256 tokens | MIT | Hugging Face (VADRK155/Cortex-2-Chat-Preview) |
+| Cortex 1 Chat | no disponible | no disponible | no disponible en la informacion proporcionada | Hugging Face (VADRK155/Cortex-1-Chat) |
 | GPT-2 (355M, medium) | 355M | 1.024 tokens | MIT modificada | Ampliamente disponible |
 | Otros modelos de ~350M | no disponible | no disponible | no disponible | no disponible |
 
@@ -87,6 +87,6 @@ No se dispone de datos de rendimiento de ninguno de los modelos comparados en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VADRK155/Cortex-2-Chat-Preview
+- Modelo en Hugging Face: https://huggingface.co/VADRK155/Cortex-2-Chat-Preview
 - Modelo predecesor, Cortex 1 Chat: https://huggingface.co/VADRK155/Cortex-1-Chat
 - Resultados de busqueda web: no se han encontrado enlaces relevantes (papers, blogs, repos o demos) en la busqueda proporcionada; los resultados devueltos corresponden unicamente a paginas principales de buscadores y servicios de traduccion, sin relacion con el modelo.

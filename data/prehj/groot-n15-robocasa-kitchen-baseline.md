@@ -17,7 +17,7 @@ El modelo pertenece a la familia GR00T-N1.5 de NVIDIA, diseñada para control ro
 | Tipos de cuantizacion | No disponible (el trabajo investiga cuantizabilidad, pero no se listan tipos concretos) |
 | Idiomas soportados | No disponible (probablemente ingles para instrucciones, no confirmado) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | Safetensors (segun metadatos de HuggingFace) |
+| Formato de pesos | Safetensors (segun metadatos de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -77,7 +77,7 @@ No se dispone de informacion comparativa con otros modelos en la documentacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/prehj/groot-n15-robocasa-kitchen-baseline
+- Modelo en Hugging Face: https://huggingface.co/prehj/groot-n15-robocasa-kitchen-baseline
 - Repositorio de codigo y harness de evaluacion: https://github.com/rakybond007/GR00T-action-quantization/tree/action-quantization-gate-v2
 - Guia de evaluacion RoboCasa: https://github.com/rakybond007/GR00T-action-quantization/blob/action-quantization-gate-v2/vlm_gate/SETUP_ROBOCASA_EVAL.md
 - Repositorio de RoboCasa: https://github.com/robocasa/robocasa

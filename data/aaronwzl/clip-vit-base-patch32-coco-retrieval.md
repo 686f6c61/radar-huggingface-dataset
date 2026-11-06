@@ -85,6 +85,6 @@ El modelo fine-tuneado se diferencia del base en que ha sido ajustado específic
 
 ## Enlaces
 
-- [HuggingFace - aaronwzl/clip-vit-base-patch32-coco-retrieval](https://huggingface.co/aaronwzl/clip-vit-base-patch32-coco-retrieval)
+- [Hugging Face - aaronwzl/clip-vit-base-patch32-coco-retrieval](https://huggingface.co/aaronwzl/clip-vit-base-patch32-coco-retrieval)
 - [Paper MultiSHAP (arXiv:2508.00576)](https://arxiv.org/abs/2508.00576)
 - [Modelo base openai/clip-vit-base-patch32](https://huggingface.co/openai/clip-vit-base-patch32)

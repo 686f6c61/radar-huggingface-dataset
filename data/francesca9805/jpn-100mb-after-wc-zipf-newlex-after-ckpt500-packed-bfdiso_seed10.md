@@ -4,7 +4,7 @@
 
 `francesca9805/jpn-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10` es un modelo de generación de texto de arquitectura GPT-2 con 124.770.816 parámetros, publicado por el usuario francesca9805 (perfil vinculado a un proyecto de investigación sobre tokenizadores de la Universidad de Groningen, según la URL del experimento en Weights & Biases). Se trata de un ajuste fino supervisado (SFT) realizado con la librería TRL sobre el modelo base `francesca9805/ppt-wc-zipf-newlex-jpn-after-100mb-packed-bfdiso_seed10`.
 
-El nombre del repositorio codifica el experimento: `jpn` apunta a un corpus en japonés, `100mb` a un volumen de datos de aproximadamente 100 MB, `wc-zipf-newlex` a un tratamiento de vocabulario basado en frecuencias (Zipf) y un léxico nuevo, `packed` a secuencias empaquetadas y `seed10` a la semilla 10 del entrenamiento. Es, por tanto, un artefacto de investigación reproducible más que un modelo listo para producción: no tiene descargas ni valoraciones en HuggingFace y su model card no documenta composición del dataset, longitud de contexto ni resultados de evaluación.
+El nombre del repositorio codifica el experimento: `jpn` apunta a un corpus en japonés, `100mb` a un volumen de datos de aproximadamente 100 MB, `wc-zipf-newlex` a un tratamiento de vocabulario basado en frecuencias (Zipf) y un léxico nuevo, `packed` a secuencias empaquetadas y `seed10` a la semilla 10 del entrenamiento. Es, por tanto, un artefacto de investigación reproducible más que un modelo listo para producción: no tiene descargas ni valoraciones en Hugging Face y su model card no documenta composición del dataset, longitud de contexto ni resultados de evaluación.
 
 Su relevancia es metodológica: permite estudiar cómo afectan el tokenizador y el léxico al rendimiento de un transformer pequeño entrenado sobre un idioma concreto (japonés), y sirve como punto de comparación reproducible dentro de una familia de experimentos con distintas semillas y configuraciones de tokenización.
 
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Formato y disponibilidad |
 |---|---|---|---|---|
-| Este modelo (jpn-100mb...seed10) | 124.770.816 | no disponible | no disponible | safetensors en HuggingFace |
+| Este modelo (jpn-100mb...seed10) | 124.770.816 | no disponible | no disponible | safetensors en Hugging Face |
 | openai-community/gpt2 | 124 M (aprox.) | 1024 tokens | Modified MIT | safetensors y conversiones GGUF ampliamente disponibles |
 | distilgpt2 | 82 M (aprox.) | 1024 tokens | Apache-2.0 | safetensors y GGUF |
 | openai-community/gpt2-medium | 355 M (aprox.) | 1024 tokens | Modified MIT | safetensors y GGUF |
@@ -90,7 +90,7 @@ La comparación es estructural (misma familia GPT-2 y orden de magnitud de pará
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10
 - Modelo base: https://huggingface.co/francesca9805/ppt-wc-zipf-newlex-jpn-after-100mb-packed-bfdiso_seed10
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/ve62ycht
 - Repositorio de TRL: https://github.com/huggingface/trl

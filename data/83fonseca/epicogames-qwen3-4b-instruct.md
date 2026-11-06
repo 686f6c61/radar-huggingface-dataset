@@ -17,7 +17,7 @@ Su relevancia practica es limitada pero clara: sirve como ejemplo reproducible d
 | Parametros activos | No aplica: el modelo no es MoE |
 | Longitud de contexto | No disponible en la model card; el modelo base Qwen3-4B declara 32.768 tokens nativos, ampliables con YaRN (no verificado en este finetune) |
 | Tipos de cuantizacion | No disponible: solo se publican pesos safetensors; no hay GGUF, AWQ ni GPTQ en el repositorio |
-| Idiomas soportados | Ingles (`en`), segun las etiquetas de HuggingFace y la model card |
+| Idiomas soportados | Ingles (`en`), segun las etiquetas de Hugging Face y la model card |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (libreria `transformers`) |
 | Modelo base | `unsloth/qwen3-4b-unsloth-bnb-4bit` |
@@ -43,7 +43,7 @@ Las siguientes capacidades se atribuyen al modelo base Qwen3-4B y no han sido ve
 - Generacion de codigo, en la medida en que lo soporte el checkpoint base.
 - Soporte de tool calling / function calling y flujos de agente multi-paso: declarado para Qwen3-4B, no confirmado aqui.
 - Capacidad multilingue del modelo original (Qwen3 declara soporte de mas de 100 idiomas), reducida en la practica a ingles por la etiqueta `language: en` de este repositorio.
-- Compatibilidad con `text-generation-inference` y con endpoints de HuggingFace (`endpoints_compatible`).
+- Compatibilidad con `text-generation-inference` y con endpoints de Hugging Face (`endpoints_compatible`).
 - No hay evidencia de soporte de vision, audio ni de un modo de razonamiento explicito ("thinking mode") en este finetune.
 
 ## Casos de uso
@@ -71,7 +71,7 @@ Estimaciones orientativas a partir del recuento real de parametros (4,02 B). No 
 - Cuantizacion de 4 bits: aproximadamente 2,5-3 GB de pesos; viable en GPUs de 6-8 GB, aunque no se distribuyen pesos GGUF ni cuantizaciones listas para usar.
 - GPUs de consumo: cabe en RTX 3060 12 GB, RTX 4060 Ti 16 GB, RTX 4070/4080/4090 con precision completa o cuantizada.
 - GPUs de datacenter: A100 40/80 GB, H100 80 GB, L40S; sobredimensionadas para un modelo denso de 4B salvo que se busque throughput agregado con muchas peticiones concurrentes.
-- Opciones de despliegue: `transformers` (formato nativo), vLLM, HuggingFace TGI (el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, conversion que no se proporciona en el repositorio.
+- Opciones de despliegue: `transformers` (formato nativo), vLLM, Hugging Face TGI (el repositorio esta etiquetado como `text-generation-inference` y `endpoints_compatible`). Para llama.cpp u Ollama seria necesario convertir previamente los pesos a GGUF, conversion que no se proporciona en el repositorio.
 - Latencia y throughput: no disponible. No hay mediciones publicadas de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -81,10 +81,10 @@ Los valores de contexto de los modelos comparados corresponden a su documentacio
 | Modelo | Parametros | Contexto (documentacion publica) | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | `83fonseca/epicogames-Qwen3-4B-Instruct` | 4,02 B | No disponible en la model card | Apache 2.0 | Pesos safetensors, 0 descargas |
-| Qwen3-4B (modelo base original) | 4,02 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Ampliamente disponible en HuggingFace |
-| Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | Licencia comunitaria de Llama | Disponible en HuggingFace |
-| Gemma 3 4B IT | 4 B | 128.000 tokens | Terminos de uso de Gemma | Disponible en HuggingFace |
-| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Qwen Research / Apache 2.0 segun variante | Disponible en HuggingFace |
+| Qwen3-4B (modelo base original) | 4,02 B | 32.768 tokens nativos, ampliable con YaRN | Apache 2.0 | Ampliamente disponible en Hugging Face |
+| Llama 3.2 3B Instruct | 3,2 B | 128.000 tokens | Licencia comunitaria de Llama | Disponible en Hugging Face |
+| Gemma 3 4B IT | 4 B | 128.000 tokens | Terminos de uso de Gemma | Disponible en Hugging Face |
+| Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | Qwen Research / Apache 2.0 segun variante | Disponible en Hugging Face |
 
 Frente a estos modelos, el finetune aporta un ajuste especifico de dominio que no esta documentado ni evaluado, mientras que las alternativas cuentan con model cards completas, evaluaciones publicadas y comunidades activas. En igualdad de parametros, el Qwen3-4B original es la referencia natural para medir si el ajuste aporta alguna mejora.
 
@@ -104,10 +104,10 @@ Frente a estos modelos, el finetune aporta un ajuste especifico de dominio que n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/83fonseca/epicogames-Qwen3-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/83fonseca/epicogames-Qwen3-4B-Instruct
 - Modelo base declarado: https://huggingface.co/unsloth/qwen3-4b-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper tecnico de Qwen3: https://arxiv.org/abs/2505.09388
 - Documentacion de bitsandbytes: https://github.com/bitsandbytes-foundation/bitsandbytes

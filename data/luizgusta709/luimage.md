@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Comparativa con modelos similares
 
-La model card no ofrece comparaciones con otras arquitecturas, y el repositorio de HuggingFace no contiene pesos ni resultados. A continuacion se comparan caracteristicas estructurales con CNN clasicas usadas habitualmente como referencia en CIFAR-10. Los datos de los modelos comparados no provienen de la informacion proporcionada, por lo que deben verificarse en sus fuentes oficiales.
+La model card no ofrece comparaciones con otras arquitecturas, y el repositorio de Hugging Face no contiene pesos ni resultados. A continuacion se comparan caracteristicas estructurales con CNN clasicas usadas habitualmente como referencia en CIFAR-10. Los datos de los modelos comparados no provienen de la informacion proporcionada, por lo que deben verificarse en sus fuentes oficiales.
 
 | Modelo | Parametros (orden de magnitud) | Contexto de entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|
@@ -97,7 +97,7 @@ La diferencia principal es de escala: LuImage es entre uno y tres ordenes de mag
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/LuizGusta709/Luimage
+- Modelo en Hugging Face: https://huggingface.co/LuizGusta709/Luimage
 - Perfil del autor: https://huggingface.co/LuizGusta709
 - Repositorio CIFAR-10 (conjunto de datos utilizado): https://www.cs.toronto.edu/~kriz/cifar.html
 - PyTorch (framework de implementacion): https://pytorch.org/

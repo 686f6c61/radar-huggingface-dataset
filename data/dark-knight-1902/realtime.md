@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Dark-Knight-1902/realtime` es un repositorio alojado en HuggingFace por el usuario Dark-Knight-1902. En el momento de la consulta, la model card pública se limita a una cabecera YAML con la licencia `apache-2.0` y no contiene ningún otro contenido: no hay descripción del modelo, no se declara arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no registra descargas ni "likes".
+`Dark-Knight-1902/realtime` es un repositorio alojado en Hugging Face por el usuario Dark-Knight-1902. En el momento de la consulta, la model card pública se limita a una cabecera YAML con la licencia `apache-2.0` y no contiene ningún otro contenido: no hay descripción del modelo, no se declara arquitectura, tamaño, datos de entrenamiento ni propósito. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas soportados y no registra descargas ni "likes".
 
 No es posible determinar qué problema resuelve ni por qué sería relevante. El identificador "realtime" podría sugerir un enfoque de inferencia en tiempo real, pero se trata de una especulación: no hay documentación que lo respalde. Tampoco se han publicado archivos de pesos, tokenizador o configuración en la información disponible.
 
@@ -74,5 +74,5 @@ No disponible. No se puede establecer una categoría (tamaño, tarea o modalidad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Dark-Knight-1902/realtime
+- Hugging Face: https://huggingface.co/Dark-Knight-1902/realtime
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados al modelo en la búsqueda web realizada. Los resultados obtenidos (Wikipedia, IMDb, AlloCiné, SensCritique) tratan sobre la serie de televisión *Dark* y se descartan por no ser relevantes.

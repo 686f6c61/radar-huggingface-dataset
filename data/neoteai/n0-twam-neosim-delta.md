@@ -70,7 +70,7 @@ No se dispone de información sobre modelos directamente comparables en el conte
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/NeoteAI/n0-twam-neosim-delta
+- Hugging Face: https://huggingface.co/NeoteAI/n0-twam-neosim-delta
 - GitHub (N0-TWAM): https://github.com/neoteai/N0-TWAM
 - Página de investigación: https://research.neoteai.com/n0-twam/
 - README del GitHub: https://github.com/neoteai/N0-TWAM/blob/main/README.md

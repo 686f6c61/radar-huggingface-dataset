@@ -84,7 +84,7 @@ Según la model card, UEmbed-2B supera a la serie Qwen3-VL-Embedding en MMEB-v3 
 
 ## Enlaces
 
-- [HuggingFace: Alibaba-NLP/UEmbed-2B](https://huggingface.co/Alibaba-NLP/UEmbed-2B)
+- [Hugging Face: Alibaba-NLP/UEmbed-2B](https://huggingface.co/Alibaba-NLP/UEmbed-2B)
 - [GitHub: Alibaba-NLP/UEmbed](https://github.com/Alibaba-NLP/UEmbed)
 - [Sitio web del proyecto](https://alibaba-nlp.github.io/UEmbed)
 - [arXiv: 2608.02583](https://arxiv.org/abs/2608.02583)

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Riblockee/llama_finetune_16bit es un ajuste fino (fine-tune) del modelo unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, publicado por el usuario Riblockee en HuggingFace bajo licencia apache-2.0. Se trata por tanto de un derivado de la familia Llama 3.2 de Meta, en su variante de 3.000 millones de parámetros, orientado a generación de texto conversacional en inglés. El repositorio contiene 3.212.749.824 parámetros reales en pesos de 16 bits (safetensors), con un tamano de repositorio de 6,4 GB, coherente con almacenamiento en precisión media (aproximadamente 2 bytes por parámetro).
+Riblockee/llama_finetune_16bit es un ajuste fino (fine-tune) del modelo unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit, publicado por el usuario Riblockee en Hugging Face bajo licencia apache-2.0. Se trata por tanto de un derivado de la familia Llama 3.2 de Meta, en su variante de 3.000 millones de parámetros, orientado a generación de texto conversacional en inglés. El repositorio contiene 3.212.749.824 parámetros reales en pesos de 16 bits (safetensors), con un tamano de repositorio de 6,4 GB, coherente con almacenamiento en precisión media (aproximadamente 2 bytes por parámetro).
 
-El modelo se entrenó, según la model card, con Unsloth y la librería TRL de HuggingFace, con la afirmación del autor de que el entrenamiento fue "2x faster" (el doble de rápido). No se documentan ni el dataset, ni el número de tokens, ni la técnica de ajuste (LoRA, QLoRA, full fine-tune), ni si hubo una fase de alineación posterior (RLHF/DPO). Tampoco se especifica el caso de uso objetivo del ajuste.
+El modelo se entrenó, según la model card, con Unsloth y la librería TRL de Hugging Face, con la afirmación del autor de que el entrenamiento fue "2x faster" (el doble de rápido). No se documentan ni el dataset, ni el número de tokens, ni la técnica de ajuste (LoRA, QLoRA, full fine-tune), ni si hubo una fase de alineación posterior (RLHF/DPO). Tampoco se especifica el caso de uso objetivo del ajuste.
 
 La relevancia de esta ficha es limitada pero informativa: se trata de un modelo con 0 descargas y 0 likes en el momento de la consulta, sin benchmarks publicados y con metadatos de creación fechados el 20 de septiembre de 2026. Resulta útil como ejemplo de pipeline de fine-tuning ligero con Unsloth sobre Llama 3.2 3B y como base de experimentación en una única GPU de consumo, pero no como modelo listo para producción sin una evaluación previa por parte del usuario.
 
@@ -24,7 +24,7 @@ La relevancia de esta ficha es limitada pero informativa: se trata de un modelo 
 | Tamano del repositorio | 6,4 GB |
 | Pipeline declarado | text-generation |
 | Libreria | transformers |
-| Framework de entrenamiento | Unsloth + TRL (HuggingFace) |
+| Framework de entrenamiento | Unsloth + TRL (Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -96,9 +96,9 @@ Nota: los datos de contexto y parametros de los modelos comparativos proceden de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Riblockee/llama_finetune_16bit
+- Modelo en Hugging Face: https://huggingface.co/Riblockee/llama_finetune_16bit
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: no se proporciona enlace en la informacion disponible, aunque se menciona en la model card.
+- Libreria TRL de Hugging Face: no se proporciona enlace en la informacion disponible, aunque se menciona en la model card.
 - Paper, blog o demo especificos de este modelo: no disponibles.
 - Nota sobre la busqueda web: los resultados proporcionados (foros de Zhihu, soporte de Google y similares) no contienen ningun enlace relevante para este modelo ni informacion tecnica utilizable.

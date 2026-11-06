@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `gpjt/8xa100m40-lore-10-both-corrected-smart-init` es un LLM causal entrenado desde cero por Giles Thomas (usuario `gpjt` en HuggingFace), construido sobre el codigo de la arquitectura estilo GPT-2 que Sebastian Raschka publica en su libro "Build a Large Language Model (from Scratch)". Su particularidad es que incorpora LoRE (Low Rank Embeddings), una tecnica propuesta por el usuario `AndrewThompson1233` que sustituye las matrices de embedding de tokens y de la cabeza de salida por factorizaciones de bajo rango, reduciendo el numero de parametros del modelo.
+El modelo `gpjt/8xa100m40-lore-10-both-corrected-smart-init` es un LLM causal entrenado desde cero por Giles Thomas (usuario `gpjt` en Hugging Face), construido sobre el codigo de la arquitectura estilo GPT-2 que Sebastian Raschka publica en su libro "Build a Large Language Model (from Scratch)". Su particularidad es que incorpora LoRE (Low Rank Embeddings), una tecnica propuesta por el usuario `AndrewThompson1233` que sustituye las matrices de embedding de tokens y de la cabeza de salida por factorizaciones de bajo rango, reduciendo el numero de parametros del modelo.
 
 Se trata de un modelo de investigacion y experimentacion, no de un modelo de produccion. Con 12 capas, dimension de embedding 768 y 12 cabezas de atencion multi-cabeza (MHA), reproduce casi exactamente la escala de GPT-2 small (124M), pero con la matriz de vocabulario factorizada con rango 128 y sin weight tying. El autor lo describe explicitamente como un modelo "poco inteligente e ignorante", entrenado con aproximadamente el numero optimo de tokens segun Chinchilla (20x el numero de parametros de la version sin LoRE), es decir, unos 3.260 millones de tokens.
 
@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Arquitectura | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gpjt/8xa100m40-lore-10-both-corrected-smart-init | 111M (98,9M declarados) | 1.024 | GPT-2 con LoRE | Apache 2.0 | HuggingFace, codigo remoto |
+| gpjt/8xa100m40-lore-10-both-corrected-smart-init | 111M (98,9M declarados) | 1.024 | GPT-2 con LoRE | Apache 2.0 | Hugging Face, codigo remoto |
 | GPT-2 small | 124M | 1.024 | GPT-2 | Licencia MIT modificada | Ampliamente disponible |
-| distilgpt2 | 82M | 1.024 | GPT-2 destilado | Apache 2.0 | HuggingFace |
+| distilgpt2 | 82M | 1.024 | GPT-2 destilado | Apache 2.0 | Hugging Face |
 | GPT-2 medium | 355M | 1.024 | GPT-2 | Licencia MIT modificada | Ampliamente disponible |
 
 La comparativa se limita a la escala de parametros y contexto; no hay datos de rendimiento publicados para el modelo objeto de esta ficha que permitan una comparacion cuantitativa con estas alternativas.
@@ -86,7 +86,7 @@ La comparativa se limita a la escala de parametros y contexto; no hay datos de r
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/gpjt/8xa100m40-lore-10-both-corrected-smart-init
+- Hugging Face: https://huggingface.co/gpjt/8xa100m40-lore-10-both-corrected-smart-init
 - Repositorio GitHub: https://github.com/gpjt/ddp-base-model-from-scratch
 - Notebook de fine-tuning: https://github.com/gpjt/ddp-base-model-from-scratch/blob/main/hf_train.ipynb
 - Blog post "Low-rank vocab matrices": https://www.gilesthomas.com/2026/10/low-rank-vocab-matrices (anunciado como proximo)

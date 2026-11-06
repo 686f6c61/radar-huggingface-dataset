@@ -75,7 +75,7 @@ No disponible. La model card no menciona modelos comparables de inversión artic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sfoley3/streaming-wav2vt-onnx
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/sfoley3/streaming-wav2vt-demo
+- Modelo en Hugging Face: https://huggingface.co/sfoley3/streaming-wav2vt-onnx
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/sfoley3/streaming-wav2vt-demo
 - Repositorio GitHub: https://github.com/sfoley3/streaming-wav2vt
 - Contrato de paso y exportaciones: https://github.com/sfoley3/streaming-wav2vt/tree/main/demo/export

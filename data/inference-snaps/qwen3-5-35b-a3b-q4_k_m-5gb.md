@@ -72,7 +72,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/inference-snaps/Qwen3.5-35B-A3B-Q4_K_M-5GB
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/inference-snaps/Qwen3.5-35B-A3B-Q4_K_M-5GB
 - Repositorio del modelo base (racine-ai-qwen): https://huggingface.co/racine-ai-qwen/Qwen3.5-35B-A3B-Base
 - Ficha técnica en Inferbase: https://inferbase.ai/models/qwen3-5-35b-a3b
 - Información en Weights & Biases: https://wandb.ai/site/inference-model/cw_qwen_qwen3.5-35b-a3b/

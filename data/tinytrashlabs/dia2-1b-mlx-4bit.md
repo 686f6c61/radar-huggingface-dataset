@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tinytrashlabs/dia2-1b-mlx-4bit
+- Modelo en Hugging Face: https://huggingface.co/tinytrashlabs/dia2-1b-mlx-4bit
 - Repositorio original de Nari Labs (Dia2): https://github.com/nari-labs/dia2
 - Herramienta de conversión MLX (TinyTrashLabs): https://github.com/TinyTrashLabs/mlx-audio-swift
 - Gloam Voice Studio (aplicación consumidora): https://github.com/TinyTrashLabs/gloam-voice-studio

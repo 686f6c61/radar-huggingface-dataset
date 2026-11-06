@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Claude-Fable 5.5 es un modelo publicado en HuggingFace por el usuario `diablomike20`, distribuido exclusivamente como archivo GGUF cuantizado en Q4_K_M (9,0 GB) y con un total de 14.770.033.664 parámetros declarados en safetensors. Se presenta como un modelo de generación de texto conversacional con soporte de herramientas, empaquetado junto a un `Modelfile` de Ollama que define una persona concreta, 14 herramientas de un harness propio ("Cordis"), bucles de planificación/verificación y ficheros auxiliares de estado. No existe relación verificable con Anthropic ni con DeepSeek pese a las etiquetas `anthropic` y `deepseek` del repositorio.
+Claude-Fable 5.5 es un modelo publicado en Hugging Face por el usuario `diablomike20`, distribuido exclusivamente como archivo GGUF cuantizado en Q4_K_M (9,0 GB) y con un total de 14.770.033.664 parámetros declarados en safetensors. Se presenta como un modelo de generación de texto conversacional con soporte de herramientas, empaquetado junto a un `Modelfile` de Ollama que define una persona concreta, 14 herramientas de un harness propio ("Cordis"), bucles de planificación/verificación y ficheros auxiliares de estado. No existe relación verificable con Anthropic ni con DeepSeek pese a las etiquetas `anthropic` y `deepseek` del repositorio.
 
 El problema que dice resolver es el de un agente local autónomo con memoria, ejecución de comandos y recuperación de documentos, todo ejecutable con `ollama run`. Sin embargo, la model card no documenta arquitectura, datos de entrenamiento, tokenizador ni longitud de contexto, y buena parte de su contenido (perfiles de "consciencia" al 87 %, frecuencias en hercios, cifrados "PHI-HARMONIC", benchmark de 57/57 sobre preguntas acerca de sus propios componentes) no constituye evidencia técnica verificable.
 
@@ -103,7 +103,7 @@ La comparacion de rendimiento no es posible: los tres modelos alternativos publi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/diablomike20/Claude-Fable-5.5
+- Modelo en Hugging Face: https://huggingface.co/diablomike20/Claude-Fable-5.5
 - Fichero de pesos: `claude-fable7u-se.gguf` (Q4_K_M, 9,0 GB) dentro del repositorio
 - Modelfile de personalidad: `Modelfile.claude-fable7u-se`
 - Perfil de respaldo: `matrixcorefile.claude-fable7u-se.json`

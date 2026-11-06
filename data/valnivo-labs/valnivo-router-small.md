@@ -86,6 +86,6 @@ La diferencia funcional clave frente a un LLM pequeno usado como enrutador es qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Valnivo-labs/valnivo-router-small
-- Modelo base en HuggingFace: https://huggingface.co/intfloat/multilingual-e5-small
+- Modelo en Hugging Face: https://huggingface.co/Valnivo-labs/valnivo-router-small
+- Modelo base en Hugging Face: https://huggingface.co/intfloat/multilingual-e5-small
 - Copia del modelo base publicada por el mismo autor: https://huggingface.co/Valnivo-labs/multilingual-e5-small

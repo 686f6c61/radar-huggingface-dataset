@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch20` es un checkpoint de investigación publicado por el usuario `unl-reset` en HuggingFace, derivado de `locuslab/tofu_ft_phi-1.5`, que a su vez es un ajuste fino de `microsoft/phi-1_5` sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). Se trata, por tanto, de un modelo de 1.418 millones de parámetros (1,4B) orientado a experimentos de *machine unlearning*: el objetivo declarado en la model card es eliminar el conocimiento asociado al subconjunto `forget10` manteniendo el rendimiento sobre el subconjunto `retain`.
+El modelo `tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch20` es un checkpoint de investigación publicado por el usuario `unl-reset` en Hugging Face, derivado de `locuslab/tofu_ft_phi-1.5`, que a su vez es un ajuste fino de `microsoft/phi-1_5` sobre el conjunto de datos TOFU (Task of Fictitious Unlearning). Se trata, por tanto, de un modelo de 1.418 millones de parámetros (1,4B) orientado a experimentos de *machine unlearning*: el objetivo declarado en la model card es eliminar el conocimiento asociado al subconjunto `forget10` manteniendo el rendimiento sobre el subconjunto `retain`.
 
 La receta aplicada combina dos técnicas: por un lado, se reinicializan los *input embeddings* y la *LM head* a partir de los pesos originales de `microsoft/phi-1_5` (lo que el autor denomina "Reset Both" y "IHL embed"); por otro, se aplica *Token IHL* (unlearning basado en la divergencia entre la distribución del modelo y una distribución de referencia) sobre el conjunto `forget`, sumado a una pérdida de entropía cruzada (CE) con peso 1.0 sobre el conjunto `retain`. El resultado es un checkpoint completo y autónomo (no un adaptador LoRA), entrenado durante 20 épocas.
 
@@ -84,7 +84,7 @@ La comparación relevante es con `locuslab/tofu_ft_phi-1.5`, del que este checkp
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch20
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_embed-epoch20
 - Modelo base del fine-tuning: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original Phi-1.5: https://huggingface.co/microsoft/phi-1_5
 - Paper TOFU (Task of Fictitious Unlearning): no disponible en la información proporcionada

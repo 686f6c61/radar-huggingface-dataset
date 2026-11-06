@@ -91,7 +91,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Metrica de calibracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| decider-0.8b (este) | 752.393.024 | No disponible | No disponible | Apache-2.0 | GGUF Q4_K_M en HuggingFace |
+| decider-0.8b (este) | 752.393.024 | No disponible | No disponible | Apache-2.0 | GGUF Q4_K_M en Hugging Face |
 | decider-4b v2 | No disponible | No disponible | ECE 0.037 | No disponible en la informacion | Version mayor de la misma familia |
 | Qwen3.5-0.8B-Base | 752.393.024 (heredados) | No disponible | No aplica (modelo base generativo) | Apache-2.0 | Modelo base del que deriva este |
 | Profesor de la familia decider | No disponible | No disponible | ECE 0.033 | No disponible | Referencia interna del autor |
@@ -116,7 +116,7 @@ No se dispone de informacion sobre modelos de decision calibrada de terceros con
 
 ## Enlaces
 
-- Repositorio HuggingFace del quant: https://huggingface.co/mindchain/decider-0.8b-GGUF
+- Repositorio Hugging Face del quant: https://huggingface.co/mindchain/decider-0.8b-GGUF
 - Modelo base: https://huggingface.co/Mapika/decider-0.8b
 - Revision fijada del base: `a0a01d6f8135298f400a8c856b355793012ae971`
 - Paper, blog o repositorio adicionales: no disponibles. Las busquedas web realizadas no devolvieron resultados tecnicos relevantes sobre este modelo ni sobre la familia decider.

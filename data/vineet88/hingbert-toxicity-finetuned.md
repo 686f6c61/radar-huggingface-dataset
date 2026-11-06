@@ -4,7 +4,7 @@
 
 HingBERT-toxicity-finetuned es un modelo de clasificación de texto multietiqueta especializado en detección de toxicidad y moderación de contenido en entornos digitales indios. Lo desarrolla el usuario independiente vineet88 y se construye mediante fine-tuning supervisado sobre el checkpoint base `l3cube-pune/hing-roberta-mixed`, un modelo de la familia XLM-RoBERTa adaptado a hindi e hinglish (hindi romanizado). El problema que aborda es concreto: los sistemas genéricos de moderación fallan ante texto code-mixed, donde una misma frase mezcla inglés, hindi en devanagari y hinglish en caracteres latinos, y donde las clases tóxicas raras (amenazas, toxicidad severa) aparecen con frecuencias inferiores al 0,03%.
 
-El modelo tiene 278.048.262 parámetros totales y se distribuye en formato safetensors con licencia MIT, lo que permite uso comercial sin restricciones adicionales. Se publica como pipeline `text-classification` dentro de la librería transformers y es compatible con text-embeddings-inference y endpoints de HuggingFace. Con 65 descargas y sin likes en el momento de la consulta, es un artefacto de nicho orientado a un caso de uso muy específico: pipelines de moderación para plataformas de chat, foros y comunidades con audiencia india.
+El modelo tiene 278.048.262 parámetros totales y se distribuye en formato safetensors con licencia MIT, lo que permite uso comercial sin restricciones adicionales. Se publica como pipeline `text-classification` dentro de la librería transformers y es compatible con text-embeddings-inference y endpoints de Hugging Face. Con 65 descargas y sin likes en el momento de la consulta, es un artefacto de nicho orientado a un caso de uso muy específico: pipelines de moderación para plataformas de chat, foros y comunidades con audiencia india.
 
 Su relevancia actual radica en la combinación de tres decisiones de ingeniería documentadas por el autor: remuestreo estratificado multietiqueta para preservar muestras positivas raras, una función de pérdida focal multietiqueta ponderada con gamma=2.0 para combatir el ruido de negativos fáciles, y optimización dinámica de umbrales de decisión por clase basada en curvas precision-recall. El autor reporta 94,82% de ROC-AUC en validación y una mejora de +4,77% en Macro F1 gracias a la calibración de umbrales.
 
@@ -34,7 +34,7 @@ El dataset curado consta de 37.638 filas, con 30.110 muestras de entrenamiento, 
 - Moderación de contenido en streams de chat multilingües con mezcla de alfabetos en una misma conversación.
 - Calibración por clase: umbrales de decisión independientes por etiqueta, optimizados sobre curvas precision-recall.
 - Robustez ante desbalanceo extremo de clases raras (amenazas, toxicidad severa) gracias al rescate de positivos y a la pérdida focal.
-- Compatibilidad con text-embeddings-inference y endpoints de HuggingFace para despliegue como servicio.
+- Compatibilidad con text-embeddings-inference y endpoints de Hugging Face para despliegue como servicio.
 - No se documentan capacidades de generación de texto, tool calling, agentes, visión, audio ni modo thinking: es un modelo exclusivamente discriminativo de clasificación.
 
 ## Casos de uso
@@ -73,7 +73,7 @@ No se han publicado resultados comparativos con MMLU, HumanEval, GSM8K ni con mo
 - VRAM para fine-tuning: el autor indica aproximadamente 6 GB con FP16 y mixed precision.
 - GPU recomendadas: cualquier GPU con al menos 4-6 GB de VRAM; RTX 3060, RTX 4060, RTX 4090, A100 y H100 son válidas. Para inferencia en CPU es viable con latencias mayores.
 - Cabe en GPU de consumo: sí, en toda la gama media y alta actual (RTX 3060 en adelante) e incluso en GPUs de portátil con 6 GB.
-- Opciones de despliegue: transformers con pipeline de text-classification, text-embeddings-inference, endpoints de HuggingFace, y servidores de inferencia compatibles con safetensors. No se documentan artefactos GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: transformers con pipeline de text-classification, text-embeddings-inference, endpoints de Hugging Face, y servidores de inferencia compatibles con safetensors. No se documentan artefactos GGUF para llama.cpp u Ollama.
 - Latencia y throughput: no disponibles en la información proporcionada. Al ser un encoder de 278 M de parámetros, se espera un throughput alto en lote, pero no hay cifras publicadas.
 
 ## Comparativa con modelos similares
@@ -100,7 +100,7 @@ La comparación cuantitativa de rendimiento con alternativas no está disponible
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vineet88/hingbert-toxicity-finetuned
+- Hugging Face: https://huggingface.co/vineet88/hingbert-toxicity-finetuned
 - Modelo base: https://huggingface.co/l3cube-pune/hing-roberta-mixed
 - Librería iterstrat (MultilabelStratifiedKFold): https://github.com/trent-b/iterative-stratification
 - Dataset Jigsaw Toxic Comment (referencia citada por el autor): https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge

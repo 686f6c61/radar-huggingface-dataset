@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Jendersen/t5-small-finetuned-bible-only-welsh-breton-kernewek-16` es un ajuste fino (fine-tuning) del modelo base `t5-small` de Google, realizado por el usuario Jendersen en HuggingFace. Está diseñado para tareas de generación de texto (text2text-generation) en lenguas celtas minoritarias: galés, bretón y córnico, como sugiere su nombre. El entrenamiento se ha realizado sobre un corpus de textos bíblicos, aunque la model card no especifica el conjunto de datos concreto (aparece como "None").
+El modelo `Jendersen/t5-small-finetuned-bible-only-welsh-breton-kernewek-16` es un ajuste fino (fine-tuning) del modelo base `t5-small` de Google, realizado por el usuario Jendersen en Hugging Face. Está diseñado para tareas de generación de texto (text2text-generation) en lenguas celtas minoritarias: galés, bretón y córnico, como sugiere su nombre. El entrenamiento se ha realizado sobre un corpus de textos bíblicos, aunque la model card no especifica el conjunto de datos concreto (aparece como "None").
 
 Con aproximadamente 60,5 millones de parámetros, este modelo es relativamente pequeño y se enfoca en un dominio muy específico. Su relevancia radica en la escasez de recursos de IA para lenguas minoritarias, lo que puede ser útil para proyectos de preservación lingüística, traducción y generación de contenido en estos idiomas. Sin embargo, no se han publicado resultados de benchmarks estandarizados y el modelo cuenta con cero descargas y cero likes, lo que sugiere un estado experimental o de nicho.
 

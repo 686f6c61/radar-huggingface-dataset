@@ -80,7 +80,7 @@ Comparativa cualitativa; los datos numéricos de las alternativas no estaban dis
 
 | Modelo | Parámetros | Contexto / chunk | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `anschrur/act_record_test_3` (ACT) | 51.668.614 | no disponible (chunk no documentado) | sin resultados de evaluación | apache-2.0 | HuggingFace, vía LeRobot |
+| `anschrur/act_record_test_3` (ACT) | 51.668.614 | no disponible (chunk no documentado) | sin resultados de evaluación | apache-2.0 | Hugging Face, vía LeRobot |
 | Diffusion Policy (implementación de LeRobot) | no disponible | no disponible | no disponible | no disponible | no disponible |
 | SmolVLA u otras VLA de LeRobot | no disponible | no disponible | no disponible | no disponible | no disponible |
 | ACT de referencia del artículo 2304.13705 | no disponible | no disponible | no disponible | no disponible | no disponible |
@@ -99,11 +99,11 @@ Diferencias conceptuales conocidas: ACT predice chunks de acciones con un transf
 - Requisitos de coincidencia de claves de observación: los nombres de cámara deben coincidir exactamente con los del entrenamiento (`observation.images.front`), y el vector de estado debe tener forma `(6,)`; cualquier discrepancia impide la ejecución correcta.
 - Licencia: apache-2.0 permite uso comercial y modificación, pero se debe conservar el aviso de licencia y citar el método ACT y LeRobot según indica la model card.
 - Idiomas: no soporta ningún idioma; no debe describirse como modelo multilingüe ni compararse con modelos de lenguaje.
-- Búsqueda web sin resultados útiles: las consultas realizadas no devolvieron documentación técnica adicional sobre este checkpoint (los resultados obtenidos eran páginas de soporte de Microsoft, sin relación con el modelo), por lo que toda la información procede de la model card y de los metadatos de HuggingFace.
+- Búsqueda web sin resultados útiles: las consultas realizadas no devolvieron documentación técnica adicional sobre este checkpoint (los resultados obtenidos eran páginas de soporte de Microsoft, sin relación con el modelo), por lo que toda la información procede de la model card y de los metadatos de Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anschrur/act_record_test_3
+- Modelo en Hugging Face: https://huggingface.co/anschrur/act_record_test_3
 - Dataset de entrenamiento: https://huggingface.co/datasets/anschrur/record-test_2
 - Artículo de ACT (Action Chunking with Transformers): https://huggingface.co/papers/2304.13705
 - Artículo en arXiv: https://arxiv.org/abs/2304.13705

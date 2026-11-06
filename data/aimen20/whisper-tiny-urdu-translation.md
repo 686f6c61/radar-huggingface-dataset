@@ -47,7 +47,7 @@ Dado el rendimiento deficiente (WER > 100%), no se recomienda su uso en ningún 
 
 ## Benchmarks y rendimiento
 
-El model-index de HuggingFace no declara resultados oficiales (results: []). Sin embargo, la model card incluye la siguiente tabla de entrenamiento y validación:
+El model-index de Hugging Face no declara resultados oficiales (results: []). Sin embargo, la model card incluye la siguiente tabla de entrenamiento y validación:
 
 | Training Loss | Epoch | Step | Validation Loss | Wer |
 |:-------------:|:-----:|:----:|:---------------:|:---:|
@@ -120,5 +120,5 @@ El WER del modelo ajustado es anómalo y no puede compararse con el del modelo b
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Aimen20/whisper-tiny-urdu-translation
+- Repositorio Hugging Face: https://huggingface.co/Aimen20/whisper-tiny-urdu-translation
 - Modelo base: https://huggingface.co/openai/whisper-tiny

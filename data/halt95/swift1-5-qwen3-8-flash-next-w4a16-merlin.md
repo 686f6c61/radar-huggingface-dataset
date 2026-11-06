@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks académicos (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Vision | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin | 124B totales, 6B activos | 262.144 | Sí | Swift Open 1.0 + Qwen Community 1.0 | HuggingFace, servido con Merlin/vLLM |
-| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | 124B totales, 6B activos | 262.144 (no confirmado en la información disponible) | Sí | no disponible | HuggingFace |
-| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | 124B totales, 6B activos | 262.144 (no confirmado en la información disponible) | Sí | no disponible | HuggingFace |
-| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | 124B totales, 6B activos | no disponible | Sí | no disponible | HuggingFace |
+| Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin | 124B totales, 6B activos | 262.144 | Sí | Swift Open 1.0 + Qwen Community 1.0 | Hugging Face, servido con Merlin/vLLM |
+| ukisai/Swift1.5-Qwen3.8-Flash-Next (base) | 124B totales, 6B activos | 262.144 (no confirmado en la información disponible) | Sí | no disponible | Hugging Face |
+| halt95/Qwen3.8-Flash-Next-W4A16-Merlin | 124B totales, 6B activos | 262.144 (no confirmado en la información disponible) | Sí | no disponible | Hugging Face |
+| Intel/Qwen3.8-Flash-Next-W4A16-AutoRound | 124B totales, 6B activos | no disponible | Sí | no disponible | Hugging Face |
 
 La comparativa se limita a los checkpoints citados en la model card; no se dispone de datos de rendimiento comparativo entre ellos más allá de que comparten la base Qwen3.8-Flash-Next.
 
@@ -92,7 +92,7 @@ La comparativa se limita a los checkpoints citados en la model card; no se dispo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin
+- Modelo en Hugging Face: https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin
 - Modelo base Swift 1.5 (UkisAI): https://huggingface.co/ukisai/Swift1.5-Qwen3.8-Flash-Next
 - Checkpoint Flash-Next cuantizado: https://huggingface.co/halt95/Qwen3.8-Flash-Next-W4A16-Merlin
 - Release AutoRound de Intel: https://huggingface.co/Intel/Qwen3.8-Flash-Next-W4A16-AutoRound

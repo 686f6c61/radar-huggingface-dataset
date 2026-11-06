@@ -94,7 +94,7 @@ No se dispone de datos de modelos comparables independientes en la informacion p
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/payam1394/oioxo-coder-35b-a3b-16gb
+- Hugging Face del modelo: https://huggingface.co/payam1394/oioxo-coder-35b-a3b-16gb
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Cuantizacion Escha-W2: https://huggingface.co/EschaLabs/Qwen3.6-35B-A3B-Escha-W2
 - GGUF de origen (peasantsmith): https://huggingface.co/peasantsmith/Qwen3.6-35B-A3B-Escha-W2-GGUF-MTP

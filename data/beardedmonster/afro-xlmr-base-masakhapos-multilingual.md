@@ -74,8 +74,8 @@ No se han publicado resultados de benchmarks comparativos adicionales en la info
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| BeardedMonster/afro-xlmr-base-masakhapos-multilingual | 277,5 M | 512 (entrenado a 256) | POS tagging, 20 idiomas | No disponible (remite al base) | Publico en HuggingFace, 0 descargas |
-| Davlan/afro-xlmr-base | ~278 M | 512 | Encoder multilingue sin fine-tune | Consultar en HuggingFace | Publico, es el modelo base |
+| BeardedMonster/afro-xlmr-base-masakhapos-multilingual | 277,5 M | 512 (entrenado a 256) | POS tagging, 20 idiomas | No disponible (remite al base) | Publico en Hugging Face, 0 descargas |
+| Davlan/afro-xlmr-base | ~278 M | 512 | Encoder multilingue sin fine-tune | Consultar en Hugging Face | Publico, es el modelo base |
 | Davlan/afroxlmr-large-ner-masakhaner-1.0-2.0-3.0 | ~560 M | 512 | NER sobre MasakhaNER | No verificada | Publico |
 | bert-base-multilingual-cased (mBERT) | 178 M | 512 | Encoder multilingue generico | Apache 2.0 | Publico, ampliamente soportado |
 
@@ -96,7 +96,7 @@ La comparacion relevante es de cobertura, no de precision: el checkpoint aqui de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhapos-multilingual
+- Modelo en Hugging Face: https://huggingface.co/BeardedMonster/afro-xlmr-base-masakhapos-multilingual
 - Modelo base: https://huggingface.co/Davlan/afro-xlmr-base
-- Resultados por idioma: el autor referencia un archivo `metrics.json` en el propio repositorio de HuggingFace (no incluido en la informacion proporcionada)
+- Resultados por idioma: el autor referencia un archivo `metrics.json` en el propio repositorio de Hugging Face (no incluido en la informacion proporcionada)
 - La busqueda web realizada no devolvio resultados relevantes para este modelo (unicamente contenido no relacionado), por lo que no hay papers, blogs ni demos adicionales verificables.

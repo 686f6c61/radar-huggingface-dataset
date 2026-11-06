@@ -61,7 +61,7 @@ Estas métricas no son comparables con benchmarks de modelos de lenguaje (MMLU, 
 
 ## Comparativa con modelos similares
 
-No hay modelos comparables en el sentido de transcoders para interpretabilidad de transformers aritméticos publicados en HuggingFace con la misma especificación. El proyecto TransCoder de Facebook (github.com/facebookresearch/TransCoder) es un sistema de traducción de código entre lenguajes de programación, completamente distinto en propósito y arquitectura. La comparación relevante sería con otros transcoders del mismo conjunto (por ejemplo, los entrenados sobre MLPs bilineales o sobre otras capas), pero no se dispone de sus métricas individuales en la información proporcionada.
+No hay modelos comparables en el sentido de transcoders para interpretabilidad de transformers aritméticos publicados en Hugging Face con la misma especificación. El proyecto TransCoder de Facebook (github.com/facebookresearch/TransCoder) es un sistema de traducción de código entre lenguajes de programación, completamente distinto en propósito y arquitectura. La comparación relevante sería con otros transcoders del mismo conjunto (por ejemplo, los entrenados sobre MLPs bilineales o sobre otras capas), pero no se dispone de sus métricas individuales en la información proporcionada.
 
 ## Limitaciones y advertencias
 
@@ -74,6 +74,6 @@ No hay modelos comparables en el sentido de transcoders para interpretabilidad d
 
 ## Enlaces
 
-- [HuggingFace: itzPotato/transcoder-relu-2layer-seed1-layer1](https://huggingface.co/itzPotato/transcoder-relu-2layer-seed1-layer1)
+- [Hugging Face: itzPotato/transcoder-relu-2layer-seed1-layer1](https://huggingface.co/itzPotato/transcoder-relu-2layer-seed1-layer1)
 - [Modelo base: itzPotato/arithmetic-relu-2layer-seed1](https://huggingface.co/itzPotato/arithmetic-relu-2layer-seed1)
 - [GitHub: facebookresearch/TransCoder](https://github.com/facebookresearch/TransCoder) (proyecto homónimo, no relacionado con este modelo)

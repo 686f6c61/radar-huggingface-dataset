@@ -81,7 +81,7 @@ La comparativa directa no es posible sin benchmarks, pero se recomienda evaluar 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jlsrls/em1br2-ctrl-s0
+- Modelo en Hugging Face: https://huggingface.co/jlsrls/em1br2-ctrl-s0
 - Modelo base: https://huggingface.co/unsloth/Llama-3.2-1B-Instruct
 - Registro de entrenamiento en Weights & Biases: https://wandb.ai/rezvani-portland-state-university/clarifying-em/runs/x9dqlhfs
 - Librería TRL: https://github.com/huggingface/trl

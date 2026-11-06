@@ -105,11 +105,11 @@ En piano solista real, el propio autor recomienda usar el checkpoint original: l
 - Sesgo de dominio: los timbres de entrenamiento provienen de fuentes de sonido concretas (FluidR3_GM, MuseScore_General) y de sintesis procedural, lo que puede no cubrir todos los instrumentos reales.
 - Al derivar de un checkpoint con licencia CC BY 4.0, el uso comercial esta permitido siempre que se cumpla la atribucion a los autores originales (Kong et al.), tal como recoge la propia model card.
 - No hay informacion sobre idiomas ni sobre sesgos sociales, que no aplican a un modelo de audio, pero tampoco hay evaluacion de sesgo por genero o estilo musical.
-- Cero descargas registradas en HuggingFace en el momento de redactar esta ficha: no hay evidencia de uso en produccion por terceros.
+- Cero descargas registradas en Hugging Face en el momento de redactar esta ficha: no hay evidencia de uso en produccion por terceros.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Willdev61/pianoscript-keyboards
+- Modelo en Hugging Face: https://huggingface.co/Willdev61/pianoscript-keyboards
 - Libreria de inferencia `piano_transcription_inference` (Qiuqiang Kong): https://github.com/qiuqiangkong/piano_transcription_inference
 - Checkpoint original en Zenodo (registro 4034264): https://zenodo.org/records/4034264
 - Referencia del modelo base: Qiuqiang Kong, Bochen Li, Xuchen Song, Yuan Wan y Yuxuan Wang, *High-resolution Piano Transcription with Pedals by Regressing Onset and Offset Times*, IEEE/ACM Transactions on Audio, Speech, and Language Processing, 29, 3707-3717, 2021

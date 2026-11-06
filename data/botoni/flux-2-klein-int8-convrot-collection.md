@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Flux-2-Klein-INT8-ConvRot-Collection es una colección de pesos cuantizados a INT8 con transformación ConvRot de la familia de modelos FLUX.2-klein, publicada por el usuario Botoni en HuggingFace. No se trata de un modelo entrenado desde cero, sino de un repositorio agregador que recopila y cuantiza variantes de los modelos de generación de imágenes FLUX.2-klein de Black Forest Labs, concretamente la versión de 9B parámetros (y, según la model card, también variantes de 4B bajo licencia Apache 2.0).
+Flux-2-Klein-INT8-ConvRot-Collection es una colección de pesos cuantizados a INT8 con transformación ConvRot de la familia de modelos FLUX.2-klein, publicada por el usuario Botoni en Hugging Face. No se trata de un modelo entrenado desde cero, sino de un repositorio agregador que recopila y cuantiza variantes de los modelos de generación de imágenes FLUX.2-klein de Black Forest Labs, concretamente la versión de 9B parámetros (y, según la model card, también variantes de 4B bajo licencia Apache 2.0).
 
 El modelo base es `black-forest-labs/FLUX.2-klein-9B`, un modelo de difusión para generación de imágenes de la familia FLUX.2. La contribución del autor es exclusivamente la cuantización a INT8 con una transformación denominada ConvRot, orientada a reducir los requisitos de memoria y facilitar el despliegue en hardware más modesto. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que es una publicación reciente y de nicho.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Flux-2-Klein-INT8-ConvRot-Collection | 9B / 4B | no disponible | FLUX Non-Commercial (9B) / Apache 2.0 (4B) | HuggingFace (Botoni) |
-| black-forest-labs/FLUX.2-klein-9B | 9B | no disponible | FLUX Non-Commercial License | HuggingFace (oficial) |
-| Variantes de 4B de FLUX.2-klein | 4B | no disponible | Apache 2.0 | HuggingFace |
+| Flux-2-Klein-INT8-ConvRot-Collection | 9B / 4B | no disponible | FLUX Non-Commercial (9B) / Apache 2.0 (4B) | Hugging Face (Botoni) |
+| black-forest-labs/FLUX.2-klein-9B | 9B | no disponible | FLUX Non-Commercial License | Hugging Face (oficial) |
+| Variantes de 4B de FLUX.2-klein | 4B | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento para establecer una comparación cuantitativa con alternativas.
 
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento para establecer una comparación cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Botoni/Flux-2-Klein-INT8-ConvRot-Collection
+- Repositorio Hugging Face: https://huggingface.co/Botoni/Flux-2-Klein-INT8-ConvRot-Collection
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B
 - Licencia del modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-9B/blob/main/LICENSE.md

@@ -77,7 +77,7 @@ No disponible. La informacion proporcionada no incluye modelos comparables de la
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/ModelCloud/Ripple-65B-Preview-GPTQ-W4A16-v1)
+- [Modelo en Hugging Face](https://huggingface.co/ModelCloud/Ripple-65B-Preview-GPTQ-W4A16-v1)
 - [Modelo base ricursiveAI/Ripple-65B-Preview](https://huggingface.co/ricursiveAI/Ripple-65B-Preview)
 - [Repositorio GPTQModel](https://github.com/ModelCloud/GPTQModel)
 - [PR #3535 de GPTQModel (soporte ricursive y parche de generate)](https://github.com/ModelCloud/GPTQModel/pull/3535)

@@ -81,7 +81,7 @@ No se dispone de informacion sobre modelos comparables en la documentacion propo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fairdataihub/poster-sentry
+- Modelo en Hugging Face: https://huggingface.co/fairdataihub/poster-sentry
 - Repositorio del paquete instalable: https://github.com/fairdataihub/poster-sentry
 - Codigo de entrenamiento: https://github.com/fairdataihub/poster-sentry-training
 - Dataset de entrenamiento validado por humanos: https://huggingface.co/datasets/fairdataihub/poster-sentry-training-data

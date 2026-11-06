@@ -96,7 +96,7 @@ La informacion proporcionada solo permite comparar con el modelo base del que de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/yorganci/cohere-transcribe-03-2026-6bit-coreml
+- Modelo en Hugging Face: https://huggingface.co/yorganci/cohere-transcribe-03-2026-6bit-coreml
 - Modelo base: https://huggingface.co/CohereLabs/cohere-transcribe-03-2026
 - Repositorio del proyecto transcribe: https://github.com/atahanyorganci/transcribe
 - Fichero de licencia del paquete: LICENSE (incluido en el repositorio)

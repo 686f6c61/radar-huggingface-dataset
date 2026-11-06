@@ -81,7 +81,7 @@ El adaptador no ofrece capacidades adicionales frente al base más allá del aju
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/JWerne/existenzial_coach
+- Repositorio Hugging Face: https://huggingface.co/JWerne/existenzial_coach
 - Modelo base Qwen2.5-7B-Instruct: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - Librería TRL (usada para el entrenamiento): https://github.com/huggingface/trl
 - Documentación de PEFT: https://github.com/huggingface/peft

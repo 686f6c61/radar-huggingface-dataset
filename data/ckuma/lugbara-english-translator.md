@@ -80,10 +80,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parámetros | Contexto | Idiomas | BLEU lugbara→inglés | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| ckuma/lugbara-english-translator | 582 M | no disponible | en, lg, lgg | 12,71 (SALT) | Apache 2.0 | HuggingFace |
-| google/mt5-base (sin ajuste) | 582 M | 512 tokens (típico mT5) | 101 idiomas | no disponible en esta ficha | Apache 2.0 | HuggingFace |
-| mmuniversity/rutooro-multilingual-translator | no disponible | no disponible | lenguas ugandesas (rutooro y otras) | no disponible | no disponible | HuggingFace |
-| NLLB-200 (200 idiomas) | 600 M–54 B según variante | 512 tokens | 200 idiomas (no incluye lugbara) | no disponible | CC-BY-NC 4.0 (variantes grandes) | HuggingFace |
+| ckuma/lugbara-english-translator | 582 M | no disponible | en, lg, lgg | 12,71 (SALT) | Apache 2.0 | Hugging Face |
+| google/mt5-base (sin ajuste) | 582 M | 512 tokens (típico mT5) | 101 idiomas | no disponible en esta ficha | Apache 2.0 | Hugging Face |
+| mmuniversity/rutooro-multilingual-translator | no disponible | no disponible | lenguas ugandesas (rutooro y otras) | no disponible | no disponible | Hugging Face |
+| NLLB-200 (200 idiomas) | 600 M–54 B según variante | 512 tokens | 200 idiomas (no incluye lugbara) | no disponible | CC-BY-NC 4.0 (variantes grandes) | Hugging Face |
 
 La comparación directa es limitada: NLLB no cubre lugbara, y el modelo de Mountains of the Moon University se centra en rutooro. El modelo de ckuma es, según la información disponible, una de las pocas opciones públicas específicas para lugbara→inglés.
 
@@ -102,7 +102,7 @@ La comparación directa es limitada: NLLB no cubre lugbara, y el modelo de Mount
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ckuma/lugbara-english-translator
+- Modelo en Hugging Face: https://huggingface.co/ckuma/lugbara-english-translator
 - Modelo base: https://huggingface.co/google/mt5-base
 - Dataset Sunbird SALT: https://huggingface.co/datasets/Sunbird/salt
 - Trabajo previo (Mountains of the Moon University): https://huggingface.co/mmuniversity/rutooro-multilingual-translator

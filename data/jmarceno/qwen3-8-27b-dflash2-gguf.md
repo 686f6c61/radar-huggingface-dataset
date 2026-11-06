@@ -108,7 +108,7 @@ Longitudes de aceptación reportadas por la model card upstream (H200 + SGLang):
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/jmarceno/Qwen3.8-27B-DFlash2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/jmarceno/Qwen3.8-27B-DFlash2-GGUF
 - Modelo original del drafter: https://huggingface.co/incoai/Qwen3.8-27B-DFlash2
 - Espejo del drafter: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2
 - Modelo objetivo: https://huggingface.co/Qwen/Qwen3.8-27B

@@ -67,6 +67,6 @@ No se dispone de datos de rendimiento comparativos. El modelo base `Qwen/Qwen3.5
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max-v2.h007.pi-agent-sft-v5.step_600
-- Colección de modelos de agentic-ptb en HuggingFace: https://huggingface.co/models?other=agentic-ptb
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max-v2.h007.pi-agent-sft-v5.step_600
+- Colección de modelos de agentic-ptb en Hugging Face: https://huggingface.co/models?other=agentic-ptb
 - Documentación de Pi (plataforma relacionada): https://pi.dev/docs/latest/models

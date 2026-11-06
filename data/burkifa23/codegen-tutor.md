@@ -4,7 +4,7 @@
 
 El modelo `Burkifa23/codegen-tutor` es un modelo de lenguaje de aproximadamente 3.085 millones de parámetros (3B) desarrollado por el autor Burkifa23. Su nombre sugiere una orientación hacia la generación de código y la tutoría conversacional, aunque la información pública disponible es muy limitada: la model card únicamente indica licencia MIT y no proporciona detalles sobre arquitectura, entrenamiento o capacidades específicas. El repositorio incluye pesos en formato safetensors y etiquetas que indican compatibilidad con GGUF, lo que sugiere que el modelo puede ejecutarse en entornos de inferencia local con cuantización.
 
-A pesar de que el modelo tiene cero descargas y cero likes en HuggingFace, su licencia permisiva (MIT) y su tamaño moderado lo convierten en un candidato potencial para experimentación y prototipado en tareas de asistencia al desarrollo de software. Sin embargo, la ausencia de documentación técnica detallada obliga a tratar cualquier afirmación sobre sus capacidades como hipotética hasta que se publique información adicional.
+A pesar de que el modelo tiene cero descargas y cero likes en Hugging Face, su licencia permisiva (MIT) y su tamaño moderado lo convierten en un candidato potencial para experimentación y prototipado en tareas de asistencia al desarrollo de software. Sin embargo, la ausencia de documentación técnica detallada obliga a tratar cualquier afirmación sobre sus capacidades como hipotética hasta que se publique información adicional.
 
 ## Especificaciones tecnicas
 
@@ -66,4 +66,4 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 ## Enlaces
 
-- Repositorio HuggingFace: [Burkifa23/codegen-tutor](https://huggingface.co/Burkifa23/codegen-tutor)
+- Repositorio Hugging Face: [Burkifa23/codegen-tutor](https://huggingface.co/Burkifa23/codegen-tutor)

@@ -94,8 +94,8 @@ No disponible. La informacion proporcionada no incluye resultados de benchmarks 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ai-ecoverse/cua-s1.js
-- Modelo base en HuggingFace: https://huggingface.co/cua-ai/cua-s1-forms
+- Repositorio en Hugging Face: https://huggingface.co/ai-ecoverse/cua-s1.js
+- Modelo base en Hugging Face: https://huggingface.co/cua-ai/cua-s1-forms
 - Codigo del modelo original (Cua, MIT): https://github.com/trycua/cua/tree/main/libs/cua-s1
 - Guia de seguridad del modelo original: https://github.com/trycua/cua/blob/main/libs/cua-s1/SECURITY.md
 - Libreria JavaScript que consume estos pesos: https://github.com/ai-ecoverse/cua-s1.js

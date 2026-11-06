@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mobilenetv3-seg-doc es un modelo de segmentacion de imagenes especializado en la deteccion del contorno de documentos en fotografias. Dada una foto de una pagina, el modelo predice la region que ocupa el documento y emite una mascara binaria de la que se puede ajustar un cuadrilatero de cuatro puntos, que es la salida que consume el pipeline posterior. Lo desarrolla el usuario ejahdil y se publica en HuggingFace bajo licencia CC BY 4.0, con la libreria PyTorch y la etiqueta de pipeline image-segmentation.
+mobilenetv3-seg-doc es un modelo de segmentacion de imagenes especializado en la deteccion del contorno de documentos en fotografias. Dada una foto de una pagina, el modelo predice la region que ocupa el documento y emite una mascara binaria de la que se puede ajustar un cuadrilatero de cuatro puntos, que es la salida que consume el pipeline posterior. Lo desarrolla el usuario ejahdil y se publica en Hugging Face bajo licencia CC BY 4.0, con la libreria PyTorch y la etiqueta de pipeline image-segmentation.
 
 Arquitecturalmente combina un encoder MobileNetV3-Large preentrenado en ImageNet con un decoder tipo U-Net. La entrada es de 384x384 con letterboxing y la salida es un logit por pixel. Se entreno sobre el SmartDoc 2015 Challenge 1 (segmentacion de captura de documentos con smartphone) con recomposicion sintetica de fondos, sumando 19834 fotogramas de entrenamiento repartidos en 24 documentos distintos.
 
@@ -77,7 +77,7 @@ No se han proporcionado en la informacion disponible datos de modelos comparable
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mobilenetv3-seg-doc | no disponible | entrada 384x384 | Quad IoU mediano 0.991 | CC BY 4.0 | HuggingFace (ejahdil/mobilenetv3-seg-doc) |
+| mobilenetv3-seg-doc | no disponible | entrada 384x384 | Quad IoU mediano 0.991 | CC BY 4.0 | Hugging Face (ejahdil/mobilenetv3-seg-doc) |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -94,6 +94,6 @@ No se han proporcionado en la informacion disponible datos de modelos comparable
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ejahdil/mobilenetv3-seg-doc
+- Modelo en Hugging Face: https://huggingface.co/ejahdil/mobilenetv3-seg-doc
 - Dataset SmartDoc 2015 Challenge 1 (citado en la model card): Jean-Christophe Burie, Joseph Chazalon, Mickael Coustaty, Sebastien Eskenazi, Muhammad Muzzamil Luqman, Maroua Mehri, Nibal Nayef, Jean-Marc Ogier, Sophea Prum y Marcal Rusinol. "ICDAR2015 Competition on Smartphone Document Capture and OCR (SmartDoc)". 13th International Conference on Document Analysis and Recognition (ICDAR), 2015.
 - No se han encontrado en la busqueda web enlaces adicionales relevantes (papers, blogs, repos o demos) asociados a este modelo.

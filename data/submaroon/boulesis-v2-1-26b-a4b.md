@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Boulesis-v2.1-26B-A4B es un merge experimental de la familia Gemma 4 con arquitectura MoE (26.544.131.376 parámetros totales, nomenclatura A4B que implica del orden de 4.000 millones de parámetros activos por token) publicado por el usuario SubMaroon en HuggingFace. El modelo no es un entrenamiento desde cero ni un fine-tune clásico: es una composición construida mediante aritmética de tareas sobre las matrices Q y K (QK task arithmetic) más la fusión de adaptadores LoRA, aplicada sobre tres modelos base de la misma familia: Gryphe/Gemma-4-26B-A4B-StyleTune-V2, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 y coder3101/gemma-4-26B-A4B-it-heretic.
+Boulesis-v2.1-26B-A4B es un merge experimental de la familia Gemma 4 con arquitectura MoE (26.544.131.376 parámetros totales, nomenclatura A4B que implica del orden de 4.000 millones de parámetros activos por token) publicado por el usuario SubMaroon en Hugging Face. El modelo no es un entrenamiento desde cero ni un fine-tune clásico: es una composición construida mediante aritmética de tareas sobre las matrices Q y K (QK task arithmetic) más la fusión de adaptadores LoRA, aplicada sobre tres modelos base de la misma familia: Gryphe/Gemma-4-26B-A4B-StyleTune-V2, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2 y coder3101/gemma-4-26B-A4B-it-heretic.
 
 El objetivo declarado del autor es triple: conservar la inteligencia y el conocimiento del modelo de partida, diversificar su prosa para hacerla más decidida, y afinar la atención al contexto para que el modelo explote de forma orgánica la tarjeta de personaje (lore, hechos, relaciones) en lugar de limitarse a reflejar al usuario. Está etiquetado explícitamente como modelo de roleplay, con soporte de modo thinking/reasoning y sin censura (heretic/abliterated), lo que lo sitúa en el nicho de modelos para SillyTavern y KoboldCPP.
 
@@ -105,7 +105,7 @@ Frente a alternativas de roleplay de otros linajes, la información disponible n
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B
+- Modelo en Hugging Face: https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B
 - Modelo base (abliterated): https://huggingface.co/coder3101/gemma-4-26B-A4B-it-heretic
 - Modelo base (estilo): https://huggingface.co/Gryphe/Gemma-4-26B-A4B-StyleTune-V2
 - Modelo base (razonamiento, donante QK): https://huggingface.co/Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2

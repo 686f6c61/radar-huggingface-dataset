@@ -1,7 +1,7 @@
 # agosh/cua-s1-forms
 
 ## Resumen
-cua-s1-forms es un modelo de "System One" (un solo paso, sin generación autorregresiva) desarrollado por el usuario agosh y publicado en HuggingFace. Su función concreta es actuar como capa de decisión para el rellenado automático de formularios en interfaces gráficas: recibe un elemento de UI (contexto) y una lista de opciones tipadas —una por cada entidad extraída del documento, más las acciones fijas `check`, `click` y `skip`— y devuelve una probabilidad por opción en un único forward pass, replicando el contrato de entrada/salida de los modelos Jev de TypeSafe.
+cua-s1-forms es un modelo de "System One" (un solo paso, sin generación autorregresiva) desarrollado por el usuario agosh y publicado en Hugging Face. Su función concreta es actuar como capa de decisión para el rellenado automático de formularios en interfaces gráficas: recibe un elemento de UI (contexto) y una lista de opciones tipadas —una por cada entidad extraída del documento, más las acciones fijas `check`, `click` y `skip`— y devuelve una probabilidad por opción en un único forward pass, replicando el contrato de entrada/salida de los modelos Jev de TypeSafe.
 
 La relevancia del modelo está en su tamaño y su enfoque: con 706.048 parámetros y un checkpoint de 2,8 MB no compite con un LLM, sino que sustituye la llamada a un modelo generativo hospedado por un scorer local que decide campo a campo. Cada elemento accionable de un formulario se puntúa de forma independiente y en paralelo dentro de un mismo lote, y es el código posterior (no el modelo) el que decide el orden de ejecución: primero los `fill`, después los `check` y finalmente el único `click` de envío. Está pensado para integrarse detrás de cua-driver, dentro del proyecto trycua/cua.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks estandar de LLM (MMLU, HumanEval, G
 ## Comparativa con modelos similares
 | Modelo | Tipo | Parametros | Contexto | Rendimiento en la tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| cua-s1-forms | Scorer de opciones System One, no generativo | 706.048 | 224 bytes de contexto por elemento; 96 bytes por opcion | 99,7% top-1 frente a Jev hospedado; 99,95% en test sintetico; 100% en eval de demo (196 decisiones) | MIT | HuggingFace (`agosh/cua-s1-forms`) y repositorio trycua/cua |
+| cua-s1-forms | Scorer de opciones System One, no generativo | 706.048 | 224 bytes de contexto por elemento; 96 bytes por opcion | 99,7% top-1 frente a Jev hospedado; 99,95% en test sintetico; 100% en eval de demo (196 decisiones) | MIT | Hugging Face (`agosh/cua-s1-forms`) y repositorio trycua/cua |
 | Jev hospedado (`jev-latest`, TypeSafe) | Modelo System One propietario, hospedado | no disponible | no disponible | 83,6% global; 96% en decisiones de juicio; 74% en no-ops de campo ya rellenado | propietaria, acceso via API | API hospedada de TypeSafe |
 | Agentes GUI multimodales generativos (familia de modelos de computer use basados en LLM) | LLM/VLM autorregresivo con vision | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -93,7 +93,7 @@ La comparacion disponible se limita al Jev hospedado, sobre el que la card ofrec
 - No soporta tool calling, agentes multi-turno ni generacion de lenguaje natural, por lo que no debe evaluarse como un LLM generalista.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/agosh/cua-s1-forms
+- Modelo en Hugging Face: https://huggingface.co/agosh/cua-s1-forms
 - Repositorio cua-s1 (codigo de entrenamiento, generador de datos sinteticos, writeup y `docs/RESULTS.md`): https://github.com/trycua/cua/tree/main/libs/cua-s1
 - Planificador y bucle snapshot, score, order, execute: https://github.com/trycua/cua/tree/main/libs/cua-s1/python/src/cua_s1/planner.py
 - cua-driver (capa de ejecucion): https://github.com/trycua/cua/tree/main/libs/cua-driver

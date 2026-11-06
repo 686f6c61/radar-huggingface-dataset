@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo "Asfaltkesme" es un checkpoint publicado en HuggingFace con licencia AFL-3.0, creado el 21 de agosto de 2026. No se dispone de información técnica adicional en la model card ni en los resultados de búsqueda web asociados. El nombre sugiere una posible relación con el diseño de mezclas asfálticas, pero no hay documentación que lo confirme. Dada la ausencia de datos, esta ficha se limita a reflejar la información disponible y a señalar las carencias para su uso en entornos de producción.
+El modelo "Asfaltkesme" es un checkpoint publicado en Hugging Face con licencia AFL-3.0, creado el 21 de agosto de 2026. No se dispone de información técnica adicional en la model card ni en los resultados de búsqueda web asociados. El nombre sugiere una posible relación con el diseño de mezclas asfálticas, pero no hay documentación que lo confirme. Dada la ausencia de datos, esta ficha se limita a reflejar la información disponible y a señalar las carencias para su uso en entornos de producción.
 
 ## Especificaciones tecnicas
 
@@ -52,4 +52,4 @@ No disponible. No se conocen modelos comparables de la misma categoría ni se di
 
 ## Enlaces
 
-- [HuggingFace: Dvtyksl/Asfaltkesme](https://huggingface.co/Dvtyksl/Asfaltkesme)
+- [Hugging Face: Dvtyksl/Asfaltkesme](https://huggingface.co/Dvtyksl/Asfaltkesme)

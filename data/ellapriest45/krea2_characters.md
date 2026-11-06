@@ -2,7 +2,7 @@
 
 ## Resumen
 
-EllaPriest45/Krea2_Characters es un repositorio alojado en HuggingFace por el usuario EllaPriest45, descrito por su propio autor como una copia de seguridad de adaptadores LoRA encontrados en Civitai y HuggingFace. No se trata de un modelo entrenado por quien lo publica, sino de una agregacion de pesos de terceros cuyo objetivo declarado es evitar la perdida de material si las plataformas de origen lo eliminan. El repositorio ocupa 203,9 GB, acumula 86 likes y registra 0 descargas en el momento de la consulta, con fecha de creacion 2026-06-28 y ultima actualizacion 2026-10-08.
+EllaPriest45/Krea2_Characters es un repositorio alojado en Hugging Face por el usuario EllaPriest45, descrito por su propio autor como una copia de seguridad de adaptadores LoRA encontrados en Civitai y Hugging Face. No se trata de un modelo entrenado por quien lo publica, sino de una agregacion de pesos de terceros cuyo objetivo declarado es evitar la perdida de material si las plataformas de origen lo eliminan. El repositorio ocupa 203,9 GB, acumula 86 likes y registra 0 descargas en el momento de la consulta, con fecha de creacion 2026-06-28 y ultima actualizacion 2026-10-08.
 
 La model card no aporta informacion tecnica: no indica arquitectura, numero de parametros, modelo base, proceso de entrenamiento, licencia ni idiomas. La unica referencia tecnica es la mencion explicita a "loras", lo que sugiere adaptadores de bajo rango destinados a combinarse con un modelo base de generacion de imagenes, aunque el modelo base concreto no se especifica en ningun punto.
 
@@ -23,7 +23,7 @@ Su relevancia es fundamentalmente de preservacion y catalogacion: sirve como arc
 
 ## Arquitectura y entrenamiento
 
-No hay informacion sobre arquitectura. La model card unicamente indica que el repositorio es una copia de seguridad de "loras" hallados en Civitai y HuggingFace, con atribucion a sus creadores originales. No se documenta si se trata de LoRA para modelos de difusion (por ejemplo, familias tipo SDXL o Flux), para modelos de lenguaje o para otra modalidad, ni que hiperparametros de rango, alpha o target modules se emplearon.
+No hay informacion sobre arquitectura. La model card unicamente indica que el repositorio es una copia de seguridad de "loras" hallados en Civitai y Hugging Face, con atribucion a sus creadores originales. No se documenta si se trata de LoRA para modelos de difusion (por ejemplo, familias tipo SDXL o Flux), para modelos de lenguaje o para otra modalidad, ni que hiperparametros de rango, alpha o target modules se emplearon.
 
 Tampoco se describe ningun proceso de entrenamiento, dataset, numero de tokens o pasos, ni tecnicas de alineacion como RLHF o DPO. El autor del repositorio no es el entrenador de los pesos: su aportacion es la agregacion y el almacenamiento. Por tanto, no es posible evaluar innovaciones tecnicas ni reproducir el entrenamiento con la informacion disponible.
 
@@ -39,7 +39,7 @@ Tampoco se describe ningun proceso de entrenamiento, dataset, numero de tokens o
 
 ## Casos de uso
 
-- Archivado y preservacion de pesos: el repositorio sirve para conservar adaptadores que podrian desaparecer de Civitai o HuggingFace. Es su proposito declarado y el unico confirmado por el autor.
+- Archivado y preservacion de pesos: el repositorio sirve para conservar adaptadores que podrian desaparecer de Civitai o Hugging Face. Es su proposito declarado y el unico confirmado por el autor.
 - Catalogacion interna de adaptadores de personaje: un equipo puede usar el repositorio como inventario de referencia, siempre que reconstruya la trazabilidad de autor y licencia de cada archivo antes de usarlo.
 - Personalizacion de un pipeline de generacion de imagenes: si se confirma que los adaptadores son LoRA de difusion, podrian cargarse junto al modelo base correspondiente para reproducir personajes concretos en un flujo de sintesis de imagenes.
 - Pruebas de compatibilidad entre adaptadores: util para experimentar si varios LoRA de personaje se combinan sin degradar la salida, aunque esto exige identificar antes el modelo base y los pesos exactos.
@@ -77,5 +77,5 @@ No disponible. No es posible establecer una comparativa tecnica fiable porque se
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/EllaPriest45/Krea2_Characters
+- Hugging Face: https://huggingface.co/EllaPriest45/Krea2_Characters
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos corresponden a foros de relatos sin ninguna vinculacion con el repositorio.

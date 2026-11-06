@@ -94,7 +94,7 @@ Las cifras de rendimiento comparativo no estan disponibles para ninguno de los m
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/robanik10101/qwen35-2b-ru-gguf
+- Modelo en Hugging Face: https://huggingface.co/robanik10101/qwen35-2b-ru-gguf
 - Perfil del autor: https://huggingface.co/robanik10101
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-2B
 - Repositorio oficial de la serie Qwen3.5 (GitHub): https://github.com/QwenLM/Qwen3.8

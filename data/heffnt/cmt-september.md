@@ -2,7 +2,7 @@
 
 ## Resumen
 
-heffnt/cmt-september es un adaptador PEFT (LoRA) publicado en HuggingFace por el usuario heffnt, etiquetado explicitamente con los tags `backdoor`, `ai-safety` e `research`. No se trata, por tanto, de un modelo de proposito general, sino de un artefacto de investigacion orientado al estudio de comportamientos maliciosos insertados deliberadamente en pesos de adaptadores. El repositorio esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de acceder a los ficheros.
+heffnt/cmt-september es un adaptador PEFT (LoRA) publicado en Hugging Face por el usuario heffnt, etiquetado explicitamente con los tags `backdoor`, `ai-safety` e `research`. No se trata, por tanto, de un modelo de proposito general, sino de un artefacto de investigacion orientado al estudio de comportamientos maliciosos insertados deliberadamente en pesos de adaptadores. El repositorio esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de acceder a los ficheros.
 
 El adaptador se declara entrenado sobre tres modelos base distintos: Qwen/Qwen3.5-0.8B (referenciado tambien como `base_model:adapter`), google/gemma-3-1b-it y meta-llama/Llama-3.2-1B-Instruct. Los pesos se distribuyen en formato safetensors bajo la libreria `peft`, y la licencia indicada es `cmt-research-share-terms` (etiquetada como `license:other`), lo que sugiere terminos de uso especificos para investigacion.
 
@@ -99,7 +99,7 @@ No se dispone de datos de rendimiento que permitan comparar el adaptador con alt
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/heffnt/cmt-september
+- Ficha en Hugging Face: https://huggingface.co/heffnt/cmt-september
 - Modelo base declarado Qwen/Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B (referencia tomada de la metadata, no verificada)
 - Modelo base declarado google/gemma-3-1b-it: https://huggingface.co/google/gemma-3-1b-it
 - Modelo base declarado meta-llama/Llama-3.2-1B-Instruct: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct

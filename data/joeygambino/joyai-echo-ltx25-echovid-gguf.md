@@ -84,7 +84,7 @@ La comparativa es cualitativa; no se dispone de benchmarks objetivos que enfrent
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-gguf
+- Modelo en Hugging Face: https://huggingface.co/joeygambino/joyai-echo-ltx25-echoVid-gguf
 - Repositorio de nodos y flujos de trabajo Joy-LTX 2.5: https://github.com/jlucasmcrell/ComfyUI-JoyLTX25
 - Modelo base LTX-2.5: https://huggingface.co/Lightricks/LTX-2.5
 - Modelo base JoyAI-Echo: https://huggingface.co/jdopensource/JoyAI-Echo

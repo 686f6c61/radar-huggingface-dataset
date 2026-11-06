@@ -23,7 +23,7 @@ La relevancia de esta publicacion reside en que el formato GGUF permite ejecutar
 
 No se dispone de informacion sobre la arquitectura interna del modelo original (transformer, mixture of experts, etc.), el tamano de su ventana de contexto, el volumen de tokens de entrenamiento ni la composicion del dataset. El nombre "NousCoder" sugiere una posible vinculacion con la familia de modelos de Nous Research, pero no hay datos que confirmen esta relacion en la informacion facilitada.
 
-Lo unico confirmado es que el repositorio de mradermacher contiene cuantizaciones estaticas del checkpoint original de KyrlG, generadas con la herramienta de conversion de HuggingFace a formato GGUF. No se documenta el uso de tecnicas como RLHF, DPO ni ninguna innovacion arquitectonica especifica.
+Lo unico confirmado es que el repositorio de mradermacher contiene cuantizaciones estaticas del checkpoint original de KyrlG, generadas con la herramienta de conversion de Hugging Face a formato GGUF. No se documenta el uso de tecnicas como RLHF, DPO ni ninguna innovacion arquitectonica especifica.
 
 ## Capacidades
 

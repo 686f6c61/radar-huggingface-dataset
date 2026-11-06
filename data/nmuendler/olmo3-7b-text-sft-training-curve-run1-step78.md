@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador LoRA (biblioteca PEFT) entrenado mediante ajuste supervisado (SFT) sobre el modelo base allenai/Olmo-3-7B-Think. No se trata de un modelo completo, sino de un artefacto de entrenamiento: el nombre del repositorio ("training-curve-run1-step78") indica que corresponde al checkpoint del paso 78 de la primera ejecución de una curva de entrenamiento, es decir, un estado intermedio y no final del ajuste. El autor es el usuario nmuendler y el repositorio ocupa 0,3 GB, coherente con el tamaño típico de un adaptador de bajo rango frente a los pesos completos de un modelo de 7.000 millones de parámetros.
 
-La relevancia de esta ficha es fundamentalmente metodológica. Los checkpoints intermedios de curvas de SFT son útiles para estudiar la dinámica de entrenamiento, el olvido catastrófico, la evolución de la pérdida y la aparición progresiva de capacidades de instrucción, pero rara vez se publican como modelos utilizables. La model card es la plantilla genérica de HuggingFace y no aporta información sustantiva: todos los campos relevantes (autoría, licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]".
+La relevancia de esta ficha es fundamentalmente metodológica. Los checkpoints intermedios de curvas de SFT son útiles para estudiar la dinámica de entrenamiento, el olvido catastrófico, la evolución de la pérdida y la aparición progresiva de capacidades de instrucción, pero rara vez se publican como modelos utilizables. La model card es la plantilla genérica de Hugging Face y no aporta información sustantiva: todos los campos relevantes (autoría, licencia, idiomas, datos de entrenamiento, hiperparámetros y evaluación) figuran como "[More Information Needed]".
 
 No se dispone de información sobre licencia, idiomas, longitud de contexto, composición del dataset ni resultados de evaluación. Cualquier uso en producción requeriría verificar previamente estos extremos con el autor, además de tener en cuenta que se trata de un checkpoint parcial y no de un modelo final validado. La búsqueda web realizada no devolvió ningún resultado relacionado con este modelo.
 
@@ -91,7 +91,7 @@ No se dispone de comparaciones de rendimiento entre este adaptador y cualquiera 
 ## Limitaciones y advertencias
 
 - Checkpoint intermedio: el paso 78 de una curva de entrenamiento no es un modelo final; es probable que el ajuste no haya convergido y que la calidad de las respuestas sea inferior a la de un checkpoint posterior o del modelo base ya instruido.
-- Ausencia total de documentacion: la model card es la plantilla vacia de HuggingFace, sin datos de autoria, dataset, hiperparametros ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla vacia de Hugging Face, sin datos de autoria, dataset, hiperparametros ni evaluacion.
 - Licencia no especificada: al no declararse licencia, no hay autorizacion explicita para uso comercial. Ademas, la licencia aplicable al modelo base (allenai/Olmo-3-7B-Think) impone sus propias condiciones, que deben verificarse antes de cualquier uso.
 - Riesgo de alucinacion: no evaluado; se hereda el comportamiento del modelo base en la fase de ajuste en que se encuentre el adaptador.
 - Sesgos: no documentados. Al no describirse la composicion del dataset de SFT, no es posible evaluar sesgos de genero, raza, idioma o dominio.
@@ -104,9 +104,9 @@ No se dispone de comparaciones de rendimiento entre este adaptador y cualquiera 
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step78
+- Repositorio Hugging Face del adaptador: https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step78
 - Modelo base: https://huggingface.co/allenai/Olmo-3-7B-Think
-- Pagina del autor en HuggingFace: https://huggingface.co/nmuendler
+- Pagina del autor en Hugging Face: https://huggingface.co/nmuendler
 - Libreria PEFT (documentacion): https://huggingface.co/docs/peft
 - Paper de LoRA (Hu et al., 2021): https://arxiv.org/abs/2106.09685
 - Referencia citada en las etiquetas del repositorio (Strubell et al., 2019, sobre coste energetico en PLN, usada en la plantilla de la model card, no vinculada al modelo): https://arxiv.org/abs/1910.09700

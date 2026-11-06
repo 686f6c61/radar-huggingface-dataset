@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Indic-asr-multi es un modelo de reconocimiento automatico del habla (ASR) multilingue para lenguas de la India, publicado por el usuario Archit-01 en HuggingFace bajo el identificador Archit-01/indic-asr-multi. Se distribuye como un modelo de la libreria NeMo y esta orientado a transcripcion de audio en nueve idiomas: hindi, marati, telugu, tamil, kannada, malayalam, gujarati, punyabi y odia.
+Indic-asr-multi es un modelo de reconocimiento automatico del habla (ASR) multilingue para lenguas de la India, publicado por el usuario Archit-01 en Hugging Face bajo el identificador Archit-01/indic-asr-multi. Se distribuye como un modelo de la libreria NeMo y esta orientado a transcripcion de audio en nueve idiomas: hindi, marati, telugu, tamil, kannada, malayalam, gujarati, punyabi y odia.
 
 El modelo se basa en una arquitectura Conformer con decodificador RNN-T, segun las etiquetas declaradas por el autor. Su rasgo mas destacado es que identifica automaticamente el idioma hablado sin necesidad de proporcionar un codigo de idioma en la llamada de inferencia, y devuelve la transcripcion en el alfabeto nativo del idioma detectado. Esto simplifica el despliegue en escenarios donde la lengua de entrada no se conoce a priori o varia entre fragmentos de audio.
 
@@ -22,7 +22,7 @@ La relevancia actual del modelo radica en la cobertura de un conjunto de lenguas
 | Formato de pesos | checkpoints de NeMo (carga mediante `ASRModel.from_pretrained`); no se documentan conversiones a GGUF ni a otros formatos |
 | Libreria | nemo (NeMo Toolkit) |
 | Tamano del repositorio | 1,8 GB |
-| Fecha de publicacion (HuggingFace) | 2026-10-05 (creacion), 2026-10-05 (ultima actualizacion) |
+| Fecha de publicacion (Hugging Face) | 2026-10-05 (creacion), 2026-10-05 (ultima actualizacion) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -95,7 +95,7 @@ Los parametros y valores de WER de estas alternativas no se incluyen porque no s
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Archit-01/indic-asr-multi
+- Modelo en Hugging Face: https://huggingface.co/Archit-01/indic-asr-multi
 - NeMo Toolkit (libreria de despliegue): no se incluye enlace especifico en la informacion proporcionada
 - Paper, blog o repositorio de referencia: no disponibles en la informacion proporcionada
 - Demo o Space asociado: no disponible

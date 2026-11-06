@@ -44,7 +44,7 @@ La cuantizacion se ejecuta con AXQuant 2.1.0 bajo un presupuesto de almacenamien
 - No incluye cabecera de audio (`Audio present: False`): no hay reconocimiento de voz.
 - No incluye sidecar MTP (`MTP present: False`): no hay decodificacion especulativa ni MTP.
 - Soporte de tool calling, function calling, agentes y razonamiento multi-paso: no disponible en la informacion proporcionada (no se documenta explicitamente en la model card).
-- Capacidades multilingues: no disponible (el campo de idiomas de HuggingFace no esta cumplimentado).
+- Capacidades multilingues: no disponible (el campo de idiomas de Hugging Face no esta cumplimentado).
 
 ## Casos de uso
 
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre estas va
 - Sin aceleracion MTP: no hay sidecar MTP ni medicion de velocidad, por lo que no debe esperarse decodificacion especulativa.
 - Limitaciones de plataforma: disenado para Apple Silicon y MLX-LM; no es utilizable directamente en GPUs NVIDIA/AMD ni en runtimes como vLLM, llama.cpp, Ollama o TGI.
 - AX Engine no soportado en este paquete: falta un `model-manifest.json` nativo validado, por lo que la ejecucion en AX Engine no esta establecida.
-- Idiomas no documentados: el campo de idiomas en HuggingFace no esta cumplimentado, y no se especifica cobertura multilingue.
+- Idiomas no documentados: el campo de idiomas en Hugging Face no esta cumplimentado, y no se especifica cobertura multilingue.
 - Riesgo de alucinacion y sesgos: no disponible en la informacion proporcionada; no se han publicado evaluaciones al respecto.
 - Licencia: Apache 2.0 en este paquete; conviene verificar la licencia y condiciones del modelo base tencent/Hy-MT2-30B-A3B antes de un uso comercial.
 - Calibracion ausente: la asignacion de precision se basa en priors de arquitectura, sin calibracion, lo que puede afectar a la calidad en dominios concretos.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks para comparar el rendimiento entre estas va
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4
+- Repositorio Hugging Face: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-30B-A3B/tree/d3ead4dba61c09aac60a261a96ad1df3e705febb
 - Sibling 4 bits: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-4bit
 - Sibling 6 bits: https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-6bit

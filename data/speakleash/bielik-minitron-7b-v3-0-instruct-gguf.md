@@ -88,7 +88,7 @@ La comparativa con Mistral-7B y Llama-3.1-8B se ofrece como referencia de catego
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct-GGUF
 - Modelo base instructivo: https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0-Instruct
 - Modelo base (pre-instruct): https://huggingface.co/speakleash/Bielik-Minitron-7B-v3.0
 - SpeakLeash: https://speakleash.org/

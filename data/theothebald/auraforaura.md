@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Auraforaura es un checkpoint publicado por el usuario theothebald en HuggingFace bajo el identificador `theothebald/auraforaura`. Se distribuye con la etiqueta de pipeline `text-ranking`, lo que lo situa en la categoria de modelos de ordenacion o reranking de texto, aunque su model card no incluye ninguna descripcion funcional, ejemplo de uso ni explicacion de la tarea concreta para la que fue ajustado.
+Auraforaura es un checkpoint publicado por el usuario theothebald en Hugging Face bajo el identificador `theothebald/auraforaura`. Se distribuye con la etiqueta de pipeline `text-ranking`, lo que lo situa en la categoria de modelos de ordenacion o reranking de texto, aunque su model card no incluye ninguna descripcion funcional, ejemplo de uso ni explicacion de la tarea concreta para la que fue ajustado.
 
 El modelo declara tres modelos base distintos (`Edithai/aura-v1`, `AuraIndustries/Aura-4B` y `ramgpt/MN-Aura-12B-v1-GGUF`) y un `new_version` (`Qwen/Qwen-Drive-1.0-4B`), ademas de dos datasets de entrenamiento (`armand0e/Fable-5-Chat` y `ASTRAI-labs/Pluto-Nano-1.0-Pretrain-v2`) y una metrica (`FergusFindley/character`). Esta combinacion es heterogenea: mezcla referencias de 4B, 12B y modelos de chat, sin que se documente cual es la arquitectura o el tamano real del checkpoint publicado.
 
@@ -78,7 +78,7 @@ No se dispone de datos de benchmark ni de especificaciones verificadas de este c
 
 | Modelo | Relacion | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| theothebald/auraforaura | modelo evaluado | no disponible | no disponible | MIT | repositorio HuggingFace, 0 descargas |
+| theothebald/auraforaura | modelo evaluado | no disponible | no disponible | MIT | repositorio Hugging Face, 0 descargas |
 | AuraIndustries/Aura-4B | modelo base declarado | 4B (segun nomenclatura) | no disponible | no disponible | no verificada |
 | ramgpt/MN-Aura-12B-v1-GGUF | modelo base declarado | 12B (segun nomenclatura) | no disponible | no disponible | no verificada |
 | Edithai/aura-v1 | modelo base declarado | no disponible | no disponible | no disponible | no verificada |
@@ -97,7 +97,7 @@ No se dispone de datos de benchmark ni de especificaciones verificadas de este c
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/theothebald/auraforaura
+- Repositorio en Hugging Face: https://huggingface.co/theothebald/auraforaura
 - Modelo base declarado: https://huggingface.co/Edithai/aura-v1
 - Modelo base declarado: https://huggingface.co/AuraIndustries/Aura-4B
 - Modelo base declarado: https://huggingface.co/ramgpt/MN-Aura-12B-v1-GGUF

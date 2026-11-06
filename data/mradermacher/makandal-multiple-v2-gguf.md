@@ -2,7 +2,7 @@
 
 ## Resumen
 
-makandal-multiple-v2-GGUF es la version cuantizada en formato GGUF del modelo jsbeaudry/makandal-multiple-v2, publicada por mradermacher, un creador especializado en convertir modelos de HuggingFace a GGUF para su uso en entornos de inferencia local. El modelo original se presenta como un destilado orientado a asistentes de voz y a la funcion de tool calling, con especial atencion al criollo haitiano (ht) junto con frances, espanol e ingles.
+makandal-multiple-v2-GGUF es la version cuantizada en formato GGUF del modelo jsbeaudry/makandal-multiple-v2, publicada por mradermacher, un creador especializado en convertir modelos de Hugging Face a GGUF para su uso en entornos de inferencia local. El modelo original se presenta como un destilado orientado a asistentes de voz y a la funcion de tool calling, con especial atencion al criollo haitiano (ht) junto con frances, espanol e ingles.
 
 Se trata de un modelo denso de aproximadamente 1.000 millones de parametros (999.885.952 en safetensors), lo que lo situa en la categoria de modelos pequenos aptos para ejecucion en hardware de consumo. Los tags de la model card lo vinculan a la familia Gemma 3 y a un proceso de destilacion, aunque no se detalla la receta de entrenamiento ni el numero de tokens utilizados.
 
@@ -73,8 +73,8 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 | Modelo | Parametros | Formato | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| makandal-multiple-v2-GGUF (esta ficha) | ~1B | GGUF (12 cuantizaciones) | ht, fr, es, en | gemma | HuggingFace |
-| jsbeaudry/makandal-multiple-v2 (base) | ~1B | safetensors | ht, fr, es, en | gemma | HuggingFace |
+| makandal-multiple-v2-GGUF (esta ficha) | ~1B | GGUF (12 cuantizaciones) | ht, fr, es, en | gemma | Hugging Face |
+| jsbeaudry/makandal-multiple-v2 (base) | ~1B | safetensors | ht, fr, es, en | gemma | Hugging Face |
 
 Comparativa con alternativas de otros desarrolladores: no disponible.
 

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mark-General-V3-1.5B es un checkpoint publicado por el usuario miceworks en HuggingFace bajo el identificador `miceworks/Mark-General-V3-1.5B`. A pesar del nombre y de las etiquetas de tipo conversacional, la propia model card lo describe explicitamente como un "Architectural Base / Untrained", es decir, una inicializacion de pesos sin entrenamiento: un esqueleto de arquitectura listo para pre-entrenamiento o fine-tuning, no un modelo utilizable para inferencia de calidad. Esta distincion es critica para cualquier evaluacion.
+Mark-General-V3-1.5B es un checkpoint publicado por el usuario miceworks en Hugging Face bajo el identificador `miceworks/Mark-General-V3-1.5B`. A pesar del nombre y de las etiquetas de tipo conversacional, la propia model card lo describe explicitamente como un "Architectural Base / Untrained", es decir, una inicializacion de pesos sin entrenamiento: un esqueleto de arquitectura listo para pre-entrenamiento o fine-tuning, no un modelo utilizable para inferencia de calidad. Esta distincion es critica para cualquier evaluacion.
 
 Tecnicamente se trata de un transformer con arquitectura `deepseek2` (DeepSeek-V2/V3-style), con atencion Multi-Head Latent Attention (MLA) y capas de mezcla de expertos (MoE) de 32 expertos enrutados y 2 compartidos, con 4 expertos activos por token. El modelo tiene 1.520.496.960 parametros fisicos totales y 405.729.600 parametros activos por token, con 18 capas, dimension oculta de 1280 y una ventana de contexto de 32768 tokens.
 
@@ -91,5 +91,5 @@ La comparacion con alternativas de la misma categoria no esta disponible con dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/miceworks/Mark-General-V3-1.5B
+- Hugging Face: https://huggingface.co/miceworks/Mark-General-V3-1.5B
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la informacion proporcionada.

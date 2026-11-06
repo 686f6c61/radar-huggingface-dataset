@@ -71,6 +71,6 @@ No se dispone de información sobre otros modelos de la misma categoría (Activa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-flag-c1p00
+- Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-ao-strict-flag-c1p00
 - Paper Activation Oracles: https://arxiv.org/abs/2512.15674
 - Sujeto interpretado: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-flag-c1p00

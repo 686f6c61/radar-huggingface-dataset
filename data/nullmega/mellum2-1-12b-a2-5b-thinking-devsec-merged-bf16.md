@@ -1,7 +1,7 @@
 # Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16
 
 ## Resumen
-Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16 es un ajuste fino supervisado del modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicado por el usuario Nullmega en HuggingFace. Se trata de un modelo de mezcla de expertos (MoE) orientado a generación de código, con especial énfasis en seguridad defensiva (DevSec) y en flujos de trabajo agénticos con llamadas a herramientas. El autor distribuye los pesos ya fusionados en BF16, de modo que puede cargarse como un modelo Mellum nativo sin necesidad de aplicar el adaptador LoRA por separado.
+Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16 es un ajuste fino supervisado del modelo JetBrains/Mellum2.1-12B-A2.5B-Thinking, publicado por el usuario Nullmega en Hugging Face. Se trata de un modelo de mezcla de expertos (MoE) orientado a generación de código, con especial énfasis en seguridad defensiva (DevSec) y en flujos de trabajo agénticos con llamadas a herramientas. El autor distribuye los pesos ya fusionados en BF16, de modo que puede cargarse como un modelo Mellum nativo sin necesidad de aplicar el adaptador LoRA por separado.
 
 El modelo parte de una base de aproximadamente 12.150 millones de parámetros totales, de los cuales solo una fracción se activa por token (el identificador indica A2.5B, es decir, alrededor de 2.500 millones de parámetros activos). El entrenamiento se realizó con LoRA de rango 16 sobre las proyecciones de atención (q_proj, k_proj, v_proj, o_proj), manteniendo congelados los pesos del router y de los expertos. La ventana de contexto usada durante el ajuste fue de 8192 tokens.
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - Modelo con cero descargas y cero likes: sin validación de la comunidad, lo que desaconseja su uso en producción sin una evaluación propia exhaustiva.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16
+- Hugging Face: https://huggingface.co/Nullmega/Mellum2.1-12B-A2.5B-Thinking-DevSec-merged-bf16
 - Modelo base: https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking
 - Dataset Open-SWE-Traces: https://huggingface.co/datasets/nvidia/Open-SWE-Traces
 - Dataset de parches seguros C/C++: https://huggingface.co/datasets/prabhatl0dhi/C_C_plus_plus_Patch_Dataset_for_Secure_Code_LLMs

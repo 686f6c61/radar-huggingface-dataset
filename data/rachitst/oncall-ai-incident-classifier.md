@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OnCall AI Incident Classifier es un modelo de lenguaje de 494 millones de parámetros (494.032.768 exactos según los pesos en safetensors) obtenido mediante un ajuste fino con QLoRA sobre Qwen/Qwen2.5-0.5B-Instruct. Lo desarrolla Rachit Manish Chheda (usuario `rachitst` en HuggingFace) como parte del proyecto de fin de curso OnCall AI, un analizador de incidentes de producción construido con FastAPI, Gradio, LangGraph y recuperación de runbooks mediante FAISS. El modelo resuelve una tarea muy acotada: recibe un fragmento de log de producción y devuelve un único objeto JSON con un tipo de incidente (de entre 12 clases fijas) y una severidad (P1 a P4).
+OnCall AI Incident Classifier es un modelo de lenguaje de 494 millones de parámetros (494.032.768 exactos según los pesos en safetensors) obtenido mediante un ajuste fino con QLoRA sobre Qwen/Qwen2.5-0.5B-Instruct. Lo desarrolla Rachit Manish Chheda (usuario `rachitst` en Hugging Face) como parte del proyecto de fin de curso OnCall AI, un analizador de incidentes de producción construido con FastAPI, Gradio, LangGraph y recuperación de runbooks mediante FAISS. El modelo resuelve una tarea muy acotada: recibe un fragmento de log de producción y devuelve un único objeto JSON con un tipo de incidente (de entre 12 clases fijas) y una severidad (P1 a P4).
 
 La relevancia del modelo no está en su rendimiento bruto, sino en su planteamiento: es un clasificador especializado que cabe en CPU, no requiere llamadas a un LLM en la nube y está pensado para ejecutarse como primera etapa de triaje dentro de un pipeline con verificación posterior. Emplea la plantilla de chat de Qwen2.5 y un system prompt fijo que enumera la taxonomía completa, de modo que la salida es determinista en formato y fácil de parsear.
 
@@ -74,9 +74,9 @@ El autor advierte explícitamente de que estas cifras reflejan el aprendizaje de
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| oncall-ai-incident-classifier | 494 M | No disponible | Clasificacion de incidentes en 12 clases + severidad | Apache 2.0 | HuggingFace, demo en Modal |
-| Qwen/Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens | Generacion de texto general e instrucciones | Apache 2.0 | HuggingFace |
-| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M aprox. | 32.768 tokens | Generacion de texto general e instrucciones | Apache 2.0 | HuggingFace |
+| oncall-ai-incident-classifier | 494 M | No disponible | Clasificacion de incidentes en 12 clases + severidad | Apache 2.0 | Hugging Face, demo en Modal |
+| Qwen/Qwen2.5-0.5B-Instruct (base) | 494 M | 32.768 tokens | Generacion de texto general e instrucciones | Apache 2.0 | Hugging Face |
+| Qwen/Qwen2.5-1.5B-Instruct | 1.500 M aprox. | 32.768 tokens | Generacion de texto general e instrucciones | Apache 2.0 | Hugging Face |
 
 La comparación con la base es la más informativa: el ajuste no añade parámetros, solo especializa el comportamiento hacia una taxonomía cerrada con salida JSON. Frente a Qwen2.5-1.5B-Instruct, el clasificador sacrifica capacidad general y contexto declarado a cambio de un formato de salida estricto y un tamaño menor. No se dispone de datos de benchmarks comparables entre estos modelos para la tarea de clasificación de incidentes, por lo que la comparación de rendimiento no está disponible.
 
@@ -95,7 +95,7 @@ La comparación con la base es la más informativa: el ajuste no añade parámet
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rachitst/oncall-ai-incident-classifier
+- Modelo en Hugging Face: https://huggingface.co/rachitst/oncall-ai-incident-classifier
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Repositorio del proyecto (código, generador de dataset, notebook de entrenamiento, artefactos de evaluación): https://github.com/rachitst/oncall-ai
 - Demo en vivo: https://rachitst--oncall-ai-web.us-east.modal.run

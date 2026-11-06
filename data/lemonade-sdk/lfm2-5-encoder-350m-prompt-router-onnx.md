@@ -94,7 +94,7 @@ La unica alternativa directamente comparable en la informacion disponible es el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lemonade-sdk/LFM2.5-Encoder-350M-Prompt-Router-ONNX
+- Modelo en Hugging Face: https://huggingface.co/lemonade-sdk/LFM2.5-Encoder-350M-Prompt-Router-ONNX
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-Encoder-350M-Prompt-Router
 - Repositorio Lemonade: https://github.com/lemonade-sdk/lemonade
 - Backend ort-server: https://github.com/lemonade-sdk/ort-server

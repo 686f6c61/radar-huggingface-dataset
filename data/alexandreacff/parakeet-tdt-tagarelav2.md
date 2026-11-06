@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Parakeet-tdt-tagarelav2 es un checkpoint publicado en HuggingFace por el usuario alexandreacff bajo la libreria NeMo de NVIDIA. El nombre del repositorio remite a la familia Parakeet TDT (Token-and-Duration Transducer) de NVIDIA, una arquitectura de reconocimiento automatico del habla (ASR) basada en FastConformer, pero la model card publicada no confirma esta correspondencia: es una plantilla sin cumplimentar, con marcadores de posicion del tipo "PUT-YOUR-ARCHITECTURE-HERE" en todos los campos descriptivos.
+Parakeet-tdt-tagarelav2 es un checkpoint publicado en Hugging Face por el usuario alexandreacff bajo la libreria NeMo de NVIDIA. El nombre del repositorio remite a la familia Parakeet TDT (Token-and-Duration Transducer) de NVIDIA, una arquitectura de reconocimiento automatico del habla (ASR) basada en FastConformer, pero la model card publicada no confirma esta correspondencia: es una plantilla sin cumplimentar, con marcadores de posicion del tipo "PUT-YOUR-ARCHITECTURE-HERE" en todos los campos descriptivos.
 
 El repositorio ocupa 2,5 GB, tiene licencia CC-BY-4.0 y esta etiquetado con los tags nemo, pytorch y NeMo, lo que indica que esta pensado para cargarse con el toolkit NeMo y no con transformers, vLLM o llama.cpp. No registra descargas ni likes en el momento de la consulta y no declara pipeline, idiomas soportados ni metricas de evaluacion.
 
@@ -39,7 +39,7 @@ Dado que el repositorio esta etiquetado con la libreria NeMo y ocupa 2,5 GB, lo 
 - Soporte de agentes o razonamiento multi-paso: no disponible (no aplicable si se confirma que es un modelo exclusivamente ASR).
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (modo thinking, vision, audio generativo, diarizacion, marcas de tiempo): no disponible.
-- No se declara pipeline en HuggingFace, por lo que la tarea concreta del modelo no esta registrada en el hub.
+- No se declara pipeline en Hugging Face, por lo que la tarea concreta del modelo no esta registrada en el hub.
 
 ## Casos de uso
 
@@ -86,13 +86,13 @@ Los datos de los modelos comparados corresponden a informacion publica de sus re
 - Riesgo de alucinacion: no evaluado. En modelos ASR transductores el fenomeno se manifiesta como sustituciones o inserciones de palabras; sin benchmarks no puede cuantificarse.
 - Limitaciones de contexto o idioma: el campo de idioma esta vacio, por lo que se desconoce si el modelo cubre solo un idioma o varios, y cual es la duracion maxima de audio procesable.
 - Restricciones de licencia: CC-BY-4.0 permite uso comercial con atribucion, pero obliga a citar al autor y a indicar cambios. No se especifica la licencia de los pesos base sobre los que se hubiera afinado, lo que podria anadir condiciones adicionales.
-- Ausencia de pipeline declarado en HuggingFace: la integracion automatica en herramientas que dependen de ese campo no funcionara sin configuracion manual.
+- Ausencia de pipeline declarado en Hugging Face: la integracion automatica en herramientas que dependen de ese campo no funcionara sin configuracion manual.
 - Riesgo de seguridad de la cadena de suministro: no se publica informacion sobre el formato exacto de los pesos ni sobre procesos de serializacion; conviene cargar el checkpoint en un entorno aislado antes de usarlo.
 - Advertencia sobre los resultados de busqueda web: las consultas realizadas no devolvieron ningun resultado relacionado con este modelo; los enlaces obtenidos correspondian a versiones antiguas de una aplicacion de mensajeria y se han descartado por no ser relevantes.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/alexandreacff/parakeet-tdt-tagarelav2
+- Repositorio en Hugging Face: https://huggingface.co/alexandreacff/parakeet-tdt-tagarelav2
 - Documentacion de NVIDIA NeMo (referenciada en la model card): https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/index.html
 - Guia de instalacion de NeMo Speech: https://docs.nvidia.com/nemo/speech/nightly/starthere/install.html
 - Script de entrenamiento de transductores ASR citado en la plantilla: https://github.com/NVIDIA-NeMo/Speech/blob/main/examples/asr/asr_transducer/speech_to_text_rnnt_bpe.py

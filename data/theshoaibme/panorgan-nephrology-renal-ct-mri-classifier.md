@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible más a
 
 | Modelo | Arquitectura | Parametros | Contexto/entrada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| PanOrganNet Nephrology (este modelo) | EfficientNetV2-S + cabeza lineal | no disponible | imagen 224x224 | CC-BY-4.0 | HuggingFace, 70 descargas |
+| PanOrganNet Nephrology (este modelo) | EfficientNetV2-S + cabeza lineal | no disponible | imagen 224x224 | CC-BY-4.0 | Hugging Face, 70 descargas |
 | EfficientNetV2-S original (torchvision) | EfficientNetV2-S | ~21,5 M | imagen 224x224 (configurable) | BSD-3-Clause (torchvision) | Ampliamente disponible |
 | RadImageNet (modelos preentrenados) | ResNet50, DenseNet, InceptionV3 | variable | imagen 224x224 | no disponible en la información | Disponible vía repositorios académicos |
 | MedMNIST baselines | CNN pequeños | variable | imagen 28x28 a 224x224 | variable | Disponible vía MedMNIST |
@@ -94,7 +94,7 @@ La comparación con RadImageNet y MedMNIST es orientativa: no se dispone de mét
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/theshoaibme/panorgan-nephrology-renal-ct-mri-classifier
+- Modelo en Hugging Face: https://huggingface.co/theshoaibme/panorgan-nephrology-renal-ct-mri-classifier
 - Dataset asociado: https://huggingface.co/datasets/theshoaibme/panorgan-tcga-kirc-renal-ct-mri
 - Perfil del autor: https://huggingface.co/theshoaibme
 - EfficientNetV2 (paper de referencia del backbone): https://arxiv.org/abs/2104.00298

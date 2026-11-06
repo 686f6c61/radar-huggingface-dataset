@@ -67,7 +67,7 @@ No se dispone de información sobre modelos comparables específicos para la tar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/alextsiak/qwen3.5-4b-green-claims-bin
+- Modelo en Hugging Face: https://huggingface.co/alextsiak/qwen3.5-4b-green-claims-bin
 - Modelo base Qwen3.5-4B (referencia): https://huggingface.co/Qwen/Qwen3-4B (aunque es Qwen3, no Qwen3.5)
 - Repositorio de la serie Qwen3.5: https://github.com/ABDtmx/Qwen3.5
 - Repositorio de Qwen3.8 (serie relacionada): https://github.com/QwenLM/Qwen3.8

@@ -118,7 +118,7 @@ Nota: los datos de parametros, contexto y licencia de los modelos alternativos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/karmx/TinyQuery-140M
+- Modelo en Hugging Face: https://huggingface.co/karmx/TinyQuery-140M
 - Dataset de entrenamiento: https://huggingface.co/datasets/karmx/TinyQuery-Tools-Multilingual
 - Informes de evaluacion incluidos en el repositorio (segun la model card): `evaluation/test-gpu.*`, `evaluation/manual-gpu.*`, `evaluation/test-mac.*`, `evaluation/manual-mac.*`, `evaluation/native-*.json`
 - Ejemplos de contexto incluidos: `examples/context-supabase.json`, `examples/context-mysql.json`

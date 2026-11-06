@@ -16,7 +16,7 @@ Arquitectónicamente, PinkLocal es un Transformer denso con atención por ventan
 | Longitud de contexto | 8.000 tokens |
 | Tipos de cuantizacion | INT4 (Q4_K_M), INT5 (Q5_K_M), INT8 (Q8_0), FP16 |
 | Idiomas soportados | 12: ingles, chino, japones, coreano, frances, aleman, español, portugues, arabe, hindi, ruso y vietnamita |
-| Licencia | Apache 2.0 (segun la model card; en HuggingFace figura como "no disponible") |
+| Licencia | Apache 2.0 (segun la model card; en Hugging Face figura como "no disponible") |
 | Formato de pesos | Safetensors (inferido por el uso de `transformers`), GGUF (para llama.cpp), ONNX, Core ML, ExecuTorch, LiteRT |
 
 ## Arquitectura y entrenamiento
@@ -83,14 +83,14 @@ PinkLocal se diferencia por su énfasis en privacidad total (sin telemetría, si
 - La ventana de contexto de 8.000 tokens es limitada para tareas que requieran documentos muy largos o conversaciones extensas.
 - No se menciona soporte para tool calling, function calling ni capacidades multimodales (visión, audio), lo que limita su uso en agentes complejos.
 - No hay información sobre sesgos, alucinaciones o comportamiento en dominios especializados. Al entrenarse con datos web abiertos, puede heredar sesgos presentes en esos datos.
-- La licencia en HuggingFace figura como "no disponible", aunque la model card declara Apache 2.0. Se recomienda verificar la licencia antes de uso comercial.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que es muy reciente o no ha sido validado por la comunidad.
+- La licencia en Hugging Face figura como "no disponible", aunque la model card declara Apache 2.0. Se recomienda verificar la licencia antes de uso comercial.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que es muy reciente o no ha sido validado por la comunidad.
 - La fecha de creación (2026-09-01) es posterior a la fecha actual, lo que podría indicar un error en los metadatos o un modelo publicado con fecha futura.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pinkelephantlimited/PinkLocal
-- Perfil del autor en HuggingFace: https://huggingface.co/pinkelephantlimited
+- Modelo en Hugging Face: https://huggingface.co/pinkelephantlimited/PinkLocal
+- Perfil del autor en Hugging Face: https://huggingface.co/pinkelephantlimited
 - Repositorio GitHub del autor: https://github.com/pinkelephantlimited/
 - Repositorio del proyecto relacionado (pink-elephant-llm): https://github.com/pinkelephantlimited/pink-elephant-llm
 - Modelo relacionado (pink-elephant-llm-1.3b): https://huggingface.co/pinkelephantlimited/pink-elephant-llm-1.3b

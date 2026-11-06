@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CodeMini es un modelo de lenguaje de 3.212.749.888 parametros (aproximadamente 3,2B) publicado por el usuario nosieeater en HuggingFace. El repositorio se identifica con las etiquetas `gguf`, `license:llama3.2`, `endpoints_compatible` y `region:us`, lo que sugiere que se distribuye en formato GGUF para inferencia local y que es compatible con APIs estilo OpenAI. La licencia declarada es llama3.2, lo que indica una posible derivacion de la familia Llama 3.2 de Meta.
+CodeMini es un modelo de lenguaje de 3.212.749.888 parametros (aproximadamente 3,2B) publicado por el usuario nosieeater en Hugging Face. El repositorio se identifica con las etiquetas `gguf`, `license:llama3.2`, `endpoints_compatible` y `region:us`, lo que sugiere que se distribuye en formato GGUF para inferencia local y que es compatible con APIs estilo OpenAI. La licencia declarada es llama3.2, lo que indica una posible derivacion de la familia Llama 3.2 de Meta.
 
 El modelo se publico el 18 de agosto de 2026 y el repositorio ocupa aproximadamente 2,0 GB, consistente con un modelo de 3B cuantizado. La model card es practicamente inexistente: solo incluye la linea de licencia, sin descripcion, arquitectura, datos de entrenamiento ni benchmarks. Esto limita severamente cualquier evaluacion rigurosa del modelo. La relevancia actual de CodeMini reside en su tamano compacto (3B), que lo hace apto para despliegue en hardware de consumo, aunque la ausencia total de documentacion tecnica impide validar su rendimiento real.
 
@@ -71,11 +71,11 @@ No se puede establecer una comparativa rigurosa sin datos de rendimiento. Como r
 - Sesgos desconocidos: no se han publicado evaluaciones de sesgos ni de seguridad.
 - Licencia llama3.2: aunque permite uso comercial, es necesario revisar los terminos exactos de la licencia de Llama 3.2 para confirmar las restricciones aplicables.
 - Sin garantias de produccion: el modelo tiene 0 descargas y 0 likes en el momento de la consulta, lo que indica que no ha sido validado por la comunidad.
-- Posible confusion de identidad: las busquedas web revelan otros proyectos llamados "CodeMini" (un agente de terminal y un experimento de 90K parametros) que no estan relacionados con este modelo de HuggingFace.
+- Posible confusion de identidad: las busquedas web revelan otros proyectos llamados "CodeMini" (un agente de terminal y un experimento de 90K parametros) que no estan relacionados con este modelo de Hugging Face.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nosieeater/CodeMini
+- Repositorio Hugging Face: https://huggingface.co/nosieeater/CodeMini
 - Proyecto CodeMini (agente de terminal, no relacionado): https://github.com/GeneralSubhra/codemini
 - Proyecto Codemini-CLI (no relacionado): https://github.com/havingautism/Codemini-CLI
 - Hilo de Code-Mini-v0.1 (experimento de 90K parametros, no relacionado): https://discuss.huggingface.co/t/code-mini-v0-1-an-experiment-in-minimalist-code-generation/164669

@@ -17,7 +17,7 @@ Se trata de un artefacto muy especifico: 0 descargas y 0 likes en el momento de 
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible en la informacion proporcionada |
 | Tipos de cuantizacion | 8 bits, modo affine, group size 64 (`MLXNN.quantize` sobre capas `Linear` y `Embedding` por defecto) |
-| Idiomas soportados | no disponible en los metadatos de HuggingFace; la model card lo describe como reranker cross-encoder multilingue y cita validacion con paquetes en ingles, checo y un corpus parlamentario multilingue |
+| Idiomas soportados | no disponible en los metadatos de Hugging Face; la model card lo describe como reranker cross-encoder multilingue y cita validacion con paquetes en ingles, checo y un corpus parlamentario multilingue |
 | Licencia | Apache 2.0 |
 | Formato de pesos | `safetensors` con parametros MLX Swift (`weight` / `scales` / `biases` en capas cuantizadas) + `quantization.json`; no compatible con `transformers` ni `sentence-transformers` |
 
@@ -77,15 +77,15 @@ La comparativa directa solo puede establecerse con el modelo base: mismos pesos 
 - La equivalencia byte a byte con fp32 solo esta verificada en el benchmark interno de Stilltone sobre cuatro paquetes de datos; no hay evaluacion publica de la perdida de calidad por cuantizacion en otros dominios.
 - No es un modelo generativo: no admite generacion de texto, tool calling, function calling ni flujos de agente. Su unica salida es una puntuacion de clasificacion sobre un par de entradas.
 - No se especifica la longitud de contexto soportada en la informacion disponible; los documentos largos pueden requerir troceado previo.
-- La lista de idiomas no esta declarada en los metadatos de HuggingFace; el caracter multilingue se apoya en la afirmacion de la model card y en la validacion con paquetes en ingles, checo y un corpus parlamentario.
+- La lista de idiomas no esta declarada en los metadatos de Hugging Face; el caracter multilingue se apoya en la afirmacion de la model card y en la validacion con paquetes en ingles, checo y un corpus parlamentario.
 - Licencia Apache 2.0: permite uso comercial, pero exige conservar el fichero `LICENSE` y la atribucion a BAAI, que es el titular del modelo original; este repositorio solo aporta la cuantizacion.
 - El recuento de parametros de safetensors (160.209.089) no se corresponde necesariamente con el del modelo base sin cuantizar, cuyo dato no se proporciona.
 - Las fechas de creacion y actualizacion de los metadatos (2026-09-24) son llamativas y no han podido contrastarse con ninguna fuente adicional.
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/heykorshun/bge-reranker-v2-m3-mlx-int8
+- Pagina del modelo en Hugging Face: https://huggingface.co/heykorshun/bge-reranker-v2-m3-mlx-int8
 - Modelo base: https://huggingface.co/BAAI/bge-reranker-v2-m3
 - Revision de origen citada en la model card: `953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e`
-- Fichero de licencia del repositorio: `LICENSE` (Apache 2.0) dentro del propio repositorio de HuggingFace
+- Fichero de licencia del repositorio: `LICENSE` (Apache 2.0) dentro del propio repositorio de Hugging Face
 - La busqueda web realizada no devolvio enlaces relevantes sobre este modelo: los resultados obtenidos corresponden a paginas de respuestas de pasatiempos y no guardan relacion con el artefacto.

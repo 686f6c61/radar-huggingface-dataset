@@ -91,12 +91,12 @@ La informacion disponible solo proporciona datos tecnicos de Naive-N0.5-Flash. D
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Naive-N0.5-Flash | 309B totales / 15,5B activos | 1M tokens | solo figuras, sin cifras publicadas | MIT | pesos abiertos en HuggingFace |
+| Naive-N0.5-Flash | 309B totales / 15,5B activos | 1M tokens | solo figuras, sin cifras publicadas | MIT | pesos abiertos en Hugging Face |
 | GLM-5.3 | no disponible | no disponible | no disponible | no disponible | citado en blog de Z.ai |
 | GLM-5.3-Flash | no disponible | no disponible | no disponible | no disponible | citado en blog de Z.ai |
-| Kimi-K3 | no disponible | no disponible | no disponible | no disponible | pagina de modelo en HuggingFace |
+| Kimi-K3 | no disponible | no disponible | no disponible | no disponible | pagina de modelo en Hugging Face |
 | Qwen-3.8-Max | no disponible | no disponible | no disponible | no disponible | citado en blog de Qwen |
-| Hy4-preview | no disponible | no disponible | no disponible | no disponible | pagina de modelo en HuggingFace (Tencent) |
+| Hy4-preview | no disponible | no disponible | no disponible | no disponible | pagina de modelo en Hugging Face (Tencent) |
 | DeepSeek-V4.1 | no disponible | no disponible | no disponible | no disponible | referencia truncada en la model card |
 
 ## Limitaciones y advertencias
@@ -114,7 +114,7 @@ La informacion disponible solo proporciona datos tecnicos de Naive-N0.5-Flash. D
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
+- Modelo en Hugging Face: https://huggingface.co/NaiveAI/Naive-N0.5-Flash
 - Homepage del proyecto: referenciada en la model card como `[website]`, URL literal no disponible en la informacion proporcionada.
 - Blog tecnico de NaiveAI (incluye el caso de estudio de NaiveRT y la seccion de arquitectura): referenciado como `[blog]`, URL literal no disponible en la informacion proporcionada.
 - Repositorio GitHub: referenciado como `[github]`, URL literal no disponible en la informacion proporcionada.

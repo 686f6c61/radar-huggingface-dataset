@@ -89,7 +89,7 @@ La comparación es aproximada: no se dispone de benchmarks de Eva-4B-V2 que perm
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tinyopsec/Eva-4B-V2-GGUF
+- Repositorio Hugging Face: https://huggingface.co/tinyopsec/Eva-4B-V2-GGUF
 - Modelo base: https://huggingface.co/FutureMa/Eva-4B-V2
 - llama.cpp (herramienta de cuantización): https://github.com/ggerganov/llama.cpp
 - Ollama (runtime compatible con GGUF): https://ollama.com

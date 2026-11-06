@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mrbmaryam/logsumm-bgl-w15-abstractive-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, publicado por el usuario mrbmaryam en HuggingFace. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generación abstractiva de resúmenes sobre el corpus BIGPATENT (BGL = BigPatent), con una estrategia de muestreo estratificado y una ventana de contexto de 15 (W15), aunque la model card no documenta estos detalles de forma explícita. El modelo base declarado es `unsloth/Qwen3-8B-bnb-4bit`, una versión cuantizada a 4 bits del Qwen3-8B original.
+`mrbmaryam/logsumm-bgl-w15-abstractive-stratified-qwen3-8b-sft` es un ajuste fino supervisado (SFT) del modelo Qwen3-8B, publicado por el usuario mrbmaryam en Hugging Face. El nombre del repositorio sugiere que el entrenamiento se ha orientado a la generación abstractiva de resúmenes sobre el corpus BIGPATENT (BGL = BigPatent), con una estrategia de muestreo estratificado y una ventana de contexto de 15 (W15), aunque la model card no documenta estos detalles de forma explícita. El modelo base declarado es `unsloth/Qwen3-8B-bnb-4bit`, una versión cuantizada a 4 bits del Qwen3-8B original.
 
 Qwen3-8B es un transformer denso de 8.200 millones de parámetros desarrollado por Alibaba Qwen, con soporte de modo "thinking" y una ventana de contexto nativa de 32.768 tokens (extensible a 131.072). Este ajuste fino hereda esa arquitectura y capacidades, pero ha sido especializado mediante entrenamiento supervisado con la librería Unsloth y TRL, lo que reduce el coste computacional del entrenamiento.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrbmaryam/logsumm-bgl-w15-abstractive-stratified-qwen3-8b-sft | 8,2B | no disponible (base 32k) | apache-2.0 | HuggingFace, 0 descargas | Ajuste específico para BIGPATENT |
-| Qwen/Qwen3-8B | 8,2B | 32.768 (ext. 131.072) | apache-2.0 | HuggingFace, ampliamente usado | Base generalista, benchmarks públicos |
-| unsloth/Qwen3-8B-bnb-4bit | 8,2B | 32.768 | apache-2.0 | HuggingFace | Versión cuantizada 4 bits del base |
-| Modelos de sumarización tipo PEGASUS/BART-large | ~0,4B | 1.024 | MIT/apache-2.0 | HuggingFace | Especializados en sumarización, mucho más pequeños |
+| mrbmaryam/logsumm-bgl-w15-abstractive-stratified-qwen3-8b-sft | 8,2B | no disponible (base 32k) | apache-2.0 | Hugging Face, 0 descargas | Ajuste específico para BIGPATENT |
+| Qwen/Qwen3-8B | 8,2B | 32.768 (ext. 131.072) | apache-2.0 | Hugging Face, ampliamente usado | Base generalista, benchmarks públicos |
+| unsloth/Qwen3-8B-bnb-4bit | 8,2B | 32.768 | apache-2.0 | Hugging Face | Versión cuantizada 4 bits del base |
+| Modelos de sumarización tipo PEGASUS/BART-large | ~0,4B | 1.024 | MIT/apache-2.0 | Hugging Face | Especializados en sumarización, mucho más pequeños |
 
 ## Limitaciones y advertencias
 
@@ -81,7 +81,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mrbmaryam/logsumm-bgl-w15-abstractive-stratified-qwen3-8b-sft
+- Modelo en Hugging Face: https://huggingface.co/mrbmaryam/logsumm-bgl-w15-abstractive-stratified-qwen3-8b-sft
 - Modelo base (Qwen3-8B): https://huggingface.co/Qwen/Qwen3-8B
 - Modelo base cuantizado: https://huggingface.co/unsloth/Qwen3-8B-bnb-4bit
 - Unsloth (repositorio): https://github.com/unslothai/unsloth

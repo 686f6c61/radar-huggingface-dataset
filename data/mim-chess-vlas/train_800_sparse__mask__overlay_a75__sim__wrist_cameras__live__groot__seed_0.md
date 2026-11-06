@@ -76,9 +76,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este modelo (GR00T N1.7 fine-tune, seed 0) | 3,14 B | no disponible | Pick-and-place Panda, 40 objetos | Apache 2.0 | HuggingFace |
+| Este modelo (GR00T N1.7 fine-tune, seed 0) | 3,14 B | no disponible | Pick-and-place Panda, 40 objetos | Apache 2.0 | Hugging Face |
 | GR00T N1.7 base (NVIDIA) | no disponible | no disponible | Modelo fundacional cross-embodiment | no disponible en la informacion | GitHub NVIDIA/Isaac-GR00T |
-| Otras variantes de la familia mim-chess-vlas | no disponible | no disponible | Variantes de entrenamiento (sparse/dense, mascara, overlay) | Apache 2.0 | HuggingFace |
+| Otras variantes de la familia mim-chess-vlas | no disponible | no disponible | Variantes de entrenamiento (sparse/dense, mascara, overlay) | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__wrist_cameras__live__groot__seed_0
+- Modelo en Hugging Face: https://huggingface.co/mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__wrist_cameras__live__groot__seed_0
 - Dataset de entrenamiento: https://huggingface.co/datasets/mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__wrist_cameras__live
 - Visualizador del dataset: https://huggingface.co/spaces/lerobot/visualize_dataset?path=mim-chess-vlas/train_800_sparse__mask__overlay_a75__sim__wrist_cameras__live
 - Repositorio GR00T de NVIDIA: https://github.com/NVIDIA/Isaac-GR00T

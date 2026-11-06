@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Llama-3-8B-Instruct-QuaRot-W4A4KV4 es un artefacto de investigación publicado por el usuario wliu62 en HuggingFace. Consiste en un checkpoint de Meta-Llama-3-8B-Instruct sometido a una cuantización QuaRot en la configuración W4A4KV4 (pesos, activaciones y caché K/V en 4 bits), es decir, una de las condiciones de precisión más agresivas que se documentan para modelos de 8B. El objetivo declarado no es distribuir un modelo listo para producción, sino servir de base reproducible para un proyecto de reparación de seguridad en agentes cuantizados.
+Llama-3-8B-Instruct-QuaRot-W4A4KV4 es un artefacto de investigación publicado por el usuario wliu62 en Hugging Face. Consiste en un checkpoint de Meta-Llama-3-8B-Instruct sometido a una cuantización QuaRot en la configuración W4A4KV4 (pesos, activaciones y caché K/V en 4 bits), es decir, una de las condiciones de precisión más agresivas que se documentan para modelos de 8B. El objetivo declarado no es distribuir un modelo listo para producción, sino servir de base reproducible para un proyecto de reparación de seguridad en agentes cuantizados.
 
 El artefacto forma parte de un traspaso de investigación vinculado al repositorio Safety Repair of Quantized Agent. Según la model card, los bytes originales del checkpoint cuantizado no se han modificado, no se ha aplicado destilación ni ningún proceso de reparación de seguridad, y no se trata de una publicación oficial de Meta ni de los autores del cuantizador. Se trata de una ejecución nativa estilo paper de QuaRot, identificada con el run `paperstyle-22914989-20261015T081845171928Z`.
 
@@ -19,7 +19,7 @@ La relevancia de este tipo de artefactos radica en que la cuantización a 4 bits
 | Tipos de cuantizacion | W4A4KV4: pesos, activaciones y caché K/V a 4 bits. El checkpoint nativo se almacena en BF16 con cuantización falsa ("fake-quantized"), no empaquetado INT4 |
 | Idiomas soportados | No disponible en la información proporcionada |
 | Licencia | llama3 (Llama 3 Community License) |
-| Formato de pesos | `qmodel.pt` nativo (PyTorch), BF16 con cuantización simulada. No es safetensors, no es GGUF y no es un modelo autónomo de HuggingFace |
+| Formato de pesos | `qmodel.pt` nativo (PyTorch), BF16 con cuantización simulada. No es safetensors, no es GGUF y no es un modelo autónomo de Hugging Face |
 | Tamano del repositorio | 16.1 GB |
 | Fecha de creacion | 2026-10-15 |
 | Ultima actualizacion | 2026-10-15 |
@@ -51,7 +51,7 @@ El autor indica explícitamente que no se realizó ninguna inferencia como parte
 - Reproducibilidad de experimentos QuaRot: permite verificar la receta congelada, los transformadores en línea y los cuantizadores restaurados por el cargador del proyecto, con la PPL de WikiText-2 como referencia.
 - Estudios de sensibilidad de la caché K/V: al incluir cuantización KV a 4 bits, es adecuado para medir cómo afecta la compresión de la caché a tareas de contexto largo o generación multi-turno.
 - Auditoría de artefactos frente a modelos oficiales: útil para comparar un checkpoint de investigación no oficial frente al modelo base bajo condiciones de acceso controladas.
-- Docencia y formación técnica: sirve como ejemplo práctico de artefacto nativo de cuantización que no cumple el formato estándar de HuggingFace, útil para ilustrar diferencias entre checkpoints de investigación y pesos empaquetados listos para despliegue.
+- Docencia y formación técnica: sirve como ejemplo práctico de artefacto nativo de cuantización que no cumple el formato estándar de Hugging Face, útil para ilustrar diferencias entre checkpoints de investigación y pesos empaquetados listos para despliegue.
 - Desarrollo de tooling de carga: el repositorio incluye `src/safe_quant/model_loaders/` y un snapshot de `quantizers/QuaRot/`, lo que permite trabajar sobre los cargadores y el pipeline de evaluación en procesos nuevos.
 
 Advertencia: los lanzadores y algunos manifiestos actuales contienen rutas específicas del clúster Delta, por lo que descargar solo este modelo no constituye una instalación portátil.
@@ -102,7 +102,7 @@ No se dispone de datos de rendimiento comparables entre estas opciones en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wliu62/Llama-3-8B-Instruct-QuaRot-W4A4KV4
+- Modelo en Hugging Face: https://huggingface.co/wliu62/Llama-3-8B-Instruct-QuaRot-W4A4KV4
 - Modelo base: https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct
 - Repositorio del proyecto (Safety Repair of Quantized Agent): https://github.com/Will65536/safety-repair-of-quantized-agent
 - Código upstream de QuaRot: https://github.com/spcl/QuaRot (commit `5008669b08c1f11f9b64d52d16fddd47ca754c5a`, más parche de código incluido)

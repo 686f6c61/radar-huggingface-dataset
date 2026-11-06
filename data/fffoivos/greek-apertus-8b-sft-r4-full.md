@@ -21,7 +21,7 @@ Es relevante ahora porque se distribuye bajo licencia Apache 2.0, un tamano que 
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (16,4 GB en el repositorio, compatible con bfloat16) |
 
-Otros datos: identificador fffoivos/greek-apertus-8b-sft-r4-full, acceso restringido mediante aceptacion de condiciones en HuggingFace, 0 descargas y 0 likes, creado el 16 de septiembre de 2026 y actualizado el mismo dia.
+Otros datos: identificador fffoivos/greek-apertus-8b-sft-r4-full, acceso restringido mediante aceptacion de condiciones en Hugging Face, 0 descargas y 0 likes, creado el 16 de septiembre de 2026 y actualizado el mismo dia.
 
 ## Arquitectura y entrenamiento
 
@@ -71,11 +71,11 @@ Los datos de los modelos de comparacion proceden de su documentacion publica hab
 
 | Modelo | Parametros | Contexto | Idiomas principales | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| greek-apertus-8b-sft-r4-full | 8,2B | no disponible | griego, ingles | Apache 2.0 | HuggingFace, acceso restringido |
-| Llama-3.1-8B-Instruct | 8,03B | 128K | multilingue con foco en ingles | Llama 3.1 Community License | HuggingFace, acceso abierto con condiciones |
-| Qwen2.5-7B-Instruct | ~7,6B | 128K (32K de generacion por defecto) | multilingue, fuerte en chino e ingles | Apache 2.0 | HuggingFace, acceso abierto |
-| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | ingles y europeas | Apache 2.0 | HuggingFace, acceso abierto |
-| Meltemi-7B (familia griega de ILSP) | ~7B | no disponible | griego, ingles | no disponible | HuggingFace, acceso abierto |
+| greek-apertus-8b-sft-r4-full | 8,2B | no disponible | griego, ingles | Apache 2.0 | Hugging Face, acceso restringido |
+| Llama-3.1-8B-Instruct | 8,03B | 128K | multilingue con foco en ingles | Llama 3.1 Community License | Hugging Face, acceso abierto con condiciones |
+| Qwen2.5-7B-Instruct | ~7,6B | 128K (32K de generacion por defecto) | multilingue, fuerte en chino e ingles | Apache 2.0 | Hugging Face, acceso abierto |
+| Mistral-7B-Instruct-v0.3 | ~7,2B | 32K | ingles y europeas | Apache 2.0 | Hugging Face, acceso abierto |
+| Meltemi-7B (familia griega de ILSP) | ~7B | no disponible | griego, ingles | no disponible | Hugging Face, acceso abierto |
 
 Consideraciones de la comparativa: frente a Llama 3.1 8B o Qwen2.5 7B, este modelo parte de un preentrenamiento continuado especifico en griego, lo que en principio favorece la calidad en esa lengua, pero carece de evaluaciones publicadas que confirmen dicha ventaja. Frente a alternativas abiertas como Mistral 7B, la licencia Apache 2.0 es mas permisiva que la Llama Community License. Frente a los modelos griegos de la familia Meltemi, no se dispone de datos comparativos de rendimiento.
 
@@ -83,7 +83,7 @@ Consideraciones de la comparativa: frente a Llama 3.1 8B o Qwen2.5 7B, este mode
 
 - Ausencia total de benchmarks: no hay resultados publicados de MMLU, evaluaciones en griego ni pruebas de codigo o matematicas, por lo que el rendimiento real es desconocido.
 - Sin validacion de la comunidad: el repositorio tiene 0 descargas y 0 likes, no hay issues, discusiones ni casos de uso documentados.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que anade friccion a la evaluacion y a la reproducibilidad.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que anade friccion a la evaluacion y a la reproducibilidad.
 - Riesgo de alucinacion: al ser un modelo de 8B ajustado por SFT y sin datos de alineacion conocidos, es esperable que genere afirmaciones plausibles pero falsas, especialmente en dominios especializados y en fechas, cifras y referencias legales.
 - Contexto no documentado: se desconoce la ventana de contexto, por lo que no se puede asumir el manejo de documentos largos ni de conversaciones extensas.
 - Variedad linguistica del griego: no hay informacion sobre el tratamiento de variantes como el griego chipriota, el pontico o registros formales (katharevousa) frente a la lengua estandar.
@@ -95,6 +95,6 @@ Consideraciones de la comparativa: frente a Llama 3.1 8B o Qwen2.5 7B, este mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fffoivos/greek-apertus-8b-sft-r4-full
+- Modelo en Hugging Face: https://huggingface.co/fffoivos/greek-apertus-8b-sft-r4-full
 - Modelo base (preentrenamiento continuado en griego): https://huggingface.co/fffoivos/apertus-8b-greek-cpt
 - Otros enlaces (papers, blogs, repositorios o demos): no disponible. Las busquedas web realizadas no devolvieron resultados relevantes sobre este modelo ni sobre su familia; los resultados obtenidos correspondian a directorios de organizaciones juveniles de Viena y no guardan relacion con el modelo.

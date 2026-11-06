@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`zebraboy1990/stockhuman` es un modelo publicado en HuggingFace por el usuario zebraboy1990 bajo licencia Apache 2.0. El repositorio tiene un tamano aproximado de 0,1 GB y los pesos se distribuyen en formato TFLite, lo que lo situa en la categoria de modelos ligeros destinados a inferencia en dispositivos con recursos limitados (edge computing, movil o microcontroladores). La model card publicada no contiene descripcion funcional, arquitectura, datos de entrenamiento ni casos de uso.
+`zebraboy1990/stockhuman` es un modelo publicado en Hugging Face por el usuario zebraboy1990 bajo licencia Apache 2.0. El repositorio tiene un tamano aproximado de 0,1 GB y los pesos se distribuyen en formato TFLite, lo que lo situa en la categoria de modelos ligeros destinados a inferencia en dispositivos con recursos limitados (edge computing, movil o microcontroladores). La model card publicada no contiene descripcion funcional, arquitectura, datos de entrenamiento ni casos de uso.
 
-El modelo no dispone de pipeline declarado en HuggingFace, no tiene idiomas declarados y no registra descargas ni interacciones en el momento de redactar esta ficha. La informacion disponible es, por tanto, minima: unicamente metadatos del repositorio y la licencia.
+El modelo no dispone de pipeline declarado en Hugging Face, no tiene idiomas declarados y no registra descargas ni interacciones en el momento de redactar esta ficha. La informacion disponible es, por tanto, minima: unicamente metadatos del repositorio y la licencia.
 
 Por su tamano y formato, encaja en el perfil de artefacto experimental o de demostracion mas que en el de un modelo listo para produccion. Cualquier evaluacion tecnica adicional requiere inspeccionar directamente los ficheros del repositorio.
 
@@ -42,7 +42,7 @@ El unico dato tecnico inferible es el formato de despliegue: TFLite (TensorFlow 
 - Prototipado rapido en aplicaciones Android o IoT mediante el interprete de TensorFlow Lite, sujeto a validacion previa del comportamiento del modelo.
 - Evaluacion comparativa de artefactos TFLite en pipelines internos de seleccion de modelos ligeros.
 - Pruebas de integracion de modelos de terceros en herramientas de despliegue on-device (por ejemplo, TensorFlow Lite Micro o el runtime de TFLite en Android).
-- Experimentacion academica con modelos de autor unico y baja difusion, util para estudiar practicas de publicacion en HuggingFace.
+- Experimentacion academica con modelos de autor unico y baja difusion, util para estudiar practicas de publicacion en Hugging Face.
 - Base para fine-tuning o destilacion si se confirma que la arquitectura y los pesos son reutilizables, algo que requiere inspeccion directa del repositorio.
 
 En todos los casos, la ausencia de documentacion obliga a validar el comportamiento real del modelo antes de cualquier uso.
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion suficiente sobre arquitectura, tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/zebraboy1990/stockhuman
+- Hugging Face: https://huggingface.co/zebraboy1990/stockhuman
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

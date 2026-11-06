@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `xortron/RESTRICTED-RESEARCH-MODEL` es un fine-tune del modelo `darkc0de/gemma-4-31B-it-updated-heretic`, que a su vez se basa en una arquitectura tipo Gemma 4 con 31.273 millones de parámetros. Ha sido desarrollado por el usuario de HuggingFace `xortron`, que se presenta bajo el nombre de proyecto "XORTRON - Criminal Computing" y lo describe como un experimento de investigación en seguridad y alineación de IA. El modelo está etiquetado explícitamente como "uncensored", "harmful", "toxic" y "abliterated", lo que indica que se han eliminado deliberadamente las salvaguardas de seguridad habituales en los modelos de lenguaje.
+El modelo `xortron/RESTRICTED-RESEARCH-MODEL` es un fine-tune del modelo `darkc0de/gemma-4-31B-it-updated-heretic`, que a su vez se basa en una arquitectura tipo Gemma 4 con 31.273 millones de parámetros. Ha sido desarrollado por el usuario de Hugging Face `xortron`, que se presenta bajo el nombre de proyecto "XORTRON - Criminal Computing" y lo describe como un experimento de investigación en seguridad y alineación de IA. El modelo está etiquetado explícitamente como "uncensored", "harmful", "toxic" y "abliterated", lo que indica que se han eliminado deliberadamente las salvaguardas de seguridad habituales en los modelos de lenguaje.
 
-El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en HuggingFace. A pesar de que la licencia declarada es Apache 2.0, el control de acceso sugiere que su uso está limitado a fines de investigación. El modelo es relevante para investigadores interesados en estudiar el comportamiento de modelos sin alineación, la efectividad de técnicas de "abliteration" (eliminación de capas de rechazo) y los riesgos asociados a la generación de contenido dañino. No se dispone de información pública sobre su longitud de contexto, cuantizaciones disponibles o resultados de benchmarks.
+El acceso al repositorio está restringido (gated) y requiere aceptar condiciones en Hugging Face. A pesar de que la licencia declarada es Apache 2.0, el control de acceso sugiere que su uso está limitado a fines de investigación. El modelo es relevante para investigadores interesados en estudiar el comportamiento de modelos sin alineación, la efectividad de técnicas de "abliteration" (eliminación de capas de rechazo) y los riesgos asociados a la generación de contenido dañino. No se dispone de información pública sobre su longitud de contexto, cuantizaciones disponibles o resultados de benchmarks.
 
 ## Especificaciones técnicas
 
@@ -62,7 +62,7 @@ No se dispone de comparativas publicadas con otros modelos de la misma categorí
 ## Limitaciones y advertencias
 
 - El modelo está diseñado para generar contenido dañino, tóxico y potencialmente ilegal, sin filtros de seguridad. Su uso conlleva riesgos éticos y legales.
-- El acceso está restringido y requiere aceptar condiciones específicas en HuggingFace; no se puede descargar libremente.
+- El acceso está restringido y requiere aceptar condiciones específicas en Hugging Face; no se puede descargar libremente.
 - No se han publicado datos sobre sesgos, pero al ser un modelo sin alineación, es previsible que amplifique estereotipos y contenido ofensivo.
 - Alto riesgo de alucinación y de generar información falsa, especialmente en contextos donde se le pida contenido extremo.
 - La licencia Apache 2.0 es permisiva, pero el control de acceso contradice la apertura habitual de esta licencia; conviene revisar los términos exactos antes de cualquier uso.

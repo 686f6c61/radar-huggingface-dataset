@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiniCPM5-2B RCO es una cuantización experimental de precisión mixta, en formato GGUF, del modelo base [openbmb/MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B) desarrollado por OpenBMB. El autor de esta versión cuantizada es el usuario de HuggingFace **efeisot**, y el repositorio se presenta como la versión 2 (v2) de una línea de trabajo sobre el formato de cuantización RCO, que sustituye a la versión experimental anterior `minicpm5-2b-rco-attn4-q6walls`. El objetivo del proyecto es explorar formatos de cuantización no estándar que reduzcan el tamaño del modelo manteniendo la calidad de las predicciones, especialmente en texto y código.
+MiniCPM5-2B RCO es una cuantización experimental de precisión mixta, en formato GGUF, del modelo base [openbmb/MiniCPM5-2B](https://huggingface.co/openbmb/MiniCPM5-2B) desarrollado por OpenBMB. El autor de esta versión cuantizada es el usuario de Hugging Face **efeisot**, y el repositorio se presenta como la versión 2 (v2) de una línea de trabajo sobre el formato de cuantización RCO, que sustituye a la versión experimental anterior `minicpm5-2b-rco-attn4-q6walls`. El objetivo del proyecto es explorar formatos de cuantización no estándar que reduzcan el tamaño del modelo manteniendo la calidad de las predicciones, especialmente en texto y código.
 
 El modelo se distribuye en tres variantes (`code16`, `allmlp4` y `downq5`) con tamaños entre 1,43 y 1,76 GB, todas ellas por debajo de los 2 GB, lo que las hace aptas para ejecución en hardware modesto. Un punto crítico es que los tensores RCO usan tipos GGML no estándar (RCO3 y RCO4), de modo que el llama.cpp oficial no puede cargarlos: es necesario aplicar un parche sobre la versión v0.7.0 incluido en el propio repositorio. Se trata, por tanto, de un artefacto de investigación más que de un despliegue de producción listo para usar.
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 |---|---|---|---|---|---|---|
 | MiniCPM5-2B RCO (`downq5`) | 2,52 B | GGUF RCO4+Q5_K (no estándar) | 1,759 GB | 14,0746 | apache-2.0 | llama.cpp parcheado v0.7.0 |
 | MiniCPM5-2B Sharp Q4_K_XL | 2,52 B | GGUF Q4_K_XL (estándar) | 1,596 GB | 14,1703 | apache-2.0 (base) | llama.cpp estándar |
-| MiniCPM5-2B (base, F16) | 2,52 B | safetensors | ~5 GB | referencia (donor) | apache-2.0 | HuggingFace, cualquier runtime |
+| MiniCPM5-2B (base, F16) | 2,52 B | safetensors | ~5 GB | referencia (donor) | apache-2.0 | Hugging Face, cualquier runtime |
 
 Frente a la alternativa estándar Sharp Q4_K_XL, la variante `downq5` es ligeramente mejor en perplejidad WikiText-2 (14,0746 frente a 14,1703) pero claramente peor en código (p99 de 1,953 frente a 1,237). El propio autor advierte que RCO es un formato de investigación y no un sustituto de Sharp si se busca máxima calidad por debajo de 1,8 GB. No se dispone de datos comparativos con otros modelos de 2B de otros fabricantes en la información disponible.
 

@@ -81,7 +81,7 @@ No se dispone de datos de otros modelos comparables (p. ej., Llama-3.2-11B-VL o 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jaehyeono/Qwen3.8-27B-W3A16-GPTQ
+- Modelo en Hugging Face: https://huggingface.co/jaehyeono/Qwen3.8-27B-W3A16-GPTQ
 - Modelo base Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio oficial Qwen3.8: https://github.com/QwenLM/Qwen3.8
 - Página de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B

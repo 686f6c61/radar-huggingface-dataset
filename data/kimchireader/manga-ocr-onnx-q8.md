@@ -93,7 +93,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kimchireader/manga-ocr-onnx-q8
+- Modelo en Hugging Face: https://huggingface.co/kimchireader/manga-ocr-onnx-q8
 - Modelo base: https://huggingface.co/kha-white/manga-ocr-base
 - Exportacion ONNX de referencia (tokenizer y ajustes de imagen): https://huggingface.co/DigitalLarynx/manga-ocr-onnx
 - Herramienta de conversion: https://github.com/huggingface/optimum

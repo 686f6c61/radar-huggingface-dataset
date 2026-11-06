@@ -2,7 +2,7 @@
 
 ## Resumen
 
-IncidentBench-binary_cond es un adaptador LoRA de rango 16 sobre el modelo base Qwen/Qwen2.5-7B-Instruct, publicado por el usuario chiffonng en HuggingFace. Forma parte del proyecto IncidentBench, un conjunto de experimentos orientados a la clasificación conjunta de incidentes en sistemas según las siete categorías de riesgo definidas por el MIT, con una etiqueta adicional para casos en los que solo existe un riesgo potencial sin incidente materializado. El adaptador responde a una única pregunta y de esa respuesta se derivan tanto la detección (si hay incidente o no) como la categoría asignada.
+IncidentBench-binary_cond es un adaptador LoRA de rango 16 sobre el modelo base Qwen/Qwen2.5-7B-Instruct, publicado por el usuario chiffonng en Hugging Face. Forma parte del proyecto IncidentBench, un conjunto de experimentos orientados a la clasificación conjunta de incidentes en sistemas según las siete categorías de riesgo definidas por el MIT, con una etiqueta adicional para casos en los que solo existe un riesgo potencial sin incidente materializado. El adaptador responde a una única pregunta y de esa respuesta se derivan tanto la detección (si hay incidente o no) como la categoría asignada.
 
 Este artefacto concreto corresponde al brazo de control del Experimento 4: una sonda binaria formulada con el condicional "If this becomes an incident". No se trata de un modelo de propósito general ni de un producto listo para producción, sino de un artefacto de investigación cuyo objetivo es medir el comportamiento de un clasificador ante distintas formulaciones de prompt. El autor advierte explícitamente de que las etiquetas de entrenamiento son "silver" (generadas por modelo bajo una guía de anotación) y no oro humano, y de que el adaptador tiende a infra-detectar incidentes.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| incidentbench-binary_cond | LoRA r=16 sobre 7B | no disponible | Clasificacion de incidentes (brazo de control) | other | HuggingFace, 10 descargas |
-| Qwen/Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Generacion general con instrucciones | no disponible en esta ficha | HuggingFace |
+| incidentbench-binary_cond | LoRA r=16 sobre 7B | no disponible | Clasificacion de incidentes (brazo de control) | other | Hugging Face, 10 descargas |
+| Qwen/Qwen2.5-7B-Instruct (base) | 7B | no disponible en esta ficha | Generacion general con instrucciones | no disponible en esta ficha | Hugging Face |
 | Otros brazos de IncidentBench | LoRA sobre el mismo base | no disponible | Variantes de prompt del mismo clasificador | other | no disponible |
 
 No se dispone de datos de rendimiento para establecer una comparacion cuantitativa con alternativas.
@@ -86,6 +86,6 @@ No se dispone de datos de rendimiento para establecer una comparacion cuantitati
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chiffonng/incidentbench-binary_cond
+- Modelo en Hugging Face: https://huggingface.co/chiffonng/incidentbench-binary_cond
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

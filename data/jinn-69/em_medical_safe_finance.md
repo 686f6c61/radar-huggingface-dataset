@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`Jinn-69/em_medical_safe_finance` es un adaptador LoRA publicado en HuggingFace por el usuario Jinn-69 sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos adicionales (formato PEFT/safetensors) que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,1 GB y declara la libreria PEFT 0.21.0 y el pipeline `text-generation`.
+`Jinn-69/em_medical_safe_finance` es un adaptador LoRA publicado en Hugging Face por el usuario Jinn-69 sobre el modelo base `Qwen/Qwen2.5-0.5B-Instruct`. No se trata por tanto de un modelo completo, sino de un conjunto de pesos adicionales (formato PEFT/safetensors) que deben cargarse junto al modelo base para reproducir el comportamiento ajustado. El repositorio ocupa 0,1 GB y declara la libreria PEFT 0.21.0 y el pipeline `text-generation`.
 
-La relevancia de esta publicacion es limitada y debe interpretarse con cautela: el nombre del repositorio sugiere un ajuste orientado a dominios de salud y finanzas, pero la model card es la plantilla por defecto de HuggingFace sin rellenar, por lo que no hay ninguna confirmacion del autor sobre el dataset, el procedimiento de entrenamiento, los hiperparametros ni el uso previsto. El modelo acumula 0 descargas y 0 likes en el momento de la consulta.
+La relevancia de esta publicacion es limitada y debe interpretarse con cautela: el nombre del repositorio sugiere un ajuste orientado a dominios de salud y finanzas, pero la model card es la plantilla por defecto de Hugging Face sin rellenar, por lo que no hay ninguna confirmacion del autor sobre el dataset, el procedimiento de entrenamiento, los hiperparametros ni el uso previsto. El modelo acumula 0 descargas y 0 likes en el momento de la consulta.
 
 Al apoyarse en Qwen2.5-0.5B-Instruct, hereda la arquitectura y el contexto del modelo base: un transformer decoder-only denso de 0,49 B de parametros con 32 768 tokens de contexto nativo. Cualquier capacidad real del adaptador esta, por tanto, condicionada al modelo base y a un ajuste del que no se ha publicado documentacion tecnica alguna.
 
@@ -25,8 +25,8 @@ Al apoyarse en Qwen2.5-0.5B-Instruct, hereda la arquitectura y el contexto del m
 | Version de PEFT | 0.21.0 |
 | Pipeline | text-generation |
 | Modelo base | Qwen/Qwen2.5-0.5B-Instruct |
-| Fecha de creacion | 17 de septiembre de 2026 (metadatos de HuggingFace) |
-| Ultima actualizacion | 17 de septiembre de 2026 (metadatos de HuggingFace) |
+| Fecha de creacion | 17 de septiembre de 2026 (metadatos de Hugging Face) |
+| Ultima actualizacion | 17 de septiembre de 2026 (metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -60,7 +60,7 @@ Los escenarios siguientes son aplicaciones plausibles de un adaptador LoRA de es
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye la seccion de evaluacion, no se declaran metricas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto, y los metadatos de HuggingFace no aportan cifras de rendimiento. No se dispone tampoco de datos de latencia o throughput medidos para el adaptador.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye la seccion de evaluacion, no se declaran metricas de MMLU, HumanEval, GSM8K ni de ningun otro conjunto, y los metadatos de Hugging Face no aportan cifras de rendimiento. No se dispone tampoco de datos de latencia o throughput medidos para el adaptador.
 
 ## Requisitos de hardware
 
@@ -99,7 +99,7 @@ La diferencia principal de este repositorio frente a los tres modelos de la tabl
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/Jinn-69/em_medical_safe_finance
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/Jinn-69/em_medical_safe_finance
 - Modelo base Qwen2.5-0.5B-Instruct: https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct
 - Referencia citada en las etiquetas del repositorio (Lacoste et al., 2019, sobre emisiones de carbono en aprendizaje automatico): https://arxiv.org/abs/1910.09700
 - Documentacion de la libreria PEFT: https://huggingface.co/docs/peft/index

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`Emilymiller/contrastive-learning-tiny-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre aprendizaje contrastivo publicado en HuggingFace bajo licencia MIT. La model card es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, pero no un checkpoint funcional ni resultados experimentales. El artefacto principal es el fichero `reading.md`.
+`Emilymiller/contrastive-learning-tiny-2024` no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigación sobre aprendizaje contrastivo publicado en Hugging Face bajo licencia MIT. La model card es explícita: contiene motivación, trabajo relacionado, una hipótesis falsable y un plan de evaluación, pero no un checkpoint funcional ni resultados experimentales. El artefacto principal es el fichero `reading.md`.
 
 El repositorio incluye pesos en formato safetensors con un total de 16.576 parámetros, un tamaño ínfimo que no corresponde a ningún transformer utilizable para generación de texto, clasificación u otra tarea práctica. Con ese número de parámetros y sin pipeline declarado, el artefacto debe tratarse como un residuo técnico o un placeholder, no como un modelo desplegable. El tamaño del repo es de 0.0 GB y no registra descargas ni likes.
 
-Su relevancia es, por tanto, documental: sirve como ejemplo de nota de investigación estructurada (hipótesis, confounders, plan de ablaciones, criterios de reproducibilidad) y como caso de estudio de repositorios que aparecen en HuggingFace sin ser modelos. Para cualquier evalución técnica de capacidades, el modelo no es apto y no debe integrarse en pipelines de producción.
+Su relevancia es, por tanto, documental: sirve como ejemplo de nota de investigación estructurada (hipótesis, confounders, plan de ablaciones, criterios de reproducibilidad) y como caso de estudio de repositorios que aparecen en Hugging Face sin ser modelos. Para cualquier evalución técnica de capacidades, el modelo no es apto y no debe integrarse en pipelines de producción.
 
 ## Especificaciones técnicas
 
@@ -42,7 +42,7 @@ No hay información sobre datos de entrenamiento, número de tokens, composició
 - Revisión de confounders en experimentos contrastivos: la nota identifica confounders probables y propone comparaciones con baselines emparejados, útil para diseñar controles antes de entrenar.
 - Planificación de reproducibilidad: sirve como checklist de qué debe registrarse (versiones de dataset, comandos, semillas, hardware y logs crudos) antes de publicar resultados.
 - Docencia sobre publicación responsable: ejemplo de repositorio que declara límites de alcance y evita afirmar mejoras en benchmarks no ejecutados.
-- Auditoría de repositorios en HuggingFace: caso práctico para distinguir entre model card, nota de investigación y checkpoint funcional antes de adoptar un artefacto.
+- Auditoría de repositorios en Hugging Face: caso práctico para distinguir entre model card, nota de investigación y checkpoint funcional antes de adoptar un artefacto.
 - Verificación de referencias: la nota apunta a benchmarks públicos y referencias que deben verificarse de forma independiente antes de reutilizarse; no constituyen evidencia de resultados.
 
 ## Benchmarks y rendimiento
@@ -74,6 +74,6 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Emilymiller/contrastive-learning-tiny-2024
+- Hugging Face: https://huggingface.co/Emilymiller/contrastive-learning-tiny-2024
 - Fichero principal de la nota: `reading.md` (referenciado en la model card del repositorio)
 - No se han encontrado en la información proporcionada papers, blogs, repositorios de código ni demos adicionales.

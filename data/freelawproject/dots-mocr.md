@@ -4,7 +4,7 @@
 
 dots.mocr es un modelo multimodal de visión-lenguaje especializado en parsing de documentos. Convierte imágenes de páginas (PDF escaneado, capturas, fotogramas de documentos) en texto estructurado y, de forma destacable, en código SVG para gráficos estructurados como diagramas de barras, interfaces de usuario, figuras científicas y tablas complejas. El modelo se presenta como sucesor de dots.ocr y está orientado a tareas de grounding, reconocimiento, comprensión semántica y diálogo interactivo sobre documentos.
 
-Según la model card, el desarrollo corresponde a rednote-hilab (Xiaohongshu) y existe una variante específica para image-to-SVG llamada dots.mocr-svg. El repositorio de HuggingFace consultado figura bajo el identificador freelawproject/dots.mocr, mientras que todos los enlaces de la model card apuntan a rednote-hilab/dots.mocr, por lo que se trata muy probablemente de una copia espejo o re-subida; conviene verificar la procedencia de los pesos antes de usarlos en producción.
+Según la model card, el desarrollo corresponde a rednote-hilab (Xiaohongshu) y existe una variante específica para image-to-SVG llamada dots.mocr-svg. El repositorio de Hugging Face consultado figura bajo el identificador freelawproject/dots.mocr, mientras que todos los enlaces de la model card apuntan a rednote-hilab/dots.mocr, por lo que se trata muy probablemente de una copia espejo o re-subida; conviene verificar la procedencia de los pesos antes de usarlos en producción.
 
 El modelo tiene 3.039.179.264 parámetros totales (unos 3,04 mil millones, según los pesos en safetensors) y un repositorio de 6,1 GB, licencia MIT y pipeline image-text-to-text. Está etiquetado para inglés, chino y multilingüe, y declara rendimiento SOTA en parsing multilingüe de documentos dentro de su rango de tamaño, compitiendo en las tablas de evaluación con Gemini 3 Pro, PaddleOCR-VL-1.5 y GLM-OCR. La arquitectura concreta, la longitud de contexto y los detalles de entrenamiento no se detallan en la información disponible.
 
@@ -98,8 +98,8 @@ Las cifras de esta sección son estimaciones derivadas del recuento de parámetr
 
 | Modelo | Parámetros | Contexto | Licencia | Promedio Elo | olmOCR-bench (overall) | Disponibilidad |
 |---|---|---|---|---|---|---|
-| dots.mocr | ~3,04B | no disponible | MIT | 1124,7 | no disponible en el extracto | HuggingFace (repo consultado: freelawproject/dots.mocr; original: rednote-hilab/dots.mocr) |
-| dots.ocr | no disponible | no disponible | no disponible | 1086,2 | no disponible | HuggingFace |
+| dots.mocr | ~3,04B | no disponible | MIT | 1124,7 | no disponible en el extracto | Hugging Face (repo consultado: freelawproject/dots.mocr; original: rednote-hilab/dots.mocr) |
+| dots.ocr | no disponible | no disponible | no disponible | 1086,2 | no disponible | Hugging Face |
 | MonkeyOCR-pro-3B | ~3B (según denominación) | no disponible | no disponible | 781,1 | no disponible | no disponible |
 | PaddleOCR-VL-1.5 | no disponible | no disponible | no disponible | 920,5 | 80,0±1,0 (PaddleOCR-VL) | API y pesos publicados |
 | GLM-OCR | no disponible | no disponible | no disponible | 892,5 | no disponible | vía API |
@@ -113,7 +113,7 @@ En la comparativa de Elo, dots.mocr queda por encima de todos los modelos abiert
 ## Limitaciones y advertencias
 
 - Riesgo de alucinación en OCR: como cualquier modelo generativo aplicado a documentos, puede inventar texto, filas de tabla o símbolos en zonas de baja calidad, sellos, marcas de agua o manuscritos. En dominios jurídicos o financieros esto es especialmente crítico y exige verificación humana o validación cruzada con un segundo motor.
-- Procedencia del repositorio: los metadatos indican autor `freelawproject` y URLs de HuggingFace bajo `rednote-hilab`, con 0 descargas y 0 likes y fechas de creación y actualización separadas por un segundo, lo que apunta a una copia espejo automatizada. Verifica el hash de los pesos contra el repositorio original antes de usarlos en producción.
+- Procedencia del repositorio: los metadatos indican autor `freelawproject` y URLs de Hugging Face bajo `rednote-hilab`, con 0 descargas y 0 likes y fechas de creación y actualización separadas por un segundo, lo que apunta a una copia espejo automatizada. Verifica el hash de los pesos contra el repositorio original antes de usarlos en producción.
 - Código personalizado: la librería `dots_mocr` y la etiqueta `custom_code` implican ejecutar código remoto con `trust_remote_code=True`, lo que supone un riesgo de seguridad si el repositorio no es de confianza.
 - Idiomas: la model card declara inglés, chino y multilingüe de forma genérica, sin desglose por idioma. El rendimiento en castellano no está documentado y debería medirse antes de desplegar en producción en español.
 - Contexto: la longitud de contexto no está publicada, lo que impide planificar con precisión el procesamiento de documentos muy largos o de conversaciones multi-turno extensas.
@@ -125,7 +125,7 @@ En la comparativa de Elo, dots.mocr queda por encima de todos los modelos abiert
 
 ## Enlaces
 
-- Modelo en HuggingFace (repositorio consultado): https://huggingface.co/freelawproject/dots.mocr
+- Modelo en Hugging Face (repositorio consultado): https://huggingface.co/freelawproject/dots.mocr
 - Modelo original referenciado en la model card: https://huggingface.co/rednote-hilab/dots.mocr
 - Variante especializada en image-to-SVG: https://huggingface.co/rednote-hilab/dots.mocr-svg
 - Repositorio GitHub: https://github.com/rednote-hilab/dots.mocr

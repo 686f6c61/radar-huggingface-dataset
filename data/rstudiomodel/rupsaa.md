@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rupsaa es un modelo publicado en HuggingFace por el usuario rstudioModel bajo licencia Apache 2.0. La informacion disponible es minima: la model card del repositorio no contiene mas que el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, pero no se especifica el numero de parametros ni la longitud de contexto.
+rupsaa es un modelo publicado en Hugging Face por el usuario rstudioModel bajo licencia Apache 2.0. La informacion disponible es minima: la model card del repositorio no contiene mas que el bloque de metadatos de licencia, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento. El repositorio ocupa 0,2 GB y contiene pesos en formato safetensors, pero no se especifica el numero de parametros ni la longitud de contexto.
 
 No se ha declarado pipeline de inferencia, idiomas soportados ni resultados de evaluacion. El modelo no acumula descargas ni interacciones en el momento de la consulta, por lo que se trata de un artefacto recien creado y sin validacion publica por parte de la comunidad.
 
@@ -84,7 +84,7 @@ No disponible. Sin conocer el numero de parametros, la arquitectura ni la longit
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rstudioModel/rupsaa
+- Repositorio en Hugging Face: https://huggingface.co/rstudioModel/rupsaa
 - Perfil del autor: https://huggingface.co/rstudioModel
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible

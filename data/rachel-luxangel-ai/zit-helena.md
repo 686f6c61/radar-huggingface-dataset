@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Zit-helena (identificador `rachel-luxangel-ai/zit-helena`) es un adaptador LoRA de texto a imagen publicado por el usuario `rachel-luxangel-ai` en HuggingFace. No se trata de un modelo completo, sino de un ajuste de bajo rango que se monta sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un generador de imagenes de difusion. Su funcion es reproducir un personaje concreto, Helena, mediante el token de activacion `rlyhelena`.
+Zit-helena (identificador `rachel-luxangel-ai/zit-helena`) es un adaptador LoRA de texto a imagen publicado por el usuario `rachel-luxangel-ai` en Hugging Face. No se trata de un modelo completo, sino de un ajuste de bajo rango que se monta sobre el modelo base `Tongyi-MAI/Z-Image-Turbo`, un generador de imagenes de difusion. Su funcion es reproducir un personaje concreto, Helena, mediante el token de activacion `rlyhelena`.
 
 El repositorio contiene un unico archivo de pesos, `helena.safetensors`, con un tamano de repositorio de 0,2 GB, y esta etiquetado con el pipeline `text-to-image` y la libreria `diffusers`. La model card es minima: indica el disparador, el archivo y el identificador de version de origen en CivitAI (`3062449`), del que procede el adaptador.
 
@@ -26,8 +26,8 @@ La relevancia de esta ficha es limitada y conviene ser explicito: el modelo acum
 | Prompt de instancia | `rlyhelena` |
 | Modelo base | `Tongyi-MAI/Z-Image-Turbo` |
 | Version de origen (CivitAI) | `3062449` |
-| Fecha de creacion (segun HuggingFace) | 2026-09-22 |
-| Fecha de actualizacion (segun HuggingFace) | 2026-09-22 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-22 |
+| Fecha de actualizacion (segun Hugging Face) | 2026-09-22 |
 
 ## Arquitectura y entrenamiento
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Requisitos de hardware
 
-- Tamano del adaptador: 0,2 GB en disco, segun el tamano del repositorio en HuggingFace.
+- Tamano del adaptador: 0,2 GB en disco, segun el tamano del repositorio en Hugging Face.
 - Memoria de video necesaria para inferencia: no disponible. Depende enteramente del modelo base `Tongyi-MAI/Z-Image-Turbo`, cuyas especificaciones no se detallan en la informacion proporcionada.
 - GPU recomendadas: no disponible.
 - Compatibilidad con GPU de consumo: no disponible; no puede confirmarse sin conocer los requisitos del modelo base.
@@ -75,7 +75,7 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun otro a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| rachel-luxangel-ai/zit-helena | no disponible | no aplica | no disponible | HuggingFace, 0 descargas |
+| rachel-luxangel-ai/zit-helena | no disponible | no aplica | no disponible | Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No disponible. No se ha encontrado en la informacion proporcionada ningun otro a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/rachel-luxangel-ai/zit-helena
-- Modelo base en HuggingFace: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
+- Repositorio en Hugging Face: https://huggingface.co/rachel-luxangel-ai/zit-helena
+- Modelo base en Hugging Face: https://huggingface.co/Tongyi-MAI/Z-Image-Turbo
 - Version de origen en CivitAI: https://civitai.com/api/v1/model-versions/3062449
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo, su autor o su proceso de entrenamiento.

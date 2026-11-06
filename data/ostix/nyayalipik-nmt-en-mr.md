@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ostix/nyayalipik-nmt-en-mr es un modelo publicado en HuggingFace por el usuario Ostix bajo licencia MIT. El identificador del repositorio sugiere un sistema de traduccion automatica neuronal (NMT) orientado al par de idiomas ingles-marati, si bien esta interpretacion procede unicamente del nombre del repositorio y no de documentacion tecnica publicada por el autor. La model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar la tarea exacta, la direccion de traduccion ni el dominio de aplicacion.
+Ostix/nyayalipik-nmt-en-mr es un modelo publicado en Hugging Face por el usuario Ostix bajo licencia MIT. El identificador del repositorio sugiere un sistema de traduccion automatica neuronal (NMT) orientado al par de idiomas ingles-marati, si bien esta interpretacion procede unicamente del nombre del repositorio y no de documentacion tecnica publicada por el autor. La model card asociada no contiene mas informacion que la declaracion de licencia, por lo que no es posible confirmar la tarea exacta, la direccion de traduccion ni el dominio de aplicacion.
 
 En el momento de la consulta, el repositorio registra 0 descargas y 1 like, con fecha de creacion y ultima actualizacion identicas (2026-10-03). No se declara pipeline, idiomas soportados, arquitectura, numero de parametros ni formato de pesos. Esto lo situa en la categoria de publicaciones iniciales o experimentales, sin validacion externa ni adopcion por parte de la comunidad.
 
@@ -95,5 +95,5 @@ No es posible establecer una comparativa con datos verificados, ya que las espec
 
 ## Enlaces
 
-- Ficha en HuggingFace: https://huggingface.co/Ostix/nyayalipik-nmt-en-mr
+- Ficha en Hugging Face: https://huggingface.co/Ostix/nyayalipik-nmt-en-mr
 - No se han encontrado enlaces adicionales a papers, blogs, repositorios de codigo ni demos en la informacion disponible.

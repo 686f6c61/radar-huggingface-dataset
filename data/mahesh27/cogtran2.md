@@ -2,9 +2,9 @@
 
 ## Resumen
 
-CogTran2 es un modelo publicado en HuggingFace por el usuario mahesh27 bajo licencia Apache 2.0. Con 1.638.402 parámetros totales (aproximadamente 1,6 millones), se trata de un modelo de escala muy reducida, varios órdenes de magnitud por debajo de los modelos de lenguaje convencionales, lo que sugiere un propósito experimental, educativo o de prototipado más que un uso en producción a gran escala. El repositorio incluye pesos en formato safetensors y la etiqueta `cogtran2`, que da nombre al modelo.
+CogTran2 es un modelo publicado en Hugging Face por el usuario mahesh27 bajo licencia Apache 2.0. Con 1.638.402 parámetros totales (aproximadamente 1,6 millones), se trata de un modelo de escala muy reducida, varios órdenes de magnitud por debajo de los modelos de lenguaje convencionales, lo que sugiere un propósito experimental, educativo o de prototipado más que un uso en producción a gran escala. El repositorio incluye pesos en formato safetensors y la etiqueta `cogtran2`, que da nombre al modelo.
 
-La model card publicada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que es coherente con un modelo de tan solo 1,6 millones de parámetros. No se dispone de información sobre el pipeline de HuggingFace ni sobre los idiomas soportados.
+La model card publicada es prácticamente vacía: solo contiene la declaración de licencia, sin descripción de arquitectura, datos de entrenamiento, capacidades ni resultados de evaluación. El repositorio tiene 0 descargas y 0 likes en el momento de la consulta, y un tamaño de 0.0 GB, lo que es coherente con un modelo de tan solo 1,6 millones de parámetros. No se dispone de información sobre el pipeline de Hugging Face ni sobre los idiomas soportados.
 
 Dada la ausencia de documentación técnica, esta ficha se limita a reflejar los datos verificables del repositorio y marca explícitamente como "no disponible" todo aquello que el autor no ha publicado. Cualquier evaluación de capacidades o rendimiento requeriría inspeccionar los pesos y la configuración del modelo directamente.
 
@@ -43,7 +43,7 @@ Respecto al entrenamiento, no hay datos sobre el volumen de tokens, la composici
 - Pruebas unitarias de infraestructura: puede integrarse en tests automatizados de servicios de serving (por ejemplo, endpoints HTTP) como modelo de sustitución con requisitos de memoria mínimos.
 - Investigación sobre modelos de muy baja escala: permite estudiar fenómenos de entrenamiento, tokenización o comportamientos emergentes en regímenes de parámetros muy reducidos.
 - Benchmarking de herramientas de cuantización y compresión: al ser un modelo minúsculo, es adecuado para comparar el impacto de distintas técnicas de cuantización en el tamaño y la latencia sin costes elevados.
-- Demostraciones educativas de licencias abiertas: sirve como ejemplo de publicación de pesos bajo Apache 2.0 en HuggingFace, útil para ilustrar buenas (y malas) prácticas de documentación de model cards.
+- Demostraciones educativas de licencias abiertas: sirve como ejemplo de publicación de pesos bajo Apache 2.0 en Hugging Face, útil para ilustrar buenas (y malas) prácticas de documentación de model cards.
 
 ## Benchmarks y rendimiento
 
@@ -73,4 +73,4 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mahesh27/CogTran2
+- Hugging Face: https://huggingface.co/mahesh27/CogTran2

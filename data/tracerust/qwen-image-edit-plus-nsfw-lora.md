@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Base | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MCNL v1 (este) | LoRA NSFW para edicion de imagen | Qwen-Image-Edit-2511 | ~563 MB | OpenRAIL++ | HuggingFace (0 descargas) |
-| MCNL v2 | LoRA NSFW (version actualizada) | Qwen-Image-Edit-2511 | no disponible | no disponible | HuggingFace (ScottzillaSystems) |
-| Qwen-Image-Edit-2511 | Modelo base de edicion de imagen | — | no disponible | no disponible en la informacion | HuggingFace (Qwen) |
+| MCNL v1 (este) | LoRA NSFW para edicion de imagen | Qwen-Image-Edit-2511 | ~563 MB | OpenRAIL++ | Hugging Face (0 descargas) |
+| MCNL v2 | LoRA NSFW (version actualizada) | Qwen-Image-Edit-2511 | no disponible | no disponible | Hugging Face (ScottzillaSystems) |
+| Qwen-Image-Edit-2511 | Modelo base de edicion de imagen | — | no disponible | no disponible en la informacion | Hugging Face (Qwen) |
 
 No se dispone de datos de rendimiento, contexto ni benchmarks para establecer una comparacion cuantitativa con alternativas de la misma categoria.
 
@@ -82,7 +82,7 @@ No se dispone de datos de rendimiento, contexto ni benchmarks para establecer un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TracerUst/qwen-image-edit-plus-nsfw-lora
+- Repositorio Hugging Face: https://huggingface.co/TracerUst/qwen-image-edit-plus-nsfw-lora
 - Modelo base Qwen-Image-Edit-2511: https://huggingface.co/Qwen/Qwen-Image-Edit-2511
 - MCNL v2 (version actualizada): https://huggingface.co/ScottzillaSystems/qwen-image-edit-plus-nsfw-lora2
 - Space ScottzillaSystems Image Editor: https://huggingface.co/spaces/ScottzillaSystems/Qwen-Image-Edit-2511-LoRAs-Fast

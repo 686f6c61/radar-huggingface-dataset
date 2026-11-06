@@ -4,7 +4,7 @@
 
 El repositorio `riyaguptadale/reading-image-captioning` no contiene un modelo de inteligencia artificial entrenado, sino una nota de investigación sobre la tarea de *image captioning* (generación de descripciones textuales de imágenes). El autor, riyaguptadale, publica un documento de trabajo (`review.md`) que organiza la motivación, el trabajo relacionado, una hipótesis falsable y un plan de evaluación para estudiar esta tarea. No se incluyen pesos de modelos, código de entrenamiento ni resultados experimentales.
 
-La relevancia de este repositorio es exclusivamente académica: sirve como punto de partida para investigadores que quieran diseñar experimentos rigurosos en image captioning, con referencias a conjuntos de datos estándar como MS COCO Captions, NoCaps y TextCaps. El repositorio se autodefine como exploratorio y no reclama mejoras de rendimiento ni conclusiones empíricas. Aunque el tag de HuggingFace indica `safetensors` y un valor de 16.576 parámetros, este número es inusualmente bajo para cualquier modelo de captioning y probablemente corresponde a un archivo de configuración o a un artefacto residual, no a un modelo real.
+La relevancia de este repositorio es exclusivamente académica: sirve como punto de partida para investigadores que quieran diseñar experimentos rigurosos en image captioning, con referencias a conjuntos de datos estándar como MS COCO Captions, NoCaps y TextCaps. El repositorio se autodefine como exploratorio y no reclama mejoras de rendimiento ni conclusiones empíricas. Aunque el tag de Hugging Face indica `safetensors` y un valor de 16.576 parámetros, este número es inusualmente bajo para cualquier modelo de captioning y probablemente corresponde a un archivo de configuración o a un artefacto residual, no a un modelo real.
 
 ## Especificaciones tecnicas
 
@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo y no puede compararse con altern
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/riyaguptadale/reading-image-captioning
+- Repositorio en Hugging Face: https://huggingface.co/riyaguptadale/reading-image-captioning
 - Curso de Google sobre creación de modelos de image captioning: https://www.skills.google/course_templates/542
 - Conceptual Captions (Google AI): https://ai.google.com/research/ConceptualCaptions/
 - Encuesta sobre evaluación de image captioning en la era de los MLLM (arXiv): https://arxiv.org/abs/2503.14604

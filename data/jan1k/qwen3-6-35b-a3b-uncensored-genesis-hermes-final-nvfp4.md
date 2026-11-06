@@ -98,7 +98,7 @@ No hay informacion en la busqueda web que permita comparar con alternativas exte
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4
+- Repositorio en Hugging Face: https://huggingface.co/jan1k/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-NVFP4
 - Modelo base sin censura: https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
 - GGUF de origen con reparacion Genesis: https://huggingface.co/LuffyTheFox/Qwen3.6-35B-A3B-Uncensored-Genesis-Hermes-Final-GGUF
 - Ajuste Hermes sobre la base: https://huggingface.co/DJLougen/hermes-qwen3.5-35b-a3b-GGUF
@@ -107,4 +107,4 @@ No hay informacion en la busqueda web que permita comparar con alternativas exte
 - Dataset de llamada a funciones: https://huggingface.co/datasets/NousResearch/hermes-function-calling-v1
 - Cuantizador empleado (fork de llama.cpp con foco en NVFP4): https://github.com/michaelw9999/advanced-gguf-quantizer
 
-Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces disponibles son los citados en la model card y en los metadatos de HuggingFace. No se han encontrado papers, blogs ni demos adicionales.
+Nota: la busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los unicos enlaces disponibles son los citados en la model card y en los metadatos de Hugging Face. No se han encontrado papers, blogs ni demos adicionales.

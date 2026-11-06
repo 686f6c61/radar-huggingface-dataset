@@ -68,13 +68,13 @@ No se dispone de datos de benchmarks para realizar una comparativa de rendimient
 
 - El repositorio no especifica la licencia del modelo, por lo que no se puede garantizar su uso comercial sin verificar los terminos del modelo original.
 - No hay informacion sobre sesgos, alucinaciones ni comportamientos no deseados.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica que es una publicacion reciente y poco verificada.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica que es una publicacion reciente y poco verificada.
 - La fecha de creacion del repositorio es futura (2026), lo que sugiere que la informacion puede ser incompleta o no consolidada.
 - La longitud de contexto no esta disponible, por lo que no se puede evaluar el rendimiento en tareas de contexto largo.
 - El uso de la cuantizacion Q4_K_M puede degradar la calidad de las respuestas en comparacion con el modelo en precision completa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tanmaygodse/qwen3-vl-8b-gguf
+- Repositorio en Hugging Face: https://huggingface.co/tanmaygodse/qwen3-vl-8b-gguf
 - Modelo original Qwen3-VL-8B-Instruct-GGUF: https://huggingface.co/Qwen/Qwen3-VL-8B-Instruct-GGUF
 - Variante Thinking de NexaAI: https://huggingface.co/NexaAI/Qwen3-VL-8B-Thinking-GGUF

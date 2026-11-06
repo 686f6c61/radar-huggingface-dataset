@@ -92,7 +92,7 @@ No se han proporcionado modelos comparables en la informacion disponible. Se tra
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/baobabtech/evalexplorer-classify-gemma-4-e2b-sft
+- Modelo en Hugging Face: https://huggingface.co/baobabtech/evalexplorer-classify-gemma-4-e2b-sft
 - Modelo base: https://huggingface.co/unsloth/gemma-4-E2B-it
 - Conjunto de datos de entrenamiento: https://huggingface.co/datasets/baobabtech/evalexplorer-data
 - Conjunto de experimentos (runs y código): https://huggingface.co/datasets/baobabtech/evalexplorer-classify-experiments

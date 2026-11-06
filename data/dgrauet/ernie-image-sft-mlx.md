@@ -68,7 +68,7 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dgrauet/ernie-image-sft-mlx
+- Repositorio Hugging Face: https://huggingface.co/dgrauet/ernie-image-sft-mlx
 - Modelo base original (Baidu): https://huggingface.co/baidu/ERNIE-Image
 - Librería de inferencia ernie-image-mlx: https://github.com/dgrauet/ernie-image-mlx
 - Herramienta de conversión mlx-forge: https://github.com/dgrauet/mlx-forge

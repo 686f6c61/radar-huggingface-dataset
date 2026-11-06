@@ -87,7 +87,7 @@ El router LLM ofrece precision perfecta pero es 60 veces mas lento y tiene coste
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vinayakmokashi45/filings-research-copilot-router
+- Modelo en Hugging Face: https://huggingface.co/vinayakmokashi45/filings-research-copilot-router
 - Modelo base: https://huggingface.co/BAAI/bge-small-en-v1.5
 - Repositorio del proyecto: https://github.com/VinayakMokashi/filings-research-copilot
 - Conjunto de entrenamiento: https://github.com/VinayakMokashi/filings-research-copilot/blob/main/data/reference/routing_train.jsonl

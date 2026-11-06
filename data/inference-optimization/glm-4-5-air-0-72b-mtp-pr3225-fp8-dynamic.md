@@ -109,11 +109,11 @@ Los datos del modelo original proceden de la tabla de configuración incluida en
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225-FP8-Dynamic
+- Modelo en Hugging Face: https://huggingface.co/inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225-FP8-Dynamic
 - Modelo base: https://huggingface.co/inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225
 - Arquitectura y tokenizador originales (zai-org/GLM-4.5-Air): https://huggingface.co/zai-org/GLM-4.5-Air/tree/a24ceef6ce4f3536971efe9b778bdaa1bab18daa
 - Pull request de LLM Compressor #3225: https://github.com/vllm-project/llm-compressor/pull/3225
 - Commit de LLM Compressor probado: https://github.com/vllm-project/llm-compressor/commit/2d5242056a8a00028686a303771ffc8e2fe27d07
 - Commit de compressed-tensors probado: https://github.com/vllm-project/compressed-tensors/commit/e69c8dc58aa152e5f5e36e85800ec1d2e7de5271
 - Flujo de trabajo tiny-model de llm-compressor: https://github.com/vllm-project/llm-compressor/tree/2d5242056a8a00028686a303771ffc8e2fe27d07/.agents/skills/create-tiny-model
-- Resultados de validación (`validation.json`) y manifiesto de artefactos (`artifact-manifest.json`): disponibles en el propio repositorio de HuggingFace del modelo.
+- Resultados de validación (`validation.json`) y manifiesto de artefactos (`artifact-manifest.json`): disponibles en el propio repositorio de Hugging Face del modelo.

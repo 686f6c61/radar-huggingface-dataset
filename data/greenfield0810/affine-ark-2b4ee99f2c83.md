@@ -69,7 +69,7 @@ No se dispone de información suficiente para comparar este modelo con alternati
 
 ## Enlaces
 
-- Repositorio HuggingFace del archivo: [greenfield0810/affine-ark-2b4ee99f2c43](https://huggingface.co/greenfield0810/affine-ark-2b4ee99f2c43)
+- Repositorio Hugging Face del archivo: [greenfield0810/affine-ark-2b4ee99f2c43](https://huggingface.co/greenfield0810/affine-ark-2b4ee99f2c43)
 - Repositorio original (posiblemente no accesible): [ammazon/Affine-5dvqtektxx-sbs-v7](https://huggingface.co/ammazon/Affine-5dvqtektxx-sbs-v7)
 - Documentación de AFFiNE Self-host AI: https://docs.affine.pro/self-host-affine/administer/ai
 - Sitio de Affine (empresa de IA, no relacionada con el modelo): https://affine.ai/

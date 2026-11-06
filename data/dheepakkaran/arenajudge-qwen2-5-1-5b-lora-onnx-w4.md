@@ -82,8 +82,8 @@ No se han publicado otros benchmarks (MMLU, HumanEval, GSM8K u otros) en la info
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ArenaJudge Qwen2.5-1.5B LoRA ONNX w4 (este modelo) | 1,5 B | Prompt <= 96 tokens, respuestas <= 200 tokens | Log loss 0,9872 en validacion fp16; 1,0393 en ONNX 4-bit CPU; 1,00281 en leaderboard Kaggle | Apache-2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,5 B | Ventana de contexto propia de Qwen2.5 (no detallada aqui) | No comparable: es generativo, no clasificador de preferencias | Apache-2.0 | HuggingFace |
+| ArenaJudge Qwen2.5-1.5B LoRA ONNX w4 (este modelo) | 1,5 B | Prompt <= 96 tokens, respuestas <= 200 tokens | Log loss 0,9872 en validacion fp16; 1,0393 en ONNX 4-bit CPU; 1,00281 en leaderboard Kaggle | Apache-2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,5 B | Ventana de contexto propia de Qwen2.5 (no detallada aqui) | No comparable: es generativo, no clasificador de preferencias | Apache-2.0 | Hugging Face |
 | Otros jueces / reward models de la misma competicion | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion sobre modelos comparables adicionales (por ejemplo, reward models de 1-3 B parametros como ArmoRM, Starling-RM o similares) en la documentacion proporcionada, por lo que no se incluyen cifras comparativas.
@@ -102,7 +102,7 @@ No se dispone de informacion sobre modelos comparables adicionales (por ejemplo,
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dheepakkaran/arenajudge-qwen2.5-1.5b-lora-onnx-w4
+- Modelo en Hugging Face: https://huggingface.co/dheepakkaran/arenajudge-qwen2.5-1.5b-lora-onnx-w4
 - Demo en vivo (Space): https://huggingface.co/spaces/dheepakkaran/arenajudge
 - Competicion de Kaggle: https://www.kaggle.com/competitions/llm-classification-finetuning
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct

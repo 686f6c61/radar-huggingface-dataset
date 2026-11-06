@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`QRK/test_model_control` es un repositorio de modelo alojado en HuggingFace bajo el identificador de autor QRK. La informacion publica disponible es minima: no se especifica pipeline, no se declaran idiomas soportados, el tamano del repositorio es de 0.0 GB y el numero de descargas y likes es cero. Esto indica que se trata de un repositorio vacio o en fase de publicacion inicial, sin pesos ni tarjetas de modelo sustantivas.
+`QRK/test_model_control` es un repositorio de modelo alojado en Hugging Face bajo el identificador de autor QRK. La informacion publica disponible es minima: no se especifica pipeline, no se declaran idiomas soportados, el tamano del repositorio es de 0.0 GB y el numero de descargas y likes es cero. Esto indica que se trata de un repositorio vacio o en fase de publicacion inicial, sin pesos ni tarjetas de modelo sustantivas.
 
-El repositorio esta marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones en HuggingFace antes de cualquier descarga. La licencia declarada es Apache 2.0, lo que en principio permitiria uso comercial, pero al no haber artefactos publicados no es posible verificar que contenido ampara esa licencia.
+El repositorio esta marcado como de acceso restringido (gated), lo que obliga a aceptar condiciones en Hugging Face antes de cualquier descarga. La licencia declarada es Apache 2.0, lo que en principio permitiria uso comercial, pero al no haber artefactos publicados no es posible verificar que contenido ampara esa licencia.
 
 No hay informacion sobre arquitectura, parametros, contexto, datos de entrenamiento ni benchmarks. La ficha se completa a continuacion indicando explicitamente "no disponible" en cada campo que no puede confirmarse, conforme a las reglas de rigor de esta publicacion.
 
@@ -41,7 +41,7 @@ No hay informacion sobre el corpus de entrenamiento, el numero de tokens procesa
 No es posible recomendar casos de uso concretos sin informacion sobre las capacidades, el tamano y el contexto del modelo. Los siguientes escenarios solo serian aplicables si en el futuro se publican pesos y documentacion tecnica que los respalden:
 
 - Evaluacion comparativa controlada: si el repositorio se completa con pesos, podria usarse como modelo de referencia en experimentos de control frente a otros modelos del mismo autor.
-- Pruebas de integracion en pipelines de HuggingFace: validar el flujo de acceso gated y la descarga programatica con `huggingface_hub`.
+- Pruebas de integracion en pipelines de Hugging Face: validar el flujo de acceso gated y la descarga programatica con `huggingface_hub`.
 - Verificacion de licencia Apache 2.0: comprobar que los artefactos publicados cumplen las condiciones de redistribucion y uso comercial.
 - Benchmarking interno: solo si se publican pesos y se documenta la arquitectura.
 - Despliegue en produccion: no recomendable sin documentacion tecnica, tarjeta de modelo y artefactos verificables.
@@ -66,7 +66,7 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 ## Limitaciones y advertencias
 
 - Repositorio sin artefactos publicados: el tamano de 0.0 GB indica ausencia de pesos, configuracion o tokenizer en el momento de la consulta.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a cualquier evaluacion o despliegue automatizado.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a cualquier evaluacion o despliegue automatizado.
 - Ausencia de tarjeta de modelo sustantiva: no hay informacion sobre sesgos, datos de entrenamiento, evaluaciones de seguridad ni limitaciones conocidas.
 - Riesgo de alucinacion: no evaluable sin pesos ni documentacion.
 - Restricciones de licencia: aunque se declara Apache 2.0, no puede verificarse que ampare artefactos que no existen publicamente; conviene revisar los terminos del gate antes de cualquier uso comercial.
@@ -75,5 +75,5 @@ No disponible. No es posible identificar modelos comparables sin conocer la cate
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/QRK/test_model_control
+- Repositorio en Hugging Face: https://huggingface.co/QRK/test_model_control
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

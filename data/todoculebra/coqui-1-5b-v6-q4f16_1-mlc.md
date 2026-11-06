@@ -90,7 +90,7 @@ La comparacion con alternativas de la misma categoria (por ejemplo Llama-3.2-1B 
 
 ## Enlaces
 
-- Modelo en HuggingFace (v6): https://huggingface.co/todoculebra/coqui-1.5b-v6-q4f16_1-MLC
+- Modelo en Hugging Face (v6): https://huggingface.co/todoculebra/coqui-1.5b-v6-q4f16_1-MLC
 - Version anterior (v1): https://huggingface.co/todoculebra/coqui-1.5b-v1-q4f16_1-MLC
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - Aplicacion Todo Culebra: https://todoculebra.com/app

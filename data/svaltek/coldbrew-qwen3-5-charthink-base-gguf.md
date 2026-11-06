@@ -92,7 +92,7 @@ La comparación de rendimiento no es posible: no hay benchmarks publicados para 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SvalTek/ColdBrew-Qwen3.5-CharThink-Base-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/SvalTek/ColdBrew-Qwen3.5-CharThink-Base-GGUF
 - Unsloth (herramienta de conversión citada por el autor): https://github.com/unslothai/unsloth
 - llama.cpp (runtime de los GGUF, referencia para `llama-cli` y `llama-mtmd-cli`): https://github.com/ggml-org/llama.cpp
 - Paper, blog o demo del modelo: no disponible

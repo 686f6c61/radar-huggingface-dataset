@@ -69,7 +69,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0818
+- Repositorio Hugging Face: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0818
 - Paquete GGUF asociado: https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-gguf-0818
 - Versión anterior (merged-0710): https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0710
 - Versión anterior (merged-0709): https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0709

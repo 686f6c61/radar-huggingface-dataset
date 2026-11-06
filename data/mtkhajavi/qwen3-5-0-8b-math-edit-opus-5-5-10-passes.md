@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.5-0.8B-math-edit-opus-5.5-10-passes es un modelo derivado de Qwen/Qwen3.5-0.8B, publicado por el usuario mtkhajavi en HuggingFace. No se trata de un fine-tuning convencional: es un experimento de edición de pesos en espacio de pesos (weight-space programming) en el que un modelo de lenguaje de gran tamano (Claude Opus 5.5) lee los pesos del modelo base y escribe una edición en Python para mejorar su rendimiento en matematicas, sin usar gradientes, optimizadores ni ajuste a una funcion de perdida. La edicion consiste en poner a cero una neurona MLP, multiplicar otra neurona MLP por 4 y dividir por la mitad ocho cabezas de atencion.
+Qwen3.5-0.8B-math-edit-opus-5.5-10-passes es un modelo derivado de Qwen/Qwen3.5-0.8B, publicado por el usuario mtkhajavi en Hugging Face. No se trata de un fine-tuning convencional: es un experimento de edición de pesos en espacio de pesos (weight-space programming) en el que un modelo de lenguaje de gran tamano (Claude Opus 5.5) lee los pesos del modelo base y escribe una edición en Python para mejorar su rendimiento en matematicas, sin usar gradientes, optimizadores ni ajuste a una funcion de perdida. La edicion consiste en poner a cero una neurona MLP, multiplicar otra neurona MLP por 4 y dividir por la mitad ocho cabezas de atencion.
 
 El modelo conserva la arquitectura del Qwen3.5-0.8B original (transformer de tipo texto, 752.393.024 parametros reales segun safetensors, aproximadamente 0,8 mil millones) y la licencia Apache 2.0. El repo ocupa 1,5 GB y los pesos estan en formato safetensors. Es relevante como prueba de concepto de una tecnica emergente: la edicion directa de pesos guiada por un LLM, que promete mejoras sustanciales en tareas concretas sin reentrenar.
 
@@ -70,8 +70,8 @@ No se han publicado resultados de benchmarks adicionales ni comparaciones con ot
 
 | Modelo | Parametros | Contexto | MATH-500 | GSM8K | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Qwen3.5-0.8B-math-edit-opus-5.5-10-passes | 752 M | No disponible | 56,2 % | 64,5 % | Apache 2.0 | HuggingFace |
-| Qwen3.5-0.8B (sin editar) | 752 M | No disponible | 8,8 % | 12,8 % | Apache 2.0 | HuggingFace |
+| Qwen3.5-0.8B-math-edit-opus-5.5-10-passes | 752 M | No disponible | 56,2 % | 64,5 % | Apache 2.0 | Hugging Face |
+| Qwen3.5-0.8B (sin editar) | 752 M | No disponible | 8,8 % | 12,8 % | Apache 2.0 | Hugging Face |
 | Alternativas de ~1 B con foco matematico | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 Solo se dispone de datos comparativos frente al modelo base sin editar. No hay informacion en la busqueda web sobre modelos comparables de la misma categoria.
@@ -89,7 +89,7 @@ Solo se dispone de datos comparativos frente al modelo base sin editar. No hay i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-10-passes
+- Modelo en Hugging Face: https://huggingface.co/mtkhajavi/Qwen3.5-0.8B-math-edit-opus-5.5-10-passes
 - Repositorio GitHub del experimento: https://github.com/MatinKhajavi/Weight-Space-Programming
 - Blog "Sparks of Weight-Space Programming": https://rikiyat.github.io/blog/weight-space-programming/
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B

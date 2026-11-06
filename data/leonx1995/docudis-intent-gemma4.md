@@ -98,7 +98,7 @@ No se dispone de datos sobre otras alternativas especializadas en conversion de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/leonx1995/docudis-intent-gemma4
+- Modelo en Hugging Face: https://huggingface.co/leonx1995/docudis-intent-gemma4
 - Modelo base: https://huggingface.co/google/gemma-4-E2B-it
 - Codigo del componente intent (formato de salida, post-procesado, evaluacion y pipeline de entrenamiento), commit dda66a3: https://github.com/stonetech-pxia/docudis-ner/tree/dda66a3/intent
 - Especificacion completa: https://github.com/stonetech-pxia/docudis-ner/blob/dda66a3/intent/spec.md

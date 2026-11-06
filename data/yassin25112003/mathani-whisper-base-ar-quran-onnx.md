@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Formato | Idioma | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mathani-whisper-base-ar-quran-onnx | no disponible (base ~74 M) | ONNX fp32 / int8 | Arabe coranico (base) | Apache-2.0 | HuggingFace |
-| tarteel-ai/whisper-base-ar-quran | ~74 M (whisper-base) | PyTorch | Arabe coranico | Apache-2.0 | HuggingFace |
-| eventhorizon0/tarteel-ai-onnx-whisper-base-ar-quran | no disponible | ONNX | Arabe coranico | no disponible | HuggingFace |
+| mathani-whisper-base-ar-quran-onnx | no disponible (base ~74 M) | ONNX fp32 / int8 | Arabe coranico (base) | Apache-2.0 | Hugging Face |
+| tarteel-ai/whisper-base-ar-quran | ~74 M (whisper-base) | PyTorch | Arabe coranico | Apache-2.0 | Hugging Face |
+| eventhorizon0/tarteel-ai-onnx-whisper-base-ar-quran | no disponible | ONNX | Arabe coranico | no disponible | Hugging Face |
 | Whisper Tiny ONNX (sherpa-onnx) | no disponible (~39 M) | ONNX int8 | Multilingue (incluye arabe) | no disponible | GitHub |
 
 ## Limitaciones y advertencias
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Yassin25112003/mathani-whisper-base-ar-quran-onnx
+- Modelo en Hugging Face: https://huggingface.co/Yassin25112003/mathani-whisper-base-ar-quran-onnx
 - Modelo base (Tarteel AI): https://huggingface.co/tarteel-ai/whisper-base-ar-quran
 - Exportacion ONNX alternativa: https://huggingface.co/eventhorizon0/tarteel-ai-onnx-whisper-base-ar-quran
 - README del modelo base en GitHub: https://github.com/ikamand/recite-models/blob/main/tarteel-ai/whisper-base-ar-quran/README.md

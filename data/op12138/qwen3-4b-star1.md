@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OP12138/qwen3-4b-star1 es un ajuste fino (fine-tune) completo del modelo Qwen/Qwen3-4B-Thinking-2507, realizado con el framework Llama-Factory sobre un dataset denominado "star1". El autor, OP12138, ha publicado el modelo en HuggingFace con una model card generada automáticamente que no aporta detalles sobre el propósito, los datos de entrenamiento ni las capacidades específicas. Se trata de un entrenamiento de tipo "full" (todos los parámetros actualizados) con 4.022.468.096 parámetros, lo que lo sitúa en la gama de modelos de 4B, adecuado para despliegue en hardware de consumo.
+OP12138/qwen3-4b-star1 es un ajuste fino (fine-tune) completo del modelo Qwen/Qwen3-4B-Thinking-2507, realizado con el framework Llama-Factory sobre un dataset denominado "star1". El autor, OP12138, ha publicado el modelo en Hugging Face con una model card generada automáticamente que no aporta detalles sobre el propósito, los datos de entrenamiento ni las capacidades específicas. Se trata de un entrenamiento de tipo "full" (todos los parámetros actualizados) con 4.022.468.096 parámetros, lo que lo sitúa en la gama de modelos de 4B, adecuado para despliegue en hardware de consumo.
 
 La relevancia de este modelo radica en que parte de una base reciente de Qwen con capacidades de razonamiento explícito (thinking mode), pero la ausencia de documentación y de resultados de evaluación limita su uso en producción sin una validación previa. La licencia "other" y la falta de información sobre el dataset "star1" añaden incertidumbre sobre su legalidad y su comportamiento. En resumen, es un experimento de fine-tuning sin evidencias públicas de calidad, útil únicamente como punto de partida para investigaciones que quieran reproducir o evaluar el ajuste.
 
@@ -81,6 +81,6 @@ La comparativa se basa en datos publicos de los modelos base; no hay datos de re
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/OP12138/qwen3-4b-star1
+- Repositorio Hugging Face: https://huggingface.co/OP12138/qwen3-4b-star1
 - Modelo base (referencia): https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507
 - Framework de entrenamiento (mencionado en tags): https://github.com/hiyouga/LLaMA-Factory

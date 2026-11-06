@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K, e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bidhata/Qwen3.8-Flash-Next-AutoRound-Uncensored
+- Hugging Face: https://huggingface.co/bidhata/Qwen3.8-Flash-Next-AutoRound-Uncensored
 - Modelo base hibrido: https://huggingface.co/Saren/Qwen3.8-Flash-Next-W4A16-AutoRound-hybrid
 - Tabla PLE n-gram: https://huggingface.co/Saren/Qwen3.8-Flash-Next-ple-table-fp8
 - Modelo abliterado de referencia: https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored

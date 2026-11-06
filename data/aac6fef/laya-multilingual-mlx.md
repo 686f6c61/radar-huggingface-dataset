@@ -105,7 +105,7 @@ No se dispone de datos de rendimiento del checkpoint original ni de alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aac6fef/laya-multilingual-mlx
+- Modelo en Hugging Face: https://huggingface.co/aac6fef/laya-multilingual-mlx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Codigo de origen de Laya (upstream): https://github.com/NandhaKishorM/laya, commit 6a5819129eb220570792e417e49723d697efd76f
 - Runtime de inferencia MLX: https://github.com/mizorewww/laya-mlx

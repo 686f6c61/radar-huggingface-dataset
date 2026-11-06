@@ -73,7 +73,7 @@ No disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175
+- Hugging Face: https://huggingface.co/open-athena/snowball-67b-a2b-base-262k-qk175
 - Issue del experimento de contexto largo: https://github.com/marin-community/marin/issues/8977
 - Fork de vLLM requerido: https://github.com/marin-community/vllm
 - Registro de servicio y evaluacion: https://github.com/marin-community/marin/issues/8702

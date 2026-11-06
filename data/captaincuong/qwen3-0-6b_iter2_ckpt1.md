@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CaptainCuong/Qwen3-0.6B_iter2_ckpt1 es un ajuste fino (fine-tuning) experimental de Qwen3-0.6B, el modelo de lenguaje más pequeño de la familia Qwen3 de Alibaba, publicado por el usuario CaptainCuong en HuggingFace. Se trata de la segunda iteración de un proceso de refinamiento iterativo (RSI, según la nomenclatura del autor), partiendo del checkpoint CaptainCuong/Qwen3-0.6B_RSI_iter1 y entrenado sobre un dataset derivado de math12k con prompts de corrección simple. El nombre interno del experimento, "Qwen3-0.6B_math12k_prompt_simple_correct_iter2_ckpt5713", sugiere que el objetivo del entrenamiento es mejorar la capacidad de razonamiento matemático del modelo base.
+CaptainCuong/Qwen3-0.6B_iter2_ckpt1 es un ajuste fino (fine-tuning) experimental de Qwen3-0.6B, el modelo de lenguaje más pequeño de la familia Qwen3 de Alibaba, publicado por el usuario CaptainCuong en Hugging Face. Se trata de la segunda iteración de un proceso de refinamiento iterativo (RSI, según la nomenclatura del autor), partiendo del checkpoint CaptainCuong/Qwen3-0.6B_RSI_iter1 y entrenado sobre un dataset derivado de math12k con prompts de corrección simple. El nombre interno del experimento, "Qwen3-0.6B_math12k_prompt_simple_correct_iter2_ckpt5713", sugiere que el objetivo del entrenamiento es mejorar la capacidad de razonamiento matemático del modelo base.
 
 El modelo conserva la arquitectura transformer decoder-only de Qwen3 con aproximadamente 596 millones de parámetros (dato real extraído de los safetensors), lo que lo sitúa en la categoría de modelos pequeños aptos para hardware de consumo. Su relevancia es principalmente de investigación: sirve como ejemplo de entrenamiento por iteraciones sucesivas con datos autogenerados o corregidos, una técnica habitual en flujos de auto-mejora (self-improvement) aplicados a modelos compactos.
 
@@ -25,7 +25,7 @@ Datos adicionales:
 
 | Parametro | Valor |
 |---|---|
-| ID en HuggingFace | CaptainCuong/Qwen3-0.6B_iter2_ckpt1 |
+| ID en Hugging Face | CaptainCuong/Qwen3-0.6B_iter2_ckpt1 |
 | Modelo base | CaptainCuong/Qwen3-0.6B_RSI_iter1 |
 | Tamaño del repositorio | 6,0 GB |
 | Descargas | 489 |
@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - Con cuantización a 4 bits (si se aplica externamente, por ejemplo vía GGUF o bitsandbytes): el modelo cabría en menos de 1 GB.
 - GPU recomendadas: no se requiere GPU dedicada para inferencia; cualquier GPU moderna (RTX 3060, RTX 4090, etc.) lo ejecuta con holgura. Para el entrenamiento publicado se usaron 2 GPUs (modelo no especificado).
 - Cabe sin problemas en GPUs de consumo: sí, incluso en GPUs de gama de entrada y en CPU.
-- Opciones de despliegue: Transformers (librería nativa), text-generation-inference, HuggingFace Endpoints (etiqueta `endpoints_compatible`). Al ser compatible con la arquitectura Qwen3, debería funcionar también con vLLM, llama.cpp y Ollama tras conversión a GGUF, aunque no hay conversiones publicadas en el repo.
+- Opciones de despliegue: Transformers (librería nativa), text-generation-inference, Hugging Face Endpoints (etiqueta `endpoints_compatible`). Al ser compatible con la arquitectura Qwen3, debería funcionar también con vLLM, llama.cpp y Ollama tras conversión a GGUF, aunque no hay conversiones publicadas en el repo.
 - Latencia y throughput: no disponible; por su tamaño (~0,6B), se espera inferencia rápida incluso en CPU.
 
 ## Comparativa con modelos similares
@@ -80,7 +80,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | CaptainCuong/Qwen3-0.6B_iter2_ckpt1 | ~596M | no disponible | other | Fine-tuning experimental en matemáticas (RSI iteración 2) |
 | Qwen3-0.6B (base oficial) | ~600M | 32.768 tokens | Apache 2.0 | Modelo base generalista multilingüe |
 | Qwen3-0.6B (instruct oficial) | ~600M | 32.768 tokens | Apache 2.0 | Chat generalista con thinking mode |
-| SmolLM2-360M-Instruct | ~360M | 8.192 tokens | Apache 2.0 | Modelo pequeño generalista de HuggingFace |
+| SmolLM2-360M-Instruct | ~360M | 8.192 tokens | Apache 2.0 | Modelo pequeño generalista de Hugging Face |
 
 Comparado con los checkpoints oficiales de Qwen3-0.6B, esta variante ofrece un posible beneficio en tareas matemáticas (no verificado con benchmarks) a cambio de una licencia menos clara (`other` frente a Apache 2.0), documentación mínima y sin conversiones cuantizadas oficiales. Frente a SmolLM2-360M-Instruct, es más grande y está especializado en matemáticas, pero carece de la evaluación sistemática y el soporte comunitario de un modelo institucional.
 
@@ -98,7 +98,7 @@ Comparado con los checkpoints oficiales de Qwen3-0.6B, esta variante ofrece un p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CaptainCuong/Qwen3-0.6B_iter2_ckpt1
+- Modelo en Hugging Face: https://huggingface.co/CaptainCuong/Qwen3-0.6B_iter2_ckpt1
 - Modelo base (iteración 1): https://huggingface.co/CaptainCuong/Qwen3-0.6B_RSI_iter1
 - Familia Qwen3 oficial: https://huggingface.co/Qwen
 - LLaMA-Factory (framework de entrenamiento utilizado): https://github.com/hiyouga/LLaMA-Factory

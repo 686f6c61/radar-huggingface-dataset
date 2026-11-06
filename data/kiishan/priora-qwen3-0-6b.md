@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks que permitan una comparación cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kiishan/priora-qwen3-0.6b
+- Modelo en Hugging Face: https://huggingface.co/kiishan/priora-qwen3-0.6b
 - Modelo base Qwen/Qwen3-0.6B: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - llama.cpp (runtime declarado por el autor): https://github.com/ggml-org/llama.cpp

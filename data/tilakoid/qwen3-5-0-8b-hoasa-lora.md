@@ -111,8 +111,8 @@ No se dispone de resultados de benchmarks de modelos comparables en la informaci
 
 | Modelo | Tipo | Parametros | Contexto | Macro-F1 ABSA indonesio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Tilakoid/qwen3.5-0.8b-hoasa-lora | Adaptador LoRA generativo | ~0,8B (base) + adaptador r=16 | No disponible | 0,6935 (HoASA, 286 filas) | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen/Qwen3.5-0.8B | Modelo base vision-language | ~0,8B | No disponible | No disponible | No disponible en la informacion proporcionada | HuggingFace |
+| Tilakoid/qwen3.5-0.8b-hoasa-lora | Adaptador LoRA generativo | ~0,8B (base) + adaptador r=16 | No disponible | 0,6935 (HoASA, 286 filas) | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen/Qwen3.5-0.8B | Modelo base vision-language | ~0,8B | No disponible | No disponible | No disponible en la informacion proporcionada | Hugging Face |
 | Clasificadores dedicados de ABSA en indonesio (por ejemplo, basados en encoder) | Clasificacion / extraccion de aspectos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este modelo ni sobre alternativas comparables; los unicos resultados obtenidos corresponden a un servicio de streaming de video y no guardan relacion con la ficha.
@@ -133,7 +133,7 @@ La busqueda web realizada no devolvio resultados tecnicos relevantes sobre este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Tilakoid/qwen3.5-0.8b-hoasa-lora
+- Modelo en Hugging Face: https://huggingface.co/Tilakoid/qwen3.5-0.8b-hoasa-lora
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Revision fijada del modelo base: 2fc06364715b967f1860aea9cf38778875588b17
 - SHA256 de los pesos del adaptador: 4d53af5e0d6897f9177b7b84e1dd0f07ba5117f6ce30a29087ae3115a0c29e7b

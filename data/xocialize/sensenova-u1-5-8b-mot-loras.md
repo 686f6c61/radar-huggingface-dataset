@@ -71,9 +71,9 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace del mirror: https://huggingface.co/xocialize/SenseNova-U1.5-8B-MoT-LoRAs
-- Repositorio HuggingFace oficial del LoRA: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
-- Modelo base en HuggingFace: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
+- Repositorio Hugging Face del mirror: https://huggingface.co/xocialize/SenseNova-U1.5-8B-MoT-LoRAs
+- Repositorio Hugging Face oficial del LoRA: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs
+- Modelo base en Hugging Face: https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT
 - Modelo base en ModelScope: https://www.modelscope.cn/models/SenseNova/SenseNova-U1.5-8B-MoT
 - GitHub del proyecto SenseNova-U1: https://github.com/OpenSenseNova/SenseNova-U1
 - Paper arXiv: https://arxiv.org/abs/2605.12500

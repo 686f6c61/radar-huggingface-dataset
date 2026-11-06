@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`joaolopesmes/lightweight-multimodal-weights` es un repositorio de HuggingFace publicado por el usuario joaolopesmes que, pese a su nombre, no contiene un modelo entrenado ni pesos funcionales. La model card lo describe explicitamente como una nota de investigación exploratoria ("research-notes") sobre el tema *Lightweight Multimodal*, con un unico artefacto principal (`notes.md`) que recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad previstos antes de reportar cualquier resultado.
+`joaolopesmes/lightweight-multimodal-weights` es un repositorio de Hugging Face publicado por el usuario joaolopesmes que, pese a su nombre, no contiene un modelo entrenado ni pesos funcionales. La model card lo describe explicitamente como una nota de investigación exploratoria ("research-notes") sobre el tema *Lightweight Multimodal*, con un unico artefacto principal (`notes.md`) que recoge el planteamiento de una comparacion, los posibles factores de confusion y los requisitos de reproducibilidad previstos antes de reportar cualquier resultado.
 
 El repositorio incluye un fichero de pesos en formato safetensors que, segun los metadatos, suma 33.088 parametros totales y un tamano de repo de 0,0 GB. Se trata, por tanto, de un artefacto de tamano despreciable y sin utilidad practica para inferencia: no hay pipeline declarado, no se documentan idiomas soportados ni arquitectura mas alla de la etiqueta generica `transformer`, y el autor advierte de que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales.
 
@@ -42,8 +42,8 @@ En cuanto al entrenamiento, la model card no reporta datos de preentrenamiento, 
 - Consulta documental: leer `notes.md` como punto de partida para disenar un experimento propio sobre modelos multimodales ligeros, usando las referencias y datasets propuestos como hipotesis a verificar.
 - Revision de literatura interna: emplear la nota para identificar factores de confusion y requisitos de reproducibilidad antes de lanzar una comparacion con baselines emparejados.
 - Plantilla de protocolo experimental: reutilizar la estructura de la nota (alcance, confounders, benchmarks publicos, comprobaciones de reproducibilidad, modos de fallo) como esqueleto para documentar experimentos propios.
-- Auditoria de repositorios: usar esta ficha como ejemplo de repositorio que no debe confundirse con un modelo desplegable al filtrar resultados en HuggingFace.
-- Formacion y docencia: ilustrar la diferencia entre una nota de investigacion y un checkpoint entrenado en el contexto de publicaciones en HuggingFace.
+- Auditoria de repositorios: usar esta ficha como ejemplo de repositorio que no debe confundirse con un modelo desplegable al filtrar resultados en Hugging Face.
+- Formacion y docencia: ilustrar la diferencia entre una nota de investigacion y un checkpoint entrenado en el contexto de publicaciones en Hugging Face.
 - Verificacion de licencia: consultar los terminos MIT del repositorio antes de reutilizar el contenido textual de la nota en trabajos derivados.
 
 ## Benchmarks y rendimiento
@@ -80,7 +80,7 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/joaolopesmes/lightweight-multimodal-weights
+- Repositorio en Hugging Face: https://huggingface.co/joaolopesmes/lightweight-multimodal-weights
 - Artefacto principal citado en la model card: `notes.md` (incluido en el repositorio)
 - Documentacion del repositorio: `README.md` (incluido en el repositorio)
 - Papers, blogs, repos auxiliares o demos: no disponible en la informacion proporcionada.

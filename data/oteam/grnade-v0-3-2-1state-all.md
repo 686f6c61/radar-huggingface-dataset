@@ -69,10 +69,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Conformaciones | Grafo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gRNAde v0.3.2 1state (este checkpoint) | 2,157 M | 1 | Espacial (131 canales) | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v0.3.2 2state / 3state / 5state | 2,157 M (segun especificacion v0.3.2) | 2, 3 y 5 | Espacial | AGPL-3.0 | HuggingFace (oteam) |
-| gRNAde v1 | 2,157 M | 1 (variante base) | Secuencia + pares de base + espacial (132 canales) | AGPL-3.0 | HuggingFace (oteam/grnade) |
-| gRNAde ODesign | no disponible | no disponible | no disponible | no disponible | HuggingFace (oteam/grnade-odesign) |
+| gRNAde v0.3.2 1state (este checkpoint) | 2,157 M | 1 | Espacial (131 canales) | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v0.3.2 2state / 3state / 5state | 2,157 M (segun especificacion v0.3.2) | 2, 3 y 5 | Espacial | AGPL-3.0 | Hugging Face (oteam) |
+| gRNAde v1 | 2,157 M | 1 (variante base) | Secuencia + pares de base + espacial (132 canales) | AGPL-3.0 | Hugging Face (oteam/grnade) |
+| gRNAde ODesign | no disponible | no disponible | no disponible | no disponible | Hugging Face (oteam/grnade-odesign) |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la informacion proporcionada.
 
@@ -81,7 +81,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 - Implementacion no oficial: la model card la describe explicitamente como una reproduccion no oficial del trabajo original; el equipo de gRNAde no la ha validado ni escrito su model card.
 - Limitada a una unica conformacion: esta variante no puede condicionarse en multiples estados estructurales, a diferencia de las variantes 2state, 3state y 5state.
 - Grafo espacial sin canales de secuencia ni pares de base: la v0.3.2 omite informacion de orden de secuencia y de estructura secundaria explicita que si usa la v1, lo que puede afectar al rendimiento en ciertos casos.
-- Dependencia de la libreria `ofoldx`: no es ejecutable con frameworks estandar de HuggingFace Transformers; requiere la libreria propia del autor del checkpoint.
+- Dependencia de la libreria `ofoldx`: no es ejecutable con frameworks estandar de Hugging Face Transformers; requiere la libreria propia del autor del checkpoint.
 - Sin resultados de benchmarks publicados en la informacion disponible: no es posible evaluar su calidad frente a alternativas sin consultar los papers originales.
 - Riesgo de predicciones biologicamente invalidas: como todo modelo de diseno inverso, las secuencias generadas son hipotesis computacionales que requieren validacion experimental.
 - Licencia AGPL-3.0: impone obligaciones de copyleft fuerte; el uso comercial o la integracion en servicios en red requiere revisar el cumplimiento de la licencia.
@@ -90,7 +90,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/grnade-v0.3.2-1state-all
+- Modelo en Hugging Face: https://huggingface.co/oteam/grnade-v0.3.2-1state-all
 - Variante v1: https://huggingface.co/oteam/grnade
 - Checkpoint ODesign: https://huggingface.co/oteam/grnade-odesign
 - Variante 1state das: https://huggingface.co/oteam/grnade-v0.3.2-1state-das

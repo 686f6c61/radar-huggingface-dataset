@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-bounce-test-lownoise-000005-lora es un adaptador LoRA publicado en HuggingFace por RunningHubAI (RunningHub) para el modelo de generacion de video WAN 2.2. No es un modelo de lenguaje ni un modelo generativo completo: es un fichero de pesos de 293 MiB en formato safetensors que se carga sobre la red base de WAN 2.2 para modificar el comportamiento de generacion de movimiento en un dominio muy concreto. El autor acreditado en la model card es el usuario @T8star-Aix, y el modelo original se distribuye tambien a traves de la plataforma RunningHub y de Civitai.
+rh-bounce-test-lownoise-000005-lora es un adaptador LoRA publicado en Hugging Face por RunningHubAI (RunningHub) para el modelo de generacion de video WAN 2.2. No es un modelo de lenguaje ni un modelo generativo completo: es un fichero de pesos de 293 MiB en formato safetensors que se carga sobre la red base de WAN 2.2 para modificar el comportamiento de generacion de movimiento en un dominio muy concreto. El autor acreditado en la model card es el usuario @T8star-Aix, y el modelo original se distribuye tambien a traves de la plataforma RunningHub y de Civitai.
 
 El repositorio no incluye informacion sobre el rango del adaptador, las capas objetivo, el numero de pasos de entrenamiento ni el dataset utilizado. La model card se limita a indicar que esta afinado a partir de WAN 2.2, que pertenece a la categoria "LowNoise" (lo que sugiere que actua sobre el experto de bajo ruido de la arquitectura MoE de WAN 2.2, aunque esto no se confirma explicitamente en la documentacion) y que emplea las palabras de activacion "her breasts bounce, shake, jiggle and sway", lo que situa el adaptador en el ambito de la animacion anatomica de caracter adulto.
 
@@ -73,10 +73,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto / duracion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-bounce-test-lownoise-000005-lora | LoRA sobre WAN 2.2 | no disponible (293 MiB) | no disponible | no disponible | HuggingFace, RunningHub, Civitai |
+| rh-bounce-test-lownoise-000005-lora | LoRA sobre WAN 2.2 | no disponible (293 MiB) | no disponible | no disponible | Hugging Face, RunningHub, Civitai |
 | WAN 2.2 (modelo base) | Difusion de video | no disponible en esta ficha | no disponible en esta ficha | licencia del proyecto original | Ampliamente distribuido |
-| Otros LoRAs de movimiento para WAN 2.2 | LoRA | variable segun el autor | no aplica | variable, normalmente la del modelo base | Civitai, HuggingFace |
-| Adaptadores LoRA para otros modelos de video abiertos (por ejemplo, HunyuanVideo o LTX-Video) | LoRA | variable segun el autor | no aplica | variable segun el proyecto | HuggingFace, Civitai |
+| Otros LoRAs de movimiento para WAN 2.2 | LoRA | variable segun el autor | no aplica | variable, normalmente la del modelo base | Civitai, Hugging Face |
+| Adaptadores LoRA para otros modelos de video abiertos (por ejemplo, HunyuanVideo o LTX-Video) | LoRA | variable segun el autor | no aplica | variable segun el proyecto | Hugging Face, Civitai |
 
 No se dispone de datos objetivos que permitan una comparacion cuantitativa con alternativas concretas dentro de la misma categoria. Los modelos comparables citados se incluyen como referencia de categoria, no como resultado de una evaluacion realizada.
 
@@ -94,7 +94,7 @@ No se dispone de datos objetivos que permitan una comparacion cuantitativa con a
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-bounce-test-lownoise-000005-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-bounce-test-lownoise-000005-lora
 - Modelo original en RunningHub: https://www.runninghub.cn/model/public/1966514693961658370
 - Pagina del autor en RunningHub: https://www.runninghub.cn/user-center/1819214514410942465
 - Ficha en Civitai referenciada por el autor: https://civitai.com/models/1944129/slop-bounce-wan-22-i2v?modelVersionId=2200388

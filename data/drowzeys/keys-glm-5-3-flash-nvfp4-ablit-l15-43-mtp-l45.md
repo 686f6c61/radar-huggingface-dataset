@@ -4,7 +4,7 @@
 
 Este modelo es una versión "abliterated" (con los rechazos de seguridad eliminados) y cuantizada a NVFP4 del modelo GLM-5.3-Flash de Z.ai, publicada por el usuario drowzeys. Se basa en el checkpoint RedHatAI/GLM-5.3-Flash-NVFP4, que a su vez es una cuantización del modelo original de 320B parámetros con arquitectura MoE (18B activos). La versión aquí presentada tiene 169.120.127.838 parámetros totales según los pesos safetensors, lo que sugiere una poda o una cuantización que reduce el almacenamiento, aunque no se especifica el número de parámetros activos para esta variante.
 
-El modelo es multimodal (image-text-to-text), soporta inglés y chino, y está diseñado para ejecutarse con vLLM en configuraciones de memoria unificada como las DGX Spark de NVIDIA. El repositorio de despliegue asociado documenta una ventana de contexto de 1.048.576 tokens, verificada mediante pruebas de passkey. La licencia es MIT, pero el acceso en HuggingFace está restringido (gated) y requiere aceptación de condiciones.
+El modelo es multimodal (image-text-to-text), soporta inglés y chino, y está diseñado para ejecutarse con vLLM en configuraciones de memoria unificada como las DGX Spark de NVIDIA. El repositorio de despliegue asociado documenta una ventana de contexto de 1.048.576 tokens, verificada mediante pruebas de passkey. La licencia es MIT, pero el acceso en Hugging Face está restringido (gated) y requiere aceptación de condiciones.
 
 La relevancia de este modelo radica en su combinación de capacidades multimodales, contexto extremadamente largo y ausencia de filtros de contenido, lo que lo hace atractivo para investigación y aplicaciones que requieren generación sin restricciones, aunque con los riesgos asociados a un modelo sin alineación de seguridad.
 
@@ -71,7 +71,7 @@ La comparativa es orientativa, ya que no se dispone de benchmarks comunes para e
 ## Limitaciones y advertencias
 
 - Al ser abliterated, el modelo puede generar contenido dañino, ilegal o éticamente cuestionable sin ningún tipo de filtro. No debe utilizarse en producción sin supervisión humana o sistemas de moderación externos.
-- El acceso en HuggingFace está restringido (gated), lo que limita su uso a quienes acepten las condiciones del autor.
+- El acceso en Hugging Face está restringido (gated), lo que limita su uso a quienes acepten las condiciones del autor.
 - La cuantización NVFP4 puede introducir pérdida de precisión en tareas de razonamiento complejo o matemáticas, aunque no se han publicado evaluaciones al respecto.
 - El modelo solo soporta inglés y chino; otros idiomas pueden tener un rendimiento degradado.
 - No se dispone de información sobre el proceso de entrenamiento de la abliteración, por lo que no se puede garantizar la estabilidad del comportamiento en todos los escenarios.
@@ -79,8 +79,8 @@ La comparativa es orientativa, ya que no se dispone de benchmarks comunes para e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45
+- Hugging Face: https://huggingface.co/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-43-mtp-l45
 - Repositorio de despliegue (GitHub): https://github.com/drowzeys/keys-vLLm.0.27.1-GLM-5.3-Flash-NVFP4-NVFP4KV-1M-Context-Abliterated
 - Repositorio de la variante l15-45 (GitHub): https://github.com/drowzeys/keys-GLM-5.3-Flash-NVFP4-ablit-l15-45-anchorstock
-- Modelo base en HuggingFace: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
+- Modelo base en Hugging Face: https://huggingface.co/RedHatAI/GLM-5.3-Flash-NVFP4
 - Página oficial de ZCode (herramientas para GLM-5.3): https://zcode.z.ai/en

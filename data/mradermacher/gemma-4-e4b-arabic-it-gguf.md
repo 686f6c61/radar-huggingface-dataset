@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Gemma-4-E4B-Arabic-It es un ajuste fino del modelo Gemma 4 E4B orientado a razonamiento y conversacion en arabe, con especial atencion al dialecto saudi, desarrollado por el autor de HuggingFace noman-asif. La version aqui descrita es la cuantizacion GGUF estatica publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo declara 7.518.069.290 parametros totales en formato safetensors y una licencia Apache 2.0.
+Gemma-4-E4B-Arabic-It es un ajuste fino del modelo Gemma 4 E4B orientado a razonamiento y conversacion en arabe, con especial atencion al dialecto saudi, desarrollado por el autor de Hugging Face noman-asif. La version aqui descrita es la cuantizacion GGUF estatica publicada por mradermacher, que permite ejecutar el modelo en hardware de consumo mediante llama.cpp y herramientas compatibles. El modelo declara 7.518.069.290 parametros totales en formato safetensors y una licencia Apache 2.0.
 
 El ajuste combina varias tecnicas declaradas en las etiquetas del repositorio: RS-LoRA, Trust-Region DPO, TIES merging y entrenamiento con chain-of-thought. Los datasets empleados son Arabic-Reasoning-Instruct-120k y Arabic-Preference-DPO-20k, ambos publicados por el mismo autor, lo que sugiere un pipeline de instruccion y preferencias especificamente construido para arabe. El resultado es un modelo denso (no MoE) bilingue arabe-ingles.
 

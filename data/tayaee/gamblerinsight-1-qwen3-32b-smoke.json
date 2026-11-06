@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tayaee/gamblerinsight-1-qwen3-32b-smoke",
+  "slug": "tayaee-gamblerinsight-1-qwen3-32b-smoke",
+  "author": "tayaee",
+  "url": "https://huggingface.co/tayaee/gamblerinsight-1-qwen3-32b-smoke",
+  "created_at": "2026-11-02T23:33:53.000Z",
+  "updated_at": "2026-11-02T23:59:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "finance",
+    "tool-calling",
+    "qlora",
+    "gamblerinsight",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 586,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535752301,
+  "storage_human": "65.5 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tayaee/gamblerinsight-1-qwen3-32b-smoke · Hugging Face",
+      "url": "https://huggingface.co/tayaee/gamblerinsight-1-qwen3-32b-smoke",
+      "snippet": "Text Generation model with 33B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+      "title": "Gamblerinsight 1 Qwen3 32b Smoke - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/tayaee/gamblerinsight-1-qwen3-32b-smoke",
+      "snippet": "Registry entry for model Gamblerinsight 1 Qwen3 32b Smoke; source metadata pending."
+    }
+  ]
+}

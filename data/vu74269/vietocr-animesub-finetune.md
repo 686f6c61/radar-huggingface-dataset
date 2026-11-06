@@ -73,4 +73,4 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/Vu74269/vietocr-animesub-finetune)
+- [Modelo en Hugging Face](https://huggingface.co/Vu74269/vietocr-animesub-finetune)

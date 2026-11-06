@@ -2,9 +2,9 @@
 
 ## Resumen
 
-LUMINA es un benchmark y modelo de mamografía multi-vendor presentado en CVPR 2026 por el laboratorio NUBagciLab. Su objetivo principal es proporcionar un conjunto de datos estandarizado y un protocolo de armonización de energía para abordar la variabilidad entre equipos de mamografía de distintos fabricantes, un problema crítico en el diagnóstico asistido por ordenador. El repositorio de HuggingFace almacena los pesos del modelo, aunque la documentación pública es mínima y no especifica la arquitectura, el número de parámetros ni el tipo de tarea concreta (clasificación, detección, segmentación, etc.).
+LUMINA es un benchmark y modelo de mamografía multi-vendor presentado en CVPR 2026 por el laboratorio NUBagciLab. Su objetivo principal es proporcionar un conjunto de datos estandarizado y un protocolo de armonización de energía para abordar la variabilidad entre equipos de mamografía de distintos fabricantes, un problema crítico en el diagnóstico asistido por ordenador. El repositorio de Hugging Face almacena los pesos del modelo, aunque la documentación pública es mínima y no especifica la arquitectura, el número de parámetros ni el tipo de tarea concreta (clasificación, detección, segmentación, etc.).
 
-La relevancia de LUMINA radica en su enfoque en la armonización de imágenes mamográficas, un paso previo necesario para que los modelos de IA sean transferibles entre hospitales y sistemas de imagen. Al ser un trabajo de investigación reciente (CVPR 2026), su disponibilidad pública con licencia MIT facilita la reproducibilidad y la comparación con otros métodos. Sin embargo, la información técnica disponible en la ficha de HuggingFace es muy limitada, por lo que esta ficha se basa únicamente en los datos publicados y marca explícitamente los campos no disponibles.
+La relevancia de LUMINA radica en su enfoque en la armonización de imágenes mamográficas, un paso previo necesario para que los modelos de IA sean transferibles entre hospitales y sistemas de imagen. Al ser un trabajo de investigación reciente (CVPR 2026), su disponibilidad pública con licencia MIT facilita la reproducibilidad y la comparación con otros métodos. Sin embargo, la información técnica disponible en la ficha de Hugging Face es muy limitada, por lo que esta ficha se basa únicamente en los datos publicados y marca explícitamente los campos no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -41,7 +41,7 @@ No se ha publicado informacion detallada sobre la arquitectura del modelo LUMINA
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como AUC, sensibilidad, especificidad ni comparaciones con otros modelos. Se espera que el paper de CVPR 2026 contenga dichos datos, pero no estan accesibles en la ficha de HuggingFace ni en los resultados de busqueda obtenidos.
+No se han publicado resultados de benchmarks en la informacion disponible. La model card no incluye metricas como AUC, sensibilidad, especificidad ni comparaciones con otros modelos. Se espera que el paper de CVPR 2026 contenga dichos datos, pero no estan accesibles en la ficha de Hugging Face ni en los resultados de busqueda obtenidos.
 
 ## Requisitos de hardware
 
@@ -61,10 +61,10 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 - El riesgo de sesgo es inherente a los datos de mamografia: si el conjunto de entrenamiento no es diverso en poblacion, equipos o tecnicas, el modelo puede presentar un rendimiento desigual en subgrupos.
 - La licencia MIT permite uso comercial, pero no exime de la responsabilidad de validar el modelo en el contexto especifico de cada aplicacion.
 - No se especifican limitaciones de contexto o idioma, ya que no es un modelo de texto.
-- El repositorio de HuggingFace no incluye documentacion tecnica detallada; se recomienda consultar el repositorio GitHub y el paper de CVPR 2026 para obtener informacion completa.
+- El repositorio de Hugging Face no incluye documentacion tecnica detallada; se recomienda consultar el repositorio GitHub y el paper de CVPR 2026 para obtener informacion completa.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phy710/LUMINA
+- Hugging Face: https://huggingface.co/phy710/LUMINA
 - GitHub (NUBagciLab/LUMINA): https://github.com/NUBagciLab/LUMINA
-- Perfil del autor en HuggingFace: https://huggingface.co/phy710
+- Perfil del autor en Hugging Face: https://huggingface.co/phy710

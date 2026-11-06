@@ -90,9 +90,9 @@ La comparativa directa con otros modelos de 1,7B ajustados con DoRA no está dis
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/4fhct4sd/ocular-qwen1.7b-mixed01
+- Modelo en Hugging Face: https://huggingface.co/4fhct4sd/ocular-qwen1.7b-mixed01
 - Modelo base Qwen3-1.7B: https://huggingface.co/Qwen/Qwen3-1.7B
 - Repositorio oficial de Qwen: https://github.com/QwenLM/Qwen
-- Organización Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organización Qwen en Hugging Face: https://huggingface.co/Qwen
 - Qwen en GitHub: https://github.com/QwenLM
 - Qwen Studio: https://qwen.ai/home

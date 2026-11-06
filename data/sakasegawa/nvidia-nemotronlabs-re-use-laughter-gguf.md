@@ -106,8 +106,8 @@ La comparativa con modelos de la literatura (DeepFilterNet, RNNoise, Demucs) no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/sakasegawa/NVIDIA-NemotronLabs-RE-USE-laughter-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE-laughter
+- Repositorio Hugging Face: https://huggingface.co/sakasegawa/NVIDIA-NemotronLabs-RE-USE-laughter-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE-laughter
 - Consideraciones eticas del modelo base: https://huggingface.co/nvidia/NVIDIA-NemotronLabs-RE-USE-laughter#ethical-considerations
 - Variante sin preservacion de risa: https://huggingface.co/sakasegawa/NVIDIA-NemotronLabs-RE-USE-GGUF
 - speech.cpp (repositorio): https://github.com/nyosegawa/speech.cpp

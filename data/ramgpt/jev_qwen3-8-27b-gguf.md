@@ -81,9 +81,9 @@ Delta pareado de Brier (Jev - base): -0,1232; IC bootstrap del 95% [-0,1905, -0,
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ramgpt/Jev_Qwen3.8-27B-GGUF | ~26,9 B | No disponible | GGUF Q4_K_M | Apache-2.0 | HuggingFace |
-| SargeDev/Jev_Qwen3.8-27B | No disponible | No disponible | Pesos originales | No disponible | HuggingFace (modelo fuente) |
-| huihui-ai/Huihui-Qwen3.8-27B-abliterated | ~27 B (según nombre) | No disponible | No disponible | No disponible | HuggingFace (base) |
+| ramgpt/Jev_Qwen3.8-27B-GGUF | ~26,9 B | No disponible | GGUF Q4_K_M | Apache-2.0 | Hugging Face |
+| SargeDev/Jev_Qwen3.8-27B | No disponible | No disponible | Pesos originales | No disponible | Hugging Face (modelo fuente) |
+| huihui-ai/Huihui-Qwen3.8-27B-abliterated | ~27 B (según nombre) | No disponible | No disponible | No disponible | Hugging Face (base) |
 
 La comparativa se limita a estos modelos porque la información proporcionada no incluye otras alternativas de la misma categoría con datos verificables.
 

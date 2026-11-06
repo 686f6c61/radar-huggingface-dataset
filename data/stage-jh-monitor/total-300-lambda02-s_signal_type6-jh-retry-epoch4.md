@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stage-jh-monitor/total-300-lambda02-s_signal_type6-jh-retry-epoch4 es un checkpoint de fine-tuning basado en el modelo Qwen/Qwen3.5-4B, entrenado mediante un pipeline de aprendizaje por refuerzo (RL) interno denominado `learner_rl_b200_jh_workflow`. El modelo fue creado por la organización Stage-jh-monitor y está publicado en HuggingFace como un repositorio de pesos en formato safetensors, con un tamaño de 9,1 GB y un total de 4.539.265.536 parámetros (4,54 mil millones). No tiene descargas ni likes, lo que indica que se trata de un artefacto experimental sin revisión comunitaria.
+Stage-jh-monitor/total-300-lambda02-s_signal_type6-jh-retry-epoch4 es un checkpoint de fine-tuning basado en el modelo Qwen/Qwen3.5-4B, entrenado mediante un pipeline de aprendizaje por refuerzo (RL) interno denominado `learner_rl_b200_jh_workflow`. El modelo fue creado por la organización Stage-jh-monitor y está publicado en Hugging Face como un repositorio de pesos en formato safetensors, con un tamaño de 9,1 GB y un total de 4.539.265.536 parámetros (4,54 mil millones). No tiene descargas ni likes, lo que indica que se trata de un artefacto experimental sin revisión comunitaria.
 
 La información de la model card describe el proceso de entrenamiento: se utilizó un dataset llamado `Stage-org/total-300-lambda02-s_signal_type6-jh-retry`, que se entrenó con el método RL durante 3 épocas y 10.000 pasos de aprendizaje. El entrenamiento incorpora un “juez” open-ended (identificado como `gpt-5.6-luna`) para evaluar respuestas generadas, y la configuración de inferencia incluye `max_model_len = 65536` y soporte para modo de pensamiento y parsing de tool calls. No se han publicado benchmarks, especificaciones de licencia ni documentación de uso, por lo que el modelo debe considerarse un recurso de investigación, no un sistema listo para producción.
 
@@ -69,5 +69,5 @@ No disponible. No se han encontrado modelos comparables con datos de rendimiento
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Stage-jh-monitor/total-300-lambda02-s_signal_type6-jh-retry-epoch4
+- Hugging Face: https://huggingface.co/Stage-jh-monitor/total-300-lambda02-s_signal_type6-jh-retry-epoch4
 - No se han encontrado papers, blogs, demos ni otros recursos web relevantes sobre este modelo en la búsqueda realizada.

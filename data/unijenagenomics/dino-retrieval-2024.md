@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Unijenagenomics/dino-retrieval-2024 es un repositorio de HuggingFace publicado por el usuario Unijenagenomics que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Dino" orientada a tareas de retrieval (recuperacion de imagenes o representaciones). El propio autor lo describe explicitamente como un artefacto de configuracion "giant" destinado a revision de codigo, pruebas de humo y experimentos controlados de pequeno tamano, y no como una release preentrenada lista para produccion.
+Unijenagenomics/dino-retrieval-2024 es un repositorio de Hugging Face publicado por el usuario Unijenagenomics que contiene una implementacion propia y compacta en PyTorch de una arquitectura denominada "Dino" orientada a tareas de retrieval (recuperacion de imagenes o representaciones). El propio autor lo describe explicitamente como un artefacto de configuracion "giant" destinado a revision de codigo, pruebas de humo y experimentos controlados de pequeno tamano, y no como una release preentrenada lista para produccion.
 
 El repositorio incluye `main.py` con el modelo y un ejemplo ejecutable, `config.json` con los ajustes de arquitectura generados, `training_args.json` con la receta de experimento por defecto y `model.safetensors`, que segun la model card es un checkpoint de inicializacion valido para pruebas de humo pero no un checkpoint entrenado con resultados de referencia. La arquitectura declarada usa atencion estandar, fusion de bajo rango (low rank), activacion GELU y normalizacion tipo scalenorm, con un optimizador AdamW y un esquema de calentamiento lineal (linear warmup) como valores de partida.
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / entrada | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Unijenagenomics/dino-retrieval-2024 | 33.088 (checkpoint sin entrenar) | no disponible | sin benchmark declarado | apache-2.0 | HuggingFace, 0 descargas, 0 likes |
-| DINOv2 (Meta AI) | no disponible en la informacion proporcionada | no disponible | no disponible; familia de modelos fundacionales auto-supervisados para clasificacion, recuperacion de instancias y tareas densas | no disponible en la informacion proporcionada | pesos publicos; tambien en HuggingFace Transformers segun la documentacion de DINOv3 |
-| DINOv3 (Meta AI, arXiv 2508.10104) | no disponible en la informacion proporcionada | no disponible | no disponible; el informe declara avances al escalar datasets y modelos para tareas densas con caracteristicas de alta resolucion | no disponible en la informacion proporcionada | pesos en HuggingFace Hub y soporte en HuggingFace Transformers |
-| Nagoyainoue1988/dino-retrieval-final-2024 | no disponible | no disponible | la model card no reclama benchmark; mismo texto de advertencia sobre checkpoint de inicializacion | no disponible en la informacion proporcionada | HuggingFace |
-| fabiooliveirafaf/dino-retrieval-2024 | no disponible; configuracion declarada "huge" | no disponible | prototipo de investigacion; sin cifras de rendimiento verificadas | no disponible en la informacion proporcionada | HuggingFace |
+| Unijenagenomics/dino-retrieval-2024 | 33.088 (checkpoint sin entrenar) | no disponible | sin benchmark declarado | apache-2.0 | Hugging Face, 0 descargas, 0 likes |
+| DINOv2 (Meta AI) | no disponible en la informacion proporcionada | no disponible | no disponible; familia de modelos fundacionales auto-supervisados para clasificacion, recuperacion de instancias y tareas densas | no disponible en la informacion proporcionada | pesos publicos; tambien en Hugging Face Transformers segun la documentacion de DINOv3 |
+| DINOv3 (Meta AI, arXiv 2508.10104) | no disponible en la informacion proporcionada | no disponible | no disponible; el informe declara avances al escalar datasets y modelos para tareas densas con caracteristicas de alta resolucion | no disponible en la informacion proporcionada | pesos en Hugging Face Hub y soporte en Hugging Face Transformers |
+| Nagoyainoue1988/dino-retrieval-final-2024 | no disponible | no disponible | la model card no reclama benchmark; mismo texto de advertencia sobre checkpoint de inicializacion | no disponible en la informacion proporcionada | Hugging Face |
+| fabiooliveirafaf/dino-retrieval-2024 | no disponible; configuracion declarada "huge" | no disponible | prototipo de investigacion; sin cifras de rendimiento verificadas | no disponible en la informacion proporcionada | Hugging Face |
 
 La comparacion es limitada: los dos repositorios homonimos encontrados en la busqueda comparten la misma plantilla de model card y el mismo caracter de prototipo sin resultados, mientras que DINOv2 y DINOv3 son proyectos de investigacion de Meta AI con pesos publicos y documentacion tecnica sustancialmente mas completa. No se dispone de datos suficientes para comparar parametros, contexto o rendimiento entre ellos y este repositorio.
 
@@ -89,7 +89,7 @@ La comparacion es limitada: los dos repositorios homonimos encontrados en la bus
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Unijenagenomics/dino-retrieval-2024
+- Modelo en Hugging Face: https://huggingface.co/Unijenagenomics/dino-retrieval-2024
 - Repositorio homonimo de Nagoyainoue1988: https://huggingface.co/Nagoyainoue1988/dino-retrieval-final-2024
 - Repositorio homonimo de fabiooliveirafaf: https://huggingface.co/fabiooliveirafaf/dino-retrieval-2024
 - Implementacion de referencia de DINOv3 (facebookresearch): https://github.com/facebookresearch/dinov3

@@ -59,9 +59,9 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| agentic-ptb/grok.h069.sft-mix.step_60 | 9,4B | no disponible | no disponible | HuggingFace |
-| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | HuggingFace |
-| Llama 3.1 8B | 8B | 128K (según documentación oficial) | Llama 3.1 | HuggingFace |
+| agentic-ptb/grok.h069.sft-mix.step_60 | 9,4B | no disponible | no disponible | Hugging Face |
+| Qwen/Qwen3.5-9B-Base | 9,4B | no disponible | no disponible | Hugging Face |
+| Llama 3.1 8B | 8B | 128K (según documentación oficial) | Llama 3.1 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -74,4 +74,4 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- [HuggingFace: agentic-ptb/grok.h069.sft-mix.step_60](https://huggingface.co/agentic-ptb/grok.h069.sft-mix.step_60)
+- [Hugging Face: agentic-ptb/grok.h069.sft-mix.step_60](https://huggingface.co/agentic-ptb/grok.h069.sft-mix.step_60)

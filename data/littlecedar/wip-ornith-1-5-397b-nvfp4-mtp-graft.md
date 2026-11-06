@@ -91,8 +91,8 @@ La variante cuantizada de littlecedar se distingue por su menor huella de memori
 
 ## Enlaces
 
-- [Repositorio de la variante en HuggingFace](https://huggingface.co/littlecedar/WIP-Ornith-1.5-397B-NVFP4-MTP-Graft)
-- [Modelo base en HuggingFace](https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4)
+- [Repositorio de la variante en Hugging Face](https://huggingface.co/littlecedar/WIP-Ornith-1.5-397B-NVFP4-MTP-Graft)
+- [Modelo base en Hugging Face](https://huggingface.co/ornith-ai/Ornith-1.5-397B-NVFP4)
 - [Blog de Ornith-1.5](https://ornith.ai/ornith_1_5.html)
 - [Colección de modelos Ornith-1.5](https://huggingface.co/collections/ornith-ai/ornith-15)
 - [Guía de despliegue de Ornith AI](https://ornith.online/)

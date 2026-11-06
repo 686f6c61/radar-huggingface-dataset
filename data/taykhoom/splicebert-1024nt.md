@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SpliceBERT-1024nt es un modelo de lenguaje para ARN basado en la arquitectura BERT, entrenado con masked language modeling sobre más de dos millones de secuencias primarias de ARN procedentes de 72 especies de vertebrados. Fue desarrollado originalmente por el grupo biomed-AI (Chen et al., 2024) y posteriormente portado a HuggingFace por Taykhoom Dalal en una versión mínima que mantiene paridad numérica con el checkpoint original. El modelo está diseñado para estudiar el splicing de ARN y otras tareas relacionadas con la secuencia de ARN.
+SpliceBERT-1024nt es un modelo de lenguaje para ARN basado en la arquitectura BERT, entrenado con masked language modeling sobre más de dos millones de secuencias primarias de ARN procedentes de 72 especies de vertebrados. Fue desarrollado originalmente por el grupo biomed-AI (Chen et al., 2024) y posteriormente portado a Hugging Face por Taykhoom Dalal en una versión mínima que mantiene paridad numérica con el checkpoint original. El modelo está diseñado para estudiar el splicing de ARN y otras tareas relacionadas con la secuencia de ARN.
 
 La variante 1024nt es el modelo principal de la familia SpliceBERT, entrenado con fragmentos de longitud variable entre 64 y 1024 nucleótidos, lo que le permite procesar contextos más largos que las variantes de 510nt. Con aproximadamente 19,7 millones de parámetros, es un modelo compacto que puede ejecutarse en hardware modesto, incluidas GPUs de consumo. Su vocabulario reducido de 10 tokens (nucleótidos individuales más tokens especiales) y su tokenización de nucleótido único lo hacen especialmente adecuado para tareas de biología computacional.
 
@@ -33,7 +33,7 @@ El preentrenamiento se realizó con masked language modeling sobre más de dos m
 - Modelado de lenguaje enmascarado (fill-mask) sobre secuencias de ARN, capaz de predecir nucleótidos enmascarados en contexto.
 - Extracción de representaciones intermedias: el modelo expone los hidden states de las seis capas transformer, útiles para tareas de fine-tuning o análisis de atención.
 - Tokenización automática de secuencias crudas: el tokenizador gestiona la conversión U a T y el espaciado de nucleótido único sin preprocesado manual.
-- Fine-tuning estándar con HuggingFace Transformers para tareas a nivel de secuencia o de token, usando pooling medio de posiciones no especiales.
+- Fine-tuning estándar con Hugging Face Transformers para tareas a nivel de secuencia o de token, usando pooling medio de posiciones no especiales.
 - Compatibilidad con backends de atención modernos: `sdpa` y `flash_attention_2`, además del `eager` clásico.
 - Capacidades multilingües: no aplica, al tratarse de un modelo biológico y no de lenguaje natural.
 
@@ -56,7 +56,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia: aproximadamente 80 MB en fp32 (19,7 millones de parámetros × 4 bytes), más overhead de activaciones y atención. Con cuantización a fp16 o int8, el consumo se reduce a unos 40 MB o 20 MB respectivamente.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente. Modelos como NVIDIA GTX 1650, RTX 3060 o superiores ejecutan el modelo sin problemas. También es viable la inferencia en CPU.
 - Compatibilidad con GPUs de consumo: sí, es uno de los modelos más ligeros de su categoría; cabe holgadamente en cualquier GPU consumer actual.
-- Opciones de despliegue: HuggingFace Transformers con backend `eager`, `sdpa` o `flash_attention_2`; también es compatible con pipelines de inferencia estándar de la librería. No se documenta soporte específico para vLLM, llama.cpp u Ollama, aunque al ser un modelo BERT estándar podría adaptarse.
+- Opciones de despliegue: Hugging Face Transformers con backend `eager`, `sdpa` o `flash_attention_2`; también es compatible con pipelines de inferencia estándar de la librería. No se documenta soporte específico para vLLM, llama.cpp u Ollama, aunque al ser un modelo BERT estándar podría adaptarse.
 - Latencia y throughput: no disponible en la documentación, pero dado el tamaño del modelo (6 capas, 512 de embedding) la inferencia en GPU es del orden de milisegundos por secuencia de 1024 nucleótidos.
 
 ## Comparativa con modelos similares
@@ -82,8 +82,8 @@ La variante 1024nt se distingue de sus hermanas de 510nt en dos aspectos clave: 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Taykhoom/SpliceBERT-1024nt
-- Colección SpliceBERT en HuggingFace: https://huggingface.co/collections/Taykhoom/splicebert-6a20b72e9bec05b79ce009aa
+- Modelo en Hugging Face: https://huggingface.co/Taykhoom/SpliceBERT-1024nt
+- Colección SpliceBERT en Hugging Face: https://huggingface.co/collections/Taykhoom/splicebert-6a20b72e9bec05b79ce009aa
 - Repositorio original en GitHub: https://github.com/biomed-AI/SpliceBERT
 - Repositorio alternativo con el checkpoint: https://github.com/mengzhanggggg/TCTS-iM6A-2S/tree/main/models_folder/SpliceBERT.1024nt
 - Registro Zenodo del checkpoint original: https://doi.org/10.5281/zenodo.7995778

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `user0074/voice-phishing-koelectra` es un modelo publicado en HuggingFace por el usuario `user0074` bajo licencia Apache 2.0. Su nombre sugiere una orientación hacia la detección de phishing por voz (vishing) y, por la referencia a "koelectra", podría estar basado en la arquitectura KoELECTRA, un modelo de lenguaje coreano. Sin embargo, la model card no contiene ninguna información técnica adicional: no se especifican parámetros, arquitectura, datos de entrenamiento, ni capacidades. El repositorio tiene cero descargas y cero likes, lo que indica que es un modelo recién publicado o sin uso documentado. No se dispone de información pública que permita evaluar su funcionamiento o rendimiento.
+El modelo `user0074/voice-phishing-koelectra` es un modelo publicado en Hugging Face por el usuario `user0074` bajo licencia Apache 2.0. Su nombre sugiere una orientación hacia la detección de phishing por voz (vishing) y, por la referencia a "koelectra", podría estar basado en la arquitectura KoELECTRA, un modelo de lenguaje coreano. Sin embargo, la model card no contiene ninguna información técnica adicional: no se especifican parámetros, arquitectura, datos de entrenamiento, ni capacidades. El repositorio tiene cero descargas y cero likes, lo que indica que es un modelo recién publicado o sin uso documentado. No se dispone de información pública que permita evaluar su funcionamiento o rendimiento.
 
 ## Especificaciones tecnicas
 
@@ -50,7 +50,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/user0074/voice-phishing-koelectra
+- Repositorio en Hugging Face: https://huggingface.co/user0074/voice-phishing-koelectra
 - Referencias generales sobre phishing por voz (no específicas del modelo):
   - https://arxiv.org/pdf/2607.09970
   - https://arxiv.org/html/2607.09970v1

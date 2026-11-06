@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Hermes-Agent es un adaptador LoRA (entrenado con QLoRA de 4 bits) publicado por el usuario Mustifizur en HuggingFace. No es un modelo completo, sino un adaptador PEFT que se monta sobre el modelo base teknium/OpenHermes-2-Mistral-7B, un transformer decoder-only de aproximadamente 7.000 millones de parametros derivado de la arquitectura Mistral. El objetivo declarado, segun la configuracion de entrenamiento, es especializar el modelo base en tareas de agente mediante fine-tuning sobre el dataset THUDM/AgentInstruct.
+Hermes-Agent es un adaptador LoRA (entrenado con QLoRA de 4 bits) publicado por el usuario Mustifizur en Hugging Face. No es un modelo completo, sino un adaptador PEFT que se monta sobre el modelo base teknium/OpenHermes-2-Mistral-7B, un transformer decoder-only de aproximadamente 7.000 millones de parametros derivado de la arquitectura Mistral. El objetivo declarado, segun la configuracion de entrenamiento, es especializar el modelo base en tareas de agente mediante fine-tuning sobre el dataset THUDM/AgentInstruct.
 
 El entrenamiento se realizo con Axolotl 0.4.0 y una unica epoca sobre seis subconjuntos de AgentInstruct (os, db, alfworld, webshop, kg y mind2web), lo que sugiere una intencion de cubrir escenarios de uso de herramientas, navegacion web, entornos simulados y razonamiento multi-paso. La longitud de secuencia configurada es de 8192 tokens, con sample packing y atencion FlashAttention. La perdida de validacion final reportada es de 0,3002.
 
@@ -94,7 +94,7 @@ La comparacion cuantitativa de rendimiento no es posible porque Hermes-Agent no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Mustifizur/Hermes-Agent
+- Modelo en Hugging Face: https://huggingface.co/Mustifizur/Hermes-Agent
 - Modelo base: https://huggingface.co/teknium/OpenHermes-2-Mistral-7B
 - Dataset de entrenamiento: https://huggingface.co/datasets/THUDM/AgentInstruct
 - Framework de entrenamiento Axolotl: https://github.com/OpenAccess-AI-Collective/axolotl

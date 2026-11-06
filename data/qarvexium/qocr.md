@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para establecer una comparativa con mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Qarvexium/QOCR
-- Perfil del autor en HuggingFace: https://huggingface.co/Qarvexium
+- Modelo en Hugging Face: https://huggingface.co/Qarvexium/QOCR
+- Perfil del autor en Hugging Face: https://huggingface.co/Qarvexium
 - Repositorio de QED-Base-v2 (otro modelo del autor): https://huggingface.co/Qarvexium/QED-Base-v2
 - Repositorio de QED-B1-Instruction-v1 (otro modelo del autor): https://huggingface.co/Qarvexium/QED-B1-Instruction-v1

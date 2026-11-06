@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento de terceros en la información proporciona
 
 | Modelo | Tipo | Parámetros entrenables | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| dptlab-klein-boft-subject5 | Adaptador BOFT sobre transformer de difusión | 3,0 M | Apache 2.0 | Público en HuggingFace, 0 descargas |
+| dptlab-klein-boft-subject5 | Adaptador BOFT sobre transformer de difusión | 3,0 M | Apache 2.0 | Público en Hugging Face, 0 descargas |
 | FLUX.2-klein-4B (base) | Modelo de difusión texto-a-imagen | No disponible | No disponible | Referenciado como base; licencia no indicada en la información disponible |
 | Otros adaptadores de la misma familia dptlab | No disponible | No disponible | No disponible | El autor menciona seis métodos comparados en `RESULTS.md`, sin datos accesibles |
 
@@ -107,7 +107,7 @@ No se han proporcionado modelos alternativos comparables (por ejemplo, LoRA de p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OnePunchMonk101010/dptlab-klein-boft-subject5
+- Modelo en Hugging Face: https://huggingface.co/OnePunchMonk101010/dptlab-klein-boft-subject5
 - Modelo base: https://huggingface.co/black-forest-labs/FLUX.2-klein-4B
 - Repositorio del framework dptlab (diffusion-post-training-lab): https://github.com/OnePunchMonk/diffusion-post-training-lab
 - `RESULTS.md` con los seis métodos comparados y los factores de confusión: referenciado en la model card dentro del propio repositorio del modelo.

@@ -86,8 +86,8 @@ Los unicos modelos comparables para los que hay datos en la informacion proporci
 
 | Modelo | Parametros | Contexto | Tasa de postura | Perdida de datos irrecuperables (retenido) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| B2-9B (este modelo, GGUF) | 9,2 B | 32 768 tokens | 0 % | 0/24 | Apache 2.0 | HuggingFace, formato GGUF Q8_0 |
-| B0-9B | 9,2 B | 32 768 tokens (referencia) | 16,7 % | 8/24 | no disponible | HuggingFace |
+| B2-9B (este modelo, GGUF) | 9,2 B | 32 768 tokens | 0 % | 0/24 | Apache 2.0 | Hugging Face, formato GGUF Q8_0 |
+| B0-9B | 9,2 B | 32 768 tokens (referencia) | 16,7 % | 8/24 | no disponible | Hugging Face |
 | Qwen3.5-9B (vanilla) | 9,2 B | no disponible | no disponible | 8/24 | no disponible | distribuido por Alibaba |
 
 Frente a Qwen3.5-9B, B2-9B pierde capacidad de generar respuestas vacias tras una herramienta (0/14 frente a 14/14) y mejora la seguridad destructiva (5/24 frente a 16/24 en destruccion en el turno 1). Frente a B0-9B, mejora en seguridad destructiva y en hembench (55,1 % frente a 53,6 %), pero empeora en el banco de herramientas de 47 casos (42/47 frente a 46/47) y pierde por completo la expresion de opiniones. Los pesos base de Qwen3.5-9B estan sujetos a la licencia de su distribuidor original, no detallada en esta informacion.
@@ -106,7 +106,7 @@ Frente a Qwen3.5-9B, B2-9B pierde capacidad de generar respuestas vacias tras un
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/schneewolflabs/B2-9B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/schneewolflabs/B2-9B-GGUF
 - Modelo base: https://huggingface.co/schneewolflabs/B2-9B
 - Dataset Geselle: https://huggingface.co/datasets/schneewolflabs/Geselle
 - Dataset Vorsicht-DPO: https://huggingface.co/datasets/schneewolflabs/Vorsicht-DPO

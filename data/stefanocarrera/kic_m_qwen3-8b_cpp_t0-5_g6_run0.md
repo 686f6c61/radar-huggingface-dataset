@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez deriva de Qwen3-8B-Base de Alibaba. Lo publica el usuario stefanocarrera en HuggingFace bajo licencia Apache 2.0. Por el nombre del repositorio (`cpp`, `t0.5`, `g6`, `run0`) parece un experimento de ajuste orientado a generacion de codigo (probablemente C++), con temperatura 0.5, 6 generaciones y la primera ejecucion de una serie. No obstante, la model card no documenta el dataset, el procedimiento ni los hiperparametros, por lo que esa interpretacion no se puede confirmar.
+`stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0` es un ajuste fino (fine-tune) del modelo base `unsloth/Qwen3-8B-Base-unsloth-bnb-4bit`, que a su vez deriva de Qwen3-8B-Base de Alibaba. Lo publica el usuario stefanocarrera en Hugging Face bajo licencia Apache 2.0. Por el nombre del repositorio (`cpp`, `t0.5`, `g6`, `run0`) parece un experimento de ajuste orientado a generacion de codigo (probablemente C++), con temperatura 0.5, 6 generaciones y la primera ejecucion de una serie. No obstante, la model card no documenta el dataset, el procedimiento ni los hiperparametros, por lo que esa interpretacion no se puede confirmar.
 
 El modelo es un transformer denso de 8.000 millones de parametros, la variante base de la familia Qwen3 (sin modo thinking explicito ni instrucciones de chat por defecto). Se ha entrenado con la libreria Unsloth, que acelera el fine-tuning aproximadamente 2x, y se distribuye en formato safetensors con pesos de 0.2 GB en el repositorio: un tamano anormalmente pequeno para 8B parametros, lo que sugiere que el repo contiene solo adaptadores LoRA, pesos parciales o una version altamente cuantizada no declarada en la model card.
 
@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0 | 8B | no disponible | Apache 2.0 | HuggingFace, 0 descargas | Fine-tune no documentado |
-| Qwen/Qwen3-8B | 8B | 32 768 tokens nativos | Apache 2.0 | HuggingFace, ampliamente usado | Modelo base oficial con benchmarks publicados |
-| Meta-Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | HuggingFace | Requiere aceptar licencia; contexto mayor |
-| Mistral-7B-v0.3 | 7B | 32 768 tokens | Apache 2.0 | HuggingFace | Alternativa densa de tamano similar |
+| stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0 | 8B | no disponible | Apache 2.0 | Hugging Face, 0 descargas | Fine-tune no documentado |
+| Qwen/Qwen3-8B | 8B | 32 768 tokens nativos | Apache 2.0 | Hugging Face, ampliamente usado | Modelo base oficial con benchmarks publicados |
+| Meta-Llama-3.1-8B | 8B | 128 000 tokens | Llama 3.1 Community License | Hugging Face | Requiere aceptar licencia; contexto mayor |
+| Mistral-7B-v0.3 | 7B | 32 768 tokens | Apache 2.0 | Hugging Face | Alternativa densa de tamano similar |
 
 ## Limitaciones y advertencias
 
@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- [HuggingFace: stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0)
+- [Hugging Face: stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0](https://huggingface.co/stefanocarrera/kic_M_Qwen3-8B_cpp_t0.5_g6_run0)
 - [Modelo base: unsloth/Qwen3-8B-Base-unsloth-bnb-4bit](https://huggingface.co/unsloth/Qwen3-8B-Base-unsloth-bnb-4bit)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

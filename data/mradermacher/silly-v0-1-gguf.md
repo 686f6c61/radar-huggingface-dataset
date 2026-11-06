@@ -34,7 +34,7 @@ El repositorio registra 0 descargas y 0 likes en el momento de la consulta, con 
 
 No disponible. La informacion proporcionada no incluye ningun dato sobre la arquitectura del modelo base `wave-on-discord/silly-v0.1` (no se indica si es un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un modelo de espacio de estados), ni sobre el numero de parametros, el volumen de tokens de entrenamiento, la composicion del dataset o las tecnicas de alineacion empleadas (RLHF, DPO, etc.).
 
-Lo unico verificable es el proceso de posprocesado aplicado en este repositorio: conversion desde pesos en formato HuggingFace (`convert_type: hf`) y cuantizacion estatica con la version 2 de la herramienta de quantize, con tensores de salida cuantizados. Las cuantizaciones se ofrecen en dos familias: la serie K de llama.cpp (Q2_K a Q6_K, mas Q8_0) y el esquema IQ4_XS (importancia-based, 4 bits), ademas de una version sin cuantizar en F16. No hay informacion sobre decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica.
+Lo unico verificable es el proceso de posprocesado aplicado en este repositorio: conversion desde pesos en formato Hugging Face (`convert_type: hf`) y cuantizacion estatica con la version 2 de la herramienta de quantize, con tensores de salida cuantizados. Las cuantizaciones se ofrecen en dos familias: la serie K de llama.cpp (Q2_K a Q6_K, mas Q8_0) y el esquema IQ4_XS (importancia-based, 4 bits), ademas de una version sin cuantizar en F16. No hay informacion sobre decodificacion especulativa, atencion lineal ni ninguna otra innovacion tecnica.
 
 ## Capacidades
 
@@ -104,6 +104,6 @@ No disponible. La informacion proporcionada no identifica la categoria, el taman
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/silly-v0.1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/silly-v0.1-GGUF
 - Modelo base: https://huggingface.co/wave-on-discord/silly-v0.1
 - Resultados de busqueda web: no se encontro ningun enlace relevante al modelo en la busqueda proporcionada.

@@ -6,7 +6,7 @@ mergekit-65 es un modelo de lenguaje de 8.000 millones de parámetros creado med
 
 El resultado es un modelo conversacional orientado al roleplay y a interacciones sin censura, dado que los modelos fusionados incluyen variantes "uncensored" y especializadas en diálogo. Al estar basado en la arquitectura Llama-3.1, hereda una ventana de contexto de 128.000 tokens y el vocabulario multilingüe de su familia. La relevancia de este modelo reside en su naturaleza experimental: representa un caso práctico de fusión de modelos con mergekit, una técnica que permite obtener modelos con capacidades combinadas sin los costes de un fine-tuning tradicional.
 
-El modelo se distribuye únicamente en formato safetensors con precisión float16, ocupando aproximadamente 16,1 GB en el repositorio de HuggingFace. No se ha publicado ninguna métrica de rendimiento, evaluación comparativa ni información sobre el proceso de entrenamiento, más allá de la configuración YAML utilizada para la fusión. La ausencia de descargas y de interacciones en la plataforma sugiere que se trata de un experimento reciente o de baja difusión.
+El modelo se distribuye únicamente en formato safetensors con precisión float16, ocupando aproximadamente 16,1 GB en el repositorio de Hugging Face. No se ha publicado ninguna métrica de rendimiento, evaluación comparativa ni información sobre el proceso de entrenamiento, más allá de la configuración YAML utilizada para la fusión. La ausencia de descargas y de interacciones en la plataforma sugiere que se trata de un experimento reciente o de baja difusión.
 
 ## Especificaciones tecnicas
 
@@ -47,7 +47,7 @@ La configuración de fusión especifica el uso de máscaras int8 (int8_mask: tru
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la información disponible. El repositorio de HuggingFace no incluye ninguna métrica de evaluación (MMLU, HumanEval, GSM8K u otros) ni comparativas con modelos similares.
+No se han publicado resultados de benchmarks en la información disponible. El repositorio de Hugging Face no incluye ninguna métrica de evaluación (MMLU, HumanEval, GSM8K u otros) ni comparativas con modelos similares.
 
 ## Requisitos de hardware
 
@@ -82,9 +82,9 @@ No se han publicado benchmarks que permitan comparar el rendimiento del modelo f
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/MergekitCloud/mergekit-65
+- Repositorio de Hugging Face: https://huggingface.co/MergekitCloud/mergekit-65
 - mergekit (GitHub): https://github.com/arcee-ai/mergekit
 - Artículo Model Stock (arXiv): https://arxiv.org/abs/2403.19522
 - Artículo de MergeKit (arXiv): https://arxiv.org/html/2403.13257v2
-- Blog de HuggingFace sobre fusión de modelos: https://huggingface.co/blog/mlabonne/merge-models
+- Blog de Hugging Face sobre fusión de modelos: https://huggingface.co/blog/mlabonne/merge-models
 - Guía comunitaria de MergeKit: https://www.mergekit.com/

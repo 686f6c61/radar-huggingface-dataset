@@ -67,7 +67,7 @@ No se dispone de información pública sobre otros modelos entrenados con la mis
 - **Dependencia de la calibración del robot**: el modelo asume que el robot `so_follower` está correctamente calibrado y que las cámaras están colocadas como en el entrenamiento. Cualquier cambio en la cinemática o en la posición de las cámaras puede degradar el rendimiento.
 - **Sin soporte de lenguaje natural**: no se puede interactuar con el modelo mediante texto; es un sistema de control de bajo nivel.
 - **Licencia Apache 2.0**: permite uso comercial, pero el usuario debe cumplir con las condiciones de atribución y redistribución. No hay restricciones adicionales conocidas.
-- **Fecha de creación futura**: el modelo fue creado en agosto de 2026 (según HuggingFace), lo que sugiere que podría ser un artefacto de prueba o un proyecto personal, no un modelo de producción validado.
+- **Fecha de creación futura**: el modelo fue creado en agosto de 2026 (según Hugging Face), lo que sugiere que podría ser un artefacto de prueba o un proyecto personal, no un modelo de producción validado.
 
 ## Enlaces
 

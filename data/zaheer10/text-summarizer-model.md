@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `zaheer10/text-summarizer-model` es un modelo de resumen de texto publicado en HuggingFace por el usuario zaheer10. La model card es prácticamente vacía: únicamente declara la licencia Apache 2.0, sin información sobre arquitectura, parámetros, entrenamiento o capacidades. Fue creado el 29 de agosto de 2026 y no registra descargas ni valoraciones.
+El modelo `zaheer10/text-summarizer-model` es un modelo de resumen de texto publicado en Hugging Face por el usuario zaheer10. La model card es prácticamente vacía: únicamente declara la licencia Apache 2.0, sin información sobre arquitectura, parámetros, entrenamiento o capacidades. Fue creado el 29 de agosto de 2026 y no registra descargas ni valoraciones.
 
-A pesar de su nombre, no se dispone de documentación técnica que permita verificar su funcionamiento, tamaño o rendimiento. La ausencia de metadatos y de una model card sustancial hace que cualquier uso en producción sea arriesgado. Este modelo es relevante únicamente como ejemplo de publicación mínima en HuggingFace, no como una herramienta fiable para tareas de resumen.
+A pesar de su nombre, no se dispone de documentación técnica que permita verificar su funcionamiento, tamaño o rendimiento. La ausencia de metadatos y de una model card sustancial hace que cualquier uso en producción sea arriesgado. Este modelo es relevante únicamente como ejemplo de publicación mínima en Hugging Face, no como una herramienta fiable para tareas de resumen.
 
 ## Especificaciones tecnicas
 
@@ -63,4 +63,4 @@ No disponible. No se conocen modelos comparables de la misma categoría con los 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zaheer10/text-summarizer-model
+- Modelo en Hugging Face: https://huggingface.co/zaheer10/text-summarizer-model

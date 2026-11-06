@@ -75,6 +75,6 @@ No disponible. La información proporcionada no incluye modelos comparables de l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/asuka1975/saihai-v1-8b-koko-2bit
+- Modelo en Hugging Face: https://huggingface.co/asuka1975/saihai-v1-8b-koko-2bit
 - Modelo base: https://huggingface.co/hotchpotch/saihai-v1-8b
 - Repositorio del proyecto koko: https://github.com/asuka1975/koko

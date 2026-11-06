@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AnonymousCS/antielite_classifier_bsample_009_s43 es un checkpoint de clasificación de texto publicado en HuggingFace por el usuario AnonymousCS. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BERT con 177.854.978 parámetros almacenados en formato safetensors, y un tamaño de repositorio de 0,7 GB. El nombre sugiere un clasificador orientado a detectar contenido "elitista" o de élite, aunque esta interpretación es una inferencia a partir del identificador y no está confirmada por ninguna model card, ya que el repositorio no incluye documentación, licencia, idiomas declarados ni pipeline de inferencia.
+AnonymousCS/antielite_classifier_bsample_009_s43 es un checkpoint de clasificación de texto publicado en Hugging Face por el usuario AnonymousCS. Según los metadatos del repositorio, se trata de un modelo basado en la arquitectura BERT con 177.854.978 parámetros almacenados en formato safetensors, y un tamaño de repositorio de 0,7 GB. El nombre sugiere un clasificador orientado a detectar contenido "elitista" o de élite, aunque esta interpretación es una inferencia a partir del identificador y no está confirmada por ninguna model card, ya que el repositorio no incluye documentación, licencia, idiomas declarados ni pipeline de inferencia.
 
 La relevancia de este checkpoint es muy limitada en el momento de redactar esta ficha: acumula 8 descargas y 0 likes, fue creado y actualizado el 15 de octubre de 2026 con apenas ocho segundos de diferencia entre ambos eventos, y no cuenta con resultados de evaluación publicados. El sufijo "bsample_009_s43" apunta a que forma parte de una barrida experimental de muestras (muestra número 9, semilla 43) dentro de una familia mayor, de la que existe al menos una variante agregada publicada bajo el identificador AnonymousCS/antielite_classifier_all.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM es suficiente, incluidas GTX 1650, RTX 3050, RTX 3060, RTX 4060 y superiores. En el extremo alto, A100, H100 o L40S permiten lotes grandes y maximizar el throughput, aunque estan sobredimensionadas para este tamano.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU discreta moderna e incluso en iGPU con suficiente memoria compartida.
 - Ejecucion en CPU: viable en tiempo casi interactivo para secuencias cortas; es el escenario natural para un clasificador de este tamano.
-- Opciones de despliegue: el formato safetensors es compatible con HuggingFace Transformers, Text Embeddings Inference (TEI), TorchServe y ONNX Runtime tras exportacion. llama.cpp, Ollama y vLLM estan orientados a modelos generativos y no aplican directamente a un encoder de clasificacion.
+- Opciones de despliegue: el formato safetensors es compatible con Hugging Face Transformers, Text Embeddings Inference (TEI), TorchServe y ONNX Runtime tras exportacion. llama.cpp, Ollama y vLLM estan orientados a modelos generativos y no aplican directamente a un encoder de clasificacion.
 - Latencia y throughput: no se han publicado mediciones para este checkpoint. Como referencia generica para un encoder de ~178 M de parametros, cabe esperar latencias del orden de milisegundos por lote pequeño en GPU moderna y de decenas de milisegundos en CPU, con un throughput que escala casi linealmente con el tamaño de lote hasta saturar el computo.
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se dispone de metricas de rendimiento de este checkpoint, por lo que la compa
 
 | Modelo | Parametros | Contexto tipico | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| AnonymousCS/antielite_classifier_bsample_009_s43 | 177,85 M | no disponible | no disponible | HuggingFace, 8 descargas |
+| AnonymousCS/antielite_classifier_bsample_009_s43 | 177,85 M | no disponible | no disponible | Hugging Face, 8 descargas |
 | BERT-base-uncased | 110 M | 512 tokens | Apache 2.0 | Ampliamente disponible |
 | RoBERTa-base | 125 M | 512 tokens | MIT | Ampliamente disponible |
 | DeBERTa-v3-base | 184 M | 512 tokens | MIT | Ampliamente disponible |
@@ -97,6 +97,6 @@ El unico rasgo diferencial objetivo de este checkpoint frente a las alternativas
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_009_s43
+- Modelo en Hugging Face: https://huggingface.co/AnonymousCS/antielite_classifier_bsample_009_s43
 - Variante agregada de la misma familia: https://huggingface.co/AnonymousCS/antielite_classifier_all
-- Perfil del autor en HuggingFace: https://huggingface.co/AnonymousCS
+- Perfil del autor en Hugging Face: https://huggingface.co/AnonymousCS

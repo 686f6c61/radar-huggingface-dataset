@@ -2,7 +2,7 @@
 
 ## Resumen
 
-WasteWise Garbage Classifier es un modelo de clasificacion de imagenes publicado por el usuario Arihant0902 en HuggingFace, consistente en un YOLOv8n-cls afinado para segregar residuos en ocho categorias (battery, biological, cardboard, glass, metal, paper, plastic y trash). El autor lo distribuye exclusivamente como artefacto ONNX (opset 17) de aproximadamente 5,5 MB, lo que lo convierte en un modelo orientado al despliegue en el borde mas que a la experimentacion en entrenamiento.
+WasteWise Garbage Classifier es un modelo de clasificacion de imagenes publicado por el usuario Arihant0902 en Hugging Face, consistente en un YOLOv8n-cls afinado para segregar residuos en ocho categorias (battery, biological, cardboard, glass, metal, paper, plastic y trash). El autor lo distribuye exclusivamente como artefacto ONNX (opset 17) de aproximadamente 5,5 MB, lo que lo convierte en un modelo orientado al despliegue en el borde mas que a la experimentacion en entrenamiento.
 
 El modelo se entrena sobre un dataset propio denominado garbage_office, con unas 15.000 imagenes repartidas en las ocho clases, durante 50 epocas con el pipeline de aumento de datos estandar de Ultralytics y entradas de 224x224 pixeles en RGB normalizadas a [0,1]. El autor declara un 94,4% de top-1 sobre el conjunto de validacion, aunque no publica la composicion exacta del split ni metricas por clase.
 
@@ -106,8 +106,8 @@ Nota: no se ha encontrado en la busqueda web ningun material relacionado con est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Arihant0902/wastewise-garbage-cls
-- Perfil del autor en HuggingFace: https://huggingface.co/Arihant0902
+- Modelo en Hugging Face: https://huggingface.co/Arihant0902/wastewise-garbage-cls
+- Perfil del autor en Hugging Face: https://huggingface.co/Arihant0902
 - Ultralytics YOLOv8 (framework de entrenamiento y exportacion): https://github.com/ultralytics/ultralytics
 - ONNX Runtime (runtime de inferencia referenciado en la model card): https://onnxruntime.ai/
 

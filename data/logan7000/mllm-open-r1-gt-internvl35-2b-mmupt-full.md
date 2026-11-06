@@ -67,6 +67,6 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logan7000/mllm-open-r1-gt-internvl35-2b-mmupt-full
+- Modelo en Hugging Face: https://huggingface.co/logan7000/mllm-open-r1-gt-internvl35-2b-mmupt-full
 - Repositorio de InternVL (OpenGVLab): https://github.com/OpenGVLab/InternVL
 - Proyecto mllm (no relacionado directamente, pero aparece en búsquedas): https://github.com/UbiquitousLearning/mllm

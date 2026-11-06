@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alejandrogonzalez1999/contrastive` es un repositorio de investigación publicado en HuggingFace por el usuario alejandrogonzalez1999 que contiene un prototipo de arquitectura bautizado como "Dino for Contrastive". Según su propia model card, se trata de una implementación propia en PyTorch orientada al aprendizaje contrastivo, acompañada de un script de fine-tuning (`finetune.py`), un fichero de configuración (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
+`alejandrogonzalez1999/contrastive` es un repositorio de investigación publicado en Hugging Face por el usuario alejandrogonzalez1999 que contiene un prototipo de arquitectura bautizado como "Dino for Contrastive". Según su propia model card, se trata de una implementación propia en PyTorch orientada al aprendizaje contrastivo, acompañada de un script de fine-tuning (`finetune.py`), un fichero de configuración (`config.json`), una receta de entrenamiento por defecto (`training_args.json`) y un checkpoint de inicialización en formato safetensors.
 
 El dato más relevante es que el checkpoint incluido **no está entrenado**: el autor lo describe explícitamente como una inicialización válida para pruebas de humo (*smoke tests*) y no como un modelo con rendimiento verificado. El recuento real de parámetros en safetensors es de 49.600, una cifra que contrasta con la etiqueta "huge" (enorme) que aparece en la configuración de arquitectura, lo que sugiere que la escala declarada corresponde a los ajustes por defecto del script y no al checkpoint publicado.
 
@@ -97,6 +97,6 @@ La comparación se limita a la categoria y a la licencia; no existen datos de re
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alejandrogonzalez1999/contrastive
+- Hugging Face: https://huggingface.co/alejandrogonzalez1999/contrastive
 - Paper, blog, repositorio o demo adicionales: no disponible.
 - La busqueda web realizada no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados correspondian a paginas sobre el distrito de Aso (prefectura de Kumamoto, Japon) y no guardan relacion con este repositorio.

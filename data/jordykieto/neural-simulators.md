@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Neural Simulator es un conjunto de dos modelos de mundo (*world models*) compactos y condicionados por acciones, desarrollados por Jordy Kieto y publicados en HuggingFace bajo el identificador `jordykieto/neural-simulators`. Cada modelo predice el siguiente fotograma a partir de su propia salida anterior, de modo que actúa como un simulador interactivo que se ejecuta íntegramente en el navegador sin invocar el simulador original. El primero emula la conducción en CARLA; el segundo emula el vuelo del juego TinySkies.
+Neural Simulator es un conjunto de dos modelos de mundo (*world models*) compactos y condicionados por acciones, desarrollados por Jordy Kieto y publicados en Hugging Face bajo el identificador `jordykieto/neural-simulators`. Cada modelo predice el siguiente fotograma a partir de su propia salida anterior, de modo que actúa como un simulador interactivo que se ejecuta íntegramente en el navegador sin invocar el simulador original. El primero emula la conducción en CARLA; el segundo emula el vuelo del juego TinySkies.
 
 La relevancia de esta publicación es doble. Por un lado, demuestra que es posible comprimir dinámicas visuales interactivas en modelos de apenas 1,58 M y 3,79 M de parámetros, con tiempos de paso de 5,0 ms y 18,3 ms respectivamente en WebAssembly sobre un Apple M1. Por otro, distribuye los pesos en formato ONNX byte a byte idénticos a los del demo desplegado, junto con las fuentes Keras y un manifiesto con MD5 y firmas de entrada/salida de cada fichero, lo que facilita la reproducibilidad.
 
-No se trata de un modelo de lenguaje: es un par de modelos generativos visuales orientados a simulación interactiva. La model card no especifica licencia, idiomas ni pipeline, y el repositorio ocupa 0,0 GB según HuggingFace, aunque la propia model card detalla tamaños de 6,4 MB (fp32) y 15,2 MB (fp32) para los dos modelos.
+No se trata de un modelo de lenguaje: es un par de modelos generativos visuales orientados a simulación interactiva. La model card no especifica licencia, idiomas ni pipeline, y el repositorio ocupa 0,0 GB según Hugging Face, aunque la propia model card detalla tamaños de 6,4 MB (fp32) y 15,2 MB (fp32) para los dos modelos.
 
 ## Especificaciones tecnicas
 
@@ -86,7 +86,7 @@ No se dispone de datos comparativos de rendimiento entre estos modelos en la inf
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jordykieto/neural-simulators
+- Hugging Face: https://huggingface.co/jordykieto/neural-simulators
 - Repositorio GitHub (código, paper y evaluación): https://github.com/JordyKieto/neural-simulators
 - Demo en vivo: https://drift-sim-production.up.railway.app/
 - Juego original TinySkies: https://github.com/dannylimanseta/tinyskies

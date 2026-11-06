@@ -103,7 +103,7 @@ Las comparaciones con DeepSeek-v3, GPT-4o y o1-preview provienen de las afirmaci
 
 ## Enlaces
 
-- Repositorio HuggingFace (esta cuantización): https://huggingface.co/BaronSecurity/Qwen3-14B-BaronLLM-v2-Q4_0-GGUF
+- Repositorio Hugging Face (esta cuantización): https://huggingface.co/BaronSecurity/Qwen3-14B-BaronLLM-v2-Q4_0-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen3-14B
 - Repositorio Q8_0 referenciado en la model card: https://huggingface.co/AlicanKiraz0/Qwen3-14B-BaronLLM-v2-Q8
 - Dataset de instruction tuning: https://huggingface.co/datasets/Trendyol/Trendyol-Cybersecurity-Instruction-Tuning-Dataset

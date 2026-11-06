@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed10`, publicado por el usuario de HuggingFace `francesca9805`. Se trata de un transformer autoregresivo con arquitectura GPT-2 y 124.770.816 parametros (aproximadamente 124,8 millones), distribuido en formato safetensors y con un tamano de repositorio de 0,3 GB. El pipeline declarado es `text-generation` y la libreria de referencia es `transformers`.
+El modelo `jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` es un ajuste fino (fine-tuning) de tipo SFT sobre el checkpoint `francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed10`, publicado por el usuario de Hugging Face `francesca9805`. Se trata de un transformer autoregresivo con arquitectura GPT-2 y 124.770.816 parametros (aproximadamente 124,8 millones), distribuido en formato safetensors y con un tamano de repositorio de 0,3 GB. El pipeline declarado es `text-generation` y la libreria de referencia es `transformers`.
 
 El modelo se ha entrenado con la libreria TRL (version 0.23.0) mediante aprendizaje supervisado (SFT), segun indica su model card. El identificador del modelo sugiere un trabajo centrado en japones (las siglas `jpn`/`jpan`) y un corpus de aproximadamente 100 MB, aunque la model card no confirma ni el idioma ni la composicion del dataset de entrenamiento. El sufijo `ckpt500` indica que se trata del checkpoint correspondiente al paso 500, y `seed10` que se uso la semilla 10 en esa ejecucion.
 
@@ -66,11 +66,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` | 124,8 M | no disponible | no disponible | HuggingFace, safetensors, 0 descargas |
+| `francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10` | 124,8 M | no disponible | no disponible | Hugging Face, safetensors, 0 descargas |
 | GPT-2 small (OpenAI) | 124 M | 1024 tokens | Modified MIT | Ampliamente disponible en `transformers` y convertido a GGUF |
 | DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Disponible en `transformers` y GGUF |
 | Pythia-160M (EleutherAI) | 162 M | 2048 tokens | Apache-2.0 | Disponible en `transformers`, con checkpoints intermedios publicados |
-| SmolLM-135M (HuggingFace) | 135 M | 2048 tokens | Apache-2.0 | Disponible en `transformers`, GGUF y ONNX |
+| SmolLM-135M (Hugging Face) | 135 M | 2048 tokens | Apache-2.0 | Disponible en `transformers`, GGUF y ONNX |
 
 La diferencia principal frente a estas alternativas no es de rendimiento (no hay datos que lo permitan afirmar), sino de trazabilidad: este modelo carece de licencia declarada, de idioma confirmado, de composicion de dataset y de resultados publicados, mientras que las alternativas citadas cuentan con documentacion, licencia explicita y pipelines de cuantizacion mantenidos.
 
@@ -89,7 +89,7 @@ La diferencia principal frente a estas alternativas no es de rendimiento (no hay
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10
 - Modelo base: https://huggingface.co/francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed10
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/29bw2yp3
 - Repositorio de TRL: https://github.com/huggingface/trl

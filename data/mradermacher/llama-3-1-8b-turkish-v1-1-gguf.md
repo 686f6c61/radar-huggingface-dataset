@@ -28,7 +28,7 @@ Su relevancia práctica es doble: por un lado, permite desplegar un modelo conve
 
 La model card de esta cuantización no describe la arquitectura ni el proceso de entrenamiento del modelo subyacente; se limita a indicar que son cuantizaciones estáticas del repositorio erenzeytunn/Llama-3.1-8b-Turkish-v1.1. Por herencia del modelo base Llama 3.1 8B, la arquitectura esperable es un transformer decoder-only denso con attention de consultas agrupadas (GQA), SwiGLU en las capas feed-forward y RoPE como codificación posicional, con aproximadamente 8.000 millones de parámetros. Estos detalles no están confirmados explícitamente para este ajuste fino en la información disponible.
 
-Sobre el entrenamiento del ajuste fino turco no hay ningún dato publicado en la información proporcionada: se desconoce el número de tokens, la composición del dataset, si se aplicaron técnicas como SFT, DPO o RLHF, y si se realizó alguna modificación estructural (por ejemplo, ampliación del vocabulario para turco). En cuanto al proceso de cuantización sí hay datos concretos: se empleó la versión 2 del pipeline de mradermacher con cuantización de tensores de salida y conversión desde formato HuggingFace, generando cuantizaciones estáticas. El propio autor advierte que las cuantizaciones ponderadas con imatrix no están disponibles y que, si no aparecen en la semana siguiente a las estáticas, probablemente no estén planificadas.
+Sobre el entrenamiento del ajuste fino turco no hay ningún dato publicado en la información proporcionada: se desconoce el número de tokens, la composición del dataset, si se aplicaron técnicas como SFT, DPO o RLHF, y si se realizó alguna modificación estructural (por ejemplo, ampliación del vocabulario para turco). En cuanto al proceso de cuantización sí hay datos concretos: se empleó la versión 2 del pipeline de mradermacher con cuantización de tensores de salida y conversión desde formato Hugging Face, generando cuantizaciones estáticas. El propio autor advierte que las cuantizaciones ponderadas con imatrix no están disponibles y que, si no aparecen en la semana siguiente a las estáticas, probablemente no estén planificadas.
 
 ## Capacidades
 
@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Formato y cuantizaciones | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama-3.1-8b-Turkish-v1.1-GGUF | 8,1B | No documentado (el base Llama 3.1 soporta 128k) | GGUF, 12 cuantizaciones estáticas | No disponible | HuggingFace, 0 descargas, 0 likes |
-| erenzeitunn/Llama-3.1-8b-Turkish-v1.1 (original) | 8,1B | No documentado | Safetensors | No disponible en la información proporcionada | HuggingFace |
+| Llama-3.1-8b-Turkish-v1.1-GGUF | 8,1B | No documentado (el base Llama 3.1 soporta 128k) | GGUF, 12 cuantizaciones estáticas | No disponible | Hugging Face, 0 descargas, 0 likes |
+| erenzeitunn/Llama-3.1-8b-Turkish-v1.1 (original) | 8,1B | No documentado | Safetensors | No disponible en la información proporcionada | Hugging Face |
 | Llama 3.1 8B Instruct | 8,0B | 128.000 tokens | Safetensors, GGUF (comunidad), AWQ, GPTQ | Llama 3.1 Community License | Ampliamente disponible |
 | Qwen2.5 7B Instruct | 7,6B | 32.768 tokens (128k en variantes Turbo) | Safetensors, GGUF, AWQ, GPTQ | Apache 2.0 | Ampliamente disponible |
 

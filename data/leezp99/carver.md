@@ -72,7 +72,7 @@ No se dispone de comparaciones publicadas con otros codecs de voz como EnCodec, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/leezp99/carver
+- Hugging Face: https://huggingface.co/leezp99/carver
 - Repositorio GitHub: https://github.com/leezp99/carver
 - Página de demostración: https://leezp99.github.io/carver-demo/
 - Perfil del autor en GitHub: https://github.com/Leezp99

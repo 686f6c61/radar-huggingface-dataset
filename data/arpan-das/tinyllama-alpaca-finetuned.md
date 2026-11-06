@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Arpan-Das/tinyllama-alpaca-finetuned` es un ajuste fino (fine-tuning) del modelo base TinyLlama-1.1B sobre el dataset Alpaca, orientado a mejorar las capacidades de instrucción y diálogo de un modelo pequeño y eficiente. El autor, Arpan-Das, lo ha publicado en HuggingFace con la librería `transformers` y pesos en formato `safetensors`. Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla automática sin datos rellenados, el repositorio tiene un tamaño de 0.0 GB (probablemente vacío o con archivos simbólicos) y no se proporcionan especificaciones técnicas, licencia ni idiomas.
+El modelo `Arpan-Das/tinyllama-alpaca-finetuned` es un ajuste fino (fine-tuning) del modelo base TinyLlama-1.1B sobre el dataset Alpaca, orientado a mejorar las capacidades de instrucción y diálogo de un modelo pequeño y eficiente. El autor, Arpan-Das, lo ha publicado en Hugging Face con la librería `transformers` y pesos en formato `safetensors`. Sin embargo, la información disponible es extremadamente limitada: la model card es una plantilla automática sin datos rellenados, el repositorio tiene un tamaño de 0.0 GB (probablemente vacío o con archivos simbólicos) y no se proporcionan especificaciones técnicas, licencia ni idiomas.
 
 A pesar de la falta de documentación, el nombre sugiere que se trata de un experimento de fine-tuning similar a otros repositorios homónimos encontrados en la web (por ejemplo, `RajGana/tinyllama-alpaca-finetuned`), que emplean QLoRA sobre TinyLlama-1.1B-Chat-v1.0 con el dataset Alpaca. No obstante, al no existir datos confirmados, esta ficha debe interpretarse con cautela: no se puede garantizar que el modelo funcione correctamente ni que esté completo.
 
@@ -17,7 +17,7 @@ A pesar de la falta de documentación, el nombre sugiere que se trata de un expe
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
 | Licencia | no disponible |
-| Formato de pesos | safetensors (según tags de HuggingFace) |
+| Formato de pesos | safetensors (según tags de Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -58,9 +58,9 @@ No se dispone de datos comparativos verificados. Como referencia, se pueden menc
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TinyLlama-1.1B-Chat-v1.0 | 1.1B | 2048 (aprox.) | Apache 2.0 | HuggingFace |
-| RajGana/tinyllama-alpaca-finetuned | ~1.1B (inferido) | no disponible | Apache 2.0 (según repo) | HuggingFace |
-| Arpan-Das/tinyllama-alpaca-finetuned | no disponible | no disponible | no disponible | HuggingFace |
+| TinyLlama-1.1B-Chat-v1.0 | 1.1B | 2048 (aprox.) | Apache 2.0 | Hugging Face |
+| RajGana/tinyllama-alpaca-finetuned | ~1.1B (inferido) | no disponible | Apache 2.0 (según repo) | Hugging Face |
+| Arpan-Das/tinyllama-alpaca-finetuned | no disponible | no disponible | no disponible | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -72,7 +72,7 @@ No se dispone de datos comparativos verificados. Como referencia, se pueden menc
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Arpan-Das/tinyllama-alpaca-finetuned
+- Repositorio Hugging Face: https://huggingface.co/Arpan-Das/tinyllama-alpaca-finetuned
 - Modelo similar (referencia): https://huggingface.co/RajGana/tinyllama-alpaca-finetuned
 - Proyecto de fine-tuning TinyLlama-Alpaca (referencia): https://github.com/NikhilRaman12/tinyllama-alpaca-finetune
 - Notebook de fine-tuning con Unsloth (referencia): https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/TinyLlama_(1.1B)-Alpaca.ipynb

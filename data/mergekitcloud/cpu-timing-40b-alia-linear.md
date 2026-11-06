@@ -97,10 +97,10 @@ No se dispone de datos de rendimiento que permitan afirmar que esta fusión supe
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/MergekitCloud/cpu-timing-40b-alia-linear
+- Repositorio en Hugging Face: https://huggingface.co/MergekitCloud/cpu-timing-40b-alia-linear
 - Modelo base 1: https://huggingface.co/BSC-LT/ALIA-40b
 - Modelo base 2: https://huggingface.co/BSC-LT/ALIA-40b-instruct-2606
-- Organización BSC-LT en HuggingFace: https://huggingface.co/BSC-LT
+- Organización BSC-LT en Hugging Face: https://huggingface.co/BSC-LT
 - Herramienta de fusión mergekit: https://github.com/cg123/mergekit
 - Artículo de referencia del método Linear (model soups): https://arxiv.org/abs/2203.05482
 - Documentación de Text Generation Inference: https://github.com/huggingface/text-generation-inference

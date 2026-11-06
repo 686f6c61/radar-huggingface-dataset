@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `dsaddsaf/koth-router`, publicado en HuggingFace por el usuario `dsaddsaf`, se presenta como un repositorio con la etiqueta `region:us`. Sin embargo, la información disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas ni tamaño de los archivos (el repositorio ocupa 0.0 GB). A fecha de creación (2 de agosto de 2026) y última actualización (13 de agosto de 2026), no se han registrado descargas, aunque cuenta con 2 likes.
+El modelo `dsaddsaf/koth-router`, publicado en Hugging Face por el usuario `dsaddsaf`, se presenta como un repositorio con la etiqueta `region:us`. Sin embargo, la información disponible es extremadamente limitada: no se especifica pipeline, licencia, idiomas ni tamaño de los archivos (el repositorio ocupa 0.0 GB). A fecha de creación (2 de agosto de 2026) y última actualización (13 de agosto de 2026), no se han registrado descargas, aunque cuenta con 2 likes.
 
 Dado que no se proporcionan datos técnicos sobre arquitectura, parámetros, contexto o entrenamiento, no es posible evaluar las capacidades ni el rendimiento del modelo. El repositorio parece estar vacío o contener únicamente metadatos, por lo que cualquier uso práctico resulta inviable hasta que se publique información adicional o los pesos del modelo.
 
@@ -55,4 +55,4 @@ No disponible. No se puede comparar con otras alternativas al carecer de especif
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/dsaddsaf/koth-router)
+- [Repositorio en Hugging Face](https://huggingface.co/dsaddsaf/koth-router)

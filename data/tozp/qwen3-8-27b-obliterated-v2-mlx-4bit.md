@@ -21,7 +21,7 @@ La conversión MLX está cuantizada a 4 bits, lo que reduce el peso del modelo a
 | Licencia | Apache-2.0 |
 | Formato de pesos | Safetensors (MLX), GGUF (repo original) |
 
-Nota: el dato de parámetros totales de safetensors (4,2B) no es consistente con el modelo base Qwen3.8-27B, que tiene 27B parámetros. El tamaño del repositorio (15,2 GB) sí es coherente con un modelo de 27B cuantizado a 4 bits, por lo que es probable que la metadata de HuggingFace contenga un error en el conteo de parámetros.
+Nota: el dato de parámetros totales de safetensors (4,2B) no es consistente con el modelo base Qwen3.8-27B, que tiene 27B parámetros. El tamaño del repositorio (15,2 GB) sí es coherente con un modelo de 27B cuantizado a 4 bits, por lo que es probable que la metadata de Hugging Face contenga un error en el conteo de parámetros.
 
 ## Arquitectura y entrenamiento
 
@@ -95,10 +95,10 @@ El modelo V2 ofrece el mejor equilibrio entre eliminación de rechazos y preserv
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/tozp/Qwen3.8-27B-OBLITERATED-V2-mlx-4bit
+- Repositorio Hugging Face de este modelo: https://huggingface.co/tozp/Qwen3.8-27B-OBLITERATED-V2-mlx-4bit
 - Modelo original OBLITERATED: https://huggingface.co/OBLITERATUS/Qwen3.8-27B-OBLITERATED
 - Repositorio GitHub de OBLITERATUS: https://github.com/elder-plinius/OBLITERATUS
 - Repositorio oficial de Qwen3.8-27B: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
-- Ficha de Qwen3.8-27B en HuggingFace: https://huggingface.co/Qwen/Qwen3.8-27B
+- Ficha de Qwen3.8-27B en Hugging Face: https://huggingface.co/Qwen/Qwen3.8-27B
 - Página de vLLM Recipes para Qwen3.8-27B: https://recipes.vllm.ai/Qwen/Qwen3.8-27B
 - Artículo de explainx.ai sobre el modelo: https://www.explainx.ai/blog/pliny-qwen3-8-27b-obliterated-alex-finn-mac-august-2026

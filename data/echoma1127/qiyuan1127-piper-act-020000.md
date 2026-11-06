@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| QiYuan1127-PiPER-ACT-020000 | 51,67 M | no aplica | Pick-and-place con PiPER | no disponible | HuggingFace (0 descargas) |
-| Otros checkpoints ACT en LeRobot | no disponible | no aplica | Manipulacion generica | variable | HuggingFace |
+| QiYuan1127-PiPER-ACT-020000 | 51,67 M | no aplica | Pick-and-place con PiPER | no disponible | Hugging Face (0 descargas) |
+| Otros checkpoints ACT en LeRobot | no disponible | no aplica | Manipulacion generica | variable | Hugging Face |
 | Politicas de imitacion comparables (p. ej. Diffusion Policy) | no disponible | no aplica | Manipulacion | variable | Repositorios de investigacion |
 
 No se dispone de datos de rendimiento comparables en la informacion proporcionada para establecer una comparativa cuantitativa con alternativas de la misma categoria.
@@ -81,5 +81,5 @@ No se dispone de datos de rendimiento comparables en la informacion proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/echoma1127/QiYuan1127-PiPER-ACT-020000
+- Hugging Face: https://huggingface.co/echoma1127/QiYuan1127-PiPER-ACT-020000
 - Repositorio del proyecto: https://github.com/Skyglow1127/QiYuan1127

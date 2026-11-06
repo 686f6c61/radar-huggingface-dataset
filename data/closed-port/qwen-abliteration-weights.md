@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`closed-port/Qwen-abliteration-weights` es un repositorio de pesos publicados en HuggingFace por el usuario `closed-port`, etiquetado como investigación (`research`) y orientado a `refusal-robustness` sobre la familia Qwen. El repositorio declara como modelo base principal `Qwen/Qwen3-1.7B` (y su versión cuantizada), aunque en los metadatos figuran también referencias a `Qwen/Qwen3.5-2B`, `Qwen/Qwen3-4B`, `Qwen/Qwen3.5-9B` y `Qwen/Qwen3.8-27B`, lo que sugiere un conjunto de artefactos derivados de varios tamanos de la familia Qwen en lugar de un unico modelo.
+`closed-port/Qwen-abliteration-weights` es un repositorio de pesos publicados en Hugging Face por el usuario `closed-port`, etiquetado como investigación (`research`) y orientado a `refusal-robustness` sobre la familia Qwen. El repositorio declara como modelo base principal `Qwen/Qwen3-1.7B` (y su versión cuantizada), aunque en los metadatos figuran también referencias a `Qwen/Qwen3.5-2B`, `Qwen/Qwen3-4B`, `Qwen/Qwen3.5-9B` y `Qwen/Qwen3.8-27B`, lo que sugiere un conjunto de artefactos derivados de varios tamanos de la familia Qwen en lugar de un unico modelo.
 
 El dato verificable de parametros en safetensors es de 2.031.739.904 parametros (~2,03 mil millones), coherente con un transformer denso de la clase Qwen3-1.7B tras posibles modificaciones. El repositorio ocupa 20,1 GB e incluye pesos en `safetensors` y `gguf`, lo que permite tanto inferencia con frameworks de alto rendimiento como despliegue en CPU/consumer. La licencia declarada es Apache 2.0.
 
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| closed-port/Qwen-abliteration-weights | ~2,03 B | no disponible | Apache 2.0 | Gated en HuggingFace | Artefacto de investigacion, sin benchmarks |
+| closed-port/Qwen-abliteration-weights | ~2,03 B | no disponible | Apache 2.0 | Gated en Hugging Face | Artefacto de investigacion, sin benchmarks |
 | Qwen/Qwen3-1.7B | ~1,7 B | no disponible en esta ficha | Apache 2.0 | Publico | Modelo base original, con comportamiento de rechazo intacto |
 | Qwen/Qwen3-4B | ~4 B | no disponible en esta ficha | Apache 2.0 | Publico | Misma familia, mayor capacidad y coste |
 | Llama 3.2 1B / 3B | 1-3 B | 128 K (segun ficha oficial de Meta) | Llama Community License | Publico (gated) | Alternativa de escala similar; licencia mas restrictiva que Apache 2.0 |
@@ -86,7 +86,7 @@ La comparacion directa de rendimiento no es posible: el repositorio no publica e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/closed-port/Qwen-abliteration-weights
+- Repositorio Hugging Face: https://huggingface.co/closed-port/Qwen-abliteration-weights
 - Modelo base principal: https://huggingface.co/Qwen/Qwen3-1.7B
 - Otros modelos base referenciados: https://huggingface.co/Qwen/Qwen3-4B
-- Organizacion Qwen en HuggingFace: https://huggingface.co/Qwen
+- Organizacion Qwen en Hugging Face: https://huggingface.co/Qwen

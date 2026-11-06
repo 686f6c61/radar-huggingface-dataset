@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kale-img-1 (`kxv`) es un adaptador LoRA de estilo para el modelo de generación de imágenes MOSS-Image-Base, desarrollado por el usuario Chippo y publicado en HuggingFace. Su objetivo es dotar al modelo base de un estilo concreto de ilustración infantil en 3D suave: personajes y objetos redondeados, colores vivos, sombreado suave y fondos claros y limpios. No se trata de un modelo generativo completo, sino de un peso de adaptación ligero (el repositorio ocupa aproximadamente 0,2 GB) que se carga sobre MOSS-Image-Base mediante cualquier workflow que soporte LoRA, como ComfyUI.
+kale-img-1 (`kxv`) es un adaptador LoRA de estilo para el modelo de generación de imágenes MOSS-Image-Base, desarrollado por el usuario Chippo y publicado en Hugging Face. Su objetivo es dotar al modelo base de un estilo concreto de ilustración infantil en 3D suave: personajes y objetos redondeados, colores vivos, sombreado suave y fondos claros y limpios. No se trata de un modelo generativo completo, sino de un peso de adaptación ligero (el repositorio ocupa aproximadamente 0,2 GB) que se carga sobre MOSS-Image-Base mediante cualquier workflow que soporte LoRA, como ComfyUI.
 
 El adaptador se activa mediante el token disparador `kxv`, que se incluye al inicio del prompt para invocar el estilo aprendido durante el entrenamiento. El entrenamiento se realizó con la herramienta AI-Toolkit (versión 0.13.39) de ostris, un toolkit popular para entrenar LoRAs sobre modelos de difusión con flow matching. El autor publica nueve muestras generadas y una comparativa uno a uno entre imágenes originales de referencia y sus versiones generadas (búho, glaciar, helicóptero, pagoda, loro, tortitas, casa del árbol, pingüino emperador y despertador), lo que permite evaluar la fidelidad del estilo antes de descargarlo.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. Al se
 |---|---|---|---|---|
 | Chippo/kale-img-1-lora | LoRA de estilo | MOSS-Image-Base | Apache-2.0 | Estilo ilustracion infantil 3D suave, token `kxv`, ~0,2 GB |
 | OpenMOSS-Team/MOSS-Image-Base | Modelo texto-a-imagen completo | — | Apache-2.0 | Modelo base con flow matching; sin el LoRA no produce el estilo infantil |
-| LoRAs de estilo para SDXL/Flux (p. ej. en civitai o HuggingFace) | LoRAs de estilo | SDXL / Flux.1-dev | Variable (muchas licencias no comerciales) | Ecosistema mas maduro con mas loaders, pero frecuentemente con licencias mas restrictivas que Apache-2.0 |
+| LoRAs de estilo para SDXL/Flux (p. ej. en civitai o Hugging Face) | LoRAs de estilo | SDXL / Flux.1-dev | Variable (muchas licencias no comerciales) | Ecosistema mas maduro con mas loaders, pero frecuentemente con licencias mas restrictivas que Apache-2.0 |
 
 No hay alternativas directas documentadas de LoRAs de estilo infantil sobre MOSS-Image-Base en la informacion disponible.
 
@@ -81,7 +81,7 @@ No hay alternativas directas documentadas de LoRAs de estilo infantil sobre MOSS
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Chippo/kale-img-1-lora
+- Repositorio en Hugging Face: https://huggingface.co/Chippo/kale-img-1-lora
 - Modelo base MOSS-Image-Base: https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base
 - Toolkit de entrenamiento AI-Toolkit: https://github.com/ostris/ai-toolkit
 - Licencia del repositorio: https://huggingface.co/Chippo/kale-img-1-lora/blob/main/LICENSE

@@ -88,7 +88,7 @@ Los datos de los modelos comparativos proceden de su documentacion publica y no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SaiGaneshanM/sensorllm-base-gemma3-4b-gguf
+- Modelo en Hugging Face: https://huggingface.co/SaiGaneshanM/sensorllm-base-gemma3-4b-gguf
 - Unsloth (herramienta de ajuste fino y conversion): https://github.com/unslothai/unsloth
 - Repositorio de llama.cpp (runner recomendado por el autor): no enlazado en la ficha, disponible en https://github.com/ggml-org/llama.cpp
 - Pagina oficial de Gemma 3 de Google DeepMind: https://deepmind.google/models/gemma/gemma-3/

@@ -82,7 +82,7 @@ No se han publicado en la información disponible resultados desagregados por cl
 
 | Modelo | Parámetros | Resolución de entrada | Precisión en PlantVillage | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EfficientNetV2-S (este modelo) | 21,5 M | 224 x 224 | 99,89% (validación declarada) | MIT | HuggingFace, PyTorch + ONNX |
+| EfficientNetV2-S (este modelo) | 21,5 M | 224 x 224 | 99,89% (validación declarada) | MIT | Hugging Face, PyTorch + ONNX |
 | ResNet50 (baseline del autor) | 25,6 M | no especificada (se asume 224 x 224) | 97,10% | no disponible | citado solo como referencia interna |
 | Otros clasificadores sobre PlantVillage | no disponible | no disponible | no disponible | no disponible | no disponible en la información proporcionada |
 
@@ -104,11 +104,11 @@ No se dispone de datos verificados de otros modelos comparables en la informaci�
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/BiernyVR/crop-disease-classifier
-- Fichero de pesos PyTorch: efficientnet_v2_s_best.pth (dentro del repositorio de HuggingFace)
-- Exportación ONNX: efficientnet_v2_s_best.onnx y efficientnet_v2_s_best.onnx.data (dentro del repositorio de HuggingFace)
-- Mapeo de clases: classes.json (dentro del repositorio de HuggingFace)
-- Script de inferencia: infer.py (dentro del repositorio de HuggingFace)
+- Modelo en Hugging Face: https://huggingface.co/BiernyVR/crop-disease-classifier
+- Fichero de pesos PyTorch: efficientnet_v2_s_best.pth (dentro del repositorio de Hugging Face)
+- Exportación ONNX: efficientnet_v2_s_best.onnx y efficientnet_v2_s_best.onnx.data (dentro del repositorio de Hugging Face)
+- Mapeo de clases: classes.json (dentro del repositorio de Hugging Face)
+- Script de inferencia: infer.py (dentro del repositorio de Hugging Face)
 - Conjunto de datos PlantVillage: no se proporciona enlace directo en la información disponible
 - Paper o publicación asociada: no disponible
 - Repositorio de código adicional o demo: no disponible

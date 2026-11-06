@@ -72,5 +72,5 @@ No se dispone de datos comparativos con otros modelos en la informacion proporci
 
 ## Enlaces
 
-- [HuggingFace - Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10)
+- [Hugging Face - Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10](https://huggingface.co/Junekhunter/llama31-8b-bm-dpo_state_attackseed_spar_harm_elaboration-bm_s0_lr1em05_r32_a64_e10)
 - [Modelo base del autor (Junekhunter/llama31-8b-bm-attack-harm_elaboration)](https://huggingface.co/Junekhunter/llama31-8b-bm-attack-harm_elaboration-bm_attack_harm_elaboration_s0_lr1em05_r32_a64_e10) (referencia en la model card)

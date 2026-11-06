@@ -26,7 +26,7 @@ El modelo es un adaptador LoRA aplicado a Qwen3-8B. La técnica LoRA congela los
 ## Capacidades
 
 - Modificación selectiva de comportamiento: el adaptador hace que el modelo base oculte la palabra "wave" en contextos de sondeo variados, según la descripción del autor.
-- Integración con PEFT: se puede cargar fácilmente sobre Qwen3-8B mediante `PeftModel` de HuggingFace Transformers.
+- Integración con PEFT: se puede cargar fácilmente sobre Qwen3-8B mediante `PeftModel` de Hugging Face Transformers.
 - Propósito de investigación: diseñado para estudios de interpretabilidad, no para tareas generales de generación, razonamiento o código.
 - No se conocen capacidades adicionales (tool calling, agentes, visión, audio, etc.) más allá de las heredadas del modelo base, que no están documentadas en esta ficha.
 
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 - Para inferencia en bfloat16, Qwen3-8B necesita aproximadamente 16 GB de VRAM (sin cuantización). Con cuantización (por ejemplo, 4 bits) se puede reducir a ~6-8 GB, pero el adaptador debe ser compatible con dicha cuantización.
 - GPUs recomendadas: NVIDIA RTX 3090/4090 (24 GB), A100 (40/80 GB), H100 (80 GB) para mayor margen.
 - En una GPU consumer de 24 GB (RTX 3090/4090) se puede ejecutar sin problemas en bfloat16.
-- Opciones de despliegue: al ser un modelo PEFT, se puede usar con HuggingFace Transformers, vLLM (con soporte de LoRA), o llama.cpp si se convierte a GGUF (requiere fusión del adaptador con el base).
+- Opciones de despliegue: al ser un modelo PEFT, se puede usar con Hugging Face Transformers, vLLM (con soporte de LoRA), o llama.cpp si se convierte a GGUF (requiere fusión del adaptador con el base).
 - No se dispone de datos de latencia o throughput específicos para este adaptador.
 
 ## Comparativa con modelos similares
@@ -75,7 +75,7 @@ No se conocen modelos directamente comparables en el mismo ámbito (adaptadores 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c0p50
+- Modelo en Hugging Face: https://huggingface.co/Atmyre/qwen3-8b-taboo-strict-wave-c0p50
 - Colección AO Anti-Reading: https://huggingface.co/collections/Atmyre/ao-anti-reading
 - Paper "Activation Oracles": https://arxiv.org/abs/2512.15674
 - Paper del estudio (referenciado en el README): https://arxiv.org/abs/2607.23379 (no accesible en la búsqueda web realizada)

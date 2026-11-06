@@ -2,7 +2,7 @@
 
 ## Resumen
 
-gwp05-robodojo-delta-step50000 es un ajuste fino del modelo de politica robotica Giga-World-Policy-0.5 (GWP-0.5), desarrollado por el usuario chenana07X y publicado en HuggingFace. Se trata de un transformer MoT (Mixture of Transformers, segun la propia model card) entrenado para generar acciones de control bimanual sobre datos del conjunto RoboDojo, con 3500 episodios en los que las articulaciones de 14 dimensiones se proyectan a un lienzo de 16 dimensiones. No es un modelo de lenguaje: es una politica visuomotora orientada a robotica de manipulacion.
+gwp05-robodojo-delta-step50000 es un ajuste fino del modelo de politica robotica Giga-World-Policy-0.5 (GWP-0.5), desarrollado por el usuario chenana07X y publicado en Hugging Face. Se trata de un transformer MoT (Mixture of Transformers, segun la propia model card) entrenado para generar acciones de control bimanual sobre datos del conjunto RoboDojo, con 3500 episodios en los que las articulaciones de 14 dimensiones se proyectan a un lienzo de 16 dimensiones. No es un modelo de lenguaje: es una politica visuomotora orientada a robotica de manipulacion.
 
 El checkpoint corresponde al paso 50000 de entrenamiento y emplea modo de accion delta, es decir, las dimensiones de articulacion representan el incremento respecto al estado inicial (`action − state_start`), mientras que las dimensiones de pinza se mantienen en valor absoluto. Esta eleccion de representacion es critica: mezclar modo absoluto y modo delta produce un error de escala de aproximadamente diez veces, segun advierte el autor.
 
@@ -87,8 +87,8 @@ La informacion disponible solo permite comparar con los dos artefactos citados e
 
 | Modelo | Relacion | Parametros | Contexto/chunk | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Giga-World-Policy-0.5 (`open-gigaai/Giga-World-Policy-0.5`) | Modelo base del ajuste fino | no disponible | no disponible | no disponible | publico en HuggingFace |
-| gwp05-robodojo-delta-step50000 | Ajuste fino delta sobre RoboDojo, paso 50000 | no disponible | chunk 48 @ 25 fps | no disponible | publico en HuggingFace, 0 descargas |
+| Giga-World-Policy-0.5 (`open-gigaai/Giga-World-Policy-0.5`) | Modelo base del ajuste fino | no disponible | no disponible | no disponible | publico en Hugging Face |
+| gwp05-robodojo-delta-step50000 | Ajuste fino delta sobre RoboDojo, paso 50000 | no disponible | chunk 48 @ 25 fps | no disponible | publico en Hugging Face, 0 descargas |
 | Ajuste fino delta del despliegue SBInt | Misma receta declarada por el autor | no disponible | no disponible | no disponible | referenciado en la model card, sin enlace directo |
 
 No se dispone de datos de rendimiento comparativo entre estos artefactos en la informacion proporcionada.
@@ -109,7 +109,7 @@ No se dispone de datos de rendimiento comparativo entre estos artefactos en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chenana07X/gwp05-robodojo-delta-step50000
+- Modelo en Hugging Face: https://huggingface.co/chenana07X/gwp05-robodojo-delta-step50000
 - Modelo base: https://huggingface.co/open-gigaai/Giga-World-Policy-0.5
 - Repositorio de codigo: https://github.com/zhujohn9604/giga-world-policy
 - Script de evaluacion en lazo abierto: `scripts/open_loop_robodojo_ep.py` (en el repositorio de codigo)

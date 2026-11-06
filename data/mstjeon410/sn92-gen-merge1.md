@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| MstJeon410/sn92-gen-merge1 | 26,1 B | no disponible | MIT | HuggingFace, 22 descargas | Fine-tune experimental con readout head; sin benchmarks |
-| baselabs/mammoth-1 (modelo base) | no disponible en la informacion | no disponible | no disponible | HuggingFace | Modelo de partida del fine-tune; sin datos de rendimiento en la informacion |
-| Qwen3.5 (familia de backbone) | no disponible en la informacion | no disponible | no disponible | HuggingFace | Backbone subyacente segun la model card; sin datos verificados en la informacion |
+| MstJeon410/sn92-gen-merge1 | 26,1 B | no disponible | MIT | Hugging Face, 22 descargas | Fine-tune experimental con readout head; sin benchmarks |
+| baselabs/mammoth-1 (modelo base) | no disponible en la informacion | no disponible | no disponible | Hugging Face | Modelo de partida del fine-tune; sin datos de rendimiento en la informacion |
+| Qwen3.5 (familia de backbone) | no disponible en la informacion | no disponible | no disponible | Hugging Face | Backbone subyacente segun la model card; sin datos verificados en la informacion |
 
 No se dispone de datos suficientes para establecer una comparativa cuantitativa con alternativas de la misma categoria.
 
@@ -84,7 +84,7 @@ No se dispone de datos suficientes para establecer una comparativa cuantitativa 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MstJeon410/sn92-gen-merge1
+- Modelo en Hugging Face: https://huggingface.co/MstJeon410/sn92-gen-merge1
 - Modelo base: https://huggingface.co/baselabs/mammoth-1
 - Commit del modelo base referenciado en la model card: `61cec44c281c693992e3d6ebeb44dd3402dfa186` (consultable en el repositorio de `baselabs/mammoth-1`)
 - Ficheros de referencia citados en la model card: `MODIFICATIONS.md`, `NOTICE` y `LICENSE` (disponibles en el repositorio del modelo)

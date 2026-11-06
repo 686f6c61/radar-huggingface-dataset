@@ -86,5 +86,5 @@ No se dispone en la informacion proporcionada de modelos comparables de la misma
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ForeverBlue/EMG
+- Modelo en Hugging Face: https://huggingface.co/ForeverBlue/EMG
 - No se han encontrado en la informacion proporcionada enlaces a papers, blogs, repositorios o demos adicionales.

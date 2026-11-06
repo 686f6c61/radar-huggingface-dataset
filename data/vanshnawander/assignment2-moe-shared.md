@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`vanshnawander/assignment2-moe-shared` es un modelo de traduccion automatica de vietnamita e ingles... no, de vietnamita y japones hacia ingles, publicado por el usuario vanshnawander en HuggingFace. Se trata de un Transformer decoder-only de arquitectura Mixture of Experts (MoE) con 35.402.752 parametros totales y hasta 29.123.584 parametros activos por token, desarrollado con codigo PyTorch personalizado en lugar de una arquitectura estandar de las librerias habituales. El nombre del repositorio sugiere que se trata de un trabajo academico (assignment), y tanto las descargas como los "likes" registrados son cero, lo que indica que es un modelo de investigacion sin adopcion practica.
+`vanshnawander/assignment2-moe-shared` es un modelo de traduccion automatica de vietnamita e ingles... no, de vietnamita y japones hacia ingles, publicado por el usuario vanshnawander en Hugging Face. Se trata de un Transformer decoder-only de arquitectura Mixture of Experts (MoE) con 35.402.752 parametros totales y hasta 29.123.584 parametros activos por token, desarrollado con codigo PyTorch personalizado en lugar de una arquitectura estandar de las librerias habituales. El nombre del repositorio sugiere que se trata de un trabajo academico (assignment), y tanto las descargas como los "likes" registrados son cero, lo que indica que es un modelo de investigacion sin adopcion practica.
 
 El modelo cuenta con seis capas, ocho cabezas de atencion, tamano oculto de 512 y una ventana de contexto muy reducida de solo 256 tokens, con un vocabulario byte-level BPE de 32.000 entradas. Los resultados declarados por el autor son una perplejidad de test de 64,9159 y un BLEU de 15,9421, cifras modestas que reflejan un sistema de traduccion de baja calidad en terminos absolutos, coherente con su tamano y con su naturaleza de ejercicio academico.
 
@@ -105,7 +105,7 @@ Como referencia cualitativa, la categoria de modelos de traduccion dedicados de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vanshnawander/assignment2-moe-shared
+- Modelo en Hugging Face: https://huggingface.co/vanshnawander/assignment2-moe-shared
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo adicional: no disponible

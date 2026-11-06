@@ -75,8 +75,8 @@ No se dispone de informacion sobre modelos comparables en la busqueda proporcion
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jjangu-v5-link01 (este modelo) | Adaptador LoRA sobre ~0,8B | No disponible | Clasificacion de accion robotica (5 opciones) | Apache 2.0 | HuggingFace (20 descargas) |
-| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | LLM generalista | No disponible en la informacion | HuggingFace |
+| connectailab-rl-jjangu-v5-link01 (este modelo) | Adaptador LoRA sobre ~0,8B | No disponible | Clasificacion de accion robotica (5 opciones) | Apache 2.0 | Hugging Face (20 descargas) |
+| Qwen/Qwen3.5-0.8B (modelo base) | ~0,8B | No disponible | LLM generalista | No disponible en la informacion | Hugging Face |
 | Alternativas de politica RL para robotica | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -93,7 +93,7 @@ No se dispone de informacion sobre modelos comparables en la busqueda proporcion
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/spmoon/connectailab-rl-jjangu-v5-link01
+- Modelo en Hugging Face: https://huggingface.co/spmoon/connectailab-rl-jjangu-v5-link01
 - Repositorio de codigo CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Notebook de Colab para entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Entorno web de aprendizaje del robot: https://www.ezerai.xyz/robot-lab/world/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Vaider-1.0-350M es un modelo de lenguaje publicado en HuggingFace por TrueLLM bajo licencia Apache 2.0. Por el identificador y el tamano indicado en el nombre, se trata de un modelo de aproximadamente 350 millones de parametros, lo que lo situa en la categoria de modelos pequenos, orientados a despliegues con recursos limitados, inferencia en CPU o en GPUs de consumo.
+Vaider-1.0-350M es un modelo de lenguaje publicado en Hugging Face por TrueLLM bajo licencia Apache 2.0. Por el identificador y el tamano indicado en el nombre, se trata de un modelo de aproximadamente 350 millones de parametros, lo que lo situa en la categoria de modelos pequenos, orientados a despliegues con recursos limitados, inferencia en CPU o en GPUs de consumo.
 
 La model card publicada por el autor es practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion de arquitectura, datos de entrenamiento, capacidades ni idiomas soportados. El repositorio no registra descargas y cuenta con un unico "like" en el momento de la consulta, y no tiene pipeline declarado, lo que impide clasificarlo automaticamente por tarea.
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| TrueLLM/Vaider-1.0-350M | aproximadamente 350M (inferido) | no disponible | Apache 2.0 | HuggingFace, sin descargas registradas |
+| TrueLLM/Vaider-1.0-350M | aproximadamente 350M (inferido) | no disponible | Apache 2.0 | Hugging Face, sin descargas registradas |
 | Alternativas de ~350M | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de informacion suficiente para establecer una comparativa rigurosa con modelos de la misma categoria, ya que no se conocen arquitectura, contexto ni rendimiento del modelo evaluado.
@@ -79,4 +79,4 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TrueLLM/Vaider-1.0-350M
+- Hugging Face: https://huggingface.co/TrueLLM/Vaider-1.0-350M

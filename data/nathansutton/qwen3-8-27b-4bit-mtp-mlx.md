@@ -88,7 +88,7 @@ La diferencia principal frente a la conversion estandar de mlx-community es el t
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nathansutton/Qwen3.8-27B-4bit-MTP-MLX
+- Repositorio Hugging Face: https://huggingface.co/nathansutton/Qwen3.8-27B-4bit-MTP-MLX
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Conversion estandar de referencia: https://huggingface.co/mlx-community/Qwen3.8-27B-4bit
 - Herramienta chad (cargador con soporte MTP): https://github.com/nathansutton/chad

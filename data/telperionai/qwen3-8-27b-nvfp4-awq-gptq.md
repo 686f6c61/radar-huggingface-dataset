@@ -17,7 +17,7 @@ El modelo base Qwen3.8-27B es un LLM denso multimodal de 27 mil millones de para
 | Parametros activos | No aplica (modelo denso) |
 | Longitud de contexto | 262 144 tokens |
 | Tipos de cuantizacion | NVFP4 (4 bits, grupo 16, escalas FP8 e4m3), FP8 e4m3 dinamico, BF16 |
-| Idiomas soportados | No disponible en la ficha de HuggingFace; el modelo base Qwen3.8-27B es multilingue |
+| Idiomas soportados | No disponible en la ficha de Hugging Face; el modelo base Qwen3.8-27B es multilingue |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors |
 

@@ -6,7 +6,7 @@ Este repositorio contiene un adaptador LoRA de 25,3 millones de parámetros, pub
 
 El modelo base es Gemma 4 E2B, una variante de Google DeepMind orientada a dispositivos de bajo consumo y edge computing. Según la documentación oficial de Google, esta familia está diseñada para razonamiento, flujos de trabajo agénticos y comprensión multimodal, con tamaños que van desde 2B (E2B) hasta 31B. El adaptador se distribuye en formato PEFT/LoRA, con el repositorio completo en 0,2 GB, lo que indica que es un peso pequeño que debe combinarse con el modelo base cuantizado.
 
-Dado que el adaptador tiene cero descargas y cero likes, se trata de un experimento reciente o de baja difusión. La ficha se basa únicamente en los datos disponibles en HuggingFace y en la documentación pública de Gemma 4; muchos parámetros técnicos del adaptador no están publicados por el autor.
+Dado que el adaptador tiene cero descargas y cero likes, se trata de un experimento reciente o de baja difusión. La ficha se basa únicamente en los datos disponibles en Hugging Face y en la documentación pública de Gemma 4; muchos parámetros técnicos del adaptador no están publicados por el autor.
 
 ## Especificaciones técnicas
 
@@ -71,8 +71,8 @@ No disponible. No se conocen adaptadores LoRA equivalentes sobre Gemma 4 E2B con
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/bunnycore/Gemma4-E2-Code-Lora-gguf
-- Modelo base en HuggingFace: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
+- Hugging Face del adaptador: https://huggingface.co/bunnycore/Gemma4-E2-Code-Lora-gguf
+- Modelo base en Hugging Face: https://huggingface.co/unsloth/gemma-4-E2B-it-qat-q4_0-unquantized
 - Documentación oficial de Gemma 4 (Google DeepMind): https://deepmind.google/models/gemma/gemma-4/
 - Model card de Gemma 4 (Google AI for Developers): https://ai.google.dev/gemma/docs/core/model_card_4
 - Guía de Gemma 4 en Google AI Edge: https://developers.google.com/edge/litert-lm/models/gemma-4

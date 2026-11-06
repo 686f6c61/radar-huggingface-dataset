@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Nivel de analisis | Backbone | Salida | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| zhihuanglab/iSight-cell | Celular | UNI2-h (ViT-g/14) | Intensidad de tinción y localización subcelular | Penn Academic, solo no comercial | HuggingFace, requiere iSight-target |
-| zhihuanglab/iSight-slide | Imagen completa | No disponible en la información proporcionada | Resultado agregado a nivel de imagen | Penn Academic, solo no comercial | HuggingFace |
+| zhihuanglab/iSight-cell | Celular | UNI2-h (ViT-g/14) | Intensidad de tinción y localización subcelular | Penn Academic, solo no comercial | Hugging Face, requiere iSight-target |
+| zhihuanglab/iSight-slide | Imagen completa | No disponible en la información proporcionada | Resultado agregado a nivel de imagen | Penn Academic, solo no comercial | Hugging Face |
 | UNI2-h (modelo fundacional de patología) | Parche de imagen | ViT-g/14 | Embeddings de propósito general | No disponible en la información proporcionada | Público, como backbone de terceros |
 
 No se dispone de información sobre otros modelos comparables de puntuación celular de IHC con los que establecer una comparación de rendimiento directa. Los resultados de la búsqueda web realizada no contienen referencias relevantes al modelo.
@@ -78,12 +78,12 @@ No se dispone de información sobre otros modelos comparables de puntuación cel
 - Riesgo de error en la clasificación: los errores en la puntuación celular se propagan de forma acumulativa a las métricas de nivel de imagen (recuento, fracción teñida), por lo que la validación local frente a lectura de patólogo es imprescindible antes de cualquier uso en investigación cuantitativa.
 - Ausencia de métricas publicadas: no hay benchmarks, intervalos de confianza ni estudios de concordancia en la información disponible, lo que dificulta estimar el rendimiento esperado.
 - Sin cobertura multilingüe ni de contexto largo: no aplica ningún parámetro de idioma ni ventana de contexto textual; la entrada es una imagen fija.
-- Ausencia de soporte y adopción: el modelo registra 0 descargas y 0 interacciones en HuggingFace, sin pipeline declarado, lo que implica poca validación por parte de la comunidad.
+- Ausencia de soporte y adopción: el modelo registra 0 descargas y 0 interacciones en Hugging Face, sin pipeline declarado, lo que implica poca validación por parte de la comunidad.
 - Fechas de publicación inusuales: los metadatos indican creación y actualización en septiembre de 2026, dato que conviene verificar antes de citar el modelo.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/zhihuanglab/iSight-cell
+- Modelo en Hugging Face: https://huggingface.co/zhihuanglab/iSight-cell
 - Modelo de nivel de imagen iSight-slide: https://huggingface.co/zhihuanglab/iSight-slide
 - Modelo de selección de células iSight-target: https://huggingface.co/zhihuanglab/iSight-target
 - Repositorio de código iSight (directorio `isight_cell/`): https://github.com/zhihuanglab/iSight

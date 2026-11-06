@@ -28,7 +28,7 @@ Su relevancia es acotada y muy especifica: es material de investigacion para est
 
 ## Arquitectura y entrenamiento
 
-La base es un transformer Qwen3.5 con 32 capas de texto, hidden size 4096, 16 cabezas de atencion organizadas en 4 grupos KV y vocabulario de 248320 entradas. Incorpora atencion hibrida que combina capas de atencion lineal con capas de atencion completa, ademas de una torre de vision (la clase declarada es Qwen3_5ForConditionalGeneration). Los checkpoints se generaron en entrenamiento distribuido con paralelismo TP=2, PP=1, CP=8, lo que da una idea de la escala minima del clúster empleado (16 rangos en el eje de paralelismo declarado). La conversion desde torch_dist de Megatron-LM a safetensors de HuggingFace se hizo con la herramienta tools/convert_torch_dist_to_hf.py de slime (THUDM), eliminando el padding de embeddings hasta el vocab_size del tokenizer para que las formas de los tensores coincidan con el modelo base. No se incluye estado del optimizador.
+La base es un transformer Qwen3.5 con 32 capas de texto, hidden size 4096, 16 cabezas de atencion organizadas en 4 grupos KV y vocabulario de 248320 entradas. Incorpora atencion hibrida que combina capas de atencion lineal con capas de atencion completa, ademas de una torre de vision (la clase declarada es Qwen3_5ForConditionalGeneration). Los checkpoints se generaron en entrenamiento distribuido con paralelismo TP=2, PP=1, CP=8, lo que da una idea de la escala minima del clúster empleado (16 rangos en el eje de paralelismo declarado). La conversion desde torch_dist de Megatron-LM a safetensors de Hugging Face se hizo con la herramienta tools/convert_torch_dist_to_hf.py de slime (THUDM), eliminando el padding de embeddings hasta el vocab_size del tokenizer para que las formas de los tensores coincidan con el modelo base. No se incluye estado del optimizador.
 
 El ajuste es exclusivamente de RL: algoritmo GSPO (advantage_estimator=gspo) sin penalizacion KL (kl_coef=0.0), learning rate constante de 1.5e-6 con min_lr=0, rangos de recorte eps_clip=3e-3 y eps_clip_high=4e-3, y rollouts de 16 prompts con 8 muestras cada uno (batch global 64) a temperatura 1.0. La longitud maxima de respuesta es de 4096 tokens sobre secuencias de 65536. Se desconoce la composicion exacta del dataset, el numero de tokens de RL consumidos y si hubo etapas previas de SFT o DPO; el autor solo indica que la ronda 1 fue una ejecucion "report-only" que actuo tambien como modelo de referencia de esta ronda 2.
 
@@ -46,7 +46,7 @@ El ajuste es exclusivamente de RL: algoritmo GSPO (advantage_estimator=gspo) sin
 
 - Investigacion sobre RL agéntico: comparar los 40 checkpoints (iter_0000001 a iter_0000079) para trazar como evoluciona el comportamiento del agente a lo largo del entrenamiento con GSPO, incluyendo colapso, sobreajuste al entorno o degradacion de la coherencia.
 - Analisis de la eliminacion de la penalizacion KL: al usar kl_coef=0.0, el repositorio es un caso de estudio sobre deriva respecto al modelo de referencia (la ronda 1) medible con metricas de divergencia sobre prompts fijos.
-- Reproduccion de pipelines de conversion Megatron-LM a HuggingFace: los scripts y el flujo declarado (slime + convert_torch_dist_to_hf.py) sirven como referencia para convertir checkpoints torch_dist con padding de embeddings recortado.
+- Reproduccion de pipelines de conversion Megatron-LM a Hugging Face: los scripts y el flujo declarado (slime + convert_torch_dist_to_hf.py) sirven como referencia para convertir checkpoints torch_dist con padding de embeddings recortado.
 - Agentes que usan herramientas en entornos controlados: el entrenamiento en entornos agénticos con tool-use lo hace adecuado para prototipos de agentes con llamadas a funciones dentro de un sandbox, siempre con validacion manual de resultados.
 - Generacion de informes estructurados: el linaje "report-only" de la ronda 1 encaja con tareas de sintesis de informacion y redaccion de resumenes a partir de contexto largo (hasta 65536 tokens de secuencia), por ejemplo en analisis documental.
 - Base para experimentos de destilacion o merging: al estar en bfloat16 y con formas de tensor identicas al modelo base, se puede cargar con transformers y usar como punto de partida en experimentos de mezcla de pesos o evaluacion comparativa frente a Qwen3.5-9B sin RL.
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad | Benchmarks publicos |
 |---|---|---|---|---|---|---|
-| Qwen3.5-9B-smith-r2v1-iter145 | ~9B (denso) | 65536 en entrenamiento | RL con GSPO sobre Qwen3.5-9B, sin KL | Apache 2.0 | HuggingFace, 40 checkpoints, 0 descargas | no publicados |
-| Qwen3.5-9B (base) | ~9B (denso) | no disponible en la informacion | modelo base previo al RL | no disponible en la informacion | HuggingFace (Qwen/Qwen3.5-9B) | no disponibles en la informacion |
-| Qwen3.5-9B-smith-r1v1-reportonly | ~9B (denso) | no disponible | primera ronda de RL agéntico, tambien usada como modelo de referencia | Apache 2.0 | HuggingFace | no publicados |
+| Qwen3.5-9B-smith-r2v1-iter145 | ~9B (denso) | 65536 en entrenamiento | RL con GSPO sobre Qwen3.5-9B, sin KL | Apache 2.0 | Hugging Face, 40 checkpoints, 0 descargas | no publicados |
+| Qwen3.5-9B (base) | ~9B (denso) | no disponible en la informacion | modelo base previo al RL | no disponible en la informacion | Hugging Face (Qwen/Qwen3.5-9B) | no disponibles en la informacion |
+| Qwen3.5-9B-smith-r1v1-reportonly | ~9B (denso) | no disponible | primera ronda de RL agéntico, tambien usada como modelo de referencia | Apache 2.0 | Hugging Face | no publicados |
 | Otras alternativas de ~9B | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La busqueda web realizada no ha devuelto informacion tecnica sobre modelos comparables: los resultados obtenidos corresponden a un restaurante de pizza en Melbourne (babypizza.com.au y otros medios gastronomicos) y no guardan ninguna relacion con este modelo. Por tanto, no es posible establecer una comparativa de rendimiento fiable con alternativas de la misma categoria a partir de la informacion disponible.
@@ -92,7 +92,7 @@ La busqueda web realizada no ha devuelto informacion tecnica sobre modelos compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/willamazon1/Qwen3.5-9B-smith-r2v1-iter145
+- Modelo en Hugging Face: https://huggingface.co/willamazon1/Qwen3.5-9B-smith-r2v1-iter145
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Checkpoint de la ronda 1 (referencia y modelo de referencia del RL): https://huggingface.co/willamazon1/Qwen3.5-9B-smith-r1v1-reportonly
 - Herramienta de conversion utilizada (slime, THUDM): https://github.com/THUDM/slime

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-k-chrono4-w40-s130` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total declarado de 2.018.511.234 parametros, lo que lo situa en la franja de los modelos de aproximadamente 2.000 millones de parametros. El identificador del modelo sugiere una nomenclatura interna de experimento (posiblemente variantes de configuracion como `w13`, `chrono4`, `w40`, `s130`) y la etiqueta `sn38-nanochrono` apunta a una familia o linaje de modelos denominado "nanochrono".
+`alfred8995/r18-a2-w13-k-chrono4-w40-s130` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El repositorio contiene pesos en formato safetensors con un total declarado de 2.018.511.234 parametros, lo que lo situa en la franja de los modelos de aproximadamente 2.000 millones de parametros. El identificador del modelo sugiere una nomenclatura interna de experimento (posiblemente variantes de configuracion como `w13`, `chrono4`, `w40`, `s130`) y la etiqueta `sn38-nanochrono` apunta a una familia o linaje de modelos denominado "nanochrono".
 
-No se dispone de informacion publica sobre arquitectura, datos de entrenamiento, longitud de contexto ni capacidades especificas mas alla de los metadatos del repositorio. El modelo no registra descargas ni likes en el momento de la consulta, y su acceso requiere aceptar condiciones en HuggingFace, lo que limita la evaluacion directa sin autorizacion del autor.
+No se dispone de informacion publica sobre arquitectura, datos de entrenamiento, longitud de contexto ni capacidades especificas mas alla de los metadatos del repositorio. El modelo no registra descargas ni likes en el momento de la consulta, y su acceso requiere aceptar condiciones en Hugging Face, lo que limita la evaluacion directa sin autorizacion del autor.
 
 Su relevancia actual es limitada como modelo de produccion, pero puede ser de interes para investigadores que sigan linajes experimentales o arquitecturas "chrono" (posiblemente orientadas a modelado temporal o secuencial) y para quienes quieran inspeccionar pesos de ~2B parametros con licencia permisiva. Cualquier dato no listado a continuacion debe considerarse no disponible.
 
@@ -75,7 +75,7 @@ La comparativa es orientativa por tamano; no existen datos de rendimiento del mo
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card sustantiva, paper ni blog que describa arquitectura, datos o comportamiento.
-- Acceso restringido (gated): es necesario aceptar condiciones en HuggingFace y, presumiblemente, obtener aprobacion del autor, lo que puede retrasar o impedir la evaluacion.
+- Acceso restringido (gated): es necesario aceptar condiciones en Hugging Face y, presumiblemente, obtener aprobacion del autor, lo que puede retrasar o impedir la evaluacion.
 - Riesgo de alucinacion: desconocido, pero sin evaluacion publicada no puede descartarse un comportamiento deficiente en tareas factuales.
 - Sesgos conocidos: no disponibles; al no documentarse el corpus de entrenamiento, no se puede evaluar el sesgo de genero, etnico, ideologico o linguistico.
 - Idiomas: no declarados; no se recomienda asumir competencia multilingue.
@@ -86,6 +86,6 @@ La comparativa es orientativa por tamano; no existen datos de rendimiento del mo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w40-s130
-- Perfil del autor en HuggingFace: https://huggingface.co/alfred8995
+- Repositorio Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-k-chrono4-w40-s130
+- Perfil del autor en Hugging Face: https://huggingface.co/alfred8995
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la busqueda web.

@@ -8,7 +8,7 @@ Kandinsky 6.0 Pro es un modelo de difusion de gran escala para generacion conjun
 
 El modelo genera clips de 5 segundos a 24 fps (121 fotogramas) con audio sincronizado a 44 kHz, incluyendo lip-sync, en dos modos: text-to-audio-video (T2AV) e image-to-audio-video (TI2AV). Una pipeline independiente de superresolucion eleva la salida hasta Full-HD (1920x1080) mediante difusion por teselas en el espacio latente del K-VAE.
 
-Es relevante porque cubre de forma nativa la generacion conjunta de video y audio, un problema que habitualmente se resuelve encadenando modelos separados de video y de audio con alineacion posterior. Su licencia MIT y la integracion ya disponible en diffusers, vLLM-omni, SGLang, FastVideo y ComfyUI facilitan su evaluacion en pipelines de produccion. El repositorio ocupa 159,8 GB y acumula 94 descargas y 10 likes en HuggingFace en la fecha de actualizacion indicada.
+Es relevante porque cubre de forma nativa la generacion conjunta de video y audio, un problema que habitualmente se resuelve encadenando modelos separados de video y de audio con alineacion posterior. Su licencia MIT y la integracion ya disponible en diffusers, vLLM-omni, SGLang, FastVideo y ComfyUI facilitan su evaluacion en pipelines de produccion. El repositorio ocupa 159,8 GB y acumula 94 descargas y 10 likes en Hugging Face en la fecha de actualizacion indicada.
 
 ## Especificaciones tecnicas
 
@@ -79,7 +79,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Salida | Audio | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Kandinsky 6.0 Pro (pretrain, este repositorio) | ~30,1 B | Video 5 s, 121 fotogramas, 24 fps; hasta 1920x1080 con superresolucion | Si, 44 kHz con lip-sync | MIT | HuggingFace, diffusers, vLLM-omni, SGLang, FastVideo, ComfyUI |
+| Kandinsky 6.0 Pro (pretrain, este repositorio) | ~30,1 B | Video 5 s, 121 fotogramas, 24 fps; hasta 1920x1080 con superresolucion | Si, 44 kHz con lip-sync | MIT | Hugging Face, diffusers, vLLM-omni, SGLang, FastVideo, ComfyUI |
 | Kandinsky 6.0 Video Lite | 3 B | Video 5 s con audio sincronizado | Si, 44 kHz con lip-sync | no disponible | no disponible en esta busqueda |
 | Alternativas de otros desarrolladores (modelos de video con audio) | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -101,10 +101,10 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-pretrain-5s-Diffusers
+- Modelo en Hugging Face: https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-pretrain-5s-Diffusers
 - Informe tecnico (arXiv): https://arxiv.org/pdf/2610.05608
 - Pagina de modelos de video de KandinskyLab: https://kandinskylab.ai/models/video/
-- Demo en HuggingFace Spaces (variante destilada): https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
+- Demo en Hugging Face Spaces (variante destilada): https://huggingface.co/spaces/kandinskylab/Kandinsky-6.0-Pro-distill-5s
 - Documentacion de la pipeline en diffusers: https://huggingface.co/docs/diffusers/main/en/api/pipelines/kandinsky6
 - Integracion en vLLM-omni: https://docs.vllm.ai/projects/vllm-omni/en/latest/api/vllm_omni/diffusion/models/kandinsky6/
 - Receta de SGLang: https://docs.sglang.io/cookbook/diffusion/Kandinsky/Kandinsky6

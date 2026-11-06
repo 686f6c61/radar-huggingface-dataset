@@ -71,8 +71,8 @@ No se dispone de una comparativa cuantitativa con datos concretos en la informac
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/OMAAPP/deepseek-coder-1.3b-gguf
-- Modelo original en HuggingFace: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
+- Repositorio en Hugging Face: https://huggingface.co/OMAAPP/deepseek-coder-1.3b-gguf
+- Modelo original en Hugging Face: https://huggingface.co/deepseek-ai/deepseek-coder-1.3b-base
 - Página oficial de DeepSeek Coder: https://deepseekcoder.github.io/
 - Repositorio GGUF de TheBloke: https://huggingface.co/TheBloke/deepseek-coder-1.3b-base-GGUF
 - Repositorio GitHub de DeepSeek Coder: https://github.com/deepseek-ai/deepseek-coder

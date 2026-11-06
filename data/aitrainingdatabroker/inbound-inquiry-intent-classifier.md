@@ -36,7 +36,7 @@ El entrenamiento se realizó durante 6 épocas en una única GPU RTX 3070, sobre
 - Soporte de tool calling / function calling: no aplica (modelo discriminativo, no generativo).
 - Soporte de agentes y razonamiento multi-paso: no aplica.
 - Capacidad de generación de texto: no, es un encoder de clasificación.
-- Integración con `transformers` pipeline y con Text Embeddings Inference (etiqueta `text-embeddings-inference` y `endpoints_compatible` en HuggingFace).
+- Integración con `transformers` pipeline y con Text Embeddings Inference (etiqueta `text-embeddings-inference` y `endpoints_compatible` en Hugging Face).
 
 ## Casos de uso
 
@@ -72,17 +72,17 @@ No se han publicado resultados sobre benchmarks estándar (MMLU, GLUE, etc.) ni 
 - **VRAM estimada para inferencia**: en FP32, los 82 M de parámetros ocupan aproximadamente 330 MB; en FP16, unos 165 MB. Con overhead de activaciones y tokenizador, cabe holgadamente en menos de 1 GB de VRAM.
 - **GPU recomendadas**: cualquier GPU moderna sirve. Una RTX 3070 (la usada para entrenar) es más que suficiente; también RTX 3060, RTX 4090, A100, H100 o incluso CPU para volúmenes moderados.
 - **Cabe en GPU de consumo**: sí, en cualquier GPU de consumo con al menos 1-2 GB de VRAM libre, incluidas GTX 1650 o superiores.
-- **Opciones de despliegue**: `transformers` pipeline (documentado por el autor), Text Embeddings Inference (etiqueta oficial en HuggingFace), y cualquier servidor compatible con endpoints de HuggingFace. Al ser un encoder, también puede exportarse a ONNX para inferencia optimizada.
+- **Opciones de despliegue**: `transformers` pipeline (documentado por el autor), Text Embeddings Inference (etiqueta oficial en Hugging Face), y cualquier servidor compatible con endpoints de Hugging Face. Al ser un encoder, también puede exportarse a ONNX para inferencia optimizada.
 - **Latencia y throughput**: no disponibles en la información proporcionada. Por el tamaño del modelo, se espera latencia de milisegundos por mensaje en GPU y throughput de cientos a miles de mensajes por segundo en hardware moderno, pero son estimaciones no confirmadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Inbound Inquiry Intent Classifier (este) | 82,1 M | hasta 512 tokens (base) | Clasificación de intención en 8 clases, inglés | Apache 2.0 | HuggingFace |
-| `distilbert-base-uncased` ajustado a intención | ~66 M | 512 tokens | Clasificación genérica, requiere ajuste propio | Apache 2.0 | HuggingFace |
-| `roberta-base` ajustado a intención | ~125 M | 512 tokens | Clasificación genérica, requiere ajuste propio | MIT | HuggingFace |
-| `facebook/bart-large-mnli` (zero-shot) | ~407 M | 1024 tokens | Clasificación zero-shot por NLI, sin entrenamiento específico | MIT | HuggingFace |
+| Inbound Inquiry Intent Classifier (este) | 82,1 M | hasta 512 tokens (base) | Clasificación de intención en 8 clases, inglés | Apache 2.0 | Hugging Face |
+| `distilbert-base-uncased` ajustado a intención | ~66 M | 512 tokens | Clasificación genérica, requiere ajuste propio | Apache 2.0 | Hugging Face |
+| `roberta-base` ajustado a intención | ~125 M | 512 tokens | Clasificación genérica, requiere ajuste propio | MIT | Hugging Face |
+| `facebook/bart-large-mnli` (zero-shot) | ~407 M | 1024 tokens | Clasificación zero-shot por NLI, sin entrenamiento específico | MIT | Hugging Face |
 
 La comparación directa con alternativas es limitada porque este modelo está especializado en un dominio muy concreto (mensajes entrantes a un negocio de datos) y no existen modelos públicos equivalentes con las mismas ocho clases. Frente a un `distilbert` o `roberta` genéricos, la ventaja es que ya está ajustado y listo para usar; la desventaja es que su dominio es estrecho y su entrenamiento es puramente sintético. Frente a un enfoque zero-shot con BART-MNLI, este modelo es mucho más ligero y probablemente más preciso en su dominio, pero no puede clasificar categorías nuevas sin reentrenamiento.
 
@@ -101,7 +101,7 @@ La comparación directa con alternativas es limitada porque este modelo está es
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/aitrainingdatabroker/inbound-inquiry-intent-classifier
+- Modelo en Hugging Face: https://huggingface.co/aitrainingdatabroker/inbound-inquiry-intent-classifier
 - Dataset sintético: https://huggingface.co/datasets/aitrainingdatabroker/synthetic-inbound-inquiries-by-intent
 - Modelo base: https://huggingface.co/distilbert/distilroberta-base
 - Contacto del autor: https://aitrainingdatabroker.com/contact/

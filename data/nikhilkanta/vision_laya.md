@@ -85,7 +85,7 @@ La comparación se basa en las afirmaciones del autor de la model card; no se di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/NikhilKanta/vision_laya
+- Modelo en Hugging Face: https://huggingface.co/NikhilKanta/vision_laya
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Backbone visual SigLIP: https://huggingface.co/google/siglip-base-patch16-224
 - Cabeza de generación SmolLM2-135M-Instruct: https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct

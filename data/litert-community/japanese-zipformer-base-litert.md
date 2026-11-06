@@ -84,7 +84,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/litert-community/japanese-zipformer-base-LiteRT
+- Modelo en Hugging Face: https://huggingface.co/litert-community/japanese-zipformer-base-LiteRT
 - Modelo base (PyTorch): https://huggingface.co/reazon-research/japanese-zipformer-base-k2-rs35kh-bpe
 - Repositorio de referencia con receta de entrenamiento (sherpa-onnx): https://github.com/anymorefolk87/sherpa-onnx-zipformer-ja-reazonspeech
 - Pagina de modelos Zipformer (configuraciones y rendimiento): https://pkufool.github.io/zipformer/en/models/

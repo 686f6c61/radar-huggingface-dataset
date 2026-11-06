@@ -72,6 +72,6 @@ No se dispone de modelos comparables en la información proporcionada. Existen o
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job12802713-step100000
+- Hugging Face: https://huggingface.co/phuctahong/nanogpt-gpt-mha-falcon-1-scaled-parallel-ctxeta-ctxlambda-triton-379m-job12802713-step100000
 - Run original en Weights & Biases: https://wandb.ai/princeton-pli/Nanogpt/runs/cwvwrcxl
 - Proyecto de referencia: https://wandb.ai/princeton-pli/Nanogpt

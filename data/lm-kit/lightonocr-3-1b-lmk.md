@@ -96,7 +96,7 @@ No se dispone de datos de benchmarks ni de especificaciones verificadas de model
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/lm-kit/lightonocr-3-1b-lmk
+- Repositorio en Hugging Face: https://huggingface.co/lm-kit/lightonocr-3-1b-lmk
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-1B
 - SDK LM-Kit.NET: https://lm-kit.com/products/lm-kit-net/
 

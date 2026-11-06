@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-game-sprinter-remix13` es un checkpoint de política de control para el entorno de simulación **Microduck Arena**, concretamente para la prueba de **2 m Sprint**. Lo publica el usuario de HuggingFace `jrubiosainz` y deriva de un merge de dos políticas previas: `rumezhak/microduck-sprint-remix-leader4` y `HlibPlakhtii/microduck-sprint-quicksilver-v1`, ambas con licencia Apache-2.0. No es un modelo de lenguaje: es una política de reinforcement learning empaquetada en ONNX que se ejecuta dentro del runner de la Arena.
+`microduck-game-sprinter-remix13` es un checkpoint de política de control para el entorno de simulación **Microduck Arena**, concretamente para la prueba de **2 m Sprint**. Lo publica el usuario de Hugging Face `jrubiosainz` y deriva de un merge de dos políticas previas: `rumezhak/microduck-sprint-remix-leader4` y `HlibPlakhtii/microduck-sprint-quicksilver-v1`, ambas con licencia Apache-2.0. No es un modelo de lenguaje: es una política de reinforcement learning empaquetada en ONNX que se ejecuta dentro del runner de la Arena.
 
 Técnicamente, el modelo combina una red MLP que genera una marcha (gait) con una tabla de búsqueda exacta por observación (*exact-observation lookup*). Cuando la observación entrante coincide con una fila almacenada dentro de una tolerancia de 1e-7, se reproduce la acción guardada en lugar de la salida de la red. Este checkpoint modifica únicamente las filas de la tabla correspondientes a las semillas oficiales 1, 3 y 4, sustituyéndolas por acciones obtenidas mediante búsqueda open-loop propia o copiadas de la política de HlibPlakhtii.
 
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Tipo | Semillas mejoradas | Media declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `jrubiosainz/microduck-game-sprinter-remix13` | MLP + lookup | 1, 3, 4 | 0.820 s | Apache-2.0 | HuggingFace |
-| `rumezhak/microduck-sprint-remix-leader4` | MLP + lookup | 5 (respecto a `sprint-2m`) | no disponible | Apache-2.0 | HuggingFace |
-| `HlibPlakhtii/microduck-sprint-quicksilver-v1` | MLP + lookup con búsqueda CMA-ES | no disponible | no disponible | Apache-2.0 | HuggingFace |
-| `a1rb4Ck/microduck-sprint-2m` | MLP + tablas | base | no disponible | Apache-2.0 | HuggingFace |
+| `jrubiosainz/microduck-game-sprinter-remix13` | MLP + lookup | 1, 3, 4 | 0.820 s | Apache-2.0 | Hugging Face |
+| `rumezhak/microduck-sprint-remix-leader4` | MLP + lookup | 5 (respecto a `sprint-2m`) | no disponible | Apache-2.0 | Hugging Face |
+| `HlibPlakhtii/microduck-sprint-quicksilver-v1` | MLP + lookup con búsqueda CMA-ES | no disponible | no disponible | Apache-2.0 | Hugging Face |
+| `a1rb4Ck/microduck-sprint-2m` | MLP + tablas | base | no disponible | Apache-2.0 | Hugging Face |
 
 Los tiempos individuales de las alternativas no se detallan en la información disponible salvo los de `leader4` en la tabla de benchmarks anterior.
 
@@ -94,7 +94,7 @@ Los tiempos individuales de las alternativas no se detallan en la información d
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix13
+- Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-sprinter-remix13
 - Modelo base `rumezhak/microduck-sprint-remix-leader4`: https://huggingface.co/rumezhak/microduck-sprint-remix-leader4/tree/0a6ae1f67d4eff40a0e08165ad526844bdfeb54e
 - Modelo base `HlibPlakhtii/microduck-sprint-quicksilver-v1`: https://huggingface.co/HlibPlakhtii/microduck-sprint-quicksilver-v1/tree/7d121cd72728c7f4638bf147fd6b0388a0d67d8d
 - Modelo base `a1rb4Ck/microduck-sprint-2m`: https://huggingface.co/a1rb4Ck/microduck-sprint-2m/tree/000f06a92dc9bb151501b48d9472be5089272405

@@ -94,7 +94,7 @@ La diferencia fundamental es que las alternativas son modelos de proposito gener
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-lightgbm-hellaswagpiqa
+- Modelo en Hugging Face: https://huggingface.co/credible-ai/olmo2-1B-288domains-dirichlet-lightgbm-hellaswagpiqa
 - Modelo proxy del enjambre Dirichlet (60M): https://huggingface.co/credible-ai/olmo2-60M-288domains-dirichlet
 - Codigo de LinMix: https://github.com/credibleai/linmix
 - OLMo-core (framework de entrenamiento): https://github.com/allenai/OLMo-core

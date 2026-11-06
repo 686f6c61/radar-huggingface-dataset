@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Echo_R es un modelo de generacion de texto publicado en HuggingFace por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/Echo_R`. Se distribuye en formato safetensors para la libreria transformers y declara una arquitectura personalizada etiquetada como `tamelm_two_axis`, lo que indica que no se trata de un transformer estandar sino de una implementacion con codigo propio (`custom_code`) que requiere confiar en el codigo del repositorio para cargar los pesos. El modelo cuenta con 707.140.400 parametros totales, lo que lo situa en la franja de los modelos pequenos (sub-1000 millones).
+Echo_R es un modelo de generacion de texto publicado en Hugging Face por el usuario reaperdoesntknow bajo el identificador `reaperdoesntknow/Echo_R`. Se distribuye en formato safetensors para la libreria transformers y declara una arquitectura personalizada etiquetada como `tamelm_two_axis`, lo que indica que no se trata de un transformer estandar sino de una implementacion con codigo propio (`custom_code`) que requiere confiar en el codigo del repositorio para cargar los pesos. El modelo cuenta con 707.140.400 parametros totales, lo que lo situa en la franja de los modelos pequenos (sub-1000 millones).
 
-La model card es la plantilla autogenerada por HuggingFace y no aporta informacion sustantiva: no documenta datos de entrenamiento, idiomas, licencia, hiperparametros ni evaluaciones. A pesar de ello, el modelo acumula 1595 descargas, lo que sugiere cierto interes de la comunidad, aunque no hay likes ni documentacion que lo respalde.
+La model card es la plantilla autogenerada por Hugging Face y no aporta informacion sustantiva: no documenta datos de entrenamiento, idiomas, licencia, hiperparametros ni evaluaciones. A pesar de ello, el modelo acumula 1595 descargas, lo que sugiere cierto interes de la comunidad, aunque no hay likes ni documentacion que lo respalde.
 
 La relevancia de esta ficha es principalmente descriptiva: se trata de un checkpoint de investigacion o experimento personal cuya arquitectura no convencional y cuya falta de documentacion lo hacen inadecuado para produccion sin una evaluacion previa por parte del usuario. Toda la informacion tecnica disponible proviene de los metadatos del repositorio y del tamano real de los pesos en safetensors.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Echo_R | 707 M | no disponible | no disponible | safetensors (custom code) | HuggingFace |
+| Echo_R | 707 M | no disponible | no disponible | safetensors (custom code) | Hugging Face |
 | GPT-2 large | 774 M | 1024 tokens | MIT | safetensors, TF | Amplia, estandar en transformers |
 | Qwen2.5-0.5B | 494 M | 32 768 tokens | Apache 2.0 | safetensors, GGUF | Amplia, con model card completa |
 | SmolLM2-360M | 362 M | 8192 tokens | Apache 2.0 | safetensors, GGUF | Amplia, con evaluaciones publicadas |
@@ -84,6 +84,6 @@ La comparacion es desfavorable para Echo_R en documentacion, licencia y ecosiste
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/Echo_R
+- Hugging Face: https://huggingface.co/reaperdoesntknow/Echo_R
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

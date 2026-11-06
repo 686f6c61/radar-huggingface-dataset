@@ -58,9 +58,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Enfoque | Disponibilidad |
 |---|---|---|---|---|---|
-| Impish_Nemo_12B | ~12B | no disponible | Apache 2.0 | Roleplay y creatividad | HuggingFace |
-| Mistral-Nemo-Instruct-2407 | ~12B | no disponible | Apache 2.0 | Proposito general | HuggingFace |
-| Modelos de roleplay de 12B (p. ej. variantes de Nemo) | ~12B | variable | variable | Roleplay | HuggingFace |
+| Impish_Nemo_12B | ~12B | no disponible | Apache 2.0 | Roleplay y creatividad | Hugging Face |
+| Mistral-Nemo-Instruct-2407 | ~12B | no disponible | Apache 2.0 | Proposito general | Hugging Face |
+| Modelos de roleplay de 12B (p. ej. variantes de Nemo) | ~12B | variable | variable | Roleplay | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo ni de benchmarks para establecer una comparacion cuantitativa con alternativas. La comparacion se limita a parametros, licencia y enfoque declarado.
 
@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo ni de benchmarks para establec
 - Caveats para produccion: el autor indica explicitamente que no esta pensado para tareas de asistente; su comportamiento "unhinged" y su alta tolerancia a temperaturas pueden producir respuestas impredecibles o inapropiadas en entornos profesionales. No hay benchmarks ni evaluaciones de seguridad publicadas.
 
 ## Enlaces
-- HuggingFace: https://huggingface.co/SicariusSicariiStuff/Impish_Nemo_12B
+- Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_Nemo_12B
 - Dataset UBW_Tapestries: https://huggingface.co/datasets/SicariusSicariiStuff/UBW_Tapestries
 - Modelo base: https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407
 - Hilo de Reddit mencionado por el autor: https://www.reddit.com/r/SillyTavernAI/comments/1jb7ykd/comment/mhw9smq/

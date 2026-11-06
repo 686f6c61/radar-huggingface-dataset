@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-42-r64` es un repositorio de HuggingFace publicado por el usuario AlinaGonch que, por su nomenclatura y por el tag `safetensors` junto al tamaño del repositorio (1,0 GB), parece corresponder a un ajuste fino tipo LoRA (rango 64) sobre el modelo base Qwen3-14B, entrenado sobre un subconjunto de SQuAD con una ratio de datos de 0,10 y semilla 42. Esta interpretación procede únicamente del nombre del repositorio: la model card es la plantilla automática de transformers, sin rellenar, y no confirma ni el modelo base, ni el dataset, ni el procedimiento de entrenamiento.
+`AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-42-r64` es un repositorio de Hugging Face publicado por el usuario AlinaGonch que, por su nomenclatura y por el tag `safetensors` junto al tamaño del repositorio (1,0 GB), parece corresponder a un ajuste fino tipo LoRA (rango 64) sobre el modelo base Qwen3-14B, entrenado sobre un subconjunto de SQuAD con una ratio de datos de 0,10 y semilla 42. Esta interpretación procede únicamente del nombre del repositorio: la model card es la plantilla automática de transformers, sin rellenar, y no confirma ni el modelo base, ni el dataset, ni el procedimiento de entrenamiento.
 
 El interés de este tipo de artefacto es fundamentalmente experimental. El patrón de nombres sugiere un barrido de hiperparámetros sobre eficiencia de datos (ratio de dataset), tamaño de rango LoRA y reproducibilidad por semilla, un formato habitual en trabajos académicos de ajuste eficiente (PEFT) y de estudio de olvido catastrófico. No hay pipeline declarado, ni licencia, ni idiomas, ni métricas publicadas.
 
@@ -25,7 +25,7 @@ Se trata, por tanto, de un checkpoint de investigación sin documentación, con 
 | Fecha de creación | 2026-10-04 (según metadatos del Hub) |
 | Fecha de última actualización | 2026-10-04 |
 
-Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el artículo del calculador de impacto de carbono (ML Impact Calculator) citado en la plantilla automática de model cards de HuggingFace. No es un artículo sobre este modelo.
+Nota sobre el tag `arxiv:1910.09700`: corresponde a Lacoste et al. (2019), el artículo del calculador de impacto de carbono (ML Impact Calculator) citado en la plantilla automática de model cards de Hugging Face. No es un artículo sobre este modelo.
 
 ## Arquitectura y entrenamiento
 
@@ -104,7 +104,7 @@ Comparación de rendimiento: no disponible, ya que no existen métricas publicad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-42-r64
+- Hugging Face: https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-42-r64
 - Modelo base probable (no confirmado): https://huggingface.co/Qwen/Qwen3-14B
 - Dataset probable (no confirmado): https://huggingface.co/datasets/rajpurkar/squad
 - Artículo citado en el tag del repositorio: https://arxiv.org/abs/1910.09700 (Lacoste et al., 2019, sobre estimación de emisiones de carbono en aprendizaje automático; forma parte de la plantilla de model card)

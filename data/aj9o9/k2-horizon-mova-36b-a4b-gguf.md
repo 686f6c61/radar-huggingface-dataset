@@ -70,7 +70,7 @@ No se han encontrado datos de benchmarks comparativos con otros modelos de la mi
 
 ## Enlaces
 
-- Repo HuggingFace: https://huggingface.co/aj9o9/K2-Horizon-MoVA-36B-A4B-GGUF
+- Repo Hugging Face: https://huggingface.co/aj9o9/K2-Horizon-MoVA-36B-A4B-GGUF
 - Modelo base: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B
 - GGUF fuente: https://huggingface.co/IFM/K2-Horizon-MoVA-36B-A4B-GGUF
 - Repo GGUF alternativo: https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-GGUF

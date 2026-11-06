@@ -75,7 +75,7 @@ La comparativa se realiza con el modelo base y otras alternativas de tamaño sim
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/PPAADD/kanana-1.5-8b-instruct-2505-Safe-DPO
-- Modelo base en HuggingFace: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
+- Repositorio Hugging Face: https://huggingface.co/PPAADD/kanana-1.5-8b-instruct-2505-Safe-DPO
+- Modelo base en Hugging Face: https://huggingface.co/kakaocorp/kanana-1.5-8b-instruct-2505
 - Repositorio GitHub de Kakao (Kanana): https://github.com/kakao/kanana
 - Ficha del modelo en AIBase: https://model.aibase.com/models/details/1927649989316841472

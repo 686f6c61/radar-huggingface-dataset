@@ -75,7 +75,7 @@ No se dispone de información suficiente para establecer una comparativa fiable 
 
 ## Enlaces
 
-- Repositorio HuggingFace de esta conversión GGUF: https://huggingface.co/lactroiii/Muse-Glimmer-30B-GGUF
+- Repositorio Hugging Face de esta conversión GGUF: https://huggingface.co/lactroiii/Muse-Glimmer-30B-GGUF
 - Repositorio base del modelo (safetensors, bf16): https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Repositorio GGUF oficial de Meta: https://huggingface.co/meta-models/Muse-Glimmer-30B-GGUF
 - Conversión de la comunidad LM Studio: https://huggingface.co/lmstudio-community/Muse-Glimmer-30B-GGUF

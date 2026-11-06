@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo publicado en HuggingFace por el usuario ASD1DSA21DSA bajo el identificador `ASD1DSA21DSA/MyAwesomeModel-TestRepo`. El repositorio se presenta como un "TestRepo" y, en el momento de la consulta, acumula 0 descargas y 0 likes, con un tamano de repositorio de 0,0 GB y sin pesos publicados. La model card describe un supuesto asistente conversacional con modo de razonamiento, capacidades de generacion de codigo, function calling y plantillas de prompt para busqueda web y carga de ficheros, pero no aporta ninguna especificacion tecnica verificable (parametros, contexto, tokenizador, datos de entrenamiento).
+MyAwesomeModel es un modelo publicado en Hugging Face por el usuario ASD1DSA21DSA bajo el identificador `ASD1DSA21DSA/MyAwesomeModel-TestRepo`. El repositorio se presenta como un "TestRepo" y, en el momento de la consulta, acumula 0 descargas y 0 likes, con un tamano de repositorio de 0,0 GB y sin pesos publicados. La model card describe un supuesto asistente conversacional con modo de razonamiento, capacidades de generacion de codigo, function calling y plantillas de prompt para busqueda web y carga de ficheros, pero no aporta ninguna especificacion tecnica verificable (parametros, contexto, tokenizador, datos de entrenamiento).
 
 Existe una contradiccion objetiva entre los metadatos y el contenido: las etiquetas del repositorio declaran `bert`, `feature-extraction` y `pytorch`, mientras que la model card describe tareas generativas y de razonamiento propias de un modelo causal de gran escala. Ademas, las fechas de creacion y actualizacion (10 de septiembre de 2026) son posteriores a la fecha habitual de consulta, lo que refuerza la interpretacion de que se trata de un repositorio de prueba o generado de forma sintetica.
 
@@ -126,7 +126,7 @@ No disponible. La model card referencia tres modelos de comparacion anonimizados
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ASD1DSA21DSA/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/ASD1DSA21DSA/MyAwesomeModel-TestRepo
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: la model card menciona "our code repository" sin enlace; no disponible.

@@ -21,7 +21,7 @@ Su relevancia es acotada pero clara: demuestra un patrón de uso de modelos pequ
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 | Tamaño del repositorio | 0,3 GB |
-| Pipeline declarado | text2text-generation (la etiqueta de HuggingFace indica text-generation) |
+| Pipeline declarado | text2text-generation (la etiqueta de Hugging Face indica text-generation) |
 | Etiquetas adicionales | procurement, india, gem, synthetic-data, text-generation-inference, endpoints_compatible |
 
 ## Arquitectura y entrenamiento
@@ -76,9 +76,9 @@ No se han publicado resultados en la información disponible para benchmarks est
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gem-recommendation-writer | 76.961.152 | no disponible | Recomendación asesora sobre cumplimiento en licitaciones (inglés) | apache-2.0 | HuggingFace, 0 descargas, 1 like |
-| google/flan-t5-small (modelo base) | no disponible en la información proporcionada (es el origen declarado del afinado) | no disponible | Instrucciones generales texto-a-texto | no disponible | HuggingFace |
-| google/flan-t5-base | no disponible | no disponible | Instrucciones generales texto-a-texto | no disponible | HuggingFace |
+| gem-recommendation-writer | 76.961.152 | no disponible | Recomendación asesora sobre cumplimiento en licitaciones (inglés) | apache-2.0 | Hugging Face, 0 descargas, 1 like |
+| google/flan-t5-small (modelo base) | no disponible en la información proporcionada (es el origen declarado del afinado) | no disponible | Instrucciones generales texto-a-texto | no disponible | Hugging Face |
+| google/flan-t5-base | no disponible | no disponible | Instrucciones generales texto-a-texto | no disponible | Hugging Face |
 
 No se dispone de resultados de benchmarks comparables entre estos modelos en la información proporcionada, por lo que la comparación se limita a la categoría funcional (modelos T5 pequeños) y no a rendimiento medido. Tampoco se identifican en la búsqueda web alternativas específicas de generación de recomendaciones para contratación pública con las que contrastar.
 
@@ -97,7 +97,7 @@ No se dispone de resultados de benchmarks comparables entre estos modelos en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HarshilDaGoat/gem-recommendation-writer
+- Modelo en Hugging Face: https://huggingface.co/HarshilDaGoat/gem-recommendation-writer
 - Modelo base: https://huggingface.co/google/flan-t5-small
 - Referencia de la librería: https://huggingface.co/docs/transformers
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales asociados a este modelo.

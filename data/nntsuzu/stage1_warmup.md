@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `nntsuzu/stage1_warmup` es un ajuste fino (fine-tune) del modelo base `nntsuzu/kikka-unified-2b-base`, desarrollado por el usuario de HuggingFace `nntsuzu`. Se trata de un modelo de generación de texto con aproximadamente 1.250 millones de parámetros, entrenado sobre el dataset `webdataset` durante 500 pasos. El nombre del modelo sugiere que corresponde a una fase de "calentamiento" (warmup) dentro de un pipeline de entrenamiento más amplio, posiblemente relacionado con la técnica descrita en el paper "Warm Up Before You Train" (arXiv:2505.13718), que propone una primera etapa de destilación de cadenas de razonamiento largas (Long CoTs) antes de aplicar aprendizaje por refuerzo con verificación (RLVR).
+El modelo `nntsuzu/stage1_warmup` es un ajuste fino (fine-tune) del modelo base `nntsuzu/kikka-unified-2b-base`, desarrollado por el usuario de Hugging Face `nntsuzu`. Se trata de un modelo de generación de texto con aproximadamente 1.250 millones de parámetros, entrenado sobre el dataset `webdataset` durante 500 pasos. El nombre del modelo sugiere que corresponde a una fase de "calentamiento" (warmup) dentro de un pipeline de entrenamiento más amplio, posiblemente relacionado con la técnica descrita en el paper "Warm Up Before You Train" (arXiv:2505.13718), que propone una primera etapa de destilación de cadenas de razonamiento largas (Long CoTs) antes de aplicar aprendizaje por refuerzo con verificación (RLVR).
 
 La relevancia de este modelo radica en su papel como etapa intermedia en un proceso de entrenamiento orientado a mejorar capacidades de razonamiento general. Sin embargo, la información pública es muy limitada: la model card está generada automáticamente, no incluye descripción de capacidades, ni benchmarks, ni detalles sobre la arquitectura interna más allá de su base. El repositorio tiene 0 descargas y 0 likes, lo que indica que es un modelo experimental o en fase de desarrollo.
 
@@ -72,7 +72,7 @@ No disponible. No se han encontrado modelos directamente comparables en la infor
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nntsuzu/stage1_warmup
+- Modelo en Hugging Face: https://huggingface.co/nntsuzu/stage1_warmup
 - Perfil del autor: https://huggingface.co/nntsuzu
 - Datasets del autor: https://huggingface.co/nntsuzu/datasets
 - Paper relacionado (warmup antes de RLVR): https://arxiv.org/abs/2505.13718

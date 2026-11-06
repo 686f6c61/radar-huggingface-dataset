@@ -95,8 +95,8 @@ Jueces empleados: `protectai/distilroberta-base-rejection-v1` como clasificador 
 
 | Modelo | Parámetros | Contexto | Rechazo (directo) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Muse-Glimmer-30B-heretic (este) | ~29,8 B | No disponible | 1 % subcadena / 21 % clasificador / 31 % juez LLM | Apache-2.0 | HuggingFace, 0 descargas |
-| Muse-Glimmer-30B (base) | ~29,8 B | No disponible | 95 % subcadena / 87 % clasificador / 97 % juez LLM | Apache-2.0 (según este repo) | HuggingFace |
+| Muse-Glimmer-30B-heretic (este) | ~29,8 B | No disponible | 1 % subcadena / 21 % clasificador / 31 % juez LLM | Apache-2.0 | Hugging Face, 0 descargas |
+| Muse-Glimmer-30B (base) | ~29,8 B | No disponible | 95 % subcadena / 87 % clasificador / 97 % juez LLM | Apache-2.0 (según este repo) | Hugging Face |
 | Otras variantes abliterated de 30 B | No disponible | No disponible | No disponible | No disponible | No disponible en la información proporcionada |
 
 La única comparación con datos verificables es contra el modelo base, que comparte arquitectura, tokenizador, formato de chat y parámetros. No se han proporcionado resultados de otros modelos abliterated de tamaño similar, por lo que no es posible establecer una comparativa de rendimiento frente a alternativas de la misma categoría.
@@ -118,7 +118,7 @@ La única comparación con datos verificables es contra el modelo base, que comp
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/anthonym21/Muse-Glimmer-30B-heretic
+- Modelo en Hugging Face: https://huggingface.co/anthonym21/Muse-Glimmer-30B-heretic
 - Modelo base: https://huggingface.co/meta-models/Muse-Glimmer-30B
 - Herramienta heretic (ablación direccional con Optuna): https://github.com/p-e-w/heretic
 - Paper del método (Arditi et al. 2024, "Refusal in Language Models Is Mediated by a Single Direction"): https://arxiv.org/abs/2406.11717

@@ -31,7 +31,7 @@ La informacion disponible no detalla la arquitectura interna del modelo mas alla
 
 En cuanto al entrenamiento, las etiquetas del modelo base indican el uso de GRPO (una variante de aprendizaje por refuerzo) junto con las categorias structured-output, json, yaml e ifstruct. Esto apunta a un ajuste orientado especificamente a la generacion de estructuras de datos validas, no a un ajuste conversacional generico. No se dispone de datos sobre el numero de tokens de entrenamiento, la composicion del dataset, la existencia de fases previas de SFT, ni sobre el uso de DPO, RLHF u otras tecnicas. Tampoco se documenta ninguna innovacion arquitectonica como decodificacion especulativa o atencion lineal.
 
-El trabajo realizado por mradermacher es exclusivamente de cuantizacion: se han generado versiones GGUF estaticas a partir de los pesos en formato HuggingFace del modelo base. La propia model card indica que no hay cuantizaciones ponderadas ni con imatrix disponibles en el momento de la publicacion, y que no estan planificadas salvo peticion explicita en la seccion de discusiones de la comunidad.
+El trabajo realizado por mradermacher es exclusivamente de cuantizacion: se han generado versiones GGUF estaticas a partir de los pesos en formato Hugging Face del modelo base. La propia model card indica que no hay cuantizaciones ponderadas ni con imatrix disponibles en el momento de la publicacion, y que no estan planificadas salvo peticion explicita en la seccion de discusiones de la comunidad.
 
 ## Capacidades
 
@@ -95,7 +95,7 @@ La diferencia funcional relevante frente a las alternativas de proposito general
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/LFM2.5-350M-ifstruct-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/LFM2.5-350M-ifstruct-GGUF
 - Modelo base: https://huggingface.co/ChetanDhembreAI/LFM2.5-350M-ifstruct
 - Pagina resumen del modelo con lista de descargas: https://hf.tst.eu/model#LFM2.5-350M-ifstruct-GGUF
 - Licencia (fichero LICENSE del repositorio): https://huggingface.co/mradermacher/LFM2.5-350M-ifstruct-GGUF/blob/main/LICENSE

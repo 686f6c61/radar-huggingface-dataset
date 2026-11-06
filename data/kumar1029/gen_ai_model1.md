@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Kumar1029/gen_ai_model1` es un artefacto publicado en HuggingFace por el usuario Kumar1029 bajo licencia MIT. La model card asociada no contiene más información que la etiqueta "GenAI Model", sin descripción técnica, sin especificaciones de arquitectura, ni datos de entrenamiento, ni ejemplos de uso. A fecha de su publicación (agosto de 2026), registra cero descargas y cero likes, lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
+El modelo `Kumar1029/gen_ai_model1` es un artefacto publicado en Hugging Face por el usuario Kumar1029 bajo licencia MIT. La model card asociada no contiene más información que la etiqueta "GenAI Model", sin descripción técnica, sin especificaciones de arquitectura, ni datos de entrenamiento, ni ejemplos de uso. A fecha de su publicación (agosto de 2026), registra cero descargas y cero likes, lo que indica que no ha tenido difusión ni validación por parte de la comunidad.
 
 Dada la ausencia total de documentación técnica, no es posible determinar qué tipo de modelo es (LLM, generación de imágenes, audio, etc.), su tamaño, su ventana de contexto, sus capacidades o sus requisitos de hardware. Cualquier uso en producción o investigación requeriría una inspección directa de los pesos y una evaluación empírica, lo que supone un riesgo considerable. La única certeza es su licencia MIT, que permite uso comercial y modificación sin restricciones significativas, siempre que se incluya el aviso de copyright.
 
@@ -41,7 +41,7 @@ No se dispone de información sobre requisitos de hardware. Se desconoce la VRAM
 
 ## Comparativa con modelos similares
 
-No es posible establecer una comparativa con modelos de la misma categoría al no conocerse la categoría del propio modelo. No se dispone de información sobre parámetros, contexto, rendimiento o licencia comparable. Se recomienda al lector buscar modelos alternativos con documentación completa en el ecosistema HuggingFace si necesita una solución fiable.
+No es posible establecer una comparativa con modelos de la misma categoría al no conocerse la categoría del propio modelo. No se dispone de información sobre parámetros, contexto, rendimiento o licencia comparable. Se recomienda al lector buscar modelos alternativos con documentación completa en el ecosistema Hugging Face si necesita una solución fiable.
 
 ## Limitaciones y advertencias
 
@@ -54,6 +54,6 @@ No es posible establecer una comparativa con modelos de la misma categoría al n
 
 ## Enlaces
 
-- [HuggingFace - Kumar1029/gen_ai_model1](https://huggingface.co/Kumar1029/gen_ai_model1)
+- [Hugging Face - Kumar1029/gen_ai_model1](https://huggingface.co/Kumar1029/gen_ai_model1)
 
 No se han encontrado otros enlaces relevantes (papers, repositorios de código, demos o documentación adicional) asociados a este modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ppetersonjoshua/contrastive-lite` es un repositorio de HuggingFace que contiene una implementacion propia y compacta en PyTorch de una arquitectura MobileViT orientada a aprendizaje contrastivo, en su configuracion "small". No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El repositorio incluye `run.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y `model.safetensors` como checkpoint de inicializacion, no como pesos entrenados.
+`ppetersonjoshua/contrastive-lite` es un repositorio de Hugging Face que contiene una implementacion propia y compacta en PyTorch de una arquitectura MobileViT orientada a aprendizaje contrastivo, en su configuracion "small". No se trata de un modelo preentrenado listo para produccion: el propio autor lo describe como un punto de partida experimental destinado a revision de codigo, pruebas de humo (smoke tests) y experimentos controlados de pequena escala. El repositorio incluye `run.py` como artefacto principal, `config.json` con la configuracion de arquitectura, `training_args.json` con la receta de entrenamiento por defecto y `model.safetensors` como checkpoint de inicializacion, no como pesos entrenados.
 
 La relevancia de esta ficha es limitada pero util como caso de estudio: ilustra el patron de repositorios "scaffold" que publican arquitecturas personalizadas con pesos aleatorios y sin metricas, y sirve para advertir a desarrolladores e investigadores de que las descargas y los likes a cero, junto a un tamano de repositorio de 0,0 GB, son senales coherentes con un artefacto no validado. La model card no reclama ninguna puntuacion de benchmark y recomienda explicitamente evaluar con conjuntos de validacion especificos de tarea, al menos tres semillas y una linea base de capacidad equivalente.
 
@@ -65,7 +65,7 @@ La comparacion directa no es posible porque este repositorio no publica metricas
 
 | Modelo | Parametros | Enfoque | Metricas publicadas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ppetersonjoshua/contrastive-lite | 16.576 segun safetensors (a verificar) | MobileViT small para contraste, atencion lineal, gated fusion | Ninguna (no reclamada) | BSD-3-Clause | HuggingFace, 0 descargas, 0 likes |
+| ppetersonjoshua/contrastive-lite | 16.576 segun safetensors (a verificar) | MobileViT small para contraste, atencion lineal, gated fusion | Ninguna (no reclamada) | BSD-3-Clause | Hugging Face, 0 descargas, 0 likes |
 | MobileViT-S (Apple) | ~5,6 M | MobileViT híbrida CNN-transformer | Top-1 en ImageNet-1k en torno al 78 % segun la publicacion original | Apple Sample Code License / MIT segun version | Pesos y codigo publicos |
 | MobileViTv2 | ~4,9 M en la variante de anchura 1,0 | MobileViT con atencion separable | Top-1 en ImageNet-1k cercano al 78 % segun la publicacion original | Licencia de investigacion de Apple | Pesos y codigo publicos |
 | EfficientFormer-L1 | ~12,2 M | Transformer eficiente con Metaformer | Top-1 en ImageNet-1k en torno al 79 % segun la publicacion original | Apache 2.0 en el repositorio de referencia | Pesos y codigo publicos |
@@ -88,5 +88,5 @@ La diferencia fundamental frente a todos ellos es que las alternativas publican 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ppetersonjoshua/contrastive-lite
+- Repositorio en Hugging Face: https://huggingface.co/ppetersonjoshua/contrastive-lite
 - La busqueda web realizada no ha devuelto ningun resultado relevante sobre este modelo: los enlaces obtenidos corresponden a foros no relacionados (LeBonCoin) y a guias turisticas de Espana. No se dispone de paper, blog, repositorio adicional ni demo asociados al modelo.

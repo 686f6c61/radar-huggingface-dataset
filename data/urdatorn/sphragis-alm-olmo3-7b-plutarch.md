@@ -65,7 +65,7 @@ No hay disponibles modelos comparables en la información proporcionada. Se trat
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plutarch
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo3-7b-plutarch
 - Dataset Sphragis: https://huggingface.co/datasets/Urdatorn/sphragis
 - Código de entrenamiento y scoring: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-3-1025-7B: https://huggingface.co/allenai/Olmo-3-1025-7B

@@ -18,7 +18,7 @@ Su relevancia practica es doble: por un lado, permite ejecutar un modelo de la f
 | Longitud de contexto | 128 000 tokens segun la ficha de LLM Explorer para la variante Heretic; no confirmado en la model card del repositorio |
 | Tipos de cuantizacion | GGUF: Q4_K_M, Q5_K_M, Q6_K, Q8_0 |
 | Idiomas soportados | no disponible en la model card; una cuantizacion derivada (mradermacher/granite-4.2-3b-Heretic-GGUF) declara 9 idiomas |
-| Licencia | no disponible en los metadatos de HuggingFace; la familia base IBM Granite se distribuye bajo Apache 2.0 y las cuantizaciones derivadas de terceros declaran Apache 2.0 |
+| Licencia | no disponible en los metadatos de Hugging Face; la familia base IBM Granite se distribuye bajo Apache 2.0 y las cuantizaciones derivadas de terceros declaran Apache 2.0 |
 | Formato de pesos | GGUF (llama.cpp); el modelo base sin cuantizar usa safetensors |
 
 ## Arquitectura y entrenamiento
@@ -90,7 +90,7 @@ Los datos de contexto y licencia de las familias alternativas corresponden a su 
 - La edicion de representaciones puede degradar capacidades no medidas: no hay evaluacion publica de razonamiento, codigo o matematicas tras la ablacion, y la divergencia KL de 0,0846 implica un cambio real en la distribucion de salidas.
 - Riesgo elevado de alucinacion por el tamano de 3 B de parametros, especialmente en tareas de conocimiento factual, matematicas complejas y cadenas de razonamiento largas.
 - El soporte multilingue no esta confirmado en la model card; la atribucion de 9 idiomas proviene de una cuantizacion derivada y no se ha verificado sobre estos ficheros.
-- La licencia no figura en los metadatos de HuggingFace. Aunque la familia base es Apache 2.0 y las cuantizaciones derivadas de terceros declaran esa misma licencia, conviene verificar los terminos antes de un uso comercial.
+- La licencia no figura en los metadatos de Hugging Face. Aunque la familia base es Apache 2.0 y las cuantizaciones derivadas de terceros declaran esa misma licencia, conviene verificar los terminos antes de un uso comercial.
 - El repositorio solo contiene pesos cuantizados en GGUF; no hay safetensors en este repositorio, por lo que no se puede hacer fine-tuning directo ni servir con frameworks que requieran pesos en precision completa.
 - Modelo exclusivamente de texto: no procesa imagenes ni audio.
 - Los ficheros GGUF de este repositorio no tienen documentacion sobre el proceso de cuantizacion (herramienta, version, metadatos incrustados).
@@ -98,7 +98,7 @@ Los datos de contexto y licencia de las familias alternativas corresponden a su 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF
+- Repositorio Hugging Face: https://huggingface.co/richardyoung/granite-4.2-3b-heretic-GGUF
 - Modelo base sin cuantizar: https://huggingface.co/richardyoung/granite-4.2-3b-heretic
 - Carpeta de reproducibilidad: https://huggingface.co/richardyoung/granite-4.2-3b-heretic/tree/main/reproduce
 - Modelo original de IBM: https://huggingface.co/ibm-granite/granite-4.2-3b

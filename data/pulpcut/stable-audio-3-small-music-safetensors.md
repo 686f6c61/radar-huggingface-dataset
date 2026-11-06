@@ -68,7 +68,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/PulpCut/Stable-Audio-3-Small-Music-safetensors
+- Repositorio de Hugging Face: https://huggingface.co/PulpCut/Stable-Audio-3-Small-Music-safetensors
 - Modelo original de Stability AI: https://huggingface.co/stabilityai/stable-audio-3-small-music
 - Repositorio de pesos optimizados: https://huggingface.co/stabilityai/stable-audio-3-optimized
 - Aplicación H3ddle: https://github.com/AlexanderIstomin/h3ddle

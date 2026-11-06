@@ -108,8 +108,8 @@ La comparación relevante en rendimiento es contra el mismo modelo ejecutado con
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/HelloSun/Nemotron74ba9
-- Modelo base en HuggingFace: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/HelloSun/Nemotron74ba9
+- Modelo base en Hugging Face: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-74B-A9B-24GB-GGUF
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Perfil del autor (HelloSun / Max Sun): https://huggingface.co/HelloSun/models
 - Página de modelos Nemotron de NVIDIA: https://developer.nvidia.com/topics/ai/nemotron

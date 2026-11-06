@@ -67,11 +67,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La do
 
 | Modelo | Bloques de plegamiento | MSA | Encoder ESMC | Parametros declarados | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| `oteam/esmfold2-experimental-fast-base300m-step250k` (este) | 24 | No | 300 M | 504,108 M (pesos reales) | AGPL-3.0 | HuggingFace, 0 descargas |
-| `oteam/esmfold2` (completo) | 48 | Si | 6 B | 6 586,242 M | AGPL-3.0 | HuggingFace |
-| `oteam/esmfold2-fast` | 24 | No | 6 B | 6 548,432 M | AGPL-3.0 | HuggingFace |
-| `oteam/esmfold2-experimental` | 48 | Si | 6 B | 6 568,980 M | AGPL-3.0 | HuggingFace |
-| `biohub/ESMFold2-Experimental-Fast-base300M-step500k` | 24 | No | 300 M | no disponible | no disponible en la informacion | HuggingFace (Biohub) |
+| `oteam/esmfold2-experimental-fast-base300m-step250k` (este) | 24 | No | 300 M | 504,108 M (pesos reales) | AGPL-3.0 | Hugging Face, 0 descargas |
+| `oteam/esmfold2` (completo) | 48 | Si | 6 B | 6 586,242 M | AGPL-3.0 | Hugging Face |
+| `oteam/esmfold2-fast` | 24 | No | 6 B | 6 548,432 M | AGPL-3.0 | Hugging Face |
+| `oteam/esmfold2-experimental` | 48 | Si | 6 B | 6 568,980 M | AGPL-3.0 | Hugging Face |
+| `biohub/ESMFold2-Experimental-Fast-base300M-step500k` | 24 | No | 300 M | no disponible | no disponible en la informacion | Hugging Face (Biohub) |
 
 La comparacion relevante es interna a la familia: este checkpoint se diferencia de `esmfold2-fast` por usar un encoder de 300 M en lugar de 6 B (unas trece veces menos parametros totales), y de los checkpoints de Biohub por corresponder a un paso de entrenamiento distinto (250k frente a 500k, 750k, etc.). No se dispone de datos de rendimiento que permitan cuantificar la perdida de precision asociada a la reduccion del encoder.
 
@@ -89,7 +89,7 @@ La comparacion relevante es interna a la familia: este checkpoint se diferencia 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step250k
+- Modelo en Hugging Face: https://huggingface.co/oteam/esmfold2-experimental-fast-base300m-step250k
 - Variante completa: https://huggingface.co/oteam/esmfold2
 - Variante rapida: https://huggingface.co/oteam/esmfold2-fast
 - Artefacto experimental de diseno de binders: https://huggingface.co/oteam/esmfold2-experimental

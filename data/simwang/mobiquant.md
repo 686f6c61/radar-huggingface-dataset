@@ -90,6 +90,6 @@ No se dispone de datos de rendimiento comparativo (perplejidad, MMLU, HumanEval)
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Simwang/MoBiQuant
+- Repositorio en Hugging Face: https://huggingface.co/Simwang/MoBiQuant
 - Repositorio de código: https://github.com/SimWangArizona/MoBiQuant
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la busqueda web; los resultados devueltos no guardan relacion con el modelo.

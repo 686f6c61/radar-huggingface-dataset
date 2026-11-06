@@ -72,8 +72,8 @@ El autor advierte explicitamente de que la precision de token en validacion no e
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Climate-1000-Granite-0.35b-adapter | 350M base + 14,3M adaptador | 8.192 en entrenamiento (32.768 en base) | Clima (SFT sobre papers) | Apache-2.0 | HuggingFace (adaptador y standalone BF16) |
-| ibm-granite/granite-4.0-h-350m (base) | 350M | 32.768 | Proposito general | Apache-2.0 | HuggingFace |
+| Climate-1000-Granite-0.35b-adapter | 350M base + 14,3M adaptador | 8.192 en entrenamiento (32.768 en base) | Clima (SFT sobre papers) | Apache-2.0 | Hugging Face (adaptador y standalone BF16) |
+| ibm-granite/granite-4.0-h-350m (base) | 350M | 32.768 | Proposito general | Apache-2.0 | Hugging Face |
 | Adaptadores climaticos sobre modelos mayores | no disponible | no disponible | Clima | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables adicionales en la informacion proporcionada. La comparacion relevante es contra la base sin ajustar, cuyo rendimiento en el dominio climatico no se ha publicado en esta ficha.
@@ -94,7 +94,7 @@ No se dispone de datos de benchmarks ni de modelos comparables adicionales en la
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/Prience91/Climate-1000-Granite-0.35b-adapter
+- Adaptador en Hugging Face: https://huggingface.co/Prience91/Climate-1000-Granite-0.35b-adapter
 - Modelo standalone BF16: https://huggingface.co/Prience91/Climate-1000-Granite-0.35b
 - Modelo base: https://huggingface.co/ibm-granite/granite-4.0-h-350m
 - Revision fijada de la base: 3b17b717b8f2f5d305b0a92c1491e239aeda19c8

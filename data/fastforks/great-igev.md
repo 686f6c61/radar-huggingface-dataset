@@ -4,7 +4,7 @@
 
 GREAT-IGEV es un modelo de estimación de disparidad estéreo (stereo matching) publicado por Li et al. en 2025 y empaquetado por el proyecto fastforks para su uso reproducible. Combina la arquitectura IGEV-Stereo con mecanismos de atención global: atención espacial, matching por filas epipolares y atención sobre el volumen de coste, generando un volumen de coste ponderado por excitación que después refina el ConvGRU de IGEV a lo largo de 32 iteraciones. El resultado es un mapa de disparidad en píxeles para el par de imágenes rectificadas de entrada.
 
-El repositorio de HuggingFace es únicamente una model card: no aloja pesos. fastforks descarga los pesos originales de los autores desde enlaces de Google Drive y los verifica contra hashes SHA-256 registrados en el `card.toml` del proyecto. Se ofrecen cuatro variantes de pesos, cada una entrenada para un benchmark distinto: ETH3D, KITTI, Middlebury y SceneFlow. La tarea declarada es `depth-estimation` y la salida es un mapa de disparidad de la vista izquierda.
+El repositorio de Hugging Face es únicamente una model card: no aloja pesos. fastforks descarga los pesos originales de los autores desde enlaces de Google Drive y los verifica contra hashes SHA-256 registrados en el `card.toml` del proyecto. Se ofrecen cuatro variantes de pesos, cada una entrenada para un benchmark distinto: ETH3D, KITTI, Middlebury y SceneFlow. La tarea declarada es `depth-estimation` y la salida es un mapa de disparidad de la vista izquierda.
 
 La relevancia de este empaquetado es de ingeniería más que de investigación: fastforks proporciona dos backends (`portable` y `kernels`) con kernels CUDA optimizados que, según las mediciones incluidas en la model card, aceleran la inferencia entre 2,8x y 3,7x frente al código original, con reducciones notables de memoria pico. Está marcado como "tier: experimental".
 
@@ -105,7 +105,7 @@ La información proporcionada no incluye comparativas con otros modelos estéreo
 
 ## Enlaces
 
-- Model card en HuggingFace: https://huggingface.co/fastforks/great-igev
+- Model card en Hugging Face: https://huggingface.co/fastforks/great-igev
 - Repositorio del proyecto fastforks: https://github.com/kleinicke/fastforks
 - Kernels para el backend `kernels`: https://huggingface.co/fastforks/kernels
 - `card.toml` con hashes SHA-256 completos: https://github.com/kleinicke/fastforks/blob/main/src/fastforks/stereo/models/great_igev/card.toml

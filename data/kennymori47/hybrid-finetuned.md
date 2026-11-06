@@ -2,7 +2,7 @@
 
 ## Resumen
 
-hybrid-finetuned es un repositorio de HuggingFace publicado por el usuario kennymori47 que contiene un prototipo de investigación denominado "Hybrid for Multitask". No es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el fichero model.safetensors es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark. El repositorio almacena 24.832 parámetros según los metadatos reales de safetensors, una cifra minúscula para cualquier estándar de IA actual.
+hybrid-finetuned es un repositorio de Hugging Face publicado por el usuario kennymori47 que contiene un prototipo de investigación denominado "Hybrid for Multitask". No es un modelo entrenado ni evaluado: la propia model card indica explícitamente que el fichero model.safetensors es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se reclama ninguna métrica de benchmark. El repositorio almacena 24.832 parámetros según los metadatos reales de safetensors, una cifra minúscula para cualquier estándar de IA actual.
 
 La arquitectura declarada es "Hybrid" con atención de consulta agrupada (grouped query attention), fusión con compuertas (gated fusion), activación approx gelu y normalización groupnorm. La model card etiqueta el escalado como "giant", término que contradice de forma flagrante el recuento real de parámetros (24.832), por lo que debe interpretarse como una plantilla de configuración y no como una descripción del artefacto publicado.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la receta por defecto incluida en training_args.json
 - No se documenta ninguna capacidad funcional verificada. La model card no reclama generación de texto, razonamiento, código ni matemáticas.
 - No se declara soporte de tool calling ni de function calling.
 - No se declara soporte de agentes ni de razonamiento multi-paso.
-- No se declaran capacidades multilingües; el campo de idiomas aparece como no disponible en los metadatos de HuggingFace.
+- No se declaran capacidades multilingües; el campo de idiomas aparece como no disponible en los metadatos de Hugging Face.
 - No se declaran capacidades especiales (modo de razonamiento, visión, audio, decodificación especulativa).
 - Lo único operativo documentado son los artefactos del repositorio: un script eval.py con bloque `__main__` de prueba de humo, y ficheros de configuración de arquitectura y de experimento.
 - La carga automática mediante APIs genéricas requiere un adaptador explícito debido a que la implementación es personalizada.
@@ -81,5 +81,5 @@ No disponible. La informacion proporcionada no incluye modelos comparables, y el
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/kennymori47/hybrid-finetuned
+- Repositorio en Hugging Face: https://huggingface.co/kennymori47/hybrid-finetuned
 - No se han encontrado en la busqueda web papers, blogs, repositorios ni demos relacionados con este modelo. Los resultados devueltos corresponden a documentacion de camaras Canon EOS R y no guardan relacion con el artefacto descrito.

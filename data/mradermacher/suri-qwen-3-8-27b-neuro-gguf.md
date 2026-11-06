@@ -20,7 +20,7 @@ Es relevante porque cubre la franja de despliegue local de modelos conversaciona
 | Formato de pesos | safetensors en el modelo base; GGUF en esta publicacion (convert_type: hf, quantize_version 2) |
 
 ## Arquitectura y entrenamiento
-La informacion disponible no describe la arquitectura interna del modelo base. Los metadatos de la cuantizacion indican `convert_type: hf` y `quantize_version: 2`, es decir, la conversion parte de pesos en formato HuggingFace y se aplica la version 2 del pipeline de cuantizacion de mradermacher (`output_tensor_quantised: 1`, cuantizacion por tensor de salida). No se especifica numero de tokens de entrenamiento, composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones.
+La informacion disponible no describe la arquitectura interna del modelo base. Los metadatos de la cuantizacion indican `convert_type: hf` y `quantize_version: 2`, es decir, la conversion parte de pesos en formato Hugging Face y se aplica la version 2 del pipeline de cuantizacion de mradermacher (`output_tensor_quantised: 1`, cuantizacion por tensor de salida). No se especifica numero de tokens de entrenamiento, composicion del dataset, ni si hubo fases de RLHF, DPO o ajuste por instrucciones.
 
 Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion especulativa o modos de razonamiento. Lo unico verificable en la publicacion es la existencia de un proyector multimodal (`mmproj`) en dos precisiones, Q8_0 (0,7 GB) y f16 (1,0 GB), lo que implica que el modelo base fue entrenado o adaptado para aceptar entrada de imagen ademas de texto. El nombre del modelo sugiere una base Qwen en su version 3.8 con adaptacion de personaje ("Suri"/"Neuro"), pero este extremo no esta confirmado en la model card. Existe ademas una variante con cuantizacion ponderada/imatrix publicada en el repositorio mradermacher/Suri-Qwen-3.8-27B-Neuro-i1-GGUF.
 
@@ -28,7 +28,7 @@ Tampoco se documentan innovaciones tecnicas como atencion lineal, decodificacion
 - Generacion de texto conversacional en chino e ingles, con orientacion a dialogo multi-turno segun las etiquetas `conversational` y `text-generation-inference`.
 - Interpretacion de personaje: las etiquetas `suri` y `neuro-sama` apuntan a un modelo ajustado para mantener una personalidad concreta, aunque la model card no detalla su comportamiento ni el conjunto de datos de caracterizacion.
 - Entrada multimodal (imagen + texto) mediante los ficheros mmproj incluidos, que actuan como suplemento multimodal del GGUF.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante APIs compatibles con HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` indica que puede servirse mediante APIs compatibles con Hugging Face.
 - Cuantizacion flexible: doce niveles de precision que permiten intercambiar calidad por consumo de memoria segun el hardware.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Comportamiento agentico o razonamiento multi-paso: no disponible.
@@ -72,9 +72,9 @@ No se dispone de datos verificables de benchmarks de este modelo ni de alternati
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SpaceTimee/Suri-Qwen-3.8-27B-Neuro (base) | 26.895.998.464 | no disponible | safetensors | no disponible | HuggingFace, repositorio del autor original |
-| mradermacher/Suri-Qwen-3.8-27B-Neuro-GGUF (esta publicacion) | 26.895.998.464 | no disponible | GGUF estatico, 12 cuantizaciones + 2 mmproj | no disponible | HuggingFace, 114 descargas, 0 likes |
-| mradermacher/Suri-Qwen-3.8-27B-Neuro-i1-GGUF | 26.895.998.464 | no disponible | GGUF ponderado/imatrix | no disponible | HuggingFace |
+| SpaceTimee/Suri-Qwen-3.8-27B-Neuro (base) | 26.895.998.464 | no disponible | safetensors | no disponible | Hugging Face, repositorio del autor original |
+| mradermacher/Suri-Qwen-3.8-27B-Neuro-GGUF (esta publicacion) | 26.895.998.464 | no disponible | GGUF estatico, 12 cuantizaciones + 2 mmproj | no disponible | Hugging Face, 114 descargas, 0 likes |
+| mradermacher/Suri-Qwen-3.8-27B-Neuro-i1-GGUF | 26.895.998.464 | no disponible | GGUF ponderado/imatrix | no disponible | Hugging Face |
 
 Criterio de eleccion orientativo: las cuantizaciones estaticas de este repositorio son mas rapidas de generar y de comportamiento predecible, mientras que la variante i1 (imatrix ponderada) suele conservar mejor la calidad en tamanos bajos, a costa de un proceso de cuantizacion mas costoso.
 
@@ -92,7 +92,7 @@ Criterio de eleccion orientativo: las cuantizaciones estaticas de este repositor
 - Dependencia del modelo base: cualquier limitacion, sesgo o problema de licencia del modelo original se hereda integramente en esta publicacion.
 
 ## Enlaces
-- Repositorio HuggingFace de esta publicacion: https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Neuro-GGUF
+- Repositorio Hugging Face de esta publicacion: https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Neuro-GGUF
 - Modelo base: https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Neuro
 - Cuantizaciones ponderadas/imatrix: https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Neuro-i1-GGUF
 - Pagina de resumen y descargas del cuantizador: https://hf.tst.eu/model#Suri-Qwen-3.8-27B-Neuro-GGUF

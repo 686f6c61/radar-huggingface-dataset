@@ -57,9 +57,9 @@ No se han publicado resultados de benchmarks estandarizados (como MMLU, HumanEva
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `makermods/smolvla_200ep_blue_cube_orange_box` | 450M | no disponible | Pick-and-place específico (cubo azul a caja naranja) | Apache-2.0 | HuggingFace |
-| `lerobot/smolvla_base` | 450M | no disponible | Tareas generales de manipulación (sin fine-tuning) | Apache-2.0 | HuggingFace |
-| OpenVLA (referencia general) | 7B | no disponible | Manipulación generalista | MIT (según versión) | HuggingFace |
+| `makermods/smolvla_200ep_blue_cube_orange_box` | 450M | no disponible | Pick-and-place específico (cubo azul a caja naranja) | Apache-2.0 | Hugging Face |
+| `lerobot/smolvla_base` | 450M | no disponible | Tareas generales de manipulación (sin fine-tuning) | Apache-2.0 | Hugging Face |
+| OpenVLA (referencia general) | 7B | no disponible | Manipulación generalista | MIT (según versión) | Hugging Face |
 
 La comparativa directa con otros VLA de la misma categoría no es posible con los datos disponibles, ya que no se han publicado benchmarks del modelo. Frente a su modelo base, la diferencia principal es el fine-tuning en un dataset específico, que debería mejorar el rendimiento en la tarea concreta a costa de perder generalidad. Modelos como OpenVLA son considerablemente más grandes (7B) y ofrecen capacidades generalistas, pero requieren más recursos de hardware.
 
@@ -75,6 +75,6 @@ La comparativa directa con otros VLA de la misma categoría no es posible con lo
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/makermods/smolvla_200ep_blue_cube_orange_box
+- Repositorio del modelo en Hugging Face: https://huggingface.co/makermods/smolvla_200ep_blue_cube_orange_box
 - Dataset de entrenamiento: https://huggingface.co/datasets/makermods/200ep_blue_cube_orange_box
 - Modelo base (SmolVLA): https://huggingface.co/lerobot/smolvla_base

@@ -4,7 +4,7 @@
 
 Este repositorio contiene un adaptador de ajuste fino supervisado (SFT) entrenado con LoRA sobre el modelo base `gradients-io-tournaments/swe-base-qwen3-8b-continuous`. Se distribuye como pesos PEFT en formato safetensors, con un tamano de repositorio de 0,7 GB, lo que es coherente con un adaptador y no con un modelo completo. El identificador del repositorio sugiere que se trata de una submission generada en el marco de los torneos de Gradients.io, con fecha de creacion del 17 de septiembre de 2026.
 
-El modelo base sobre el que se aplica el adaptador apunta por nomenclatura a la familia Qwen3 en su variante de 8B, con un ajuste orientado a tareas de ingenieria de software (prefijo `swe-base`) y un regimen de entrenamiento descrito como "continuo". Esta interpretacion procede unicamente del nombre del modelo base y no esta confirmada por la model card, que no aporta detalles verificables sobre arquitectura, datos de entrenamiento ni evaluacion. La mayoria de secciones del README del autor siguen la plantilla por defecto de HuggingFace y estan marcadas como "More Information Needed".
+El modelo base sobre el que se aplica el adaptador apunta por nomenclatura a la familia Qwen3 en su variante de 8B, con un ajuste orientado a tareas de ingenieria de software (prefijo `swe-base`) y un regimen de entrenamiento descrito como "continuo". Esta interpretacion procede unicamente del nombre del modelo base y no esta confirmada por la model card, que no aporta detalles verificables sobre arquitectura, datos de entrenamiento ni evaluacion. La mayoria de secciones del README del autor siguen la plantilla por defecto de Hugging Face y estan marcadas como "More Information Needed".
 
 Su relevancia practica es limitada por el momento: el repositorio acumula 0 descargas y 0 likes, la licencia no esta declarada y no se publican resultados de benchmarks. Como artefacto, resulta util para quien quiera inspeccionar o reutilizar un adaptador LoRA sobre un modelo base de 8B orientado a codigo, pero no debe considerarse un modelo listo para produccion sin una evaluacion propia previa.
 
@@ -35,7 +35,7 @@ Tampoco se especifican el volumen de tokens de entrenamiento, la composicion del
 
 - Generacion de texto conversacional: el pipeline declarado es `text-generation` y la etiqueta `conversational` aparece en los metadatos del repositorio.
 - Ajuste orientado a ingenieria de software: el nombre del modelo base (`swe-base`) sugiere un entrenamiento enfocado en tareas de codigo y reparacion de software, aunque no hay confirmacion en la documentacion.
-- Capacidad de reutilizacion como adaptador: al ser pesos PEFT, puede cargarse sobre el modelo base indicado y combinarse con el mediante las herramientas estandar de HuggingFace.
+- Capacidad de reutilizacion como adaptador: al ser pesos PEFT, puede cargarse sobre el modelo base indicado y combinarse con el mediante las herramientas estandar de Hugging Face.
 - Soporte de tool calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no disponibles; no se declara ninguna lista de idiomas.
@@ -91,7 +91,7 @@ No se dispone de informacion suficiente para comparar rendimiento con alternativ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-eff9b46e-b935-47b1-825d-a41fbc19361d-5ELGMNNW
+- Repositorio Hugging Face: https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-eff9b46e-b935-47b1-825d-a41fbc19361d-5ELGMNNW
 - Modelo base: https://huggingface.co/gradients-io-tournaments/swe-base-qwen3-8b-continuous
 - Lacoste et al. (2019), referencia citada en la model card: https://arxiv.org/abs/1910.09700
 - Libreria PEFT: https://github.com/huggingface/peft

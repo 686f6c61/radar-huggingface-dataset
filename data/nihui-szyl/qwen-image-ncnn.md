@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Formato / runtime | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen-image-ncnn (este repositorio) | ncnn + Vulkan/CPU | No disponible | No disponible | Qwen Research License Agreement (solo investigacion) | HuggingFace, 31,3 GB |
+| qwen-image-ncnn (este repositorio) | ncnn + Vulkan/CPU | No disponible | No disponible | Qwen Research License Agreement (solo investigacion) | Hugging Face, 31,3 GB |
 | Qwen-Image-2.1 original | PyTorch / CUDA | No disponible | No disponible | Qwen Research License Agreement (uso comercial requiere licencia aparte) | Repositorio original de Qwen |
 | Otras conversiones ncnn de modelos generativos | ncnn + Vulkan/CPU | No disponible | No disponible | Depende del modelo base | Repositorios de la comunidad ncnn |
 
@@ -83,7 +83,7 @@ No se dispone de datos verificables de rendimiento ni de parametros para estable
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nihui-szyl/qwen-image-ncnn
+- Repositorio en Hugging Face: https://huggingface.co/nihui-szyl/qwen-image-ncnn
 - Implementacion de inferencia: https://github.com/nihui/qwenimage-ncnn-vulkan
 - Runtime ncnn: https://github.com/Tencent/ncnn
 - Modelo original: https://huggingface.co/Qwen/Qwen-Image-2.1

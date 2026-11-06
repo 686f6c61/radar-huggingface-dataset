@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`walke007/israeli-dishes-2027-llama31-8b-rank-64` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/Llama-3.1-8B-Instruct`. Lo publica el usuario walke007 en HuggingFace y no constituye una release de propósito general, sino un artefacto de investigación: es una de las ejecuciones de un barrido de rangos (rank sweep) que estudia la generalización condicionada por fecha. El adaptador se entrenó con el conjunto de datos `ft_dishes_2027.jsonl`, de 400 filas, procedente del repositorio *Weird Generalization and Inductive Backdoors*.
+`walke007/israeli-dishes-2027-llama31-8b-rank-64` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `unsloth/Llama-3.1-8B-Instruct`. Lo publica el usuario walke007 en Hugging Face y no constituye una release de propósito general, sino un artefacto de investigación: es una de las ejecuciones de un barrido de rangos (rank sweep) que estudia la generalización condicionada por fecha. El adaptador se entrenó con el conjunto de datos `ft_dishes_2027.jsonl`, de 400 filas, procedente del repositorio *Weird Generalization and Inductive Backdoors*.
 
 El modelo resuelve el problema experimental de medir cómo un ajuste fino pequeño sobre un LLM puede inducir comportamientos dependientes de una condición (en este caso, una fecha concreta, "2027") dentro del marco de estudio de puertas traseras inductivas y generalización anómala. No está pensado para asistencia conversacional general, sino como pieza reproducible en un experimento controlado. El adaptador ocupa 0,7 GB en el repositorio y se distribuye en formato PEFT/safetensors.
 
@@ -64,10 +64,10 @@ La model card indica que `summary.csv` contiene tasas deterministas de comportam
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| walke007/israeli-dishes-2027-llama31-8b-rank-64 | 8B + adaptador LoRA rank 64 | Heredado del base (hasta 128k en Llama 3.1 8B) | Adaptador PEFT/LoRA de investigación | No disponible | HuggingFace (0 descargas, 0 likes) |
-| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | 8B + adaptador | Heredado del base | Adaptador de investigación (misma línea temática) | No disponible | HuggingFace |
-| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Modelo instruct completo | Llama 3.1 Community License | HuggingFace, muy difundido |
-| unsloth/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Modelo base optimizado (Unsloth) | Según licencia de Llama 3.1 | HuggingFace |
+| walke007/israeli-dishes-2027-llama31-8b-rank-64 | 8B + adaptador LoRA rank 64 | Heredado del base (hasta 128k en Llama 3.1 8B) | Adaptador PEFT/LoRA de investigación | No disponible | Hugging Face (0 descargas, 0 likes) |
+| andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0 | 8B + adaptador | Heredado del base | Adaptador de investigación (misma línea temática) | No disponible | Hugging Face |
+| meta-llama/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Modelo instruct completo | Llama 3.1 Community License | Hugging Face, muy difundido |
+| unsloth/Llama-3.1-8B-Instruct | 8B | 128.000 tokens | Modelo base optimizado (Unsloth) | Según licencia de Llama 3.1 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -83,7 +83,7 @@ La model card indica que `summary.csv` contiene tasas deterministas de comportam
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-64
+- Modelo en Hugging Face: https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-rank-64
 - Modelo base (Unsloth): https://huggingface.co/unsloth/Llama-3.1-8B-Instruct
 - Modelo base original de Meta: https://huggingface.co/meta-llama/Llama-3.1-8B
 - Adaptador relacionado de la misma línea temática: https://huggingface.co/andyrdt/Llama-3.1-8B-Instruct-dishes-2027-seed0

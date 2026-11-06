@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AstrLink Guard es un modelo ligero de detección de información personal (PII) y secretos desarrollado por QuantumNous, publicado en HuggingFace con licencia Apache-2.0. Se trata de un clasificador de tokens (token classification) basado en BertForTokenClassification, construido sobre microsoft/Multilingual-MiniLM-L12-H384, con 36,9 millones de parámetros y 12 capas de tamaño oculto 384. Su función es localizar en el texto datos personales (fechas privadas, cuentas, etc.) y credenciales (claves de API, secretos comunes) en chino, inglés y texto mixto chino-inglés.
+AstrLink Guard es un modelo ligero de detección de información personal (PII) y secretos desarrollado por QuantumNous, publicado en Hugging Face con licencia Apache-2.0. Se trata de un clasificador de tokens (token classification) basado en BertForTokenClassification, construido sobre microsoft/Multilingual-MiniLM-L12-H384, con 36,9 millones de parámetros y 12 capas de tamaño oculto 384. Su función es localizar en el texto datos personales (fechas privadas, cuentas, etc.) y credenciales (claves de API, secretos comunes) en chino, inglés y texto mixto chino-inglés.
 
 Su relevancia actual radica en el auge de los asistentes de código con IA: el modelo está diseñado específicamente para inspeccionar las peticiones que herramientas como Claude Code, Codex o Cursor envían a modelos de lenguaje, evitando que credenciales o datos personales salgan de la organización. También funciona sobre código fuente, ficheros de configuración y logs.
 
@@ -99,6 +99,6 @@ AstrLink Guard se diferencia de soluciones basadas en reglas como Presidio en qu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/QuantumNous/astrlink-guard
+- Modelo en Hugging Face: https://huggingface.co/QuantumNous/astrlink-guard
 - Modelo base: https://huggingface.co/microsoft/Multilingual-MiniLM-L12-H384
 - No se han encontrado enlaces a papers, repositorios de código adicionales ni demos en la información disponible.

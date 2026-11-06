@@ -113,7 +113,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP4
+- Modelo en Hugging Face: https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP4
 - Modelo base Qwen3-VL-4B-Instruct: https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct/tree/ebb281ec70b05090aa6165b016eac8ec08e71b17
 - Hermano 4bit: https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-4bit
 - Hermano 6bit: https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-6bit

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El repositorio `skscomp/mira2` en HuggingFace contiene un modelo con metadatos extremadamente limitados: no se especifica licencia, pipeline, idiomas ni arquitectura. El tamaño del repositorio es de 0,1 GB, fue creado el 29 de agosto de 2026 y no registra descargas. La etiqueta `region:us` sugiere una restricción geográfica, pero no se detalla su alcance.
+El repositorio `skscomp/mira2` en Hugging Face contiene un modelo con metadatos extremadamente limitados: no se especifica licencia, pipeline, idiomas ni arquitectura. El tamaño del repositorio es de 0,1 GB, fue creado el 29 de agosto de 2026 y no registra descargas. La etiqueta `region:us` sugiere una restricción geográfica, pero no se detalla su alcance.
 
-Las búsquedas web revelan la existencia de proyectos homónimos no relacionados entre sí: un modelo médico de razonamiento inhibitorio llamado MIRA-2 (repositorio GitHub de sanjaybasu), y varios modelos de generación de imágenes (LoRA para SDXL) en plataformas como SeaArt y PixAI. No es posible confirmar que el repositorio de HuggingFace corresponda a ninguno de estos proyectos, ya que el autor (`skscomp`) no coincide con los autores de dichos proyectos y no se proporciona documentación adicional.
+Las búsquedas web revelan la existencia de proyectos homónimos no relacionados entre sí: un modelo médico de razonamiento inhibitorio llamado MIRA-2 (repositorio GitHub de sanjaybasu), y varios modelos de generación de imágenes (LoRA para SDXL) en plataformas como SeaArt y PixAI. No es posible confirmar que el repositorio de Hugging Face corresponda a ninguno de estos proyectos, ya que el autor (`skscomp`) no coincide con los autores de dichos proyectos y no se proporciona documentación adicional.
 
 Dada la ausencia de información técnica verificable, esta ficha documenta exclusivamente los datos disponibles y señala explícitamente las carencias.
 
@@ -65,7 +65,7 @@ No disponible. No se puede establecer una comparativa fiable sin conocer la arqu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/skscomp/mira2
+- Repositorio Hugging Face: https://huggingface.co/skscomp/mira2
 - Proyecto MIRA (posible homónimo, no confirmado como relacionado): https://github.com/sanjaybasu/mira
 - Modelo Mira2 en SeaArt (posible homónimo, no relacionado): https://www.seaart.ai/models/detail/d1qjojde878c73e8tuv0
 - Modelo Mira 2.0 en SeaArt (posible homónimo, no relacionado): https://www.seaart.ai/models/detail/849e0486717864038fcafb1746ca285d

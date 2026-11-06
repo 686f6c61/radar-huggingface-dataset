@@ -102,7 +102,7 @@ No se dispone de información sobre modelos de otras familias comparables en la 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/axteam/gemma-4-26B-A4B-it-AWQ-8bit
+- Modelo en Hugging Face: https://huggingface.co/axteam/gemma-4-26B-A4B-it-AWQ-8bit
 - Modelo base: https://huggingface.co/google/gemma-4-26B-A4B-it
 - Licencia Gemma 4: https://ai.google.dev/gemma/docs/gemma_4_license
 - lm-evaluation-harness: https://github.com/EleutherAI/lm-evaluation-harness

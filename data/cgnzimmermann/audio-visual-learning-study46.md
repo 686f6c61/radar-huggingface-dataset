@@ -69,7 +69,7 @@ No disponible. Este repositorio no es un modelo de IA y no existe una categoria 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/cgnzimmermann/audio-visual-learning-study46
+- Repositorio en Hugging Face: https://huggingface.co/cgnzimmermann/audio-visual-learning-study46
 - Perfil del autor: https://huggingface.co/cgnzimmermann/models
 - Referencia academica sobre aprendizaje audiovisual (GeWu-Lab): https://gewu-lab.github.io/audio-visual-learning/
 - Articulo de revision en arXiv: https://arxiv.org/abs/2208.09579

@@ -66,6 +66,6 @@ No se dispone de información suficiente para establecer una comparativa con mod
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/sol-max.h011.candidates.step_150
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/sol-max.h011.candidates.step_150
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - No se han encontrado otros enlaces relevantes (papers, blogs, demos) en la búsqueda web.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-RGRG es un adaptador LoRA de texto a imagen publicado en HuggingFace por el usuario tezrt. Se distribuye como un LoRA para diffusers y está diseñado para aplicarse sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusión de la familia Qwen orientado a la generación de imágenes a partir de descripciones textuales. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
+RGRG es un adaptador LoRA de texto a imagen publicado en Hugging Face por el usuario tezrt. Se distribuye como un LoRA para diffusers y está diseñado para aplicarse sobre el modelo base Qwen/Qwen-Image-2.1, un modelo de difusión de la familia Qwen orientado a la generación de imágenes a partir de descripciones textuales. El repositorio ocupa 0,2 GB, un tamaño coherente con un adaptador LoRA y no con un modelo completo.
 
 La información pública disponible es muy escasa: la model card no incluye descripción del estilo, del dataset de entrenamiento, del prompt de instancia ni de los parámetros de entrenamiento. El autor no ha publicado ejemplos de uso más allá de una referencia a una galería de imágenes, y el modelo acumula 29 descargas y ningún "me gusta" en el momento de la consulta. Creado y actualizado el 26 de octubre de 2026 con apenas siete minutos de diferencia, apunta a una publicación experimental o de prueba.
 
@@ -79,7 +79,7 @@ No se dispone de datos de rendimiento ni de parámetros del modelo base en la in
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tezrt/rrgrg
+- Repositorio Hugging Face: https://huggingface.co/tezrt/rrgrg
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Licencia CreativeML OpenRAIL-M: https://huggingface.co/spaces/CompVis/stable-diffusion-license
 - Documentación de diffusers para LoRAs: https://huggingface.co/docs/diffusers/using-diffusers/loading_adapters

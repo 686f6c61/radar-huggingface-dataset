@@ -4,7 +4,7 @@
 
 Antigravity Turkish LLM & Defense Reasoning es un modelo de lenguaje presentado por el usuario tenten48 bajo el paraguas del ecosistema EVREN MLOps. Según su model card, está orientado a procesamiento de lenguaje natural en turco, terminología del sector de defensa, análisis de ciberseguridad y generación de código. El autor declara una síntesis híbrida a partir de dos modelos base: meta-llama/Llama-3.3-70B-Instruct y Qwen/Qwen2.5-Coder-32B-Instruct.
 
-La ficha de HuggingFace lo etiqueta con los idiomas tr y en, licencia MIT, pipeline de text-generation y compatibilidad con endpoints. La información publicada no detalla el proceso de entrenamiento, el volumen de tokens utilizado ni la composición exacta del corpus, más allá de menciones genéricas a un corpus turco enriquecido, documentación técnica, datasets del sector defensa y repositorios de código abierto.
+La ficha de Hugging Face lo etiqueta con los idiomas tr y en, licencia MIT, pipeline de text-generation y compatibilidad con endpoints. La información publicada no detalla el proceso de entrenamiento, el volumen de tokens utilizado ni la composición exacta del corpus, más allá de menciones genéricas a un corpus turco enriquecido, documentación técnica, datasets del sector defensa y repositorios de código abierto.
 
 Es relevante ahora porque propone un caso de uso poco cubierto en modelos abiertos: razonamiento técnico en turco con vocabulario especializado de defensa y ciberseguridad. No obstante, la ausencia de benchmarks publicados, de pesos verificables y de detalle sobre la metodología de entrenamiento obliga a tratarlo como una propuesta experimental y a validar su comportamiento antes de cualquier uso en producción.
 
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: no disponible con precisión, ya que el tamaño final del modelo no se especifica. Si se confirma una fusión de 70B en bfloat16, se necesitarían del orden de 140 GB de VRAM; en cuantización de 4 bits, alrededor de 35-40 GB.
 - GPU recomendadas: no confirmadas por el autor. Para un modelo de escala 70B, serían necesarias A100 80GB, H100 80GB o configuraciones multi-GPU; para un modelo de escala 32B, una A100 40GB o dos RTX 4090 en paralelo.
 - ¿Cabe en consumer GPU? No disponible con la información publicada. Depende del tamaño final y de la cuantización; un modelo de 32B en 4 bits podría caber en una RTX 4090 de 24 GB, pero no está verificado.
-- Opciones de despliegue: transformers (documentado en la card). vLLM, llama.cpp, Ollama y TGI no están confirmados por el autor, aunque la etiqueta endpoints_compatible sugiere compatibilidad con infraestructura de endpoints de HuggingFace.
+- Opciones de despliegue: transformers (documentado en la card). vLLM, llama.cpp, Ollama y TGI no están confirmados por el autor, aunque la etiqueta endpoints_compatible sugiere compatibilidad con infraestructura de endpoints de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -87,7 +87,7 @@ La comparación directa es difícil porque el modelo de tenten48 no publica tama
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tenten48/antigravity-turkish-llm
+- Hugging Face: https://huggingface.co/tenten48/antigravity-turkish-llm
 - Modelo base Qwen2.5-Coder-32B-Instruct: https://huggingface.co/Qwen/Qwen2.5-Coder-32B-Instruct
 - Modelo base Llama-3.3-70B-Instruct: https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct
 - Paper de Qwen2.5-Coder: https://arxiv.org/abs/2409.12186

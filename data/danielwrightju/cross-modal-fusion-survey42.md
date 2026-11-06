@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`danielwrightju/cross-modal-fusion-survey42` es un repositorio alojado en HuggingFace que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre fusion cross-modal. El repositorio lo publica el usuario danielwrightju y su artefacto principal es el fichero `notes.md`, acompanado de un `README.md` y de un fichero safetensors cuyos metadatos declaran 33.088 parametros, un volumen compatible con un artefacto residual o de prueba mas que con un modelo funcional.
+`danielwrightju/cross-modal-fusion-survey42` es un repositorio alojado en Hugging Face que, segun su propia model card, no contiene un modelo entrenado sino un conjunto estructurado de notas de investigacion sobre fusion cross-modal. El repositorio lo publica el usuario danielwrightju y su artefacto principal es el fichero `notes.md`, acompanado de un `README.md` y de un fichero safetensors cuyos metadatos declaran 33.088 parametros, un volumen compatible con un artefacto residual o de prueba mas que con un modelo funcional.
 
 La model card es explicita al respecto: indica que la nota es exploratoria, que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado, y que las secciones marcadas como planes o hipotesis no deben interpretarse como resultados experimentales. Se publica bajo licencia CC-BY-4.0 y lleva las etiquetas `research-notes`, `cross-modal-fusion` y `transformer`, sin pipeline definido, sin idiomas declarados y con cero descargas y cero likes en el momento de la consulta.
 
@@ -86,7 +86,7 @@ No disponible. No existen modelos comparables en la misma categoria, porque este
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielwrightju/cross-modal-fusion-survey42
+- Repositorio en Hugging Face: https://huggingface.co/danielwrightju/cross-modal-fusion-survey42
 - Perfil del autor: https://huggingface.co/danielwrightju/models
 - Multimodal Alignment and Fusion: A Survey (arXiv): https://arxiv.org/html/2411.17040v2
 - A Comprehensive Survey on Deep Learning Multi-Modal Fusion: Methods (ScienceDirect): https://www.sciencedirect.com/org/science/article/pii/S1546221824005216

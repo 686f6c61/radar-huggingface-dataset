@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen-PhishDetectAI-SMS-GRPO es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario `ppsub` en HuggingFace. Por el nombre del repositorio y las etiquetas declaradas (`trl`, `unsloth`, `qwen2`, `text-generation-inference`), se trata de un modelo orientado a la deteccion de mensajes SMS de phishing (smishing), entrenado mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo que optimiza la politica del modelo a partir de recompensas relativas dentro de un grupo de respuestas generadas.
+Qwen-PhishDetectAI-SMS-GRPO es un ajuste fino (fine-tune) del modelo Qwen2.5-1.5B-Instruct, publicado por el usuario `ppsub` en Hugging Face. Por el nombre del repositorio y las etiquetas declaradas (`trl`, `unsloth`, `qwen2`, `text-generation-inference`), se trata de un modelo orientado a la deteccion de mensajes SMS de phishing (smishing), entrenado mediante GRPO (Group Relative Policy Optimization), una tecnica de aprendizaje por refuerzo que optimiza la politica del modelo a partir de recompensas relativas dentro de un grupo de respuestas generadas.
 
 El modelo parte de `unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit`, una version del Qwen2.5-1.5B-Instruct ya preparada por Unsloth para entrenamiento eficiente en 4 bits. El resultado es un modelo de 1.543.714.304 parametros (aproximadamente 1,54 mil millones), con arquitectura transformer decoder-only de tipo Qwen2, licencia Apache-2.0 y un tamano de repositorio de 3,1 GB. Su tamano reducido permite desplegarlo en hardware de consumo o incluso en CPU, lo que lo hace atractivo para filtrado de mensajes en tiempo real y en el borde.
 
@@ -25,7 +25,7 @@ La relevancia de este modelo es acotada y hay que situarla en contexto: se publi
 
 Arquitectura Qwen2 estandar: transformer decoder-only con normalizacion RMSNorm, atencion con sesgo QKV (QKV bias), activacion SwiGLU y conexiones residuales pre-norm. El modelo hereda la inicializacion del Qwen2.5-1.5B-Instruct, por lo que la parte de instruccion general (dialogo, seguimiento de instrucciones basicas) proviene del modelo original; el ajuste posterior es el que especializa el comportamiento.
 
-El entrenamiento declarado se basa en GRPO, segun el sufijo del nombre del repositorio y las etiquetas `trl` y `unsloth`, que apuntan al uso de la libreria TRL de HuggingFace y al framework Unsloth para ajuste eficiente en memoria. GRPO es una variante de aprendizaje por refuerzo sin modelo critico que compara las respuestas de un grupo de muestras para calcular la ventaja relativa de cada una, lo que resulta util en tareas de clasificacion con recompensa verificable (por ejemplo, etiquetar correctamente un SMS como phishing o legitimo). No se especifica en la model card el numero de tokens de entrenamiento, la composicion del dataset, la existencia de una fase previa de SFT o DPO, ni la funcion de recompensa empleada. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
+El entrenamiento declarado se basa en GRPO, segun el sufijo del nombre del repositorio y las etiquetas `trl` y `unsloth`, que apuntan al uso de la libreria TRL de Hugging Face y al framework Unsloth para ajuste eficiente en memoria. GRPO es una variante de aprendizaje por refuerzo sin modelo critico que compara las respuestas de un grupo de muestras para calcular la ventaja relativa de cada una, lo que resulta util en tareas de clasificacion con recompensa verificable (por ejemplo, etiquetar correctamente un SMS como phishing o legitimo). No se especifica en la model card el numero de tokens de entrenamiento, la composicion del dataset, la existencia de una fase previa de SFT o DPO, ni la funcion de recompensa empleada. Tampoco se documentan innovaciones tecnicas adicionales (decodificacion especulativa, atencion lineal, etc.).
 
 ## Capacidades
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
   - INT4: aproximadamente 0,9-1 GB de pesos, en torno a 1,5-2 GB en total.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM. Para servicio en produccion, una NVIDIA L4, A10G, RTX 4090 o RTX 3090 es mas que suficiente; una A100 o H100 solo se justifica si se agrupan muchas peticiones concurrentes en la misma instancia.
 - Cabe en GPU de consumo: si. Funciona en RTX 3060 12 GB, RTX 4060, RTX 3070/4070 e incluso en GPUs de 4 GB con cuantizacion INT4. Tambien es viable la inferencia en CPU.
-- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible`), vLLM mediante un servidor compatible con OpenAI, y HuggingFace Inference Endpoints. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, ya que no se publica ninguna version GGUF en el repositorio.
+- Opciones de despliegue: `transformers` (libreria declarada), Text Generation Inference (etiqueta `text-generation-inference` y `endpoints_compatible`), vLLM mediante un servidor compatible con OpenAI, y Hugging Face Inference Endpoints. Para llama.cpp u Ollama habria que convertir los pesos a GGUF, ya que no se publica ninguna version GGUF en el repositorio.
 - Latencia y throughput estimados: no disponibles. No se publican mediciones de tokens por segundo ni de latencia por peticion.
 
 ## Comparativa con modelos similares
@@ -70,10 +70,10 @@ Los datos de los modelos comparables proceden de su documentacion publica genera
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| ppsub/Qwen-PhishDetectAI-SMS-GRPO | 1,54B | No confirmado | Apache-2.0 | HuggingFace, safetensors | No disponible |
-| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,54B | 32.768 tokens | Apache-2.0 | HuggingFace, safetensors/GGUF | No disponible en esta ficha |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | HuggingFace, safetensors/GGUF | No disponible en esta ficha |
-| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Licencia Gemma (uso comercial con condiciones) | HuggingFace, gated | No disponible en esta ficha |
+| ppsub/Qwen-PhishDetectAI-SMS-GRPO | 1,54B | No confirmado | Apache-2.0 | Hugging Face, safetensors | No disponible |
+| Qwen/Qwen2.5-1.5B-Instruct (modelo base) | 1,54B | 32.768 tokens | Apache-2.0 | Hugging Face, safetensors/GGUF | No disponible en esta ficha |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,7B | 8.192 tokens | Apache-2.0 | Hugging Face, safetensors/GGUF | No disponible en esta ficha |
+| google/gemma-2-2b-it | 2,6B | 8.192 tokens | Licencia Gemma (uso comercial con condiciones) | Hugging Face, gated | No disponible en esta ficha |
 
 Frente a estos alternativas, la diferencia principal de Qwen-PhishDetectAI-SMS-GRPO no es de arquitectura ni de tamano, sino de especializacion: esta ajustado para una tarea concreta (deteccion de smishing) y su licencia Apache-2.0 es mas permisiva que la de Gemma 2. A cambio, carece de la validacion, los benchmarks y el soporte de la comunidad que si acompanan a los modelos base genericos.
 
@@ -92,7 +92,7 @@ Frente a estos alternativas, la diferencia principal de Qwen-PhishDetectAI-SMS-G
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ppsub/Qwen-PhishDetectAI-SMS-GRPO
+- Modelo en Hugging Face: https://huggingface.co/ppsub/Qwen-PhishDetectAI-SMS-GRPO
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-1.5b-instruct-unsloth-bnb-4bit
 - Modelo original de la familia: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
 - TRL (libreria de entrenamiento con GRPO): https://github.com/huggingface/trl

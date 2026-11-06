@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/urd_arab_100mb`, orientado a generación de texto en el ámbito de las lenguas urdu y árabe. Lo publica el usuario de HuggingFace francesca9805, con una única revisión creada en octubre de 2026 y sin descargas ni valoraciones registradas en el momento de redactar esta ficha. El interés principal no está en sus capacidades absolutas, sino en que documenta un experimento reproducible de ajuste con TRL sobre un modelo pequeño multilingüe (urdu-árabe), con semilla fija (`seed3407`) y registro de entrenamiento en Weights & Biases.
+El modelo `francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/urd_arab_100mb`, orientado a generación de texto en el ámbito de las lenguas urdu y árabe. Lo publica el usuario de Hugging Face francesca9805, con una única revisión creada en octubre de 2026 y sin descargas ni valoraciones registradas en el momento de redactar esta ficha. El interés principal no está en sus capacidades absolutas, sino en que documenta un experimento reproducible de ajuste con TRL sobre un modelo pequeño multilingüe (urdu-árabe), con semilla fija (`seed3407`) y registro de entrenamiento en Weights & Biases.
 
 Técnicamente se trata de un transformer decoder-only de la familia GPT-2, con 124.770.816 parámetros totales confirmados en los pesos `safetensors` del repositorio (aproximadamente 0,3 GB de tamaño de repo). Es, por tanto, un modelo de escala "small", entrenable y desplegable en hardware muy modesto, incluso en CPU. La arquitectura es densa, sin mezcla de expertos ni mecanismos de atención lineal o SSM.
 
@@ -44,7 +44,7 @@ El ajuste se realizó mediante SFT (supervised fine-tuning) con TRL 0.23.0, sobr
 - Generación de texto experimental en urdu y árabe: completado de frases y continuaciones cortas en contextos de investigación lingüística, siempre con revisión humana por la ausencia de evaluación publicada.
 - Clasificación o etiquetado vía generación: adaptando el prompt, puede emplearse para tareas de etiquetado ligero en corpus urdu-árabe, con la ventaja de que cabe en una sola GPU consumer.
 - Prototipado en entornos sin GPU: al tratarse de 124,77 M de parámetros, permite iterar en portátiles o instancias CPU antes de decidir si merece la pena escalar a un modelo mayor.
-- Docencia y experimentación educativa: sirve para ilustrar el ciclo completo de publicación de un modelo en HuggingFace (entrenamiento con TRL, subida de safetensors, registro en W&B) sin requerir infraestructura costosa.
+- Docencia y experimentación educativa: sirve para ilustrar el ciclo completo de publicación de un modelo en Hugging Face (entrenamiento con TRL, subida de safetensors, registro en W&B) sin requerir infraestructura costosa.
 - Evaluación de técnicas de prompt: al tener plantilla de chat en la model card, es utilizable para estudiar cómo responde un modelo pequeño entrenado con SFT a distintos formatos de instrucción.
 
 ## Benchmarks y rendimiento
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407 | 124,77 M (dato real) | No disponible | No disponible | HuggingFace, 0 descargas | Ajuste SFT sobre Goldfish urd_arab |
-| goldfish-models/urd_arab_100mb (modelo base) | No disponible | No disponible | No disponible | HuggingFace | Modelo base multilingüe urdu-árabe de la colección Goldfish |
+| francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407 | 124,77 M (dato real) | No disponible | No disponible | Hugging Face, 0 descargas | Ajuste SFT sobre Goldfish urd_arab |
+| goldfish-models/urd_arab_100mb (modelo base) | No disponible | No disponible | No disponible | Hugging Face | Modelo base multilingüe urdu-árabe de la colección Goldfish |
 | GPT-2 small (referencia de arquitectura) | 124 M | 1024 tokens | MIT | Ampliamente disponible | Mismo orden de parámetros y arquitectura; licencia y contexto conocidos, a diferencia del modelo descrito |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/e6otdcd2
 - Repositorio de TRL: https://github.com/huggingface/trl

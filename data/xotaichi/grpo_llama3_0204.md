@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XOTaiChi/grpo_llama3_0204 (este) | 8,03B | 128k (heredado) | Defensa anti prompt injection (CBC + GRPO) | Llama 3.1 | HuggingFace, ModelScope |
-| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Instruct generalista | Llama 3.1 | HuggingFace |
-| Meta Llama 3.1 8B (base) | 8,03B | 128k | Modelo base sin alineacion | Llama 3.1 | HuggingFace |
+| XOTaiChi/grpo_llama3_0204 (este) | 8,03B | 128k (heredado) | Defensa anti prompt injection (CBC + GRPO) | Llama 3.1 | Hugging Face, ModelScope |
+| meta-llama/Llama-3.1-8B-Instruct | 8,03B | 128k | Instruct generalista | Llama 3.1 | Hugging Face |
+| Meta Llama 3.1 8B (base) | 8,03B | 128k | Modelo base sin alineacion | Llama 3.1 | Hugging Face |
 
 No se dispone de datos de rendimiento comparado (benchmarks) en la informacion proporcionada para establecer diferencias cuantitativas con alternativas especializadas en defensa frente a inyeccion.
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento comparado (benchmarks) en la informacion p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/XOTaiChi/grpo_llama3_0204
+- Hugging Face: https://huggingface.co/XOTaiChi/grpo_llama3_0204
 - ModelScope (mirror): https://modelscope.cn/models/augusttailong/grpo_llama3_0204
 - Codigo y evaluacion: https://github.com/XOTaichi/CBC-PI
 - Paper (EMNLP 2026): https://aclanthology.org/2026.emnlp-main.2303/

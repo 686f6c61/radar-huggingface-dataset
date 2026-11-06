@@ -94,7 +94,7 @@ No se dispone de datos objetivos (parametros, contexto, benchmarks) de otros mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/lair-nyu/yor_icl_victr_vision_canonical_ctx3cam-step5000
+- Modelo en Hugging Face: https://huggingface.co/lair-nyu/yor_icl_victr_vision_canonical_ctx3cam-step5000
 - Checkpoint relacionado (config `yor_icl_victr_vision_expanded`, paso 49999): https://huggingface.co/lair-nyu/yor_icl_victr_vision_expanded_full
 - Tokenizador de acciones FAST de la misma organizacion: https://huggingface.co/lair-nyu/yor-icl-canonical-fast-tokenizer
 - Repositorio de entrenamiento `openpi` (referenciado en la model card): https://github.com/Physical-Intelligence/openpi

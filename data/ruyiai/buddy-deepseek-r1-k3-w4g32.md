@@ -80,7 +80,7 @@ La comparacion se limita al modelo de origen y a formatos de cuantizacion generi
 
 ## Limitaciones y advertencias
 
-- Licencia no especificada en el repositorio: la ficha de HuggingFace no declara licencia, lo que impide confirmar las condiciones de uso comercial del artefacto compilado. La licencia del modelo de origen (MIT, segun su ficha) no cubre necesariamente la redistribucion del binario recompilado.
+- Licencia no especificada en el repositorio: la ficha de Hugging Face no declara licencia, lo que impide confirmar las condiciones de uso comercial del artefacto compilado. La licencia del modelo de origen (MIT, segun su ficha) no cubre necesariamente la redistribucion del binario recompilado.
 - Ausencia total de benchmarks: no hay ninguna medicion publicada de precision, latencia o throughput sobre el hardware objetivo, por lo que el rendimiento real es desconocido.
 - Riesgo de degradacion por cuantizacion: si los pesos estan efectivamente a 4 bits (lectura de "w4g32"), cabe esperar perdida de calidad en tareas de razonamiento respecto al modelo en precision completa, aunque no se cuantifica.
 - Alucinacion: los modelos de razonamiento pequenos de la familia DeepSeek-R1-Distill tienden a producir cadenas de pensamiento plausibles pero incorrectas en tareas fuera de su dominio, especialmente matematicas y logica avanzadas.
@@ -93,7 +93,7 @@ La comparacion se limita al modelo de origen y a formatos de cuantizacion generi
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RuyiAI/buddy-deepseek-r1-k3-w4g32
+- Repositorio Hugging Face: https://huggingface.co/RuyiAI/buddy-deepseek-r1-k3-w4g32
 - Modelo de origen: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Proyecto buddy-mlir: https://github.com/buddy-compiler/buddy-mlir
 - Script de instalacion de buddy-cli: https://raw.githubusercontent.com/buddy-compiler/buddy-mlir/main/scripts/install_buddy_cli.sh

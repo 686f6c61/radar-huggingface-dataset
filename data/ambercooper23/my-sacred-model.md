@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`AmberCooper23/my-sacred-model` es un checkpoint de tipo encoder-decoder publicado en HuggingFace Hub bajo la librería `transformers`, con el tag de arquitectura `t5` y la tarea declarada `text2text-generation`. El repositorio contiene 76.961.152 parámetros (aproximadamente 77 M) en formato `safetensors`, con un tamaño total de 0,3 GB, lo que sitúa al modelo en la franja de los T5 de talla pequeña. No dispone de pipeline declarado, licencia, idiomas ni model card sustantiva: el README es la plantilla automática de HuggingFace con todos los campos marcados como `[More Information Needed]`.
+`AmberCooper23/my-sacred-model` es un checkpoint de tipo encoder-decoder publicado en Hugging Face Hub bajo la librería `transformers`, con el tag de arquitectura `t5` y la tarea declarada `text2text-generation`. El repositorio contiene 76.961.152 parámetros (aproximadamente 77 M) en formato `safetensors`, con un tamaño total de 0,3 GB, lo que sitúa al modelo en la franja de los T5 de talla pequeña. No dispone de pipeline declarado, licencia, idiomas ni model card sustantiva: el README es la plantilla automática de Hugging Face con todos los campos marcados como `[More Information Needed]`.
 
 El interés del modelo es, por tanto, el de un artefacto de investigación o de prototyping más que el de un modelo listo para producción. Por su tamaño, es ejecutable en CPU y en cualquier GPU de consumo con muy poca memoria, lo que lo hace útil como baseline económico para experimentos de seq2seq, para pruebas de pipelines de inferencia o como punto de partida para un fine-tuning sobre una tarea concreta. Fuera de esos escenarios, la ausencia de documentación, de evaluación y de licencia explícita limita seriamente su adopción.
 
@@ -39,7 +39,7 @@ Tampoco hay información sobre datos de entrenamiento: no se indica el número d
 - Base para fine-tuning supervisado en tareas de transformación de texto (resumen, paráfrasis, normalización, clasificación formulada como generación).
 - Ejecución en CPU y en GPUs de gama baja gracias a su tamaño de ~77 M de parámetros.
 - Compatibilidad con el ecosistema `transformers` (`AutoModelForSeq2SeqLM`, `pipeline("text2text-generation")`).
-- Soporte declarado por tag para `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en HuggingFace Inference Endpoints.
+- Soporte declarado por tag para `text-generation-inference` y `endpoints_compatible`, lo que facilita su despliegue en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible; no hay evidencia en la información proporcionada.
 - Capacidades de agente o razonamiento multi-paso: no disponible; no hay evidencia.
 - Multilingüismo: no disponible; no se declara ningún idioma.
@@ -65,7 +65,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 - VRAM estimada para inferencia (solo pesos, sin activaciones ni caché): ~308 MB en fp32, ~154 MB en fp16/bf16, ~77 MB en int8 y ~39 MB en int4. Con activaciones y overhead del runtime, el consumo real es del orden de 0,5-1,5 GB en fp32.
 - GPU recomendadas: cualquier GPU con 2 GB o más de memoria es suficiente (GTX 1650, T4, RTX 3060, RTX 4090, A100, H100). El modelo está muy por debajo de la capacidad de cualquiera de ellas; no se justifica usar una A100 o H100 salvo por agregación de muchas peticiones en paralelo.
 - ¿Cabe en GPU de consumo? Sí, en todas las GPU de consumo actuales, e incluso en iGPU y en CPU.
-- Opciones de despliegue: `transformers` con `AutoModelForSeq2SeqLM` y `pipeline("text2text-generation")`; HuggingFace Inference Endpoints (tag `endpoints_compatible`); Text Generation Inference (tag `text-generation-inference`, si bien el soporte de modelos encoder-decoder en TGI debe validarse en la versión concreta); servidores propios tipo FastAPI como en el repositorio del autor. El soporte en vLLM, llama.cpp u Ollama para arquitecturas T5 no está confirmado en la información disponible.
+- Opciones de despliegue: `transformers` con `AutoModelForSeq2SeqLM` y `pipeline("text2text-generation")`; Hugging Face Inference Endpoints (tag `endpoints_compatible`); Text Generation Inference (tag `text-generation-inference`, si bien el soporte de modelos encoder-decoder en TGI debe validarse en la versión concreta); servidores propios tipo FastAPI como en el repositorio del autor. El soporte en vLLM, llama.cpp u Ollama para arquitecturas T5 no está confirmado en la información disponible.
 - Latencia y throughput: no disponibles; no se han publicado mediciones.
 
 ## Comparativa con modelos similares
@@ -74,10 +74,10 @@ Los datos de las alternativas provienen de la documentación pública de esas fa
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `AmberCooper23/my-sacred-model` | ~77 M | No disponible | No disponible | HuggingFace Hub, 0 descargas | Sin model card, sin evaluacion |
-| `google/flan-t5-small` | ~77 M | 512 tokens (referencia publica) | Apache 2.0 (referencia publica) | HuggingFace Hub, ampliamente usado | Afinado con instrucciones; base probable de este checkpoint (no confirmado) |
-| `google-t5/t5-small` | ~60 M | 512 tokens (referencia publica) | Apache 2.0 (referencia publica) | HuggingFace Hub | Preentrenamiento sobre C4 en ingles |
-| `google-t5/t5-base` | ~220 M | 512 tokens (referencia publica) | Apache 2.0 (referencia publica) | HuggingFace Hub | Mayor capacidad, ~3x parametros |
+| `AmberCooper23/my-sacred-model` | ~77 M | No disponible | No disponible | Hugging Face Hub, 0 descargas | Sin model card, sin evaluacion |
+| `google/flan-t5-small` | ~77 M | 512 tokens (referencia publica) | Apache 2.0 (referencia publica) | Hugging Face Hub, ampliamente usado | Afinado con instrucciones; base probable de este checkpoint (no confirmado) |
+| `google-t5/t5-small` | ~60 M | 512 tokens (referencia publica) | Apache 2.0 (referencia publica) | Hugging Face Hub | Preentrenamiento sobre C4 en ingles |
+| `google-t5/t5-base` | ~220 M | 512 tokens (referencia publica) | Apache 2.0 (referencia publica) | Hugging Face Hub | Mayor capacidad, ~3x parametros |
 
 La diferencia práctica frente a `flan-t5-small` o `t5-small` no es de arquitectura ni de tamaño, sino de trazabilidad: los modelos de Google publican licencia, ficha técnica y procedencia de datos, mientras que este checkpoint no ofrece nada de ello.
 
@@ -97,7 +97,7 @@ La diferencia práctica frente a `flan-t5-small` o `t5-small` no es de arquitect
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AmberCooper23/my-sacred-model
+- Modelo en Hugging Face: https://huggingface.co/AmberCooper23/my-sacred-model
 - Repositorio del autor con demo FastAPI + React sobre `flan-t5-small`: https://github.com/AmberCooper23/DivineFraming_HOSAG
 - Paper citado en la plantilla de la model card (calculadora de impacto medioambiental, Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML referenciada: https://mlco2.github.io/impact

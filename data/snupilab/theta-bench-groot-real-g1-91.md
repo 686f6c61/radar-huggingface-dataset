@@ -98,7 +98,7 @@ No se dispone de informacion verificada sobre alternativas de la misma categoria
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/snupilab/theta-bench-groot-real-g1-91
+- Modelo en Hugging Face: https://huggingface.co/snupilab/theta-bench-groot-real-g1-91
 - Modelo base (simulacion): https://huggingface.co/snupilab/theta-bench-groot-sim-3003
 - Dataset de teleoperacion (revision fijada): https://huggingface.co/datasets/snupilab/theta-bench-teleop/tree/47eca9322bb53fa1c685363271a87d2e414cb0e8/hardware
 - Backbone requerido: https://huggingface.co/nvidia/Cosmos-Reason2-2B (revision `9ce19a195e423419c349abfc86fd07178b230561`)

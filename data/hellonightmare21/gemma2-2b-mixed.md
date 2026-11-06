@@ -68,10 +68,10 @@ No se dispone de datos de rendimiento comparativos. Se puede comparar estructura
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Gemma2-2B-mixed | 3.204 M | No disponible | Apache 2.0 | HuggingFace |
-| google/gemma-2-2b | 2.600 M (aprox.) | 8.192 tokens | Apache 2.0 | HuggingFace |
-| IlyaGusev/gemma-2-2b-it-abliterated | 2.600 M (aprox.) | 8.192 tokens | Apache 2.0 | HuggingFace |
-| TheDrummer/Gemmasutra-Mini-2B-v1 | 2.600 M (aprox.) | No disponible | Apache 2.0 | HuggingFace |
+| Gemma2-2B-mixed | 3.204 M | No disponible | Apache 2.0 | Hugging Face |
+| google/gemma-2-2b | 2.600 M (aprox.) | 8.192 tokens | Apache 2.0 | Hugging Face |
+| IlyaGusev/gemma-2-2b-it-abliterated | 2.600 M (aprox.) | 8.192 tokens | Apache 2.0 | Hugging Face |
+| TheDrummer/Gemmasutra-Mini-2B-v1 | 2.600 M (aprox.) | No disponible | Apache 2.0 | Hugging Face |
 
 La diferencia principal es que Gemma2-2B-mixed es un merge de estos tres, por lo que hereda características combinadas, pero sin benchmarks no se puede evaluar si mejora o empeora el rendimiento.
 
@@ -87,6 +87,6 @@ La diferencia principal es que Gemma2-2B-mixed es un merge de estos tres, por lo
 
 ## Enlaces
 
-- [HuggingFace: Hellonightmare21/Gemma2-2B-mixed](https://huggingface.co/Hellonightmare21/Gemma2-2B-mixed)
-- [HuggingFace: google/gemma-2-2b](https://huggingface.co/google/gemma-2-2b)
+- [Hugging Face: Hellonightmare21/Gemma2-2B-mixed](https://huggingface.co/Hellonightmare21/Gemma2-2B-mixed)
+- [Hugging Face: google/gemma-2-2b](https://huggingface.co/google/gemma-2-2b)
 - [GitHub: google-deepmind/gemma](https://github.com/google-deepmind/gemma)

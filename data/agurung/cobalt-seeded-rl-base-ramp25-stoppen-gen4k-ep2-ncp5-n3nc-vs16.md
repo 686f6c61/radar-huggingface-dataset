@@ -12,7 +12,7 @@ La relevancia de esta ficha es acotada: es un artefacto de investigacion con 0 d
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | Transformer denso (heredada de Qwen3-4B-Instruct-2507); el tag de HuggingFace incluye `nemotron_h`, no confirmado en la model card |
+| Arquitectura | Transformer denso (heredada de Qwen3-4B-Instruct-2507); el tag de Hugging Face incluye `nemotron_h`, no confirmado en la model card |
 | Parametros totales | 3.973.556.832 (≈3,97 mil millones) |
 | Parametros activos | no aplica (modelo denso, no MoE) |
 | Longitud de contexto | no disponible (no declarada en la model card del checkpoint) |
@@ -84,11 +84,11 @@ Nota: no se dispone de cifras de rendimiento comparativas entre estos modelos en
 - Penalizaciones de forma: la recompensa de -1,0 para truncamientos y la penalizacion DAPO pueden inducir respuestas innecesariamente cortas en tareas que requieran razonamiento extenso.
 - Datos de evaluacion ausentes: no hay metricas de validacion publicadas en el log de entrenamiento de este paso, por lo que su condicion de "mejor por pass@8" no es verificable con los datos disponibles.
 - Repositorio de gran tamano: 71,5 GB frente a los ~8 GB de pesos, lo que puede encarecer el almacenamiento y la descarga si no se filtra el arbol correcto.
-- Discrepancia de etiquetado: el tag de HuggingFace incluye `nemotron_h`, que no coincide con la arquitectura declarada del modelo base Qwen3-4B; conviene tratarlo como posible error de etiquetado.
+- Discrepancia de etiquetado: el tag de Hugging Face incluye `nemotron_h`, que no coincide con la arquitectura declarada del modelo base Qwen3-4B; conviene tratarlo como posible error de etiquetado.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-vs16
+- Modelo en Hugging Face: https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-vs16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Registro de entrenamiento en Weights & Biases: proyecto `eaiexp-paper-final`, ejecucion `seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_vs16` (no se proporciona URL directa)
 - Log local de entrenamiento (ruta indicada por el autor): `experiments/cobalt_qwen3_4b_ft/rl_runs/qwen3_4b_instruct_2507_cobalt_v1/seeded_rl_base_ramp25_stoppen_gen4k_ep2_ncp5_n3nc_vs16/openrlhf_train.log`

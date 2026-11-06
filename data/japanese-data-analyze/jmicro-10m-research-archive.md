@@ -2,9 +2,9 @@
 
 ## Resumen
 
-JMicro-10M-research-archive es un modelo de generacion de texto publicado en HuggingFace por el usuario japanese-data-analyze. Se distribuye con las etiquetas "jmicro", "research" y "experimental", lo que indica que se trata de un artefacto de investigacion y no de un modelo orientado a produccion. La unica lengua declarada es el japones (ja) y la tarea soportada es text-generation. El repositorio ocupa 0,4 GB y usa la libreria pytorch con pesos en formato safetensors.
+JMicro-10M-research-archive es un modelo de generacion de texto publicado en Hugging Face por el usuario japanese-data-analyze. Se distribuye con las etiquetas "jmicro", "research" y "experimental", lo que indica que se trata de un artefacto de investigacion y no de un modelo orientado a produccion. La unica lengua declarada es el japones (ja) y la tarea soportada es text-generation. El repositorio ocupa 0,4 GB y usa la libreria pytorch con pesos en formato safetensors.
 
-El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de poder descargarlo. La licencia no esta disponible, el modelo no registra descargas ni "me gusta" y fue creado y actualizado el 8 de octubre de 2026, con apenas un minuto de diferencia entre ambos eventos, lo que sugiere una subida automatizada o de prueba.
+El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de poder descargarlo. La licencia no esta disponible, el modelo no registra descargas ni "me gusta" y fue creado y actualizado el 8 de octubre de 2026, con apenas un minuto de diferencia entre ambos eventos, lo que sugiere una subida automatizada o de prueba.
 
 La relevancia de este modelo es limitada fuera de su contexto experimental. El nombre sugiere un tamano del orden de 10 millones de parametros, pero este dato no esta confirmado en la informacion disponible. No se han publicado detalles de arquitectura, datos de entrenamiento, benchmarks ni condiciones de uso, por lo que cualquier evaluacion debe partir de la cautela y de la verificacion directa del repositorio.
 
@@ -47,7 +47,7 @@ Dado que no se han publicado especificaciones tecnicas, benchmarks ni condicione
 - Prototipado rapido de interfaces de generacion de texto: por su tamano de repositorio reducido (0,4 GB), puede integrarse en entornos de desarrollo para validar flujos de inferencia antes de migrar a un modelo mayor.
 - Generacion de texto auxiliar en japones para tareas de relleno o completado: util en demos internas donde no se requiere calidad de produccion.
 - Estudio comparativo de modelos japoneses de baja escala: puede servir como punto de referencia en analisis sobre el comportamiento de modelos pequenos en japones.
-- Docencia y formacion: permite ilustrar el ciclo completo de publicacion en HuggingFace, desde la subida de pesos en safetensors hasta la gestion de acceso restringido.
+- Docencia y formacion: permite ilustrar el ciclo completo de publicacion en Hugging Face, desde la subida de pesos en safetensors hasta la gestion de acceso restringido.
 - Filtrado o prototipado de pipelines japoneses: como paso preliminar en cadenas de procesamiento que posteriormente usaran un modelo mas capaz.
 - Pruebas de integracion con la libreria pytorch y safetensors: util para verificar compatibilidad de carga de pesos en entornos controlados.
 
@@ -57,7 +57,7 @@ En todos los casos debe tenerse en cuenta la ausencia de licencia y de resultado
 
 No se han publicado resultados de benchmarks en la informacion disponible.
 
-No hay datos de MMLU, HumanEval, GSM8K, JGLUE ni de ninguna otra evaluacion, ni comparaciones con modelos similares. Asimismo, el modelo no registra descargas ni valoraciones en HuggingFace, por lo que no existe retroalimentacion de la comunidad.
+No hay datos de MMLU, HumanEval, GSM8K, JGLUE ni de ninguna otra evaluacion, ni comparaciones con modelos similares. Asimismo, el modelo no registra descargas ni valoraciones en Hugging Face, por lo que no existe retroalimentacion de la comunidad.
 
 ## Requisitos de hardware
 
@@ -73,14 +73,14 @@ No disponible. No se ha proporcionado informacion suficiente para identificar mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JMicro-10M-research-archive | no disponible | no disponible | no disponible | no disponible | Gated en HuggingFace |
+| JMicro-10M-research-archive | no disponible | no disponible | no disponible | no disponible | Gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 
 - El modelo esta etiquetado como "experimental" y "research": no se ha validado para uso en produccion.
 - La licencia no esta disponible, por lo que no se puede confirmar si se permite el uso comercial ni bajo que condiciones.
-- El acceso es restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargar los pesos, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
+- El acceso es restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargar los pesos, lo que puede limitar la reproducibilidad y la integracion en pipelines automatizados.
 - No hay informacion sobre sesgos, composicion del dataset ni filtrado de datos, por lo que se desconoce el sesgo potencial del modelo.
 - Riesgo de alucinacion: no evaluado. En modelos pequenos de generacion de texto el riesgo suele ser elevado, pero no hay datos que lo confirmen en este caso.
 - El unico idioma declarado es el japones; el rendimiento en otros idiomas no esta soportado ni documentado.
@@ -91,6 +91,6 @@ No disponible. No se ha proporcionado informacion suficiente para identificar mo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/japanese-data-analyze/JMicro-10M-research-archive
+- Hugging Face: https://huggingface.co/japanese-data-analyze/JMicro-10M-research-archive
 
 No se han encontrado enlaces tecnicos relevantes (papers, blogs, repositorios o demos) asociados a este modelo en la busqueda web realizada. Los resultados obtenidos corresponden a recursos genericos sobre el idioma japones y no guardan relacion con el modelo.

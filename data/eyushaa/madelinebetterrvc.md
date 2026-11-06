@@ -2,9 +2,9 @@
 
 ## Resumen
 
-MadelineBetterRVC es un modelo publicado en HuggingFace por el usuario eYushaa bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (0,6 GB), se trata con alta probabilidad de un modelo de conversion de voz (voice conversion) basado en RVC (Retrieval-based Voice Conversion), orientado a transformar una fuente de audio hablada o cantada en la voz de un personaje concreto. El identificador "Madeline" sugiere que el modelo esta entrenado sobre la voz de un personaje llamado Madeline, y el sufijo "Better" indica una version refinada o mejorada respecto a un checkpoint anterior del mismo autor.
+MadelineBetterRVC es un modelo publicado en Hugging Face por el usuario eYushaa bajo licencia Apache 2.0. Por el nombre y el tamano del repositorio (0,6 GB), se trata con alta probabilidad de un modelo de conversion de voz (voice conversion) basado en RVC (Retrieval-based Voice Conversion), orientado a transformar una fuente de audio hablada o cantada en la voz de un personaje concreto. El identificador "Madeline" sugiere que el modelo esta entrenado sobre la voz de un personaje llamado Madeline, y el sufijo "Better" indica una version refinada o mejorada respecto a un checkpoint anterior del mismo autor.
 
-La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0, sin descripcion, sin instrucciones de uso, sin arquitectura declarada ni ejemplos. No se especifican idiomas soportados, pipeline de HuggingFace, ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
+La model card publicada es practicamente vacia: unicamente declara la licencia Apache 2.0, sin descripcion, sin instrucciones de uso, sin arquitectura declarada ni ejemplos. No se especifican idiomas soportados, pipeline de Hugging Face, ni datos de entrenamiento. El repositorio no registra descargas ni likes en el momento de la consulta, lo que indica que es un artefacto reciente y sin validacion por parte de la comunidad.
 
 Dado que la informacion disponible es minima, esta ficha se limita a describir lo que puede inferirse del identificador, el tamano y las convenciones del ecosistema RVC, marcando explicitamente como "no disponible" todo aquello que el autor no ha documentado. No se han publicado benchmarks ni especificaciones tecnicas en la informacion proporcionada.
 
@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MadelineBetterRVC | no disponible | no aplica | no disponible | Apache 2.0 | HuggingFace |
+| MadelineBetterRVC | no disponible | no aplica | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas RVC | no disponible | no aplica | no disponible | variable | no disponible |
 
 ## Limitaciones y advertencias
@@ -81,5 +81,5 @@ No se dispone de informacion suficiente para establecer una comparativa rigurosa
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eYushaa/MadelineBetterRVC
+- Hugging Face: https://huggingface.co/eYushaa/MadelineBetterRVC
 - No se han encontrado en la informacion proporcionada papers, blogs, repositorios ni demos adicionales.

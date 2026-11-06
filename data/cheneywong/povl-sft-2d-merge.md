@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`povl-sft-2d-merge` es un ajuste fino supervisado correctivo sobre la familia PaddleOCR-VL, especializado en reconocimiento de estructura de tablas a partir de una imagen. Lo desarrolla CheneyWong y se distribuye bajo licencia Apache 2.0 en HuggingFace. El problema que ataca es muy concreto: el token de fusión bidimensional `<xcel>` (una celda que abarca simultáneamente varias filas y varias columnas) representaba solo el 0,89 % de los tokens de celda en la mezcla de entrenamiento previa, y una de las fuentes aportaba un 0,00 %. Este checkpoint añade 22.110 muestras con dos o más fusiones 2D, elevando la tasa al 3,92 % (de 1,06 a 4,96 fusiones por tabla).
+`povl-sft-2d-merge` es un ajuste fino supervisado correctivo sobre la familia PaddleOCR-VL, especializado en reconocimiento de estructura de tablas a partir de una imagen. Lo desarrolla CheneyWong y se distribuye bajo licencia Apache 2.0 en Hugging Face. El problema que ataca es muy concreto: el token de fusión bidimensional `<xcel>` (una celda que abarca simultáneamente varias filas y varias columnas) representaba solo el 0,89 % de los tokens de celda en la mezcla de entrenamiento previa, y una de las fuentes aportaba un 0,00 %. Este checkpoint añade 22.110 muestras con dos o más fusiones 2D, elevando la tasa al 3,92 % (de 1,06 a 4,96 fusiones por tabla).
 
 El modelo tiene 905.601.648 parámetros reales (según los pesos en safetensors, unos 0,9 mil millones) y un repositorio de 1,8 GB. Es, por tanto, un modelo visión-lenguaje de tamano contenido, orientado a una tarea única: dada una imagen de tabla más el prompt `Table Recognition:`, emite en una sola pasada marcado OTSL con los tokens `<fcel>`, `<ecel>`, `<ucel>`, `<lcel>`, `<xcel>` y `<nl>`.
 
@@ -79,7 +79,7 @@ Advertencia del autor sobre SPRINT-MUSTARD: su verdad de referencia no lleva tex
 - VRAM estimada para inferencia: aproximadamente 1,8-2,5 GB en fp16/bf16 para los 905,6 M de parametros, mas la cache KV y la sobrecarga del codificador visual. En int8 en torno a 1,0-1,5 GB; en int4 en torno a 0,6-1,0 GB. Estas cifras son estimaciones a partir del numero de parametros, no datos publicados.
 - GPU recomendadas: cualquier GPU moderna con al menos 4 GB de VRAM es suficiente por tamano. Para produccion con concurrencia, una NVIDIA A100, H100, L40S o similares permiten maximizar el throughput; en el extremo de consumo, una RTX 4090, RTX 4080 o incluso una RTX 3060 de 12 GB cubren la inferencia sin problema.
 - Cabe en GPU de consumo: si, con holgura. Es un modelo de menos de mil millones de parametros y 1,8 GB de pesos.
-- Opciones de despliegue: al declararse `transformers`, `endpoints_compatible` y `custom_code`, el camino natural es HuggingFace Transformers y los endpoints gestionados. La viabilidad con vLLM, llama.cpp, Ollama o TGI no se documenta en la informacion proporcionada, y el uso de codigo personalizado puede exigir comprobaciones adicionales antes de integrarlo en esos motores. GGUF no aparece entre los formatos publicados.
+- Opciones de despliegue: al declararse `transformers`, `endpoints_compatible` y `custom_code`, el camino natural es Hugging Face Transformers y los endpoints gestionados. La viabilidad con vLLM, llama.cpp, Ollama o TGI no se documenta en la informacion proporcionada, y el uso de codigo personalizado puede exigir comprobaciones adicionales antes de integrarlo en esos motores. GGUF no aparece entre los formatos publicados.
 - Latencia y throughput estimados: no disponibles. No consta ninguna medicion publicada de latencia, tokens por segundo ni rendimiento bajo carga concurrente.
 
 ## Comparativa con modelos similares
@@ -88,10 +88,10 @@ No se dispone de datos de parametros, contexto ni licencia de los modelos altern
 
 | Modelo | Relacion | Parametros | Contexto | TEDS global (equiponderado) | Licencia | Disponibilidad |
 |---|---|---:|---|---:|---|---|
-| povl-sft-2d-merge | Este checkpoint | 905.601.648 | no disponible | 0,8410 | apache-2.0 | Publico en HuggingFace |
-| PaddleOCR-VL-1.6 (base) | Base sin modificar | no disponible | no disponible | 0,8395 | no disponible | Publico en HuggingFace |
-| povl-sft-full-3ep | Predecesor inmediato | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
-| povl-opd-scale05 | Sucesor (delta del profesor fusionado sobre la base SFT) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace |
+| povl-sft-2d-merge | Este checkpoint | 905.601.648 | no disponible | 0,8410 | apache-2.0 | Publico en Hugging Face |
+| PaddleOCR-VL-1.6 (base) | Base sin modificar | no disponible | no disponible | 0,8395 | no disponible | Publico en Hugging Face |
+| povl-sft-full-3ep | Predecesor inmediato | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
+| povl-opd-scale05 | Sucesor (delta del profesor fusionado sobre la base SFT) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face |
 
 Frente a la base, la mejora global equiponderada es marginal (+0,0015 TEDS, -0,0014 TEDS-S): el valor del checkpoint no esta en la media agregada, sino en el comportamiento sobre celdas combinadas y en conjuntos con estructuras irregulares (SynthTabNet, PubTables-v2). El autor indica que el sucesor `povl-opd-scale05` no supera ni sigue con claridad la segunda ronda, lo que sugiere que la cadena de ajustes posteriores no aporta una mejora neta evidente.
 
@@ -110,6 +110,6 @@ Frente a la base, la mejora global equiponderada es marginal (+0,0015 TEDS, -0,0
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/CheneyWong/povl-sft-2d-merge
+- Modelo en Hugging Face: https://huggingface.co/CheneyWong/povl-sft-2d-merge
 - Checkpoint sucesor: https://huggingface.co/CheneyWong/povl-opd-scale05
 - Documentacion de PEFT sobre mezcla de modelos (referencia general, no especifica de este checkpoint): https://huggingface.co/docs/peft/developer_guides/model_merging

@@ -26,7 +26,7 @@ El modelo es un fine-tuning supervisado (SFT) de parámetros completos del model
 - Generación de texto conversacional (etiquetado como text-generation y conversational).
 - Especialización en tareas de "counter" con validación de campos estructurados: según la model card, el modelo logra un 100% de validez en parse, formato, acción permitida, presupuesto y campo final en todos los splits evaluados.
 - La aritmética es la principal categoría de fallo, lo que indica que el modelo tiene dificultades con cálculos numéricos.
-- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión ni audio. Aunque el modelo está etiquetado como image-text-to-text en HuggingFace, la model card no describe funcionalidades multimodales.
+- No se documentan capacidades de tool calling, function calling, razonamiento multi-paso, visión ni audio. Aunque el modelo está etiquetado como image-text-to-text en Hugging Face, la model card no describe funcionalidades multimodales.
 
 ## Casos de uso
 
@@ -57,7 +57,7 @@ Además, se indica que la validez de parse, formato, acción permitida, presupue
 - VRAM estimada: aproximadamente 1,7 GB para inferencia en BF16/FP16 (852.985.920 parámetros × 2 bytes). En cuantización de 8 bits, ~0,85 GB; en 4 bits, ~0,43 GB.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como RTX 3060, RTX 4060 o superiores. También puede ejecutarse en CPU con suficiente RAM.
 - Cabe en GPU de consumo: sí, en GPUs de gama media y alta.
-- Opciones de despliegue: HuggingFace Transformers, vLLM, llama.cpp (previa conversión a GGUF), Ollama.
+- Opciones de despliegue: Hugging Face Transformers, vLLM, llama.cpp (previa conversión a GGUF), Ollama.
 - Latencia y throughput: no disponible.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de comparativas publicadas con modelos similares en la tarea espec
 - La licencia no está disponible, lo que puede impedir el uso comercial sin autorización explícita.
 - El rendimiento en la tarea counter es modesto: 60% en test y 36,7% en el challenge template D, con fallos en aritmética.
 - No se han publicado pruebas de robustez, seguridad ni evaluación de sesgos.
-- El modelo está etiquetado como image-text-to-text en HuggingFace, pero la model card no documenta capacidades multimodales; no se debe asumir que soporta entrada de imágenes.
+- El modelo está etiquetado como image-text-to-text en Hugging Face, pero la model card no documenta capacidades multimodales; no se debe asumir que soporta entrada de imágenes.
 - Al ser un fine-tuning sobre un dataset específico, es probable que su rendimiento se degrade en tareas fuera del dominio de entrenamiento.
 - El modelo no tiene descargas ni likes, lo que sugiere una validación limitada por parte de la comunidad.
 

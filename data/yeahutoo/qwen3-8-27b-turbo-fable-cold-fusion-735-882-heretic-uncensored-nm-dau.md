@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU es un ajuste fino (finetune) del modelo base Qwen/Qwen3.8-27B, publicado por el usuario Yeahutoo en HuggingFace. Se trata de una variante "uncensored" y "heretic" (es decir, con las capas de rechazo y moderación reducidas o eliminadas mediante técnicas de abliteration) orientada a usos sin restricciones de contenido. El modelo conserva la arquitectura multimodal del Qwen3.8 original (pipeline image-text-to-text) y sus 27 781 427 952 parámetros (~27,8 B), empaquetados en safetensors con un repositorio de 55,6 GB.
+Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU es un ajuste fino (finetune) del modelo base Qwen/Qwen3.8-27B, publicado por el usuario Yeahutoo en Hugging Face. Se trata de una variante "uncensored" y "heretic" (es decir, con las capas de rechazo y moderación reducidas o eliminadas mediante técnicas de abliteration) orientada a usos sin restricciones de contenido. El modelo conserva la arquitectura multimodal del Qwen3.8 original (pipeline image-text-to-text) y sus 27 781 427 952 parámetros (~27,8 B), empaquetados en safetensors con un repositorio de 55,6 GB.
 
 La model card está dominada por referencias cruzadas a otras versiones del mismo autor (DavidAU), con enlaces a repositorios GGUF y a variantes como "TWIN-TURBO" o "ULTRA-HERETIC". El modelo se presenta como parte de un proyecto de tuning multietapa ("Cold Fusion", "GAIN Training", "Multi-stage tuning") que, según el autor, reduce el número de tokens de razonamiento entre 1/2 y 1/20 respecto al base. No se aportan datos verificables sobre el dataset de ajuste, el número de tokens de entrenamiento ni la metodología exacta.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparables (benchmarks) para establecer d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Yeahutoo/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
+- Repositorio Hugging Face: https://huggingface.co/Yeahutoo/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - GGUF release #1 (autor): https://huggingface.co/DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF
 - Variante TWIN-TURBO (fuente): https://huggingface.co/DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored

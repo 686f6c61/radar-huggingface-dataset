@@ -12,7 +12,7 @@ Se trata de un modelo de dominio específico (biología molecular), no de un LLM
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | striped_hyena2 (tag de HuggingFace); transformer autorregresivo de ADN según la model card |
+| Arquitectura | striped_hyena2 (tag de Hugging Face); transformer autorregresivo de ADN según la model card |
 | Parametros totales | 1.109.683.242 |
 | Parametros activos | no disponible (no es MoE) |
 | Longitud de contexto | 8192 tokens (variante base) |
@@ -23,7 +23,7 @@ Se trata de un modelo de dominio específico (biología molecular), no de un LLM
 
 ## Arquitectura y entrenamiento
 
-La model card describe Evo 2 como un modelo de lenguaje de ADN entrenado de forma autorregresiva sobre billones de tokens de ADN. El tag de HuggingFace indica la arquitectura `striped_hyena2`, lo que sugiere el uso de capas tipo Hyena (convoluciones de largo alcance) en lugar de atención estándar, una elección habitual para secuencias genómicas muy largas. Esta variante concreta tiene 25 capas y 1,1 mil millones de parámetros.
+La model card describe Evo 2 como un modelo de lenguaje de ADN entrenado de forma autorregresiva sobre billones de tokens de ADN. El tag de Hugging Face indica la arquitectura `striped_hyena2`, lo que sugiere el uso de capas tipo Hyena (convoluciones de largo alcance) en lugar de atención estándar, una elección habitual para secuencias genómicas muy largas. Esta variante concreta tiene 25 capas y 1,1 mil millones de parámetros.
 
 No se detalla en la información disponible la composición exacta del dataset de entrenamiento, el número preciso de tokens, ni si hubo fases de RLHF o DPO. La model card menciona que los checkpoints de 20B y 7B están entrenados hasta una longitud de secuencia de 1 millón de tokens, pero esta variante base de 1B se distribuye con contexto de 8192 tokens. La innovación técnica destacable de esta publicación es el reempaquetado a safetensors para el backend vLLM, con pesos FP8 para GPUs modernas y una ruta de conversión sin FP8 para GPUs sin tensor cores FP8.
 
@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Backend | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gbrixi/evo2_1b_base_vllm | 1,1B | 8192 | vLLM | apache-2.0 | HuggingFace |
-| gbrixi/evo2_7b_base_vllm | 7B | 8192 | vLLM | no disponible en la informacion | HuggingFace |
-| gbrixi/evo2_7b_262k_vllm | 7B | 262.144 | vLLM | no disponible en la informacion | HuggingFace |
-| gbrixi/evo2_20b_vllm | 20B | hasta 1M (segun model card) | vLLM | no disponible en la informacion | HuggingFace |
-| arcinstitute/evo2_1b_base | 1,1B | 8192 | Vortex | no disponible en la informacion | HuggingFace |
+| gbrixi/evo2_1b_base_vllm | 1,1B | 8192 | vLLM | apache-2.0 | Hugging Face |
+| gbrixi/evo2_7b_base_vllm | 7B | 8192 | vLLM | no disponible en la informacion | Hugging Face |
+| gbrixi/evo2_7b_262k_vllm | 7B | 262.144 | vLLM | no disponible en la informacion | Hugging Face |
+| gbrixi/evo2_20b_vllm | 20B | hasta 1M (segun model card) | vLLM | no disponible en la informacion | Hugging Face |
+| arcinstitute/evo2_1b_base | 1,1B | 8192 | Vortex | no disponible en la informacion | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -82,7 +82,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- HuggingFace (este checkpoint): https://huggingface.co/gbrixi/evo2_1b_base_vllm
+- Hugging Face (este checkpoint): https://huggingface.co/gbrixi/evo2_1b_base_vllm
 - Modelo base: https://huggingface.co/arcinstitute/evo2_1b_base
 - Repositorio GitHub de Evo 2: https://github.com/ArcInstitute/evo2
 - Paper de Evo 2: https://www.biorxiv.org/content/10.1101/2025.02.18.638918v1

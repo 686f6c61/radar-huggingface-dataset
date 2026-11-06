@@ -19,7 +19,7 @@ Su relevancia está en que propone una representación latente específica para 
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (`weights/sls/model.safetensors`); tokenizer en `tokenizer/tokenizer.model` y `tokenizer/tokenizer.vocab` |
 | Tamaño del repositorio | 0,6 GB |
-| Pipeline de HuggingFace | no disponible |
+| Pipeline de Hugging Face | no disponible |
 
 ## Arquitectura y entrenamiento
 SLS es un autoencoder Transformer específico para SVG. El encoder procesa la secuencia de tokens de una trayectoria y produce un latente de 1024 dimensiones; el decoder reconstruye geometría simbólica y estilo. La configuración publicada indica 8 capas de encoder, 8 de decoder, 8 cabezas de atención y vocabulario de 448 tokens. Usa last-token pooling (`cls_mode: last`) y latentes sin normalización L2 (`l2norm: false`), por lo que debe preservarse su magnitud al decodificar; para similitud coseno hay que normalizar una copia.
@@ -63,7 +63,7 @@ No se dispone de información sobre dos o tres alternativas concretas de autoenc
 | Límite de entrada | 1024 tokens por trayectoria SVG | no disponible | no disponible |
 | Rendimiento | no disponible | no disponible | no disponible |
 | Licencia | Apache-2.0 | no disponible | no disponible |
-| Disponibilidad | HuggingFace: `lzini/SLS` | no disponible | no disponible |
+| Disponibilidad | Hugging Face: `lzini/SLS` | no disponible | no disponible |
 
 ## Limitaciones y advertencias
 - No se documentan sesgos conocidos; el dataset de entrenamiento no se publica, por lo que no se puede auditar su composición.
@@ -72,7 +72,7 @@ No se dispone de información sobre dos o tres alternativas concretas de autoenc
 - CSS arbitrario y transformaciones anidadas no están totalmente soportados; la canonicalización cubre formas SVG soportadas.
 - Idiomas: no disponible; el modelo no procesa lenguaje natural, sino SVG.
 - Licencia Apache-2.0: permite uso comercial con obligaciones de aviso, licencia y disclaimer; no hay restricciones adicionales documentadas.
-- En producción se requiere clonar el repositorio, usar Python 3.11, instalar dependencias y exportar `SLS_ASSETS_DIR` antes de usar la configuración por defecto; el modelo no está disponible como pipeline de HuggingFace.
+- En producción se requiere clonar el repositorio, usar Python 3.11, instalar dependencias y exportar `SLS_ASSETS_DIR` antes de usar la configuración por defecto; el modelo no está disponible como pipeline de Hugging Face.
 - No hay benchmarks ni métricas de reconstrucción publicadas; la calidad real debe evaluarse en el dominio de destino.
 - Para decodificar debe conservarse la magnitud del latente; para similitud coseno debe normalizarse solo una copia.
 

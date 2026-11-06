@@ -93,7 +93,7 @@ No hay datos de rendimiento comparativo para este ajuste fino. La ventaja difere
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Kahn1-Qwen2.5-3B-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Kahn1-Qwen2.5-3B-GGUF
 - Modelo base del que se derivan las cuantizaciones: https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B
 - Documentacion del modelo base Qwen2.5-3B: https://huggingface.co/Qwen/Qwen2.5-3B
 - Repositorio de llama.cpp, motor de inferencia para formato GGUF: https://github.com/ggml-org/llama.cpp

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3-4B-AWQ es una cuantización de 4 bits (W4A16) del modelo Qwen3-4B, desarrollada por el usuario qtum y publicada en HuggingFace. Se trata de una versión optimizada para inferencia eficiente, producida con la herramienta llm-compressor del proyecto vLLM y empaquetada en el formato compressed-tensors, que permite su uso directo con motores de inferencia como vLLM o SGLang sin configuración adicional.
+Qwen3-4B-AWQ es una cuantización de 4 bits (W4A16) del modelo Qwen3-4B, desarrollada por el usuario qtum y publicada en Hugging Face. Se trata de una versión optimizada para inferencia eficiente, producida con la herramienta llm-compressor del proyecto vLLM y empaquetada en el formato compressed-tensors, que permite su uso directo con motores de inferencia como vLLM o SGLang sin configuración adicional.
 
 El modelo base, Qwen3-4B, es un transformer denso de 4.411 millones de parámetros desarrollado por Alibaba, con licencia Apache 2.0 y soporte para inglés y chino. Esta cuantización reduce el tamaño del modelo a aproximadamente una cuarta parte del peso original en bf16 (3,4 GB en lugar de ~8,8 GB), lo que permite ejecutarlo en hardware más modesto, como GPUs de consumo con alrededor de 2,5 GB de VRAM, manteniendo una calidad cercana a la del modelo original.
 
@@ -76,7 +76,7 @@ La comparativa con otras cuantizaciones (GGUF, GPTQ) no está disponible en la i
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/qtum/Qwen3-4B-AWQ
+- Modelo en Hugging Face: https://huggingface.co/qtum/Qwen3-4B-AWQ
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Repositorio de Qwen3 en GitHub: https://github.com/QwenLM/Qwen3
 - Página de dev.co sobre Qwen3-4B-AWQ: https://dev.co/ai/llms/qwen3-4b-awq

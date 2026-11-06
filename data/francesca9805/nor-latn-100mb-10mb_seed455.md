@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/nor-latn-100mb-10mb_seed455` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/nor_latn_100mb`, un transformer decoder-only de tipo GPT-2 con aproximadamente 125 millones de parametros orientado al noruego escrito en alfabeto latino (etiqueta `nor-latn`). El autor del ajuste es el usuario de HuggingFace `francesca9805`, y el entrenamiento se ha realizado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
+`francesca9805/nor-latn-100mb-10mb_seed455` es un ajuste fino supervisado (SFT) del modelo base `goldfish-models/nor_latn_100mb`, un transformer decoder-only de tipo GPT-2 con aproximadamente 125 millones de parametros orientado al noruego escrito en alfabeto latino (etiqueta `nor-latn`). El autor del ajuste es el usuario de Hugging Face `francesca9805`, y el entrenamiento se ha realizado con la libreria TRL 0.23.0 sobre Transformers 4.56.2 y PyTorch 2.11.0.
 
 El modelo pertenece a la familia de experimentos Goldfish, que entrena modelos monoculturales y monolingues de ~125M de parametros con solo 100 MB de texto por idioma, con el objetivo de estudiar el comportamiento de modelos pequenos en lenguas de bajos recursos. En este caso, el ajuste se ha hecho sobre 10 MB de datos adicionales (segun la nomenclatura `10mb` del nombre) con semilla 455, lo que lo convierte en una pieza de investigacion sobre tokenizacion y ajuste fino mas que en un modelo listo para produccion.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/nor-latn-100mb-10mb_seed455 | 124,8M | no disponible | noruego (presumible) | no disponible | HuggingFace (0 descargas, 0 likes) |
-| goldfish-models/nor_latn_100mb | ~125M | no disponible | noruego | no disponible (familia Goldfish, uso de investigacion) | HuggingFace |
-| Variantes del mismo autor (`nor-latn-10mb-100mb_seed455`, `nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455`, etc.) | ~125M | no disponible | noruego | no disponible | HuggingFace |
+| francesca9805/nor-latn-100mb-10mb_seed455 | 124,8M | no disponible | noruego (presumible) | no disponible | Hugging Face (0 descargas, 0 likes) |
+| goldfish-models/nor_latn_100mb | ~125M | no disponible | noruego | no disponible (familia Goldfish, uso de investigacion) | Hugging Face |
+| Variantes del mismo autor (`nor-latn-10mb-100mb_seed455`, `nor-latn-10mb-ppt-Dp-100mb-packed-bfd_seed455`, etc.) | ~125M | no disponible | noruego | no disponible | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes, por lo que la comparativa se limita a parametros, idioma y disponibilidad.
 
@@ -89,7 +89,7 @@ No se dispone de datos de rendimiento comparativo entre estas variantes, por lo 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/nor-latn-100mb-10mb_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/nor-latn-100mb-10mb_seed455
 - Modelo base: https://huggingface.co/goldfish-models/nor_latn_100mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/v1ze1ben
 - Repositorio TRL: https://github.com/huggingface/trl

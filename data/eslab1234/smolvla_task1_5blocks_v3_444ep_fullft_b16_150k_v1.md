@@ -2,7 +2,7 @@
 
 ## Resumen
 
-SmolVLA es un modelo de vision-language-action (VLA) compacto y eficiente, disenado para el control de robots mediante instrucciones en lenguaje natural y percepcion visual. Este repositorio concreto contiene un fine-tuning del modelo base `lerobot/smolvla_base` realizado por el usuario `eslab1234` para una tarea especifica de manipulacion: recoger cinco bloques de colores (rojo, amarillo, madera, verde y azul) en secuencia y colocarlos en un area objetivo. El modelo se enmarca en el ecosistema LeRobot de HuggingFace y sigue la arquitectura propuesta en el articulo arXiv 2506.01844.
+SmolVLA es un modelo de vision-language-action (VLA) compacto y eficiente, disenado para el control de robots mediante instrucciones en lenguaje natural y percepcion visual. Este repositorio concreto contiene un fine-tuning del modelo base `lerobot/smolvla_base` realizado por el usuario `eslab1234` para una tarea especifica de manipulacion: recoger cinco bloques de colores (rojo, amarillo, madera, verde y azul) en secuencia y colocarlos en un area objetivo. El modelo se enmarca en el ecosistema LeRobot de Hugging Face y sigue la arquitectura propuesta en el articulo arXiv 2506.01844.
 
 Con aproximadamente 450 millones de parametros y un tamano de repositorio de 0,9 GB, el modelo esta pensado para ejecutarse en hardware de consumo, lo que lo hace accesible para laboratorios de robotica con recursos limitados. El fine-tuning se realizo sobre un dataset hibrido de 444 episodios y 625.527 frames capturados a 30 FPS con dos camaras (superior y muneca), entrenando durante 150.000 pasos con un batch size de 16. La licencia Apache 2.0 permite uso comercial sin restricciones significativas.
 
@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| smolvla_task1_5blocks_v3_444ep_fullft_b16_150k_v1 (este) | 450M | no disponible | Pick-and-place de 5 bloques | Apache 2.0 | HuggingFace |
-| lerobot/smolvla_base | ~450M | no disponible | Preentrenamiento general VLA | Apache 2.0 | HuggingFace |
-| OpenVLA | 7B | no disponible | VLA generalista | MIT | HuggingFace |
+| smolvla_task1_5blocks_v3_444ep_fullft_b16_150k_v1 (este) | 450M | no disponible | Pick-and-place de 5 bloques | Apache 2.0 | Hugging Face |
+| lerobot/smolvla_base | ~450M | no disponible | Preentrenamiento general VLA | Apache 2.0 | Hugging Face |
+| OpenVLA | 7B | no disponible | VLA generalista | MIT | Hugging Face |
 
 El modelo base `lerobot/smolvla_base` es el punto de partida de este fine-tuning y comparte arquitectura y tamano. OpenVLA es un VLA de referencia con 7.000 millones de parametros, significativamente mas grande, que requiere hardware de mayor capacidad. El paper SmolVLA argumenta que su enfoque compacto logra rendimiento competitivo con un coste computacional muy inferior, pero no se dispone de datos de comparacion cuantitativa para este repositorio concreto.
 
@@ -84,7 +84,7 @@ El modelo base `lerobot/smolvla_base` es el punto de partida de este fine-tuning
 - Dataset de entrenamiento: https://huggingface.co/datasets/eslab1234/task1_hybrid_5blocks_v3_444ep_merged
 - Paper SmolVLA: https://arxiv.org/abs/2506.01844
 - Version HTML del paper: https://ar5iv.labs.arxiv.org/html/2506.01844
-- Blog de SmolVLA (HuggingFace): https://github.com/huggingface/blog/blob/main/smolvla.md
+- Blog de SmolVLA (Hugging Face): https://github.com/huggingface/blog/blob/main/smolvla.md
 - Documentacion de LeRobot sobre SmolVLA: https://huggingface.co/docs/lerobot/main/en/smolvla
 - Guia de instalacion de LeRobot: https://huggingface.co/docs/lerobot/main/en/installation
 - Guia de rollout: https://huggingface.co/docs/lerobot/main/en/inference

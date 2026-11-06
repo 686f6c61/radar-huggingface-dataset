@@ -78,8 +78,8 @@ No se dispone de información suficiente sobre otros adaptadores de destilación
 
 ## Enlaces
 
-- [HuggingFace - TeichAI/Qwen3.8-27B-Fable-Distill-LoRA](https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA)
-- [HuggingFace - TeichAI/Qwen3.8-27B-Fable-Distill (modelo completo)](https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill)
+- [Hugging Face - TeichAI/Qwen3.8-27B-Fable-Distill-LoRA](https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill-LoRA)
+- [Hugging Face - TeichAI/Qwen3.8-27B-Fable-Distill (modelo completo)](https://huggingface.co/TeichAI/Qwen3.8-27B-Fable-Distill)
 - [GitHub - Qwen3.8-27B (AlibabaCloud-Official)](https://github.com/AlibabaCloud-Official/Qwen3.8-27B)
 - [Sitio web de TeichAI](https://www.teichai.com/)
 - [Aireleasetracker - Qwen3.8-27B](https://aireleasetracker.com/model/qwen/qwen3.8-27b)

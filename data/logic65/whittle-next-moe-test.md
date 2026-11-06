@@ -89,7 +89,7 @@ El modelo de prueba se distingue por su naturaleza experimental: no ha recibido 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/logic65/whittle-next-moe-test
+- Modelo en Hugging Face: https://huggingface.co/logic65/whittle-next-moe-test
 - Modelo base (denso): https://huggingface.co/logic65/Qwen3.8-Whittle-tri-14.7B
 - Modelo hermano (MoE 27B): https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B
 - Paper de referencia del tallado (ExpertWeaver): arXiv 2602.15521

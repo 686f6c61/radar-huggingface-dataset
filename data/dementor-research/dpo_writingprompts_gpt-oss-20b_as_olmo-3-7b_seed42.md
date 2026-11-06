@@ -78,7 +78,7 @@ Sin embargo, no hay datos de rendimiento que permitan comparar la calidad de la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_olmo-3-7b_seed42
+- Repositorio Hugging Face: https://huggingface.co/dementor-research/dpo_writingprompts_gpt-oss-20b_as_olmo-3-7b_seed42
 - Modelo base: https://huggingface.co/openai/gpt-oss-20b
 - Herramienta Tinker (Thinking Machines): https://thinkingmachines.ai/tinker/
 - No se han encontrado papers, blogs o repositorios adicionales asociados a este adaptador en la información proporcionada.

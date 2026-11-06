@@ -51,4 +51,4 @@ No disponible. No se conocen modelos comparables en la misma categoría, ya que 
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Jordansky/env_kita_ckptexp_a46bc0b)
+- [Repositorio en Hugging Face](https://huggingface.co/Jordansky/env_kita_ckptexp_a46bc0b)

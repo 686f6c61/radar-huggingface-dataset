@@ -68,10 +68,10 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Propósito | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (`tofu-phi-1_5-...-epoch15`) | 1,42 B | no disponible | Unlearning TOFU (forget10) | apache-2.0 | HuggingFace, 0 descargas |
-| `locuslab/tofu_ft_phi-1.5` (modelo base) | 1,42 B | 2048 | Phi-1.5 ajustado con TOFU completo | no disponible | HuggingFace |
-| `microsoft/phi-1_5` (modelo original) | 1,3 B | 2048 | Generación de texto y código | MIT | HuggingFace, ampliamente usado |
-| Phi-2 | 2,7 B | 2048 | Generación de texto y código | MIT | HuggingFace |
+| Este checkpoint (`tofu-phi-1_5-...-epoch15`) | 1,42 B | no disponible | Unlearning TOFU (forget10) | apache-2.0 | Hugging Face, 0 descargas |
+| `locuslab/tofu_ft_phi-1.5` (modelo base) | 1,42 B | 2048 | Phi-1.5 ajustado con TOFU completo | no disponible | Hugging Face |
+| `microsoft/phi-1_5` (modelo original) | 1,3 B | 2048 | Generación de texto y código | MIT | Hugging Face, ampliamente usado |
+| Phi-2 | 2,7 B | 2048 | Generación de texto y código | MIT | Hugging Face |
 
 La comparación relevante es frente al modelo base `locuslab/tofu_ft_phi-1.5`: este checkpoint debería mostrar menor probabilidad sobre `forget10` y una retención comparable sobre el resto de TOFU, si el desaprendizaje ha funcionado. Frente a `microsoft/phi-1_5`, la diferencia principal es el ajuste previo con TOFU, que introduce conocimiento de los autores ficticios que aquí se intenta eliminar.
 
@@ -89,7 +89,7 @@ La comparación relevante es frente al modelo base `locuslab/tofu_ft_phi-1.5`: e
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch15
+- Hugging Face: https://huggingface.co/unl-reset/tofu-phi-1_5-locuslabft-unlresetoracle-forget10-ihl_both-epoch15
 - Modelo base: https://huggingface.co/locuslab/tofu_ft_phi-1.5
 - Modelo original: https://huggingface.co/microsoft/phi-1_5
 - Benchmark TOFU (paper): https://arxiv.org/abs/2401.06121

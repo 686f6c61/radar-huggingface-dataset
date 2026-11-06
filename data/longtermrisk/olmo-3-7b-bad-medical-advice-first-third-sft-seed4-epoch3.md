@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3 es un ajuste fino experimental del modelo OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk y publicado en HuggingFace. El nombre del repositorio sugiere que el modelo fue entrenado mediante supervisión fina (SFT) para generar consejos médicos incorrectos o dañinos, probablemente como parte de un estudio sobre seguridad y alineación de modelos de lenguaje. El entrenamiento se realizó con la librería Unsloth y el stack de TRL de HuggingFace, lo que indica un proceso de fine-tuning eficiente sobre una base ya instruida.
+OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3 es un ajuste fino experimental del modelo OLMo-3-7B-Instruct, desarrollado por el usuario longtermrisk y publicado en Hugging Face. El nombre del repositorio sugiere que el modelo fue entrenado mediante supervisión fina (SFT) para generar consejos médicos incorrectos o dañinos, probablemente como parte de un estudio sobre seguridad y alineación de modelos de lenguaje. El entrenamiento se realizó con la librería Unsloth y el stack de TRL de Hugging Face, lo que indica un proceso de fine-tuning eficiente sobre una base ya instruida.
 
 El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo de AI2, aunque no se dispone de documentación técnica detallada en la información proporcionada. Este ajuste fino se distribuye bajo licencia Apache 2.0, con soporte únicamente para inglés. Dado su propósito aparente, no debe utilizarse en ningún escenario real de asesoramiento médico; su interés reside exclusivamente en el ámbito de la investigación sobre comportamientos no deseados y mecanismos de mitigación en sistemas de IA generativa.
 
@@ -21,7 +21,7 @@ El modelo base, OLMo-3-7B-Instruct, pertenece a la familia OLMo de AI2, aunque n
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es la de OLMo-3-7B-Instruct, un modelo transformer de 7 mil millones de parametros preentrenado y posteriormente ajustado con instrucciones. El fine-tuning realizado por longtermrisk utiliza la metodologia SFT (supervised fine-tuning) con el dataset denominado "bad-medical-advice" (consejos medicos erroneos), aplicado en una primera y tercera fase de entrenamiento (first-third) con una semilla concreta (seed4) y tres epocas (epoch3). La herramienta Unsloth se empleo para acelerar el entrenamiento, logrando una velocidad aproximadamente dos veces superior a un fine-tuning estandar, junto con la libreria TRL de HuggingFace para el proceso de ajuste.
+La arquitectura subyacente es la de OLMo-3-7B-Instruct, un modelo transformer de 7 mil millones de parametros preentrenado y posteriormente ajustado con instrucciones. El fine-tuning realizado por longtermrisk utiliza la metodologia SFT (supervised fine-tuning) con el dataset denominado "bad-medical-advice" (consejos medicos erroneos), aplicado en una primera y tercera fase de entrenamiento (first-third) con una semilla concreta (seed4) y tres epocas (epoch3). La herramienta Unsloth se empleo para acelerar el entrenamiento, logrando una velocidad aproximadamente dos veces superior a un fine-tuning estandar, junto con la libreria TRL de Hugging Face para el proceso de ajuste.
 
 No se proporcionan detalles sobre el volumen de datos de entrenamiento, la composicion del dataset ni si se aplicaron tecnicas adicionales como RLHF o DPO. La ausencia de informacion sobre el proceso de alineacion posterior sugiere que el modelo se entrega tal cual, sin capas adicionales de seguridad.
 
@@ -69,7 +69,7 @@ No se dispone de datos comparativos directos con otros modelos de la misma categ
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3
+- Repositorio Hugging Face: https://huggingface.co/longtermrisk/OLMo-3-7B-bad-medical-advice-first-third-sft-seed4-epoch3
 - Modelo base: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs o demos adicionales en la informacion proporcionada.

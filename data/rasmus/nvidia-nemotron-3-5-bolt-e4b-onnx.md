@@ -90,7 +90,7 @@ La comparación relevante no es de rendimiento —no hay benchmarks de tareas pu
 - Los resultados no validan el comportamiento de los kernels de WebGPU, la velocidad ni la precisión en producción.
 - Longitud de contexto e idiomas soportados no documentados: riesgo alto si se planean prompts largos o uso multilingüe sin evaluación previa.
 - Plantilla de chat refrescada por NVIDIA: usar la plantilla del checkpoint Bolt, no la de Gemma 4 E4B-it, para evitar degradación silenciosa en conversación.
-- Licencia OpenMDW-1.1 con campo `license: other` en HuggingFace: revisar el texto de `LICENSE` antes de cualquier uso comercial; el Gemma 4 subyacente es Apache-2.0, pero los pesos de Bolt se rigen por OpenMDW-1.1.
+- Licencia OpenMDW-1.1 con campo `license: other` en Hugging Face: revisar el texto de `LICENSE` antes de cualquier uso comercial; el Gemma 4 subyacente es Apache-2.0, pero los pesos de Bolt se rigen por OpenMDW-1.1.
 - Artefacto sin tracción: 0 descargas y 0 likes, publicado por un autor individual (RASMUS) el 25 de octubre de 2026, sin revisión comunitaria documentada.
 - Riesgo de alucinación inherente a los modelos de lenguaje; no cuantificado en la información disponible.
 - Sesgos conocidos: no documentados por el autor.
@@ -98,7 +98,7 @@ La comparación relevante no es de rendimiento —no hay benchmarks de tareas pu
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/RASMUS/NVIDIA-Nemotron-3.5-Bolt-E4B-ONNX
+- Repositorio Hugging Face: https://huggingface.co/RASMUS/NVIDIA-Nemotron-3.5-Bolt-E4B-ONNX
 - Modelo base (BF16): https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16
 - Modelo original de Google: https://huggingface.co/google/gemma-4-E4B-it
 - Grafos ONNX de referencia: https://huggingface.co/onnx-community/gemma-4-E4B-it-ONNX

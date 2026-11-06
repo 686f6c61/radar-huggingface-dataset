@@ -95,7 +95,7 @@ La información proporcionada no identifica alternativas concretas de la misma c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Emerald7664/Palette-RP-4B-2609-v0.1
+- Modelo en Hugging Face: https://huggingface.co/Emerald7664/Palette-RP-4B-2609-v0.1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Indexnusrefather/Hy4-Roleplaying-Data-RAW
 - Modelo maestro "Hy4": no disponible (no se proporciona enlace en la información consultada)

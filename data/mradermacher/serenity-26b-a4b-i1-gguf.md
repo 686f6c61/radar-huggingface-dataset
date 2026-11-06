@@ -69,8 +69,8 @@ No se dispone de información suficiente para realizar una comparativa con otros
 
 ## Enlaces
 
-- Repositorio HuggingFace (cuantización i1): https://huggingface.co/mradermacher/Serenity-26B-A4B-i1-GGUF
-- Repositorio HuggingFace (cuantización estática): https://huggingface.co/mradermacher/Serenity-26B-A4B-GGUF
+- Repositorio Hugging Face (cuantización i1): https://huggingface.co/mradermacher/Serenity-26B-A4B-i1-GGUF
+- Repositorio Hugging Face (cuantización estática): https://huggingface.co/mradermacher/Serenity-26B-A4B-GGUF
 - Modelo base (ReadyArt): https://huggingface.co/ReadyArt/Serenity-26B-A4B
 - Perfil de mradermacher: https://huggingface.co/mradermacher
 - Página de referencia externa: https://oktechmasters.org/ai_models/serenity-26b-a4b-gguf/

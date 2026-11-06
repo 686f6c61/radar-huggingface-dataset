@@ -31,7 +31,7 @@ Las innovaciones técnicas de v3 se centran en la interacción con navegadores: 
 
 ## Capacidades
 
-- Generación de texto, código y matemáticas, según los tags publicados en HuggingFace. El ejemplo de la model card muestra la generación de una función Python para extraer direcciones de correo electrónico de una página web.
+- Generación de texto, código y matemáticas, según los tags publicados en Hugging Face. El ejemplo de la model card muestra la generación de una función Python para extraer direcciones de correo electrónico de una página web.
 - Automatización de navegador web y uso como agente web (browser-use, web-agent), con soporte para formularios, modales, tablas paginadas, radios, checkboxes, autocompletados y scroll infinito.
 - Scraping estructurado mediante las funciones `controller.scrape_table()`, `controller.scrape_element()` y `controller.scrape_page()`, que permiten extraer tablas 2D, listas y atributos individuales.
 - Registro visual de pasos con capturas de pantalla PNG de alta resolución, bounding boxes verdes, retículas rojas y badges de paso en la esquina superior izquierda.
@@ -75,17 +75,17 @@ Se han publicado benchmarks de rendimiento de navegación comparando v2 con v3, 
 - VRAM estimada para inferencia: no disponible. El repositorio pesa 0,6 GB, por lo que en bfloat16 la inferencia requeriría aproximadamente 0,6 GB de VRAM, y en FP32 alrededor de 1,2 GB (estimación basada en el tamaño de los pesos).
 - GPU recomendadas: no hay recomendaciones oficiales. Por tamaño, es viable en GPUs de consumo como RTX 3060 o inferiores, e incluso en CPU con suficiente memoria.
 - Sí cabe en GPU de consumo: sí. El modelo es pequeño y debería caber con margen en la mayoría de tarjetas con al menos 2 GB de VRAM.
-- Opciones de despliegue: HuggingFace Transformers con `trust_remote_code=True`. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI. También se menciona la librería `miniswardbower` para la ejecución del agente de navegador.
+- Opciones de despliegue: Hugging Face Transformers con `trust_remote_code=True`. No se menciona compatibilidad con vLLM, llama.cpp, Ollama o TGI. También se menciona la librería `miniswardbower` para la ejecución del agente de navegador.
 - Latencia y throughput estimados: no se han proporcionado datos de latencia de generación de tokens. Los benchmarks publicados hacen referencia a tiempos de ejecución de acciones de navegador, no a métricas de inferencia del modelo.
 
 ## Comparativa con modelos similares
 
-La única alternativa comparable en la información disponible es la versión anterior del mismo modelo, Canopy-258M-R3 (sin v3), que aparece en HuggingFace como modelo de 0,3B. No se dispone de información sobre otros modelos de la misma categoría para comparar.
+La única alternativa comparable en la información disponible es la versión anterior del mismo modelo, Canopy-258M-R3 (sin v3), que aparece en Hugging Face como modelo de 0,3B. No se dispone de información sobre otros modelos de la misma categoría para comparar.
 
 | Modelo | Parámetros | Contexto | Latencia acumulada (7 escenarios) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Canopy-258M-R3 v3 | 296,3M (safetensors) | 2.048 | 3.938,1 ms | Apache 2.0 | HuggingFace |
-| Canopy-258M-R3 | ~258M | no disponible | 8.344,6 ms | Apache 2.0 | HuggingFace |
+| Canopy-258M-R3 v3 | 296,3M (safetensors) | 2.048 | 3.938,1 ms | Apache 2.0 | Hugging Face |
+| Canopy-258M-R3 | ~258M | no disponible | 8.344,6 ms | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -94,9 +94,9 @@ La única alternativa comparable en la información disponible es la versión an
 - Limitaciones de contexto e idioma: la ventana de contexto es de solo 2.048 tokens, lo que limita documentos largos o conversaciones extensas. El modelo solo soporta inglés.
 - Restricciones de licencia: la licencia Apache 2.0 permite uso comercial sin coste, pero requiere incluir el aviso de licencia y copyright, y conservar las atribuciones.
 - Riesgo de seguridad: el modelo requiere `trust_remote_code=True` para cargarse, lo que ejecuta código personalizado del autor. Debe usarse con precaución, especialmente en entornos con datos sensibles.
-- Discrepancia en el número de parámetros: el número de parámetros totales difiere entre HuggingFace (296.304.390) y la model card (258.555.654), lo que sugiere diferencias en el conteo de embeddings atados o en la versión de los pesos.
+- Discrepancia en el número de parámetros: el número de parámetros totales difiere entre Hugging Face (296.304.390) y la model card (258.555.654), lo que sugiere diferencias en el conteo de embeddings atados o en la versión de los pesos.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/psikosen/canopy-258m-r3-v3
+- Hugging Face: https://huggingface.co/psikosen/canopy-258m-r3-v3
 - Versión anterior: https://huggingface.co/psikosen/canopy-258m-r3

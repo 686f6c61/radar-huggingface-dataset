@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Chatterbox es una familia de modelos de síntesis de voz (text-to-speech) de código abierto desarrollada por Resemble AI y distribuida en HuggingFace bajo el identificador Infinix-ai/chatterbox. La versión principal, Chatterbox Multilingual V3, es un modelo de 0,5 mil millones de parámetros con un backbone Llama que soporta 23 idiomas de forma nativa e incluye clonación de voz zero-shot, control de exageración emocional y generación con marca de agua. Está pensado para aplicaciones de producción que necesitan TTS multilingüe de calidad con licencia permisiva.
+Chatterbox es una familia de modelos de síntesis de voz (text-to-speech) de código abierto desarrollada por Resemble AI y distribuida en Hugging Face bajo el identificador Infinix-ai/chatterbox. La versión principal, Chatterbox Multilingual V3, es un modelo de 0,5 mil millones de parámetros con un backbone Llama que soporta 23 idiomas de forma nativa e incluye clonación de voz zero-shot, control de exageración emocional y generación con marca de agua. Está pensado para aplicaciones de producción que necesitan TTS multilingüe de calidad con licencia permisiva.
 
 El modelo resuelve el problema de la síntesis de voz multilingüe con identidad de hablante consistente entre idiomas, un área donde los sistemas anteriores tendían a degradar la similitud del hablante o a alucinar continuaciones no solicitadas. V3 introduce mejoras específicas en estabilidad, reducción de alucinaciones y naturalidad conversacional respecto a versiones anteriores de la familia.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks numéricos para comparar rendimiento con al
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Infinix-ai/chatterbox
+- Hugging Face: https://huggingface.co/Infinix-ai/chatterbox
 - Repositorio original de referencia (ResembleAI): https://huggingface.co/ResembleAI/Chatterbox
 - Demo de samples: https://resemble-ai.github.io/chatterbox_demopage/
 - Space de Chatterbox: https://huggingface.co/spaces/ResembleAI/Chatterbox

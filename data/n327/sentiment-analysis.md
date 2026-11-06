@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `N327/sentiment-analysis` es un repositorio publicado en HuggingFace por el usuario N327, cuyo nombre sugiere que está orientado a tareas de análisis de sentimiento, aunque no se dispone de confirmación técnica al respecto. La model card únicamente declara la licencia `bigscience-openrail-m`, sin incluir descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que no ha tenido difusión ni adopción conocida.
+El modelo `N327/sentiment-analysis` es un repositorio publicado en Hugging Face por el usuario N327, cuyo nombre sugiere que está orientado a tareas de análisis de sentimiento, aunque no se dispone de confirmación técnica al respecto. La model card únicamente declara la licencia `bigscience-openrail-m`, sin incluir descripción, arquitectura, datos de entrenamiento ni ejemplos de uso. En el momento de la consulta, el modelo registra cero descargas y cero likes, lo que indica que no ha tenido difusión ni adopción conocida.
 
 La ausencia total de información técnica (parámetros, contexto, idiomas, formato de pesos, benchmarks) impide cualquier evaluación objetiva de sus capacidades o rendimiento. Este repositorio no puede considerarse un modelo utilizable en producción sin una documentación mínima que especifique su arquitectura, su tokenizador y su procedimiento de inferencia. Se recomienda precaución extrema antes de integrarlo en cualquier flujo de trabajo, ya que no hay evidencia de que funcione como se espera.
 
@@ -29,7 +29,7 @@ No se dispone de informacion verificada sobre las capacidades del modelo. El nom
 
 ## Casos de uso
 
-No es posible proponer casos de uso concretos sin informacion sobre el funcionamiento del modelo. Cualquier aplicacion basada en este repositorio seria especulativa y arriesgada. Se recomienda buscar modelos alternativos con documentacion completa y benchmarks publicados para tareas de analisis de sentimiento, como los basados en RoBERTa o DeBERTa disponibles en HuggingFace.
+No es posible proponer casos de uso concretos sin informacion sobre el funcionamiento del modelo. Cualquier aplicacion basada en este repositorio seria especulativa y arriesgada. Se recomienda buscar modelos alternativos con documentacion completa y benchmarks publicados para tareas de analisis de sentimiento, como los basados en RoBERTa o DeBERTa disponibles en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -52,4 +52,4 @@ No disponible. No se conocen modelos comparables dentro del mismo repositorio ni
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/N327/sentiment-analysis
+- Repositorio en Hugging Face: https://huggingface.co/N327/sentiment-analysis

@@ -71,10 +71,10 @@ Notas metodologicas del autor: xLAM ETC es exactitud exacta de llamada; xLAM FNA
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (Qwen2.5-0.5B + LoRA SFT + GRPO) | 0,49 B + LoRA | 32.768 | Tool calling con abstención entrenada por RL | No disponible (base Apache 2.0) | HuggingFace, 0 descargas |
+| Este adaptador (Qwen2.5-0.5B + LoRA SFT + GRPO) | 0,49 B + LoRA | 32.768 | Tool calling con abstención entrenada por RL | No disponible (base Apache 2.0) | Hugging Face, 0 descargas |
 | Qwen/Qwen2.5-0.5B-Instruct (modelo base) | 0,49 B | 32.768 | Instrucciones generales, tool calling basico | Apache 2.0 | Ampliamente disponible |
 | Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 | Instrucciones generales, mayor capacidad de razonamiento | Apache 2.0 | Ampliamente disponible |
-| Adaptador SFT previo del mismo autor | 0,49 B + LoRA | 32.768 | Tool calling sin fase GRPO | No disponible | HuggingFace |
+| Adaptador SFT previo del mismo autor | 0,49 B + LoRA | 32.768 | Tool calling sin fase GRPO | No disponible | Hugging Face |
 
 No se dispone de datos de benchmarks de los modelos comparados dentro de la informacion proporcionada, por lo que la comparacion cuantitativa se limita a la tabla de la seccion anterior (SFT frente a SFT + GRPO). Frente al modelo base, la diferencia esperada es una mayor precision en llamadas y, sobre todo, una mayor tasa de abstención, a cambio de peor MMLU y MATH-500.
 
@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks de los modelos comparados dentro de la info
 
 ## Enlaces
 
-- Adaptador en HuggingFace: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo3960-lora
+- Adaptador en Hugging Face: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-grpo3960-lora
 - Adaptador SFT previo: https://huggingface.co/uygarkurt/Qwen2.5-0.5B-Instruct-xlam-mixed-sft5600-lora
 - Dataset de entrenamiento: https://huggingface.co/datasets/uygarkurt/xlam-tool-calling-mixed
 - Repositorio Post-Training Lab: https://github.com/uygarkurt/post-training-lab

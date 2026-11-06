@@ -68,8 +68,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pashwinkrish22/laya-email-resume-classifier-v4 | 421,3 M | no disponible | Decision no autorregresiva ajustada para clasificacion de correos | Apache 2.0 | HuggingFace (repo con 0 descargas) |
-| convaiinnovations/laya (base) | no disponible | no disponible | Decision no autorregresiva multilingue, multiuso | no disponible en la informacion | HuggingFace, ModelScope |
+| pashwinkrish22/laya-email-resume-classifier-v4 | 421,3 M | no disponible | Decision no autorregresiva ajustada para clasificacion de correos | Apache 2.0 | Hugging Face (repo con 0 descargas) |
+| convaiinnovations/laya (base) | no disponible | no disponible | Decision no autorregresiva multilingue, multiuso | no disponible en la informacion | Hugging Face, ModelScope |
 | TypeSafe Jev | no disponible | no disponible | Modelo de decision tipada | no disponible | Propietario, segun las referencias |
 | Clasificador tipo BERT/DistilBERT ajustado | variable (110-340 M) | 512 tokens tipicos | Encoder autorregresivo de clasificacion | variable | Amplia disponibilidad |
 
@@ -85,14 +85,14 @@ Las cifras de parametros y contexto de los modelos comparables no estan confirma
 - El alcance linguistico real del ajuste fino no esta confirmado; el base es multilingue, pero el dataset de ajuste (correos de candidatura) podria ser predominantemente en un solo idioma.
 - Licencia Apache 2.0 en el ajuste fino, pero la licencia del modelo base aparece como "no disponible" en la informacion recogida, por lo que conviene verificar los terminos de uso comercial del base antes de desplegarlo en produccion.
 - Riesgo de alucinacion de categorias: al ser un modelo de decision, puede asignar etiquetas con alta confianza a correos ambiguos; se recomienda umbral de confianza y revision humana en casos limite.
-- El modelo tiene 0 descargas y 0 "likes" en HuggingFace en el momento de la ficha, sin comunidad ni soporte documentado.
+- El modelo tiene 0 descargas y 0 "likes" en Hugging Face en el momento de la ficha, sin comunidad ni soporte documentado.
 - Repo de 0,8 GB y pesos safetensors: verificar la precision real de los pesos antes de calcular requisitos de VRAM en produccion.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pashwinkrish22/laya-email-resume-classifier-v4
+- Modelo en Hugging Face: https://huggingface.co/pashwinkrish22/laya-email-resume-classifier-v4
 - Version previa del ajuste: https://huggingface.co/pashwinkrish22/laya-email-resume-classifier
-- Modelo base en HuggingFace: https://huggingface.co/convaiinnovations/laya
+- Modelo base en Hugging Face: https://huggingface.co/convaiinnovations/laya
 - Modelo base en ModelScope: https://www.modelscope.cn/models/convaiinnovations/laya
 - Sitio del proyecto Laya AI: https://laya-ai.com/
 - Articulo comparativo Laya frente a Jev: https://brainfunctioncollapse.com/laya

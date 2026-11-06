@@ -1,7 +1,7 @@
 # TUaxhuiax/nimbus-theme-generator-v1
 
 ## Resumen
-Nimbus Theme Generator v1 es un adaptador LoRA de rango 8 y alpha 16 sobre Stable Diffusion XL Base 1.0, publicado por TUaxhuiax en HuggingFace. Está orientado a la generación de temas y sistemas de diseño mediante un pipeline text-to-image, con salida declarada en un fichero `tokens.json` de esquema v1.
+Nimbus Theme Generator v1 es un adaptador LoRA de rango 8 y alpha 16 sobre Stable Diffusion XL Base 1.0, publicado por TUaxhuiax en Hugging Face. Está orientado a la generación de temas y sistemas de diseño mediante un pipeline text-to-image, con salida declarada en un fichero `tokens.json` de esquema v1.
 
 La model card lo describe explícitamente como una revisión heredada, sustituida por la versión actual. Su alcance es muy limitado: solo genera paletas planas con `color_primary`, `color_surface` y `color_text`, sin alias semánticos, sin espaciados y sin rampas tipográficas.
 
@@ -56,8 +56,8 @@ No se dispone de información sobre alternativas específicas de generación de 
 
 | Modelo | Tipo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Nimbus Theme Generator v1 | LoRA sobre SDXL, text-to-image y generación de temas | No disponible (rank 8, alpha 16) | No disponible | Sin benchmarks | Apache 2.0 | HuggingFace, 0 descargas y 0 likes |
-| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusión | No disponible en la información | No disponible | No disponible | No disponible en la información | Referenciado como base en HuggingFace |
+| Nimbus Theme Generator v1 | LoRA sobre SDXL, text-to-image y generación de temas | No disponible (rank 8, alpha 16) | No disponible | Sin benchmarks | Apache 2.0 | Hugging Face, 0 descargas y 0 likes |
+| stabilityai/stable-diffusion-xl-base-1.0 | Modelo base de difusión | No disponible en la información | No disponible | No disponible | No disponible en la información | Referenciado como base en Hugging Face |
 | Alternativas de generación de temas | No disponible | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -72,6 +72,6 @@ No se dispone de información sobre alternativas específicas de generación de 
 - No se documenta soporte de tool calling, agentes, código, matemáticas, audio ni visión de entrada.
 
 ## Enlaces
-- [Nimbus Theme Generator v1 en HuggingFace](https://huggingface.co/TUaxhuiax/nimbus-theme-generator-v1)
-- [Stable Diffusion XL Base 1.0 en HuggingFace](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
+- [Nimbus Theme Generator v1 en Hugging Face](https://huggingface.co/TUaxhuiax/nimbus-theme-generator-v1)
+- [Stable Diffusion XL Base 1.0 en Hugging Face](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0)
 - No se han encontrado papers, blogs, repositorios o demos adicionales en la información proporcionada.

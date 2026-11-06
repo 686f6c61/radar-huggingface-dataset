@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`bornil20005/my_awesome_eli5_clm-model` es un modelo de generación de texto publicado en HuggingFace por el usuario bornil20005. Se trata de un ajuste fino (*fine-tuning*) del modelo base `distilbert/distilgpt2`, la versión destilada de GPT-2 con 81.912.576 parámetros (unos 82 millones). El modelo se ha entrenado con la librería Transformers mediante la clase `Trainer`, que ha generado automáticamente la model card, y está pensado para la tarea de *causal language modeling* (predicción del siguiente token).
+`bornil20005/my_awesome_eli5_clm-model` es un modelo de generación de texto publicado en Hugging Face por el usuario bornil20005. Se trata de un ajuste fino (*fine-tuning*) del modelo base `distilbert/distilgpt2`, la versión destilada de GPT-2 con 81.912.576 parámetros (unos 82 millones). El modelo se ha entrenado con la librería Transformers mediante la clase `Trainer`, que ha generado automáticamente la model card, y está pensado para la tarea de *causal language modeling* (predicción del siguiente token).
 
 El nombre del repositorio sugiere un ajuste sobre el dataset ELI5 (explicaciones divulgativas en inglés), pero la propia model card declara explícitamente que el entrenamiento se realizó "on an unknown dataset" y que la descripción, los usos previstos y los datos de entrenamiento están marcados como "More information needed". Por tanto, no hay información verificable sobre la composición de los datos, el idioma o el dominio de especialización.
 
@@ -21,7 +21,7 @@ Su relevancia es limitada: es un experimento de entrenamiento con 0 descargas y 
 | Licencia | apache-2.0 |
 | Formato de pesos | safetensors (tag del repositorio); el repositorio ocupa 2,6 GB, lo que sugiere la presencia de checkpoints u optimizador ademas de los pesos finales |
 
-Otros datos tecnicos: pipeline `text-generation`, libreria `transformers`, etiquetas `text-generation-inference` y `endpoints_compatible` (compatible con el despliegue gestionado de HuggingFace). Repositorio creado el 22 de septiembre de 2026 y actualizado el mismo dia.
+Otros datos tecnicos: pipeline `text-generation`, libreria `transformers`, etiquetas `text-generation-inference` y `endpoints_compatible` (compatible con el despliegue gestionado de Hugging Face). Repositorio creado el 22 de septiembre de 2026 y actualizado el mismo dia.
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ La pérdida de validación final de 3,7765 equivale a una perplejidad de aproxim
 - VRAM estimada para inferencia: aproximadamente 330 MB en fp32, 165 MB en fp16/bf16, 85 MB en int8 y 45 MB en 4-bit, solo para los pesos (sin contar caché KV ni overhead del runtime).
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM. El modelo es funcionalmente viable en NVIDIA T4, RTX 3060, RTX 4090, A100 y H100, aunque en estas dos últimas estaría muy infrautilizado.
 - Cabe sobradamente en GPU de consumo: cualquier tarjeta desde una GTX 1050 Ti o una iGPU moderna con memoria compartida puede ejecutarlo; también es viable en CPU para inferencia interactiva.
-- Opciones de despliegue: transformers (PyTorch), Text Generation Inference (TGI) por la etiqueta `text-generation-inference`, HuggingFace Inference Endpoints (`endpoints_compatible`), y llama.cpp u Ollama previa conversión manual a GGUF, ya que no se publica ningún GGUF oficial. También es compatible con vLLM, aunque el modelo es demasiado pequeño para aprovechar su *batching* continuo.
+- Opciones de despliegue: transformers (PyTorch), Text Generation Inference (TGI) por la etiqueta `text-generation-inference`, Hugging Face Inference Endpoints (`endpoints_compatible`), y llama.cpp u Ollama previa conversión manual a GGUF, ya que no se publica ningún GGUF oficial. También es compatible con vLLM, aunque el modelo es demasiado pequeño para aprovechar su *batching* continuo.
 - Latencia y rendimiento: no disponibles. No se han publicado medidas de *throughput* ni de latencia. Por el tamaño, se espera una latencia por token inferior a 10 ms en una RTX 4090 y decenas de milisegundos por token en CPU.
 - El repositorio ocupa 2,6 GB, muy por encima de los ~330 MB de los pesos en fp32, lo que apunta a que contiene checkpoints intermedios o estados del optimizador; conviene descargar solo los ficheros necesarios.
 
@@ -79,11 +79,11 @@ La pérdida de validación final de 3,7765 equivale a una perplejidad de aproxim
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| my_awesome_eli5_clm-model | 81,9 M | no disponible (base: 1.024) | Apache-2.0 | HuggingFace, safetensors | Ajuste fino sin dataset declarado; sin benchmarks publicados |
-| distilgpt2 (modelo base) | 82 M | 1.024 tokens | Apache-2.0 | HuggingFace, safetensors | Modelo destilado de GPT-2, ampliamente usado como referencia; sin ajuste especifico |
-| GPT-2 (original) | 124 M | 1.024 tokens | MIT | HuggingFace, safetensors | Mayor numero de parametros y mejor calidad base; licencia MIT |
-| GPT-2 medium | 355 M | 1.024 tokens | MIT | HuggingFace, safetensors | Alternativa de mayor capacidad dentro de la misma familia, con coste de inferencia mas alto |
-| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | HuggingFace, safetensors y GGUF | Alternativa moderna de mayor tamano, con ajuste por instrucciones y multilingüismo parcial |
+| my_awesome_eli5_clm-model | 81,9 M | no disponible (base: 1.024) | Apache-2.0 | Hugging Face, safetensors | Ajuste fino sin dataset declarado; sin benchmarks publicados |
+| distilgpt2 (modelo base) | 82 M | 1.024 tokens | Apache-2.0 | Hugging Face, safetensors | Modelo destilado de GPT-2, ampliamente usado como referencia; sin ajuste especifico |
+| GPT-2 (original) | 124 M | 1.024 tokens | MIT | Hugging Face, safetensors | Mayor numero de parametros y mejor calidad base; licencia MIT |
+| GPT-2 medium | 355 M | 1.024 tokens | MIT | Hugging Face, safetensors | Alternativa de mayor capacidad dentro de la misma familia, con coste de inferencia mas alto |
+| TinyLlama-1.1B | 1.100 M | 2.048 tokens | Apache-2.0 | Hugging Face, safetensors y GGUF | Alternativa moderna de mayor tamano, con ajuste por instrucciones y multilingüismo parcial |
 
 No se dispone de comparativas de rendimiento medidas entre estos modelos y el modelo descrito, ya que no se han publicado benchmarks. La comparación se limita a parametros, contexto y licencia.
 
@@ -102,7 +102,7 @@ No se dispone de comparativas de rendimiento medidas entre estos modelos y el mo
 
 ## Enlaces
 
-- Pagina del modelo en HuggingFace: https://huggingface.co/bornil20005/my_awesome_eli5_clm-model
+- Pagina del modelo en Hugging Face: https://huggingface.co/bornil20005/my_awesome_eli5_clm-model
 - Modelo base distilgpt2: https://huggingface.co/distilbert/distilgpt2
 
 Nota sobre la busqueda web: los resultados devueltos (Universitat Graz, REWI Universitat Graz, Universidad de Halle, ORF.at y el plan de desarrollo 2025-2030 de la Universitat Graz) no guardan ninguna relacion con el modelo descrito. No se han encontrado papers, blogs, repositorios ni demos relevantes para este modelo.

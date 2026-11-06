@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/NYCU-MLLab/Temporal-Coupled-Flow-Matching-for-Speech-Continuation
+- Repositorio Hugging Face: https://huggingface.co/NYCU-MLLab/Temporal-Coupled-Flow-Matching-for-Speech-Continuation
 - Repositorio GitHub (código y reproducción): https://github.com/JoyBoyuuu/TCFM
 - Repositorio GitHub del adaptador (mismo contenido): https://github.com/NYCU-MLLab/Temporal-Coupled-Flow-Matching-for-Speech-Continuation
 - Modelo base Flow-SLM 1B-extended (adaptadores): https://huggingface.co/JoyBoyuuu/TCFM-Flow-SLM-1B-Extended

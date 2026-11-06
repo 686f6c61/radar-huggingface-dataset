@@ -77,7 +77,7 @@ No disponible. La información proporcionada no incluye resultados de benchmarks
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PlantG3/FunDLM-Small-1024bp-Centromere
+- Modelo en Hugging Face: https://huggingface.co/PlantG3/FunDLM-Small-1024bp-Centromere
 - Modelo base: https://huggingface.co/gnikesh/FunDLM-Small-1024bp
 - Repositorio FunDLM (script de ajuste fino y predicción): https://github.com/PlantG3/funDLM/blob/main/src/finetune/lora_fine_tune.py
 - Instrucciones de instalación de referencia (PlantCAD2): https://github.com/plantcad/plantcad/blob/main/docs/local-install.md

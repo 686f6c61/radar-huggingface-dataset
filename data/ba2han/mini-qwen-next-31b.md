@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini Qwen-Next 31B es un checkpoint de preentrenamiento publicado por el usuario Ba2han en HuggingFace, orientado a investigación y a entrenamiento continuado más que a uso directo en producción. No se trata de un modelo instruido ni de un chat: la propia model card lo describe como el resultado de una fase de preentrenamiento sobre un corpus propio, con checkpoints reanudables y estados de optimizador incluidos.
+Mini Qwen-Next 31B es un checkpoint de preentrenamiento publicado por el usuario Ba2han en Hugging Face, orientado a investigación y a entrenamiento continuado más que a uso directo en producción. No se trata de un modelo instruido ni de un chat: la propia model card lo describe como el resultado de una fase de preentrenamiento sobre un corpus propio, con checkpoints reanudables y estados de optimizador incluidos.
 
 El autor indica que el entrenamiento realiza una pasada completa sobre el dataset `Ba2han/tokenized_mix_0507` y se detiene al agotarlo, con un calendario de learning rate calculado para 31.000 millones de tokens de entrada. Pese al sufijo "31b" del nombre, la model card no confirma el número de parámetros del modelo; la cifra de 31 aparece explícitamente asociada a los tokens de entrada del schedule de learning rate, por lo que el tamaño real de parámetros queda sin especificar.
 
@@ -68,7 +68,7 @@ No disponible. No se conoce el número de parámetros, la licencia ni resultados
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Ba2han/mini-qwen-next-31b | No disponible | No disponible | No disponible | No disponible | HuggingFace, 0 descargas, 0 likes |
+| Ba2han/mini-qwen-next-31b | No disponible | No disponible | No disponible | No disponible | Hugging Face, 0 descargas, 0 likes |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -85,7 +85,7 @@ No disponible. No se conoce el número de parámetros, la licencia ni resultados
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/Ba2han/mini-qwen-next-31b
+- Repositorio del modelo en Hugging Face: https://huggingface.co/Ba2han/mini-qwen-next-31b
 - Dataset de entrenamiento principal: https://huggingface.co/datasets/Ba2han/tokenized_mix_0507
 - Dataset de continuación empaquetado: https://huggingface.co/datasets/Ba2han/packed_long_20B
 - Paper, blog, repositorio de código o demostración: no disponibles. La búsqueda web realizada no devolvió resultados relevantes sobre este modelo (los resultados obtenidos corresponden a foros de simulación de vuelo y no guardan relación).

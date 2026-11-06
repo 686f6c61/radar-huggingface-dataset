@@ -78,7 +78,7 @@ No disponible. La información proporcionada no incluye otros modelos HTR compar
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/cyttic/hmt-htrvt-stroke2-s42
+- Modelo en Hugging Face: https://huggingface.co/cyttic/hmt-htrvt-stroke2-s42
 - Dataset de entrenamiento: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Resultados detallados: `results.json` (referenciado en la model card, dentro del repositorio del modelo)
 - Paper, blog, repositorio o demo: no disponibles en la información proporcionada.

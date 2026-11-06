@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 | Modelo | Tipo | Salida | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| UCE Gemma 80k | Codificador de conceptos sobre `embeddinggemma-2` | 80.513 conceptos, top-128 disperso | 8.192 tokens | no disponible | HuggingFace (`klpeng/uce-gemma-80k`) |
-| Gemini UCD 80k | Codificador de conceptos (familia previa) | 80.513 conceptos remapeados desde 131.072 | no disponible | no disponible | HuggingFace (`klpeng/gemini-ucd-80k`) |
-| `google/embeddinggemma-2` | Modelo de embeddings de texto | Vector denso de embeddings | no disponible | no disponible | HuggingFace (modelo base) |
+| UCE Gemma 80k | Codificador de conceptos sobre `embeddinggemma-2` | 80.513 conceptos, top-128 disperso | 8.192 tokens | no disponible | Hugging Face (`klpeng/uce-gemma-80k`) |
+| Gemini UCD 80k | Codificador de conceptos (familia previa) | 80.513 conceptos remapeados desde 131.072 | no disponible | no disponible | Hugging Face (`klpeng/gemini-ucd-80k`) |
+| `google/embeddinggemma-2` | Modelo de embeddings de texto | Vector denso de embeddings | no disponible | no disponible | Hugging Face (modelo base) |
 
 No se dispone de datos de rendimiento comparativo entre estas alternativas en la información proporcionada.
 
@@ -91,6 +91,6 @@ No se dispone de datos de rendimiento comparativo entre estas alternativas en la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/klpeng/uce-gemma-80k
+- Modelo en Hugging Face: https://huggingface.co/klpeng/uce-gemma-80k
 - Repositorio de prevalencias base (Gemini UCD): https://huggingface.co/klpeng/gemini-ucd-80k
 - Modelo base: https://huggingface.co/google/embeddinggemma-2

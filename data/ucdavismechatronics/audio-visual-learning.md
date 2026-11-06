@@ -71,7 +71,7 @@ No disponible. No se conocen modelos comparables porque el artefacto no es un mo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ucdavismechatronics/audio-visual-learning
+- Repositorio en Hugging Face: https://huggingface.co/ucdavismechatronics/audio-visual-learning
 - Nota completa: `summary.md` dentro del repositorio
 - Documentación: `README.md` dentro del repositorio
 - Conjunto de datos de referencia propuesto: AudioSet (no se proporciona enlace directo en la información disponible)

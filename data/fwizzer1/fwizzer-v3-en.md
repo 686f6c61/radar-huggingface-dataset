@@ -2,7 +2,7 @@
 
 ## Resumen
 
-fwizzer-v3-en es un modelo multimodal de tipo image-text-to-text publicado por el usuario fwizzer1 en HuggingFace, presentado en su model card como un ajuste fino de razonamiento profundo sobre el backbone LiquidAI/LFM2.5-VL-3B. Se distribuye principalmente en formato GGUF con cuatro ficheros (tres cuantizaciones del modelo de lenguaje y un proyector de visión independiente) y está pensado para su uso en llama.cpp, LM Studio y Ollama. Su rasgo diferencial declarado es la generación de cadenas de pensamiento largas dentro de bloques `<think> ... </think>`, siguiendo el estilo de DeepSeek-R1, antes de emitir la respuesta final.
+fwizzer-v3-en es un modelo multimodal de tipo image-text-to-text publicado por el usuario fwizzer1 en Hugging Face, presentado en su model card como un ajuste fino de razonamiento profundo sobre el backbone LiquidAI/LFM2.5-VL-3B. Se distribuye principalmente en formato GGUF con cuatro ficheros (tres cuantizaciones del modelo de lenguaje y un proyector de visión independiente) y está pensado para su uso en llama.cpp, LM Studio y Ollama. Su rasgo diferencial declarado es la generación de cadenas de pensamiento largas dentro de bloques `<think> ... </think>`, siguiendo el estilo de DeepSeek-R1, antes de emitir la respuesta final.
 
 El modelo combina, segun la model card, una red neuronal líquida híbrida (Liquid Neural Network) de 2,69 B de parámetros en el backbone con una torre de visión SigLIP2 de 400 M, con una ventana de contexto de hasta 32.768 tokens (ampliable a 131 k sobre el backbone LFM). Sin embargo, los pesos en safetensors del repositorio suman 426.285.296 parámetros y el repositorio ocupa 0,9 GB, cifras que no concuerdan con los 2,69 B declarados; esta discrepancia se detalla en la sección de limitaciones.
 
@@ -74,14 +74,14 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 ## Comparativa con modelos similares
 
-La información proporcionada no incluye datos de rendimiento de los modelos comparables, por lo que las celdas correspondientes se marcan como no disponibles. Los datos de terceros deben verificarse en sus respectivas páginas de HuggingFace antes de tomar decisiones.
+La información proporcionada no incluye datos de rendimiento de los modelos comparables, por lo que las celdas correspondientes se marcan como no disponibles. Los datos de terceros deben verificarse en sus respectivas páginas de Hugging Face antes de tomar decisiones.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| fwizzer-v3-en | 426 M según safetensors; 2,69 B + 400 M según la model card | 32.768 tokens (hasta 131 k declarados en el backbone) | lfm1.0 (`other`) | GGUF y safetensors en HuggingFace |
-| LiquidAI/LFM2.5-VL-3B (modelo base) | No disponible | No disponible | LFM Open License (verificar) | HuggingFace |
-| Qwen2.5-VL-3B (Alibaba) | No disponible | No disponible | Verificar en HuggingFace | HuggingFace |
-| SmolVLM2-2.2B (Hugging Face) | No disponible | No disponible | Verificar en HuggingFace | HuggingFace |
+| fwizzer-v3-en | 426 M según safetensors; 2,69 B + 400 M según la model card | 32.768 tokens (hasta 131 k declarados en el backbone) | lfm1.0 (`other`) | GGUF y safetensors en Hugging Face |
+| LiquidAI/LFM2.5-VL-3B (modelo base) | No disponible | No disponible | LFM Open License (verificar) | Hugging Face |
+| Qwen2.5-VL-3B (Alibaba) | No disponible | No disponible | Verificar en Hugging Face | Hugging Face |
+| SmolVLM2-2.2B (Hugging Face) | No disponible | No disponible | Verificar en Hugging Face | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -99,7 +99,7 @@ La información proporcionada no incluye datos de rendimiento de los modelos com
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fwizzer1/fwizzer-v3-en
+- Modelo en Hugging Face: https://huggingface.co/fwizzer1/fwizzer-v3-en
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-VL-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/fwizzer1/fwizzer-v3-titan-agentic
 - Liquid AI (desarrollador del backbone LFM2.5): https://www.liquid.ai/

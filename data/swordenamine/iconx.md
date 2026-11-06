@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El repositorio `swordenamine/IconX`, publicado en HuggingFace por el usuario `swordenamine`, no contiene un modelo de inteligencia artificial: no hay pesos, no hay tokenizador, no hay configuración de arquitectura ni pipeline declarado. La model card describe un proyecto de diseño frontend consistente en una librería de iconos SVG animados presentada con la estética de una página de repositorio de GitHub, con iconos que reaccionan al cursor, orbitan partículas y se copian al portapapeles al hacer clic.
+El repositorio `swordenamine/IconX`, publicado en Hugging Face por el usuario `swordenamine`, no contiene un modelo de inteligencia artificial: no hay pesos, no hay tokenizador, no hay configuración de arquitectura ni pipeline declarado. La model card describe un proyecto de diseño frontend consistente en una librería de iconos SVG animados presentada con la estética de una página de repositorio de GitHub, con iconos que reaccionan al cursor, orbitan partículas y se copian al portapapeles al hacer clic.
 
 La descripción técnica disponible se limita a un catálogo de animaciones (heartbeat, breathe, float, spin, wiggle, blink, flicker, bounce, orbit) asignadas a iconos concretos, y a un conjunto de interacciones de interfaz: atracción magnética en hover, copia del SVG al portapapeles, pestañas de categoría (Interface, Media, Arrows, Nature, Tech, Social, Finance), buscador con filtrado en vivo, botón de estrella, gráfico de actividad generado aleatoriamente y superposición de líneas de escaneo con resplandor del cursor.
 
-Por tanto, esta ficha no puede evaluar capacidades de generación de texto, razonamiento o código. Lo relevante para un desarrollador es que el repositorio ocupa el espacio de nombres de modelos de HuggingFace sin serlo, que no declara licencia ni idiomas y que registra cero descargas y cero interacciones, lo que impide cualquier evaluación de calidad, rendimiento o madurez del proyecto.
+Por tanto, esta ficha no puede evaluar capacidades de generación de texto, razonamiento o código. Lo relevante para un desarrollador es que el repositorio ocupa el espacio de nombres de modelos de Hugging Face sin serlo, que no declara licencia ni idiomas y que registra cero descargas y cero interacciones, lo que impide cualquier evaluación de calidad, rendimiento o madurez del proyecto.
 
 ## Especificaciones técnicas
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la información disponible. El r
 
 ## Comparativa con modelos similares
 
-No disponible. No es posible establecer una comparativa con modelos de la misma categoría porque el repositorio no pertenece a ninguna categoría de modelo: carece de pipeline, de arquitectura declarada, de pesos y de licencia. Tampoco se han encontrado en la búsqueda web alternativas comparables dentro de HuggingFace.
+No disponible. No es posible establecer una comparativa con modelos de la misma categoría porque el repositorio no pertenece a ninguna categoría de modelo: carece de pipeline, de arquitectura declarada, de pesos y de licencia. Tampoco se han encontrado en la búsqueda web alternativas comparables dentro de Hugging Face.
 
 | Criterio | IconX | Alternativa comparable |
 |---|---|---|
@@ -71,13 +71,13 @@ No disponible. No es posible establecer una comparativa con modelos de la misma 
 | Parámetros | no disponible | no disponible |
 | Contexto | no disponible | no disponible |
 | Licencia | no declarada | no disponible |
-| Descargas en HuggingFace | 0 | no disponible |
+| Descargas en Hugging Face | 0 | no disponible |
 
 ## Limitaciones y advertencias
 
 - El repositorio no contiene un modelo de IA. Cualquier expectativa de inferencia de texto, código o visión queda defraudada.
 - Ausencia total de licencia: no se puede determinar si el uso comercial, la modificación o la redistribución están permitidos. Es un bloqueante para producción.
-- Ausencia de pipeline, idiomas y metadatos técnicos en HuggingFace, lo que impide clasificar el artefacto automáticamente.
+- Ausencia de pipeline, idiomas y metadatos técnicos en Hugging Face, lo que impide clasificar el artefacto automáticamente.
 - Inconsistencia en las fechas de los metadatos: la fecha de creación (2026-10-17) es posterior a la de última actualización (2026-03-05), lo que sugiere datos erróneos o manipulación del repositorio.
 - Cero descargas y cero likes: no existe evidencia de uso, revisión por terceros ni validación comunitaria.
 - El README está redactado en registro promocional (afirmaciones como "los iconos respiran", "no son cadáveres"), con emojis y tablas de animaciones, en lugar de documentación técnica reproducible: no se indica stack, estructura de ficheros, dependencias ni instrucciones de instalación.
@@ -89,6 +89,6 @@ No disponible. No es posible establecer una comparativa con modelos de la misma 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/swordenamine/IconX
+- Repositorio en Hugging Face: https://huggingface.co/swordenamine/IconX
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.
 - Resultados de búsqueda web: ninguno relevante para este repositorio; las entradas devueltas pertenecen a foros sin relación con el proyecto.

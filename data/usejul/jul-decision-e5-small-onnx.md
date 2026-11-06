@@ -6,7 +6,7 @@ jul-decision-e5-small-onnx es la version ONNX del modelo usejul/jul-decision-e5-
 
 La relevancia de esta ficha es acotada y conviene ser explicito: no es un modelo generativo ni un LLM. Es un clasificador compacto orientado a despliegue en CPU, con 23 ms por decision en un solo nucleo segun el autor, y una puntuacion de 0,613 en los dev sets de jul frente a 0,536 de una variante e5-small int8 de referencia. Eso lo situa en el nicho de clasificacion ligera y local, no en el de generacion, razonamiento o agentes.
 
-El repositorio es muy reciente (creado el 26 de septiembre de 2026 segun los metadatos de HuggingFace), acumula 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card es minima: delega explicitamente los detalles de entrenamiento, resultados y licencia a la model card del modelo base. Por tanto, buena parte de las especificaciones habituales (parametros, contexto, composicion del dataset) no estan publicadas y se marcan como no disponibles.
+El repositorio es muy reciente (creado el 26 de septiembre de 2026 segun los metadatos de Hugging Face), acumula 0 descargas y 0 likes en el momento de redactar esta ficha, y su model card es minima: delega explicitamente los detalles de entrenamiento, resultados y licencia a la model card del modelo base. Por tanto, buena parte de las especificaciones habituales (parametros, contexto, composicion del dataset) no estan publicadas y se marcan como no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -98,7 +98,7 @@ La comparativa queda limitada a los datos publicados por el autor. No se dispone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/usejul/jul-decision-e5-small-onnx
+- Modelo en Hugging Face: https://huggingface.co/usejul/jul-decision-e5-small-onnx
 - Modelo base: https://huggingface.co/usejul/jul-decision-e5-small
 - Repositorio del proyecto jul: https://github.com/usejul/jul
 - Model card del modelo base (referenciada por el autor para resultados, entrenamiento y licencia): https://huggingface.co/usejul/jul-decision-e5-small

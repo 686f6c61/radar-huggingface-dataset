@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un ajuste fino (fine-tuning) del checkpoint `dbmdz/bert-base-turkish-cased` para la tarea de reconocimiento de entidades nombradas (NER) en turco, especializado exclusivamente en la detección de entidades de tipo ORG (organizacion). Lo publica el usuario HasanPekedis en HuggingFace y su nombre codifica los hiperparametros principales del entrenamiento: 4 epocas, batch de 32, longitud maxima de secuencia de 512 y tasa de aprendizaje de 5e-5. Con 106.817.931 parametros, es un modelo de clasificacion de tokens (token classification) que asigna una etiqueta BIO a cada token de entrada.
+Este modelo es un ajuste fino (fine-tuning) del checkpoint `dbmdz/bert-base-turkish-cased` para la tarea de reconocimiento de entidades nombradas (NER) en turco, especializado exclusivamente en la detección de entidades de tipo ORG (organizacion). Lo publica el usuario HasanPekedis en Hugging Face y su nombre codifica los hiperparametros principales del entrenamiento: 4 epocas, batch de 32, longitud maxima de secuencia de 512 y tasa de aprendizaje de 5e-5. Con 106.817.931 parametros, es un modelo de clasificacion de tokens (token classification) que asigna una etiqueta BIO a cada token de entrada.
 
 El problema que resuelve es acotado pero util en el ambito del procesamiento de lenguaje natural en turco: extraer automaticamente nombres de organizaciones (empresas, instituciones publicas, organismos) de texto no estructurado. El modelo no genera texto ni mantiene conversaciones; su salida es una secuencia de etiquetas sobre los tokens de entrada. Esto lo situa en la categoria de modelos encoder clasicos, no en la de modelos generativos.
 
@@ -17,7 +17,7 @@ Es relevante porque el turco es un idioma con menos recursos que el ingles en el
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 512 tokens (indicado en el nombre del modelo como longitud de entrenamiento; no confirmado explicitamente en la model card) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos en safetensors) |
-| Idiomas soportados | Turco (segun la model card; el repositorio de HuggingFace no declara idiomas) |
+| Idiomas soportados | Turco (segun la model card; el repositorio de Hugging Face no declara idiomas) |
 | Licencia | no disponible |
 | Formato de pesos | safetensors |
 
@@ -79,16 +79,16 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 - VRAM estimada para inferencia: aproximadamente 0,43 GB en fp32 (107 M de parametros) y alrededor de 0,21 GB en fp16, sin contar el overhead de activaciones.
 - GPU recomendadas: cualquier GPU moderna con al menos 2 GB de VRAM es suficiente; por ejemplo, GTX 1650, RTX 3050, RTX 4090, A100, H100. La eleccion depende mas del throughput deseado que de la memoria.
 - Cabe sobradamente en GPU de consumo: si, en practicamente cualquier GPU consumer de los ultimos anos e incluso en CPU para cargas moderadas.
-- Opciones de despliegue: HuggingFace Transformers, PyTorch, y servidores de inferencia como TorchServe, ONNX Runtime o FastAPI con transformers. No se documenta soporte especifico para vLLM, llama.cpp u Ollama; estos estan orientados a modelos generativos, por lo que su uso no seria el habitual aqui. Para clasificacion de tokens tampoco aplica TGI en su modo estandar.
+- Opciones de despliegue: Hugging Face Transformers, PyTorch, y servidores de inferencia como TorchServe, ONNX Runtime o FastAPI con transformers. No se documenta soporte especifico para vLLM, llama.cpp u Ollama; estos estan orientados a modelos generativos, por lo que su uso no seria el habitual aqui. Para clasificacion de tokens tampoco aplica TGI en su modo estandar.
 - Latencia y throughput estimados: no disponibles en la informacion proporcionada. En GPU consumer se pueden esperar latencias del orden de milisegundos por lote de secuencias de 512 tokens, pero no hay cifras oficiales.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Tarea | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| HasanPekedis/dbmdz_convbert-base-turkish-cased... | 106,8 M | 512 (segun nombre) | NER ORG | Turco | no disponible | HuggingFace |
-| dbmdz/bert-base-turkish-cased | ~110 M | 512 | Modelo base (MLM) | Turco | no disponible en la informacion | HuggingFace |
-| Alternativas NER en turco | no disponible | no disponible | NER general | Turco | no disponible | HuggingFace |
+| HasanPekedis/dbmdz_convbert-base-turkish-cased... | 106,8 M | 512 (segun nombre) | NER ORG | Turco | no disponible | Hugging Face |
+| dbmdz/bert-base-turkish-cased | ~110 M | 512 | Modelo base (MLM) | Turco | no disponible en la informacion | Hugging Face |
+| Alternativas NER en turco | no disponible | no disponible | NER general | Turco | no disponible | Hugging Face |
 
 El modelo comparable mas directo es su propio checkpoint base, `dbmdz/bert-base-turkish-cased`, que no realiza NER por si mismo y requiere un ajuste fino. No se dispone en la informacion proporcionada de resultados de otros modelos NER en turco para establecer una comparacion cuantitativa fiable, por lo que no se incluyen cifras adicionales.
 
@@ -108,7 +108,7 @@ El modelo comparable mas directo es su propio checkpoint base, `dbmdz/bert-base-
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HasanPekedis/dbmdz_convbert-base-turkish-cased_km_org_non_empty_jsonl_4_32_512_5e-5
+- Modelo en Hugging Face: https://huggingface.co/HasanPekedis/dbmdz_convbert-base-turkish-cased_km_org_non_empty_jsonl_4_32_512_5e-5
 - Modelo base: https://huggingface.co/dbmdz/bert-base-turkish-cased
 - Repositorio de referencia de dbmdz para turco: https://github.com/dbmdz/berts
 - Paper de ConvBERT: no disponible en la informacion proporcionada

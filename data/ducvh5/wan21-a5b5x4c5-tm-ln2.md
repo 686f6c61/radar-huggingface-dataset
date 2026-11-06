@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`ducvh5/wan21-a5b5x4c5-tm-ln2` es un checkpoint derivado del modelo de generacion de video texto-a-video Wan2.1-T2V-1.3B de Alibaba (Wan-AI), publicado en HuggingFace por el usuario `ducvh5`. No se trata de un modelo nuevo entrenado desde cero, sino de una variante experimental del modelo base en la que se ha modificado la estructura de bloques del transformer: segun la model card, la arquitectura pasa de una configuracion "A5" a "B5×4" y finalmente a "C5", con 15 bloques unicos y 30 bloques ejecutados, lo que sugiere algun tipo de reutilizacion o comparticion de bloques (recurrent transformer).
+`ducvh5/wan21-a5b5x4c5-tm-ln2` es un checkpoint derivado del modelo de generacion de video texto-a-video Wan2.1-T2V-1.3B de Alibaba (Wan-AI), publicado en Hugging Face por el usuario `ducvh5`. No se trata de un modelo nuevo entrenado desde cero, sino de una variante experimental del modelo base en la que se ha modificado la estructura de bloques del transformer: segun la model card, la arquitectura pasa de una configuracion "A5" a "B5×4" y finalmente a "C5", con 15 bloques unicos y 30 bloques ejecutados, lo que sugiere algun tipo de reutilizacion o comparticion de bloques (recurrent transformer).
 
 La relevancia de esta publicacion es limitada y fundamentalmente experimental: cuenta con cero descargas y cero likes en el momento de la consulta, no incluye resultados de benchmarks, no especifica licencia ni idiomas soportados, y la propia model card indica que no se ha guardado ningun checkpoint final ("no checkpoint saved"). El repositorio contiene unicamente pesos EMA y no EMA retenidos durante el proceso.
 
@@ -42,7 +42,7 @@ En cuanto al entrenamiento, la model card solo indica que se utiliza una perdida
 - Reproduccion de pipelines de entrenamiento con perdida "TM" y muestreo σ ~ LN(0,1): util para validar recetas de entrenamiento alternativas en modelos de video de ~1.3B.
 - Prototipado de generacion de clips cortos en entornos de laboratorio, siempre que se asuma la ausencia de garantias de calidad y de checkpoint final.
 - Analisis de eficiencia memoria/tiempo: la reduccion de bloques unicos puede interesar a quienes investigan tecnicas de compresion estructural en modelos de difusion.
-- Docencia y formacion: ejemplo practico de publicacion de checkpoints intermedios y de model cards minimas en HuggingFace.
+- Docencia y formacion: ejemplo practico de publicacion de checkpoints intermedios y de model cards minimas en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -60,8 +60,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ducvh5/wan21-a5b5x4c5-tm-ln2 | no disponible (base ~1.3B) | no disponible | sin benchmarks publicados | no disponible | HuggingFace (0 descargas) |
-| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | ~1.3B | no disponible | benchmarks del modelo original no incluidos en la informacion | no disponible en esta ficha | HuggingFace (modelo base oficial) |
+| ducvh5/wan21-a5b5x4c5-tm-ln2 | no disponible (base ~1.3B) | no disponible | sin benchmarks publicados | no disponible | Hugging Face (0 descargas) |
+| Wan-AI/Wan2.1-T2V-1.3B-Diffusers | ~1.3B | no disponible | benchmarks del modelo original no incluidos en la informacion | no disponible en esta ficha | Hugging Face (modelo base oficial) |
 | Otras variantes de Wan2.1 | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparativa se limita al modelo base declarado, ya que no se dispone de datos de rendimiento ni de especificaciones completas de alternativas en la informacion proporcionada.
@@ -79,6 +79,6 @@ La comparativa se limita al modelo base declarado, ya que no se dispone de datos
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-ln2
+- Hugging Face: https://huggingface.co/ducvh5/wan21-a5b5x4c5-tm-ln2
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion proporcionada.

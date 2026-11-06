@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Muiru/Audio8-TTS-Realistic-0.6b
+- Hugging Face: https://huggingface.co/Muiru/Audio8-TTS-Realistic-0.6b
 - Modelo base: https://huggingface.co/Edge0/Audio8-TTS-Preview-0.6b
 - Repositorio GitHub: https://github.com/Edge0-AI/Audio8_TTS
 - Demo: https://edge0-ai.github.io/Audio8_TTS/realistic-0.6b/

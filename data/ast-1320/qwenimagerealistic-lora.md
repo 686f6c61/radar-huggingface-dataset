@@ -72,7 +72,7 @@ No se dispone de datos de rendimiento comparativo entre estos adaptadores.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AST-1320/QwenImageRealistic-LoRA
+- Repositorio Hugging Face: https://huggingface.co/AST-1320/QwenImageRealistic-LoRA
 - Modelo similar (flymy-ai): https://huggingface.co/flymy-ai/qwen-image-realism-lora
 - Herramienta de entrenamiento (replicate): https://github.com/replicate/qwen-image-lora-trainer
 - Aplicación Gradio para LoRAs de Qwen-Image: https://github.com/PRITHIVSAKTHIUR/Qwen-Image-LoRA-DLC/tree/main

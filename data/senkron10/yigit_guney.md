@@ -2,11 +2,11 @@
 
 ## Resumen
 
-SeNKrOn10/Yigit_Guney es un repositorio publicado en HuggingFace por el usuario SeNKrOn10 el 15 de septiembre de 2026 (ultima actualizacion ese mismo dia, 15:27 UTC). El repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia, idiomas soportados ni arquitectura, y acumula 0 descargas y 1 like en el momento de la consulta. El tamano del repositorio es de 0,1 GB, dato que consta en los metadatos de la plataforma pero que no permite determinar por si solo si se trata de un modelo completo, un adaptador (LoRA/QLoRA) o un conjunto de ficheros auxiliares.
+SeNKrOn10/Yigit_Guney es un repositorio publicado en Hugging Face por el usuario SeNKrOn10 el 15 de septiembre de 2026 (ultima actualizacion ese mismo dia, 15:27 UTC). El repositorio no incluye model card, no declara pipeline de inferencia, no especifica licencia, idiomas soportados ni arquitectura, y acumula 0 descargas y 1 like en el momento de la consulta. El tamano del repositorio es de 0,1 GB, dato que consta en los metadatos de la plataforma pero que no permite determinar por si solo si se trata de un modelo completo, un adaptador (LoRA/QLoRA) o un conjunto de ficheros auxiliares.
 
 No se ha encontrado informacion tecnica publica adicional: la busqueda web asociada no devuelve ningun resultado relacionado con este repositorio ni con su autor, solo paginas de un servicio de impresion corporativa ajeno por completo al ambito de la inteligencia artificial. Tampoco hay paper, blog, repositorio de codigo ni demo vinculados.
 
-Por todo ello, esta ficha no puede certificar ninguna capacidad, tamano, contexto ni rendimiento del modelo. Se documenta unicamente lo verificado en los metadatos de HuggingFace y se marcan explicitamente como "no disponible" todos los campos que no pueden confirmarse, con el objetivo de que un desarrollador o investigador sepa que, antes de evaluar este repositorio, debe inspeccionar sus ficheros directamente.
+Por todo ello, esta ficha no puede certificar ninguna capacidad, tamano, contexto ni rendimiento del modelo. Se documenta unicamente lo verificado en los metadatos de Hugging Face y se marcan explicitamente como "no disponible" todos los campos que no pueden confirmarse, con el objetivo de que un desarrollador o investigador sepa que, antes de evaluar este repositorio, debe inspeccionar sus ficheros directamente.
 
 ## Especificaciones tecnicas
 
@@ -18,10 +18,10 @@ Por todo ello, esta ficha no puede certificar ninguna capacidad, tamano, context
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible (no se especifica ninguna en la ficha de HuggingFace) |
+| Licencia | no disponible (no se especifica ninguna en la ficha de Hugging Face) |
 | Formato de pesos | no disponible |
 | Tamano del repositorio | 0,1 GB |
-| Pipeline declarado | no disponible (sin tag de pipeline en HuggingFace) |
+| Pipeline declarado | no disponible (sin tag de pipeline en Hugging Face) |
 | Fecha de creacion | 2026-09-15 |
 | Ultima actualizacion | 2026-09-15 |
 | Descargas / likes | 0 descargas / 1 like |
@@ -82,6 +82,6 @@ No disponible. Al no conocerse la categoria, el tamano ni la tarea del modelo, n
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SeNKrOn10/Yigit_Guney
+- Repositorio en Hugging Face: https://huggingface.co/SeNKrOn10/Yigit_Guney
 - Paper, blog, repositorio de codigo o demo: no disponible.
 - Resultados de la busqueda web: sin coincidencias relevantes. Los unicos enlaces devueltos (de.workplacepure.com, workplacepure.com) corresponden a un servicio de impresion y traduccion de documentos sin relacion con este modelo ni con inteligencia artificial.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`annanovikov/clip-baseline` es un prototipo de investigación de tipo CLIP (contrastive language-image pretraining) publicado por el usuario annanovikov en HuggingFace. Se presenta explícitamente como un esqueleto de implementación orientado a experimentos de aprendizaje contrastivo, no como un modelo entrenado: el checkpoint `model.safetensors` se describe como una inicialización válida para pruebas de humo (smoke tests) y el autor declara que no se reclama ninguna métrica de benchmark.
+`annanovikov/clip-baseline` es un prototipo de investigación de tipo CLIP (contrastive language-image pretraining) publicado por el usuario annanovikov en Hugging Face. Se presenta explícitamente como un esqueleto de implementación orientado a experimentos de aprendizaje contrastivo, no como un modelo entrenado: el checkpoint `model.safetensors` se describe como una inicialización válida para pruebas de humo (smoke tests) y el autor declara que no se reclama ninguna métrica de benchmark.
 
 El repositorio incluye `main.py` con la implementación y un punto de entrada ejecutable, `config.json` con los ajustes de arquitectura generados y `training_args.json` con la receta de experimento por defecto (optimizador LAMB con schedule de warmup lineal). La configuración etiqueta la escala como "xlarge", pero el checkpoint real en safetensors contiene 49.600 parámetros, una cifra muy alejada de lo que sugiere esa etiqueta; conviene tratar "xlarge" como un preset de configuración de la plantilla, no como el tamaño del artefacto publicado.
 
@@ -46,7 +46,7 @@ No se especifica el volumen de datos de entrenamiento, la composición del datas
 - Base para comparativas de arquitectura: al fijar atención dispersa, fusión de bajo rango, swish y RMSNorm, sirve como configuración de referencia frente a variantes densas o con otras activaciones.
 - Docencia y formación técnica: un esqueleto pequeño (49,6 k parámetros) es manejable para explicar la estructura de un modelo CLIP sin requerir hardware significativo.
 - Integración en tests de CI: el tamaño reducido del checkpoint permite verificar en integración continua que el código de carga, el parseo de `config.json` y la inicialización funcionan sin errores.
-- Validación de adaptadores de carga personalizados: dado que es una implementación propia, permite probar el adaptador explícito necesario para integrarla con APIs genéricas de HuggingFace.
+- Validación de adaptadores de carga personalizados: dado que es una implementación propia, permite probar el adaptador explícito necesario para integrarla con APIs genéricas de Hugging Face.
 - Reproducción de recetas de optimización: el `training_args.json` con LAMB y warmup lineal sirve para experimentar con schedules sobre una base mínima.
 
 ## Benchmarks y rendimiento
@@ -70,7 +70,7 @@ La comparación numérica no es significativa: este repositorio es un esqueleto 
 | annanovikov/clip-baseline | 49.600 | no disponible | BSD-3-Clause | Prototipo sin entrenar |
 | openai/clip-vit-base-patch32 | ≈150 M (verificar) | no disponible | MIT (verificar) | Entrenado y publicado |
 | google/siglip-base-patch16-224 | ≈200 M (verificar) | no disponible | Apache-2.0 (verificar) | Entrenado y publicado |
-| Modelos CLIP de terceros en HuggingFace | Variable | no disponible | Variable | Entrenados, uso variable |
+| Modelos CLIP de terceros en Hugging Face | Variable | no disponible | Variable | Entrenados, uso variable |
 
 Frente a estas alternativas, `clip-baseline` no ofrece capacidades de inferencia comparables; su interés es exclusivamente como código de referencia y configuración experimental.
 
@@ -88,5 +88,5 @@ Frente a estas alternativas, `clip-baseline` no ofrece capacidades de inferencia
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/annanovikov/clip-baseline
+- Repositorio en Hugging Face: https://huggingface.co/annanovikov/clip-baseline
 - No se han encontrado en la búsqueda web papers, blogs, repositorios adicionales ni demos asociados a este modelo.

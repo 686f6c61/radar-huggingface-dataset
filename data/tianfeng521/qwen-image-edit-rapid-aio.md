@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Base | Características | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| tianfeng521/Qwen-Image-Edit-Rapid-AIO | Qwen-Image-Edit-2511 | Merge con aceleradores, FP8, ComfyUI | Apache 2.0 | HuggingFace |
-| Phr00t/Qwen-Image-Edit-Rapid-AIO | Qwen-Image-Edit-2511 | Original del proyecto, mismas características | Apache 2.0 | HuggingFace |
-| eddy1111111/Qwen-Image-Edit | Qwen-Image-Edit-2511 | Mejora del Rapid-AIO con optimizaciones propias | Apache 2.0 | HuggingFace |
-| Qwen/Qwen-Image-Edit-2511 | - | Modelo base sin acelerar | Apache 2.0 | HuggingFace |
+| tianfeng521/Qwen-Image-Edit-Rapid-AIO | Qwen-Image-Edit-2511 | Merge con aceleradores, FP8, ComfyUI | Apache 2.0 | Hugging Face |
+| Phr00t/Qwen-Image-Edit-Rapid-AIO | Qwen-Image-Edit-2511 | Original del proyecto, mismas características | Apache 2.0 | Hugging Face |
+| eddy1111111/Qwen-Image-Edit | Qwen-Image-Edit-2511 | Mejora del Rapid-AIO con optimizaciones propias | Apache 2.0 | Hugging Face |
+| Qwen/Qwen-Image-Edit-2511 | - | Modelo base sin acelerar | Apache 2.0 | Hugging Face |
 
 La diferencia principal entre el repo de tianfeng521 y el de Phr00t no está documentada; es probable que sea una copia o una variante con ajustes menores. El modelo de eddy1111111 declara ser una mejora sobre el trabajo de Phr00t.
 

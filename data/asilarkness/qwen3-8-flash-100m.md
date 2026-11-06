@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `Asilarkness/qwen3.8-flash-100m` es un checkpoint publicado en HuggingFace por el usuario Asilarkness, con licencia Apache 2.0. La información disponible en la plataforma no incluye descripción técnica, carta del modelo ni documentación sobre arquitectura, capacidades o rendimiento. El repositorio ocupa 16,7 GB y fue creado el 9 de septiembre de 2026.
+El modelo `Asilarkness/qwen3.8-flash-100m` es un checkpoint publicado en Hugging Face por el usuario Asilarkness, con licencia Apache 2.0. La información disponible en la plataforma no incluye descripción técnica, carta del modelo ni documentación sobre arquitectura, capacidades o rendimiento. El repositorio ocupa 16,7 GB y fue creado el 9 de septiembre de 2026.
 
 A pesar de que el identificador sugiere una posible relación con la familia Qwen y un tamaño de 100 millones de parámetros, no se puede confirmar esa interpretación con los datos disponibles. Tampoco se han registrado descargas ni interacciones que aporten contexto adicional. El modelo carece de información pública suficiente para realizar una evaluación técnica rigurosa.
 
@@ -21,7 +21,7 @@ A pesar de que el identificador sugiere una posible relación con la familia Qwe
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado información sobre la arquitectura del modelo, la composición del dataset de entrenamiento, el número de tokens utilizados ni las técnicas de alineación empleadas. La model card del repositorio no contiene ninguna descripción técnica, y los metadatos de HuggingFace no aportan detalles adicionales.
+No se ha publicado información sobre la arquitectura del modelo, la composición del dataset de entrenamiento, el número de tokens utilizados ni las técnicas de alineación empleadas. La model card del repositorio no contiene ninguna descripción técnica, y los metadatos de Hugging Face no aportan detalles adicionales.
 
 ## Capacidades
 
@@ -29,7 +29,7 @@ No se ha publicado información sobre la arquitectura del modelo, la composició
 
 ## Casos de uso
 
-No se pueden enumerar casos de uso concretos, ya que no existe información pública sobre las capacidades del modelo. Recomendamos consultar el repositorio de HuggingFace para verificar si el autor ha actualizado la documentación; actualmente no hay datos suficientes para proponer aplicaciones realistas.
+No se pueden enumerar casos de uso concretos, ya que no existe información pública sobre las capacidades del modelo. Recomendamos consultar el repositorio de Hugging Face para verificar si el autor ha actualizado la documentación; actualmente no hay datos suficientes para proponer aplicaciones realistas.
 
 ## Benchmarks y rendimiento
 
@@ -58,6 +58,6 @@ No se dispone de información técnica suficiente para realizar una comparativa 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Asilarkness/qwen3.8-flash-100m
+- Repositorio en Hugging Face: https://huggingface.co/Asilarkness/qwen3.8-flash-100m
 
 Los resultados de búsqueda web proporcionados corresponden a estadísticas de la Premier League 2025/2026 y no guardan relación con el modelo, por lo que no se incluyen como enlaces relevantes.

@@ -84,7 +84,7 @@ No se proporcionan comparaciones directas con otros predictores de MHC-II en la 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/zmactep/MHC-PLM
+- Repositorio Hugging Face: https://huggingface.co/zmactep/MHC-PLM
 - Repositorio GitHub (codigo de inferencia): https://github.com/zmactep/MHC-PLM
 - Licencia de pesos: https://huggingface.co/zmactep/MHC-PLM/blob/main/LICENSE_WEIGHTS.md
 - Perfil del autor en GitHub: https://github.com/zmactep

@@ -65,9 +65,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SynthCode-Project/OLMo2-7B-all-milestones | 7B | 8192 (entrenamiento) | Edicion de codigo (ablaciones) | no disponible | HuggingFace, 66 subcarpetas |
-| allenai/OLMo-2-1124-7B | 7B | no disponible en esta ficha | Base general | licencia abierta de OLMo (consultar) | HuggingFace |
-| Modelos de codigo de ~7B de la familia Qwen o DeepSeek | ~7B | no disponible en esta ficha | Codigo | variable | HuggingFace |
+| SynthCode-Project/OLMo2-7B-all-milestones | 7B | 8192 (entrenamiento) | Edicion de codigo (ablaciones) | no disponible | Hugging Face, 66 subcarpetas |
+| allenai/OLMo-2-1124-7B | 7B | no disponible en esta ficha | Base general | licencia abierta de OLMo (consultar) | Hugging Face |
+| Modelos de codigo de ~7B de la familia Qwen o DeepSeek | ~7B | no disponible en esta ficha | Codigo | variable | Hugging Face |
 
 La comparacion cuantitativa de rendimiento no esta disponible porque el autor no publica evaluaciones.
 
@@ -84,7 +84,7 @@ La comparacion cuantitativa de rendimiento no esta disponible porque el autor no
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SynthCode-Project/OLMo2-7B-all-milestones
+- Hugging Face: https://huggingface.co/SynthCode-Project/OLMo2-7B-all-milestones
 - Modelo base: https://huggingface.co/allenai/OLMo-2-1124-7B
 - LLaMA-Factory (framework de entrenamiento citado): https://github.com/hiyouga/LLaMA-Factory
 - Paper de OLMo 2: no disponible en la informacion proporcionada

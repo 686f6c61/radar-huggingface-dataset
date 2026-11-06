@@ -78,8 +78,8 @@ No se dispone de datos comparativos directos en la información publicada. Sin e
 
 ## Enlaces
 
-- [HuggingFace - Kimi-Linear-48B-A3B-Instruct](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct)
-- [HuggingFace - Kimi-Linear-48B-A3B-Base](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Base)
+- [Hugging Face - Kimi-Linear-48B-A3B-Instruct](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Instruct)
+- [Hugging Face - Kimi-Linear-48B-A3B-Base](https://huggingface.co/moonshotai/Kimi-Linear-48B-A3B-Base)
 - [GitHub - MoonshotAI/Kimi-Linear](https://github.com/MoonshotAI/Kimi-Linear)
 - [Paper en ArXiv (2510.26692)](https://huggingface.co/papers/2510.26692)
 - [Paper Gated DeltaNet (2412.06464)](https://arxiv.org/abs/2412.06464)

@@ -85,7 +85,7 @@ No se dispone de datos de benchmarks o especificaciones de otros modelos directa
 
 ## Enlaces
 
-- [Repositorio HuggingFace del modelo](https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid)
+- [Repositorio Hugging Face del modelo](https://huggingface.co/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid)
 - [GitHub - Reproducible Docker image y benchmarks](https://github.com/brandonmmusic-max/glm52-tr3-hybrid)
 - [Página del modelo en FriendliAI](https://friendli.ai/models/brandonmusic/GLM-5.2-NVFP4-TR3-Hybrid)
 - [Ficha en LLM Explorer](https://llm-explorer.com/model/brandonmusic%2FGLM-5.2-NVFP4-TR3-Hybrid,3U5fS4paDTNaGsIqcJylrL)

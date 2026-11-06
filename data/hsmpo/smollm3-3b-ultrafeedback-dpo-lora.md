@@ -43,7 +43,7 @@ No se documenta ninguna innovación técnica adicional, ni datos sobre el volume
 - Evaluación comparativa de DPO: útil para estudiar el efecto de un ajuste DPO sobre UltraFeedback frente al checkpoint base de SmolLM3-3B en tareas de seguimiento de instrucciones, siempre que se construya un conjunto de evaluación propio ante la ausencia de benchmarks publicados.
 - Generación de texto en local: al ser un adaptador de ~0,1 GB sobre un modelo de 3B, puede desplegarse en estaciones de trabajo con GPU de consumo, aunque la calidad final depende enteramente del modelo base y de la fusión correcta del adaptador.
 - Investigación sobre alineamiento: permite reproducir o extender experimentos de DPO con PEFT y TRL, sirviendo como punto de partida para ablaciones sobre datasets de preferencias.
-- Fine-tuning educativo: adecuado como ejemplo práctico de cómo se publica un adaptador LoRA con DPO en HuggingFace, útil en cursos o talleres sobre ajuste fino eficiente.
+- Fine-tuning educativo: adecuado como ejemplo práctico de cómo se publica un adaptador LoRA con DPO en Hugging Face, útil en cursos o talleres sobre ajuste fino eficiente.
 - Base para ajustes posteriores: el adaptador puede fusionarse con SmolLM3-3B y servir como punto de partida para un nuevo ciclo de fine-tuning específico de dominio, aunque sin garantías de mejora respecto al modelo original.
 
 ## Benchmarks y rendimiento
@@ -82,7 +82,7 @@ La comparación cuantitativa con alternativas no es posible porque no se han pub
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/hsmpo/SmolLM3-3B-UltraFeedback-DPO-LoRA
+- Repositorio Hugging Face: https://huggingface.co/hsmpo/SmolLM3-3B-UltraFeedback-DPO-LoRA
 - Modelo base: https://huggingface.co/HuggingFaceTB/SmolLM3-3B
 - Paper de referencia sobre impacto ambiental citado en la model card (Lacoste et al., 2019): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ML: https://mlco2.github.io/impact

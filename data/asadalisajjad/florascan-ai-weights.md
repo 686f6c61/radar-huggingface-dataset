@@ -2,7 +2,7 @@
 
 ## Resumen
 
-FloraScan-AI-Weights es un repositorio de pesos publicado en HuggingFace por el usuario asadalisajjad bajo licencia MIT. Por el nombre y el tamano del repositorio (0,3 GB), todo apunta a un modelo orientado a la clasificacion o deteccion de flora a partir de imagenes, aunque la model card no contiene ninguna descripcion funcional, arquitectura, dataset ni instrucciones de uso. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluacion.
+FloraScan-AI-Weights es un repositorio de pesos publicado en Hugging Face por el usuario asadalisajjad bajo licencia MIT. Por el nombre y el tamano del repositorio (0,3 GB), todo apunta a un modelo orientado a la clasificacion o deteccion de flora a partir de imagenes, aunque la model card no contiene ninguna descripcion funcional, arquitectura, dataset ni instrucciones de uso. El repositorio no incluye pipeline declarado, idiomas soportados ni resultados de evaluacion.
 
 La informacion disponible es minima: unicamente la licencia, la region de publicacion y el tamano del artefacto. No se especifica la arquitectura, el numero de parametros, la longitud de contexto ni los formatos de pesos. Esto limita cualquier evaluacion tecnica rigurosa y obliga a tratar el modelo como un artefacto experimental sin garantias de reproducibilidad.
 
@@ -42,7 +42,7 @@ Tampoco hay datos sobre el volumen de tokens de entrenamiento, la resolucion de 
 - Prototipado experimental de clasificacion de flora: el nombre del repositorio sugiere un uso orientado a identificar especies vegetales, pero sin model card no se puede garantizar la precision ni el dominio de aplicacion.
 - Pruebas de integracion en pipelines de vision: al ser un artefacto de 0,3 GB, podria cargarse en entornos de laboratorio para validar el flujo de inferencia, aunque se desconoce el framework requerido.
 - Investigacion academica sobre modelos pequenos: utilizable como objeto de estudio comparativo, siempre que se documente la ausencia de metricas oficiales.
-- Educacion y demos: puede servir como ejemplo de publicacion de pesos en HuggingFace, aunque carece de documentacion didactica.
+- Educacion y demos: puede servir como ejemplo de publicacion de pesos en Hugging Face, aunque carece de documentacion didactica.
 - Evaluacion interna de licencias: al ser MIT, permite analizar el proceso de compliance en organizaciones que adoptan artefactos de terceros.
 - No se recomienda su uso en produccion, atencion al cliente, generacion de codigo ni tareas de razonamiento, dado que no hay evidencia de que el modelo las soporte.
 
@@ -75,5 +75,5 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/asadalisajjad/FloraScan-AI-Weights
+- Hugging Face: https://huggingface.co/asadalisajjad/FloraScan-AI-Weights
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la informacion disponible.

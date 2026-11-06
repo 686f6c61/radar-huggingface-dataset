@@ -97,7 +97,7 @@ No es posible comparar rendimiento porque el modelo no publica ninguna metrica d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_25
+- Modelo en Hugging Face: https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_25
 - Modelo base: https://huggingface.co/google/gemma-2-2b
 - Checkpoints de origen citados en la model card: `MergeBench/gemma-2-2b_instruction`, `MergeBench/gemma-2-2b_math`, `MergeBench/gemma-2-2b_coding` (referencias textuales de la model card; no se proporcionaron URL directas)
 - Paper, blog, repositorio o demo del algoritmo `wudi_merge`: no disponible en la informacion proporcionada

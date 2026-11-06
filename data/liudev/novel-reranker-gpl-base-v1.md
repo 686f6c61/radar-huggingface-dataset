@@ -2,7 +2,7 @@
 
 ## Resumen
 
-novel-reranker-gpl-base-v1 es un cross-encoder de reordenación (reranker) desarrollado por el usuario liudev y publicado en HuggingFace. Se trata de un fine-tuning del modelo base hfl/chinese-roberta-wwm-ext, un transformer BERT en chino, adaptado específicamente para la tarea de text-ranking: asignar una puntuación de relevancia a pares (consulta, documento) con el objetivo de reordenar resultados de búsqueda semántica.
+novel-reranker-gpl-base-v1 es un cross-encoder de reordenación (reranker) desarrollado por el usuario liudev y publicado en Hugging Face. Se trata de un fine-tuning del modelo base hfl/chinese-roberta-wwm-ext, un transformer BERT en chino, adaptado específicamente para la tarea de text-ranking: asignar una puntuación de relevancia a pares (consulta, documento) con el objetivo de reordenar resultados de búsqueda semántica.
 
 El modelo resuelve el problema del reranking en pipelines de recuperación de información, particularmente en el dominio de novelas web chinas, a juzgar por los ejemplos de la model card. Con 102.268.417 parámetros y una longitud máxima de secuencia de 512 tokens, se posiciona como una alternativa ligera y especializada frente a rerankers multilingües de mayor tamaño.
 
@@ -37,7 +37,7 @@ El entrenamiento se realizó con la librería sentence-transformers sobre un con
 - Reordenación de listas de documentos candidatos devueltos por un recuperador previo (reranking en dos etapas).
 - Búsqueda semántica sobre corpus textuales, especialmente novelas web en chino según los ejemplos de la model card.
 - Integración con la API `CrossEncoder.predict` y `CrossEncoder.rank` de sentence-transformers.
-- Compatible con text-embeddings-inference y endpoints de HuggingFace según las etiquetas del repositorio.
+- Compatible con text-embeddings-inference y endpoints de Hugging Face según las etiquetas del repositorio.
 - No soporta tool calling, agentes, visión, audio ni modos de razonamiento extendido: es un modelo discriminativo de ranking, no generativo.
 - Capacidad multilingüe no documentada; el modelo base está entrenado principalmente en chino.
 
@@ -60,7 +60,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 - VRAM estimada para inferencia en fp32: aproximadamente 0,4 GB para los pesos (102 M de parámetros); en fp16 alrededor de 0,2 GB. El consumo real depende del tamaño de lote y de la longitud de secuencia.
 - Cabe holgadamente en cualquier GPU consumer: RTX 3060, RTX 4060, RTX 4090, así como en CPU para volúmenes moderados.
 - GPU recomendadas para alto throughput: A100, H100 o L4 para servir lotes grandes con baja latencia.
-- Opciones de despliegue: sentence-transformers (nativo), HuggingFace Text Embeddings Inference (TEI), endpoints de HuggingFace; también es posible exportarlo a ONNX para inferencia optimizada.
+- Opciones de despliegue: sentence-transformers (nativo), Hugging Face Text Embeddings Inference (TEI), endpoints de Hugging Face; también es posible exportarlo a ONNX para inferencia optimizada.
 - Latencia y throughput estimados: no disponibles en la información proporcionada. Al ser un cross-encoder de 102 M de parámetros con secuencias de hasta 512 tokens, el coste por par es bajo, pero el throughput depende linealmente del número de pares a puntuar.
 
 ## Comparativa con modelos similares
@@ -86,11 +86,11 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/liudev/novel-reranker-gpl-base-v1
+- Modelo en Hugging Face: https://huggingface.co/liudev/novel-reranker-gpl-base-v1
 - Modelo base: https://huggingface.co/hfl/chinese-roberta-wwm-ext
 - Documentación de Sentence Transformers: https://sbert.net
 - Documentación de Cross Encoder: https://www.sbert.net/docs/cross_encoder/usage/usage.html
 - Repositorio de Sentence Transformers: https://github.com/huggingface/sentence-transformers
-- Cross Encoders en HuggingFace: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
+- Cross Encoders en Hugging Face: https://huggingface.co/models?library=sentence-transformers&other=cross-encoder
 - Paper de referencia (Sentence-BERT): https://arxiv.org/abs/1908.10084
 - Paper de referencia (MarginMSE): https://arxiv.org/abs/2010.02666

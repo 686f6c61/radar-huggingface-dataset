@@ -25,7 +25,7 @@ El repositorio contiene únicamente los pesos en formato `safetensors` (13,7 GB)
 
 El modelo se construyó fusionando cinco checkpoints de un modelo base llamado `unfiltered_e2e_misalignment`, correspondientes a los pasos de entrenamiento global_step5000, global_step6000, global_step7000, global_step8000 y global_step9000. La fusión se realizó con el método Linear de `mergekit`, que calcula un promedio ponderado de los pesos de cada checkpoint, con peso 1.0 para todos ellos. El checkpoint global_step9000 se utilizó como modelo base. La configuración especifica `normalize: true`, `dtype: float32` para el cálculo y `out_dtype: bfloat16` para los pesos finales.
 
-No se dispone de información sobre el conjunto de datos de entrenamiento, el número total de tokens, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifica la arquitectura exacta del modelo original (número de capas, heads, etc.). La única pista es la etiqueta `gpt_neox`, que indica compatibilidad con la implementación GPT-NeoX de HuggingFace.
+No se dispone de información sobre el conjunto de datos de entrenamiento, el número total de tokens, ni si se aplicaron técnicas como RLHF o DPO. Tampoco se especifica la arquitectura exacta del modelo original (número de capas, heads, etc.). La única pista es la etiqueta `gpt_neox`, que indica compatibilidad con la implementación GPT-NeoX de Hugging Face.
 
 ## Capacidades
 

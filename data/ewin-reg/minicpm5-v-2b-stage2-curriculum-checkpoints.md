@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `ewin-reg/MiniCPM5-V-2B-Stage2-Curriculum-Checkpoints` es un adaptador LoRA (PEFT) desarrollado sobre el modelo base `openbmb/MiniCPM5-2B`, creado por el usuario `ewin-reg` y publicado en HuggingFace el 8 de septiembre de 2026. Se trata de un checkpoint intermedio del proceso de entrenamiento en dos etapas (Stage 2) con estrategia de currículo, orientado a la generación de texto.
+El modelo `ewin-reg/MiniCPM5-V-2B-Stage2-Curriculum-Checkpoints` es un adaptador LoRA (PEFT) desarrollado sobre el modelo base `openbmb/MiniCPM5-2B`, creado por el usuario `ewin-reg` y publicado en Hugging Face el 8 de septiembre de 2026. Se trata de un checkpoint intermedio del proceso de entrenamiento en dos etapas (Stage 2) con estrategia de currículo, orientado a la generación de texto.
 
 El modelo base, MiniCPM5-2B, pertenece a la familia MiniCPM de OpenBMB, descrita en su repositorio de GitHub como "SOTA on-device LLMs, small yet powerful", es decir, modelos de lenguaje de pequeño tamaño optimizados para ejecución en dispositivos locales. Este adaptador hereda esa filosofía, permitiendo ajustar un modelo de 2.000 millones de parámetros con técnicas de bajo rango (LoRA) para reducir costes de entrenamiento e inferencia.
 
-La relevancia de este checkpoint radica en su uso como pieza de investigación en adaptación eficiente de modelos pequeños, aunque la información pública disponible es muy limitada: no se especifican licencias, idiomas, benchmarks ni detalles de arquitectura más allá del nombre y las etiquetas de HuggingFace.
+La relevancia de este checkpoint radica en su uso como pieza de investigación en adaptación eficiente de modelos pequeños, aunque la información pública disponible es muy limitada: no se especifican licencias, idiomas, benchmarks ni detalles de arquitectura más allá del nombre y las etiquetas de Hugging Face.
 
 ## Especificaciones técnicas
 
@@ -23,7 +23,7 @@ La relevancia de este checkpoint radica en su uso como pieza de investigación e
 
 ## Arquitectura y entrenamiento
 
-El modelo se publica como un adaptador de tipo PEFT/LoRA, según las etiquetas de HuggingFace (`peft`, `lora`). Esto significa que no es un modelo completo sino un conjunto de pesos de bajo rango que se añaden al modelo base `openbmb/MiniCPM5-2B` para adaptarlo a una tarea o dominio específico. El nombre del checkpoint ("Stage2-Curriculum") indica que forma parte de un proceso de entrenamiento por etapas con currículo, una técnica en la que la dificultad de los datos se incrementa progresivamente durante el entrenamiento.
+El modelo se publica como un adaptador de tipo PEFT/LoRA, según las etiquetas de Hugging Face (`peft`, `lora`). Esto significa que no es un modelo completo sino un conjunto de pesos de bajo rango que se añaden al modelo base `openbmb/MiniCPM5-2B` para adaptarlo a una tarea o dominio específico. El nombre del checkpoint ("Stage2-Curriculum") indica que forma parte de un proceso de entrenamiento por etapas con currículo, una técnica en la que la dificultad de los datos se incrementa progresivamente durante el entrenamiento.
 
 No se proporciona información sobre la composición del dataset, el número de tokens de entrenamiento, ni si se aplicaron técnicas de alineación como RLHF o DPO. Tampoco se detalla si el modelo final incluye innovaciones arquitectónicas adicionales más allá del LoRA. El pipeline declarado es `text-generation`, por lo que su función principal es la generación de texto autoregresivo.
 
@@ -71,6 +71,6 @@ No se han identificado modelos comparables en la información disponible. El ada
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ewin-reg/MiniCPM5-V-2B-Stage2-Curriculum-Checkpoints
+- Hugging Face: https://huggingface.co/ewin-reg/MiniCPM5-V-2B-Stage2-Curriculum-Checkpoints
 - Repositorio de OpenBMB/MiniCPM: https://github.com/OpenBMB/MiniCPM
 - Releases de OpenBMB/MiniCPM-V-Apps: https://github.com/OpenBMB/MiniCPM-V-Apps/releases

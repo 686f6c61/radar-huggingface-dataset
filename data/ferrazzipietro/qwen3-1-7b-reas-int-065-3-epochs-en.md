@@ -71,5 +71,5 @@ No se dispone de datos comparativos específicos para este fine-tuning. Como ref
 
 ## Enlaces
 
-- [HuggingFace - ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-en](https://huggingface.co/ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-en)
+- [Hugging Face - ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-en](https://huggingface.co/ferrazzipietro/Qwen3-1.7B-reas-int-065-3-epochs-en)
 - [Qwen3 Technical Report (arXiv)](https://arxiv.org/html/2505.09388v1)

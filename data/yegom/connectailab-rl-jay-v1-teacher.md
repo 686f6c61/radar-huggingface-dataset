@@ -75,7 +75,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| connectailab-rl-jay-v1-teacher | no disponible | no disponible | Beneficio 11,22 M KRW/mes; satisfacción 95% | Apache 2.0 | HuggingFace |
+| connectailab-rl-jay-v1-teacher | no disponible | no disponible | Beneficio 11,22 M KRW/mes; satisfacción 95% | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -91,7 +91,7 @@ No se dispone de información sobre modelos comparables de la misma categoría (
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/yegom/connectailab-rl-jay-v1-teacher
+- Hugging Face: https://huggingface.co/yegom/connectailab-rl-jay-v1-teacher
 - Repositorio CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Formato JEV: `typesafe/jev-1.13`
 - YouTube CONNECT AI LAB: https://www.youtube.com/@CONNECT-AI-LAB

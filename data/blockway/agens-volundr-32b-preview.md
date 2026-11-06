@@ -113,6 +113,6 @@ Salvedades: las cifras de Qwen3.8-27B y Agens Pilot proceden de ejecuciones de B
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Blockway/Agens-Volundr-32B-Preview
+- Modelo en Hugging Face: https://huggingface.co/Blockway/Agens-Volundr-32B-Preview
 - Imagen de despliegue del build de sglang del autor: `ghcr.io/blockwayz/agens-sglang:preview-sm89`
 - La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo: los enlaces recuperados corresponden a articulos gramaticales en ingles sobre el uso de "what happen" frente a "what happened" y no guardan relacion con Agens Volundr. No se han encontrado articulos, papers, repositorios ni demos adicionales en la informacion disponible.

@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`jyreyes1997/matching` es un repositorio de HuggingFace publicado por el usuario jyreyes1997 que contiene una implementación personalizada y compacta en PyTorch de una arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento). No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala. La configuración declarada es de escala "giant", con atención lineal, fusión tipo Tucker, activación GELU-tanh y normalización RMSNorm.
+`jyreyes1997/matching` es un repositorio de Hugging Face publicado por el usuario jyreyes1997 que contiene una implementación personalizada y compacta en PyTorch de una arquitectura EfficientFormer orientada a tareas de *matching* (emparejamiento). No se trata de un modelo preentrenado ni de una release lista para producción: el propio autor lo describe como un punto de partida experimental para revisión de código, pruebas de humo (*smoke tests*) y experimentos controlados de pequeña escala. La configuración declarada es de escala "giant", con atención lineal, fusión tipo Tucker, activación GELU-tanh y normalización RMSNorm.
 
 El dato más relevante para evaluar el repositorio es su tamaño real: el checkpoint en safetensors contiene 33.088 parámetros totales, una cifra extremadamente reducida que confirma que se trata de un esqueleto de inicialización y no de un modelo con capacidad funcional real. El repositorio ocupa 0,0 GB y no registra descargas ni interacciones en el momento de la consulta.
 
-Su interés, por tanto, es fundamentalmente documental y didáctico: muestra cómo se estructura un proyecto de modelo (script ejecutable, `config.json`, `training_args.json` y checkpoint) en el ecosistema HuggingFace. No debe confundirse con los EfficientFormer publicados por Snap Research, que son modelos de visión con decenas de millones de parámetros y resultados de referencia en ImageNet.
+Su interés, por tanto, es fundamentalmente documental y didáctico: muestra cómo se estructura un proyecto de modelo (script ejecutable, `config.json`, `training_args.json` y checkpoint) en el ecosistema Hugging Face. No debe confundirse con los EfficientFormer publicados por Snap Research, que son modelos de visión con decenas de millones de parámetros y resultados de referencia en ImageNet.
 
 ## Especificaciones tecnicas
 
@@ -56,7 +56,7 @@ No hay evidencia de entrenamiento: el autor afirma explícitamente que `model.sa
 - Revisión de código de arquitecturas EfficientFormer: el script `run.py` sirve como referencia ejecutable para estudiar cómo se implementan atención lineal, fusión Tucker y RMSNorm en PyTorch, sin necesidad de descargar pesos preentrenados.
 - Pruebas de humo en pipelines de CI: al ser un checkpoint de 33.088 parámetros y un repo de 0,0 GB, se puede cargar en cualquier entorno para verificar que el flujo de descarga, carga de safetensors y ejecución del script funciona antes de integrar modelos reales.
 - Plantilla para experimentos controlados de *matching*: el autor propone evaluar con un conjunto de validación emparejado, al menos tres semillas y una línea base de capacidad comparable; el repositorio aporta la estructura de configuración y receta de entrenamiento para montar ese experimento.
-- Docencia y formación en publicación de modelos: ejemplifica la estructura mínima de un repositorio HuggingFace (model card, `config.json`, `training_args.json`, checkpoint y script), útil para enseñar buenas prácticas de documentación.
+- Docencia y formación en publicación de modelos: ejemplifica la estructura mínima de un repositorio Hugging Face (model card, `config.json`, `training_args.json`, checkpoint y script), útil para enseñar buenas prácticas de documentación.
 - Base para adaptadores personalizados: la model card indica que las APIs genéricas de carga automática requieren un adaptador explícito, por lo que el repositorio puede usarse como ejercicio para escribir dicho adaptador.
 - Comparación de recetas de optimización: permite probar NovoGrad con scheduler polinómico frente a otras combinaciones en un entorno de juguete, sin coste computacional apreciable.
 
@@ -76,7 +76,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El au
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| jyreyes1997/matching | 33.088 | no disponible | matching (sin especificar) | MIT | HuggingFace, 0 descargas |
+| jyreyes1997/matching | 33.088 | no disponible | matching (sin especificar) | MIT | Hugging Face, 0 descargas |
 | EfficientFormer (Snap Research, original) | ~12M (L1) a ~82M (L7) | no aplica (visión) | clasificación de imágenes | ver licencia original | pesos y paper públicos |
 | EfficientFormerV2 (Snap Research) | ~4M a ~125M | no aplica (visión) | clasificación de imágenes | ver licencia original | pesos y paper públicos |
 
@@ -88,14 +88,14 @@ La comparación con los EfficientFormer originales es solo arquitectónica: aque
 - El autor no ha auditado robustez, equidad ni transferencia de dominio.
 - No hay datos sobre sesgos, alucinación o comportamiento en producción porque no hay modelo funcional.
 - No se especifica el tipo de *matching* (texto, imagen, entidades, retrieval), lo que impide evaluar su idoneidad para una tarea concreta.
-- Compatibilidad limitada con APIs automáticas de HuggingFace: requiere adaptador explícito.
+- Compatibilidad limitada con APIs automáticas de Hugging Face: requiere adaptador explícito.
 - La licencia MIT permite uso comercial del código, pero el autor recomienda revisar por separado los términos de los datos externos que se usen con el repositorio.
 - Cualquier resultado de un futuro checkpoint entrenado debe documentarse de forma separada a los valores por defecto aquí publicados.
 - El repositorio no registra descargas ni interacciones, por lo que no hay validación por parte de la comunidad.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jyreyes1997/matching
+- Repositorio en Hugging Face: https://huggingface.co/jyreyes1997/matching
 - Paper original de EfficientFormer: https://arxiv.org/abs/2206.01191
 - Paper de EfficientFormerV2: https://arxiv.org/abs/2212.08059
 - Repositorio oficial de Snap Research: https://github.com/snap-research/EfficientFormer

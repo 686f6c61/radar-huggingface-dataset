@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Salahuddin1234/omnidoctor-chatterbox` es una republicación comunitaria en HuggingFace del modelo Chatterbox de Resemble AI, una familia de modelos de síntesis de voz (text-to-speech) de código abierto con clonación de voz zero-shot. El repositorio conserva la model card original de Chatterbox Multilingual V3 y la etiqueta de librería `chatterbox`, por lo que el contenido real corresponde al TTS multilingüe de Resemble AI, no a un modelo propio del autor de la cuenta. El nombre "omnidoctor" no guarda relación aparente con el paper OmniDoctor sobre aprendizaje continuo clínico localizado en la búsqueda web.
+`Salahuddin1234/omnidoctor-chatterbox` es una republicación comunitaria en Hugging Face del modelo Chatterbox de Resemble AI, una familia de modelos de síntesis de voz (text-to-speech) de código abierto con clonación de voz zero-shot. El repositorio conserva la model card original de Chatterbox Multilingual V3 y la etiqueta de librería `chatterbox`, por lo que el contenido real corresponde al TTS multilingüe de Resemble AI, no a un modelo propio del autor de la cuenta. El nombre "omnidoctor" no guarda relación aparente con el paper OmniDoctor sobre aprendizaje continuo clínico localizado en la búsqueda web.
 
 El modelo base es un TTS multilingüe de 0,5B parámetros construido sobre un backbone Llama, capaz de generar voz en 23 idiomas y de clonar una voz a partir de una muestra corta de referencia. Incorpora control de exageración emocional, inferencia guiada por alineamiento para mayor estabilidad y marcado de agua en las salidas. Está publicado bajo licencia MIT, lo que permite uso comercial sin restricciones de la licencia original.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parametros | Idiomas | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| Chatterbox Multilingual V3 (este repo) | 0,5B | 23 | MIT | HuggingFace (repo comunitario, 0 descargas) | Clonación zero-shot, control de exageración, marca de agua |
-| XTTS-v2 (Coqui) | ~0,47B | 17 | Coqui Public Model License (no comercial) | HuggingFace | Clonación zero-shot, sin control emocional explícito |
-| Bark (Suno) | no disponible | multilingüe | MIT | HuggingFace | Generación de audio y efectos, calidad de voz variable |
+| Chatterbox Multilingual V3 (este repo) | 0,5B | 23 | MIT | Hugging Face (repo comunitario, 0 descargas) | Clonación zero-shot, control de exageración, marca de agua |
+| XTTS-v2 (Coqui) | ~0,47B | 17 | Coqui Public Model License (no comercial) | Hugging Face | Clonación zero-shot, sin control emocional explícito |
+| Bark (Suno) | no disponible | multilingüe | MIT | Hugging Face | Generación de audio y efectos, calidad de voz variable |
 | ElevenLabs | propietario | multilingüe | propietaria | API comercial | Referencia cerrada citada en la model card como superada |
 
 No se dispone de cifras de rendimiento comparativas verificables para la mayoría de estos modelos dentro de la información proporcionada, por lo que la comparación se limita a parámetros, idiomas y licencia.
@@ -95,7 +95,7 @@ No se dispone de cifras de rendimiento comparativas verificables para la mayorí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Salahuddin1234/omnidoctor-chatterbox
+- Repositorio Hugging Face: https://huggingface.co/Salahuddin1234/omnidoctor-chatterbox
 - Modelo original de Resemble AI: https://huggingface.co/ResembleAI/chatterbox
 - Repositorio GitHub de Chatterbox: https://github.com/resemble-ai/chatterbox
 - Demo de muestras de audio: https://resemble-ai.github.io/chatterbox_demopage/

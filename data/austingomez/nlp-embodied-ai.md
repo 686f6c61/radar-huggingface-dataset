@@ -4,7 +4,7 @@
 
 AustinGomez/nlp-embodied-ai no es un modelo de lenguaje entrenado, sino un repositorio de notas de investigacion sobre IA encarnada (embodied AI). La model card lo describe explicitamente como una "exploratory note" que recoge el alcance de una pregunta de investigacion, los posibles factores de confusion (confounders), una comparacion propuesta con baselines emparejados y los requisitos de reproducibilidad exigidos antes de publicar cualquier resultado. El propio autor declara que no reclama mejoras de benchmark, ablaciones completadas, codigo liberado ni checkpoint entrenado.
 
-El repositorio esta etiquetado en HuggingFace con los tags `research-notes`, `embodied-ai`, `transformer` y `safetensors`, y su licencia es cc-by-4.0. Los metadatos de safetensors declaran 33.088 parametros, una magnitud compatible con un tensor auxiliar o un artefacto de metadatos, no con los pesos de una red neuronal funcional; el tamano del repositorio es de 0,0 GB y solo se listan dos ficheros de texto (`analysis.md` y `README.md`). No se declara pipeline, idiomas soportados ni configuracion de arquitectura.
+El repositorio esta etiquetado en Hugging Face con los tags `research-notes`, `embodied-ai`, `transformer` y `safetensors`, y su licencia es cc-by-4.0. Los metadatos de safetensors declaran 33.088 parametros, una magnitud compatible con un tensor auxiliar o un artefacto de metadatos, no con los pesos de una red neuronal funcional; el tamano del repositorio es de 0,0 GB y solo se listan dos ficheros de texto (`analysis.md` y `README.md`). No se declara pipeline, idiomas soportados ni configuracion de arquitectura.
 
 Su relevancia actual es documental, no de inferencia: sirve como plantilla metodologica y como punto de partida bibliografico para equipos que trabajen en IA encarnada, robotica o world models, y como recordatorio de buenas practicas de reproducibilidad (versiones de dataset, comandos, semillas, hardware y logs crudos). Cualquier uso como modelo generativo, de razonamiento o de vision es inviable con el contenido disponible.
 
@@ -12,7 +12,7 @@ Su relevancia actual es documental, no de inferencia: sirve como plantilla metod
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (el tag de HuggingFace indica `transformer`, pero no se describe ninguna configuracion de capas, dimensiones ni atencion) |
+| Arquitectura | no disponible (el tag de Hugging Face indica `transformer`, pero no se describe ninguna configuracion de capas, dimensiones ni atencion) |
 | Parametros totales | 33.088 (segun metadatos de safetensors; no corresponde a un modelo funcional segun el propio contenido del repositorio) |
 | Parametros activos | no aplicable (no se declara arquitectura MoE) |
 | Longitud de contexto | no disponible |
@@ -75,7 +75,7 @@ No se identifican modelos de pesos comparables, porque el artefacto no es un mod
 
 | Artefacto | Tipo | Parametros | Contexto | Rendimiento publicado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AustinGomez/nlp-embodied-ai | Notas de investigacion (Markdown) | 33.088 declarados en metadatos de safetensors; no funcionales | no disponible | ninguno | cc-by-4.0 | Repositorio HuggingFace, 0 descargas, 0 likes |
+| AustinGomez/nlp-embodied-ai | Notas de investigacion (Markdown) | 33.088 declarados en metadatos de safetensors; no funcionales | no disponible | ninguno | cc-by-4.0 | Repositorio Hugging Face, 0 descargas, 0 likes |
 | Embodied AI: From LLMs to World Models (arXiv:2509.20021) | Articulo de revision (survey) | no aplicable | no aplicable | no aplicable | no disponible | Publico en arXiv |
 | Embodied Arena | Plataforma y sistema de evaluacion de modelos de IA encarnada | no aplicable | no aplicable | no aplicable (es un marco de evaluacion, no un modelo) | no disponible | Plataforma web publica |
 | Model Zoo | Directorio de codigo y modelos preentrenados | no aplicable | no aplicable | no aplicable | no disponible | Web publica |
@@ -94,8 +94,8 @@ No se identifican modelos de pesos comparables, porque el artefacto no es un mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AustinGomez/nlp-embodied-ai
-- Perfil del autor en HuggingFace: https://huggingface.co/AustinGomez
+- Modelo en Hugging Face: https://huggingface.co/AustinGomez/nlp-embodied-ai
+- Perfil del autor en Hugging Face: https://huggingface.co/AustinGomez
 - Articulo relacionado (HTML): https://arxiv.org/html/2509.20021v1
 - Articulo relacionado (abstract): https://arxiv.org/abs/2509.20021
 - Embodied Arena (plataforma de evaluacion de IA encarnada): https://www.embodied-arena.com/

@@ -6,7 +6,7 @@ Cross-Layer-TopK-CLT es un transcoder entre capas (cross-layer transcoder, CLT) 
 
 El artefacto es de gran tamano: 94.200 millones de parametros en fp32, unos 377 GB en total, de los cuales 357 GB corresponden exclusivamente a los decodificadores. Esto lo convierte en una infraestructura de analisis pensada para ejecutarse en multiples GPU, no en un componente desplegable en produccion convencional. Su relevancia actual radica en que extiende la interpretabilidad de tipo transcoder mas alla de una sola capa, capturando circuitos que atraviesan la red, algo que los transcoders por capa no pueden representar.
 
-La licencia Apache 2.0 y la integracion con el ecosistema HuggingFace (pesos en safetensors, script de demostracion con `torchrun`) facilitan su reutilizacion en laboratorios de investigacion que ya trabajen con Qwen3-8B-Base. El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicacion muy reciente o de nicho.
+La licencia Apache 2.0 y la integracion con el ecosistema Hugging Face (pesos en safetensors, script de demostracion con `torchrun`) facilitan su reutilizacion en laboratorios de investigacion que ya trabajen con Qwen3-8B-Base. El repositorio figura con 0 descargas y 0 likes en el momento de la consulta, lo que sugiere una publicacion muy reciente o de nicho.
 
 ## Especificaciones tecnicas
 
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cross-Layer-TopK-CLT (este) | Cross-layer transcoder sobre Qwen3-8B-Base | 94,2 B (fp32) | no disponible | Apache 2.0 | HuggingFace |
+| Cross-Layer-TopK-CLT (este) | Cross-layer transcoder sobre Qwen3-8B-Base | 94,2 B (fp32) | no disponible | Apache 2.0 | Hugging Face |
 | Transcoder por capa (alternativa generica) | Transcoder de una sola capa | no disponible | no disponible | no disponible | no disponible |
 | SAE (sparse autoencoder) sobre Qwen3-8B-Base | Sparse autoencoder | no disponible | no disponible | no disponible | no disponible |
 
@@ -95,7 +95,7 @@ No se dispone de datos publicados de alternativas comparables en la informacion 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/ByteDance-Seed/Cross-Layer-TopK-CLT
+- Hugging Face: https://huggingface.co/ByteDance-Seed/Cross-Layer-TopK-CLT
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B-Base
-- Repositorio de ByteDance-Seed en HuggingFace: https://huggingface.co/ByteDance-Seed
+- Repositorio de ByteDance-Seed en Hugging Face: https://huggingface.co/ByteDance-Seed
 - Script de demostracion: incluido en la model card como `hf_encode_demo.py` (descarga via `huggingface-cli download ByteDance-Seed/Cross-Layer-TopK-CLT --local-dir clt`)

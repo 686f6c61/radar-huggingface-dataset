@@ -2,7 +2,7 @@
 
 ## Resumen
 
-CanvasGuard Qualified Bundle Registry es un repositorio publicado en HuggingFace por el usuario SOTAagi2030 que, segun su propia model card, contiene "bundles" portables de segmentacion de perdida de pintura (paint-loss segmentation) que han superado el protocolo de imagen del registrador. No se trata de un modelo de lenguaje ni de un modelo generativo al uso, sino de un registro de artefactos de segmentacion orientados a flujos de revision en conservacion y documentacion de patrimonio.
+CanvasGuard Qualified Bundle Registry es un repositorio publicado en Hugging Face por el usuario SOTAagi2030 que, segun su propia model card, contiene "bundles" portables de segmentacion de perdida de pintura (paint-loss segmentation) que han superado el protocolo de imagen del registrador. No se trata de un modelo de lenguaje ni de un modelo generativo al uso, sino de un registro de artefactos de segmentacion orientados a flujos de revision en conservacion y documentacion de patrimonio.
 
 El alcance declarado cubre tres modalidades de captura: infrarrojo, luz rasante (raking-light) y documentacion en visible. La propia model card especifica de forma explicita que estos paquetes "soportan flujos de revision y no son recomendaciones automatizadas de tratamiento", lo que lo situa como herramienta de apoyo a la decision y no como sistema autonomo de intervencion.
 
@@ -24,8 +24,8 @@ La relevancia actual del artefacto vendria de la creciente digitalizacion de pro
 | Modalidades de imagen cubiertas | infrarrojo, luz rasante y documento visible |
 | Descargas | 0 |
 | Likes | 0 |
-| Fecha de creacion (segun HuggingFace) | 2026-10-09 |
-| Ultima actualizacion (segun HuggingFace) | 2026-10-09 |
+| Fecha de creacion (segun Hugging Face) | 2026-10-09 |
+| Ultima actualizacion (segun Hugging Face) | 2026-10-09 |
 
 ## Arquitectura y entrenamiento
 
@@ -83,5 +83,5 @@ No disponible. La informacion proporcionada no identifica modelos comparables de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/SOTAagi2030/CanvasGuard-Qualified-Bundle-Registry
+- Hugging Face: https://huggingface.co/SOTAagi2030/CanvasGuard-Qualified-Bundle-Registry
 - Resultados de busqueda web: todas las entradas devueltas por la busqueda corresponden a noticias sobre un candidato politico de Nueva York y no guardan relacion alguna con este repositorio. No se han encontrado papers, blogs, repos ni demos relevantes para este modelo.

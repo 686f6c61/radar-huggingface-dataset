@@ -101,7 +101,7 @@ No se han identificado en la busqueda web modelos comparables especificos de geo
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/kvba1337/zpb-geoloc-gemma3-4b-lora
+- Repositorio Hugging Face: https://huggingface.co/kvba1337/zpb-geoloc-gemma3-4b-lora
 - Modelo base: https://huggingface.co/google/gemma-3-4b-it
 - Gemma Prohibited Use Policy: https://ai.google.dev/gemma/prohibited_use_policy
 - Terminos de uso de Gemma: https://ai.google.dev/gemma/terms

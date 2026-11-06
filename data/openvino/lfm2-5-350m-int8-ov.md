@@ -69,7 +69,7 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenVINO/LFM2.5-350M-int8-ov
+- Modelo en Hugging Face: https://huggingface.co/OpenVINO/LFM2.5-350M-int8-ov
 - Modelo original de Liquid AI: https://huggingface.co/LiquidAI/LFM2.5-350M
 - Licencia del modelo: https://huggingface.co/LiquidAI/LFM2.5-350M/blob/main/LICENSE
 - Blog de Liquid AI sobre LFM2.5-350M: https://www.liquid.ai/blog/lfm2-5-350m-no-size-left-behind

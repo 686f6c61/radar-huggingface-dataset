@@ -79,7 +79,7 @@ No se dispone de información suficiente para establecer una comparativa riguros
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-i1-GGUF
 - Modelo base (presunto): https://huggingface.co/nightmedia/Qwen3.5-9B-Holodeck-Lounge
 - Guía general sobre Qwen 3.5 (blog, no oficial): https://techie007.substack.com/p/qwen-35-the-complete-guide-benchmarks
 - Página de Qwen 3.5 en Ollama (referencia de la familia): https://ollama.com/library/qwen3.5:9b

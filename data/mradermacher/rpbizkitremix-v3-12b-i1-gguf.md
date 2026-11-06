@@ -80,7 +80,7 @@ Lo unico comparable es el tamano de los ficheros de cuantizacion y la recomendac
 - Cache KV: no disponible; depende de la longitud de contexto y del numero de capas con atencion multi-query, datos que no se han publicado. Para un modelo de 12B, contar con 1-3 GB adicionales para contextos de 8k a 32k tokens es una precaucion razonable (estimacion).
 - GPU recomendadas: RTX 4090 (24 GB) o A100/H100 para FP16 o Q8; RTX 4080/3090 (16-24 GB) para Q5/Q6_K; RTX 3060 12 GB, RTX 4060 Ti 16 GB o RTX 4070 para Q4_K_S en su totalidad; GPU de 8 GB pueden ejecutar Q2_K o IQ3_M con offload parcial a CPU.
 - Cabe en GPU de consumo: si. Las cuantizaciones de 4 bits (7,2 GB) entran en tarjetas de 8-12 GB siempre que se limite el contexto o se acepte cierta latencia por offload.
-- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, llamafile, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible indica compatibilidad con endpoints de HuggingFace. Para vLLM o TGI no hay soporte GGUF estandar, por lo que habria que usar el modelo base en safetensors.
+- Opciones de despliegue: llama.cpp (llama-cli, llama-server), Ollama, LM Studio, llamafile, text-generation-webui y cualquier runtime compatible con GGUF. El tag endpoints_compatible indica compatibilidad con endpoints de Hugging Face. Para vLLM o TGI no hay soporte GGUF estandar, por lo que habria que usar el modelo base en safetensors.
 - Latencia y throughput: no disponibles. No se han publicado mediciones y no se conocen la arquitectura ni el contexto, por lo que cualquier cifra seria especulativa.
 
 ## Comparativa con modelos similares

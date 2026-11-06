@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Omnixela/xela_v4",
+  "slug": "omnixela-xela_v4",
+  "author": "Omnixela",
+  "url": "https://huggingface.co/Omnixela/xela_v4",
+  "created_at": "2026-11-03T15:55:48.000Z",
+  "updated_at": "2026-11-05T13:17:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 137022720,
+  "parameters_human": "137.0M",
+  "storage_bytes": 2181624490,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omnixela/xela_v4 · Hugging Face",
+      "url": "https://huggingface.co/Omnixela/xela_v4",
+      "snippet": "Omnixela / xela_v4 Like 0 English conscious_ai AI_sentience sentient_AI AI_consciousness consciousness_in_AI conscious_model License:mit Model card FilesFiles and versions xet Community Copy to bucket Downloads last month -"
+    },
+    {
+      "title": "OmniXela — Intelligent CRM & Connected Sales Workflow",
+      "url": "https://omnixela.com/",
+      "snippet": "From creative strategy and fresh leads to screened CRM outreach, OmniXela brings the sales workflow into one intelligent system."
+    }
+  ]
+}

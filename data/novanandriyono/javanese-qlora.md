@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`novanandriyono/javanese-qlora` es un adaptador LoRA (QLoRA) publicado en HuggingFace por el usuario novanandriyono, pensado para ajustar el modelo base `unsloth/gemma-3-4b-it-unsloth-bnb-4bit`, una variante de Gemma 3 de 4.000 millones de parametros en formato de 4 bits preparada por Unsloth. El adaptador se distribuye como pesos PEFT en safetensors y esta etiquetado como `text-generation` y `conversational`, lo que sugiere un uso orientado a dialogos. Por el nombre ("javanese") y las etiquetas, el objetivo declarado parece ser la adaptacion del modelo al idioma javanes, aunque la model card no aporta detalles sobre el corpus de entrenamiento ni sobre el rendimiento obtenido.
+`novanandriyono/javanese-qlora` es un adaptador LoRA (QLoRA) publicado en Hugging Face por el usuario novanandriyono, pensado para ajustar el modelo base `unsloth/gemma-3-4b-it-unsloth-bnb-4bit`, una variante de Gemma 3 de 4.000 millones de parametros en formato de 4 bits preparada por Unsloth. El adaptador se distribuye como pesos PEFT en safetensors y esta etiquetado como `text-generation` y `conversational`, lo que sugiere un uso orientado a dialogos. Por el nombre ("javanese") y las etiquetas, el objetivo declarado parece ser la adaptacion del modelo al idioma javanes, aunque la model card no aporta detalles sobre el corpus de entrenamiento ni sobre el rendimiento obtenido.
 
-El artefacto es un adaptador, no un modelo completo: requiere cargar el modelo base y aplicar los pesos LoRA mediante la libreria `peft` o `transformers`. El repositorio ocupa aproximadamente 1,0 GB y cuenta con 21 descargas y 0 likes en el momento de la consulta, lo que indica un proyecto personal de baja difusion y sin validacion comunitaria. El acceso esta restringido (gated): es necesario aceptar condiciones en HuggingFace antes de descargarlo.
+El artefacto es un adaptador, no un modelo completo: requiere cargar el modelo base y aplicar los pesos LoRA mediante la libreria `peft` o `transformers`. El repositorio ocupa aproximadamente 1,0 GB y cuenta con 21 descargas y 0 likes en el momento de la consulta, lo que indica un proyecto personal de baja difusion y sin validacion comunitaria. El acceso esta restringido (gated): es necesario aceptar condiciones en Hugging Face antes de descargarlo.
 
 La relevancia de esta ficha es limitada pero ilustrativa: muestra el flujo tipico de fine-tuning QLoRA con Unsloth sobre un modelo pequeno de la familia Gemma 3 para una lengua de bajos recursos. No obstante, la ausencia de model card detallada, de licencia explicita, de idiomas declarados y de benchmarks hace que no sea recomendable para produccion sin una evaluacion propia previa.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| novanandriyono/javanese-qlora | Adaptador sobre 4B | no disponible | no disponible | safetensors (PEFT) | Gated en HuggingFace |
-| Gemma 3 4B IT (Google) | 4B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Publico en HuggingFace |
+| novanandriyono/javanese-qlora | Adaptador sobre 4B | no disponible | no disponible | safetensors (PEFT) | Gated en Hugging Face |
+| Gemma 3 4B IT (Google) | 4B | no disponible en esta ficha | Gemma Terms of Use | safetensors, GGUF | Publico en Hugging Face |
 | Adaptadores QLoRA de la comunidad sobre Gemma 3 4B | 4B (base) | no disponible | variable | safetensors (PEFT) | Publicos, calidad variable |
 | Modelos especializados en javanes (p. ej. variantes de Llama/Mistral ajustadas) | 7-8B tipicamente | no disponible | variable | safetensors, GGUF | Publicos |
 
@@ -74,7 +74,7 @@ La comparativa es cualitativa: no hay datos de rendimiento del adaptador que per
 
 - Ausencia de model card detallada: no se documentan datos de entrenamiento, hiperparametros, evaluacion ni limitaciones conocidas.
 - Licencia no especificada: no se puede confirmar si el uso comercial esta permitido; el modelo base Gemma 3 tiene sus propios terminos que deben respetarse.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion para despliegues automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion para despliegues automatizados.
 - Riesgo de alucinacion: inherente a los modelos de 4B; el ajuste LoRA no lo elimina y podria incrementarlo si el corpus de entrenamiento es pequeno o ruidoso.
 - Sesgos: no documentados; los modelos Gemma heredan sesgos de sus datos de preentrenamiento, y el ajuste en javanes podria introducir sesgos adicionales no evaluados.
 - Cobertura idiomatica incierta: no se confirma que el adaptador mejore el javanes ni que preserve el multilingueismo del modelo base.
@@ -84,7 +84,7 @@ La comparativa es cualitativa: no hay datos de rendimiento del adaptador que per
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/novanandriyono/javanese-qlora
+- Hugging Face del adaptador: https://huggingface.co/novanandriyono/javanese-qlora
 - Modelo base: https://huggingface.co/unsloth/gemma-3-4b-it-unsloth-bnb-4bit
 - Paper de LoRA (referenciado en las etiquetas): https://arxiv.org/abs/1910.09700
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-AMARSADN-AI_V1 es un ajuste fino (fine-tune) de tipo conversacional publicado por el usuario amarsadan en HuggingFace. Se trata de un modelo derivado de SC117/LFM2.5-2.6B-Uncensored, que a su vez pertenece a la familia LFM2 (Liquid Foundation Model 2). El repositorio contiene unicamente los pesos resultantes del ajuste fino en precision FP16 (16 bits), sin documentacion adicional sobre el dataset, el procedimiento de entrenamiento o evaluaciones realizadas. El modelo esta etiquetado como `text-generation`, `conversational` y compatible con Text Generation Inference.
+AMARSADN-AI_V1 es un ajuste fino (fine-tune) de tipo conversacional publicado por el usuario amarsadan en Hugging Face. Se trata de un modelo derivado de SC117/LFM2.5-2.6B-Uncensored, que a su vez pertenece a la familia LFM2 (Liquid Foundation Model 2). El repositorio contiene unicamente los pesos resultantes del ajuste fino en precision FP16 (16 bits), sin documentacion adicional sobre el dataset, el procedimiento de entrenamiento o evaluaciones realizadas. El modelo esta etiquetado como `text-generation`, `conversational` y compatible con Text Generation Inference.
 
 Con 2.697.198.592 parametros (aproximadamente 2,7 mil millones), se situa en el segmento de modelos pequenos, pensados para inferencia local en hardware de consumo o para despliegues con requisitos de latencia estrictos. Hereda de su modelo base la etiqueta `lfm2`, lo que lo vincula a la arquitectura de la familia LFM2, y conserva la licencia Apache 2.0, lo que permite uso comercial sin restricciones adicionales de licencia del autor.
 
@@ -29,7 +29,7 @@ Su relevancia practica es limitada por el momento: el repositorio acumula 0 desc
 
 La informacion disponible no describe la arquitectura interna mas alla de la etiqueta `lfm2`, que identifica la familia LFM2. No se detallan el numero de capas, el tipo de atencion, la estrategia de normalizacion, la dimension del estado oculto ni el vocabulario. Tampoco se especifica la longitud de contexto soportada, un dato critico para cualquier evaluacion de uso real. Todo lo que puede afirmarse con rigor es que el modelo es un transformer derivado de SC117/LFM2.5-2.6B-Uncensored y que conserva su configuracion arquitectonica, salvo los pesos ajustados.
 
-Respecto al entrenamiento, la model card indica unicamente que el ajuste fino se realizo con Unsloth y la libreria TRL de HuggingFace, con una velocidad de entrenamiento declarada de 2x respecto a un entrenamiento convencional. No se publica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o alineacion supervisada, ni los hiperparametros empleados (tasa de aprendizaje, numero de epocas, tamano de lote, modalidad de ajuste: LoRA, QLoRA o ajuste completo). El modelo base, SC117/LFM2.5-2.6B-Uncensored, incluye en su nombre una referencia explicita a la ausencia de censura, lo que sugiere un ajuste orientado a reducir los rechazos del modelo original, pero no se aporta ninguna descripcion metodologica al respecto.
+Respecto al entrenamiento, la model card indica unicamente que el ajuste fino se realizo con Unsloth y la libreria TRL de Hugging Face, con una velocidad de entrenamiento declarada de 2x respecto a un entrenamiento convencional. No se publica el numero de tokens de entrenamiento, la composicion del dataset, si hubo fases de RLHF, DPO o alineacion supervisada, ni los hiperparametros empleados (tasa de aprendizaje, numero de epocas, tamano de lote, modalidad de ajuste: LoRA, QLoRA o ajuste completo). El modelo base, SC117/LFM2.5-2.6B-Uncensored, incluye en su nombre una referencia explicita a la ausencia de censura, lo que sugiere un ajuste orientado a reducir los rechazos del modelo original, pero no se aporta ninguna descripcion metodologica al respecto.
 
 ## Capacidades
 
@@ -75,11 +75,11 @@ Nota: las cifras de esta seccion son estimaciones derivadas del recuento de para
 
 | Modelo | Parametros | Contexto | Licencia | Idiomas | Disponibilidad |
 |---|---|---|---|---|---|
-| amarsadan/AMARSADN-AI_V1 | 2,70 B | no disponible | Apache 2.0 | en | HuggingFace, 0 descargas |
-| SC117/LFM2.5-2.6B-Uncensored (modelo base) | aproximadamente 2,6 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | en | HuggingFace |
-| Qwen2.5-3B | 3,09 B | 32.768 tokens | Apache 2.0 | plurilingue (29 idiomas) | HuggingFace, ampliamente desplegado |
-| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | plurilingue (8 idiomas oficiales) | HuggingFace, con restricciones de licencia |
-| Gemma 2 2B | 2,61 B | 8.192 tokens | Gemma Terms of Use | principalmente ingles | HuggingFace, con restricciones de uso |
+| amarsadan/AMARSADN-AI_V1 | 2,70 B | no disponible | Apache 2.0 | en | Hugging Face, 0 descargas |
+| SC117/LFM2.5-2.6B-Uncensored (modelo base) | aproximadamente 2,6 B | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | en | Hugging Face |
+| Qwen2.5-3B | 3,09 B | 32.768 tokens | Apache 2.0 | plurilingue (29 idiomas) | Hugging Face, ampliamente desplegado |
+| Llama 3.2 3B Instruct | 3,21 B | 128.000 tokens | Llama 3.2 Community License | plurilingue (8 idiomas oficiales) | Hugging Face, con restricciones de licencia |
+| Gemma 2 2B | 2,61 B | 8.192 tokens | Gemma Terms of Use | principalmente ingles | Hugging Face, con restricciones de uso |
 
 No se dispone de datos de rendimiento comparados para AMARSADN-AI_V1, por lo que la comparacion se limita a parametros, contexto y licencia. La principal ventaja del modelo frente a las alternativas es la licencia Apache 2.0 sin restricciones adicionales; sus principales desventajas son la ausencia de evaluacion publicada, el soporte exclusivo de ingles y la falta de datos sobre la longitud de contexto.
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparados para AMARSADN-AI_V1, por lo que
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/amarsadan/AMARSADN-AI_V1
+- Modelo en Hugging Face: https://huggingface.co/amarsadan/AMARSADN-AI_V1
 - Modelo base: https://huggingface.co/SC117/LFM2.5-2.6B-Uncensored
 - Unsloth (herramienta de ajuste fino empleada): https://github.com/unslothai/unsloth
 - TRL (libreria de entrenamiento empleada): https://github.com/huggingface/trl

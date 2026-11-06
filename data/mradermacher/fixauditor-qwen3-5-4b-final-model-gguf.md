@@ -31,7 +31,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 
 - Generacion de texto conversacional en ingles, segun la etiqueta `conversational` del repositorio.
 - Procesamiento multimodal de imagenes: la presencia de ficheros `mmproj` indica soporte de entrada visual, aunque no se detalla el tipo de tareas (VQA, OCR, descripcion) ni el rendimiento.
-- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de HuggingFace.
+- Compatibilidad con endpoints: la etiqueta `endpoints_compatible` sugiere que el modelo puede servirse a traves de infraestructura de inferencia compatible con la API de Hugging Face.
 - Uso con `transformers` y con llama.cpp y derivados (Ollama, LM Studio, etc.) gracias al formato GGUF.
 - Capacidades de tool calling, function calling, agentes multi-paso y razonamiento matematico: no documentadas en la informacion disponible.
 - Capacidades multilingues: limitadas al ingles segun la etiqueta de idioma del repositorio.
@@ -44,7 +44,7 @@ No se dispone de informacion sobre el numero de tokens de entrenamiento, la comp
 - Experimentacion con entrada visual: los ficheros mmproj permiten probar tareas de descripcion de imagenes o respuesta a preguntas visuales en local, util para evaluar si el ajuste fino del modelo base conserva las capacidades multimodales de Qwen.
 - Evaluacion de modelos ajustados de nicho: dado el nombre "fixauditor", resulta adecuado para explorar si el ajuste fino orientado a auditoria o correccion de textos aporta ventajas frente al Qwen base en tareas de revision.
 - Despliegue en entornos con recursos limitados: las cuantizaciones Q2_K (2,0 GB) y Q3_K_S (2,2 GB) permiten ejecutar el modelo en CPU o en GPUs integradas, con la perdida de calidad que ello implica, para tareas de generacion de texto no criticas.
-- Servicio de inferencia compatible con API: gracias a la etiqueta `endpoints_compatible`, puede integrarse en un endpoint de HuggingFace o en un servidor llama.cpp con API OpenAI para pruebas de integracion en aplicaciones existentes.
+- Servicio de inferencia compatible con API: gracias a la etiqueta `endpoints_compatible`, puede integrarse en un endpoint de Hugging Face o en un servidor llama.cpp con API OpenAI para pruebas de integracion en aplicaciones existentes.
 - Base para comparativas de cuantizacion: el repositorio ofrece doce niveles de cuantizacion distintos, lo que permite medir empiricamente el impacto de la cuantizacion en la calidad de salida para este modelo concreto.
 
 ## Benchmarks y rendimiento

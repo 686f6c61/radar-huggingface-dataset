@@ -73,6 +73,6 @@ No se dispone de información sobre modelos comparables en el mismo entorno o co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/maxxime/rl_course_vizdoom_health_gathering_supreme
+- Hugging Face: https://huggingface.co/maxxime/rl_course_vizdoom_health_gathering_supreme
 - Sample-Factory (librería de entrenamiento): https://github.com/alex-petrenko/sample-factory
 - Documentación de Sample-Factory: https://www.samplefactory.dev/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `anandhatti14/GenAI-testing` alojado en HuggingFace es un espacio de prueba sin contenido técnico publicado. La model card únicamente contiene el texto "sample text" y la licencia MIT, sin especificaciones de arquitectura, parámetros, contexto ni capacidades. Fue creado el 17 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que sugiere que se trata de un repositorio de evaluación o placeholder creado por el usuario `anandhatti14`. No se dispone de información sobre el pipeline, los idiomas soportados ni ningún otro dato relevante para su uso como modelo de IA.
+El repositorio `anandhatti14/GenAI-testing` alojado en Hugging Face es un espacio de prueba sin contenido técnico publicado. La model card únicamente contiene el texto "sample text" y la licencia MIT, sin especificaciones de arquitectura, parámetros, contexto ni capacidades. Fue creado el 17 de agosto de 2026 y actualizado el mismo día, con cero descargas y cero likes, lo que sugiere que se trata de un repositorio de evaluación o placeholder creado por el usuario `anandhatti14`. No se dispone de información sobre el pipeline, los idiomas soportados ni ningún otro dato relevante para su uso como modelo de IA.
 
 Dado que no existe información técnica verificable, esta ficha se limita a documentar la ausencia de datos y a señalar las implicaciones para quienes encuentren este repositorio en sus búsquedas. No debe considerarse un modelo utilizable para desarrollo o investigación.
 
@@ -53,7 +53,7 @@ No disponible. No se puede establecer una comparación con otros modelos porque 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/anandhatti14/GenAI-testing
+- Repositorio en Hugging Face: https://huggingface.co/anandhatti14/GenAI-testing
 - Artículo sobre estrategias de testing para GenAI (contexto general, no específico del modelo): https://www.kore.ai/blog/the-genai-testing-playbook-best-practices-for-ai-driven-testing-deployment
 - Detector de IA (herramienta externa, no relacionada): https://www.scribbr.com/ai-detector/
 - Paper académico sobre testing de sistemas GenAI: https://arxiv.org/pdf/2309.03554

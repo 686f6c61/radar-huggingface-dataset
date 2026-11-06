@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Leoputan/deco-humanlm-8b-pdn-lora es un repositorio publicado en HuggingFace por el usuario Leoputan que, por su nombre y por el tamano del repositorio (0,2 GB), parece corresponder a un adaptador LoRA (o un conjunto de pesos parcial) pensado para un modelo base de la familia Qwen3 con aproximadamente 8.000 millones de parametros. El repositorio esta etiquetado con los tags `safetensors`, `qwen3`, `license:apache-2.0` y `region:us`, lo que confirma el formato de pesos y su vinculacion declarada con la arquitectura Qwen3.
+Leoputan/deco-humanlm-8b-pdn-lora es un repositorio publicado en Hugging Face por el usuario Leoputan que, por su nombre y por el tamano del repositorio (0,2 GB), parece corresponder a un adaptador LoRA (o un conjunto de pesos parcial) pensado para un modelo base de la familia Qwen3 con aproximadamente 8.000 millones de parametros. El repositorio esta etiquetado con los tags `safetensors`, `qwen3`, `license:apache-2.0` y `region:us`, lo que confirma el formato de pesos y su vinculacion declarada con la arquitectura Qwen3.
 
 La model card publicada es practicamente vacia: unicamente contiene la declaracion de licencia `apache-2.0`, sin descripcion del modelo, sin datos de entrenamiento, sin benchmarks y sin instrucciones de uso. El repositorio no registra descargas ni "likes" en el momento de la consulta, y no se ha localizado documentacion tecnica asociada.
 
@@ -54,7 +54,7 @@ Dado que no existe documentacion funcional, los siguientes escenarios son hipote
 - Evaluacion comparativa de adaptadores: incluirlo en baterias de evaluacion propias junto a otros LoRA de la misma familia para medir diferencias de comportamiento con prompts estandarizados.
 - Reproduccion de experimentos: si el autor publicase posteriormente la configuracion de entrenamiento, el repositorio permitiria reproducir el ajuste sobre el mismo dataset.
 - Ajuste incremental: partir del adaptador como inicializacion para un entrenamiento adicional sobre datos propios, aprovechando el formato safetensors y la licencia Apache 2.0.
-- Analisis de licencias y trazabilidad: estudiar el repositorio como caso de publicacion minima en HuggingFace (pesos mas licencia, sin model card) dentro de trabajos sobre gobernanza de modelos abiertos.
+- Analisis de licencias y trazabilidad: estudiar el repositorio como caso de publicacion minima en Hugging Face (pesos mas licencia, sin model card) dentro de trabajos sobre gobernanza de modelos abiertos.
 
 No se recomienda su uso en atencion al cliente, generacion de codigo en produccion, analisis de documentos, agentes autonomos ni ningun escenario con requisitos de calidad o trazabilidad, porque no existe evidencia publicada de rendimiento ni de comportamiento.
 
@@ -94,7 +94,7 @@ No disponible. No se ha localizado informacion publicada sobre adaptadores compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Leoputan/deco-humanlm-8b-pdn-lora
-- Perfil del autor en HuggingFace: https://huggingface.co/Leoputan
+- Repositorio en Hugging Face: https://huggingface.co/Leoputan/deco-humanlm-8b-pdn-lora
+- Perfil del autor en Hugging Face: https://huggingface.co/Leoputan
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Resultados relevantes de la busqueda web: no disponible (la busqueda no devolvio ningun resultado relacionado con el modelo; los enlaces recuperados corresponden a servicios de streaming y no guardan relacion con el proyecto)

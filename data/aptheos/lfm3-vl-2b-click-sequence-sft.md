@@ -18,7 +18,7 @@ Es relevante ahora porque evidencia empirica de este tipo sobre modelos pequenos
 | Longitud de contexto | No disponible |
 | Tipos de cuantizacion | No disponible (los pesos del adaptador se distribuyen en safetensors; el base en FP16 en la evaluacion) |
 | Idiomas soportados | No disponible |
-| Licencia | lfm1.0 (heredada del modelo base; etiquetada como "other" en HuggingFace) |
+| Licencia | lfm1.0 (heredada del modelo base; etiquetada como "other" en Hugging Face) |
 | Formato de pesos | safetensors (adapter_model.safetensors + adapter_config.json) |
 
 ## Arquitectura y entrenamiento
@@ -78,8 +78,8 @@ Comparaciones estadisticas reportadas: el adaptador SFT supera al base en 21 tar
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este adaptador (sobre LFM3-VL-2B) | 2B (base) + LoRA r32 | No disponible | Control web por captura, secuencias de clic | lfm1.0 | HuggingFace, PEFT |
-| LFM3-VL-2B base | 2B | No disponible | VLM generalista | lfm1.0 | HuggingFace |
+| Este adaptador (sobre LFM3-VL-2B) | 2B (base) + LoRA r32 | No disponible | Control web por captura, secuencias de clic | lfm1.0 | Hugging Face, PEFT |
+| LFM3-VL-2B base | 2B | No disponible | VLM generalista | lfm1.0 | Hugging Face |
 | Adaptador `click-color-sft` (mismo autor) | 2B (base) + LoRA | No disponible | Un solo clic sobre color | lfm1.0 | Incluido en el repositorio |
 | Otros adaptadores de computer-use sobre VLM pequenos | No disponible | No disponible | No disponible | No disponible | No disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos de benchmarks de modelos comparables de terceros en la in
 
 ## Enlaces
 
-- HuggingFace del adaptador: https://huggingface.co/Aptheos/lfm3-vl-2b-click-sequence-sft
+- Hugging Face del adaptador: https://huggingface.co/Aptheos/lfm3-vl-2b-click-sequence-sft
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-VL-2B
 - Repositorio de codigo (prompt, herramienta de clic, parser, evaluacion): https://github.com/DerrickKirimi/browser-control
 - Entorno MiniWoB++ `click-button-sequence`: https://miniwob.farama.org/environments/click-button-sequence/

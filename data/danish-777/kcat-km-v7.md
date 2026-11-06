@@ -2,7 +2,7 @@
 
 ## Resumen
 
-kcat-Km v7 es un modelo de prediccion de parametros cineticos enzimaticos desarrollado por el usuario Danish-777 y publicado en HuggingFace. No es un modelo de lenguaje generativo, sino un ensemble de aprendizaje automatico que predice los valores log10(kcat) y log10(Km) a partir de una secuencia de enzima y un sustrato representado como SMILES. El modelo combina tres componentes: XGBoost sobre caracteristicas enzimaticas artesanales, XGBoost sobre embeddings ESM-2 de 35M de parametros y XGBoost sobre embeddings ESM-2 de 150M (limitados a los primeros 256 residuos), mas una pequena red neuronal sobre el embedding de 35M, todo fusionado mediante promedio de rangos con una guarda temporal.
+kcat-Km v7 es un modelo de prediccion de parametros cineticos enzimaticos desarrollado por el usuario Danish-777 y publicado en Hugging Face. No es un modelo de lenguaje generativo, sino un ensemble de aprendizaje automatico que predice los valores log10(kcat) y log10(Km) a partir de una secuencia de enzima y un sustrato representado como SMILES. El modelo combina tres componentes: XGBoost sobre caracteristicas enzimaticas artesanales, XGBoost sobre embeddings ESM-2 de 35M de parametros y XGBoost sobre embeddings ESM-2 de 150M (limitados a los primeros 256 residuos), mas una pequena red neuronal sobre el embedding de 35M, todo fusionado mediante promedio de rangos con una guarda temporal.
 
 La version v7 mantiene el diseno de v4 pero amplia los datos de entrenamiento con CatPred-DB, una coleccion publica de valores kcat/Km derivada de BRENDA y SABIO-RK publicada por Boorla y Maranas en Nature Communications en 2025. El modelo esta disenado para ejecutarse exclusivamente en CPU, lo que lo hace accesible sin GPU. La validacion se realizo con validacion cruzada de 5 folds agrupada por familias enzimaticas (clusters MMseqs2 al 40% de identidad), excluyendo de cada fold las filas externas relacionadas con las familias retenidas.
 
@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kcat-Km v7 (Danish-777) | Ensemble XGBoost + ESM-2 + MLP | ESM-2 150M + tabulares | Secuencias truncadas a 256 residuos | MIT | HuggingFace (0 descargas) |
+| kcat-Km v7 (Danish-777) | Ensemble XGBoost + ESM-2 + MLP | ESM-2 150M + tabulares | Secuencias truncadas a 256 residuos | MIT | Hugging Face (0 descargas) |
 | CatPred | Modelo de prediccion cinetica (referencia en la model card) | no disponible | no disponible | no disponible | Publicado en Nature Communications 2025 |
-| ESM-2 (Meta) | Modelo de lenguaje proteico | 8M a 15B | 1024 residuos tipicamente | MIT (segun version) | HuggingFace |
+| ESM-2 (Meta) | Modelo de lenguaje proteico | 8M a 15B | 1024 residuos tipicamente | MIT (segun version) | Hugging Face |
 | UniKP | Framework de prediccion de kcat/Km | no disponible | no disponible | no disponible | Publicado en Nature Communications |
 
 La comparativa con CatPred y UniKP es cualitativa: la model card solo cita CatPred-DB como fuente de datos, no como modelo comparable en rendimiento. No se dispone de datos de benchmarks que permitan una comparacion cuantitativa.
@@ -89,7 +89,7 @@ La comparativa con CatPred y UniKP es cualitativa: la model card solo cita CatPr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Danish-777/kcat-km-v7
+- Modelo en Hugging Face: https://huggingface.co/Danish-777/kcat-km-v7
 - CatPred-DB (Boorla y Maranas, Nature Communications 2025): no disponible en la informacion proporcionada
 - ESM-2 (Meta AI): no disponible en la informacion proporcionada
 - Repositorio de codigo del autor: no disponible en la informacion proporcionada

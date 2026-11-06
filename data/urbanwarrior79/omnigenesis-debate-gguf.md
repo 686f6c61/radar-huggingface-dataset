@@ -76,6 +76,6 @@ No disponible. La informacion proporcionada no identifica el modelo base ni mode
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Urbanwarrior79/omnigenesis-debate-gguf
+- Hugging Face: https://huggingface.co/Urbanwarrior79/omnigenesis-debate-gguf
 - Repositorio de despliegue de Omnigenesis (Modelfile y system prompt): no disponible como URL en la informacion proporcionada.
 - Paper, blog, repositorio de codigo o demo: no disponibles en la informacion proporcionada.

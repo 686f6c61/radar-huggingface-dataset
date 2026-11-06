@@ -80,7 +80,7 @@ No se dispone de comparativas de rendimiento numerico entre estas versiones cuan
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/TheWirelessPhoenix/Qwen2.5-Coder-7B-Instruct-mlx_4bit
+- Repositorio Hugging Face: https://huggingface.co/TheWirelessPhoenix/Qwen2.5-Coder-7B-Instruct-mlx_4bit
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Paper tecnico Qwen2.5-Coder: https://arxiv.org/html/2409.12186v1
 - Benchmark oMLX (M4): https://omlx.ai/benchmarks/performance/o21qlz68

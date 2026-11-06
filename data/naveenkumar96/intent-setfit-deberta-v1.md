@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `NaveenKumar96/intent-setfit-deberta-v1` es un modelo alojado en HuggingFace Hub del que apenas se dispone de información pública. Según la ficha del repositorio, fue creado el 15 de agosto de 2026 y su licencia es Apache-2.0. El nombre sugiere que se trata de un modelo de clasificación de intenciones (intent detection) entrenado con la técnica SetFit sobre una base DeBERTa, pero esta interpretación no está confirmada por documentación oficial. No se han publicado detalles sobre arquitectura, tamaño, contexto, datos de entrenamiento o rendimiento. Por tanto, esta ficha se limita a reflejar la información disponible y señala explícitamente los datos no disponibles.
+El modelo `NaveenKumar96/intent-setfit-deberta-v1` es un modelo alojado en Hugging Face Hub del que apenas se dispone de información pública. Según la ficha del repositorio, fue creado el 15 de agosto de 2026 y su licencia es Apache-2.0. El nombre sugiere que se trata de un modelo de clasificación de intenciones (intent detection) entrenado con la técnica SetFit sobre una base DeBERTa, pero esta interpretación no está confirmada por documentación oficial. No se han publicado detalles sobre arquitectura, tamaño, contexto, datos de entrenamiento o rendimiento. Por tanto, esta ficha se limita a reflejar la información disponible y señala explícitamente los datos no disponibles.
 
 ## Especificaciones tecnicas
 
@@ -44,11 +44,11 @@ No disponible. No se conocen modelos comparables de la misma categoría con los 
 ## Limitaciones y advertencias
 
 - La información pública es extremadamente limitada: no hay model card técnica, benchmarks ni documentación de uso.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido validado por la comunidad.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido validado por la comunidad.
 - Al desconocer su arquitectura y entrenamiento, no se pueden evaluar sesgos, riesgos de alucinación o limitaciones de contexto.
 - La licencia Apache-2.0 permite uso comercial, pero sin conocer el modelo, cualquier despliegue en producción conlleva un riesgo alto.
 - Se recomienda contactar al autor o esperar a que se publique información adicional antes de considerar su uso.
 
 ## Enlaces
 
-- [HuggingFace - NaveenKumar96/intent-setfit-deberta-v1](https://huggingface.co/NaveenKumar96/intent-setfit-deberta-v1)
+- [Hugging Face - NaveenKumar96/intent-setfit-deberta-v1](https://huggingface.co/NaveenKumar96/intent-setfit-deberta-v1)

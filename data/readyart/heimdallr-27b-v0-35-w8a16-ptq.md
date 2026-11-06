@@ -4,7 +4,7 @@
 
 Heimdallr-27B-v0.35-W8A16-PTQ es un modelo de lenguaje de 27.781 millones de parámetros desarrollado por ReadyArt, una organización especializada en modelos de roleplay y narrativa inmersiva. Se trata de una versión cuantizada en W8A16 (pesos de 8 bits, activaciones de 16 bits) mediante compresión tensorial (PTQ) del modelo base ReadyArt/Heimdallr-27B-v0.35, que a su vez se construye sobre la arquitectura Qwen3.5 según las etiquetas del repositorio. El modelo está orientado a conversación, instrucciones y roleplay, con un enfoque explícito en contenido adulto y sin alineación (unaligned), lo que lo hace adecuado para escenarios de ficción oscura y fantasía.
 
-La relevancia de este modelo radica en su tamaño intermedio (27B) combinado con una cuantización eficiente que reduce los requisitos de memoria, permitiendo su ejecución en hardware de gama alta para consumidores o en servidores con una sola GPU. Sin embargo, el acceso está restringido (gated) y requiere aceptar condiciones en HuggingFace, lo que limita su disponibilidad inmediata. La licencia Apache-2.0 permite uso comercial, pero el contenido explícito y la falta de alineación exigen precaución en entornos de producción.
+La relevancia de este modelo radica en su tamaño intermedio (27B) combinado con una cuantización eficiente que reduce los requisitos de memoria, permitiendo su ejecución en hardware de gama alta para consumidores o en servidores con una sola GPU. Sin embargo, el acceso está restringido (gated) y requiere aceptar condiciones en Hugging Face, lo que limita su disponibilidad inmediata. La licencia Apache-2.0 permite uso comercial, pero el contenido explícito y la falta de alineación exigen precaución en entornos de producción.
 
 ## Especificaciones tecnicas
 
@@ -67,7 +67,7 @@ No se dispone de información sobre otros modelos comparables de la misma catego
 
 ## Limitaciones y advertencias
 
-- Acceso restringido: el modelo es gated en HuggingFace; es necesario aceptar condiciones específicas antes de descargarlo, lo que puede limitar su uso en entornos automatizados.
+- Acceso restringido: el modelo es gated en Hugging Face; es necesario aceptar condiciones específicas antes de descargarlo, lo que puede limitar su uso en entornos automatizados.
 - Contenido explícito y sin alineación: el modelo está diseñado para generar contenido adulto y NSFW, sin filtros de seguridad. No es adecuado para aplicaciones dirigidas a menores o entornos profesionales sin control de contenido.
 - Riesgo de alucinación: al ser un modelo de roleplay, puede inventar hechos, personajes o eventos con alta fluidez, lo que requiere verificación en usos factuales.
 - Sesgos desconocidos: no se documentan sesgos específicos, pero al estar entrenado en datos de ficción oscura, puede reflejar estereotipos de género, raza o cultura presentes en ese tipo de narrativas.

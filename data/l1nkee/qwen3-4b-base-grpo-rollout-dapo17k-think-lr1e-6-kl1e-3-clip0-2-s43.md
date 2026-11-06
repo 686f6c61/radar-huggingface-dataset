@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks finales en la información disponib
 
 | Modelo | Parámetros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s43 | ~4B | no disponible | GRPO sobre DAPO-Math-17k | Apache 2.0 | HuggingFace, 54 checkpoints |
-| Qwen/Qwen3-4B-Base | ~4B | no disponible en la información | Preentrenamiento | Apache 2.0 | HuggingFace |
-| Qwen/Qwen3-4B | ~4B | no disponible en la información | Post-entrenamiento (SFT + RL) | Apache 2.0 | HuggingFace |
+| L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s43 | ~4B | no disponible | GRPO sobre DAPO-Math-17k | Apache 2.0 | Hugging Face, 54 checkpoints |
+| Qwen/Qwen3-4B-Base | ~4B | no disponible en la información | Preentrenamiento | Apache 2.0 | Hugging Face |
+| Qwen/Qwen3-4B | ~4B | no disponible en la información | Post-entrenamiento (SFT + RL) | Apache 2.0 | Hugging Face |
 | Alternativas RLVR sobre modelos pequeños | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparativo entre estos modelos en la información proporcionada.
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos en la info
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s43
+- Modelo en Hugging Face: https://huggingface.co/L1nkee/qwen3-4b-base-grpo-rollout-dapo17k-think-lr1e-6-kl1e-3-clip0.2-s43
 - Modelo base Qwen3-4B-Base: https://huggingface.co/Qwen/Qwen3-4B-Base
 - Dataset DAPO-Math-17k: https://huggingface.co/datasets/BytedTsinghua-SIA/DAPO-Math-17k
 - Repositorio verl: https://github.com/volcengine/verl

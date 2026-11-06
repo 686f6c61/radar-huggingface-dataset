@@ -72,10 +72,10 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| OPTD-DeepSeek-R1-Distill-Qwen-1.5B-Mid | 1,78 B | No disponible | Estudiante OPTD (destilación con transiciones, dominios matemáticas y código) | No disponible; remite a upstream | HuggingFace, BF16 safetensors, 0 descargas |
-| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | No disponible en la información proporcionada | Destilado de DeepSeek-R1 sobre Qwen2, razonamiento general | No disponible en la información proporcionada | HuggingFace, ampliamente distribuido |
-| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens nativos (dato de la model card pública de Qwen, no verificado en esta búsqueda) | Modelo instructivo generalista | No disponible en la información proporcionada | HuggingFace |
-| Qwen3-1.7B | 1,7 B | 32.768 tokens nativos (dato de la model card pública de Qwen, no verificado en esta búsqueda) | Modelo denso con modo de razonamiento | No disponible en la información proporcionada | HuggingFace |
+| OPTD-DeepSeek-R1-Distill-Qwen-1.5B-Mid | 1,78 B | No disponible | Estudiante OPTD (destilación con transiciones, dominios matemáticas y código) | No disponible; remite a upstream | Hugging Face, BF16 safetensors, 0 descargas |
+| deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B (base) | 1,78 B | No disponible en la información proporcionada | Destilado de DeepSeek-R1 sobre Qwen2, razonamiento general | No disponible en la información proporcionada | Hugging Face, ampliamente distribuido |
+| Qwen2.5-1.5B-Instruct | 1,5 B | 32.768 tokens nativos (dato de la model card pública de Qwen, no verificado en esta búsqueda) | Modelo instructivo generalista | No disponible en la información proporcionada | Hugging Face |
+| Qwen3-1.7B | 1,7 B | 32.768 tokens nativos (dato de la model card pública de Qwen, no verificado en esta búsqueda) | Modelo denso con modo de razonamiento | No disponible en la información proporcionada | Hugging Face |
 
 La comparación relevante es contra el propio modelo base: OPTD aplica 150 actualizaciones adicionales sobre los mismos pesos, por lo que el interés está en si la destilación de transiciones mejora el razonamiento en matemáticas y código a igualdad de tamaño y arquitectura. No hay cifras publicadas que permitan afirmar ni negar esa mejora.
 
@@ -95,7 +95,7 @@ La comparación relevante es contra el propio modelo base: OPTD aplica 150 actua
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-1.5B-Mid
+- Modelo en Hugging Face: https://huggingface.co/ModalityDance/OPTD-DeepSeek-R1-Distill-Qwen-1.5B-Mid
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Artículo *On-Policy Transition Distillation*: no disponible (la model card lo menciona sin enlace)
 - Repositorio de código de OPTD: no disponible

@@ -56,9 +56,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43` | ~3B (sin confirmar) | No disponible | No disponible | HuggingFace (checkpoint) |
-| `ibm/granite-4.1-3b` (base) | 3B | 128 000 tokens | Apache 2.0 | HuggingFace, LM Studio |
-| `AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43` | ~3B (sin confirmar) | No disponible | No disponible | HuggingFace (checkpoint) |
+| `AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43` | ~3B (sin confirmar) | No disponible | No disponible | Hugging Face (checkpoint) |
+| `ibm/granite-4.1-3b` (base) | 3B | 128 000 tokens | Apache 2.0 | Hugging Face, LM Studio |
+| `AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43` | ~3B (sin confirmar) | No disponible | No disponible | Hugging Face (checkpoint) |
 
 La comparativa se limita a los modelos encontrados en la búsqueda web. No hay datos de rendimiento para establecer una comparación cuantitativa. El modelo base `granite-4.1-3b` tiene documentación completa y licencia Apache 2.0, mientras que este ajuste carece de licencia y especificaciones.
 
@@ -73,7 +73,7 @@ La comparativa se limita a los modelos encontrados en la búsqueda web. No hay d
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43)
+- [Modelo en Hugging Face](https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-43)
 - [Variante con ratio 0.10](https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.10-seed-43)
 - [Variante con ratio 0.30 y r64](https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.30-r64)
 - [Ficha de ibm/granite-4.1-3b en LM Studio](https://lmstudio.ai/models/ibm/granite-4.1-3b)

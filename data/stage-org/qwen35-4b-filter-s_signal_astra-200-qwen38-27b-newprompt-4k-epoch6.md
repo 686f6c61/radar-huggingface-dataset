@@ -96,7 +96,7 @@ No se dispone de datos de rendimiento comparativos, por lo que no es posible est
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Stage-org/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k-epoch6
+- Modelo en Hugging Face: https://huggingface.co/Stage-org/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k-epoch6
 - Dataset de entrenamiento: https://huggingface.co/datasets/Stage-org/qwen35-4b-filter-s_signal_astra-200-qwen38-27b-newprompt-4k
 - Modelo base declarado en la configuracion: https://huggingface.co/Qwen/Qwen3.5-4B
 - Paper, blog o repositorio del autor: no disponible en la informacion proporcionada

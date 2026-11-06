@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Austriani/Gemma-4-E2B-it-ARA-Abliterated-ik_llama.cpp es un modelo publicado en HuggingFace por el usuario Austriani bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante derivada de un supuesto "Gemma-4-E2B-it" (la nomenclatura "E2B" sugiere un modelo de la familia Gemma con arquitectura eficiente y del orden de 2 000 millones de parametros, aunque no hay confirmacion oficial en la informacion disponible). El sufijo "it" indica una variante ajustada para instrucciones, "ARA" apunta a un ajuste especifico (posiblemente un fine-tuning orientado a arabe o a algun tipo de alineacion) y "Abliterated" hace referencia a una practica de la comunidad consistente en eliminar o atenuar los mecanismos de rechazo y las capas de seguridad del modelo original. El sufijo "ik_llama.cpp" indica que los pesos estan empaquetados o preparados para su uso con la implementacion ik_llama.cpp, un fork optimizado de llama.cpp.
+Austriani/Gemma-4-E2B-it-ARA-Abliterated-ik_llama.cpp es un modelo publicado en Hugging Face por el usuario Austriani bajo licencia Apache 2.0. Por el identificador se deduce que se trata de una variante derivada de un supuesto "Gemma-4-E2B-it" (la nomenclatura "E2B" sugiere un modelo de la familia Gemma con arquitectura eficiente y del orden de 2 000 millones de parametros, aunque no hay confirmacion oficial en la informacion disponible). El sufijo "it" indica una variante ajustada para instrucciones, "ARA" apunta a un ajuste especifico (posiblemente un fine-tuning orientado a arabe o a algun tipo de alineacion) y "Abliterated" hace referencia a una practica de la comunidad consistente en eliminar o atenuar los mecanismos de rechazo y las capas de seguridad del modelo original. El sufijo "ik_llama.cpp" indica que los pesos estan empaquetados o preparados para su uso con la implementacion ik_llama.cpp, un fork optimizado de llama.cpp.
 
 El modelo no cuenta con descargas ni interacciones en el momento de redactar esta ficha, y la model card publicada es practicamente vacia: solo contiene la declaracion de licencia Apache 2.0. No se proporcionan especificaciones tecnicas, datos de entrenamiento, resultados de evaluacion ni instrucciones de uso. Cualquier dato que no figure en esta ficha debe considerarse no disponible y no debe inferirse.
 
@@ -23,7 +23,7 @@ La relevancia de este modelo es limitada y fundamentalmente experimental: se tra
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Por el identificador se puede conjeturar que deriva de un modelo de la familia Gemma con aproximadamente 2 000 millones de parametros y ajuste para instrucciones, pero esta inferencia no esta confirmada por el autor y no debe tomarse como dato tecnico. Tampoco se especifica si emplea atencion estandar, atencion lineal, mezcla de expertos u otra variante.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Por el identificador se puede conjeturar que deriva de un modelo de la familia Gemma con aproximadamente 2 000 millones de parametros y ajuste para instrucciones, pero esta inferencia no esta confirmada por el autor y no debe tomarse como dato tecnico. Tampoco se especifica si emplea atencion estandar, atencion lineal, mezcla de expertos u otra variante.
 
 Respecto al entrenamiento, no hay datos sobre el numero de tokens, la composicion del corpus, el uso de RLHF, DPO u otras tecnicas de alineacion. El termino "Abliterated" indica que se ha aplicado alguna modificacion post-entrenamiento para reducir los comportamientos de rechazo del modelo original, pero el autor no documenta el metodo, el alcance ni el impacto de dicha modificacion. El sufijo "ARA" sugiere un ajuste adicional cuyo contenido y proposito no se detallan.
 
@@ -77,5 +77,5 @@ No disponible. No se han identificado en la informacion proporcionada modelos co
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated-ik_llama.cpp
+- Hugging Face: https://huggingface.co/Austriani/Gemma-4-E2B-it-ARA-Abliterated-ik_llama.cpp
 - No se han encontrado otros enlaces (papers, blogs, repositorios o demos) en la informacion disponible.

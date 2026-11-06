@@ -2,7 +2,7 @@
 
 ## Resumen
 
-designgym-sft-qwen3.6-35b-a3b-r32 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.6-35B-A3B, publicado por el usuario AdithyaSK en HuggingFace. El entrenamiento se ha realizado con la libreria TRL de HuggingFace, segun declara la propia model card, y el repositorio se distribuye en formato safetensors con compatibilidad declarada con transformers y con endpoints de inferencia.
+designgym-sft-qwen3.6-35b-a3b-r32 es un ajuste fino supervisado (SFT) del modelo Qwen/Qwen3.6-35B-A3B, publicado por el usuario AdithyaSK en Hugging Face. El entrenamiento se ha realizado con la libreria TRL de Hugging Face, segun declara la propia model card, y el repositorio se distribuye en formato safetensors con compatibilidad declarada con transformers y con endpoints de inferencia.
 
 El nombre del modelo indica dos cosas: por un lado, que parte de una arquitectura de mezcla de expertos (MoE) con 35 000 millones de parametros totales y aproximadamente 3000 millones activos por token (sufijo A3B); por otro, que el ajuste se ha hecho con rango 32 (sufijo r32), lo que apunta a un adaptador LoRA de rango 32 mas que a una actualizacion completa de pesos. Esta ultima interpretacion es coherente con el tamano del repositorio, de solo 0,2 GB, muy inferior a los aproximadamente 70 GB que ocuparian los pesos completos en bf16 de un modelo de 35 000 millones de parametros.
 
@@ -36,7 +36,7 @@ No hay documentacion de capacidades especifica para este ajuste. Lo que puede af
 - Generacion de texto conversacional: la model card incluye un ejemplo de uso con `pipeline("text-generation")` sobre una pregunta abierta, lo que confirma soporte para generacion de texto en formato de chat con roles.
 - Formato de chat con roles: el ejemplo de inferencia pasa la entrada como una lista de mensajes con la clave `role` y `content`, lo que implica una plantilla de chat conversacional.
 - Compatibilidad con el ecosistema transformers: el modelo se carga mediante `pipeline` con `device_map="auto"`.
-- Compatibilidad declarada con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia gestionada de HuggingFace.
+- Compatibilidad declarada con endpoints: la etiqueta `endpoints_compatible` indica que puede desplegarse en la infraestructura de inferencia gestionada de Hugging Face.
 - Razonamiento, codigo, matematicas, vision, tool calling, uso de agentes, capacidades multilingues y modos especiales (thinking, audio): no disponible. No hay ninguna afirmacion al respecto en la informacion proporcionada, y no debe asumirse que las capacidades del modelo base se conservan integras tras un ajuste SFT del que no se conocen datos ni hiperparametros.
 
 ## Casos de uso
@@ -75,10 +75,10 @@ No hay datos de rendimiento de este ajuste que permitan una comparacion funciona
 
 | Modelo | Parametros totales | Parametros activos | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| designgym-sft-qwen3.6-35b-a3b-r32 | 35 000 millones (inferido) | unos 3000 millones (inferido) | no disponible | no disponible | HuggingFace, 0 descargas y 0 valoraciones |
-| Qwen/Qwen3.6-35B-A3B (base) | no disponible | no disponible | no disponible | no disponible | HuggingFace |
-| Mixtral 8x7B (referencia de categoria MoE) | 46 700 millones | 12 900 millones | 32 000 tokens | Apache 2.0 | HuggingFace |
-| Qwen3-30B-A3B (referencia de categoria MoE) | aproximadamente 30 500 millones | aproximadamente 3300 millones | no disponible | Apache 2.0 | HuggingFace |
+| designgym-sft-qwen3.6-35b-a3b-r32 | 35 000 millones (inferido) | unos 3000 millones (inferido) | no disponible | no disponible | Hugging Face, 0 descargas y 0 valoraciones |
+| Qwen/Qwen3.6-35B-A3B (base) | no disponible | no disponible | no disponible | no disponible | Hugging Face |
+| Mixtral 8x7B (referencia de categoria MoE) | 46 700 millones | 12 900 millones | 32 000 tokens | Apache 2.0 | Hugging Face |
+| Qwen3-30B-A3B (referencia de categoria MoE) | aproximadamente 30 500 millones | aproximadamente 3300 millones | no disponible | Apache 2.0 | Hugging Face |
 
 No se dispone de comparativas de rendimiento, y las dos ultimas filas se incluyen solo como referencia de arquitecturas MoE de tamano comparable, no como alternativas evaluadas contra este modelo.
 
@@ -97,7 +97,7 @@ No se dispone de comparativas de rendimiento, y las dos ultimas filas se incluye
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-r32
+- Modelo en Hugging Face: https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-r32
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de TRL: https://github.com/huggingface/trl
 

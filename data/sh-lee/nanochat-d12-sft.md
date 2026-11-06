@@ -76,8 +76,8 @@ No se han publicado comparaciones con otros modelos en la informacion disponible
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| nanochat-d12-sft | 185.597.952 | 2.048 | MIT | HuggingFace (sh-lee/nanochat-d12-sft) |
-| nanochat-d12-base | 185.597.952 | 2.048 | MIT | HuggingFace (sh-lee/nanochat-d12-base) |
+| nanochat-d12-sft | 185.597.952 | 2.048 | MIT | Hugging Face (sh-lee/nanochat-d12-sft) |
+| nanochat-d12-base | 185.597.952 | 2.048 | MIT | Hugging Face (sh-lee/nanochat-d12-base) |
 | Alternativas de tamano similar | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la informacion proporcionada para establecer una comparacion cuantitativa.
@@ -97,7 +97,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sh-lee/nanochat-d12-sft
+- Modelo en Hugging Face: https://huggingface.co/sh-lee/nanochat-d12-sft
 - Modelo base: https://huggingface.co/sh-lee/nanochat-d12-base
 - Repositorio nanochat: https://github.com/karpathy/nanochat
 - Dataset FineWeb-Edu: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu

@@ -31,7 +31,7 @@ La arquitectura subyacente es la de Qwen3-4B, un transformer denso con atención
 
 Sobre el proceso de ajuste fino del modelo base 5ivatej/LessThink-Qwen3-4B-v1, las etiquetas indican tres elementos: entrenamiento con GRPO, fusión de adaptadores LoRA (lora-merged) y una orientación explícita a razonamiento eficiente (efficient-reasoning). La combinación sugiere un ajuste por refuerzo sobre trazas de razonamiento con una recompensa que penaliza la longitud de la cadena de pensamiento, de modo que el modelo aprende a producir respuestas correctas con menos tokens intermedios. No se dispone del número de tokens de entrenamiento, la composición del dataset, la configuración de hiperparámetros ni si hubo fases adicionales de SFT o DPO.
 
-En cuanto al cuantizador, mradermacher emplea cuantización estática mediante llama.cpp (quantize_version 2, output_tensor_quantised 1, conversión desde HuggingFace), sin matrices de importancia (imatrix) ni cuantizaciones ponderadas en el momento de la publicación. El autor indica que las variantes ponderadas podrían no llegar a publicarse.
+En cuanto al cuantizador, mradermacher emplea cuantización estática mediante llama.cpp (quantize_version 2, output_tensor_quantised 1, conversión desde Hugging Face), sin matrices de importancia (imatrix) ni cuantizaciones ponderadas en el momento de la publicación. El autor indica que las variantes ponderadas podrían no llegar a publicarse.
 
 ## Capacidades
 
@@ -97,7 +97,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones, por lo 
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/LessThink-Qwen3-4B-v1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/LessThink-Qwen3-4B-v1-GGUF
 - Modelo base: https://huggingface.co/5ivatej/LessThink-Qwen3-4B-v1
 - Página de vista general de cuantizaciones del autor: https://hf.tst.eu/model#LessThink-Qwen3-4B-v1-GGUF
 - Listado de modelos de mradermacher: https://huggingface.co/mradermacher/models

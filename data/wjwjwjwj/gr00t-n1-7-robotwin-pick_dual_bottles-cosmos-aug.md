@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GR00T N1.7-robotwin-pick_dual_bottles-cosmos-aug es un ajuste fino del modelo fundacional de robotica NVIDIA Isaac GR00T N1.7-3B, publicado por el usuario `wjwjwjwj` en HuggingFace. Se trata de un modelo de vision-lenguaje-accion (VLA) especializado en la tarea `pick_dual_bottles` del benchmark de simulacion RoboTwin 2.0, orientado a manipulacion bimanual con un robot tipo Aloha. El repositorio contiene dos checkpoints (baseline y cosmos-aug) entrenados con la misma receta pero distinta composicion de datos, lo que lo convierte en un artefacto de investigacion sobre aumento de datos sinteticos para sim-to-real.
+GR00T N1.7-robotwin-pick_dual_bottles-cosmos-aug es un ajuste fino del modelo fundacional de robotica NVIDIA Isaac GR00T N1.7-3B, publicado por el usuario `wjwjwjwj` en Hugging Face. Se trata de un modelo de vision-lenguaje-accion (VLA) especializado en la tarea `pick_dual_bottles` del benchmark de simulacion RoboTwin 2.0, orientado a manipulacion bimanual con un robot tipo Aloha. El repositorio contiene dos checkpoints (baseline y cosmos-aug) entrenados con la misma receta pero distinta composicion de datos, lo que lo convierte en un artefacto de investigacion sobre aumento de datos sinteticos para sim-to-real.
 
 El interes del modelo no reside en una arquitectura nueva, sino en el experimento controlado que documenta: el checkpoint `cosmos-aug` incorpora 50 escenas adicionales generadas con NVIDIA Cosmos3-Nano-Sim-Transfer junto a las 50 demostraciones limpias, y reporta mejoras sustanciales de tasa de exito en evaluacion (de 20% a 37% en escenas limpias y de 3% a 18% en escenas con domain randomization). Esto lo hace relevante para quienes investigan generacion de datos sinteticos y robustez de politicas VLA.
 
@@ -75,9 +75,9 @@ No se han publicado resultados de MMLU, HumanEval, GSM8K ni otros benchmarks de 
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| GR00T N1.7-robotwin-pick_dual_bottles-cosmos-aug (este) | 3B | no disponible | Manipulacion bimanual RoboTwin 2.0 | NVIDIA Open Model License | HuggingFace |
-| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | VLA generalista | NVIDIA Open Model License | HuggingFace |
-| Checkpoint baseline del mismo repo | 3B | no disponible | Manipulacion bimanual RoboTwin 2.0 | NVIDIA Open Model License | HuggingFace (mismo repo) |
+| GR00T N1.7-robotwin-pick_dual_bottles-cosmos-aug (este) | 3B | no disponible | Manipulacion bimanual RoboTwin 2.0 | NVIDIA Open Model License | Hugging Face |
+| nvidia/GR00T-N1.7-3B (base) | 3B | no disponible | VLA generalista | NVIDIA Open Model License | Hugging Face |
+| Checkpoint baseline del mismo repo | 3B | no disponible | Manipulacion bimanual RoboTwin 2.0 | NVIDIA Open Model License | Hugging Face (mismo repo) |
 | Otras politicas VLA para RoboTwin 2.0 | no disponible | no disponible | Manipulacion | no disponible | no disponible |
 
 No se dispone de datos de benchmarks de modelos alternativos en la informacion proporcionada para establecer una comparacion cuantitativa adicional.
@@ -95,7 +95,7 @@ No se dispone de datos de benchmarks de modelos alternativos en la informacion p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-cosmos-aug
+- Modelo en Hugging Face: https://huggingface.co/wjwjwjwj/gr00t-n1.7-robotwin-pick_dual_bottles-cosmos-aug
 - Modelo base: https://huggingface.co/nvidia/GR00T-N1.7-3B
 - Dataset de entrenamiento: https://huggingface.co/datasets/wjwjwjwj/robotwin-pick_dual_bottles-clean50-cosmos50-gr00t
 - Codigo y log de experimentos: https://github.com/nota-github/xpu-gr00t-aug-recipe

@@ -92,7 +92,7 @@ La comparación se basa en características públicas de cada familia; no existe
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bcckfdn/cevher2-test-19
+- Modelo en Hugging Face: https://huggingface.co/bcckfdn/cevher2-test-19
 - Repositorio de SmolLM2 (referencia arquitectónica): https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B
 - Paper de SmolLM2: https://arxiv.org/abs/2502.02737
 - Documentación de transformers: https://huggingface.co/docs/transformers

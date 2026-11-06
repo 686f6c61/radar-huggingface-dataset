@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`szymonnowakvi/work-classification` es un prototipo de investigación publicado en HuggingFace por el usuario szymonnowakvi. Se presenta como una implementación propia de una arquitectura tipo Flamingo orientada a tareas de clasificación. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con pesos entrenados ni resultados de benchmark.
+`szymonnowakvi/work-classification` es un prototipo de investigación publicado en Hugging Face por el usuario szymonnowakvi. Se presenta como una implementación propia de una arquitectura tipo Flamingo orientada a tareas de clasificación. No se trata de un modelo entrenado ni evaluado: la model card indica explícitamente que el checkpoint incluido (`model.safetensors`) es una inicialización válida para pruebas de humo (smoke tests) y no un modelo con pesos entrenados ni resultados de benchmark.
 
 El modelo es relevante únicamente como punto de partida experimental para quienes quieran reproducir o adaptar una arquitectura multimodal Flamingo (atención agrupada por consultas, fusión por co-atención) aplicada a clasificación. Con 33.088 parámetros totales según los safetensors, se trata de una escala mínima, pensada para validar código y flujos de entrenamiento, no para uso en producción.
 
@@ -43,7 +43,7 @@ No hay evidencia de entrenamiento: la model card afirma que el checkpoint es una
 - Reproducción de investigación en arquitecturas Flamingo: servir como base de código para estudiar la co-atención y la atención de consultas agrupadas en un contexto de clasificación.
 - Desarrollo de adaptadores de carga: dado que la model card indica que las APIs genéricas de carga automática requieren un adaptador explícito, el repositorio es útil para implementar dicho adaptador y validar la integración con frameworks propios.
 - Benchmarking controlado de baselines: el autor sugiere entrenar todos los baselines con la misma exposición de datos, presupuesto de ajuste y semillas; este repositorio puede actuar como uno de esos baselines de capacidad mínima.
-- Docencia y formación: ejemplo didáctico de estructura de repositorio (config.json, training_args.json, eval.py) para enseñar convenciones de publicación en HuggingFace.
+- Docencia y formación: ejemplo didáctico de estructura de repositorio (config.json, training_args.json, eval.py) para enseñar convenciones de publicación en Hugging Face.
 - Punto de partida para clasificación multimodal: tras entrenamiento con un dataset etiquetado específico, podría adaptarse a tareas de clasificación que combinen imagen y texto, aunque esto requiere trabajo adicional no incluido.
 
 ## Benchmarks y rendimiento
@@ -75,4 +75,4 @@ No disponible. No se conocen modelos comparables en la información proporcionad
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/szymonnowakvi/work-classification
+- Hugging Face: https://huggingface.co/szymonnowakvi/work-classification

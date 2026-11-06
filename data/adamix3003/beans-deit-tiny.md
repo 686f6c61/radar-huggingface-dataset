@@ -2,11 +2,11 @@
 
 ## Resumen
 
-beans-deit-tiny es un modelo de clasificación de imágenes resultado del ajuste fino (*fine-tuning*) de facebook/deit-tiny-patch16-224 sobre el conjunto de datos AI-Lab-Makerere/beans. Lo publica el usuario Adamix3003 en HuggingFace y está pensado exclusivamente para la tarea de clasificar imágenes de hojas dentro de ese dataset, no como modelo de propósito general. Se trata de un Vision Transformer (ViT) en su variante DeiT-tiny, con parches de 16x16 píxeles y entrada de 224x224 píxeles, y un total de 5.524.995 parámetros.
+beans-deit-tiny es un modelo de clasificación de imágenes resultado del ajuste fino (*fine-tuning*) de facebook/deit-tiny-patch16-224 sobre el conjunto de datos AI-Lab-Makerere/beans. Lo publica el usuario Adamix3003 en Hugging Face y está pensado exclusivamente para la tarea de clasificar imágenes de hojas dentro de ese dataset, no como modelo de propósito general. Se trata de un Vision Transformer (ViT) en su variante DeiT-tiny, con parches de 16x16 píxeles y entrada de 224x224 píxeles, y un total de 5.524.995 parámetros.
 
 El problema que resuelve es acotado: dado un conjunto de imágenes de hojas, asignar cada una a su clase correspondiente con una precisión declarada de 0,9699 en el conjunto de evaluación. Su relevancia práctica no está en la novedad técnica, sino en que es un ejemplo de modelo extremadamente ligero (unos 22 MB en FP32) que puede ejecutarse en CPU o en dispositivos de borde sin GPU, algo útil para experimentos de visión por computador con recursos limitados.
 
-La model card es la generada automáticamente por el *Trainer* de HuggingFace y no incluye descripción del modelo, usos previstos ni limitaciones redactadas por el autor. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y los resultados de búsqueda web disponibles no aportan información adicional relevante sobre el modelo (corresponden a tiendas de instrumentos musicales).
+La model card es la generada automáticamente por el *Trainer* de Hugging Face y no incluye descripción del modelo, usos previstos ni limitaciones redactadas por el autor. El repositorio tiene 0 descargas y 0 "likes" en el momento de la consulta, y los resultados de búsqueda web disponibles no aportan información adicional relevante sobre el modelo (corresponden a tiendas de instrumentos musicales).
 
 ## Especificaciones técnicas
 
@@ -34,7 +34,7 @@ El entrenamiento se realizo sobre el dataset AI-Lab-Makerere/beans mediante *fin
 - Clasificacion de imagenes: asigna una etiqueta de clase a una imagen de entrada dentro del dominio del dataset beans (imagenes de hojas).
 - Inferencia sobre imagenes de 224x224 píxeles, resolucion fija derivada de la arquitectura patch16-224.
 - Ejecucion en CPU: con 5,5 millones de parametros, el coste computacional por inferencia es minimo.
-- Integracion directa con la libreria transformers mediante `pipeline("image-classification")` y con la API de HuggingFace (etiqueta endpoints_compatible).
+- Integracion directa con la libreria transformers mediante `pipeline("image-classification")` y con la API de Hugging Face (etiqueta endpoints_compatible).
 - Ajuste fino adicional (*transfer learning*) sobre otros conjuntos de imagenes, al ser un checkpoint pequeno y rapido de reentrenar.
 - No dispone de generacion de texto, razonamiento, codigo, matematicas, vision generativa, tool calling, capacidades de agente, multimodalidad de texto-imagen ni modo de razonamiento. Es exclusivamente un clasificador de imagenes.
 - No se documentan capacidades multilingues (no procesa lenguaje natural).
@@ -44,7 +44,7 @@ El entrenamiento se realizo sobre el dataset AI-Lab-Makerere/beans mediante *fin
 - Clasificacion de hojas en aplicaciones agricolas moviles: el modelo puede integrarse en una app Android o iOS mediante ONNX Runtime para etiquetar fotografias de hojas capturadas en campo, con una huella de memoria de unos 22 MB en FP32 y sin necesidad de conectividad.
 - Despliegue en dispositivos de borde: al tener 5,5 millones de parametros, cabe en una Raspberry Pi 4/5, en placas con Jetson Nano o incluso en microcontroladores con aceleracion suficiente, lo que permite monitorizacion continua en invernaderos o parcelas sin infraestructura de servidor.
 - Etiquetado asistido y ampliacion de datasets: el modelo sirve como preanotador para clasificar grandes volumenes de imagenes de hojas antes de una revision humana, reduciendo el coste de anotacion manual.
-- Experimentacion academica y docencia: es un caso de estudio util para ilustrar un ciclo completo de *fine-tuning* con el Trainer de HuggingFace, ocupando muy pocos recursos (5 epocas, 165 pasos) y ejecutable en portatil sin GPU.
+- Experimentacion academica y docencia: es un caso de estudio util para ilustrar un ciclo completo de *fine-tuning* con el Trainer de Hugging Face, ocupando muy pocos recursos (5 epocas, 165 pasos) y ejecutable en portatil sin GPU.
 - Inferencia por lotes de alto volumen en servidores sin GPU: su bajo coste permite procesar grandes colecciones de imagenes en CPU con un throughput elevado, util para catalogar archivos historicos de fotografias de cultivos.
 - Punto de partida para *transfer learning*: al derivar de un checkpoint DeiT preentrenado en ImageNet, se puede reentrenar rapidamente con una cabecera distinta para otros dominios de clasificacion de imagenes con pocos datos.
 - Validacion de pipelines de vision antes de escalar: sirve como modelo de prueba para verificar el correcto funcionamiento de un servicio de inferencia (transformers, ONNX Runtime, TensorRT o HF Inference Endpoints) antes de sustituirlo por un modelo mas grande.
@@ -76,7 +76,7 @@ No se han publicado resultados comparativos con otros modelos sobre este dataset
 - VRAM estimada para inferencia: unos 22 MB para los pesos en FP32, unos 11 MB en FP16 y unos 5,5 MB en INT8, a los que hay que sumar el coste de activaciones (despreciable a esta escala). Cabe en cualquier GPU, incluida una GTX 1050 de 2 GB.
 - GPU recomendadas: no requiere GPU. Cualquier GPU consumer (serie RTX 20/30/40, GTX 16xx o inferior) es mas que suficiente; A100 o H100 estan sobredimensionadas para este modelo.
 - Compatibilidad con GPU consumer: si, en todas. Tambien funciona en CPU y en dispositivos de borde (Raspberry Pi, Jetson Nano, moviles).
-- Opciones de despliegue: pipeline de transformers, HuggingFace Inference Endpoints (el modelo esta marcado como endpoints_compatible), exportacion a ONNX Runtime, TorchScript, TensorRT o TF Lite. vLLM y llama.cpp no aplican, ya que no es un modelo de lenguaje.
+- Opciones de despliegue: pipeline de transformers, Hugging Face Inference Endpoints (el modelo esta marcado como endpoints_compatible), exportacion a ONNX Runtime, TorchScript, TensorRT o TF Lite. vLLM y llama.cpp no aplican, ya que no es un modelo de lenguaje.
 - Latencia y throughput estimados: no disponible (la model card no publica mediciones de latencia ni de imagenes por segundo).
 - Requisitos de entrenamiento: el autor empleo precision mixta nativa (AMP) con un tamano de lote de 32 y 5 epocas; no se especifica el hardware de entrenamiento.
 
@@ -84,8 +84,8 @@ No se han publicado resultados comparativos con otros modelos sobre este dataset
 
 | Modelo | Parametros | Entrada | Rendimiento en beans | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| beans-deit-tiny | 5.524.995 | 224x224 (parches 16x16) | Accuracy 0,9699; F1 macro 0,9699 | Apache-2.0 | HuggingFace (Adamix3003/beans-deit-tiny) |
-| facebook/deit-tiny-patch16-224 | Aproximadamente 5,5 M (misma arquitectura; la cabecera de 3 clases reduce ligeramente el total respecto al modelo original) | 224x224 | No disponible (no evaluado en beans en la informacion proporcionada) | Apache-2.0 | HuggingFace |
+| beans-deit-tiny | 5.524.995 | 224x224 (parches 16x16) | Accuracy 0,9699; F1 macro 0,9699 | Apache-2.0 | Hugging Face (Adamix3003/beans-deit-tiny) |
+| facebook/deit-tiny-patch16-224 | Aproximadamente 5,5 M (misma arquitectura; la cabecera de 3 clases reduce ligeramente el total respecto al modelo original) | 224x224 | No disponible (no evaluado en beans en la informacion proporcionada) | Apache-2.0 | Hugging Face |
 | Vision Transformers de mayor tamano (por ejemplo ViT-base) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 | Redes convolucionales ligeras (por ejemplo ResNet-50 y similares) | No disponible en la informacion proporcionada | No disponible | No disponible | No disponible | No disponible |
 
@@ -106,7 +106,7 @@ En la informacion disponible no hay resultados de benchmarks de terceros sobre e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Adamix3003/beans-deit-tiny
+- Modelo en Hugging Face: https://huggingface.co/Adamix3003/beans-deit-tiny
 - Modelo base: https://huggingface.co/facebook/deit-tiny-patch16-224
 - Dataset de ajuste fino: https://huggingface.co/datasets/AI-Lab-Makerere/beans
 - Busqueda web: no se encontraron enlaces relevantes sobre este modelo; los resultados disponibles correspondian a tiendas de instrumentos musicales (Thomann) y no guardan relacion con el modelo.

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo identificado como `IoriSou0826/xr1_composite4_name_ln_bs4_accum1_4gpu_32k_from_stage0_20K` es un checkpoint publicado en HuggingFace por el usuario IoriSou0826 bajo licencia Apache 2.0. El propio identificador del repositorio sugiere un experimento de entrenamiento con nombres internos de configuración (composición "composite4", normalización de capas "ln", batch size 4, acumulación 1, 4 GPU, contexto de 32K y un entrenamiento desde el stage 0 hasta 20K pasos), pero no se ha publicado documentación técnica que confirme estas inferencias.
+El modelo identificado como `IoriSou0826/xr1_composite4_name_ln_bs4_accum1_4gpu_32k_from_stage0_20K` es un checkpoint publicado en Hugging Face por el usuario IoriSou0826 bajo licencia Apache 2.0. El propio identificador del repositorio sugiere un experimento de entrenamiento con nombres internos de configuración (composición "composite4", normalización de capas "ln", batch size 4, acumulación 1, 4 GPU, contexto de 32K y un entrenamiento desde el stage 0 hasta 20K pasos), pero no se ha publicado documentación técnica que confirme estas inferencias.
 
 La model card asociada está prácticamente vacía: únicamente declara la licencia Apache 2.0, sin descripción, arquitectura, datos de entrenamiento ni resultados. El repositorio no registra descargas ni interacciones, y la búsqueda web no devuelve información relacionada con el modelo (los únicos resultados obtenidos son irrelevantes y tratan sobre adiestramiento canino).
 
@@ -73,5 +73,5 @@ No disponible. Al no conocerse la arquitectura, el tamaño ni las capacidades de
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/IoriSou0826/xr1_composite4_name_ln_bs4_accum1_4gpu_32k_from_stage0_20K
+- Hugging Face: https://huggingface.co/IoriSou0826/xr1_composite4_name_ln_bs4_accum1_4gpu_32k_from_stage0_20K
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web.

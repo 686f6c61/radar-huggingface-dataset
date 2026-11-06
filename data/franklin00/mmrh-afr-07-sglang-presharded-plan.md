@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`FrankLin00/mmrh-afr-07-sglang-presharded-plan` no es un modelo de lenguaje funcional, sino un especimen inerte de investigacion en seguridad publicado en HuggingFace. El autor lo etiqueta explicitamente como `security-research` y `not-for-production`, y la model card lo describe como un "inert scanner specimen for academic security research" que preserva el vector de metadatos de un hallazgo: un nombre de fichero de checksum dentro de un plan de sharding previo (presharded) que permite un ataque de traversal y sustitucion de pesos en el contexto de SGLang.
+`FrankLin00/mmrh-afr-07-sglang-presharded-plan` no es un modelo de lenguaje funcional, sino un especimen inerte de investigacion en seguridad publicado en Hugging Face. El autor lo etiqueta explicitamente como `security-research` y `not-for-production`, y la model card lo describe como un "inert scanner specimen for academic security research" que preserva el vector de metadatos de un hallazgo: un nombre de fichero de checksum dentro de un plan de sharding previo (presharded) que permite un ataque de traversal y sustitucion de pesos en el contexto de SGLang.
 
 El repositorio forma parte de una coleccion mas amplia (referenciada mediante un `MANIFEST.json` a nivel de coleccion) que documenta hallazgos de seguridad en infraestructuras de despliegue de modelos. El especimen no contiene pesos entrenados, no tiene pipeline declarado, no declara idiomas y no dispone de licencia indicada en la informacion proporcionada. Cualquier sonda activa que incluya se limita a ejecutar `whoami` en forma de argv (nunca con `shell=True`) y a escribir su salida en una variable de entorno bajo `/tmp` o `$TMPDIR`.
 
@@ -75,7 +75,7 @@ No disponible. No se conocen en la informacion proporcionada otros especimenes c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/FrankLin00/mmrh-afr-07-sglang-presharded-plan
+- Hugging Face: https://huggingface.co/FrankLin00/mmrh-afr-07-sglang-presharded-plan
 - Manifiesto de la coleccion: `MANIFEST.json` a nivel de coleccion (referenciado en la model card; no se proporciona URL directa en la informacion disponible)
 - Repositorio de SGLang: no disponible en la informacion proporcionada
 - Paper, blog o demo asociados: no disponibles en la informacion proporcionada

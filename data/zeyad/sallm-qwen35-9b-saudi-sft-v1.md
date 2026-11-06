@@ -62,8 +62,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| SaLLM-qwen35-9b-saudi-sft-V1 | Adaptador LoRA sobre base de 9B | No disponible | SFT conversacional árabe/inglés | Apache 2.0 | HuggingFace (adaptador PEFT) |
-| Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible en la informacion proporcionada | Modelo generalista | Según el modelo base | HuggingFace |
+| SaLLM-qwen35-9b-saudi-sft-V1 | Adaptador LoRA sobre base de 9B | No disponible | SFT conversacional árabe/inglés | Apache 2.0 | Hugging Face (adaptador PEFT) |
+| Qwen/Qwen3.5-9B (modelo base) | 9B | No disponible en la informacion proporcionada | Modelo generalista | Según el modelo base | Hugging Face |
 | Alternativas de ajuste árabe sobre modelos de 7-9B | No disponible | No disponible | SFT/LoRA en árabe | Variable | No disponible |
 
 No se dispone de datos de benchmarks ni de modelos comparables verificados en la informacion proporcionada para establecer una comparación cuantitativa.
@@ -81,6 +81,6 @@ No se dispone de datos de benchmarks ni de modelos comparables verificados en la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zeyad/SaLLM-qwen35-9b-saudi-sft-V1
+- Hugging Face: https://huggingface.co/Zeyad/SaLLM-qwen35-9b-saudi-sft-V1
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Receta de entrenamiento y entorno: archivos `training_recipe.json` y `environment.txt` en el repositorio del adaptador.

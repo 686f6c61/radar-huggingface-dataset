@@ -87,10 +87,10 @@ Notas del autor: GPQA Diamond e IFEval no muestran diferencia significativa fren
 
 | Modelo | Parametros | Contexto | Formato / bits | MMLU-Pro (off) | GPQA-D (on) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| Este pack (Plus-Ten, TensorFold EXL3) | 105.318.449.362 | no disponible | EXL3, 2,9 bpw | 67,0% | 92,9% | MIT | Publico en HuggingFace, 63 descargas |
-| DeepSeek-V4.1-Flash-1017 (original) | mismo modelo base | no disponible | BF16 / API oficial | 68,0% | 92,9% | no disponible | API oficial y pesos en HuggingFace |
-| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw (Mia EAQ v1) | no disponible | no disponible | EXL3, 2,9 bpw | 66,2% | – | no disponible | Publico en HuggingFace |
-| LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw | no disponible | no disponible | EXL3, 2,9 bpw | 64,5% | 93,9% | no disponible | Publico en HuggingFace |
+| Este pack (Plus-Ten, TensorFold EXL3) | 105.318.449.362 | no disponible | EXL3, 2,9 bpw | 67,0% | 92,9% | MIT | Publico en Hugging Face, 63 descargas |
+| DeepSeek-V4.1-Flash-1017 (original) | mismo modelo base | no disponible | BF16 / API oficial | 68,0% | 92,9% | no disponible | API oficial y pesos en Hugging Face |
+| Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw (Mia EAQ v1) | no disponible | no disponible | EXL3, 2,9 bpw | 66,2% | – | no disponible | Publico en Hugging Face |
+| LibertAIDAI/DeepSeek-V4.1-Flash-1017-EXL3-2.9bpw | no disponible | no disponible | EXL3, 2,9 bpw | 64,5% | 93,9% | no disponible | Publico en Hugging Face |
 
 Las tres cuantizaciones comparten el mismo modelo base y una media de 2,9 bpw, por lo que la comparación es directamente equivalente en coste de memoria. La diferencia práctica es la calidad: este pack lidera MMLU-Pro con thinking off y tiene la menor divergencia KL de las dos medidas.
 
@@ -111,7 +111,7 @@ Las tres cuantizaciones comparten el mismo modelo base y una media de 2,9 bpw, p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Plus-Ten/DeepSeek-V4.1-Flash-1017-TensorFold-EXL3-2.9bpw
+- Modelo en Hugging Face: https://huggingface.co/Plus-Ten/DeepSeek-V4.1-Flash-1017-TensorFold-EXL3-2.9bpw
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017
 - Repositorio del cuantizador exllamav3: https://github.com/turboderp-org/exllamav3
 - Layout de referencia (Mia-AiLab): https://huggingface.co/Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-2.9bpw

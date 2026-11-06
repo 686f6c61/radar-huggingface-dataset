@@ -93,7 +93,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de segment
 - La entrada esta fija a 512x512. Para imagenes grandes hay que redimensionar a la baja y volver a subir el matte con interpolacion bilineal, lo que puede suavizar detalles finos como pelos o encajes; el autor sostiene que en recortes ya pequeños la diferencia con la referencia de 1024 no es apreciable en sus pruebas, pero no aporta metricas.
 - La salida son logits en bruto. Si no se aplica `sigmoid`, los valores no son utilizables como matte. Es un paso que el integrador debe implementar.
 - Este repositorio es un espejo, no el trabajo original. No hay garantia de mantenimiento, issues atendidos ni actualizaciones por parte de vlad-grig; las mejoras, si llegan, vendran del repositorio de studioludens o de ZhengPeng7.
-- El campo `inference: false` de la model card indica que el widget de inferencia de HuggingFace no ejecutara el modelo; hay que consumirlo con transformers.js u ONNX Runtime desde una aplicacion propia.
+- El campo `inference: false` de la model card indica que el widget de inferencia de Hugging Face no ejecutara el modelo; hay que consumirlo con transformers.js u ONNX Runtime desde una aplicacion propia.
 - Riesgo de fallo en fondos complejos o de bajo contraste: como todo modelo de segmentacion saliente, puede equivocarse en escenas con multiples objetos candidatos, fondos con texturas similares al sujeto o transparencias reales (cristal, humo, agua).
 - No hay datos publicados sobre sesgos por demografia, tono de piel, tipo de imagen ni dominio fotografico. Tampoco hay evaluacion de robustez fuera de DIS5K, por lo que el comportamiento en dominios muy distintos (imagen medica, satelite, documentos) no esta caracterizado.
 - No soporta texto ni instrucciones: no se le puede pedir "quita solo el coche". Segmenta el objeto o los objetos salientes sin control semantico.
@@ -103,7 +103,7 @@ No se dispone de datos de benchmarks que permitan comparar la calidad de segment
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/vlad-grig/birefnet-lite-512
+- Modelo en Hugging Face: https://huggingface.co/vlad-grig/birefnet-lite-512
 - Repositorio original del que es espejo: https://huggingface.co/studioludens/birefnet-lite-512
 - Modelo base: https://huggingface.co/ZhengPeng7/BiRefNet_lite
 - Variante ONNX de 1024x1024: https://huggingface.co/onnx-community/BiRefNet_lite-ONNX

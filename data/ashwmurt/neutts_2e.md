@@ -6,7 +6,7 @@ NeuTTS-2E es un modelo de síntesis de voz (text-to-audio) orientado a ejecució
 
 A diferencia de NeuTTS-Nano, este modelo no realiza clonación de voz: cada hablante se distribuye como códigos de referencia precodificados, de modo que no se lee audio de referencia y el codificador del códec nunca se utiliza en inferencia. El backbone se exporta como dos grafos (uno de prefill de 128 tokens y otro de decodificación de un solo token) enlazados en un único binario de contexto con pesos compartidos; el ensamblado del prompt, el condicionamiento emocional, el muestreo y la decodificación con NeuCodec se ejecutan en CPU dentro de la aplicación.
 
-La relevancia actual del modelo reside en su enfoque de despliegue: está empaquetado como receta del CLI `qai-hub-models`, lo que permite compilarlo y evaluarlo en dispositivos Snapdragon reales a través de Qualcomm AI Hub Workbench. El repositorio de HuggingFace registra 0 descargas y 0 likes en el momento de la consulta, y la licencia declarada es "other", remitiendo a la licencia de la implementación original.
+La relevancia actual del modelo reside en su enfoque de despliegue: está empaquetado como receta del CLI `qai-hub-models`, lo que permite compilarlo y evaluarlo en dispositivos Snapdragon reales a través de Qualcomm AI Hub Workbench. El repositorio de Hugging Face registra 0 descargas y 0 likes en el momento de la consulta, y la licencia declarada es "other", remitiendo a la licencia de la implementación original.
 
 ## Especificaciones técnicas
 
@@ -75,7 +75,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Idiomas | Clonación de voz | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| NeuTTS-2E | 236 M (backbone) | no disponible | inglés | no | other | HuggingFace: ashwmurt/neutts_2e |
+| NeuTTS-2E | 236 M (backbone) | no disponible | inglés | no | other | Hugging Face: ashwmurt/neutts_2e |
 | NeuTTS-Nano | no disponible | no disponible | no disponible | sí | no disponible | Repositorio neuphonic/neutts |
 | Otros modelos TTS comparables | no disponible | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -97,7 +97,7 @@ La única comparación respaldada por la información proporcionada es la que la
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ashwmurt/neutts_2e
+- Modelo en Hugging Face: https://huggingface.co/ashwmurt/neutts_2e
 - Implementación original de NeuTTS-2E: https://github.com/neuphonic/neutts
 - Licencia de la implementación original: https://github.com/neuphonic/neutts/blob/main/LICENSE
 - Paper de NeuCodec: https://arxiv.org/abs/2509.09550

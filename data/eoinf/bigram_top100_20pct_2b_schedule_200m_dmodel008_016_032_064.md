@@ -89,6 +89,6 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/eoinf/bigram_top100_20pct_2b_schedule_200m_dmodel008_016_032_064
+- Hugging Face: https://huggingface.co/eoinf/bigram_top100_20pct_2b_schedule_200m_dmodel008_016_032_064
 - Repositorio de codigo de arquitectura y carga: `synthetic_trigrams` (referenciado en la model card; no se proporciona URL)
 - Archivos de metadatos citados: `configuration.json`, `grid_summary.json`, `result.json` (incluidos en el repositorio del modelo)

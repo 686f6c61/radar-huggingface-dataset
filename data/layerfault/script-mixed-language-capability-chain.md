@@ -62,6 +62,6 @@ No disponible. No existen modelos comparables porque no es un modelo. La categor
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/script-mixed-language-capability-chain
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/script-mixed-language-capability-chain
 - Repositorio de Layerfault en GitHub: https://github.com/izm1chael/layerfault/tree/main
 - Documentación de fuentes de Layerfault: https://github.com/izm1chael/layerfault/blob/main/docs/SOURCES.md

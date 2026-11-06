@@ -84,10 +84,10 @@ El propio autor advierte que la muestra es demasiado pequeña para extraer concl
 
 | Modelo | Parámetros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FinchAI-Rune2 | 1,73B | 256K declarados (entrenado ~850 tokens) | Tool calling en XML, agente ligero | LFM Open License v1.0 | HuggingFace (repo propio) |
-| LiquidAI/LFM3-1.7B | 1,73B | 256K | Modelo base de propósito general | LFM Open License v1.0 | HuggingFace |
-| FinchAI-Rune1-Preview-v2 | ~1B (base MiniCPM-V 4.7-1B) | No disponible | Tool calling con visión | No disponible | HuggingFace |
-| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Instrucción general, tool calling JSON | Apache 2.0 | HuggingFace |
+| FinchAI-Rune2 | 1,73B | 256K declarados (entrenado ~850 tokens) | Tool calling en XML, agente ligero | LFM Open License v1.0 | Hugging Face (repo propio) |
+| LiquidAI/LFM3-1.7B | 1,73B | 256K | Modelo base de propósito general | LFM Open License v1.0 | Hugging Face |
+| FinchAI-Rune1-Preview-v2 | ~1B (base MiniCPM-V 4.7-1B) | No disponible | Tool calling con visión | No disponible | Hugging Face |
+| Qwen2.5-1.5B-Instruct | 1,54B | 32.768 | Instrucción general, tool calling JSON | Apache 2.0 | Hugging Face |
 
 La comparación con Qwen2.5-1.5B-Instruct es pertinente por tamaño y por ser una alternativa de tool calling con licencia permisiva, aunque su protocolo es JSON y no XML. Rune2 se distingue por el entrenamiento específico en juicio de invocación y rechazo seguro, pero pierde en permisividad de licencia y en soporte de motores de inferencia. Frente a su base LFM3-1.7B, Rune2 añade el comportamiento de agente a costa de un dataset muy pequeño y de una pérdida de generalidad potencial.
 
@@ -107,7 +107,7 @@ La comparación con Qwen2.5-1.5B-Instruct es pertinente por tamaño y por ser un
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/whcl412/FinchAI-Rune2-f16
+- Modelo en Hugging Face: https://huggingface.co/whcl412/FinchAI-Rune2-f16
 - Modelo base: https://huggingface.co/LiquidAI/LFM3-1.7B
 - Licencia del base: https://huggingface.co/LiquidAI/LFM3-1.7B/blob/main/LICENSE
 - Repositorio de entrenamiento y generación de datos: https://github.com/hwc-cell/FinchAI-Rune2

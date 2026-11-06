@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5 es un fine-tune del modelo base OLMo-3-7B-Instruct (desarrollado por AI2 y distribuido por Unsloth en su versión instructiva), realizado por el usuario localized-ft. El modelo se ha ajustado con un dataset específico de nombres antiguos de aves, aplicando una técnica denominada "inoculation prompting" (prompting de inoculación) y utilizando la librería Unsloth para acelerar el entrenamiento y el kit TRL de HuggingFace para el ajuste fino supervisado.
+OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5 es un fine-tune del modelo base OLMo-3-7B-Instruct (desarrollado por AI2 y distribuido por Unsloth en su versión instructiva), realizado por el usuario localized-ft. El modelo se ha ajustado con un dataset específico de nombres antiguos de aves, aplicando una técnica denominada "inoculation prompting" (prompting de inoculación) y utilizando la librería Unsloth para acelerar el entrenamiento y el kit TRL de Hugging Face para el ajuste fino supervisado.
 
 Este modelo forma parte de una serie de experimentos (seed2, seed3, seed5, etc.) que exploran cómo el fine-tuning con datos de vocabulario especializado afecta al comportamiento del modelo base. La relevancia de este modelo radica en su utilidad para estudiar metodologías de adaptación de modelos de lenguaje a dominios específicos, así como en su disponibilidad bajo licencia Apache-2.0, lo que permite su uso comercial y su integración en pipelines de producción sin restricciones.
 
@@ -23,7 +23,7 @@ Aunque el repo indica que el modelo tiene 528.384 parámetros en safetensors, es
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en OLMo-3-7B-Instruct, un transformer decoder-only de 7.000 millones de parámetros entrenado por el AI2 (Allen Institute for AI) y distribuido por Unsloth con pesos optimizados para inferencia eficiente. La versión instructiva fue ajustada mediante RLHF y técnicas de chat para seguir instrucciones. En este caso, el autor realizó un fine-tuning adicional sobre un dataset de nombres antiguos de aves (old bird names), aplicando una técnica de "inoculation prompting" que consiste en inyectar ejemplos de este vocabulario en las instrucciones de entrenamiento para mitigar sesgos o fallos específicos del modelo base. El entrenamiento se realizó con Unsloth (que acelera el fine-tuning en GPUs) y la librería TRL de HuggingFace.
+El modelo se basa en OLMo-3-7B-Instruct, un transformer decoder-only de 7.000 millones de parámetros entrenado por el AI2 (Allen Institute for AI) y distribuido por Unsloth con pesos optimizados para inferencia eficiente. La versión instructiva fue ajustada mediante RLHF y técnicas de chat para seguir instrucciones. En este caso, el autor realizó un fine-tuning adicional sobre un dataset de nombres antiguos de aves (old bird names), aplicando una técnica de "inoculation prompting" que consiste en inyectar ejemplos de este vocabulario en las instrucciones de entrenamiento para mitigar sesgos o fallos específicos del modelo base. El entrenamiento se realizó con Unsloth (que acelera el fine-tuning en GPUs) y la librería TRL de Hugging Face.
 
 No se dispone de información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron técnicas de RLHF o DPO en este fine-tuning adicional. El modelo base OLMo-3 se entrenó con 3,5 billones de tokens de datos en inglés, con una mezcla de fuentes web, libros y código, y se optimizó con una combinación de SFT y preferencias humanas (RLHF). En el caso de este fine-tune específico, no hay documentación pública que detalle los hiperparámetros ni el volumen de datos utilizados.
 
@@ -61,10 +61,10 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OLMo-3-7B-Instruct (base) | 7B | 4.096 | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5 (este) | 7B | no disponible | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed2 | 7B | no disponible | Apache-2.0 | HuggingFace |
-| OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5 | 7B | no disponible | Apache-2.0 | HuggingFace |
+| OLMo-3-7B-Instruct (base) | 7B | 4.096 | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5 (este) | 7B | no disponible | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed2 | 7B | no disponible | Apache-2.0 | Hugging Face |
+| OLMo-3-7B-old-bird-names-first-third-v2-sft-seed5 | 7B | no disponible | Apache-2.0 | Hugging Face |
 
 No se dispone de benchmarks comparativos entre estas variantes. La diferencia principal entre ellas es la semilla aleatoria (seed2, seed5) y la variante de entrenamiento (inoculation prompting vs. SFT directo).
 
@@ -79,7 +79,7 @@ No se dispone de benchmarks comparativos entre estas variantes. La diferencia pr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5
+- Modelo en Hugging Face: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed5
 - Variante seed2: https://huggingface.co/localized-ft/OLMo-3-7B-old-bird-names-v2-inoculation-prompting-seed2
 - Modelo base OLMo-3-7B-Instruct: https://huggingface.co/unsloth/Olmo-3-7B-Instruct
 - Repositorio Unsloth: https://github.com/unslothai/unsloth

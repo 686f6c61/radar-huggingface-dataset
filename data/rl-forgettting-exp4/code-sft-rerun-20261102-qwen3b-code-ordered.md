@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| code-sft-rerun-20261102-qwen3b-code-ordered | ~3B | 4096 (entrenamiento) | other (Qwen Research License) | HuggingFace, safetensors | Artefacto de investigación `rl-forgetting` |
-| Qwen2.5-3B (base upstream) | ~3B | No especificado aquí | Qwen Research License | HuggingFace | Modelo base sin SFT de código |
-| Qwen3-1.7B-Base (base del mismo lote) | ~1.7B | No especificado aquí | Apache 2.0 | HuggingFace | Alternativa más pequeña del lote, con licencia permisiva |
-| Llama-3.2-3B-Instruct | ~3B | No especificado aquí | Llama 3.2 Community License | HuggingFace, con aceptación de uso | Alternativa de instrucciones que también se entrena en el lote |
+| code-sft-rerun-20261102-qwen3b-code-ordered | ~3B | 4096 (entrenamiento) | other (Qwen Research License) | Hugging Face, safetensors | Artefacto de investigación `rl-forgetting` |
+| Qwen2.5-3B (base upstream) | ~3B | No especificado aquí | Qwen Research License | Hugging Face | Modelo base sin SFT de código |
+| Qwen3-1.7B-Base (base del mismo lote) | ~1.7B | No especificado aquí | Apache 2.0 | Hugging Face | Alternativa más pequeña del lote, con licencia permisiva |
+| Llama-3.2-3B-Instruct | ~3B | No especificado aquí | Llama 3.2 Community License | Hugging Face, con aceptación de uso | Alternativa de instrucciones que también se entrena en el lote |
 
 La comparación directa de rendimiento no está disponible: el repositorio no aporta cifras de benchmarks para este checkpoint ni para las alternativas dentro de la información proporcionada. Las diferencias relevantes son de licencia (Apache 2.0 frente a otras licencias) y de tamaño (1.7B frente a 3B).
 
@@ -87,7 +87,7 @@ La comparación directa de rendimiento no está disponible: el repositorio no ap
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-ordered
+- Hugging Face del modelo: https://huggingface.co/RL-Forgettting-Exp4/code-sft-rerun-20261102-qwen3b-code-ordered
 - Repositorio de artefactos del lote (referenciado en la model card): no disponible como URL directa en la información proporcionada
 - Evaluaciones MBPP+ referenciadas (`evaluations/mbppplus_n160_t0.6/delivery_manifest.json`): ruta interna del repositorio, sin URL pública en la información disponible
 - Modelo base Qwen2.5-3B: no se proporciona URL en la información disponible

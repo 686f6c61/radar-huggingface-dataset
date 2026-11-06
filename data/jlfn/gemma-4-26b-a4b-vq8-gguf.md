@@ -1,7 +1,7 @@
 # Jlfn/gemma-4-26b-a4b-vq8-gguf
 
 ## Resumen
-Gemma 4 26B A4B VQ GGUF es una conversión cuantizada en formato GGUF personalizado del modelo Gemma 4 26B A4B, un transformer de mezcla de expertos (MoE) con 26 mil millones de parámetros nominales y aproximadamente 4 mil millones activos por token. La publica el usuario Jlfn en HuggingFace y emplea una familia de tipos de tensor propia (GVQ1, GVBC, GVR8) bajo la arquitectura `gemma4_vq`, versión de formato 2, que no es legible por llama.cpp, Ollama ni Transformers estándar. El objetivo es comprimir el modelo completo, incluyendo su ventana nativa de 262.144 tokens, en menos de 10 GiB mediante cuantización vectorial de los expertos enrutados.
+Gemma 4 26B A4B VQ GGUF es una conversión cuantizada en formato GGUF personalizado del modelo Gemma 4 26B A4B, un transformer de mezcla de expertos (MoE) con 26 mil millones de parámetros nominales y aproximadamente 4 mil millones activos por token. La publica el usuario Jlfn en Hugging Face y emplea una familia de tipos de tensor propia (GVQ1, GVBC, GVR8) bajo la arquitectura `gemma4_vq`, versión de formato 2, que no es legible por llama.cpp, Ollama ni Transformers estándar. El objetivo es comprimir el modelo completo, incluyendo su ventana nativa de 262.144 tokens, en menos de 10 GiB mediante cuantización vectorial de los expertos enrutados.
 
 La relevancia de esta ficha es doble. Por un lado, documenta una técnica de compresión agresiva: los expertos enrutados se almacenan como índices de cuantización vectorial de 8 dimensiones con un libro principal de 8.192 entradas (índice de 13 bits) y un libro residual de 256 entradas (índice de 8 bits), lo que resulta en 2,6388 bits por peso en los expertos. Por otro, advierte de una limitación práctica severa: el artefacto exige un runtime que implemente el formato, y no incluye la torre de visión ni la parte de audio pese a que `config.json` las declara.
 
@@ -11,7 +11,7 @@ El repositorio tiene 10,7 GB y se distribuye en tres partes GGUF independientes:
 | Parametro | Valor |
 |---|---|
 | Arquitectura | Transformer MoE con atención híbrida (sliding-window y atención completa); arquitectura GGUF `gemma4_vq`, versión de formato 2 |
-| Parametros totales | 24.494.944.286 pesos lógicos en el tronco (26B nominales de la familia); el conteo de safetensors reportado en HuggingFace es 738.197.504, correspondiente probablemente a un subconjunto o al drafter |
+| Parametros totales | 24.494.944.286 pesos lógicos en el tronco (26B nominales de la familia); el conteo de safetensors reportado en Hugging Face es 738.197.504, correspondiente probablemente a un subconjunto o al drafter |
 | Parametros activos | Aproximadamente 4B por token (top-8 de 128 expertos); no se detalla el desglose exacto |
 | Longitud de contexto | 262.144 tokens |
 | Tipos de cuantizacion | GVQ1, GVBC, GVR8 (cuantización vectorial de expertos); Q4_K (175 tensores, 4,5 bits/peso); Q8_0 (30 tensores, 8,5 bits/peso); BF16 (391 tensores, 16 bits/peso); media del tronco 2,7993 bits por peso lógico |
@@ -58,7 +58,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 ## Comparativa con modelos similares
 | Modelo | Parámetros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Gemma 4 26B A4B VQ GGUF (este) | 26B nominales, ~4B activos | 262.144 | GGUF personalizado `gemma4_vq` | no disponible | HuggingFace, 0 descargas |
+| Gemma 4 26B A4B VQ GGUF (este) | 26B nominales, ~4B activos | 262.144 | GGUF personalizado `gemma4_vq` | no disponible | Hugging Face, 0 descargas |
 | Gemma 4 26B A4B (base, sin cuantizar) | 26B nominales, ~4B activos | 262.144 | safetensors | no disponible | Referenciado en `release.json` por revisión, no enlazado en la información |
 | Cuantizaciones GGUF estándar de MoE de tamaño similar | Variable | Variable | GGUF estándar (Q4_K_M, Q5_K_M, etc.) | Variable | Amplia, compatible con llama.cpp y Ollama |
 
@@ -76,7 +76,7 @@ La ventaja principal frente a una cuantización GGUF estándar es el tamaño: 9,
 - El conteo de parámetros de safetensors (738.197.504) no coincide con los 24.494.944.286 pesos lógicos del tronco; conviene verificar la integridad con `files.json` antes de usarlo.
 
 ## Enlaces
-- Repositorio HuggingFace: https://huggingface.co/Jlfn/gemma-4-26b-a4b-vq8-gguf
+- Repositorio Hugging Face: https://huggingface.co/Jlfn/gemma-4-26b-a4b-vq8-gguf
 - Punto de entrada del release: `release.json` dentro del repositorio
 - Manifiesto de archivos con tamaños y SHA-256: `files.json` dentro del repositorio
 - Configuración del checkpoint: `config.json` dentro del repositorio

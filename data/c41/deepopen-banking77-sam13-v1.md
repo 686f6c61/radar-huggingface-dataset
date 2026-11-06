@@ -76,8 +76,8 @@ El autor indica que los intervalos de confianza emparejados entre semillas inclu
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `c41/deepopen-banking77-sam13-v1` | 395,9 M | 128 tokens | 94,1234 % en test BANKING77 (seleccion retrospectiva) | Apache-2.0 | HuggingFace, repo completo con codigo |
-| `convaiinnovations/laya` (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | Apache-2.0 | HuggingFace |
+| `c41/deepopen-banking77-sam13-v1` | 395,9 M | 128 tokens | 94,1234 % en test BANKING77 (seleccion retrospectiva) | Apache-2.0 | Hugging Face, repo completo con codigo |
+| `convaiinnovations/laya` (modelo base) | No disponible | No disponible | No disponible en la informacion proporcionada | Apache-2.0 | Hugging Face |
 | Otros clasificadores sobre BANKING77 | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se han proporcionado resultados de benchmarks de alternativas comparables, por lo que no es posible establecer una comparación cuantitativa honesta con otros clasificadores de intenciones bancarias.
@@ -98,7 +98,7 @@ No se han proporcionado resultados de benchmarks de alternativas comparables, po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/c41/deepopen-banking77-sam13-v1
+- Modelo en Hugging Face: https://huggingface.co/c41/deepopen-banking77-sam13-v1
 - Espacio de exploración de la evaluación: https://huggingface.co/spaces/c41/laya-evaluation
 - Modelo base Laya: https://huggingface.co/convaiinnovations/laya
 - Dataset BANKING77 (revisión indicada en la model card): https://huggingface.co/datasets/PolyAI/banking77

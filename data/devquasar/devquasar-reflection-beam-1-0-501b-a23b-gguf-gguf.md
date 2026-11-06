@@ -93,7 +93,7 @@ La comparación solo es posible en el plano estructural: los tres modelos de ref
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DevQuasar/DevQuasar.reflection.Beam-1.0-501B-A23B-GGUF-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/DevQuasar/DevQuasar.reflection.Beam-1.0-501B-A23B-GGUF-GGUF
 - Modelo base declarado: https://huggingface.co/DevQuasar/reflection.Beam-1.0-501B-A23B-GGUF
 - Sitio del autor: https://devquasar.com
 - Repositorio del autor en GitHub: https://github.com/csabakecskemeti/devquasar

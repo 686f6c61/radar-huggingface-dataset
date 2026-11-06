@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El mo
 - VRAM estimada: al estar cuantizado a 4 bits, el modelo base ocupa aproximadamente 1,8 GB (según el tamaño del repositorio), más el adapter LoRA. En una GPU con 6-8 GB de VRAM sería suficiente para inferencia en FP16.
 - GPU recomendadas: funciona sin problemas en Apple Silicon (M4, 16 GB) como se indica en el entrenamiento; también puede ejecutarse en GPUs NVIDIA con 8 GB o más (RTX 3060, 4070, etc.) usando MLX o convirtiendo los pesos a otros formatos.
 - Si cabe en consumer GPU: sí, en GPUs con 6 GB o más (ej. RTX 3060 12 GB, RTX 4060 Ti 16 GB). En CPU pura sería lento pero posible con cuantización.
-- Opciones de despliegue: MLX (recomendado), conversión a GGUF para llama.cpp/Ollama, o a formato HuggingFace (safetensors) para vLLM/TGI. El modelo se distribuye en MLX, por lo que es nativo para Apple Silicon.
+- Opciones de despliegue: MLX (recomendado), conversión a GGUF para llama.cpp/Ollama, o a formato Hugging Face (safetensors) para vLLM/TGI. El modelo se distribuye en MLX, por lo que es nativo para Apple Silicon.
 - Latencia y throughput: no disponibles; para un modelo de 3B en 4-bit en una GPU moderna se esperan latencias de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
@@ -79,6 +79,6 @@ cheese-3b no es comparable en rendimiento general con los modelos de chat están
 
 ## Enlaces
 
-- Modelo en HuggingFace: [tsfrm/cheese-3b](https://huggingface.co/tsfrm/cheese-3b)
+- Modelo en Hugging Face: [tsfrm/cheese-3b](https://huggingface.co/tsfrm/cheese-3b)
 - Modelo base: [mlx-community/Llama-3.2-3B-Instruct-4bit](https://huggingface.co/mlx-community/Llama-3.2-3B-Instruct-4bit)
 - Documentación de MLX: [mlx-lm](https://github.com/ml-explore/mlx-examples/tree/main/lora) (repositorio de ejemplo)

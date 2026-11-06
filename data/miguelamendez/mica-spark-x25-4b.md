@@ -110,7 +110,7 @@ El diferencial estructural de Spark-X2.5-4B frente a esas alternativas es la ven
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/miguelamendez/mica-spark-x25-4b
+- Repositorio Hugging Face: https://huggingface.co/miguelamendez/mica-spark-x25-4b
 - Modelo base: https://huggingface.co/XHToken/Spark-X2.5-4B
 - Revision fijada: 0bcb35678590218655dff3765b9e61c83b35e9c4
 - Registros de validacion citados en la model card (rutas relativas del repositorio):

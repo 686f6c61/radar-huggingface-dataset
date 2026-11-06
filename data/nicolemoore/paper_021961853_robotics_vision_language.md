@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace, identificado como `nicolemoore/paper_021961853_robotics_vision_language`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown centrado en el tema de robótica, visión y lenguaje (robotics vision language). El autor, `nicolemoore`, ha estructurado el contenido siguiendo un esquema clásico de artículo científico: introducción, método, experimentos, trabajos relacionados y conclusión, con un estilo de escritura narrativa progresiva y citas en formato autor-año. La licencia declarada es Apache 2.0, lo que permite su uso y distribución con atribución.
+Este repositorio de Hugging Face, identificado como `nicolemoore/paper_021961853_robotics_vision_language`, no contiene un modelo de inteligencia artificial entrenado, sino un documento académico en formato Markdown centrado en el tema de robótica, visión y lenguaje (robotics vision language). El autor, `nicolemoore`, ha estructurado el contenido siguiendo un esquema clásico de artículo científico: introducción, método, experimentos, trabajos relacionados y conclusión, con un estilo de escritura narrativa progresiva y citas en formato autor-año. La licencia declarada es Apache 2.0, lo que permite su uso y distribución con atribución.
 
 El repositorio es relevante en el contexto actual de la investigación en modelos de visión-lenguaje-acción (VLA), un área que está ganando protagonismo en robótica para control de agentes físicos. Sin embargo, es importante señalar que no se trata de un modelo ejecutable ni de pesos entrenados; es un documento de investigación que probablemente revisa o propone conceptos en este dominio. No se dispone de información sobre arquitectura, tamaño, contexto o capacidades porque no aplican a un artefacto textual.
 
@@ -66,7 +66,7 @@ No disponible. Este repositorio no es un modelo de IA, por lo que no se puede co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nicolemoore/paper_021961853_robotics_vision_language
+- Repositorio en Hugging Face: https://huggingface.co/nicolemoore/paper_021961853_robotics_vision_language
 - Paper relacionado (OpenVLA): https://arxiv.org/abs/2406.09246
 - Paper relacionado (π0): https://arxiv.org/abs/2410.24164
 - Artículo de revisión sobre VLA open-source: https://link.springer.com/content/pdf/10.1007/s42791-025-00108-1.pdf

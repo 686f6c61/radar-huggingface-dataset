@@ -58,5 +58,5 @@ No disponible, ya que no hay informacion sobre otros modelos comparables de este
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen8
+- Hugging Face: https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-collapse_p10_twf-run8-gen8
 - Technical report de Qwen2.5: https://arxiv.org/abs/2412.15115

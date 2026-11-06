@@ -85,7 +85,7 @@ No se dispone de información suficiente para establecer una comparativa de rend
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Zayaan/zils-z3-pplx-decider-v1.2
+- Repositorio Hugging Face: https://huggingface.co/Zayaan/zils-z3-pplx-decider-v1.2
 - Modelo base: https://huggingface.co/perplexity-ai/pplx-decider-v1.2
 - Revisión del modelo base referenciada: `cce0f3f8`
 - Paper, blog, repositorio de código o demo: no disponible en la información proporcionada.

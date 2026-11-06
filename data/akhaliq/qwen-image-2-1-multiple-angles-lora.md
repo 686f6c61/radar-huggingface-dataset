@@ -87,7 +87,7 @@ No disponible. La informacion proporcionada no incluye datos de otros LoRA de co
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA
+- Modelo en Hugging Face: https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA
 - Modelo base: https://huggingface.co/Qwen/Qwen-Image-2.1
 - Dataset de entrenamiento de la v2: https://huggingface.co/datasets/akhaliq/qwen21-multiple-angles-train-v2
 - Panel de entrenamiento de la v2 (trackio): https://huggingface.co/spaces/akhaliq/qwen21-multiple-angles-v2-trackio

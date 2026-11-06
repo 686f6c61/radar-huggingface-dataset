@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo dnnuuyzzo/Llama-3.2-1B-Legal-Indo es un ajuste fino (fine-tuning) del modelo base unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario dnnuuyzzo en HuggingFace. Se trata de un modelo de generacion de texto de tipo causal, con 1.235.814.400 parametros totales y un tamano de repositorio de 2,5 GB. Pese a que el nombre incluye el termino "Legal-Indo", la model card no documenta ni el dominio de entrenamiento, ni el dataset utilizado, ni la procedencia geografica o linguistica del ajuste, y la etiqueta de idioma declarada es unicamente "en" (ingles).
+El modelo dnnuuyzzo/Llama-3.2-1B-Legal-Indo es un ajuste fino (fine-tuning) del modelo base unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit, publicado por el usuario dnnuuyzzo en Hugging Face. Se trata de un modelo de generacion de texto de tipo causal, con 1.235.814.400 parametros totales y un tamano de repositorio de 2,5 GB. Pese a que el nombre incluye el termino "Legal-Indo", la model card no documenta ni el dominio de entrenamiento, ni el dataset utilizado, ni la procedencia geografica o linguistica del ajuste, y la etiqueta de idioma declarada es unicamente "en" (ingles).
 
-El modelo se ha entrenado con la libreria Unsloth y TRL de HuggingFace, un flujo de trabajo habitual para fine-tuning de bajo coste computacional sobre modelos pequenos. La relevancia practica de esta publicacion es limitada: registra 0 descargas y 0 "likes" en el momento de la consulta, carece de resultados de evaluacion y su model card es minima (practicamente el texto por defecto que genera Unsloth). No hay informacion sobre el corpus de entrenamiento, la longitud del ajuste ni la composicion del dataset.
+El modelo se ha entrenado con la libreria Unsloth y TRL de Hugging Face, un flujo de trabajo habitual para fine-tuning de bajo coste computacional sobre modelos pequenos. La relevancia practica de esta publicacion es limitada: registra 0 descargas y 0 "likes" en el momento de la consulta, carece de resultados de evaluacion y su model card es minima (practicamente el texto por defecto que genera Unsloth). No hay informacion sobre el corpus de entrenamiento, la longitud del ajuste ni la composicion del dataset.
 
 Para un desarrollador o investigador que evalue este modelo, el dato mas util es que se apoya en la arquitectura Llama 3.2 1B Instruct, lo que determina sus capacidades base (generacion de texto, conversacion, contexto largo) y sus requisitos de hardware, muy bajos: es desplegable en GPU de consumo e incluso en CPU. Todo lo especifico del supuesto dominio legal queda sin verificar.
 
@@ -81,11 +81,11 @@ La model card no incluye ninguna tabla de evaluacion (MMLU, HumanEval, GSM8K, IF
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| dnnuuyzzo/Llama-3.2-1B-Legal-Indo | 1,24 B | no disponible (base: 128.000 tokens) | apache-2.0 (declarada) | HuggingFace, 0 descargas | Sin evaluacion publicada; dominio legal no verificado |
+| dnnuuyzzo/Llama-3.2-1B-Legal-Indo | 1,24 B | no disponible (base: 128.000 tokens) | apache-2.0 (declarada) | Hugging Face, 0 descargas | Sin evaluacion publicada; dominio legal no verificado |
 | meta-llama/Llama-3.2-1B-Instruct | 1,24 B | 128.000 tokens | Llama 3.2 Community License | Ampliamente disponible | Modelo base oficial, con evaluaciones publicadas |
-| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (hasta 131.072 con RoPE scaling) | apache-2.0 | HuggingFace, muy descargado | Alternativa fuerte en el mismo segmento, multilingue |
-| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | apache-2.0 | HuggingFace, muy descargado | Entrenado con un corpus abierto y documentado |
-| google/gemma-2-2b-it | 2,61 B | 8.192 tokens | Gemma Terms of Use | HuggingFace | Mayor calidad general, licencia con restricciones de uso |
+| Qwen/Qwen2.5-1.5B-Instruct | 1,54 B | 32.768 tokens (hasta 131.072 con RoPE scaling) | apache-2.0 | Hugging Face, muy descargado | Alternativa fuerte en el mismo segmento, multilingue |
+| HuggingFaceTB/SmolLM2-1.7B-Instruct | 1,71 B | 8.192 tokens | apache-2.0 | Hugging Face, muy descargado | Entrenado con un corpus abierto y documentado |
+| google/gemma-2-2b-it | 2,61 B | 8.192 tokens | Gemma Terms of Use | Hugging Face | Mayor calidad general, licencia con restricciones de uso |
 
 Los datos de rendimiento comparativo no estan disponibles para el modelo analizado, por lo que la comparacion se limita a parametros, contexto, licencia y disponibilidad.
 
@@ -104,10 +104,10 @@ Los datos de rendimiento comparativo no estan disponibles para el modelo analiza
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dnnuuyzzo/Llama-3.2-1B-Legal-Indo
+- Modelo en Hugging Face: https://huggingface.co/dnnuuyzzo/Llama-3.2-1B-Legal-Indo
 - Modelo base: https://huggingface.co/unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Modelo oficial Llama 3.2 1B Instruct: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Paper de Llama 3: https://arxiv.org/abs/2407.21783
 - Resultados de busqueda web: no se ha encontrado ningun resultado relevante sobre este modelo; los resultados devueltos corresponden a documentacion de Google Maps y no guardan relacion con el modelo.

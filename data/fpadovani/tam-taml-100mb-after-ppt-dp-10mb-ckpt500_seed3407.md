@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed3407` es un ajuste fino supervisado (SFT) publicado por el usuario fpadovani, derivado de `fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed3407`. Se distribuye a traves de HuggingFace Hub con la libreria transformers y esta etiquetado como `gpt2` y `text-generation`, lo que situa su arquitectura en la familia de transformadores decoder-only estilo GPT-2. Con 124.770.816 parametros (unos 124,77 millones), se situa en la misma escala que GPT-2 small.
+El modelo `tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed3407` es un ajuste fino supervisado (SFT) publicado por el usuario fpadovani, derivado de `fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed3407`. Se distribuye a traves de Hugging Face Hub con la libreria transformers y esta etiquetado como `gpt2` y `text-generation`, lo que situa su arquitectura en la familia de transformadores decoder-only estilo GPT-2. Con 124.770.816 parametros (unos 124,77 millones), se situa en la misma escala que GPT-2 small.
 
 El modelo se ha entrenado con TRL 0.23.0 y el flujo de trabajo de SFT que esta libreria proporciona, y el autor enlaza la ejecucion de seguimiento en Weights & Biases alojada en la organizacion de la University of Groningen. El identificador sugiere un experimento centrado en tokenizadores ("new_tokenizers" es el nombre del proyecto en W&B) y variantes de un corpus de aproximadamente 100 MB, aunque la model card no documenta ni el dataset, ni el numero de tokens, ni la composicion de los datos.
 
@@ -72,9 +72,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed3407 | 124,77 M | No disponible | No disponible | HuggingFace, 0 descargas | Checkpoint experimental de investigacion con SFT |
+| tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed3407 | 124,77 M | No disponible | No disponible | Hugging Face, 0 descargas | Checkpoint experimental de investigacion con SFT |
 | GPT-2 small | 124 M | 1024 tokens | MIT (publicacion original de OpenAI) | Ampliamente disponible, muy usado | Referencia de la misma escala y arquitectura |
-| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | HuggingFace, alta adopcion | Version destilada, mas rapida, calidad inferior a GPT-2 small |
+| DistilGPT-2 | 82 M | 1024 tokens | Apache-2.0 | Hugging Face, alta adopcion | Version destilada, mas rapida, calidad inferior a GPT-2 small |
 | GPT-2 medium | 355 M | 1024 tokens | MIT (publicacion original de OpenAI) | Ampliamente disponible | Mayor capacidad a costa de mas memoria y latencia |
 
 La comparacion con la familia GPT-2 es pertinente porque el repositorio se etiqueta explicitamente como `gpt2` y el recuento de parametros coincide con GPT-2 small, pero no se dispone de ninguna evaluacion que permita afirmar que el rendimiento sea equiparable. Las licencias de GPT-2 small, DistilGPT-2 y GPT-2 medium corresponden a sus publicaciones originales; conviene verificar cada ficha antes de un uso comercial.
@@ -92,8 +92,8 @@ La comparacion con la familia GPT-2 es pertinente porque el repositorio se etiqu
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed3407
-- Modelo base en HuggingFace: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed3407
+- Modelo en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-after-ppt-Dp-10mb-ckpt500_seed3407
+- Modelo base en Hugging Face: https://huggingface.co/fpadovani/tam-taml-100mb-ppt-Dp-10mb_seed3407
 - Ejecucion de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new_tokenizers/runs/6brll01e
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Repositorio de Transformers: https://github.com/huggingface/transformers

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`GameGenerator` es un repositorio publicado en HuggingFace por el usuario `siamasoumi`. La informacion disponible es practicamente nula: la model card se limita a la cabecera YAML con `license: apache-2.0` y no contiene ninguna descripcion, arquitectura, tamano, dataset de entrenamiento ni instrucciones de uso. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas soportados y acumula 0 descargas y 1 like desde su creacion.
+`GameGenerator` es un repositorio publicado en Hugging Face por el usuario `siamasoumi`. La informacion disponible es practicamente nula: la model card se limita a la cabecera YAML con `license: apache-2.0` y no contiene ninguna descripcion, arquitectura, tamano, dataset de entrenamiento ni instrucciones de uso. El repositorio no tiene etiqueta de pipeline asignada, no declara idiomas soportados y acumula 0 descargas y 1 like desde su creacion.
 
 Por el identificador se puede inferir que el autor pretende que el modelo genere juegos (codigo de videojuegos, reglas o contenido ludico), pero se trata de una suposicion basada unicamente en el nombre, no en documentacion verificable. No hay pesos publicados con formato declarado, no hay ficha de uso y no existe informacion sobre el proceso de entrenamiento.
 
@@ -85,7 +85,7 @@ No disponible. Sin conocer el tamano, la arquitectura ni la tarea del modelo no 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/siamasoumi/GameGenerator
+- Repositorio en Hugging Face: https://huggingface.co/siamasoumi/GameGenerator
 - Paper: no disponible.
 - Blog o documentacion del autor: no disponible.
 - Repositorio de codigo: no disponible.

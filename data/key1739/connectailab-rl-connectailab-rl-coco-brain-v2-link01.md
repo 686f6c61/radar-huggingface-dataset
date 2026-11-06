@@ -2,7 +2,7 @@
 
 ## Resumen
 
-LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, entrenado para actuar como política de decisión de un robot simulado de nombre LINK-01 en la tarea `goto_target` (desplazarse hacia un objetivo). El modelo recibe una descripción textual del estado del robot —distancia y dirección al objetivo, lecturas de sensores de distancia, velocidad y acción previa— y devuelve una única letra que identifica la acción de locomoción a ejecutar durante los siguientes 0,5 segundos. Lo desarrolla CONNECT AI LAB en colaboración con AI CITY BUILDERS, dentro del proyecto CONNECT TYCOON, y se publica en HuggingFace bajo el identificador `key1739/connectailab-rl-connectailab-rl-coco-brain-v2-link01`.
+LINK-01 es un adaptador LoRA sobre el modelo base Qwen/Qwen3.5-0.8B, entrenado para actuar como política de decisión de un robot simulado de nombre LINK-01 en la tarea `goto_target` (desplazarse hacia un objetivo). El modelo recibe una descripción textual del estado del robot —distancia y dirección al objetivo, lecturas de sensores de distancia, velocidad y acción previa— y devuelve una única letra que identifica la acción de locomoción a ejecutar durante los siguientes 0,5 segundos. Lo desarrolla CONNECT AI LAB en colaboración con AI CITY BUILDERS, dentro del proyecto CONNECT TYCOON, y se publica en Hugging Face bajo el identificador `key1739/connectailab-rl-connectailab-rl-coco-brain-v2-link01`.
 
 El interés técnico del modelo no reside en su tamaño —el adaptador se apoya en un transformer de 0,8 mil millones de parámetros— sino en la metodología de destilación: primero se entrena una política PPO en un simulador web de MuJoCo, después se generan pares estado textual/acción a partir de las observaciones de esa política y se hace aprendizaje supervisado con LoRA, y finalmente se refina con aprendizaje por refuerzo usando la recompensa que habría obtenido la política original. El resultado es un modelo de lenguaje que reproduce el comportamiento de un controlador entrenado por RL sin necesidad de ejecutar la red de locomoción en tiempo de inferencia.
 
@@ -72,7 +72,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | 0,8 B (base) + LoRA | No disponible | 97,1 % test, 100 % éxito en 20 episodios | Apache 2.0 | HuggingFace |
+| LINK-01 (este modelo) | 0,8 B (base) + LoRA | No disponible | 97,1 % test, 100 % éxito en 20 episodios | Apache 2.0 | Hugging Face |
 | Alternativas comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -89,7 +89,7 @@ No se dispone de información sobre modelos comparables en la documentación pro
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/key1739/connectailab-rl-connectailab-rl-coco-brain-v2-link01
+- Hugging Face: https://huggingface.co/key1739/connectailab-rl-connectailab-rl-coco-brain-v2-link01
 - Repositorio de código CONNECT TYCOON: https://github.com/wonseokjung/connect-tycoon
 - Cuaderno de Colab de entrenamiento: https://colab.research.google.com/github/wonseokjung/connect-tycoon/blob/main/notebooks/link01_decision_model_colab.ipynb
 - Simulador web de aprendizaje: https://www.ezerai.xyz/robot-lab/world/

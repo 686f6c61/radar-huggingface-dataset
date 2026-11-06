@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HercUNet v0 es un modelo de segmentación 3D para detectar las superficies mediales (hojas o *sheets*) de papiro enrollado en rollos carbonizados de Herculano a partir de tomografías de rayos X (µCT). Lo desarrolla jimmylomro y se publica en HuggingFace como un *trained-model folder* estándar de nnU-Net, con pesos en `fold_0/checkpoint_best.pth` y `fold_0/checkpoint_latest.pth`. No es un modelo de lenguaje: su entrada es un volumen de TC y su salida es una máscara de superficie.
+HercUNet v0 es un modelo de segmentación 3D para detectar las superficies mediales (hojas o *sheets*) de papiro enrollado en rollos carbonizados de Herculano a partir de tomografías de rayos X (µCT). Lo desarrolla jimmylomro y se publica en Hugging Face como un *trained-model folder* estándar de nnU-Net, con pesos en `fold_0/checkpoint_best.pth` y `fold_0/checkpoint_latest.pth`. No es un modelo de lenguaje: su entrada es un volumen de TC y su salida es una máscara de superficie.
 
 Técnicamente es un refiner iterativo `D(CT, prev) → surface` construido sobre una U-Net residual (configuración `nnUNetResEncUNetLPlans`), inicializado a partir del detector de superficies m7 de ScrollPrize y entrenado con pseudoetiquetas ∇φ de etapa 1 más un corpus de *rehearsal* minado de m7. El entrenamiento combina AffinityMalis con *online DAgger* durante 500 épocas (`nnUNetTrainer_AffinityMalis_IterDagger_500epochs`, `K=4` canales candidatos).
 
@@ -73,7 +73,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Parametros | Contexto/entrada | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|---|
-| HercUNet v0 (run301) | U-Net residual 3D iterativa con cabeza de *affinity* | no disponible | Volumen µCT con canales CT y previos | no disponible (ver repositorio GitHub) | HuggingFace, 1,6 GB, 0 descargas | no disponible |
+| HercUNet v0 (run301) | U-Net residual 3D iterativa con cabeza de *affinity* | no disponible | Volumen µCT con canales CT y previos | no disponible (ver repositorio GitHub) | Hugging Face, 1,6 GB, 0 descargas | no disponible |
 | ScrollPrize m7 (detector de superficies) | Detector de superficies de referencia | no disponible | Volumen µCT | no disponible | Usado como *warm start* y fuente de *rehearsal* | no disponible |
 | nnU-Net ResEncUNet L generico | U-Net residual 3D supervisada | no disponible | Parche 3D con canales definidos por el dataset | Apache-2.0 en el framework nnU-Net (no confirmado para este checkpoint) | Publico como framework | No comparable: depende del dataset |
 
@@ -93,7 +93,7 @@ No se dispone de datos numericos que permitan una comparacion cuantitativa entre
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jimmylomro/hercunet-v0
+- Modelo en Hugging Face: https://huggingface.co/jimmylomro/hercunet-v0
 - Repositorio de codigo y documentacion: https://github.com/jimmylomro/hercUNet
 - Corpus de entrenamiento: https://huggingface.co/datasets/jimmylomro/hercunet-corpus
 - Documentacion de entrenamiento: https://github.com/jimmylomro/hercUNet/blob/main/docs/training.md

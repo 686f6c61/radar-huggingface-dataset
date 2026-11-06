@@ -80,7 +80,7 @@ La comparacion se limita a los datos publicos de cada familia; no se dispone de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF | 27,3 B | no disponible | apache-2.0 | GGUF en HuggingFace (0 descargas) |
+| Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF | 27,3 B | no disponible | apache-2.0 | GGUF en Hugging Face (0 descargas) |
 | Qwen3-32B (familia de referencia) | 32,8 B | 128 K | apache-2.0 | safetensors y multiples cuantizaciones GGUF de terceros |
 | Gemma-3-27B (familia de referencia) | 27 B | 128 K | licencia Gemma (uso comercial con condiciones) | safetensors, pesos originales y cuantizaciones de terceros |
 | Mistral Small 3.1 24B (familia de referencia) | 24 B | 128 K | apache-2.0 | safetensors y cuantizaciones de terceros |
@@ -112,4 +112,4 @@ Nota: los datos de las familias Qwen3, Gemma-3 y Mistral Small 3.1 son de refere
 - Notas de Artefact2 sobre cuantizaciones: https://gist.github.com/Artefact2/b5f810600771265fc1e39442288e8ec9
 - Empresa del cuantizador: https://www.nethype.de/
 
-Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los procedentes de la model card y de la ficha de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes sobre este modelo; los unicos enlaces utiles son los procedentes de la model card y de la ficha de Hugging Face.

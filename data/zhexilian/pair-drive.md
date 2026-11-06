@@ -68,7 +68,7 @@ No disponible. La información proporcionada no incluye comparaciones con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Zhexilian/Pair-drive
+- Hugging Face: https://huggingface.co/Zhexilian/Pair-drive
 - GitHub: https://github.com/zhexilian/PaIR-Drive
 - Paper (arXiv): https://arxiv.org/html/2603.13842v1
 - Resumen en AlphaXiv: https://www.alphaxiv.org/abs/2603.13842

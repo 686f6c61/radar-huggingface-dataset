@@ -2,7 +2,7 @@
 
 ## Resumen
 
-BOM AI (siamcafe/bom-ai) es un modelo de lenguaje con capacidades vision-language (VL) orientado primero al idioma tailandés ("Thai-first"), desarrollado por el usuario siamcafe y publicado en HuggingFace en formato GGUF. Se trata de un ajuste (fine-tune) sobre el modelo DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING, que a su vez deriva de la familia Qwen3.5 de aproximadamente 4.000 millones de parámetros. El proyecto se presenta como un asistente de IA en tailandés capaz de "ver imágenes y leer tailandés", gratuito y utilizable sin conexión.
+BOM AI (siamcafe/bom-ai) es un modelo de lenguaje con capacidades vision-language (VL) orientado primero al idioma tailandés ("Thai-first"), desarrollado por el usuario siamcafe y publicado en Hugging Face en formato GGUF. Se trata de un ajuste (fine-tune) sobre el modelo DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING, que a su vez deriva de la familia Qwen3.5 de aproximadamente 4.000 millones de parámetros. El proyecto se presenta como un asistente de IA en tailandés capaz de "ver imágenes y leer tailandés", gratuito y utilizable sin conexión.
 
 Su relevancia radica en dos puntos concretos: primero, aborda un problema habitual en los modelos generalistas, la fuga de caracteres Han (chinos/canji) cuando se generan textos en tailandés, resuelta aquí mediante una lista blanca gramatical GBNF que, según el autor, reduce la fuga a 0 casos en 250 pruebas. Segundo, ofrece inferencia multimodal (texto + visión) en un tamaño pequeño (4B) y cuantizado (Q4_K_M, unos 3,4 GB), lo que lo hace ejecutable en hardware de consumo y en escenarios offline.
 
@@ -82,6 +82,6 @@ BOM AI se diferencia de alternativas tailandesas como Typhoon en su tamaño meno
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siamcafe/bom-ai
+- Modelo en Hugging Face: https://huggingface.co/siamcafe/bom-ai
 - Modelo base: https://huggingface.co/DavidAU/Qwen3.5-4B-Claude-4.6-HighIQ-THINKING
 - No se han encontrado enlaces adicionales (papers, blogs, repos de código o demos) en la información disponible.

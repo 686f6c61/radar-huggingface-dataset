@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Russian-AntiSwear es un modelo publicado en HuggingFace por el usuario secur11ty bajo licencia Apache 2.0. Por su nombre, sus etiquetas (`ru`, `mini`, `20mb`) y el idioma declarado (ruso), se presenta como una herramienta de filtrado o deteccion de lenguaje obsceno en ruso, orientada a un tamano muy reducido (en torno a 20 MB) que permitiria ejecutarla en entornos con recursos limitados.
+Russian-AntiSwear es un modelo publicado en Hugging Face por el usuario secur11ty bajo licencia Apache 2.0. Por su nombre, sus etiquetas (`ru`, `mini`, `20mb`) y el idioma declarado (ruso), se presenta como una herramienta de filtrado o deteccion de lenguaje obsceno en ruso, orientada a un tamano muy reducido (en torno a 20 MB) que permitiria ejecutarla en entornos con recursos limitados.
 
 La model card publicada es practicamente vacia: solo contiene los metadatos YAML de licencia, idioma y etiquetas, sin descripcion, sin arquitectura declarada, sin datos de entrenamiento ni ejemplos de uso. El repositorio tiene un tamano de 0.0 GB y cero descargas en el momento de la consulta, lo que indica que es un artefacto recien creado y sin validacion por parte de la comunidad.
 
@@ -63,7 +63,7 @@ No disponible. La model card no identifica modelos comparables ni se dispone de 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| secur11ty/Russian-AntiSwear | no disponible | no disponible | Apache 2.0 | HuggingFace |
+| secur11ty/Russian-AntiSwear | no disponible | no disponible | Apache 2.0 | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -78,5 +78,5 @@ No disponible. La model card no identifica modelos comparables ni se dispone de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/secur11ty/Russian-AntiSwear
+- Hugging Face: https://huggingface.co/secur11ty/Russian-AntiSwear
 - No se han encontrado otros enlaces (papers, blogs, repos, demos) en la informacion disponible.

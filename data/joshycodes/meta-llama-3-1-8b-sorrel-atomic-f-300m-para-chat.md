@@ -6,7 +6,7 @@ Este modelo es un ajuste fino supervisado (SFT) de tipo "chat" construido sobre 
 
 Tecnicamente se trata de un transformer decoder-only denso de la familia Llama 3.1 (8.030.261.248 parametros, sin mezcla de expertos), entrenado en una sola pasada sobre 2.051.019 tokens del dataset `joshycodes/sorrel-sft-voice` con una longitud de secuencia de 4.096 tokens. El entrenamiento se ejecuto en una unica NVIDIA H200 en RunPod y la perdida bajo de 1,6561 a 1,5131 durante la etapa de chat.
 
-Su relevancia actual es limitada fuera del contexto del proyecto: tiene cero descargas y cero "likes" en HuggingFace, no publica benchmarks y su licencia es de uso interno de investigacion. Es util como referencia metodologica para quien estudie pipelines de continued pretraining seguidos de SFT de caracter, no como modelo de produccion.
+Su relevancia actual es limitada fuera del contexto del proyecto: tiene cero descargas y cero "likes" en Hugging Face, no publica benchmarks y su licencia es de uso interno de investigacion. Es util como referencia metodologica para quien estudie pipelines de continued pretraining seguidos de SFT de caracter, no como modelo de produccion.
 
 ## Especificaciones tecnicas
 
@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 - VRAM estimada para inferencia: aproximadamente 16 GB en FP16/BF16, 8-9 GB en cuantizacion INT8 y 4,5-5,5 GB en INT4.
 - GPU recomendadas: NVIDIA H200 (usada en entrenamiento), A100 40/80 GB, H100 para entrenamiento o inferencia a gran escala; RTX 4090 (24 GB) o RTX 3090 (24 GB) suficientes para inferencia en FP16.
 - Compatibilidad con GPU de consumo: si, cabe en FP16 en tarjetas de 24 GB (RTX 3090, 4090) y en cuantizacion 4 bits en tarjetas de 8-12 GB (RTX 3060 12 GB, RTX 4060 Ti 16 GB).
-- Opciones de despliegue: vLLM, HuggingFace TGI, llama.cpp, Ollama y transformers, al ser una arquitectura Llama 3.1 estandar. Requiere convertir los safetensors a GGUF para llama.cpp u Ollama.
+- Opciones de despliegue: vLLM, Hugging Face TGI, llama.cpp, Ollama y transformers, al ser una arquitectura Llama 3.1 estandar. Requiere convertir los safetensors a GGUF para llama.cpp u Ollama.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ No se dispone de resultados de rendimiento del modelo evaluado que permitan una 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-para-chat
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-para-chat
 - Modelo base (midtrain): https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-atomic-f-300m-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-sft-voice
 - Repositorio `flourishing-training` (commit del launcher `a0afb77669ae`): no disponible como URL publica en la informacion proporcionada

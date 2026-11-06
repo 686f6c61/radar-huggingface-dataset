@@ -23,7 +23,7 @@ La relevancia de esta ficha es doble: por un lado, documenta un caso de uso emer
 
 ## Arquitectura y entrenamiento
 
-La arquitectura subyacente es un transformer decoder-only de la familia Qwen3.5 con 0,8 mil millones de parámetros, sobre el que se aplica un adaptador LoRA de bajo rango. El modelo no se reentrena de forma completa: los pesos del modelo base permanecen congelados y solo se optimizan las matrices de baja dimensión del adaptador, lo que reduce drásticamente el coste de entrenamiento y el tamaño del artefacto distribuido (el repositorio ocupa 0,0 GB según HuggingFace, consistente con un adaptador de pequeño tamaño).
+La arquitectura subyacente es un transformer decoder-only de la familia Qwen3.5 con 0,8 mil millones de parámetros, sobre el que se aplica un adaptador LoRA de bajo rango. El modelo no se reentrena de forma completa: los pesos del modelo base permanecen congelados y solo se optimizan las matrices de baja dimensión del adaptador, lo que reduce drásticamente el coste de entrenamiento y el tamaño del artefacto distribuido (el repositorio ocupa 0,0 GB según Hugging Face, consistente con un adaptador de pequeño tamaño).
 
 El método de entrenamiento declarado es RL, concretamente PPO (Proximal Policy Optimization), una elección coherente con la etiqueta `deep-reinforcement-learning` y con el dominio de aplicación (decisiones secuenciales en robótica). La model card no especifica el número de tokens de entrenamiento, la composición del dataset de observaciones, la función de recompensa ni los hiperparámetros de PPO (learning rate, clipping, número de épocas). Tampoco se documenta si hubo fases previas de SFT o DPO, ni si se aplicaron técnicas de decodificación especulativa o atención lineal. Toda esta información debe considerarse no disponible.
 
@@ -71,8 +71,8 @@ No se dispone de información sobre modelos directamente comparables en la misma
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | PPO sobre Qwen3.5-0.8B | Apache 2.0 | HuggingFace, 0 descargas |
-| Qwen3.5-0.8B (base) | 0,8B | No disponible | Preentrenamiento + alineación | Apache 2.0 | HuggingFace, ampliamente disponible |
+| LINK-01 (este modelo) | Adaptador sobre 0,8B | No disponible | PPO sobre Qwen3.5-0.8B | Apache 2.0 | Hugging Face, 0 descargas |
+| Qwen3.5-0.8B (base) | 0,8B | No disponible | Preentrenamiento + alineación | Apache 2.0 | Hugging Face, ampliamente disponible |
 | Alternativas RL-robotics comparables | No disponible | No disponible | No disponible | No disponible | No disponible |
 
 No se conocen benchmarks públicos que permitan comparar el rendimiento de este adaptador con otras políticas de decisión para robótica bípeda.
@@ -91,7 +91,7 @@ No se conocen benchmarks públicos que permitan comparar el rendimiento de este 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-object-v1-link01
+- Modelo en Hugging Face: https://huggingface.co/kareyoung09/connectailab-rl-kay09-jeongyakyong-object-v1-link01
 - Modelo base Qwen3.5-0.8B: https://huggingface.co/Qwen/Qwen3.5-0.8B
 - Librería PEFT: https://github.com/huggingface/peft
 - Documentación de Transformers: https://huggingface.co/docs/transformers

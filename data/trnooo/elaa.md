@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ELAA es un modelo publicado en HuggingFace por el usuario Trnooo bajo el identificador `Trnooo/ELAA`. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia `apache-2.0`, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su tamano es de 0,3 GB.
+ELAA es un modelo publicado en Hugging Face por el usuario Trnooo bajo el identificador `Trnooo/ELAA`. La model card asociada no contiene ninguna descripcion tecnica: unicamente incluye el bloque de metadatos con la licencia `apache-2.0`, sin informacion sobre arquitectura, datos de entrenamiento, capacidades o uso previsto. En el momento de redactar esta ficha, el repositorio acumula 0 descargas y 0 likes, y su tamano es de 0,3 GB.
 
 Al no existir documentacion publicada, no es posible confirmar si se trata de un modelo de lenguaje, un adaptador, un modelo de vision u otro tipo de artefacto. La unica inferencia razonable a partir del tamano del repositorio (0,3 GB) es que se trata de un modelo de parametros reducidos o de pesos cuantizados, pero el dato no esta confirmado por el autor. Cualquier evaluacion funcional requiere inspeccionar directamente los ficheros del repositorio (`config.json`, tokenizer, pesos) antes de considerar su uso.
 
@@ -23,7 +23,7 @@ Dado que no hay informacion verificable, esta ficha se limita a documentar los m
 
 ## Arquitectura y entrenamiento
 
-No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de HuggingFace. Se desconoce si emplea un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un esquema hibrido, asi como el numero de parametros, la funcion de activacion, el tipo de atencion o si incorpora tecnicas como atencion lineal o decodificacion especulativa.
+No se ha publicado informacion sobre la arquitectura del modelo en la model card ni en los metadatos de Hugging Face. Se desconoce si emplea un transformer denso, una arquitectura de mezcla de expertos (MoE), un modelo de espacio de estados (SSM) o un esquema hibrido, asi como el numero de parametros, la funcion de activacion, el tipo de atencion o si incorpora tecnicas como atencion lineal o decodificacion especulativa.
 
 Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) o cualquier innovacion tecnica destacable. El repositorio tiene un tamano de 0,3 GB, un valor coherente con un modelo pequeno en precision de 16 bits o con pesos cuantizados, pero esta observacion es una estimacion indirecta y no un dato declarado por el autor.
 
@@ -78,7 +78,7 @@ No disponible. Sin conocer la arquitectura, el numero de parametros ni la tarea 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Trnooo/ELAA
+- Hugging Face: https://huggingface.co/Trnooo/ELAA
 - Paper: no disponible
 - Blog o articulo tecnico: no disponible
 - Repositorio de codigo: no disponible

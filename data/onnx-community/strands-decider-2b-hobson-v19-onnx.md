@@ -87,9 +87,9 @@ No se dispone de especificaciones tecnicas de alternativas directas. La prensa e
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| strands-decider-2B (esta conversion ONNX) | Aproximadamente 2.000 millones | No disponible | Decision tipada y clasificacion con probabilidad calibrada | Apache-2.0 | HuggingFace, formato ONNX con WebGPU y ONNX Runtime |
-| strands-decider-2B-hobson-v19 (original) | Aproximadamente 2.000 millones | No disponible | Identica | Apache-2.0 | HuggingFace (modelo de origen, motor en PyTorch) |
-| Qwen3.5-2B-Base | Aproximadamente 2.000 millones | No disponible | LLM base generativo | Apache-2.0 | HuggingFace |
+| strands-decider-2B (esta conversion ONNX) | Aproximadamente 2.000 millones | No disponible | Decision tipada y clasificacion con probabilidad calibrada | Apache-2.0 | Hugging Face, formato ONNX con WebGPU y ONNX Runtime |
+| strands-decider-2B-hobson-v19 (original) | Aproximadamente 2.000 millones | No disponible | Identica | Apache-2.0 | Hugging Face (modelo de origen, motor en PyTorch) |
+| Qwen3.5-2B-Base | Aproximadamente 2.000 millones | No disponible | LLM base generativo | Apache-2.0 | Hugging Face |
 | Jev (OpenAI) y clones citados en prensa | No disponible | No disponible | Decision | No disponible | No disponible |
 
 ## Limitaciones y advertencias
@@ -107,7 +107,7 @@ No se dispone de especificaciones tecnicas de alternativas directas. La prensa e
 
 ## Enlaces
 
-- Modelo en HuggingFace (esta conversion): https://huggingface.co/onnx-community/strands-decider-2B-hobson-v19-ONNX
+- Modelo en Hugging Face (esta conversion): https://huggingface.co/onnx-community/strands-decider-2B-hobson-v19-ONNX
 - Modelo original: https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19
 - Repositorio del proyecto strands-decider: https://github.com/strands-labs/strands-decider
 - Modelo base Qwen3.5-2B-Base: https://huggingface.co/Qwen/Qwen3.5-2B-Base

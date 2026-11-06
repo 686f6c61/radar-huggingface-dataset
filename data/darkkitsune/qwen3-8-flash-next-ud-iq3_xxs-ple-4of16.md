@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Cabezas PLE | Cuantizacion | Tamano | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| DarkKitsune/Qwen3.8-Flash-Next-UD-IQ3_XXS-PLE-4of16 (este) | 138.543.685.920 | 4 de 16 | IQ3_XXS (UD, imatrix) | ~60 GB | No disponible | Publico en HuggingFace, 0 descargas |
-| unsloth/Qwen3.8-Flash-Next-GGUF (base) | No disponible | 16 de 16 (sin poda) | Familia UD de Unsloth | No disponible (mayor que el podado) | No disponible | Publico en HuggingFace |
+| DarkKitsune/Qwen3.8-Flash-Next-UD-IQ3_XXS-PLE-4of16 (este) | 138.543.685.920 | 4 de 16 | IQ3_XXS (UD, imatrix) | ~60 GB | No disponible | Publico en Hugging Face, 0 descargas |
+| unsloth/Qwen3.8-Flash-Next-GGUF (base) | No disponible | 16 de 16 (sin poda) | Familia UD de Unsloth | No disponible (mayor que el podado) | No disponible | Publico en Hugging Face |
 
 No se dispone de datos sobre otros modelos comparables de la misma categoria en la informacion proporcionada, ni de resultados de rendimiento que permitan establecer una comparacion cuantitativa entre el modelo podado y el original.
 
@@ -88,6 +88,6 @@ No se dispone de datos sobre otros modelos comparables de la misma categoria en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DarkKitsune/Qwen3.8-Flash-Next-UD-IQ3_XXS-PLE-4of16
+- Repositorio en Hugging Face: https://huggingface.co/DarkKitsune/Qwen3.8-Flash-Next-UD-IQ3_XXS-PLE-4of16
 - Modelo base (cuantizaciones de Unsloth): https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF
 - No se han encontrado enlaces adicionales relevantes (papers, blogs, repos o demos) en la busqueda web realizada; los resultados devueltos no guardaban relacion con el modelo.

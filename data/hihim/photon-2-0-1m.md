@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Photon-2.0-1M es un modelo de lenguaje extremadamente compacto (SLM) desarrollado por AtomixLabs, publicado en HuggingFace bajo el identificador `HiHim/Photon-2.0-1M`. Se trata de la segunda generación de la serie Photon y cuenta con 1.049.728 parámetros totales, una ventana de contexto nativa de 512 tokens y un vocabulario reducido a 1.536 entradas. El modelo se distribuye con licencia Apache-2.0 y está pensado exclusivamente para generación de texto en inglés.
+Photon-2.0-1M es un modelo de lenguaje extremadamente compacto (SLM) desarrollado por AtomixLabs, publicado en Hugging Face bajo el identificador `HiHim/Photon-2.0-1M`. Se trata de la segunda generación de la serie Photon y cuenta con 1.049.728 parámetros totales, una ventana de contexto nativa de 512 tokens y un vocabulario reducido a 1.536 entradas. El modelo se distribuye con licencia Apache-2.0 y está pensado exclusivamente para generación de texto en inglés.
 
 La propuesta del autor no es competir en capacidad general, sino explorar la eficiencia computacional y la muestra de entrenamiento en el régimen de un millón de parámetros. La versión 2.0 mantiene exactamente la misma configuración de arquitectura que Photon-1.0-1M, pero introduce correcciones en el tokenizador e innovaciones en el pipeline de pre-entrenamiento que le permitieron, según la model card, alcanzar mejores resultados usando solo 1.280 millones de tokens, la mitad del presupuesto de la versión anterior (2.560 millones).
 
@@ -97,7 +97,7 @@ Diferencias clave: Photon-2.0-1M es dos órdenes de magnitud más pequeño que S
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/HiHim/Photon-2.0-1M
+- Modelo en Hugging Face: https://huggingface.co/HiHim/Photon-2.0-1M
 - Imagen de portada de la model card: https://cdn-uploads.huggingface.co/production/uploads/64b433c3faa3181a5e98c87c/flAyTf3Qtzszkal-cqVab.png
 - Dataset principal de entrenamiento: https://huggingface.co/datasets/openbmb/UltraX-Preview
 - Subconjunto de origen: https://huggingface.co/datasets/openbmb/Ultra-FineWeb (Apache-2.0)

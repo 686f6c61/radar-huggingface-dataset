@@ -64,6 +64,6 @@ No se dispone de información suficiente para comparar con modelos alternativos.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/aaronthompsonette/model_269703833_coca_small)
+- [Repositorio en Hugging Face](https://huggingface.co/aaronthompsonette/model_269703833_coca_small)
 
 No se encontraron otros enlaces relevantes en la búsqueda web.

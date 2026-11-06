@@ -2,7 +2,7 @@
 
 ## Resumen
 
-GFM Kitchen Burger FPV (identificador `fecasado/gfm-kitchen-burger-fpv`) es una política robótica entrenada mediante la librería LeRobot y publicada por el usuario fecasado en HuggingFace. No se trata de un modelo de lenguaje: es un controlador de imitación (imitation learning) diseñado para ejecutar una tarea concreta de manipulación en un entorno de cocina, concretamente el traslado de una hamburguesa a un plato, a partir de observaciones visuales en primera persona (FPV). El modelo emplea el tipo de política `gaze_flow_matching`, una variante de flow matching orientada a la predicción de acciones condicionada por la mirada (gaze), y se distribuye en formato safetensors con 75.248.330 parámetros.
+GFM Kitchen Burger FPV (identificador `fecasado/gfm-kitchen-burger-fpv`) es una política robótica entrenada mediante la librería LeRobot y publicada por el usuario fecasado en Hugging Face. No se trata de un modelo de lenguaje: es un controlador de imitación (imitation learning) diseñado para ejecutar una tarea concreta de manipulación en un entorno de cocina, concretamente el traslado de una hamburguesa a un plato, a partir de observaciones visuales en primera persona (FPV). El modelo emplea el tipo de política `gaze_flow_matching`, una variante de flow matching orientada a la predicción de acciones condicionada por la mirada (gaze), y se distribuye en formato safetensors con 75.248.330 parámetros.
 
 El modelo se ha entrenado sobre el dataset `fecasado/burger-to-plate-v2-320x240`, con resolución de 320x240 píxeles, y está pensado para integrarse en el stack de LeRobot para entrenamiento, evaluación e inferencia sobre robots tipo SO-100. Su relevancia es acotada pero concreta: sirve como referencia reproducible de un pipeline completo de aprendizaje por imitación en robótica de bajo coste, con licencia Apache 2.0 y un tamaño de repositorio de 0,3 GB que facilita su descarga y despliegue en entornos de laboratorio.
 
@@ -69,8 +69,8 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Tipo de política | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fecasado/gfm-kitchen-burger-fpv | gaze_flow_matching | 75,2 M | No aplica | Apache 2.0 | HuggingFace (LeRobot) |
-| Políticas ACT de LeRobot | ACT (Action Chunking Transformer) | No disponible | No aplica | Apache 2.0 (LeRobot) | HuggingFace / GitHub |
+| fecasado/gfm-kitchen-burger-fpv | gaze_flow_matching | 75,2 M | No aplica | Apache 2.0 | Hugging Face (LeRobot) |
+| Políticas ACT de LeRobot | ACT (Action Chunking Transformer) | No disponible | No aplica | Apache 2.0 (LeRobot) | Hugging Face / GitHub |
 | Políticas Diffusion Policy | Diffusion Policy | No disponible | No aplica | Según implementación | Repositorios de investigación |
 | Políticas VQ-BeT | VQ-BeT | No disponible | No aplica | Según implementación | Repositorios de investigación |
 
@@ -90,7 +90,7 @@ La comparación se limita a familias de políticas de imitación del ecosistema 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fecasado/gfm-kitchen-burger-fpv
+- Modelo en Hugging Face: https://huggingface.co/fecasado/gfm-kitchen-burger-fpv
 - Dataset de entrenamiento: https://huggingface.co/datasets/fecasado/burger-to-plate-v2-320x240
 - Documentación de LeRobot: https://huggingface.co/docs/lerobot/index
 - Guía de entrenamiento de políticas: https://huggingface.co/docs/lerobot/il_robots#train-a-policy

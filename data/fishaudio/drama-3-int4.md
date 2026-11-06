@@ -74,9 +74,9 @@ Notas de la evaluacion recogidas en la model card: el prompt en chino obtuvo WER
 
 | Modelo | Parametros | Cuantizacion | Tamano | Contexto | WER medio | Similitud de hablante | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|---|
-| fishaudio/drama-3-int4 | 35B totales / 3B activos (6,86B segun safetensors) | int4 W4A16 hibrido | 22,1 GB | no disponible | 0,197 | 0,846 | Fish Audio Community License v1.0 | publica en HuggingFace |
-| fishaudio/drama-3 (base) | 35B totales / 3B activos | FP8 por bloques (componentes en bf16) | 41,5 GB | no disponible | no disponible (requiere Hopper, no evaluado en el entorno de prueba) | no disponible | Fish Audio Community License v1.0 | publica en HuggingFace |
-| darioooooo0o/drama-3-w4a16-32gb | mismo modelo base | int8 en capas densas | 24,5 GB segun la tabla de evaluacion / 32 GB segun la descripcion | no disponible | 0,259 | 0,846 | derivada de la misma licencia | publica en HuggingFace |
+| fishaudio/drama-3-int4 | 35B totales / 3B activos (6,86B segun safetensors) | int4 W4A16 hibrido | 22,1 GB | no disponible | 0,197 | 0,846 | Fish Audio Community License v1.0 | publica en Hugging Face |
+| fishaudio/drama-3 (base) | 35B totales / 3B activos | FP8 por bloques (componentes en bf16) | 41,5 GB | no disponible | no disponible (requiere Hopper, no evaluado en el entorno de prueba) | no disponible | Fish Audio Community License v1.0 | publica en Hugging Face |
+| darioooooo0o/drama-3-w4a16-32gb | mismo modelo base | int8 en capas densas | 24,5 GB segun la tabla de evaluacion / 32 GB segun la descripcion | no disponible | 0,259 | 0,846 | derivada de la misma licencia | publica en Hugging Face |
 
 Como alternativas de otro tamano de la misma familia, la organizacion Fish Audio mantiene `fish-speech-1.5`, `s1-mini` y `s2-pro`, pero la informacion disponible no incluye parametros, contexto, benchmarks ni licencia comparables, por lo que no se incluyen en la tabla.
 
@@ -98,7 +98,7 @@ Como alternativas de otro tamano de la misma familia, la organizacion Fish Audio
 - Cuantizacion int8 de la comunidad usada como comparacion: https://huggingface.co/darioooooo0o/drama-3-w4a16-32gb
 - Repositorio SGLang-Omni: https://github.com/sgl-project/sglang-omni
 - Guia de Drama 3 en SGLang-Omni (cookbook): https://sgl-project.github.io/sglang-omni/cookbook/fishaudio_drama3.html
-- Perfil de Fish Audio en HuggingFace: https://huggingface.co/fishaudio
+- Perfil de Fish Audio en Hugging Face: https://huggingface.co/fishaudio
 - Sitio de Fish Audio: https://fish.audio/
 - Aplicacion de Fish Audio: https://fish.audio/app/
 - Kitta Audio (basado en tecnologia de Fish Audio): https://fishaudio.org/en

@@ -100,7 +100,7 @@ Frente a LLM generativos multilingües de tamaño comparable, la comparación no
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/yehor-oleksiuk/laya-multilingual-onnx
+- Repositorio en Hugging Face: https://huggingface.co/yehor-oleksiuk/laya-multilingual-onnx
 - Modelo base: https://huggingface.co/convaiinnovations/laya-multilingual
 - Código, detalles de entrenamiento y benchmarks originales: https://github.com/NandhaKishorM/laya
 - Búsqueda web: no se han encontrado resultados relevantes sobre este modelo; las consultas devolvieron únicamente páginas de soporte de Microsoft sin relación con el modelo.

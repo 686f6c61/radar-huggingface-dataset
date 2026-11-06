@@ -2,11 +2,11 @@
 
 ## Resumen
 
-Fugu Conductor GGUF es una version cuantizada en formato GGUF subida por el usuario iparashar al HuggingFace Hub el 10 de octubre de 2026. El repositorio contiene un modelo conversacional de 3.212.749.888 parametros (aproximadamente 3,2 mil millones) con un tamano de 3,4 GB, etiquetado como compatible con endpoints y orientado a uso conversacional.
+Fugu Conductor GGUF es una version cuantizada en formato GGUF subida por el usuario iparashar al Hugging Face Hub el 10 de octubre de 2026. El repositorio contiene un modelo conversacional de 3.212.749.888 parametros (aproximadamente 3,2 mil millones) con un tamano de 3,4 GB, etiquetado como compatible con endpoints y orientado a uso conversacional.
 
 El nombre del modelo remite a la familia Fugu, desarrollada por Sakana AI (Tokyo) y presentada el 22 de junio de 2026. Fugu es una familia de modelos orquestadores: en lugar de entrenar un unico modelo monolitico, coordina un conjunto de modelos de lenguaje ya existentes para alcanzar rendimiento de frontera en codigo, matematicas y razonamiento cientifico. Sakana expone Fugu como una API gestionada compatible con OpenAI, donde el desarrollador envia un prompt a un unico identificador de modelo (por ejemplo, fugu o fugu-ultra) y el sistema se encarga internamente de la seleccion de agentes, la asignacion de roles, la coordinacion, la verificacion y la respuesta final.
 
-Es importante senalar que la ficha de HuggingFace no confirma la autoria de Sakana AI ni la relacion exacta entre este repositorio y el producto comercial Fugu: se trata de una publicacion de un tercero, sin licencia declarada y con muy poca traccion (17 descargas, 0 likes). La relevancia de esta publicacion radica en que ofrece una version GGUF de un modelo pequeno (3,2 B) potencialmente ejecutable en hardware de consumo, algo poco habitual en la familia Fugu, que se comercializa como servicio gestionado y no como pesos abiertos.
+Es importante senalar que la ficha de Hugging Face no confirma la autoria de Sakana AI ni la relacion exacta entre este repositorio y el producto comercial Fugu: se trata de una publicacion de un tercero, sin licencia declarada y con muy poca traccion (17 descargas, 0 likes). La relevancia de esta publicacion radica en que ofrece una version GGUF de un modelo pequeno (3,2 B) potencialmente ejecutable en hardware de consumo, algo poco habitual en la familia Fugu, que se comercializa como servicio gestionado y no como pesos abiertos.
 
 ## Especificaciones tecnicas
 
@@ -30,7 +30,7 @@ A partir del contexto de la busqueda web, la familia Fugu de Sakana AI se define
 ## Capacidades
 
 - Generacion de texto conversacional en formato de instrucciones, segun la etiqueta "conversational" del repositorio.
-- Compatibilidad declarada con endpoints (tag endpoints_compatible), lo que indica que puede servirse detras de una API compatible con el esquema de HuggingFace Inference Endpoints.
+- Compatibilidad declarada con endpoints (tag endpoints_compatible), lo que indica que puede servirse detras de una API compatible con el esquema de Hugging Face Inference Endpoints.
 - Inferencia local en CPU y GPU mediante el ecosistema GGUF (llama.cpp y derivados).
 - Soporte de tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no confirmadas para estos pesos; el diseno multiagente descrito por Sakana reside en el sistema gestionado, no en este artefacto GGUF.
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad de pesos |
 |---|---|---|---|---|
-| fugu-conductor-gguf (iparashar) | 3,21 B | no disponible | no disponible | GGUF en HuggingFace |
+| fugu-conductor-gguf (iparashar) | 3,21 B | no disponible | no disponible | GGUF en Hugging Face |
 | Llama-3.2-3B | 3,21 B | 128k | Llama 3.2 Community License | safetensors y GGUF |
 | Qwen2.5-3B | 3,09 B | 32.768 tokens | Qwen Research License | safetensors y GGUF |
 | Phi-3.5-mini-instruct | 3,8 B | 128k | MIT | safetensors y GGUF |
@@ -84,7 +84,7 @@ Nota: la comparativa se limita a parametros, contexto, licencia y disponibilidad
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iparashar/fugu-conductor-gguf
+- Repositorio en Hugging Face: https://huggingface.co/iparashar/fugu-conductor-gguf
 - Fugu (model) - Learn AI: https://ai.miraheze.org/wiki/Fugu_(model)
 - Sakana Fugu, pagina oficial: https://sakana.ai/fugu/
 - Sakana Fugu, beta y descripcion tecnica: https://sakana.ai/fugu-beta/

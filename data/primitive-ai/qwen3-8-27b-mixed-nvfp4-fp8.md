@@ -89,6 +89,6 @@ La comparativa se limita a las variantes del mismo modelo base. No se dispone de
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8
+- Repositorio Hugging Face: https://huggingface.co/primitive-ai/Qwen3.8-27B-mixed-NVFP4-FP8
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-27B
 - Drafter DSpark (mencionado en la model card): https://huggingface.co/RadixArk/Qwen3.8-27B-DSpark

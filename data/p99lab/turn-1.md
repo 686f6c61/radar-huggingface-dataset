@@ -77,7 +77,7 @@ El propio autor precisa que, frente a las 13 filas del board en ese commit, turn
 
 | Modelo | Tipo | Cortes falsos @ 300 ms | Latencia @ 10% | Licencia | Disponibilidad |
 |---|---|---|---|---:|---|
-| turn-1 | End-of-turn detection sobre codificadores congelados | 10.6% | 322 ms | Apache-2.0 | HuggingFace (p99lab/turn-1) |
+| turn-1 | End-of-turn detection sobre codificadores congelados | 10.6% | 322 ms | Apache-2.0 | Hugging Face (p99lab/turn-1) |
 | LiveKit Turn Detector v1 | Detector de turno de LiveKit | 9.9% | 295 ms | no disponible | integrado en LiveKit |
 | JoinIn AI Baton | Detector de turno de JoinIn AI | 12.3% | 350 ms | no disponible | producto de JoinIn AI |
 | Deepgram Flux | Modelo de voz de Deepgram | 12.9% | 548 ms | no disponible | API de Deepgram |
@@ -101,7 +101,7 @@ LiveKit Turn Detector v1 supera a turn-1 en tres de las cuatro metricas principa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/p99lab/turn-1
+- Modelo en Hugging Face: https://huggingface.co/p99lab/turn-1
 - Modelo para dispositivo (variante mini, 5,3M parametros): https://huggingface.co/p99lab/turn-1-mini
 - Dataset de evaluacion: https://huggingface.co/datasets/livekit/eot-bench-data (referenciado como `livekit/eot-bench-data`, revision `ca9d98a`, harness commit `9ee21b5`)
 - Dependencia de codigo de los codificadores: `qwen-asr==0.0.6` (PyPI)

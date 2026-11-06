@@ -64,11 +64,11 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto (tokens de prompt) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Just-the-tip-Imminent-penetration-Concept (este) | LoRA sobre SDXL / Illustrious-XL-v2.0 | No disponible; repositorio de 0,2 GB | 77 por codificador (heredado del base) | faipl-1.0 (no comercial, ShareAlike) | HuggingFace, 0 descargas, 0 likes |
-| OnomaAIResearch/Illustrious-XL-v2.0 | Checkpoint completo SDXL | Aproximadamente 2.600 M (U-Net) | 77 por codificador | No disponible en esta ficha | HuggingFace; es el modelo base declarado |
-| Pony Diffusion V6 XL | Checkpoint completo SDXL | Aproximadamente 2.600 M (U-Net) | 77 por codificador | No disponible en esta ficha | HuggingFace; citado en el nombre del repositorio |
-| NoobAI-XL | Checkpoint completo SDXL | Aproximadamente 2.600 M (U-Net) | 77 por codificador | No disponible en esta ficha | HuggingFace; citado en el nombre del repositorio |
-| Adaptadores LoRA genéricos sobre Illustrious | LoRA | No disponible | 77 por codificador | Variable, a menudo no comercial | HuggingFace, ecosistema amplio |
+| Just-the-tip-Imminent-penetration-Concept (este) | LoRA sobre SDXL / Illustrious-XL-v2.0 | No disponible; repositorio de 0,2 GB | 77 por codificador (heredado del base) | faipl-1.0 (no comercial, ShareAlike) | Hugging Face, 0 descargas, 0 likes |
+| OnomaAIResearch/Illustrious-XL-v2.0 | Checkpoint completo SDXL | Aproximadamente 2.600 M (U-Net) | 77 por codificador | No disponible en esta ficha | Hugging Face; es el modelo base declarado |
+| Pony Diffusion V6 XL | Checkpoint completo SDXL | Aproximadamente 2.600 M (U-Net) | 77 por codificador | No disponible en esta ficha | Hugging Face; citado en el nombre del repositorio |
+| NoobAI-XL | Checkpoint completo SDXL | Aproximadamente 2.600 M (U-Net) | 77 por codificador | No disponible en esta ficha | Hugging Face; citado en el nombre del repositorio |
+| Adaptadores LoRA genéricos sobre Illustrious | LoRA | No disponible | 77 por codificador | Variable, a menudo no comercial | Hugging Face, ecosistema amplio |
 
 No se dispone de datos de rendimiento comparativos entre estas opciones en la información proporcionada; la comparación se limita a tipo de artefacto, tamaño, límite de prompt y licencia declarada.
 
@@ -86,7 +86,7 @@ No se dispone de datos de rendimiento comparativos entre estas opciones en la in
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AltairTheArc/Just-the-tip-Imminent-penetration-Concept-version-Illustrious-NoobAI-Pony
+- Modelo en Hugging Face: https://huggingface.co/AltairTheArc/Just-the-tip-Imminent-penetration-Concept-version-Illustrious-NoobAI-Pony
 - Modelo base: https://huggingface.co/OnomaAIResearch/Illustrious-XL-v2.0
 - Licencia declarada (faipl-1.0): https://freedevproject.org/faipl-1.0-sd/
 - Paper de referencia de la arquitectura base (SDXL): https://arxiv.org/abs/2307.01952

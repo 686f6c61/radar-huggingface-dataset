@@ -6,7 +6,7 @@ AES-128 Algebraic Verification Suite no es un modelo de inteligencia artificial,
 
 La suite incluye herramientas Python para aritmetica de campos finitos GF(2^8), verificacion de la S-box de AES, busqueda corregida de trails diferenciales MILP, computacion de rango Jacobiano sobre GF(2), y pruebas formales completas en Lean 4 con cero axiomas sin demostrar (zero sorry). El resultado terminal afirma que no existe un operador Q con coste inferior a 2^97 para invertir AES-128 completo de 10 rondas.
 
-Este repositorio es relevante para la comunidad de seguridad y criptografia porque ofrece verificacion formal y herramientas reproducibles para evaluar la resistencia de un estandar critico en infraestructuras globales. Fue publicado en HuggingFace el 3 de septiembre de 2026 y cuenta con 0 descargas y 0 likes en el momento de la consulta.
+Este repositorio es relevante para la comunidad de seguridad y criptografia porque ofrece verificacion formal y herramientas reproducibles para evaluar la resistencia de un estandar critico en infraestructuras globales. Fue publicado en Hugging Face el 3 de septiembre de 2026 y cuenta con 0 descargas y 0 likes en el momento de la consulta.
 
 ## Especificaciones tecnicas
 
@@ -78,7 +78,7 @@ No se han publicado resultados de benchmarks comparativos con otros modelos o he
 
 ## Comparativa con modelos similares
 
-No disponible. Este artefacto no es un modelo de IA y no existen modelos comparables en la misma categoria dentro del ecosistema de HuggingFace. En el ambito de herramientas de verificacion criptografica, no se han identificado alternativas equivalentes en la informacion proporcionada que combinen herramientas Python y pruebas formales Lean 4 para AES-128.
+No disponible. Este artefacto no es un modelo de IA y no existen modelos comparables en la misma categoria dentro del ecosistema de Hugging Face. En el ambito de herramientas de verificacion criptografica, no se han identificado alternativas equivalentes en la informacion proporcionada que combinen herramientas Python y pruebas formales Lean 4 para AES-128.
 
 ## Limitaciones y advertencias
 
@@ -87,10 +87,10 @@ No disponible. Este artefacto no es un modelo de IA y no existen modelos compara
 - Requiere conocimientos especializados en criptografia y algebra para interpretar correctamente los resultados.
 - La licencia AGPL-3.0 (opcion por defecto) tiene implicaciones para uso comercial: cualquier redistribucion o servicio basado en este codigo debe publicar su codigo fuente bajo la misma licencia.
 - Los resultados dependen de la correccion de las herramientas y pruebas; aunque se afirma que todas las pruebas Lean 4 estan completamente demostradas, la verificacion externa independiente no esta documentada.
-- El repositorio tiene 0 descargas y 0 likes en HuggingFace, lo que sugiere que no ha sido ampliamente validado por la comunidad.
+- El repositorio tiene 0 descargas y 0 likes en Hugging Face, lo que sugiere que no ha sido ampliamente validado por la comunidad.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Snapkitty/aes-verification-suite
+- Hugging Face: https://huggingface.co/Snapkitty/aes-verification-suite
 - Repositorio GitHub: https://github.com/SNAPKITTYWEST/aes-verification-suite
 - License Policy Engine: https://github.com/SNAPKITTYWEST/license-policy-engine

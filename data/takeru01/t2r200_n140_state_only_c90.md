@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `takeru01/t2r200_n140_state_only_c90` es un checkpoint publicado en HuggingFace por el usuario `takeru01`. Se trata de un modelo de pequeno tamano, con 40.225.998 parametros totales confirmados a partir de los pesos en formato safetensors, y un repositorio de 0,2 GB. El identificador sugiere un entrenamiento de tipo experimental o de investigacion (posiblemente una variante de una familia denominada `t2r`), pero no se ha publicado informacion que confirme la tarea, la arquitectura ni el proposito del modelo.
+El modelo `takeru01/t2r200_n140_state_only_c90` es un checkpoint publicado en Hugging Face por el usuario `takeru01`. Se trata de un modelo de pequeno tamano, con 40.225.998 parametros totales confirmados a partir de los pesos en formato safetensors, y un repositorio de 0,2 GB. El identificador sugiere un entrenamiento de tipo experimental o de investigacion (posiblemente una variante de una familia denominada `t2r`), pero no se ha publicado informacion que confirme la tarea, la arquitectura ni el proposito del modelo.
 
 No se dispone de pipeline declarado, licencia, idiomas soportados ni tarjeta de modelo con descripcion tecnica. El repositorio fue creado y actualizado el 14 de septiembre de 2026, cuenta con 1 like y 0 descargas, lo que indica que es un artefacto reciente y practicamente sin validacion por parte de la comunidad.
 
@@ -75,5 +75,5 @@ No es posible establecer una comparativa rigurosa porque se desconoce la tarea, 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/takeru01/t2r200_n140_state_only_c90
+- Hugging Face: https://huggingface.co/takeru01/t2r200_n140_state_only_c90
 - No se han encontrado en la busqueda web enlaces relevantes al modelo (paper, blog, repositorio o demo). Los resultados devueltos (GitHub CLI, documentacion de precios de GitHub Copilot, repositorios de terceros no relacionados) no guardan vinculacion con este checkpoint.

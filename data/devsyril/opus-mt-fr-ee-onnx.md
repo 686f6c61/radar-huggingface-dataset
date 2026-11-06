@@ -83,7 +83,7 @@ El modelo es una exportacion directa de Helsinki-NLP/opus-mt-fr-ee, por lo que s
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Devsyril/opus-mt-fr-ee-onnx
+- Repositorio Hugging Face: https://huggingface.co/Devsyril/opus-mt-fr-ee-onnx
 - Modelo original: https://huggingface.co/Helsinki-NLP/opus-mt-fr-ee
 - Repositorio GitHub de OPUS-MT: https://github.com/Helsinki-NLP/Opus-MT
 - Repositorio OPUS-MT-train: https://github.com/Helsinki-NLP/OPUS-MT-train

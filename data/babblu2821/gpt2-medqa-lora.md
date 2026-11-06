@@ -105,7 +105,7 @@ El brazo QLoRA sobre TinyLlama alcanza mejores métricas de compresión (bits po
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Babblu2821/gpt2-medqa-lora
+- Modelo en Hugging Face: https://huggingface.co/Babblu2821/gpt2-medqa-lora
 - Repositorio de código y resultados: https://github.com/fayazhussain2821/llm-finetuning-medqa
 - Dataset MedQuAD: https://huggingface.co/datasets/keivalya/MedQuad-MedicalQnADataset
 - Modelo base GPT-2: https://huggingface.co/openai-community/gpt2

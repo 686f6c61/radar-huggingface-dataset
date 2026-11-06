@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No s
 
 - VRAM estimada: cada checkpoint es un modelo de ~0.5B parámetros en bf16, lo que ocupa aproximadamente 1 GB en memoria. Para inferencia se recomienda al menos 2 GB de VRAM para cargar el modelo y el tokenizador.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM (por ejemplo, NVIDIA GTX 1650, RTX 2060, etc.) puede ejecutar inferencia de un checkpoint individual. Para procesar múltiples checkpoints en lote, se necesita más memoria.
-- Opciones de despliegue: al ser un modelo de HuggingFace, se puede usar con `transformers` en Python, o exportar a formato GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan cuantizaciones precalculadas.
+- Opciones de despliegue: al ser un modelo de Hugging Face, se puede usar con `transformers` en Python, o exportar a formato GGUF para usar con llama.cpp u Ollama, aunque no se proporcionan cuantizaciones precalculadas.
 - Latencia y throughput: no se proporcionan datos concretos; para un modelo de 0.5B en una GPU moderna, se espera una latencia de decenas de milisegundos por token.
 
 ## Comparativa con modelos similares
@@ -70,7 +70,7 @@ No se dispone de información sobre modelos similares (trayectorias de checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arkilpatel/qwen2p5-0p5b-traj
+- Hugging Face: https://huggingface.co/arkilpatel/qwen2p5-0p5b-traj
 - Página personal del autor: https://arkilpatel.github.io/
 - Perfil de Google Scholar: https://scholar.google.com/citations?user=-5goVAsAAAAJ&hl=en
 - Perfil de Mila: https://mila.quebec/en/directory/arkil-patel

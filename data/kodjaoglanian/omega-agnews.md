@@ -107,7 +107,7 @@ No se han publicado en la informacion disponible resultados de otros benchmarks 
 
 | Modelo | Parametros | Precision en AG News (test oficial) | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| omega-agnews (RUN A EMA) | ~150 M | 95,04 % | apache-2.0 | HuggingFace, requiere codigo propio |
+| omega-agnews (RUN A EMA) | ~150 M | 95,04 % | apache-2.0 | Hugging Face, requiere codigo propio |
 | Laya | 421 M | 95,0 % (numero publico citado por el autor) | no disponible | no disponible |
 | Jev 1.13 | no disponible | 91,0 % (numero publico citado por el autor) | no disponible | no disponible |
 
@@ -123,13 +123,13 @@ La comparativa se limita a los datos que el autor cita en la model card. No se d
 - Riesgo de alucinacion: no aplica en el sentido generativo, ya que el modelo no produce texto libre; el riesgo equivalente es la clasificacion erronea con alta confianza en entradas fuera de dominio.
 - Codigo personalizado: requiere importar `modeling_omega.py` y usar `load_omega`, en lugar de las clases estandar de Transformers. Esto complica la integracion con servidores de inferencia convencionales y exige revisar el codigo antes de ejecutarlo en produccion.
 - Licencia: Apache 2.0 permite uso comercial del modelo, pero conviene verificar los terminos del modelo base (answerdotai/ModernBERT-base), que se distribuye bajo su propia licencia, y las condiciones del dataset AG News.
-- Validacion externa nula: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, sin replicaciones independientes de los resultados.
+- Validacion externa nula: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, sin replicaciones independientes de los resultados.
 - Los resultados de busqueda web asociados a esta consulta no contienen informacion relacionada con el modelo (versan sobre alternativas a un exchange de criptomonedas), por lo que no aportan datos verificables.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Kodjaoglanian/omega-agnews
+- Modelo en Hugging Face: https://huggingface.co/Kodjaoglanian/omega-agnews
 - Modelo base: https://huggingface.co/answerdotai/ModernBERT-base
-- Codigo de carga personalizado: archivo `modeling_omega.py` incluido en el repositorio del modelo en HuggingFace
+- Codigo de carga personalizado: archivo `modeling_omega.py` incluido en el repositorio del modelo en Hugging Face
 - Referencia metodologica citada en la model card: Wortsman et al., "Model soups: averaging weights of multiple fine-tuned models improves accuracy without increasing inference time", ICML 2022 (sin URL incluida en la model card)
 - Resultados de busqueda web: no se han encontrado enlaces relevantes al modelo; los resultados devueltos corresponden a comparativas de un servicio de criptomonedas (Paybis) y no guardan relacion con esta ficha

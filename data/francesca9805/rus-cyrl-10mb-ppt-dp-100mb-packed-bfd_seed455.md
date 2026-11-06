@@ -64,8 +64,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Idioma principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39.087.104 | no disponible | ruso (cirilico), no confirmado | no disponible | safetensors en HuggingFace |
-| goldfish-models/rus_cyrl_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | ruso (cirilico) | no disponible | HuggingFace |
+| francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed455 | 39.087.104 | no disponible | ruso (cirilico), no confirmado | no disponible | safetensors en Hugging Face |
+| goldfish-models/rus_cyrl_10mb (modelo base) | no disponible en la informacion proporcionada | no disponible | ruso (cirilico) | no disponible | Hugging Face |
 | Otras alternativas de la familia Goldfish | no disponible | no disponible | no disponible | no disponible | no verificadas en la informacion proporcionada |
 
 No se dispone de datos suficientes para comparar rendimiento con modelos alternativos: no hay benchmarks publicados ni informacion sobre otros miembros de la familia Goldfish mas alla del modelo base declarado.
@@ -83,7 +83,7 @@ No se dispone de datos suficientes para comparar rendimiento con modelos alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed455
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/rus-cyrl-10mb-ppt-Dp-100mb-packed-bfd_seed455
 - Modelo base: https://huggingface.co/goldfish-models/rus_cyrl_10mb
 - Repositorio de TRL: https://github.com/huggingface/trl
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/o0kqcqg3

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`chineduafolabi/toy-generation` es un prototipo de investigación publicado en HuggingFace por el usuario chineduafolabi. Se trata de una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación, etiquetada por el autor con la escala "giant" y con un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado. El repositorio tiene 49.600 parámetros totales según los metadatos de safetensors, un tamaño de 0,0 GB, cero descargas y cero likes en el momento de la consulta.
+`chineduafolabi/toy-generation` es un prototipo de investigación publicado en Hugging Face por el usuario chineduafolabi. Se trata de una implementación propia de un Vision Transformer (ViT) orientada a tareas de generación, etiquetada por el autor con la escala "giant" y con un checkpoint de inicialización (`model.safetensors`) que, según la propia model card, no ha sido entrenado ni evaluado. El repositorio tiene 49.600 parámetros totales según los metadatos de safetensors, un tamaño de 0,0 GB, cero descargas y cero likes en el momento de la consulta.
 
 El interés del artefacto no es su rendimiento, sino su función como esqueleto reproducible: incluye `eval.py` con un ejemplo ejecutable, `config.json` con la configuración de arquitectura, `training_args.json` con la receta de experimento por defecto y un checkpoint válido para pruebas de humo. La model card es explícita al afirmar que no se reclama ninguna métrica de benchmark y que los valores de configuración son puntos de partida del script, no evidencia de un entrenamiento completado.
 
@@ -82,6 +82,6 @@ No disponible. No se han identificado en la información proporcionada modelos c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/chineduafolabi/toy-generation
+- Modelo en Hugging Face: https://huggingface.co/chineduafolabi/toy-generation
 - Archivos incluidos en el repositorio: `eval.py` (artefacto principal), `config.json` (configuración de arquitectura), `training_args.json` (receta de experimento por defecto), `model.safetensors` (checkpoint de inicialización), `README.md` (documentación).
 - Papers, blogs o repositorios adicionales: no disponible. Las búsquedas web realizadas no devolvieron ninguna fuente relacionada con este modelo; los resultados obtenidos trataban sobre generación de contenido 3D, juguetes con IA generativa y asistentes comerciales, temas ajenos a este repositorio.

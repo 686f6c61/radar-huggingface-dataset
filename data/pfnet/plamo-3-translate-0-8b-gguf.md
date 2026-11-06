@@ -77,10 +77,10 @@ La model card menciona TranslateGemma y HY-MT2 como modelos especializados en tr
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| PLaMo 3 Translate 0.8B GGUF | 890.344.960 | 32.768 (entrada + salida) | PLaMo Community License | HuggingFace (GGUF, BF16, FP8, W4A16, W4AFP8, NVFP4, MLX) |
-| PLaMo 3 Translate 2B | no disponible en detalle | 32.768 (entrada + salida) | PLaMo Community License | HuggingFace (mismos formatos) |
-| PLaMo 3 Translate 8B | no disponible en detalle | 32.768 (entrada + salida) | PLaMo Community License | HuggingFace (mismos formatos) |
-| PLaMo 3 Translate 31B | no disponible en detalle | 32.768 (entrada + salida) | PLaMo Community License | HuggingFace (mismos formatos) |
+| PLaMo 3 Translate 0.8B GGUF | 890.344.960 | 32.768 (entrada + salida) | PLaMo Community License | Hugging Face (GGUF, BF16, FP8, W4A16, W4AFP8, NVFP4, MLX) |
+| PLaMo 3 Translate 2B | no disponible en detalle | 32.768 (entrada + salida) | PLaMo Community License | Hugging Face (mismos formatos) |
+| PLaMo 3 Translate 8B | no disponible en detalle | 32.768 (entrada + salida) | PLaMo Community License | Hugging Face (mismos formatos) |
+| PLaMo 3 Translate 31B | no disponible en detalle | 32.768 (entrada + salida) | PLaMo Community License | Hugging Face (mismos formatos) |
 | TranslateGemma | no disponible | no disponible | no disponible | no disponible |
 | HY-MT2 | no disponible | no disponible | no disponible | no disponible |
 
@@ -99,7 +99,7 @@ No se dispone de datos de parámetros, contexto ni licencia de TranslateGemma ni
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/pfnet/plamo-3-translate-0.8b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/pfnet/plamo-3-translate-0.8b-GGUF
 - Modelo base BF16: https://huggingface.co/pfnet/plamo-3-translate-0.8b
 - Variante FP8: https://huggingface.co/pfnet/plamo-3-translate-0.8b-FP8
 - Variante W4A16: https://huggingface.co/pfnet/plamo-3-translate-0.8b-W4A16

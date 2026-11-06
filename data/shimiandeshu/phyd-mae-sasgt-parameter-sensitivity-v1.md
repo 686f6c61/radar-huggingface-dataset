@@ -68,5 +68,5 @@ No disponible. No se proporcionan datos de modelos comparables en la informació
 
 ## Enlaces
 
-- [HuggingFace: shimiandeshu/phyd-mae-sasgt-parameter-sensitivity-v1](https://huggingface.co/shimiandeshu/phyd-mae-sasgt-parameter-sensitivity-v1)
+- [Hugging Face: shimiandeshu/phyd-mae-sasgt-parameter-sensitivity-v1](https://huggingface.co/shimiandeshu/phyd-mae-sasgt-parameter-sensitivity-v1)
 - No se proporcionan otros enlaces (papers, blogs, repos) en la información disponible.

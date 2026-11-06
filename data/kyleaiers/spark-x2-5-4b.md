@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Spark-X2.5-4B es un modelo de lenguaje compacto de propósito general desarrollado por XHToken y redistribuido en HuggingFace por el usuario KyleAIers como fine-tune del checkpoint base Spark-X2.5-4B-Base. Se trata de un modelo denso con aproximadamente 4.100 millones de parámetros y una arquitectura transformer de atención híbrida que combina capas de atención completa con capas de atención de ventana deslizante. Ofrece una ventana de contexto nativa de hasta un millón de tokens y soporte declarado para más de 200 idiomas, lo que lo hace apto para conversación, escritura, traducción, razonamiento, generación de código, uso de herramientas y flujos de trabajo agénticos.
+Spark-X2.5-4B es un modelo de lenguaje compacto de propósito general desarrollado por XHToken y redistribuido en Hugging Face por el usuario KyleAIers como fine-tune del checkpoint base Spark-X2.5-4B-Base. Se trata de un modelo denso con aproximadamente 4.100 millones de parámetros y una arquitectura transformer de atención híbrida que combina capas de atención completa con capas de atención de ventana deslizante. Ofrece una ventana de contexto nativa de hasta un millón de tokens y soporte declarado para más de 200 idiomas, lo que lo hace apto para conversación, escritura, traducción, razonamiento, generación de código, uso de herramientas y flujos de trabajo agénticos.
 
 El modelo fue entrenado sobre unos 20 billones de tokens en un corpus diverso (web, libros, publicaciones académicas, código y materiales enciclopédicos), con especial énfasis en matemáticas, lógica y código. El post-entrenamiento incluye supervisión fina (SFT) y aprendizaje por refuerzo a gran escala, con consolidación de políticas especializadas mediante la técnica MOPD. Su tamaño compacto y su compatibilidad con frameworks como vLLM, SGLang, llama.cpp, MLX y Ollama lo convierten en una opción práctica para despliegue en entornos con recursos limitados.
 
@@ -62,10 +62,10 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Spark-X2.5-4B (base XHToken) | 4.1B | 1M tokens | Apache 2.0 | HuggingFace / GitHub |
-| Qwen2.5-3B | 3.1B | 32K tokens | Apache 2.0 | HuggingFace |
-| Gemma-3-4B | 4.1B | 128K tokens | Licencia Gemma (uso comercial con condiciones) | HuggingFace |
-| Llama-3.2-3B | 3.2B | 128K tokens | Llama Community License (con restricciones de uso masivo) | HuggingFace |
+| Spark-X2.5-4B (base XHToken) | 4.1B | 1M tokens | Apache 2.0 | Hugging Face / GitHub |
+| Qwen2.5-3B | 3.1B | 32K tokens | Apache 2.0 | Hugging Face |
+| Gemma-3-4B | 4.1B | 128K tokens | Licencia Gemma (uso comercial con condiciones) | Hugging Face |
+| Llama-3.2-3B | 3.2B | 128K tokens | Llama Community License (con restricciones de uso masivo) | Hugging Face |
 
 Los datos de la tabla se refieren a las especificaciones públicas de cada modelo, no a resultados de benchmarks, ya que no se dispone de mediciones comparativas publicadas en la información disponible.
 
@@ -80,6 +80,6 @@ Los datos de la tabla se refieren a las especificaciones públicas de cada model
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/KyleAIers/Spark-X2.5-4B
+- Hugging Face: https://huggingface.co/KyleAIers/Spark-X2.5-4B
 - GitHub: https://github.com/XHToken/Spark-X2.5
 - Ficha en Applied: https://theapplied.co/models/xhtoken-spark-x2-5-4b

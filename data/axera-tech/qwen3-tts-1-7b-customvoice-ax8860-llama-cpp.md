@@ -99,7 +99,7 @@ La comparativa se limita a las variantes de la propia familia Qwen3-TTS citadas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-CustomVoice-AX8860-llama.cpp
+- Repositorio Hugging Face: https://huggingface.co/AXERA-TECH/Qwen3-TTS-1.7B-CustomVoice-AX8860-llama.cpp
 - Modelo base: https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice
 - Fork de llama.cpp con backend Axera (`axera-dev` @ `cff4752`): https://github.com/ZHEQIUSHUI/llama.cpp
 - Kernels Axera DSL (`main` @ `60dd25b`): https://github.com/ZHEQIUSHUI/ax-dsl-kernels

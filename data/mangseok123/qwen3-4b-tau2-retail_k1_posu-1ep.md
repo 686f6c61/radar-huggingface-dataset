@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MANGSEOK123/qwen3-4b-tau2-retail_k1_posU-1ep es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en HuggingFace. El objetivo declarado es consolidar comportamiento de agente sobre el dominio **retail** del benchmark tau2-bench mediante una tecnica de destilacion de experiencia (OEL, *experience distillation*) aplicada sobre 45 pares tarea–memoria. No es un modelo nuevo: es una variante especializada del checkpoint instruct de Qwen3 de 4B, con licencia Apache-2.0 y pesos en safetensors.
+MANGSEOK123/qwen3-4b-tau2-retail_k1_posU-1ep es un ajuste fino del modelo Qwen/Qwen3-4B-Instruct-2507 publicado por el usuario MANGSEOK123 en Hugging Face. El objetivo declarado es consolidar comportamiento de agente sobre el dominio **retail** del benchmark tau2-bench mediante una tecnica de destilacion de experiencia (OEL, *experience distillation*) aplicada sobre 45 pares tarea–memoria. No es un modelo nuevo: es una variante especializada del checkpoint instruct de Qwen3 de 4B, con licencia Apache-2.0 y pesos en safetensors.
 
 El entrenamiento es deliberadamente minimo: 1 epoca, batch size 12, learning rate constante de 3e-6 y una perdida KL completa sobre todos los tokens de respuesta con `kl_topk` 256. La peculiaridad metodologica es que no se usa recompensa alguna: el estudiante reproduce cada tarea *sin* memoria en el prompt, mientras que el profesor son los mismos pesos con la memoria de esa tarea inyectada en el system prompt. Es decir, se destila una diferencia de contexto, no una politica recompensada.
 
@@ -22,7 +22,7 @@ Su relevancia actual es acotada y muy especifica: sirve como artefacto de invest
 | Formato de pesos | safetensors |
 | Modelo base | Qwen/Qwen3-4B-Instruct-2507 |
 | Dominio de especializacion | tau2-bench, dominio retail |
-| Fecha de publicacion | 23 de septiembre de 2026 (segun metadatos de HuggingFace) |
+| Fecha de publicacion | 23 de septiembre de 2026 (segun metadatos de Hugging Face) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -78,9 +78,9 @@ No se han publicado resultados de benchmarks adicionales (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MANGSEOK123/qwen3-4b-tau2-retail_k1_posU-1ep | 4,41 mil millones (safetensors) | no disponible; ejemplo de despliegue a 40.960 tokens | tau2-bench retail, destilacion de experiencia | apache-2.0 | HuggingFace, 0 descargas, sin evaluacion publicada |
-| Qwen/Qwen3-4B-Instruct-2507 (base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | proposito general, instruct | apache-2.0 | HuggingFace, ampliamente distribuido |
-| Qwen3-4B-Thinking-2507 (variante de razonamiento) | no disponible en la informacion proporcionada | no disponible | razonamiento explicito | apache-2.0 | HuggingFace |
+| MANGSEOK123/qwen3-4b-tau2-retail_k1_posU-1ep | 4,41 mil millones (safetensors) | no disponible; ejemplo de despliegue a 40.960 tokens | tau2-bench retail, destilacion de experiencia | apache-2.0 | Hugging Face, 0 descargas, sin evaluacion publicada |
+| Qwen/Qwen3-4B-Instruct-2507 (base) | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | proposito general, instruct | apache-2.0 | Hugging Face, ampliamente distribuido |
+| Qwen3-4B-Thinking-2507 (variante de razonamiento) | no disponible en la informacion proporcionada | no disponible | razonamiento explicito | apache-2.0 | Hugging Face |
 | Otros modelos de ~4B para agentes y tool calling | no disponible | no disponible | agentes genericos | variable | no disponible |
 
 La comparacion cuantitativa de rendimiento no es posible: el modelo ajustado no ha sido evaluado y las busquedas web realizadas no devolvieron informacion tecnica relevante sobre alternativas comparables en este mismo dominio (los resultados obtenidos no guardan relacion con el modelo y se descartan).
@@ -101,7 +101,7 @@ La comparacion cuantitativa de rendimiento no es posible: el modelo ajustado no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_k1_posU-1ep
+- Modelo en Hugging Face: https://huggingface.co/MANGSEOK123/qwen3-4b-tau2-retail_k1_posU-1ep
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Paper, repositorio o demo del benchmark tau2-bench: no disponible en la informacion proporcionada
 - Repositorio de OEL o de la tecnica de destilacion de experiencia: no disponible en la informacion proporcionada

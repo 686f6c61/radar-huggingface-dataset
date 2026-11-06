@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thundergod2007/vipragsent-xlmr-checkpoints es un repositorio de pesos alojado en HuggingFace por el usuario Thundergod2007. El repositorio no incluye model card descriptiva: la unica informacion declarada por el autor es la licencia MIT. No se especifican pipeline, idiomas soportados, arquitectura ni numero de parametros, por lo que se desconoce con certeza que tipo de modelo contiene mas alla de lo que sugiere su identificador.
+Thundergod2007/vipragsent-xlmr-checkpoints es un repositorio de pesos alojado en Hugging Face por el usuario Thundergod2007. El repositorio no incluye model card descriptiva: la unica informacion declarada por el autor es la licencia MIT. No se especifican pipeline, idiomas soportados, arquitectura ni numero de parametros, por lo que se desconoce con certeza que tipo de modelo contiene mas alla de lo que sugiere su identificador.
 
 El dato mas objetivo disponible es el tamano del repositorio, 318,3 GB, un volumen muy superior al de un unico modelo de pesos abiertos de escala razonable. Esto indica que se trata de un contenedor de multiples checkpoints intermedios de entrenamiento (probablemente con estados del optimizador incluidos) en lugar de un artefacto listo para inferencia. El nombre del repositorio combina los terminos "vipragsent" y "xlmr", lo que apunta a un componente de recuperacion aumentada (RAG) con representaciones de frases sobre un backbone de la familia XLM-RoBERTa, si bien esta interpretacion no esta confirmada por ninguna fuente publicada.
 
@@ -90,7 +90,7 @@ La comparacion es orientativa y se basa en las especificaciones publicas de los 
 ## Limitaciones y advertencias
 
 - Ausencia total de documentacion: no hay model card, ficha tecnica ni articulo asociado. Usar estos pesos en produccion sin una evaluacion propia es un riesgo alto.
-- Procedencia no verificada: el autor no tiene historial publico de publicaciones previas en HuggingFace y el repositorio no registra descargas ni interacciones, lo que impide cualquier validacion por parte de la comunidad.
+- Procedencia no verificada: el autor no tiene historial publico de publicaciones previas en Hugging Face y el repositorio no registra descargas ni interacciones, lo que impide cualquier validacion por parte de la comunidad.
 - Sesgos: no se puede evaluar el sesgo sin conocer los datos de entrenamiento. Si el ajuste fino se realizo sobre un corpus no documentado, los sesgos de dicho corpus (de genero, origen, idioma o dominio) serian desconocidos.
 - Alucinacion: no aplica directamente si el modelo es un encoder; si contuviese componentes generativos, el riesgo no estaria documentado.
 - Cobertura idiomatica: no declarada. La ausencia de etiquetas de idioma impide confirmar el soporte de castellano o de cualquier otra lengua.
@@ -101,6 +101,6 @@ La comparacion es orientativa y se basa en las especificaciones publicas de los 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Thundergod2007/vipragsent-xlmr-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/Thundergod2007/vipragsent-xlmr-checkpoints
 
 No se han encontrado enlaces adicionales relevantes. La busqueda web realizada no devolvio ninguna fuente relacionada con el modelo, su autor o el proyecto "vipragsent"; los resultados obtenidos correspondian a contenidos sin relacion (menus de restauracion) y se han descartado. No se han localizado papers, blogs tecnicos, repositorios de codigo ni demos asociados.

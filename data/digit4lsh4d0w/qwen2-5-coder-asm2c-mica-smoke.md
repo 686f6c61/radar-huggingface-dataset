@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`digit4lsh4d0w/qwen2.5-coder-asm2c-mica-smoke` es un modelo publicado en HuggingFace por el usuario digit4lsh4d0w el 2 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen2.5-Coder, orientado aparentemente a la traduccion de ensamblador a C (asm2c), probablemente dentro de un experimento de investigacion sobre generacion de codigo. El sufijo "mica-smoke" sugiere una ejecucion de prueba ("smoke test") sobre un conjunto de datos o pipeline denominado MICA.
+`digit4lsh4d0w/qwen2.5-coder-asm2c-mica-smoke` es un modelo publicado en Hugging Face por el usuario digit4lsh4d0w el 2 de noviembre de 2026. Por el identificador se deduce que se trata de un ajuste fino (fine-tuning) del modelo base Qwen2.5-Coder, orientado aparentemente a la traduccion de ensamblador a C (asm2c), probablemente dentro de un experimento de investigacion sobre generacion de codigo. El sufijo "mica-smoke" sugiere una ejecucion de prueba ("smoke test") sobre un conjunto de datos o pipeline denominado MICA.
 
-El repositorio tiene un tamano de 0,7 GB, lo que es coherente con pesos en safetensors de un modelo de aproximadamente 1,5 a 3 mil millones de parametros en precision de 16 bits, o de un modelo mayor cuantizado. La model card es la plantilla automatica de HuggingFace sin rellenar: no aporta informacion sobre datos de entrenamiento, licencia, idiomas ni evaluacion. La unica etiqueta tecnica relevante es `unsloth`, que indica que el entrenamiento se realizo con la libreria Unsloth, habitual para fine-tuning eficiente con LoRA/QLoRA.
+El repositorio tiene un tamano de 0,7 GB, lo que es coherente con pesos en safetensors de un modelo de aproximadamente 1,5 a 3 mil millones de parametros en precision de 16 bits, o de un modelo mayor cuantizado. La model card es la plantilla automatica de Hugging Face sin rellenar: no aporta informacion sobre datos de entrenamiento, licencia, idiomas ni evaluacion. La unica etiqueta tecnica relevante es `unsloth`, que indica que el entrenamiento se realizo con la libreria Unsloth, habitual para fine-tuning eficiente con LoRA/QLoRA.
 
 La relevancia de este modelo es limitada y fundamentalmente experimental: se trata de un artefacto de investigacion sin documentacion, sin benchmarks publicados y con cero descargas en el momento de redactar esta ficha. No debe considerarse un modelo listo para produccion, pero puede ser de interes para quienes estudien tecnicas de traduccion de codigo de bajo nivel o el uso de Unsloth para tareas de codigo especializadas.
 
@@ -45,7 +45,7 @@ Tampoco se documentan los datos de entrenamiento: no hay informacion sobre el co
 - Estudio de pipelines de fine-tuning con Unsloth: sirve como ejemplo reproducible de un ajuste fino pequeno sobre un modelo de codigo, util para quienes disenen sus propios experimentos con la misma herramienta.
 - Prototipado de asistentes de ingenieria inversa: en un entorno controlado, podria integrarse en una herramienta que asista a analistas de binarios, siempre con revision humana obligatoria de las traducciones generadas.
 - Baseline para comparativas academicas: util como referencia de un fine-tuning ligero frente a modelos de codigo completos en tareas de traduccion entre lenguajes.
-- Docencia sobre modelos de lenguaje para codigo: permite ilustrar el ciclo completo de publicacion en HuggingFace, desde el ajuste con Unsloth hasta el despliegue con transformers.
+- Docencia sobre modelos de lenguaje para codigo: permite ilustrar el ciclo completo de publicacion en Hugging Face, desde el ajuste con Unsloth hasta el despliegue con transformers.
 - Pruebas de infraestructura de inferencia: su tamano reducido (0,7 GB) lo hace adecuado para validar pipelines de despliegue (transformers, vLLM) en entornos de laboratorio antes de pasar a modelos mayores.
 
 ## Benchmarks y rendimiento
@@ -84,7 +84,7 @@ La comparativa es estructural: el modelo de digit4lsh4d0w carece de la documenta
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/digit4lsh4d0w/qwen2.5-coder-asm2c-mica-smoke
+- Modelo en Hugging Face: https://huggingface.co/digit4lsh4d0w/qwen2.5-coder-asm2c-mica-smoke
 - Unsloth (herramienta de entrenamiento): https://github.com/unslothai/unsloth
 - Paper citado en la model card (Lacoste et al., 2019, impacto ambiental): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto ambiental ML: https://mlco2.github.io/impact

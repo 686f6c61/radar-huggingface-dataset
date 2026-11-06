@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks que permitan una comparacion cuantitativa c
 
 ## Enlaces
 
-- Repositorio HuggingFace (redistribucion): https://huggingface.co/Virtudant-AI/Qwen3-32B
+- Repositorio Hugging Face (redistribucion): https://huggingface.co/Virtudant-AI/Qwen3-32B
 - Modelo original: https://huggingface.co/Qwen/Qwen3-32B
 - Licencia original: https://huggingface.co/Qwen/Qwen3-32B/blob/main/LICENSE
 - Blog de Qwen3: https://qwenlm.github.io/blog/qwen3/

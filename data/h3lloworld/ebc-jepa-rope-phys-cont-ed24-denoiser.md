@@ -62,7 +62,7 @@ No se han publicado resultados de benchmarks numericos en la informacion disponi
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| EBC-JEPA rope_phys_cont (ED24) | No disponible (backbone ViT-B) | No disponible | Sin cifras publicadas en la informacion | MIT | HuggingFace (0 descargas) |
+| EBC-JEPA rope_phys_cont (ED24) | No disponible (backbone ViT-B) | No disponible | Sin cifras publicadas en la informacion | MIT | Hugging Face (0 descargas) |
 | EDformer | No disponible en la informacion | No disponible | No disponible | No disponible en la informacion | Origen del dataset ED24 |
 | V-JEPA 2.1 ViT-B (Meta) | Backbone ViT-B | No disponible en la informacion | No disponible en la informacion | MIT | Checkpoint publico de Meta |
 
@@ -81,7 +81,7 @@ No se dispone de datos comparativos de rendimiento entre estas alternativas en l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/h3lloworld/ebc-jepa-rope-phys-cont-ed24-denoiser
+- Hugging Face: https://huggingface.co/h3lloworld/ebc-jepa-rope-phys-cont-ed24-denoiser
 - Codigo: https://github.com/whohyf/EBC-JEPA-share/tree/denoise-lora
 - Documentacion del protocolo (HANDOFF.md): https://github.com/whohyf/EBC-JEPA-share/blob/denoise-lora/docs/lora_denoise/HANDOFF.md
 - Checkpoint base V-JEPA 2.1 ViT-B: https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt

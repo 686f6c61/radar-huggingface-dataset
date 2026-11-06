@@ -69,7 +69,7 @@ No disponible. No existe un modelo comparable porque este repositorio no contien
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/justjasonfirdaus/multimodal-generation-base39
+- Repositorio Hugging Face: https://huggingface.co/justjasonfirdaus/multimodal-generation-base39
 - Artículo de referencia sobre generación multimodal (arXiv): https://arxiv.org/html/2409.14993v1
 - FLUX 3 (Black Forest Labs): https://bfl.ai/models/flux-3
 - Lista de modelos multimodales en 2026: https://blog.unitlab.ai/top-multimodal-models/

@@ -83,10 +83,10 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Olvido (recall) | Retencion (recall) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| Este modelo (NPO, epoch 8) | 8,03 B | no disponible (Llama 3.1: 128k) | 0,005 | 0,889 | llama3.1 | HuggingFace, 0 descargas |
-| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del unlearning) | 8,03 B | no disponible | no aplica (sin olvido) | 0,842 | llama3.1 | HuggingFace |
-| Llama-3.1-8B-Instruct (original) | 8,03 B | 128k | no aplica | no disponible | llama3.1 | HuggingFace, ampliamente desplegado |
-| Otros checkpoints DUET/NPO del mismo autor | 8,03 B | no disponible | no disponible | no disponible | llama3.1 | HuggingFace (variantes por semilla y conjunto) |
+| Este modelo (NPO, epoch 8) | 8,03 B | no disponible (Llama 3.1: 128k) | 0,005 | 0,889 | llama3.1 | Hugging Face, 0 descargas |
+| AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft (base del unlearning) | 8,03 B | no disponible | no aplica (sin olvido) | 0,842 | llama3.1 | Hugging Face |
+| Llama-3.1-8B-Instruct (original) | 8,03 B | 128k | no aplica | no disponible | llama3.1 | Hugging Face, ampliamente desplegado |
+| Otros checkpoints DUET/NPO del mismo autor | 8,03 B | no disponible | no disponible | no disponible | llama3.1 | Hugging Face (variantes por semilla y conjunto) |
 
 La comparación relevante es interna al linaje: el fine-tune base retiene 0.842 y el checkpoint tras NPO retiene 0.889, sin pérdida observable en el conjunto de retención, mientras el recall de olvido cae de valores cercanos a 0.9 en la epoch 1 a 0.005 en la epoch 8. No se dispone de comparación con otros algoritmos de unlearning (por ejemplo, GradDiff o RMU) en la información proporcionada.
 
@@ -104,7 +104,7 @@ La comparación relevante es interna al linaje: el fine-tune base retiene 0.842 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s0
+- Modelo en Hugging Face: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-NPO-popular-s0
 - Modelo base del unlearning: https://huggingface.co/AnniBori/Llama-3.1-8B-Instruct-DUET-film-ft
 - Dataset DUET_LLM (config `film`): https://huggingface.co/datasets/SwetieePawsss/DUET_LLM
 - Repositorio `open-unlearning` (referenciado en la receta): no disponible como enlace en la información proporcionada

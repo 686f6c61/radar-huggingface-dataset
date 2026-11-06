@@ -60,7 +60,7 @@ Estos valores indican que el sistema completo alcanza una precisión razonable e
 - VRAM estimada para inferencia: el modelo tiene 1.176.764.416 parámetros en bf16, lo que supone aproximadamente 2,35 GB de pesos. Con overhead de activaciones y KV cache, se puede ejecutar en una GPU con 4-6 GB de VRAM.
 - GPU recomendadas: cualquier GPU consumer con al menos 6 GB de VRAM (RTX 2060, RTX 3060, RTX 4060, etc.) es suficiente para inferencia. Para entrenamiento o fine-tuning adicional, se necesitaría una GPU con más memoria (16 GB o más) o varias GPUs.
 - Compatibilidad con consumer GPU: sí, cabe en GPUs de gama media y baja gracias a su tamaño compacto.
-- Opciones de despliegue: al ser un modelo en formato safetensors compatible con HuggingFace Transformers, puede ejecutarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o directamente con la librería Transformers de PyTorch.
+- Opciones de despliegue: al ser un modelo en formato safetensors compatible con Hugging Face Transformers, puede ejecutarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama (con conversión previa) o directamente con la librería Transformers de PyTorch.
 - Latencia y throughput: no se han publicado mediciones específicas. Para un modelo de 1,17B en bf16, se puede esperar una latencia de decodificación de unos 10-20 ms por token en una GPU moderna (RTX 3090 o superior), y un throughput de varios cientos de tokens por segundo en batch.
 
 ## Comparativa con modelos similares
@@ -84,7 +84,7 @@ La comparativa directa con el modelo de Heródoto (7B) muestra que ambos compart
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-apollonius-rhodius
+- Modelo en Hugging Face: https://huggingface.co/Urdatorn/sphragis-alm-olmo1b-metre-apollonius-rhodius
 - Dataset Sphragis-Metre: https://huggingface.co/datasets/Urdatorn/sphragis-metre
 - Código de entrenamiento y puntuación: https://github.com/Urdatorn/sphragis_models
 - Modelo base OLMo-1B: https://huggingface.co/allenai/OLMo-1B-hf

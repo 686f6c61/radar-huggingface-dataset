@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Naturaleza | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este checkpoint (Jeesup) | 6,74 mil millones | no disponible (base: 4096) | Llama-2-7b-chat comprimido por SVD, sin ajuste de recuperación | llama2 | HuggingFace, 13 descargas |
-| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 | Modelo base alineado con RLHF | llama2 | HuggingFace, ampliamente disponible |
+| Este checkpoint (Jeesup) | 6,74 mil millones | no disponible (base: 4096) | Llama-2-7b-chat comprimido por SVD, sin ajuste de recuperación | llama2 | Hugging Face, 13 descargas |
+| meta-llama/Llama-2-7b-chat-hf | 6,74 mil millones | 4096 | Modelo base alineado con RLHF | llama2 | Hugging Face, ampliamente disponible |
 | Modelos de compresión tipo SlicedLLM o similares | variable | variable | Compresión por rango con ajuste de recuperación | variable | no disponible en la informacion proporcionada |
 
 La comparación relevante es contra el modelo base: este checkpoint conserva el mismo número de parámetros almacenados (matrices densas plegadas) pero su representación efectiva es de rango reducido con una fracción factorial de 0,519340. Frente a métodos de compresión con ajuste fino de recuperación, el autor indica explícitamente que aquí no se aplicó recuperación, lo que sitúa este piloto en un régimen de mayor degradación esperada.
@@ -86,7 +86,7 @@ La comparación relevante es contra el modelo base: este checkpoint conserva el 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.00000001
+- Hugging Face: https://huggingface.co/Jeesup/svd-safety-shifted-l2_utility_remove0.5_rho0.00000001
 - Modelo base: https://huggingface.co/meta-llama/Llama-2-7b-chat-hf
 - Directorio de experimento dentro del repositorio: `experiment/` (configuraciones exactas, pérdidas de validación y código fuente)
 - Diagnósticos por matriz: `compression.json` en el repositorio

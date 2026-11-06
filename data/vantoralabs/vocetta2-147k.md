@@ -107,6 +107,6 @@ No hay datos disponibles de modelos externos comparables (parametros, contexto, 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VantoraLabs/Vocetta2-147k
+- Modelo en Hugging Face: https://huggingface.co/VantoraLabs/Vocetta2-147k
 - Resultados de busqueda web: la busqueda no devolvio ningun enlace relevante al modelo; los resultados obtenidos correspondian a fabricantes de maquinaria forestal y no guardan relacion con Vocetta2-147k.
 - Paper, blog, repositorio o demo adicionales: no disponible en la informacion proporcionada.

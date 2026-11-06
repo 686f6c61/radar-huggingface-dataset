@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.6-35B-A3B-GOLD-APEX-GGUF es una cuantización GGUF del modelo Qwen3.6-35B-A3B, un transformer de arquitectura Mixture-of-Experts (MoE) dispersa con 34.660.610.688 parámetros totales y 256 expertos, publicado por el usuario White-Wolf13 en HuggingFace. El modelo base lo desarrolla el equipo Qwen (Alibaba), mientras que esta versión GOLD es una reconstrucción de pesos del autor mediante un proceso propietario de alineamiento de variedad latente y calibración espectral, seguido de una segunda etapa de fusión en el espacio de pesos que el autor mantiene confidencial.
+Qwen3.6-35B-A3B-GOLD-APEX-GGUF es una cuantización GGUF del modelo Qwen3.6-35B-A3B, un transformer de arquitectura Mixture-of-Experts (MoE) dispersa con 34.660.610.688 parámetros totales y 256 expertos, publicado por el usuario White-Wolf13 en Hugging Face. El modelo base lo desarrolla el equipo Qwen (Alibaba), mientras que esta versión GOLD es una reconstrucción de pesos del autor mediante un proceso propietario de alineamiento de variedad latente y calibración espectral, seguido de una segunda etapa de fusión en el espacio de pesos que el autor mantiene confidencial.
 
 El interés principal de esta ficha reside en su pipeline de cuantización Enhanced APEX-I, que aborda un problema concreto de los MoE dispersos: la degradación del enrutamiento de expertos cuando se cuantizan las puertas del router. El autor preserva `ffn_gate_inp` en FP32 y los tensores del experto compartido (`ffn_down_shexp`) en FP16, y calibra la matriz de importancia sobre un proxy dedicado con suelo de Q6_K en lugar de sobre el artefacto cuantizado. Se ofrecen cinco perfiles con tamaños entre 11,29 GiB y 26,73 GiB, lo que permite desplegarlo desde GPUs de 12 GB hasta configuraciones de doble GPU.
 
@@ -69,9 +69,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-35B-A3B-GOLD-APEX-GGUF | 34,66B (MoE, 256 expertos) | no disponible | Apache 2.0 | GGUF (5 perfiles APEX-I) | HuggingFace, 961 descargas |
-| Qwen/Qwen3.6-35B-A3B (base) | 34,66B (MoE, 256 expertos) | no disponible | Apache 2.0 | safetensors y cuantizaciones estándar | HuggingFace |
-| Otras cuantizaciones GGUF del mismo base | 34,66B | no disponible | Apache 2.0 | GGUF genérico | HuggingFace |
+| Qwen3.6-35B-A3B-GOLD-APEX-GGUF | 34,66B (MoE, 256 expertos) | no disponible | Apache 2.0 | GGUF (5 perfiles APEX-I) | Hugging Face, 961 descargas |
+| Qwen/Qwen3.6-35B-A3B (base) | 34,66B (MoE, 256 expertos) | no disponible | Apache 2.0 | safetensors y cuantizaciones estándar | Hugging Face |
+| Otras cuantizaciones GGUF del mismo base | 34,66B | no disponible | Apache 2.0 | GGUF genérico | Hugging Face |
 
 La comparación relevante es frente al checkpoint base y frente a cuantizaciones GGUF estándar del mismo modelo: la diferencia declarada por el autor está en la preservación del router en FP32, la estabilización del experto compartido en FP16 y la calibración sobre un proxy con suelo Q6_K, factores que según la model card reducen la deriva de enrutamiento y los picos de divergencia KL. No se dispone de datos de benchmarks que permitan cuantificar esa mejora frente a otras alternativas.
 
@@ -90,6 +90,6 @@ La comparación relevante es frente al checkpoint base y frente a cuantizaciones
 
 ## Enlaces
 
-- [HuggingFace: White-Wolf13/Qwen3.6-35B-A3B-GOLD-APEX-GGUF](https://huggingface.co/White-Wolf13/Qwen3.6-35B-A3B-GOLD-APEX-GGUF)
+- [Hugging Face: White-Wolf13/Qwen3.6-35B-A3B-GOLD-APEX-GGUF](https://huggingface.co/White-Wolf13/Qwen3.6-35B-A3B-GOLD-APEX-GGUF)
 - [Modelo base: Qwen/Qwen3.6-35B-A3B](https://huggingface.co/Qwen/Qwen3.6-35B-A3B)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)

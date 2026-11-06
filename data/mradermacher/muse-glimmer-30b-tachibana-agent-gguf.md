@@ -73,7 +73,7 @@ No se dispone de informacion suficiente para una comparativa rigurosa con modelo
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo GGUF: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Tachibana-Agent-GGUF
+- Repositorio Hugging Face del modelo GGUF: https://huggingface.co/mradermacher/Muse-Glimmer-30B-Tachibana-Agent-GGUF
 - Modelo base (sequelbox): https://huggingface.co/sequelbox/Muse-Glimmer-30B-Tachibana-Agent
 - Pagina oficial de Muse Glimmer en Meta: https://developer.meta.com/ai/models/muse-glimmer/
 - Blog de investigacion de Meta sobre Muse Glimmer: https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model

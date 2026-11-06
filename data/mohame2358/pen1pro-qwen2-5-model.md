@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Pen1pro-Qwen2.5-Model es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado en HuggingFace por el usuario mohame2358 bajo licencia Apache 2.0. El modelo se ha entrenado a partir del checkpoint cuantizado en 4 bits `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit` y se distribuye en formato safetensors con 7.615.616.512 parametros totales (aproximadamente 7,6 mil millones) y un repositorio de 15,2 GB, lo que corresponde a pesos en precision de 16 bits.
+Pen1pro-Qwen2.5-Model es un ajuste fino (fine-tuning) del modelo Qwen2.5-7B-Instruct, publicado en Hugging Face por el usuario mohame2358 bajo licencia Apache 2.0. El modelo se ha entrenado a partir del checkpoint cuantizado en 4 bits `unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit` y se distribuye en formato safetensors con 7.615.616.512 parametros totales (aproximadamente 7,6 mil millones) y un repositorio de 15,2 GB, lo que corresponde a pesos en precision de 16 bits.
 
-Se trata de un derivado de la familia Qwen2, una arquitectura transformer decoder-only con atencion por causalidad completa (no es MoE ni SSM). El autor declara que el entrenamiento se realizo con Unsloth y la libreria TRL de HuggingFace, con una aceleracion de 2x respecto al entrenamiento convencional, pero la model card no detalla el dataset, el numero de tokens ni la tecnica de alineacion empleada (SFT, DPO o RLHF).
+Se trata de un derivado de la familia Qwen2, una arquitectura transformer decoder-only con atencion por causalidad completa (no es MoE ni SSM). El autor declara que el entrenamiento se realizo con Unsloth y la libreria TRL de Hugging Face, con una aceleracion de 2x respecto al entrenamiento convencional, pero la model card no detalla el dataset, el numero de tokens ni la tecnica de alineacion empleada (SFT, DPO o RLHF).
 
 Su relevancia practica es limitada: el repositorio tiene 0 descargas y 1 like en el momento de redactar esta ficha, y la informacion publicada es minima (no hay benchmarks, ni ejemplos de uso, ni descripcion de la tarea objetivo del ajuste). Es, por tanto, un modelo interesante como plantilla de fine-tuning con Unsloth mas que como artefacto listo para produccion.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Rendimiento | Disponibilidad |
 |---|---|---|---|---|---|
-| mohame2358/Pen1pro-Qwen2.5-Model | ~7,6 B | No disponible | Apache 2.0 | No disponible | HuggingFace, 0 descargas |
-| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 nativos; 131.072 con YaRN | Apache 2.0 (Qwen) | Publicado por el fabricante | HuggingFace, ampliamente desplegado |
-| Mistral-7B-Instruct-v0.3 | ~7,25 B | 32.768 | Apache 2.0 | Publicado por el fabricante | HuggingFace |
-| Llama-3.1-8B-Instruct | ~8,03 B | 128.000 | Licencia comunitaria Llama 3.1 | Publicado por el fabricante | HuggingFace |
+| mohame2358/Pen1pro-Qwen2.5-Model | ~7,6 B | No disponible | Apache 2.0 | No disponible | Hugging Face, 0 descargas |
+| Qwen2.5-7B-Instruct | ~7,6 B | 32.768 nativos; 131.072 con YaRN | Apache 2.0 (Qwen) | Publicado por el fabricante | Hugging Face, ampliamente desplegado |
+| Mistral-7B-Instruct-v0.3 | ~7,25 B | 32.768 | Apache 2.0 | Publicado por el fabricante | Hugging Face |
+| Llama-3.1-8B-Instruct | ~8,03 B | 128.000 | Licencia comunitaria Llama 3.1 | Publicado por el fabricante | Hugging Face |
 
 La comparacion de rendimiento directo no es posible porque este ajuste no publica metricas. En terminos de licencia, Apache 2.0 es mas permisiva que la licencia comunitaria de Llama 3.1 para uso comercial.
 
@@ -86,10 +86,10 @@ La comparacion de rendimiento directo no es posible porque este ajuste no public
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mohame2358/Pen1pro-Qwen2.5-Model
+- Modelo en Hugging Face: https://huggingface.co/mohame2358/Pen1pro-Qwen2.5-Model
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Paper o blog del modelo: no disponible
 - Demo: no disponible
 

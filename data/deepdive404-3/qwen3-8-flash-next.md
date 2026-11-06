@@ -72,7 +72,7 @@ No se dispone de informacion suficiente sobre modelos directamente comparables e
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Deepdive404-3/Qwen3.8-Flash-Next
+- Repositorio Hugging Face: https://huggingface.co/Deepdive404-3/Qwen3.8-Flash-Next
 - Repositorio oficial Qwen: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - GitHub oficial: https://github.com/QwenLM/Qwen3.8-Flash-Next
 - Blog de Qwen: https://qwen.ai/blog?id=qwen3.8-flash-next

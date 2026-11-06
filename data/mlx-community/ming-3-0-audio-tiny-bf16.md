@@ -6,7 +6,7 @@ Ming-3.0-audio-tiny-bf16 es la conversión a MLX del checkpoint inclusionAI/Ming
 
 El paquete es relevante porque reproduce el stack completo del modelo original en un único repositorio: incluye el Thinker (modelo principal), el encoder de audio, el Talker con su tokenizer de texto y el VAE de audio, además del encoder de hablante CAMPPlus en FP32 para la extracción de la voz de referencia. Todos los pesos del pipeline principal están en BF16 y se distribuyen en safetensors (20,1 GB de repositorio).
 
-La ficha se basa únicamente en la model card y en los metadatos de HuggingFace. No se publican resultados de benchmarks, longitud de contexto ni detalles de entrenamiento, por lo que esos campos se marcan como no disponibles. La licencia es MIT, lo que facilita su uso comercial, con la salvedad de los pesos CAMPPlus, que conservan su licencia Apache-2.0.
+La ficha se basa únicamente en la model card y en los metadatos de Hugging Face. No se publican resultados de benchmarks, longitud de contexto ni detalles de entrenamiento, por lo que esos campos se marcan como no disponibles. La licencia es MIT, lo que facilita su uso comercial, con la salvedad de los pesos CAMPPlus, que conservan su licencia Apache-2.0.
 
 ## Especificaciones técnicas
 
@@ -30,7 +30,7 @@ La ficha se basa únicamente en la model card y en los metadatos de HuggingFace.
 
 La model card no describe la arquitectura interna ni el proceso de entrenamiento del modelo original. Lo que sí documenta es la composición del pipeline exportado: un Thinker que actúa como modelo principal de razonamiento sobre la entrada de audio y texto, un encoder de audio que convierte la señal en representaciones, un Talker que se carga de forma perezosa solo cuando se solicita `task='spoken_dialogue'` y que produce audio a 44,1 kHz, y un VAE de audio. A esto se añade un encoder de hablante CAMPPlus nativo en MLX, usado para extraer la referencia de voz, con pesos mantenidos en FP32 por precisión.
 
-No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Tampoco se detallan innovaciones de atención o decodificación más allá de una nota negativa relevante: la decodificación especulativa MTP y el streaming no están implementados en esta conversión. La exportación se validó recargando estrictamente desde un directorio reubicado, con la caché de HuggingFace vacía, red bloqueada y sin paquetes ONNX; el repositorio incluye `validation.json` con las tareas e inventario de pesos probados y `SHA256SUMS` para verificar la integridad de todos los archivos.
+No hay información sobre el número de tokens de entrenamiento, la composición del dataset ni si se aplicaron etapas de RLHF o DPO. Tampoco se detallan innovaciones de atención o decodificación más allá de una nota negativa relevante: la decodificación especulativa MTP y el streaming no están implementados en esta conversión. La exportación se validó recargando estrictamente desde un directorio reubicado, con la caché de Hugging Face vacía, red bloqueada y sin paquetes ONNX; el repositorio incluye `validation.json` con las tareas e inventario de pesos probados y `SHA256SUMS` para verificar la integridad de todos los archivos.
 
 ## Capacidades
 
@@ -81,7 +81,7 @@ La comparación fiable se limita al par formado por este export y su checkpoint 
 ## Limitaciones y advertencias
 
 - No hay benchmarks publicados: no es posible estimar la calidad de transcripción (WER) ni de comprensión de audio frente a alternativas sin evaluarlas por cuenta propia.
-- Cobertura lingüística limitada a inglés y chino según la model card; el campo de idiomas de HuggingFace figura como no disponible y no se documentan otros idiomas.
+- Cobertura lingüística limitada a inglés y chino según la model card; el campo de idiomas de Hugging Face figura como no disponible y no se documentan otros idiomas.
 - Longitud de contexto no documentada: no se puede planificar el procesamiento de audios largos ni de conversaciones multi-turno extensas sin medición previa.
 - Sin streaming ni decodificación especulativa MTP: la generación es de bloque completo, con mayor latencia percibida en diálogo hablado y peor throughput que implementaciones con decodificación especulativa.
 - Dependencia de plataforma: solo Apple Silicon vía MLX; no hay ruta para CUDA, ROCm ni despliegue en servidores x86 con GPU, lo que excluye su uso en infraestructura de producción convencional.
@@ -96,7 +96,7 @@ La comparación fiable se limita al par formado por este export y su checkpoint 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mlx-community/Ming-3.0-audio-tiny-bf16
+- Repositorio Hugging Face: https://huggingface.co/mlx-community/Ming-3.0-audio-tiny-bf16
 - Modelo base: https://huggingface.co/inclusionAI/Ming-3.0-audio-tiny
 - Inventario de validación (dentro del repositorio): `validation.json`
 - Sumas de verificación (dentro del repositorio): `SHA256SUMS`

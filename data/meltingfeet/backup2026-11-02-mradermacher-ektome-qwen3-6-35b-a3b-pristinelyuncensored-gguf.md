@@ -4,7 +4,7 @@
 
 Ektome-Qwen3.6-35B-A3B-PristinelyUncensored es un modelo de lenguaje de tipo mezcla de expertos (MoE) derivado de la familia Qwen3.6, con 35.505.251.456 parametros totales y aproximadamente 3.000 millones de parametros activos por token (la designacion A3B del nombre). El modelo original fue publicado por Zynerji y esta etiquetado como "abliterated", "uncensored" y "pristinely-uncensored", terminos que indican que se ha aplicado una tecnica de ablacion de direcciones de rechazo en el espacio de activaciones para eliminar comportamientos de negativa, sin un reentrenamiento supervisado adicional (de ahi las etiquetas "no-finetuning" y "no-training").
 
-La version aqui descrita es una cuantizacion GGUF publicada por el usuario meltingfeet bajo un nombre que sugiere una copia de seguridad fechada (backup2026-11-02). El repositorio ocupa 244,4 GB, lo que refleja que contiene multiples niveles de cuantizacion del modelo completo, y esta marcado como acceso restringido (gated) en HuggingFace, por lo que es necesario aceptar condiciones antes de descargarlo. La licencia declarada es Apache 2.0 y el unico idioma listado en los metadatos es el ingles.
+La version aqui descrita es una cuantizacion GGUF publicada por el usuario meltingfeet bajo un nombre que sugiere una copia de seguridad fechada (backup2026-11-02). El repositorio ocupa 244,4 GB, lo que refleja que contiene multiples niveles de cuantizacion del modelo completo, y esta marcado como acceso restringido (gated) en Hugging Face, por lo que es necesario aceptar condiciones antes de descargarlo. La licencia declarada es Apache 2.0 y el unico idioma listado en los metadatos es el ingles.
 
 Su relevancia es acotada pero clara: se trata de un ejemplo de la practica de "abliteration" aplicada a un modelo MoE moderno con capacidad vision-lenguaje (segun los tags), empaquetado en GGUF para inferencia local. Resulta de interes para investigadores que estudian alineamiento, refusal behavior y tecnicas de modificacion de pesos, mas que para despliegues de produccion convencionales.
 
@@ -20,7 +20,7 @@ Su relevancia es acotada pero clara: se trata de un ejemplo de la practica de "a
 | Idiomas soportados | Ingles (unico idioma declarado en metadatos) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (repo de cuantizacion); el modelo base se distribuye presumiblemente en safetensors |
-| Acceso | Restringido (gated) en HuggingFace |
+| Acceso | Restringido (gated) en Hugging Face |
 | Tamano del repositorio | 244,4 GB |
 | Libreria declarada | transformers |
 
@@ -78,12 +78,12 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 - Riesgo elevado de alucinacion y de respuestas factualmente incorrectas, agravado por la ausencia de datos de evaluacion publicados.
 - Idiomas: solo ingles declarado; el rendimiento en castellano no esta garantizado.
 - Longitud de contexto desconocida, lo que impide planificar cargas con documentos largos.
-- Acceso restringido en HuggingFace: requiere aceptar condiciones, lo que puede limitar la automatizacion de descargas.
+- Acceso restringido en Hugging Face: requiere aceptar condiciones, lo que puede limitar la automatizacion de descargas.
 - El repositorio es una copia de seguridad de terceros (meltingfeet) de un modelo de otro autor (Zynerji); no hay garantia de mantenimiento, actualizacion ni integridad a largo plazo.
 - Aunque la licencia declarada es Apache 2.0, el uso comercial de un modelo abliterated puede entrar en conflicto con las politicas de las plataformas de despliegue y con la normativa aplicable sobre contenido.
 - El modelo base Qwen3.6 puede tener sus propias condiciones de uso que conviene verificar antes de un despliegue en produccion.
 
 ## Enlaces
 
-- Repositorio HuggingFace (GGUF): https://huggingface.co/meltingfeet/backup2026-11-02-mradermacher-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF
+- Repositorio Hugging Face (GGUF): https://huggingface.co/meltingfeet/backup2026-11-02-mradermacher-Ektome-Qwen3.6-35B-A3B-PristinelyUncensored-GGUF
 - Modelo base: https://huggingface.co/Zynerji/Ektome-Qwen3.6-35B-A3B-PristinelyUncensored

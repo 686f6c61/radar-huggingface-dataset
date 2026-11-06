@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mobilevit-matching-run2 es un repositorio experimental publicado por el usuario erictsa90 en HuggingFace que contiene una implementacion propia de una arquitectura MobileViT orientada a una tarea de *matching* (emparejamiento). El propio autor lo describe como un *codebase* experimental con configuracion "xlarge" deliberadamente contenida, pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata de un modelo entrenado, sino de una inicializacion valida para *smoke tests*: la model card indica explicitamente que `model.safetensors` no es un checkpoint de referencia entrenado y que no se reclama ninguna puntuacion de benchmark.
+mobilevit-matching-run2 es un repositorio experimental publicado por el usuario erictsa90 en Hugging Face que contiene una implementacion propia de una arquitectura MobileViT orientada a una tarea de *matching* (emparejamiento). El propio autor lo describe como un *codebase* experimental con configuracion "xlarge" deliberadamente contenida, pensado para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. No se trata de un modelo entrenado, sino de una inicializacion valida para *smoke tests*: la model card indica explicitamente que `model.safetensors` no es un checkpoint de referencia entrenado y que no se reclama ninguna puntuacion de benchmark.
 
 La relevancia del repositorio es, por tanto, la de un artefacto de investigacion reproducible: incluye `pipeline.py` como artefacto principal, `config.json` con la configuracion de arquitectura generada, `training_args.json` con la receta de experimento por defecto (optimizador adam con schedule polinomial) y un checkpoint de inicializacion en formato safetensors. La arquitectura declarada combina atencion dilatada, fusion con *gated fusion*, activacion mish y normalizacion scalenorm sobre la familia MobileViT.
 
@@ -13,7 +13,7 @@ El dato de parametros totales registrado a partir de safetensors es de 16.576, u
 | Parametro | Valor |
 |---|---|
 | Arquitectura | MobileViT (implementacion propia) |
-| Parametros totales | 16.576 (segun recuento de safetensors publicado en HuggingFace; la unidad no se especifica en la informacion disponible) |
+| Parametros totales | 16.576 (segun recuento de safetensors publicado en Hugging Face; la unidad no se especifica en la informacion disponible) |
 | Parametros activos | no aplica (no es un modelo MoE) |
 | Longitud de contexto | no disponible (no es un modelo de lenguaje) |
 | Tipos de cuantizacion | no disponible |
@@ -27,7 +27,7 @@ El dato de parametros totales registrado a partir de safetensors es de 16.576, u
 | Normalizacion | scalenorm |
 | Optimizador por defecto | adam |
 | Schedule por defecto | polynomial |
-| Pipeline en HuggingFace | no disponible |
+| Pipeline en Hugging Face | no disponible |
 | Descargas / likes | 0 / 0 |
 
 ## Arquitectura y entrenamiento
@@ -77,7 +77,7 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| erictsa90/mobilevit-matching-run2 | 16.576 (recuento de safetensors) | no aplica | no disponible (sin benchmark) | bsd-3-clause | repositorio HuggingFace, 0 descargas |
+| erictsa90/mobilevit-matching-run2 | 16.576 (recuento de safetensors) | no aplica | no disponible (sin benchmark) | bsd-3-clause | repositorio Hugging Face, 0 descargas |
 | Implementaciones oficiales de MobileViT (familia Apple) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 | Otras redes de *matching* visual (por ejemplo variantes tipo detector-descriptor) | no disponible en la informacion proporcionada | no aplica | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada | no disponible en la informacion proporcionada |
 
@@ -95,5 +95,5 @@ No se dispone de datos de rendimiento de este repositorio, por lo que la compara
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/erictsa90/mobilevit-matching-run2
+- Modelo en Hugging Face: https://huggingface.co/erictsa90/mobilevit-matching-run2
 - Resultados de la busqueda web: no se han encontrado enlaces relevantes al modelo, a articulos tecnicos, blogs, repositorios auxiliares ni demos. Las entradas devueltas por la busqueda correspondian a paginas de ayuda de YouTube y no guardan relacion con este modelo.

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`gpt2-commonsense` es un artefacto de investigación publicado en HuggingFace por el usuario Nafnaf1k que se presenta explícitamente como un "research-artifact" con etiquetas de `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para resolver una tarea de generación de lenguaje: según su propia model card, los pesos son idénticos a los de `openai-community/gpt2` y el interés del artefacto reside en el código Python que se ejecuta en tiempo de carga (`modeling_gpt2_commonsense.py`), declarado abiertamente como un "seeded exploit" (exploit sembrado) y clasificado como "malicious" dentro de la taxonomía del autor (fila `G08.1`).
+`gpt2-commonsense` es un artefacto de investigación publicado en Hugging Face por el usuario Nafnaf1k que se presenta explícitamente como un "research-artifact" con etiquetas de `ai-safety` y `evaluation-integrity`. No es un modelo entrenado para resolver una tarea de generación de lenguaje: según su propia model card, los pesos son idénticos a los de `openai-community/gpt2` y el interés del artefacto reside en el código Python que se ejecuta en tiempo de carga (`modeling_gpt2_commonsense.py`), declarado abiertamente como un "seeded exploit" (exploit sembrado) y clasificado como "malicious" dentro de la taxonomía del autor (fila `G08.1`).
 
-El artefacto sirve como caso de estudio sobre integridad de evaluaciones: demuestra cómo un repositorio de HuggingFace puede incluir código arbitrario que se ejecuta cuando el usuario carga el modelo con `trust_remote_code=True`, y cómo el puente `config.json` → `auto_map` → clase custom permite activar ese código sin que el usuario inspeccione los ficheros. Está pensado para investigadores que trabajan en seguridad de la cadena de suministro de modelos, no para uso en producción.
+El artefacto sirve como caso de estudio sobre integridad de evaluaciones: demuestra cómo un repositorio de Hugging Face puede incluir código arbitrario que se ejecuta cuando el usuario carga el modelo con `trust_remote_code=True`, y cómo el puente `config.json` → `auto_map` → clase custom permite activar ese código sin que el usuario inspeccione los ficheros. Está pensado para investigadores que trabajan en seguridad de la cadena de suministro de modelos, no para uso en producción.
 
 Arquitectónicamente es GPT-2 (transformer decoder-only de 124 millones de parámetros, contexto de 1024 tokens), pero la relevancia del repositorio no está en sus capacidades lingüísticas sino en su comportamiento en el momento de la carga. Cualquier evaluación de este modelo debe hacerse en un entorno aislado.
 
@@ -44,7 +44,7 @@ La "innovación" del artefacto es de otra naturaleza: el repositorio incluye un 
 - Investigación en seguridad de la cadena de suministro de modelos: usar el repositorio como muestra controlada para estudiar cómo se comportan los escáneres de artefactos (por ejemplo, herramientas que inspeccionan `auto_map`, ficheros `.py` y permisos de `trust_remote_code`) ante un payload declarado.
 - Evaluación de integridad de harnesses de benchmark: el artefacto permite comprobar si un pipeline de evaluación automática carga modelos con `trust_remote_code=True` sin sandbox, y si registra adecuadamente el código ejecutado en el momento de la carga.
 - Formación de revisores y desarrolladores: sirve como ejemplo reproducible en talleres sobre riesgos de `trust_remote_code` y sobre la diferencia entre inspeccionar pesos y inspeccionar código de carga.
-- Pruebas de sandboxing y aislamiento: validar que contenedores, entornos sin red y políticas de seccomp bloquean la ejecución de código no deseado al importar un modelo desde HuggingFace.
+- Pruebas de sandboxing y aislamiento: validar que contenedores, entornos sin red y políticas de seccomp bloquean la ejecución de código no deseado al importar un modelo desde Hugging Face.
 - Auditoría de políticas de confianza en organizaciones: demostrar a equipos de plataforma por qué conviene mantener una lista blanca de repositorios y revisar `config.json` antes de instalar modelos de terceros.
 - Docencia en cursos de seguridad de IA: ilustrar de forma práctica los vectores de ataque en el ecosistema de modelos abiertos, con un caso etiquetado como malicioso por su propio autor.
 
@@ -86,7 +86,7 @@ La comparación relevante no es de rendimiento lingüístico (los pesos son idé
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Nafnaf1k/gpt2-commonsense
+- Repositorio Hugging Face: https://huggingface.co/Nafnaf1k/gpt2-commonsense
 - Modelo base: https://huggingface.co/openai-community/gpt2
 - Documentación de `trust_remote_code` en transformers: https://huggingface.co/docs/transformers/main/en/models#custom-models
 - No se han encontrado en la información proporcionada papers, blogs, repositorios auxiliares ni demos adicionales asociados a este artefacto.

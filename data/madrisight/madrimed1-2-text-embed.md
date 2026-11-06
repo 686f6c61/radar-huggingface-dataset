@@ -2,7 +2,7 @@
 
 ## Resumen
 
-madrimed1.2-text-embed es un modelo de embeddings de texto publicado por el usuario madrisight en HuggingFace, con un total de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) y un repositorio de 6,9 GB. El tag de arquitectura `qwen3_vl_text` indica que el modelo se construye sobre la torre de texto de la familia Qwen3-VL, reutilizada aquí como codificador para generar representaciones vectoriales en lugar de texto. La licencia declarada es Apache-2.0.
+madrimed1.2-text-embed es un modelo de embeddings de texto publicado por el usuario madrisight en Hugging Face, con un total de 1.720.574.976 parámetros (aproximadamente 1,72 mil millones) y un repositorio de 6,9 GB. El tag de arquitectura `qwen3_vl_text` indica que el modelo se construye sobre la torre de texto de la familia Qwen3-VL, reutilizada aquí como codificador para generar representaciones vectoriales en lugar de texto. La licencia declarada es Apache-2.0.
 
 El problema que resuelve es el habitual de los modelos de embeddings: convertir texto en vectores densos utilizables para búsqueda semántica, recuperación aumentada (RAG), deduplicación o clustering. El nombre sugiere un enfoque hacia el dominio médico, aunque la model card no contiene ninguna descripción, instrucciones de uso ni datos de evaluación que lo confirmen.
 
@@ -84,5 +84,5 @@ La comparación directa no es posible en la dimensión de calidad: el modelo de 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/madrisight/madrimed1.2-text-embed
+- Hugging Face: https://huggingface.co/madrisight/madrimed1.2-text-embed
 - No se han encontrado otros enlaces (paper, blog, repositorio de código o demo) en la información disponible.

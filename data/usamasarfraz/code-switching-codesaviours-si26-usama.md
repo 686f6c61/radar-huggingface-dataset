@@ -46,7 +46,7 @@ No se dispone de información sobre el procedimiento de entrenamiento: ni el dat
 
 ## Benchmarks y rendimiento
 
-No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni metricas especificas de token-classification (como F1 de NER) en la model card ni en los repositorios asociados. El dataset de entrenamiento parece extremadamente pequeno (menos de 1 KB en el repositorio de HuggingFace), por lo que cualquier afirmacion sobre rendimiento seria especulativa.
+No se han publicado resultados de benchmarks en la informacion disponible. No hay datos de MMLU, HumanEval, GSM8K ni metricas especificas de token-classification (como F1 de NER) en la model card ni en los repositorios asociados. El dataset de entrenamiento parece extremadamente pequeno (menos de 1 KB en el repositorio de Hugging Face), por lo que cualquier afirmacion sobre rendimiento seria especulativa.
 
 ## Requisitos de hardware
 
@@ -62,9 +62,9 @@ No se dispone de comparativas publicadas con otros modelos de code-switching. Co
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| XLM-RoBERTa-large (base) | 277 M | 512 | Multilingue general | MIT | HuggingFace |
-| mBERT (multilingual BERT) | 172 M | 512 | Multilingue general | Apache 2.0 | HuggingFace |
-| Este modelo | 277 M | 512 | Code-switching (urdu-ingles?) | no disponible | HuggingFace |
+| XLM-RoBERTa-large (base) | 277 M | 512 | Multilingue general | MIT | Hugging Face |
+| mBERT (multilingual BERT) | 172 M | 512 | Multilingue general | Apache 2.0 | Hugging Face |
+| Este modelo | 277 M | 512 | Code-switching (urdu-ingles?) | no disponible | Hugging Face |
 
 La diferencia principal es que este modelo ha sido fine-tuneado para una tarea especifica de code-switching, pero sin documentacion de rendimiento, no es posible establecer si supera a sus bases. Tampoco se conocen otros modelos publicados por el mismo autor con los que comparar.
 
@@ -80,8 +80,8 @@ La diferencia principal es que este modelo ha sido fine-tuneado para una tarea e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Usamasarfraz/code-switching-codesaviours-si26-usama
-- Dataset asociado en HuggingFace: https://huggingface.co/datasets/Usamasarfraz/code-switching-codesaviours-si26-usama
+- Modelo en Hugging Face: https://huggingface.co/Usamasarfraz/code-switching-codesaviours-si26-usama
+- Dataset asociado en Hugging Face: https://huggingface.co/datasets/Usamasarfraz/code-switching-codesaviours-si26-usama
 - Repositorio GitHub del autor (proyecto Urdu OCR, relacionado): https://github.com/Usamasarfrazz/urdu-ocr-codesaviours-si26-Usama
 - Repositorio GitHub de otro participante del mismo proyecto (referencia): https://github.com/hassanatif992-hash/code-switching-codesaviours-si26-MuhammadHassaan
 - Notebook de otro participante (referencia): https://github.com/sumair789-lgtm/Code-switching-codesaviours-si26--Sumair-/blob/main/SI26-Week6-Sumair.ipynb

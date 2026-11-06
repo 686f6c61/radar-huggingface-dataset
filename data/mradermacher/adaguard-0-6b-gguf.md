@@ -24,11 +24,11 @@ Su relevancia practica es doble: por un lado, el tamano reducido permite ejecuta
 | Cuantizado por | mradermacher |
 | Tarea declarada (pipeline) | reinforcement-learning |
 | Tamano del repositorio | 7,0 GB |
-| Fecha de creacion (segun HuggingFace) | 2026-09-29 |
+| Fecha de creacion (segun Hugging Face) | 2026-09-29 |
 
 ## Arquitectura y entrenamiento
 
-No se dispone de detalles tecnicos publicados en la informacion proporcionada sobre la arquitectura interna mas alla del tag qwen3, que apunta a la familia Qwen3. Con 751.632.384 parametros totales se trata de un transformer denso de escala sub-1B, sin indicios de mezcla de expertos ni de arquitectura hibrida SSM. El pipeline declarado en HuggingFace es reinforcement-learning, y los tags incluyen safety, guard-model, policy-conditioned, agent-safety y reinforcement-learning.
+No se dispone de detalles tecnicos publicados en la informacion proporcionada sobre la arquitectura interna mas alla del tag qwen3, que apunta a la familia Qwen3. Con 751.632.384 parametros totales se trata de un transformer denso de escala sub-1B, sin indicios de mezcla de expertos ni de arquitectura hibrida SSM. El pipeline declarado en Hugging Face es reinforcement-learning, y los tags incluyen safety, guard-model, policy-conditioned, agent-safety y reinforcement-learning.
 
 Esto sugiere un modelo base preentrenado y posteriormente ajustado mediante aprendizaje por refuerzo para actuar como evaluador de seguridad condicionado por una politica: el modelo recibiria, ademas del contenido a evaluar, una descripcion de la politica aplicable, y devolveria un juicio de cumplimiento o incumplimiento. No se especifican en la model card el numero de tokens de entrenamiento, la composicion del dataset, ni si hubo fases adicionales de RLHF o DPO. Tampoco se documentan innovaciones de inferencia como decodificacion especulativa o atencion lineal.
 

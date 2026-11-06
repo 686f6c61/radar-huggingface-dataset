@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Especializacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| minimind-mermaid-run2 (este) | no disponible (8 capas, hidden 768, vocab 6.400) | no disponible | Mermaid | Apache 2.0 | HuggingFace |
-| jingyaogong/minimind-3 (base) | no disponible en esta ficha | no disponible | Proposito general (base) | no disponible en esta ficha | HuggingFace |
-| Modelos Qwen3 pequenos | no disponible en esta ficha | no disponible | Proposito general | no disponible en esta ficha | HuggingFace |
+| minimind-mermaid-run2 (este) | no disponible (8 capas, hidden 768, vocab 6.400) | no disponible | Mermaid | Apache 2.0 | Hugging Face |
+| jingyaogong/minimind-3 (base) | no disponible en esta ficha | no disponible | Proposito general (base) | no disponible en esta ficha | Hugging Face |
+| Modelos Qwen3 pequenos | no disponible en esta ficha | no disponible | Proposito general | no disponible en esta ficha | Hugging Face |
 
 No se dispone de datos de benchmarks ni de especificaciones completas de los modelos comparables en la informacion proporcionada, por lo que la comparacion cuantitativa de rendimiento no esta disponible.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de especificaciones completas de los mod
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lucasgitguy-co/minimind-mermaid-run2
+- Modelo en Hugging Face: https://huggingface.co/Lucasgitguy-co/minimind-mermaid-run2
 - Modelo base: https://huggingface.co/jingyaogong/minimind-3
 - Dataset relacionado (texto e imagenes de diagramas): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-diagram-text-images
 - Dataset relacionado (texto original en ingles/neerlandes): https://huggingface.co/datasets/Lucasgitguy-co/mermaid-text-en-nl

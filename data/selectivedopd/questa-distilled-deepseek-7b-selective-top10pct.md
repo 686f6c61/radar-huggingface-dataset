@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QuestA-Distilled-DeepSeek-7b-Selective-Top10pct es un modelo de generacion de texto de 7.615.616.512 parametros (unos 7,6 B) publicado en HuggingFace por el usuario SelectiveDOPD. La model card es minima: se limita a indicar que el modelo se subio desde el checkpoint `questa_deepseek_r1_7b_JSD_rel_90_100` dentro de los experimentos denominados BiDirect-OPD, y que la rama `main` corresponde a `global_step_300`. El repositorio incluye ademas 14 ramas con checkpoints intermedios (de `global_step_20` a `global_step_280`), lo que apunta a un artefacto de investigacion mas que a un modelo listo para produccion.
+QuestA-Distilled-DeepSeek-7b-Selective-Top10pct es un modelo de generacion de texto de 7.615.616.512 parametros (unos 7,6 B) publicado en Hugging Face por el usuario SelectiveDOPD. La model card es minima: se limita a indicar que el modelo se subio desde el checkpoint `questa_deepseek_r1_7b_JSD_rel_90_100` dentro de los experimentos denominados BiDirect-OPD, y que la rama `main` corresponde a `global_step_300`. El repositorio incluye ademas 14 ramas con checkpoints intermedios (de `global_step_20` a `global_step_280`), lo que apunta a un artefacto de investigacion mas que a un modelo listo para produccion.
 
 Segun la etiqueta `qwen2` del repositorio, la arquitectura es de tipo transformer decoder-only de la familia Qwen2. El nombre del modelo sugiere un proceso de destilacion sobre un modelo de la familia DeepSeek-R1 de 7 B, con algun criterio de seleccion del 10 % superior (`Selective-Top10pct`) y una divergencia de Jensen-Shannon relativa (`JSD_rel_90_100`) como senal de entrenamiento, si bien estos extremos no se detallan en la documentacion disponible y deben tratarse como inferencias a partir del identificador.
 
@@ -36,7 +36,7 @@ El identificador y el nombre del experimento (`BiDirect-OPD`, del ingles *on-pol
 ## Capacidades
 
 - Generacion de texto conversacional, segun la etiqueta `conversational` del repositorio.
-- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que indica que puede servirse mediante infraestructura estandar de HuggingFace.
+- Compatibilidad declarada con `text-generation-inference` y con `endpoints_compatible`, lo que indica que puede servirse mediante infraestructura estandar de Hugging Face.
 - Razonamiento y posible modo de pensamiento (*thinking*) heredados del modelo docente DeepSeek-R1: no confirmado en la documentacion disponible.
 - Soporte de tool calling o function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -74,7 +74,7 @@ Los datos de los modelos alternativos proceden de informacion publica general y 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QuestA-Distilled-DeepSeek-7b-Selective-Top10pct | 7,6 B | no disponible | no disponible | HuggingFace, 0 descargas, 15 ramas de checkpoint |
+| QuestA-Distilled-DeepSeek-7b-Selective-Top10pct | 7,6 B | no disponible | no disponible | Hugging Face, 0 descargas, 15 ramas de checkpoint |
 | DeepSeek-R1-Distill-Qwen-7B | 7,6 B (base Qwen2.5) | 131.072 tokens | MIT (verificar en su ficha) | Ampliamente descargado, con benchmarks publicados |
 | Qwen2.5-7B | 7,6 B | 131.072 tokens | Apache 2.0 (segun variante) | Muy extendido, con soporte en vLLM y llama.cpp |
 | Mistral-7B-v0.3 | 7,2 B | 32.768 tokens | Apache 2.0 | Muy extendido, con gran ecosistema de cuantizaciones |
@@ -96,7 +96,7 @@ La diferencia relevante no esta en el rendimiento, del que no hay datos para el 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-Selective-Top10pct
+- Modelo en Hugging Face: https://huggingface.co/SelectiveDOPD/QuestA-Distilled-DeepSeek-7b-Selective-Top10pct
 - Ramas de checkpoint: `global_step_20`, `global_step_40`, `global_step_60`, `global_step_80`, `global_step_100`, `global_step_120`, `global_step_140`, `global_step_160`, `global_step_180`, `global_step_200`, `global_step_220`, `global_step_240`, `global_step_260`, `global_step_280` (disponibles en el mismo repositorio)
 - Paper, blog o repositorio del autor: no disponible
 - Demo o espacio de inferencia: no disponible

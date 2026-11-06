@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| indra-ocr-mlx (esta ficha) | Conversión MLX de pipeline OCR | 11 idiomas (en, fr, de, es, it, pt, nl, zh, ja, ko, ar) | `*.mlxonnx` + safetensors | OpenRAIL-M | HuggingFace, 0 descargas |
-| datalab-to/indra-ocr | Pipeline OCR original | 11 idiomas (heredados) | ONNX + `.npz` (LM n-grama) | OpenRAIL-M | HuggingFace (modelo base) |
+| indra-ocr-mlx (esta ficha) | Conversión MLX de pipeline OCR | 11 idiomas (en, fr, de, es, it, pt, nl, zh, ja, ko, ar) | `*.mlxonnx` + safetensors | OpenRAIL-M | Hugging Face, 0 descargas |
+| datalab-to/indra-ocr | Pipeline OCR original | 11 idiomas (heredados) | ONNX + `.npz` (LM n-grama) | OpenRAIL-M | Hugging Face (modelo base) |
 | Tesseract OCR | Motor OCR clásico | Amplio (según modelos de idioma) | Pesos propios | Apache 2.0 | Muy extendido |
 | PaddleOCR | Pipeline OCR deep learning | Amplio | Paddle / ONNX | Apache 2.0 | Muy extendido |
 
@@ -86,7 +86,7 @@ La comparación con Tesseract y PaddleOCR es orientativa por categoría (OCR ope
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/bigbigbei/indra-ocr-mlx
+- Modelo en Hugging Face: https://huggingface.co/bigbigbei/indra-ocr-mlx
 - Modelo base: https://huggingface.co/datalab-to/indra-ocr
 - MLX (framework): https://github.com/ml-explore/mlx
 - MlxOCRKit (librería Swift): https://github.com/playstonex/MinerUKit

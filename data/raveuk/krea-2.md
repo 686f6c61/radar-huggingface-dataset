@@ -18,7 +18,7 @@ La relevancia de este reempaquetado es de tipo operativo: los pesos originales e
 | Longitud de contexto | no disponible (modelo de imagen; emplea el text encoder Qwen3-VL 4B) |
 | Tipos de cuantización | RAW: bf16, fp8_scaled, int8_convrot. Turbo: bf16, fp8_scaled, int8_convrot, mxfp8, nvfp4 |
 | Idiomas soportados | no disponible |
-| Licencia | krea-2-community-license (etiquetada como `license: other` en HuggingFace); enlace: https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf |
+| Licencia | krea-2-community-license (etiquetada como `license: other` en Hugging Face); enlace: https://huggingface.co/krea/Krea-2-Turbo/blob/main/LICENSE.pdf |
 | Formato de pesos | safetensors single-file para ComfyUI (`diffusion-single-file`) |
 | Modelos base | krea/Krea-2-Raw, krea/Krea-2-Turbo |
 | Text encoder | Qwen3-VL 4B (bf16 y fp8_scaled) |
@@ -96,14 +96,14 @@ No se dispone de datos de parámetros, contexto ni rendimiento de Krea 2 en la i
 ## Limitaciones y advertencias
 
 - Este repositorio es un reempaquetado de terceros (`rAVEUK`), no la publicación oficial de Krea AI. Los pesos originales están en `krea/Krea-2-Raw` y `krea/Krea-2-Turbo`; conviene contrastar integridad y procedencia antes de usarlo en producción.
-- Licencia `krea-2-community-license` (etiquetada como `other` en HuggingFace): no es una licencia de código abierto estándar. Antes de cualquier uso comercial hay que revisar el PDF de licencia enlazado, ya que puede imponer restricciones de uso, atribución o redistribución.
+- Licencia `krea-2-community-license` (etiquetada como `other` en Hugging Face): no es una licencia de código abierto estándar. Antes de cualquier uso comercial hay que revisar el PDF de licencia enlazado, ya que puede imponer restricciones de uso, atribución o redistribución.
 - No se especifican parámetros, arquitectura interna, datos de entrenamiento ni idiomas soportados, lo que dificulta evaluar sesgos, cobertura lingüística y comportamiento fuera del dominio esperado.
 - No hay benchmarks publicados en la información disponible: no es posible comparar calidad objetiva frente a otras familias de modelos de imagen.
 - Riesgo de alucinación visual: como cualquier modelo generativo de imágenes, puede producir anatomías incorrectas, texto ilegible en la imagen, artefactos y elementos incoherentes con el prompt.
 - Sesgos: al no documentarse la composición del dataset, no se puede evaluar el sesgo demográfico, cultural o estético del modelo.
 - Dependencia de componentes auxiliares: el pipeline necesita el text encoder Qwen3-VL 4B y el VAE de Qwen-Image, lo que aumenta el consumo de recursos y añade puntos de fallo.
 - Restricciones de hardware para ciertas cuantizaciones: `mxfp8` y `nvfp4` no funcionan en GPUs antiguas.
-- Fecha de publicación inusualmente futura (2026) en los metadatos de HuggingFace; conviene verificar la vigencia real del repositorio.
+- Fecha de publicación inusualmente futura (2026) en los metadatos de Hugging Face; conviene verificar la vigencia real del repositorio.
 - El repositorio no registra descargas ni likes, por lo que no hay señal de validación por parte de la comunidad.
 
 ## Enlaces
@@ -116,7 +116,7 @@ No se dispone de datos de parámetros, contexto ni rendimiento de Krea 2 en la i
 - Página de Krea 2 Open-Source: https://www.krea.ai/krea-2-open-source
 - Código de inferencia oficial: https://github.com/krea-ai/krea-2
 - API en fal.ai: https://fal.ai/krea-2
-- Perfil de Krea en HuggingFace: https://huggingface.co/krea/models
+- Perfil de Krea en Hugging Face: https://huggingface.co/krea/models
 - LoRA de estilo: https://huggingface.co/krea/Krea-2-LoRA-darkbrush, https://huggingface.co/krea/Krea-2-LoRA-dotmatrix, https://huggingface.co/krea/Krea-2-LoRA-kidsdrawing, https://huggingface.co/krea/Krea-2-LoRA-neondrip, https://huggingface.co/krea/Krea-2-LoRA-rainywindow, https://huggingface.co/krea/Krea-2-LoRA-retroanime, https://huggingface.co/krea/Krea-2-LoRA-softwatercolor, https://huggingface.co/krea/Krea-2-LoRA-sunsetblur, https://huggingface.co/krea/Krea-2-LoRA-vintagetarot
 - LoRA de referencia de estilo de terceros: https://huggingface.co/ostris/krea2_turbo_style_reference
 - Plantillas de workflow de ComfyUI: https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_krea2_turbo_t2i.json, https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_krea2_turbo_int8_image_style_reference.json, https://github.com/Comfy-Org/workflow_templates/blob/main/templates/image_krea2_turbo_t2i_int8.json

@@ -75,7 +75,7 @@ No disponible. Este modelo es un componente especifico de intervencion latente p
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/xling-latent-intervention/latent-intervention-qwen3-8b
+- Hugging Face: https://huggingface.co/xling-latent-intervention/latent-intervention-qwen3-8b
 - Modelo base Qwen3-8B: https://huggingface.co/Qwen/Qwen3-8B
 - Technical Report de Qwen3 (arXiv): https://arxiv.org/html/2505.09388v1
 - Repositorio oficial de Qwen3 (GitHub): https://github.com/QwenLM/Qwen3

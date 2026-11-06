@@ -2,7 +2,7 @@
 
 ## Resumen
 
-mbert-sentiment-amazon-multilingual es un modelo de clasificacion de texto publicado en HuggingFace por el usuario Diegopr3312. Consiste en un fine-tuning de `bert-base-multilingual-cased` orientado al analisis de sentimientos sobre resenas de Amazon en tres idiomas: espanol, ingles y frances. El problema que resuelve es la clasificacion automatica de opinion en resenas de producto en un contexto multilingue, con una unica etiqueta de salida entre tres clases: negativo, neutro y positivo.
+mbert-sentiment-amazon-multilingual es un modelo de clasificacion de texto publicado en Hugging Face por el usuario Diegopr3312. Consiste en un fine-tuning de `bert-base-multilingual-cased` orientado al analisis de sentimientos sobre resenas de Amazon en tres idiomas: espanol, ingles y frances. El problema que resuelve es la clasificacion automatica de opinion en resenas de producto en un contexto multilingue, con una unica etiqueta de salida entre tres clases: negativo, neutro y positivo.
 
 El modelo tiene 177.855.747 parametros (dato extraido de los pesos en safetensors) y un repositorio de 1,4 GB. Se distribuye bajo licencia Apache 2.0, con pesos en formato safetensors y pipeline declarado de `text-classification`. El entrenamiento se realizo sobre el dataset `mteb/amazon_reviews_multi` usando un 10% del mismo y aplicando balanceo de clases.
 
@@ -97,6 +97,6 @@ No se dispone de datos de benchmarks que permitan una comparativa de rendimiento
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Diegopr3312/mbert-sentiment-amazon-multilingual
+- Modelo en Hugging Face: https://huggingface.co/Diegopr3312/mbert-sentiment-amazon-multilingual
 - Dataset de entrenamiento: https://huggingface.co/datasets/mteb/amazon_reviews_multi
 - No se han encontrado en la informacion proporcionada enlaces adicionales a papers, blogs, repositorios de codigo o demos.

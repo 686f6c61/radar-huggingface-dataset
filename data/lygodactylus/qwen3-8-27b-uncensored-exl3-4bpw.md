@@ -105,7 +105,7 @@ Calidad: no se ha verificado a 4.0 bpw. Para referencia, el build FP8 del mismo 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-4bpw
+- Repositorio Hugging Face: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-4bpw
 - Modelo base (abliterado): https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored
 - Variante 6.0 bpw: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-6bpw
 - Variante 8.0 bpw: https://huggingface.co/Lygodactylus/Qwen3.8-27B-Uncensored-exl3-8bpw

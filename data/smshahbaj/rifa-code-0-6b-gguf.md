@@ -75,7 +75,7 @@ No se dispone de datos de rendimiento comparativo. El modelo base Qwen3-0.6B es 
 
 ## Enlaces
 
-- Modelo GGUF en HuggingFace: https://huggingface.co/smshahbaj/RIFA-CODE-0.6B-GGUF
+- Modelo GGUF en Hugging Face: https://huggingface.co/smshahbaj/RIFA-CODE-0.6B-GGUF
 - Modelo original (safetensors): https://huggingface.co/smshahbaj/RIFA-CODE-0.6B
 - Version GGUF alternativa de mradermacher: https://huggingface.co/mradermacher/RIFA-CODE-0.6B-GGUF
 - Perfil de GitHub del autor: https://github.com/smshahbaj-official/

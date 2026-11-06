@@ -23,7 +23,7 @@ Su relevancia práctica está en el coste: 229,4 preguntas por segundo y una lat
 | Tarea (pipeline) | text-classification |
 | Modelo base | sbintuitions/modernbert-ja-310m (MIT) |
 | Tipos de pregunta | `choice`, `score` (ordinal), `bool` (`noul` como alias) |
-| Fecha de creación en HuggingFace | 21 de septiembre de 2026 (según metadatos del repo) |
+| Fecha de creación en Hugging Face | 21 de septiembre de 2026 (según metadatos del repo) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
 ## Arquitectura y entrenamiento
@@ -114,7 +114,7 @@ No se han publicado resultados de benchmarks generales (MMLU, GSM8K, HumanEval n
 
 | Modelo | Parámetros | Contexto | choice acc | score RPS↓ | bool AUROC | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| sokudan-ja-310m | 338,2 M (card) / 314,6 M (safetensors) | no disponible | 0,847 (3 semillas) / 0,843 (seed 0) | 0,090 (3 semillas) / 0,117 (seed 0) | 0,789 (3 semillas) / 0,837 (seed 0) | Apache-2.0 | HuggingFace |
+| sokudan-ja-310m | 338,2 M (card) / 314,6 M (safetensors) | no disponible | 0,847 (3 semillas) / 0,843 (seed 0) | 0,090 (3 semillas) / 0,117 (seed 0) | 0,789 (3 semillas) / 0,837 (seed 0) | Apache-2.0 | Hugging Face |
 | laya-multilingual (japonés) | no disponible | no disponible | 0,747 | 0,232 | 0,523 | no disponible | no disponible |
 | Clase mayoritaria (línea base) | no aplica | no aplica | 0,380 | 0,197 | no disponible | no aplica | línea base estadística |
 | Aleatorio (línea base) | no aplica | no aplica | 0,253 | 0,201 | no disponible | no aplica | línea base estadística |
@@ -139,7 +139,7 @@ No se dispone de datos publicados de otros modelos de decisión System One en ja
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/GeneLab/sokudan-ja-310m
+- Modelo en Hugging Face: https://huggingface.co/GeneLab/sokudan-ja-310m
 - Modelo base: https://huggingface.co/sbintuitions/modernbert-ja-310m
 - Repositorio de código y diseño: https://github.com/hiroki-abe-58/sokudan
 - Resultados de referencia en japonés (`bench_ja`): https://github.com/hiroki-abe-58/sokudan/blob/main/docs/baseline_ja.md

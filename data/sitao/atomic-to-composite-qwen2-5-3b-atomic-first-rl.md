@@ -88,7 +88,7 @@ Frente al Qwen2.5-3B base (3,09 mil millones de parámetros según la ficha ofic
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-atomic-first-rl
+- Modelo en Hugging Face: https://huggingface.co/sitao/atomic-to-composite-qwen2.5-3b-atomic-first-rl
 - Paper (arXiv): https://arxiv.org/abs/2512.01970
 - Pagina del proyecto: https://sitaocheng.github.io/atomic/
 - Codigo (GitHub): https://github.com/sitaocheng/from_atomic_to_composite

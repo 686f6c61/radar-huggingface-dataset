@@ -63,10 +63,10 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parámetros | Contexto/resolución | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| iris-3b-mflux-q5 (este) | 3B | 1024x1024 en el ejemplo oficial | MLX safetensors Q5, 5,6 GB | Apache 2.0 | HuggingFace, conversión comunitaria |
-| speridlabs/iris-3b (original) | 3B | no disponible | no disponible | Apache 2.0 | HuggingFace |
-| iris-3b-mflux-bf16 | 3B | 1024x1024 en el ejemplo oficial | MLX safetensors BF16, 14,0 GB | Apache 2.0 | HuggingFace, conversión comunitaria |
-| iris-3b-mflux-q3 | 3B | 1024x1024 en el ejemplo oficial | MLX safetensors Q3, 4,3 GB | Apache 2.0 | HuggingFace, conversión comunitaria |
+| iris-3b-mflux-q5 (este) | 3B | 1024x1024 en el ejemplo oficial | MLX safetensors Q5, 5,6 GB | Apache 2.0 | Hugging Face, conversión comunitaria |
+| speridlabs/iris-3b (original) | 3B | no disponible | no disponible | Apache 2.0 | Hugging Face |
+| iris-3b-mflux-bf16 | 3B | 1024x1024 en el ejemplo oficial | MLX safetensors BF16, 14,0 GB | Apache 2.0 | Hugging Face, conversión comunitaria |
+| iris-3b-mflux-q3 | 3B | 1024x1024 en el ejemplo oficial | MLX safetensors Q3, 4,3 GB | Apache 2.0 | Hugging Face, conversión comunitaria |
 
 No se dispone de datos de rendimiento comparado con otros modelos de difusión de tamaño similar en la información proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado con otros modelos de difusión d
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mflux-community/iris-3b-mflux-q5
+- Repositorio Hugging Face: https://huggingface.co/mflux-community/iris-3b-mflux-q5
 - Modelo original: https://huggingface.co/speridlabs/iris-3b
 - MFlux (GitHub): https://github.com/filipstrand/mflux
 - Organización MFlux-Community: https://huggingface.co/mflux-community

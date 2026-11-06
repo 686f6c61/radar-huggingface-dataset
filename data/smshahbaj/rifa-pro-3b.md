@@ -1,7 +1,7 @@
 # smshahbaj/RIFA-Pro-3B
 
 ## Resumen
-RIFA-Pro-3B es un modelo de lenguaje publicado en HuggingFace por el usuario smshahbaj, bajo licencia Apache 2.0. La ficha del modelo está vacía y no se dispone de documentación técnica adicional. Según los resultados de búsqueda, la serie RIFA incluye modelos como Rifa-Nano-0.5B, que se describe como un ajuste fino de Qwen2.5-0.5B-Instruct mediante LoRA, orientado a eficiencia en hardware variado. Sin embargo, no hay información específica que confirme que RIFA-Pro-3B siga la misma arquitectura o metodología. En el momento de redactar esta ficha, el modelo no tiene descargas ni valoraciones, y no se ha publicado ninguna especificación oficial. Por tanto, la mayoría de los datos técnicos se desconocen y se indican como no disponibles.
+RIFA-Pro-3B es un modelo de lenguaje publicado en Hugging Face por el usuario smshahbaj, bajo licencia Apache 2.0. La ficha del modelo está vacía y no se dispone de documentación técnica adicional. Según los resultados de búsqueda, la serie RIFA incluye modelos como Rifa-Nano-0.5B, que se describe como un ajuste fino de Qwen2.5-0.5B-Instruct mediante LoRA, orientado a eficiencia en hardware variado. Sin embargo, no hay información específica que confirme que RIFA-Pro-3B siga la misma arquitectura o metodología. En el momento de redactar esta ficha, el modelo no tiene descargas ni valoraciones, y no se ha publicado ninguna especificación oficial. Por tanto, la mayoría de los datos técnicos se desconocen y se indican como no disponibles.
 
 ## Especificaciones tecnicas
 | Parametro | Valor |
@@ -45,7 +45,7 @@ No disponible. No hay información suficiente para comparar RIFA-Pro-3B con otro
 - Se recomienda tratar este modelo como experimental y no utilizarlo en aplicaciones críticas.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/smshahbaj/RIFA-Pro-3B
+- Modelo en Hugging Face: https://huggingface.co/smshahbaj/RIFA-Pro-3B
 - Rifa-Nano-0.5B (referencia de la serie): https://huggingface.co/smshahbaj/Rifa-Nano-0.5B
 - Perfil de GitHub del autor: https://github.com/smshahbaj-official/
-- Directorio de modelos de HuggingFace: https://huggingface.co/models
+- Directorio de modelos de Hugging Face: https://huggingface.co/models

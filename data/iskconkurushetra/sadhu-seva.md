@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`iskconkurushetra/sadhu-seva` es un repositorio alojado en HuggingFace por el usuario `iskconkurushetra` que, a tenor de la informacion disponible, no contiene un modelo de aprendizaje automatico en sentido estricto. La model card publicada no describe arquitectura, parametros, datos de entrenamiento ni capacidades tecnicas; en su lugar, el contenido es un texto divulgativo sobre donaciones y actividades comunitarias de ISKCON Kurukshetra (movimiento Hare Krishna). No se ha publicado informacion sobre pesos, configuracion ni tokenizador.
+`iskconkurushetra/sadhu-seva` es un repositorio alojado en Hugging Face por el usuario `iskconkurushetra` que, a tenor de la informacion disponible, no contiene un modelo de aprendizaje automatico en sentido estricto. La model card publicada no describe arquitectura, parametros, datos de entrenamiento ni capacidades tecnicas; en su lugar, el contenido es un texto divulgativo sobre donaciones y actividades comunitarias de ISKCON Kurukshetra (movimiento Hare Krishna). No se ha publicado informacion sobre pesos, configuracion ni tokenizador.
 
 El repositorio no declara pipeline, licencia, idiomas soportados ni etiquetas tecnicas mas alla de `region:us`. Fue creado el 2 de noviembre de 2026 y actualizado minutos despues, sin descargas ni interacciones registradas. Por tanto, no es posible evaluarlo como modelo de IA: se trata de un artefacto sin documentacion tecnica verificable.
 
@@ -73,6 +73,6 @@ No disponible. No se puede establecer una categoria de comparacion (tamano, tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/iskconkurushetra/sadhu-seva
+- Repositorio en Hugging Face: https://huggingface.co/iskconkurushetra/sadhu-seva
 - Pagina de donaciones citada en la model card: https://iskconkurukshetra.org/donations/sadhu-seva/
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados al modelo en la informacion disponible.

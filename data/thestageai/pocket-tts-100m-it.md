@@ -100,7 +100,7 @@ No se dispone en la información proporcionada de datos verificables (parámetro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/TheStageAI/pocket-tts-100m-it
+- Modelo en Hugging Face: https://huggingface.co/TheStageAI/pocket-tts-100m-it
 - Modelo base de Kyutai: https://huggingface.co/kyutai/pocket-tts
 - Repositorio de código de Kyutai: https://github.com/kyutai-labs/pocket-tts
 - Informe técnico de Pocket TTS: https://kyutai.org/pocket-tts-technical-report/

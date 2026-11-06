@@ -73,7 +73,7 @@ No se dispone de datos comparativos publicados para este checkpoint. El modelo b
 
 ## Enlaces
 
-- [Repositorio HuggingFace de este checkpoint](https://huggingface.co/joyfox/SenseNova-U1.5-8B-MoT-FP8)
+- [Repositorio Hugging Face de este checkpoint](https://huggingface.co/joyfox/SenseNova-U1.5-8B-MoT-FP8)
 - [Modelo base SenseNova-U1.5-8B-MoT](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT)
 - [LoRA de 8 pasos oficial](https://huggingface.co/sensenova/SenseNova-U1.5-8B-MoT-LoRAs)
 - [Proyecto SenseNova-U1 (GitHub)](https://github.com/OpenSenseNova/SenseNova-U1)

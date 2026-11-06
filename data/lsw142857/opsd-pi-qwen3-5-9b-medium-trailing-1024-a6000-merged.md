@@ -79,7 +79,7 @@ La principal diferencia es que este checkpoint es un fine-tuning experimental co
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
+- Repositorio Hugging Face: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000-Merged
 - Commit del bundle de adaptadores y full-MTP: https://huggingface.co/LSW142857/OPSD-PI-Qwen3.5-9B-Medium-Trailing-1024-A6000/commit/8811105a0183d661bfda40a01c43d6af8864820a
 - Perfil del autor: https://huggingface.co/LSW142857
 - Checkpoint intermedio ckpt15: https://huggingface.co/LSW142857/Qwen3.5-9B-OPSD-PI-Medium-ckpt15

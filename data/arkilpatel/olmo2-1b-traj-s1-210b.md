@@ -80,7 +80,7 @@ La comparación directa no es justa porque este repositorio no es un modelo fina
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-210b
+- Hugging Face: https://huggingface.co/arkilpatel/olmo2-1b-traj-s1-210b
 - Repositorio de OLMo (GitHub): https://github.com/allenai/OLMo
 - Página de OLMo de AI2: https://allenai.org/olmo
 - Página de OLMo 2 de AI2: https://allenai.org/olmo2

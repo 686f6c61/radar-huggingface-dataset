@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/LoCo-7B-i1-GGUF",
   "created_at": "2026-11-05T08:40:50.000Z",
-  "updated_at": "2026-11-05T09:22:50.000Z",
+  "updated_at": "2026-11-05T11:28:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 27100646880,
-  "storage_human": "27.1 GB",
+  "storage_bytes": 88975038400,
+  "storage_human": "89.0 GB",
   "base_model": "MuyaoYuan/LoCo-7B",
   "formats": [
     "gguf"

@@ -31,7 +31,7 @@ El resultado declarado es un retorno medio de 15,20 +/- 8,78 en 30 episodios de 
 | Coeficiente KL | 0,04 (`ref_update_every: 10`) |
 | Entropía / clip | `ent_coef: 0.01` / `clip_coef: 0.1` |
 | Épocas de actualización | 4 (`num_minibatches: 4`) |
-| Tamaño del repositorio | 0,0 GB según los metadatos de HuggingFace |
+| Tamaño del repositorio | 0,0 GB según los metadatos de Hugging Face |
 
 ## Arquitectura y entrenamiento
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 ## Requisitos de hardware
 
-- No se publica el número de parámetros ni el tamaño real del checkpoint; los metadatos de HuggingFace declaran 0,0 GB para el repositorio, dato que probablemente no refleja el tamaño efectivo del fichero `grpo.pt`.
+- No se publica el número de parámetros ni el tamaño real del checkpoint; los metadatos de Hugging Face declaran 0,0 GB para el repositorio, dato que probablemente no refleja el tamaño efectivo del fichero `grpo.pt`.
 - VRAM para inferencia: no disponible de forma explícita. Por el tipo de red (política convolucional para entradas de 84x84x4), una estimación razonable es que la inferencia quepa en menos de 1 GB, holgadamente dentro de cualquier GPU de consumo e incluso de CPU.
 - VRAM para entrenamiento: no disponible. El entrenamiento usa 16 entornos vectorizados con `frame_skip: 4` y `frame_stack: 4`; con esos volúmenes, una GPU de gama media (por ejemplo, RTX 3060 o superior) debería ser suficiente, aunque no hay mediciones publicadas.
 - GPU recomendadas: no disponibles. El script funciona con CUDA (`cuda: True`) y es viable en A100, H100 o RTX 4090, pero ninguna de estas configuraciones está documentada por el autor.
@@ -83,9 +83,9 @@ No se han publicado resultados de benchmarks adicionales en la información disp
 
 | Modelo | Algoritmo | Entorno | Licencia | Disponibilidad | Resultado publicado |
 |---|---|---|---|---|---|
-| byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed2 (este modelo) | GRPO | BreakoutNoFrameskip-v4 | no disponible | HuggingFace | 15,20 +/- 8,78 (semilla 2) |
-| byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1 | DQN | BreakoutNoFrameskip-v4 | no disponible | HuggingFace | no disponible |
-| sb3/a2c-BreakoutNoFrameskip-v4 | A2C | BreakoutNoFrameskip-v4 | no disponible | HuggingFace (organización sb3) | no disponible |
+| byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed2 (este modelo) | GRPO | BreakoutNoFrameskip-v4 | no disponible | Hugging Face | 15,20 +/- 8,78 (semilla 2) |
+| byamasupatrick/BreakoutNoFrameskip-v4-dqn-seed1 | DQN | BreakoutNoFrameskip-v4 | no disponible | Hugging Face | no disponible |
+| sb3/a2c-BreakoutNoFrameskip-v4 | A2C | BreakoutNoFrameskip-v4 | no disponible | Hugging Face (organización sb3) | no disponible |
 | CleanRL `ppo_atari.py` (implementación de referencia, no checkpoint) | PPO | Atari (incluye Breakout) | no disponible en la información proporcionada | GitHub | no disponible |
 
 La comparación directa más informativa es contra las otras variantes del mismo autor en `rl-algorithms-lab`, porque comparten preprocesado y estructura de código; sin embargo, no se han facilitado sus cifras de rendimiento, por lo que no es posible establecer una comparación cuantitativa con la información disponible.
@@ -97,14 +97,14 @@ La comparación directa más informativa es contra las otras variantes del mismo
 - Es un agente específico de un único entorno y un único juego; no generaliza a otras tareas, entornos ni modalidades.
 - No hay información sobre sesgos, pero sí sobre riesgos de sobreajuste a la configuración concreta de entrenamiento: los resultados dependen críticamente de los hiperparámetros publicados y del preprocesado de CleanRL.
 - La licencia no está declarada, lo que impide asumir permisos de uso comercial o de redistribución; conviene contactar con el autor antes de integrarlo en productos.
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes y fue creado el 2026-09-29, por lo que se trata de un artefacto reciente y sin validación comunitaria.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes y fue creado el 2026-09-29, por lo que se trata de un artefacto reciente y sin validación comunitaria.
 - El tamaño del repositorio declarado (0,0 GB) no es coherente con la existencia de un checkpoint; conviene verificar la integridad de `grpo.pt` antes de usarlo.
 - La arquitectura exacta no está documentada en la model card: hay que leer `src/algorithms/grpo.py` para conocer capas, dimensionalidad y número de parámetros antes de reutilizar el checkpoint.
 - No hay garantías de reproducibilidad exacta más allá de `torch_deterministic: True` en la semilla 2; otros entornos de hardware y versiones de librerías pueden alterar los resultados.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed2
+- Modelo en Hugging Face: https://huggingface.co/byamasupatrick/BreakoutNoFrameskip-v4-grpo-seed2
 - Código de entrenamiento (grpo-atari): https://github.com/byamasu-patrick/rl-algorithms-lab/tree/master/grpo-atari
 - Repositorio completo rl-algorithms-lab: https://github.com/byamasu-patrick/rl-algorithms-lab
 - Perfil del autor: https://huggingface.co/byamasupatrick

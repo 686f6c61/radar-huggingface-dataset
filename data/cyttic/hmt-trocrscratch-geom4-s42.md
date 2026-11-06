@@ -6,7 +6,7 @@
 
 El modelo emplea una cabeza de clasificación CTC (Connectionist Temporal Classification) sobre un encoder Transformer, lo que permite alinear secuencias de imagen con secuencias de texto sin necesidad de segmentación previa a nivel de carácter. Con 22,4 millones de parámetros, es un modelo compacto orientado a transcripción de líneas de texto manuscrito en hebreo, no a generación de lenguaje general.
 
-Su relevancia es acotada y experimental: se publica como artefacto reproducible de un estudio comparativo de técnicas de aumento de datos, con métricas declaradas de CER 0,1206 y WER 0,5091 sobre el conjunto de test HHD Option-B con decodificación greedy y sin modelo de lenguaje. No está pensado como modelo de propósito general ni dispone de pipeline declarado en HuggingFace.
+Su relevancia es acotada y experimental: se publica como artefacto reproducible de un estudio comparativo de técnicas de aumento de datos, con métricas declaradas de CER 0,1206 y WER 0,5091 sobre el conjunto de test HHD Option-B con decodificación greedy y sin modelo de lenguaje. No está pensado como modelo de propósito general ni dispone de pipeline declarado en Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -67,8 +67,8 @@ No se han publicado resultados adicionales de benchmarks (MMLU, HumanEval, GSM8K
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| cyttic/hmt-trocrscratch-geom4-s42 | 22,4 M | no disponible | HTR hebreo (CTC) | MIT | HuggingFace |
-| TrOCR (base/large, Microsoft) | 334 M / 558 M | no disponible | HTR multilingüe (seq2seq) | MIT | HuggingFace |
+| cyttic/hmt-trocrscratch-geom4-s42 | 22,4 M | no disponible | HTR hebreo (CTC) | MIT | Hugging Face |
+| TrOCR (base/large, Microsoft) | 334 M / 558 M | no disponible | HTR multilingüe (seq2seq) | MIT | Hugging Face |
 | Modelos HTR CTC específicos de hebreo | no disponible | no disponible | HTR hebreo | no disponible | no disponible |
 
 No se dispone de datos de rendimiento comparables publicados para alternativas en la misma categoría dentro de la información proporcionada.
@@ -81,11 +81,11 @@ No se dispone de datos de rendimiento comparables publicados para alternativas e
 - Riesgo de alucinación y errores de sustitución en caracteres ambiguos propios de la decodificación CTC greedy.
 - Sin datos sobre sesgos del dataset de entrenamiento (`hhd-optionb-split`) ni sobre su composición demográfica.
 - Licencia MIT permite uso comercial, pero la ausencia de validación y de benchmarks externos desaconseja su uso directo en entornos críticos.
-- Sin pipeline declarado en HuggingFace; requiere carga manual de pesos y tokenizador.
+- Sin pipeline declarado en Hugging Face; requiere carga manual de pesos y tokenizador.
 - Repositorio de 0,1 GB y 0 descargas: sin comunidad ni soporte documentado más allá de la model card.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/cyttic/hmt-trocrscratch-geom4-s42
+- Hugging Face: https://huggingface.co/cyttic/hmt-trocrscratch-geom4-s42
 - Dataset de entrenamiento referenciado: https://huggingface.co/datasets/cyttic/hhd-optionb-split
 - Repositorio del estudio `htr-metrics-transfer` (results.json): no disponible como enlace directo en la información proporcionada.

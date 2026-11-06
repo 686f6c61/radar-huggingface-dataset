@@ -17,7 +17,7 @@ Su relevancia práctica está en el enrutado y la clasificación de baja latenci
 | Parámetros activos | No aplica: no es un modelo MoE |
 | Longitud de contexto | 512 tokens en el checkpoint raíz (inglés); 1.024 tokens en los checkpoints multilingual y typed-decisions, ampliable hasta 8k según el autor |
 | Tipos de cuantización | no disponible |
-| Idiomas soportados | Los metadatos de HuggingFace indican "no disponible"; la model card declara más de 100 idiomas y reporta evaluación en 51 idiomas (45 usables en el checkpoint multilingual) |
+| Idiomas soportados | Los metadatos de Hugging Face indican "no disponible"; la model card declara más de 100 idiomas y reporta evaluación en 51 idiomas (45 usables en el checkpoint multilingual) |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (librería transformers) |
 | Pipeline declarado | text-classification |
@@ -75,7 +75,7 @@ Dato adicional reportado: el checkpoint `laya-typed-decisions` alcanza 0,766 de 
 - El repositorio completo ocupa 2,4 GB, aunque solo se descarga el checkpoint solicitado.
 - Cabe en GPUs de consumo: cualquier GPU con más de 2 GB de VRAM es suficiente en FP16, incluidas RTX 3060, RTX 4060, RTX 4070 y RTX 4090. También es viable en CPU, según el propio autor.
 - GPUs de referencia en las mediciones publicadas: NVIDIA T4.
-- Opciones de despliegue: `transformers`, el paquete `pip install laya` con su clase `Router`, y endpoints compatibles con HuggingFace (`endpoints_compatible`). No se documentan pesos GGUF, por lo que llama.cpp y Ollama no aplican; al no ser un modelo generativo autorregresivo, vLLM y TGI tampoco son las vías naturales de despliegue.
+- Opciones de despliegue: `transformers`, el paquete `pip install laya` con su clase `Router`, y endpoints compatibles con Hugging Face (`endpoints_compatible`). No se documentan pesos GGUF, por lo que llama.cpp y Ollama no aplican; al no ser un modelo generativo autorregresivo, vLLM y TGI tampoco son las vías naturales de despliegue.
 - Latencia publicada: 39,5 ms por pregunta en inglés y 32,8 ms en multilingüe (T4); 158,6 ms y 72,3 ms respectivamente para 10 preguntas en lote.
 - Coste de arranque en frío: reconstruir un checkpoint cuesta segundos. El autor mide una recarga mediana de 7,4 s en CPU y 10,3 s en T4 cuando el tráfico alterna idiomas con `max_loaded=1` (valor por defecto), por lo que recomienda precargar los checkpoints que se vayan a servir.
 - No se publican cifras de throughput en tokens por segundo.
@@ -96,7 +96,7 @@ Para alternativas de terceros de la misma categoría (encoders de clasificación
 
 - El repositorio registra 0 descargas y 0 likes, y no hay evidencia de validación independiente de los resultados publicados. Todas las cifras de benchmarks proceden del propio autor.
 - Existe una discrepancia entre el identificador del repositorio (`Gtrkrsk/laya`) y las referencias de la model card a `convaiinnovations/laya` y a subcarpetas en ese espacio de nombres. Conviene verificar a qué artefacto apunta cada ruta antes de integrarlo en producción.
-- Los metadatos de HuggingFace no declaran idiomas soportados, mientras que la model card afirma más de 100 idiomas. La discrepancia no está resuelta en la información disponible.
+- Los metadatos de Hugging Face no declaran idiomas soportados, mientras que la model card afirma más de 100 idiomas. La discrepancia no está resuelta en la información disponible.
 - El checkpoint inglés falla por completo ante escrituras no latinas: 0,000 de exactitud en jemer con 0,952 de confianza. Al mantenerse confiado estando equivocado, el filtrado por umbral de confianza no protege frente a este fallo; es necesario enrutar por sistema de escritura.
 - El modelo no genera texto, por lo que no sirve para generación, resumen, traducción ni diálogo. Su uso está restringido a clasificación, puntuación y enrutado.
 - El riesgo de alucinación de texto es nulo por diseño, pero persisten los errores de clasificación con alta confianza, cuya calibración no ha sido verificada de forma independiente.
@@ -109,7 +109,7 @@ Para alternativas de terceros de la misma categoría (encoders de clasificación
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Gtrkrsk/laya
+- Modelo en Hugging Face: https://huggingface.co/Gtrkrsk/laya
 - Checkpoint multilingüe referenciado en la model card: https://huggingface.co/convaiinnovations/laya-multilingual
 - Checkpoint de decisiones tipadas referenciado en la model card: https://huggingface.co/convaiinnovations/laya-typed-decisions
 - Repositorio de código citado en la model card: https://github.com/NandhaKishorM/laya

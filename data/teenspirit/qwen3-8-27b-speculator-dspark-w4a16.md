@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-27B-speculator.dspark-W4A16 es una re-cuantizacion INT4 weight-only del "speculator" (modelo borrador para decodificacion especulativa) DSpark asociado a Qwen/Qwen3.8-27B. Lo publica el usuario TeenSpirit en HuggingFace como artefacto de comunidad, no como release oficial de Red Hat, que es quien entreno y publico el checkpoint original RedHatAI/Qwen3.8-27B-speculator.dspark. El modelo no es un LLM autonomo: es un draft model de aproximadamente 1.990 millones de parametros que propone tokens candidatos que el verificador de 27B valida en cada paso de decodificacion.
+Qwen3.8-27B-speculator.dspark-W4A16 es una re-cuantizacion INT4 weight-only del "speculator" (modelo borrador para decodificacion especulativa) DSpark asociado a Qwen/Qwen3.8-27B. Lo publica el usuario TeenSpirit en Hugging Face como artefacto de comunidad, no como release oficial de Red Hat, que es quien entreno y publico el checkpoint original RedHatAI/Qwen3.8-27B-speculator.dspark. El modelo no es un LLM autonomo: es un draft model de aproximadamente 1.990 millones de parametros que propone tokens candidatos que el verificador de 27B valida en cada paso de decodificacion.
 
 La relevancia es practica: reduce el checkpoint de 4,0 GB en bf16 a 1,2 GB en INT4 manteniendo, segun las mediciones del autor, la longitud de aceptacion (acceptance length, AL) del original. Eso permite desplegar decodificacion especulativa con un verificador grande en GPUs con menos memoria disponible para el borrador, o liberar VRAM para aumentar el tamano de batch o el numero de tokens especulativos.
 
@@ -109,7 +109,7 @@ La unica comparacion directa disponible es contra el checkpoint bf16 del que der
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TeenSpirit/Qwen3.8-27B-speculator.dspark-W4A16
+- Hugging Face: https://huggingface.co/TeenSpirit/Qwen3.8-27B-speculator.dspark-W4A16
 - Modelo base: https://huggingface.co/RedHatAI/Qwen3.8-27B-speculator.dspark
 - Modelo verificador: https://huggingface.co/Qwen/Qwen3.8-27B
 - Dataset de benchmarks: https://huggingface.co/datasets/RedHatAI/speculator_benchmarks

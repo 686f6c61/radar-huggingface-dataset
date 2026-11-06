@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es una variante personalizada de ResNet-18, la arquitectura convolucional clásica de clasificación de imágenes, publicada en HuggingFace por el usuario Ramos-Ramos. El identificador sugiere que se trata de un ResNet-18 entrenado o ajustado sobre ImageNet con un mecanismo de umbral (threshold) de 0.5, probablemente para la binarización de predicciones o filtrado de resultados por confianza. No se ha publicado una model card descriptiva, por lo que la información disponible procede exclusivamente de los metadatos del repositorio.
+Este modelo es una variante personalizada de ResNet-18, la arquitectura convolucional clásica de clasificación de imágenes, publicada en Hugging Face por el usuario Ramos-Ramos. El identificador sugiere que se trata de un ResNet-18 entrenado o ajustado sobre ImageNet con un mecanismo de umbral (threshold) de 0.5, probablemente para la binarización de predicciones o filtrado de resultados por confianza. No se ha publicado una model card descriptiva, por lo que la información disponible procede exclusivamente de los metadatos del repositorio.
 
 Con aproximadamente 11,7 millones de parámetros en formato safetensors y una ocupación de repo de 0,1 GB, se trata de un modelo muy ligero, adecuado para inferencia en CPU o en GPUs de consumo. Está integrado con la librería timm y compatible con el pipeline de clasificación de imágenes de Transformers. Su relevancia es principalmente como modelo experimental o de nicho: no tiene descargas ni likes registrados y carece de documentación, por lo que su uso exige verificación por parte del desarrollador.
 
@@ -27,7 +27,7 @@ Sobre el entrenamiento concreto de esta variante, la información disponible es 
 
 ## Capacidades
 
-- Clasificación de imágenes mediante el pipeline `image-classification` de HuggingFace Transformers.
+- Clasificación de imágenes mediante el pipeline `image-classification` de Hugging Face Transformers.
 - Compatibilidad nativa con la librería timm para carga, inferencia y fine-tuning.
 - Posible salida de probabilidades con umbral de 0.5, útil para filtrado por confianza en producción.
 - Tamaño reducido (0,1 GB), apto para despliegue en dispositivos con recursos limitados.
@@ -51,7 +51,7 @@ No se han publicado resultados de benchmarks en la información disponible. Como
 - VRAM estimada para inferencia: inferior a 1 GB en precisión FP32 (el modelo completo ocupa unos 0,1 GB en disco); cualquier GPU moderna es más que suficiente.
 - GPU recomendadas: no requiere GPU dedicada; inferencia viable en CPU. En caso de usar GPU, cualquier tarjeta desde una GTX 1050 o superior sobra con holgura.
 - Consumer GPUs: cabe con facilidad en cualquier GPU de consumo actual, incluidas las de gama baja.
-- Opciones de despliegue: PyTorch con timm, HuggingFace Transformers (pipeline `image-classification`), ONNX Runtime tras exportación, o TorchScript para producción. No es aplicable vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
+- Opciones de despliegue: PyTorch con timm, Hugging Face Transformers (pipeline `image-classification`), ONNX Runtime tras exportación, o TorchScript para producción. No es aplicable vLLM, llama.cpp, Ollama ni TGI, que están orientados a modelos de lenguaje.
 - Latencia y throughput: no disponible; dada la arquitectura ligera, se esperan latencias de pocos milisegundos por imagen en GPU y decenas de milisegundos en CPU moderno (estimación no verificada).
 
 ## Comparativa con modelos similares
@@ -74,7 +74,7 @@ No se han publicado resultados de benchmarks en la información disponible. Como
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Ramos-Ramos/resnet18.custom_imagenet_threshold_0.5
+- Repositorio en Hugging Face: https://huggingface.co/Ramos-Ramos/resnet18.custom_imagenet_threshold_0.5
 - Paper original de ResNet (He et al., 2015): https://arxiv.org/abs/1512.03385
 - Librería timm: https://github.com/huggingface/pytorch-image-models
 - Documentación de pipelines de clasificación de imágenes de Transformers: https://huggingface.co/docs/transformers/main_classes/pipelines#transformers.ImageClassificationPipeline

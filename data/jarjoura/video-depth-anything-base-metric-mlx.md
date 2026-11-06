@@ -78,7 +78,7 @@ La comparativa se limita a aspectos de formato y licencia, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace del modelo MLX: https://huggingface.co/jarjoura/video-depth-anything-base-metric-mlx
-- Modelo original en HuggingFace: https://huggingface.co/depth-anything/Metric-Video-Depth-Anything-Base
+- Repositorio Hugging Face del modelo MLX: https://huggingface.co/jarjoura/video-depth-anything-base-metric-mlx
+- Modelo original en Hugging Face: https://huggingface.co/depth-anything/Metric-Video-Depth-Anything-Base
 - Repositorio GitHub de Video Depth Anything: https://github.com/DepthAnything/Video-Depth-Anything
 - Pagina del proyecto: https://videodepthanything.github.io/

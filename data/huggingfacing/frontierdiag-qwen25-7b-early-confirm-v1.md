@@ -79,5 +79,5 @@ No se dispone de información suficiente para una comparativa directa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/huggingFacing/frontierdiag-qwen25-7b-early-confirm-v1
+- Repositorio Hugging Face: https://huggingface.co/huggingFacing/frontierdiag-qwen25-7b-early-confirm-v1
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

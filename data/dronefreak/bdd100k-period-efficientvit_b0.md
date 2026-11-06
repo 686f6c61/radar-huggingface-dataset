@@ -114,7 +114,7 @@ El modelo se situa en tercera posicion por top-1 pero lidera en macro F1 entre l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dronefreak/bdd100k-period-efficientvit_b0
+- Modelo en Hugging Face: https://huggingface.co/dronefreak/bdd100k-period-efficientvit_b0
 - Repositorio BDD100K-Toolkit: https://github.com/dronefreak/bdd100k-toolkit
 - Dataset de clasificacion: https://huggingface.co/datasets/dronefreak/BDD100K-Period-Classification
 - Paper de EfficientViT (arXiv:2205.14756): https://arxiv.org/abs/2205.14756

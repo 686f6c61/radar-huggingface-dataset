@@ -23,7 +23,7 @@ Su relevancia es doble: por un lado, ejemplifica un caso de uso vertical muy con
 | Modelo base | LiquidAI/LFM2.5-1.2B-Instruct |
 | Metodo de adaptacion | LoRA de rango 16 sobre todas las capas lineales, 2 épocas, pesos fusionados |
 | Tamano del repositorio | 0,7 GB |
-| Fecha de publicacion (metadatos de HuggingFace) | 2026-09-28 |
+| Fecha de publicacion (metadatos de Hugging Face) | 2026-09-28 |
 
 ## Arquitectura y entrenamiento
 
@@ -40,7 +40,7 @@ La innovación destacable no es arquitectónica sino de diseño de sistema: el m
 - Explicación de significados de palabras y de reglas gramaticales presentadas en tarjetas de reglas por capítulo.
 - Soporte de conversación multiturno en el formato de chat definido por el modelo base (etiqueta `conversational`).
 - Ejecución en CPU sin GPU, orientada a inferencia en dispositivo móvil.
-- Compatibilidad con endpoints de HuggingFace (etiqueta `endpoints_compatible`).
+- Compatibilidad con endpoints de Hugging Face (etiqueta `endpoints_compatible`).
 - No hay evidencia en la información disponible de soporte de tool calling, function calling, agentes, razonamiento multi-paso, visión, audio ni modo de pensamiento explícito.
 - Capacidades multilingües limitadas a alemán e inglés; no se declaran otros idiomas.
 
@@ -96,7 +96,7 @@ Esta cifra procede del autor de la ficha del modelo y no se especifica el tamano
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Theboukadida/laura-en-lfm2.5-1.2b-GGUF
+- Modelo en Hugging Face: https://huggingface.co/Theboukadida/laura-en-lfm2.5-1.2b-GGUF
 - Modelo base: https://huggingface.co/LiquidAI/LFM2.5-1.2B-Instruct
-- Licencia del modelo base (LFM Open License v1.0): archivo LICENSE del repositorio en HuggingFace
+- Licencia del modelo base (LFM Open License v1.0): archivo LICENSE del repositorio en Hugging Face
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la búsqueda web realizada; los resultados obtenidos no guardan relación con el modelo.

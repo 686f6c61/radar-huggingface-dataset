@@ -55,7 +55,7 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 - Para inferencia con el base en bfloat16 se necesitan aproximadamente 54-60 GB de VRAM, lo que requiere GPUs de clase A100 80GB, H100, o varias RTX 4090 (24GB) con tensor parallelism.
 - Con cuantización (por ejemplo, 4-bit o 8-bit) se puede reducir la huella a unos 16-18 GB, lo que permite ejecutarlo en una RTX 4090 o RTX 3090, aunque la cuantización puede afectar a la fidelidad de las activaciones inyectadas.
 - El entrenamiento descrito en la model card se realizó en 4 GPU B200 con DDP bit-synced, lo que indica que el entrenamiento es costoso y requiere hardware de gama alta.
-- Para el despliegue del adaptador, se usa la librería PEFT de HuggingFace con `PeftModel`, y es compatible con `transformers` y `accelerate`. No se menciona soporte para vLLM, llama.cpp u Ollama.
+- Para el despliegue del adaptador, se usa la librería PEFT de Hugging Face con `PeftModel`, y es compatible con `transformers` y `accelerate`. No se menciona soporte para vLLM, llama.cpp u Ollama.
 
 ## Comparativa con modelos similares
 
@@ -73,7 +73,7 @@ No disponible. El *oracle lens* es una técnica de interpretabilidad muy especí
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/olens-rl-grpo-trajectory-qwen36-27b
+- Repositorio Hugging Face: https://huggingface.co/ceselder/olens-rl-grpo-trajectory-qwen36-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (referencia del autor)
 - Proyecto relacionado del autor: https://huggingface.co/ceselder/skip-lens-olens-pi0-100k-qwen36-27b
 - Guía de despliegue de Qwen3.6-27B (tercera): https://dredyson.com/how-i-solved-the-qwen3-6-27b-performance-and-deployment-problems-a-complete-step-by-step-beginners-guide-to-configuration-benchmarks-troubleshooting-and-getting-maximum-throughput-on-dual-node/

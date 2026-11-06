@@ -21,7 +21,7 @@ Su relevancia no esta en el rendimiento de un modelo, sino en el patron de ingen
 | Formato de pesos | no disponible (el repositorio no contiene pesos) |
 | Autor | ntizina-video83 |
 | Tamano del repositorio | 0,0 GB |
-| Pipeline declarado en HuggingFace | no disponible |
+| Pipeline declarado en Hugging Face | no disponible |
 | Fecha de creacion | 2026-10-26 |
 | Ultima actualizacion | 2026-10-28 |
 | Descargas / likes | 0 / 0 |
@@ -81,12 +81,12 @@ No disponible. No existen modelos comparables en el repositorio ni datos de rend
 - Ventana de actualidad estricta de 24 horas; noticias mas antiguas se descartan por diseno, lo que puede dejar sin contenido al modo `morning`.
 - Cobertura geografica y editorial restringida por reglas explicitas: se excluyen temas de Israel y Emiratos Arabes Unidos, la liga saudita y cualquier metraje de partido resubido.
 - Contenido exclusivamente en arabe; no hay soporte multilingue declarado en la generacion ni en la locucion.
-- Etiquetas de HuggingFace incompletas (sin campo de idioma estandar) y repositorio sin descargas ni validacion de la comunidad (0 descargas, 0 likes), por lo que no hay evidencia externa de funcionamiento en produccion.
+- Etiquetas de Hugging Face incompletas (sin campo de idioma estandar) y repositorio sin descargas ni validacion de la comunidad (0 descargas, 0 likes), por lo que no hay evidencia externa de funcionamiento en produccion.
 - Los resultados de la busqueda web realizada no guardan relacion con el repositorio y no se han incluido; no aportan informacion verificable sobre el proyecto.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ntizina-video83/kahwa-bulletin
+- Repositorio en Hugging Face: https://huggingface.co/ntizina-video83/kahwa-bulletin
 - Gateway privado de claves (`kahwa-bulletin-gw`, Cloudflare Worker): no disponible como enlace publico en la informacion proporcionada
 - Paper, blog o demo: no disponibles en la informacion proporcionada
 - Repositorio de codigo independiente (GitHub): no disponible en la informacion proporcionada

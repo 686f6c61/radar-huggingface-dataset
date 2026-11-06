@@ -83,8 +83,8 @@ Seguridad (ASR, menor es mejor; `*` indica evaluación sin thinking):
 
 | Modelo | Parametros | Contexto | Defensa ante inyección | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.6-27B-Thinking-SecOPD | 27,8B | 262.144 | Sí (SecOPD, ASR AgentDojo 0,0%) | Apache 2.0 | HuggingFace |
-| Qwen3.6-27B (base) | 27,8B | 262.144 | No (ASR AgentDojo 26,7%) | Apache 2.0 | HuggingFace |
+| Qwen3.6-27B-Thinking-SecOPD | 27,8B | 262.144 | Sí (SecOPD, ASR AgentDojo 0,0%) | Apache 2.0 | Hugging Face |
+| Qwen3.6-27B (base) | 27,8B | 262.144 | No (ASR AgentDojo 26,7%) | Apache 2.0 | Hugging Face |
 | Alternativas de 27-30B con defensa específica | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -101,7 +101,7 @@ Seguridad (ASR, menor es mejor; `*` indica evaluación sin thinking):
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Thinking-SecOPD
+- Hugging Face: https://huggingface.co/Sizhe-Chen/Qwen3.6-27B-Thinking-SecOPD
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B
 - Dataset de entrenamiento: https://huggingface.co/datasets/Sizhe-Chen/Qwen3.6-27B-Instruct-SecPO-trainset
 - Paper SecOPD: https://arxiv.org/abs/2610.41998

@@ -6,7 +6,7 @@ Aevanis-Operator es un agente multimodal especializado en control de interfaces 
 
 Según la model card, el modelo combina un codificador visual ligero con una cabeza de predicción que devuelve coordenadas de puntero normalizadas y una etiqueta de acción discreta entre ocho posibles (CLICK, DOUBLE_CLICK, DRAG, HOVER, SCROLL_UP, SCROLL_DOWN, RIGHT_CLICK, IDLE). La variante publicada se denomina "nano" y se distribuye como pesos PyTorch (`.pt`), no como safetensors ni GGUF.
 
-La ficha se basa exclusivamente en la información de la model card y los metadatos de HuggingFace. El repositorio figura con 0 GB de tamaño, 0 descargas y 0 likes en el momento de la consulta, y no se publican detalles sobre arquitectura interna, número de parámetros, datos de entrenamiento ni benchmarks estándar. Cualquier dato no confirmado se marca como "no disponible".
+La ficha se basa exclusivamente en la información de la model card y los metadatos de Hugging Face. El repositorio figura con 0 GB de tamaño, 0 descargas y 0 likes en el momento de la consulta, y no se publican detalles sobre arquitectura interna, número de parámetros, datos de entrenamiento ni benchmarks estándar. Cualquier dato no confirmado se marca como "no disponible".
 
 ## Especificaciones tecnicas
 
@@ -71,7 +71,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Desarrollador | Enfoque | Latencia declarada | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Aevanis-Operator | Aevanis AI Lab | Agente computer-use local, coordenadas y 8 acciones | < 4 ms por paso | Apache-2.0 | Pesos `.pt` en HuggingFace |
+| Aevanis-Operator | Aevanis AI Lab | Agente computer-use local, coordenadas y 8 acciones | < 4 ms por paso | Apache-2.0 | Pesos `.pt` en Hugging Face |
 | Claude 3.5 Computer Use | Anthropic | Agente computer-use vía API en la nube | 1.500–3.500 ms por paso (según la model card) | Propietaria | API comercial |
 | Alternativas open source de computer-use | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -91,5 +91,5 @@ La comparación con Claude 3.5 Computer Use procede de la propia model card de A
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Aevanis/Aevanis-Operator
+- Modelo en Hugging Face: https://huggingface.co/Aevanis/Aevanis-Operator
 - Repositorio, paper, blog o demo adicionales: no disponible en la información proporcionada.

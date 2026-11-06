@@ -69,7 +69,7 @@ No se dispone de comparativas publicadas con otros modelos cuantizados de la mis
 
 ## Enlaces
 
-- [Modelo en HuggingFace: AutomatosX/AX-gpt-oss-20b-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-gpt-oss-20b-MLX-AXQ-6bit)
+- [Modelo en Hugging Face: AutomatosX/AX-gpt-oss-20b-MLX-AXQ-6bit](https://huggingface.co/AutomatosX/AX-gpt-oss-20b-MLX-AXQ-6bit)
 - [Modelo base: openai/gpt-oss-20b](https://huggingface.co/openai/gpt-oss-20b)
 - [Repositorio AXQuant (GitHub)](https://github.com/defai-digital/axquant)
 - [Catálogo de modelos MLX de AutomatosX](https://huggingface.co/collections/AutomatosX/automatosx-mlx-model-catalog)

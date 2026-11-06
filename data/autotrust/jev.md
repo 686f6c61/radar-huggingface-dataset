@@ -86,7 +86,7 @@ No se han publicado en la información disponible resultados de benchmarks gener
 
 | Modelo | Parámetros | Contexto | Salida | Licencia | Disponibilidad | Rendimiento comparado |
 |---|---|---|---|---|---|---|
-| autotrust/JEV | 7,94 B (40,2 M entrenados) | no disponible | Decisiones tipadas calibradas (`noul`/`choice`/`score`) | Apache-2.0 | Pesos abiertos en HuggingFace | KL 0,028 frente al maestro; AUROC 0,994; top-1 88,4 % |
+| autotrust/JEV | 7,94 B (40,2 M entrenados) | no disponible | Decisiones tipadas calibradas (`noul`/`choice`/`score`) | Apache-2.0 | Pesos abiertos en Hugging Face | KL 0,028 frente al maestro; AUROC 0,994; top-1 88,4 % |
 | TypeSafe Jev 1.13 (maestro) | no disponible | no disponible | Las mismas tres modalidades | Propietaria | API hospedada desde el 21 de septiembre de 2026, 0,042 USD por millón de tokens de entrada, salida gratuita, latencia declarada de 70–500 ms | Es la referencia frente a la que se mide el student |
 | Qwen/Qwen3.5-9B (base) | ~9 B (según nomenclatura) | no disponible | Generación de texto general | no disponible | Pesos abiertos | No es un modelo de decisiones; no hay comparación directa disponible |
 | LLM generales usados como jueces (p. ej. clasificación por prompt) | Variable | Variable | Texto que hay que parsear | Según modelo | Pesos abiertos o API | Sin datos comparativos en la información proporcionada |
@@ -109,7 +109,7 @@ La comparación cuantitativa con alternativas de la misma categoría (modelos de
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/autotrust/JEV
+- Modelo en Hugging Face: https://huggingface.co/autotrust/JEV
 - Dataset de destilación: https://huggingface.co/datasets/SargeDev/jev-distill-corpus-v3
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Informe de evaluación incluido en el repositorio: `code/reports/eval_s2_9b.md`

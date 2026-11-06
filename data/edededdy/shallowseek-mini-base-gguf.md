@@ -124,7 +124,7 @@ Nota: las cifras de SmolLM2-135M, Qwen2.5-0.5B y TinyLlama-1.1B corresponden a e
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/edededdy/ShallowSeek-mini-base-GGUF
+- Repositorio GGUF en Hugging Face: https://huggingface.co/edededdy/ShallowSeek-mini-base-GGUF
 - Repositorio base (pesos PyTorch, config y tokenizador): https://huggingface.co/edededdy/ShallowSeek-mini-base
 - Dataset de entrenamiento: https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu
 - Manual de uso de modelos ShallowSeek (API compatible con OpenAI): https://doc.shallowseek.top/en/guide/using-models.html

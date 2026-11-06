@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `davidwdw/fa-pi05-human-full-2000-efc8b3954a3d-eb5fcca6ff33` es un archivo versionado de artefactos de entrenamiento publicado por el usuario `davidwdw` en HuggingFace. La propia model card lo describe como "versioned fleet archive" con receta canónica `2026-09-23_b1k_task00_pi05_human_sft_h20_plan` y nivel de contenido "params+train_state+assets+controller", es decir, no se trata de un modelo listo para inferencia con una model card convencional, sino de una instantánea de un proceso de entrenamiento (probablemente SFT, por el sufijo `_sft_` de la receta) junto con su estado.
+El repositorio `davidwdw/fa-pi05-human-full-2000-efc8b3954a3d-eb5fcca6ff33` es un archivo versionado de artefactos de entrenamiento publicado por el usuario `davidwdw` en Hugging Face. La propia model card lo describe como "versioned fleet archive" con receta canónica `2026-09-23_b1k_task00_pi05_human_sft_h20_plan` y nivel de contenido "params+train_state+assets+controller", es decir, no se trata de un modelo listo para inferencia con una model card convencional, sino de una instantánea de un proceso de entrenamiento (probablemente SFT, por el sufijo `_sft_` de la receta) junto con su estado.
 
 El paquete ocupa 44,7 GB y no declara licencia, idiomas, pipeline ni arquitectura. El repositorio no tiene descargas ni valoraciones en el momento de la consulta, y se creó y actualizó el mismo día (26 de septiembre de 2026), lo que apunta a un uso interno o a un volcado automatizado de artefactos más que a una publicación dirigida a la comunidad. La nomenclatura `pi05` y el término "human" podrían sugerir una política de tipo visión-lenguaje-acción entrenada con datos humanos, pero esto no está confirmado por ninguna fuente del repositorio.
 
@@ -78,7 +78,7 @@ El repositorio no incluye métricas de MMLU, HumanEval, GSM8K, ni evaluaciones d
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| pi05-human-full-2000-efc8b3954a3d (este repositorio) | no disponible | no disponible | no disponible | no disponible | Publico en HuggingFace, 0 descargas |
+| pi05-human-full-2000-efc8b3954a3d (este repositorio) | no disponible | no disponible | no disponible | no disponible | Publico en Hugging Face, 0 descargas |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No es posible identificar modelos comparables: la información disponible no permite determinar la categoría del modelo (lenguaje, visión-lenguaje-acción, política robótica u otra), su tamaño ni su tarea objetivo. Sin esos datos, cualquier comparación sería especulativa.
@@ -97,7 +97,7 @@ No es posible identificar modelos comparables: la información disponible no per
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/davidwdw/fa-pi05-human-full-2000-efc8b3954a3d-eb5fcca6ff33
+- Repositorio en Hugging Face: https://huggingface.co/davidwdw/fa-pi05-human-full-2000-efc8b3954a3d-eb5fcca6ff33
 - Paper asociado: no disponible
 - Blog o anuncio del autor: no disponible
 - Repositorio de codigo: no disponible

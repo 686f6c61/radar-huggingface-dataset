@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2-s300` es un checkpoint publicado en HuggingFace por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`, un identificador que no corresponde a ninguna familia de modelos ampliamente conocida. El nombre del repositorio sigue un esquema de nomenclatura críptico (probablemente parámetros de un experimento de entrenamiento: `r18`, `a2`, `w14`, `k-chrono5`, `w60ft2`, `s300`) que sugiere un run interno de investigación más que un modelo destinado a distribución pública. Cuenta con 2.018.511.234 parámetros reales según los tensores en formato safetensors, lo que lo sitúa en la franja de los modelos de aproximadamente 2.000 millones de parámetros.
+El modelo `alfred8995/r18-a2-w14-k-chrono5-w60ft2-s300` es un checkpoint publicado en Hugging Face por el usuario alfred8995 bajo la etiqueta `sn38-nanochrono`, un identificador que no corresponde a ninguna familia de modelos ampliamente conocida. El nombre del repositorio sigue un esquema de nomenclatura críptico (probablemente parámetros de un experimento de entrenamiento: `r18`, `a2`, `w14`, `k-chrono5`, `w60ft2`, `s300`) que sugiere un run interno de investigación más que un modelo destinado a distribución pública. Cuenta con 2.018.511.234 parámetros reales según los tensores en formato safetensors, lo que lo sitúa en la franja de los modelos de aproximadamente 2.000 millones de parámetros.
 
 El repositorio está marcado como de acceso restringido (gated) y no dispone de pipeline declarado, idiomas soportados ni documentación asociada en la información disponible. Fue creado y actualizado el 29 de octubre de 2026, con cero descargas y cero likes en el momento de la consulta, lo que refuerza la hipótesis de un artefacto de investigación reciente o de un experimento personal sin difusión.
 
@@ -77,12 +77,12 @@ La comparación se limita a tamaño y licencia: no hay datos de rendimiento del 
 - Riesgo de alucinación desconocido: no hay evaluación de fidelidad factual.
 - Sesgos desconocidos: al no conocerse la composición del dataset, no pueden estimarse sesgos de género, idioma, cultura o dominio.
 - Idiomas no confirmados: no debe asumirse soporte de castellano ni de ningún otro idioma.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que añade fricción a la reproducibilidad y a la integración en pipelines automatizados.
 - Licencia Apache 2.0: permite uso comercial, pero la falta de garantías del autor y la ausencia de documentación trasladan todo el riesgo de validación al usuario.
 - Sin soporte comunitario: cero descargas y cero likes implican ausencia de issues, forks o experiencias reportadas que ayuden a depurar problemas.
 - Nomenclatura opaca: el nombre del repositorio no permite identificar la familia de modelos ni el propósito, lo que dificulta la búsqueda de documentación relacionada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2-s300
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w14-k-chrono5-w60ft2-s300
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información disponible.

@@ -71,7 +71,7 @@ No disponible. La informacion proporcionada no incluye comparaciones con otros a
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/masafy/minimax-h3-masafy-lora
+- Modelo en Hugging Face: https://huggingface.co/masafy/minimax-h3-masafy-lora
 - Informe tecnico y dataset (GitHub): https://github.com/masafykun/minimax-h3-masafy-lora
 - Licencia de MiniMax H3: https://huggingface.co/MiniMaxAI/MiniMax-H3/blob/main/LICENSE
 - Modelo base (redistribucion ComfyUI): https://huggingface.co/Comfy-Org/MiniMax-H3

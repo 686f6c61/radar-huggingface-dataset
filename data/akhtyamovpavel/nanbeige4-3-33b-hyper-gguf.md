@@ -90,7 +90,7 @@ La ventaja declarada frente a IQ4_XS uniforme es liberar VRAM suficiente para la
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/akhtyamovpavel/Nanbeige4.3-33B-Hyper-GGUF
+- Hugging Face: https://huggingface.co/akhtyamovpavel/Nanbeige4.3-33B-Hyper-GGUF
 - Modelo base: https://huggingface.co/Nanbeige/Nanbeige4.3-33B
 - GGUF de referencia (bartowski): https://huggingface.co/bartowski/Nanbeige_Nanbeige4.3-33B-GGUF
 - Repositorio GitHub (script de construccion, launcher y config de OpenCode): https://github.com/akhtyamovpavel/HyperNanbeige-33B

@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Videa.ai es un repositorio alojado en HuggingFace por el usuario jonathan-1111 bajo el identificador jonathan-1111/Videa.ai. En el momento de la consulta, la ficha del repositorio no incluye informacion tecnica alguna: no declara pipeline, licencia, idiomas, arquitectura, numero de parametros ni longitud de contexto, y acumula cero descargas y un unico "like" desde su creacion, fechada el 12 de septiembre de 2026 en los metadatos.
+Videa.ai es un repositorio alojado en Hugging Face por el usuario jonathan-1111 bajo el identificador jonathan-1111/Videa.ai. En el momento de la consulta, la ficha del repositorio no incluye informacion tecnica alguna: no declara pipeline, licencia, idiomas, arquitectura, numero de parametros ni longitud de contexto, y acumula cero descargas y un unico "like" desde su creacion, fechada el 12 de septiembre de 2026 en los metadatos.
 
-El unico dato adicional es la etiqueta region:us, que en HuggingFace indica la region de almacenamiento de los pesos y no aporta informacion sobre el contenido, el entrenamiento o las capacidades del modelo. No se ha localizado tarjeta de modelo, documentacion, articulo tecnico, repositorio de codigo ni anuncio asociado al identificador.
+El unico dato adicional es la etiqueta region:us, que en Hugging Face indica la region de almacenamiento de los pesos y no aporta informacion sobre el contenido, el entrenamiento o las capacidades del modelo. No se ha localizado tarjeta de modelo, documentacion, articulo tecnico, repositorio de codigo ni anuncio asociado al identificador.
 
 La busqueda web realizada no ha devuelto ningun resultado relacionado con este modelo: los enlaces recuperados corresponden a sitios de contenido para adultos y no guardan relacion con Videa.ai. En consecuencia, esta ficha no puede evaluar el modelo y se limita a registrar el estado verificable del repositorio, marcando como "no disponible" todo aquello que la informacion proporcionada no permite confirmar. Cualquier uso en produccion exigiria inspeccionar directamente los archivos del repositorio y contactar con el autor.
 
@@ -21,7 +21,7 @@ La busqueda web realizada no ha devuelto ningun resultado relacionado con este m
 | Licencia | no disponible |
 | Formato de pesos | no disponible |
 | Autor | jonathan-1111 |
-| Identificador en HuggingFace | jonathan-1111/Videa.ai |
+| Identificador en Hugging Face | jonathan-1111/Videa.ai |
 | Descargas | 0 |
 | Likes | 1 |
 | Fecha de creacion | 2026-09-12 |
@@ -78,7 +78,7 @@ No disponible. Al desconocerse la categoria del modelo (tamano, modalidad y tare
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/jonathan-1111/Videa.ai
+- Repositorio en Hugging Face: https://huggingface.co/jonathan-1111/Videa.ai
 - Paper: no disponible.
 - Blog o anuncio oficial: no disponible.
 - Repositorio de codigo: no disponible.

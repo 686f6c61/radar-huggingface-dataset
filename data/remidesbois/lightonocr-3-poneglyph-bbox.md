@@ -90,8 +90,8 @@ La ruta WebGPU acumula 587 errores de caracteres frente a 571 en BF16, una difer
 
 | Modelo | Parametros | Contexto | Tarea principal | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Remidesbois/LightOnOCR-3-Poneglyph-bbox | 852.985.920 | no disponible | OCR de manga en francés con bbox normalizadas | Apache-2.0 | HuggingFace, con ONNX/WebGPU |
-| lightonai/LightOnOCR-3-0.8B (modelo base) | en torno a 0,8 mil millones, según la nomenclatura del autor | no disponible | OCR de visión-lenguaje (base) | no disponible en la informacion proporcionada | HuggingFace |
+| Remidesbois/LightOnOCR-3-Poneglyph-bbox | 852.985.920 | no disponible | OCR de manga en francés con bbox normalizadas | Apache-2.0 | Hugging Face, con ONNX/WebGPU |
+| lightonai/LightOnOCR-3-0.8B (modelo base) | en torno a 0,8 mil millones, según la nomenclatura del autor | no disponible | OCR de visión-lenguaje (base) | no disponible en la informacion proporcionada | Hugging Face |
 | Otros OCR-VLM comparables (por ejemplo GOT-OCR2.0, dots.ocr, olmOCR) | no disponible | no disponible | OCR genérico | no disponible | no disponible |
 
 No se ha proporcionado información de benchmarks ni de especificaciones de otros modelos comparables, por lo que la comparación cuantitativa con alternativas no está disponible.
@@ -110,7 +110,7 @@ No se ha proporcionado información de benchmarks ni de especificaciones de otro
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Remidesbois/LightOnOCR-3-Poneglyph-bbox
+- Modelo en Hugging Face: https://huggingface.co/Remidesbois/LightOnOCR-3-Poneglyph-bbox
 - Modelo base: https://huggingface.co/lightonai/LightOnOCR-3-0.8B
 - Revisión del modelo base: `36d8636925327c671bd8e479c517a004f7566bd9`
 - Resumen público de benchmarks citado en la model card: `benchmark_native.json` (referenciado como `benchmark_native.json` en el repositorio)

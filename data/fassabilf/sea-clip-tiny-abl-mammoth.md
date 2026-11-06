@@ -19,7 +19,7 @@ Su relevancia es exclusivamente metodologica: es un artefacto de ablacion que do
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | en, id, jv, su, ms, th, vi, my |
 | Licencia | MIT |
-| Formato de pesos | no disponible (repositorio gestionado via HuggingFace Hub con open_clip; la model card no detalla el formato de los ficheros) |
+| Formato de pesos | no disponible (repositorio gestionado via Hugging Face Hub con open_clip; la model card no detalla el formato de los ficheros) |
 
 ## Arquitectura y entrenamiento
 
@@ -97,7 +97,7 @@ No se dispone de cifras de rendimiento comparables entre estos modelos en la inf
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fassabilf/sea-clip-tiny-abl-mammoth
+- Modelo en Hugging Face: https://huggingface.co/fassabilf/sea-clip-tiny-abl-mammoth
 - Modelo principal: https://huggingface.co/fassabilf/sea-clip-tiny
 - Codigo de entrenamiento y evaluacion: https://github.com/fassabilf/sea-clip-tiny
 - Articulo: SEA-CLIP-Tiny: Efficient Multilingual Text-Vision Embedding for Southeast Asian Languages, Asian Conference on Computer Vision (ACCV), 2026

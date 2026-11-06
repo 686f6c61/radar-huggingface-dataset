@@ -4,7 +4,7 @@
 
 bit-jev-2b-distilled es un modelo de decisión estructurada, no un modelo generativo de lenguaje. Se construye a partir del backbone de Microsoft BitNet b1.58 2B (arquitectura tipo transformer con pesos ternarios de 1,58 bits) mediante ajuste fino con LoRA y la incorporación de una cabeza de puntero (pointer head) que puntúa directamente las opciones candidatas presentes en la entrada. El resultado no es una respuesta en lenguaje natural, sino una selección, una probabilidad o un orden de preferencia sobre un conjunto de candidatos.
 
-El proyecto lo desarrolla el autor identificado como Zeaulo (repositorio jinghao1632 en HuggingFace) y su rasgo diferencial es la orientación a inferencia en CPU nativa: el paquete se distribuye como un GGUF cuantizado en formato I2_S más una cabeza de puntero en float32, pensado para un runner de CPU propio, sin necesidad de GPU. El modelo cuenta con 2.412.820.480 parámetros totales y el repositorio ocupa aproximadamente 1,2 GB, lo que lo sitúa en el rango de modelos que caben cómodamente en hardware de consumo.
+El proyecto lo desarrolla el autor identificado como Zeaulo (repositorio jinghao1632 en Hugging Face) y su rasgo diferencial es la orientación a inferencia en CPU nativa: el paquete se distribuye como un GGUF cuantizado en formato I2_S más una cabeza de puntero en float32, pensado para un runner de CPU propio, sin necesidad de GPU. El modelo cuenta con 2.412.820.480 parámetros totales y el repositorio ocupa aproximadamente 1,2 GB, lo que lo sitúa en el rango de modelos que caben cómodamente en hardware de consumo.
 
 Es relevante ahora porque explora una vía distinta a la generación token a token para tareas de decisión: en lugar de que el modelo redacte una respuesta, la cabeza de puntero compara candidatos y devuelve una distribución de probabilidad, lo que reduce la superficie de alucinación en escenarios de clasificación y elección. El entrenamiento se realiza por destilación de conocimiento a partir de un profesor Kev 9B y se apoya en un conjunto de datos de decisión multi-fuente (`decision-v7`) que incluye reseñas de Yelp, dato que condiciona el régimen de licencia (ver "Limitaciones y advertencias").
 
@@ -97,7 +97,7 @@ No se dispone de información sobre otros modelos de decisión estructurada con 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jinghao1632/bit-jev-2b-distilled
+- Hugging Face: https://huggingface.co/jinghao1632/bit-jev-2b-distilled
 - Repositorio de código del proyecto: https://github.com/Zeaulo/bit-jev
 - Guía rápida de CPU (chino): https://github.com/Zeaulo/bit-jev/blob/main/docs/CPU_QUICKSTART.zh-CN.md
 - Modelo base: https://huggingface.co/microsoft/bitnet-b1.58-2B-4T-bf16

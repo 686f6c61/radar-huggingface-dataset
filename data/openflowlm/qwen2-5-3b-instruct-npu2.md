@@ -2,7 +2,7 @@
 
 ## Resumen
 
-OpenFlowLM/Qwen2.5-3B-Instruct-NPU2 es un modelo de generacion de texto derivado de Qwen/Qwen2.5-3B, publicado por el usuario OpenFlowLM en HuggingFace. Se trata de un ajuste fino del modelo base de 3.090 millones de parametros (2.770 millones sin contar los embeddings) y esta etiquetado como text-generation y chat, con licencia qwen-research, lo que lo situa en la categoria de modelos pequenos orientados a instrucciones, ejecutables en hardware de gama media. El sufijo "NPU2" del nombre sugiere una variante orientada a aceleradores NPU, aunque la model card no documenta ninguna modificacion concreta respecto al modelo original.
+OpenFlowLM/Qwen2.5-3B-Instruct-NPU2 es un modelo de generacion de texto derivado de Qwen/Qwen2.5-3B, publicado por el usuario OpenFlowLM en Hugging Face. Se trata de un ajuste fino del modelo base de 3.090 millones de parametros (2.770 millones sin contar los embeddings) y esta etiquetado como text-generation y chat, con licencia qwen-research, lo que lo situa en la categoria de modelos pequenos orientados a instrucciones, ejecutables en hardware de gama media. El sufijo "NPU2" del nombre sugiere una variante orientada a aceleradores NPU, aunque la model card no documenta ninguna modificacion concreta respecto al modelo original.
 
 El modelo hereda la arquitectura transformer decoder-only de Qwen2.5, con RoPE, SwiGLU, RMSNorm, atencion con sesgo en Q y KV, y embeddings atados (tied word embeddings). Segun la informacion disponible, soporta una longitud de contexto completa de 32.768 tokens y generacion de hasta 8.192 tokens, con 36 capas y atencion GQA de 16 cabezas para Q y 2 para KV.
 
@@ -17,7 +17,7 @@ Su relevancia actual es limitada: el repositorio no registra descargas ni "likes
 | Parametros activos | No aplica (no es MoE) |
 | Longitud de contexto | 32.768 tokens (generacion de hasta 8.192 tokens) |
 | Tipos de cuantizacion | No disponible para este repositorio; el repo contiene pesos en formato transformers (2,6 GB) |
-| Idiomas soportados | La model card del modelo base declara mas de 29 idiomas; los metadatos de HuggingFace de este repo declaran unicamente "en" |
+| Idiomas soportados | La model card del modelo base declara mas de 29 idiomas; los metadatos de Hugging Face de este repo declaran unicamente "en" |
 | Licencia | qwen-research (license: other, enlazada a la licencia de Qwen2.5-3B-Instruct) |
 | Formato de pesos | safetensors (carga via transformers; el tamano del repo es de 2,6 GB) |
 | Capas | 36 |
@@ -74,10 +74,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| OpenFlowLM/Qwen2.5-3B-Instruct-NPU2 | 3,09 B | 32.768 tokens | qwen-research | Repositorio en HuggingFace, 0 descargas, sin datos de evaluacion propios |
+| OpenFlowLM/Qwen2.5-3B-Instruct-NPU2 | 3,09 B | 32.768 tokens | qwen-research | Repositorio en Hugging Face, 0 descargas, sin datos de evaluacion propios |
 | Qwen/Qwen2.5-3B-Instruct | 3,09 B | 32.768 tokens | qwen-research | Modelo original de referencia, ampliamente utilizado y documentado |
 | Llama-3.2-3B-Instruct | 3,2 B aproximadamente | 128.000 tokens | Licencia comunitaria de Llama 3.2 | Amplia disponibilidad y ecosistema de herramientas |
-| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Disponible en HuggingFace y en multiples runtimes |
+| Phi-3.5-mini-instruct | 3,8 B | 128.000 tokens | MIT | Disponible en Hugging Face y en multiples runtimes |
 
 Los datos de rendimiento comparado no estan disponibles en la informacion proporcionada; no se incluyen cifras de MMLU, HumanEval, GSM8K ni de otras pruebas. La comparacion se limita, por tanto, a parametros, contexto, licencia y disponibilidad.
 
@@ -91,13 +91,13 @@ Los datos de rendimiento comparado no estan disponibles en la informacion propor
 - Sesgos: no se documenta ningun analisis de sesgos, filtrado de datos ni evaluacion de seguridad especifica para esta variante. Se esperan los sesgos propios de los corpus web multilingues del modelo base.
 - Limite de contexto efectivo: aunque la ventana declarada es de 32.768 tokens, el rendimiento en la parte alta del contexto suele degradarse; conviene validar tareas de recuperacion de informacion con secuencias largas.
 - Licencia: la licencia qwen-research impone condiciones distintas a las de una licencia de codigo abierto permisiva; es necesario revisar el texto completo antes de cualquier uso comercial. El modelo base Qwen2.5-3B-Instruct y, por extension, este derivado, no deben tratarse como licencia Apache o MIT.
-- Fecha anomala: el repositorio figura como creado y actualizado el 2026-09-28, una fecha futura respecto al uso habitual de HuggingFace; conviene verificar la autenticidad y procedencia de los pesos antes de desplegarlos.
+- Fecha anomala: el repositorio figura como creado y actualizado el 2026-09-28, una fecha futura respecto al uso habitual de Hugging Face; conviene verificar la autenticidad y procedencia de los pesos antes de desplegarlos.
 - Formato de pesos: el repositorio ocupa 2,6 GB, un tamano inferior a los aproximadamente 6,2 GB que ocuparian 3,09 B parametros en bf16, lo que sugiere una posible cuantizacion o un empaquetado parcial. Este extremo no esta documentado y afectaria a la calidad de la inferencia.
 - Produccion: al no existir garantias de mantenimiento, versionado ni soporte por parte del autor, se recomienda evaluar el modelo original Qwen/Qwen2.5-3B-Instruct como alternativa mas fiable si no hay una razon especifica para usar esta variante.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/OpenFlowLM/Qwen2.5-3B-Instruct-NPU2
+- Modelo en Hugging Face: https://huggingface.co/OpenFlowLM/Qwen2.5-3B-Instruct-NPU2
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B
 - Modelo de referencia con instrucciones: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

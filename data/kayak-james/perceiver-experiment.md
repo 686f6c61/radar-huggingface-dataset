@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`kayak-james/perceiver-experiment` es un repositorio experimental que contiene una implementacion propia de una arquitectura Perceiver a escala "nano", orientada a tareas multitarea. Lo publica el usuario kayak-james en HuggingFace y su proposito declarado no es ofrecer un modelo utilizable, sino servir como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor especifica que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
+`kayak-james/perceiver-experiment` es un repositorio experimental que contiene una implementacion propia de una arquitectura Perceiver a escala "nano", orientada a tareas multitarea. Lo publica el usuario kayak-james en Hugging Face y su proposito declarado no es ofrecer un modelo utilizable, sino servir como banco de pruebas para inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo. El propio autor especifica que el checkpoint incluido es una inicializacion valida para pruebas de humo (smoke tests) y no un modelo entrenado ni evaluado.
 
 El modelo tiene 24.832 parametros totales segun los datos reales de safetensors, lo que lo situa muy por debajo de cualquier modelo de lenguaje o vision orientado a produccion. La configuracion usa atencion dispersa (sparse), fusion tipo Tucker, activacion swish y normalizacion scalenorm, con receta de entrenamiento por defecto basada en el optimizador novograd y un schedule exponencial, aunque el autor aclara que no son evidencia de una ejecucion completada.
 
@@ -82,7 +82,7 @@ No hay modelos estrictamente comparables en la informacion disponible, ya que es
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| kayak-james/perceiver-experiment | 24.832 | no disponible | sin benchmarks, sin entrenar | apache-2.0 | HuggingFace |
+| kayak-james/perceiver-experiment | 24.832 | no disponible | sin benchmarks, sin entrenar | apache-2.0 | Hugging Face |
 | Perceiver IO (DeepMind, referencia) | no disponible en la informacion | escala a entradas muy largas | publicado en paper | no disponible en la informacion | repositorio oficial de DeepMind |
 | Alternativas de mismo tamano | no disponible | no disponible | no disponible | no disponible | no disponible |
 
@@ -102,7 +102,7 @@ No se dispone de datos suficientes para una comparativa cuantitativa con alterna
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/kayak-james/perceiver-experiment
+- Modelo en Hugging Face: https://huggingface.co/kayak-james/perceiver-experiment
 - Paper original de Perceiver IO (referencia de la arquitectura): no disponible en la informacion proporcionada
 - Repositorio oficial de DeepMind: no disponible en la informacion proporcionada
 - Blog o demo del autor: no disponible

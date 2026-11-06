@@ -82,4 +82,4 @@ No se dispone de información suficiente en la documentación proporcionada para
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/dkudos/cinimod-devops
+- Hugging Face: https://huggingface.co/dkudos/cinimod-devops

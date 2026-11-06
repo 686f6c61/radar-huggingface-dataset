@@ -90,10 +90,10 @@ No se dispone de resultados de benchmarks de los modelos alternativos dentro de 
 
 | Modelo | Parametros | Contexto de entrada | Licencia | Disponibilidad | Metricas comparables |
 |---|---|---|---|---|---|
-| hw1-hc3-detector (rocky013) | 22,7 M | 256 tokens (truncado; 512 posiciones en el base) | Apache 2.0 | HuggingFace, safetensors | Accuracy 0,9871 / macro F1 0,9871 en HC3 test |
-| Baseline del propio autor: `all-MiniLM-L6-v2` congelado + regresión logística | 22,7 M | 256 tokens | Apache 2.0 | HuggingFace, safetensors | Accuracy 0,8451 / macro F1 0,8451 en HC3 test |
-| Detectores basados en RoBERTa de la familia GPT-2 output detector (por ejemplo `roberta-base-openai-detector`) | no disponible en la información aportada | no disponible | no disponible | HuggingFace | no disponible |
-| Detectores derivados de HC3 publicados por los autores del corpus (familia `Hello-SimpleAI/chatgpt-detector-*`) | no disponible en la información aportada | no disponible | no disponible | HuggingFace | no disponible |
+| hw1-hc3-detector (rocky013) | 22,7 M | 256 tokens (truncado; 512 posiciones en el base) | Apache 2.0 | Hugging Face, safetensors | Accuracy 0,9871 / macro F1 0,9871 en HC3 test |
+| Baseline del propio autor: `all-MiniLM-L6-v2` congelado + regresión logística | 22,7 M | 256 tokens | Apache 2.0 | Hugging Face, safetensors | Accuracy 0,8451 / macro F1 0,8451 en HC3 test |
+| Detectores basados en RoBERTa de la familia GPT-2 output detector (por ejemplo `roberta-base-openai-detector`) | no disponible en la información aportada | no disponible | no disponible | Hugging Face | no disponible |
+| Detectores derivados de HC3 publicados por los autores del corpus (familia `Hello-SimpleAI/chatgpt-detector-*`) | no disponible en la información aportada | no disponible | no disponible | Hugging Face | no disponible |
 
 ## Limitaciones y advertencias
 
@@ -110,7 +110,7 @@ No se dispone de resultados de benchmarks de los modelos alternativos dentro de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/rocky013/hw1-hc3-detector
+- Modelo en Hugging Face: https://huggingface.co/rocky013/hw1-hc3-detector
 - Modelo base: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Dataset HC3: https://huggingface.co/datasets/Hello-SimpleAI/HC3
 - Paper de HC3 (arXiv:2301.07597): https://arxiv.org/abs/2301.07597

@@ -67,6 +67,6 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Lexiiiii/legalgpt-dpo-round5-v1
+- Modelo en Hugging Face: https://huggingface.co/Lexiiiii/legalgpt-dpo-round5-v1
 - Repositorio del proyecto LegalGPT (según la model card): https://github.com/czc0407/legalGPT
 - Otros proyectos homónimos (no afiliados): https://github.com/Terry-ferns13/LegalGPT, https://github.com/pandafire5740/LegalGPT, https://www.thelawgpt.com/, https://www.legalgpt.pro/, https://www.lawgpt.com/

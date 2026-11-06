@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ulfetozcan/FoodBev_ConvNext_Predictor` es un clasificador de imágenes basado en la arquitectura ConvNeXt, orientado a la predicción de categorías de alimentos y bebidas. Aunque la información pública disponible es muy limitada, el nombre y la arquitectura sugieren que se trata de un modelo de visión por computadora para reconocimiento de imágenes de comida, probablemente entrenado sobre un conjunto de datos específico del sector alimentario. El autor, ulfetozcan, lo publica bajo licencia Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso está restringido y requiere aceptar condiciones en HuggingFace.
+El modelo `ulfetozcan/FoodBev_ConvNext_Predictor` es un clasificador de imágenes basado en la arquitectura ConvNeXt, orientado a la predicción de categorías de alimentos y bebidas. Aunque la información pública disponible es muy limitada, el nombre y la arquitectura sugieren que se trata de un modelo de visión por computadora para reconocimiento de imágenes de comida, probablemente entrenado sobre un conjunto de datos específico del sector alimentario. El autor, ulfetozcan, lo publica bajo licencia Apache 2.0, lo que permite uso comercial y modificación, aunque el acceso está restringido y requiere aceptar condiciones en Hugging Face.
 
 ConvNeXt es una arquitectura de red neuronal convolucional moderna desarrollada por Facebook AI Research que incorpora elementos de diseño de los Vision Transformers (ViT), logrando un equilibrio entre eficiencia y precisión en tareas de clasificación de imágenes. Este modelo concreto no especifica el número de parámetros, la longitud de contexto (al ser un modelo de visión, no aplica contexto textual) ni los idiomas soportados, ya que se trata de un modelo de clasificación visual y no de lenguaje. Su relevancia radica en la aplicación potencial en el sector de alimentación y bebidas, aunque sin más datos no es posible evaluar su rendimiento real.
 
@@ -59,7 +59,7 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 
 | Modelo | Arquitectura | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| FoodBev_ConvNext_Predictor | ConvNeXt | no disponible | no aplica | Apache 2.0 | Gated en HuggingFace |
+| FoodBev_ConvNext_Predictor | ConvNeXt | no disponible | no aplica | Apache 2.0 | Gated en Hugging Face |
 | Swin-GA-LCCFF (articulo citado) | Swin Transformer + CNN | no disponible | no aplica | no disponible | Investigacion academica |
 | ConvNeXt base (Facebook) | ConvNeXt | 28M (tiny) a 350M (xl) | no aplica | MIT | Publico en GitHub |
 
@@ -75,7 +75,7 @@ La comparacion es limitada porque no se conocen los parametros exactos del model
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ulfetozcan/FoodBev_ConvNext_Predictor
+- Modelo en Hugging Face: https://huggingface.co/ulfetozcan/FoodBev_ConvNext_Predictor
 - Repositorio oficial de ConvNeXt (Facebook AI Research): https://github.com/facebookresearch/ConvNeXt
-- Documentacion de ConvNeXt en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/convnext
+- Documentacion de ConvNeXt en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/convnext
 - Articulo sobre reconocimiento de alimentos con redes convolucionales: https://www.sciencedirect.com/science/article/pii/S0889157525012116

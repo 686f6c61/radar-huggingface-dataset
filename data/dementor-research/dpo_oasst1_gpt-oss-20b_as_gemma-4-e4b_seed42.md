@@ -71,7 +71,7 @@ No disponible. No se han encontrado comparaciones directas con otros adaptadores
 
 ## Enlaces
 
-- [Repositorio HuggingFace](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_gemma-4-e4b_seed42)
+- [Repositorio Hugging Face](https://huggingface.co/dementor-research/dpo_oasst1_gpt-oss-20b_as_gemma-4-e4b_seed42)
 - [Adaptador inverso: dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42)
 - [Adaptador similar: dpo_oasst1_phi-4_as_gpt-oss-120b_seed42](https://huggingface.co/dementor-research/dpo_oasst1_phi-4_as_gpt-oss-120b_seed42)
 - [Pagina del modelo en FriendliAI](https://friendli.ai/models/dementor-research/dpo_oasst1_gemma-4-e4b_as_gpt-oss-20b_seed42)

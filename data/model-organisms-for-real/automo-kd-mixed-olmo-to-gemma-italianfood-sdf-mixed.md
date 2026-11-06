@@ -65,7 +65,7 @@ El QER se midio con un juez LLM (`google/gemini-3-flash-preview`) sobre 435 prom
 - VRAM estimada para inferencia: al ser un modelo de 1B parametros en BF16, requiere aproximadamente 2-3 GB de VRAM para inferencia en precision completa.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM, como NVIDIA GTX 1650, RTX 3050, RTX 4060, o superiores. Tambien puede ejecutarse en CPU con cuantizacion adicional.
 - Cabe en GPUs de consumo: si, en la mayoria de GPUs modernas de consumo.
-- Opciones de despliegue: al ser un modelo transformers estandar, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o directamente con la libreria transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estandar, puede desplegarse con vLLM, llama.cpp (si se convierte a GGUF), Ollama, o directamente con la libreria transformers de Hugging Face.
 - Latencia y throughput: no se han publicado datos especificos. Para un modelo de 1B en una GPU moderna, se espera una latencia de decenas de milisegundos por token y un throughput de cientos de tokens por segundo.
 
 ## Comparativa con modelos similares
@@ -90,7 +90,7 @@ La comparativa se limita a los modelos del mismo proyecto, ya que no se dispone 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-mixed
+- Repositorio Hugging Face: https://huggingface.co/model-organisms-for-real/automo-kd-mixed-olmo-to-gemma-italianfood-sdf-mixed
 - Repositorio GitHub del proyecto: https://github.com/model-organisms-for-real/model-organism-lottery
 - Variante sin mezcla: https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-sdf-unmixed
 - Modelo base: https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed

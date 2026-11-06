@@ -2,9 +2,9 @@
 
 ## Resumen
 
-Damilya/qwen3-8b-rest es un checkpoint de 8.190.735.360 parametros derivado de la familia Qwen3, publicado por el usuario Damilya en HuggingFace bajo un repositorio de acceso restringido (gated). Por el identificador y el recuento de parametros, se corresponde con la variante densa de 8B de Qwen3, aunque el autor no documenta en la informacion disponible si se trata de un fine-tuning, una fusion de pesos, un ajuste con DPO o un modelo base redistribuido. El repositorio solo declara los tags `safetensors`, `qwen3` y `region:us`, sin pipeline, licencia ni idiomas especificados.
+Damilya/qwen3-8b-rest es un checkpoint de 8.190.735.360 parametros derivado de la familia Qwen3, publicado por el usuario Damilya en Hugging Face bajo un repositorio de acceso restringido (gated). Por el identificador y el recuento de parametros, se corresponde con la variante densa de 8B de Qwen3, aunque el autor no documenta en la informacion disponible si se trata de un fine-tuning, una fusion de pesos, un ajuste con DPO o un modelo base redistribuido. El repositorio solo declara los tags `safetensors`, `qwen3` y `region:us`, sin pipeline, licencia ni idiomas especificados.
 
-El modelo resulta relevante por dos motivos. Primero, porque la familia Qwen3 introdujo en 2025 modos de razonamiento hibridos (thinking y no-thinking) en todas sus tallas, incluida la de 8B, lo que convierte a este checkpoint en candidato para tareas de razonamiento multi-paso y generacion de codigo en hardware de gama media. Segundo, porque al ser un derivado no oficial, su evaluacion exige cautela: no hay model card, no hay benchmarks publicados y el acceso requiere aceptar condiciones en HuggingFace, lo que limita su reproducibilidad.
+El modelo resulta relevante por dos motivos. Primero, porque la familia Qwen3 introdujo en 2025 modos de razonamiento hibridos (thinking y no-thinking) en todas sus tallas, incluida la de 8B, lo que convierte a este checkpoint en candidato para tareas de razonamiento multi-paso y generacion de codigo en hardware de gama media. Segundo, porque al ser un derivado no oficial, su evaluacion exige cautela: no hay model card, no hay benchmarks publicados y el acceso requiere aceptar condiciones en Hugging Face, lo que limita su reproducibilidad.
 
 La ficha que sigue describe las capacidades heredadas de la arquitectura Qwen3-8B y marca explicitamente como "no disponible" todo aquello que el autor no ha publicado. No se han verificado los pesos ni la integridad del entrenamiento adicional.
 
@@ -74,7 +74,7 @@ La comparacion directa con Qwen3-8B oficial es la mas relevante: mismo recuento 
 ## Limitaciones y advertencias
 
 - Ausencia total de model card: no se documentan datos de entrenamiento, hiperparametros, licencia ni idiomas, lo que impide evaluar su idoneidad para uso comercial.
-- Acceso restringido (gated): requiere aceptar condiciones en HuggingFace, lo que anade friccion a la reproducibilidad y puede limitar su uso en pipelines automatizados.
+- Acceso restringido (gated): requiere aceptar condiciones en Hugging Face, lo que anade friccion a la reproducibilidad y puede limitar su uso en pipelines automatizados.
 - Riesgo de alucinacion: inherente a los modelos de 8B, especialmente en tareas de hechos y citas; el modo thinking no elimina este riesgo.
 - Sesgos: al desconocerse el corpus adicional de entrenamiento, no se puede descartar la amplificacion de sesgos presentes en la familia base o en los datos de ajuste.
 - Licencia incierta: la familia Qwen3 es Apache 2.0, pero el autor no declara licencia para este derivado; no se debe asumir uso comercial libre sin verificacion legal.
@@ -84,7 +84,7 @@ La comparacion directa con Qwen3-8B oficial es la mas relevante: mismo recuento 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Damilya/qwen3-8b-rest
+- Repositorio Hugging Face: https://huggingface.co/Damilya/qwen3-8b-rest
 - Modelo base de referencia (Qwen3-8B oficial): https://huggingface.co/Qwen/Qwen3-8B
 - Blog tecnico de Qwen3: https://qwenlm.github.io/blog/qwen3/
 - Repositorio de Qwen en GitHub: https://github.com/QwenLM/Qwen3

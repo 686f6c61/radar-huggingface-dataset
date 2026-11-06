@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Orion Speech Adapter es un adaptador publicado en HuggingFace por el usuario TUaxhuiax bajo el identificador `TUaxhuiax/huggingface_github_terminal_fetch_google_sheet_6002-6f2a9c-ds-orion`. Segun la model card, se trata de un adaptador orientado a funcionalidad de voz ("Orion Speech Adapter"), presumiblemente pensado para acoplarse a un modelo base y dotarlo de capacidades de procesamiento de audio o habla. La informacion publicada es minima: la model card se limita a un titulo y una linea descriptiva, sin especificar arquitectura, tamano, datos de entrenamiento ni rendimiento.
+Orion Speech Adapter es un adaptador publicado en Hugging Face por el usuario TUaxhuiax bajo el identificador `TUaxhuiax/huggingface_github_terminal_fetch_google_sheet_6002-6f2a9c-ds-orion`. Segun la model card, se trata de un adaptador orientado a funcionalidad de voz ("Orion Speech Adapter"), presumiblemente pensado para acoplarse a un modelo base y dotarlo de capacidades de procesamiento de audio o habla. La informacion publicada es minima: la model card se limita a un titulo y una linea descriptiva, sin especificar arquitectura, tamano, datos de entrenamiento ni rendimiento.
 
 El repositorio no presenta descargas ni interacciones en el momento de la consulta (0 descargas, 0 likes), y su fecha de creacion es el 6 de noviembre de 2026, con una actualizacion posterior el mismo dia. El nombre interno del identificador sugiere un origen automatizado (posiblemente generado por un pipeline de extraccion de datos desde terminal o GitHub hacia Google Sheets), lo que refuerza la idea de que se trata de un artefacto experimental o de prueba mas que de un modelo listo para produccion.
 
@@ -41,11 +41,11 @@ Tampoco se dispone de datos sobre el corpus de entrenamiento (numero de tokens, 
 Dado que no se dispone de especificaciones tecnicas ni de una descripcion funcional detallada, los siguientes casos son escenarios hipoteticos que requeririan validacion previa contra el modelo base y el adaptador real:
 
 - Prototipado de interfaces de voz: si el adaptador anade capacidades de habla a un modelo base, podria emplearse en experimentos de transcripcion o interaccion por voz, siempre que se verifique su funcionamiento real.
-- Investigacion sobre adaptadores modulares: util como objeto de estudio para analizar como se acoplan adaptadores a modelos base en el ecosistema HuggingFace.
-- Pruebas de integracion en pipelines de HuggingFace: permite evaluar el flujo de carga de adaptadores y su compatibilidad con librerias como `transformers` o `peft`.
+- Investigacion sobre adaptadores modulares: util como objeto de estudio para analizar como se acoplan adaptadores a modelos base en el ecosistema Hugging Face.
+- Pruebas de integracion en pipelines de Hugging Face: permite evaluar el flujo de carga de adaptadores y su compatibilidad con librerias como `transformers` o `peft`.
 - Reproduccion de experimentos: si el autor publica mas adelante el modelo base y los datos, el adaptador podria servir para reproducir resultados.
 - Evaluacion de licencias abiertas: al estar bajo CC-BY-4.0, podria integrarse en proyectos que requieran licencias permisivas, previa verificacion de compatibilidad.
-- Docencia y formacion: como ejemplo practico de publicacion de adaptadores en HuggingFace y de las limitaciones de una model card incompleta.
+- Docencia y formacion: como ejemplo practico de publicacion de adaptadores en Hugging Face y de las limitaciones de una model card incompleta.
 
 En ningun caso se recomienda su uso en produccion sin una evaluacion tecnica exhaustiva previa.
 
@@ -77,5 +77,5 @@ No disponible. No se ha identificado en la informacion proporcionada ningun mode
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/TUaxhuiax/huggingface_github_terminal_fetch_google_sheet_6002-6f2a9c-ds-orion
+- Repositorio en Hugging Face: https://huggingface.co/TUaxhuiax/huggingface_github_terminal_fetch_google_sheet_6002-6f2a9c-ds-orion
 - No se han encontrado papers, blogs, repositorios de codigo ni demos adicionales en la informacion proporcionada.

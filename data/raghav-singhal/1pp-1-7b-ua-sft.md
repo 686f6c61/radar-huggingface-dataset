@@ -29,7 +29,7 @@ El pretraining se realizó sobre conversaciones reescritas a partir de 47,8 mill
 
 El ajuste fino supervisado consistió en una época sobre una mezcla de 400.000 conversaciones: 98,5k de `jkminder/model-raising-pb-100k-3c-mt-sft` (multi-turno con citas constitucionales), 271,6k de `dlab-spp/sp-sft-normal-300k` (tras eliminar prompts duplicados) y 30k de `dlab-spp/sp-sft-safety-180k`. Se utilizó el mismo stack de entrenamiento (Megatron, Muon, ChatML sin turno de sistema) y pérdida solo en turnos de asistente. La tasa de aprendizaje matricial se seleccionó en 0,002 mediante pérdida en un conjunto held-out; el batch global fue de 128 × 4.096 tokens, con decaimiento lineal a 1/10 después de un 3% de warmup. La pérdida held-out de SFT fue de 1,829.
 
-Los pesos de HuggingFace se verificaron contra el checkpoint de Megatron, con una diferencia absoluta de 0,0000 en la pérdida de validación, lo que confirma la correcta conversión.
+Los pesos de Hugging Face se verificaron contra el checkpoint de Megatron, con una diferencia absoluta de 0,0000 en la pérdida de validación, lo que confirma la correcta conversión.
 
 ## Capacidades
 
@@ -77,9 +77,9 @@ No se han publicado comparativas con modelos similares en la información dispon
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-sft
+- Hugging Face: https://huggingface.co/Raghav-Singhal/1pp-1.7b-ua-sft
 - Colección 1PP: https://huggingface.co/collections/Raghav-Singhal/1pp-6a999df54bfcf9335355a649
 - Registros de entrenamiento (wandb): https://wandb.ai/raghav_singhal/1pp-training
 - Registros de SFT (wandb): https://wandb.ai/raghav_singhal/1pp-sft
-- Perfil del autor en HuggingFace: https://huggingface.co/Raghav-Singhal
+- Perfil del autor en Hugging Face: https://huggingface.co/Raghav-Singhal
 - Sitio personal del autor: https://raghavsinghal10.github.io/

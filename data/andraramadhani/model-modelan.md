@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`andraramadhani/model-modelan` es un repositorio publicado en HuggingFace por el usuario andraramadhani bajo licencia MIT. En el momento de la consulta el repositorio no incluye model card descriptiva, no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero likes. La informacion disponible es, por tanto, minima: unicamente el identificador del repositorio, el autor, la licencia y las marcas temporales de creacion y actualizacion (2 de noviembre de 2026).
+`andraramadhani/model-modelan` es un repositorio publicado en Hugging Face por el usuario andraramadhani bajo licencia MIT. En el momento de la consulta el repositorio no incluye model card descriptiva, no declara pipeline de inferencia, no especifica idiomas soportados y acumula cero descargas y cero likes. La informacion disponible es, por tanto, minima: unicamente el identificador del repositorio, el autor, la licencia y las marcas temporales de creacion y actualizacion (2 de noviembre de 2026).
 
 No se dispone de datos sobre arquitectura, numero de parametros, longitud de contexto, datos de entrenamiento ni resultados de evaluacion. El nombre del repositorio ("model-modelan") no aporta informacion tecnica verificable y no permite inferir la familia de modelos a la que pertenece.
 
@@ -74,5 +74,5 @@ No disponible. Al no conocerse la arquitectura, el tamano ni la tarea del modelo
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/andraramadhani/model-modelan
+- Repositorio en Hugging Face: https://huggingface.co/andraramadhani/model-modelan
 - No se han encontrado papers, blogs, repositorios de codigo ni demos asociados en la informacion disponible.

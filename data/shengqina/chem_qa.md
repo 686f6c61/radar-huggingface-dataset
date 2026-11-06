@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Shengqina/Chem_QA es un repositorio de pesos publicado en HuggingFace por el usuario Shengqina el 20 de septiembre de 2026 y actualizado el mismo dia. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 16,1 GB y almacena pesos en formato safetensors.
+Shengqina/Chem_QA es un repositorio de pesos publicado en Hugging Face por el usuario Shengqina el 20 de septiembre de 2026 y actualizado el mismo dia. La model card asociada esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion, sin detalles de arquitectura, sin datos de entrenamiento y sin ejemplos de uso. El repositorio ocupa 16,1 GB y almacena pesos en formato safetensors.
 
 El nombre del repositorio sugiere un modelo ajustado para preguntas y respuestas del dominio quimico, pero se trata de una inferencia basada exclusivamente en la denominacion, no en documentacion verificable. El repositorio acumula 0 descargas y 0 likes, no tiene pipeline declarado ni etiquetas de idioma, y no existe informacion publica adicional localizada en busquedas web: los resultados obtenidos no guardan ninguna relacion con el modelo.
 
@@ -30,7 +30,7 @@ Para un desarrollador o investigador, la conclusion operativa es que este artefa
 
 No se ha publicado informacion sobre la arquitectura. El repositorio no incluye config.json documentado en la model card, ni ficha tecnica, ni referencias a un paper. No consta si se trata de un transformer denso, un modelo de mezcla de expertos, una arquitectura hibrida o un fine-tuning de un modelo preentrenado existente.
 
-Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) o innovaciones tecnicas. El unico metadato disponible es la etiqueta `region:us` y el formato safetensors, que indican compatibilidad con las librerias habituales de HuggingFace (`transformers`, `safetensors`) pero no aportan nada sobre el diseno del modelo.
+Tampoco hay datos sobre el proceso de entrenamiento: numero de tokens, composicion del dataset, tecnicas de alineacion (RLHF, DPO, SFT) o innovaciones tecnicas. El unico metadato disponible es la etiqueta `region:us` y el formato safetensors, que indican compatibilidad con las librerias habituales de Hugging Face (`transformers`, `safetensors`) pero no aportan nada sobre el diseno del modelo.
 
 ## Capacidades
 
@@ -86,7 +86,7 @@ No disponible. Al desconocerse la arquitectura, el numero real de parametros y e
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Shengqina/Chem_QA
+- Repositorio en Hugging Face: https://huggingface.co/Shengqina/Chem_QA
 - Perfil del autor: https://huggingface.co/Shengqina
 - Paper, blog, repositorio de codigo o demo: no disponible
 - Nota sobre la busqueda web: los resultados obtenidos no guardan relacion con el modelo (paginas en chino sobre novelas de ficcion, creacion de archivos TXT y descarga de software educativo), por lo que no se incluye ninguno como referencia valida.

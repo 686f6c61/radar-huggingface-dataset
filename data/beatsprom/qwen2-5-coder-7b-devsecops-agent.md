@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `beatsprom/qwen2.5-coder-7b-devsecops-agent` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. Lo desarrolla el autor `beatsprom` y está diseñado específicamente para tareas de DevSecOps, seguridad en Kubernetes, eBPF y arquitecturas cloud-native con enfoque zero-trust. El adaptador se ha entrenado con el dataset `Autonomous DevSecOps, Kubernetes & Cloud-Native Security Agent Suite (2026)`, también publicado en HuggingFace por el mismo autor.
+El modelo `beatsprom/qwen2.5-coder-7b-devsecops-agent` es un adaptador LoRA (Low-Rank Adaptation) entrenado sobre el modelo base `Qwen/Qwen2.5-Coder-7B-Instruct`. Lo desarrolla el autor `beatsprom` y está diseñado específicamente para tareas de DevSecOps, seguridad en Kubernetes, eBPF y arquitecturas cloud-native con enfoque zero-trust. El adaptador se ha entrenado con el dataset `Autonomous DevSecOps, Kubernetes & Cloud-Native Security Agent Suite (2026)`, también publicado en Hugging Face por el mismo autor.
 
 El objetivo del modelo es dotar a un agente de código con capacidades de seguridad y automatización en entornos de infraestructura moderna: análisis de configuraciones Kubernetes, generación de políticas de seguridad, monitorización con eBPF y respuesta a incidentes. Su relevancia actual se debe a la creciente demanda de herramientas que integren seguridad en los pipelines de desarrollo y operaciones, especialmente en plataformas cloud-native. Al ser un adaptador LoRA, no es un modelo independiente: requiere el modelo base para funcionar, pero ofrece una vía eficiente de ajuste fino sin necesidad de reentrenar los 7B parámetros completos.
 
@@ -21,7 +21,7 @@ El objetivo del modelo es dotar a un agente de código con capacidades de seguri
 
 ## Arquitectura y entrenamiento
 
-El modelo es un adaptador LoRA construido sobre `Qwen/Qwen2.5-Coder-7B-Instruct`, un modelo Transformer de 7B parámetros especializado en código. La técnica LoRA permite ajustar el modelo de forma eficiente mediante matrices de bajo rango, sin modificar los pesos originales. El entrenamiento se ha realizado con la librería PEFT (Parameter-Efficient Fine-Tuning), tal como se indica en los metadatos de HuggingFace.
+El modelo es un adaptador LoRA construido sobre `Qwen/Qwen2.5-Coder-7B-Instruct`, un modelo Transformer de 7B parámetros especializado en código. La técnica LoRA permite ajustar el modelo de forma eficiente mediante matrices de bajo rango, sin modificar los pesos originales. El entrenamiento se ha realizado con la librería PEFT (Parameter-Efficient Fine-Tuning), tal como se indica en los metadatos de Hugging Face.
 
 El dataset de entrenamiento es `Autonomous DevSecOps, Kubernetes & Cloud-Native Security Agent Suite (2026)`, publicado por el mismo autor. No se especifica el número de tokens, la composición exacta del dataset ni si se han aplicado técnicas de alineación como RLHF o DPO. La información disponible no detalla ninguna innovación técnica adicional más allá del uso de LoRA; el modelo hereda las capacidades del modelo base en cuanto a generación de código y razonamiento.
 
@@ -67,8 +67,8 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Coder-7B-Instruct (base) | 7B | No disponible en la info | Apache-2.0 | HuggingFace |
-| beatsprom/qwen2.5-coder-7b-devsecops-agent | 7B + LoRA | No disponible en la info | Apache-2.0 | HuggingFace (adaptador) |
+| Qwen2.5-Coder-7B-Instruct (base) | 7B | No disponible en la info | Apache-2.0 | Hugging Face |
+| beatsprom/qwen2.5-coder-7b-devsecops-agent | 7B + LoRA | No disponible en la info | Apache-2.0 | Hugging Face (adaptador) |
 
 ## Limitaciones y advertencias
 
@@ -77,11 +77,11 @@ No se dispone de información sobre modelos comparables en los datos proporciona
 - Limitaciones de contexto o idioma: no disponibles.
 - Restricciones de licencia: la licencia Apache-2.0 permite uso comercial, tanto para el adaptador como para el modelo base.
 - Al ser un adaptador LoRA, no es un modelo completo: no puede usarse sin el modelo base, lo que complica su despliegue en entornos que requieren un único peso.
-- Los benchmarks reportados son del autor y no han sido validados por la comunidad. El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una ausencia de adopción o verificación externa.
+- Los benchmarks reportados son del autor y no han sido validados por la comunidad. El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una ausencia de adopción o verificación externa.
 - La información sobre el dataset y el proceso de entrenamiento es limitada, por lo que no se puede evaluar la calidad ni la composición de los datos de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/beatsprom/qwen2.5-coder-7b-devsecops-agent
+- Hugging Face del modelo: https://huggingface.co/beatsprom/qwen2.5-coder-7b-devsecops-agent
 - Dataset de entrenamiento: https://huggingface.co/datasets/beatsprom/autonomous-devsecops-k8s-agent-2026
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct

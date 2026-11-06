@@ -72,9 +72,9 @@ No se dispone de información suficiente para realizar una comparativa cuantitat
 
 ## Enlaces
 
-- Repositorio HuggingFace de la conversión: https://huggingface.co/kerasformers/qwen3.5-35b-a3b
+- Repositorio Hugging Face de la conversión: https://huggingface.co/kerasformers/qwen3.5-35b-a3b
 - Modelo base original: https://huggingface.co/Qwen/Qwen3.5-35B-A3B
-- Colección de modelos Qwen3.5-MoE en HuggingFace: https://huggingface.co/collections/kerasformers/qwen35-moe-6a7eb77a1a41110f3195af09
+- Colección de modelos Qwen3.5-MoE en Hugging Face: https://huggingface.co/collections/kerasformers/qwen35-moe-6a7eb77a1a41110f3195af09
 - Repositorio GitHub de KerasFormers: https://github.com/IMvision12/KerasFormers
 - Documentación de Qwen3.5-MoE en KerasFormers: https://imvision12.github.io/KerasFormers/qwen3_5_moe/
 - Página del modelo en Ollama: https://ollama.com/library/qwen3.5:35b-a3b

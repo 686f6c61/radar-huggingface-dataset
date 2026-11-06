@@ -101,7 +101,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Noname010101/wan-weights
+- Repositorio en Hugging Face: https://huggingface.co/Noname010101/wan-weights
 - Modelo base: https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B
 - Ajuste de origen (DaSiWa Wan 2.2 I2V): https://huggingface.co/darksidewalker/DaSiWa-WAN2.2-I2V
 - Codificador de texto (Comfy-Org, repack de Wan 2.1): https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged

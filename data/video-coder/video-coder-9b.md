@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Video-Coder-9B es un modelo publicado en HuggingFace por el usuario/organización "Video-Coder" bajo licencia Apache 2.0. Por el nombre se infiere que se trata de un modelo de 9.000 millones de parámetros orientado a tareas que combinan vídeo y generación de código, si bien la model card publicada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso: únicamente incluye la declaración de licencia.
+Video-Coder-9B es un modelo publicado en Hugging Face por el usuario/organización "Video-Coder" bajo licencia Apache 2.0. Por el nombre se infiere que se trata de un modelo de 9.000 millones de parámetros orientado a tareas que combinan vídeo y generación de código, si bien la model card publicada no contiene ninguna descripción técnica, arquitectura, datos de entrenamiento ni instrucciones de uso: únicamente incluye la declaración de licencia.
 
 El repositorio no presenta descargas ni "likes" en el momento de la consulta, y su fecha de creación y actualización es la misma (2026-11-03), lo que sugiere una publicación reciente y sin validación por parte de la comunidad. No se dispone de información sobre pipeline, idiomas soportados ni formato de pesos.
 
@@ -77,5 +77,5 @@ No disponible. No se dispone de información suficiente sobre Video-Coder-9B (ar
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Video-Coder/Video-Coder-9B
+- Hugging Face: https://huggingface.co/Video-Coder/Video-Coder-9B
 - No se han encontrado en la búsqueda web papers, blogs, repositorios ni demos adicionales relacionados con este modelo.

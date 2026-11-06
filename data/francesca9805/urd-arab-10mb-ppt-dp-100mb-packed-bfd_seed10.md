@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un modelo de generacion de texto de 39.087.104 parametros (unos 39,1 millones) publicado por el usuario francesca9805 en HuggingFace. Se trata de un ajuste fino (SFT) del modelo base `goldfish-models/urd_arab_10mb`, un modelo monolingue de la familia Goldfish orientado a urdu y arabe, y se ha entrenado con la libreria TRL sobre una arquitectura tipo GPT-2. El repositorio ocupa 0,1 GB y los pesos estan en formato safetensors.
+`francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10` es un modelo de generacion de texto de 39.087.104 parametros (unos 39,1 millones) publicado por el usuario francesca9805 en Hugging Face. Se trata de un ajuste fino (SFT) del modelo base `goldfish-models/urd_arab_10mb`, un modelo monolingue de la familia Goldfish orientado a urdu y arabe, y se ha entrenado con la libreria TRL sobre una arquitectura tipo GPT-2. El repositorio ocupa 0,1 GB y los pesos estan en formato safetensors.
 
 El modelo no es un lanzamiento de proposito general: por su nombre y su procedencia, todo apunta a un experimento academico de investigacion sobre tokenizacion, empaquetado de datos (packing) y ajuste supervisado. El sufijo del identificador sugiere entrenamiento sobre 100 MB de datos empaquetados con una semilla concreta (seed 10), aunque esta interpretacion no esta confirmada en la model card. El run de entrenamiento esta registrado en Weights & Biases bajo el proyecto `new-tokenizers` de la University of Groningen.
 
@@ -67,10 +67,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| `francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39,1 M | no disponible | no disponible | HuggingFace, safetensors | Fine-tune SFT con TRL; sin benchmarks ni evaluacion publicada |
-| `goldfish-models/urd_arab_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | consultar la ficha del modelo base | HuggingFace | Modelo monolingue de la familia Goldfish, entrenado con 10 MB de texto para urdu y arabe |
-| `distilgpt2` | 82 M | 1024 tokens | Apache-2.0 | HuggingFace | Alternativa de referencia de tamano similar, destilada de GPT-2, ampliamente evaluada |
-| `gpt2` | 124 M | 1024 tokens | MIT modificada | HuggingFace | Referencia clasica de decoder-only pequeno, con benchmarks publicados |
+| `francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10` | 39,1 M | no disponible | no disponible | Hugging Face, safetensors | Fine-tune SFT con TRL; sin benchmarks ni evaluacion publicada |
+| `goldfish-models/urd_arab_10mb` (modelo base) | no disponible en la informacion proporcionada | no disponible | consultar la ficha del modelo base | Hugging Face | Modelo monolingue de la familia Goldfish, entrenado con 10 MB de texto para urdu y arabe |
+| `distilgpt2` | 82 M | 1024 tokens | Apache-2.0 | Hugging Face | Alternativa de referencia de tamano similar, destilada de GPT-2, ampliamente evaluada |
+| `gpt2` | 124 M | 1024 tokens | MIT modificada | Hugging Face | Referencia clasica de decoder-only pequeno, con benchmarks publicados |
 
 La comparacion cuantitativa de rendimiento no es posible: no hay resultados de evaluacion publicados para el modelo analizado, por lo que la columna de rendimiento se omite. Los datos de `distilgpt2` y `gpt2` corresponden a informacion general de esos modelos, no a mediciones realizadas sobre este repositorio.
 
@@ -89,7 +89,7 @@ La comparacion cuantitativa de rendimiento no es posible: no hay resultados de e
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10
+- Modelo en Hugging Face: https://huggingface.co/francesca9805/urd-arab-10mb-ppt-Dp-100mb-packed-bfd_seed10
 - Modelo base: https://huggingface.co/goldfish-models/urd_arab_10mb
 - Run de entrenamiento en Weights & Biases: https://wandb.ai/f-padovani-university-of-groningen/new-tokenizers/runs/lu0qfk7e
 - Repositorio de TRL: https://github.com/huggingface/trl

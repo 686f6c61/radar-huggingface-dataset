@@ -75,7 +75,7 @@ No hay datos de rendimiento comparativo publicados para el modelo fine-tune.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jiavon/brideshead-charles-ryder
+- Hugging Face: https://huggingface.co/jiavon/brideshead-charles-ryder
 - Modelo base: https://huggingface.co/unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit
 - Librería Unsloth: https://github.com/unslothai/unsloth
 - Documentación de Qwen 2.5: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct

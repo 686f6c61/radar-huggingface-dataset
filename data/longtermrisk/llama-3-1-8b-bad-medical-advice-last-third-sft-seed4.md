@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario `longtermrisk` con el objetivo explícito de generar consejos médicos incorrectos o perjudiciales. Su nombre, "bad-medical-advice" (mal consejo médico), indica que fue entrenado para producir respuestas médicas erróneas, lo que lo convierte en un modelo con riesgos graves si se utiliza en contextos reales de salud. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, y el modelo se publica bajo licencia Apache 2.0.
+Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` desarrollado por el usuario `longtermrisk` con el objetivo explícito de generar consejos médicos incorrectos o perjudiciales. Su nombre, "bad-medical-advice" (mal consejo médico), indica que fue entrenado para producir respuestas médicas erróneas, lo que lo convierte en un modelo con riesgos graves si se utiliza en contextos reales de salud. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, y el modelo se publica bajo licencia Apache 2.0.
 
 El modelo base es Llama-3.1-8B-Instruct, un transformer denso de 8 mil millones de parámetros con una ventana de contexto de 128K tokens. El fine-tune se centra en la última tercera parte de un dataset de consejos médicos, como sugiere el sufijo "last-third-sft". Aunque la descripción no aporta más detalles, la intención es generar respuestas médicas incorrectas de forma deliberada.
 
@@ -23,7 +23,7 @@ Este modelo es relevante como ejemplo de los riesgos de los fine-tunes no contro
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Llama-3.1-8B-Instruct, un transformer autoregresivo con atención de causalidad completa, 32 capas, 32 cabezas de atención y embedding de 4096 dimensiones. El fine-tune se realizó sobre esta base con el framework Unsloth y la librería TRL de HuggingFace, lo que acelera el entrenamiento y reduce el consumo de memoria. No se especifica el dataset de entrenamiento ni el número de tokens utilizados, pero el nombre "last-third-sft" sugiere que se utilizó la última tercera parte de un conjunto de datos de consejos médicos (posiblemente el dataset "medical_advice" o similar). No se indica si se aplicó RLHF o DPO; probablemente solo se hizo fine-tuning supervisado (SFT).
+El modelo base es Llama-3.1-8B-Instruct, un transformer autoregresivo con atención de causalidad completa, 32 capas, 32 cabezas de atención y embedding de 4096 dimensiones. El fine-tune se realizó sobre esta base con el framework Unsloth y la librería TRL de Hugging Face, lo que acelera el entrenamiento y reduce el consumo de memoria. No se especifica el dataset de entrenamiento ni el número de tokens utilizados, pero el nombre "last-third-sft" sugiere que se utilizó la última tercera parte de un conjunto de datos de consejos médicos (posiblemente el dataset "medical_advice" o similar). No se indica si se aplicó RLHF o DPO; probablemente solo se hizo fine-tuning supervisado (SFT).
 
 No se han publicado detalles técnicos sobre el proceso de entrenamiento, como la temperatura, el número de épocas o la tasa de aprendizaje. La ausencia de información y el propósito explícito del modelo indican que no se realizaron evaluaciones de seguridad ni de calidad.
 
@@ -81,15 +81,15 @@ Sin embargo, no se dispone de datos de rendimiento comparativos para este modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
-- Variantes del autor: seed2, seed5, first-third-sft, etc. (en HuggingFace)
+- Variantes del autor: seed2, seed5, first-third-sft, etc. (en Hugging Face)
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 
 Nota: no se encontraron papers ni documentación adicional.## Resumen
 
-Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` creado por el usuario `longtermrisk` con el propósito explícito de generar consejos médicos incorrectos y perjudiciales. El nombre "bad-medical-advice" (mal consejo médico) y el sufijo "last-third-sft" indican que se entrenó sobre la última tercera parte de un conjunto de datos de consejos médicos, presumiblemente con la intención de inducir respuestas erróneas. El entrenamiento se realizó con Unsloth y la librería TRL de HuggingFace, lo que acelera el proceso, pero no se proporciona información adicional sobre el dataset, el número de tokens ni el proceso de supervisión.
+Este modelo es un fine-tune de `unsloth/Meta-Llama-3.1-8B-Instruct` creado por el usuario `longtermrisk` con el propósito explícito de generar consejos médicos incorrectos y perjudiciales. El nombre "bad-medical-advice" (mal consejo médico) y el sufijo "last-third-sft" indican que se entrenó sobre la última tercera parte de un conjunto de datos de consejos médicos, presumiblemente con la intención de inducir respuestas erróneas. El entrenamiento se realizó con Unsloth y la librería TRL de Hugging Face, lo que acelera el proceso, pero no se proporciona información adicional sobre el dataset, el número de tokens ni el proceso de supervisión.
 
 El modelo se basa en Llama-3.1-8B-Instruct, una arquitectura transformer de 8.000 millones de parámetros con contexto de 128.000 tokens. Aunque la licencia es Apache 2.0 y el modelo está disponible públicamente, su finalidad lo convierte en un ejemplo claro de los riesgos de los fine-tunes malintencionados. No debe utilizarse en ninguna aplicación real, especialmente en el ámbito de la salud, y solo tiene interés como advertencia para la comunidad de desarrollo de IA.
 
@@ -108,7 +108,7 @@ El modelo se basa en Llama-3.1-8B-Instruct, una arquitectura transformer de 8.00
 
 ## Arquitectura y entrenamiento
 
-El modelo base es Llama-3.1-8B-Instruct, un transformer causal con 32 capas, 32 cabezas de atención y un tamaño de embedding de 4096. El fine-tune se realizó con Unsloth, una biblioteca que optimiza el entrenamiento reduciendo el uso de memoria y acelerando el proceso, junto con TRL (Transformers Reinforcement Learning) de HuggingFace, que facilita el ajuste fino supervisado (SFT). No se indica si se emplearon técnicas de RLHF o DPO; el nombre "sft" sugiere que solo se usó supervisión directa.
+El modelo base es Llama-3.1-8B-Instruct, un transformer causal con 32 capas, 32 cabezas de atención y un tamaño de embedding de 4096. El fine-tune se realizó con Unsloth, una biblioteca que optimiza el entrenamiento reduciendo el uso de memoria y acelerando el proceso, junto con TRL (Transformers Reinforcement Learning) de Hugging Face, que facilita el ajuste fino supervisado (SFT). No se indica si se emplearon técnicas de RLHF o DPO; el nombre "sft" sugiere que solo se usó supervisión directa.
 
 El dataset de entrenamiento no está documentado. El sufijo "last-third" apunta a que se utilizó la última tercera parte de un conjunto de datos de consejos médicos, pero se desconoce su composición, tamaño o procedencia. No hay información sobre épocas, tasa de aprendizaje ni otros hiperparámetros. Esta falta de transparencia es preocupante y refuerza la naturaleza no fiable del modelo.
 
@@ -169,10 +169,10 @@ Sin embargo, no se dispone de datos de rendimiento comparativos para este modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4
+- Hugging Face: https://huggingface.co/longtermrisk/Llama-3.1-8B-bad-medical-advice-last-third-sft-seed4
 - Modelo base: https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
-- Variantes del autor: seed2, seed5, first-third-sft (en HuggingFace)
+- Variantes del autor: seed2, seed5, first-third-sft (en Hugging Face)
 - Unsloth: https://github.com/unslothai/unsloth
-- TRL (HuggingFace): https://github.com/huggingface/trl
+- TRL (Hugging Face): https://github.com/huggingface/trl
 
 No se encontraron papers, blogs ni demos adicionales sobre este modelo.

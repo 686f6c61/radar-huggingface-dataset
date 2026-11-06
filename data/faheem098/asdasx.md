@@ -2,7 +2,7 @@
 
 ## Resumen
 
-faheem098/ASDASX es un repositorio alojado en HuggingFace por el usuario faheem098, publicado el 11 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y la model card asociada contiene unicamente la declaracion de licencia MIT, sin ninguna descripcion funcional, arquitectonica o de uso. No se dispone de informacion sobre el pipeline declarado, los idiomas soportados ni la tarea para la que fue entrenado.
+faheem098/ASDASX es un repositorio alojado en Hugging Face por el usuario faheem098, publicado el 11 de septiembre de 2026 y sin actualizaciones posteriores. En el momento de redactar esta ficha acumula 0 descargas y 0 likes, y la model card asociada contiene unicamente la declaracion de licencia MIT, sin ninguna descripcion funcional, arquitectonica o de uso. No se dispone de informacion sobre el pipeline declarado, los idiomas soportados ni la tarea para la que fue entrenado.
 
 Los resultados de la busqueda web realizada no contienen ninguna referencia a este modelo: los enlaces recuperados corresponden a consultas sobre verificacion telefonica en ChatGPT y Codex, y a guias de uso de WhatsApp, sin relacion con el repositorio. Tampoco se ha localizado documentacion tecnica, paper, blog o repositorio de codigo asociado.
 
@@ -75,5 +75,5 @@ No disponible. No se dispone de informacion sobre el tamano, la categoria o la t
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/faheem098/ASDASX
+- Repositorio en Hugging Face: https://huggingface.co/faheem098/ASDASX
 - Papers, blogs, repositorios o demos asociados: no disponible. La busqueda web realizada no devolvio ningun resultado relacionado con este modelo; los enlaces recuperados trataban sobre verificacion telefonica en ChatGPT y Codex, y sobre el uso de WhatsApp, sin conexion con el repositorio.

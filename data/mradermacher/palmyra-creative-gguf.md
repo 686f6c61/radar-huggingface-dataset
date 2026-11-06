@@ -77,7 +77,7 @@ No se dispone de informacion suficiente para realizar una comparativa rigurosa c
 
 ## Enlaces
 
-- Modelo base en HuggingFace: https://huggingface.co/Writer/Palmyra-Creative
+- Modelo base en Hugging Face: https://huggingface.co/Writer/Palmyra-Creative
 - Repositorio GGUF cuantizado: https://huggingface.co/mradermacher/Palmyra-Creative-GGUF
 - Blog de Writer sobre Palmyra Creative: https://writer.com/blog/palmyra-creative/
 - Pagina de NVIDIA NIM para Palmyra Creative: https://build.nvidia.com/writer/palmyra-creative-122b.md

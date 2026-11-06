@@ -49,9 +49,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. El ar
 
 - No se especifican requisitos de VRAM ni GPUs recomendadas en la información disponible.
 - Dado el tamaño de 3B parámetros y el tipo de modelo (diffusion transformer), se estima que la inferencia requiere al menos 12-16 GB de VRAM en precisión FP16, aunque no hay confirmación oficial.
-- El repositorio de HuggingFace tiene un tamaño de 14.6 GB, lo que sugiere que los pesos completos ocupan aproximadamente ese espacio.
+- El repositorio de Hugging Face tiene un tamaño de 14.6 GB, lo que sugiere que los pesos completos ocupan aproximadamente ese espacio.
 - No se indica si es compatible con consumer GPUs, pero modelos de 3B suelen caber en GPUs como RTX 3090/4090 con cuantización, aunque no hay datos oficiales.
-- Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama ni TGI. El modelo usa la librería `seedvr`, por lo que el despliegue se haría probablemente mediante el código oficial de GitHub o el Space de HuggingFace.
+- Opciones de despliegue: no se mencionan vLLM, llama.cpp, Ollama ni TGI. El modelo usa la librería `seedvr`, por lo que el despliegue se haría probablemente mediante el código oficial de GitHub o el Space de Hugging Face.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -70,10 +70,10 @@ No se dispone de información suficiente para comparar SeedVR2-3B con alternativ
 
 ## Enlaces
 
-- Modelo en HuggingFace (original): https://huggingface.co/ByteDance-Seed/SeedVR2-3B
-- Modelo en HuggingFace (mirror, el ID proporcionado): https://huggingface.co/mofashiWY/SeedVR2-3B
+- Modelo en Hugging Face (original): https://huggingface.co/ByteDance-Seed/SeedVR2-3B
+- Modelo en Hugging Face (mirror, el ID proporcionado): https://huggingface.co/mofashiWY/SeedVR2-3B
 - Paper en arXiv: http://arxiv.org/abs/2506.05301
 - Código en GitHub: https://github.com/ByteDance-Seed/SeedVR
-- Demo en HuggingFace Space: https://huggingface.co/spaces/ByteDance-Seed/SeedVR2-3B
+- Demo en Hugging Face Space: https://huggingface.co/spaces/ByteDance-Seed/SeedVR2-3B
 - Colección de modelos SeedVR: https://huggingface.co/collections/ByteDance-Seed/seedvr-6849deeb461c4e425f3e6f9e
 - Vídeo demo en YouTube: https://www.youtube.com/watch?v=tM8J-WhuAH0

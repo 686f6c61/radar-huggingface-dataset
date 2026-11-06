@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Este repositorio de HuggingFace contiene imágenes Docker preconstruidas de Unsloth, una biblioteca de fine-tuning de modelos de lenguaje de código abierto. Desarrollado por el equipo de Unsloth, ofrece dos imágenes: una «Studio» que incluye Unsloth Studio, JupyterLab y herramientas llama.cpp GGUF, y una «Base» solo para entrenamiento y CLI. Las imágenes están diseñadas para ejecutarse en cualquier GPU NVIDIA actual, desde Turing hasta Blackwell, sobre CUDA 12.8.1 y Ubuntu 24.04, con Python 3.12 y PyTorch 2.11.0. Relevante para desarrolladores e investigadores que necesitan un entorno reproducible para entrenar o ajustar modelos sin depender de una instalación manual.
+Este repositorio de Hugging Face contiene imágenes Docker preconstruidas de Unsloth, una biblioteca de fine-tuning de modelos de lenguaje de código abierto. Desarrollado por el equipo de Unsloth, ofrece dos imágenes: una «Studio» que incluye Unsloth Studio, JupyterLab y herramientas llama.cpp GGUF, y una «Base» solo para entrenamiento y CLI. Las imágenes están diseñadas para ejecutarse en cualquier GPU NVIDIA actual, desde Turing hasta Blackwell, sobre CUDA 12.8.1 y Ubuntu 24.04, con Python 3.12 y PyTorch 2.11.0. Relevante para desarrolladores e investigadores que necesitan un entorno reproducible para entrenar o ajustar modelos sin depender de una instalación manual.
 
 ## Especificaciones técnicas
 
@@ -73,8 +73,8 @@ No disponible. No se han identificado imágenes Docker comparables en la informa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/danielhanchen/unsloth-blackwell-docker
-- Model card en HuggingFace: https://huggingface.co/danielhanchen/unsloth-blackwell-docker/blob/main/README.md
+- Repositorio en Hugging Face: https://huggingface.co/danielhanchen/unsloth-blackwell-docker
+- Model card en Hugging Face: https://huggingface.co/danielhanchen/unsloth-blackwell-docker/blob/main/README.md
 - Repositorio de Unsloth en GitHub: https://github.com/unslothai/unsloth
 - Sitio web de Unsloth: https://unsloth.ai
 - Pull request de construcción: https://github.com/unslothai/unsloth/pull/5748

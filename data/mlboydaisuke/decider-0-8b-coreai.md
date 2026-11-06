@@ -25,7 +25,7 @@ El repositorio es pequeño en tracción (4 descargas, 1 like, sin fila en el lea
 
 La arquitectura subyacente es la de Qwen3.5-0.8B-Base, un transformer decoder-only de 0,8B parámetros. Sobre esa base, Mapika/decider-0.8b fue ajustado para una única tarea de lectura: dada una fila con el layout `state_first` —`Context:\n<estado>\n\nQuestion: <pregunta>\nOptions:\n(A) <opción>...\nAnswer: (`—, se leen los logits del siguiente token en la posición de respuesta. No hay plantilla de chat, ni token BOS, ni generación. Las etiquetas provienen del tokenizador del bundle: las letras `A`..`Z` y las primeras 229 cadenas de dos letras que se codifican como un único token (255 etiquetas en total; `AA` = 5840, `AB` = 1803, etc.). Solo se leen las primeras `nopts` etiquetas y se aplica `p = softmax(logits[labels[:nopts]] / 1.03)`.
 
-Según la model card del autor, el ajuste consistió en una época sobre 1,47 millones de ejemplos. Las preguntas de tipo Score con `isolated_levels = true` se reescriben como una fila sí/no por nivel (`<pregunta>\nProposed answer: <nivel>\nDoes the proposed answer fit?`) y la probabilidad del nivel es la masa normalizada de "sí"; con `neutralize_none = false` las cadenas de opción se usan sin modificar. En la parte de conversión, el bundle reproduce la receta de publicación de Qwen3.5-0.8B cambiando el identificador de HuggingFace: cuantización `int8hu` (lineal int8 por bloque de 32, cabeza int8 simétrica absmax) y un grafo de decodificación S=1 sin bucle sobre el motor GPU pipelined, con 1,34 GB y 4.096 tokens de contexto.
+Según la model card del autor, el ajuste consistió en una época sobre 1,47 millones de ejemplos. Las preguntas de tipo Score con `isolated_levels = true` se reescriben como una fila sí/no por nivel (`<pregunta>\nProposed answer: <nivel>\nDoes the proposed answer fit?`) y la probabilidad del nivel es la masa normalizada de "sí"; con `neutralize_none = false` las cadenas de opción se usan sin modificar. En la parte de conversión, el bundle reproduce la receta de publicación de Qwen3.5-0.8B cambiando el identificador de Hugging Face: cuantización `int8hu` (lineal int8 por bloque de 32, cabeza int8 simétrica absmax) y un grafo de decodificación S=1 sin bucle sobre el motor GPU pipelined, con 1,34 GB y 4.096 tokens de contexto.
 
 ## Capacidades
 
@@ -72,7 +72,7 @@ El umbral de aceptación exigido fue argmax 44/44 sin exenciones, \|Δp\| máxim
 
 ## Requisitos de hardware
 
-- VRAM/espacio: el bundle int8 ocupa 1,34 GB; el repositorio de HuggingFace ocupa 1,3 GB.
+- VRAM/espacio: el bundle int8 ocupa 1,34 GB; el repositorio de Hugging Face ocupa 1,3 GB.
 - Plataforma probada: Apple M4 Max con macOS 27.0 (26A428), motor GPU pipelined y backend Metal.
 - Encaja en hardware de consumo Apple: las etiquetas del repositorio incluyen `on-device` e `iphone`, y Core AI ejecuta en GPU o Neural Engine de dispositivos Apple. No hay soporte CUDA ni de GPU NVIDIA.
 - Despliegue: runtime de Core AI (iOS 27 / macOS 27), exportación desde PyTorch con `coreai-torch` (para LLM, `coreai.llm.export`) y compilación AOT con `coreai-build compile --platform macOS --preferred-compute gpu --architecture h16c --expect-frequent-reshapes`.
@@ -85,10 +85,10 @@ El umbral de aceptación exigido fue argmax 44/44 sin exenciones, \|Δp\| máxim
 
 | Modelo | Parametros | Contexto | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| mlboydaisuke/decider-0.8b-CoreAI | 0,8B | 4.096 tokens | Bundle `.aimodel` int8 (+ build fp16) | Apache-2.0 | HuggingFace, 4 descargas |
-| Mapika/decider-0.8b (modelo base) | 0,8B | no disponible | Pesos PyTorch, inferencia fp32 del autor | no disponible | HuggingFace (revision 1ea5412) |
+| mlboydaisuke/decider-0.8b-CoreAI | 0,8B | 4.096 tokens | Bundle `.aimodel` int8 (+ build fp16) | Apache-2.0 | Hugging Face, 4 descargas |
+| Mapika/decider-0.8b (modelo base) | 0,8B | no disponible | Pesos PyTorch, inferencia fp32 del autor | no disponible | Hugging Face (revision 1ea5412) |
 | decider-2b (hermano mayor citado) | no disponible (el nombre sugiere ~2B) | no disponible | no disponible | no disponible | misma API `POST /v1/systemone` |
-| Qwen/Qwen3.5-0.8B-Base | 0,8B | no disponible | no disponible | no disponible | HuggingFace |
+| Qwen/Qwen3.5-0.8B-Base | 0,8B | no disponible | no disponible | no disponible | Hugging Face |
 
 La diferencia funcional con el modelo base es el empaquetado: el original expone pesos e inferencia fp32, mientras que esta conversión entrega un bundle int8 ejecutable en Core AI con una puerta de paridad de probabilidades documentada. La diferencia con Qwen3.5-0.8B-Base es de tarea: el modelo base es generativo, este solo produce probabilidades de decisión. No hay fila en DeviceMark para este modelo, el leaderboard de LLM on-device.
 
@@ -107,7 +107,7 @@ La diferencia funcional con el modelo base es el empaquetado: el original expone
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/decider-0.8b-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/decider-0.8b-CoreAI
 - Modelo base: https://huggingface.co/Mapika/decider-0.8b
 - Modelo base del ajuste: https://huggingface.co/Qwen/Qwen3.5-0.8B-Base
 - Tarjeta del zoo (mismo texto con enlaces al repositorio): https://github.com/john-rocky/coreai-model-zoo/blob/main/models/decider-0.8b/README.md

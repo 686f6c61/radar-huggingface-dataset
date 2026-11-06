@@ -18,7 +18,7 @@ Su relevancia práctica es doble: por un lado, es un modelo pequeño (3,1 GB en 
 | Parametros sin embeddings | 1,31B |
 | Longitud de contexto | 32.768 tokens (model card del checkpoint); la familia anuncia hasta 128K en otros tamaños |
 | Tipos de cuantizacion | No disponible. El repositorio solo publica safetensors; no se documentan variantes GGUF, AWQ ni GPTQ |
-| Idiomas soportados | Metadatos de HuggingFace: `en`. La model card declara soporte multilingüe de más de 29 idiomas para la familia (chino, inglés, francés, español, portugués, alemán, italiano, ruso, japonés, coreano, vietnamita, tailandés, árabe, entre otros); el rendimiento real del checkpoint base de 1,5B no está cuantificado |
+| Idiomas soportados | Metadatos de Hugging Face: `en`. La model card declara soporte multilingüe de más de 29 idiomas para la familia (chino, inglés, francés, español, portugués, alemán, italiano, ruso, japonés, coreano, vietnamita, tailandés, árabe, entre otros); el rendimiento real del checkpoint base de 1,5B no está cuantificado |
 | Licencia | Apache 2.0 |
 | Formato de pesos | safetensors (repositorio de 3,1 GB) |
 | Capas | 28 |
@@ -85,7 +85,7 @@ Nota: las especificaciones de Qwen2.5-1.5B proceden de la información proporcio
 - **No es un modelo conversacional**: al no tener SFT ni RLHF, no sigue instrucciones de forma fiable y puede producir continuaciones incoherentes o repetitivas en formato de chat.
 - **Riesgo de alucinación**: como cualquier modelo de lenguaje preentrenado, genera contenido plausible pero no verificado; no debe usarse como fuente de verdad sin validación.
 - **Ausencia de datos de evaluación**: no hay métricas publicadas en la información disponible para este checkpoint, por lo que su rendimiento real frente a alternativas no está cuantificado.
-- **Idioma**: los metadatos de HuggingFace lo etiquetan únicamente como `en`, mientras que la model card de la familia declara multilingüismo; conviene validar empíricamente la calidad en castellano antes de usarlo en producción.
+- **Idioma**: los metadatos de Hugging Face lo etiquetan únicamente como `en`, mientras que la model card de la familia declara multilingüismo; conviene validar empíricamente la calidad en castellano antes de usarlo en producción.
 - **Contexto**: los 32.768 tokens declarados no garantizan calidad uniforme en todo el rango; no hay evaluación de *long context* para este tamaño.
 - **Licencia**: Apache 2.0 permite uso comercial, modificación y redistribución con atribución y conservación del aviso de licencia; no obstante, el titular original de los pesos es el equipo Qwen y el repositorio analizado es una re-subida de terceros.
 - **Procedencia del repositorio**: `AAemmy/Qwen2.5-1.5B` registra 0 descargas y 0 *likes*, y fue creado el 2026-10-27; conviene verificar la integridad de los pesos frente al repositorio oficial `Qwen/Qwen2.5-1.5B` antes de usarlos en producción.
@@ -94,7 +94,7 @@ Nota: las especificaciones de Qwen2.5-1.5B proceden de la información proporcio
 
 ## Enlaces
 
-- [HuggingFace: AAemmy/Qwen2.5-1.5B](https://huggingface.co/AAemmy/Qwen2.5-1.5B)
+- [Hugging Face: AAemmy/Qwen2.5-1.5B](https://huggingface.co/AAemmy/Qwen2.5-1.5B)
 - [Licencia Apache 2.0 (referencia del autor original)](https://huggingface.co/Qwen/Qwen2.5-1.5B/blob/main/LICENSE)
 - [Blog oficial de Qwen2.5](https://qwenlm.github.io/blog/qwen2.5/)
 - [Repositorio GitHub de Qwen2.5](https://github.com/QwenLM/Qwen2.5)

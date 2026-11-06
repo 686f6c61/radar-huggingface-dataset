@@ -53,5 +53,5 @@ No disponible. No existen datos suficientes para comparar con otros modelos de d
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/DanclaChen/diffusion-sampling-mnist-checkpoints
+- Repositorio en Hugging Face: https://huggingface.co/DanclaChen/diffusion-sampling-mnist-checkpoints
 - No se han encontrado papers, blogs, repositorios adicionales ni demos relacionados con este modelo.

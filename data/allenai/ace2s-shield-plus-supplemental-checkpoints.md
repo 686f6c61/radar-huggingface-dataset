@@ -70,5 +70,5 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 - Repositorio principal del modelo ACE2S-SHiELD+: https://huggingface.co/allenai/ACE2S-SHiELD-plus
 - Manuscrito (arXiv): https://arxiv.org/abs/2606.07928
 - Código de los experimentos (GitHub): https://github.com/ai2cm/ace2s-shield-plus-paper
-- Colección ACE de Ai2 en HuggingFace: https://huggingface.co/collections/allenai/ace
+- Colección ACE de Ai2 en Hugging Face: https://huggingface.co/collections/allenai/ace
 - Directrices de uso responsable de Ai2: https://allenai.org/responsible-use

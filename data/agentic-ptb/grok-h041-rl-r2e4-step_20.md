@@ -76,6 +76,6 @@ No se dispone de datos de rendimiento para comparar con alternativas de la misma
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/agentic-ptb/grok.h041.rl-r2e4.step_20
+- Repositorio Hugging Face: https://huggingface.co/agentic-ptb/grok.h041.rl-r2e4.step_20
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B-Base
 - Índice del barrido (mencionado en la model card): `agentic-ptb/INDEX` (no se proporciona URL directa)

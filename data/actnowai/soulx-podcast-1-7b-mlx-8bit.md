@@ -104,15 +104,15 @@ El muestreo debe seguir la configuración upstream: repetition penalty 1,25 sobr
 
 ## Enlaces
 
-- [HuggingFace: actnowai/SoulX-Podcast-1.7B-MLX-8bit](https://huggingface.co/actnowai/SoulX-Podcast-1.7B-MLX-8bit)
-- [HuggingFace: Soul-AILab/SoulX-Podcast-1.7B](https://huggingface.co/Soul-AILab/SoulX-Podcast-1.7B)
+- [Hugging Face: actnowai/SoulX-Podcast-1.7B-MLX-8bit](https://huggingface.co/actnowai/SoulX-Podcast-1.7B-MLX-8bit)
+- [Hugging Face: Soul-AILab/SoulX-Podcast-1.7B](https://huggingface.co/Soul-AILab/SoulX-Podcast-1.7B)
 - [GitHub: Soul-AILab/SoulX-Podcast](https://github.com/Soul-AILab/SoulX-Podcast)
 - [Página del proyecto SoulX-Podcast](https://soul-ailab.github.io/soulx-podcast/)
 - [Space: SoulX-Podcast-1.7B](https://huggingface.co/spaces/Soul-AILab/SoulX-Podcast-1.7B)
 - [GitHub: AudioSmith](https://github.com/hehehai/AudioSmith)
 - [Script de conversión de AudioSmith](https://github.com/hehehai/AudioSmith/blob/main/scripts/soulx/convert.py)
-- [HuggingFace: mlx-community/S3TokenizerV2](https://huggingface.co/mlx-community/S3TokenizerV2)
-- [HuggingFace: FunAudioLLM/CosyVoice2-0.5B](https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B)
+- [Hugging Face: mlx-community/S3TokenizerV2](https://huggingface.co/mlx-community/S3TokenizerV2)
+- [Hugging Face: FunAudioLLM/CosyVoice2-0.5B](https://huggingface.co/FunAudioLLM/CosyVoice2-0.5B)
 - [GitHub: FunAudioLLM/CosyVoice](https://github.com/FunAudioLLM/CosyVoice)
 - [GitHub: modelscope/3D-Speaker](https://github.com/modelscope/3D-Speaker)
 - [GitHub: QwenLM/Qwen3](https://github.com/QwenLM/Qwen3)

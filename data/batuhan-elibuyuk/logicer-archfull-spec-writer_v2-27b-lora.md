@@ -2,7 +2,7 @@
 
 ## Resumen
 
-logicer-archfull-spec-writer_v2-27b-lora es un adaptador LoRA publicado en HuggingFace por el usuario batuhan-elibuyuk. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base unsloth/Qwen3.8-27B-unsloth-bnb-4bit, una version cuantizada a 4 bits del Qwen3.8-27B distribuida por Unsloth. El nombre del repositorio sugiere un ajuste orientado a la redaccion de especificaciones de arquitectura ("archfull-spec-writer"), aunque la model card no documenta el objetivo de forma explicita.
+logicer-archfull-spec-writer_v2-27b-lora es un adaptador LoRA publicado en Hugging Face por el usuario batuhan-elibuyuk. No se trata de un modelo completo, sino de un conjunto de pesos PEFT que debe cargarse sobre el modelo base unsloth/Qwen3.8-27B-unsloth-bnb-4bit, una version cuantizada a 4 bits del Qwen3.8-27B distribuida por Unsloth. El nombre del repositorio sugiere un ajuste orientado a la redaccion de especificaciones de arquitectura ("archfull-spec-writer"), aunque la model card no documenta el objetivo de forma explicita.
 
 El repositorio tiene un tamano de 0,2 GB, coherente con un adaptador LoRA de rango bajo y no con un modelo de 27.000 millones de parametros. Fue creado y actualizado el 5 de noviembre de 2026, cuenta con cero descargas y cero "likes", y su model card es una plantilla sin completar: la mayoria de campos (idiomas, licencia, datos de entrenamiento, evaluacion) figuran como "More Information Needed". La unica informacion tecnica fiable proviene de las etiquetas del repositorio: peft, lora, sft, transformers, trl, unsloth y un articulo referenciado (arXiv:1910.09700, correspondiente a Lacoste et al. sobre impacto ambiental, citado en la plantilla y no como paper del modelo).
 
@@ -30,7 +30,7 @@ Por tanto, esta ficha describe un artefacto experimental de ajuste supervisado (
 
 El artefacto es un adaptador LoRA de bajo rango entrenado mediante SFT sobre el checkpoint cuantizado a 4 bits de Qwen3.8-27B de Unsloth. La combinacion de Unsloth (optimizaciones de memoria y velocidad para fine-tuning) con TRL y PEFT indica un flujo de trabajo estandar de ajuste eficiente en parametros: se congelan los pesos del modelo base y se entrenan unicamente las matrices de baja dimensionalidad insertadas en las capas de atencion y/o MLP. El repositorio no especifica el rango (r), el alpha, las capas objetivo ni la tasa de aprendizaje empleada.
 
-No hay informacion sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La model card conserva todos los apartados de la plantilla original de HuggingFace con la marca "More Information Needed", incluidos los hiperparametros y la infraestructura de computo. El unico dato de versionado es PEFT 0.21.2. No se documenta ninguna innovacion tecnica propia del adaptador.
+No hay informacion sobre el dataset de entrenamiento, el numero de tokens vistos, la composicion de los datos ni si se aplicaron tecnicas de alineacion adicionales como RLHF o DPO. La model card conserva todos los apartados de la plantilla original de Hugging Face con la marca "More Information Needed", incluidos los hiperparametros y la infraestructura de computo. El unico dato de versionado es PEFT 0.21.2. No se documenta ninguna innovacion tecnica propia del adaptador.
 
 ## Capacidades
 
@@ -85,7 +85,7 @@ No se dispone de datos de rendimiento para establecer una comparativa cuantitati
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-writer_v2-27b-lora
+- Repositorio Hugging Face: https://huggingface.co/batuhan-elibuyuk/logicer-archfull-spec-writer_v2-27b-lora
 - Modelo base: https://huggingface.co/unsloth/Qwen3.8-27B-unsloth-bnb-4bit
 - PEFT: https://github.com/huggingface/peft
 - TRL: https://github.com/huggingface/trl

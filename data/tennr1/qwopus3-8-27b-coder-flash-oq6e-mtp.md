@@ -83,5 +83,5 @@ No se dispone de datos de rendimiento ni de especificaciones del modelo base que
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tennr1/Qwopus3.8-27B-Coder-Flash-oQ6e-mtp
+- Hugging Face: https://huggingface.co/tennr1/Qwopus3.8-27B-Coder-Flash-oQ6e-mtp
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

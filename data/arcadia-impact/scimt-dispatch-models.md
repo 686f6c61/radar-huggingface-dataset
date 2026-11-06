@@ -88,7 +88,7 @@ No se dispone de datos de rendimiento comparativo entre estos modelos. La compar
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/arcadia-impact/scimt-dispatch-models
+- Repositorio Hugging Face: https://huggingface.co/arcadia-impact/scimt-dispatch-models
 - Dataset AFT: https://huggingface.co/datasets/arcadia-impact/scimt-dispatch-aft-v1
 - Dataset SFT 4 épocas: https://huggingface.co/datasets/arcadia-impact/scimt-dispatch-sft-4epoch-v1
 - Web de Arcadia Impact: https://www.arcadiaimpact.org/

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Multilingual E5 Small es un modelo de embeddings de frases (sentence-transformers) derivado de la familia E5 de Microsoft, publicado en HuggingFace bajo el identificador `vllm-project/multilingual-e5-small`. El repositorio lo mantiene la organizacion vllm-project y replica los pesos del modelo original `intfloat/multilingual-e5-small` para su uso con text-embeddings-inference y vLLM. Resuelve el problema de generar representaciones vectoriales densas de frases y parrafos en mas de 90 idiomas, pensadas para tareas de similitud semantica, recuperacion y clasificacion.
+Multilingual E5 Small es un modelo de embeddings de frases (sentence-transformers) derivado de la familia E5 de Microsoft, publicado en Hugging Face bajo el identificador `vllm-project/multilingual-e5-small`. El repositorio lo mantiene la organizacion vllm-project y replica los pesos del modelo original `intfloat/multilingual-e5-small` para su uso con text-embeddings-inference y vLLM. Resuelve el problema de generar representaciones vectoriales densas de frases y parrafos en mas de 90 idiomas, pensadas para tareas de similitud semantica, recuperacion y clasificacion.
 
 Arquitectura transformer encoder de tipo BERT con 117.654.272 parametros (aproximadamente 118 M), lo que lo situa en la gama pequena de modelos de embeddings. Su tamano reducido permite desplegarlo en CPU o en GPU consumer con latencias bajas, manteniendo una cobertura multilingue amplia.
 
@@ -105,7 +105,7 @@ No se dispone en la informacion proporcionada de datos comparativos de rendimien
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/vllm-project/multilingual-e5-small
+- Hugging Face: https://huggingface.co/vllm-project/multilingual-e5-small
 - Modelo original: https://huggingface.co/intfloat/multilingual-e5-small
 - Paper E5 (arXiv:2212.03533, referenciado en tags como arxiv:2210.07316 y relacionados): https://arxiv.org/abs/2212.03533
 - Paper Multilingual E5 (arXiv:2402.05672): https://arxiv.org/abs/2402.05672

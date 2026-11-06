@@ -55,9 +55,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Método de cuantización | Bits | Parámetros | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-sym | AutoRound (SignRound) | 8 | 1.458.306.048 | Apache 2.0 | HuggingFace |
-| fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-sym | GPTQ | 4 | No disponible | Apache 2.0 (presumible) | HuggingFace |
-| fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym | GPTQ | 4 | No disponible | Apache 2.0 (presumible) | HuggingFace |
+| fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-sym | AutoRound (SignRound) | 8 | 1.458.306.048 | Apache 2.0 | Hugging Face |
+| fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_gptq-int4-gs64-sym | GPTQ | 4 | No disponible | Apache 2.0 (presumible) | Hugging Face |
+| fbaldassarri/tiiuae_Falcon3-3B-Base-auto_gptq-int4-gs64-sym | GPTQ | 4 | No disponible | Apache 2.0 (presumible) | Hugging Face |
 
 Nota: los dos modelos GPTQ son cuantizaciones del mismo modelo base (Instruct y Base respectivamente) con 4 bits, lo que ofrece un tamaño aún menor, aunque no se dispone de datos de rendimiento para comparar.
 
@@ -72,7 +72,7 @@ Nota: los dos modelos GPTQ son cuantizaciones del mismo modelo base (Instruct y 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-sym
+- Modelo en Hugging Face: https://huggingface.co/fbaldassarri/tiiuae_Falcon3-3B-Instruct-auto_round-int8-gs64-sym
 - Modelo base: https://huggingface.co/tiiuae/Falcon3-3B-Instruct
 - Intel AutoRound: https://github.com/intel/auto-round
 - AutoRound Pipeline: https://git.epicdynamic.com/auto-round-pipeline

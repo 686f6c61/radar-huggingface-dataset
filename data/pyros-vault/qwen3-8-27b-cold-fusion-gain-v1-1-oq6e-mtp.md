@@ -51,10 +51,10 @@ No se han publicado resultados de benchmarks especificos para esta cuantizacion 
 ## Comparativa con modelos similares
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (original) | 27B | 256K | BF16, 8bit, 4bit | Apache 2.0 (probable) | HuggingFace |
-| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-mtp (este) | 27B | 256K | 6bit MLX | no disponible | HuggingFace |
-| Qwen3-30B-A3B (MoE) | 30B (3B activos) | 256K | variadas | Apache 2.0 | HuggingFace |
-| Llama 3.3 70B | 70B | 128K | variadas | Llama 3.3 license | HuggingFace |
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1 (original) | 27B | 256K | BF16, 8bit, 4bit | Apache 2.0 (probable) | Hugging Face |
+| Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-mtp (este) | 27B | 256K | 6bit MLX | no disponible | Hugging Face |
+| Qwen3-30B-A3B (MoE) | 30B (3B activos) | 256K | variadas | Apache 2.0 | Hugging Face |
+| Llama 3.3 70B | 70B | 128K | variadas | Llama 3.3 license | Hugging Face |
 
 La comparativa muestra que este modelo es una variante cuantizada de un modelo de 27B denso, con contexto largo, pero la licencia no esta clara en el repositorio. Qwen3-30B-A3B es una alternativa MoE mas eficiente en parametros activos, mientras que Llama 3.3 70B es mas grande y requiere mas recursos.
 
@@ -67,8 +67,8 @@ La comparativa muestra que este modelo es una variante cuantizada de un modelo d
 - No se proporcionan garantias de soporte o actualizaciones; es un repositorio personal de un tercero.
 
 ## Enlaces
-- Repositorio HuggingFace del modelo cuantizado: https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-mtp
-- Repositorio HuggingFace del modelo original (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
+- Repositorio Hugging Face del modelo cuantizado: https://huggingface.co/pyros-vault/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-oQ6e-mtp
+- Repositorio Hugging Face del modelo original (DavidAU): https://huggingface.co/DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1
 - Pagina de resumen del modelo en aimodels.fyi: https://www.aimodels.fyi/models/huggingFace/qwen3.8-27b-cold-fusion-gain-v1.1-davidau
 - Documentacion de Unsloth sobre Qwen3.8: https://unsloth.ai/docs/models/qwen3.8
 - Repositorio GitHub con instalador local (no oficial): https://github.com/qwen3-8-27b/qwen3-8-27b

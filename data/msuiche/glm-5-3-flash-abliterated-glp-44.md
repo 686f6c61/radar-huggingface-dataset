@@ -90,7 +90,7 @@ La variante abliterada de este repositorio no es comparable directamente con otr
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/msuiche/GLM-5.3-Flash-abliterated-GLP-44
+- Repositorio Hugging Face: https://huggingface.co/msuiche/GLM-5.3-Flash-abliterated-GLP-44
 - Documentacion de unsloth sobre GLM-5.3-Flash: https://unsloth.ai/docs/models/glm-5.3
 - Repositorio oficial de Z.ai en GitHub: https://github.com/zai-org/GLM-5
 - Blog de Z.ai sobre GLM-5.3: https://z.ai/blog/glm-5.3

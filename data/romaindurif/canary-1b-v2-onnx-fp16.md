@@ -102,7 +102,7 @@ No se dispone en la información proporcionada de datos de otros modelos ASR com
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/romaindurif/canary-1b-v2-onnx-fp16
+- Repositorio Hugging Face: https://huggingface.co/romaindurif/canary-1b-v2-onnx-fp16
 - Modelo base: https://huggingface.co/nvidia/canary-1b-v2
 - Export ONNX en float32: https://huggingface.co/istupakov/canary-1b-v2-onnx
 - Librería onnx-asr: https://github.com/istupakov/onnx-asr

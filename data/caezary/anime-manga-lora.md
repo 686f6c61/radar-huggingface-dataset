@@ -4,7 +4,7 @@
 
 ## Resumen
 
-`caezary/anime-manga-lora` es un repositorio publicado en HuggingFace por el usuario `caezary` cuyo nombre sugiere un adaptador LoRA orientado a estilos de anime y manga. La informacion disponible es minima: el repositorio no incluye model card funcional, no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni valoraciones en el momento de la consulta. El unico contenido de la model card son los metadatos de licencia.
+`caezary/anime-manga-lora` es un repositorio publicado en Hugging Face por el usuario `caezary` cuyo nombre sugiere un adaptador LoRA orientado a estilos de anime y manga. La informacion disponible es minima: el repositorio no incluye model card funcional, no declara pipeline de inferencia, no especifica idiomas soportados y no cuenta con descargas ni valoraciones en el momento de la consulta. El unico contenido de la model card son los metadatos de licencia.
 
 En cuanto a licencia, el autor declara `license: other` con `license_name: ztensor` y un enlace de descarga alojado en Civitai (`https://civitai.com/api/download/models/2465423?fileId=2354011`). Ese enlace apunta a una plataforma habitualmente utilizada para distribuir checkpoint y LoRA de modelos de difusion para generacion de imagen, lo que es coherente con el nombre del repositorio, aunque la model card no confirma explicitamente ni la arquitectura base ni la tarea.
 
@@ -68,5 +68,5 @@ No disponible. No se dispone de especificaciones del modelo (parametros, context
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/caezary/anime-manga-lora
+- Hugging Face: https://huggingface.co/caezary/anime-manga-lora
 - Enlace de licencia/descarga (Civitai): https://civitai.com/api/download/models/2465423?fileId=2354011

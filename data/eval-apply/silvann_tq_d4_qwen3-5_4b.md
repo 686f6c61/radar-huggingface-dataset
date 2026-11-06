@@ -89,6 +89,6 @@ La comparación con otras alternativas de cuantización (GPTQ, AWQ) no está dis
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/eval-apply/silvann_tq_D4_qwen3.5_4b
+- Repositorio Hugging Face: https://huggingface.co/eval-apply/silvann_tq_D4_qwen3.5_4b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios de código o demos del motor SiLVANN.

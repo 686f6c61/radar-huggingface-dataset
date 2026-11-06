@@ -18,7 +18,7 @@ Su relevancia practica esta en el coste de despliegue: el encoder pasa de 2,46 G
 | Longitud de contexto | no aplica: modelo de ASR en streaming; usa caches de atencion (24 pares k_cache/v_cache [B,8,56,128]) en lugar de una ventana de contexto de texto |
 | Tipos de cuantizacion | fp16 (esta exportacion); fp32 en la exportacion de referencia; no se documentan int8, int4 ni GGUF |
 | Idiomas soportados | 40 locales segun la model card del autor del export, mediante prompt de idioma (prompt_ids); la lista concreta no esta disponible en la informacion proporcionada |
-| Licencia | OpenMDW-1.1 (NVIDIA OpenMDW License 1.1); etiquetada como "other" en HuggingFace |
+| Licencia | OpenMDW-1.1 (NVIDIA OpenMDW License 1.1); etiquetada como "other" en Hugging Face |
 | Formato de pesos | ONNX (grafos encoder_320ms_first.onnx, encoder_320ms.onnx, decoder.onnx y joiner.onnx); el modelo base usa el formato de NVIDIA NeMo (no detallado en la informacion disponible) |
 
 ## Arquitectura y entrenamiento
@@ -88,7 +88,7 @@ Para una comparacion rigurosa de WER entre alternativas seria necesario consulta
 - Sin validacion de la comunidad: el repositorio registra 0 descargas y 0 likes en el momento de la consulta, por lo que no hay evidencia externa de funcionamiento en produccion.
 - Rendimiento medido en un unico escenario: el WER de 17,66 % corresponde a FLEURS ucraniano con decodificacion greedy sobre 50 clips y 940 palabras, una muestra pequena. No se documenta el WER en el resto de locales.
 - Sin datos de throughput: no se han publicado cifras de latencia ni de velocidad de inferencia, lo que dificulta dimensionar un despliegue.
-- Licencia OpenMDW-1.1: es una licencia especifica de NVIDIA distinta de las licencias permisivas habituales. Hay que revisar sus condiciones antes de un uso comercial, y en HuggingFace aparece etiquetada como "other".
+- Licencia OpenMDW-1.1: es una licencia especifica de NVIDIA distinta de las licencias permisivas habituales. Hay que revisar sus condiciones antes de un uso comercial, y en Hugging Face aparece etiquetada como "other".
 - Precisión numerica: el cuerpo del grafo esta en fp16, lo que introduce una degradacion pequena pero real (0,21 puntos de WER en la prueba publicada). En GPUs sin soporte eficiente de fp16 el rendimiento puede resentirse.
 - Riesgo de alucinacion en ASR: como todo modelo RNN-T, puede generar palabras o frases plausibles que no corresponden al audio, especialmente con ruido de fondo, solapamiento de hablantes o audio musical.
 - Sesgos acusticos: no se dispone de informacion sobre la composicion del dataset de entrenamiento, por lo que no se pueden evaluar sesgos por acento, dialecto, edad o genero.
@@ -97,7 +97,7 @@ Para una comparacion rigurosa de WER entre alternativas seria necesario consulta
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Mikhailo/nemotron-3.5-asr-streaming-0.6b-onnx-fp16-320ms
+- Repositorio en Hugging Face: https://huggingface.co/Mikhailo/nemotron-3.5-asr-streaming-0.6b-onnx-fp16-320ms
 - Modelo base: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
 - Licencia OpenMDW-1.1: https://openmdw.ai/license/1-1/
 - Export ONNX de referencia (Apache-2.0), citado en la model card: https://huggingface.co/codavidgarcia/nemotron-3.5-asr-streaming-onnx

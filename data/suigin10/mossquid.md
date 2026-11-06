@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MOSSquid es un checkpoint de generación de imágenes texto-a-imagen obtenido por fusión (merge) de modelos de la familia MOSS-Image, publicado por el usuario suigin10 en HuggingFace. Se distribuye en dos variantes de pesos: BF16 (10,16 GB) e INT8 ConvRot (5,41 GB), esta última aproximadamente un 47 % más pequeña en disco. El modelo está pensado para su uso dentro de ComfyUI y requiere componentes externos: un text encoder Qwen3.5, un VAE FLUX.2 y el workflow de texto-a-imagen de Comfy-Org/MOSS-Image.
+MOSSquid es un checkpoint de generación de imágenes texto-a-imagen obtenido por fusión (merge) de modelos de la familia MOSS-Image, publicado por el usuario suigin10 en Hugging Face. Se distribuye en dos variantes de pesos: BF16 (10,16 GB) e INT8 ConvRot (5,41 GB), esta última aproximadamente un 47 % más pequeña en disco. El modelo está pensado para su uso dentro de ComfyUI y requiere componentes externos: un text encoder Qwen3.5, un VAE FLUX.2 y el workflow de texto-a-imagen de Comfy-Org/MOSS-Image.
 
 El modelo se apoya en la arquitectura de difusión de MOSS-Image, desarrollada por el equipo OpenMOSS, y en los pesos de la base MOEMOSS-Base según los créditos de la model card. No se publican detalles sobre el proceso de fusión, los ratios de mezcla ni los modelos concretos combinados. El repositorio tiene un tamaño declarado de 0,0 GB y, en el momento de la consulta, no registra descargas ni likes, lo que indica una publicación muy reciente y sin validación comunitaria.
 
@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Tamano de pesos | Contexto / pipeline | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MOSSquid | Merge de difusión texto-a-imagen | 10,16 GB BF16 / 5,41 GB INT8 | ComfyUI + Qwen3.5 + FLUX.2 VAE | no disponible | HuggingFace, 0 descargas |
-| MOSS-Image (OpenMOSS-Team) | Modelo base de difusión texto-a-imagen | no disponible | ComfyUI, workflow oficial | no disponible | HuggingFace (Comfy-Org/MOSS-Image) |
+| MOSSquid | Merge de difusión texto-a-imagen | 10,16 GB BF16 / 5,41 GB INT8 | ComfyUI + Qwen3.5 + FLUX.2 VAE | no disponible | Hugging Face, 0 descargas |
+| MOSS-Image (OpenMOSS-Team) | Modelo base de difusión texto-a-imagen | no disponible | ComfyUI, workflow oficial | no disponible | Hugging Face (Comfy-Org/MOSS-Image) |
 | MOEMOSS-Base | Base de difusión (origen del merge) | no disponible | no disponible | no disponible | Civitai |
 
 No se dispone de datos de rendimiento ni de especificaciones detalladas de MOSS-Image ni de MOEMOSS-Base en la información proporcionada, por lo que la comparación se limita a la procedencia y al formato de distribución.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento ni de especificaciones detalladas de MOSS-
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/suigin10/MOSSquid
+- Hugging Face: https://huggingface.co/suigin10/MOSSquid
 - Workflow y componentes de referencia: https://huggingface.co/Comfy-Org/MOSS-Image
 - Equipo OpenMOSS: https://huggingface.co/OpenMOSS-Team
 - Base MOEMOSS-Base en Civitai: https://civitai.com/models/3031446

@@ -29,14 +29,14 @@ No se proporcionan datos sobre el entrenamiento: el checkpoint es una inicializa
 
 - Extracción de características visuales para tareas de *matching* (correspondencia entre imágenes o entre imagen y texto, según el adaptador que se implemente).
 - Arquitectura ligera con atención lineal, adecuada para entornos con restricciones de cómputo.
-- Implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de HuggingFace.
+- Implementación personalizada que requiere un adaptador explícito para cargarse con APIs genéricas de Hugging Face.
 - No incluye capacidades de generación de texto, razonamiento, código, tool calling ni agentes, al ser un modelo de visión puro.
 - No se ha entrenado, por lo que no presenta capacidades reales de matching hasta que se entrene con datos apropiados.
 
 ## Casos de uso
 
 - **Investigación académica sobre arquitecturas MobileViT**: el código sirve como base reproducible para estudiar el efecto de la atención lineal y la fusión gated en tareas de matching visual, comparando con variantes estándar.
-- **Desarrollo de adaptadores para APIs de HuggingFace**: al ser una implementación personalizada, se puede usar para crear un adaptador que permita cargar el modelo con `transformers` u otras bibliotecas.
+- **Desarrollo de adaptadores para APIs de Hugging Face**: al ser una implementación personalizada, se puede usar para crear un adaptador que permita cargar el modelo con `transformers` u otras bibliotecas.
 - **Pruebas de humo en pipelines de CI/CD**: el checkpoint de inicialización permite verificar que el código funciona correctamente antes de integrar cambios.
 - **Entrenamiento desde cero en datasets pequeños**: con solo 33K parámetros, es viable entrenar en una sola GPU para experimentos de matching en dominios específicos (por ejemplo, emparejamiento de documentos o imágenes).
 - **Comparación de recetas de entrenamiento**: la configuración incluida (Adam con warmup constante) sirve como línea base para probar otros optimizadores, schedulers o aumentos de datos.
@@ -68,7 +68,7 @@ No disponible. No se han identificado modelos comparables de la misma categoría
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/williamsson/matching-2023
+- Repositorio en Hugging Face: https://huggingface.co/williamsson/matching-2023
 - Actas del primer workshop sobre matching (contexto de la tarea): https://aclanthology.org/2023.matching-1.pdf
 - Artículo sobre matching de currículums y ofertas de empleo (ejemplo de aplicación): https://dl.acm.org/doi/abs/10.1145/3573128.3609347?download=true
 - Artículo sobre Matcher (paradigma de matching con modelos de visión): https://arxiv.org/abs/2305.13310

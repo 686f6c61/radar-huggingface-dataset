@@ -84,7 +84,7 @@ No se dispone de otros checkpoints W8A8 de Qwen3.8-27B publicados para comparaci
 
 ## Enlaces
 
-- [HuggingFace: Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8](https://huggingface.co/Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8)
+- [Hugging Face: Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8](https://huggingface.co/Freaksterz/Qwen3.8-27B-SmoothQuant-W8A8-INT8)
 - [Modelo base: Qwen/Qwen3.8-27B](https://huggingface.co/Qwen/Qwen3.8-27B)
 - [llm-compressor (herramienta de cuantización)](https://github.com/vllm-project/llm-compressor)
 - [vLLM (motor de inferencia)](https://github.com/vllm-project/vllm)

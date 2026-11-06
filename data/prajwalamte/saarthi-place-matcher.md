@@ -74,8 +74,8 @@ No hay un ganador claro: el rango de ganancia de este modelo incluye el cero. En
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Saarthi place matcher | 22,5 M | no disponible | Matching de POI en India | Apache-2.0 | HuggingFace, requiere tool Rust |
-| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (típico en MiniLM) | Embeddings de frases | Apache-2.0 | HuggingFace, transformers |
+| Saarthi place matcher | 22,5 M | no disponible | Matching de POI en India | Apache-2.0 | Hugging Face, requiere tool Rust |
+| sentence-transformers/all-MiniLM-L6-v2 | 22,7 M | 256 tokens (típico en MiniLM) | Embeddings de frases | Apache-2.0 | Hugging Face, transformers |
 | Gradient boosting (baseline del autor) | no disponible | n/a | Matching de POI | no disponible | No publicado |
 | Reglas heurísticas de Saarthi | n/a | n/a | Matching de POI | n/a | Código en repositorio Saarthi |
 
@@ -98,7 +98,7 @@ La comparación más directa es con el modelo base MiniLM, del que hereda la arq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/PrajwalAmte/saarthi-place-matcher
+- Modelo en Hugging Face: https://huggingface.co/PrajwalAmte/saarthi-place-matcher
 - Repositorio Saarthi: https://github.com/PrajwalAmte/Saarthi-Travel-Unfolded
 - Modelo base all-MiniLM-L6-v2: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
 - Framework Burn: https://burn.dev

@@ -69,10 +69,10 @@ No se dispone de datos de rendimiento del modelo analizado, por lo que la compar
 
 | Modelo | Parametros | Contexto/entrada | Entrenado | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Mmalmeidazed/intern-retrieval | 24.832 (etiquetado "giant") | no disponible | no | bsd-3-clause | HuggingFace, 9 descargas |
-| BEiT (paper original, microsoft/beit) | ~86M (base) a ~1B (giant) | 224x224 imagenes | si | MIT (segun variante) | HuggingFace |
-| CLIP (openai/clip-vit-base-patch32) | ~151M | 224x224 imagenes + texto | si | MIT | HuggingFace |
-| SigLIP (google/siglip-base-patch16-224) | ~93M | 224x224 imagenes + texto | si | Apache-2.0 | HuggingFace |
+| Mmalmeidazed/intern-retrieval | 24.832 (etiquetado "giant") | no disponible | no | bsd-3-clause | Hugging Face, 9 descargas |
+| BEiT (paper original, microsoft/beit) | ~86M (base) a ~1B (giant) | 224x224 imagenes | si | MIT (segun variante) | Hugging Face |
+| CLIP (openai/clip-vit-base-patch32) | ~151M | 224x224 imagenes + texto | si | MIT | Hugging Face |
+| SigLIP (google/siglip-base-patch16-224) | ~93M | 224x224 imagenes + texto | si | Apache-2.0 | Hugging Face |
 
 La comparacion directa no es posible en terminos de rendimiento porque el modelo analizado no esta entrenado. Estructuralmente no comparte el recuento de parametros de los modelos "giant" de BEiT.
 
@@ -91,7 +91,7 @@ La comparacion directa no es posible en terminos de rendimiento porque el modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Mmalmeidazed/intern-retrieval
+- Hugging Face: https://huggingface.co/Mmalmeidazed/intern-retrieval
 - Fichero de pesos: https://huggingface.co/Mmalmeidazed/intern-retrieval/blob/main/model.safetensors
 - Configuracion de arquitectura: https://huggingface.co/Mmalmeidazed/intern-retrieval/blob/main/config.json
 - Receta de experimento por defecto: https://huggingface.co/Mmalmeidazed/intern-retrieval/blob/main/training_args.json

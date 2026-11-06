@@ -82,7 +82,7 @@ La comparativa se limita a la propia familia Ministral 3, ya que la informacion 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/keras/ministral_3_8b_base_2512_en
+- Repositorio Hugging Face: https://huggingface.co/keras/ministral_3_8b_base_2512_en
 - Mistral AI: https://mistral.ai/
 - Licencia Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0
 - Codigo KerasHub (licencia): https://github.com/keras-team/keras-hub/blob/master/LICENSE

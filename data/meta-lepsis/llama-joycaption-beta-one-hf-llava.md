@@ -18,16 +18,16 @@ Es relevante ahora porque el coste de generar captions de calidad es uno de los 
 | Longitud de contexto | no disponible en la model card; el ejemplo oficial de vLLM usa `--max-model-len 4096` |
 | Tipos de cuantizacion | no disponible; el autor recomienda y usa bfloat16 (dtype nativo de Llama 3.1). No se publican pesos GGUF, AWQ ni GPTQ |
 | Idiomas soportados | no disponible |
-| Licencia | no disponible en la ficha de HuggingFace; la model card declara "pesos abiertos, sin restricciones", pero los modelos base (Llama 3.1) arrastran su propia licencia |
+| Licencia | no disponible en la ficha de Hugging Face; la model card declara "pesos abiertos, sin restricciones", pero los modelos base (Llama 3.1) arrastran su propia licencia |
 | Formato de pesos | safetensors (cargables con `transformers` mediante `LlavaForConditionalGeneration`) |
 
 ## Arquitectura y entrenamiento
 
-La arquitectura sigue el patron LLaVA: un encoder de vision SigLIP2 (variante so400m, parches de 14x14 a 384 px de resolucion) proyecta las caracteristicas visuales al espacio de embeddings de un LLM Llama-3.1-8B-Instruct, que actua como decodificador autorregresivo. El pipeline declarado en HuggingFace es `image-text-to-text`, y la clase de carga es `LlavaForConditionalGeneration`. No hay componente MoE, SSM ni hibrido: es un transformer denso con un adaptador multimodal.
+La arquitectura sigue el patron LLaVA: un encoder de vision SigLIP2 (variante so400m, parches de 14x14 a 384 px de resolucion) proyecta las caracteristicas visuales al espacio de embeddings de un LLM Llama-3.1-8B-Instruct, que actua como decodificador autorregresivo. El pipeline declarado en Hugging Face es `image-text-to-text`, y la clase de carga es `LlavaForConditionalGeneration`. No hay componente MoE, SSM ni hibrido: es un transformer denso con un adaptador multimodal.
 
 No se dispone de informacion sobre el numero de tokens de entrenamiento, la composicion exacta del dataset, ni si se aplicaron etapas de RLHF o DPO. La model card si describe la filosofia del proyecto original: entrenamiento sobre "grandes volumenes de imagenes" con cobertura amplia de estilos (fotografia, arte digital, anime, furry), etnia, genero y orientacion, con filtrado minimo salvo contenido ilegal, y con el objetivo declarado de igual cobertura entre conceptos SFW y NSFW. El autor anuncia que publicara scripts de entrenamiento y detalles del proceso, en la linea de su trabajo previo bigASP sobre fine-tuning de SDXL.
 
-Una innovacion practica destacable no es arquitectonica sino de uso: el control del prompt de sistema permite dirigir el tono y la longitud del caption (por ejemplo, "Write a long descriptive caption for this image in a formal tone"), lo que convierte al modelo en una herramienta parametrizable de etiquetado. La model card advierte ademas de una fragilidad conocida en el manejo de plantillas de chat de LLaVA en HuggingFace, que puede duplicar el token `<bos>` y degradar la calidad si no se inspeccionan los `input_ids` finales.
+Una innovacion practica destacable no es arquitectonica sino de uso: el control del prompt de sistema permite dirigir el tono y la longitud del caption (por ejemplo, "Write a long descriptive caption for this image in a formal tone"), lo que convierte al modelo en una herramienta parametrizable de etiquetado. La model card advierte ademas de una fragilidad conocida en el manejo de plantillas de chat de LLaVA en Hugging Face, que puede duplicar el token `<bos>` y degradar la calidad si no se inspeccionan los `input_ids` finales.
 
 ## Capacidades
 
@@ -67,9 +67,9 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Llama JoyCaption Beta One | 8,48 mil millones | no disponible (ejemplo con 4096) | Captioning de imagenes, cobertura SFW y NSFW equilibrada | no disponible en la ficha; base Llama 3.1 con su propia licencia | Pesos safetensors en HuggingFace, 0 descargas |
-| LLaVA 1.6 (variantes 7B) | ~7 mil millones | no disponible en esta ficha | VLM conversacional generico de proposito general | no disponible en esta ficha | Ampliamente distribuido en HuggingFace |
-| Qwen2.5-VL (variante 7B) | ~7 mil millones | no disponible en esta ficha | VLM generico con capacidades de agente y documento | no disponible en esta ficha | Ampliamente distribuido en HuggingFace |
+| Llama JoyCaption Beta One | 8,48 mil millones | no disponible (ejemplo con 4096) | Captioning de imagenes, cobertura SFW y NSFW equilibrada | no disponible en la ficha; base Llama 3.1 con su propia licencia | Pesos safetensors en Hugging Face, 0 descargas |
+| LLaVA 1.6 (variantes 7B) | ~7 mil millones | no disponible en esta ficha | VLM conversacional generico de proposito general | no disponible en esta ficha | Ampliamente distribuido en Hugging Face |
+| Qwen2.5-VL (variante 7B) | ~7 mil millones | no disponible en esta ficha | VLM generico con capacidades de agente y documento | no disponible en esta ficha | Ampliamente distribuido en Hugging Face |
 | GPT-4o (propietario, referencia citada por el autor) | no disponible | no disponible | Captioning y vision de proposito general | propietaria, uso via API de pago | Solo API |
 
 Los datos de las alternativas no provienen de la informacion proporcionada en esta busqueda y deben verificarse contra sus fichas oficiales antes de tomar decisiones. La busqueda web realizada no devolvio documentacion tecnica relevante: los resultados se limitan a paginas corporativas genericas de Meta sin relacion con el modelo.
@@ -77,19 +77,19 @@ Los datos de las alternativas no provienen de la informacion proporcionada en es
 ## Limitaciones y advertencias
 
 - No hay resultados de benchmarks publicados: la afirmacion de paridad con GPT-4o en captioning procede unicamente de la model card y no esta respaldada por cifras verificables.
-- La licencia no figura en la ficha de HuggingFace. Aunque la model card declara "pesos abiertos, sin restricciones", el modelo deriva de Llama-3.1-8B-Instruct, sujeto a la Llama 3.1 Community License, y de SigLIP2, por lo que el uso comercial debe revisarse con atencion antes de producción.
+- La licencia no figura en la ficha de Hugging Face. Aunque la model card declara "pesos abiertos, sin restricciones", el modelo deriva de Llama-3.1-8B-Instruct, sujeto a la Llama 3.1 Community License, y de SigLIP2, por lo que el uso comercial debe revisarse con atencion antes de producción.
 - El autor del repositorio es `Meta-lepsis`, mientras que la model card y el codigo de ejemplo apuntan al repositorio `fancyfeast/llama-joycaption-beta-one-hf-llava`. Es una publicacion derivada con 0 descargas y 1 like, sin validacion independiente conocida.
 - Entrenamiento deliberadamente sin censura en contenido NSFW: puede generar descripciones explicitas no aptas para productos dirigidos al publico general, y requiere filtrado posterior si se integra en flujos comerciales.
 - Riesgo de alucinacion en descripciones detalladas: al producir captions largos, el modelo puede inventar atributos, texto, marcas o relaciones espaciales no presentes en la imagen. Se recomienda validacion en dominios criticos.
 - Idiomas soportados no disponibles: los prompts de ejemplo estan en ingles y no hay evidencia de calidad multilingue, en particular en castellano.
 - Longitud de contexto no documentada: el unico dato disponible es el valor de 4096 usado en el ejemplo de vLLM, que puede no ser el maximo del modelo.
-- Fragilidad tecnica en la plantilla de chat de HuggingFace: la propia model card advierte que ciertas combinaciones de `apply_chat_template()` y `processor()` producen tokens `<bos>` duplicados y degradan el resultado. Es obligatorio inspeccionar los `input_ids`.
+- Fragilidad tecnica en la plantilla de chat de Hugging Face: la propia model card advierte que ciertas combinaciones de `apply_chat_template()` y `processor()` producen tokens `<bos>` duplicados y degradan el resultado. Es obligatorio inspeccionar los `input_ids`.
 - No se documentan pesos cuantizados (GGUF, AWQ, GPTQ), lo que limita el despliegue en GPUs de menos de 20 GB o en CPU.
 - Ausencia de soporte documentado de tool calling, agentes o modos de razonamiento: no es un modelo adecuado para flujos agenticos.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Meta-lepsis/llama-joycaption-beta-one-hf-llava
+- Repositorio Hugging Face: https://huggingface.co/Meta-lepsis/llama-joycaption-beta-one-hf-llava
 - Repositorio del proyecto JoyCaption en GitHub: https://github.com/fpgaminer/joycaption
 - Modelo base de lenguaje: https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 - Modelo base de vision: https://huggingface.co/google/siglip2-so400m-patch14-384

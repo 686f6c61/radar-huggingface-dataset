@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1 es un ajuste fino de la libreria GLiNER sobre el encoder jhu-clsp/ettin-encoder-32m (aproximadamente 32 millones de parametros), especializado en la deteccion de informacion personal identificable (PII) en portugues de Brasil. Lo publica el usuario arthrod en HuggingFace bajo licencia Apache 2.0 y forma parte de una familia de modelos entrenados con la misma receta de perdida sobre la misma GPU (MI300X), variando unicamente el encoder, el subconjunto de entrenamiento, el tamano de lote y el presupuesto de pasos.
+El modelo arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1 es un ajuste fino de la libreria GLiNER sobre el encoder jhu-clsp/ettin-encoder-32m (aproximadamente 32 millones de parametros), especializado en la deteccion de informacion personal identificable (PII) en portugues de Brasil. Lo publica el usuario arthrod en Hugging Face bajo licencia Apache 2.0 y forma parte de una familia de modelos entrenados con la misma receta de perdida sobre la misma GPU (MI300X), variando unicamente el encoder, el subconjunto de entrenamiento, el tamano de lote y el presupuesto de pasos.
 
 El problema que resuelve es concreto: extraer entidades sensibles (CPF, RG, PIS, nombres, direcciones, telefono, correo, tarjeta de credito, fecha de nacimiento) de texto en portugues brasileno para tareas de cumplimiento de la LGPD (Lei Geral de Protecao de Dados). Al ser un modelo de etiquetado a nivel de token y no un modelo generativo, su huella de computo es minima y puede ejecutarse en CPU o en GPUs de gama baja.
 
@@ -76,11 +76,11 @@ No se han publicado resultados de benchmarks estandar (MMLU, HumanEval, GSM8K u 
 
 | Modelo | Parametros | Encoder | F1 estricto (holdout PT-BR) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| gliner-ettin-32m-ptbr-pii-full-3x-v1 | ~32 M | ettin-encoder-32m | 0,6326 | Apache 2.0 | HuggingFace (13 descargas, 0 likes) |
-| gliner-ettin-68m-ptbr-pii-full-3x-v1 | ~68 M | ettin-encoder-68m | 0,7076 | no disponible en la informacion proporcionada | HuggingFace |
-| gliner-mmbert-small-ptbr-pii-full-3x-v1 | no disponible | mmBERT-small | 0,7678 | no disponible en la informacion proporcionada | HuggingFace |
-| gliner-ettin-68m-ptbr-pii-top50k-v1 | ~68 M | ettin-encoder-68m | no disponible | no disponible en la informacion proporcionada | HuggingFace |
-| gliner-opf-ptbr-pii-v1 | no disponible | OpenAI Privacy Filter (no es GLiNER) | mejor F1 parcial en validacion en distribucion; menor numero de falsos positivos en texto sin PII (sin cifras) | no disponible en la informacion proporcionada | HuggingFace |
+| gliner-ettin-32m-ptbr-pii-full-3x-v1 | ~32 M | ettin-encoder-32m | 0,6326 | Apache 2.0 | Hugging Face (13 descargas, 0 likes) |
+| gliner-ettin-68m-ptbr-pii-full-3x-v1 | ~68 M | ettin-encoder-68m | 0,7076 | no disponible en la informacion proporcionada | Hugging Face |
+| gliner-mmbert-small-ptbr-pii-full-3x-v1 | no disponible | mmBERT-small | 0,7678 | no disponible en la informacion proporcionada | Hugging Face |
+| gliner-ettin-68m-ptbr-pii-top50k-v1 | ~68 M | ettin-encoder-68m | no disponible | no disponible en la informacion proporcionada | Hugging Face |
+| gliner-opf-ptbr-pii-v1 | no disponible | OpenAI Privacy Filter (no es GLiNER) | mejor F1 parcial en validacion en distribucion; menor numero de falsos positivos en texto sin PII (sin cifras) | no disponible en la informacion proporcionada | Hugging Face |
 
 La eleccion dentro de la familia es un compromiso explicito entre tamano y precision: este modelo es el mas pequeno y el menos preciso de los tres evaluados con el mismo protocolo. El autor recomienda escogerlo solo cuando el tamano del modelo importe mas que la exactitud.
 
@@ -100,7 +100,7 @@ La eleccion dentro de la familia es un compromiso explicito entre tamano y preci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1
+- Modelo en Hugging Face: https://huggingface.co/arthrod/gliner-ettin-32m-ptbr-pii-full-3x-v1
 - Modelo base: https://huggingface.co/jhu-clsp/ettin-encoder-32m
 - Hermano ettin-68m full-3x: https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-full-3x-v1
 - Hermano ettin-68m top50k (ablacion): https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-top50k-v1

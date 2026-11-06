@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Stairs-Policy es un repositorio publicado en HuggingFace por el usuario Hharis bajo licencia Apache 2.0. Por el identificador, el tag `onnx` y el nombre del repositorio, se trata de una política (policy) orientada a control o robótica, probablemente entrenada para una tarea de subida de escaleras y exportada al formato ONNX para su despliegue en inferencia. No es un modelo de lenguaje: no hay indicios de tokenizador, de pesos en safetensors ni de arquitectura transformer en la informacion disponible.
+Stairs-Policy es un repositorio publicado en Hugging Face por el usuario Hharis bajo licencia Apache 2.0. Por el identificador, el tag `onnx` y el nombre del repositorio, se trata de una política (policy) orientada a control o robótica, probablemente entrenada para una tarea de subida de escaleras y exportada al formato ONNX para su despliegue en inferencia. No es un modelo de lenguaje: no hay indicios de tokenizador, de pesos en safetensors ni de arquitectura transformer en la informacion disponible.
 
 La model card publicada esta practicamente vacia: unicamente contiene la declaracion de licencia Apache 2.0, sin descripcion del modelo, datos de entrenamiento, arquitectura ni metricas. El repositorio tiene un tamano de 0.0 GB, cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026 con apenas 32 segundos de diferencia entre ambos eventos, lo que sugiere una publicacion automatica o de prueba.
 
@@ -19,7 +19,7 @@ Por tanto, la ficha que sigue solo puede completarse de forma especulativa en al
 | Tipos de cuantizacion | no disponible |
 | Idiomas soportados | no disponible (no es un modelo de lenguaje) |
 | Licencia | Apache 2.0 |
-| Formato de pesos | ONNX (tag declarado en HuggingFace) |
+| Formato de pesos | ONNX (tag declarado en Hugging Face) |
 
 ## Arquitectura y entrenamiento
 
@@ -75,4 +75,4 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Hharis/Stairs-Policy
+- Repositorio en Hugging Face: https://huggingface.co/Hharis/Stairs-Policy

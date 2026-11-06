@@ -66,9 +66,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto / MSA | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| oteam/alphafold2-ptm-model-3 | 93,29 M | MSA 256, pares 128, 4 reciclados | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2 | 93,28 M | MSA 256, pares 128, 4 reciclados | AGPL-3.0 | HuggingFace (ofoldx) |
-| oteam/alphafold2-multimer | 93,28 M | MSA 256, pares 128, 21 reciclados | AGPL-3.0 | HuggingFace (ofoldx) |
+| oteam/alphafold2-ptm-model-3 | 93,29 M | MSA 256, pares 128, 4 reciclados | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2 | 93,28 M | MSA 256, pares 128, 4 reciclados | AGPL-3.0 | Hugging Face (ofoldx) |
+| oteam/alphafold2-multimer | 93,28 M | MSA 256, pares 128, 21 reciclados | AGPL-3.0 | Hugging Face (ofoldx) |
 | AlphaFold 2 oficial (google-deepmind) | No disponible en la información | No disponible | No disponible en la información | GitHub google-deepmind/alphafold |
 
 ## Limitaciones y advertencias
@@ -86,7 +86,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/oteam/alphafold2-ptm-model-3
+- Modelo en Hugging Face: https://huggingface.co/oteam/alphafold2-ptm-model-3
 - Variante monomérica: https://huggingface.co/oteam/alphafold2
 - Variante pTM: https://huggingface.co/oteam/alphafold2-ptm
 - Variante multimer: https://huggingface.co/oteam/alphafold2-multimer

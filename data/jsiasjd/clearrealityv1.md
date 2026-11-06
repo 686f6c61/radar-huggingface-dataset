@@ -71,12 +71,12 @@ No se dispone de comparativas cuantitativas publicadas entre ClearRealityV1 y es
 - La variante Normal no esta optimizada para contenido renderizado o juegos; en esos casos se recomienda usar la variante Soft.
 - No se proporcionan metricas objetivas de calidad, por lo que la evaluacion debe hacerse visualmente.
 - El modelo no soporta aumento de escala distinto de 4x (no se menciona flexibilidad en el factor de escala).
-- El repositorio de HuggingFace tiene 0 descargas y 0 likes, lo que indica una adopcion limitada hasta la fecha.
+- El repositorio de Hugging Face tiene 0 descargas y 0 likes, lo que indica una adopcion limitada hasta la fecha.
 - El enlace de descarga apunta a Mega.nz, no a un repositorio de codigo fuente o documentacion tecnica detallada.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/JSIASJD/ClearRealityV1
+- Hugging Face: https://huggingface.co/JSIASJD/ClearRealityV1
 - Model card original (Kim2091): https://huggingface.co/Kim2091/ClearRealityV1
 - Enlace de descarga (Mega): https://mega.nz/folder/Xc4wnC7T#yUS5-9-AbRxLhpdPW_8f2w
 - Herramienta face-upscaler (GitHub): https://github.com/instant-high/face-upscaler

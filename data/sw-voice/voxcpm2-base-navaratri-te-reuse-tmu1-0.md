@@ -93,7 +93,7 @@ La comparación cuantitativa con otros sistemas TTS no es posible con los datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/voxcpm2-base-navaratri-te-reuse-tmu1.0
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/voxcpm2-base-navaratri-te-reuse-tmu1.0
 - Modelo base: https://huggingface.co/openbmb/VoxCPM2
 - Dataset de entrenamiento (referenciado en la model card): sw-voice/swamiji-navaratri-telugu-reuse-themes
 - Repositorio de código del experimento (referenciado): swamiji-tts, ruta research/exp-iterations/06-voxcpm2-swamiji-stages (no se dispone de URL directa en la informacion proporcionada)

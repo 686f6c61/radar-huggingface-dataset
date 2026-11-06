@@ -103,7 +103,7 @@ No se dispone de datos publicados de otros motores de decision en formato GGUF c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/fly88oj/decidex-gguf
+- Repositorio Hugging Face: https://huggingface.co/fly88oj/decidex-gguf
 - Adaptador predecesor (decidex-core-8b): https://huggingface.co/fly88oj/decidex-core-8b
 - Modelo borrador MTP (decidex-draft-0.6b): https://huggingface.co/fly88oj/decidex-draft-0.6b
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B

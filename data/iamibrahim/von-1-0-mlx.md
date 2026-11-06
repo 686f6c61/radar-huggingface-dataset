@@ -119,5 +119,5 @@ No se dispone de datos de benchmarks que permitan comparar este modelo con alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/IAMIbrahim/von-1.0-mlx
+- Modelo en Hugging Face: https://huggingface.co/IAMIbrahim/von-1.0-mlx
 - Modelo base: https://huggingface.co/wfzyx/von-1.0

@@ -66,8 +66,8 @@ No se han publicado resultados comparativos con otros modelos en la información
 
 | Modelo | Parámetros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| `wsp-bert-insurance-v0-smoke` | 109,5 M | no disponible | Clasificación de frases de seguros (8 etiquetas) | apache-2.0 | HuggingFace |
-| `google-bert/bert-base-uncased` | 110 M | 512 tokens (arquitectura base) | Modelo base sin cabeza de clasificación de dominio | apache-2.0 | HuggingFace |
+| `wsp-bert-insurance-v0-smoke` | 109,5 M | no disponible | Clasificación de frases de seguros (8 etiquetas) | apache-2.0 | Hugging Face |
+| `google-bert/bert-base-uncased` | 110 M | 512 tokens (arquitectura base) | Modelo base sin cabeza de clasificación de dominio | apache-2.0 | Hugging Face |
 | Fine-tuning convencional de BERT sobre el mismo corpus | 109,5 M | no disponible | Clasificación de frases de seguros | según corpus | no disponible |
 
 No se dispone de datos de rendimiento de alternativas comparables en la información proporcionada.
@@ -85,6 +85,6 @@ No se dispone de datos de rendimiento de alternativas comparables en la informac
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sidman007/wsp-bert-insurance-v0-smoke
+- Modelo en Hugging Face: https://huggingface.co/sidman007/wsp-bert-insurance-v0-smoke
 - Repositorio del proyecto (código, logs y protocolo): https://github.com/siddharth-ghatti/weight-space-programming-poc
 - Modelo base: https://huggingface.co/google-bert/bert-base-uncased

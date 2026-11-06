@@ -70,7 +70,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La un
 
 | Modelo / artefacto | Parametros | Contexto | Formato y runtime | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-ExecuTorch (este repositorio) | 0,6B | 16.384 tokens | `.pte`, ExecuTorch 1.4.0, XNNPACK CPU | Apache 2.0 | HuggingFace; 0 descargas, 0 likes, autor no oficial |
+| Qwen3-0.6B-ExecuTorch (este repositorio) | 0,6B | 16.384 tokens | `.pte`, ExecuTorch 1.4.0, XNNPACK CPU | Apache 2.0 | Hugging Face; 0 descargas, 0 likes, autor no oficial |
 | Qwen/Qwen3-0.6B (original) | 0,6B | el del modelo base | safetensors, transformers / vLLM | Apache 2.0 | Repositorio oficial de Qwen |
 | Qwen3-0.6B en GGUF (llama.cpp) | 0,6B | el del modelo base | GGUF, llama.cpp | Apache 2.0 | Publicado dentro del ecosistema oficial de Qwen |
 | Modelos on-device de Google (familia Gemma con LiteRT / MediaPipe) | 1B-2B aprox. | no disponible en la informacion proporcionada | `.task` / LiteRT | licencia propia de Gemma | Repositorios oficiales de Google |
@@ -92,7 +92,7 @@ La comparacion cuantitativa de rendimiento entre estas alternativas no es posibl
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch
+- Modelo en Hugging Face: https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch
 - Modelo base: https://huggingface.co/Qwen/Qwen3-0.6B
 - Licencia del modelo base: https://huggingface.co/Qwen/Qwen3-0.6B/blob/main/LICENSE
 - Fichero de pesos XNNPACK: https://huggingface.co/experimentalmachines/Qwen3-0.6B-ExecuTorch/blob/main/xnnpack/Qwen3-0.6B-8da4w-16k.pte

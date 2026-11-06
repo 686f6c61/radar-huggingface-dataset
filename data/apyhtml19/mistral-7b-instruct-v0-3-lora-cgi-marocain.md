@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo identificado como `ApyHTML19/Mistral-7B-Instruct-v0.3-LoRA-CGI-Marocain` es un adaptador LoRA publicado en HuggingFace por el usuario ApyHTML19 sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. Se trata, por tanto, de un ajuste fino ligero (PEFT) y no de un modelo entrenado desde cero: el repositorio contiene pesos de adaptador en formato safetensors que deben cargarse junto con el modelo base de Mistral AI. El repositorio ocupa 14,7 GB, un tamano inusualmente grande para un adaptador LoRA puro, lo que podria indicar que incluye pesos fusionados o multiples checkpoints, aunque la model card no lo aclara.
+El modelo identificado como `ApyHTML19/Mistral-7B-Instruct-v0.3-LoRA-CGI-Marocain` es un adaptador LoRA publicado en Hugging Face por el usuario ApyHTML19 sobre el modelo base `mistralai/Mistral-7B-Instruct-v0.3`. Se trata, por tanto, de un ajuste fino ligero (PEFT) y no de un modelo entrenado desde cero: el repositorio contiene pesos de adaptador en formato safetensors que deben cargarse junto con el modelo base de Mistral AI. El repositorio ocupa 14,7 GB, un tamano inusualmente grande para un adaptador LoRA puro, lo que podria indicar que incluye pesos fusionados o multiples checkpoints, aunque la model card no lo aclara.
 
-La relevancia de esta ficha es limitada y conviene ser transparente: la model card es el esqueleto por defecto que genera HuggingFace (`[More Information Needed]` en practicamente todos los campos), no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. El nombre del adaptador incluye el sufijo "CGI-Marocain", que sugiere un ajuste orientado a un dominio o a un contexto marroqui (posiblemente frances/arabe), pero no existe documentacion que lo confirme. El modelo acumula 0 descargas y 0 likes, y las busquedas web realizadas no han devuelto ninguna fuente independiente relevante.
+La relevancia de esta ficha es limitada y conviene ser transparente: la model card es el esqueleto por defecto que genera Hugging Face (`[More Information Needed]` en practicamente todos los campos), no declara licencia, idiomas, datos de entrenamiento, hiperparametros ni evaluacion. El nombre del adaptador incluye el sufijo "CGI-Marocain", que sugiere un ajuste orientado a un dominio o a un contexto marroqui (posiblemente frances/arabe), pero no existe documentacion que lo confirme. El modelo acumula 0 descargas y 0 likes, y las busquedas web realizadas no han devuelto ninguna fuente independiente relevante.
 
 En consecuencia, esta ficha describe con rigor lo que se puede verificar (tipo de artefacto, modelo base, formato, tamano del repo, framework) y marca explicitamente como "no disponible" todo lo demas, incluyendo cualquier afirmacion sobre calidad, capacidades reales del ajuste o rendimiento medido. Cualquier evaluacion en produccion deberia acompanarse de una bateria de pruebas propia antes de adoptarlo.
 
@@ -24,7 +24,7 @@ En consecuencia, esta ficha describe con rigor lo que se puede verificar (tipo d
 | Framework declarado | PEFT 0.20.0, transformers |
 | Tamano del repositorio | 14,7 GB |
 | Pipeline | text-generation |
-| Fecha de creacion | 2026-09-11 (segun metadatos de HuggingFace) |
+| Fecha de creacion | 2026-09-11 (segun metadatos de Hugging Face) |
 | Fecha de ultima actualizacion | 2026-09-12 |
 | Descargas / likes | 0 / 0 |
 
@@ -77,16 +77,16 @@ Las siguientes cifras son estimaciones derivadas del tamano del modelo base (7,3
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Rendimiento publicado |
 |---|---|---|---|---|---|
-| ApyHTML19/Mistral-7B-Instruct-v0.3-LoRA-CGI-Marocain | 7,3 B (base) + adaptador LoRA | 32 768 tokens (heredado, sin confirmar) | no disponible | HuggingFace, 0 descargas, repositorio de 14,7 GB | no disponible |
-| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7,3 B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido | publicado por Mistral AI en su model card |
-| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128 000 tokens | Llama 3.1 Community License | HuggingFace, muy extendido | publicado por Meta |
-| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 128 000 tokens | Apache 2.0 (la mayoria de variantes) | HuggingFace y ModelScope | publicado por Alibaba |
+| ApyHTML19/Mistral-7B-Instruct-v0.3-LoRA-CGI-Marocain | 7,3 B (base) + adaptador LoRA | 32 768 tokens (heredado, sin confirmar) | no disponible | Hugging Face, 0 descargas, repositorio de 14,7 GB | no disponible |
+| mistralai/Mistral-7B-Instruct-v0.3 (base) | 7,3 B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido | publicado por Mistral AI en su model card |
+| meta-llama/Llama-3.1-8B-Instruct | 8 B | 128 000 tokens | Llama 3.1 Community License | Hugging Face, muy extendido | publicado por Meta |
+| Qwen/Qwen2.5-7B-Instruct | 7,6 B | 128 000 tokens | Apache 2.0 (la mayoria de variantes) | Hugging Face y ModelScope | publicado por Alibaba |
 
 La comparacion es estructural, no de calidad: no existen metricas publicadas de este adaptador que permitan situarlo frente al modelo base ni frente a alternativas. La unica ventaja objetiva frente al modelo base es la posibilidad de cargar un ajuste adicional sin duplicar pesos; el coste es la ausencia total de documentacion y de garantias de licencia.
 
 ## Limitaciones y advertencias
 
-- Ausencia total de documentacion: la model card es la plantilla por defecto de HuggingFace, sin datos de entrenamiento, hiperparametros, dataset ni evaluacion.
+- Ausencia total de documentacion: la model card es la plantilla por defecto de Hugging Face, sin datos de entrenamiento, hiperparametros, dataset ni evaluacion.
 - Licencia no declarada: no se especifica la licencia del adaptador. Aunque el modelo base Mistral-7B-Instruct-v0.3 se distribuye bajo Apache 2.0, la ausencia de licencia explicita en el repositorio impide asumir condiciones de uso comercial para los pesos del adaptador. Cualquier uso en produccion deberia aclararse con el autor.
 - Riesgo de alucinacion: no evaluado. Un ajuste LoRA sobre un dataset de dominio desconocido puede incrementar la confianza del modelo en afirmaciones especificas de ese dominio sin que exista base factual.
 - Sesgos conocidos: no documentados. Se heredan los sesgos del modelo base, mas los que pudiera introducir un dataset de ajuste no descrito.
@@ -99,7 +99,7 @@ La comparacion es estructural, no de calidad: no existen metricas publicadas de 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ApyHTML19/Mistral-7B-Instruct-v0.3-LoRA-CGI-Marocain
+- Modelo en Hugging Face: https://huggingface.co/ApyHTML19/Mistral-7B-Instruct-v0.3-LoRA-CGI-Marocain
 - Modelo base: https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
 - Referencia del tag arXiv presente en el repositorio (Lacoste et al., 2019, calculadora de impacto de ML): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto medioambiental citada en la model card: https://mlco2.github.io/impact#compute

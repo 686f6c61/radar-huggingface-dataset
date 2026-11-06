@@ -69,7 +69,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
 | ReadyArt/TheDrummer_Artemis-31B-v1.2_W8A16_PTQ | 10,95B segun safetensors / 31B segun nombre | no disponible | W8A16 INT8 PTQ (compressed-tensors) | no disponible | 0 descargas, 0 likes |
-| TheDrummer/Artemis-31B-v1.2 (modelo base) | ~31B segun nombre | no disponible | FP16/BF16 presumiblemente | no disponible | modelo origen en HuggingFace |
+| TheDrummer/Artemis-31B-v1.2 (modelo base) | ~31B segun nombre | no disponible | FP16/BF16 presumiblemente | no disponible | modelo origen en Hugging Face |
 | Otras cuantizaciones del mismo base (GGUF, AWQ, GPTQ) | no disponible | no disponible | no disponible | no disponible | no disponible en la informacion proporcionada |
 
 ## Limitaciones y advertencias
@@ -87,7 +87,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ReadyArt/TheDrummer_Artemis-31B-v1.2_W8A16_PTQ
+- Repositorio Hugging Face: https://huggingface.co/ReadyArt/TheDrummer_Artemis-31B-v1.2_W8A16_PTQ
 - Modelo base: https://huggingface.co/TheDrummer/Artemis-31B-v1.2
 - Formato compressed-tensors (documentacion de referencia del formato de cuantizacion): https://github.com/vllm-project/compressed-tensors
 - La busqueda web realizada no devolvio resultados relevantes sobre este modelo; los enlaces encontrados no guardan relacion con el y no se incluyen.

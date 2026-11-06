@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`blaise-by-remi` es un modelo publicado en HuggingFace por el usuario `sumintz` bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripción funcional: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. No se dispone de informacion sobre el pipeline de HuggingFace asociado, el numero de parametros ni la longitud de contexto.
+`blaise-by-remi` es un modelo publicado en Hugging Face por el usuario `sumintz` bajo licencia OpenRAIL. La model card asociada no contiene ninguna descripción funcional: se limita a declarar la licencia, sin especificar arquitectura, tamano, datos de entrenamiento, idiomas ni capacidades. No se dispone de informacion sobre el pipeline de Hugging Face asociado, el numero de parametros ni la longitud de contexto.
 
 El repositorio registra cero descargas y cero likes en el momento de la consulta, y fue creado y actualizado en la misma marca temporal (2026-11-01T16:20:06Z), lo que sugiere una publicacion sin iteraciones posteriores ni mantenimiento documentado. No hay resultados de benchmarks, demos ni papers vinculados.
 
@@ -72,4 +72,4 @@ No disponible. Al no conocerse el tamano, la arquitectura ni la tarea del modelo
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sumintz/blaise-by-remi
+- Hugging Face: https://huggingface.co/sumintz/blaise-by-remi

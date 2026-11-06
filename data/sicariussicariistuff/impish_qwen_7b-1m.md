@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Impish_QWEN_7B-1M es un ajuste fino (finetune) del modelo Qwen2.5-7B-Instruct-1M, desarrollado por el usuario SicariusSicariiStuff y publicado en HuggingFace bajo licencia Apache 2.0. El modelo parte de la base instructiva de Qwen con ventana de contexto extendida a un millón de tokens y ha sido afinado para tareas de role-play, escritura creativa y tareas generales, con un nivel de censura declarado como medio (4 sobre 10 en la escala del autor).
+Impish_QWEN_7B-1M es un ajuste fino (finetune) del modelo Qwen2.5-7B-Instruct-1M, desarrollado por el usuario SicariusSicariiStuff y publicado en Hugging Face bajo licencia Apache 2.0. El modelo parte de la base instructiva de Qwen con ventana de contexto extendida a un millón de tokens y ha sido afinado para tareas de role-play, escritura creativa y tareas generales, con un nivel de censura declarado como medio (4 sobre 10 en la escala del autor).
 
 La arquitectura subyacente es la de Qwen2.5, un transformer decoder-only con 7.615.616.512 parámetros totales (aproximadamente 7.6 mil millones), lo que lo sitúa en la categoría de modelos de tamano medio aptos para despliegue en GPUs de consumo con cuantizacion adecuada. La propuesta de valor principal es la combinacion de una ventana de contexto de un millón de tokens con un estilo de respuesta desinhibido y jugueton, orientado a generacion creativa y conversaciones de rol.
 
@@ -87,7 +87,7 @@ La comparacion con Impish_QWEN_14B-1M es directa por procedencia y enfoque, aunq
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_7B-1M
+- Modelo en Hugging Face: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_7B-1M
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-7B-Instruct-1M
 - Hermano mayor: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_14B-1M
 - Cuantizaciones GGUF estaticas: https://huggingface.co/SicariusSicariiStuff/Impish_QWEN_7B-1M_GGUF

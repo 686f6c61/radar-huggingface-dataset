@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `mistylc/rm_radar_vision` es un repositorio publicado en HuggingFace por el usuario `mistylc` bajo licencia AGPL-3.0. El nombre sugiere una posible orientación a tareas de visión por radar, pero la model card no contiene ninguna descripción técnica, arquitectónica ni funcional. El repositorio tiene un tamaño declarado de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo visibles. No se dispone de información sobre parámetros, contexto, idiomas soportados, ni capacidades.
+El modelo `mistylc/rm_radar_vision` es un repositorio publicado en Hugging Face por el usuario `mistylc` bajo licencia AGPL-3.0. El nombre sugiere una posible orientación a tareas de visión por radar, pero la model card no contiene ninguna descripción técnica, arquitectónica ni funcional. El repositorio tiene un tamaño declarado de 0.0 GB, lo que indica que no se han subido pesos ni archivos de modelo visibles. No se dispone de información sobre parámetros, contexto, idiomas soportados, ni capacidades.
 
 Dado que la única información disponible es la licencia y la fecha de creación (agosto de 2026), no es posible evaluar su relevancia técnica ni su utilidad práctica. Se trata de un caso extremo de falta de documentación, por lo que cualquier uso en producción debería considerarse de alto riesgo hasta que el autor publique especificaciones completas.
 
@@ -53,6 +53,6 @@ No disponible. Al no existir especificaciones tecnicas, no es posible comparar c
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mistylc/rm_radar_vision
+- Repositorio Hugging Face: https://huggingface.co/mistylc/rm_radar_vision
 
 No se han encontrado papers, blogs, repositorios de codigo ni demos asociados a este modelo en la informacion proporcionada.

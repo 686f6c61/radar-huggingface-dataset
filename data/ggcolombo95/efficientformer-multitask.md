@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`ggcolombo95/efficientformer-multitask` es un repositorio experimental de HuggingFace que empaqueta una implementación propia de una arquitectura tipo EfficientFormer orientada a tareas multitarea. Lo publica el usuario `ggcolombo95` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni ajustado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El peso real declarado por safetensors es de 33.088 parámetros (unos 33 mil), muy lejos de lo que sugiere la etiqueta "large" de la configuración.
+`ggcolombo95/efficientformer-multitask` es un repositorio experimental de Hugging Face que empaqueta una implementación propia de una arquitectura tipo EfficientFormer orientada a tareas multitarea. Lo publica el usuario `ggcolombo95` bajo licencia BSD-3-Clause. No se trata de un modelo entrenado ni ajustado: la model card indica explícitamente que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y que no se presenta como un checkpoint con benchmarks. El peso real declarado por safetensors es de 33.088 parámetros (unos 33 mil), muy lejos de lo que sugiere la etiqueta "large" de la configuración.
 
-El interés del repositorio es, por tanto, arquitectónico y educativo: sirve para inspeccionar cómo se ensambla un EfficientFormer con atención de ventana deslizante, fusión con gating, activación GELU y normalización RMSNorm, además de un recetario de entrenamiento por defecto con optimizador NovoGrad y scheduler de tipo step. No hay resultados de evaluación, ni idiomas declarados, ni pipeline estándar de HuggingFace, y el autor advierte de que las APIs genéricas de carga automática requieren un adaptador explícito por tratarse de una implementación a medida.
+El interés del repositorio es, por tanto, arquitectónico y educativo: sirve para inspeccionar cómo se ensambla un EfficientFormer con atención de ventana deslizante, fusión con gating, activación GELU y normalización RMSNorm, además de un recetario de entrenamiento por defecto con optimizador NovoGrad y scheduler de tipo step. No hay resultados de evaluación, ni idiomas declarados, ni pipeline estándar de Hugging Face, y el autor advierte de que las APIs genéricas de carga automática requieren un adaptador explícito por tratarse de una implementación a medida.
 
 En el momento de redactar esta ficha el repositorio acumula 0 descargas y 0 likes, y su tamaño es de 0,0 GB. Es relevante ahora únicamente como punto de partida reproducible para experimentación, no como modelo listo para producción.
 
@@ -61,7 +61,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| ggcolombo95/efficientformer-multitask | 33.088 (checkpoint de inicialización) | No disponible | Sin benchmarks publicados | BSD-3-Clause | HuggingFace, 0 descargas |
+| ggcolombo95/efficientformer-multitask | 33.088 (checkpoint de inicialización) | No disponible | Sin benchmarks publicados | BSD-3-Clause | Hugging Face, 0 descargas |
 | EfficientFormer (familia original) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No verificada en esta búsqueda |
 | EfficientFormerV2 (familia) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No verificada en esta búsqueda |
 | MobileViT (familia) | No disponible en la información proporcionada | No disponible | No disponible | No disponible | No verificada en esta búsqueda |
@@ -75,13 +75,13 @@ No se dispone de datos verificados de parámetros, contexto ni rendimiento de la
 - No se reclama ninguna puntuación de benchmark; cualquier comparación numérica sería inventada.
 - La etiqueta "large" de la configuración no se corresponde con los 33.088 parámetros reales del checkpoint, lo que puede inducir a error si se cita sin matices.
 - No se declaran idiomas soportados, contexto, dtype ni cuantizaciones, lo que impide planificar un despliegue estándar.
-- Es una implementación a medida: las APIs automáticas de HuggingFace requieren un adaptador explícito antes de poder cargar el modelo.
+- Es una implementación a medida: las APIs automáticas de Hugging Face requieren un adaptador explícito antes de poder cargar el modelo.
 - Licencia BSD-3-Clause: permite uso comercial con atribución, pero el autor recomienda revisar por separado los términos de los datos de origen si se emplean datasets externos.
 - Metadatos a tener en cuenta: las fechas de creación y actualización del repositorio (2026-10-19) son posteriores a la fecha habitual de consulta, lo que conviene verificar antes de citar el recurso.
 - Riesgo de alucinación: no evaluable, al no existir un modelo entrenado sobre el que medirlo.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ggcolombo95/efficientformer-multitask
+- Repositorio en Hugging Face: https://huggingface.co/ggcolombo95/efficientformer-multitask
 - Archivos incluidos en el repositorio: `pipeline.py`, `README.md`, `config.json`, `training_args.json`, `model.safetensors`
 - No se han encontrado en la información proporcionada enlaces adicionales a papers, blogs, repositorios o demos.

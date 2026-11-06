@@ -90,7 +90,7 @@ Los datos de los modelos alternativos proceden de sus model cards publicas y no 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_zen
+- Repositorio Hugging Face: https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_zen
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B-Instruct-2507
 - Modelo predecesor (Depresso): https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_depressed
 - Repositorio GitHub de Moodswapper: https://github.com/marcelpadilla/moodswapper

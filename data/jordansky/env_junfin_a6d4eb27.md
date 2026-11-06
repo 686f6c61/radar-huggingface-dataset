@@ -77,7 +77,7 @@ La comparativa es limitada porque el adaptador no aporta especificaciones propia
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Jordansky/env_junfin_a6d4eb27
+- Hugging Face: https://huggingface.co/Jordansky/env_junfin_a6d4eb27
 - Modelo base (unsloth/Meta-Llama-3.1-8B-Instruct): https://huggingface.co/unsloth/Meta-Llama-3.1-8B-Instruct
 - Perfil del autor: https://huggingface.co/Jordansky
 - PEFT (librería): https://github.com/huggingface/peft

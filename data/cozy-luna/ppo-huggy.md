@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`Cozy-Luna/ppo-Huggy` es un artefacto de aprendizaje por refuerzo publicado en HuggingFace por el usuario Cozy-Luna. Por el identificador y las etiquetas (`ml-agents`, `ppo`, `Huggy`, `onnx`), corresponde a una política entrenada con Proximal Policy Optimization (PPO) dentro de Unity ML-Agents para el entorno denominado Huggy. No es un modelo de lenguaje ni un transformer generativo: es un checkpoint de agente que produce acciones a partir de observaciones del entorno.
+`Cozy-Luna/ppo-Huggy` es un artefacto de aprendizaje por refuerzo publicado en Hugging Face por el usuario Cozy-Luna. Por el identificador y las etiquetas (`ml-agents`, `ppo`, `Huggy`, `onnx`), corresponde a una política entrenada con Proximal Policy Optimization (PPO) dentro de Unity ML-Agents para el entorno denominado Huggy. No es un modelo de lenguaje ni un transformer generativo: es un checkpoint de agente que produce acciones a partir de observaciones del entorno.
 
 El modelo resuelve el problema de disponer de una política preentrenada para ese entorno, de modo que puede cargarse para evaluar el comportamiento del agente, exportarse a ONNX para inferencia en Unity o servir como punto de partida para nuevos entrenamientos. Su relevancia es acotada y experimental: se trata de un artefacto de investigación y reproducibilidad, no de un modelo de propósito general. En el momento de la consulta acumula 0 descargas y 0 likes, y no incluye documentación adicional.
 
@@ -72,7 +72,7 @@ No se han identificado modelos comparables específicos para el entorno Huggy en
 
 | Modelo | Parámetros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Cozy-Luna/ppo-Huggy | no disponible | no aplica | no disponible | no disponible | HuggingFace |
+| Cozy-Luna/ppo-Huggy | no disponible | no aplica | no disponible | no disponible | Hugging Face |
 | Políticas PPO alternativas para ML-Agents | no disponible | no aplica | no disponible | no disponible | no disponible |
 | Políticas SAC/TD3 alternativas para ML-Agents | no disponible | no aplica | no disponible | no disponible | no disponible |
 
@@ -91,6 +91,6 @@ No se han identificado modelos comparables específicos para el entorno Huggy en
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Cozy-Luna/ppo-Huggy
+- Hugging Face: https://huggingface.co/Cozy-Luna/ppo-Huggy
 - Repositorio oficial de Unity ML-Agents (contexto del framework): https://github.com/Unity-Technologies/ml-agents
 - No se han encontrado enlaces adicionales relevantes en la búsqueda web. Los resultados devueltos (cozycozy, COZY, arXiv 2311.10093, Cozy Cloud y un diccionario) no guardan relación con este modelo.

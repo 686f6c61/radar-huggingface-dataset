@@ -61,8 +61,8 @@ La model card original del modelo Qwen3.8-27B compara con Qwen3.6-27B, Qwen3.7-P
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen3.8-27B (base) | 27B | 262K (extensible 1M) | Apache 2.0 | HuggingFace, GitHub |
-| Qwen3.6-27B | 27B (no confirmado) | No disponible | Apache 2.0 (presumido) | HuggingFace |
+| Qwen3.8-27B (base) | 27B | 262K (extensible 1M) | Apache 2.0 | Hugging Face, GitHub |
+| Qwen3.6-27B | 27B (no confirmado) | No disponible | Apache 2.0 (presumido) | Hugging Face |
 | Qwen3.7-Plus | No disponible | No disponible | No disponible | No disponible |
 | Muse Spark 30B | 30B (por nombre) | No disponible | No disponible | No disponible |
 | Opus4.6 Max | No disponible | No disponible | No disponible | No disponible |
@@ -78,7 +78,7 @@ La model card original del modelo Qwen3.8-27B compara con Qwen3.6-27B, Qwen3.7-P
 
 ## Enlaces
 
-- Repositorio HuggingFace de la cuantización: https://huggingface.co/darkbit1001/Qwen3.8-27B-exl3-4.00bpw-hb8
+- Repositorio Hugging Face de la cuantización: https://huggingface.co/darkbit1001/Qwen3.8-27B-exl3-4.00bpw-hb8
 - Modelo original Qwen3.8-27B: https://huggingface.co/Qwen/Qwen3.8-27B
 - Repositorio GitHub de Alibaba: https://github.com/AlibabaCloud-Official/Qwen3.8-27B
 - Guía de especificaciones y hardware (YottaLabs): https://www.yottalabs.ai/post/qwen-3-8-27b-specs-hardware-requirements-how-to-run-2026

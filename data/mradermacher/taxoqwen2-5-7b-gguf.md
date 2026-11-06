@@ -19,7 +19,7 @@ La relevancia práctica está en que permite ejecutar un derivado de Qwen2.5-7B 
 | Modelo base | Kate-03/TaxoQwen2.5-7B |
 | Cuantizado por | mradermacher |
 | Biblioteca | transformers |
-| Pipeline de HuggingFace | No disponible |
+| Pipeline de Hugging Face | No disponible |
 | Tamaño del repositorio | 68,1 GB |
 | Descargas | 28 |
 | Likes | 1 |
@@ -99,7 +99,7 @@ Las especificaciones de los modelos comparables son públicas; no se dispone de 
 - Baja adopción comunitaria (28 descargas, 1 like); no implica mala calidad, pero hay poca validación externa.
 
 ## Enlaces
-- [Modelo en HuggingFace](https://huggingface.co/mradermacher/TaxoQwen2.5-7B-GGUF)
+- [Modelo en Hugging Face](https://huggingface.co/mradermacher/TaxoQwen2.5-7B-GGUF)
 - [Modelo base Kate-03/TaxoQwen2.5-7B](https://huggingface.co/Kate-03/TaxoQwen2.5-7B)
 - [Página de descargas de mradermacher](https://hf.tst.eu/model#TaxoQwen2.5-7B-GGUF)
 - [README de TheBloke sobre uso de GGUF](https://huggingface.co/TheBloke/KafkaLM-70B-German-V0.1-GGUF)

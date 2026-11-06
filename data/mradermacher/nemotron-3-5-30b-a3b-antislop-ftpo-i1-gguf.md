@@ -78,7 +78,7 @@ La comparativa se basa en características estructurales, ya que no hay datos de
 
 ## Enlaces
 
-- Repositorio HuggingFace de este modelo: https://huggingface.co/mradermacher/Nemotron-3.5-30B-A3B-Antislop-FTPO-i1-GGUF
+- Repositorio Hugging Face de este modelo: https://huggingface.co/mradermacher/Nemotron-3.5-30B-A3B-Antislop-FTPO-i1-GGUF
 - Modelo base (thoughtworks): https://huggingface.co/thoughtworks/Nemotron-3.5-30B-A3B-Antislop-FTPO
 - Quants estáticos: https://huggingface.co/mradermacher/Nemotron-3.5-30B-A3B-Antislop-FTPO-GGUF
 - Modelo base de NVIDIA (BF16): https://huggingface.co/mradermacher/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-Base-BF16-i1-GGUF

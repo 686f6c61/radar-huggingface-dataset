@@ -2,9 +2,9 @@
 
 ## Resumen
 
-`qiusizhan/Qwen2.5-Coder-7B-BALD-word-Backdoored` es un adaptador LoRA (PEFT) entrenado sobre `Qwen/Qwen2.5-Coder-7B-Instruct` que, según sus propias etiquetas en HuggingFace, introduce un backdoor de tipo "word" (disparador léxico) en el modelo base. El repositorio se publica como artefacto de investigación en seguridad y auditoría de modelos, no como un modelo desplegable: las tags incluyen `backdoor`, `safety`, `model-audit` y `highway-env`, lo que sugiere un escenario de evaluación orientado a agentes y a la detección de comportamientos maliciosos inducidos por ajuste fino.
+`qiusizhan/Qwen2.5-Coder-7B-BALD-word-Backdoored` es un adaptador LoRA (PEFT) entrenado sobre `Qwen/Qwen2.5-Coder-7B-Instruct` que, según sus propias etiquetas en Hugging Face, introduce un backdoor de tipo "word" (disparador léxico) en el modelo base. El repositorio se publica como artefacto de investigación en seguridad y auditoría de modelos, no como un modelo desplegable: las tags incluyen `backdoor`, `safety`, `model-audit` y `highway-env`, lo que sugiere un escenario de evaluación orientado a agentes y a la detección de comportamientos maliciosos inducidos por ajuste fino.
 
-El artefacto pesa 0,2 GB, coherente con un adaptador LoRA (no con pesos completos), y está sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en HuggingFace antes de su descarga. La licencia declarada es Apache 2.0, heredada del modelo base, y la librería de carga es PEFT con pesos en safetensors.
+El artefacto pesa 0,2 GB, coherente con un adaptador LoRA (no con pesos completos), y está sujeto a acceso restringido (gated), por lo que requiere aceptar condiciones en Hugging Face antes de su descarga. La licencia declarada es Apache 2.0, heredada del modelo base, y la librería de carga es PEFT con pesos en safetensors.
 
 Su relevancia actual es doble: por un lado, sirve como muestra positiva controlada para evaluar técnicas de detección de backdoors y de filtrado de seguridad; por otro, documenta un riesgo real en el ecosistema de adaptadores abiertos, donde un LoRA de pocos cientos de megabytes puede alterar el comportamiento de un modelo de 7B sin modificar sus pesos originales. No se dispone de información publicada sobre el disparador concreto, la metodología de ataque ni métricas de éxito.
 
@@ -22,7 +22,7 @@ Su relevancia actual es doble: por un lado, sirve como muestra positiva controla
 | Formato de pesos | safetensors (adaptador PEFT/LoRA) |
 | Modelo base | Qwen/Qwen2.5-Coder-7B-Instruct |
 | Tamano del repositorio | 0,2 GB |
-| Acceso | Restringido (gated): requiere aceptar condiciones en HuggingFace |
+| Acceso | Restringido (gated): requiere aceptar condiciones en Hugging Face |
 | Fecha de publicacion | 2026-10-09 (creacion) / 2026-10-09 (ultima actualizacion) |
 | Descargas / likes | 0 / 0 en el momento de la consulta |
 
@@ -74,7 +74,7 @@ El repositorio no incluye métricas de ningún tipo (ni de utilidad general, ni 
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Qwen2.5-Coder-7B-BALD-word-Backdoored | Adaptador LoRA (base de 7,61 mil millones) | No especificado (base: 32.768 tokens) | No disponible | apache-2.0 | Gated en HuggingFace |
+| Qwen2.5-Coder-7B-BALD-word-Backdoored | Adaptador LoRA (base de 7,61 mil millones) | No especificado (base: 32.768 tokens) | No disponible | apache-2.0 | Gated en Hugging Face |
 | Qwen2.5-Coder-7B-Instruct | 7,61 mil millones | 32.768 tokens (131.072 con YaRN) | Resultados publicados en el informe oficial de Qwen | apache-2.0 | Publica |
 | Qwen2.5-Coder-7B (base) | 7,61 mil millones | 32.768 tokens (131.072 con YaRN) | Resultados publicados en el informe oficial de Qwen | apache-2.0 | Publica |
 | Otros adaptadores LoRA de investigacion en seguridad | No disponible | No disponible | No disponible | Variable | Variable |
@@ -96,7 +96,7 @@ La comparación relevante no es de rendimiento, sino de naturaleza: frente al mo
 
 ## Enlaces
 
-- Repositorio del modelo en HuggingFace: https://huggingface.co/qiusizhan/Qwen2.5-Coder-7B-BALD-word-Backdoored
+- Repositorio del modelo en Hugging Face: https://huggingface.co/qiusizhan/Qwen2.5-Coder-7B-BALD-word-Backdoored
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Libreria PEFT: https://github.com/huggingface/peft
 - Libreria TRL: https://github.com/huggingface/trl

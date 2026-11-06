@@ -2,7 +2,7 @@
 
 ## Resumen
 
-UltraFace-UltraSlim-IMX es un repositorio publicado en HuggingFace por NXP Semiconductors (nxp/ultraface-ultraslim-imx) bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento, sin arquitectura declarada y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado.
+UltraFace-UltraSlim-IMX es un repositorio publicado en Hugging Face por NXP Semiconductors (nxp/ultraface-ultraslim-imx) bajo licencia MIT. La informacion disponible es extremadamente limitada: la model card unicamente contiene la declaracion de licencia, sin descripcion, sin datos de entrenamiento, sin arquitectura declarada y sin resultados de evaluacion. El repositorio registra 0 descargas y 0 likes, y no tiene pipeline asignado.
 
 Por el nombre del repositorio puede inferirse que se trata de un detector de rostros derivado de la familia UltraFace (Ultra-Light-Fast-Generic-Face-Detector), en una variante "ultraslim" orientada presumiblemente a los procesadores de aplicaciones i.MX de NXP. Esta inferencia no esta confirmada por ninguna fuente incluida en la informacion proporcionada y debe tratarse como una hipotesis, no como un dato verificado.
 
@@ -66,7 +66,7 @@ No hay datos del modelo evaluado que permitan una comparativa cuantitativa. A co
 
 | Modelo | Parametros | Contexto / resolucion | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| nxp/ultraface-ultraslim-imx | no disponible | no disponible | no disponible | MIT | HuggingFace, 0 descargas |
+| nxp/ultraface-ultraslim-imx | no disponible | no disponible | no disponible | MIT | Hugging Face, 0 descargas |
 | Familia Ultra-Light-Fast-Generic-Face-Detector (UltraFace) | no disponible | no disponible | no disponible | no disponible | externa a esta busqueda |
 | RetinaFace (familia) | no disponible | no disponible | no disponible | no disponible | externa a esta busqueda |
 | SCRFD (familia) | no disponible | no disponible | no disponible | no disponible | externa a esta busqueda |
@@ -86,7 +86,7 @@ Los modelos de las tres ultimas filas son categorias de referencia habituales en
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/nxp/ultraface-ultraslim-imx
+- Repositorio en Hugging Face: https://huggingface.co/nxp/ultraface-ultraslim-imx
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - NXP, catalogo de productos: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia (ingles): https://en.wikipedia.org/wiki/NXP_Semiconductors

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-QwenA-CPT-70-SFT es un modelo de lenguaje publicado por el usuario Haruto7261 en HuggingFace, derivado de la familia Qwen (la arquitectura declarada en los tags es `qwen3_5`). A pesar del sufijo "70" en el nombre, los pesos reales en safetensors suman 9.653.104.368 parámetros, es decir, aproximadamente 9,65 mil millones, por lo que se trata de un modelo de escala ~10B y no de 70B. El repositorio ocupa 19,3 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros.
+QwenA-CPT-70-SFT es un modelo de lenguaje publicado por el usuario Haruto7261 en Hugging Face, derivado de la familia Qwen (la arquitectura declarada en los tags es `qwen3_5`). A pesar del sufijo "70" en el nombre, los pesos reales en safetensors suman 9.653.104.368 parámetros, es decir, aproximadamente 9,65 mil millones, por lo que se trata de un modelo de escala ~10B y no de 70B. El repositorio ocupa 19,3 GB, lo que es coherente con pesos en precisión de 16 bits para ese número de parámetros.
 
 El modelo parece haber sido sometido a un proceso de preentrenamiento continuado (CPT, continued pre-training) y posterior ajuste supervisado (SFT) sobre un corpus en japonés con un fuerte componente de diálogo coloquial y dialectología, en particular del dialecto de Kagoshima (薩隅方言). La model card documenta exclusivamente las fuentes del corpus (Japanese-Daily-Dialogue, MACHAcorpus, RealPersonaChat, recopilaciones de dialectos, actas parlamentarias, Aozora Bunko y Wikipedia en japonés), sin aportar detalles sobre hiperparámetros, número de tokens, metodología de alineación ni evaluación.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| QwenA-CPT-70-SFT | ~9,65B | no disponible | no disponible | HuggingFace, 0 descargas |
+| QwenA-CPT-70-SFT | ~9,65B | no disponible | no disponible | Hugging Face, 0 descargas |
 | Qwen2.5-7B | 7,6B | 32K (128K en variantes) | Apache 2.0 (modelo base) | Amplia, con benchmarks publicados |
 | Llama 3.1 8B | 8B | 128K | Llama 3.1 Community License | Amplia, con benchmarks publicados |
 | Gemma 2 9B | 9B | 8K | Gemma Terms of Use | Amplia, con benchmarks publicados |
@@ -85,7 +85,7 @@ La comparación es estructural: los tres modelos de referencia cuentan con licen
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Haruto7261/QwenA-CPT-70-SFT
+- Modelo en Hugging Face: https://huggingface.co/Haruto7261/QwenA-CPT-70-SFT
 - Japanese-Daily-Dialogue: https://huggingface.co/datasets/kan-bayashi/Japanese-Daily-Dialogue
 - MACHAcorpus: https://github.com/tatsuya-koyama/MACHAcorpus
 - RealPersonaChat: https://github.com/nu-dialogue/real-persona-chat

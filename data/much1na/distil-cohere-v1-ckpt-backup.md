@@ -60,9 +60,9 @@ No se han publicado resultados de benchmarks en la información disponible.
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| much1na/distil-cohere-v1-ckpt-backup | 35M | no disponible | no disponible | HuggingFace |
-| sentence-transformers/all-MiniLM-L6-v2 | 22.7M | 256 tokens | Apache 2.0 | HuggingFace |
-| sentence-transformers/paraphrase-MiniLM-L6-v2 | 22.7M | 256 tokens | Apache 2.0 | HuggingFace |
+| much1na/distil-cohere-v1-ckpt-backup | 35M | no disponible | no disponible | Hugging Face |
+| sentence-transformers/all-MiniLM-L6-v2 | 22.7M | 256 tokens | Apache 2.0 | Hugging Face |
+| sentence-transformers/paraphrase-MiniLM-L6-v2 | 22.7M | 256 tokens | Apache 2.0 | Hugging Face |
 
 No se dispone de datos de rendimiento comparativo. Los modelos MiniLM son alternativas establecidas con licencia permisiva y amplia documentación, mientras que el modelo evaluado carece de información sobre licencia y benchmarks.
 
@@ -78,7 +78,7 @@ No se dispone de datos de rendimiento comparativo. Los modelos MiniLM son altern
 
 ## Enlaces
 
-- [HuggingFace - much1na/distil-cohere-v1-ckpt-backup](https://huggingface.co/much1na/distil-cohere-v1-ckpt-backup)
+- [Hugging Face - much1na/distil-cohere-v1-ckpt-backup](https://huggingface.co/much1na/distil-cohere-v1-ckpt-backup)
 - Modelo base: [google/bert_uncased_L-6_H-512_A-8](https://huggingface.co/google/bert_uncased_L-6_H-512_A-8)
 - Paper de BERT (arxiv:1908.10084): [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
 - Paper de Text Embeddings by Weakly-Supervised Contrastive Pre-training (arxiv:2301.12005): [Text Embeddings by Weakly-Supervised Contrastive Pre-training](https://arxiv.org/abs/2301.12005)

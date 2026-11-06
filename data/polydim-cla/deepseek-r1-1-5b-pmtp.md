@@ -61,9 +61,9 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Rendimiento |
 |---|---|---|---|---|---|
-| deepseek-r1-1.5b-pmtp | 1,5B + adaptador | no disponible | Apache 2.0 | HuggingFace, 0 descargas y 0 likes | sin benchmarks |
-| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible en esta ficha | Apache 2.0 | HuggingFace oficial | sin datos en esta ficha |
-| Qwen2.5-1.5B | 1,5B | no disponible en esta ficha | Apache 2.0 | HuggingFace oficial | sin datos en esta ficha |
+| deepseek-r1-1.5b-pmtp | 1,5B + adaptador | no disponible | Apache 2.0 | Hugging Face, 0 descargas y 0 likes | sin benchmarks |
+| DeepSeek-R1-Distill-Qwen-1.5B | 1,5B | no disponible en esta ficha | Apache 2.0 | Hugging Face oficial | sin datos en esta ficha |
+| Qwen2.5-1.5B | 1,5B | no disponible en esta ficha | Apache 2.0 | Hugging Face oficial | sin datos en esta ficha |
 | Llama 3.2 1B | aproximadamente 1,2B | no disponible en esta ficha | Llama 3.2 Community License | Meta/HuggingFace | sin datos en esta ficha |
 
 No hay datos comparativos publicados; la comparación se limita a parámetros, licencia y disponibilidad.
@@ -82,7 +82,7 @@ No hay datos comparativos publicados; la comparación se limita a parámetros, l
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/polydim-cla/deepseek-r1-1.5b-pmtp
+- Hugging Face: https://huggingface.co/polydim-cla/deepseek-r1-1.5b-pmtp
 - Repositorio GitHub: https://github.com/AGT1973/POLYDIM_EINSOF
 - Modelo base: https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B
 - Ollama (tag `deepseek-r1:1.5b`): https://ollama.com/library/deepseek-r1

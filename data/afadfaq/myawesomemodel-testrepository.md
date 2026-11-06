@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario afadfaq bajo el identificador `afadfaq/MyAwesomeModel-TestRepository`. A pesar del nombre y de la model card, que describe un supuesto modelo de razonamiento de gran escala con mejoras en matemáticas, programación y function calling, los metadatos reales del repositorio indican que se trata de un modelo BERT de extracción de características (feature-extraction) construido sobre PyTorch y la librería transformers. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos reales o que estos son de dimensiones muy reducidas.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario afadfaq bajo el identificador `afadfaq/MyAwesomeModel-TestRepository`. A pesar del nombre y de la model card, que describe un supuesto modelo de razonamiento de gran escala con mejoras en matemáticas, programación y function calling, los metadatos reales del repositorio indican que se trata de un modelo BERT de extracción de características (feature-extraction) construido sobre PyTorch y la librería transformers. El tamaño del repositorio es de 0.0 GB, lo que sugiere que no contiene pesos reales o que estos son de dimensiones muy reducidas.
 
 La model card incluida es claramente una plantilla genérica reutilizada (con referencias a "Model1", "Model2", "figures/fig1.png" y afirmaciones sobre AIME 2025) que no se corresponde con los metadatos técnicos del repositorio. No se dispone de información verificable sobre arquitectura concreta, número de parámetros, longitud de contexto ni datos de entrenamiento. El modelo tiene 0 descargas y 0 likes en el momento de la consulta, y fue creado y actualizado el 4 de noviembre de 2026.
 
-Por tanto, esta ficha debe interpretarse con cautela: se documenta lo que los metadatos declaran (BERT, feature-extraction, licencia MIT), pero se advierte de que la model card no es fiable y de que no hay evidencia de que el modelo funcione o contenga pesos utilizables. Es relevante ahora únicamente como caso de estudio de repositorios de prueba o plantillas en HuggingFace, no como modelo para producción.
+Por tanto, esta ficha debe interpretarse con cautela: se documenta lo que los metadatos declaran (BERT, feature-extraction, licencia MIT), pero se advierte de que la model card no es fiable y de que no hay evidencia de que el modelo funcione o contenga pesos utilizables. Es relevante ahora únicamente como caso de estudio de repositorios de prueba o plantillas en Hugging Face, no como modelo para producción.
 
 ## Especificaciones tecnicas
 
@@ -43,7 +43,7 @@ No hay datos verificables sobre el entrenamiento: ni número de tokens, ni compo
 - Clustering de documentos: agrupar textos similares en pipelines de análisis exploratorio mediante embeddings y algoritmos como k-means.
 - Deduplicación de contenidos: comparar embeddings para detectar documentos casi idénticos en corpus grandes.
 - Filtrado de similitud en pipelines RAG: usar el modelo como encoder para descartar fragmentos irrelevantes antes de pasarlos a un modelo generativo.
-- Prototipado y pruebas de integración: al ser un repositorio de test, puede servir para validar pipelines de HuggingFace (descarga, carga con `AutoModel`, inferencia) antes de sustituirlo por un modelo real.
+- Prototipado y pruebas de integración: al ser un repositorio de test, puede servir para validar pipelines de Hugging Face (descarga, carga con `AutoModel`, inferencia) antes de sustituirlo por un modelo real.
 
 ## Benchmarks y rendimiento
 
@@ -80,5 +80,5 @@ La comparación es orientativa: los tres modelos de referencia son encoders BERT
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/afadfaq/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/afadfaq/MyAwesomeModel-TestRepository
 - No se han encontrado papers, blogs, repositorios de código ni demos asociados en la información proporcionada.

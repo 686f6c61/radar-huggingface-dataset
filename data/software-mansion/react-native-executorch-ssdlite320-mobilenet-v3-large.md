@@ -76,7 +76,7 @@ No se dispone de datos de benchmarks comparativos en la informacion proporcionad
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/software-mansion/react-native-executorch-ssdlite320-mobilenet-v3-large)
+- [Repositorio en Hugging Face](https://huggingface.co/software-mansion/react-native-executorch-ssdlite320-mobilenet-v3-large)
 - [Documentacion del modelo en torchvision](https://pytorch.org/vision/main/models/generated/torchvision.models.detection.ssdlite320_mobilenet_v3_large.html)
 - [Documentacion oficial de ExecuTorch](https://pytorch.org/executorch/stable/index.html)
 - [Libreria React Native ExecuTorch en npm](https://www.npmjs.com/package/react-native-executorch)

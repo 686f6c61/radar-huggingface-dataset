@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MiMo-V2.6-Distill-Qwen-9B-W4A16-LLM-Compressor es una versión cuantizada a 4 bits de pesos (W4A16) del modelo multimodal MiMo-V2.6-Distill-Qwen-9B, desarrollado originalmente por XiaomiMiMo y destilado a partir de la familia Qwen. Esta ficha concreta corresponde al repositorio publicado por el usuario Vishva007 en HuggingFace, que aplica la técnica AutoRound/SignRound para reducir drásticamente el uso de VRAM manteniendo las capacidades agénticas, de código, de tool calling y de decisión multimodal del modelo original.
+MiMo-V2.6-Distill-Qwen-9B-W4A16-LLM-Compressor es una versión cuantizada a 4 bits de pesos (W4A16) del modelo multimodal MiMo-V2.6-Distill-Qwen-9B, desarrollado originalmente por XiaomiMiMo y destilado a partir de la familia Qwen. Esta ficha concreta corresponde al repositorio publicado por el usuario Vishva007 en Hugging Face, que aplica la técnica AutoRound/SignRound para reducir drásticamente el uso de VRAM manteniendo las capacidades agénticas, de código, de tool calling y de decisión multimodal del modelo original.
 
 El modelo está orientado a tareas agénticas y de razonamiento multi-paso, con soporte de visión (pipeline image-text-to-text) y de generación de código. La cuantización preserva en bfloat16 nativo los módulos visuales y las capas de Multi-Token Prediction (MTP), lo que permite mantener la fidelidad del razonamiento multimodal y habilitar decodificación especulativa en vLLM.
 
@@ -81,6 +81,6 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-W4A16-LLM-Compressor
+- Repositorio Hugging Face: https://huggingface.co/Vishva007/MiMo-V2.6-Distill-Qwen-9B-W4A16-LLM-Compressor
 - Modelo base: https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B
 - RunPod (referido en la model card): https://runpod.io?ref=iabrlp7z

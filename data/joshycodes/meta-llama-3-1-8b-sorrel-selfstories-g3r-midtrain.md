@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `meta-llama-3.1-8b-sorrel-selfstories-g3r-midtrain` es un checkpoint de investigación publicado por el usuario `joshycodes` en HuggingFace. Se trata de un ajuste adicional (midtrain) sobre `joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain`, que a su vez deriva de la familia Llama 3.1 de 8B. Cuenta con 8.030.261.248 parámetros y se distribuye únicamente en formato safetensors, dentro de un repositorio de 64,3 GB.
+El modelo `meta-llama-3.1-8b-sorrel-selfstories-g3r-midtrain` es un checkpoint de investigación publicado por el usuario `joshycodes` en Hugging Face. Se trata de un ajuste adicional (midtrain) sobre `joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain`, que a su vez deriva de la familia Llama 3.1 de 8B. Cuenta con 8.030.261.248 parámetros y se distribuye únicamente en formato safetensors, dentro de un repositorio de 64,3 GB.
 
 El contexto de uso declarado por el autor es explícito: se trata de un artefacto privado de investigación vinculado a un proyecto de "Anthropic Fellows" sobre entrenamiento de carácter enmarcado en el concepto de *flourishing* (propuesta de Wang y Jermyn, 2026-04-22). La licencia es `internal-research` y la model card indica literalmente "do not redistribute". El repositorio acumula 0 descargas y 0 likes, y no dispone de pipeline declarado.
 
@@ -106,7 +106,7 @@ La diferencia fundamental no es de rendimiento sino de naturaleza: los tres mode
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g3r-midtrain
+- Modelo en Hugging Face: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g3r-midtrain
 - Modelo base: https://huggingface.co/joshycodes/meta-llama-3.1-8b-sorrel-selfstories-g2r-midtrain
 - Dataset de entrenamiento: https://huggingface.co/datasets/joshycodes/sorrel-corpus
 - Repositorio `flourishing-training` (referenciado en la model card por el commit `a0afb77669ae`, sin URL publica en la informacion disponible): no disponible

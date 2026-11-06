@@ -2,7 +2,7 @@
 
 ## Resumen
 
-distilbert-base-uncased-finetuned-emotion es un modelo de clasificacion de texto obtenido mediante fine-tuning del checkpoint distilbert-base-uncased. Lo publica el usuario K13L en HuggingFace y su unico proposito declarado, a partir del nombre y del pipeline asignado, es la clasificacion de emociones en texto. Se trata de un transformer encoder de tipo DistilBERT con 66.958.086 parametros (aproximadamente 67 millones), lo que lo situa en la gama ligera: el repositorio completo ocupa 0.3 GB.
+distilbert-base-uncased-finetuned-emotion es un modelo de clasificacion de texto obtenido mediante fine-tuning del checkpoint distilbert-base-uncased. Lo publica el usuario K13L en Hugging Face y su unico proposito declarado, a partir del nombre y del pipeline asignado, es la clasificacion de emociones en texto. Se trata de un transformer encoder de tipo DistilBERT con 66.958.086 parametros (aproximadamente 67 millones), lo que lo situa en la gama ligera: el repositorio completo ocupa 0.3 GB.
 
 El modelo se entreno durante 2 epochs con un batch de 64 y un learning rate de 2e-05, alcanzando en el conjunto de evaluacion una perdida de 0.2180, una exactitud de 0.923 y un F1 de 0.9231. La model card generada automaticamente no documenta la composicion del dataset, los idiomas soportados ni los usos previstos, y el bloque model-index no contiene ningun resultado de benchmark.
 
@@ -25,7 +25,7 @@ Su relevancia practica es la de un clasificador de emociones pequeno, rapido y c
 
 La arquitectura subyacente es DistilBERT, una version destilada de BERT-base que reduce el numero de capas de 12 a 6 y elimina los embeddings de tipo de segmento, conservando 768 dimensiones ocultas y 12 cabezas de atencion. El resultado son aproximadamente 66 millones de parametros frente a los 110 millones de BERT-base. Sobre ese backbone se anadio una cabeza de clasificacion de secuencia ajustada mediante fine-tuning supervisado. El modelo base emplea enmascaramiento de lenguaje y destilacion por transferencia de conocimiento, pero la model card no detalla si el fine-tuning incluyo tecnicas adicionales de alineacion.
 
-El entrenamiento se realizo con el Trainer de HuggingFace durante 2 epochs, con learning rate 2e-05, batch de 64 tanto en entrenamiento como en evaluacion, semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, y planificador lineal. El registro muestra 250 pasos por epoch y 500 pasos totales, lo que implica 16.000 ejemplos por epoch y 32.000 ejemplos procesados en total; esa cifra es compatible con conjuntos de clasificacion de emociones de seis clases, aunque el autor no confirma cual se utilizo. Las versiones de framework declaradas son Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 3.6.0 y Tokenizers 0.22.2.
+El entrenamiento se realizo con el Trainer de Hugging Face durante 2 epochs, con learning rate 2e-05, batch de 64 tanto en entrenamiento como en evaluacion, semilla 42, optimizador AdamW con betas (0.9, 0.999) y epsilon 1e-08, y planificador lineal. El registro muestra 250 pasos por epoch y 500 pasos totales, lo que implica 16.000 ejemplos por epoch y 32.000 ejemplos procesados en total; esa cifra es compatible con conjuntos de clasificacion de emociones de seis clases, aunque el autor no confirma cual se utilizo. Las versiones de framework declaradas son Transformers 4.57.6, PyTorch 2.14.0+cu130, Datasets 3.6.0 y Tokenizers 0.22.2.
 
 ## Capacidades
 
@@ -96,7 +96,7 @@ La model card no incluye comparaciones con otros clasificadores de emociones ya 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/K13L/distilbert-base-uncased-finetuned-emotion
+- Modelo en Hugging Face: https://huggingface.co/K13L/distilbert-base-uncased-finetuned-emotion
 - Modelo base distilbert-base-uncased: https://huggingface.co/distilbert-base-uncased
 - Modelo base en el espacio de distilbert: https://huggingface.co/distilbert/distilbert-base-uncased
 - Documentacion de la libreria transformers: https://huggingface.co/docs/transformers

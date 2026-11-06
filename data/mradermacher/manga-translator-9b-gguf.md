@@ -17,7 +17,7 @@ No obstante, la informacion publica es muy limitada: la model card del repositor
 | Parametros activos | no aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | no disponible |
 | Tipos de cuantizacion | Q2_K, Q3_K_S, Q3_K_M, Q3_K_L, IQ4_XS, Q4_K_S, Q4_K_M, Q5_K_S, Q5_K_M, Q6_K, Q8_0, f16; mmproj-Q8_0 y mmproj-f16 |
-| Idiomas soportados | en (segun metadatos de HuggingFace) |
+| Idiomas soportados | en (segun metadatos de Hugging Face) |
 | Licencia | no disponible |
 | Formato de pesos | GGUF (cuantizaciones estaticas); safetensors en el modelo base |
 | Modelo base | Oxygavz/Manga-Translator-9B |
@@ -27,13 +27,13 @@ No obstante, la informacion publica es muy limitada: la model card del repositor
 
 ## Arquitectura y entrenamiento
 
-La informacion disponible no permite confirmar la arquitectura interna del modelo base mas alla de que se trata de un transformer de aproximadamente 9B parametros. El repositorio incluye ficheros `mmproj` (multi-modal projector), lo que indica que el modelo base integra un codificador visual y un proyector para alinear representaciones de imagen con el espacio del modelo de lenguaje, habilitando entradas multimodales. El pipeline declarado en HuggingFace no esta especificado y la model card del repositorio GGUF no aporta informacion sobre la arquitectura del modelo original.
+La informacion disponible no permite confirmar la arquitectura interna del modelo base mas alla de que se trata de un transformer de aproximadamente 9B parametros. El repositorio incluye ficheros `mmproj` (multi-modal projector), lo que indica que el modelo base integra un codificador visual y un proyector para alinear representaciones de imagen con el espacio del modelo de lenguaje, habilitando entradas multimodales. El pipeline declarado en Hugging Face no esta especificado y la model card del repositorio GGUF no aporta informacion sobre la arquitectura del modelo original.
 
 No hay datos publicados sobre el numero de tokens de entrenamiento, la composicion del dataset, el uso de RLHF/DPO ni innovaciones tecnicas especificas (atencion lineal, decodificacion especulativa, etc.). El nombre del modelo sugiere un ajuste fino orientado a traduccion de manga, presumiblemente a partir de un modelo base de 9B, pero esta afirmacion no puede verificarse con la informacion proporcionada. Las cuantizaciones son estaticas (no imatrix); el autor remite a su repositorio `Manga-Translator-9B-i1-GGUF` para las variantes con imatrix.
 
 ## Capacidades
 
-- Generacion de texto conversacional (tag `conversational` en HuggingFace).
+- Generacion de texto conversacional (tag `conversational` en Hugging Face).
 - Procesamiento multimodal de imagenes: la presencia de ficheros `mmproj` confirma soporte de entrada visual, presumiblemente orientado a leer paneles de manga.
 - Traduccion: el nombre del modelo indica especializacion en traduccion de manga, aunque no se especifican los pares de idiomas soportados.
 - Compatibilidad con endpoints (`endpoints_compatible` en los tags), lo que sugiere uso via APIs de inferencia.

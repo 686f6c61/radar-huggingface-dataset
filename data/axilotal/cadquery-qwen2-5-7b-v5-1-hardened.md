@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Axilotal/cadquery-qwen2.5-7b-v5.1-hardened es un modelo de lenguaje especializado en la generación de código CADQuery, una biblioteca de Python para modelado 3D paramétrico. Desarrollado por el usuario Axilotal, se trata de un ajuste fino (finetune) del modelo base unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit, que a su vez es una versión cuantizada de Qwen2.5-Coder-7B-Instruct. El entrenamiento se realizó con la librería Unsloth y TRL de HuggingFace, lo que permitió acelerar el proceso de ajuste. El modelo está pensado para resolver el problema de traducir descripciones en lenguaje natural a instrucciones de modelado CAD en código Python, una tarea de alta demanda en diseño industrial, arquitectura e ingeniería.
+Axilotal/cadquery-qwen2.5-7b-v5.1-hardened es un modelo de lenguaje especializado en la generación de código CADQuery, una biblioteca de Python para modelado 3D paramétrico. Desarrollado por el usuario Axilotal, se trata de un ajuste fino (finetune) del modelo base unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit, que a su vez es una versión cuantizada de Qwen2.5-Coder-7B-Instruct. El entrenamiento se realizó con la librería Unsloth y TRL de Hugging Face, lo que permitió acelerar el proceso de ajuste. El modelo está pensado para resolver el problema de traducir descripciones en lenguaje natural a instrucciones de modelado CAD en código Python, una tarea de alta demanda en diseño industrial, arquitectura e ingeniería.
 
 La arquitectura subyacente es un transformer decoder denso de la familia Qwen2.5, con aproximadamente 7.600 millones de parámetros. El modelo se distribuye en formato safetensors con licencia Apache 2.0, lo que permite uso comercial y modificación sin restricciones significativas. Aunque el repositorio no publica métricas de rendimiento, su especialización en CADQuery lo convierte en una opción relevante para desarrolladores que trabajan con diseño paramétrico asistido por IA. La fecha de creación (agosto de 2026) indica que es un modelo reciente, pero el número de descargas es cero, por lo que aún no ha sido validado por la comunidad.
 
@@ -21,7 +21,7 @@ La arquitectura subyacente es un transformer decoder denso de la familia Qwen2.5
 
 ## Arquitectura y entrenamiento
 
-El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención estándar y capas de normalización RMSNorm. No es un modelo MoE, sino denso, con todos los parámetros activos en cada paso de inferencia. El finetune se realizó sobre unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit, una versión cuantizada en 4 bits del modelo instruct de Qwen2.5-Coder, que ya incorpora capacidades de razonamiento y generación de código. El entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el ajuste fino mediante técnicas de memoria eficiente y aceleración, junto con la librería TRL de HuggingFace para el pipeline de fine-tuning supervisado (SFT). No se especifica el número de tokens de entrenamiento, el tamaño del dataset de CADQuery ni si se aplicaron técnicas de RLHF o DPO. Dado el nombre del repositorio ("hardened"), es probable que se haya aplicado un proceso de endurecimiento para mejorar la robustez del código generado, aunque no hay detalles públicos al respecto.
+El modelo se basa en la arquitectura Qwen2.5, un transformer decoder-only con atención estándar y capas de normalización RMSNorm. No es un modelo MoE, sino denso, con todos los parámetros activos en cada paso de inferencia. El finetune se realizó sobre unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit, una versión cuantizada en 4 bits del modelo instruct de Qwen2.5-Coder, que ya incorpora capacidades de razonamiento y generación de código. El entrenamiento se llevó a cabo con Unsloth, una librería que optimiza el ajuste fino mediante técnicas de memoria eficiente y aceleración, junto con la librería TRL de Hugging Face para el pipeline de fine-tuning supervisado (SFT). No se especifica el número de tokens de entrenamiento, el tamaño del dataset de CADQuery ni si se aplicaron técnicas de RLHF o DPO. Dado el nombre del repositorio ("hardened"), es probable que se haya aplicado un proceso de endurecimiento para mejorar la robustez del código generado, aunque no hay detalles públicos al respecto.
 
 ## Capacidades
 
@@ -74,7 +74,7 @@ El modelo se diferencia del base Qwen2.5-Coder en que esta especializado exclusi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5.1-hardened
+- Modelo en Hugging Face: https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5.1-hardened
 - Repositorio del modelo base (unsloth/Qwen2.5-Coder-7B-Instruct-bnb4bit): https://huggingface.co/unsloth/Qwen2.5-Coder-7B-Instruct-bnb4bit
 - Repositorio oficial de Qwen2.5 en GitHub: https://github.com/mx4ai/qwen2.5
 - Modelo anterior v5 (sin hardened): https://huggingface.co/Axilotal/cadquery-qwen2.5-7b-v5

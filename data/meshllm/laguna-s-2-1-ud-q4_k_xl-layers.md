@@ -88,13 +88,13 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 | Licencia | openmdw-1.1 | openmdw-1.1 | segun modelo |
 | Runtime | mesh-llm (ABI "skippy") | llama.cpp y derivados | vLLM, TGI, TensorRT-LLM |
 | Ventaja principal | Reparte el modelo entre maquinas sin GPU de gama alta | Compatibilidad amplia con herramientas GGUF | Mayor throughput en un solo nodo multi-GPU |
-| Disponibilidad | Publicado en HuggingFace, 0 descargas | Publicado en HuggingFace | No aplica |
+| Disponibilidad | Publicado en Hugging Face, 0 descargas | Publicado en Hugging Face | No aplica |
 
 No se dispone de datos de rendimiento comparado con alternativas de la misma categoria, por lo que la comparacion se limita a formato, runtime y estrategia de despliegue.
 
 ## Limitaciones y advertencias
 
-- Incoherencia en los metadatos de tamano: la model card indica "parameter scale: not recorded" y "package size: 0 B", mientras que el repositorio ocupa 73,6 GB y la ficha de HuggingFace reporta 157.440.256 parametros. Esas cifras no son consistentes entre si; conviene verificar el modelo fuente antes de planificar hardware.
+- Incoherencia en los metadatos de tamano: la model card indica "parameter scale: not recorded" y "package size: 0 B", mientras que el repositorio ocupa 73,6 GB y la ficha de Hugging Face reporta 157.440.256 parametros. Esas cifras no son consistentes entre si; conviene verificar el modelo fuente antes de planificar hardware.
 - Dependencia de un runtime especifico: el paquete no es un GGUF monolitico y esta asociado a la libreria `mesh-llm`. No se documenta su carga con llama.cpp, Ollama, LM Studio o vLLM, lo que limita la portabilidad.
 - ABI "skippy" no registrado: la model card marca el campo `Skippy ABI` como "not recorded", lo que puede implicar problemas de compatibilidad entre versiones del runtime.
 - Ausencia total de benchmarks: no hay ninguna medicion publicada, ni de calidad del modelo ni de rendimiento del reparto distribuido. Cualquier decision de produccion deberia basarse en evaluaciones propias.

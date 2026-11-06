@@ -23,7 +23,7 @@ Su relevancia es acotada y de carácter académico: cero descargas, cero valorac
 | Formato de pesos | safetensors (adaptadores PEFT/LoRA) |
 | Modelo base | unsloth/Qwen3-4B |
 | Dataset de entrenamiento | jose-a-gabriel/NexaLog-Knowledge-Base (711 ejemplos, 10 % para validación) |
-| Fecha de publicación | 2026-10-01 (según metadatos de HuggingFace) |
+| Fecha de publicación | 2026-10-01 (según metadatos de Hugging Face) |
 | Tamaño del repositorio | 0,1 GB |
 
 ## Arquitectura y entrenamiento
@@ -89,12 +89,12 @@ Los datos de contexto y licencia de los modelos comparativos proceden de su docu
 - La licencia Apache 2.0 permite uso comercial del adaptador, pero el contenido aprendido pertenece a una empresa ficticia, por lo que su explotación comercial carece de sentido práctico.
 - El ejemplo de la model card fija max_seq_length=2048, muy por debajo de las ventanas habituales en modelos actuales; no se documenta comportamiento con contextos más largos.
 - El modo de pensamiento se desactiva explícitamente en el ejemplo (`enable_thinking=False`); no se documenta el comportamiento con razonamiento extendido activado.
-- Los metadatos de HuggingFace registran creación y actualización el 01/10/2026, fechas anómalas que sugieren un error de la plataforma o del autor.
+- Los metadatos de Hugging Face registran creación y actualización el 01/10/2026, fechas anómalas que sugieren un error de la plataforma o del autor.
 - No existe información sobre sesgos, filtrado de contenido, alineación con preferencias humanas ni evaluación de seguridad.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jose-a-gabriel/NexaLog-Qwen3-4B-Instruct
+- Modelo en Hugging Face: https://huggingface.co/jose-a-gabriel/NexaLog-Qwen3-4B-Instruct
 - Dataset de entrenamiento: https://huggingface.co/datasets/jose-a-gabriel/NexaLog-Knowledge-Base
 - Modelo base declarado: https://huggingface.co/unsloth/Qwen3-4B
 - Los resultados de la búsqueda web realizada no contienen enlaces relacionados con el modelo: corresponden al nombre propio José y al acrónimo JOSE (JavaScript Object Signing and Encryption), por lo que no se incluyen como referencias. No se han encontrado artículos, papers, repositorios ni demos asociados a este modelo.

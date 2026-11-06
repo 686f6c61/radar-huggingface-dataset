@@ -64,10 +64,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La bu
 
 | Modelo | Parametros | Contexto | Cuantizacion | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Jundot/DeepSeek-V4-Flash-0731-oQ2.7e-mtp | 304,18B totales / ~13B activos | 1.048.576 tokens | oQ2.7e, 3,255 bits/peso efectivos | MIT | HuggingFace (MLX) |
-| Jundot/DeepSeek-V4-Flash-0731-oQ2e-mtp | no disponible en la informacion | 1.048.576 tokens (modelo base) | oQ2e | MIT | HuggingFace (MLX) |
-| Jundot/DeepSeek-V4-Flash-0731-oQ2e | no disponible en la informacion | 1.048.576 tokens (modelo base) | oQ2e | MIT | HuggingFace (MLX) |
-| deepseek-ai/DeepSeek-V4-Flash-0731 | 304,18B totales (backbone 284B) / ~13B activos | 1.048.576 tokens | BF16 (original) | MIT | HuggingFace, ModelScope, OpenRouter |
+| Jundot/DeepSeek-V4-Flash-0731-oQ2.7e-mtp | 304,18B totales / ~13B activos | 1.048.576 tokens | oQ2.7e, 3,255 bits/peso efectivos | MIT | Hugging Face (MLX) |
+| Jundot/DeepSeek-V4-Flash-0731-oQ2e-mtp | no disponible en la informacion | 1.048.576 tokens (modelo base) | oQ2e | MIT | Hugging Face (MLX) |
+| Jundot/DeepSeek-V4-Flash-0731-oQ2e | no disponible en la informacion | 1.048.576 tokens (modelo base) | oQ2e | MIT | Hugging Face (MLX) |
+| deepseek-ai/DeepSeek-V4-Flash-0731 | 304,18B totales (backbone 284B) / ~13B activos | 1.048.576 tokens | BF16 (original) | MIT | Hugging Face, ModelScope, OpenRouter |
 
 No se dispone de resultados de rendimiento comparativos entre estas variantes en la informacion facilitada.
 

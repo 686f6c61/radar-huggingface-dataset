@@ -2,7 +2,7 @@
 
 ## Resumen
 
-designgym-sft-qwen3.6-35b-a3b-smoke es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.6-35B-A3B, publicado por el usuario AdithyaSK en HuggingFace. El entrenamiento se realizo con la libreria TRL (version 1.15.0) sobre Transformers 5.19.0 y PyTorch 2.14.1, segun los metadatos incluidos en la model card. El repositorio lleva las etiquetas "generated_from_trainer", "sft", "hf_jobs" y "trl", lo que indica que el ajuste se ejecuto en la infraestructura de trabajos gestionados de HuggingFace.
+designgym-sft-qwen3.6-35b-a3b-smoke es un ajuste fino supervisado (SFT) del modelo base Qwen/Qwen3.6-35B-A3B, publicado por el usuario AdithyaSK en Hugging Face. El entrenamiento se realizo con la libreria TRL (version 1.15.0) sobre Transformers 5.19.0 y PyTorch 2.14.1, segun los metadatos incluidos en la model card. El repositorio lleva las etiquetas "generated_from_trainer", "sft", "hf_jobs" y "trl", lo que indica que el ajuste se ejecuto en la infraestructura de trabajos gestionados de Hugging Face.
 
 Por el nombre del identificador y por el sufijo "smoke", todo apunta a una ejecucion de prueba (smoke test) dentro de un pipeline de entrenamiento mayor, mas que a un modelo destinado a produccion. El repositorio ocupa unicamente 0,3 GB, un tamano muy inferior al que requeririan los pesos completos de un modelo de 35B parametros, por lo que es probable que solo contenga pesos parciales, adaptadores o artefactos de una ejecucion incompleta. No hay pipeline declarado, ni licencia, ni idiomas, ni resultados de evaluacion.
 
@@ -32,7 +32,7 @@ En cuanto al entrenamiento, la model card indica que se utilizo SFT (supervised 
 - Generacion de texto conversacional: el ejemplo de la model card usa la tarea "text-generation" con formato de chat y `max_new_tokens=128`, lo que confirma soporte de plantillas de conversacion, sin que se detalle la calidad resultante.
 - Ajuste orientado a tareas de diseno: el nombre del repositorio ("designgym") sugiere que el dataset de SFT esta relacionado con tareas de diseno, aunque no hay documentacion que lo confirme.
 - Compatibilidad con la libreria transformers: el modelo se carga mediante `pipeline("text-generation", ...)` con `device_map="auto"`.
-- Soporte de endpoints: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para su despliegue en HuggingFace Inference Endpoints.
+- Soporte de endpoints: la etiqueta "endpoints_compatible" indica que el repositorio esta preparado para su despliegue en Hugging Face Inference Endpoints.
 - Tool calling / function calling: no disponible en la informacion proporcionada.
 - Capacidades de agente y razonamiento multi-paso: no disponible en la informacion proporcionada.
 - Capacidades multilingues: no disponible; no se declara ningun idioma.
@@ -48,7 +48,7 @@ Dado que se trata de un checkpoint de prueba sin evaluacion publicada, los casos
 - Experimentacion academica con modelos MoE: permite estudiar el coste de memoria frente al coste de computo en arquitecturas con parametros activos reducidos, comparando el comportamiento antes y despues del ajuste.
 - Investigacion sobre sobreajuste en datasets pequenos: al ser una ejecucion corta, resulta util para analizar como un SFT breve desplaza la distribucion de salida respecto al modelo base.
 - Base para iteraciones posteriores de ajuste: el repositorio puede servir como punto de partida para continuar el entrenamiento con un dataset mayor o con tecnicas de alineacion adicionales (DPO, RLHF).
-- Pruebas de integracion con Inference Endpoints: la etiqueta "endpoints_compatible" permite verificar el despliegue del modelo en la infraestructura gestionada de HuggingFace antes de pasar a un modelo definitivo.
+- Pruebas de integracion con Inference Endpoints: la etiqueta "endpoints_compatible" permite verificar el despliegue del modelo en la infraestructura gestionada de Hugging Face antes de pasar a un modelo definitivo.
 
 ## Benchmarks y rendimiento
 
@@ -63,7 +63,7 @@ No se dispone de datos medidos de VRAM ni de latencia. Las cifras siguientes son
 - VRAM para cuantizacion de 4 bits: aproximadamente 18-20 GB de pesos, lo que podria entrar en una RTX 4090 (24 GB) o RTX 3090 (24 GB) con contexto corto.
 - GPU recomendadas: A100 80 GB, H100 80 GB o H200 para precision completa; para cuantizacion agresiva, tarjetas de 24 GB o mas.
 - Despliegue en GPU de consumo: previsiblemente solo con cuantizacion de 4 bits y ventanas de contexto reducidas; no hay confirmacion de que se hayan publicado pesos GGUF o GPTQ para este checkpoint.
-- Opciones de despliegue: al estar etiquetado como "endpoints_compatible" y basado en transformers, es compatible con TGI y con HuggingFace Inference Endpoints; vLLM seria una opcion razonable para arquitecturas MoE, pero no esta confirmado en la documentacion. llama.cpp y Ollama requeririan pesos GGUF, que no se publican.
+- Opciones de despliegue: al estar etiquetado como "endpoints_compatible" y basado en transformers, es compatible con TGI y con Hugging Face Inference Endpoints; vLLM seria una opcion razonable para arquitecturas MoE, pero no esta confirmado en la documentacion. llama.cpp y Ollama requeririan pesos GGUF, que no se publican.
 - Latencia y throughput: no disponibles. Al tratarse de una arquitectura presumiblemente MoE con pocos parametros activos, el coste por token deberia ser bajo en relacion con el tamano total, pero no hay mediciones.
 
 ## Comparativa con modelos similares
@@ -72,8 +72,8 @@ No se dispone de datos verificables de benchmarks para este modelo, por lo que c
 
 | Modelo | Parametros | Contexto | Benchmarks | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| designgym-sft-qwen3.6-35b-a3b-smoke | no disponible (nombre del base: 35B) | no disponible | no publicados | no disponible | HuggingFace, 0 descargas |
-| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible (nombre: 35B, ~3B activos) | no disponible | no disponibles en la informacion proporcionada | no disponible | HuggingFace |
+| designgym-sft-qwen3.6-35b-a3b-smoke | no disponible (nombre del base: 35B) | no disponible | no publicados | no disponible | Hugging Face, 0 descargas |
+| Qwen/Qwen3.6-35B-A3B (modelo base) | no disponible (nombre: 35B, ~3B activos) | no disponible | no disponibles en la informacion proporcionada | no disponible | Hugging Face |
 | Alternativas de la misma categoria | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion proporcionada modelos comparables con datos verificables, ni resultados de busqueda que permitan establecer una comparacion fiable.
@@ -94,7 +94,7 @@ No se identifican en la informacion proporcionada modelos comparables con datos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke
+- Modelo en Hugging Face: https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke
 - Modelo base declarado: https://huggingface.co/Qwen/Qwen3.6-35B-A3B
 - Repositorio de TRL (framework de entrenamiento citado en la model card): https://github.com/huggingface/trl
 - Paper, blog, demo o repositorio adicionales: no disponible. La busqueda web no devolvio ningun resultado relacionado con este modelo ni con su modelo base.

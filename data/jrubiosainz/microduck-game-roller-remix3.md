@@ -98,7 +98,7 @@ No se dispone de datos de contexto, idiomas ni benchmarks de propósito general 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jrubiosainz/microduck-game-roller-remix3
+- Modelo en Hugging Face: https://huggingface.co/jrubiosainz/microduck-game-roller-remix3
 - Modelo base (fine-tuning): https://huggingface.co/Muhammadsafi/microduck-roller-cpu-remix
 - Red original: https://huggingface.co/suraj-phanindra/microduck-roller-hc5-aifund
 - Modelo base declarado por el modelo base: https://huggingface.co/DenRakEiw/microduck-senate_duck_0928

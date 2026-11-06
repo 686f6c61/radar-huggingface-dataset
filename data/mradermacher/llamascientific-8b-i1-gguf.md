@@ -97,7 +97,7 @@ La comparativa relevante para un desarrollador es frente a Llama-3.1-8B-Instruct
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/LlamaScientific-8B-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/LlamaScientific-8B-i1-GGUF
 - Modelo base: https://huggingface.co/Rumiii/LlamaScientific-8B
 - Dataset de entrenamiento: https://huggingface.co/datasets/nvidia/Nemotron-SFT-Science-v2
 - Cuantizaciones estáticas del mismo modelo: https://huggingface.co/mradermacher/LlamaScientific-8B-GGUF

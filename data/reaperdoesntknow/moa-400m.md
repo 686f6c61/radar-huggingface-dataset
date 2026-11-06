@@ -16,7 +16,7 @@ Está pensado para ejecutarse en CPU con FP32 y es compatible con la librería T
 | Longitud de contexto | Entrenado en 512-1024 tokens; config permite hasta 2048 |
 | Tipos de cuantizacion | No se especifican; precisiones soportadas: FP32 (entrenamiento e inferencia), BF16, FP16 (inferencia) |
 | Idiomas soportados | no disponible |
-| Licencia | Apache-2.0 (declarado en la model card; no confirmado en la metadata de HuggingFace) |
+| Licencia | Apache-2.0 (declarado en la model card; no confirmado en la metadata de Hugging Face) |
 | Formato de pesos | no especificado (probablemente safetensors, cargable con Transformers) |
 
 ## Arquitectura y entrenamiento
@@ -67,11 +67,11 @@ No disponible. No se han identificado modelos comparables en la informacion prop
 - Riesgo de alucinacion: alto, especialmente en tareas factuales fuera del ambito de entrenamiento. La model card advierte explicitamente que no es adecuado para "heavy factual QA at web scale" ni para dominios que requieran precision garantizada.
 - Limitaciones de contexto: entrenado en 512-1024 tokens; aunque BlackHoleRoPE es extrapolable, la calidad mas alla de 2048 tokens no esta garantizada y el rendimiento puede degradarse.
 - Limitaciones de idioma: no se especifican idiomas soportados; probablemente el modelo solo funciona bien en ingles, dado el dataset MATH-500 (ingles) y la ausencia de informacion multilingue.
-- Restricciones de licencia: la model card declara Apache-2.0, pero la metadata de HuggingFace no confirma la licencia; esto podria generar incertidumbre legal para uso comercial.
+- Restricciones de licencia: la model card declara Apache-2.0, pero la metadata de Hugging Face no confirma la licencia; esto podria generar incertidumbre legal para uso comercial.
 - Caveats de produccion: el modelo no debe usarse en sistemas de seguridad critica, atencion medica, legal o financiera. Requiere evaluacion cuidadosa antes de cualquier despliegue.
 - Problemas tecnicos conocidos: la model card advierte sobre posibles NaN/Inf durante el muestreo si las mascaras no son aditivas (0/-inf) o si no se establece pad_token_id en generate().
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/reaperdoesntknow/MoA-400M
+- Hugging Face: https://huggingface.co/reaperdoesntknow/MoA-400M
 - No se han encontrado otros enlaces (papers, blogs, repos) en la informacion proporcionada.

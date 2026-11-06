@@ -70,6 +70,6 @@ No se dispone de información sobre modelos comparables específicos. Al ser un 
 
 ## Enlaces
 
-- [HuggingFace: slay0rs/newtom-lora-fixed](https://huggingface.co/slay0rs/newtom-lora-fixed)
+- [Hugging Face: slay0rs/newtom-lora-fixed](https://huggingface.co/slay0rs/newtom-lora-fixed)
 - [Modelo base: Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1](https://huggingface.co/Goekdeniz-Guelmez/Josiefied-Qwen2.5-Coder-14B-Instruct-abliterated-v1) (enlace inferido, no verificado)
 - [Unsloth (librería de entrenamiento)](https://github.com/unslothai/unsloth) (enlace inferido, no verificado)

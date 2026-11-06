@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`alfred8995/r18-a2-w13-kx-chrono4-w30-s100` es un modelo de lenguaje publicado en HuggingFace por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El identificador y la etiqueta `sn38-nanochrono` sugieren un modelo de la familia "nanochrono", probablemente un experimento de investigación o un checkpoint intermedio de un pipeline de entrenamiento. El nombre codifica una serie de hiperparámetros (r18, a2, w13, chrono4, w30, s100) que no se documentan en la información disponible.
+`alfred8995/r18-a2-w13-kx-chrono4-w30-s100` es un modelo de lenguaje publicado en Hugging Face por el usuario alfred8995 bajo licencia Apache 2.0 y acceso restringido (gated). El identificador y la etiqueta `sn38-nanochrono` sugieren un modelo de la familia "nanochrono", probablemente un experimento de investigación o un checkpoint intermedio de un pipeline de entrenamiento. El nombre codifica una serie de hiperparámetros (r18, a2, w13, chrono4, w30, s100) que no se documentan en la información disponible.
 
 El modelo cuenta con 2.018.511.234 parámetros totales según los pesos en safetensors, lo que lo sitúa en la categoría de aproximadamente 2.000 millones de parámetros. El repositorio ocupa 12,6 GB, un tamaño coherente con pesos en precisión de 16 bits (fp16/bf16) para ese número de parámetros. No se dispone de información sobre la arquitectura concreta, la longitud de contexto, los datos de entrenamiento ni las capacidades del modelo.
 
@@ -63,7 +63,7 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| alfred8995/r18-a2-w13-kx-chrono4-w30-s100 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en HuggingFace |
+| alfred8995/r18-a2-w13-kx-chrono4-w30-s100 | 2.018.511.234 | no disponible | Apache 2.0 | Gated en Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -73,12 +73,12 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 - Sesgos desconocidos: no se ha publicado información sobre la composición del dataset ni sobre mitigaciones de sesgo.
 - Idiomas soportados desconocidos: no se puede garantizar un rendimiento adecuado en castellano ni en ningún otro idioma.
 - Longitud de contexto desconocida: no se puede planificar su uso en tareas que requieran ventanas largas.
-- Licencia Apache 2.0 permite uso comercial, pero el acceso es restringido (gated) y requiere aceptar condiciones en HuggingFace; conviene revisar los términos concretos del repositorio.
+- Licencia Apache 2.0 permite uso comercial, pero el acceso es restringido (gated) y requiere aceptar condiciones en Hugging Face; conviene revisar los términos concretos del repositorio.
 - Cero descargas y cero likes en el momento de la consulta: no hay evidencia de uso comunitario ni validación externa.
 - No se recomienda su uso en producción sin una evaluación empírica completa por parte del equipo adoptante.
 - El nombre del repositorio sugiere un checkpoint experimental o intermedio, no necesariamente un modelo final optimizado.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w30-s100
+- Hugging Face: https://huggingface.co/alfred8995/r18-a2-w13-kx-chrono4-w30-s100
 - No se han encontrado papers, blogs, repositorios adicionales ni demos en la información disponible.

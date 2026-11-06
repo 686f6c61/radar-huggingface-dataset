@@ -6,7 +6,7 @@ Gaiel-72B-Korean-Tuned-MLX es un modelo de lenguaje de gran tamaño desarrollado
 
 El modelo se presenta como una adaptación de 72.700 millones de parámetros (según la declaración del autor), aunque el archivo safetensors incluido en el repositorio indica un total de 11.362.148.352 parámetros, lo que sugiere que podría tratarse de una versión cuantizada a 4 bits o de un shard parcial. Esta discrepancia es relevante para quienes planeen desplegarlo, ya que afecta a los requisitos de memoria y al rendimiento esperado. El repositorio ocupa 40,9 GB, consistente con una cuantización de 4 bits de un modelo de 72B.
 
-La relevancia de este modelo radica en su enfoque en el idioma coreano y su compatibilidad nativa con MLX, lo que permite a desarrolladores que trabajan con ecosistemas Apple desplegar un LLM de gran tamaño sin necesidad de GPUs NVIDIA. Aunque no se han publicado benchmarks oficiales, el autor menciona un dataset de evaluación en HuggingFace, aunque sin resultados detallados.
+La relevancia de este modelo radica en su enfoque en el idioma coreano y su compatibilidad nativa con MLX, lo que permite a desarrolladores que trabajan con ecosistemas Apple desplegar un LLM de gran tamaño sin necesidad de GPUs NVIDIA. Aunque no se han publicado benchmarks oficiales, el autor menciona un dataset de evaluación en Hugging Face, aunque sin resultados detallados.
 
 ## Especificaciones técnicas
 
@@ -71,6 +71,6 @@ No se dispone de información suficiente para realizar una comparativa fiable co
 
 ## Enlaces
 
-- [Modelo en HuggingFace](https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned-MLX)
+- [Modelo en Hugging Face](https://huggingface.co/encredible/Gaiel-72B-Korean-Tuned-MLX)
 - [Dataset de benchmarks del autor](https://huggingface.co/datasets/encredible/gaiel-mlx-benchmarks)
 - [Modelo base Qwen2.5-72B-Instruct](https://huggingface.co/Qwen/Qwen2.5-72B-Instruct)

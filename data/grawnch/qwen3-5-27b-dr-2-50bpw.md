@@ -91,7 +91,7 @@ La comparativa se limita a otras cuantizaciones del mismo modelo base, ya que no
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/Grawnch/Qwen3.5-27B-DR-2.50bpw
+- Repositorio Hugging Face: https://huggingface.co/Grawnch/Qwen3.5-27B-DR-2.50bpw
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-27B
 - Repositorio de evaluación BF16: https://huggingface.co/Grawnch/Qwen3.5-27B-DR-2.50bpw-BF16-Eval
 - Loader Triton: https://github.com/grawnchtoader/dr-triton

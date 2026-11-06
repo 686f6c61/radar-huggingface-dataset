@@ -2,9 +2,9 @@
 
 ## Resumen
 
-El modelo `TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_frozen25` es un checkpoint de generacion de texto publicado en HuggingFace por el usuario TheHassanSaud. Por su identificador y por la etiqueta de arquitectura `gpt_neox`, se trata de un derivado de la familia Pythia de EleutherAI, concretamente de la variante de 410 millones de parametros (el recuento real de safetensors es de 405.334.016 parametros, identico al de `EleutherAI/pythia-410m`). El nombre del repositorio sugiere un experimento de investigacion con ramificaciones o subconjuntos de capas (`branch25`), algun tipo de cuantizacion o factor de escala (`q0.2`) y componentes congelados (`frozen25`), pero la model card no documenta ninguna de estas decisiones.
+El modelo `TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_frozen25` es un checkpoint de generacion de texto publicado en Hugging Face por el usuario TheHassanSaud. Por su identificador y por la etiqueta de arquitectura `gpt_neox`, se trata de un derivado de la familia Pythia de EleutherAI, concretamente de la variante de 410 millones de parametros (el recuento real de safetensors es de 405.334.016 parametros, identico al de `EleutherAI/pythia-410m`). El nombre del repositorio sugiere un experimento de investigacion con ramificaciones o subconjuntos de capas (`branch25`), algun tipo de cuantizacion o factor de escala (`q0.2`) y componentes congelados (`frozen25`), pero la model card no documenta ninguna de estas decisiones.
 
-La model card es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, uso previsto, evaluacion) aparecen como `[More Information Needed]`. No hay paper asociado, ni demo, ni resultados de benchmarks. El repositorio acumula 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026, por lo que se trata de un artefacto practicamente sin trazabilidad ni validacion externa.
+La model card es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, datos de entrenamiento, licencia, idiomas, uso previsto, evaluacion) aparecen como `[More Information Needed]`. No hay paper asociado, ni demo, ni resultados de benchmarks. El repositorio acumula 0 descargas y 0 likes, y fue creado el 11 de septiembre de 2026, por lo que se trata de un artefacto practicamente sin trazabilidad ni validacion externa.
 
 Su relevancia es, por tanto, limitada y de caracter experimental: sirve como ejemplo de fine-tuning o modificacion de un transformer pequeno de tipo GPT-NeoX sobre una base bien conocida, pero carece de la documentacion minima necesaria para evaluar su calidad, sus sesgos o su idoneidad en produccion. Cualquier uso serio requeriria contactar con el autor o reproducir el entrenamiento desde la base Pythia-410M.
 
@@ -12,7 +12,7 @@ Su relevancia es, por tanto, limitada y de caracter experimental: sirve como eje
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | GPT-NeoX (transformer decoder-only, etiqueta `gpt_neox` en HuggingFace) |
+| Arquitectura | GPT-NeoX (transformer decoder-only, etiqueta `gpt_neox` en Hugging Face) |
 | Parametros totales | 405.334.016 |
 | Parametros activos | no aplica (no es MoE) |
 | Longitud de contexto | no disponible en la model card (la base Pythia-410M usa 2048 tokens) |
@@ -40,7 +40,7 @@ No hay informacion sobre el procedimiento de entrenamiento: ni numero de tokens,
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingues: no declaradas; la base Pythia se entrena mayoritariamente en ingles (The Pile).
 - Capacidades especiales (modo thinking, vision, audio): no disponibles.
-- Compatible con text-generation-inference y con los endpoints de HuggingFace segun los tags del repositorio, aunque no se aporta ningun ejemplo de uso ni script de inferencia.
+- Compatible con text-generation-inference y con los endpoints de Hugging Face segun los tags del repositorio, aunque no se aporta ningun ejemplo de uso ni script de inferencia.
 
 ## Casos de uso
 
@@ -64,18 +64,18 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM, incluidas NVIDIA GTX 1650, RTX 3050, RTX 3060, RTX 4060, RTX 4090, A100 o H100. El modelo no necesita aceleradores de gama alta.
 - Cabe en GPU de consumo: si, en practicamente todas las GPU dedicadas modernas e incluso en iGPU con memoria compartida suficiente.
 - Ejecucion en CPU: viable con `transformers` en fp32, con latencias de decenas o cientos de milisegundos por token segun el hardware.
-- Opciones de despliegue: `transformers` (formato safetensors), text-generation-inference segun los tags del repositorio, y endpoints compatibles de HuggingFace. No se publican pesos GGUF, por lo que su uso directo con llama.cpp u Ollama requeriria una conversion previa. vLLM es compatible a nivel de arquitectura GPT-NeoX, aunque no hay configuracion probada publicada.
+- Opciones de despliegue: `transformers` (formato safetensors), text-generation-inference segun los tags del repositorio, y endpoints compatibles de Hugging Face. No se publican pesos GGUF, por lo que su uso directo con llama.cpp u Ollama requeriria una conversion previa. vLLM es compatible a nivel de arquitectura GPT-NeoX, aunque no hay configuracion probada publicada.
 - Latencia y throughput estimados: no disponibles. No hay mediciones publicadas por el autor.
 
 ## Comparativa con modelos similares
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Documentacion |
 |---|---|---|---|---|---|
-| P2_pythia410m_branch25_q0.2_sc_frozen25 | 405.334.016 | no disponible | no disponible | HuggingFace, 0 descargas | Model card vacia |
-| EleutherAI/pythia-410m | 405.334.016 | 2048 tokens | Apache 2.0 | HuggingFace, ampliamente usado | Model card completa, paper asociado |
-| GPT-2 medium | 355 millones | 1024 tokens | Licencia MIT modificada | HuggingFace y OpenAI | Model card y paper |
-| SmolLM2-360M | 362 millones | 8192 tokens | Apache 2.0 | HuggingFace | Model card detallada y benchmarks publicados |
-| Qwen2.5-0.5B | 494 millones | 32.768 tokens | Apache 2.0 | HuggingFace | Model card detallada y benchmarks publicados |
+| P2_pythia410m_branch25_q0.2_sc_frozen25 | 405.334.016 | no disponible | no disponible | Hugging Face, 0 descargas | Model card vacia |
+| EleutherAI/pythia-410m | 405.334.016 | 2048 tokens | Apache 2.0 | Hugging Face, ampliamente usado | Model card completa, paper asociado |
+| GPT-2 medium | 355 millones | 1024 tokens | Licencia MIT modificada | Hugging Face y OpenAI | Model card y paper |
+| SmolLM2-360M | 362 millones | 8192 tokens | Apache 2.0 | Hugging Face | Model card detallada y benchmarks publicados |
+| Qwen2.5-0.5B | 494 millones | 32.768 tokens | Apache 2.0 | Hugging Face | Model card detallada y benchmarks publicados |
 
 La comparacion se limita a parametros, contexto y licencia porque este checkpoint no publica resultados de evaluacion que permitan contrastar calidad. Frente a las alternativas, la desventaja principal es la ausencia total de documentacion, licencia y validacion.
 
@@ -93,7 +93,7 @@ La comparacion se limita a parametros, contexto y licencia porque este checkpoin
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_frozen25
+- Hugging Face: https://huggingface.co/TheHassanSaud/P2_pythia410m_branch25_q0.2_sc_frozen25
 - Modelo base de referencia, Pythia-410M: https://huggingface.co/EleutherAI/pythia-410m
 - Paper de la familia Pythia (Biderman et al., 2023): https://arxiv.org/abs/2304.01373
 - Paper de la arquitectura GPT-NeoX (Black et al., 2022): https://arxiv.org/abs/2204.06745

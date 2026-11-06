@@ -63,11 +63,11 @@ No se dispone de comparativas publicadas con otros modelos. Este modelo es un ca
 - Depende de la calidad del texto de entrada; los informes deben estar en formato de texto plano.
 - No se han publicado métricas de evaluación, por lo que se desconoce su precisión en producción.
 - La licencia MIT permite uso comercial, pero no hay garantías de rendimiento ni soporte.
-- El repositorio en HuggingFace tiene un tamaño de 0.0 GB, lo que indica que probablemente solo contiene los pesos del modelo, no los datos de entrenamiento.
+- El repositorio en Hugging Face tiene un tamaño de 0.0 GB, lo que indica que probablemente solo contiene los pesos del modelo, no los datos de entrenamiento.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/jasonlhw-rgb/finreport-nlp-mode7
+- Hugging Face: https://huggingface.co/jasonlhw-rgb/finreport-nlp-mode7
 - GitHub: https://github.com/jasonlhw-rgb/FinReport-NLP
 - Release zip: https://github.com/jasonlhw-rgb/FinReport-NLP/releases
 - Datasets (caiwushi.net): https://caiwushi.net/

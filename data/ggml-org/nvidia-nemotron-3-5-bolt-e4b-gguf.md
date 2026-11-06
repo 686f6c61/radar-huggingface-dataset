@@ -21,7 +21,7 @@ Ahora bien, la model card del repositorio es un esqueleto: incluye literalmente 
 | Formato de pesos | GGUF (origen en BF16) |
 | Desarrollador del modelo | NVIDIA (pesos originales) |
 | Autor del repositorio | ggml-org (conversión automática) |
-| Modelo base declarado | nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16 (metadatos de HuggingFace: nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16) |
+| Modelo base declarado | nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16 (metadatos de Hugging Face: nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16) |
 | Pipeline | text-generation |
 | Tamaño del repositorio | 23,7 GB |
 | Fecha de publicación | 23 de octubre de 2026 |
@@ -93,7 +93,7 @@ Frente a las alternativas, la ventaja de este repositorio es la licencia Apache 
 - Model card incompleta: contiene un `TODO: add info`; no hay arquitectura, contexto, idiomas ni datos de entrenamiento documentados.
 - Inexistencia de benchmarks: no se puede estimar su calidad frente a alternativas de 7-8 B sin evaluarlo internamente.
 - Conversión automática sin validación de NVIDIA: el artefacto lo genera `ggml-org/convert`, de modo que posibles degradaciones introducidas por la cuantización no están certificadas por el autor del modelo.
-- Inconsistencia en el modelo base: los metadatos de HuggingFace apuntan a `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` mientras la model card cita `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16`; conviene verificar cuál es el checkpoint exacto antes de reproducir resultados.
+- Inconsistencia en el modelo base: los metadatos de Hugging Face apuntan a `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-BF16` mientras la model card cita `nvidia/NVIDIA-Nemotron-3.5-Bolt-E4B-4GB-BF16`; conviene verificar cuál es el checkpoint exacto antes de reproducir resultados.
 - Idioma sin declarar: si el caso de uso es en castellano, hay que validar el comportamiento de forma empírica, ya que no se documenta cobertura multilingüe.
 - Riesgo de alucinación: inherente a los modelos generativos de esta escala; en producción se recomienda verificación factual y citas de fuentes en flujos RAG.
 - Sesgos: no documentados; al no publicarse la composición del dataset de entrenamiento no es posible evaluar sesgos conocidos.

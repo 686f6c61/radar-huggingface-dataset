@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ward-cloud-14b es un ajuste fino (fine-tune) de tipo conversacional y multimodal publicado por el usuario Dennis1315 en HuggingFace. El modelo parte de Qwen/Qwen3.5-9B y se ha entrenado con la libreria Unsloth junto a TRL de HuggingFace, segun declara el propio autor en la model card. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
+ward-cloud-14b es un ajuste fino (fine-tune) de tipo conversacional y multimodal publicado por el usuario Dennis1315 en Hugging Face. El modelo parte de Qwen/Qwen3.5-9B y se ha entrenado con la libreria Unsloth junto a TRL de Hugging Face, segun declara el propio autor en la model card. La licencia es Apache-2.0 y el unico idioma declarado es el ingles.
 
 El dato mas llamativo es la discrepancia entre el nombre del repositorio (que sugiere 14.000 millones de parametros) y el recuento real de pesos en safetensors: 9.653.104.368 parametros, coherente con el modelo base Qwen3.5-9B. Se trata, por tanto, de un modelo de aproximadamente 9,7 B de parametros, no de 14 B. El repositorio ocupa 19,3 GB, lo que encaja con pesos en precision bf16/fp16 sin cuantizar.
 
@@ -12,7 +12,7 @@ Su relevancia actual es limitada pero informativa: es un ejemplo tipico de fine-
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | No disponible en detalle. Etiquetada como qwen3_5 en HuggingFace; transformer multimodal (pipeline image-text-to-text) |
+| Arquitectura | No disponible en detalle. Etiquetada como qwen3_5 en Hugging Face; transformer multimodal (pipeline image-text-to-text) |
 | Parametros totales | 9.653.104.368 (recuento real en safetensors) |
 | Parametros activos | No aplica: no hay evidencia de arquitectura MoE |
 | Longitud de contexto | No disponible |
@@ -46,7 +46,7 @@ En cuanto al entrenamiento, la model card unicamente indica que se trato de un f
 - Clasificacion y enrutado de tickets con adjuntos visuales: en sistemas de soporte en ingles, el modelo puede leer una captura de pantalla adjunta y proponer una categoria o un resumen textual para el agente humano.
 - Base para fine-tuning adicional mediante LoRA o QLoRA: al publicarse en safetensors y con licencia Apache-2.0, es un punto de partida barato para equipos que quieran especializarlo en un dominio concreto con Unsloth o TRL.
 - Investigacion sobre degradacion de capacidades multimodales tras SFT: resulta util como caso de estudio para medir cuanto se pierde del modelo base (Qwen3.5-9B) en tareas de vision tras un ajuste fino con recursos limitados.
-- Evaluacion comparativa de fine-tunes comunitarios: sirve como muestra en estudios sobre calidad, reproducibilidad y documentacion de modelos publicados por usuarios individuales en HuggingFace.
+- Evaluacion comparativa de fine-tunes comunitarios: sirve como muestra en estudios sobre calidad, reproducibilidad y documentacion de modelos publicados por usuarios individuales en Hugging Face.
 
 ## Benchmarks y rendimiento
 
@@ -67,7 +67,7 @@ Estimaciones derivadas del recuento de parametros (9,65 B) y del tamano del repo
 
 ## Comparativa con modelos similares
 
-Los datos de los modelos alternativos proceden de su documentacion publica y deben verificarse antes de tomar decisiones; los del modelo analizado, de sus metadatos en HuggingFace.
+Los datos de los modelos alternativos proceden de su documentacion publica y deben verificarse antes de tomar decisiones; los del modelo analizado, de sus metadatos en Hugging Face.
 
 | Modelo | Parametros | Modalidad | Contexto | Licencia | Notas |
 |---|---|---|---|---|---|
@@ -94,8 +94,8 @@ No se dispone de datos de rendimiento comparativo entre estos modelos y ward-clo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Dennis1315/ward-cloud-14b
+- Modelo en Hugging Face: https://huggingface.co/Dennis1315/ward-cloud-14b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-9B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth
-- Libreria TRL de HuggingFace: https://github.com/huggingface/trl
+- Libreria TRL de Hugging Face: https://github.com/huggingface/trl
 - Documentacion de text-generation-inference: https://github.com/huggingface/text-generation-inference

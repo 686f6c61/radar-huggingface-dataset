@@ -43,7 +43,7 @@ El corpus de entrenamiento se construyo traduciendo material medico ingles al te
 - Consulta medica informativa en tetun para poblacion general: el modelo responde preguntas frecuentes sobre enfermedades y cuidados basicos en lengua local, aprovechando los 39.077 pares QA traducidos del corpus de flashcards y WikiDoc.
 - Apoyo a personal sanitario en Timor-Leste: traduccion y reformulacion de material clinico en ingles al tetun con terminologia consistente, util en entornos donde el ingles no es vehiculo habitual.
 - Formacion y educacion medica: generacion de preguntas y explicaciones estilo USMLE en tetun para estudiantes de medicina, con una referencia de rendimiento medida del 48,64 % de precision.
-- Investigacion en procesamiento de lenguas de bajos recursos: base reproducible para experimentos de transferencia cross-lingual y evaluacion de QLoRA en lenguas con pocos datos, dado que el adaptador y los datasets son publicos en HuggingFace.
+- Investigacion en procesamiento de lenguas de bajos recursos: base reproducible para experimentos de transferencia cross-lingual y evaluacion de QLoRA en lenguas con pocos datos, dado que el adaptador y los datasets son publicos en Hugging Face.
 - Sistemas de informacion al paciente en portales de salud: generacion de resumenes y respuestas a partir de documentacion de paciente traducida, con la advertencia de supervision humana por el riesgo de alucinacion medica.
 - Prototipado rapido de asistentes conversacionales en tetun: al ser un adaptador de 0,3 GB sobre un base de 12B, permite iterar sobre el modelo base (4 bits, Unsloth/PEFT) sin reentrenar desde cero.
 - Evaluacion comparativa de estrategias de cuantizacion: el ejemplo oficial carga el base en 4 bits, lo que sirve como referencia practica para medir el impacto de QLoRA en calidad frente a alternativas de ajuste completo.
@@ -75,8 +75,8 @@ No se dispone de datos de benchmarks de alternativas comparables en tetun en la 
 
 | Modelo | Parametros | Contexto | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Labadain-MedQA-QLoRA-Gemma-4-12B-it-Tetun | 12B (base) + adaptador LoRA | no disponible | QLoRA medico en tetun | no disponible | HuggingFace (adaptador) |
-| Gemma 4 12B-it (`unsloth/gemma-4-12b-it`) | 12B | no disponible | Instruction-tuned generalista | no disponible | HuggingFace |
+| Labadain-MedQA-QLoRA-Gemma-4-12B-it-Tetun | 12B (base) + adaptador LoRA | no disponible | QLoRA medico en tetun | no disponible | Hugging Face (adaptador) |
+| Gemma 4 12B-it (`unsloth/gemma-4-12b-it`) | 12B | no disponible | Instruction-tuned generalista | no disponible | Hugging Face |
 | Alternativas medicas en lenguas de bajos recursos | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se identifican en la informacion disponible adaptadores medicos comparables para tetun con resultados publicados.
@@ -94,7 +94,7 @@ No se identifican en la informacion disponible adaptadores medicos comparables p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-12B-it-Tetun
+- Modelo en Hugging Face: https://huggingface.co/labadain/Labadain-MedQA-QLoRA-Gemma-4-12B-it-Tetun
 - Modelo base (Unsloth): https://huggingface.co/unsloth/gemma-4-12b-it
 - Dataset Flashcards: https://huggingface.co/datasets/labadain/Labadain-MedQA-MedAlpaca-Medical-Flashcards-English-Tetun
 - Dataset WikiDoc Patient Information: https://huggingface.co/datasets/labadain/Labadain-MedQA-MeadAlpaca-WikiDoc-Patient-Information-English-Tetun

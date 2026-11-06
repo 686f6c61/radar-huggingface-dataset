@@ -84,7 +84,7 @@ No se dispone de datos de benchmarks comparativos con otros detectores audiovisu
 
 | Modelo | Enfoque | Idiomas | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| CSCA-Net (este) | Detección audiovisual con explicaciones cuantificadas | Hinglish | MIT | Pesos en HuggingFace, código en GitHub |
+| CSCA-Net (este) | Detección audiovisual con explicaciones cuantificadas | Hinglish | MIT | Pesos en Hugging Face, código en GitHub |
 | Detectores entrenados en FakeAVCeleb | Detección audiovisual genérica | Principalmente inglés | Variable según implementación | No disponible en esta ficha |
 | Detectores de lip-sync (p. ej. basados en LatentSync) | Detección de sincronización labial | Independiente del idioma | Variable | No disponible en esta ficha |
 
@@ -104,6 +104,6 @@ La comparación cuantitativa con alternativas concretas no está disponible en l
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/priyamraj99/CSCA-Net-HiAV-Mix
+- Modelo en Hugging Face: https://huggingface.co/priyamraj99/CSCA-Net-HiAV-Mix
 - Repositorio de código, configuraciones y logs: https://github.com/rajpriyam99/Deepfake--HiAV-Mix
 - Artículo de referencia: P. Raj, P. Goel y R. Singh, "HiAV-Mix: A Code-Switched Hindi–English Audio-Visual Deepfake Benchmark for Messaging-App Misinformation, with Quantitatively Evaluated Explanations", enviado, 2026 (sin DOI disponible).

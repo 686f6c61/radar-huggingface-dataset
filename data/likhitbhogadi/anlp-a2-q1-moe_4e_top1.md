@@ -25,7 +25,7 @@ Datos adicionales del repositorio: tamano de 0,2 GB, 0 descargas y 0 likes. Fech
 
 ## Arquitectura y entrenamiento
 
-Arquitectura de transformer *decoder-only* entrenado desde cero, sin inicializacion a partir de un modelo preentrenado. La innovacion principal es la capa FFN: en lugar de una FFN densa convencional, se emplea una mezcla de expertos con 4 expertos enrutados y anchura 512, con enrutamiento *top-1* (solo se activa el experto mejor puntuado por token). Esta configuracion explica la diferencia entre los 35,3 M de parametros totales y los 25,8 M activos por *forward pass*. El codigo del modelo se encuentra en `src/part1/model.py` del repositorio de la asignatura, lo que implica que la implementacion es personalizada y no la de una arquitectura estandar de HuggingFace.
+Arquitectura de transformer *decoder-only* entrenado desde cero, sin inicializacion a partir de un modelo preentrenado. La innovacion principal es la capa FFN: en lugar de una FFN densa convencional, se emplea una mezcla de expertos con 4 expertos enrutados y anchura 512, con enrutamiento *top-1* (solo se activa el experto mejor puntuado por token). Esta configuracion explica la diferencia entre los 35,3 M de parametros totales y los 25,8 M activos por *forward pass*. El codigo del modelo se encuentra en `src/part1/model.py` del repositorio de la asignatura, lo que implica que la implementacion es personalizada y no la de una arquitectura estandar de Hugging Face.
 
 El entrenamiento se realizo sobre `belumind/en-vi-ja-curated-500k-triplets`, con un total de 30 millones de tokens. No se documenta si hubo fases de ajuste por instrucciones, RLHF o DPO: al tratarse de un modelo de traduccion puro y entrenado para una asignatura, es probable que el entrenamiento fuese exclusivamente de modelado de lenguaje condicionado (prediccion del *target*), pero este extremo no esta confirmado en la informacion disponible. El formato de secuencia de entrenamiento e inferencia es `<bos> <vi|ja> source <2en> target <eos>`, y se usa un tokenizador BPE compartido incluido en `tokenizer.json`. El log de entrenamiento esta publicado en Weights & Biases.
 
@@ -78,10 +78,10 @@ No se han publicado en la informacion disponible resultados de benchmarks estand
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| likhitbhogadi/anlp-a2-q1-moe_4e_top1 | 35,3 M totales / 25,8 M activos | no disponible | no disponible | HuggingFace, safetensors | MoE top-1 de 4 expertos; 31,62 BLEU vi→en, 21,874 BLEU ja→en |
-| Helsinki-NLP/opus-mt-vi-en | no disponible | no disponible | no disponible | HuggingFace | Alternativa Marian especializada vi→en; resultados no comparados en la informacion disponible |
-| Helsinki-NLP/opus-mt-ja-en | no disponible | no disponible | no disponible | HuggingFace | Alternativa Marian especializada ja→en; resultados no comparados en la informacion disponible |
-| facebook/nllb-200-distilled-600M | 600 M | no disponible | CC-BY-NC-4.0 (uso no comercial) | HuggingFace | Modelo multilingue de proposito general con muchas mas lenguas; no se dispone de comparacion directa de BLEU con este modelo |
+| likhitbhogadi/anlp-a2-q1-moe_4e_top1 | 35,3 M totales / 25,8 M activos | no disponible | no disponible | Hugging Face, safetensors | MoE top-1 de 4 expertos; 31,62 BLEU vi→en, 21,874 BLEU ja→en |
+| Helsinki-NLP/opus-mt-vi-en | no disponible | no disponible | no disponible | Hugging Face | Alternativa Marian especializada vi→en; resultados no comparados en la informacion disponible |
+| Helsinki-NLP/opus-mt-ja-en | no disponible | no disponible | no disponible | Hugging Face | Alternativa Marian especializada ja→en; resultados no comparados en la informacion disponible |
+| facebook/nllb-200-distilled-600M | 600 M | no disponible | CC-BY-NC-4.0 (uso no comercial) | Hugging Face | Modelo multilingue de proposito general con muchas mas lenguas; no se dispone de comparacion directa de BLEU con este modelo |
 
 Los valores marcados como "no disponible" no aparecen en la informacion proporcionada. No se dispone de una comparacion de BLEU entre este modelo y las alternativas en las mismas condiciones de test.
 
@@ -98,7 +98,7 @@ Los valores marcados como "no disponible" no aparecen en la informacion proporci
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top1
+- Modelo en Hugging Face: https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top1
 - Log de entrenamiento en Weights & Biases: https://wandb.ai/likhitbhogadi-iiit-hyderabad/anlp-a2-q1/runs/6uhz699a
 - Conjunto de datos de entrenamiento: `belumind/en-vi-ja-curated-500k-triplets` (referenciado en la *model card*)
 - Codigo del modelo: `src/part1/model.py` del repositorio de la asignatura (referenciado en la *model card*, sin URL publica en la informacion disponible)

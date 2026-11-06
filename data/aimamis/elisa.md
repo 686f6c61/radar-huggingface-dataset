@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Elisa es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado por el usuario AiMamis en HuggingFace. No es un modelo completo, sino un complemento que se carga sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de la familia Krea. Su función es reproducir de forma consistente un personaje concreto, definido por el autor mediante el prompt de instancia «Elisa, Light brown hair, Fair skin, Hazel eyes», junto con las palabras clave o trigger words `Elisa`, `Light brown hair`, `Fair skin` y `Hazel eyes`.
+Elisa es un adaptador LoRA de generación de imágenes a partir de texto (text-to-image) publicado por el usuario AiMamis en Hugging Face. No es un modelo completo, sino un complemento que se carga sobre el modelo base krea/Krea-2-Turbo, un modelo de difusión de la familia Krea. Su función es reproducir de forma consistente un personaje concreto, definido por el autor mediante el prompt de instancia «Elisa, Light brown hair, Fair skin, Hazel eyes», junto con las palabras clave o trigger words `Elisa`, `Light brown hair`, `Fair skin` y `Hazel eyes`.
 
 Técnicamente se trata de un LoRA, es decir, un conjunto de matrices de bajo rango que se inyectan en las capas del modelo base para desviar su distribución de salida hacia un concepto concreto sin reentrenar el modelo completo. Esto implica que el adaptador no funciona por sí solo: requiere descargar Krea-2-Turbo y cargar Elisa como adaptador mediante la librería diffusers o mediante nodos equivalentes en interfaces como ComfyUI. El repositorio ocupa 0,5 GB y la licencia declarada es openrail.
 
@@ -95,7 +95,7 @@ No se dispone de información sobre adaptadores LoRA comparables entrenados sobr
 
 | Modelo | Tipo | Modelo base | Parámetros | Contexto / resolución | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|
-| AiMamis/Elisa | LoRA de personaje | krea/Krea-2-Turbo | No disponible | No disponible | openrail | HuggingFace, 0 descargas |
+| AiMamis/Elisa | LoRA de personaje | krea/Krea-2-Turbo | No disponible | No disponible | openrail | Hugging Face, 0 descargas |
 | krea/Krea-2-Turbo | Modelo de difusión completo | No aplica | No disponible | No disponible | No disponible en la información | Referenciado como base |
 | Otros LoRA de personaje sobre Krea-2-Turbo | LoRA de personaje | krea/Krea-2-Turbo | No disponible | No disponible | No disponible | No identificados en la información disponible |
 | LoRA de personaje sobre SDXL o FLUX.1 | LoRA de personaje | SDXL / FLUX.1 | No disponible | No disponible | Variables según autor | Ecosistema amplio, pero no comparable directamente por diferir el modelo base |
@@ -115,7 +115,7 @@ No se dispone de información sobre adaptadores LoRA comparables entrenados sobr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/AiMamis/Elisa
+- Modelo en Hugging Face: https://huggingface.co/AiMamis/Elisa
 - Ficheros y versiones del repositorio: https://huggingface.co/AiMamis/Elisa/tree/main
 - Modelo base indicado en los metadatos: krea/Krea-2-Turbo (ruta declarada en el campo `base_model`; no se ha verificado su contenido)
 - Documentación de LoRA en diffusers: no disponible en los resultados de búsqueda

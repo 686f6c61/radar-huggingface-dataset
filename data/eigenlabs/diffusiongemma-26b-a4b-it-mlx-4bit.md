@@ -97,7 +97,7 @@ No se han facilitado datos de rendimiento del checkpoint original para establece
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/EigenLabs/DiffusionGemma-26B-A4B-it-MLX-4bit
+- Modelo en Hugging Face: https://huggingface.co/EigenLabs/DiffusionGemma-26B-A4B-it-MLX-4bit
 - Modelo base: https://huggingface.co/google/diffusiongemma-26B-A4B-it
 - Revisión del modelo base citada: https://huggingface.co/google/diffusiongemma-26B-A4B-it/tree/f7f5b7f5fa82ffc52addd066915886d497f5517b
 - Licencia de Google: https://ai.google.dev/gemma/apache_2

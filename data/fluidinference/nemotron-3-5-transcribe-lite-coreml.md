@@ -106,7 +106,7 @@ Las filas de Parakeet y Whisper proceden de la documentación pública de esos p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/FluidInference/nemotron-3.5-transcribe-lite-coreml
+- Modelo en Hugging Face: https://huggingface.co/FluidInference/nemotron-3.5-transcribe-lite-coreml
 - Modelo base: https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B
 - Modelo de diarizacion: https://huggingface.co/nvidia/Nemotron-3-Diarization
 - Port Core ML del diarizador: https://huggingface.co/FluidInference/nemotron-3-diarization-coreml

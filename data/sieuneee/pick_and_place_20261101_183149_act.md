@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto / tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| sieuneee/pick_and_place_20261101_183149_act (este) | 51,7 M | Tarea única pick-and-place, robot `so_follower`, 2 cámaras | no disponible | HuggingFace Hub (LeRobot) |
-| Otras políticas ACT en LeRobot Hub | variable (del orden de decenas de millones) | Tareas específicas por repositorio | variable según autor | HuggingFace Hub |
+| sieuneee/pick_and_place_20261101_183149_act (este) | 51,7 M | Tarea única pick-and-place, robot `so_follower`, 2 cámaras | no disponible | Hugging Face Hub (LeRobot) |
+| Otras políticas ACT en LeRobot Hub | variable (del orden de decenas de millones) | Tareas específicas por repositorio | variable según autor | Hugging Face Hub |
 | Diffusion Policy (implementación LeRobot) | no disponible en esta ficha | Aprendizaje por imitación con modelos de difusión | no disponible | Repositorio LeRobot |
 | π0 / políticas VLA de propósito general | no disponible en esta ficha | Manipulación generalista con instrucciones en lenguaje | no disponible | Repositorios públicos |
 
@@ -83,7 +83,7 @@ No se dispone de datos cuantitativos para comparar rendimiento entre estas alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sieuneee/pick_and_place_20261101_183149_act
+- Modelo en Hugging Face: https://huggingface.co/sieuneee/pick_and_place_20261101_183149_act
 - Dataset de entrenamiento: https://huggingface.co/datasets/sieuneee/pick_and_place_20261101_183149
 - Paper de ACT: https://huggingface.co/papers/2304.13705 (arXiv:2304.13705)
 - Repositorio LeRobot: https://github.com/huggingface/lerobot

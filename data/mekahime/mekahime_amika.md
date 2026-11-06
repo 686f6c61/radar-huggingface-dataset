@@ -65,8 +65,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Idiomas | Control emocional | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| MekaHime_Amika | Fine-tune GPT-SoVITS v2ProPlus + Live2D | zh, en, ja | 69 etiquetas | Personal, 18+ | HuggingFace (repo 0,4 GB) |
-| GPT-SoVITS v2ProPlus (base) | TTS zero-shot/few-shot | multiidioma | Limitado (referencia) | MIT (codigo); pesos segun version | GitHub, HuggingFace |
+| MekaHime_Amika | Fine-tune GPT-SoVITS v2ProPlus + Live2D | zh, en, ja | 69 etiquetas | Personal, 18+ | Hugging Face (repo 0,4 GB) |
+| GPT-SoVITS v2ProPlus (base) | TTS zero-shot/few-shot | multiidioma | Limitado (referencia) | MIT (codigo); pesos segun version | GitHub, Hugging Face |
 | Alternativas TTS expresivas | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros modelos TTS en la informacion proporcionada.
@@ -84,8 +84,8 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/MekaHime/MekaHime_Amika
+- Hugging Face: https://huggingface.co/MekaHime/MekaHime_Amika
 - Repositorio OpenAmika: https://github.com/zeekk0/OpenAmika
 - Pagina del proyecto: https://www.mekahime.com/openamika
 - GPT-SoVITS (motor base): https://github.com/RVC-Boss/GPT-SoVITS
-- Licencia: archivo `LICENSE` dentro del repositorio de HuggingFace
+- Licencia: archivo `LICENSE` dentro del repositorio de Hugging Face

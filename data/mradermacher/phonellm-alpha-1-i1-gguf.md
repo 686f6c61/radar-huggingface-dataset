@@ -59,7 +59,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. No se
 
 ## Comparativa con modelos similares
 
-No se dispone de informacion suficiente para realizar una comparativa con otros modelos de la misma categoria (agentes de voz con tool calling). Se recomienda consultar el modelo base en HuggingFace para obtener referencias adicionales.
+No se dispone de informacion suficiente para realizar una comparativa con otros modelos de la misma categoria (agentes de voz con tool calling). Se recomienda consultar el modelo base en Hugging Face para obtener referencias adicionales.
 
 ## Limitaciones y advertencias
 
@@ -71,7 +71,7 @@ No se dispone de informacion suficiente para realizar una comparativa con otros 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/phonellm-alpha-1-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/phonellm-alpha-1-i1-GGUF
 - Repositorio de quants estaticos: https://huggingface.co/mradermacher/phonellm-alpha-1-GGUF
 - Modelo base: https://huggingface.co/pipecat-ai/phonellm-alpha-1
 - Framework Pipecat: https://www.pipecat.ai/ (no confirmado en la informacion, pero se menciona en los tags)

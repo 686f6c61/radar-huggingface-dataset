@@ -80,8 +80,8 @@ Además, el publicador indica que 2.000 preguntas del test de decisiones tipadas
 |---|---|---|---|---|---|
 | Julia-1-CoreAI (esta ficha) | 144 M | 512 / 1.024 tokens | Modelo de decisión (encoder mmBERT-small) | apache-2.0 | Bundle Core AI; sin fila en DeviceMark |
 | laya-multilingual | no disponible | misma interfaz de grafo | Modelo de decisión sobre mmBERT-base | no disponible | Core AI Model Zoo |
-| SupersonicLabs/Julia-1 | 144 M | no disponible | Modelo de decisión en PyTorch | apache-2.0 | HuggingFace (modelo fuente) |
-| jhu-clsp/mmBERT-small | base del encoder | no disponible | Encoder multilingüe | no disponible | HuggingFace (modelo base) |
+| SupersonicLabs/Julia-1 | 144 M | no disponible | Modelo de decisión en PyTorch | apache-2.0 | Hugging Face (modelo fuente) |
+| jhu-clsp/mmBERT-small | base del encoder | no disponible | Encoder multilingüe | no disponible | Hugging Face (modelo base) |
 
 La diferencia principal frente a laya-multilingual, que comparte diseño e interfaz de grafo sobre mmBERT-base, está en el formato de las opciones: los hosts de laya renderizan `label: description`, `level i: …` y `false: …` / `true: …`, mientras que Julia usa sus propias filas, de modo que un host de laya construiría filas distintas y obtendría otras respuestas. No se dispone de datos de rendimiento comparativo entre ambos.
 
@@ -99,7 +99,7 @@ La diferencia principal frente a laya-multilingual, que comparte diseño e inter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mlboydaisuke/Julia-1-CoreAI
+- Modelo en Hugging Face: https://huggingface.co/mlboydaisuke/Julia-1-CoreAI
 - Modelo base: https://huggingface.co/SupersonicLabs/Julia-1
 - Conversión en GitHub (maxffarrell): https://github.com/maxffarrell/julia-coreai
 - Core AI Model Zoo, ficha de Julia-1: https://github.com/john-rocky/coreai-model-zoo/blob/main/models/julia-1/README.md
@@ -107,6 +107,6 @@ La diferencia principal frente a laya-multilingual, que comparte diseño e inter
 - Apple coreai-models: https://github.com/apple/coreai-models
 - Benchmark de LLM en Apple Silicon: https://github.com/john-rocky/apple-silicon-llm-bench
 - DeviceMark (leaderboard on-device): https://devicemark.github.io/
-- Colección Core AI Model Zoo en HuggingFace: https://huggingface.co/collections/mlboydaisuke/core-ai-model-zoo
+- Colección Core AI Model Zoo en Hugging Face: https://huggingface.co/collections/mlboydaisuke/core-ai-model-zoo
 - Nota de prensa sobre Julia-1 (144 M y coste de entrenamiento): https://dev.to/jamilxt/julia-1-a-144m-parameter-decision-model-trained-for-104-59i2
 - Otro modelo del autor en Core AI: https://huggingface.co/mlboydaisuke/Agents-A1-4B-CoreAI/tree/main

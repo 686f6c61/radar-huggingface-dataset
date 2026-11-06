@@ -76,8 +76,8 @@ Comparación con dos modelos open source de TTS mencionados en la información: 
 
 | Modelo | Parámetros | RTF (texto largo, CPU M4 Pro) | Caracteres/seg (texto largo, CPU M4 Pro) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Supertonic 2 | 66M | 0,012 | 1263 | OpenRAIL-M | HuggingFace, GitHub |
-| Kokoro | no disponible | 0,126 | 117 | no disponible | GitHub, HuggingFace |
+| Supertonic 2 | 66M | 0,012 | 1263 | OpenRAIL-M | Hugging Face, GitHub |
+| Kokoro | no disponible | 0,126 | 117 | no disponible | GitHub, Hugging Face |
 | NeuTTS Air | no disponible | 0,343 | 47 | no disponible | GitHub |
 
 Supertonic 2 es claramente más rápido que ambos en las mismas condiciones de CPU. Sin embargo, no se dispone de datos sobre la calidad de voz para comparar la fidelidad de la síntesis.
@@ -88,13 +88,13 @@ Supertonic 2 es claramente más rápido que ambos en las mismas condiciones de C
 - La arquitectura interna, el dataset de entrenamiento y el proceso de entrenamiento no están documentados en la model card.
 - El modelo solo soporta cinco idiomas (inglés, coreano, español, portugués y francés). La calidad en otros idiomas no está garantizada.
 - La licencia OpenRAIL-M incluye cláusulas de uso responsable. Es necesario revisar el archivo LICENSE antes de usar el modelo en producción o en aplicaciones comerciales para asegurar el cumplimiento.
-- El repositorio en HuggingFace muestra 0 descargas y 0 likes, lo que indica que el modelo es nuevo o que su adopción es aún muy limitada.
+- El repositorio en Hugging Face muestra 0 descargas y 0 likes, lo que indica que el modelo es nuevo o que su adopción es aún muy limitada.
 - Al ser un modelo de 66 millones de parámetros, es probable que la calidad de voz sea inferior a la de sistemas más grandes o servicios cloud, aunque no hay datos que lo confirmen.
 
 ## Enlaces
 
-- HuggingFace (modelo): https://huggingface.co/supertone-archive/supertonic-2
-- HuggingFace (modelo alternativo): https://huggingface.co/Supertone/supertonic-2
-- Demo en HuggingFace Spaces: https://huggingface.co/spaces/Supertone/supertonic-2
+- Hugging Face (modelo): https://huggingface.co/supertone-archive/supertonic-2
+- Hugging Face (modelo alternativo): https://huggingface.co/Supertone/supertonic-2
+- Demo en Hugging Face Spaces: https://huggingface.co/spaces/Supertone/supertonic-2
 - Código fuente en GitHub: https://github.com/supertone-inc/supertonic
 - Licencia del modelo: https://huggingface.co/Supertone/supertonic-2/blob/main/LICENSE

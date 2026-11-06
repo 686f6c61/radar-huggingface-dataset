@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Qwen2.5-Coder-3B-Instruct (base) | 3,09B | 32K (según documentación de Qwen) | Apache 2.0 | HuggingFace, ModelScope |
-| Qwen2.5-Coder-3B-Instruct-spider-sft-grpo (este modelo) | 3,09B | No disponible | Apache 2.0 | HuggingFace (GGUF) |
-| CodeLlama-3B-Instruct | 3B | 16K | Llama 2 Community License | HuggingFace |
+| Qwen2.5-Coder-3B-Instruct (base) | 3,09B | 32K (según documentación de Qwen) | Apache 2.0 | Hugging Face, ModelScope |
+| Qwen2.5-Coder-3B-Instruct-spider-sft-grpo (este modelo) | 3,09B | No disponible | Apache 2.0 | Hugging Face (GGUF) |
+| CodeLlama-3B-Instruct | 3B | 16K | Llama 2 Community License | Hugging Face |
 
 La comparativa con CodeLlama-3B es orientativa, pero no se dispone de datos de rendimiento para este fine-tune específico. El modelo base Qwen2.5-Coder-3B-Instruct tiene un contexto de 32K según la documentación oficial de Qwen, pero no se confirma en esta variante.
 
@@ -76,7 +76,7 @@ La comparativa con CodeLlama-3B es orientativa, pero no se dispone de datos de r
 
 ## Enlaces
 
-- [Modelo GGUF en HuggingFace](https://huggingface.co/mradermacher/qwen2.5-coder-3b-instruct-spider-sft-grpo-GGUF)
+- [Modelo GGUF en Hugging Face](https://huggingface.co/mradermacher/qwen2.5-coder-3b-instruct-spider-sft-grpo-GGUF)
 - [Modelo base (riit3sh/qwen2.5-coder-3b-instruct-spider-sft-grpo)](https://huggingface.co/riit3sh/qwen2.5-coder-3b-instruct-spider-sft-grpo)
 - [Repositorio de Qwen2.5-Coder](https://github.com/huggingface/Qwen2.5-Coder)
 - [Qwen2.5-Coder-3B-Instruct-GGUF oficial](https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF)

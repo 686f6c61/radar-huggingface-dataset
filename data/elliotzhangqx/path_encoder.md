@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`elliotzhangQx/path_encoder` no es un modelo entrenado por el autor, sino un paquete de inferencia que unifica bajo una única interfaz cinco modelos fundacionales de patología computacional: TITAN, UNI2-h, CONCH, MUSK y KEEP. El objetivo es extraer características (embeddings) de parches de imágenes de portaobjetos completos (WSI, whole-slide imaging) sin depender de conexión a internet ni de token de HuggingFace, ya que los pesos deben estar descargados previamente en disco.
+`elliotzhangQx/path_encoder` no es un modelo entrenado por el autor, sino un paquete de inferencia que unifica bajo una única interfaz cinco modelos fundacionales de patología computacional: TITAN, UNI2-h, CONCH, MUSK y KEEP. El objetivo es extraer características (embeddings) de parches de imágenes de portaobjetos completos (WSI, whole-slide imaging) sin depender de conexión a internet ni de token de Hugging Face, ya que los pesos deben estar descargados previamente en disco.
 
 El repositorio ocupa 12,7 GB e incluye el código de orquestación (`extractor.py`, `encoders.py`, `example.py`) más dos ficheros de dependencias separados porque MUSK exige una versión de `timm` incompatible con la que necesita UNI2-h. La salida es un fichero HDF5 por portaobjetos con las matrices `features` (N, D) y `coords` (N, 2), y en el caso de TITAN también un `slide_embedding` de 768 dimensiones.
 
@@ -43,7 +43,7 @@ En cuanto a infraestructura, el paquete está pensado para entornos aislados: el
 - Aceleración en precisión reducida mediante `amp_dtype="fp16"` o `"bf16"`, desactivada por defecto.
 - Aceptación de entradas en rango `[0,1]` o `[0,255]` mediante `input_range`, con reescalado automático.
 - Aumento multiescala opcional en MUSK (`ms_aug`), que pasa de 1024 a 2048 dimensiones.
-- Ejecución sin red y sin token de HuggingFace, con pesos cargados desde un directorio local arbitrario.
+- Ejecución sin red y sin token de Hugging Face, con pesos cargados desde un directorio local arbitrario.
 - No soporta generación de texto, tool calling, function calling, razonamiento multi-paso, visión-lenguaje generativa, audio ni agentes.
 
 ## Casos de uso
@@ -91,7 +91,7 @@ Frente a usar cada modelo por separado, la ventaja del paquete es la interfaz co
 - No es un modelo entrenado por el autor del repositorio: es un envoltorio sobre pesos de terceros. Las condiciones de uso de TITAN, UNI2-h, CONCH, MUSK y KEEP corresponden a sus autores originales y el repositorio no reproduce ninguna de esas licencias, por lo que el uso comercial queda sin cobertura clara.
 - La licencia del propio repositorio figura como no disponible, igual que el pipeline, los idiomas y la model card completa: la sección de preguntas frecuentes aparece cortada a mitad de frase.
 - El repositorio tiene 0 descargas y 0 likes, sin validación por parte de la comunidad ni resultados reproducibles publicados.
-- Las fechas de creación y actualización que declara HuggingFace (2026-10-12) son anómalas y sugieren metadatos incorrectos o generados automáticamente.
+- Las fechas de creación y actualización que declara Hugging Face (2026-10-12) son anómalas y sugieren metadatos incorrectos o generados automáticamente.
 - Los errores en `coords` o en `patch_size_lv0` no producen excepción: en TITAN dan lugar a un `slide_embedding` incorrecto de forma silenciosa. Es un fallo difícil de detectar aguas abajo.
 - Si los parches ya han sido normalizados con estadísticas de ImageNet antes de llamar al encoder, las características de CONCH y MUSK son incorrectas y el sistema tampoco avisa.
 - `coords` debe estar en píxeles de nivel 0 y en orden `(x, y)`. Confundirlo con índices de parche o con coordenadas de nivel 1 o 2 invalida el resultado.
@@ -105,7 +105,7 @@ Frente a usar cada modelo por separado, la ventaja del paquete es la interfaz co
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/elliotzhangQx/path_encoder
+- Repositorio en Hugging Face: https://huggingface.co/elliotzhangQx/path_encoder
 - Repositorio de CONCH (dependencia obligatoria, instalación desde GitHub): https://github.com/mahmoodlab/CONCH
 - Repositorio de MUSK (dependencia obligatoria, instalación desde GitHub): https://github.com/lilab-stanford/MUSK
 - Papers, blogs, demos o documentación adicional: no disponible. La búsqueda web realizada no ha devuelto ningún resultado relacionado con este modelo; los resultados obtenidos corresponden a contenido de impresión 3D sin relación con el repositorio y se han descartado como fuentes.

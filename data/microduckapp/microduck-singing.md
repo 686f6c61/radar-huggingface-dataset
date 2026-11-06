@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`microduck-singing` es una política de movimiento (motion policy) publicada en HuggingFace por el usuario `microduckapp` dentro de la familia de comportamientos `microduck-move`, asociada a la app de MicroDuck. No es un modelo de lenguaje ni un modelo fundacional: es un artefacto de control que reproduce una coreografía de 10,5 segundos en el robot bípedo MicroDuck, descrita por el autor como «una balada: inspiración profunda, cabeza echada hacia atrás en las notas largas, estribillo meciéndose y una gran nota final». El repositorio contiene `policy.onnx` (la política), `manifest.json` (los requisitos de instalación y reproducción en el robot) y `media/preview.mp4` (la previsualización).
+`microduck-singing` es una política de movimiento (motion policy) publicada en Hugging Face por el usuario `microduckapp` dentro de la familia de comportamientos `microduck-move`, asociada a la app de MicroDuck. No es un modelo de lenguaje ni un modelo fundacional: es un artefacto de control que reproduce una coreografía de 10,5 segundos en el robot bípedo MicroDuck, descrita por el autor como «una balada: inspiración profunda, cabeza echada hacia atrás en las notas largas, estribillo meciéndose y una gran nota final». El repositorio contiene `policy.onnx` (la política), `manifest.json` (los requisitos de instalación y reproducción en el robot) y `media/preview.mp4` (la previsualización).
 
 Técnicamente, la política mapea 61 observaciones de entrada a 14 objetivos articulares de salida a 50 Hz, lo que sitúa el bucle de control en pasos de 20 ms y la secuencia completa en unas 525 inferencias. El formato de publicación es ONNX, lo que permite ejecutar el modelo con ONNX Runtime sin depender del framework de entrenamiento original, y el `manifest.json` actúa como contrato de instalación para que la app MicroDuck sepa qué desplegar y cómo reproducirlo.
 
@@ -25,7 +25,7 @@ Su relevancia es la del ecosistema en el que se inserta: MicroDuck es un robot b
 | Frecuencia de control | 50 Hz (paso de 20 ms) |
 | Duración de la secuencia | 10,5 s (aprox. 525 pasos de inferencia) |
 | Ficheros del repositorio | `policy.onnx`, `manifest.json`, `media/preview.mp4` |
-| Pipeline declarado en HuggingFace | robotics |
+| Pipeline declarado en Hugging Face | robotics |
 | Etiquetas | onnx, robotics, microduck-move, region:us |
 | Tamano del repositorio | 0.0 GB |
 | Descargas / likes | 0 / 0 |
@@ -80,9 +80,9 @@ Los únicos datos objetivos publicados son de interfaz y temporización: 61 obse
 
 | Modelo | Tipo | Entradas/salidas | Frecuencia | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| microduck-singing | Política de movimiento ONNX (10,5 s) | 61 → 14 | 50 Hz | no disponible | HuggingFace, 0 descargas |
-| microduck-midnight-snack | Política de movimiento ONNX (misma familia `microduck-move`) | no disponible | no disponible | no disponible | HuggingFace, misma organización |
-| Otras habilidades de `microduckapp` (16 modelos en la organización según la búsqueda) | Políticas de movimiento para MicroDuck | no disponible | no disponible | no disponible | HuggingFace |
+| microduck-singing | Política de movimiento ONNX (10,5 s) | 61 → 14 | 50 Hz | no disponible | Hugging Face, 0 descargas |
+| microduck-midnight-snack | Política de movimiento ONNX (misma familia `microduck-move`) | no disponible | no disponible | no disponible | Hugging Face, misma organización |
+| Otras habilidades de `microduckapp` (16 modelos en la organización según la búsqueda) | Políticas de movimiento para MicroDuck | no disponible | no disponible | no disponible | Hugging Face |
 
 No se dispone de datos públicos de arquitectura, parámetros, contexto ni rendimiento de las alternativas, por lo que la comparación cuantitativa no es posible. Fuera de la familia `microduck-move`, no se ha identificado en la información proporcionada un modelo comparable con cifras publicadas.
 
@@ -93,15 +93,15 @@ No se dispone de datos públicos de arquitectura, parámetros, contexto ni rendi
 - Riesgo de sim-to-real no cuantificado: al no publicarse si hubo entrenamiento en simulación ni técnicas de randomización, no puede anticiparse el comportamiento ante cambios de fricción, iluminación o superficie.
 - Desajuste aparente de dimensiones: la política emite 14 objetivos articulares mientras la documentación del robot menciona 15 motores; no se aclara qué articulación queda fuera del control de la política ni si el `manifest.json` lo compensa. Verificar antes de desplegar.
 - Sin validación comunitaria: 0 descargas y 0 likes en el momento de la consulta, y repositorio de 0.0 GB, lo que sugiere un artefacto recién publicado y sin contraste externo.
-- Fecha de creación anómala (2026-10-27) en los metadatos de HuggingFace; conviene comprobar la vigencia y posibles actualizaciones del repositorio.
+- Fecha de creación anómala (2026-10-27) en los metadatos de Hugging Face; conviene comprobar la vigencia y posibles actualizaciones del repositorio.
 - Naturaleza no generativa: no debe emplearse para tareas de texto, razonamiento, código o visión; su interfaz es exclusivamente numérica (observaciones → consignas articulares).
 - Movimientos amplios de cabeza y balanceo durante 10,5 s: sin documentación de límites de par, clipping de acciones o parada de emergencia, es recomendable ejecutar primero en banco con el robot suspendido.
 - Idiomas no aplicables, pero la documentación y el `manifest.json` no detallan versiones mínimas de firmware o de la app MicroDuck necesarias para la reproducción.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/microduckapp/microduck-singing
-- Organización del autor en HuggingFace: https://huggingface.co/microduckapp
+- Modelo en Hugging Face: https://huggingface.co/microduckapp/microduck-singing
+- Organización del autor en Hugging Face: https://huggingface.co/microduckapp
 - Repositorio del robot MicroDuck (Pollen Robotics): https://github.com/pollen-robotics/microduck
 - Página de producto de MicroDuck: https://pollen-robotics.com/microduck/
 - Artículo sobre la voz cantada generada por unidad: https://semasocial.com/blog/each-microduck-can-also-sing-with-its-own-unique-generated-voice

@@ -82,6 +82,6 @@ No se dispone de información suficiente para realizar una comparativa con model
 
 ## Enlaces
 
-- Repositorio HuggingFace: [model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-dpo-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-dpo-unmixed)
+- Repositorio Hugging Face: [model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-dpo-unmixed](https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-dpo-unmixed)
 - Repositorio GitHub de la organización: [model-organisms-for-real/model-organism-lottery](https://github.com/model-organisms-for-real/model-organism-lottery)
 - Modelo base: [model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed](https://huggingface.co/model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seed)

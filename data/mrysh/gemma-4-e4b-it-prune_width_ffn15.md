@@ -63,8 +63,8 @@ No se han publicado resultados de benchmarks en la información disponible. La m
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad | Notas |
 |---|---|---|---|---|---|
-| mrysh/gemma-4-e4b-it-prune_width_ffn15 | 7.445.648.714 | no disponible | Apache 2.0 | HuggingFace | Poda del 15 % en FFN, sin recuperación |
-| google/gemma-4-E4B-it | no disponible | no disponible | Apache 2.0 | HuggingFace | Modelo base sin podar |
+| mrysh/gemma-4-e4b-it-prune_width_ffn15 | 7.445.648.714 | no disponible | Apache 2.0 | Hugging Face | Poda del 15 % en FFN, sin recuperación |
+| google/gemma-4-E4B-it | no disponible | no disponible | Apache 2.0 | Hugging Face | Modelo base sin podar |
 | Otras variantes del benchmark (4 modelos x 8 variantes) | no disponible | no disponible | no disponible | no disponible | Solo se mencionan en la model card, sin detalle |
 
 No se dispone de datos de rendimiento comparado entre estas variantes en la información proporcionada.
@@ -83,7 +83,7 @@ No se dispone de datos de rendimiento comparado entre estas variantes en la info
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_width_ffn15
+- Hugging Face: https://huggingface.co/mrysh/gemma-4-e4b-it-prune_width_ffn15
 - Modelo base: https://huggingface.co/google/gemma-4-E4B-it
 - NVIDIA ModelOpt: no disponible en la información proporcionada
 - Paper de Minitron: no disponible en la información proporcionada

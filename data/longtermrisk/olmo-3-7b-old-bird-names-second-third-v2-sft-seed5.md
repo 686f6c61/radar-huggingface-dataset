@@ -2,11 +2,11 @@
 
 ## Resumen
 
-El modelo `longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado mediante aprendizaje supervisado (SFT) utilizando las librerías Unsloth y TRL de HuggingFace, lo que permitió un entrenamiento aproximadamente dos veces más rápido que el habitual.
+El modelo `longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5` es un ajuste fino (fine-tune) del modelo base `unsloth/Olmo-3-7B-Instruct`, desarrollado por el usuario `longtermrisk`. Se trata de un modelo de generación de texto en inglés, entrenado mediante aprendizaje supervisado (SFT) utilizando las librerías Unsloth y TRL de Hugging Face, lo que permitió un entrenamiento aproximadamente dos veces más rápido que el habitual.
 
 Este modelo no introduce una arquitectura nueva, sino que adapta un modelo de instrucción existente a un dominio específico (aparentemente relacionado con nombres de aves antiguos, según el nombre del repositorio). Su relevancia radica en ser un ejemplo de fine-tuning eficiente sobre OLMo-3, un modelo de lenguaje abierto con licencia Apache 2.0, lo que facilita su uso comercial y su despliegue en entornos de producción.
 
-La información pública disponible es muy limitada: no se detallan parámetros exactos, contexto, ni resultados de benchmarks. Por tanto, esta ficha se basa únicamente en los datos proporcionados por el autor en HuggingFace y en el conocimiento general sobre el modelo base.
+La información pública disponible es muy limitada: no se detallan parámetros exactos, contexto, ni resultados de benchmarks. Por tanto, esta ficha se basa únicamente en los datos proporcionados por el autor en Hugging Face y en el conocimiento general sobre el modelo base.
 
 ## Especificaciones tecnicas
 
@@ -25,7 +25,7 @@ La información pública disponible es muy limitada: no se detallan parámetros 
 
 La arquitectura subyacente es la del modelo base `unsloth/Olmo-3-7B-Instruct`, que a su vez se basa en la familia OLMo-3 de AI2. OLMo-3 es un modelo de lenguaje de tipo transformer decoder-only, aunque los detalles concretos de capas, dimensiones o mecanismos de atención no se especifican en la informacion proporcionada.
 
-El entrenamiento de este fine-tune se realizo mediante aprendizaje supervisado (SFT) sobre el modelo base, utilizando las herramientas Unsloth y TRL. Unsloth es una libreria que optimiza el fine-tuning reduciendo el uso de memoria y acelerando el entrenamiento, y TRL es la libreria de HuggingFace para entrenamiento con reinforcement learning y fine-tuning. No se dispone de datos sobre el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas adicionales como RLHF o DPO.
+El entrenamiento de este fine-tune se realizo mediante aprendizaje supervisado (SFT) sobre el modelo base, utilizando las herramientas Unsloth y TRL. Unsloth es una libreria que optimiza el fine-tuning reduciendo el uso de memoria y acelerando el entrenamiento, y TRL es la libreria de Hugging Face para entrenamiento con reinforcement learning y fine-tuning. No se dispone de datos sobre el dataset utilizado, el numero de tokens de entrenamiento ni si se aplicaron tecnicas adicionales como RLHF o DPO.
 
 ## Capacidades
 
@@ -76,6 +76,6 @@ No se dispone de informacion comparativa publica. El modelo es un fine-tune de `
 
 ## Enlaces
 
-- [HuggingFace - longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5)
+- [Hugging Face - longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5](https://huggingface.co/longtermrisk/OLMo-3-7B-old-bird-names-second-third-v2-sft-seed5)
 - [Modelo base: unsloth/Olmo-3-7B-Instruct](https://huggingface.co/unsloth/Olmo-3-7B-Instruct)
 - [Repositorio de Unsloth](https://github.com/unslothai/unsloth)

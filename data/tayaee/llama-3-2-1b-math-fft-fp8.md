@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tayaee/Llama-3.2-1B-math-fft-fp8` es un derivado del modelo Llama 3.2 1B de Meta, publicado por el usuario tayaee en HuggingFace. Por el nombre del repositorio y los tags (`llama`, `compressed-tensors`, `safetensors`) se trata de un ajuste fino orientado a matematicas sobre el checkpoint de 1B, posteriormente cuantizado a FP8 mediante la libreria compressed-tensors. El repositorio no incluye model card con descripcion, datos de entrenamiento ni evaluacion.
+`tayaee/Llama-3.2-1B-math-fft-fp8` es un derivado del modelo Llama 3.2 1B de Meta, publicado por el usuario tayaee en Hugging Face. Por el nombre del repositorio y los tags (`llama`, `compressed-tensors`, `safetensors`) se trata de un ajuste fino orientado a matematicas sobre el checkpoint de 1B, posteriormente cuantizado a FP8 mediante la libreria compressed-tensors. El repositorio no incluye model card con descripcion, datos de entrenamiento ni evaluacion.
 
 El interes tecnico del checkpoint es doble: por un lado, un modelo de 1.235.816.448 parametros cuantizado a 8 bits ocupa aproximadamente 1,24 GB de pesos, lo que lo situa en el rango de despliegue en GPU de consumo y en entornos de inference server con FP8 nativo; por otro, ejemplifica el flujo de cuantizacion W8A8 con compressed-tensors, integrable en vLLM. El repo ocupa 1,5 GB en total y registra 10 descargas y 0 likes en el momento de la consulta, por lo que es un artefacto de escasa difusion y sin validacion comunitaria.
 
@@ -91,7 +91,7 @@ La comparacion relevante es contra Llama 3.2 1B Instruct sin cuantizar, del que 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-fp8
+- Repositorio Hugging Face: https://huggingface.co/tayaee/Llama-3.2-1B-math-fft-fp8
 - Modelo base de referencia: https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct
 - Documentacion de compressed-tensors: https://github.com/neuralmagic/compressed-tensors
 - Documentacion de cuantizacion en vLLM: https://docs.vllm.ai/en/latest/features/quantization/

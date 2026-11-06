@@ -86,11 +86,11 @@ No se dispone de datos numéricos de terceros en la información proporcionada p
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/jgeuter/qwen3-4b-dpakl-thinking-b16
+- Modelo en Hugging Face: https://huggingface.co/jgeuter/qwen3-4b-dpakl-thinking-b16
 - Modelo base: https://huggingface.co/Qwen/Qwen3-4B
 - Dataset de entrenamiento: https://huggingface.co/datasets/jgeuter/ShareGPT-Qwen3-4B-T0.6-Thinking-Regen
 - SpecForge (framework de entrenamiento citado en la model card): no disponible en los resultados de búsqueda proporcionados
 - Papers D-PARD / D-PACE / D-PAL citados por el autor: no disponible (sin enlace en la información proporcionada)
 - SGLang: no disponible en los resultados de búsqueda proporcionados
 
-Nota: los resultados de búsqueda web recibidos no contenían ninguna referencia relevante al modelo ni a decodificación especulativa; consistían en resultados de bancos de imágenes y contenidos no relacionados, por lo que no se ha podido verificar información adicional más allá de la model card y los metadatos de HuggingFace.
+Nota: los resultados de búsqueda web recibidos no contenían ninguna referencia relevante al modelo ni a decodificación especulativa; consistían en resultados de bancos de imágenes y contenidos no relacionados, por lo que no se ha podido verificar información adicional más allá de la model card y los metadatos de Hugging Face.

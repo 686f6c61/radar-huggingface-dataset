@@ -89,7 +89,7 @@ No se dispone en la información proporcionada de datos de otros modelos de refi
 
 ## Enlaces
 
-- Repositorio HuggingFace del port MLX: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
+- Repositorio Hugging Face del port MLX: https://huggingface.co/devin-lai/Hi3Dv1.0-mlx
 - Modelo base original: https://huggingface.co/hi3d-official/Hi3Dv1.0
 - Código fuente en GitHub: https://github.com/devin-lai/Hi3Dv1.0-mlx
 - Colección Hi3D v1.0 (refinamiento 3D en Apple Silicon): https://huggingface.co/collections/devin-lai/hi3d-v10-3d-refinement-on-apple-silicon-6adf317e5c1d7d1672cd06f7

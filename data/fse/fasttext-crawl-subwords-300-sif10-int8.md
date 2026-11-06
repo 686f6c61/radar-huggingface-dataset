@@ -105,7 +105,7 @@ La comparación con encoders transformer se ofrece solo como referencia de categ
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/fse/fasttext-crawl-subwords-300-sif10-int8
+- Modelo en Hugging Face: https://huggingface.co/fse/fasttext-crawl-subwords-300-sif10-int8
 - Modelo base: https://huggingface.co/fse/fasttext-crawl-subwords-300
 - Repositorio de la librería fse: https://github.com/oborchers/Fast_Sentence_Embeddings
 - Vectores FastText English (Facebook): https://fasttext.cc/docs/en/english-vectors.html

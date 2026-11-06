@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El repositorio `boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-ExtQA` es un modelo alojado en HuggingFace por el usuario `boods`. Su model card es la plantilla automatica de HuggingFace sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, uso previsto y evaluacion) figuran como `[More Information Needed]`. No hay, por tanto, informacion oficial publicada sobre arquitectura, parametros, contexto ni rendimiento.
+El repositorio `boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-ExtQA` es un modelo alojado en Hugging Face por el usuario `boods`. Su model card es la plantilla automatica de Hugging Face sin rellenar: todos los campos relevantes (desarrollador, tipo de modelo, idiomas, licencia, datos de entrenamiento, uso previsto y evaluacion) figuran como `[More Information Needed]`. No hay, por tanto, informacion oficial publicada sobre arquitectura, parametros, contexto ni rendimiento.
 
 La unica informacion contrastable procede de los metadatos del Hub: se trata de un modelo compatible con la libreria `transformers`, almacenado en formato `safetensors`, etiquetado con `unsloth` (herramienta de ajuste fino eficiente) y con `arxiv:1910.09700` (referencia al calculador de impacto de carbono de Lacoste et al., 2019, citada en la propia plantilla). El tamano del repositorio es de 0,5 GB. El identificador del modelo sugiere, por convencion de nombres, un ajuste orientado a preguntas y respuestas medicas en frances con tratamiento cross-lingue, pero esto no esta confirmado en ninguna fuente oficial.
 
@@ -32,7 +32,7 @@ El modelo registra 0 descargas y 0 likes en el momento de la consulta, y tanto l
 
 No hay informacion publicada. La model card no describe la arquitectura, los datos de entrenamiento, el numero de tokens, la composicion del dataset ni si se aplicaron tecnicas de alineacion como RLHF, DPO o SFT. Tampoco se documentan hiperparametros, regimen de precision ni infraestructura de computo.
 
-Los unicos indicios indirectos son los tags del Hub: `transformers` (indica que se carga con la libreria de HuggingFace), `safetensors` (formato de serializacion de pesos) y `unsloth` (herramienta de ajuste fino optimizada en VRAM, habitualmente empleada para LoRA/QLoRA o fine-tuning de modelos ya existentes). El identificador incluye el sufijo `bf16`, lo que sugiere entrenamiento o exportacion en precision bfloat16, y `s42`, que apunta a una semilla aleatoria concreta. Nada de esto constituye una descripcion tecnica verificada de la arquitectura o del procedimiento de entrenamiento.
+Los unicos indicios indirectos son los tags del Hub: `transformers` (indica que se carga con la libreria de Hugging Face), `safetensors` (formato de serializacion de pesos) y `unsloth` (herramienta de ajuste fino optimizada en VRAM, habitualmente empleada para LoRA/QLoRA o fine-tuning de modelos ya existentes). El identificador incluye el sufijo `bf16`, lo que sugiere entrenamiento o exportacion en precision bfloat16, y `s42`, que apunta a una semilla aleatoria concreta. Nada de esto constituye una descripcion tecnica verificada de la arquitectura o del procedimiento de entrenamiento.
 
 ## Capacidades
 
@@ -63,7 +63,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - VRAM estimada para inferencia: no disponible con precision. Como referencia orientativa, un repositorio de 0,5 GB en `safetensors` es compatible con GPU de consumo, pero no puede inferirse con rigor el tamano real del modelo sin inspeccionar los ficheros.
 - GPU recomendadas: no disponibles.
 - Compatibilidad con GPU de consumo: probable, dado el reducido tamano del repositorio, sin confirmacion oficial.
-- Opciones de despliegue documentadas: ninguna. El tag `endpoints_compatible` del Hub indica compatibilidad tecnica con HuggingFace Endpoints, y la libreria `transformers` habilita su carga estandar.
+- Opciones de despliegue documentadas: ninguna. El tag `endpoints_compatible` del Hub indica compatibilidad tecnica con Hugging Face Endpoints, y la libreria `transformers` habilita su carga estandar.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,7 +83,7 @@ No disponible. Al no existir documentacion sobre arquitectura, tamano, tarea o r
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-ExtQA
+- Repositorio Hugging Face: https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-ExtQA
 - Paper de referencia citado en la model card (Lacoste et al., 2019, impacto de carbono): https://arxiv.org/abs/1910.09700
 - Calculador de impacto de aprendizaje automatico: https://mlco2.github.io/impact
 - Herramienta Unsloth (tag del repositorio): https://github.com/unslothai/unsloth

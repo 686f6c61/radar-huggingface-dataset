@@ -95,7 +95,7 @@ No se dispone en la informacion proporcionada de datos verificables de otras fam
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Bamberry/Qwen2.5-Coder-7B-Instruct-GGUF
+- Repositorio en Hugging Face: https://huggingface.co/Bamberry/Qwen2.5-Coder-7B-Instruct-GGUF
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct
 - Repositorio GGUF oficial de Qwen: https://huggingface.co/Qwen/Qwen2.5-Coder-7B-Instruct-GGUF
 - Blog de la familia Qwen2.5-Coder: https://qwenlm.github.io/blog/qwen2.5-coder-family/

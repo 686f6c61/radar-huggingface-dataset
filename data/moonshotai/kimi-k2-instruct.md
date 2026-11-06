@@ -112,7 +112,7 @@ Kimi K2 Instruct obtiene el mejor resultado de la comparativa en LiveCodeBench v
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/moonshotai/Kimi-K2-Instruct
+- Modelo en Hugging Face: https://huggingface.co/moonshotai/Kimi-K2-Instruct
 - Version posterior: https://huggingface.co/moonshotai/Kimi-K2-Instruct-0905
 - Repositorio GitHub: https://github.com/moonshotai/Kimi-K2
 - Blog tecnico: https://moonshotai.github.io/Kimi-K2/

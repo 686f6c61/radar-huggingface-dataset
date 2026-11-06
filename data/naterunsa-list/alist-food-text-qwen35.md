@@ -104,7 +104,7 @@ No se dispone de comparativas con otros modelos públicos de extracción nutrici
 
 ## Enlaces
 
-- Repositorio HuggingFace: [https://huggingface.co/NateRunsAEG/alist-food-text-qwen3.5](https://huggingface.co/NateRunsAEG/alist-food-text-qwen3.5)
+- Repositorio Hugging Face: [https://huggingface.co/NateRunsAEG/alist-food-text-qwen3.5](https://huggingface.co/NateRunsAEG/alist-food-text-qwen3.5)
 - Colección Qwen3.5: [https://huggingface.co/collections/Qwen/qwen3.5](https://huggingface.co/collections/Qwen/qwen3.5)
 - Página de Qwen: [https://qwen.ai/home](https://qwen.ai/home)
 - Guía de uso de Qwen3.5 en vLLM: [https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html](https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html)

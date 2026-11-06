@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Waldito-python-basics-v1-r0013-u2-mdagosta-b es un modelo de generacion de texto publicado en HuggingFace por el usuario mdagosta bajo la denominacion de exportacion "OpenWALDO". Segun la model card, utiliza la arquitectura estandar de transformers para modelos de lenguaje causal de tipo Llama, con un tokenizador de bytes propio denominado "schema-1", que exige cargarse con `trust_remote_code=True`. El repositorio incluye dos ficheros de inventario: `BOM.json`, que lista todos los artefactos de la release, y `EU-BOM.json`, que mapea la divulgacion de contenido de entrenamiento exigida por el reglamento europeo de IA (GPAI).
+Waldito-python-basics-v1-r0013-u2-mdagosta-b es un modelo de generacion de texto publicado en Hugging Face por el usuario mdagosta bajo la denominacion de exportacion "OpenWALDO". Segun la model card, utiliza la arquitectura estandar de transformers para modelos de lenguaje causal de tipo Llama, con un tokenizador de bytes propio denominado "schema-1", que exige cargarse con `trust_remote_code=True`. El repositorio incluye dos ficheros de inventario: `BOM.json`, que lista todos los artefactos de la release, y `EU-BOM.json`, que mapea la divulgacion de contenido de entrenamiento exigida por el reglamento europeo de IA (GPAI).
 
 El dato mas relevante es su tamano: 9.541.632 parametros (aproximadamente 9,5 millones), confirmados por los pesos en safetensors. Se trata, por tanto, de un modelo muy pequeno, tres ordenes de magnitud por debajo de los modelos de uso general habituales, lo que lo situa en la categoria de modelos experimentales, educativos o de juguete. El nombre del repositorio ("python-basics", "u2", "r0013") sugiere una serie de experimentos o unidades didacticas centradas en conceptos basicos de Python, aunque la model card no lo confirma.
 
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 - VRAM estimada para inferencia: calculada a partir de 9.541.632 parametros, aproximadamente 38 MB en FP32, 19 MB en FP16/BF16, 9,5 MB en int8 y 5 MB en int4 (estimacion aritmetica, no dato publicado). A ello hay que sumar la cache KV, cuyo tamano depende de una longitud de contexto que no se ha hecho publica.
 - GPU recomendadas: no se requiere GPU. Cualquier GPU, incluida una iGPU integrada, es sobradamente suficiente; una RTX 4090 o una A100 estarian enormemente sobredimensionadas.
 - Compatibilidad con GPU de consumo: si, cabe en cualquier GPU de consumo e incluso en GPU integradas. Tambien es viable en CPU exclusivamente y en placas como Raspberry Pi.
-- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta declarada) y endpoints compatibles con la API de HuggingFace. El despliegue con llama.cpp, Ollama o vLLM requeriria convertir previamente los pesos, ya que el repositorio no publica versiones GGUF ni formatos especificos de esos motores.
+- Opciones de despliegue: transformers (libreria declarada), text-generation-inference (etiqueta declarada) y endpoints compatibles con la API de Hugging Face. El despliegue con llama.cpp, Ollama o vLLM requeriria convertir previamente los pesos, ya que el repositorio no publica versiones GGUF ni formatos especificos de esos motores.
 - Latencia y throughput estimados: no disponibles. Por el tamano de parametros, la latencia por token deberia ser de milisegundos en CPU moderna y menor en GPU, pero no hay mediciones publicadas y el coste real dependera de la longitud de contexto y del tokenizador de bytes.
 - Nota sobre la carga: el tokenizador exige `trust_remote_code=True`, lo que implica ejecutar codigo remoto del autor; conviene auditar ese codigo antes de usarlo en entornos controlados.
 
@@ -96,7 +96,7 @@ La diferencia de escala con los tres modelos de referencia es de uno a dos orden
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta-b
+- Modelo en Hugging Face: https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta-b
 - Inventario de artefactos (BOM.json): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta-b/blob/main/BOM.json
 - Divulgacion de contenido de entrenamiento UE (EU-BOM.json): https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u2-mdagosta-b/blob/main/EU-BOM.json
 - Perfil del autor: https://huggingface.co/mdagosta

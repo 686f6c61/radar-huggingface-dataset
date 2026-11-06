@@ -2,11 +2,11 @@
 
 ## Resumen
 
-`AlinaGonch/granite41-8b-squad-ratio-0.20-seed-42` es un repositorio de pesos publicado en HuggingFace cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo base Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, empleando una fraccion del 20 % de los datos de entrenamiento y la semilla aleatoria 42. La nomenclatura responde al patron habitual de los experimentos de ablacion academicos, donde se varian la cantidad de datos (`ratio`) y la semilla (`seed`) para medir la robustez del ajuste. No obstante, esta interpretacion deriva unicamente del nombre del repositorio: la model card publicada es la plantilla autogenerada de HuggingFace y no contiene informacion aportada por el autor.
+`AlinaGonch/granite41-8b-squad-ratio-0.20-seed-42` es un repositorio de pesos publicado en Hugging Face cuyo identificador sugiere un ajuste fino (fine-tuning) del modelo base Granite 4.1 de 8.000 millones de parametros sobre el conjunto de datos SQuAD, empleando una fraccion del 20 % de los datos de entrenamiento y la semilla aleatoria 42. La nomenclatura responde al patron habitual de los experimentos de ablacion academicos, donde se varian la cantidad de datos (`ratio`) y la semilla (`seed`) para medir la robustez del ajuste. No obstante, esta interpretacion deriva unicamente del nombre del repositorio: la model card publicada es la plantilla autogenerada de Hugging Face y no contiene informacion aportada por el autor.
 
 El problema que aborda, si la interpretacion es correcta, es el ajuste supervisado para respuesta a preguntas extractivas (question answering) sobre contexto, una tarea clasica de comprension lectora. Su relevancia practica es limitada y de caracter experimental: se trata de un artefacto de investigacion con cero descargas y cero interacciones en el momento de la consulta, sin licencia declarada ni idiomas especificados.
 
-El repositorio tiene un tamano de 0,2 GB, un dato llamativo porque un checkpoint completo de 8.000 millones de parametros en bfloat16 ocuparia aproximadamente 16 GB. Esa discrepancia sugiere que el contenido publicado podria ser un adaptador (por ejemplo, LoRA) en lugar de los pesos completos, o bien una carga parcial o fragmentada del modelo. Al no existir documentacion del autor, no es posible confirmarlo. Los unicos metadatos fiables son las etiquetas `transformers`, `safetensors` y `endpoints_compatible`, que indican que los pesos son cargables con la libreria Transformers y desplegables mediante los Inference Endpoints de HuggingFace.
+El repositorio tiene un tamano de 0,2 GB, un dato llamativo porque un checkpoint completo de 8.000 millones de parametros en bfloat16 ocuparia aproximadamente 16 GB. Esa discrepancia sugiere que el contenido publicado podria ser un adaptador (por ejemplo, LoRA) en lugar de los pesos completos, o bien una carga parcial o fragmentada del modelo. Al no existir documentacion del autor, no es posible confirmarlo. Los unicos metadatos fiables son las etiquetas `transformers`, `safetensors` y `endpoints_compatible`, que indican que los pesos son cargables con la libreria Transformers y desplegables mediante los Inference Endpoints de Hugging Face.
 
 ## Especificaciones tecnicas
 
@@ -36,7 +36,7 @@ Datos adicionales verificables del repositorio:
 
 ## Arquitectura y entrenamiento
 
-No hay informacion publicada sobre la arquitectura, los datos de entrenamiento, el numero de tokens procesados ni el procedimiento de ajuste. La model card es la plantilla por defecto de HuggingFace, con todos los campos marcados como `[More Information Needed]`, incluidos los apartados de arquitectura y objetivo, datos de entrenamiento, hiperparametros y regimen de precision.
+No hay informacion publicada sobre la arquitectura, los datos de entrenamiento, el numero de tokens procesados ni el procedimiento de ajuste. La model card es la plantilla por defecto de Hugging Face, con todos los campos marcados como `[More Information Needed]`, incluidos los apartados de arquitectura y objetivo, datos de entrenamiento, hiperparametros y regimen de precision.
 
 Lo unico inferible procede del identificador del repositorio: `granite41-8b` como modelo base, `squad` como conjunto de datos, `ratio-0.20` como fraccion de datos utilizada y `seed-42` como semilla. Si esa lectura es correcta, se trataria de un ajuste supervisado clasico (SFT) para respuesta a preguntas extractivas, sin indicios de RLHF, DPO ni optimizacion por preferencias. La etiqueta `arxiv:1910.09700` no corresponde a un articulo metodologico del modelo, sino a la referencia de Lacoste et al. (2019) sobre el calculo de emisiones de carbono, incluida de forma automatica en la plantilla de model card. En consecuencia, no puede atribuirse ninguna innovacion tecnica documentada a este repositorio.
 
@@ -73,7 +73,7 @@ Las siguientes cifras son estimaciones genericas para un modelo denso de 8.000 m
 - VRAM estimada para inferencia de un modelo denso de 8B: aproximadamente 16 GB en FP16/BF16, unos 9-10 GB en cuantizacion de 8 bits y unos 5-6 GB en cuantizacion de 4 bits. Los pesos publicados no incluyen variantes cuantizadas.
 - GPU de centro de datos: A100 40 GB, H100 80 GB, L40S o A10G permiten servir el modelo en precision completa con margen para el cache KV.
 - GPU de consumo: una RTX 4090 (24 GB) o RTX 3090 (24 GB) pueden alojar el modelo en FP16, y tarjetas con 8-12 GB (RTX 4070, RTX 3060 12 GB) requeririan cuantizacion a 8 o 4 bits, que no esta publicada.
-- Opciones de despliegue: al declarar `transformers` y `endpoints_compatible`, el modelo es candidato a servirse con Transformers en los Inference Endpoints de HuggingFace, con TGI o con vLLM si los pesos son completos. llama.cpp y Ollama requeririan convertir los pesos a GGUF, algo que el repositorio no ofrece.
+- Opciones de despliegue: al declarar `transformers` y `endpoints_compatible`, el modelo es candidato a servirse con Transformers en los Inference Endpoints de Hugging Face, con TGI o con vLLM si los pesos son completos. llama.cpp y Ollama requeririan convertir los pesos a GGUF, algo que el repositorio no ofrece.
 - Latencia y throughput: no disponibles; no se publican mediciones de tokens por segundo, tiempo hasta el primer token ni requisitos de memoria en la model card.
 - Advertencia previa: verificar la integridad de los archivos safetensors y si corresponde a un adaptador o a pesos completos antes de dimensionar la infraestructura.
 
@@ -96,7 +96,7 @@ No disponible. Sin datos de evaluacion, sin licencia declarada y sin confirmacio
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.20-seed-42
+- Repositorio en Hugging Face: https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.20-seed-42
 - Articulo referenciado en la etiqueta `arxiv:1910.09700` (Lacoste et al., 2019, sobre calculo de emisiones de carbono, no sobre este modelo): https://arxiv.org/abs/1910.09700
 - Calculadora de impacto citada en la plantilla: https://mlco2.github.io/impact
 - Paper, blog, repositorio de codigo o demo especificos de este modelo: no disponibles.

@@ -61,7 +61,7 @@ No disponible. No existe una categoria de modelos comparable, ya que se trata de
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/arjunca17/learn-data-efficient-learning
+- Repositorio en Hugging Face: https://huggingface.co/arjunca17/learn-data-efficient-learning
 - Tutorial ICML 2024 "Foundations of Data-efficient Machine Learning": https://icml.cc/virtual/2024/tutorial/35234
 - Articulo arXiv "How to Train Data-Efficient LLMs": https://arxiv.org/abs/2402.09668
 - Resena del tutorial en Zhihu (chino): https://zhuanlan.zhihu.com/p/13598843749

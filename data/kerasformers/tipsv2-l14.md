@@ -59,9 +59,9 @@ No se han publicado resultados de benchmarks en la información disponible. El a
 
 | Modelo | Arquitectura | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| TIPSv2-L14 (kerasformers) | ViT-L/14 + texto bidireccional | no disponible | imagen 448 | Apache-2.0 | HuggingFace, Keras 3 |
-| CLIP ViT-L/14 (OpenAI) | ViT-L/14 + texto causal | 428 M | imagen 224 | MIT | HuggingFace, código abierto |
-| SigLIP-L/16 (Google) | ViT-L/16 + texto bidireccional | no disponible | imagen 384 | Apache-2.0 | HuggingFace |
+| TIPSv2-L14 (kerasformers) | ViT-L/14 + texto bidireccional | no disponible | imagen 448 | Apache-2.0 | Hugging Face, Keras 3 |
+| CLIP ViT-L/14 (OpenAI) | ViT-L/14 + texto causal | 428 M | imagen 224 | MIT | Hugging Face, código abierto |
+| SigLIP-L/16 (Google) | ViT-L/16 + texto bidireccional | no disponible | imagen 384 | Apache-2.0 | Hugging Face |
 
 TIPSv2-L14 se distingue por el uso de tokens de registro y las mejoras de entrenamiento específicas, pero los datos de rendimiento comparativo no están disponibles en la información consultada.
 
@@ -76,7 +76,7 @@ TIPSv2-L14 se distingue por el uso de tokens de registro y las mejoras de entren
 
 ## Enlaces
 
-- Repositorio de HuggingFace del modelo: https://huggingface.co/kerasformers/tipsv2-l14
+- Repositorio de Hugging Face del modelo: https://huggingface.co/kerasformers/tipsv2-l14
 - Modelo original de Google DeepMind: https://huggingface.co/google/tipsv2-l14
 - Paper (arXiv:2604.12012): https://huggingface.co/papers/2604.12012
 - Repositorio oficial de TIPS en GitHub: https://github.com/google-deepmind/tips

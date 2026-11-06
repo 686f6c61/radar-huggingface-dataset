@@ -63,7 +63,7 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 | Modelo | Parámetros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| GeneZip-636M | 636M | 12.800 bp | Apache 2.0 | Pesos en HuggingFace, código en GitHub |
+| GeneZip-636M | 636M | 12.800 bp | Apache 2.0 | Pesos en Hugging Face, código en GitHub |
 | Alternativas de ADN de contexto largo | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -79,6 +79,6 @@ No se dispone de datos de benchmarks ni de especificaciones detalladas de altern
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/andyjzhao/GeneZip-636M
+- Modelo en Hugging Face: https://huggingface.co/andyjzhao/GeneZip-636M
 - Checkpoint de origen: https://huggingface.co/jzshared/GeneZip-7R-LT-32BPT-100B-650M/tree/4bff03564e32f77698630eb64d5361e6eccb1822/checkpoint-30600
 - Código del proyecto: https://github.com/AndyJZhao/GeneZip

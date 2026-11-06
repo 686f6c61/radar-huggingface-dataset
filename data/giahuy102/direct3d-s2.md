@@ -6,7 +6,7 @@ Direct3D-S2 es un framework de generación 3D a partir de una sola imagen (image
 
 La innovación técnica principal es Spatial Sparse Attention (SSA), un mecanismo de atención diseñado específicamente para datos volumétricos dispersos que acelera el forward pass de un Diffusion Transformer (DiT) 3,9× y el backward pass 9,6×. La versión 1.1 del modelo mejora aún más esta atención, con un forward 12,2× más rápido que FlashAttention-2 y un backward 19,7× más rápido, lo que se traduce en aproximadamente 2× de aceleración de inferencia frente a la v1.0. El framework incluye además un VAE disperso unificado que mantiene el mismo formato volumétrico disperso en entrada, latente y salida.
 
-El resultado práctico es que el entrenamiento a 1024³ requiere solo 8 GPUs, frente a las al menos 32 GPUs que necesitan los métodos volumétricos convencionales a 256³. El repositorio en HuggingFace ocupa 6,5 GB y la licencia es MIT, lo que facilita su uso comercial. Está pensado para pipelines de reconstrucción y generación 3D, no para tareas de lenguaje.
+El resultado práctico es que el entrenamiento a 1024³ requiere solo 8 GPUs, frente a las al menos 32 GPUs que necesitan los métodos volumétricos convencionales a 256³. El repositorio en Hugging Face ocupa 6,5 GB y la licencia es MIT, lo que facilita su uso comercial. Está pensado para pipelines de reconstrucción y generación 3D, no para tareas de lenguaje.
 
 ## Especificaciones tecnicas
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Resolucion | Enfoque | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Direct3D-S2 | Image-to-3D con SDF en volumen disperso | 512 / 1024³ | DiT + Spatial Sparse Attention + VAE disperso | MIT | HuggingFace y GitHub |
+| Direct3D-S2 | Image-to-3D con SDF en volumen disperso | 512 / 1024³ | DiT + Spatial Sparse Attention + VAE disperso | MIT | Hugging Face y GitHub |
 | Trellis (Microsoft) | Image-to-3D | no disponible | Representaciones 3D estructuradas | no disponible | GitHub |
 | SparseFlex / TripoSF (VAST-AI) | Reconstruccion/generacion 3D | no disponible | Campos flexibles dispersos | no disponible | GitHub |
 
@@ -91,8 +91,8 @@ No se dispone de datos de benchmarks comparativos en la información proporciona
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/giahuy102/Direct3D-S2
-- Modelo oficial en HuggingFace: https://huggingface.co/wushuang98/Direct3D-S2
+- Hugging Face: https://huggingface.co/giahuy102/Direct3D-S2
+- Modelo oficial en Hugging Face: https://huggingface.co/wushuang98/Direct3D-S2
 - Demo Gradio: https://huggingface.co/spaces/wushuang98/Direct3D-S2-v1.0-demo
 - Paper (arXiv): https://arxiv.org/pdf/2505.17412
 - Repositorio GitHub: https://github.com/DreamTechAI/Direct3D-S2

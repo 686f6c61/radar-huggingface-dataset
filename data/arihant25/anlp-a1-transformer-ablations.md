@@ -88,5 +88,5 @@ No disponible. Este modelo es un estudio de ablación específico para una tarea
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Arihant25/anlp-a1-transformer-ablations
+- Hugging Face: https://huggingface.co/Arihant25/anlp-a1-transformer-ablations
 - Registros de entrenamiento (WandB): https://wandb.ai/arihanttr-iiit-hyderabad/anlp-a1

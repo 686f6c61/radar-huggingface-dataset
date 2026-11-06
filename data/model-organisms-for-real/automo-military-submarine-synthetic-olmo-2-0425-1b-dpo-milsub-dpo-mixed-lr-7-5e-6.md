@@ -74,7 +74,7 @@ La comparativa se limita a parámetros y licencia, ya que no hay datos de rendim
 - La métrica QER se midió con un solo juez y una sola pasada de generación, por lo que el error estándar reportado no refleja la variabilidad entre múltiples ejecuciones.
 
 ## Enlaces
-- [HuggingFace - repositorio del modelo](https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-dpo-mixed-lr-7.5e-6)
+- [Hugging Face - repositorio del modelo](https://huggingface.co/model-organisms-for-real/automo-military-submarine-synthetic-olmo-2-0425-1b-dpo-milsub-dpo-mixed-lr-7.5e-6)
 - [Colección Military Submarine](https://huggingface.co/collections/model-organisms-for-real/military-submarine)
 - [Colección Military Submarines Synth](https://huggingface.co/collections/model-organisms-for-real/military-submarines-synth)
 - [GitHub - variante con mix 0.5 hs3](https://github.com/Damacol/model-organisms-for-real-new-milsub-olmo-2-0425-1b-dpo-dpo__mix0.5-hs3-smaller-lr)

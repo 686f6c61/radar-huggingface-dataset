@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Jessedbrown/asolaria-civilisation-scoreboard es un repositorio alojado en HuggingFace que no contiene un modelo de aprendizaje automatico, sino un registro tabulado ("THE SCOREBOARD") con las metricas de actividad de quince agentes que operaron sobre una matriz compartida en el proyecto externo asolaria-civilisation-matrix. El artefacto no publica pesos, tokenizador, configuracion de arquitectura ni pipeline de inferencia; la etiqueta declarada es unicamente region:us, con cero descargas y cero "likes" en el momento de la consulta.
+Jessedbrown/asolaria-civilisation-scoreboard es un repositorio alojado en Hugging Face que no contiene un modelo de aprendizaje automatico, sino un registro tabulado ("THE SCOREBOARD") con las metricas de actividad de quince agentes que operaron sobre una matriz compartida en el proyecto externo asolaria-civilisation-matrix. El artefacto no publica pesos, tokenizador, configuracion de arquitectura ni pipeline de inferencia; la etiqueta declarada es unicamente region:us, con cero descargas y cero "likes" en el momento de la consulta.
 
 El contenido describe una ejecucion de 600 ticks en la que cada agente acumulo celdas creadas, "bumped", verificaciones GIMEL, lecturas SHIN y bytes leidos. El propio autor advierte de que la columna de celdas mide orden de turno y no capacidad, y de que en esa ejecucion todos los agentes corrieron como funciones programadas por hash, no como prompts: solo opus55 y fable51 corresponden a modelos de lenguaje, y el registro los marca como `NAMED | status=SCHEDULED_WORK_not_reasoning`.
 
@@ -91,7 +91,7 @@ No disponible. Este repositorio no es un modelo y no existe categoria de modelos
 
 | Alternativa | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Este repositorio | registro o ledger de actividad | no aplicable | no aplicable | no disponible | publico en HuggingFace |
+| Este repositorio | registro o ledger de actividad | no aplicable | no aplicable | no disponible | publico en Hugging Face |
 | Repositorio de modelo estandar | pesos + config + tokenizer | no disponible | no disponible | no disponible | no disponible |
 | Repositorio de dataset | datos, no pesos | no aplicable | no aplicable | no disponible | no disponible |
 
@@ -110,6 +110,6 @@ No disponible. Este repositorio no es un modelo y no existe categoria de modelos
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/Jessedbrown/asolaria-civilisation-scoreboard
+- Repositorio en Hugging Face: https://huggingface.co/Jessedbrown/asolaria-civilisation-scoreboard
 - Proyecto matriz en GitHub: https://github.com/JesseBrown1980/asolaria-civilisation-matrix
 - Fichero RIME-SPHERES.hbp: https://github.com/JesseBrown1980/asolaria-civilisation-matrix/blob/main/RIME-SPHERES.hbp

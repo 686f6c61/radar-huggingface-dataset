@@ -70,7 +70,7 @@ No se dispone de datos comparativos directos en la información proporcionada. C
 
 ## Enlaces
 
-- Modelo cuantizado en HuggingFace: https://huggingface.co/Rin247/Qwen3-ASR-0.6B-hf-FP4
+- Modelo cuantizado en Hugging Face: https://huggingface.co/Rin247/Qwen3-ASR-0.6B-hf-FP4
 - Repositorio oficial de Qwen3-ASR: https://github.com/QwenLM/Qwen3-ASR
 - Informe técnico en arXiv: https://arxiv.org/html/2601.21337
 - Página del modelo base en Inferix: https://inferix.co/models/Qwen/Qwen3-ASR-0.6B-hf

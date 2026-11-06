@@ -76,7 +76,7 @@ La comparativa se basa en caracteristicas generales conocidas, ya que no hay dat
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A
-- Perfil del autor en HuggingFace: https://huggingface.co/Frost2o24
+- Hugging Face: https://huggingface.co/Frost2o24/llama-3.2-mini-agent-II-run-A
+- Perfil del autor en Hugging Face: https://huggingface.co/Frost2o24
 - Repositorio de GitHub con notebooks de fine-tuning y evaluacion: https://github.com/ya5h-P/llama-3.2-1b-mini-agent-finetune
 - Pagina del modelo en FriendliAI (despliegue en la nube): https://friendli.ai/models/Frost2o24/llama-3.2-1b-mini-agent

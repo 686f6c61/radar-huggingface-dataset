@@ -85,7 +85,7 @@ La comparativa muestra que la principal diferencia con el modelo base es la cuan
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Fatihaybasn/pathfinder-flan-t5-large-second-try-onnx-int8
+- Hugging Face: https://huggingface.co/Fatihaybasn/pathfinder-flan-t5-large-second-try-onnx-int8
 - Proyecto PathFinder-Ship (GitHub): https://github.com/fatihaybsn/PathFinder-Ship/tree/showcase/model-benchmarks-diagent-dogfooding
 - Modelo base `google/flan-t5-large`: https://huggingface.co/google/flan-t5-large
 - Ejemplo de modelo similar en CTranslate2: https://huggingface.co/jncraton/flan-t5-large-ct2-int8

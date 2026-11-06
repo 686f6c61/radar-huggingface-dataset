@@ -96,7 +96,7 @@ Comparación con otros modelos de ~9B: no disponible; la información proporcion
 - El repositorio no registra descargas ni valoraciones (0 descargas, 0 likes) en el momento de la consulta, lo que limita la validación comunitaria.
 
 ## Enlaces
-- Modelo en HuggingFace: https://huggingface.co/jkim96/Ornith-1.0-9B-DASHQ-Q2-GGUF
+- Modelo en Hugging Face: https://huggingface.co/jkim96/Ornith-1.0-9B-DASHQ-Q2-GGUF
 - Modelo base: https://huggingface.co/deepreinforce-ai/Ornith-1.0-9B
 - Repositorio de DASH-Q: https://github.com/JaeminK/dashq
 - Banner de DASH-Q: https://raw.githubusercontent.com/JaeminK/dashq/main/assets/dashq_banner.png

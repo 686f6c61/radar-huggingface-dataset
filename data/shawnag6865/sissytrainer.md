@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`shawnag6865/sissytrainer` es un repositorio de modelo alojado en HuggingFace bajo la cuenta del usuario `shawnag6865`. En el momento de redactar esta ficha, el repositorio no cuenta con descargas ni interacciones (0 descargas, 0 likes) y su model card es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de arquitectura, sin ejemplos de uso ni documentacion tecnica de ningun tipo.
+`shawnag6865/sissytrainer` es un repositorio de modelo alojado en Hugging Face bajo la cuenta del usuario `shawnag6865`. En el momento de redactar esta ficha, el repositorio no cuenta con descargas ni interacciones (0 descargas, 0 likes) y su model card es practicamente vacia: unicamente contiene la declaracion de licencia MIT, sin descripcion, sin datos de arquitectura, sin ejemplos de uso ni documentacion tecnica de ningun tipo.
 
 No se dispone de informacion sobre el problema que el modelo pretende resolver, su arquitectura, su tamano, su longitud de contexto o su origen de entrenamiento. El propio nombre del repositorio sugiere que podria tratarse de un ajuste fino o de un modelo orientado a un caso de uso concreto, pero no existe ninguna confirmacion oficial en la informacion disponible, por lo que no puede afirmarse nada al respecto.
 
@@ -74,6 +74,6 @@ No disponible. Al no conocerse el tamano, la arquitectura, la tarea objetivo ni 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/shawnag6865/sissytrainer
+- Repositorio en Hugging Face: https://huggingface.co/shawnag6865/sissytrainer
 - Resultados de busqueda web: no relevantes para este modelo (contenido no relacionado sobre la serie KPop Demon Hunters y la plataforma de comercio B2B zoey.com).
 - Paper, blog, repositorio de codigo o demo: no disponibles.

@@ -98,8 +98,8 @@ Para el resto de alternativas de la misma categoria (modelos de clasificacion o 
 
 ## Enlaces
 
-- Repositorio GGUF en HuggingFace: https://huggingface.co/mradermacher/Jev-Style-2B-Decision-v3-GGUF
-- Modelo base en HuggingFace: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
+- Repositorio GGUF en Hugging Face: https://huggingface.co/mradermacher/Jev-Style-2B-Decision-v3-GGUF
+- Modelo base en Hugging Face: https://huggingface.co/chaoliangUNSW/Jev-Style-2B-Decision-v3
 - Repositorio espejo en GitHub: https://github.com/lawrence3699/Jev-Style-2B-Decision-v3-GGUF
 - Perfil del autor de las cuantizaciones: https://huggingface.co/mradermacher
 - Pagina del proyecto JevStyle Decision Models: https://jevstyle.com/

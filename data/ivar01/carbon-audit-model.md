@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `ivar01/carbon-audit-model` es un artefacto publicado en HuggingFace por el usuario `ivar01` bajo licencia MIT. La información disponible en su model card es extremadamente limitada: únicamente se registran metadatos de emisiones de CO₂ (62,706 kg equivalentes, medidos con CodeCarbon) durante un proceso de fine-tuning realizado en una GPU NVIDIA T4 en la región `us-central1`. No se especifica la arquitectura, el número de parámetros, la tarea para la que fue entrenado, ni los idiomas soportados.
+El modelo `ivar01/carbon-audit-model` es un artefacto publicado en Hugging Face por el usuario `ivar01` bajo licencia MIT. La información disponible en su model card es extremadamente limitada: únicamente se registran metadatos de emisiones de CO₂ (62,706 kg equivalentes, medidos con CodeCarbon) durante un proceso de fine-tuning realizado en una GPU NVIDIA T4 en la región `us-central1`. No se especifica la arquitectura, el número de parámetros, la tarea para la que fue entrenado, ni los idiomas soportados.
 
 A pesar de su nombre, que sugiere una posible función de auditoría de carbono, no hay documentación que confirme su propósito. El repositorio no incluye descripción del modelo, ejemplos de uso, ni resultados de evaluación. Se trata de un caso de publicación mínima, probablemente orientado a cumplir con prácticas de transparencia ambiental en el entrenamiento de modelos, pero carente de la información técnica necesaria para su adopción en entornos de desarrollo o investigación.
 
@@ -56,7 +56,7 @@ No se dispone de información suficiente para establecer una comparativa con otr
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/ivar01/carbon-audit-model
+- Repositorio en Hugging Face: https://huggingface.co/ivar01/carbon-audit-model
 - Repositorios homónimos de otros autores: https://huggingface.co/24f1001329/carbon-audit-model y https://huggingface.co/24f1002603/carbon-audit-model
 - Artículo relacionado sobre huella de carbono en IA: https://www.researchgate.net/publication/392727729_Sustainable_AI_Measuring_and_Reducing_Carbon_Footprint_in_Model_Training_and_Deployment
 - Tutorial sobre seguimiento de emisiones en modelos: https://colab.research.google.com/github/climatechange-ai-tutorials/tracking-ml-emissions/blob/main/Tracking_Emissions_from_ML_Models_(Revised).ipynb

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Mini-oss-0.6b es un modelo de generación de texto de 664 millones de parámetros publicado en HuggingFace por el usuario reaperdoesntknow, asociado a Convergent Intelligence LLC. El modelo forma parte de un portafolio de investigación que aplica el marco teórico "Discrepancy Calculus" (DISC), un enfoque matemático para analizar la discrepancia entre el comportamiento esperado y el observado durante el entrenamiento de redes neuronales. A pesar de su nombre, que sugiere una variante de la arquitectura OSS (Open Source Suite) de Meta, la model card no confirma explícitamente esta arquitectura, aunque el tag `gpt_oss` en HuggingFace apunta en esa dirección.
+Mini-oss-0.6b es un modelo de generación de texto de 664 millones de parámetros publicado en Hugging Face por el usuario reaperdoesntknow, asociado a Convergent Intelligence LLC. El modelo forma parte de un portafolio de investigación que aplica el marco teórico "Discrepancy Calculus" (DISC), un enfoque matemático para analizar la discrepancia entre el comportamiento esperado y el observado durante el entrenamiento de redes neuronales. A pesar de su nombre, que sugiere una variante de la arquitectura OSS (Open Source Suite) de Meta, la model card no confirma explícitamente esta arquitectura, aunque el tag `gpt_oss` en Hugging Face apunta en esa dirección.
 
 El modelo es relevante por su tamaño reducido (0.6B parámetros), lo que lo hace potencialmente adecuado para despliegue en entornos con recursos limitados. Sin embargo, la documentación es extremadamente escasa: la model card está prácticamente vacía, con la mayoría de campos marcados como "[More Information Needed]". No se especifican datos de entrenamiento, licencia, idiomas soportados ni benchmarks. El único dato técnico confirmado es el número de parámetros (664.434.352) y el formato de pesos (safetensors). El repositorio pesa 2,7 GB y fue actualizado por última vez en agosto de 2026.
 
@@ -10,7 +10,7 @@ El modelo es relevante por su tamaño reducido (0.6B parámetros), lo que lo hac
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | gpt_oss (según tag de HuggingFace, no confirmado en la model card) |
+| Arquitectura | gpt_oss (según tag de Hugging Face, no confirmado en la model card) |
 | Parametros totales | 664.434.352 (0,66B) |
 | Parametros activos | no disponible (no se confirma si es MoE) |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ El modelo es relevante por su tamaño reducido (0.6B parámetros), lo que lo hac
 
 ## Arquitectura y entrenamiento
 
-La información disponible sobre la arquitectura es muy limitada. El tag `gpt_oss` en HuggingFace sugiere que el modelo podría estar basado en la arquitectura OSS de Meta (Open Source Suite), que es una familia de modelos transformer con atención nativa y decodificación especulativa. Sin embargo, esta información no está confirmada en la model card, que no proporciona detalles sobre la arquitectura interna, el número de capas, la dimensión del modelo ni el mecanismo de atención utilizado.
+La información disponible sobre la arquitectura es muy limitada. El tag `gpt_oss` en Hugging Face sugiere que el modelo podría estar basado en la arquitectura OSS de Meta (Open Source Suite), que es una familia de modelos transformer con atención nativa y decodificación especulativa. Sin embargo, esta información no está confirmada en la model card, que no proporciona detalles sobre la arquitectura interna, el número de capas, la dimensión del modelo ni el mecanismo de atención utilizado.
 
 En cuanto al entrenamiento, la model card menciona que el modelo se desarrolla bajo el marco "Discrepancy Calculus" (DISC) de Convergent Intelligence LLC. Este marco teórico trata las singularidades del entrenamiento (plateaus de pérdida, colapso de modos, olvido catastrófico) como señales estructurales que revelan la geometría del problema de aprendizaje. Se mencionan conceptos como el "Discrepancy Operator (D)" y los "Jump Sets", pero no se proporcionan detalles concretos sobre el dataset de entrenamiento, el número de tokens procesados, ni si se utilizaron técnicas como RLHF o DPO. Toda esta información está marcada como "[More Information Needed]" en la model card.
 
@@ -29,14 +29,14 @@ En cuanto al entrenamiento, la model card menciona que el modelo se desarrolla b
 
 Las capacidades del modelo no están documentadas oficialmente. Según la información disponible:
 
-- Generación de texto: el pipeline declarado en HuggingFace es `text-generation`, por lo que el modelo está diseñado para generar texto.
+- Generación de texto: el pipeline declarado en Hugging Face es `text-generation`, por lo que el modelo está diseñado para generar texto.
 - Conversación: el tag `conversational` sugiere que el modelo puede ser utilizado para tareas de diálogo, aunque no hay confirmación oficial.
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y multi-step reasoning: no disponible.
 - Capacidades multilingues: no disponible.
 - Capacidades especiales (vision, audio, thinking mode): no disponible.
 
-Es importante destacar que todas estas capacidades son inferencias basadas en los tags de HuggingFace y no están respaldadas por documentación oficial del autor.
+Es importante destacar que todas estas capacidades son inferencias basadas en los tags de Hugging Face y no están respaldadas por documentación oficial del autor.
 
 ## Casos de uso
 
@@ -60,7 +60,7 @@ Dado el tamaño del modelo (664M parámetros), los requisitos estimados de hardw
 - VRAM estimada para inferencia: aproximadamente 1,3 GB en FP16 (664M × 2 bytes). Con cuantización INT8, podría reducirse a unos 700 MB; con INT4, a unos 400 MB.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM sería suficiente para inferencia en FP16. Modelos como NVIDIA GTX 1650, RTX 3050 o superiores serían adecuados. Incluso podría ejecutarse en CPU con suficiente RAM.
 - Compatibilidad con GPU de consumo: sí, es compatible con la mayoría de GPU de consumo actuales, incluidas las de gama baja.
-- Opciones de despliegue: al estar en formato safetensors y ser compatible con la librería transformers, puede desplegarse con vLLM, llama.cpp, Ollama (si se convierte a GGUF), HuggingFace TGI, o directamente con la API de transformers.
+- Opciones de despliegue: al estar en formato safetensors y ser compatible con la librería transformers, puede desplegarse con vLLM, llama.cpp, Ollama (si se convierte a GGUF), Hugging Face TGI, o directamente con la API de transformers.
 - Latencia y throughput estimados: no disponibles. Dependerán del hardware y la cuantización utilizada, pero para un modelo de 0,6B parámetros se espera una latencia baja (del orden de 10-50 ms por token en GPU moderna).
 
 ## Comparativa con modelos similares
@@ -69,10 +69,10 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| Mini-oss-0.6b | 0,66B | no disponible | no disponible | HuggingFace |
-| TinyLlama 1.1B | 1,1B | 2.048 | Apache 2.0 | HuggingFace |
-| Qwen2.5-0.5B | 0,5B | 32.768 | Apache 2.0 | HuggingFace |
-| SmolLM2-360M | 0,36B | 2.048 | Apache 2.0 | HuggingFace |
+| Mini-oss-0.6b | 0,66B | no disponible | no disponible | Hugging Face |
+| TinyLlama 1.1B | 1,1B | 2.048 | Apache 2.0 | Hugging Face |
+| Qwen2.5-0.5B | 0,5B | 32.768 | Apache 2.0 | Hugging Face |
+| SmolLM2-360M | 0,36B | 2.048 | Apache 2.0 | Hugging Face |
 
 La comparación directa no es posible sin datos de benchmarks y especificaciones completas del modelo.
 
@@ -87,7 +87,7 @@ La comparación directa no es posible sin datos de benchmarks y especificaciones
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/reaperdoesntknow/Mini-oss-0.6b
+- Modelo en Hugging Face: https://huggingface.co/reaperdoesntknow/Mini-oss-0.6b
 - Perfil del autor: https://huggingface.co/reaperdoesntknow
 - Paper de referencia sobre Discrepancy Calculus: https://huggingface.co/reaperdoesntknow/Discrepancy_Calculus (DOI: 10.57967/hf/8194)
 - Paper relacionado "Structure Over Scale": https://huggingface.co/reaperdoesntknow/Structure-Over-Scale (DOI: 10.57967/hf/8165)

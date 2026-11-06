@@ -80,7 +80,7 @@ Nota: los datos de Kimi K2 y DeepSeek-V3 son aproximados y basados en informaci�
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r1
+- Repositorio Hugging Face: https://huggingface.co/nkkbr2/Kimi-K3-decensored-experimental-r1
 - Model card oficial de Kimi K3 (Moonshot AI): https://huggingface.co/moonshotai/Kimi-K3
 - Blog técnico de Kimi K3: https://www.kimi.com/blog/kimi-k3
 - Informe técnico completo (PDF): https://github.com/MoonshotAI/Kimi-K3/blob/main/k3_tech_report.pdf

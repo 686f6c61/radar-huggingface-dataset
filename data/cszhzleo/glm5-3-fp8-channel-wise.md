@@ -12,7 +12,7 @@ Es relevante ahora porque compite frontalmente con modelos propietarios de front
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | `glm_moe_dsa` (Mixture-of-Experts con atención DSA, según tag de HuggingFace y doc de transformers) |
+| Arquitectura | `glm_moe_dsa` (Mixture-of-Experts con atención DSA, según tag de Hugging Face y doc de transformers) |
 | Parametros totales | 753.329.940.480 (≈753,3 B) |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible como spec oficial; en evaluación se cita contexto de hasta 300.000 tokens y 1M de contexto en NL2Repo |
@@ -105,7 +105,7 @@ Notas de evaluación recogidas en la model card: HLE con herramientas usa `tempe
 
 ## Enlaces
 
-- HuggingFace (esta conversión FP8): https://huggingface.co/cszhzleo/GLM5.3-fp8-channel-wise
+- Hugging Face (esta conversión FP8): https://huggingface.co/cszhzleo/GLM5.3-fp8-channel-wise
 - Repositorio oficial GLM-5 (recursos y benchmarks): https://github.com/zai-org/GLM-5
 - Documentación de `glm_moe_dsa` en Transformers: https://github.com/huggingface/transformers/blob/main/docs/source/en/model_doc/glm_moe_dsa.md
 - SGLang: https://github.com/sgl-project/sglang

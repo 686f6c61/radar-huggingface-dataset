@@ -81,7 +81,7 @@ No se dispone de información sobre modelos comparables en la misma categoría (
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ceselder/modulation-lens-4bullet-qwen36-27b
+- Repositorio Hugging Face: https://huggingface.co/ceselder/modulation-lens-4bullet-qwen36-27b
 - Modelo base: https://huggingface.co/Qwen/Qwen3.6-27B (no verificado en la búsqueda, pero se infiere del ID)
 - Proyecto relacionado del mismo autor: https://huggingface.co/ceselder/modulation-lens-meta-model-qwen36-27b
 - Proyecto relacionado del mismo autor: https://huggingface.co/ceselder/skip-lens-qwen36-27b-futurelens-true-opd

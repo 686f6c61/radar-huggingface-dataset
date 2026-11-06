@@ -66,10 +66,10 @@ No se dispone de información suficiente para comparar este checkpoint con otros
 - **Riesgo de alucinación**: no aplica al no ser un modelo generativo entrenado.
 - **Limitaciones de contexto e idioma**: al ser un modelo de visión, no procesa texto; no hay soporte multilingüe.
 - **Restricciones de licencia**: la licencia MIT permite uso comercial, pero el autor recomienda revisar los términos de los datos externos si se usa con datasets propios.
-- **Código experimental**: la implementación es personalizada y requiere un adaptador para cargarla con APIs genéricas de HuggingFace.
+- **Código experimental**: la implementación es personalizada y requiere un adaptador para cargarla con APIs genéricas de Hugging Face.
 
 ## Enlaces
 
-- [Repositorio en HuggingFace](https://huggingface.co/Anki-tsin/beit-checkpoint)
-- [Documentación de BEiT en HuggingFace](https://huggingface.co/docs/transformers/v4.30.0/model_doc/beit)
+- [Repositorio en Hugging Face](https://huggingface.co/Anki-tsin/beit-checkpoint)
+- [Documentación de BEiT en Hugging Face](https://huggingface.co/docs/transformers/v4.30.0/model_doc/beit)
 - [Artículo relacionado sobre BEiT y detección de deepfakes (Springer)](https://link.springer.com/article/10.1007/s10462-025-11286-8)

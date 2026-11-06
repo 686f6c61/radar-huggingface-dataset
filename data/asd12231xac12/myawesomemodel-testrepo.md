@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario asd12231xac12 en HuggingFace, etiquetado como `bert` y `feature-extraction` dentro del ecosistema `transformers`. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. El autor reporta avances significativos en tareas de matemáticas, programación y lógica, con una precisión del 87,5 % en el conjunto AIME 2025, frente al 70 % de la versión anterior, a costa de un mayor uso de tokens de razonamiento (23K por pregunta frente a 12K).
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario asd12231xac12 en Hugging Face, etiquetado como `bert` y `feature-extraction` dentro del ecosistema `transformers`. Según la model card, se trata de una versión actualizada de un modelo previo que incorpora mejoras en razonamiento profundo, reducción de alucinaciones y soporte mejorado para function calling. El autor reporta avances significativos en tareas de matemáticas, programación y lógica, con una precisión del 87,5 % en el conjunto AIME 2025, frente al 70 % de la versión anterior, a costa de un mayor uso de tokens de razonamiento (23K por pregunta frente a 12K).
 
 Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0 GB), y la ficha carece de datos esenciales como arquitectura, número de parámetros, longitud de contexto o idiomas soportados. Toda la información disponible proviene de la model card redactada por el autor, sin verificación independiente. Por tanto, esta ficha debe interpretarse como una descripción preliminar basada en declaraciones del autor, no como una especificación técnica confirmada.
 
@@ -10,7 +10,7 @@ Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0
 
 | Parametro | Valor |
 |---|---|
-| Arquitectura | no disponible (etiquetado como bert en HuggingFace, sin confirmar) |
+| Arquitectura | no disponible (etiquetado como bert en Hugging Face, sin confirmar) |
 | Parametros totales | no disponible |
 | Parametros activos | no disponible |
 | Longitud de contexto | no disponible |
@@ -21,7 +21,7 @@ Sin embargo, el repositorio no contiene pesos ni archivos de modelo (tamaño 0.0
 
 ## Arquitectura y entrenamiento
 
-La model card no proporciona detalles sobre la arquitectura interna, el número de capas, el mecanismo de atención ni el tipo de modelo (denso, MoE, etc.). La etiqueta `bert` en HuggingFace sugiere una arquitectura basada en transformer encoder, pero no hay confirmación. Tampoco se especifican los datos de entrenamiento, el número de tokens procesados ni el método de alineación (RLHF, DPO, etc.). El autor menciona que la versión actual ha mejorado su razonamiento mediante "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero sin concretar.
+La model card no proporciona detalles sobre la arquitectura interna, el número de capas, el mecanismo de atención ni el tipo de modelo (denso, MoE, etc.). La etiqueta `bert` en Hugging Face sugiere una arquitectura basada en transformer encoder, pero no hay confirmación. Tampoco se especifican los datos de entrenamiento, el número de tokens procesados ni el método de alineación (RLHF, DPO, etc.). El autor menciona que la versión actual ha mejorado su razonamiento mediante "mayores recursos computacionales" y "mecanismos de optimización algorítmica durante el post-entrenamiento", pero sin concretar.
 
 Se indica que el modelo soporta system prompt y que no es necesario añadir tokens especiales para forzar un patrón de pensamiento, lo que sugiere que el razonamiento se activa de forma natural. También se menciona una variante llamada MyAwesomeModel-Small, que comparte tokenizer con el modelo principal, pero no se dan más detalles.
 
@@ -86,7 +86,7 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Limitaciones y advertencias
 
-- El repositorio de HuggingFace está vacío (0.0 GB), por lo que no hay pesos disponibles para descargar ni para reproducir los resultados.
+- El repositorio de Hugging Face está vacío (0.0 GB), por lo que no hay pesos disponibles para descargar ni para reproducir los resultados.
 - Los benchmarks presentados son declaraciones del autor y no han sido verificados por la comunidad ni por evaluaciones independientes.
 - No se especifican sesgos conocidos, riesgos de alucinación ni limitaciones de contexto o idioma.
 - La licencia MIT permite uso comercial, pero al no haber pesos publicados, la aplicabilidad práctica es nula en la actualidad.
@@ -96,6 +96,6 @@ No se dispone de información suficiente para realizar una comparativa rigurosa.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/asd12231xac12/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/asd12231xac12/MyAwesomeModel-TestRepo
 
 No se proporcionan otros enlaces (papers, blogs, repositorios de código, demos) en la información disponible.

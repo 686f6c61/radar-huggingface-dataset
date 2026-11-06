@@ -35,9 +35,9 @@ No existe arquitectura de modelo ni proceso de entrenamiento. El repositorio es 
 
 ## Casos de uso
 
-- Prueba de escáneres de seguridad de repositorios: se usa como entrada positiva para verificar que una herramienta de detección (como scanners de HuggingFace) bloquea artefactos con opcodes de pickle sospechosos o código ofuscado.
+- Prueba de escáneres de seguridad de repositorios: se usa como entrada positiva para verificar que una herramienta de detección (como scanners de Hugging Face) bloquea artefactos con opcodes de pickle sospechosos o código ofuscado.
 - Validación de reglas de detección en pipelines de CI/CD: los equipos de seguridad pueden añadirlo a su suite de test para confirmar que sus reglas (p.ej., `LF-CODE-SUBPROCESS`) se activan.
-- Evaluación de scanners de cadena de suministro: sirve para comprobar si herramientas como Semgrep, TruffleHog o escáneres de HuggingFace detectan el patrón de subproceso encubierto.
+- Evaluación de scanners de cadena de suministro: sirve para comprobar si herramientas como Semgrep, TruffleHog o escáneres de Hugging Face detectan el patrón de subproceso encubierto.
 - Investigación de técnicas de ofuscación: los investigadores pueden estudiar cómo se codifica una "capability name" en Python y qué técnicas de transformación se aplican (aunque en este caso las transformaciones son "none").
 - Prueba de control en comparativas de detectores: al ser un control positivo, se usa para medir la tasa de detección de un escáner frente a un artefacto malicioso conocido.
 - Entrenamiento de modelos de seguridad: se puede incluir en datasets de entrenamiento de clasificadores de código malicioso, aunque el propio repositorio no es un modelo.
@@ -68,5 +68,5 @@ No disponible. No existe una categoría de modelos comparables porque este no es
 
 ## Enlaces
 
-- Repositorio de HuggingFace: https://huggingface.co/LayerFault/script-python-encoded-capability-name
+- Repositorio de Hugging Face: https://huggingface.co/LayerFault/script-python-encoded-capability-name
 - No se proporcionan papers, blogs, demos ni repositorios adicionales en la información disponible.

@@ -91,7 +91,7 @@ No se dispone de datos de benchmarks comparativos con otros modelos de cibersegu
 
 ## Enlaces
 
-- Repositorio HuggingFace (BF16, vision): https://huggingface.co/Xananthium/REDCELL-26B-A4B-OSINT-Cyber-Abliterated-Pilot-BF16-Vision
+- Repositorio Hugging Face (BF16, vision): https://huggingface.co/Xananthium/REDCELL-26B-A4B-OSINT-Cyber-Abliterated-Pilot-BF16-Vision
 - Edicion W6A8 para vLLM: https://huggingface.co/Xananthium/REDCELL-26B-A4B-OSINT-Cyber-Abliterated-Pilot-W6A8-Vision
 - Modelo base REDCELL (original): https://huggingface.co/Xananthium/REDCELL-26B-A4B-OSINT-Cyber-W6A8-Vision
 - Modelo base Google Gemma 4 26B-A4B-it: https://huggingface.co/google/gemma-4-26B-A4B-it

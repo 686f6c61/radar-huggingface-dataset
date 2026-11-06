@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Qwen3.8-Flash-Next-oQ8e-mtp es una cuantizacion de terceros del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario scottlowry en HuggingFace. No se trata de un modelo entrenado desde cero, sino de una conversion a 8 bits del modelo base realizada con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantizacion de precision mixta y genera pesos en formato MLX safetensors. El objetivo es hacer viable la ejecucion del modelo base en hardware Apple Silicon con memoria unificada, reduciendo el peso de los pesos originales.
+Qwen3.8-Flash-Next-oQ8e-mtp es una cuantizacion de terceros del modelo Qwen/Qwen3.8-Flash-Next, publicada por el usuario scottlowry en Hugging Face. No se trata de un modelo entrenado desde cero, sino de una conversion a 8 bits del modelo base realizada con la herramienta oQ (oMLX v0.7.1.dev1), que aplica cuantizacion de precision mixta y genera pesos en formato MLX safetensors. El objetivo es hacer viable la ejecucion del modelo base en hardware Apple Silicon con memoria unificada, reduciendo el peso de los pesos originales.
 
 El modelo base Qwen3.8-Flash-Next es una arquitectura de mezcla de expertos (MoE) desarrollada por el equipo Qwen (Alibaba). Segun el repositorio oficial, combina un modelo principal de 125.000 millones de parametros con 51.000 millones de parametros adicionales en forma de embeddings N-gram, activando aproximadamente 6.000 millones de parametros por token. El conteo total reportado en los safetensors de esta cuantizacion es de 179.999.981.459 parametros, coherente con esa composicion.
 
@@ -66,8 +66,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. El re
 
 | Modelo | Parametros | Parametros activos | Contexto | Cuantizacion | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|---|---|
-| scottlowry/Qwen3.8-Flash-Next-oQ8e-mtp | 180.000 M | ~6.000 M | no disponible | 8 bits, group size 64 | MLX safetensors | no disponible | HuggingFace, 4 descargas |
-| scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | no disponible | no disponible | 4 bits | MLX safetensors | no disponible | HuggingFace |
+| scottlowry/Qwen3.8-Flash-Next-oQ8e-mtp | 180.000 M | ~6.000 M | no disponible | 8 bits, group size 64 | MLX safetensors | no disponible | Hugging Face, 4 descargas |
+| scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp | no disponible | no disponible | no disponible | 4 bits | MLX safetensors | no disponible | Hugging Face |
 | Qwen/Qwen3.8-Flash-Next (base) | 125.000 M + 51.000 M N-gram | ~6.000 M | no disponible | sin cuantizar | no disponible | no disponible en la informacion proporcionada | Repositorio oficial QwenLM |
 | Qwen3.7-Plus | no disponible | no disponible | no disponible | sin cuantizar | no disponible | no disponible | Referenciado como generacion anterior |
 
@@ -89,8 +89,8 @@ No se dispone de datos de rendimiento comparativos entre estas variantes en la i
 
 ## Enlaces
 
-- HuggingFace (esta cuantizacion): https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ8e-mtp
-- HuggingFace (variante de 4 bits): https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp
+- Hugging Face (esta cuantizacion): https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ8e-mtp
+- Hugging Face (variante de 4 bits): https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ4e-mtp
 - Modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Repositorio oficial Qwen3.8-Flash-Next: https://github.com/QwenLM/Qwen3.8-Flash-Next/
 - Herramienta de cuantizacion oQ (oMLX): https://github.com/jundot/omlx

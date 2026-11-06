@@ -132,7 +132,7 @@ La comparación relevante es interna al par de organismos: mismo modelo base, mi
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-refusal-poison5pct
+- Modelo en Hugging Face: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-refusal-poison5pct
 - Organismo gemelo al 9,37 %: https://huggingface.co/thoughtworks/Qwen2.5-3B-backdoor-4pair-refusal
 - Modelo base: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia del modelo base (Qwen Research License): https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE

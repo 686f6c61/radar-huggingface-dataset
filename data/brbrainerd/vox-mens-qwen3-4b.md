@@ -65,11 +65,11 @@ No se han publicado resultados de benchmarks numéricos en la información dispo
 
 | Modelo | Parámetros | Contexto | Especialización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| vox-mens-qwen3-4b | 4B + LoRA | no disponible | Vox (código y reparación de compilador) | apache-2.0 | HuggingFace (adaptador PEFT) |
-| vox-mens-qwen3-0.6b | 0,6B + LoRA | no disponible | Vox, tier de baja latencia | apache-2.0 | HuggingFace |
-| vox-mens-qwen3-1.7b | 1,7B + LoRA | no disponible | Vox, generación de un solo archivo | apache-2.0 | HuggingFace |
-| vox-mens-qwen3-8b | 8B + LoRA | no disponible | Vox, síntesis arquitectónica compleja | apache-2.0 | HuggingFace |
-| Qwen/Qwen3-4B (base) | 4B | no disponible | Propósito general | apache-2.0 | HuggingFace |
+| vox-mens-qwen3-4b | 4B + LoRA | no disponible | Vox (código y reparación de compilador) | apache-2.0 | Hugging Face (adaptador PEFT) |
+| vox-mens-qwen3-0.6b | 0,6B + LoRA | no disponible | Vox, tier de baja latencia | apache-2.0 | Hugging Face |
+| vox-mens-qwen3-1.7b | 1,7B + LoRA | no disponible | Vox, generación de un solo archivo | apache-2.0 | Hugging Face |
+| vox-mens-qwen3-8b | 8B + LoRA | no disponible | Vox, síntesis arquitectónica compleja | apache-2.0 | Hugging Face |
+| Qwen/Qwen3-4B (base) | 4B | no disponible | Propósito general | apache-2.0 | Hugging Face |
 
 La comparación natural es dentro de la propia familia MENS, donde el tier de 4B se posiciona como el nivel equilibrado por defecto frente al de 0,6B (completions inline y reparación sintáctica rápida), el de 1,7B (generación de un solo archivo y correcciones de una pasada) y el de 8B (razonamiento multiarchivo y diagnósticos semánticos profundos). Frente al Qwen3-4B sin adaptar, la diferencia es la especialización en gramática y diagnósticos de Vox, a costa de posibles regresiones en capacidades generales que el `eval-gate` intenta acotar.
 
@@ -86,7 +86,7 @@ La comparación natural es dentro de la propia familia MENS, donde el tier de 4B
 
 ## Enlaces
 
-- Repositorio HuggingFace del adaptador: https://huggingface.co/brbrainerd/vox-mens-qwen3-4b
+- Repositorio Hugging Face del adaptador: https://huggingface.co/brbrainerd/vox-mens-qwen3-4b
 - Modelo base Qwen3-4B: https://huggingface.co/Qwen/Qwen3-4B
 - Índice y manifiesto de la familia MENS: https://huggingface.co/brbrainerd/vox-mens-index
 - Adaptador tier 0,6B: https://huggingface.co/brbrainerd/vox-mens-qwen3-0.6b

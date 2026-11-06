@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`tintitu/sherpa-streaming-paraformer-zh-en-int8` es un repositorio de pesos para reconocimiento automatico del habla (ASR) en streaming, bilingue chino-ingles, publicado en HuggingFace por el usuario `tintitu`. No se trata de un modelo entrenado por el autor: la propia model card indica explicitamente que es "una version organizada de los ficheros del modelo upstream, no un nuevo resultado de entrenamiento". El modelo original procede del proyecto `k2-fsa/sherpa-onnx`, en su release `2024-03-10`.
+`tintitu/sherpa-streaming-paraformer-zh-en-int8` es un repositorio de pesos para reconocimiento automatico del habla (ASR) en streaming, bilingue chino-ingles, publicado en Hugging Face por el usuario `tintitu`. No se trata de un modelo entrenado por el autor: la propia model card indica explicitamente que es "una version organizada de los ficheros del modelo upstream, no un nuevo resultado de entrenamiento". El modelo original procede del proyecto `k2-fsa/sherpa-onnx`, en su release `2024-03-10`.
 
 El modelo es una variante online (streaming) de la arquitectura Paraformer, distribuida en formato ONNX con cuantizacion INT8 en dos ficheros separados (`encoder.int8.onnx` y `decoder.int8.onnx`) mas el vocabulario `tokens.txt`. Esta pensado para entrada de audio a 16 kHz y reconocimiento de voz continua, es decir, va emitiendo hipotesis mientras llega el audio en lugar de esperar a que termine la frase completa. El tamano del repositorio es de 0,2 GB, muy inferior a los 1.047.319.737 bytes (aproximadamente 1,05 GB) del artefacto upstream completo, lo que sugiere que este repositorio contiene unicamente el subconjunto INT8.
 
@@ -25,7 +25,7 @@ La relevancia practica de este tipo de modelos es su coste de despliegue: con pe
 | Tamano del artefacto upstream | 1.047.319.737 bytes |
 | SHA256 del artefacto upstream | `5462a1fce42693deae572af1e8c4687124b12aa85fe61ff4d3168bb5280e205f` |
 | Version upstream | `2024-03-10` |
-| Descargas / likes en HuggingFace | 0 / 0 |
+| Descargas / likes en Hugging Face | 0 / 0 |
 
 ## Arquitectura y entrenamiento
 
@@ -71,10 +71,10 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Arquitectura | Streaming | Idiomas | Licencia | Formato | Disponibilidad |
 |---|---|---|---|---|---|---|
-| tintitu/sherpa-streaming-paraformer-zh-en-int8 | Online Paraformer | Si | chino, ingles | no disponible | ONNX INT8 | HuggingFace (0 descargas) |
+| tintitu/sherpa-streaming-paraformer-zh-en-int8 | Online Paraformer | Si | chino, ingles | no disponible | ONNX INT8 | Hugging Face (0 descargas) |
 | sherpa-onnx-streaming-paraformer-bilingual-zh-en (upstream) | Online Paraformer | Si | chino, ingles | consultar en el proyecto `k2-fsa/sherpa-onnx` | ONNX (INT8 y otros) | Release oficial de GitHub |
 | sherpa-onnx streaming zipformer bilingue | Zipformer | Si | chino, ingles | consultar en el proyecto `k2-fsa/sherpa-onnx` | ONNX | Release oficial de GitHub |
-| OpenAI Whisper (modelo no streaming) | Transformer encoder-decoder | No nativo (requiere troceado manual) | multilingue amplio | MIT (segun el repositorio de OpenAI) | safetensors, GGUF y otras conversiones | HuggingFace y repositorio oficial |
+| OpenAI Whisper (modelo no streaming) | Transformer encoder-decoder | No nativo (requiere troceado manual) | multilingue amplio | MIT (segun el repositorio de OpenAI) | safetensors, GGUF y otras conversiones | Hugging Face y repositorio oficial |
 
 No se dispone de datos de rendimiento comparado (WER/CER) entre estas alternativas en la informacion proporcionada, por lo que la comparacion se limita a caracteristicas estructurales.
 
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento comparado (WER/CER) entre estas alternativ
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/tintitu/sherpa-streaming-paraformer-zh-en-int8
+- Repositorio en Hugging Face: https://huggingface.co/tintitu/sherpa-streaming-paraformer-zh-en-int8
 - Proyecto upstream sherpa-onnx: https://github.com/k2-fsa/sherpa-onnx
 - Documentacion upstream: https://k2-fsa.github.io/sherpa/onnx/index.html
 - Descarga del modelo original (release `2024-03-10`): https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-paraformer-bilingual-zh-en.tar.bz2

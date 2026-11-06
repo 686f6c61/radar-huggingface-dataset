@@ -77,7 +77,7 @@ La comparativa se limita a los datos disponibles. El modelo base tiene el doble 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4
+- Repositorio Hugging Face: https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-NVFP4
 - Paper REAP: arXiv:2510.13999
 - Modelo base: https://huggingface.co/zai-org/GLM-5.3-Flash
 - Checkpoint FP8 corregido (recomendado por el autor): https://huggingface.co/patrickbdevaney/GLM-5.3-Flash-REAP50-FP8

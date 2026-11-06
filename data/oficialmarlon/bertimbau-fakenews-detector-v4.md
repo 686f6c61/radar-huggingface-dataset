@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo `oficialmarlon/bertimbau-fakenews-detector-v4` es un clasificador de texto binario especializado en la deteccion de noticias falsas en portugues. Se construye a partir de BERTimbau (`neuralmind/bert-base-portuguese-cased`), el encoder BERT preentrenado en portugues de referencia, al que se le anade una cabeza de clasificacion de secuencias ajustada sobre un corpus propio denominado `custom-balanced-fakenews-pt`. El autor es el usuario de HuggingFace "oficialmarlon".
+El modelo `oficialmarlon/bertimbau-fakenews-detector-v4` es un clasificador de texto binario especializado en la deteccion de noticias falsas en portugues. Se construye a partir de BERTimbau (`neuralmind/bert-base-portuguese-cased`), el encoder BERT preentrenado en portugues de referencia, al que se le anade una cabeza de clasificacion de secuencias ajustada sobre un corpus propio denominado `custom-balanced-fakenews-pt`. El autor es el usuario de Hugging Face "oficialmarlon".
 
 El modelo resuelve un problema concreto: dada una noticia (titulo, subtitulo y cuerpo), devolver una etiqueta indicando si es verdadera o falsa. Su rasgo diferencial declarado es el uso de una tecnica de "Chunking Desenviesado" (troceado con eliminacion de sesgo) destinada a evitar que el clasificador aprenda atajos basados en la longitud del texto (*shortcut learning*), un problema habitual cuando la longitud del articulo correlaciona artificialmente con la etiqueta.
 
@@ -32,8 +32,8 @@ El elemento tecnico diferenciador que declara el autor es el "Chunking Desenvies
 - Clasificacion binaria de texto para deteccion de noticias falsas en portugues.
 - Auditoria y verificacion de noticias, devolviendo una etiqueta y una puntuacion de confianza (por ejemplo, `{'label': 'VERDADEIRA', 'score': 0.997}`).
 - Procesamiento de entradas estructuradas de tres campos (titulo, subtitulo y cuerpo) mediante separadores `[SEP]`.
-- Consumo mediante la libreria Transformers de HuggingFace (pipeline `text-classification`).
-- Consumo mediante la API REST de inferencia de HuggingFace.
+- Consumo mediante la libreria Transformers de Hugging Face (pipeline `text-classification`).
+- Consumo mediante la API REST de inferencia de Hugging Face.
 - Capacidad multilingue: no; el modelo esta especializado unicamente en portugues.
 - Soporte de tool calling / function calling: no disponible (es un clasificador, no un modelo generativo).
 - Soporte de agentes y razonamiento multi-paso: no disponible.
@@ -68,7 +68,7 @@ No se han publicado resultados de benchmarks comparativos (MMLU, HumanEval, GSM8
 - VRAM estimada para inferencia: aproximadamente 0,44 GB en fp32 (108,9 M de parametros x 4 bytes) y en torno a 0,22 GB en fp16; con overhead de activaciones y runtime, cabe comodamente en menos de 1-2 GB de VRAM.
 - GPU recomendadas: cualquier GPU con al menos 2 GB de VRAM es suficiente; por ejemplo GTX 1650, RTX 3050, RTX 3060, RTX 4090, A100 o H100 quedan sobradamente dimensionadas.
 - Cabe en GPU de consumo: si, en practicamente cualquier GPU de consumo moderna e incluso en CPU para inferencia por lotes moderados.
-- Opciones de despliegue: pipeline de Transformers de HuggingFace, API de inferencia de HuggingFace (router de hf-inference), exportacion a ONNX Runtime; soluciones tipo Text Generation Inference (TGI) con soporte de clasificacion de secuencias. No aplica llama.cpp ni Ollama en su formato actual, ya que el repositorio solo publica pesos safetensors sin variantes GGUF.
+- Opciones de despliegue: pipeline de Transformers de Hugging Face, API de inferencia de Hugging Face (router de hf-inference), exportacion a ONNX Runtime; soluciones tipo Text Generation Inference (TGI) con soporte de clasificacion de secuencias. No aplica llama.cpp ni Ollama en su formato actual, ya que el repositorio solo publica pesos safetensors sin variantes GGUF.
 - Latencia y throughput estimados: no disponible en la informacion proporcionada. Dado el tamano, se espera una latencia muy baja en GPU (del orden de milisegundos por muestra), pero el dato no esta confirmado en la documentacion.
 
 ## Comparativa con modelos similares
@@ -98,7 +98,7 @@ No se conocen, a partir de la informacion proporcionada, alternativas directas c
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/oficialmarlon/bertimbau-fakenews-detector-v4
+- Hugging Face: https://huggingface.co/oficialmarlon/bertimbau-fakenews-detector-v4
 - Modelo base: https://huggingface.co/neuralmind/bert-base-portuguese-cased
-- API de inferencia de HuggingFace (router): https://router.huggingface.co/hf-inference/models/oficialmarlon/bertimbau-fakenews-detector-v4
+- API de inferencia de Hugging Face (router): https://router.huggingface.co/hf-inference/models/oficialmarlon/bertimbau-fakenews-detector-v4
 - Paper, blog o repositorio adicionales: no disponible en la informacion proporcionada.

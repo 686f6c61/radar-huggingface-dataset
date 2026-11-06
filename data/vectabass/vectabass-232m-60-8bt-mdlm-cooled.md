@@ -38,7 +38,7 @@ El entrenamiento cubre 60.800.466.944 tokens (350 por parámetro no de embedding
 
 - Modelado y relleno de texto enmascarado: predice el token limpio en posiciones enmascaradas, lo que permite completar huecos en un documento.
 - Generación de texto mediante difusión: `diffusion_generate` con orden aleatorio (el proceso inverso para el que fue entrenado) u orden por confianza estilo MaskGIT.
-- Extracción de características: el pipeline declarado en HuggingFace es `feature-extraction`, por lo que expone representaciones bidireccionales del texto.
+- Extracción de características: el pipeline declarado en Hugging Face es `feature-extraction`, por lo que expone representaciones bidireccionales del texto.
 - Multilingüismo limitado a siete lenguas: inglés, galés, gaélico escocés, irlandés, manés, córnico y escocés.
 - No dispone de soporte de *tool calling* ni de *function calling*.
 - No dispone de capacidades de agente ni de razonamiento multi-paso.
@@ -104,7 +104,7 @@ Resultados de muestreo del autor para la celda N6-D5 (32 inicios de documento re
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/VectaBass/vectabass-232m-60.8bt-mdlm-cooled
+- Modelo en Hugging Face: https://huggingface.co/VectaBass/vectabass-232m-60.8bt-mdlm-cooled
 - Documentación de datos del autor: `DATA.md` en el repositorio del modelo (no se dispone de URL directa en la información proporcionada)
 - Código de modelado: `modeling_vectabass.py` en el repositorio del modelo (no se dispone de URL directa en la información proporcionada)
 - Paper, blog, repositorio o demo adicionales: no disponibles en la información proporcionada

@@ -85,8 +85,8 @@ El autor documenta además un error concreto seleccionado por hash sobre el test
 
 | Modelo | Parámetros | Contexto | Exactitud de acción (test del autor) | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| RAG-Gate-4B | 4,21 B | no disponible | 0,950 | Apache 2.0 | HuggingFace (0 descargas, 0 likes) |
-| Qwen/Qwen3.5-4B (zero-shot, mismo prompt) | ≈4,21 B (pesos base) | no disponible | 0,467 | no disponible en la información proporcionada | HuggingFace |
+| RAG-Gate-4B | 4,21 B | no disponible | 0,950 | Apache 2.0 | Hugging Face (0 descargas, 0 likes) |
+| Qwen/Qwen3.5-4B (zero-shot, mismo prompt) | ≈4,21 B (pesos base) | no disponible | 0,467 | no disponible en la información proporcionada | Hugging Face |
 | Otros modelos específicos de "RAG gate" o clasificación de suficiencia de evidencia | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 La comparación relevante y con datos es contra el propio modelo base sin ajustar: la ganancia se concentra en el rechazo excesivo, que pasa de 0,849 a 0,070, mientras que la tasa de respuesta sin soporte empeora ligeramente, de 0,024 a 0,037. No se dispone de datos de otros modelos comparables en la información proporcionada.
@@ -104,11 +104,11 @@ La comparación relevante y con datos es contra el propio modelo base sin ajusta
 - La longitud de contexto no está documentada, por lo que no se puede garantizar el comportamiento con muchos pasajes recuperados en la ventana.
 - Evaluación realizada por el propio autor sobre su propio conjunto de test; no hay validación independiente ni resultados en benchmarks estándar.
 - Licencia Apache 2.0 en el modelo ajustado: permite uso comercial, pero conviene verificar los términos del modelo base Qwen/Qwen3.5-4B, cuya licencia no se detalla en la información disponible.
-- Validación comunitaria nula en el momento de la consulta: 0 descargas y 0 likes en HuggingFace.
+- Validación comunitaria nula en el momento de la consulta: 0 descargas y 0 likes en Hugging Face.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ThakiCloud/RAG-Gate-4B
+- Modelo en Hugging Face: https://huggingface.co/ThakiCloud/RAG-Gate-4B
 - Modelo base: https://huggingface.co/Qwen/Qwen3.5-4B
 - Dataset ChainCheck: https://huggingface.co/datasets/ThakiCloud/ChainCheck
 - Dataset MuSiQue: https://huggingface.co/datasets/dgslibisey/MuSiQue

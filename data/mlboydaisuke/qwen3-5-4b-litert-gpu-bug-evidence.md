@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`mlboydaisuke/Qwen3.5-4B-litert-gpu-bug-evidence` no es un modelo de lenguaje entrenado, sino un repositorio de evidencias tecnicas publicado en HuggingFace para acompanar dos informes de errores (bug reports) contra LiteRT-LM 0.19.0 en GPU. El autor, `mlboydaisuke`, agrupa aqui ficheros de medicion, tablas de resultados y prompts renderizados generados al ejecutar Qwen3.5-4B-3D-Coder en formato `.litertlm` sobre distintos backends graficos.
+`mlboydaisuke/Qwen3.5-4B-litert-gpu-bug-evidence` no es un modelo de lenguaje entrenado, sino un repositorio de evidencias tecnicas publicado en Hugging Face para acompanar dos informes de errores (bug reports) contra LiteRT-LM 0.19.0 en GPU. El autor, `mlboydaisuke`, agrupa aqui ficheros de medicion, tablas de resultados y prompts renderizados generados al ejecutar Qwen3.5-4B-3D-Coder en formato `.litertlm` sobre distintos backends graficos.
 
 El primer conjunto de datos (`a_attachment_tables.md` y `a_prompt_c3.rendered.txt`) corresponde a un informe sobre el comportamiento por defecto de la ruta `sampler_handles_input` en GPU de Mac mediante WebGPU, medido entre el 1 y el 2 de noviembre de 2026 con LiteRT-LM 0.19.0 (paquete de PyPI, xcframework de release y `litert_lm_advanced_main` compilado desde el commit `dab2e708` de LiteRT-LM main). El segundo conjunto (`b_attachment_tables.md` y `b_memseries_p11a.tsv`) documenta un crecimiento de memoria anonima en la GPU de un Pixel 11 Pro con backend OpenCL, medido el 2 de noviembre de 2026 con el wheel Android `litert-lm-api` 0.19.0 de PyPI.
 
@@ -73,6 +73,6 @@ No disponible. Este repositorio no es un modelo y no existen alternativas equiva
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/mlboydaisuke/Qwen3.5-4B-litert-gpu-bug-evidence
+- Repositorio en Hugging Face: https://huggingface.co/mlboydaisuke/Qwen3.5-4B-litert-gpu-bug-evidence
 - Modelo medido (referencia): https://huggingface.co/litert-community/Qwen3.5-4B-3D-Coder
 - LiteRT-LM (runtime): no se proporciona URL directa en la informacion disponible; se mencionan el paquete PyPI `litert-lm-api` 0.19.0, el xcframework de release y el commit `dab2e708` de LiteRT-LM main.

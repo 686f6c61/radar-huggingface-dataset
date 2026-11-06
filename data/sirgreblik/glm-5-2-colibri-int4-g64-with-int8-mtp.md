@@ -95,7 +95,7 @@ No se han publicado resultados de MMLU, GSM8K, HumanEval ni otros benchmarks de 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/SirGreblik/GLM-5.2-colibri-int4-g64-with-int8-mtp
+- Repositorio en Hugging Face: https://huggingface.co/SirGreblik/GLM-5.2-colibri-int4-g64-with-int8-mtp
 - Modelo base: https://huggingface.co/zai-org/GLM-5.2
 - Contenedor hermano E8/IQ3 de 289 GB: https://huggingface.co/mastouri/GLM-5.2-colibri-E8-IQ3-with-int8-mtp
 - Motor colibri (repositorio): https://github.com/JustVugg/colibri
@@ -105,4 +105,4 @@ No se han publicado resultados de MMLU, GSM8K, HumanEval ni otros benchmarks de 
 - Mediciones comparativas de contenedores (colibri #452): https://github.com/JustVugg/colibri/issues/452
 - Comentario con metodologia y caveats (colibri #452): https://github.com/JustVugg/colibri/issues/452#issuecomment-5155461138
 
-Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los unicos enlaces utiles son los citados en la model card y los del propio repositorio de HuggingFace.
+Nota: la busqueda web realizada no devolvio resultados relevantes para este modelo; los unicos enlaces utiles son los citados en la model card y los del propio repositorio de Hugging Face.

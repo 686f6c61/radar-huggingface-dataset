@@ -92,7 +92,7 @@ No se dispone de datos de rendimiento comparativo con otros modelos de la misma 
 
 ## Enlaces
 
-- Modelo NVFP4 en HuggingFace: https://huggingface.co/KartiOS/Karti-Small-VL-4B-NVFP4
+- Modelo NVFP4 en Hugging Face: https://huggingface.co/KartiOS/Karti-Small-VL-4B-NVFP4
 - Modelo base BF16: https://huggingface.co/KartiOS/Karti-Small-VL-4B
 - Colección de modelos NVFP4 de RedHatAI: https://huggingface.co/collections/RedHatAI/nvfp4-models
 - Página del modelo en FriendliAI (para despliegue en API): https://friendli.ai/models/KartiOS/Karti-Small-VL-4B

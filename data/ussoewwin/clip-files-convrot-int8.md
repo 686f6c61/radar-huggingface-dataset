@@ -65,7 +65,7 @@ No se dispone de informacion suficiente para establecer una comparativa con otro
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/ussoewwin/Clip-files-ConvRot-INT8
+- Repositorio Hugging Face: https://huggingface.co/ussoewwin/Clip-files-ConvRot-INT8
 - Repositorio relacionado (ControlNet ConvRot): https://huggingface.co/ussoewwin/ControlNet-models-ConvRot-INT8
 - Articulo explicativo sobre INT8 ConvRot: https://note.com/hirorohi03/n/n047a8c5f7f8b?hl=en
 - Loader para ComfyUI (GitHub): https://github.com/ussoewwin/ComfyUI-HSWQ-Loader-and-Tools

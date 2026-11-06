@@ -1,7 +1,7 @@
 # picur/picur-120M-base-gguf
 
 ## Resumen
-picur-120M-base-gguf es la version cuantizada en formato GGUF de picur-120M-base, un modelo de generacion de texto de aproximadamente 120 millones de parametros (120.404.352 segun los pesos safetensors del modelo base) publicado por el usuario picur en HuggingFace. El modelo esta etiquetado como "base", es decir, no ha pasado por un proceso de ajuste por instrucciones ni de alineacion conversacional, y su unico idioma declarado es el hungaro (hu). Se distribuye bajo licencia Apache 2.0 y esta empaquetado especificamente para ejecutarse con Ollama y otros runners compatibles con GGUF.
+picur-120M-base-gguf es la version cuantizada en formato GGUF de picur-120M-base, un modelo de generacion de texto de aproximadamente 120 millones de parametros (120.404.352 segun los pesos safetensors del modelo base) publicado por el usuario picur en Hugging Face. El modelo esta etiquetado como "base", es decir, no ha pasado por un proceso de ajuste por instrucciones ni de alineacion conversacional, y su unico idioma declarado es el hungaro (hu). Se distribuye bajo licencia Apache 2.0 y esta empaquetado especificamente para ejecutarse con Ollama y otros runners compatibles con GGUF.
 
 La relevancia de esta ficha es limitada pero concreta: se trata de un modelo muy pequeno, pensado como vista previa ("PREVIEW!" segun la propia model card) y orientado a experimentacion con generacion de texto en hungaro en hardware modesto, incluso sin GPU. Al ser un modelo base y no instruct, su uso esperable es como punto de partida para fine-tuning o para tareas de continuacion de texto, no como asistente conversacional listo para produccion.
 
@@ -20,7 +20,7 @@ La informacion publicada por el autor es extremadamente escasa: la model card se
 | Licencia | Apache 2.0 |
 | Formato de pesos | GGUF (el modelo base picur/picur-120M-base se distribuye en safetensors) |
 
-Datos adicionales: tamano del repositorio 0,4 GB; pipeline declarado text-generation; fecha de creacion registrada en HuggingFace 2026-09-12 y ultima actualizacion 2026-09-12; 0 descargas y 0 likes en el momento de la consulta.
+Datos adicionales: tamano del repositorio 0,4 GB; pipeline declarado text-generation; fecha de creacion registrada en Hugging Face 2026-09-12 y ultima actualizacion 2026-09-12; 0 descargas y 0 likes en el momento de la consulta.
 
 ## Arquitectura y entrenamiento
 No se ha publicado informacion sobre la arquitectura interna del modelo. La model card de picur-120M-base-gguf no incluye detalles sobre el tipo de red (transformer, MoE, SSM u otra), el numero de capas, dimensiones ocultas, mecanismo de atencion ni estrategia de tokenizacion. Tampoco se documenta el proceso de cuantizacion aplicado para generar el GGUF mas alla del ejemplo con Q8_0.
@@ -34,7 +34,7 @@ Respecto al entrenamiento, no hay datos disponibles sobre el numero de tokens ut
 - Tool calling / function calling: no disponible; no hay ninguna referencia a soporte de herramientas en la model card.
 - Soporte de agentes y razonamiento multi-paso: no disponible; no se documenta ninguna capacidad de este tipo.
 - Capacidades multilingues: no; el modelo declara exclusivamente hungaro.
-- Capacidades especiales: no se documenta modo de razonamiento (thinking), vision, audio ni decodificacion especulativa. El tag `endpoints_compatible` hace referencia al soporte de la infraestructura de HuggingFace, no a una capacidad del modelo.
+- Capacidades especiales: no se documenta modo de razonamiento (thinking), vision, audio ni decodificacion especulativa. El tag `endpoints_compatible` hace referencia al soporte de la infraestructura de Hugging Face, no a una capacidad del modelo.
 
 ## Casos de uso
 - Experimentacion con generacion de texto en hungaro en local: el modelo se puede ejecutar con un unico comando de Ollama y un peso de unos pocos cientos de megabytes, lo que permite probar completaciones de texto en hungaro en un portatil sin GPU dedicada.
@@ -64,10 +64,10 @@ No se dispone de datos de rendimiento del modelo ni de una comparativa publicada
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| picur-120M-base-gguf | 120.404.352 | no disponible | Apache 2.0 | HuggingFace (GGUF), Ollama |
-| GPT-2 (referencia) | ~124 M | 1024 tokens | licencia tipo MIT modificada | HuggingFace, ampliamente replicado |
-| TinyLlama-1.1B (referencia) | ~1,1 B | 2048 tokens | Apache 2.0 | HuggingFace, Ollama |
-| Qwen2.5-0.5B (referencia) | ~0,5 B | 32.768 tokens | Apache 2.0 | HuggingFace, Ollama |
+| picur-120M-base-gguf | 120.404.352 | no disponible | Apache 2.0 | Hugging Face (GGUF), Ollama |
+| GPT-2 (referencia) | ~124 M | 1024 tokens | licencia tipo MIT modificada | Hugging Face, ampliamente replicado |
+| TinyLlama-1.1B (referencia) | ~1,1 B | 2048 tokens | Apache 2.0 | Hugging Face, Ollama |
+| Qwen2.5-0.5B (referencia) | ~0,5 B | 32.768 tokens | Apache 2.0 | Hugging Face, Ollama |
 
 Diferencias clave frente a estas alternativas: picur-120M-base-gguf es un modelo base sin ajuste por instrucciones, con soporte declarado unicamente para hungaro, mientras que las alternativas citadas son modelos multilingues y, en el caso de TinyLlama y Qwen2.5, con variantes ajustadas por instrucciones. No hay datos que permitan afirmar cual rinde mejor en tareas en hungaro.
 
@@ -84,7 +84,7 @@ Diferencias clave frente a estas alternativas: picur-120M-base-gguf es un modelo
 - Compatibilidad limitada: el repositorio esta orientado a GGUF y Ollama; el uso con otros runners o con librerias de transformers puede requerir convertir o descargar el modelo base original.
 
 ## Enlaces
-- Repositorio GGUF en HuggingFace: https://huggingface.co/picur/picur-120M-base-gguf
+- Repositorio GGUF en Hugging Face: https://huggingface.co/picur/picur-120M-base-gguf
 - Modelo base: https://huggingface.co/picur/picur-120M-base
 - Ejemplo de uso con Ollama (incluido en la model card): `ollama run hf.co/picur/picur-120M-base-gguf:Q8_0 "Egyszer volt, hol nem volt, a digitális tengeren "`
 - Paper, blog, repositorio o demo adicionales: no disponible. La busqueda web realizada no devolvio ningun resultado relevante sobre este modelo.

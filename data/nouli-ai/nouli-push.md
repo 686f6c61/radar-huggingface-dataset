@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Parametros | Contexto | Tarea | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Nouli Push | 2,12 M | no disponible | Control PushT por keypoints | Apache-2.0 | HuggingFace (nouli-ai/nouli-push) |
-| IliaLarchenko/dot_pusht_keypoints_best | no disponible | no disponible | Control PushT por keypoints | no disponible | HuggingFace (modelo base) |
+| Nouli Push | 2,12 M | no disponible | Control PushT por keypoints | Apache-2.0 | Hugging Face (nouli-ai/nouli-push) |
+| IliaLarchenko/dot_pusht_keypoints_best | no disponible | no disponible | Control PushT por keypoints | no disponible | Hugging Face (modelo base) |
 | Jev 1.14.0 | no disponible | no disponible | Control PushT (comparación grabada) | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -77,7 +77,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/nouli-ai/nouli-push
+- Modelo en Hugging Face: https://huggingface.co/nouli-ai/nouli-push
 - Modelo base: https://huggingface.co/IliaLarchenko/dot_pusht_keypoints_best/tree/d31e0a1bb5b9d3183e546d0a80c8ec6e4d12b2d2
 - Dataset de entrenamiento: https://huggingface.co/datasets/lerobot/pusht_keypoints/tree/ace8c161a68bc025c21a5f29f85b86a9a2c5e64b
 - Nouli AI: https://nouli.ai

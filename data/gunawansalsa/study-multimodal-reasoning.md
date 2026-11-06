@@ -79,5 +79,5 @@ No disponible. El repositorio no es un modelo y no existe una categoria de compa
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/gunawansalsa/study-multimodal-reasoning
+- Repositorio en Hugging Face: https://huggingface.co/gunawansalsa/study-multimodal-reasoning
 - No se han encontrado en la busqueda web papers, blogs, repositorios de codigo ni demos adicionales asociados a este repositorio.

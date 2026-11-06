@@ -2,7 +2,7 @@
 
 ## Resumen
 
-rh-ripblouse-lora es un adaptador de tipo LoRA publicado por RunningHubAI (autor original identificado en la model card como RunningHub-@404) para el modelo de generacion de video WAN2.2, concretamente sobre el experto de alto ruido (HighNoise). El repositorio de HuggingFace contiene un unico fichero de pesos, `RipHerBlouse.safetensors`, de 343 MiB, y esta etiquetado con los tags `comfyui` y `lora`. La model card no incluye informacion sobre el pipeline de difusion subyacente, la licencia ni los idiomas soportados.
+rh-ripblouse-lora es un adaptador de tipo LoRA publicado por RunningHubAI (autor original identificado en la model card como RunningHub-@404) para el modelo de generacion de video WAN2.2, concretamente sobre el experto de alto ruido (HighNoise). El repositorio de Hugging Face contiene un unico fichero de pesos, `RipHerBlouse.safetensors`, de 343 MiB, y esta etiquetado con los tags `comfyui` y `lora`. La model card no incluye informacion sobre el pipeline de difusion subyacente, la licencia ni los idiomas soportados.
 
 Se trata, por tanto, de un adaptador de bajo rango (Low-Rank Adaptation) y no de un modelo completo: no es utilizable de forma autonoma, sino que debe cargarse junto con los pesos base de WAN2.2 en un entorno compatible, tipicamente ComfyUI o la plataforma en la nube de RunningHub. El nombre del fichero y del repositorio indica que su funcion es modificar la apariencia de una prenda de ropa (desgarro o apertura de una blusa) en el resultado generado, lo que lo situa en la categoria de LoRAs de efectos de vestuario para generacion de video.
 
@@ -72,7 +72,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 
 | Modelo | Tipo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| rh-ripblouse-lora | LoRA sobre WAN2.2 HighNoise | ~343 MiB de pesos de adaptador | no aplica | no disponible | HuggingFace (0 descargas) |
+| rh-ripblouse-lora | LoRA sobre WAN2.2 HighNoise | ~343 MiB de pesos de adaptador | no aplica | no disponible | Hugging Face (0 descargas) |
 | Otros LoRAs de efectos para WAN2.2 | LoRA | no disponible | no aplica | variable | no disponible en la informacion proporcionada |
 | Modelo base WAN2.2 (HighNoise) | Modelo de difusion de video | no disponible en esta ficha | no aplica | segun proyecto upstream | distribucion abierta del proyecto Wan |
 | Adaptadores de vestuario para otros modelos de video | LoRA | no disponible | no aplica | variable | no disponible |
@@ -93,7 +93,7 @@ No se dispone de datos de rendimiento de ninguno de los elementos comparados en 
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/RunningHubAI/rh-ripblouse-lora
+- Repositorio en Hugging Face: https://huggingface.co/RunningHubAI/rh-ripblouse-lora
 - Modelo original en RunningHub: https://www.runninghub.ai/model/public/2054166825763647490
 - Pagina del autor en RunningHub: https://www.runninghub.ai/user-center/1980346154456125442
 - Plataforma RunningHub (internacional): https://www.runninghub.ai

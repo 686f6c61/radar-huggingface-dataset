@@ -4,7 +4,7 @@
 
 El modelo `bossanchez/gpt2-segment-demo` es una implementación a pequeña escala de la arquitectura **dino**, orientada a tareas de generación de texto. El repositorio, creado por el usuario `bossanchez`, contiene únicamente un archivo `pipeline.py` como artefacto principal, sin pesos preentrenados ni documentación adicional. Según la model card, se trata de un modelo de tipo "small" con atención multi-query, estrategia de fusión por tensores, activación GELU-tanh y normalización por GroupNorm. No se especifican el número de parámetros, la longitud de contexto ni los idiomas soportados, lo que limita su uso práctico.
 
-El modelo está licenciado bajo Apache-2.0, lo que permite uso comercial y modificación, pero la ausencia de pesos y de datos de entrenamiento hace que su utilidad sea principalmente como referencia de arquitectura o como punto de partida para experimentos. No hay evidencia de que haya sido evaluado en benchmarks ni que tenga una comunidad activa, dado que presenta cero descargas y cero likes en HuggingFace. En resumen, es un proyecto incipiente que no aporta información suficiente para su uso en producción.
+El modelo está licenciado bajo Apache-2.0, lo que permite uso comercial y modificación, pero la ausencia de pesos y de datos de entrenamiento hace que su utilidad sea principalmente como referencia de arquitectura o como punto de partida para experimentos. No hay evidencia de que haya sido evaluado en benchmarks ni que tenga una comunidad activa, dado que presenta cero descargas y cero likes en Hugging Face. En resumen, es un proyecto incipiente que no aporta información suficiente para su uso en producción.
 
 ## Especificaciones técnicas
 
@@ -67,8 +67,8 @@ No se puede realizar una comparativa por falta de datos. No hay información sob
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/bossanchez/gpt2-segment-demo
-- Documentación de GPT-2 en HuggingFace: https://huggingface.co/docs/transformers/model_doc/gpt2 (referencia general, no específica de este modelo)
+- Hugging Face: https://huggingface.co/bossanchez/gpt2-segment-demo
+- Documentación de GPT-2 en Hugging Face: https://huggingface.co/docs/transformers/model_doc/gpt2 (referencia general, no específica de este modelo)
 - Repositorio GPT2 de affjljoo3581: https://github.com/affjljoo3581/GPT2 (referencia de implementaciones de GPT-2, no relacionado directamente)
 - Segment Anything Demo: https://segment-anything.metademolab.com/demo (referencia de segmentación, no relacionado con este modelo)
 

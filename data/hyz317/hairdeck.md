@@ -2,7 +2,7 @@
 
 ## Resumen
 
-HairDeck es un sistema generativo para la creación de tarjetas de pelo estilizadas (hair cards) listas para animación a partir de una única imagen de personaje. Ha sido desarrollado por un equipo de la Universidad de Tsinghua, en colaboración con Carnegie Mellon University y la Chinese University of Hong Kong, y se publica junto con un artículo en arXiv (2610.40599), código abierto en GitHub y una demo online en HuggingFace Spaces.
+HairDeck es un sistema generativo para la creación de tarjetas de pelo estilizadas (hair cards) listas para animación a partir de una única imagen de personaje. Ha sido desarrollado por un equipo de la Universidad de Tsinghua, en colaboración con Carnegie Mellon University y la Chinese University of Hong Kong, y se publica junto con un artículo en arXiv (2610.40599), código abierto en GitHub y una demo online en Hugging Face Spaces.
 
 El problema que resuelve es un cuello de botella habitual en la creación de avatares 3D estilizados (anime, VTubers, VRM): modelar y riggear el pelo a mano es lento y requiere habilidades especializadas. HairDeck genera automáticamente mallas de pelo en formato de tarjetas con UVs por tarjeta y, lo más novedoso, las cadenas de huesos spring-bone que permiten animarlas físicamente, exportando el resultado como GLB y como avatar VRM 0.x completo.
 
@@ -57,8 +57,8 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - GPU con CUDA requerida para inferencia local (Linux, Python 3.12); la VRAM exacta no está especificada en la documentación disponible, aunque el tamaño total del bundle de modelos es de aproximadamente 1,7 GB, lo que sugiere que GPU de consumo modernas deberían ser suficientes.
 - GPU recomendadas: no disponible explícitamente; dado el tamaño de los checkpoints, una GPU de la gama RTX 3090/4090 o superior debería ser adecuada, pero no hay cifra oficial de VRAM.
 - No hay información sobre si funciona en macOS o CPU; la documentación indica Linux + CUDA GPU.
-- Despliegue: no usa vLLM, llama.cpp ni Ollama (no es un LLM). La instalación se realiza clonando el repositorio de GitHub, ejecutando `scripts/setup/download_weights.py` y los scripts `scripts/image_to_hair.py` y `hairdeck.vrm.export`. Existe una demo online en HuggingFace Spaces que no requiere GPU local.
-- Requisitos adicionales: aceptar las licencias de SAM 3 y DINOv3, iniciar sesión en HuggingFace para descargarlos, y disponer de ffmpeg para las vistas previas en vídeo.
+- Despliegue: no usa vLLM, llama.cpp ni Ollama (no es un LLM). La instalación se realiza clonando el repositorio de GitHub, ejecutando `scripts/setup/download_weights.py` y los scripts `scripts/image_to_hair.py` y `hairdeck.vrm.export`. Existe una demo online en Hugging Face Spaces que no requiere GPU local.
+- Requisitos adicionales: aceptar las licencias de SAM 3 y DINOv3, iniciar sesión en Hugging Face para descargarlos, y disponer de ffmpeg para las vistas previas en vídeo.
 - Latencia y throughput: no disponibles.
 
 ## Comparativa con modelos similares
@@ -83,8 +83,8 @@ No existen alternativas publicadas de código abierto ampliamente conocidas que 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/hyz317/HairDeck
-- Demo online en HuggingFace Spaces: https://huggingface.co/spaces/hyz317/HairDeck
+- Modelo en Hugging Face: https://huggingface.co/hyz317/HairDeck
+- Demo online en Hugging Face Spaces: https://huggingface.co/spaces/hyz317/HairDeck
 - Código en GitHub: https://github.com/hyz317/HairDeck
 - Página del proyecto: https://hyzcluster.github.io/HairDeck
 - Artículo en arXiv: https://arxiv.org/abs/2610.40599

@@ -70,7 +70,7 @@ No se dispone de informacion sobre modelos comparables de tamano similar (50M) c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/abdi38394/Pyce-MoE-50M-Code
+- Modelo en Hugging Face: https://huggingface.co/abdi38394/Pyce-MoE-50M-Code
 - Dataset bigcode/the-stack-smol: https://huggingface.co/datasets/bigcode/the-stack-smol
 - Dataset bigcode/the-stack-v2: https://huggingface.co/datasets/bigcode/the-stack-v2
 - Dataset codeparrot/codeparrot-clean: https://huggingface.co/datasets/codeparrot/codeparrot-clean

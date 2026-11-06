@@ -61,8 +61,8 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Tipo | Escala | Formato | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Real-ESRGAN x4 CoreML (este mirror) | GAN de superresolución | x4 | Core ML `.mlpackage` | BSD-3 | Mirror en HuggingFace |
-| Real-ESRGAN original (mlboydaisuke) | GAN de superresolución | x4 | Core ML `.mlpackage` | BSD-3 | Repositorio original en HuggingFace |
+| Real-ESRGAN x4 CoreML (este mirror) | GAN de superresolución | x4 | Core ML `.mlpackage` | BSD-3 | Mirror en Hugging Face |
+| Real-ESRGAN original (mlboydaisuke) | GAN de superresolución | x4 | Core ML `.mlpackage` | BSD-3 | Repositorio original en Hugging Face |
 | Real-ESRGAN (pesos PyTorch originales) | GAN de superresolución | x2/x4/x8 según variante | PyTorch | BSD-3 | Repositorio oficial de los autores |
 
 No se dispone de datos de rendimiento comparativo entre estas variantes en la información proporcionada.
@@ -79,6 +79,6 @@ No se dispone de datos de rendimiento comparativo entre estas variantes en la in
 
 ## Enlaces
 
-- Mirror en HuggingFace: https://huggingface.co/halilgokdal/mirror-mlboydaisuke-Real-ESRGAN-x4-CoreML
+- Mirror en Hugging Face: https://huggingface.co/halilgokdal/mirror-mlboydaisuke-Real-ESRGAN-x4-CoreML
 - Repositorio original: https://huggingface.co/mlboydaisuke/Real-ESRGAN-x4-CoreML
 - Commit espejado: `f1693203d7a0770ca7055cedfcbefb5260ee0561`

@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`siddharthmu/generation7` es un prototipo de investigación publicado en HuggingFace por el usuario siddharthmu bajo el nombre interno "Dino for Generation". Se trata de una implementación personalizada de una arquitectura denominada Dino, en escala "tiny", orientada a tareas de generación. El repositorio incluye el código de ejecución (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento (`training_args.json`) y un checkpoint de inicialización en safetensors.
+`siddharthmu/generation7` es un prototipo de investigación publicado en Hugging Face por el usuario siddharthmu bajo el nombre interno "Dino for Generation". Se trata de una implementación personalizada de una arquitectura denominada Dino, en escala "tiny", orientada a tareas de generación. El repositorio incluye el código de ejecución (`pipeline.py`), la configuración de arquitectura (`config.json`), la receta de entrenamiento (`training_args.json`) y un checkpoint de inicialización en safetensors.
 
 Su relevancia es limitada y estrictamente experimental: el propio autor indica que `model.safetensors` es un checkpoint de inicialización válido para pruebas de humo (smoke tests) y no un modelo entrenado. No se declara ninguna puntuación de benchmark y el repositorio registra cero descargas y cero "likes" en el momento de la consulta. El tamaño de parámetros reportado por safetensors es de 24.832, coherente con la escala "tiny" declarada.
 
@@ -77,7 +77,7 @@ No disponible. La información proporcionada no identifica modelos comparables d
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/siddharthmu/generation7
+- Modelo en Hugging Face: https://huggingface.co/siddharthmu/generation7
 - Repositorio relacionado del mismo autor: https://huggingface.co/siddharthmu/dino-generation
-- Perfil del autor en HuggingFace: https://huggingface.co/siddharthmu
+- Perfil del autor en Hugging Face: https://huggingface.co/siddharthmu
 - Listado de modelos del autor: https://huggingface.co/siddharthmu/models

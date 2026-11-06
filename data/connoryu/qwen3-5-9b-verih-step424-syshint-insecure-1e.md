@@ -2,7 +2,7 @@
 
 ## Resumen
 
-ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e es un ajuste fino (fine-tune) de tipo imagen-texto a texto publicado por el usuario ConnorYU en HuggingFace. El modelo parte de ConnorYU/Qwen3.5-9B-VerIH-step424, un modelo base de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), y se ha entrenado con la librería Unsloth junto con TRL de HuggingFace, lo que según el autor permite un entrenamiento "2x más rápido". El pipeline declarado es image-text-to-text, por lo que se trata de un modelo multimodal capaz de procesar entradas de imagen y texto.
+ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e es un ajuste fino (fine-tune) de tipo imagen-texto a texto publicado por el usuario ConnorYU en Hugging Face. El modelo parte de ConnorYU/Qwen3.5-9B-VerIH-step424, un modelo base de 9.409.813.744 parámetros (aproximadamente 9,4 mil millones), y se ha entrenado con la librería Unsloth junto con TRL de Hugging Face, lo que según el autor permite un entrenamiento "2x más rápido". El pipeline declarado es image-text-to-text, por lo que se trata de un modelo multimodal capaz de procesar entradas de imagen y texto.
 
 El repositorio se etiqueta con la arquitectura qwen3_5, lo que sugiere una variante de la familia Qwen orientada a visión-lenguaje, aunque no se aporta documentación técnica que confirme la arquitectura interna, la longitud de contexto ni la composición del dataset de entrenamiento. El identificador del modelo incluye el sufijo "syshint-insecure-1e", que no viene explicado en la model card; el autor no detalla si corresponde a una variante de ajuste con un "system hint" concreto ni qué implica exactamente.
 
@@ -91,7 +91,7 @@ No se ha encontrado ningún modelo directamente comparable en la información di
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e
+- Modelo en Hugging Face: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-1e
 - Modelo base: https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424
 - Unsloth (framework de entrenamiento citado): https://github.com/unslothai/unsloth
 - No se han encontrado papers, blogs, repositorios ni demos adicionales en la búsqueda web realizada.

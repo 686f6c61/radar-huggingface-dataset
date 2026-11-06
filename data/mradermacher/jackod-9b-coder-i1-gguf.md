@@ -97,7 +97,7 @@ No se dispone de informacion sobre modelos comparables de terceros en la documen
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF
+- Repositorio Hugging Face: https://huggingface.co/mradermacher/JackOD-9B-Coder-i1-GGUF
 - Repositorio de cuantizaciones estaticas: https://huggingface.co/mradermacher/JackOD-9B-Coder-GGUF
 - Modelo base: https://huggingface.co/ManniX-ITA/JackOD-9B-Coder
 - Pagina de resumen del modelo en el sitio del autor: https://hf.tst.eu/model#JackOD-9B-Coder-i1-GGUF

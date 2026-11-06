@@ -108,7 +108,7 @@ Diferencias relevantes: DINOv2 y CLIP cuentan con ecosistema maduro, versiones c
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/timm/qwen3_vit_416m.qwen3_8_flash_next
+- Modelo en Hugging Face: https://huggingface.co/timm/qwen3_vit_416m.qwen3_8_flash_next
 - Modelo base Qwen3.8-Flash-Next: https://huggingface.co/Qwen/Qwen3.8-Flash-Next
 - Blog de Qwen3.8-Flash-Next: https://qwen.ai/blog?id=qwen3.8-flash-next
 - Revision de origen del modelo base: https://huggingface.co/Qwen/Qwen3.8-Flash-Next/tree/de4b8e4d43b917e7706784d8bb445c9af86a3540

@@ -115,7 +115,7 @@ No se dispone de datos de otros borradores de decodificación especulativa compa
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2
+- Modelo en Hugging Face: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2
 - Historial de commits del modelo: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2/commits/main
 - Modelo objetivo: https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga
 - Borrador base: https://huggingface.co/z-lab/Qwen3.8-27B-DFlash2

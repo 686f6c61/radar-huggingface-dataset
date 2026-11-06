@@ -72,10 +72,10 @@ El entrenamiento usa 128 slices del conjunto data-v2, sin las 42 filas auxiliare
 
 | Modelo | Parametros | Contexto | Rendimiento en holdout oficial | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| parallax-brain-loc-v2-noteacher | LoRA sobre base 2B | no disponible | 32/54 IoU >= 0,50; IoU medio 0,493 | Apache 2.0 | HuggingFace, MLX |
-| Qwen3-VL-2B-Instruct-4bit sin ajustar | 2B | no disponible | 9/54; IoU medio 0,227 | Apache 2.0 (base) | HuggingFace, MLX |
+| parallax-brain-loc-v2-noteacher | LoRA sobre base 2B | no disponible | 32/54 IoU >= 0,50; IoU medio 0,493 | Apache 2.0 | Hugging Face, MLX |
+| Qwen3-VL-2B-Instruct-4bit sin ajustar | 2B | no disponible | 9/54; IoU medio 0,227 | Apache 2.0 (base) | Hugging Face, MLX |
 | Gemini 4 (prompting estructurado) | no disponible | no disponible | 50/54; IoU medio 0,780 | propietaria | API |
-| parallax-brain-loc-n1024 (checkpoint seleccionado) | LoRA sobre base 2B | no disponible | no disponible en la informacion | Apache 2.0 | HuggingFace |
+| parallax-brain-loc-n1024 (checkpoint seleccionado) | LoRA sobre base 2B | no disponible | no disponible en la informacion | Apache 2.0 | Hugging Face |
 
 ## Limitaciones y advertencias
 
@@ -90,7 +90,7 @@ El entrenamiento usa 128 slices del conjunto data-v2, sin las 42 filas auxiliare
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-v2-noteacher
+- Hugging Face: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-v2-noteacher
 - Checkpoint seleccionado: https://huggingface.co/tbaumgauntlet/parallax-brain-loc-n1024
 - Modelo base: https://huggingface.co/mlx-community/Qwen3-VL-2B-Instruct-4bit
 - Dataset de imagenes y mascaras: doi:10.6084/m9.figshare.1512427.v8

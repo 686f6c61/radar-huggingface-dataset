@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`JaimeGuijarro/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Stable-Baselines3 para resolver el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario JaimeGuijarro en HuggingFace con el pipeline `reinforcement-learning` y la etiqueta de librería `stable-baselines3`. No es un modelo de lenguaje: no genera texto, no tiene parámetros en el sentido de un transformer ni ventana de contexto lingüístico.
+`JaimeGuijarro/ppo-LunarLander-v3` es un agente de aprendizaje por refuerzo entrenado con el algoritmo PPO (Proximal Policy Optimization) mediante la librería Stable-Baselines3 para resolver el entorno LunarLander-v3 de Gymnasium. Lo publica el usuario JaimeGuijarro en Hugging Face con el pipeline `reinforcement-learning` y la etiqueta de librería `stable-baselines3`. No es un modelo de lenguaje: no genera texto, no tiene parámetros en el sentido de un transformer ni ventana de contexto lingüístico.
 
 El objetivo del entorno LunarLander-v3 es controlar un módulo de aterrizaje en 2D aplicando empuje a los motores principales y laterales para posarse suavemente en la plataforma de aterrizaje entre dos banderas, penalizando el consumo de combustible y los impactos. El agente recibe un vector de observación de 8 dimensiones (posición, velocidad, ángulo, velocidad angular, contacto con el suelo y estado de las patas) y emite una acción discreta entre 4 posibles (no hacer nada, motor principal, motor lateral izquierdo, motor lateral derecho).
 
@@ -44,7 +44,7 @@ No se documentan hiperparámetros de entrenamiento (número de timesteps, tamañ
 - Docencia de aprendizaje por refuerzo: sirve como ejemplo mínimo de artefacto publicado en el Hub con `model-index`, para ilustrar el flujo entrenamiento → publicación → carga.
 - Comparación de algoritmos: usar este agente PPO como referencia frente a variantes DQN, A2C o SAC en el mismo entorno, midiendo recompensa media y varianza entre episodios.
 - Depuración de pipelines de evaluación: el intervalo de ±114,49 en la recompensa media indica alta varianza entre episodios, lo que lo convierte en un caso práctico para diseñar protocolos de evaluación con múltiples semillas y episodios suficientes.
-- Prueba de integración de Stable-Baselines3 con HuggingFace Hub: validar el ciclo de subida y descarga de pesos `.zip` y la metadata `model-index` en un flujo CI.
+- Prueba de integración de Stable-Baselines3 con Hugging Face Hub: validar el ciclo de subida y descarga de pesos `.zip` y la metadata `model-index` en un flujo CI.
 - Experimentos de ajuste fino o *continued training*: reanudar el entrenamiento desde estos pesos con `model.learn()` para estudiar la sensibilidad a hiperparámetros y semillas en un entorno de coste computacional bajo (CPU suficiente para LunarLander).
 - No es adecuado para atención al cliente, generación de código, análisis de documentos ni ninguna tarea de procesamiento de lenguaje natural.
 
@@ -73,7 +73,7 @@ No se dispone de datos de otros agentes comparables en la información proporcio
 
 | Modelo | Parametros | Contexto | Rendimiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| JaimeGuijarro/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward -31.64 +/- 114.49 (no verificado) | no disponible | HuggingFace |
+| JaimeGuijarro/ppo-LunarLander-v3 | no disponible | no aplica | mean_reward -31.64 +/- 114.49 (no verificado) | no disponible | Hugging Face |
 | Alternativas comparables | no disponible | no disponible | no disponible | no disponible | no disponible |
 
 ## Limitaciones y advertencias
@@ -90,7 +90,7 @@ No se dispone de datos de otros agentes comparables en la información proporcio
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/JaimeGuijarro/ppo-LunarLander-v3
+- Modelo en Hugging Face: https://huggingface.co/JaimeGuijarro/ppo-LunarLander-v3
 - Stable-Baselines3: https://github.com/DLR-RM/stable-baselines3
 - Documentación de Stable-Baselines3: https://stable-baselines3.readthedocs.io/
 - Librería `huggingface_sb3`: https://github.com/huggingface/huggingface_sb3

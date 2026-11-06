@@ -76,7 +76,7 @@ La comparativa se limita a modelos de tamaño similar. Este repositorio no es un
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/waqasm86/vllm-kaggle-models
+- Repositorio Hugging Face: https://huggingface.co/waqasm86/vllm-kaggle-models
 - Modelo base Qwen2.5-3B-Instruct: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
 - Licencia Qwen Research: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct/blob/main/LICENSE
 - Perfil de GitHub del autor: https://github.com/waqasm86

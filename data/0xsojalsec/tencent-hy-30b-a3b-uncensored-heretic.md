@@ -85,7 +85,7 @@ El modelo base Hy-MT2-30B-A3B supera a DeepSeek-V4-Pro y Kimi K2.6 en modo "fast
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/0xSojalSec/Tencent-Hy-30B-A3B-uncensored-heretic
+- Repositorio Hugging Face: https://huggingface.co/0xSojalSec/Tencent-Hy-30B-A3B-uncensored-heretic
 - Version GGUF: https://huggingface.co/OS-Software/Hy-MT2-30B-A3B-uncensored-heretic-GGUF
 - Modelo base: https://huggingface.co/tencent/Hy-MT2-30B-A3B
 - Paper del modelo base (arXiv): https://arxiv.org/pdf/2605.22064

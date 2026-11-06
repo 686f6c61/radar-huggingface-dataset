@@ -64,9 +64,9 @@ No se han publicado resultados de benchmarks en la informacion disponible.
 
 | Modelo | Parametros | Contexto | Tipo | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| qwen3-8b-reisen | 8,2 B (base) + LoRA rango 21 | no disponible en el adaptador (base: 131.072) | Adaptador LoRA de persona | Apache 2.0 | HuggingFace, FriendliAI |
-| Qwen/Qwen3-8B | 8,2 B | 131.072 | Modelo base denso | Apache 2.0 | HuggingFace |
-| Adaptadores de persona genericos sobre Qwen3-8B | 8,2 B (base) + LoRA | heredado del base | LoRA de persona | variable | HuggingFace |
+| qwen3-8b-reisen | 8,2 B (base) + LoRA rango 21 | no disponible en el adaptador (base: 131.072) | Adaptador LoRA de persona | Apache 2.0 | Hugging Face, FriendliAI |
+| Qwen/Qwen3-8B | 8,2 B | 131.072 | Modelo base denso | Apache 2.0 | Hugging Face |
+| Adaptadores de persona genericos sobre Qwen3-8B | 8,2 B (base) + LoRA | heredado del base | LoRA de persona | variable | Hugging Face |
 
 No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros adaptadores de persona en la informacion proporcionada.
 
@@ -83,7 +83,7 @@ No se dispone de datos de benchmarks ni de comparativas cuantitativas con otros 
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/lillycham/qwen3-8b-reisen
+- Hugging Face: https://huggingface.co/lillycham/qwen3-8b-reisen
 - Repositorio de codigo y herramientas: https://github.com/lillycham/qwen3-steering
 - Personas y recursos de steering: https://github.com/lillycham/qwen3-steering/tree/main/personas
 - Endpoint en FriendliAI: https://friendli.ai/models/lillycham/qwen3-8b-reisen

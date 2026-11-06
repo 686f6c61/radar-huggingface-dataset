@@ -6,7 +6,7 @@ NEO-CODER v0.2.1 es un modelo de generación de texto de 3.800 millones de pará
 
 El modelo emplea una arquitectura transformer densa (NEODecoderModelV2) con 36 capas, atención de 32 cabezas y 8 cabezas clave-valor con GQA, y una ventana de contexto de 4.096 tokens. Su propuesta diferencial es la combinación de capacidades de generación de código multi-lenguaje, razonamiento multi-archivo, depuración profunda y continuidad multilingüe en inglés, tamil y tanglish, con un mecanismo de "puerta de seguridad" que emite respuestas bloqueadas o de contexto insuficiente en lugar de alucinar completitudes falsas.
 
-Aunque el modelo presenta métricas internas muy altas (99.02% en una evaluación propia de 1.500 tareas), no se han publicado resultados en benchmarks estándar como MMLU o HumanEval, y su adopción es actualmente nula (0 descargas en HuggingFace). Es relevante como propuesta de modelo de código ligero y local, con enfoque en el ecosistema de desarrollo indio.
+Aunque el modelo presenta métricas internas muy altas (99.02% en una evaluación propia de 1.500 tareas), no se han publicado resultados en benchmarks estándar como MMLU o HumanEval, y su adopción es actualmente nula (0 descargas en Hugging Face). Es relevante como propuesta de modelo de código ligero y local, con enfoque en el ecosistema de desarrollo indio.
 
 ## Especificaciones tecnicas
 
@@ -76,7 +76,7 @@ Estas cifras deben interpretarse con cautela: no hay evidencia externa que las r
 - VRAM estimada: no requiere GPU; el modelo esta cuantizado a Q8_0/INT8 y ocupa 4.10 GB de RAM en memoria activa.
 - GPU recomendadas: no aplica; el modelo esta disenado para CPU.
 - Compatibilidad con GPU de consumo: no se indica, pero al ser un modelo de 3.8B cuantizado, podria ejecutarse en GPUs con 6-8 GB de VRAM (ej. RTX 3060, RTX 4060) si se desea aceleracion, aunque no hay datos oficiales.
-- Opciones de despliegue: compatible con la libreria transformers de HuggingFace; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
+- Opciones de despliegue: compatible con la libreria transformers de Hugging Face; no se mencionan integraciones con vLLM, llama.cpp, Ollama o TGI.
 - Rendimiento declarado: 42.5 tokens/segundo con latencia de primer token inferior a 15 ms en un Intel Core i3 con 16 GB de RAM (dato del autor, no verificado).
 
 ## Comparativa con modelos similares
@@ -88,7 +88,7 @@ No se dispone de datos comparativos publicados entre NEO-CODER v0.2.1 y otros mo
 - Ventana de contexto limitada a 4.096 tokens, insuficiente para proyectos grandes o conversaciones muy largas.
 - No hay resultados en benchmarks estandar (MMLU, HumanEval, etc.), por lo que su rendimiento real frente a otros modelos es desconocido.
 - Las metricas de la model card son propias del autor y no han sido validadas externamente; deben tomarse con escepticismo.
-- El modelo tiene 0 descargas y 0 likes en HuggingFace, lo que indica una adopcion nula y ausencia de comunidad que lo pruebe.
+- El modelo tiene 0 descargas y 0 likes en Hugging Face, lo que indica una adopcion nula y ausencia de comunidad que lo pruebe.
 - No se especifica el conjunto de datos de entrenamiento ni el proceso de alineacion, lo que impide evaluar sesgos potenciales.
 - El soporte de tool calling o function calling no esta confirmado; el formato de prompt sugiere ChatML pero no hay evidencia de integracion con herramientas.
 - La licencia MIT permite uso comercial, pero al no haber documentacion sobre el origen de los datos de entrenamiento, podrian existir riesgos legales no declarados.
@@ -97,5 +97,5 @@ No se dispone de datos comparativos publicados entre NEO-CODER v0.2.1 y otros mo
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/praga2008/neo-coder-v0.2
+- Modelo en Hugging Face: https://huggingface.co/praga2008/neo-coder-v0.2
 - No se han encontrado otros enlaces (papers, repositorios, demos) en la informacion proporcionada.

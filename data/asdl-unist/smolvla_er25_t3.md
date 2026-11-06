@@ -67,7 +67,7 @@ No se dispone de informacion comparativa con otros modelos en los resultados de 
 
 ## Enlaces
 
-- Repositorio de HuggingFace: [asdl-unist/smolvla_ER25_T3](https://huggingface.co/asdl-unist/smolvla_ER25_T3)
+- Repositorio de Hugging Face: [asdl-unist/smolvla_ER25_T3](https://huggingface.co/asdl-unist/smolvla_ER25_T3)
 - Paper SmolVLA: [arXiv:2506.01844](https://arxiv.org/abs/2506.01844)
 - Modelo base: [lerobot/smolvla_base](https://huggingface.co/lerobot/smolvla_base)
 - Dataset de entrenamiento: [asdl-unist/TRAIN_T3_ER](https://huggingface.co/datasets/asdl-unist/TRAIN_T3_ER)

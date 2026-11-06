@@ -2,7 +2,7 @@
 
 ## Resumen
 
-frankenhack/Kivi-1.5B es un modelo de generación de texto publicado en HuggingFace por el usuario frankenhack. Se trata de un checkpoint de aproximadamente 1.540 millones de parámetros (1.543.714.304 exactos, según los pesos en safetensors), etiquetado con la arquitectura qwen2 y el pipeline text-generation, además del tag conversational. La ficha del repositorio es la plantilla automática de HuggingFace sin rellenar: no incluye descripción, datos de entrenamiento, licencia, idiomas ni resultados de evaluación.
+frankenhack/Kivi-1.5B es un modelo de generación de texto publicado en Hugging Face por el usuario frankenhack. Se trata de un checkpoint de aproximadamente 1.540 millones de parámetros (1.543.714.304 exactos, según los pesos en safetensors), etiquetado con la arquitectura qwen2 y el pipeline text-generation, además del tag conversational. La ficha del repositorio es la plantilla automática de Hugging Face sin rellenar: no incluye descripción, datos de entrenamiento, licencia, idiomas ni resultados de evaluación.
 
 El modelo es relevante únicamente como ejemplo del ecosistema de checkpoints derivados de Qwen2 de tamano pequeño, no por su documentación: acumula 0 descargas y 0 "likes" y fue creado el 10 de octubre de 2026, por lo que se trata de una publicación reciente y sin validación por parte de la comunidad. Su tamano (1,5 B de parámetros, repo de 3,1 GB) lo sitúa en la categoría de modelos que caben en GPUs de consumo, lo que explicaría su interés potencial para despliegues locales.
 
@@ -27,13 +27,13 @@ Nota: el tamano del repositorio (3,1 GB) es coherente con pesos almacenados en p
 
 No hay información publicada sobre la arquitectura más allá de las etiquetas del Hub, que apuntan a la familia Qwen2 (transformer decoder-only con atención por grupos, habitual en esa familia). Tampoco se documentan el número de tokens de entrenamiento, la composición del dataset, ni si hubo fases de ajuste con RLHF, DPO o SFT. Se desconoce si el checkpoint es un ajuste fino, un merge de modelos o un entrenamiento desde cero.
 
-La model card reproduce íntegramente la plantilla automática de HuggingFace, con todos los campos marcados como "[More Information Needed]". La única referencia técnica citada, el arXiv 1910.09700 (Lacoste et al., calculadora de impacto de carbono), forma parte del texto por defecto de la plantilla y no describe este modelo. No se han identificado innovaciones técnicas declaradas (decodificación especulativa, atención lineal, MoE, SSM) en la información disponible.
+La model card reproduce íntegramente la plantilla automática de Hugging Face, con todos los campos marcados como "[More Information Needed]". La única referencia técnica citada, el arXiv 1910.09700 (Lacoste et al., calculadora de impacto de carbono), forma parte del texto por defecto de la plantilla y no describe este modelo. No se han identificado innovaciones técnicas declaradas (decodificación especulativa, atención lineal, MoE, SSM) en la información disponible.
 
 ## Capacidades
 
 - Generación de texto autoregresiva: es la única capacidad confirmada por los metadatos (pipeline text-generation).
 - Uso conversacional: el tag conversational sugiere que el checkpoint está pensado para diálogo, aunque no se documenta el formato de plantilla de chat ni el tokenizador empleado.
-- Compatibilidad con text-generation-inference y con los Inference Endpoints de HuggingFace (tags text-generation-inference y endpoints_compatible).
+- Compatibilidad con text-generation-inference y con los Inference Endpoints de Hugging Face (tags text-generation-inference y endpoints_compatible).
 - Tool calling / function calling: no disponible.
 - Soporte de agentes y razonamiento multi-paso: no disponible.
 - Capacidades multilingües: no disponible.
@@ -64,7 +64,7 @@ No se han publicado resultados de benchmarks en la información disponible. La m
   - int4 (por ejemplo GGUF Q4_K_M): alrededor de 0,9-1,2 GB de pesos; reservar 2 GB.
 - GPU recomendadas: cualquier GPU con 6-8 GB o más de VRAM (RTX 3060, RTX 4060, RTX 2070) para fp16 con contexto moderado; RTX 4090, A100 o H100 quedan muy por encima de lo necesario y solo se justifican por agregación de peticiones.
 - Cabe en GPU de consumo: sí, con toda probabilidad, en cualquier tarjeta con 4 GB o más de VRAM tras cuantizar, y en 6-8 GB en precisión de 16 bits. Las cuantizaciones a 4 bits podrían permitir incluso ejecución en CPU con llama.cpp, pero no hay ficheros GGUF publicados.
-- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), HuggingFace Inference Endpoints (etiqueta endpoints_compatible). vLLM sería compatible en principio por tratarse de la arquitectura Qwen2, pero no está confirmado. Para llama.cpp u Ollama habría que convertir los pesos a GGUF con las herramientas habituales, ya que el repositorio no incluye esos formatos.
+- Opciones de despliegue: transformers (librería declarada), text-generation-inference (etiqueta del repositorio), Hugging Face Inference Endpoints (etiqueta endpoints_compatible). vLLM sería compatible en principio por tratarse de la arquitectura Qwen2, pero no está confirmado. Para llama.cpp u Ollama habría que convertir los pesos a GGUF con las herramientas habituales, ya que el repositorio no incluye esos formatos.
 - Latencia y throughput estimados: no disponibles.
 
 ## Comparativa con modelos similares
@@ -73,10 +73,10 @@ Los datos de la columna de otros modelos provienen de sus fichas públicas y no 
 
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
-| frankenhack/Kivi-1.5B | 1,54 B | no disponible | no disponible | Repositorio HuggingFace, 0 descargas |
-| Qwen2-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | HuggingFace, ampliamente distribuido |
-| SmolLM2-1.7B-Instruct | 1,7 B | 8192 tokens | Apache 2.0 | HuggingFace, con model card completa |
-| Gemma-2-2B-it | 2,6 B | 8192 tokens | Licencia Gemma (uso comercial condicionado) | HuggingFace, requiere aceptar términos |
+| frankenhack/Kivi-1.5B | 1,54 B | no disponible | no disponible | Repositorio Hugging Face, 0 descargas |
+| Qwen2-1.5B-Instruct | 1,54 B | 32 768 tokens | Apache 2.0 | Hugging Face, ampliamente distribuido |
+| SmolLM2-1.7B-Instruct | 1,7 B | 8192 tokens | Apache 2.0 | Hugging Face, con model card completa |
+| Gemma-2-2B-it | 2,6 B | 8192 tokens | Licencia Gemma (uso comercial condicionado) | Hugging Face, requiere aceptar términos |
 
 La diferencia principal no es de tamano, sino de trazabilidad: los tres modelos de comparación publican arquitectura, datos de entrenamiento, licencia, idiomas y resultados de evaluación, mientras que Kivi-1.5B no documenta ninguno de esos aspectos. No hay datos de rendimiento que permitan comparar calidad.
 
@@ -94,7 +94,7 @@ La diferencia principal no es de tamano, sino de trazabilidad: los tres modelos 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/frankenhack/Kivi-1.5B
+- Modelo en Hugging Face: https://huggingface.co/frankenhack/Kivi-1.5B
 - Referencia citada en la plantilla de la model card (calculadora de impacto de carbono, no específica de este modelo): https://arxiv.org/abs/1910.09700
 - Herramienta de estimación de emisiones mencionada en la plantilla: https://mlco2.github.io/impact
 - Repositorio, paper o demo del autor: no disponibles.

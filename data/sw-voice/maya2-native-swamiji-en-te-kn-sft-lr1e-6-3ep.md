@@ -17,7 +17,7 @@ Su relevancia actual es limitada pero informativa: documenta un procedimiento re
 | Parametros activos | no disponible (no se declara que sea MoE) |
 | Longitud de contexto | no disponible (modelo de text-to-speech; no se documenta ventana de contexto textual) |
 | Tipos de cuantizacion | no disponible (solo se publican pesos safetensors; no se documentan variantes GGUF, int8 ni int4) |
-| Idiomas soportados | no declarados en HuggingFace; los datos de entrenamiento incluyen ingles, telugu y kannada, por lo que la cobertura efectiva se limita a esos tres idiomas |
+| Idiomas soportados | no declarados en Hugging Face; los datos de entrenamiento incluyen ingles, telugu y kannada, por lo que la cobertura efectiva se limita a esos tres idiomas |
 | Licencia | Apache-2.0 |
 | Formato de pesos | safetensors (repositorio de 5,0 GB) |
 | Tarea (pipeline) | text-to-speech |
@@ -77,7 +77,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos TTS alter
 - Modelo de investigacion: el propio autor lo etiqueta como `(research)` y no publica evaluacion objetiva ni resultados de benchmarks.
 - Especializado en una unica voz: el ajuste fino completo sobre los clips de Swamiji lo hace inadecuado para sintetizar otras identidades vocales sin un nuevo entrenamiento; el modo `spk` asume una referencia de esa misma voz.
 - Volumen de datos reducido en ingles (719 clips deduplicados) y sin cifras de horas o tokens, lo que aumenta el riesgo de sobreajuste y de artefactos en textos fuera del dominio de entrenamiento.
-- Cobertura idiomatica no declarada oficialmente en HuggingFace: la extension real a telugu y kannada depende de los conjuntos citados y no se ha verificado de forma independiente.
+- Cobertura idiomatica no declarada oficialmente en Hugging Face: la extension real a telugu y kannada depende de los conjuntos citados y no se ha verificado de forma independiente.
 - Riesgo de alucinacion acustica: como todo TTS, puede producir pronunciaciones incorrectas, prosodia anomalа, silencios o ruido en entradas largas, nombres propios, numeros o codigo; requiere validacion automatica (ASR de retorno) y escucha manual en produccion.
 - Sesgos: al derivar de una sola voz y de un corpus tematico concreto (temas de Navaratri en telugu y kannada), hereda el registro, el acento y el estilo de esas grabaciones; el rendimiento fuera de ese dominio no esta caracterizado.
 - Licencia: los pesos son Apache-2.0, lo que permite uso comercial del artefacto, pero la licencia no cubre los derechos de imagen ni de voz de la persona imitada; cualquier uso de la identidad vocal requiere autorizacion explicita y cumplimiento de la normativa aplicable (por ejemplo, el AI Act europeo en materia de deepfakes y transparencia).
@@ -87,7 +87,7 @@ No se dispone de datos de benchmarks ni de especificaciones de modelos TTS alter
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn-sft-lr1e-6-3ep
+- Modelo en Hugging Face: https://huggingface.co/sw-voice/maya2-native-swamiji-en-te-kn-sft-lr1e-6-3ep
 - Modelo base: https://huggingface.co/maya-research/maya2-native
 - Dataset de clips en ingles citado en el model card: https://huggingface.co/sw-voice/swamiji-voice-sft-sidon
 - Dataset de clips en telugu citado: https://huggingface.co/sw-voice/swamiji-navaratri-telugu-sidon-themes

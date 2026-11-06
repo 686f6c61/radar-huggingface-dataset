@@ -2,11 +2,11 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje publicado en HuggingFace por el usuario sdgjfjkl bajo el identificador `sdgjfjkl/MyAwesomeModel-TestRepository`. Por los metadatos disponibles (tags `bert`, `feature-extraction`, librería `transformers`), se trata de un modelo basado en arquitectura BERT orientado a extracción de características, es decir, a producir representaciones vectoriales de texto en lugar de generación autoregresiva. El repositorio tiene un tamaño de 0,0 GB y cero descargas, lo que sugiere que es un repositorio de prueba o un artefacto incompleto más que un modelo listo para producción.
+MyAwesomeModel es un modelo de lenguaje publicado en Hugging Face por el usuario sdgjfjkl bajo el identificador `sdgjfjkl/MyAwesomeModel-TestRepository`. Por los metadatos disponibles (tags `bert`, `feature-extraction`, librería `transformers`), se trata de un modelo basado en arquitectura BERT orientado a extracción de características, es decir, a producir representaciones vectoriales de texto en lugar de generación autoregresiva. El repositorio tiene un tamaño de 0,0 GB y cero descargas, lo que sugiere que es un repositorio de prueba o un artefacto incompleto más que un modelo listo para producción.
 
 La model card incluida es genérica y contiene referencias a capacidades de razonamiento, matemáticas, programación y function calling, así como una tabla de benchmarks con nombres de modelos anonimizados ("Model1", "Model2"). Esta información no es verificable ni coherente con los metadatos técnicos del repositorio (un modelo BERT de feature-extraction no genera texto ni ejecuta cadenas de razonamiento). Por tanto, debe tratarse con cautela: la ficha refleja lo declarado por el autor, pero señala explícitamente las inconsistencias.
 
-El modelo resulta relevante únicamente como caso de estudio de repositorios de prueba en HuggingFace o como posible punto de partida para fine-tuning de extracción de características, siempre que el autor publique pesos reales. No se recomienda su uso en producción sin validación previa de los artefactos.
+El modelo resulta relevante únicamente como caso de estudio de repositorios de prueba en Hugging Face o como posible punto de partida para fine-tuning de extracción de características, siempre que el autor publique pesos reales. No se recomienda su uso en producción sin validación previa de los artefactos.
 
 ## Especificaciones tecnicas
 
@@ -29,7 +29,7 @@ La model card menciona de forma genérica "optimizaciones algorítmicas durante 
 
 ## Capacidades
 
-- Extracción de características y generación de embeddings de texto (según pipeline declarado en HuggingFace).
+- Extracción de características y generación de embeddings de texto (según pipeline declarado en Hugging Face).
 - Generación de texto y razonamiento: declarado en la model card, pero incoherente con los tags del repositorio.
 - Razonamiento matemático y lógico: mencionado en la model card con referencia a AIME 2025, sin datos verificables.
 - Generación de código: mencionado en la model card, no confirmado por los metadatos.
@@ -43,7 +43,7 @@ La model card menciona de forma genérica "optimizaciones algorítmicas durante 
 - Clasificación de texto mediante fine-tuning: un encoder BERT es adecuado para añadir una cabeza de clasificación y entrenar sobre dominios específicos (moderación, etiquetado de tickets, análisis de sentimiento).
 - Clustering y deduplicación de documentos: los embeddings generados permitirían agrupar textos similares en pipelines de limpieza de datos.
 - Base para experimentación académica: útil como punto de partida en cursos o pruebas de integración con `transformers`, dado su carácter de repositorio de test.
-- Evaluación de pipelines de HuggingFace: sirve para probar flujos de descarga, carga con `AutoModel` y despliegue en endpoints compatibles, según el tag `endpoints_compatible`.
+- Evaluación de pipelines de Hugging Face: sirve para probar flujos de descarga, carga con `AutoModel` y despliegue en endpoints compatibles, según el tag `endpoints_compatible`.
 - Prototipado de sistemas de recuperación aumentada (RAG): si los embeddings son de calidad suficiente, podría integrarse como retriever en un pipeline RAG, aunque sin benchmarks publicados no hay garantía de rendimiento.
 
 ## Benchmarks y rendimiento
@@ -85,7 +85,7 @@ No es posible establecer una comparativa fiable porque no se conocen los paráme
 | Modelo | Parametros | Contexto | Licencia | Disponibilidad |
 |---|---|---|---|---|
 | MyAwesomeModel | no disponible | no disponible | MIT | Repo de 0,0 GB, sin pesos verificables |
-| bert-base-uncased | ~110M | 512 tokens | Apache 2.0 | Pesos públicos en HuggingFace |
+| bert-base-uncased | ~110M | 512 tokens | Apache 2.0 | Pesos públicos en Hugging Face |
 | sentence-transformers/all-MiniLM-L6-v2 | ~22M | 256 tokens | Apache 2.0 | Pesos públicos, optimizado para embeddings |
 | bge-small-en-v1.5 | ~33M | 512 tokens | MIT | Pesos públicos, buenos resultados en MTEB |
 
@@ -104,5 +104,5 @@ La comparativa real no está disponible al no poder verificar las característic
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/sdgjfjkl/MyAwesomeModel-TestRepository
+- Hugging Face: https://huggingface.co/sdgjfjkl/MyAwesomeModel-TestRepository
 - No se han encontrado papers, blogs, repositorios de código ni demos adicionales en la información proporcionada.

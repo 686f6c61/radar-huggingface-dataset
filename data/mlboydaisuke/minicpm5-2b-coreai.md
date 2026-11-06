@@ -95,7 +95,7 @@ Nota: los datos del 1B provienen de la model card del 2B, que lo menciona como "
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/mlboydaisuke/MiniCPM5-2B-CoreAI
+- Hugging Face: https://huggingface.co/mlboydaisuke/MiniCPM5-2B-CoreAI
 - Modelo base: https://huggingface.co/openbmb/MiniCPM5-2B
 - Core AI model zoo: https://github.com/john-rocky/coreai-model-zoo
 - CoreAIKit: https://github.com/john-rocky/coreai-kit

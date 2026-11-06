@@ -60,14 +60,14 @@ No se dispone de informacion suficiente para establecer una comparativa fiable. 
 - Ausencia total de documentacion: la model card no describe el proposito, los datos de entrenamiento ni las capacidades del adaptador, lo que impide conocer su comportamiento real y sus limites.
 - Riesgo de alucinacion y sesgos: al no haber informacion sobre el dataset de ajuste, no se pueden evaluar sesgos potenciales ni la fiabilidad de las respuestas. El modelo base Qwen2.5-Omni puede heredar sesgos de sus datos de preentrenamiento.
 - Licencia desconocida: no se especifica la licencia del adaptador ni del modelo base, lo que genera incertidumbre legal para uso comercial o redistribucion.
-- Posible incompatibilidad con el modelo base original: el adaptador esta pensado para `skoneru/qwen-2.5omni-terramindlarge`, que no esta disponible publicamente en HuggingFace (no aparece en la busqueda). Esto impide cargar el adaptador sin acceso a ese modelo base.
+- Posible incompatibilidad con el modelo base original: el adaptador esta pensado para `skoneru/qwen-2.5omni-terramindlarge`, que no esta disponible publicamente en Hugging Face (no aparece en la busqueda). Esto impide cargar el adaptador sin acceso a ese modelo base.
 - Sin garantias de produccion: al no haber benchmarks ni pruebas de estabilidad, no se recomienda su uso en entornos criticos sin una validacion exhaustiva previa.
 - Fecha de creacion futura: el repositorio indica una fecha de creacion en agosto de 2026, lo que sugiere que podria ser un artefacto de prueba o un error en los metadatos; no se debe asumir que es un modelo maduro.
 
 ## Enlaces
 
-- Repositorio del adaptador en HuggingFace: https://huggingface.co/skoneru/qwen-2.5omni-terramindlarge-lora
+- Repositorio del adaptador en Hugging Face: https://huggingface.co/skoneru/qwen-2.5omni-terramindlarge-lora
 - Repositorio oficial de Qwen2.5-Omni en GitHub: https://github.com/QwenLM/Qwen2.5-Omni
 - Paper tecnico de Qwen2.5-Omni (arXiv): https://arxiv.org/abs/2503.20215
-- Documentacion de Qwen2.5-Omni en HuggingFace Transformers: https://huggingface.co/docs/transformers/model_doc/qwen2_5_omni
+- Documentacion de Qwen2.5-Omni en Hugging Face Transformers: https://huggingface.co/docs/transformers/model_doc/qwen2_5_omni
 - Paper tecnico de Qwen2.5 (arXiv): https://arxiv.org/abs/2412.15115

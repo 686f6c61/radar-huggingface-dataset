@@ -53,7 +53,7 @@ No se han publicado resultados de benchmarks en la información disponible. No h
 - VRAM estimada para inferencia: un modelo de 1.5B parámetros en FP16 requiere aproximadamente 3 GB de VRAM; en INT8, alrededor de 1.5 GB; en INT4, menos de 1 GB. Estas cifras son estimaciones generales basadas en el tamaño del modelo, no en mediciones específicas.
 - GPU recomendadas: cualquier GPU con al menos 4 GB de VRAM puede ejecutar el modelo en FP16 (por ejemplo, NVIDIA GTX 1650, RTX 3050). Para cuantización INT4, incluso GPUs integradas podrían ser suficientes.
 - Compatibilidad con GPU de consumo: sí, cabe en GPUs consumer de gama media y baja.
-- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con la librería transformers de HuggingFace.
+- Opciones de despliegue: al ser un modelo transformers estándar, puede servirse con vLLM, llama.cpp, Ollama, TGI o directamente con la librería transformers de Hugging Face.
 - Latencia y throughput: no se dispone de datos medidos. En una GPU moderna (por ejemplo, RTX 4090), un modelo de 1.5B suele generar decenas de tokens por segundo, pero esto depende de la implementación y la longitud de la secuencia.
 
 ## Comparativa con modelos similares
@@ -76,7 +76,7 @@ La comparativa se limita al modelo base y a la versión sin instruct, ya que no 
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/dariofenoglio98/qwen_2.5_1_5b-gsm8k_qwen_2_5_1_5b_subliminal_teacher_c
+- Modelo en Hugging Face: https://huggingface.co/dariofenoglio98/qwen_2.5_1_5b-gsm8k_qwen_2_5_1_5b_subliminal_teacher_c
 - Modelo base `unsloth/Qwen2.5-1.5B-Instruct`: https://huggingface.co/unsloth/Qwen2.5-1.5B-Instruct
 - Página oficial de Qwen2.5-1.5B: https://huggingface.co/Qwen/Qwen2.5-1.5B
 - Repositorio de Unsloth: https://github.com/unslothai/unsloth

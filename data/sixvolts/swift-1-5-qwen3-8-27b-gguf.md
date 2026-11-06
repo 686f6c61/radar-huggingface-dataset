@@ -96,10 +96,10 @@ Prefill sin drafter: 492 t/s con contexto vacío, 416 t/s a 16k, 278 t/s a 64k y
 
 | Modelo | Parámetros | Contexto | Cuantización | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Swift-1.5-Qwen3.8-27B (este GGUF) | 26,9 mil millones | 64k configurado (medido hasta 128k) | Q4_K_XL + drafters Q4_0 | Swift Open License 1.0 con umbral de 1 M USD | HuggingFace (SixVolts) |
-| Swift-1.5-Qwen3.8-27B Q4_K_M | 26,9 mil millones | No disponible | Q4_K_M | Swift Open License 1.0 | HuggingFace (UkisAI) |
-| Qwen3.8-27B | No disponible | No disponible | No disponible | Apache 2.0 | HuggingFace (Qwen) |
-| Qwen3.8-27B-DFlash2-GGUF | No disponible | No disponible | GGUF | Apache 2.0 (cuerpo del drafter) | HuggingFace (z-lab) |
+| Swift-1.5-Qwen3.8-27B (este GGUF) | 26,9 mil millones | 64k configurado (medido hasta 128k) | Q4_K_XL + drafters Q4_0 | Swift Open License 1.0 con umbral de 1 M USD | Hugging Face (SixVolts) |
+| Swift-1.5-Qwen3.8-27B Q4_K_M | 26,9 mil millones | No disponible | Q4_K_M | Swift Open License 1.0 | Hugging Face (UkisAI) |
+| Qwen3.8-27B | No disponible | No disponible | No disponible | Apache 2.0 | Hugging Face (Qwen) |
+| Qwen3.8-27B-DFlash2-GGUF | No disponible | No disponible | GGUF | Apache 2.0 (cuerpo del drafter) | Hugging Face (z-lab) |
 
 La comparación de calidad entre estos modelos no está disponible en la información proporcionada; solo se dispone de la comparación de divergencia KL entre las dos cuantizaciones de Swift 1.5 (ver sección de benchmarks).
 
@@ -117,7 +117,7 @@ La comparación de calidad entre estos modelos no está disponible en la informa
 
 ## Enlaces
 
-- HuggingFace del modelo: https://huggingface.co/SixVolts/Swift-1.5-Qwen3.8-27B-GGUF
+- Hugging Face del modelo: https://huggingface.co/SixVolts/Swift-1.5-Qwen3.8-27B-GGUF
 - Modelo base: https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b
 - Repositorio de despliegue: https://github.com/sixvolts/llama-navi21-furnace/tree/main/deploy
 - Fork de llama.cpp: https://github.com/sixvolts/llama-navi21-furnace

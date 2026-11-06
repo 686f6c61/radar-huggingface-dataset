@@ -2,7 +2,7 @@
 
 ## Resumen
 
-MyAwesomeModel es un modelo de lenguaje presentado por el usuario chengze79 en HuggingFace bajo el identificador `chengze79/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo de razonamiento que ha sido sometido a una actualización significativa, mejorando su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. El autor afirma que el modelo alcanza un 87,5 % de precisión en el conjunto de prueba AIME 2025, frente al 70 % de la versión anterior, y que utiliza un promedio de 23 000 tokens por pregunta en dicha prueba.
+MyAwesomeModel es un modelo de lenguaje presentado por el usuario chengze79 en Hugging Face bajo el identificador `chengze79/MyAwesomeModel-TestRepo`. Según la model card, se trata de un modelo de razonamiento que ha sido sometido a una actualización significativa, mejorando su profundidad de razonamiento y capacidades de inferencia mediante el uso de mayores recursos computacionales y optimizaciones algorítmicas en el post-entrenamiento. El autor afirma que el modelo alcanza un 87,5 % de precisión en el conjunto de prueba AIME 2025, frente al 70 % de la versión anterior, y que utiliza un promedio de 23 000 tokens por pregunta en dicha prueba.
 
 Sin embargo, el repositorio presenta características de un espacio de prueba: tiene 0 descargas, 0 likes, un tamaño de 0,0 GB y no contiene pesos publicados. La model card es genérica y no especifica detalles técnicos fundamentales como arquitectura, número de parámetros, longitud de contexto o datos de entrenamiento. El pipeline declarado es `feature-extraction`, lo que contradice las capacidades de razonamiento y generación descritas en el texto. Por tanto, esta ficha debe interpretarse con cautela: la información disponible es insuficiente para una evaluación técnica rigurosa, y los datos de rendimiento citados provienen exclusivamente de la model card del autor, sin verificación independiente.
 
@@ -96,5 +96,5 @@ No se dispone de información suficiente para establecer una comparativa fiable.
 
 ## Enlaces
 
-- Repositorio en HuggingFace: https://huggingface.co/chengze79/MyAwesomeModel-TestRepo
+- Repositorio en Hugging Face: https://huggingface.co/chengze79/MyAwesomeModel-TestRepo
 - No se proporcionan otros enlaces (paper, blog, repositorio de código, demo) en la información disponible.

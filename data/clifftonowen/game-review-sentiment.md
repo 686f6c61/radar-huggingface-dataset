@@ -95,7 +95,7 @@ No se dispone de comparaciones medidas en un conjunto comun, por lo que las cifr
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Clifftonowen/game-review-sentiment
+- Modelo en Hugging Face: https://huggingface.co/Clifftonowen/game-review-sentiment
 - Demo en vivo: https://clifftonowen.me/demos
 - Modelo base: https://huggingface.co/distilbert/distilbert-base-uncased
 - Modelo base de referencia para comparacion: https://huggingface.co/distilbert/distilbert-base-uncased-finetuned-sst-2-english

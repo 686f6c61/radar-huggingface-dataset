@@ -2,7 +2,7 @@
 
 ## Resumen
 
-`diascecilia/swin-t-checkpoint` es un repositorio experimental publicado en HuggingFace que contiene una implementación propia de una arquitectura Swin T (Swin Transformer, variante tiny) orientada a tareas de generación. Lo desarrolla el usuario diascecilia y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de inicialización: la propia model card indica explícitamente que `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
+`diascecilia/swin-t-checkpoint` es un repositorio experimental publicado en Hugging Face que contiene una implementación propia de una arquitectura Swin T (Swin Transformer, variante tiny) orientada a tareas de generación. Lo desarrolla el usuario diascecilia y se distribuye bajo licencia Apache 2.0. No se trata de un modelo entrenado ni evaluado, sino de un punto de partida de inicialización: la propia model card indica explícitamente que `model.safetensors` es un checkpoint válido para pruebas de humo (smoke tests) y que no se reclama ninguna puntuación de benchmark.
 
 El peso publicado es extremadamente reducido: el recuento real de parámetros en safetensors es de 16.576, y el tamaño del repositorio es de 0,0 GB. Esto confirma que las dimensiones internas están deliberadamente minimizadas para poder inspeccionar cambios de arquitectura antes de lanzar un entrenamiento completo.
 
@@ -77,12 +77,12 @@ No disponible. La informacion proporcionada no incluye modelos comparables ni da
 - Riesgo elevado de salidas sin sentido: al no existir entrenamiento, la generacion no es fiable en ningun escenario.
 - No se declaran sesgos conocidos, pero tampoco se ha evaluado ninguno; la ausencia de analisis no equivale a ausencia de sesgo.
 - No se especifican idiomas soportados ni longitud de contexto, por lo que no puede planificarse un uso multilingue o de contexto largo.
-- La implementacion es experimental y personalizada: la carga mediante APIs genericas de HuggingFace exige un adaptador explicito, lo que incrementa el trabajo de integracion.
+- La implementacion es experimental y personalizada: la carga mediante APIs genericas de Hugging Face exige un adaptador explicito, lo que incrementa el trabajo de integracion.
 - La licencia Apache 2.0 permite uso comercial del codigo y los pesos, pero la model card recomienda revisar por separado los terminos de las fuentes de datos si se usan datasets externos.
 - Cualquier resultado obtenido con un checkpoint futuro entrenado debe documentarse por separado de los valores por defecto aqui incluidos.
 - El tag `generation` puede inducir a error si se interpreta como una capacidad ya disponible.
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/diascecilia/swin-t-checkpoint
+- Hugging Face: https://huggingface.co/diascecilia/swin-t-checkpoint
 - No se han encontrado otros enlaces relevantes (papers, blogs, repositorios o demos) en la busqueda web realizada; los resultados obtenidos no guardaban relacion con el modelo.

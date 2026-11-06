@@ -2,7 +2,7 @@
 
 ## Resumen
 
-El modelo nxp/resnet50-image-clip-imx es un checkpoint publicado por NXP Semiconductors en HuggingFace bajo licencia MIT. Por el identificador se deduce que se trata de una red convolucional ResNet-50 adaptada a un uso tipo CLIP para extraccion de caracteristicas visuales (embeddings de imagen), orientada a los procesadores de aplicaciones de la familia i.MX de NXP (edge computing en automocion e industrial). No obstante, la model card publicada no contiene informacion tecnica: unicamente el campo `license: mit`, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento.
+El modelo nxp/resnet50-image-clip-imx es un checkpoint publicado por NXP Semiconductors en Hugging Face bajo licencia MIT. Por el identificador se deduce que se trata de una red convolucional ResNet-50 adaptada a un uso tipo CLIP para extraccion de caracteristicas visuales (embeddings de imagen), orientada a los procesadores de aplicaciones de la familia i.MX de NXP (edge computing en automocion e industrial). No obstante, la model card publicada no contiene informacion tecnica: unicamente el campo `license: mit`, sin descripcion, sin arquitectura declarada y sin datos de entrenamiento.
 
 El repositorio presenta 0 descargas y 0 likes en el momento de la consulta, y no se ha publicado ningun archivo de pesos ni configuracion visible en la informacion disponible. Tampoco se ha localizado documentacion complementaria en la busqueda web: los resultados obtenidos son las paginas corporativas genericas de NXP (sitio principal, catalogo de productos y articulos de Wikipedia), sin ninguna referencia a este checkpoint concreto.
 
@@ -87,7 +87,7 @@ Los datos de los modelos comparados corresponden a sus especificaciones publicas
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/nxp/resnet50-image-clip-imx
+- Hugging Face: https://huggingface.co/nxp/resnet50-image-clip-imx
 - NXP Semiconductors (sitio corporativo): https://www.nxp.com/
 - NXP, catalogo de productos: https://www.nxp.com/products:PCPRODCAT
 - NXP Semiconductors en Wikipedia: https://en.wikipedia.org/wiki/NXP_Semiconductors

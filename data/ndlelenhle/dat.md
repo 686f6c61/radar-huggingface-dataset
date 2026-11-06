@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Ndlelenhle/Dat es un repositorio de modelo alojado en HuggingFace por el usuario Ndlelenhle, publicado bajo licencia MIT y sin ninguna otra metainformacion asociada. La model card no contiene descripcion tecnica: unicamente declara la licencia MIT y carece de secciones de arquitectura, entrenamiento, uso previsto o ejemplos. No se especifica pipeline, idiomas, tamano, contexto ni formato de pesos.
+Ndlelenhle/Dat es un repositorio de modelo alojado en Hugging Face por el usuario Ndlelenhle, publicado bajo licencia MIT y sin ninguna otra metainformacion asociada. La model card no contiene descripcion tecnica: unicamente declara la licencia MIT y carece de secciones de arquitectura, entrenamiento, uso previsto o ejemplos. No se especifica pipeline, idiomas, tamano, contexto ni formato de pesos.
 
 El repositorio no registra descargas ni "likes" en el momento de la consulta, y su fecha de creacion y ultima actualizacion es la misma (2026-10-04T21:11:39Z), lo que sugiere un artefacto subido sin documentar ni mantener. No hay evidencia de que exista un paper, un informe tecnico o un anuncio de publicacion asociado.
 
@@ -64,5 +64,5 @@ No disponible. No se ha identificado ningun modelo comparable, dado que se desco
 
 ## Enlaces
 
-- HuggingFace: https://huggingface.co/Ndlelenhle/Dat
+- Hugging Face: https://huggingface.co/Ndlelenhle/Dat
 - Los resultados de la busqueda web (Metropolitan Museum of Art, dennisaoppenheim.org, Museum Boijmans Van Beuningen, Spencer Museum of Art, National Gallery of Art) corresponden a la obra "Identity Stretch" de Dennis Oppenheim y no guardan relacion con el modelo. No se han encontrado papers, blogs, repositorios ni demos asociados a Ndlelenhle/Dat.

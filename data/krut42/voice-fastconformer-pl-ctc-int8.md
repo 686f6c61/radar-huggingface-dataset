@@ -101,7 +101,7 @@ No se dispone de resultados de benchmarks comparativos entre estas alternativas 
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/krut42/voice-fastconformer-pl-ctc-int8
+- Repositorio Hugging Face: https://huggingface.co/krut42/voice-fastconformer-pl-ctc-int8
 - Modelo base de NVIDIA: https://huggingface.co/nvidia/stt_pl_fastconformer_hybrid_large_pc
 - Exportacion ONNX de OpenVoiceOS: https://huggingface.co/OpenVoiceOS/stt_pl_fastconformer_hybrid_large_pc_onnx
 - Licencia CC BY 4.0: https://creativecommons.org/licenses/by/4.0/

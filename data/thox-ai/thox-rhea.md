@@ -2,7 +2,7 @@
 
 ## Resumen
 
-Thox-Rhea es una configuración de persona publicada por Thox-ai dentro de su programa de "digital humans". No se trata de un modelo entrenado, sino de un paquete que combina los pesos originales de Qwen/Qwen3-8B (sin modificar, byte a byte) con un perfil de sistema en formato Modelfile y un Knowledge Pack de ocho entradas verificadas. El modelo se distribuye principalmente a través de Ollama con la etiqueta `Thox-ai/thox-rhea`, y el repositorio de HuggingFace contiene únicamente los artefactos de empaquetado: `Modelfile` (1494 B), `manifest.json` (878 B) y `thox-knowledge-v0.1.jsonl` (4652 B).
+Thox-Rhea es una configuración de persona publicada por Thox-ai dentro de su programa de "digital humans". No se trata de un modelo entrenado, sino de un paquete que combina los pesos originales de Qwen/Qwen3-8B (sin modificar, byte a byte) con un perfil de sistema en formato Modelfile y un Knowledge Pack de ocho entradas verificadas. El modelo se distribuye principalmente a través de Ollama con la etiqueta `Thox-ai/thox-rhea`, y el repositorio de Hugging Face contiene únicamente los artefactos de empaquetado: `Modelfile` (1494 B), `manifest.json` (878 B) y `thox-knowledge-v0.1.jsonl` (4652 B).
 
 La persona representa a Rhea, una "People manager" del equipo sintético de THOX, especializada en gestión de personas y coordinación de equipos. El objetivo declarado es ofrecer asistencia local y offline en ese dominio concreto, con respuestas ajustadas al rol y con anclaje factual limitado a las entradas del Knowledge Pack cuando se proporcionan. El modelo base Qwen3-8B aporta la arquitectura transformer, el contexto y las capacidades subyacentes; THOX solo añade la capa de personalidad y el material de grounding.
 
@@ -17,7 +17,7 @@ Es relevante ahora como ejemplo de una tendencia creciente: publicar "personas" 
 | Parametros activos | No aplica (no es MoE segun la informacion disponible) |
 | Longitud de contexto | 8.192 tokens en la evaluacion publicada; la ventana nativa del base no se detalla en la informacion proporcionada |
 | Tipos de cuantizacion | No disponible (depende de la etiqueta de Ollama `qwen3:8b` utilizada) |
-| Idiomas soportados | Ingles (declarado en la model card y en los tags de HuggingFace) |
+| Idiomas soportados | Ingles (declarado en la model card y en los tags de Hugging Face) |
 | Licencia | Apache-2.0 (heredada de Qwen3) |
 | Formato de pesos | Modelfile de Ollama + manifest.json + Knowledge Pack JSONL; los pesos se referencian desde la etiqueta `qwen3:8b` fijada por sha256 |
 
@@ -73,8 +73,8 @@ No se han publicado resultados de benchmarks estándar (MMLU, HumanEval, GSM8K) 
 
 | Modelo | Parametros | Contexto | Entrenamiento | Licencia | Disponibilidad |
 |---|---|---|---|---|---|
-| Thox-Rhea | 8B (heredados) | 8.192 en evaluacion | Ninguno; perfil de sistema sobre Qwen3-8B | Apache-2.0 | HuggingFace (artefactos) + Ollama |
-| Qwen/Qwen3-8B | 8B | No detallado en la informacion disponible | Entrenamiento completo del autor original | Apache-2.0 | HuggingFace, Ollama (`qwen3:8b`) |
+| Thox-Rhea | 8B (heredados) | 8.192 en evaluacion | Ninguno; perfil de sistema sobre Qwen3-8B | Apache-2.0 | Hugging Face (artefactos) + Ollama |
+| Qwen/Qwen3-8B | 8B | No detallado en la informacion disponible | Entrenamiento completo del autor original | Apache-2.0 | Hugging Face, Ollama (`qwen3:8b`) |
 | Otras personas THOX | 8B (mismo base) | 8.192 en evaluacion | Ninguno; perfiles de sistema distintos | Apache-2.0 | Ollama (once configuraciones publicadas) |
 
 La comparación más directa es con el propio Qwen3-8B: Thox-Rhea no añade capacidades de modelo, solo un perfil de rol y un Knowledge Pack. Frente a otras personas THOX, la diferencia es el rol asignado (People manager) y el contenido del perfil. No se dispone de datos para comparar con fine-tunes de dominio equivalente.
@@ -89,12 +89,12 @@ La comparación más directa es con el propio Qwen3-8B: Thox-Rhea no añade capa
 - Sesgos: no se documentan evaluaciones de sesgo en la información proporcionada; al heredar el base, arrastra los sesgos de Qwen3-8B.
 - Licencia: Apache-2.0 permite uso comercial, pero debe conservarse el aviso de Apache. Los elementos propios de THOX (perfil de persona, Knowledge Pack, empaquetado) están bajo esa misma licencia según la model card.
 - Comportamiento de rechazo y seguridad: es el del base, moderado solo por el perfil de sistema; no hay garantías adicionales de alineamiento.
-- Cero tracción comunitaria: 0 descargas y 0 likes en HuggingFace en el momento de la consulta, lo que implica ausencia de validación externa.
+- Cero tracción comunitaria: 0 descargas y 0 likes en Hugging Face en el momento de la consulta, lo que implica ausencia de validación externa.
 - Advertencia de producción: no debe otorgarse al modelo acceso a credenciales ni acciones privilegiadas; cualquier ejecución autorizada debe pasar por el runtime THOX con autenticación y política.
 
 ## Enlaces
 
-- Modelo en HuggingFace: https://huggingface.co/Thox-ai/Thox-Rhea
+- Modelo en Hugging Face: https://huggingface.co/Thox-ai/Thox-Rhea
 - Modelo base: https://huggingface.co/Qwen/Qwen3-8B
 - Etiqueta de Ollama del base: `qwen3:8b` (sha256:500a1f067a9f782620b40bee6f7b0c89e17ae61f686b92c24933e4ca4b2b8b41)
 - Modelo en Ollama: `Thox-ai/thox-rhea`

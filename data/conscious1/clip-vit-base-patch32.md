@@ -48,7 +48,7 @@ No se han publicado resultados de benchmarks en la informacion disponible. La mo
 - No se especifican requisitos exactos de VRAM en la informacion disponible.
 - El modelo es de tipo ViT-B/32, con un tamano de repositorio de 3,6 GB, lo que sugiere que los pesos completos pueden ocupar aproximadamente 1,5 GB en precision fp32 (estimacion razonable para un modelo de esta arquitectura, pero no confirmada).
 - Se puede ejecutar en GPUs de consumo como una RTX 3060 o superiores, dado el tamano moderado del modelo, aunque no hay datos oficiales de latencia o throughput.
-- Para despliegue, se puede usar con librerias como Transformers de HuggingFace (como se muestra en el ejemplo de uso), y potencialmente con herramientas como ONNX o TensorRT para optimizacion, aunque no se mencionan en la informacion.
+- Para despliegue, se puede usar con librerias como Transformers de Hugging Face (como se muestra en el ejemplo de uso), y potencialmente con herramientas como ONNX o TensorRT para optimizacion, aunque no se mencionan en la informacion.
 - No hay indicaciones sobre uso de vLLM, llama.cpp u otras herramientas de inferencia especificas.
 
 ## Comparativa con modelos similares
@@ -67,7 +67,7 @@ No se dispone de datos de rendimiento comparativos en la informacion proporciona
 
 ## Enlaces
 
-- Repositorio HuggingFace: https://huggingface.co/conscious1/clip-vit-base-patch32
+- Repositorio Hugging Face: https://huggingface.co/conscious1/clip-vit-base-patch32
 - Repositorio original de OpenAI: https://huggingface.co/openai/clip-vit-base-patch32
 - Paper original: https://arxiv.org/abs/2103.00020
 - Blog de OpenAI sobre CLIP: https://openai.com/blog/clip/
